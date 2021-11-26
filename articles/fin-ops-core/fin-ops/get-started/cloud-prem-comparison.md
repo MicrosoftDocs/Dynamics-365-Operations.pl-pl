@@ -48,21 +48,21 @@ W poniższej tabeli wymieniono zakresy aplikacji. Obsługa w chmurze i lokalnie 
 |                                      | Integracje danych                                                                         | Tak       | Tak             |
 | Zarządzanie dokumentami                  |                                                                                           | Tak       | Tak             |
 | Zarządzanie finansami                 |                                                                                           | Tak       | Tak             |
-| Pomoc                                 |                                                                                           | Tak       | Nr              |
+| Pomoc                                 |                                                                                           | Tak       | Nie              |
 | Zasoby ludzkie                      |                                                                                           | Tak       | Tak             |
 | Analizy                         |                                                                                           | Tak       | Tak             |
 |                                      | Raportowanie elektroniczne (ER)                                                                 | Tak       | Tak             |
 |                                      | ER: Integracja z LCS                                                                  | Tak       | Nie              |
 |                                      | ER: Integracja z SharePoint                                                           | Tak       | Nie              |
 |                                      | ER: Integracja z Regulatory Configuration Services (RCS)                              | Tak       | Nie              |
-|                                      | ER: używa lokalnego systemu plików jako magazynu na konfiguracje ER dostępne z repozytoriów ER | Nr        | Tak             |
-|                                      | Integracja z PowerBI.com                                                              | Tak       | Nr              |
-|                                      | Integracja z PowerBI Desktop                                                          | Nr        | Tak             |
-|                                      | Analityczne obszary robocze                                                                     | Tak       | Nr              |
-|                                      | Inteligentny proces biznesowy: zalecenia                                             | Tak       | Nr              |
-|                                      | Tworzenie raportów dla usługi Power BI za pomocą interfejsu OData z wykorzystaniem aplikacji Power BI lub narzędzi PowerQuery dla programu Excel    | Tak       | Nr              |
+|                                      | ER: używa lokalnego systemu plików jako magazynu na konfiguracje ER dostępne z repozytoriów ER | Nie        | Tak             |
+|                                      | Integracja z PowerBI.com                                                              | Tak       | Nie              |
+|                                      | Integracja z PowerBI Desktop                                                          | Nie        | Tak             |
+|                                      | Analityczne obszary robocze                                                                     | Tak       | Nie              |
+|                                      | Inteligentny proces biznesowy: zalecenia                                             | Tak       | Nie              |
+|                                      | Tworzenie raportów dla usługi Power BI za pomocą interfejsu OData z wykorzystaniem aplikacji Power BI lub narzędzi PowerQuery dla programu Excel    | Tak       | Nie              |
 |                                      | Usługi SQL Server Reporting Services (SSRS) obsługują skalowanie                                 | Tak       | Tak             |
-|                                      | Dane telemetryczne są przesyłane do chmury                                                   | Tak       | Nr              |
+|                                      | Dane telemetryczne są przesyłane do chmury                                                   | Tak       | Nie              |
 | Usługi Lifecycle Services                   |                                                                                           | Tak       | Tak             |
 |                                      | Konfigurowalne procesy biznesowe                                                           | Tak       | Nie              |
 | Lokalizacje                        |                                                                                           | Tak       | Tak             |
@@ -75,7 +75,7 @@ W poniższej tabeli wymieniono zakresy aplikacji. Obsługa w chmurze i lokalnie 
 | Zabezpieczenia                             |                                                                                           | Tak       | Tak             |
 | Zarządzanie usługą                   |                                                                                           | Tak       | Tak             |
 | Klient sieci Web                           |                                                                                           | Tak       | Tak             |
-|                                      | Rejestrator zadań — zapisywanie i ładowanie rejestracji zadań z biblioteki BPM                         | Tak       | Nr              |
+|                                      | Rejestrator zadań — zapisywanie i ładowanie rejestracji zadań z biblioteki BPM                         | Tak       | Nie              |
 | Pomoc techniczna                              |                                                                                           | Tak       | Tak             |
 |                                      | Dostęp do pomocy technicznej w menu Pomoc i obsługa techniczna                                             | Tak       | Nie              |
 |                                      | Zdarzenia biznesowe                                                                           | Tak       | Tak (łączność z Internetem jest wymagana albo niestandardowe punkty końcowe muszą zostać zaimplementowane w celu wysyłania/otrzymywania zdarzeń biznesowych w intranecie)              |
@@ -86,14 +86,14 @@ W poniższej tabeli wymieniono zakresy aplikacji. Obsługa w chmurze i lokalnie 
 |-------------------------|-------------------|-----------|-----------------|
 | Zarządzanie składnikami majątku                     |                                                                                           | Tak       | Tak             |
 | Zgodność i certyfikacje        |                                                                                           | Tak       | Tak             |
-|                                      | Certyfikacja SOC 1 Typ 1                                                                | Tak       | Nr              |
+|                                      | Certyfikacja SOC 1 Typ 1                                                                | Tak       | Nie              |
 | Rachunek kosztów                      |                                                                                           | Tak       | Tak             |
-|                                      | Zestaw zawartości rachunku kosztów dla usługi Power BI                                                 | Tak       | Nr              |
-|                                      | Obszar roboczy rachunku kosztów dla aplikacji mobilnej                                                  | Tak       | Nr              |
+|                                      | Zestaw zawartości rachunku kosztów dla usługi Power BI                                                 | Tak       | Nie              |
+|                                      | Obszar roboczy rachunku kosztów dla aplikacji mobilnej                                                  | Tak       | Nie              |
 | Zarządzanie kosztami                      |                                                                                           | Tak       | Tak             |
-|                                      | Pakiet zawartości modułu Zarządzanie kosztami w usłudze Power BI                                                 | Tak       | Nr              |
+|                                      | Pakiet zawartości modułu Zarządzanie kosztami w usłudze Power BI                                                 | Tak       | Nie              |
 | Integracja danych i zarządzanie nimi      |                                                                                           | Tak       | Tak             |
-|                                      | Rozszerzenie oparte na konfiguracji                                                            | Tak       | Nr              |
+|                                      | Rozszerzenie oparte na konfiguracji                                                            | Tak       | Nie              |
 |                                      | Eksport danych do własnego magazynu danych                                                    | Tak       | Tak             |
 |                                      | Włączenie eksportu aktualizacji przyrostowych do jednostki danych                                 | Tak       | Tak             |
 |                                      | Integracje danych                                                                         | Tak       | Tak             |
@@ -104,44 +104,44 @@ W poniższej tabeli wymieniono zakresy aplikacji. Obsługa w chmurze i lokalnie 
 |                                      | ER: Integracja z LCS                                                                  | Tak       | Nie              |
 |                                      | ER: Integracja z SharePoint                                                           | Tak       | Nie              |
 |                                      | ER: Integracja z Regulatory Configuration Services (RCS)                              | Tak       | Nie              |
-|                                      | ER: używa lokalnego systemu plików jako magazynu na konfiguracje ER dostępne z repozytoriów ER | Nr        | Tak             |
-|                                      | Integracja z PowerBI.com                                                              | Tak       | Nr              |
-|                                      | Integracja z PowerBI Desktop                                                          | Nr        | Tak             |
-|                                      | Analityczne obszary robocze                                                                     | Tak       | Nr              |
-|                                      | Inteligentny proces biznesowy: zalecenia                                             | Tak       | Nr              |
-|                                      | Tworzenie raportów dla usługi Power BI za pomocą interfejsu OData z wykorzystaniem aplikacji Power BI lub narzędzi PowerQuery dla programu Excel    | Tak       | Nr              |
+|                                      | ER: używa lokalnego systemu plików jako magazynu na konfiguracje ER dostępne z repozytoriów ER | Nie        | Tak             |
+|                                      | Integracja z PowerBI.com                                                              | Tak       | Nie              |
+|                                      | Integracja z PowerBI Desktop                                                          | Nie        | Tak             |
+|                                      | Analityczne obszary robocze                                                                     | Tak       | Nie              |
+|                                      | Inteligentny proces biznesowy: zalecenia                                             | Tak       | Nie              |
+|                                      | Tworzenie raportów dla usługi Power BI za pomocą interfejsu OData z wykorzystaniem aplikacji Power BI lub narzędzi PowerQuery dla programu Excel    | Tak       | Nie              |
 |                                      | Usługi SQL Server Reporting Services (SSRS) obsługują skalowanie                                 | Tak       | Tak             |
-|                                      | Dane telemetryczne są przesyłane do chmury                                                   | Tak       | Nr              |
+|                                      | Dane telemetryczne są przesyłane do chmury                                                   | Tak       | Nie              |
 | Zarządzanie zapasami                 |                                                                                           | Tak       | Tak             |
 | Usługi Lifecycle Services                   |                                                                                           | Tak       | Tak             |
-|                                      | Konfigurowalne procesy biznesowe                                                           | Tak       | Nr              |
+|                                      | Konfigurowalne procesy biznesowe                                                           | Tak       | Nie              |
 | Lokalizacje                        |                                                                                           | Tak       | Tak             |
 | Produkcja                        |                                                                                           | Tak       | Tak             |
 | Planowanie główne i prognozy      |                                                                                           | Tak       | Tak             |
-| Optymalizacja planowania                |                                                                                           | Tak       | Nr              |
+| Optymalizacja planowania                |                                                                                           | Tak       | Nie              |
 | Aplikacja mobilna, obszary robocze i platforma |                                                                                           | Tak       | Tak             |
 | Integracja z pakietem Office                   |                                                                                           | Tak       | Tak             |
 | Administrowanie organizacją          |                                                                                           | Tak       | Tak             |
 | Zaopatrzenie i sourcing             |                                                                                           | Tak       | Tak             |
-|                                      | Korzystanie z katalogu zewnętrznego z zapotrzebowania na zakup                                   | Tak       | Nr              |
-|                                      | Raporty Analiza wydatków i zakupów w usłudze Power BI                                                  | Tak       | Nr              |
+|                                      | Korzystanie z katalogu zewnętrznego z zapotrzebowania na zakup                                   | Tak       | Nie              |
+|                                      | Raporty Analiza wydatków i zakupów w usłudze Power BI                                                  | Tak       | Nie              |
 | Zarządzanie informacjami o produktach       |                                                                                           | Tak       | Tak             |
 | Dane produktu głównego                  |                                                                                           | Tak       | Tak             |
 | Produkcja                           |                                                                                           | Tak       | Tak             |
-|                                      | Raporty Wydajność produkcji w usłudze Power BI                                                   | Tak       | Nr              |
+|                                      | Raporty Wydajność produkcji w usłudze Power BI                                                   | Tak       | Nie              |
 | Zarządzanie projektami i ich księgowanie    |                                                                                           | Tak       | Tak             |
 | Sprzedaż                                |                                                                                           | Tak       | Tak             |
-|                                      | Raporty Wyniki w zakresie sprzedaży i rentowności w usłudze Power BI                                      | Tak       | Nr              |
+|                                      | Raporty Wyniki w zakresie sprzedaży i rentowności w usłudze Power BI                                      | Tak       | Nie              |
 | Zabezpieczenia                             |                                                                                           | Tak       | Tak             |
 | Zarządzanie serwisem                   |                                                                                           | Tak       | Tak             |
 | Zarządzanie łańcuchem dostaw              |                                                                                           | Tak       | Tak             |
 | Zarządzanie transportem            |                                                                                           | Tak       | Tak             |
-| Współpraca z dostawcami                 |                                                                                           | Tak       | Nr              |
+| Współpraca z dostawcami                 |                                                                                           | Tak       | Nie              |
 | Zarządzanie magazynem                 |                                                                                           | Tak       | Tak             |
 |                                      | Mobilna aplikacja magazynu                                                                      | Tak       | Tak             |
-|                                      | Raporty magazynowe w usłudze Power BI                                                              | Tak       | Nr              |
+|                                      | Raporty magazynowe w usłudze Power BI                                                              | Tak       | Nie              |
 | Klient sieci Web                           |                                                                                           | Tak       | Tak             |
-|                                      | Rejestrator zadań — zapisywanie i ładowanie rejestracji zadań z biblioteki BPM                         | Tak       | Nr              |
+|                                      | Rejestrator zadań — zapisywanie i ładowanie rejestracji zadań z biblioteki BPM                         | Tak       | Nie              |
 | Pomoc techniczna                              |                                                                                           | Tak       | Tak             |
 |                                      | Dostęp do pomocy technicznej w menu Pomoc i obsługa techniczna                                             | Tak       | Nie              |
 
@@ -164,12 +164,12 @@ Aby wyświetlić listę funkcji dostępnych we wdrożeniach lokalnych, zobacz [F
 | Monitorowanie i telemetria   |                                           | Tak       | Tak             |
 | Zgodność z platformą     |                                           | Tak       | Tak             |
 | Obsługa                  |                                           | Tak       | Tak             |
-|                            | Obsługiwanie środowisk                    | Tak       | Nr              |
+|                            | Obsługiwanie środowisk                    | Tak       | Nie              |
 | Analizator śledzenia               |                                           | Tak       | Tak             |
 | PerfTimer                  |                                           | Tak       | Tak\*           |
 | Uaktualnij                    |                                           | Tak       | Tak             |
-|                            | Uaktualnij                                   | Tak       | Nr              |
-|                            | Uaktualnienie i obsługa wcześniejszych wersji | Tak       | Nr              |
+|                            | Uaktualnij                                   | Tak       | Nie              |
+|                            | Uaktualnienie i obsługa wcześniejszych wersji | Tak       | Nie              |
 | Programowanie Visual Studio  |                                           | Tak       | Tak             |
 
 \* W środowiskach lokalnych PerfTimer wyświetla tylko wyniki dla klienta.

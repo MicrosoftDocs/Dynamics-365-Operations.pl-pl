@@ -2,7 +2,7 @@
 title: Stan środków pieniężnych
 description: W tym temacie opisano sposób, w jaki funkcja prognozowania przepływów pieniężnych umożliwia prognozowanie stanu środków pieniężnych w określonym czasie. Opisano tu także opcje, które są dostępne do wyświetlania prognoz dla różnych okresów.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: e54caee1e7d703bb134593412bdad77b3af5ab38
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: bf99ce5c9de00061cba2f49d00cc9dbc728753a8
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386321"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752887"
 ---
 # <a name="cash-position"></a>Stan środków pieniężnych
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Stan środków pieniężnych to projekcja przepływu pieniężnego, która jest prognozą na bliski okres. Jest ona oparta na projekcji blankietów kasowych odbiorców, którzy płacą zaległe faktury i zamówienia, a także na rozchodach gotówkowych płaconych dostawcom za faktury zakupu i zamówienia.
 
@@ -44,8 +45,5 @@ Dolna sekcja karty **Stan środków pieniężnych** zawiera szczegółowe inform
 - W siatce **Konto bankowe** jest wyświetlany wpływ oczekiwanych przychodów i rozchodów gotówkowych na saldo bankowe.
 
 Aby zapisać i edytować stan środków pieniężnych, należy utworzyć migawkę. Aby uzyskać więcej informacji na temat pracy z migawkami, zobacz [Omówienie migawek](payment-snapshots.md).
-
-#### <a name="privacy-notice"></a>Klauzula prywatności
-Wersje zapoznawcze (1) mogą wykorzystywać mniej rygorystyczne funkcje ochrony prywatności i bezpieczeństwa niż usługa Dynamics 365 Finance and Operations, (2) nie są objęte umową dotyczącą poziomu usług (SLA) dla tej usługi, (3) nie powinny być używane do przetwarzania danych osobowych ani innych danych podlegających wymogom zapewnienia zgodności z przepisami lub regulacjami, oraz (4) mają ograniczone wsparcie techniczne.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -170,7 +170,7 @@ Na stronie **Parametry obliczania** wybierz wartość **Nadgodziny** jako typ sp
 
 | Specyfikacja reg. | Typ specyfikacji profilu | Obliczenie   | Ustawienie | Zapłacona         | Ustawienie |
 |--------------------|----------------------------|---------------|-----|--------------|-----|
-| Czas pracy       | Nadgodziny                   | Czas standardowy | Tak | Czas płatny     | Nr  |
+| Czas pracy       | Nadgodziny                   | Czas standardowy | Tak | Czas płatny     | Nie  |
 |                    |                            | Czas płatny      | Tak | Płatne nadgodziny | Tak |
 
 Po ustawieniu parametrów obliczania zostaną wygenerowane następujące elementy płacowe.

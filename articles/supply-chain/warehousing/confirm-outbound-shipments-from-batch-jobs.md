@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: d47b88fcc5e25fc85377b52fa9832916a4bb2217
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 4af84383fe1d214849d5d05463bd0cbfad7d0536
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572392"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778480"
 ---
 # <a name="confirm-outbound-shipments-from-batch-jobs"></a>Potwierdź wychodzące wysyłki z zadań wsadowych
 
@@ -27,7 +27,7 @@ W tym temacie opisano sposób konfigurowania zadania wsadowego, które automatyc
 
 ## <a name="enable-the-confirm-outbound-shipments-from-batch-jobs-feature"></a>Włącz funkcję Potwierdź wychodzące wysyłki z zadań wsadowych
 
-Aby móc używać tej funkcji, musi zosyać włączona w systemie. Administratorzy mogą skorzystać ze strony [Zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją w razie potrzeby. Funkcja jest wyświetlana jako:
+Od wersji 10.0.21 Supply Chain Management version ta funkcja jest domyślnie włączona. Administratorzy mogą skorzystać ze strony [Zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją lub wyłączyć w razie potrzeby. W tym miejscu funkcja jest wyświetlana jako:
 
 - **Moduł** - *Zarządzanie magazynem*
 - **Nazwa funkcji** - *Potwierdź wychodzące wysyłki z zadań wsadowych*

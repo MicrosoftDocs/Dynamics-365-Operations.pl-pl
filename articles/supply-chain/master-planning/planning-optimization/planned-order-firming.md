@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 966a878a7e5b0a92d6d53e67bea19c50274087a4416980859175b12c6fdfbcdc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ec4265f0433fbbce1e00eda206c297b54f9b8df8
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764843"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778528"
 ---
 # <a name="firm-planned-orders"></a>Zaakceptuj zamówienia planowane
 
@@ -39,7 +39,7 @@ Większość funkcji zamówienia planowanego jest dostępna we wszystkich standa
 
 Równoległe ustalanie pomaga przyspieszyć proces ustalania przez przeprowadzanie go równolegle w wielu wątkach. Takie podejście może być przydatne, jeśli jest ustalanych wiele zamówień planowanych.
 
-Aby udostępnić tę funkcję w systemie, przejdź do modułu [Zarządzanie funkcjami](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) i włącz funkcję *Równoległe ustalanie zamówień planowanych*.
+Aby udostępnić tę funkcję w systemie, przejdź do modułu [Zarządzanie funkcjami](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) i włącz funkcję *Równoległe ustalanie zamówień planowanych*. (Od wersji 10.0.21 Supply Chain Management version ta funkcja jest domyślnie włączona)
 
 ### <a name="enable-planned-order-firming-with-filtering"></a>Włączanie ustalania zamówień z filtrowaniem
 
@@ -51,7 +51,7 @@ Aby udostępnić tę funkcję w systemie, przejdź do modułu [Zarządzanie funk
 
 Funkcja automatycznego ustalania umożliwia ustalanie zamówień planowanych w ramach procesu planowania głównego w okresie horyzontu czasowego ustalania. Automatyczne ustalanie jest zawsze obsługiwane przez aparat planowania wbudowany w module Supply Chain Management. Aby jednak używać go również w przypadku optymalizacji planowania, należy włączyć tę funkcję.
 
-Aby udostępnić tę funkcję w systemie, przejdź do modułu [Zarządzanie funkcjami](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) i włącz funkcję *Automatyczne ustalanie dla optymalizacji planowania*.
+Aby udostępnić tę funkcję w systemie, przejdź do modułu [Zarządzanie funkcjami](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) i włącz funkcję *Automatyczne ustalanie dla optymalizacji planowania*. (Od wersji 10.0.21 Supply Chain Management version ta funkcja jest domyślnie włączona)
 
 ## <a name="manually-firm-planned-orders"></a>Ręczne ustalanie planowanych zamówień
 

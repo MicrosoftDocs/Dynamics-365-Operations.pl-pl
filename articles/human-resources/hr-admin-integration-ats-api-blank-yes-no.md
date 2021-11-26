@@ -34,7 +34,7 @@ To wyliczenie zapewnia zestaw opcji dla właściwości tak / nie, które równie
 | --- | --- | --- |
 | 200000000 | Pusty | Nie wybrano żadnej wartości. |
 | 200000001 | Tak | Tak. |
-| 200000002 | Nr | Nr |
+| 200000002 | Nie | Nie |
 
 ## <a name="see-also"></a>Informacje dodatkowe
 

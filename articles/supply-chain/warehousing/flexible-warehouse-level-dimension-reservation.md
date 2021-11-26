@@ -421,7 +421,7 @@ Poniższe tabele zawierają przegląd, w jaki sposób system obsługuje zarezerw
 <td>Nie dotyczy</td>
 </tr>
 <tr>
-<td>Nr</td>
+<td>Nie</td>
 <td>
 <ol>
 <li>Wybierz element menu <strong>Zastąp lokalizację</strong> w aplikacji Warehouse Management po rozpoczęciu pracy pobrania.</li>
@@ -719,7 +719,7 @@ Poniższe tabele zawierają przegląd, w jaki sposób system obsługuje zarezerw
 </tr>
 <tr>
 <td>Skonfigurowano wyjątek pracy dla <strong>krótkiego typu pobrania</strong>, w którym jest ustawiana <strong>Ponowna alokacja towaru</strong> = <strong>Ręcznie</strong>, <strong>Dopasuj zapasy</strong> = <strong>Tak</strong> oraz <strong>Usuń rezerwacje</strong> = <strong>Nie</strong>. Ponadto dla pracownika jest włączona opcja <strong>Zezwalaj na ręczną zmianę alokacji pozycji</strong>.</td>
-<td>Nr</td>
+<td>Nie</td>
 <td>
 <ol>
 <li>Wybierz element menu <strong>Krótki odbiór</strong> w aplikacji Warehouse Management po rozpoczęciu pracy pobrania.</li>
@@ -732,7 +732,7 @@ Poniższe tabele zawierają przegląd, w jaki sposób system obsługuje zarezerw
 </tr>
 <tr>
 <td>Skonfigurowano wyjątek pracy dla <strong>krótkiego typu pobrania</strong>, w którym jest ustawiana <strong>Ponowna alokacja towaru</strong> = <strong>Ręcznie</strong>, <strong>Dopasuj zapasy</strong> = <strong>Tak</strong> oraz <strong>Usuń rezerwacje</strong> = <strong>Tak</strong>. Ponadto dla pracownika jest włączona opcja <strong>Zezwalaj na ręczną zmianę alokacji pozycji</strong>.</td>
-<td>Nr</td>
+<td>Nie</td>
 <td>
 <ol>
 <li>Wybierz element menu <strong>Krótki odbiór</strong> w aplikacji Warehouse Management po rozpoczęciu pracy pobrania.</li>

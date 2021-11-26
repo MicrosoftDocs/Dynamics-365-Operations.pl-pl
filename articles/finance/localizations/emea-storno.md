@@ -119,7 +119,7 @@ Finance traktuje ujemne kwoty arkuszy w szczególny sposób. Wpis arkusza finans
 <tbody>
 <tr class="row-2">
 <td class="column-1"> Strona debetowa</td>
-<td class="column-2">Nr</td>
+<td class="column-2">Nie</td>
 <td class="column-3">0&gt;</td>
 <td class="column-4" align="right">Ilość</td>
 <td class="column-5" align="right">Ilość</td>
@@ -129,7 +129,7 @@ Finance traktuje ujemne kwoty arkuszy w szczególny sposób. Wpis arkusza finans
 </tr>
 <tr class="row-3">
 <td class="column-1"> Strona kredytowa</td>
-<td class="column-2">Nr</td>
+<td class="column-2">Nie</td>
 <td class="column-3">0&lt;</td>
 <td class="column-4" align="right">-Kwota</td>
 <td class="column-5" align="right">Ilość</td>

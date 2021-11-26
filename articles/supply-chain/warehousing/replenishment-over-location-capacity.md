@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 78bea4ee2429323a6e087c6433a8e496b08f4cea
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 6ff9f133010ec4370a99c585259aece4e279f801
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576119"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778214"
 ---
 # <a name="replenishment-over-location-capacity"></a>Uzupełnianie zapasów ponad pojemność lokalizacji
 
@@ -32,7 +32,7 @@ Funkcja umożliwia tworzenie większej ilości pracy uzupełniania, która nie m
 
 Aby ta funkcja była dostępna, włącz następujące funkcje w module [zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (w tej kolejności):
 
-1. Blokowanie pracy na poziomie organizacji
+1. Blokowanie pracy na całej organizacji (w przypadku Supply Chain Management w wersji 10.0.21 ta funkcja jest obowiązkowa, więc jest domyślnie włączona i nie można jej ponownie wyłączyć)
 1. Uzupełnianie zapasów ponad pojemność lokalizacji
 
 ## <a name="set-up-the-feature-for-the-example-scenario"></a>Skonfiguruj funkcję dla tego scenariusza przykładowego

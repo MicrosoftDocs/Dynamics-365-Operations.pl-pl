@@ -2,7 +2,7 @@
 title: Rozwiązywanie problemów z ustawieniami Finance insights
 description: W tym temacie wymieniono problemy, które mogą wystąpić, gdy są dostępne funkcje analizy Finance insights. Opisano w nim również sposób rozwiązania tych problemów.
 author: panolte
-ms.date: 08/20/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,16 +17,17 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 7ff42ffc334147c1a4c6b6349c86580df7f1955b
-ms.sourcegitcommit: 47a3ad71210c7ac84d0c25e913c440b5ba205282
+ms.openlocfilehash: f3cac30a66ff3a74a7f67c11dd9fa14af79d10af
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7512897"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752624"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Rozwiązywanie problemów z ustawieniami Finance insights
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 W tym temacie wymieniono problemy, które mogą wystąpić, gdy są dostępne funkcje analizy Finance insights. Opisano w nim również sposób rozwiązania tych problemów.
 
@@ -53,6 +54,12 @@ Aby zaktualizować projekty integracji danych, wykonaj kroki opisane w [Centrum 
 
 1. Jeśli korzystasz z wersji zapoznawczej Finance insights, usuń projekt DI powiązany z szablonem **Wyniki statystyk płatności klientów (z CDS do Fin and Ops)**.
 2. Wykonaj kroki w tece [Tworzenie projektu integratora danych](create-data-integrate-project.md). Użyj szablonu **Wyniki statystyk płatności klientów (z CDS do Fin and Ops 10.0.17 i nowszych)**.
+
+## <a name="symptom-when-i-try-to-open-ai-builder-by-using-the-links-on-the-customer-payment-predictions-setup-page-why-do-i-receive-the-following-error-message-sorry-theres-been-a-disconnect"></a>Objaw: Dlaczego przy próbie otwarcia AI Builder za pomocą łączy na stronie konfiguracji prognozy płatności odbiorcy pojawia się następujący komunikat o błędzie: „Niestety, wystąpiło rozłączenie"?
+
+### <a name="resolution"></a>Rozwiązanie
+
+Użytkownicy Dynamics 365 Finance muszą mieć konto użytkownika Microsoft Power Apps dla środowiska, a to konto użytkownika musi mieć rolę Konfigurator systemu. Administrator systemu Microsoft Power Apps może utworzyć konto użytkownika i przypisać rolę. Następnie można przejść do systemu, zalogować się na <https://make.preview.powerapps.com/> przy użyciu tego konta użytkownika i spróbować ponownie użyć łączy.
 
 ## <a name="symptom-why-doesnt-the-cash-forecast-tab-in-the-cash-flow-forecast-workspace-show-any-data"></a>Objaw: Dlaczego na karcie Prognoza gotówki w obszarze roboczym Prognoza przepływów pieniężnych nie są wyświetlane jakiekolwiek dane?
 

@@ -1,26 +1,26 @@
 ---
 title: Konfigurowanie składników funkcji
-description: W tym artykule opisano elementy koncepcyjne, które może zawierać zadanie, oraz przykłady wykorzystania tych elementów w organizacji.
-author: andreabichsel
-ms.date: 06/24/2021
+description: W tym temacie opisano elementy koncepcyjne, które może zawierać zadanie, oraz przykłady wykorzystania tych elementów w organizacji.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle, HcmPersonnelManagementWorkspace, HCMJobFamily
 audience: Application User
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.scope: Human Resources
 ms.custom: 269054
 ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 55f3edb53236734045e94ddd71461c739d3b5a8e0a2ac07a804dc2dfafabda57
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0b3d56b3d19bd671d0015e87eefdf8ae62f4cee0
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754783"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731547"
 ---
 # <a name="set-up-the-components-of-a-job"></a>Konfigurowanie składników funkcji
 
@@ -60,7 +60,7 @@ Funkcje stanowisk opisują ogólne kategorie funkcjonalne i wiążą z nimi ogó
 Zarządzanie funkcjami stanowisk odbywa się na stronie **Funkcje stanowisk**. Na stronie **Funkcje stanowisk** wprowadź kod identyfikacyjny i krótki opis funkcji stanowiska.
 
 ## <a name="compensation"></a>Kompensata
-Aby przypisać stały plan wynagrodzeń do pracownika, który ma stanowisko w pracy, musisz ustawić poziomy wynagrodzeń na stanowisku. Poziom kompensacji jest używany, gdy w strukturze kompensacji (siatka kompensacji) ustawione są kwoty minimalna, środkowa i maksymalna. Kiedy tworzony jest plan wynagrodzeń stałych, wybierana jest struktura wynagrodzeń. Struktura wynagrodzeń obejmuje również poziom wynagrodzeń. W przypadku wyboru planu wynagrodzeń stałych dla pracownika, poziomy wynagrodzeń, które są dostępne do wyboru, zależą od stanowiska, z którym związany jest dany pracownik. Aby uzyskać więcej informacji o planach wynagrodzeń, zobacz [Plany wynagrodzeń](hr-compensation-overview.md).
+Aby przypisać stały plan wynagrodzeń do pracownika, który ma stanowisko w pracy, musisz ustawić poziomy wynagrodzeń na stanowisku. **Poziom kompensacji** jest używany, gdy w strukturze kompensacji (siatka kompensacji) ustawione są kwoty minimalna, środkowa i maksymalna. Kiedy tworzony jest plan wynagrodzeń stałych, wybierana jest struktura wynagrodzeń. Struktura wynagrodzeń obejmuje również poziom wynagrodzeń. W przypadku wyboru planu wynagrodzeń stałych dla pracownika, poziomy wynagrodzeń, które są dostępne do wyboru, zależą od stanowiska, z którym związany jest dany pracownik. Aby uzyskać więcej informacji o planach wynagrodzeń, zobacz [Plany wynagrodzeń](hr-compensation-overview.md).
 
 ## <a name="job-skills"></a>Stanowisko — kwalifikacje
 Umiejętności na tym stanowisku opisują umiejętności wymagane do wykonania stanowiska. Poziom umiejętności musi być skojarzony z każdą kwalifikacją stanowiska. Poziomy umiejętności są definiowane przez użytkownika. Wskazują one poziom wiedzy lub biegłości, który jest wymagany dla danej umiejętności. Na przykład, firmy mogą ustawić poziomy numeryczne, takie jak od 1 do 5, gdzie **1** oznacza początkującego, a **5** oznacza specjalistę. Ewentualnie firmy mogą ustawiać poziomy o takich poziomach etykietach **Początkujący**, **Średniozaawansowany** lub **Ekspert**. Po określeniu poziomu umiejętności można również określić jej ważność. Na przykład, jeśli od księgowego wymaga się dobrej znajomości programu Microsoft Excel, można utworzyć umiejętność o nazwie **Znajomość programu Excel**. Poziom umiejętności można następnie ustawić na **Średniozaawansowany**, a ważność może mieć wartość **Najbardziej**.

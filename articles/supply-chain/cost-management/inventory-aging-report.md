@@ -42,7 +42,7 @@ Przykładowy system zawiera następujące ustawienia wymiarów magazynowania:
 | Imię i nazwisko      | Aktywna | Magazyn | Magazyn finansowy |
 |-----------|--------|--------------------|---------------------|
 | Oddział      | Tak    | Tak                | Tak                 |
-| Magazyn | Tak    | Tak                | Nr                  |
+| Magazyn | Tak    | Tak                | Nie                  |
 
 ### <a name="inventory-model"></a>Model magazynu
 

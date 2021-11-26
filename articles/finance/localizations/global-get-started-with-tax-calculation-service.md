@@ -201,7 +201,7 @@ Konfigurację w tej sekcji konfiguruje firma. Należy je skonfigurować dla każ
 3. Na karcie **Obliczania** zdefiniuj oczekiwaną regułę zaokrąglania dla firmy. Aby uzyskać więcej informacji o logice zaokrąglania, zobacz temat [Reguły zaokrąglania obliczania podatku](https://go.microsoft.com/fwlink/?linkid=2166988).
 4. Na karcie **Obsługa błędów** zdefiniuj oczekiwaną metodę obsługi błędów dla firmy. Dostępne są trzy opcje:
 
-    - Nr
+    - Nie
     - Ostrzeżenie
     - Wadliwe
 

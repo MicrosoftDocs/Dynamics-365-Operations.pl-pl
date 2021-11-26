@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 64abe953f42519d508f547f22f1f2b94a7fa16ab
-ms.sourcegitcommit: 477efa4cb138f41d4f68bcd82552af3473bcc3d9
+ms.openlocfilehash: 3b5f0c6947944ec875c30fa912f830f245b5a48e
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2021
-ms.locfileid: "7715261"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777944"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management (10.0.21 październik 2021 r.)
 
@@ -70,10 +70,10 @@ Poniższa tabela zawiera listę funkcji, które są domyślnie włączone w wers
 | Anulowanie zamówienia przeniesienia | 1/9/2021 | 13/7/2020 | Domyślnie włączona | Zarządzanie zapasami i magazynem |
 | Odblokuj arkusz zapasów | 1/9/2021 | 17/8/2020 | Domyślnie włączona | Zarządzanie zapasami i magazynem |
 | Zapisane widoki dla zarządzania zapasami | 1/9/2021 | 9/30/2020 | Domyślnie włączona | Zarządzanie zapasami i magazynem |
-| Nawigacja do wersji listy składowej (BOM) z wierszy listy składowej (BOM). | 1/9/2021 | 11/11/2019 | Domyślnie włączona | Zarządzanie zapasami i magazynem |
-| Użycie jednostki miary i ilości jednostkowej w arkuszach magazynowych. | 1/9/2021 | 11/11/2019 | Domyślnie włączona | Zarządzanie zapasami i magazynem |
+| Nawigacja do wersji listy składowej (BOM) z wierszy listy składowej (BOM) | 1/9/2021 | 11/11/2019 | Domyślnie włączona | Zarządzanie zapasami i magazynem |
+| Użycie jednostki miary i ilości jednostkowej w arkuszach magazynowych | 1/9/2021 | 11/11/2019 | Domyślnie włączona | Zarządzanie zapasami i magazynem |
 | Zezwalaj na puste wartości atrybutów partii | 1/9/2021 | 11/11/2019 | Domyślnie włączona | Zarządzanie zapasami i magazynem |
-| Automatyczne zwiększanie numerów wierszy zamówienia przeniesienia zapasów. | 1/9/2021 | 11/10/2019 | Domyślnie włączona | Zarządzanie zapasami i magazynem |
+| Automatyczne zwiększanie numerów wierszy zamówienia przeniesienia zapasów | 1/9/2021 | 11/10/2019 | Domyślnie włączona | Zarządzanie zapasami i magazynem |
 | Przepływ pracy zatwierdzania arkusza magazynowego | 1/9/2021 | 6/1/2020 | Domyślnie włączona | Zarządzanie zapasami i magazynem |
 | Włącz funkcję ostrzegania o parametrach zarządzania jakością zapasów | 1/9/2021 | 7/10/2019 | Domyślnie włączona | Zarządzanie zapasami i magazynem |
 | Utwórz zamówienie przeniesienia z wiersza sprzedaży | 1/9/2021 | 31/8/2019 | Domyślnie włączona | Zarządzanie zapasami i magazynem |
@@ -93,12 +93,12 @@ Poniższa tabela zawiera listę funkcji, które są domyślnie włączone w wers
 | Zapisane widoki zwolnionych produktów | 1/9/2021 | 9/30/2020 | Domyślnie włączona | Zarządzanie informacjami o produktach |
 | Ulepszenia w oknach dialogowych Zadania zatwierdzania i Zadania przenoszenia | 1/9/2021 | 11/10/2019 | Domyślnie włączona | Kontrola produkcji |
 | Numer identyfikacyjny do zgłoszenia wyrobów gotowych został dodany do urządzenia karty zadań | 1/9/2021 | 31/8/2019 | Domyślnie włączona | Kontrola produkcji |
-| Do strony Terminal kart zadań dodany został nowy przycisk Zatrzymaj przerwę. | 1/9/2021 | 19/2/2020 | Domyślnie włączona | Kontrola produkcji |
+| Do strony Terminal kart zadań dodany został nowy przycisk Zatrzymaj przerwę | 1/9/2021 | 19/2/2020 | Domyślnie włączona | Kontrola produkcji |
 | Włącz częściowe przyjęcie pozycji podwykonawczych i rozwiąż problem z obliczaniem odpadków dla wierszy listy składowej (BOM) typu Dostawca. | 1/9/2021 | 11/11/2019 | Domyślnie włączona | Kontrola produkcji |
 | Zapisane widoki kontroli produkcji | 1/9/2021 | 17/8/2020 | Domyślnie włączona | Kontrola produkcji |
 | Dynamics 365 Guides dla produkcji | 1/9/2021 | 13/7/2020 | Domyślnie włączona | Kontrola produkcji |
 | Wykonanie hali produkcyjnej | 1/9/2021 | 9/30/2020 | Domyślnie włączona | Kontrola produkcji |
-| Funkcja umożliwiająca blokowanie urządzenie karty zadań i terminalu karty zadań w celu ich wyczyszczenia. | 1/9/2021 | 10/5/2020 | Domyślnie włączona | Kontrola produkcji |
+| Funkcja umożliwiająca blokowanie urządzenie karty zadań i terminalu karty zadań w celu ich wyczyszczenia | 1/9/2021 | 10/5/2020 | Domyślnie włączona | Kontrola produkcji |
 | Alokacja opłat do zamówienia sprzedaży | 1/9/2021 | 9/30/2020 | Domyślnie włączona | Sprzedaż i marketing |
 | Ograniczenie liczby zamówień sprzedaży, które można wybierać do księgowania | 1/9/2021 | 1/9/2021 | Domyślnie włączona | Sprzedaż i marketing |
 | Wyczyść historię aktualizacji zamówień sprzedaży | 1/9/2021 | 1/9/2021 | Domyślnie włączona | Sprzedaż i marketing |

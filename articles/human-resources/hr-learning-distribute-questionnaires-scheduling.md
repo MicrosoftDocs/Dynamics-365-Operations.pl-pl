@@ -1,8 +1,8 @@
 ---
 title: Dystrybucja kwestionariuszy z wykorzystaniem harmonogramu
 description: Planowanie kwestionariuszy umożliwia planowanie i dystrybucję kwestionariuszy do wielu respondentów.
-author: andreabichsel
-ms.date: 08/29/2018
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: KMKnowledgeCollectorPlanningTable, KMKnowledgeCollectorPlanningM
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7ca8eddea3dddbbe873717b1d1f5cb2054891d0f0036400d22eacef84bf96da3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a2336cafe7e2c914c2592c91c888b1e0ae1bc608
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755550"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7728683"
 ---
 # <a name="distribute-questionnaires-using-scheduling"></a>Dystrybucja kwestionariuszy z wykorzystaniem harmonogramu
 
@@ -28,105 +28,105 @@ Planowanie kwestionariuszy umożliwia planowanie i dystrybucję kwestionariuszy 
 
 ## <a name="create-a-questionnaire-schedule"></a>Tworzenie harmonogramu kwestionariusza
 
-1. Wybierz kolejno opcje Kwestionariusz > Rozdzielenie > Harmonogramy kwestionariuszy.
+1. Wybierz kolejno opcje **Kwestionariusz** > **Rozdzielenie** > **Harmonogramy kwestionariuszy**.
 
-2. Kliknij przycisk Nowy.
+2. Kliknij przycisk **Nowy**.
 
-3. W polu Planowanie wpisz wartość.
+3. W polu **Planowanie** wpisz wartość.
 
-4. Wypełnij pole Opis.
-    * Ustaw harmonogram na Anonimowy, jeśli odpowiedzi powinny zostać zarejestrowane bez imion i nazwisk skojarzonych z odpowiedzią.  
+4. W polu **Opis** wpisz wartość.
+    * Ustaw harmonogram na **Anonimowy**, jeśli odpowiedzi powinny zostać zarejestrowane bez imion i nazwisk skojarzonych z odpowiedzią.  
     * Najpierw w parametrach kadr należy skonfigurować zezwalanie na anonimowe wyniki.  
 
-5. W polu Typ wybierz typ planowania.  W tym przykładzie użyjemy typu Zadowolenie.
+5. W polu **Typ** wybierz typ planowania.  W tym przykładzie użyjemy typu **Zadowolenie**.
 
 6. Na liście znajdź i zaznacz odpowiedni rekord.
 
 7. Na liście kliknij łącze w wybranym wierszu.
 
-8. W polu Data wprowadź datę.
+8. W polu **Data** wprowadź datę.
 
-9. Rozwiń sekcję Wiadomość e-mail samoobsługi pracownika etatowego.
+9. Rozwiń sekcję **Wiadomość e-mail samoobsługi pracownika etatowego**.
 
-10. W polu Temat wpisz wartość.
+10. W polu **Temat** wpisz wartość.
 
     * Przykład: Kwestionariusz dostępny  
 
-11. W polu Tekst wprowadź treść swojej wiadomości e-mail. Uwaga: zmienna może służyć do zastępowania wartości w systemie.
+11. W polu **Tekst** wprowadź treść swojej wiadomości e-mail. Uwaga: zmienna może służyć do zastępowania wartości w systemie.
 
     * Przykład: Szanowny użytkowniku %P%, Zaloguj się w oknie Samoobsługa pracownika etatowego i wypełnij kwestionariusz zdrowotny pracownika.  Contoso  
 
-12. Kliknij przycisk Zapisz.
+12. Kliknij przycisk **Zapisz**.
 
 ## <a name="use-the-setup-details-to-select-the-questionnaires-to-be-answered-as-well-as-any-queries-to-use-to-select-respondents"></a>Używanie przycisku Szczegóły ustawień do wyboru kwestionariuszy, na które trzeba odpowiedzieć, i do wysyłania kwerend w celu wyboru respondentów.
 
-1. Kliknij przycisk Szczegóły ustawień.
+1. Kliknij przycisk **Szczegóły ustawień**.
 
 2. Na liście wybierz zapytanie, które ma posłużyć do znalezienia respondentów kwestionariusza w systemie.
 
     * Przykład: Pracownicy  
 
-3. Kliknij przycisk Wyświetl lub zmodyfikuj kwerendę, aby wybrać określone osoby lub skorygować kwerendę, by znaleźć osoby pasujące do określonych kryteriów.
+3. Kliknij przycisk **Wyświetl lub zmodyfikuj kwerendę**, aby wybrać określone osoby lub skorygować kwerendę, by znaleźć osoby pasujące do określonych kryteriów.
 
     * Pamiętaj, że wszyscy respondenci muszą być również użytkownikami w systemie.  
 
 4. Na liście oznacz wiersz Osoba.
 
-5. W polu Kryteria wprowadź lub wybierz wartość.
+5. W polu **Kryteria** wprowadź lub wybierz wartość.
 
     * Wybierz osobę Julia Funderburk  
 
 6. Na liście zaznacz osobę Julia Funderburk.
 
-7. Kliknij przycisk OK.
+7. Kliknij przycisk **OK**.
 
-8. Kliknij kartę Kwestionariusze.
+8. Kliknij kartę **Kwestionariusze**.
 
-9. W drzewie rozwiń węzeł typu kwestionariusza Ankieta o zadowoleniu.
+9. W drzewie rozwiń węzeł typu kwestionariusza **Ankieta o zadowoleniu**.
 
 10. W drzewie zaznacz pozycję „Ocena zdrowia pracowników”.
 
-11. Kliknij przycisk OK.
+11. Kliknij przycisk **OK**.
 
-12. Kliknij opcję Planowana sesja odpowiedzi.
+12. Kliknij opcję **Planowana sesja odpowiedzi**.
 
-    * Zwróć uwagę, że Planowana sesja odpowiedzi została utworzona dla każdego wybranego użytkownika lub użytkownika dla którego wysłano kwerendę.  
+    * Zwróć uwagę, że **Planowana sesja odpowiedzi** została utworzona dla każdego wybranego użytkownika lub użytkownika dla którego wysłano kwerendę.  
 
 13. Zamknij stronę.
 
 ## <a name="start-the-questionnaire-schedule-in-order-to-make-the-questionnaire-available-for-respondents-to-complete"></a>Uruchamianie harmonogramu kwestionariusza w celu udostępnienia kwestionariusza respondentom do wypełnienia.
 
-1. Kliknij przycisk Funkcje.
+1. Kliknij przycisk **Funkcje**.
 
-2. Kliknij przycisk Rozpocznij.
+2. Kliknij **Uruchom**.
 
-3. Kliknij przycisk OK.
+3. Kliknij przycisk **OK**.
 
 ## <a name="send-the-email-to-inform-respondents-of-the-available-questionnaire"></a>Wysyłanie wiadomości e-mail w celu poinformowania respondentów o dostępnym kwestionariuszu.
 
-1. Kliknij przycisk Funkcje.
+1. Kliknij przycisk **Funkcje**.
 
-2. Kliknij przycisk Wyślij wiadomość e-mail.
+2. Kliknij przycisk **Wyślij wiadomość e-mail**.
 
-3. Kliknij przycisk Anuluj.
+3. Kliknij **Anuluj**.
 
 ## <a name="use-planned-answer-sessions-to-monitor-who-needs-to-complete-the-questionnaire"></a>Używanie Planowanej sesji odpowiedzi do sprawdzania, kto musi wypełnić kwestionariusz.
 
-1. Kliknij opcję Planowana sesja odpowiedzi.
+1. Kliknij opcję **Planowana sesja odpowiedzi**.
 
     * Usuń wszelkie pozostałe zaplanowane sesje odpowiedzi, aby zakończyć zaplanowaną sesję.  
 
-2. Kliknij przycisk Usuń.
+2. Kliknij przycisk **Usuń**.
 
-3. Kliknij przycisk Tak.
+3. Kliknij przycisk **Tak**.
 
 4. Zamknij stronę.
 
 ## <a name="end-the-schedule-when-all-respondents-have-completed-the-questionnaire-andor-all-remaining-planned-answer-sessions-have-been-deleted"></a>Zakończ harmonogram, gdy wszyscy respondenci wypełnią kwestionariusz i/lub wszystkie pozostałe zaplanowane sesje odpowiedzi zostaną usunięte.
 
-1. Kliknij przycisk Funkcje.
-2. Kliknij opcję Koniec.
-3. Kliknij przycisk OK.
+1. Kliknij przycisk **Funkcje**.
+2. Kliknij opcję **Koniec**.
+3. Kliknij przycisk **OK**.
 
 
 

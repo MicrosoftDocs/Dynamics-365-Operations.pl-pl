@@ -1,8 +1,8 @@
 ---
 title: Zarządzanie wnioskami o urlop w Teams
 description: W tym temacie przedstawiono sposób wysyłania wniosku o urlop w aplikacji Dynamics 365 Human Resources w rozwiązaniu Microsoft Teams.
-author: andreabichsel
-ms.date: 07/16/2021
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 94fa4dca7ff8372d4cf1aeee225e821574f4104048db5ad8a816be2bce496de8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 10538c96a7637a95c60beef40a02fdb5432959ec
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725873"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771538"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Zarządzanie wnioskami o urlop w Teams
 
@@ -41,7 +41,7 @@ Aplikację Dynamics 365 Human Resources można znaleźć w sklepie rozwiązania 
 Jeśli aplikacja nie zaloguje Cię automatycznie, wybierz kartę **Ustawienia**, aby się zalogować.
 
 > [!NOTE]
-> Jeśli nie widzisz okna dialogowego logowania, sprawdź ustawienia przeglądarki, aby zezwolić na wyskakujące okienka. 
+> Jeśli nie widzisz okna logowania, zaktualizuj ustawienia przeglądarki, aby zezwalać na wyskakujące okienka. 
 
 Jeśli masz dostęp do więcej niż jednego wystąpienia aplikacji Human Resources, możesz wybrać środowisko, z którym chcesz się połączyć, na karcie **Ustawienia**.
 
@@ -53,7 +53,7 @@ Jeśli masz dostęp do więcej niż jednego wystąpienia aplikacji Human Resourc
 Po zainstalowaniu aplikacji zostanie wyświetlony komunikat powitalny informujący o typach akcji, które bot może wykonać w Twoim imieniu.
 
 > [!NOTE]
-> Podczas pierwszej interakcji z botem być może trzeba będzie się zalogować. Jeśli nie widzisz okna dialogowego logowania, sprawdź ustawienia przeglądarki, aby zezwolić na wyskakujące okienka.
+> Kiedy po raz pierwszy wchodzisz w interakcję z botem, być może będziesz musiał się zalogować. Jeśli nie widzisz okna logowania, zaktualizuj ustawienia przeglądarki, aby zezwalać na wyskakujące okienka.
 
 Możesz poprosić bota o wykonanie następujących zadań:
 
@@ -83,7 +83,7 @@ Na karcie **Czas wolny** można wyświetlić następujące informacje:
 
 - Nadchodzące wnioski o urlop
 
-- Wnioski dotyczące czasu wolnego
+- Żądania czasu wolnego
 
 - Wnioski o urlopu w wersji roboczej
  
@@ -113,7 +113,7 @@ Na karcie **Czas wolny** można wyświetlić następujące informacje:
    
 ### <a name="respond-to-teams-notifications"></a>Odpowiadanie na powiadomienia Teams
 
-Gdy użytkownik lub pracownik, dla którego użytkownik jest osobą zatwierdzającą prześle wniosek urlopowy, użytkownik otrzyma powiadomienie w aplikacji Human Resources w Teams. Możesz wybrać powiadomienie, aby je wyświetlić. Powiadomienia są również wyświetlane w obszarze **Czatu**.
+Gdy użytkownik lub pracownik, dla którego użytkownik jest osobą zatwierdzającą prześle wniosek urlopowy, użytkownik otrzyma powiadomienie w aplikacji Human Resources w Teams. Możesz wybrać powiadomienie, aby wyświetlić wniosek urlopowy. Powiadomienia są również wyświetlane w obszarze **Czatu**.
 
 Jeśli jesteś osobą zatwierdzającą, możesz wybrać opcję **Zatwierdzanie** lub **Odmowa** w powiadomieniu. Można również podać opcjonalny komunikat.
 
@@ -199,7 +199,7 @@ Jeśli otrzymasz komunikat o błędzie podczas próby zatwierdzenia wniosków o 
 
 2. Upewnij się, że użytkownicy są zalogowani na karcie **Rozmowy** z użyciem tych samych poświadczeń, których używają do zatwierdzania wniosków urlopowych. Użyj komunikatów „wyloguj się”, a następnie „zaloguj się”, aby zalogować się przy użyciu odpowiednich poświadczeń.
 
-3. Jeśli problem będzie nadal występował, sprawdź stan zadania wsadowego Zdarzenia biznesowe jako administrator systemu. Jeśli ten etap jest w stanie oczekiwania lub wykonywania, sprawdź ponownie za kilka minut. Jeśli ten stan pozostanie niezmieniony, zarejestruj bilet pomocy technicznej, aby nasz zespół był w stanie pomóc w rozwiązaniu problemu.
+3. Jeśli problem będzie nadal występował, sprawdź stan zadania wsadowego **Zdarzenia biznesowe** jako administrator systemu. Jeśli ten etap jest w stanie **oczekiwania** lub **wykonywania**, sprawdź ponownie za kilka minut. Jeśli ten stan pozostanie niezmieniony, zarejestruj bilet pomocy technicznej, aby nasz zespół był w stanie pomóc w rozwiązaniu problemu.
 
 ## <a name="known-accessibility-issues"></a>Znane problemy dotyczące ułatwień dostępu
 
@@ -208,7 +208,7 @@ W aplikacji Human Resources w Teams pojawiają się następujące problemy ułat
 | Wystawienie | Obejście lub wyjaśnienie problemu |
 | --- | --- |
 | Powiększenie do 400% na pulpicie powoduje ukrycie niektórych przycisków akcji. | Zaleca się używanie lupy zamiast powiększenia do czasu, aż usuniemy problemy z tym poziomem powiększenia. |
-| Na karcie **Czas wolny** funkcja VoiceOver podczas odczytywania nagłówka siatki czasu wolnego informuje o akcji powiązanej z przyciskiem. | Nagłówek i elementy siatki są grupowane według lat i można je zwinąć. VoiceOver błędnie interpretuje je jako pozycję, z którą można powiązać działanie. |
+| Na karcie **Czas wolny** funkcja VoiceOver podczas odczytywania nagłówka siatki czasu wolnego informuje o akcji powiązanej z przyciskiem. | Nagłówek i elementy siatki są grupowane według lat i można je zwinąć. VoiceOver interpretuje tę prezentację jako element praktyczny, ale tak nie jest. |
 | Na karcie **Czas wolny** podczas przechodzenia do **Kodu przyczyny** w nowym wniosku uruchamia się dodatkowy gest przeciągnięcia. | Nie ma żadnego ukrytego formantu, do którego można uzyskać dostęp za pomocą tego gestu przeciągnięcia. |
 | Przy otwartym kalendarzu przeciągnięcie palcem na karcie **Czas wolny** prowadzi do obszaru poza formantem, zamiast na górę nowego wniosku lub do trybu edycji wniosku. | Kiedy dojdziesz do opcji **Przejdź do dzisiaj**, potraktuj tę pozycję jako koniec formantu i przesuń palcem w odwrotnym kierunku, aby wrócić na górę strony. |
 | Na karcie **Czatu** podczas wpisywania daty przy użyciu narzędzia wspomagającego lub nawigacji z klawiatury obraz przeskakuje na górę strony. | Naciskaj klawisz Tab, aż przejdziesz z powrotem do obszaru wpisywania wiadomości. |

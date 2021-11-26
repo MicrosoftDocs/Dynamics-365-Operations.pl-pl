@@ -2,7 +2,7 @@
 title: Moduł iframe
 description: W tym temacie opisano moduł iframe i opisano, jak dodać go do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 11/04/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 570901e3afca82abd21172df4c0b6fc575b57262f2b5d1decad11cabc00db31d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bce6a50e8c145f8961bd0c839fe16c1f4d69e811
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767297"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7754021"
 ---
 # <a name="iframe-module"></a>Moduł iframe
 
@@ -66,10 +66,13 @@ Aby dodać moduł iframe do strony w celu wyświetlenia zewnętrznego wideo, nal
 1. W razie konieczności określ inne właściwości, takie jak **Nagłówek** i **Wysokość**.
 1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować stronę, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
 1. Przejdź do strony Marketing w witrynie. Należy sprawdzić, czy plik wideo jest renderowany w module iframe.
- 
+
+> [!NOTE]
+> Ponieważ moduł iframe zawiera zawartość zewnętrzną, twórcy witryny muszą zagwarantować, że zawartość hostowana w module iframe nie będzie naruszać zasad ograniczeń dotyczących zawartości na odpowiednim rynku. Jeśli na stronie korzystającej z modułu iframe doszło do naruszenia zawartości, autor witryny może usunąć moduł iframe, otwierając stronę w Konstruktorze witryn, wybierając opcję **Usuń moduł** w gnieździe modułu iframe, a następnie zapisując i ponownie opublikować stronę.
+
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Omówienie biblioteki modułów](starter-kit-overview.md)
+[Przegląd biblioteki modułów](starter-kit-overview.md)
 
 [Zarządzanie zasadami zabezpieczeń zawartości (CSP)](manage-csp.md)
 

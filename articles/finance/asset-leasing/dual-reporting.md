@@ -47,7 +47,7 @@ Księga MSSF 16 jest skonfigurowana w taki sposób, aby była zgodna ze standard
 | Konfiguracja wartości obecnej / wartości godziwej składnika majątku | 0,00           |
 | Próg krótkiego terminu                    | 12             |
 | Próg niskiej wartości                     | 5,000.00       |
-| Płatność dla dostawcy                           | Nr             |
+| Płatność dla dostawcy                           | Nie             |
 
 **Księga ustawowa**
 
@@ -64,7 +64,7 @@ Księga ustawowa to księga metody kasowej, w której firma będzie księgować 
 | Konfiguracja wartości obecnej / wartości godziwej składnika majątku | 0,00        |
 | Próg krótkiego terminu                    | 0           |
 | Próg niskiej wartości                     | 0           |
-| Płatność dla dostawcy                           | Nr          |
+| Płatność dla dostawcy                           | Nie          |
 
 **Księga wycofania ustawowego**
 
@@ -81,7 +81,7 @@ Księga wycofania ustawowego jest konfigurowana w taki sam sposób, jak księga 
 | Konfiguracja wartości obecnej / wartości godziwej składnika majątku | 0,00                           |
 | Próg krótkiego terminu                    | 0                              |
 | Próg niskiej wartości                     | 0                              |
-| Płatność dla dostawcy                           | Nr                             |
+| Płatność dla dostawcy                           | Nie                             |
 
 W tym przykładzie utworzono wynajem, który ma następujące ustawienia na kartach **Ogólne** i **Wiersze harmonogramu płatności**.
 

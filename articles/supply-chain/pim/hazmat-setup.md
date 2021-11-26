@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: ac6a9b4316fa260a86c124f86d04645625e9b808
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 6923bd24fc8f9aad6e758603e3b20f7d5f2b8fde
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577439"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778016"
 ---
 # <a name="set-up-hazardous-materials"></a>Ustawianie materiałów niebezpiecznych
 
@@ -27,7 +27,7 @@ Aby skorzystać z funkcji materiałów niebezpiecznych, należy najpierw skonfig
 
 ## <a name="turn-on-the-hazardous-materials-feature-for-your-system"></a>Włączanie funkcji materiałów niebezpiecznych dla systemu
 
-Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
+Od wersji 10.0.21 Supply Chain Management version ta funkcja jest domyślnie włączona. Administratorzy mogą skorzystać ze strony [Zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją lub wyłączyć w razie potrzeby. W tym miejscu funkcja jest wyświetlana jako:
 
 - **Moduł:** *Zarządzanie informacjami o produktach*
 - **Nazwa funkcji:** *Informacje o produktach niebezpiecznych i dokumentacja wysyłki*

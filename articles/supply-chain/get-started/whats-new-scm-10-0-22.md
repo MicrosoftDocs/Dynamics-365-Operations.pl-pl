@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: a4f9e5a4a318ceaa45b6919e394e1ff335bfb193
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.openlocfilehash: a795f88aed78582ad4a2faa90ab1c2529017850f
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678842"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778164"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10022-november-2021"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.22 (listopad 2021 r.)
 
@@ -41,7 +41,6 @@ W poniższej tabeli wymieniono rozszerzenia funkcji, które są zawarte w tym wy
 
 | Moduł | Nazwa funkcji w zarządzaniu funkcjami | Więcej informacji |
 |---|---|---|
-| Zarządzanie kosztami | Tworzenie powiązanych załączników dla standardowych przeszacowań zaokrąglania kosztów | <p>W przypadku księgowania finansowego zapasów (np. faktury zamówienia sprzedaży lub transakcji magazynowej) ta funkcja powoduje, że system tworzy oddzielny załącznik dla dowolnych powiązanych przeszacowań zaokrąglania kosztów standardowych i dołącza go do finansowego załącznika księgowania jako powiązany załącznik.</p><p>Bez tej funkcji system rejestruje standardowe przeszacowania zaokrąglania kosztów na tym samym księgowaniu załącznika. Takie zachowanie może czasem powodować konflikt z informacjami o datach, ponieważ w przeszacowaniach jest używana daty sesji lub systemowa, podczas gdy w księgowaniach finansowych jest używana data księgowania.</p> |
 | Rozproszona topologia hybrydowa | *(Nie jest wymagane zarządzanie funkcjami).* | <p>Ta wersja rozszerza możliwości planowania wysyłki ładunku wychodzącego z obciążenia pracą zarządzania magazynem dla jednostek skalowania chmury i krawędzi.</p><p>Aby uzyskać więcej informacji, zobacz temat [Obciążenia pracą dotyczące zarządzania magazynem dla jednostek skalowania chmury i urządzenia brzegowego](../cloud-edge/cloud-edge-workload-warehousing.md).</p> |
 | Zarządzanie zmianami projektowymi | Generowanie wariantów produktów projektowych | <p>Ta funkcja umożliwia generowanie kilku wariantów produktu inżynieryjnego na podstawie jego wymiarów koloru, rozmiaru, stylu lub konfiguracji.</p><p>Aby uzyskać więcej informacji, zobacz [Generowanie wariantów dla produktów inżynieryjnych](../engineering-change-management/engineering-variants.md).</p> |
 | Zarządzanie zapasami i magazynem | Integracja Widoczności zapasów z przesunięciem rezerwacji | <p>Tę funkcję można włączyć tylko po włączeniu funkcji *Integracja z widocznością zapasów*. Zapewnia ona funkcjonalność kompensowania rezerwacji, które są dokonywane na widoczności zapasów.</p><p>Więcej informacji zawiera temat [Rezerwacje dodatku Widoczność magazynu](../inventory/inventory-visibility-reservations.md).</p> |

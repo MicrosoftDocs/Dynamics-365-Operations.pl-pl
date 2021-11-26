@@ -2,7 +2,7 @@
 title: Rozpoczynanie pracy z fakturowaniem elektronicznym
 description: Ten temat zawiera informacje, które pomogą w rozpoczęciu pracy z Faktury elektroniczne w rozwiązaniach Microsoft Dynamics 365 Finance i Dynamics 365 Supply Chain Management.
 author: gionoder
-ms.date: 08/17/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d0550228dc77ed255a0033bc3b0a4ec21d48a497
-ms.sourcegitcommit: 2113678369f47944f8725ca656f461fa159f87f6
+ms.openlocfilehash: ebef9cf97f7a91e0a2fd45f5e0e0fc620070b42a
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7700386"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779701"
 ---
 # <a name="get-started-with-electronic-invoicing"></a>Rozpoczynanie pracy z fakturowaniem elektronicznym
 
@@ -57,7 +57,12 @@ Przed wykonaniem procedur opisanych w tym temacie muszą być spełnione następ
 
 W zależności od kraju lub regionu funkcja Fakturowanie elektroniczne może wymagać konkretnej konfiguracji. 
 
-Aby uzyskać szczegółowe informacje o tych krokach, zobacz dokumentację „Wprowadzenie” dla danego kraju lub regionu.
+> [!NOTE]
+> Włączenie funkcji fakturowania elektronicznego w Finlandii nie umożliwia obsługi parametrów specyficznych dla aplikacji w wyszukiwaniach. Aby pracować nad tym problemem, w module **Raportowanie elektroniczne** przejrzyj konfiguracje formatów faktur sprzedaży i faktur projektu. Ręcznie skonfiguruj pole obliczeniowe na **$PaymentMethodSubstitution** projektu, a następnie powiąż to pole z polem **EpiPaymentMeansCode** w formacie Faktura sprzedaży i Faktura projektu.
+>
+> Włączenie funkcji fakturowania elektronicznego we Włoszech nie umożliwia obsługi parametrów specyficznych dla aplikacji w wyszukiwaniach. Aby pracować nad tym problemem, w module **Raportowanie elektroniczne** ręcznie skonfiguruj pole obliczeniowe na mapowanie **$NaturaReverseCharge**.
+>
+> Aby uzyskać szczegółowe kroki, które są związane z innymi lokalizacjami, zapoznaj się z dokumentacją „Rozpocznij” dostępną dla Twojego kraju lub regionu.
 
 ## <a name="import-the-model-mapping-configurations-from-electronic-reporting"></a>Importowanie konfiguracji mapowania modeli na potrzeby raportowania elektronicznego
 
@@ -241,6 +246,14 @@ Aby uzyskać szczegółowe informacje o tych krokach, zobacz dokumentację „Wp
 
 3. Wybierz fakturę w siatce, a następnie wybierz opcję **Zapytanie** \> **Szczegóły przesłania**.
 
+## <a name="download-an-electronic-document-file"></a>Pobierz plik dokumentu elektronicznego
+
+1. Przejdź do **Administrowanie organizacją** \> **Okresowe** \> **Dokumenty elektroniczne** \> **Dziennik przysłania dokumentów elektronicznych**.
+2. W polu **Typ dokumentu** wybierz tabelę zawierającą faktury.
+3. Wybierz dokument w siatce, a następnie wybierz **Dokument elektroniczny** \> **Pobieranie pliku**. Do pobrania zostanie zasugerowane archiwum zawierające plik dokumentu elektronicznego.
+
+> [!NOTE]
+> Aby było można pobierać pliki, opcja **Wynik eksportu** musi być włączona dla pokrewnej akcji w ustawieniach funkcji fakturowania elektronicznego w pliku RCS.
 
 ## <a name="related-topics"></a>Powiązane tematy
 

@@ -1,8 +1,8 @@
 ---
 title: Tworzenie kwestionariuszy
-description: W tym artykule opisano proces tworzenia kwestionariusza. Pierwszym krokiem jest projektowanie kwestionariusza. Przy projektowaniu kwestionariusza, można nie tylko zapisać pytania i odpowiedzi, ale również utworzyć strukturę, która umożliwia rejestrowanie odpowiedzi i umieszczanie ich w tabelach.
-author: andreabichsel
-ms.date: 06/20/2017
+description: W tym temacie opisano proces tworzenia kwestionariusza.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 17341
 ms.assetid: b27e2f12-c7a0-4a54-b8d8-17819f8a1c72
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: c2a8c156aa75b02b69da3ee70a1ee60ea9d73a8aa67c70babdaaad88d6eb81f4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 08c8015e8729a4ca33f3fb3c48f654e489f32f3f
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755571"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7729058"
 ---
 # <a name="create-questionnaires"></a>Tworzenie kwestionariuszy
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-W tym artykule opisano proces tworzenia kwestionariusza. Pierwszym krokiem jest projektowanie kwestionariusza. Przy projektowaniu kwestionariusza, można nie tylko zapisać pytania i odpowiedzi, ale również utworzyć strukturę, która umożliwia rejestrowanie odpowiedzi i umieszczanie ich w tabelach. 
+W tym temacie opisano proces tworzenia kwestionariusza. Pierwszym krokiem jest projektowanie kwestionariusza. Przy projektowaniu kwestionariusza, można nie tylko zapisać pytania i odpowiedzi, ale również utworzyć strukturę, która umożliwia rejestrowanie odpowiedzi i umieszczanie ich w tabelach. 
 
 Starannie zaprojektowany kwestionariusz może pomóc podnieść jakość zbieranych danych. Jeśli dobrze go zaplanujesz, możesz lepiej wybrać odpowiednie opcje w odpowiednim czasie dla kwestionariusza. Następujące porady pomogą Ci zaplanować skuteczny kwestionariusz:
 
@@ -63,7 +63,7 @@ Niektóre warunki wstępne muszą być spełnione przed przystąpieniem do tworz
 
 ### <a name="questionnaire-types"></a>Typy kwestionariuszy
 
-Typy kwestionariuszy są wymagane i muszą być przypisane podczas tworzenia kwestionariusza. Typy kwestionariuszy pomagają w klasyfikacji kwestionariuszy i zarządzaniu nimi. Do klasyfikacji kwestionariuszy i ich rozróżniania od siebie służą typy kwestionariuszy. Na przykład jeśli masz wiele różnych kwestionariuszy do wyboru, możesz je filtrować według typu w formularzu, co ułatwi znalezienie konkretnego kwestionariusza. Oto kilka przykładów typów kwestionariuszy:
+**Typy kwestionariuszy** są wymagane i muszą być przypisane podczas tworzenia kwestionariusza. **Typy kwestionariuszy** pomagają w klasyfikacji kwestionariuszy i zarządzaniu nimi. Do klasyfikacji kwestionariuszy i ich rozróżniania od siebie służą typy kwestionariuszy. Na przykład jeśli masz wiele różnych kwestionariuszy do wyboru, możesz je filtrować według typu w formularzu, co ułatwi znalezienie konkretnego kwestionariusza. Oto kilka przykładów typów kwestionariuszy:
 
 -   Zarządzanie zasobami ludzkimi
 -   Ankiety odbiorców
@@ -71,9 +71,9 @@ Typy kwestionariuszy są wymagane i muszą być przypisane podczas tworzenia kwe
 
 ### <a name="question-types"></a>Typy pytań
 
-Typy pytań są wymagane i muszą być przypisane podczas tworzenia pytań. 
+**Typy pytań** są wymagane i muszą być przypisane podczas tworzenia pytań. 
 
-Typy pytań służą do podziału pytań na kategorie na potrzeby sprawozdawczości. Typy pytań również ułatwiają znajdowanie pytań, ponieważ typy mogą być używane jako filtry na stronie **Pytania**. Oto kilka przykładów typów pytań:
+**Typy pytań** służą do podziału pytań na kategorie na potrzeby sprawozdawczości. **Typy pytań** również ułatwiają znajdowanie pytań, ponieważ typy mogą być używane jako filtry na stronie **Pytania**. Oto kilka przykładów typów pytań:
 
 -   Zasoby ludzkie
 -   Zarządzanie firmą
@@ -105,7 +105,7 @@ Aby zapewnić listę możliwych odpowiedzi dla pytań zamkniętych, należy utwo
 
 Grupy odpowiedzi i odpowiedzi są składnikami, które składają się na główną część informacji, z których tworzone są pytania. Po utworzeniu grupy odpowiedzi można przypisać grupę odpowiedzi do pytania w polu **Grupy pytań** na stronie **Pytania**. 
 
-Grupa odpowiedzi może być następnie używana do jednego lub większej liczby pytań w tym samym kwestionariuszu lub w więcej niż jednym kwestionariuszu. 
+**Grupa odpowiedzi** może być następnie używana do jednego lub większej liczby pytań w tym samym kwestionariuszu lub w więcej niż jednym kwestionariuszu. 
 
 > [!NOTE]
 > Jeśli modyfikujesz tekst odpowiedzi w grupach odpowiedzi już użytych w wypełnionych kwestionariuszach, dane mogą stać się trudne do oceny i wyniki kwestionariusza przestaną być prawidłowe. Jeśli trzeba zmienić grupy odpowiedzi, należy wziąć pod uwagę utworzenie nowej grupy odpowiedzi zamiast zmieniać istniejące. Nie można usunąć grup odpowiedzi dołączonych do pytania lub odpowiedzi albo tych, które zostały wykorzystane.
@@ -171,7 +171,7 @@ Nie można usunąć z kwestionariusza następujących typów pytań:
 
 ### <a name="result-groups"></a>Grupy wyników
 
-Grupy wyników są opcjonalne podczas dołączania pytań do kwestionariusza. 
+**Grupy wyników** są opcjonalne podczas dołączania pytań do kwestionariusza. 
 
 Grupa wyników jest używana do obliczania punktów i klasyfikacji wyników kwestionariusza. Korzystając z grup wyników, można wykonywać następujące zadania:
 

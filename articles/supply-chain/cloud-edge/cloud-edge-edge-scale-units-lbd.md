@@ -1,5 +1,5 @@
 ---
-title: Rozmieszczanie jednostek skalowania urządzenia brzegowego na niestandardowym sprzęcie przy użyciu danych LBD (wersja zapoznawcza)
+title: Rozmieszczanie jednostek skalowania urządzenia brzegowego na niestandardowym sprzęcie przy użyciu danych LBD
 description: W tym temacie opisano sposób ustanawiania lokalnych jednostek skalowania na krawędzi przy użyciu niestandardowego sprzętu i wdrożenia opartego na lokalnych danych biznesowych (LBD).
 author: cabeln
 ms.date: 04/22/2021
@@ -9,24 +9,21 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
-ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 0ebbdaab9d6f040497d3158db2712e102b6e9aa8
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.dyn365.ops.version: 10.0.21
+ms.openlocfilehash: f1ab0a2c289f48dd8bfb7529f0dcc694a97f18ea
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678988"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7729082"
 ---
-# <a name="deploy-edge-scale-units-on-custom-hardware-using-lbd-preview"></a>Rozmieszczanie jednostek skalowania urządzenia brzegowego na niestandardowym sprzęcie przy użyciu danych LBD (wersja zapoznawcza)
+# <a name="deploy-edge-scale-units-on-custom-hardware-using-lbd"></a>Rozmieszczanie jednostek skalowania urządzenia brzegowego na niestandardowym sprzęcie przy użyciu danych LBD
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)] <!--KFM: Until 11/1/2021 -->
 
 Jednostki skalowania na krawędzi mają znaczenie w dystrybuowanej topologii hybrydowej w aplikacji Supply Chain Management. W topologii hybrydowej można dystrybuować obciążenia między piastą w chmurze Supply Chain Management oraz dodatkowymi jednostkami skalowania w chmurze lub na krawędzi.
 
 Jednostki skalowania na krawędzi można wdrożyć, tworząc lokalne dane biznesowe (LBD) [w środowisku lokalnym](../../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md), a następnie konfigurując je, aby działały jako jednostka skalowania w dystrybuowanej topologii hybrydowej na potrzeby aplikacji Supply Chain Management. Można to osiągnąć przez skojarzenie lokalnego środowiska LBD ze środowiskiem Supply Chain Management w chmurze, które zostało skonfigurowane do działania jako piasta.  
-
-Jednostki skalowana na krawędzi są obecnie dostępne w wersji zapoznawczej. Dlatego środowisko tego typu może być wykorzystywane tylko zgodnie z [postanowieniami dotyczącymi wersji zapoznawczej](https://aka.ms/scmcnepreviewterms).
 
 W tym temacie opisano sposób skonfigurowania lokalnego środowiska LBD jako jednostki skalowania na krawędzi, a następnie skojarzenia go z piastą.
 
@@ -36,11 +33,9 @@ Poniżej znajduje się omówienie kroków wdrożenia.
 
 1. **Włącz przedział LBD w projekcie LBD w usługach Microsoft Dynamics Lifecycle Services (LCS).**
 
-    W okresie wersji zapoznawczej jednostki skalowania na krawędzi LDB są docelowe dla istniejących klientów LBD. Dodatkowy 60-dniowy przedział piaskownicy LDB jest dostępny tylko w określonych sytuacjach.
-
 1. **Skonfiguruj i rozmieść środowisko LBD z *pustą* bazą danych.**
 
-    Użyj usług LCS, aby rozmieścić środowisko LBD z najnowszą topologią i pustą bazą danych. Aby uzyskać więcej informacji, zobacz sekcję [Konfigurowanie i rozmieszczanie środowiska LBD z pustą bazą danych](#set-up-deploy) w dalszej części tego tematu. Musisz używać aplikacji Supply Chain Management w wersji 10.0.19 z aktualizacją platformy 43 lub nowszą w środowiskach piasty i jednostek skalowania.
+    Użyj usług LCS, aby rozmieścić środowisko LBD z najnowszą topologią i pustą bazą danych. Aby uzyskać więcej informacji, zobacz sekcję [Konfigurowanie i rozmieszczanie środowiska LBD z pustą bazą danych](#set-up-deploy) w dalszej części tego tematu. Musisz używać aplikacji Supply Chain Management w wersji 10.0.21 lub nowszą w środowiskach piasty i jednostek skalowania.
 
 1. **Przekaż pakiety docelowe do zasobów projektu LBD w usługach LCS.**
 
@@ -60,7 +55,7 @@ Pozostałe sekcje tego tematu zawierają szczegółowe informacje o wykonywaniu 
 
 Ten krok powoduje utworzenie funkcjonalnego środowiska LBD. Jednak środowisko nie musi mieć tej samej wersji aplikacji i platformy co środowisko piasty. Ponadto nadal brakuje w nim dostosowywania i nie włączono go do pracy jako jednostki skalowania.
 
-1. Wykonaj instrukcje z tematu [Ustawianie i wdrażanie środowisk lokalnych z użyciem aktualizacji Platform update 41 i nowszych](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md). Musisz używać aplikacji Supply Chain Management w wersji 10.0.19 z aktualizacją platformy 43 lub nowszą w środowiskach piasty i jednostek skalowania
+1. Wykonaj instrukcje z tematu [Ustawianie i wdrażanie środowisk lokalnych z użyciem aktualizacji Platform update 41 i nowszych](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md). Musisz używać aplikacji Supply Chain Management w wersji 10.0.21 lub nowszą w środowiskach piasty i jednostek skalowania. Ponadto skrypty infrastruktury muszą być w wersji 2.12.0 lub nowszej. 
 
     > [!IMPORTANT]
     > Przeczytaj pozostałą część tej sekcji **przed** ukończeniem kroków w tym temacie.
@@ -75,9 +70,50 @@ Ten krok powoduje utworzenie funkcjonalnego środowiska LBD. Jednak środowisko 
     > Ten skrypt spowoduje usunięcie całej konfiguracji, która nie jest potrzebna do rozmieszczenia jednostek skalowania na krawędzi.
 
 1. Skonfiguruj bazę danych zawierającą puste dane, zgodnie z opisem w temacie [Konfigurowanie baz danych](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb). Użyj pustego pliku data.bak dla tego kroku.
-1. Skonfiguruj skrypt wstępnego wdrożenia. Aby uzyskać więcej informacji, zobacz temat [Skrypty przedwdrożeniowe i powdrożeniowe agenta lokalnego](../../fin-ops-core/dev-itpro/lifecycle-services/pre-post-scripts.md).
+1. Po zakończeniu kroku [Konfigurowanie baz danych](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb) uruchom następujący skrypt, aby skonfigurować bazę danych Scale Unit Alm Orchestrator.
 
-    1. Skopiuj zawartość z folderu **ScaleUnit** w **skryptach infrastruktury** do folderu **Scripts** w udostępnionym magazynie plików agenta, który został skonfigurowany w środowisku. Typowa ścieżka to \\\\lbdiscsi01\\agent\\Scripts.
+    > [!NOTE]
+    > Nie konfiguruj bazy danych Financial Reporting podczas kroku [Konfigurowanie baz danych](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb).
+
+    ```powershell
+    .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName EdgeScaleUnit
+    ```
+
+    Skrypt Initialize-Database.ps1 wykonuje następujące akcje:
+
+    1. Utwórz pustą bazę danych o nazwie **ScaleUnitAlmDb**.
+    2. Mapuj użytkowników na role bazy danych na podstawie poniższej tabeli.
+
+        | Użytkownik            | Typ | Rola bazy danych |
+        |-----------------|------|---------------|
+        | svc-LocalAgent$ | gMSA | db\_owner     |
+
+1. Wykonaj dalej instrukcje z tematu [Ustawianie i wdrażanie środowisk lokalnych z użyciem aktualizacji Platform update 41 i nowszych](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md).
+1. Po zakończeniu kroku [Konfigurowanie oprogramowania AD FS](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb) należy wykonać następujące czynności:
+
+    1. Utwórz nową aplikację Active Directory Federation Services (AD FS), która umożliwi komunikację usługi Alm Orchestration z serwerem obiektów aplikacji (AOS).
+
+        ```powershell
+        # Host URL is your DNS record\host name for accessing the AOS
+        .\Create-ADFSServerApplicationForEdgeScaleUnits.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com'
+        ```
+
+    1. Utwórz nową aplikację Azure Active Directory (Azure AD), która umożliwi usłudze Alm Orchestration komunikację z usługą Scale Unit Management.
+
+        ```powershell
+        # Example .\Create-SumAADApplication.ps1 -ConfigurationFilePath ..\ConfigTemplate.xml -TenantId '6240a19e-86f1-41af-91ab-dbe29dbcfb95' -ApplicationDisplayName 'EdgeAgent-SUMCommunication-EN01'
+        .\Create-SumAADApplication.ps1 -ConfigurationFilePath '<Path of the ConfigTemplate.xml file>' `
+                                       -TenantId '<ID of the tenant where your cloud hub is deployed>' `
+                                       -ApplicationDisplayName '<Whichever name you want the Azure AD app to have>'
+        ```
+
+1. Wykonaj dalej instrukcje z tematu [Ustawianie i wdrażanie środowisk lokalnych z użyciem aktualizacji Platform update 41 i nowszych](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md). Gdy trzeba wprowadzić konfigurację dla lokalnego agenta, należy włączyć funkcje jednostki skalowania krawędzi i podać wszystkie wymagane parametry.
+
+    ![Włączanie funkcji jednostki skali krawędzi.](media/EnableEdgeScaleUnitFeatures.png "Włączanie funkcji jednostki skali krawędzi.")
+
+1. Przed wdrożeniem środowiska z usługi LCS skonfiguruj skrypt wstępnego wdrożenia. Aby uzyskać więcej informacji, zobacz temat [Skrypty przedwdrożeniowe i powdrożeniowe agenta lokalnego](../../fin-ops-core/dev-itpro/lifecycle-services/pre-post-scripts.md).
+
+    1. Skopiuj skrypt Configure-CloudAndEdge.ps1 z folderu **ScaleUnit** w **skryptach infrastruktury** do folderu **Skrypty** w udostępnionym magazynie plików agenta, który został skonfigurowany w środowisku. Typowa ścieżka to \\\\lbdiscsi01\\agent\\Scripts.
     2. Utwórz skrypt **PreDeployment.ps1**, który wywoła skrypty przy użyciu wymaganych parametrów. Skrypt wstępnego wdrożenia musi być umieszczany w folderze **Scripts** w udziale magazynu plików agenta. W przeciwnym razie nie można go uruchomić. Typowa ścieżka to \\\\lbdiscsi01\\agent\\Scripts\\PreDeployment.ps1.
 
         Zawartość skryptu PreDeployment.ps1 przypomina poniższy przykład.
@@ -86,7 +122,7 @@ Ten krok powoduje utworzenie funkcjonalnego środowiska LBD. Jednak środowisko 
         $agentShare = '\\lbdiscsi01\agent'
         
         Write-Output "AgentShare is set to $agentShare" 
-        & $agentShare\Scripts\Configure-CloudandEdge.ps1 -AgentShare $agentShare -InstanceId '@A' -DatabaseServer 'lbdsqla01.contoso.com' -DatabaseName 'AXDB'
+        . $PSScriptRoot\Configure-CloudAndEdge.ps1 -AgentShare $agentShare -InstanceId '@A'
         ```
 
         > [!NOTE]
@@ -101,6 +137,75 @@ Ten krok powoduje utworzenie funkcjonalnego środowiska LBD. Jednak środowisko 
         >   - @#
 
 1. Wdróż środowisko, używając najnowszej dostępnej topologii podstawowej.
+1. Po wdrożeniu środowiska wykonaj następujące kroki:
+
+    1. Uruchom następujące polecenia SQL w firmowej bazie danych (AXDB).
+
+        ```sql
+        ALTER TABLE dbo.NUMBERSEQUENCETABLE ENABLE CHANGE_TRACKING WITH (TRACK_COLUMNS_UPDATED = ON)
+        delete from NumberSequenceTable
+        delete from NumberSequenceReference
+        delete from NumberSequenceScope
+        delete from FeatureManagementMetadata
+        delete from FeatureManagementState
+        delete from SysFeatureStateV0
+        ```
+
+    1. Zwiększ równocześnie maksymalną liczbę sesji przetwarzania wsadowego do wartości większej niż 4.
+
+        ```sql
+        Update batchserverconfig set maxbatchsessions = '<Replace with number of concurrent batch tasks you want>'
+        ```
+
+    1. Sprawdź, czy śledzenie zmian zostało włączone w firmowej bazie danych (AXDB).
+
+        1. Otwórz program SQL Server Management Studio (SSMS).
+        1. Wybierz i przytrzymaj (lub kliknij prawym przyciskiem myszy) swoją biznesową bazę danych (AXDB), a następnie wybierz **Właściwości**.
+        1. W wyświetlonym oknie wybierz **Śledzenie zmian**, a następnie ustaw następujące wartości:
+
+            - **Śledzenie zmian:** *Prawda*
+            - **Okres przechowywania:** *7*
+            - **Jednostki przechowywania:** *dni*
+            - **Automatyczne oczyszczanie:** *Prawda*
+
+    1. Dodaj utworzony wcześniej identyfikator aplikacji AD FS (przy użyciu skryptu Create-ADFSServerApplicationForEdgeScaleUnits.ps1) do tabeli aplikacji usługi Azure AD w jednostce skalowania. Ten krok można wykonać ręcznie za pośrednictwem interfejsu użytkownika. Można je również ukończyć za pośrednictwem bazy danych, korzystając z następującego skryptu.
+
+        ```sql
+        DECLARE @ALMOrchestratorId NVARCHAR(76) = '<Replace with the ADFS Application ID created in a previous step>';
+
+        IF NOT EXISTS (SELECT TOP 1 1 FROM SysAADClientTable WHERE AADClientId = @ALMOrchestratorId)
+        BEGIN
+            INSERT INTO SysAADClientTable (AADClientId, UserId, Name, ModifiedBy, CreatedBy)
+            VALUES (@ALMOrchestratorId, 'ScaleUnitManagement', 'Scale Unit Management', 'Admin', 'Admin');
+        END
+        ```
+
+## <a name="set-up-an-azure-key-vault-and-an-azure-ad-application-to-enable-communication-between-scale-units"></a><a name="set-up-keyvault"></a>Skonfiguruj klucz systemu Azure i aplikację Azure AD, aby umożliwić komunikację między jednostkami skali
+
+1. Po wdrożeniu środowiska utwórz dodatkową aplikację Azure AD, aby włączyć zaufaną komunikację między centrum a jednostką skalowania.
+
+    ```powershell
+    .\Create-SpokeToHubAADApplication.ps1 -ConfigurationFilePath '<Path of the ConfigTemplate.xml file>' `
+                                          -TenantId '<ID of the tenant where your cloud hub is deployed>' `
+                                          -ApplicationDisplayName '<Whichever name you want the Azure AD app to have>'
+    ```
+
+1. Po utworzeniu aplikacji musisz utworzyć tajny klucz klienta i zapisać informacje w kluczu systemu Azure. Ponadto należy udzielić dostępu do utworzonej aplikacji Azure AD, aby była ona w stanie pobrać plik użytkownika przechowywany w kluczu. Dla zapewnienia wygody poniższy skrypt automatycznie wykona wszystkie wymagane akcje.
+
+    ```powershell
+    .\Create-SpokeToHubAADAppSecrets.ps1 -ConfigurationFilePath '<Path of the ConfigTemplate.xml file>' `
+                                         -TenantId '<ID of the tenant where your cloud hub is deployed>' `
+                                         -SubscriptionName '<Any subscription within your tenant>' `
+                                         -ResourceGroupName '<Any resource group within your subscription>' `
+                                         -KeyVaultName '<Any key vault within your resource group>' `
+                                         -Location '<Any Azure location where Azure Key Vault is available>' `
+                                         -LCSEnvironmentId '<The LCS environment ID of your deployed scale unit>' `
+    ```
+
+    > [!NOTE]
+    > Jeśli nie istnieje klucz o określonej **wartości KeyVaultName**, skrypt automatycznie je utworzy.
+
+1. Dodaj właśnie utworzony identyfikator aplikacji usługi Azure AD (w przypadku korzystania ze skryptu Create-SpokeToHubAADApplication.ps1) do tabeli aplikacji usługi Azure AD w centrum. Ten krok można wykonać ręcznie za pośrednictwem interfejsu użytkownika.
 
 ## <a name="upload-target-packages-into-lbd-project-assets-in-lcs"></a><a name="upload-packages"></a>Przekaż pakiety docelowe do zasobów projektu LBD w usługach LCS
 
@@ -116,122 +221,13 @@ Ten krok obejmuje dopasowanie wersji aplikacji, wersji platformy i dostosowań w
 1. Serwisuj środowisko LBD przy użyciu połączonego pakietu aplikacji/platformy, który został przekazany w poprzednim kroku.
 1. Serwisuj środowisko LBD przy użyciu niestandardowego pakietu z możliwością wdrożenia, który został przekazany w poprzednim kroku.
 
-    ![Wybieranie pozycji Obsługa > Zastosuj aktualizacje w usługach LCS.](media/cloud_edge-LBD-LCS-ServiceLBDEnv1.png "Wybieranie pozycji Obsługa > Zastosuj aktualizacje w usługach LCS")
+    ![Stosowanie aktualizacji w u usługi LCS.](media/cloud_edge-LBD-LCS-ServiceLBDEnv1.png "Stosowanie aktualizacji w u usługi LCS")
 
     ![Wybieranie pakietu dostosowywania.](media/cloud_edge-LBD-LCS-ServiceLBDEnv2.png "Wybieranie pakietu dostosowywania")
 
 ## <a name="assign-your-lbd-edge-scale-unit-to-a-hub"></a><a name="assign-edge-to-hub"></a>Przypisz jednostkę skalowania LDB na krawędzi do piasty
 
-Dopóki jednostki skalowania na krawędzi są nadal dostępne w wersji zapoznawczej, należy użyć [narzędzi wdrażania jednostek skalowania i konfiguracji](https://github.com/microsoft/SCMScaleUnitDevTools) dostępnych w serwisie GitHub, aby przypisać jednostkę skalowania krawędzi LBD do piasty. Proces ten umożliwia funkcję konfiguracji LBD jako jednostki skalowania na krawędzi i kojarzenie jej z piastą. Ten proces jest podobny do konfigurowania środowiska developmentu z jednym polem.
-
-1. Pobierz najnowszą wersję narzędzia [SCMScaleUnitDevTools](https://github.com/microsoft/SCMScaleUnitDevTools/releases) i rozpakuj zawartość pliku.
-1. Utwórz kopię pliku `UserConfig.sample.xml` i nadaj jej nazwę `UserConfig.xml`.
-1. Utwórz aplikację Microsoft Azure Active Directory (Azure AD) w kliencie Azure AD, tak jak opisano w [Podręczniku wdrażania dla jednostki skalowania i obciążeń](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide#aad-application-registrations).
-    1. Po utworzeniu przejdź do formularza aplikacji Azure AD (SysAADClientTable) w piaście.
-    1. Utwórz nowy wpis i ustaw **identyfikator klienta** jako identyfikator utworzonej aplikacji. Ustaw wartość **Nazwa** na *ScaleUnits*, a **identyfikator użytkownika** na *Administrator*.
-
-1. Utwórz aplikację Active Directory Federation Service (AD FS), tak jak opisano w [Podręczniku wdrażania dla jednostki skalowania i obciążeń](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide#adfs-application-registrations).
-    1. Po utworzeniu przejdź do formularza aplikacji Azure AD (SysAADClientTable) w jednostce skalowania na krawędzi.
-    1. Utwórz nowy wpis i ustaw **identyfikator klienta** jako identyfikator utworzonej aplikacji. Ustaw **Identyfikator użytkownika** na *Administrator*.
-
-1. Zmodyfikuj plik `UserConfig.xml`.
-    1. W sekcji `InterAOSAADConfiguration` wprowadź informacje z aplikacji Azure AD utworzonej wcześniej.
-        - W elemencie `AppId` wprowadź identyfikator aplikacji platformy Azure.
-        - W elemencie `AppSecret` wprowadź wpis tajny aplikacji platformy Azure.
-        - Element `Authority` musi zawierać adres URL określający urząd zabezpieczeń dla Twojego dzierżawcy.
-
-        ```xml
-        <InterAOSAADConfiguration>
-            <AppId>8dab14f6-97b1-48e3-b51b-350b45f6ede5</AppId>
-            <AppSecret>k6em-_7.lopty56TGUedDTVhtER-j_6anY1</AppSecret>
-            <Authority>https://login.windows.net/contoso.onmicrosoft.com</Authority>
-        </InterAOSAADConfiguration>
-        ```
-
-    1. W sekcji `ScaleUnitConfiguration`, dla pierwszego elementu `ScaleUnitInstance` zmodyfikuj sekcję `AuthConfiguration`.
-        - W elemencie `AppId` wprowadź identyfikator aplikacji platformy Azure.
-        - W elemencie `AppSecret` wprowadź wpis tajny aplikacji platformy Azure.
-        - Element `Authority` musi zawierać adres URL określający urząd zabezpieczeń dla Twojego dzierżawcy.
-
-        ```xml
-        <AuthConfiguration>
-            <AppId>8dab14f6-97b1-48e3-b51b-350b45f6ede5</AppId>
-            <AppSecret>k6em-_7.lopdz.6d3DTVOtf9Lo-j_6anY1</AppSecret>
-            <Authority>https://login.windows.net/contoso.onmicrosoft.com</Authority>
-        </AuthConfiguration>
-        ```
-
-    1. Dodatkowo dla tego samego elementu `ScaleUnitInstance` ustaw następujące wartości:
-        - Określ adres URL piasty w elemencie `Domain`. Na przykład: `https://cloudhub.sandbox.operations.dynamics.com/`
-        - Upewnij się, że element `EnvironmentType` ma ustawioną wartość `LCSHosted`.
-
-    1. W sekcji `ScaleUnitConfiguration`, dla drugiego elementu `ScaleUnitInstance` zmodyfikuj sekcję `AuthConfiguration`.
-        - W elemencie `AppId` wprowadź identyfikator aplikacji usług AD FS.
-        - W elemencie `AppSecret` wprowadź wpis tajny aplikacji usług ADFS.
-        - Element `Authority` musi zawierać adres URL wystąpienia usług AD FS.
-
-        ```xml
-        <AuthConfiguration>
-            <AppId>26b16f25-21d8-4d36-987b-62df292895aa</AppId>
-            <AppSecret>iZFfObgI6lLtY9kEbBjEFV98NqI5_YZ0e5SBcWER</AppSecret>
-            <Authority>https://adfs.contoso.com/adfs</Authority>
-        </AuthConfiguration>
-        ```
-
-    1. Dodatkowo dla tego samego elementu `ScaleUnitInstance` ustaw następujące wartości:
-        - Określ adres URL jednostki skalowania na krawędzi w elemencie `Domain`. Na przykład: https://ax.contoso.com/
-        - Upewnij się, że element `EnvironmentType` ma ustawioną wartość LBD.
-        - Wprowadź w elemencie `ScaleUnitId` tę samą wartość, jaką określono dla `InstanceId` podczas konfigurowania skryptu przedwdrożeniowego `Configure-CloudandEdge.ps1`.
-
-        > [!NOTE]
-        > Jeśli nie używasz identyfikatora domyślnego (@A), upewnij się, że zaktualizowano identyfikator ScaleUnitId dla każdego elementu ConfiguredWorkload w sekcji obciążeń.
-
-1. Otwórz program PowerShell i przejdź do folderu zawierającego plik `UserConfig.xml`.
-
-1. Uruchom narzędzie za pomocą tego polecenia.
-
-    ```powershell
-    .\CLI.exe
-    ```
-
-    > [!NOTE]
-    > Po każdej akcji należy uruchomić narzędzie ponownie.
-
-1. W narzędziu wybierz opcję **2. Przygotuj środowiska do instalacji obciążeń**. Następnie uruchom następujące kroki:
-    1. Wybierz opcję **1. Przygotuj piastę**.
-    1. Wybierz opcję **2. Przygotuj jednostkę skalowania**.
-
-    > [!NOTE]
-    > Jeśli polecenie nie jest uruchomione z czystej instalacji i wystąpi błąd, należy wykonać następujące czynności:
-    >
-    > - Usuń wszystkie foldery z folderu `aos-storage` (z wyjątkiem `GACAssemblies`).
-    > - Uruchom następujące polecenie SQL w firmowej bazie danych (AXDB):
-    >
-    > ```sql 
-    > delete from storagefoler
-    > ```
-
-1. Uruchom następujące polecenia SQL w firmowej bazie danych (AXDB):
-
-    ```sql
-    delete from FEATUREMANAGEMENTMETADATA
-    delete from FEATUREMANAGEMENTSTATE
-    delete from NUMBERSEQUENCESCOPE
-    ```
-
-1. Sprawdź, czy śledzenie zmian zostało włączone w firmowej bazie danych (AXDB)
-    1. Uruchom program SQL Server Management Studio (SSMS).
-    1. Kliknij prawym przyciskiem myszy firmową bazę danych (AXDB) i wybierz właściwości.
-    1. W otwartym oknie wybierz opcję **Śledzenie zmian** i określ następujące ustawienia:
-
-        - **Śledzenie zmian:** *Prawda*
-        - **Okres przechowywania:** *7*
-        - **Jednostki przechowywania:** *dni*
-        - **Automatyczne oczyszczanie:** *Prawda*
-
-1. W narzędziu wybierz opcję **3. Instaluj obciążenia**. Następnie uruchom następujące kroki:
-    1. Wybierz opcję **1. Instaluj w piaście**.
-    1. Wybierz **2. Instaluj w jednostce skalowania**.
+Jednostkę skalowania krawędzi można skonfigurować za pomocą portalu zarządzania jednostkami skalowania. Aby uzyskać więcej informacji, zobacz [temat Zarządzanie jednostkami skalowania i obciążeniami za pomocą portalu Menedżer jednostek skalowania.](./cloud-edge-landing-page.md#scale-unit-manager-portal)
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 59d246dd348bca6c00dc90b19353a382986841f2
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: 3111de1f9862cbf926e763f963c86059f4121fc0
+ms.sourcegitcommit: 4b7e9d074e368a08d2f75482b722dce0c69a4bbd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471747"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7733446"
 ---
 # <a name="scale-units-in-a-distributed-hybrid-topology"></a>Jednostki skalowania w dystrybuowanej topologii hybrydowej
 
@@ -32,8 +32,8 @@ Firmy pracujące z produkcją i dystrybucją muszą mieć możliwość uruchamia
 
 Dystrybuowana topologia hybrydowa wprowadza pojęcie *jednostek skalowania*, które umożliwiają rozkład obciążenia pracą produkcji i wykonywania w magazynie w różnych środowiskach. Ta funkcja może ułatwić poprawę wydajności, zapobiegać przerwom w świadczeniu usług oraz maksymalizuje czas pracy. Jednostki skali są dostarczane za pośrednictwem następujących dodatków do subskrypcji Supply Chain Management:
 
-- Dodatek jednostki skali w chmurze Dynamics 365 Supply Chain Management (*dostępne od kwietnia 2021*)
-- Dodatek jednostki skali na krawędzi w chmurze Dynamics 365 Supply Chain Management (*dostępne wkrótce*)
+- Dodatek jednostki skali chmury dla Dynamics 365 Supply Chain Management
+- Dodatek jednostki skali urządzenia brzegowego dla Dynamics 365 Supply Chain Management
 
 Możliwości obciążenia są udostępniane w sposób ciągły poprzez stopniowe ulepszenia.
 
@@ -51,21 +51,12 @@ Można skonfigurować środowisko centrum i jednostki skalowania w chmurze dla w
 
 ### <a name="dedicated-warehouse-management-workload-capabilities-in-a-scale-unit"></a>Dedykowane możliwości zarządzania pracą magazynową w jednostce skalowania
 
-Obciążenie zarządzania magazynem jest pierwszym rozproszonym obciążeniem dla jednostek skalowania, które zostało udostępnione do ogólnej dostępności.
-
-W przypadku zarządzania magazynem jednostki wagowe zapewniają następujące możliwości:
-
-- System może przetwarzać wybrane metody fal dla zleceń sprzedaży i uzupełniania zapasów.
-- Pracownicy magazynu mogą uruchamiać pracę magazynową sprzedaży i uzupełnienia popytu, korzystając z aplikacji Warehouse Management.
-- Pracownicy magazynu mogą uzyskiwać dostęp do dostępnych zapasów za pośrednictwem aplikacji Warehouse Management.
-- Pracownicy magazynu mogą tworzyć i uruchamiać przesunięcia zapasów za pośrednictwem aplikacji Warehouse Management.
-- Pracownicy magazynu mogą rejestrować zamówienia zakupu i wykonywać odłożenia pracy przy użyciu aplikacji Warehouse Management.
-
+Obciążenie pracą zarządzania magazynem umożliwia uruchamianie procesów zarządzania magazynem w izolowanym wdrożeniu.
 Aby uzyskać więcej informacji, zobacz temat [Obciążenia pracą dotyczące zarządzania magazynem dla jednostek skalowania chmury i urządzenia brzegowego](cloud-edge-workload-warehousing.md).
 
 ### <a name="dedicated-manufacturing-execution-workload-capabilities-in-a-scale-unit"></a>Dedykowane możliwości wykonywania produkcyjnych w jednostkach skali
 
-Pierwsza wersja obciążenia produkcyjnego jest obecnie w wersji zapoznawczej i zapewnia następujące możliwości:
+Obciążenie pracą produkcji oferuje następujące możliwości:
 
 - Operatorzy maszyn i kierownicy mogą uzyskać dostęp do operacyjnego planu produkcji.
 - Operatorzy maszynowi mogą regularnie aktualizować plan, uruchamiając dyskretne i przetwarzające zadania produkcyjne.
@@ -191,17 +182,33 @@ Firma Microsoft sprawdzi Twoją prośbę i poinformuje o następnych krokach, wy
 
 Po zakończeniu dołączania można użyć portu do skonfigurowania jednostek skalowania i obciążeń.
 
-### <a name="manage-cloud-scale-units-and-workloads-by-using-the-scale-unit-manager-portal"></a><a name="scale-unit-manager-portal"></a>Zarządzanie jednostkami i obciążeniem skali chmury przy użyciu portalu Menedżera jednostki skalowania
+### <a name="manage-scale-units-and-workloads-by-using-the-scale-unit-manager-portal"></a><a name="scale-unit-manager-portal"></a>Zarządzanie jednostkami i obciążeniem skali przy użyciu portalu Menedżera jednostki skalowania
 
 Przejdź do [portalu Menedżera jednostki skalowania ](https://aka.ms/SCMSUM)i zaloguj się przy użyciu konta dzierżawy. Na **stronie Konfigurowanie jednostek skali** można dodać środowisko centralne, jeśli nie jest jeszcze umieszczone na liście. Następnie można wybrać centrum, które ma zostać skonfigurowane przy użyciu jednostek skali i obciążeń.
 
-:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Obsługa jednostki skalowania i zarządzanie obciążeniem — doświadczenie.":::
+:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Portal Menedżera jednostek skalowania, konfiguracja strony jednostek skali.":::
 
 Aby dodać jedną lub więcej jednostek skali, które są dostępne w subskrypcjach, wybierz opcję **Dodaj jednostki skalowania**.
 
 Na **karcie zdefiniowane obciążenia**, za pomocą przycisku **Utwórz obciążenie pracą** można dodać obciążenie zarządzania magazynem do jednej z jednostek skali. Dla każdego obciążenia należy określić kontekst procesów, które będą należały do obciążenia pracą. W przypadku obciążeń zarządzania magazynem kontekst jest określonym magazynem w określonym oddziale i firmie.
 
-:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Tworzenie obciążenia pracą.":::
+:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Definiowanie okna dialogowego obciążenia pracą.":::
+
+#### <a name="manage-workloads"></a>Zarządzanie obciążeniami pracą
+
+Po włączeniu jednego lub większej liczby obciążenia pracą użyj opcji **Zarządzaj obciążeniami**, aby zainicjować procesy, takie jak wymienione w poniższej tabeli, i zarządzać nimi.
+
+| Przetwarzaj | Opis |
+|---|---|
+| Wstrzymywanie komunikacji jednostek skalowania | Wstrzymywanie komunikatów potoku między centrum a jednostką skali. Ten proces spowoduje zatrzymanie komunikacji i opróżnienie potoku danych między centrum a jednostkami skalowania. Ten proces należy uruchomić przed uruchomieniem operacji obsługi Supply Chain Management dla centrum lub jednostki skalowania, ale można jej użyć także w innych sytuacjach. |
+| Wznów komunikację z wagą | Wznów komunikaty potoku między centrum a jednostką skalowania. Może być konieczne użycie tego procesu, na przykład po uruchomieniu operacji obsługi Supply Chain Management dla centrum lub jednostki skalowania. |
+| Uaktualnij obciążenia | Synchronizuj nową funkcjonalność między obciążeniami centrum i jednostki skalowania. Może być konieczne użycie tego procesu, na przykład, jeśli obsługa spowodowała zmianę kwerend wymiany danych i/lub dodano nowe tabele lub pola do obciążenia pracą. |
+| Przenoszenie obciążenia pracą do jednostki skali | Zaplanuj obciążenie pracą, które jest obecnie uruchomione w centrum, aby zostać przeniesione do jednostki skalowania. Po uruchomieniu tego procesu będzie przepływać synchronizacja danych, a centrum i jednostka skali zostaną ustawione tak, aby zmieniły prawa własności obciążenia pracą. |
+| Przenieś jednostkę wagi do piasty | Zaplanuj obciążenie, które jest aktualnie uruchomione w jednostce skalowania, które ma zostać przeniesione do centrum. Po uruchomieniu tego procesu będzie przepływać synchronizacja danych, a centrum i jednostka skali zostaną ustawione tak, aby zmieniły prawa własności obciążenia pracą.
+| Przejście alarmowe do centrum | <p>Natychmiast przenieś istniejące obciążenie pracą do centrum. *Ten proces spowoduje zmianę prawa własności tylko do danych, które są obecnie dostępne w centrum.*</p><p><strong>Ostrzeżenie:</strong> Ten proces może spowodować utratę danych przez niezsynchronizowane dane i niepowodzenie przetwarzania biznesowego. Dlatego należy go używać tylko w procesach biznesowych, w których należy przetwarzać procesy biznesowe w centrum, ponieważ w jednostce skalowania znajduje się okres, którego nie można minimaliować w odpowiednim czasie.</p> |
+| Rozproszona topologia likwidacji | Usuń wdrożenie jednostki skalowania i uruchom tylko w centrum bez przetwarzania obciążenia pracą. |
+
+:::image type="content" source="media/sum-manage-workloads.png" alt-text="Obsługa jednostki skalowania i zarządzanie obciążeniem — doświadczenie.":::
 
 > [!TIP]
 > Z biegiem czasu do środowiska Menedżer jednostek skalowania będą dodawane stopniowe ulepszenia, aby ułatwić operacje zarządzania cyklem życia. Specyficzne możliwości dla bieżącej wersji są udokumentowane w podręczniku wprowadzającym, który jest dostępny dla klientów, którzy są w trakcie wdrażania do rozproszonej, hybrydowej topologii Supply Chain Management. <!-- KFM: Add a link to the handbook when it is published -->

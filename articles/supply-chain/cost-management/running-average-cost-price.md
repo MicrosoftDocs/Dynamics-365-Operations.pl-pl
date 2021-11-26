@@ -38,9 +38,9 @@ W poniższej tabeli pokazano, kiedy transakcje magazynowe są w systemie księgo
 
 | Warunek                                               | System używa szacowanej średniej kroczącej kosztu własnego | System używa kosztu własnego zdefiniowanego w rekordzie głównym towaru |
 |---------------------------------------------------------|----------------------------------------------------------|-------------------------------------------------------------------|
-| Zarówno dzielna\*, jak i dzielnik\*\* są dodatnie.  | Tak                                                      | Nr                                                                |
-| Dzielna\*, dzielnik\*\* lub obie te wartości są ujemne. | Nr                                                       | Tak                                                               |
-| Dzielnik\*\* ma wartość 0 (zero).                        | Nr                                                       | Tak                                                               |
+| Zarówno dzielna\*, jak i dzielnik\*\* są dodatnie.  | Tak                                                      | Nie                                                                |
+| Dzielna\*, dzielnik\*\* lub obie te wartości są ujemne. | Nie                                                       | Tak                                                               |
+| Dzielnik\*\* ma wartość 0 (zero).                        | Nie                                                       | Tak                                                               |
 
 \* Dzielna = (kwota fizyczna + kwota finansowa) \*\* Dzielnik = (ilość fizyczna + ilość finansowa) 
 

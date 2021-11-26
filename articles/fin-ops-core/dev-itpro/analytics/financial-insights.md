@@ -89,16 +89,16 @@ Poniższy wykres porównawczy pomoże zidentyfikować różnice między oboma op
 
 | Funkcja                                                   | Financial Reporting                                               | Analiza finansowa |
 |----------------------------------------------------------|-------------------------------------------------------------------|--------------------|
-| **Edytowanie domyślnych raportów**                                 | Tak                                                               | Nr |
-| **Tworzenie nowych raportów**                                   | Tak                                                               | Nr |
-| **Drukowanie raportów**                                        | Tak                                                               | Nr |
+| **Edytowanie domyślnych raportów**                                 | Tak                                                               | Nie |
+| **Tworzenie nowych raportów**                                   | Tak                                                               | Nie |
+| **Drukowanie raportów**                                        | Tak                                                               | Nie |
 | **Eksportuj do programu Excel**                                      | Tak                                                               | Ograniczone Eksportowanie nieprzetworzonych danych do programu Excel — nie jest to sformatowany raport |
-| **Obsługa hierarchii raportowania/hierarchii organizacyjnej**   | Tak                                                               | Nr |
+| **Obsługa hierarchii raportowania/hierarchii organizacyjnej**   | Tak                                                               | Nie |
 | **Sprawozdawczość z danych księgi podrzędnej**                             | Tak Ograniczenie do jednego dostawcy i odbiorcy                              | Tak Dostawca, odbiorca, grupy dostawców/odbiorców, adresy dostawców/odbiorców itd. |
 | **Waluta raportowania**                                   | Tak Waluta rozliczeniowa i przeliczanie na walutę raportowania       | Nie Tylko waluta raportowania |
 | **Zabezpieczenia**                                             | Tak Zgodność z zabezpieczeniami raportowania w module Finance i drzewa raportowania | Ograniczone Wyświetlanie raportów dla wszystkich firm (niezależnie od poziomu zabezpieczeń ustawionego w programie Finance and Operations) lub tylko dla aktywnej firmy |
-| **Obsługa różnych planów kont i lat obrachunkowych** | Tak                                                               | Nr |
-| **Sprawozdawczość z danych zewnętrznych**                              | Nr                                                                | Nr |
+| **Obsługa różnych planów kont i lat obrachunkowych** | Tak                                                               | Nie |
+| **Sprawozdawczość z danych zewnętrznych**                              | Nie                                                                | Nie |
 | **Obsługa konsolidacji**                               | Tak                                                               | Ograniczone Można generować raporty obejmujące wiele firm, ale tylko w walucie rozliczeniowej |
 
 Dostępne są następujące sprawozdania finansowe:
@@ -189,7 +189,7 @@ W oknie usługi Power BI znajduje się również przycisk, który umożliwia prz
 
 ![Przycisk przechodzenia wstecz w bilansie próbnym.](./media/trial-balance5.png)
 
-Aby zobaczyć szczegóły transakcji stojących za zbiorczymi saldami, można wybrać pewne kwoty i w ten sposób przejść z powrotem do programu Finance and Operations.
+Aby zobaczyć szczegóły transakcji stojących za zbiorczymi saldami, można wybrać pewne kwoty i w ten sposób przejść z powrotem do programu Financial and Operations.
 
 Drążenie wstecz ze sprawozdań finansowych powoduje przejście do Eksploratora źródeł księgowania (ASE), a nie do transakcji w załącznikach. Edytor ASE nie pokazuje wyłącznie zapisów księgowych istniejących w księdze głównej. Zamiast tego przedstawia szczegóły transakcji z księgi podrzędnej. W związku z tym otrzymujesz znacznie więcej informacji na temat transakcji źródłowej i można ich używać do analizy. Na przykład widać, kto był dostawcą lub odbiorcą, co odbiorca kupił lub sprzedawca sprzedał, a nawet którego projektu dotyczyła transakcja.
 

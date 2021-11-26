@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: c2d7f140c0199b4b81a7b42220d5800d427be680
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 464d49f4e096fdd4fe47f73efc253c97200f4de3
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577847"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778066"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Obsługa magazynów dla ładunków przychodzących dla zamówień zakupu
 
@@ -205,7 +205,7 @@ W poniższej tabeli zestawiono wyniki dla ustawienia **Zezwalaj na wiele odbior�
 | Zezwalaj na wiele odbiorów produktów na ładunek | Ilość ładunku | Stan ładunku | Notatka |
 |---|---|---|---|
 | Jeśli to pole nie jest dostępne (wersje przed 10.0.10) | <p>Ilość ładunku jest ustawiona tak, aby była równa zarejestrowanej ilości.</p><p>Jeśli ilość ładunku jest zaktualizowana na 0 (zero), co oznacza, że nie dokonano rejestracji, wiersz ładunku jest usuwany.</p><p>Jeśli ładunek nie zawiera żadnych wierszy ładunku, ładunek jest usuwany.</p> | _Odebrane_ | Jeśli dla zarejestrowanej ilości wiersza zamówienia istnieje wiele ładunków, tylko stan ładunku, z którego zaksięgowano przyjęcie jest aktualizowany na _Odebrano_. |
-| Nr | <p>Ilość ładunku jest ustawiona w taki sposób, aby była równa ilości zarejestrowanej, która jest skojarzona z identyfikatorem ładunku.</p><p>Jeśli dla transakcji magazynowej nie zarejestrowano żadnego identyfikatora ładunku, zachowanie jest zgodne z zachowaniem w wersjach przed 10.0.10.</p> | _Odebrane_ | |
+| Nie | <p>Ilość ładunku jest ustawiona w taki sposób, aby była równa ilości zarejestrowanej, która jest skojarzona z identyfikatorem ładunku.</p><p>Jeśli dla transakcji magazynowej nie zarejestrowano żadnego identyfikatora ładunku, zachowanie jest zgodne z zachowaniem w wersjach przed 10.0.10.</p> | _Odebrane_ | |
 | Tak | Bez aktualizacji | _Odebrano_, jeśli całkowita zarejestrowana ilość ładunku jest równa lub większa od ilości ładunku | |
 | Tak | Bez aktualizacji | _Wysłano_ lub _W toku_, jeśli całkowita zarejestrowana ilość ładunku jest mniejsza od ilości ładunku | |
 
@@ -267,7 +267,7 @@ Te scenariusze wymagają funkcji _Księgowanie wielu odbiorów produktów na ła
 
 1. Otwórzz obszar roboczy **Zarządzanie funkcjami**. (Aby uzyskać pełne informacje na temat znajdowania i używania tego obszaru roboczego, zobacz [Zarządzanie funkcjami — omówienie](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
 
-1. Włącz funkcję  _Skojarz transakcje magazynowe zamówienia zakupu z ładunkiem_, która jest wymieniona w następujący sposób:
+1. Upewnij się, że funkcja _Skojarz transakcje magazynowe zamówienia zakupu z ładunkiem_ jest włączona. W przypadku Supply Chain Management w wersji 10.0.21 ta funkcja jest obowiązkowa, więc jest domyślnie włączona i nie można jej ponownie wyłączyć. Jednak ta funkcja jest nadal wymieniona w [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) jako:
 
     - **Moduł:** _Zarządzanie magazynem_
     - **Nazwa funkcji:** _Skojarz transakcje magazynowe zamówienia zakupu z ładunkiem_

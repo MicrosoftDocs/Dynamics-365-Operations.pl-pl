@@ -75,14 +75,14 @@ Poniższa tabela zawiera przykłady, które pokazują, jak różne ustawienia wy
 
 | Zwolniony produkt: Dostawca | Domyślne ustawienia zamówień: Czas realizacji | Zapotrzebowanie na towar: Zastąp dostawcę | Zapotrzebowanie na towar: Zastąp czas realizacji | Umowa handlowa: Dostawca | Umowa handlowa: Czas realizacji | Umowa handlowa: Ignoruj czas realizacji | Wynikowy dostawca | Wynikowy czas realizacji |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| ***US001** _ | _*_1_*_ | Nr | Nr | US003 | 3 | Nr | _ *US001** | **1** |
-| US001 | 1 | ***Tak: US002** _ | _*_Tak: 2_*_ | US003 | 3 | Nr | _ *US002** | **2** |
-| *(Puste)* | 1 | Nr | Nr | ***US003** _ | _*_3_*_ | Nr | _ *US003** | **3** |
-| *(Puste)* | ***1** _ | Nr | Nr | _*_US003_*_ | 3 | Tak | _ *US003** | **1** |
-| *(Puste)* | ***1** _ | _*_Tak: US002_*_ | Nr | US003 | 3 | Nr | _ *US002** | **1** |
-| *(Puste)* | ***1** _ | _*_Tak: US002_*_ | Nr | US003 | 3 | Nr | _ *US002** | **1** |
-| *(Puste)* | 1 | Nr | Tak: 2 | ***US003** _ | _*_3_*_ | Nr | _ *US003** | **3** |
-| *(Puste)* | 1 | Nr | ***Tak: 2** _ | _*_US003_*_ | 3 | Tak | _ *US003** | **2** |
+| ***US001** _ | _*_1_*_ | Nie | Nie | US003 | 3 | Nie | _ *US001** | **1** |
+| US001 | 1 | ***Tak: US002** _ | _*_Tak: 2_*_ | US003 | 3 | Nie | _ *US002** | **2** |
+| *(Puste)* | 1 | Nie | Nie | ***US003** _ | _*_3_*_ | Nie | _ *US003** | **3** |
+| *(Puste)* | ***1** _ | Nie | Nie | _*_US003_*_ | 3 | Tak | _ *US003** | **1** |
+| *(Puste)* | ***1** _ | _*_Tak: US002_*_ | Nie | US003 | 3 | Nie | _ *US002** | **1** |
+| *(Puste)* | ***1** _ | _*_Tak: US002_*_ | Nie | US003 | 3 | Nie | _ *US002** | **1** |
+| *(Puste)* | 1 | Nie | Tak: 2 | ***US003** _ | _*_3_*_ | Nie | _ *US003** | **3** |
+| *(Puste)* | 1 | Nie | ***Tak: 2** _ | _*_US003_*_ | 3 | Tak | _ *US003** | **2** |
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

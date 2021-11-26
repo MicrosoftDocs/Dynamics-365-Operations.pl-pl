@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 503ba8ae95119f3ce9533f81cdd16c34cf3a9223
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f0be79b54a279893f93d41981342e42c8880f059
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574552"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752839"
 ---
 # <a name="set-up-a-device-to-run-the-production-floor-execution-interface"></a>Konfigurowanie urządzenia do uruchamiania interfejsu wykonania hal produkcyjnych
 
@@ -28,9 +28,9 @@ Interfejs wykonywania hali produkcyjnej jest ustawiany dla każdego urządzenia 
 
 ## <a name="set-the-configuration-and-filters-for-a-specific-device"></a>Umożliwia ustawienie konfiguracji i filtrów dla określonego urządzenia
 
-Aby określić konfigurację i filtry zadań dla urządzenia, należy zalogować się na stronie **Tworzenie hal produkcyjnych** przy użyciu konta, które ma rolę zabezpieczeń, która zawiera obowiązki *Kierownik ds. grafiku*. (Oprócz wbudowanych ról zabezpieczeń, tylko *Kierownik zakładu produkcyjnego* ma takie obowiązki.) Następnie wykonaj następujące kroki.
+Aby określić konfigurację i filtry zadań dla urządzenia, należy zalogować się na stronie **Tworzenie hal produkcyjnych** przy użyciu konta, które ma rolę zabezpieczeń, która zawiera obowiązki *Utrzymuj nadzór nad czasem*. (Oprócz wbudowanych ról zabezpieczeń, tylko *Kierownik zakładu produkcyjnego* ma takie obowiązki.) Następnie wykonaj następujące kroki.
 
-1. Przejdź do urządzenia, które chcesz skonfigurować, i zaloguj się do rozwiązania Microsoft Dynamics 365 Supply Chain Management jako kierownik zakładu produkcyjnego. (Należy skorzystać z konta, które zawiera obowiązki *Kierownik ds. grafiku*.)
+1. Przejdź do urządzenia, które chcesz skonfigurować, i zaloguj się do rozwiązania Microsoft Dynamics 365 Supply Chain Management jako kierownik zakładu produkcyjnego. (Należy skorzystać z konta, które zawiera obowiązki *Utrzymuj nadzór nad czasem*.)
 1. Upewnij się, że dla konfigurowanego urządzenia jest dostępna konfiguracja. Jeśli konfiguracja jeszcze nie istnieje, podano konfigurację domyślną. Aby uzyskać więcej informacji o konfigurowaniu, zapoznaj się z tematem [Konfigurowanie urządzenia do uruchamiania interfejsu wykonywania pomieszczeń produkcyjnego](production-floor-execution-configure.md).
 1. Wybierz kolejno opcje **Kontrola produkcji \> Wykonywanie produkcji \> Tworzenie hal produkcyjnych**.
 

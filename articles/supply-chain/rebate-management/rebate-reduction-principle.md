@@ -47,11 +47,11 @@ W poniższej tabeli pokazano kilka typowych przykładów ustawień zasady redukc
 
 | Zasada redukcji rabatów | opis | Zastosuj zmniejszenie | Podstawy redukcji | Wyklucz z redukcji |
 |---|---|---|---|---|
-| Odłożone | Zmniejsz rabat | Tak | Obie | Nr |
+| Odłożone | Zmniejsz rabat | Tak | Obie | Nie |
 | Bez rabatu | Wyklucz rabat | Tak | Rabat | Tak |
 | Wiele | Wiele rabatów | Tak | Obie | Tak |
-| None | Tylko dla rabatów i rabatów | Nr | Obie | Tak |
-| Inicjowanie obsługi | Tylko prowizja | Tak | Inicjowanie obsługi | Nr |
+| None | Tylko dla rabatów i rabatów | Nie | Obie | Tak |
+| Inicjowanie obsługi | Tylko prowizja | Tak | Inicjowanie obsługi | Nie |
 | Rabat | Tylko rabaty | Tak | Rabat | Tak |
 
 ## <a name="examples-of-rebate-reduction-principle-calculations"></a>Przykłady ustawień zasady obliczeń redukcji rabatów

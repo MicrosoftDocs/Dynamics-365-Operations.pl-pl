@@ -187,34 +187,34 @@ W poniższej tabeli pokazano, które funkcje wychodzące są obsługiwane i gdzi
 
 | Przetwarzaj                                                      | Piasta | Obciążenie pracą dla wykonania w magazynie w ramach jednostki skalowania |
 |--------------------------------------------------------------|-----|------------------------------|
-| Przetwarzanie dokumentu źródłowego                                   | Tak | Nr |
-| Zarządzanie procesem załadunku i transportu                | Tak, ale tylko procesy planowania wysyłki ładunku. Przetwarzanie zarządzania transportem nie jest obsługiwane  | Nr |
-| Zwolnij do magazynu                                         | Tak | Nr |
-| Planowany przeładunek kompletacyjny                                        | Nr  | Nr |
+| Przetwarzanie dokumentu źródłowego                                   | Tak | Nie |
+| Zarządzanie procesem załadunku i transportu                | Tak, ale tylko procesy planowania wysyłki ładunku. Przetwarzanie zarządzania transportem nie jest obsługiwane  | Nie |
+| Zwolnij do magazynu                                         | Tak | Nie |
+| Planowany przeładunek kompletacyjny                                        | Nie  | Nie |
 | Konsolidacja wysyłki                                       | Tak, w przypadku planowania wysyłki ładunku | Tak |
-| Przetwarzanie grupy wysyłek                                     | Nr  |Tak, z wyjątkiem funkcji **Tworzenie i sortowanie ładunku** |
-| Obsługa wysyłek dla grupy czynności                                  | Nr  | Tak|
-| Przetwarzanie pracy magazynowej (z uwzględnieniem numeru identyfikacyjnego na płycie licencyjnej)        | Nr  | Tak, ale tylko dla wymienionych wcześniej obsługiwanych możliwości |
-| Wybór grupy                                              | Nr  | Tak|
-| Ręczne przetwarzanie pakowania, w tym przetwarzanie pracy „Pobieranie zapakowanych kontenerów” | Nr <P>Niektóre operacje mogą być wykonywane po początkowym procesie pobierania obsługiwanym przez jednostkę skalowania, ale nie jest to zalecane z powodu następujących zablokowanych operacji.</p>  | Nr |
-| Usuń kontener z grupy                                  | Nr  | Nr |
-| Przetwarzanie sortowania wychodzących                                  | Nr  | Nr |
+| Przetwarzanie grupy wysyłek                                     | Nie  |Tak, z wyjątkiem funkcji **Tworzenie i sortowanie ładunku** |
+| Obsługa wysyłek dla grupy czynności                                  | Nie  | Tak|
+| Przetwarzanie pracy magazynowej (z uwzględnieniem numeru identyfikacyjnego na płycie licencyjnej)        | Nie  | Tak, ale tylko dla wymienionych wcześniej obsługiwanych możliwości |
+| Wybór grupy                                              | Nie  | Tak|
+| Ręczne przetwarzanie pakowania, w tym przetwarzanie pracy „Pobieranie zapakowanych kontenerów” | Nie <P>Niektóre operacje mogą być wykonywane po początkowym procesie pobierania obsługiwanym przez jednostkę skalowania, ale nie jest to zalecane z powodu następujących zablokowanych operacji.</p>  | Nie |
+| Usuń kontener z grupy                                  | Nie  | Nie |
+| Przetwarzanie sortowania wychodzących                                  | Nie  | Nie |
 | Drukowanie dokumentów powiązanych z ładunkiem                           | Tak | Tak|
-| List przewozowy i generowanie WPW                            | Nr  | Tak|
-| Potwierdzenie wysyłki                                             | Nr  | Tak|
-| Potwierdzenie wysyłki z „potwierdzeniem i przeniesieniem”            | Nr  | Nr |
-| Przetwarzanie dokumentów dostawy i faktur                        | Tak | Nr |
-| Szybkie pobranie (zamówienia sprzedaży i przeniesienia)                    | Nr  | Tak, bez usuwania rezerwacji dla dokumentów źródłowych|
-| Nadmiarowe pobranie (zamówienia sprzedaży i przeniesienia)                     | Nr  | Tak|
-| Zmiana lokalizacji pracy (zamówienia sprzedaży i przeniesienia)         | Nr  | Tak|
-| Zakończenie pracy (zamówienia sprzedaży i przeniesienia)                    | Nr  | Tak|
+| List przewozowy i generowanie WPW                            | Nie  | Tak|
+| Potwierdzenie wysyłki                                             | Nie  | Tak|
+| Potwierdzenie wysyłki z „potwierdzeniem i przeniesieniem”            | Nie  | Nie |
+| Przetwarzanie dokumentów dostawy i faktur                        | Tak | Nie |
+| Szybkie pobranie (zamówienia sprzedaży i przeniesienia)                    | Nie  | Tak, bez usuwania rezerwacji dla dokumentów źródłowych|
+| Nadmiarowe pobranie (zamówienia sprzedaży i przeniesienia)                     | Nie  | Tak|
+| Zmiana lokalizacji pracy (zamówienia sprzedaży i przeniesienia)         | Nie  | Tak|
+| Zakończenie pracy (zamówienia sprzedaży i przeniesienia)                    | Nie  | Tak|
 | Drukowanie raportu pracy                                            | Tak | Tak|
-| Etykieta grupy czynności                                                   | Nr  | Tak|
-| Podział pracy                                                   | Nr  | Tak|
-| Przetwarzanie pracy — skierowane przez transport ładunku            | Nr  | Nr |
-| Zmniejsz ilość pobraną                                       | Nr  | Nr |
-| Wycofaj pracę                                                 | Nr  | Nr |
-| Wycofaj potwierdzenie wysyłki                                | Nr  | Tak|
+| Etykieta grupy czynności                                                   | Nie  | Tak|
+| Podział pracy                                                   | Nie  | Tak|
+| Przetwarzanie pracy — skierowane przez transport ładunku            | Nie  | Nie |
+| Zmniejsz ilość pobraną                                       | Nie  | Nie |
+| Wycofaj pracę                                                 | Nie  | Nie |
+| Wycofaj potwierdzenie wysyłki                                | Nie  | Tak|
 
 ### <a name="inbound"></a>Przychodzące
 
@@ -226,27 +226,27 @@ W poniższej tabeli pokazano, które funkcje przychodzące są obsługiwane i gd
 | Zarządzanie procesem załadunku i transportu                    | Tak | Nie |
 | Koszt z wyładunkiem i odbiór towaru w drodze                       | Tak | Nie |
 | Potwierdzenie wysyłki wychodzącej                                    | Tak | Nie |
-| Zwolnienie zamówienia zakupu do magazynu (przetwarzanie zamówienia magazynowego) | Tak | Nr |
-| Anulowanie wierszy zamówienia magazynowego<p>Należy zauważyć, że jest to obsługiwane tylko wtedy, gdy nie utworzono żadnej rezerwacji dla wiersza</p> | Tak | Nr |
+| Zwolnienie zamówienia zakupu do magazynu (przetwarzanie zamówienia magazynowego) | Tak | Nie |
+| Anulowanie wierszy zamówienia magazynowego<p>Należy zauważyć, że jest to obsługiwane tylko wtedy, gdy nie utworzono żadnej rezerwacji dla wiersza</p> | Tak | Nie |
 | Przyjęcie i odłożenie pozycji z zamówienia zakupu                       | <p>Tak, &nbsp;gdy &nbsp;nie ma&nbsp; zamówienia magazynowego</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | <p>Tak, jeśli zamówienie zakupu nie jest częścią <i>ładunku</i></p> |
 | Przyjęcie i odłożenie wiersza zamówienia zakupu                       | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | <p>Tak, jeśli zamówienie zakupu nie jest częścią <i>ładunku</i></p></p> |
-| Zwróć odebrane zamówienie i odłóż                              | Tak | Nr |
+| Zwróć odebrane zamówienie i odłóż                              | Tak | Nie |
 | Przyjęcie i odłożenie mieszanego numeru identyfikacyjnego                       | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Tak |
-| Odbierana pozycja ładunku                                              | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Nr |
-| Odbieranie numeru identyfikacyjnego i odłożenie                             | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Nr |
-| Przyjmowanie i odkładanie pozycji z zamówienia przeniesienia                       | Tak | Nr |
-| Przyjęcie i odłożenie wiersza zamówienia przeniesienia                       | Tak | Nr |
+| Odbierana pozycja ładunku                                              | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Nie |
+| Odbieranie numeru identyfikacyjnego i odłożenie                             | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Nie |
+| Przyjmowanie i odkładanie pozycji z zamówienia przeniesienia                       | Tak | Nie |
+| Przyjęcie i odłożenie wiersza zamówienia przeniesienia                       | Tak | Nie |
 | Anuluj pracę (przychodzące)                                            | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | <p>Tak, ale tylko gdy zaznaczenie opcji <b>Wyrejestrowywanie paragonu podczas anulowania pracy</b> (na stronie <b>parametrów zarządzania magazynem</b>) zostanie usunięte</p> |
-| Zamówienie zakupu — przetwarzanie dokumentu przyjęcia produktów                        | Tak | Nr |
+| Zamówienie zakupu — przetwarzanie dokumentu przyjęcia produktów                        | Tak | Nie |
 | Przyjęcie zamówienia zakupu z dostawą z niedoborem                      | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Tak, ale tylko przez zgłoszenie wniosku o anulowanie z centrum |
 | Przyjęcie zamówienia zakupu z dostawą z nadmiarem                       | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Tak  |
-| Przyjęcie z utworzeniem pracy *przeładunku kompletacyjnego*                 | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Nr |
-| Przyjęcie z utworzeniem pracy *zlecenia kontroli jakości*                  | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Nr |
-| Przyjęcie z utworzeniem pracy *zlecenia wyrywkowej kontroli jakości*          | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Nr |
-| Przyjęcie z utworzeniem pracy *jakości w kontroli jakości*       | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Nr |
-| Przyjęcie z utworzeniem zlecenia kontroli jakości                            | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Nr |
-| Przetwarzanie pracy — skierowane przez *odłożenie klastra*                 | Tak | Nr |
-| Przetwarzanie pracy z *szybkim pobraniem*                               | Tak | Nr |
+| Przyjęcie z utworzeniem pracy *przeładunku kompletacyjnego*                 | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Nie |
+| Przyjęcie z utworzeniem pracy *zlecenia kontroli jakości*                  | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Nie |
+| Przyjęcie z utworzeniem pracy *zlecenia wyrywkowej kontroli jakości*          | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Nie |
+| Przyjęcie z utworzeniem pracy *jakości w kontroli jakości*       | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Nie |
+| Przyjęcie z utworzeniem zlecenia kontroli jakości                            | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Nie |
+| Przetwarzanie pracy — skierowane przez *odłożenie klastra*                 | Tak | Nie |
+| Przetwarzanie pracy z *szybkim pobraniem*                               | Tak | Nie |
 | Ładowanie numeru identyfikacyjnego                                           | Tak | Tak |
 
 ### <a name="warehouse-operations-and-exception-handing"></a>Operacje magazynowe i przekazywanie wyjątków
@@ -261,20 +261,20 @@ W poniższej tabeli pokazano, które operacje magazynowe i obsługa wyjątków s
 | Zmień magazyn                                   | Tak | Tak                          |
 | Transakcje                                           | Tak | Tak                          |
 | Przeniesienie według szablonu                               | Tak | Tak                          |
-| Przeniesienie magazynu                                 | Tak | Nr                           |
-| Tworzenie zamówienia przeniesienia z aplikacji magazynu           | Tak | Nr                           |
+| Przeniesienie magazynu                                 | Tak | Nie                           |
+| Tworzenie zamówienia przeniesienia z aplikacji magazynu           | Tak | Nie                           |
 | Korekta (wejście/wyjście)                                | Tak | Tak, ale nie dla skorygowanego scenariusza, w którym rezerwacja zapasów musi zostać usunięta przy użyciu ustawienia **Usuń rezerwacje** w typach korekt zapasów</p>                           |
-| Zmiana stanu zapasów                            | Tak | Nr                           |
+| Zmiana stanu zapasów                            | Tak | Nie                           |
 | Przetwarzanie rozbieżności w inwentaryzacji ciągłej | Tak | Tak                           |
 | Ponowny druk etykiety (drukowanie etykiet numeru identyfikacyjnego)             | Tak | Tak                          |
-| Kompilacja numerów identyfikacyjnych                                | Tak | Nr                           |
-| Przerwa dotycząca numeru identyfikacyjnego                                | Tak | Nr                           |
-| Spakuj do zagnieżdżonych numerów identyfikacyjnych                                | Tak | Nr                           |
-| Zaewidencjonowanie kierowcy                                    | Tak | Nr                           |
-| Wyewidencjonowanie kierowcy                                   | Tak | Nr                           |
+| Kompilacja numerów identyfikacyjnych                                | Tak | Nie                           |
+| Przerwa dotycząca numeru identyfikacyjnego                                | Tak | Nie                           |
+| Spakuj do zagnieżdżonych numerów identyfikacyjnych                                | Tak | Nie                           |
+| Zaewidencjonowanie kierowcy                                    | Tak | Nie                           |
+| Wyewidencjonowanie kierowcy                                   | Tak | Nie                           |
 | Zmień kod dyspozycji partii                      | Tak | Tak                          |
 | Wyświetl listę otwartych prac                             | Tak | Tak                          |
-| Konsoliduj numery identyfikacyjne                         | Tak | Nr                           |
+| Konsoliduj numery identyfikacyjne                         | Tak | Nie                           |
 | Przetwarzanie uzupełniania zapasów — minimum/maksimum i próg strefy| Tak <p>Rekomendacje nie powinny uwzględniać tych samych lokalizacji jako części zapytań</p>| Tak                          |
 | Przetwarzanie uzupełnienia zapasów na przedziały                  | Tak  | Tak<p>Należy pamiętać, że ustawienia muszą zostać wykonane dla jednostki skali</p>                           |
 | Zablokuj i Odblokuj pracę                             | Tak | Tak                          |
@@ -290,8 +290,8 @@ W poniższej tabeli podsumowano, które scenariusze produkcyjne zarządzania mag
 |---------|-----|------------------------------|
 | Raportowanie jako wyroby gotowe i wyroby gotowe odłożone | Tak | Tak |
 | Odłożenie produktu ubocznego i produktu towarzyszącego | Tak | Tak |
-| <p>Wszystkie inne procesy zarządzania magazynem, które są związane z produkcją, w tym:</p><li>Zwolnij do magazynu</li><li>Przetwarzanie produkcji w ramach grupy czynności</li><li>Pobranie surowca</li><li>Kanban odłożone</li><li>Pobieranie Kanban</li><li>Rozpocznij zlecenie produkcyjne</li><li>Odpadki produkcji</li><li>Produkcja ostatniej palety</li><li>Rejestruj zużycie materiałów</li><li>Pusta karta Kanban</li></ul> | Tak | Nr |
-| Uzupełnianie zapasów surowców | Nr | Nr |
+| <p>Wszystkie inne procesy zarządzania magazynem, które są związane z produkcją, w tym:</p><li>Zwolnij do magazynu</li><li>Przetwarzanie produkcji w ramach grupy czynności</li><li>Pobranie surowca</li><li>Kanban odłożone</li><li>Pobieranie Kanban</li><li>Rozpocznij zlecenie produkcyjne</li><li>Odpadki produkcji</li><li>Produkcja ostatniej palety</li><li>Rejestruj zużycie materiałów</li><li>Pusta karta Kanban</li></ul> | Tak | Nie |
+| Uzupełnianie zapasów surowców | Nie | Nie |
 
 ## <a name="maintaining-scale-units-for-warehouse-execution"></a>Zarządzenie jednostkami skalowania na potrzeby wykonania w magazynie
 

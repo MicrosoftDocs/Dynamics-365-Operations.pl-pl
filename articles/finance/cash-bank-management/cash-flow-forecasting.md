@@ -2,7 +2,7 @@
 title: Prognozowanie przepływów pieniężnych
 description: Ten temat zawiera omówienie procesu prognozowania przepływów pieniężnych. Wyjaśniono również, jak prognozowanie przepływów pieniężnych jest zintegrowane z innych modułami w systemie.
 author: panolte
-ms.date: 09/23/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,16 +13,17 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 83f8e5b03a2222884758dc567688da2a756421da
-ms.sourcegitcommit: fcfd85a508c0de52cfe11d1986892219e39ef406
+ms.openlocfilehash: 5ad3b2444f194f8324a309df32612a5377851995
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7547962"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752911"
 ---
 # <a name="cash-flow-forecasting"></a>Prognozowanie przepływów pieniężnych
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Narzędzia prognozowania przepływów pieniężnych mogą służyć do analizy nadchodzących przepływów pieniężnych i zapotrzebowania na waluty, co pozwoli szacować przyszłe potrzeby firmy w zakresie gotówki. Aby uzyskać prognozę przepływów pieniężnych, należy wykonać następujące zadania:
 
@@ -93,9 +94,12 @@ Wpisy do rejestru budżetowego mogą być indywidualnie uwzględniane w prognozi
 W prognozach przepływów pieniężnych można uwzględniać prognozy dostaw zapasów i popytu na zapasy. Na stronie **Ustawienia prognozy przepływów pieniężnych** na karcie **Zarządzanie zapasami** zaznacz modelu prognozy do uwzględnienia w prognozie przepływów pieniężnych. Uwzględnianie w prognozowaniu przepływów pieniężnych można zastępować na poziomie poszczególnych wierszy prognoz dostaw i popytu.
 
 ### <a name="setting-up-dimensions-for-cash-flow-forecasting"></a>Konfigurowanie wymiarów dla prognozowania przepływów pieniężnych
-Nowa karta na stronie **Konfiguracja prognozowania przepływów pieniężnych** umożliwia kontrolowanie wymiarów finansowych, które mają być używane do filtrowania, w obszarze roboczym **Prognozowanie przepływów pieniężnych**. Ta karta będzie wyświetlana tylko wtedy, gdy jest włączona funkcja prognoz przepływów pieniężnych. 
+Nowa karta na stronie **Konfiguracja prognozowania przepływów pieniężnych** umożliwia kontrolowanie wymiarów finansowych, które mają być używane do filtrowania, w obszarze roboczym **Prognozowanie przepływów pieniężnych**. Ta karta będzie wyświetlana tylko wtedy, gdy jest włączona funkcja prognoz przepływów pieniężnych w Finance insights. 
 
 Na karcie **Wymiary** wybierz z listy wymiary, które mają być użyte do filtrowania, a następnie za pomocą klawiszy strzałek przenieś je do prawej kolumny. Do filtrowania danych prognozy przepływów pieniężnych można wybrać tylko dwa wymiary. 
+
+### <a name="setting-up-external-source"></a>Ustawianie źródła zewnętrznego
+Dane zewnętrzne można wprowadzać lub importować do prognoz przepływów pieniężnych. Przed wprowadzeniu lub zaimportowaniu danych zewnętrznych należy skonfigurować źródła zewnętrzne. Na karcie **Źródło zewnętrzne** skonfiguruj kategorie zewnętrznych przepływów pieniężnych. Może to być kategoria **Wychodząca** lub **Przychodząca**. Jako typ księgowania należy wybrać **płynność**. W siatce **Ustawienia firmy wybierz firmy** i odpowiednie konta główne, do których mają zastosowanie kategorie zewnętrznych przepływów pieniężnych.
 
 ### <a name="project-management-and-accounting"></a>Zarządzanie projektami i ich księgowanie
 

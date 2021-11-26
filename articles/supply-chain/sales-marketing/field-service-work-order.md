@@ -88,21 +88,21 @@ Poniższa tabela zawiera przegląd różnych kombinacji dla wierszy produktów.
 | Stan systemu <br>(Field Service) | Stan wiersza <br>(Field Service) | Alokowane <br>(Field Service) |Zsynchronizowana wartość <br>(Supply Chain Management) |
 |--------------------|-------------|-----------|---------------------------------|
 | Otwarte — zaplanowane   | Oszacowanie   | Tak       | Oszacowanie                       |
-| Otwarte — zaplanowane   | Oszacowany   | Nr        | Użyte                            |
+| Otwarte — zaplanowane   | Oszacowany   | Nie        | Użyte                            |
 | Otwarte — zaplanowane   | Użyte        | Tak       | Użyte                            |
-| Otwarte — zaplanowane   | Użyte        | Nr        | Użyte                            |
+| Otwarte — zaplanowane   | Użyte        | Nie        | Użyte                            |
 | Otwarte — w toku | Oszacowany   | Tak       | Oszacowany                       |
-| Otwarte — w toku | Oszacowany   | Nr        | Użyte                            |
+| Otwarte — w toku | Oszacowany   | Nie        | Użyte                            |
 | Otwarte — w toku | Użyte        | Tak       | Użyte                            |
-| Otwarte — w toku | Użyte        | Nr        | Użyte                            |
+| Otwarte — w toku | Użyte        | Nie        | Użyte                            |
 | Otwarte — zakończone   | Oszacowany   | Tak       | Oszacowany                       |
-| Otwarte — zakończone   | Oszacowany   | Nr        | Użyte                            |
+| Otwarte — zakończone   | Oszacowany   | Nie        | Użyte                            |
 | Otwarte — zakończone   | Użyte        | Tak       | Użyte                            |
-| Otwarte — zakończone   | Użyte        | Nr        | Użyte                            |
+| Otwarte — zakończone   | Użyte        | Nie        | Użyte                            |
 | Zamknięte — zaksięgowane    | Oszacowany   | Tak       | Użyte                            |
-| Zamknięte — zaksięgowane    | Oszacowany   | Nr        | Użyte                            |
+| Zamknięte — zaksięgowane    | Oszacowany   | Nie        | Użyte                            |
 | Zamknięte — zaksięgowane    | Użyte        | Tak       | Użyte                            |
-| Zamknięte — zaksięgowane    | Użyte        | Nr        | Użyte                            |
+| Zamknięte — zaksięgowane    | Użyte        | Nie        | Użyte                            |
 
 Poniższa tabela zawiera przegląd różnych kombinacji dla wierszy usług.
 

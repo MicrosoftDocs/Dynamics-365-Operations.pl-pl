@@ -2,7 +2,7 @@
 title: Skróty klawiaturowe
 description: W tym temacie przedstawiono omówienie kombinacji klawiszy skrótów, które mogą być używane podczas pracy z aplikacjami Finance and Operations.
 author: jasongre
-ms.date: 10/12/2021
+ms.date: 11/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7e700b841014e1e12560bf0ce9e5e012361ec397
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 969cd6aaf2d7c4cee7bb95029f19741372f915eb
+ms.sourcegitcommit: ab32fc90ea498ce3b629384f78cbe1aee747f157
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647543"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "7800200"
 ---
 # <a name="keyboard-shortcuts"></a>Skróty klawiaturowe
 
@@ -128,8 +128,10 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 
 ## <a name="grid-shortcuts"></a>Skróty siatki
 
-| Funkcja                                                                                                             | Klawisze                           |
+| Funkcja                                                                                                             | Naciśnij klawisz                            |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
+| Przewijanie pionowe                                                                                                     | Koło myszy                     |
+| Przewijanie poziome                                                                                                   | Shift + koło myszy             |
 | Przejdź do następnej/poprzedniej kolumny                                                                                       | Tab / Shift+Tab                 |
 | Przejdź do następnego/poprzedniego wiersza                                                                                          | Strzałka w dół / strzałka w górę           |
 | Przejdź do następnego/poprzedniego wiersza bez zaznaczania<blockquote>[!NOTE] Ten skrót dotyczy tylko scenariuszy wyboru wielu elementów.</blockquote> | Ctrl+strzałka w górę / Ctrl+strzałka w dół |
@@ -141,15 +143,15 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 | Przejdź do pierwszego rekordu                                                                                               | CTRL+Home                       |
 | Przejdź do ostatniego rekordu                                                                                                | CTRL+End                        |
 | Zaznacz lub wyczyść wszystkie wiersze                                                                                               | Ctrl+Shift+M                    |
-| Przejdź do pierwszego zaznaczonego wiersza                                                                                           | Alt+Shift+M, F                    |
-| Przejdź do następnego zaznaczonego wiersza                                                                                            | Alt+Shift+M, L                    |
-| Przejdź do poprzedniego zaznaczonego wiersza                                                                                        | Alt+Shift+M, P                    |
-| Przejdź do ostatniego zaznaczonego wiersza                                                                                           | Alt+Shift+M, N                    |
+| Przejdź do pierwszego zaznaczonego wiersza                                                                                           | Alt+Shift+M, F                  |
+| Przejdź do następnego zaznaczonego wiersza                                                                                            | Alt+Shift+M, L                  |
+| Przejdź do poprzedniego zaznaczonego wiersza                                                                                        | Alt+Shift+M, P                  |
+| Przejdź do ostatniego zaznaczonego wiersza                                                                                           | Alt+Shift+M, N                  |
 | Wykonaj akcję domyślną w tabeli<blockquote>[!NOTE] Ten skrót jest włączony, gdy fokus znajduje się w komórce zawierającej hiperłącze, a wszystkie komórki w tej kolumnie zawierają hiperłącza.</blockquote> | Enter                           |
 | Przełączanie fokusa między wybranym wierszem a wierszem nagłówka                                                               | Alt+Shift+H                     |
 | Powiększenie/pomniejszenie bieżącej kolumny (z fokusem w wierszu nagłówka)                                                  | Strzałka w prawo / Strzałka w lewo        |
 | Otwarcie filtrowania siatki dla bieżącej kolumny (z fokusem w wierszu nagłówka)                                              | Enter                           |
-| Zmień rozmiar bieżącej kolumny, aby dopasować ją do zawartości (z fokusem w wierszu nagłówka)                                           | A                               |
+| Zmień rozmiar bieżącej kolumny, aby dopasować ją do zawartości (z fokusem w wierszu nagłówka)                                           | A (lub kliknij dwukrotnie uchwyt zmiany rozmiaru kolumny) |
 
 ## <a name="input-control-shortcuts"></a>Skróty wpisywania danych
 

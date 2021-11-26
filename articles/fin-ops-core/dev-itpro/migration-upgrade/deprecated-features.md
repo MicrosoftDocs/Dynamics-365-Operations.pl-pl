@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76ac50ba2606ffff5a5a90d29ca99c8d67e5f14cce2127f5de6225d1cd8224ef
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2e03becf2572aeaf213e8c3a0e874405ed0d5613
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745183"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7753033"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Usunięte lub wycofane funkcje w poprzednich wersjach
 
@@ -84,7 +84,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 | **Opcja wdrażania**              | Wszystkich |
 | **Stan**                         | Przestarzałe: Do 1 października 2020, nie planujemy już obsługiwać metody **setUtcString()**. Zamiast tego deweloperzy powinni korzystać z metody **setUtcDateTime()**. |
 
-### <a name="blacklist-report-it--feature-reference-it-00001"></a>Raport zabronione (IT) — odwołanie do funkcji IT-00001
+### <a name="blocklist-report-it--feature-reference-it-00001"></a>Raport zabronione (IT) — odwołanie do funkcji IT-00001
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -360,7 +360,7 @@ Funkcja do tworzenia szablonów dla nowych rejestrów podatku dochodowego. Ta fu
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Funkcja jest niezgodna z modelem rozszerzenia Finance and Operations. |
-| **Zamieniona przez inną funkcję?**   | Nr |
+| **Zamieniona przez inną funkcję?**   | Nie |
 | **Powiązane obszary produktów**         | Podatek |
 | **Opcja wdrażania**              | Wszyscy |
 | **Stan**                         | Usunięte od wersji Finance and Operations 8.1 z aktualizacją Platform update 20. |
@@ -371,7 +371,7 @@ Moduł specyficzny dla Rosji do zarządzania informacjami administracyjnymi pers
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Payroll nie jest objęte globalnym strategicznym ukierunkowaniem portfela Dynamics 365. Partnerzy i ISV są najlepiej przygotowani do dostarczania funkcji płacowych, które są zgodne z lokalnymi przepisami i aktualizacjami podatkowymi.|
-| **Zamieniona przez inną funkcję?**   | Nr|
+| **Zamieniona przez inną funkcję?**   | Nie|
 | **Powiązane obszary produktów**         | Payroll and Human Resources dla Rosji — zarządzanie |
 | **Opcja wdrażania**              | Wszyscy |
 | **Stan**                         | Wycofane — docelowy okres usuwania funkcji to jedna z przyszłych publikacji wersji 10.0. |
@@ -455,7 +455,7 @@ Te podatki zostały zsumowane w hinduskim PTU.
 |              &nbsp;                               |      &nbsp;                                                                   |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Przyczyna usunięcia lub wycofania**       | Brak wykorzystywania przez odbiorców.                                                  |
-| **Zamieniona przez inną funkcję?**            | Nr                                                                      |
+| **Zamieniona przez inną funkcję?**            | Nie                                                                      |
 | **Powiązane obszary produktów**                  | Hinduska potrącona zaliczka na podatek                                                  |
 | **Opcja wdrażania**                       | Wszystkie moduły                                                                    |
 | **Stan**                                  | Wycofane: nie określono daty usunięcia dla tej funkcji.   |        
@@ -467,7 +467,7 @@ Użytkownicy mogą pobrać go z portalu rządowego.
 |             &nbsp;                                |    &nbsp;                                                                     |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Przyczyna usunięcia lub wycofania**       | Brak wykorzystywania przez odbiorców.                                                  |
-| **Zamieniona przez inną funkcję?**            | Nr                                                                      |
+| **Zamieniona przez inną funkcję?**            | Nie                                                                      |
 | **Powiązane obszary produktów**                  | Hinduska potrącona zaliczka na podatek                                                  |
 | **Opcja wdrażania**                       | Wszystkie moduły                                                                   |
 | **Stan**                                  | Wycofane: nie określono daty usunięcia dla tej funkcji.     |    
@@ -478,7 +478,7 @@ Użytkownicy mogą pobrać go z portalu rządowego.
 |              &nbsp;                               |        &nbsp;                                                                 |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Przyczyna usunięcia lub wycofania**       | Brak wykorzystywania przez odbiorców.                                                  |
-| **Zamieniona przez inną funkcję?**            | Nr                                                                      |
+| **Zamieniona przez inną funkcję?**            | Nie                                                                      |
 | **Powiązane obszary produktów**                  | Import i eksport                                                       |
 | **Opcja wdrażania**                       | Wszystkie moduły                                                                    |
 | **Stan**                                  | Wycofane: nie określono daty usunięcia dla tej funkcji.  |    
@@ -578,7 +578,7 @@ To narzędzie jest używane, gdy plan kont w Hiszpanii wymaga dużych zmian. Uż
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Ograniczone użycie                                                  |
-| **Zamieniona przez inną funkcję?**   | Nr                                                             |
+| **Zamieniona przez inną funkcję?**   | Nie                                                             |
 | **Powiązane obszary produktów**         | Księga główna                                                 |
 | **Stan**                         | Wycofane: nie określono daty usunięcia dla tej funkcji. |
 
@@ -622,7 +622,7 @@ EDIVAT to starszy belgijski standard wysyłania deklaracji elektronicznych za po
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Ta funkcjonalność nie jest już używana.                           |
-| **Zamieniona przez inną funkcję?**   | Nr                                                             |
+| **Zamieniona przez inną funkcję?**   | Nie                                                             |
 | **Powiązane obszary produktów**         | Księga główna                                                 |
 | **Stan**                         | Wycofane: nie określono daty usunięcia dla tej funkcji. |
 
@@ -699,7 +699,7 @@ Ta funkcja jest stosowana dla zmian w planie kont i regułach księgowania w His
 |  &nbsp; |&nbsp;  |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Ograniczone użycie                                                  |
-| **Zamieniona przez inną funkcję?**   | Nr                                                             |
+| **Zamieniona przez inną funkcję?**   | Nie                                                             |
 | **Powiązane obszary produktów**         | Księga główna                                                 |
 | **Stan**                         | Wycofane: nie określono daty usunięcia dla tej funkcji. |
 
@@ -787,7 +787,7 @@ Identyfikacja radiowa (RFID) to technologia zbierania danych przy użyciu elektr
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Brak wykorzystywania przez odbiorców i ograniczony zestaw funkcji.   |
-| **Zamieniona przez inną funkcję?**   | Nr                                              |
+| **Zamieniona przez inną funkcję?**   | Nie                                              |
 | **Powiązane obszary produktów**         | Zarządzanie zapasami                            |
 | **Stan**                         | Usunięto w rozwiązaniu Dynamics 365 for Operations w wersji 1611. |
 
@@ -798,7 +798,7 @@ Identyfikacja radiowa (RFID) to technologia zbierania danych przy użyciu elektr
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Urzędowa numeracja faktur nie musi już być stosowana. Raport o użytych numerach faktur nie jest już wymagany. |
-| **Zamieniona przez inną funkcję?**   | Nr       |
+| **Zamieniona przez inną funkcję?**   | Nie       |
 | **Powiązane obszary produktów**         | Rozrachunki z odbiorcami    |
 | **Stan**                         | Wycofane: nie określono daty usunięcia dla tej funkcji.  |
 
@@ -860,7 +860,7 @@ Informacje listy płac w module Zasoby ludzkie
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Niskie wykorzystanie                                                           |
-| **Zamieniona przez inną funkcję?**   | Nr                                                                  |
+| **Zamieniona przez inną funkcję?**   | Nie                                                                  |
 | **Powiązane obszary produktów**         | Zasoby ludzkie                                                     |
 | **Stan**                         | Usunięto w rozwiązaniu Dynamics 365 for Operations w wersji 1611 |
 
@@ -883,7 +883,7 @@ Przepływ pracy zarządzania tworzeniem celów dla pracowników jest jednym z ki
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Chęć poprawy wydajności.        |
-| **Zamieniona przez inną funkcję?**   | Nr                             |
+| **Zamieniona przez inną funkcję?**   | Nie                             |
 | **Powiązane obszary produktów**         | Rozrachunki z dostawcami               |
 | **Stan**                         | Usunięto w systemie Dynamics AX 7.0. |
 
@@ -916,7 +916,7 @@ Po wyłączeniu klucza konfiguracji **Wersje BOM** wersje list składowych (BOM)
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Obsługa klucza konfiguracji do kontrolowania wersji BOM nie jest dopasowana do skali środowiska chmurowego. |
-| **Zamieniona przez inną funkcję?**   | Nr                                                                                      |
+| **Zamieniona przez inną funkcję?**   | Nie                                                                                      |
 | **Powiązane obszary produktów**         | Zarządzanie informacjami o produktach, Zarządzanie zapasami                                    |
 | **Stan**                         | Usunięto w systemie Dynamics AX 7.0.                                                          |
 
@@ -927,7 +927,7 @@ Specjalna metoda płatności dla firm brazylijskich
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Obsługa brazylijskiej metody płatności Bordero została wycofana dla lokalizacji w Brazylii |
-| **Zamieniona przez inną funkcję?**   | Nr   |
+| **Zamieniona przez inną funkcję?**   | Nie   |
 | **Powiązane obszary produktów**         | Rozrachunki z dostawcami   |
 | **Stan**                         | Wycofane: nie określono daty usunięcia dla tej funkcji. |
 
@@ -949,7 +949,7 @@ Krajowa deklaracja podatku ICMS
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Ta metoda pracy awaryjnej nie jest już stosowana w niektórych stanach w Brazylii |
-| **Zamieniona przez inną funkcję?**   | Nr                                                                          |
+| **Zamieniona przez inną funkcję?**   | Nie                                                                          |
 | **Powiązane obszary produktów**         | Rozrachunki z odbiorcami                                                         |
 | **Stan**                         | Wycofane: nie określono daty usunięcia dla tej funkcji.              |
 
@@ -1000,7 +1000,7 @@ Centrum zgodności było witryną Enterprise Portal do zarządzania wymaganiami 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Brak wykorzystywania przez odbiorców. Program Microsoft SharePoint oferuje te same funkcje, które były dostępne w Centrum zgodności. |
-| **Zamieniona przez inną funkcję?**   | Nr   |
+| **Zamieniona przez inną funkcję?**   | Nie   |
 | **Powiązane obszary produktów**         | Zgodność z przepisami i kontrole wewnętrzne  |
 | **Stan**                         | Usunięto w systemie Dynamics AX 7.0.    |
 
@@ -1029,7 +1029,7 @@ To narzędzie zostało użyte do integracji najważniejszych danych z programu M
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Grupy wskaźników były używane do wyświetlania jednego lub kilku wskaźników w obszarze pola informacji. Liczba pobrań była ograniczona i występowały też problemy z wydajnością, ponieważ zmiana rekordu w formularzu nadrzędnym powodowała tworzenie jednej kwerendy na wskaźnik w grupie wskaźników. |
-| **Zamieniona przez inną funkcję?**   | Nr      |
+| **Zamieniona przez inną funkcję?**   | Nie      |
 | **Powiązane obszary produktów**         | Wszystkie moduły    |
 | **Stan**                         | Usunięto w systemie Dynamics AX 7.0.  |
 
@@ -1047,7 +1047,7 @@ To narzędzie zostało użyte do integracji najważniejszych danych z programu M
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Obsługa duńskiego układu formatu czeku została wycofana i raport został usunięty z lokalizacji DK. |
-| **Zamieniona przez inną funkcję?**   | Nr    |
+| **Zamieniona przez inną funkcję?**   | Nie    |
 | **Powiązane obszary produktów**         | Wszystkie moduły    |
 | **Stan**                         | Wycofane: nie określono daty usunięcia dla tej funkcji.  |
 
@@ -1079,7 +1079,7 @@ System Dynamics AX 2012 pozwalał na przechowywania załączników w bazach dany
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Nie stwierdzono używania funkcji. |
-| **Zamieniona przez inną funkcję?**   | Nr                                     |
+| **Zamieniona przez inną funkcję?**   | Nie                                     |
 | **Powiązane obszary produktów**         | Czas i frekwencja                    |
 | **Stan**                         | Usunięto w systemie Dynamics AX 7.0.         |
 
@@ -1137,7 +1137,7 @@ Ta funkcja generowała dane wyjściowe w formacie eXtensible Business Reporting 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Brak wykorzystywania przez odbiorców i ograniczony zestaw funkcji.  |
-| **Zamieniona przez inną funkcję?**   | Nr              |
+| **Zamieniona przez inną funkcję?**   | Nie              |
 | **Powiązane obszary produktów**         | Zgodność z przepisami i kontrole wewnętrzne, Rozrachunki z dostawcami  |
 | **Stan**                         | Usunięto w systemie Dynamics AX 7.0. |
 
@@ -1193,7 +1193,7 @@ Przelewu testowego nie da się wygenerować za pomocą zadania wsadowego, ale mo
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Format XML na potrzeby raportowania niemieckiej listy sprzedaży do UE nie jest już obsługiwany. W celu przesyłania raportu list sprzedaży do UE do niemieckiego urzędu skarbowego można używać tylko plików tekstowych w formacie ELMA5. |
-| **Zamieniona przez inną funkcję?**   | Nr         |
+| **Zamieniona przez inną funkcję?**   | Nie         |
 | **Powiązane obszary produktów**         | Podatek        |
 | **Stan**                         | Wycofane: nie określono daty usunięcia dla tej funkcji.   |
 
@@ -1246,7 +1246,7 @@ Ta funkcja służyła do generowania meksykańskich faktur elektronicznych za po
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Metoda nie jest już stosowana. Metoda generowania faktur elektronicznych za pomocą metody CFD została wycofana przez urzędy skarbowe i zastąpiona metodą Comprobante Fiscal Digital a través de Internet (CFDI) , w której podpis składa zewnętrzny dostawca (PAC). Miesięczny raport został usunięty, a opcja Informacje pozwala użytkownikom wysyłać zapytania o transakcje historyczne. |
-| **Zamieniona przez inną funkcję?**   | Nr    |
+| **Zamieniona przez inną funkcję?**   | Nie    |
 | **Powiązane obszary produktów**         | Rozrachunki z odbiorcami, Projekt   |
 | **Stan**                         | Wycofane: nie określono daty usunięcia dla tej funkcji. |
 
@@ -1278,7 +1278,7 @@ Nie da się już oznaczyć arkusza zapasów i lub arkusza magazynu jako prywatne
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Nie stwierdzono używania funkcji. |
-| **Zamieniona przez inną funkcję?**   | Nr                                     |
+| **Zamieniona przez inną funkcję?**   | Nie                                     |
 | **Powiązane obszary produktów**         | Zarządzanie zapasami                   |
 | **Stan**                         | Usunięto w systemie Dynamics AX 7.0.         |
 
@@ -1311,7 +1311,7 @@ Ta funkcja pozwala zmienić nazwę jednego z trzech standardowych wymiarów prod
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Bieżąca wersja systemu Dynamics AX nie obsługuje zmian etykiet w czasie wykonywania. |
-| **Zamieniona przez inną funkcję?**   | Nr                                                                            |
+| **Zamieniona przez inną funkcję?**   | Nie                                                                            |
 | **Powiązane obszary produktów**         | Zarządzanie informacjami o produktach                                                |
 | **Stan**                         | Usunięto w systemie Dynamics AX 7.0.                                                |
 
@@ -1340,7 +1340,7 @@ W programie Dynamics AX 2012 R3 serwer sieci sprzedaży mógł wykorzystywać ko
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Brak wykorzystywania przez odbiorców i ograniczony zestaw funkcji. |
-| **Zamieniona przez inną funkcję?**   | Nr                                           |
+| **Zamieniona przez inną funkcję?**   | Nie                                           |
 | **Powiązane obszary produktów**         | Podatki (od sprzedaży) na rynek amerykański                                 |
 | **Stan**                         | Usunięto w systemie Dynamics AX 7.0.               |
 
@@ -1351,7 +1351,7 @@ Usługi Sites Services pozwalają tworzyć witryny internetowe, które poszerzaj
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Infrastruktura Microsoft Azure używana w systemie Dynamics AX zawiera nowe funkcje, które z powodzeniem zastępują wycofane (np. witryny Azure). |
-| **Zamieniona przez inną funkcję?**   | Nr   |
+| **Zamieniona przez inną funkcję?**   | Nie   |
 | **Powiązane obszary produktów**         | Rekrutacja kadr, Zarządzanie sprawami, Zapytania ofertowe, Rejestracja dostawcy, Obszary robocze współpracy dla możliwości i kampanii  |
 | **Stan**                         | Usunięto w systemie Dynamics AX 7.0.    |
 

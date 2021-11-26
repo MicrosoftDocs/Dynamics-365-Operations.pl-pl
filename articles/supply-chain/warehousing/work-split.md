@@ -13,12 +13,12 @@ ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-15
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: e3f14dd25a60f8d185f0e58a0612a322c5175ab2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8b06164a81a18548cf9d98ea2f577b5783145100
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579887"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778264"
 ---
 # <a name="work-split"></a>Podział pracy
 
@@ -33,7 +33,7 @@ Funkcja podziału pracy umożliwia dzielenie identyfikatorów dużych zleceń ro
 
 Aby można było korzystać z funkcji podziału pracy, należy włączyć tę funkcję i jej funkcję wstępnie wymaganą w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć je, jeśli istnieje taka potrzeba.
 
-Najpierw włącz wstępnie wymaganą funkcję *Blokowania pracy w całej organizacji*, jeśli nie została jeszcze włączona. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
+Najpierw włącz wstępnie wymaganą funkcję *Blokowania pracy w całej organizacji*, jeśli nie została jeszcze włączona. W przypadku Supply Chain Management w wersji 10.0.21 ta funkcja jest obowiązkowa, więc jest domyślnie włączona i nie można jej ponownie wyłączyć. Jednak ta funkcja jest nadal wymieniona w [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) jako:
 
 - **Moduł:** *Zarządzanie magazynem*
 - **Nazwa funkcji:** *Blokowanie pracy w całej organizacji*

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 0df6aee6a5ec1ecc751713c19c659c5471cc4146
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 872a08241f3d0156d0ccf1f89443e3a894656404
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576047"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777609"
 ---
 # <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Numer identyfikacyjny odbierany za pomocą aplikacji mobilnej Zarządzanie magazynem
 
@@ -77,7 +77,7 @@ Gdy ta funkcja jest włączona, pozycje menu urządzenia mobilnego dotyczące od
 - **Wyświetlenie szczegółowego podsumowania** — podczas przyjmowania numeru identyfikacyjnego pracownicy będą widzieć dodatkową stronę, na której są wyświetlane pełne informacje dotyczące ASN.
 - **Pomiń podsumowanie** — pracownicy nie będą widzieli pełnych informacji ASN. Pracownicy magazynu również nie będą mogli ustawić kodu dyspozycji ani dodać wyjątków podczas procesu odbioru.
 
-Aby udostępnić tę funkcję w systemie, należy włączyć *Kontroluj, czy wyświetlać stronę podsumowania odbioru na urządzeniach mobilnych* w [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Aby udostępnić tę funkcję w systemie, należy włączyć *Kontroluj, czy wyświetlać stronę podsumowania odbioru na urządzeniach mobilnych* w [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). (Od wersji 10.0.21 Supply Chain Management version ta funkcja jest domyślnie włączona)
 
 ## <a name="prevent-transfer-ordershipped-license-plates-from-being-used-at-warehouses-other-than-the-destination-warehouse"></a>Zapobiegaj używaniu numerów identyfikacyjnych wysłanych z zamówienia przeniesienia w magazynach innych niż magazyn docelowy
 

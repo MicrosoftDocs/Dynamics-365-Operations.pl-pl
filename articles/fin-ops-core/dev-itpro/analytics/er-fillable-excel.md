@@ -2,7 +2,7 @@
 title: Projektowanie konfiguracji projektu w celu generowania dokumentów wychodzących w formacie programu Excel
 description: Ten temat zawiera informacje o tym, jak zaprojektować format modułu raportowania elektronicznego (ER) do wypełniania w szablonie programu Excel, a następnie generować dokumenty wychodzące w formacie programu Excel.
 author: NickSelin
-ms.date: 09/14/2021
+ms.date: 10/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fd3171ad24f9c06f04372b30f2682b6da516bcb6
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: cfacc2232201b85a49068ee724b55e71b60eb2be
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488145"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731645"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Projektowanie konfiguracji projektu w celu generowania dokumentów wychodzących w formacie programu Excel
 
@@ -85,6 +85,8 @@ Na karcie **Mapowanie** projektanta operacji ER można skonfigurować właściwo
 
 Składnik **Zakres** wskazuje zakres programu Excel, który musi być kontrolowany przez ten składnik ER. Nazwa zakresu jest definiowana we właściwości **Zakres programu Excel** tego składnika.
 
+### <a name="replication"></a>Replikacja
+
 Właściwość **Kierunek replikacji** określa, czy i w jaki sposób zakres będzie powtarzany w wygenerowanym dokumencie:
 
 - Jeśli właściwość **Kierunek replikacji** została ustawiona na wartość **Brak replikacji**, odpowiedni zakres programu Excel nie będzie powtarzany w wygenerowanym dokumencie.
@@ -92,6 +94,8 @@ Właściwość **Kierunek replikacji** określa, czy i w jaki sposób zakres bę
 - Jeśli właściwość **Kierunek replikacji** została ustawiona na wartość **Poziomo**, odpowiedni zakres programu Excel będzie powtarzany w wygenerowanym dokumencie. Każdy replikowany zakres jest umieszczany po prawej stronie oryginalnego zakresu w szablonie programu Excel. Liczba powtórzeń jest definiowana przez liczbę rekordów w źródle danych typu **Lista rekordów** powiązanego z tym składnikiem ER.
 
 Aby dowiedzieć się więcej o replikacji poziomej, wykonaj kroki opisane w temacie [Używanie poziomo rozszerzalnych zakresów w celu dynamicznego dodawania kolumn w raportach programu Excel](tasks/er-horizontal-1.md).
+
+### <a name="nested-components"></a>Składniki zagnieżdżone
 
 Składnik **Zakres** może zawierać inne zagnieżdżone składniki ER, które służą do wprowadzania wartości w odpowiednich nazwanych zakresach programu Excel.
 
@@ -105,11 +109,40 @@ Składnik **Zakres** może zawierać inne zagnieżdżone składniki ER, które s
     > [!NOTE]
     > Ten wzorzec służy do formatowania w aplikacji Excel wprowadzonych wartości na podstawie ustawień regionalnych komputera lokalnego, na którym jest otwierany dokument wychodzący.
 
+### <a name="enabling"></a>Włączanie
+
 Na karcie **Mapowanie** projektanta operacji ER można skonfigurować właściwość **Włączone** dla składnika **Zakres**, aby określić, czy składnik musi być umieszczany w generowanym dokumencie:
 
 - Jeśli wyrażenie właściwości **Włączone** zostało skonfigurowane do zwracania wartości **Prawda** w czasie wykonywania lub nie skonfigurowano żadnego wyrażenia, odpowiedni zakres zostanie wypełniony w wygenerowanym dokumencie.
 - Jeśli wyrażenie właściwości **Włączone** zostało skonfigurowane do zwracania wartości **Fałsz** w czasie wykonywania, a zakres nie reprezentuje całych wierszy lub kolumn, odpowiedni zakres nie zostanie wypełniony w wygenerowanym dokumencie.
 - Jeśli wyrażenie właściwości **Włączone** zostało skonfigurowane do zwracania wartości **Fałsz** w czasie wykonywania, a zakres reprezentuje całe wiersze lub kolumny, wygenerowany dokument będzie zawierać te wiersze i kolumny jako ukryte.
+
+### <a name="resizing"></a>Zmiana rozmiaru
+
+Można skonfigurować szablon programu Excel do używania komórek do prezentować dane tekstowe. Aby mieć pewność, że cały tekst w komórce jest widoczny w generowanym dokumencie, można skonfigurować komórkę do automatycznego oznaczania tekstu wewnątrz tej komórki. Można również skonfigurować wiersz zawierający komórkę, aby automatycznie korygował jej wysokość, jeśli tekst otoki nie jest w pełni widoczny. Aby uzyskać więcej informacji, zobacz sekcję „Tekst w komórce” w sekcji [Popraw dane, które są odciętych w komórkach](https://support.microsoft.com/office/fix-data-that-is-cut-off-in-cells-e996e213-6514-49d8-b82a-2721cef6144e).
+
+> [!NOTE]
+> Z powodu znanego [ograniczenia programu Excel](https://support.microsoft.com/topic/you-cannot-use-the-autofit-feature-for-rows-or-columns-that-contain-merged-cells-in-excel-34b54dd7-9bfc-6c8f-5ee3-2715d7db4353), nawet jeśli skonfigurujesz komórki do zawijania tekstu i skonfigurujesz wiersze zawierające te komórki tak, aby automatycznie dopasowywały ich wysokość do zawiniętego tekstu, możesz nie być w stanie użyj funkcji **AutoFit** i **Zawijanie tekstu** Excela dla scalonych komórek i zawierających je wierszy. 
+
+Na podstawie wersji Dynamics 365 Finance 10.0.23 można wymusić na ER obliczenie, w generowanym dokumencie, wysokości każdego wiersza, który został skonfigurowany tak, aby jego wysokość automatycznie pasowała do zawartości zagnieżdżonych komórek za każdym razem, gdy wiersz zawiera co najmniej jedną scalone komórkę, która została skonfigurowana do oznaczania tekstu wewnątrz tego wiersza. Obliczona wysokość służy do zmiany rozmiaru wiersza w celu zapewnienia, że wszystkie komórki wiersza są widoczne w generowanym dokumencie. Aby rozpocząć korzystanie z tej funkcji po uruchomieniu formatów raportów elektronicznych skonfigurowanych do generowania dokumentów wychodzących za pomocą szablonów programu Excel, należy wykonać następujące kroki.
+
+1. Wybierz kolejno opcje **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
+2. Na stronie **Konfiguracje lokalizacji** w sekcji **Powiązane łącza** wybierz kafelek **Parametry raportowania elektronicznego**.
+3. Na stronie **Parametry raportowania elektronicznego** na karcie **środowisko uruchomieniowe** ustaw opcję **Automatycznie dopasuj wysokość wiersza** na **Tak**.
+
+Aby zmienić tę regułę dla jednego formatu ER, zaktualizuj wersję roboczą tego formatu, wykonać następujące kroki.
+
+1. Wybierz kolejno opcje **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
+2. WNa stronie **Konfiguracje lokalizacji** w sekcji **Konfiguracje** wybierz **Konfigracje raportowanias**.
+3. Na stronie **Konfiguracje** w drzewie konfiguracji w lewym okienku wybierz konfigurację ER zaprojektowaną do generowania dokumentów wychodzących przy użyciu szablonu programu Excel.
+4. Na skróconej karcie **wersje** szybkie wybierz wersję konfiguracji o stanie **Wersja robocza**.
+5. W okienku akcji wybierz opcję **Projektant**.
+6. Na stronie **Projektant formatów** w drzewie formatów w lewym okienku wybierz składnik programu Excel połączony z szablonem programu Excel.
+7. Na karcie **Format** w polu **Dostosuj wysokość wiersza** wybierz wartość, która określa, czy w czasie wykonywania raport ER ma być wymuszany w celu zmiany wysokości wierszy w dokumencie wychodzącym generowanym w edytowanym formacie ER:
+
+    - **Domyślne** — należy użyć ustawienia ogólnego skonfigurowanego w polu **Autodopasowanie wysokości wiersza** na stronie **Parametry raportowania elektronicznego**.
+    - **Tak** — zastąp ustawienie ogólne i zmień wysokość wiersza w czasie wykonywania.
+    - **Nie** — zastąp ustawienie ogólne i nie zmienia wysokość wiersza w czasie wykonywania.
 
 ## <a name="cell-component"></a>Składnik Komórka
 

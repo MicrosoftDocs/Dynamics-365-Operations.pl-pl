@@ -1,8 +1,8 @@
 ---
 title: Obsługa informacji dotyczących urazów i chorób pracowników
-description: Zaleca się najpierw wykonać przewodnik po zadaniach „Ustawienia urazów i chorób”, ponieważ część informacji konfiguracyjnych z niego jest używanych w tym miejscu.
-author: andreabichsel
-ms.date: 08/29/2018
+description: To zadanie opisuje sposób tworzenia sprawy urazu lub choroby.
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: HRMInjuryIncident, HcmWorkerLookUp, HcmPersonnelManagementWorksp
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dfd92c4dcd52c9d4e0cb9654b3340f49c8348e9658257eb0913a494fd4b3f6cf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7c351919616c8ab5cf15d14c6cc79a5097e248fc
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6780753"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771262"
 ---
 # <a name="maintain-employee-injury-and-illness-information"></a>Obsługa informacji dotyczących urazów i chorób pracowników
 
@@ -30,68 +30,54 @@ Zaleca się najpierw wykonać przewodnik po zadaniach „Ustawienia urazów i ch
 
 
 
-To nagranie zadania obejmuje podstawowe kroki tworzenia sprawy dotyczącej urazu lub choroby. Oprócz śledzenia szczegółów urazu lub choroby jest również śledzony stan całej sprawy.  Domyślnie sprawa otrzymuje stan „Otwarta”.  Stanami można zarządzać za pomocą elementu menu „Stan sprawy” na pasku aplikacji w górnej części strony.
+To nagranie zadania opisuje podstawowe kroki tworzenia przypadku urazu lub choroby. Oprócz szczegółów urazu lub choroby jest śledzony stan sprawy. Domyślnie sprawy mają stan **Otwarte**. Możesz zarządzać stanem, korzystając z pozycji menu **Stan sprawy** u góry strony.
 
-1. Wybierz kolejno opcje Zasoby ludzkie > Pracownicy > Uraz i choroba > Przypadki urazów lub chorób.
-2. Kliknij przycisk Nowy.
-3. W polu Opis sprawy wpisz wartość.
-    * Przykład: Uraz nadgarstka  
-4. W polu Pracownik wprowadź lub wybierz wartość.
-    * Przykład: Ahmed Barnett  
-5. W polu Data i godzina zdarzenia wprowadź datę i godzinę.
-    * Przykład: 1/20/2016 10:00  
-6. W polu Typ urazu lub choroby wprowadź lub wybierz wartość.
-    * Przykład: Złamanie  
-7. W polu Część ciała wprowadź lub wybierz wartość.
-    * Przykład: Nadgarstek  
-8. W polu Typ wyniku wprowadź lub wybierz wartość.
-    * Przykład: Leczenie  
-9. W polu Data i godzina raportowania wprowadź datę i godzinę.
-    * Data i godzina zgłoszenia musi być późniejsza niż data i godzina zdarzenia.  
-10. W polu Osoba, która zgłosiła sprawę wprowadź lub wybierz wartość.
-    * Może to być pracownik lub inny światek zdarzenia.  Przykład: Ahmed Barnett  
-11. Rozwiń sekcję Zdarzenie.
-12. W polu Miejsce wystąpienia zdarzenia wpisz wartość.
-    * Przykład: Magazyn  
-13. W polu W miejscu pracy zaznacz opcję Tak.
-    * Jeśli zdarzenie wystąpiło w miejscu pracy, zaznacz opcję Tak.  
-14. W polu Data i godzina rozpoczęcia pracy wprowadź datę i godzinę.
-    * Wprowadź datę i godzinę, kiedy przedmiotowa osoba rozpoczęła pracę, zanim doszło do zdarzenia.  
-15. W polu Zadania pracownika wpisz wartość.
-    * Wprowadzania zadanie, które pracownik wykonywał w momencie wystąpienia zdarzenia.  Przykład: Ładowanie pudełek.  
-16. W polu Przyczyna zdarzenia wpisz wartość.
-    * Wprowadź przyczynę zdarzenia.  Przykład: Pośliźnięcie na mokrej podłodze.  
-17. W polu Poziom ważności wprowadź lub wybierz wartość.
-18. W polu Akcja, która ma być podjęta wpisz wartość.
-    * Przykład: Niezwłocznie usuwanie rozlanych substancji.  
-19. W polu Oczekiwane dni nieobecności w pracy wprowadź liczbę.
-    * Wprowadź liczbę oczekiwanych dni nieobecności osoby w pracy.  Gdy osoba powróci do pracy, zaktualizuj pole „Dni na zwolnieniu” o rzeczywistą liczbę dni nieobecności.  
-20. Rozwiń sekcję Koszty urazu lub choroby.
-21. Kliknij przycisk Dodaj.
-22. W polu Data wprowadź datę.
-23. W polu Typ kosztu wprowadź lub wybierz wartość.
-    * Przykład:  Leczenie    Można również wprowadzić kwotę i dołączyć do zestawienia kosztów wszelką dokumentację uzupełniającą, taką jak faktury lub notatki lekarza.  
-24. Kliknij przycisk Dodaj.
-25. W polu Data wprowadź datę.
-26. W polu Typ kosztu wprowadź lub wybierz wartość.
-    * Przykład: Lekarz  
-27. Rozwiń sekcję Leczenie urazów lub chorób.
-28. Kliknij przycisk Dodaj.
-29. W polu Data leczenia wprowadź datę i godzinę.
-30. W polu Typ leczenia wprowadź lub wybierz wartość.
-    * Przykład: Szyna unieruchamiająca  
-31. Opcjonalnie w sekcji Pobyt w szpitalnym oddziale pomocy doraźnej w nagłych wypadkach ustaw wartość Tak.
-32. W polu Komentarze dotyczące leczenia wpisz wartość.
-    * Przykład: Szyna unieruchamiająca przez 2 tygodnie  
-33. W polu Nazwisko lekarza wpisz wartość.
-    * Przykład:  Dr Kowalski  
-34. W polu Zakład i lokalizacja leczenia wpisz wartość.
-    * Przykład: Izba przyjęć szpitala wojewódzkiego  
-35. W polu Szczegóły leczenia wpisz wartość.
-    * Przykład: Badanie rentgenowskie potwierdza złamanie, nosić szynę unieruchamiającą  
-36. Kliknij przycisk Zapisz.
-    * Stan sprawy można zaktualizować w dowolnym momencie.  Ustaw stan sprawy na W toku, jeśli rozpatrywanie zgłoszenia urazu lub choroby nadal trwa.  Po zamknięciu zdarzenia można tylko dodawać lub usuwać koszty, zabiegi lub dokumenty związane ze zdarzeniem.  Aby zmodyfikować inne informacje, należy ponownie otworzyć sprawę.  
+1. Wybierz kolejno opcje **Zasoby ludzkie \> Pracownicy \> Uraz i choroba \> Przypadki urazów lub chorób**.
+2. Wybierz pozycję **Nowy**.
+3. W polu **Opis przypadku** wprowadź wartość (np. **Uraz nadgarstka**).
+4. W **polu Pracownik** wprowadź lub wybierz wartość (na przykład **Ana Bowman**).
+5. W polu **Data i godzina zdarzenia** wprowadź datę i czas (na przykład 20 stycznia 2016 godz. 10:00).
+6. W polu **Typ urazu lub choroby** wpisz lub wybierz wartość (na przykład **Złamanie**).
+7. W **polu Część ciała** wprowadź lub wybierz wartość (na przykład **Nadgarstek**).
+8. W polu **Typ wyniku** wprowadź lub wybierz wartość (na przykład **Terapia**).
+9. W polu **Data i godzina raportowania** wprowadź datę i godzinę.
 
+    Zgłoszona data i godzina musi być późniejsza niż data i godzina zdarzenia.
 
+10. W polu **Osoba, która zgłosiła sprawę** wprowadź lub wybierz wartość (na przykład, **Ana Bowman**).
+
+    Wskazana osoba może być pracownikiem lub innym świadkiem zdarzenia.
+
+11. W sekcji **Zdarzenie**, w polu **Miejsce zdarzenia**, wprowadź wartość (na przykład **Magazyn**).
+12. W polu **W miejscu pracy** wybierz opcję **Tak**, jeśli zdarzenie wystąpiło w miejscu pracy.
+13. W polu **Data i godzina rozpoczęcia pracy** wprowadź datę i czas, kiedy osoba, których dotyczy ta praca, rozpoczęła pracę przed zdarzeniem.
+14. W polu **Zadanie lub zadanie** pracownika wprowadź zadanie lub zadanie, które pracownik wykonuje w czasie zdarzenia (na przykład **Ładowanie pól**). 
+15. W polu **Przyczyna zdarzenia** wprowadź przyczynę zdarzenia (na przykład **Poślizgnął się na podłodze**).
+16. W polu **Poziom ważności** wprowadź lub wybierz wartość.
+17. W polu **Akcja do powzięcia** wprowadź wartość (na przykład **Natychmiast posprzątaj rozlane płyny**).
+18. W polu **Oczekiwane dni nieobecności w pracy** wpisz liczbę dni, przez które dana osoba ma być nieobecna w pracy.
+
+    Gdy osoba powróci do pracy, zaktualizuj pole **Dni na zwolnieniu** o rzeczywistą liczbę dni nieobecności danej osoby.
+
+19. W sekcji **Koszty urazu lub choroby** wybierz **Dodaj**.
+20. W polu **Data** wprowadź datę.
+21. W polu **Typ kosztu** wprowadź lub wybierz wartość (na przykład **Terapia**).
+
+    Możesz również wpisać kwotę i dołączyć do kosztu wszelkie dokumenty potwierdzające (np. faktury lub zaświadczenia lekarskie).
+
+22. Wybierz opcję **Dodaj**.
+23. W polu **Data** wprowadź datę.
+24. W polu **Typ kosztu** wprowadź lub wybierz wartość (na przykład **Lekarz**).
+25. W sekcji **Leczenie urazu lub choroby** wybierz **Dodaj**.
+26. W polu **Data leczenia** wprowadź datę i godzinę.
+27. W polu **Typ leczenia** wprowadź lub wybierz wartość (na przykład **Szyna unieruchamiająca**).
+28. W sekcji **Pobyt w szpitalnym oddziale pomocy doraźnej w nagłych wypadkach** ustaw wartość **Tak**.
+29. W polu **Komentarze na temat leczenia** wprowadź lub wybierz wartość (na przykład **Szyna unieruchamiająca przez 2 tygodnie**).
+30. W polu **Imię lekarza** wprowadź wartość (na przykład **Dr. Anderson**).
+31. W polu **Zakład i lokalizacja leczenia** wprowadź wartość (na przykład **Oddział ratunkowa ul. Elm**).
+32. W polu **Szczegóły dotyczące leczenia** wprowadź wartość (na przykład **Prześwietlenie potwierdza złamanie, użycie szyny unieruchamiającej**).
+33. Wybierz opcję **Zapisz**.
+
+Stan sprawy można zaktualizować w dowolnym momencie. Jeśli trwa przetwarzanie urazu lub choroby, ustaw stan na **W trakcie**. Po zamknięciu incydentu możesz dodawać lub usuwać tylko koszty, zabiegi lub zgłoszenia, które są związane z incydentem. Aby zmienić inne informacje, musisz ponownie otworzyć sprawę.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

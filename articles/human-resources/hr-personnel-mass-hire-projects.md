@@ -1,8 +1,8 @@
 ---
 title: Projekty zatrudnienia grupowego
-description: Projekty zatrudnienia grupowego umożliwiają specjalistom z działów kadr tworzenie wielu stanowisk i sprawne rekrutowanie na nie pracowników.
-author: andreabichsel
-ms.date: 06/20/2017
+description: W tym temacie opisano projekty zatrudniania masowego, które umożliwiają specjalistom ds. zasobów ludzkich tworzenie wielu stanowisk i efektywne zatrudnianie pracowników na tych stanowiskach.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f3e6c2addcf3f43c843692013489afcc1912b9baac1dbdfa6b4d4a1afc4398cd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6e0a8bba2227136995542d08f4b3f1e9d6d48ad5
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754817"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7728692"
 ---
 # <a name="mass-hire-projects"></a>Projekty zatrudnienia grupowego
 
@@ -43,19 +43,19 @@ Użyj projektów zatrudnienia grupowego do jednoczesnego zatrudnienia kilku prac
 
 Latem zazwyczaj zatrudnia się 15-20 studentów na staże dostępne w firmie. W tym roku chcesz zatrudnić 5 księgowych, 5 osób do przetwarzania zamówień i 5 kasjerów. Zamiast tworzyć każdy rekord stanowiska i pracownika z osobna można utworzyć jeden projekt zatrudnienia grupowego pod nazwą „Letnistaż”. Daty rozpoczęcia i zakończenia projektu pokrywają się z datami rozpoczęcia i zakończenia ważności stanowisk utworzonych w ramach projektu zatrudnienia grupowego.
 
-Na stronie **Projekty zatrudnienia grupowego** wybierz projekt „Letnistaż” i kliknij **Otwórz projekt**. Na stronie Otwórz projekt zatrudnienia grupowego kliknij przycisk **Utwórz stanowiska** i wprowadź informacje o stanowisku księgowego. Można wybrać utworzenie pięciu stanowisk księgowych przy użyciu tych samych informacji, a następnie kliknąć przycisk OK. Powtórz ten proces dla stanowisk przetwarzania zamówień i kasjerów.
+Na stronie **Projekty zatrudnienia grupowego** wybierz projekt **Letnistaż** i kliknij **Otwórz projekt**. Na stronie Otwórz projekt zatrudnienia grupowego kliknij przycisk **Utwórz stanowiska** i wprowadź informacje o stanowisku księgowego. Możesz wskazać, że powinno zostać utworzonych pięć stanowisk księgowych i że dla każdego z nich powinny być używane te same informacje. Następnie wybierz opcję **OK**. Powtórz ten proces dla stanowisk przetwarzania zamówień i kasjerów.
 
-Po wybraniu studentów, których chcesz przyjąć na staż wpisz dane każdego z nich na stronie **Szczegóły dotyczące stanowiska** dla stanowisk, na których mają zostać zatrudnieni. Po wprowadzeniu wszystkich szczegółów dotyczących stanowiska wybierz stanowisko na stronie Projekty zatrudnienia grupowego, a następnie kliknij **Zatrudnij**. Zostaną utworzone rekordy dla każdego stanowiska i pracownika, a każdy pracownik zostanie przypisany do odpowiedniego stanowiska.
+Po wybraniu studentów, których chcesz przyjąć na staż wpisz dane każdego z nich na stronie Szczegóły dotyczące stanowiska dla stanowisk, na których mają zostać zatrudnieni. Po wprowadzeniu wszystkich szczegółów dotyczących stanowiska wybierz stanowisko na stronie **Projekty zatrudnienia grupowego**, a następnie kliknij **Zatrudnij**. Zostaną utworzone rekordy dla każdego stanowiska i pracownika, a każdy pracownik zostanie przypisany do odpowiedniego stanowiska.
 
 ## <a name="mass-hire-project-statuses"></a>Stany projektu zatrudnienia grupowego
 
 Projekt zatrudnienia grupowego może mieć następujące stany:
 
-- Utworzony
-- Otwarto
-- Zamknięto
+- Utworzone
+- Otwarte
+- Zamknięta
 
-Na stronie **projektu zatrudnienia grupowego** kliknij **Otwórz projekt** lub **Zamknij projekt**, aby zmienić stan projektu zatrudnienia grupowego. W poniższej tabeli opisano możliwości obsługi projektu w zależności od jego stanu.
+Na stronie **projektu zatrudnienia grupowego** wybierz **Otwórz projekt** lub **Zamknij projekt**, aby zmienić stan projektu zatrudnienia grupowego. W poniższej tabeli opisano możliwości obsługi projektu w zależności od jego stanu.
 
 <table>
 <thead>
@@ -75,8 +75,8 @@ Na stronie **projektu zatrudnienia grupowego** kliknij **Otwórz projekt** lub *
 </tr>
 <tr>
 <td>Zamknięto</td>
-<td>Nie można dodać stanowisk do projektu. Aby dodać stanowiska do projektu zatrudnienia grupowego, otwórz ponownie projekt. Jest to stan zakończonych projektów.
-<blockquote>[!NOTE] Aby było możliwe zamknięcie projektu zatrudnienia grupowego, wszystkie stanowiska w projekcie muszą mieć stan Utworzono lub Zamknięto.</blockquote>
+<td><p>Nie można dodać stanowisk do projektu. Aby dodać stanowiska do projektu zatrudnienia grupowego, otwórz ponownie projekt. Jest to stan zakończonych projektów.</p>
+<p><strong>Notatka:</strong> Aby było możliwe zamknięcie projektu zatrudnienia grupowego, wszystkie stanowiska w projekcie muszą mieć stan <b>Utworzono</b> lub <b>Zamknięto</b>.</p>
 </td>
 </tr>
 </tbody>

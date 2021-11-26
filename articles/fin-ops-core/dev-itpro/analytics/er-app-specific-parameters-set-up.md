@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 0fce566bea6340b4016e559b1f5f1764a6881e28
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 9b57c6165e5de4a115818a135ed1455e3b05e3f0
+ms.sourcegitcommit: 4b7e9d074e368a08d2f75482b722dce0c69a4bbd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675401"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7733470"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>Umożliwia konfigurowanie parametrów formatu ER dla firmy
 
@@ -226,15 +226,6 @@ Można również skorzystać z metody „eksport-import” w celu przetransferow
 Jeśli skonfigurujesz parametry specyficzne dla aplikacji dla jednej wersji formatu ER, a następnie zaimportujesz późniejszą wersję tego samego formatu do bieżącego wystąpienia aplikacji Finance, istniejące parametry specyficzne dla aplikacji nie będą stosowane do zaimportowanej wersji, chyba że użyjesz funkcji **Użyj parametrów specyficznych dla aplikacji z poprzednich wersji formatów raportowania elektronicznego**. Więcej informacji znajduje się w dalszej sekcji [Ponowne używanie istniejących parametrów](#reuse-existing-parameters) w tym temacie.
 
 Po wybraniu pliku do zaimportowania struktura parametrów specyficznych dla aplikacji w tym pliku jest porównywana ze strukturą odpowiednich źródeł danych typu **Wyszukiwanie** w formacie ER, który został wybrany do importu. Domyślnie jest wykonywany tylko wtedy, gdy struktura każdego parametru specyficznego dla aplikacji odpowiada strukturze odpowiedniego źródła danych w formacie ER wybranym do importu. Jeśli struktury nie są zgodne, komunikat ostrzegawczy poinformuje Cię o tym, że nie można wykonać importu. W przypadku wymuszenia importu istniejące parametry specyficzne dla aplikacji dla wybranego formatu ER zostaną oczyszczone i należy je skonfigurować od początku.
-
-Od aplikacji Dynamics 365 Finance w wersji 10.0.23 można zmienić domyślne zachowanie i uniknąć pojawiania się komunikatów ostrzegawczych, włączając funkcję **Podczas importowania wyrównaj parametry specyficzne dla aplikacji raportowania elektronicznego** w obszarze roboczym **Zarządzanie funkcjami**. Po włączeniu tej funkcji, jeśli struktura importowanych parametrów specyficznych różni się od struktury odpowiedniego źródła danych typu wyszukiwania w docelowym formacie ER, który został wybrany do importu, w następujących przypadkach importowanie zakończy się powodzeniem:
-
-- Struktura docelowego formatu ER została zmieniona przez dodanie nowych kolumn warunku do istniejących źródeł danych typu **Wyszukiwanie**. Po zakończeniu importowania parametry specyficzne dla aplikacji są aktualizowane. We wszystkich importowanych rekordach parametrów specyficznych dla aplikacji wartości w każdej kolumnie dodawanego warunku są inicjowane z wartością domyślną dla [typu danych](er-formula-supported-data-types-primitive.md) danej kolumny.
-- Struktura docelowego formatu ER została zmieniona przez usunięcie niektórych kolumn warunku z istniejących źródeł danych typu **Wyszukiwanie**. Po zakończeniu importowania parametry specyficzne dla aplikacji są aktualizowane. Ze wszystkich importowanych rekordów parametrów specyficznych dla aplikacji usuwane są wartości z każdej usuniętej kolumny warunku.
-- Struktura docelowego formatu ER została zmieniona przez dodanie nowych źródeł danych typu **Wyszukiwanie**. Po zakończeniu importowania dodane wyszukiwania są dołączane do parametrów specyficznych dla aplikacji.
-- Struktura docelowego formatu ER została zmieniona przez usunięcie niektórych istniejących źródeł danych typu **Wyszukiwanie**. Po zakończeniu importowania wszystkie artefakty powiązane ze źródłami danych typu **Wyszukiwanie**, które zostały usunięte z docelowego formatu ER, są usuwane z importowanych parametrów specyficznych dla aplikacji.
-
-Po zakończeniu importowania, oprócz opisanych zmian, stan zaimportowanych parametrów specyficznych dla aplikacji zmienia się na **W toku**. Komunikat ostrzegawczy informuje, że automatycznie skorygowane parametry aplikacji należy edytować ręcznie.
 
 ### <a name="reuse-existing-parameters"></a>Ponowne używanie istniejących parametrów
 

@@ -1,8 +1,8 @@
 ---
 title: Konfigurowanie parametrów rozwiązania Human Resources
 description: W tym temacie wyjaśniono, jak skonfigurować parametry specyficzne dla firmy w Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 06/23/2021
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 476f44c665adb2918e7cd882d4ea873b4b4f94fa33a74dc96d3eccc74b676ce5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd9bb907f95ba4c368871a470ca9b2bc807646ee
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739258"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771442"
 ---
 # <a name="configure-human-resources-parameters"></a>Konfigurowanie parametrów rozwiązania Human Resources
 
@@ -65,7 +65,7 @@ Ustawienia wprowadzone na karcie **Ogólne** definiują wygląd informacji o nie
 
 Ustawienia na karcie **Rekrutacja** określają typy dokumentów używane do korespondencji automatycznie wysyłanej do kandydatów. Można także wskazać projekt rekrutacji używany dla niechcianych zgłoszeń.
 
-Okres zdefiniowany dla wiekowania projektu rekrutacji określa projekty rekrutacji uwzględnione w kafelku **Projekty wiekowania** w obszarze roboczym **Zarządzanie rekrutacją**. Okres zdefiniowany dla ostrzeżenia o ostatecznym terminie zgłoszenia jest używany do wyświetlania projektów rekrutacji, których ostateczny termin zgłoszeń się zbliża i jest określony w kafelku **Zbliża się ostateczny termin zgłoszenia** w obszarze roboczym **Rekrutacja**.
+Okres zdefiniowany dla **wiekowania projektu rekrutacji** określa projekty rekrutacji uwzględnione w kafelku **Projekty wiekowania** w obszarze roboczym **Zarządzanie rekrutacją**. Okres zdefiniowany dla ostrzeżenia o ostatecznym terminie zgłoszenia jest używany do wyświetlania projektów rekrutacji, których ostateczny termin zgłoszeń się zbliża i jest określony w kafelku **Zbliża się ostateczny termin zgłoszenia** w obszarze roboczym **Rekrutacja**.
 
 Aby uzyskać więcej informacji o rekrutacji, zobacz temat [Rekrutowanie kandydatów do pracy](hr-personnel-recruit.md).
 
@@ -107,20 +107,20 @@ Na karcie FMLA są ustawiane wymagania dotyczące uprawnień FMLA i godziny upra
 
 ## <a name="employee-self-service"></a>Samoobsługa pracownika etatowego
 
-Ustawienia na karcie **Samoobsługa pracownika etatowego** mają wpływ na sposób, w jaki samoobsługa pracownika etatowego jest wyświetlana pracownikom etatowym. Na tej karcie można:
+Ustawienia na karcie **Samoobsługa pracownika etatowego** mają wpływ na sposób, w jaki **samoobsługa pracownika etatowego** jest wyświetlana pracownikom etatowym. Na tej karcie możesz wykonać następujące zadania:
 
-- Wprowadź nazwę obszaru roboczego samoobsługi pracownika
+- Wprowadź nazwę obszaru roboczego **samoobsługi pracownika**
 - Wybierz, jakie informacje menedżer może wprowadzić dla pracowników
 - Dodawanie przydatnych łączy dla pracowników
 - Zablokuj pracownikom możliwość dodawania lub edytowania biznesowych danych kontaktowych. Aby uzyskać więcej informacji, zobacz temat [Ogranicz edycję danych osobowych](hr-employee-self-service-restrict-editing.md).
 
-Aby uzyskać więcej informacji dotyczących konfigurowania funkcji samoobsługi pracowników etatowych, zobacz [Omówienie samoobsługi dla pracownika etatowego i menedżera](hr-employee-manager-self-service-overview.md).
+Aby uzyskać więcej informacji dotyczących konfigurowania funkcji **samoobsługi pracowników etatowych**, zobacz [Omówienie samoobsługi dla pracownika etatowego i menedżera](hr-employee-manager-self-service-overview.md).
 
 ![Karta Samoobsługa pracownika etatowego.](./media/hr-setup-parameters-employee-self-service.png)
 
 ## <a name="manager-self-service"></a>Samoobsługa menedżera
 
-Ustawienia na karcie **Samoobsługa menedżera** wpływają na to, co menedżerowie widzą w samoobsługi menedżera. Na tej karcie można skonfigurować następujące opcje:
+Ustawienia na karcie **Samoobsługa menedżera** wpływają na to, co menedżerowie widzą w **samoobsłudze menedżera**. Na tej karcie można skonfigurować następujące opcje:
 
 - Zakres wygasających rekordów
 - Informacje, które menedżerowie mogą wyświetlać w wygasających rekordach
@@ -128,13 +128,13 @@ Ustawienia na karcie **Samoobsługa menedżera** wpływają na to, co menedżero
 - Widoki odchodzących pracowników
 - Przydatne łącza dla menedżerów
 
-Aby uzyskać więcej informacji dotyczących konfigurowania funkcji samoobsługi menedżerów, zobacz [Omówienie samoobsługi dla pracownika etatowego i menedżera](hr-employee-manager-self-service-overview.md).
+Aby uzyskać więcej informacji dotyczących konfigurowania funkcji **samoobsługi menedżerów**, zobacz [Omówienie samoobsługi dla pracownika etatowego i menedżera](hr-employee-manager-self-service-overview.md).
 
 ![Karta Samoobsługa menedżera.](./media/hr-setup-parameters-manager-self-service.png)
 
 ## <a name="benefits-management"></a>Zarządzanie świadczeniami
 
-Na karcie Zarządzanie świadczeniami możesz skonfigurować opcje poczty e-mail dotyczące zarządzania świadczeniami. Aby uzyskać więcej informacji na temat konfiguracji i użytkowania funkcji Zarządzanie świadczeniami, zobacz [Zarządzanie świadczeniami - omówienie](hr-benefits-management-overview.md).
+Na karcie **Zarządzanie świadczeniami** możesz skonfigurować opcje poczty e-mail dotyczące zarządzania świadczeniami. Aby uzyskać więcej informacji na temat konfiguracji i użytkowania funkcji Zarządzanie świadczeniami, zobacz [Zarządzanie świadczeniami - omówienie](hr-benefits-management-overview.md).
 
 ![Karta Zarządzanie świadczeniami.](./media/hr-setup-parameters-benefits-management.png)
 

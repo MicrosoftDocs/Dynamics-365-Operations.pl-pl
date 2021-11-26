@@ -2,7 +2,7 @@
 title: Omówienie migawek
 description: W tym temacie opisano funkcję migawek, która umożliwia zapisanie prognozy przepływów pieniężnych na potrzeby analizy lub porównania z wartościami rzeczywistymi w późniejszym czasie. Podczas generowania prognozy przepływów pieniężnych można zapisać tę prognozę jako „migawkę”. Następnie można używać migawek w celu edytowania kont uwzględnionych w prognozie lub porównywania prognozy w migawce z wartościami rzeczywistymi.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,16 +17,17 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-19
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: bcaaa9fe13e36bbe71e29d82c9f22a4fff9248ef
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: a91300ac17b36d890840e6c0c3104fad5fce68f0
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386570"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752774"
 ---
 # <a name="snapshots-overview"></a>Omówienie migawek
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Migawki umożliwiają organizacjom edytowanie i zapisywanie informacji o ich stanie środków pieniężnych i prognozach kasowych w danym momencie. Migawkę można porównać z rzeczywistymi informacjami finansowymi, sprawdzić odchylenia, a następnie używać tych informacji do poprawiania prognoz przepływów pieniężnych w kolejnych okresach. W szczególności migawki mogą być używane w następujący sposób:
 
@@ -40,8 +41,6 @@ Migawkę można utworzyć, wybierając opcję **Nowa migawka** na karcie **Stan 
 
 Wpływy i rozchody gotówkowe w migawkach można w każdej chwili edytować. Po zmodyfikowaniu wpływu lub rozchodu gotówkowego zaktualizowana kwota jest dopisywana proporcjonalnie do kont płynności tworzących pierwotne saldo. Po zakończeniu edytowania migawki kliknij opcję **Zapisz**, aby zapisać wprowadzone zmiany.
 
-Aby porównać wiele migawek, wybierz opcję **Porównaj migawki**. Można porównywać dwie migawki naraz. Zaznacz dwie migawki do porównania, a następnie kliknij przycisk **OK**. Na stronie **Porównanie migawek** zostanie wyświetlane porównania wybranych migawek. Wykres w górnej części strony pokazuje porównanie wpływów gotówkowych, rozchodów gotówkowych i sald bankowych w nakładających się okresach między dwiema migawkami. Siatka w dolnej części pokazuje szczegółowe porównanie dwóch prognoz dla każdej kwoty płynności. Kolumna **Odchylenie** w siatce pokazuje różnicę między saldami w okresie.
-
-Aby porównać rzeczywiste wyniki finansowe z prognozą zapisaną jako migawka, wybierz opcję **Porównaj z wartościami rzeczywistymi**. Na stronie **Porównanie migawek** zostanie wyświetlone porównanie kwot rzeczywistych z prognozą. Wykres w górnej części strony pokazuje porównanie wpływów gotówkowych, rozchodów gotówkowych i sald bankowych w nakładających się okresach między dwiema migawkami. Siatka w dolnej części pokazuje szczegółowe porównanie sald wartości rzeczywistych z podziałem na okresy z prognozowanym saldem dla każdej kwoty płynności. Kolumna **Odchylenie** w siatce pokazuje różnicę między rzeczywistym saldem w okresie a prognozowanym saldem.
+Aby porównać rzeczywiste wyniki finansowe z prognozą zapisaną jako migawka, wybierz opcję **Porównaj z wartościami rzeczywistymi**. Na stronie **Porównaj z rzeczywistymi** zostanie wyświetlone porównanie kwot rzeczywistych z prognozą. Wykres w górnej części strony pokazuje porównanie wpływów gotówkowych, rozchodów gotówkowych i sald bankowych w nakładających się okresach między dwiema migawkami. Siatka w dolnej części pokazuje szczegółowe porównanie sald wartości rzeczywistych z podziałem na okresy z prognozowanym saldem dla każdej kwoty płynności. Kolumna **Odchylenie** w siatce pokazuje różnicę między rzeczywistym saldem w okresie a prognozowanym saldem.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

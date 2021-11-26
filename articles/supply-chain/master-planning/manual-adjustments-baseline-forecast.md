@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37d78e97a6c7f9152ab0b893a35a3ae70d5adabc
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d8a29e93b252c5d4ec68dfcd9ffe2f63ac1b6af2
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579647"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778040"
 ---
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a>Wprowadzanie ręcznych korekt prognozy bazowej
 
@@ -67,7 +67,7 @@ Strona **Szczegóły prognozy popytu** pokazuje następujące informacje na graf
 
 **Uwagi:**
 
--   Jeśli zostanie włączone **wybieranie modelu prognozy dla szczegółów prognozy popytu** w obszarze zarządzania funkcjami, będzie można wybrać modele prognozy do uwzględnienia dla prognozy historycznej, na stronie **Szczegóły prognozy popytu**.
+-   Jeśli zostanie włączone **wybieranie modelu prognozy dla szczegółów prognozy popytu** w obszarze zarządzania funkcjami, będzie można wybrać modele prognozy do uwzględnienia dla prognozy historycznej, na stronie **Szczegóły prognozy popytu**. (Od wersji 10.0.21 Supply Chain Management version ta funkcja jest domyślnie włączona)
 -   Przedział wiarygodności widoczny w sekcji **Prognoza** na stronie przedstawia różnicę między górnym i dolnym limitem przedziału wiarygodności. Aby wyświetlić wartości limitów górnych i dolnych, umieść wskaźnik myszy na wykresie w sekcji **Graficzna prezentacja popytu historycznego i prognozy**.
 -   W przypadku korzystania z usługi Microsoft Azure Machine Learning dla prognozowania popytu można określić wymagany procent poziomu zaufania dla generowanej prognozy. Przedział wiarygodności zawiera zakres wartości będących dobrymi danymi szacunkowymi dla prognozy popytu. Wiarygodność na poziomie 95% oznacza, że występuje 5-procentowe ryzyko, że prognoza popytu wykroczy poza zakres wiarygodności.
 

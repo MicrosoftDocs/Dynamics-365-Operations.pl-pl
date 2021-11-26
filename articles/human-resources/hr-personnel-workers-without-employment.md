@@ -1,8 +1,8 @@
 ---
 title: Pracownicy bez zatrudnienia
-description: Pracownicy bez przyszłego, aktywnego lub historycznego zatrudnienia w organizacji są wyświetlani w formularzu Pracownicy bez zatrudnienia.
-author: andreabichsel
-ms.date: 04/06/2021
+description: Pracownicy bez przyszłego, aktywnego lub historycznego zatrudnienia w Twojej organizacji pojawiają się na stronie Pracownicy bez zatrudnienia.
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: ''
 ms.prod: ''
 ms.technology: ''
@@ -10,23 +10,23 @@ ms.search.form: HcmWorkerV2, HRMMassHireProject, HRMMassHireLine, HcmPersonnelMa
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2021-04-06
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 45841c35780960f524cc232dad16f94dbc8ec1c2df75fa2a5c2520e5522d4e3a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d282c0fac00d6bc410717dd156aef9ffce352c6d
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724971"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771297"
 ---
 # <a name="workers-without-employment"></a>Pracownicy bez zatrudnienia
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Pracownicy bez przyszłego, aktywnego lub historycznego zatrudnienia w organizacji są wyświetlani w formularzu **Pracownicy bez zatrudnienia**. Pracownicy z tym stanem mogą pojawiać się podczas importowania pracowników bez rekordu zatrudnienia lub usuwania zatrudnienia pracownika za pośrednictwem opcji **Pracownicy > Historia zatrudnienia**.
+Pracownicy, którzy nie mają żadnego przyszłego, aktywnego ani przeszłego zatrudnienia w Twojej organizacji, pojawiają się na stronie **Pracownicy bez zatrudnienia**. Pracownicy z tym stanem mogą pojawiać się podczas importowania pracowników bez rekordu zatrudnienia lub usuwania zatrudnienia pracownika za pośrednictwem opcji **Pracownicy \> Historia zatrudnienia**.
 
-Domyślnie formularz **Pracownicy bez zatrudnienia** jest dostępny dla następujących ról:
+Domyślnie strona **Pracownicy bez zatrudnienia** jest dostępna dla następujących ról:
 
 - Asystent ds. kadr
 - Menedżer ds. kadr

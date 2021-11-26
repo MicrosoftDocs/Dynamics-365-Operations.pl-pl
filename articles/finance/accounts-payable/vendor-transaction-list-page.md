@@ -1,7 +1,7 @@
 ---
 title: Strona listy transakcji dostawcy
 description: Ten temat zawiera informacje o stronie listy Transakcji dostawcy dostępnej w usłudze Microsoft Dynamics 365 Finance.
-author: mikefalkner
+author: sunfzam
 ms.date: 08/24/2018
 ms.topic: article
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 455ff6b2f337af272c63fce08f40de574622ad55c6fb2c3e5b354a9d34843559
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6029e67cbbe72bbe95082cb7146834c0d7318261
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777199"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7754079"
 ---
 # <a name="vendor-transactions-list-page"></a>Strona listy transakcji dostawcy
 

@@ -40,7 +40,7 @@ Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych fun
 | &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Wyłączone z elektronicznego przesyłania wiadomości przetwarzanie współdziałania z węgierskim systemem fakturowania online |
-| **Zamieniona przez inną funkcję?**   | Nr |
+| **Zamieniona przez inną funkcję?**   | Nie |
 | **Powiązane obszary produktów**         | Zgłoszenie |
 | **Opcja wdrażania**              | Wszyscy |
 | **Stan**                         | Wycofane: do 15 kwietnia 2022 r. Nie planujemy już obsługiwać konfiguracji formatu „Zapytania o dane faktury RTIR (HU)”. |

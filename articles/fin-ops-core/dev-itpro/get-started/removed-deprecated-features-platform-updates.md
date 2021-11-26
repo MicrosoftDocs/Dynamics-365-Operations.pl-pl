@@ -62,7 +62,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Funkcja zwracała nieoczekiwane wyniki. |
-| **Zamieniona przez inną funkcję?**   | Nr Wszelkie dalsze plany dotyczące tej funkcji będą komunikowane za pośrednictwem standardowego procesu ujawniania grupy czynności wydania. |
+| **Zamieniona przez inną funkcję?**   | Nie Wszelkie dalsze plany dotyczące tej funkcji będą komunikowane za pośrednictwem standardowego procesu ujawniania grupy czynności wydania. |
 | **Powiązane obszary produktów**         | Klient sieci Web — doświadczenie załącznika dokumentu |
 | **Opcja wdrażania**              | Wszystko |
 | **Stan**                         | Przestarzałe  |
@@ -178,7 +178,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Artefakty metadanych skojarzone z aplikacją Dynamics AX 2012 Enterprise Portal (EP) są przestarzałe, ponieważ portal EP nigdy nie był obsługiwany w aplikacjach Finance and Operations. |
-| **Zamieniona przez inną funkcję?**   | Nr |
+| **Zamieniona przez inną funkcję?**   | Nie |
 | **Powiązane obszary produktów**         | Klient sieci Web |
 | **Opcja wdrażania**              | Wszyscy |
 | **Stan**                         | Wycofanie: Cały kod EP ma zostać usunięty w wersji z października 2021 r. |
@@ -335,7 +335,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Adresy URL nawigacji osadzone w dokumentach renderowanych przez usługę mogą zawierać poufne dane biznesowe. Usuwamy pomoc techniczną dla łączy typu „drążenie wskroś” w dokumentach jako środek bezpieczeństwa, aby dodatkowo chronić dane odbiorców. Użytkownicy będą również mogli uzyskać lepszą wydajność podczas interaktywnego tworzenia dokumentów w wyniku tej zmiany.  |
-| **Zamieniona przez inną funkcję?**   | Nr |
+| **Zamieniona przez inną funkcję?**   | Nie |
 | **Powiązane obszary produktów**         | Raportowania |
 | **Opcja wdrażania**              | Wszystkich |
 | **Stan**                         | Ta funkcja jest aktywnie usuwana z usługi.<br><br>Nowoczesne oprogramowanie klienckie oferuje wiele opcji tworzenia widoków, które zawierają automatycznie generowane łącza umożliwiające nawigację po aplikacji. Dokumenty z podziałem, renderowane przez usługę, są zalecane w przypadku komunikacji zewnętrznej, które są wysyłane, archiwizowane i drukowane dla odbiorców. Ulepszono możliwości wyświetlania podglądu dokumentów bezpośrednio w przeglądarce, która oferuje bezpośredni dostęp do drukarek lokalnych. Aby uzyskać więcej informacji, zobacz [Podgląd dokumentów PDF za pomocą osadzonej przeglądarki](../analytics/preview-pdf-documents.md). |

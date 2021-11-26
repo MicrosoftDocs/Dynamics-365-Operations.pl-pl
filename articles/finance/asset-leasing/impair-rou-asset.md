@@ -92,8 +92,8 @@ W poniższych tabelach przedstawiono wartości ustawione na kartach **Ogólne** 
     | Data transakcji       | 1.1.2022 |
     | Pozostałe okresy      | 84       |
     | Księguj                   | Tak      |
-    | Wyświetl podgląd przed zaksięgowaniem | Nr       |
-    | Zamknij rezerwację             | Nr       |
+    | Wyświetl podgląd przed zaksięgowaniem | Nie       |
+    | Zamknij rezerwację             | Nie       |
 
 6. Wpis w arkuszu dotyczący wydatku utraty wartości został utworzony i zaksięgowany. Aby go wyświetlić, przejdź do arkusza wynajmu składnika majątku w księdze wynajmu. Zauważ, że kwota utraty wartości została zaksięgowana po stronie debetowej konta księgowania wydatku utraty wartości oraz po stronie kredytowej konta księgowania składnika majątku z PDU.
 7. Aby wyświetlić efekt netto utraty wartości, przejdź do tabeli transakcji na pasywach i aktywach. Zauważ, że wydatek utraty wartości zmniejszył wartość składnika majątku z PDU, ale wartość bilansowa zobowiązania z tytułu wynajmu nie uległa zmianie.

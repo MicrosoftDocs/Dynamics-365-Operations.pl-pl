@@ -1,27 +1,27 @@
 ---
 title: Obszar roboczy zarządzania personelem
 description: W tym temacie opisano elementy pojęć obszaru roboczego Zarządzanie pracownikami.
-author: andreabichsel
-ms.date: 07/01/2021
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmPosition, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.author: anbichse
-ms.reviewer: anbichse
+ms.author: twheeloc
+ms.reviewer: twheeloc
 ms.search.scope: Human Resources
 ms.custom: 269054
 ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 923d4a980c3f8f9b3bf5be1f77d8910081123fa08b068f1fd8fa935312d3a101
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4332be972ab3dc81e7e4f3cc297a91cd247e721e
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754830"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771345"
 ---
 # <a name="personnel-management-workspace"></a>Obszar roboczy zarządzania personelem
 
@@ -33,11 +33,11 @@ Obszar roboczy **Zarządzanie pracownikami** zawiera ilość zawartości. Zawier
 
 Karta **Działanie** zawiera sekcje, w których grupuje się pracowników na podstawie ich etapu w procesie zatrudnienia:
 
-- Kandydaci do zatrudnienia
-- Wkrótce zaczyna
-- Ostatnio zatrudnieni
-- Zamykanie
-- Odeszli
+- **Kandydaci do zatrudnienia**
+- **Wkrótce zaczyna**
+- **Ostatnio zatrudnieni**
+- **Zamykanie**
+- **Odeszli**
 
 Gdy pracownik znajduje się w jednym z tych etapów, określone akcje są dostępne jako przyciski na karcie lub w menu, które pojawia się po wybraniu wielokropka (**...**) w prawym górnym rogu. W poniższych podsekcjach opisano sekcje karty **Działanie** i listę dostępnych akcji.
 
@@ -51,9 +51,9 @@ Sekcja **Kandydaci do zatrudnienia** w obszarze roboczym jest wypełniona z wiel
 
 Gdy w sekcji **Kandydaci do zatrudnienia** pojawiają się kandydaci, można wykonać następujące akcje, wybierając wielokropek na karcie kandydata:
 
-- Odrzuć kandydata
-- Nie zatrudniać
-- Zatrudnić
+- **Odrzuć kandydata**
+- **Nie zatrudniać**
+- **Zatrudnić**
 
 > [!NOTE]
 > Jeśli lista kandydatów jest wypełniana z Microsoft Dataverse, ci sami kandydaci będą wyświetlani we wszystkich podmiotach prawnych, ponieważ podmiot prawny nie został powiązany z kandydatem.
@@ -65,7 +65,7 @@ W sekcji **Rozpoczęcie wkrótce** zostanie wymieniona lista pracowników, dla k
 Jeśli kierownik nie widnieje na karcie, stanowisko nie zostało przypisane pracownikowi.
 
 > [!NOTE] 
-> Zalecamy przypisanie stanowiska do pracownika przed zastosowaniem listy kontrolnej, ponieważ zadania związane z wprowadzaniem są czasami przypisywane do nowo zatrudnionego menedżera pracownika. Jeśli jednak nie zostanie przydzielone żadne stanowisko, nie można ustalić kierownika nowego pracownika. W takim przypadku zadania związane z wprowadzaniem, które są przeznaczone dla menedżera, zostaną zamiast tego przypisane właścicielowi listy kontrolnej.
+> Zaleca się przypisanie stanowiska do pracownika przed zastosowaniem listy kontrolnej. Czasami zadania dołączania są przypisywane do nowo zatrudnionego menedżera pracownika. Jeśli jednak nie zostanie przydzielone żadne stanowisko, nie można ustalić kierownika nowego pracownika. W takim przypadku zadania związane z wprowadzaniem, które są przeznaczone dla menedżera, zostaną zamiast tego przypisane właścicielowi listy kontrolnej.
 
 Gdy pracownicy pojawią się w sekcji **Rozpoczęcie wkrótce**, są dla nich dostępne następujące akcje:
 
@@ -132,13 +132,9 @@ Gdy pracownicy pojawią się w sekcji **Odeszli**, są dla nich dostępne nastę
 
 Karta **Zmiany pracownika** zawiera listę wszystkich akcji pracowników. Ta lista jest domyślnie niedostępna. Aby włączyć tę funkcję, na stronie **Wspólne parametry Human resources**, na karcie **Akcje dotyczące pracowników** ustaw opcję **Włącz akcje dotyczące pracownika** na wartość **Tak**.
 
-Aby uzyskać więcej informacji o akcjach dotyczących pracowników, zobacz temat (łącze do strony Akcje dotyczące pracowników).
-
 ## <a name="position-changes-tab"></a>Karta Zmiany stanowisk
 
 Karta **Zmiany stanowiska** zawiera listę wszystkich akcji stanowisk pracowników. Ta lista jest domyślnie niedostępna. Aby włączyć tę funkcję, na stronie **Wspólne parametry Human resources**, na karcie **Akcje dotyczące pracowników** ustaw opcję **Włącz akcje dotyczące stanowiska** na wartość **Tak**.
-
-Aby uzyskać więcej informacji o akcjach dotyczących pracowników, zobacz temat (łącze do strony Akcje dotyczące pracowników).
 
 ## <a name="open-positions-tab"></a>Karta Otwórz stanowiska
 
@@ -151,11 +147,11 @@ Na karcie **Otwarte stanowiska** są wszystkie otwarte stanowiska. Aby stanowisk
 
 Na karcie **Wygasające rekordy** znajduje się lista wszystkich pozycji, które wygasły lub wygaśnie dla pracowników w firmie, do których jest zalogowany użytkownik. Na liście są wyświetlane następujące elementy:
 
-- Certyfikaty
-- Identyfikator
-- Okresy próbne
-- Kontrole
-- Testy
+- **Certyfikaty**
+- **Identyfikator**
+- **Okresy próbne**
+- **Kontrole**
+- **Testy**
 
 Aby określić, czy lista zawiera wygasłe rekordy, czy rekordy wygasające, na stronie **Parametry Human Resources** na karcie **Ogólne** zdefiniuj ramy czasowe dla rekordów **Wygasające rekordy** lub **Wygasłe rekordy**. Dane na karcie **Wygasające rekordy** mogą być wyświetlane dla określonej liczby dni. Na przykład aby wyświetlić listę rekordów, które wygasną w ciągu następnych 14 dni, ustaw w polu **Liczba dni** wartość **14**.
 

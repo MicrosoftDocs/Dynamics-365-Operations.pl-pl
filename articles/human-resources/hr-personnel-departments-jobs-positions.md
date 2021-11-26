@@ -1,8 +1,8 @@
 ---
 title: Organizowanie pracowników za pomocą działów, funkcji i stanowisk
-description: Działy, zadania i stanowiska to elementy organizacyjne zarządzane w module Zasoby ludzkie. W tym artykule opisano koncepcję tych elementów.
-author: andreabichsel
-ms.date: 06/20/2017
+description: W tym temacie opisano informacje koncepcyjne dotyczące działów, stanowisk i stanowisk, które są elementami organizacyjnymi utrzymywanymi w ramach Human resources.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 87933
 ms.assetid: eb5dcacb-a5fe-451d-b30a-7ef14da65d81
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: cd50bf7e8e03d72d6d0e1e2b0b065a5d9c7a3ef44e96f92a5fc342a0d820d8e1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 51335cba0e0dce755ce36fbe13c6294fca58d797
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778803"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731815"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Organizowanie pracowników za pomocą działów, funkcji i stanowisk
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Działy, zadania i stanowiska to elementy organizacyjne zarządzane w module Zasoby ludzkie. W tym artykule opisano koncepcję tych elementów. 
+Działy, zadania i stanowiska to elementy organizacyjne zarządzane w module Zasoby ludzkie. W tym temacie opisano koncepcję tych elementów. 
 
 Poniższy przykład ilustruje koncepcje opisane w tym artykule.
 
@@ -49,7 +49,6 @@ Dział jest jednostką operacyjną, która reprezentuje kategorię lub obszar fu
 ## <a name="jobs-and-positions"></a> Stanowiska i pozycje
 Stanowisko to zbiór zadań i odpowiedzialności, które są wymagane od osoby, która wykonuje zadanie. Pozycja jest pojedynczym wystąpieniem zadania. Zakresy odpowiedzialności, obowiązki, funkcje stanowisk, umiejętności, informacje o wykształceniu i certyfikaty, które są wymagane dla stanowisk, które są skojarzone z zadaniem.
 ### <a name="job-tasks"></a>Zadania zlecenia
-
 Można tworzyć zadania opisujące podstawowe zadania, które pracownik zajmujący stanowisko obejmujące to zadanie musi wykonać. To samo zadanie można dodać do wielu stanowisk, i pozycje dla tego zadania będą je dziedziczyć. Niektóre przykłady znajdują się w poniższej tabeli.
 
 <table>
@@ -106,24 +105,21 @@ Pozycje są ważnym elementem dla niższego poziomu hierarchii organizacji. Pozy
 -   Można ustawić przepływ pracy w taki sposób, by dodawanie pozycji i wprowadzanie zmian wymagało zatwierdzenia.
 
 ### <a name="position-duration"></a>Okres ważności stanowiska
-
 Każda pozycja ma okres ważności. Ten okres jest określany jako czas trwania. Na przykład letnie stanowiska mogą mieć czas trwania od 1 maja 2015 r. do 31 sierpnia 2015 r.
 
 ### <a name="worker-assignments"></a>Przypisania pracownika
-
 Przypisanie pracownika do pozycji oznacza wypełnienie tej pozycji. Pracowników można przypisać do wielu pozycji, ale jednocześnie do pozycji może być przypisany tylko jeden pracownik.
 
 ### <a name="reporting-relationships"></a>Relacje raportowania
+Pozycje są ważnymi elementami dla niższego poziomu hierarchii organizacji. Na stronie **Stanowiska** można określać pozycje nadrzędne. Podczas przypisywania pracownika do pozycji podrzędnej względem innej pozycji, tworzy się relację raportowania między pracownikami przypisanymi do tych dwóch miejsc. Na przykład pozycja „Księgowy-A” podlega pozycji „Kierownik rachunkowości”. Ana Bowman jest przypisana do pozycji „Kierownik księgowości”, a Felix Henderson jest przypisany do pozycji „Księgowy-A”. Oznacza to, że Felix Henderson podlega Anie Bowman. 
 
-Pozycje są ważnymi elementami dla niższego poziomu hierarchii organizacji. W formularzu Pozycje można określać pozycje nadrzędne. Podczas przypisywania pracownika do pozycji podrzędnej względem innej pozycji, tworzy się relację raportowania między pracownikami przypisanymi do tych dwóch miejsc. Na przykład pozycja „Księgowy-A” podlega pozycji „Kierownik rachunkowości”. Kim Akers jest przydzielona do pozycji „Kierownika rachunkowości”, a Sanjay Patel jest przypisany do pozycja „Księgowy-A”. To znaczy, że Sanjay Patel podlega Kim Akers. 
+Jeśli organizacja korzysta z hierarchii macierzy lub innej hierarchii niestandardowej, można ustawić typy hierarchii pozycji i dodawać relacje raportowania do pozycji dla każdego konfigurowanego typu hierarchii. Na przykład Olivia Wilson jest kierownikiem głównym w Adventure Works i jest przypisana do pozycji „Kierownik główny”. Olivia zarządza rozwojem produktu, który służy do czyszczenia widżetów. Olivia potrzebuje księgowego do pomocy w finansach rozwoju produktu. W związku z tym prosi Felix Henderson, by był jej księgowym. Felix podlega bezpośrednio Anie Bowman, ale współpracuje również z Olivią Wilson nad jego pracą związaną z finansami rozwoju narzędzia do czyszczenia widgetów. 
 
-Jeśli organizacja korzysta z hierarchii macierzy lub innej hierarchii niestandardowej, można ustawić typy hierarchii pozycji i dodawać relacje raportowania do pozycji dla każdego konfigurowanego typu hierarchii. Na przykład Lori Penor jest kierownikiem głównym w Adventure Works i jest przypisana do pozycji „Kierownik główny”. Zarządza rozwojem produktu służącego do czyszczenia widżetów. Lori chce, aby księgowy pomagał przy finansach podczas opracowywania produktu. W związku z tym prosi Sanjaya Patela, by był jej księgowym. Sanjay podlega bezpośrednio Kim Akers i jednocześnie współpracuje z Lori Penor przy finansowaniu programu do czyszczenia widżetów. 
-
-W poprzednim przykładzie wykonaliśmy następujące zadania w celu skonfigurowania relacji roboczej między Sanjay Patel i Lori Penor:
+W poprzednim przykładzie wykonaliśmy następujące zadania w celu skonfigurowania relacji roboczej między Felix Henderson i Ana Bowman:
 1.  Utworzyliśmy niestandardowy typ pozycji o nazwie „Widżet”, by stworzyć hierarchię obejmującą pozycje dla osób pracujących przy projekcie programu do czyszczenia widżetów.
 2.  Przypisaliśmy pozycję Kierownika głównego jako nadrzędne względem pozycji Księgowego-A w hierarchii Widżet.
 
-Hierarchia pozycji służy do wyświetlania struktury relacji służbowych pozycji. Jeśli masz wiele hierarchii pozycji, można wyświetlić hierarchię dla każdego typu hierarchii w hierarchii pozycji. Można też wyszukiwać pozycje według identyfikatora lub nazwy pracownika, który jest przypisany do pozycji. Hierarchia pozycji jest hierarchią organizacyjną.
+Strona **Hierarchia pozycji** służy do wyświetlania struktury relacji służbowych pozycji. Jeśli masz wiele hierarchii pozycji, można wyświetlić hierarchię dla każdego typu hierarchii w **hierarchii pozycji**. Można też wyszukiwać pozycje według identyfikatora lub nazwy pracownika, który jest przypisany do pozycji. **Hierarchia pozycji** jest hierarchią organizacyjną.
 
 ## <a name="date-effective-records"></a>Rekordy efektywne dat
 Dla niektórych rekordów można określić przyszłe zmiany w rekordzie. Następujące informacje są uzależnione od dat obowiązywania.
@@ -155,13 +151,5 @@ Dla niektórych rekordów można określić przyszłe zmiany w rekordzie. Nastę
 </tr>
 </tbody>
 </table>
-
-Można modyfikować informacje wymienione w poprzedniej tabeli dla pozycji lub zadania i określić datę, kiedy modyfikacja pozycji lub zadania ma zacząć obowiązywać. Na przykład pozycja może być przypisana tylko do jednego pracownika, ale Sanjay Patel, który jest przypisany do stanowiska Księgowy-A, odchodzi za dwa tygodnie. Joe Healy zastąpi Sanjaya Patela, gdy Sanjay odejdzie. Mimo że Sanjay jest nadal przypisany do pozycji, Joe Healy może zostać przypisany do tej samej pozycji w taki sposób, by przypisanie zaczęło obowiązywać dopiero po odejściu Sanjaya z firmy.
-
-
-
-
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

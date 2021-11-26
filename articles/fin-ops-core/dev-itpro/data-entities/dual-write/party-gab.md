@@ -5,16 +5,16 @@ author: RamaKrishnamoorthy
 ms.date: 08/11/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: da5ca16ed87108f8046348c831d37085f6f780d7
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 127b4092ad3c5e8737aff43f503e0a8f36ff1ec8
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386692"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781351"
 ---
 # <a name="party-and-global-address-book"></a>Książka adresowa strony i globalna książka adresowa
 
@@ -30,7 +30,7 @@ Strona jest osobą lub organizacją zaangażowaną w działalność. Koncepcja s
 
 + **Pracownik** — pracownik etatowy. Przykładem jest pracownik etatowy firmy Contoso.
 + **Dostawca** — odnosi się do organizacji dostawcy lub jedynego właściciela, który dostarcza towary lub usługi firmie. Jeśli na przykład firma Fabrikam sprzedaje materiały do firmy Contoso, Fabrikam jest dostawcą Contoso.
-+ **Osoba kontaktowa** — osoba kontaktowa. Na przykład jeśli firma Contoso kupuje materiały eksploatacyjne od firmy Fabrikam, pracownicy firmy Contoso kontaktują się z osobą kontaktową w firmie Fabrikam.
++ **Osoba kontaktowa** — osoba kontaktowa. Na przykład jeśli firma Contoso kupuje materiały eksploatacyjne od firmy Fabrikam, pracownik firmy Contoso skontaktuje się z osobą kontaktową w firmie Fabrikam.
 + **Odbiorca** — to osoba lub firma, która kupuje różne produkty w firmie. Jeśli na przykład firma Contoso kupuje materiały od firmy Fabrikam, to firma Contoso jest klientem firmy Fabrikam.
 
 Model strony jest często używany do reprezentowania średnich i złożonych relacji między organizacjami i osobami, zwłaszcza w przypadku, gdy strona pełni więcej niż jedną rolę. Oto kilka często występujących przykładów:

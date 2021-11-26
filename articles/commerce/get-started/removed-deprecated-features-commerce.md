@@ -44,7 +44,7 @@ Ustawienie **obsługi nakładających się rabatów** na stronie **Parametry com
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | <p>Ustawienie **obsługi nakładających się rabatów** w parametrach Commerce określa sposób wyszukiwania i określania optymalnej kombinacji nakładających się rabatów. Obecnie dostępne są trzy opcje:<p><ul><li> **Najlepsza wydajność** — w tej opcji są używane zaawansowane algorytmy heurystyczne oraz metoda [klasyfikacji wartości marginalnej](../optimal-combination-overlapping-discounts.md) w celu ustalania priorytetów, oceniania i ustalania najlepszych kombinacji rabatów na czas.</li><li>**Obliczanie bilansowe** — w bieżącej podstawie kodu ta opcja działa tak samo jak opcja **Najlepsza wydajność**. W związku z tym jest to zasadniczo zduplikowana opcja.</li><li>**Wyczerpujące obliczenia** — w tej opcji jest używany stary algorytm, który obejmuje wszystkie możliwe kombinacje rabatów podczas obliczania ceny. W przypadku zamówień o dużych wierszach i ilościach ta opcja może powodować problemy z wydajnością.</li></ul><p>Aby uprościć konfigurację, zwiększyć wydajność i zmniejszyć liczbę zdarzeń spowodowanych starym algorytmem, całkowicie usuniemy ustawienie **obsługi nakładających się rabatów** i zaktualizujemy wewnętrzną logikę aparatu cenowego Commerce, tak aby teraz był używany tylko zaawansowany algorytm (tj. algorytm używany przez opcję **Najlepsza wydajność**).</p> |
-| **Zamieniona przez inną funkcję?**   | Nr Zaleca się, aby przed usunięciem tej funkcji organizacje, które korzystają z opcji **Obliczanie bilansowe** lub **Wyczerpująca obliczanie**, przełączyły się na opcję **Wyczerpujące obliczenia**. |
+| **Zamieniona przez inną funkcję?**   | Nie Zaleca się, aby przed usunięciem tej funkcji organizacje, które korzystają z opcji **Obliczanie bilansowe** lub **Wyczerpująca obliczanie**, przełączyły się na opcję **Wyczerpujące obliczenia**. |
 | **Powiązane obszary produktów**         | Ceny i rabaty |
 | **Opcja wdrażania**              | Wszystko |
 | **Stan**                         | Z dniem 10.0.21 ustawienie **obsługi nakładających się rabatów** zostanie usunięte z parametrów Commerce w październiku 2022 roku. |
@@ -101,7 +101,7 @@ Opracowywania rozszerzenia POS przy użyciu ModernPos.sln, CloudPOs.sln, POS.Ext
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Począwszy od tego wydania, w formularzu **Parametry harmonogramu Commerce** w centrali usługi Dynamics 365, pole **Interwał generowania pełnego zestawu danych** w dniach będzie przestarzałe. Począwszy od tej wersji, pole zostanie wizualnie usunięte, aby nie można było edytować wartości. Pozostanie to jako wartość **0**. |
-| **Zamieniona przez inną funkcję?**   | Nr |
+| **Zamieniona przez inną funkcję?**   | Nie |
 | **Powiązane obszary produktów**         | Dynamics 365 Commerce |
 | **Opcja wdrażania**              | Wszyscy|
 | **Stan**                         | Wycofane. Nie należy używać tego pola ani zmieniać jego wartości.|

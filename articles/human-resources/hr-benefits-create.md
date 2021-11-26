@@ -1,8 +1,8 @@
 ---
 title: Utwórz nowe świadczenie
 description: To zadanie pokazuje sposób tworzenia elementów świadczenia, które będą używane podczas tworzenia nowego świadczenia.
-author: andreabichsel
-ms.date: 02/03/2020
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: HcmBenefitElementSetup, HcmBenefit, HcmBenefitNewBenefit, HcmBen
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: 6296a7b3bfd802230ccf2fc8166c46be9e5227d93ae8dac77f75b09b15507e26
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0d180ecd9b2f199e8bd85fb5e1e88ce550458bc0
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764939"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771466"
 ---
 # <a name="create-a-new-benefit"></a>Utwórz nowe świadczenie
 
@@ -28,30 +28,30 @@ To zadanie pokazuje sposób tworzenia elementów świadczenia, które będą uż
 
 
 ## <a name="create-benefit-elements"></a>Tworzenie elementów świadczenia
-1. Wybierz kolejno opcje Zasoby ludzkie > Świadczenia > Ustawienia > Elementy świadczenia.
-2. Kliknij przycisk Nowy.
-3. W polu Typ nadaj nazwę typowi świadczenia, które tworzysz.
-4. Wypełnij pole Opis.
-5. W polu Rejestrowanie współbieżne wybierz opcję.
-    * Aby ograniczyć pracownikom możliwość rejestracji w wielu planach medycznych, zaznacz opcję Jedna rejestracja na typ.  
-6. W polu Kategoria listy płac wybierz opcję.
-7. Kliknij kartę Plany.
-8. Kliknij przycisk Nowy.
-9. W polu Plan wpisz wartość.
-10. Wypełnij pole Opis.
-11. W polu Typ wprowadź lub wybierz wartość.
-12. W polu Wpływ na listę płac wybierz opcję.
-13. Kliknij przycisk Zapisz.
+
+1. Wybierz kolejno opcje **Zasoby ludzkie \> Świadczenia \> Ustawienia \> Elementy świadczenia**.
+2. Wybierz pozycję **Nowy**.
+3. W polu **Typ** nadaj nazwę typowi świadczenia, które tworzysz.
+4. W polu **Opis** wprowadź lub wybierz wartość.
+5. W polu **Rejestrowanie współbieżne** wybierz opcję.
+
+    Aby ograniczyć pracownikom możliwość rejestracji w wielu planach medycznych, zaznacz opcję **Jedna rejestracja na typ**.
+
+6. W polu **Kategoria listy płac** wybierz opcję.
+7. Na karcie **Plany** wybierz opcję **nowa**.
+8. Wprowadź wartość w polu **Plan**.
+9. W polu **Opis** wprowadź lub wybierz wartość.
+10. W polu **Typ** wprowadź lub wybierz wartość.
+11. W polu **Wpływ na listę płac** wybierz opcję.
+12. Wybierz opcję **Zapisz**.
 
 ## <a name="create-a-benefit"></a>Tworzenie świadczenia
-1. Zamknij stronę.
-2. Wybierz kolejno opcje Zasoby ludzkie > Świadczenia > Świadczenia.
-3. Kliknij przycisk Nowy, aby otworzyć rozwijane okno dialogowe.
-4. W polu Plan wprowadź lub wybierz wartość.
-5. W polu Opcja wprowadź lub wybierz wartość.
-6. W polu Data wprowadzenia wprowadź datę i godzinę.
-7. Kliknij przycisk Utwórz świadczenie.
 
-
+1. Wybierz kolejno opcje **Zasoby ludzkie \> Świadczenia \> Świadczenia**.
+2. Wybierz pozycję **Nowy**.
+3. W rozwijanym menu w polu **Plan** wpisz lub wybierz wartość.
+4. W polu **Opcja** wprowadź lub wybierz wartość.
+5. W polu **Data wprowadzenia** wprowadź datę i godzinę.
+6. Wybierz **Utwórz świadczenie**.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

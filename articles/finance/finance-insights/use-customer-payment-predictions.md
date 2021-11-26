@@ -2,7 +2,7 @@
 title: Korzystanie z prognoz płatności odbiorcy
 description: Ten temat omawia wymagania wstępne i ogólne czynności, które są niezbędne do korzystania z wersji próbnej modułu Szczegółowe dane finansowe.
 author: ShivamPandey-msft
-ms.date: 07/17/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,33 +15,29 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 156136508c5465dc9351434251afc3bbdb9c6052
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 0606118007c01fc21c2c61d2128a7ec014617fcc
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386297"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752791"
 ---
 # <a name="use-customer-payment-predictions"></a>Korzystanie z prognoz płatności odbiorcy
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 W tym temacie opisano sposób korzystania z funkcji Prognozy płatności odbiorcy. Przed użyciem tej funkcji upewnij się, że wykonano dla niej czynności konfiguracyjne. Aby uzyskać więcej informacji, zobacz [Włączanie prognoz płatności odbiorcy](enable-cust-paymnt-prediction.md).
 
-Przewidywania płatności od odbiorców można przeglądać w obszarze roboczym **Zarządzanie kredytami i windykacjami odbiorców** oraz na dwóch nowych stronach listy: **Prognozy płatności za poszczególne transakcje** i **Prognozowanie płatności od poszczególnych odbiorców**.
+Przewidywania płatności od odbiorców można przeglądać w obszarze roboczym **Zarządzanie kredytami i windykacjami odbiorców** oraz na dwóch nowych stronach listy: **Przewidywania płatności transakcji** i **Prognozy płatności odbiorcy**.
 
 ### <a name="manage-customer-credit-and-collections-workspace"></a>Obszar roboczy Zarządzanie kredytami i windykacjami odbiorców
 
-Obszar roboczy **Zarządzanie kredytami i windykacjami odbiorców** zawiera dwa nowe kafelki, **Prognozowanie płatności za poszczególne transakcje** i **Odbiorcy z przewidywanymi wysokimi saldami opóźnionymi**.
+Obszar roboczy **Zarządzanie kredytami i windykacjami odbiorców** zawiera dwa nowe kafelki, **Przewidywania płatności transakcji** i **Prognozy płatności odbiorcy**.
 
-- Kafelek **Prognozowanie płatności za poszczególne transakcje** pokazuje liczbę otwartych transakcji z odbiorcami, które w przedziale **Na czas** mają prawdopodobieństwo zapłaty niższe niż 50 procent. Można wybrać ten kafelek, aby otworzyć stronę listy **Prognozy płatności za poszczególne transakcje**.
-- Kafelek **Odbiorcy z przewidywanymi wysokimi saldami opóźnionymi** pokazuje liczbę odbiorców, dla których przewiduje się, że ponad połowa (50 procent) salda zostanie zapłacone z opóźnieniem i/lub dużym opóźnieniem. Można wybrać ten kafelek, aby otworzyć stronę listy **Prognozowanie płatności od poszczególnych odbiorców**.
+### <a name="transaction-payment-predictions-list-page"></a>Strona z listą prognoz płatności transakcji
 
-[![Obszar roboczy Zarządzanie kredytami i windykacjami odbiorców.](./media/manage-customer-credit-collections.png)](./media/manage-customer-credit-collections.png)
-
-### <a name="payment-predictions-per-transaction-list-page"></a>Strona listy Prognozy płatności za poszczególne transakcje
-
-Na stronie listy **Prognozy płatności za poszczególne transakcje** można wyświetlić prawdopodobieństwo płatności dla otwartych transakcji w przedziałach **Na czas**, **Opóźnione** i **Bardzo opóźnione**. Dla każdej transakcji w siatce kolumna **Prawdopodobieństwo zapłaty na czas** pokazuje prawdopodobieństwo, że faktura zostanie zapłacona nie później niż w wyznaczonym terminie. Jeśli prawdopodobieństwo zapłaty na czas jest mniejsze niż 50 procent, obok wartości procentowej w kolumnie **Prawdopodobieństwo zapłaty na czas** pojawi się czerwone kółko, które wskazuje na ryzyko opóźnienia płatności.
+Na stronie listy **Przewidywania płatności transakcji** można wyświetlić prawdopodobieństwo płatności dla otwartych transakcji w przedziałach **Na czas**, **Opóźnione** i **Bardzo opóźnione**. Dla każdej transakcji w siatce kolumna **Prawdopodobieństwo zapłaty na czas** pokazuje prawdopodobieństwo, że faktura zostanie zapłacona nie później niż w wyznaczonym terminie. Jeśli prawdopodobieństwo zapłaty na czas jest mniejsze niż 50 procent, obok wartości procentowej w kolumnie **Prawdopodobieństwo zapłaty na czas** pojawi się czerwone kółko, które wskazuje na ryzyko opóźnienia płatności.
 
 [![Strona Prognozowanie płatności za poszczególne transakcje.](./media/payment-predictions-per-transaction.png)](./media/payment-predictions-per-transaction.png)
 
@@ -55,9 +51,9 @@ Dane znajdujące się w sekcji **Najważniejsze czynniki** oraz na skróconych k
 
 [![Graficzne wskaźniki prognoz płatności w okienku Informacje pokrewne.](./media/payment-prediction-gauges.png)](./media/payment-prediction-gauges.png)
 
-### <a name="payment-prediction-per-customer-list-page"></a>Strona listy Prognozowanie płatności od poszczególnych odbiorców
+### <a name="customer-payment-predictions-list-page"></a>Strona z listą prognoz płatności klienta
 
-Strona listy **Prognozowanie płatności od poszczególnych odbiorców** pokazuje łączne otwarte saldo oraz kwotę przewidywaną do zapłaty w przedziałach **Na czas**, **Opóźnione** i **Bardzo opóźnione**.
+Strona listy **Prognozy płatności odbiorcy** pokazuje łączne otwarte saldo oraz kwotę przewidywaną do zapłaty w przedziałach **Na czas**, **Opóźnione** i **Bardzo opóźnione**.
 
 [![Strona Prognozowanie płatności od poszczególnych odbiorców.](./media/payment-predictions-per-transaction-02.png)](./media/payment-predictions-per-transaction-02.png)
 
@@ -81,11 +77,11 @@ W tym przypadku płatności są prognozowane dla każdego przedziału w następu
 
 W sekcji **Informacje pokrewne** przy prawej krawędzi strony znajdują się bardziej szczegółowe informacje dotyczące prognoz:
 
-- Dla transakcji zaznaczonej w siatce skrócona karta **Prognozy płatności** przedstawia szczegóły prognoz płatności w przedziałach **Na czas**, **Opóźnione** i **Bardzo opóźnione**. Sekcja **Najważniejsze czynniki** przedstawia najistotniejsze czynniki, które miały wpływ na płatności. Najważniejsze czynniki są atrybutami wybranej transakcji i/lub odbiorcy w danej transakcji.
+- Dla transakcji zaznaczonej w siatce skrócona karta **Prognozy płatności** przedstawia szczegóły prognoz płatności w przedziałach **Na czas**, **Opóźnione** i **Bardzo opóźnione**.
 - Skrócona karta **Wgląd w odbiorcę** zawiera bieżącej statystyki faktury, płatności i windykacji dla odbiorcy w wybranej transakcji.
 - Na skróconej karcie **Historia odbiorcy** jest wyświetlana historia płatności od odbiorcy w przedziałach **Na czas**, **Opóźnione** i **Bardzo opóźnione**.
 
-Dane znajdujące się w sekcji **Najważniejsze czynniki** oraz na skróconych kartach **Wgląd w odbiorcę** i **Historia odbiorcy** pomagają objaśniać prognozy płatności. W ten sposób zwiększają zaufanie do trafności prognoz.
+Dane znajdujące się w sekcji **Wgląd w odbiorcę** i **Historia odbiorcy** pomagają objaśniać prognozy płatności. W ten sposób zwiększają zaufanie do trafności prognoz.
 
 ## <a name="improving-the-accuracy-of-payment-predictions"></a>Zwiększanie dokładności prognoz płatności
 
@@ -96,11 +92,5 @@ Aby wyświetlić dokładność prognoz płatności, należy wybrać kolejno opcj
 Jeśli dokładność nie jest zadowalająca, wybierz łącze **Zwiększ dokładność modelu**, aby otworzyć środowisko rozszerzenia AI Builder. W środowisku rozszerzenia AI Builder można zaznaczać i anulować zaznaczenie pól do momentu, aż wybierzesz pola, które uznasz za najistotniejsze dla dokładnego przewidywania prawdopodobieństwa zapłaty. Po zakończeniu można łatwo ponownie wytrenować model przewidywania i opublikować zmiany. Nowo wytrenowany model przewidywania będzie automatycznie wybierany na potrzeby prognozowania w rozwiązaniu Dynamics 365 Finance.
 
 [![Środowisko rozszerzenia AI Builder.](./media/ai-builder.png)](./media/ai-builder.png)
-
-## <a name="release-details"></a>Szczegóły zwolnienia
-
-Publiczna wersja zapoznawcza Finance Insights jest dostępna do wypróbowania we wdrożeniach w Stanach Zjednoczonych Ameryki, Europie i Zjednoczonym Królestwie. Firma Microsoft stopniowo zwiększa obsługę wielu regionów.
-
-Funkcje publicznej wersji zapoznawczej mogą być i powinny być włączone tylko w środowiskach piaskownicy warstwy 2. Nie można migrować ustawień i modeli AI utworzonych w środowisku piaskownicy do środowiska produkcyjnego. Aby uzyskać więcej informacji, zobacz [Uzupełniające warunki użytkowania wersji zapoznawczych Microsoft Dynamics 365](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-obaranov
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 652e6fb3f586fc873ffabf2c741e5c99216931461f159a42f08f9922e756280f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4883f8a548645436e17b933d87d4ee6330570d48
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735903"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777872"
 ---
 # <a name="schedule-wave-label-printing-during-wave"></a>Planowanie drukowania etykiety grupy czynności podczas grupy czynności
 
@@ -33,7 +33,7 @@ W przypadku korzystania z funkcji *drukowania etykiet grupy czynności opartej n
 Aby korzystać z funkcji opisanych w tym temacie, należy je włączona dla systemu. Użyj obszaru roboczego [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) włącz następujące funkcje w kolejności:
 
 1. *Drukowanie etykiety grupy czynności* – funkcja wymagana do włączenia metody przetwarzania grupy czynności na potrzeby drukowania etykiet grupy czynności.
-1. *Blokowanie pracy w całej organizacji* — wymagana funkcja zarówno do ręcznej, jak i automatycznej konfiguracji tworzenia zaplanowanych prac.
+1. *Blokowanie pracy w całej organizacji* — wymagana funkcja zarówno do ręcznej, jak i automatycznej konfiguracji tworzenia zaplanowanych prac. (W przypadku Supply Chain Management w wersji 10.0.21 ta funkcja jest obowiązkowa, więc jest domyślnie włączona i nie można jej ponownie wyłączyć).
 1. *Drukowanie etykiet grupy czynności opartych na zadaniu* — ta funkcja jest wymagana do rozdzielenia drukowania etykiet grupy czynności na oddzielny zakres transakcji.
 
 ## <a name="manually-enable-the-new-wave-step-method"></a>Ręcznie włącz nową metodę kroku grupy czynności

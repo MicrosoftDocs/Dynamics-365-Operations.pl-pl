@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-08-03
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: f4a7ee091d73e2104571ac9134a9de9bab0a7074
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 210d92b9fd962708b141b79f3634f142cca9787a
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575471"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777774"
 ---
 # <a name="purchasing-cxml-enhancements"></a>Udoskonalenia cXML dotyczące zakupów
 
@@ -28,7 +28,7 @@ Funkcja _udoskonaleń cXML dotyczących zakupów_ opiera się na [istniejącej f
 
 ## <a name="turn-on-the-purchasing-cxml-enhancements-feature"></a>Włącz funkcję ulepszeń cXML zakupów
 
-Aby włączyć tę funkcję, otwórz stronę **[Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** i wyszukaj funkcję o nazwie *Udoskonalenia cXML dotyczące zakupów*. Wybierz funkcję, a następnie wybierz **Wyłącz teraz** i włącz ją.
+Aby włączyć tę funkcję, otwórz stronę **[Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** i wyszukaj funkcję o nazwie *Udoskonalenia cXML dotyczące zakupów*. Wybierz funkcję, a następnie wybierz **Wyłącz teraz** i włącz ją. (Od wersji 10.0.21 Supply Chain Management version ta funkcja jest domyślnie włączona)
 
 Po włączeniu tej funkcji należy skonfigurować ustawienia w następujących trzech obszarach:
 

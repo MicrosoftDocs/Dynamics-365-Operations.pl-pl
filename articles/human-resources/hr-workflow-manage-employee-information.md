@@ -1,8 +1,8 @@
 ---
 title: Używanie przepływów pracy do zarządzania informacjami pracowników etatowych
-description: W tym artykule wyjaśniono, jak za pomocą funkcji przepływów pracy dostępnych w module Zasoby ludzkie zarządzać informacjami o pracownikach. Można na przykład skojarzyć przepływ pracy ze stanowiskiem oraz skonfigurować przepływ pracy zatwierdzania, który jest uruchamiany, gdy pracownicy zmodyfikuje swój rekord.
-author: andreabichsel
-ms.date: 06/20/2017
+description: W tym temacie wyjaśniono, jak używać przepływów pracy do zarządzania informacjami o pracownikach.
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,27 +11,27 @@ ms.search.scope: Human Resources
 ms.custom: 269074
 ms.assetid: 426c6127-42ee-4163-8dd0-b2867f95581d
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9677d4b09246eec41dc4006c3617d4359b103f930d8289fad399d638203a4b81
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 18863ad12cc3b5ee328184da5ffb35e7f5958b52
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759678"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771491"
 ---
 # <a name="use-workflows-to-manage-employee-information"></a>Używanie przepływów pracy do zarządzania informacjami pracowników etatowych
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-W tym artykule wyjaśniono, jak za pomocą funkcji przepływów pracy dostępnych w module Zasoby ludzkie zarządzać informacjami o pracownikach. Można na przykład skojarzyć przepływ pracy ze stanowiskiem oraz skonfigurować przepływ pracy zatwierdzania, który jest uruchamiany, gdy pracownicy zmodyfikuje swój rekord.
+W tym temacie wyjaśniono, jak za pomocą funkcji przepływów pracy dostępnych w module Zasoby ludzkie zarządzać informacjami o pracownikach. Można na przykład skojarzyć przepływ pracy ze stanowiskiem oraz skonfigurować przepływ pracy zatwierdzania, który jest uruchamiany, gdy pracownicy zmodyfikuje swój rekord.
 
-Funkcjonalność przepływów pracy zawarta w module Zasoby ludzkie oferuje wiele przepływów pracy do zarządzania działaniami dotyczącymi zasobów ludzkich. Ponadto są dostępne liczne opcje umożliwiające modyfikowanie konkretnych przepływów pracy i ich kojarzenie z hierarchią raportowania. Dostępne są przepływy pracy pomagające zarządzać zmianami w kilku standardowych typach informacji o pracownikach. Przepływ pracy można skojarzyć ze stanowiskiem. Następnie jeśli pracownicy zmodyfikują swoje rekordy pracowników, będzie uruchamiany przepływ pracy, który wymaga zatwierdzenia, zanim nowe informacje zostaną zapisane. Przepływy pracy są wstępnie zdefiniowane dla następujących typów informacji, aby ułatwić efektywne zarządzanie zmianami i zachować rzetelność danych pracowników:
+Funkcjonalność przepływów pracy zawarta w module Zasoby ludzkie oferuje wiele przepływów pracy do zarządzania działaniami dotyczącymi zasobów ludzkich. Ponadto są dostępne liczne opcje umożliwiające modyfikowanie konkretnych przepływów pracy i ich kojarzenie z hierarchią raportowania. Dostępne są przepływy pracy pomagające zarządzać zmianami w kilku typach informacji o pracownikach. Przepływ pracy można skojarzyć ze stanowiskiem. Następnie jeśli pracownicy zmodyfikują swoje rekordy pracowników, będzie uruchamiany przepływ pracy, który wymaga zatwierdzenia, zanim nowe informacje zostaną zapisane. Przepływy pracy są wstępnie zdefiniowane dla następujących typów informacji, aby ułatwić efektywne zarządzanie zmianami i zachować rzetelność danych pracowników:
 
 -   Numery identyfikacyjne
 -   Kursy
--   Wykształcenie
+-   Edukacja
 -   Wizerunek
 -   Wypożyczone elementy
 -   Doświadczenie zawodowe
@@ -49,19 +49,20 @@ Przepływ pracy można skojarzyć z dowolną skonfigurowaną hierarchią. Na prz
 ## <a name="configure-a-human-resources-workflow"></a>Konfigurowanie przepływu pracy dla modułu Zasoby ludzkie
 Aby skonfigurować podstawowy przepływ pracy uruchamiany w momencie, gdy pracownicy proszą o zmiany ich osobistych numerów identyfikacyjnych, wykonaj następujące czynności:
 
-1.  Na stronie **Przepływy pracy modułu Zasoby ludzkie** kliknij przycisk **Nowy**.
+1.  Na stronie **Przepływy pracy modułu Zasoby ludzkie** wybierz przycisk **Nowy**.
 2.  Na liście dostępnych przepływów pracy wybierz opcję **Numery identyfikacyjne**.
-3.  Kliknij przycisk **Uruchom**, aby uruchomić projektanta przepływów pracy, a następnie w odpowiedzi na monit wprowadź swoją nazwę użytkownika i hasło.
+3.  Wybierz **Uruchom**, aby uruchomić projektanta przepływów pracy, a następnie w odpowiedzi na monit wprowadź swoją nazwę użytkownika i hasło.
 4.  Przeciągnij element **Zatwierdź numer identyfikacyjny** z listy elementów przepływu pracy na kanwę projektanta.
 5.  Połącz element zatwierdzania z czynnościami **Rozpocznij** i **Zakończ**.
-6.  Kliknij dwukrotnie pozycję **Element zatwierdzania**, a następnie kliknij prawym przyciskiem myszy i wybierz polecenie **Właściwości**.
+6.  Kliknij dwukrotnie (lub kliknij dwukrotnie) **Zatwierdź element**, wybierz i przytrzymaj (lub kliknij prawym przyciskiem myszy), a następnie wybierz polecenie **Właściwości**.
 7.  Wykonaj następujące kroki, aby dodać instrukcje elementu pracy:
+
     1.  Wybierz opcję **Przypisanie**, a następnie w polu typu przypisania wybierz opcję **Hierarchia**.
     2.  W obszarze **Hierarchia** zaznacz opcję **Konfigurowalna hierarchia**.
     3.  Dodaj warunek zatrzymania i zamknij stronę.
 
 8.  Wykonaj wszelkie dodatkowe instrukcje (nie powinny być generowane żadne dodatkowe ostrzeżenia).
-9.  Kliknij przycisk **Zapisz i zamknij**. Gdy zostanie otwarte okno dialogowe, wybierz opcję **Uaktywnij**.
+9.  Wybierz opcję **Zapisz i zamknij**. Gdy zostanie otwarte okno dialogowe, wybierz opcję **Uaktywnij**.
 10. Wybierz kolejno opcje **Zasoby ludzkie** &gt; **Stanowiska** &gt; **Typy hierarchii stanowisk**.
 11. Wybierz opcję **Macierz**.
 12. Dodaj przepływ pracy **Numer identyfikacyjny pracownika** do listy.

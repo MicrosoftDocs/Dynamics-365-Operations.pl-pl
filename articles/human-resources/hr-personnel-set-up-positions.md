@@ -1,8 +1,8 @@
 ---
 title: Konfigurowanie stanowisk
-description: Pozycje są ważnym elementem dla niższego poziomu hierarchii organizacji.
-author: andreabichsel
-ms.date: 08/29/2018
+description: W tym temacie opisano, w jaki sposób stanowiska są ważnym elementem niższego poziomu hierarchii organizacji.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: DefaultDashboard, HcmWorkforceWorkspace, HcmWorkerActivityChart,
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 83d30b7b0945051e2f3c0ee014cff6c98a2287ad64eb565282f497393b8cf0d5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f4b9f09db8465cc55c9b0c4dc403c2c7a3647d7e
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775778"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7728725"
 ---
 # <a name="set-up-positions"></a>Konfigurowanie stanowisk
 
@@ -28,43 +28,55 @@ ms.locfileid: "6775778"
 
 Pozycje są ważnym elementem dla niższego poziomu hierarchii organizacji. Pozycja jest pojedynczym wystąpieniem zadania. Na przykład stanowisko „Menedżer ds. sprzedaży (Wschód)” jest jednym ze stanowisk skojarzonych z zadaniem „Menedżer ds. sprzedaży”. Stanowisko istnieje w dziale i może być z nim powiązany tylko jeden pracownik. W tym zadaniu pokażemy kroki wymagane do utworzenia stanowiska. Ta procedura jest przeznaczona dla specjalistów ds. zasobów ludzkich.
 
-1. Kliknij przycisk Zarządzanie pracownikami.
-2. Kliknij opcję Otwórz stanowiska.
-3. Kliknij przycisk Nowy, aby otworzyć rozwijane okno dialogowe.
-4. W polu Zadanie wprowadź lub wybierz wartość.
-    * Opis zadania, tytuł i współczynnik zatrudnienia w postaci równoważnika pełnego etatu zostaną skopiowane z wybranego zadania do stanowiska.  
+1. Wybierz **Zarządzanie personelem**.
+2. Wybierz **Otwarte stanowiska**.
+3. Wybierz przycisk **Nowy do**, aby otworzyć rozwijane okno dialogowe.
+4. W polu **Zadanie** wprowadź lub wybierz wartość.
+
+    Pola **Opis zadania**, **tytuł** i **współczynnik zatrudnienia w postaci równoważnika pełnego etatu** zostaną skopiowane z wybranego zadania do stanowiska.
+
 5. Rozstrzygnij zmiany w zadaniu.
-6. Kliknij przycisk Utwórz stanowisko.
-7. W polu Dział wprowadź lub wybierz wartość.
-8. W polu Typ stanowiska wprowadź lub wybierz wartość.
-9. W polu Region wynagrodzenia wprowadź lub wybierz wartość.
-    * Pole Region wynagrodzenia decyduje o regułach uprawnień do wynagrodzenia i budżetach stałych podwyżek, które mają zastosowanie do pracownika na tym stanowisku.  
-10. W polu Dostępne do przypisania wprowadź datę i godzinę.
-11. Rozwiń sekcję Okres ważności stanowiska.
-    * Okres ważności stanowiska jest wprowadzany domyślnie na podstawie wcześniej wprowadzonych dat aktywacji i likwidacji.  
-12. Rozwiń sekcję Stanowisko zwierzchnie.
-    * Podczas przypisywania pracownika do stanowiska podrzędnego względem innego stanowiska tworzy się relacja bezpośredniej zwierzchności między pracownikami przypisanymi do tych dwóch stanowisk.  
-13. Kliknij przycisk Nowy, aby otworzyć rozwijane okno dialogowe.
-14. W polu Przełożony wprowadź lub wybierz wartość.
-15. Kliknij Utwórz.
-16. Rozwiń sekcję Przypisanie pracownika.
-17. Rozwiń sekcję Relacje.
-    * Jeśli organizacja korzysta z hierarchii macierzy lub innej hierarchii niestandardowej, można ustawić typy hierarchii pozycji i dodawać relacje raportowania do pozycji dla każdego konfigurowanego typu hierarchii.  
-18. Kliknij przycisk Dodaj.
+6. Kliknij opcję **Utwórz pozycję**.
+7. W polu **Dział** wprowadź lub wybierz wartość.
+8. W polu **Typ stanowiska** wprowadź lub wybierz wartość.
+9. W polu **Region wynagrodzenia** wprowadź lub wybierz wartość.
+
+    Pole **Region wynagrodzenia** decyduje o regułach uprawnień do wynagrodzenia i budżetach stałych podwyżek, które mają zastosowanie do pracownika na tym stanowisku.
+
+10. W polu **Dostępne do przypisania** wprowadź datę i godzinę.
+11. Rozwiń sekcję **Okres ważności stanowiska**.
+
+    Czas trwania pozycji jest wprowadzany domyślnie na podstawie wprowadzonych wcześniej dat aktywacji i wycofania.
+
+12. Rozwiń sekcję **Stanowisko zwierzchnie**.
+
+    Podczas przypisywania pracownika do stanowiska podrzędnego względem innego stanowiska tworzy się relacja bezpośredniej zwierzchności między pracownikami przypisanymi do tych dwóch stanowisk.
+
+13. Wybierz przycisk **Nowy do**, aby otworzyć rozwijane okno dialogowe.
+14. W polu **Przełożony** wprowadź lub wybierz wartość.
+15. Wybierz opcję **Utwórz**.
+16. Rozwiń sekcję **Przypisanie pracownika**.
+17. Rozwiń sekcję **Relacje**.
+
+    Jeśli organizacja korzysta z hierarchii macierzy lub innej hierarchii niestandardowej, można ustawić typy hierarchii pozycji i dodawać relacje raportowania do pozycji dla każdego konfigurowanego typu hierarchii.
+
+18. Wybierz opcję **Dodaj**.
 19. Na liście oznacz wybrany wiersz.
-20. W polu Nazwa hierarchii wprowadź lub wybierz wartość.
-21. W polu Stanowisko zwierzchnie wprowadź lub wybierz wartość.
-22. Rozwiń sekcję Lista płac.
-23. W polu Cykl płac wprowadź lub wybierz wartość.
-24. W polu Zapłacone przez wprowadź lub wybierz wartość.
-25. W polu Zwykłe godziny (rocznie) wpisz liczbę.
-    * To jest liczba regularnie płatnych godzin, jaką oczekuje się, że pracownik na tym stanowisku przepracuje w każdym roku.  
-26. Rozwiń sekcję Związek zawodowy.
-27. Zwiń sekcję Związek zawodowy.
-28. Rozwiń sekcję Wymiary finansowe.
-29. W polu Szablon dystrybucji wprowadź lub wybierz wartość.
-30. W polu Dział wprowadź lub wybierz wartość.
-31. Kliknij przycisk Zapisz.
+20. W polu **Nazwa hierarchii** wprowadź lub wybierz wartość.
+21. W polu **Stanowisko zwierzchnie** wprowadź lub wybierz wartość.
+22. Rozwiń sekcję **Lista płac**.
+23. W polu **Cykl płac** wprowadź lub wybierz wartość.
+24. W polu **Zapłacone przez** wprowadź lub wybierz wartość.
+25. W polu **Zwykłe godziny (rocznie)** wpisz liczbę.
+
+    Czas trwania pozycji jest wprowadzany domyślnie na podstawie wprowadzonych wcześniej dat aktywacji i wycofania.
+
+26. Rozwiń sekcję **Związek zawodowy**.
+27. Zwiń sekcję **Związek zawodowy**.
+28. Rozwiń sekcję **Wymiary finansowe**.
+29. W polu **Szablon dystrybucji** wprowadź lub wybierz wartość.
+30. W polu **Dział** wprowadź lub wybierz wartość.
+31. Wybierz opcję **Zapisz**.
 
 
 

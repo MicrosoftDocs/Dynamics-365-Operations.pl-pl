@@ -34,7 +34,7 @@ To wyliczenie zawiera zestaw opcji dla typowych właściwości logicznych w jedn
 
 | Wartość | Etykiety | opis |
 | --- | --- | --- |
-| 200000000 | Nr | Nr |
+| 200000000 | Nie | Nie |
 | 200000001 | Tak | Tak. |
 
 ## <a name="see-also"></a>Informacje dodatkowe

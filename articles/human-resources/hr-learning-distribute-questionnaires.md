@@ -1,8 +1,8 @@
 ---
-title: Dystrybuowanie i planowanie kwestionariuszy
-description: W tym artykule opisano sposób dystrybuowania kwestionariuszy, które można zaprojektować tak, aby były dostępne dla osoby lub grupy osób, które będą je wypełniać.
-author: andreabichsel
-ms.date: 04/04/2017
+title: Rozprowadzanie i planowanie kwestionariuszy
+description: W tym temacie opisano sposób dystrybuowania kwestionariuszy, które można zaprojektować tak, aby były dostępne dla osoby lub grupy osób, które będą je wypełniać.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,25 +12,25 @@ ms.search.scope: Human Resources
 ms.custom: 17424
 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 60354a3e7fed5403321d5ec4440cece84b13233bef80fcd5c5f61d72e5e3aa85
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a13f699c8c0951b32f7826e8cfe8d7dcf02a7f55
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755522"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7729010"
 ---
-# <a name="distribute-and-schedule-questionnaires"></a>Dystrybuowanie i planowanie kwestionariuszy
+# <a name="distribute-and-schedule-questionnaires"></a>Rozprowadzanie i planowanie kwestionariuszy
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-W tym artykule opisano sposób dystrybuowania kwestionariuszy, które można zaprojektować tak, aby były dostępne dla osoby lub grupy osób, które będą je wypełniać. 
+W tym temacie opisano sposób dystrybuowania kwestionariuszy, które można zaprojektować tak, aby były dostępne dla osoby lub grupy osób, które będą je wypełniać. 
 
 Istnieje wiele sposobów dystrybucji kwestionariusza:
 
--   Oznacz kwestionariusz jako aktywny. Kwestionariusz będzie dostępny dla wszystkich pracowników, chyba że ustawiono grupę kwestionariusza, która nie ma do niego dostępu.
+-   Oznacz kwestionariusz jako **aktywny**. Kwestionariusz będzie dostępny dla wszystkich pracowników, chyba że ustawiono grupę kwestionariusza, która nie ma do niego dostępu.
 -   Przypisz prawa grupie kwestionariusza. Kwestionariusz będzie dostępny dla wszystkich członków wybranej grupy.
 -   Utwórz zaplanowane sesje odpowiedzi. Kwestionariusz będzie dostępny wyłącznie dla konkretnej osoby.
 -   Utwórz harmonogram. Kwestionariusz można być dostępny dla wielu osób.

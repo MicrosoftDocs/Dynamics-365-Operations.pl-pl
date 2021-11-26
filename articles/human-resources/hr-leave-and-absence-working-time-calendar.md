@@ -1,8 +1,8 @@
 ---
 title: Tworzenie kalendarza czasu pracy
 description: Tu opisano definiowanie kalendarza czasu pracy, świąt i czasu wolnego od pracy w module Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 04/01/2020
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 351e5b8fb8d8f9cc2a7c6f9e93a9095a5871a83152b83eb504d9e155ffbcb8fc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 09449b832c403b0f711c3827ad20fc5aa618fbc4
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740774"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731500"
 ---
 # <a name="create-a-working-time-calendar"></a>Tworzenie kalendarza czasu pracy
 
@@ -64,7 +64,7 @@ Skonfiguruj co najmniej jeden kalendarz czasu pracy, który pokazuje dni i godzi
 
 Czas wolny od pracy można dodawać lub zmieniać niezależnie od kalendarza czasu pracy.
 
-1. Na stronie **Administrowanie organizacją** wybierz opcję **Czas wolny od pracy**.
+1. Na stronie **Administrowanie organizacją** wybierz opcję **NON-WORK TIME**.
 
 2. Kliknij opcję **Nowy**, a następnie wprowadź nazwę i przedział czasu dla czasu wolnego od pracy.
 

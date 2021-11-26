@@ -2,7 +2,7 @@
 title: Personalizowanie środowiska użytkownika
 description: W tym temacie wyjaśniono, jak można spersonalizować aplikację.
 author: jasongre
-ms.date: 09/27/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1f24ff1a0730f13af6231510c8e6b3cb46fde48
-ms.sourcegitcommit: 89906aa2f18f16e622fd280433c8fc9fe74d2aec
+ms.openlocfilehash: 6256765c41ff128b067cda9107c790691c5b376a
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7581072"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777992"
 ---
 # <a name="personalize-the-user-experience"></a>Personalizowanie środowiska użytkownika
 
@@ -219,6 +219,9 @@ Jeśli zapisane widoki nie są włączone, wykonaj następujące kroki, aby skop
 ### <a name="export-and-import-views-or-personalizations"></a>Eksportowanie i importowanie widoków lub personalizacji
 
 Innym sposobem udostępniania personalizacji jest eksport i import. Pojedynczy użytkownicy lub administrator, który działa w ich imieniu, mogą użyć tej metody w celu wyeksportowania swoich personalizacji lub widoków, a następnie przekazać eksportowany plik innym użytkownikom do zaimportowania. Innym rozwiązaniem jest przekazanie ich wyeksportowanych personalizacji użytkownikowi, który ma uprawnienia administratora, a następnie użycie strony administracji **Personalizacja** w celu zastosowania pliku personalizacji jednocześnie dla wielu użytkowników.
+
+> [!IMPORTANT]
+> Personalizacja będzie się powtarzać w różnych aktualizacjach, więc ponowne importowanie wszystkich personalizacji po aktualizacji usługi lub w innym czasie jest zbędne i zdecydowanie odradzane.   
 
 #### <a name="export"></a>Eksportowanie
 

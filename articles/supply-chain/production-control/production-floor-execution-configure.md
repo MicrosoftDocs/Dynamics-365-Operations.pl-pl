@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: fa5a618527ce5a20b59902e7397000bf0796cbbb
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: f852779d43beb3a43c6921a25d393ee00dff96d1
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647196"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777968"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurowanie interfejsu wykonania hal produkcyjnych
 
@@ -39,7 +39,7 @@ Sam interfejs wykonywania hal produkcyjnych, a kilka opcjonalnych ustawień opis
 
 ### <a name="the-production-floor-execution-interface"></a>Interfejs wykonania hal produkcyjnych
 
-To jest główna funkcja opisana w tym temacie. Dodaje do systemu interfejs wykonawczy hali produkcyjnej. Aby ją włączyć, włącz następujące funkcje w [Zarządzaniu funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+To jest główna funkcja opisana w tym temacie. Od wersji 10.0.21 Supply Chain Management version funkcja jest domyślnie włączona. Dodaje do systemu interfejs wykonawczy hali produkcyjnej. Aby ją włączyć, włącz następujące funkcje w [Zarządzaniu funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - Uruchomienie hali produkcyjnej
 
@@ -47,19 +47,19 @@ To jest główna funkcja opisana w tym temacie. Dodaje do systemu interfejs wyko
 
 Te funkcje sprawiają, że funkcjonalność numeru identyfikacyjnego jest dostępna dla interfejsu uruchomienia hali produkcyjnej. Jeżeli chcesz z nich skorzystać, włącz następujące funkcje w module [zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (w tej kolejności):
 
-1. Numer identyfikacyjny do zgłoszenia wyrobów gotowych został dodany do urządzenia karty zadań
+1. Numer identyfikacyjny do zgłoszenia jako gotowy dodany do urządzenia karty zadań (na podstawie wersji 10.0.21 Supply Chain Management, ta funkcja jest domyślnie włączona)
 1. Włącz automatyczną generację numeru identyfikacyjnego podczas zgłaszania wyrobów gotowych w urządzeniu karty zadań
 
 ### <a name="print-labels"></a>Drukuj etykiety
 
 Te funkcje sprawiają, że funkcjonalność drukowania etykiet jest dostępna dla interfejsu uruchomienia hali produkcyjnej. Jeżeli chcesz z nich skorzystać, włącz następujące funkcje w module [zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (w tej kolejności):
 
-1. Numer identyfikacyjny do zgłoszenia wyrobów gotowych został dodany do urządzenia karty zadań
+1. Numer identyfikacyjny do zgłoszenia jako gotowy dodany do urządzenia karty zadań (na podstawie wersji 10.0.21 Supply Chain Management, ta funkcja jest domyślnie włączona)
 1. Drukowanie etykiety z menu Urządzenie karty zadań
 
 ### <a name="allow-locking-the-touch-screen"></a>Zezwalaj na blokowanie ekranu dotykowego
 
-Ta funkcja dodaje przycisk do interfejsu modułu uruchomienie hali produkcyjnej, który umożliwia pracownikom wypróbowanie ekranu dotykowego. Jeżeli chcesz z niej skorzystać, włącz następujące funkcje w [Zarządzaniu funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Od wersji 10.0.21 Supply Chain Management version ta funkcja jest domyślnie włączona. Ta funkcja dodaje przycisk do interfejsu modułu uruchomienie hali produkcyjnej, który umożliwia pracownikom wypróbowanie ekranu dotykowego. Jeśli chcesz z niego skorzystać, upewnij się, że poniższa funkcja jest włączona w [Zarządzaniu funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - Funkcja umożliwiająca blokowanie urządzenie karty zadań i terminalu karty zadań w celu ich wyczyszczenia
 

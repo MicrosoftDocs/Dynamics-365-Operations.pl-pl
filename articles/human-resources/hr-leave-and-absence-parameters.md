@@ -1,8 +1,8 @@
 ---
 title: Konfigurowanie parametrów urlopów i nieobecności
-description: W programie Dynamics 365 Human Resources można definiować parametry urlopów i nieobecności.
-author: andreabichsel
-ms.date: 11/02/2020
+description: W tym temacie opisano sposób definiowania parametrów zasobów ludzkich dla urlopów i nieobecności w Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ab4b2b3adefa388acfadc77c7b25a6b47d01571f0e58f6ab81101e25d1b548e6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 59d89c4b22d71057fd3b398c91e1fbf04112e4a9
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777966"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7728864"
 ---
 # <a name="configure-leave-and-absence-parameters"></a>Konfigurowanie parametrów urlopów i nieobecności
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Przed skonfigurowaniem urlopów i nieobecności w module Dynamics 365 Human Resources dobrze jest sprawdzić ustawienia wszystkich powiązanych parametrów tego modułu, w tym takich jak:
+Przed skonfigurowaniem planów urlopów i nieobecności w Dynamics 365 Human Resources, warto zweryfikować ustawienia wszystkich powiązanych **Parametrów zasobów ludzkich**, w tym:
 
 - Numeracja wniosków urlopowych
 - Ustawienia rozporządzenia dotyczącego zwolnień chorobowych i rodzinnych (FMLA)
@@ -74,7 +74,7 @@ Przed skonfigurowaniem urlopów i nieobecności w module Dynamics 365 Human Reso
 
     - Umożliwia wybranie opcji **Obliczanie salda** w celu wyświetlenia widoku sald na dzień dzisiejszy lub w okresie naliczania. Wybranie **Saldo na dzień dzisiejszy** spowoduje wyświetlenie sumy wszystkich naliczeń, korekt i wniosków na dzień dzisiejszy. Wybranie **Saldo na okres naliczania** spowoduje wyświetlenie sumy wszystkich naliczeń, korekt i żądań podczas okresu naliczania zdefiniowanego przez częstotliwość w planie urlopu. 
 
-    - Umożliwia ustawienie godziny rozpoczęcia zadania wsadowego przeniesienia na następny okres.  
+    - Umożliwia ustawienie **godziny rozpoczęcia** zadania wsadowego **przeniesienia na następny okres**.  
     
     - Wybierz **Tak** w polu **Umożliw pracownikom zakup urlopu** oraz **Umożliw pracownikom sprzedaż urlopu**. Jeśli wybierzesz opcję **Tak** dla tych opcji, możesz utworzyć zasady kupna i sprzedaży, a następnie umożliwić pracownikom przesyłanie próśb dot. kupna i sprzedaży urlopu.
 

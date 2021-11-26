@@ -128,7 +128,7 @@ Większość systemów źródłowych może udostępnić dane zgodne z co najmnie
 |---|---|---|---|
 | Elementy członkowskie wymiaru składnika kosztu  |  Tak | Tak  | Tak  |
 |  Elementy członkowskie wymiaru obiektu kosztów |  Tak | Tak  | Tak  |
-|  Elementy członkowskie wymiaru statystycznego | Tak  | Nr  | Nr  |
+|  Elementy członkowskie wymiaru statystycznego | Tak  | Nie  | Nie  |
 |  Księga główna | Tak  | Tak  | Tak  |
 |  Wpisy budżetu  | Tak  | Tak  | Tak  |
 |  Miary statystyczne | Tak  | Tak  | Tak  |

@@ -2,7 +2,7 @@
 title: Konfigurowanie fakturowania elektronicznego w usługach Regulatory Configuration Services (RCS)
 description: W tym temacie wyjaśniono, jak skonfigurować Fakturowanie elektroniczne w Dynamics 365 Regulatory Configuration Services (RCS).
 author: gionoder
-ms.date: 07/29/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 98ba40da7b365e46e1c624ba70c7dc048144e2c7137e8fd8eb5abe348028ce35
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 640244612a2a553ec09661635787cb7f8694283b
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757981"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779677"
 ---
 # <a name="configure-electronic-invoicing-in-regulatory-configuration-services-rcs"></a>Konfigurowanie fakturowania elektronicznego w usługach Regulatory Configuration Services (RCS)
 
@@ -73,6 +73,7 @@ W poniższej tabeli przedstawiono funkcje fakturowania elektronicznego, które s
 | Hiszpania          | Hiszpańska faktura elektroniczna (ES)      | Faktury sprzedaży i faktury za projekty |
 | Europa         | Faktura elektroniczna PEPPOL            | Faktury sprzedaży PEPPOL i faktury za projekty |
 | Europa         | Faktura sprzedawcy PEPPOL                | PEPPOL import faktur dostawców |
+| Arabia Saudyjska   | Faktury elektroniczne dla Arabii Saudyjskiej (SA)| Faktury sprzedaży i faktury za projekty |
 
 ### <a name="preview-features"></a>Funkcje w wersji zapoznawczej
 
@@ -196,6 +197,11 @@ Na poniższych listach przedstawiono konfiguracje formatów elektronicznego fakt
 
 - Faktura sprzedaży (ES)
 - Faktura projektu (ES)
+
+#### <a name="saudi-arabian-sa-electronic-invoice-sales-and-project-invoices-for-saudi-arabia"></a>Faktura elektroniczna Arabii Saudyjskiej (SA): Faktury sprzedaży i projektów dla Arabii Saudyjskiej
+
+- Faktura sprzedaży (SA)
+- Faktura projektu (SA)
 
 Poza konfiguracjami formatu ER, które są dostępne do natychmiastowego użycia z usługą Elektronicznego Fakturowania, można również tworzyć własne konfiguracje formatu ER. Jednak konfiguracje formatu, które są tworzone do użycia z funkcjami Elektronicznego Fakturowania nie obsługują bezpośredniego odniesienia do tabel Finance lub Supply Chain Management ani żadnych odpowiadających im metadanych. Obsługiwane są tylko odwołania do mapowania modelu ER.
 

@@ -118,7 +118,7 @@ Hierarchię wymiarów spełniającą wymagania sprawozdawcze organizacji można 
 
 | Nazwa hierarchii wymiarów | Wymiar    | Nazwa typu hierarchii wymiarów      | Hierarchia list dostępu |
 |--------------------------|--------------|------------------------------------|-----------------------|
-| Organizacja             | Centra kosztów | Hierarchia klasyfikacji wymiarów | Nr                    |
+| Organizacja             | Centra kosztów | Hierarchia klasyfikacji wymiarów | Nie                    |
 
 Hierarchię wymiarów dla sprawozdawczości można skonfigurować w sposób pokazany poniżej.
 

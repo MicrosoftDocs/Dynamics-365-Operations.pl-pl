@@ -1,8 +1,8 @@
 ---
 title: Konfigurowanie udostępnionych parametrów
-description: Należy skonfigurować wspólne parametry dla rekordów współużytkowanych przez wiele firm, takie jak rekordy stanowisk. W tym artykule wyjaśniono, jak skonfigurować parametry modułu Zasoby ludzkie dla różnych firm.
-author: andreabichsel
-ms.date: 06/24/2021
+description: W tym artykule wyjaśniono, jak skonfigurować parametry modułu Human resources dla różnych firm.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,30 +12,30 @@ ms.search.scope: Human Resources
 ms.custom: 51891
 ms.assetid: c7d8f58c-d78a-4035-abbf-2b0ce16109fe
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 66f57c9613ba04ebb3748699105469586c27d66131c062d1af286b24199c4be7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 039d8e2100824921d568c013fe3e113e1b091979
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723654"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7729106"
 ---
 # <a name="configure-shared-parameters"></a>Konfigurowanie udostępnionych parametrów
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Należy skonfigurować wspólne parametry dla rekordów współużytkowanych przez wiele firm, takie jak rekordy stanowisk. W tym artykule wyjaśniono, jak skonfigurować parametry modułu Zasoby ludzkie dla różnych firm.
+Należy skonfigurować wspólne parametry dla rekordów współużytkowanych przez wiele firm, takie jak rekordy **stanowisk**. W tym artykule wyjaśniono, jak skonfigurować parametry modułu Human resources dla różnych firm.
 
-Niektórych typy rekordów, np. Stanowisko, są współużytkowane w wielu firmach. Dla tych rekordów należy skonfigurować wspólne parametry. Na przykład na stronie **Udostępniane parametry zasobów ludzkich** można ustawić parametry modułu Zasoby ludzkie dla różnych firm. 
+Niektórych typy rekordów, np. **Stanowisko**, są współużytkowane w wielu firmach. Dla tych rekordów należy skonfigurować wspólne parametry. Na przykład na stronie **Udostępniane parametry Human resources** można ustawić parametry modułu Zasoby ludzkie dla różnych firm. 
 
 Na stronie **Udostępniane parametry zasobów ludzkich** parametry są pogrupowane według obszarów na podstawie ich funkcji. 
 
 ### <a name="settings"></a>Ustawienia
 Na karcie **Identyfikacja** trzeba wybrać typy identyfikacji, które reprezentują numery identyfikacyjne, które znajdują się na stronie. Identyfikację typów należy skonfigurować przed rozpoczęciem wprowadzania informacji identyfikacyjnych dla pracowników. Informacje o numerze PESEL, numerze dowodu osobistego, numerze obcego dowodu osobistego i osobistym kodzie identyfikacyjnym są obsługiwane na stronie **Typ identyfikacji**. Aby zdefiniować nowy typ identyfikacji lub sprawdzić listę istniejących typów, kliknij kolejno opcje **Zarządzanie pracownikami** &gt; **karta Linki** &gt; **Ustawienia** &gt; **Typy identyfikacji**. Można wprowadzić prosty kod i opis. 
 
-Na karcie **Sekwencje identyfikatorów** można wybrać kolejne numery używane dla następujących rekordów: numer pracownika, stanowisko, identyfikator zgłoszenia użytkownika, dokumentu I-9, kandydat, dyskusja, identyfikator świadczenia i akcja dotycząca pracowników (jeśli ten typ rekordu jest włączony). Do obsługi odwołań do sekwencji identyfikatorów i kodów służy strona listy **Sekwencje identyfikatorów**. Aby znaleźć tę stronę, użyj funkcji wyszukiwania stron. 
+Na karcie **Sekwencje identyfikatorów** można wybrać kolejne numery używane dla następujących rekordów: **numer pracownika**, **stanowisko**, **identyfikator zgłoszenia użytkownika**, **dokumentu I-9**, **kandydat**, **dyskusja**, **identyfikator świadczenia** i **akcja dotycząca pracowników** (jeśli ten typ rekordu jest włączony). Do obsługi odwołań do sekwencji identyfikatorów i kodów służy strona listy **Sekwencje identyfikatorów**. Aby znaleźć tę stronę, użyj funkcji wyszukiwania stron. 
 
 Na karcie **Stanowiska** określ, czy są dostępne nowe stanowiska do domyślnego przypisania:
 
@@ -46,7 +46,7 @@ Na karcie **Dostęp zaawansowany** można ograniczyć dostęp do niektórych inf
 
 - **Ograniczenie dostępu do informacji o pracowniku** — Włącz tę funkcję, jeśli użytkownicy powinni mieć możliwość wyświetlania informacji o pracownikach tylko tych podmiotów prawnych, do których mają dostęp, oraz pracowników zatrudnionych w tych podmiotach prawnych.
 
-    Po włączeniu tej funkcji należy wykonać następujące kroki, aby ustawić odpowiednie uprawnienia dla każdego użytkownika, którego widok musi być ograniczony:
+    Po wybraniu tej funkcji wykonaj następujące kroki, aby ustawić odpowiednie uprawnienia dla każdego użytkownika, którego widok musi być ograniczony:
 
     1. Na stronie **Użytkownicy** wybierz użytkownika.
     1. Umożliwia wybór roli użytkownika. Opcja **Przypisz organizacje** staje się dostępna.
@@ -57,6 +57,6 @@ Na karcie **Dostęp zaawansowany** można ograniczyć dostęp do niektórych inf
     > [!NOTE]
     > Firmy, do których użytkownik ma dostęp, muszą się dopasować do wszystkich ról użytkownika.
 
-- **Włącz widok wynagrodzeń między firmami** — wynagrodzenie dla pracowników jest przypisywane do firmy zatrudnienia. Czasami pracownik może być zatrudniony jednocześnie w wielu podmiotach prawnych. Gdy ta funkcja jest włączona, wynagrodzenie dla każdego podmiotu prawnego będzie wyświetlane w Samoobsługi pracowników i samoobsługi menedżera bez konieczności zmiany podmiotów prawnych. 
+- **Włącz widok wynagrodzeń między firmami** — wynagrodzenie dla pracowników jest przypisywane do firmy zatrudnienia. Czasami pracownik może być zatrudniony jednocześnie w wielu podmiotach prawnych. Gdy ta funkcja jest włączona, wynagrodzenie dla każdego podmiotu prawnego będzie wyświetlane w **Samoobsługi pracowników** i **samoobsługi menedżera** bez konieczności zmiany podmiotów prawnych. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

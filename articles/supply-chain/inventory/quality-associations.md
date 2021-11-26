@@ -344,7 +344,7 @@ Jeśli w obszarze produkcji w polu **Typ zdarzenia** zostanie ustawiona wartoś�
 </tr>
 <tr>
 <td>Stała ilość: 1</td>
-<td>Nr</td>
+<td>Nie</td>
 <td>
 <p>Numer partii: Nie</p>
 <p>Numer seryjny: Nie</p>
@@ -399,7 +399,7 @@ Jeśli w obszarze produkcji w polu **Typ zdarzenia** zostanie ustawiona wartoś�
 </tr>
 <tr>
 <td>Stała ilość: 2</td>
-<td>Nr</td>
+<td>Nie</td>
 <td>
 <p>Numer partii: Tak</p>
 <p>Numer seryjny: Tak</p>

@@ -43,7 +43,7 @@ Na przykład typowy produkt w postaci telewizora może mieć następujące atryb
 |            | Wejście kompozytowe         | 0–10                        | 2             |
 |            | Wejścia komponentów         | 0–10                        | 1             |
 | LCD        | 3D Ready                 | Tak lub Nie                   | Tak           |
-|            | Obsługa 3D               | Tak lub Nie                   | Nr            |
+|            | Obsługa 3D               | Tak lub Nie                   | Nie            |
 | Plazmowy     | Minimalna temperatura      | 32–110 stopni              | 32            |
 |            | Maksymalna temperatura        | 32–110 stopni              | 100           |
 | Projekcyjny | Gwarancja na lampę kineskopową | 6, 12 lub 18 miesięcy         | 12            |

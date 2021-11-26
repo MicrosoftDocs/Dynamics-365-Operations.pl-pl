@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 986abfaef81474571de7db179253c4d76f65d4bec180fa9f355f3218ddbb96ba
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4ceedd8b42383dc1334f472ba754ac3e18261b9d
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746826"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777822"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Tworzenie zamówień przeniesienia z aplikacji magazynu
 
@@ -36,7 +36,7 @@ Aby móc używać tej funkcji, musi zostać włączona w systemie razem z warunk
 1. Następnie włącz funkcję *Utwórz zamówienia przeniesienia z poziomu aplikacji magazynowej*, która jest widoczna jako:
     - **Moduł** - Zarządzanie magazynem
     - **Nazwa funkcji** — tworzenie i przetwarzanie zamówień przeniesienia z aplikacji magazynowej
-1. Aby zautomatyzować przetwarzanie wydań wychodzących, należy również włączyć funkcję [Potwierdź wychodzące wysyłki z zadań wsadowych](confirm-outbound-shipments-from-batch-jobs.md). Ta funkcja jest wyświetlana jako:
+1. Aby zautomatyzować przetwarzanie wydań wychodzących, należy również włączyć funkcję [Potwierdź wychodzące wysyłki z zadań wsadowych](confirm-outbound-shipments-from-batch-jobs.md). Od wersji 10.0.21 Supply Chain Management version ta funkcja jest domyślnie włączona. Administratorzy mogą skorzystać ze strony [Zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją lub wyłączyć w razie potrzeby. W tym miejscu funkcja jest wyświetlana jako:
     - **Moduł** - Zarządzanie magazynem
     - **Nazwa funkcji** — potwierdzanie wychodzących wysyłek z zadań wsadowych
 

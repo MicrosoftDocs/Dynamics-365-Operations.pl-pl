@@ -88,9 +88,9 @@ W poniższej tabeli przedstawiono zamówienia sprzedaży, które użytkownicy na
 
 | Zamówienie sprzedaży | Administrator | Przedstawiciel klienta dla klienta&nbsp;X | Autoryzowany użytkownik: Jane | Autoryzowany użytkownik: Sam | Autoryzowany użytkownik: May |
 |---|---|---|---|---|---|
-| Klient&nbsp;X Zamawiający:&nbsp;Jane | Tak | Tak | Tak | Nr | Nr |
-| Klient&nbsp;X Zamawiający:&nbsp;Sam | Tak | Tak | Nr | Tak | Nr |
-| Klient&nbsp;Y Zamawiający:&nbsp;May | Tak | Nr | Nr | Nr | Nr |
+| Klient&nbsp;X Zamawiający:&nbsp;Jane | Tak | Tak | Tak | Nie | Nie |
+| Klient&nbsp;X Zamawiający:&nbsp;Sam | Tak | Tak | Nie | Tak | Nie |
+| Klient&nbsp;Y Zamawiający:&nbsp;May | Tak | Nie | Nie | Nie | Nie |
 
 > [!NOTE]
 > Mimo że zarówno Sam, jak i Jane są kontaktami pracującymi dla klienta X, widzą tylko złożone przez siebie zamówienia i nic więcej. Chociaż May ma zamówienie w systemie, nie widzi tego zamówienia w portalu klienta, ponieważ jest nieautoryzowanym użytkownikiem. (Dodatkowo musiała złożyć zamówienie za pośrednictwem innego kanału niż portal klienta).

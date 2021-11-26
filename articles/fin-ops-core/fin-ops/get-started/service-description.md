@@ -333,9 +333,9 @@ Firma Microsoft oferuje klientom Finance and Operations trzy plany pomocy techni
 | Przesyłanie nieograniczonej liczby zdarzeń przerwy/poprawki | Tak | Tak | Tak |
 | Dostęp 24 godziny na dobę i 7 dni w tygodniu za pośrednictwem usługi LCS | Tak | Tak | Tak |
 | Czas reakcji na zdarzenie | Mniej niż jedna godzina | Mniej niż jedna godzina | Następny dzień roboczy |
-| Godziny udzielania porad | Pule są nabywane według umowy. | Nr | Nr |
-| Dedykowany opiekun pomocy technicznej | Tak | Nr | Nr |
-| Dedykowany inżynier pomocy technicznej | Angażowanie na mocy oddzielnej umowy | Nr | Nr |
+| Godziny udzielania porad | Pule są nabywane według umowy. | Nie | Nie |
+| Dedykowany opiekun pomocy technicznej | Tak | Nie | Nie |
+| Dedykowany inżynier pomocy technicznej | Angażowanie na mocy oddzielnej umowy | Nie | Nie |
 
 Aby uzyskać więcej informacji, zobacz [Omówienie pomocy technicznej](/power-platform/admin/support-overview).
 
