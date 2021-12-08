@@ -458,6 +458,16 @@
                   href: help/language-locale.md
                 - name: 'Rozszerzanie, dostosowywanie i współpraca z pomocą'
                   href: help/contributor-guide.md
+            - name: Uwagi dotyczące wdrażania
+              items:
+                - name: Opcje wdrożenia niezależnego i w lokalnej chmurze dla rozwiązań Dynamics 365 Finance oraz Dynamics 365 Supply Chain Management
+                  href: deployment/deployment-options-geo.md
+                - name: Rozwiązania Finance i Supply Chain Management w amerykańskiej chmurze Government Community Cloud (GCC)
+                  href: deployment/us-gcc-deployment.md
+                - name: Rozwiązania Finance i Supply Chain Management obsługiwane przez firmę 21Vianet w Chinach
+                  href: deployment/china-local-deployment.md
+                - name: Aplikacje Finance and Operations we Francji
+                  href: deployment/france-local-deployment.md
         - name: Tworzenie i dostosowywanie
           items:
             - name: Opracowywanie i dostosowywanie strony głównej
@@ -1118,6 +1128,8 @@
                       href: data-entities/dual-write/party-gab-portal.md
                     - name: Uaktualnianie do modelu globalnej książki adresowej i strony
                       href: data-entities/dual-write/upgrade-party-gab.md
+                    - name: Wyświetlanie danych strony
+                      href: data-entities/dual-write/view-party.md
                     - name: Integracja uwag
                       href: data-entities/dual-write/notes-integration.md
                     - name: Odwołanie do mapowania
@@ -1584,7 +1596,7 @@
                   href: sysadmin/batch-server-overview.md
                 - name: Tworzenie zadań wsadowych
                   href: sysadmin/tasks/create-batch-job.md
-                - name: Włączanie automatycznych ponownych prób dla zadań wsadowych
+                - name: Włączanie ponownych prób partii
                   href: sysadmin/retryable-batch.md
                 - name: Kopiowanie zadania wsadowego
                   href: sysadmin/copy-batch-job.md

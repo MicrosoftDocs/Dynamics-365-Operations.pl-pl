@@ -62,10 +62,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurowanie modułu Magazynowanie dla wdrożeń lokalnych
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Aplikacje Finance and Operations obsługiwane przez firmę 21Vianet w Chinach
-                  href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Aplikacje Finance and Operations we Francji
-                  href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
             - name: Nowości i zmiany
               items:
                 - name: Nowości i zmiany w aplikacjach Finance and Operations
@@ -2147,7 +2143,7 @@
               items:
                 - name: Konfigurowanie informacji o zasobach projektu
                   href: procurement/tasks/set-up-project-resource-information.md
-                - name: Przesyłanie i zatwierdzanie budżetu projektu
+                - name: Tworzenie i przesyłanie przepływu pracy budżetu projektu
                   href: procurement/tasks/submit-approve-project-budget.md
                 - name: Przesyłanie i zatwierdzanie zmian budżetu projektu
                   href: procurement/tasks/submit-approve-project-budget-revision.md

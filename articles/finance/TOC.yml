@@ -62,10 +62,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurowanie modułu Magazynowanie dla wdrożeń lokalnych
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/finance/toc.json
-                - name: Aplikacje Finance and Operations obsługiwane przez firmę 21Vianet w Chinach
-                  href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/finance/toc.json
-                - name: Aplikacje Finance and Operations we Francji
-                  href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/finance/toc.json
             - name: Nowości i zmiany
               items:
                 - name: Nowości i zmiany w aplikacjach Finance and Operations
@@ -496,11 +492,13 @@
               href: accounts-receivable/process-collection-letters-example.md
             - name: Konfigurowanie i generowanie informacji o wiekowaniu rozrachunków z odbiorcami
               href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
-            - name: Migawka wiekowania odbiorcy
+            - name: Migawka wiekowania klienta
               href: accounts-receivable/customer-aging-snapshot.md
-            - name: Raport wiekowania dla odbiorców
+            - name: Raport wiekowania dla klientów
               href: accounts-receivable/customer-aging.md
-            - name: Tworzenie arkusza odpisów dla odbiorcy
+            - name: Przestrzeń dyskowa danych wiekowania klienta
+              href: accounts-receivable/customer-aging-data-storage.md
+            - name: Tworzenie arkusza odpisów dla klienta
               href: accounts-receivable/tasks/create-write-off-journal-customer.md
             - name: Zarządzanie notatkami zaawansowanymi
               href: localizations/emea-ita-exil-structured-notes.md
@@ -1476,6 +1474,10 @@
                           items:
                             - name: Deklaracja podatku VAT
                               href: localizations/emea-fra-VAT-declaration-preview-France.md
+                        - name: Niemcy — raportowanie
+                          items:
+                            - name: Deklaracja podatku VAT
+                              href: /localizations/emea-deu-vat-declaration-germany.md
                         - name: Holandia — raportowanie
                           items:
                             - name: Deklaracja podatku VAT
@@ -2160,11 +2162,13 @@
                       href: localizations/emea-deu-gdpdu-data-filtering.md
                 - name: Korekty amortyzacji dla dodatkowych nabyć w drugim roku
                   href: localizations/tasks/de-00002-depreciation.md
+                - name: Deklaracja podatku VAT
+                  href: localizations/emea-deu-vat-declaration-germany.md
                 - name: Elektroniczne przesyłanie deklaracji podatku VAT (ELSTER)
                   href: localizations/tasks/de-00003-electronic-transmission-elster.md
                 - name: Intrastat — Niemcy
                   href: localizations/emea-deu-intrastat.md
-                - name: Deklaracja podatku VAT dla Niemiec
+                - name: Sprawozdanie podatku VAT
                   href: localizations/emea-de-vat-declaration.md
                 - name: Raport dotyczący faktur elektronicznych odbiorcy
                   href: localizations/emea-deu-e-invoices.md

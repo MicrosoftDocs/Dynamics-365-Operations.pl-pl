@@ -74,10 +74,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
                 - name: Wskazówki dotyczące implementacji Commerce Data Exchange
                   href: dev-itpro/implementation-considerations-cdx.md
-                - name: Aplikacje Finance and Operations obsługiwane przez firmę 21Vianet w Chinach
-                  href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
-                - name: Aplikacje Finance and Operations we Francji
-                  href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
             - name: Uzyskiwanie pomocy technicznej
               href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/commerce/toc.json
             - name: Obsługa uaktualniania i wersji N-1
@@ -1274,6 +1270,8 @@
               href: set-up-rfm-analysis.md
             - name: Konfigurowanie usługi Microsoft Clarity w rozwiązaniu Dynamics 365 Commerce
               href: set-up-clarity.md
+            - name: Analizy rozwiązania Commerce (wersja zapoznawcza)
+              href: commerce-analytics.md
         - name: Globalizacja
           items:
             - name: Omówienie integracji fiskalnej dla kanału aplikacji Commerce
@@ -1412,6 +1410,10 @@
                   href: localizations/rus-fpi-sample.md
                 - name: Zarządzanie informacjami dotyczącymi klienta dla Rosji
                   href: localizations/rus-customer-information.md
+            - name: Arabia Saudyjska
+              items:
+                - name: Generowanie kodów QR i drukowanie ich na paragonach dla Arabii Saudyjskiej
+                  href: localizations/emea-sau-qr-code.md
             - name: Szwecja
               items:
                 - name: Funkcje kasy
@@ -2532,10 +2534,12 @@
                   items:
                     - name: Najlepsze wskazówki dotyczące programowania rozwiązania Dynamics 365 Commerce
                       href: e-commerce-extensibility/best-practices-dev.md
-                    - name: Zestaw online SDK do Dynamics 365 Commerce — FAQ
+                    - name: Zestaw online SDK do Dynamics 365 Commerce — często zadawane pytania
                       href: e-commerce-extensibility/sdk-faq.md
                     - name: Najlepsze wskazówki dotyczące debugowania w toku programowania rozwiązania Dynamics 365 Commerce
                       href: e-commerce-extensibility/debugging-best-practices.md
+                    - name: Testowanie stron witryny e-commerce w celu wykrywania przecieków pamięci
+                      href: e-commerce-extensibility/memory-leak-detection.md
             - name: Zestaw SDK do Retail
               items:
                 - name: Migracja do zestawu SDK do Commerce
