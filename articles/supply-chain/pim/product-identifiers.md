@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 792245e7821fe2ecb147e2b4756f3178fcdb17d1
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1a311b4a304984044a1c3bd3924c129821afbbb9
+ms.sourcegitcommit: f11ad8d7ee8a4d2ee1a1bb601622b50e14955c4a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569680"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "7825382"
 ---
 # <a name="product-identifiers"></a>Identyfikatory produktów
 
@@ -39,7 +39,7 @@ W Dynamics 365 Supply Chain Management podstawowym identyfikatorem produktu jest
 
 W wielu przypadkach numer produktu nie jest pierwotnie tworzony w Dynamics 365 Supply Chain Management. Zamiast tego jest kojarzony z produktem w systemie zarządzania cyklem życia produktu (PLM) lub systemie zarządzania danymi produktów (PDM). W takim przypadku są używane jednostki danych do importowania produktów i wariantów produktów. Supply Chain Management korzysta z numerów we wszystkich operacjach.
 
-Podczas wdrażania programu Supply Chain Management należy zwrócić szczególną uwagę na strategię numerowania produktów. Dobry system numerowania usprawnia logistykę i pomaga uniknąć błędów. Dobry identyfikator produktu zawiera maksymalnie 15 znaków. Najlepiej, aby miał nie więcej niż 10 znaków i zawierał maksymalnie 5 znaków klasyfikujących. Można również używać aliasów do szybkiego wyszukiwania. Alias jest dodatkową nazwę reprezentującą klasyfikacje produktu.
+Podczas wdrażania programu Supply Chain Management należy zwrócić szczególną uwagę na strategię numerowania produktów. Dobry system numerowania usprawnia logistykę i pomaga uniknąć błędów. Dobry identyfikator produktu powinien mieć zazwyczaj 20 znaków lub mniej, ale zalecane jest używanie mniej niż 10 znaków i nie więcej niż 5 znaków klasyfikacji. Można również używać aliasów do szybkiego wyszukiwania. Alias jest dodatkową nazwę reprezentującą klasyfikacje produktu.
 
 Jeśli jest używany Microsoft Dataverse, numer produktu w module Supply Chain Management jest także numerem produktu w formularzu Microsoft Dataverse. Warianty produktów są synchronizowane z usługą Dataverse jako odrębne produkty.
 

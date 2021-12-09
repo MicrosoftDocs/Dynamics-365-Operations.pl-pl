@@ -2,7 +2,7 @@
 title: Ustawianie wiadomości elektronicznych
 description: Ten temat zawiera informacje dotyczące konfigurowania funkcji wiadomości elektronicznych (EM).
 author: liza-golub
-ms.date: 07/07/2021
+ms.date: 11/18/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: elgolu
 ms.search.validFrom: 2021-06-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 2b62efabfae26a6cc004604e687a49bce992d78a30f0d441aa74fa5cde70e063
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a9d623c712de34afd1b38dbc6a8738ebf9613d49
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752182"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860565"
 ---
 # <a name="set-up-electronic-messages"></a>Ustawianie wiadomości elektronicznych
 
@@ -34,6 +34,7 @@ Jeśli nie importujesz pakietu jednostek danych, możesz ręcznie ustawić funkc
 - [Dodatkowe pola](#additional)
 - [Ustawienia klasy wykonywalnej](#executable)
 - [Akcje wypełniania rekordów](#populate)
+- [Wypełnianie rekordów z wielu firm](#multiple-companies-populate)
 - [Aplikacje sieci Web](#applications)
 - [Ustawienia usługi sieci Web](#settings)
 - [Akcje przetwarzania wiadomości](#actions)
@@ -139,6 +140,38 @@ Na skróconej karcie **ustawienia źródeł danych** dodaj wiersz dla każdego �
 | Firma                | To pole jest dostępne, gdy jest włączona funkcja **Kwerendy międzyfirmowe dotyczące działań wypełniania rekordów** w obszarze roboczym **Zarządzanie funkcjami**. Ta funkcja służy do konfigurowania międzyfirmowych źródeł danych dla akcji wypełniania rekordów. Dane można pobierać z wielu firm. |
 | Zapytanie użytkownika             | <p>Jeśli kwerenda zostanie skonfigurowana przez wybranie opcji **Edytuj kwerendę** nad siatką i określisz kryteria, które muszą zostać zastosowane do wybranej tabeli wzorcowej, z której są wypełniane dane, to pole wyboru jest automatycznie zaznaczone. W przeciwnym razie wszystkie rekordy są wypełniane z wybranego źródła tabeli głównej.</p><p>Gdy jest włączona funkcja **zapytań międzyfirmowych dla funkcji akcji wypełniania rekordów** w obszarze roboczym **Zarządzanie funkcjami**, a rekordy muszą być zbierane z kilku firm, dodaj wiersz dla każdej dodatkowej firmy, którą należy uwzględnić w raportowaniu. Dla każdego nowego wiersza wybierz pozycję **Edytuj kwerendę** i określ powiązane kryterium specyficzne dla firmy określonej w polu **Firma** w wierszu. Po zakończeniu siatka konfiguracji **Źródła danych** będzie zawierać wiersze dla wszystkich firm, które muszą zostać uwzględnione w raportowaniu.</p> |
 
+## <a name="populate-records-from-multiple-companies"></a><a id="multiple-companies-populate"></a>Wypełnianie rekordów z wielu firm
+
+Jeśli firma musi raportować z wielu firm w tej samej bazie danych Finance, skonfiguruj [akcja wypełniania rekordów](#populate) dla wszystkich firm, których dane muszą być uwzględniane w raportach.
+
+Aby włączyć tę możliwość w środowisku Finance, postępuj zgodnie z tymi krokami. 
+
+1. Kliknij kolejno opcje **Obszary robocze** \> **Zarządzanie funkcjami**.
+2. Znajdź i wybierz z listy **Zapytania między firmami dla akcji wypełniania rekordów**.
+3. Wybierz **Włącz teraz**. 
+
+Aby skonfigurować [akcję wypełniania rekordów](#populate) dla wielu firm, z których dane muszą być uwzględniane w raportach, należy wykonać następujące kroki.
+
+1. Przejdź do **Podatek** \> **Konfiguracja** \> **Wiadomości elektroniczne** \> **Akcje wypełniania rekordów**.
+
+    Gdy jest włączona funkcja **Zapytań międzyfirmowych dla funkcji akcji wypełniania rekordów**, siatka **ustawień źródeł danych** na stronie akcji **Akcja wypełniania rekordów** zawiera pole **Firma**. Dla istniejących rekordów, które zostały utworzone podczas ogólnej konfiguracji [akcji wypełniania rekordów](#populate), w tym polu jest przedstawiany identyfikator bieżącej firmy.
+
+2. W siatce **Ustawienia źródeł danych** dodaj wiersz dla każdej podległej osoby prawnej, która musi zostać uwzględniona w raportowaniu, i ustaw następujące pola.
+
+    | Nazwa pola             | Wartość |
+    |------------------------|-------|
+    | Nazwa                   | Wprowadź wartość tekstową, która pomoże w zrozumieniu, skąd pochodzi ten rekord. Nap przykład wprowadź **Nazwa źródła danych — oddział 1**. |
+    | Typ elementu wiadomości      | Wybierz typ elementu komunikatu, który jest wymagany do przetwarzania wiadomości elektronicznej. |
+    | Typ konta           | Określ typ konta, który jest wymagany do przetwarzania wiadomości elektronicznej. Jeśli w przetwarzaniu wiadomości elektronicznej nie ma określonych typów kont, wybierz opcję **Wszystkie**. |
+    | Nazwa tabeli głównej      | Określ nazwę tabeli głównej, która jest wymagana do przetwarzania wiadomości elektronicznej. |
+    | Pole numeru dokumentu  | Określ pole zawierające numer dokumentu w rekordach przetwarzania wiadomości elektronicznej. |
+    | Pole daty dokumentu    | Określ pole zawierające datę dokumentu w rekordach przetwarzania wiadomości elektronicznej. |
+    | Pole konta dokumentu | Określ pole zawierające konto dokumentu w rekordach przetwarzania wiadomości elektronicznej. |
+    | Firma                | Wybierz identyfikator oddziału osoby prawnej. |
+    | Zapytanie użytkownika             | To pole wyboru jest zaznaczane automatycznie podczas definiowania kryteriów przez wybranie opcji **Edytuj zapytanie**. |
+
+3. Dla każdego nowego wiersza wybierz pozycję **Edytuj zapytanie** i określ powiązane kryteria dla firmy określonej w polu **Firma** w wierszu.
+
 ## <a name="web-applications"></a><a id="applications"></a>Aplikacje sieci Web
 
 Ustawienia aplikacji sieci web umożliwiają konfigurowanie aplikacji sieci web, tak aby obsługiwała Open Authorization (OAuth) 2.0. OAuth jest otwartym standardem umożliwiającym użytkownikom przyznanie bezpiecznego delegowanego dostępu do aplikacji w ich imieniu, bez udostępniania poświadczeń dostępu. Można także przejść przez proces autoryzacji, otrzymując kod autoryzacji i token dostępu. Istnieje możliwość ustawienia aplikacji sieci web na **Podatek** \> **ustawienia** \> **wiadomości elektroniczne** \> **ustawienia aplikacji sieci Web**.
@@ -214,6 +247,7 @@ W poniższych tabelach opisano pola na stronie **Akcje przetwarzania wiadomości
 | Klasa wykonywalna                          | Wybierz istniejące ustawienie klasy wykonywalnego. To pole jest dostępne tylko dla działań typu **Poziom wykonywania elementu wiadomości** i **Poziom wykonywania elementu wiadomości**. |
 | Akcja wypełniania rekordów                   | Wybierz istniejącą akcję wypełniania rekordów. To pole jest dostępne tylko dla działań typu **Wypełnij rekordy**. |
 | Usługa sieci Web                               | Wybierz istniejącą usługę sieci web. To pole jest dostępne tylko dla działań typu **Usługa sieci Web**. |
+| Nazwa pliku do wysłania                         | Umożliwia wprowadzenie nazwy załącznika do wiadomości elektronicznej, która musi zostać wysłana przez tę akcję. Jeśli wiele załączników ma taką samą oryginalną nazwę pliku, zostanie wysłana najnowsza. Jeśli nie znaleziono załącznika o określonej oryginalnej nazwie pliku, żądanie zostanie wysłane bez zawartości. To pole jest dostępne tylko dla działań typu **Usługa sieci Web**. |
 | Nazwa pliku                                 | Określ nazwę pliku, który będzie wynikiem akcji. Ten plik może być odpowiedzią z serwera sieci web lub raportu, który zostanie wygenerowany. To pole jest dostępne tylko dla działań **usługi sieci Web** i **Wiadomość eksportu raportowania elektronicznego**. |
 | Dołącz pliki do dokumentów źródłowych          | Zaznacz to pole wyboru, aby dołączyć wygenerowane pliki do rekordów w przywoływanej tabeli głównej dla elementów EM. To pole jest dostępne tylko dla działań **Eksport raportowania elektronicznego** i **Usługi sieci Web**. |
 | Dołącz pliki z archiwum wyjściowego do elementów | Zaznacz to pole wyboru, aby wyodrębnić oddzielne pliki XML z wyjściowego pliku archiwum i dołączyć je do odpowiednich elementów wiadomości elektronicznych. To pole jest dostępne tylko dla działań typu **Eksport raportowania elektronicznego**. |

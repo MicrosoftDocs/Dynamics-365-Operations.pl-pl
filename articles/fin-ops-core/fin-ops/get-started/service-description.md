@@ -2,19 +2,19 @@
 title: Opis usługi dla aplikacji Finance and Operations
 description: Ten temat zawiera opis usługi dla aplikacji Finance and Operations.
 author: tomhig
-ms.date: 09/29/2021
+ms.date: 11/17/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: a1547f0cc6c6f705cd0e2ff6e5be751cb97b946a
-ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
+ms.openlocfilehash: 262cf00bdca63876c284be40954ca5de559b993a
+ms.sourcegitcommit: f11ad8d7ee8a4d2ee1a1bb601622b50e14955c4a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "7581823"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "7825407"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Opis usługi dla aplikacji Finance and Operations
 
@@ -50,7 +50,7 @@ Model działania aplikacji Finance and Operations wyznacza klientowi, partnerowi
 
 ### <a name="customer-activities"></a>Działania klienta
 
-Klienci pracują z partnerem i zespołem [Microsoft FastTrack](/dynamics365/fasttrack/) w strukturze [Success by Design](/dynamics365/fasttrack/success-by-design-overview) oraz korzystając z narzędzi i szablonów najlepszych praktyk dostępnych w usługach [Lifecycle Services](../../dev-itpro/lifecycle-services/lcs.md), aby zaimplementować swoje rozwiązanie. Do typowych działań należą między innymi następujące:
+Klienci pracują z partnerem i zespołem [Microsoft FastTrack](/dynamics365/fasttrack/) postępując zgodnie z [Przewodnikiem implementacji systemu Dynamics 365](https://community.dynamics.com/365/dynamics-365-fasttrack/p/dynamics365implementationguide), strukturą [Success by Design](/dynamics365/fasttrack/success-by-design-overview) oraz narzędziami i szablonami najlepszych praktyk dostępnymi w usługach [Lifecycle Services](../../dev-itpro/lifecycle-services/lcs.md), aby zaimplementować swoje rozwiązanie. Do typowych działań należą między innymi następujące:
 
 - Zarządzanie tożsamością użytkownika i zabezpieczeniami
 - Definiowanie, opracowywanie i obsługa procesów biznesowych

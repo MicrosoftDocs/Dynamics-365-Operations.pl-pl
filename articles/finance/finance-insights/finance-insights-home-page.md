@@ -2,7 +2,7 @@
 title: Finance Insights — strona główna
 description: Moduł Szczegółowe dane finansowe udostępnia konfigurowalne i rozszerzalne modele, które pomagają dokładnie i inteligentnie przewidywać przepływy pieniężne w firmie, prognozować terminy otrzymania płatności za zaległe należności oraz generować propozycje budżetowe, które mogą przyspieszyć proces budżetowania. Wszystkie te funkcje są oparte na inteligentnych modelach uczenia maszynowego.
 author: ShivamPandey-msft
-ms.date: 11/03/2021
+ms.date: 11/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,19 +17,19 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 3c6320043000dc07eea3128a10c16cfd54b13334
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: dfc4d9cb5be4d8d287122fd33bf09b0570498169
+ms.sourcegitcommit: a46f0bf9f58f559bbb2fa3d713ad86875770ed59
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752863"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "7813754"
 ---
 # <a name="finance-insights-home-page"></a>Finance Insights — strona główna
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Moduł Finance insights udostępnia konfigurowalne i rozszerzalne modele, które pomagają inteligentnie przewidywać przepływy pieniężne w firmie, prognozować terminy otrzymania płatności za zaległe należności oraz generować propozycje budżetowe, które mogą przyspieszyć proces budżetowania. Wszystkie te funkcje są oparte na inteligentnych modelach uczenia maszynowego. Gdy te nowe możliwości zostaną połączone z mechanizmami automatyzacji w funkcjach płatności dla dostawców i windykacji, powstaje rozbudowany i inteligentny system finansowy, który wspiera podejmowanie decyzji i pomaga podejmować działania w celu skutecznego reagowania na obecne i przewidywane wyzwania biznesowe.
+Moduł Finance insights udostępnia konfigurowalne i rozszerzalne rozwiązania, które pomagają inteligentnie przewidywać przepływy pieniężne w firmie, prognozować terminy otrzymania płatności za zaległe należności oraz generować propozycje budżetowe, które pomagają przyspieszyć proces budżetowania. Te funkcje używają inteligentnych szablonów uczenia maszynowego do tworzenia modeli przy użyciu danych dostarczanych przez użytkownika (w tym danych od innej firmy, takich jak informacje o raportach klientów z biura). Te inteligentne możliwości informowania o procesach podejmowania decyzji pomagają w podjęciu skutecznego działania w reakcji na bieżącą i przewidzianą sytuację biznesową. Użytkownik jest odpowiedzialny za wszelkie dane używane w aplikacji Finance Insights lub za ich dane wyjściowe.
 
 > [!NOTE]
 > Aplikacja Finance insights w wersji zapoznawczej jest dostępna do wdrożenia w Stanach Zjednoczonych Ameryki, Kanadzie, Wielkiej Brytanii, Europie, Japonii, Azji i Pacyfiku, Australii i Nowej Zelandii. Firma Microsoft stopniowo zwiększa obsługę wielu regionów.

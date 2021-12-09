@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: f3cac30a66ff3a74a7f67c11dd9fa14af79d10af
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 68115d484abcdc3c37357ae441e9f9ccb5212659
+ms.sourcegitcommit: 6a9f068b59b62c95a507d1cc18b23f9fd80a859b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752624"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "7827060"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Rozwiązywanie problemów z ustawieniami Finance insights
 
@@ -70,3 +70,26 @@ Aby poprawnie wyświetlać dane w obszarze roboczym **Prognoza przepływów pien
 Najpierw skonfiguruj i włącz prognozowanie przepływów pieniężnych oraz konta płynności. Aby uzyskać więcej informacji, zobacz [Prognozowanie przepływów pieniężnych](../cash-bank-management/cash-flow-forecasting.md). Jeśli konfiguracja została zakończona, ale nie widzisz oczekiwanych wyników, zobacz [Rozwiązywanie problemów z konfiguracją prognozowania przepływów pieniężnych](../cash-bank-management/cash-flow-forecasting-tsg.md), aby uzyskać więcej informacji.
 
 Następnie potwierdź, że funkcja Prognozy przepływów pieniężnych w danych finansowych (**Zarządzanie gotówką i bankami \> Ustawienia \> Finance Insights \> Prognozy przepływów pieniężnych**) została włączona, a szkolenie modelu AI zostało ukończone. Jeśli szkolenie nie zostało ukończone, wybierz opcję **Prognoza teraz**, aby rozpocząć proces szkoleniowy modelu.
+
+## <a name="symptom-why-isnt-the-install-a-new-add-in-button-visible-in-microsoft-dynamics-lifecycle-services"></a>Objaw: dlaczego nie widać przycisku Zainstaluj nowy dodatek w usłudze Microsoft Dynamics Lifecycle Services?
+
+### <a name="resolution"></a>Rozwiązanie
+
+Najpierw sprawdź, czy rola **Menedżer środowiska** lub **Właściciel projektu** jest przypisana do zalogowano użytkownika w polu **Rola zabezpieczeń projektu** w usłudze Microsoft Dynamics Lifecycle Services (LCS). Instalacja nowych dodatków wymaga jednej z tych ról zabezpieczeń projektu.
+
+Jeśli zostanie użytkownikowi przypisana poprawna rola zabezpieczeń projektu, może być konieczne odświeżenie okna przeglądarki, aby zobaczyć przycisk **Zainstaluj nowy dodatek**.
+
+## <a name="symptom-the-finance-insights-add-in-doesnt-seem-to-be-installing-why-is-that"></a>Objaw: Wygląda na to, że dodatek Finance Insights nie jest instalowany. Dlaczego?
+
+### <a name="resolution"></a>Rozwiązanie
+
+Należy wykonać następujące kroki.
+
+- Sprawdź, czy masz dostęp do opcji **Administrator systemu** i **Dostosowanie systemu** w Centrum administratora programu Power Portal.
+- Sprawdź, czy do użytkownika, który instaluje ten dodatek, ma zastosowanie licencja Dynamics 365 Finance lub równoważna.
+- Sprawdź, czy w poniższa aplikacja Azure AD jest zarejestrowana w usłudze Azure AD: 
+
+  | Zgłoszenie                  | Identyfikator aplikacji           |
+  | ---------------------------- | ---------------- |
+  | CDS mikrousług ERP Microsoft Dynamics | 703e2651-d3fc-48f5-942c-74274233dba8 | 
+  

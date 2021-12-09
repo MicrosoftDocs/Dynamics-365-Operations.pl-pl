@@ -1,7 +1,7 @@
 ---
 title: Zarządzanie sprawdzaniem poprawności międzynarodowego numeru konta bankowego (IBAN)
 description: W tym temacie wyjaśniono, jak zarządzać sprawdzaniem poprawności międzynarodowego numeru konta bankowego (IBAN).
-author: roscholm
+author: roschlom
 ms.date: 08/24/2018
 ms.topic: article
 ms.prod: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 2c992d1df0f363960caa363a514a3c6f6d51e78d
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 210d2f57e21ec5ac38ba8ca07195e40ff507e2b9
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753617"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860826"
 ---
 # <a name="manage-international-bank-account-number-iban-account-validation"></a>Zarządzanie sprawdzaniem poprawności międzynarodowego numeru konta bankowego (IBAN)
 

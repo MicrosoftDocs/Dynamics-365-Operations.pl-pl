@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 15b0ad9faf2bcac25dec01a7ab44f804ad2345cd
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: c3947c8a51facfb02012cc8e9a3ffd5887073bd9
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567230"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860620"
 ---
 # <a name="define-coverage-rules-for-items"></a>Definiowanie reguł zapotrzebowania na towary
 
@@ -113,6 +113,7 @@ Utwórz reguły pokrycia towaru, wykonując następujące czynności:
 1. W polu **Godzina zakupu** wpisz „5”.
 1. Wybierz opcję **Zapisz**.
 
-
+> [!NOTE]
+> W przypadku towarów wytwarzanych **Terminy realizacji produkcji** są stosowane w przypadku, gdy dla towaru nie istnieje marszruta. Jeśli z towarem skojarzono aktywną marszrutę, planowanie główne zaplanuje zamówienie i oblicza jego daty zgodnie z czasem marszruty i zdolnościami produkcyjnymi zasobów (jeśli są dostępne).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 2c2d2604dc1948d067311a12d00422ef074ac61a
-ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
+ms.openlocfilehash: 081b6968575a8a057903d96de2833a98552ed123
+ms.sourcegitcommit: a46f0bf9f58f559bbb2fa3d713ad86875770ed59
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "7641168"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "7813733"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Obciążenia pracą dotyczące zarządzania magazynem dla jednostek skalowania chmury i urządzenia brzegowego
 
@@ -290,7 +290,8 @@ W poniższej tabeli podsumowano, które scenariusze produkcyjne zarządzania mag
 |---------|-----|------------------------------|
 | Raportowanie jako wyroby gotowe i wyroby gotowe odłożone | Tak | Tak |
 | Odłożenie produktu ubocznego i produktu towarzyszącego | Tak | Tak |
-| <p>Wszystkie inne procesy zarządzania magazynem, które są związane z produkcją, w tym:</p><li>Zwolnij do magazynu</li><li>Przetwarzanie produkcji w ramach grupy czynności</li><li>Pobranie surowca</li><li>Kanban odłożone</li><li>Pobieranie Kanban</li><li>Rozpocznij zlecenie produkcyjne</li><li>Odpadki produkcji</li><li>Produkcja ostatniej palety</li><li>Rejestruj zużycie materiałów</li><li>Pusta karta Kanban</li></ul> | Tak | Nie |
+| Rozpocznij zlecenie produkcyjne | Tak | Tak |
+| <p>Wszystkie inne procesy zarządzania magazynem, które są związane z produkcją, w tym:</p><li>Zwolnij do magazynu</li><li>Przetwarzanie produkcji w ramach grupy czynności</li><li>Pobranie surowca</li><li>Kanban odłożone</li><li>Pobieranie Kanban</li><li>Odpadki produkcji</li><li>Produkcja ostatniej palety</li><li>Rejestruj zużycie materiałów</li><li>Pusta karta Kanban</li></ul> | Tak | Nie |
 | Uzupełnianie zapasów surowców | Nie | Nie |
 
 ## <a name="maintaining-scale-units-for-warehouse-execution"></a>Zarządzenie jednostkami skalowania na potrzeby wykonania w magazynie

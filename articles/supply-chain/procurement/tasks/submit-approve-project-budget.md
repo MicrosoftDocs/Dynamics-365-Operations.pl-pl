@@ -1,59 +1,45 @@
 ---
-title: Przesyłanie i zatwierdzanie budżetu projektu
+title: Tworzenie i przesyłanie przepływu pracy budżetu projektu
 description: W tej procedurze pokazano, jak utworzyć i przesłać budżet projektu.
 author: Henrikan
-ms.date: 08/13/2019
-ms.topic: business-process
-ms.prod: ''
-ms.technology: ''
+ms.date: 11/22/2021
+ms.topic: article
 ms.search.form: ProjProjectsListPage, ProjTable, ProjBudget, WorkflowSubmitDialog
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.search.industry: Service industries
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a16a4f8102a954fa8337aa7f5de0f8dcd2b3a288
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 6f410d824be717537e6dfb5dbd8b71ff7d992e0a
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569377"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860432"
 ---
-# <a name="submit-and-approve-project-budget"></a>Przesyłanie i zatwierdzanie budżetu projektu
+# <a name="create-and-submit-a-project-budget-workflow"></a>Tworzenie i przesyłanie przepływu pracy budżetu projektu
 
 [!include [banner](../../includes/banner.md)]
 
-W tej procedurze pokazano, jak utworzyć i przesłać budżet projektu. 
+Podczas tworzenia budżetu projektu można wprowadzić szacowane przychody i koszty projektu, a następnie użyć wartości do kontrolowania rzeczywistych transakcji w projekcie. Budżetowanie projektu wymaga, by wszystkie oryginalne budżety i korekty zostały wysłane do przepływu pracy projektu do zatwierdzenia. Przepływ pracy zwiększa kontrolę nad budżetowaniem i tworzy rekord historii zmian. Po [utworzeniu projektu](/dynamicsax-2012/appuser-itpro/create-a-project), użyj tej procedury, by utworzyć i przesłać budżet.
 
-Podczas tworzenia budżetu projektu można wprowadzić szacowane przychody i koszty projektu, a następnie użyć ich do kontrolowania rzeczywistych transakcji w projekcie. W budżetowaniu projektu wszystkie oryginalne budżety i korekty muszą zostać wysłane do przepływu pracy projektu w celu zatwierdzenia. Przepływ pracy daje większą kontrolę nad procesem i tworzy rekord historii zmian.
-
-Zadanie utworzono przy użyciu zestawu danych firmy USSI.
-
-1. W **okienku nawigacji** przejdź do **Moduły > Zarządzanie projektami i ich księgowanie > projekty > Wszystkie projekty**.
-2. Na liście znajdź i zaznacz odpowiedni rekord.
-3. Na liście kliknij łącze w wybranym wierszu.
-4. W **okienku akcji** kliknij pozycję **Plan**.
-5. Kliknij opcję **Budżet projektu**.
-6. W polu **Opis** wpisz wartość.
-7. Rozwiń skróconą kartę **Koszt**.
-8. Kliknij przycisk **Nowy**.
-9. W polu **Typ transakcji** zaznacz opcję.
-10. W polu **Kategoria** wprowadź lub wybierz wartość.
-11. W polu **Budżet pierwotny** wprowadź liczbę.
-12. Rozwiń skróconą kartę **Przychody**.
-13. Kliknij przycisk **Nowy**.
-14. Na liście oznacz wybrany wiersz.
-15. W polu **Typ transakcji** zaznacz opcję.
-16. W polu **Kategoria** wprowadź lub wybierz wartość.
-17. W polu **Budżet pierwotny** wprowadź liczbę.
-18. Kliknij przycisk **Zapisz**.
-19. Kliknij opcję **Przepływ pracy**.
-20. Kliknij przycisk **Prześlij**.
-21. W polu **Komentarz** wpisz wartość.
-22. Kliknij przycisk **Prześlij**.
-
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+1. Wybierz kolejno **Moduły** > **Zarządzanie projektami i ich księgowanie** > **Projekty** > **Wszystkie projekty**.
+1. Wybierz projekt z listy projektów.
+1. Na stronie szczegółów projektu wybierz kartę **Plan**.
+1. W grupie **Budżet** wybierz pozycję **Budżet projektu**.
+1. Na skróconej karcie **Ogólne** wprowadź następujące informacje:
+   - W polu **Opis** wpisz wartość.
+   - Wybierz opcję **Pierwotny budżet**.
+   - Wybierz opcję **Pozostały budżet**.
+1. Rozwiń skróconą kartę **Koszty** i wybierz pozycję **Nowy**. Następnie ustaw następujące ustawienia:
+   - Wybierz opcję **Typ transakcji**.
+   - Wybierz odpowiednią **Kategorię**.
+   - Wprowadź wartość w **Pierwotnym budżecie**.
+1. Rozwiń skróconą kartę **Przychody** i wybierz pozycję **Nowy**. Następnie ustaw następujące ustawienia:
+   - Wybierz opcję **Typ transakcji**.
+   - Wybierz **Kategorię**.
+   - Wprowadź wartość dla **Pierwotnego budżetu**.
+1. Wybierz opcję **Zapisz**.
+1. Wybierz **Przepływ pracy \> Prześlij**.
+1. Na stronie **Przegląd oryginalnego przepływu pracy budżetu — Prześlij**, wprowadź **Komentarz** i wybierz opcję **Prześlij**.
