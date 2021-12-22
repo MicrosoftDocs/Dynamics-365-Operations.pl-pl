@@ -4,6 +4,8 @@
     - name: Co nowego
       items:
         - name: Nowości i zmiany w rozwiązaniu Human Resources
+          href: hr-whats-new-2021-11-29.md
+        - name: 29 listopada 2021 r.
           href: hr-admin-whats-new.md
         - name: 5 października 2021 r.
           href: hr-whats-new-2021-10-04.md
@@ -793,6 +795,8 @@
                       href: hr-benefits-process-life-event-eligibility.md
                     - name: Przetwarzanie zmian stawek
                       href: hr-benefits-process-rate-changes.md
+                - name: Wybór świadczeń pracownika etatowego
+                  href: employee-select-benefits-ess.md
                 - name: Raportowanie podatku ACA
                   href: hr-benefits-management-aca-reports.md
                 - name: Oświadczenie o świadczeniach

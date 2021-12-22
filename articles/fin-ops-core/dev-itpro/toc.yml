@@ -14,12 +14,12 @@
               items:
                 - name: Nowości i zmiany w aktualizacjach Platform update — strona główna
                   href: get-started/whats-new-home-page.md
-                - name: Aktualizacja Platform update dla wersji 10.0.23
+                - name: Aktualizacja Platform update dla wersji 10.0.24 (luty 2022)
+                  href: get-started/whats-new-platform-updates-10-0-24.md
+                - name: Aktualizacja Platform update dla wersji 10.0.23 (styczeń 2022)
                   href: get-started/whats-new-platform-updates-10-0-23.md
                 - name: Aktualizacja Platform update dla wersji 10.0.22 (listopad 2021)
                   href: get-started/whats-new-platform-updates-10-0-22.md
-                - name: Aktualizacja Platform update dla wersji 10.0.21 (październik 2021)
-                  href: get-started/whats-new-platform-updates-10-0-21.md
             - name: Usunięte lub wycofane funkcje
               items:
                 - name: Usunięte lub wycofane funkcje — strona główna
@@ -232,9 +232,9 @@
               href: data-entities/dm-error-descriptions.md
         - name: Azure Data Lake
           items:
-            - name: Przegląd usługi Azure Data Lake
-              href: data-entities/azure-data-lake-overview.md
-            - name: Konfigurowanie eksportu do usługi Azure Data Lake
+            - name: Eksportowanie do usługi Azure Data Lake — omówienie
+              href: data-entities/Azure-Data-Lake-GA-version-overview.md
+            - name: Instalowanie dodatku Eksportowanie do usługi Azure Data Lake
               href: data-entities/configure-export-data-lake.md
             - name: Aplikacje Finance and Operations w usłudze Azure Data Lake
               href: data-entities/finance-data-azure-data-lake.md
@@ -406,6 +406,8 @@
                       href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: Użyj tego samego wystąpienia komponentu AD FS dla wielu środowisk
                       href: deployment/onprem-reuseadfs.md
+                    - name: Uaktualnianie wystąpienia programu SQL Server dla środowisk rozwiązania Microsoft Dynamics 365 Finance + Operations (on-premises)
+                      href: deployment/onprem-upgrade-sqlserver.md
                 - name: Agent lokalny
                   items:
                     - name: Zgodność z usługami AD FS Microsoft 365
@@ -1012,7 +1014,7 @@
                   href: lifecycle-services/use-translation-service-tm.md
         - name: Integracja z usługą Microsoft Power Platform
           items:
-            - name: Integracja usługi Microsoft Power Platform z rozwiązaniem Finance and Operations
+            - name: Omówienie
               href: power-platform/overview.md
             - name: Włączanie integracji usługi Power Platform
               href: power-platform/enable-power-platform-integration.md

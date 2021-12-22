@@ -2,7 +2,7 @@
 title: Konfiguracja rozpoznawania przychodów
 description: W tym temacie opisano opcje konfiguracji dotyczące rozpoznawania przychodów oraz ich implikacje.
 author: kweekley
-ms.date: 08/24/2018
+ms.date: 11/24/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: b5ffd86d736cb7b6b5c270663c2b774e14556a6b
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: e8e29ec1ca5a02db67bb4baf522da96ec23c740f
+ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675185"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7867227"
 ---
 # <a name="revenue-recognition-setup"></a>Konfiguracja rozpoznawania przychodów
 [!include [banner](../includes/banner.md)]
@@ -61,7 +61,7 @@ Pierwszy scenariusz występuje po spełnieniu wszystkich zobowiązań umownych, 
 
 Drugi scenariusz występuje, gdy zostanie utworzony arkusz po zmianie alokacji. Zmiana alokacji ma miejsce, gdy wiersz zamówienia sprzedaży zostanie dodany do wcześniej zafakturowanego zamówienia sprzedaży lub gdy tworzone jest nowe zamówienie sprzedaży zawierające wiersz będący częścią oryginalnej umowy. Jeśli faktura została zaksięgowana przed dodaniem nowego wiersza zamówienia sprzedaży, należy utworzyć wpis księgowania korygującego dla zaksięgowanej faktury dla odbiorcy.
 
-Arkusz jest ustawiany na stronie **Nazwa arkusza** (**Rozpoznawanie przychodów \> Ustawienia \> Nazwy arkusza**). Typ arkusza musi być określony jako **Rozpoznawanie przychodów**. Arkusz rozpoznawania przychodów umożliwia wybranie warstwy księgowania, na której ma być wykonywane księgowanie.
+Arkusz jest ustawiany na stronie **Nazwa arkusza** (**Rozpoznawanie przychodów \> Ustawienia \> Nazwy arkusza**). Typ arkusza musi być określony jako **Rozpoznawanie przychodów**. 
 
 ## <a name="parameters-for-revenue-recognition"></a>Parametry rozpoznawania przychodów
 

@@ -70,11 +70,13 @@
                   items:
                     - name: Nowości i zmiany w aplikacji Supply Chain Management — strona główna
                       href: get-started/whats-new-home-page.md
-                    - name: Rozwiązanie Supply Chain Management w wersji 10.0.23
+                    - name: Supply Chain Management w wersji 10.0.24 (luty 2022)
+                      href: get-started/whats-new-scm-10-0-24.md
+                    - name: Supply Chain Management w wersji 10.0.23 (styczeń 2022)
                       href: get-started/whats-new-scm-10-0-23.md
-                    - name: Rozwiązanie Supply Chain Management w wersji 10.0.22 (listopad 2021)
+                    - name: Supply Chain Management w wersji 10.0.22 (listopad 2021)
                       href: get-started/whats-new-scm-10-0-22.md
-                    - name: Rozwiązanie Supply Chain Management w wersji 10.0.21 (październik 2021)
+                    - name: Supply Chain Management w wersji 10.0.21 (październik 2021)
                       href: get-started/whats-new-scm-10-0-21.md
                 - name: Usunięte lub wycofane funkcje
                   items:
@@ -947,7 +949,9 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Today
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Lista
+                        - name: WeekNum
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: List
                       items:
                         - name: Lista funkcji
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/supply-chain/toc.json
@@ -3753,7 +3757,7 @@
                   href: troubleshooting/transportation/reconciliation-reaso.md
             - name: Zarządzanie magazynem
               items:
-                - name: Warehouse Mobile App
+                - name: Warehouse mobile app
                   items:
                     - name: Nie znaleziono kotwicy zaufania dla ścieżki certyfikacji podczas konfigurowania połączenia z aplikacją
                       href: troubleshooting/warehousing/certification-path-app-connection-error.md

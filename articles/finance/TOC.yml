@@ -70,12 +70,12 @@
                   items:
                     - name: Nowości i zmiany w rozwiązaniu Finance — strona główna
                       href: get-started/whats-new-home-page.md
-                    - name: Rozwiązanie Finance w wersji 10.0.23
+                    - name: Rozwiązanie Finance w wersji 10.0.24 (luty)
+                      href: get-started/whats-new-changed-10-0-24.md
+                    - name: Rozwiązanie Finance w wersji 10.0.23 (styczeń)
                       href: get-started/whats-new-changed-10-0-23.md
                     - name: Rozwiązanie Finance w wersji 10.0.22 (listopad 2021)
                       href: get-started/whats-new-changed-10-0-22.md
-                    - name: Rozwiązanie Finance w wersji 10.0.21 (październik 2021)
-                      href: get-started/whats-new-changed-10-0-21.md
             - name: Usunięte lub wycofane funkcje
               items:
                 - name: Usunięte lub wycofane funkcje — strona główna
@@ -518,7 +518,9 @@
               href: budgeting/budget-control-overview-configuration.md
             - name: Omówienie budżetowania
               href: budgeting/basic-budgeting-overview-configuration.md
-            - name: Prognozy dotyczące stanowisk
+            - name: Dostępne środki budżetowe
+              href: budgeting/budget-funds-available.md
+            - name: Prognozowanie dotyczące stanowisk
               href: budgeting/position-forecasting.md
             - name: Dokumenty uzasadnienia planowania budżetu
               href: budgeting/budget-planning-justification-docs.md
@@ -1434,6 +1436,8 @@
                           href: localizations/e-invoicing-get-started-import-vendor-invoices.md
                         - name: Ustawianie fakturowania elektronicznego
                           href: localizations/e-invoicing-setup.md?toc=/dynamics365/finance/toc.json
+                        - name: Wtyczka Power Platform — odwołanie dla administratora
+                          href: localizations/e-invoicing-power-platform-plug-in.md
                     - name: Fakturowanie elektroniczne — często zadawane pytania
                       href: localizations/e-invoicing-faq.md?toc=/dynamics365/finance/toc.json
                 - name: Obliczanie podatku
@@ -1444,6 +1448,14 @@
                       items:
                         - name: Rozpoczynanie pracy z obliczaniem podatku
                           href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
+                        - name: Konfigurowanie kodów podatków
+                          href: localizations/set-up-tax-codes.md
+                        - name: Konfigurowanie grup podatków
+                          href: localizations/set-up-tax-groups.md
+                        - name: Konfigurowanie grup podatków dla pozycji
+                          href: localizations/set-up-item-tax-groups.md
+                        - name: Importowanie i eksportowanie obliczeń podatku
+                          href: localizations/tax-calculation-import-export-feature.md
                         - name: Ustawianie środowiska wyszukiwania danych głównych
                           href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
                     - name: Określenie
@@ -2594,6 +2606,8 @@
               items:
                 - name: Indonezja — omówienie
                   href: localizations/indonesia.md
+                - name: Numerowanie i fakturowanie faktur podatkowych
+                  href: localizations/apac-idn-invoicing.md
                 - name: Deklaracja podatku VAT dla Indonezji
                   href: localizations/apac-idn-ppn-declaration.md
             - name: Włochy
@@ -2658,10 +2672,12 @@
                   href: localizations/emea-ita-exil-unique-certification.md
                 - name: Import oprotestowania weksli
                   href: localizations/emea-ita-exil-protest-boe.md
-                - name: Plafon podatku
+                - name: Plafon podatkowy
                   href: localizations/emea-ita-exil-tax-plafond.md
                 - name: Faktury elektroniczne odbiorcy
                   href: localizations/emea-ita-e-invoices.md
+                - name: Faktury elektroniczne od dostawców
+                  href: localizations/emea-ita-vend-e-invoices.md
                 - name: Roczne sprawozdanie podatkowe
                   href: localizations/emea-ita-yearly-tax-communication.md
                 - name: Możliwość śledzenia płatności
@@ -2964,6 +2980,20 @@
                   href: localizations/emea-nor-nets-import-format.md
                 - name: Sprawozdanie podatku VAT
                   href: localizations/emea-nor-sales-tax-payment-report.md
+                - name: Zwrot podatku VAT z bezpośrednim przesłaniem do Altinn
+                  items:
+                    - name: Omówienie zwrotu podatku VAT z bezpośrednim przesłaniem do Altinn
+                      href: localizations/emea-nor-vat-return.md
+                    - name: Rejestrowanie punktu integracji w portalu internetowym ID-porten
+                      href: localizations/emea-nor-vat-return-integration-point.md
+                    - name: Przygotowanie środowiska do współpracy z usługami internetowymi ID-porten i Altinn
+                      href: localizations/emea-nor-vat-return-setup.md
+                    - name: Lista kontrolna konfiguracji wiadomości elektronicznych dla zwrotu podatku VAT
+                      href: localizations/emea-nor-vat-return-checklist.md
+                    - name: Autoryzowanie środowiska Finance do współpracy z usługami internetowymi ID-Porten i Altinn
+                      href: localizations/emea-nor-vat-return-authorization.md
+                    - name: Przesyłanie zwrotu podatku VAT do usługi internetowej Altinn
+                      href: localizations/emea-nor-vat-return-submission.md
                 - name: Jednolity plik audytu dla podatku (SAF-T) dla Norwegii
                   href: localizations/emea-nor-satndard-audit-file-for-tax.md
                 - name: Faktury elektroniczne odbiorcy w Norwegii
@@ -3400,7 +3430,7 @@
                       href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
                     - name: Testowanie współpracy za pomocą piaskownicy podatku VAT MTD
                       href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
-                    - name: Autoryzacja środowiska Finance do współpracy z usługą internetową MTD w urzędzie HMRC
+                    - name: Autoryzowanie środowiska Finance do współpracy z usługą internetową MTD w urzędzie HMRC
                       href: localizations/emea-gbr-mtd-vat-integration-authorization.md
                     - name: Przesyłanie zwrotu podatku VAT do usługi internetowej MTD w urzędzie HMRC
                       href: localizations/emea-gbr-mtd-vat-integration-submission.md
@@ -3831,7 +3861,9 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/finance/toc.json
                         - name: Today
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/finance/toc.json
-                    - name: Lista
+                        - name: WeekNum
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?toc=/dynamics365/finance/toc.json
+                    - name: List
                       items:
                         - name: Lista funkcji
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/finance/toc.json
