@@ -1,7 +1,7 @@
 ---
 title: Grupy kont konsolidacji i dodatkowe konta konsolidacji
-description: Ten temat zawiera informacje o grupach kont konsolidacji i dodatkowych kontach konsolidacji oraz wyjaśnia, jak są one używane w Microsoft Dynamics 365 Finance.
-author: aprilolson
+description: Ten temat zawiera informacje o grupach kont konsolidacji i dodatkowych kontach konsolidacji oraz wyjaśnia, jak są one używane.
+author: panolte
 ms.date: 01/11/2018
 ms.topic: article
 ms.prod: ''
@@ -12,25 +12,25 @@ ms.reviewer: roschlom
 ms.custom: 265544
 ms.assetid: 71c31df7-b655-46a8-8844-4f92a8bd71b0
 ms.search.region: Global
-ms.author: aolson
+ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3e6671e5f3ceff671210011913a3a91194613c7c0e4e1d8e8063e4e27e5f3cf5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 489f5417b6044e02d4711a03a17d6c19031cc2ee
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727427"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883394"
 ---
-# <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>Grupy kont konsolidacji i dodatkowe konta konsolidacji
+# <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>Grupy kont konsolidacyjnych i dodatkowe konta konsolidacyjne
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje o grupach kont konsolidacji i dodatkowych kontach konsolidacji oraz wyjaśnia, jak są one używane w Microsoft Dynamics 365 Finance.
+Ten temat zawiera informacje o grupach kont konsolidacji i dodatkowych kontach konsolidacji oraz wyjaśnia, jak są one używane.
 
 ## <a name="consolidation-account-groups"></a>Grupy kont konsolidacji
 
-Grupy kont konsolidacji pozwalają tworzyć grupy kont, które mają użyć do konsolidowania danych. W większości przypadków grupa kont konsolidacji reprezentuje urzędowy plan kont lub mapuje konta na grupę zdefiniowaną przez centralę firmy. Grupy kont konsolidacji są podane w module **Konsolidacje** w obszarze **Ustawienia**. Podczas dodawania nowej grupy wprowadzasz unikatowy identyfikator i nazwę grupy kont.
+Grupy kont konsolidacji pozwalają tworzyć grupy kont, które mają użyć do konsolidowania danych. Zazwyczaj grupa kont konsolidacyjnych reprezentuje rządowy plan kont. Grupa kont konsolidacyjnych może również mapować konta na grupę zdefiniowaną w centrali firmy. Grupy kont konsolidacji są podane w module **Konsolidacje** w obszarze **Ustawienia**. Podczas dodawania nowej grupy wprowadzasz unikatowy identyfikator oraz nazwę grupy kont.
 
 ## <a name="additional-consolidation-accounts"></a>Dodatkowe konta konsolidacji
 Funkcja dodatkowych kont konsolidacji umożliwia przypisanie konta z istniejącego planu kont do grupy kont konsolidacji. Następnie można określić wartość i nazwę konta konsolidacji. 

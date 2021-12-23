@@ -1,7 +1,7 @@
 ---
 title: Skanowanie kodów kreskowych za pomocą aparatu w aplikacji mobilnej Warehouse Management
 description: W tym temacie opisano, jak w rozwiązaniu aplikacja Warehouse Management skonfigurować skanowanie kodów kreskowych przy użyciu aparatu w urządzeniu przenośnym.
-author: MarkusFogelberg
+author: Mirzaab
 ms.date: 01/03/2018
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 269384
 ms.search.region: Global
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2017-01-03
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 62280b8401c1f7d5dc859a2130981405e69d03cfb5383123d7069e71e6cb1f47
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cc58d88865fea17e0e27463b25e2ba815ee1a5b1
+ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6711670"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "7901994"
 ---
 # <a name="scan-bar-codes-using-a-camera-in-the-warehouse-management-mobile-app"></a>Skanowanie kodów kreskowych za pomocą aparatu w aplikacji mobilnej Warehouse Management
 

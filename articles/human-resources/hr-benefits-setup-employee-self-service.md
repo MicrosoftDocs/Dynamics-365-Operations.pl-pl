@@ -2,7 +2,7 @@
 title: Konfigurowanie samoobsługi pracownika etatowego
 description: W rozwiązaniu Microsoft Dynamics 365 Human Resources można skonfigurować kafelki do nawigacji najwyższego poziomu w obszarze Samoobsługa pracownika etatowego.
 author: twheeloc
-ms.date: 08/24/2021
+ms.date: 12/06/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 92a788dd436f4efc16946a47731c9dbce36ab0e9
-ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
+ms.openlocfilehash: 1e0c59eb8db5a97405e87922cc65f3eb74bee48e
+ms.sourcegitcommit: b101c21f972fdad2667431f712222e040cd69d43
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "7423325"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "7898447"
 ---
 # <a name="configure-employee-self-service"></a>Konfigurowanie samoobsługi pracownika etatowego
 
@@ -34,19 +34,16 @@ W aplikacji Microsoft Dynamics 365 Human Resources można skonfigurować kafelki
 
 2. Kliknij kartę **Ustawienia kafelka planów świadczeń**, a następnie wybierz opcję **Nowy**.
 
-3. Określ wartości dla następujących pól:
+3. Określ wartości dla następujących pól.
 
    | Pole | Opis |
    | --- | --- |
+   | **Kod typu planu** | Typ planu wyświetlany, gdy ten kafelek jest wybrany w obszarze **Samoobsługa świadczeń**. |
    | **Identyfikator kafelka** | Unikatowy identyfikator dla kafelka. |
-   | **Tekst etykiety kafelka** | Tekst, który będzie wyświetlany dla kafelka w obszarze **Samoobsługa pracownika etatowego**. |
-   | **Opis** | Opis kafelka. |
-   | **Adres internetowy** | Wprowadź adres URL do strony **Samoobsługa pracownika etatowego**. |
-   | **Rozmiar kafelka** | Rozmiar kafelka: Mały, Średni lub Duży. |
-   | **Grupa docelowa** | Określa, czy strona ma być otwierana w nowym, czy w bieżącym oknie. |
+   | **Tekst etykiety kafelka** | Tekst, który będzie wyświetlany dla kafelka w obszarze **Samoobsługa świadczeń**. |
+   | **opis** | Opis kafelka. |
    | **Obraz tła kafelka** | Adres URL obrazu, który ma być używany dla kafelka (opcjonalnie). |
-   | **Uruchom** | Data i godzina, od kiedy kafelek powinien być dostępny. |
-   | **Zakończenie** | Data i godzina, do kiedy kafelek powinien być dostępny. |
+   | **Śledź otwartą rejestrację** | Wybierz tę opcję, aby śledzić postęp otwartej rejestracji dla tego typu planu. Mogą być na przykład tworzone plany, gdzie **Typ planu = Inny**. Te plany mogą być planami opcjonalnymi, dla których nie chcesz śledzić postępu rejestracji. Jeśli nie wybierzesz tego typu planu, ten typ planu będzie ignorowany podczas śledzenia postępu rejestracji lub zakończenia rejestracji na karcie **Otwarta rejestracja**. To ustawienie dotyczy typu planu wybranego dla wszystkich okresów i firm. |
 
 4. Wybierz opcję **Zapisz**.
 
@@ -56,19 +53,16 @@ W aplikacji Microsoft Dynamics 365 Human Resources można skonfigurować kafelki
 
 2. Kliknij kartę **Ustawienia kafelka planu kredytu elastycznego**, a następnie wybierz opcję **Nowy**.
 
-3. Określ wartości dla następujących pól:
+3. Określ wartości dla następujących pól.
 
    | Pole | Opis |
    | --- | --- |
+   | **Identyfikator kredytu świadczenia** | Plany elastycznych programów kredytowych, które będą wyświetlane, gdy ten kafelek jest wybrany w obszarze **Samoobsługa świadczeń**. |
    | **Identyfikator kafelka** | Unikatowy identyfikator dla kafelka. |
-   | **Tekst etykiety kafelka** | Tekst, który będzie wyświetlany dla kafelka w obszarze **Samoobsługa pracownika etatowego**. |
-   | **Opis** | Opis kafelka. |
-   | **Adres internetowy** | Wprowadź adres URL do strony **Samoobsługa pracownika etatowego**. |
-   | **Rozmiar kafelka** | Rozmiar kafelka: Mały, Średni lub Duży. |
-   | **Grupa docelowa** | Określa, czy strona ma być otwierana w nowym, czy w bieżącym oknie. |
+   | **Tekst etykiety kafelka** | Tekst, który będzie wyświetlany dla kafelka w obszarze **Samoobsługa świadczeń**. |
+   | **opis** | Opis kafelka. |
    | **Obraz tła kafelka** | Adres URL obrazu, który ma być używany dla kafelka (opcjonalnie). |
-   | **Uruchom** | Data i godzina, od kiedy kafelek powinien być dostępny. |
-   | **Zakończenie** | Data i godzina, do kiedy kafelek powinien być dostępny. |
+   | **Śledź otwartą rejestrację** | Wybierz tę opcję, aby śledzić postęp otwartej rejestracji dla tego typu planu. Mogą być na przykład tworzone plany, gdzie **Typ planu = Inny**. Te plany mogą być planami opcjonalnymi, dla których nie chcesz śledzić postępu rejestracji. Jeśli nie wybierzesz tego typu planu, ten typ planu będzie ignorowany podczas śledzenia postępu rejestracji lub zakończenia rejestracji na karcie **Otwarta rejestracja**. To ustawienie dotyczy typu planu wybranego dla wszystkich okresów i firm. |
 
 4. Wybierz opcję **Zapisz**.
 

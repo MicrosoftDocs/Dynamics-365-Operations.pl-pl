@@ -2,7 +2,7 @@
 title: Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Finance
 description: W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia z Dynamics 365 Finance.
 author: roschlom
-ms.date: 04/14/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7ce7353de5795fd82e53bb1b7919c95dae4fe0ab6b8f536361613a7bcae19101
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad3df2ee9c10972dac8258b6ee41ae0a6eabfbea
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6781208"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890960"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Finance
 
@@ -32,6 +32,58 @@ Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych fun
 
 > [!NOTE]
 > Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Operations można znaleźć w temacie [Raporty dotyczące odwołań technicznych](/dynamics/s-e/global/axtechrefrep_61). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach aplikacji Finance and Operations.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10024-release"></a>Usunięte lub przestarzałe funkcje w wydaniu rozwiązania Finance 10.0.24
+
+### <a name="sales-tax-report-for-sweden-design-based-on-reporting-codes"></a>Raport podatku dla Szwecji (projekt oparty na kodach raportowania)
+
+[Raport podatku dla Szwecji](../localizations/emea-swe-sales-tax-payment-report-sweden.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Zastąpiono nowym projektem deklaracji VAT, [deklaracją VAT dla Szwecji](../localizations/emea-swe-vat-declaration-sweden.md) |
+| **Zamieniona przez inną funkcję?**   | Tak |
+| **Powiązane obszary produktów**         | Zgłoszenie |
+| **Opcja wdrażania**              | Wszystko |
+| **Stan**                         | Wycofano: do 1 grudnia 2022 r. zamierzamy nie obsługiwać już raportu podatku dla Szwecji (szwedzki układ raportu). Wprowadzono nowe formaty ER **XML — deklaracja VAT (SE)**, **Excel — deklaracja VAT (SE)** w modelu **Deklaracja podatkowa**. |
+
+### <a name="vat-statement-for-austria-design-based-on-reporting-codes"></a>Deklaracja VAT dla Austrii (projekt oparty na kodach raportowania)
+
+[Szczegóły zestawienia VAT dla Austrii](../localizations/emea-aut-vat-statement-details.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Zastąpiono nowym projektem deklaracji VAT, [deklaracją VAT dla Austrii](../localizations/emea-aut-vat-declaration-austria.md) |
+| **Zamieniona przez inną funkcję?**   | Tak |
+| **Powiązane obszary produktów**         | Zgłoszenie |
+| **Opcja wdrażania**              | Wszystko |
+| **Stan**                         | Wycofano: do 1 grudnia 2022 roku zamierzamy nie obsługiwać już formatu ER **Deklaracja VAT (AT)** w **modelu deklaracji VAT**. Wprowadzono nowe formaty **XML — deklaracja VAT (AT)** i **Excel — deklaracja VAT (AT)** w modelu **Deklaracja podatkowa**. |
+
+### <a name="elster-declaration-for-germany-design-based-on-reporting-codes"></a>Deklaracja ELSTER dla Niemiec (projekt oparty na kodach raportowania)
+
+[Sprawozdanie podatku VAT](../localizations/emea-de-vat-declaration.md)</br>
+[Konfigurowanie elektronicznej deklaracji podatkowej dla Niemiec](../../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md)</br>
+[Elektroniczne przesyłanie deklaracji podatku VAT (ELSTER)](../localizations/tasks/de-00003-electronic-transmission-elster.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Zastąpiono nowym projektem deklaracji VAT, [deklaracją VAT dla Niemiec](../localizations/emea-deu-vat-declaration-germany.md) |
+| **Zamieniona przez inną funkcję?**   | Tak |
+| **Powiązane obszary produktów**         | Zgłoszenie |
+| **Opcja wdrażania**              | Wszystko |
+| **Stan**                         | Wycofano: do 1 grudnia 2022 roku zamierzamy nie obsługiwać już formatów raportowania elektronicznego ER **Elster (DE)** i **Model Elster**. Wprowadzono nowe formaty **XML — deklaracja VAT (DE)** i **Excel — deklaracja VAT (DE)** w modelu **Deklaracja podatkowa**. |
+
+### <a name="ob-declaration-for-netherlands-design-based-on-reporting-codes"></a>Deklaracja OB dla Holandii (projekt oparty na kodach raportowania)
+
+[Deklaracja OB](../localizations/emea-nl-vat-declaration.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Zastąpiono nowym projektem deklaracji VAT, [deklaracją VAT dla Holandii](../localizations/emea-nl-vat-declaration-netherlands.md) |
+| **Zamieniona przez inną funkcję?**   | Tak |
+| **Powiązane obszary produktów**         | Zgłoszenie |
+| **Opcja wdrażania**              | Wszystko |
+| **Stan**                         | Wycofano: do 1 grudnia 2022 roku zamierzamy nie obsługiwać już formatów ER **Deklaracja OB (NL)** i **Model deklaracji OB**. Wprowadzono nowe formaty **XML — deklaracja VAT (NL)** i **Excel — deklaracja VAT (NL)** w modelu **Deklaracja podatkowa**. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10020-release"></a>Usunięte lub przestarzałe funkcje w wydaniu rozwiązania Finance 10.0.20
 

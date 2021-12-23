@@ -2,7 +2,7 @@
 title: Amortyzacja środka trwałego
 description: Ten temat zawiera omówienie mechanizmu amortyzacji w funkcji środków trwałych.
 author: moaamer
-ms.date: 10/30/2017
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,20 +15,23 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 54da35a39791a9e528896f3decd10476ad5af2d9
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 2442830766ef1dccc109db5569bfbbbc8182f027
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675007"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890987"
 ---
 # <a name="fixed-asset-depreciation"></a>Amortyzacja środka trwałego
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Ten temat zawiera omówienie mechanizmu amortyzacji w funkcji środków trwałych.
 
 Amortyzacja jest okresową transakcją, która zwykle zmniejsza wartość środka trwałego w bilansie i jest naliczana jako wydatek na koncie wynikowym. Dlatego do uznawania okresowej amortyzacji w bilansie jest zazwyczaj używane konto główne. Konto przeciwstawne to konto w części wynikowej planu kont.
+
+Od wersji 10.0.24 opcja konfiguracja księgi środków trwałych **Obliczanie amortyzacji dodatniej** na stronie **Księgi** umożliwia obciążenie amortyzacją środka trwałego nabytego z ujemną wartością księgową (uznanie).
 
 ## <a name="depreciation-adjustment"></a>Korekta amortyzacji
 Zwykle tylko korekta do już zaksięgowanej transakcji amortyzacji jest księgowana jako korekta amortyzacji. Dlatego też zarówno konto główne, jak i konto przeciwstawne są konfigurowane w ten sam sposób, co konta amortyzacji. Korekta amortyzacji może być kwotą dodatnią lub ujemną, ale funkcjonalność konta głównego (jako konta bilansowego) oraz konta przeciwstawnego (zazwyczaj jako konta wynikowego) pozostaje taka sama.

@@ -1,7 +1,7 @@
 ---
 title: 150% amortyzacja degresywna
-description: Ten artykuł zawiera omówienie metody amortyzacji 150% amortyzacja degresywna.
-author: saraschi2
+description: Ten temat przedstawia omówienie metody amortyzacji 150 procent — amortyzacja degresywna.
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,21 +12,21 @@ ms.reviewer: roschlom
 ms.custom: 13891
 ms.assetid: 36d1112d-921c-4fff-abe0-0ff2429848d3
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5c9d1db1099b2c118f67a74a49fc104b8b1761288f66543ab55d5001fc43ec31
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fe8a794e9d5f01e4cd8844b5388b37970607d0be
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747162"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883319"
 ---
 # <a name="150-percent-reducing-balance-depreciation"></a>150% amortyzacja degresywna
 
 [!include [banner](../includes/banner.md)]
 
-Ten artykuł zawiera omówienie metody amortyzacji 150% amortyzacja degresywna.
+Ten temat przedstawia omówienie metody amortyzacji 150 procent — amortyzacja degresywna.
 
 Po skonfigurowaniu profilu amortyzacji środków trwałych i wybraniu wartości **Degresywna 150%** w polu **Metoda** na stronie **Profile amortyzacji** amortyzacja środków trwałych, które są przypisane do tego profilu amortyzacji, ma taką samą wartość procentową dla każdego okresu amortyzacji. Wartość procentowa jest obliczana na podstawie okresu użytkowania środków. Na przykład, jeżeli okres użytkowania środków wynosi pięć lat, wartość procentowa zostanie obliczona jako 30% (150%/5). 
 

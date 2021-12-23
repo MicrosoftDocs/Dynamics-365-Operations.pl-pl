@@ -2,7 +2,7 @@
 title: Omówienie raportowania elektronicznego (RE)
 description: Ten temat zawiera omówienie narzędzia Raportowanie elektroniczne. Opisano w nim najważniejsze pojęcia, obsługiwane scenariusze i formaty, które są częścią rozwiązania.
 author: NickSelin
-ms.date: 09/20/2021
+ms.date: 11/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f0fd83c787be4d9de151d2727384d07bc209e33f
-ms.sourcegitcommit: 86f0574363fb869482ef73ff294f345f81d17c5b
+ms.openlocfilehash: 0b772acd4a8d0849803cefa8fc14ae3dd6e18831
+ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7562183"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7867304"
 ---
 # <a name="electronic-reporting-er-overview"></a>Omówienie raportowania elektronicznego (ER)
 
@@ -30,11 +30,37 @@ ms.locfileid: "7562183"
 
 Ten temat zawiera omówienie narzędzia Raportowanie elektroniczne. Przedstawiono w nim informacje dotyczące najważniejszych koncepcji, scenariusze obsługiwane przez narzędzie Raportowanie elektroniczne oraz listę formatów zaprojektowanych i udostępnionych w ramach rozwiązania.
 
-ER jest narzędziem, które służy do konfigurowania formatów dokumentów elektronicznych przychodzących i wychodzących zgodnie z wymogami prawnymi różnych krajów/regionów. ER pozwala zarządzać tymi formatami podczas ich całego cyklu życia. Na przykład można wdrożyć nowe wymogi prawne, a następnie generować dokumenty biznesowe w wymaganym formacie w celu elektronicznej wymiany informacji z organami rządowymi, bankami i innymi stronami.
+Raportowanie elektroniczne (ER) jest konfigurowalnym narzędziem, które pomaga w tworzeniu i obsłudze zgodności z przepisami w zakresie raportowania i płatności elektronicznych. Opiera się ono na trzech koncepcjach:
+
+- Konfiguracja zamiast kodowania:
+
+    - Konfiguracja może zostać wykonana przez użytkownika biznesowego i nie wymaga dewelopera.
+    - Model danych jest definiowany jako biznesowy.
+    - Edytory wizualizacji służą do tworzenia wszystkich składników konfiguracji ER.
+    - Język używany do przekształcania danych przypomina język używany w programie Microsoft Excel.
+
+- Jedna konfiguracja dla wielu wersji aplikacji Dynamics 365 Finance:
+
+    - Zarządzanie modelem danych specyficznym dla domeny, zdefiniowanym w terminach biznesowych.
+    - Wyodrębnianie szczegółów zwolnienia aplikacji w mapowaniu modelu danych zależnych od wersji.
+    - Obsługa jednej konfiguracji formatu dla wielu wydań bieżącej wersji na podstawie modelu danych.
+
+- Łatwe lub automatyczne uaktualnienie:
+
+    - Przechowywanie wersji konfiguracji ER jest obsługiwane.
+    - Biblioteka zasobów usługi Microsoft Dynamics Lifecycle Services (LCS) może być używana jako repozytorium konfiguracji ER, w celu wymiany wersji.
+    - Wersje podrzędne można wprowadzać w lokalizacjach opartych na oryginalnych konfiguracjach ER.
+    - Drzewo konfiguracji ER jest udostępniane jako narzędzie, które pomaga kontrolować zależności wersji.
+    - Rejestrowane są różnice w lokalizacji (konfiguracja różnicowa), aby umożliwić automatyczne uaktualnienie do nowej wersji oryginalnej konfiguracji ER.
+    - Można łatwo ręcznie rozwiązać konflikty wykryte podczas automatycznego uaktualniania wersji lokalizacji.
+
+Moduł ER pozwala definiować struktury formatu elektronicznego, a następnie opisywać, jak struktury powinny być wypełniane przy użyciu danych i algorytmów. W przypadku przekształcenia danych można używać języka formuł przypominającego język programu Excel. Aby mapowanie bazy danych do formatu było łatwiejsze do zarządzania, wielokrotnego użytku i niezależne od zmian w formatach, wprowadzona jest koncepcja pośredniego modelu danych. Ta koncepcja umożliwia ukrywanie szczegółów implementacji w mapowaniu formatów oraz ponowne używanie jednego modelu danych w wielu mapowaniach formatów.
+
+Narzędzia ER można używać do konfigurowania formatów dokumentów elektronicznych przychodzących i wychodzących zgodnie z wymogami prawnymi różnych krajów i regionów. ER pozwala zarządzać tymi formatami podczas ich całego cyklu życia. Na przykład można wdrożyć nowe wymogi prawne, a następnie generować dokumenty biznesowe w wymaganym formacie w celu elektronicznej wymiany informacji z organami rządowymi, bankami i innymi stronami.
 
 Aparat ER jest adresowany do użytkowników biznesowych, a nie programistów. Ponieważ konfiguruje się formaty, a nie kod, procesy tworzenia i dostosowywania formatów dokumentów elektronicznych są szybsze i łatwiejsze.
 
-ER obecnie obsługuje arkusze w formatach tekstowym, XML, Microsoft Word i OPENXML. Jednak interfejs rozszerzeń zapewnia obsługę dodatkowych formatów.
+ER obecnie obsługuje arkusze w formatach TEKST, XML, JSON, PDF, Microsoft Word, Microsoft Excel i OPENXML.
 
 ## <a name="capabilities"></a>Możliwości
 
@@ -48,6 +74,10 @@ Aparat GER ma następujące cechy:
 
 ## <a name="key-concepts"></a>Podstawowe pojęcia
 
+### <a name="main-data-flow"></a>Główny przepływ danych
+
+[![Główny przepływ danych ER.](./media/ger-main-data-flow.jpg)](./media/ger-main-data-flow.jpg)
+
 ### <a name="components"></a>Składniki
 
 ER obsługuje następujące typy składników:
@@ -59,74 +89,6 @@ ER obsługuje następujące typy składników:
 
 Aby uzyskać więcej informacji, zobacz [Składniki raportowania elektronicznego](er-overview-components.md).
 
-#### <a name="data-model-and-model-mapping-components"></a>Składniki modelu danych i mapowania modelu
-
-Składnik typu Model danych jest abstrakcyjnym przedstawieniem struktury danych. Służy do opisu konkretnego obszaru domeny biznesowej w sposób na tyle szczegółowy, by spełnić wymagania raportowania w tej domenie. Składnik będący modelem danych zawiera następujące elementy:
-
-- <a name="DataModelComponent"></a>Model danych jako zestaw jednostek biznesowych określonej domeny oraz hierarchiczna definicja relacji między tymi jednostkami.
-- <a name="ModelMappingComponent"></a>Mapowanie modelu, które łączy wybrane źródła danych aplikacji z poszczególnymi elementami tego modelu danych, które określają w czasie wykonywania przepływ danych i reguły wprowadzania danych biznesowych do składnika będącego modelem danych.
-
-Jednostka biznesowa modelu danych jest przedstawiona jako kontener (rekord). Właściwości jednostki biznesowej są przedstawione jako składniki danych (pola). Każdy element danych ma niepowtarzalną nazwę, etykietę, opis i wartość. Wartość każdego elementu danych może być zaprojektowane tak, aby była rozpoznawana jako ciąg tekstowy, liczba całkowita, liczba rzeczywista, data, element stałotekstowy, wartość logiczna itd. Ponadto może to być inny rekord lub lista rekordów.
-
-Pojedynczy składnik typu Model danych może zawierać kilka hierarchii jednostek biznesowych właściwych dla danej domeny. Może również zawierać mapowania modelu obsługujące przepływ danych właściwy dla raportu w czasie wykonywania. Hierarchie są rozróżniane przez pojedynczy rekord, który został wybrany jako główny dla mapowania modelu. Na przykład model danych obszaru domeny płatności może obsługiwać następujące mapowania:
-
-- Firma \> Dostawca \> Transakcje płatności w przypadku domeny rozrachunków z dostawcami
-- Odbiorca \> Firma \> Transakcje płatności w przypadku domeny rozrachunków z odbiorcami
-
-Zauważ, że jednostki biznesowe, np. Firma i Transakcje płatności, są projektowane tylko jeden raz. Następnie różne mapowania używają ich wielokrotnie.
-
-Mapowanie modelu obsługujące wychodzące dokumenty elektroniczne ma następujące możliwości:
-
-- Może wykorzystywać różne typy danych jako źródła danych dla modelu danych. Na przykład może używać tabel, jednostek danych, metod lub tekstów stałych.
-- Obsługuje parametry wejściowe użytkownika, które można zdefiniować jako źródła danych modelu danych, gdy część danych musi być określona w czasie wykonywania.
-- Obsługuje przekształcanie danych w wymagane grupy. Umożliwia także filtrowanie, sortowanie i sumowanie danych, a także dołączanie logicznych pól obliczanych, które są projektowane za pomocą formuł przypominających formuły programu Microsoft Excel. Aby uzyskać więcej informacji, zobacz [Projektant formuł w raportowaniu elektronicznym (ER)](general-electronic-reporting-formula-designer.md)).
-
-Mapowanie modelu obsługujące przychodzące dokumenty elektroniczne ma następujące możliwości:
-
-- Może używać różnych aktualizowanych elementów danych jako celów. Te elementy danych obejmują tabele, jednostki danych i widoki. Dane mogą być aktualizowane przy użyciu danych z przychodzących dokumentów elektronicznych. W jednym mapowaniu modelu można użyć wielu elementów docelowych.
-- Obsługuje parametry wejściowe użytkownika, które można zdefiniować jako źródła danych modelu danych, gdy część danych musi być określona w czasie wykonywania.
-
-Składnik typu Model danych jest projektowany dla każdej domeny biznesowej i służy jako ujednolicone źródło danych dla raportowania, które izoluje raportowanie od fizycznej implementacji źródeł danych. Reprezentuje właściwe dla domeny koncepcje i funkcje biznesowe w formie, która upraszcza początkowe projektowanie formatów raportowania i ich dalszą obsługę.
-
-#### <a name="format-components-for-outgoing-electronic-documents"></a><a name="FormatComponentOutbound"></a>Składniki typu Format dla wychodzących dokumentów elektronicznych
-
-Składnik typu Format określa schemat danych wyjściowych raportowania, które będą generowane w czasie wykonywania. Schemat składa się z następujących elementów:
-
-- Format definiujący strukturę i zawartość wychodzącego dokumentu elektronicznego generowanego podczas wykonywania.
-- Źródła danych jako zestaw parametrów wejściowych użytkownika i modelu danych właściwego dla domeny, który wykorzystuje wybrany model mapowania.
-- Mapowanie formatu jako zestaw powiązań źródeł danych formatu zawierających poszczególne elementy formatu, które podczas wykonywania określają przepływ danych i reguły generowania danych wyjściowych w tym formacie.
-- Sprawdzanie poprawności formatu jako zestaw konfigurowalnych reguł sterujących generowaniem raportu w czasie wykonywania w zależności od kontekstu pracy. Na przykład może istnieć reguła, która zatrzymuje generowanie danych wyjściowych płatności dla dostawcy i zgłasza wyjątek, gdy brakuje określonych atrybutów wybranego dostawcy, takich jak numer konta bankowego.
-
-Składnik typu Format obsługuje następujące funkcje:
-
-- Tworzenie danych wyjściowych raportowania jako pojedynczych plików w różnych formatach, takich tekstowy, XML, dokument programu Microsoft Word lub arkusz.
-- Tworzenie wielu plików oddzielnie i hermetyzacja tych plików do plików zip.
-
-Składnik typu Format umożliwia załączanie określonych plików, które mogą być używane w wynikach raportowania:
-
-- Skoroszyty programu Excel zawierające arkusze, których można używać jako szablonów danych wyjściowych w formacie arkusza OPENXML.
-- Pliki programu Word zawierające dokumenty, których można używać jako szablonów danych wyjściowych w formacie dokumentów programu Microsoft Word.
-- Inne pliki, które mogą zostać włączone w dane wyjściowe formatu jako pliki wstępnie zdefiniowane.
-
-Na poniższej ilustracji przedstawiono sposób przepływu danych w tych formatach.
-
-[![Przepływ danych dla składników typu Format dokumentów wychodzących.](./media/ER-overview-02.png)](./media/ER-overview-02.png)
-
-Aby uruchomić jedną konfigurację formatu modułu ER i wygenerować wychodzący dokument elektroniczny, należy określić mapowanie dla konfiguracji formatu.
-
-#### <a name="format-components-for-incoming-electronic-documents"></a><a name="FormatComponentInbound"></a>Składniki typu Format dla przychodzących dokumentów elektronicznych
-
-Składnik typu Format określa schemat dokumentu przychodzącego, który jest importowany w czasie wykonywania. Schemat składa się z następujących elementów:
-
-- Format definiujący strukturę i zawartość dokumentu przychodzącego dokumentu elektronicznego zawierającego dane importowane podczas wykonywania. Składnik typu Format służy do analizowania składni przychodzących dokumentów w różnych formatach, takich jak tekst i XML.
-- Mapowanie formatu, które wiąże poszczególne elementy formatu z elementami modelu danych konkretnej domeny. W czasie wykonywania elementy w modelu danych określają przepływ danych oraz reguły importowania danych z przychodzącego dokumentu, a następnie zapisują te dane w modelu danych.
-- Sprawdzanie poprawności formatu jako zestaw konfigurowalnych reguł sterujących importem danych w czasie wykonywania w zależności od kontekstu pracy. Na przykład może istnieć reguła, która zatrzymuje import danych z wyciągu bankowego zawierającego płatności dla dostawcy i zgłasza wyjątek, gdy brakuje określonych atrybutów dostawcy, takich jak kod identyfikacyjny dostawcy.
-
-Na poniższej ilustracji przedstawiono sposób przepływu danych w tych formatach.
-
-[![Przepływ danych dla składników typu Format dokumentów przychodzących.](./media/ER-overview-03.png)](./media/ER-overview-03.png)
-
-Aby uruchomić jedną konfigurację formatu modułu ER w celu zaimportowania danych z przychodzącego dokumentu elektronicznego, należy określić żądane mapowanie konfiguracji formatu oraz punkt integracji mapowania modelu. Tego samego mapowania modelu i miejsc docelowych można używać w połączeniu z różnymi formatami dla różnych rodzajów dokumentów przychodzących.
 
 #### <a name="component-versioning"></a>Przechowywanie wersji składnika
 

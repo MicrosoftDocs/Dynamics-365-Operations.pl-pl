@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-08-03
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 210d92b9fd962708b141b79f3634f142cca9787a
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 2942b141eb3a5b83fb39b0de721bae60c074e01c
+ms.sourcegitcommit: f5885999e008a49fe072d95f15e239905c24918a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777774"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900717"
 ---
 # <a name="purchasing-cxml-enhancements"></a>Udoskonalenia cXML dotyczące zakupów
 
@@ -141,7 +141,7 @@ Po zakończeniu ustawiania wszystkich właściwości i innych ustawień katalogu
 
 Jak wspomniano w sekcji [Ustaw właściwości zamówienia](#set-order-properties), jeśli chcesz, aby dostarczony cXML zawierał tekst z notatek dołączonych do odpowiedniego zamówienia zakupu i / lub rekordów dostawcy, możesz ustawić **POCOMMENTS** i/lub **VENDCOMMENTS** na _TRUE_ w konfiguracji katalogu zewnętrznego. W tej sekcji przedstawiono więcej szczegółów na temat wybierania i przetwarzania tych załączników przez system, jeśli są one używane.
 
-Aby określić typy notatek, dla których będzie wyglądał system, przejdź do **Zaopatrzenie i sourcing \> Ustawienia \> Formularze \> Ustawienia formularza**. Następnie na karcie **Zamówienie zakupu** w polu **Uwzględnij dokumenty typu** wybierz typ notatki, która ma być dołączana. Zostaną uwzględnione tylko notatki tekstowe, a nie załączniki dokumentów.
+Aby określić typy notatek, których będzie szukał system, przejdź do **Zaopatrzenie i sourcing \> Ustawienia \> Formularze \> Ustawienia formularza**. Następnie na karcie **Zamówienie zakupu** w polu **Uwzględnij dokumenty typu** wybierz typ notatki, która ma być dołączana. Zostaną uwzględnione tylko notatki tekstowe, a nie załączniki dokumentów.
 
 ![Strona Ustawienia formularza.](media/cxml-form-setup.png "Strona Ustawienia formularza")
 

@@ -1,7 +1,7 @@
 ---
 title: Zmień klasyfikację środków trwałych
-description: Aby przeklasyfikować środek trwały, należy przenieść go do nowej grupy środków trwałych lub przypisać mu nowy numer środka trwałego w tej samej grupie.
-author: saraschi2
+description: W tym temacie wyjaśniono proces przeklasyfikowania środków trwałych. Aby przeklasyfikować środek trwały, należy przenieść go do nowej grupy środków trwałych lub przypisać mu nowy numer środka trwałego w tej samej grupie.
+author: moaamer
 ms.date: 05/14/2019
 ms.topic: business-process
 ms.prod: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 75e7d40a647577687f0be671500968a883a1d24643af39224ae0d9e43ff206ed
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a5fadebe685810d6833d1cb0581ed9a4869cc124
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713217"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883653"
 ---
 # <a name="reclassify-fixed-assets"></a>Zmień klasyfikację środków trwałych
 

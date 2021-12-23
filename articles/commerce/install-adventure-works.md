@@ -2,7 +2,7 @@
 title: Instalacja motywu Adventure Works
 description: W tym temacie opisano sposób zainstalowania motywu Adventure Works w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/21/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: ad704c6c3b95abcfd52e449a0ffbb4b82b236498ae8d2775c4e65811de3ef503
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d9d0d04c1a698c765b5effcca88624e6fb99da64
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763843"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913709"
 ---
 # <a name="install-the-adventure-works-theme"></a>Instalacja motywu Adventure Works
 
@@ -32,7 +32,7 @@ W tym temacie opisano sposób zainstalowania motywu Adventure Works w Microsoft 
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Zanim zainstalujesz motyw Adventure Works, musisz mieć środowisko Dynamics 365 Commerce (Commerce w wersji 10.0.20 lub nowszej), które zawiera Retail Cloud Scale Unit (RCSU), Commerce Online Software Development Kit (SDK) i bibliotekę modułu Commerce. Aby uzyskać informacje o tym, jak zainstalować pakiet Commerce SDK i bibliotekę modułów, zobacz [aktualizacje SDK i biblioteki modułów](e-commerce-extensibility/sdk-updates.md). 
+Zanim zainstalujesz motyw Adventure Works, musisz mieć środowisko Dynamics 365 Commerce (Commerce w wersji 10.0.20 lub nowszej), które zawiera Retail Cloud Scale Unit (RCSU), Commerce Online Software Development Kit (SDK) i bibliotekę modułu Commerce. Aby uzyskać informacje o tym, jak zainstalować pakiet Commerce SDK i bibliotekę modułów, zobacz [Konfigurowanie środowiska developmentu](e-commerce-extensibility/setup-dev-environment.md). 
 
 ## <a name="installation-steps"></a>Kroki instalacji
 
@@ -48,11 +48,19 @@ Pakiet motywów Adventure Works jest dostępny w pliku danych **dynamics365-comm
 
     `"@msdyn365-commerce-theme:registry" "https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/npm/registry/"`  
     
-Aby zainstalować pakiet w środowisku lokalnym, uruchom następujące polecenie z wiersza polecenia. To polecenie automatycznie aktualizuje plik package.json, aby zawierał zależność.
+Aby zainstalować pakiet w środowisku lokalnym, uruchom polecenie `yarn add THEME_PACKAGE@VERSION` z wiersza polecenia, gdzie **THEME_PACKAGE** jest pakietem motywu (@msdyn365-commerce-theme/adventureworks-theme-kit), a **VERSION** jest numerem wersji używanej biblioteki modułów. Bardzo ważne jest, aby wersje pakietu motywu i biblioteki modułów były takie same. Aby znaleźć poprawny numer wersji biblioteki modułów do użycia, otwórz plik package.json i odszukaj wartość **starter-pack** w sekcji **zależności**. W poniższym przykładzie plik package.json używa biblioteki modułów w wersji 9.32, która mapuje się na wersję Dynamics 365 Commerce 10.0.22.  
 
-`yarn add @msdyn365-commerce-theme/adventureworks-theme-kit`
+```json
+"dependencies": {
+    "@msdyn365-commerce-modules/starter-pack": "9.32",
+}
+```
 
-W pliku **package.json** należy zaktualizować wersję motywu do określonej wersji.
+W poniższym przykładzie pokazano, jak uruchomić polecenie `yarn add`, aby dodać wersję 9.32 motywu „Adventure Works”. Polecenie automatycznie aktualizuje plik package.json, aby zawierał zależność.
+
+`yarn add @msdyn365-commerce-theme/adventureworks-theme-kit@9.32`
+
+Aby uzyskać więcej informacji na temat aktualizacji wersji biblioteki modułów, zobacz [Aktualizacje zestawu SDK i biblioteki modułów](e-commerce-extensibility/sdk-updates.md). 
 
 > [!IMPORTANT]
 > - Wersja motywu powinna być zgodna z wersją biblioteki modułów, aby zapewnić, że wszystkie funkcje działają zgodnie z oczekiwaniami. 

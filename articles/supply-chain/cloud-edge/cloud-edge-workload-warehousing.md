@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 081b6968575a8a057903d96de2833a98552ed123
-ms.sourcegitcommit: a46f0bf9f58f559bbb2fa3d713ad86875770ed59
+ms.openlocfilehash: ae8e9791b590a32581b66853f55ea11bc389bb19
+ms.sourcegitcommit: 96515ddbe2f65905140b16088ba62e9b258863fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "7813733"
+ms.lasthandoff: 12/04/2021
+ms.locfileid: "7891778"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Obciążenia pracą dotyczące zarządzania magazynem dla jednostek skalowania chmury i urządzenia brzegowego
 
@@ -50,6 +50,11 @@ W zależności od procesów biznesowych ten sam rekord danych może zmienić pra
 > Niektóre dane można tworzyć zarówno dla centrum, jak i dla jednostki skalowania. Przykłady: **Numery identyfikacyjne** i **Numery partii**. Obsługa konfliktów jest dedykowana w przypadku scenariusza, w którym podczas tego samego cyklu synchronizacji ten sam unikatowy rekord jest tworzony zarówno w centrum, jak i jednostce skalowania. Jeśli się tak zdarzy, następna synchronizacja nie powiedzie się i będzie trzeba przejść do folderu **Administrowanie systemem > Zapytania > Zapytania dotyczące obciążenia pracą > Zduplikowane rekordy**, w których można wyświetlać i scalać dane.
 
 ## <a name="outbound-process-flow"></a>Przepływ procesu wychodzącego
+
+Przed wdrożeniem obciążenia pracą zarządzania magazynem w jednostce skalowania chmury lub krawędzi należy upewnić się, że w centrum przedsiębiorstwa jest włączona funkcja *Obsługa jednostki skalowania do zwalniania do magazynu zamówień wychodzących*. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
+
+- **Moduł:** *Zarządzanie magazynem*
+- **Nazwa funkcji:** *Obsługa jednostki skalowania do zwalniania do magazynu zamówień wychodzących*
 
 Proces wychodzących praw własności danych zależy od tego, czy jest używany proces planowania wysyłki ładunku. We wszystkich przypadkach centrum jest właścicielem *dokumentów źródłowych*, takich jak zamówienia sprzedaży i zamówienia przeniesienia, a także procesu alokacji zamówień i powiązanych danych transakcji zamówień. Jednak w przypadku korzystania z procesu planowania wysyłki ładunku obciążenia pracą zostaną utworzone w centrum i dlatego początkowo należą do centrum. W ramach procesu *zwalniania do magazynu* własność danych ładunku jest przenoszona do dedykowanego wdrożenia jednostki skalowania, które stanie się właścicielem kolejnego *przetwarzania grupy czynności wysyłki* (takich jak alokacja pracy, praca uzupełniania zapasów i tworzenie pracy popytu). Dlatego pracownicy magazynu mogą przetwarzać wyłącznie pracę zamówień sprzedaży wychodzącej i zamówienia przeniesienia za pomocą aplikacji mobilnej Warehouse Management, która jest połączona z wdrożeniem, w którym jest uruchomione określone obciążenie pracą jednostki skalowania.
 
@@ -202,7 +207,7 @@ W poniższej tabeli pokazano, które funkcje wychodzące są obsługiwane i gdzi
 | Drukowanie dokumentów powiązanych z ładunkiem                           | Tak | Tak|
 | List przewozowy i generowanie WPW                            | Nie  | Tak|
 | Potwierdzenie wysyłki                                             | Nie  | Tak|
-| Potwierdzenie wysyłki z „potwierdzeniem i przeniesieniem”            | Nie  | Nie |
+| Potwierdzenie wysyłki z „potwierdzeniem i przeniesieniem”            | Nie  | Tak|
 | Przetwarzanie dokumentów dostawy i faktur                        | Tak | Nie |
 | Szybkie pobranie (zamówienia sprzedaży i przeniesienia)                    | Nie  | Tak, bez usuwania rezerwacji dla dokumentów źródłowych|
 | Nadmiarowe pobranie (zamówienia sprzedaży i przeniesienia)                     | Nie  | Tak|
@@ -212,8 +217,8 @@ W poniższej tabeli pokazano, które funkcje wychodzące są obsługiwane i gdzi
 | Etykieta grupy czynności                                                   | Nie  | Tak|
 | Podział pracy                                                   | Nie  | Tak|
 | Przetwarzanie pracy — skierowane przez transport ładunku            | Nie  | Nie |
-| Zmniejsz ilość pobraną                                       | Nie  | Nie |
-| Wycofaj pracę                                                 | Nie  | Nie |
+| Zmniejsz ilość pobraną                                       | Nie  | Tak|
+| Wycofaj pracę                                                 | Nie  | Tak|
 | Wycofaj potwierdzenie wysyłki                                | Nie  | Tak|
 
 ### <a name="inbound"></a>Przychodzące
@@ -227,7 +232,7 @@ W poniższej tabeli pokazano, które funkcje przychodzące są obsługiwane i gd
 | Koszt z wyładunkiem i odbiór towaru w drodze                       | Tak | Nie |
 | Potwierdzenie wysyłki wychodzącej                                    | Tak | Nie |
 | Zwolnienie zamówienia zakupu do magazynu (przetwarzanie zamówienia magazynowego) | Tak | Nie |
-| Anulowanie wierszy zamówienia magazynowego<p>Należy zauważyć, że jest to obsługiwane tylko wtedy, gdy nie utworzono żadnej rezerwacji dla wiersza</p> | Tak | Nie |
+| Anulowanie wierszy zamówienia magazynowego<p>Należy zauważyć, że jest to obsługiwane tylko wtedy, gdy nie utworzono żadnej rezerwacji dla wiersza podczas przetwarzania operacji *żądania anulowania*</p> | Tak | Nie |
 | Przyjęcie i odłożenie pozycji z zamówienia zakupu                       | <p>Tak, &nbsp;gdy &nbsp;nie ma&nbsp; zamówienia magazynowego</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | <p>Tak, jeśli zamówienie zakupu nie jest częścią <i>ładunku</i></p> |
 | Przyjęcie i odłożenie wiersza zamówienia zakupu                       | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | <p>Tak, jeśli zamówienie zakupu nie jest częścią <i>ładunku</i></p></p> |
 | Zwróć odebrane zamówienie i odłóż                              | Tak | Nie |
@@ -246,7 +251,7 @@ W poniższej tabeli pokazano, które funkcje przychodzące są obsługiwane i gd
 | Przyjęcie z utworzeniem pracy *jakości w kontroli jakości*       | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Nie |
 | Przyjęcie z utworzeniem zlecenia kontroli jakości                            | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Nie |
 | Przetwarzanie pracy — skierowane przez *odłożenie klastra*                 | Tak | Nie |
-| Przetwarzanie pracy z *szybkim pobraniem*                               | Tak | Nie |
+| Przetwarzanie pracy z *szybkim pobraniem*                               | Tak | Tak |
 | Ładowanie numeru identyfikacyjnego                                           | Tak | Tak |
 
 ### <a name="warehouse-operations-and-exception-handing"></a>Operacje magazynowe i przekazywanie wyjątków

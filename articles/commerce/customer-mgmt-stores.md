@@ -1,8 +1,8 @@
 ---
 title: Zarządzanie klientami w sklepach
 description: W tym temacie wyjaśniono, w jaki sposób detaliści mogą włączyć funkcje zarządzania klientami w punkcie sprzedaży (POS) w Microsoft Dynamics 365 Commerce.
-author: josaw1
-ms.date: 09/01/2021
+author: gvrmohanreddy
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 395bc7049ba32c1e572730e482b81613a4873c59
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 29e45419f712e25092b473e34144ac1146e4ed9b
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675232"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913633"
 ---
 # <a name="customer-management-in-stores"></a>Zarządzanie klientami w sklepach
 
@@ -42,38 +42,13 @@ Sprzedawcy detaliczni mogą używać strony **Wszystkie sklepy** w programie Com
 
 Skojarzenia sprzedaży mogą przechwytywać wiele adresów dla odbiorcy. Imię i nazwisko odbiorcy oraz numer telefonu są dziedziczone z informacji kontaktowych skojarzonych z każdym adresem. Skrócona karta **Adresy** rekordu odbiorcy zawiera pole **Cel**, które mogą edytować skojarzenia sprzedaży. Jeśli typem odbiorcy jest **Osoba**, domyślną wartością jest **Strona główna**. Jeśli typem odbiorcy jest **Organizacja**, domyślną wartością jest **Biznes**. Inne wartości, które obsługuje to pole, obejmują: **Strona główna**, **Biuro** i **Poczta**. Wartość pola **Kraj** w adresie jest dziedziczona z adresu podstawowego określonego na stronie **Jednostka operacyjna** w Commerce headquarters w **Administrowanie organizacją \> Organizacje \> Jednostki organizacyjne**.
 
-## <a name="sync-customers-and-async-customers"></a>Synchronizuj odbiorców i odbiorców asynchronicznych
 
-> [!IMPORTANT]
-> Zawsze gdy POS działa w trybie offline, system automatycznie tworzy klientów asynchronicznie, nawet gdy tryb asynchronicznego tworzenia klientów jest wyłączony. Dlatego, niezależnie od wyboru między synchronicznym i asynchronicznym tworzeniem klienta, administratorzy centrali Commerce muszą utworzyć i zaplanować cykliczne zadanie wsadowe dla **zadania P**, czyli **Synchronizowanie odbiorców i partnerów biznesowych z zadania w trybie asynchronicznym** (nazywanego wcześniej zadaniem **synchronizacji klientów i partnerów biznesowych w trybie asynchronicznym**) oraz zadania **1010**, tak aby odbiorcy asynchroniczni byli konwertowani do odbiorców asynchronicznych w centrali Commerce.
-
-W handlu istnieją dwa tryby tworzenia odbiorcy: Synchroniczny (lub Synchronizuj) i Asynchroniczny (lub Asynchroniczny). Domyślnie odbiorcy są tworzona synchronicznie. Są one tworzone w programie Commerce Headquarters w czasie rzeczywistym. Tryb tworzenia odbiorcy synchronizacji jest korzystne, ponieważ nowi odbiorcy mogą od razu podlegać wyszukiwaniu w różnych kanałach. Ma jednak także minusy. Ponieważ generuje on wywołania usługi [Commerce Data Exchange: Real-time Service](dev-itpro/define-retail-channel-communications-cdx.md#realtime-service) może to mieć wpływ na wydajność, jeśli wywołanych jest wiele równoczesnych wywołań tworzenia klientów.
-
-Jeśli dla opcji **Utwórz odbiorcy w trybie asynchronicznym** jest ustawiona wartość **Tak** w profilu funkcji sklepu (**Retail i Commerce \> Ustawienia kanału \> Ustawienia sklepu online \> Profile funkcji**), wywołania usługi Real-time Service nie są używane do tworzenia rekordów klientów w bazie danych kanału Tryb tworzenia usługi Async Customer nie ma wpływu na wydajność centrali w programie Commerce Headquarters. Tymczasowy unikatowy identyfikator GUID jest przypisywany do każdego nowego rekordu usługi Async Customer i używany jako identyfikator konta odbiorcy. Ten identyfikator GUID nie jest wyświetlany użytkownikom w POS. Zamiast tego ci użytkownicy zobaczą identyfikator konta odbiorcy **Oczekująca synchronizacja**. 
-
-### <a name="convert-async-customers-to-sync-customers"></a>Konwertuj klientów Async na klientów synchronizacji
-
-Aby przekonwertować odbiorców asynchronicznych na odbiorców synchronizacji, należy najpierw uruchomić **zadanie P**, aby wysłać odbiorców asynchronicznych do programu Commerce Headquarters. Następnie uruchom zadanie **Synchronizowanie klientów i partnerów biznesowych z trybu asynchronicznego** (nazywanego wcześniej zadaniem **synchronizacji klientów i partnerów biznesowych w trybie asynchronicznym**), aby utworzyć identyfikatory kont klientów. Na koniec uruchom zadanie **1010**, aby zsynchronizować identyfikatory nowych kont odbiorcy z kanałami.
-
-### <a name="async-customer-limitations"></a>Ograniczenia dotyczące odbiorcy usługi Async
-
-Funkcje usługi Async Customer mają obecnie następujące ograniczenia:
-
-- Nie można edytować rekordów odbiorcy asynchronicznego, jeśli odbiorca nie zostanie utworzony w programie Commerce Headquarters i nowy identyfikator konta odbiorcy zostanie zsynchronizowany z powrotem z kanałem. Dlatego nie można zapisać adresu odbiorcy asynchronicznego, dopóki ten odbiorca nie zostanie zsynchronizowany z centralą Commerce, ponieważ dodanie adresu odbiorcy jest zaimplementowane wewnętrznie jako operacja edycji w profilu odbiorcy. Jeśli jednak jest włączona funkcja **Włącz asynchroniczne tworzenie adresów klientów**, adresy odbiorców mogą być także zapisywane dla odbiorców asynchronicznych.
-- Przynależności nie można skojarzyć z klientami asynchronicznym. Dlatego nowi odbiorcy asynchroniczni nie dziedziczą przynależności po odbiorcy domyślnym.
-- Nie można wystawiać kart lojalnościowych dla odbiorców asynchronicznych, chyba że nowy identyfikator konta odbiorcy zostanie zsynchronizowany z powrotem z kanałem.
-- Nie można przechwycić pomocniczych adresów e-mail i numerów telefonów dla odbiorców asynchronicznych.
-
-Chociaż niektóre z wcześniej wymienionych ograniczeń mogą spowodować, że użytkownik wybrał opcję Synchronizuj klienta dla swojej firmy, zespół Commerce pracuje nad tym, aby możliwości odbiorcy asynchronicznego ściśle odpowiadały możliwościom synchronizacji klientów. Na przykład w wersji 10.0.22 systemu Commerce nowa funkcja **Włącz asynchroniczne tworzenie adresów klientów**, która może zostać włączona w obszarze roboczym **Zarządzanie funkcjami** asynchronicznie zapisuje nowo utworzone adresy odbiorców zarówno dla odbiorców synchronicznych, jak i odbiorców asynchronicznych. Aby zapisać te adresy w profilu klienta w centrali Commerce, musisz tworzyć i planować cykliczne zadanie wsadowe dla **zadania P**, zadanie **Synchronizowanie klientów i partnerów biznesowych z trybu asynchronicznego** oraz zadanie **1010**, aby dowolni odbiorcy asynchroniczni byli konwertowani na odbiorców synchronicznych w centrali Commerce.
-
-### <a name="customer-creation-in-pos-offline-mode"></a>Tworzenie klienta w trybie offline POS
-
-Zawsze gdy POS działa w trybie offline, system automatycznie tworzy klientów asynchronicznie, nawet gdy tryb asynchronicznego tworzenia klientów jest wyłączony. Dlatego, jak wspomniano wcześniej, administratorzy Commerce muszą tworzyć i planować cykliczne zadanie wsadowe dla **zadania P**, zadania **Synchronizowanie klientów i partnerów biznesowych z trybu asynchronicznego** oraz zadanie **1010**, aby dowolni odbiorcy asynchroniczni byli konwertowani na odbiorców synchronicznych w centrali Commerce.
-
-> [!NOTE]
-> Jeśli dla opcji **Filtruj udostępnione tabele danych klientów** jest ustawiona wartość **Tak** na stronie **Schematu kanału sprzedaży** (**Retail i Commerce \> ustawienia Headquarters \> Harmonogram handlu \> Grupy baz danych kanału**), rekordy klientów nie są tworzone w trybie offline w punktach sprzedaży. Aby uzyskać więcej informacji, zobacz [Wykluczenie danych offline](dev-itpro/implementation-considerations-cdx.md#offline-data-exclusion).
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
+
+[Asynchroniczny tryb tworzenia klientów](async-customer-mode.md)
+
+[Konwertowanie klientów asynchronicznych na synchronicznych](convert-async-to-sync.md)
 
 [Atrybuty odbiorcy](dev-itpro/customer-attributes.md)
 

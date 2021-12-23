@@ -1,7 +1,7 @@
 ---
 title: Instalowanie i łączenie aplikacji magazynowej
 description: W tym temacie opisano sposób instalowania aplikacji magazynowej na każdym urządzeniu przenośnym i konfigurowania jej w celu nawiązania połączenia ze środowiskiem aplikacji Microsoft Dynamics 365 Supply Chain Management. Poszczególne urządzenia można konfigurować ręcznie lub można importować ustawienia połączenia za pośrednictwem pliku lub przez skanowanie kodu QR.
-author: MarkusFogelberg
+author: Mirzaab
 ms.date: 05/25/2020
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 267694
 ms.assetid: d95d43b2-13ff-4189-a71a-3a1fb57d55ed
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 094d7f0f5642653c6e059952783041b1430e98d6
-ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
+ms.openlocfilehash: 9f123f217aabcc7500832fafb15199043048b5e5
+ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7384642"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "7902278"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>Instalowanie i łączenie aplikacji magazynu
 

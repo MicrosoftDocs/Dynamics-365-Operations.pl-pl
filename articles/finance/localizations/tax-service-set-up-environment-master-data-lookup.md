@@ -2,7 +2,7 @@
 title: Włącz odnośniki danych główne do konfiguracji obliczania podatku
 description: W tym temacie wyjaśniono, jak skonfigurować i włączyć funkcję wyszukiwania danych podstawowych obliczania podatku.
 author: kai-cloud
-ms.date: 11/03/2021
+ms.date: 11/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,21 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: dafeac01aaff62cbbd5ce6ecb0af0ef111f513b2
-ms.sourcegitcommit: 76fe020f9c5f4e5cc2e93f5ccb3b040f12b0363e
+ms.openlocfilehash: 455e8becfdfa910a3733719653e1a91557b2f59a
+ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "7749517"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7867359"
 ---
 # <a name="enable-master-data-lookup-for-tax-calculation-configuration"></a>Włącz odnośniki danych główne do konfiguracji obliczania podatku 
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak skonfigurować i włączyć funkcję wyszukiwania danych podstawowych obliczania podatku. Dostępna jest lista rozwijana, na podstawie których można wybrać wartości w konfiguracji obliczania podatku dla takich pól, jak **Konto dostawcy**, **Kod towaru** czy **Termin dostawy**. Te wartości pochodzą ze połączonego środowiska Microsoft Dynamics 365 Finance, używając źródła danych Microsoft Dataverse.
+W tym temacie wyjaśniono, jak skonfigurować i włączyć funkcję wyszukiwania danych podstawowych obliczania podatku. Dostępna jest lista rozwijana, na podstawie których można wybrać wartości w konfiguracji obliczania podatku dla takich pól, jak **Osoba prawna**, **Konto dostawcy**, **Kod pozycji** czy **Termin dostawy**. Te wartości pochodzą ze połączonego środowiska Microsoft Dynamics 365 Finance, używając źródła danych Microsoft Dataverse.
+
+> [!NOTE] 
+> Funkcja wyszukiwania danych głównych obliczenia podatku jest opcjonalna. Możesz pominąć następujące kroki, jeśli włączysz funkcję **Obsługa źródeł danych w usłudze obliczania podatku Dataverse** w usłudze Regulatory Configuration Service (RCS). W takim przypadku lista rozwijana nie będzie jednak dostępna w konfiguracji obliczania podatku.
 
 1. Konfigurowanie integracji platformy Microsoft Power Platform w Microsoft Dynamics Lifecycle Services (LCS). Aby uzyskać więcej informacji, zobacz [Integracja Microsoft Power Platform - Omówienie dodatków](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). Po ukończeniu tego kroku nazwa środowiska Microsoft Power Platform pojawi się w sekcji **Integracja Power Platform**.
 2. Przejdź do [centrum administracyjnego Microsoft Power Platform](https://admin.powerplatform.microsoft.com/environments) i wybierz nazwę środowiska. Podano adres URL środowiska.

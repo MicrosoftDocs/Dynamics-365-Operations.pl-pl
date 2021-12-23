@@ -2,7 +2,7 @@
 title: Rozpoczynanie pracy z fakturowaniem elektronicznym dla Meksyku
 description: Ten temat zawiera informacje, które pomogą w rozpoczęciu pracy z Faktury elektroniczne dla Meksyku.
 author: gionoder
-ms.date: 09/22/2020
+ms.date: 12/01/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 4266d7bca163b1d6aa1261e086f10a4f0f5d7e360051db169fbcab34363c81c3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f512a6208bc85cd5796ce9515d2bc440f92ea79f
+ms.sourcegitcommit: 385fc4e9c641b43734ddb030893904489361af7d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742160"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "7881598"
 ---
 # <a name="get-started-with-electronic-invoicing-for-mexico"></a>Rozpoczynanie pracy z fakturowaniem elektronicznym dla Meksyku
 
@@ -35,7 +35,15 @@ Ten temat zawiera informacje, które pomogą w rozpoczęciu pracy z Faktury elek
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Przed wykonaniem kroków opisanych w tym temacie należy wykonać kroki opisane w temacie [Rozpoczynanie pracy z Fakturami elektronicznymi](e-invoicing-get-started.md).
+Przed wykonaniem kroków opisanych w tym temacie należy wykonać kroki opisane w temacie [Rozpoczynanie pracy z administracją usługi Faktury elektroniczne](e-invoicing-get-started-service-administration.md) i [Rozpoczynanie pracy z fakturami elektronicznymi](e-invoicing-get-started.md).
+
+## <a name="set-up-the-cadena-xslt"></a>Konfigurowanie środowiska usług Cadena XSLT
+
+Aby dodać schemat Cadena XSLT do funkcji globalizacji w przetwarzaniu CFDI, należy wykonać następujące kroki.
+
+1. Pobierz schemat z [witryny internetowej SAT](http://www.sat.gob.mx/sitio_internet/cfd/3/cadenaoriginal_3_3/cadenaoriginal_3_3.xslt).
+2. Skompresuj schemat do pliku ZIP.
+3. Zapisz plik XSLT na koncie magazynu platformy Azure ustawionym w środowisku usługi dla nowego kontenera.
 
 ## <a name="rcs-setup"></a>Konfiguracja RCS
 
@@ -127,6 +135,17 @@ Aby przesłać anulowanie faktury CFDI, wymagane są konfiguracje funkcji **Anul
 
 > [!NOTE]
 > Wykonaj te same kroki w celu zaktualizowania adresu URL dla akcji **Wywołaj usługę meksykańskiego certyfikatu PAC** dla ustawień funkcji **Anuluj** i **Żądanie anulowania**.
+
+### <a name="set-up-the-path-for-the-cadena-xlst-schema"></a>Ustawianie ścieżki dla schematu Cadena XSLT
+
+1. Na stronie **Ustawienia wersji funkcji** na karcie **Zmienne** wybierz nazwę zmiennej **DigitalSignatureXSLT**.
+2. W polu **Wartości** wprowadź: {"containerUrl":"https://&lt;AccountStorageName&gt;.blob.core.windows.net/&lt;ContainerName&gt;","path":"&lt;RelativePath&gt;"}
+   
+    gdzie: <RelativePath> = folder\\folder\\filename z podwójnym ukośnikiem odwrotnym, ContainerName musi oznaczać kontener używany dla usługi.
+   
+    Przykładową zmienną może być:
+    
+    {"path":"xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx\\dev\\cadena_xslt","containerUrl":https://yyyyyyyyyy.blob.core.windows.net/containername}
 
 ## <a name="assign-the-draft-version-to-an-e-invoicing-environment"></a>Przypisz wersję roboczą do środowiska fakturowania elektronicznego
 

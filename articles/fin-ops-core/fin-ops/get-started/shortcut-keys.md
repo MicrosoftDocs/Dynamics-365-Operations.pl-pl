@@ -2,7 +2,7 @@
 title: Skróty klawiaturowe
 description: W tym temacie przedstawiono omówienie kombinacji klawiszy skrótów, które mogą być używane podczas pracy z aplikacjami Finance and Operations.
 author: jasongre
-ms.date: 11/12/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 969cd6aaf2d7c4cee7bb95029f19741372f915eb
-ms.sourcegitcommit: ab32fc90ea498ce3b629384f78cbe1aee747f157
+ms.openlocfilehash: 6e6f6faf75bb9dc2b11b3a27a886b1674cc7b339
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "7800200"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913525"
 ---
 # <a name="keyboard-shortcuts"></a>Skróty klawiaturowe
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Poniższe skróty klawiaturowe umożliwiają szybkie i wydajne wprowadzanie danych w aplikacjach Finance and Operations.
 
@@ -150,6 +149,7 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 | Wykonaj akcję domyślną w tabeli<blockquote>[!NOTE] Ten skrót jest włączony, gdy fokus znajduje się w komórce zawierającej hiperłącze, a wszystkie komórki w tej kolumnie zawierają hiperłącza.</blockquote> | Enter                           |
 | Przełączanie fokusa między wybranym wierszem a wierszem nagłówka                                                               | Alt+Shift+H                     |
 | Powiększenie/pomniejszenie bieżącej kolumny (z fokusem w wierszu nagłówka)                                                  | Strzałka w prawo / Strzałka w lewo        |
+| Przenieś bieżącą kolumnę do następnego/poprzedniego położenia (z fokusem w wierszu nagłówka)                                   | Ctrl+Shift+strzałka w prawo / Ctrl+Shift+strzałka w lewo |
 | Otwarcie filtrowania siatki dla bieżącej kolumny (z fokusem w wierszu nagłówka)                                              | Enter                           |
 | Zmień rozmiar bieżącej kolumny, aby dopasować ją do zawartości (z fokusem w wierszu nagłówka)                                           | A (lub kliknij dwukrotnie uchwyt zmiany rozmiaru kolumny) |
 

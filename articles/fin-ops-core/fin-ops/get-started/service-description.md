@@ -2,19 +2,19 @@
 title: Opis usługi dla aplikacji Finance and Operations
 description: Ten temat zawiera opis usługi dla aplikacji Finance and Operations.
 author: tomhig
-ms.date: 11/17/2021
+ms.date: 12/07/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 262cf00bdca63876c284be40954ca5de559b993a
-ms.sourcegitcommit: f11ad8d7ee8a4d2ee1a1bb601622b50e14955c4a
+ms.openlocfilehash: f7ce73018fda79156cc7ef3d4e1faa3fedf966f8
+ms.sourcegitcommit: b101c21f972fdad2667431f712222e040cd69d43
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "7825407"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "7898396"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Opis usługi dla aplikacji Finance and Operations
 
@@ -314,7 +314,7 @@ Plany i procedury odzyskiwania po awarii firmy Microsoft są regularnie badane w
 | Firma Microsoft rezerwuje środowisko pomocnicze w sparowanych centrum danych platformy Azure podczas wdrażania podstawowego wystąpienia produkcyjnego. Aby uzyskać więcej informacji, zobacz temat [Ciągłość działania i odzyskiwanie po awarii (BCDR): sparowane regiony świadczenia usługi Azure](/azure/best-practices-availability-paired-regions). | None |
 | Podczas wdrażania podstawowego wystąpienia produkcyjnego firma Microsoft uaktywnia nadmiarowość geograficzną usługi Azure SQL i magazynu Blob Storage platformy Azure. | None |
 | Firma Microsoft uaktywnia automatyczne tworzenie kopii zapasowych w bazach danych Azure SQL Database. | None |
-| <p>Gdy wystąpi awaria, firma Microsoft ustala, czy dla klienta ma zostać wykonany tryb failover i czy zostaną utracone dane. Mogą zostać utracone dane z maksymalnie pięciu sekund. Aby uzyskać więcej informacji, zobacz temat [Przywracanie geograficzne bazy danych Azure SQL Database](https://azure.microsoft.com/blog/azure-sql-database-geo-restore).</p><p>W przypadku utraty danych firma Microsoft prosi klienta o wylogowanie w celu wykonania trybu failover.</p> | W przypadku utraty danych od klienta może być wymagane pisemne zatwierdzenie wyzwolenia trybu failover. |
+| <p>Gdy wystąpi awaria, firma Microsoft ustala, czy dla klienta ma zostać wykonany tryb failover i czy zostaną utracone dane. W zależności od charakteru i czasu upłynie 15 minut, gdy klient może doznać utraty danych. | W przypadku utraty danych od klienta może być wymagane pisemne zatwierdzenie wyzwolenia trybu failover. |
 | Gdy dochodzi do trybu failover, dana usługa działa w trybie ograniczonym. Nie można wyzwolić konserwacji aktualizacji w trybie failover. | W trybie failover klient nie może zażądać wdrożenia pakietu ani innych zwykłego żądania konserwacji. |
 | Po przywróceniu sprawności centrum danych firma Microsoft włącza ponownie wystąpienie produkcyjne w podstawowym regionie świadczenia usługi Azure. Zostaje wznowione normalne działanie. | Od klienta może być wymagane pisemne zatwierdzenie przełączenia z powrotem na wystąpienie produkcyjne w podstawowym regionie świadczenia usługi Azure. |
 

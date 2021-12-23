@@ -2,7 +2,7 @@
 title: Omówienie zarządzania świadczeniami
 description: Ten temat zawiera omówienie funkcji zarządzania świadczeniami w programie Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/23/2021
+ms.date: 12/06/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7c4709a63201dd1a02c8879151762886f644ce22
-ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
+ms.openlocfilehash: dc06fd2ef4992b4ef2e20ace4f5c6bcc0bffb9d2
+ms.sourcegitcommit: e06b7d4de6d5ee7ae491d437d6c0365608a5380b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "7417416"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7892509"
 ---
 # <a name="benefits-management-overview"></a>Omówienie zarządzania świadczeniami
 
@@ -109,21 +109,29 @@ Za pomocą programów kredytu elastycznego można rejestrować pracowników na �
 
 ## <a name="configure-required-employee-information"></a>Skonfiguruj wymagane informacje o pracowniku
 
-Aby można było zarejestrować pracowników w ramach świadczeń, musisz podać wymagane informacje dla nich. Każdy pracownik musi mieć stanowisko. Musisz zapisać pracowników do stałego planu wynagrodzeń w dniu ich rozpoczęcia lub muszą mieć roczną kwotę wynagrodzenia zasiłkowego. Ponadto w **sekcji Szczegóły zatrudnienia** na stronie **Pracownik** należy wybrać wartość w polu **Częstotliwość wypłaty świadczeń**.
+Aby można było zarejestrować pracowników w ramach świadczeń, musisz podać wymagane informacje dla nich. 
 
-Jeśli użytkownik ma pracownika, który otrzymuje dodatkowe wynagrodzenie, na przykład prowizje, może dodać kwotę **Świadczenia do wynagrodzenia rocznego** z rekordu pracownika etatowego. Przy ustalaniu kwot pokrycia w Human Resources zamiast kwoty rocznej dla stałej płacy będzie używana kwota **Świadczenia do wynagrodzenia rocznego**. **Świadczenia do wynagrodzenia rocznego** musi być ważne na dzień rozpoczęcia lub początek okresu świadczenia, w zależności od tego, która z nich jest najpóźniejsza. Jeżeli dla pracownika zostanie odnotowane zarówno stałe wynagrodzenie, jak i kwota rocznego wynagrodzenia za świadczenia, przy określaniu kwot pokrycia będzie się uwzględniać roczne wynagrodzenie za świadczenia.
+Pracownik musi mieć przypisane **stanowisko**. **Stanowisko** można przypisać do pracownika na stronach **Pracownik** lub **Stanowisko** aktualizując **przypisanie pracownika**. 
+
+Następnie należy zarejestrować pracowników w stałym planie wynagrodzeń w dniu ich rozpoczęcia lub muszą mieć **roczną kwotę wynagrodzenia zasiłkowego**. Przed przypisaniem **stałego wynagrodzenia** do pracownika etatowego musi być przypisane **stanowisko**. 
+
+> [!NOTE] 
+> **Data rozpoczęcia dla stałego wynagrodzenia** nie może być wcześniejsza niż **data przypisania stanowiska**.
+
+Alternatywnie, jeśli użytkownik ma pracownika, który otrzymuje dodatkowe wynagrodzenie, na przykład prowizje, może dodać kwotę **Świadczenia do wynagrodzenia rocznego** z rekordu pracownika etatowego. Przy ustalaniu kwot pokrycia w Human Resources zamiast kwoty **Roczne wynagrodzenie z tytułu świadczenia** będzie używana kwota **Stałe roczne wynagrodzenie**. **Świadczenia do wynagrodzenia rocznego** musi być ważne na dzień rozpoczęcia lub początek okresu świadczenia, w zależności od tego, która z nich jest najpóźniejsza. Jednak stanowisko nie musi mieć przypisanego **rocznego wynagrodzenia z tytułu świadczenia**. Aby włączyć funkcję **Roczne wynagrodzenie z tytułu świadczenia** przejdź na stronę **udostępnionych parametrów rozwiązania Human Resources**, na karcie **Zarządzanie świadczeniami**. Ta funkcja jest domyślnie wyłączona.
+
+> [!IMPORTANT]
+> Jeżeli dla pracownika zostanie wprowadzone zarówno **stałe wynagrodzenie**, jak i kwota **rocznego wynagrodzenia za świadczenia**, przy określaniu kwot pokrycia będzie się uwzględniać **roczne wynagrodzenie za świadczenia**. W sekcji **Szczegóły zatrudnienia** na stronie **Pracownik** należy wybrać wartość w polu **Częstotliwość wypłaty świadczeń**.
 
 ## <a name="configure-optional-employee-information"></a>Skonfiguruj opcjonalne informacje o pracowniku
-
 Podczas tworzenia planu świadczeń, w którym używane są stawki oparte na płci lub wieku, należy wprowadzić datę urodzenia i płeć dla pracownika, aby obliczyć koszty świadczeń.
 
 ## <a name="process-employees-to-determine-eligibility"></a>Przetwarzaj pracowników, aby określić uprawnienia
+Zanim pracownicy będą mogli zostać zarejestrowani w planach, uruchamiane jest przetwarzanie uprawnień w celu określenia, do których planów są uprawnieni. Wyniki procesu kwalifikowalności można wyświetlić w **przeglądarce wyników procesu**. Aby uzyskać więcej informacji, zobacz [Przetwarzanie uprawnień do rejestracji](hr-benefits-process-enrollment-eligibility.md).
 
-Zanim pracownicy będą mogli zostać zarejestrowani w planach, uruchamiane jest przetwarzanie uprawnień w celu określenia, do których planów są uprawnieni. Wyniki procesu kwalifikowalności można wyświetlić w przeglądarce wyników procesu. Aby uzyskać więcej informacji, zobacz [Przetwarzanie uprawnień do rejestracji](hr-benefits-process-enrollment-eligibility.md).
+## <a name="employees-select-plans-using-employee-self-service-optional"></a>Pracownicy wybierają plany przy użyciu funkcji **Samoobsługa pracownika etatowego** (opcjonalnie)
 
-## <a name="employees-select-plans-via-employee-self-service-optional"></a>Pracownicy wybierają plany za pośrednictwem samoobsługi pracowników (opcjonalnie)
-
-Gdy nastąpi otwarta rejestracja, pracownicy są nowo zatrudnieni lub ma miejsce wydarzenie życiowe, pracownicy mogą wybierać lub aktualizować swoje świadczenia za pośrednictwem samoobsługi pracowniczej. Aby uzyskać więcej informacji, należy zapoznać się z tematem [Skonfiguruj samoobsługę pracownika](hr-benefits-setup-employee-self-service.md).
+Gdy nastąpi otwarta rejestracja, pracownicy są nowo zatrudnieni lub ma miejsce wydarzenie życiowe, pracownicy mogą wybierać lub aktualizować swoje świadczenia za pośrednictwem **samoobsługi pracownika etatowego**. Aby uzyskać więcej informacji, należy zapoznać się z tematem [Skonfiguruj samoobsługę pracownika](hr-benefits-setup-employee-self-service.md).
 
 ## <a name="confirm-employee-plan-selections"></a>Potwierdź wybór planu pracownika
 

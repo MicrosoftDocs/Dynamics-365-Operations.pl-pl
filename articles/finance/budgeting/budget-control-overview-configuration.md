@@ -2,7 +2,7 @@
 title: Omówienie kontroli budżetu
 description: W tym temacie przedstawiono funkcję kontroli budżetu i przedstawiono informacje ułatwiające konfigurowanie kontroli budżetu w celu optymalizacji zarządzania zasobami finansowymi organizacji.
 author: panolte
-ms.date: 06/25/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0c8e7a08796a7f1c537978e406f53531e0f0682e6b5a769ced9d771063c30d5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 21277361a3d05c57be7aeaa05348723e23873ef6
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772886"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890732"
 ---
 # <a name="budget-control-overview"></a>Omówienie kontroli budżetu
 
@@ -78,9 +78,7 @@ Następnie na karcie **Uprawnienia ponadbudżetowe** można określić grupy uż
 Następnie na karcie **Dostępne środki budżetowe** można zdefiniować formułę, która będzie służyła do obliczania dostępnych środków budżetowych. Zależnie od tego, na ile konserwatywnie organizacja zarządza swoimi zasobami finansowymi albo jakie istnieją przepisy lub wymagania branży, w obliczeniach mogą być uwzględniane wersje robocze i niezaksięgowane dokumenty. 
 
 > [!NOTE]
-> Jeśli obliczenie zostanie zmodyfikowane podczas cyklu budżetu, zmiany nie wpłyną na dokumenty, które wcześniej pomyślne przeszły kontrolę budżetu i zostały zaksięgowane lub sfinalizowane. W wersji aplikacji 10.0.17 nowa funkcja **Śledź tylko kwoty w obliczeniach dostępnych środków budżetowych** została udostępniona dla klientów z ograniczeniami. Ta funkcja umożliwia zmianę danych śledzonych w tabelach BudgetSourceTracking. Gdy ta funkcja jest włączona, kwoty są przechowywane tylko wtedy, gdy zostaną wybrane do użycia w obliczeniach dostępnych środków budżetowych. Aby poprosić o włączenie funkcji **Śledź tylko kwoty w obliczeniach dostępnych środków budżetowych**, skontaktuj się z pomocą techniczną. 
-
-### <a name="documents-and-journals"></a>Dokumenty i arkusze
+> Jeśli obliczenie zostanie zmodyfikowane podczas cyklu budżetu, zmiany nie wpłyną na dokumenty, które wcześniej pomyślne przeszły kontrolę budżetu i zostały zaksięgowane lub sfinalizowane. Funkcja o nazwie **Śledź tylko kwoty w obliczeniach dostępnych środków budżetowych** zmianę danych, które są śledzone w tabelach BudgetSourceTracking. Gdy ta funkcja jest włączona, kwoty są przechowywane tylko wtedy, gdy zostaną wybrane do użycia w obliczeniach dostępnych środków budżetowych. Więcej informacji można znaleźć w artykule [Dostępne środki budżetowe](budget-funds-available.md).
 
 Następnie na karcie **Dokumenty i arkusze** można wybrać, które dokumenty źródłowe i arkusze będą podlegać kontroli budżetu, i określić, czy kontrola nastąpi na poziomie wprowadzania wierszy czy całego dokumentu. 
 

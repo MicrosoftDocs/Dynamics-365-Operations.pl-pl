@@ -2,7 +2,7 @@
 title: Operacje online i offline w punkcie sprzedaży (POS)
 description: Ten temat zawiera szczegółowe informacje dotyczące operacji punktu sprzedaży (POS) w Dynamics 365 Commerce. Określa, gdzie w aplikacji można wywołać operacje oraz czy są dostępne w trybie offline..
 author: jblucher
-ms.date: 02/21/2020
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: dc4835258c7a1968c51e4d1a3a4d0eb33aaf2cddf31efd965adff0ac80aa4ec1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 88daca466e0e01bf3870b6eeee0628e0c159fea3
+ms.sourcegitcommit: 971456c197820421f108ad7345001cc1b6c99949
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745291"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "7875484"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Operacje online i offline w punkcie sprzedaży (POS)
 
@@ -72,18 +72,17 @@ Poniższe kolumny określają, gdzie można wywołać informacje:
 | 121 | Wyczyść dane sprzedawcy | Ta operacja nie jest obsługiwana. | Nie dotyczy | Nie dotyczy | Nie dotyczy | Nie dotyczy | Nie |
 | 1055 | Zamknięcie zmiany | Zamknij bieżącą zmian, wydrukuj Końcowy raport sprzedaży i wyloguj użytkownika z systemu. | Tak | Tak | Tak | Nie | Nie |
 | 139 | Sfinalizuj transakcję | Monituje użytkownika o wybranie metodzie płatności | Tak | Tak | Nie | Tak | Nie |
-| 620 | Utwórz zamówienie odbiorcy | Konwertuj transakcję punktu sprzedaży na zamówienie odbiorcy. | Tak | Tak | Nie | Tak\* | Nie |
 | 925 | Kopiuj czek bankowy | Ta operacja nie jest obsługiwana. | Nie dotyczy | Nie dotyczy | Nie dotyczy | Nie dotyczy | Tak |
 | 620 | Utwórz zamówienie odbiorcy | Konwertuj transakcję punktu sprzedaży na zamówienie odbiorcy. | Tak | Tak | Nie | Tak\* | Nie |
 | 621 | Tworzenie oferty | Konwertuj transakcję punktu sprzedaży na ofertę sprzedaży. | Tak | Tak | Nie | Tak\* | Nie |
-| 636 | Utwórz transakcję detaliczną | Ta operacja umożliwia użytkownikowi utworzenie standardowej transakcji sprzedaży, gdy domyśle zachowanie punktu sprzedaży to utworzenie zamówień odbiorcy. | Tak | Tak | Nie | Tak | Nie |
+| 636 | Utwórz transakcję detaliczną | Utwórz standardową transakcję sprzedaży, gdy domyślne zachowanie punktu sprzedaży to utworzenie zamówień odbiorcy. | Tak | Tak | Nie | Tak | Nie |
 | 600 | Odbiorca | Dodaj określonego klienta do transakcji. | Nie | Nie | Nie | Tak | Nie |
 | 1100 | Wpłata na konto odbiorcy | Wykonaj płatność na konto odbiorcy. | Tak | Tak | Tak | Tak | Tak |
-| 612 | Dodaj odbiorcę | Ta operacja umożliwia użytkownikowi utworzenie nowego rekordu odbiorcy | Tak | Tak | Tak | Tak† | Nie |
+| 612 | Dodaj odbiorcę | Tworzenie rekordu nowego klienta. | Tak | Tak | Tak | Tak† | Nie |
 | 603 | Wyczyść dane odbiorcy | Usuń odbiorcę z bieżącej transakcji. | Tak | Tak | Nie | Tak | Nie |
-| 602 | Wyszukiwanie odbiorcy | Ta operacja umożliwia użytkownikowi wyszukanie rekordu odbiorcy przez przejście strony wyszukiwania odbiorców w punkcie sprzedaży. | Tak | Tak | Tak | Tak | Nie |
+| 602 | Wyszukiwanie odbiorcy | Wyszukaj rekord odbiorcy przez przejście do strony wyszukiwania odbiorców w punkcie sprzedaży. | Tak | Tak | Tak | Tak | Nie |
 | 609 | Transakcje odbiorcy | Ta operacja nie jest obsługiwana. | Nie dotyczy | Nie dotyczy | Nie dotyczy | Nie dotyczy | Nie |
-| 917 | Stan połączenia z bazą danych | Ta operacja umożliwia użytkownikowi wyświetlenie ustawień bieżącego połączenia i przełączenie między trybem online a offline. | Tak | Tak | Tak | Tak | Nie |
+| 917 | Stan połączenia z bazą danych | Wyświetl ustawień bieżącego połączenia i przełączenie między trybem online a offline. | Tak | Tak | Tak | Tak | Nie |
 | 1200 | Zadeklaruj kwotę początkową | Deklaruj kwotę w szufladzie kasowej na początku dnia lub zmiany. | Tak | Tak | Tak | Tak | Nie |
 | 132 | Zastąpienie wpłaty | Zastąp wpłatę domyślną dla zamówień odbiorcy. | Tak | Tak | Nie | Tak\* | Nie |
 | 913 | Wyłącz tryb projektowania | Ta operacja nie jest obsługiwana. | Nie dotyczy | Nie dotyczy | Nie dotyczy | Nie dotyczy | Nie |
@@ -96,14 +95,14 @@ Poniższe kolumny określają, gdzie można wywołać informacje:
 | 615 | Edytuj ofertę | Wycofaj wybraną ofertę, aby umożliwić jej zmianę w punkcie sprzedaży. | Nie | Nie | Nie | Nie | Nie |
 | 518 | Konta wypływu/wypłat | Rejestruj pieniądze wyjęte z szuflady kasowej w związku z okazjonalnymi wydatkami. | Tak | Tak | Tak | Tak | Nie |
 | 919 | Logowanie rozszerzone | Przypisz lub usuń uprawnienie do logowania się przez skanowanie kodu kreskowego lub zbliżenie karty. | Tak | Tak | Tak | Tak | Nie |
-| 1201 | Pozycja zmiennoprzecinkowa | Ta operacja umożliwia użytkownikowi dodanie pieniędzy do bieżącej szuflady lub zmiany. | Tak | Tak | Tak | Tak | Nie |
+| 1201 | Przyjęcie do kasy | Dodaj pieniądze do bieżącej szuflady lub zmiany. | Tak | Tak | Tak | Tak | Nie |
 | 1218 | Wymuś odblokowanie urządzenia peryferyjnego | System wykorzystuję tę operację wewnętrznie do odblokowania urządzeń peryferyjnych punktu sprzedaży. | Nie dotyczy | Nie dotyczy | Nie dotyczy | Nie dotyczy | Nie |
 | 520 | Saldo na karcie upominkowej | Pokaż saldo karty upominkowej. | Tak | Tak | Nie | Nie | Nie |
 | 708 | Dezaktywuj urządzenie | Dezaktywuj bieżące urządzenie, aby nie możny było użyć go jako kasy punktu sprzedaży. | Nie | Nie | Nie | Nie | Nie |
 | 804 | Operacja przychodząca | Umożliwia dostęp do funkcji zarządzania przychodzącymi zapasami w magazynie sklepu. | Tak | Nie | Tak | Nie| Nie |
 | 517 | Konta wpływu/wpłat | Zarejestruj pieniądze, które są wprowadzane do szuflady kasowej z przyczyn innych niż sprzedaż. | Tak | Tak | Tak | Tak | Nie |
 | 801 | Wyszukiwanie w magazynie | Sprawdź ilości dostępne, zamówione i dostępność zapasów (ATP) dla bieżącego sklepu i innych dostępnych lokalizacji. | Tak | Tak | Tak | Nie | Nie |
-| 122 | Komentarz do faktury | Ta operacja umożliwia użytkownikowi wprowadzenie komentarza na temat bieżącej transakcji. | Tak | Tak | Nie | Tak | Nie |
+| 122 | Komentarz do faktury | Wprowadź komentarz dotyczący bieżącej transakcji. | Tak | Tak | Nie | Tak | Nie |
 | 511 | Wystaw notę kredytową | Wystaw notę kredytową, aby podać załącznik zamiast zwrotu. | Tak | Tak | Nie | Nie | Nie |
 | 512 | Wystaw kartę upominkową | Wystaw nową kartę upominkową na określoną kwotę. | Tak | Tak | Nie | Nie | Nie |
 | 625 | Wydaj kartę lojalnościową | Wystaw kartę lojalnościową odbiorcy, aby odbiorca mógł uczestniczyć w programie lojalnościowym dla sklepu. | Tak | Tak | Tak | Nie | Nie |
@@ -147,42 +146,42 @@ Poniższe kolumny określają, gdzie można wywołać informacje:
 | 1056 | Drukuj częściowy raport sprzedaży | Drukuj częściowy raport sprzedaży dla bieżącej zmiany. | Tak | Tak | Tak | Nie | Nie |
 | 103 | Komentarz do produktu | Dodaj komentarz do wybranego wiersza towaru w transakcji. | Tak | Tak | Nie | Tak | Nie |
 | 100 | Sprzedaż produktu | Dodaj określony produkt do transakcji. | Tak | Tak | Tak | Tak | Nie |
-| 108 | Wyszukiwanie produktu | Ta operacja umożliwia użytkownikowi wyszukanie produktu przez przejście strony wyszukiwania produktów w punkcie sprzedaży. | Tak | Tak | Tak | Tak | Nie |
-| 633 | Data ważności oferty | Ta operacja umożliwia użytkownikowi wyświetlenie lub zmodyfikowanie daty ważności oferty sprzedaży. | Tak | Tak | Nie | Tak\* | Nie |
+| 108 | Wyszukiwanie produktu | Wyszukaj rekord produktu przez przejście do strony wyszukiwania produktów w punkcie sprzedaży. | Tak | Tak | Tak | Tak | Nie |
+| 633 | Data ważności oferty | Wyświetl lub zmodyfikuj datę ważności oferty sprzedaży. | Tak | Tak | Nie | Tak\* | Nie |
 | 627 | Oblicz ponownie | Oblicz ponownie wszystkie wiersze zamówienia odbiorcy i podatki, na podstawie bieżącej konfiguracji. | Tak | Tak | Nie | Tak\* | Nie |
 | 143 | Oblicz ponownie opłaty | Umożliwia ponowne obliczenie opłat automatycznych zastosowanych do zamówienia. | Tak | Tak | Nie | Nie| Nie |
-| 515 | Odwołaj zamówienie | Ta operacja umożliwia użytkownikowi wyszukanie i wycofanie zamówień odbiorców i ofert sprzedaży. | Tak | Tak | Tak | Nie | Nie |
-| 504 | Wznów transakcję | Ta operacja umożliwia użytkownikowi wycofanie wcześniej zawieszone transakcji z bieżącego sklepu. | Tak | Tak | Nie | Tak‡ | Nie |
+| 515 | Odwołaj zamówienie | Wyszukaj i wycofaj zamówienia odbiorców i oferty sprzedaży. | Tak | Tak | Tak | Nie | Nie |
+| 504 | Wznów transakcję | Wycofaj wcześniej zawieszone transakcje z bieżącego sklepu. | Tak | Tak | Nie | Tak‡ | Nie |
 | 305 | Zrealizuj punkty lojalnościowe | Ta operacja nie jest obsługiwana. | Nie dotyczy | Nie dotyczy | Nie dotyczy | Nie dotyczy | Tak |
-| 635 | Zwróć opłaty transportowe | Ta operacja umożliwia użytkownikowi zwrócenie opłat transportowych za anulowane zamówienie. | Nie | Nie | Nie | Nie | Nie |
+| 635 | Zwróć opłaty transportowe | Zwróć opłaty transportowe dla anulowanego zamówienia. | Nie | Nie | Nie | Nie | Nie |
 | 644 | Usuń kod kuponu | Monituj użytkownika o usunięcie kuponów, przez zaznaczenie ich na liście kuponów, które są aktualnie skojarzone z transakcją. | Tak | Tak | Nie | Tak | Nie |
 | 1057 | Ponowne drukowanie raportu końcowego | Wydrukuj ponownie raport końcowy sprzedaży dla poprzedniej lub wybranej zmiany. | Tak | Tak | Tak | Nie | Nie |
 | 1216 | Resetuj hasło | Ta operacja umożliwia użytkownikowi z uprawnieniami do resetowania hasła zresetowanie hasła dla pracownika za pomocą hasła tymczasowego. | Tak | Tak | Tak | Nie | Nie |
-| 1219 | Otwieranie adresu URL w aplikacji punktu sprzedaży | Ta operacja umożliwia użytkownikowi otwieranie adresu URL skonfigurowanego przez administratora w punkcie sprzedaży. | Tak | Tak | Tak | Tak | Nie | 
+| 1219 | Otwieranie adresu URL w punkcie sprzedaży | Otwórz skonfigurowany adres URL administratora w punkcie sprzedaży. | Tak | Tak | Tak | Tak | Nie |
 | 109 | Zwrot produktu | Dokonaj zwrotu poszczególnych produktów. Następny zeskanowany produkt jest wyświetlany jako zwrócony i ma ujemną cenę i ilość. | Tak | Tak | Nie | Tak | Nie |
 | 114 | Transakcja zwrotu | Wycofaj poprzednią transakcję według jej numeru paragonu, aby zwrócić niektóre lub wszystkie produkty. | Tak | Tak | Tak | Tak§ | Nie |
 | 1211 | Przekazanie pieniędzy do sejfu | Przekazać pieniądze z kasy do sejfu. | Tak | Tak | Tak | Tak | Nie |
 | 516 | Faktura sprzedaży | Ta operacja umożliwia odbiorcy dokonanie płatności za wybraną fakturę sprzedaży. | Tak | Tak | Nie | Nie | Nie |
-| 502 | Sprzedawca | Ta operacja umożliwia użytkownikowi ustawienie wartości opcji **Osoba przyjmująca sprzedaż** w zamówieniu sprzedaży dla zamówień odbiorców w punkcie sprzedaży. | Tak | Tak | Nie | Tak\* | Nie |
+| 502 | Sprzedawca | Ustaw wartość opcji **Osoba przyjmująca sprzedaż** w zamówieniu sprzedaży dla zamówień odbiorców w punkcie sprzedaży. | Tak | Tak | Nie | Tak\* | Nie |
 | 2000 | Zarządzanie harmonogramem | Ta operacja nie jest jeszcze obsługiwana. | Tak | Tak | Tak | Nie | Nie |
 | 2001 | Planowanie żądań | Ta operacja nie jest jeszcze obsługiwana. | Tak | Tak | Tak | Nie | Nie |
 | 622 | Wyszukaj zamówienia | Ta operacja umożliwia użytkownikom wstępne skonfigurowanie przycisków punktu sprzedaży w celu wyszukiwania według pozycji, odbiorcy lub kategorii. | Tak | Tak | Tak | Tak | Nie |
 | 1213 | Wyszukaj adres wysyłkowy | Ta operacja nie jest obsługiwana. | Nie dotyczy | Nie dotyczy | Nie dotyczy | Nie dotyczy | Nie |
-| 709 | Wybierz stację sprzętową | Ta operacja umożliwia użytkownikowi wybranie stacji sprzętowej z listy dostępnych stacji sprzętowych. | Tak | Tak | Tak | Tak | Nie |
-| 637 | Ustaw domyślnego przedstawiciela handlowego w transakcji | Ta operacja umożliwia użytkownikowi wybranie jednej z uprawnionych grup prowizji sprzedaży (przedstawiciele handlowi) jako domyślnego przedstawiciela handlowego dla wierszy dodanych później. | Tak | Tak | Nie | Tak | Nie |
+| 709 | Wybierz aplikację hardware station | Wybierz stację sprzętową z listy dostępnych stacji sprzętowych. | Tak | Tak | Tak | Tak | Nie |
+| 637 | Ustaw domyślnego przedstawiciela handlowego w transakcji | Wybierz jedną z uprawnionych grup prowizji sprzedaży (przedstawiciele handlowi) jako domyślnego przedstawiciela handlowego dla wierszy dodanych później. | Tak | Tak | Nie | Tak | Nie |
 | 105 | Ustaw ilość | Zmień ilość w wierszu towaru w transakcji. | Tak | Tak | Nie | Tak | Nie |
-| 638 | Ustaw przedstawiciela handlowego w wierszu | Ta operacja umożliwia użytkownikowi wybranie jednej z uprawnionych grup prowizji sprzedaży (przedstawiciele handlowi) dla aktualnie wybranego wiersza. | Tak | Tak | Nie | Tak | Nie |
+| 638 | Ustaw przedstawiciela handlowego w wierszu | Wybierz jedną z uprawnionych grup prowizji sprzedaży (przedstawiciele handlowi) dla aktualnie wybranego wiersza. | Tak | Tak | Nie | Tak | Nie |
 | 630 | Wyślij wszystkie produkty | Ustaw tryb dostawy na **Wysyłka** dla wszystkich pozycji w wierszu. | Tak | Tak | Nie | Tak\* | Nie |
 | 629 | Wyślij zaznaczone produkty | Ustaw tryb dostawy na **Wysyłka** dla wybranych wierszy. | Tak | Tak | Nie | Tak\* | Nie |
 | 115 | Pokaż arkusz | Pokaż arkusz sklepu. Można wyświetlić transakcje, ponownie wydrukować paragony i paragony za upominek i wycofać do zwrotu. | Tak | Tak | Tak | Tak\*\* | Nie |
-| 802 | Inwentaryzacja | Ta operacja umożliwia użytkownikowi utworzenie lub zmodyfikowania arkuszy inwentaryzacji dla magazynu fizycznego lub liczby cykli. | Tak | Tak | Tak | Nie | Nie |
+| 802 | Inwentaryzacja | Utwórz lub zmodyfikuj arkusze inwentaryzacji dla magazynu fizycznego lub liczby cykli. | Tak | Tak | Tak | Nie | Nie |
 | 401 | Menu podrzędne | Ta operacja umożliwia wyświetlenie innej połączonej siatki przycisków. | Tak | Tak | Tak | Tak | Nie |
 | 1054 | Zawieszenie zmiany | Zawieś bieżącą zmianę, aby można było uaktywnić nową lub inną zmianę na bieżącej kasie. | Tak | Tak | Tak | Nie | Nie |
 | 503 | Zawieś transakcję | Zawieś bieżącą transakcję sprzedaży, aby wycofać ją ponownie później w sklepie. | Tak | Tak | Nie | Tak‡ | Nie |
 | 1004 | Rejestrator zadań | Otwórz Rejestrator zadań, aby zarejestrować kroki procedury w punkcie sprzedaży. | Nie | Nie | Nie | Tak | Nie |
-| 1052 | Deklaracja środków płatniczych | Ta operacja umożliwia użytkownikowi określenie kwoty pieniężnej w szufladzie dla każdej liczonej metody płatności. | Tak | Tak | Tak | Tak | Nie |
-| 1210 | Pobranie środków płatniczych | Ta operacja umożliwia użytkownikowi usunięcie pieniędzy z bieżącej szuflady lub zmiany. | Tak | Tak | Tak | Tak | Nie |
-| 920 | Zegar | Ta operacja umożliwia użytkownikowi wbicie początku i końca zmian oraz przerw. | Tak | Tak | Tak | Nie | Nie |
+| 1052 | Deklaracja środków płatniczych | Określ kwoty pieniężnej w szufladzie dla każdej liczonej metody płatności. | Tak | Tak | Tak | Tak | Nie |
+| 1210 | Pobranie środków płatniczych | Usuń pieniądze z bieżącej szuflady lub zmiany. | Tak | Tak | Tak | Tak | Nie |
+| 920 | Zegar | Wbij początek i koniec zmiany roboczej oraz przerw. | Tak | Tak | Tak | Nie | Nie |
 | 302 | Kwota rabatu ogółem | Wprowadź kwotę rabatu transakcji. Ta operacja dotyczy tylko towarów, na które można udzielać rabatów, i tylko w określonych limitach rabatu. | Tak | Tak | Nie | Tak | Nie |
 | 303 | Procent rabatu ogółem | Wprowadź procent rabatu transakcji. Ta operacja dotyczy tylko towarów, na które można udzielać rabatów, i tylko w określonych limitach rabatu. | Tak | Tak | Nie | Tak | Nie |
 | 501 | Komentarz do transakcji | Dodaj komentarz do bieżącej transakcji. | Tak | Tak | Nie | Tak | Nie |

@@ -2,7 +2,7 @@
 title: Możliwości siatki
 description: W tym temacie opisano kilka zaawansowanych funkcji formantu siatki. Musisz włączyć nową funkcje siatki, aby można było uzyskać dostęp do tych możliwości.
 author: jasongre
-ms.date: 10/25/2021
+ms.date: 12/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: a21a41399b5884fda9cce214f99851ffa93bbc43
-ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
+ms.openlocfilehash: ba3640cf13fecc54f4cc58cd8996e434cd16cf60
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "7700144"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890887"
 ---
 # <a name="grid-capabilities"></a>Możliwości siatki
 
@@ -119,6 +119,9 @@ W taki sam sposób, w jaki można wybrać (lub usunąć zaznaczenie) wszystkie w
 
 ### <a name="hiding-column-names"></a>Ukrywanie nazw kolumn
 Podczas grupowania danych domyślnym zachowaniem jest wyświetlenie nazwy kolumny w wierszu nagłówka grupy. Można wybrać opcję wyłączania nazwy kolumny w wierszach nagłówka grupy, wybierając **Opcje siatki** > **Ukryj nazwę kolumny grupy**.
+
+### <a name="grouping-on-date-and-time-columns"></a>Grupowanie w kolumnach daty i godziny
+Począwszy od wersji 10.0.24 dla pól Data lub Data/godzina, ta opcja została dodana do grupowania według roku, miesiąca lub dnia. Grupa „wartość” w odpowiednim wierszu nagłówka będzie odpowiadać formatowi z tego pola. Ponadto w polach Data/godzina i Godzina można grupować według godzin, minut lub sekund.    
 
 ## <a name="freezing-columns"></a>Zamrażanie kolumn
 Niektóre kolumny w siatce mogą być na tyle ważne dla kontekstu, że nie powinny być przewijane w widoku. Zamiast tego możesz chcieć, aby wartości w tych kolumnach były zawsze widoczne. Funkcja **Zamroź kolumny w siatce** zapewnia użytkownikom tę elastyczność. 

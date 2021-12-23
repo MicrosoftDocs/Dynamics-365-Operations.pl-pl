@@ -2,7 +2,7 @@
 title: Zamknięcie na koniec roku
 description: W tym temacie opisano wymaganą konfigurację i kroki wykonywania procesu zamknięcia roku w księdze głównej.
 author: kweekley
-ms.date: 07/10/2021
+ms.date: 12/06/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5677ebeee6b8260280d4c9c7c8a7a0e18e7bd78f68a42d23967948a2e75120cd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 04eeb8886d74fa8c633d2ac4e9e47aa28a12ee30
+ms.sourcegitcommit: e06b7d4de6d5ee7ae491d437d6c0365608a5380b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778273"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7892484"
 ---
 # <a name="year-end-close"></a>Zamknięcie na koniec roku
 
@@ -44,7 +44,7 @@ Na stronie **Konto główne**:
 Na stronie **Parametry księgi głównej** w obszarze **Zamknięcie roku obrachunkowego**:
 
 - Opcja **Usuń istniejące wpisy na koniec roku przy ponownym zamknięciu roku** służy do określenia, czy wygenerowana przez system transakcja otwarcia z poprzedniego zamknięcia na koniec roku powinna zostać usunięta po ponownym uruchomieniu zamknięcia na koniec roku. Jeśli ta opcja jest ustawiona na **Tak**, poprzednie transakcje otwarcia i opcjonalnego zamknięcia są usuwane, a nowa transakcja otwarcia lub zamknięcia jest tworzona na podstawie bieżących sald. Jeśli ta opcja jest ustawiona na **Nie**, poprzednie transakcje otwarcia i opcjonalne zamknięcia pozostają, a dodatkowa transakcja otwarcia lub zamknięcia jest tworzona w celu przeniesienia sald do przodu z transakcji korygujących, które zostały zaksięgowane po zamknięciu poprzedniego roku na koniec roku.
-- Opcja **Tworzenie transakcji zamknięcia w trakcie przeniesienia** służy do tworzenia transakcji zamykających w zamykanym roku obrotowym, w celu doprowadzenia sald rachunku zysków i strat do 0 (zero). Jeśli ta opcja jest ustawiona na **Tak**, tworzona jest zarówno transakcja otwierająca, jak i zamykająca. Jeśli ta opcja jest ustawiona na **Nie**, jest tworzona tylko transakcja otwarcia w następnym roku obrachunkowym w celu przeniesienia sald. Salda kont wynikowych (rachunku wyników) pozostają na koniec roku obrachunkowego.
+- Opcja **Tworzenie transakcji zamknięcia w trakcie przeniesienia** służy do tworzenia transakcji zamykających w zamykanym roku obrotowym, w celu doprowadzenia wszystkich kont głównych do wartości 0 (zero). Jeśli ta opcja jest ustawiona na **Tak**, tworzona jest zarówno transakcja otwierająca, jak i zamykająca. Jeśli ta opcja jest ustawiona na **Nie**, jest tworzona tylko transakcja otwarcia w następnym roku obrachunkowym w celu przeniesienia sald. Salda kont głównych pozostają na koniec roku obrachunkowego.
 - Opcja **Ustaw stan roku obrachunkowego na trwale zamknięty** służy do ustawiania rokowi obrachunkowemu stanu trwałego zamknięcia. Korzystaj z tej opcji ostrożnie, ponieważ okresy, które mają status zamknięty na stałe, nie mogą być ponownie otwierane. W związku z tym korekt nie można zaksięgować w roku obrachunkowym. Najlepszym rozwiązaniem jest ustawienie tej opcji na **Nie**.
 - Opcja **Numer załącznika należy wypełnić** została usunięta. Załącznik jest teraz wymagany, gdy uruchamiany jest proces zamknięcia na koniec roku. W tym czasie numer załącznika jest wprowadzany ręcznie.
 

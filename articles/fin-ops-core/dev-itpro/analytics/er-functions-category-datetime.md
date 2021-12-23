@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 706331eaadf602aba46463fdcfc0d38f1fc94e08
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 0a0322e5490474e21ad91076ecc486f38a776e32
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647270"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890784"
 ---
 # <a name="list-of-er-functions-in-the-date-and-time-category"></a>Lista funkcji modułu ER w kategorii Data i godzina
 
@@ -37,8 +37,8 @@ Funkcje daty i godziny w module raportowania elektronicznego (ER) mogą być uż
 | [DateTimeFormat](er-functions-datetime-datetimeformat.md) | Ta funkcja zwraca wartość *Ciąg*, która przedstawia daną wartość daty/godziny jako tekst w określonym formacie i opcjonalnie określonej kulturze. |
 | [DateTimeValue](er-functions-datetime-datetimevalue.md) | Ta funkcja zwraca wartość *Data/godzina*, która jest konwertowana z danej wartości tekstowej w określonym formacie i opcjonalnie określonej kulturze na wartość daty/godziny. |
 | [DateToDateTime](er-functions-datetime-datetodatetime.md) | Ta funkcja zwraca wartość *Data/godzina*, która jest konwertowana z danej wartości daty na wartość daty/godziny w uniwersalnym czasie koordynowanym (czas uniwersalny Greenwich \[GMT\]). |
-| [DateValue](er-functions-datetime-datevalue.md) | Ta funkcja zwraca wartość *Data*, która jest konwertowana z wartości danego tekstu w określonym formacie i opcjonalnie określonej kulturze na wartość daty. |
-| [DayOfYear](er-functions-datetime-dayofyear.md) | Ta funkcja zwraca wartość *Liczba całkowita* reprezentującą liczbę dni między 1 stycznia a określoną datą. |
+| [DateValue](er-functions-datetime-datevalue.md) | Ta funkcja zwraca wartość *[Data](er-formula-supported-data-types-primitive.md#date)*, która jest konwertowana z wartości danego tekstu w określonym formacie i opcjonalnie określonej kulturze na wartość daty. |
+| [DayOfYear](er-functions-datetime-dayofyear.md) | Ta funkcja zwraca wartość *[Liczba całkowita](er-formula-supported-data-types-primitive.md#integer)* reprezentującą liczbę dni między 1 stycznia a określoną datą. |
 | [Dni](er-functions-datetime-days.md) | Ta funkcja zwraca wartość *Liczba całkowita* reprezentującą liczbę dni między dwiema określonymi datami. |
 | [Now](er-functions-datetime-now.md) | Ta funkcja zwraca wartość *Data/godzina*, która reprezentuje bieżącą datę i godzinę serwera aplikacji. |
 | [NullDate](er-functions-datetime-nulldate.md) | Ta funkcja zwraca wartość *Data*, która reprezentuje datę **null** (1 stycznia 1900). |
@@ -46,6 +46,7 @@ Funkcje daty i godziny w module raportowania elektronicznego (ER) mogą być uż
 | [SessionNow](er-functions-datetime-sessionnow.md) | Ta funkcja zwraca wartość *Data/godzina*, która reprezentuje bieżącą datę i godzinę sesji aplikacji. |
 | [SessionToday](er-functions-datetime-sessiontoday.md) | Ta funkcja zwraca wartość *Data*, która reprezentuje bieżącą datę sesji aplikacji. |
 | [Dzisiaj](er-functions-datetime-today.md) | Ta funkcja zwraca wartość *Data*, która reprezentuje bieżącą datę serwera aplikacji. |
+| [WeekNum](er-functions-datetime-weeknum.md) | Ta funkcja zwraca wartość *Liczba całkowita*, która reprezentuje tydzień w roku. |
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

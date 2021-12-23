@@ -2,7 +2,7 @@
 title: Projektowanie konfiguracji projektu w celu generowania dokumentów wychodzących w formacie programu Excel
 description: Ten temat zawiera informacje o tym, jak zaprojektować format modułu raportowania elektronicznego (ER) do wypełniania w szablonie programu Excel, a następnie generować dokumenty wychodzące w formacie programu Excel.
 author: NickSelin
-ms.date: 10/29/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cfacc2232201b85a49068ee724b55e71b60eb2be
-ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
+ms.openlocfilehash: ebe2647bb382421921aa6ffc733953f379a8af10
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7731645"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890880"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Projektowanie konfiguracji projektu w celu generowania dokumentów wychodzących w formacie programu Excel
 
 [!include[banner](../includes/banner.md)]
 
-Istnieje możliwość zaprojektowania konfiguracji formatu modułu [Raportowanie elektroniczne (ER)](general-electronic-reporting.md) ze [składnikiem formatu](general-electronic-reporting.md#FormatComponentOutbound) ER, który można skonfigurować do generowania dokumentu wychodzącego w formacie skoroszytu programu Microsoft Excel. W tym celu muszą być używane określone składniki formatu ER.
+Istnieje możliwość zaprojektowania konfiguracji formatu modułu [Raportowanie elektroniczne (ER)](general-electronic-reporting.md) ze składnikiem formatu ER, który można skonfigurować do generowania dokumentu wychodzącego w formacie skoroszytu programu Microsoft Excel. W tym celu muszą być używane określone składniki formatu ER.
 
 Aby dowiedzieć się więcej o tej funkcji, wykonaj kroki opisane w temacie [Projektowanie konfiguracji do generowania raportów w formacie OPENXML](tasks/er-design-reports-openxml-2016-11.md).
 
@@ -330,6 +330,40 @@ Podczas generowania dokumentu wychodzącego w formacie skoroszytu programu Micro
 6. Wygeneruj dokument FTI, który można wydrukować, i przejrzyj stopkę wygenerowanego dokumentu.
 
     ![Sprawdzanie stopki wygenerowanego dokumentu w formacie programu Excel.](./media/er-fillable-excel-footer-4.gif)
+
+## <a name="example-2-fixing-the-merged-cells-epplus-issue"></a><a name="example-2"></a>Przykład 2. Rozwiązywanie problemu EPPlus dotyczącego scalonych komórek
+
+Aby wygenerować dokument wychodzący w formacie skoroszytu programu Excel, można uruchomić format ER. Jeśli funkcja **Włącz użycie biblioteki EPPlus w strukturze raportowania elektronicznego** zostanie włączona w obszarze roboczym **Zarządzanie funkcjami**, [biblioteka EPPlus](https://www.nuget.org/packages/epplus/4.5.2.1) będzie używana do tworzenia danych wyjściowych programu Excel. Jednak ze względu na znane [zachowanie programu Excel](https://answers.microsoft.com/msoffice/forum/all/deleting-a-range-of-cells-that-includes-merged/8601462c-4e2c-48e0-bd23-848eecb872a9) oraz ograniczenie biblioteki EPPlus może wystąpić wyjątek „Nie można usuwać/zastępować scalonych komórek. Zakres został częściowo scalony z innym scalonym zakresem”. Aby dowiedzieć się, jakiego rodzaju szablony programu Excel mogą być przyczyną tego wyjątku i jak można rozwiązać ten problem, wykonaj poniższy przykład.
+
+1. W aplikacji klasycznej Excel utwórz nowy skoroszyt programu Excel.
+2. W arkuszu **Sheet1** dodaj nazwę **ReportTitle** dla komórki **A2**.
+3. Scal komórki **A1** i **A2**.
+
+    ![Przeglądanie wyników scalania komórek A1 i A2 w zaprojektowanym skoroszycie programu Excel w aplikacji klasycznej Excel.](./media/er-fillable-excel-example2-1.png)
+
+3. Na stronie **Konfiguracje** [dodaj nowy format ER](er-fillable-excel.md#add-a-new-er-format), aby wygenerować dokument wychodzący w formacie skoroszytu programu Excel.
+4. Na stronie **Projektant formatów** [zaimportuj](er-fillable-excel.md#template-import) zaprojektowany skoroszyt programu Excel do dodanego formatu ER jako nowy szablon dokumentów wychodzących.
+5. Na karcie **Mapowanie** skonfiguruj powiązanie składnika **ReportTitle** typu [Komórka](er-fillable-excel.md#cell-component).
+6. Uruchom skonfigurowany format ER. Zwróć uwagę, że wystąpił następujący wyjątek: „Nie można usunąć/zastąpić scalonych komórek. Zakres został częściowo scalony z innym scalonym zakresem”.
+
+    ![Przejrzyj wyniki uruchomienia skonfigurowanego formatu ER na stronie Projektant formatów.](./media/er-fillable-excel-example2-2.png)
+
+Problem można rozwiązać przy użyciu jednego z poniższych sposobów:
+
+- **Łatwiejszy, ale niezalecany:** w obszarze roboczym **Zarządzanie funkcjami** wyłącz funkcję **Włącz użycie biblioteki EPPlus w strukturze raportowania elektronicznego**. Chociaż takie podejście jest łatwiejsze, mogą wystąpić inne problemy, ponieważ niektóre funkcje ER są obsługiwane tylko wtedy, gdy włączono funkcję **Włącz użycie biblioteki EPPlus w strukturze raportowania elektronicznego**.
+- **Zalecany:** wykonaj następujące czynności:
+
+    1. W aplikacji klasycznej Excel zmodyfikuj skoroszyt programu Excel na jeden z następujących sposobów:
+
+        - W arkuszu **Sheet1** rozdziel komórki **A1** i **A2**.
+        - Zmień odwołanie dla nazwy **ReportTitle** z **=Sheet1!$A$2** na **=Sheet1!$A$1**.
+
+        ![Przeglądanie wyników zmiany odwołania w zaprojektowanym skoroszycie programu Excel w aplikacji klasycznej Excel.](./media/er-fillable-excel-example2-3.png)
+
+    2. Na stronie **Konstruktor formatów** [zaimportuj](er-fillable-excel.md#template-import) zmodyfikowany skoroszyt programu Excel do edytowalnego formatu ER w celu zaktualizowania istniejącego szablonu.
+    3. Uruchom zmodyfikowany format ER.
+
+        ![Przeglądanie wygenerowanego dokumentu programu Excel w aplikacji klasycznej.](./media/er-fillable-excel-example2-4.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

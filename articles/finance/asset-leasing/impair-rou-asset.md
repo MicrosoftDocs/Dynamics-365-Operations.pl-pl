@@ -2,7 +2,7 @@
 title: Utrata wartości składników majątku z prawem do użytkowania
 description: W tym temacie opisano funkcję, która rejestruje utratę wartości i dostosowuje harmonogram amortyzacji składnika majątku w leasingu operacyjnym realizowanym według przepisów Accounting Standards Codification Topic 842 (ASC 842).
 author: moaamer
-ms.date: 10/28/2020
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 816f65cff77339ef8684c0449ed2e5f0762b17a2e22174412d5ea9f2a1a62069
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd79880dc8aa77eea8c16f350c0853013c6ad17b
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723830"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890837"
 ---
 # <a name="impair-right-of-use-assets"></a>Utrata wartości składników majątku z prawem do użytkowania
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Jeśli wartość bilansowa składnika majątku z prawem do użytkowania (PDU) jest nie do odzyskania, może być konieczne sprawdzenie, czy składnik majątku utracił wartość. W przypadku stwierdzenia, że składnik majątku utracił wartość, moduł Wynajem składnika majątku może zarejestrować tę utratę i odpowiednio skorygować harmonogram amortyzacji. W tym temacie opisano funkcję, która rejestruje utratę wartości i dostosowuje harmonogram amortyzacji w leasingu operacyjnym realizowanym według przepisów Accounting Standards Codification Topic 842 (ASC 842). Tę samą metodę stosuje się również do wynajmu zgodnego Międzynarodowym Standardem Sprawozdawczości Finansowej nr 16 (MSSF 16).
 
@@ -37,13 +38,16 @@ Pozostałe saldo składnika majątku z PDU będzie amortyzowane liniowo przez po
 3. W wyświetlonym oknie dialogowym w polu **Kwota utraty wartości** wprowadź kwotę, o jaką składnik majątku utracił wartość. Aby zmniejszyć wartość składnika majątku z PDU, należy wprowadzić wartość dodatnią.
 4. W polu **Data transakcji** wprowadź dzień, kiedy ma zostać księgowany wpis utraty wartości.
 5. W polu **Pozostałe okresy** wprowadź pozostałą liczbę miesięcy amortyzowania.
-6. Włącz parametr **Księguj**, jeśli system ma automatycznie księgować wpis w arkuszu dotyczący wydatku utraty wartości. Jeśli pozostawisz ten parametr wyłączony, system utworzy wpis, ale go nie zaksięguje. Następnie można zaksięgować ten wpis ze strony **Arkusze wynajmu składnika majątku**.
-7. Ustawienie w opcji **Wyświetl podgląd przed zaksięgowaniem** wartości **Tak** spowoduje wyświetlenie proponowanego wpisu przed jego utworzeniem lub zaksięgowaniem.
-8. Ustawienie opcji **Zamknij księgę** na wartość **Tak** spowoduje zamknięcie książki wynajmu. Nie możesz cofnąć tej czynności. Wpisów nie można księgować dla zamkniętych wynajmów, a zamknięte wynajmy nie mogą być korygowane.
-9. Wybierz przycisk **OK**, aby utworzyć lub zaksięgować wpis utraty wartości.
-10. Aby wyświetlić harmonogram amortyzacji składnika majątku z utraconą wartością, otwórz harmonogram amortyzacji składników majątku dla tej księgi wynajmu. Składnik majątku będzie teraz amortyzowany liniowo przez liczbę miesięcy wprowadzoną w polu **Pozostałe okresy**.
-11. Aby wyświetlić wpis w arkuszu dotyczący wydatku utraty wartości, wybierz opcję **Arkusz wynajmu składnika majątku** w okienku akcji księgi wynajmu z utratą wartości. System tworzy wpis w arkuszu obciążający konto księgowania wydatku utraty wartości, a uznający konto księgowania należności z tytułu wynajmu.
-12. Aby wyświetlić nową wartość bilansową składnika majątku z PDU, zaznacz opcję **Transakcje składnika majątku** w okienku akcji księgi wynajmu.
+6. Ustaw opcję **Wyświetl podgląd**, aby wyświetlić proponowane saldo składników majątku i wpis finansowy przed jego utworzeniem lub zaksięgowaniem.
+7. Ustawienie opcji **Zamknij księgę** na wartość **Tak** spowoduje zamknięcie książki wynajmu. Tę akcję można cofnąć, używając stanu **Otwórz ponownie wynajem**. Wpisów nie można księgować dla zamkniętych wynajmów, a zamknięte wynajmy nie mogą być korygowane. 
+8. Wybierz przycisk **Księguj**, aby utworzyć lub zaksięgować wpis utraty wartości.
+
+    > [!NOTE]
+    > Po zaksięgowaniu transakcji utraty wartości tworzona jest nowa wersja księgi.
+
+9. Aby wyświetlić harmonogram amortyzacji składnika majątku z utraconą wartością, otwórz harmonogram amortyzacji składników majątku dla księgi wynajmu. Składnik majątku będzie teraz amortyzowany liniowo przez liczbę miesięcy wprowadzoną w polu **Pozostałe okresy**.
+10. Aby wyświetlić wpis w arkuszu dotyczący wydatku utraty wartości, wybierz opcję **Arkusz wynajmu składnika majątku** w okienku akcji księgi wynajmu z utratą wartości. System tworzy wpis w arkuszu obciążający konto księgowania wydatku utraty wartości, a uznający konto księgowania należności z tytułu wynajmu. 
+11. Aby wyświetlić nową wartość bilansową składnika majątku z PDU, zaznacz opcję **Transakcje składnika majątku** w okienku akcji księgi wynajmu.
 
 ## <a name="example-of-rou-asset-impairment"></a>Przykład utraty wartości składnika majątku z PDU
 

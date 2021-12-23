@@ -2,7 +2,7 @@
 title: Konfigurowanie witryny handlu elektornicznego B2B
 description: W tym temacie opisano sposób skonfigurowania witryny handlu elektronicznego (B2B) w Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 04/23/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: c630580dd75a86085746b36726e9ee55a9db2af5
-ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
+ms.openlocfilehash: 171e518258e9600bd7526cf52e3e456d272e6bce
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7713755"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891392"
 ---
 # <a name="set-up-a-b2b-e-commerce-site"></a>Konfigurowanie witryny wykorzystywanej na potrzeby handlu elektronicznego B2B
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Witryny handlu elektronicznego typu business-to-business (B2B) zapewniają kilka kluczowych funkcji, które optymalizują przepływ pracy dla użytkownika B2B. W tym temacie opisano sposób skonfigurowania witryny handlu elektronicznego B2B w Microsoft Dynamics 365 Commerce. Przechodzi przez moduły i ustawienia witryny, które należy skonfigurować, aby umożliwić scenariusze specyficzne dla B2B.
 
@@ -306,6 +307,30 @@ Aby dodać moduł szybkiego dodawania do strony koszyka w narzędziu do tworzeni
 
 > [!NOTE] 
 > Moduł szybkiego dodawania jest dostępny od wersji Commerce 10.0.17. W przypadku aktualizacji ze starszej wersji Commerce należy ręcznie zaktualizować plik appsettings.json. Aby uzyskać instrukcje, zobacz [Aktualizacje zestawu SDK i biblioteki modułów](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+
+## <a name="add-a-bulk-purchase-module-to-a-product-details-page"></a>Dodawanie modułu zakupów zbiorczych do strony szczegółów produktu
+
+Moduł zakupów zbiorczych na stronie szczegółów produktu (PDP) oferuje oparte na macierzy doświadczenie, które umożliwia kupującym szybkie dodawanie różnych wariantów produktu do koszyka. Gdy użytkownik witryny musi zamówić wiele wariantów tego samego produktu, eliminuje potrzebę wybierania kombinacji wymiarów produktu, definiowania ilości, dodawania wariantu do koszyka, a następnie powtarzania procesu dla innych kombinacji wymiarów produktów.
+
+Aby dodać moduł zakupów zbiorczych do strony PDP w konstruktorze witryn Commerce, należy wykonać następujące kroki.
+
+1. Przejdź do strony **Szablony** i wybierz szablon strony PDP dla witryny.
+1. Wybierz opcję **Edycja**.
+1. W gnieździe **Głównym** w module **Strony domyślnej** wybierz przycisk wielokropka (**...**), a następnie wybierz pozycję **Dodaj moduł**.
+1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Kontener** i wybierz przycisk **OK**.
+1. W gnieździe **Kontener** wybierz wielokropek (**...**), a następnie wybierz **Dodaj moduł**.
+1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Zakup zbiorczy** i wybierz przycisk **OK**.
+1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować szablon, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
+1. Przejdź do lokalizacji **Strony** i wybierz szablon strony PDP witryny.
+1. W gnieździe **Głównym** w module **Strony domyślnej** wybierz przycisk wielokropka (**...**), a następnie wybierz pozycję **Dodaj moduł**.
+1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Kontener** i wybierz przycisk **OK**.
+1. W okienku właściwości modułu **Kontener**, w obszarze **Szerokość** wybierz opcję **Wypełnij kontener**.
+1. W gnieździe **Kontener** wybierz wielokropek (**...**), a następnie wybierz **Dodaj moduł**.
+1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Zakup zbiorczy** i wybierz przycisk **OK**.
+1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować stronę, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
+
+> [!NOTE] 
+> Moduł zakupów zbiorczych jest dostępny od wersji Commerce 10.0.24. W przypadku aktualizacji ze starszej wersji Commerce należy ręcznie zaktualizować plik appsettings.json. Aby uzyskać instrukcje, zobacz [Aktualizacje zestawu SDK i biblioteki modułów](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

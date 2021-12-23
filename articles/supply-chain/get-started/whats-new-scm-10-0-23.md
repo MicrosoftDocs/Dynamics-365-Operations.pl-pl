@@ -1,5 +1,5 @@
 ---
-title: Wersja zapoznawcza aplikacji Dynamics 365 Supply Chain Management 10.0.23
+title: Podgląd Dynamics 365 Supply Chain Management 10.0.23 (styczeń 2022)
 description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Supply Chain Management 10.0.23.
 author: kamaybac
 ms.date: 10/15/2021
@@ -10,14 +10,14 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 7950d225bd528c05c14df108f4d44cef3e348ebb
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: fd6483c86b34d355e3727a95794b7876dc54ec32
+ms.sourcegitcommit: 96515ddbe2f65905140b16088ba62e9b258863fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777798"
+ms.lasthandoff: 12/04/2021
+ms.locfileid: "7891800"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10023"></a>Wersja zapoznawcza aplikacji Dynamics 365 Supply Chain Management 10.0.23
+# <a name="preview-of-dynamics-365-supply-chain-management-10023-january-2022"></a>Podgląd Dynamics 365 Supply Chain Management 10.0.23 (styczeń 2022)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -26,6 +26,7 @@ W tym temacie wymieniono nowe oraz zmienione funkcje dostępne w programie Micro
 
 - **Wersja zapoznawcza wydania:** Październik 2021
 - **Ogólna dostępność wydania (Samoaktualizacja):** Grudzień 2021
+- **Ogólna dostępność wydania (Samoaktualizacja):** Styczeń 2022
 
 ## <a name="features-included-in-this-release"></a>Funkcje zawarte w tym wydaniu
 
@@ -53,6 +54,7 @@ Jeśli chcesz włączyć lub wyłączyć którąkolwiek z tych funkcji, musisz t
 | Zarządzanie zapasami i magazynem | \[Rosja\] Księgowanie finansowych transakcji magazynowych Storno zgodnie z flagą korekty w załączniku finansowym dla zamówień sprzedaży | Ta funkcja ma wpływ na funkcjonalność korekt not kredytowych w Rosji. Umożliwia księgowanie transakcji inwentaryzacyjnych do faktur sprzedaży zgodnie z opcją korekty w księdze głównej. Po włączeniu tej funkcji nie ma już rozbieżności pomiędzy znacznikiem **Korekta** na kwicie finansowym transakcji inwentaryzacyjnej a znacznikiem **Storno** na transakcjach inwentaryzacyjnych. |
 | Zarządzanie zapasami i magazynem | (Rosja) Uruchom obliczanie raportu obrotów salda zapasów w partii | Dla rosyjskich lokalizacji Supply Chain Management ta funkcja umożliwia uruchomienie raportu *obrotów salda zapasów w partii*, jego przechowywanie i przeglądanie raportów wygenerowanych wcześniej. |
 | Zarządzanie zapasami i magazynem | (Rosja) W zarządzaniu zapasami używaj tłumaczeń na język lokalny w specyficznych dla kraju lub regionu formularzach podstawowych | Dla rosyjskich lokalizacji Supply Chain Management funkcja ta umożliwia używanie rosyjskich tłumaczeń nazw produktów/pozycji i jednostek miary na następujących wydrukach zapasów specyficznych dla Rosji:Lista zliczania (INV-3), Lista zliczania (INV-5), Lista zliczania (INV-6). |
+| Planowanie główne | Usługa Azure Machine Learning Service do prognozowania popytu | Ta funkcja umożliwia usłudze Azure Machine Learning Service generowanie prognoz popytu na podstawie danych historycznych. Aby uzyskać więcej informacji, zobacz [Konfigurowanie prognozowania popytu](../master-planning/demand-forecasting-setup.md). |
 | Zaopatrzenie i sourcing | Wyczyść historię aktualizacji zamówień zakupu | Ta funkcja pozwala na wyczyszczenie tymczasowych zapisów historycznych związanych z aktualizacjami zamówień zakupu. Dodaje nowy przycisk o nazwie **Wyczyść historię aktualizacji zakupu** do panelu akcji na stronie **Wszystkie zamówienia zakupu**. Ten funkcjonalność jest włączona domyślnie. |
 | Kontrola produkcji | (Wersja zapoznawcza) Automatyczne pobieranie materiałów z obsługą magazynu dla automatycznie księgowanych list pobrania | Funkcja ta pozwala na automatyczne wybieranie i rozwiązywanie wymiarów inwentaryzacji dla automatycznie wysyłanych, pochodnych i wstecznie przepłukiwanych dzienników listy kompletacji. |
 | Kontrola produkcji | Weryfikacja ważności surowców w stosunku do planowanej daty zużycia | Ta funkcja zmienia sposób walidacji dat ważności partii podczas rezerwowania partii surowca do wykorzystania podczas produkcji. Gdy ta funkcja jest włączona, data ważności partii jest sprawdzana względem planowanej daty zużycia (daty surowca), ustalonej w linii BOM produkcji lub linii formuły zamówienia partii. Gdy ta funkcja jest wyłączona, data ważności partii jest weryfikowana względem planowanej daty dostawy zlecenia produkcyjnego lub partyjnego (jak poprzednio). |

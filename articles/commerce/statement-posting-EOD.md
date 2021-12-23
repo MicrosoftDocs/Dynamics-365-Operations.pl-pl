@@ -1,8 +1,8 @@
 ---
 title: Ulepszenia funkcji księgowania zestawień
 description: W tym temacie opisano ulepszenia, które zostały wprowadzone w funkcji księgowania zestawień.
-author: josaw1
-ms.date: 05/14/2019
+author: analpert
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -10,19 +10,20 @@ audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: anpurush
+ms.author: analpert
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 49fc9003eae562a155fd8e30345ba4590d36e15b61f9f6a3f0b5896cb720f414
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e7e88511ac3d0044c7e590f43f4486929f691ce9
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772211"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891450"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Ulepszenia funkcji księgowania zestawień
 
 [!include [banner](includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 W tym temacie opisano pierwszy zestaw ulepszeń, które zostały wprowadzone w funkcji księgowania zestawień. Te ulepszenia są dostępne w programie Microsoft Dynamics 365 for Finance and Operations 7.3.2.
 
@@ -116,9 +117,17 @@ Zestawienie przechodzi przez różne operacje (na przykład tworzenia, obliczani
 
 ### <a name="aggregated-transactions"></a>Zagregowane transakcje
 
-W trakcie procesu księgowania transakcje sprzedaży są agregowane na podstawie konfiguracji. Te zagregowane transakcje są przechowywane w systemie i używane do tworzenia zamówień sprzedaży. Każda zagregowana transakcja tworzy jedno odnośne zamówienie sprzedaży w systemie. Zagregowane transakcje można zobaczyć, naciskając przycisk **Zagregowane transakcje** w grupie **Szczegóły wykonania** dla zestawienia.
+W procesie księgowania transakcje kasowe i gotówkowe są agregowane według klienta i produktu. W związku z tym jest zmniejszana liczba utworzonych zamówień sprzedaży i wierszy. Zagregowane transakcje są przechowywane w systemie i używane do tworzenia zamówień sprzedaży. Każda zagregowana transakcja tworzy jedno odnośne zamówienie sprzedaży w systemie. 
 
-Karta **Szczegóły zamówienia sprzedaży** w oknie zagregowanej transakcji pokazuje następujące informacje:
+Jeśli zestawienie nie zostało w pełni zaksięgowany, można wyświetlić agregowane transakcje w zestawieniu. W okienku akcji, na karcie **Zestawienie**, w grupie **Szczegóły wykonania** wybierz pozycję **Agregowane transakcje**.
+
+![Przycisk agregowanych transakcji dla zestawienia, które nie zostało w pełni zaksięgowane.](media/aggregated-transactions.png)
+
+W przypadku zaksięgowanych zestawień można wyświetlić agregowane transakcje na stronie **Zaksięgowane zestawienia**. W okienku akcji wybierz opcję **Zapytania**, a następnie wybierz opcję **Zagregowane transakcje**.
+
+![Polecenie zagregowanych transakcji dla zaksięgowanych wyciągów.](media/aggregated-transactions-posted-statements.png)
+
+Skrócona karta **Szczegóły zamówienia sprzedaży** w oknie zagregowanej transakcji pokazuje następujące informacje:
 
 - **Identyfikator rekordu** — Identyfikator rekordu zagregowanej transakcji.
 - **Numer zestawienia** — Zestawienie, do którego należy zagregowana transakcja.
@@ -127,10 +136,26 @@ Karta **Szczegóły zamówienia sprzedaży** w oknie zagregowanej transakcji pok
 - **Liczba zagregowanych wierszy** — Łączna liczba wierszy zagregowanej transakcji i zamówienia sprzedaży.
 - **Stan** — Ostatni stan zagregowanej transakcji.
 - **Identyfikator faktury** — Identyfikator faktury sprzedaży wstawiany po zafakturowaniu zamówienia sprzedaży powiązanego ze zagregowaną transakcją. Jeśli to pole jest puste, faktura za zamówienie sprzedaży nie została jeszcze zaksięgowana.
+- **Kod błędu** — to pole jest ustawiane, jeśli agregacja znajduje się w stanie błędu.
+- **Komunikat o błędzie** — to pole jest ustawiane, jeśli agregacja znajduje się w stanie błędu. Pokazuje szczegółowe informacje o tym, co spowodowało niepowodzenie procesu. Informacje zawarte w kodzie błędu mogą zostać podane w celu rozwiązania problemu. Następnie można ponownie ręcznie uruchomić proces. W zależności od typu rozwiązania może być konieczne usunięcie i przetworzenie zagregowanej sprzedaży w nowym zestawieniu.
 
-Karta **Szczegóły transakcji** w oknie zagregowanej transakcji pokazuje wszystkie transakcje pobrane do zagregowanej transakcji. Zagregowane wiersze w zagregowanej transakcji pokazują wszystkie zagregowane rekordy z transakcji. W zagregowanych wierszach są również wyświetlane szczegóły takie jak towar, wariant, ilość, cena, kwota netto, jednostka i magazyn. Zasadniczo każdy zagregowany wiersz odpowiada jednemu wierszowi zamówienia sprzedaży.
+![Pola na skróconej karcie szczegółów zamówienia sprzedaży zagregowanej transakcji.](media/aggregated-transactions-error-message-view.png)
 
-Na stronie **Zagregowane transakcje** można pobrać kod źródłowy XML konkretnej zagregowanej transakcji, naciskając przycisk **Eksportuj kod XML zamówienia sprzedaży**. Kodu XML można używać do debugowania problemów dotyczących tworzenia i księgowania zamówienia sprzedaży. Wystarczy pobrać kod XML, przekazać go do środowiska testowego, a następnie debugować problem w środowisku testowym. Funkcja pobierania kodu XML zagregowanych transakcji nie jest dostępna dla zestawień, które zostały już zaksięgowane.
+Skrócona karta **Szczegóły transakcji** w oknie zagregowanej transakcji pokazuje wszystkie transakcje pobrane do zagregowanej transakcji. Zagregowane wiersze w zagregowanej transakcji pokazują wszystkie zagregowane rekordy z transakcji. W zagregowanych wierszach są również wyświetlane szczegóły takie jak towar, wariant, ilość, cena, kwota netto, jednostka i magazyn. Zasadniczo każdy zagregowany wiersz odpowiada jednemu wierszowi zamówienia sprzedaży.
+
+![Skrócona karta szczegółów zagregowanej transakcji.](media/aggregated-transactions-sales-details.png)
+
+W pewnych sytuacjach zagregowane transakcje mogą nie księgować skonsolidowanego zamówienia sprzedaży. W takich sytuacjach kod błędu jest skojarzony ze stanem zestawienia. Aby wyświetlić tylko zagregowane transakcje, które mają błędy, można włączyć filtr **Pokaż tylko błędy** w widoku zagregowanych transakcji, zaznaczając to pole wyboru. Włączenie tego filtru umożliwia ograniczenie wyników do zagregowanych transakcji, które mają błędy wymagające rozwiązania. Aby uzyskać informacje na temat usuwania tych błędów, zobacz temat [Edycja i przeprowadzanie inspekcji transakcji zamówień online i asynchronicznych zamówień odbiorcy](edit-order-trans.md).
+
+![Pole wyboru filtru Pokaż tylko błędy w widoku zagregowanych transakcji.](media/aggregated-transactions-failure-view.png)
+
+Na stronie **Zagregowane transakcje** można pobrać kod źródłowy XML konkretnej zagregowanej transakcji, wybierając pozycję **Eksportuj dane agregacji**. Plik XML można przeglądać w dowolnym formacie XML, aby wyświetlić szczegóły danych, które wymagają utworzenia i zaksięgowania zamówienia sprzedaży. Funkcja pobierania kodu XML zagregowanych transakcji nie jest dostępna dla zestawień, które zostały już zaksięgowane.
+
+![Przycisk Eksportuj dane agregacji na stronie Zagregowane transakcje.](media/aggregated-transactions-export.png)
+
+Jeśli nie można poprawić tego błędu, korygując dane zamówienia sprzedaży lub dane obsługujące zamówienie sprzedaży, można użyć dostępnego przycisku **Usuń zamówienie klienta**. Aby usunąć zamówienie, zaznacz zagregowaną transakcję z błędem, a następnie wybierz pozycję **Usuń zamówienie klienta**. Zagregowana transakcja i odpowiadające jej zamówienie sprzedaży zostaną usunięte. Transakcje można teraz przeglądać za pomocą funkcji edycji i inspekcji. Można je również przetworzyć ponownie w nowym zestawieniu. Po usunięciu błędów można wznowić księgowanie zestawienia, uruchamiając funkcję księgowania zestawienia dla odpowiedniego zestawienia.
+
+![Przycisk Usuń zamówienie klienta w widoku zagregowanych transakcji.](media/aggregated-transactions-delete-cust-order.png)
 
 Widok zagregowanych transakcji oferuje następujące zalety:
 

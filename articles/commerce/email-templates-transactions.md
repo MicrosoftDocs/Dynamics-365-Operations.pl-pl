@@ -2,7 +2,7 @@
 title: Tworzenie szablonów wiadomości e-mail na potrzeby zdarzeń transakcyjnych
 description: W tym temacie opisano sposób tworzenia, przekazywania i konfigurowania szablonów wiadomości e-mail na potrzeby zdarzeń transakcyjnych w rozwiązaniu Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 10/26/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 69ba8821cde6788d6e0accb37288f92acdfc776c
-ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
+ms.openlocfilehash: 25d7fcb803645f50ee4f5c608f5b6e789dfe3c31
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7713804"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913759"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Tworzenie szablonów wiadomości e-mail na potrzeby zdarzeń transakcyjnych
 
@@ -136,7 +136,7 @@ Typ powiadomienia o zatwierdzeniu prospektu B2B obsługuje następujące dodatko
 | `storename`        | Nazwa kanału, w którym został utworzony prospekt. |
 | `storeurl`         | Domyślnie puste. Aby używać tego symbolu zastępczego, należy utworzyć rozszerzenie niestandardowe. |
 
-### <a name="b2b-prospect-approved"></a>Prospekt B2B został zatwierdzony
+### <a name="b2b-prospect-rejected"></a>Prospekt B2B został odrzucony
 
 Typ powiadomienia *Prospekt B2B został odrzucony* jest wyzwalany, gdy wniosek o dołączeniu prospektu zostanie odrzucony w programie Commerce Headquarters. Aby uzyskać więcej informacji dotyczących sposobu zatwierdzania lub odrzucania prospektów B2B, zobacz temat [Konfigurowanie użytkownika administratora dla nowego partnera biznesowego](b2b/manage-b2b-users.md#set-up-the-administrator-user-for-a-new-business-partner). 
 

@@ -2,7 +2,7 @@
 title: Konfigurowanie środowiska oceny rozwiązania Dynamics 365 Commerce
 description: W tym temacie opisano sposób konfigurowania środowiska oceny aplikacji Microsoft Dynamics 365 Commerce po jego aprowizacji.
 author: psimolin
-ms.date: 08/24/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2e98ea9e98380ee63f6cc1eb6dfc7b84d38c7dbb
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 5883a6e68628d706fa19d7d23b68f17007c32890
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416486"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913734"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurowanie środowiska oceny rozwiązania Dynamics 365 Commerce
 
@@ -39,6 +39,7 @@ Po zakończeniu kompleksowej aprowizacji środowiska oceny usługi Commerce wyko
 1. Wybierz swoje środowisko na liście.
 1. W obszarze informacji o środowisku po prawej stronie wybierz pozycję **Zaloguj do środowiska**. Nastąpi wysłanie do modułu Commerce Headquarter.
 1. Upewnij się, że wybrano firmę **USRT** w prawym górnym rogu.
+2. Przejdź do pozycji **Parametry Commerce > Konfigurowanie parametrów** i upewnij się, że istnieje wpis **ProductSearch.UseAzureSearch** ustawiony na **true**. Jeśli ten wpis nie istnieje, możesz dodać ten wpis i uruchomić pozycję **Baza danych kanału > Pełna synchronizacja** dla jednostki Commerce Scale Unit skojarzonej z witryną internetową eCommerce.
 
 Podczas wykonywania działań związanych z inicjowaniem obsługi administracyjnej w module Commerce Headquarter należy się upewnić, że firma **USRT** jest zawsze zaznaczona.
 
@@ -105,6 +106,12 @@ Aby włączyć zadania w aplikacji Commerce, wykonaj następujące kroki.
     1. Wybierz rekord.
     1. W okienku akcji na karcie **Zadanie wsadowe** wybierz pozycję **Zmień status**.
     1. Wybierz pozycję **Anuluj**, a następnie kliknij przycisk **OK**.
+
+1. Jeśli stan zadania to **Wstrzymane**, wykonaj następujące kroki:
+
+    1. Wybierz rekord.
+    1. W okienku akcji na karcie **Zadanie wsadowe** wybierz pozycję **Zmień status**.
+    1. Wybierz pozycję **Oczekiwanie** i kliknij przycisk **OK**.
 
 Opcjonalnie można również określić interwał cyklu równy jednej (1) minucie dla następujących zadań:
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-8-03
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: fc413f8230849653aef8c2951f1749823edded6e
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 0f1f49a7da2f015d90987587fc251a36cfe82d49
+ms.sourcegitcommit: cd7f1c63f48542a8ebcace7b3d512eb810d4b56e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605436"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "7903257"
 ---
 # <a name="journal-posting-failure-because-of-imbalance"></a>Niepowodzenie księgowania arkusza z powodu niezbilansowania
 
@@ -52,13 +52,13 @@ W jednym obsługiwanym scenariuszu załącznik może mieć więcej niż jedną w
 
 Jeśli wszystkie wiersze załącznika mają tę samą walutę transakcji i jeśli kwoty w walucie transakcji są zbilansowane, system sprawdza, czy kwoty w walucie rozliczeniowej są zbilansowane. Jeśli załącznik został wprowadzony w walucie obcej, kurs wymiany w wierszach załącznika jest używany do przeliczania kwot w walucie transakcji na walutę rozliczeniową. Po pierwsze, każdy wiersz załącznika jest tłumaczony i zaokrąglany do dwóch miejsc dziesiętnych. Następnie wiersze są sumowane w celu określenia sum po stronach Winien i Ma. Ponieważ każdy wiersz jest tłumaczony, suma kwot po stronach Winien i Ma może nie być zbilansowana. Mimo tego, jeśli całkowita wartość różnicy znajduje się w granicach wartości **Maksymalna różnica w groszach** zdefiniowanej na stronie **Parametry księgi głównej**, załącznik zostanie zaksięgowany i różnica zostanie automatycznie zaksięgowana na koncie różnic w groszach.
 
-Jeśli załącznik ma więcej niż jedną walutę transakcji, każdy wiersz załącznika jest przeliczany na walutę rozliczeniową i zaokrąglany do dwóch miejsc po przecinku, a następnie wiersze są sumowane w celu określenia łącznych kwot po stronie Winien i Ma. Aby można było uznać je za zbilansowane, debety i uznania muszą być bilansowane, zarówno jako przetłumaczone, jak i dla różnicy zaokrągleń groszowych w walucie rozliczeniowej.
+Jeśli załącznik ma więcej niż jedną walutę transakcji, każdy wiersz załącznika jest przeliczany na walutę rozliczeniową i zaokrąglany do dwóch miejsc po przecinku, a następnie wiersze są sumowane w celu określenia łącznych kwot po stronie Winien i Ma. Aby można było uznać je za bilansowane, obciążenia i uznania muszą być zbilansowane w walucie księgowania.  Konto różnic groszowych nie jest nigdy dodawane do załącznika w walucie księgowania w celu zbilansowania kwot debetowych i kredytowych. 
 
 ### <a name="reporting-currency"></a>Waluta raportowania
 
 Jeśli wszystkie wiersze załącznika mają tę samą walutę transakcji i jeśli kwoty w walucie transakcji są zbilansowane, system sprawdza, czy kwoty w walucie raportowania są zbilansowane. Jeśli załącznik został wprowadzony w walucie obcej, kurs wymiany w wierszach załącznika jest używany do przeliczania kwot w walucie transakcji na walutę raportowania. Po pierwsze, każdy wiersz załącznika jest tłumaczony i zaokrąglany do dwóch miejsc dziesiętnych. Następnie wiersze są sumowane w celu określenia sum po stronach Winien i Ma. Ponieważ każdy wiersz jest tłumaczony, suma kwot po stronach Winien i Ma może nie być zbilansowana. Mimo tego, jeśli różnica znajduje się w granicach wartości **Maksymalne zaokrąglanie do grosza w walucie raportowania** zdefiniowanej na stronie **Parametry księgi głównej**, załącznik zostanie zaksięgowany i różnica zostanie automatycznie zaksięgowana na koncie różnic w groszach.
 
-Jeśli załącznik ma więcej niż jedną walutę transakcji, każdy wiersz załącznika jest przeliczany na walutę raportowania i zaokrąglany do dwóch miejsc po przecinku, a następnie wiersze są sumowane w celu określenia łącznych kwot po stronie Winien i Ma. Aby można było uznać je za zbilansowane, debety i uznania muszą być bilansowane, zarówno jako przetłumaczone, jak i dla różnicy zaokrągleń groszowych w walucie raportowania.
+Jeśli załącznik ma więcej niż jedną walutę transakcji, każdy wiersz załącznika jest przeliczany na walutę raportowania i zaokrąglany do dwóch miejsc po przecinku, a następnie wiersze są sumowane w celu określenia łącznych kwot po stronie Winien i Ma. Aby można było uznać je za bilansowane, obciążenia i uznania muszą być zbilansowane w walucie raportowania.  Konto różnic groszowych nie jest nigdy dodawane do załącznika w walucie raportowania w celu zbilansowania kwot debetowych i kredytowych.
 
 ### <a name="example-for-an-accounting-currency-imbalance"></a>Przykład niezbilansowania waluty rozliczeniowej
 

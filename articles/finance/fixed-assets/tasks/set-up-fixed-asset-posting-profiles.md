@@ -1,7 +1,7 @@
 ---
 title: Konfigurowanie profili księgowania środków trwałych
-description: W tym przewodniku po zadaniach zostaną skonfigurowane profile księgowania środków trwałych.
-author: saraschi2
+description: W tej procedurze pokazano sposób skonfigurowania profilów księgowania środków trwałych.
+author: moaamer
 ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,21 +10,21 @@ ms.search.form: AssetPosting
 audience: Application User
 ms.reviewer: roschlom
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a2708997848352205cab2e425c9ae1fb531b8a566ba86a65ba2cbeb7e0b5c2b8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ee0006c9588a22d720687e7aceb49acc756b83e1
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767630"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883775"
 ---
 # <a name="set-up-fixed-asset-posting-profiles"></a>Konfigurowanie profili księgowania środków trwałych
 
 [!include [banner](../../includes/banner.md)]
 
-W tym przewodniku po zadaniach zostaną skonfigurowane profile księgowania środków trwałych.  Przewodnik korzysta z roli Księgowy i danych firmy demonstracyjnej USMF.  Przykłady zamieszczone w przewodniku po zadaniach dotyczą podstawowego profilu księgowania, podczas gdy faktycznie profile księgowania należy utworzyć dla określonych planów kont oraz wymagań dotyczących sprawozdawczości finansowej.
+W tej procedurze pokazano sposób skonfigurowania profilów księgowania środków trwałych. Przykłady zamieszczone w tym temacie po zadaniach dotyczą podstawowego profilu księgowania, podczas gdy faktycznie profile księgowania należy utworzyć dla określonych planów kont oraz wymagań dotyczących sprawozdawczości finansowej.
 
 1. W okienku nawigacji przejdź do **Moduły > Środki trwałe > Ustawienia > Profile księgowania środków trwałych**.
 2. Kliknij przycisk **Nowy**.

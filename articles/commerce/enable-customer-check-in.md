@@ -2,7 +2,7 @@
 title: Włączanie powiadomień zameldowania odbiorcy w punkcie sprzedaży
 description: W tym temacie opisano sposób włączania powiadomień zameldowania odbiorcy w punkcie sprzedaży systemu Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 04/23/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: cf9331e1da54520787686a3f190e2ef6d150c0c10bd521919407f5e6c74551d1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 320e9d73ca98bf4ed22ac9bdff2fc34ae83223ec
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774590"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891419"
 ---
 # <a name="enable-customer-check-in-notifications-in-point-of-sale-pos"></a>Włączanie powiadomień zameldowania odbiorcy w punkcie sprzedaży
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 W tym temacie opisano sposób włączania powiadomień zameldowania odbiorcy w punkcie sprzedaży systemu Microsoft Dynamics 365 Commerce.
 
@@ -50,17 +51,48 @@ W witrynie handlu elektronicznego trzeba utworzyć nową stronę, która będzie
 
 Musisz dodać łącze lub przycisk **Jestem tutaj** do szablonu transakcyjnej wiadomości e-mail, którą odbiorcy otrzymują, gdy ich zamówienie jest gotowe do odbioru. Odbiorcy będą używać tego łącza lub przycisku w celu powiadomienia sklepu, że przybyli, aby odebrać zamówienie. 
 
-Dodaj łącze lub przycisk do szablonu, który jest mapowany na typ powiadomienia **Zakończenie pakowania** i tryb dostawy używany do realizacji zamówienia „przy krawężniku”. W szablonie utwórz łącze lub przycisk HTML, który wskazuje adres URL utworzonej strony potwierdzenia zameldowania. Oto przykład.
+Dodaj łącze lub przycisk do szablonu, który jest mapowany na typ powiadomienia **Zakończenie pakowania** i tryb dostawy używany do realizacji zamówienia „przy krawężniku”. W szablonie utwórz przycisk lub link HTML, który wskazuje adres URL utworzonej strony potwierdzenia zameldowania i zawiera nazwy oraz wartości parametrów, tak jak pokazano w poniższym przykładzie.
 
-```
-<a href="https://[YOUR_SITE_DOMAIN]/[CHECK-IN_CONFIRMATION_PAGE]?channelReferenceId=%channelreferenceid%&channelId=%channelid%&packingSlipId=%packingslipid%" target="_blank">I am here!</a>
-```
+`<a href="https://[YOUR_SITE_DOMAIN]/[CHECK-IN_CONFIRMATION_PAGE]?channelReferenceId=%confirmationid%&channelId=%channelid%&packingSlipId=%packingslipid%" target="_blank">I am here!</a>`
+
 Aby uzyskać więcej informacji dotyczących konfigurowania szablonów wiadomości e-mail, zobacz temat [Dostosowywanie transakcyjnych wiadomości e-mail zależnie od trybu dostawy](customize-email-delivery-mode.md). 
 
 ## <a name="a-check-in-confirmation-task-is-created-in-pos"></a>W punkcie sprzedaży zostanie utworzone zadanie potwierdzenia zameldowania
 
-Gdy odbiorca powiadomi sklep, że jest obecny do odbioru, otrzyma powiadomienie o potwierdzeniu zameldowania i na liście zadań w punkcie sprzedaży dla sklepu, w którym odbiorca odbiera zamówienie, zostanie utworzone zadanie. Zadanie zawiera wszystkie informacje o odbiorcy i zamówieniu wymagane do realizacji zamówienia. W zadaniu w polu instrukcji są podane wszystkie informacje zebrane od odbiorcy za pośrednictwem formularza informacji dodatkowych. 
+Gdy klient powiadomi sklep, że jest gotowy do odebrania zakupu, na stronie zameldowania jest wyświetlany komunikat potwierdzenia oraz opcjonalny kod PIN z identyfikatorem potwierdzenia zamówienia klienta. Jednocześnie na liście zadań w punkcie sprzedaży dla sklepu, w którym klient odbiera zamówienie, jest tworzone zadanie. Zadanie to zawiera wszystkie informacje o odbiorcy i zamówieniu wymagane do realizacji zamówienia. Pole instrukcji w zadaniu zawiera wszystkie informacje zebrane od odbiorcy za pośrednictwem formularza informacji dodatkowych.
+
+## <a name="end-to-end-testing"></a>Kompleksowe testowanie
+
+Zameldowanie klienta wymaga przekazania określonych parametrów i wartości do strony zameldowania, a następnie do interfejsu API zameldowania klienta. Dlatego najprostszym rozwiązaniem jest przetestowanie tej funkcji w środowisku, w którym można utworzyć i zapakować zamówienie testowe. W ten sposób można wygenerować wiadomość e-mail z informacją „zamówienie gotowe do pobrania” oraz adresem URL zawierającym wymagane nazwy i wartości parametrów.
+
+Aby przetestować funkcję zameldowania klienta, wykonaj następujące kroki.
+
+1. Utwórz stronę zameldowania klienta, a następnie dodaj i skonfiguruj moduł zameldowania odbiorcy. Aby uzyskać więcej informacji, zobacz temat [Moduł zameldowania do odbioru](check-in-pickup-module.md). 
+1. Zaewidencjonuj stronę, ale jej nie publikuj.
+1. Dodaj poniższy link do szablonu wiadomości e-mail wywoływanego przez typ powiadomienia o zakończeniu pakowania dla metody dostawy „odbiór”. Aby uzyskać więcej informacji, zobacz temat [Tworzenie szablonów wiadomości e-mail na potrzeby zdarzeń transakcyjnych](email-templates-transactions.md).
+
+    - **W środowiskach przedprodukcyjnych (UAT):** dodaj fragment kodu z sekcji [Konfigurowanie szablonu transakcyjnej wiadomości e-mail](#configure-the-transactional-email-template) znajdującej się wcześniej w tym temacie.
+    - **W środowiskach produkcyjnych:** dodaj następujący kod z komentarzem, aby nie wpływał on na istniejących klientów.
+
+        `<!-- https://[DOMAIN]/[CHECK_IN_PAGE]?channelReferenceId=%confirmationid%&channelId=%pickupchannelid%&packingSlipId=%packingslipid%&preview=inprogress -->`
+
+1. Utwórz zamówienie, w którym określono metodę dostawy „odbiór”.
+1. Po otrzymaniu wiadomości e-mail, która jest wyzwalana przez typ powiadomienia o zakończeniu pakowania, przetestuj przepływ zameldowania, otwierając stronę zameldowania, która zawiera adres URL dodany wcześniej. Ponieważ adres URL zawiera flagę `&preview=inprogress`, przed wyświetleniem strony zostanie wyświetlony monit o uwierzytelnienie.
+1. Wprowadź dodatkowe informacje wymagane do skonfigurowania modułu.
+1. Sprawdź, czy widok potwierdzenia zameldowania jest pokazywany poprawnie.
+1. Otwórz termin w punkcie sprzedaży w sklepie, w którym zamówienie zostanie odebrane.
+1. Wybierz kafelek **Zamówienia do odbioru** i sprawdź, czy jest wyświetlane zamówienie.
+1. Sprawdź, czy dodatkowe informacje skonfigurowane w module zameldowania są wyświetlane w okienku szczegółów.
+
+Po sprawdzeniu, czy funkcja zameldowania obsługi klienta działa kompleksowo, wykonaj następujące kroki.
+
+1. Opublikuj stronę zameldowania.
+1. Jeśli testujesz w środowisku produkcyjnym, usuń komentarz dotyczący adresu URL w szablonie wiadomości e-mail „zamówienie gotowe do odbioru”, aby było widoczne link lub przycisk **Jestem tutaj**. Następnie ponownie przekaż szablon.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Moduł zameldowania do odbioru](check-in-pickup-module.md)
+
+[Dostosowywanie wiadomości e-mail dotyczących transakcji według metod dostawy](customize-email-delivery-mode.md)
+
+[Tworzenie szablonów wiadomości e-mail na potrzeby zdarzeń transakcyjnych](email-templates-transactions.md)

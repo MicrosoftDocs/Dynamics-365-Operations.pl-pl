@@ -2,7 +2,7 @@
 title: Przenieś podksięgę do księgi głównej
 description: W tym temacie opisano możliwości rozwiązania związane z procesem przenoszenia księgi podrzędnej w księdze głównej.
 author: rcarlson
-ms.date: 07/20/2021
+ms.date: 12/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-01-18
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 03c04a5eb8b544b582019ddd204382900b162d952842c901f69ed4a853bd8183
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 213bbc2541c614aa26b0c830431818fb99c7682d
+ms.sourcegitcommit: f5885999e008a49fe072d95f15e239905c24918a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716652"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900737"
 ---
 # <a name="subledger-transfer-to-the-general-ledger"></a>Przenieś podksięgę do księgi głównej
 
@@ -39,7 +39,7 @@ W wersji 10.0.8 dokonano ulepszeń w celu zwiększenia wydajności opcji **async
 
 Funkcjonalność asynchronicznego przesyłania partii księgi podrzędnej pomaga usprawnić transfer danych z księgi podrzędnej do księgi głównej. Dzięki grupowaniu zestawów mniejszych transakcji i przenoszeniu transakcji w grupy, funkcjonalność efektywniej przetwarza transakcje. Podczas grupowania transakcji zasoby serwera przetwarzania wsadowego są używane efektywniej.
 
-Asynchroniczny transfer partii księgi podrzędnej wymaga, aby serwer wsadowy był skonfigurowany, w trybie online i działał. W przeciwnym razie opcja transferu **asynchronicznego** nie działa.
+Asynchroniczne przenoszenie partii ksiąg podrzędnych wymaga skonfigurowania serwera przetwarzania wsadowego w trybie online oraz pracy, ponieważ zadania wsadowe zostały utworzone w celu natychmiastowego wykonania na serwerze przetwarzania wsadowego. Gdy jest włączona funkcja **optymalizacji wydajności transferu podksięgi do księgi głównej**, musi być również włączone zadanie wsadowe systemu **automatyzacji procesów** o nazwie **Sondowanie automatyzacji procesów**. Aby uzyskać więcej informacji, zobacz [Automatyzacja procesu](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
 Zmiana wydajności na poziomie partii używa jednego cyklicznego zadania wsadowego dla wszystkich firm w systemie. W czasie wykonywania tworzone jest nowe zadanie wsadowe w celu przetworzenia wymaganych rekordów, które nie zostały jeszcze przeniesione. Więcej ustawień można kontrolować za pomocą strony **Automatyzacja procesu** w administracji systemem. Na tej stronie możesz zmodyfikować proces w tle, zmienić częstotliwość i zdefiniować okres snu.
 
