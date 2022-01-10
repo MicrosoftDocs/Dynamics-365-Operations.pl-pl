@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 7271436bd155918dfdac792486c89966e7adb18c
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.openlocfilehash: a028de4bd37b965d55783dad4b39378d6400bf4b
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402649"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920755"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-functional-consultants"></a>Katalog szkoleń dla konsultantów funkcjonalnych Dynamics 365 Supply Chain Management
 
@@ -113,7 +113,7 @@ W przypadku konsultantów funkcjonalnych badanie analizy zadań wykazało, że w
 | [Konfigurowanie Zarządzania składnikami majątku w Dynamics 365 Supply Chain Management](/learn/paths/configure-asset-management-dyn365-supply-chain-mgmt/) | Zarządzanie składnikami majątku jest dodatkiem do Dynamics 365 Supply Chain Management, który służy do zarządzania składnikami majątku używanymi w codziennych operacjach w firmie. Przykładami takich typów składników jest maszyna, sprzęt produkcyjny i dźwigi. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 7 godzin |
 | [Praca z Zarządzaniem składnikami majątku dla Dynamics 365 Supply Chain Management](/learn/paths/work-asset-management-dyn365-supply-chain-mgmt/) | Zarządzanie składnikami majątku jest dodatkiem do Dynamics 365 Supply Chain Management, który służy do zarządzania składnikami majątku używanymi w codziennych operacjach w firmie. Przykładami takich typów składników jest maszyna, sprzęt produkcyjny i dźwigi. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 12.5 godzin |
 | [Zarządzanie informacjami o wersji produktu w systemie Dynamics 365 Supply Chain Management](/learn/paths/manage-product-version-engineering-change-management/) | Dodatek Zarządzanie zmianami inżynieryjnymi dla systemu Dynamics 365 Supply Chain Management systematyzuje proces zarządzania informacjami o wersji produktu w trakcie cyklu życia produktu inżynieryjnego. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 4 godzin |
-| [Konfigurowanie zarządzania zmianami inżynieryjnymi dla systemu Dynamics 365 Supply Chain Management](/learn/paths/set-up-engineering-change-management/) | Dzisiejsi producenci wymagają silnego zarządzania danymi produktu, kontroli wersji i zarządzania zmianami inżynieryjnymi, aby odnieść sukces w świecie stale kurczących się cykli życia produktów, zwiększonych wymagań dotyczących jakości i niezawodności oraz zwiększonego nacisku na bezpieczeństwo produktu. Z tej ścieżki szkoleniowej dowiesz się, jak skonfigurować zarządzanie zmianami projektowymi. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 4 godzin |
+| [Konfigurowanie zarządzania zmianami inżynieryjnymi dla systemu Dynamics 365 Supply Chain Management](/learn/paths/set-up-engineering-change-management/) | Dzisiejsi producenci potrzebują zaawansowanych funkcji zarządzania danymi produktów, kontroli wersji i zarządzania zmianami inżynieryjnymi, aby odnieść sukces w świecie ciągle skracanych cykli życia produktów, zwiększonych wymagań dotyczących jakości i niezawodności oraz zwiększonego nacisku na bezpieczeństwo produktów. Z tej ścieżki szkoleniowej dowiesz się, jak skonfigurować zarządzanie zmianami projektowymi. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 4 godzin |
 | [Microsoft Certified: Dynamics 365 for Finance and Operations Konsultant funkcjonalny funkcji zarządzania łańcuchem dostaw](https://www.microsoft.com/learning/d365-functional-consultant-supply-chain-management.aspx) | Certyfikat Microsoft Certified Dynamics 365 for Finance and Operations:, Konsultantzy funkcjonalni zarządzania łańcuchami dostaw upraszczają rachunek kosztów, zarządzanie zapasami, planowanie główne oraz zarządzanie magazynem dla swoich klientów. | Certyfikat, koszty różnią się w zależności od regionu | |
 
 ## <a name="exams"></a>Egzaminy<a name="exams"></a>

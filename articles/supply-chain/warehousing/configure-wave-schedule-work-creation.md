@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 5e9dc9b7cf33f9393f408d8f8a458e9b0ea47639
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 5b1e798ac0558e7c5b0bbe4b6a732cbdcf5729a1
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778384"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920120"
 ---
 # <a name="schedule-work-creation-during-wave"></a>Planowanie tworzenia pracy podczas grupy czynności
 
@@ -54,7 +54,7 @@ Istniejące konfiguracje przetwarzania zadań i grupy czynności zostaną równi
 W razie potrzeby można ręcznie przywrócić dowolne lub wszystkie ustawienia wprowadzone automatycznie po włączeniu funkcji *Metody grup czynności tworzenia harmonogramu w całej organizacji*, wykonując następujące czynności:
 
 - Aby uzyskać szablony grup czynności, przejdź do **Zarządzanie magazynem \> Ustawienia \> Grupy czynności \> Szablony grupy czynności**. Zastąp metodę *Planowanie tworzenia pracy* na *Utwórz pracę*.
-- Aby zapoznać się z parametrami magazynu, przejdź do **Zarządzanie magazynem \> Ustawienia \> Parametry zarządzania magazynem**. Na karcie **Przetwarzanie grupy czynności** zastosuj preferowane wartości dla **Przetwarzanie grup czynności w partii** i **Oczekiwanie na blokadę (ms)**.
+- Aby zapoznać się z parametrami magazynu, wybierz kolejno pozycje **Zarządzanie magazynem \> Ustawienia \> Parametry zarządzania magazynem**. Na karcie **Przetwarzanie grupy czynności** zastosuj preferowane wartości dla **Przetwarzanie grup czynności w partii** i **Oczekiwanie na blokadę (ms)**.
 - Aby przejść do metod grupy czynności, przejdź do **Zarządzanie magazynem \> Ustawienia \> Grupy czynności \> Metody procesów grupy czynności**. W okienku akcji wybierz `WHSScheduleWorkCreationWaveStepMethod`, a następnie wybierz opcję **Konfiguracja zadań**. Zmodyfikuj lub usuń liczbę zadań wsadowych oraz przypisaną grupę czynności dla każdego z wymienionych magazynów, w razie potrzeby.
 
 ## <a name="manually-configure-scheduled-work-creation"></a>Ręczne konfigurowanie tworzenia zaplanowanej pracy
@@ -65,7 +65,7 @@ Jeśli nie włączyć [funkcji *Metoda grupy czynności „Tworzenie harmonogram
 
 Aby można było korzystać z równoległej metody asynchronicznej tworzenia pracy magazynowej, proces grupy czynności musi być uruchomiony w partii. Aby to skonfigurować:
 
-1. Wybierz kolejno opcje  **Zarządzanie magazynem \> Ustawienia \> Parametry zarządzania magazynem**.
+1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Parametry zarządzania magazynem**.
 1. Na karcie **Ogólne** ustaw opcję **Przetwarzaj grupy czynności partiami** na *Tak*. Opcjonalnie możesz również wybrać dedykowaną **grupę przetwarzania wsadowego grupy czynności**, aby uniemożliwić uruchomienie przetwarzania kolejki przetwarzania wsadowego w tym samym czasie, co inne procesy.
 1. Ustaw **czas oczekiwania na blokadę (ms)**, który ma zastosowanie, gdy system przetwarza kilka grup czynności w tym samym czasie. W przypadku większości procesów grup czynności zalecane jest użycie wartości *60 000*.
 
@@ -73,8 +73,8 @@ Aby można było korzystać z równoległej metody asynchronicznej tworzenia pra
 
 Rozpocznij od utworzenia nowej metody kroku grupy czynności i włączenia jej do równoległego przetwarzania zadań asynchronicznych.
 
-1. Wybierz kolejno opcje  **Zarządzanie magazynem \> Ustawienia \> Grupy czynności \> Metody procesów grupy czynności**.
-1. Wybierz opcję  **Ponownie utwórz metody** i zauważ, że do listy metod przetwarzania grupy czynności, których można używać w szablonach grupy czynności wysyłki, dodano metodę *WHSScheduleWorkCreationWaveStepMethod*.
+1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Grupy czynności \> Metody procesów grupy czynności**.
+1. Wybierz pozycję **Wygeneruj ponownie metodę** i zauważ, że do listy metod przetwarzania grupy czynności, których można używać w szablonach grup czynności wysyłki, dodano metodę *WHSScheduleWorkCreationWaveStepMethod*.
 1. Wybierz rekord z **nazwą metody** *WHSScheduleWorkCreationWaveStepMethod* i wybierz **Konfiguracja zadania**.
 1. Aby dodać nowy wiersz do siatki, wybierz opcję **Nowy** w okienku akcji i użyj następujących ustawień:
 
@@ -84,7 +84,7 @@ Rozpocznij od utworzenia nowej metody kroku grupy czynności i włączenia jej d
 
 Teraz można zaktualizować istniejący szablon grupy czynności (lub utworzyć nowy), aby użyć metody przetwarzania grupy czynności *Planowanie tworzenia pracy*.
 
-1. Wybierz kolejno opcje  **Zarządzanie magazynem \> Ustawienia \> Grupy czynności \> Szablony grupy czynności**.
+1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Grupy czynności \> Szablony grupy czynności**.
 1. W okienku akcji wybierz pozycję **Edytuj**.
 1. W okienku listy wybierz szablon grupy czynności, który chcesz zaktualizować (w przypadku testowania danych pokazowych możesz użyć *domyślnej wysyłki w 24 godziny*).
 1. Rozwiń skróconą kartę **Metody** i zaznacz wiersz z **nazwą** *Planowanie tworzenia pracy* w siatce **Pozostałe metody**.

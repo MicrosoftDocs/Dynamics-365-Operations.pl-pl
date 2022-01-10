@@ -2,7 +2,7 @@
 title: Konfiguracja dodatku Widoczność magazynu
 description: W tym temacie opisano sposób konfigurowania dodatku Widoczność magazynu.
 author: yufeihuang
-ms.date: 08/02/2021
+ms.date: 12/09/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 53cc457c788d24adfe3c523719ccffc6d445fb61
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.openlocfilehash: fcbace2bd28a843fca8aa2f4f998c08f238c29d6
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678478"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920305"
 ---
 # <a name="configure-inventory-visibility"></a>Konfiguracja dodatku Widoczność magazynu
 
@@ -61,7 +61,7 @@ Po zakończeniu konfigurowania pamiętaj o wybraniu pozycji **Aktualizuj konfigu
 Każde źródło danych reprezentuje system, z których pochodzą dane. Przykładowe nazwy źródła danych to `fno` (co oznacza „aplikacje Dynamics 365 Finance and Operations”) i `pos` (co oznacza „punkt sprzedaży”). System Supply Chain Management jest ustawiany jako domyślne źródło danych (`fno`) w aplikacji Widoczność magazynu.
 
 > [!NOTE]
-> Źródło danych `fno` jest zarezerwowane dla Dynamics 365 Supply Chain Management.
+> Źródło danych `fno` jest zarezerwowane dla Supply Chain Management. Jeśli dodatek Widoczność magazynu jest zintegrowany ze środowiskiem Supply Chain Management, nie zaleca się usuwania konfiguracji związanych z `fno` w źródle danych.
 
 Procedura dodawania źródła danych jest następująca.
 
@@ -273,17 +273,17 @@ Wynik `MyCustomAvailableforReservation`, oparty na ustawieniu obliczania w niest
 
 ## <a name="partition-configuration"></a><a name="partition-configuration"></a>Konfiguracja partycji
 
-Konfiguracja partycji składa się z kombinacji wymiarów podstawowych. Definiuje wzorzec dystrybucji danych. Operacje na danych z tej samej partycji zapewniają wysoką wydajność i nie kosztują zbyt wiele. Dlatego dobre wzorce partycji mogą przynieść spore korzyści.
-
-Dodatek Widoczność magazynu zawiera następującą domyślną konfigurację partycji.
+Obecnie konfiguracja partycji składa się z dwóch wymiarów podstawowych (`SiteId` i `LocationId`) wskazujących sposób dystrybuowania danych. Operacje wykonywane na tej samej partycji mogą uzyskać wyższą wydajność przy niższym koszcie. Poniższa tabela wskazuje domyślną konfigurację partycji, którą zapewnia dodatek Widoczność magazynu.
 
 | Wymiar podstawowy | Hierarchia |
 |---|---|
 | `SiteId` | 1 |
 | `LocationId` | 2 |
 
-> [!NOTE]
-> Domyślna konfiguracja partycji ma charakter wyłącznie informacyjny. Nie trzeba jej definiować w dodatku Widoczność magazynu. Obecnie uaktualnienie konfiguracji partycji nie jest obsługiwane.
+Rozwiązanie domyślnie zawiera tę konfigurację partycji. Dlatego *nie trzeba obliczać jej ręcznie*.
+
+> [!IMPORTANT]
+> Nie dostosowuj domyślnej konfiguracji partycji. Usunięcie lub zmiana może spowodować nieoczekiwany błąd.
 
 ## <a name="product-index-hierarchy-configuration"></a><a name="index-configuration"></a>Konfiguracja hierarchii indeksów produktów
 

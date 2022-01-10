@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 93eff7a54f9d3851c59b83a28d3aa61a8de7bc41f2a845be21c8bf4d1c6401d4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8d5bcf3a0d36e323ee96c1f37829a95b60f529bc
+ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731038"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "7944720"
 ---
 # <a name="refund-payment-processing-in-call-centers"></a>Przetwarzanie płatności zwrotów w biurach obsługi
 
@@ -33,11 +33,14 @@ Logika call center określa metodę płatności dla linii płatności zwrotu na 
 
 Centrum obsługi telefonicznej korzysta z metody płatności pierwotnego zamówienia, aby określić metodę płatności, jaką należy zastosować do zamówienia zwrotu. Poniżej przedstawiono sposób działania tego procesu w przypadku następujących oryginalnych metod płatności:
 
-- **Zwykłe** (gotówka) lub **Czek** — jeśli tworzone zamówienie zwrotu odwołuje się do oryginalnego zamówienia, za które zapłacono przy użyciu zwykłego (gotówki) lub typu płatności czeku, konfiguracje odwołań aplikacji do funkcji obsługi na stronie **Metody zwrotu dla centrum obsługi**. Ta strona umożliwia organizacjom zdefiniowanie według waluty zamówienia, w jaki sposób zwroty są wydawane klientom za zamówienia, za które pierwotnie zapłacono przy użyciu zwykłego typu płatności lub czeku. Strona **Metod zwrotu dla centrum obsługi** umożliwia również organizacjom wybranie, czy wygenerowany przez system czek zwrotu jest wysyłany do odbiorcy, czy też jest tworzony kredyt na koncie odbiorcy w saldzie wewnętrznego konta odbiorcy. W tych scenariuszach logika centrum obsługi odwołuje się do waluty zamówienia zwrotu, a następnie używa wartości **Metody płatności detalicznej dla tej waluty**, aby utworzyć wiersz płatności zwrotu w zamówieniu zwrotu. Później arkusz płatności odbiorców rozrachunków z odbiorcami (AR), który używa zmapowanej metody płatności AR, jest połączony z walutą.
+- **Zwykłe** (gotówka) lub **Czek** — jeśli tworzone zamówienie zwrotu odwołuje się do oryginalnego zamówienia, za które zapłacono przy użyciu zwykłego (gotówki) lub typu płatności czeku, konfiguracje odwołań aplikacji do funkcji obsługi na stronie **Metody zwrotu dla centrum obsługi**. Ta strona umożliwia organizacjom zdefiniowanie według waluty zamówienia, w jaki sposób zwroty są wydawane klientom za zamówienia, za które pierwotnie zapłacono przy użyciu zwykłego typu płatności lub czeku. Strona **Metody zwrotu biura obsługi** umożliwia również organizacjom określenie, czy czek zwrotu wygenerowany przez system ma zostać wysłany do odbiorcy. W tych scenariuszach logika centrum obsługi odwołuje się do waluty zamówienia zwrotu, a następnie używa wartości **Metody płatności detalicznej dla tej waluty**, aby utworzyć wiersz płatności zwrotu w zamówieniu zwrotu. Później arkusz płatności odbiorców rozrachunków z odbiorcami (AR), który używa zmapowanej metody płatności AR, jest połączony z walutą.
 
     Na poniższej ilustracji przedstawiono konfigurację scenariusza, w którym klient zwraca produkty z zamówienia sprzedaży, które jest połączone z walutą USD i które zostało pierwotnie opłacone przy użyciu zwykłego typu płatności lub czeku. W tym scenariuszu zwrot środków zostanie przekazany klientowi za pośrednictwem wygenerowanego przez system czeku zwrotnego. Metoda płatności **REF-CHK** AR została skonfigurowana jako typ płatności dla czeku zwrotu.
 
     ![Konfiguracja metod zwrotu dla centrum obsługi dla oryginalnych płatności zwykłych i za pomocą czeku.](media/callcenterrefundmethods.png)
+
+    > [!NOTE]
+    > Konto odbiorcy nie jest obsługiwaną metodą zwrotu w przypadku płatności gotówką lub czekiem.
 
 - **Karta kredytowa** – Gdy tworzone zamówienie zwrotu odwołuje się do oryginalnego zamówienia, za które zapłacono kartą kredytową, logika centrum obsługi dla płatności zwrotów jest taka sama, jak oryginalna karta kredytowa do zamówienia zwrotu.
 - **Karta lojalnościowa** – Gdy utworzone zamówienie zwrotu odwołuje się do oryginalnego zamówienia, za które zapłacono przy użyciu karty lojalnościowej klienta, logika centrum obsługi telefonicznej dla płatności refundacji stosuje zwrot do tej samej karty lojalnościowej.

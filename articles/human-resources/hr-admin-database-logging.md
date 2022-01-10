@@ -1,8 +1,8 @@
 ---
 title: Konfigurowanie i zarządzanie rejestrowaniem bazy danych
 description: Można śledzić zmiany w tabelach i polach w Dynamics 365 Human Resources z rejestrowaniem w bazie danych.
-author: andreabichsel
-ms.date: 06/10/2020
+author: twheeloc
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4fd0f69df4a141e509c8c250f767cbbc3a20ef4ab7ac3dcec2bc6faa15eababb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 10591abee7890d54d721c9324101a4b4bd0a74d2
+ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6781664"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "7924827"
 ---
 # <a name="configure-and-manage-database-logging"></a>Konfigurowanie i zarządzanie rejestrowaniem bazy danych
 
@@ -93,14 +93,14 @@ Można usunąć wszystkie dzienniki bazy danych lub ich część, korzystając z
 Aby skonfigurować czyszczenie dziennika bazy danych, wykonaj następujące kroki: 
 
 1. Przejdź do **Administrowanie systemem > Łącza > Baza danych > Dziennik bazy danych**. Wybierz opcję **Oczyszczanie dziennika**.
-
-2. Wybierz metodę wybierania dzienników do usunięcia, wprowadzając jedną z następujących opcji:
+2. W sekcji **Rekordy do uwzględnienia** wybierz **Filtr**.
+3. Wybierz metodę, która będzie używana do wybierania dzienników do usunięcia. Wprowadź jedną z poniższych opcji:
 
    - ID tabeli
    - Typ dziennika
    - Data i godzina utworzenia
 
-3. Karta **Czyszczenie dziennika bazy danych** umożliwia określenie, kiedy ma być wykonywane zadanie oczyszczania dziennika. Domyślnie dzienniki bazy danych są dostępne przez 30 dni.
+4. Karta **Czyszczenie dziennika bazy danych** umożliwia określenie, kiedy ma być wykonywane zadanie oczyszczania dziennika. Domyślnie dzienniki bazy danych są dostępne przez 30 dni.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

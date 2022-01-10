@@ -2,7 +2,7 @@
 title: Ustawienia parametrów modułu Zarządzanie kredytami
 description: W tym temacie opisano opcje, których można wykorzystać w celu skonfigurowania zarządzania kredytami w celu spełnienia wymagań firmy.
 author: JodiChristiansen
-ms.date: 08/03/2020
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 768fb5121ae6be513c4a533a20027cf784640b2a
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 745a51617f8c87c0f757aee0304ec3efb55d0f98
+ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753472"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7921222"
 ---
 # <a name="credit-management-parameters-setup"></a>Ustawienia parametrów modułu Zarządzanie kredytami
 
@@ -31,7 +31,7 @@ Istnieją cztery karty skrócone w sekcji **Kredyt**, w których można zmienić
 
 ### <a name="credit-holds"></a>Wstrzymania kredytu
 
-- Ustawienie **Zezwalaj na edycję zamówień sprzedaży po zwolnieniu wstrzymania** do wartości **Nie** spowoduje ponowne sprawdzenie reguł księgowania, jeśli wartość zamówienia sprzedaży (cena rozszerzona) wzrosła, ponieważ zamówienie sprzedaży zostało zwolnione z listy zablokowanych. ,
+- Ustawienie **Zezwalaj na edycję zamówień sprzedaży po zwolnieniu wstrzymania** do wartości **Nie** spowoduje ponowne sprawdzenie reguł księgowania, jeśli wartość zamówienia sprzedaży (cena rozszerzona) wzrosła, ponieważ zamówienie sprzedaży zostało zwolnione z listy zablokowanych.
 - W polu **Przyczyny anulowania zamówień** wybierz przyczynę zwolnienia, która będzie używana domyślnie w przypadku anulowania zamówienia sprzedaży, które było w dniu wstrzymania zarządzania kredytem.
 - Ustawienie opcji **Sprawdź limit kredytu dla grupy odbiorców kredytu** na wartość **Tak** powoduje sprawdzenie limitu kredytu grupy odbiorców kredytu, gdy odbiorca zamówienia sprzedaży należy do grupy odbiorców kredytu. Limit kredytu dla grupy zostanie sprawdzony, a następnie, jeśli jest wystarczający, zostanie sprawdzony limit kredytu dla odbiorcy.
 - Ustawienie opcji **Sprawdź limit kredytu, jeśli warunki płatności zostaną zwiększone** do wartości **Tak**, aby sprawdzić, czy warunki płatności w zamówieniu sprzedaży różnią się od domyślnych warunków płatności dla odbiorcy. Jeśli nowe warunki płatności mają wyższą rangę niż pierwotne warunki płatności, zamówienie jest umieszczane w wstrzymaniu zarządzania kredytami.
@@ -72,6 +72,10 @@ W polu informacji **Statystyki zarządzania kredytami odbiorców** znajduje się
 
 - W module zarządzania kredytem limit kredytu odbiorcy jest pokazywany w walucie odbiorcy. Należy zdefiniować typ kursu wymiany dla limitu kredytu w walucie odbiorcy. W polu **Typ kursu wymiany limitu kredytu** wybierz typ kursu wymiany, który ma zostać użyty do przekonwertowania podstawowego limitu kredytu na limit kredytu odbiorcy.
 - Ustawienie opcji **Zezwalaj na ręczne edytowanie limitów kredytu** na wartość **nie** powoduje, że użytkownicy nie będą mogli edytować limitów kredytowych na stronie **Odbiorcy**. Jeśli ta opcja jest ustawiona na wartość **nie**, zmiany w limicie kredytu odbiorcy mogą być wprowadzane tylko przez księgowanie transakcji korekty limitu kredytu.
+- Ustaw dla opcji **Pomiń rezerwacje zapasów** wartość **Tak**, aby pomijać rezerwacje zapasów podczas sprawdzania reguł blokowania zarządzania kredytami. W takim przypadku system sprawdza pełne ilości w wierszach i włącza okresy prolongaty punktów kontrolnych niezależnie od ilości rezerwacji zapasów.
+- Po włączeniu opcji Zarządzanie kredytami ustawienie z pola **Komunikat przy przekroczeniu limitu kredytu** jest używane tylko do przetwarzania faktur niezależnych. Komunikaty są nadal dodawane do zamówień sprzedaży, gdy odbiorcy przekroczyli limit kredytu, ale obecność tych komunikatów nie spowoduje zablokowania potwierdzenia, wydrukowania list pobrania i dokumentów dostawy ani księgowania faktur.
+
+    Funkcja Zarządzanie kredytami jest włączona domyślnie, ale możesz ją wyłączyć. Jeśli jest włączona, możesz używać reguł blokowania oraz punktów kontrolnych zarządzania kredytami w celu ustalania, kiedy odbiorcy przekroczyli swój limit kredytu. Jeśli jest wyłączona, komunikaty dodawane do zamówień sprzedaży na podstawie ustawienia w polu **Komunikat przy przekroczeniu limitu kredytu** mogą ułatwić ustalanie, kiedy odbiorcy przekroczyli limit kredytu.
 
 ### <a name="number-sequences-and-shared-number-sequence-parameters"></a>Parametry sekwencji numerów i współużytkowanej sekwencji numerów
 
