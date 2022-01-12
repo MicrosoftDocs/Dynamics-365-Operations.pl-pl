@@ -2,7 +2,7 @@
 title: FILTER, funkcja ER
 description: Ten temat zawiera ogólne informacje o używaniu funkcji FILTER w module Raportowanie elektroniczne (ER).
 author: NickSelin
-ms.date: 12/12/2019
+ms.date: 12/14/2021
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c601babd3ea7122bc9ddf7bf101751d4c032016fb33c3d4101f588789491e817
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e857306574dda7bad5dd25fc7708514997d8e86f
+ms.sourcegitcommit: b1c758ec4abfcf3bf9e50f18c1102d4a9c1316d0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760033"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "7922430"
 ---
 # <a name="filter-er-function"></a>FILTER, funkcja ER
 
@@ -49,11 +49,17 @@ Prawidłowe wyrażenie warunkowe, które jest używane do filtrowania rekordów 
 
 Wynikowa lista rekordów.
 
-## <a name="usage-notes"></a>Uwagi dotyczące użytkowania
+## <a name="usage-notes"></a><a name="usage-notes"></a>Uwagi dotyczące użytkowania
 
 Ta funkcja różni się od funkcji [WHERE](er-functions-list-where.md), ponieważ podany warunek jest stosowany do każdego źródła danych modułu Raportowanie elektroniczne (ER) o typie *Rekordy tabeli* na poziomie bazy danych. Listę i warunek można zdefiniować przy użyciu tabel i relacji.
 
 Jeśli jeden lub oba argumenty skonfigurowane dla tej funkcji (`list` i `condition`) nie zezwalają na przetłumaczenie tego żądania na bezpośrednie wywołanie SQL, w czasie projektowania jest generowany wyjątek. Ten wyjątek informuje użytkownika, że elementu `list` lub `condition` nie można użyć do tworzenia zapytania dotyczącego bazy danych.
+
+> [!NOTE]
+> Funkcja `FILTER` różni się od funkcji `WHERE` w przypadku korzystania z funkcji [`VALUEIN`](er-functions-logical-valuein.md) do określania kryteriów wyboru.
+> 
+> - Jeśli funkcja `VALUEIN` jest używana w zakresie funkcji `WHERE`, a drugi argument `VALUEIN` odwołuje się do źródła danych, które nie zwraca rekordów, jest uznawana wartość logiczna *[Fałsz](er-formula-supported-data-types-primitive.md#boolean)*, która zwraca `VALUEIN`. W związku z tym wyrażenie `WHERE(Vendors, VALUEIN(Vendors.VendGroup, VendGroups, VendGroups.VendGroup))` nie zwróci rekordów dostawcy, jeśli źródło danych **VendGroups** nie zwróci rekordów grupy dostawców.
+> - Jeśli funkcja `VALUEIN` jest używana w zakresie funkcji `FILTER`, a drugi argument `VALUEIN` odwołuje się do źródła danych, które nie zwraca rekordów, wartość logiczna *[Fałsz](er-formula-supported-data-types-primitive.md#boolean)*, która zwraca `VALUEIN`, jest ignorowana. W związku z tym wyrażenie `FILTER(Vendors, VALUEIN(Vendors.VendGroup, VendGroups, VendGroups.VendGroup))` zwraca wszystkie rekordy źródła danych **Dostawcy**, nawet jeśli źródło danych **VendGroups** nie zwróci żadnych rekordów grupy dostawców.
 
 ## <a name="example-1"></a>Przykład 1
 

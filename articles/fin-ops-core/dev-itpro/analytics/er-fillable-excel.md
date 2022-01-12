@@ -2,7 +2,7 @@
 title: Projektowanie konfiguracji projektu w celu generowania dokumentów wychodzących w formacie programu Excel
 description: Ten temat zawiera informacje o tym, jak zaprojektować format modułu raportowania elektronicznego (ER) do wypełniania w szablonie programu Excel, a następnie generować dokumenty wychodzące w formacie programu Excel.
 author: NickSelin
-ms.date: 12/03/2021
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ebe2647bb382421921aa6ffc733953f379a8af10
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: 87d5929557e5120a5339ee46eac655fd399679d1
+ms.sourcegitcommit: f51e74ee9162fe2b63c6ce236e514840795acfe1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890880"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "7943619"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Projektowanie konfiguracji projektu w celu generowania dokumentów wychodzących w formacie programu Excel
 
@@ -364,6 +364,22 @@ Problem można rozwiązać przy użyciu jednego z poniższych sposobów:
     3. Uruchom zmodyfikowany format ER.
 
         ![Przeglądanie wygenerowanego dokumentu programu Excel w aplikacji klasycznej.](./media/er-fillable-excel-example2-4.png)
+
+## <a name="limitations"></a>Ograniczenia
+
+### <a name="known-epplus-library-limitations"></a>Znane ograniczenia biblioteki EPPlus
+
+#### <a name="external-data-sources"></a>Zewnętrzne źródła danych
+
+Jeśli jeden z szablonów zawiera tabelę przestawną opartą na modelu PowerPivot który odwołuje się do [zewnętrznego źródła danych](https://support.microsoft.com/office/create-a-pivottable-with-an-external-data-source-db50d01d-2e1c-43bd-bfb5-b76a818a927b), włączono funkcję **Włącz użycie biblioteki EPPlus w narzędziach raportowania elektronicznego**, po uruchomieniu formatu raportowania elektronicznego korzystającego z tego szablonu w celu wygenerowania dokumentu wychodzącego w formacie Excel: "Źródło pamięci podręcznej nie jest arkuszem." Aby naprawić ten problem, skorzystaj z jednej z następujących opcji:
+
+- **Zalecane jest** przeprojektowanie używanych rozwiązań Excel:
+
+    1. Wyodrębnij część zawierającą pivots w osobnym skoroszycie programu Excel (skoroszyt A). 
+    2. Funkcji tej można użyć w celu wygenerowania na podstawie danych finansowych drugiego skoroszytu programu Excel (skoroszyt B) z wymaganymi szczegółami. 
+    3. Po wygenerowaniu skoroszytu B zapoznaj się ze skoroszytem B w skoroszycie A.
+
+- Aby wyłączyć tę funkcję, należy użyć opcji innej niż EPPlus. 
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

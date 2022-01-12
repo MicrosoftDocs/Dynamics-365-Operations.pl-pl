@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3632f115b1ef4cd3a41a483270fb5f6bb6c73526ce9322f16a6533265302937c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cc9219009991cce3f4df9c6f7e04903f5625dd80
+ms.sourcegitcommit: b2fe67e2fe6a99a35decb04c8d62efd1e94fe1b8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719771"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "7945548"
 ---
 # <a name="configure-account-structures"></a>Skonfiguruj strukturę konta
 
@@ -79,7 +79,7 @@ Podczas wprowadzania arkusza i wybierania konta w zakresie wyników wybranie jed
 
 ## <a name="more-than-7-criteria-needed"></a>Potrzebna więcej niż 7 kryteriów
 
-Jeśli potrzebujesz więcej niż 7 kryteriów, możesz je dodać w następnym wierszu. Podczas pracy w sekcji **Szczegóły wartości dozwolonych**, że po wprowadzeniu siódmego kryterium nie jest już aktywne pole dodawania kryteriów **+Dodaj nowe**. Jest to spowodowane wieloma czynnikami takimi jak: 
+Jeśli potrzebujesz więcej niż 7 kryteriów, możesz je dodać w następnym wierszu. Podczas pracy w sekcji **Szczegóły wartości dozwolonych** zauważysz, że po wprowadzeniu siódmego kryterium nie jest już aktywne pole dodawania kryteriów **+Dodaj nowe**. Jest to spowodowane wieloma czynnikami takimi jak: 
  - Szerokość kolumny 
  - Sposób przechowywania danych 
  - Działanie formantu **Szczegóły dozwolonych wartości**
@@ -101,7 +101,7 @@ Podczas konfigurowania struktur kont zaleca się przestrzeganie pewnych najlepsz
 - Nie ograniczaj się tylko do umieszczenia gwiazdki obok każdego segmentu w strukturze konta, a następnie nie polegaj wyłącznie na regułach zaawansowanych. Może to być trudne do zarządzania i często prowadzi do błędów użytkownika podczas obsługi technicznej, co może powodować niemożność zaksięgowania przez system.
 
 ## <a name="account-structure-activation"></a>Aktywacja struktury konta
-Jeśli nowe ustawienie lub zmiana struktury konta została zakończona, należy je aktywować. Jeśli struktura konta jest przypisana do księgi, ten proces aktywacji może potrwać bardzo długo, ponieważ wszystkie niezaksięgowane transakcje w systemie muszą zostać zsynchronizowane z nową strukturą. Zmiany struktury konta nie mają wpływu na zaksięgowane transakcje.
+Jeśli nowe ustawienie lub zmiana struktury konta są zgodne z oczekiwaniami, musisz je aktywować. Jeśli struktura konta jest przypisana do księgi, ten proces aktywacji może potrwać bardzo długo, ponieważ wszystkie niezaksięgowane transakcje w systemie muszą zostać zsynchronizowane z nową strukturą. Zmiany struktury konta nie mają wpływu na zaksięgowane transakcje.
 
 Aby uzyskać więcej informacji, zobacz [Planowanie planu kont](plan-chart-of-accounts.md), [Wymiary finansowe](financial-dimensions.md) i [Wpisywanie kombinacji wymiarów i kont (formant Wpis podzielony na segmenty)](enter-account-dimension-combinations-segmented-entry-control.md).
 

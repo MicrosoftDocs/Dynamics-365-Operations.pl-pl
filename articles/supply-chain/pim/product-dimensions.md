@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 680d5ed929a396bfb2d3c7f05351ab6c93d29256c825c618cb166aac444aa5d6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 46079daafc744421abcbdf0a3539428f2a39f13c
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726904"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920530"
 ---
 # <a name="product-dimensions"></a>Wymiary produktu
 
@@ -78,7 +78,7 @@ Firma sprzedaje jeansy. Dla towaru — *jeansów* — istnieją wymiary kolor i 
 
 ## <a name="the-version-product-dimension"></a>Wersja wymiaru produktu
 
-Wersja to wymiar produktu, który ma pomóc w zachowaniu i śledzeniu wielu wersji produktu w łańcuchu dostaw. Śledzenie wersji ma zasadnicze znaczenie dla sukcesu producentów, którzy działają w świecie stale kurczących się cykli życia produktów, zwiększonych wymagań dotyczących jakości i niezawodności oraz większego nacisku na bezpieczeństwo produktów.
+Wersja to wymiar produktu, który ma pomóc w zachowaniu i śledzeniu wielu wersji produktu w łańcuchu dostaw. Śledzenie wersji ma zasadnicze znaczenie dla sukcesu producentów, którzy działają w świecie ciągle skracanych cykli życia produktów, zwiększonych wymagań dotyczących jakości i niezawodności oraz zwiększonego nacisku na bezpieczeństwo produktów.
 
 Jako standardowy wymiar produktu, wersja będzie działać podobnie jak istniejące wymiary produktu (rozmiar, styl, kolor i konfiguracja). Z tego względu można go stosować do innych celów oprócz śledzenia wersji produktów.
 

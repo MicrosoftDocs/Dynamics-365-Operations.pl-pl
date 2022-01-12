@@ -2,19 +2,19 @@
 title: Migracja typu danych Waluta dla podwójnego zapisu
 description: W tym temacie opisano sposób zmiany liczby miejsc dziesiętnych, które podwójny zapis obsługuje dla waluty.
 author: RamaKrishnamoorthy
-ms.date: 04/06/2020
+ms.date: 12/08/2021
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: eaf0cd931e763f31faa334d5353ae6950ed7ee4f
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: bce58631ecd54bb90993bd552d529d3b379de1b1
+ms.sourcegitcommit: 6762a674a552353d9f53587923c9acba9b43cb56
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782814"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "7917737"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Migracja typu danych Waluta dla podwójnego zapisu
 
@@ -83,9 +83,20 @@ Jeśli precyzja waluty dla konkretnej waluty różni się od precyzji waluty uż
 
 ![Ustawienia waluty dla określonego ustawienia regionalnego.](media/specific-currency.png)
 
-### <a name="tables-currency-column"></a>tabele: kolumna Waluta
+### <a name="tables-currency-column"></a>Tabele: kolumna Waluta
 
 Liczba miejsc dziesiętnych, które można skonfigurować dla określonych kolumn waluty, jest ograniczona do czterech.
 
+### <a name="default-currency-decimal-precision"></a>Dokładność dziesiętna waluty domyślnej
+Aby uzyskać oczekiwane zachowanie dokładności dziesiętnej waluty domyślnej w scenariuszach obejmujących i nieobejmujących migracji, skorzystaj z poniższej tabeli. 
+
+| Data utworzenia  | Pole dziesiętne waluty    | Istniejąca organizacja (pole Waluta nie zostało zmigrowane) | Istniejąca organizacja (pole Waluta zostało zmigrowane) | Nowa organizacja utworzona po kompilacji 9.2.21062.00134 |
+|---------------------------------------------------------|-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|------------------------------------------------|
+| Pole Waluta utworzone przed kompilacją 9.2.21111.00146  |     |  |       |
+|    | Maksymalna dokładność widoczna w interfejsie użytkownika   | 4 cyfry    | 10 cyfr    | Brak    |
+| | Maksymalna dokładność widoczna w interfejsie użytkownika bazy danych i wynikach zapytań wykonywanych w bazie danych         | 4 cyfry   | 10 cyfr   | Brak    |
+| Pole Waluta utworzone po kompilacji 9.2.21111.00146 |    |  |     |   |
+|   | Maksymalna dokładność dziesiętna widoczna w interfejsie użytkownika     | 4 cyfry   | 10 cyfr   | 10 cyfr     |
+|          | Maksymalna dokładność dziesiętna widoczna w interfejsie użytkownika bazy danych i wynikach zapytań wykonywanych w bazie danych | 10 cyfr. Jednak tylko 4 cyfry są cyframi znaczącymi, a poza tymi czterema cyframi znajdują się same zera. Umożliwia to prostszą i szybszą migrację organizacji, gdy jest to wymagane. | 10 cyfr      | 10 cyfr     |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

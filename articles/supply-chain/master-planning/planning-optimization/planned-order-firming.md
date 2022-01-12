@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ec4265f0433fbbce1e00eda206c297b54f9b8df8
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: a709528b04e82c32f644073f79513b7ef11bb6bf
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778528"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920730"
 ---
 # <a name="firm-planned-orders"></a>Zaakceptuj zamówienia planowane
 
@@ -80,6 +80,9 @@ Aby ręcznie ustalić zamówienia planowane, należy znaleźć i wybrać zamówi
     - **Grupuj według umów zakupu** – ustaw tę opcję na wartość *Tak*, aby zgrupować planowane zamówienia zakupu, które mają tego samego dostawcę co istniejące umowy zakupu i utworzyć jedno zamówienie zakupu na umowę zakupu. Ta opcja jest włączona automatycznie, gdy włączono opcję **Grupuj według dostawców**. Aby użyć przycisku **Grupuj według umowy zakupu**, na stronie **Parametry planowania głównego** opcja *Znajdź umowę zakupu* musi mieć wartość **Tak**.
     - **Grupuj według okresów** (w sekcji **Zamówienia zakupu**) — umożliwia wybór okresu, według którego mają być grupowane planowane zamówienia zakupu. Aby skorzystać z tej opcji, należy też zaznaczyć opcję **Grupuj wg dostawcy**.
     - **Grupuj według okresów** (w sekcji **Przeniesienia**) — umożliwia wybór okresu, według którego mają być grupowane planowane przeniesienia. Zamówienia zostaną pogrupowane na podstawie wartości **Z magazynu** i **Do magazynu**.
+
+    > [!NOTE]
+    > Każda z opcji „Grupuj wg” powoduje, że system konwertuje każde planowane zamówienie na wiersz w pojedynczym zamówieniu zakupu, które jest wynikiem grupowania.
 
     ![Skrócona karta Parametry w oknie dialogowym Ustalanie.](./media/manual-firming.png "Skrócona karta Parametry w oknie dialogowym Ustalanie")
 

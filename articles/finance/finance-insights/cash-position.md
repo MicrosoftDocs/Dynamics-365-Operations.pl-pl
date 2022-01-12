@@ -2,7 +2,7 @@
 title: Stan środków pieniężnych
 description: W tym temacie opisano sposób, w jaki funkcja prognozowania przepływów pieniężnych umożliwia prognozowanie stanu środków pieniężnych w określonym czasie. Opisano tu także opcje, które są dostępne do wyświetlania prognoz dla różnych okresów.
 author: ShivamPandey-msft
-ms.date: 11/03/2021
+ms.date: 12/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: bf99ce5c9de00061cba2f49d00cc9dbc728753a8
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 6bb99084a2ffef067dd0d7158ecb5e57d6d97d75
+ms.sourcegitcommit: c8dc60bb760553f166409c2e06dd2377f601c006
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752887"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "7945808"
 ---
 # <a name="cash-position"></a>Stan środków pieniężnych
 
@@ -45,5 +45,17 @@ Dolna sekcja karty **Stan środków pieniężnych** zawiera szczegółowe inform
 - W siatce **Konto bankowe** jest wyświetlany wpływ oczekiwanych przychodów i rozchodów gotówkowych na saldo bankowe.
 
 Aby zapisać i edytować stan środków pieniężnych, należy utworzyć migawkę. Aby uzyskać więcej informacji na temat pracy z migawkami, zobacz [Omówienie migawek](payment-snapshots.md).
+
+## <a name="details-of-the-cash-position-capability"></a>Szczegóły możliwości Stan środków pieniężnych 
+
+Funkcja Stan środków pieniężnych zawiera opisaną poniżej funkcjonalność. 
+
+- Funkcja Stan środków pieniężnych pokazuje przepływy pieniężne na podstawie dokumentów istniejących w systemie oraz wierszy przychodów i rozchodów gotówkowych importowanych z systemów zewnętrznych.
+- Ułatwia integrację danych przepływów pieniężnych z systemów zewnętrznych z systemem Dynamics 365 Finance. Funkcja Stan środków pieniężnych może również wykorzystywać strukturę importu i eksportu danych. Ta struktura ułatwia integrację z usługą OData dla programu Excel. Możesz również połączyć dane z wielu źródeł w celu utworzenia wszechstronnego rozwiązania do obsługi stanu środków pieniężnych.
+- Wprowadza inteligentny stan środków pieniężnych. Stan środków pieniężnych jest tworzony na podstawie zachowań płatności odbiorcy w celu przewidywania, kiedy firma może oczekiwać pojawienia się gotówki na swoich kontach.
+- W przypadku zamówień i faktur odbiorcy oparta na sztucznej inteligencji funkcjonalność przewidywania płatności odbiorców jest używana w celu ustalenia na podstawie historycznego zachowania odbiorcy w dziedzinie płatności, kiedy zostanie opłacone zamówienie lub faktura.
+- W przypadku zamówień i faktur dostawców używamy średniego czasu między wysyłką, fakturą i opłaceniem faktury dla dostawcy, aby ustalić, kiedy zostanie opłacone zamówienie lub faktura dostawcy, dzięki czemu rozchody gotówkowe będą dokładniejsze.
+
+Umożliwia to uzyskanie dokładniejszego widoku przepływów pieniężnych na podstawie historycznego zachowania w dziedzinie płatności. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

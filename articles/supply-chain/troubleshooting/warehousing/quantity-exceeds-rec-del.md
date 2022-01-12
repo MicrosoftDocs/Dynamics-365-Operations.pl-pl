@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 25507a482b2db7c01f56679bf3e8454249de3a6b9965f9c359a2ebe2cc8445ce
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ec5e0ac8dd097e5ebf016683fc5c17df7ecb2305
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6711694"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920405"
 ---
 # <a name="quantity-that-youre-trying-to-update-exceeds-the-receiveddelivered-quantity"></a>Ilość, która próbujesz zaktualizować, przekracza ilość otrzymaną/dostarczoną
 
@@ -62,8 +62,8 @@ Do regulacji ilości przewodu ładunkowego należy użyć następującej procedu
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ładunki \> Wszystkie ładunki**.
 1. Wybierz ładunek, dla których nie można wygenerować dokumentu dostawy.
-1. Na pasku akcji, na zakładce  **Wysyłka i odbiór**, w grupie  **Odwróć** zaznaczamy  **Odwrócenie potwierdzenia wysyłki**.
-1. Na karcie  **Wiersze ładunku** wybierz wiersz ładunku dla pozycji, która powoduje problem.
+1. W okienku akcji na karcie **Wysyłka i odbiór** w grupie **Wycofaj** wybierz pozycję **Wycofaj potwierdzenie wysyłki**.
+1. Na karcie **Wiersze ładunku** wybierz wiersz ładunku dla towaru, który powoduje problem.
 1. Wybierz pozycję **Zmniejsz pobraną ilość**, aby dostosować pobraną ilość.
 1. Ustaw pole **Zmniejsz wiersz ładunku**, aby odzwierciedlić dopasowania w linii obciążenia.
 
@@ -75,5 +75,5 @@ Aby odwrócić rejestrację frezów, należy postępować w następujący sposó
 
 1. Przejdź do pozycji **Rozrachunki z odbiorcami \> Zamówienia \> Wszystkie zamówienia**.
 1. Wybierz zlecenie sprzedaży, dla którego nie można wysłać dokumentu pakowania dla ładunku.
-1. Na karcie  **Wiersze zamówienia sprzedaży** wybierz wiersz zamówienia sprzedaży, dla których została wykonana rejestracja pobrania.
+1. Na karcie **Wiersze zamówienia sprzedaży** wybierz wiersz zamówienia sprzedaży, dla którego została wykonana rejestracja pobrania.
 1. Wybierz pozycję **Aktualizuj wiersz \> Pobierz**, aby odebrać elementy.

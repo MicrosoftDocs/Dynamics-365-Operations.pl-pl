@@ -1,22 +1,22 @@
 ---
 title: Planowanie drukowania etykiety grupy czynności podczas grupy czynności
 description: W tym temacie opisano sposób konfigurowania i używania funkcji drukowania etykiet grup czynności w oparciu o zadania.
-author: MSFTGarm
+author: perlynne
 ms.date: 06/09/2021
 ms.topic: article
 ms.search.form: WHSPostMethod, WHSWavePostMethodTaskConfig, WHSWaveTemplateTable, WHSParameters, WHSWaveTableListPage, WHSWorkTableListPage, WHSWorkTable, BatchJobEnhanced, WHSPlannedWorkOrder
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: v-obaranov
+ms.author: perlynne
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 4883f8a548645436e17b933d87d4ee6330570d48
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 1323538765308ec3dd366456e31f5e08b08ce5ab
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777872"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920156"
 ---
 # <a name="schedule-wave-label-printing-during-wave"></a>Planowanie drukowania etykiety grupy czynności podczas grupy czynności
 
@@ -40,7 +40,7 @@ Aby korzystać z funkcji opisanych w tym temacie, należy je włączona dla syst
 
 Rozpocznij od utworzenia nowej metody kroku grupy czynności i włączenia jej do równoległego przetwarzania zadań asynchronicznych.
 
-1. Wybierz kolejno opcje  **Zarządzanie magazynem \> Ustawienia \> Grupy czynności \> Metody procesów grupy czynności**.
+1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Grupy czynności \> Metody procesów grupy czynności**.
 1. W okienku akcji wybierz pozycję **Ponownie utwórz metodę**. Należy zauważyć, że *waveLabelPrinting* zostało dodane do listy metod przetwarzania grupy czynności, których można używać w szablonach grupy czynności wysyłki.
 1. Wybierz rekord, w którym w polu **Nazwa metody** jest ustawiona wartość *waveLabelPrinting*, a następnie w okienku akcji wybierz **konfigurację zadania**.
 1. W okienku akcji wybierz opcję **Nowy**, aby dodać nowy wiersz do siatki. Następnie ustaw następujące pola dla nowego wiersza:
@@ -51,7 +51,7 @@ Rozpocznij od utworzenia nowej metody kroku grupy czynności i włączenia jej d
 
 Istniejący szablon grupy czynności można teraz zaktualizować, tak aby był on używany z metodą przetwarzania grupy czynności *drukowania etykiet grupy czynności*. Można również utworzyć nowy szablon grupy czynności, który go używa.
 
-1. Wybierz kolejno opcje  **Zarządzanie magazynem \> Ustawienia \> Grupy czynności \> Szablony grupy czynności**.
+1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Grupy czynności \> Szablony grupy czynności**.
 1. W okienku akcji wybierz pozycję **Edytuj**.
 1. W lewym okienku wybierz szablon grupy czynności do aktualizacji. (Jeśli do testowania są wykorzystywane dane demonstracyjne, można wybrać magazyn *24 Domyślna wysyłka*).
 1. Na skróconej karcie **Metody** w kolumnie **Pozostałe metody** wybierz wiersz, w którym pole **Nazwa** ma wartość *waveLabelPrinting*.

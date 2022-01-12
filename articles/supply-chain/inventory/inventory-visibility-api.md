@@ -2,7 +2,7 @@
 title: Publiczne interfejsy API dodatku Widoczność magazynu
 description: W tym temacie opisano publiczne interfejsy API udostępniane przez dodatek Widoczność magazynu.
 author: yufeihuang
-ms.date: 09/30/2021
+ms.date: 12/09/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 1899969ddbbccafde3f7bb06a897ea7c0f2d656b
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.openlocfilehash: d676191f921d74a5a0ced934f3692dacbe7cd7b4
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678794"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920125"
 ---
 # <a name="inventory-visibility-public-apis"></a>Publiczne interfejsy API dodatku Widoczność magazynu
 
@@ -41,8 +41,8 @@ W poniższej tabeli przedstawiono obecnie dostępne interfejsy API:
 | /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Księguj | [Ustawianie/zastępowanie dostępnych ilości](#set-onhand-quantities) |
 | /api/environment/{environmentId}/onhand/reserve | Księguj | [Tworzenie jednego zdarzenia rezerwacji](#create-one-reservation-event) |
 | /api/environment/{environmentId}/onhand/reserve/bulk | Księguj | [Tworzenie wielu zdarzeń rezerwacji](#create-multiple-reservation-events) |
-| /api/environment/{environmentId}/onhand/indexquery | Pobierz | [Zapytanie przy użyciu metody POST](#query-with-post-method) |
-| /api/environment/{environmentId}/onhand/indexquery | Księguj | [Zapytanie przy użyciu metody GET](#query-with-get-method) |
+| /api/environment/{environmentId}/onhand/indexquery | Księguj | [Zapytanie przy użyciu metody POST](#query-with-post-method) |
+| /api/environment/{environmentId}/onhand | Pobierz | [Zapytanie przy użyciu metody GET](#query-with-get-method) |
 
 Firma Microsoft dostarcza kolekcję gotowych do użycia żądań *Postman*. Kolekcję można zaimportować do oprogramowania *Postman*, korzystając z następującego udostępnionego łącza: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>
 
@@ -476,7 +476,7 @@ Body:
 
 ## <a name="query-on-hand"></a>Zapytanie o dostępne zapasy
 
-Interfejs API _zapytania o dostępne zapasy_ służy do pobierania bieżących danych o dostępnych zapasach produktów.
+Użyj interfejsu API _zapytania o dostępne zapasy_ do pobierania bieżących danych o dostępnych zapasach produktów. Interfejs API aktualnie obsługuje wykonywanie zapytań o maksymalnie 100 pojedynczych towarów według wartości `ProductID`. W każdym zapytaniu można określić również kilka wartości `SiteID` i `LocationID`. Maksymalny limit jest zdefiniowany jako `NumOf(SiteID) * NumOf(LocationID) <= 100`.
 
 ### <a name="query-by-using-the-post-method"></a><a name="query-with-post-method"></a>Zapytanie przy użyciu metody POST
 
@@ -551,7 +551,7 @@ Poniższe przykłady pokazują sposób wykonywania zapytań dla wszystkich produ
 
 ```txt
 Path:
-    /api/environment/{environmentId}/onhand/indexquery
+    /api/environment/{environmentId}/onhand
 Method:
     Get
 Headers:
@@ -568,7 +568,7 @@ Query(Url Parameters):
 Oto przykładowy adres URL GET. To żądanie GET jest dokładnie takie samo, jak przykładowe księgowanie przedstawione wcześniej.
 
 ```txt
-/api/environment/{environmentId}/onhand/indexquery?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
+/api/environment/{environmentId}/onhand?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
 ```
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

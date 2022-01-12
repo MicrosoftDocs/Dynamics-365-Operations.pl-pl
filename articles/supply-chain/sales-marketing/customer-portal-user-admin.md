@@ -1,5 +1,5 @@
 ---
-title: Tworzenie użytkowników Portalu klienta i zarządzanie nimi
+title: Tworzenie użytkowników Portalu klientów i zarządzanie nimi (zawiera wideo)
 description: W tym temacie wyjaśniono, jak tworzyć konta użytkowników Portalu klienta i ustawiać dla nich uprawnienia.
 author: Henrikan
 ms.date: 07/31/2020
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 448f315b888b63eba74dcb8b47a9b238e371bb2b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 20751a25a6dedb04806068780bc2f4e381bf79bc
+ms.sourcegitcommit: ef0dd4245fc499907ffe00e2a32f59a6cd96e45d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573496"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "7937460"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Tworzenie użytkowników Portalu klienta i zarządzanie nimi
 

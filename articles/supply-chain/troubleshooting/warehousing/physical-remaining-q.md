@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 187363db3030ee0741f0c7e7746295b88320162c156120112332bb78593bb673
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d767fdce861ccb481a3fe289480a51a7534dc207
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744661"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920231"
 ---
 # <a name="physical-remaining-quantity-in-the-unit-must-not-be-zero"></a>Pozostała ilość w jednostkach musi być różna od zera
 
@@ -63,10 +63,10 @@ Skorzystaj z poniższej procedury, aby przejrzeć linie ładunkowe i wprowadzić
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ładunki \> Wszystkie ładunki**.
 1. Wybierz ładunek, dla których nie można wygenerować dokumentu dostawy.
-1. Na pasku akcji, na zakładce  **Wysyłka i odbiór**, w grupie  **Odwróć** zaznaczamy  **Odwrócenie potwierdzenia wysyłki**.
-1. Na karcie  **Wiersze ładunku** wybierz wiersz ładunku dla pozycji, która przekracza procent nadwyżki w dostawie.
+1. W okienku akcji na karcie **Wysyłka i odbiór** w grupie **Wycofaj** wybierz pozycję **Wycofaj potwierdzenie wysyłki**.
+1. Na karcie **Wiersze ładunku** wybierz wiersz ładunku dla towaru, który przekracza nadwyżkę w dostawie.
 1. Wybierz pozycję **Zmniejsz pobraną ilość**, aby dostosować pobraną ilość.
-1. Na karcie  **Szczegóły wiersza** wybierz **Zamówienie**.
+1. Na karcie **Szczegóły wiersza** wybierz pozycję **Zamówienie**.
 1. Ustaw pole **Ilość** na ilość pobraną (czyli wartość pola **Ilość utworzona**), aby można było rozpocząć generowanie kartonu.
 
 ### <a name="review-your-load-lines-and-make-adjustments-to-ensure-that-the-unit-and-quantity-are-aligned-with-the-decimal-precision-of-the-unit"></a>Przejrzyj linie ładunkowe i dokonaj korekty, aby upewnić się, że jednostka i ilość są wyrównane z precyzją dziesiętną jednostki

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ee4803c4653b8c2df2cb731652456b1ce2796cd0
-ms.sourcegitcommit: e77d72fde17a43bd1780c265702254011af7407c
+ms.openlocfilehash: e6f47e7bccdfa5205209a290b2ce0d37f2e5a534
+ms.sourcegitcommit: c42d047cb866f7988f1879ac84cd45284a03abf8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "7893652"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "7931988"
 ---
 # <a name="add-or-copy-leases-preview"></a>Dodaj lub kopiuj wynajmy (podgląd)
 
@@ -50,6 +50,9 @@ Po zakończeniu wprowadzania informacji dotyczących wynajmu należy wykonać po
     Strona **Szczegóły księgi** pokazuje, w jaki sposób wynajem jest księgowany w przypisanych do niego księgach. W tym miejscu można przejrzeć harmonogramy wynajmu.
 
     Harmonogram płatności zawiera dane wejściowe z karty **Wiersze harmonogramu płatności** na stronie **Dodaj wynajem**. Nadal można zmienić każdą kwotę płatności i opłaty zmienne. Zobowiązanie z tytułu wynajmu jest obliczane na podstawie zmodyfikowanego harmonogramu płatności.
+    
+> [!NOTE]
+> Data rozpoczęcia opłaty z tytułu wynajmu musi być taka sama jak data rozpoczęcia wynajmu lub od niej późniejsza. Zostanie wyświetlony komunikat o błędzie, jeśli data rozpoczęcia opłaty z tytułu wynajmu będzie wcześniejsza niż data rozpoczęcia wynajmu. 
 
 4. Po przejrzeniu harmonogramu płatności wybierz pozycję **Potwierdź harmonogram**. Po potwierdzeniu harmonogramu wynajem nie będzie już dostępny do edycji.
 

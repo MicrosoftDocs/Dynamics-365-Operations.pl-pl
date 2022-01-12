@@ -1012,6 +1012,8 @@
                   href: lifecycle-services/use-translation-service-ua.md
                 - name: Pliki pamięci tłumaczeniowych
                   href: lifecycle-services/use-translation-service-tm.md
+                - name: Rozszerzenie Azure DevOps (publiczna wersja zapoznawcza)
+                  href: lifecycle-services/dts-devops-extension.md
         - name: Integracja z usługą Microsoft Power Platform
           items:
             - name: Omówienie
@@ -1602,6 +1604,8 @@
                   href: sysadmin/retryable-batch.md
                 - name: Kopiowanie zadania wsadowego
                   href: sysadmin/copy-batch-job.md
+                - name: Planowanie partii oparte na priorytecie
+                  href: sysadmin/priority-based-batch-scheduling.md
                 - name: Aktywne okresy partii
                   href: sysadmin/activeperiod.md
                 - name: Obsługa czasu letniego dla aktywnych okresów partii

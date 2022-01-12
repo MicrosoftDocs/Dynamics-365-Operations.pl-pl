@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: ff9d4d0c1d72d3002f84f895f67d3c9cb347f1e8
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.openlocfilehash: a11455c4e3f59ef52d9a1e3d2e6a10c57a070a79
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402232"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920430"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-administrators"></a>Katalog szkoleń dla administratorów Dynamics 365 Supply Chain Management
 
@@ -68,7 +68,7 @@ Poniższy katalog jest zorganizowany od podstawowej bazy wiedzy do konkretnych d
 
 | Zawartość | opis | Format | Długość |
 |---------|-------------|--------|--------|
-| [Konfigurowanie zarządzania zmianami inżynieryjnymi dla systemu Dynamics 365 Supply Chain Management](/learn/paths/set-up-engineering-change-management/) | Dzisiejsi producenci wymagają silnego zarządzania danymi produktu, kontroli wersji i zarządzania zmianami inżynieryjnymi, aby odnieść sukces w świecie stale kurczących się cykli życia produktów, zwiększonych wymagań dotyczących jakości i niezawodności oraz zwiększonego nacisku na bezpieczeństwo produktu. Z tej ścieżki szkoleniowej dowiesz się, jak skonfigurować zarządzanie zmianami projektowymi. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 4 godzin |
+| [Konfigurowanie zarządzania zmianami inżynieryjnymi dla systemu Dynamics 365 Supply Chain Management](/learn/paths/set-up-engineering-change-management/) | Dzisiejsi producenci potrzebują zaawansowanych funkcji zarządzania danymi produktów, kontroli wersji i zarządzania zmianami inżynieryjnymi, aby odnieść sukces w świecie ciągle skracanych cykli życia produktów, zwiększonych wymagań dotyczących jakości i niezawodności oraz zwiększonego nacisku na bezpieczeństwo produktów. Z tej ścieżki szkoleniowej dowiesz się, jak skonfigurować zarządzanie zmianami projektowymi. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 4 godzin |
 
 ## <a name="servicing"></a>Obsługa<a name="servicing"></a>
 

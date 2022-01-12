@@ -4,6 +4,34 @@
       items:
         - name: Dynamics 365 Supply Chain Management — strona główna
           href: index.md
+        - name: Nowości i zmiany
+          items:
+            - name: Nowości i zmiany w aplikacjach Finance and Operations
+              href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Nowości lub zmiany w aplikacji Supply Chain Management
+              items:
+                - name: Nowości i zmiany w aplikacji Supply Chain Management — strona główna
+                  href: get-started/whats-new-home-page.md
+                - name: Supply Chain Management w wersji 10.0.24 (luty 2022)
+                  href: get-started/whats-new-scm-10-0-24.md
+                - name: Supply Chain Management w wersji 10.0.23 (styczeń 2022)
+                  href: get-started/whats-new-scm-10-0-23.md
+                - name: Supply Chain Management w wersji 10.0.22 (listopad 2021)
+                  href: get-started/whats-new-scm-10-0-22.md
+                - name: Supply Chain Management w wersji 10.0.21 (październik 2021)
+                  href: get-started/whats-new-scm-10-0-21.md
+            - name: Usunięte lub wycofane funkcje
+              items:
+                - name: Usunięte lub wycofane funkcje — strona główna
+                  href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Supply Chain Management
+                  href: get-started/removed-deprecated-features-scm-updates.md
+                - name: Usunięte lub wycofane funkcje w poprzednich wersjach
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 'Funkcje systemu AX 2012, które zostały odroczone'
+              href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Zakończenie wsparcia podstawowego dla usługi Microsoft Dynamics AX 2009 i 2012
+              href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
         - name: Rozpocznij
           items:
             - name: Opis usługi
@@ -62,34 +90,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurowanie modułu Magazynowanie dla wdrożeń lokalnych
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Nowości i zmiany
-              items:
-                - name: Nowości i zmiany w aplikacjach Finance and Operations
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Nowości lub zmiany w aplikacji Supply Chain Management
-                  items:
-                    - name: Nowości i zmiany w aplikacji Supply Chain Management — strona główna
-                      href: get-started/whats-new-home-page.md
-                    - name: Supply Chain Management w wersji 10.0.24 (luty 2022)
-                      href: get-started/whats-new-scm-10-0-24.md
-                    - name: Supply Chain Management w wersji 10.0.23 (styczeń 2022)
-                      href: get-started/whats-new-scm-10-0-23.md
-                    - name: Supply Chain Management w wersji 10.0.22 (listopad 2021)
-                      href: get-started/whats-new-scm-10-0-22.md
-                    - name: Supply Chain Management w wersji 10.0.21 (październik 2021)
-                      href: get-started/whats-new-scm-10-0-21.md
-                - name: Usunięte lub wycofane funkcje
-                  items:
-                    - name: Usunięte lub wycofane funkcje — strona główna
-                      href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Supply Chain Management
-                      href: get-started/removed-deprecated-features-scm-updates.md
-                    - name: Usunięte lub wycofane funkcje w poprzednich wersjach
-                      href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
-                - name: 'Funkcje systemu AX 2012, które zostały odroczone'
-                  href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Zakończenie wsparcia podstawowego dla usługi Microsoft Dynamics AX 2009 i 2012
-                  href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
             - name: Zasoby dokumentacji
               items:
                 - name: System pomocy
@@ -1617,6 +1617,8 @@
                   href: inventory/inventory-visibility-reservations.md
                 - name: Publiczne interfejsy API dodatku Widoczność magazynu
                   href: inventory/inventory-visibility-api.md
+                - name: Wskazówki dotyczące widoczności magazynu
+                  href: inventory/inventory-visibility-tips.md
         - name: Analiza Internetu rzeczy (IoT)
           items:
             - name: Analiza Internetu rzeczy (IoT) — strona główna
@@ -3573,6 +3575,8 @@
                   href: troubleshooting/inventory/while-splitting-the.md
             - name: Planowanie główne
               items:
+                - name: System nie może znaleźć planowanego zamówienia w przypadku obsługi wielu zamówień
+                  href: troubleshooting/planning/planned-order-not-exist.md
                 - name: Rozłożenie BOM zachowuje się inaczej w przypadku ustalonych i szacowanych zleceń produkcyjnych
                   href: troubleshooting/planning/bom-explosion-works-differently.md
                 - name: Wartość opóźnienia nie jest aktualizowana podczas ponownego planowania zamówienia planowanego

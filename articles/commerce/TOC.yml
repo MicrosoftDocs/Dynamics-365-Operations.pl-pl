@@ -98,8 +98,6 @@
                       href: get-started/whats-new-commerce-10-0-23.md
                     - name: Rozwiązanie Commerce w wersji 10.0.22 (listopad 2021)
                       href: get-started/whats-new-commerce-10-0-22.md
-                    - name: Rozwiązanie Commerce w wersji 10.0.21 (październik 2021)
-                      href: get-started/whats-new-commerce-10-0-21.md
                 - name: Usunięte lub wycofane funkcje
                   items:
                     - name: Usunięte lub wycofane funkcje — strona główna
@@ -842,7 +840,7 @@
           items:
             - name: Omówienie zestawień
               href: retail-statements.md
-            - name: Sprawdzanie spójności transakcji
+            - name: Sprawdzanie poprawności transakcji sklepu na potrzeby obliczenia zestawienia
               href: valid-checker.md
             - name: Wyłączanie reguł w sprawdzaniu spójności transakcji sprzedaży detalicznej
               href: disable-consistency-check-rule.md
@@ -1286,6 +1284,8 @@
               href: localizations/fiscal-integration-for-retail-channel.md
             - name: Konfigurowanie integracji fiskalnej dla kanału aplikacji Commerce
               href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+            - name: Konfiguracja potoku kompilacji dla przykładowej integracji fiskalnej
+              href: localizations/fiscal-integration-sample-build-pipeline.md
             - name: Profile certyfikatów zdefiniowane przez użytkownika dla sklepów detalicznych
               href: localizations/certificate-profiles-for-retail-stores.md
             - name: Regulatory Configuration Service (RCS)
@@ -1322,6 +1322,8 @@
               items:
                 - name: Przykład integracji usługi rejestracji fiskalnej (Austria)
                   href: localizations/emea-aut-fi-sample.md
+                - name: Wytyczne dotyczące wdrażania przykładowej integracji fiskalnej dla Austrii (starsze)
+                  href: localizations/emea-aut-fi-sample-sdk.md
             - name: Brazylia
               items:
                 - name: Lokalizacja rozwiązania Commerce dla Brazylii
@@ -1358,12 +1360,16 @@
                   items:
                     - name: Przykład integracji usługi rejestracji fiskalnej (Czechy)
                       href: localizations/emea-cze-fi-sample.md
+                    - name: Wytyczne dotyczące wdrażania przykładowej integracji fiskalnej dla Republiki Czeskiej (starsze)
+                      href: localizations/emea-cze-fi-sample-sdk.md
                 - name: Polska
                   items:
                     - name: Przykładowa integracja drukarki fiskalnej (Polska)
                       href: localizations/emea-pol-fpi-sample.md
                     - name: Zarządzanie informacjami dotyczącymi klienta (Polska)
                       href: localizations/emea-pol-customer-information.md
+                    - name: Wytyczne dotyczące wdrażania przykładowej integracji fiskalnej dla Polski (starsze)
+                      href: localizations/emea-pol-fpi-sample-sdk.md
             - name: Francja
               items:
                 - name: Funkcje kasy
@@ -1380,6 +1386,8 @@
               items:
                 - name: Przykład integracji usługi rejestracji fiskalnej (Niemcy)
                   href: localizations/emea-deu-fi-sample.md
+                - name: Wytyczne dotyczące wdrażania przykładowej integracji fiskalnej dla Niemiec (starsze)
+                  href: localizations/emea-deu-fi-sample-sdk.md
             - name: Indie
               items:
                 - name: Integracja podatku od towarów i usług (GST) w kasach
@@ -1398,6 +1406,8 @@
                   href: localizations/emea-ita-fpi-sample.md
                 - name: Zarządzanie informacjami dotyczącymi klienta dla Włoch
                   href: localizations/emea-ita-customer-information.md
+                - name: Wytyczne dotyczące wdrażania przykładowej integracji fiskalnej dla Włoch (starsze)
+                  href: localizations/emea-ita-fpi-sample-sdk.md
             - name: Meksyk
               items:
                 - name: Globalne faktury elektroniczne CFDI dla Meksyku
@@ -1407,6 +1417,8 @@
                 - name: Funkcje kasy
                   href: localizations/emea-nor-cash-registers.md
                 - name: Wytyczne dotyczące wdrażania kas
+                  href: localizations/emea-nor-fi-deployment.md
+                - name: Wytyczne dotyczące wdrażania kas (starsze)
                   href: localizations/emea-nor-loc-deployment-guidelines.md
             - name: Rosja
               items:
@@ -1432,6 +1444,8 @@
                   href: localizations/emea-swe-cash-registers.md
                 - name: Przykładowa integracja jednostki kontrolnej dla Szwecji
                   href: localizations/emea-swe-fi-sample.md
+                - name: Wytyczne dotyczące wdrażania przykładowej integracji jednostki kontrolnej dla Szwecji (starsze)
+                  href: localizations/emea-swe-fi-sample-sdk.md
                 - name: Przykład do użycia w integracji aplikacji Retail POS z jednostkami kontrolnymi (starsze)
                   href: localizations/retail-sdk-control-unit-sample.md
         - name: Raportowanie i integracja usługi Power BI
@@ -2466,6 +2480,8 @@
                       href: e-commerce-extensibility/set-up-key-vault.md
                     - name: Tworzenie haczyka wtyczki potoku żądania
                       href: e-commerce-extensibility/request-pipeline-hook.md
+                    - name: Składnik obrazu
+                      href: e-commerce-extensibility/image-component.md
                 - name: Opracowywanie akcji dotyczących danych
                   items:
                     - name: Omówienie akcji dotyczących danych
@@ -2574,6 +2590,8 @@
                   href: dev-itpro/retail-sdk/SDK-build-pipeline.md
                 - name: Pobieranie przykładów i pakietów z GitHub i NuGet
                   href: dev-itpro/retail-sdk/sdk-github.md
+                - name: Konfigurowanie agenta kompilacji Visual Studio 2017 pod kątem tworzenia elementów Modern POS
+                  href: dev-itpro/retail-sdk/mpos-build-agent.md
                 - name: Często zadawane pytania dotyczące zestawu SDK do Retail
                   href: dev-itpro/retail-sdk/sdk-faq.md
             - name: Rozszerzalność punktu sprzedaży

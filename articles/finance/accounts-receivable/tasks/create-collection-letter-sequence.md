@@ -1,8 +1,8 @@
 ---
 title: Tworzenie kolejności ponagleń
 description: Ta procedura służy do tworzenie kolejności ponagleń.
-author: abruer
-ms.date: 07/22/2019
+author: JodiChristiansen
+ms.date: 12/07/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bfc5bd0b1228ef28631da8746b2eb60e4cf488c1
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: adeae6e20a799165e086df28b92a1357e8f2f0d3
+ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753593"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7921232"
 ---
 # <a name="create-a-collection-letter-sequence"></a>Tworzenie kolejności ponagleń
 
@@ -31,10 +31,10 @@ Ta procedura służy do tworzenie kolejności ponagleń. W zadaniu wykorzystano 
 3. W polu **Kolejność ponagleń** wpisz identyfikator kolejności, który będzie reprezentował kolejność. Będzie on używany podczas konfigurowania profilu księgowania.
 4. W polu **Opis** wpisz wartość.  Warunki płatności są opcjonalne. Jeśli wprowadzisz wartość w tym polu, faktura za opłaty z ponaglenia będzie używała tych warunków płatności zamiast warunków płatności zapisanych dla odbiorcy.  
 5. W polu **Kod ponaglenia** wybierz kod pierwszego ponaglenia, które ma zostać wysłane. Pierwsze ponaglenie jest tworzone na podstawie terminu zapłaty na fakturze, wartości okresu prolongaty wprowadzonej w polu Dni w tym wierszu oraz innych informacji wprowadzonych w tym wierszu.  
-6. W polu **Opis** wpisz wartość. Domyślnie walutą opłaty będzie waluta odbiorcy. Ten kod waluty może się różnić od kodu waluty faktury.  
-7. Kliknij przycisk **Dodaj**, aby dodać następne ponaglenie w kolejności, które zostanie wysłane. W wielu przypadkach pierwsze ponaglenie jest tylko ostrzeżeniem. W razie potrzeby można dodać opłaty.  
-8. W polu Kod ponaglenia wybierz kod następnego w kolei ponaglenia, które ma zostać wysłane.
-9. W polu **Opis** wpisz wartość.
+6. W polu **Opis** wpisz wartość. 
+7. Waluta domyślna opłaty to waluta osoby prawnej. Ten kod waluty może się różnić od kodu waluty faktury.   
+8. Kliknij przycisk **Dodaj**, aby dodać następne ponaglenie w kolejności, które zostanie wysłane. W wielu przypadkach pierwsze ponaglenie jest tylko ostrzeżeniem. W razie potrzeby można dodać opłaty.  
+9. W polu **Kod ponaglenia** wybierz kod następnego w kolei ponaglenia, które ma zostać wysłane.
 10. W polu **Konto główne** wybierz konto przychodów, które będzie używane dla opłat.
 11. Wprowadź opłatę, która będzie naliczana podczas księgowania tego ponaglenia.
 12. W polu **Grupa podatków dla towaru** kliknij przycisk rozwijany, aby otworzyć wyszukiwanie. Zaznacz grupę podatków dla towaru, jeśli należy obliczyć podatki od opłaty.  

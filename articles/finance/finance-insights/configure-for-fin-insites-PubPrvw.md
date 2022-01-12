@@ -7,6 +7,7 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
+ROBOTS: noindex,nofollow
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 14151
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-06-03
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 58b23058582c949a757ec5c141e218b36833ec21e72c35db89762017dc26ae19
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7e5752b8deffbd2694193494652a0ff808ecbfb0
+ms.sourcegitcommit: a5861c2fef4071e130208ad20e26cb3a42a45cf1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752949"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "7927411"
 ---
 # <a name="configuration-for-finance-insights-for-public-preview-preview---version-10020-and-later"></a>Konfiguracja dla Finance Insights w ramach publicznej wersji zapoznawczej (podglądowej) — wersja 10.0.20 i późniejsze
 
@@ -39,7 +40,7 @@ Wykonaj poniższe kroki, aby wdrożyć środowiska.
 
 1. W Microsoft Dynamics Lifecycle Services (LCS) utwórz lub zaktualizuj środowisko Finance. Środowisko wymaga wersji aplikacji 10.0.20 Finance and Operations lub nowszej.
 2. Środowisko musi być środowiskiem o wysokiej dostępności (HA) w piaskownicy. (Środowisko tego typu jest również nazywane środowiskiem warstwy 2) Aby uzyskać więcej informacji, zobacz [Planowanie środowiska](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
-3. Jeśli konfigurujesz Finance Insights w środowisku piaskownicy, być może będziesz musiał skopiować dane produkcyjne do tego środowiska, aby prognozy zadziałały. Model prognozy używa wielu lat danych do tworzenia prognoz. Dane demonstracyjne Contoso nie zawierają wystarczającej ilości danych historycznych do szkolenia modelu prognozy. 
+3. Jeśli konfigurujesz Finance Insights w środowisku piaskownicy, być może będziesz musiał skopiować dane produkcyjne do tego środowiska, aby prognozy zadziałały. Model prognozy używa wielu lat danych do tworzenia prognoz. Dane demonstracyjne dotyczące firmy Contoso nie zawierają wystarczającej ilości danych historycznych, aby można było odpowiednio przeszkolić model przewidywania. 
 
 ## <a name="configure-dataverse"></a>Skonfiguruj usługę Dataverse
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 2c14101099473025f88632245553da0bf50d4622
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 03ed2d52f44bd38910b01ffbd3767f750da2cbf8
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647222"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920580"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Nowości i zmiany w programie Dynamics 365 Supply Chain Management w wersji 10.0.19 (czerwiec 2021)
 
@@ -50,7 +50,7 @@ W poniższej tabeli wymieniono rozszerzenia funkcji zawarte w tym wydaniu. Każd
 
 | Moduł | Nazwa&nbsp;funkcji w&nbsp;zarządzaniu&nbsp;funkcjami | Więcej informacji |
 |---|---|---|
-| Sprzedaż i marketing | Poprawa wydajności czyszczenia historii sprzedaży | Czyszczenie historii sprzedaży może trwać długo, jeśli jest wykonywane rzadko w środowiskach z dużą ilością aktualizacji sprzedaży. Aby skrócić czas trwania i poprawić niezawodność, funkcja ta dzieli czyszczenie na partie, które działają przez określony czas. Tam, gdzie to możliwe, zostaną wykorzystane możliwości bazy danych, aby zminimalizować blokowanie i uniknąć łączenia tabel transakcyjnych podczas czyszczenia. Aby uzyskać więcej informacji, zobacz temat [Ulepszenia wydajności oczyszczania historii sprzedaży](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
+| Sprzedaż i marketing | Poprawa wydajności czyszczenia historii sprzedaży | Czyszczenie historii sprzedaży może trwać długo, jeśli jest wykonywane rzadko w środowiskach z dużą ilością aktualizacji sprzedaży. Aby skrócić czas trwania i poprawić niezawodność, funkcja ta dzieli czyszczenie na partie, które działają przez określony czas. Tam, gdzie to możliwe, zostaną wykorzystane możliwości bazy danych, aby zminimalizować blokowanie i uniknąć łączenia tabel transakcyjnych podczas czyszczenia. Aby uzyskać więcej informacji, zobacz [Ulepszenia wydajności oczyszczania historii sprzedaży](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
 | Sprzedaż i marketing | Aktualizuj żądaną datę odbioru na datę potwierdzoną dla zamówień międzyfirmowych | Ta funkcja pozwala kontrolować, co stanie się z wartościami pól daty sprzedaży i zakupu podczas korzystania z bezpośredniej dostawy między firmami. Możesz wybrać, czy system będzie aktualizował żądane daty, czy też pominie ich aktualizację. Jeśli pominiesz aktualizację, żądane daty będą odpowiadały temu, czego zażądał klient. Jeżeli włączysz aktualizację, to żądane daty (przy zastosowaniu sterowania datą dostawy) tylko początkowo będą odpowiadać temu, czego zażądał klient. Kontrola daty dostawy (jeśli jest inna niż *Brak*) spowoduje ponowne przeliczenie pierwotnie żądanych danych. Tę opcję można ustawić za pomocą nowego ustawienia **Aktualizuj żądaną datę przyjęcia z datą potwierdzoną** w ustawieniach dostawcy lub odbiorcy międzyfirmowego.<br><br>Jeśli funkcja jest wyłączona, system nadpisze żądaną datę odbioru na oryginalnych zamówieniach sprzedaży w oparciu o regułę kontroli daty dostawy, ale żądana data wysyłki pozostanie bez zmian. |
 | Zarządzanie magazynem | Zaokrąglij ilości w dół do najbliższej jednostki sprzedaży podczas zwalniania do magazynu | Ta funkcja dodaje opcję, która może ograniczyć ilość zamówień w momencie wydania do magazynu. Po włączeniu tej opcji ilości zamówień będą zaokrąglane w dół do najbliższej pełnej jednostki sprzedaży, a zamówienia zawierające ilości mniejsze niż jedna jednostka sprzedaży będą odrzucane do wydania. |
 | Zarządzanie magazynem | Metoda grupy czynności „Planuj tworzenie pracy” w całej organizacji | Po włączeniu tej funkcji, metoda grupy *Tworzenie harmonogramu pracy* zostanie skonfigurowana tak, aby działała równolegle we wszystkich podmiotach prawnych. Wpłynie to również na kilka dodatkowych ustawień. Aby uzyskać szczegółowe informacje, zobacz temat [Planowanie tworzenia pracy podczas obsługi grupy czynności](../warehousing/configure-wave-schedule-work-creation.md). |

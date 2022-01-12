@@ -11,14 +11,14 @@ ms.search.region: Global
 ms.author: myvakalo
 ms.search.validFrom: 2021-09-29
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 1b2de9d6a7b1b7793b6bb753dd580d052d3c2841
-ms.sourcegitcommit: 96515ddbe2f65905140b16088ba62e9b258863fa
+ms.openlocfilehash: 610f0d4e0448dd21d10765400f25cd89e3c7a84b
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/04/2021
-ms.locfileid: "7891775"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920280"
 ---
-# <a name="saleshistorycleanupperformanceimprovements"></a>Ulepszenia wydajności oczyszczania historii sprzedaży
+# <a name="sales-history-cleanup-performance-improvements"></a>Ulepszenia wydajności oczyszczania historii sprzedaży
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
@@ -34,7 +34,7 @@ Ta funkcja usprawnia istniejące zadanie oczyszczania w następujący sposób:
 
 Po włączeniu tej funkcji zadanie wsadowe **Oczyszczania historii aktualizacji sprzedaży** (**Sprzedaż i marketing \> Zadania okresowe \> Czyszczenie \> Oczyszczanie historii aktualizacji sprzedaży**) będzie uruchamiane tak jak poprzednio, ale z lepszą wydajnością i przez maksymalnie 2 godziny. Oznacza to, że może być konieczne uruchomienie go kilka razy w celu oczyszczenia wszystkich danych w określonym horyzoncie czasowym przechowywania.
 
-## <a name="turn-on-the-saleshistorycleanupperformanceimprovements-feature"></a>Funkcja włączania ulepszeń wydajności oczyszczania historii sprzedaży
+## <a name="turn-on-the-sales-history-cleanup-performance-improvements-feature"></a>Włącz funkcję ulepszeń wydajności oczyszczania historii sprzedaży
 
 Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: myvakalo
 ms.search.validFrom: 2021-09-29
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 4f04dc204c705b40ed25fadc75118feaef4d6b6e
-ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
+ms.openlocfilehash: c02273adf90afc67b7c0ae1b82c19d489bfbd3b1
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "7641477"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920081"
 ---
 # <a name="sales-update-history-cleanup-job-fails-or-has-performance-issues"></a>Zadanie oczyszczania historii aktualizacji sprzedaży nie powiodło się lub istnieją problemy z wydajnością
 
@@ -30,5 +30,5 @@ Może to wystąpić, gdy system zawiera wiele aktualizacji sprzedaży, w wyniku 
 
 ## <a name="resolution"></a>Rozwiązanie
 
-Nowa wersja zadania wsadowego **Czyszczenia historii aktualizacji sprzedaży** jest dostępna dla usługi Supply Chain Management w wersji 10.0.19 i nowszej. Ta funkcja nie jest domyślnie włączona. Aby uzyskać szczegółowe informacje o jej działaniu i jak ją włączyć w zarządzaniu funkcjami, zobacz temat [Poprawa wydajności czyszczenia historii sprzedaży](../../sales-marketing/sales-update-history-cleanup-performance-improvements.md).
+Nowa wersja zadania wsadowego **Czyszczenia historii aktualizacji sprzedaży** jest dostępna dla usługi Supply Chain Management w wersji 10.0.19 i nowszej. Ta funkcja nie jest domyślnie włączona. Aby uzyskać szczegółowe informacje o jej działaniu oraz sposobie włączania jej w obszarze zarządzania funkcjami, zobacz [Poprawa wydajności czyszczenia historii sprzedaży](../../sales-marketing/sales-update-history-cleanup-performance-improvements.md).
 

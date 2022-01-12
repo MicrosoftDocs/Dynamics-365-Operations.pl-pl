@@ -2,7 +2,7 @@
 title: Aplikacja Human Resources w Teams
 description: W tym temacie przedstawiono aplikację Microsoft Dynamics 365 Human Resources w Microsoft Teams.
 author: twheeloc
-ms.date: 12/09/2021
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8eebe154a19dd8476f6e9d75ebfd69fdc5b9e2b7
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: 9274ab345616561deddd322ebad0d6e0b834d1d4
+ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913496"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "7924729"
 ---
 # <a name="human-resources-app-in-teams"></a>Aplikacja Human Resources w Teams
 
@@ -41,6 +41,21 @@ Aplikację Dynamics 365 Human Resources można znaleźć w sklepie rozwiązania 
 Aby uzyskać informacje dotyczące zarządzania uprawnieniami aplikacji w Teams, zapoznaj się z tematem [Zarządzanie zasadami uprawnień aplikacji w Microsoft Teams](/MicrosoftTeams/teams-app-permission-policies).
 
 Jeśli chcesz, aby użytkownicy wyświetlali kalendarz urlopów i nieobecności w aplikacji, musisz włączyć **Kalendarz urlopów i nieobecności w Teams** w zarządzaniu funkcjami w zespołach. Aby uzyskać więcej informacji na temat włączania funkcji, zobacz temat [Zarządzanie funkcjami](hr-admin-manage-features.md).
+
+## <a name="update-app"></a>Aktualizacja aplikacji
+>[!NOTE]
+> Począwszy od 20 grudnia 2021 roku usługi aplikacji Human Resources App hostowane w dzierżawie firmy Microsoft zostaną wyłączone. Nie będzie to miało wpływu na aktualne rozszerzenie (numer 1.1.5), które jest dostępne do instalacji. Główny wpływ będzie to miało na nieaktualne rozszerzenie (wersja 1.1.4). Rozmowa z botem w tej wersji przestanie działać. Karta **Czas pracy** będzie nadal działać w obu rozszerzeniach.
+
+W wersji 1.1.4 rozmówca przestanie odpowiadać na wszelkie wiadomości. Na przykład **Zaloguj się**, **Wyświetl salda** i **Zobacz czas wyłączenia**. Aplikacja musi zostać ręcznie zaktualizowana do najnowszej wersji. Aby uzyskać więcej informacji, zobacz temat [Aktualizacja aplikacji w Microsoft Teams](/MicrosoftTeams/apps-update-experience).
+
+Aby zaktualizować do wersji 1.1.5, wykonaj następujące kroki:
+1. W Microsoft Teams przejdź do **aplikacji**.
+2. Znajdź aplikację **Human Resources**.
+3. Wybierz **Uaktualnianie**.
+
+Wersję aplikacji Human Resources można sprawdzić, przechodząc na kartę **Informacje** lub **Aplikacja osobista**. 
+
+![**Informacje** w aplikacji Human Resources](./media/HR-teams-about.png)
 
 ## <a name="enable-notifications-for-the-human-resources-app-in-teams"></a>Włączanie powiadomień dla aplikacji Human Resources w Teams
 

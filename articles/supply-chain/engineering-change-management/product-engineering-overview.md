@@ -1,5 +1,5 @@
 ---
-title: Omówienie zarządzania zmianami inżynieryjnymi
+title: Omówienie zarządzania zmianami inżynieryjnymi (zawiera wideo)
 description: Ten temat zawiera omówienie zarządzania zmianami inżynieryjnymi, które pomaga w planowaniu i zarządzaniu wersjami produktów oraz zarządzaniu cyklami życia produktu i zmianami inżynieryjnymi.
 author: t-benebo
 ms.date: 08/26/2021
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 89a3eb584275e52910726ca5a9ed53f744f10b8d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: e9dc692061cec830f487e01a79075eda835bac23
+ms.sourcegitcommit: ef0dd4245fc499907ffe00e2a32f59a6cd96e45d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574696"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "7937667"
 ---
 # <a name="engineering-change-management-overview"></a>Omówienie zarządzania zmianami inżynieryjnymi
 
@@ -26,9 +26,9 @@ ms.locfileid: "7574696"
 
 ## <a name="feature-summary"></a>Podsumowanie funkcji
 
-Dzisiejsi producenci wymagają silnego zarządzania danymi produktu, kontroli wersji i zarządzania zmianami inżynieryjnymi, aby odnieść sukces w świecie stale kurczących się cykli życia produktów, zwiększonych wymagań dotyczących jakości i niezawodności oraz zwiększonego nacisku na bezpieczeństwo produktu.
+Dzisiejsi producenci potrzebują zaawansowanych funkcji zarządzania danymi produktów, kontroli wersji i zarządzania zmianami inżynieryjnymi, aby odnieść sukces w świecie ciągle skracanych cykli życia produktów, zwiększonych wymagań dotyczących jakości i niezawodności oraz zwiększonego nacisku na bezpieczeństwo produktów.
 
-Zarządzanie zmianami inżynieryjnymi umożliwia tworzenie struktury i dyscypliny w procesie zarządzania danymi produktów, a ponadto umożliwia definiowanie, zwalnianie i korygowanie produktów w sposób kontrolowany, który jest obsługiwany przez przepływy pracy. Dzięki wersjom produktów i zarządzaniu zmianami inżynieryjnymi możesz dokumentować, oceniać wpływ i wprowadzać zmiany w całym cyklu życia produktu.
+Zarządzanie zmianami inżynieryjnymi umożliwia tworzenie struktury i dyscypliny w procesie zarządzania danymi produktów, a ponadto umożliwia definiowanie, zwalnianie i korygowanie produktów w sposób kontrolowany, który jest obsługiwany przez przepływy pracy. Dzięki wersjom produktów i zarządzaniu zmianami inżynieryjnymi możesz dokumentować i wprowadzać zmiany inżynieryjne oraz oceniać ich wpływ w całym cyklu życia produktu.
 
 Zarządzanie zmianami inżynieryjnymi pomaga w planowaniu i zarządzaniu wersjami produktów oraz zarządzaniu cyklami życia produktu i zmianami inżynieryjnymi. Poniżej znajduje się lista funkcji głównych:
 
