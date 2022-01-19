@@ -512,6 +512,8 @@
                   href: dev-tools/pipeline-deploy-asset.md
                 - name: Utwórz połączenie usługi Lifecycle Services (LCS) w usłudze Azure Pipelines
                   href: dev-tools/pipeline-lcs-connection.md
+                - name: Zaktualizuj zadania uwierzytelniania połączenia usługi LCS na bibliotekę MSAL w usłudze Azure Pipelines
+                  href: dev-tools/pipeline-lcs-connection-update.md
                 - name: Aktualizacja hostowanej usługi Azure Pipeline dla nowych pakietów NuGet
                   href: dev-tools/pipeline-nuget-split.md
                 - name: Aktualizowanie starszego potoku w usłudze Azure Pipelines
@@ -1480,10 +1482,12 @@
               href: perf-test/rsat/rsat-tutorial.md
             - name: Konfigurowanie użytkowników niebędących administratorami
               href: perf-test/rsat/rsat-configure-nonadmin.md
-            - name: Najlepsze wskazówki
+            - name: Najlepsze praktyki
               href: perf-test/rsat/rsat-best-practices.md
             - name: Testowanie diagnostyczne danych przy użyciu narzędzia Regression Suite Automation Tool
               href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
+            - name: Uruchom narzędzie Regression Suite Automation Tool (RSAT) z wykonywaniem równoległym
+              href: perf-test/rsat/rsat-parallel-execution.md
             - name: Rozwiązywanie problemów
               href: perf-test/rsat/rsat-troubleshooting.md
         - name: Wydawanie rozwiązań przy użyciu usługi Lifecycle Services

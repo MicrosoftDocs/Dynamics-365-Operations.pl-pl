@@ -2478,8 +2478,6 @@
                       href: e-commerce-extensibility/globalize-modules.md
                     - name: 'Skonfiguruj usługę Azure Key Vault, aby zapewnić bezpieczne zarządzanie kluczami'
                       href: e-commerce-extensibility/set-up-key-vault.md
-                    - name: Tworzenie haczyka wtyczki potoku żądania
-                      href: e-commerce-extensibility/request-pipeline-hook.md
                     - name: Składnik obrazu
                       href: e-commerce-extensibility/image-component.md
                 - name: Opracowywanie akcji dotyczących danych

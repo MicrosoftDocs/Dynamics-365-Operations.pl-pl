@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: fd79880dc8aa77eea8c16f350c0853013c6ad17b
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: b104cec399a368ada64a73688c42476e6fbd9e52
+ms.sourcegitcommit: 304a482dfcc31dcb61849f710ae73432324ddef3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890837"
+ms.lasthandoff: 12/29/2021
+ms.locfileid: "7947347"
 ---
 # <a name="impair-right-of-use-assets"></a>Utrata wartości składników majątku z prawem do użytkowania
 
@@ -44,6 +44,8 @@ Pozostałe saldo składnika majątku z PDU będzie amortyzowane liniowo przez po
 
     > [!NOTE]
     > Po zaksięgowaniu transakcji utraty wartości tworzona jest nowa wersja księgi.
+
+    > Jeśli dzierżawa została sklasyfikowana jako dzierżawa operacyjna, miesięczna amortyzacja po utracie wartości będzie obliczana przy użyciu amortyzacji liniowej.
 
 9. Aby wyświetlić harmonogram amortyzacji składnika majątku z utraconą wartością, otwórz harmonogram amortyzacji składników majątku dla księgi wynajmu. Składnik majątku będzie teraz amortyzowany liniowo przez liczbę miesięcy wprowadzoną w polu **Pozostałe okresy**.
 10. Aby wyświetlić wpis w arkuszu dotyczący wydatku utraty wartości, wybierz opcję **Arkusz wynajmu składnika majątku** w okienku akcji księgi wynajmu z utratą wartości. System tworzy wpis w arkuszu obciążający konto księgowania wydatku utraty wartości, a uznający konto księgowania należności z tytułu wynajmu. 
@@ -100,6 +102,7 @@ W poniższych tabelach przedstawiono wartości ustawione na kartach **Ogólne** 
     | Zamknij rezerwację             | Nie       |
 
 6. Wpis w arkuszu dotyczący wydatku utraty wartości został utworzony i zaksięgowany. Aby go wyświetlić, przejdź do arkusza wynajmu składnika majątku w księdze wynajmu. Zauważ, że kwota utraty wartości została zaksięgowana po stronie debetowej konta księgowania wydatku utraty wartości oraz po stronie kredytowej konta księgowania składnika majątku z PDU.
+
 7. Aby wyświetlić efekt netto utraty wartości, przejdź do tabeli transakcji na pasywach i aktywach. Zauważ, że wydatek utraty wartości zmniejszył wartość składnika majątku z PDU, ale wartość bilansowa zobowiązania z tytułu wynajmu nie uległa zmianie.
 
 Utrata wartości ma jeszcze jeden efekt, który należy wziąć pod uwagę. Ponieważ wartość składnika majątku z PDU jest teraz znacznie mniejsza od wartości zobowiązania z tytułu wynajmu, musi być amortyzowana inaczej niż wcześniej. Dokładniej rzecz biorąc składnik majątku jest teraz amortyzowany liniowo przez pozostałe 84 miesiące wynajmu, licząc od daty transakcji.

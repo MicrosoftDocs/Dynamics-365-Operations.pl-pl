@@ -2,7 +2,7 @@
 title: Konfigurowanie dzierżawy B2C w usłudze Commerce
 description: W tym temacie opisano sposób konfigurowania dzierżawcy Azure Active Directory (Azure AD) dzierżawców biznesowych (B2C) dla uwierzytelniania witryny użytkownika w programie Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 08/31/2021
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d54de9025926d2c1908ce29d2b680a48172f46a4
-ms.sourcegitcommit: 98061a5d096ff4b9078d1849e2ce6dd7116408d1
+ms.openlocfilehash: 8e0fa2c4f22a1854a449a14aac3552313e808cf3
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "7466275"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952451"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Konfigurowanie dzierżawy B2C w usłudze Commerce
 
@@ -58,7 +58,9 @@ Przed rozpoczęciem upewnij się, że środowisko Dynamics 365 Commerce i kanał
 
 Po wdrożeniu środowiska Dynamics 365 Commerce zalecane jest również [zainicjowanie danych początkowych](enable-configure-retail-functionality.md) w środowisku.
 
-## <a name="create-or-link-to-an-existing-aad-b2c-tenant-in-the-azure-portal"></a>Utwórz lub Połącz istniejącą dzierżawę B2C w usłudze AAD w portalu Azure
+## <a name="create-or-link-to-an-existing-azure-ad-b2c-tenant-in-the-azure-portal"></a>Utwórz lub Połącz istniejącą dzierżawę B2C w usłudze Azure AD w portalu Azure
+
+Ta sekcja opisuje tworzenie lub łączenie dzierżawy Azure AD B2C do użytku w witrynie Commerce. Aby uzyskać więcej informacji, zobacz temat [Samouczek: Tworzenie dzierżawy B2C Azure Active Directory](/azure/active-directory-b2c/tutorial-create-tenant).
 
 1. Zaloguj się do witryny [Azure Portal](https://portal.azure.com/).
 1. W menu portalu Azure wybierz polecenie **Utwórz zasób**. Należy pamiętać o użyciu subskrypcji i katalogu, który będzie połączony ze środowiskiem Commerce.
@@ -68,7 +70,7 @@ Po wdrożeniu środowiska Dynamics 365 Commerce zalecane jest również [zainicj
 1. Przejdź do **Tożsamość \> Azure Active Directory B2C**.
 1. Na stronie **Utwórz nowego B2C dzierżawę lub Połącz z istniejącą stroną dzierżawy**, Skorzystaj z jednej z poniższych opcji, która najlepiej pasuje do potrzeb firmy:
 
-    - **Utwórz nową dzierżawę B2C Azure AD**: Ta opcja służy do utworzenia nowej dzierżawy B2C w usłudze AAD.
+    - **Utwórz nową dzierżawę B2C Azure AD**: Ta opcja służy do utworzenia nowej dzierżawy B2C w usłudze Azure AD.
         1. Wybierz **Stwórz nową dzierżawę B2C Azure AD**.
         1. W obszarze **Nazwa organizacji** wprowadź nazwę organizacji.
         1. W obszarze **początkowa nazwa domeny** wprowadź początkową nazwę domeny.
@@ -86,7 +88,7 @@ Po wdrożeniu środowiska Dynamics 365 Commerce zalecane jest również [zainicj
 
 1. Po utworzeniu nowego katalogu B2C Azure AD (może to chwilę potrwać) na pulpicie nawigacyjnym pojawi się łącze do nowego katalogu. To łącze spowoduje przekierowanie do strony „Witamy w B2C usługi Azure Active Directory”.
 
-    ![Połącz z nowym katalogiem usługi AAD.](./media/B2CImage_4.png)
+    ![Połącz z nowym katalogiem usługi Azure AD.](./media/B2CImage_4.png)
 
 > [!NOTE]
 > Jeśli masz wiele subskrypcji na koncie systemu Azure lub skonfigurowano dzierżawcę B2C bez łączenia z aktywną subskrypcją, transparent do **rozwiązywania problemów** poinformuje dzierżawcę o połączeniu z subskrypcją. Wybierz komunikat rozwiązywania problemów i postępuj zgodnie z instrukcjami, aby rozwiązać problem z subskrypcją.
@@ -104,11 +106,11 @@ Aby utworzyć aplikację B2C, należy wykonać następujące czynności.
 1. W portalu Azure przejdź do **Rejestracja aplikacji** i wybierz opcję **Nowa rejestracja**.
 1. W obszarze **Nazwa** wprowadź nazwę aplikacji Azure AD B2C.
 1. W obszarze **Obsługiwane typy kont** wybierz **Konta w dowolnym dostawcy tożsamości lub katalogu organizacyjnym (do uwierzytelniania użytkowników za pomocą przepływów użytkownika)**.
-1. Dla **Przekierowywania URI** wprowadź dedykowane adresy URL odpowiedzi jako typ sieci **Web**. Patrz [Adresy URL odpowiedzi](#reply-urls) poniżej w celu znalezienia informacji na temat adresów URL oraz jak je formatować.
+1. Dla **Przekierowywania URI** wprowadź dedykowane adresy URL odpowiedzi jako typ sieci **Web**. Patrz [Adresy URL odpowiedzi](#reply-urls) poniżej w celu znalezienia informacji na temat adresów URL oraz jak je formatować. Przekierowanie URI/odpowiedź URL musi być wprowadzone aby umożliwić przekierowania z Azure AD B2C z powrotem na twoją stronę kiedy użytkownik się uwierzytelni. Adres URL odpowiedzi może być dodany podczas procesu rejestracji lub może być dodany później poprzez wybranie linku **Dodaj URI przekierowania** z menu **Przegląd** w sekcji **Przegląd** w aplikacji B2C.
 1. Aby uzyskać **Uprawnienia**, wybierz opcję **Udziel zgody administratora na urpawnienia openid i offline_access**.
 1. Wybierz opcję **Zarejestruj**.
-1. Wybierz nowo utworzoną aplikację i przejdź do menu **uwierzytelniania**. W razie potrzeby możesz dodać dodatkowe **przekierowywanie adresów URL** (teraz lub później). W razie potrzeby przejdź do następnego kroku.
-1. W obszarze **Niejawna dotacja** wybierz **tokeny dostępu** i **tokeny identyfikatorów**, aby włączyć je dla aplikacji. Wybierz opcję **Zapisz**.
+1. Wybierz nowo utworzoną aplikację i przejdź do menu **Uprawnienia API**. 
+1. Jeśli wprowadzono adres URL odpowiedzi, pod **Przepływy jawne i hybrydowe** zaznacz obie opcje **Tokeny dostępu** i **Tokeny identyfikacyjne**, aby włączyć je dla aplikacji, a następnie wybierz **Zapisz**. Jeśli adres URL odpowiedzi nie został wprowadzony podczas rejestracji, może on również zostać dodany na tej stronie poprzez wybranie **Dodaj platformę**, wybranie **Sieć**, a następnie wpisanie przekierowującego URI aplikacji. W sekcji **Niejawne udzielenie i przepływy hybrydowe** będzie można wybrać zarówno opcję **Dostęp tokenowy**, jak i **Identyfikatory tokenów**.
 1. Przejdź do menu **Przegląd** portalu Azure i skopiuj **Identyfikator aplikacji (klienta)**. Należy zwrócić uwagę na ten identyfikator dla późniejszych kroków konfiguracji (później jako identyfikator **GUID klienta**).
 
 Aby uzyskać dodatkowe informacje dotyczące rejestracji aplikacji w usługach Azure AD B2C, zobacz [Nowe możliwości rejestracji aplikacji w Azure Active Directory B2C](/azure/active-directory-b2c/app-registrations-training-guide)
@@ -131,7 +133,7 @@ W B2C Azure AD dostępne są trzy podstawowe typy przepływu użytkownika:
 - Edytowanie profilu
 - Resetowanie hasła
 
-Można wybrać Używanie domyślnego przepływu użytkownika dostarczonego przez Azure AD, który będzie wyświetlał stronę hostowaną przez B2C AAD. Alternatywnie można utworzyć stronę HTML umożliwiającą sterowanie wyglądem i działaniem tych funkcji przepływu pracy użytkownika. 
+Można wybrać Używanie domyślnego przepływu użytkownika dostarczonego przez Azure AD, który będzie wyświetlał stronę hostowaną przez B2C Azure AD. Alternatywnie można utworzyć stronę HTML umożliwiającą sterowanie wyglądem i działaniem tych funkcji przepływu pracy użytkownika. 
 
 Aby dostosować strony zasad użytkowników ze stronami wybudowanymi w Dynamics 365 Commerce, należy zapoznać się z tematami [Konfigurowanie niestandardowych stron logowania użytkowników](custom-pages-user-logins.md). Aby uzyskać dodatkowe informacje, należy zapoznać się z tematem [Dostosowywanie interfejsu środowiska użytkownika w B2C Azure Active Directory](/azure/active-directory-b2c/tutorial-customize-ui).
 
@@ -143,9 +145,9 @@ Aby utworzyć zasady przepływu użytkownika dla rejestracji i logowania, wykona
 1. Na stronie **B2C Azure AD — przepływy użytkownika (zasady)** wybierz opcję **nowy przepływ użytkownika**.
 1. Wybierzwybierz zasadę **Rejestracja i logowanie**, a wybierz werjsę **Rekomendowane**.
 1. W polu **Nazwa** wprowadź nazwę zasady. Ta nazwa będzie wyświetlana następnie z prefiksem przypisanym przez portal (na przykład „B2C_1_”).
-1. W obszarze **dostawcy tożsamości** zaznacz odpowiednie pole wyboru.
+1. W zakładce **Dostawcy tożsamości**, w sekcji **Konta lokalne** wybierz **Rejestracja przez e-mail**. Uwierzytelnianie przez e-mail jest używane w większości typowych scenariuszy dla Commerce. Jeśli używasz również uwierzytelniania przez dostawców tożsamości społecznej, możesz je również wybrać w tym momencie.
 1. W obszarze **uwierzytelnianie wieloczynnikowe** wybierz odpowiedni wybór dla firmy. 
-1. W obszarze **atrybuty użytkownika i oświadczenia** wybierz opcje, aby w razie potrzeby zebrać atrybuty lub roszczenia zwrotów. W rozwiązaniu Commerce są wymagane następujące opcje domyślne:
+1. W obszarze **atrybuty użytkownika i oświadczenia** wybierz opcje, aby w razie potrzeby zebrać atrybuty lub roszczenia zwrotów. Wybierz pozycję **Pokaż więcej...**, aby uzyskać pełną listę atrybutów i opcji roszczeń. W rozwiązaniu Commerce są wymagane następujące opcje domyślne:
 
     | **Zbierz atrybuty** | **Roszczenie zwrotu** |
     | ---------------------- | ----------------- |
@@ -161,9 +163,6 @@ Poniższy obraz przedstawia przykład B2C Azure AD rejestracji i logowania w prz
 
 ![Ustawienia zasad rejestracji i logowania.](./media/B2CImage_11.png)
 
-Poniższy rysunek przedstawia opcję **Uruchom przepływ** użytkownika w B2C Azure AD rejestracja i logowanie w przepływie pracy użytkownika.
-
-![Uruchom opcję przepływu użytkownika w przepływie zasad.](./media/B2CImage_23.png)
    
 ### <a name="create-a-profile-editing-user-flow-policy"></a>Tworzenie zasady przepływu użytkowników dla edycji profilu
 
@@ -173,18 +172,22 @@ Aby utworzyć zasady przepływu użytkownika dla edycji profilu, wykonaj następ
 1. Na stronie **B2C Azure AD — przepływy użytkownika (zasady)** wybierz opcję **nowy przepływ użytkownika**.
 1. Wybierz opcję **Edytowanie profilu**, a następnie wybierz wersję **Rekomendowane**.
 1. W polu **Nazwa** wprowadź przepływ użytkownika edycji profilu. Ta nazwa będzie wyświetlana następnie z prefiksem przypisanym przez portal (na przykład „B2C_1_”).
-1. W obszarze **dostawcy tożsamości** wybierz opcję **Zaloguj się za pomocą e-mail**.
+1. W zakładce **Dostawcy tożsamości**, w sekcji **Konta lokalne** wybierz **Rejestracja przez e-mail**.
 1. W obszarze **Atrybuty użytkownika** zaznacz jedno z następujących pól wyboru:
-    - **Adresy e-mail** (tylko **Roszczenie zwrotu**)
-    - **Imię** (**Zbierz atrybuty** i **roszczenie zwrotne**)
-    - **Dostawca tożsamości** (tylko **roszczenie zwrotne**)
-    - **Nazwisko** (**Zbierz atrybuty** i **roszczenie zwrotne**)
-    - **Identyfikator obiektu użytkownika** (tylko **roszczenie zwrotne**)
+    
+    | **Zbierz atrybuty** | **Roszczenie zwrotu** |
+    | ---------------------- | ----------------- |
+    |                        | Adresy e-mail   |
+    | Imię             | Imię        |
+    |                        | Dostawca tożsamości |
+    | Nazwisko                | Nazwisko           |
+    |                        | Identyfikator obiektu użytkownika  |
+    
 1. Wybierz opcję **Utwórz**.
 
 Poniższy obraz przedstawia przykład przepływu użytkownika edytującego profil w B2C Azure AD.
 
-![Tworzenie przepływu użytkowników dla edycji profilu.](./media/B2CImage_12.png)
+![Przykład przepływu użytkowników edytujących profil B2C w Azure AD](./media/B2CImage_12.png)
 
 ### <a name="create-a-password-reset-user-flow-policy"></a>Tworzenie zasady przepływu użytkowników dla resetowania hasła
 
@@ -324,11 +327,11 @@ Poniższy obraz przedstawia przykład zasad przepływu użytkowników na stronie
 
 ![Zbierz nazwy poszczególnych przepływów zasad B2C.](./media/B2CImage_22.png)
 
-### <a name="enter-your-aad-b2c-tenant-application-information-into-commerce"></a>Umożliwia wprowadzenie informacji dotyczących aplikacji dzierżawczej usługi AAD B2C do modułu Commerce
+### <a name="enter-your-azure-ad-b2c-tenant-application-information-into-commerce"></a>Umożliwia wprowadzenie informacji dotyczących aplikacji dzierżawczej usługi Azure AD B2C do modułu Commerce
 
 Przed skojarzeniem dzierżawy B2C Azure AD z witrynami należy wprowadzić szczegóły dzierżawy B2C w module konstruktora witryn Commerce.
 
-Aby dodać informacje dotyczące aplikacji dzierżawczej usługi B2C AAD do systemu Commerce, wykonaj następujące kroki.
+Aby dodać informacje dotyczące aplikacji dzierżawczej usługi B2C Azure AD do systemu Commerce, wykonaj następujące kroki.
 
 1. Zaloguj się jako administrator do modułu konstruktora witryn Commerce dla swojego środowiska.
 1. W lewym okienku nawigacji wybierz pozycję **Ustawienia dzierżawcy**, aby ją rozwinąć.

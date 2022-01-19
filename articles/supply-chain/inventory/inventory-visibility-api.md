@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: d676191f921d74a5a0ced934f3692dacbe7cd7b4
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 92c427d3063c34f263d5bc449be6fac695b5912d
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920125"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952634"
 ---
 # <a name="inventory-visibility-public-apis"></a>Publiczne interfejsy API dodatku Widoczność magazynu
 
@@ -48,6 +48,8 @@ Firma Microsoft dostarcza kolekcję gotowych do użycia żądań *Postman*. Kole
 
 > [!NOTE]
 > Część {environmentId} ścieżki jest identyfikatorem środowiska w usługach Microsoft Dynamics Lifecycle Services (LCS).
+> 
+> API zbiorcze może zwrócić maksymalnie 512 rekordów dla każdego żądania.
 
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>Znajdowanie punktu końcowego zgodnie ze środowiskiem Lifecycle Services.
 
@@ -249,7 +251,7 @@ W poniższym przykładzie pokazano zawartość przykładowej treści bez `dimens
 
 ### <a name="create-multiple-change-events"></a><a name="create-multiple-onhand-change-events"></a>Tworzenie wielu zdarzeń zmiany
 
-Ten interfejs API może tworzyć wiele rekordów jednocześnie. Jedyną różnicą między tym interfejsem API a [interfejsem API jednego zdarzenia](#create-one-onhand-change-event) są wartości `Path` i `Body`. W tym interfejsie API `Body` dostarcza tablicę rekordów.
+Ten interfejs API może tworzyć wiele rekordów jednocześnie. Jedyną różnicą między tym interfejsem API a [interfejsem API jednego zdarzenia](#create-one-onhand-change-event) są wartości `Path` i `Body`. W tym interfejsie API `Body` dostarcza tablicę rekordów. Maksymalna liczba rekordów wynosi 512, co oznacza, że interfejs API do masowych zmian w podręczniku może obsługiwać do 512 zdarzeń zmiany jednocześnie.
 
 ```txt
 Path:

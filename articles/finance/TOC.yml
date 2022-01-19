@@ -1212,6 +1212,8 @@
                   href: finance-insights/enable-cust-paymnt-prediction.md
                 - name: Włączanie prognozowania przepływów pieniężnych
                   href: finance-insights/enable-cash-flow-forecasting.md
+                - name: Dane zewnętrzne w prognozach przepływów pieniężnych
+                  href: finance-insights/external-data-in-cash-flow.md
                 - name: Włączanie propozycji budżetowych
                   href: finance-insights/enable-budget-proposal.md
                 - name: Tworzenie projektu integratora danych
@@ -1232,10 +1234,8 @@
                   href: finance-insights/budget-proposals.md
                 - name: Stan środków pieniężnych
                   href: finance-insights/cash-position.md
-                - name: Prognoza przepływów pieniężnych
+                - name: Prognoza kasowa
                   href: finance-insights/cash-flow-forecast-intro.md
-                - name: Używanie danych zewnętrznych w prognozach przepływów pieniężnych
-                  href: finance-insights/external-data-in-cash-flow.md
                 - name: Prognozy płatności odbiorcy
                   href: finance-insights/payment-insights-overview.md
                 - name: Korzystanie z prognoz płatności odbiorcy
@@ -1432,6 +1432,8 @@
                           href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Rozpoczynanie pracy z fakturowaniem elektronicznym dla Arabii Saudyjskiej
                           href: localizations/e-invoicing-sa-get-started.md
+                        - name: Konfigurowanie bezpośredniej integracji włoskiej funkcji FatturaPA z SDI
+                          href: localizations/e-invoicing-ita-fatturapa-get-started.md
                         - name: Używanie usługi fakturowania elektronicznego do importowania faktur od dostawców
                           href: localizations/e-invoicing-get-started-import-vendor-invoices.md
                         - name: Ustawianie fakturowania elektronicznego
@@ -1512,6 +1514,10 @@
                           items:
                             - name: Deklaracja podatku VAT
                               href: localizations/emea-gbr-vat-declaration.md
+                        - name: Norwegia — raportowanie
+                          items:
+                            - name: Deklaracja podatku VAT
+                              href: localizations/emea-nor-vat-declaration.md
                     - name: Włączanie obliczania podatku dla zamówienia przeniesienia
                       items:
                         - name: Obsługa funkcji podatków dla zamówień przeniesienia
@@ -1557,7 +1563,7 @@
                 - name: Sprawozdanie podatku VAT
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: Raport usług międzynarodowych
-                  href: localizations/emea-aut-vat-statement-details.md
+                  href: localizations/emea-aut-cross-border-services-report.md
                 - name: Intrastat — Austria
                   href: localizations/emea-aut-intrastat.md
                 - name: Cła od zakupu
@@ -1824,7 +1830,7 @@
                   href: localizations/tasks/golden-tax-integration-export-setup.md
                 - name: Metody amortyzacji środków trwałych
                   href: localizations/apac-chn-depreciation-methods-fixed-assets.md
-                - name: Importowanie jednostki danych Chiński podatek od złota
+                - name: Importowanie plików Chiński podatek od złota
                   href: localizations/apac-chn-import-golden-tax-data-entity.md
                 - name: Model średnich kosztów miesięcznych
                   href: localizations/apac-chn-monthly-average-cost-model.md
@@ -2088,6 +2094,8 @@
                   href: localizations/finland.md
                 - name: Raport płatności podatku dla Finlandii
                   href: localizations/emea-fin-sales-tax-payment-report-finland.md
+                - name: Intrastat — Finlandia
+                  href: localizations/emea-fin-intrastat.md
             - name: Francja
               items:
                 - name: Francja — omówienie
@@ -2610,11 +2618,13 @@
                   href: localizations/apac-idn-invoicing.md
                 - name: Deklaracja podatku VAT dla Indonezji
                   href: localizations/apac-idn-ppn-declaration.md
+                - name: Raport dotyczący potrąconej zaliczki na podatek dla Indonezji
+                  href: localizations/apac-idn-wht-declaration.md
             - name: Włochy
               items:
                 - name: Włochy — omówienie
                   href: localizations/italy.md
-                - name: Szczegóły sprawozdań podatku VAT
+                - name: Szczegóły sprawozdań VAT
                   href: localizations/emea-ita-vat-statements-details.md
                 - name: Kwartalne raporty komunikacji dotyczące podatku VAT
                   href: localizations/emea-ita-quarterly-vat-communication.md

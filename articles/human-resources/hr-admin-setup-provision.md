@@ -2,7 +2,7 @@
 title: Inicjowanie obsługi administracyjnej rozwiązania Human Resources
 description: W tym temacie wyjaśniono proces inicjacji nowego środowiska produkcyjnego dla oprogramowania Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/11/2021
+ms.date: 01/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c84fdb3c5c61598dfd0934e769f4a7262ce74052
-ms.sourcegitcommit: 8439ce2d4ad5ee5c1ec870640b52b5d2e947a671
+ms.openlocfilehash: b5ea27c6650df0b94284902eb37e2169ea36261a
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "7644534"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952709"
 ---
 # <a name="provision-human-resources"></a>Inicjowanie obsługi administracyjnej rozwiązania Human Resources
 
@@ -44,7 +44,7 @@ Przed rozpoczęciem inicjowania obsługi pierwszej piaskownicy lub środowiska p
 
 Środowiska próbne zapewniają możliwość oceniania funkcji zasobów ludzkich dla osób, które nie mają jeszcze dostępu do środowiska Human Resources. Jeśli udostępniasz środowisko próbne, a uwierzytelniony użytkownik ma już dostęp do co najmniej jednego istniejącego środowiska zasobów ludzkich, użytkownik zostanie przekierowany do istniejącego środowiska lub listy środowisk.
 
-Środowiska wersji zapoznawczych nie są one przeznaczone do używania jako środowiska produkcyjne. Są one ograniczone do 60-dniowego okresu próbnego. Po wygaśnięciu okresu próbnego środowisko i wszystkie znajdujące się w nim dane zostają usunięte i nie można ich odzyskać. Środowisko nie może zostać przekształcone w środowisko piaskownicy lub produkcyjne. Po wygaśnięciu istniejącego środowiska można zarejestrować się na nowe środowisko próbne.
+Środowiska wersji zapoznawczych nie są one przeznaczone do używania jako środowiska produkcyjne. Są one ograniczone do 30-dniowego okresu próbnego. Po wygaśnięciu okresu próbnego środowisko i wszystkie znajdujące się w nim dane zostają usunięte i nie można ich odzyskać. Środowisko nie może zostać przekształcone w środowisko piaskownicy lub produkcyjne. Po wygaśnięciu istniejącego środowiska można zarejestrować się na nowe środowisko próbne.
 
 Podczas tworzenia środowiska wersji próbnej Human Resources, jest również tworzone środowisko wersji próbnej Power Apps w dzierżawcy i łączone ze środowiskiem aplikacji Human Resources. Środowisko Power Apps o nazwie „TestDrive” ma ten sam okres próbny co środowisko Human Resources.
 

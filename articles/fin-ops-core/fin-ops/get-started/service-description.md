@@ -2,19 +2,19 @@
 title: Opis usługi dla aplikacji Finance and Operations
 description: Ten temat zawiera opis usługi dla aplikacji Finance and Operations.
 author: tomhig
-ms.date: 12/07/2021
+ms.date: 01/05/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: f7ce73018fda79156cc7ef3d4e1faa3fedf966f8
-ms.sourcegitcommit: b101c21f972fdad2667431f712222e040cd69d43
+ms.openlocfilehash: 85f82a863f0bde4c0414760fa2477651242538f2
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "7898396"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952373"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Opis usługi dla aplikacji Finance and Operations
 
@@ -117,7 +117,7 @@ Aplikacje Finance and Operations są obsługiwane z różnych regionów świadcz
 ### <a name="countryregion-specific-considerations"></a>Uwagi dotyczące niektórych krajów/regionów
 
 - Klienci działające w branży regulowanej lub organizacje handlowe prowadzące interesy z podmiotami z Francji, które wymagają lokalnego przechowywania danych powinni zapoznać się z tematem [Aplikacje Finance and Operations we Francji](../../dev-itpro/deployment/france-local-deployment.md).
-- Klienci prowadzący działalność w Chinach powinni zapoznać się z tematem [Finance and Operations — obsługiwane przez firmę 21Vianet w Chinach](../../dev-itpro/deployment/china-local-deployment.md).
+- Klienci prowadzący działalność w Chinach powinni zapoznać się z tematami [Podręcznik Azure China](/azure/china/) oraz [Finance and Operations — obsługiwane przez firmę 21Vianet w Chinach](../../dev-itpro/deployment/china-local-deployment.md).
 - Klienci prowadzący działalność w Rosji powinni zapoznać się z [rosyjskimi przepisami lokalizacji danych osobowych](/business-applications-release-notes/october18/dynamics365-finance-operations/russian-regulations-on-prem#when-will-the-cloud-deployment-option-of-dynamics-365-for-finance-and-operations-be-generally-available-for-russia).
 
 ### <a name="general-data-protection-regulation-gdpr"></a>Ogólne rozporządzenie o ochronie danych (RODO)
@@ -356,6 +356,7 @@ Firma Microsoft zobowiązuje się do utrzymania dostępności usługi na poziomi
 - **[Przewodnik licencjonowania](https://www.microsoft.com/licensing/docs/view/Microsoft-Dynamics-365)** — ten podręcznik zawiera więcej informacji na temat sposobu licencjonowania systemu Dynamics 365.
 - **[Pomoc techniczna dla klientów](https://dynamics.microsoft.com/support/)** — uzyskiwanie najlepszej w branży pomocy technicznej do aplikacji systemu Dynamics 365.
 - **[Dynamics Lifecycle Services](https://lcs.dynamics.com/)** — zarządzanie cyklem życia aplikacji i zapewnienie przewidywalnych, powtarzalnych implementacji o wysokiej jakości.
+- **[Przewodnik wdrożeniowy Dynamics 365](https://aka.ms/D365ImplementationGuideFlip)** – przewodnik wdrożeniowy Dynamics 365 dokumentuje sprawdzone w czasie zasady Success by Design i dostarcza normatywnych wskazówek dotyczących architektury, budowy, testowania i wdrażania rozwiązań Dynamics 365.
 
 ## <a name="definitions"></a>Definicje
 
@@ -428,6 +429,10 @@ Umowa SLA obejmująca usługi online firmy Microsoft. Aby uzyskać więcej infor
 ### <a name="service-update"></a>Aktualizacja usługi
 
 Firma Microsoft regularnie serwisuje środowiska Finance and Operations, dokonując aktualizacji usług. Klienci, w zależności od własnych potrzeb biznesowych, wyznaczają własny kalendarz aktualizacji usług. Aby uzyskać więcej informacji, zobacz [Aktualizacje usługi One Version](../../dev-itpro/lifecycle-services/oneversion-overview.md).
+
+### <a name="success-by-design"></a>[Success by Design](/dynamics365/fasttrack/success-by-design-overview)
+
+Ramy, które systematycznie prowadzą wdrożenie przez serię ocen na krytycznych etapach, aby zapewnić optymalną architekturę, bezpieczeństwo, wydajność i wrażenia użytkownika dla rozwiązania Dynamics 365.
 
 ### <a name="user"></a>Użytkownik
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: e9dc692061cec830f487e01a79075eda835bac23
-ms.sourcegitcommit: ef0dd4245fc499907ffe00e2a32f59a6cd96e45d
+ms.openlocfilehash: d667aef827addcf7c34075b08afffffe3fd71935
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "7937667"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952605"
 ---
 # <a name="engineering-change-management-overview"></a>Omówienie zarządzania zmianami inżynieryjnymi
 
@@ -71,6 +71,7 @@ Następnie włącz klucze konfiguracji, wykonując następujące kroki.
 
 1. Jeśli chcesz także używać wymiaru wersji, zaznacz pole wyboru **Wymiar produktu — wersja**. (To pole wyboru jest dalej niż lista, ale nie jest zagnieżdżone w węźle **Zarządzanie zmianami inżynieryjnymi**).
 1. Wyłącz tryb konserwacji, jak to opisano w sekcji [Tryb konserwacji](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+1. Uruchom synchronizację bazy danych, aby upewnić się, że klucze konfiguracji są poprawnie włączone.
 
 > [!IMPORTANT]
 > Począwszy od kwietnia 2022 roku klucze licencji do węzłów **Zarządzanie zmianami inżynieryjnych** i **Wymiar produktu — wersja** będą domyślnie włączone dla wszystkich nowych instalacji, ale w razie potrzeby będzie można je wyłączyć.

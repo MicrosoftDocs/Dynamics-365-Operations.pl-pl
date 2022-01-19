@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 02364a0871e9a54f52c7c526cd1897165d52ec68
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: a766247e5482677429706a324c09cc9be4386c0b
+ms.sourcegitcommit: 304a482dfcc31dcb61849f710ae73432324ddef3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345377"
+ms.lasthandoff: 12/29/2021
+ms.locfileid: "7947322"
 ---
 # <a name="record-right-of-use-asset-depreciation-preview"></a>Rejestrowanie amortyzacji składnika majątku z prawem do użytkowania (wersja zapoznawcza)
 
@@ -35,7 +35,7 @@ W przypadku wynajmów, które są ujmowane w bilansie organizacji, składnik maj
 1. Na stronie **Podsumowanie wynajmu** wybierz umowę wynajmu. Następnie wybierz kolejno opcje **Księgi \> Harmonogram amortyzacji składników majątku**, aby otworzyć stronę **Harmonogram amortyzacji składników majątku**.
 
     Wpis w arkuszu dotyczący wydatku amortyzacji składnika majątku z PDU jest oparty na kwocie z kolumny **Wydatek amortyzacji**. Aby zapoznać się z przykładem wytycznych dotyczących przestrzegania standardów rachunkowości, zajrzyj do sekcji [Obliczanie wydatku z tytułu amortyzacji składnika majątku z PDU w umowach leasingu finansowego](#calculation-of-rou-asset-amortization-expense-for-finance-leases) w dalszej części tego tematu.
-
+    
 2. Wybierz okres amortyzacji, a następnie wybierz opcję **Utwórz arkusz**. Zostanie wyświetlony komunikat informujący o utworzeniu arkusza, który będzie używany do rejestrowania amortyzacji.
 3. Wybierz kolejno opcje **Arkusze \> Arkusze wynajmu składnika majątku**, aby otworzyć stronę **Arkusz wynajmu składnika majątku**, na której można przejrzeć utworzony wpis w arkuszu dotyczący wydatku amortyzacji.
 
@@ -70,6 +70,8 @@ Jak już wcześniej wspomniano, liniowy wydatek na wynajem jest obliczany poprze
 
 > [!NOTE]
 > Zgodnie ze standardem ASC 842 amortyzacja składnika majątku z PDU dla leasingu operacyjnego jest klasyfikowana jako wydatek z tytułu wynajmu w rachunku zysków i strat. Dla lepszej przejrzystości moduł Wynajem składnika majątku opisuje wpis jako amortyzację składnika majątku z PDU. Jednak zapis debetowy powinien być przypisany do konta wydatków leasingu operacyjnego, a zapis kredytowy powinien być przypisany bezpośrednio do składnika majątku z PDU w leasingu operacyjnym. Niemniej jednak w parametrach wynajmu można określić, że dla składników majątku z PDU w umowach leasingu operacyjnego należy dokonać zapisów kredytowych na koncie umorzenia.
+
+Jeśli dzierżawa została sklasyfikowana jako dzierżawa operacyjna, miesięczna amortyzacja po utracie wartości będzie obliczana przy użyciu amortyzacji liniowej.
 
 ## <a name="calculation-of-rou-asset-amortization-expense-for-finance-leases"></a>Obliczanie wydatku z tytułu amortyzacji składnika majątku z PDU w umowach leasingu operacyjnego
 

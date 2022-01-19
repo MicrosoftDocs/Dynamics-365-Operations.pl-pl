@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: d6f58eab38d1aee97a5d39704255bf06a168b36c
-ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
+ms.openlocfilehash: 26f8820fe707b8a2dff0dcc1a24884ef02e5616f
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "7581872"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952503"
 ---
 # <a name="install-and-set-up-inventory-visibility"></a>Instalowanie i konfigurowanie dodatku Widoczność magazynu
 
@@ -71,6 +71,9 @@ Po zarejestrowaniu aplikacji i dodaniu klucza tajnego klienta do Azure AD wykona
 1. Zaakceptuj regulamin, zaznaczając pole wyboru **Regulamin**.
 1. Wybierz **Zainstaluj**. Stan dodatku będzie widoczny jako **Instalowany**. Po zakończeniu instalacji odśwież stronę. Stan powinien zostać zmieniony na **Zainstalowany**.
 1. W Dataverse zaznacz sekcję **Aplikacje** w lewej nawigacji i sprawdź, czy **widoczność zapasów** Power Apps została zainstalowana pomyślnie. Jeśli sekcja **Aplikacje** nie istnieje, skontaktuj się z zespołem ds. produktu Widoczność magazynu pod adresem [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com).
+
+> [!TIP]
+> Zalecamy dołączenie do grupy użytkowników dodatku Widoczność magazynu, gdzie możesz znaleźć przydatne przewodniki, otrzymywać nasze najnowsze aktualizacje oraz zadawać pytania dotyczące korzystania z Widoczności magazynu. Aby dołączyć, wyślij e-mail do zespołu produktu Widoczność magazynu na adres [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) i podaj swój identyfikator środowiska Supply Chain Management.
 
 > [!IMPORTANT]
 > Jeśli masz więcej niż jedno środowisko usługi LCS, utwórz inną aplikację Azure AD dla każdego środowiska. Jeśli do zainstalowania dodatku Widoczność magazynu dla różnych środowisk używasz tego samego identyfikatora aplikacji i identyfikatora dzierżawcy, wystąpi problem z tokenem w starszych środowiskach. Tylko ostatnie zainstalowane rozwiązanie jest prawidłowe.

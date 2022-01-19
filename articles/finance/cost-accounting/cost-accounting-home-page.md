@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 88dea2724f574383298c5deac9b76b4cd1d802b5427c8ec2a59a9d1ab0de4e0c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ab125f963b8f2e00c8d937c6eea091970feaef65
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741591"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952553"
 ---
 # <a name="cost-accounting-home-page"></a>Rachunek kosztów — strona główna
 
@@ -38,7 +38,7 @@ Poniższa mapa szkoleń przedstawia najważniejsze koncepcje i zadania tworzące
 
 | &nbsp; | &nbsp;  |
 |------|---|
-|  [Konfigurowanie jednostek podstawowych (eLearning)](https://mbspartner.microsoft.com/Home) (wymaga konta CustomerSource)  |[Wymiary składników kosztów](cost-elements.md)  |
+|  [Rozpoczęcie korzystania z modułu Rachunek kosztów (Nauka)](https://docs.microsoft.com/learn/modules/get-started-cost-accounting-dyn365-finance/)  |[Wymiary składników kosztów](cost-elements.md)  |
 |  [Hierarchia wymiarów](dimension-hierarchy.md)  |[Definiowanie jednostek kontroli kosztów](./tasks/define-cost-control-units.md)| 
 | [Podstawy alokacji](allocation-bases.md)|[Tworzenie i przypisywanie zasady alokacji kosztów do jednostki kontroli kosztów](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md) | 
 | [Zarządzanie źródłem danych księgi rachunku kosztów](./tasks/manage-data-source-cost-accounting-ledger.md) |                                           [Przetwarzanie i śledzenie danych źródłowych](./tasks/process-trace-source-data.md)     | 

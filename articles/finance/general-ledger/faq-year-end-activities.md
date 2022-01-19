@@ -1,8 +1,8 @@
 ---
 title: Działania na koniec roku — często zadawane pytania
-description: Ten temat został opracowany z myślą o ułatwieniu realizacji działań związanych z zamknięciem roku.
-author: kweekley
-ms.date: 01/25/2021
+description: W tym temacie można znaleźć pytania, które mogą powstać podczas zamknięcia roku, oraz odpowiedzi, które mogą pomóc w działaniach związanych z zamknięciem roku.
+author: moaamer
+ms.date: 12/21/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -13,18 +13,30 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1b7606314b9cf7050a565822b5b9e23beb0cb4978b20e88596c5002d918cfcd9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b0560024d87ad72c7ab77eaff52a305a4ab5a089
+ms.sourcegitcommit: cd0ba5f0ac7c44d36559a3e6e0fffb6ed18f9a20
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725081"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "7947269"
 ---
 # <a name="year-end-activities-faq"></a>Działania na koniec roku — często zadawane pytania 
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat został opracowany z myślą o ułatwieniu realizacji działań związanych z zamknięciem roku. Informacje zawarte w tym temacie skupiają się głównie wokół pytań dotyczących działań związanych z zamknięciem roku w obszarach Księga główna i Rozrachunki z dostawcami.
+W tym temacie można znaleźć pytania, które mogą powstać podczas zamknięcia roku, oraz odpowiedzi, które mogą pomóc w działaniach związanych z zamknięciem roku. Informacje zawarte w tym temacie skupiają się głównie wokół pytań dotyczących działań związanych z zamknięciem roku w obszarach Księga główna i Rozrachunki z dostawcami.
+
+## <a name="general-ledger-year-end-enhancements"></a>Ulepszenia na koniec roku w księdze głównej 
+W wersji 10.0.20 wprowadzono ulepszenie zamknięcia na koniec roku, które jest domyślnie włączone począwszy od wersji 10.0.25. Jeśli w organizacji jest używana wersja wcześniejsza niż 10.0.25, zaleca się włączenie tej funkcji przed rozpoczęciem procesu zamknięcia na koniec roku. Aby używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z obszaru roboczego Zarządzanie funkcjami, aby sprawdzić stan funkcji i ją włączyć, jeśli istnieje taka potrzeba. Ta funkcja jest wymieniona w następujący sposób:
+
+ - Moduł: Księga główna
+ - Nazwa funkcji: Ulepszenia na koniec roku w księdze głównej
+
+Konfiguracja szablonów zamknięcia roku została przeniesiona na nową stronę ustawień, **Konfiguracja szablonu zamknięcia roku**. Istniejąca strona zamknięcia na koniec roku zmieni się w sposób podobny do przeszacowania w walucie obcej w księdze głównej, gdzie lista będzie wyświetlana za każdym razem, gdy zamknięcie na koniec roku zostanie uruchomione lub wycofane. Kierownik ds. księgowości może inicjować zamknięcie na koniec roku z nowej strony. 
+
+Aby wycofać zamknięcie na koniec roku, wybierz ostatni rok obrachunkowy dla odpowiedniej osoby prawnej i wybierz przycisk **Wycofaj zamknięcie na koniec roku**. Wycofanie spowoduje usunięcie wpisów księgowych dla poprzedniego zamknięcia na koniec roku i nie spowoduje automatycznego ponownego uruchomienia zamknięcia na koniec roku. 
+
+Zamknięcie na koniec roku można uruchomić ponownie, uruchamiając proces po raz kolejny dla roku obrachunkowego i osoby prawnej. Proces będzie nadal korzystać z ustawienia parametru Księga główna, aby ustalić, czy ponowne zamknięcie na koniec roku będzie rozliczać tylko nowe lub zmienione transakcje, czy też całkowicie wycofa poprzednie zamknięcie i ponownie uruchomi proces dla wszystkich transakcji.  
 
 ## <a name="general-ledger-how-do-i-know-that-were-running-year-end-close-and-not-undoing-year-end-close"></a>Księga główna: skąd wiadomo, że proces zamknięcia na koniec roku jest uruchamiany, a nie wycofywany?
 Wielokrotnie spotykaliśmy się z sytuacją, gdy organizacja próbuje uruchomić zamknięcie na koniec roku, zamiast tego dokonuje jednak cofnięcia zamknięcia na koniec roku. Jeśli zamknięcie na koniec roku nastąpi bardzo szybko albo nie spowoduje wygenerowania sald otwarcia, sprawdź ustawienie **Cofnij poprzednie zamknięcie** w obszarze **Zamknięcie na koniec roku** (**Księga główna > Zamknięcie okresu > Zamknięcie na koniec roku > Uruchom zamknięcie obrachunkowe**). 
@@ -65,53 +77,82 @@ Zbędne zestawy wymiarów wpływają również na przebieg zadania wsadowego **B
 ### <a name="year-end-close-template-configuration"></a>Konfiguracja szablonu zamknięcia na koniec roku
 Szablon zamknięcia na koniec roku pozwala organizacjom wybrać poziom wymiaru finansowego do obsługi podczas przenoszenia sald kont wynikowych do wstrzymanych dochodów. Ustawienia umożliwiają organizacji obsługę szczegółowych wymiarów finansowych (**Zamknij wszystko**) podczas przenoszenia sald do wstrzymanych dochodów lub podjęcie decyzji o podsumowaniu kwot w ramach wartości jednego wymiaru (**Zamknij jeden**). Możliwe jest jego zdefiniowanie dla każdego wymiaru finansowego. Aby uzyskać więcej informacji dotyczących tych ustawień, zobacz temat [Zamknięcie na koniec roku](year-end-close.md).
 
-Zalecamy ocenę wymagań organizacji i, jeśli to możliwe, zamknięcie możliwie wielu wymiarów za pomocą opcji **Zamknij jeden** dotyczącej końca roku, aby poprawić wydajność. Po zamknięciu wartości (która może być także wartością pustą) jednego wymiaru system określa mniej szczegółów podczas ustalania sald dla wpisów na koncie wstrzymanych dochodów.
+Zalecamy ocenę wymagań organizacji i, jeśli to możliwe, zamknięcie możliwie wielu wymiarów za pomocą opcji **Zamknij jeden** dotyczącej końca roku, aby poprawić wydajność. Po zamknięciu wartości (która może być także wartością pustą) jednego wymiaru system określa mniej szczegółów podczas ustalania sald dla zapisów na koncie wstrzymanych dochodów.
 
-### <a name="10013-update-or-later"></a>Aktualizacja 10.0.13 lub nowsza
-Jeśli od czasu uruchomienia w organizacji ostatniego zamknięcia na koniec roku użytkownik dokonał aktualizacji do wersji 10.0.13 lub nowszej, proces zamknięcia na koniec roku może potrwać dłużej z powodu [implementacji funkcji skrótów w wersji 2](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog/posts/verify-hash-function-changes-after-update-to-dynamics-365-finance-2020-release-wave-2). (Termin *„skrót”* odnosi się do pola obliczonego na podstawie innych pól tekstowych. Interfejs API służący do obliczania wartości globalnie unikatowego identyfikatora (GUID) skrótu został zaktualizowany w celu zwiększenia poziomu bezpieczeństwa). Aby przyspieszyć proces zamykania na koniec roku, zaleca się przebudowanie sald zestawów wymiarów przed uruchomieniem zamknięcia na koniec roku. Jeśli przeprowadzono już przebudowę sald zestawu wymiarów po aktualizacji 10.0.13, nie jest konieczne ponowne uruchomienie procesu przebudowy.
- 
-## <a name="general-ledger--what-does-the-period-close--year-end-close-do"></a>Księga główna — jakie są skutki zamknięcia okresu / zamknięcia na koniec roku?
+## <a name="degenerate-dimensions"></a>Zdegeneruj wymiary
+
+Wymiar zdegenerowany zapewnia brak możliwości ponownego użycia jest samego i w połączeniu z innymi wymiarami. Istnieją dwa typy wymiarów zdegenerowanych. Pierwszy typ to wymiar, który jest indywidualnie degenerowany. Zazwyczaj ten typ wymiaru degenerowanego pojawia się tylko w jednej transakcji lub w małych zestawach transakcji. Drugi typ jest wymiarem, który staje się degenerowany w połączeniu z jednym lub większą liczbą dodatkowych wymiarów wykazujących te same możliwości na podstawie dostępnych permutacji, które można generować. Wymiar zdegenerowany może mieć znaczący wpływ na wydajność procesu zamknięcia na koniec roku. Aby zminimalizować problemy z wydajnością, w konfiguracji zamknięcia na koniec roku zdefiniuj wszystkie wymiary zdegenerowane jako **Zamknij jeden**, tak jak opisano w poprzedniej sekcji.
+
+## <a name="general-ledger-what-does-the-period-close-year-end-close-do"></a>Księga główna: Czym jest zamknięcie okresu, zamknięcie na koniec roku?
  
 [![Zamknięcie okresu, zamknięcie na koniec roku.](./media/faq-2020-yr-end-05.png)](./media/faq-2020-yr-end-05.png)
 
-### <a name="performance-improvements-for-rebuilding-financial-dimension-sets-new-feature"></a>Usprawnienia dotyczące wydajności do przebudowy zestawów wymiarów finansowych (nowa funkcja)
-Nowa funkcja dodana w wersji 10.0.16 poprawia wydajność procesów zamknięcia na koniec roku oraz konsolidacji. Funkcja nosi nazwę „Usprawnienia dotyczące wydajności do przebudowy zestawów wymiarów finansowych”. Ta funkcja zmienia sposób przebudowywania zestawów wymiarów, dzięki czemu są one przebudowywane tylko w odpowiednim horyzoncie czasowym. W poprzednich wersjach zestawy wymiarów były przebudowywane dla wszystkich dat. Jeśli na przykład zamykasz rok 2020, system przebuduje tylko salda transakcji z roku obrachunkowego 2020. Jeśli zostanie uruchomiona konsolidacja dla zakresu dat od 1 listopada 2020 r. do 30 listopada 2020 r., system dokona przebudowy jedynie sald z tego zakresu dat.
+### <a name="performance-improvements-for-rebuilding-financial-dimension-sets"></a>Ulepszenia wydajności dotyczące ponownego kompilowania zestawów wymiarów finansowych
+Nowa funkcja, która została dodana w wersji 10.0.16 poprawia wydajność procesów zamknięcia na koniec roku oraz konsolidacji. Funkcja nosi nazwę „Usprawnienia dotyczące wydajności do przebudowy zestawów wymiarów finansowych”. Ta funkcja zmienia sposób przebudowywania zestawów wymiarów, dzięki czemu są one przebudowywane tylko w odpowiednim horyzoncie czasowym. W poprzednich wersjach zestawy wymiarów były przebudowywane dla wszystkich dat. Jeśli na przykład zamykasz rok 2020, system przebuduje tylko salda transakcji z roku obrachunkowego 2020. Jeśli zostanie uruchomiona konsolidacja dla zakresu dat od 1 listopada 2020 r. do 30 listopada 2020 r., system dokona przebudowy jedynie sald z tego zakresu dat.
 
-Jako wprowadzenie tej funkcji jest traktowane jako zmiana powodująca niezgodność, funkcję tę należy włączyć w obszarze roboczym **Zarządzanie funkcjami**.
+Aby używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z obszaru roboczego Zarządzanie funkcjami, aby sprawdzić stan funkcji i ją włączyć, jeśli istnieje taka potrzeba. Ta funkcja jest wymieniona w następujący sposób:
  
-[![Zamknięcie na koniec roku.](./media/faq-2020-yr-end-06.png)](./media/faq-2020-yr-end-06.png)
+- Moduł: Księga główna
+- Nazwa funkcji: Usprawnienia dotyczące wydajności do przebudowy zestawów wymiarów finansowych
 
-## <a name="accounts-payable-what-changes-have-been-made-to-support-1099-year-end-reporting-for-2020"></a>Rozrachunki z dostawcami: jakie zmiany zostały wprowadzone w celu zapewnienia obsługi raportów 1099 dotyczących końca roku dla roku 2020?
+## <a name="accounts-payable-what-changes-have-been-made-to-support-1099-year-end-reporting-for-2021"></a>Rozrachunki z dostawcami: jakie zmiany zostały wprowadzone w celu zapewnienia obsługi raportów 1099 dotyczących końca roku dla roku 2021?
 
-W 2020 roku zostały wprowadzone dwie nowe funkcje wymagane przepisami prawa i dotyczące zmian w zakresie raportów 1099 dotyczących końca roku. Pierwsza funkcja, **Zastosuj zmiany do formularzy 1099-NEC i 1099-MISC na rok 2020**, została wprowadzona w ciągu roku jako funkcja obowiązkowa. Jej celem jest zapewnienie, że dane transakcji 1099 dla roku 2020 mogą być śledzone na potrzeby nowego formularza 1099-NEC. Ta funkcja dodaje pola formularza 1099, które są potrzebne do obsługi pól nowych formularzy 1099-NEC i zaktualizowanych formularzy 1099-MISC. Ta aktualizacja pozwoliła także uaktualnić dane rekordu dostawcy stanowiące informacje podawane w polu formularza 1099. 
+W roku 2021 formularze DIV, NEC i MISC zostały nieco zmienione i dodano w nich dodatkowe pola.
 
-Druga funkcja wymagana przepisami prawa, **Deklaracje 1099 zaktualizowane pod kątem prawa podatkowego na rok 2020**, obejmuje zmiany wymienione poniżej.
+#### <a name="div-new-box2e-2f"></a>DIV: nowe pole 2e, 2f
+ 
+- Pole 2e. Pokazuje część kwoty w polu 1a będącej przyrostem z sekcji 897, który został przypisany do dyspozycji amerykańskich udziałów w nieruchomościach (USRPI).  
+- Pole 2f. Pokazuje część kwoty w polu 2a będącej przyrostem z sekcji 897, który został przypisany do dyspozycji USRPI. Należy zauważyć, że pola 2e i 2f dotyczą tylko obcokrajowców i jednostek, których dochód utrzymuje swoją specyfikę podczas przetwarzania przez lub dystrybucji do bezpośrednich lub pośrednich zagranicznych właścicieli lub beneficjentów. Na ogół jest traktowany jako skutecznie powiązany z handlem lub działalnością w Stanach Zjednoczonych. Zobacz instrukcje zwrotu podatku. 
+ 
+#### <a name="nec-new-box-2"></a>NEC: nowe pole 2 
+ 
+Jeśli pole 2 jest zaznaczone, należy raportować produkty konsumentów w łącznej kwocie minimum 5000 USD za produkty sprzedawane użytkownikom w celu odsprzedaży, na podstawie umowy kupna-sprzedaży, prowizji od przelewu lub na innej podstawie. Na ogół należy raportować wszelkie przychody ze sprzedaży tych produktów zgodnie z harmonogramem C (formularz 1040). 
+ 
+Równocześnie uległ zmianie rozmiar formularza NEC. Podczas drukowania są dostępne trzy formularze na stronę. 
+ 
+#### <a name="misc-new-box-11"></a>MISC: nowe pole 11 
+ 
+Pole 11 zawiera kwotę zapłaconą za zakup ryb do odsprzedaży od każdej osoby zaangażowanej w handel rybami lub rybołówstwo. Zapoznaj się z instrukcjami zgłaszania tego przychodu w zeznaniach podatkowych. 
+ 
+#### <a name="electronic-filing"></a>Przesyłanie dokumentów drogą elektroniczną 
+Aby uzyskać informacje dotyczące przesyłania dokumentów drogą elektroniczną, zobacz [Publikacje dotyczące wymagań przesyłania dokumentów drogą elektroniczną](https://www.irs.gov/pub/irs-pdf/p1220.pdf).
 
-- 1099-OID — urząd skarbowy przekonwertował formularz na potrzeby użytku ciągłego.
-   - Trzecia i czwarta cyfra roku raportowania musi zostać wypełniona przed drukowaniem. Użyj trzeciej i czwartej cyfry **roku sprawozdawczego** z obszaru **Opcje drukowania podatku 1099**. 
-
-- 1099-NEC — nowy formularz na rok 2020. Pozwala zarejestrować wynagrodzenia dla osoby, która nie ma statusu pracownika etatowego. 
-
--   1099-MISC — w związku z utworzeniem formularza 1099-NEC urząd skarbowy poprawił formularz 1099-MISC i dokonał zmiany numerów pól do zgłaszania określonych rodzajów przychodów.
-Poniżej wymieniono zmiany w zakresie raportowania przychodów oraz numerowania pól formularza.
-   - Płatnik dokonał bezpośredniej sprzedaży, której wartość wynosi co najmniej 5000$ (pole wyboru) — zgłoszenia dokonuje się w polu 7.
-   - Wpływy z ubezpieczenia upraw są zgłaszane w polu 9.
-   - Przychody brutto wypłacane prawnikom są zgłaszane w polu 10.
-   - Odroczenia wynikające z sekcji 409A są zgłaszane w polu 12.
-   - Niekwalifikujący się odroczony dochód z wynagrodzenia jest zgłaszany w polu 14.
-   - Pola 15, 16 i 17 służą do raportowania odpowiednio potrąceń na podatki, krajowego numer identyfikacyjnego i kwoty dochodu uzyskanego w kraju.
-
-- Brak zmian w formularzu 1099-DIV i 1099-INT w 2020 roku.
-
-- Przesyłanie dokumentów drogą elektroniczną — format został zmieniony i dostosowany do rozmiarów nowego formularza NEC; wprowadzone zmiany pól formularza MISC opisano powyżej. Aby uzyskać szczegółowe informacje o wymaganiach dotyczących przesyłania dokumentów drogą elektroniczną, zobacz [publikację 1220 urzędu skarbowego](https://www.irs.gov/pub/irs-pdf/p1220.pdf).
+Aktualizuj specyfikacje formatu i układy rekordów dla raportu elektronicznego 2021 
+- Sekcja 2 Rekord „A” wystawcy. 
+- Kody kwot — zwiększona pozycja pola 28–45, długość do 18. 
+ 
+#### <a name="sec-2-issuer-a-record-for-reporting-payments-on-form-1099-div"></a>Sekcja 2 Rekord „A” wystawcy, do raportowania płatności na formularzu 1099-DIV: 
+- Typ kwoty – dodana sekcja 897 Zwykłe dywidendy i kod kwoty dodanej H. 
+- Typ kwoty – dodana sekcja 897 Zyski kapitałowe i kod kwoty dodanej J. 
+ 
+#### <a name="sec-3-payee-b-record"></a>Sekcja 3 Rekord „B” odbiorcy płatności 
+- Rekordy informacji ogólnych — zaktualizowano trzeci punkt z 16 do 18 pól kwot płatności. 
+- Płatność tytułu pola H — zaktualizowana nazwa stanowiska 247–258, tytuł pola, długość i ogólny opis pola. 
+- Płatność tytułu pola J — zaktualizowana nazwa stanowiska 259–270, tytuł pola, długość i ogólny opis pola. 
+- Zaktualizowano puste pole do pozycji pola 271–286. 
+- Zaktualizowano wskaźnik kraju obcego do pozycji pola 287. 
+- Zaktualizowano pole wiersza nazwy pierwszego odbiorcy płatności do pozycji pola 288–327. 
+- Zaktualizowano pole wiersza nazwy drugiego odbiorcy płatności do pozycji pola 328–367. 
+- Pozycje układu rekordu, formularz 1099-MISC — usunięto pozycję pola 548 i wskaźnik zapotrzebowania na składanie dokumentu FATCA w tytule pola. 
+- Pozycje układu rekordu, formularz 1099-NEC — aktualizacja pola 545–546 na puste, aktualizacja pola 547 na wskaźnik sprzedaży bezpośredniej, długość i opis oraz uwagi, aktualizacja pola 548–722 na puste. 
+ 
+#### <a name="sec-4-end-of-issuer-c-record"></a>Sekcja 4 Rekord „C” końca wystawcy 
+- Płatność tytułu pola H — zaktualizowana nazwa stanowiska 304–321, tytuł pola, długość i ogólny opis pola. 
+- Płatność tytułu pola J — zaktualizowana nazwa stanowiska 322–339, tytuł pola, długość i ogólny opis pola. 
+- Nazwa tytułu 340–499 — długość zaktualizowana do 160. 
+ 
+#### <a name="sec-5-state-totals-k-record"></a>Sekcja 5 Rekord „K” sum stanu 
+- Płatność tytułu pola H — zaktualizowana nazwa stanowiska 304–321, tytuł pola, długość i ogólny opis pola. 
+- Płatność tytułu pola J — zaktualizowana nazwa stanowiska 322–339, tytuł pola, długość i ogólny opis pola. 
+- Nazwa tytułu 340–499 — długość zaktualizowana do 160.  
 
 ## <a name="accounts-payable-1099--how-do-i-change-the-1099-box-and-values-for-a-vendor-that-wasnt-tracking-1099-information-throughout-the-year"></a>Rozrachunki z dostawcami: 1099 — w jaki sposób zmienić pole i wartości dla dostawcy w formularzu 1099, który nie śledził informacji dotyczących podatku 1099 przez cały rok?
 Użyj funkcji Aktualizacja formularza 1099 (**Rozrachunki z dostawcami > Dostawcy >Wszyscy dostawcy > Wybierz dostawcę > Karta Dostawca na wstążce > Aktualizacja formularza 1099**), aby przejrzeć transakcje z poprzednio zapłaconych faktur w celu ponownego odpowiedniego przypisania danych 1099 zgodnie z ustawieniami na karcie **Podatek 1099** na stronie **Dostawca**.
 
 ## <a name="can-i-run-the-update-1099-for-all-my-vendors-at-once"></a>Czy można uruchomić funkcję Aktualizacja formularza 1099 dla wszystkich dostawców jednocześnie?
-Nr Rutynowa procedura Aktualizacja formularza 1099 jest realizowana dla jednego dostawcy na raz. Jeśli ten wymóg ma zastosowanie do Twojej organizacji, polecamy zagłosować na koncepcję [Proces wsadowy aktualizacji danych 1099 dostawcy](https://experience.dynamics.com/ideas/idea/?ideaid=5493d608-350e-eb11-b5d9-0003ff68ded8).
+Nr Rutynowa procedura Aktualizacja formularza 1099 jest realizowana dla jednego dostawcy na raz. Jeśli ten wymóg ma zastosowanie do Twojej organizacji, polecamy zagłosować na koncepcję [Przetwarzanie partii aktualizacji danych 1099 dostawcy](https://experience.dynamics.com/ideas/idea/?ideaid=5493d608-350e-eb11-b5d9-0003ff68ded8).
 
-## <a name="accounts-payable-1099--recalculate-existing-1099-amounts-vs-update-all-in-the-update-1099-utility"></a>Rozrachunki z dostawcami: 1099 — „Oblicz ponownie istniejące kwoty podatku 1099” a „Aktualizuj wszystko” w narzędziu Aktualizacja formularza 1099.
+## <a name="accounts-payable-1099--recalculate-existing-1099-amounts-versus-update-all-in-the-update-1099-utility"></a>Rozrachunki z dostawcami: 1099 — Oblicz ponownie istniejące kwoty podatku 1099 a Aktualizuj wszystko w narzędziu Aktualizacja formularza 1099
 W przypadku jego użycia w połączeniu z polem wyboru **Aktualizuj wszystko** zaznaczenie pola wyboru **Oblicz ponownie istniejące kwoty podatku 1099** spowoduje zresetowanie kwot podatku 1099 do łącznych zapłaconych wartości. 
 
 [![Transakcje podatku 1099: przed uruchomieniem rutynowej procedury aktualizacji.](./media/faq-2020-yr-end-07.png)](./media/faq-2020-yr-end-07.png)

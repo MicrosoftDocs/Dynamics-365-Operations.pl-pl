@@ -2,7 +2,7 @@
 title: Moduł płatności
 description: W tym temacie omówiono moduł płatności i wyjaśniono, jak go skonfigurować w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 11/18/2020
+ms.date: 01/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 303b5f0bdfdb00accab2598acc2545bca69660412e170202152303c8ed81314e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: de92e137815cb79944a2793fc4841c949ed43346
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774564"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952476"
 ---
 # <a name="payment-module"></a>Moduł płatności
 
@@ -90,7 +90,24 @@ Podobnie jak moduły płatności, właściwość **Obsługiwane typy płatności
 
 Moduł płatności można dodać tylko do modułu realizacji transakcji. Aby uzyskać więcej informacji na temat konfigurowania modułu płatności dla strony kasy, zapoznaj się z tematem [Moduł realizacji transakcji](add-checkout-module.md).
 
-Jeśli potrzebne są zarówno złącza płatności Adyen, jak i PayPal, dodaj oba moduły do sekcji płatności. Upewnij się, że dla usługi PayPal skonfigurowano wartość właściwość **Obsługiwane typy płatności** i pozostaw to pole puste dla Adyen. Ponadto dla opcji Adyen należy określić właściwość **Jest płatnością podstawową** na wartość **Prawda**.
+## <a name="configure-the-adyen-and-paypal-payment-connectors-when-both-are-used"></a>Skonfiguruj łączniki płatności Adyen i PayPal, jeśli oba są używane
+
+Jeśli oba łączniki płatności (Adyen i PayPal) będą używane w twojej witrynie, wykonaj poniższe kroki w kreatorze witryn Commerce, aby dodać moduły płatności dla każdego łącznika do modułu kasy, a następnie skonfigurować właściwości każdego modułu.
+
+1. W panelu właściwości modułu płatności PayPal wykonaj poniższe kroki:
+
+    1. W polu właściwości **Obsługiwane typy płatności** wprowadź wartość **PayPal**.
+    1. Wyczyść pole wyboru dla właściwości **Płatność główna**.
+    1. Zaznacz pole wyboru właściwości **Użyj identyfikatora łącznika**.
+
+1. W panelu właściwości modułu płatności Adyen wykonaj poniższe kroki:
+
+    1. W polu właściwości **Obsługiwane typy płatności** pozostaw pustą wartość.
+    1. Zaznacz pole wyboru dla właściwości **Płatność główna**.
+    1. Zaznacz pole wyboru właściwości **Użyj identyfikatora łącznika**.
+
+> [!NOTE]
+> Kiedy konfigurujesz łączniki Adyen i PayPal do wspólnego użytku, konfiguracja **Łącznika płatności Dynamics 365 dla Adyen** musi znajdować się na pierwszej pozycji w konfiguracji **Konta płatności** łączniki kanału online w centrali Commerce. Aby potwierdzić lub zmienić kolejność łącznika, przejdź do **Sklepy internetowe** i wybierz kanał dla swojej witryny. Następnie w zakładce **Ustawienia**, na skróconej karcie **Konta płatnicze**, pod **Łącznik** upewnij się, że konfiguracja **Łącznika płatności Dynamics 365 dla Adyen** znajduje się na pierwszej pozycji (czyli w górnej linii), a konfiguracja **Łącznika płatności Dynamics 365 dla PayPal** drugiej linii. W razie potrzeby dodaj lub usuń łączniki, aby zmienić kolejność.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 43814023474d44b8c95bae087c7b6a4d52d21471
-ms.sourcegitcommit: 7cbd53617af179a0de74aae30c149edc95e86684
+ms.openlocfilehash: ea39a1fc9092aaa4622c7193f7538acc85aa0f46
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "7891933"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952684"
 ---
 # <a name="integrate-with-third-party-manufacturing-execution-systems"></a>Integracja z systemami wykonywania produkcji innych firm
 
@@ -37,10 +37,17 @@ Na poniższej ilustracji przedstawiono typowy zbiór zdarzeń biznesowych, proce
 
 ## <a name="turn-on-the-mes-integration-feature"></a>Włącz funkcję integracji MES
 
-Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
+Zanim będziesz mógł korzystać z tej funkcji, administrator musi ją włączyć w twoim systemie w sposób opisany w poniższej procedurze.
 
-- **Moduł:** *Kontrola produkcji*
-- **Nazwa funkcji:** *integracja systemu w systemie realizacji produkcji*
+1. Wybierz kolejno opcje **Administrowanie systemem \> Ustawienia \> Konfiguracja licencji**.
+1. Upewnij się, że klucz licencyjny **Czas i obecność** jest włączony (ma zaznaczoną opcję). Ten klucz licencyjny jest wymagany, ponieważ kontroluje on funkcjonalność i dane systemu wykonawczego produkcji. Jeśli nie jest ona włączona, wykonaj następujące kroki:
+    1. Ustaw system w trybie konserwacji, jak to opisano w sekcji [Tryb konserwacji](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+    1. Na stronie **Konfiguracja licencji** zaznacz pole wyboru **Czas i obecność**.
+    1. Wyłącz tryb konserwacji, jak to opisano w sekcji [Tryb konserwacji](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md)
+1. Wybierz kolejno opcje **Administrator systemu \> Obszary robocze \> Zarządzanie funkcjami**.
+1. Włącz funkcję, która jest wymieniona w następujący sposób (zobacz też [Zarządzanie cechami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)):
+    - **Moduł:** *Kontrola produkcji*
+    - **Nazwa funkcji:** *integracja systemu w systemie realizacji produkcji*
 
 ## <a name="processes-available-for-mes-integration"></a>Procesy dostępne dla integracji MES
 

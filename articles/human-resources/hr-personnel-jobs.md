@@ -15,18 +15,18 @@ ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0b3d56b3d19bd671d0015e87eefdf8ae62f4cee0
-ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
+ms.openlocfilehash: a4aa7369c84836154b8217a5b70267021f4028b1
+ms.sourcegitcommit: 4f84540e6121ca3d5ae52ee07e414116d423cefa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7731547"
+ms.lasthandoff: 01/03/2022
+ms.locfileid: "7948482"
 ---
 # <a name="set-up-the-components-of-a-job"></a>Konfigurowanie składników funkcji
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-W tym artykule opisano elementy koncepcyjne, które może zawierać zadanie, oraz przykłady wykorzystania tych elementów w organizacji. 
+W tym temacie opisano elementy koncepcyjne, które może zawierać zadanie, oraz przykłady wykorzystania tych elementów w organizacji. 
 
 Zanim będzie można tworzyć zadania, trzeba skonfigurować pewne informacje referencyjne. Można utworzyć zadanie mające tylko nazwę. Jednak umieszczając dodatkowe informacje, takie jak stanowisko (nazwa stanowiska), podajesz wartości domyślne dla stanowisk przypisanych do zadania. Dodatkowo niektóre wprowadzane informacje mogą służyć do filtrowania systemów wynagrodzeń względem określonych zadań. Jeśli chcesz skonfigurować uprawnienia, których można używać do filtrowania systemów wynagrodzeń względem określonego zadania, należy najpierw skonfigurować funkcje stanowisk i typy zadań, a następnie same zadania. Mając dostępne te wartości domyślne, oszczędzisz czas podczas dodawania stanowisk do zadania. 
 
