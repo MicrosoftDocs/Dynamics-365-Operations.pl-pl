@@ -16,10 +16,6 @@
                   href: get-started/whats-new-scm-10-0-24.md
                 - name: Supply Chain Management w wersji 10.0.23 (styczeń 2022)
                   href: get-started/whats-new-scm-10-0-23.md
-                - name: Supply Chain Management w wersji 10.0.22 (listopad 2021)
-                  href: get-started/whats-new-scm-10-0-22.md
-                - name: Supply Chain Management w wersji 10.0.21 (październik 2021)
-                  href: get-started/whats-new-scm-10-0-21.md
             - name: Usunięte lub wycofane funkcje
               items:
                 - name: Usunięte lub wycofane funkcje — strona główna
@@ -178,7 +174,7 @@
               items:
                 - name: Strona główna zarządzania cyklem życia implementacji
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Architektura aplikacji Finance and Operations
+                - name: Architektura dla aplikacji Finance and Operations
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Microsoft FastTrack
                   href: /dynamics365/fasttrack/
@@ -288,7 +284,7 @@
                       href: ../finance/localizations/emea-multiple-vat-registration-numbers.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Ustawianie środowiska wyszukiwania danych głównych
                       href: ../finance/localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Aktualizacje wymagane przepisami prawa
+            - name: Aktualizacje wymogów prawnych
               href: ../finance/localizations/regulatory-updates.md?toc=/dynamics365/supply-chain/toc.json
             - name: Indie
               items:
@@ -3513,7 +3509,7 @@
                       href: warehousing/transfer-orders-warehouse.md
                 - name: Uaktualnianie i migracja
                   items:
-                    - name: Uaktualnianie procesów zarządzania magazynem z Microsoft Dynamics AX 2012 do Finance and Operations
+                    - name: Uaktualnianie procesów zarządzania magazynem z systemu Microsoft Dynamics AX 2012 do rozwiązania Finance and Operations
                       href: warehousing/upgrade-migration-warehouse-management-processes.md
         - name: Rozwój modułu Supply Chain Management
           items:
@@ -3905,9 +3901,9 @@
                   href: troubleshooting/warehousing/work-remains-blocked.md
                 - name: Nie można anulować pracy dotyczącej użytkownika
                   href: troubleshooting/warehousing/you-cannot-cancel-wo.md
-    - name: Programowanie aplikacji Finance and Operations i administrowanie nimi
+    - name: Rozwój i administracja aplikacjami Finance and Operations
       href: ../fin-ops-core/dev-itpro/index.md
-    - name: Dynamics 365 Finance
+    - name: Rozwiązanie Dynamics 365 Finance
       href: ../finance/index.md
     - name: Dynamics 365 Commerce
       href: ../commerce/index.md
