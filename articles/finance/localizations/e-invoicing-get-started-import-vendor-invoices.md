@@ -1,29 +1,23 @@
 ---
+# required metadata
 title: Używanie usługi fakturowania elektronicznego do importowania faktur od dostawców
 description: Ten temat zawiera informacje dotyczące importowania faktur od dostawców przy użyciu usługi fakturowania elektronicznego.
 author: gionoder
 ms.date: 09/03/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
+ms.prod: null
+ms.technology: null
+ms.search.form: null
 audience: Application User
 ms.reviewer: kfend
-ms.custom:
-- "97423"
-- intro-internal
-ms.assetid: ''
+ms.custom: intro-internal
+ms.assetid: null
 ms.search.region: Global
 ms.author: janeaug
-ms.search.validFrom: 2020-07-08
+ms.search.validFrom: '2020-07-08'
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: c28adbfe532e77a52cab7625b9539d1e8e528bea
-ms.sourcegitcommit: 81bc42551e6c9af6ad38908afb606ee1f8d3c44b
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7473383"
 ---
+
 # <a name="use-the-electronic-invoicing-service-to-import-vendor-invoices"></a>Używanie usługi fakturowania elektronicznego do importowania faktur od dostawców
 
 [!include [banner](../includes/banner.md)]

@@ -8,15 +8,10 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
-ms.search.validFrom: 2021-03-25
+ms.search.validFrom: '2021-03-25'
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ba489358ef2d74e816186f29956aea5538a2432825c7d949e7c9cc23d947b997
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714385"
 ---
+
 # <a name="engineering-change-management-faq"></a>Zarządzanie zmianami projektowymi — FAQ
 
 [!include [banner](../includes/banner.md)]
@@ -63,6 +58,11 @@ W poniższych tabelach przedstawiono pola kopiowane podczas tych procesów.
 | **Warianty produktu** | Wszystkie pola w sekcji **Domyślny wariant produktu** | Te same pola, które są kopiowane dla firmy projektowej |
 
 Oprócz pól widocznych w poprzedniej tabeli wszystkie domyślne ustawienia zamówienia są kopiowane ze zwolnionego szablonu towaru, zarówno podczas tworzenia produktu w firmie projektowej, jak i po zwolnieniu do firmy operacyjnej. (Aby wyświetlić domyślne ustawienia zamówienia dla zwolnionego szablonu towaru, otwórz odpowiednią stronę **Szczegóły zwolnionego produktu**, a następnie, w okienku akcji, na karcie **Zarządzanie zapasami** wybierz opcję **Ustawienia domyślne zamówień**).
+
+> [!NOTE]
+>
+> - Jednostka jest domyślnie domyślną wartością szablonu.
+> - W przypadku sprzedawców detalicznych używających funkcji Dynamics 365 Commerce podczas przypisywania kategorii detalicznej do produktu kategoria detaliczna odnosi się do wartości domyślnych w wielu polach, które dotyczą zwolnionego poziomu produktu. Te wartości domyślne zastępują wartości domyślne, które być może zostały już ustawione w szablonie lub skopiowane z inżynierii.
 
 ## <a name="should-i-create-a-separate-legal-entity-for-engineering-products-or-use-an-existing-legal-entity"></a>Czy należy utworzyć odrębną osobę prawną do tworzenia produktów czy używać istniejącej?
 

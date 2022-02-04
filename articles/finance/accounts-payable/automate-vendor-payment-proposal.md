@@ -1,26 +1,22 @@
 ---
+# required metadata
 title: Automatyczne propozycje płatności dla dostawcy
-description: W tym temacie wyjaśniono, w jaki sposób organizacje płacące dostawcom w harmonogramie cyklicznym mogą zautomatyzować proces generowania propozycji płatności dla dostawcy.
+description: 'W tym temacie wyjaśniono, w jaki sposób organizacje płacące dostawcom w harmonogramie cyklicznym mogą zautomatyzować proces generowania propozycji płatności dla dostawcy.'
 author: kweekley
 ms.date: 04/08/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
+ms.prod: null
+ms.technology: null
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 262034
 ms.assetid: 9db38b3f-26b3-436e-8449-7ff243568a18
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: 2020-04-08
+ms.search.validFrom: '2020-04-08'
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 483621a5de2980212926ac1011c16f1b82e4a3d075bbe9bcbbe6a0e35f06e5bf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749109"
 ---
+
 # <a name="automate-vendor-payment-proposals"></a>Automatyczne propozycje płatności dla dostawcy
 
 [!include [banner](../includes/banner.md)]
@@ -32,6 +28,9 @@ Organizacje płacące dostawcom w harmonogramie cyklicznym mogą teraz zautomaty
 - W jakim arkuszu płatności dostawcy będą zapisywane wynikające płatności
 
 Automatyzacja propozycji płatności nie księguje automatycznie płatności. Można więc nadal korzystać z dowolnych procesów sprawdzania poprawności i przepływu pracy, które są obecnie używane do zatwierdzania tworzonych płatności.
+
+> [!NOTE]
+> Aby ta funkcja była dostępna, funkcja **Automatyzacji propozycji płatności dostawcy** musi być włączona w zarządzaniu funkcjami. 
 
 ## <a name="define-the-occurrence-of-vendor-payment-proposals"></a>Definiowanie wystąpienia propozycji płatności dla dostawcy
 

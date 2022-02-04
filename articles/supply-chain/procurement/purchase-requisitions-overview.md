@@ -1,29 +1,25 @@
 ---
+# required metadata
 title: Omówienie zapotrzebowania na zakup
-description: W tym temacie opisano przepływ pracy zapotrzebowania na zakup oraz różne stany, jakie może przyjmować zapotrzebowanie na zakup.
+description: 'W tym temacie opisano przepływ pracy zapotrzebowania na zakup oraz różne stany, jakie może przyjmować zapotrzebowanie na zakup.'
 author: Henrikan
 ms.date: 11/02/2017
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage, PurchReqConsolidationPartByVendor, PurchReqConsolidationLineDetail, PurchReqConsolidationCreate, PurchReqConsolidationBulkEdit, PurchReqConsolidationAddLine
+ms.topic: overview
+ms.prod: null
+ms.technology: null
+ms.search.form: 'PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage, PurchReqConsolidationPartByVendor, PurchReqConsolidationLineDetail, PurchReqConsolidationCreate, PurchReqConsolidationBulkEdit, PurchReqConsolidationAddLine'
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom:
-- "2174"
-- intro-internal
+  - '2174'
+  - intro-internal
 ms.assetid: 77d07119-4d9f-4c0e-acbe-d319203571ab
 ms.search.region: Global
 ms.author: henrikan
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: '2016-02-28'
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0ef018319a2d6992c270aa7f898fd1c6d649ea43
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569512"
 ---
+
 # <a name="purchase-requisition-overview"></a>Omówienie zapotrzebowania na zakup
 
 [!include [banner](../includes/banner.md)]

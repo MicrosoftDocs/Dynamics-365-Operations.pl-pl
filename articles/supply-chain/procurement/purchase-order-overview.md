@@ -1,29 +1,25 @@
 ---
+# required metadata
 title: Omówienie zamówień zakupu
-description: W tym artykule podano ogólne informacje dotyczące zamówień zakupu oraz łącza do dodatkowych artykułów, które odnoszą się do różnych etapów pokonywanych przez zamówienie zakupu.
+description: 'W tym artykule podano ogólne informacje dotyczące zamówień zakupu oraz łącza do dodatkowych artykułów, które odnoszą się do różnych etapów pokonywanych przez zamówienie zakupu.'
 author: Henrikan
 ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: PurchTable, PurchTablePart, PurchLineOpenOrder, PurchConfirmationRequestJournal
+ms.topic: overview
+ms.prod: null
+ms.technology: null
+ms.search.form: 'PurchTable, PurchTablePart, PurchLineOpenOrder, PurchConfirmationRequestJournal'
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom:
-- "93083"
-- intro-internal
+  - '93083'
+  - intro-internal
 ms.assetid: e9b7bc5b-1d7e-4ec2-97be-d655274b0613
 ms.search.region: Global
 ms.author: henrikan
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: '2016-02-28'
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2ea818432e193863d5339d78377fbc4d2a09a3e9
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578111"
 ---
+
 # <a name="purchase-order-overview"></a>Omówienie zamówień zakupu
 
 [!include [banner](../includes/banner.md)]

@@ -1,60 +1,56 @@
----
+--- 
+# required metadata 
 title: Identyfikowanie i wdrażanie narzędzi do wybierania kandydatów
-description: Znajdowanie puli wykwalifikowanych kandydatów do zapełnienia wakatów może być trudne, zwłaszcza gdy stanowisko wymaga unikatowego zestawu umiejętności.
-author: andreabichsel
-ms.date: 11/20/2020
+description: 'Znajdowanie puli wykwalifikowanych kandydatów do zapełnienia wakatów może być trudne, zwłaszcza gdy stanowisko wymaga unikatowego zestawu umiejętności.'
+author: twheeloc
+ms.date: 01/10/2022
 ms.topic: business-process
-ms.prod: ''
-ms.technology: ''
-ms.search.form: HcmSkillMapping, HcmJobLookup, HcmSkillMappingLine, HcmPersonCertificate, CCHTMLPrintPreview
+ms.prod: null
+ms.technology: null
+ms.search.form: 'HcmSkillMapping, HcmJobLookup, HcmSkillMappingLine, HcmPersonCertificate, CCHTMLPrintPreview'
 audience: Application User
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: anbichse
-ms.search.validFrom: 2016-06-30
+ms.search.validFrom: '2016-06-30'
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cae72f9ad1e627c1de547de9689f951a6aea0f9eb37d426034652332a7929a22
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723038"
 ---
 # <a name="identify-and-deploy-candidate-selection-tools"></a>Identyfikowanie i wdrażanie narzędzi do wybierania kandydatów
 
 [!include [banner](../../includes/banner.md)]
 
-Znajdowanie puli wykwalifikowanych kandydatów do zapełnienia wakatów może być trudne, zwłaszcza gdy stanowisko wymaga unikatowego zestawu umiejętności.  Z drugiej strony kandydaci mający niezbędne kwalifikacje mogą już być pracownikami Twojej organizacji. Można wyszukiwać określone zbiory umiejętności wśród istniejących pracowników lub nowych kandydatów. Dzięki temu osoba rekrutująca może szybko zebrać i przejrzeć dane kandydatów ubiegających się o wolne stanowisko teraz lub w przeszłości albo znaleźć potencjalnych kandydatów wśród istniejących pracowników. Z tego nagrania zadania można się dowiedzieć, jak funkcje mapowania umiejętności pomogą znaleźć właściwą osobę na wolne stanowisko. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
+Znajdowanie puli wykwalifikowanych kandydatów do zapełnienia wakatów może być trudne, zwłaszcza gdy stanowisko wymaga unikatowego zestawu umiejętności. Z drugiej strony kandydaci mający niezbędne kwalifikacje mogą już być pracownikami Twojej organizacji. Można wyszukiwać określone zbiory umiejętności wśród istniejących pracowników lub nowych kandydatów. Dzięki temu osoba rekrutująca może szybko zebrać i przejrzeć dane kandydatów ubiegających się o wolne stanowisko teraz lub w przeszłości albo znaleźć potencjalnych kandydatów wśród istniejących pracowników. Skorzystaj z tej procedury, aby dowiedzieć się, jak funkcja mapowania umiejętności może pomóc Ci znaleźć odpowiednią osobę na otwarte stanowisko. Do stworzenia tej procedury wykorzystano dane z firmy demonstracyjnej **USMF**.
 
-1. Wybierz kolejno opcje Zasoby ludzkie > Kompetencje > Analiza kwalifikacji > Profile mapowania kwalifikacji.
-2. Kliknij przycisk Nowy.
-3. W polu Mapowanie kwalifikacji nadaj nazwę mapowaniu umiejętności.  Przykład: Księgowy.
-4. W polu Opis wprowadź opis mapowania umiejętności.
-5. W polu Data wprowadź datę.
-6. Kliknij przycisk Odtwórz profil.
-    * Opcja Odtwórz profil służy do pobierania informacji o certyfikatach, umiejętnościach i wykształceniu z danych wybranej osoby, zadania lub kursu w celu użycia jako podstawy wyszukiwania.   Następnie można dodać lub usunąć kryteria, określić, czy kryteria są opcjonalne, i określić ważność kryteriów.  
-7. Kliknij przycisk Zadanie.
-8. W polu Zadanie wprowadź lub wybierz wartość.
-9. Kliknij przycisk OK.
-10. Rozwiń skróconą kartę Zakres i dodaj wszelkie informacje dodatkowe, takie jak dział.
-11. Rozwiń skróconą kartę Certyfikaty, aby obejrzeć lub edytować certyfikaty.
-12. Rozwiń skróconą kartę Umiejętności, aby obejrzeć lub edytować kompetencje.
-13. Rozwiń skróconą kartę Wykształcenie, aby wyświetlić lub edytować kryteria wykształcenia.
-14. Kliknij przycisk Wykonaj.
-15. Kliknij przycisk OK.
-16. Kliknij przycisk Wynik.
-17. Kliknij przycisk Wynik.
-18. Kliknij przycisk Wznów.
-19. Kliknij przycisk Certyfikaty.
-    * Można przechodzić do kolejnych poziomów szczegółów każdej osoby na liście i obejrzeć informacje dotyczące jej wykształcenia, umiejętności i doświadczenia zawodowego.  
+1. Wybierz kolejno opcje **Zasoby ludzkie \> Kompetencje \> Analiza kwalifikacji \> Profile mapowania kwalifikacji**.
+2. Wybierz pozycję **Nowy**.
+3. W polu **Mapowanie kwalifikacji** nadaj nazwę mapowaniu umiejętności. Na przykład wpisz **Księgowy**.
+4. W polu **Opis** wprowadź opis mapowania umiejętności.
+5. W polu **Data** wprowadź datę.
+6. Opcja **Odtwórz profil** służy do pobierania informacji o certyfikatach, umiejętnościach i wykształceniu z danych wybranej osoby, zadania lub kursu w celu użycia jako podstawy wyszukiwania. Następnie możesz dodać lub usunąć kryteria, wskazać, czy są one opcjonalne, i uszeregować ich ważność.
+7. Wybierz **Praca**.
+8. W polu **Zadanie** wprowadź lub wybierz wartość.
+9. Kliknij przycisk **OK**.
+10. Rozwiń skróconą kartę **Zakres** i dodaj wszelkie informacje dodatkowe, takie jak dział.
+11. Rozwiń skróconą kartę **Certyfikaty**, aby obejrzeć lub edytować certyfikaty.
+12. Rozwiń skróconą kartę **Umiejętności**, aby obejrzeć lub edytować kompetencje.
+13. Rozwiń skróconą kartę **Wykształcenie**, aby wyświetlić lub edytować kryteria wykształcenia.
+14. Wybierz polecenie **Wykonaj**.
+15. Kliknij przycisk **OK**.
+16. Wybierz opcję **Wynik**.
+17. Wybierz opcję **Wynik**.
+18. Wybierz opcję **CV**.
+19. Wybierz **Certyfikaty**.
+
+    Możesz dokładniej zagłębić się w każdą z wymienionych osób, aby wyświetlić szczegóły dotyczące jej wykształcenia, umiejętności i doświadczenia zawodowego.
+
 20. Zamknij stronę.
 21. Zamknij stronę.
 22. Zaznacz ponownie wynik.
-23. Kliknij przycisk Raport.
-    * W raporcie najlepiej pasujące pozycje znajdą się u góry listy.  Widać element luki.  Jest to różnica między poziomem, który został podany w mapowaniu umiejętności, a poziomem umiejętności przypisanym do osoby.  
+23. Wybierz **Raport**.
+
+    Najlepsze dopasowania zostaną wymienione na górze raportu. Widać element luki. Ten element reprezentuje różnicę między poziomem wymienionym w mapowaniu umiejętności a poziomem umiejętności przypisanej do osoby.
+
 24. Zamknij stronę.
-25. Kliknij przycisk Zapisz.
-
-
+25. Wybierz opcję **Zapisz**.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

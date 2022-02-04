@@ -1,6 +1,6 @@
 ---
-title: Usuwanie błędu aparatu planowania „Nie znaleziono wystarczających zdolności produkcyjnych”
-description: Ten temat zawiera informacje o przyczynach i rozwiązaniach problemu polegającego na tym, że nie można zaplanować zlecenia produkcyjnego %1. Nie znaleziono wystarczających zdolności produkcyjnych”.
+title: Napraw błąd silnika planowania „Nie można znaleźć wystarczającej pojemności” i skończoną pojemność
+description: 'Ten temat zawiera informacje o przyczynach i rozwiązaniach problemu polegającego na tym, że nie można zaplanować zlecenia produkcyjnego %1. Nie znaleziono wystarczających zdolności produkcyjnych”.'
 author: ChristianRytt
 ms.date: 7/29/2021
 ms.topic: article
@@ -9,15 +9,10 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: crytt
-ms.search.validFrom: 2021-07-19
+ms.search.validFrom: '2021-07-19'
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 16626a7ee74e89bd129d8435a17d16b41a5e0387
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565766"
 ---
+
 # <a name="fix-the-not-enough-capacity-could-be-found-scheduling-engine-error"></a>Usuwanie błędu aparatu planowania „Nie znaleziono wystarczających zdolności produkcyjnych”
 
 [!include [banner](../includes/banner.md)]
@@ -105,5 +100,11 @@ Aby przejrzeć dostępne zdolności produkcyjne grupy zasobów, wykonaj następu
 
 1. Przejdź do pozycji **Administracja organizacją \> Zasoby \> Grupy zasobów** i wybierz grupę zasobów dostępną dla zamówienia, które nie może zostać zaplanowane.
 1. W okienku akcji, na karcie **Grupa zasobów**, w grupie **Widok** wybierz **Obciążenie zdolności produkcyjnych** lub **Obciążenie zdolności produkcyjnych, graficznie** i upewnij się, że są dostępne zdolności produkcyjne.
+
+## <a name="master-planning-books-a-resource-when-the-resource-calendar-is-closed"></a>Planowanie główne księguje zasób podczas zamknięcia kalendarza zasobów
+
+Podczas planowania operacji planowanie główne będzie planować zdolności produkcyjne zgodnie z kalendarzem głównej grupy zasobów. Księguje operację pomocniczą w tym samym czasie co operację główną i nie uwzględnia kalendarzy ani zdolności produkcyjnych operacji pomocniczej. Może to spowodować zaplanowanie zlecenia produkcyjnego w zamkniętym kalendarzu lub w czasie, gdy operacja pomocnicza nie jest dostępna (zamknięte w kalendarzu, brak zdolności produkcyjnych).
+
+Podczas planowania zadań podczas planowania zamówienia planowanie główne uwzględnia zdolności produkcyjne i kalendarz operacji głównej i pomocniczej. Aby można było zaplanować zamówienie, kalendarze zasobów obu operacji muszą być otwarte i mieć dostępne zdolności produkcyjne.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

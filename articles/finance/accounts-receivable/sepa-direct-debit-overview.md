@@ -1,29 +1,25 @@
 ---
+# required metadata
 title: Omówienie polecenia zapłaty SEPA
-description: Jednolity Obszar Płatniczy w Euro (SEPA) został ustanowiony przez Komisję Europejską i decyduje o tym, że wszystkie płatności elektroniczne są uważane za krajowe, niezależnie od kraju/regionu, w którym znajdują się osoby, przedsiębiorstwa, organizacje oraz właściwy bank. Nie istnieje różnica między płatnościami krajowymi i międzynarodowymi. System SEPA obejmuje 28 państw członkowskich Unii Europejskiej (UE) oraz dodatkowo Islandię, Liechtenstein, Norwegię, Szwajcarię, Monako i San Marino. SEPA tworzy jeden rynek dla transakcji płatności w ramach europejskiego obszaru gospodarczego (EOG). Ostatecznie SEPA umożliwia zmniejszenie liczby formatów płatności, którymi operują banki, firmy i osoby prywatne.
+description: 'Jednolity Obszar Płatniczy w Euro (SEPA) został ustanowiony przez Komisję Europejską i decyduje o tym, że wszystkie płatności elektroniczne są uważane za krajowe, niezależnie od kraju/regionu, w którym znajdują się osoby, przedsiębiorstwa, organizacje oraz właściwy bank. Nie istnieje różnica między płatnościami krajowymi i międzynarodowymi. System SEPA obejmuje 28 państw członkowskich Unii Europejskiej (UE) oraz dodatkowo Islandię, Liechtenstein, Norwegię, Szwajcarię, Monako i San Marino. SEPA tworzy jeden rynek dla transakcji płatności w ramach europejskiego obszaru gospodarczego (EOG). Ostatecznie SEPA umożliwia zmniejszenie liczby formatów płatności, którymi operują banki, firmy i osoby prywatne.'
 author: ShivamPandey-msft
 ms.date: 08/22/2017
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: BankAccountTable, CustBankAccounts, CustParameters, CustTable
+ms.topic: overview
+ms.prod: null
+ms.technology: null
+ms.search.form: 'BankAccountTable, CustBankAccounts, CustParameters, CustTable'
 audience: Application User
 ms.reviewer: roschlom
 ms.custom:
-- "11144"
-- intro-internal
+  - '11144'
+  - intro-internal
 ms.assetid: 3277c9b6-e46e-40c9-aa76-9b0449467842
 ms.search.region: Global
 ms.author: shpandey
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: '2016-02-28'
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 888c65cde11ed144ddeee68d6476a3acad0cb592768c470356ebc2098b596838
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763245"
 ---
+
 # <a name="sepa-direct-debit-overview"></a>Omówienie polecenia zapłaty SEPA
 
 [!include [banner](../includes/banner.md)]

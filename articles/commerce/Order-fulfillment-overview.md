@@ -1,27 +1,22 @@
 ---
+# required metadata
 title: Realizacja zamówienia w sklepie
 description: Ten temat zawiera omówienie modułu realizacji zamówienia w sklepie.
 author: BrianShook
 ms.date: 10/30/2017
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: RetailStoreTable, RetailTillLayout
+ms.topic: overview
+ms.prod: null
+ms.technology: null
+ms.search.form: 'RetailStoreTable, RetailTillLayout'
 audience: Application User
 ms.reviewer: josaw
-ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: brshoo
-ms.search.validFrom: 2017-10-30
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: d22d01ab82148ba389cb7c14722bd07df91f762d
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779653"
+ms.search.validFrom: '2017-10-30'
+ms.dyn365.ops.version: null
 ---
+
 # <a name="store-order-fulfillment"></a>Realizacja zamówienia w sklepie
 
 [!include [banner](includes/banner.md)]

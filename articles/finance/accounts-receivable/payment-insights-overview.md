@@ -1,29 +1,25 @@
 ---
+# required metadata
 title: Wgląd w płatności od odbiorców (wersja zapoznawcza)
-description: W tym temacie opisano funkcjonalność wglądu w płatności, która pomaga zrozumieć typowe praktyki płatnicze konkretnych odbiorców. Funkcja może również pomóc w identyfikowaniu okoliczności, które uzasadniają rozpoczęcie procesów windykacji wcześniej, niż normalnie rozważałaby organizacja.
+description: 'W tym temacie opisano funkcjonalność wglądu w płatności, która pomaga zrozumieć typowe praktyki płatnicze konkretnych odbiorców. Funkcja może również pomóc w identyfikowaniu okoliczności, które uzasadniają rozpoczęcie procesów windykacji wcześniej, niż normalnie rozważałaby organizacja.'
 author: ShivamPandey-msft
 ms.date: 11/06/2019
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
+ms.topic: overview
+ms.prod: null
+ms.technology: null
+ms.search.form: null
 audience: Application User
 ms.reviewer: roschlom
 ms.custom:
-- "14151"
-- intro-internal
+  - '14151'
+  - intro-internal
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
-ms.search.validFrom: 2019-11-06
+ms.search.validFrom: '2019-11-06'
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: ecd368237f949b6cbfbbb7293f6ddc5b1199d6fc0aef7e0bf44f4a2a808a6ccb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737780"
 ---
+
 # <a name="customer-payment-insights-preview"></a>Wgląd w płatności od odbiorców (wersja zapoznawcza)
 
 [!include [banner](../includes/banner.md)]
@@ -61,7 +57,7 @@ Dzięki usłudze wgląd do płatności odbiorcy (wersja zapoznawcza) organizacje
 
 ## <a name="methodology"></a>Metodologia
 
-Opracowywanie i wdrażanie rozwiązania AI jest trudne. Potrzeba zespołu specjalistów ds. nauki o danych, ekspertów merytorycznych (SME) i inżynierów, którzy wkładają mnóstwo pracy w sformułowanie, opracowanie, wdrażanie i bieżące utrzymywanie użytecznego rozwiązania AI. Ułatwia to wdrażanie i korzystanie z rozwiązań AI w Finance. Firma Microsoft udostępnia wstępnie używane rozwiązania AI w Finance, które są tworzone na podstawie modułu Microsoft AI Builder. Użytkownik końcowy z jednym kliknięciem przycisku może wdrożyć rozwiązanie AI i zacząć korzystanie z zalet inteligentnych prognoz. Jeśli organizacja nie jest zadowolony z dokładnością prognoz, użytkownik zaawansowany za pomocą jednego kliknięcia może wejść w środowisko rozszerzenia AI Builder, a następnie zaznaczyć lub usunąć zaznaczenie pól używanych do generowania prognoz. Jak są gotowe mogą one pociągać i publikować zmiany, a nowy model przeszkolony jest automatycznie pobierany na potrzeby prognoz w Finance.
+Opracowywanie i wdrażanie rozwiązania AI jest trudne. Potrzeba zespołu specjalistów ds. nauki o danych, ekspertów merytorycznych (SME) i inżynierów, którzy wkładają mnóstwo pracy w sformułowanie, opracowanie, wdrażanie i bieżące utrzymywanie użytecznego rozwiązania AI. Ułatwia to wdrażanie i korzystanie z rozwiązań AI w Finance. Firma Microsoft udostępnia wstępnie używane rozwiązania AI w Finansach, które są tworzone na podstawie modułu Microsoft AI Builder. Użytkownik końcowy z jednym kliknięciem przycisku może wdrożyć rozwiązanie AI i zacząć korzystanie z zalet inteligentnych prognoz. Jeśli organizacja nie jest zadowolony z dokładnością prognoz, użytkownik zaawansowany za pomocą jednego kliknięcia może wejść w środowisko rozszerzenia AI Builder, a następnie zaznaczyć lub usunąć zaznaczenie pól używanych do generowania prognoz. Jak są gotowe mogą one pociągać i publikować zmiany, a nowy model przeszkolony jest automatycznie pobierany na potrzeby prognoz w Finance.
 
 ## <a name="how-to-get-customer-payment-insights-preview"></a>Jak otrzymać aplikację Wgląd w płatności od odbiorców (wersja zapoznawcza)
 
@@ -69,7 +65,7 @@ Jeśli interesuje Cię wypróbowanie narzędzia [Wgląd w płatności od odbiorc
 
 ## <a name="privacy-notice"></a>Klauzula prywatności
 
-Wersje zapoznawcze (1) mogą wykorzystywać mniej rygorystyczne funkcje ochrony prywatności i bezpieczeństwa niż usługa Dynamics 365 Finance and Operations, (2) nie są objęte umową dotyczącą poziomu usług dla tej usługi, (3) nie powinny być używane do przetwarzania danych osobowych ani innych danych podlegających wymogom zapewnienia zgodności z przepisami lub regulacjami, oraz (4) mają ograniczone wsparcie techniczne.
+Ponadto wersje zapoznawcze (1) mogą wykorzystywać mniej rygorystyczne funkcje ochrony prywatności i bezpieczeństwa niż usługa Dynamics 365 Finance i Operacje 2) nie są objęte umową dotyczącą poziomu usług dla tej usługi, (3) nie powinny być używane do przetwarzania danych osobowych ani innych danych podlegających wymogom zapewnienia zgodności z przepisami lub regulacjami, oraz (4) mają ograniczone wsparcie techniczne.
 
 
 

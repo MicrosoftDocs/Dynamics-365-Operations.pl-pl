@@ -1,25 +1,20 @@
 ---
+# required metadata
 title: Praca z plikami zastępowania CSS
-description: W tym temacie opisano, dlaczego, kiedy i jak używać plików zastępowania kaskadowych arkuszy stylów (CSS) w aplikacji Microsoft Dynamics 365 Commerce.
+description: 'W tym temacie opisano, dlaczego, kiedy i jak używać plików zastępowania kaskadowych arkuszy stylów (CSS) w aplikacji Microsoft Dynamics 365 Commerce.'
 author: phinneyridge
 ms.date: 05/28/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
+ms.prod: null
+ms.technology: null
+ms.search.form: null
 audience: Application User
 ms.reviewer: v-chgri
 ms.search.region: Global
-ms.search.industry: ''
+ms.search.industry: null
 ms.author: niholman
-ms.search.validFrom: 2019-12-12
+ms.search.validFrom: '2019-12-12'
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: f460ab6ae90b5daa9bee3c2954727a7bcf79321d661f8ce88f5108fd019fbb3e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724587"
 ---
 # <a name="work-with-css-override-files"></a>Praca z plikami zastępowania CSS
 
@@ -100,8 +95,6 @@ Aby dezaktywować plik zastępowania CSS w witrynie, wykonaj następujące kroki
 [Praca z predefiniowanymi ustawieniami stylów](style-presets.md)
 
 [Dodawanie ikony favicon](add-favicon.md)
-
-[Dodawanie wiadomości powitalnej](add-welcome-message.md)
 
 [Dodawanie powiadomienia o prawach autorskich](add-copyright-notice.md)
 

@@ -1,29 +1,25 @@
 ---
+# required metadata
 title: Omówienie sekwencji identyfikatorów
-description: Sekwencje numerów są używane do generowania czytelnych, unikatowych identyfikatorów dla rekordów danych głównych i rekordów transakcji, które muszą mieć identyfikatory.
+description: 'Sekwencje numerów są używane do generowania czytelnych, unikatowych identyfikatorów dla rekordów danych głównych i rekordów transakcji, które muszą mieć identyfikatory.'
 author: SunilGarg
 ms.date: 07/25/2019
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: NumberSequenceTableListPage, NumberSequenceConfiguration
-audience: Application User, IT Pro
+ms.topic: overview
+ms.prod: null
+ms.technology: null
+ms.search.form: 'NumberSequenceTableListPage, NumberSequenceConfiguration'
+audience: 'Application User, IT Pro'
 ms.reviewer: sericks
 ms.custom:
-- "15461"
-- intro-internal
+  - '15461'
+  - intro-internal
 ms.assetid: 6e19bd1d-192b-4da2-8573-84f6e1ce98ef
 ms.search.region: Global
 ms.author: sunilg
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: '2016-02-28'
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1d65eb3824cfa158e6b382ee7bae2c86aab9396b
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778336"
 ---
+
 # <a name="number-sequences-overview"></a>Omówienie sekwencji identyfikatorów
 
 [!include [banner](../includes/banner.md)]

@@ -1,29 +1,23 @@
 ---
+# required metadata
 title: Rozpoczynanie pracy z fakturowaniem elektronicznym — administrowanie usługami
 description: W tym temacie opisano sposób rozpoczęcia pracy z funkcją Faktur elektronicznych.
 author: gionoder
 ms.date: 08/17/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
+ms.prod: null
+ms.technology: null
+ms.search.form: null
 audience: Application User
 ms.reviewer: kfend
-ms.custom:
-- "97423"
-- intro-internal
-ms.assetid: ''
+ms.custom: intro-internal
+ms.assetid: null
 ms.search.region: Global
 ms.author: janeaug
-ms.search.validFrom: 2020-07-08
+ms.search.validFrom: '2020-07-08'
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: f77c8fd1696b74f852d04cc0a696d4816ef9af1f
-ms.sourcegitcommit: baf82100f0aa7d5f5f47c7f54bc155d8a07beab5
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7463816"
 ---
+
 # <a name="get-started-with-electronic-invoicing-service-administration"></a>Rozpoczynanie pracy z fakturowaniem elektronicznym — administrowanie usługami
 
 [!include [banner](../includes/banner.md)]

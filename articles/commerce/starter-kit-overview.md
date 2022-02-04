@@ -1,27 +1,22 @@
 ---
+# required metadata
 title: Przegląd biblioteki modułów
 description: W tym temacie omówiono bibliotekę modułów Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 09/15/2020
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
+ms.topic: overview
+ms.prod: null
+ms.technology: null
 audience: Application User
 ms.reviewer: v-chgri
-ms.custom: intro-internal
-ms.assetid: ''
+ms.assetid: null
 ms.search.region: Global
-ms.search.industry: ''
+ms.search.industry: null
 ms.author: anupamar
-ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: f1301f61e6bc0d408d4883b238808f66b14abc2d372e97671c71ba7dd5174124
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721983"
+ms.search.validFrom: '2019-10-31'
+ms.dyn365.ops.version: null
 ---
+
 # <a name="module-library-overview"></a>Przegląd biblioteki modułów
 
 [!include [banner](includes/banner.md)]

@@ -1,25 +1,19 @@
 ---
+# required metadata
 title: Omówienie zarządzania magazynem
 description: Zarządzanie magazynem umożliwia monitorowanie i automatyzację procesów magazynowych.
 author: Mirzaab
 ms.date: 04/20/2020
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: WHSParameters, WHSWorkPool
+ms.topic: overview
+ms.prod: null
+ms.technology: null
+ms.search.form: 'WHSParameters, WHSWorkPool'
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: intro-internal
 ms.search.region: Global
 ms.author: mirzaab
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: '2016-02-28'
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5929b8a7de5f65239c0c6213ee238f9821577275
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579959"
 ---
 # <a name="warehouse-management-overview"></a>Omówienie zarządzania magazynem
 

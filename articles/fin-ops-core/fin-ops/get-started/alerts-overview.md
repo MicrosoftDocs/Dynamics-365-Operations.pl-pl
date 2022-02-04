@@ -1,26 +1,21 @@
 ---
+# required metadata
 title: Omówienie alertów (zawiera wideo)
-description: Ten temat zawiera ogólne informacje o alertach. Alerty pozwalają na bieżąco uzyskiwać informacje o zdarzeniach, które chcesz śledzić podczas dnia pracy.
+description: 'Ten temat zawiera ogólne informacje o alertach. Alerty pozwalają na bieżąco uzyskiwać informacje o zdarzeniach, które chcesz śledzić podczas dnia pracy.'
 author: RichdiMSFT
 ms.date: 09/04/2019
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
+ms.topic: overview
+ms.prod: null
+ms.technology: null
 ms.search.form: EventCreateRule
 audience: Application user
 ms.reviewer: sericks
-ms.custom: intro-internal
 ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 857a837872abff44c8c7af5e938f7610fa61d94e
-ms.sourcegitcommit: ef0dd4245fc499907ffe00e2a32f59a6cd96e45d
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "7937478"
 ---
+
 # <a name="alerts-overview"></a>Omówienie alertów
 
 [!include [banner](../includes/banner.md)]
@@ -78,7 +73,7 @@ Reguła alertu ma pięć składników:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3DWZ3]
 
-Film wideo [Sposób używania alertów do monitorowania filtrowanych danych](https://youtu.be/ZYKMcv6kl9s) (pokazany powyżej) znajduje się na [Liście odtwarzania Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) dostępnej na platformie YouTube.
+Film wideo [Sposób używania alertów do monitorowania filtrowanych danych](https://youtu.be/ZYKMcv6kl9s) (pokazany powyżej) znajduje się [na liście odtwarzania Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) dostępnej na platformie YouTube.
 
 ### <a name="alert-rule-options"></a>Opcje reguł alertów
 

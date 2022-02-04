@@ -1,27 +1,23 @@
 ---
+# required metadata
 title: Włączanie ręcznego publikowania ocen i recenzji przez moderatora
 description: W tym temacie opisano sposób włączania ręcznego publikowania ocen i recenzji przez moderatora w aplikacji Microsoft Dynamics 365 Commerce oraz ręcznego publikowania ocen i recenzji.
 author: gvrmohanreddy
 manager: annbe
 ms.date: 09/03/2021
 ms.topic: article
-ms.prod: ''
+ms.prod: null
 ms.service: dynamics-365-commerce
-ms.technology: ''
+ms.technology: null
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
+ms.search.scope: 'Retail, Core, Operations'
 ms.search.region: Global
 ms.author: gmohanv
-ms.search.validFrom: 2021-09-03
+ms.search.validFrom: '2021-09-03'
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 25ae7074fcf39bf4408ea1fa0acfc334281bb254
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675056"
 ---
+
 # <a name="enable-manual-publishing-of-ratings-and-reviews-by-a-moderator"></a>Włączanie ręcznego publikowania ocen i recenzji przez moderatora
 
 [!include [banner](includes/banner.md)]
@@ -68,3 +64,17 @@ Na poniższej ilustracji pokazano przykład, w którym trzy nieopublikowane ocen
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Omówienie ocen i recenzji](ratings-reviews-overview.md)
+
+[Zgoda na korzystanie z ocen i recenzji](opt-in-ratings-reviews.md)
+
+[Zarządzanie ocenami i recenzjami](manage-reviews.md)
+
+[Konfigurowanie ocen i recenzji](configure-ratings-reviews.md)
+
+[Synchronizacja ocen produktów](sync-product-ratings.md)
+
+[Importowanie i eksportowanie klasyfikacji oraz przeglądów](import-export-reviews.md)
+
+[Konfigurowanie uwierzytelniania usługa-usługa](service-to-service-auth.md)
+
+[Oceny i recenzje — często zadawane pytania](ratings-reviews-faq.md)

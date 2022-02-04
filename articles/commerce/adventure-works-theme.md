@@ -1,26 +1,22 @@
 ---
+# required metadata
 title: Omówienie motywu Adventure Works
-description: Ten temat zawiera omówienie motywu Adventure Works i opisuje, jak zastosować go do stron witryny w Microsoft Dynamics 365 Commerce.
+description: 'Ten temat zawiera omówienie motywu Adventure Works i opisuje, jak zastosować go do stron witryny w Microsoft Dynamics 365 Commerce.'
 author: anupamar-ms
 ms.date: 12/03/2021
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
+ms.topic: overview
+ms.prod: null
+ms.technology: null
+ms.search.form: null
 audience: Application User
 ms.reviewer: v-chgri
 ms.search.region: Global
-ms.search.industry: ''
+ms.search.industry: null
 ms.author: anupamar
-ms.search.validFrom: 2019-10-31
+ms.search.validFrom: '2019-10-31'
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9065860555cd07f6bacbdf7c8bd7892a3f2e1b89
-ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7891554"
 ---
+
 # <a name="adventure-works-theme-overview"></a>Omówienie motywu Adventure Works
 
 [!include [banner](includes/banner.md)]

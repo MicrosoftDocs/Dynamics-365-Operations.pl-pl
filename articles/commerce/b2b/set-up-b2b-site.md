@@ -1,30 +1,25 @@
 ---
+# required metadata
 title: Konfigurowanie witryny handlu elektornicznego B2B
 description: W tym temacie opisano sposób skonfigurowania witryny handlu elektronicznego (B2B) w Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 12/03/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
+ms.prod: null
+ms.technology: null
 ms.search.form: RetailOperations
-audience: Application User, IT Pro
+audience: 'Application User, IT Pro'
 ms.reviewer: v-chgri
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: josaw
-ms.search.validFrom: 2021-01-31
+ms.search.validFrom: '2021-01-31'
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 171e518258e9600bd7526cf52e3e456d272e6bce
-ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7891392"
 ---
+
 # <a name="set-up-a-b2b-e-commerce-site"></a>Konfigurowanie witryny wykorzystywanej na potrzeby handlu elektronicznego B2B
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Witryny handlu elektronicznego typu business-to-business (B2B) zapewniają kilka kluczowych funkcji, które optymalizują przepływ pracy dla użytkownika B2B. W tym temacie opisano sposób skonfigurowania witryny handlu elektronicznego B2B w Microsoft Dynamics 365 Commerce. Przechodzi przez moduły i ustawienia witryny, które należy skonfigurować, aby umożliwić scenariusze specyficzne dla B2B.
 

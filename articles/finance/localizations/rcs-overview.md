@@ -1,28 +1,23 @@
 ---
+# required metadata
 title: Regulatory Configuration Service
-description: W tym temacie przedstawiono omówienie możliwości Regulatory Configuration Service (RCS) i wyjaśniono, jak uzyskać dostęp do usługi.
+description: 'W tym temacie przedstawiono omówienie możliwości Regulatory Configuration Service (RCS) i wyjaśniono, jak uzyskać dostęp do usługi.'
 author: JaneA07
 ms.date: 06/04/2021
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: RCS, Regulatory Configuration Services, Localization
+ms.topic: overview
+ms.prod: null
+ms.technology: null
+ms.search.form: 'RCS, Regulatory Configuration Services, Localization'
 audience: Application User
 ms.reviewer: kfend
 ms.custom:
-- "97423"
-- intro-internal
-ms.assetid: ''
+  - '97423'
+  - intro-internal
+ms.assetid: null
 ms.search.region: Global
 ms.author: janeaug
-ms.search.validFrom: 2020-02-01
+ms.search.validFrom: '2020-02-01'
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 312fe318009a05de63fdba6aa8e6431836993957
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345180"
 ---
 # <a name="regulatory-configuration-service"></a>Regulatory Configuration Service
 

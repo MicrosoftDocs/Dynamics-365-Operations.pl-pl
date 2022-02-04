@@ -1,29 +1,23 @@
 ---
+# required metadata
 title: Omówienie raportowania finansowego
-description: W tym temacie opisano, jak uzyskać dostęp do modułu sprawozdawczości finansowej w Microsoft Dynamics 365 Finance i jak korzystać z funkcji raportowania finansowego.
+description: 'W tym temacie opisano, jak uzyskać dostęp do modułu sprawozdawczości finansowej w Microsoft Dynamics 365 Finance i jak korzystać z funkcji raportowania finansowego.'
 author: aprilolson
 ms.date: 07/27/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
+ms.prod: null
+ms.technology: null
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "10444"
-- intro-internal
+ms.custom: intro-internal
 ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: '2016-02-28'
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 464092ae2fdcdfd8a0ada254e88f4418c825c1f9
-ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "7486977"
 ---
+
 # <a name="get-started-with-financial-reporting"></a>Rozpoczynanie pracy z raportowaniem finansowym 
 
 [!include [banner](../includes/banner.md)]
@@ -148,7 +142,7 @@ Można utworzyć dowolną liczbę drzew raportowania, aby wyświetlić dane firm
 
 ## <a name="update-the-financial-reporting-version-through-slipstreaming"></a>Aktualizacja wersji Financial Reporting za pośrednictwem dokumentów dostawy
 
-Aplikacje Finance and Operations są aktualizowane co miesiąc. Jednak Financial Reporting niekoniecznie jest aktualizowana w tym tempie. Ponadto klienci mają więcej opcji dotyczących implementowania aktualizacji aplikacji Finance and Operations. Aktualizacje Financial Reporting są instalowane automatycznie. Financial Reporting ma wyznaczoną wersję, która jest zużywana w środowisku klienta podczas implementowania aktualizacji usługi, rozpoczynania przestoju lub działania środowiska klienta w trybie konserwacji. Ten proces jest nazywany *slipstreaming* lub *true-up*, ponieważ wszystkie implementacje klientów mają tę samą wersję Financial Reporting.
+Aplikacje Finanse i Operacje są aktualizowane co miesiąc. Jednak Financial Reporting niekoniecznie jest aktualizowana w tym tempie. Ponadto klienci mają więcej opcji dotyczących implementowania aktualizacji aplikacji Finanse i Operacje. Aktualizacje Financial Reporting są instalowane automatycznie. Financial Reporting ma wyznaczoną wersję, która jest zużywana w środowisku klienta podczas implementowania aktualizacji usługi, rozpoczynania przestoju lub działania środowiska klienta w trybie konserwacji. Ten proces jest nazywany *slipstreaming* lub *true-up*, ponieważ wszystkie implementacje klientów mają tę samą wersję Financial Reporting.
 
 Zmiany, które są wydane w każdej wersji, można znaleźć w poszczególnych [Nowości i zmiany w aplikacjach Dynamics 365 Finance](../../finance/get-started/whats-new-home-page.md). Aktualizacje platformy i poprawki błędów można znaleźć w sekcji „Zasoby dodatkowe” na dole strony dla każdego wydania.
 

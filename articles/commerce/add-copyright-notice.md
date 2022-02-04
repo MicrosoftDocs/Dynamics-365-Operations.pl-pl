@@ -1,26 +1,22 @@
 ---
+# required metadata
 title: Dodawanie powiadomienia o prawach autorskich
-description: W tym temacie opisano, jak dodać informację o prawach autorskich do swojej witryny e-Commerce.
+description: 'W tym temacie opisano, jak dodać informację o prawach autorskich do swojej witryny e-Commerce.'
 author: psimolin
 ms.date: 10/16/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
+ms.prod: null
+ms.technology: null
 audience: Application user
 ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.custom: null
+ms.assetid: null
 ms.search.region: Global
 ms.author: psimolin
-ms.search.validFrom: 2019-10-31
+ms.search.validFrom: '2019-10-31'
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 89f1716cd71d191f419dfd1fb1db887af62335504724b4f08ead701d7f57efc6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715463"
 ---
+
 # <a name="add-a-copyright-notice"></a>Dodawanie powiadomienia o prawach autorskich
 
 [!include [banner](includes/banner.md)]
@@ -65,8 +61,6 @@ Stopka zawierająca informację o prawach autorskich jest automatycznie wyświet
 [Praca z plikami zastępowania CSS](css-override-files.md)
 
 [Dodawanie ikony favicon](add-favicon.md)
-
-[Dodawanie wiadomości powitalnej](add-welcome-message.md)
 
 [Dodawanie języków do witryny](add-languages-to-site.md)
 

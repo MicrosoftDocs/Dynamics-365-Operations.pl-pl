@@ -1,27 +1,23 @@
 ---
+# required metadata
 title: Tworzenie konfiguracji raportowania elektronicznego w RCS i przekazywanie ich do repozytorium globalnego
 description: W tym temacie objaśniono sposób tworzenia konfiguracji Raportowania elektronicznego (ER) w usługach Microsoft Regulatory Configuration Services (RCS) i przekazywania jej do repozytorium globalnego.
 author: JaneA07
-ms.date: 09/21/2020
+ms.date: 01/11/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ERSolutionTable, ERWorkspace, RCS
+ms.prod: null
+ms.technology: null
+ms.search.form: 'ERSolutionTable, ERWorkspace, RCS'
 audience: Application User
 ms.reviewer: kfend
 ms.custom: 97423
-ms.assetid: ''
+ms.assetid: null
 ms.search.region: Global
 ms.author: janeaug
-ms.search.validFrom: 2020-02-01
+ms.search.validFrom: '2020-02-01'
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: b8be53c415d3b0c0fd057bb0d9c51b391d1c0c7471610c861909344059803441
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727228"
 ---
+
 # <a name="create-er-configurations-in-regulatory-configuration-services-rcs-and-upload-them-to-the-global-repository"></a>Tworzenie konfiguracji raportowania elektronicznego w usługach Regulatory Configuration Services (RCS) i przekazywanie ich do repozytorium globalnego
 
 [!include [banner](../includes/banner.md)]
@@ -32,24 +28,29 @@ W poniższych procedurach opisano, jak użytkownik w roli administratora systemu
 
 Przed wykonaniem tych procedur należy najpierw spełnić następujące warunki wstępne:
 
-- Uzyskanie dostępu do wystąpienia usług RCS.
-- Utworzenie aktywnego dostawcy konfiguracji. Dalsze informacje znajdują się w temacie [Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+- Masz dostęp do środowiska z RCS dla swojej organizacji.
+- Utwórz aktywnego dostawcę konfiguracji i uaktywnij go. Dalsze informacje znajdują się w temacie [Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-Należy również upewnić się, że dla firmy aprowizowano środowisko RCS.
+Musisz upewnić się, że środowisko RCS jest aprowizowane dla Twojej organizacji. Jeśli dla organizacji nie jest autoryzowane wystąpienie usługi RCS, można wykonać następujące czynności:
 
-1. W aplikacji Finance and Operations przejdź do obszaru **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
-2. Jeśli w firmie nie aprowizowano środowiska RCS, wybierz pozycję zewnętrzną **Regulatory services — Konfiguracja** i postępować zgodnie z instrukcjami w celu aprowizowania środowiska RCS.
+1. W module Finanse i Operacje przejdź do opcji **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
+2. W **powiązanych łączach/łączach zewnętrznych** wybierz opcję **Regulatory services — Konfiguracja**, a następnie postępuj zgodnie z instrukcjami, aby **zarejestrować się**, aby je skonfigurować.
 
-Jeśli już aprowizowano środowisko RCS, należy skorzystać z adresu URL strony, aby uzyskać do niego dostęp, wybierając opcję logowania.
+Jeśli już aprowizowano środowisko RCS, należy skorzystać z adresu URL strony, aby uzyskać do niego dostęp, wybierając opcję **logowania**.
 
 ## <a name="create-a-derived-version-of-a-configuration-in-rcs"></a>Tworzenie wersji pochodnej konfiguracji w usługach RCS
 
-1. W obszarze roboczym **Raportowanie elektroniczne** sprawdź, czy masz aktywnego dostawcę konfiguracji dla organizacji. 
-2. Wybierz **Raportowanie konfiguracji**.
-3. Wybierz konfigurację, z której chcesz uzyskać nową wersję. Możesz użyć pola filtru nad drzewem, aby zawęzić wyszukiwanie.
-4. Wybierz pozycję **Utwórz konfigurację** \> **Pochodzi od nazwy**.
-5. Wprowadź nazwę i opis, a następnie wybierz opcję **Utwórz konfigurację**, aby utworzyć nową wersję pochodną.
-6. Wybierz nową konfigurację pochodną, dodaj opis wersji, a następnie wybierz przycisk **OK**. Stan konfiguracji zostanie zmieniony na **Zakończono**.
+> [!NOTE]
+> Jeśli jest to pierwszy raz, w których były używane pliki RCS, nie będzie dostępna konfiguracja, z której będzie można korzystać. Konieczne będzie zaimportowanie konfiguracji z repozytorium globalnym. Więcej informacji można znaleźć w temacie [Pobieranie konfiguracji ER z globalnego repozytorium usługi Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+
+1. **Zaloguj się** do RCS wybierz kafelek roboczy **Raportowanie elektroniczne**.
+2. Sprawdź, czy masz aktywnego dostawcę konfiguracji dla swojej organizacji, który jest ustawiony jako aktywny (zobacz wymagania wstępne). 
+3. Wybierz **Raportowanie konfiguracji**.
+4. Wybierz konfigurację, z której chcesz uzyskać nową wersję. Możesz użyć pola filtru nad drzewem, aby zawęzić wyszukiwanie.
+5. Wybierz pozycję **Utwórz konfigurację** \> **Pochodzi od nazwy**.
+6. Wprowadź nazwę i opis, a następnie wybierz opcję **Utwórz konfigurację**, aby utworzyć nową wersję pochodną ze stanem „Szkic”.
+7. W razie potrzeby wybierz nową konfigurację pochodną i w razie potrzeby dokonaj dodatkowych zmian w formacie konfiguracji. 
+8. Po zakończeniu zmian należy ustawić dla konfiguracji **Zmień stan** na **Zakończono**, aby było możliwe opublikowanie go w repozytorium. Kliknij przycisk **OK**.
 
 ![Nowa wersja konfiguracji w usługach RCS.](media/RCS_CompleteConfig.JPG)
 
@@ -58,7 +59,7 @@ Jeśli już aprowizowano środowisko RCS, należy skorzystać z adresu URL stron
 
 ## <a name="upload-a-configuration-to-the-global-repository"></a>Przekazywanie konfiguracji do repozytorium globalnego
 
-Aby udostępnić organizacji nową lub pochodną konfigurację, można ją przekazać do repozytorium globalnego.
+Aby udostępnić nową lub pochodną konfigurację swojej organizacji, możesz przesłać ją do globalnego repozytorium, wykonując następujące kroki:
 
 1. Wybierz zakończoną wersję konfiguracji, a następnie wybierz pozycję **Przekaż do repozytorium**.
 2. Wybierz opcję **Globalne (Microsoft)**, a następnie wybierz pozycję **Przekaż**.
@@ -66,9 +67,11 @@ Aby udostępnić organizacji nową lub pochodną konfigurację, można ją przek
     ![Opcje przekazywania do repozytorium.](media/RCS_Upload_to_GlobalRepo_options.JPG)
 
 3. W wyświetlonym oknie wiadomości z potwierdzeniem wybierz przycisk **Tak**. 
-4. W razie potrzeby zaktualizuj opis wersji, a następnie wybierz przycisk **OK**. 
+4. W razie potrzeby zaktualizuj opis wersji, a następnie wybierz przycisk **OK**. Opcjonalnie można przekazać wersję do połączonej aplikacji lub do repozytorium GIM.  
 
-Stan konfiguracji jest aktualizowany do wartości **Udostępnij**, a konfiguracja jest przekazywana do repozytorium globalnego. W tym miejscu można pracować w następujący sposób:
+Stan konfiguracji jest aktualizowany do wartości **Udostępnione**, a konfiguracja jest przekazywana do repozytorium globalnego. Zostanie również utworzona wersja robocza przekazanej konfiguracji i może zostać użyta, jeśli będą wymagane kolejne zmiany.
+
+Po przekazać konfigurację do repozytorium globalnego można pracować z nim w następujący sposób:
 
 - Zaimportuj ją do wystąpienia rozwiązania Dynamics 365. Aby uzyskać więcej informacji, zobacz temat [(ER) Importowanie konfiguracji z usług RCS](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md).
 - Udostępnij ją firmie lub organizacji zewnętrznej, zobacz temat [RCS — udostępnianie konfiguracji Raportowania elektronicznego (ER) organizacjom zewnętrznymi](rcs-global-repo-share-configuration.md)

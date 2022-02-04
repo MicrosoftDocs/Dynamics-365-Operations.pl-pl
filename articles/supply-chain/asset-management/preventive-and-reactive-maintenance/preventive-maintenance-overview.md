@@ -1,27 +1,22 @@
 ---
+# required metadata
 title: Omówienie konserwacji zapobiegawczej
 description: W tym temacie wyjaśniono konserwację zapobiegawczą w module Zarządzanie składnikami majątku.
 author: johanhoffmann
 ms.date: 08/27/2019
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
+ms.topic: overview
+ms.prod: null
+ms.technology: null
+ms.search.form: null
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: intro-internal
-ms.assetid: ''
+ms.assetid: null
 ms.search.region: Global
 ms.author: johanho
-ms.search.validFrom: 2019-08-31
+ms.search.validFrom: '2019-08-31'
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3803bcbb8ea4213cd01dfcb96277bfec6f048355a37f8ea6bee2b9fb10a21324
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753403"
 ---
+
 # <a name="preventive-maintenance-overview"></a>Omówienie konserwacji zapobiegawczej
 
 [!include [banner](../../includes/banner.md)]

@@ -1,29 +1,25 @@
 ---
+# required metadata
 title: Płatności dodatnie — omówienie
-description: Ten artykuł zawiera informacje o aparacie płatności dodatnich. Umożliwia on generowania elektronicznej listy czeków, które można okazywać bankowi.
+description: 'Ten artykuł zawiera informacje o aparacie płatności dodatnich. Umożliwia on generowania elektronicznej listy czeków, które można okazywać bankowi.'
 author: panolte
 ms.date: 08/22/2017
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
+ms.topic: overview
+ms.prod: null
+ms.technology: null
 ms.search.form: BankPositivePaySummary
 audience: Application User
 ms.reviewer: roschlom
 ms.custom:
-- "88463"
-- intro-internal
+  - '88463'
+  - intro-internal
 ms.assetid: 1e3a39d3-f9b3-4073-9730-c96a607243e2
 ms.search.region: Global
 ms.author: shpandey
-ms.search.validFrom: 2016-05-31
+ms.search.validFrom: '2016-05-31'
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 5a428a945be8fd6b570cc4ad61e1f1d285b2a0205e72aab2418c300bdb967da3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737338"
 ---
+
 # <a name="positive-pay-overview"></a>Płatności dodatnie — omówienie
 
 [!include [banner](../includes/banner.md)]

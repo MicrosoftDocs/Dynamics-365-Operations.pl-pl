@@ -1,29 +1,23 @@
 ---
+# required metadata
 title: Rozpoczynanie pracy z fakturowaniem elektronicznym dla Egiptu
-description: Ten temat zawiera informacje, które pomogą w rozpoczęciu pracy z funkcją Faktury elektroniczne dla Egiptu w Finance i Supply Chain Management.
+description: 'Ten temat zawiera informacje, które pomogą w rozpoczęciu pracy z funkcją Faktury elektroniczne dla Egiptu w Finance i Supply Chain Management.'
 author: gionoder
 ms.date: 04/20/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
+ms.prod: null
+ms.technology: null
+ms.search.form: null
 audience: Application User
 ms.reviewer: kfend
-ms.custom:
-- "97423"
-- intro-internal
-ms.assetid: ''
+ms.custom: intro-internal
+ms.assetid: null
 ms.search.region: Global
 ms.author: janeaug
-ms.search.validFrom: 2020-07-08
+ms.search.validFrom: '2020-07-08'
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 03ccc18d4c767dbb2a314e2eb1076b1c6e9019e991c6de3fc80be65d765fdd36
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758807"
 ---
+
 # <a name="get-started-with-electronic-invoicing-for-egypt"></a>Rozpoczynanie pracy z fakturowaniem elektronicznym dla Egiptu
 
 [!include [banner](../includes/banner.md)]

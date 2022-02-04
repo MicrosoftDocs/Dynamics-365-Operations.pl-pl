@@ -1,27 +1,22 @@
 ---
+# required metadata
 title: Omówienie ocen i recenzji
 description: W tym temacie opisano oceny i recenzje w rozwiązaniu Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 10/01/2019
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
+ms.topic: overview
+ms.prod: null
+ms.technology: null
 audience: Application User
 ms.reviewer: v-chgri
-ms.custom: intro-internal
-ms.assetid: ''
+ms.assetid: null
 ms.search.region: Global
-ms.search.industry: ''
+ms.search.industry: null
 ms.author: gmohanv
-ms.search.validFrom: 2019-10-31
+ms.search.validFrom: '2019-10-31'
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3c5db01b00390179c2dffcbec50343d7b7101d96
-ms.sourcegitcommit: 81bc42551e6c9af6ad38908afb606ee1f8d3c44b
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7473484"
 ---
+
 # <a name="ratings-and-reviews-overview"></a>Omówienie ocen i recenzji
 
 [!include [banner](includes/banner.md)]
@@ -53,6 +48,14 @@ Rozwiązanie oceny i recenzje zawiera również szablon analizy biznesowej (BI),
 [Konfigurowanie ocen i recenzji](configure-ratings-reviews.md)
 
 [Synchronizacja ocen produktów w rozwiązaniu Dynamics 365 Commerce](sync-product-ratings.md)
+
+[Włączanie ręcznego publikowania ocen i recenzji przez moderatora](manual-publish-rating-reviews.md)
+
+[Importowanie i eksportowanie klasyfikacji oraz przeglądów](import-export-reviews.md)
+
+[Konfigurowanie uwierzytelniania usługa-usługa](service-to-service-auth.md)
+
+[Oceny i recenzje — często zadawane pytania](ratings-reviews-faq.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

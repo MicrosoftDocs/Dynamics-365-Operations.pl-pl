@@ -1,26 +1,21 @@
 ---
+# required metadata
 title: Moduł Kosztów z wyładunkiem
-description: Moduł kosztów z wyładunkiem pomaga firmom usprawnić operacje wysyłki przychodzącej, dając użytkownikom pełną kontrolę finansową i logistyczną nad importowanym ładunkiem, od producenta po magazyn.
+description: 'Moduł kosztów z wyładunkiem pomaga firmom usprawnić operacje wysyłki przychodzącej, dając użytkownikom pełną kontrolę finansową i logistyczną nad importowanym ładunkiem, od producenta po magazyn.'
 author: sherry-zheng
 ms.date: 12/07/2020
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
+ms.topic: overview
+ms.prod: null
+ms.technology: null
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-ms.custom: intro-internal
+ms.search.scope: 'Core, Operations'
 ms.search.region: Global
 ms.author: chuzheng
-ms.search.validFrom: 2020-12-07
+ms.search.validFrom: '2020-12-07'
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 384649ada36496e8f0bf5709e7f2ab53730aca1a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565862"
 ---
+
 # <a name="landed-cost-module"></a>Moduł Kosztów z wyładunkiem
 
 [!include [banner](../../includes/banner.md)]

@@ -1,28 +1,24 @@
 ---
+# required metadata
 title: Sprzedaż i marketing — omówienie
-description: Moduł Sprzedaż i marketing umożliwia pozyskiwanie, przechowywanie i wykorzystywanie różnego rodzaju danych w procesie sprzedaży. Te dane obejmują pierwotną akcję handlową, przyszłe działanie uzupełniające oraz dodatkowe transakcje sprzedaży.
+description: 'Moduł Sprzedaż i marketing umożliwia pozyskiwanie, przechowywanie i wykorzystywanie różnego rodzaju danych w procesie sprzedaży. Te dane obejmują pierwotną akcję handlową, przyszłe działanie uzupełniające oraz dodatkowe transakcje sprzedaży.'
 author: kfend
 ms.date: 07/25/2019
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
+ms.topic: overview
+ms.prod: null
+ms.technology: null
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom:
-- "92303"
-- intro-internal
+  - '92303'
+  - intro-internal
 ms.assetid: 65ca9992-bbfa-4224-bf0e-067a25c7e6a4
 ms.search.region: Global
 ms.author: kfend
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: '2016-02-28'
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 822f6c926b93af1ab36fa45bd642e5cdd7c821ae2bfd318625fc734a1fbd4f9c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721254"
 ---
+
 # <a name="sales-and-marketing-overview"></a>Sprzedaż i marketing — omówienie
 
 [!include [banner](../includes/banner.md)]

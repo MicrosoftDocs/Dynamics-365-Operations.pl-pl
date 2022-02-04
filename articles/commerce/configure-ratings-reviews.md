@@ -1,26 +1,22 @@
 ---
+# required metadata
 title: Konfigurowanie ocen i recenzji
 description: W tym temacie opisano sposób konfigurowania witryny e-Commerce w celu wyświetlania ocen odbiorców i recenzji w Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 02/17/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
+ms.prod: null
+ms.technology: null
 audience: Application user
 ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.custom: null
+ms.assetid: null
 ms.search.region: Global
 ms.author: gmohanv
-ms.search.validFrom: 2019-10-31
+ms.search.validFrom: '2019-10-31'
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 7ac91dd1d3dfffbf98733bbd8fe8beda538250da
-ms.sourcegitcommit: 81bc42551e6c9af6ad38908afb606ee1f8d3c44b
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7473556"
 ---
+
 # <a name="configure-ratings-and-reviews"></a>Konfigurowanie ocen i recenzji
 
 [!include [banner](includes/banner.md)]
@@ -87,9 +83,17 @@ Aby uzyskać informacje na temat konfigurowania modułów oceny i przeglądu, pa
 
 [Zarządzanie ocenami i recenzjami](manage-reviews.md)
 
-[Konfiguruj moduły ocen i recenzji na stronach szczegółów produktu](ratings-reviews-modules.md)
-
 [Synchronizacja ocen produktów w rozwiązaniu Dynamics 365 Retail](sync-product-ratings.md)
+
+[Włączanie ręcznego publikowania ocen i recenzji przez moderatora](manual-publish-rating-reviews.md)
+
+[Importowanie i eksportowanie klasyfikacji oraz przeglądów](import-export-reviews.md)
+
+[Konfigurowanie uwierzytelniania usługa-usługa](service-to-service-auth.md)
+
+[Oceny i recenzje — często zadawane pytania](ratings-reviews-faq.md)
+
+[Moduły ocen i recenzji](ratings-reviews-modules.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

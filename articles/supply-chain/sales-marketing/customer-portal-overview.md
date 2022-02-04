@@ -1,25 +1,20 @@
 ---
+# required metadata
 title: Omówienie portalu klientów dla rozwiązania Dynamics 365 Supply Chain Management (zawiera wideo)
-description: Ten temat zawiera informacje dotyczące portalu klienta oraz wyjaśnienie, kto powinien go używać oraz jak działa.
+description: 'Ten temat zawiera informacje dotyczące portalu klienta oraz wyjaśnienie, kto powinien go używać oraz jak działa.'
 author: Henrikan
 ms.date: 06/16/2020
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
+ms.topic: overview
+ms.prod: null
+ms.technology: null
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: intro-internal
 ms.search.region: Global
 ms.author: henrikan
-ms.search.validFrom: 2020-04-22
+ms.search.validFrom: '2020-04-22'
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: c1383ee3c8e72f630d29a557de4150cdd3aa905f
-ms.sourcegitcommit: ef0dd4245fc499907ffe00e2a32f59a6cd96e45d
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "7937511"
 ---
+
 # <a name="customer-portal-for-dynamics-365-supply-chain-management-overview"></a>Omówienie portalu klienta dla Dynamics 365 Supply Chain Management
 
 [!include [banner](../includes/banner.md)]
@@ -43,7 +38,7 @@ Szablon Portal odbiorcy zawiera wszystkie możliwości dostosowywania oferowane 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ylwW]
 
-Plik wideo [Omówienie szablonu Portalu klienta w Dynamics 365 Supply Chain Management](https://youtu.be/nPrqoLuHfV8) (pokazany powyżej) znajduje się na [liście odtwarzania Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) dostępnej na platformie YouTube.
+Plik wideo [Omówienie szablonu Portalu klienta w Dynamics 365 Supply Chain Management](https://youtu.be/nPrqoLuHfV8) (pokazany powyżej) znajduje się na [liście odtwarzania Finanse i Operacje](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) dostępnej na platformie YouTube.
 
 ## <a name="who-should-use-it"></a>Kto powinien go używać?
 
@@ -63,7 +58,7 @@ Portal odbiorców jest dostarczany jako szablon portali Power Apps. Zależy to o
 
 [Portale Power Apps](/powerapps/maker/portals/overview) to funkcja umożliwiająca użytkownikom tworzenie zewnętrznej witryny sieci Web, do której mogą się logować osoby spoza organizacji. Do tworzenia portali nie jest wymagane kodowanie. Portal klienta to jeden z wielu [szablonów portalu Dynamics 365](/powerapps/maker/portals/portal-templates#environment-with-model-driven-apps-in-dynamics-365) dostępnych w firmie Microsoft.
 
-[Podwójny zapis](/powerapps/maker/portals/overview) to gotowa infrastruktura umożliwiająca współpracę w czasie rzeczywistym między aplikacjami oferującymi spersonalizowaną obsługę klienta a aplikacjami Finance and Operations. Podwójny zapis toi dwukierunkowa integracja między aplikacjami Finance and Operations i Microsoft Dataverse. Tym samym umożliwia korzystanie ze zintegrowanego środowiska użytkownika w aplikacjach. Portal klienta jest zależny od tabel synchronizowanych z podwójnym zapisywaniem. Zanim dane z modułu Supply Chain Management mogą być nadawane w portalu klienta, dla wszystkich odpowiednich tabel musi być włączona funkcja podwójnego zapisywania.
+[Podwójny zapis](/powerapps/maker/portals/overview) to gotowa infrastruktura umożliwiająca współpracę w czasie rzeczywistym między aplikacjami oferującymi spersonalizowaną obsługę klienta a aplikacjami Finance i Operations. Podwójny zapis toi dwukierunkowa integracja między aplikacjami Finance i Operations i Microsoft Dataverse. Tym samym umożliwia korzystanie ze zintegrowanego środowiska użytkownika w aplikacjach. Portal klienta jest zależny od tabel synchronizowanych z podwójnym zapisywaniem. Zanim dane z modułu Supply Chain Management mogą być nadawane w portalu klienta, dla wszystkich odpowiednich tabel musi być włączona funkcja podwójnego zapisywania.
 
 ![Zależności portalu klienta.](media/customer-portal-elements.png "Zależności portalu klienta")
 

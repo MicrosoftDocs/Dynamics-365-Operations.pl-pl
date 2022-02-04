@@ -1,27 +1,21 @@
 ---
+# required metadata
 title: Omówienie integracji fiskalnej dla kanałów modułu Commerce
 description: Ten temat zawiera omówienie funkcji integracji fiskalnej dostępnych w programie Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 manager: annbe
 ms.date: 09/22/2021
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
+ms.topic: overview
+ms.prod: null
+ms.technology: null
+ms.search.form: 'RetailFunctionalityProfile, RetailFormLayout, RetailParameters'
 audience: Application User
 ms.reviewer: josaw
-ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 323d9f4816a4f622143692ead3d1871980b19b52
-ms.sourcegitcommit: 47a3ad71210c7ac84d0c25e913c440b5ba205282
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7512587"
 ---
 # <a name="overview-of-fiscal-integration-for-commerce-channels"></a>Omówienie integracji fiskalnej dla kanałów modułu Commerce
 

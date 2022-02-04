@@ -1,27 +1,23 @@
 ---
+# required metadata
 title: Zmiana wartości opłat z tytułu wynajmu powiązanych ze stawką indeksowaną
-description: W tym temacie opisano korektę dokonywaną w zobowiązaniu z tytułu wynajmu składnika majątku z prawem do użytkowania (PDU), gdy zmienne opłaty z tytułu wynajmu zmieniają się z powodu zmiany stawki indeksowanej.
+description: 'W tym temacie opisano korektę dokonywaną w zobowiązaniu z tytułu wynajmu składnika majątku z prawem do użytkowania (PDU), gdy zmienne opłaty z tytułu wynajmu zmieniają się z powodu zmiany stawki indeksowanej.'
 author: moaamer
-ms.date: 04/12/2021
+ms.date: 01/11/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
+ms.prod: null
+ms.technology: null
 ms.search.form: AssetLeaseIndexRevaluation
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
-ms.search.validFrom: 2020-10-28
+ms.search.validFrom: '2020-10-28'
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1b3eed28ba6fc5af02c1bbf430cc9779426084f0eaf4e027141bbdd18a70dde4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734593"
 ---
+
 # <a name="revalue-lease-payments-that-are-linked-to-an-index-rate"></a>Zmiana wartości opłat z tytułu wynajmu powiązanych ze stawką indeksowaną
 
 [!include [banner](../includes/banner.md)]
@@ -43,7 +39,7 @@ Wykonaj poniższe czynności, aby zmienić wartości opłat z tytułu wynajmu po
 4. Wybierz filtry wybierania umów najmu, które mają zostać uwzględnione w przetwarzaniu w tle, a następnie kliknij przycisk **OK**.
 
     Zostanie wyświetlone okno dialogowe **Podgląd przeszacowania stawki indeksowanej** zawierające umowy wynajmu, które zostaną przeszacowane. Pokazuje także korekty aktywów i pasywów oraz korekty opłat zmiennych.
-    
+
 5. Aby zapobiec przeszacowywaniu umów wynajmu, zaznacz umowy, które **powinny** zostać przeszacowane. Jeśli nie zaznaczysz żadnych umów wynajmu, zostaną przeszacowane wszystkie umowy. Po zakończeniu kliknij przycisk **OK**, aby przeszacować umowy wynajmu.
 6. Aby wyświetlić transakcje utworzone dla konkretnego procesu przeszacowania indeksu, wybierz identyfikator procesu, a następnie wybierz opcję **Transakcje**.
 
@@ -66,5 +62,7 @@ Można wyświetlić nowo wygenerowany harmonogram płatności rozpoczynający si
 
 Wpis w arkuszu spowodował automatyczne zaksięgowanie wpisu w arkusza korekty na koncie zmiany opłat z tytułu wynajmu powiązanych z przeszacowaniem indeksu.
 
+> [!NOTE]
+> Jeśli opcja **Kwota płatności za podział** jest włączona na skróconej karcie **Ogólne** w oknie **Szczegółów dzierżawy**, a skojarzona księga to IFRS 16, proces przesyłania indeksu automatycznie doda rekord w oknie dialogowym **Podział kwoty płatności**. Kwota będzie odzwierciedlać zmianę płatności dokonaną w związku z przesądem indeksu. Rekord zostanie oznaczony jako **Używany dla przesądu indeksu IRFS 16**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

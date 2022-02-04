@@ -1,28 +1,24 @@
 ---
+# required metadata
 title: Dodawanie logo
-description: W tym temacie opisano, jak dodać logo do witryny w Microsoft Dynamics 365 Commerce.
+description: 'W tym temacie opisano, jak dodać logo do witryny w Microsoft Dynamics 365 Commerce.'
 author: bicyclingfool
 ms.date: 09/15/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
+ms.prod: null
+ms.technology: null
+ms.search.form: null
 audience: Application user
 ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.custom: null
+ms.assetid: null
 ms.search.region: global
-ms.search.industry: ''
+ms.search.industry: null
 ms.author: stuharg
-ms.search.validFrom: 2019-10-31
+ms.search.validFrom: '2019-10-31'
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 71d1ddd8e6641cdc57c5b83e12f4b3cf68516c611691a7e7199d5b633bdf17d7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725417"
 ---
+
 # <a name="add-a-logo"></a>Dodawanie logo
 
 [!include [banner](includes/banner.md)]
@@ -60,8 +56,6 @@ Po opublikowaniu zaktualizowanego fragmentu nagłówka wszystkie strony witryny,
 [Praca z plikami zastępowania CSS](css-override-files.md)
 
 [Dodawanie ikony favicon](add-favicon.md)
-
-[Dodawanie wiadomości powitalnej](add-welcome-message.md)
 
 [Dodawanie powiadomienia o prawach autorskich](add-copyright-notice.md)
 

@@ -1,29 +1,25 @@
 ---
+# required metadata
 title: Omówienie planowania budżetu
 description: W tym temacie opisano planowanie budżetu. Ten temat zawiera informacje na temat sposobu skonfigurowania planowania budżetu i procesów konfigurowania planowania budżetu.
 author: panolte
 ms.date: 01/11/2018
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
+ms.topic: overview
+ms.prod: null
+ms.technology: null
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: roschlom
 ms.custom:
-- "17251"
-- intro-internal
+  - '17251'
+  - intro-internal
 ms.assetid: a2e06633-a800-4840-a962-88fed8462104
 ms.search.region: Global
 ms.author: sigitac
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: '2016-02-28'
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d12d7ed2054cb50b9fc4c7765b2c9aa40f74d1dbe22081840a7fe75d07cc2d7f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779069"
 ---
+
 # <a name="budget-planning-overview"></a>Omówienie planowania budżetu
 
 [!include [banner](../includes/banner.md)]

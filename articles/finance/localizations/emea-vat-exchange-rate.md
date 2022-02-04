@@ -1,29 +1,25 @@
 ---
+# required metadata
 title: Podstawowe informacje o kursie wymiany dla podatku VAT
-description: Ten temat zawiera informacje dotyczące kursów wymiany dla obliczeń podatku VAT dostępnych dla Czech, Węgier i Polski.
+description: 'Ten temat zawiera informacje dotyczące kursów wymiany dla obliczeń podatku VAT dostępnych dla Czech, Węgier i Polski.'
 author: ShylaThompson
 ms.date: 07/08/2021
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ExchangeRateCurrencyPairCalculationRules, LedgerParameters, SalesTaxExchangeRateType, TaxTmpWorkTrans
+ms.topic: overview
+ms.prod: null
+ms.technology: null
+ms.search.form: 'ExchangeRateCurrencyPairCalculationRules, LedgerParameters, SalesTaxExchangeRateType, TaxTmpWorkTrans'
 audience: Application User
 ms.reviewer: kfend
 ms.custom:
-- "272703"
-- intro-internal
+  - '272703'
+  - intro-internal
 ms.assetid: 2d1fad67-8234-49cc-b009-0f3cc29f5886
-ms.search.region: Czech Republic, Hungary, Poland
+ms.search.region: 'Czech Republic, Hungary, Poland'
 ms.author: mrolecki
 ms.dyn365.ops.version: Version 1611
-ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: af2ebb282883696b1240e1ec9d7becdf9e26ccec6712ffc73964e733079047b6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734500"
+ms.search.validFrom: '2016-11-30'
 ---
+
 # <a name="vat-exchange-rate-overview"></a>Podstawowe informacje o kursie wymiany dla podatku VAT
 
 [!include [banner](../includes/banner.md)]

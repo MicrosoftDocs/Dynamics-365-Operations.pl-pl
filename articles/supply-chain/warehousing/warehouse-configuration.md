@@ -1,29 +1,25 @@
 ---
+# required metadata
 title: Omówienie konfiguracji magazynu
 description: W tym artykule wyjaśniono sposób konfigurowania magazynu. Artykuł zawiera informacje o włączaniu układu magazynu i procesów magazynowych.
 author: perlynne
 ms.date: 07/25/2019
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: InventLocation, WHSLocation, WHSLocationBuild, WHSLocationProfile, WHSLocationType, WHSLocDirTable, WHSParameters, WHSWaveTemplateTable, WHSWorkPool, WHSWorkTemplateTable, WHSZone, WHSZoneGroup
+ms.topic: overview
+ms.prod: null
+ms.technology: null
+ms.search.form: 'InventLocation, WHSLocation, WHSLocationBuild, WHSLocationProfile, WHSLocationType, WHSLocDirTable, WHSParameters, WHSWaveTemplateTable, WHSWorkPool, WHSWorkTemplateTable, WHSZone, WHSZoneGroup'
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom:
-- "11554"
-- intro-internal
+  - '11554'
+  - intro-internal
 ms.assetid: 262b7b88-2cce-44f7-9a5b-77c12af1be20
 ms.search.region: Global
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: '2016-02-28'
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 091eb23397ed8f8efb50db6acba956fc49ef5a044a7d5fcc9d1e3201a68d54fe
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755913"
 ---
+
 # <a name="warehouse-configuration-overview"></a>Omówienie konfiguracji magazynu
 
 [!include [banner](../includes/banner.md)]

@@ -1,30 +1,26 @@
 ---
+# required metadata
 title: Omówienie podatku indyjskiego potrąconego w źródle (TDS)
 description: Ten temat zawiera szczegółowe informacje na temat podatku indyjskiego potrąconego w źródle (TDS). Dokumentacja dokumentów TDS zawiera funkcje tej funkcji.
 author: kailiang
 ms.date: 03/19/2021
-ms.topic: article
-ms.prod: ''
+ms.topic: overview
+ms.prod: null
 ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
+ms.technology: null
+ms.search.form: null
 audience: Application User
 ms.reviewer: roschlom
 ms.custom:
-- "15721"
-- intro-internal
+  - '15721'
+  - intro-internal
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
 ms.author: kailiang
-ms.search.validFrom: 2021-03-19
+ms.search.validFrom: '2021-03-19'
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: b55e6aa5f56090ca14836894e9e51232ab63dce1ef33255b8eac1170404190c9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723779"
 ---
+
 # <a name="indian-tax-deducted-at-source-tds-overview"></a>Omówienie podatku indyjskiego potrąconego w źródle (TDS)
 
 [!include [banner](../includes/banner.md)]

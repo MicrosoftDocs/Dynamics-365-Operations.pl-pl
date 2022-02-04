@@ -1,30 +1,26 @@
 ---
+# required metadata
 title: Przegląd obsługi relacji z klientami
 description: Ten temat zawiera omówienie nowych możliwości relacji z klientami dostępnych w aplikacji sklepu.
 author: bebeale
 ms.date: 02/01/2021
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
+ms.topic: overview
+ms.prod: null
+ms.technology: null
+ms.search.form: null
 audience: Application User
 ms.reviewer: josaw
 ms.custom:
-- "260624"
-- intro-internal
+  - '260624'
+  - intro-internal
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: shajain
-ms.search.validFrom: 2018-10-01
+ms.search.validFrom: '2018-10-01'
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: 48e3b93b7e53a47673f824d35ac95b65d8566bce
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594810"
 ---
+
 # <a name="clienteling-overview"></a>Omówienie obsługi relacji z klientami
 
 [!include [banner](includes/banner.md)]

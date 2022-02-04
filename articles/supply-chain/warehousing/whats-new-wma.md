@@ -2,26 +2,54 @@
 title: Nowości lub zmiany w aplikacji mobilnej Warehouse Management
 description: W tym temacie wymieniono nowe i zmienione funkcje dla każdej wydanej wersji aplikacji mobilnej Warehouse Management dla firmy Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 09/09/2021
+ms.date: 01/18/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
-ms.search.validFrom: 2021-06-07
+ms.search.validFrom: '2021-06-07'
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 9d50c1380418365f7c51d6b96051e9ea68a5f104
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7901895"
 ---
+
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Nowości lub zmiany w aplikacji mobilnej Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 W tym temacie wymieniono nowe funkcje, poprawki, ulepszenia i znane problemy dla każdej wydanej wersji aplikacji mobilnej Warehouse Management w Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20140"></a>Wersja 2.0.14.0
+
+Ta wersja wprowadza następujące nowe funkcje, poprawki i ulepszenia:
+
+- Rozwiązano problem z wyłączonym domyślnym przyciskiem Prześlij.
+
+## <a name="version-20130"></a>Wersja 2.0.13.0
+
+Ta wersja wprowadza następujące nowe funkcje, poprawki i ulepszenia:
+ 
+- Poprawiono przesuwanie między stronami z wygładzonej animacji.
+- Stałe odpowiedzi na licznik odpowiedzi na przeciąganie ruchów i sporadyczne zamrożenie ekranu.
+- Poprawione kombinacje kolorów tekstu i tła w trybie ciemno w celu lepszej czytelności.
+- Rozwiązano problem, który podczas zmiany rozmiaru okna aplikacji mógł stać się bardzo mały.
+- Naprawiono problem, który czasami powodował awarię aplikacji podczas skanowania kodów kreskowych.
+- Dodano możliwość zastępowania suwaka przyciskiem.
+- Rozwiązano problem, który mógł spowodować, że aplikacja pokaż komunikat o błędzie: „AADSTS7000215: Podano nieprawidłowy klucz tajny klienta”
+- Poprawiono animację wskazówki pokazującą sposób zamykania strony za pomocą przeciągania w dół.
+- Dodano możliwość zamknięcia strony za pomocą gestu machnięcia w dół.
+- Rozwiązano problem, przez który tytuły list rozwijanych nie były wyświetlane na **stronie Ustawienia użytkownika**.
+- Naprawiono problem z lokalizacją, w którym aplikacja nie rozpoznawała przecinka (,) jako separatora dziesiętnego.
+- Zwiększona dostępność.
+- Poprawiono nawigację na **stronie Nowe połączenie**, aby zapewnić poprawione ułatwienia dostępu.
+- Rozwiązano problem z tym, że podczas wybierania pola wejściowego nie jest wyświetlana klawiatura ekranowa.
+- Rozwiązano problem, który może rozbić aplikację, jeśli użytkownicy szybko zmienili jej rozmiar.
+- Rozwiązano problem, w którym szybkie naciśnięcie klawisza było czasami interpretowane jako długie naciśnięcie.
+- Rozwiązano problem, przez który układ aplikacji mógł zostać uszkodzony z powodu dostosowań pól w Supply Chain Management.
+- Rozwiązano problem z tym, że lokalizacje pozycji nie były wyświetlane prawidłowo.
+- Rozwiązano problem związany z krótkim pobraniem dla przepływu pracy wariantu produktu.
+- Usunięto zbędne sprawdzanie poprawności pól zawierających wstępnie ustawione wartości domyślne.
+- Zwiększona wydajność.
+- Dodano nowe ustawienie, które umożliwia użytkownikom wybieranie sposobu filtrowania i zamawiania pól na stronie karty.
 
 ## <a name="version-20110"></a>Wersja 2.0.11.0
 

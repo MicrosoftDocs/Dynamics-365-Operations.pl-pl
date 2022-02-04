@@ -1,29 +1,25 @@
 ---
+# required metadata
 title: Urządzenia peryferyjne
-description: W tym temacie wyjaśniono pojęcia, które są związane z urządzenia peryferyjnymi Commerce.
+description: 'W tym temacie wyjaśniono pojęcia, które są związane z urządzenia peryferyjnymi Commerce.'
 author: BrianShook
 ms.date: 02/06/2020
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: RetailTerminalTable, RetailDevice, RetailHardwareProfile
-audience: Application User, IT Pro
+ms.topic: overview
+ms.prod: null
+ms.technology: null
+ms.search.form: 'RetailTerminalTable, RetailDevice, RetailHardwareProfile'
+audience: 'Application User, IT Pro'
 ms.reviewer: josaw
 ms.custom:
-- "268444"
-- intro-internal
+  - '268444'
+  - intro-internal
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: brshoo
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: '2016-11-30'
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: dbf78eec6c1b25056342f9709f3b047a8bb822ff
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779853"
 ---
+
 # <a name="peripherals"></a>Urządzenia peryferyjne
 
 [!include[banner](includes/banner.md)]

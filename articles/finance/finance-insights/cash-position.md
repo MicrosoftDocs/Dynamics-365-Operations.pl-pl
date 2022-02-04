@@ -1,31 +1,26 @@
 ---
+# required metadata
 title: Stan środków pieniężnych
-description: W tym temacie opisano sposób, w jaki funkcja prognozowania przepływów pieniężnych umożliwia prognozowanie stanu środków pieniężnych w określonym czasie. Opisano tu także opcje, które są dostępne do wyświetlania prognoz dla różnych okresów.
+description: 'W tym temacie opisano sposób, w jaki funkcja prognozowania przepływów pieniężnych umożliwia prognozowanie stanu środków pieniężnych w określonym czasie. Opisano tu także opcje, które są dostępne do wyświetlania prognoz dla różnych okresów.'
 author: ShivamPandey-msft
 ms.date: 12/21/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
+ms.prod: null
+ms.technology: null
+ms.search.form: null
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
-ms.search.validFrom: 2019-11-06
+ms.search.validFrom: '2019-11-06'
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 6bb99084a2ffef067dd0d7158ecb5e57d6d97d75
-ms.sourcegitcommit: c8dc60bb760553f166409c2e06dd2377f601c006
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "7945808"
 ---
+
 # <a name="cash-position"></a>Stan środków pieniężnych
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Stan środków pieniężnych to projekcja przepływu pieniężnego, która jest prognozą na bliski okres. Jest ona oparta na projekcji blankietów kasowych odbiorców, którzy płacą zaległe faktury i zamówienia, a także na rozchodach gotówkowych płaconych dostawcom za faktury zakupu i zamówienia.
 

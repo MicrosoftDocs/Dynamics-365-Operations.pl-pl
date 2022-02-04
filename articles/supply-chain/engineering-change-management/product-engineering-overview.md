@@ -1,25 +1,20 @@
 ---
+# required metadata
 title: Omówienie zarządzania zmianami inżynieryjnymi (zawiera wideo)
-description: Ten temat zawiera omówienie zarządzania zmianami inżynieryjnymi, które pomaga w planowaniu i zarządzaniu wersjami produktów oraz zarządzaniu cyklami życia produktu i zmianami inżynieryjnymi.
+description: 'Ten temat zawiera omówienie zarządzania zmianami inżynieryjnymi, które pomaga w planowaniu i zarządzaniu wersjami produktów oraz zarządzaniu cyklami życia produktu i zmianami inżynieryjnymi.'
 author: t-benebo
-ms.date: 08/26/2021
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
+ms.date: 01/11/2022
+ms.topic: overview
+ms.prod: null
+ms.technology: null
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: intro-internal
 ms.search.region: Global
 ms.author: benebotg
-ms.search.validFrom: 2020-09-28
+ms.search.validFrom: '2020-09-28'
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: d667aef827addcf7c34075b08afffffe3fd71935
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952605"
 ---
+
 # <a name="engineering-change-management-overview"></a>Omówienie zarządzania zmianami inżynieryjnymi
 
 [!include [banner](../includes/banner.md)]
@@ -39,9 +34,9 @@ Zarządzanie zmianami inżynieryjnymi pomaga w planowaniu i zarządzaniu wersjam
 - Żądania zmian inżynieryjnych obsługiwane przez przepływy pracy
 - Zamówienia zmian inżynieryjnych obsługiwane przez przepływy pracy
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4HE6B]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4HE6B]
 
-Poprzednie wideo ([Możliwości zarządzania zmianami w Dynamics 365 Supply Chain Management](https://youtu.be/N313FqvRuBc)) znajduje się na [liście odtwarzania Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) dostępnej na platformie YouTube.
+Poprzednie wideo ([Możliwości zarządzania zmianami w Dynamics 365 Supply Chain Management](https://youtu.be/N313FqvRuBc)) znajduje się na liście odtwarzania [Finanse i Operacje - playlista](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) dostępnej na platformie YouTube.
 
 ## <a name="turn-on-the-engineering-change-management-features-for-your-system"></a>Włącz funkcje zarządzania zmianami inżynieryjnymi w systemie
 
@@ -71,7 +66,9 @@ Następnie włącz klucze konfiguracji, wykonując następujące kroki.
 
 1. Jeśli chcesz także używać wymiaru wersji, zaznacz pole wyboru **Wymiar produktu — wersja**. (To pole wyboru jest dalej niż lista, ale nie jest zagnieżdżone w węźle **Zarządzanie zmianami inżynieryjnymi**).
 1. Wyłącz tryb konserwacji, jak to opisano w sekcji [Tryb konserwacji](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
-1. Uruchom synchronizację bazy danych, aby upewnić się, że klucze konfiguracji są poprawnie włączone.
+1. Baza danych musi być zsynchronizowana, aby zapewnić prawidłowe włączenie kluczy konfiguracyjnych. W zależności od typu środowiska, nad którym pracujesz, wykonaj jeden z następujących kroków:
+    - **W przypadku środowisk warstwy 1 (programistycznych)**: otwórz projekt w firmie Microsoft Visual Studio, a następnie wybierz **Dynamics 365 \> Synchronizuj bazę danych \> Synchronizuj**.
+    - **W przypadku środowisk warstwy 2 (i wyższych)**: baza danych synchronizuje się automatycznie po wsadowym trybie konserwacji, dzięki czemu można pominąć ten krok.
 
 > [!IMPORTANT]
 > Począwszy od kwietnia 2022 roku klucze licencji do węzłów **Zarządzanie zmianami inżynieryjnych** i **Wymiar produktu — wersja** będą domyślnie włączone dla wszystkich nowych instalacji, ale w razie potrzeby będzie można je wyłączyć.

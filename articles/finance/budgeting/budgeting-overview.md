@@ -1,29 +1,25 @@
 ---
+# required metadata
 title: Budżetowanie — strona główna
-description: Ten temat zawiera omówienie składników funkcji budżetowania, narzędzi budżetowania oraz funkcji raportowania dostępnych w rozwiązaniu Microsoft Dynamics 365 Finance.
+description: 'Ten temat zawiera omówienie składników funkcji budżetowania, narzędzi budżetowania oraz funkcji raportowania dostępnych w rozwiązaniu Microsoft Dynamics 365 Finance.'
 author: panolte
 ms.date: 04/29/2021
-ms.topic: index-page
-ms.prod: ''
-ms.technology: ''
+ms.topic: overview
+ms.prod: null
+ms.technology: null
 ms.search.form: BudgetPlanningWorkspace
 audience: Application User
 ms.reviewer: roschlom
 ms.custom:
-- "106043"
-- intro-internal
+  - '106043'
+  - intro-internal
 ms.assetid: 702f692e-ad1c-4798-8d3e-c3cf8591d3fa
 ms.search.region: Global
 ms.author: panolte
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: '2016-02-28'
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e4cd874cc7e95d09f5109f7ee4cf480158bce845bf9dbcbab1293f2982dbfabe
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750443"
 ---
+
 # <a name="budgeting-home-page"></a>Budżetowanie — strona główna
 
 [!include [banner](../includes/banner.md)]

@@ -1,30 +1,26 @@
 ---
+# required metadata
 title: Zamówienia klientów w punktach sprzedaży (POS)
 description: Ten temat zawiera informacje dotyczące zamówień odbiorcy w punkcie sprzedaży (POS). Zamówienia odbiorców są również nazywane zamówieniami specjalnymi. Temat przedstawia powiązane parametry i przepływy transakcji.
 author: josaw1
 ms.date: 08/02/2021
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
+ms.topic: overview
+ms.prod: null
+ms.technology: null
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
 ms.custom:
-- "260594"
-- intro-internal
+  - '260594'
+  - intro-internal
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: anpurush
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: '2016-02-28'
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 44beb4515bf0d2f8fc7ad75feb3164bf1c7c2d5737552b1a06ce59c2edcaf8fe
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755090"
 ---
+
 # <a name="customer-orders-in-point-of-sale-pos"></a>Zamówienia klientów w punktach sprzedaży (POS)
 
 [!include [banner](includes/banner.md)]

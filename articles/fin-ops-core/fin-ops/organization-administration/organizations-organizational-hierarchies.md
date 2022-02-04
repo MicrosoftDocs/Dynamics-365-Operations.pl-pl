@@ -1,29 +1,25 @@
 ---
+# required metadata
 title: Omówienie organizacji i hierarchii organizacyjnych
-description: Hierarchie organizacyjne reprezentują relacje między organizacjami, które tworzą firmę.
+description: 'Hierarchie organizacyjne reprezentują relacje między organizacjami, które tworzą firmę.'
 author: sericks007
-ms.date: 11/10/2021
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: OMHierarchyManager, OMOperatingUnit,
+ms.date: 01/03/2022
+ms.topic: overview
+ms.prod: null
+ms.technology: null
+ms.search.form: 'OMHierarchyManager, OMOperatingUnit,'
 audience: Application User
 ms.reviewer: sericks
 ms.custom:
-- "17291"
-- intro-internal
+  - '17291'
+  - intro-internal
 ms.assetid: 76b7ca45-93d4-45cc-b191-66ee63afa1fd
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: '2016-02-28'
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f0388b6e7c22c339d26b82c35f1bbb1ef54cdb5
-ms.sourcegitcommit: ba10ba2cd4fb4267afb5aacae4f6a52aa2456e7e
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "7798353"
 ---
+
 # <a name="organizations-and-organizational-hierarchies-overview"></a>Omówienie organizacji i hierarchii organizacyjnych
 
 [!include [banner](../includes/banner.md)]
@@ -54,7 +50,7 @@ Typy jednostek operacyjnych obejmują centra kosztów, jednostki biznesowe, stru
 | Jednostka biznesowa       | Częściowo autonomiczna jednostka operacyjna utworzona w celu spełnienia strategicznych celów biznesowych. | Używana do sprawozdawczości finansowej opartej na branżach lub liniach produktów, które organizacja obsługuje niezależnie od podmiotów prawnych. |
 | Strumień wartości        | Jednostka operacyjna, która kontroluje jeden lub więcej przepływów produkcji. | Powszechnie używana w module produkcji oszczędnej do kontrolowania działań i przepływów, które są wymagane w celu dostaw produktu lub usługi do konsumentów. |
 | Dział          | Jednostka operacyjna, która reprezentuje kategorię lub funkcjonalną część organizacji, która wykonuje określone zadanie, takie jak sprzedaż lub księgowanie. | Używana w raportach dla obszarów funkcjonalnych. Dział może mieć obowiązek raportowania zysków i strat i może się składać z grupy centrów kosztów. |
-| Kanał Commerce      | Jednostka operacyjna, która reprezentuje sklep tradycyjny, sklep internetowy lub internetowy serwis sprzedażowy. | Służy do kontroli operacyjnej przynajmniej jednego sklepu w ramach podmiotu prawnego lub wielu podmiotów prawnych oraz do zarządzania takim sklepem. |
+| Kanał sprzedaży      | Jednostka operacyjna reprezentująca sklep stacjonarny, sklep internetowy lub call center. | Służy do kontroli operacyjnej przynajmniej jednego sklepu w ramach podmiotu prawnego lub wielu podmiotów prawnych oraz do zarządzania takim sklepem. |
 
 ### <a name="teams"></a>Zespoły
 

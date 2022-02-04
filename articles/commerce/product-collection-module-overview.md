@@ -1,26 +1,21 @@
 ---
+# required metadata
 title: Moduły kolekcji produktów
 description: Ten temat stanowi przegląd modułów kolekcji produktów w rozwiązaniu Microsoft Dynamics 365 Commerce.
 author: v-chgri
 ms.date: 01/28/2021
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
+ms.topic: overview
+ms.prod: null
+ms.technology: null
 audience: Application user
 ms.reviewer: v-chgri
-ms.custom: intro-internal
-ms.assetid: ''
+ms.assetid: null
 ms.search.region: Global
 ms.author: asharchw
-ms.search.validFrom: 2019-10-31
+ms.search.validFrom: '2019-10-31'
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2ea2cd8c168cef40099f611a25367b13247a331b95deea12ff63ca5dd15bc4df
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763819"
 ---
+
 # <a name="product-collection-modules"></a>Moduły kolekcji produktów
 
 [!include [banner](includes/banner.md)]

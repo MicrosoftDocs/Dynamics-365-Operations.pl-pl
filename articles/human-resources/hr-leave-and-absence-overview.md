@@ -1,27 +1,22 @@
 ---
+# required metadata
 title: Omówienie urlopów i nieobecności
-description: Korzystając z Dynamics 365 Human Resources, obszar roboczy urlopy i nieobecności stanowi elastyczne ramy tworzenia nowych planów urlopów.
+description: 'Korzystając z Dynamics 365 Human Resources, obszar roboczy urlopy i nieobecności stanowi elastyczne ramy tworzenia nowych planów urlopów.'
 author: twheeloc
 ms.date: 10/28/2021
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
+ms.topic: overview
+ms.prod: null
+ms.technology: null
+ms.search.form: 'LeavePlanFormPart, LeaveAbsenceWorkspace'
 audience: Application User
 ms.search.scope: Human Resources
-ms.custom: intro-internal
-ms.assetid: ''
+ms.assetid: null
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2020-02-03
+ms.search.validFrom: '2020-02-03'
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0088f9fe070ee4054c531ca128daba9389054902
-ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 11/01/2021
-ms.locfileid: "7728620"
 ---
+
 # <a name="leave-and-absence-overview"></a>Omówienie urlopów i nieobecności
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]

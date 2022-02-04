@@ -1,26 +1,21 @@
 ---
+# required metadata
 title: Pakiet zawartości Przegląd środków pieniężnych dla usługi Power BI
-description: W tym temacie opisano pakiet zawartość Przegląd środków pieniężnych dostępny dla usługi Power BI. Wyjaśniono, jak uzyskać dostęp do raportów oferowanych w pakiecie, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
+description: 'W tym temacie opisano pakiet zawartość Przegląd środków pieniężnych dostępny dla usługi Power BI. Wyjaśniono, jak uzyskać dostęp do raportów oferowanych w pakiecie, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.'
 author: saraschi2
 ms.date: 07/16/2020
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
+ms.topic: overview
+ms.prod: null
+ms.technology: null
 ms.search.form: BankTreasurerWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: intro-internal
 ms.search.region: Global
 ms.author: saraschi
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: '2017-06-30'
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 59ef57d3684cfa3b7063af76cc7ee7b7f0eaceb5e1f1cceb0845ebd9057ded07
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728086"
 ---
+
 # <a name="cash-overview-power-bi-content"></a>Przegląd środków pieniężnych — zawartość usługi Power BI
 
 [!include [banner](../includes/banner.md)]

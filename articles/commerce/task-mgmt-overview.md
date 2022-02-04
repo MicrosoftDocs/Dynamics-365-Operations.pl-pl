@@ -1,27 +1,22 @@
 ---
+# required metadata
 title: Omówienie zarządzania zadaniami
 description: Ten temat stanowi omówienie zarządzania zadaniami dla menedżerów i pracowników w Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 02/10/2020
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
+ms.topic: overview
+ms.prod: null
+ms.technology: null
+ms.search.form: null
 audience: Application User
 ms.reviewer: v-chgri
-ms.custom: intro-internal
 ms.search.region: Global
-ms.search.industry: ''
+ms.search.industry: null
 ms.author: gmohanv
-ms.search.validFrom: 2020-02-03
+ms.search.validFrom: '2020-02-03'
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 588608241261f9a2d68221a3d6da24c0f452a0463077081425ba99b8546cd5d6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730786"
 ---
+
 # <a name="task-management-overview"></a>Omówienie zarządzania zadaniami
 
 [!include [banner](includes/banner.md)]

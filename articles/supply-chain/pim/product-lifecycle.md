@@ -1,28 +1,23 @@
 ---
+# required metadata
 title: Omówienie stanów cyklu życia produktu
 description: Stan cyklu życia produktu dokumentuje stan cyklu życia zwolnionego produktu lub wariantu produktu.
 author: t-benebo
 ms.date: 01/06/2020
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: EcoResProductLifecycleState, EcoResReleasedProductLifecycleStateChanges
-audience: Application User, IT Pro
+ms.topic: overview
+ms.prod: null
+ms.technology: null
+ms.search.form: 'EcoResProductLifecycleState, EcoResReleasedProductLifecycleStateChanges'
+audience: 'Application User, IT Pro'
 ms.reviewer: kamaybac
-ms.custom: intro-internal
-ms.assetid: ''
+ms.assetid: null
 ms.search.region: global
-ms.search.industry: ''
+ms.search.industry: null
 ms.author: benebotg
-ms.dyn365.ops.version: 7.2999999999999998
-ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: ae9e8201caac259e9e8ddd618fe0220933e31658
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578255"
+ms.dyn365.ops.version: 7.3
+ms.search.validFrom: '2017-12-31'
 ---
+
 # <a name="product-lifecycle-state-overview"></a>Omówienie stanów cyklu życia produktu
 
 [!include [banner](../includes/banner.md)]

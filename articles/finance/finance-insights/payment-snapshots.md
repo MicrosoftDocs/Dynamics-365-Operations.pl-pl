@@ -1,33 +1,28 @@
 ---
+# required metadata
 title: Omówienie migawek
-description: W tym temacie opisano funkcję migawek, która umożliwia zapisanie prognozy przepływów pieniężnych na potrzeby analizy lub porównania z wartościami rzeczywistymi w późniejszym czasie. Podczas generowania prognozy przepływów pieniężnych można zapisać tę prognozę jako „migawkę”. Następnie można używać migawek w celu edytowania kont uwzględnionych w prognozie lub porównywania prognozy w migawce z wartościami rzeczywistymi.
+description: 'W tym temacie opisano funkcję migawek, która umożliwia zapisanie prognozy przepływów pieniężnych na potrzeby analizy lub porównania z wartościami rzeczywistymi w późniejszym czasie. Podczas generowania prognozy przepływów pieniężnych można zapisać tę prognozę jako „migawkę”. Następnie można używać migawek w celu edytowania kont uwzględnionych w prognozie lub porównywania prognozy w migawce z wartościami rzeczywistymi.'
 author: ShivamPandey-msft
 ms.date: 11/03/2021
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
+ms.topic: overview
+ms.prod: null
+ms.technology: null
+ms.search.form: null
 audience: Application User
 ms.reviewer: roschlom
 ms.custom:
-- "14151"
-- intro-internal
+  - '14151'
+  - intro-internal
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
-ms.search.validFrom: 2020-05-19
+ms.search.validFrom: '2020-05-19'
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: a91300ac17b36d890840e6c0c3104fad5fce68f0
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752774"
 ---
+
 # <a name="snapshots-overview"></a>Omówienie migawek
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Migawki umożliwiają organizacjom edytowanie i zapisywanie informacji o ich stanie środków pieniężnych i prognozach kasowych w danym momencie. Migawkę można porównać z rzeczywistymi informacjami finansowymi, sprawdzić odchylenia, a następnie używać tych informacji do poprawiania prognoz przepływów pieniężnych w kolejnych okresach. W szczególności migawki mogą być używane w następujący sposób:
 

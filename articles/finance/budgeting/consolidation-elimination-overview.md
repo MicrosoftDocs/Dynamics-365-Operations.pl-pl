@@ -1,29 +1,25 @@
 ---
+# required metadata
 title: Omówienie konsolidacji i eliminacji
 description: Ten temat zawiera ogólne informacje o procesie konsolidacji i eliminacji. Znajdują się w nim również odpowiedzi na wybrane często zadawane pytania.
 author: panolte
 ms.date: 01/11/2018
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
+ms.topic: overview
+ms.prod: null
+ms.technology: null
 ms.search.form: LedgerConsolidate
 audience: Application User
 ms.reviewer: roschlom
 ms.custom:
-- "13151"
-- intro-internal
+  - '13151'
+  - intro-internal
 ms.assetid: 9d8f55cb-b2cf-4e01-89cf-0e21f5c8ae1f
 ms.search.region: Global
 ms.author: roschlom
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: '2016-02-28'
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a3134c55458d09e2f9ec3aca3ce5c20afdbdf1d3
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883446"
 ---
+
 # <a name="consolidation-and-elimination-overview"></a>Omówienie konsolidacji i eliminacji
 
 [!include [banner](../includes/banner.md)]

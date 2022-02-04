@@ -1,27 +1,22 @@
 ---
+# required metadata
 title: Omówienie zadań konserwacji aktywnych zleceń pracy
 description: W tym temacie omówienie zadań konserwacji aktywnych zleceń pracy w module Zarządzanie składnikami majątku.
 author: johanhoffmann
 ms.date: 10/15/2019
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
+ms.topic: overview
+ms.prod: null
+ms.technology: null
+ms.search.form: null
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: intro-internal
-ms.assetid: ''
+ms.assetid: null
 ms.search.region: Global
 ms.author: johanho
-ms.search.validFrom: 2019-09-30
+ms.search.validFrom: '2019-09-30'
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d17b719e569d151a5cb54f492e8e0fbbba72573fd23d6d46c99872a7aa84b2bb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756083"
 ---
+
 # <a name="active-work-order-maintenance-jobs-overview"></a>Omówienie zadań konserwacji aktywnych zleceń pracy
 
 [!include [banner](../../includes/banner.md)]

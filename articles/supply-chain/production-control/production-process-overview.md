@@ -1,26 +1,21 @@
 ---
 title: Omówienie procesu produkcji
-description: Ten temat zawiera omówienie procesów produkcji. Opisuje różne etapy zleceń produkcyjnych, szarż produkcji i zadań Kanban — od utworzenia zamówienia aż do zamknięcia okresu finansowego.
+description: 'Ten temat zawiera omówienie procesów produkcji. Opisuje różne etapy zleceń produkcyjnych, szarż produkcji i zadań Kanban — od utworzenia zamówienia aż do zamknięcia okresu finansowego.'
 author: johanhoffmann
 ms.date: 09/13/2019
-ms.topic: article
-ms.search.form: JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview, EcoResProductDiscreteManufacturingWorkspace, KanbanPrepareProductForLeanWorkspace, EcoResProductProcessManufacturingWorkspace, OpResLifecycleManagementWorkspace, ProdParmCostEstimation, ProdParmRelease, ProdSchedule, ProdTableListPage
+ms.topic: overview
+ms.search.form: 'JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview, EcoResProductDiscreteManufacturingWorkspace, KanbanPrepareProductForLeanWorkspace, EcoResProductProcessManufacturingWorkspace, OpResLifecycleManagementWorkspace, ProdParmCostEstimation, ProdParmRelease, ProdSchedule, ProdTableListPage'
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom:
-- "19832"
-- intro-internal
+  - '19832'
+  - intro-internal
 ms.search.region: Global
 ms.author: johanho
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: '2016-02-28'
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a07733f7e1e830fa1c1c4c8e0cfdc5b41d10750
-ms.sourcegitcommit: efccf0838c74cf65382bb6cd852f9bc30ca69230
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 11/01/2021
-ms.locfileid: "7727342"
 ---
+
 # <a name="production-process-overview"></a>Omówienie procesu produkcji
 
 [!include [banner](../includes/banner.md)]

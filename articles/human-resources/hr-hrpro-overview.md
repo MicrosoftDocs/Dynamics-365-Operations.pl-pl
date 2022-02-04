@@ -1,27 +1,22 @@
 ---
+# required metadata
 title: Omówienie
-description: Podręcznik użytkownika programu Dynamics 365 Human Resources zawiera instrukcje konfigurowania modułu Human Resources, konfigurowania wynagrodzenia i świadczeń dla pracowników oraz zarządzania pracownikami.
+description: 'Podręcznik użytkownika programu Dynamics 365 Human Resources zawiera instrukcje konfigurowania modułu Human Resources, konfigurowania wynagrodzenia i świadczeń dla pracowników oraz zarządzania pracownikami.'
 author: twheeloc
 ms.date: 08/26/2021
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
+ms.topic: overview
+ms.prod: null
+ms.technology: null
 ms.search.form: EssWorkspace
 audience: Application User
 ms.search.scope: Human Resources
-ms.custom: intro-internal
-ms.assetid: ''
+ms.assetid: null
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2020-02-03
+ms.search.validFrom: '2020-02-03'
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a1aa1299277e4c96d2fe7a4c3bd03b907a5cc0b5
-ms.sourcegitcommit: 8246ba3872a1f3eaa18c8bb1ba86d3c2142a6e10
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7465108"
 ---
+
 # <a name="overview"></a>Omówienie
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]

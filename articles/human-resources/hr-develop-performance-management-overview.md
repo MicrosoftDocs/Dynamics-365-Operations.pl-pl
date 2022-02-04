@@ -1,28 +1,24 @@
 ---
+# required metadata
 title: Zarządzanie wydajnością
 description: Proces zarządzania wydajnością umożliwia pracowników dokumentowanie i omawianie ich działań z przełożonymi.
 author: twheeloc
 ms.date: 08/26/2021
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
+ms.topic: overview
+ms.prod: null
+ms.technology: null
 audience: Application User
 ms.search.scope: Human Resources
 ms.custom:
-- "221024"
-- intro-internal
+  - '221024'
+  - intro-internal
 ms.assetid: d88e30ab-c6e9-4daf-b89d-f4386a299e22
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: '2016-11-30'
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b1751183e929a906694cb5fd8e5d7960f9f00c6c
-ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7431245"
 ---
+
 # <a name="performance-management"></a>Zarządzanie wydajnością
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]

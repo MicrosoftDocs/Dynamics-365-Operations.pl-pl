@@ -3,25 +3,19 @@ title: Omówienie zarządzania cyfrowymi składnikami majątku
 description: W tym temacie omówiono zarządzanie cyfrowymi składnikami majątku w kreatorze witryn Microsoft Dynamics 365 Commerce.
 author: psimolin
 ms.date: 03/03/2020
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
+ms.topic: overview
+ms.prod: null
+ms.technology: null
 audience: Application User
 ms.reviewer: v-chgri
-ms.custom: intro-internal
-ms.assetid: ''
+ms.assetid: null
 ms.search.region: Global
-ms.search.industry: ''
+ms.search.industry: null
 ms.author: psimolin
-ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: f244612ee59bf20d33ad9f5967bc7950e71bff7ac928430826f196eee6a0e716
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756588"
+ms.search.validFrom: '2019-10-31'
+ms.dyn365.ops.version: null
 ---
+
 # <a name="digital-asset-management-overview"></a>Omówienie zarządzania cyfrowymi składnikami majątku
 
 [!include [banner](includes/banner.md)]

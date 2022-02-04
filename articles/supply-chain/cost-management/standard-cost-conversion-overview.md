@@ -1,30 +1,26 @@
 ---
+# required metadata
 title: Omówienie konwersji na koszt standardowy
 description: Ten artykuł zawiera omówienie procesu ułatwiające konfigurowanie i wykonywanie konwersji na koszt standardowy. Podane kroki należy wykonać po spełnieniu warunków wstępnych konwersji na koszt standardowy.
 author: AndersGirke
 ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: CostingVersion, InventStdCostConv
+ms.topic: overview
+ms.prod: null
+ms.technology: null
+ms.search.form: 'CostingVersion, InventStdCostConv'
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom:
-- "78212"
-- intro-internal
+  - '78212'
+  - intro-internal
 ms.assetid: d601d9d5-1de3-4868-aff4-534dca01d624
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: mguada
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: '2016-02-28'
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c1b1d02660d4cc8de07c9073ca4bc97a7ef4864d04fb2716ac7c80172040adcc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6781544"
 ---
+
 # <a name="standard-cost-conversion-overview"></a>Omówienie konwersji na koszt standardowy
 
 [!include [banner](../includes/banner.md)]

@@ -1,28 +1,24 @@
 ---
+# required metadata
 title: Omówienie systemu przepływów pracy
 description: W tym temacie opisano system przepływów pracy.
 author: ChrisGarty
 ms.date: 07/25/2019
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application User, IT Pro
+ms.topic: overview
+ms.prod: null
+ms.technology: null
+audience: 'Application User, IT Pro'
 ms.reviewer: sericks
 ms.custom:
-- "56381"
-- intro-internal
+  - '56381'
+  - intro-internal
 ms.assetid: 20b78595-e1d9-439a-ae1c-a776a3438919
 ms.search.region: Global
 ms.author: cgarty
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: '2016-02-28'
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b9fbb47f2ba4601a275423db3c072d61d460ece3204e2f8ee995e1c2febe230
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715946"
 ---
+
 # <a name="workflow-system-overview"></a>Omówienie systemu przepływów pracy
 
 [!include [banner](../includes/banner.md)]

@@ -1,28 +1,24 @@
 ---
+# required metadata
 title: Omówienie posiadaczy zaliczek
 description: Ten temat zawiera informacje dotyczące funkcji posiadacza zaliczki.
 author: liza-golub
 ms.date: 09/15/2021
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
+ms.topic: overview
+ms.prod: null
+ms.technology: null
 ms.search.form: HcmWorkerAdvHolderTableListPage_RU
 audience: Application User
 ms.reviewer: kfend
 ms.custom:
-- "262574"
-- intro-internal
-ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
+  - '262574'
+  - intro-internal
+ms.search.region: 'Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia'
 ms.author: elgolu
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: '2016-11-30'
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2f71d6f693d2ad4f9a0a8c6ec93d4b111c4d2b39
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500096"
 ---
+
 # <a name="advance-holders-overview"></a>Omówienie posiadaczy zaliczek
 
 [!include [banner](../includes/banner.md)]

@@ -1,33 +1,28 @@
 ---
+# required metadata
 title: Prognozy płatności odbiorcy
-description: W tym temacie opisano funkcjonalność prognoz płatności, która może pomóc w lepszym zrozumieniu typowych praktyk płatniczych odbiorcy. Ta funkcja może również pomóc w identyfikowaniu okoliczności, które powinny spowodować rozpoczęcie procesów windykacji wcześniej, niż normalnie rozważałaby organizacja.
+description: 'W tym temacie opisano funkcjonalność prognoz płatności, która może pomóc w lepszym zrozumieniu typowych praktyk płatniczych odbiorcy. Ta funkcja może również pomóc w identyfikowaniu okoliczności, które powinny spowodować rozpoczęcie procesów windykacji wcześniej, niż normalnie rozważałaby organizacja.'
 author: ShivamPandey-msft
 ms.date: 11/03/2021
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
+ms.topic: overview
+ms.prod: null
+ms.technology: null
+ms.search.form: null
 audience: Application User
 ms.reviewer: roschlom
 ms.custom:
-- "14151"
-- intro-internal
+  - '14151'
+  - intro-internal
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
-ms.search.validFrom: 2019-11-06
+ms.search.validFrom: '2019-11-06'
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 300c835c835a5c653b75b9e151462337dfbe49a5
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752744"
 ---
+
 # <a name="customer-payment-predictions"></a>Prognozy płatności odbiorcy
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 W tym temacie opisano funkcjonalność prognoz płatności, która może pomóc w lepszym zrozumieniu typowych praktyk płatniczych odbiorcy. Ta funkcja może również pomóc w identyfikowaniu okoliczności, które powinny spowodować rozpoczęcie procesów windykacji wcześniej, niż normalnie rozważałaby organizacja.
 
@@ -39,7 +34,7 @@ Organizacje często mają problemy z przewidzeniem, kiedy odbiorcy zapłacą fak
 - Procesy windykacji, które zaczynają zbyt późno
 - Zamówienia zwolnione do odbiorców, którzy mogą nie uregulować płatności
 
-Moduł Prognozy płatności odbiorcy (wersja zapoznawcza) pomaga organizacjom przewidzieć, kiedy zostanie zapłata faktura wystawiona odbiorcy. Dzięki temu mogą oni tworzyć strategie windykacji, które pomagają zwiększyć prawdopodobieństwo, że zapłata wpłynie w terminie.
+Moduł Prognozy płatności odbiorcy pomaga organizacjom przewidzieć, kiedy zostanie zapłata faktura wystawiona odbiorcy. Dzięki temu mogą oni tworzyć strategie windykacji, które pomagają zwiększyć prawdopodobieństwo, że zapłata wpłynie w terminie.
 
 ## <a name="predictions"></a>Prognozy
 

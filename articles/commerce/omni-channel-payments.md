@@ -1,29 +1,25 @@
 ---
+# required metadata
 title: Omówienie płatności wielokanałowych
 description: W tym temacie są omówione płatności wielokanałowe w programie Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 09/17/2020
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
+ms.topic: overview
+ms.prod: null
+ms.technology: null
 audience: Application user
 ms.reviewer: josaw
 ms.custom:
-- "141393"
-- intro-internal
-ms.assetid: ''
+  - '141393'
+  - intro-internal
+ms.assetid: null
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: brshoo
-ms.search.validFrom: 2019-01-01
+ms.search.validFrom: '2019-01-01'
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: 0b01a5b08304b04b924da20310b6eee0c50e9d0e
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779725"
 ---
+
 # <a name="omni-channel-payments-overview"></a>Omówienie płatności wielokanałowych
 
 [!include [banner](../includes/banner.md)]

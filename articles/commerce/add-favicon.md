@@ -1,26 +1,22 @@
 ---
+# required metadata
 title: Dodawanie ikony favicon
 description: W tym temacie opisano sposób dodawania ikony favicon do witryny.
 author: bicyclingfool
 ms.date: 08/31/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
+ms.prod: null
+ms.technology: null
 audience: Application user
 ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.custom: null
+ms.assetid: null
 ms.search.region: Global
 ms.author: StuHarg
-ms.search.validFrom: 2019-10-31
+ms.search.validFrom: '2019-10-31'
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 41beef346744dc93be3f2d83e660a96e27562f3da933363a1f99144e34060d9d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724635"
 ---
+
 # <a name="add-a-favicon"></a>Dodawanie ikony favicon
 
 [!include [banner](includes/banner.md)]
@@ -85,8 +81,6 @@ Podczas wyświetlania podglądu stron opartych na szablonie, do którego dodano 
 [Wybór motywu witryny](select-site-theme.md)
 
 [Praca z plikami zastępowania CSS](css-override-files.md)
-
-[Dodawanie wiadomości powitalnej](add-welcome-message.md)
 
 [Dodawanie powiadomienia o prawach autorskich](add-copyright-notice.md)
 

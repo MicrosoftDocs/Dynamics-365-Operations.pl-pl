@@ -1,29 +1,25 @@
 ---
+# required metadata
 title: Omówienie rozliczeń
-description: Ten temat zawiera ogólne informacje o procesie rozliczania. Opisano w nim typy transakcji, które można rozliczyć, oraz czas i proces ich rozliczania. Przedstawia on także wyniki procesu rozliczania.
+description: 'Ten temat zawiera ogólne informacje o procesie rozliczania. Opisano w nim typy transakcji, które można rozliczyć, oraz czas i proces ich rozliczania. Przedstawia on także wyniki procesu rozliczania.'
 author: panolte
 ms.date: 07/30/2021
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans
+ms.topic: overview
+ms.prod: null
+ms.technology: null
+ms.search.form: 'CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans'
 audience: Application User
 ms.reviewer: roschlom
 ms.custom:
-- "14551"
-- intro-internal
+  - '14551'
+  - intro-internal
 ms.assetid: 0968fa71-5984-415b-8689-759a0136d5d1
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 6b4a4fd0756a4516b0c14e136730d21d062a106a
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344818"
+ms.search.validFrom: '2018-10-31'
+ms.dyn365.ops.version: 8.1
 ---
+
 # <a name="settlement-overview"></a>Omówienie rozliczeń
 
 [!include [banner](../includes/banner.md)]

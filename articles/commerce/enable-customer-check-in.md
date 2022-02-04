@@ -1,31 +1,26 @@
 ---
+# required metadata
 title: Włączanie powiadomień zameldowania odbiorcy w punkcie sprzedaży
 description: W tym temacie opisano sposób włączania powiadomień zameldowania odbiorcy w punkcie sprzedaży systemu Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 12/03/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ROBOTS: ''
+ms.prod: null
+ms.technology: null
+ROBOTS: null
 audience: Application user
 ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.custom: null
+ms.assetid: null
 ms.search.region: global
 ms.author: stuharg
-ms.search.validFrom: 2021-04-01
+ms.search.validFrom: '2021-04-01'
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 320e9d73ca98bf4ed22ac9bdff2fc34ae83223ec
-ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7891419"
 ---
+
 # <a name="enable-customer-check-in-notifications-in-point-of-sale-pos"></a>Włączanie powiadomień zameldowania odbiorcy w punkcie sprzedaży
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 W tym temacie opisano sposób włączania powiadomień zameldowania odbiorcy w punkcie sprzedaży systemu Microsoft Dynamics 365 Commerce.
 

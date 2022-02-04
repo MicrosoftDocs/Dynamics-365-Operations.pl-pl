@@ -9,20 +9,13 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: crytt
-ms.search.validFrom: 2021-06-09
+ms.search.validFrom: '2021-06-09'
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 0a2bd50ef11e92fb427a61a1e8624fcd7d15e163
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920181"
 ---
+
 # <a name="scheduling-with-infinite-capacity"></a>Planowanie z nieskończoną zdolnością produkcyjną
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
-<!--KFM: Preview until 1/14/2022 -->
 
 Funkcja *Nieskończone planowanie pojemności na potrzeby optymalizacji planowania* wprowadza planowanie oparte na informacjach o trasie. Umożliwia planowanie zadań w oparciu o szeroki zakres konfiguracji tras. Planowanie optymalizacji planowania obejmuje często używane ustawienia marszruty, w tym sekwencję operacji marszruty lub wymagania dotyczące zasobów operacji marszruty.
 
@@ -51,7 +44,9 @@ Podczas procesu planowania system uwzględnia również *wymagania dotyczące za
 - Zdolność (Aby uzyskać więcej informacji, zobacz temat [Planowanie z wyborem zasobu na podstawie funkcji](capability-based-scheduling.md)).
 
 > [!NOTE]
-> Wymagania związane z zasobami ludzkimi, takie jak umiejętności lub wymagania dotyczące certyfikatów, nie są jeszcze obsługiwane.
+>
+> - Jeśli dla zasobu i/lub grupy zasobów ustawiono nieskończoną zdolność produkcyjną, planowanie główne uzna je za nieskończoną zdolność produkcyjną.
+> - Wymagania związane z zasobami ludzkimi, takie jak umiejętności lub wymagania dotyczące certyfikatów, nie są jeszcze obsługiwane.
 
 Funkcja obsługuje również właściwości operacyjne **Czas instalacji** i **Czas wykonywania**. Jeśli te właściwości zostaną ustawione dla operacji marszruty, proces planowania utworzy odpowiednie zadania konfiguracji i procesu.
 

@@ -1,6 +1,6 @@
 ---
 title: Wywoływanie przepływów automatyzacji procesów w celu tworzenia zleceń wysokiej jakości
-description: Ten temat zawiera zasoby, za pomocą których w Power Automate można automatyzować procesy biznesowe, korzystając z przykładów zleceń kontroli jakości.
+description: 'Ten temat zawiera zasoby, za pomocą których w Power Automate można automatyzować procesy biznesowe, korzystając z przykładów zleceń kontroli jakości.'
 author: johanhoffmann
 ms.date: 05/28/2021
 ms.topic: article
@@ -8,20 +8,13 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
-ms.search.validFrom: 2021-05-28
+ms.search.validFrom: '2021-05-28'
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: ae0aebc73fc9b5d31409131d78ad1bff7f3771cd
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860645"
 ---
+
 # <a name="invoke-process-automation-flows-to-create-quality-orders"></a>Wywoływanie przepływów automatyzacji procesów w celu tworzenia zleceń wysokiej jakości
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!--KFM: Preview until 12/1/2021 -->
 
 Organizacje mają coraz większe zapotrzebowanie na automatyzację standardowych procesów biznesowych, zapewnienie wygodniejszej interakcji z pracownikami oraz wykorzystanie różnych sygnałów danych i systemów do automatycznego sterowania procesami biznesowymi. Dzięki automatyzacji procesów (RPA) i Microsoft Power Automate firmy mogą używać funkcji bez kodowania do automatyzowania powtarzalnych procesów, zyskując tym samym wydajność i dokładność.
 

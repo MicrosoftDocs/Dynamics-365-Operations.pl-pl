@@ -1,27 +1,23 @@
 ---
+# required metadata
 title: Zarządzanie procesami rekrutacji
-description: W tym artykule opisano pojęcia, których osoby rekrutujące mogą używać do śledzenia etapów procesu rekrutacji.
+description: 'W tym temacie opisano pojęcia, których osoby rekrutujące mogą używać do śledzenia etapów procesu rekrutacji.'
 author: andreabichsel
-ms.date: 06/20/2017
+ms.date: 01/10/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: HRMApplication, HRMRecruitingTable
+ms.prod: null
+ms.technology: null
+ms.search.form: 'HRMApplication, HRMRecruitingTable'
 audience: Application User
 ms.reviewer: anbichse
 ms.custom: 7501
 ms.assetid: 1ad725bf-20e2-42a1-8068-111f7ddddad9
 ms.search.region: Global
 ms.author: anbichse
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: '2016-02-28'
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: adf873a58900fa86d068d9ebc75f4f389e7d8359cc685d4635e083437c55ae56
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752997"
 ---
+
 # <a name="manage-recruiting-processes"></a>Zarządzanie procesami rekrutacji
 
 [!include [banner](../includes/banner.md)]
@@ -42,7 +38,7 @@ Projekty rekrutacji pozwalają rekruterom na śledzenie postępu procesu wypełn
 - Termin zgłoszenia
 - Prognozowana data rozpoczęcia
 
-Projekt rekrutacji zawiera **Ofertę pracy** używaną w systemie **Samoobsługi pracownika** do reklamowanie wolnego stanowiska. Aby wyświetlić wolne stanowisko pracownikom, projekt rekrutacji musi mieć **Ofertę pracy**, pole **Wyświetl na ekranie samoobsługi pracownika** musi mieć wartość Yes, **Ostateczny termin zgłoszenia** musi być ustawiony na datę przyszłą, a projekt rekrutacji musi mieć **Stan projektu** Rozpoczęty. W poniższej tabel wymieniono możliwe stany projektu rekrutacji i ich opisy.
+Projekt rekrutacji zawiera **Ofertę pracy** używaną na stronie **Samoobsługi pracownika** do reklamowanie wolnego stanowiska. Otwarcie można wyświetlić pracownikom tylko wtedy, gdy projekt rekrutacyjny ma wartość **Ogłoszenie o pracę**, pole **Wyświetl w samoobsłudze pracowniczej** jest ustawione na **Tak**, **Termin składania wniosków** pole jest ustawione na datę przyszłą, a projekt rekrutacyjny ma **status projektu** wartość **rozpoczęty**. W poniższej tabel wymieniono możliwe stany projektu rekrutacji i ich opisy.
 
 | Stan    | Wskazuje, że…                                                                         |
 |-----------|-----------------------------------------------------------------------------------------|
@@ -55,7 +51,7 @@ Rekruterzy mogą również rejestrować **multimedia** używane do reklamowania 
 
 ## <a name="applicants"></a>Kandydaci
 
-Kandydat to osoba, która ubiega się o pracę w firmie. Kandydaci są wspólni dla wszystkich firm w organizacji, co powiększa pulę osób do wyszukiwania. Można zachować kompetencje, odwołania, wymagania związane z zakwaterowaniem, dane osobowe kandydatów. Po utworzeniu rekordu kandydata jest tworzony rekord tej osoby w globalnej książce adresowej. Na stronie **Kandydat** można przesyłać następujące informacje globalnej książki adresowej dla osób, które są kandydatami:
+Kandydat to osoba, która ubiega się o pracę w firmie. Kandydaci są współużytkni ze wszystkimi firmami w Twojej organizacji. W związku z tym dostępny jest duża pula talentów, w których można wyszukiwać. Można zachować kompetencje, odwołania, wymagania związane z zakwaterowaniem, dane osobowe kandydatów. Po utworzeniu rekordu kandydata jest tworzony rekord tej osoby w globalnej książce adresowej. Na stronie **Kandydat** można przesyłać następujące informacje globalnej książki adresowej dla osób, które są kandydatami:
 
 - Informacje adresowe
 - Informacje kontaktowe
@@ -84,7 +80,7 @@ Stan zgłoszenia wskazuje, w jakim miejscu procesu rekrutacji jest podanie o pra
 
 ### <a name="correspondence-actions"></a>Akcje korespondencyjne
 
-Akcja korespondencyjna dla **Zgłoszenia** określa szablon dokumentu lub wiadomości e-mail, który ma zostać użyty do komunikacji z kandydatem, który przesłał zgłoszenie. Można skojarzyć elementy **Zakładki zgłoszeń** z akcjami korespondencyjnymi, aby w komunikacji z kandydatami można było używać wartości ze stron Zgłoszenie, Kandydat, Rozmowa kwalifikacyjna i Projekt rekrutacji. Elementy **Szablony wiadomości e-mail dotyczące zgłoszeń** można tworzyć dla akcji korespondencyjnych do szybkiego wysyłania e-maili do kandydatów, którzy mają zgłoszenie z określoną kombinacją stanu i akcji korespondencyjnej. Na przykład można wysłać e-mail z potwierdzeniem do wszystkich zgłoszeń z ustawieniem **Stan** jako Odebrane i ustawieniem **Akcja korespondencyjna** jako Odebrane. Po wysłaniu e-maila można automatycznie zaktualizować stan zgłoszenia.
+Akcja korespondencyjna dla Zgłoszenia określa szablon dokumentu lub wiadomości e-mail, który ma zostać użyty do komunikacji z kandydatem, który przesłał zgłoszenie. Można skojarzyć elementy **Zakładki zgłoszeń z akcjami korespondencyjnymi**, aby w komunikacji z kandydatami można było używać wartości ze stron **Zgłoszenie**, **Kandydat**, **Rozmowa kwalifikacyjna** i **Projekt rekrutacji**. Elementy **Szablony wiadomości e-mail dotyczące zgłoszeń** dla akcji korespondencyjnych, możesz szybko wysyłać e-maile do wnioskodawców, których wnioski mają określoną kombinację statusu i akcji korespondencyjnej. Na przykład można wysłać e-mail z potwierdzeniem do wszystkich zgłoszeń z ustawieniem **Stan** jako **Odebrane** i ustawieniem **Akcja korespondencyjna** jako **Odebrane**. Po wysłaniu e-maila można automatycznie zaktualizować stan zgłoszenia.
 
 ## <a name="application-routing"></a>Marszruta zgłoszenia
 
@@ -101,6 +97,5 @@ Elementy **Rozmowy kwalifikacyjne z kandydatami** można planować na stronie **
 ## <a name="hiring-applicants"></a>Zatrudnianie kandydatów
 
 Kandydatów zatrudnia się na stronie **Zgłoszenia**. Po zatrudnieniu kandydata rekord zgłoszenia otrzymuje stan **Zatrudniony**, a rekord osoby w globalnej książce adresowej jest kojarzony z rekordem nowego pracownika. Zmiany w danych globalnej książki adresowej dla nowego rekordu pracownika są również wyświetlane w rekordzie kandydata. Zmniejsza to ilość danych, które trzeba wprowadzić, gdyby nowy pracownik złożył wniosek o zatrudnienie na innym stanowisku w tym samym przedsiębiorstwie. Aby zatrudnić istniejącego pracownika na nowym stanowisku, kliknij opcję **Zmień stanowisko** w menu rozwijanym **Stan zgłoszenia** i uruchom proces przeniesienia.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

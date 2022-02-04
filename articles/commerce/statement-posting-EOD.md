@@ -1,29 +1,24 @@
 ---
+# required metadata
 title: Ulepszenia funkcji księgowania zestawień
-description: W tym temacie opisano ulepszenia, które zostały wprowadzone w funkcji księgowania zestawień.
+description: 'W tym temacie opisano ulepszenia, które zostały wprowadzone w funkcji księgowania zestawień.'
 author: analpert
 ms.date: 12/03/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
+ms.prod: null
+ms.technology: null
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: analpert
-ms.search.validFrom: 2018-04-30
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e7e88511ac3d0044c7e590f43f4486929f691ce9
-ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7891450"
+ms.search.validFrom: '2018-04-30'
+ms.dyn365.ops.version: 'AX 7.0.0, Retail July 2017 update'
 ---
+
 # <a name="improvements-to-statement-posting-functionality"></a>Ulepszenia funkcji księgowania zestawień
 
 [!include [banner](includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 W tym temacie opisano pierwszy zestaw ulepszeń, które zostały wprowadzone w funkcji księgowania zestawień. Te ulepszenia są dostępne w programie Microsoft Dynamics 365 for Finance and Operations 7.3.2.
 

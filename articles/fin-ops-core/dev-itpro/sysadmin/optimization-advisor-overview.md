@@ -1,35 +1,30 @@
 ---
+# required metadata
 title: Omówienie Doradcy optymalizacji
-description: W tym temacie opisano, jak za pomocą Doradcy optymalizacji uzyskać optymalną konfigurację rozwiązania Finance and Operations.
+description: 'W tym temacie opisano, jak za pomocą Doradcy optymalizacji uzyskać optymalną konfigurację rozwiązania Finance and Operations.'
 author: roxanadiaconu
 ms.date: 07/23/2019
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
+ms.topic: overview
+ms.prod: null
+ms.technology: null
 ms.search.form: SelfHealingWorkspace
-audience: Application User, IT Pro
+audience: 'Application User, IT Pro'
 ms.reviewer: sericks
-ms.custom: intro-internal
-ms.assetid: ''
+ms.assetid: null
 ms.search.region: global
-ms.search.industry: ''
+ms.search.industry: null
 ms.author: sericks
-ms.search.validFrom: 2017-12-01
-ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: fb076882e20e7c94bf0a95f3a5365b5fe8c25cedd431fb07d6e0dc5950ebb688
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728998"
+ms.search.validFrom: '2017-12-01'
+ms.dyn365.ops.version: 7.3
 ---
+
 # <a name="optimization-advisor-overview"></a>Omówienie Doradcy optymalizacji
 
 [!include [banner](../includes/banner.md)]
 
 W tym temacie opisano, jak za pomocą Doradcy optymalizacji uzyskać optymalną konfigurację rozwiązania Finance and Operations.
 
-## <a name="overview"></a>Omówienie
+## <a name="overview"></a>Przegląd
 
 Niepoprawna konfiguracja i instalacja modułu mogą negatywnie wpływać na dostępność funkcji aplikacji, wydajność systemu oraz przebieg procesów biznesowych. Również jakość danych biznesowych (na przykład poprawność, kompletność i czystość danych) wpływają na wydajność systemu, zdolność podejmowania decyzji w organizacji, wydajność pracy itd.
 

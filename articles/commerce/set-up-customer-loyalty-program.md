@@ -1,30 +1,26 @@
 ---
+# required metadata
 title: Omówienie programu lojalnościowego
-description: W tym temacie opisano funkcje programów lojalnościowych zawarte w aplikacji Dynamics 365 Commerce oraz odnośne procedury konfiguracyjne, które ułatwią sprzedawcy detalicznemu rozpoczęcie tworzenia programów lojalnościowych.
+description: 'W tym temacie opisano funkcje programów lojalnościowych zawarte w aplikacji Dynamics 365 Commerce oraz odnośne procedury konfiguracyjne, które ułatwią sprzedawcy detalicznemu rozpoczęcie tworzenia programów lojalnościowych.'
 author: scott-tucker
 ms.date: 07/21/2020
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: RetailLoyaltyPrograms, RetailPriceDiscGroup
+ms.topic: overview
+ms.prod: null
+ms.technology: null
+ms.search.form: 'RetailLoyaltyPrograms, RetailPriceDiscGroup'
 audience: Application User
 ms.reviewer: josaw
 ms.custom:
-- "16201"
-- intro-internal
+  - '16201'
+  - intro-internal
 ms.assetid: f79559d2-bc2d-4f0b-a938-e7a61524ed80
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: scotttuc
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: be8090ee8fc3b58d37e221a6e1a5b8caf9704cf242a9ae22f860499c5b5bafcf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755064"
+ms.search.validFrom: '2016-02-28'
+ms.dyn365.ops.version: 'AX 7.0.0, Retail July 2017 update'
 ---
+
 # <a name="loyalty-overview"></a>Omówienie programu lojalnościowego
 
 [!include [banner](includes/banner.md)]

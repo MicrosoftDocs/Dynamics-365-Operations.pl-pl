@@ -1,28 +1,24 @@
 ---
-title: Ocenianie modelu początkowych prognoz płatności odbiorcy (wersja zapoznawcza)
-description: W tym temacie opisano kroki, które można wykonać w celu zrozumienia zasad działania modelu przewidywania płatności od odbiorców i oceny jego skuteczności.
+# required metadata
+title: Ocenianie modelu początkowych prognoz płatności odbiorcy
+description: 'W tym temacie opisano kroki, które można wykonać w celu zrozumienia zasad działania modelu przewidywania płatności od odbiorców i oceny jego skuteczności.'
 author: ShivamPandey-msft
 ms.date: 07/16/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
+ms.prod: null
+ms.technology: null
+ms.search.form: null
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
-ms.search.validFrom: 2020-05-28
+ms.search.validFrom: '2020-05-28'
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: f45392d540b6696d23261a6b2197c3185f5ede2b7c646f6b751480145dcacfdc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768874"
 ---
-# <a name="evaluate-the-initial-customer-payment-prediction-model-preview"></a>Ocenianie modelu początkowych prognoz płatności odbiorcy (wersja zapoznawcza)
+
+# <a name="evaluate-the-initial-customer-payment-prediction-model"></a>Ocenianie modelu początkowych prognoz płatności odbiorcy
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,29 +1,25 @@
 ---
+# required metadata
 title: Omówienie zaopatrzenia i sourcingu
 description: Ten artykuł zawiera omówienie funkcji dostępnych w module Zaopatrzenie i sourcing.
 author: Henrikan
 ms.date: 05/06/2020
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: CatProcureCatalogListPage, CatVendorCatalogListPage, PurchTable, PurchTablePart
+ms.topic: overview
+ms.prod: null
+ms.technology: null
+ms.search.form: 'CatProcureCatalogListPage, CatVendorCatalogListPage, PurchTable, PurchTablePart'
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom:
-- "58021"
-- intro-internal
+  - '58021'
+  - intro-internal
 ms.assetid: eea24e23-a803-4de0-a218-6485757cde1b
 ms.search.region: Global
 ms.author: henrikan
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: '2016-02-28'
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1d1e127fe96b29520022f18a5b02369d3593c46b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569536"
 ---
+
 # <a name="procurement-and-sourcing-overview"></a>Omówienie zaopatrzenia i sourcingu
 
 [!include [banner](../includes/banner.md)]

@@ -1,30 +1,26 @@
 ---
+# required metadata
 title: System pomocy (zawiera film)
-description: Ten temat zawiera omówienie systemu pomocy dla aplikacji Finance and Operations.
+description: Ten temat zawiera omówienie systemu pomocy dla aplikacji Finanse i Operacje.
 author: edupont04
 ms.date: 07/20/2021
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
+ms.topic: overview
+ms.prod: null
+ms.technology: null
 ms.search.form: SystemParameters
-audience: Application User, Developer, IT Pro
+audience: 'Application User, Developer, IT Pro'
 ms.reviewer: tfehr
 ms.custom:
-- "16381"
-- intro-internal
+  - '16381'
+  - intro-internal
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
 ms.author: edupont
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: '2016-02-28'
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d272221cc7a976d48b09b2f78bdb3f7fded2fc53
-ms.sourcegitcommit: ef0dd4245fc499907ffe00e2a32f59a6cd96e45d
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "7937537"
 ---
-# <a name="help-system"></a>System Pomocy
+
+# <a name="help-system"></a>System pomocy
 
 [!include [banner](../includes/banner.md)]
 
@@ -50,7 +46,7 @@ Zawartość witryny docs.microsoft.com można znaleźć przy użyciu dowolnej wy
 
 ## <a name="get-notified-about-changes-through-an-rss-feed"></a>Otrzymywanie powiadomień o zmianach za pomocą kanału informacyjnego RSS
 
-Aby zasubskrybować kanał RSS wszystkich aktualizacji zawartości witryny docs.microsoft.com w aplikacjach Finance and Operations, użyj następującego łącza:
+Aby zasubskrybować kanał RSS wszystkich aktualizacji zawartości witryny docs.microsoft.com w aplikacjach Finanse i Operacje, użyj następującego łącza:
 
 [Źródło danych RSS](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
 

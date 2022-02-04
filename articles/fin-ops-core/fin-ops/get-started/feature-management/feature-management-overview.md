@@ -1,28 +1,23 @@
 ---
+# required metadata
 title: Zarządzanie funkcjami — omówienie
 description: W tym temacie opisano funkcję zarządzania funkcjami i sposób jego używania.
 author: Peakerbl
-ms.date: 09/13/2021
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
+ms.date: 01/10/2022
+ms.topic: overview
+ms.prod: null
+ms.technology: null
 ms.search.form: FeatureManagementWorkspace
-audience: IT Pro, Application user
+audience: 'IT Pro, Application user'
 ms.reviewer: sericks
-ms.custom: intro-internal
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom:
-- month/year of release that feature was introduced in
-- in format yyyy-mm-dd
+  - month/year of release that feature was introduced in
+  - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 1318093d66cfc30a04815311cce332df010d4b69
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488185"
 ---
+
 # <a name="feature-management-overview"></a>Zarządzanie funkcjami — omówienie
 
 [!include [banner](../../includes/banner.md)]
@@ -75,9 +70,9 @@ Funkcje, które są **domyślnie włączone**, są domyślnie włączone, ale mo
 > [!NOTE]
 > Ponieważ funkcje te zostaną włączone automatycznie, ważne jest, abyś określił, czy Twoja organizacja jest gotowa na ich wykorzystanie, czy też potrzeba na to więcej czasu. Jeśli potrzeba więcej czasu, może być konieczne tymczasowe wyłączenie tych funkcji. Należy zauważyć, że przejście funkcji do **Domyślnie włączona** odbywa się w głównej wersji, zanim funkcja ma stać się **obowiązkowa**. W tym momencie nie będzie można wyłączyć tej funkcji. 
 
-### <a name="released-features-mandatory"></a>Wydane funkcje (obowiązkowe)
+### <a name="mandatory"></a>Wymagana
 
-**Wydana** jest stanem końcowym dla funkcji. Informuje on, że funkcje są włączone i nie można ich wyłączyć bez kontaktu z firmą Microsoft. Opcjonalne funkcje mają stać się obowiązkowe po dwóch głównych wersjach. Funkcje krytyczne mogą, w drodze wyjątku, zostać wprowadzone jako obowiązkowe.
+**Wymagana** jest oczekiwanym stanem końcowym funkcji. Informuje on, że funkcje są włączone i nie można ich wyłączyć bez kontaktu z firmą Microsoft. Opcjonalne funkcje mają stać się obowiązkowe po dwóch głównych wersjach. Funkcje krytyczne mogą, w drodze wyjątku, zostać wprowadzone jako obowiązkowe.
 
 ## <a name="example-of-expected-feature-lifecycles"></a>Przykład oczekiwanych cykli życia operacji
 

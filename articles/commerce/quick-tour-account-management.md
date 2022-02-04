@@ -1,27 +1,22 @@
 ---
+# required metadata
 title: Omówienie stron zarządzania kontem
 description: W tym temacie omówiono strony zarządzania kontami w firmie Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 09/15/2020
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
+ms.topic: overview
+ms.prod: null
+ms.technology: null
+ms.search.form: null
 audience: Application User
 ms.reviewer: v-chgri
-ms.custom: intro-internal
 ms.search.region: Global
-ms.search.industry: ''
+ms.search.industry: null
 ms.author: anupamar
-ms.search.validFrom: 2019-10-31
+ms.search.validFrom: '2019-10-31'
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b3a4355d4bb7cb2ed7e1ba62807cb3422d3c07985a13e722737ac46a8be30eed
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717653"
 ---
+
 # <a name="account-management-pages-overview"></a>Omówienie stron zarządzania kontem
 
 [!include [banner](includes/banner.md)]

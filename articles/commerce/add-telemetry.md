@@ -1,26 +1,22 @@
 ---
+# required metadata
 title: Dodawanie kodu skryptu do stron witryny w celu obsługi telemetrii
 description: W tym temacie opisano sposób dodawania kodu skryptów po stronie klienta do stron witryny w celu obsługi zbierania danych telemetrycznych po stronie klienta.
 author: bicyclingfool
 ms.date: 09/29/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
+ms.prod: null
+ms.technology: null
 audience: Application user
 ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.custom: null
+ms.assetid: null
 ms.search.region: Global
 ms.author: StuHarg
-ms.search.validFrom: 2019-10-31
+ms.search.validFrom: '2019-10-31'
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e3916b18c797222c300957fb25cabad78c4fcb9744a29d611a81b0bda3e9834d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724611"
 ---
+
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Dodawanie kodu skryptu do stron witryny w celu obsługi telemetrii
 
 [!include [banner](includes/banner.md)]
@@ -111,8 +107,6 @@ Aby dodać zewnętrzny skrypt bezpośrednio do szablonu w konstruktorze stron, n
 [Praca z plikami zastępowania CSS](css-override-files.md)
 
 [Dodawanie ikony favicon](add-favicon.md)
-
-[Dodawanie wiadomości powitalnej](add-welcome-message.md)
 
 [Dodawanie powiadomienia o prawach autorskich](add-copyright-notice.md)
 

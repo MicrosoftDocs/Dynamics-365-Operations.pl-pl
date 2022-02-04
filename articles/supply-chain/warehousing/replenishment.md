@@ -1,30 +1,26 @@
 ---
+# required metadata
 title: Omówienie uzupełniania zapasów
-description: W tym temacie opisano strategie uzupełniania zapasów, które są dostępne dla magazynów używających funkcji dostępnych w module Zarządzanie magazynem.
+description: 'W tym temacie opisano strategie uzupełniania zapasów, które są dostępne dla magazynów używających funkcji dostępnych w module Zarządzanie magazynem.'
 author: Mirzaab
 ms.date: 02/19/2020
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: WHSReplenishmentTemplates, WHSReplenishmentTemplates, WHSInventFixedLocation, WHSRequestType
+ms.topic: overview
+ms.prod: null
+ms.technology: null
+ms.search.form: 'WHSReplenishmentTemplates, WHSReplenishmentTemplates, WHSInventFixedLocation, WHSRequestType'
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom:
-- "90043"
-- intro-internal
+  - '90043'
+  - intro-internal
 ms.assetid: 49fa97eb-8e10-49a5-9261-1e393159f178
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mirzaab
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: '2016-02-28'
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 481656e9273c6dbaa04f50decb4614c74709b2b2f98d424ed9e1ea4c831b9c5f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723438"
 ---
+
 # <a name="replenishment-overview"></a>Omówienie uzupełniania zapasów
 
 [!include [banner](../includes/banner.md)]

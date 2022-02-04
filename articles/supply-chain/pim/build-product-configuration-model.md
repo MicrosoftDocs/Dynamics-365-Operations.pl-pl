@@ -1,30 +1,26 @@
 ---
+# required metadata
 title: Omówienie konfiguracji produktu
-description: Konieczność konfigurowania produktów spełniających specjalne oczekiwania coraz częściej jest normą, a nie wyjątkiem, zarówno w relacjach między firmami, jak i między firmą a konsumentem.
+description: 'Konieczność konfigurowania produktów spełniających specjalne oczekiwania coraz częściej jest normą, a nie wyjątkiem, zarówno w relacjach między firmami, jak i między firmą a konsumentem.'
 author: t-benebo
 ms.date: 07/25/2019
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: PCProductConfigurationModelDetails, ConfigPartOf
+ms.topic: overview
+ms.prod: null
+ms.technology: null
+ms.search.form: 'PCProductConfigurationModelDetails, ConfigPartOf'
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom:
-- "75083"
-- intro-internal
+  - '75083'
+  - intro-internal
 ms.assetid: f08072b8-cb0b-43aa-9509-f5ec32caecd9
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: benebotg
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: '2016-02-28'
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6ceeb90fc85a966183726d8c2f0dd8b0c8bf2719
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570880"
 ---
+
 # <a name="product-configuration-overview"></a>Omówienie konfiguracji produktu
 
 [!include [banner](../includes/banner.md)]

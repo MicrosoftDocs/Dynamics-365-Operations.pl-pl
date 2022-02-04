@@ -1,29 +1,23 @@
 ---
+# required metadata
 title: Rozpoczynanie pracy z fakturowaniem elektronicznym dla Meksyku
-description: Ten temat zawiera informacje, które pomogą w rozpoczęciu pracy z Faktury elektroniczne dla Meksyku.
+description: 'Ten temat zawiera informacje, które pomogą w rozpoczęciu pracy z Faktury elektroniczne dla Meksyku.'
 author: gionoder
 ms.date: 12/01/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
+ms.prod: null
+ms.technology: null
+ms.search.form: null
 audience: Application User
 ms.reviewer: kfend
-ms.custom:
-- "97423"
-- intro-internal
-ms.assetid: ''
+ms.custom: intro-internal
+ms.assetid: null
 ms.search.region: Global
 ms.author: janeaug
-ms.search.validFrom: 2020-07-08
+ms.search.validFrom: '2020-07-08'
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: f512a6208bc85cd5796ce9515d2bc440f92ea79f
-ms.sourcegitcommit: 385fc4e9c641b43734ddb030893904489361af7d
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "7881598"
 ---
+
 # <a name="get-started-with-electronic-invoicing-for-mexico"></a>Rozpoczynanie pracy z fakturowaniem elektronicznym dla Meksyku
 
 [!include [banner](../includes/banner.md)]

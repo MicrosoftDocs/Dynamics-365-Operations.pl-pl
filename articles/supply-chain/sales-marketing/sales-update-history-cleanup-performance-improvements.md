@@ -4,25 +4,18 @@ description: W tym temacie opisano historię sprzedaży oraz sposób jej włącz
 author: myvakalo
 ms.date: 10/05/2021
 ms.topic: article
-ms.search.form: ''
+ms.search.form: null
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: myvakalo
-ms.search.validFrom: 2021-09-29
+ms.search.validFrom: '2021-09-29'
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 610f0d4e0448dd21d10765400f25cd89e3c7a84b
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920280"
 ---
+
 # <a name="sales-history-cleanup-performance-improvements"></a>Ulepszenia wydajności oczyszczania historii sprzedaży
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!-- KFM: Preview until GA with 10.0.24 -->
 
 Okresowe zadanie wsadowe **Czyszczenie historii sprzedaży** może trwać długo, jeśli jest wykonywane rzadko w środowiskach z dużą ilością aktualizacji sprzedaży. W takich sytuacjach funkcja *Ulepszeń wydajności oczyszczania historii sprzedaży* może pomóc w skróceniu czasu trwania działania i poprawieniu niezawodności.
 

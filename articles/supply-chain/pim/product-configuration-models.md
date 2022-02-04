@@ -1,29 +1,25 @@
 ---
+# required metadata
 title: Omówienie modeli konfiguracji produktu
-description: W tym artykule podano definicje terminów i pojęć, które są istotne dla modeli konfiguracji produktu. Modele konfiguracji produktu pozwalają zbudować standardową strukturę produktu, której potem można używać do konfigurowania wielu wariantów tego samego produktu.
+description: 'W tym artykule podano definicje terminów i pojęć, które są istotne dla modeli konfiguracji produktu. Modele konfiguracji produktu pozwalają zbudować standardową strukturę produktu, której potem można używać do konfigurowania wielu wariantów tego samego produktu.'
 author: t-benebo
 ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: PCProductConfigurationModelDetails, PCProductConfigurationModelListPage, PCModalWaitDialog, PCTemplateConfigurationManager, PCConfigurationUIGrouping
+ms.topic: overview
+ms.prod: null
+ms.technology: null
+ms.search.form: 'PCProductConfigurationModelDetails, PCProductConfigurationModelListPage, PCModalWaitDialog, PCTemplateConfigurationManager, PCConfigurationUIGrouping'
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom:
-- "4031"
-- intro-internal
+  - '4031'
+  - intro-internal
 ms.assetid: 70b968e8-e550-4731-823d-d713b8910f7b
 ms.search.region: Global
 ms.author: benebotg
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: '2016-02-28'
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e8c583a9a5023b188788b3c2199a7602c425be93
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568526"
 ---
+
 # <a name="product-configuration-models-overview"></a>Omówienie modeli konfiguracji produktu
 
 [!include [banner](../includes/banner.md)]

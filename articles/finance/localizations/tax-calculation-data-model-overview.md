@@ -1,32 +1,27 @@
 ---
+# required metadata
 title: Model danych obliczania podatku
-description: Ten temat zawiera informacje dotyczące modelu danych podatku oraz sposobu, w jaki wartości pól poszczególnych modeli danych są określane na podstawie kontekstu transakcji obliczania podatku.
+description: 'Ten temat zawiera informacje dotyczące modelu danych podatku oraz sposobu, w jaki wartości pól poszczególnych modeli danych są określane na podstawie kontekstu transakcji obliczania podatku.'
 author: kailiang
 ms.date: 10/15/2021
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
+ms.topic: overview
+ms.prod: null
+ms.technology: null
+ms.search.form: null
 audience: Application user
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
-ms.custom: ''
+ms.search.scope: 'Core, Operations'
+ms.custom: null
 ms.search.region: Global
 ms.author: kailiang
-ms.search.validFrom: 2021-08-02
+ms.search.validFrom: '2021-08-02'
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 4b9b3e28b9435e9614b06d4fa2855b31d0e38b41
-ms.sourcegitcommit: 93cc9823016c9f2fd568ada0b670a52c8c3bfa33
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "7864267"
 ---
 # <a name="tax-calculation-data-model"></a>Model danych obliczania podatku
 
 Ten temat zawiera informacje dotyczące sposobu, w jaki wartości pól modelu danych podatku są określane w transakcjach obliczania podatku.
 
-*Model danych podatku* składa się z pól wymaganych do obliczeń podatku. Firma Microsoft dostarcza *model danych obliczania podatku*, który zawiera pola nagłówka i pola wiersza dokumentów transakcji w aplikacjach Finance and Operations. Pola zdefiniowane w modelu danych obliczania podatku to dostępne kolumny tabel reguł możliwości zastosowania w konfiguracji funkcji obliczania podatku.
+*Model danych podatku* składa się z pól wymaganych do obliczeń podatku. Firma Microsoft dostarcza *model danych obliczania podatku*, który zawiera pola nagłówka i pola wiersza dokumentów transakcji w aplikacjach Finanse i Operacje. Pola zdefiniowane w modelu danych obliczania podatku to dostępne kolumny tabel reguł możliwości zastosowania w konfiguracji funkcji obliczania podatku.
 
 > [!NOTE] 
 > Niektóre węzły zdefiniowane w modelu danych, takie jak **Identyfikator rekordu** i **Identyfikator tabeli**, są przeznaczone do celów technicznych. Nie są one dostępne jako kolumny w konfiguracji funkcji obliczania podatku.
@@ -55,7 +50,7 @@ Można także wyświetlić model danych obliczania podatku oraz dostępne kolumn
 
     [![Zarządzaj kolumnami.](./media/tax-calculation-model-mapping-3.png)](./media/tax-calculation-model-mapping-3.png)
 
-Model danych obliczania podatku jest zintegrowany z aplikacjami Finance and Operations. Podczas każdej transakcji związanej z obliczaniem podatku wartości pól zdefiniowanych w tabelach reguł możliwości stosowania są zbierane i wysyłane do usługi obliczania podatku w celu obliczenia. W wersji 40.46 dostępnych jest 57 wstępnie zdefiniowanych modeli danych następujących typów transakcji: zamówienia zakupu, zamówienia sprzedaży, zamówienia przeniesienia, zapotrzebowania na zakup, zapytania ofertowe i oferty sprzedaży.
+Model danych obliczania podatku jest zintegrowany z aplikacjami Finanse i Operacje. Podczas każdej transakcji związanej z obliczaniem podatku wartości pól zdefiniowanych w tabelach reguł możliwości stosowania są zbierane i wysyłane do usługi obliczania podatku w celu obliczenia. W wersji 40.46 dostępnych jest 57 wstępnie zdefiniowanych modeli danych następujących typów transakcji: zamówienia zakupu, zamówienia sprzedaży, zamówienia przeniesienia, zapotrzebowania na zakup, zapytania ofertowe i oferty sprzedaży.
 
 Nagłówek transakcji może zawierać 31 modeli danych jako pola. Jednak nie wszystkie pola mogą być stosowane do wszystkich typów transakcji. W poniższej tabeli pokazano, które pola nagłówka są dostępne w przypadku poszczególnych typów transakcji. W niektórych przypadkach mapowanie pola musi być określone za pomocą wstępnie zdefiniowanej logiki. W stosownych przypadkach jest podana logika.
 

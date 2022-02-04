@@ -1,28 +1,23 @@
 ---
+# required metadata
 title: Omówienie integracji z Microsoft Dynamics 365 Field Service
 description: Ten temat zawiera omówienie integracji z programem Microsoft Dynamics 365 Field Service.
 author: Henrikan
 ms.date: 07/25/2019
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
-audience: Application User, IT Pro
+ms.topic: overview
+ms.prod: null
+ms.technology: null
+ms.search.form: null
+audience: 'Application User, IT Pro'
 ms.reviewer: kamaybac
-ms.custom: intro-internal
-ms.assetid: ''
+ms.assetid: null
 ms.search.region: global
-ms.search.industry: ''
+ms.search.industry: null
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 23661bca91ccd7b7a04c763e60cfca9a99d62bfa
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566462"
 ---
+
 # <a name="integration-with-microsoft-dynamics-365-field-service-overview"></a>Omówienie integracji z Microsoft Dynamics 365 Field Service
 
 [!include[banner](../includes/banner.md)]

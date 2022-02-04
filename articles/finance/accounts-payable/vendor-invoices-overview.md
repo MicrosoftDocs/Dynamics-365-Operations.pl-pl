@@ -1,29 +1,25 @@
 ---
+# required metadata
 title: Omówienie faktur od dostawców
 description: Ten temat zawiera ogólne informacje o fakturach od dostawców.
 author: abruer
 ms.date: 06/03/2021
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
+ms.topic: overview
+ms.prod: null
+ms.technology: null
+ms.search.form: 'VendorInvoiceWorkspace, VendInvoiceInfoListPage'
 audience: Application User
 ms.reviewer: roschlom
 ms.custom:
-- "13971"
-- intro-internal
+  - '13971'
+  - intro-internal
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ms.search.region: Global
 ms.author: abruer
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: '2016-02-28'
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e846cde14fe078d6675ec31d1a3271f751dd6468
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647147"
 ---
+
 # <a name="vendor-invoices-overview"></a>Omówienie faktur od dostawców
 
 [!include [banner](../includes/banner.md)]

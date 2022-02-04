@@ -1,26 +1,21 @@
 ---
+# required metadata
 title: Omówienie konsolidacji finansowych i przeliczania walut
 description: W tym temacie opisano funkcje konsolidacji finansowych i przeliczania walut dostępne w księdze głównej.
 author: jiwo
 ms.date: 10/07/2021
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
+ms.topic: overview
+ms.prod: null
+ms.technology: null
+ms.search.form: null
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: intro-internal
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: c9ec8e6a371f08ad7eab0d133e1b71861943274e
-ms.sourcegitcommit: f76fecbc28c9a6048366e8ead70060b1f5d21a97
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7615942"
 ---
+
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Omówienie konsolidacji finansowych i przeliczania walut
 
 [!include [banner](../includes/banner.md)]

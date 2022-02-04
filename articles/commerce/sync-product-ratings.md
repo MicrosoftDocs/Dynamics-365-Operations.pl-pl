@@ -1,27 +1,23 @@
 ---
+# required metadata
 title: Synchronizacja ocen produktów w rozwiązaniu Dynamics 365 Commerce
 description: W tym temacie opisano sposób synchronizowania ocen produktów w Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 02/06/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
+ms.prod: null
+ms.technology: null
 audience: Application User
 ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.custom: null
+ms.assetid: null
 ms.search.region: Global
-ms.search.industry: ''
+ms.search.industry: null
 ms.author: gmohanv
-ms.search.validFrom: 2019-10-31
+ms.search.validFrom: '2019-10-31'
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a50c09dc9fd8a4c18bbd01c70338279ac0ad9ae6
-ms.sourcegitcommit: 81bc42551e6c9af6ad38908afb606ee1f8d3c44b
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7473532"
 ---
+
 # <a name="sync-product-ratings-in-dynamics-365-commerce"></a>Synchronizacja ocen produktów w rozwiązaniu Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
@@ -130,6 +126,16 @@ Na poniższej ilustracji przedstawiono przykład ocen produktów w kanałach biu
 [Zarządzanie ocenami i recenzjami](manage-reviews.md)
 
 [Konfigurowanie ocen i recenzji](configure-ratings-reviews.md)
+
+[Synchronizacja ocen produktów](sync-product-ratings.md)
+
+[Włączanie ręcznego publikowania ocen i recenzji przez moderatora](manual-publish-rating-reviews.md)
+
+[Importowanie i eksportowanie klasyfikacji oraz przeglądów](import-export-reviews.md)
+
+[Konfigurowanie uwierzytelniania usługa-usługa](service-to-service-auth.md)
+
+[Oceny i recenzje — często zadawane pytania](ratings-reviews-faq.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

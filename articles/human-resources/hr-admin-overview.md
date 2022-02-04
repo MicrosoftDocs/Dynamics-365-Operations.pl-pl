@@ -1,27 +1,22 @@
 ---
+# required metadata
 title: Omówienie administracji
-description: Ten temat zawiera listę tematów pomocy oraz innych zasobów dotyczących konfigurowania programu Dynamics 365 Human Resources, zarządzania nim i rozwiązywania problemów z nim.
+description: 'Ten temat zawiera listę tematów pomocy oraz innych zasobów dotyczących konfigurowania programu Dynamics 365 Human Resources, zarządzania nim i rozwiązywania problemów z nim.'
 author: twheeloc
 ms.date: 08/11/2021
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
+ms.topic: overview
+ms.prod: null
+ms.technology: null
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
 ms.search.scope: Human Resources
-ms.custom: intro-internal
-ms.assetid: ''
+ms.assetid: null
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2020-02-03
+ms.search.validFrom: '2020-02-03'
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6b4ceba9f071f73813eb9e79c5d8e2a00779c915
-ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7393578"
 ---
+
 # <a name="administration-overview"></a>Omówienie administracji
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]

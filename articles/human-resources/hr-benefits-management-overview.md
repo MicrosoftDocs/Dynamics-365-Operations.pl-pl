@@ -1,27 +1,22 @@
 ---
+# required metadata
 title: Omówienie zarządzania świadczeniami
 description: Ten temat zawiera omówienie funkcji zarządzania świadczeniami w programie Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 12/06/2021
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
+ms.topic: overview
+ms.prod: null
+ms.technology: null
+ms.search.form: 'BenefitWorkspace, HcmBenefitSummaryPart'
 audience: Application User
 ms.search.scope: Human Resources
-ms.custom: intro-internal
-ms.assetid: ''
+ms.assetid: null
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2020-02-03
+ms.search.validFrom: '2020-02-03'
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: dc06fd2ef4992b4ef2e20ace4f5c6bcc0bffb9d2
-ms.sourcegitcommit: e06b7d4de6d5ee7ae491d437d6c0365608a5380b
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "7892509"
 ---
+
 # <a name="benefits-management-overview"></a>Omówienie zarządzania świadczeniami
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]

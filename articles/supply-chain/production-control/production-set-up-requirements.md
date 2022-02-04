@@ -1,12 +1,13 @@
 ---
+# required metadata
 title: Wymagania konfiguracji produkcji
-description: Ten artykuł zawiera informacje o konfiguracji, jaką należy zapewnić przed rozpoczęciem używania modułu Kontrola produkcji.
+description: 'Ten artykuł zawiera informacje o konfiguracji, jaką należy zapewnić przed rozpoczęciem używania modułu Kontrola produkcji.'
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ProdParameters, RouteOpr, RouteOprTable, WorkCalendarTable, WorkTimeTable, WrkCtrTable
+ms.prod: null
+ms.technology: null
+ms.search.form: 'ProdParameters, RouteOpr, RouteOprTable, WorkCalendarTable, WorkTimeTable, WrkCtrTable'
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 55561
@@ -14,15 +15,10 @@ ms.assetid: 1953059f-478d-4706-b461-25b89ace5fc3
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: johanho
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: '2016-02-28'
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b0ccbd1781ccb5aa7f5f62ea86888e1673cb77653af57f6c49319a2b5089ebf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782450"
 ---
+
 # <a name="production-setup-requirements"></a>Wymagania konfiguracji produkcji
 
 [!include [banner](../includes/banner.md)]
@@ -39,7 +35,7 @@ Aby używać modułu Kontrola produkcji, trzeba skonfigurować informacje w inny
 -   Zdefiniować grupy towarów.
 -   Skonfigurować konta księgowa grup towarów.
 -   Utworzyć tabelę pozycji magazynowych w module Zarządzanie zapasami.
--   Utworzyć Listy składowe (BOM) i ich wersje w module Zarządzanie zapasami.
+-   Twórz listy materiałów (BOM) i wersje BOM w Zarządzaniu informacjami o produktach.
 
 ## <a name="required-calendar-and-resource-setup"></a>Wymagana konfiguracja kalendarza i zasobu
 Aby używać modułu Kontrola produkcji, otwórz moduł Administrowanie organizacją i utwórz oraz zdefiniuj kalendarz i zasoby operacyjne w następującej kolejności:

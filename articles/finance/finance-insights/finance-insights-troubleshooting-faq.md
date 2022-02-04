@@ -1,33 +1,28 @@
 ---
+# required metadata
 title: Rozwiązywanie problemów z ustawieniami Finance insights
-description: W tym temacie wymieniono problemy, które mogą wystąpić, gdy są dostępne funkcje analizy Finance insights. Opisano w nim również sposób rozwiązania tych problemów.
+description: 'W tym temacie wymieniono problemy, które mogą wystąpić, gdy są dostępne funkcje analizy Finance insights. Opisano w nim również sposób rozwiązania tych problemów.'
 author: panolte
 ms.date: 11/03/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
+ms.prod: null
+ms.technology: null
+ms.search.form: null
 audience: Application User
 ms.reviewer: roschlom
 ms.custom:
-- "14151"
-- intro-internal
+  - '14151'
+  - intro-internal
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
-ms.search.validFrom: 2021-08-20
+ms.search.validFrom: '2021-08-20'
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 68115d484abcdc3c37357ae441e9f9ccb5212659
-ms.sourcegitcommit: 6a9f068b59b62c95a507d1cc18b23f9fd80a859b
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "7827060"
 ---
+
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Rozwiązywanie problemów z ustawieniami Finance insights
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 W tym temacie wymieniono problemy, które mogą wystąpić, gdy są dostępne funkcje analizy Finance insights. Opisano w nim również sposób rozwiązania tych problemów.
 

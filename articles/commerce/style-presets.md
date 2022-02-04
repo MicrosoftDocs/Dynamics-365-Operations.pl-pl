@@ -1,26 +1,22 @@
 ---
+# required metadata
 title: Praca z predefiniowanymi ustawieniami stylów
-description: W tym temacie opisano, jak pracować z predefiniowanymi ustawieniami stylów w konstruktorze witryn Microsoft Dynamics 365 Commerce.
+description: 'W tym temacie opisano, jak pracować z predefiniowanymi ustawieniami stylów w konstruktorze witryn Microsoft Dynamics 365 Commerce.'
 author: phinneyridge
 ms.date: 05/28/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
+ms.prod: null
+ms.technology: null
 audience: Application user
 ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.custom: null
+ms.assetid: null
 ms.search.region: Global
 ms.author: niholman
-ms.search.validFrom: 2019-10-31
+ms.search.validFrom: '2019-10-31'
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 7857920a04faaebaee44d5485f7b2ffc2e675f59e7c9dc15b2b86376207e3a2d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772137"
 ---
+
 # <a name="work-with-style-presets"></a>Praca z predefiniowanymi ustawieniami stylów
 
 [!include [banner](includes/banner.md)]
@@ -115,8 +111,6 @@ Wartości stylu ustawienia wstępnego są aktywne w całej publicznej witrynie s
 [Praca z plikami zastępowania CSS](css-override-files.md)
 
 [Dodawanie ikony favicon](add-favicon.md)
-
-[Dodawanie wiadomości powitalnej](add-welcome-message.md)
 
 [Dodawanie powiadomienia o prawach autorskich](add-copyright-notice.md)
 

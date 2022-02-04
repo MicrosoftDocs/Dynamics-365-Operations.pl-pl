@@ -1,29 +1,25 @@
 ---
+# required metadata
 title: Zarządzanie transportem — omówienie
 description: W tym temacie omówiono funkcjonalność zarządzania transportem dostępną w rozwiązaniu Supply Chain Management.
 author: Henrikan
 ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: TMSParameters,TMSRateRouteWorkbench, WHSLoadPlanningWorkbench, TMSLoadBuildTemplateApply, WHSLoadTemplate, TMSTransportationStatus, TMSLoadSeal, TMSLoadBuildProposal, TMSLoadBuildWorkbench, TMSLoadBuildStrategy, TMSLoadBuildStrategyAttributeValue
+ms.topic: overview
+ms.prod: null
+ms.technology: null
+ms.search.form: 'TMSParameters,TMSRateRouteWorkbench, WHSLoadPlanningWorkbench, TMSLoadBuildTemplateApply, WHSLoadTemplate, TMSTransportationStatus, TMSLoadSeal, TMSLoadBuildProposal, TMSLoadBuildWorkbench, TMSLoadBuildStrategy, TMSLoadBuildStrategyAttributeValue'
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom:
-- "30251"
-- intro-internal
+  - '30251'
+  - intro-internal
 ms.assetid: d4e3550c-bca8-469c-82df-56ac0083e4ac
 ms.search.region: Global
 ms.author: henrikan
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: '2016-02-28'
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 360c42555a90d64d2c5fa429d674568fdcb84c6c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573088"
 ---
+
 # <a name="transportation-management-overview"></a>Omówienie zarządzania transportem
 
 [!include [banner](../includes/banner.md)]

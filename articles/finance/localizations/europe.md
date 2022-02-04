@@ -1,25 +1,20 @@
 ---
+# required metadata
 title: Europa — omówienie
 description: Ten temat zawiera łącza do zasobów dokumentacji Microsoft Dynamics 365 Finance dla Europy.
-author: ShylaThompson
-ms.date: 02/24/2021
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
+author: kfend
+ms.date: 01/15/2022
+ms.topic: overview
+ms.prod: null
+ms.technology: null
 audience: Application User
 ms.reviewer: kfend
-ms.custom: intro-internal
 ms.search.region: global
-ms.author: roschlom
-ms.search.validFrom: 2016-02-28
+ms.author: kfend
+ms.search.validFrom: '2016-02-28'
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e3c5e57bb115e27880c2fee888be4ab02c51462a
-ms.sourcegitcommit: 4946b7f250f8b5cd3d09098b08e74bc5763d1c86
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "7792616"
 ---
+
 # <a name="europe-overview"></a>Europa — omówienie
 
 [!include [banner](../includes/banner.md)]
@@ -94,6 +89,7 @@ Ten temat zawiera informacje i łącza do zasobów, które mogą pomóc w konfig
   - [Tworzenie i przesyłanie raportu VAT](tasks/create-submit-vat-report.md)
   - [Wyświetlanie transakcji w rozliczeniu dla Europy Wschodniej](emea-transactions-settlement-form.md)
   - [Data punktu podatkowego (data rejestru VAT)](emea-tax-point-date.md)
+  - [Data rejestru podatku VAT dostawcy](emea-date-vendor-VAT-register.md)
 - [Rozszerzenie funkcji przyczyn finansowych](emea-financial-reason.md)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby

@@ -1,35 +1,30 @@
 ---
-title: Konfiguracja dla Finance Insights w ramach publicznej wersji zapoznawczej (podglądowej) — wersja 10.0.20 i późniejsze
-description: W tym temacie wyjaśniono, jak skonfigurować system, aby korzystał z możliwości dostępnych w programie Finance Insights dla publicznego podglądu w wersji 10.0.20 i nowszych.
+# required metadata
+title: Konfiguracja korzystania z modułu Finance Insights (wersja 10.0.20 i nowsze)
+description: 'W tym temacie wyjaśniono, jak skonfigurować system, aby korzystał z możliwości dostępnych w programie Finance Insights w wersji 10.0.20 i nowszych.'
 author: ShivamPandey-msft
 ms.date: 06/16/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
-ROBOTS: noindex,nofollow
+ms.prod: null
+ms.technology: null
+ms.search.form: null
+ROBOTS: 'noindex,nofollow'
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
-ms.search.validFrom: 2021-06-03
+ms.search.validFrom: '2021-06-03'
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 7e5752b8deffbd2694193494652a0ff808ecbfb0
-ms.sourcegitcommit: a5861c2fef4071e130208ad20e26cb3a42a45cf1
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "7927411"
 ---
-# <a name="configuration-for-finance-insights-for-public-preview-preview---version-10020-and-later"></a>Konfiguracja dla Finance Insights w ramach publicznej wersji zapoznawczej (podglądowej) — wersja 10.0.20 i późniejsze
+# <a name="configuration-for-finance-insights---version-10020-and-later"></a>Konfiguracja korzystania z modułu Finance Insights (wersja 10.0.20 i nowsze)
 
 [!include [banner](../includes/banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Finance Insights łączy funkcje firmy Microsoft Dynamics 365 Finance z Dataverse, Azure i AI Builder w celu zapewnienia wydajnego narzędzia prognozowania dla organizacji. W tym temacie wyjaśniono, jak skonfigurować Dynamics 365 Finance w wersji 10.0.20, aby system korzystał z możliwości dostępnych w programie Finance Insights dla publicznego podglądu w wersji 10.0.20 i nowszych.
+Finance Insights łączy funkcje firmy Microsoft Dynamics 365 Finance z Dataverse, Azure i AI Builder w celu zapewnienia wydajnego narzędzia prognozowania dla organizacji. W tym temacie wyjaśniono, jak skonfigurować Dynamics 365 Finance w wersji 10.0.20, aby system korzystał z możliwości dostępnych w programie Finance Insights w wersji 10.0.20 i nowszych.
 
 > [!NOTE]
 > Kroki konfiguracyjne opisane w tym temacie dotyczą tylko wersji Finance 10.0.20 i nowszych. Aby skonfigurować Finance Insights w wersji 10.0.19 i wcześniejszych, patrz [Konfiguracja Finance Insights — wersje do 10.0.19](configure-for-fin-insites.md).
@@ -38,7 +33,7 @@ Finance Insights łączy funkcje firmy Microsoft Dynamics 365 Finance z Datavers
 
 Wykonaj poniższe kroki, aby wdrożyć środowiska.
 
-1. W Microsoft Dynamics Lifecycle Services (LCS) utwórz lub zaktualizuj środowisko Finance. Środowisko wymaga wersji aplikacji 10.0.20 Finance and Operations lub nowszej.
+1. W Microsoft Dynamics Lifecycle Services (LCS) utwórz lub zaktualizuj środowisko Finance. Środowisko wymaga aplikacji w wersji 10.0.20 lub nowszej aplikacji w wersji Finanse i Operacje.
 2. Środowisko musi być środowiskiem o wysokiej dostępności (HA) w piaskownicy. (Środowisko tego typu jest również nazywane środowiskiem warstwy 2) Aby uzyskać więcej informacji, zobacz [Planowanie środowiska](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
 3. Jeśli konfigurujesz Finance Insights w środowisku piaskownicy, być może będziesz musiał skopiować dane produkcyjne do tego środowiska, aby prognozy zadziałały. Model prognozy używa wielu lat danych do tworzenia prognoz. Dane demonstracyjne dotyczące firmy Contoso nie zawierają wystarczającej ilości danych historycznych, aby można było odpowiednio przeszkolić model przewidywania. 
 
@@ -94,7 +89,7 @@ Aby skonfigurować platformę Azure przy użyciu skryptu programu Windows PowerS
     |------------------------------------------|--------------------------------------|
     | Mikrousługi ERP Microsoft Dynamics     | 0cdb527f-a8d1-4bf8-9436-b352c68682b2 |
     | CDS mikrousług ERP Microsoft Dynamics | 703e2651-d3fc-48f5-942c-74274233dba8 |
-    | Usługa autoryzacji AI Builder         | ad40333e-9910-4b61-b281-e3aeeb8c3ef3 |
+    | AI Builder Usługa autoryzacji         | ad40333e-9910-4b61-b281-e3aeeb8c3ef3 |
 
 Jeśli nie możesz znaleźć dowolnej z tych aplikacji, spróbuj wykonać poniższe kroki.
 
@@ -126,7 +121,7 @@ Jeśli nie możesz znaleźć dowolnej z tych aplikacji, spróbuj wykonać poniż
         - **Wydajność** — zaleca się, aby w wybrać opcję **Standardowa**.
         - **Rodzaj konta** — musisz wybrać **StorageV2**.
 
-    3. W oknie dialogowym **Opcje zaawansowane**, jako wartość opcji **Data Lake Storage Gen2** wybierz **Włącz** w obszarze funkcji **Hierarchiczne przestrzenie nazw**. Jeśli ta funkcja nie zostanie wyłączona, nie będzie można używać danych, które aplikacje Finance and Operations zapisują przy użyciu usług, takich jak przepływy danych Power BI.
+    3. W oknie dialogowym **Opcje zaawansowane**, jako wartość opcji **Data Lake Storage Gen2** wybierz **Włącz** w obszarze funkcji **Hierarchiczne przestrzenie nazw**. Jeśli ta funkcja nie zostanie wyłączona, nie będzie można używać danych, które aplikacje Finanse i Operacje zapisują przy użyciu usług, takich jak przepływy danych Power BI.
     4. Wybierz opcję **Przejrzyj i utwórz**. Po zakończeniu wdrażania nowy zasób zostanie wyświetlony w portalu Azure.
     5. Przejdź do utworzonego konta magazynu.
     6. W menu po lewej stronie wybierz **Klucze dostępu**.
@@ -214,7 +209,7 @@ Jeśli nie możesz znaleźć dowolnej z tych aplikacji, spróbuj wykonać poniż
         | Nazwa wyświetlana nowej aplikacji, która została utworzona wcześniej | Osoba wpłacająca                 |
         | Nazwa wyświetlana nowej aplikacji, która została utworzona wcześniej | Współautor konta magazynu |
         | Nazwa wyświetlana nowej aplikacji, która została utworzona wcześniej | Właściciel danych obiektów blob magazynu     |
-        | **Usługa autoryzacji AI Builder**                     | Czytelnik danych obiektów blob magazynu    |
+        | **AI Builder Usługa autoryzacji**                     | Czytelnik danych obiektów blob magazynu    |
 
 # <a name="azure-cli"></a>[Interfejs wiersza polecenia Azure](#tab/azure-azure-cli)
 
@@ -752,6 +747,6 @@ Instalacja dodatku może potrwać kilka minut.
 
 ## <a name="feedback-and-support"></a>Opinie i pomoc techniczna
 
-Jeśli chcesz przekazać opinie lub potrzebujesz pomocy technicznej, wyślij e-mail do [Finance Insights (wersja zapoznawcza)](mailto:fiap@microsoft.com).
+Jeśli chcesz przekazać opinie lub potrzebujesz pomocy technicznej, wyślij e-mail do [Finance Insights](mailto:fiap@microsoft.com).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
