@@ -12,6 +12,8 @@
               items:
                 - name: Nowości i zmiany w aplikacji Supply Chain Management — strona główna
                   href: get-started/whats-new-home-page.md
+                - name: Rozwiązanie Supply Chain Management w wersji 10.0.25 (kwiecień 2022)
+                  href: get-started/whats-new-scm-10-0-25.md
                 - name: Supply Chain Management w wersji 10.0.24 (luty 2022)
                   href: get-started/whats-new-scm-10-0-24.md
                 - name: Supply Chain Management w wersji 10.0.23 (styczeń 2022)
@@ -102,13 +104,11 @@
                   href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Filmy
                   href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Słownik
-                  href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/supply-chain/toc.json
             - name: Katalog szkoleń
               items:
                 - name: Katalog szkoleń — strona główna
                   href: ./get-started/learning-catalog.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Osoby podejmujące decyzje biznesowe
+                - name: Osoby decydujące o sprawach biznesowych
                   href: ./get-started/learning-catalog-bdm.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Użytkownicy biznesowi
                   href: ./get-started/learning-catalog-business-user.md
@@ -184,7 +184,7 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Przygotowywanie do rozpoczęcia eksploatacji
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Rozpocznij na żywo — często zadawane pytania
+                - name: Rozpoczynanie eksploatacji — często zadawane pytania
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Przesyłanie żądania obsługi
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/supply-chain/toc.json
@@ -308,6 +308,8 @@
               href: cloud-edge/cloud-edge-workload-manufacturing.md
             - name: Obciążenia pracą dotyczące zarządzania magazynem dla jednostek skalowania chmury i urządzenia brzegowego
               href: cloud-edge/cloud-edge-workload-warehousing.md
+            - name: Konfigurowanie aplikacji mobilnej Warehouse Management dla jednostki skalowania chmury i urządzenia brzegowego
+              href: cloud-edge/cloud-edge-workload-setup-warehouse-app.md
             - name: Zamówienia magazynu dla jednostek skalowania chmury i urządzenia brzegowego
               href: cloud-edge/cloud-edge-warehouse-order.md
             - name: Korekta zapasów w magazynie
@@ -1233,6 +1235,8 @@
                   items:
                     - name: Tworzenie konfiguracji w celu importowania danych z zewnętrznego pliku XML
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Importowanie danych z ręcznie wybranych plików w trybie partii
+                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurowanie importowania danych w trybie wsadowym z danych zlokalizowanych w programie SharePoint
                   href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Importowanie plików w formacie XML
@@ -1461,6 +1465,10 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Aktualizacja aplikacji 10.0.21
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Aktualizacja aplikacji 10.0.23
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Aktualizacja aplikacji 10.0.25
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-25.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Określanie niestandardowej lokalizacji wygenerowanych dokumentów
                   items:
                     - name: Subskrybowanie zdarzenia w celu zażądania odpowiedzi z programu obsługi subskrypcji
@@ -1691,12 +1699,16 @@
                   href: master-planning/planning-optimization/approved-planned-order.md
                 - name: Zaakceptuj zamówienia planowane
                   href: master-planning/planning-optimization/planned-order-firming.md
+                - name: Uproszczone zamówienia planowane
+                  href: master-planning/planning-optimization/planned-orders-simplified.md
                 - name: Planowanie z użyciem ujemnych ilości dostępnych zapasów
                   href: master-planning/planning-optimization/negative-on-hand.md
                 - name: Wyświetlanie historii planu i dzienników planowania
                   href: master-planning/planning-optimization/plan-history-logs.md
                 - name: Anulowanie zadania planowania
                   href: master-planning/planning-optimization/cancel-planning-job.md
+                - name: Komunikaty akcji
+                  href: master-planning/action-messages.md
                 - name: Rozwiązywanie problemów z optymalizacją planowania
                   href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
                 - name: Rozszerzalność optymalizacji planowania
@@ -1729,8 +1741,6 @@
                   href: master-planning/cancel-master-planning-job.md
                 - name: Korzystanie z funkcji śledzenia rozłożenia
                   href: master-planning/trace-explosion.md
-                - name: Komunikaty akcji
-                  href: master-planning/action-messages.md
                 - name: Monitorowanie przebiegu planowania głównego
                   href: master-planning/tasks/monitor-master-planning-run.md
                 - name: Tworzenie harmonogramu dla oddziału
@@ -3763,6 +3773,8 @@
                       href: troubleshooting/warehousing/certification-path-app-connection-error.md
                     - name: Nie znaleziono kotwicy zaufania dla ścieżki certyfikacji podczas aktualizacji i migracji do WMS
                       href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
+                - name: Występują problemy z przetwarzaniem po zainstalowaniu obciążenia magazynu jednostki skalowania
+                  href: troubleshooting/warehousing/Scale-unit-warehouse-workload-installation-issues.md
                 - name: Monit o automatyczną rezerwację dla numeru partii jest wyświetlany nawet w przypadku dostępnych zapasów
                   href: troubleshooting/warehousing/auto-reservation-prompt-shown.md
                 - name: Nie można odblokować pracy pobrania z powodu niezakończonej pracy uzupełniania zapasów
@@ -3901,9 +3913,11 @@
                   href: troubleshooting/warehousing/work-remains-blocked.md
                 - name: Nie można anulować pracy dotyczącej użytkownika
                   href: troubleshooting/warehousing/you-cannot-cancel-wo.md
-    - name: Rozwój i administracja aplikacjami Finance and Operations
+    - name: Rozwój i administracja aplikacjami finansowymi i operacyjnymi
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Rozwiązanie Dynamics 365 Finance
       href: ../finance/index.md
     - name: Dynamics 365 Commerce
       href: ../commerce/index.md
+    - name: Dynamics 365 Human Resources
+      href: ../human-resources/index.md

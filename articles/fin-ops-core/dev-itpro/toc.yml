@@ -12,11 +12,13 @@
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Nowości i zmiany w aktualizacjach Platform update
               items:
-                - name: Nowości i zmiany w aktualizacjach Platform update — strona główna
+                - name: Nowości i zmiany w aktualizacjach platformy — strona główna
                   href: get-started/whats-new-home-page.md
-                - name: Aktualizacja Platform update dla wersji 10.0.24 (luty 2022)
+                - name: Aktualizacja platformy dla wersji 10.0.25 (kwiecień 2022)
+                  href: get-started/whats-new-platform-updates-10-0-25.md
+                - name: Aktualizacja platformy dla wersji 10.0.24 (luty 2022)
                   href: get-started/whats-new-platform-updates-10-0-24.md
-                - name: Aktualizacja Platform update dla wersji 10.0.23 (styczeń 2022)
+                - name: Aktualizacja platformy dla wersji 10.0.23 (styczeń 2022)
                   href: get-started/whats-new-platform-updates-10-0-23.md
             - name: Usunięte lub wycofane funkcje
               items:
@@ -430,6 +432,8 @@
                   href: deployment/install-deployable-package.md
                 - name: Odinstalowywanie pakietu
                   href: deployment/uninstall-deployable-package.md
+                - name: Uruchamianie niestandardowych skryptów X++ z zerowym przestojem
+                  href: deployment/run-custom-scripts.md
                 - name: Rozwiązywanie problemów z aplikacją w pakiecie
                   href: deployment/deployable-package-troubleshooting.md
             - name: Wdrażanie niestandardowej pomocy
@@ -852,8 +856,10 @@
                   href: perf-test/testing-support.md
                 - name: Wdrażanie i wykorzystywanie środowisk obsługujących ciągłą kompilację i automatyzację testów
                   href: perf-test/continuous-build-test-automation.md
-                - name: Filtrowanie w środowisku SysTest przy użyciu atrybutów klas i metod
+                - name: Filtrowanie w środowisku SysTest przy użyciu atrybutów klas i sposobów
                   href: perf-test/systest-filtering.md
+                - name: Atrybut SysTestRow do testowania wielu wartości
+                  href: perf-test/systest-row.md
                 - name: Biblioteka testów akceptacyjnych
                   items:
                     - name: Zasoby biblioteki testów akceptacyjnych

@@ -92,6 +92,8 @@
                   items:
                     - name: Nowości i zmiany w rozwiązaniu Commerce — strona główna
                       href: get-started/whats-new-home-page.md
+                    - name: Rozwiązanie Commerce w wersji 10.0.25 (kwiecień 2022)
+                      href: get-started/whats-new-commerce-10-0-25.md
                     - name: Rozwiązanie Commerce w wersji 10.0.24 (luty 2022)
                       href: get-started/whats-new-commerce-10-0-24.md
                     - name: Rozwiązanie Commerce w wersji 10.0.23 (styczeń 2022)
@@ -124,13 +126,11 @@
                   href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/commerce/toc.json
                 - name: Filmy
                   href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/commerce/toc.json
-                - name: Słownik
-                  href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/commerce/toc.json
             - name: Katalog szkoleń
               items:
                 - name: Katalog szkoleń — strona główna
                   href: ./get-started/learning-catalog.md
-                - name: Osoby podejmujące decyzje biznesowe
+                - name: Osoby decydujące o sprawach biznesowych
                   href: ./get-started/learning-catalog-bdm.md?
                 - name: Użytkownicy biznesowi
                   href: ./get-started/learning-catalog-business-user.md
@@ -204,7 +204,7 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/commerce/toc.json
                 - name: Przygotowywanie do rozpoczęcia eksploatacji
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/commerce/toc.json
-                - name: Rozpocznij na żywo — często zadawane pytania
+                - name: Rozpoczynanie eksploatacji — często zadawane pytania
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/commerce/toc.json
                 - name: Przesyłanie żądania obsługi
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/commerce/toc.json
@@ -1936,6 +1936,8 @@
                   items:
                     - name: Tworzenie konfiguracji w celu importowania danych z zewnętrznego pliku XML
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/commerce/toc.json
+                    - name: Importowanie danych z ręcznie wybranych plików w trybie partii
+                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurowanie importowania danych w trybie wsadowym z danych zlokalizowanych w programie SharePoint
                   href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/commerce/toc.json
                 - name: Importowanie plików w formacie XML
@@ -2166,6 +2168,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/commerce/toc.json
                     - name: Aktualizacja aplikacji 10.0.23
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/commerce/toc.json
+                    - name: Aktualizacja aplikacji 10.0.25
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-25.md?toc=/dynamics365/commerce/toc.json
                 - name: Określanie niestandardowej lokalizacji wygenerowanych dokumentów
                   items:
                     - name: Subskrybowanie zdarzenia w celu zażądania odpowiedzi z programu obsługi subskrypcji
@@ -2384,6 +2388,8 @@
               items:
                 - name: Rozwiązanie Commerce dla profesjonalistów IT i deweloperów
                   href: dev-itpro/dev-retail-home-page.md
+                - name: Modernizowanie stosu technologii w sklepie rozwiązania Commerce (oficjalny dokument)
+                  href: 'https://www.microsoft.com/download/details.aspx?id=103896'
                 - name: Konfigurowanie lokalnego środowiska projektowego
                   href: dev-itpro/setup-local-dev-env.md
             - name: Rozszerzanie kanału online
@@ -2820,7 +2826,7 @@
               items:
                 - name: Konfigurowanie środowiska projektowego handlu elektronicznego do debugowania względem maszyny wirtualnej w warstwie 1 usługi Retail Server
                   href: troubleshoot/set-up-dev-environment-debugging.md
-    - name: Rozwój i administracja aplikacjami Finance and Operations
+    - name: Rozwój i administracja aplikacjami finansowymi i operacyjnymi
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Rozwiązanie Dynamics 365 Finance
       href: ../finance/index.md
