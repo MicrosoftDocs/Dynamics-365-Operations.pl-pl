@@ -1,28 +1,35 @@
 ---
-# required metadata
 title: System pomocy (zawiera film)
 description: Ten temat zawiera omówienie systemu pomocy dla aplikacji Finanse i Operacje.
 author: edupont04
 ms.date: 07/20/2021
 ms.topic: overview
-ms.prod: null
-ms.technology: null
+ms.prod: ''
+ms.technology: ''
 ms.search.form: SystemParameters
-audience: 'Application User, Developer, IT Pro'
+audience: Application User, Developer, IT Pro
 ms.reviewer: tfehr
 ms.custom:
-  - '16381'
-  - intro-internal
+- "16381"
+- intro-internal
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
 ms.author: edupont
-ms.search.validFrom: '2016-02-28'
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: dd34addc2ffa5e437691cb1e3e8b33246053ccc7
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070508"
 ---
-
 # <a name="help-system"></a>System pomocy
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Użytkownicy poniższych aplikacji mogą uzyskiwać dostęp do informacji kontekstowych i innej zawartości pomocy opartej na tym samym systemie pomocy:
 

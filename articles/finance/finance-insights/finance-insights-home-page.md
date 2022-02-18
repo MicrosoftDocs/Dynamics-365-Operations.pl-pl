@@ -1,23 +1,28 @@
 ---
-# required metadata
 title: Finance Insights — strona główna
-description: 'Moduł Szczegółowe dane finansowe udostępnia konfigurowalne i rozszerzalne modele, które pomagają dokładnie i inteligentnie przewidywać przepływy pieniężne w firmie, prognozować terminy otrzymania płatności za zaległe należności oraz generować propozycje budżetowe, które mogą przyspieszyć proces budżetowania. Wszystkie te funkcje są oparte na inteligentnych modelach uczenia maszynowego.'
+description: Moduł Szczegółowe dane finansowe udostępnia konfigurowalne i rozszerzalne modele, które pomagają dokładnie i inteligentnie przewidywać przepływy pieniężne w firmie, prognozować terminy otrzymania płatności za zaległe należności oraz generować propozycje budżetowe, które mogą przyspieszyć proces budżetowania. Wszystkie te funkcje są oparte na inteligentnych modelach uczenia maszynowego.
 author: ShivamPandey-msft
-ms.date: 11/15/2021
+ms.date: 01/27/2022
 ms.topic: article
-ms.prod: null
-ms.technology: null
-ms.search.form: null
+ms.prod: ''
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: twheeloc
 ms.custom:
-  - '14151'
-  - intro-internal
+- "14151"
+- intro-internal
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
-ms.search.validFrom: '2020-07-20'
+ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
+ms.openlocfilehash: 05b0de8b0104238a33f006234d4a0e8ba9fcdb2a
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087300"
 ---
 # <a name="finance-insights-home-page"></a>Finance Insights — strona główna
 
@@ -32,10 +37,6 @@ Moduł Finance insights udostępnia konfigurowalne i rozszerzalne rozwiązania, 
 
 Ta sekcja zawiera listę wymagań dotyczących korzystania z modułu Szczegółowe dane finansowe. Tam, gdzie to możliwe, udostępniono łącza do źródeł dodatkowych informacji.
 
-### <a name="legal-requirements"></a>Wymagania prawne
-
-Aby zawnioskować o udział w programie zapoznawczym, wypełnij [umowę na korzystanie z wersji zapoznawczej modułu Szczegółowe dane finansowe w rozwiązaniu Dynamics 365 Finance](https://forms.office.com/FormsPro/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR56j8lZs0FdAvwT75_WNFyxUM1c0Uzc1RFpaU1RVTEwxVTNWUERPRThUSy4u)
-
 ### <a name="system-requirements"></a>Wymagania systemowe
 
 Do korzystania z wersji zapoznawczej modułu Szczegółowe dane Finance jest wymagane środowisko warstwy 2 (wielostanowiskowe). Aby uzyskać informacje kontekstowe o środowiskach, należy zapoznać się z tematem [Planowanie środowiska](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
@@ -43,6 +44,10 @@ Do korzystania z wersji zapoznawczej modułu Szczegółowe dane Finance jest wym
 ### <a name="version-requirements"></a>Wymagania dotyczące wersji
 
 Ten temat dotyczy rozwiązania Microsoft Dynamics 365 Finance w wersji 10.0.21 lub nowszej.
+
+### <a name="license-requirements"></a>Wymagania dotyczące licencji
+
+Finance insights wykorzystuje kredyty AI Builder do tworzenia prognoz finansowych. Wszystkie niezbędne do tego licencje są dołączone do licencji dzierżawy. Każda dzierżawa Dynamics 365 Finance ma co miesiąc 20 000 kredytów AI Builder. Jeśli dla potrzeb biznesowych potrzebne są dodatkowe kredyty, można je zakupić bezpośrednio w AI Builder.
 
 ### <a name="historical-data-requirements"></a>Wymagania dotyczące danych historycznych
 

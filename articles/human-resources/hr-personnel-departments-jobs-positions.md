@@ -2,7 +2,7 @@
 title: Organizowanie pracowników za pomocą działów, funkcji i stanowisk
 description: W tym temacie opisano informacje koncepcyjne dotyczące działów, stanowisk i stanowisk, które są elementami organizacyjnymi utrzymywanymi w ramach Human resources.
 author: twheeloc
-ms.date: 10/28/2021
+ms.date: 01/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 51335cba0e0dce755ce36fbe13c6294fca58d797
-ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
+ms.openlocfilehash: 2b4c1efac249b315de25348a104f00a613c32df9
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7731815"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071549"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Organizowanie pracowników za pomocą działów, funkcji i stanowisk
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -48,32 +51,18 @@ Dział jest jednostką operacyjną, która reprezentuje kategorię lub obszar fu
 
 ## <a name="jobs-and-positions"></a> Stanowiska i pozycje
 Stanowisko to zbiór zadań i odpowiedzialności, które są wymagane od osoby, która wykonuje zadanie. Pozycja jest pojedynczym wystąpieniem zadania. Zakresy odpowiedzialności, obowiązki, funkcje stanowisk, umiejętności, informacje o wykształceniu i certyfikaty, które są wymagane dla stanowisk, które są skojarzone z zadaniem.
+
 ### <a name="job-tasks"></a>Zadania zlecenia
+
 Można tworzyć zadania opisujące podstawowe zadania, które pracownik zajmujący stanowisko obejmujące to zadanie musi wykonać. To samo zadanie można dodać do wielu stanowisk, i pozycje dla tego zadania będą je dziedziczyć. Niektóre przykłady znajdują się w poniższej tabeli.
 
-<table>
-<thead>
-<tr class="header">
-<th>Zadanie</th>
-<th>Zadanie zlecenia</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Menedżer ds. sprzedaży</td>
-<td><ul>
-<li><span class="input">Perf-review</span> — przeglądanie wydajności poszczególnych sprzedawców.</li>
-<li><span class="input">Abs-review</span> — zatwierdzanie lub odrzucanie wniosków urlopowych lub rejestracji nieobecności.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Księgowy</td>
-<td><span class="input">FIN-Report</span> — przeglądanie tygodniowych raportów finansowych dla dyrektora finansowego.</td>
-</tr>
-</tbody>
-</table>
+| Zadanie           | Zadanie zlecenia                                                |
+|---------------|-------------------------------------------------------------|
+| Menedżer ds. sprzedaży | Perf-review — przeglądanie wydajności poszczególnych sprzedawców.    |
+| Księgowy    | Abs-review — zatwierdzanie lub odrzucanie wniosków urlopowych lub rejestracji nieobecności. |
 
-### <a name="job-functions"></a>Funkcje stanowisk
+
+### <a name="job-functions"></a>Funkcje posad
 
 Funkcje stanowisk są podobne do zadań. Zadanie opisuj jedno lub więcej zadań, obowiązków i zakresów odpowiedzialności które są przypisane do stanowiska. Funkcje stanowisk mogą być przypisywane do zadań i mogą służyć do ustawiania i wdrażania reguł uprawnień w systemach wynagrodzeń. W poniższej tabeli przedstawiono przykłady funkcji stanowisk.
 

@@ -1,19 +1,23 @@
 ---
-# required metadata
 title: Wyszukiwanie specyficznych dla kraju aktualizacji przepisów
 description: Ten temat zawiera łącza do planowanych i wydanych aktualizacji regulacyjnych specyficznych dla danego kraju dla Microsoft Dynamics 365 Finance.
 author: AKroshkina
 ms.date: 01/20/2022
 ms.topic: article
-ms.prod: null
-ms.technology: null
+ms.prod: ''
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: kfend
 ms.dyn365.ops.version: 10
+ms.openlocfilehash: c86f93ca76168e04a3152de67f40ef408bc096a6
+ms.sourcegitcommit: d58a891d9fe0aa0e6b2c20329250c8d74ffbee90
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "8022956"
 ---
-
 # <a name="search-for-country-specific-regulatory-updates"></a>Wyszukiwanie specyficznych dla kraju aktualizacji przepisów
 
 [!include [banner](../includes/banner.md)]
@@ -64,6 +68,6 @@ Ten temat zawiera łącza do planowanych i wydanych aktualizacji regulacyjnych s
 | Zjednoczone Emiraty Arabskie | [Planowane i zwolnione funkcje dotyczące przepisów dla Zjednoczonych Emiratów Arabskich](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=43_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
 | Zjednoczone Królestwo       | [Planowane i zwolnione funkcje dotyczące przepisów dla Zjednoczonego Królestwa](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Ffix.lcs.dynamics.com%2FIssue%2FResults%3Fv%3D8_versionClass%26ct%3D2_categoryClass_6_categoryClass%26ft%3D1_featureClass_2_featureClass_3_featureClass%26cu%3D3_countryClass%26o%3DD%26mode%3DFull%26i%3D2_issueTypeClass_1_issueTypeClass&data=04%7C01%7Cvastrup%40microsoft.com%7C6e8a12140a0548c9224508d94add50a5%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637623136671200065%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&sdata=eiZzncdY20RjysdC8rpru54YONhSlJUec093vwFK5jI%3D&reserved=0) |
 
-Aby uzyskać więcej informacji o funkcjach globalizacji zawartych w comiesięcznych aktualizacjach, dołącz do grupy [DGX - GLOBALIZATION FEATURES](https://www.yammer.com/dynamicsaxfeedbackprograms/) Yammer.
+Aby uzyskać więcej informacji o funkcjach globalizacji zawartych w comiesięcznych aktualizacjach, dołącz do grupy [DGX - GLOBALIZATION FEATURES](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=17055599&view=all) Yammer.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

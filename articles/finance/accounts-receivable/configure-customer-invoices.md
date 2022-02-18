@@ -1,26 +1,26 @@
 ---
 title: Tworzenie faktury dla odbiorcy
-description: '**Faktura dla odbiorcy do zamówienia sprzedaży** jest wekslem związanym ze sprzedażą i który organizacja wystawia odbiorcy.'
+description: Faktura dla odbiorcy do zamówienia sprzedaży jest wekslem związanym ze sprzedażą i który organizacja wystawia odbiorcy.
 author: ShivamPandey-msft
-ms.date: 01/12/2018
+ms.date: 02/01/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CustFreeInvoice
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 77772
 ms.assetid: 00b4b40c-1576-4098-9aed-ac376fdeb8c5
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 369f0737ee4026c32ffbae6b11b5815c5548d83d564aebf2eae4b1c246e73508
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d408ca5265802cf17a53dd5cb004f707f6f7855b
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723878"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087430"
 ---
 # <a name="create-a-customer-invoice"></a>Tworzenie faktury dla odbiorcy
 
@@ -42,6 +42,23 @@ Aby uzyskać więcej informacji, zobacz: .
 
 
 **Faktura pro forma** to faktura przygotowana jako oszacowanie rzeczywistej kwoty faktury przed zaksięgowaniem faktury. Fakturę pro forma można wydrukować albo dla faktury dla klienta do zamówienia sprzedaży albo dla faktury niezależnej.
+
+## <a name="using-sales-order-customer-invoice-data-entities"></a>Używanie encji danych zamówienia sprzedaży klient faktura
+Możesz używać encji danych do importowania i eksportowania informacji o fakturze klienta dla zamówienia sprzedaży. Istnieją różne jednostki dla informacji w nagłówku faktury sprzedaży i w wierszach faktury sprzedaży.
+
+Następujące podmioty są dostępne dla informacji w nagłówku faktury sprzedaży:
+
+- **Nagłówek dziennika faktury sprzedaży** encja (SalesInvoiceJournalHeaderEntity)
+- **Nagłówki faktur sprzedaży V2** encja (SalesInvoiceHeaderV2Entity)
+
+Zalecamy używanie podmiotu **Nagłówek dziennika faktur sprzedaży**, ponieważ zapewnia on większą wydajność importu i eksportu nagłówków sprzedaży. Ta encja nie zawiera kolumny **Kwota podatku od sprzedaży** (INVOICEHEADERTAXAMOUNT), która reprezentuje wartość podatku w nagłówku faktury sprzedaży. Jeśli Twój scenariusz biznesowy wymaga tej informacji, użyj jednostki **Nagłówki faktur sprzedaży V2**, aby importować i eksportować informacje o nagłówkach faktur sprzedaży.
+
+Dla informacji o liniach faktur sprzedaży dostępne są następujące podmioty:
+
+- **Wiersze faktur klienta** encja (BusinessDocumentSalesInvoiceLineItemEntity)
+- **Wiersze faktur sprzedaży V3** encja (SalesInvoiceLineV3Entity)
+
+Kiedy ustalasz, jakiej encji liniowej użyć do eksportu, zastanów się, czy będzie używany pełny czy przyrostowy push. Dodatkowo należy wziąć pod uwagę skład danych. Podmiot **Linie faktur sprzedaży V3** obsługuje bardziej złożone scenariusze (np. mapowanie do pól inwentaryzacji). Obsługuje również scenariusze eksportu typu full-push. Dla pchnięć przyrostowych zalecamy użycie podmiotu **Wiersze faktur klienta**. Ta encja zawiera dużo prostszą kompozycję danych niż encja **Wiersze faktur sprzedaży V3** i jest preferowana, szczególnie jeśli nie jest wymagana integracja z polami inwentaryzacyjnymi. Ze względu na różnice w obsłudze mapowania pomiędzy jednostkami liniowymi, jednostka **Wiersze faktur klienta** ma zazwyczaj większą wydajność niż jednostka **Wiersze faktur sprzedaży V3**.
 
 ## <a name="post-and-print-individual-customer-invoices-that-are-based-on-sales-orders"></a>Księgowanie i drukowanie pojedynczych faktur dla odbiorcy opartych na zamówieniach sprzedaży
 Ten proces służy do tworzenia faktury opartej na zamówieniu sprzedaży. Można to zrobić, jeśli postanowiono wystawić odbiorcy fakturę przed dostarczeniem towarów lub usług. 

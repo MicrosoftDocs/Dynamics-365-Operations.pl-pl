@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 1fd15b5d664fead10949750678a2d3eab967af22
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 825d6a4b3462077d0f4b3f4275792ea0fe5152df
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781399"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063679"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Konfigurowanie podwójnego zapisu z usług Lifecycle Services
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 W tym temacie opisano sposób włączenia połączenia podwójnego zapisu z usługi Microsoft Dynamics Lifecycle Services (LCS).
 
@@ -53,18 +53,18 @@ Aby skonfigurować podwójny zapis ze strony **Szczegóły środowiska** usługi
 
     :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Łącze do środowiska Power Platform.":::
 
-8. Po zakończeniu łączenia jest wyświetlane hiperłącze. Użyj łącza, aby zalogować się do obszaru administracji podwójnego zapisu w środowisku Finance and Operations. Istnieje możliwość skonfigurowania mapowań encji.
+8. Po zakończeniu łączenia jest wyświetlane hiperłącze. Użyj łącza, aby zalogować się do obszaru administracji podwójnego zapisu w środowisku Finanse i Działania. Istnieje możliwość skonfigurowania mapowań encji.
 
 ## <a name="set-up-dual-write-for-an-existing-dataverse-environment"></a>Wskazówki dotyczące konfigurowania podwójnego zapisu dla istniejącego środowiska Dataverse
 
 Aby skonfigurować podwójny zapis dla istniejącego środowiska Dataverse, musisz utworzyć [zgłoszenie](../../lifecycle-services/lcs-support.md) do pomocy technicznej firmy Microsoft. Zgłoszenie musi zawierać następujące informacje:
 
-+ Identyfikator środowiska Finance and Operations.
++ Twój identyfikator środowiska Finanse i Działania.
 + Twoja nazwa środowiska z usługi Lifecycle Services.
 + Identyfikator organizacji Dataverse lub identyfikator środowiska Power Platform z centrum administracyjnego Power Platform. W zgłoszeniu poproś, aby identyfikator był wystąpieniem używanym do integracji Power Platform.
 
 > [!NOTE]
-> Nie można odłączyć środowisk za pomocą usługi LCS. Aby rozłączyć środowisko, Otwórz obszar roboczy **integracji danych** w środowisku Finance and Operations, a następnie wybierz opcję **Rozłącz**.
+> Nie można odłączyć środowisk za pomocą usługi LCS. Aby rozłączyć środowisko, Otwórz obszar roboczy **integracji danych** w środowisku Finanse i Działania, a następnie wybierz opcję **Rozłącz**.
 
 ## <a name="linking-mismatch"></a>Niezgodność łączenia
 

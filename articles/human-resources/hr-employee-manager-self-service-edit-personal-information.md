@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bb827e17dcfc63031d0edcb5f447e70f03e8ac3c
-ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
+ms.openlocfilehash: e798646263b9939445f49a3866532cd229c668cd
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7431469"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071506"
 ---
 # <a name="edit-personal-information"></a>Edytowanie informacji osobistych
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -69,7 +72,7 @@ Parametry ustawione w obszarze **parametrów globalnej książki adresowej** ust
     - Aby dodać numer identyfikacyjny, wybierz **Nowe**. Wypełnij pola w razie potrzeby i wybierz **Zapisz**.
     - Aby edytować liczbę, wybierz opcję **Edytuj**. Edytuj pola w razie potrzeby i wybierz **Zapisz**.
 
-7. Aby zmienić metody płatności, wybierz kartę **Moje informacje o płatności**. Ta karta jest dostępna tylko w przypadku włączenia metod płatności w formularzu **Parametry Human Resources**. Dział kadr może włączyć **Przekaz bankowy**, **Gotówka**, **Czek**, **Płatność elektroniczna** lub **Inne**. HR może również wyłączyć weryfikację płatności elektronicznych (używaną dla listy płac dla Stanów Zjednoczonych) oraz sprawdzanie poprawności numeru konta bankowego i marszruty.
+7. Aby zmienić metody płatności, wybierz kartę **Moje informacje o płatności**. Ta karta jest dostępna tylko w przypadku włączenia metod płatności na stronie **Parametry Human Resources**. Dział kadr może włączyć **Przekaz bankowy**, **Gotówka**, **Czek**, **Płatność elektroniczna** lub **Inne**. HR może również wyłączyć weryfikację płatności elektronicznych (używaną dla listy płac dla Stanów Zjednoczonych) oraz sprawdzanie poprawności numeru konta bankowego i marszruty.
 
 8. Aby zmienić obraz wyświetlany w Human Resources dla Twojego profilu, wybierz kartę **Obraz** . W zależności od ustawień organizacji obrazy mogą być przekazane do zatwierdzenia.
 

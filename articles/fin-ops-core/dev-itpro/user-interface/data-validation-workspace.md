@@ -12,16 +12,19 @@ ms.reviewer: tfehr
 ms.assetid: ''
 ms.search.region: Global
 ms.author: bking
-ms.openlocfilehash: 17673f3f37588bb6a19dbb0d880706dc6b7ff746
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: fef3130f06cbb1d8afdbae93bdc55b47be3480b3
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781283"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070834"
 ---
 # <a name="data-validation-checklist-workspace"></a>Obszar roboczy Lista kontrolna weryfikacji danych
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Ten temat zawiera omówienie obszaru roboczego **Lista kontrolna weryfikacji danych** oraz pokrewnej konfiguracji.
 

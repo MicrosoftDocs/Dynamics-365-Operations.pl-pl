@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b69b16e4a40b5370c3a73f2aee40a8a86b952d9e
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: afe45bf1ff5c641346997aa4f32f3241dce2f0a2
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647567"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075507"
 ---
 # <a name="list-of-er-functions-of-the-text-category"></a>Lista funkcji modułu ER w kategorii funkcji tekstowych
 
@@ -35,6 +35,7 @@ Funkcje tekstowe raportowania elektronicznego (ER) mogą służyć do wykonywani
 | [Złącz](er-functions-text-concatenate.md) | Ta funkcja zwraca wszystkie ciągi tekstowe określone jako wartość typu *Ciąg* po ich połączeniu w jeden ciąg. |
 | [Format](er-functions-text-format.md) | Ta funkcja zwraca określoną wartość typu *Ciąg* po jej sformatowaniu przez zastąpienie wszystkich wystąpień elementu **%N** *N*-tym argumentem. |
 | [GetEnumValueByName](er-functions-text-getenumvaluebyname.md) | Ta funkcja wyszukuje określoną wartość *wyliczenia* w źródle danych określonego wyliczenia przy użyciu nazwy wyliczenia, która jest określona jako wartość typu *Ciąg*. W przypadku znalezienia wartości typu *Wyliczenie* funkcja zwraca tę wartość. |
+| [GetLabelText](er-functions-text-getlabeltext.md) | Ta funkcja wyszukuje określoną etykietę w celu zwrócenia wartości *[String](er-formula-supported-data-types-primitive.md#string)* reprezentującej tłumaczenie określonej etykiety w określonym języku. |
 | [GuidValue](er-functions-text-guidvalue.md) | Ta funkcja przekształca określone dane wejściowe typu *Ciąg* na element danych o typie danych *Identyfikator GUID*. |
 | [JsonValue](er-functions-text-jsonvalue.md) | Ta funkcja analizuje dane w formacie JSON (JavaScript Object Notation), do których dostęp jest uzyskiwany za pośrednictwem wskazanej ścieżki oraz wyodrębnia wartość skalarną opartą na podanym identyfikatorze. Następnie zwraca wartość skalarną wyodrębnioną jako wartość typu *Ciąg*. |
 | [Lewa](er-functions-text-left.md) | Ta funkcja zwraca wartość *Ciąg*, która reprezentuje określoną liczbę znaków od początku określonego ciągu. |

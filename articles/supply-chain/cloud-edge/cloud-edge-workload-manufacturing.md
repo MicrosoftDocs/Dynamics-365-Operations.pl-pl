@@ -16,20 +16,23 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 77e0a0e0eb47c331b2b219dc523ecd2c706a4638
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 633740ee1e26d2e4ed2ea7031ef298fb11c2ab58
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345306"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068851"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Obciążenia pracą dotyczące uruchomienia produkcji dla jednostek skalowania chmury i urządzenia brzegowego
 
 [!include [banner](../includes/banner.md)]
 
-> [!WARNING]
-> Obciążenie związane z produkcją jest w tym momencie dostępne w wersji zapoznawczej.
+> [!IMPORTANT]
+> Obciążenie produkcyjne jest obecnie dostępne tylko w wersji zapoznawczej.
+>
 > Nie wszystkie funkcje biznesowe są w pełni obsługiwane w podglądzie publicznym, gdy są używane jednostki skali obciążenia pracą.
+>
+> Nie możesz uruchomić produkcyjnego obciążenia roboczego na jednostce wagi, na której zainstalowane jest również obciążenie wykonawcze magazynu.
 
 W wykonaniu produkcyjnym jednostki wagowe zapewniają następujące możliwości:
 
@@ -128,6 +131,22 @@ W bieżącej wersji operacje raportowania jako zakończone i odłożone (dla pro
 ### Customize report as finished and putaway functionality
 
  -->
+
+## <a name="enable-and-use-the-start-operation-on-a-scale-unit"></a>Włączanie i stosowanie operacji startu na jednostce skalowania
+
+W aktualnym wydaniu operacja startowa dla zleceń produkcyjnych i wsadowych jest obsługiwana przez [obciążenie wykonawcze magazynu](cloud-edge-workload-warehousing.md) (nie przez obciążenie wykonawcze produkcji). Aby korzystać z tej funkcji w przypadku połączenia z jednostką skalowania, należy wykonać następujące czynności:
+
+- Zainstaluj zarówno obciążenie wykonawcze magazynu, jak i obciążenie wykonawcze produkcji na swojej jednostce skalowania.
+- Włączenie w sekcji [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) opcji *Uruchamianie zlecenia produkcyjnego w obciążeniach zarządzania magazynem dla jednostek skalowania chmury i urządzenia brzegowego*.
+- Użyj aplikacji mobilnej Warehouse Management, aby rozpocząć produkcję lub zlecenie wsadowe.
+
+## <a name="enable-and-use-material-consumption-on-a-scale-unit"></a>Włączanie i używanie zużycia materiałów w jednostkach skalowania
+
+W obecnej wersji aplikacji mobilnej Warehouse Management przepływ rejestracji zużycia materiałów jest obsługiwany przez obciążenie [obciążenie wykonawcze magazynu](cloud-edge-workload-warehousing.md) (a nie przez obciążenie wykonawcze produkcji). Aby korzystać z tej funkcji w przypadku połączenia z jednostką skalowania, należy wykonać następujące czynności:
+
+- Zainstaluj zarówno obciążenie wykonawcze magazynu, jak i obciążenie wykonawcze produkcji na swojej jednostce skalowania.
+- Włącz funkcję *Rejestruj zużycie materiału w aplikacji mobilnej na jednostce skalowania* w [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- Nie można korzystać z aplikacji mobilnej Warehouse Management do rejestrowania zużycia materiałów.
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 

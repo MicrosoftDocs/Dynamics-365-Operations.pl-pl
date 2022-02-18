@@ -1,30 +1,31 @@
 ---
-# required metadata
 title: Ulepszenia funkcji księgowania zestawień
-description: 'W tym temacie opisano ulepszenia, które zostały wprowadzone w funkcji księgowania zestawień.'
+description: W tym temacie opisano ulepszenia, które zostały wprowadzone w funkcji księgowania zestawień.
 author: analpert
-ms.date: 12/03/2021
+ms.date: 01/31/2022
 ms.topic: article
-ms.prod: null
-ms.technology: null
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: retail
 ms.author: analpert
-ms.search.validFrom: '2018-04-30'
-ms.dyn365.ops.version: 'AX 7.0.0, Retail July 2017 update'
+ms.search.validFrom: 2018-04-30
+ms.openlocfilehash: 6ee0cea76be05634aa21643acef5b341f19d75ef
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087610"
 ---
-
 # <a name="improvements-to-statement-posting-functionality"></a>Ulepszenia funkcji księgowania zestawień
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 W tym temacie opisano pierwszy zestaw ulepszeń, które zostały wprowadzone w funkcji księgowania zestawień. Te ulepszenia są dostępne w programie Microsoft Dynamics 365 for Finance and Operations 7.3.2.
 
 ## <a name="activation"></a>Aktywacja
 
-Domyślnie podczas instalowania programu Finance and Operations 7.3.2 jest w nim konfigurowane używanie starszej funkcji księgowania zestawień. Aby włączyć ulepszoną funkcję księgowania zestawień, należy wyłączyć dla niej klucz konfiguracji.
+Domyślnie podczas instalowania programu Finanse i Działania 7.3.2 jest w nim konfigurowane używanie starszej funkcji księgowania zestawień. Aby włączyć ulepszoną funkcję księgowania zestawień, należy wyłączyć dla niej klucz konfiguracji.
 
 - Wybierz kolejno opcje **Administrowanie systemem** \> **Ustawienia** \> **Konfiguracja licencji**, a następnie w węźle **Retail i Commerce** wyczyść pole wyboru **Zestawienia (starsze)**, po czym zaznacz pole wyboru **Zestawienia**.
 
@@ -49,12 +50,24 @@ W ramach ulepszania funkcji księgowania zestawień wprowadzono trzy nowe parame
 
 - **Wymagane wyłączenie zliczania** — Jeśli ta opcja jest ustawiona na **Tak**, proces księgowania zestawienia jest kontynuowany, nawet gdy różnica między kwotą obliczoną a kwotą transakcji wykracza poza próg zdefiniowany na skróconej karcie **Zestawienie** dla sklepów.
 
+> [!NOTE]
+> Od wersji 10.0.14 Commerce, gdy włączona jest opcja **Zestawienia detaliczne – zasilanie cykliczne**, zadanie wsadowe **Księgowanie zapasów** nie ma już zastosowania i nie może być uruchomione.
+
 Ponadto w skróconej karcie **przetwarzania wsadowego** na karcie **Księgowanie** na stronie **Parametry rozwiązania Commerce** wprowadzono następujące parametry: 
 
 - **Maksymalna liczba równoległych operacji księgowania zestawień** — to pole określa liczbę zadań wsadowych, które będą używane do księgowania wielu zestawień. 
 - **Maksymalny wątek na potrzeby przetwarzania zamówień na zestawienie** — to pole reprezentuje maksymalną liczbę wątków używanych przez zadanie wsadowe księgowania zestawienia do tworzenia i fakturowania zamówień sprzedaży dla jednego zestawienia. Łączna liczba wątków, które będą używane przez proces księgowania zestawienia, zostanie obliczona na podstawie wartości w tym parametrze pomnożonej przez wartość w polu parametru **Maksymalna liczba równoległych operacji księgowania zestawień**. Ustawienie zbyt dużej wartości tego parametru może mieć negatywny wpływ na wydajność procesu księgowania zestawienia.
 - **Maksymalna liczba wierszy transakcji uwzględnionych w agregacji** — to pole określa liczbę wierszy transakcji, które zostaną uwzględnione w jednej zagregowanej transakcji przed utworzeniem nowej. Zagregowane transakcje są tworzone na podstawie różnych kryteriów agregacji, takich jak odbiorca, Data firmy lub wymiary finansowe. Należy pamiętać, że wiersze z pojedynczej transakcji nie będą dzielone między różne zagregowane transakcje. Oznacza to, że istnieje możliwość, że liczba wierszy w zagregowanej transakcji jest nieco wyższa lub niższa w zależności od czynników, takich jak liczba odrębnych produktów.
 - **Maksymalna liczba wątków sprawdzania poprawność transakcji w sklepie** — to pole określa liczbę wątków, które będą używane do sprawdzania poprawności transakcji. Sprawdzanie transakcji jest wymaganym krokiem, który musi nastąpić, zanim transakcje będą mogły zostać uwzględnione w zestawieniach. Ponadto konieczne jest zdefiniowanie ustawienia **Produkt karty upominkowej** na skróconej karcie **Karta upominkowa** dostępnej na karcie **Księgowanie** na stronie **Parametry rozwiązania Commerce**. Ta zasada obowiązuje, nawet jeśli organizacja nie używa żadnych kart upominkowych.
+
+Poniższa tabela przedstawia zalecane wartości dla poprzednich parametrów. Wartości te powinny być przetestowane i dopasowane do konfiguracji wdrożenia oraz dostępnej infrastruktury. Każde zwiększenie zalecanych wartości może mieć negatywny wpływ na inne procesy wsadowe i powinno być potwierdzone.
+
+| Parametr | Zalecana wartość | Szczegóły |
+|-----------|-------------------|---------|
+| Maksymalna liczba równoległych operacji księgowania zestawień | <p>Umożliwia ustawienie tego parametru na liczbę zadań wsadowych dostępnych dla grupy zadań wsadowych, w których jest uruchomione zadanie **Zestawienia**.</p><p>**Reguła ogólna:** Pomnóż liczbę serwerów wirtualnych serwera obiektów aplikacji (AOS) przez liczbę zadań wsadowych dostępnych na serwerze wirtualnym AOS.</p> | Ten parametr nie ma zastosowania, gdy włączona jest funkcja **Zestawienia detaliczne – podawanie kroplowe**. |
+| Maksymalna liczba wątków do przetwarzania zamówień z jednego zamówienia | Rozpocznij od wartości testowych o wartości **4**. Zwykle wartość nie powinna przekraczać **8**. | Ten parametr określa liczbę wątków, które są używane do tworzenia i wysyłania zamówień sprzedaży. Reprezentuje on liczbę wątków, które są dostępne do wysłania w każdej wypowiedzi. |
+| Maksymalna liczba wierszy transakcji w agregacji | Rozpocznij od wartości testowych o wartości **1000**. W zależności od konfiguracji centrali, mniejsze rozkazy mogą być bardziej korzystne dla wydajności. | Ten parametr określa liczbę wierszy, które będą zawarte w każdym zamówieniu sprzedaży podczas księgowania zestawienia. Po osiągnięciu tej liczby linie zostaną rozdzielone do nowego porządku. Chociaż liczba linii sprzedaży nie będzie dokładna, ponieważ podział następuje na poziomie zamówienia sprzedaży, będzie ona zbliżona do liczby, która jest ustawiona. Ten parametr jest używany do generowania zleceń sprzedaży dla transakcji detalicznych, które nie mają określonego klienta. |
+| Maksymalna liczba wątków sprawdzania poprawność transakcji w sklepie | Zalecamy, abyś ustawił ten parametr na **4** i zwiększał go tylko wtedy, gdy nie osiągniesz zadowalającej wydajności. Liczba wątków, których używa ten proces, nie może przekroczyć liczby procesorów dostępnych dla serwera wsadowego. Jeśli przypiszesz tutaj zbyt wiele wątków, możesz wpłynąć na inne przetwarzanie wsadowe. | Ten parametr kontroluje liczbę transakcji, które mogą być potwierdzane w tym samym czasie dla danego sklepu. |
 
 > [!NOTE]
 > Wszystkie ustawienia i parametry związane z księgowaniem zestawień, które są zdefiniowane w oknie Sklepy sieci sprzedaży i na stronie **Parametry rozwiązania Commerce**, mają zastosowanie do ulepszonej funkcji księgowania zestawień.

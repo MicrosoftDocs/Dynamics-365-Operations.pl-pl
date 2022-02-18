@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: c0e301305fb0d99ab2f8c811f9f560bc5008e02b
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: b8d60f32d986dec6bb26d78ebdfe8cee3a6b688a
+ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944897"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "8077045"
 ---
 # <a name="deployment-guidelines-for-the-control-unit-integration-sample-for-sweden-legacy"></a>Wskazówki dotyczące wdrażania przykładu integracji jednostki kontrolnej dla Szwecji (starsza wersja).
 
@@ -193,7 +193,7 @@ Celem rozszerzenia, czyli dostawcy dokumentów fiskalnych, jest generowanie doku
 
 Rozszerzenie kolekcji CRT to **Runtime.Extensions.DocumentProvider.CleanCashSample**.
 
-Aby uzyskać więcej informacji o projektowaniu rozwiązań integracji fiskalnej, zobacz [Proces rejestracji fiskalnej i przykładowe integracje fiskalne dla urządzeń fiskalnych](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
+Aby uzyskać więcej informacji o projektowaniu rozwiązań integracji fiskalnej, zobacz [Proces rejestracji fiskalnej i przykładowe integracje fiskalne dla urządzeń i usług fiskalnych](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
 
 #### <a name="request-handler"></a>Program obsługi żądań
 

@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 034957628580c468ed00b14afeb7e49af15c45cc
-ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
+ms.openlocfilehash: e87bef8994fe1eac0089764c8d4f9b18289c13ea
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "7423478"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069637"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Konfigurowanie reguł i opcji uprawnień 
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -74,7 +77,7 @@ W czasie otwartej rejestracji pracownicy mogą wybierać plany świadczeń. Jeś
    | **Funkcja stanowiska uprawnienia** | Określa funkcję lub funkcje stanowiska spełniające regułę uprawnienia. Na przykład Sprzedawcy lub Serwisanci. |
    | **Typ zadania uprawnienia** | Określa typ lub typy funkcji spełniające regułę uprawnienia. Na przykład Pracownik biurowy lub Dyrektor. |
    | **Uprawniona firma** | Określa firmę lub firmy, do których ma zastosowanie reguła uprawnienia. Na przykład Contoso Entertainment System USA. |
-   | **Uprawniony region wynagrodzenia** | Określa lokalizację pracownika etatowego spełniającą regułę uprawnienia. Na przykład Środkowe stany USA. |
+   | **Region uprawnionego wynagrodzenia** | Określa lokalizację pracownika etatowego spełniającą regułę uprawnienia. Na przykład Środkowe stany USA. |
    | **Uprawnione stanowisko** | Określa stanowisko lub stanowiska spełniające regułę uprawnienia. Na przykład Asystent w dziale kadr lub Kierownik działu kadr. |
    | **Typ kwalifikującego się stanowiska** | Określa typ lub typy stanowisk spełniające regułę uprawnienia. Na przykład Pełny etat. |
    | **Stan uprawniony** | Określa stany/województwa/prowincje itd. spełniające regułę uprawnienia. Na przykład Dakota Północna USA lub Kolumbia Brytyjska, Kanada. |
@@ -229,7 +232,7 @@ Za pomocą programów kredytu elastycznego można rejestrować pracowników na �
 
 ## <a name="configure-programs"></a>Konfigurowanie programów
 
-Programy to zbiory planów świadczeń, które mają wspólne reguły uprawnień. Reguły uprawnień można zdefiniować dla całego programu zamiast dla poszczególnych planów. Na przykład program Contoso Canada FTE lub Contoso Europe na poziomie kierowników. 
+Programy to zbiory planów świadczeń, które mają wspólne reguły uprawnień. Reguły uprawnień można zdefiniować dla całego programu zamiast dla poszczególnych planów. Może to być na przykład program z przeliczeniem na pełne etaty w Contoso Canada albo program dla członków dyrekcji w Contoso Europe. 
 
 1. W obszarze roboczym **Zarządzanie świadczeniami** w sekcji **Konfiguracja** wybierz opcję **Reguły i opcje uprawnień**.
 

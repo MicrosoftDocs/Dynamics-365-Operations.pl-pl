@@ -1,28 +1,35 @@
 ---
-# required metadata
 title: Omówienie tworzenia przepływów pracy
-description: 'W tym temacie wyjaśniono, jak utworzyć przepływ pracy.'
+description: W tym temacie wyjaśniono, jak utworzyć przepływ pracy.
 author: ChrisGarty
 ms.date: 07/25/2019
 ms.topic: overview
-ms.prod: null
-ms.technology: null
-ms.search.form: 'WorkflowSelectTemplateRnr, WorkflowTableListPageRnr'
-audience: 'Application User, IT Pro'
+ms.prod: ''
+ms.technology: ''
+ms.search.form: WorkflowSelectTemplateRnr, WorkflowTableListPageRnr
+audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.custom:
-  - '195583'
-  - intro-internal
+- "195583"
+- intro-internal
 ms.assetid: 836ddd01-cc34-45c3-a4b0-20647357dbc6
 ms.search.region: Global
 ms.author: cgarty
-ms.search.validFrom: '2016-08-30'
+ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
+ms.openlocfilehash: abdb8ce3186806ac1b756c9161d53547dd8ae40b
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067965"
 ---
-
 # <a name="create-workflows-overview"></a>Omówienie tworzenia przepływów pracy
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 W tym temacie wyjaśniono, jak utworzyć przepływ pracy.
 

@@ -2,7 +2,7 @@
 title: Konfigurowanie dzierżawy B2C w usłudze Commerce
 description: W tym temacie opisano sposób konfigurowania dzierżawcy Azure Active Directory (Azure AD) dzierżawców biznesowych (B2C) dla uwierzytelniania witryny użytkownika w programie Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 01/05/2022
+ms.date: 02/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8e0fa2c4f22a1854a449a14aac3552313e808cf3
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: dcd5c022c00070922e287a6b8750810ff76bc26f
+ms.sourcegitcommit: 39f1455215e0363cd1449bbc6bdff489097f9ded
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952451"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8092466"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Konfigurowanie dzierżawy B2C w usłudze Commerce
 
@@ -109,7 +109,7 @@ Aby utworzyć aplikację B2C, należy wykonać następujące czynności.
 1. Dla **Przekierowywania URI** wprowadź dedykowane adresy URL odpowiedzi jako typ sieci **Web**. Patrz [Adresy URL odpowiedzi](#reply-urls) poniżej w celu znalezienia informacji na temat adresów URL oraz jak je formatować. Przekierowanie URI/odpowiedź URL musi być wprowadzone aby umożliwić przekierowania z Azure AD B2C z powrotem na twoją stronę kiedy użytkownik się uwierzytelni. Adres URL odpowiedzi może być dodany podczas procesu rejestracji lub może być dodany później poprzez wybranie linku **Dodaj URI przekierowania** z menu **Przegląd** w sekcji **Przegląd** w aplikacji B2C.
 1. Aby uzyskać **Uprawnienia**, wybierz opcję **Udziel zgody administratora na urpawnienia openid i offline_access**.
 1. Wybierz opcję **Zarejestruj**.
-1. Wybierz nowo utworzoną aplikację i przejdź do menu **Uprawnienia API**. 
+1. Wybierz nowo utworzoną aplikację i przejdź do menu **uwierzytelniania**. 
 1. Jeśli wprowadzono adres URL odpowiedzi, pod **Przepływy jawne i hybrydowe** zaznacz obie opcje **Tokeny dostępu** i **Tokeny identyfikacyjne**, aby włączyć je dla aplikacji, a następnie wybierz **Zapisz**. Jeśli adres URL odpowiedzi nie został wprowadzony podczas rejestracji, może on również zostać dodany na tej stronie poprzez wybranie **Dodaj platformę**, wybranie **Sieć**, a następnie wpisanie przekierowującego URI aplikacji. W sekcji **Niejawne udzielenie i przepływy hybrydowe** będzie można wybrać zarówno opcję **Dostęp tokenowy**, jak i **Identyfikatory tokenów**.
 1. Przejdź do menu **Przegląd** portalu Azure i skopiuj **Identyfikator aplikacji (klienta)**. Należy zwrócić uwagę na ten identyfikator dla późniejszych kroków konfiguracji (później jako identyfikator **GUID klienta**).
 
@@ -309,19 +309,15 @@ Po zakończeniu konfigurowania dzierżawy B2C Azure AD należy skonfigurować dz
 
 Aby zebrać wymagane informacje o aplikacji, wykonaj następujące kroki.
 
-1. W portalu Azure przejdź do **Strony głównej \> B2C Azure AD — aplikacje**.
-1. Wybierz aplikację, a następnie w lewym okienku nawigacji wybierz **właściwości**, aby uzyskać szczegółowe informacje o aplikacji.
-1. W polu **identyfikator aplikacji** Zbierz identyfikator aplikacji B2C utworzonej w dzierżawie B2C. Zostanie to później wprowadzone jako **identyfikator GUID klienta** w module Konstruktor witryn.
-1. W obszarze **adres URL odpowiedzi** Zbierz adres URL odpowiedzi.
-1. Przejdź do **Strona główna \> B2C Azure AD — przepływy użytkownika (zasady)**, a następnie Zbierz nazwy poszczególnych zasad przepływu użytkowników.
+1. W portalu Azure przejdź do **Strony głównej \> B2C Azure AD — rejestracja aplikacji**.
+1. Wybierz aplikację, a następnie w lewym okienku nawigacji wybierz **Przegląd**, aby uzyskać szczegółowe informacje o aplikacji.
+1. W odnośniku **Identyfikator aplikacji (klient)** Zbierz identyfikator aplikacji B2C utworzonej w dzierżawie B2C. Zostanie to później wprowadzone jako **identyfikator GUID klienta** w module Konstruktor witryn.
+1. Wybierz **Przekieruj adresy URL** i pobierz adres URL odpowiedzi pokazany dla twojej strony (adres URL odpowiedzi wpisany podczas konfiguracji).
+1. Przejdź do **Strona główna \> B2C Azure AD — przepływy użytkownika**, a następnie Zbierz pełne nazwy poszczególnych zasad przepływu użytkowników.
 
-Poniższy rysunek przedstawia przykład strony **B2C Azure AD — aplikacje**.
+Poniższy rysunek przedstawia przykład strony przeglądowej **B2C Azure AD — rejestracje aplikacji**.
 
-![Przejdź do aplikacji B2C w dzierżawie.](./media/B2CImage_19.png)
-
-Poniższy rysunek przedstawia przykład strony aplikacji **Właściwości** w B2C Azure AD. 
-
-![Kopiuj identyfikator aplikacji z właściwości aplikacji B2C.](./media/B2CImage_21.png)
+![Azure AD B2C — strona przeglądu rejestracji aplikacji z zaznaczonym ID aplikacji (klienta)](./media/ClientGUID_Application_AzurePortal.png)
 
 Poniższy obraz przedstawia przykład zasad przepływu użytkowników na stronie **B2C Azure AD — przepływy użytkownika (zasady)**.
 

@@ -15,18 +15,21 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a466ef2d2002ebc9d35b33571009727626cd5c678e995d42a00dbe64a2806729
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fedf9b35e5dc8372fd82c6308ec5b1452eab7e8f
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778062"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070307"
 ---
 # <a name="extend-with-power-apps-and-power-automate"></a>Rozszerzanie o usługi Power Apps i Power Automate
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 W tym artykule opisano przykładowe scenariusze rozszerzeń programu Microsoft Dynamics 365 Human Resources używanych przez Microsoft Power Apps i Microsoft Power Automate. Można zaimportować pakiet rozwiązań skojarzony z każdym przykładem do środowiska Power Apps. Następnie można używać pakietów jako pomocy lub punktów początkowych do implementacji scenariuszy odpowiednich dla Twojej organizacji.
 
@@ -38,13 +41,13 @@ W tym artykule opisano przykładowe scenariusze rozszerzeń programu Microsoft D
 - Aby zaimportować pakiety, użytkownicy muszą mieć uprawnienie **Twórca środowisk**.
 - Aby eksportować lub importować aplikacje, musisz mieć licencję Power Apps plan 2 lub licencję próbną Power Apps Plan 2.
 
-## <a name="integration-with-microsoft-365-power-automate"></a>Integracja z Microsoft 365, Power Automate
+## <a name="integration-with-microsoft-365-power-automate"></a>Integration with Microsoft 365, Power Automate
 
 Aplikacja **Integracja z Microsoft 365** może być używana do pobierania danych zespołu dla zarejestrowanych użytkowników z Microsoft 365. Odwołuje się ona do pracowników w module Human Resources w celu wyodrębnienia typów identyfikacji pracowników. Menedżerowie mogą sprawdzać daty ważności typów identyfikatorów pracowników etatowych. Mogą również wysłać przypomnienie pocztą e-mail, jeśli typ identyfikatora pracownika ma wygasnąć. Aparat Power Automate integruje się z platformą Power Apps w celu wysłania tego przypomnienia. Po wysłaniu przypomnienia potwierdzenie zostanie wysłane z powrotem do rozwiązania Power Apps z rozwiązania Power Automate. Typy identyfikacji to między innymi prawo jazdy, paszport i inne akceptowane formy identyfikatorów.
 
 Tę aplikację można rozszerzyć dla innych scenariuszy. Na przykład może ona służyć do wyświetlania informacji dotyczących urlopu zespołu, zdarzeń kalendarza i zdarzeń specyficznych dla zespołu.
 
-Aby pobrać aplikację **Integracja z Microsoft 365, Power Automate**, przejdź do [Integracja z Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2081787) w Centrum pobierania Microsoft.
+Aby pobrać aplikację **Integration with Microsoft 365, Power Automate**, przejdź do sekcji [Integracja z programem Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2081787) w Centrum pobierania Microsoft.
 
 ## <a name="power-automate--sql-connect-and-execute"></a>Power Automate — połączenie SQL i wykonywanie
 

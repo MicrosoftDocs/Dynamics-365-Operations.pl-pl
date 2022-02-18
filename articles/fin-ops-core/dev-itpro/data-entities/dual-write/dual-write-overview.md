@@ -1,21 +1,26 @@
 ---
 title: Omówienie podwójnego zapisu
-description: 'Ten temat zawiera opis podwójnego zapisu, który zapewnia współpracę prawie w czasie rzeczywistym między aplikacjami Customer Engagement a aplikacjami Finanse i Operacje.'
+description: Ten temat zawiera opis podwójnego zapisu, który zapewnia współpracę prawie w czasie rzeczywistym między aplikacjami Customer Engagement a aplikacjami Finanse i Operacje.
 author: RamaKrishnamoorthy
 ms.date: 02/06/2020
 ms.topic: overview
-audience: 'Application User, IT Pro'
+audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
-ms.search.validFrom: '2020-01-06'
+ms.search.validFrom: 2020-01-06
+ms.openlocfilehash: f39322a0c2ef50ef2bbeb256c80096e0687c4642
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061341"
 ---
-
 # <a name="dual-write-overview"></a>Omówienie podwójnego zapisu
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 
 

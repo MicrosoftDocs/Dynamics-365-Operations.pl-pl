@@ -14,18 +14,21 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8c368f916a199c7472f6f886d143048487a38ecc
-ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
+ms.openlocfilehash: 308e2a538666522edf4a76be13b93c82c3f3a774
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "7413418"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071117"
 ---
 # <a name="integration-with-finance-faq"></a>Integracja z często zadawanymi pytaniami Finance
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 W tym temacie zawarto odpowiedzi na podstawowe pytania dotyczące sposobu synchronizowania danych po zintegrowaniu programu Dynamics 365 Human Resources z programem Dynamics 365 Finance.
 
@@ -86,7 +89,7 @@ Nie jest wymagana specjalna konfiguracja do obsługi wyjątków. Integrator dany
 
 ## <a name="can-i-set-up-bi-directional-integration"></a>Czy mogę skonfigurować dwukierunkową integrację?
 
-Nie, integracja jest obecnie jednym sposobem (Human Resources do Finance and Operations). Dostępny jest jednak domyślny szablon do wysyłania danych z rozwiązania Human Resources do rozwiązania Finance.
+Nie. Integracja jest obecnie jednokierunkowa (z rozwiązania Human Resources do rozwiązania Finanse i Działania). Dostępny jest jednak domyślny szablon do wysyłania danych z rozwiązania Human Resources do rozwiązania Finance.
 
 ## <a name="can-i-allow-record-deletion-as-part-of-my-integration"></a>Czy można zezwolić na usunięcie rekordu w ramach integracji?
 
@@ -116,7 +119,7 @@ Przyczyny tego błędu mogą być następujące:
 
 - Przeniesienie danych spowodowało zduplikowanie wyodrębnienia rekordów w lokalizacji źródłowej (Dataverse).
 
-- Przeniesienie danych zawiera wartości null dla pól, które są wymagane w Finance and Operations. Sprawdź dane, które są w Dataverse i czy spełniają wymagania dotyczące Finance and Operations.
+- Przeniesienie danych zawiera wartości null dla pól, które są wymagane w Finanse i Działania. Sprawdź dane, które są w Dataverse i czy spełniają wymagania dotyczące Finanse i Działania.
 
 ## <a name="if-there-are-execution-errors-and-the-employee-id-didnt-sync-how-do-i-find-the-history-job-which-has-the-failed-employee-record"></a>Jeśli występują błędy wykonania i identyfikator pracownika nie został zsynchronizowany, jak znaleźć zadanie historii, które zawiera rekord pracownika, dla którego wystąpił błąd?
 
@@ -148,9 +151,9 @@ Jeśli jednostka jest obsługiwana, a dane są dostępne w Dataverse, sprawdź, 
 
 ## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-what-should-i-do"></a>Po zaimportowaniu adresów pracowników do Finance są one nieprawidłowe. Co należy zrobić?
 
-Sekwencja numerów dla **Identyfikatora lokalizacji** korzysta z takiego samego wzorca zarówno w Human Resources jaki i w Finance. Sekwencja numerów musi być unikatowa po obu stronach, żeby nie było żadnych konfliktów adresów podczas integrowania danych z Dataverse do Finance and Operations.
+Sekwencja numerów dla **Identyfikatora lokalizacji** korzysta z takiego samego wzorca zarówno w Human Resources jaki i w Finance. Sekwencja numerów musi być unikatowa po obu stronach, żeby nie było żadnych konfliktów adresów podczas integrowania danych z Dataverse do Finanse i Działania.
 
-Podczas wprowadzania środowiska Human Resources należy sprawdzić, czy sekwencja numerów nie jest taka sama w Human Resources i Finance and Operations. Sprawdź, czy wszystkie sekwencje numerów nie są identyczne tam gdzie dane mogą być obsługiwane przez oba systemy.
+Podczas wprowadzania środowiska Human Resources należy sprawdzić, czy sekwencja numerów nie jest taka sama w Human Resources i Finanse i Działania. Sprawdź, czy wszystkie sekwencje numerów nie są identyczne tam gdzie dane mogą być obsługiwane przez oba systemy.
 
 ## <a name="when-creating-my-connection-set-i-am-unable-to-see-the-connection-in-the-connection-drop-down-list-what-do-i-do"></a>Po utworzeniu moje zestawu połączeń nie widać połączenia na liście rozwijanej Połączenie. Co należy zrobić?
 

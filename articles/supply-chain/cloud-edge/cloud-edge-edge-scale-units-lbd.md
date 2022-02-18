@@ -2,7 +2,7 @@
 title: Rozmieszczanie jednostek skalowania urządzenia brzegowego na niestandardowym sprzęcie przy użyciu danych LBD
 description: W tym temacie opisano sposób ustanawiania lokalnych jednostek skalowania na krawędzi przy użyciu niestandardowego sprzętu i wdrożenia opartego na lokalnych danych biznesowych (LBD).
 author: cabeln
-ms.date: 11/29/2021
+ms.date: 01/24/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 2407d4e3c6adaf5df2e8f5440ee8336f86012caf
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 1204b65e76c107c29a94a61c321064a87c7571fb
+ms.sourcegitcommit: 948978183a1da949e35585b28b8e85a63b6c12b1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920680"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "8024549"
 ---
 # <a name="deploy-edge-scale-units-on-custom-hardware-using-lbd"></a>Rozmieszczanie jednostek skalowania urządzenia brzegowego na niestandardowym sprzęcie przy użyciu danych LBD
 
@@ -26,6 +26,13 @@ Jednostki skalowania na krawędzi mają znaczenie w dystrybuowanej topologii hyb
 Jednostki skalowania na krawędzi można wdrożyć, tworząc lokalne dane biznesowe (LBD) [w środowisku lokalnym](../../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md), a następnie konfigurując je, aby działały jako jednostka skalowania w dystrybuowanej topologii hybrydowej na potrzeby aplikacji Supply Chain Management. Można to osiągnąć przez skojarzenie lokalnego środowiska LBD ze środowiskiem Supply Chain Management w chmurze, które zostało skonfigurowane do działania jako piasta.  
 
 W tym temacie opisano sposób skonfigurowania lokalnego środowiska LBD jako jednostki skalowania na krawędzi, a następnie skojarzenia go z piastą.
+
+## <a name="infrastructure-considerations"></a>Uwagi dotyczące infrastruktury
+
+Jednostki brzegowe działają w środowisku lokalnym, więc wymagania dotyczące infrastruktury są dość podobne. Należy jednak zwrócić uwagę na pewne różnice:
+
+- Jednostki o skali brzegowej nie korzystają z Financial Reporting, więc nie potrzebują węzłów Financial Reporting.
+- Obciążenia produkcyjne i magazynowe nie są intensywne obliczeniowo, więc zastanów się nad odpowiednim doborem mocy obliczeniowej dla węzłów AOS.
 
 ## <a name="deployment-overview"></a>Omówienie wdrożenia
 

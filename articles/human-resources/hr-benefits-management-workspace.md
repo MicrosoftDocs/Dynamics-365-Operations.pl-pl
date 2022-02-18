@@ -2,7 +2,7 @@
 title: Obszar roboczy zarządzania świadczeniami
 description: W tym temacie opisano obszar roboczy Zarządzanie świadczeniami w rozwiązaniu Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 09/21/2021
+ms.date: 01/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-24
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e6cc1432e108c74706dea124a62024272e65b6c1
-ms.sourcegitcommit: 47a3ad71210c7ac84d0c25e913c440b5ba205282
+ms.openlocfilehash: 424f4a2098e05b4f7dc6fa84df133dda81cc59f0
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7512481"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071538"
 ---
 # <a name="benefits-management-workspace"></a>Obszar roboczy zarządzania świadczeniami
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [applies to](../includes/applies-to-hr.md)]
 
@@ -94,7 +97,7 @@ Aby wyświetlić inny okres świadczeń, wybierz go z listy rozwijanej **Okres**
 Możesz wyświetlić czynności do wykonania, wybierając kafelek lub kartę. Jeśli wybierzesz kartę, możesz wyświetlić i wybrać pracowników na stronie obszaru roboczego.
 Karta **Otwórz rejestrację** zawiera kluczowe mierniki otwartego procesu rejestracji. 
 
-Informacje dotyczące rejestracji otwartej zostaną wyświetlone na 30 dni przed **datą rozpoczęcia rejestracji**. Jest to definiowane w konfiguracji **okresów** w formularzu **Zarządzanie świadczeniami** > **Łącza** > **Okresy**, w polu **Data początku rejestracji**.  Aby zmienić to ustawienie, przejdź do **Parametry współdzielone zasoby ludzkie** > **Zarządzanie świadczeniami** > **Otwórz opcje rejestracji** i zaktualizuj pole **Liczba**.  
+Informacje dotyczące rejestracji otwartej zostaną wyświetlone na 30 dni przed **datą rozpoczęcia rejestracji**. Jest to definiowane w konfiguracji **okresów** w formularzu **Zarządzanie świadczeniami** > **Łącza** > **Okresy**, w polu **Data początku rejestracji**.  Aby zmienić to ustawienie, przejdź do **Parametry współdzielone Human resources** > **Zarządzanie świadczeniami** > **Otwórz opcje rejestracji** i zaktualizuj pole **Liczba**.  
 
 Na karcie **Otwórz rejestrację** są dostępne następujące informacje:
  - Pracownicy, którzy nie rozpoczęli otwartego procesu rejestracji

@@ -1,28 +1,33 @@
 ---
-# required metadata
 title: Urządzenia peryferyjne
-description: 'W tym temacie wyjaśniono pojęcia, które są związane z urządzenia peryferyjnymi Commerce.'
+description: W tym temacie wyjaśniono pojęcia, które są związane z urządzenia peryferyjnymi Commerce.
 author: BrianShook
-ms.date: 02/06/2020
+ms.date: 02/04/2022
 ms.topic: overview
-ms.prod: null
-ms.technology: null
-ms.search.form: 'RetailTerminalTable, RetailDevice, RetailHardwareProfile'
-audience: 'Application User, IT Pro'
+ms.prod: ''
+ms.technology: ''
+ms.search.form: RetailTerminalTable, RetailDevice, RetailHardwareProfile
+audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.custom:
-  - '268444'
-  - intro-internal
+- "268444"
+- intro-internal
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: brshoo
-ms.search.validFrom: '2016-11-30'
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: e60b369feff5bf17f58d6a3b4c9e9b290343b1ae
+ms.sourcegitcommit: 39f1455215e0363cd1449bbc6bdff489097f9ded
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8092491"
 ---
-
 # <a name="peripherals"></a>Urządzenia peryferyjne
 
 [!include[banner](includes/banner.md)]
+[!include[banner](includes/preview-banner.md)]
 
 W tym temacie wyjaśniono pojęcia, które są związane z urządzeniami peryferyjnymi sklepu. Opisano różne sposoby podłączania urządzeń peryferyjnych do punktu sprzedaży (POS) oraz składniki, które są odpowiedzialne za zarządzanie połączeniem z punktem sprzedaży.
 
@@ -30,15 +35,15 @@ W tym temacie wyjaśniono pojęcia, które są związane z urządzeniami peryfer
 
 ### <a name="pos-registers"></a>Rejestry punktu sprzedaży
 
-Nawigacja: Kliknij kolejno opcje **Retail i Commerce** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Rejestry**. Kasa w punkcie sprzedaży (POS) to jednostka używana do definiowania właściwości konkretnego wystąpienia punktu sprzedaży. Cechy te obejmują profil sprzętu lub konfigurację urządzeń peryferyjnych, które będą używane w kasie, sklep, do którego kasa jest mapowana, oraz wizualne środowisko użytkownika logującego się w tej kasie.
+Nawigacja: wybierz kolejno opcje **Retail i Commerce \> Ustawienia kanału \> Ustawienia punktu sprzedaży \> Rejestry**. Kasa w punkcie sprzedaży (POS) to jednostka używana do definiowania właściwości konkretnego wystąpienia punktu sprzedaży. Cechy te obejmują profil sprzętu lub konfigurację urządzeń peryferyjnych, które będą używane w kasie, sklep, do którego kasa jest mapowana, oraz wizualne środowisko użytkownika logującego się w tej kasie.
 
 ### <a name="devices"></a>Urządzenia
 
-Nawigacja: Kliknij kolejno opcje **Retail i Commerce** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Urządzenia**. Urządzenie to jednostka, która reprezentuje fizyczne wystąpienie urządzenia zmapowanego do kasy POS. Po utworzeniu urządzenie jest mapowane do kasy POS. Jednostka urządzenia śledzi informacje o tym, kiedy kasa punktu sprzedaży jest aktywowana, jaki typ klienta jest używany i jaki pakiet aplikacji został wdrożony na konkretnym urządzeniu. 
+Nawigacja: wybierz kolejno opcje **Retail i Commerce \> Ustawienia kanału \> Ustawienia punktu sprzedaży \> Urządzenia**. Urządzenie to jednostka, która reprezentuje fizyczne wystąpienie urządzenia zmapowanego do kasy POS. Po utworzeniu urządzenie jest mapowane do kasy POS. Jednostka urządzenia śledzi informacje o tym, kiedy kasa punktu sprzedaży jest aktywowana, jaki typ klienta jest używany i jaki pakiet aplikacji został wdrożony na konkretnym urządzeniu. 
 
-Urządzenia mogą być mapowane do następujących typów aplikacji: Retail Modern POS, Retail Cloud POS, Retail Modern POS dla systemu Windows Phone, Retail Modern POS dla systemu Android i Retail Modern POS dla systemu iOS.
+Urządzenia mogą być mapowane do następujących typów aplikacji: Retail Modern POS, Retail Cloud POS, Retail Modern POS dla systemu Android i Retail Modern POS dla systemu iOS.
 
-### <a name="modern-pos"></a>Nowoczesny punkt sprzedaży
+### <a name="modern-pos"></a>Modern POS
 
 Modern POS to oprogramowanie punktu sprzedaży dla systemu Microsoft Windows. Może być instalowane w systemach operacyjnych Windows 10.
 
@@ -58,13 +63,13 @@ Modern POS for Android jest wersją programu Modern POS przeznaczoną dla system
 
 Urządzenia peryferyjne punktu sprzedaży to urządzenia, które wspierają funkcje punktu sprzedaży. Te urządzenia peryferyjne są zwykle podzielone na określone klasy. Aby uzyskać więcej informacji na temat tych klas, zobacz sekcję „Klasy urządzeń” w tym temacie.
 
-### <a name="hardware-station"></a>Hardware Station
+### <a name="hardware-station"></a>Stacja sprzętowa
 
-Nawigacja: Kliknij kolejno opcje **Retail i Commerce** &gt; **Kanały** &gt; **Sklepy** &gt; **Wszystkie sklepy**. Zaznacz sklep i kliknij skróconą kartę **Stacje sprzętowe**. Ustawienie **Stacja sprzętowa** to ustawienie na poziomie kanału służące do definiowania wystąpień, w których zostanie wdrożona logika urządzeń peryferyjnych. To ustawienie na poziomie kanału jest używane do określenia charakterystyki stacji sprzętowej. Służy również do wyświetlenia listy stacji sprzętowych, które są dostępne dla wystąpienia programu Modern POS w danym sklepie. Stacja sprzętowa jest wbudowana w programach Modern POS dla systemu Windows i Android. Stacje sprzętowe mogą również być instalowane niezależnie jako autonomiczne wystąpienia program Microsoft Internet Information Services (IIS). W takim przypadku są dostępne przez sieć.
+Nawigacja: wybierz kolejno opcje **Handel detaliczny i inny \> Kanały \> Sklepy \> Wszystkie sklepy**. Zaznacz sklep i wybierz skróconą kartę **Stacje sprzętowe**. Ustawienie **Stacja sprzętowa** to ustawienie na poziomie kanału służące do definiowania wystąpień, w których zostanie wdrożona logika urządzeń peryferyjnych. To ustawienie na poziomie kanału jest używane do określenia charakterystyki stacji sprzętowej. Służy również do wyświetlenia listy stacji sprzętowych, które są dostępne dla wystąpienia programu Modern POS w danym sklepie. Stacja sprzętowa jest wbudowana w programach Modern POS dla systemu Windows i Android. Stacje sprzętowe mogą również być instalowane niezależnie jako autonomiczne wystąpienia program Microsoft Internet Information Services (IIS). W takim przypadku są dostępne przez sieć.
 
 ### <a name="hardware-profile"></a>Profil sprzętu
 
-Nawigacja: Kliknij kolejno opcje **Handel detaliczny i inny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Profile punktów sprzedaży** &gt; **Profile sprzętu**. Profil sprzętu to lista urządzeń skonfigurowanych dla kasy w punkcie sprzedaży lub stacji sprzętowej. Profil sprzętu można mapować bezpośrednio do kasy w punkcie sprzedaży lub do stacji sprzętowej.
+Nawigacja: wybierz kolejno opcje **Handel detaliczny i inny \> Ustawienia kanału \> Ustawienia punktu sprzedaży \> Profile punktów sprzedaży \> Profile sprzętu**. Profil sprzętu to lista urządzeń skonfigurowanych dla kasy w punkcie sprzedaży lub stacji sprzętowej. Profil sprzętu można mapować bezpośrednio do kasy w punkcie sprzedaży lub do stacji sprzętowej.
 
 ## <a name="devices-classes"></a>Klasy urządzeń
 Urządzenia peryferyjne sieci sprzedaży są zwykle podzielone na klasy. W tej sekcji opisano i ogólnie omówiono urządzenia obsługiwane przez program Modern POS.
@@ -93,9 +98,9 @@ Wyświetlacze wierszowe służą do wyświetlania produktów, sald transakcji i 
 
 Urządzenia do przechwytywania podpisu można podłączyć bezpośrednio do komputera przez port USB przy użyciu sterowników OPOS. Gdy zostanie skonfigurowana funkcja przechwytywania podpisu, klient będzie monitowany o zalogowanie się na urządzeniu. Po złożeniu podpisu będzie on wyświetlany kasjerowi do akceptacji.
 
-### <a name="scale"></a>Skalowanie
+### <a name="scale"></a>Waga
 
-Wagę można podłączyć do komputera przez interfejs USP przy użyciu sterowników OPOS. Gdy do transakcji zostanie dodany produkt oznaczony jako „Ważony”, aplikacja punktu sprzedaży odczyta masę z wagi, doda produkt do transakcji i użyje ilości otrzymanej z wagi.
+Wagę można podłączyć do komputera przez interfejs USB przy użyciu sterowników OPOS. Gdy do transakcji zostanie dodany produkt oznaczony jako „Ważony”, aplikacja punktu sprzedaży odczyta masę z wagi, doda produkt do transakcji i użyje ilości otrzymanej z wagi.
 
 ### <a name="pin-pad"></a>Konsola PIN
 
@@ -133,9 +138,15 @@ Drukowanie paragonów w punkcie sprzedaży jest zoptymalizowane dla standardu OP
 
 Jeśli formanty OPOS są dostępne dla używanej drukarki systemu Windows, drukarka powinna poprawnie współpracować z programem Commerce.
 
-### <a name="universal-windows-platform"></a>Platforma uniwersalna systemu Windows
+### <a name="plug-and-play-devices"></a>Urządzenia plug-and-play
 
-W kontekście urządzeń peryferyjnych platforma UWP odnosi się do obsługi urządzeń typu Plug and Play w systemie Windows. Po podłączeniu urządzenia typu Plug and Play do wersji systemu operacyjnego Windows obsługującej tego typu urządzenie nie trzeba instalować dodatkowego sterownika, aby urządzenie działało zgodnie z przeznaczeniem. Na przykład jeśli system Windows wykryje głośnik Bluetooth, system operacyjny wie, że urządzenie ma typ klasy **Głośnik**. W związku z tym traktuje to urządzenie jako głośnik. Nie jest wymagana żadna dodatkowa konfiguracja. W przypadku sprzętu dla punktu sprzedaży można podłączać wiele urządzeń USB, a system Windows rozpozna je jako urządzenia interfejsu HID. Jednakże może nie być w stanie rozpoznać funkcjonalności urządzenia, ponieważ urządzenie nie podaje swojej klasy/typu. W systemie Windows 10 dodano klasy urządzeń skanerów kodów kreskowych i czytników MSR. W związku z tym jeśli urządzenie deklaruje się wobec systemu 10 Windows jako należące do jednej z tych klas, system Windows będzie nasłuchiwał zdarzeń z tego urządzenia we właściwych momentach. Aplikacja Modern POS obsługuje czytniki MSR i skanery zgodne ze standardem UWP. W związku z tym gdy jest gotowa przyjąć dane wejściowe od jednego z takich urządzeń, a urządzenie należące do jednej z podanych klas jest podłączone, urządzenia można użyć. Na przykład jeśli skaner kodów kreskowych UWP jest podłączony do komputera z systemem Windows 10, a dla programu Modern POS skonfigurowanie logowanie przy użyciu kodów kreskowych, skaner kodów kreskowych stanie się aktywny na ekranie logowania. Nie jest wymagana żadna dodatkowa konfiguracja. Stopniowo do systemu Windows są dodawane kolejne klasy urządzeń punktów sprzedaży zgodne ze standardem UWP. Są wśród nich klasy szuflad kasowych i drukarek paragonów. Obsługa tych nowych klas urządzeń wkrótce zostanie dodana w programie Modern POS.
+Po podłączeniu urządzenia typu Plug and Play do wersji systemu operacyjnego Windows obsługującej tego typu urządzenie nie trzeba instalować dodatkowego sterownika, aby urządzenie działało zgodnie z przeznaczeniem. Na przykład jeśli system Windows wykryje głośnik Bluetooth, system operacyjny wie, że urządzenie ma typ klasy Głośnik i traktuje je jako taki. Nie jest wymagana żadna dodatkowa konfiguracja. 
+
+W przypadku urządzeń peryferyjnych POS wiele urządzeń USB może zostać podłączonych i rozpoznanych przez system operacyjny Windows jako Human Interface Devices (HIDs). Jednakże Windows może nie być w stanie rozpoznać funkcjonalności urządzenia, ponieważ urządzenie nie podaje swojej klasy/typu. W systemie Windows 10 dodano klasy urządzeń skanerów kodów kreskowych i czytników MSR. W związku z tym jeśli urządzenie deklaruje się wobec systemu 10 Windows jako należące do jednej z tych klas, system Windows będzie nasłuchiwał zdarzeń z tego urządzenia we właściwych momentach.
+
+Aplikacja Modern POS obsługuje czytniki MSR i skanery zgodne ze standardem UWP. Dlatego też, gdy Modern POS jest gotowy na wejście z jednego z tych urządzeń i gdy podłączone jest urządzenie należące do jednej z klas urządzeń, można użyć tego urządzenia. Na przykład jeśli skaner kodów kreskowych UWP plug and play jest podłączony do komputera z systemem Windows 10, a dla programu Modern POS skonfigurowanie logowanie przy użyciu kodów kreskowych, skaner kodów kreskowych stanie się aktywny na ekranie logowania. Nie jest wymagana żadna dodatkowa konfiguracja.
+
+Do systemu Windows dodawane są kolejne klasy urządzeń peryferyjnych POS, takie jak klasy dla szuflad kasowych i drukarek paragonów. Obsługa tych nowych klas urządzeń wkrótce zostanie dodana w programie Modern POS.
 
 ### <a name="keyboard-wedge"></a>Czytnik podłączany do klawiatury
 
@@ -144,9 +155,9 @@ Urządzenia czytników podłączanych do klawiatury wysyłają dane do komputera
 > [!NOTE]
 > Jeśli w punkcie sprzedaży używane są skanery klinowe klawiatury, należy je zaprogramować tak, aby wysyłały powrót karety lub zdarzenie **Enter** po ostatnim skanowanym znaku. Jeśli ta konfiguracja nie zostanie wykonana, skanery klinowe klawiatury nie będą działać poprawnie. Aby uzyskać szczegółowe informacje na temat dołączania zdarzenia powrotu karetki, zapoznaj się z dokumentacją dostarczoną przez producenta urządzenia.  
 
-### <a name="native-printer"></a>Macierzysta drukarka
+### <a name="device-printers"></a>Drukarki urządzeń
 
-Drukarki macierzyste (tzn. należące do typu o nazwie „Urządzenie” w profilu sprzętu) można skonfigurować w taki sposób, aby monitowały użytkownika o wybór drukarki skonfigurowanej dla komputera. Jeżeli zostanie skonfigurowana drukarka typu **Urządzenie**, to gdy program Modern POS napotka polecenia drukowania, użytkownik będzie monitowany o wybór drukarki z listy. To zachowanie różni się od zachowania sterowników systemu Windows, ponieważ w profilu sprzętu typ drukarki **Windows** nie pokazuje listy drukarek. Zamiast tego w polu **Nazwa urządzenia** trzeba podać nazwaną drukarkę.
+Drukarki typu "Urządzenie" mogą być skonfigurowane tak, by wyświetlały użytkownikowi monit o wybranie drukarki skonfigurowanej dla danego komputera. Gdy skonfigurowana jest drukarka typu "Urządzenie", to gdy Modern POS napotka polecenie drukowania, użytkownik zostanie poproszony o wybranie drukarki z listy. To zachowanie różni się od zachowania sterowników systemu "Windows", ponieważ w profilu sprzętu typ drukarki Windows nie pokazuje listy drukarek. Zamiast tego w polu **Nazwa urządzenia** trzeba podać nazwaną drukarkę.
 
 ### <a name="network"></a>Sieć
 
@@ -158,7 +169,12 @@ Szuflady kasowe adresowalne w sieci, drukarki paragonów i terminale płatnicze 
 
 Klienci Modern POS systemów Windows i Android zawierają **dedykowane** lub wbudowane stacje sprzętu. Klienci ci mogą komunikować się bezpośrednio z urządzeniami peryferyjnymi za pomocą logiki biznesowej wbudowanej w aplikacje. Aplikacja Android obsługuje tylko urządzenia sieciowe. Aby uzyskać więcej informacji na temat obsługi urządzeń peryferyjnych dla systemu Android, odwiedź artykuł [Konfigurowanie aplikacji POS Hybrid w systemie Android i iOS](./dev-itpro/hybridapp.md).
 
-Aby użyć dedykowanej stacji sprzętowej, przypisz profil sprzętu do kasy, która będzie używać aplikacji Modern POS dla aplikacji Windows lub Android. Następnie utwórz stację sprzętową typu **Dedykowana** dla sklepu, w którym kasa będzie używana. Uruchom Modern POS w trybie bez szuflady i użyj operacji **zarządzania stacjami sprzętowymi**, aby włączyć funkcje stacji sprzętowej, dlatego dedykowana Stacja sprzętowa będzie aktywna domyślnie. Następnie wyloguj się z Modern POS, a następnie zaloguj się ponownie i Otwórz zmianę, a urządzenia peryferyjne skonfigurowane w profilu sprzętu mogą być teraz używane. 
+Aby korzystać z dedykowanej stacji sprzętowej, wykonaj poniższe kroki.
+
+1. Przypisz profil sprzętowy do kasy, która będzie korzystać z aplikacji Modern POS for Windows lub Android.
+1. Utwórz stację sprzętową typu "Dedykowana" dla sklepu, w którym kasa POS będzie używana. 
+1. Otwórz Modern POS w trybie nieszufladowym i użyj operacji **Zarządzaj stacjami sprzętowymi**, aby włączyć możliwości stacji sprzętowych. Dedykowana stacja sprzętowa będzie domyślnie aktywna. 
+1. Wyloguj się z Modern POS. Następnie zaloguj się ponownie i otwórz zmianę. Urządzenia peryferyjne, które są skonfigurowane w profilu sprzętowym, będą teraz możliwe do użycia. 
 
 ### <a name="shared"></a>Wspólna 
 
@@ -203,8 +219,8 @@ W celu uzyskania dalszych informacji, zobacz [Konfigurowanie aplikacji POS Hybri
 
 Aby uzyskać więcej informacji na temat składników zgodnych ze standardem OPOS, zobacz sekcję „Obsługiwane interfejsy” w tym dokumencie. Zazwyczaj sterowniki OPOS są dostarczane przez producenta urządzenia. Po zainstalowaniu sterownika urządzenia OPOS jest dodawany klucz do rejestru systemu Windows w jednej z następujących lokalizacji:
 
--   **System 32-bitowy:** HKEY\_LOCAL\_MACHINESOFTWAREOLEforRetailServiceOPOS
--   **System 64-bitowy:** HKEY\_LOCAL\_MACHINESOFTWAREWOW6432NodeOLEforRetailServiceOPOS
+-   **System 32-bitowy:** HKEY\_LOCAL\_MACHINE\SOFTWARE\OLEforRetail\ServiceOPOS
+-   **System 64-bitowy:** HKEY\_LOCAL\_MACHINE\SOFTWARE\WOW6432Node\OLEforRetail\ServiceOPOS
 
 W rejestrze w kluczu ServiceOPOS skonfigurowane urządzenia są uporządkowane według klasy urządzenia OPOS. System może zapisywać wiele sterowników urządzeń.
 
@@ -484,15 +500,15 @@ Ta konfiguracja jest najbardziej typową konfigurację dla kas w tradycyjnych, s
     > [!NOTE]
     > Nie trzeba konfigurować żadnych innych właściwości w stacji sprzętowej. Wszystkie pozostałe wymagane informacje, takie jak profil sprzętu, zostaną pobrane bezpośrednio z kasy.
 
-4.  Kliknij kolejno opcje **Retail i Commerce** &gt; **Dane IT sprzedaży** &gt; **Harmonogram dystrybucji**.
-5.  Wybierz harmonogram dystrybucji **1090**, aby zsynchronizować nowy profil sprzętu ze sklepem. Kliknij przycisk **Uruchom teraz**, aby zsynchronizować zmiany z punktem sprzedaży.
-6.  Wybierz harmonogram dystrybucji **1040**, aby zsynchronizować nową stację sprzętową ze sklepem. Kliknij przycisk **Uruchom teraz**, aby zsynchronizować zmiany z punktem sprzedaży.
+4.  Wybierz kolejno opcje **Retail i Commerce \> Retail i Commerce IT \> Harmonogram dystrybucji**.
+5.  Wybierz harmonogram dystrybucji **1090**, aby zsynchronizować nowy profil sprzętu ze sklepem. Wybierz **Uruchom teraz**, aby zsynchronizować zmiany z punktem sprzedaży.
+6.  Wybierz harmonogram dystrybucji **1040**, aby zsynchronizować nową stację sprzętową ze sklepem. Wybierz **Uruchom teraz**, aby zsynchronizować zmiany z punktem sprzedaży.
 7.  Zainstaluj i aktywuj aplikację Modern POS for Windows.
 8.  Uruchom aplikację Modern POS for Windows i zacznij używać podłączonych urządzeń peryferyjnych.
 
 ### <a name="modern-pos-for-android-with-an-ipc-built-in-hardware-station"></a>Modern POS dla systemu Android ze stacją sprzętową z funkcją IPC (wbudowaną)
 
-**Nowość w 10.0.8** —drukarki sieciowe Epson i kasy połączone z tymi drukarkami za pomocą portu DK są teraz obsługiwane przez program Modern POS dla aplikacji Android. Aby uzyskać szczegółowe informacje, odwiedź artykuł [Konfigurowanie POS Hybrid dla systemu Android i iOS](./dev-itpro/hybridapp.md).
+**Nowość w 10.0.8** —drukarki sieciowe Epson i kasy połączone z tymi drukarkami za pomocą portu DK są teraz obsługiwane przez program Modern POS dla systemu Android. Aby uzyskać szczegółowe informacje, odwiedź artykuł [Konfigurowanie POS Hybrid dla systemu Android i iOS](./dev-itpro/hybridapp.md).
 
 ### <a name="all-modern-pos-clients-that-have-a-committed-shared-iis-hardware-station"></a>Wszystkie urządzenia klienckie programu Modern POS mające ustaloną „wspólną” stację sprzętową z usługami IIS
 
@@ -511,18 +527,18 @@ Tej konfiguracji można używać na wszystkich urządzeniach klienckich programu
     -   **Numer EFT w punkcie sprzedaży** — Identyfikator terminala EFT, który ma być używany podczas wysyłania autoryzacji płacenia metodą EFT. Ten identyfikator jest dostarczany przez agenta rozliczeniowego kart kredytowych.
     -   **Nazwa pakietu** — Pakiet stacji sprzętowej, który ma być używany podczas instalowania stacji sprzętowej.
 
-4.  Kliknij kolejno opcje **Retail i Commerce** &gt; **Dane IT sprzedaży** &gt; **Harmonogram dystrybucji**.
-5.  Wybierz harmonogram dystrybucji **1090**, aby zsynchronizować nowy profil sprzętu ze sklepem. Kliknij przycisk **Uruchom teraz**, aby zsynchronizować zmiany z punktem sprzedaży.
-6.  Wybierz harmonogram dystrybucji **1040**, aby zsynchronizować nową stację sprzętową ze sklepem. Kliknij przycisk **Uruchom teraz**, aby zsynchronizować zmiany z punktem sprzedaży.
+4.  Wybierz kolejno opcje **Retail i Commerce \> Retail i Commerce IT \> Harmonogram dystrybucji**.
+5.  Wybierz harmonogram dystrybucji **1090**, aby zsynchronizować nowy profil sprzętu ze sklepem. Wybierz **Uruchom teraz**, aby zsynchronizować zmiany z punktem sprzedaży.
+6.  Wybierz harmonogram dystrybucji **1040**, aby zsynchronizować nową stację sprzętową ze sklepem. Wybierz **Uruchom teraz**, aby zsynchronizować zmiany z punktem sprzedaży.
 7.  Zainstaluj stację sprzętową. Aby uzyskać więcej informacji dotyczących sposobu instalowania stacji sprzętowej, zobacz [Konfiguracja i instalacja programu Retail hardware station](retail-hardware-station-configuration-installation.md).
 8.  Zainstaluj i aktywuj aplikację Modern POS. Aby uzyskać więcej informacji dotyczących sposobu instalowania aplikacji Modern POS, zobacz [Konfigurowanie, instalowanie i aktywacja Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 9.  Zaloguj się w aplikacji Modern POS i wybierz opcję **Wykonaj operacje bez użycia szuflady**.
 10. Uruchom operację **Zarządzaj stacjami sprzętowymi**.
-11. Kliknij przycisk **Zarządzaj**.
+11. Wybierz **Zarządzaj**.
 12. Na stronie zarządzanie stacją sprzętową ustaw opcję włączenia stacji.
-13. Zaznacz stację sprzętową, która ma być używana, a następnie kliknij przycisk **Paruj**.
-14. Po sparowaniu stacji sprzętowej kliknij przycisk **Zamknij**.
-15. Na stronie wyboru stacji sprzętowej kliknij ostatnio zaznaczoną stację sprzętową, aby ją uaktywnić.
+13. Zaznacz stację sprzętową, która ma być używana, a następnie wybierz **Paruj**.
+14. Po sparowaniu stacji sprzętowej kliknij wybierz **Zamknij**.
+15. Na stronie wyboru stacji sprzętowej wybierz ostatnio zaznaczoną stację sprzętową, aby ją uaktywnić.
 
 ### <a name="all-modern-pos-clients-that-have-a-shared-iis-hardware-station"></a>Wszystkie urządzenia klienckie programu Modern POS mające wspólną stację sprzętową z usługami IIS
 
@@ -534,28 +550,28 @@ Tej konfiguracji można używać na wszystkich urządzeniach klienckich programu
     -   **Nazwa hosta** — Nazwa komputera hosta, na którym będzie uruchamiana stacja sprzętowa.
     -   **Opis** — Tekst, który pomoże identyfikować stację sprzętową, np. jak **Zwroty** lub **Przód sklepu**.
     -   **Port** — Port wykorzystywany przez stację sprzętową do komunikacji z urządzeniem klienckim programu Modern POS.
-    -   **Profil sprzętu** — W przypadku wspólnych stacji sprzętowych każda stacja powinna mieć profil sprzętu. Profile sprzętu mogą być współużytkowane przez stacje sprzętowe, ale muszą być mapowane do każdej stacji sprzętowej. Ponadto zalecamy, aby w przypadku, gdy wiele urządzeń korzysta z tej samej wspólnej stacji sprzętowej, stosować zmiany wspólne. Aby skonfigurować udostępnioną zmianę, kliknij kolejno opcje **Handel detaliczny i inny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Profile punktów sprzedaży** &gt; **Profile sprzętu**. Dla każdego współużytkowanego profilu sprzętu zaznacz szufladę kasową i w opcji **Wspólna szuflada dla zmiany** ustaw wartość **Tak**.
+    -   **Profil sprzętu** — W przypadku wspólnych stacji sprzętowych każda stacja powinna mieć profil sprzętu. Profile sprzętu mogą być współużytkowane przez stacje sprzętowe, ale muszą być mapowane do każdej stacji sprzętowej. Ponadto zalecamy, aby w przypadku, gdy wiele urządzeń korzysta z tej samej wspólnej stacji sprzętowej, stosować zmiany wspólne. Aby skonfigurować udostępnioną zmianę, kliknij kolejno opcje **Handel detaliczny i inny \> Ustawienia kanału \> Ustawienia punktu sprzedaży \> Profile punktów sprzedaży \> Profile sprzętu**. Dla każdego współużytkowanego profilu sprzętu zaznacz szufladę kasową i w opcji **Wspólna szuflada dla zmiany** ustaw wartość **Tak**.
     -   **Numer EFT w punkcie sprzedaży** — Identyfikator terminala EFT, który ma być używany podczas wysyłania autoryzacji płacenia metodą EFT. Ten identyfikator jest dostarczany przez agenta rozliczeniowego kart kredytowych.
     -   **Nazwa pakietu** — Pakiet stacji sprzętowej, który ma być używany podczas instalowania stacji sprzętowej.
 
 4.  Powtórz kroki 2 i 3 dla każdej dodatkowej stacji sprzętowej, która jest potrzebna w sklepie.
-5.  Kliknij kolejno opcje **Retail i Commerce** &gt; **Dane IT sprzedaży** &gt; **Harmonogram dystrybucji**.
-6.  Wybierz harmonogram dystrybucji **1090**, aby zsynchronizować nowy profil sprzętu ze sklepem. Kliknij przycisk **Uruchom teraz**, aby zsynchronizować zmiany z punktem sprzedaży.
-7.  Wybierz harmonogram dystrybucji **1040**, aby zsynchronizować nową stację sprzętową ze sklepem. Kliknij przycisk **Uruchom teraz**, aby zsynchronizować zmiany z punktem sprzedaży.
+5.  Wybierz kolejno opcje **Retail i Commerce \> Retail i Commerce IT \> Harmonogram dystrybucji**.
+6.  Wybierz harmonogram dystrybucji **1090**, aby zsynchronizować nowy profil sprzętu ze sklepem. Wybierz **Uruchom teraz**, aby zsynchronizować zmiany z punktem sprzedaży.
+7.  Wybierz harmonogram dystrybucji **1040**, aby zsynchronizować nową stację sprzętową ze sklepem. Wybierz **Uruchom teraz**, aby zsynchronizować zmiany z punktem sprzedaży.
 8.  Zainstaluj stację sprzętową na każdym komputerze hosta skonfigurowanym w krokach 2 i 3. Aby uzyskać więcej informacji dotyczących sposobu instalowania stacji sprzętowej, zobacz [Konfiguracja i instalacja programu Retail hardware station](retail-hardware-station-configuration-installation.md).
 9.  Zainstaluj i aktywuj aplikację Modern POS. Aby uzyskać więcej informacji dotyczących sposobu instalowania aplikacji Modern POS, zobacz [Konfigurowanie, instalowanie i aktywacja Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 10. Zaloguj się w aplikacji Modern POS i wybierz opcję **Wykonaj operacje bez użycia szuflady**.
 11. Uruchom operację **Zarządzaj stacjami sprzętowymi**.
 
-12. Kliknij przycisk **Zarządzaj**.
+12. Wybierz **Zarządzaj**.
 13. Na stronie zarządzanie stacją sprzętową ustaw opcję włączenia stacji.
-14. Zaznacz stację sprzętową, która ma być używana, a następnie kliknij przycisk **Paruj**.
+14. Zaznacz stację sprzętową, która ma być używana, a następnie wybierz **Paruj**.
 15. Powtórz krok 14 dla każdej stacji sprzętowej, która będzie używana przez aplikację Modern POS.
-16. Po sparowaniu wszystkich wymaganych stacji sprzętowych kliknij przycisk **Zamknij**.
-17. Na stronie wyboru stacji sprzętowej kliknij ostatnio zaznaczoną stację sprzętową, aby ją uaktywnić. 
+16. Po sparowaniu wszystkich wymaganych stacji sprzętowych wybierz **Zamknij**.
+17. Na stronie wyboru stacji sprzętowej wybierz ostatnio zaznaczoną stację sprzętową, aby ją uaktywnić. 
 
 > [!NOTE]
-> Jeśli urządzenia często używają różnych stacji sprzętowych, zaleca się skonfigurowanie w programie Modern POS monitowania kasjerów o wybór stacji przy rozpoczynaniu procesu płacenia. Kliknij kolejno opcje **Handel detaliczny i inny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Rejestry**. Zaznacz kasę, a następnie w opcji **Wybierz przy płatności** ustaw wartość **Tak**. Użyj harmonogramu dystrybucji **1090**, aby zsynchronizować zmiany z bazą danych kanału.
+> Jeśli urządzenia często używają różnych stacji sprzętowych, zaleca się skonfigurowanie w programie Modern POS monitowania kasjerów o wybór stacji przy rozpoczynaniu procesu płacenia. Wybierz kolejno opcje **Retail i Commerce \> Ustawienia kanału \> Ustawienia punktu sprzedaży \> Rejestry**. Zaznacz kasę, a następnie w opcji **Wybierz przy płatności** ustaw wartość **Tak**. Użyj harmonogramu dystrybucji **1090**, aby zsynchronizować zmiany z bazą danych kanału.
 
 ## <a name="extensibility"></a>Możliwości rozszerzania
 Aby uzyskać informacje na temat scenariuszy rozszerzalności dla stacji sprzętowej, zobacz [Integracja punktu sprzedaży z nowym urządzeniem sprzętowym i wygenerowanie instalatora rozszerzenia](dev-itpro/hardware-device-extension.md).
@@ -565,15 +581,15 @@ Zgodnie z obowiązującymi standardami zabezpieczeń w środowisku produkcyjnym 
 
 ### <a name="hardware-station-installer"></a>Instalator stacji sprzętowej
 Instalator stacji sprzętowej automatycznie wprowadzi te modyfikacje rejestru w ramach procesu instalacji.
- 
+
 -   Należy wyłączyć protokół Secure Sockets Layer (SSL).
 -   Należy włączyć i używać tylko protokołu Transport Layer Security (TLS) w wersji 1.2 (lub aktualnie najnowszej wersji). 
 
 ### <a name="ssl-and-tls"></a>SSL i TLS
 Domyślnie protokół SSL i wszystkie wersje protokołu TLS, z wyjątkiem TLS 1.2, są wyłączone. Aby edytować lub włączyć te wartości, wykonaj następujące kroki:
     1.  Naciśnij klawisz z logo systemu Windows i klawisz R, aby otworzyć okno **Uruchamianie**.
-    2.  W polu **Otwórz** wpisz **Regedit**, a następnie kliknij przycisk **OK**.
-    3.  Jeśli zostanie wyświetlone okno komunikatu **Kontrola konta użytkownika**, kliknij przycisk **Tak**.
+    2.  W polu **Otwórz** wpisz **Regedit**, a następnie wybierz **OK**.
+    3.  Jeśli zostanie wyświetlone okno komunikatu **Kontrola konta użytkownika**, wybierz **Tak**.
     4.  W oknie **Edytor rejestru** przejdź do pozycji **HKEY\_LOCAL\_MACHINESystemCurrentControlSetSecurityProvidersSCHANNELProtocols**. Następujące klucze zostały wprowadzone automatycznie w celu zapewnienia obsługi wyłącznie protokołu TLS 1.2:
         -   TLS 1.2Server:Enabled=1
         -   TLS 1.2Server:DisabledByDefault=0
@@ -604,14 +620,16 @@ Następujące urządzenia peryferyjne zostały przetestowane przy użyciu stacji
 
 #### <a name="printer"></a>Drukarka
 
-| Producent | Model    | Interfejs | Komentarze                |
-|--------------|----------|-----------|-------------------------|
-| Epson        | Tm-T88IV | OPOS      |                         |
+| Wytwórca | Model    | Interfejs | Komentarze                |
+| ------------ | -------- | --------- | ----------------------- |
 | Epson        | TM-T88V  | OPOS      |                         |
-| Epson        | TM-T88   | Niestandardowy    | Połączenie przez sieć   |
-| Star         | TSP650II | Niestandardowy    | Połączenie przez sieć   |
-| Star         | mPOP     | OPOS      | Połączenie przez Bluetooth |
+| Epson        | TM-T88VI | OPOS      |                         |
+| Epson        | TM-T88   | Niestandardowe    | Połączenie przez sieć   |
 | HP           | F7M67AA  | OPOS      | Zasilanie przez USB             |
+| Star         | TSP650II | Niestandardowe    | Połączenie przez sieć   |
+| Star         | mPOP     | OPOS      | Połączenie przez Bluetooth |
+| Toshiba      | HSP100   | OPOS      |                         |
+| Toshiba      | HSP150   | OPOS      |                         |
 
 > [!NOTE]
 > Drukarka Star TSP 100 nie jest obsługiwana w przypadku wbudowanej stacji sprzętowej. W stacji sprzętowej jest używany 64-bitowy proces, który jest niezgodny z istniejącymi sterownikami STAR 100. 
@@ -683,17 +701,21 @@ Następujące urządzenia peryferyjne zostały przetestowane przy użyciu dedyko
 
 #### <a name="printer"></a>Drukarka
 
-| Producent | Model    | Interfejs | Komentarze                  |
-|--------------|----------|-----------|---------------------------|
-| Epson        | Tm-T88IV | OPOS      |                           |
-| Epson        | TM-T88V  | OPOS      |                           |
-| Epson        | TM-T88V  | Niestandardowy    | Połączenie przez sieć     |
-| Star         | TSP650II | Niestandardowy    | Połączenie przez sieć     |
-| HP           | F7M67AA  | OPOS      | Zasilanie przez USB               |
+| Wytwórca | Model    | Interfejs | Komentarze              |
+| ------------ | -------- | --------- | --------------------- |
+| Epson        | TM-T88V  | OPOS      |                       |
+| Epson        | TM-T88VI | OPOS      |                       |
+| Epson        | TM-T88V  | Niestandardowe    | Połączenie przez sieć |
+| HP           | F7M67AA  | OPOS      | Zasilanie przez USB           |
+| Star         | TSP650II | Niestandardowe    | Połączenie przez sieć |
+| Toshiba      | HSP100   | OPOS      |                       |
+| Toshiba      | HSP150   | OPOS      |                       |
+
+
 
 #### <a name="bar-code-scanner"></a>Skaner kodów kreskowych
 
-| Producent  | Model   | Interfejs | Komentarze |
+| Wytwórca  | Model   | Interfejs | Komentarze |
 |---------------|---------|-----------|----------|
 | Motorola      | DS9208  | OPOS      |          |
 | Symbol        | LS2208  | OPOS      |          |
@@ -758,17 +780,19 @@ Następujące urządzenia peryferyjne zostały przetestowane przy użyciu wspól
 
 #### <a name="printer"></a>Drukarka
 
-| Producent | Model    | Interfejs | Komentarze                  |
-|--------------|----------|-----------|---------------------------|
-| Epson        | TM-T88IV | OPOS      |                           |
-| Epson        | TM-T88V  | OPOS      |                           |
-| Epson        | TM-T88   | Niestandardowy    | Połączenie przez sieć     |
-| Star         | TSP650II | Niestandardowe    | Połączenie przez sieć     |
-| HP           | F7M67AA  | OPOS      | Zasilanie przez USB               |
+| Wytwórca | Model    | Interfejs | Komentarze              |
+| ------------ | -------- | --------- | --------------------- |
+| Epson        | TM-T88V  | OPOS      |                       |
+| Epson        | TM-T88VI | OPOS      |                       |
+| Epson        | TM-T88   | Niestandardowe    | Połączenie przez sieć |
+| HP           | F7M67AA  | OPOS      | Zasilanie przez USB           |
+| Star         | TSP650II | Niestandardowe    | Połączenie przez sieć |
+| Toshiba      | HSP100   | OPOS      |                       |
+| Toshiba      | HSP150   | OPOS      |                       |
 
-#### <a name="payment-terminal"></a>Terminal płatniczy 
+#### <a name="payment-terminal"></a>Terminal płatniczy
 
-| Producent | Model | Interfejs | Komentarze                                                                       |
+| Wytwórca | Model | Interfejs | Komentarze                                                                       |
 |--------------|-------|-----------|--------------------------------------------------------------------------------|
 | VeriFone     | MX925 | Niestandardowy    | Wymaga dostosowania aplikacji łącznika płatności; połączenie przez sieć i USB |
 | VeriFone     | MX915 | Niestandardowy    | Wymaga dostosowania aplikacji łącznika płatności; połączenie przez sieć i USB |
@@ -790,7 +814,7 @@ Następujące urządzenia peryferyjne zostały przetestowane przy użyciu wspól
 
 -   Komputer, na którym jest uruchomiony program Modern POS, ufa certyfikatowi używanemu na komputerze, na którym jest uruchomiona stacja sprzętowa.
     -   Aby zweryfikować tę konfigurację, w przeglądarce sieci web przejdź do następującego adresu URL: https://&lt;nazwa komputera&gt;:&lt;numer portu&gt;/StacjaSprzętowa/ping.
-    -   Ten adres URL używa polecenia ping do sprawdzania, czy jest możliwy dostęp do komputera, a przeglądarka wskazuje, czy certyfikat jest zaufany. (Na przykład w programie Internet Explorer na pasku adresu pojawia się ikona kłódki. Po kliknięciu tej ikony program Internet Explorer sprawdza, czy certyfikat jest obecnie zaufany. Można zainstalować certyfikat na lokalnym komputerze, wyświetlając szczegóły pokazanego certyfikatu.
+    -   Ten adres URL używa polecenia ping do sprawdzania, czy jest możliwy dostęp do komputera, a przeglądarka wskazuje, czy certyfikat jest zaufany. (Na przykład w programie Internet Explorer na pasku adresu pojawia się symbol kłódki. Po kliknięciu tego symbolu program Internet Explorer sprawdza, czy certyfikat jest obecnie zaufany. Można zainstalować certyfikat na lokalnym komputerze, wyświetlając szczegóły pokazanego certyfikatu.
 -   Na komputerze, na którym jest uruchomiona stacja sprzętowa, port przeznaczony do używania przez stację sprzętową jest otwarty w zaporze.
 -   Na stacji sprzętowej zostały prawidłowo zainstalowane informacje o koncie handlowca za pomocą narzędzia instalowania informacji o handlowcu uruchamianego na koniec procesu instalowania stacji sprzętowej.
 
@@ -819,15 +843,15 @@ Następujące urządzenia peryferyjne zostały przetestowane przy użyciu wspól
 -   Czasami sterowniki urządzeń mogą powodować, że wspólne obiekty formantów (CCO) przestają działać poprawnie. Jeśli urządzenie zostało niedawno zainstalowane, ale nie działa poprawnie lub zauważasz inne problemy, błędy można często wyeliminować poprzez ponowną instalację obiektów CCO. Aby pobrać obiekty CCO, przejdź do witryny <http://monroecs.com/oposccos_current.htm>.
 -   Jeśli często wprowadzasz zmiany w urządzeniach peryferyjnych podczas testowania lub rozwiązywania problemów, lepiej zresetować usługi IIS niż czekać na odświeżanie się pamięci podręcznej. Aby zresetować usługi IIS, wykonaj następujące czynności:
     1.  W menu **Start** wpisz polecenie **CMD**.
-    2.  W wynikach wyszukiwania kliknij prawym przyciskiem myszy pozycję **Wiersz polecenia**, a następnie kliknij opcję **Uruchom jako administrator**.
+    2.  W wynikach wyszukiwania kliknij prawym przyciskiem myszy pozycję **Wiersz polecenia**, a następnie wybierz opcję **Uruchom jako administrator**.
     3.  W oknie **Wiersza polecenia** wpisz wyrażenie **iisreset /Restart** i naciśnij klawisz Enter.
     4.  Po ponownym uruchomieniu usług IIS ponownie uruchom program Modern POS.
 -   Jeśli podczas częstego wprowadzania zmian w urządzeniach peryferyjnych również często uruchomiasz i zamykasz aplikację kliencką punktu sprzedaży, proces dllhost z poprzedniej sesji aplikacji punktu sprzedaży POS może zakłócać bieżącą sesję. W takim przypadku urządzenie może stać się użyteczne dopiero po zamknięciu hosta biblioteki dołączanej dynamicznie (DLL) zarządzającego poprzednią sesją. Aby zamknąć hosta biblioteki DLL, wykonaj następujące kroki:
     1.  W menu **Start** wpisz polecenie **Menedżer zadań**.
-    2.  W wynikach wyszukiwania kliknij pozycję **Menedżer zadań**.
-    3.  W Menedżerze zadań na karcie **Szczegóły** kliknij nagłówek kolumny zatytułowanej **Nazwa**, aby posortować zawartość tabeli alfabetycznie według nazw.
+    2.  W wynikach wyszukiwania wybierz pozycję **Menedżer zadań**.
+    3.  W Menedżerze zadań na karcie **Szczegóły** wybierz nagłówek kolumny zatytułowanej **Nazwa**, aby posortować zawartość tabeli alfabetycznie według nazw.
     4.  Przewiń w dół, aż zobaczysz plik dllhost.exe.
-    5.  Zaznacz każdego hosta biblioteki DLL, a następnie kliknij przycisk **Zakończ zadanie**.
+    5.  Zaznacz każdego hosta biblioteki DLL, a następnie wybierz **Zakończ zadanie**.
     6.  Po zamknięciu hostów bibliotek DLL ponownie uruchom program Modern POS.
 
 

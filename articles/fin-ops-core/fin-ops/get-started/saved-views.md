@@ -13,16 +13,19 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: d6a7b1b21816db43a92364584e15ec04b891c611
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: bd1b034ebb66b996e20173c2ad4f958e643f9c2e
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7487848"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065713"
 ---
 # <a name="saved-views"></a>Zapisane widoki
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 ## <a name="introduction"></a>Wprowadzenie
 
@@ -212,7 +215,7 @@ Aby zapoznać się z listą znanych problemów z zapisanymi widokami, zobacz [Tw
 ### <a name="how-do-i-enable-saved-views-in-my-environment"></a>Jak włączyć zapisane widoki w środowisku?
 
 > [!NOTE]
-> Funkcja **zapisanych widoków** wymaga włączenia systemu personalizacji w Finance and Operations. Jeśli personalizacja jest wyłączona dla całego środowiska, widoki zostaną wyłączone nawet po wykonaniu poniższych kroków. 
+> Funkcja **zapisanych widoków** wymaga włączenia systemu personalizacji w Finanse i Działania. Jeśli personalizacja jest wyłączona dla całego środowiska, widoki zostaną wyłączone nawet po wykonaniu poniższych kroków. 
 
 Funkcję **Zapisane widoki** można włączać i wyłączać za pomocą zarządzania funkcjami w dowolnym środowisku. Po włączeniu zapisane widoki zostaną włączone we wszystkich kolejnych sesjach użytkowników.
 

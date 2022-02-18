@@ -14,14 +14,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 413143afb578aed29ce0836aaa3ac98ffc0c6cc3
-ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
+ms.openlocfilehash: 7c72f866886f320d8a7fa22d6ccfa7e43284b5bf
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7484103"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071581"
 ---
 # <a name="process-compensation"></a>Przetwarzanie wynagrodzenia
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -41,10 +44,10 @@ Po zapisaniu parametrów zdarzenia procesowego można kliknąć przycisk **Ustaw
 
 Kliknij przycisk **Dodaj** na karcie **Plany**, aby dodać system wynagrodzeń do zdarzenia procesowego. Kolumny **Użyj innej dźwigni finansowej**, **Współczynnik dźwigni finansowej** i **Opis dźwigni finansowej** są używane tylko dla systemów wynagrodzeń o zmiennej wysokości i nie będą omówione w tym temacie.
 
-Zapisz rekord i kliknij przycisk **Dodaj** na karcie **Akcje**, aby dodać akcje związane ze stałym wynagrodzeniem dla wybranego systemu wynagrodzeń. Użyj opcji **Włącz rekomendacje**, aby wprowadzić kwotę inną niż obliczona podwyżka podstawowa dla czynności. Aby obliczyć akcję opartą na wyniku poprzedniej akcji w celu połączenia wielu akcji wynagrodzenia, zaznacz opcję **Użyj poprzedniego wyniku**. Akcje związane ze stałym wynagrodzeniem to typy logiki wynagrodzeń, którym można nadać opisowe nazwy. W systemach typu Kategoria lub Pasmo można dodawać tylko akcje związane ze stałym wynagrodzeniem, które mają jeden z następujących typów:
+Zapisz rekord i kliknij przycisk **Dodaj** na karcie **Akcje**, aby dodać akcje związane ze stałym wynagrodzeniem dla wybranego systemu wynagrodzeń. Użyj opcji **Włącz rekomendacje**, aby wprowadzić kwotę inną niż obliczona podwyżka podstawowa dla czynności. Aby obliczyć akcję opartą na wyniku poprzedniej akcji w celu połączenia wielu akcji wynagrodzenia, zaznacz opcję **Użyj poprzedniego wyniku**. Akcje związane ze stałym wynagrodzeniem to typy logiki wynagrodzeń, którym można nadać opisowe nazwy. W systemach typu **Kategoria** lub **Pasmo** można dodawać tylko akcje związane ze stałym wynagrodzeniem, które mają jeden z następujących typów:
 
-| Typ akcji związanej ze stałym wynagrodzeniem | Funkcja                                                                                                                                                                                                                                                                                                                                                                                                    |
-|-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Typ akcji związanej ze stałym wynagrodzeniem | Funkcja                  |
+|-------------------------------|-------------------------------------------------------------------------|
 | Kapitał własny                        | W czynnościach wyrównywania stawka płacy pracownika na ostatni dzień cyklu jest porównywana z najniższym punktem odniesienia dla poziomu wskazanego na stanowiska pracownika. Jeśli stawka płacy pracownika jest niższa od minimalnego punktu odniesienia, zostanie obliczona podwyżka konieczna do osiągnięcia minimalnego punktu przez pracownika.                                                                                |
 | Wartość                         | W czynnościach uznaniowych podwyżka jest obliczana na podstawie stawki płacy pracownika na ostatni dzień cyklu oraz procentu podwyżki znalezionego w budżecie stałych podwyżek dla działu, związku zawodowego i lokalizacji pracownika.                                                                                                                                                                                         |
 | Ogólne                       | W czynnościach ogólnych podwyżka jest obliczana na podstawie wartości procentowej lub pracownikom jest przyznawana kwota ryczałtowa. Jest to uzależnione od ustawień w obszarze **Stałe wynagrodzenie** na karcie **Ogólne**.                                                                                                                                                                                                                        |
@@ -53,12 +56,12 @@ Zapisz rekord i kliknij przycisk **Dodaj** na karcie **Akcje**, aby dodać akcje
 
 Do planu wynagrodzeń skokowych można dodać wyłącznie akcje **Stałe wynagrodzenie** o typie Krok.
 
-| Typ akcji związanej ze stałym wynagrodzeniem | Funkcja                                                                                                                                                                                           |
-|--------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Typ akcji związanej ze stałym wynagrodzeniem | Funkcja                |
+|--------------------------------|------------------------------|
 | Krok                           | Na karcie **Ogólne** wskaż, czy ta akcja kroku powinna przenosić pracowników w przód o 0 kroków, 1 krok, czy 2 kroki.                                                                                  |
 |                                | **0 kroki** — Pracownik otrzyma stawkę płacy dla bieżącego kroku, na którym się znajduje.                                                                                                                      |
 |                                | **1 krok** — System sprawdzi, czy pracownik jest już w ostatnim punkcie odniesienia dla swojego poziomu.                                                                                             |
-|                                | **2 kroki** — System przeniesie pracownika w przód o dwa kroki na jego bieżącym poziomie. Jeśli pracownik osiągnął już ostatni punkt odniesienia na swoim poziomie, system może go przenieść o jeden krok lub nawet zero kroków. |
+|                                | **2 kroki** —pracownik przesunie się o dwa stopnie do przodu na swoim obecnym poziomie. Jeśli pracownik osiągnął już ostatni punkt odniesienia na swoim poziomie, system może go przenieść o jeden krok lub nawet zero kroków. |
 
 ## <a name="run-the-compensation-process"></a>Wykonywanie procesu wynagrodzenia
 Po skonfigurowaniu zdarzenia procesu wraz z niezbędnymi polami dat, planami i działaniami kliknij **Uruchom proces** na stronie **Zdarzenie procesu** — otworzy się okno dialogowe **Uruchom zdarzenia procesu wynagrodzeń**. Kliknij opcję **Pokaż wyniki przetwarzania**, aby zobaczyć, jak kwoty wynagrodzeń zostały obliczone dla każdego pracownika. Kliknięcie przycisku **OK** spowoduje uruchomienie przetwarzania wynagrodzeń dla wszystkich pracowników istniejących w wybranych systemach wynagrodzeń na dzień zakończenia cyklu.

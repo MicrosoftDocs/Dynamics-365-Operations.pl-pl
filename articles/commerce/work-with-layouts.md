@@ -2,7 +2,7 @@
 title: Praca z układami predefiniowanymi
 description: W tym temacie opisano, jak pracować z układami predefiniowanymi w Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 04/14/2020
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0f6effd4dda669041a269d568bd39beda607a2bcc05c65e40bb76c6f1d02cd5e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 56ad992b6a9fd6fce09cadad70b8098acdc74ac0
+ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775319"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090852"
 ---
 # <a name="work-with-preset-layouts"></a>Praca z układami predefiniowanymi
 
@@ -78,7 +78,7 @@ Typową praktyką jest ustawienie domyślnego motywu dla wszystkich stron używa
 Aby ustawić lub zmienić motyw dla wszystkich stron podrzędnych korzystających z układu predefiniowanego, wykonaj następujące kroki.
 
 1. W edytorze układu, w drzewie konspektu z lewej strony, wybierz moduł kontenera strony. (Zazwyczaj ten moduł jest drugim węzłem i ma nazwę **Strona domyślna**.)
-1. W okienku właściwości po prawej stronie w polu **motyw** wybierz motyw.
+1. W polu **Motyw** w okienku właściwości po prawej stronie wybierz motyw.
 
 ## <a name="save-check-in-preview-and-publish-a-preset-layout"></a>Zapisywanie, zaewidencjonuj, przejrzyj i opublikuj predefiniowany układ
 
@@ -91,12 +91,24 @@ Aby wyświetlić podgląd zmian, należy otworzyć istniejącą stronę, która 
 
 Po przejrzeniu zmian w predefiniowanym szablonie należy wykonać jedną z następujących czynności, aby opublikować układ w witrynie na żywo:
 
-* Przejdź do **Układy**, wybierz układ, a następnie wybierz opcję **Opublikuj**.
-* Wybierz nazwę układu, aby otworzyć edutor ukałdu, a następnie wybierz **Publikuj**.
-* Umożliwia opublikowanie strony, która odwołuje się do nieopublikowanego układu. Układ zostanie automatycznie opublikowany.
+1. Przejdź do **Układy**, wybierz układ, a następnie wybierz opcję **Opublikuj**.
+1. Wybierz nazwę układu, aby otworzyć edutor ukałdu, a następnie wybierz **Publikuj**.
+1. Umożliwia opublikowanie strony, która odwołuje się do nieopublikowanego układu. Układ zostanie automatycznie opublikowany.
 
 > [!WARNING]
 > Do dostępnych układów mogą odwoływać się wiele stron. Publikując predefiniowany układ, należy pamiętać, że może on mieć wpływ na układ wielu stron.
+
+## <a name="rename-a-preset-layout"></a>Zmiana nazwy predefiniowanego układu
+
+Aby zmienić nazwę niestandardowego stylu predefiniowanego układu w kreatorze witryn, wykonaj poniższe kroki.
+
+1. W okienku nawigacji po lewej stronie wybierz pozycję **Układy**.
+1. Wybierz nazwę układu, którego nazwę chcesz zmienić.
+1. Wybierz pozycję **Edytuj**, aby rozpocząć edytowanie układu.
+1. W okienku właściwości układu wybierz symbol pióra znajdujący się obok nazwy układu.
+1. Edytuj nazwę układu stosownie do potrzeb.
+1. Zaznacz znacznik wyboru, aby potwierdzić zmianę nazwy.
+1. Wybierz opcję **Zakończ edycję**.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

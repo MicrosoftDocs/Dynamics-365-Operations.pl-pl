@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 52740246f745272f238ec3dcf8e53f7310e4b24271da4a5d6388a1b9c4706521
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7eb5128f3a337bd728cfe8e6d8d3deb0b6b5ef88
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774856"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074974"
 ---
 # <a name="safety-margins"></a>Marginesy bezpieczeństwa
 
@@ -61,9 +61,6 @@ Należy zauważyć, że zapas czasu dla przyjęcia nie jest zastosowany, jeśli 
 
 ### <a name="reorder-margin"></a>Zapas czasu dla ponownego zamówienia
 
-> [!NOTE]
-> **Wkrótce:** Ta funkcja nie jest jeszcze obsługiwana na potrzeby planowania optymalizacji. Dopóki nie będzie obsługiwana, wszystkie wartości wprowadzone dla **Zapasu czasu dla ponownego zamówienia** będą traktowane jako *0* (zero).
-
 Poniższa ilustracja przedstawia Zapas czasu dla ponownego zamówienia.
 
 ![Zapas czasu dla ponownego zamówienia.](media/safety-margins-3.png)
@@ -71,9 +68,6 @@ Poniższa ilustracja przedstawia Zapas czasu dla ponownego zamówienia.
 Zapas czasu dla ponownego zamówienia jest dodawany przed upływem czasu realizacji towaru dla wszystkich zamówień planowanych podczas planowania głównego. W związku z tym zapewnia on dodatkowy czas na wprowadzenie zlecenia dostawy. Jest zazwyczaj używany jako bufor w celu zapewnienia odpowiedniej ilości czasu dla procesów zatwierdzania lub innych procesów wewnętrznych, które są wymagane podczas tworzenia zleceń dostawy. Zapas czasu dla ponownego zamówienia jest umieszczany między *datą zamówienia* i *datą rozpoczęcia*.
 
 ### <a name="issue-margin"></a>Zapas czasu dla rozchodu
-
-> [!NOTE]
-> **Wkrótce:** Ta funkcja nie jest jeszcze obsługiwana na potrzeby planowania optymalizacji. Dopóki nie będzie obsługiwana, wszystkie wartości wprowadzone dla **Zapas czasu dla rozchodu odjęty od daty zapotrzebowania** będą traktowane jako *0* (zero).
 
 Poniższa ilustracja przedstawia Zapas czasu dla rozchodu.
 

@@ -1,23 +1,31 @@
---- 
-# required metadata 
+---
 title: Identyfikowanie i wdrażanie narzędzi do wybierania kandydatów
-description: 'Znajdowanie puli wykwalifikowanych kandydatów do zapełnienia wakatów może być trudne, zwłaszcza gdy stanowisko wymaga unikatowego zestawu umiejętności.'
+description: Znajdowanie puli wykwalifikowanych kandydatów do zapełnienia wakatów może być trudne, zwłaszcza gdy stanowisko wymaga unikatowego zestawu umiejętności.
 author: twheeloc
 ms.date: 01/10/2022
 ms.topic: business-process
-ms.prod: null
-ms.technology: null
-ms.search.form: 'HcmSkillMapping, HcmJobLookup, HcmSkillMappingLine, HcmPersonCertificate, CCHTMLPrintPreview'
+ms.prod: ''
+ms.technology: ''
+ms.search.form: HcmSkillMapping, HcmJobLookup, HcmSkillMappingLine, HcmPersonCertificate, CCHTMLPrintPreview
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: anbichse
-ms.search.validFrom: '2016-06-30'
+ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 2a9753e220e62794b157340c9f8e6f8a053e9ba7
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067990"
 ---
 # <a name="identify-and-deploy-candidate-selection-tools"></a>Identyfikowanie i wdrażanie narzędzi do wybierania kandydatów
 
 [!include [banner](../../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
 
 Znajdowanie puli wykwalifikowanych kandydatów do zapełnienia wakatów może być trudne, zwłaszcza gdy stanowisko wymaga unikatowego zestawu umiejętności. Z drugiej strony kandydaci mający niezbędne kwalifikacje mogą już być pracownikami Twojej organizacji. Można wyszukiwać określone zbiory umiejętności wśród istniejących pracowników lub nowych kandydatów. Dzięki temu osoba rekrutująca może szybko zebrać i przejrzeć dane kandydatów ubiegających się o wolne stanowisko teraz lub w przeszłości albo znaleźć potencjalnych kandydatów wśród istniejących pracowników. Skorzystaj z tej procedury, aby dowiedzieć się, jak funkcja mapowania umiejętności może pomóc Ci znaleźć odpowiednią osobę na otwarte stanowisko. Do stworzenia tej procedury wykorzystano dane z firmy demonstracyjnej **USMF**.
 

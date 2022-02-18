@@ -2,7 +2,7 @@
 title: Konfiguracja korzystania z modułu Finance Insights
 description: W tym temacie objaśniono kroki konfiguracyjne, które umożliwią systemowi korzystanie z funkcji dostępnych w module Finance Insights.
 author: ShivamPandey-msft
-ms.date: 11/19/2021
+ms.date: 01/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 6183e8a7500e9deff0ebf6b5dec8842ad4ca94cb
-ms.sourcegitcommit: 6a9f068b59b62c95a507d1cc18b23f9fd80a859b
+ms.openlocfilehash: b9bad6445e9e77688f66c6c4186422d7a898edd7
+ms.sourcegitcommit: 7fc0a9a6440ac087292e9e76c26c67f56154b9e6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "7827035"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "8051377"
 ---
 # <a name="configuration-for-finance-insights"></a>Konfiguracja korzystania z modułu Finance Insights
 
@@ -100,6 +100,9 @@ Po pomyślnym zainstalowaniu tego dodatku może potrwać godzinę, zanim będzie
 
    Po pomyślnym uruchomieniu procesu **sprawdzania stanu inicjowania obsługi aplikacji Insights** można włączyć funkcje aplikacji Finance Insights w obszarze roboczym **Zarządzanie funkcjami**.
 
+> [!NOTE]
+> Jeśli proces **Sprawdzania stanu konfiguracji Szczegółowych informacji** nie działa, przejdź do **Administrowania systemem** > **Zapytania** > **Zadania wsadowe**. W polu **System zgłaszania automatyzacji procesu** zmień wartość na **Oczekiwanie**, aby zainicjować proces. 
+> 
 ## <a name="feedback-and-support"></a>Opinie i pomoc techniczna
 
 Jeśli chcesz przekazać opinie lub potrzebujesz pomocy technicznej, wyślij e-mail do [Finance Insights (wersja zapoznawcza)](mailto:fiap@microsoft.com).

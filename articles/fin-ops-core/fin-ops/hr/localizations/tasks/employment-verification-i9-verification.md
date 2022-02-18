@@ -1,23 +1,31 @@
---- 
-# required metadata 
+---
 title: Weryfikacja zatrudnienia weryfikacja i9
-description: 'Zgodnie z Ustawą o reformie przepisów imigracyjnych i kontroli imigracji (IRCA) pracodawcy w Stanach Zjednoczonych muszą sprawdzać, czy nowo zatrudniani przez nich pracownicy mają odpowiednie zezwolenie na pracę.'
+description: Zgodnie z Ustawą o reformie przepisów imigracyjnych i kontroli imigracji (IRCA) pracodawcy w Stanach Zjednoczonych muszą sprawdzać, czy nowo zatrudniani przez nich pracownicy mają odpowiednie zezwolenie na pracę.
 author: ShielaSogge
 ms.date: 01/10/2022
 ms.topic: business-process
-ms.prod: null
-ms.technology: null
-ms.search.form: 'HcmWorker, HcmPersonIdentificationNumber, Hcmi9Document'
+ms.prod: ''
+ms.technology: ''
+ms.search.form: HcmWorker, HcmPersonIdentificationNumber, Hcmi9Document
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shielas
-ms.search.validFrom: '2016-06-30'
+ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: b76102111a8506882f2301d76856ae1a34a7c704
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065688"
 ---
 # <a name="employment-verification-i9-verification"></a>Weryfikacja zatrudnienia weryfikacja i9
 
 [!include [banner](../../../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../../../includes/peap-1.md)]
 
 Zgodnie z Ustawą o reformie przepisów imigracyjnych i kontroli imigracji (IRCA) pracodawcy w Stanach Zjednoczonych muszą sprawdzać, czy nowo zatrudniani przez nich pracownicy mają odpowiednie zezwolenie na pracę. Ta procedura prowadzi przez kolejne kroki rejestrowania niezbędnych dokumentów w celu weryfikacji zawartości formularza I-9. Procedura wykorzystuje firmę demonstracyjną USMF.
 

@@ -1,26 +1,33 @@
 ---
-# required metadata
 title: Zarządzanie funkcjami — omówienie
 description: W tym temacie opisano funkcję zarządzania funkcjami i sposób jego używania.
 author: Peakerbl
 ms.date: 01/10/2022
 ms.topic: overview
-ms.prod: null
-ms.technology: null
+ms.prod: ''
+ms.technology: ''
 ms.search.form: FeatureManagementWorkspace
-audience: 'IT Pro, Application user'
+audience: IT Pro, Application user
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom:
-  - month/year of release that feature was introduced in
-  - in format yyyy-mm-dd
+- month/year of release that feature was introduced in
+- in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
+ms.openlocfilehash: c98bdbd64ee5488da20de3f5b23ae18ebce8c23f
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068016"
 ---
-
 # <a name="feature-management-overview"></a>Zarządzanie funkcjami — omówienie
 
 [!include [banner](../../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
 
 Funkcje są dodawane i aktualizowane w każdym wydaniu. Środowisko zarządzania funkcjami udostępnia obszar roboczy, w którym można wyświetlić listę funkcji, które zostały dostarczone w każdej wersji. Następnie można użyć obszaru roboczego do wyświetlania dokumentacji funkcji oraz włączania lub wyłączania funkcji.
 

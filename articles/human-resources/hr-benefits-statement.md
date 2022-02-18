@@ -14,14 +14,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 46f7358684502a4bf05854fbcb5cca9a1eb2c87c
-ms.sourcegitcommit: fcfd85a508c0de52cfe11d1986892219e39ef406
+ms.openlocfilehash: 65bf91faba049b3fed4d80e020d77b82e48cceb6
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7548062"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069002"
 ---
 # <a name="benefit-statement"></a>Zestawienie świadczeń
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 Raport **Oświadczenie o korzyściach** zawiera zestawienie świadczeń, na które pracownik jest obecnie zapisany. Dostęp do raportu ma bezpośrednio pracownik lub administrator świadczeń. W **sprawozdaniu o świadczeniach** jest wyświetlona lista zarejestrowanych świadczeń, opcji świadczenia, kosztów oraz wszystkich zarejestrowanych osób na utrzymaniu pracownika lub beneficjentów. Oświadczenie można wydrukować dla jednego pracownika lub wielu pracowników.
 

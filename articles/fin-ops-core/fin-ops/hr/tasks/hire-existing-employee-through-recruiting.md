@@ -1,22 +1,31 @@
---- 
-# required metadata 
+---
 title: Zatrudnianie istniejących pracowników etatowych przez rekrutację
-description: 'Czasami wolne stanowiska mogą być obsadzane przez kandydatów, którzy są już pracownikami w danej organizacji.'
+description: Czasami wolne stanowiska mogą być obsadzane przez kandydatów, którzy są już pracownikami w danej organizacji.
 author: twheeloc
 ms.date: 01/10/2022
 ms.topic: business-process
-ms.prod: null
-ms.technology: null
+ms.prod: ''
+ms.technology: ''
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: anbichse
-ms.search.validFrom: '2016-06-30'
+ms.author: twheeloc
+ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9e7343a485ae4779b075eeb48dabc39467e1a176
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074920"
 ---
 # <a name="hire-existing-employees-through-recruitment"></a>Zatrudnianie istniejących pracowników etatowych przez rekrutację
 
 [!include [banner](../../includes/banner.md)]
+
+> [!IMPORTANT]
+> Funkcjonalność opisana w tym temacie jest obecnie dostępna dla klientów Human Resources na infrastrukturze Finance.  
+
 
 Czasami wolne stanowiska mogą być obsadzane przez kandydatów, którzy są już pracownikami w danej organizacji. Ta procedura prowadzi przez kolejne kroki zatrudniania istniejącego pracownika za pomocą procesu rekrutacji. W tej procedurze projekt rekrutacji już skonfigurowano, a istniejący pracownik już złożył podanie o pracę w projekcie rekrutacji. Do stworzenia tej procedury wykorzystano dane z firmy demonstracyjnej **USMF**.
 

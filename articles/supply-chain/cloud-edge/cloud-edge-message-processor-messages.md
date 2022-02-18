@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 685c8951b7c0d8524091cf06306388736d894f58
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: 68db4c6561f2cc3fcfd64b49da59a4cc164685f2
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471651"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069436"
 ---
 # <a name="message-processor-messages"></a>Komunikaty procesora komunikatów
 
@@ -29,7 +29,7 @@ ms.locfileid: "7471651"
 
 Komunikaty procesora komunikatów są używane podczas uruchamiania jednostek skalowania chmury i urządzenia brzegowego w przypadku [obciążeń produkcyjnych](cloud-edge-workload-manufacturing.md) oraz [obciążeń zarządzania magazynu](cloud-edge-workload-warehousing.md).
 
-W celu ich synchronizacji między środowiskami wdrażania centrum i jednostki skalowania wymieniana jest duża ilość danych, ale *procesor komunikatów* przetworzy tylko część z tych wymian. Komunikaty przetwarzane przez procesor komunikatów można wyświetlić, przechodząc do widoku **Administrowanie systemem > Procesor komunikatów > Komunikaty procesora komunikatów**.
+Środowiska wdrożeniowe hubu i jednostki skalującej wymieniają dużą ilość danych, aby pozostać zsynchronizowane. Niektóre z wymienianych danych uruchamiają dodatkową logikę w *procesorze komunikatów*. Komunikaty przetworzone przez procesor komunikatów można wyświetlić, przechodząc do widoku **Administrowanie systemem > Procesor komunikatów > Komunikaty procesora komunikatów**.
 
 ## <a name="message-grid-columns-and-filters"></a>Kolumny i filtry siatki komunikatów
 

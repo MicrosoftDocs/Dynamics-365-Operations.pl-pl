@@ -8,15 +8,27 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
-ms.search.validFrom: '2021-06-07'
+ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
+ms.openlocfilehash: ceb327599bb2651a37ac51c3e0fdffc39d20c7f6
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067258"
 ---
-
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Nowości lub zmiany w aplikacji mobilnej Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 W tym temacie wymieniono nowe funkcje, poprawki, ulepszenia i znane problemy dla każdej wydanej wersji aplikacji mobilnej Warehouse Management w Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20150"></a>Wersja 2.0.15.0
+
+Ta wersja wprowadza następujące nowe funkcje, poprawki i ulepszenia:
+
+- Poprawiono wydajność poprzez naprawienie problemu z wyciekiem pamięci.
+- Naprawiono problem, w którym niektóre wartości pól nie aktualizowały się poprawnie, kiedy były wybierane na stronie szczegółów.
 
 ## <a name="version-20140"></a>Wersja 2.0.14.0
 

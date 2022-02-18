@@ -1,25 +1,29 @@
 ---
-# required metadata
 title: Rozwiązywanie problemów z ustawieniami Finance insights
-description: 'W tym temacie wymieniono problemy, które mogą wystąpić, gdy są dostępne funkcje analizy Finance insights. Opisano w nim również sposób rozwiązania tych problemów.'
+description: W tym temacie wymieniono problemy, które mogą wystąpić, gdy są dostępne funkcje analizy Finance insights. Opisano w nim również sposób rozwiązania tych problemów.
 author: panolte
-ms.date: 11/03/2021
+ms.date: 01/29/2022
 ms.topic: article
-ms.prod: null
-ms.technology: null
-ms.search.form: null
+ms.prod: ''
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
 ms.custom:
-  - '14151'
-  - intro-internal
+- "14151"
+- intro-internal
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
-ms.search.validFrom: '2021-08-20'
+ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
+ms.openlocfilehash: f77cddfdab22bef8af7f62d49723e330c4f13261
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8064873"
 ---
-
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Rozwiązywanie problemów z ustawieniami Finance insights
 
 [!include [banner](../includes/banner.md)]
@@ -88,3 +92,25 @@ Należy wykonać następujące kroki.
   | ---------------------------- | ---------------- |
   | CDS mikrousług ERP Microsoft Dynamics | 703e2651-d3fc-48f5-942c-74274233dba8 | 
   
+## <a name="symptom-error-we-didnt-find-any-data-for-the-selected-filter-range-please-select-a-different-filter-range-and-try-again"></a>Symptom: Błąd: „Nie znaleźliśmy żadnych danych dla wybranego zakresu filtrów. Wybierz inny zakres filtru i spróbuj ponownie”. 
+
+### <a name="resolution"></a>Rozwiązanie
+
+Sprawdź ustawienia integratora danych, aby upewnić się, że działa on zgodnie z oczekiwaniami i wstawia dane z AI Builder z powrotem do Finance.  
+Aby uzyskać więcej informacji, zobacz temat [Utwórz projekt integracji danych](../finance-insights/create-data-integrate-project.md).
+
+## <a name="symptom-customer-payment-prediction-training-failed-and-the-ai-builder-error-states-prediction-should-have-only-2-distinct-outcome-values-to-train-the-model-map-to-two-outcomes-and-retrain-training-report-issue-isnotminrequireddistinctnonnullvalues"></a>Symptom: Trening przewidywania płatności klienta nie powiódł się, a błąd AI Builder mówi: „Przewidywanie powinno mieć tylko 2 różne wartości wyniku, aby wytrenować model. Mapuj do dwóch wyników i przekwalifikuj się”, „Problem z raportem szkoleniowym: IsNotMinRequiredDistinctNonNullValues”.
+
+### <a name="resolution"></a>Rozwiązanie
+
+Ten błąd oznacza, że w ostatnim roku nie ma wystarczającej liczby historycznych transakcji, które reprezentują każdą z kategorii opisanych w kategoriach **Na czas**, **Późno** i **Bardzo późno**. Aby rozwiązać ten błąd, dostosuj **okres bardzo późnej transakcji**. Jeśli ustawienie **Bardzo późnego** okresu transakcji nie naprawi błędu, **Przewidywanie płatności klientów** nie jest najlepszym rozwiązaniem, ponieważ wymaga danych w każdej kategorii do celów szkoleniowych.
+
+Więcej informacji o tym, jak dostosować kategorie **Na czas**, **Późno** i **Bardzo późno** znajdziesz w [Włącz przewidywania płatności klienta](../finance-insights/enable-cust-paymnt-prediction.md).
+
+## <a name="symptom-model-training-failed"></a>Symptom: Trening modelu nie powiódł się
+
+### <a name="resolution"></a>Rozwiązanie
+
+Szkolenie dotyczące **modelu prognozy przepływów pieniężnych** wymaga danych, które obejmują więcej niż rok i zawierają ponad 100 transakcji. Transakcje te muszą wpływać na konta płynności, które są uwzględnione w ustawieniach prognozy przepływów pieniężnych.
+
+**Prognozy płatności od klientów** wymagają co najmniej 100 transakcji faktur i płatności od klientów w ciągu ostatnich sześciu do dziewięciu miesięcy, aby stworzyć prognozy.  

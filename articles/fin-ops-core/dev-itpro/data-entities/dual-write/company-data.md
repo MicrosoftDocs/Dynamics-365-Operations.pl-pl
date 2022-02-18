@@ -1,6 +1,6 @@
 ---
 title: Pojęcie firmy w usługach Dataverse
-description: W tym temacie opisano integrację danych firmy między Finance and Operations i Dataverse.
+description: W tym temacie opisano integrację danych firmy między programami Finanse i Działania i Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 08/04/2020
 ms.topic: article
@@ -9,27 +9,27 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 25bd2cc0df4940f02313b3a61f69b2273e835639
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 3657e41363ca6c1ce8eabfeaf3ba6da9b93f5e2a
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782092"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061033"
 ---
 # <a name="company-concept-in-dataverse"></a>Pojęcie firmy w usługach Dataverse
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
-W Finance and Operations koncepcja *firmy* jest zarówno konstrukcją prawną, jak i konstrukcją biznesową. Jest to również granicą bezpieczeństwa i widoczności danych. Użytkownicy zawsze pracują w kontekście pojedynczej firmy, a większość danych jest rozłożona według firmy.
+
+W Finanse i Działania koncepcja *firmy* jest zarówno konstrukcją prawną, jak i konstrukcją biznesową. Jest to również granicą bezpieczeństwa i widoczności danych. Użytkownicy zawsze pracują w kontekście pojedynczej firmy, a większość danych jest rozłożona według firmy.
 
 Dataverse nie ma równoważnej koncepcji. Najbliższa koncepcja jest *jednostką biznesową*, która jest przede wszystkim granicą bezpieczeństwa i widoczności danych użytkownika. Koncepcja ta nie ma takich samych konsekwencji prawnych lub biznesowych, co koncepcja firmy.
 
 Ponieważ jednostka biznesowa i firma nie są równoważnymi pojęciami, nie można wymusić mapowania 1:1 między nimi co celu integracji Dataverse. Jednak ponieważ użytkownicy muszą domyślnie być w stanie widzieć te same wiersze w aplikacji i Dataverse, firma Microsoft wprowadziła nową tabelę w Dataverse o nazwie cdm\_Company. Ta tabela jest odpowiednikiem tabeli firmy w aplikacji. Aby zagwarantować, że widoczność wierszy jest równoważna między aplikacją i Dataverse od razu po zainstalowaniu, zaleca się następujące ustawienia dla danych Dataverse:
 
-+ Dla każdego wiersza firmy w Finance and Operations, który jest włączony dla podwójnego zapisu tworzony jest skojarzony wiersz cdm\_Company.
++ Dla każdego wiersza firmy w programie Finanse i Działania, który jest włączony dla podwójnego zapisu tworzony jest skojarzony wiersz cdm\_Company.
 + Gdy wiersz cdm\_Company jest tworzony i włączony dla podwójnego zapisu, tworzona jest domyślna jednostka biznesowa o tej samej nazwie. Mimo że domyślny zespół jest tworzony automatycznie dla tej jednostki biznesowej, jednostka biznesowa nie jest używana.
 + Tworzony jest oddzielny zespół właściciela o takiej samej nazwie. Jest również związany z jednostką biznesową.
 + Domyślnie właścicielem dowolnego wiersza utworzonego i zapisywanym podwójnie w Dataverse jest zestaw do zespołu „DW Owner” połączony ze skojarzoną jednostką biznesową.
@@ -43,7 +43,7 @@ Z powodu tej konfiguracji każdy wiersz związany firmą USMF będą własności
 + Rola „Menedżer sprzedaży” jest przypisana do członków zespołu „USMF Sales”.
 + Użytkownicy z rolą „Menedżer sprzedaży” mają dostęp do wszystkich wierszy konta należących do tej samej jednostki biznesowej, do której należą ci użytkownicy.
 + Zespół „USMF Sales” jest powiązany z jednostką biznesową USMF, o której wspomniano wcześniej.
-+ W związku z tym członkowie zespołu „USMF Sales” mogą zobaczyć dowolne konto, które jest własnością użytkownika „USMF DW”, i które pochodzi z tabeli Firma USMF w Finance and Operations.
++ W związku z tym członkowie zespołu „USMF Sales” mogą zobaczyć dowolne konto, które jest własnością użytkownika „USMF DW”, i które pochodzi z tabeli Firma USMF w Finanse i Działania.
 
 ![Jak mogą być używane zespoły.](media/dual-write-company-2.png)
 

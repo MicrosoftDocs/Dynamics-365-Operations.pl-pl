@@ -4,18 +4,23 @@ description: W tym temacie opisano sposób uaktualniania danych o dwóch zapisac
 author: RamaKrishnamoorthy
 ms.date: 03/31/2021
 ms.topic: article
-audience: 'Application User, IT Pro'
+audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
-ms.search.validFrom: '2021-03-31'
+ms.search.validFrom: 2021-03-31
+ms.openlocfilehash: 579a7d19ee7196d3242c78bd9915df24ec479c31
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8060492"
 ---
-
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Uaktualnianie do modelu globalnej książki adresowej i strony
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 [Szablony Microsoft Azure Data Factory](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema) pomaga zaktualizować następujące istniejące tabele danych **Konto**, **Kontakt** i **Dostawca** za pomocą podwójnego zapisu dla strony i modelu globalnej książki adresowej.
 
@@ -52,10 +57,10 @@ Do uaktualnienia do modelu strony i globalnej książki adresowej wymagane są n
 
 Uaktualnienie wymaga następującego przygotowania:
 
-+ **Pełna synchronizacja:** środowisko Finance and Operations oraz środowisko Customer Engagement są w pełni zsynchronizowane dla tabel **Konto (Odbiorca**), **Kontakt** i **Dostawca**.
++ **Pełna synchronizacja:** środowisko Finanse i Działania oraz środowisko Customer Engagement są w pełni zsynchronizowane dla tabel **Konto (Odbiorca**), **Kontakt** i **Dostawca**.
 + **Klucze integracji:** tabele **konto (Klient)**, **Kontakt** i **Dostawca** w aplikacjach zaangażowania klienta są dostępne za pomocą gotowych kluczy integracji. Jeśli użytkownik dostosuje klucze integracji, należy dostosować szablon.
 + **Numer strony:** Wszystkie rekordy **Konto (Klient)**, **Kontakt** i **Dostawca**, które zostaną zaktualizowane, mają numer strony. Rekordy, które nie mają numeru strony, zostaną zignorowane. Aby uaktualnić te rekordy, dodaj do nich numer strony przed rozpoczęciem procesu uaktualniania.
-+ **Okres przestoju systemu:** Podczas procesu uaktualniania konieczne będzie przełączenie środowisk Finance and Operations oraz zaangażowania klienta do trybu offline.
++ **Okres przestoju systemu:** Podczas procesu uaktualniania konieczne będzie przełączenie środowisk Finanse i Działania oraz zaangażowania klienta do trybu offline.
 + **Migawka**: tworzenie migawki aplikacji Finanse i Operacje i aplikacji obsługi klienta. W razie konieczności użyj migawki, aby przywrócić poprzedni stan.
 
 ## <a name="deployment"></a>Wdrażanie

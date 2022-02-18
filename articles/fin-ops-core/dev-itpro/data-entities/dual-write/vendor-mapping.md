@@ -1,6 +1,6 @@
 ---
 title: Zintegrowane dane główne dostawcy
-description: W tym temacie opisano integrację danych dostawców między aplikacami Finance and Operations i Dataverse.
+description: W tym temacie opisano integrację danych dostawcy między aplikacjami Finanse i Działania i Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: fce5e072d39533fa5d54fe34e90c7aca9d01d67e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 7794f33aed7364b76a7d5ffd08a068342887e468
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782484"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063169"
 ---
 # <a name="integrated-vendor-master"></a>Zintegrowane dane główne dostawcy
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Termin *dostawca* odnosi się do organizacji dostawcy lub jedynego właściciela, który dostarcza towary lub usługi firmie. Mimo że *dostawca* jest ustaloną koncepcją w Microsoft  Dynamics 365 Supply Chain Management, koncepcja dostawcy nie istnieje w aplikacjach angażujących klientów nie ma koncepcji dostawcy. Można jednak przeciążyć tabelę **Konta/kontaktu**, aby przechowywać informacje o dostawcach. Zintegrowany wzorzec dostawcy wprowadza wyraźną koncepcję dostawcy w aplikacjach angażujących klienta. Można skorzystać z nowego projektu dostawcy lub danych dostawcy sklepu w tabeli **Konto/kontakt**. Podwójne zapisywanie obsługuje obie metody.
 
@@ -37,13 +37,13 @@ Jeśli chcesz dalej przechowywać dane dostawcy w tabeli **Konto/kontakt**, moż
 ![Rozszerzony przepływ danych dostawcy.](media/dual-write-vendor-detail.jpg)
 
 > [!TIP]
-> Jeśli korzystasz z portali Power Apps dla dostawców samoobsługowych, informacje o dostawcy mogą przepływać bezpośrednio do aplikacji Finance and Operations.
+> Jeśli korzystasz z portali Power Apps dla dostawców samoobsługowych, informacje o dostawcy mogą przepływać bezpośrednio do aplikacji Finanse i Działania.
 
 ## <a name="templates"></a>Szablony
 
 Dane dostawcy obejmują wszystkie informacje o dostawcy, takie jak grupa dostawców, adresy, dane kontaktowe, profil płatności oraz profil faktury. Kolekcja mapowań tabel działa razem podczas interakcji z danymi dostawcy, jak pokazano w poniższej tabeli.
 
-Aplikacje Finance and Operations | Aplikacje Customer Engagement     | opis
+Aplikacje Finanse i Działania | Aplikacje Customer Engagement     | opis
 ----------------------------|-----------------------------|------------
 [CDS Contacts wer. 2](mapping-reference.md#115) | kontakty | Ten szablon synchronizuje wszystkie podstawowe, pomocnicze i wyższe informacje kontaktowe dla odbiorców i dostawców.
 [Afiksy nazwy](mapping-reference.md#155) | msdyn_nameaffixes | Ten szablon synchronizuje dane referencyjne afiksów nazw dla odbiorców i dostawców.
@@ -52,7 +52,7 @@ Aplikacje Finance and Operations | Aplikacje Customer Engagement     | opis
 [Wiersze harmonogramu płatności](mapping-reference.md#159) | msdyn_paymentschedulelines | Synchronizuje dane referencyjne wierszy harmonogramu płatności, zarówno dla klientów, jak i dostawców.
 [Harmonogram płatności](mapping-reference.md#160) | msdyn_paymentschedules | Ten szablon synchronizuje dane referencyjne harmonogramu dla odbiorców i dostawców.
 [Warunki płatności](mapping-reference.md#161) | msdyn_paymentterms | Ten szablon synchronizuje dane referencyjne warunki płatności dla odbiorców i dostawców.
-[Dostawcy wersja 2](mapping-reference.md#202) | msdyn_vendors | Firmy, które korzystają z niestandardowego rozwiązania dla dostawców, mogą skorzystać z koncepcji dostawcy gotowego (out-of-box), która jest wprowadzana w Dataverse wraz z integracją z aplikacjami Finance and Operations.
+[Dostawcy wersja 2](mapping-reference.md#202) | msdyn_vendors | Firmy, które korzystają z niestandardowego rozwiązania dla dostawców, mogą skorzystać z koncepcji dostawcy gotowego (out-of-box), która jest wprowadzana w Dataverse wraz z integracją z aplikacjami Finanse i Działania.
 [Grupy dostawców](mapping-reference.md#200) | msdyn_vendorgroups | Ten szablon powoduje zsynchronizowanie informacji o grupie dostawców.
 [Metoda płatności dostawcy](mapping-reference.md#201) | msdyn_vendorpaymentmethods | Ten szablon powoduje zsynchronizowanie informacji o metodzie płatności.
 

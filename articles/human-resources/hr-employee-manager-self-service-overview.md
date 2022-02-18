@@ -1,26 +1,33 @@
 ---
-# required metadata
 title: Omówienie samoobsługi dla pracownika etatowego i menedżera
 description: Ten artykuł umożliwia przegląd informacji o obszarze roboczym samoobsługi pracowników i menedżerów.
 author: twheeloc
 ms.date: 08/26/2021
 ms.topic: overview
-ms.prod: null
-ms.technology: null
-ms.search.form: 'HRMParameters, EssWorkspace'
+ms.prod: ''
+ms.technology: ''
+ms.search.form: HRMParameters, EssWorkspace
 audience: Application User
 ms.search.scope: Human Resources
 ms.custom:
-  - '51941'
-  - intro-internal
+- "51941"
+- intro-internal
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: '2020-03-19'
+ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
+ms.openlocfilehash: 28bf4ff4e456505efda3777a4f820c54f270c74b
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068951"
 ---
-
 # <a name="employee-and-manager-self-service-overview"></a>Omówienie samoobsługi dla pracownika etatowego i menedżera
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

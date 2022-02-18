@@ -12,17 +12,17 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 20751a25a6dedb04806068780bc2f4e381bf79bc
-ms.sourcegitcommit: ef0dd4245fc499907ffe00e2a32f59a6cd96e45d
+ms.openlocfilehash: 4615182e6c3341a376e8e55a1417480e3e3f5ea7
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "7937460"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062497"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Tworzenie użytkowników Portalu klienta i zarządzanie nimi
 
 [!include [banner](../includes/banner.md)]
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Po wdrożeniu nie ma możliwości samodzielnej rejestracji użytkowników w witrynach utworzonych za pomocą Portalu klienta. Aby zalogować się i wykorzystać witrynę sieci Web, użytkownicy muszą zostać zaproszeni przez administratora. Firma Microsoft celowo zablokowała możliwość samodzielnej rejestracji dla użytkowników.
 
@@ -33,7 +33,7 @@ Podczas samodzielnego rejestrowania użytkowników rekordy kontaktów są tworzo
 ## <a name="video"></a>Wideo
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ADkI]
 
-Film [Zaproś klientów do rejestracji i korzystania z Twojego portalu klienta](https://youtu.be/drGUYHX9QIQ) (widoczny powyżej) znajduje się na [liście odtwarzania Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) dostępnej w witrynie YouTube.
+Film [Zaproś klientów do rejestracji i korzystania z Twojego portalu klienta](https://youtu.be/drGUYHX9QIQ) (widoczny powyżej) znajduje się na [liście odtwarzania Finanse i Działania](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) dostępnej w witrynie YouTube.
 
 ## <a name="prerequisite-setup"></a>Wymagania wstępne dotyczące konfiguracji
 

@@ -1,6 +1,6 @@
 ---
 title: Rozwiązywanie ogólnych problemów
-description: Ten temat zawiera informacje dotyczące ogólnego rozwiązywania problemów dotyczących integracji o podwójnym zapisie między aplikacjami Finance and Operations i Dataverse.
+description: Ten temat zawiera ogólne informacje dotyczące rozwiązywania problemów dotyczących integracji podwójnego zapisu między aplikacjami Finanse i Działania i Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: bcedb9f6e8fb15210512ed6a376d4329759593e4
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: f6f5b9f26990e2f4db9bf69040a6c4be31400b40
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781181"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062345"
 ---
 # <a name="general-troubleshooting"></a>Rozwiązywanie ogólnych problemów
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Ten temat zawiera informacje dotyczące ogólnego rozwiązywania problemów dotyczących integracji o podwójnym zapisie między aplikacjami Finance and Operations i Dataverse.
+
+Ten temat zawiera ogólne informacje dotyczące rozwiązywania problemów dotyczących integracji podwójnego zapisu między aplikacjami Finanse i Działania i Dataverse.
 
 > [!IMPORTANT]
 > Niektóre problemy, których ten problem może wymagać od roli administratora systemu lub poświadczeń administratora dzierżawcy Microsoft Azure Active Directory (Azure AD). W sekcji dotyczącej każdego zagadnienia wyjaśniono, czy określona rola lub poświadczenia są wymagane.
@@ -44,37 +44,37 @@ Aby zobaczyć dziennik śledzenia, należy wykonać następujące kroki.
 2. Znajdź dzienniki śledzenia, w których w kolumnie **Nazwa typu** jest ustawiona wartość **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
 3. Kliknij dwukrotnie towar, aby wyświetlić pełny dziennik, a następnie w skróconej karcie **Wykonania** przejrzyj tekst **Bloku wiadomości**.
 
-## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Włącz tryb debugowania w celu rozwiązywania problemów z synchronizacją na żywo w aplikacjach Finance and Operations
+## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Włącz tryb debugowania w celu rozwiązywania problemów z synchronizacją na żywo w aplikacjach Finanse i Działania
 
 **Wymagana rola w celu wyświetlania problemów:** administrator systemu
 
-Błędy podwójnego zapisywania, które pochodzą z Dataverse, mogą pojawić się w aplikacji Finance and Operations. Aby włączyć pełne rejestrowanie błędów, wykonując następujące kroki:
+Błędy podwójnego zapisywania, które pochodzą z Dataverse, mogą pojawić się w aplikacji Finanse i Działania. Aby włączyć pełne rejestrowanie błędów, wykonując następujące kroki:
 
-1. W przypadku wszystkich konfiguracji projektu w aplikacjach Finance and Operations istnieje flaga **IsDebugMode** w tabeli **DualWriteProjectConfiguration**.
-2. Otwórz tabelę **DualWriteProjectConfiguration** przy użyciu dodatku programu Excel. Aby użyć tego dodatku, włącz tryb projektowania w dodatku programu Excel Finance and Operations i dodaj do arkusza konfigurację **DualWriteProjectConfiguration**. Więcej informacji można znaleźć w temacie [Wyświetlanie i aktualizowanie danych jednostki przy użyciu programu Excel](../../office-integration/use-excel-add-in.md).
+1. W przypadku wszystkich konfiguracji projektu w aplikacjach Finanse i Działania istnieje flaga **IsDebugMode** w tabeli **DualWriteProjectConfiguration**.
+2. Otwórz tabelę **DualWriteProjectConfiguration** przy użyciu dodatku programu Excel. Aby użyć tego dodatku, włącz tryb projektowania w dodatku programu Excel Finanse i Działania i dodaj do arkusza konfigurację **DualWriteProjectConfiguration**. Więcej informacji można znaleźć w temacie [Wyświetlanie i aktualizowanie danych jednostki przy użyciu programu Excel](../../office-integration/use-excel-add-in.md).
 3. Ustaw wartość **IsDebugMode** na **Tak** w projekcie.
 4. Uruchom scenariusz, który generuje błędy.
 5. Pełne dzienniki są przechowywane w tabeli **DualWriteErrorLog**.
 6. W celu wyszukiwania danych w eksploratorze tabel użyj następującego łącza: `https://999aos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog`, zastępując wartość `999` stosownie do potrzeb.
 7. Zaktualizuj ponownie po [KB 4595434](https://fix.lcs.dynamics.com/Issue/Details?kb=4595434&bugId=527820&dbType=3&qc=98e5dc124ac125c57ad633d885ac612aea3ddb8f4abf9d71ab3aa354f2e06cbe), który jest dostępny dla aktualizacji platformy 37 i nowszych. Jeśli ta poprawka jest zainstalowana, tryb debugowania zarejestruje więcej dzienników.  
 
-## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Sprawdź błędy synchronizacji na maszynie wirtualnej dla aplikacji Finance and Operations
+## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Sprawdź błędy synchronizacji na maszynie wirtualnej dla aplikacji Finanse i Działania
 
 **Wymagana rola w celu wyświetlania problemów:** Administrator systemu
 
 1. Zaloguj się do Microsoft Dynamics LifeCycle Services (LCS).
 2. Otwórz projekt LCS, który wybrano do wykonania podwójnego zapisu.
 3. Wybierz kafelek **Środowiska hostowane w chmurze**.
-4. Użyj pulpitu zdalnego i zaloguj się do maszyny wirtualnej (VM) aplikacji Finance and Operations. Należy skorzystać z konta lokalnego podanego w usługi LCS.
+4. Użyj pulpitu zdalnego i zaloguj się do maszyny wirtualnej (VM) aplikacji Finanse i Działania. Należy skorzystać z konta lokalnego podanego w usługi LCS.
 5. Otwórz Podgląd zdarzeń.
 6. Wybierz do **Dzienniki aplikacji i usług \> Microsoft \> Dynamics \> AX-DualWriteSync \> Operacyjny**.
 7. Przejrzyj listę ostatnio używanych błędów.
 
-## <a name="unlink-and-link-another-dataverse-environment-from-a-finance-and-operations-app"></a>Odłącz i Połącz inne środowisko Dataverse z poziomu aplikacji Finance and Operations
+## <a name="unlink-and-link-another-dataverse-environment-from-a-finance-and-operations-app"></a>Jak odłączyć i połączyć inne środowisko Dataverse z programu Finanse i Działania
 
-**Wymagana rola do rozłączenia środowiska:** administrator systemu dla każdej aplikacji Finance and Operations lub Dataverse.
+**Wymagana rola do rozłączenia środowiska:** administrator systemu dla każdej aplikacji Finanse i Działania lub Dataverse.
 
-1. Zaloguj się do aplikacji Finance and Operations.
+1. Zaloguj się do aplikacji Finanse i Działania.
 2. Przejdź do **Obszary robocze \> Zarządzanie danymi** i wybierz opcję **Podwójny zapis**.
 3. Zaznacz wszystkie uruchomione mapowania i wybierz **Zatrzymaj**.
 4. Wybierz **Odłącz środowisko**.

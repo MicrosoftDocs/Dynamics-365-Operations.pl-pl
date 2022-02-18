@@ -1,6 +1,6 @@
 ---
 title: Zintegrowany podatek
-description: W tym temacie opisano integrację danych podatków między Finance and Operations i Dataverse.
+description: W tym temacie opisano integrację danych podatku między programami Finanse i Działania i Dataverse.
 author: tonyafehr
 ms.date: 09/06/2019
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: tfehr
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: d1e74bbbeba019ca48dd823b58251643e96edd0c
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 532e6603b74ad0293d65684d2d6858ef31fbc496
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782217"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063194"
 ---
 # <a name="integrated-tax"></a>Zintegrowany podatek
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Dane ustawień podatku określają ustawienia zarówno podatków pośrednich (VAT, GST, podatków), jak i potrąconej zaliczki na podatek. Zawiera opis reguły obliczania podatku, stawki podatkowej, księgowania podatku, rozliczania i innych koncepcji.
 
@@ -28,7 +28,7 @@ Dane ustawień podatku określają ustawienia zarówno podatków pośrednich (VA
 
 Dane podatku zawierają kolekcję mapowań tabel działających razem podczas interakcji z danymi, jak pokazano w poniższej tabeli.
 
-| Aplikacje Finance and Operations | Aplikacje Customer Engagement | opis |
+| Aplikacje Finanse i Działania | Aplikacje Customer Engagement | Opis |
 |-----------------------------|-----------------------------------|-------------|
 [Grupa podatków dla pozycji](mapping-reference.md#196) | msdyn_taxitemgroups | |
 [Urzędy skarbowe](mapping-reference.md#193) | msdyn_taxauthorities | |

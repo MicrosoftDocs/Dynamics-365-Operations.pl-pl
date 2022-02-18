@@ -1,6 +1,6 @@
 ---
 title: Hierarchia organizacyjna w usłudze Dataverse
-description: W tym temacie opisano integrację danych organizacji między aplikacjami Finance and Operations i Dataverse.
+description: W tym temacie opisano integrację danych organizacji między aplikacjami Finanse i Działania i Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: c7ef3a11817d60343503c80d89493262711524b1
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: afc1b5996667835c460f467526493380aa2d6403
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782315"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062093"
 ---
 # <a name="organization-hierarchy-in-dataverse"></a>Hierarchia organizacyjna w usłudze Dataverse
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Ponieważ Dynamics 365 Finance jest systemem finansowym, *organizacja* jest podstawową koncepcją, a konfiguracja systemu rozpoczyna się od konfiguracji hierarchii organizacyjnej. Finanse biznesowe mogą być następnie śledzone na poziomie organizacji, a także na dowolnym poziomie w hierarchii organizacyjnej.
 
@@ -28,17 +28,17 @@ Mimo że w usłudze Dataverse nie występuje pojęcie hierarchii organizacyjnej,
 
 ## <a name="data-flow"></a>Przepływ danych
 
-Ekosystem biznesowy składający się z aplikacji Finance and Operations i usługi Dataverse będzie nadal posiadał hierarchię organizacyjną. Ta hierarchia organizacji jest zbudowana na aplikacjach Finance and Operations, ale jest dostępna w usłudze Dataverse do celów informacyjnych i rozszerzania środowiska. Poniższa ilustracja przedstawia informacje o hierarchii organizacyjnej, które są dostępne w usłudze Dataverse w postaci jednokierunkowego przepływu danych z aplikacji Finance and Operations do usługi Dataverse.
+Ekosystem biznesowy składający się z aplikacji Finanse i Działania i usługi Dataverse będzie nadal posiadał hierarchię organizacyjną. Ta hierarchia organizacji jest zbudowana na aplikacjach Finanse i Działania, ale jest dostępna w usłudze Dataverse do celów informacyjnych i rozszerzania środowiska. Poniższa ilustracja przedstawia informacje o hierarchii organizacyjnej, które są dostępne w usłudze Dataverse w postaci jednokierunkowego przepływu danych z aplikacji Finanse i Działania do usługi Dataverse.
 
 ![Obraz architektury.](media/dual-write-data-flow.png)
 
-Mapy tabeli hierarchii organizacyjnej są dostępne dla jednokierunkowego synchronizowania danych z aplikacji Finance and Operations do usługi Dataverse.
+Mapy tabeli hierarchii organizacyjnej są dostępne dla jednokierunkowego synchronizowania danych z aplikacji Finanse i Działania do usługi Dataverse.
 
 ## <a name="templates"></a>Szablony
 
 Informacje o produkcie zawierają wszystkie informacje związane z produktem i jego definicję, takie jak wymiary produktu lub wymiary śledzenia i przechowywania. W poniższej tabeli przedstawiono kolekcję mapowań tabel, która umożliwia synchronizowanie produktów i informacji pokrewnych.
 
-Aplikacje Finance and Operations | Aplikacje Customer Engagement     | opis
+Aplikacje Finanse i Działania | Aplikacje Customer Engagement     | opis
 -----------------------|--------------------------------|---
 [Osoby prawne](mapping-reference.md#102) | cdm_companies | Umożliwia synchronizację dwukierunkową informacji firmy (firmy).
 [Osoby prawne](mapping-reference.md#142) | msdyn_internalorganizations |

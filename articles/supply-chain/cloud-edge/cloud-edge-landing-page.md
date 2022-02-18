@@ -4,18 +4,19 @@ description: Ten temat przedstawia informacje na temat zarządzania jednostką s
 author: cabeln
 ms.date: 04/22/2021
 ms.topic: article
+ms.search.form: ScaleUnitWorkloadsWorkspace
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 3111de1f9862cbf926e763f963c86059f4121fc0
-ms.sourcegitcommit: 4b7e9d074e368a08d2f75482b722dce0c69a4bbd
+ms.openlocfilehash: 593331a3f1073edb6a50c9bfc66e0723d222832a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7733446"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065771"
 ---
 # <a name="scale-units-in-a-distributed-hybrid-topology"></a>Jednostki skalowania w dystrybuowanej topologii hybrydowej
 
@@ -51,8 +52,7 @@ Można skonfigurować środowisko centrum i jednostki skalowania w chmurze dla w
 
 ### <a name="dedicated-warehouse-management-workload-capabilities-in-a-scale-unit"></a>Dedykowane możliwości zarządzania pracą magazynową w jednostce skalowania
 
-Obciążenie pracą zarządzania magazynem umożliwia uruchamianie procesów zarządzania magazynem w izolowanym wdrożeniu.
-Aby uzyskać więcej informacji, zobacz temat [Obciążenia pracą dotyczące zarządzania magazynem dla jednostek skalowania chmury i urządzenia brzegowego](cloud-edge-workload-warehousing.md).
+Obciążenie zarządzania magazynem jest pierwszym rozproszonym obciążeniem dla jednostek skalowania, które zostanie udostępnione do ogólnej dostępności. Dzięki temu Twoje operacje magazynowe mogą być skalowane i działać w odpornym środowisku dzięki wykorzystaniu izolowanych okien serwisowych. Praca związana z zarządzaniem magazynem wspiera większość procesów zarządzania magazynem w centrum przedsiębiorstwa. Aby uzyskać więcej informacji, zobacz temat [Obciążenia pracą dotyczące zarządzania magazynem dla jednostek skalowania chmury i urządzenia brzegowego](cloud-edge-workload-warehousing.md).
 
 ### <a name="dedicated-manufacturing-execution-workload-capabilities-in-a-scale-unit"></a>Dedykowane możliwości wykonywania produkcyjnych w jednostkach skali
 

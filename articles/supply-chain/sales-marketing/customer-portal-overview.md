@@ -1,24 +1,28 @@
 ---
-# required metadata
 title: Omówienie portalu klientów dla rozwiązania Dynamics 365 Supply Chain Management (zawiera wideo)
-description: 'Ten temat zawiera informacje dotyczące portalu klienta oraz wyjaśnienie, kto powinien go używać oraz jak działa.'
+description: Ten temat zawiera informacje dotyczące portalu klienta oraz wyjaśnienie, kto powinien go używać oraz jak działa.
 author: Henrikan
 ms.date: 06/16/2020
 ms.topic: overview
-ms.prod: null
-ms.technology: null
+ms.prod: ''
+ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: henrikan
-ms.search.validFrom: '2020-04-22'
+ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: 50bdbe6c5f5d23f49bdf8040f2c7811a28da3f32
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062016"
 ---
-
 # <a name="customer-portal-for-dynamics-365-supply-chain-management-overview"></a>Omówienie portalu klienta dla Dynamics 365 Supply Chain Management
 
 [!include [banner](../includes/banner.md)]
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 ## <a name="what-is-the-customer-portal"></a>Co to jest portal klienta?
 
@@ -58,7 +62,7 @@ Portal odbiorców jest dostarczany jako szablon portali Power Apps. Zależy to o
 
 [Portale Power Apps](/powerapps/maker/portals/overview) to funkcja umożliwiająca użytkownikom tworzenie zewnętrznej witryny sieci Web, do której mogą się logować osoby spoza organizacji. Do tworzenia portali nie jest wymagane kodowanie. Portal klienta to jeden z wielu [szablonów portalu Dynamics 365](/powerapps/maker/portals/portal-templates#environment-with-model-driven-apps-in-dynamics-365) dostępnych w firmie Microsoft.
 
-[Podwójny zapis](/powerapps/maker/portals/overview) to gotowa infrastruktura umożliwiająca współpracę w czasie rzeczywistym między aplikacjami oferującymi spersonalizowaną obsługę klienta a aplikacjami Finance i Operations. Podwójny zapis toi dwukierunkowa integracja między aplikacjami Finance i Operations i Microsoft Dataverse. Tym samym umożliwia korzystanie ze zintegrowanego środowiska użytkownika w aplikacjach. Portal klienta jest zależny od tabel synchronizowanych z podwójnym zapisywaniem. Zanim dane z modułu Supply Chain Management mogą być nadawane w portalu klienta, dla wszystkich odpowiednich tabel musi być włączona funkcja podwójnego zapisywania.
+[Podwójny zapis](/powerapps/maker/portals/overview) to gotowa infrastruktura umożliwiająca współpracę w czasie rzeczywistym między aplikacjami oferującymi spersonalizowaną obsługę klienta a aplikacjami Finanse i Działania. Podwójny zapis toi dwukierunkowa integracja między aplikacjami Finanse i Działania i Microsoft Dataverse. Tym samym umożliwia korzystanie ze zintegrowanego środowiska użytkownika w aplikacjach. Portal klienta jest zależny od tabel synchronizowanych z podwójnym zapisywaniem. Zanim dane z modułu Supply Chain Management mogą być nadawane w portalu klienta, dla wszystkich odpowiednich tabel musi być włączona funkcja podwójnego zapisywania.
 
 ![Zależności portalu klienta.](media/customer-portal-elements.png "Zależności portalu klienta")
 

@@ -1,23 +1,32 @@
---- 
-# required metadata 
+---
 title: Zatrudnianie kandydata przez rekrutację
-description: 'Ta procedura umożliwia osobie rekrutującej zatrudnienie kandydata, który przesłał zgłoszenie za pośrednictwem określonego projektu rekrutacji.'
+description: Ta procedura umożliwia osobie rekrutującej zatrudnienie kandydata, który przesłał zgłoszenie za pośrednictwem określonego projektu rekrutacji.
 author: twheeloc
 ms.date: 01/10/2022
 ms.topic: business-process
-ms.prod: null
-ms.technology: null
-ms.search.form: 'HRMApplication, HcmWorkerNewWorker, HcmPositionLookup, HcmWorker, HcmPosition, HcmPositionDateManager,  DefaultDashboard'
+ms.prod: ''
+ms.technology: ''
+ms.search.form: HRMApplication, HcmWorkerNewWorker, HcmPositionLookup, HcmWorker, HcmPosition, HcmPositionDateManager,  DefaultDashboard
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: anbichse
-ms.search.validFrom: '2016-06-30'
+ms.author: twheeloc
+ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 2a6ecee078b18b12769a14cadc7e0182bf03d704
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075380"
 ---
 # <a name="hiring-candidate-through-recruiting"></a>Zatrudnianie kandydata przez rekrutację
 
 [!include [banner](../../includes/banner.md)]
+
+> [!IMPORTANT]
+> Funkcjonalność opisana w tym temacie jest obecnie dostępna dla klientów Human Resources na infrastrukturze Finance.  
+
 
 Ta procedura umożliwia osobie rekrutującej zatrudnienie kandydata, który przesłał zgłoszenie za pośrednictwem określonego projektu rekrutacji. W przypadku zatrudniania kandydata za pośrednictwem projektu rekrutacji zostanie utworzony nowy rekord pracownika, a w rekordzie kandydata zostanie ustawiony stan **Zatrudniony**. Do stworzenia tej procedury wykorzystano dane z firmy demonstracyjnej **USMF**.
 

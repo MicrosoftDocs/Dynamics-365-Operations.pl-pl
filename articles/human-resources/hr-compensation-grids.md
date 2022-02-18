@@ -2,7 +2,7 @@
 title: Konfigurowanie siatek wynagrodzeń
 description: Siatki wynagrodzeń są używane do definiowania i obsługi struktur płacy dla planów stałych wynagrodzeń.
 author: twheeloc
-ms.date: 08/25/2021
+ms.date: 01/03/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,14 +13,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9e6aabf5c05b2a7a5d2b37b43c9a7e93ea6e9bbb
-ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
+ms.openlocfilehash: 51b98320eac539e49787d352f32683efadc11f41
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483824"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071517"
 ---
 # <a name="set-up-compensation-grids"></a>Konfigurowanie siatek wynagrodzeń
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -67,28 +70,16 @@ Siatki wynagrodzeń są używane do definiowania i obsługi struktur płacy dla 
 7. W polu **Typ korekty** wybierz opcję.
 8. W polu **Kwota korekty** wpisz liczbę.
 9. Na liście znajdź i zaznacz odpowiedni rekord.
-10. Na liście znajdź i zaznacz odpowiedni rekord.
-11. Na liście znajdź i zaznacz odpowiedni rekord.
-12. Na liście znajdź i zaznacz odpowiedni rekord.
-13. Kliknij przycisk **Zastosuj do siatki**.
-14. Na liście znajdź i zaznacz odpowiedni rekord.
-15. Na liście znajdź i zaznacz odpowiedni rekord.
-16. Na liście znajdź i zaznacz odpowiedni rekord.
-17. Kliknij przycisk **Zastosuj do siatki**.
-18. Na liście znajdź i zaznacz odpowiedni rekord.
-19. Na liście znajdź i zaznacz odpowiedni rekord.
-20. Kliknij przycisk **Zastosuj do siatki**.
-21. Na liście znajdź i zaznacz odpowiedni rekord.
-22. Kliknij przycisk Zastosuj do siatki.
+10. Kliknij przycisk **Zastosuj do siatki**.
     * Teraz użyjemy funkcji zmiany masowej, aby skorygować punkty odniesienia minimalny i maksymalny na każdym poziomie. W tym przykładzie zostanie użyta rozpiętość 50%, tak że minimalny punkt odniesienia zostanie skorygowany o -20%, a punkt maksymalny o +20%.  
-23. W polu **Kwota korekty** wpisz liczbę.
-24. W polu **Punkt odniesienia** wprowadź lub wybierz wartość.
-25. Na liście oznacz wszystkie wiersze lub usuń ich oznaczenie.
-26. Kliknij przycisk **Zastosuj do siatki**.
-27. W polu **Kwota korekty** wpisz liczbę.
-28. W polu **Punkt odniesienia** wprowadź lub wybierz wartość.
-29. Na liście oznacz wszystkie wiersze lub usuń ich oznaczenie.
-30. Kliknij przycisk **Zastosuj do siatki**.
+11. W polu **Kwota korekty** wpisz liczbę.
+12. W polu **Punkt odniesienia** wprowadź lub wybierz wartość.
+13. Na liście oznacz wszystkie wiersze lub usuń ich oznaczenie.
+14. Kliknij przycisk **Zastosuj do siatki**.
+15. W polu **Kwota korekty** wpisz liczbę.
+16. W polu **Punkt odniesienia** wprowadź lub wybierz wartość.
+17. Na liście oznacz wszystkie wiersze lub usuń ich oznaczenie.
+18. Kliknij przycisk **Zastosuj do siatki**.
 
 
 

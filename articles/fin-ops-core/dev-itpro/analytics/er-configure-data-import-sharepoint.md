@@ -2,7 +2,7 @@
 title: Konfigurowanie importu danych z programu SharePoint
 description: W tym temacie wyjaśniono, jak przeprowadzić import danych z programu Microsoft SharePoint.
 author: NickSelin
-ms.date: 11/19/2020
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 6cd717c0c599d68574a5a064761c8d6777418515
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 9ac328e660c7a8a3b4a4f34a650062a0fa974771
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675352"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074773"
 ---
 # <a name="configure-data-import-from-sharepoint"></a>Konfigurowanie importu danych z programu SharePoint
 
@@ -192,11 +192,11 @@ Można również otworzyć stronę **stanów plików dla źródeł**, wybierają
 
 ## <a name=""></a><a name="limitations">Ograniczenia</a>
 
-Struktura modułu ER nie oferuje możliwości inicjowania nowego zadania wsadowego, które wykona mapowanie modelu w trybie nienadzorowanym w celu zaimportowania danych. Chcąc to zrobić, trzeba opracować nową logikę umożliwiającą wywoływanie skonfigurowanego mapowania modelu ER z interfejsu użytkownika aplikacji w celu importowania danych z przychodzących plików. W związku z tym wymagane są pewne prace technologiczne. 
+W wersjach Dynamics 365 Finance wcześniejszych niż 10.0.25, interfejs użytkownika (UI)w strukturze modułu ER nie oferuje możliwości inicjowania nowego zadania wsadowego, które wykona mapowanie modelu w trybie nienadzorowanym w celu zaimportowania danych w trybie nienadzorowanym. Zamiast tego trzeba opracować nową logikę umożliwiającą wywoływanie skonfigurowanego mapowania modelu ER z interfejsu użytkownika aplikacji w celu importowania danych z przychodzących plików. Aby rozwinąć tę logikę, potrzebna jest pewna praca inżynierska. 
 
-Aby dowiedzieć się więcej o odpowiednim interfejsie API modułu ER, zobacz sekcję [Kod źródłowy uruchamiania mapowania formatu w celu importowania danych](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import) w temacie [Zmiany w interfejsie API struktury ER w aktualizacji Application update 7.3](er-apis-app73.md).
+Aby dowiedzieć się więcej o odpowiednim interfejsie API modułu ER, zobacz sekcję [Kod źródłowy uruchamiania mapowania formatu w celu importowania danych](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import) w temacie [Zmiany w interfejsie API struktury ER w aktualizacji Application update 7.3](er-apis-app73.md). Przejrzyj kod w klasie `BankImport_RU` modelu `Application Suite`, aby zobaczyć, jak można zaimplementować niestandardową logikę. Klasa `BankImport_RU` rozszerza klasę `RunBaseBatch`. W szczególności przejrzyj metodę `runER()`, w której obiekt `ERIModelMappingDestinationRun` jest tworzony jako moduł uruchamiający mapowania modelu ER.
 
-Przejrzyj kod w klasie `BankImport_RU` modelu `Application Suite`, aby zobaczyć, jak można zaimplementować niestandardową logikę. Ta klasa rozszerza klasę `RunBaseBatch`. W szczególności przejrzyj metodę `runER()`, w której obiekt `ERIModelMappingDestinationRun` jest tworzony jako moduł uruchamiający mapowania modelu ER.
+W wersjach Finance 10.0.25 i późniejszych struktura UI modułu ER nie oferuje możliwości inicjowania nowego zadania wsadowego, które wykona mapowanie modelu w trybie nienadzorowanym w celu zaimportowania danych w trybie nienadzorowanym. Aby uzyskać więcej informacji o tym procesie, zobacz temat [Importowanie danych w trybie wsadowym z ręcznie wybranych plików](er-configure-data-import-batch.md).
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
@@ -205,6 +205,8 @@ Przejrzyj kod w klasie `BankImport_RU` modelu `Application Suite`, aby zobaczyć
 [Zmiany w interfejsie API struktury ER w aktualizacji Application update 7.3](er-apis-app73.md)
 
 [Zmiany w interfejsie API struktury ER w aktualizacji Application update 10.0.23](er-apis-app10-0-23.md)
+
+[Zmiany w interfejsie API struktury ER w aktualizacji Application update 10.0.25](er-apis-app10-0-25.md)
 
 
 

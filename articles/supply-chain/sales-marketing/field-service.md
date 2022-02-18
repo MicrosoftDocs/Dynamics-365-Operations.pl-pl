@@ -1,28 +1,32 @@
 ---
-# required metadata
 title: Omówienie integracji z Microsoft Dynamics 365 Field Service
 description: Ten temat zawiera omówienie integracji z programem Microsoft Dynamics 365 Field Service.
 author: Henrikan
 ms.date: 07/25/2019
 ms.topic: overview
-ms.prod: null
-ms.technology: null
-ms.search.form: null
-audience: 'Application User, IT Pro'
+ms.prod: ''
+ms.technology: ''
+ms.search.form: ''
+audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.assetid: null
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: null
+ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
+ms.openlocfilehash: 9428308211d51e7de8c61fb9aadef6ce1fd9886f
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062682"
 ---
-
 # <a name="integration-with-microsoft-dynamics-365-field-service-overview"></a>Omówienie integracji z Microsoft Dynamics 365 Field Service
 
 [!include[banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Synchronizacja procesów biznesowych między rozwiązaniami Dynamics 365 Supply Chain Management i Dynamics 365 Field Service jest włączona dzięki Supply Chain Management. Scenariusze integracji konfiguruje się przy użyciu rozszerzalnych szablonów integratora danych oraz usługi Microsoft Dataverse, co umożliwia synchronizowanie procesów biznesowych.
 Można używać standardowych szablonów do tworzenia niestandardowych projektów integracji, gdzie dodatkowe kolumny standardowe i niestandardowe, a także tabele, mogą być mapowane w celu skorygowania integracji i spełnienia określonych wymagań biznesowych. 

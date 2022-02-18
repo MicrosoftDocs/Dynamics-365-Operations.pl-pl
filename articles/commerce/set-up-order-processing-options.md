@@ -2,7 +2,7 @@
 title: Konfigurowanie kanałów biura obsługi
 description: Ten temat zawiera informacje dotyczące sposobu przetwarzania zamówień dla biur obsługi przy użyciu modułu Dynamics 365 Commerce.
 author: josaw1
-ms.date: 01/06/2020
+ms.date: 02/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5f9afd1b67d6b164facc4dd15a8680866fe8c5b4e4b491d969cda6554eebb1de
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 64669c5bf71a4f1673f5ad2c46db7d3a2eaf2a97
+ms.sourcegitcommit: 39f1455215e0363cd1449bbc6bdff489097f9ded
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750655"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8092439"
 ---
 # <a name="set-up-call-center-channels"></a>Konfigurowanie kanałów biura obsługi
 
@@ -56,6 +56,9 @@ Jeśli ustawienie **Włącz kończenie zamówienia** jest włączone dla kanału
 Ponadto jeśli jest włączone ustawienie **Włącz kończenie zamówienia**, to gdy użytkownicy tworzą zamówienia sprzedaży w trybie wprowadzania pozycji w wierszu, w głównym nagłówku zamówienia sprzedaży będzie dostępne pole **Źródło**. Pole **Źródło** zawiera [kod źródłowy katalogu](/dynamics365/unified-operations/retail/call-center-catalogs) w scenariuszach sprzedaży w marketingu bezpośrednim. Ten kod może następnie decydować o cenach specjalnych i promocjach.
 
 Nawet jeśli ustawienie **Włącz kończenie zamówienia** jest wyłączone, użytkownicy nadal mogą zastosować kod źródłowy do zamówienia sprzedaży. Jednak najpierw muszą otworzyć szczegóły nagłówka zamówienia sprzedaży, aby uzyskać dostęp do pola **Źródło**. Innymi słowy wymagane są pewne dodatkowe kliknięcia. Takie samo zachowanie dotyczy funkcji takich jak finalizowanie wysyłki i zamówienia przyspieszone. Funkcje te są dostępne dla wszystkich zamówień tworzonych w biurze obsługi. Jednak gdy jest włączone ustawienie **Włącz kończenie zamówienia**, użytkownicy widzą konfigurację tych funkcji w nagłówku sprzedaży podczas pracy w widoku wprowadzania wierszy. Nie muszą przechodzić do szczegółów nagłówka zamówienia sprzedaży, aby znaleźć odpowiednie ustawienia i pola.
+
+> [!NOTE]
+> Kiedy funkcja **Płatności Commerce za zamówienia wielokanałowe** jest włączona, przycisk **Włącz realizację zamówienia** w centrum obsługi będzie ukryty w centrali na skróconej karcie **Ogólne** Twojego kanału w **Retail i Commerce \> Kanały \> Centra obsługi**.
 
 ### <a name="enable-direct-selling"></a>Włącz sprzedaż bezpośrednią
 

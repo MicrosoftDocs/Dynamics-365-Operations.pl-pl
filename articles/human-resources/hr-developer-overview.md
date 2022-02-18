@@ -1,27 +1,34 @@
 ---
-# required metadata
 title: Omówienie programowania
 description: Ten przewodnik dewelopera zawiera informacje o interfejsie API i polach niestandardowych. Zawiera również informacje dotyczące integrowania z innymi aplikacjami.
 author: andreabichsel
 ms.date: 02/03/2020
 ms.topic: overview
-ms.prod: null
-ms.technology: null
-ms.search.form: null
+ms.prod: ''
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.search.scope: Human Resources
-ms.assetid: null
+ms.assetid: ''
 ms.search.region: Global
 ms.author: anbichse
-ms.search.validFrom: '2020-02-03'
+ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
+ms.openlocfilehash: 78fc1afc596ca5a847d15a0da2db841aa303bad7
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066807"
 ---
-
 # <a name="development-overview"></a>Omówienie programowania
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Ten przewodnik dewelopera zawiera informacje o interfejsie API i polach niestandardowych. Zawiera również informacje dotyczące integrowania z innymi aplikacjami.
 

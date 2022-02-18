@@ -1,6 +1,6 @@
 ---
 title: Zintegrowane dane główne odbiorcy
-description: W tym temacie opisano integrację danych odbiorcy między Finance and Operations i Dataverse.
+description: W tym temacie opisano integrację danych klienta między programami Finanse i Działania i Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 48070628aafd7daac65327a484c87dc01ffb3954
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 41e4b6c192b6125a144e4d5ef952ba0975821d44
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781697"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063296"
 ---
 # <a name="integrated-customer-master"></a>Zintegrowane dane główne odbiorcy
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Dane klientów mogą być przekazywane w więcej niż jednej aplikacji Dynamics 365. Na przykład wiersz odbiorcy może pochodzić z operacji sprzedaży w Dynamics 365 Sales (aplikacji angażującej klienta) lub wiersz ten może pochodzić z działania handlu detalicznego w Dynamics 365 Commerce (aplikacji Finance and Operations). Niezależnie od tego, gdzie znajdują się dane dotyczące klientów, są one integrowane w tle. Zintegrowany dane główne odbiorcy zapewniają elastyczność danych dotyczących klientów w dowolnej aplikacji Dynamics 365 i udostępniają obszerny widok klienta w ramach pakietu aplikacji Dynamics 365.
+
+Dane klientów mogą być przekazywane w więcej niż jednej aplikacji Dynamics 365. Na przykład wiersz odbiorcy może pochodzić z operacji sprzedaży w Dynamics 365 Sales (aplikacji angażującej klienta) lub wiersz ten może pochodzić z działania handlu detalicznego w Dynamics 365 Commerce (aplikacji Finanse i Działania). Niezależnie od tego, gdzie znajdują się dane dotyczące klientów, są one integrowane w tle. Zintegrowany dane główne odbiorcy zapewniają elastyczność danych dotyczących klientów w dowolnej aplikacji Dynamics 365 i udostępniają obszerny widok klienta w ramach pakietu aplikacji Dynamics 365.
 
 ## <a name="customer-data-flow"></a>Przepływ danych klienta
 
@@ -30,9 +30,9 @@ Dane klientów mogą być przekazywane w więcej niż jednej aplikacji Dynamics 
 
 ![Przepływ danych klienta.](media/dual-write-customer-data-flow.png)
 
-Klienci mogą być szeroko klasyfikowani według dwóch typów: klienci komercyjni/organizacyjni oraz konsumenci/użytkownicy końcowi. Te dwa typy klientów są przechowywane i przetwarzane w różny sposób w Finance and Operations i Dataverse.
+Klienci mogą być szeroko klasyfikowani według dwóch typów: klienci komercyjni/organizacyjni oraz konsumenci/użytkownicy końcowi. Te dwa typy klientów są przechowywane i przetwarzane w różny sposób w programach Finanse i Działania i Dataverse.
 
-W Finance and Operations zarówno klienci komercyjni/organizacyjni, jak i konsumenci/użytkownicy końcowi są ustawieni jako dane główne w jednej tabeli o nazwie **CustTable** (CustCustomerV3Entity) i są klasyfikowani na podstawie atrybutu **Typ**. (Jeśli **Typ** jest ustawiony na **Organizacja**, klient jest klientem komercyjnym/organizacyjnym, a jeśli **Typ** jest ustawiony na **Osoba**, klient jest konsumentem/użytkownikiem końcowym). Informacje o podstawowej osobie kontaktowej są obsługiwane przez tabelę SMMContactPersonEntity.
+W programie Finanse i Działania zarówno klienci komercyjni/organizacyjni, jak i konsumenci/użytkownicy końcowi są ustawieni jako dane główne w jednej tabeli o nazwie **CustTable** (CustCustomerV3Entity) i są klasyfikowani na podstawie atrybutu **Typ**. (Jeśli **Typ** jest ustawiony na **Organizacja**, klient jest klientem komercyjnym/organizacyjnym, a jeśli **Typ** jest ustawiony na **Osoba**, klient jest konsumentem/użytkownikiem końcowym). Informacje o podstawowej osobie kontaktowej są obsługiwane przez tabelę SMMContactPersonEntity.
 
 W programie Dataverse klienci komercyjnych/organizacyjnych są zapisywani jako dane główne w tabeli Konto i są identyfikowani jako klienci, gdy atrybut **RelationshipType** jest ustawiony na **Klient**. Zarówno konsumenci/użytkownicy końcowi, jak i osoby kontaktowe są reprezentowane przez tabelę Kontakt. Aby zapewnić wyraźne oddzielenie konsumenta/użytkownika końcowego i osoby kontaktowej, tabela **kontaktów** ma flagę logiczną o nazwie **Sellable**. Gdy **Sellable** ma wartość **True**, kontakt jest konsumentem/użytkownikiem końcowym, a oferty i zamówienia mogą być tworzone dla tego kontaktu. Gdy **Sellable** ma wartość **False**, kontakt jest tylko podstawową osobą kontaktowa klienta.
 
@@ -42,7 +42,7 @@ Gdy kontakt non-sellable uczestniczy w ofercie lub procesie zamówienia, flaga *
 
 Dane klienta obejmują wszystkie informacje o kliencie, takie jak grupa odbiorców, adresy, dane kontaktowe, profil płatności, profil faktury i stan lojalności. Kolekcja mapy tabeli działa razem podczas interakcji z danymi klienta, jak pokazano w poniższej tabeli.
 
-Aplikacje Finance and Operations | Aplikacje Customer Engagement         | opis
+Aplikacje Finanse i Działania | Aplikacje Customer Engagement         | opis
 ----------------------------|---------------------------------|------------
 [CDS Contacts wer. 2](mapping-reference.md#115) | kontakty | Ten szablon synchronizuje wszystkie podstawowe, pomocnicze i wyższe informacje kontaktowe dla odbiorców i dostawców.
 [Grupy odbiorców](mapping-reference.md#126) | msdyn_customergroups | Ten szablon powoduje zsynchronizowanie informacji o grupie klientów.

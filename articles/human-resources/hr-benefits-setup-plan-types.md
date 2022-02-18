@@ -1,24 +1,31 @@
 ---
-# required metadata
 title: Przegląd typu planu
 description: W programie Microsoft Dynamics 365 Human Resources typ planu to nadrzędna grupa konkretnych typów świadczeń.
 author: twheeloc
 ms.date: 08/24/2021
 ms.topic: overview
-ms.prod: null
-ms.technology: null
-ms.search.form: 'BenefitWorkspace, HcmBenefitSummaryPart'
+ms.prod: ''
+ms.technology: ''
+ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
 ms.search.scope: Human Resources
 ms.custom: 7521
-ms.assetid: null
+ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: '2020-02-03'
+ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
+ms.openlocfilehash: b247b3a044a073c2a4d2d9c2ab8507fa2ebe864c
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067561"
 ---
-
 # <a name="plan-type-overview"></a>Przegląd typu planu
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

@@ -1,28 +1,33 @@
 ---
-# required metadata
 title: Konfiguracja korzystania z modułu Finance Insights (wersja 10.0.20 i nowsze)
-description: 'W tym temacie wyjaśniono, jak skonfigurować system, aby korzystał z możliwości dostępnych w programie Finance Insights w wersji 10.0.20 i nowszych.'
+description: W tym temacie wyjaśniono, jak skonfigurować system, aby korzystał z możliwości dostępnych w programie Finance Insights w wersji 10.0.20 i nowszych.
 author: ShivamPandey-msft
 ms.date: 06/16/2021
 ms.topic: article
-ms.prod: null
-ms.technology: null
-ms.search.form: null
-ROBOTS: 'noindex,nofollow'
+ms.prod: ''
+ms.technology: ''
+ms.search.form: ''
+ROBOTS: noindex,nofollow
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
-ms.search.validFrom: '2021-06-03'
+ms.search.validFrom: 2021-06-03
 ms.dyn365.ops.version: AX 10.0.20
+ms.openlocfilehash: cea6258d3a99ba33e73acd2508ec7b6c11d15859
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061761"
 ---
 # <a name="configuration-for-finance-insights---version-10020-and-later"></a>Konfiguracja korzystania z modułu Finance Insights (wersja 10.0.20 i nowsze)
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Finance Insights łączy funkcje firmy Microsoft Dynamics 365 Finance z Dataverse, Azure i AI Builder w celu zapewnienia wydajnego narzędzia prognozowania dla organizacji. W tym temacie wyjaśniono, jak skonfigurować Dynamics 365 Finance w wersji 10.0.20, aby system korzystał z możliwości dostępnych w programie Finance Insights w wersji 10.0.20 i nowszych.
 

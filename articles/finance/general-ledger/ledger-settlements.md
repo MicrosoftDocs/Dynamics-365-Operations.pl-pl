@@ -2,76 +2,96 @@
 title: Rozliczenia księgi
 description: W tym temacie wyjaśniono, jak na stronie Rozliczenia księgi rozliczać transakcji księgi i wycofywać rozliczenia.
 author: kweekley
-ms.date: 09/28/2018
+ms.date: 01/31/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerTransSettlement
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: roschlom
+ms.author: kweekley
 ms.search.validFrom: 2018-11-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 6ba50321ea5e1cfb727f20bdb598f0c4e3236994
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: e98b012210338e7f18cb874eefbc8a023aa4428b
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7754003"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075331"
 ---
 # <a name="ledger-settlements"></a>Rozliczenia księgi
 
 [!include [banner](../includes/banner.md)]
 
-Funkcjonalność rozliczeń księgi pozwala uzgadniać transakcje debetowe i kredytowe w księdze głównej i następnie oznaczać je jako rozliczone. W ten sposób można uzyskać pewność, że powiązane transakcje zostały wzajemnie zbilansowane. Można również wycofywać rozliczenia, jeśli zostały dokonane przez pomyłkę.
+Rozliczenie księgi głównej to proces dopasowywania transakcji debetowych i kredytowych w księdze głównej. Rozliczenie kwot debetowych i kredytowych służy do uzgodnienia salda konta księgi z wyszczególnionymi transakcjami, które na to saldo się składają.
 
-## <a name="enable-advanced-ledger-settlements"></a>Włączanie funkcjonalności zaawansowanego rozliczania księgi
+Rozliczone transakcje mogą być wyłączone z zapytań i raportów. W ten sposób łatwiej jest analizować otwarte transakcje księgi, które składają się na saldo konta księgi.
 
-Na stronie zaawansowanych rozliczeń księgi znajdują się dodatkowe funkcje filtrowania i wybierania transakcji. Aby włączyć stronę zaawansowanych rozliczeń księgi, wykonaj następujące kroki.
+> [!IMPORTANT] 
+> Moduły Accounts payable (AP) i Accounts receivable (AR) również posiadają funkcję rozliczania faktur i płatności. Kiedy następuje rozliczenie w księgach pomocniczych AR i AP, odpowiadające im wpisy w księdze nie są automatycznie rozliczane.
 
-1. Wybierz kolejno opcje **Księga główna** \> **Ustawienia księgi** \> **Parametry księgi głównej**. 
-2. Na karcie **Rozliczenia księgi** ustaw opcję **Zaawansowane rozliczenie księgi** na **Tak**, aby włączyć funkcjonalność zaawansowanego rozliczania księgi. Strona z zaawansowanymi ustawieniami **Rozliczenia księgi** będzie używana po wybraniu opcji **Rozliczenia księgi** w oknie **Zadania okresowe**. 
-3. Musisz wprowadzić listę kont, które mają być używane to rozliczeń księgi dla każdego planu kont. Ta lista jest używana do filtrowania transakcji wyświetlanych na stronie **Rozliczenia księgi**. Na liście **Plan kont** wybierz plan kont, a następnie wybierz opcję **Nowy**, aby dodać nowe konta do listy.
+## <a name="ledger-settlement-features"></a>Cechy rozliczenia księgi
+W Microsoft Dynamics 365 Finance w wersji 10.0.21 opcja **Włącz zaawansowane rozliczanie księgi** została usunięta ze strony **Parametry księgi głównej**. Zaawansowane rozliczanie księgi głównej jest teraz zawsze włączone.
+W wersji finansów 10.0.25 wprowadzono funkcję **Świadomość między rozliczeniem księgi a zamknięciem na koniec roku**. Ta funkcja zmienia fundamentalną funkcjonalność zarówno rozliczenia księgi głównej, jak i zamknięcia rocznego księgi głównej. Zanim włączysz tę funkcję w przestrzeni roboczej **Zarządzanie funkcjami**, zobacz: [Świadomość między rozliczeniem księgi a zamknięciem roku](awareness-between-ledger-settlement-year-end-close.md).
 
-## <a name="settle-transactions-by-using-the-advanced-ledger-settlements-page"></a>Rozliczanie transakcji za pomocą strony zaawansowanych rozliczeń księgi
+## <a name="set-up-ledger-settlement"></a>Tworzenie rozliczenia księgi głównej
+Musisz wybrać konta główne, dla których chcesz przeprowadzić rozliczenie księgi. Istnieją dwa sposoby na wybranie tych głównych kont.
 
+1. Wybierz kolejno opcje **Księga główna** > **Ustawienia księgi** > **Parametry księgi głównej**.
+2. Na karcie **Rozliczenia księgi** wybierz wykresy kont, z których chcesz wybrać konta główne.
+3. Wybierz konta główne, dla których chcesz przeprowadzić rozliczenie księgi. Ponieważ plany kont są globalne, wszystkie firmy, do których przypisane są wybrane plany kont, będą miały te same konta główne wybrane do rozliczenia księgi.
+
+  — lub —
+
+1. Wybierz kolejno opcje **Księga główna** > **Zadania okresowe** > **Rozliczenia księgi**.
+2. Wybierz **Konta rozliczeniowe księgi**.
+3. W oknie dialogowym wybierz plan kont i konta główne, dla których chcesz przeprowadzić rozliczenie księgi. To okno dialogowe jest skrótem. Wszystkie konta główne, które dodasz tutaj, będą miały swoje odzwierciedlenie także na stronie **Parametry księgi głównej**.
+
+Możesz użyć tych samych podstawowych procedur, aby usunąć konta główne z rozliczenia księgi w dowolnym momencie. Usunięcie konta głównego nie ma wpływu na wcześniejsze rozliczenia księgi. Jednak konto główne i transakcje nie będą już widoczne na stronie **Rozliczenie konta**.
+
+## <a name="settle-transactions"></a><a name="settle-transactions"></a>Rozlicz transakcje
 W celu rozliczenia transakcji księgi wykonaj następujące czynności.
 
-1. Wybierz kolejno opcje **Księga główna** \> **Zadania okresowe** \> **Rozliczenia księgi**.
+1. Wybierz kolejno opcje **Księga główna** > **Zadania okresowe** > **Rozliczenia księgi**.
 2. Ustaw filtry w górnej części strony:
 
-    - Wybierz zakres dat lub kliknij opcję **Kod zakresu dat**, aby przedział został wypełniony automatycznie.
-    - W razie potrzeby zmień warstwę księgowania.
-    - Aby osobno wyświetlać konto księgowe i wymiary, wybierz zestaw wymiarów finansowych.
+    - Wybierz zakres dat. Alternatywnie wybierz kod zakresu dat, aby automatycznie uzupełnić zakres dat. Nie zalecamy wykonywania rozliczenia księgi dla transakcji, które przekraczają rok podatkowy.
+    - W razie potrzeby zmień warstwę delegowania. Nie możesz rozliczać transakcji, które znajdują się w różnych warstwach księgowania.
+    - Aby pokazać osobno konto główne i wymiary, wybierz zestaw wymiarów finansowych.
 
-3. Wybierz opcję **Wyświetl transakcje**, aby wyświetlić wszystkie transakcje zgodne z ustawionymi filtrami oraz z listą kont określonych podczas konfigurowania listy planu kont w poprzedniej sekcji. Jeśli zmodyfikujesz którykolwiek filtr lub zestaw wymiarów, należy ponownie kliknąć opcję **Wyświetl transakcje**.
-4. Wybierz jeden lub więcej wierszy, które chcesz objąć rozliczeniem. Wartość pola **Wybrana kwota** u góry strony zwiększy się lub zmniejszy o łączną kwotę w zaznaczonych wierszach.
+3. Wybierz opcję **Wyświetl transakcje**, aby wyświetlić wszystkie transakcje zgodne z ustawionymi filtrami oraz z listą kont określonych podczas konfigurowania listy planu kont w poprzedniej sekcji.
+
+    - Jeśli zmodyfikujesz którykolwiek filtr lub zestaw wymiarów, należy ponownie kliknąć opcję **Wyświetl transakcje**.
+    - Aby przefiltrować transakcje do pojedynczego konta głównego, użyj filtru w polu **Konto księgowe**. Nie zalecamy wykonywania rozliczenia księgi głównej dla transakcji, które są księgowane na różnych kontach głównych.
+
+4. Wybierz wiersze do rozliczenia. Wartość w polu **Wybrana kwota** na górze strony zwiększa się lub zmniejsza, aby odzwierciedlić całkowitą kwotę w wybranych liniach.
 5. Po zakończeniu wybierania transakcji wybierz opcję **Oznacz wybrane**. Dla każdej wybranej transakcji w kolumnie **Oznaczone** pojawi się znacznik wyboru. Ponadto wartość pola **Oznaczona kwota** nad siatką zwiększy się lub zmniejszy o łączną kwotę w oznaczonych wierszach.
-6. Gdy pole **Oznaczona kwota** ma wartość **0** (zero), wybierz opcję **Rozlicz oznaczone transakcje**. Stan oznaczonych transakcji zostanie zaktualizowany na **Rozliczone**.
+6. Gdy wartość pola **Oznaczona kwota** ma wartość **0** (zero), wybierz opcję **Rozlicz oznaczone transakcje**. Stan oznaczonych transakcji zostanie zaktualizowany na **Rozliczone**.
+
+    > [!IMPORTANT]
+    > Wszystkie transakcje, które zaznaczyłeś do rozliczenia dla aktywnej osoby prawnej, zostaną rozliczone, nawet jeśli nie są aktualnie widoczne na stronie rozliczenia księgi, ponieważ zastosowałeś filtr.
 
 ## <a name="make-transactions-easier-to-find"></a>Ułatwienie znajdowania transakcji
+Strona **Rozliczenia księgi** zawiera funkcje, które ułatwiają zobaczenie transakcji wymaganych do rozliczenia.
 
-Strona **Rozliczenia księgi** zawiera funkcje, które ułatwiają zobaczenie transakcji potrzebnych do rozliczenia.
-
-- Przycisk **Usuń oznaczenie wybranych** czyści pole **Oznaczone** we wszystkich zaznaczonych wierszach.
-- Filtr **Oznaczone** umożliwia filtrowanie transakcji na podstawie tego, czy ich pole **Oznaczone** jest zaznaczone, czy wyczyszczone.
-- Filtr **Stan** umożliwia filtrowanie transakcji w oparciu o to, czy ich stan to **Rozliczone**, czy **Nie rozliczono**.
-- Przycisk **Sortuj według kwoty bezwzględnej** pozwala sortować kwoty według wartości bezwzględnych, dzięki czemu można pogrupować pozycje debetowe i kredytowe mające te same kwoty.
+- Użyj filtra **Zaznaczone**, aby filtrować transakcje na podstawie tego, czy zaznaczone jest dla nich pole wyboru **Zaznaczone**.
+- Użyj filtru **Stan**, aby filtrować transakcje na podstawie ich stanu.
+- Wybierz opcję **Sortuj według kwoty bezwzględnej**, aby posortować kwoty według wartości bezwzględnej. W ten sposób możesz grupować obciążenia i uznania, które mają tę samą kwotę.
 
 ## <a name="reverse-a-settlement"></a>Wycofywanie rozliczenia
-
 Można cofnąć rozliczenie, która nastąpiło przez pomyłkę.
 
-1. Wykonaj kroki od 1 do 3 w sekcji „Rozliczanie transakcji za pomocą strony zaawansowanych rozliczeń księgi”, aby wyświetlić żądane transakcje.
+1. Wykonaj kroki od 1 do 3 w sekcji [Rozlicz transakcje](#settle-transactions), aby wyświetlić odpowiednie transakcje.
 2. W filtrze **Stan** wybierz wartość **Rozliczone**.
-3. Wybierz jeden lub więcej wierszy, które chcesz objąć wycofaniem. Wartość pola **Wybrana kwota** u góry strony zwiększy się lub zmniejszy o łączną kwotę w zaznaczonych wierszach.
-4. Po zakończeniu wybierania transakcji wybierz opcję **Oznacz wybrane**. Dla każdej wybranej transakcji w kolumnie **Oznaczone** pojawi się znacznik wyboru. Ponadto wartość pola **Oznaczona kwota** u góry strony zwiększy się lub zmniejszy o łączną kwotę w oznaczonych wierszach.
-5. Gdy pole **Oznaczona kwota** ma wartość **0** (zero), wybierz opcję **Wycofaj oznaczone transakcje**. Stan oznaczonych transakcji zostanie zaktualizowany na **Nie rozliczono**.
+3. Wybierz linie do odwrócenia.
+4. Wybierz **Odwróć zaznaczone transakcje**. Stan wszystkich transakcji o tym samym identyfikatorze rozliczenia zostanie zaktualizowany na **Nierozliczone**.
 
-## <a name="update-the-list-of-accounts-that-are-included-in-the-list-of-transactions"></a>Aktualizowanie listy kont uwzględnionych na liście transakcji
+    > [!IMPORTANT]
+    > Wszystkie transakcje, które mają ten sam identyfikator rozliczenia, zostaną odwrócone, nawet jeśli nie są oznaczone. Na przykład cztery wiersze zostały oznaczone i rozliczone. Wszystkie cztery wiersze mają ten sam identyfikator rozliczenia. Jeśli oznaczysz jeden z czterech wierszy i wybierzesz opcję **Odwróć zaznaczone transakcje**, wszystkie cztery wiersze zostaną wycofane.
 
-Wybierz opcję **Konta rozliczenia księgi**, aby otworzyć okno dialogowe służące do edytowania kont uwzględnionych na liście transakcji. Kliknij przycisk **Nowy**, aby dodać nowe konta do listy. Ta lista jest używana do filtrowania transakcji wyświetlanych na stronie **Rozliczenia księgi**.
+
+
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,23 +1,27 @@
 ---
-# required metadata
-title: 'Scalanie infrastruktury Dynamics 365 Human Resources — wydanie 10.0.25, aktualizacja'
-description: 'Ten temat zawiera informacje dotyczące wydania rozwiązania Microsoft Dynamics 365 Human Resources 10.0.25, które dostarcza pierwszą grupy możliwości w scaleniu infrastruktury.'
+title: Scalanie infrastruktury Dynamics 365 Human Resources — wydanie 10.0.25, aktualizacja
+description: Ten temat zawiera informacje dotyczące wydania rozwiązania Microsoft Dynamics 365 Human Resources 10.0.25, które dostarcza pierwszą grupy możliwości w scaleniu infrastruktury.
 author: twheeloc
 ms.date: 01/19/2022
 ms.topic: article
-ms.prod: null
-ms.technology: null
-ms.search.form: null
+ms.prod: ''
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.search.scope: Human Resources
 ms.custom: 7521
-ms.assetid: null
+ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: '2020-02-27'
+ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
+ms.openlocfilehash: a80bedd0224f1e31dfec4e9f4c39ad1ed75d7f2f
+ms.sourcegitcommit: 948978183a1da949e35585b28b8e85a63b6c12b1
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "8024574"
 ---
-
 # <a name="dynamics-365-human-resources-infrastructure-merge---release-10025-update"></a>Scalanie infrastruktury Dynamics 365 Human Resources — wydanie 10.0.25, aktualizacja
 
 Zwolnienie z wersji 10.0.25 wprowadza pierwszą czynnościę możliwości w scaleniu infrastruktury. Podczas scalania infrastruktury Microsoft Dynamics 365 Human Resources zostanie scalona z infrastrukturą w rozwiązaniach Finanse i Operacje. Jednak licencja na oprogramowanie będzie kontynuowana jako niezależna aplikacja, podobnie jak Dynamics 365 Finance i Dynamics 365 Supply Chain Management. Aby uzyskać więcej informacji dotyczących scalania infrastruktury, zobacz często zadawane pytania dotyczące [scalania infrastruktury Dynamics 365 Human Resources](../human-resources/hr-infrastructure-merge-faq.md).
@@ -49,7 +53,7 @@ Scalenie zapewni spójność użytkownikom zasobów ludzkich na następujące sp
     | Drukuj oceny wydajności | Przeglądy wydajności można drukować w formacie PDF. | Ogólnie dostępne | 
     | Łącza niestandardowe w **samoobsłudze menedżera** | Możesz utworzyć łącza niestandardowe, które będą widoczne w sekcji **Łącza pokrewne** **samoobsługi menedżera**. | Ogólnie dostępne | 
     | Widok wynagrodzeń między firmami | Użytkownicy mogą wyświetlać plany wynagrodzeń w **samoobsługi menedżera** we wszystkich firmach bez konieczności przełączania firm. | Ogólnie dostępne | 
-    | Skonfiguruj wiele poziomów wynagrodzenia według stanowiska\*&dagger; | Zadania obsługują teraz wiele poziomów wynagrodzenia. | Ogólnie dostępne | 
+    | Skonfiguruj wiele poziomów wynagrodzenia według stanowiska\*&dagger; | Zadania obsługują teraz wiele poziomów wynagrodzenia. | Wersja zapoznawcza | 
     | Zarządzanie zadaniami\* | Można tworzyć listy kontrolne i zadania dla procesu dołączania, odejmowania i przejścia. | Wersja zapoznawcza | 
     | Usprawniony wpis pracownika etatowego | Ta funkcja udostępnia zaktualizowane funkcje użytkownika na istniejącej **stronie Pracownik**. | Wersja zapoznawcza | 
     | Ulepszenia środowiska użytkownika zasobów ludzkich | Zobacz tabelę w następnej sekcji.  | Wersja zapoznawcza | 

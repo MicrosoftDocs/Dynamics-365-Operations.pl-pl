@@ -9,25 +9,25 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 241277ada768cc6497035cc377d0e158646a42d6
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 030e565ffff561f6c1efbdd0de9928f70c7c46c0
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781121"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063065"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Rozwiązywanie problemów podczas synchronizacji początkowej
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Ten temat zawiera informacje dotyczące rozwiązywania problemów dotyczących integracji o podwójnym zapisie między aplikacjami Finance and Operations i Dataverse. A dokładniej, ten temat zawiera informacje ułatwiające rozwiązywanie problemów, które mogą wystąpić podczas wstępnej synchronizacji.
+
+Ten temat zawiera informacje dotyczące rozwiązywania problemów dotyczących integracji podwójnego zapisu między aplikacjami Finanse i Działania i Dataverse. A dokładniej, ten temat zawiera informacje ułatwiające rozwiązywanie problemów, które mogą wystąpić podczas wstępnej synchronizacji.
 
 > [!IMPORTANT]
 > Niektóre problemy, których ten problem może wymagać od roli administratora systemu lub poświadczeń administratora dzierżawcy Microsoft Azure Active Directory (Azure AD). W sekcji dotyczącej każdego zagadnienia wyjaśniono, czy określona rola lub poświadczenia są wymagane.
 
-## <a name="check-for-initial-synchronization-errors-in-a-finance-and-operations-app"></a>Sprawdź, czy w aplikacji Finance and Operations nie występują błędy synchronizacji początkowej
+## <a name="check-for-initial-synchronization-errors-in-a-finance-and-operations-app"></a>Sprawdzanie błędów pierwotnej synchronizacji w programie Finanse i Działania
 
 Po włączeniu szablonów mapowania stan map powinien być **Uruchomione**. Jeśli stan jest **Nie uruchomione**, wystąpiły błędy podczas wstępnej synchronizacji. Aby wyświetlić błędy, wybierz kartę **Szczegóły wstępnej synchronizacji** na stronie **Podwójny zapis**.
 
@@ -63,7 +63,7 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
 
 Jeśli ten błąd występuje zawsze i nie można ukończyć wstępnej synchronizacji, należy wykonać poniższe kroki w celu rozwiązania problemu.
 
-1. Zaloguj się do maszyny wirtualnej (VM) aplikacji Finance and Operations.
+1. Zaloguj się do maszyny wirtualnej (VM) aplikacji Finanse i Działania.
 2. Otwórz Microsoft Management Console.
 3. Upewnij się, że w okienku **Usługi** jest uruchomiona usługa struktury eksportu danych Microsoft Dynamics 365. Uruchom ją ponownie, jeśli została zatrzymana, ponieważ wymaga tego synchronizacja wstępna.
 
@@ -75,7 +75,7 @@ Podczas wstępnej synchronizacji może zostać wyświetlony następujący komuni
 
 Aby naprawić problem, należy wykonać następujące czynności.
 
-1. Zaloguj się do aplikacji Finance and Operations.
+1. Zaloguj się do aplikacji Finanse i Działania.
 2. Na stronie **aplikacje Azure Active Directory** usuń klienta **DtAppID**, a następnie dodaj go ponownie.
 
 ![Klient DtAppID na liście aplikacji Azure AD.](media/aad_applications.png)
@@ -102,9 +102,9 @@ Oto kilka przykładów:
 
 Jeśli istnieją wiersze w tabeli dostawcy mają wartości w kolumnach **PrimaryContactPersonId** i **InvoiceVendorAccountNumber**, należy wykonać kroki opisane w poniższej sekcji w celu pomyślnego zakończenia synchronizacji początkowej.
 
-1. W aplikacji Finance and Operations usuń kolumny **PrimaryContactPersonId** i **InvoiceVendorAccountNumber** z mapowania i zapisz mapowanie.
+1. W aplikacji Finanse i Działania usuń kolumny **PrimaryContactPersonId** i **InvoiceVendorAccountNumber** z mapowania i zapisz mapowanie.
 
-    1. Przejdź na stronę mapowanie podwójnego dostępu dla **Dostawcy V2 (msdyn\_vendors)** i wybierz kartę **Mapowanie tabeli**. W lewym filtrze wybierz pozycję **Finance and Operations apps.Vendors V2**. W prawym filtrze wybierz opcję **Sales.Vendor**.
+    1. Przejdź na stronę mapowanie podwójnego dostępu dla **Dostawcy V2 (msdyn\_vendors)** i wybierz kartę **Mapowanie tabeli**. W lewym filtrze wybierz pozycję **Aplikacje Finanse i Działania.Dostawcy V2**. W prawym filtrze wybierz opcję **Sales.Vendor**.
     2. Wyszukaj **primarycontactperson**, aby odnaleźć kolumnę źródłową **PrimaryContactPersonId**.
     3. Wybierz opcję **Akcje**, a następnie wybierz opcję **Usuń**.
 
@@ -149,9 +149,9 @@ Oto kilka przykładów:
 
 Jeśli istnieją wiersze w tabeli klienta mają wartości w kolumnach **ContactPersonID** i **InvoiceAccount**, należy wykonać kroki opisane w poniższej sekcji w celu pomyślnego zakończenia synchronizacji początkowej. Z tego podejścia można skorzystać w przypadku dowolnych gotowych tabel, takich jak **Konta** i **Kontakty**.
 
-1. W aplikacji Finance and Operations usuń kolumny **ContactPersonID** i **InvoiceAccount** z mapowania **Klienci V3 (konta)** i nstępnie zapisz mapowanie.
+1. W aplikacji Finanse i Działania usuń kolumny **ContactPersonID** i **InvoiceAccount** z mapowania **Klienci V3 (konta)** i następnie zapisz mapowanie.
 
-    1. Na stronie mapowanie podwójnego dostępu dla **Klienci V3 (konta)** i wybierz kartę **Mapowanie tabeli** . W lewym filtrze wybierz pozycję **Finance and Operations app.Customers V3**. W prawym filtrze wybierz **Dataverse.Account**.
+    1. Na stronie mapowanie podwójnego dostępu dla **Klienci V3 (konta)** i wybierz kartę **Mapowanie tabeli**. W lewym filtrze wybierz pozycję **Aplikacje Finanse i Działania.Klienci V3**. W prawym filtrze wybierz **Dataverse.Account**.
     2. Wyszukaj **contactperson**, aby odnaleźć kolumnę źródłową **ContactPersonID**.
     3. Wybierz opcję **Akcje**, a następnie wybierz opcję **Usuń**.
 
@@ -182,16 +182,16 @@ Jeśli istnieją wiersze w tabeli klienta mają wartości w kolumnach **ContactP
     > Istnieją dwa mapy o tej samej nazwie. Pamiętaj, aby wybrać mapę, która ma następujący opis na karcie **Szczegóły**: **Szablon 2Dual-write do synchronizacji między kontaktami dostawcy FO.CDS V2 i CDS. Wymaga nowego pakietu \[Dynamics365SupplyChainExtended\].**
 
 5. Dodaj kolumny **InvoiceAccount** i **ContactPersonId** z powrotem do mapowania **Klienci V3 (Konta)** i nastepnie zapisz mapowanie. Teraz zarówno kolumna **InvoiceAccount**, jak i kolumna **ContactPersonId** są ponownie częścią trybu synchronizacji na żywo. W następnym kroku wykonasz synchronizację początkową dla tych kolumn.
-6. Uruchom ponownie synchronizację początkową dla mapowania **Klienci V3 (Konta)**. Ponieważ śledzenie zmian jest wyłączone, dae dla **InvoiceAccount** i **ContactPersonId** będą zsynchronizowane z aplikacji Finance and Operations do Dataverse.
-7. Aby synchronizować dane dla **InvoiceAccount** i **ContactPersonId** z Dataverse do aplikacji Finance and Operations, należy skorzystać z projektu integracji danych.
+6. Uruchom ponownie synchronizację początkową dla mapowania **Klienci V3 (Konta)**. Ponieważ śledzenie zmian jest wyłączone, dane dla **InvoiceAccount** i **ContactPersonId** będą zsynchronizowane z aplikacji Finanse i Działania do Dataverse.
+7. Aby synchronizować dane dla **InvoiceAccount** i **ContactPersonId** z Dataverse do aplikacji Finanse i Działania, należy skorzystać z projektu integracji danych.
 
-    1. W Power Apps utwórz projekt integracji danych między tabelami **Sales.Account** i **Finance and Operations apps.Customers V3**. Kierunek danych musi być z Dataverse do aplikacji Finance and Operations. Ponieważ **InvoiceAccount** jest nowym atrybutem w podwójnym zapisywaniu, można pominąć synchronizację początkową dla niego. Aby uzyskać więcej informacji, zobacz [Integrowanie danych z Dataverse](/power-platform/admin/data-integrator).
+    1. W Power Apps utwórz projekt integracji danych między tabelami **Sales.Account** i **Finanse i Działania apps.Customers V3**. Dane muszą być kierowane z Dataverse do aplikacji Finanse i Działania. Ponieważ **InvoiceAccount** jest nowym atrybutem w podwójnym zapisywaniu, można pominąć synchronizację początkową dla niego. Aby uzyskać więcej informacji, zobacz [Integrowanie danych z Dataverse](/power-platform/admin/data-integrator).
 
         Na poniższej ilustracji przedstawiono projekt, który aktualizuje **CustomerAccount** i **ContactPersonId**.
 
         ![Projekt integracji danych w celu zaktualizowania CustomerAccount i ContactPersonId.](media/cust_selfref6.png)
 
-    2. Dodaj kryteria firmy w polu filtruj po stronie Dataverse, aby w aplikacji Finance and Operations została zaktualizowana tylko liczba wierszy spełniających kryteria filtru. Aby dodać filtr, kliknij przycisk filtru. W oknie dialogowym **Edytuj kwerendę** można dodać kwerendę filtru, taką jak **\_msdyn\_company\_value eq '\<guid\>'**.
+    2. Dodaj kryteria firmy w polu filtruj po stronie Dataverse, aby w aplikacji Finanse i Działania została zaktualizowana tylko liczba wierszy spełniających kryteria filtru. Aby dodać filtr, kliknij przycisk filtru. W oknie dialogowym **Edytuj kwerendę** można dodać kwerendę filtru, taką jak **\_msdyn\_company\_value eq '\<guid\>'**.
 
         > [UWAGA] Jeśli przycisk filtru nie istnieje, utwórz bilet pomocy technicznej, aby poprosić zespół integracji danych o umożliwienie obsługi filtru w dzierżawie.
 
@@ -201,7 +201,7 @@ Jeśli istnieją wiersze w tabeli klienta mają wartości w kolumnach **ContactP
 
     Początkowa synchronizacja wierszy jest teraz zakończona.
 
-8. W aplikacji Finance and Operations wyłącz śledzenie zmian dla tabeli **Klienci (wersja 3)**.
+8. W aplikacji Finanse i Działania wyłącz śledzenie zmian dla tabeli **Klienci (wersja 3)**.
 
 ## <a name="initial-sync-failures-on-maps-with-more-than-10-lookup-fields"></a>Błędy początkowej synchronizacji na mapach z ponad 10 polami wyszukiwania
 
@@ -227,9 +227,9 @@ Podczas próby uruchomienia początkowego synchronizacji adresów pocztowych str
 
 *Nie znaleziono numeru strony w Dataverse.*
 
-W **DirPartyCDSEntity** w aplikacjach Finance and Operations jest ustawiony zakres, który filtruje strony typu **Osoba** i **Organizacja**. W związku z tym początkowa synchronizacja mapowania **Jednostki CDS — msdyn_parties** nie będzie synchronizowała jednostek innych typów, w tym **Firma** i **Jednostka operacyjna**. Podczas początkowej synchronizacji **Adresy pocztowe strony CDS (msdyn_partypostaladdresses)** lub **Kontakty V3 strony (msdyn_partyelectronicaddresses)** może zostać wyświetlony błąd.
+W **DirPartyCDSEntity** w aplikacjach Finanse i Działania jest ustawiony zakres, który filtruje strony typu **Osoba** i **Organizacja**. W związku z tym początkowa synchronizacja mapowania **Jednostki CDS — msdyn_parties** nie będzie synchronizowała jednostek innych typów, w tym **Firma** i **Jednostka operacyjna**. Podczas początkowej synchronizacji **Adresy pocztowe strony CDS (msdyn_partypostaladdresses)** lub **Kontakty V3 strony (msdyn_partyelectronicaddresses)** może zostać wyświetlony błąd.
 
-Pracujemy nad poprawką w celu usunięcia zakresu typów strony w jednostce Finance and Operations, aby strony wszystkich typów mogły być synchronizowane z Dataverse.
+Pracujemy nad poprawką w celu usunięcia zakresu typów strony w jednostce Finanse i Działania, aby strony wszystkich typów mogły być synchronizowane z Dataverse.
 
 ## <a name="are-there-any-performance-issues-while-running-initial-sync-for-customers-or-contacts-data"></a>Czy występują problemy z wydajnością podczas wykonywania wstępnej synchronizacji danych odbiorców lub kontaktów?
 

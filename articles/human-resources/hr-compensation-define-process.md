@@ -13,14 +13,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 883948c6e3f7b205d7e0f1f2b6adef1173616dc1
-ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
+ms.openlocfilehash: 188a87f580c274e073710601ef306139f723c797
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7431132"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071533"
 ---
 # <a name="define-compensation-process-and-calculate-results"></a>Definiowanie procesu związanego z wynagrodzeniem i obliczanie wyników
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -40,13 +43,13 @@ Procesy wynagrodzeń służą do określania nowych kwot wynagrodzeń i nagród 
     * Datą aktywacji transakcji jest dzień, od którego nowe stawki wynagrodzeń mają zacząć obowiązywać. Wiele firm stosuje kilka miesięcy przerwy między końcem cyklu a czasem, kiedy nowe stawki wynagrodzeń zaczynają obowiązywać. Dodatkowy czas jest używany do przetwarzania i przeglądania nowych wynagrodzeń.  
 8. W polu **Data aktywacji transakcji** wprowadź datę.
     * Data stałego punktu odniesienia jest używana w planach wynagrodzeń o zmiennej wysokości, które określają kwotę nagrody dla pracownika na podstawie jego stawki wynagrodzenia w tym momencie.  
-    * Data określenia stałego wynagrodzenia proporcjonalnie do zatrudnienia jest używana w planach stałych wynagrodzeń z regułą zatrudnienia Procent.  Pracownicy, którzy zostali zatrudnieni między rozpoczęciem cyklu a datą określenia stałego wynagrodzenia proporcjonalnie do zatrudnienia, otrzymają 100% obliczonego wzrostu wynagrodzenia zamiast proporcjonalnego procentu.  
+    * Data określenia stałego wynagrodzenia proporcjonalnie do zatrudnienia jest używana w planach stałych wynagrodzeń z regułą zatrudnienia **Procent**. Pracownicy, którzy zostali zatrudnieni między rozpoczęciem cyklu a datą określenia stałego wynagrodzenia proporcjonalnie do zatrudnienia, otrzymają 100% obliczonego wzrostu wynagrodzenia zamiast proporcjonalnego procentu.  
 9. W polu **Data określenia stałego wynagrodzenia proporcjonalnie do zatrudnienia** wprowadź datę.
     * Termin przeglądu to dzień, do którego wszystkie wyniki procesów powinny zostać przejrzane, tak aby można było je załadować do rekordu wynagrodzenia pracownika przed datą aktywacji transakcji. To pole służy wyłącznie do celów informacyjnych.  
 10. W polu **Termin przeglądu** wprowadź datę.
 11. Kliknij przycisk **Zapisz**.
 
-## <a name="setup-the-compensation-plans-and-actions-for-a-compensation-process"></a>Konfigurowanie planów i działań wynagrodzenia dla procesu wynagrodzenia
+## <a name="set-up-the-compensation-plans-and-actions-for-a-compensation-process"></a>Konfigurowanie planów i działań wynagrodzenia dla procesu wynagrodzenia
 1. Kliknij przycisk **Ustawienia**.
     * Strona **Ustawienia** służy do wybrania, które plany mają być przetwarzane w ramach tego procesu wynagrodzenia, a także które akcje mają zostać wykonane dla każdego planu.  
 2. W polu **Plan** wprowadź lub wybierz wartość.
@@ -56,7 +59,7 @@ Procesy wynagrodzeń służą do określania nowych kwot wynagrodzeń i nagród 
 6. Kliknij przycisk **Dodaj**.
 7. W polu **Akcja** wybierz akcję typu **Wartość**.
     * Akcje dotyczące wynagrodzeń mogą być „łączone” z sobą przy użyciu pola **Użyj poprzedniego wyniku**, aby wskazać, czy wybrana akcja powinna używać podstawowego wynagrodzenia pracowników czy też wyniku poprzedniej akcji jako punktu wyjścia dla obliczeń w tej akcji.  
-8. W polu Użyj poprzedniego wyniku zaznacz opcję **Tak**.
+8. W polu **Użyj poprzedniego wyniku** zaznacz opcję **Tak**.
 9. Kliknij przycisk **Dodaj**.
 10. W polu **Akcja** wybierz akcję typu **Ogólne**.
     * Różne typy akcji dotyczących wynagrodzeń włączają różne pola. Dla typu akcji Ogólne można określić procent podwyżki lub kwotę podwyżki.  
@@ -85,7 +88,7 @@ Procesy wynagrodzeń służą do określania nowych kwot wynagrodzeń i nagród 
 1. Kliknij opcję **Wyniki procesu**.
 2. Kliknij opcję **Wyniki pracownika**.
 3. Na liście znajdź i zaznacz odpowiedni rekord.
-4. Rozwiń sekcję Stałe wynagrodzenie.
+4. Rozwiń sekcję **Stałe wynagrodzenie**.
     * Rozwiń skrócone karty, aby wyświetlić wyniki procesu. Jeśli dla akcji dotyczącej wynagrodzenia zaznaczono opcję **Włącz rekomendacje**, pola **Rekomendacja** będą włączone dla tej akcji.  
 5. Na liście znajdź i zaznacz odpowiedni rekord.
     * Wyniki dla jednego pracownika można wyświetlić przez kliknięcie przycisku **Wyświetl wyniki**.  

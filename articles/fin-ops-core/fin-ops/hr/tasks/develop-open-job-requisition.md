@@ -1,23 +1,32 @@
---- 
-# required metadata 
+---
 title: Opracowywanie i otwieranie zapotrzebowania na stanowisko
 description: Projekty rekrutacji ułatwiają zarządzanie procesem rekrutacji.
 author: twheeloc
 ms.date: 01/10/2022
 ms.topic: business-process
-ms.prod: null
-ms.technology: null
-ms.search.form: 'HRMRecruitingTable, HcmWorkerLookUp, HcmJobLookup, HRMRecruitingMedia, HRMRecruitingJobAd'
+ms.prod: ''
+ms.technology: ''
+ms.search.form: HRMRecruitingTable, HcmWorkerLookUp, HcmJobLookup, HRMRecruitingMedia, HRMRecruitingJobAd
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: anbichse
-ms.search.validFrom: '2016-06-30'
+ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 4e3287fc824f2f7eb725b11c990a1c457d45439f
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075156"
 ---
 # <a name="develop-and-open-job-requisition"></a>Opracowywanie i otwieranie zapotrzebowania na stanowisko
 
 [!include [banner](../../includes/banner.md)]
+
+> [!IMPORTANT]
+> Funkcjonalność opisana w tym temacie jest obecnie dostępna dla klientów Human Resources na infrastrukturze Finance.  
+
 
 Projekty rekrutacji ułatwiają zarządzanie procesem rekrutacji. Dla każdego projektu rekrutacyjnego możesz ustawić informacje, takie jak stanowisko, dla którego rekrutacja jest wykonywana, nazwisko osoby rekrutującej, status projektu i dział, w którym praca będzie się znajdować. Po utworzeniu projektu rekrutacji można napisać ogłoszenie o pracę dla projektu, opublikować oferty na stronach w portalu **samoobsługi pracowniczej**, skojarzyć podania o pracę z projektem oraz śledzić działania w tym projekcie. Do stworzenia tej procedury wykorzystano dane z firmy demonstracyjnej **USMF**.
 

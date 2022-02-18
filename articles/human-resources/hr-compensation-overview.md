@@ -1,23 +1,30 @@
 ---
-# required metadata
 title: Plany wynagrodzeń
-description: 'W tym temacie opisano, jak używać zarządzania wynagrodzeniami do zarządzania i przetwarzania planów wynagrodzeń.'
+description: W tym temacie opisano, jak używać zarządzania wynagrodzeniami do zarządzania i przetwarzania planów wynagrodzeń.
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: overview
-ms.prod: null
-ms.technology: null
-ms.search.form: 'HcmCompensationLevel, HRCCompGrid, HRMCompFixedAction, HRMCompFixedBudget, HRMCompFixedPlanTable, HcmCompensationWorkspace'
+ms.prod: ''
+ms.technology: ''
+ms.search.form: HcmCompensationLevel, HRCCompGrid, HRMCompFixedAction, HRMCompFixedBudget, HRMCompFixedPlanTable, HcmCompensationWorkspace
 audience: Application User
 ms.search.scope: Human Resources
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: '2016-02-28'
-ms.dyn365.ops.version: 'AX 7.0.0, Human Resources'
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0, Human Resources
+ms.openlocfilehash: 7571f220780ca383f57338bb69505cc68a741877
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066907"
 ---
-
 # <a name="compensation-plans"></a>Plany wynagrodzeń
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

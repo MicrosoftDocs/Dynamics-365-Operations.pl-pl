@@ -9,15 +9,18 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2021-06-24
-ms.openlocfilehash: ceb0a60ccf3d1c989d8663e933faaa5e430d314695e20990c9086cd1b8325ff1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad980889247e0239ad743078cb013c1c5839f676
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773734"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070153"
 ---
 # <a name="configure-expenditure-reviewers"></a>Konfigurowanie osób sprawdzających wydatki
 [!include[banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Można skonfigurować dynamiczne osoby sprawdzające wydatki, aby kierować wydatki do przeglądu na podstawie użytkownika przypisanego do roli projektu lub wymiaru finansowego, w którym naliczany jest wydatek. Proces przepływu pracy korzysta z określonej roli projektu lub właściciela wymiaru finansowego przy ustalaniu celu marszruty rozchodu.
 
@@ -49,7 +52,7 @@ Wymiary finansowe są kontrolowane przez struktury kont w poszczególnych firmac
 
 ## <a name="example-1-expenditure-reviewers-based-on-organization-distributions"></a>Przykład 1: Weryfikatorzy wydatków na podstawie podziałów organizacji
 
-Pracujesz dla urządzeń Contoso, a Twoja organizacja ma sześć działów i 10 centrów kosztów. Po przesłaniu nowego zapotrzebowania na zakup zatwierdzenie musi pochodzić najpierw od kierownika działu, a następnie od kierownika centrum kosztów.
+Pracujesz dla Contoso Appliances, a Twoja organizacja ma sześć działów i 10 centrów kosztów. Po przesłaniu nowego zapotrzebowania na zakup zatwierdzenie musi pochodzić najpierw od kierownika działu, a następnie od kierownika centrum kosztów.
 
 W tym przykładzie należy skonfigurować dwóch osób *sprawdzających wydatki związane z zapotrzebowaniami zakupu*:
 

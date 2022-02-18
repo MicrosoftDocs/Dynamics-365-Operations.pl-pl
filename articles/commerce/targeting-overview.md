@@ -1,23 +1,27 @@
 ---
-# required metadata
-title: 'Określanie celu na urządzenia, rynek i lokalizację geograficzną'
-description: 'W tym temacie opisano sposób tworzenia, edytowania i zarządzania grupami odbiorców i obiektów docelowych w konstruktorze witryn Microsoft Dynamics 365 Commerce przy użyciu informacji o urządzeniach, rynku i geolokalizacji.'
+title: Określanie celu na urządzenia, rynek i lokalizację geograficzną
+description: W tym temacie opisano sposób tworzenia, edytowania i zarządzania grupami odbiorców i obiektów docelowych w konstruktorze witryn Microsoft Dynamics 365 Commerce przy użyciu informacji o urządzeniach, rynku i geolokalizacji.
 author: sushma-rao
-ms.date: 07/30/2021
+ms.date: 02/03/2022
 ms.topic: overview
-ms.prod: null
-ms.technology: null
+ms.prod: ''
+ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.custom: null
-ms.assetid: null
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: sushmar
-ms.search.validFrom: '2021-07-31'
+ms.search.validFrom: 2021-07-31
 ms.dyn365.ops.version: AX 10.0.21
+ms.openlocfilehash: 0c8ceb5e59c801e0d3dbc3a57e54c40fa8d967ac
+ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090701"
 ---
-
 # <a name="device-market-and-geolocation-targeting"></a>Określanie celu na urządzenia, rynek i lokalizację geograficzną
 
 [!include [banner](includes/banner.md)]
@@ -92,6 +96,18 @@ Aby edytować grupę odbiorców, wybierz hiperłącze na karcie **Odbiorcy**, a 
 
 > [!NOTE]
 > Odbiorcy są koncepcją na poziomie witryny w kreatorze witryn w Commerce. Możesz współużytkować tę samą grupę odbiorców w wielu celach.
+
+### <a name="rename-an-audience-in-site-builder"></a>Zmiana nazwy grupy odbiorców w kreatorze witryn
+
+Aby zmienić nazwę istniejącej grupy odbiorców w kreatorze witryn Commerce, wykonaj poniższe kroki.
+
+1. W okienku nawigacji po lewej stronie wybierz pozycję **Odbiorcy**.
+1. Wybierz nazwę segmentu odbiorców, którego nazwę chcesz zmienić.
+1. Wybierz pozycję **Edytuj**, aby rozpocząć edytowanie odbiorców.
+1. W okienku właściwości odbiorców wybierz symbol pióra znajdujący się obok nazwy odbiorcy.
+1. Edytuj nazwę odbiorcy stosownie do potrzeb.
+1. Zaznacz znacznik wyboru, aby potwierdzić zmianę nazwy.
+1. Wybierz opcję **Zakończ edycję**.
 
 ## <a name="targets"></a>Cele
 

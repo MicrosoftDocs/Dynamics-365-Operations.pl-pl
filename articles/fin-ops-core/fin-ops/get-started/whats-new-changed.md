@@ -1,6 +1,6 @@
 ---
-title: Nowości i zmiany w aplikacjach Finance and Operations — strona główna
-description: Ta strona wskazuje tematy, które mogą pomóc dowiedzieć się o nowych funkcjach w najnowszych aplikacjach Finance and Operations.
+title: Nowości i zmiany w aplikacjach Finanse i Działania — strona główna
+description: Ta strona wskazuje tematy, które mogą pomóc dowiedzieć się o nowych funkcjach w najnowszych wersjach aplikacji rozwiązania Finanse i Działania.
 author: josaw1
 ms.date: 02/14/2020
 ms.topic: article
@@ -17,30 +17,37 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 06f7e9b39b72a5e2cbbc06949dda7f16f2405250dd6c25b919260daca76e33bc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8348f935ddee557a5f47b550c24f78cf68e37db2
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759192"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075231"
 ---
-# <a name="whats-new-or-changed-in-finance-and-operations-apps-home-page"></a>Nowości i zmiany w aplikacjach Finance and Operations — strona główna
+# <a name="whats-new-or-changed-in-finance-and-operations-apps-home-page"></a>Nowości i zmiany w aplikacjach Finanse i Działania — strona główna
 
 [!include [banner](../includes/banner.md)]
 
 
 ## <a name="application-releases"></a>Wydania aplikacji
 
-Aby zobaczyć, co nowego lub zmieniła się w każdej wersji aplikacji Finance and Operations, należy zapoznać się z następującymi tematami:
+Aby zobaczyć, co nowego lub zmieniła się w każdej wersji aplikacji Finanse i Działania, należy zapoznać się z następującymi tematami:
 
-- **Finance:** [Nowości i zmiany w rozwiązaniu Dynamics 365 Finance](../../../finance/get-started/whats-new-home-page.md) 
+- **Finance:** [Nowości i zmiany w rozwiązaniu Dynamics 365 Finance](../../../finance/get-started/whats-new-home-page.md)
+- **Zasoby ludzkie (scalona infrastruktura):** [Co nowego lub co zmieniono w firmie Microsoft Dynamics 365 Human Resources](../../../human-resources/get-started/hr-whats-new-changed-10-0-25.md)  
 - **Supply Chain Management:** [Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management](../../../supply-chain/get-started/whats-new-home-page.md) 
 - **Commerce:** [Nowości i zmiany w rozwiązaniu Dynamics 365 Commerce](../../../commerce/get-started/whats-new-home-page.md)
+
+
+## <a name="stand-alone-applications"></a>Aplikacje autonomiczne
+
+Aby zobaczyć, co nowego lub co w wersji autonomicznej Dynamics 365 Human Resources, należy zapoznać się z następującym tematem:
+
 - **Human Resources:** [Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources](../../../human-resources/hr-admin-whats-new.md)
 
 ## <a name="platform-updates"></a>Aktualizacje platformy
 
-Aby dowiedzieć się, co nowego lub zmienione w aktualizacjach la aplikacji Finance and Operations, należy zapoznać się z następującym tematem:
+Aby dowiedzieć się, co nowego lub zmienione w aktualizacjach la aplikacji Finanse i Działania, należy zapoznać się z następującym tematem:
 
 - [Nowości i zmiany w aktualizacjach Platform update](../../dev-itpro/get-started/whats-new-home-page.md)
 

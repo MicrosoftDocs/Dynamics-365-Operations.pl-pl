@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-21
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1aac3c50cbe40d65abc9bedcdd2a64a6e5a1c1ad
-ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
+ms.openlocfilehash: 1cf4ed8d2373a71594b9b03306c582ed998b6e39
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7431191"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071522"
 ---
 # <a name="create-custom-links-in-manager-self-service"></a>Tworzenie łączy niestandardowych w samoobsłudze menedżera
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -36,11 +39,11 @@ Aby skorzystać z tej funkcji, włącz funkcję **Linki niestandardowe w samoobs
 
 1. W **Parametry Human Resources** wybierz opcję **Samoobsługa menedżera**.
 
-2. W obszarze **Ustawianie łączy dla menedżerów** można dodawać, edytować lub usuwać łącza. Można również grupować linki w taki sposób, aby były wyświetlane w grupie w module Samoobsługa menedżera.
+2. W obszarze **Ustawianie łączy dla menedżerów** można dodawać, edytować lub usuwać łącza. Można również grupować linki w taki sposób, aby były wyświetlane w grupie w module **Samoobsługa menedżera**.
 
    ![Konfiguracja łączy niestandardowych w samoobsłudze menedżera.](./media/hr-employee-manager-self-service-custom-links-setup.png)
 
-3. Aby wyświetlić linki, przejdź do karty **Mój zespół** w module Samoobsługa pracownika etatowego.
+3. Aby wyświetlić linki, przejdź do karty **Mój zespół** w module **Samoobsługa pracownika etatowego**.
 
    ![Wyświetlanie łączy niestandardowych w samoobsłudze menedżera.](./media/hr-employee-manager-self-service-custom-links-view.png)
 

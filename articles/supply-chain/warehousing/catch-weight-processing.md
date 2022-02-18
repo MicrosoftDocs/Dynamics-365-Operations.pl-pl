@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 8e56688aac445b84d5a9c0df289d48ffefd5767f673f2329f69582e820c27820
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 830e05db47e2e2d3bb5970869bc395cfa73ad603
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738156"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087377"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Przetwarzanie ilości efektywnej produktu przy użyciu funkcji zarządzania magazynem
 
@@ -138,7 +138,6 @@ Nie wszystkie przepływy prac obsługują przetwarzanie ilości efektywnej produ
 - Produkty w ilości efektywnej, które obsługują wariant, nie mogą być używane razem z funkcją konwersji jednostek miary wariantu.
 - Produkty w ilości efektywnej nie mogą być oznaczone jako „zestaw produktów” handlowych.
 - Produkty w ilości efektywnej mogą być używane tylko z grupą sekwencji jednostek, która ma jednostki obsługi ilości efektywnej, i w której jednostka ilości efektywnej ma najmniejszy numer sekwencyjny.
-- Dla produktów w ilości efektywnej jednostka magazynowa może być konwertowana na jednostkę ilości efektywnej tylko wtedy, gdy konwersji generuje ilość nominalną większą niż 1.
 - Konfiguracja kodów kreskowych dla produktów w ilości efektywnej nie obsługuje konfiguracji ilości zmiennej.
 
 ### <a name="order-processing"></a>Przetwarzanie zamówień

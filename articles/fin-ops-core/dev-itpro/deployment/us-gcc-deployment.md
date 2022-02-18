@@ -9,18 +9,18 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2021-11-09
-ms.openlocfilehash: 17702ada5bf75a44652e194c2555a83e76e7a36b
-ms.sourcegitcommit: 9f8da0ae3dcf3861e8ece2c2df4f693490563d5e
+ms.openlocfilehash: 0c8b88e5d190f6dc9beb9342909d1e489d4af10b
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "7817447"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062293"
 ---
 # <a name="dynamics-365-finance-and-dynamics-365-supply-chain-management-in-us-government-community-cloud-gcc"></a>Dynamics 365 Finance i Dynamics 365 Supply Chain Management w amerykańskiej Government Community Cloud (GCC)
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Wybrane produkty Microsoft Dynamics 365 Stany Zjednoczone (USA) są dostępne kwalifikującym się jednostkom rządowym i prywatnym. Jednostki są ograniczone do następujących typów:
 
@@ -38,9 +38,9 @@ Po zakończeniu początkowego dołączania postępuj zgodnie z instrukcjami [Do�
 
 ## <a name="environment-deployment"></a>Wdrażanie środowiska
 
-Po zakończeniu dołączania projektu możesz przejrzeć dodatkowe możliwości usługi LCS opisane w usługach [Lifecycle Services (LCS) dla odbiorców aplikacji Finance and Operations](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md). Następnie przejdź do wdrożenia środowiska.
+Po zakończeniu dołączania projektu możesz przejrzeć dodatkowe możliwości usługi LCS opisane w usługach [Lifecycle Services (LCS) dla odbiorców aplikacji Finanse i Działania](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md). Następnie przejdź do wdrożenia środowiska.
 
-- Aby wdrożyć środowiska zarządzane przez firmę Microsoft za pomocą usługi LCS, postępuj zgodnie z instrukcjami w użytą usługę [Lifecycle Services (LCS) dla odbiorców aplikacji Finance and Operations](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md#new-deployment-experience).
+- Aby wdrożyć środowiska zarządzane przez firmę Microsoft za pomocą usługi LCS, postępuj zgodnie z instrukcjami w [Lifecycle Services (LCS) dla odbiorców aplikacji Finanse i Działania](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md#new-deployment-experience).
 - Dla środowisk hostowanych w chmurze zobacz temat [Wdrażanie środowisk programistycznych i uzyskiwanie do nich dostępu](../../../fin-ops-core/dev-itpro/dev-tools/access-instances.md). Musisz także zakończyć proces dołączania Menedżera zasobów dla łączników, jak opisano w temacie [Zakończenie procesu dołączania usługi Azure Resource Manager dla projektów usługi Lifecycle Services instytucji rządowych USA](arm-onbarding-us-goverment.md).
 
 > [!NOTE]

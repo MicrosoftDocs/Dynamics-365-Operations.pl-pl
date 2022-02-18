@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: v-savanh
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9ad7f116f979d571a5e34eee67beb7218a271522
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: f699b00ab7ea2d043e12824015c54439caf8e63c
+ms.sourcegitcommit: d58a891d9fe0aa0e6b2c20329250c8d74ffbee90
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777628"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "8022981"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Współpraca z odbiorcami przy użyciu modułu Współpraca z dostawcami
 
@@ -78,7 +78,7 @@ Jeśli używasz zapasów konsygnacyjnych, możesz w interfejsie współpracy z d
 
 ## <a name="working-with-rfqs-in-the-vendor-bidding-workspace"></a>Praca z ZO w obszarze roboczym Składanie ofert przez dostawców
 
-Obszar roboczy **Składanie ofert przez dostawców** umożliwia wyświetlenie zapytań ofertowych ZO, do których zaproszono firmę w celu udzielenia odpowiedzi. Możesz także odpowiedzieć na ZO. 
+Obszar roboczy **Składanie ofert przez dostawców** umożliwia wyświetlenie zapytań ofertowych ZO, do których zaproszono firmę w celu udzielenia odpowiedzi. Możesz także odpowiedzieć na ZO.
 
 Obszar roboczy pokazuje także wszystkie uzyskane lub utracone ZO. Ponadto, jeżeli system jest skonfigurowany dla sektora publicznego, ten obszar roboczy zawiera dostępne publicznie ZO.
 
@@ -100,9 +100,17 @@ Osoby pracujące w sektorze publicznym mogą zobaczyć otwarte i wygasłe ZO udo
 
 - Wybierz łącze **Otwarte opublikowane zapytania ofertowe**, aby zobaczyć listę otwartych ZO dostępnych publicznie. Otwarte ZO to takie, które jeszcze nie wygasło. Datę i godzinę ważności można znaleźć w nagłówku ZO.
 
-    Jeżeli zaproszono Cię do złożenia oferty, to samo ZO można znaleźć na stronie **Nowe zaproszenia do składania ofert**. Czasami chcesz złożyć ofertę w otwartym ZO, ale nie zaproszono Cię do złożenia oferty. W takim przypadku możesz zaprosić się samodzielnie,pod warunkiem, że odbiorca włączył samodzielne zapraszanie dotyczące sprawy ZO.
+    Jeżeli zaproszono Cię do złożenia oferty, to samo ZO można znaleźć na stronie **Nowe zaproszenia do składania ofert**. Czasami chcesz złożyć ofertę w otwartym ZO, ale nie zaproszono Cię do złożenia oferty. W takim przypadku możesz zaprosić się samodzielnie,pod warunkiem, że odbiorca włączył samodzielne zapraszanie dotyczące sprawy ZO. 
 
-    Zwiększ dostępność łącza **Otwórz opublikowane zapytania ofertowe**, włączając w to funkcję **kafelka łącza „Otwórz opublikowane zapytania ofertowe”**. Ta funkcja umożliwia konwersję łącza na kafelek i przenoszenie go do widocznej lokalizacji, tak aby można było łatwo go odnaleźć. (Od wersji 10.0.21 Supply Chain Management version ta funkcja jest domyślnie włączona)
+    Strona **Nowe zaproszenia do składania ofert** może dostarczyć filtr, który pozwoli Ci przejrzeć otwarte RFQ i zidentyfikować te, które zawierają linie pasujące do Twoich zatwierdzonych kategorii zamówień. Aby udostępnić ten filtr, musisz włączyć funkcję *Niech dostawcy wyszukuje RFQ według kategorii zaopatrzenia* w systemie. Administratorzy mogą skorzystać z obszaru roboczego **Zarządzanie funkcjami**, aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. Ta funkcja jest wymieniona w następujący sposób:
+
+    - **Moduł:** — *Rozrachunki z dostawcami*
+    - **Nazwa funkcjonalności:** *Pozwól sprzedawcom wyszukiwać RFQ według kategorii zamówień* <!-- KFM: I don't see this here, is this right? -->
+
+    Możesz zwiększyć dostępność łącza **Otwórz opublikowane zapytania ofertowe**, włączając w to funkcję *kafelka łącza „Otwórz opublikowane zapytania ofertowe”*. Ta funkcja umożliwia konwersję łącza na kafelek i przenoszenie go do widocznej lokalizacji, tak aby można było łatwo go odnaleźć. Administratorzy mogą skorzystać z obszaru roboczego **Zarządzanie funkcjami**, aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. (Od wersji 10.0.21 Supply Chain Management funkcja ta jest domyślnie włączona). Tam funkcja jest wymieniona w następujący sposób:
+
+    - **Moduł:** *Zaopatrzenie i sourcing*
+    - **Nazwa funkcji:** *Wyświetl link „Otwórz opublikowane zapytania ofertowe” jako kafelek*
 
 - Wybierz łącze **Zamknięte opublikowane zapytania ofertowe**, aby zobaczyć listę zamkniętych ZO dostępnych publicznie. Zamknięte ZO to takie, które wygasło. Datę i godzinę ważności można znaleźć w nagłówku ZO.
 

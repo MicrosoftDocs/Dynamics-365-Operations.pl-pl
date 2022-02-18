@@ -15,18 +15,21 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9e26a2fb65564cb4a1d2f9ba4b0d621177207545
-ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
+ms.openlocfilehash: f7ffe522f0f17a21280e53728c6efc2823743733
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7414671"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069153"
 ---
 # <a name="configure-dataverse-virtual-tables"></a>Konfigurowanie tabel wirtualnych usługi Dataverse
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Dynamics 365 Human Resources jest wirtualnym źródłem danych w usłudze Microsoft Dataverse. Obsługuje on pełne operacje tworzenia, odczytu, aktualizacji i usuwania (CRUD) z Dataverse i Microsoft Power Platform. Dane dla tabel wirtualnych nie są przechowywane w usłudze Dataverse, ale w bazie danych aplikacji.
 
@@ -119,10 +122,10 @@ Następnym krokiem jest skonfigurowanie źródła danych tabeli wirtualnej w śr
 
 4. W oknie **Centrum kondycji rozwiązania** wybierz ikonę **Wyszukiwanie zaawansowane** w prawym górnym rogu strony aplikacji.
 
-5. Na stronie **Wyszukiwanie zaawansowane**, z listy rozwijanej **Wyszukaj** wybierz pozycję **Konfiguracje wirtualnego źródła danych Finance and Operations**.
+5. Na stronie **Wyszukiwanie zaawansowane**, z listy rozwijanej **Wyszukaj** wybierz pozycję **Konfiguracje wirtualnego źródła danych Finanse i Działania**.
 
    > [!NOTE]
-   > Instalacja aplikacji tabel wirtualnych z poprzedniego kroku konfiguracji może potrwać kilka minut. Jeśli na liście nie opcji **Konfiguracje wirtualnego źródła danych Finance and Operations**, zaczekaj na minutę i odśwież listę.
+   > Instalacja aplikacji tabel wirtualnych z poprzedniego kroku konfiguracji może potrwać kilka minut. Jeśli na liście nie opcji **Konfiguracje wirtualnego źródła danych Finanse i Działania**, zaczekaj minutę i odśwież listę.
 
 6. Wybierz opcję **Wyniki**.
 

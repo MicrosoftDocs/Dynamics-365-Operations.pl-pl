@@ -13,16 +13,19 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 97f73ef51e3ff3bfdc3a130128cf98e09edd1425f77646bf4e539568cf2c8b05
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 32417694e53600836370ecc5601d36057cc55de9
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749443"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065612"
 ---
 # <a name="set-a-users-preferred-time-zone"></a>Ustawianie preferowanej strefy czasowej
 
 [!include [banner](../../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
 
 W poniższym temacie pokazano, jak użytkownik w roli administratora systemu może ustawić strefę czasową dla użytkownika.
 

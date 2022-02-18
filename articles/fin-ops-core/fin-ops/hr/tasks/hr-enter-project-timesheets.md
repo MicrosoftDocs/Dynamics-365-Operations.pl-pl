@@ -1,22 +1,29 @@
---- 
-# required metadata 
+---
 title: Wprowadzanie kart czasu pracy projektu
-description: 'Ta procedura pozwala tworzyć karty czasu pracy, używając pustego formularza karty czasu pracy.'
+description: Ta procedura pozwala tworzyć karty czasu pracy, używając pustego formularza karty czasu pracy.
 author: twheeloc
 ms.date: 01/10/2022
 ms.topic: business-process
-ms.prod: null
-ms.technology: null
+ms.prod: ''
+ms.technology: ''
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.industry: Service industries
 ms.author: anbichse
-ms.search.validFrom: '2016-06-30'
+ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c57ba991de366b4a0e1aa02971a107bed488f914
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070482"
 ---
-
 # <a name="enter-project-timesheets"></a>Wprowadzanie kart czasu pracy projektu
+
+
+[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
 
 Ta procedura umożliwia utworzenie grafiku przy użyciu pustej strony grafiku. Nowa karta czasu pracy może się opierać na informacjach z poprzedniej karty czasu pracy lub z projektów i działań przypisanych na stronie **Moje ulubione**. Domyślnie strona listy **Wszystkie karty** czasu pracy wyświetla wszystkie karty czasu pracy dla bieżącego okresu. Można użyć pola **Pokaż** znajdującego się na stronie **Moje karty czasu pracy**, aby wyfiltrować listę kart czasu pracy według okresu lub projektu lub wyświetlić grafiki utworzone w imieniu innych pracowników. Do stworzenia tej procedury wykorzystano dane z firmy demonstracyjnej **USSI**.
 

@@ -13,14 +13,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8758b74f9ce7c8687b7c2925ccd04cd512602db0
-ms.sourcegitcommit: 8246ba3872a1f3eaa18c8bb1ba86d3c2142a6e10
+ms.openlocfilehash: b3b90bb2a4981f32feb10ee1192e9c4d2e604e7a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7465180"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071565"
 ---
 # <a name="create-a-closed-ended-question"></a>Tworzenie pytania zamkniętego
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -34,10 +37,10 @@ Pytania zamknięte umożliwiają udostępnienie osobie udzielającej odpowiedzi 
 2. Kliknij przycisk **Nowy**.
 3. W polu **Grupa odpowiedzi** wpisz wartość.
 4. W polu **Opis** wpisz wartość.
-    * Funkcja Losowo spowoduje losowe rozmieszczanie odpowiedzi w różnej kolejności podczas każdorazowego użycia grupy odpowiedzi do pytania.  
+    * Funkcja **Losowo** spowoduje losowe rozmieszczanie odpowiedzi w różnej kolejności podczas każdorazowego użycia grupy odpowiedzi do pytania.  
 5. Kliknij opcję **Odpowiedź**.
 6. Kliknij przycisk **Nowy**.
-    * Numer kolejny określa kolejność, w jakiej odpowiedzi są wyświetlane, chyba że dla grupy odpowiedzi wybrano opcję Losowo.  
+    * Numer kolejny określa kolejność, w jakiej odpowiedzi są wyświetlane, chyba że dla **grupy odpowiedzi** wybrano opcję **Losowo**.  
     * Można przyznawać punkty za odpowiedzi z przeznaczeniem do wykorzystania przy ocenianiu wyników kwestionariusza.  
 7. W polu **Punkty** wpisz liczbę.
     * Poprawną odpowiedź można oznaczyć, aby wskazać, że wybrana odpowiedź jest prawidłowa. To może służyć do oceniania wyników kwestionariusza.  
@@ -61,8 +64,8 @@ Pytania zamknięte umożliwiają udostępnienie osobie udzielającej odpowiedzi 
 ## <a name="create-the-question"></a>Tworzenie pytania
 1. Wybierz kolejno opcje **Kwestionariusz** > **Projekt** > **Pytania**.
 2. Kliknij przycisk **Nowy**.
-3. Pole Typ służy do grupowania powiązanych pytań.
-    * Dla pytań zamkniętych można używać danych wejściowych typu pole wyboru, przycisk alternatywy lub pole kombi.  
+3. Pole **Typ** służy do grupowania powiązanych pytań.
+    * Dla pytań zamkniętych można używać danych wejściowych typu **pole wyboru**, **przycisk alternatywy** lub **pole kombi**.  
 4. W polu **Typ danych wejściowych** wybierz opcję.
 5. W polu **Grupa odpowiedzi** wpisz lub wprowadź wartość.
 6. W polu **Tekst** wpisz wartość.

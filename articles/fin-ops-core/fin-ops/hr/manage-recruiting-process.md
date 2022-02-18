@@ -1,26 +1,32 @@
 ---
-# required metadata
 title: Zarządzanie procesami rekrutacji
-description: 'W tym temacie opisano pojęcia, których osoby rekrutujące mogą używać do śledzenia etapów procesu rekrutacji.'
+description: W tym temacie opisano pojęcia, których osoby rekrutujące mogą używać do śledzenia etapów procesu rekrutacji.
 author: andreabichsel
 ms.date: 01/10/2022
 ms.topic: article
-ms.prod: null
-ms.technology: null
-ms.search.form: 'HRMApplication, HRMRecruitingTable'
+ms.prod: ''
+ms.technology: ''
+ms.search.form: HRMApplication, HRMRecruitingTable
 audience: Application User
 ms.reviewer: anbichse
 ms.custom: 7501
 ms.assetid: 1ad725bf-20e2-42a1-8068-111f7ddddad9
 ms.search.region: Global
 ms.author: anbichse
-ms.search.validFrom: '2016-02-28'
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7fa1d5201fcc52d49b9d954356f1ca39b7619cd2
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075482"
 ---
-
 # <a name="manage-recruiting-processes"></a>Zarządzanie procesami rekrutacji
 
-[!include [banner](../includes/banner.md)]
+> [!IMPORTANT]
+> Funkcjonalność opisana w tym temacie jest obecnie dostępna dla klientów Human Resources na infrastrukturze Finance.  
+
 
 W tym temacie opisano proces śledzenia czynności podczas rekrutacji, w tym działania związane z reklamowaniem wolnych stanowisk i rekrutacji kandydatów, śledzenie informacji o kandydatach i zgłoszeniach, prowadzenie rozmów kwalifikacyjnych z kandydatami oraz wybieranie jednego lub kilku kandydatów na wolne stanowiska w organizacji.
 

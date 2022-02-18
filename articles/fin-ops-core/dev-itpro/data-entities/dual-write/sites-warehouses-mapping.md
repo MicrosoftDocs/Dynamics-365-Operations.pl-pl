@@ -1,6 +1,6 @@
 ---
 title: Zintegrowane witryny i magazyny
-description: W tym temacie opisano integrację danych witryny i magazynu między aplikacjami Finance and Operations i Dataverse.
+description: W tym temacie opisano integrację danych witryny i magazyny między programami Finanse i Działania i Dataverse.
 author: t-benebo
 ms.date: 10/09/2019
 ms.topic: article
@@ -9,26 +9,26 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: benebotg
 ms.search.validFrom: 2019-08-15
-ms.openlocfilehash: f0c477d869e0bc1e0c3f58a722c140284fbcffca
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 66c5962933387831bbc3f17b9f29128ceaaf750b
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782267"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063219"
 ---
-# <a name="integrated-sites-and-warehouses"></a>Zintegrowane oddziały i magazyny
+# <a name="integrated-sites-and-warehouses"></a>Zintegrowane witryny i magazyny
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-W tym temacie opisano integrację danych witryny i magazynu między aplikacjami Finance and Operations i Dataverse. Lokacje i magazyny operacyjne są typowymi pojęciami w aplikacji Supply Chain Management. Służą one do modelowania łańcucha dostaw firmy.
+
+W tym temacie opisano integrację danych witryny i magazyny między programami Finanse i Działania i Dataverse. Lokacje i magazyny operacyjne są typowymi pojęciami w aplikacji Supply Chain Management. Służą one do modelowania łańcucha dostaw firmy.
 
 ## <a name="templates"></a>Szablony
 
 Dzięki integracji z Dataverse te pojęcia i wszystkie informacje związane z nimi są dostępne w Dataverse przy użyciu tabel danych witryn i magazynów wymienionych w poniższej tabeli.
 
-Aplikacje Finance and Operations | Aplikacje Customer Engagement     | opis
+Aplikacje Finanse i Działania | Aplikacje Customer Engagement     | opis
 --------------------------|---------------------------|---
 [Oddziały](mapping-reference.md#156) | msdyn_operationalsites | |
 [Magazyny](mapping-reference.md#204) | msdyn_warehouses | |

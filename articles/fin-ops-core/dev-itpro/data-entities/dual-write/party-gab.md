@@ -9,20 +9,20 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: 127b4092ad3c5e8737aff43f503e0a8f36ff1ec8
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 601c49e21c3a97d2da225705ddbb386e491d4d25
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781351"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8060339"
 ---
 # <a name="party-and-global-address-book"></a>Książka adresowa strony i globalna książka adresowa
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-*Strona* i *globalna książka adresowa* to pojęcia w aplikacjach Finance and Operations. Stroną może być osoba lub organizacja. Globalnie można przechowywać właściwości strony, takie jak nazwa, język, osoby kontaktowe i adresy, oraz zarządzać nimi. Gdy następnie wartość właściwości zmienia się w jednym miejscu, zmiana jest odzwierciedlona we wszystkich miejscach, w których uczestniczy strona.
+
+*Strona* i *globalna książka adresowa* to pojęcia w aplikacjach Finanse i Działania. Stroną może być osoba lub organizacja. Globalnie można przechowywać właściwości strony, takie jak nazwa, język, osoby kontaktowe i adresy, oraz zarządzać nimi. Gdy następnie wartość właściwości zmienia się w jednym miejscu, zmiana jest odzwierciedlona we wszystkich miejscach, w których uczestniczy strona.
 
 ## <a name="party"></a>Jednostka
 
@@ -46,7 +46,7 @@ Poniższa ilustracja przedstawia model danych strony.
 > [!TIP]
 > Podczas tworzenia nowego rekordu konta użyj pola **Strona**, aby wyszukać rekord według nazwy. W ten sposób po odnalezieniu rekordu wystarczy go wybrać. System następnie automatycznie wstawia wszystkie dane strony. Nie musisz ręcznie ustawiać wszystkich wymaganych pól. Tak zachowują się gotowe strony **Konto**, **Osoba kontaktowa** i **Dostawca**.
 
-Dwukrotny zapis nie obsługuje wszystkich ról strony w aplikacjach Finance and Operations. Aby uzyskać pełną listę ról stron, zobacz [Omówienie globalnej książki adresowej](../../../fin-ops/organization-administration/overview-global-address-book.md).
+Dwukrotny zapis nie obsługuje wszystkich ról strony w aplikacjach Finanse i Działania. Aby uzyskać pełną listę ról stron, zobacz [Omówienie globalnej książki adresowej](../../../fin-ops/organization-administration/overview-global-address-book.md).
 
 ### <a name="global-address-book"></a>Globalna książka adresowa
 
@@ -75,7 +75,7 @@ W tabeli **Osoby kontaktowe** mogą być przechowywane następujące typy wiersz
 |----------|-------------|
 | Osoba, która jest klientem (na przykład osobą kontaktową do sprzedaży lub klientem B2C) | Rekord rozłożonego kontaktu, w którym pole **Firma** nie jest puste, a pole **Jest klientem** ma wartość **Tak**. |
 | Osoba, która jest na dostawcą (na przykład jedynym właścicielem, jak dostawcą) | Rekord rozłożonego kontaktu, w którym pole **Firma** nie jest puste, a pole **Jest dostawcą** ma wartość **Tak**. |
-| Osoba będąca jednocześnie klientem i dostawcą | Rekord rozłożonego kontaktu, w którym pole **Firma** nie jest puste, a pole **Jest klientem** ma wartość **Tak**, a pole **Jest dostawcą** jest ustawione na **Tak**. Osoba może być zarówno producentem jednego produktu, jak i konsumentem innego produktu. Ta relacja obsługuje zarówno aplikacje Finance and Operations, jak i podwójnego zapisu. |
+| Osoba będąca jednocześnie klientem i dostawcą | Rekord rozłożonego kontaktu, w którym pole **Firma** nie jest puste, a pole **Jest klientem** ma wartość **Tak**, a pole **Jest dostawcą** jest ustawione na **Tak**. Osoba może być zarówno producentem jednego produktu, jak i konsumentem innego produktu. Ta relacja obsługuje zarówno aplikacje Finanse i Działania, jak i podwójnego zapisu. |
 | Osoba, która jest osobą kontaktową organizacji, ale nie jest klientem ani dostawcą | Rekord nierozłożonego kontaktu, w którym pole **Firma** nie jest puste, a pole **Jest klientem** ma wartość **Nie**, a pole **Jest dostawcą** jest ustawione na **Nie**. |
 
 ## <a name="contact-for-party-table"></a>Tabela Osoba kontaktowa strony
@@ -142,7 +142,7 @@ Przycisk **Nowy adres elektroniczny** nad siatką pozwala utworzyć dowolną lic
 Adresy elektroniczne są dostępne tylko w tej siatce. W przyszłych wersjach wszystkie pola adresu pocztowego i elektronicznego zostaną usunięte z innych kart (na przykład kart **Podsumowanie** i **Szczegóły**). Szczegóły kontaktu wyświetlane na karcie **Szczegóły** są tylko kopiami do odczytu głównego adresu elektronicznego, jak podstawowy numer telefonu, podstawowy adres e-mail, podstawowy telefon, podstawowy faks i podstawowe konto Twitter. Podczas procesu kwalifikacji potencjalnego klienta można podać numer telefonu służbowego i numer telefonu komórkowego. Numer telefonu służbowego jest traktowany jako podstawowy, jeśli **IsMobile=No**, a numer telefonu komórkowego jest traktowany jako pomocniczy, jeśli **IsMobile=Yes**.
 
 > [!TIP]
-> Do zarządzania adresami pocztowymi i elektronicznymi służą karty **Adresy** i **Adresy elektroniczne** na formularzach **Konto** i **Kontakt**. Dzięki temu dane adresowe będą synchronizowane z aplikacjami Finance and Operations.
+> Do zarządzania adresami pocztowymi i elektronicznymi służą karty **Adresy** i **Adresy elektroniczne** na formularzach **Konto** i **Kontakt**. Dzięki temu dane adresowe będą synchronizowane z aplikacjami Finanse i Działania.
 
 ## <a name="setup"></a>Konfiguracja
 
@@ -152,7 +152,7 @@ Adresy elektroniczne są dostępne tylko w tej siatce. W przyszłych wersjach ws
 
 3. Zainstaluj [rozwiązania z podwójnym zapisem i globalna książka adresowa](https://aka.ms/dual-write-gab).
 
-4. Otwórz klienta rozwiązania Finance and Operations. Przejdź do modułu Zarządzanie danymi i wybierz kartę Podwójny zapis. Zostanie otwarta strona administracji podwójnego zapisu.
+4. Otwórz klienta rozwiązania Finanse i Działania. Przejdź do modułu Zarządzanie danymi i wybierz kartę Podwójny zapis. Zostanie otwarta strona administracji podwójnego zapisu.
 
 5. Zastosuj oba rozwiązania zainstalowane w krokach 2 i 3, używając funkcji [Zastosuj rozwiązanie](link-your-environment.md).
 
@@ -230,7 +230,7 @@ Adresy elektroniczne są dostępne tylko w tej siatce. W przyszłych wersjach ws
 
 12. Uruchom mapy w następującej kolejności. W przypadku wystąpienia błędu z komunikatem „Negatywny wynik sprawdzania poprawności projektu. Brak pola docelowego", otwórz mapę i wybierz polecenie **Odśwież tabele**. Następnie uruchom mapę.
 
-    Aplikacja Finance and Operations | Aplikacja Customer Engagement  
+    Aplikacje Finanse i Działania | Aplikacja Customer Engagement  
     ----------------------------|------------------------
     [Strony usługi CDS](mapping-reference.md#220) | msdyn_parties
     [Lokalizacje adresu pocztowego usługi CDS](mapping-reference.md#234) | msdyn_postaladdresscollections
@@ -269,7 +269,7 @@ Adresy elektroniczne są dostępne tylko w tej siatce. W przyszłych wersjach ws
 
 Zbiór map tabel współpracuje ze sobą na potrzeby interakcji między stronami i globalną książką adresową, jak pokazano w poniższej tabeli.
 
-| Aplikacja Finance and Operations | Aplikacja Customer Engagement | opis |
+| Aplikacje Finanse i Działania | Aplikacja Customer Engagement | Opis |
 |----------------------------|-------------------------|-------------|
 | [Tytuły osoby kontaktowej](mapping-reference.md#223) | msdyn\_salescontactpersontitles |
 | [Odbiorcy (wersja 3)](mapping-reference.md#101) | Konta |
@@ -295,10 +295,10 @@ Aby uzyskać więcej informacji, zobacz [Odniesienie do mapowania z podwójnym z
 
 ## <a name="known-issues-and-limitations"></a>Znane problemy i ograniczenia
 
-+ W aplikacjach Finance and Operations podczas tworzenia odbiorcy wraz z adresem i zapisywania go adres może nie być synchronizowany z tabelą **Adres**. Jest to spowodowane problemem z harmonogramem platformy podwójnego zapisu. Aby obejść ten problem należy najpierw utworzyć odbiorcę, a następnie go zapisać. Następnie dodaj adres.
-+ W aplikacjach Finance and Operations, gdy rekord odbiorcy ma adres podstawowy i tworzysz nowy kontakt dla tego odbiorcy, rekord osoby kontaktowej dziedziczy adres podstawowy ze skojarzonego rekordu odbiorcy. Dzieje się tak również w przypadku osoby kontaktowej dostawcy. Dataverse obecnie nie obsługuje tego działania. Jeśli jest włączona funkcja podwójnego zapisu, osoby kontaktowe odbiorcy dziedziczone z adresu podstawowego z aplikacji Finance and Operations są synchronizowane z Dataverse razem ze swoim adresem.
++ W aplikacjach Finanse i Działania podczas tworzenia odbiorcy wraz z adresem i zapisywania go adres może nie być synchronizowany z tabelą **Adres**. Jest to spowodowane problemem z harmonogramem platformy podwójnego zapisu. Aby obejść ten problem należy najpierw utworzyć odbiorcę, a następnie go zapisać. Następnie dodaj adres.
++ W aplikacjach Finanse i Działania, gdy rekord odbiorcy ma adres podstawowy i tworzysz nowy kontakt dla tego odbiorcy, rekord osoby kontaktowej dziedziczy adres podstawowy ze skojarzonego rekordu odbiorcy. Dzieje się tak również w przypadku osoby kontaktowej dostawcy. Dataverse obecnie nie obsługuje tego działania. Jeśli jest włączona funkcja podwójnego zapisu, osoby kontaktowe odbiorcy dziedziczone z adresu podstawowego z aplikacji Finanse i Działania są synchronizowane z Dataverse razem ze swoim adresem.
 + Adresy elektroniczne ustawione na kartach adresu elektronicznego formularzy **Konto**, **osoba kontaktowa** i **dostawca** nie pochodzą z tabeli `msdyn_partyelectronicaddress`. Ta informacja nie przepływa do skojarzonych z nim transakcji, takich jak zamówienie sprzedaży, oferta i zamówienie zakupu. Zamierzamy rozwiązać ten problem w przyrostowej wersji. Istniejące dane w polach adresu elektronicznego konta i rekordów kontaktów będą nadal działać dla transakcji, takich jak zamówienie sprzedaży, oferta i zamówienie zakupu.
-+ W aplikacjach Finance and Operations możesz utworzyć rekord osoby kontaktowej za pomocą formularza **Dodaj osobę kontaktową**. Podczas próby utworzenia nowej osoby kontaktowej z formularza **Wyświetl osobę kontaktową** akcja nie powiedzie się. Jest to znany problem.
++ W aplikacjach Finanse i Działania możesz utworzyć rekord osoby kontaktowej za pomocą formularza **Dodaj osobę kontaktową**. Podczas próby utworzenia nowej osoby kontaktowej z formularza **Wyświetl osobę kontaktową** akcja nie powiedzie się. Jest to znany problem.
 
     ![Znany problem z dodawania osoby kontaktowej.](media/party-gab-contact-issue.png)
 
@@ -307,4 +307,4 @@ Aby uzyskać więcej informacji, zobacz [Odniesienie do mapowania z podwójnym z
 
     ![Znany problem z adresem.](media/party-gab-address-issue.png)
 
-+ Nie można wprowadzić adresu pocztowego z datą w przyszłości, używając aplikacji Finance and Operations z podwójnym zapisem, ponieważ Dataverse nie obsługuje ważności daty. Jeśli użytkownik wpisze w aplikacji Finance and Operations adres pocztowy z datą w przyszłości, zostanie on w pełni zsynchronizowany z Dataverse i natychmiast zobaczysz adres w interfejsie użytkownika. Wszelkie aktualizacje tego rekordu będą powodować błąd, ponieważ ma on datę przyszłą, a nie bieżącą w aplikacji Finance and Operations.
++ Nie można wprowadzić adresu pocztowego z datą w przyszłości, używając aplikacji Finanse i Działania z podwójnym zapisem, ponieważ Dataverse nie obsługuje ważności daty. Jeśli użytkownik wpisze w aplikacji Finanse i Działania adres pocztowy z datą w przyszłości, zostanie on w pełni zsynchronizowany z Dataverse i natychmiast zobaczysz adres w interfejsie użytkownika. Wszelkie aktualizacje tego rekordu będą powodować błąd, ponieważ ma on datę przyszłą, a nie bieżącą w aplikacji Finanse i Działania.

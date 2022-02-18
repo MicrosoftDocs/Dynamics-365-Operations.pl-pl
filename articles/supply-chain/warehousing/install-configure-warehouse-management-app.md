@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: b1687b24f499f4d226406a0035f8ea70b6046167
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 54962b48dee05b2cd62fd3ea8814e4c965ba7818
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902003"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069386"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Instalowanie i łączenie aplikacji mobilnej Zarządzanie magazynem
 
@@ -143,6 +143,10 @@ Uwierzytelnianie za pomocą usługi Azure AD zapewnia bezpieczny sposób połąc
 Certyfikaty mogą być używane jako wpisy tajne w celu udowodnienia tożsamości aplikacji w przypadku żądania tokenu. Publiczna część certyfikatu jest przekazywana do rejestracji aplikacji w witrynie Azure Portal, podczas gdy pełny certyfikat musi zostać wdrożony na każdym urządzeniu, na którym zainstalowano aplikację mobilną Zarządzanie magazynem. Organizacja jest odpowiedzialna za zarządzanie certyfikatem w kategorii wymiany itd. Można używać certyfikatów z podpisem własnym, ale zawsze należy używać certyfikatów bez możliwości eksportowania.
 
 Certyfikat musi zostać udostępniony lokalnie na każdym urządzeniu, na którym działa aplikacja mobilna Zarządzanie magazynem. Aby uzyskać informacje dotyczące sposobu zarządzania certyfikatami urządzeń kontrolowanych przez usługę Intune w przypadku korzystania z usługi Intune, zapoznaj się z tematem [Używanie certyfikatów do uwierzytelniania w usłudze Microsoft Intune](/mem/intune/protect/certificates-configure).
+
+## <a name="configure-the-warehouse-management-mobile-app-for-cloud-and-edge-scale-units"></a>Konfiguracja aplikacji mobilnej Warehouse Management do zarządzania jednostkami skali chmury i brzegowymi
+
+Kilka dodatkowych kroków jest wymaganych, jeśli planujecie uruchomić aplikację mobilną Warehouse Management na jednostce skali w chmurze lub na urządzeniu brzegowym. Instrukcje: [Konfiguracja aplikacji mobilnej Warehouse Management do zarządzania jednostkami skali chmury i brzegowymi](../cloud-edge/cloud-edge-workload-setup-warehouse-app.md).
 
 ## <a name="configure-the-application-by-importing-connection-settings"></a>Konfigurowanie aplikacji przez zaimportowanie ustawień połączenia
 
@@ -306,5 +310,6 @@ Jeśli urządzenie zostanie zgubione lub dostanie się w niepowołane ręce, nal
 
 - [Ustawienia użytkownika urządzenia przenośnego](mobile-device-user-settings.md)
 - [Przypisanie ikon i tytułów kroków dla aplikacji mobilnej Warehouse Management](step-icons-titles.md)
+- [Konfiguracja aplikacji mobilnej Warehouse Management do zarządzania jednostkami skali chmury i brzegowymi](../cloud-edge/cloud-edge-workload-setup-warehouse-app.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

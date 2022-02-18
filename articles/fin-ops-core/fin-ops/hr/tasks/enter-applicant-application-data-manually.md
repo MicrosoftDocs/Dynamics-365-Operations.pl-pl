@@ -1,23 +1,30 @@
---- 
-# required metadata 
+---
 title: Wprowadzanie danych kandydata i aplikacji ręcznie
 description: W tej procedurze pokazano sposób ręcznego obsługiwania informacji dotyczących kandydatów i ich zgłoszeń.
 author: twheeloc
 ms.date: 01/10/2022
 ms.topic: business-process
-ms.prod: null
-ms.technology: null
-ms.search.form: 'HcmApplicant, LogisticsContactInfoGrid, HRMApplication,  DirPartyTable'
+ms.prod: ''
+ms.technology: ''
+ms.search.form: HcmApplicant, LogisticsContactInfoGrid, HRMApplication,  DirPartyTable
 audience: Application User
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: anbichse
-ms.search.validFrom: '2016-06-30'
+ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 68f236ad000adea91e746309564baf84a270a0e5
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075457"
 ---
 # <a name="enter-applicant-and-application-data-manually"></a>Wprowadzanie danych kandydata i aplikacji ręcznie
 
-[!include [banner](../../includes/banner.md)]
+> [!IMPORTANT]
+> Funkcjonalność opisana w tym temacie jest obecnie dostępna dla klientów Human Resources na infrastrukturze Finance.  
+
 
 W tej procedurze pokazano sposób ręcznego obsługiwania informacji dotyczących kandydatów i ich zgłoszeń. Można wprowadzać i obsługiwać informacje osobiste, daty i godziny rozmów kwalifikacyjnych, referencje, kompetencje oraz wnioski kandydatów o zakwaterowanie. Można także aktualizować stany podań o pracę kandydatów i tworzyć listy lub wiadomości e-mail do komunikacji z kandydatami. Po utworzeniu rekordu kandydata jest tworzony rekord tej osoby w globalnej książce adresowej. Do stworzenia tej procedury wykorzystano dane z firmy demonstracyjnej **USMF**.
 

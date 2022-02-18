@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 31674b2be3deb52277cbf79e1e076da13bf94404
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8dfba2d2dc2fdd4af136e3cb20061d794369011f
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566366"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8060952"
 ---
 # <a name="synchronize-inventory-level-information-from-supply-chain-management-to-field-service"></a>Synchronizowanie informacji na poziomie zapasów z rozwiązania Supply Chain Management do rozwiązania Field Service 
 
 [!include[banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Ten temat zawiera omówienie szablonów i podstawowych zadań, które są używane do synchronizowania danych poziomu zapasów między programem Dynamics 365 Supply Chain Management a programem Dynamics 365 Field Service.
 
@@ -53,7 +53,7 @@ Następujące zadania synchronizacji są wymagane, zanim będzie można zsynchro
 | msdynce_externalproductinventories | Dostępne zapasy Dataverse według magazynu     |
 
 ## <a name="entity-flow"></a>Przepływ jednostek
-Informacje poziomu zapasów z Finance and Operations są wysyłane do Field Service dla wybranych produktów. Informacje poziomu zapasów obejmują: 
+Informacje poziomu zapasów z Finanse i Działania są wysyłane do Field Service dla wybranych produktów. Informacje poziomu zapasów obejmują: 
 - Dostępna ilość (aktualnie zarejestrowana fizyczna ilość znajdująca się w magazynie)
 - Ilość na zamówieniach (łączna ilość na zamówieniach sprzedaży)
 - Zamówiona ilość (łączna ilość na zamówieniach zakupu)
@@ -64,7 +64,7 @@ W Field Service rozwiązanie integracji tworzy arkusze magazynowe dla różnicy,
 
 Supply Chain Management będzie działać jako wzorzec poziomów zapasów. Dlatego ważne jest skonfigurowanie integracji dla zleceń, przeniesień i korekt z Field Service do Supply Chain Management, jeśli ta funkcja jest używana w Field Service, razem z synchronizacją poziomów zapasów z Supply Chain Management.
 
-Produkty i magazyny, w których poziomy zapasów są wzorowane na Supply Chain Management mogą być kontrolowane za pomocą funkcji Zaawansowane zapytania i filtrowanie (Zapytanie zaawansowane).
+Produkty i magazyny, w których poziomy zapasów są wzorowane na Supply Chain Management mogą być kontrolowane za pomocą funkcji Zaawansowane zapytania i filtrowanie (Power Query).
 
 > [!NOTE]
 > Istnieje możliwość utworzenia wielu magazynów w usługach Field Service (z polem **Obsługiwane zewnętrznie = Nie**), a następnie mapowania ich na jeden magazyn w Supply Chain Management z funkcją zaawansowanych zapytań i filtrów. Jest to używane w sytuacjach, w których Field Service ma być wzorcem szczegółowego poziomu magazynu i tylko wysyłać aktualizacje do Supply Chain Management. W takim przypadku Field Service nie będzie odbierał aktualizacji poziomów zapasów z Supply Chain Management. Aby uzyskać dodatkowe informacje, zobacz [Synchronizowanie korekt zapasów z Field Service do Supply Chain Management](/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments) oraz [Synchronizowanie zleceń w Field Service ze zleceniami połączonym z projektami w Supply Chain Management](/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
