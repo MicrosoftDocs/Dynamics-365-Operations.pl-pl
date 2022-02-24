@@ -1,35 +1,33 @@
 ---
 title: Tworzenie planu świadczeń
-description: W tym temacie przedstawiono sposób konfigurowania planów świadczeń w programie Dynamics 365 Human Resources.
-author: twheeloc
-ms.date: 08/23/2021
+description: Konfigurowanie planów świadczeń w module Dynamics 365 Human Resources.
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitPlanListPage, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7d3163bf30af9ed0eac2c753ed4aabb15d568ff4
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: bcbf4c1a7f136e5563bf1210b6c09228dad95dea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065333"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420022"
 ---
-# <a name="create-a-benefit-plan"></a>Tworzenie planów świadczeń
+# <a name="create-a-benefits-plan"></a>Tworzenie planu świadczeń
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-W tym temacie przedstawiono sposób konfigurowania planów świadczeń w programie Dynamics 365 Human Resources.
+W tym artykule przedstawiono sposób konfigurowania planów świadczeń w programie Dynamics 365 Human Resources.
 
 1. W obszarze roboczym **Zarządzanie świadczeniami** w sekcji **Plany** wybierz opcję **Plany świadczeń**.
 
@@ -46,8 +44,9 @@ W tym temacie przedstawiono sposób konfigurowania planów świadczeń w program
    | **Program** | Określa program, do którego można opcjonalnie przypisać plan. |
    | **Pakiet** | Określa pakiet, do którego można opcjonalnie przypisać plan. |
    | **Główna** | Określa, czy plan jest planem głównym w pakiecie, do którego jest przypisany. |
+   | **Stan** | Wskazuje obecny stan planu świadczeń. Domyślną wartość to Aktywny. Zmiana stanu na Nieaktywny spowoduje, że plan nie będzie dostępny do wyboru podczas rejestracji. |
    | **Data i godzina wejścia w życie** | Data i godzina, do której plan zaczyna obowiązywać. Domyślną wartością jest bieżąca data systemu. |
-   | **Data i godzina ważności** | Data i godzina, kiedy plan przestaje obowiązywać. Wartość domyślna to 31.12.2154, czyli nigdy. |
+   | **Data i godzina ważności** | Data i godzina zakończenia obowiązywania planu (stan jest ustawiany na Nieaktywny). Wartość domyślna to 31.12.2154, czyli nigdy. |
 
 4. Na karcie **Konfiguracja** określ wartości następujących pól, w zależności od typu tworzonego planu:
 
@@ -55,18 +54,18 @@ W tym temacie przedstawiono sposób konfigurowania planów świadczeń w program
    | --- | --- | --- |
    | Medyczny (Medyczny, Stomatologia, Okulistyka, HMO) | COBRA | Określa, czy plan podlega ustawie COBRA (Consolidated Omnibus Budget Reconciliation Act) regulującej ubezpieczenie zdrowotne w razie częściowej lub całkowitej utraty pracy. |
    | Medyczny (Medyczny, Stomatologia, Okulistyka, HMO) | HIPAA | Określa, czy plan podlega ustawie HIPAA (Health Insurance Portability and Accountability Act) regulującej przenośność i ochronę danych w ubezpieczeniach zdrowotnych. |
-   | Medyczny (Medyczny, Stomatologia, Okulistyka, HMO)<br><br>Inne (PTO, Sprawność fizyczna)<br><br>Inne<br><br>Długoterminowa niepełnosprawność<br><br>ADD (podstawowe ubezpieczenie na życie, dobrowolne ubezpieczenie na życie)<br><br>Oszczędnościowy (na przykład 401(k))<br><br>FSA | Kwota kwalifikująca się przed opodatkowaniem | Określa, czy można wpłacać środki do planu przed naliczeniem podatków. |
-   | Medyczny (Medyczny, Stomatologia, Okulistyka, HMO)<br><br>Inne (PTO, Sprawność fizyczna)<br><br>Długoterminowa niepełnosprawność<br><br>ADD (podstawowe ubezpieczenie na życie, dobrowolne ubezpieczenie na życie)<br><br>Oszczędnościowy (na przykład 401(k))<br><br>FSA | Kwota kwalifikująca się po opodatkowaniu | Określa, czy można wpłacać środki do planu po naliczeniu podatków. |
-   | Medyczny (Medyczny, Stomatologia, Okulistyka, HMO)<br><br>Inne (PTO, Sprawność fizyczna)<br><br>Długoterminowa niepełnosprawność<br><br>ADD (podstawowe ubezpieczenie na życie, dobrowolne ubezpieczenie na życie)<br><br>Oszczędnościowy (na przykład 401(k))<br><br>FSA | Osoba wpłacająca | Określa, kto wpłaca środki do plany — pracownik, pracodawca, czy obie strony. |
-   | Długoterminowa niepełnosprawność<br><br>ADD (podstawowe ubezpieczenie na życie, dobrowolne ubezpieczenie na życie) | Minimalne objęcie świadczeniem | Minimalna suma ubezpieczenia wymagana w planie. |
-   | Długoterminowa niepełnosprawność<br><br>ADD (podstawowe ubezpieczenie na życie, dobrowolne ubezpieczenie na życie) | Maksymalne objęcie świadczeniem | Maksymalna suma ubezpieczenia wymagana w planie. |
-   | Długoterminowa niepełnosprawność<br><br>ADD (podstawowe ubezpieczenie na życie, dobrowolne ubezpieczenie na życie) | Użyj przyrostów objęcia świadczeniem | Określa, czy należy sprawdzać, czy kwota ubezpieczenia jest prawidłową kwotą zwiększoną przyrostowo. |
-   | Długoterminowa niepełnosprawność<br><br>ADD (podstawowe ubezpieczenie na życie, dobrowolne ubezpieczenie na życie) | Kwota przyrostowa | Przyrostowa suma ubezpieczenia w planie. Na przykład jeśli kwota przyrostowa wynosi 1000, pracownik nie może mieć ubezpieczenia na 200 500 PLN — trzeba je zaokrąglić w górę do 201 000 PLN lub w dół do 200 000 PLN. |
-   | Długoterminowa niepełnosprawność<br><br>ADD (podstawowe ubezpieczenie na życie, dobrowolne ubezpieczenie na życie) | Kierunek przyrostowy | Określa kierunek zaokrąglania — w górę lub w dół — jeśli kwota pokrycia nie spełnia wartości kwoty przyrostowej. |
+   | <ul><li>Medyczny (Medyczny, Stomatologia, Okulistyka, HMO)</li><li>Inne (PTO, Sprawność fizyczna)</li><li>Inne</li><li>Długoterminowa niepełnosprawność</li><li>ADD (podstawowe ubezpieczenie na życie, dobrowolne ubezpieczenie na życie)</li><li>Oszczędnościowy (na przykład 401(k))</li><li>FSA</li></ul> | Kwota kwalifikująca się przed opodatkowaniem | Określa, czy można wpłacać środki do planu przed naliczeniem podatków. |
+   | <ul><li>Medyczny (Medyczny, Stomatologia, Okulistyka, HMO)</li><li>Inne (PTO, Sprawność fizyczna)</li><li>Długoterminowa niepełnosprawność</li><li>ADD (podstawowe ubezpieczenie na życie, dobrowolne ubezpieczenie na życie)</li><li>Oszczędnościowy (na przykład 401(k))</li><li>FSA</li></ul> | Kwota kwalifikująca się po opodatkowaniu | Określa, czy można wpłacać środki do planu po naliczeniu podatków. |
+   | <ul><li>Medyczny (Medyczny, Stomatologia, Okulistyka, HMO)</li><li>Inne (PTO, Sprawność fizyczna)</li><li>Długoterminowa niepełnosprawność</li><li>ADD (podstawowe ubezpieczenie na życie, dobrowolne ubezpieczenie na życie)</li><li>Oszczędnościowy (na przykład 401(k))</li><li>FSA</li></ul> | Osoba wpłacająca | Określa, kto wpłaca środki do plany — pracownik, pracodawca, czy obie strony. |
+   | <ul><li>Długoterminowa niepełnosprawność</li><li>ADD (podstawowe ubezpieczenie na życie, dobrowolne ubezpieczenie na życie)</li></ul> | Minimalne objęcie świadczeniem | Minimalna suma ubezpieczenia wymagana w planie. |
+   | <ul><li>Długoterminowa niepełnosprawność</li><li>ADD (podstawowe ubezpieczenie na życie, dobrowolne ubezpieczenie na życie)</li></ul> | Maksymalne objęcie świadczeniem | Maksymalna suma ubezpieczenia wymagana w planie. |
+   | <ul><li>Długoterminowa niepełnosprawność</li><li>ADD (podstawowe ubezpieczenie na życie, dobrowolne ubezpieczenie na życie)</li></ul> | Użyj przyrostów objęcia świadczeniem | Określa, czy należy sprawdzać, czy kwota ubezpieczenia jest prawidłową kwotą zwiększoną przyrostowo. |
+   | <ul><li>Długoterminowa niepełnosprawność</li><li>ADD (podstawowe ubezpieczenie na życie, dobrowolne ubezpieczenie na życie)</li></ul> | Kwota przyrostowa | Przyrostowa suma ubezpieczenia w planie. Na przykład jeśli kwota przyrostowa wynosi 1000, pracownik nie może mieć ubezpieczenia na 200 500 PLN — trzeba je zaokrąglić w górę do 201 000 PLN lub w dół do 200 000 PLN. |
+   | <ul><li>Długoterminowa niepełnosprawność</li><li>ADD (podstawowe ubezpieczenie na życie, dobrowolne ubezpieczenie na życie)</li></ul> | Kierunek przyrostowy | Określa kierunek zaokrąglania — w górę lub w dół — jeśli kwota pokrycia nie spełnia wartości kwoty przyrostowej. |
    | ADD (podstawowe ubezpieczenie na życie, dobrowolne ubezpieczenie na życie) | Dowody dotyczące ubezpieczenia | Określa, czy pracownik etatowy musi dostarczyć dowód potwierdzający zdolność ubezpieczeniową. |
    | ADD (podstawowe ubezpieczenie na życie, dobrowolne ubezpieczenie na życie) | Liczba dni | Kwota w walucie rozliczeniowej. To pole jest aktywne tylko po zaznaczeniu pola wyboru Dowody dotyczące ubezpieczenia. |
-   | Oszczędnościowy (na przykład 401(k))<br><br>FSA | Minimalny roczny wkład | Minimalna kwota wpłat wymagana w planie. |
-   | Oszczędnościowy (na przykład 401(k))<br><br>FSA | Maksymalny roczny wkład | Maksymalna kwota wpłat wymagana w planie. |
+   | <ul><li>Oszczędnościowy (na przykład 401(k))</li><li>FSA</li></ul> | Minimalny roczny wkład | Minimalna kwota wpłat wymagana w planie. |
+   | <ul><li>Oszczędnościowy (na przykład 401(k))</li><li>FSA</li></ul> | Maksymalny roczny wkład | Maksymalna kwota wpłat wymagana w planie. |
    | Oszczędnościowy (na przykład 401(k)) | Maksymalna kwota roczna pracodawcy | Maksymalna kwota, jaką pracodawca może wpłacić do planu oszczędnościowego pracownika w okresie świadczeniowym. Aby można było skorzystać z tego pola, należy zaznaczyć pole wyboru Dopasowanie pracodawcy. |
    | Oszczędnościowy (na przykład 401(k)) | Dopasowanie pracodawcy | Określa, czy pracodawca wpłaca środki do planu oszczędnościowego pracownika. |
    | Oszczędnościowy (na przykład 401(k)) | Procent dopasowania pracodawcy | Procent wkładu pracownika, jaki wpłaci pracodawca. |
@@ -121,7 +120,7 @@ Możesz wyświetlić pracowników, którzy są zarejestrowani w wybranym planie 
 
 1. W obszarze roboczym **Zarządzanie świadczeniami** w sekcji **Plany** wybierz opcję **Plany świadczeń**.
 
-2. Na karcie **Świadczenia** na pasku nawigacji wybierz pozycję **Zarejestrowani pracownicy**.
+2. Wybierz opcję **Zarejestrowani pracownicy**.
 
 ## <a name="attach-coverage-options"></a>Dołącz opcje objęcia świadczeniem
 
@@ -129,7 +128,7 @@ Do wybranego planu świadczeń można dodać opcje objęcia świadczeniami. Doł
 
 1. W obszarze roboczym **Zarządzanie świadczeniami** w sekcji **Plany** wybierz opcję **Plany świadczeń**.
 
-2. Na karcie **Świadczenia** na pasku nawigacji wybierz pozycję **Załącz opcje pokrycia**.
+2. Wybierz opcję **Dołącz opcje objęcia świadczeniem**.
 
 ## <a name="override-eligibility-rules"></a>Zastąp reguły uprawnień
 
@@ -137,7 +136,7 @@ Pracowników można dodawać do planu jako wyjątki od reguł uprawnień. Każdy
 
 1. W obszarze roboczym **Zarządzanie świadczeniami** w sekcji **Plany** wybierz opcję **Plany świadczeń**.
 
-2. Na karcie **Świadczenia** na pasku nawigacji wybierz pozycję **Nadpisanie zasady kwalifikowania się**.
+2. Wybierz opcję **Zastąpienie reguły uprawnienia**.
 
 ## <a name="view-attached-periods"></a>Wyświetlanie dołączonych okresów
 
@@ -145,21 +144,18 @@ Istnieje możliwość wyświetlenia listy dostępnych okresów świadczeniowych.
 
 1. W obszarze roboczym **Zarządzanie świadczeniami** w sekcji **Plany** wybierz opcję **Plany świadczeń**.
 
-2. Wybierz kartę **Okresy** na bocznym pasku nawigacyjnym.
+2. Wybierz opcję **Okresy**.
 
-## <a name="view-plan-description"></a>Opis widoku planu
+## <a name="view-plan-information"></a>Wyświetlanie informacji o planie
 
-Można dodać opis planu, aby pomóc pracownikom w wyborze świadczeń. Wprowadzony tutaj opis o planie jest wyświetlany w obszarze Samoobsługa pracownika etatowego po umieszczeniu wskaźnika myszy na planie na liście opcji objęcia świadczeniami.
+Można dodać opis planu, aby pomóc pracownikom w wyborze świadczeń. Wprowadzone tutaj informacje o planie są wyświetlane w obszarze Samoobsługa pracownika etatowego po umieszczeniu wskaźnika myszy na planie na liście opcji objęcia świadczeniami.
 
 1. W obszarze roboczym **Zarządzanie świadczeniami** w sekcji **Plany** wybierz opcję **Plany świadczeń**.
 
-2. Na karcie **Świadczenia** na pasku nawigacji wybierz pozycję **Opis planu**.
+2. Wybierz opcję **Informacje o planie**.
 
 ## <a name="view-flex-credit-programs"></a>Wyświetl programy kredytu elastycznego
 
 1. W obszarze roboczym **Zarządzanie świadczeniami** w sekcji **Plany** wybierz opcję **Plany świadczeń**.
 
-2. Na karcie **Świadczenia** na pasku nawigacji wybierz pozycję **Programy kredytów Flex**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+2. Wybierz opcję **Programy kredytu elastycznego**.

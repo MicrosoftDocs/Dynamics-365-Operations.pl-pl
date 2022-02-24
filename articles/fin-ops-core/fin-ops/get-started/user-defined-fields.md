@@ -2,9 +2,11 @@
 title: Tworzenie pól niestandardowych i praca z nimi
 description: W tym temacie opisano, jak tworzyć niestandardowe pola za pomocą interfejsu użytkownika w celu dostosowania aplikacji do unikatowych potrzeb firmy.
 author: jasongre
-ms.date: 05/24/2021
+manager: AnnBe
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SysCustomFieldManageFields
 audience: Application User
@@ -13,23 +15,20 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 2ab1c402d99c1d9b7d7dc06e64c93fe43c5a1e9f
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: eee5b072f999aab7d4a5e72888abad3915e03d5b
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071192"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798125"
 ---
 # <a name="create-and-work-with-custom-fields"></a>Tworzenie pól niestandardowych i praca z nimi
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
-
 Zawiera już w standardzie rozbudowany zestaw pól do zarządzania różnorodnymi procesami biznesowymi, ale czasami firma musi śledzić dodatkowe informacje w systemie. Podczas gdy programiści mogą dodawać te pola jako rozszerzenia w narzędziach programistycznych, funkcja pól niestandardowych umożliwia dodawanie pól bezpośrednio z interfejsu użytkownika, co pozwala na dostosowanie aplikacji do potrzeb firmy przy użyciu przeglądarki sieci Web.
 
-*Tylko użytkownicy z uprawnieniami specjalnymi mają dostęp do tej funkcji.*
+Opcja dodawania pól niestandardowych jest dostępna w aktualizacji platformy 13 i nowszych wersjach. Tylko użytkownicy z uprawnieniami specjalnymi mają dostęp do tej funkcji.
 
 W tym nagraniu wideo przedstawiono, jak łatwe jest do dodawanie niestandardowego pola do strony: [Dodawanie pól niestandardowych](https://www.youtube.com/watch?v=gWSGZI9Vtnc).
 
@@ -49,9 +48,8 @@ Kroki poniżej opisują proces tworzenia niestandardowego pola i umieszczania go
     Jeśli nie widać przycisku **Utwórz nowe pole**, nie masz uprawnień niezbędnych do korzystania z tej funkcji.
 
 7. W oknie dialogowym **Utwórz nowe pole** wprowadź następujące informacje.
-   
-    1. Wybierz tabelę bazy danych, do której powinno zostać dodane to pole. Należy zauważyć, że na liście rozwijanej będą wyświetlane tylko tabele, które obsługują niestandardowe pola. Sekcja poniżej zawiera szczegółowe informacje techniczne o obsługiwanych tabelach.
 
+    1. Wybierz tabelę bazy danych, do której powinno zostać dodane to pole. Należy zauważyć, że na liście rozwijanej będą wyświetlane tylko tabele, które obsługują niestandardowe pola. Sekcja poniżej zawiera szczegółowe informacje techniczne o obsługiwanych tabelach.
     2. Wybierz typ danych dla nowego pola. Dostępne typy danych to Pole wyboru, Data, Data i godzina, Liczba dziesiętna, Liczba, Lista wyboru i Tekst.
 
         - Jeśli wybrano typ danych Tekst, można również określić maksymalną długości tekstu, jaki można wprowadzić w tym polu.
@@ -64,15 +62,11 @@ Kroki poniżej opisują proces tworzenia niestandardowego pola i umieszczania go
 10. Kliknij przycisk **Wstaw**, aby wstawić oznaczone pola do wybranego regionu formularza.
 11. **Opcjonalnie:** Na pasku narzędzi personalizacji włącz tryb **Przenieś**, aby przenieść nowe pola w żądane miejsce w wybranym regionie. Zobacz temat [Dostosowanie do użytkownika](personalize-user-experience.md), aby uzyskać więcej informacji na temat używania różnych funkcji personalizacji w celu dostosowania formularza do własnych potrzeb.
 
-> [!WARNING]
-> Możliwość wprowadzania wartości w polu własnym dodanym do strony zależy od tego, czy tabela powiązana z polem własnym jest edytowalna czy tylko do odczytu. Jeśli przypisana tabela jest tylko do odczytu, wszystkie pola powiązane z tą tabelą, w tym pola własne, będą również tylko do odczytu.
-
-
 ## <a name="sharing-custom-fields-with-other-users"></a>Udostępnianie niestandardowych pól innym użytkownikom
 
-Po utworzeniu niestandardowego pola i jego uwidocznieniu na stronie można innym użytkownikom w systemie udostępnić zaktualizowany widok strony zawierający nowe pole. Można to zrobić na dwa różne sposoby przy użyciu funkcji personalizacji produktu:
+Po utworzeniu niestandardowego pola i jego uwidocznieniu w formularzu można innym użytkownikom w systemie udostępnić zaktualizowany widok strony zawierający nowe pole. Można to zrobić na dwa różne sposoby przy użyciu funkcji personalizacji produktu:
 
-- Zalecaną ścieżką jest **opublikowanie [zapisanego widoku](saved-views.md)** z niestandardowym polem dodanym na stronie do odpowiedniego zestawu użytkowników. Jeśli funkcja zapisanych widoków nie jest włączona, administrator systemu może zastosować personalizację do wybranych użytkowników z poziomu formularza Personalizacja. Aby uzyskać więcej informacji, zobacz [Dostosowanie doświadczenia użytkownika](personalize-user-experience.md).
+- Zalecanym sposobem jest skorzystanie z pośrednictwa administratora systemu, który może rozesłać personalizację do wszystkich użytkowników lub tylko do grupy użytkowników. Aby uzyskać więcej informacji, zobacz [Dostosowanie do użytkownika](personalize-user-experience.md).
 - Alternatywnie można wyeksportować swoje zmiany (nazywane *personalizacjami*), wysłać do jednego lub więcej użytkowników, a następnie polecić użytkownikom, aby zaimportowali zmiany. Opcja **Zarządzaj** umieszczona na pasku narzędzi personalizacji umożliwia eksportowanie i importowanie personalizacji.
 
 ## <a name="managing-custom-fields"></a>Zarządzanie polami niestandardowymi
@@ -143,10 +137,6 @@ W rzadkich przypadkach może się okazać, że pole niestandardowe nie jest już
 
 ## <a name="appendix"></a>Dodatek
 
-### <a name="why-cant-i-enter-a-value-in-my-custom-field"></a>Dlaczego nie można wprowadzić wartości w polu niestandardowym? 
-
-Jeśli nie możesz wpisać wartości do pola niestandardowego, gdy strona jest w trybie edycji, może to być spowodowane tym, że tabela, do której pole zostało dodane jest obecnie tylko do odczytu. Wszystkie pola tabeli stają się tylko do odczytu, jeśli tabela podpierająca jest skonfigurowana jako tylko do odczytu na stronie.   
-
 ### <a name="who-can-create-custom-fields"></a>Kto może tworzyć pola niestandardowe?
 
 Dla bezpieczeństwa systemu tylko administratorzy systemu mogą domyślnie tworzyć pola niestandardowe. Jeśli jednak organizacja uzna za konieczne, administrator systemu może niektórym użytkownikom zaawansowanym nadać prawo tworzenia niestandardowych pól, używając do tego roli **Użytkownik zaawansowany personalizacji środowiska uruchomieniowego**. Użytkownicy bez tej roli zabezpieczeń nie będą mogli tworzyć pól niestandardowych, ale będą widzieć pola niestandardowe dodane przez innych użytkowników w systemie oraz będą mogli z nich korzystać.
@@ -172,6 +162,3 @@ Ze względów wydajnościowych i technicznych obecnie pola niestandardowe można
 ### <a name="can-i-reference-custom-fields-from-the-developer-tools"></a>Czy mogę odwoływać się do niestandardowych pól z poziomu narzędzi deweloperskich?  
 
 Pola niestandardowe mogą być zarządzane tylko za pośrednictwem interfejsu użytkownika i nie może odwoływać się do niego kod. 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

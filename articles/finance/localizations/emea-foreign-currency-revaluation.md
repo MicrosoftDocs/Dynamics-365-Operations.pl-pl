@@ -2,23 +2,26 @@
 title: Przeszacowanie w walucie obcej dla kont bankowych
 description: Ten temat zawiera informacje o przeszacowywaniu w walucie obcej dla kont bankowych.
 author: panolte
+manager: AnnBe
 ms.date: 03/28/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.custom: 11464
 ms.search.region: Czech Republic, Estonia, Latvia, Lithuania, Poland
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b5739869dde52ae81e725584e18008a4b6f30ee5f827aba8fc8ee8523fce1b39
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad77b65f38b5f3b792e61634f09da916470d2d1d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723751"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408366"
 ---
 # <a name="foreign-currency-revaluation-for-bank-accounts"></a>Przeszacowanie w walucie obcej dla kont bankowych
 
@@ -69,6 +72,3 @@ Musisz przeszacować i dostosować konta bankowe, jeśli istnieje różnica kurs
 
 > [!NOTE]
 > W księdze głównej są wyświetlane dwie oddzielne transakcje: jedna w walucie rozliczeniowej i jedna w walucie raportowania.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

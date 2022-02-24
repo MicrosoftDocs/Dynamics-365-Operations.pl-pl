@@ -1,25 +1,27 @@
 ---
 title: Dokumentacja aplikacji Finance and Operations
-description: Dokumentacja dla aplikacji Finance and Operations.
-author: tonyafehr
-ms.date: 04/13/2021
+description: Dokumentacja aplikacji Finance and Operations.
+author: robinarh
+manager: AnnBe
+ms.date: 07/25/2019
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User
-ms.reviewer: tfehr
-ms.custom: intro-internal
+ms.reviewer: rhaertle
+ms.custom: 62303
 ms.search.region: Global
-ms.author: tfehr
+ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf2278cbf47c5fd2937e7da55c8777709ab7d356
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: a44324a14a78174ad4d68e6686c523c49d7aa3bd
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075404"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694393"
 ---
 # <a name="finance-and-operations-application-documentation"></a>Dokumentacja aplikacji Finance and Operations
 
@@ -41,14 +43,14 @@ Wiele z tych informacji dotyczy również produktów pokrewnych: Dynamics 365 Co
 <h3><a href="get-started/before-you-buy.md">Zanim kupisz</a></h3>
 <p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Rejestracja w celu uzyskania subskrypcji w wersji zapoznawczej</a></p>
  <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Wybieranie opcji wdrożenia</a></p>
- <p><a href="get-started/purchase-on-premises.md">Zakup rozwiązania Finance and Operations (on-premises)</a></p>
+ <p><a href="get-started/purchase-on-premises.md">Zakup aplikacji Finance and Operations (lokalnie)</a></p>
 
 <h3><a href="imp-lifecycle/implementation-lifecycle.md">Cykl życia implementacji</a></h3>
-<p><a href="/dynamics365/fasttrack/">FastTrack for Dynamics 365</a></p>
+<p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
 <p><a href="imp-lifecycle/onboard.md">Rozpoczynanie korzystania z projektu</a></p>
 <p><a href="imp-lifecycle/prepare-go-live.md">Przygotowywanie do rozpoczęcia eksploatacji</a></p>
 
-<h3><a href="../dev-itpro/lifecycle-services/oneversion-overview.md">Aktualizacje usługi One Version</a></h3>
+<h3><a href="../dev-itpro/lifecycle-services/oneversion-overview.md">Aktualizacje do jednej wersji usługi</a></h3>
 <p><a href="get-started/one-version.md">Aktualizacje do jednej wersji usługi — często zadawane pytania</a></p>
 <p><a href="../dev-itpro/migration-upgrade/versions-update-policy.md">Zasady dotyczące cyklu życia oprogramowania: wersje chmurowe</a></p>
 <p><a href="../dev-itpro/migration-upgrade/on-prem-version-update-policy.md">Zasady dotyczące cyklu życia oprogramowania: wersje lokalne</a></p>
@@ -65,7 +67,7 @@ Wiele z tych informacji dotyczy również produktów pokrewnych: Dynamics 365 Co
 <h3><a href="../dev-itpro/data-entities/integration-overview.md">Integracje</a></h3>
 <p><a href="../dev-itpro/business-events/home-page.md">Zdarzenia biznesowe</a></p>
 <p><a href="../dev-itpro/data-entities/data-entities.md">Jednostki danych</a></p>
-<p><a href="../dev-itpro/data-entities/fin-ops-connector.md">Integracja przy użyciu usługi Microsoft Power Automate</a></p>
+<p><a href="../dev-itpro/data-entities/fin-ops-connector.md">Integracja przy użyciu oprogramowania Microsoft Power Automate</a></p>
 
 <h3><a href="../../finance/index.md">Zarządzanie finansami</a></h3>
 <p><a href="../../finance/accounts-payable/accounts-payable.md">Rozrachunki z dostawcami</a></p>
@@ -76,18 +78,16 @@ Wiele z tych informacji dotyczy również produktów pokrewnych: Dynamics 365 Co
 <p><a href="../../finance/cost-accounting/cost-accounting-home-page.md">Rachunek kosztów</a></p>
 <p><a href="../../finance/fixed-assets/fixed-assets.md">Środki trwałe</a></p>
 <p><a href="../../finance/general-ledger/general-ledger.md">Księga główna</a></p>
-<p><a href="/dynamics365/project-operations/prod-pma/overview-project-management-accounting">Zarządzanie projektami</a></p>
+<p><a href="../../finance/project-management/overview-project-management-accounting.md">Zarządzanie projektami</a></p>
 <p><a href="../../finance/public-sector/public-sector-functionality.md">Sektor publiczny</a></p>
 <p><a href="../dev-itpro/lcs-solutions/country-region.md">Funkcje wymagane lokalnymi przepisami prawa</a></p>
 
 <h3><a href="hr/hr-landing-page.md">Zasoby ludzkie</a></h3>
-<p><a href="../../human-resources/hr-employee-manager-self-service-overview.md">Samoobsługa pracownika etatowego</a></p>
-<p><a href="../../human-resources/hr-personnel-departments-jobs-positions.md">Zarządzanie pracownikami</a></p>
-<p><a href="../../human-resources/hr-leave-and-absence-overview.md">Urlopy i nieobecności</a></p>
 <p><a href="../../human-resources/hr-benefits-manage-program.md">Świadczenia</a></p>
-<p><a href="../../human-resources/hr-develop-performance-management-overview.md">Rozwój pracowników etatowych</a></p>
-<p><a href="../../human-resources/hr-learning-courses.md">Szkolenia</a></p>
- <p><a href="hr/localizations/noam-usa-payroll.md">Lista płac (USA)</a></p>
+<p><a href="../../human-resources/hr-develop-performance-management-overview.md">Rozwój i szkolenia pracownika etatowego</a></p>
+<p><a href="../../human-resources/hr-learning-questionnaires.md">Kwestionariusze</a></p>
+<p><a href="hr/manage-recruiting-process.md">Rekrutacja</a></p>
+<p><a href="hr/localizations/noam-usa-payroll.md">Lista płac (USA)</a></p>
 
 </td>
 <td>
@@ -115,7 +115,7 @@ Wiele z tych informacji dotyczy również produktów pokrewnych: Dynamics 365 Co
 <p><a href="../dev-itpro/extensibility/extensibility-home-page.md">Możliwości rozszerzania</a></p>
 <p><a href="../dev-itpro/office-integration/office-integration.md">Integracja z pakietem Office</a></p>
 <p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md">Ciągłe dostarczanie</a></p>
-<p><a href="../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md">Platforma mobilna</a></p>
+<p><a href="../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md">Mobile platform</a></p>
 <p><a href="get-started/demo-data.md">Demo data</a></p>
 
 <h3><a href="../dev-itpro/sysadmin/system-administration-home-page.md">Administracja</h3>
@@ -128,11 +128,16 @@ Wiele z tych informacji dotyczy również produktów pokrewnych: Dynamics 365 Co
 </td>
 <td>
 <h3>Powiązane produkty</h3>
-<h4><a href="/dynamics365/commerce/">Dynamics 365 Commerce</a></h4>
-<p><a href="../../commerce/call-center-functionality.md">Biuro obsługi</p>
-<p><a href="../../commerce/define-maintain-retail-channels.md">Konfigurowanie kanałów i zarządzanie nimi</p>
-<p><a href="../../commerce/retail-peripherals-overview.md">Oprogramowanie MPOS i Cloud POS</p>
-<p><a href="../../commerce/dev-itpro/dev-retail-home-page.md">Rozwiązanie Commerce — programowanie i administracja</p>
+<h4><a href="../../retail/index.md">Dynamics 365 Commerce</a></h4>
+<p><a href="../../retail/call-center-functionality.md">Biuro obsługi</p>
+<p><a href="../../retail/define-maintain-retail-channels.md">Konfigurowanie kanałów i zarządzanie nimi</p>
+<p><a href="../../retail/retail-peripherals-overview.md">Oprogramowanie MPOS i Cloud POS</p>
+<p><a href="../../retail/dev-itpro/dev-retail-home-page.md">Rozwiązanie Commerce — programowanie i administracja</p>
+
+<h4><a href="../../human-resources/hr-welcome.md">Dynamics 365 Human Resources</a></h4>
+<p><a href="../../human-resources/hr-admin-overview.md">Podręcznik administratora</a></p>
+<p><a href="../../human-resources/hr-developer-overview.md">Podręcznik dewelopera</a></p>
+<p><a href="../../human-resources/hr-hrpro-overview.md">Przewodnik użytkownika</a></p>
 
 
 </td>
@@ -140,6 +145,3 @@ Wiele z tych informacji dotyczy również produktów pokrewnych: Dynamics 365 Co
 
 </tbody>
 </table>
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

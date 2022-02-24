@@ -2,9 +2,11 @@
 title: Przygotuj metadane dla konkretnej aplikacji dla RCS i ER
 description: Kroki w tym temacie wyjaśniają, w jaki sposób można przygotować metadane konkretnej aplikacji dla usługi Regulatory configuration service (RCS) oraz Elektronicznego raportowania (ER).
 author: NickSelin
+manager: AnnBe
 ms.date: 04/04/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
@@ -13,12 +15,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9136bd3db2aee1447d6af3b3c47b908177cee966aba630490cc6e72072525d29
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f15b78d3ed5b4df47540f9f89cc69c0b535a7241
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735605"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680201"
 ---
 # <a name="prepare-application-specific-metadata-for-rcs-and-er"></a>Przygotuj metadane dla konkretnej aplikacji dla RCS i ER
 
@@ -278,6 +280,3 @@ Jeśli trzeba ocenić ten model mapowania przy użyciu metadanych innej wersji a
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 Możesz również otworzyć instrukcje **Przygotuj metadane aplikacji, które mogą być użyte w RCS** w aplikacji lub **Uzyskaj dostęp do metadanych aplikacji przez konfigurację ER** i **Uzyskaj dostęp do metadanych aplikacji przez inne połączone aplikacje** w RCS. Te przewodniki mogą zostać pobrane ze strony [Przewodniki Elektronicznego Raportowania dla Dynamics 365 for Finance and Operations 8.1](https://go.microsoft.com/fwlink/?linkid=2082739).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
 title: Współpraca z dostawcami zewnętrznymi przy użyciu modułu Współpraca z dostawcami
 description: W tym temacie wyjaśniono, jak pracownicy działu zakupów mogą współpracować z zewnętrznymi dostawcami w celu wymiany informacji o zamówieniach zakupu i zapasach konsygnacyjnych.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchRFQCaseTableListPage, VendVendorPortalInvoicePart, PurchaseOrderResponseActionRemarks, PurchVendorPortalAllResponse, PurchOrderInExternalReview, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3b679f8daed1e09c832a5d138473cccba03552f6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 594a5bc8762d4c3fdc0bfd901ab97262b0f67a53
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576983"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016760"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Współpraca z dostawcami zewnętrznymi przy użyciu modułu Współpraca z dostawcami
 
@@ -33,7 +35,7 @@ Aby uzyskać więcej informacji o tym, co zewnętrzni dostawcy mogą robić w in
 > [!NOTE]
 > Informacje na temat współpracy z dostawcą w tym temacie dotyczą tylko aktualnej wersji rozwiązania Supply Chain Management. W systemie Microsoft Dynamics AX 7.0 (luty 2016 r.) i aplikacji Microsoft Dynamics AX w wersji 7.0.1 (maj 2016 r.) do współpracy z dostawcami służy moduł **Portal dostawców**. Informacje o module **Portal dostawców** zawiera temat [Współpraca z dostawcami za pomocą portalu dostawców](collaborate-vendors-vendor-portal.md).
 
-Aby uzyskać więcej informacji o tym, jak dostawcy mogą wykorzystywać portal współpracy z dostawcami w procesach fakturowania, zobacz [Obszar roboczy fakturowania w portalu współpracy z dostawcami](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md). Aby uzyskać więcej informacji o inicjowaniu obsługi nowych użytkowników portalu współpracy z dostawcami, zobacz [Zarządzanie użytkownikami portalu współpracy z dostawcami](manage-vendor-collaboration-users.md).
+Aby uzyskać więcej informacji o tym, jak dostawcy mogą wykorzystywać portal współpracy z dostawcami w procesach fakturowania, zobacz [Obszar roboczy fakturowania w portalu współpracy z dostawcami](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md). Aby uzyskać więcej informacji o inicjowaniu obsługi nowych użytkowników portalu współpracy z dostawcami, zobacz [Zarządzanie użytkownikami portalu współpracy z dostawcami](manage-vendor-collaboration-users.md).
 
 ## <a name="defining-the-information-that-is-shown-to-vendors-when-they-respond-to-pos"></a>Definiowanie informacji wyświetlanych dostawcom podczas odpowiadania na zamówienia zakupu
 
@@ -256,6 +258,3 @@ Użytkownik, który konfiguruje parametry procesu ZO może utworzyć wiele szabl
 - %createddate%
 
 Jeśli zmiana jest wymagana i jest wysyłana po przesłaniu ZO , zapytanie ofertowe zostanie wysłane do wszystkich zaproszonych dostawców. Opublikowany dokument zostaną również zaktualizowane na stronie **Otwarte opublikowane zapytania ofertowe**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

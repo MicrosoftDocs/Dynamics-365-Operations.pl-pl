@@ -1,27 +1,36 @@
 ---
-# required metadata
 title: Konfigurowanie ocen i recenzji
 description: W tym temacie opisano sposób konfigurowania witryny e-Commerce w celu wyświetlania ocen odbiorców i recenzji w Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 02/17/2020
 ms.topic: article
-ms.prod: null
-ms.technology: null
+ms.prod: ''
+ms.service: dynamics-365-commerce
+ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.custom: null
-ms.assetid: null
+ms.search.scope: Operations, Retail, Core
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: gmohanv
-ms.search.validFrom: '2019-10-31'
+ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
+ms.openlocfilehash: edd2082b5d2cafcb955f8e3c7762bcba523ac479
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414843"
 ---
-
 # <a name="configure-ratings-and-reviews"></a>Konfigurowanie ocen i recenzji
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano sposób konfigurowania witryny e-Commerce w celu wyświetlania ocen odbiorców i recenzji w Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Omówienie
 
 Oceny i Recenzje w witrynach e-Commerce umożliwiają klientom zapoznanie się z produktami przed podjęciem decyzji o zakupie, kierując ich uwagę na te produkty. W przypadku witryn e-Commerce, oceny i recenzje są również mechanizmami zbierania opinii klientów dotyczących produktów. 
 
@@ -40,7 +49,7 @@ Aby skonfigurować witrynę do wyświetlania ocen i recenzji, wykonaj następuj�
 
 Na poniższej ilustracji przedstawiono, jak wygląda konfiguracja w Dynamics 365 Commerce.
 
-![Konfigurowanie witryny, aby wyświetlała oceny i recenzje.](media/rnr-eCommerce-site-appsettings.png)
+![Konfigurowanie witryny, aby wyświetlała oceny i recenzje](media/rnr-eCommerce-site-appsettings.png)
 
 ## <a name="link-a-product-rating-to-the-reviews-section-of-a-pdp"></a>Łączenie oceny produktu z sekcją recenzji w PDP
 
@@ -54,7 +63,7 @@ Aby połączyć ocenę produktu z sekcją **Recenzje** PDP, należy wykonać nas
 
 Na poniższej ilustracji przedstawiono, jak wygląda konfiguracja w Dynamics 365 Commerce.
 
-![Łączenie oceny produktu z sekcją recenzji w PDP.](media/rnr-eCommerce-buy-box-rating-summary.png)
+![Łączenie oceny produktu z sekcją recenzji w PDP](media/rnr-eCommerce-buy-box-rating-summary.png)
 
 ## <a name="configure-the-link-for-the-privacy-and-policy-page"></a>Konfiguruj łącze do strony prywatność i zasady
 
@@ -69,7 +78,7 @@ Aby skonfigurować link do strony prywatności i zasad, wykonaj następujące kr
 
 Na poniższej ilustracji przedstawiono, jak wygląda konfiguracja w Dynamics 365 Commerce.
 
-![Konfiguracja łącza do strony prywatność i zasady.](media/rnr-eCommerce-rnr-privacy-policy-link.png)
+![Konfiguracja łącza do strony prywatność i zasady](media/rnr-eCommerce-rnr-privacy-policy-link.png)
 
 ## <a name="configure-ratings-and-reviews-modules-on-product-details-pages"></a>Konfiguruj moduły ocen i recenzji na stronach szczegółów produktu
 
@@ -83,17 +92,6 @@ Aby uzyskać informacje na temat konfigurowania modułów oceny i przeglądu, pa
 
 [Zarządzanie ocenami i recenzjami](manage-reviews.md)
 
+[Konfiguruj moduły ocen i recenzji na stronach szczegółów produktu](ratings-reviews-modules.md)
+
 [Synchronizacja ocen produktów w rozwiązaniu Dynamics 365 Retail](sync-product-ratings.md)
-
-[Włączanie ręcznego publikowania ocen i recenzji przez moderatora](manual-publish-rating-reviews.md)
-
-[Importowanie i eksportowanie klasyfikacji oraz przeglądów](import-export-reviews.md)
-
-[Konfigurowanie uwierzytelniania usługa-usługa](service-to-service-auth.md)
-
-[Oceny i recenzje — często zadawane pytania](ratings-reviews-faq.md)
-
-[Moduły ocen i recenzji](ratings-reviews-modules.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

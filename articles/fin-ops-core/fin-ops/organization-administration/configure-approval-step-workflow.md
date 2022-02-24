@@ -2,9 +2,11 @@
 title: Konfigurowanie kroków zatwierdzania w przepływie pracy
 description: W tym temacie wyjaśniono sposób konfigurowania właściwości kroku zatwierdzania.
 author: ChrisGarty
+manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -14,19 +16,16 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 84ff82dcb9f4ce930b4f1122790f7989c56fac35
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 09f32833d914c05a1830e2bba36ebe4c66a8a52c
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070784"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797103"
 ---
 # <a name="configure-approval-steps-in-a-workflow"></a>Konfigurowanie kroków zatwierdzania w przepływie pracy
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 W tym temacie wyjaśniono sposób konfigurowania właściwości kroku zatwierdzania.
 
@@ -159,7 +158,7 @@ Wykonaj poniższe kroki, aby określić, komu ma zostać przypisany ten krok zat
 
     - **Pojedyncza osoba zatwierdzająca** — Akcja stosowana do dokumentu jest określona przez pierwszą osobę, która odpowiada. Na przykład Tomasz przesłał raport z wydatków na 15 000 zł. Raport z wydatków jest obecnie przypisany do Magdy, Ewy i Bartka. Jeśli pierwszą osobą, która odpowie na dokument, jest Magda, wybrana przez nią akcja zostanie zastosowana do dokumentu. Jeśli Magda odrzuci dokument, zostanie on odrzucony i wysłany z powrotem do Tomasza. Po zatwierdzeniu przez Magdę dokument zostanie przesłany do Anny w celu zatwierdzenia.
 
-        ![Przepływ pracy z procesem zatwierdzania.](./media/workflow_multipleusersinstep.gif)
+        ![Przepływ pracy z procesem zatwierdzania](./media/workflow_multipleusersinstep.gif)
 
     - **Większość osób zatwierdzających** — Akcja stosowana do dokumentu jest określana po uzyskaniu odpowiedzi od większości osób zatwierdzających. Na przykład Tomasz przesłał raport z wydatków na 15 000 zł. Raport z wydatków jest obecnie przypisany do Magdy, Ewy i Bartka. Jeżeli dwoma pierwszym osobami zatwierdzającymi, które zareagowały, są Magda i Ewa, ich operacje są stosowane do dokumentu.
 
@@ -277,6 +276,3 @@ Jeśli użytkownik nie podejmie działania wobec dokumentu w wyznaczonym czasie,
 
 5. Powtórz kroki od 3 do 4 dla każdego użytkownika, który powinien zostać dodany do ścieżki eskalacji. Można zmienić kolejność użytkowników.
 6. Jeśli użytkownicy wymienieni w ścieżce eskalacji nie odpowiedzą w wyznaczonym czasie, system automatycznie wykona operację na dokumencie. Aby określić akcję podejmowaną przez system, wybierz wiersz **Akcja**, a następnie na karcie **Zakończ działanie** wybierz akcję.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

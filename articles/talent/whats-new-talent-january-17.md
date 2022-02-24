@@ -45,6 +45,3 @@ Po wprowadzeniu tej zmiany domyślną wartością pola **Inicjator akcji** jest 
 ### <a name="ideas-portal-updated"></a>Zaktualizowano portal pomysłów
 Linki w aplikacji do przesyłania pomysłów dla Talent zostały zaktualizowane pod kątem nowego portalu Pomysły. Wszystkie pomysły wprowadzone w starym portalu zostały przeniesione i są dostępne do głosowania przez innych.  
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

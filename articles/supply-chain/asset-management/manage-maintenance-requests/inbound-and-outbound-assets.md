@@ -1,10 +1,12 @@
 ---
 title: Przychodzące i wychodzące składniki majątku
 description: W tym temacie opisano sposób rejestrowania przychodzących i wychodzących składników majątku w module Zarządzanie składnikami majątku.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetOutboundObjectsListPage, EntAssetOutboundObjectsDeliver, EntAssetInboundObjectsListPage, EntAssetInboundObjectsRecieve
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0bd3127df1b583acc6841c3e115d3beceabcab2756098e567b2269c1dcc94004
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e6dfadf6824c6a3df7be9b3b6f3d9f5dd2749e34
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759630"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018078"
 ---
 # <a name="inbound-and-outbound-assets"></a>Przychodzące i wychodzące składniki majątku
 
@@ -42,7 +44,7 @@ Konfiguracja modułu Zarządzanie składnikami majątku określa, czy można pra
 3. Wybierz **Aktualizuj stan żądania konserwacji**.
 4. Wybierz **Przychodzące** (lub inny stan cyklu życia utworzony dla przychodzących składników majątku), a następnie wybierz przycisk **OK**.
 
-![Rejestrowanie składników majątku jako przychodzących.](media/07-manage-maintenance-requests.png)
+![Rejestrowanie składników majątku jako przychodzących](media/07-manage-maintenance-requests.png)
 
 ## <a name="register-inbound-assets-as-received"></a>Rejestrowanie przychodzących składników majątku jako odebranych
 
@@ -51,7 +53,7 @@ Konfiguracja modułu Zarządzanie składnikami majątku określa, czy można pra
 3. Wybierz opcję **Odbierz składniki majątku**.
 4. W polu **Odebrane** wpisz datę i godzinę. Następnie wybierz opcję **OK**. Rekord zostanie usunięty ze strony listy **Przychodzące składniki majątku**.
 
-![Rejestrowanie przychodzących składników majątku jako odebranych.](media/08-manage-maintenance-requests.png)
+![Rejestrowanie przychodzących składników majątku jako odebranych](media/08-manage-maintenance-requests.png)
 
 ## <a name="register-assets-as-outbound"></a>Rejestrowanie zasobów jako wychodzących
 
@@ -68,6 +70,3 @@ Po ukończeniu zadania konserwacji lub naprawy można zarejestrować zasób jako
 2. Wybierz składnik majątku lub żądanie konserwacji.
 3. Wybierz opcję **Dostarcz zasoby**.
 4. W polu **Dostarczone** wpisz datę i godzinę. Następnie wybierz opcję **OK**. Rekord zostanie usunięty ze strony listy **Zasoby wychodzące**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

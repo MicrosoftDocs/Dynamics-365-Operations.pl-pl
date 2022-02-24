@@ -1,26 +1,37 @@
 ---
-# required metadata
 title: Dodawanie języków do witryny
 description: W tym temacie opisano sposób dodawania obsługi dodatkowych języków do witryny Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
+manager: annbe
 ms.date: 12/12/2019
 ms.topic: article
-ms.prod: null
-ms.technology: null
+ms.prod: ''
+ms.service: dynamics-365-commerce
+ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.custom: null
-ms.assetid: null
+ms.search.scope: Retail, Core, Operations
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: StuHarg
-ms.search.validFrom: '2019-10-31'
+ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
+ms.openlocfilehash: fa3029387d5f1ca605fc9559c4272c8dfebcddaf
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414880"
 ---
 # <a name="add-languages-to-your-site"></a>Dodawanie języków do witryny
+
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano sposób dodawania obsługi dodatkowych języków do witryny Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Omówienie
 
 Serwis www można zlokalizować w dowolnym języku, który jest obsługiwany przez Commerce. (W dalszej części tego tematu zostanie wyświetlona lista obsługiwanych języków.) Aby dodać język do witryny sieci Web, należy go najpierw dodać do sklepu internetowego powiązanego z witryną.
 
@@ -160,9 +171,8 @@ Dodany język będzie teraz dostępny, co umożliwi skonfigurowanie witryny do u
 
 [Dodawanie ikony favicon](add-favicon.md)
 
+[Dodawanie wiadomości powitalnej](add-welcome-message.md)
+
 [Dodawanie powiadomienia o prawach autorskich](add-copyright-notice.md)
 
 [Dodawanie kodu skryptu do stron witryny w celu obsługi telemetrii](add-telemetry.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

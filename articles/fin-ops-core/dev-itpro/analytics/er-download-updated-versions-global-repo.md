@@ -2,9 +2,11 @@
 title: Importowanie zaktualizowanych wersji konfiguracji programu ER
 description: W tym temacie opisano sposób importowania zaktualizowanych wersji konfiguracji raportowania elektronicznego (ER) z globalnego repozytorium usługi Configuration service.
 author: NickSelin
+manager: AnnBe
 ms.date: 06/09/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionImport, ERWorkspace, ERSolutionRepositoryTable
 audience: Application User, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 712bccbd48775cadc069ef5e8a04f9aae3c9f223137bcd394ff1815a720393b5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 897663998c6c95ff6d7172de2abc4d4dd6ec5f12
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734895"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679517"
 ---
 # <a name="import-updated-versions-of-er-configurations"></a>Importowanie zaktualizowanych wersji konfiguracji programu ER
 
@@ -28,7 +30,7 @@ ms.locfileid: "6734895"
 
 [Repozytoria](general-electronic-reporting.md#Repository) raportowania elektronicznego (ER) są używane do udostępniania [konfiguracji ER](general-electronic-reporting.md#Configuration). Można [importować](download-electronic-reporting-configuration-lcs.md) konfiguracjeER z różnych repozytoriów do danego wystąpienia rozwiązania Microsoft Dynamics 365 Finance. Podczas importowania konfiguracji ER [dostawcy konfiguracji](general-electronic-reporting.md#Provider) mogą publikować nowe [wersje](general-electronic-reporting.md#component-versioning) repozytoriów, tak aby można je było udostępniać.
 
-W tym temacie opisano sposób importowania zaktualizowanych wersji konfiguracji ER z globalnego repozytorium usługi Configuration service. Aby uzyskać więcej informacji, należy zapoznać się z tematem [Microsoft Dynamics 365 for Finance and Operations - Regulatory Services, Configuration service](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
+W tym temacie opisano sposób importowania zaktualizowanych wersji konfiguracji ER z globalnego repozytorium usługi Configuration service. Aby uzyskać więcej informacji, należy zapoznać się z tematem [Microsoft Dynamics 365 for Finance and Operations - Regulatory Services, Configuration service](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
 
 ## <a name="review-the-available-updated-versions"></a>Przejrzyj dostępne zaktualizowane wersje
 
@@ -41,11 +43,11 @@ W tym temacie opisano sposób importowania zaktualizowanych wersji konfiguracji 
 2. Wybierz kolejno opcje **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
 3. Na stronie **Konfiguracje lokalizacji** w sekcji **Powiązane łącza** wybierz kafelek **Import aktualizacji wersji konfiguracji**.
 
-    ![Strona lokalizacji konfiguracji.](./media/er-download-updated-versions-global-repo1.png)
+    ![Strona lokalizacji konfiguracji](./media/er-download-updated-versions-global-repo1.png)
 
 4. W oknie dialogowym **Importowanie aktualizacji wersji konfiguracji ER** w polu **Tryb uruchamiania** wybierz opcję **Wyświetl tylko dostępne aktualizacje**. Następnie wybierz opcję **OK**. 
 
-    ![Pole tryb uruchamiania ustawione w taki sposób, aby pokazywać tylko dostępne aktualizacje.](./media/er-download-updated-versions-global-repo2.png)
+    ![Pole tryb uruchamiania ustawione w taki sposób, aby pokazywać tylko dostępne aktualizacje](./media/er-download-updated-versions-global-repo2.png)
 
 5. Przejrzyj odebrane komunikaty. Komunikaty te zawierają następujące informacje na temat konfiguracji ER w bieżącym wystąpieniu Finance oraz w jaki sposób odnoszą się one do zawartości repozytorium globalnego:
 
@@ -72,14 +74,14 @@ W tym temacie opisano sposób importowania zaktualizowanych wersji konfiguracji 
 4. W oknie dialogowym **Importowanie wersji konfiguracji raportowania elektronicznego** w polu **Tryb uruchamiania** wybierz opcję **Importuj najnowsze aktualizacje**, aby zaimportować najnowsze wersje konfiguracji ER z repozytorium globalnego do bieżącego wystąpienia Finance.
 5. Aby zaplanować zadanie wsadowe importowania, na skróconej karcie **Uruchom w tle** ustaw wartość opcji **Przetwarzanie wsadowe** na **Tak**. Jeśli chcesz okresowo powtarzać import, skonfiguruj wymagany cykl.
 
-    ![Pole tryb uruchamiania ustawione na importowanie najnowszych aktualizacji.](./media/er-download-updated-versions-global-repo5.png)
+    ![Pole tryb uruchamiania ustawione na importowanie najnowszych aktualizacji](./media/er-download-updated-versions-global-repo5.png)
 
 6. Kliknij przycisk **OK**.
 7. Aby dowiedzieć się, jakie wersje konfiguracji zostały zaimportowane, wykonaj jedną z następujących czynności:
 
     - Jeśli import zostanie uruchomiony interaktywnie zamiast używania zadania wsadowego, należy przejrzeć otrzymane komunikaty.
 
-        ![Komunikaty odebrane podczas interaktywnego przebiegu importu.](./media/er-download-updated-versions-global-repo6.png)
+        ![Komunikaty odebrane podczas interaktywnego przebiegu importu](./media/er-download-updated-versions-global-repo6.png)
 
     - W przypadku uruchomienia operacji importowania w trybie wsadowym należy wykonać następujące kroki:
 
@@ -87,7 +89,7 @@ W tym temacie opisano sposób importowania zaktualizowanych wersji konfiguracji 
         2. Znajdź i zaznacz zadanie **Importowania wersji konfiguracji raportowania elektronicznego**, a następnie w okienku akcji na karcie **Zadanie wsadowe** wybierz opcję **Historia zadań wsadowych**, aby wyświetlić historię zadań.
         3. Na stronie **Historia zadań wsadowych** wybierz pozycję **Dziennik**. Następnie w odebranej wiadomości wybierz łącze **Szczegóły komunikatu**, aby wyświetlić dziennik zadań.
 
-        ![Dziennik zadań.](./media/er-download-updated-versions-global-repo7.png)
+        ![Dziennik zadań](./media/er-download-updated-versions-global-repo7.png)
 
 > [!IMPORTANT]
 > Nie zaleca się planowania cyklicznego zadania wsadowego w celu zaimportowania zaktualizowanych wersji konfiguracji ER bezpośrednio z repozytorium globalnego do środowiska produkcyjnego, ponieważ importowane wersje są natychmiast dostępne do użycia. Zamiast tego należy użyć tej metody w celu wdrożenia wersji konfiguracji systemu w środowisku piaskownicy. Następnie można je ocenić w środowisku piaskownicy przed wdrożeniem w środowisku produkcyjnym.
@@ -96,6 +98,3 @@ W tym temacie opisano sposób importowania zaktualizowanych wersji konfiguracji 
 
 - [Omówienie raportowania elektronicznego (ER)](general-electronic-reporting.md)
 - [Pobieranie konfiguracji ER z globalnego repozytorium usługi Configuration service](er-download-configurations-global-repo.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

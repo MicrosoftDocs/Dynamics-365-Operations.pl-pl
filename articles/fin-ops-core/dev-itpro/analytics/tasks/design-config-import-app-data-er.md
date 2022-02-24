@@ -2,9 +2,11 @@
 title: Projektowanie konfiguracji raportowania elektronicznego do analizowania dokumentów przychodzących
 description: Ta procedura przedstawia sposób projektowania konfiguracji raportowania elektronicznego (ER) do analizowania przychodzącego dokumentu elektronicznego.
 author: NickSelin
+manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8068850ee143540ff9f3b6222485d3ecd2a2a82020063f34cfd7b5a69826eda3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 446a4676ad00c93d691d3048408c32d7ad373d2d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756388"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682100"
 ---
 # <a name="design-er-configurations-to-parse-incoming-documents"></a>Projektowanie konfiguracji raportowania elektronicznego do analizowania dokumentów przychodzących
 
@@ -111,6 +113,3 @@ Utworzone mapowanie modelu zostaje uruchomione w celach testowych, aby zobaczyć
     * Kliknij przycisk Przeglądaj i wybierz plik Response4.xml.
 16. Kliknij przycisk OK.
     * Przejrzyj wygenerowane dane wyjściowe. Typ odpowiedzi został teraz poprawnie rozpoznany jako równy dla pliku Response1.xml.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

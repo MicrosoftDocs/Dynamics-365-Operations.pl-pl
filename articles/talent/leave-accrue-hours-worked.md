@@ -102,6 +102,3 @@ Z jedną datą może być skojarzony tylko jeden element każdego typu.
 | 000337                | 8/8/2018             | Normalna               | 8                    |
 | 000337                | 8/7/2018             | Normalna               | 8                    |
 | 000337                | 8/9/2018             | Normalna               | 8                    |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

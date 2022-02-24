@@ -2,24 +2,27 @@
 title: Moduł nagłówka
 description: W tym temacie opisano moduły nagłówka i sposób tworzenia nagłówków stron w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/08/2021
+manager: annbe
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: afdc12230ebad3d5db59c384b2f1066d2c7929339f282ed4880ff967b1fd2d8b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 52069af5ca2211473d4a096ad850b5be1290bba1
+ms.sourcegitcommit: eee3523be26369aecdb36c0143a6ee3dab4b7966
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712797"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "4415076"
 ---
 # <a name="header-module"></a>Moduł nagłówka
 
@@ -27,13 +30,15 @@ ms.locfileid: "6712797"
 
 W tym temacie opisano moduły nagłówka i sposób tworzenia nagłówków stron w Microsoft Dynamics 365 Commerce.
 
+## <a name="overview"></a>Omówienie
+
 W systemie Dynamics 365 Commerce nagłówek strony jest konfigurowany jako fragment strony, który zawiera moduły nagłówek, banner promocyjny i zgoda na wykorzystanie pliku cookie. 
 
 Moduł nagłówka zawiera logo witryny, łącza do hierarchii nawigacji, łącza do innych stron w witrynie, ikonę koszyka, symbol Wishlist, opcje logowania i pasek wyszukiwania. Moduł nagłówka jest automatycznie optymalizowany dla urządzenia, na którym jest oglądana witryna (czyli inaczej urządzenie stacjonarne lub urządzenie przenośne). Na przykład na urządzeniu przenośnym pasek nawigacji jest zwinięty do przycisku **Menu** (który jest czasami nazywany *menu hamburgerowym*).
 
 Poniższy obraz pokazuje przykład modułu nagłówka na stronie głównej.
 
-![Przykład modułu nagłówka.](./media/ecommerce-header.png)
+![Przykład modułu nagłówka](./media/ecommerce-header.png)
 
 ## <a name="properties-of-a-header-module"></a>Moduł właściwości nagłówka
 
@@ -58,16 +63,9 @@ W module nagłówka mogą być używane następujące moduły:
 - **Wybór sklepów** — moduł wyboru sklepu może być uwzględniony w gnieździe wyboru sklepu w module nagłówka. Umożliwia on przeglądanie i znajdowanie pobliskich sklepów. Użytkownicy mogą również określić preferowany sklep. Ten sklep zostanie następnie wyświetlony w nagłówku. Gdy moduł Selector magazynu jest uwzględniony w module nagłówka, jego właściwość **Tryb** musi mieć ustawioną wartość **Znajdź sklepy**. Aby uzyskać więcej informacji, zajrzyj do [Moduł wyboru sklepów](store-selector.md).
 
 > [!NOTE]
-> - Obsługa korzystania z modułu ikon koszyka w modułach nagłówków jest dostępna w Dynamics 365 Commerce w wersji w wydaniu 10.0.11.
-> - Obsługa korzystania z modułu wyboru witryny w modułach nagłówków jest dostępna w Dynamics 365 Commerce w wersji w wydaniu 10.0.14.
-> - Obsługa korzystania z modułu wyboru sklepu w modułach nagłówków jest dostępna w Dynamics 365 Commerce w wersji w wydaniu 10.0.15.
-
-## <a name="header-module-in-the-adventure-works-theme"></a>Moduł Nagłówek w motywie Adventure Works
-
-W motywie firmy Adventure Works moduł nagłówka obsługuje właściwość **Logo mobilne**. Ta właściwość umożliwia określenie logo dla mobilnych rzutni. Właściwość **Logo mobilne** jest dostępna jako rozszerzenie definicji modułu.
-
-> [!IMPORTANT]
-> Kompozycja Adventure Works jest dostępna w Dynamics 365 Commerce w wersji 10.0.20.
+> - Obsługa korzystania z modułu ikon koszyka w modułach nagłówków jest dostępna w Dynamics 365 Commerce w wydaniu 10.0.11.
+> - Obsługa korzystania z modułu wyboru witryn w modułach nagłówków jest dostępna w Dynamics 365 Commerce w wydaniu 10.0.14.
+> - Obsługa korzystania z modułu wyboru sklepu w modułach nagłówków jest dostępna w Dynamics 365 Commerce w wydaniu 10.0.15.
 
 ## <a name="create-a-header-fragment-for-a-page"></a>Utwórz fragment nagłówka dla strony
 
@@ -121,6 +119,3 @@ Aby zagwarantować, że nagłówek ma się pojawiać na każdej stronie, należy
 [Moduł wyboru witryny](site-selector.md)
 
 [Moduł wyboru sklepu](store-selector.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

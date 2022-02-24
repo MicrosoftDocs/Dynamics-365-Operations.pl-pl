@@ -1,10 +1,12 @@
 ---
 title: Użyczone składniki majątku
 description: W tym temacie opisano sposób rejestrowania użyczonych składników majątku w Zarządzaniu składnikami majątku.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetObjectLoanSend, EntAssetObjectLoanListPage, EntAssetObjectLoanReturn, EntAssetObjectLoanInfoPart
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 65809d9be39372412d5d6b419f7356fe2c9668a1a01ede32ef52cbd66753e6d7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 355e3d3e0e952db14a03810145528f9701804ca2
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752857"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022339"
 ---
 # <a name="asset-loans"></a>Użyczone składniki majątku
 
@@ -44,7 +46,7 @@ Jeśli Twoja firma otrzymuje aktywa do napraw lub prac konserwacyjnych z lokaliz
 
 Aby wyświetlić listę wszystkich aktywów użyczonych innym lokalizacjom lub klientom, wybierz **Zarządzanie składnikami majątku** \> **Wspólne** \> **Użyczony składnik majątku** \> **Wszystkie użyczone składniki majątku**. Jeśli dla składnika majątku zaznaczono pole **Zakończono**, składnik majątku został zarejestrowany jako zwrócony Twojej firmie.
 
-![Zarządzanie żądaniami konserwacji.](media/06-manage-maintenance-requests.png)
+![Zarządzanie żądaniami konserwacji](media/06-manage-maintenance-requests.png)
 
 Na stronie **Aktywne użyczone składniki majątku** można wyświetlić listę wszystkich użyczonych składników majątku, które nie zostały jeszcze zwrócone Twojej firmie.
 
@@ -55,6 +57,3 @@ Na stronie **Aktywne użyczone składniki majątku** można wyświetlić listę 
 3. W polu **Zwrócone** wpisz datę i godzinę.
 4. Kliknij przycisk **OK**.
 5. Odśwież stronę listy **Aktywne użyczone składniki majątku**. Zauważ, że użyczonego składnika majątku już na niej nie ma.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

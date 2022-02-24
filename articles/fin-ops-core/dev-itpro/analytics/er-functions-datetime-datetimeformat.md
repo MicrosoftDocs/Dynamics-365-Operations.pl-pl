@@ -2,8 +2,11 @@
 title: DATETIMEFORMAT, funkcja ER
 description: Ten temat zawiera ogólne informacje o używaniu funkcji DATETIMEFORMAT w module Raportowanie elektroniczne (ER).
 author: NickSelin
-ms.date: 09/08/2021
+manager: kfend
+ms.date: 01/04/2021
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -14,18 +17,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1add2ccb348a9b518e0121be1184fbf6a684a0df
-ms.sourcegitcommit: e7eeca05d738e9e46d6185d1ba349836ebafc1a4
+ms.openlocfilehash: 90bd2900434b1be509f72ec82375e52ea32bc424
+ms.sourcegitcommit: 7cfe8931dd454e811a691f5118a4ecae7ba4b478
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "7485553"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "4825380"
 ---
 # <a name="datetimeformat-er-function"></a>DATETIMEFORMAT, funkcja ER
 
 [!include [banner](../includes/banner.md)]
 
-Funkcja `DATETIMEFORMAT` zwraca wartość *[Ciąg](er-formula-supported-data-types-primitive.md#string)*, która przedstawia daną wartość daty/godziny jako tekst w określonym formacie i opcjonalnie określonej [kulturze](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes). Aby uzyskać informacje na temat obsługiwanych formatów, zobacz formaty [standardowe](/dotnet/standard/base-types/standard-date-and-time-format-strings) i [niestandardowe](/dotnet/standard/base-types/custom-date-and-time-format-strings).
+Funkcja `DATETIMEFORMAT` zwraca wartość *Ciąg*, która przedstawia daną wartość daty/godziny jako tekst w określonym formacie i opcjonalnie określonej [kulturze](https://docs.microsoft.com/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes). Aby uzyskać informacje na temat obsługiwanych formatów, zobacz formaty [standardowe](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) i [niestandardowe](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).
 
 ## <a name="syntax-1"></a>Składnia 1
 
@@ -41,20 +44,20 @@ DATETIMEFORMAT (datetime, format, culture)
 
 ## <a name="arguments"></a>Argumenty
 
-`datetime`: *[Data/godzina](er-formula-supported-data-types-primitive.md#datetime)*
+`datetime`: *Data/godzina*
 
 Wartość daty i godziny, która reprezentuje datę i godzinę do sformatowania.
 
 `format`: *Ciąg*
 
-Format ciągu wyjściowego. Aby uzyskać informacje na temat obsługiwanych formatów, zobacz formaty [standardowe](/dotnet/standard/base-types/standard-date-and-time-format-strings) i [niestandardowe](/dotnet/standard/base-types/custom-date-and-time-format-strings).
+Format ciągu wyjściowego.
 
 > [!NOTE]
-> W przypadku używania formatu standardowego lub niestandardowego w ciągu formatu jest uwzględniana wielkość liter. Na przykład [standardowy](/dotnet/standard/base-types/standard-date-and-time-format-strings) format „d” zwraca datę przy użyciu wzorca daty krótkiej, a standardowy modyfikator formatu „D” zwraca datę przy użyciu wzorca daty długiej. Ponadto [niestandardowy](/dotnet/standard/base-types/custom-date-and-time-format-strings) modyfikator formatu „M” zwraca miesiąc z okresu od 1 do 12, podczas gdy niestandardowy modyfikator formatu „m” zwraca minuty od 0 do 59.
+> W przypadku używania formatu standardowego lub niestandardowego w ciągu formatu jest uwzględniana wielkość liter. Na przykład [standardowy](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) format „d” zwraca datę przy użyciu wzorca daty krótkiej, a standardowy modyfikator formatu „D” zwraca datę przy użyciu wzorca daty długiej. Ponadto [niestandardowy](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx) modyfikator formatu „M” zwraca miesiąc z okresu od 1 do 12, podczas gdy niestandardowy modyfikator formatu „m” zwraca minuty od 0 do 59.
 
 `culture`: *Ciąg*
 
-Kultura do użycia na potrzeby formatowania. Aby uzyskać informacje o obsługiwanych kulturach, zobacz temat [Kultura](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes).
+Kultura do użycia na potrzeby formatowania.
 
 ## <a name="return-values"></a>Wartości zwracane
 
@@ -83,6 +86,3 @@ Funkcja `DATETIMEFORMAT (DATETIMEVALUE( "2019-11-12T09:00:00.0000000-07:00", "O"
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Funkcje daty i godziny](er-functions-category-datetime.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

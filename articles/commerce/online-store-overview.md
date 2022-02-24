@@ -1,23 +1,31 @@
 ---
-# required metadata
 title: Omówienie witryny handlu elektronicznego
 description: Ten temat stanowi omówienie pomocy technicznej dotyczącej witryn handlu elektronicznego w usłudze Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
+manager: AnnBe
 ms.date: 11/05/2020
-ms.topic: overview
-ms.prod: null
-ms.technology: null
-ms.search.form: null
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-commerce
+ms.technology: ''
+ms.search.form: ''
 audience: Application user
 ms.reviewer: josaw
-ms.assetid: null
+ms.search.scope: Core, Operations, Retail
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: stuharg
-ms.search.validFrom: '2019-09-30'
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
+ms.openlocfilehash: a5ced6311f32405e544e66d18c912ce40deb177f
+ms.sourcegitcommit: 33a746e41cd6f7b6b056b19b550a84f6a1b905d4
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "4512924"
 ---
-
 # <a name="e-commerce-site-overview"></a>Omówienie witryny handlu elektronicznego
 
 [!include [banner](includes/banner.md)]
@@ -32,37 +40,37 @@ W aplikacji Dynamics 365 Commerce używasz kanału sklepu internetowego w celu u
 
 Aby rozpocząć pracę w aplikacji Dynamics 365 Commerce, wystarczy skonfigurować tylko jeden kanał sklepu internetowego. Jednak pojedyncza witryna handlu elektronicznego może zapewnić środowisko online dla wielu sklepów internetowych. Na przykład jeśli wiele sklepów internetowych skonfigurowano do obsługi różnych regionów geograficznych, pojedynczy zestaw stron handlu elektronicznego może służyć do zapewnienia unikatowych środowisk definiowanych przez poszczególne sklepy. Aby uzyskać więcej informacji dotyczących sposobu konfigurowania witryny do obsługi wielu sklepów internetowych, zobacz [Kojarzenie witryny online z kanałem](associate-site-online-store.md).
 
-Po skonfigurowaniu sklepu internetowego można go skojarzyć z witryną Dynamics 365 Commerce, która będzie służyć jako witryna sklepowa. Aby uzyskać więcej informacji o sklepach internetowych i sposobie ich konfigurowania, zobacz [Konfigurowanie sklepów internetowych](/dynamics365/unified-operations/retail/online-stores).
+Po skonfigurowaniu sklepu internetowego można go skojarzyć z witryną Dynamics 365 Commerce, która będzie służyć jako witryna sklepowa. Aby uzyskać więcej informacji o sklepach internetowych i sposobie ich konfigurowania, zobacz [Konfigurowanie sklepów internetowych](https://docs.microsoft.com/dynamics365/unified-operations/retail/online-stores).
 
 ## <a name="deploy-a-new-e-commerce-tenant"></a>Wdrażanie nowej dzierżawy handlu elektronicznego
 
-Podczas inicjowania witryny handlu elektronicznego wyświetlany jest monit o podanie nazwy domeny. Więcej informacji o domenach w Commerce znajduje się w artykułach [Konfigurowanie nazwy domeny](configure-your-domain-name.md) i [Domeny w Dynamics 365 Commerce](domains-commerce.md). Aby wdrożyć nową dzierżawę handlu elektronicznego przez używanie [Microsoft Dynamics Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide), wykonaj kroki w artykule [Wdrażanie nowej dzierżawy handlu elektronicznego](deploy-ecommerce-site.md). Po skonfigurowaniu dzierżawy handlu elektronicznego w LCS zostanie podanych link do konstruktora witryn Commerce. Możesz użyć konstruktora witryn Commerce do inicjalizacji i konfigurowania witryn handlu elektronicznego.
+Podczas inicjowania witryny handlu elektronicznego wyświetlany jest monit o podanie nazwy domeny. Więcej informacji o domenach w Commerce znajduje się w artykułach [Konfigurowanie nazwy domeny](configure-your-domain-name.md) i [Domeny w Dynamics 365 Commerce](domains-commerce.md). Aby wdrożyć nową dzierżawę handlu elektronicznego przez używanie [Microsoft Dynamics Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide), wykonaj kroki w artykule [Wdrażanie nowej dzierżawy handlu elektronicznego](deploy-ecommerce-site.md). Po skonfigurowaniu dzierżawy handlu elektronicznego w LCS zostanie podanych link do konstruktora witryn Commerce. Możesz użyć konstruktora witryn Commerce do inicjalizacji i konfigurowania witryn handlu elektronicznego.
 
 ## <a name="initialize-your-e-commerce-site"></a>Inicjalizacja witryny handlu elektronicznego
 
 Po uruchomieniu kreatora witryny Commerce w LCS, wyświetli się strona **Witryny**. Ta strona zawiera dwie wstępnie skonfigurowane witryny, **domyślną** i **fabrikam**, jak pokazano na przykładzie na poniższej ilustracji.
 
-![Strona witryny w module konstruktora witryn Commerce.](media/e-commerce-site-01.png)
+![Strona witryny w module konstruktora witryn Commerce](media/e-commerce-site-01.png)
 
 Po wybraniu jednej z tych witryn wyświetli się monit o wybranie nazwy domeny, domyślnego kanału sklepu internetowego, obsługiwanego języka dla wybranego kanału i ścieżki. Jeśli jest używany tylko jeden kanał, można pozostawić ścieżkę pustą. Więcej kanałów sklepu internetowego lub języków można skonfigurować później w module konstruktora witryn Commerce. Każdy dodatkowy kanał lub język wymaga unikatowej ścieżki. Na przykład istnieją dwa kanały online, które są skojarzone z jedną witryną, a nazwa domeny witryny to `www.fabrikam.com`. W takim przypadku ścieżką dla jednego kanału może być wartość domyślna bez ścieżki (`https://www.fabrikam.com`), a drugim kanałem może być nowa ścieżka, taka jak **site2** z adresem URL `https://www.fabrikam.com/site2`. Na poniższej ilustracji znajduje się przykładowe okno dialogowe inicjalizacji witryny w module konstruktora witryn Commerce.
 
-![Okno dialogowe inicjalizacji witryny w module konstruktora witryn Commerce.](media/e-commerce-site-02.png)
+![Okno dialogowe inicjalizacji witryny w module konstruktora witryn Commerce](media/e-commerce-site-02.png)
 
 Na stronie **Witryny** znajduje się przycisk **Nowa witryna**. Okno dialogowe wyświetlane po wybraniu tego przycisku przypomina okno dialogowe inicjalizacji witryny, ale służy do tworzenia nowej witryny. Nowe witryny są puste. Nie obejmują one tych samych domyślnych szablonów, fragmentów, stron i obrazów dostarczanych z witrynami **domyślnymi** i **fabrikam**. W razie konieczności można otworzyć bilet pomocy technicznej i zwrócić się o dodanie kopii domyślnej zawartości do nowej pustej witryny. Aby uzyskać więcej informacji, przejrzyj temat [Tworzenie witryny handlu elektronicznego](create-ecommerce-site.md).
 
 Po inicjacji nowej witryny wyświetli się **Strona główna** w module konstruktora witryn Commerce. Na tej stronie znajdują się linki do typowych akcji i treści związanych ze wskazówkami, jak to pokazano w przykładzie na poniższej ilustracji.
 
-![Linki na stronie głównej modułu konstruktora witryn Commerce.](media/e-commerce-site-03.png)
+![Linki na stronie głównej modułu konstruktora witryn Commerce](media/e-commerce-site-03.png)
 
 ## <a name="modify-online-store-channels-or-add-online-store-channels-to-an-e-commerce-site"></a>Modyfikowanie kanałów sklepu internetowego lub dodawanie kanałów sklepów internetowych do witryny handlu elektronicznego
 
 Po utworzeniu witryny handlu elektronicznego można zmienić kanał, z którym jest skojarzona, poprzez wykonanie kroków opisanych w artykule [Kojarzenie witryny handlu elektronicznego z kanałem online](associate-site-online-store.md). Przykład w poniższej ilustracji pokazuje, jak można zmienić numer jednostki operacyjnej kanału na stronie **Kanały** (**Ustawienia witryny \> Kanały**). Po zakończeniu wprowadzania zmian wybierz opcję **Zapisz i opublikuj**. W ten sposób masz pewność, że zmiana zostanie opublikowana.
 
-![Strona kanały w module konstruktora witryn Commerce.](media/e-commerce-site-04.png)
+![Strona kanały w module konstruktora witryn Commerce](media/e-commerce-site-04.png)
 
 Aby dodać nowe kanały, należy wybrać opcję **Dodaj kanał**. Aby dodać nowe języki do kanału, wybierz kanał, a następnie wybierz opcję **Dodaj ustawienia regionalne** w wyświetlonym oknie dialogowym kanału. Aby w oknie dialogowym wyświetliły się ustawienia regionalne, należy wstępnie skonfigurować kanał sklepu internetowego w centrali Commerce.
 
-![Okno dialogowe w module konstruktora witryn Commerce.](media/e-commerce-site-05.png)
+![Okno dialogowe w module konstruktora witryn Commerce](media/e-commerce-site-05.png)
 
 ## <a name="set-up-an-azure-b2c-tenant"></a>Skonfiguruj nazwę dzierżawcy B2C Azure
 
@@ -113,6 +121,3 @@ Aby uzyskać więcej informacji dotyczących zarządzania zawartością witryny,
 [Włączanie wykrywania sklepu na podstawie lokalizacji](enable-store-detection.md)
 
 [Konfigurowanie stron niestandardowych do logowań użytkowników](custom-pages-user-logins.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

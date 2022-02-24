@@ -157,6 +157,3 @@ Kandydaci to osoby, które zostały dodane do puli umiejętności, ale nie są s
 |-----------------------------|----------------------------------|----------------------------------|-------------|
 | Profil — szczegóły kandydata | Tworzenie, odczyt, aktualizowanie i usuwanie | Tworzenie, odczyt, aktualizowanie i usuwanie | Brak dostępu   |
 | Dokumenty                   | Tworzenie, odczyt, aktualizowanie i usuwanie | Tworzenie, odczyt, aktualizowanie i usuwanie | Brak dostępu   |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

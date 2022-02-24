@@ -2,9 +2,11 @@
 title: Konfigurowanie działań równoległych w przepływie pracy
 description: Aby skonfigurować działanie równoległe, należy wykonać następujące procedury w edytorze przepływu pracy.
 author: ChrisGarty
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -14,19 +16,16 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 054d62e2ff094aee987f8c6e04e2f2e173da633d
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 2dfbe78f31082ad0b1272f02e3ae9d7adbd993b1
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068770"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797733"
 ---
 # <a name="configure-parallel-activities-in-a-workflow"></a>Konfigurowanie działań równoległych w przepływie pracy
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Aby skonfigurować działanie równoległe, należy wykonać następujące procedury w edytorze przepływu pracy.
 
@@ -48,12 +47,9 @@ Wykonaj następujące kroki, aby dodać i skonfigurować gałęzie działania r�
 1. Kliknij dwukrotnie działanie równoległe, aby wyświetlić jego odgałęzienia.
 2. Aby dodać gałąź, przeciągnij element **Gałąź** z obszaru **Elementy przepływu pracy** na punkt wstawiania na kanwie. Na poniższej ilustracji przedstawiono punkt wstawiania.
 
-    ![Punkt wstawiania.](./media/workflow_insertionpoint.gif)
+    ![Punkt wstawiania](./media/workflow_insertionpoint.gif)
 
     > [!NOTE]
     > Kolejność odgałęzień jest nieważna, ponieważ wszystkie gałęzie działania równoległego są uruchamiane jednocześnie.
 
 3. Aby skonfigurować poszczególne gałęzie, zobacz [Konfigurowanie odgałęzień równoległych w przepływie pracy](configure-parallel-branch-workflow.md).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

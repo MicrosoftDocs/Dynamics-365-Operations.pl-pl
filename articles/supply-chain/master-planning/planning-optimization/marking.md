@@ -2,13 +2,16 @@
 title: Oznaczanie zapasów przy użyciu modułu Optymalizacja planowania
 description: Ten temat zawiera informacje o dostępnych opcjach oznaczania zapasów w zaakceptowanych zamówieniach podczas korzystania z optymalizacji planowania.
 author: ChristianRytt
+manager: tfehr
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: dc94ca8b15d626d8ff64f50718d7d2e3e0326144465f3d27787805220842849f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 99a52c03e519384955d68d7101a7b73b7e9a7af6
+ms.sourcegitcommit: fe21a3a98dcf6fe4eb9351941493f2c0443d8696
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6711912"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "4672203"
 ---
 # <a name="inventory-marking-with-planning-optimization"></a>Oznaczanie zapasów przy użyciu modułu Optymalizacja planowania
 
@@ -46,6 +49,3 @@ Podczas akceptowania zamówienia planowanego w oknie dialogowym **Akceptacja** w
 - **Nie** — zapasy nie są oznaczane.
 - **Standardowa** — oznaczanie zapasów jest aktualizowane zgodnie z oznaczaniem transakcji. Zamówienie zapotrzebowania (popytu) jest oznaczane na podstawie zamówienia realizacji (podaży). Jeśli w zamówieniu realizacji pozostanie pewna ilość, zamówienie nie zostanie oznaczone, a dane referencyjne będą puste. Na przykład jeśli zamówienie sprzedaży 100 ea otrzyma oznaczenie transakcji łączące je z zamówieniem zakupu 150 ea, informacje referencyjne zostaną przypisane wyłącznie do zamówienia sprzedaży.
 - **Rozszerzona** — zarówno zamówienie zapotrzebowania (popyt), jak i zamówienie realizacji (podaż) są oznaczane niezależnie od tego, czy w zamówieniu realizacji pozostaje jakaś ilość. Na przykład jeśli zamówienie sprzedaży 100 ea otrzyma oznaczenie transakcji łączące je z zamówieniem zakupu 150 ea, informacje referencyjne zostaną przypisane zarówno do zamówienia sprzedaży, jak i do zamówienia zakupu.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

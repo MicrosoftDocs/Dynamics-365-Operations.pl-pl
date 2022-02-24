@@ -1,10 +1,12 @@
 ---
 title: Typy lokalizacji czynności konserwacyjnych
 description: W tym temacie opisano sposób tworzenia typów lokalizacjach czynności konserwacyjnych w module Zarządzanie składnikami majątku.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 06/24/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 301dc838ed204ebe488dd167df75fc84131f235f64285c6ae99c62ee1188362c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6c64a0c07bf692385370e4bd2a99f51b211cd397
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739162"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018710"
 ---
 # <a name="functional-location-types"></a>Typy lokalizacji czynności konserwacyjnych
 
@@ -64,6 +66,3 @@ Tworzony jest typ lokalizacji czynności konserwacyjnych, który ma być używan
 
 >[!NOTE] 
 >Na skróconej karcie **Ogólne** można uzyskać przegląd liczby typów składników majątku, planów konserwacji, wymagań dotyczących atrybutów składników majątku, dozwolonych typów, atrybutów i lokalizacji czynności konserwacyjnych, które są skonfigurowane na typ lokalizacji czynności konserwacyjnych. Pole **Lokalizacje czynności konserwacyjnych** pokazuje liczbę lokalizacji czynności konserwacyjnych, które używają typu lokalizacji czynności konserwacyjnych. Można użyć przycisku **Kopiuj**, aby skopiować ustawienia z typu lokalizacji czynności konserwacyjnych do wybranego typu lokalizacji czynności konserwacyjnych.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

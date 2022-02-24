@@ -1,10 +1,12 @@
 ---
 title: Skróty klawiaturowe
-description: W tym temacie przedstawiono omówienie kombinacji klawiszy skrótów, które mogą być używane podczas pracy z aplikacjami Finanse i Działania.
+description: W tym temacie przedstawiono omówienie kombinacji klawiszy skrótów, które mogą być używane podczas pracy z aplikacjami Finance and Operations.
 author: jasongre
-ms.date: 12/10/2021
+manager: AnnBe
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,21 +16,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0ecf745337c15270290f02496cc6ce4ccac86861
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: d2dee0b1eb911764ea68f9b6df5516bf2cb81d07
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070990"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798233"
 ---
 # <a name="keyboard-shortcuts"></a>Skróty klawiaturowe
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
-
-Poniższe skróty klawiaturowe umożliwiają szybkie i wydajne wprowadzanie danych w aplikacjach Finanse i Działania.
+Poniższe skróty klawiaturowe umożliwiają szybkie i wydajne wprowadzanie danych w aplikacjach Finance and Operations.
 
 > [!NOTE]
 > Skróty klawiaturowe opisane w tym miejscu odnoszą się do amerykańskiego układu klawiatury. Klawisze w innych układach mogą nie odpowiadać dokładnie klawiszom na klawiaturze w układzie amerykańskim.
@@ -130,10 +129,8 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 
 ## <a name="grid-shortcuts"></a>Skróty siatki
 
-| Funkcja                                                                                                             | Naciśnij klawisz                            |
+| Funkcja                                                                                                             | Klawisze                           |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
-| Przewijanie pionowe                                                                                                     | Koło myszy                     |
-| Przewijanie poziome                                                                                                   | Shift + koło myszy             |
 | Przejdź do następnej/poprzedniej kolumny                                                                                       | Tab / Shift+Tab                 |
 | Przejdź do następnego/poprzedniego wiersza                                                                                          | Strzałka w dół / strzałka w górę           |
 | Przejdź do następnego/poprzedniego wiersza bez zaznaczania<blockquote>[!NOTE] Ten skrót dotyczy tylko scenariuszy wyboru wielu elementów.</blockquote> | Ctrl+strzałka w górę / Ctrl+strzałka w dół |
@@ -145,24 +142,22 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 | Przejdź do pierwszego rekordu                                                                                               | CTRL+Home                       |
 | Przejdź do ostatniego rekordu                                                                                                | CTRL+End                        |
 | Zaznacz lub wyczyść wszystkie wiersze                                                                                               | Ctrl+Shift+M                    |
-| Przejdź do pierwszego zaznaczonego wiersza                                                                                           | Alt+Shift+M, F                  |
-| Przejdź do następnego zaznaczonego wiersza                                                                                            | Alt+Shift+M, L                  |
-| Przejdź do poprzedniego zaznaczonego wiersza                                                                                        | Alt+Shift+M, P                  |
-| Przejdź do ostatniego zaznaczonego wiersza                                                                                           | Alt+Shift+M, N                  |
+| Przejdź do pierwszego zaznaczonego wiersza                                                                                           | Alt+Shift+M, F                    |
+| Przejdź do następnego zaznaczonego wiersza                                                                                            | Alt+Shift+M, L                    |
+| Przejdź do poprzedniego zaznaczonego wiersza                                                                                        | Alt+Shift+M, P                    |
+| Przejdź do ostatniego zaznaczonego wiersza                                                                                           | Alt+Shift+M, N                    |
 | Wykonaj akcję domyślną w tabeli<blockquote>[!NOTE] Ten skrót jest włączony, gdy fokus znajduje się w komórce zawierającej hiperłącze, a wszystkie komórki w tej kolumnie zawierają hiperłącza.</blockquote> | Enter                           |
 | Przełączanie fokusa między wybranym wierszem a wierszem nagłówka                                                               | Alt+Shift+H                     |
 | Powiększenie/pomniejszenie bieżącej kolumny (z fokusem w wierszu nagłówka)                                                  | Strzałka w prawo / Strzałka w lewo        |
-| Przenieś bieżącą kolumnę do następnego/poprzedniego położenia (z fokusem w wierszu nagłówka)                                   | Ctrl+Shift+strzałka w prawo / Ctrl+Shift+strzałka w lewo |
 | Otwarcie filtrowania siatki dla bieżącej kolumny (z fokusem w wierszu nagłówka)                                              | Enter                           |
-| Zmień rozmiar bieżącej kolumny, aby dopasować ją do zawartości (z fokusem w wierszu nagłówka)                                           | A (lub kliknij dwukrotnie uchwyt zmiany rozmiaru kolumny) |
 
 ## <a name="input-control-shortcuts"></a>Skróty wpisywania danych
 
-| Funkcja                                                                   | Naciśnij klawisz                          |
+| Funkcja                                                                   | Klawisze                         |
 |------------------------------------------------------------------------------|-------------------------------|
 | Otwórz hiperłącze                                                           | Ctrl+Enter                    |
-| Wpisz datę sesji w polu daty                                       | D                             |
-| Wpisz bieżącą datę w polu daty                                       | N                             |
+| Wpisz datę sesji w polu daty                                       | D                         |
+| Wpisz bieżącą datę w polu daty                                       | N                         |
 | Otwórz wyszukiwanie, pole kombi, wybór daty, okno dialogowe przerywania                         | Alt+strzałka w dół                |
 | Zamknij wyszukiwanie, pole kombi, wybór daty, okno dialogowego przerywania                        | Esc                           |
 | Przenieś wyróżnienie do wyszukiwania (jeśli wyszukiwanie jest otwarte)                   | Alt+strzałka w dół                |
@@ -209,8 +204,8 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 | Użyj narzędzia Przenieś (w trybie personalizacji)                                                                       | M                                   |
 | Wybierz bieżący formant jako element do przeniesienia (gdy używane jest narzędzie Przenieś i nie wybrano jeszcze formantu do przeniesienia)  | Spacja lub Enter                      |
 | Usuń zaznaczenie formantu do przeniesienia (gdy używane jest narzędzie Przenieś)                                                                   | Esc                                 |
-| Przesuń wybraną kontrolkę na następną pozycję (przy użyciu narzędzia Przesunięcie)                                              | Tab lub strzałka w prawo lub strzałka w lewo    |
-| Przesunięcie wybranego elementu sterującego do poprzedniej pozycji (przy użyciu narzędzia Przesunięcie)                                          | Shift+Tab lub strzałka w lewo lub strzałka w górę |
+| Przejdź do następnej pozycji dla wybranego formantu (gdy używane jest narzędzie Przenieś)                                          | Tab lub strzałka w prawo lub strzałka w lewo    |
+| Przejdź do poprzedniej pozycji dla wybranego formantu (gdy używane jest narzędzie Przenieś)                                      | Shift+Tab lub strzałka w lewo lub strzałka w górę |
 | Użyj narzędzia Ukryj (w trybie personalizacji)                                                                       | H                                   |
 | Przełączanie bieżącego formantu na widoczny lub ukryty (gdy używane jest narzędzie Ukryj)                                     | Spacja lub Enter                      |
 | Użyj narzędzia Pomiń (w trybie personalizacji)                                                                       | tys.                                   |
@@ -260,6 +255,3 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 
 [Skróty klawiaturowe dla analizy brakujących kont](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

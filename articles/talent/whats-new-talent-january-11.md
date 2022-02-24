@@ -67,6 +67,3 @@ Gdy obszar roboczy **Samoobsługa pracownika etatowego** jest wybrany jako pocz�
 
 ### <a name="termination-reason-code-updates-position-assignment-record"></a>Kod przyczyny zakończenia zatrudnienia aktualizuje rekord przypisania stanowiska
 Kod przyczyny zakończenia zatrudnienia teraz aktualizuje przypisanie stanowiska w przypadku zakończenia stosunku pracy z pracownikiem i wyłączenia stanowiska. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

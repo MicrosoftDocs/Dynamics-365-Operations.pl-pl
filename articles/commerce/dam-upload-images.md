@@ -1,10 +1,12 @@
 ---
-title: Przekazanie obrazów
-description: W tym temacie opisano, jak przesyłać obrazy w kreatorze witryny w Microsoft Dynamics 365 Commerce.
+title: Przekaż obrazy
+description: W tym temacie opisano, jak przekazać obrazy do kreatora witryny w Microsoft Dynamics 365 Commerce.
 author: psimolin
-ms.date: 12/03/2021
+manager: annbe
+ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -15,18 +17,20 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3b99aeff7eafd788c19204e22dbfc61f45b25408
-ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
+ms.openlocfilehash: 69b812c58739357dfdb3f9e65e34e5d54d890284
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7891529"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963017"
 ---
-# <a name="upload-images"></a>Przekazanie obrazów
+# <a name="upload-images"></a>Przekaż obrazy
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano, jak przesyłać obrazy w kreatorze witryny w Microsoft Dynamics 365 Commerce.
+W tym temacie opisano, jak przekazać obrazy do kreatora witryny w Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Omówienie
 
 Biblioteka mediów kreatora witryny Commerce umożliwia przekazywanie obrazów, pojedynczo lub razem przy użyciu folderów. Należy zawsze przekazywać wersję obrazu z największą rozdzielczością i jakością, ponieważ element zmiany rozmiaru obrazu automatycznie zoptymalizuje obraz dla różnych wzierników i punktów przerwania.
 
@@ -41,8 +45,7 @@ Podczas przekazywania obrazu można określić następujące informacje.
 - **Publikuj zasoby po przekazaniu**: gdy to pole wyboru jest zaznaczone, obraz lub obrazy są publikowane natychmiast po przekazaniu.
 
 > [!NOTE]
-> - Elementy zawartości obrazu z przypisaną kategorią są również automatycznie znakowane za pomocą słowa kluczowego, aby ułatwić wyszukiwanie składników majątku w określonej kategorii.
-> - Strony szczegółów produktu dynamicznie generują **tekst alternatywny** przy użyciu nazwy produktu, więc zmiana **tekstu alternatywnego** dla obrazu produktu nie będzie miała wpływu na renderowany obraz.
+> Elementy zawartości obrazu z przypisaną kategorią są również automatycznie znakowane za pomocą słowa kluczowego, aby ułatwić wyszukiwanie składników majątku w określonej kategorii.
 
 ### <a name="naming-conventions-for-omni-channel-images"></a>Konwencje nazewnictwa dla obrazów kanału rozproszonego 
 
@@ -53,17 +56,9 @@ Domyślna konwencja nazewnictwa zmienia się w zależności od kategorii:
 - Obrazy kategorii powinny mieć nazwę „**/kategorie/\{nazwa_kategorii\}.png**”
 - Obrazy odbiorców powinny mieć nazwę „**/odbiorcy/\{nuer_odbiorcy\}.jpg**”
 - Obrazy pracowników powinny mieć nazwę „**/pracownicy/\{numer_pracownika\}.jpg**”
-- Obrazy produktów powinny mieć nazwę „**/Products/\{numer_produktu\}\_000_001.png**”
+- Obrazy produktów powinny mieć nazwę „**/Produkty/\{numer_Produktu\}_000_001.png**”
     - 001 oznacza sekwencję obrazu i może być 001, 002, 003, 004 lub 005
-- Obrazy wariantów produktów powinny mieć nazwę „**/Products/\{ProductNumber\} \^ \{Style\} \^ \{Size\} \^ \{Color\} \^\_000_001.png**”
-    - Na przykład: 93039 \^ &nbsp;\^ 2 \^ Black \^\_000_001.png
-- Obrazy wariantów produktów z wymiarem konfiguracji powinny mieć nazwę „ "**/Products/\{numer_produktu\} \^ \{konfiguracja\}\_000_001.png**”
-    - Na przykład: 93039 \^ LB8017_000_001.png
-
-> [!NOTE]
-> W przypadku obrazów wariantu produktu, jeśli wartość wymiaru jest pusta, w nazwie pliku muszą być dwie spacje między karetami.
-
-W powyższych przykładach przedstawiono konfigurację domyślną. Znak separatora i wymiary można konfigurować, a szczegółowe wymagania dotyczące nazewnictwa zależą od wdrożenia. Jedną z metod identyfikowania szczegółowych wymagań dotyczących konwencji nazewnictwa jest użycie konsoli dewelopera przeglądarki do sprawdzania żądań obrazów wariantów produktu podczas zmieniania wymiarów produktu na stronie szczegółów produktu sklepu (PDP).
+- Obrazy wariantów produktów powinny mieć nazwę „**/Produkty/\{numer_Produktu\}\_\{Rozmiar\}\_\{Color\}\_\{Styl\}\_000_001.png**”
 
 ## <a name="upload-an-image"></a>Przekaż obraz
 
@@ -101,6 +96,3 @@ Aby przekazać wiele obrazów w folderze w konstruktorze witryn, wykonaj następ
 [Dostosowywanie punktów ogniskowych obrazu](dam-custom-focal-point.md)
 
 [Przekazywanie i obsługiwanie plików statycznych](upload-serve-static-files.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

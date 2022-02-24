@@ -1,10 +1,12 @@
 ---
 title: Wprowadzanie ręcznych korekt prognozy bazowej
 description: W tym temacie wyjaśniono, jak wprowadzać ręczne korekty prognozy bazowej i jak wyświetlać szczegóły prognozy.
-author: ChristianRytt
+author: roxanadiaconu
+manager: tfehr
 ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqDemPlanForecastViewer
 audience: Application User
@@ -13,15 +15,15 @@ ms.custom: 72704
 ms.assetid: e7c5d44e-07bc-40b1-a4b3-8ba46483ef9e
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d8a29e93b252c5d4ec68dfcd9ffe2f63ac1b6af2
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: afdcbb98c96b2a685f64a16886b9a064ed13c2c0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778040"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967037"
 ---
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a>Wprowadzanie ręcznych korekt prognozy bazowej
 
@@ -67,13 +69,14 @@ Strona **Szczegóły prognozy popytu** pokazuje następujące informacje na graf
 
 **Uwagi:**
 
--   Jeśli zostanie włączone **wybieranie modelu prognozy dla szczegółów prognozy popytu** w obszarze zarządzania funkcjami, będzie można wybrać modele prognozy do uwzględnienia dla prognozy historycznej, na stronie **Szczegóły prognozy popytu**. (Od wersji 10.0.21 Supply Chain Management version ta funkcja jest domyślnie włączona)
+-   Jeśli zostanie włączone **wybieranie modelu prognozy dla szczegółów prognozy popytu** w obszarze zarządzania funkcjami, będzie można wybrać modele prognozy do uwzględnienia dla prognozy historycznej, na stronie **Szczegóły prognozy popytu**.
 -   Przedział wiarygodności widoczny w sekcji **Prognoza** na stronie przedstawia różnicę między górnym i dolnym limitem przedziału wiarygodności. Aby wyświetlić wartości limitów górnych i dolnych, umieść wskaźnik myszy na wykresie w sekcji **Graficzna prezentacja popytu historycznego i prognozy**.
 -   W przypadku korzystania z usługi Microsoft Azure Machine Learning dla prognozowania popytu można określić wymagany procent poziomu zaufania dla generowanej prognozy. Przedział wiarygodności zawiera zakres wartości będących dobrymi danymi szacunkowymi dla prognozy popytu. Wiarygodność na poziomie 95% oznacza, że występuje 5-procentowe ryzyko, że prognoza popytu wykroczy poza zakres wiarygodności.
 
 Istnieje również możliwość ręcznego korygowania prognozy na stronie **Szczegóły prognozy popytu** poprzez modyfikację wartości w wierszu **Prognoza** w sekcji **Prognoza**.
 
-## <a name="additional-resources"></a>Dodatkowe zasoby
+<a name="additional-resources"></a>Dodatkowe zasoby
+--------
 
 [Monitorowanie dokładności prognozy](monitor-forecast-accuracy.md)
 
@@ -81,6 +84,3 @@ Istnieje również możliwość ręcznego korygowania prognozy na stronie **Szcz
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

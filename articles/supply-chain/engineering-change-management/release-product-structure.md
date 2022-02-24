@@ -2,9 +2,11 @@
 title: Zwalnianie struktur produktu
 description: W tym temacie oprócz zwalniania produktów razem z ich wersjami konstrukcyjnymi, wyjaśniono również, jak można zwolnić kompletne struktury produktu. W ten sposób można zagwarantować, że przydatne dane konstrukcyjne dotyczące produktów mogą być łatwo używane w różnych firmach.
 author: t-benebo
+manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EngChgProductReleaseSiteBulkEdit, EngChgProductReleaseSendListPage, EngChgProductReleaseSendDetails,EngChgProductReleaseSelection,EngChgProductReleaseReceiveListPage, EngChgProductReleaseReceiveDetails, EngChgProductReleasePreviewPane, EngChgProductReleasePolicy, EngChgProductReleasePart, EngChgProductReleaseNote
 audience: Application User
@@ -12,13 +14,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 4dc1b073350044ef8afb765470ed14da88a70fdd
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: 971ff16b862a48581365523edc6b64052b29c380
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567494"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967239"
 ---
 # <a name="release-product-structures"></a>Zwalnianie struktur produktu
 
@@ -75,6 +77,8 @@ Aby zapoznać się z przykładem sposobu zaakceptowania produktu, zapoznaj się 
 
 Nie wszystkie firmy operacyjne potrzebują tych samych danych produktu. Zwykle firmy operacyjne, które wytwarzają produkty inżynieryjne, wymagają BOM, natomiast firma operacyjna, która sprzedaje tylko produkty inżynieryjne, nie wymaga BOM. Zasady zwalniania umożliwiają ustanawianie parametrów używanych do zwalniania produktów.
 
+W przypadku produktów inżynieryjnych zasady wersji są przypisane do kategorii produktów inżynieryjnych, a pole jest obowiązkowe. W przypadku produktów standardowych zasada jest przypisana do udostępnionego produktu, a pole jest opcjonalne.
+
 Aby uzyskać więcej informacji na temat kategorii produktów inżynieryjnych, zapoznaj się z tematem [Wersje inżynieryjne i kategorie produktów inżynieryjnych](engineering-versions-product-category.md).
 
 Podczas procesu zwalniania można mieć wpływ na ustawienia.
@@ -103,7 +107,6 @@ Określ następujące pola na karcie skróconej **Ogólne**, należącej do zasa
 | Pole | opis |
 |---|---|
 | Typ produktu | Umożliwia określenie, czy zasady dotyczą produktów typu *Towar* czy *Usługa*. Nie można zmienić tego ustawienia po zapisaniu rekordu. |
-| Typ produkcji | To pole jest wyświetlane tylko po włączeniu [zarządzania zmianami formuły](manage-formula-changes.md) w systemie. Wybierz typ produkcji, do której odnoszą się te zasady udostępniania:<ul><li>**Współprodukt** — wykorzystaj tę zasadę wydawania do zarządzania produktami dodatkowymi. Współprodukty są wytwarzane podczas procesu produkcyjnego i nie są produktami wersjonowanymi ani inżynierskimi. Zasady zwalniania współproduktów mogą pomóc w zapewnieniu, że ważne ustawienia, takie jak **grupa wymiarów magazynowania** i **grupa wymiarów śledzenia**, zostały skonfigurowanie za pomocą zwolnionego szablonu produktu przed ich zwolnieniem do firmy.</li><li>**Produkt uboczny** — wykorzystaj tę zasadę wydawania do zarządzania produktami ubocznymi. Produkty uboczne są wytwarzane podczas procesu produkcyjnego i nie są produktami wersjonowanymi ani inżynierskimi. Zasady zwalniania produktów ubocznych mogą pomóc w zapewnieniu, że ważne ustawienia, takie jak **grupa wymiarów magazynowania** i **grupa wymiarów śledzenia**, zostały skonfigurowanie za pomocą zwolnionego szablonu produktu przed ich zwolnieniem do firmy.</li><li>**Brak** — tych zasad należy używać do zarządzania produktami standardowymi, które nie są w wersji lub nie są produktami inżynieryjnymi, ani produktami ubocznymi lub współproduktami.</li><li>**Element planowania** — te zasady zwalniania są służące do zarządzania elementami planowania tworzonymi w procesie produkcji. Pozycje planowania wykorzystują formuły. Przypominają one produkty typu Formuła ale są wykorzystywane do wytwarzania jedynie produktów ubocznych i współproduktów, a nie produktów końcowych.</li><li>**BOM** – ta kategoria zwalniania jest używana do zarządzania produktami inżynieryjnymi, które nie używają formuł i zazwyczaj (ale niekoniecznie) zawierają BOM.</li><li>**Formuła** — te zasady zwalniania są służące do zarządzania zakończonymi elementami tworzonymi w procesie produkcji. Te pozycje będą mieć formułę, ale nie BOM.</li></ul> |
 | Zastosuj szablony | Wybierz jedną z następujących opcji, aby określić, czy i w jaki sposób mają być stosowane szablony wersji produktu, gdy jest używana zasada:<ul><li>**Zawsze** — W przypadku wydań zawsze należy używać produktu wydanego według szablonu. W przypadku wybrania tej opcji należy użyć skróconej karty **Wszystkie produkty**, aby określić szablon używany dla każdej firmy, do której zostanie wydane zwolnienie. Jeśli szablon nie zostanie określony dla każdej firmy, która jest wymieniona na skróconej karcie **Wszystkie produkty**, podczas próby zapisania zasady pojawi się komunikat o błędzie.</li><li>**Opcjonalne** — Jeśli szablon zwolnionego produktu jest określony dla firmy wymienionej na skróconej karcie **Wszystkie produkty**, ten szablon będzie używany po zwolnieniu do tej firmy. W przeciwnym razie nie zostanie użyty żaden szablon. Po wybraniu tej opcji można zapisać zasadę bez przypisywania szablonów do wszystkich firm. (Żadne ostrzeżenie nie będzie wyświetlane.)</li><li>**Nigdy** — Żaden szablon zwolnionego produktu nie będzie używany dla żadnej firmy, do której będzie zwalniany towar, nawet jeśli szablon jest określony dla firm wymienionych na skróconej karcie **Wszystkie produkty**. Kolumny szablonów będą niedostępne.</li></ul> |
 | Aktywni | Ta opcja służy do obsługi zasad zwolnienia. Ustaw tę opcję na wartość *Tak* dla wszystkich używanych zasad zwolnień. Jeśli zasada nie jest używana, należy wybrać opcję *Nie*, aby oznaczyć ją jako nie jako nieaktywną. Należy zauważyć, że nie można dezaktywować zasady zwalniania przypisanej do kategorii produktów inżynieryjnych i można usunąć tylko nieaktywne zasady zwalniania. |
 
@@ -156,6 +159,3 @@ To działanie ma zastosowanie tylko wtedy, gdy produkt jest bezpośrednio wybran
 Na przykład produkt X jest przypisany do grupy właścicieli *Szafy projektowe*. Produkt X jest również częścią BOM produktu Y, który jest przypisany do grupy właścicieli produktów *Głośniki projektowe*. Jeśli użytkownik z grupy właścicieli produktu *Głośniki projektowe* wyda produkt Y i jego BOM, produkt X zostanie zwolniony razem z produktem Y.
 
 - Aby uzyskać więcej informacji, zobacz temat [Właściciele produktów](product-owner.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

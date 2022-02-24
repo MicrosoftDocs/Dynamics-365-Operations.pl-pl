@@ -1,10 +1,12 @@
 ---
 title: Mobilny obszar roboczy Zatwierdzenia faktur
-description: Ten temat zawiera informacje o komórkowym obszarze roboczym Zatwierdzenia faktur.
+description: Ten temat zawiera informacje o komórkowym obszarze roboczym Zatwierdzenia faktur. Ten obszar roboczy wyświetla listę faktur, które zostały Ci przypisane przez proces przepływu pracy nagłówków faktur od dostawców.
 author: abruer
+manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 0d19e99776f04eab28eb7371bc0ac90ac046b62af0ad785fd3ab28309cae43ab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8d4b40c7ce8939248e85b6b6f3d359bd16e35b0d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759987"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683415"
 ---
 # <a name="invoice-approvals-mobile-workspace"></a>Mobilny obszar roboczy Zatwierdzenia faktur
 
@@ -72,7 +74,7 @@ Pobieranie i instalowanie aplikacji mobilnej Finance and Operations:
 3.  Podczas pierwszego logowania pojawi się monit o podanie nazwy użytkownika i hasła. Wprowadź swoje poświadczenia.
 4.  Po zalogowaniu się zobaczysz obszary robocze dostępne dla firmy. Należy zauważyć, że jeśli administrator systemu później opublikuje nowy obszar roboczy, trzeba odświeżyć listę komórkowych obszarów roboczych.
 
-    [![Ściąganie w celu odświeżenia.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+    [![Ściąganie w celu odświeżenia](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="approve-invoices-by-using-the-invoice-approvals-mobile-workspace"></a>Zatwierdzanie faktur w mobilnym obszarze roboczym Zatwierdzenia faktur
 1.  Na urządzeniu przenośnym wybierz obszar roboczy **Zatwierdzenia faktur**.
@@ -84,6 +86,3 @@ Pobieranie i instalowanie aplikacji mobilnej Finance and Operations:
 7.  Wybierz opcję **Załączniki**, aby wyświetlić wszelkie notatki lub pliki dołączone do faktury.
 8.  Na stronie **Szczegóły faktury** zaznacz odpowiednią akcję przepływu pracy, aby ukończyć proces przeglądu.
 9.  Wybierz opcję **Gotowe**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

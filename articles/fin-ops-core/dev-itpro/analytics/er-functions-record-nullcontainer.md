@@ -2,8 +2,11 @@
 title: NULLCONTAINER, funkcja ER
 description: Ten temat zawiera ogólne informacje o używaniu funkcji NULLCONTAINER w module Raportowanie elektroniczne (ER).
 author: NickSelin
+manager: kfend
 ms.date: 12/12/2019
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -14,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 13159d9d7c8d1871886beb3cb1938ca8b0097e0efb6f10a9d1b229c49b9ff947
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c1932116b67cef79622f0f6152b168b5961a72c7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738583"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683045"
 ---
 # <a name="nullcontainer-er-function"></a>NULLCONTAINER, funkcja ER
 
@@ -57,6 +60,3 @@ Funkcja `NULLCONTAINER (SPLIT ("abc", 1))` zwraca nowy pusty rekord, który ma t
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Funkcje zapisu](er-functions-category-record.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

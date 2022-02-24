@@ -1,23 +1,25 @@
 ---
 title: Tworzenie zamówienia zakupu regulowanego budżetem
 description: Ta procedura służy do tworzenia zamówienia zakupu sprawdzanego pod kątem dostępnego budżetu.
-author: AndersGirke
+author: ShylaThompson
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: aevengir
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2e2bfec4d7d38ef95d1f0ce3bd89938337ecf731
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: cbfbbef3bd7c7398f0f17b6cddbbff8c4755638d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572056"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963720"
 ---
 # <a name="create-a-purchase-order-governed-by-budget"></a>Tworzenie zamówienia zakupu regulowanego budżetem
 
@@ -59,6 +61,3 @@ Ta procedura służy do tworzenia zamówienia zakupu sprawdzanego pod kątem dos
 4. Kliknij opcję Błędy lub ostrzeżenia dotyczące sprawdzania budżetu.
 5. Kliknij przycisk Zamknij.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

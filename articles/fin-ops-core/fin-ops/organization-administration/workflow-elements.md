@@ -2,9 +2,11 @@
 title: Elementy przepływu pracy
 description: Ten temat zawiera opis różnych elementów składających się na przepływ pracy.
 author: ChrisGarty
+manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -14,19 +16,16 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e9491b8ee6da69ba93c830bf0721c1d58fd4385b
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b259d733076193cda793a227bd0bb71c232339d1
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070457"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797583"
 ---
 # <a name="workflow-elements"></a>Elementy przepływu pracy
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Ten temat zawiera opis różnych elementów składających się na przepływ pracy.
 
@@ -63,7 +62,7 @@ Przepływ pracy składa się z elementów. Sekcje poniżej opisują poszczególn
 
 Przepływ pracy można tworzyć w celu przetwarzania dokumentów lub pozycji w dokumencie. Na przykład utworzono przepływ pracy zatwierdzania dla kart czasu pracy. (Nazwiemy go *przepływem pracy dokumentu*). Do tego przepływu pracy dokumentu można dodać element *przepływu pracy dla wiersza*. Po uruchomieniu tego element wszystkie pozycje wiersza w dokumencie są przesyłane do przetworzenia. Czasami wszystkie elementy wiersza muszą być przetworzone przez ten sam przepływ pracy lub każdy element musi być przetwarzany przez różne przepływy pracy dla wierszy. Załóżmy, że pracownik przesłał kartę czasu pracy podobną do tej na obrazku poniżej.
 
-![Przepływ pracy z pozycjami w wierszu.](./media/workflow_lineitemworkflow.gif)
+![Przepływ pracy z pozycjami w wierszu](./media/workflow_lineitemworkflow.gif)
 
 W tym scenariuszu można utworzyć następujące przepływy pracy dla towarów w wierszu:
 
@@ -90,6 +89,3 @@ Poniższe elementy pozwalają projektować przepływy pracy z alternatywnymi odd
 ### <a name="subworkflow"></a>Podrzędny przepływ pracy
 
 *Podrzędny przepływ pracy* jest przepływem pracy, który działa w kontekście innego przepływu pracy.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

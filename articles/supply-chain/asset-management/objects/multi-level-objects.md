@@ -1,10 +1,12 @@
 ---
 title: Wielopoziomowe składniki majątku
 description: W tym temacie wyjaśniono, jak tworzyć i usuwać wielopoziomowe składniki majątku.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f43c7c97f8b05a1bf76b2f2c869e6868689f388d06337064f04af839f2403357
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd4da57c3849095909226db53c23b3c25301acdc
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769618"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021329"
 ---
 # <a name="multi-level-assets"></a>Wielopoziomowe składniki majątku
 
@@ -59,6 +61,3 @@ Jeśli składnik majątku ma powiązane podrzędne składniki majątku, można g
 
 > [!NOTE]
 > Jeśli nie można usunąć składnika majątku przy użyciu tej procedury, innym sposobem obsługi usuwania jest Konfigurowanie stanu cyklu życia składnika majątku w tym celu. Na przykład można skonfigurować stan cyklu życia jako **Uznany za odpadki** lub **Usunięty** na stronie **Stany cyklu życia składników majątku**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,27 +1,30 @@
 ---
-title: Domeny w rozwiązaniu Dynamics 365 Commerce
+title: Domeny w Dynamics 365 Commerce
 description: W tym temacie opisano sposób obsługiwania domen w rozwiązaniach Microsoft Dynamics 365 Commerce.
 author: BrShoo
-ms.date: 03/17/2021
+manager: AnnBe
+ms.date: 09/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: bf96c47b8f5e940ffdd9241c3bdda4162a3101c42004c58c431f135f11c39d14
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cb2b003168d32d05387bd45796d313736b11a41f
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733998"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517362"
 ---
-# <a name="domains-in-dynamics-365-commerce"></a>Domeny w rozwiązaniu Dynamics 365 Commerce
+# <a name="domains-in-dynamics-365-commerce"></a>Domeny w Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
@@ -38,7 +41,7 @@ Podczas inicjowania obsługi środowiska handlu elektronicznego w [Microsoft Dyn
 
 Na poniższej ilustracji przedstawiono ekran konfiguracji usługi handlu elektronicznego LCS z wyróżnionym polem **obsługiwane nazwy hostów**. 
 
-![Ekran konfigurowania usługi LCS handlu elektronicznego z wyróżnionym polem **Obsługiwanych nazw hostów**.](./media/Domains_ProvisioningeCommerceScreen_publish.png)
+![Ekran konfigurowania usługi LCS handlu elektronicznego z wyróżnionym polem **Obsługiwanych nazw hostów**](./media/Domains_ProvisioningeCommerceScreen.png)
 
 Można utworzyć żądanie usługi w celu dodania dodatkowych domen do środowiska, jeśli już konfiguracja miała już miejsce. Aby utworzyć zlecenie usługi w ramach LCS, w środowisku należy przejść do **Pomocy technicznej \> Problemy** i wybrać opcję **Prześlij zdarzenie**.
 
@@ -56,7 +59,7 @@ Podczas pierwszej konfiguracji witryny za pomocą konstruktora witryn zostanie w
 
 Na poniższej ilustracji przedstawiono okno dialogowe **Konfigurowanie serwisu** dla witryny o nazwie „domyślna”, gdy dostęp do witryny jest uzyskiwany po raz pierwszy w konstruktorze witryn.
 
-![Okno dialogowe **Konfigurowanie witryny**.](./media/Domains_SetupyoursiteScreen.png)
+![Okno dialogowe **Konfigurowanie witryny**](./media/Domains_SetupyoursiteScreen.png)
 
 Pole **Wybierz domenę** umożliwia skojarzenie jednej z obsługiwanych nazw hostów dostarczonych dla witryny w usłudze LCS do witryny w konstruktorze witryn.
 
@@ -79,11 +82,11 @@ Po skonfigurowaniu witryny przy użyciu ścieżki wszystkie adresy URL skojarzon
 
 Na poniższej ilustracji przedstawiono okno dialogowe **Nowy adres URL** w konstruktorze witryn z wyróżnioną ścieżką URL. 
 
-![**Nowy adres URL** — okno dialogowe w konstruktorze witryn.](./media/Domains_PageSetup2a.png)
+![**Nowy adres URL** — okno dialogowe w konstruktorze witryn](./media/Domains_PageSetup2a.png)
 
 Na poniższej ilustracji przedstawiono okno dialogowe **URL** w konstruktorze witryn z wyróżnioną ścieżką URL na liście.
 
-![Uruchom opcję przepływu użytkownika w przepływie zasad.](./media/Domains_URLsInSiteBuilder2a.png)
+![Uruchom opcję przepływu użytkownika w przepływie zasad](./media/Domains_URLsInSiteBuilder2a.png)
 
 ## <a name="domains-in-site-builder"></a>Domeny w konstruktorze witryn
 
@@ -151,7 +154,7 @@ Wystąpienie Azure Front Door dostarczone wraz z Commerce nie obsługuje domen A
 
   [Wdrażanie nowej dzierżawy handlu elektronicznego](deploy-ecommerce-site.md)
 
-  [Konfigurowanie kanału sklepu internetowego](./channel-setup-online.md)
+  [Konfigurowanie kanału sklepu internetowego](online-stores.md)
 
   [Tworzenie witryny handlu elektronicznego](create-ecommerce-site.md)
 
@@ -170,6 +173,3 @@ Wystąpienie Azure Front Door dostarczone wraz z Commerce nie obsługuje domen A
   [Dodawanie obsługi dla sieci dostarczania zawartości (CDN)](add-cdn-support.md)
 
   [Włączanie wykrywania sklepu na podstawie lokalizacji](enable-store-detection.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

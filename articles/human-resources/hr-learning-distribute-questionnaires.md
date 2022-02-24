@@ -1,39 +1,37 @@
 ---
-title: Rozprowadzanie i planowanie kwestionariuszy
-description: W tym temacie opisano sposób dystrybuowania kwestionariuszy, które można zaprojektować tak, aby były dostępne dla osoby lub grupy osób, które będą je wypełniać.
-author: twheeloc
-ms.date: 10/28/2021
+title: Dystrybuowanie i planowanie kwestionariuszy
+description: W tym artykule opisano sposób dystrybuowania kwestionariuszy, które można zaprojektować tak, aby były dostępne dla osoby lub grupy osób, które będą je wypełniać.
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailParameters, HcmLearningWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Human Resources
 ms.custom: 17424
 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dbb069110b46c38a994a7be6276137360b14397a
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 0329b80615eed6efcc22bb0b140970988f5c306a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069536"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420129"
 ---
-# <a name="distribute-and-schedule-questionnaires"></a>Rozprowadzanie i planowanie kwestionariuszy
+# <a name="distribute-and-schedule-questionnaires"></a>Dystrybuowanie i planowanie kwestionariuszy
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-W tym temacie opisano sposób dystrybuowania kwestionariuszy, które można zaprojektować tak, aby były dostępne dla osoby lub grupy osób, które będą je wypełniać. 
+W tym artykule opisano sposób dystrybuowania kwestionariuszy, które można zaprojektować tak, aby były dostępne dla osoby lub grupy osób, które będą je wypełniać. 
 
 Istnieje wiele sposobów dystrybucji kwestionariusza:
 
--   Oznacz kwestionariusz jako **aktywny**. Kwestionariusz będzie dostępny dla wszystkich pracowników, chyba że ustawiono grupę kwestionariusza, która nie ma do niego dostępu.
+-   Oznacz kwestionariusz jako aktywny. Kwestionariusz będzie dostępny dla wszystkich pracowników, chyba że ustawiono grupę kwestionariusza, która nie ma do niego dostępu.
 -   Przypisz prawa grupie kwestionariusza. Kwestionariusz będzie dostępny dla wszystkich członków wybranej grupy.
 -   Utwórz zaplanowane sesje odpowiedzi. Kwestionariusz będzie dostępny wyłącznie dla konkretnej osoby.
 -   Utwórz harmonogram. Kwestionariusz można być dostępny dla wielu osób.
@@ -133,6 +131,3 @@ Po zaprojektowaniu i rozesłaniu kwestionariusza, kwestionariusz może zostać w
 Kwestionariusze można udostępnić wszystkich osobom w sieci, określonym użytkownikom lub grupom użytkowników.
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

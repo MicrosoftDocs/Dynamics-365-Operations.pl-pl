@@ -2,13 +2,16 @@
 title: Tworzenie rekomendacji z danymi demonstracyjnymi
 description: Niniejszy temat przedstawia wskazówki dotyczące sposobu korzystania z zaleceń dotyczących produktu kanału rozproszonego w środowiskach z jedną ramką w warstwie 1 przy użyciu wstępnie wypełnionych, dostosowywanych danych demonstracyjnych.
 author: bebeale
+manager: AnnBe
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 260624
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1a9592ee5cae88c6277115ed495b15ec09945e56cad0634fd246b6ee7e5dd048
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cca6913375eec2565852676f3c1da5a67f71e14f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741045"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414813"
 ---
 # <a name="create-recommendations-with-demo-data"></a>Tworzenie rekomendacji z danymi demonstracyjnymi
 
@@ -87,6 +90,3 @@ Rozszerzenie zawiera plik danych o nazwie „RecoMockDataset.csv”, który zezw
 [Ręczne tworzenie zaleceń pod opieką](create-editorial-recommendation-lists.md)
 
 [Rekomendacje produktów — często zadawane pytania](faq-recommendations.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: Zadanie czyszczenia wpisów dostępnych zapasów do zarządzania magazynem
 description: W tym temacie opisano zadanie czyszczenia wpisów dostępnych zapasów, które ułatwia poprawę wydajności systemu przez identyfikowanie i usuwanie powiązanych z nimi rekordów.
 author: perlynne
+manager: tfehr
 ms.date: 04/23/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysOperationTemplateForm
 audience: Application User
@@ -12,17 +14,15 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
-ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: d839ed861a24f6ef7267c85e942c275586b4a8c4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.12
+ms.openlocfilehash: f045b9686bbdfcf3e82f5158f0fd28860354b7d7
+ms.sourcegitcommit: b6686265314499056690538eaa95ca51cff7c720
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565103"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5014490"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Zadanie czyszczenia wpisów dostępnych zapasów do zarządzania magazynem
-
-[!include [banner](../includes/banner.md)]
 
 Na wydajność zapytań używanych do obliczania dostępnych zapasów ma wpływ liczba rekordów w zaangażowanych tabelach. Jednym ze sposobów zwiększenia wydajności jest zmniejszenie liczby rekordów, które musi uwzględnić baza danych.
 
@@ -62,6 +62,3 @@ Domyślnie ustawienie **Maksymalny czas wykonania** jest niedostępne. Aby go u�
 
 - **Moduł:** *Zarządzanie magazynem*
 - **Nazwa funkcji:** *Maksymalny czas wykonywania zadania oczyszczania dla wpisów dostępnych zapasów w magazynie*
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

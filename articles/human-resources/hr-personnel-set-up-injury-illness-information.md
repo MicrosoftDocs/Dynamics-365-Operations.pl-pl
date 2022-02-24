@@ -1,66 +1,67 @@
 ---
 title: Ustawianie informacji dotyczących urazów i chorób
 description: Pracodawcy muszą je znać, kiedy pracownicy doznają urazu lub zachorują z powodu zagrożeń w miejscu pracy.
-author: twheeloc
-ms.date: 10/28/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HRMInjurySetup, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 680f4cc529b6818d763730f253811a6edbe0dd76
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 117ae1d690221dbbe0cf4287a3f986cdb3606623
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070584"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420082"
 ---
 # <a name="set-up-injury-and-illness-information"></a>Ustawianie informacji dotyczących urazów i chorób
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+Pracodawcy muszą je znać, kiedy pracownicy doznają urazu lub zachorują z powodu zagrożeń w miejscu pracy. Na stronie określania choroby lub urazu można podać informacje umożliwiające zgłaszanie wypadków i chorób zaistniałych w miejscu pracy. Można skonfigurować typy urazów i chorób, w tym typy leczenia, koszty i wyniki. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
 
+1. Wybierz kolejno opcje Zasoby ludzkie > Pracownicy > Uraz i choroba > Ustawienia urazów i chorób.
+2. Kliknij przycisk Nowy.
+3. W polu Typ urazu lub choroby wpisz wartość.
+    * Przykład: Złamanie  
+4. Wypełnij pole Opis.
+    * Przykład: Złamanie kości  
+5. Kliknij kartę Części ciała.
+6. Kliknij przycisk Nowy.
+7. W polu Części ciała wpisz wartość.
+    * Przykład: Nadgarstek  
+8. Wypełnij pole Opis.
+    * Przykład: Nadgarstek  
+9. Kliknij kartę Typy postępowania.
+10. Kliknij przycisk Nowy.
+11. W polu Typ leczenia wpisz wartość.
+    * Przykład: Szyna unieruchamiająca  
+12. Wypełnij pole Opis.
+    * Przykład: Założyć szynę unieruchamiającą  
+13. Kliknij kartę Typy kosztów.
+14. Kliknij przycisk Nowy.
+15. W polu Typ kosztu wpisz wartość.
+    * Przykład: Badanie rentgenowskie  
+16. Wypełnij pole Opis.
+    * Przykład: Badanie rentgenowskie  
+17. Kliknij kartę Typy wyników.
+18. Kliknij przycisk Nowy.
+19. W polu Typ wyniku wpisz wartość.
+    * Przykład: Leczenie  
+20. Wypełnij pole Opis.
+    * Przykład: Terapia fizykalna  
+21. Kliknij kartę Priorytety.
+    * Można tworzyć dostosowywane poziomy ważności. Na przykład: poziom ważności 1 może oznaczać drobny uraz, a poziom ważności 3 poważne obrażenia.  
+22. Kliknij kartę Agencje raportujące.
+    * Agencje raportujące to podmioty, którym muszą być zgłaszane zdarzenia. Zaznacz pole wyboru Domyślnie obok instytucji będącej domyślną agencją na potrzeby raportowania urazów i chorób.  
+23. Kliknij przycisk Zapisz.
 
-
-Pracodawcy muszą je znać, kiedy pracownicy doznają urazu lub zachorują z powodu zagrożeń w miejscu pracy. Na stronie określania **choroby lub urazu** można podać informacje umożliwiające zgłaszanie wypadków i chorób zaistniałych w miejscu pracy. Można skonfigurować typy urazów i chorób, w tym typy leczenia, koszty i wyniki. Do stworzenia tej procedury wykorzystano dane z firmy demonstracyjnej **USMF**.
-
-1. Wybierz kolejno opcje **Zasoby ludzkie** \> **Pracownicy** \> **Uraz i choroba** \> **Ustawienia urazów i chorób**.
-2. Wybierz pozycję **Nowy**.
-3. W polu **Typ urazu lub choroby** wpisz lub wybierz wartość (na przykład **Złamanie**).
-4. W polu **Opis** wprowadź wartość (np. **Złamanie kości**).
-5. Kliknij kartę **Części ciała**.
-6. Wybierz pozycję **Nowy**.
-7. W **polu Część ciała** wprowadź lub wybierz wartość (na przykład **Nadgarstek**).
-8. W polu **Opis** wprowadź wartość (np. **Nadgarstek**).
-9. Wybierz kartę **Typy leczenia**.
-10. Wybierz pozycję **Nowy**.
-11. W polu **Typ leczenia** wprowadź lub wybierz wartość (na przykład **Szyna unieruchamiająca**).
-12. W polu **Opis** wprowadź wartość (np. **Założenie szyny**).
-13. Kliknij kartę **Typy kosztów**.
-14. Wybierz pozycję **Nowy**.
-15. W polu **Typ kosztu** wprowadź lub wybierz wartość (na przykład **Prześwietlenie**).
-16. W polu **Opis** wprowadź lub wybierz wartość (na przykład **Prześwietlenie**).
-17. Wybierz kartę **Typy rezultatu**.
-18. Wybierz pozycję **Nowy**.
-19. W polu **Typ wyniku** wprowadź wartość (na przykład **Terapia**).
-20. W polu **Opis** wprowadź wartość (np. **Fizjoterapia**).
-21. Kliknij kartę **Priorytety**.
-
-    Można tworzyć dostosowywane poziomy ważności. Na przykład: priorytet ważności 1 może oznaczać drobny uraz, a poziom ważności 3 poważne obrażenia.
-
-22. Kliknij kartę **Agencje raportujące**.
-
-    Agencje raportujące to podmioty, którym muszą być zgłaszane zdarzenia. Zaznacz pole wyboru **Domyślny** dla agencji, która jest domyślną agencją, do której należy zgłaszać urazy i choroby.
-
-23. Wybierz opcję **Zapisz**.
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

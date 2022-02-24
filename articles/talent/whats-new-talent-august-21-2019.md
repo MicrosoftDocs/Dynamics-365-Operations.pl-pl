@@ -70,6 +70,3 @@ Nowa opcja umożliwi menedżerom wyświetlanie wyników zarówno ich bezpośredn
 #### <a name="platform-update-29-for-finance-and-operations"></a>Aktualizacja 29 platformy dla Finance and Operations
 
 Aby uzyskać więcej informacji dotyczących 29. aktualizacji platformy dla Finance and Operations, zobacz [Podgląd funkcji w aktualizacji platformy 29 w Dynamics 365 Finance and Operations (Październik 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

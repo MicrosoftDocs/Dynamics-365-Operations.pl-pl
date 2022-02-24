@@ -2,13 +2,16 @@
 title: Zarządzanie atrybutami i grupami atrybutów
 description: W tym temacie opisano, jak za pomocą atrybutów stworzyć możliwość opisywania produktu i jego cech za pomocą pól definiowanych przez użytkownika.
 author: ashishmsft
+manager: AnnBe
 ms.date: 04/28/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: EcoResCategoryAttribute, EcoResProductEntityAttributeTableFieldAssociation, EcoResCategorySearchList, EcoResAttribute, COODualUseCategories, EcoResAttributeType, EcoResAttributeValue, EcoResCategoryAttributeGroup, EcoResCategoryFriendlyName
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: b3960f0877bdf68dd2f511ad283961b2a92db6a60078e84be55f071a00eae927
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b5d0e92196f98fb707b1c424a6ae237f4dc9545c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727661"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414922"
 ---
 # <a name="manage-attributes-and-attribute-groups"></a>Zarządzanie atrybutami i grupami atrybutów
 
@@ -43,7 +46,7 @@ Na przykład typowy produkt w postaci telewizora może mieć następujące atryb
 |            | Wejście kompozytowe         | 0–10                        | 2             |
 |            | Wejścia komponentów         | 0–10                        | 1             |
 | LCD        | 3D Ready                 | Tak lub Nie                   | Tak           |
-|            | Obsługa 3D               | Tak lub Nie                   | Nie            |
+|            | Obsługa 3D               | Tak lub Nie                   | Nr            |
 | Plazmowy     | Minimalna temperatura      | 32–110 stopni              | 32            |
 |            | Maksymalna temperatura        | 32–110 stopni              | 100           |
 | Projekcyjny | Gwarancja na lampę kineskopową | 6, 12 lub 18 miesięcy         | 12            |
@@ -70,7 +73,7 @@ Atrybuty są oparte na *typach atrybutów*. Typ atrybutu określa typ danych, kt
     - Nazwij jeden typ atrybutu **Kształt soczewek** i dodaj następujące wartości: **Owal**, **Kwadrat** i **Prostokąt**.
     - Nazwij drugi typ atrybutu **Marka okularów przeciwsłonecznych** i dodaj następujące wartości: **Ray ban**, **Aviator** i **Oakley**.
 
-![Typy atrybutów.](media/AttributeType.png)
+![Typy atrybutów](media/AttributeType.png)
 
 ### <a name="set-up-an-attribute"></a>Ustawianie atrybutu
 
@@ -79,7 +82,7 @@ Atrybuty są oparte na *typach atrybutów*. Typ atrybutu określa typ danych, kt
 3. Utwórz atrybut o nazwie **Soczewki**.
 4. W polu **Typ atrybutu** ustaw wartość **Kształt soczewek**.
 
-![Atrybuty.](media/Attribute.png)
+![Atrybuty](media/Attribute.png)
 
 ## <a name="attribute-metadata"></a>Metadane atrybutu
 
@@ -101,7 +104,7 @@ Poniżej przedstawiono pozostałe opcje metadanych atrybutów dostępne na stron
 
 Te opcje były pierwotnie przeznaczone do poprawy funkcji wyszukiwania w sklepach internetowych. Co prawda usługa Commerce nie zawiera w standardzie funkcjonalności sklepu internetowego, ale obejmuje zestaw SDK do opracowywania oprogramowania do handlu elektronicznego. Odbiorcy mogą używać tego zestawu SDK do wprowadzania produktów do dowolnych indeksów wyszukiwania. Mimo iż dane produktów są importowane, odbiorcy nadal powinni być w stanie odróżniać dane, które można przeszukiwać, na których można wykonywać zapytania itd. W ten sposób mogą zbudować optymalny indeks obejmujący tylko atrybuty, które *w ich opinii* powinny być indeksowane.
 
-Aby uzyskać więcej informacje o przeznaczeniu tych pozostałych opcji, zobacz [Omówienie schematu wyszukiwania w programie SharePoint Server 2013](/SharePoint/search/search-schema-overview).
+Aby uzyskać więcej informacje o przeznaczeniu tych pozostałych opcji, zobacz [Omówienie schematu wyszukiwania w programie SharePoint Server 2013](https://technet.microsoft.com/library/jj219669.aspx).
 
 ## <a name="filter-settings-for-attributes"></a>Ustawienia filtrów atrybutów
 
@@ -134,7 +137,7 @@ Strona **Preferencje wyświetlania filtra** zawiera następujące pola:
     - 200 – 500
     - Ponad 500
 
-![Ustawienia filtra atrybutów.](media/AttributeFilterSettings.PNG)
+![Ustawienia filtrów atrybutów](media/AttributeFilterSettings.PNG)
 
 ## <a name="attribute-groups"></a>Grupy atrybutów
 
@@ -142,7 +145,7 @@ Po zdefiniowaniu atrybutów można je przypisać do grup atrybutów. *Grupa atry
 
 Można również ustawić domyślne wartości dla atrybutów dołączonych do grupy atrybutów. Na przykład do grupy atrybutów można dodać atrybut koloru oraz wybrać **Niebieski** jako domyślną wartość atrybutu. W takim przypadku po dodaniu grupy atrybutów do produktu zawierającego kolor jako jeden z atrybutów wartość **Niebieski** będzie wyświetlana jako domyślny kolor tego produktu.
 
-![Grupy atrybutów.](media/AttributeGroup.png)
+![Grupy atrybutów](media/AttributeGroup.png)
 
 ### <a name="create-an-attribute-group"></a>Tworzenie grup atrybutów
 
@@ -155,7 +158,7 @@ Można również ustawić domyślne wartości dla atrybutów dołączonych do gr
 
 Jedną lub więcej grup atrybutów można skojarzyć z węzłami kategorii w następujących typach hierarchii kategorii: Hierarchia produktów Commerce, Hierarchia kategorii nawigacji w kanale i Hierarchia uzupełniających kategorii produktów. Wtedy gdy produkty będą kategoryzowane, odziedziczą atrybuty włączone do grup atrybutów.
 
-![Hierarchia produktów — grupy atrybutów produktów.](media/AGRetailProdHierarchy.PNG)
+![Hierarchia produktów — grupy atrybutów produktów](media/AGRetailProdHierarchy.PNG)
 
 Wykonaj następujące kroki, aby przypisać grupy atrybutów do kategorii w hierarchii produktów Commerce.
 
@@ -200,7 +203,7 @@ Można skojarzyć jedną lub kilka grup atrybutów z jednym lub więcej sklepami
     3. Wybierz węzeł kategorii **Akcesoria modowe**, zaznacz kategorię **Modne okulary przeciwsłoneczne**, a następnie na skróconej karcie **Atrybuty produktu kanału** dla każdego atrybutu wybierz opcję **Uwzględnienie atrybutu**.
     4. Wybierz węzeł kategorii **Odzież męska**, zaznacz kategorię **Spodnie**, a następnie na skróconej karcie **Atrybuty produktu kanału** dla każdego atrybutu wybierz opcję **Uwzględnienie atrybutu**.
 
-![Kategorie kanału sprzedaży i atrybuty produktów — grupy atrybutów.](media/CCPAttrGrp.png)
+![Kategorie kanału sprzedaży i atrybuty produktów — grupy atrybutów](media/CCPAttrGrp.png)
 
 ## <a name="overriding-attribute-values"></a>Zastępowanie wartości atrybutów
 
@@ -214,7 +217,7 @@ Wartości domyślne atrybutów można zastąpić dla poszczególnych produktów 
 4. Wybierz żądany produkt w siatce. Następnie w okienku akcji na karcie **Produkt** w grupie **Konfiguracja** wybierz opcję **Atrybuty produktu**.
 5. Zaznacz atrybut w lewym okienku, a następnie zaktualizuj jego wartość w prawym okienku.
 
-![Strona Szczegóły produktu — grupy atrybutów produktów.](media/ProdDetailsProdAttrValues.png)
+![Strona Szczegóły produktu — grupy atrybutów produktów](media/ProdDetailsProdAttrValues.png)
 
 ### <a name="override-the-attribute-values-of-products-in-a-catalog"></a>Zastępowanie wartości atrybutów produktów w katalogu
 
@@ -233,7 +236,7 @@ Wartości domyślne atrybutów można zastąpić dla poszczególnych produktów 
     > [!NOTE]
     > Jeśli utworzono współużytkowane multimedia produktów i współużytkowane atrybuty produktów, dotyczą one wszystkich produktów.
 
-![Grupy atrybutów produktów z katalogu.](media/CatalogProdAttrValues.png)
+![Grupy atrybutów produktów z katalogu](media/CatalogProdAttrValues.png)
 
 ### <a name="override-the-attribute-values-of-products-in-a-channel"></a>Zastępowanie wartości atrybutów produktów w kanale
 
@@ -254,6 +257,3 @@ Wartości domyślne atrybutów można zastąpić dla poszczególnych produktów 
 
     > [!NOTE]
     > Jeśli utworzono współużytkowane multimedia produktów i współużytkowane atrybuty produktów, dotyczą one wszystkich produktów.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

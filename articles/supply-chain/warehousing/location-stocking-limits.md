@@ -2,23 +2,26 @@
 title: Limity składowania w lokalizacji
 description: W tym temacie opisano funkcje limitów składowania w lokalizacji.
 author: perlynne
+manager: tfehr
 ms.date: 11/11/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationLimit
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 239b9fa8d8e34a92d453d3387881cff7b0a11f28a3c3b1e19891ea3bd78c3d7c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 208662f38b06b1f230bdde5247946a9fefd57cea
+ms.sourcegitcommit: d2dea9ce480f35d0c0b10615c18862695e107d55
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714169"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "4607286"
 ---
 # <a name="location-stocking-limits"></a>Limity składowania w lokalizacji
 
@@ -81,7 +84,7 @@ W ramach tego przykładu wygenerujesz przepływ przyjęcia zamówienia zakupu o 
 
 Najpierw przyjmij *4* jednostki *PL* rozmiaru *S* i przejrzyj lokalizacje wierszy odłożenia utworzonej pracy. Potem przyjmij *4* jednostki *PL* rozmiaru *L* i przejrzyj lokalizacje wierszy odłożenia utworzonej pracy.
 
-1. Zaloguj się do aplikacji Warehouse Management, podając identyfikator użytkownika *24* i hasło *1*.
+1. Zaloguj się do aplikacji magazynu, podając identyfikator użytkownika *24* i hasło *1*.
 1. Wybierz **Przychodzące** \> **Przyjęcia zakupu**.
 1. Przyjmij *4* *PL* rozmiaru *S* z towarem o numerze *D0013*.
 1. Przejrzyj utworzoną pracę odłożenia. Wynik powinien być następujący:
@@ -101,6 +104,3 @@ Aby wyjaśnić ten pozorny błąd, należy poznać kryteria wyboru limitów skł
 
 > [!NOTE]
 > Nie można użyć limitów składowania w lokalizacji, by kontrolować na przykład uzupełnianie zapasów towarów, które mają różne ilości w tej samej lokalizacji. W takim wypadku należy zastosować *szablon uzupełnienia zapasów*.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,24 +2,27 @@
 title: Konfigurowanie kanału biura obsługi
 description: W tym temacie opisano, jak dodać utworzyć nowy biura obsługi w Microsoft Dynamics 365 Commerce.
 author: samjarawan
+manager: annbe
 ms.date: 03/13/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3b21d5e57058fee5bb77beb6731c18967ed11cacc1925e44d2f7d8cdb26d7bcb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3f8c47c00b920dae01213d1d241ac8ee6a18d4e3
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744541"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4415093"
 ---
 # <a name="set-up-a-call-center-channel"></a>Konfigurowanie kanału biura obsługi
 
@@ -54,11 +57,11 @@ Aby utworzyć i skonfigurować nowy kanał biura obsługi, wykonaj następujące
 
 Poniższy rysunek przedstawia utworzenie nowego kanału biura obsługi.
 
-![Nowy kanał biura obsługi.](media/channel-setup-callcenter-1.png)
+![Nowy kanał biura obsługi](media/channel-setup-callcenter-1.png)
 
 Poniższy obraz przedstawia przykład kanału biura obsługi.
 
-![Przykład kanału biura obsługi.](media/channel-setup-callcenter-2.png)
+![Przykład kanału biura obsługi](media/channel-setup-callcenter-2.png)
 
 ## <a name="additional-channel-setup"></a>Konfiguracja kanałów dodatkowych
 
@@ -66,7 +69,7 @@ Dodatkowe zadania wymagane dla konfiguracji kanału dla biura obsługi, obejmuj�
 
 Poniższy obraz pokazuje **Metody dostawy** i **Metody płatności** ustaw opcje na karcie **Konfiguracja**.
 
-![Dodatkowe akcje konfiguracji kanału biura obsługi.](media/channel-setup-callcenter-3.png)
+![Dodatkowe akcje konfiguracji kanału biura obsługi](media/channel-setup-callcenter-3.png)
 
 ### <a name="set-up-payment-methods"></a>Konfigurowanie metod płatności
 
@@ -81,7 +84,7 @@ Aby skonfigurować metody płatności, należy wykonać następujące kroki dla 
 
 Poniższy obraz przedstawia przykład kart i metod płatności gotówką.
 
-![Przykład metod płatności.](media/channel-setup-callcenter-payments.png)
+![Przykład metod płatności](media/channel-setup-callcenter-payments.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Ustaw metody dostawy
 
@@ -97,7 +100,7 @@ Aby zmienić lub dodać metodę dostawy skojarzoną z kanałem biura obsługi, w
 
 Poniższy obraz przedstawia przykład kart i metodę dostawy.
 
-![Ustaw metody dostawy.](media/channel-setup-retail-7.png)
+![Ustaw metody dostawy](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-channel-users"></a>Konfigurowanie użytkowników kanału
 
@@ -133,6 +136,3 @@ Aby skonfigurować grupę cenową, należy wykonać następujące czynności.
 [Konfigurowanie i używanie alertów o oszustwie](set-up-fraud-alerts.md)
 
 [Konfigurowanie programów sprzedaży ciągłej dla biur obsługi](set-up-continuity-program.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,45 +1,48 @@
 ---
-# required metadata
 title: Zarządzanie wydajnością
-description: Proces zarządzania wydajnością umożliwia pracowników dokumentowanie i omawianie ich działań z przełożonymi.
-author: twheeloc
-ms.date: 08/26/2021
-ms.topic: overview
-ms.prod: null
-ms.technology: null
+description: Proces zarządzania wydajnością umożliwia pracowników dokumentowanie i omawianie ich działań z przełożonymi. Z kolei menedżerowie mogą dostarczać informacje zwrotne i wskazówki pracownikom.
+author: andreabichsel
+manager: AnnBe
+ms.date: 07/28/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-human-resources
+ms.technology: ''
 audience: Application User
-ms.search.scope: Human Resources
-ms.custom:
-  - '221024'
-  - intro-internal
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Talent
+ms.custom: 221024
 ms.assetid: d88e30ab-c6e9-4daf-b89d-f4386a299e22
 ms.search.region: Global
-ms.author: twheeloc
-ms.search.validFrom: '2016-11-30'
+ms.author: anbichse
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 7e2c7753da69f85307eccd22f6a315e9fd1e4bd6
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420078"
 ---
-
 # <a name="performance-management"></a>Zarządzanie wydajnością
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Proces zarządzania wydajnością umożliwia pracowników dokumentowanie i omawianie ich działań z przełożonymi. Z kolei menedżerowie mogą dostarczać informacje zwrotne i wskazówki pracownikom.  
 
-Jak pokazuje poniższy diagram, istnieją trzy strony używane do zarządzania procesem:
+Jak pokazuje poniższy diagram, istnieją trzy strony, które pomagają zarządzać procesem:
 
 -   Arkusz wydajności
 -   Cele
 -   Przegląd wydajności
 
-Na poniższym diagramie przedstawiono wzajemne powiązania podstawowych składników zarządzania wydajnością. [![Omówienie procesu zarządzania wydajnością.](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
+Na poniższym diagramie przedstawiono wzajemne powiązania podstawowych składników zarządzania wydajnością. [![Omówienie procesu zarządzania wydajnością](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
 
 ## <a name="performance-journal"></a>Arkusz wydajności
 
 Przed rozpoczęciem swojej okresowej oceny pracowniczej często zbierasz informacje na temat działań lub zdarzeń, które przyczyniły się do Twojego sukcesu zawodowego w badanym okresie. Miejsce na dokumentowanie tych działań i zdarzeń jest arkusz wydajności. Ponadto możesz tworzyć przyszłe działania, które trzeba wykonać, aby zwiększyć szanse na osiągnięcie celu, spełnienie wymagań określonych w planu rozwoju lub dotrzymanie zobowiązania w kwestii wydajności. Arkusze wydajność nie są potrzebne do tworzenia celów ani przeglądów wydajności. 
 
-Istnieją dwie wersje arkusza wydajności: wersja pracownika, która jest dostępna za pośrednictwem obszaru roboczego **Samoobsługa pracownika etatowego** (**ESS**), i wersja menedżera, która jest dostępna za pośrednictwem obszaru roboczego **Samoobsługa menedżera** (**MSS**). Pracownicy mogą tworzyć arkusze dla siebie i je udostępniać menedżerom. Menedżerowie mogą tworzyć arkusze dla swoich zespołów i je udostępniać podległym pracownikom. 
+Istnieją dwie wersje dziennika wydajności: wersja pracownika, która jest dostępna za pośrednictwem obszaru roboczego **Samoobsługa pracownika etatowego** (**ESS**), i wersja menedżera, która jest dostępna za pośrednictwem obszaru roboczego **Samoobsługa menedżera** (**MSS**). Pracownicy mogą tworzyć arkusze dla siebie i je udostępniać menedżerom. Menedżerowie mogą tworzyć arkusze dla swoich zespołów i je udostępniać podległym pracownikom. 
 
-W przypadku otwierania **arkusza wydajności** z obszaru roboczego **ESS** można wprowadzić następujące informacje:
+W przypadku otwierania z obszaru roboczego **ESS** na stronie **Arkusz wydajności** można obejrzeć/wprowadzić następujące informacje:
 
 -   Tytuł działania.
 -   Opis działania, który zawiera szczegółowe informacje o działaniu.
@@ -53,7 +56,7 @@ Arkusz wydajności można również połączyć z zewnętrzną witryną internet
 
 ### <a name="send-feedback"></a>Wyślij opinię
 
-Arkusz wydajności zawiera dodatkową funkcję o nazwie **Wyślij opinię**. Po kliknięciu opcji **Wyślij informację zwrotną** można wybrać pracownika i przesłać mu informacje zwrotne za pośrednictwem poczty e-mail. Wiadomość zostanie wysłana do pracownika otrzymującego informację zwrotną, jego menedżera, pracownika wysyłającego informację zwrotną i jego menedżera. Dla każdej osoby, która otrzyma wiadomość z informacją zwrotną, jest tworzony wpis w arkuszu wydajności.
+Arkusz wydajności zawiera dodatkową funkcję o nazwie Informacja zwrotna. Po kliknięciu opcji **Wyślij informację zwrotną** można wybrać pracownika i przesłać mu informacje zwrotne za pośrednictwem poczty e-mail. Wiadomość zostanie wysłana do pracownika otrzymującego informację zwrotną, jego menedżera, pracownika wysyłającego informację zwrotną i jego menedżera. Dla każdej osoby, która otrzyma wiadomość z informacją zwrotną, jest tworzony wpis w arkuszu wydajności.
 
 ## <a name="goals"></a>Cele
 
@@ -82,7 +85,7 @@ Na podstawie celu można utworzyć szablon, a następnie używać go do tworzeni
 
 Przeglądy wydajności są bardziej formalnie nazywane dyskusjami. Teraz są one na tyle elastyczne, że obsługują ciągłe przekazywanie informacji zwrotnych, plany rozwoju i bardziej formalne metody oceny. Można szybko utworzyć małe spotkania dla dwóch osób, np. bezpośrednią rozmowę, albo zbudować bardziej złożony przegląd dopasowany do ogólnofirmowego procesu oceny pracowników. 
 
-Spotkania takie jak bezpośrednia rozmowa są formą prostych przeglądów (ocen) i wymagają jedynie krótkiej nazwy, dłuższego opisu treści spotkania, daty spotkania oraz omawianego okresu przeglądu. Menedżerowie będą także widzieć imiona i nazwiska osób poddawanych ocenie. 
+Spotkania takie jak bezpośrednia rozmowa są formą prostych przeglądów (ocen) i wymagają jedynie krótkiej nazwy, dłuższego opisu treści spotkania oraz daty spotkania. Typowy prosty przegląd zawiera te same informacje oraz dodatkowo okres przeglądu, czyli okres objęty dyskusją. Menedżerowie będą także widzieć imiona i nazwiska osób poddawanych ocenie. 
 
 Aby wykonać bardziej szczegółowe przeglądy, można pobrać informacje o aktywnych i ukończonych celach oraz wprowadzić o nich komentarze. W przeglądzie będą widoczne wszystkie działania i miary istniejące w arkuszu wydajności, które odnoszą się do celu. Po zakończeniu przeglądu zostanie wykonana migawka miar, aby zachować historię tych elementów z określonych momentów w czasie. 
 
@@ -90,7 +93,7 @@ Można również użyć sekcji **Kompetencje**, aby przedyskutować, przejrzeć 
 
 Można tworzyć nowe przeglądy oparte na utworzonych szablonach. Na przykład można mieć szablony dla rozmów bezpośrednich, planów rozwoju i przeglądów okresowych. Szablon można wybrać podczas tworzenia nowego przeglądu.
 
-Aby wydrukować recenzje, wybierz przycisk **Drukuj recenzję**. Jeśli nie widzisz przycisku na stronie **Recenzja**, upewnij się, że włączono funkcję w obszarze roboczym **Zarządzanie funkcjami**. Aby uzyskać więcej informacji o zarządzaniu funkcjami funkcji, zapoznaj się z [Zarządzanie funkcjami — omówienie](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Aby wydrukować recenzje, wybierz przycisk **Drukuj recenzję**. Jeśli nie widzisz przycisku na stronie **Recenzja**, upewnij się, że włączono funkcję w obszarze roboczym **Zarządzanie funkcjami**. Aby uzyskać więcej informacji o zarządzaniu funkcjami funkcji, zapoznaj się z [Zarządzanie funkcjami — omówienie](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 
 > [!NOTE]
 > Możliwość drukowania wyników oceny wydajności jest dostępna tylko w Human Resources. Nie jest ona dostępna w Dynamics 365 Finance.
@@ -117,7 +120,7 @@ Wynik oceny można zastosować do każdego celu i kompetencji, która znajduje s
 
 ### <a name="sign-offs"></a>Podpisy
 
-Pracownik i/lub menedżer będą figurowali w przeglądzie zgodnie z ustawionymi parametrami przeglądu. Przeglądy mogą być wymagane lub opcjonalne. Po złożeniu wszystkich wymaganych podpisów przegląd zostanie oznaczony stanem **Zakończony**.
+Pracownik i/lub menedżer będą figurowali w przeglądzie zgodnie z ustawionymi parametrami przeglądu. Przeglądy mogą być wymagane lub opcjonalne. Po złożeniu wszystkich wymaganych podpisów przegląd zostanie oznaczony stanem Zakończony.
 
 ### <a name="attachments"></a>Załączniki
 
@@ -151,14 +154,12 @@ Istnieją trzy strony, które pomagają skonfigurować informacje wymagane w cel
 
 ### <a name="measurements"></a>Miary
 
-Na stronie **Miary** można tworzyć standardowe miary, które będą używane na stronach **Cele dotyczące wydajności** i **Przeglądy**. Można tworzyć miary będące datami, kwotami, ilościami lub wartościami procentowymi albo miary oparte na modelu oceniania.
+Na stronie Miary można tworzyć standardowe miary, które będą używane na stronach **Cele dotyczące wydajności** i **Przeglądy**. Można tworzyć miary będące datami, kwotami, ilościami lub wartościami procentowymi albo miary oparte na modelu oceniania.
 
 ### <a name="performance-journal-source-types"></a>Typy źródeł arkusza wydajności
 
-**Typy źródeł arkusza wydajności** opisują, skąd pochodzą arkusze wydajności. Można sprawdzić, czy element arkusza będzie wyświetlany domyślnie tylko menedżerowi, tylko pracownikowi czy menedżerowi i pracownikowi. Na obecnym etapie rozwoju programu nie można wyłączać typów źródeł.
+Typy źródeł arkusza wydajności opisują, skąd pochodzą arkusze wydajności. Można sprawdzić, czy element arkusza będzie wyświetlany domyślnie tylko menedżerowi, tylko pracownikowi czy menedżerowi i pracownikowi. Na obecnym etapie rozwoju programu nie można wyłączać typów źródeł.
 
 ### <a name="review-types"></a>Typy przeglądów
 
-**Typy przeglądów** kontrolują zachowanie przeglądu. Można włączyć lub wyłączyć przepływ pracy dla przeglądu. Jeżeli przegląd nie używa przepływu pracy, można zdefiniować domyślny stan, który będzie używany podczas tworzenia przeglądu. Można także określić, czy przegląd musi zostać podpisany przez pracownika i/lub menedżera.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+Typy przeglądów wydajności pomagają sterować działaniem przeglądu. Można włączyć lub wyłączyć przepływ pracy dla przeglądu. Jeżeli przegląd nie używa przepływu pracy, można zdefiniować domyślny stan, który będzie używany podczas tworzenia przeglądu. Można także określić, czy przegląd musi zostać podpisany przez pracownika i/lub menedżera.

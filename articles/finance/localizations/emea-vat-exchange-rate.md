@@ -1,30 +1,35 @@
 ---
-# required metadata
 title: Podstawowe informacje o kursie wymiany dla podatku VAT
-description: 'Ten temat zawiera informacje dotyczące kursów wymiany dla obliczeń podatku VAT dostępnych dla Czech, Węgier i Polski.'
+description: Ten temat zawiera informacje dotyczące kursów wymiany dla obliczania podatku VAT. Kurs wymiany używany do obliczania podatku VAT może się różnić od kursu wymiany używanego w funkcjach księgowania w firmie. Po zaksięgowaniu dokumentu w walucie obcej wszelkie występujące różnice kursowe są księgowane na określonych kontach księgowych.
 author: ShylaThompson
-ms.date: 07/08/2021
-ms.topic: overview
-ms.prod: null
-ms.technology: null
-ms.search.form: 'ExchangeRateCurrencyPairCalculationRules, LedgerParameters, SalesTaxExchangeRateType, TaxTmpWorkTrans'
+manager: AnnBe
+ms.date: 04/10/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ExchangeRateCurrencyPairCalculationRules, LedgerParameters, SalesTaxExchangeRateType, TaxTmpWorkTrans
 audience: Application User
 ms.reviewer: kfend
-ms.custom:
-  - '272703'
-  - intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 272703
 ms.assetid: 2d1fad67-8234-49cc-b009-0f3cc29f5886
-ms.search.region: 'Czech Republic, Hungary, Poland'
+ms.search.region: Czech Republic, Hungary, Poland
 ms.author: mrolecki
 ms.dyn365.ops.version: Version 1611
-ms.search.validFrom: '2016-11-30'
+ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: 7e23581c73c3eb62e21dc3a53b5730c7c7cb0e62
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408355"
 ---
-
 # <a name="vat-exchange-rate-overview"></a>Podstawowe informacje o kursie wymiany dla podatku VAT
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje dotyczące kursów wymiany dla obliczeń podatku VAT dostępnych dla Czech, Węgier i Polski. Kurs wymiany używany do obliczania podatku VAT może się różnić od kursu wymiany używanego w funkcjach księgowania w firmie. Po zaksięgowaniu dokumentu w walucie obcej wszelkie występujące różnice kursowe są księgowane na określonych kontach księgowych.
+Ten temat zawiera informacje dotyczące kursów wymiany dla obliczania podatku VAT. Kurs wymiany używany do obliczania podatku VAT może się różnić od kursu wymiany używanego w funkcjach księgowania w firmie. Po zaksięgowaniu dokumentu w walucie obcej wszelkie występujące różnice kursowe są księgowane na określonych kontach księgowych.
 
 Organizacja może wybrać kurs wymiany, który służy do obliczania podatku od towarów i usług (VAT) dla deklaracji VAT. Ten kurs wymiany może się różnić od kursu wymiany używanego w funkcjach księgowania w firmie. Funkcje księgowania obejmują m.in. przygotowywanie następujących dokumentów związanych z podatkami:
 
@@ -54,6 +59,3 @@ Jeśli po skonfigurowaniu w systemie używania kursów wymiany dla podatku VAT t
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

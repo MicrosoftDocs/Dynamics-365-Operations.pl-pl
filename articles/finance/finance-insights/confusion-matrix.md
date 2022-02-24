@@ -1,30 +1,34 @@
 ---
-title: Wyniki modeli uczenia maszynowego
+title: Wyniki modeli uczenia maszynowego (wersja zapoznawcza)
 description: W tym temacie omówiono matryce pomyłek, problemy z klasyfikacją i dokładność w modelach uczenia maszynowego. Celem jest zwiększenie zrozumienia dokładności w wynikach przewidywania uczenia maszynowego.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+manager: AnnBe
+ms.date: 06/05/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 2545f7d043e139606c51bc559e3aacbe73abccfc
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 6a1620c33ee1e23a79ef5413afebdee332aa82b6
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386644"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4645024"
 ---
-# <a name="results-of-machine-learning-models"></a>Wyniki modeli uczenia maszynowego
+# <a name="results-of-machine-learning-models-preview"></a>Wyniki modeli uczenia maszynowego (wersja zapoznawcza)
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 W tym temacie omówiono matryce pomyłek, problemy z klasyfikacją i dokładność w modelach uczenia maszynowego. Celem jest zwiększenie zrozumienia dokładności w wynikach przewidywania uczenia maszynowego. Docelowi odbiorcy to m.in. inżynierowie, analitycy i menedżerowie, którzy chcą zdobywać wiedzę i umiejętności w dziedzinie nauki o danych.
 
@@ -33,7 +37,7 @@ Po wytrenowaniu nadzorowanego problemu uczenia maszynowego na zestawie danych hi
 
 Na przykład mamy przewidzieć, czy zwierzę to pies czy kot, na podstawie pewnych fizycznych i behawioralnych atrybutów. Jeśli mamy zestaw danych testowych zawierający 30 psów i 20 kotów, to matryca pomyłek może wyglądać jak na poniższej ilustracji.
 
-![Przykład przewidywania gatunków.](media/species-prediction-matrix.png)
+[![Przykład przewidywania gatunków](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
 
 Liczby w zielonych komórkach reprezentują prawidłowe przewidywania. Jak widać, model poprawnie przewiduje wyższy procent kotów. Ogólna dokładność modelu jest łatwa do obliczenia. W tym przypadku jest to 42 ÷ 50 lub 0,84.
 
@@ -43,7 +47,7 @@ Większość dyskusji na temat matrycy pomyłek skupia się na klasyfikatorach b
 
 Następnie będziemy rozważać problem z klasyfikacją na przypadku scenariusza finansowego z trzema stanami Model przewiduje, czy faktura od odbiorcy będzie opłacona na czas, późno czy bardzo późno. Na przykład z 100 faktur testowych, 50 jest opłaconych na czas, 35 są spóźnione, a 15 jest opłaconych bardzo późno. W takim przypadku model może wygenerować matrycę pomyłek przypominającej poniższą ilustrację.
 
-![Model 1.](media/payment-prediction-matrix.png)]
+[![Model 1](./media/payment-prediction-matrix.png)](payment-prediction-matrix.png) Model 1
 
 Matryca pomyłek zawiera znacznie więcej informacji niż metryka o prostej dokładności. Jest to jednak nadal stosunkowo łatwe do zrozumienia. Matryca pomyłek mówi, czy zestaw danych jest zrównoważony, czyli klasy wyjściowe mają podobne zliczenia. W przypadku scenariusza wieloklasowego użytkownik określa, jak daleko może mylić się przewidywanie, jeśli klasy wyjściowe są porządkowe, tak jak w poprzednim przykładzie dotyczącymi płatności od odbiorców.
 
@@ -54,7 +58,7 @@ Ponieważ dokładność jest łatwa do zrozumienia, jest to dobry punkt wyjścia
 
 Jednak w celu dokładniejszego zrozumienia należy pamiętać o kilka wyzwaniach związanych z dokładnością. Użyteczność metryki zależy od kontekstu problemu. Pytanie, które często jest zadawane w związku z wydajnością modelu, to „jak dobry jest model?” Jednak odpowiedź na to pytanie jest niekoniecznie prosta. Rozważmy następującą matrycę pomyłek (model 2).
 
-![Przykład przewidywania płatności z większą próbką.](media/payment-prediction-matrix-2.png)
+[![Przykład przewidywania płatności z większą próbką](./media/payment-prediction-matrix-2.png)](payment-prediction-matrix-2.png)
 
 Szybkie obliczenie wskazuje, że dokładność tego modelu wynosi (70 + 10 + 3) ÷ 100 lub 0,83. Pozornie ten wynik jest lepszy niż wynik poprzedniego modelu wieloklasowego (model 1) o dokładności 0,73. Ale czy jest to lepsze?
 
@@ -62,8 +66,8 @@ Aby zacząć odpowiadać na to pytanie, należy wziąć pod uwagę dokładność
 
 Warto zwrócić uwagę na inny aspekt. Rozważmy scenariusz, w którym jest używany test medyczny w celu wykrycia choroby u pacjenta. Ten problem jest problemem z klasyfikacją binarną, w którym pozytywny wynik wskazuje, że pacjent ma tę chorobę. W tym scenariuszu należy wziąć pod uwagę wpływ następujących błędów:
 
-- Fałszywie pozytywne, gdy test mówi, że pacjent ma chorobę, ale tak naprawdę pacjent jej nie ma.
-- Fałszywe negatywy, w przypadku których test mówi, że pacjent nie ma choroby, ale pacjent naprawdę ją ma.
+- Fałszywe dodatnie, gdzie wynik testu oznacza, że pacjent ma taką chorobę, ale w rzeczywistości nie ma takiej choroby
+- Fałszywe ujemne, gdzie wynik testu oznacza, że pacjent nie ma takiej choroby, ale w rzeczywistości ją ma
 
 Oczywiście, oba typy błędów są niepożądane, ale który jest gorszy? Znowu, to zależy. W przypadku choroby zagrażającej życiu, która wymaga szybkiego leczenia, minimalizacja fałszywych wyników ujemnych (po których powinny nastąpić dodatkowe testy) ma pierwszeństwo. W innych, mniej krytycznych sytuacjach, twórcy modelu mogą natomiast minimalizować fałszywe dodatnie wyniki. W każdym razie racjonalny wniosek jest taki, że aby skutecznie ustalić jakość modelu, trzeba mieć więcej informacji niż zapewnia metryka dokładności.
 
@@ -86,7 +90,7 @@ Ostatnim rozważaniem w tym temacie jest bardziej zaawansowana miara skutecznoś
 
 Przed zdefiniowaniem dokładności F1 należy wprowadzić dwie dodatkowe metryki: precyzję i trafność. Precyzja wskazuje, ile z łącznej liczby przewidywań określonych jako dodatnie jest prawidłowo przypisanych. Ta metryka jest również określana jako dodatnia wartość predykcyjna. Trafność to łączna liczba rzeczywistych pozytywnych przypadków, które zostały prawidłowo przewidziane. Ta metryka jest również określana jako czułość.
 
-[![Prawdziwe wyniki w porównaniu z fałszywymi wynikami.](./media/tn-fn.png)](./media/tn-fn.png)
+[![Prawdziwe wyniki w porównaniu z fałszywymi wynikami](./media/tn-fn.png)](./media/tn-fn.png)
 
 W matrycy pomyłek na powyższej ilustracji, te metryki są obliczane w następujący sposób:
 
@@ -99,7 +103,7 @@ Miara F1 łączy precyzję i trafność. Wynik jest średnią harmoniczną dwóc
 
 Przyjrzyjmy się konkretnemu przykładowi. Wcześniej w tym temacie mieliśmy przykład modelu, który przewiduje, czy zwierzę jest psem czy kotem. W tym miejscu ilustracja jest powtórzona.
 
-[![Przykład przewidywania gatunków (powtórzone).](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
+[![Przykład przewidywania gatunków](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
 
 Oto wyniki, jeśli jako odpowiedź pozytywną przyjmiemy „pies”.
 
@@ -111,11 +115,11 @@ Jak widać, wartość F1 jest pomiędzy wartościami precyzji i trafności.
 
 Chociaż dokładność F1 nie jest łatwa w zrozumieniu, dodaje niuans do prostej liczby dokładności. Może również być przydatna w przypadku niezrównoważonych zestawów danych, jak w następnej dyskusji.
 
-Sekcja [Dokładność modelu](#model-accuracy) w tym temacie porównuje następujące dwie matryce pomyłek. Nawet jeśli pierwszy model miał niższą dokładność, uznano, że jest bardziej przydatny, ponieważ wykazał się lepszą poprawą domyślnego przypuszczenia płatności na czas.
+Sekcja [Dokładność modelu](#classify-machine-learning-accuracy) w tym temacie porównuje następujące dwie matryce pomyłek. Nawet jeśli pierwszy model miał niższą dokładność, uznano, że jest bardziej przydatny, ponieważ wykazał się lepszą poprawą domyślnego przypuszczenia płatności na czas.
 
-![Przykład porównania przewidywania płatności z rzeczywistością.](media/payment-prediction-matrix.png)
+[![Przykład porównania przewidywania płatności z rzeczywistością](./media/payment-prediction-matrix.png)](payment-prediction-matrix.png)
 
-![Przykład przewidywania płatności z większą próbką (powtórzone).](media/payment-prediction-matrix-2.png)
+[![Przykład przewidywania płatności z większą próbką](./media/payment-prediction-matrix-2.png)](payment-prediction-matrix-2.png)
 
 Zobaczmy, jak te dwa modele są porównywane w przypadku użycia wyniku F1. Wynik F1 mierzy precyzję i trafność poszczególnych stanów, a obliczenia w makrze F1 następnie uśredniają wynik F1 różnych stanów, aby określić ogólny wynik F1. Istnieją inne warianty F1, ale jest bardziej przydatne, aby wziąć pod uwagę wersję makro, ze względu na równe znaczenie przypisywane wszystkim trzem stanom.
 
@@ -128,7 +132,7 @@ Aby uprościć obliczenia, skonstruowano tablice przykładowe w celu dopasowania
 
 Więcej szczegółowych informacji o sposobach działania tego obliczenia zawiera niniejszy raport klasyfikacji sklearn.metrics dla modelu 1. Trzy stany, „Na czas”, „Z opóźnieniem” i „Z dużym opóźnieniem” są reprezentowane przez wiersze o numerach 1, 2 i 3. Średnia makro jest tylko średnią z kolumny „Wynik F1”.
 
-| &nbsp;    | precyzja | trafność   | wynik F1 |
+|           | precyzja | trafność   | wynik F1 |
 |-----------|-----------|----------|----------|
 | **1**     | 0.83      | 0.80     | 0.82     |
 | **2**     | 0.68      | 0.71     | 0.69     |
@@ -136,4 +140,5 @@ Więcej szczegółowych informacji o sposobach działania tego obliczenia zawier
 
 Jak pokazują te wyniki, dwa modele mają niemal identyczne wyniki dokładności makra F1. W tym i wielu innych przypadkach dokładność F1 stanowi lepszy wskaźnik zdolności modelu. Jeśli chodzi o dokładność, interpretacja wyników wymaga zrozumienia, co należy przede wszystkim rozważyć w modelu.
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+#### <a name="privacy-notice"></a>Klauzula prywatności
+Wersje zapoznawcze (1) mogą wykorzystywać mniej rygorystyczne funkcje ochrony prywatności i bezpieczeństwa niż usługa Dynamics 365 Finance and Operations, (2) nie są objęte umową dotyczącą poziomu usług (SLA) dla tej usługi, (3) nie powinny być używane do przetwarzania danych osobowych ani innych danych podlegających wymogom zapewnienia zgodności z przepisami lub regulacjami, oraz (4) mają ograniczone wsparcie techniczne.

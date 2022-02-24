@@ -1,10 +1,12 @@
 ---
 title: Projektowanie konfiguracji służących do generowania raportów w formatach pakietu Office z osadzonymi obrazami
-description: W tym temacie opisano sposób projektowania konfiguracji generujących dokumenty elektroniczne w formatach programów Excel i Word z osadzonymi obrazami.
+description: Etapy w tym temacie zawierają informacje o sposobie projektowania konfiguracji raportowania elektronicznego (ER) do generowania dokumentów elektronicznych w formatach pakietu Microsoft Office (Excel i Word) zawierających osadzone obrazy.
 author: NickSelin
-ms.date: 04/23/2021
+manager: AnnBe
+ms.date: 01/23/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -12,27 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 03a514c5b616d761ef3eb6347e67e645b23eaa1794911775835e77cded4500ac
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0145565ba060308162620f29a42499b0bffe6496
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719352"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684410"
 ---
 # <a name="design-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>Projektowanie konfiguracji służących do generowania raportów w formatach pakietu Office z osadzonymi obrazami
 
 [!include [banner](../../includes/banner.md)]
 
-Aby wykonać kroki podane w tej procedurze, należy najpierw wykonać procedurę „ER Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego”. W tej procedurze wyjaśniono sposób projektowania konfiguracji raportowania elektronicznego (ER) do generowania dokumentów programów Microsoft Excel i Word zawierających osadzone obrazy. W tej procedurze utworzysz wymagane konfiguracje ER dla przykładowej firmy Litware, Inc. Kroki można wykonać przy użyciu zestawu danych firmy USMF. Ta procedura została utworzona dla użytkowników z przypisaną rola administratora systemu lub dewelopera raportowania elektronicznego. Przed rozpoczęciem musisz pobrać i zapisać następujące pliki: 
-
-| opis                                          | Nazwa pliku                   |
-|------------------------------------------------------|-----------------------------|
-| Konfiguracja modelu danych ER                          | [Model czeków.xml](https://download.microsoft.com/download/6/e/a/6ea166fd-1382-4fdb-8dcb-0f13379f9c8e/Modelforcheques.xml)       |
-| ER format konfiguracji                              | [Format drukowania czeków.xml](https://download.microsoft.com/download/1/7/c/17c301e3-c4ee-4886-ae75-440fcc002c8c/Chequesprintingformat.xml) |
-| Obraz logo firmy                                   | [Logo firmy.png](https://download.microsoft.com/download/8/2/e/82e6bd81-caac-4e9a-bfce-1392ce7c8616/Companylogo.png)            |
-| Obraz podpisu                                      | [Obraz podpisu.png](https://download.microsoft.com/download/5/0/9/509151b3-06fc-4870-9408-7c9a43b72771/Signatureimage.png)         |
-| Alternatywny obraz podpisu                          | [Obraz podpisu 2.png](https://download.microsoft.com/download/3/0/0/30045bf1-0ff6-4215-9162-b77c2f5dcc7c/Signatureimage2.png)       |
-| Szablon programu Microsoft Word do drukowania czeków płatności  | [Szablon czeku Word.docx](https://download.microsoft.com/download/4/4/d/44d9d255-9ad1-42fe-87db-23f319fd8e89/ChequetemplateWord.docx)   |
+Aby wykonać kroki podane w tej procedurze, należy najpierw wykonać procedurę „ER Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego”. W tej procedurze wyjaśniono sposób projektowania konfiguracji raportowania elektronicznego (ER) do generowania dokumentów programów Microsoft Excel i Word zawierających osadzone obrazy. W tej procedurze utworzysz wymagane konfiguracje ER dla przykładowej firmy Litware, Inc. Kroki można wykonać przy użyciu zestawu danych firmy USMF. Ta procedura została utworzona dla użytkowników z przypisaną rola administratora systemu lub dewelopera raportowania elektronicznego. Zanim rozpoczniesz, pobierz i zapisz pliki wymienione w temacie pomocy [Osadzanie obrazów i kształtów w generowanych dokumentach przez raportowanie elektroniczne](../electronic-reporting-embed-images-shapes.md). Pliki to: Model for cheques.xml, Cheques printing format.xml, Company logo.png, Signature image.png, Signature image 2.png i Cheque template Word.docx.
 
 ## <a name="verify-prerequisites"></a>Sprawdzanie wymagań  
  1. Wybierz kolejno opcje Administrowanie organizacją > Obszary robocze > Raportowanie elektroniczne.  
@@ -97,6 +90,3 @@ Aby wykonać kroki podane w tej procedurze, należy najpierw wykonać procedurę
  30. W polu Zezwalaj na tworzenie przelewu testowego dla nieaktywnych kont bankowych zaznacz opcję Tak.  
  31. Kliknij przycisk Zapisz.  
  32. Zamknij stronę.  
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

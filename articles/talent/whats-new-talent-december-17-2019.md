@@ -56,6 +56,3 @@ Zmiany z tego tygodnia rozwiązują problem polegający na tym, że nie można w
 ### <a name="current-balance-report-in-leave-pbi-doubles-employee-balance-385581"></a>Aktualny raport salda urlopów PBI podwaja saldo pracowników (385581)
 
 Ta zmiana koryguje bieżący raport salda w tym scenariuszu.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

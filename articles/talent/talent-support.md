@@ -48,6 +48,3 @@ Aby uzyskać pomoc techniczną dotyczącą autonomicznej instalacji Onboard, sko
 | Zgłoś problem. | Wybierz przycisk **pomoc** (**?**) znajdujący się w prawym górnym rogu strony, a następnie wybierz opcję **Zgłoś problem**. Wypełnij pole opisu problemu oraz dołącz adres e-mail, jeśli chcesz śledzić proces rozwiązywania. |
 | Uzyskiwanie pomocy na temat licencjonowania aplikacji Talent. | Skontaktuj się z partnerem lub przedstawicielem handlowym firmy Microsoft. |
 | Wnioskowanie o nowe funkcje w aplikacji Onboard. | Wybierz przycisk **pomoc** (**?**), a następnie wybierz opcję **pomysły**. Można również odwiedzić [Dynamics 365 Talent: Onboard Pomysły](https://experience.dynamics.com/ideas/categories/?forum=569a7fb2-8327-e911-a95a-000d3a4f3883&forumName=Dynamics%20365%20for%20Talent%3A%20Onboard), aby wyświetlić, wyszukać lub zagłosować na istniejące pomysły lub dodać nowe pomysły. |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

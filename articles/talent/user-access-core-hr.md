@@ -46,6 +46,3 @@ Aby uzyskać informacje, zobacz sekcję „Przyznawanie dostępu do środowiska�
 **Rozwiązanie długoterminowe**
 
 Microsoft rozważa automatyczne przypisywanie odpowiednich praw do Onboard i Attract podczas dodawania użytkownika do Human Resources.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

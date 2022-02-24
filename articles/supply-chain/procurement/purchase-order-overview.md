@@ -1,25 +1,29 @@
 ---
-# required metadata
 title: Omówienie zamówień zakupu
-description: 'W tym artykule podano ogólne informacje dotyczące zamówień zakupu oraz łącza do dodatkowych artykułów, które odnoszą się do różnych etapów pokonywanych przez zamówienie zakupu.'
-author: Henrikan
+description: W tym artykule podano ogólne informacje dotyczące zamówień zakupu oraz łącza do dodatkowych artykułów, które odnoszą się do różnych etapów pokonywanych przez zamówienie zakupu.
+author: RichardLuan
+manager: tfehr
 ms.date: 06/20/2017
-ms.topic: overview
-ms.prod: null
-ms.technology: null
-ms.search.form: 'PurchTable, PurchTablePart, PurchLineOpenOrder, PurchConfirmationRequestJournal'
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: PurchTable, PurchTablePart, PurchLineOpenOrder, PurchConfirmationRequestJournal
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-  - '93083'
-  - intro-internal
+ms.custom: 93083
 ms.assetid: e9b7bc5b-1d7e-4ec2-97be-d655274b0613
 ms.search.region: Global
-ms.author: henrikan
-ms.search.validFrom: '2016-02-28'
+ms.author: riluan
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: fef4eaa9563647b8878e0d0fb0bc185fdc4ed319
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022238"
 ---
-
 # <a name="purchase-order-overview"></a>Omówienie zamówień zakupu
 
 [!include [banner](../includes/banner.md)]
@@ -39,7 +43,7 @@ Poniższe artykuły zawierają omówienie różnych etapów, przez które przech
 -   [Tworzenie zamówień zakupu](purchase-order-creation.md)
 -   [Zatwierdzanie i potwierdzanie zamówień zakupu](purchase-order-approval-confirmation.md)
 -   [Przyjęcie produktów na podstawie zamówień zakupu](product-receipt-against-purchase-orders.md)
--   [Omówienie faktur od dostawców](../../finance/accounts-payable/vendor-invoices-overview.md)
+-   [Omówienie faktur od dostawców](../../financials/accounts-payable/vendor-invoices-overview.md)
 
 ## <a name="types-of-purchase-orders"></a>Typy zamówień zakupu
 Istnieją trzy typy zamówień zakupu. Podczas tworzenia zamówienia zakupu należy określić jego typ. Na stronie **Parametry modułu Zaopatrzenie i sourcing** można skonfigurować domyślny typ nowych zamówień.
@@ -74,7 +78,8 @@ Pole **Stan zatwierdzenia** jest używane, gdy zamówienie zakupu przechodzi prz
 -   **Potwierdzone** — To stan przypisywany po potwierdzeniu zamówienia. Zazwyczaj ten stan jest ostatnim stanem zatwierdzania przypisywanym do zamówienia.
 
 
-## <a name="additional-resources"></a>Dodatkowe zasoby
+<a name="additional-resources"></a>Dodatkowe zasoby
+--------
 
 [Tworzenie zamówień zakupu](purchase-order-creation.md)
 
@@ -82,10 +87,7 @@ Pole **Stan zatwierdzenia** jest używane, gdy zamówienie zakupu przechodzi prz
 
 [Przyjęcie produktów na podstawie zamówień zakupu](product-receipt-against-purchase-orders.md)
 
-[Omówienie faktur od dostawców](../../finance/accounts-payable/vendor-invoices-overview.md)
+[Omówienie faktur od dostawców](../../financials/accounts-payable/vendor-invoices-overview.md)
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

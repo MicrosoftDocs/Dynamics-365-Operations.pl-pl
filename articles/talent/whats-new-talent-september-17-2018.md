@@ -54,6 +54,3 @@ Aplikacja Talent zawiera teraz elementy z aktualizacji platformy 18 dla Finance 
 ## <a name="bug-fixes"></a>Poprawki błędów
 
 Ta wersja zawiera kilka dodatkowych poprawek błędów, w tym ograniczenie odwołań do ustaw ACA i ADA oraz deklaracji I9 tylko dla firm w Stanach Zjednoczonych.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

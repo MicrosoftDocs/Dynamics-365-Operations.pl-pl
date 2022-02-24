@@ -1,10 +1,12 @@
 ---
 title: Planowanie główne dla zapotrzebowań oddziału i magazynu, magazyn niewymagany
 description: W tym temacie opisano sposób planowania towaru, który ma wymiar zapotrzebowania „oddział” i „magazyn”. Wymiar magazynu nie jest obowiązkowy.
-author: ChristianRytt
+author: roxanadiaconu
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResStorageDimensionGroup, ReqItemTable
 audience: Application User
@@ -13,15 +15,15 @@ ms.custom: 2514
 ms.assetid: 92d47bdd-df68-4f60-ac9a-96aa08236c26
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e6d163a0a9fc98442f8717972445a1de6d35ca1c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: cdd3614e52da72e32e6781bc8da7c9e2b3162832
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573736"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970413"
 ---
 # <a name="master-planning-for-site-and-warehouse-coverage-warehouse-not-mandatory"></a>Planowanie główne dla zapotrzebowań oddziału i magazynu, magazyn niewymagany
 
@@ -41,11 +43,12 @@ Na poniższej ilustracji przedstawiono przebieg planowania głównego. Parametry
 -   Dla magazynu są zdefiniowane relacje uzupełniania. Kliknij kolejno opcje **Zarządzanie zapasami &gt; Ustawienia &gt; Podział magazynu &gt; Magazyny**. Na skróconej karcie **Planowanie główne** zobacz grupę pól **Magazyn główny**.
 -   Domyślny typ zamówienia to Produkcja, Zamówienie zakupu lub Kanban. Kliknij kolejno opcje **Zarządzanie informacjami o produktach &gt; Produkty&gt; Zwolnione produkty**. Wybierz pozycję, a następnie w okienku akcji na karcie **Plan** kliknij pozycję **Ustawienia domyślne zamówień**. W formularzu **Ustawienia domyślne zamówień** zobacz **Domyślny typ zamówienia**.
 
-![Popyt dla oddziału i magazynu, magazyn niewymagany.](./media/multisitedemandexplosionscenarioforsiteandwarehousecoveragewarehousenotmandatory.jpg)
+![Popyt dla oddziału i magazynu, magazyn niewymagany](./media/multisitedemandexplosionscenarioforsiteandwarehousecoveragewarehousenotmandatory.jpg)
 
 
 
-## <a name="additional-resources"></a>Dodatkowe zasoby
+<a name="additional-resources"></a>Dodatkowe zasoby
+--------
 
 [Omówienie planowania głównego i funkcjonalności wielooddziałowości](master-plan-multisite-functionality.md)
 
@@ -59,6 +62,3 @@ Na poniższej ilustracji przedstawiono przebieg planowania głównego. Parametry
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

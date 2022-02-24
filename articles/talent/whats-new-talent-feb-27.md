@@ -141,6 +141,3 @@ Aby zaktualizować istniejący szablon, wykonaj następujące kroki:
     9. Na stronie **zadania mapowania** wybierz nową kolumnę jako źródło do utworzenia innego mapowania dla HIERARCHYTYPENAME.
 
         [![Mapowanie](./media/CDS-Mapping5.png)](./media/CDS-Mapping5.png)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

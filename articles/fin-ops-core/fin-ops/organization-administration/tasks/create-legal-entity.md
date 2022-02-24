@@ -2,9 +2,11 @@
 title: Tworzenie firmy
 description: Firma to organizacja, która jest identyfikowana przez rejestrację urzędową.
 author: sericks007
+manager: AnnBe
 ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMLegalEntity, OMNewLegalEntity
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d665c5e6f359ad51b2e247ac487c9e4cf23a85e90e91aae2bc9d3bb5cbb9e091
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6dc74291977d999218ebc66f72ee5b01b12827ed
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759048"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796761"
 ---
 # <a name="create-a-legal-entity"></a>Tworzenie firmy
 
@@ -43,6 +45,3 @@ Firma to organizacja, która jest identyfikowana przez rejestrację urzędową. 
 15. Rozwiń sekcję **Rejestracja podatkowa**. W sekcji **Rejestracja podatkowa** wprowadź numery rejestrowe używane w zeznaniach dla urzędów skarbowych.
 16. Rozwiń sekcję **Podatek 1099**. W sekcji **Podatek 1099** wprowadź dane formularza 1099 dla firmy.  
 17. Kliknij przycisk **Zapisz**.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

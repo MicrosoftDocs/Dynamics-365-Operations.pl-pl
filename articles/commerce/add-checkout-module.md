@@ -2,24 +2,27 @@
 title: Moduł realizacji transakcji
 description: W tym temacie opisano sposób dodawania modułu realizacji transakcji do strony i ustawiania wymaganych właściwości.
 author: anupamar-ms
+manager: annbe
 ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 031c70181e0dff9bc81450d2454f21e1dbaf1285d41b38ff6f7df6045923c27c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 28d58caba71ea98ccf163e756e879587aa254bb3
+ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715513"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "4415099"
 ---
 # <a name="checkout-module"></a>Moduł realizacji transakcji
 
@@ -27,13 +30,15 @@ ms.locfileid: "6715513"
 
 W tym temacie opisano sposób dodawania modułu realizacji transakcji do strony i ustawiania wymaganych właściwości.
 
+## <a name="overview"></a>Omówienie
+
 Moduł realizacji transakcji to specjalny kontener, w którym są przechowywane wszystkie moduły wymagane do utworzenia zamówienia. Przedstawia przepływ krok po kroku, którego odbiorca używa do wprowadzenia wszystkich odpowiednich informacji w celu dokonania zakupu. System przechwytuje adres wysyłkowy, metodę wysyłki i informacje bilingowe. Ponadto zawiera podsumowanie zamówień i inne informacje związane z zamówieniem odbiorcy.
 
 Moduł realizacji transakcji renderuje dane na podstawie identyfikatora koszyka. Ten identyfikator koszyka jest zapisany jako plik cookie przeglądarki. Identyfikator koszyka jest wymagany do renderowania informacji w module realizacji transakcji, takich jak towary w zamówieniu, łączna kwota i rabaty. 
 
 Poniższy obraz pokazuje przykład modułu realizacji zamówienia Fabrikam na stronie realizacji zamówienia.
 
-![Przykład modułu realizacji zamówienia.](./media/Checkout.PNG)
+![Przykład modułu realizacji zamówienia](./media/Checkout.PNG)
 
 ## <a name="checkout-module-properties"></a>Właściwości modułu realizacji transakcji
 
@@ -52,13 +57,13 @@ W module realizacji transakcji jest wyświetlane podsumowanie zamówień oraz fu
 
     Poniższy obraz pokazuje przykład modułu adresu wysyłki na stronie realizacji zamówienia.
 
-    ![Przykład modułu adres wysyłki.](./media/ecommerce-shippingaddress.PNG)
+    ![Przykład modułu adres wysyłki](./media/ecommerce-shippingaddress.PNG)
 
 - **Opcje dostawy** — ten moduł umożliwia odbiorcy wybranie metody dostawy dla zamówienia. Aby uzyskać więcej informacji dotyczących tego modułu, przejdź do [Moduł Opcje dostawy](delivery-options-module.md).
 
     Poniższy obraz pokazuje przykład opcji dostawy na stronie realizacji zamówienia.
  
-    ![Przykład modułu opcji dostawy.](./media/ecommerce-deliveryoptions.PNG)
+    ![Przykład modułu opcji dostawy](./media/ecommerce-deliveryoptions.PNG)
 
 - **Kontener sekcji wyewidencjonowywania** — ten moduł jest kontenerem, w ramach którego można umieścić wiele modułów w celu utworzenia sekcji w ramach przepływu realizacji transakcji. Na przykład można umieścić w tym kontenerze wszystkie moduły powiązane z płatnością, aby były wyświetlane w jednej sekcji. Ten moduł ma wpływ tylko na układ przepływu.
 
@@ -70,7 +75,7 @@ W module realizacji transakcji jest wyświetlane podsumowanie zamówień oraz fu
 
     Poniższy obraz przedstawia przykład modułów karty upominkowej, punktów lojalnościowych i płatności na stronie realizacja zamówienia.
 
-    ![Przykład karty podarunkowej, punktów lojalnościowych i płatności na stronie realizacji transakcji.](./media/ecommerce-payments.PNG)
+    ![Przykład karty podarunkowej, punktów lojalnościowych i płatności na stronie realizacji transakcji](./media/ecommerce-payments.PNG)
 
 - **Informacje kontaktowe** — ten moduł umożliwia odbiorcy dodanie lub zmianę informacji kontaktowych (adres e-mail) dla zamówienia.
 
@@ -80,7 +85,7 @@ W module realizacji transakcji jest wyświetlane podsumowanie zamówień oraz fu
 
     Poniższy obraz pokazuje przykład modułu postanowień na stronie realizacji zamówienia.
 
-    ![Przykład warunków i postanowień na stronie realizacja zamówienia.](./media/ecommerce-checkout-terms.PNG)
+    ![Przykład warunków i postanowień na stronie realizacja zamówienia](./media/ecommerce-checkout-terms.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Interakcja Commerce Scale Unit
 
@@ -122,6 +127,3 @@ Aby dodać moduł realizacji transakcji do nowej strony i ustawić wymagane wła
 [Moduł szczegółów zamówienia](order-confirmation-module.md)
 
 [Moduł karty upominkowej](add-giftcard.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

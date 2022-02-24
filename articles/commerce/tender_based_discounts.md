@@ -2,9 +2,11 @@
 title: Rabaty oparte na metodach płatności
 description: Ten temat stanowi przegląd funkcji, które umożliwiają detalistom konfigurowanie rabatów dla konkretnych typów metod płatności.
 author: bebeale
+manager: AnnBe
 ms.date: 10/30/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTenderDiscount
 audience: Application User
@@ -16,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: 52b9510b2c22157aec27b865115273064bb0e803443306ea20468b93a2ea3ca7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9f6747ff9d68c29612346254928e869d6d34d433
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719472"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4962942"
 ---
 # <a name="tender-based-discounts"></a>Rabaty oparte na metodach płatności
 
@@ -32,7 +34,7 @@ Jest to typowa praktyka między detalistami wypuszczania prywatnych, markowych k
 
 Sprzedawcy, którzy nie dostarczają markowych kart kredytowych, mogą zachęcać odbiorców do regulowania płatności za pomocą innych typów metod płatności, takich jak gotówka, karty upominkowe czy punkty lojalnościowe. Dzięki temu można zmniejszyć koszty opłat za przetwarzanie płatności z kart kredytowych. W związku z tym detaliści mogą oferować rabaty dla klientów, którzy korzystają z tych alternatywnych typów metod płatności.
 
-W Microsoft Dynamics 365 Commerce detaliści mogą skonfigurować procent rabatu stosowany do kwalifikowanych wierszy, jeśli odbiorca płaci za pomocą preferowanego typu metody płatności. Klient może zdecydować, czy ma zostać wykonana płatność częściowa czy pełna płatność, a odpowiednia kwota rabatu jest ustalana w Commerce. Należy zwrócić uwagę, że rabat jest zawsze podawany na kwotę przed opodatkowaniem z kwalifikujących się towarów.
+W Microsoft Dynamics 365 Commerce detaliści mogą skonfigurować procent rabatu stosowany do kwalifikowanych wierszy, jeśli odbiorca płaci za pomocą preferowanego typu metody płatności Klient może zdecydować, czy ma zostać wykonana płatność częściowa czy pełna płatność, a odpowiednia kwota rabatu jest ustalana w Commerce. Należy zwrócić uwagę, że rabat jest zawsze podawany na kwotę przed opodatkowaniem z kwalifikujących się towarów.
 
 Rabaty oparte na metodach płatności nie konkurują z rabatami opartymi na pozycjach, np. rabatami okresowymi lub ręcznymi. Są one zawsze składane w ramach rabatów dla towarów. W związku z tym nawet jeśli do towaru zostanie zastosowany wyłączny rabat okresowy, rabat oparty na metodzie płatności jest nadal stosowany na zasadzie wyłącznego rabatu okresowego. Podobnie, jeśli do transakcji jest stosowany rabat progowy, a rabat na podstawie metody płatności zmniejsza sumę poniżej progu, rabat progowy jest nadal stosowany do transakcji.
 
@@ -69,6 +71,3 @@ Detaliści często wykluczają niektóre produkty, takie jak nowe towary lub poz
 
 > [!NOTE]
 > Jeśli konfiguracja **Nie zezwalaj na żadne rabaty** jest ustawiona wartość **Tak**, do produktu nie będą stosowane żadne rabaty. Nie będą nawet stosowane rabaty oparte na metodach płatności.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

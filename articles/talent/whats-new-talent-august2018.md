@@ -85,6 +85,3 @@ Dodatkowe informacje o tej funkcji są dostępne w dokumencie [Integracja z paki
 ## <a name="other-fixes"></a>Inne poprawki
 
 Ta wersja zawiera również szereg poprawek błędów, nowe jednostki, poprawki istniejących jednostek oraz modyfikacje tłumaczeń etykiet.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

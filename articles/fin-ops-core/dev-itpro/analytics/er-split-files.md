@@ -2,9 +2,11 @@
 title: Dzielenie wygenerowanych plików XML na podstawie rozmiaru pliku i ilości treści
 description: Ten temat zawiera informacje dotyczące dzielenia plików generowanych na podstawie rozmiaru pliku i ilości elementu zawartości.
 author: NickSelin
-ms.date: 04/23/2021
+manager: AnnBe
+ms.date: 05/25/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 3735bcb06eff966fc364a891b38d44e34e845e35f59314822d13eba40d51d5f4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d60266aba42f502e7707bdace921cfee4526b6ae
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769979"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682878"
 ---
 # <a name="split-generated-xml-files-based-on-file-size-and-content-quantity"></a>Dzielenie wygenerowanych plików XML na podstawie rozmiaru pliku i ilości treści
 
@@ -38,13 +40,10 @@ Jeśli skonfigurowano plikowe miejsca docelowe dla elementu formatu FILE, w któ
 
 Aby dowiedzieć się więcej o tej funkcji, należy odtworzyć przewodnik po zadaniach **pliki XML podziału ER na podstawie rozmiaru pliku lub ilość zawartości pozycji**, wchodzący w skład procesu biznesowego **7.5.4.3 Pobierania/opracowywanie składników usług/rozwiązań informatycznych (10677)** i można go pobrać z [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684). Ten przewodnik zadania przeprowadzi Cię przez proces konfigurowania formatu ER w celu podzielenia wygenerowanych plików na podstawie ograniczeń rozmiaru pliku i ilości pozycji zawartości. Aby ukończyć przewodnik po zadaniach, należy pobrać następujące pliki:
 
-- [Konfiguracja modelu ER — XmlFilesSplittingModel.xml](https://download.microsoft.com/download/e/a/f/eaffe96a-22ec-4a32-898a-f4328c91c387/XmlFilesSplittingModel.xml)
-- [Konfiguracja formatu ER — XmlFilesSplittingFormat.xml](https://download.microsoft.com/download/e/9/c/e9c5849b-8254-4cdf-bb00-4c2ebc72ddec/XmlFilesSplittingFormat.xml)
+- [Konfiguracja modelu ER — XmlFilesSplittingModel.xml](https://go.microsoft.com/fwlink/?linkid=874111)
+- [Konfiguracja formatu ER — XmlFilesSplittingFormat.xml](https://go.microsoft.com/fwlink/?linkid=874111)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 [Lokalizacje docelowe raportowania elektronicznego (ER)](electronic-reporting-destinations.md)
 
 [Projektant formuł w module Raportowanie elektroniczne (ER)](general-electronic-reporting-formula-designer.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,35 +2,37 @@
 title: Konfigurowanie urządzenia do uruchamiania interfejsu wykonania hal produkcyjnych
 description: Interfejs wykonywania hali produkcyjnej jest ustawiany dla każdego urządzenia w hali produkcyjnej. Firmy zazwyczaj konfigurują poszczególne urządzenia w różny sposób w zależności od przeznaczenia urządzenia. Na przykład firma może mieć jedno urządzenie w recepcji, gdzie pracownicy rejestrują się przyjście i wyjście, a drugie na hali produkcyjnej, gdzie pracownicy zarządzają swoimi zadaniami.
 author: johanhoffmann
+manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgProductionFloorExecution, HcmWorker, JmgProductionFloorExecutionDeviceConfiguration
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f0be79b54a279893f93d41981342e42c8880f059
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: d4529af21d9673512889b17aeb1e7fbd49969cdc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752839"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966286"
 ---
 # <a name="set-up-a-device-to-run-the-production-floor-execution-interface"></a>Konfigurowanie urządzenia do uruchamiania interfejsu wykonania hal produkcyjnych
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Interfejs wykonywania hali produkcyjnej jest ustawiany dla każdego urządzenia w hali produkcyjnej. Firmy zazwyczaj konfigurują poszczególne urządzenia w różny sposób w zależności od przeznaczenia urządzenia. Na przykład firma może mieć jedno urządzenie w recepcji, gdzie pracownicy rejestrują się przyjście i wyjście, a drugie na hali produkcyjnej, gdzie pracownicy zarządzają swoimi zadaniami.
 
 ## <a name="set-the-configuration-and-filters-for-a-specific-device"></a>Umożliwia ustawienie konfiguracji i filtrów dla określonego urządzenia
 
-Aby określić konfigurację i filtry zadań dla urządzenia, należy zalogować się na stronie **Tworzenie hal produkcyjnych** przy użyciu konta, które ma rolę zabezpieczeń, która zawiera obowiązki *Utrzymuj nadzór nad czasem*. (Oprócz wbudowanych ról zabezpieczeń, tylko *Kierownik zakładu produkcyjnego* ma takie obowiązki.) Następnie wykonaj następujące kroki.
+Aby określić konfigurację i filtry zadań dla urządzenia, należy zalogować się na stronie **Tworzenie hal produkcyjnych** przy użyciu konta, które ma rolę zabezpieczeń, która zawiera obowiązki *Kierownik ds. grafiku*. (Oprócz wbudowanych ról zabezpieczeń, tylko *Kierownik zakładu produkcyjnego* ma takie obowiązki.) Następnie wykonaj następujące kroki.
 
-1. Przejdź do urządzenia, które chcesz skonfigurować, i zaloguj się do rozwiązania Microsoft Dynamics 365 Supply Chain Management jako kierownik zakładu produkcyjnego. (Należy skorzystać z konta, które zawiera obowiązki *Utrzymuj nadzór nad czasem*.)
+1. Przejdź do urządzenia, które chcesz skonfigurować, i zaloguj się do rozwiązania Microsoft Dynamics 365 Supply Chain Management jako kierownik zakładu produkcyjnego. (Należy skorzystać z konta, które zawiera obowiązki *Kierownik ds. grafiku*.)
 1. Upewnij się, że dla konfigurowanego urządzenia jest dostępna konfiguracja. Jeśli konfiguracja jeszcze nie istnieje, podano konfigurację domyślną. Aby uzyskać więcej informacji o konfigurowaniu, zapoznaj się z tematem [Konfigurowanie urządzenia do uruchamiania interfejsu wykonywania pomieszczeń produkcyjnego](production-floor-execution-configure.md).
 1. Wybierz kolejno opcje **Kontrola produkcji \> Wykonywanie produkcji \> Tworzenie hal produkcyjnych**.
 
@@ -70,13 +72,10 @@ Często interfejs wykonywania hali produkcyjnej jest uruchamiany na urządzeniu,
 
 W górnej części pokazanej poniżej pokazano, jak interfejs jest domyślnie przeszukiwany. W dolnej części pokazano sposób wyglądu w trybie pełnoekranowym, gdy okienko nawigacji jest ukryte.
 
-![Interfejs standardowy w porównaniu z pełnym ekranem.](media/pfei-full-screen.png "Interfejs standardowy w porównaniu z pełnym ekranem")
+![Interfejs standardowy w porównaniu z pełnym ekranem](media/pfei-full-screen.png "Interfejs standardowy w porównaniu z pełnym ekranem")
 
 ## <a name="extend-the-session-past-12-hours"></a>Rozszerz sesję w ciągu ostatnich 12 godzin
 
 Domyślnie interfejs wykonywania rozkładu pracy automatycznie rejestruje się, jeśli nikt nie używa go przez 12 godzin. Użytkownik Supply Chain Management musi się ponownie zalogować. Można jednak wydłużyć limit czasu do 90 dni.
 
 Aby wydłużyć limit czasu, zaloguj się w module Supply Chain Management i przejdź do **Administrowanie systemem \> Użytkownicy \> Rozszerzenia sesji**. Określ konto użytkownika Supply Chain Management służące do logowania się do urządzenia oraz liczbę godzin, dla których sesja powinna pozostać aktywna.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

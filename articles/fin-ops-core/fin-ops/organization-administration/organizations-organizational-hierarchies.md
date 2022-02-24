@@ -1,25 +1,29 @@
 ---
-# required metadata
 title: Omówienie organizacji i hierarchii organizacyjnych
-description: 'Hierarchie organizacyjne reprezentują relacje między organizacjami, które tworzą firmę.'
+description: Organizacja to grupa osób, które pracują razem, aby przeprowadzić proces biznesowy lub osiągnąć cel. Hierarchie organizacyjne reprezentują relacje między organizacjami, które tworzą firmę.
 author: sericks007
-ms.date: 01/03/2022
-ms.topic: overview
-ms.prod: null
-ms.technology: null
-ms.search.form: 'OMHierarchyManager, OMOperatingUnit,'
+manager: AnnBe
+ms.date: 07/25/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: OMHierarchyManager, OMOperatingUnit,
 audience: Application User
 ms.reviewer: sericks
-ms.custom:
-  - '17291'
-  - intro-internal
+ms.custom: 17291
 ms.assetid: 76b7ca45-93d4-45cc-b191-66ee63afa1fd
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: '2016-02-28'
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 368569f2cdd389b6fc99ddcf05f35cc9a750ec9e
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797053"
 ---
-
 # <a name="organizations-and-organizational-hierarchies-overview"></a>Omówienie organizacji i hierarchii organizacyjnych
 
 [!include [banner](../includes/banner.md)]
@@ -50,7 +54,7 @@ Typy jednostek operacyjnych obejmują centra kosztów, jednostki biznesowe, stru
 | Jednostka biznesowa       | Częściowo autonomiczna jednostka operacyjna utworzona w celu spełnienia strategicznych celów biznesowych. | Używana do sprawozdawczości finansowej opartej na branżach lub liniach produktów, które organizacja obsługuje niezależnie od podmiotów prawnych. |
 | Strumień wartości        | Jednostka operacyjna, która kontroluje jeden lub więcej przepływów produkcji. | Powszechnie używana w module produkcji oszczędnej do kontrolowania działań i przepływów, które są wymagane w celu dostaw produktu lub usługi do konsumentów. |
 | Dział          | Jednostka operacyjna, która reprezentuje kategorię lub funkcjonalną część organizacji, która wykonuje określone zadanie, takie jak sprzedaż lub księgowanie. | Używana w raportach dla obszarów funkcjonalnych. Dział może mieć obowiązek raportowania zysków i strat i może się składać z grupy centrów kosztów. |
-| Kanał sprzedaży      | Jednostka operacyjna reprezentująca sklep stacjonarny, sklep internetowy lub call center. | Służy do kontroli operacyjnej przynajmniej jednego sklepu w ramach podmiotu prawnego lub wielu podmiotów prawnych oraz do zarządzania takim sklepem. |
+| Kanał Commerce      | Jednostka operacyjna, która reprezentuje sklep tradycyjny, sklep internetowy lub internetowy serwis sprzedażowy. | Służy do kontroli operacyjnej przynajmniej jednego sklepu w ramach podmiotu prawnego lub wielu podmiotów prawnych oraz do zarządzania takim sklepem. |
 
 ### <a name="teams"></a>Zespoły
 
@@ -60,19 +64,6 @@ Zespół to organizacja, której członkowie mają wspólne obowiązki, zaintere
 
 Hierarchie organizacyjne umożliwiają przeglądanie i raportowanie działalności biznesowej z różnych perspektyw. Można na przykład skonfigurować hierarchię podmiotów prawnych na potrzeby tworzenia raportów podatkowych, statutowych i ustawowych. Hierarchia oparta na jednostkach operacyjnych służy do raportowania informacji finansowych niewymaganych przez prawo, ale używanych w kontroli wewnętrznej. Na przykład, można utworzyć hierarchię zakupów w celu kontroli zasad, reguł i procesów biznesowych zakupów.
 
-> [!NOTE]
-> Po dodaniu jednostki operacyjnej do hierarchii nie można jej usunąć. 
-
 Każdej hierarchii jest przypisywany. Cel hierarchii określa typy organizacji, które mogą być uwzględniane w hierarchii. Cel decyduje również o tym, w których scenariuszach aplikacji można używać hierarchii.
 
 Organizacje w hierarchii mogą współużytkować parametry, zasady i transakcje. Organizacja może dziedziczyć lub zastępować parametry swojej organizacji nadrzędnej. Jednak współużytkowane dane główne, takie jak produkty i książki adresowe, dotyczą całej organizacji i nie można ich zastąpić dla poszczególnych organizacji. Tworzenie organizacji i hierarchii wymaga dokładnego zaplanowania. Więcej informacji można znaleźć w temacie [Planowanie hierarchii organizacyjnej](plan-organizational-hierarchy.md).
-
-## <a name="additional-resources"></a>Dodatkowe zasoby
-- [Planowanie hierarchii organizacyjnej](plan-organizational-hierarchy.md)
-- [Tworzenie hierarchii organizacyjnej](tasks/create-organization-hierarchy.md)
-- [Tworzenie firmy](tasks/create-legal-entity.md)
-- [Tworzenie jednostki operacyjnej](tasks/create-operating-unit.md)
-
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

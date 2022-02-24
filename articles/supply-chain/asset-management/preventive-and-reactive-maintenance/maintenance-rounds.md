@@ -1,10 +1,12 @@
 ---
 title: Serie czynności konserwacyjnych
 description: W tym temacie wyjaśniono serie czynności konserwacyjnych w module Zarządzanie składnikami majątku.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetRoundTable
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: dc0d8ec546e7455187a87ac124c5e56a93f5bafd2270bf275af950991fc4b87e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a3a64593a2155d35e78b0d854c7367fa65d1c5c8
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740726"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018553"
 ---
 # <a name="maintenance-rounds"></a>Serie czynności konserwacyjnych
 
@@ -80,7 +82,7 @@ Serie czynności konserwacyjnych można konfigurować w **Zarządzanie składnik
 
 Poniższa ilustracja przedstawia i przykład cyklu eksploatacji zawierającego trzy składniki majatku.
 
-![Rysunek 1.](media/13-preventive-maintenance.png)
+![Rysunek 1](media/13-preventive-maintenance.png)
 
 
 ## <a name="schedule-maintenance-rounds"></a>Planowanie serii czynności konserwacyjnych
@@ -106,14 +108,11 @@ Po skonfigurowaniu serii czynności konserwacyjnych należy uruchomić zadanie h
 
 W dwóch poniższych ilustracjach przedstawiono zadanie planowania w oknie dialogowym **Planowanie serii czynności konserwacyjnych** oraz wiersze harmonogramu konserwacji utworzone we **Wszystkich harmonogramach konserwacji** na podstawie tego zadania harmonogramu.
 
-![Rysunek 2.](media/14-preventive-maintenance.png)
+![Rysunek 2](media/14-preventive-maintenance.png)
 
-![Rysunek 3.](media/15-preventive-maintenance.png)
+![Rysunek 3](media/15-preventive-maintenance.png)
 
 - Jeśli zlecenia produkcyjne są tworzone ręcznie na środkach, które zostały objęte gwarancją dostawcy, wyświetlane jest okno dialogowe, które użytkownik będzie wiedział o gwarancji. Utworzenie zlecenia produkcyjnego może zostać anulowane. Sprawdzanie relacji gwarancji jest pomijane dla automatycznie tworzonych zleceń produkcyjnych.  
 - Istnieje możliwość skonfigurowania zadania wsadowego w skróconej karcie **Uruchom w tle** w celu zaplanowania serii w regularnych odstępach czasu.  
 - Jeśli seria jest uwzględniona w kilku pulach zleceń pracy (zapoznaj się z [Pule zleceń pracy](../work-orders/work-order-pools.md)), jest wyświetlany jeden rekord dla każdej puli w **Otwieranie puli harmonogramów konserwacji**. W ten sposób można zoptymalizować opcje filtrowania dla pul zleceń pracy.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: Atrybuty inżynieryjne i wyszukiwanie atrybutów inżynieryjnych
 description: W tym temacie wyjaśniono, w jaki sposób można stosować atrybuty inżynieryjne w celu określenia wszystkich niestandardowych charakterystyk w celu zapewnienia, że wszystkie dane główne produktu mogą być zarejestrowane w systemie. Wyjaśniono również, w jaki sposób można stosować wyszukiwanie atrybutów inżynierskich w celu łatwego wyszukiwania produktów na podstawie zarejestrowanych charakterystyk.
 author: t-benebo
+manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EngChgProductAttributeSearch, EngChgMaintainAttributeInheritance, EngChgAttribute
 audience: Application User
@@ -12,13 +14,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 2f8803e46ce6f104a5afee64faaf393a2df47a61
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: 32cd2c6d0915df1e48973a22a7d391eb8d62a072
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568118"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963695"
 ---
 # <a name="engineering-attributes-and-engineering-attribute-search"></a>Atrybuty inżynieryjne i wyszukiwanie atrybutów inżynieryjnych
 
@@ -26,13 +28,15 @@ ms.locfileid: "7568118"
 
 Aby zapewnić, że wszystkie dane główne produktu mogą być rejestrowane w systemie, należy zastosować atrybuty inżynieryjne w celu określenia wszystkich niestandardowych charakterystyk. Pozwoli to stosować wyszukiwanie atrybutów inżynierskich w celu łatwego wyszukiwania produktów na podstawie zarejestrowanych charakterystyk.
 
-## <a name="create-engineering-attributes-and-attribute-types"></a>Tworzenie atrybutów inżynieryjnych i typów atrybutów
+## <a name="engineering-attributes"></a>Atrybuty projektowe
 
 Zazwyczaj produkty inżynieryjne mają wiele cech i właściwości, które należy przechwycić. Mimo że niektóre właściwości można zarejestrować za pomocą standardowych pól produktu, można również utworzyć nowe właściwości technologiczne stosownie do potrzeb. Można zdefiniować własne *atrybuty inżynierskie* i uczynić je częścią definicji produktu.
 
+### <a name="create-engineering-attributes-and-attribute-types"></a>Tworzenie atrybutów inżynieryjnych i typów atrybutów
+
 Każdy atrybut inżynierski musi należeć do *typu atrybutu*. To wymaganie istnieje, ponieważ każdy atrybut musi mieć *typ danych* definiujący typy wartości, które może ono zawierać. Typem atrybutu inżynieryjnego może być standardowy typ (np. tekst niezależny, liczba całkowita lub liczba dziesiętna) lub typ niestandardowy (np. tekst zawierający określony zbiór wartości, z których można wybierać). Można użyć ponownie każdego typu atrybutu z dowolną liczbą atrybutów inżynierskich.
 
-### <a name="set-up-engineering-attribute-types"></a>Ustawianie typów atrybutów inżynieryjnych
+#### <a name="set-up-engineering-attribute-types"></a>Ustawianie typów atrybutów inżynieryjnych
 
 Aby wyświetlić, utworzyć lub edytować typ atrybutu inżynierskiego, należy wykonać następujące kroki.
 
@@ -46,7 +50,7 @@ Aby wyświetlić, utworzyć lub edytować typ atrybutu inżynierskiego, należy 
     - **Zakres wartości** — Ta opcja jest dostępna tylko w przypadku, gdy w polu **Typ** ustawiono wartość *Liczba całkowita*, *Dziesiętna* lub *Waluta*. Ustawienie tej opcji na wartość *Tak* spowoduje ustanowienie wartości minimalnych i maksymalnych, które będą akceptowane dla atrybutów tego typu. Skrócona karta **Zakres** umożliwia ustalenie wartości minimalnej i maksymalnej oraz (dla waluty) waluty stosowanej w odniesieniu do wprowadzonych limitów. Ustawienie tej opcji na *Nie* spowoduje akceptowanie dowolnych wartości. 
     - **Zakres wartości**  — To pole jest dostępne tylko w przypadku, gdy w polu  **Typ** ustawiono wartość *Liczba całkowita* lub *Dziesiętna*. Wybierz jednostkę miary stosowanego dla tego typu atrybutu. Jeśli jednostka nie jest wymagana, należy pozostawić to pole puste.
 
-### <a name="set-up-engineering-attributes"></a>Ustawianie atrybutów inżynieryjnych
+#### <a name="set-up-engineering-attributes"></a>Ustawianie atrybutów inżynieryjnych
 
 Aby wyświetlić, utworzyć lub edytować atrybut inżynierski, należy wykonać następujące kroki.
 
@@ -68,43 +72,17 @@ Aby wyświetlić, utworzyć lub edytować atrybut inżynierski, należy wykonać
     - **Minimum** — umożliwia wprowadzenie minimalnej zalecanej lub zaakceptowanej wartości minimalnej.
     - **Maksimum** — umożliwia wprowadzenie maksymalnej zalecanej lub zaakceptowanej wartości.
 
-### <a name="engineering-attribute-inheritance"></a>Dziedziczenie atrybutów inżynieryjnych
-
-W przypadku struktur produktów, takich jak BOM lub formuły, wybrane atrybuty mogą być przekazywane z towarów podrzędnych do towarów nadrzędnych. Ten proces można określić jako „dziedziczenie odwrotne”.
-
-#### <a name="turn-on-this-feature-for-your-system"></a>Włączanie funkcji w systemie
-
-Jeśli Twój system nie zawiera jeszcze funkcji opisanych w tej sekcji, przejdź do [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) i włącz funkcję *Ulepszone dziedziczenie atrybutów na potrzeby zarządzania zmianami inżynieryjnymi*.
-
-#### <a name="attribute-inheritance-example"></a>Przykład dziedziczenia atrybutów
-
-W przypadku produktu żywnościowego, na przykład ciasta marchewkowego, system musi zarejestrować wszystkie składniki, które zawiera produkt. Ciasto można modelować w systemie jako produkt inżynieryjny, który ma formułę. Ta formuła zawiera składniki ciasta marchewkowego: mąki, mleka, ciastka czy orzechów. W tym przykładzie firma oferuje dwa modele ciasta marchewkowego: jeden z nich zawiera laktozę, a drugi nie.
-
-Ciasto z laktozą ma następujące atrybuty na poziomie składników:
-
-- Składnik „mąka”: atrybut „gluten” = tak
-- Składnik „mleko”: atrybut „laktoza” = tak
-- Składnik „orzechy”: atrybut „orzechy” = tak
-
-Ciasto bez laktozą zawiera mleko bez laktozy i ma następujące atrybuty na poziomie składników:
-
-- Składnik „mąka”: atrybut „gluten” = tak
-- Składnik „mleko”: atrybut „laktoza” = nie
-- Składnik „orzechy”: atrybut „orzechy” = tak
-
-Te produkty są zazwyczaj podobne, więc może być wygodniejsze przekazywanie te atrybuty od produktów podrzędnych (dwa warianty) do produktu nadrzędnego (podstawowe ciasto marchewkowe). Do zaimplementowania tego „dziedziczenia odwrotnego” można użyć funkcji *dziedziczenia atrybutów*. Ta funkcjonalność jest zdefiniowana dla każdej [wersji inżynieryjnej](engineering-versions-product-category.md).
-
-## <a name="connect-engineering-attributes-to-an-engineering-product-category"></a>Łączenie atrybutów inżynieryjnych z kategorią produktów inżynierii
+### <a name="connect-engineering-attributes-to-an-engineering-product-category"></a>Łączenie atrybutów inżynieryjnych z kategorią produktów inżynierii
 
 Niektóre atrybuty inżynieryjne dotyczą wszystkich produktów, natomiast inne są charakterystyczne dla poszczególnych produktów lub kategorii produktów. Na przykład atrybuty elektryczne nie są wymagane w przypadku produktów mechanicznych. Można więc skonfigurować *Kategorie produktów inżynieryjnych*. Kategoria produktów inżynierii określa zbiór atrybutów inżynieryjnych, które muszą być częścią definicji produktów należących do danej kategorii. Można również określić, które atrybuty inżynieryjne są wymagane i czy mają wartość domyślną.
 
 Aby uzyskać więcej informacji na temat pracy z kategoriami produktów inżynieryjnych, w tym informacje o sposobach łączenia atrybutów z kategoriami, zapoznaj się z [Wersjami inżynieryjnymi i kategoriami produktów inżynieryjnych](engineering-versions-product-category.md).
 
-## <a name="set-attribute-values-for-engineering-attributes"></a>Ustawienie wartości atrybutu dla atrybutów inżynieryjnych
+### <a name="set-values-for-engineering-attributes"></a>Ustawienie wartości atrybutów inżynieryjnych
 
 Atrybuty inżynieryjne połączone z kategorią produktów inżynierii są prezentowane podczas tworzenia nowego produktu inżynieryjnego, który jest oparty na tej kategorii. W tym momencie można określić wartości atrybutów. Później wartości te można zmienić na stronie **wersji inżynierskiej** lub w ramach zarządzania zmianami inżynieryjnymi w ramach inżynieryjnego żądania zmiany. Aby uzyskać więcej informacji, zobacz [Zarządzanie zmianami dotyczącymi produktów inżynieryjnych](engineering-change-management.md).
 
-## <a name="create-an-engineering-product"></a>Tworzenie produktu inżynieryjnego
+### <a name="create-an-engineering-product"></a>Tworzenie produktu inżynieryjnego
 
 Aby utworzyć produkt inżynieryjny, otwórz stronę **uwolnione produkty**. Następnie w okienku akcji na karcie **Produkt** w grupie **Nowy** wybierz opcję **Atrybuty produktu**.
 
@@ -115,6 +93,3 @@ Należy określić kategorię inżynieryjną, do której należy dany produkt. K
 Funkcja wyszukiwania atrybutów inżynieryjnych umożliwia znajdowanie produktów przez wyszukiwanie wartości ich atrybutów inżynieryjnych. Dzięki temu można łatwo znajdować produkty inżynieryjne na podstawie ich charakterystyki. Można przeszukiwać produkty należące do kategorii produktów inżynieryjnych lub przeszukiwać wszystkie produkty.
 
 Wyszukiwanie jest dostępne na stronach danych głównych produktu oraz na podstawie towarów transakcyjnych w systemie, takich jak zamówienia sprzedaży. W przypadku towaru transakcyjnego można skorzystać ze **strony wyszukiwania atrybutów inżynierskich** w celu wyszukania produktu. Następnie można skorzystać z przycisku **Dodaj jako nowy wiersz**, aby dodać produkt do wierszy zamówienia sprzedaży. Produkty z wyników wyszukiwania można również dodawać bezpośrednio do zamówienia.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

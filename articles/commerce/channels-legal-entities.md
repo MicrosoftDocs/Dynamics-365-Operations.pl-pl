@@ -1,31 +1,37 @@
 ---
-title: Utwórz firmy
+title: Tworzenie firm
 description: W tym temacie opisano sposób tworzenia firm w Microsoft Dynamics 365 Commerce, która musi zostać utworzona i skonfigurowana przed utworzeniem kanałów.
 author: samjarawan
+manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: bc5f097a7f941dfa05f4011d9be5caffbb7f01b5f6e67cd7535ef3d1b13f59fe
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 28cbcc42505f1dc90c420adc812735841541c8e0
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740438"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414905"
 ---
-# <a name="create-legal-entities"></a>Utwórz firmy
+# <a name="create-legal-entities"></a>Tworzenie firm
+
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano sposób tworzenia firm w Microsoft Dynamics 365 Commerce, która musi zostać utworzona i skonfigurowana przed utworzeniem kanałów.
+
+## <a name="overview"></a>Omówienie
 
 Firma to organizacja, która ma zarejestrowaną lub uchwaloną strukturę prawną. Firmy mogą zawierać zgodne z prawem umowy i wymaga się od nich przygotowywania zestawień na temat ich wydajności.
 
@@ -44,7 +50,7 @@ Aby utworzyć nową firmę w usłudze Dynamics 365 Commerce, należy wykonać na
 1. W polu **Kraj/region** wprowadź lub wybierz wartość.
 1. Kliknij przycisk **OK**. 
 
-   ![Tworzenie firmy.](media/legal-entities.png)
+   ![Tworzenie firmy](media/legal-entities.png)
 
 1. W sekcji **Ogólne** udostępniane są następujące ogólne informacje o firmie: 
    1. Wprowadź alias, jeśli alias jest wymagany. Alias jest alternatywną nazwą, która może być używana do wyszukiwania danej firmy. 
@@ -67,7 +73,7 @@ Aby utworzyć nową firmę w usłudze Dynamics 365 Commerce, należy wykonać na
 
 Poniższy obraz przedstawia przykład szczegółów firmy.
 
-![Sekcja ogólna firmy.](media/legal-entities-general.png)
+![Sekcja ogólna firmy](media/legal-entities-general.png)
    
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
@@ -80,6 +86,3 @@ Poniższy obraz przedstawia przykład szczegółów firmy.
 [Omówienie kanałów](channels-overview.md)
 
 [Wymagania wstępne konfiguracji kanałów](channels-prerequisites.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

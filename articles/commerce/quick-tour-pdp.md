@@ -1,33 +1,42 @@
 ---
-# required metadata
 title: Omówienie stron szczegółów produktów
 description: W tym temacie omówiono strony ze szczegółowymi informacjami o produkcie (PDP) w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
+manager: annbe
 ms.date: 01/23/2020
-ms.topic: overview
-ms.prod: null
-ms.technology: null
-ms.search.form: null
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-commerce
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
-ms.search.industry: null
+ms.search.industry: ''
 ms.author: anupamar
-ms.search.validFrom: '2019-10-31'
+ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
+ms.openlocfilehash: c53e74204fad2960dfba972a38c511df7d6672d8
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415046"
 ---
-
 # <a name="product-details-pages-overview"></a>Omówienie stron szczegółów produktów
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie omówiono strony ze szczegółowymi informacjami o produkcie (PDP) w Microsoft Dynamics 365 Commerce.
 
+## <a name="overview"></a>Omówienie
+
 PDP dostarcza szczegółowych informacji o produkcie, a klienci wybierają opcje produktu, takie jak rozmiar, styl i kolor. PDP powinien prezentować wszystkie informacje o produktach, których wymaga klient w celu podjęcia decyzji o zakupie.
 
 Na poniższe ilustracji pokazano przykład PDP.
 
-![Przykład strony ze szczegółami dotyczącymi produktu.](./media/pdp.PNG)
+![Przykład strony ze szczegółami dotyczącymi produktu](./media/pdp.PNG)
 
 ## <a name="header-and-footer-modules"></a>Moduły nagłówka i stopki
 
@@ -79,6 +88,3 @@ Jeśli zawartość marketingowa jest unikatowa dla określonego produktu, do PDP
 [Omówienie stron zarządzania kontem](quick-tour-account-management.md)
 
 [Wzbogacanie strony szczegółów na temat produktu](enrich-product-page.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

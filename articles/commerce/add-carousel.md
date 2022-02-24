@@ -2,12 +2,15 @@
 title: Moduł karuzeli
 description: W tym temacie opisano moduły karuzeli i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
+manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: cfbe254d225366f89779ffeef410bb0b1a29056e51a4719106e9bc495b898161
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f09f3f98d174f965a75e27ee6a5c2ed8599042fc
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721062"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414868"
 ---
 # <a name="carousel-module"></a>Moduł karuzeli
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano moduły karuzeli i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Omówienie
 
 Moduł karuzeli służy do umieszczania wielu elementów promocyjnych (w tym obrazów) w obracającej się karuzeli banerów, które mogą być przeglądane przez klientów. Na przykład sprzedawca może skorzystać z modułu karuzela na stronie głównej, aby zaprezentować wiele nowych produktów lub promocji.
 
@@ -40,7 +45,7 @@ Moduły główne i bloku zawartości można dodawać w module karuzeli. Właści
 
 Poniższy obraz pokazuje przykład modułu karuzeli, który jest używany na stronie głównej. Ten moduł karuzeli zawiera wiele elementów bloków zawartości.
 
-![Przykład modułu karuzeli.](./media/Hero.PNG)
+![Przykład modułu karuzeli](./media/Hero.PNG)
 
 ## <a name="carousel-module-properties"></a>Właściwości modułu karuzeli
 
@@ -81,6 +86,3 @@ Aby dodać moduł karuzeli do nowej strony i ustawić wymagane właściwości, w
 [Moduł bloku zawartości](add-hero-module.md)
 
 [Moduł odtwarzacza wideo](add-video-player.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

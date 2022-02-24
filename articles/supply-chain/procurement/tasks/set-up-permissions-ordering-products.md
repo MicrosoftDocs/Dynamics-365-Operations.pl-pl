@@ -1,24 +1,26 @@
 ---
 title: Tworzenie uprawnień do zamawiania produktów w imieniu innej osoby
 description: W tym temacie pokazano, jak przyznać pracownikom uprawnienia do przygotowywania zapotrzebowań na zakup w imieniu innych pracowników.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 08/20/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchReqAuthorization, HcmWorkerLookUp
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a29b7ebece8009f29f4313b380889635a87473b5
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 585f5c6cf83ad93b649e3f36e0d486a037915cd4
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577127"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017299"
 ---
 # <a name="set-up-permissions-for-ordering-products-on-behalf-of-someone-else"></a>Tworzenie uprawnień do zamawiania produktów w imieniu innej osoby
 
@@ -42,6 +44,3 @@ W tym temacie pokazano, jak przyznać pracownikom uprawnienia do przygotowywania
 2. Za pomocą szybkiego filtru znajdź pracownika, który właśnie został dodany jako zleceniodawca.
 3. Zaznacz zleceniodawcę. Na liście wystawców znajdują się osoby uprawnione do zamawiania towarów w imieniu zleceniodawcy wybranego w lewym okienku.  W tym miejscu można dodawać kolejnych wystawców. Ten widok umożliwia również przyznanie uprawnień zleceniodawcy pozwalających tworzyć zapotrzebowania w firmach i jednostkach operacyjnych, które nie są podstawowymi firmami ani jednostkami operacyjnymi danej osoby.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

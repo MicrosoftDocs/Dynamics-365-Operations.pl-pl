@@ -2,9 +2,11 @@
 title: Profile certyfikatów zdefiniowane przez użytkownika dla sklepów detalicznych
 description: Ten temat zawiera omówienie sposobu używania certyfikatów w sklepach detalicznych.
 author: josaw
+manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFormLayout, RetailParameters
 audience: Application User
@@ -14,12 +16,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9cb82a6d6336bb69fe818fb33e04ad621382b383055b24a4e79eee5ddff217ac
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 81fa3770a137471e3d7f8cab3c7d7f37febe64fa
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719937"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018875"
 ---
 # <a name="user-defined-certificate-profiles-for-retail-stores"></a>Profile certyfikatów zdefiniowane przez użytkownika dla sklepów detalicznych
 
@@ -79,7 +81,7 @@ Po dodaniu nowego wiersza do strony **Ustawienia profilu certyfikatu** podaj inf
 - **Certyfikat magazynu kluczy** — to pole jest wymagane w przypadku ustawienia pola **Typ lokalizacji** na **Magazyn kluczy**. Za jego pomocą można określić wpis tajny certyfikatu magazynu kluczy.
 
     > [!NOTE]
-    > Przed użyciem certyfikatu magazynu kluczy w profilach certyfikatów należy przekazać certyfikat do miejsca przechowywania magazynu kluczy, a następnie postępować zgodnie z instrukcjami w obszarze [Konfigurowanie klienta magazynu kluczy systemu Azure](../../finance/localizations/setting-up-azure-key-vault-client.md).
+    > Przed użyciem certyfikatu magazynu kluczy w profilach certyfikatów należy przekazać certyfikat do miejsca przechowywania magazynu kluczy, a następnie postępować zgodnie z instrukcjami w obszarze [Konfigurowanie klienta magazynu kluczy systemu Azure](https://docs.microsoft.com/dynamics365/finance/localizations/setting-up-azure-key-vault-client).
 
 - **Nazwa sklepu** — to pole jest opcjonalne i dostępne tylko w przypadku ustawienia pola **Typ lokalizacji** na **Certyfikat lokalny**. Za jego pomocą można określić domyślną nazwę sklepu, która powinna być używana do wyszukiwania certyfikatów lokalnych.
 - **Nazwa lokalizacji** — to pole jest opcjonalne i dostępne tylko w przypadku ustawienia pola **Typ lokalizacji** na **Certyfikat lokalny**. Za jego pomocą można określić domyślną lokalizację sklepu, która powinna być używana do wyszukiwania certyfikatów lokalnych.
@@ -119,6 +121,3 @@ Jeśli zostanie wprowadzona nowa wersja certyfikatu, ale nie można jej aktualiz
 
 > [!NOTE]
 > W środowisku uruchomieniowym Commerce Runtime nowa wersja certyfikatu zostanie wywołana jako pierwsza. Jeśli certyfikat nie został jeszcze zaktualizowany w określonym sklepie lub na określonym terminalu, zostanie wywołana poprzednia wersja.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

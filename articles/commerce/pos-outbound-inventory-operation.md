@@ -2,13 +2,16 @@
 title: Wychodząca operacja magazynowa w punkcie sprzedaży
 description: W tym temacie opisano możliwości wychodzących operacji magazynowych w punkcie sprzedaży (POS).
 author: hhaines
+manager: annbe
 ms.date: 07/30/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,14 +19,14 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 3641e1974ffc277a690ca8b8d15399ac883b0132
-ms.sourcegitcommit: 89906aa2f18f16e622fd280433c8fc9fe74d2aec
+ms.openlocfilehash: 1f74df94b1647520880ff994581872b9d9f8e067
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7581145"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414827"
 ---
-# <a name="outbound-inventory-operation-in-pos"></a>Operacja zapasów wychodzących w punkcie sprzedaży
+# <a name="outbound-inventory-operation-in-pos"></a>Wychodząca operacja magazynowa w punkcie sprzedaży
 
 [!include [banner](includes/banner.md)]
 
@@ -71,7 +74,7 @@ Tworzone zadania wsadowe będą używane do przetwarzania dokumentów, które ni
 
 ## <a name="prerequisite-add-outbound-operation-to-the-pos-screen-layout"></a>Wymaganie wstępne: Dodaj operację wychodzącą do układu ekranu punktu sprzedaży
 
-Zanim organizacja będzie mogła skorzystać z funkcji operacji wychodzących, musi skonfigurować **operację wychodzącą** w punkcie sprzedaży w jednym lub kilku [układach ekranu punktu sprzedaży](/dynamics365/unified-operations/retail/pos-screen-layouts). Przed wdrożeniem nowej operacji w środowisku produkcyjnym należy upewnić się, że została ona gruntownie przetestowana i przeszkolić użytkowników do jej używania.
+Zanim organizacja będzie mogła skorzystać z funkcji operacji wychodzących, musi skonfigurować **operację wychodzącą** w punkcie sprzedaży w jednym lub kilku [układach ekranu punktu sprzedaży](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts). Przed wdrożeniem nowej operacji w środowisku produkcyjnym należy upewnić się, że została ona gruntownie przetestowana i przeszkolić użytkowników do jej używania.
 
 ## <a name="overview"></a>Omówienie
 
@@ -116,7 +119,7 @@ W widoku **Pełna lista zamówień** można ręcznie wybrać wiersz z listy, a n
 
 ### <a name="over-delivery-shipping-validations"></a>Sprawdzanie poprawności nadwyżki w wysyłce
 
-Walidacje występują podczas procesu realizacji dla wierszy dokumentu. Obejmują one sprawdzanie nadwyżki w dostawie. Jeśli użytkownik próbuje wysłać więcej zapasów niż zamówiono w zamówieniu przeniesienia, ale nie skonfigurowano nadwyżki w dostawie lub wysyłana ilość przekracza tolerancję nadwyżki w dostawie skonfigurowaną dla wiersza zamówienia przeniesienia, użytkownik otrzyma błąd i nie może wysłać nadwyżki.
+Sprawdzanie poprawności nastąpiło podczas procesu odbierania dla wierszy dokumentu. Obejmują one sprawdzanie nadwyżki w dostawie. Jeśli użytkownik spróbuje uzyskać więcej zapasów niż zamówiono w zamówieniu zakupu, ale nadwyżka w dostawie nie jest skonfigurowana lub otrzymana ilość przekracza tolerancję nadwyżki w dostawie skonfigurowaną dla wiersza zamówienia zakupu, zostanie wyświetlony błąd i nie można przyjąć nadmiarowej ilości.
 
 ### <a name="underdelivery-close-lines"></a>Wiersze zamknięcia niedoboru w dostawie
 
@@ -190,6 +193,3 @@ W pełni wysłane zamówienia przeniesienia są przenoszone na kartę **Zakończ
 ## <a name="related-topics"></a>Powiązane tematy
 
 [Operacja zapasów przychodzących w punkcie sprzedaży](pos-inbound-inventory-operation.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

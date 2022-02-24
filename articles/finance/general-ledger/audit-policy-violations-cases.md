@@ -2,9 +2,11 @@
 title: Naruszenia zasad inspekcji i sprawy
 description: W tym artykule wyjaśniono, jak są generowane sprawy inspekcji na podstawie naruszeń reguł inspekcji. Znajdują się tu także informacje o różnych sposobach, w jakie zasady inspekcji wykorzystują funkcje zakresu dat wyboru dokumentów.
 author: panolte
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AuditPolicyAdditionalOption, AuditPolicyRule
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 057cb8afe0da5e0810a2d1c87f7cdbe73bc88b9819ca81631d889bfa1cc55e6c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ddd403bfe82b1a7d3c0c5999f89bde19f1bba5e8
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758108"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022112"
 ---
 # <a name="audit-policy-violations-and-cases"></a>Naruszenia zasad inspekcji i sprawy
 
@@ -28,7 +30,8 @@ ms.locfileid: "6758108"
 
 W tym artykule wyjaśniono, jak są generowane sprawy inspekcji na podstawie naruszeń reguł inspekcji. Znajdują się tu także informacje o różnych sposobach, w jakie zasady inspekcji wykorzystują funkcje zakresu dat wyboru dokumentów.
 
-## <a name="how-audit-cases-are-generated"></a>Jak są generowane sprawy inspekcji
+<a name="how-audit-cases-are-generated"></a>Jak są generowane sprawy inspekcji
+-----------------------------
 
 Zasady inspekcji są używane do identyfikowania raportów z wydatków, zamówień zakupu i faktur od dostawcy, które nie są zgodne z regułami firmy zdefiniowanymi i skonfigurowanymi jako reguły inspekcji. 
 
@@ -57,6 +60,3 @@ Aby uzyskać więcej informacji, zobacz [Reguły inspekcji](audit-policy-rules.m
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

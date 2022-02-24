@@ -1,35 +1,33 @@
 ---
 title: Wyświetlanie i ocenianie wyników kwestionariuszy
-description: W tym temacie wyjaśniono, jak można wyświetlać i oceniać wyniki kwestionariuszy wypełnianych przez respondentów.
-author: twheeloc
-ms.date: 10/28/2021
+description: W tym artykule wyjaśniono, jak można wyświetlać i oceniać wyniki kwestionariuszy wypełnianych przez respondentów.
+author: andreabichsel
+manager: AnnBe
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KMCollection, KMKnowledgeCollectorCollection, KMKnowledgeCollectorUserResults, HcmLearningWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Human Resources
 ms.custom: 17444
 ms.assetid: 6570206a-b2c4-4025-8715-432fe6652b78
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: dc71748a5081b90feb69ed0da936c42b4d0e572a
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: ceb21af75dca2756d8e07f315ddee0246554c854
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070709"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420127"
 ---
 # <a name="view-and-evaluate-the-results-of-questionnaires"></a>Wyświetlanie i ocenianie wyników kwestionariuszy
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-W tym temacie wyjaśniono, jak można wyświetlać i oceniać wyniki kwestionariuszy wypełnianych przez respondentów. 
+W tym artykule wyjaśniono, jak można wyświetlać i oceniać wyniki kwestionariuszy wypełnianych przez respondentów. 
 
 Po wypełnieniu kwestionariusza przez respondentów można wyświetlić i ocenić wyniki na kilka sposobów:
 
@@ -74,5 +72,3 @@ Można użyć statystyk kwestionariusza do analizy wyników wypełnionego kwesti
 -   Określ lub sprawdź poprawność kryteriów do analizy wyników według cech respondenta lub kwestionariusza. Na przykład, wybierając **kod pocztowy**, można analizować korelację między lokalizacją respondenta i poprawnymi odpowiedziami.
 
 Ustawienia określone przez użytkownika są zapisywane i mogą być używane do okresowego ponownego obliczania wyników.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

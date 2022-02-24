@@ -2,13 +2,16 @@
 title: Resetuj numery paragonów
 description: W tym temacie opisano sposób resetowania numerów paragonów używanych dla różnych akcji w pożądanym dniu (na przykład rok obrachunkowy lub rok kalendarzowy).
 author: ShalabhjainMSFT
+manager: AnnBe
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-Commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail, Commerce
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: Application update 10.0.9
-ms.openlocfilehash: 855c39f15db6de8fac1f0cd4667eec485c70542b9aebde0d7085e2703f4609bb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 31ba82ac5e032734e00f2aee12339bc85a53550b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733876"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414873"
 ---
 # <a name="reset-receipt-numbers"></a>Resetowanie numerów paragonów 
 
@@ -55,7 +58,7 @@ Aby włączyć reset, należy wykonać następujące kroki.
 1. W polu **Resetuj typ paragonu** wybierz **tylko jeden raz** lub **Corocznie**.
 1. Kliknij przycisk **OK**.
 
-![Wybieranie daty resetowania paragonu.](media/Enable_receipt_reset.png "Wybieranie daty resetowania paragonu")
+![Wybieranie daty resetowania paragonu](media/Enable_receipt_reset.png "Wybieranie daty resetowania paragonu")
 
 Po wybraniu daty zostanie ona wyświetlona w kolumnie **Data następnego resetowania numeru paragonu**. Data resetowania jest stosowana do wszystkich typów transakcji paragonów. W związku z tym sekwencja numerów paragonów zostanie zresetowana dla wszystkich typów paragonów.
 
@@ -65,6 +68,3 @@ Aby wyczyścić przyszłe daty resetowania, można skorzystać z funkcji **czysz
 
 > [!NOTE]
 > W zależności od wybranej daty wyzerowania i formatu paragonu mogą istnieć zduplikowane numery paragonów. Mimo że system punktu sprzedaży (POS) może obsłużyć te sytuacje, zwiększa się czas wymagany do przetworzenia zwrotów, ponieważ klienci z jednostkami sprzedażowymi muszą wybierać spośród zduplikowanych przyjęć. Inne komplikacje związane z oczyszczaniem danych mogą wystąpić, jeśli duplikaty paragonów nie zostały zaplanowane. Z tego względu zaleca się stosowanie dynamicznych znaków daty (na przykład **DDD**, **mm**, **DD** i **RR**) w celu uniknięcia zduplikowanych numerów paragonów po wyzerowaniu.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

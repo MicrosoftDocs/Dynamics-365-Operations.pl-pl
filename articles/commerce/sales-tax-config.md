@@ -2,12 +2,15 @@
 title: Konfigurowanie podatku dla zamówień online
 description: Ten temat stanowi przegląd wyboru grupy podatków dla różnych typów zamówień w trybie online w Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 04/02/2021
+manager: AnnBe
+ms.date: 11/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -15,73 +18,68 @@ ms.search.industry: Retail
 ms.author: gmohanv
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 5801bbfb5b5850cb4c9ae06140bff5adca9b368febdc06d69c538fc49f9ee40a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 40c20bf13779f73289e43df21b763e1b864686a7
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772968"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4530204"
 ---
 # <a name="configure-sales-tax-for-online-orders"></a>Konfigurowanie podatku dla zamówień online
 
-[!include [banner](includes/banner.md)]
+[!include [banner](../includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
-Ten temat zawiera omówienie wyboru grupy podatku dla różnych typów zamówień online przy użyciu ustawień podatku dla miejsca docelowego lub konta odbiorcy. 
+Ten temat stanowi przegląd wyboru grupy podatków dla różnych typów zamówień w trybie online. 
 
-Możesz chcieć, aby Twój kanał handlu elektronicznego obsługiwał takie opcje, jak dostawa lub odbiór zamówień online. Stosowanie podatku jest oparte na opcji wybranej przez klientów w trybie online. 
+Twój kanał handlu elektronicznego może chcieć obsługiwać takie opcje, jak dostawa lub odbiór zamówień online. Stosowanie podatku jest oparte na opcji wybranej przez użytkowników w trybie online. Jeśli klient witryny zdecyduje się kupić towar w trybie online i otrzymuje go na adres, podatek jest ustalany na podstawie ustawienia grupy podatków dla adresu wysyłkowego odbiorcy. Jeśli odbiorca zdecyduje się na odebranie zakupionego towaru w sklepie, podatek jest ustalany na podstawie ustawienia grupy podatków dla sklepu odbioru. 
 
-## <a name="destination-based-taxes-for-online-orders"></a>Podatki oparte na lokalizacji docelowej dla zamówień online
+## <a name="orders-shipped-to-a-customer-address"></a>Zamówienia wysłane na adres odbiorcy 
 
-Na ogół podatki dla zamówień w trybie online, które są wysyłane na adresy odbiorców, są definiowane przez miejsce docelowe. Każda grupa podatków ma konfigurację podatku według lokalizacji docelowej sieci sprzedaży, w której firma może definiować szczegóły docelowe, takie jak powiat lub region, województwo i miasto w postaci hierarchicznej.
+Na ogół podatki dla zamówień w trybie online, które są wysyłane na adresy odbiorców, są definiowane przez miejsce docelowe. Każda grupa podatków ma konfigurację podatku według lokalizacji docelowej sieci sprzedaży, w której firma może definiować szczegóły docelowe, takie jak powiat/region, województwo i miasto w postaci hierarchicznej. Po złożeniu zamówienia online aparat podatkowy Commerce używa adresu dostawy każdego elementu zamówienia w zamówieniu i znajduje grupy podatków z pasującymi kryteriami podatkowymi opartymi na miejscu docelowym. Na przykład w przypadku zamówienia online z adresem dostawy elementu zamówienia do San Francisco w Kalifornii aparat podatkowy znajdzie grupę podatków i kod podatku dla Kalifornii, a następnie odpowiednio obliczy podatek dla każdego elementu zamówienia.  
 
-### <a name="orders-delivered-to-customer-address"></a>Zamówienia dostarczane na adres klienta
+## <a name="customer-based-tax-groups"></a>Grupy podatków oparte na odbiorcach
 
-Po złożeniu zamówienia online aparat podatkowy Commerce używa adresu dostawy każdego elementu zamówienia w zamówieniu i znajduje grupy podatków z pasującymi kryteriami podatkowymi opartymi na miejscu docelowym. Na przykład w przypadku zamówienia online z adresem dostawy elementu zamówienia do San Francisco w Kalifornii aparat podatkowy znajdzie grupę podatków i kod podatku dla Kalifornii, a następnie odpowiednio obliczy podatek dla każdego elementu zamówienia.
+W centrali Commerce istnieją dwa miejsca, w których skonfigurowano grupy podatków dla odbiorców:
 
-### <a name="order-pick-up-in-store"></a>Odbiór zamówienia w sklepie
+- **Profil odbiorcy**
+- **Adres wysyłkowy odbiorcy**
 
-W przypadku wierszy zamówienia z określonym odbiorem w sklepie lub przy krawężniku zostanie zastosowana grupa podatkowa z wybranego punktu odbioru. Aby uzyskać szczegółowe informacje na temat konfigurowania podatków od sprzedaży dla danego sklepu, zapoznaj się z tematem [Konfigurowanie innych opcji podatków dla sklepów](/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores).
+### <a name="if-a-customers-profile-has-a-tax-group-configured"></a>Jeśli profil odbiorcy ma skonfigurowaną grupę podatków
 
-## <a name="customer-account-based-taxes-for-online-orders"></a>Podatki naliczane od konta klienta w przypadku zamówień online
+Rekord profilu odbiorcy w centrali może mieć skonfigurowaną grupę podatków, jednak w przypadku zamówień w trybie online grupa podatków skonfigurowana w profilu odbiorcy nie będzie używana przez aparat podatkowy. 
 
-Może istnieć scenariusz biznesowy, w którym chcesz skonfigurować grupę podatków na określonym koncie odbiorcy w centrali Commerce. W centrali są dwa miejsca, w których można skonfigurować podatek od sprzedaży na koncie odbiorcy. Aby uzyskać dostęp do tych informacji, najpierw musisz uzyskać dostęp do strony szczegółów odbiorcy, przechodząc do **Retail i Commerce \> Odbiorcy \> Wszyscy odbiorcy**, a następnie wybierając klienta.
+### <a name="if-a-customers-shipping-address-has-a-tax-group-configured"></a>Jeśli adres wysyłkowy odbiorcy ma skonfigurowaną grupę podatków
 
-Dwa miejsca, w których konfigurujesz podatek od sprzedaży dla konta klienta, to:
+Jeśli rekord adresu wysyłkowego odbiorcy ma skonfigurowaną grupę podatków i zamówienie online (lub towar w wierszu) jest wysyłane na adres wysyłkowy odbiorcy, grupa podatków skonfigurowana w rekordzie adresu odbiorcy będzie używana przez aparat podatków do obliczania podatku.
 
-- **Grupa podatków** na skróconej karcie **Faktura i dostawa** na stronie szczegółów odbiorcy. 
-- **Podatek** na skróconej karcie **Ogólne** na stronie **Zarządzanie adresami**. Aby uzyskać więcej informacji ze strony szczegółów dotyczących odbiorcy, wybierz określony adres na skróconej karcie **Adresy**, a następnie wybierz pozycję **Zaawansowane**.
+#### <a name="configure-a-tax-group-for-a-customers-shipping-address-record"></a>Skonfiguruj grupę podatkową dla rekordu adresu wysyłkowego klienta
 
-> [!TIP]
-> W przypadku zamówień odbiorcy online, jeśli chcesz tylko stosować podatki oparte na lokalizacji docelowej i uniknąć podatków opartych na kontach odbiorcy, upewnij się, że pole **Grupa podatków** jest puste na skróconej karcie **Faktura i dostawa** na stronie szczegółów odbiorcy. Aby nowi odbiorcy, którzy za pomocą kanału online nie dziedziczyli ustawień grupy podatków po ustawieniach domyślnego odbiorcy lub grupy odbiorców, upewnij się, że pole **Grupa podatków** jest również puste w przypadku domyślnych ustawień odbiorcy kanału online i ustawień grupy odbiorców (**Retail i Commerce \> Odbiorcy \> Grupy odbiorców**).
+Aby skonfigurować grupę podatków dla rekordu adresu wysyłkowego odbiorcy w centrali Commerce, należy wykonać następujące kroki.
 
-## <a name="determine-destination-based-tax-or-customer-account-based-tax-applicability"></a>Określ zastosowanie podatku opartego na miejscu docelowym lub podatku na koncie klienta 
+1. Przejdź do **Wszyscy odbiorcy**, a następnie wybierz żądanego odbiorcę. 
+1. Na skróconej karcie **Adresy** wybierz żądany adres, a następnie wybierz **Więcej opcji \> Zaawansowane**. 
+1. Na karcie **Ogólne**, na stronie **Zarządzanie adresami** ustaw wartość podatku zgodnie z potrzebą.
 
-W poniższej tabeli wyjaśniono, czy w przypadku zamówień online są stosowane podatki zależne od miejsca docelowego, czy podatki od konta klienta. 
+> [!NOTE]
+> Grupa podatków jest definiowana przy użyciu adresu wysyłkowego wiersza zamówienia, a podatki oparte na miejscu docelowym są konfigurowane dla grupy podatków. Aby uzyskać więcej informacji, zajrzyj do [Konfigurowanie podatków dla sklepów internetowych w oparciu o miejsce docelowe](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination).
 
-| Typ odbiorcy | Adres wysyłkowy                   | Odbiorca > Faktura i dostawa > Grupa podatków? | Adres na koncie odbiorcy w centrali? | Adres odbiorcy > Zaawansowane > Ogólne > Grupa podatków?                                              | Zastosowana grupa podatków      |
-|---------------|------------------------------------|-----------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------------------------------|------------------------------|
-| Gość         | Manhattan, NY                      | Nie (puste)                                                | Nie (puste)                              | Nie (puste)                                                                                                   | NY (podatki oparte na lokalizacjach docelowych) |
-| Zalogowano     | Austin, TX                          | Nie (puste)                                             | Tak                               | None<br/><br/>Nowy adres dodany za pośrednictwem kanału online.                                                            | TX (podatki oparte na lokalizacjach docelowych) |
-| Zalogowano     | San Francisco, CA (odbiór w sklepie) | Tak (NY)                                            | Nie dotyczy                              | Nie dotyczy                                                                                                    | CA (podatki oparte na lokalizacjach docelowych) |
-| Zalogowano     | Houston, TX                         | Tak (NY)                                            | Tak                               | Tak (NY)<br/><br/>Nowy adres dodany przez kanał online i grupa podatku od sprzedaży odziedziczona z konta klienta. | NY (podatki według konta odbiorcy)  |
-| Zalogowano     | Austin, TX                          | Tak (NY)                                            | Tak                               | Tak (NY)<br/><br/>Nowy adres dodany przez kanał online i grupa podatku od sprzedaży odziedziczona z konta klienta. | NY (podatki według konta odbiorcy)  |
-| Zalogowano     | Sarasota, FL                       | Tak (NY)                                            | Tak                               | Tak (WA)<br/><br/>Ręcznie ustawiono na WA.                                                                          | WA (podatki według konta odbiorcy)  |
-| Zalogowano     | Sarasota, FL                       | Nie (puste)                                                | Tak                               | Tak (WA)<br/><br/>Ręcznie ustawiono na WA.                                                                          | WA (podatki według konta odbiorcy)  |
+## <a name="order-pickup-in-store"></a>Odbiór zamówienia w sklepie
+
+W przypadku wierszy zamówienia z określonym odbiorem w sklepie lub przy krawężniku zostanie zastosowana grupa podatkowa z wybranego punktu odbioru. Aby uzyskać szczegółowe informacje dotyczące konfigurowania grupy podatków dla danego sklepu, zapoznaj się z tematem [Konfigurowanie innych opcji podatków dla sklepów](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores).
+
+> [!NOTE]
+> Gdy wiersz zamówienia zostanie odebrany w sklepie, ustawienia podatkowe dotyczące adresu klienta (jeśli zostały skonfigurowane) zostaną zignorowane przez aparat podatkowy i zastosowana zostanie konfiguracja podatku sklepu odbioru. 
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Konfigurowanie podatków dla sklepów internetowych w oparciu o miejsce docelowe](/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination)
+[Omówienie podatku](https://docs.microsoft.com/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json) 
 
-[Omówienie podatku](../finance/general-ledger/indirect-taxes-overview.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
+[Wybieranie metody obliczania podatku w polu Źródło](https://docs.microsoft.com/dynamics365/finance/general-ledger/sales-tax-calculation-methods-origin-field?toc=/dynamics365/commerce/toc.json) 
 
-[Wybieranie metody obliczania podatku w polu Źródło](../finance/general-ledger/sales-tax-calculation-methods-origin-field.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
+[ Przypisanie i zastąpienia podatku](https://docs.microsoft.com/dynamics365/supply-chain/procurement/tasks/sales-tax-assignment-overrides?toc=/dynamics365/commerce/toc.json) 
 
-[ Przypisanie i zastąpienia podatku](../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
-
-[Opcje Cała kwota i Obliczanie interwału dla kodów podatku](../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
+[Opcje Cała kwota i Obliczanie interwału dla kodów podatku](https://docs.microsoft.com/dynamics365/finance/general-ledger/whole-amount-interval-options-sales-tax-codes?toc=/dynamics365/commerce/toc.json) 
 
 [Obliczanie zwolnienia z podatku](tax-exempt-price-inclusive.md) 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

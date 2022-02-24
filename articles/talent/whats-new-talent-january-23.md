@@ -53,6 +53,3 @@ Po wprowadzeniu tej zmiany pola **Okres próbny** i **Kalendarz** zostały dodan
 
 ### <a name="platform-update-23-for-finance-and-operations"></a>Aktualizacja 23 platformy dla Finance and Operations
 Aktualizacja platformy 23 zawiera drobne poprawki błędów dla Finance and Operations. Aby uzyskać więcej informacji, zobacz [Nowości i zmiany na platformie Dynamics 365 Finance and Operations w aktualizacji 23 (styczeń 2019 r.)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23). 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

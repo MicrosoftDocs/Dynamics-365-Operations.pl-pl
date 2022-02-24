@@ -2,11 +2,13 @@
 title: Wycofywanie zaksięgowanych transakcji wynajmu
 description: W tym temacie wyjaśniono, jak wycofać zaksięgowaną transakcję wynajmu. Każdą transakcję utworzoną za pośrednictwem modułu Wynajem składnika majątku można wycofać.
 author: moaamer
-ms.date: 04/12/2021
+manager: Ann Beebe
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: AssetLeaseLeaseTransactions
+ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f76b75a968e9ee9a3c545f646077c16282b5b185aa88025653f7443fbcfd9581
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3e4908ddab2650e5ff7e4a28bf916604d165d08c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770672"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969535"
 ---
 # <a name="reverse-posted-lease-transactions"></a>Wycofywanie zaksięgowanych transakcji wynajmu
 
@@ -53,6 +55,3 @@ Aby anulować wycofaną transakcję, należy wykonać następujące kroki.
 Po wybraniu opcji **Śledzenie wycofania** zostanie wyświetlone okno dialogowe, w którym są wyświetlane zarówno oryginalne transakcje, jak i transakcje wycofane, wraz z połączonym numerem śledzenia.
 
 Odwołania można również śledzić na odpowiedniej stronie **Harmonogramy**. Pole **Wycofaj** jest czyszczone, podczas gdy pole **Arkusz zaksięgowany** jest zaznaczane. Ponadto pole **Najnowszy numer arkusza** jest aktualizowana o numer arkusza transakcji anulowania, a pole **Numer arkusza** jest aktualizowane numerem arkusza wycofywania.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

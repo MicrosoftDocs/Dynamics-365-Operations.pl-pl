@@ -2,9 +2,11 @@
 title: Reguły inspekcji
 description: Zasady inspekcji służą do oceniania raportów z wydatków, faktur od dostawcy i zamówień zakupu, aby się upewnić, że spełniają one utworzone przez Ciebie reguły zasad. Wszystkie reguły skojarzone z zasadą inspekcji są uruchamiane w trybie wsadowym, zgodnie z harmonogramem określonym przez użytkownika.  Każda reguła zasad jest wystąpieniem typu reguły zasad. Dla każdego typu reguły zasad w danej chwili może być aktywna tylko jedna reguła.
 author: panolte
+manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AuditPolicyAdditionalOption, AuditPolicyRule
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bbf93f5b8b2f8d95102a52178b096d7e334894483c0ac0bacc62653aea845022
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 998d4dbabec74528b4acb9e797faef0c449e7c28
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744313"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021248"
 ---
 # <a name="audit-policy-rules"></a>Reguły inspekcji
 
@@ -28,7 +30,8 @@ ms.locfileid: "6744313"
 
 Zasady inspekcji służą do oceniania raportów z wydatków, faktur od dostawcy i zamówień zakupu, aby się upewnić, że spełniają one utworzone przez Ciebie reguły zasad. Wszystkie reguły skojarzone z zasadą inspekcji są uruchamiane w trybie wsadowym, zgodnie z harmonogramem określonym przez użytkownika.  Każda reguła zasad jest wystąpieniem typu reguły zasad. Dla każdego typu reguły zasad w danej chwili może być aktywna tylko jedna reguła. 
 
-## <a name="queries-and-query-types"></a>Kwerendy i typy kwerend
+<a name="queries-and-query-types"></a>Kwerendy i typy kwerend
+-----------------------
 
 Tworząc regułę zasad inspekcji, najpierw należy zaznaczyć typ reguły zasad. Typ reguły zasad określa drzewo obiektów aplikacji (Application Object Tree — AOT), które ma być używane jako punkt wyjścia dla tworzenia reguły zasad. Określa również typ kwerendy używany dla reguły zasad. Kwerenda określa dokument źródłowy, który ocenia reguła zasad. Określa również pola w dokumencie źródłowym, które identyfikują zarówno podmiot prawny, jak i datę stosowaną po wybraniu dokumentów w celu inspekcji. Typ kwerendy kontroluje domyślne pola na stronie kwerendy i na stronie Reguła inspekcji. Poniższa tabela zawiera typy kwerend, które są dostępne dla reguł zasad inspekcji.
 
@@ -90,12 +93,10 @@ Wszystkie reguły zasad dotyczące udziału konkretnych zasad inspekcji współd
 
 
 
-## <a name="additional-resources"></a>Dodatkowe zasoby
+<a name="additional-resources"></a>Dodatkowe zasoby
+--------
 
 [Naruszenia zasad audytu i sprawy](audit-policy-violations-cases.md)
 [Definiowanie zasad inspekcji dla dokumentów źródłowych](tasks/define-audit-policies-source-documents.md)
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
 title: Tworzenie budżetu konserwacji
 description: W tym temacie wyjaśniono, jak utworzyć budżet konserwacji w zarządzaniu składnikami majątku.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetBudgetLineAdjust, EntAssetBudget, EntAssetBudgetRecalc, EntAssetBudgetCopy, EntAssetBudgetLine, EntAssetBudgetCreate, EntAssetBudgetApprove, EntAssetBudgetCalculateActualCost
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a375eb7c208479615b2d5e7cf78168ffd7ac8b16c52c85a7ef5a41aa69c947d5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 602a00060c1e56285d9954981d019bececaf90fd
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776951"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020996"
 ---
 # <a name="create-maintenance-budgets"></a>Tworzenie budżetu konserwacji
 
@@ -50,12 +52,9 @@ Budżety obsługi są oparte na typach kosztów używanych w module Zarządzanie
     > [!NOTE]
     > Po zatwierdzeniu budżetu konserwacji nie można ponownie obliczyć ani skorygować powiązanych wierszy na stronie **Wiersze budżetu konserwacji**, dopóki nie zostanie wcześniej usunięte zatwierdzenie. Aby usunąć potwierdzenie budżetu konserwacji, wybierz go na stronie **Budżety konserwacji**, a następnie wybierz pozycję **Zatwierdź**. Następnie w oknie dialogowym **Zatwierdź budżet** budżetu przycisk **OK**.
 
-![Budżety konserwacji.](media/01-maintenance-budgets.png)
+![Budżety konserwacji](media/01-maintenance-budgets.png)
 
 Kopiując istniejący budżet można również utworzyć nowy budżet konserwacji. Na stronie **Budżety konserwacji** wybierz budżet do skopiowania, a następnie wybierz pozycję **Kopiuj**. Ta metoda jest przydatna na przykład wtedy, gdy użytkownik utworzył budżet na jeden miesiąc i chce skopiować go do innych miesięcy.
 
 > [!NOTE]
 > Budżet konserwacji oblicza tylko koszty budżetowe na podstawie wierszy harmonogramu konserwacji. Aby obliczyć koszty rzeczywiste za ten sam okres, można wykonać obliczenia na stronie kontrola **Formant kosztów składników majątku**. 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

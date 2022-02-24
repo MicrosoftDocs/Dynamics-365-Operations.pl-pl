@@ -2,24 +2,27 @@
 title: Konfiguracje sklepu dla zestawień sieci sprzedaży
 description: Ta procedura prowadzi przez konfiguracje sprzedaży sklepu sieci sprzedaży, które mają wpływ na sposób tworzenia i księgowana zestawień Commerce.
 author: jashanno
+manager: AnnBe
 ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailStoreTable
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1bebe5d6732e6f8156e0271000a0b6caa24ba432491adc0370850109f19b7e4c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e255c58997ed1c0ad5614b15867f14714a8bcfc8
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770940"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4415094"
 ---
 # <a name="store-configurations-for-retail-statements"></a>Konfiguracje sklepu dla zestawień sieci sprzedaży
 
@@ -46,6 +49,3 @@ Ta procedura prowadzi przez konfiguracje sprzedaży sklepu sieci sprzedaży, kt�
 17. Wybierz opcję „Tak” w **Podziel wg metody zestawienia** , aby zestawienia były tworzone dla każdej zdefiniowanej metody wykonywania zestawień. To działanie może być przydatne, jeśli wydajność księgowania wymaga poprawy dla sklepów o dużym wolumenie transakcji, ponieważ spowoduje to utworzenie wielu mniejszych zestawień, które mogą być przetwarzane jednocześnie.  
 18. Na karcie skróconej **Ogólne** w polu **Domyślny odbiorca** można wybrać konto odbiorcy na potrzeby sprzedaży klientom przypadkowym.  
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

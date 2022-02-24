@@ -1,10 +1,12 @@
 ---
 title: Pakiet zawartości usługi Power BI Rekrutacja
-description: W tym temacie opisano pakiet zawartość Rekrutacja dostępny dla usługi Power BI.
+description: W tym temacie opisano pakiet zawartość Rekrutacja dostępny dla usługi Power BI. Wyjaśniono, jak uzyskać dostęp do raportów, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
 author: jcart1106
+manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: HcmRecruitmentWorkspace
 audience: Application User, IT Pro
@@ -15,18 +17,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 36ea9f204b50b3d7a6c8e33e69a9c3fd7d82cd79d466e2b9547c6733aa294aea
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 524b1c29d204c1b013546008b1be7868cbf8db06
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765129"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680569"
 ---
 # <a name="recruiting-power-bi-content"></a>Pakiet zawartości usługi Power BI Rekrutacja
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano pakiet zawartości **Rekrutacja** dostępny dla usługi Microsoft Power BI. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
+W tym temacie opisano pakiet zawartość **Rekrutacja** dostępny dla usługi Microsoft Power BI. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
 
 ## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
 Pakiet zawartości usługi Power BI **Rekrutacja** jest wyświetlany w obszarze roboczym **Zarządzanie rekrutacją**.
@@ -62,6 +64,3 @@ W poniższej tabeli przedstawiono jednostki, na których bazuje pakiet zawartoś
 | Wydajność          | Ocena, opis i model oceniania                            | Kandydat, Zatrudniony kandydat, Odrzucony kandydat |
 | Projekt rekrutacji  | Opis projektu, stan projektu i wakaty                | Kandydat, Zatrudniony kandydat, Odrzucony kandydat |
 | Odrzucony kandydat | Odrzuceni kandydaci, przyczyna, osiągane wyniki i daty zakończenia zatrudnienia | Firma, Przesunięcie kalendarza, Data, Położenie geograficzne, Wydajność, Dane demograficzne, Zatrudnienie, Media, Projekt rekrutacji, Nazwisko i imię kandydata |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

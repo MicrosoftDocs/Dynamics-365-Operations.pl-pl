@@ -1,33 +1,31 @@
 ---
 title: Konfigurowanie parametrów zarządzania świadczeniami i samoobsługi pracownika etatowego dla wszystkich firm
 description: Konfigurowanie parametrów zarządzania świadczeniami i samoobsługi pracownika etatowego w Microsoft Dynamics 365 Human Resources.
-author: twheeloc
-ms.date: 08/24/2021
+author: andreabichsel
+manager: tfehr
+ms.date: 12/07/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 822e5b37be7b2d5712d61bf7fb00f40d1692f406
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b50c4f71789c34f08ce810312f3c3198303b031e
+ms.sourcegitcommit: d02fae79d5c02a4bc4f4b16a410c2f5ce026c204
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066932"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "4962447"
 ---
 # <a name="set-benefits-management-and-employee-self-service-parameters-for-all-companies"></a>Konfigurowanie parametrów zarządzania świadczeniami i samoobsługi pracownika etatowego dla wszystkich firm
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Zanim będzie można konfigurować plany świadczeń w module Microsoft Dynamics 365 Human Resources, należy skonfigurować parametry obszaru roboczego Zarządzanie świadczeniami. Te parametry służą do ustawiania wartości domyślnych, kodów przyczyny i innych opcji. 
 
@@ -70,6 +68,3 @@ Zanim będzie można konfigurować plany świadczeń w module Microsoft Dynamics
 3. Wybierz opcję **Zapisz**.
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

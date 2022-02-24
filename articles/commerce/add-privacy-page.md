@@ -2,30 +2,36 @@
 title: Dodawanie strony zasad ochrony prywatności
 description: W tym temacie opisano, jak dodać stronę zasad ochrony prywatności do witryny w Microsoft Dynamics 365 Commerce.
 author: v-chgri
+manager: annbe
 ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: faf2072a5c53aa84f0de2e6d2478557bf96b7832e3433ad4cba971bc3f6e5880
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ce6491d176f90717877f084b11546010084c5f3b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729178"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414886"
 ---
 # <a name="add-a-privacy-policy-page"></a>Dodawanie strony zasad ochrony prywatności
+
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano, jak dodać stronę zasad ochrony prywatności do witryny w Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Omówienie
 
 Zgodność z zasadami ochrony prywatności obejmuje środki organizacyjne, które informują użytkowników witryny o sposobie gromadzenia i zbierania ich danych. Użytkownicy mogą zdecydować, w jaki sposób mają być przetwarzane dane osobowe, i mogą podejmować odpowiednie akcje.
 
@@ -103,6 +109,3 @@ Teraz można odwoływać się do fragmentu w szablonie dla innych stron witryny.
 [Zgodność z plikami cookie](cookie-compliance.md)
 
 [Zamień identyfikatory użytkowników skojarzone ze śledzonymi zmianami zawartości](replace-IDs-tracked-changes.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,30 +2,36 @@
 title: Konfigurowanie hierarchii organizacyjnych
 description: W tym temacie opisano sposób konfigurowania hierarchii organizacyjnych w Microsoft Dynamics 365 Commerce.
 author: samjarawan
+manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: ce0732f32a9a80fc5b0ede7ae9f1c1ab9a68a89b2fb0b1821cb5df123ca5ca4a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 29d4b686cbb66715196fca06e4642fbb8a337ace
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746023"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414902"
 ---
 # <a name="set-up-organization-hierarchies"></a>Konfigurowanie hierarchii organizacyjnych
+
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano sposób konfigurowania hierarchii organizacyjnych w Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Omówienie
 
 Przed utworzeniem kanałów należy upewnić się, że zostały skonfigurowane hierarchie organizacyjne.
 
@@ -54,7 +60,7 @@ Aby utworzyć hierarchię organizacyjną, należy wykonać poniższe kroki.
 
 Poniższy rysunek przedstawia przykładową hierarchię organizacyjną utworzoną dla fikcyjnego zbioru sklepów „Adventure Works”.
 
-![Przykład hierarchii organizacyjnej.](media/organizational-hierarchies.png)
+![Przykład hierarchii organizacyjnej](media/organizational-hierarchies.png)
 
 ### <a name="add-organizations-to-a-hierarchy"></a>Dodawanie organizacji do hierarchii
 
@@ -67,7 +73,7 @@ Aby dodać organizację do hierarchii, wykonaj następujące kroki.
 
 Na poniższej karcie przedstawiono firmę dodaną w katalogu głównym hierarchii z czterema centrami kosztów dodanymi do kanałów „biurowych”, „gniazd”, „online” i „biura obsługi”. Do każdego z nich można dodać różne gniazda sieci sprzedaży, biura obsługi i kanały online.
 
-![Przykład projektanta hierarchii.](media/hierarchy-designer.png)
+![Przykład projektanta hierarchii](media/hierarchy-designer.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
@@ -82,6 +88,3 @@ Na poniższej karcie przedstawiono firmę dodaną w katalogu głównym hierarchi
 [Omówienie kanałów](channels-overview.md)
 
 [Wymagania wstępne konfiguracji kanałów](channels-prerequisites.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

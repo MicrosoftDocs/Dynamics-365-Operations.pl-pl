@@ -2,22 +2,25 @@
 title: Zarządzanie asortymentem
 description: W tym temacie wyjaśniono podstawowe pojęcia dotyczące zarządzania asortymentem w Dynamics 365 Commerce oraz omówiono różne opcje projektu wdrożenia.
 author: jblucher
+manager: AnnBe
 ms.date: 03/12/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
+ms.search.scope: Retail, Operations
 ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
-ms.openlocfilehash: 1ff4929e8789748433f4e9386397431e174a85f81518d2e0a1d8f9ea68211fa6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e1b177989065740eef0bd917a7ce1e0a2c79088b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717778"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414867"
 ---
 # <a name="assortment-management"></a>Zarządzanie asortymentem
 
@@ -35,27 +38,27 @@ Całościowa kombinacja produktów w kanale zależy od opublikowanych asortyment
 
 W poniższym przykładzie dla każdego sklepu jest konfigurowany unikatowy asortyment. W tym przypadku tylko produkt 1 jest dostępny w sklepie 1 oraz tylko produkt 2 jest dostępny w sklepie 2.
 
-![Każdy produkt jest dostępny w jednym sklepie.](./media/Managing-assortments-figure1.png)
+![Każdy produkt jest dostępny w jednym sklepie](./media/Managing-assortments-figure1.png)
 
 Aby produkt 2 był dostępny w sklepie 1, można dodać ten produkt do asortymentu 1.
 
-![Produkt 2 dodany do asortymentu 1.](./media/Managing-assortments-figure2.png)
+![Produkt 2 dodany do asortymentu 1](./media/Managing-assortments-figure2.png)
 
 Alternatywnie można dodać sklep 1 do asortymentu 2.
 
-![Sklep 1 dodany do asortymentu 2.](./media/Managing-assortments-figure3.png)
+![Sklep 1 dodany do asortymentu 2](./media/Managing-assortments-figure3.png)
 
 ### <a name="organization-hierarchies"></a>Hierarchie organizacyjne
 
 W sytuacjach, gdzie ten sam produkt jest sprzedawany w różnych kanałach, asortymenty można skonfigurować za pomocą hierarchii organizacyjnej asortymentu Commerce. Podczas dodawania węzłów z tej hierarchii zostaną uwzględnione wszystkie kanały istniejące w tym węźle i jego węzłach podrzędnych.
 
-![Hierarchia organizacyjna.](./media/Managing-assortments-figure4.png)
+![Hierarchia organizacyjna](./media/Managing-assortments-figure4.png)
 
 ### <a name="product-categories"></a>Kategorie produktów
 
 Podobnie po stronie produktu można dołączyć grupy produktów, używając hierarchii kategorii produktów. Można skonfigurować asortymenty, dodając jeden lub więcej węzłów hierarchii kategorii. W takim przypadku asortyment będzie obejmował wszystkie produkty z tego węzła kategorii i jego węzłów podrzędnych.
 
-![Kategorie produktów.](./media/Managing-assortments-figure5.png)
+![Kategorie produktów](./media/Managing-assortments-figure5.png)
 
 ### <a name="excluded-products-or-categories"></a>Wykluczone produkty i kategorie
 
@@ -64,7 +67,7 @@ Poza włączaniem produktów i kategorii do asortymentów można także użyć o
 > [!NOTE]
 > Jeśli produkt jest z definicji zarówno dołączony, jak i wykluczony z jednego lub więcej asortymentów, zawsze będzie uznawany za wykluczony.
 
-![Wykluczone produkty.](./media/Managing-assortments-figure6.png)
+![Wykluczone produkty](./media/Managing-assortments-figure6.png)
 
 ### <a name="global-and-released-products"></a>Produkty globalne i zwolnione
 
@@ -104,6 +107,3 @@ Planując i organizując asortymenty dla swojego wdrożenia Commerce, należy wz
 - **Sprzedaż i zwroty poza asortymentami** — ta funkcja pozwala sprzedawcom detalicznym efektywnie zarządzać liczebnością asortymentów poprzez ograniczenie dostępności produktów tylko do tych, które należą do podstawowego asortymentu sklepu. Pomaga również reagować w sytuacjach, gdy produkt został omyłkowo pominięty z asortyment lub zwrócony poza datami obowiązywania asortymentu.
 
 Jeśli dane produktu nie istnieją w bazie danych kanału, aplikacja POS wykonuje w czasie rzeczywistym wywołania do centrali w celu pobrania wymaganych informacji, dzięki czemu produkt można sprzedać, zwrócić lub umieścić w zamówieniu klienta. Informacje o produkcie pobrane w ten sposób są dostępne tylko w zakresie danej transakcji. Produkt nie jest dodawany do definicji asortymentu. W związku później również będą wykonywane wywołania w czasie rzeczywistym tylko w razie potrzeby.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

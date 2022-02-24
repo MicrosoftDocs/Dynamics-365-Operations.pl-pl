@@ -57,6 +57,3 @@ Jeśli po 24 godzinach praca nie pojawiła się w serwisie LinkedIn, spróbuj wy
 [Tworzenie, zatwierdzanie i publikowanie funkcji w aplikacji Attract](./creating-jobs-attract.md)
 
 [Rozwiązywanie problemów z integracją usługi LinkedIn i Microsoft Dynamics 365 Talent - Attract](./attract-troubleshoot-linkedin.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

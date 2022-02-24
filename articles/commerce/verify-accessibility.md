@@ -2,30 +2,36 @@
 title: Weryfikowanie dostępności zawartości strony
 description: W tym temacie opisano, jak zweryfikować dostępność zawartości strony w aplikacji Microsoft Dynamics 365 Commerce.
 author: josaw1
+manager: annbe
 ms.date: 01/08/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2019-12-19
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6f92d5c34896e284a40a4806cd83e469c2db4c9181c919d2d967dacc84076201
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fc3dca673510e1636f497bb7d5c295bebe025677
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748455"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4415067"
 ---
 # <a name="verify-page-content-accessibility"></a>Weryfikowanie dostępności zawartości strony
+
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano, jak zweryfikować dostępność zawartości strony w aplikacji Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Omówienie
 
 Po zakończeniu zmieniania strony należy upewnić się, że zawartość jest dostępna dla wszystkich użytkowników w Internecie. W narzędziach autorskich usługi Commerce można łatwo zweryfikować dostępność zawartości strony przy użyciu zintegrowanej usługi [Microsoft Accessibility Insights](https://accessibilityinsights.io/). Ta usługa weryfikuje zawartość strony względem najnowszych wskazówek dotyczących [ułatwień dostępu organizacji World Wide Web Consortium (W3C)](https://www.w3.org/standards/webdesign/accessibility).
 
@@ -79,8 +85,3 @@ Aby używać zintegrowanej usługi [Microsoft Accessibility Insights](https://ac
 [Wzbogacanie strony produktu](enrich-product-page.md)
 
 [Wzbogacanie strony docelowej kategorii](enrich-category-page.md)
-
-[Tworzenie dynamicznych stron handlu elektronicznego na podstawie parametrów adresu URL](create-dynamic-pages.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

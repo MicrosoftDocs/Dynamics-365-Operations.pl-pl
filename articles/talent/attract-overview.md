@@ -49,6 +49,3 @@ Gdy tylko kandydat zostanie dodany do funkcji, otrzymuje wiadomość e-mail z ł
 
 ## <a name="analytic-reports"></a>Raporty analityczne
 Zespoły zatrudniające mogą wyświetlać kluczowe wskaźniki procesu zatrudniania dla jednego zadania lub agregowane w ramach wszystkich zadań za pomocą [raportów analitycznych w Attract](analytic-reports.md). Ta funkcja jest obecnie dostępna w wersji [zapoznawczej](access-preview-feature.md) dla klientów [Która wersja aplikacji Microsoft Dynamics 365 Talent - Attract](attract-comprehensive-hiring.md).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

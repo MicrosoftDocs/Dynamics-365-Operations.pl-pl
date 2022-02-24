@@ -1,31 +1,29 @@
 ---
 title: Tworzenie przedmiotów pożyczek
 description: Przedmioty pożyczek są rekordami, które pomagają śledzić fizyczne przedmioty, takie jak telefony lub komputery, które firma pożycza pracownikom.
-author: twheeloc
-ms.date: 10/28/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmLoanType, DefaultDashboard, HcmLoanItem, HcmWorkerLookUp, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 21127c46615015c30e06465b390f67b835e746cb
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 8317a2fbe9d857ed3824631241b99c333b6dc4e8
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068141"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420063"
 ---
 # <a name="create-loan-items"></a>Tworzenie przedmiotów pożyczek
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -33,34 +31,31 @@ Przedmioty pożyczek są rekordami, które pomagają śledzić fizyczne przedmio
 
 
 ## <a name="create-loan-types"></a>Tworzenie typów pożyczek
-1. Wybierz kolejno opcje **Zasoby ludzkie** > **Pracownicy** > **Przedmioty pożyczek** > **Typy pożyczek**.
-2. Kliknij przycisk **Nowy**.
-3. W polu **Typ pożyczki** wpisz wartość.
-4. W polu **Opis** wpisz wartość.
+1. Wybierz kolejno opcje Zasoby ludzkie > Pracownicy > Przedmioty pożyczek > Typy pożyczek.
+2. Kliknij przycisk Nowy.
+3. W polu Typ pożyczki wpisz wartość.
+4. Wypełnij pole Opis.
 5. Wprowadź liczbę dni, po upływie których przedmioty przypisane do tego typu pożyczki mogą stanowić zaległość. 
-6. Kliknij przycisk **Zapisz**.
+6. Kliknij przycisk Zapisz.
 7. Zamknij stronę.
 8. Odśwież stronę.
 
 ## <a name="create-loan-items"></a>Tworzenie przedmiotów pożyczek
-1. Wybierz kolejno opcje **Zasoby ludzkie** > **Pracownicy** > **Przedmioty pożyczek** > **Przedmioty pożyczek**.
-2. Kliknij opcję **Tworzenie przedmiotów pożyczek**.
-3. W polu **Ilość** wpisz liczbę.
-4. W polu **Opis** wpisz wartość.
-5. W polu **Typ pożyczki** kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
+1. Wybierz kolejno opcje Zasoby ludzkie > Pracownicy > Przedmioty pożyczek > Przedmioty pożyczek.
+2. Kliknij opcję Tworzenie przedmiotów pożyczek.
+3. W polu Ilość wpisz liczbę.
+4. Wypełnij pole Opis.
+5. W polu Typ pożyczki kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
 6. Na liście znajdź i zaznacz odpowiedni rekord.
 7. Na liście kliknij łącze w wybranym wierszu.
 8. Wprowadź liczbę dni, przez jaką przedmiot może być wypożyczony.
     * Domyślna wartość pola Planowany zwrot na stronie Sprzęt wypożyczony jest obliczana przez dodanie tej liczby do daty bieżącej.  
-9. W polu **Osoba odpowiedzialna** kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-10. Kliknij opcję **Wybierz**.
-11. W polu **Wartość początkowa** wprowadź liczbę.
-12. W polu **Interwał** wpisz numer.
-13. W polu **Format** wpisz wartość.
-    * Na przykład jeśli numerem początkowym przedmiotu pożyczki jest 10, wprowadź dwa symbole liczb w polu **Format**.  
-14. Kliknij przycisk **OK**.
+9. W polu Osoba odpowiedzialna kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
+10. Kliknij opcję Wybierz.
+11. W polu Wartość początkowa wprowadź liczbę.
+12. W polu Interwał wpisz liczbę.
+13. W polu Format wpisz wartość.
+    * Na przykład jeśli numerem początkowym przedmiotu pożyczki jest 10, wprowadź dwa symbole liczb w polu Format.  
+14. Kliknij przycisk OK.
 15. Odśwież stronę.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

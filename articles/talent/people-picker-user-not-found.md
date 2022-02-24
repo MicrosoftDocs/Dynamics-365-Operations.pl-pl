@@ -60,6 +60,3 @@ Należy zwrócić uwagę na właściwość **UserType** użytkownika. Jeśli wł
 ```
 PS C:\>Set-AzureADUser -ObjectId "testUpn@tenant.com" -UserType Member
 ```
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

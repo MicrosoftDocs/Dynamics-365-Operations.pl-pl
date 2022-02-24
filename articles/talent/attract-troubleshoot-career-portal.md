@@ -72,5 +72,3 @@ Przypisz rolę użytkownika talentów do zespołu relacji talentów.
 
    1. Zaloguj się do portalu kariery w nowym oknie przeglądarki.
    2. Zastosuj do zadania z portalu kariery. 
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

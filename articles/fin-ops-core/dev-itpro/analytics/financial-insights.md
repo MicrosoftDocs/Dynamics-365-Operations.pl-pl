@@ -1,10 +1,12 @@
 ---
-title: Analiza finansowa
+title: Szczegółowe dane finansowe
 description: Wykorzystując usługę Microsoft Power BI, obszar roboczy Szczegółowe dane finansowe zbiera w jednym miejscu kluczowe wskaźniki wydajności (KPI) dotyczące finansów, wykresy i sprawozdania finansowe.
 author: kweekley
-ms.date: 08/24/2021
+manager: AnnBe
+ms.date: 05/22/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -14,20 +16,20 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4dc6cb7c0d6c04371ada611626415d87e9f149f0
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 67f6d567c7e8d4cc6332c2d661abb04d1b28d2e9
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416312"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682778"
 ---
-# <a name="financial-analysis"></a>Analiza finansowa
+# <a name="financial-insights"></a>Szczegółowe dane finansowe
 
 [!include [banner](../includes/banner.md)]
 
-**Analiza finansowa** wykorzystując usługę Microsoft Power BI, obszar roboczy Szczegółowe dane finansowe zbiera w jednym miejscu kluczowe wskaźniki wydajności (KPI) dotyczące finansów, wykresy i sprawozdania finansowe. Power BI jest osadzone w aplikacji. Obszar roboczy **Analiza finansowa** koncentruje się na sprawozdawczości analitycznej. Osoby z całej organizacji mogą wyświetlać, badać i poznawać informacje oraz działać na ich podstawie. 
+Wykorzystując usługę Microsoft Power BI, obszar roboczy **Szczegółowe dane finansowe** zbiera w jednym miejscu kluczowe wskaźniki wydajności (KPI) dotyczące finansów, wykresy i sprawozdania finansowe. Power BI jest osadzone w aplikacji. Obszar roboczy **Szczegółowe dane finansowe** koncentruje się na sprawozdawczości analitycznej. Osoby z całej organizacji mogą wyświetlać, badać i poznawać informacje oraz działać na ich podstawie. 
 
-Obszar roboczy **Analiza finansowa** łączy dane z księgi głównej i ksiąg podrzędnych, tworząc bardziej kompletny obraz kondycji finansowej organizacji.
+Obszar roboczy **Szczegółowe dane finansowe** łączy dane z księgi głównej i ksiąg podrzędnych, tworząc bardziej kompletny obraz kondycji finansowej organizacji.
 
 > [!NOTE]
 > Ten dokument wykorzystuje następującą terminologię usługi Power BI:
@@ -36,14 +38,14 @@ Obszar roboczy **Analiza finansowa** łączy dane z księgi głównej i ksiąg p
 > - **Strona** — karta w jednym pliku .pbix. Każda strona może zawierać jeden lub więcej elementów wizualnych.
 > - **Element wizualny** — jedno źródło danych, takie jak karta, wskaźnik KPI, wykres, graf, macierz lub sprawozdanie finansowe. Strona, na której elementem wizualnym jest sprawozdanie finansowe, nie może zawierać żadnych innych elementów wizualnych, co wynika z rozmiaru danych stanowiących podstawę raportu.
 
-Obszar roboczy **Analiza finansowa** koncentruje się na możliwości wyświetlania i filtrowania danych w istniejących raportach. Istnieje możliwość dodawania nowych elementów wizualnych do obszaru roboczego **Analiza finansowa**. Obszar roboczy **Analiza finansowa** jest dostępny zarówno dla bieżącej firmy, jak i wszystkich firm, i pokazuje dane ze wszystkich firm, niezależnie od tego, do których firm rola ma dostęp.
+Obecnie obszar roboczy **Szczegółowe dane finansowe** służy do wyświetlania danych aktywnej firmy lub wszystkich firm. W przyszłych wersjach obszar roboczy zmieni się w miejsce, gdzie za pomocą usługi Power BI będzie można edytować i tworzyć elementy wizualne.
 
-- [Dodawanie lub edytowanie wizualizacji Power BI na pulpicie nawigacyjnym](/powerapps-docs/user/add-powerbi-dashboards.md)
+Obszar roboczy **Przegląd dla dyrektora finansowego** zawiera te same elementy wizualne, co obszar roboczy **Szczegółowe dane finansowe**, ale koncentruje się na możliwości wyświetlania i filtrowania danych w istniejących raportach. W przyszłych wersjach będzie można dodawać nowe elementy wizualne do obszaru roboczego **Szczegółowe dane finansowe**. Nowe elementy wizualne mogą być również dostępne w obszarach roboczych ukierunkowanych na inne role, takie jak menedżerowie projektów i menedżerowie ds. rozrachunków z dostawcami. Obszar roboczy **Przegląd dla dyrektora finansowego** nadal pokazuje dane ze wszystkich firm, niezależnie od tego, do których firm rola ma dostęp.
 
 ## <a name="dynamics-365-finance-setup"></a>Konfiguracja systemu Dynamics 365 Finance
 **Księga główna**
 
-Typ konta głównego i kategorie kont głównych służą do wypełniania odpowiednich domyślnych kont głównych w sprawozdaniu finansowym **Bilans** oraz różnych sprawozdaniach finansowych **Rachunek zysków i strat** w obszarze roboczym **Analiza finansowa**.
+Typ konta głównego i kategorie kont głównych służą do wypełniania odpowiednich domyślnych kont głównych w sprawozdaniu finansowym **Bilans** oraz różnych sprawozdaniach finansowych **Rachunek zysków i strat** w obszarze roboczym **Szczegółowe dane finansowe**.
 
 Na stronie **Konta główne** należy zdefiniować konto główne, przypisując mu jeden z następujących typów:
 
@@ -55,20 +57,23 @@ Na stronie **Konta główne** należy zdefiniować konto główne, przypisując 
 
 Nie przypisuj swoim kontom głównym żadnego innego typu, takiego jak **Bilans** czy **Rachunek zysków i strat**. Jeśli zostaną przypisane inne typy konta głównego, aparat sprawozdawczości nie będzie mógł ich rozpoznać, ponieważ te typy nie są wystarczająco szczegółowe. Typ konta głównego musi być rozpoznawany, aby zobowiązania i przychody były wyświetlane jako kwoty dodatnie w raportach finansowych.
 
-Aby konto główne było wyświetlane w sprawozdaniach finansowych i uwzględniane w różnych innych elementach wizualnych, takich jak kluczowe wskaźniki wydajności, musi mieć przypisaną kategorię konta głównego. Funkcjonalność kategorii kont głównych została udoskonalona i teraz zawiera parametr kolejności wyświetlania. Kolejność wyświetlania jest używana w szczególności w sprawozdaniach finansowych w obszarze roboczym **Analiza finansowa**. Po zmodyfikowaniu istniejącej lub dodaniu nowej kategorii konta głównego można zmienić wartość pola **Kolejność wyświetlania**, aby określić kolejność, w jakiej kategorie kont głównych powinny być wyświetlane w sprawozdaniu finansowym. Jeśli trzeba zmienić kolejność wyświetlania wielu kategorii kont głównych, można użyć funkcji Otwórz w programie Excel i szybko zmodyfikować zmiany oraz je opublikować aplikacji.
+Aby konto główne było wyświetlane w sprawozdaniach finansowych i uwzględniane w różnych innych elementach wizualnych, takich jak kluczowe wskaźniki wydajności, musi mieć przypisaną kategorię konta głównego. Funkcjonalność kategorii kont głównych została udoskonalona i teraz zawiera parametr kolejności wyświetlania. Kolejność wyświetlania jest używana w szczególności w sprawozdaniach finansowych w obszarze roboczym **Szczegółowe dane finansowe**. Po zmodyfikowaniu istniejącej lub dodaniu nowej kategorii konta głównego można zmienić wartość pola **Kolejność wyświetlania**, aby określić kolejność, w jakiej kategorie kont głównych powinny być wyświetlane w sprawozdaniu finansowym. Jeśli trzeba zmienić kolejność wyświetlania wielu kategorii kont głównych, można użyć funkcji Otwórz w programie Excel i szybko zmodyfikować zmiany oraz je opublikować aplikacji.
 
 ## <a name="entity-store"></a>Magazyn jednostek
-Dane obszaru roboczego **Analiza finansowa** są pobierane z magazynu jednostek (**Administrowanie systemem** \> **Ustawienia** \> **Magazyn jednostek**) Jeśli po otwarciu obszaru roboczego **Przegląd dla dyrektora finansowego** lub **Analiza finansowa** na elementach wizualnych pojawi się komunikat ostrzegawczy podany niżej, należy zaktualizować jednostki.
+Dane obszaru roboczego **Szczegółowe dane finansowe** są pobierane z magazynu jednostek (**Administrowanie systemem** \> **Ustawienia** \> **Magazyn jednostek**) Jeśli po otwarciu obszaru roboczego **Przegląd dla dyrektora finansowego** lub **Szczegółowe dane finansowe** na elementach wizualnych pojawi się komunikat ostrzegawczy podany niżej, należy zaktualizować jednostki.
 
-![Ostrzeżenie.](./media/Cantdisplay.png)
+![Ostrzeżenie](./media/Cantdisplay.png)
 
-Należy zaktualizować następujące jednostki, aby widzieć dane w obszarach roboczych **Analiza finansowa**:
+Należy zaktualizować następujące jednostki, aby widzieć dane w obszarach roboczych **Szczegółowe dane finansowe** i **Przegląd dla dyrektora finansowego**:
 
-- Dane transakcji raportowania finansowego, wer. 3 
-- Kredyty i windykacja wer. 2
+- Dane transakcji raportowania finansowego w wersji 2 (**Uwaga:** to jest nowość w wersji 10.0.1, która zastępuje poprzednią jednostkę).
+- Dane transakcji raportowania finansowego
+- CustCollectionsBIMeasurements
 - LedgerCovLiquidityMeasurement
 - Moduł Zakupy
 - Moduł Sprzedaż
+
+W poprzedniej wersji dane w obszarze roboczym **Przegląd dla dyrektora finansowego** korzystały z jednostek LedgerActivityMeasure i VendPaymentBIMeasure. W bieżącej wersji te jednostki nie są już używane.
 
 Istnieje możliwość zdefiniowania cyklicznego zadania wsadowego do regularnej aktualizacji danych w jednostkach. Ponieważ podczas aktualizacji każda jednostka jest całkowicie odbudowywana, należy ostrożnie wybierać czas i częstotliwość aktualizacji jednostek. Podstawową jednostką używaną przy sporządzaniu sprawozdaniach finansowych jest FinancialReportingTransactionData. W związku z tym można zdecydować, że ma być aktualizowana częściej.
 
@@ -77,31 +82,32 @@ Obecnie dane w osadzonych raportach usługi Power BI nie mogą się ograniczać 
 
 | Obowiązek                                    | Role | opis |
 |-----------------------------------------|-------|------------|
-| Wyświetlanie analiz finansowych bieżącej firmy | <ul><li>Księgowy</li><li>Menedżer ds. księgowania</li><li>Kierownik ds. księgowania</li><li>Audytor</li><li>Menedżer budżetu</li><li>Dyrektor naczelny</li><li>Dyrektor finansowy</li><li>Kontroler finansowy</li></ul> | Ten obowiązek umożliwia dostęp do obszaru roboczego Analiza finansowa. Domyślnie jako filtr jest używana aktywna firma. Nie można dodać innych firm. |
-| Wyświetlanie analiz finansowych bieżącej firmy   | W rozwiązaniu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition wer. 7.3 ten obowiązek nie jest przypisany do roli. W następnej wersji ten obowiązek będzie przypisany do roli Dyrektor finansowy. | Ten obowiązek umożliwia dostęp do menu obszaru roboczego Przegląd dla dyrektora finansowego. Domyślnie jako filtr jest używana aktywna firma. Można jednak dodać wszystkie firmy, niezależnie od tego, czy użytkownik ma dostęp do innych firm. |
+| Wyświetlanie obszaru roboczego Dyrektor finansowy — przegląd             | Dyrektor finansowy | Ten obowiązek umożliwia dostęp do obszaru roboczego Przegląd dla dyrektora finansowego. Domyślnie jako filtr jest używana aktywna firma. Można jednak dodać wszystkie firmy, niezależnie od tego, czy użytkownik ma dostęp do innych firm. |
+| Wyświetlanie szczegółowych danych finansowych bieżącej firmy | <ul><li>Księgowy</li><li>Menedżer ds. księgowania</li><li>Kierownik ds. księgowania</li><li>Audytor</li><li>Menedżer budżetu</li><li>Dyrektor naczelny</li><li>Dyrektor finansowy</li><li>Kontroler finansowy</li></ul> | Ten obowiązek umożliwia dostęp do obszaru roboczego Szczegółowe dane finansowe. Domyślnie jako filtr jest używana aktywna firma. Nie można dodać innych firm. |
+| Wyświetlanie międzyfirmowych szczegółowych danych finansowych   | W rozwiązaniu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition wer. 7.3 ten obowiązek nie jest przypisany do roli. W następnej wersji ten obowiązek będzie przypisany do roli Dyrektor finansowy. | Ten obowiązek umożliwia dostęp do menu obszaru roboczego Przegląd dla dyrektora finansowego. Domyślnie jako filtr jest używana aktywna firma. Można jednak dodać wszystkie firmy, niezależnie od tego, czy użytkownik ma dostęp do innych firm. |
 
 
-## <a name="financial-reporting-vs-financial-analysis"></a>Raporty finansowe a Analiza finansowa
-Mimo iż obszar roboczy **Analiza finansowa** zawiera sprawozdania finansowe, nie zastępuje modułu Raporty w module Finance aplikacji. Domyślne sprawozdania finansowe w obszarze roboczym **Analiza finansowa** mają ograniczony zakres i nie obejmują wszystkich typów sprawozdań finansowych. Raporty finansowe to nadal podstawowe narzędzie do projektowania, tworzenia i generowania ustawowych sprawozdań finansowych.
+## <a name="financial-reporting-vs-financial-insights"></a>Raporty finansowe a Szczegółowe dane finansowe
+Mimo iż obszar roboczy **Szczegółowe dane finansowe** zawiera sprawozdania finansowe, nie zastępuje modułu Raporty w module Finance aplikacji. Domyślne sprawozdania finansowe w obszarze roboczym **Szczegółowe dane finansowe** mają ograniczony zakres i nie obejmują wszystkich typów sprawozdań finansowych. Raporty finansowe to nadal podstawowe narzędzie do projektowania, tworzenia i generowania ustawowych sprawozdań finansowych.
 
 Poniższy wykres porównawczy pomoże zidentyfikować różnice między oboma opcjami:
 
 
-| Funkcja                                                   | Financial Reporting                                               | Analiza finansowa |
+|                                                          | Raportowanie finansowe                                               | Szczegółowe dane finansowe |
 |----------------------------------------------------------|-------------------------------------------------------------------|--------------------|
-| **Edytowanie domyślnych raportów**                                 | Tak                                                               | Nie |
-| **Tworzenie nowych raportów**                                   | Tak                                                               | Nie |
-| **Drukowanie raportów**                                        | Tak                                                               | Nie |
+| **Edytowanie domyślnych raportów**                                 | Tak                                                               | Nr |
+| **Tworzenie nowych raportów**                                   | Tak                                                               | Nr |
+| **Drukowanie raportów**                                        | Tak                                                               | Nr |
 | **Eksportuj do programu Excel**                                      | Tak                                                               | Ograniczone Eksportowanie nieprzetworzonych danych do programu Excel — nie jest to sformatowany raport |
-| **Obsługa hierarchii raportowania/hierarchii organizacyjnej**   | Tak                                                               | Nie |
+| **Obsługa hierarchii raportowania/hierarchii organizacyjnej**   | Tak                                                               | Nr |
 | **Sprawozdawczość z danych księgi podrzędnej**                             | Tak Ograniczenie do jednego dostawcy i odbiorcy                              | Tak Dostawca, odbiorca, grupy dostawców/odbiorców, adresy dostawców/odbiorców itd. |
 | **Waluta raportowania**                                   | Tak Waluta rozliczeniowa i przeliczanie na walutę raportowania       | Nie Tylko waluta raportowania |
 | **Zabezpieczenia**                                             | Tak Zgodność z zabezpieczeniami raportowania w module Finance i drzewa raportowania | Ograniczone Wyświetlanie raportów dla wszystkich firm (niezależnie od poziomu zabezpieczeń ustawionego w programie Finance and Operations) lub tylko dla aktywnej firmy |
-| **Obsługa różnych planów kont i lat obrachunkowych** | Tak                                                               | Nie |
-| **Sprawozdawczość z danych zewnętrznych**                              | Nie                                                                | Nie |
+| **Obsługa różnych planów kont i lat obrachunkowych** | Tak                                                               | Nr |
+| **Sprawozdawczość z danych zewnętrznych**                              | Nr                                                                | Nr |
 | **Obsługa konsolidacji**                               | Tak                                                               | Ograniczone Można generować raporty obejmujące wiele firm, ale tylko w walucie rozliczeniowej |
 
-Dostępne są następujące sprawozdania finansowe:
+Oprócz interfejsu użytkownika znanego z pierwotnej wersji obszaru roboczego **Przegląd dla dyrektora finansowego** są teraz dostępne nowe kluczowe wskaźniki wydajności, wykresy i sprawozdania finansowe. Dostępne są następujące sprawozdania finansowe:
 
 - Bilans próbny
 - Arkusz bilansowy
@@ -114,7 +120,7 @@ Dostępne są następujące sprawozdania finansowe:
 - Sprzedaż na odbiorcę
 
 ## <a name="edit-visuals"></a>Edytowanie elementów wizualnych
-W pierwszej wersji obszaru roboczego **Analiza finansowa** nie można edytować żadnych elementów wizualnych. W przyszłych wersjach użytkownicy mający odpowiednie zabezpieczenie będą mogli tworzyć nowe elementy wizualne, kopiować istniejące elementy wizualne oraz edytować elementy wizualne. Mimo że pliki .pbix zawierające raporty są dostępne jako zasoby, nie zalecamy edytowania domyślnych raportów. Dodatkowe zmiany zostaną wprowadzone w obiektach używanych do tworzenia sprawozdań finansowych: modelu danych, raportach domyślnych i elemencie wizualnym niestandardowych sprawozdań finansowych. W związku z tym aby korzystać z nowych funkcji i zmian w modelu danych wprowadzonych w następnej wersji, należałoby ponownie wprowadzić wszystkie zmiany dokonane w domyślnych raportach za pomocą aplikacji Microsoft Power BI Desktop.
+W pierwszej wersji obszaru roboczego **Szczegółowe dane finansowe** nie można edytować żadnych elementów wizualnych. W przyszłych wersjach użytkownicy mający odpowiednie zabezpieczenie będą mogli tworzyć nowe elementy wizualne, kopiować istniejące elementy wizualne oraz edytować elementy wizualne. Mimo że pliki .pbix zawierające raporty są dostępne jako zasoby, nie zalecamy edytowania domyślnych raportów. Dodatkowe zmiany zostaną wprowadzone w obiektach używanych do tworzenia sprawozdań finansowych: modelu danych, raportach domyślnych i elemencie wizualnym niestandardowych sprawozdań finansowych. W związku z tym aby korzystać z nowych funkcji i zmian w modelu danych wprowadzonych w następnej wersji, należałoby ponownie wprowadzić wszystkie zmiany dokonane w domyślnych raportach za pomocą aplikacji Microsoft Power BI Desktop.
 
 ## <a name="filtering"></a>Filtrowanie
 Użytkownicy mogą filtrować raport przy użyciu okienka **Filtr** po lewej stronie. Jest to to samo okienko, jak dostępne w aplikacji Power BI Desktop. Istnieją różne poziomy filtrowania. Niektóre z nich mogą być niedostępne, w zależności od tego, co wybrano na stronie (karcie) i czy są używane funkcje drążenia wskroś:
@@ -124,7 +130,7 @@ Użytkownicy mogą filtrować raport przy użyciu okienka **Filtr** po lewej str
 - **Filtry poziomu elementu wizualnego** — te filtry są stosowane tylko do wybranego elementu wizualnego. Są nakładane na filtry poziomu strony.
 - **Filtr drążenia wskroś** — ten filtr filtruje od zastosowanego „źródłowego” elementu wizualnego do bieżącego elementu wizualnego podczas drążenia wskroś od źródłowego elementu wizualnego do bieżącego elementu wizualnego.
 
-![Opcje filtrowania.](./media/filter.png)
+![Opcje filtrowania](./media/filter.png)
 
 Aby usunąć wartość określonego filtru, wybierz symbol gumki obok tego filtru. Nie usuwaj filtru naciśnięciem przycisku X. Jeśli wybierzesz symbol X, pole, według którego odbywa się filtrowanie, zostanie usunięte jako opcja filtru. Jeśli przypadkowo usuniesz pole z filtru, zamknij obszar roboczy, a następnie otwórz go ponownie. Zostaną wtedy ponownie zastosowane domyślne ustawienia filtru.
 
@@ -161,7 +167,7 @@ W raportach domyślnych są używane następujące wymiary. Żaden z tych wymiar
 - Miejscowość
 
 > [!IMPORTANT] 
-> Jeśli zsumujesz transakcje dla wielu dostawców lub odbiorców w jednym załączniku przy użyciu arkuszy finansowych, dane będą błędne. Proces sprawozdawczości nie może ustalić, który dostawca lub odbiorca jest powiązany z konkretnym kontem księgowym we wpisie w arkuszu, ponieważ te informacje nie są nigdzie przechowywane. Z tego względu nie zalecamy wprowadzania wielu dostawców, odbiorców, środków trwałych ani projektów w jednym załączniku.
+> Jeśli zsumujesz transakcje dla wielu dostawców lub odbiorców w jednym załączniku przy użyciu arkuszy finansowych, dane będą błędne. Aparat sprawozdawczości nie może ustalić, który dostawca lub odbiorca jest powiązany z konkretnym kontem księgowym we wpisie w arkuszu, ponieważ te informacje nie są nigdzie przechowywane. Z tego względu nie zalecamy wprowadzania wielu dostawców, odbiorców, środków trwałych ani projektów w jednym załączniku.
 
 ## <a name="drill-on-data"></a>Przechodzenie do szczegółów danych
 
@@ -169,27 +175,27 @@ W usłudze Power BI jest dostępnych kilka poziomów przechodzenia do szczegół
 
 Na poniższej ilustracji sprawozdanie **Bilans próbny** jest zwinięte do najwyższego poziomu w hierarchii wierszy, czyli do typu konta głównego.
 
-![Zestawienie bilansów próbnych.](./media/trial-balance.png)
+![Zestawienie bilansów próbnych](./media/trial-balance.png)
 
 Aby wyświetlić następny poziom hierarchii, czyli kategorie konta głównego, można w polu **Wyszczególnij według** ustawić opcję **Wiersze**, a następnie nacisnąć przycisk **Rozwiń** (trzeci przycisk za polem Wyszczególnij według). Teraz zobaczysz rozwinięte wszystkie kategorie konta głównego. Obecnie usługa Power BI nie pozwala rozwinąć tylko jednego wiersza lub kolumny, ale nadal widzieć wszystkie pozostałe wiersze lub kolumny.
 
-![Przechodzenie do coraz bardziej szczegółowych wierszy bilansu próbnego.](./media/trial-balance2.png)
+![Przechodzenie do coraz bardziej szczegółowych wierszy bilansu próbnego](./media/trial-balance2.png)
 
 Aby rozwinąć do poziomu kont głównych dla wszystkich wierszy, ponownie użyj przycisku **Rozwiń**. Jednak aby uszczegółowić do kont głównych tylko dla jednego wiersza, najpierw wybierz przycisk **Przejdź do szczegółów** (pojedynczą strzałkę skierowaną w dół po prawej stronie okna), a następnie wybierz wiersz, który chcesz uszczegółowić. Na poniższej ilustracji przedstawiono wynik zaznaczenia wiersza **Sprzedaż** po naciśnięciu przycisku **Przejdź do szczegółów**.
 
-![Przycisk rozwijania bilansu próbnego.](./media/trial-balance3.png)
+![Przycisk rozwijania bilansu próbnego](./media/trial-balance3.png)
 
 Po przejściu do szczegółów w jednym wierszu trzeba kliknąć kilka razy, aby wrócić do pełnego bilansu próbnego. Przycisk **Uogólnij** (pierwszy za polem **Wyszczególnij według**) powoduje uogólnianie tylko w kontekście kategorii **Sprzedaż**, jak pokazano na poniższej ilustracji.
 
-![Przycisk uogólniania bilansu próbnego.](./media/trial-balance4.png)
+![Przycisk uogólniania bilansu próbnego](./media/trial-balance4.png)
 
 Można dalej klikać przycisk **Uogólnij**, aby wrócić do najwyższego poziomu podsumowania dla wierszy.
 
 W oknie usługi Power BI znajduje się również przycisk, który umożliwia przejście do następnego poziomu w hierarchii (drugi przycisk za polem **Wyszczególnij według**). Efekt użycia tego przycisku różni się od działania przycisku **Rozwiń** (trzeci przycisk za polem **Wyszczególnij według**), który służy do rozwijania hierarchii. Po rozwinięciu hierarchii pozostaje ona w raporcie. Na przykład, jak pokazano wcześniej, jeśli rozwiniesz poziom typu konta głównego, będzie on widoczny w raporcie. Jednak po przejściu do następnego poziomu w hierarchii raport nie będzie już pokazywał obiektu nadrzędnego w hierarchii, jak przestawiono na ilustracji poniżej.
 
-![Przycisk przechodzenia wstecz w bilansie próbnym.](./media/trial-balance5.png)
+![Przycisk przechodzenia wstecz w bilansie próbnym](./media/trial-balance5.png)
 
-Aby zobaczyć szczegóły transakcji stojących za zbiorczymi saldami, można wybrać pewne kwoty i w ten sposób przejść z powrotem do programu Financial and Operations.
+Aby zobaczyć szczegóły transakcji stojących za zbiorczymi saldami, można wybrać pewne kwoty i w ten sposób przejść z powrotem do programu Finance and Operations.
 
 Drążenie wstecz ze sprawozdań finansowych powoduje przejście do Eksploratora źródeł księgowania (ASE), a nie do transakcji w załącznikach. Edytor ASE nie pokazuje wyłącznie zapisów księgowych istniejących w księdze głównej. Zamiast tego przedstawia szczegóły transakcji z księgi podrzędnej. W związku z tym otrzymujesz znacznie więcej informacji na temat transakcji źródłowej i można ich używać do analizy. Na przykład widać, kto był dostawcą lub odbiorcą, co odbiorca kupił lub sprzedawca sprzedał, a nawet którego projektu dotyczyła transakcja.
 
@@ -226,7 +232,7 @@ Obecnie sprawozdania finansowe nie obsługują hierarchii organizacyjnych, któr
 ## <a name="data-limitations"></a>Ograniczenia dotyczące danych
 Elementy wizualne sprawozdania finansowego mają zdefiniowane ograniczenie liczby wierszy, które mogą być pokazywane. Obecnie limit jest równy 30 000. Po przekroczeniu tego limitu na elemencie graficznym pojawi się symbol ostrzeżenia informujący o zaistniałej sytuacji.
 
-![Ograniczenia dotyczące danych.](./media/data-limit.png)
+![Ograniczenia dotyczące danych](./media/data-limit.png)
 
 Jeśli ten maksymalny limit zostanie przekroczony, sumy wyświetlane w sprawozdaniu finansowym będą nieprawidłowe, ponieważ nie wszystkie wiersze zostały załadowane do elementu wizualnego.
 
@@ -236,11 +242,8 @@ Usługa Power BI nie oferuje opcji ukrywania i wyświetlania pustych wierszy. Je
 
 ## <a name="additional-resources-for-power-bi"></a>Dodatkowe zasoby Power BI
 
-Informacje zawarte w poniższych materiałach nie są wymagane, aby można było używać osadzonych raportów w obszarach roboczych **Analiza finansowa** w środowisku produkcyjnym. Przydają się jedynie do środowisk programistycznych oraz jeśli chcesz osadzać własne raporty usługi Power BI.
+Informacje zawarte w poniższych materiałach nie są wymagane, aby można było używać osadzonych raportów w obszarach roboczych **Przegląd dla dyrektora finansowego** i **Szczegółowe dane finansowe** w środowisku produkcyjnym. Przydają się jedynie do środowisk programistycznych oraz jeśli chcesz osadzać własne raporty usługi Power BI.
 
-- [Przechodzenie do analitycznych obszarów roboczych i raportów w środowisku jednoczęściowym](/archive/blogs/dynamicsaxbi/accessing-analytical-workspaces-on-1box-environment)
+- [Przechodzenie do analitycznych obszarów roboczych i raportów w środowisku jednoczęściowym](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)
 
-- [Dodawanie analizy do obszarów roboczych za pomocą Power BI Embedded](/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+- [Dodawanie analizy do obszarów roboczych za pomocą Power BI Embedded](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)

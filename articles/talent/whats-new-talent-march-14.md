@@ -71,6 +71,3 @@ Aktualizacja platformy 24 dla Finance and Operations pozwala użytkownikom tworz
 
 ### <a name="duplicate-employee-check-interface-changes"></a>Sprawdzanie zduplikowanych pracowników: zmiany w interfejsie
 Ta zmiana powoduje, że zduplikowane pozycje są wykrywane po wypełnieniu pól nazwisk, a stan pokazuje liczbę zduplikowanych pozycji. Można wybrać podane łącze, aby otworzyć nową stronę w celu dokonania oceny, czy ma być używane wykryte dopasowanie. Aby uniknąć zakłóceń we wprowadzaniu danych, formularz zduplikowanych pozycji nie jest automatycznie otwierany.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

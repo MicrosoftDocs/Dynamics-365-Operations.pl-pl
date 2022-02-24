@@ -1,26 +1,29 @@
 ---
 title: Dedykowane terminale płatności oraz monity o drukarkę i szuflady kasowe
 description: Ten temat zawiera informacje o możliwości uzyskania dedykowanego terminalu płatności i powiadamiania użytkownika o wybranie szuflady kasowej oraz drukarki paragonów.
-author: BrianShook
+author: rubendel
+manager: AnnBe
 ms.date: 05/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Operations, Retail
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: brshoo
+ms.author: rubendel
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: b955e55271471ac43ff4c2b217c6448b30536e06
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 03cb68ede82668523e6970d33df676738e65fd83
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779777"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414967"
 ---
 # <a name="dedicated-payment-terminals-and-prompts-for-a-printer-and-cash-drawer"></a>Dedykowane terminale płatności oraz monity o drukarkę i szuflady kasowe
 
@@ -50,13 +53,13 @@ Funkcja opisana w tym temacie jest obsługiwana przez Modern POS dla Windows i M
 
 Ta funkcja obsługuje terminale płatności obsługiwane w sieci i drukarki paragonów. Obsługę szuflady kasowej można uzyskać, łącząc szufladę kasową z drukarką z obsługą sieci za pośrednictwem portu d/k.
 
-Gotowe wsparcie dla tej funkcji zapewnia [Łącznik płatności usługi Dynamics 365 dla Adyen](./dev-itpro/adyen-connector.md?tabs=8-1-3). Jednak inne łączniki płatności mogą być obsługiwane za pośrednictwem zestawu Commerce Software Development Kit (SDK) dla płatności. Obsługiwane drukarki paragonów obejmują drukarki paragonów z obsługą sieci od Star Micronics i Epson.
+Gotowe wsparcie dla tej funkcji zapewnia [Łącznik płatności usługi Dynamics 365 dla Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3). Jednak inne łączniki płatności mogą być obsługiwane za pośrednictwem zestawu Commerce Software Development Kit (SDK) dla płatności. Obsługiwane drukarki paragonów obejmują drukarki paragonów z obsługą sieci od Star Micronics i Epson.
 
 Aby skonfigurować drukarki pokwitowań Star Micronics, użyj narzędzia Star Micronics Printer Utility do skonfigurowania urządzenia, aby mogło być używane przez sieć. To narzędzie umożliwia również podanie adresu IP urządzenia.
 
 Aby skonfigurować drukarki paragonów Epson, należy za pomocą narzędzia drukowania ePOS-Print firmy Epson skonfigurować urządzenie do używania protokołów sieciowych.
 
-Aby uzyskać więcej informacji dotyczących sposobu konfigurowania urządzeń peryferyjnych, zajrzyj do [Omówienie obsługi urządzeń peryferyjnych w sieci](./dev-itpro/network-peripherals.md).
+Aby uzyskać więcej informacji dotyczących sposobu konfigurowania urządzeń peryferyjnych, zajrzyj do [Omówienie obsługi urządzeń peryferyjnych w sieci](https://go.microsoft.com/fwlink/?linkid=2129965).
 
 ## <a name="set-up-a-dedicated-payment-terminal-and-a-prompt-for-a-printer-and-cash-drawer"></a>Skonfiguruj dedykowany terminal płatniczy i monit o drukarkę i szufladę kasową
 
@@ -75,9 +78,9 @@ Aby skonfigurować profil sprzętu przypisany do kasy, wykonaj następujące kro
 
     | Urządzenie | Typ | Nazwa urządzenia | Dodatkowe szczegóły |
     |---|---|---|---|
-    | Drukarka | Sieć | *Jakikolwiek* | W nazwie urządzenia jest rozróżniana wielkość liter. **Identyfikator profilu paragonów** powinien być taki sam jak **Identyfikator profilu paragonów** mapowany do drukarki sieciowej skonfigurowanej w profilu sprzętowym przypisanym do stacji sprzętowej na poziomie kanału. |
-    | Szuflada kasowa | Sieć | *Jakikolwiek* | W nazwie urządzenia jest rozróżniana wielkość liter. W opcji **Używaj zmiany udostępnionej** zaznacz wartość **Tak**. |
-    | Usługa EFT | Adyen | Nie dotyczy | Aby uzyskać informacje o konfigurowaniu aktualnego, gotowego do użytku łącznika płatności Adyen dla sklepów internetowych, zobacz temat [Łącznik płatności usługi Dynamics 365 dla Adyen](./dev-itpro/adyen-connector.md?tabs=8-1-3). Inne łączniki płatności mogą być obsługiwane za pośrednictwem [zestawu Commerce Software Development Kit (SDK) dla płatności](./dev-itpro/end-to-end-payment-extension.md). |
+    | Drukarka | Alternatywa | *Jakikolwiek* | W nazwie urządzenia jest rozróżniana wielkość liter. **Identyfikator profilu paragonów** powinien być taki sam jak **Identyfikator profilu paragonów** mapowany do drukarki sieciowej skonfigurowanej w profilu sprzętowym przypisanym do stacji sprzętowej na poziomie kanału. |
+    | Szuflada kasowa | Alternatywa | *Jakikolwiek* | W nazwie urządzenia jest rozróżniana wielkość liter. W opcji **Używaj zmiany udostępnionej** zaznacz wartość **Tak**. |
+    | Usługa EFT | Adyen | Nie dotyczy | Aby uzyskać informacje o konfigurowaniu aktualnego, gotowego do użytku łącznika płatności Adyen dla sklepów internetowych, zobacz temat [Łącznik płatności usługi Dynamics 365 dla Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3). Inne łączniki płatności mogą być obsługiwane za pośrednictwem [zestawu Commerce Software Development Kit (SDK) dla płatności](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/end-to-end-payment-extension). |
     | Konsola PIN | Sieć | **MicrosoftAdyenDeviceV001** | Brak. |
 
 5. W Dynamics 365 Commerce wyszukaj **Kasy**.
@@ -85,7 +88,7 @@ Aby skonfigurować profil sprzętu przypisany do kasy, wykonaj następujące kro
 7. Przypisz właśnie utworzony profil sprzętu do kasy, która powinna używać dedykowanego terminalu płatności. Urządzenie, które jest mapowane na tę kasę musi używać aplikacji Modern POS dla Windows lub Modern POS dla aplikacji Android.
 8. Wybierz opcję **Zapisz**.
 9. W okienku akcji na karcie **Kasy** wybierz opcję **Skonfiguruj adresy IP**.
-10. Na skróconej karcie **Konsola PIN** wprowadź adres IP terminalu płatności. Aby uzyskać informacje na temat pobierania adresu IP terminalu płatności przy użyciu łącznika Adyen, zapoznaj się z [Łącznik płatności usługi Dynamics 365 dla Adyen](./dev-itpro/adyen-connector.md?tabs=8-1-3).
+10. Na skróconej karcie **Konsola PIN** wprowadź adres IP terminalu płatności. Aby uzyskać informacje na temat pobierania adresu IP terminalu płatności przy użyciu łącznika Adyen, zapoznaj się z [Łącznik płatności usługi Dynamics 365 dla Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3).
 11. Wybierz opcję **Zapisz**.
 
 #### <a name="set-up-a-hardware-profile-for-the-receipt-printer-and-cash-drawer"></a>Konfigurowanie profilu sprzętu dla drukarki paragonów i szuflady kasowej
@@ -100,7 +103,7 @@ Aby skonfigurować profil sprzętowy używany do grupowania sieciowej drukarki p
     | Urządzenie | Typ | opis | Dodatkowe szczegóły |
     |---|---|---|---|
     | Drukarka | Sieć | **Epson** lub **Star** | W nazwie urządzenia jest rozróżniana wielkość liter. **Identyfikator profilu paragonów** powinien być taki sam jak **Identyfikator profilu paragonów** mapowany do drukarki skonfigurowanej w profilu sprzętowym przypisanym do kasy. |
-    | Szuflada kasowa | Alternatywa | **Epson** lub **Star** | W nazwie urządzenia jest rozróżniana wielkość liter. w opcji **Używaj zmiany udostępnionej** zaznacz wartość **Tak**. |
+    | Szuflada kasowa | Sieć | **Epson** lub **Star** | W nazwie urządzenia jest rozróżniana wielkość liter. w opcji **Używaj zmiany udostępnionej** zaznacz wartość **Tak**. |
 
 5. Wybierz opcję **Zapisz**.
 
@@ -148,9 +151,6 @@ Pracownicy sklepu są proszeni o wybranie stacji sprzętowej tylko raz na transa
 
 ## <a name="related-articles"></a>Powiązane artykuły
 
-- [Konfigurowanie aplikacji POS hybrid w systemach Android i iOS](./dev-itpro/hybridapp.md)
-- [Łącznik płatności usługi Dynamics 365 dla Adyen](./dev-itpro/adyen-connector.md?tabs=8-1-3)
-- [Omówienie obsługi urządzeń peryferyjnych w sieci](./dev-itpro/network-peripherals.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+- [Konfigurowanie aplikacji POS hybrid w systemach Android i iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp)
+- [Łącznik płatności usługi Dynamics 365 dla Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
+- [Omówienie obsługi urządzeń peryferyjnych w sieci](https://go.microsoft.com/fwlink/?linkid=2129965)

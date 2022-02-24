@@ -2,30 +2,36 @@
 title: Tworzenie domyślnego odbiorcy
 description: W tym temacie opisano sposób tworzenia domyślnego odbiorcy używanego podczas tworzenia kanału w Microsoft Dynamics 365 Commerce.
 author: samjarawan
+manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: ff9e5665ffd82982e09f63e34b30ae6937666231855587ad2f27c5231ead8419
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ba1d10a897f349703737068d772423f7d0292944
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720966"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414855"
 ---
 # <a name="create-a-default-customer"></a>Tworzenie domyślnego odbiorcy
+
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano sposób tworzenia domyślnego odbiorcy używanego podczas tworzenia kanału w Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Omówienie
 
 Podczas tworzenia kanału lub online konieczne jest podanie odbiorcy domyślnego. Domyślny odbiorca można łatwo utworzyć po uprzednim utworzeniu grupy odbiorców i książki adresowej klienta.
 
@@ -47,7 +53,7 @@ Aby utworzyć grupę odbiorców, należy wykonać poniższe kroki.
 
 Poniższy obraz pokazuje kilku skonfigurowanych grup odbiorców.
 
-![Grupy odbiorców.](media/customer-groups.png)
+![Grupy odbiorców](media/customer-groups.png)
 
 ## <a name="create-a-customer-address-book"></a>Tworzenie książki adresowej odbiorców
 
@@ -63,7 +69,7 @@ Aby utworzyć książkę adresową odbiorcy należy wykonać poniższe kroki.
 
 Poniższy obraz przedstawia przykład książki adresowej.
 
-![Książka adresowa.](media/address-book.png)
+![Książka adresowa](media/address-book.png)
 
 ## <a name="create-a-default-customer"></a>Tworzenie domyślnego odbiorcy
 
@@ -86,11 +92,11 @@ Aby utworzyć domyślnego odbiorcę, należy wykonać poniższe kroki.
 
 Poniższy obraz przedstawia przykład tworzenia odbiorcy.
 
-![Domyślne tworzenie odbiorcy.](media/default-customer-creation.png)
+![Domyślne tworzenie odbiorcy](media/default-customer-creation.png)
 
 Poniższy rysunek przedstawia domyślną konfigurację klienta.
 
-![Konfiguracja przykładowa odbiorcy.](media/default-customer-configuration1.png)
+![Konfiguracja przykładowa odbiorcy](media/default-customer-configuration1.png)
 
 Większość wartości domyślnych na ekranie szczegóły odbiorcy może pozostać, ale dwie wartości powinny zostać zmienione.
 
@@ -100,13 +106,10 @@ Większość wartości domyślnych na ekranie szczegóły odbiorcy może pozosta
 
 Poniższy obraz przedstawia przykład konfiguracji tworzenia odbiorcy.
 
-![Przykład konfiguracji odbiorcy.](media/default-customer-configuration2.png)
+![Przykład konfiguracji odbiorcy](media/default-customer-configuration2.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Omówienie kanałów](channels-overview.md)
 
-[Wymagania wstępne dotyczące konfiguracji kanału](channels-prerequisites.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Wymagania wstępne konfiguracji kanałów](channels-prerequisites.md)

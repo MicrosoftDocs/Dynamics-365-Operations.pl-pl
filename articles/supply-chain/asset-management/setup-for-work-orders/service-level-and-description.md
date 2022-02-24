@@ -1,10 +1,12 @@
 ---
 title: Poziom i opis usługi
 description: W tym temacie wyjaśniono poziomy usług i opisy w module Zarządzanie składnikami majątku.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetObjectServiceLevel, EntAssetWorkOrderStandardDescription, EntAssetWorkOrderServiceLevel, EntAssetServiceLevelLookup
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 32e6dd6ba7291e8ea1cb78eeed2d8e2fcec0f6dd3cbd039336be0169730101ba
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8bb56e5103bd9e18e88c164cd308e55d48e64823
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758695"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019386"
 ---
 # <a name="service-level-and-description"></a>Poziom i opis usługi
 
@@ -45,7 +47,7 @@ Podczas tworzenia zlecenia pracy można określić dla niego poziomy usług i do
 8. Aby określić godzinę zakończenia zlecenia pracy oprócz daty zakończenia, należy w polu **Ustaw godzinę zakończenia** wybrać opcję **tak**. Następnie wprowadź godzinę zakończenia w polu **Godzina zakończenia**. Ustawienie opcji na wartość **nie** spowoduje, że zostanie użyta bieżąca godzina dnia.
 9. Wybierz opcję **Zapisz**.
 
-![Strona Poziom usługi zleceń pracy.](media/19-setup-for-work-orders.png)
+![Strona Poziom usługi zleceń pracy](media/19-setup-for-work-orders.png)
 
 ## <a name="create-a-description"></a>Stwórz opis
 
@@ -53,6 +55,3 @@ Podczas tworzenia zlecenia pracy można określić dla niego poziomy usług i do
 2. Wybierz pozycję **Nowy**.
 3. W polu **Opis** wprowadź opis.
 4. Wybierz opcję **Zapisz**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,23 +2,26 @@
 title: Konfiguracja rozpoznawania przychodów
 description: W tym temacie opisano opcje konfiguracji dotyczące rozpoznawania przychodów oraz ich implikacje.
 author: kweekley
-ms.date: 11/24/2021
+manager: aolson
+ms.date: 08/24/2018
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: e8e29ec1ca5a02db67bb4baf522da96ec23c740f
-ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
+ms.openlocfilehash: 73acfc92777b8fe07b89bea782e13213d38000cd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7867227"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459707"
 ---
 # <a name="revenue-recognition-setup"></a>Konfiguracja rozpoznawania przychodów
 [!include [banner](../includes/banner.md)]
@@ -26,9 +29,7 @@ ms.locfileid: "7867227"
 Dodano nowy moduł **Rozpoznawanie przychodów** obejmujący elementy menu dla wszystkich wymaganych ustawień. W tym temacie opisano opcje konfiguracji oraz ich implikacje.
 
 > [!NOTE]
-> Funkcja Rozpoznawanie przychodów jest teraz włączona domyślnie za pomocą modułu Zarządzanie funkcjami. Jeśli organizacja nie korzysta z tej funkcji, można ją wyłączyć w obszarze roboczym **Zarządzanie funkcjami**.
->
-> Funkcja Rozpoznawanie przychodów, w tym funkcja pakietu, nie jest obsługiwana w kanałach Commerce (handel elektroniczny, punkt sprzedaży i biuro obsługi). Pozycje skonfigurowane pod kątem rozpoznawania przychodu nie powinny być dodawane do zamówień ani transakcji utworzonych w kanałach Commerce.
+> Funkcji Rozpoznawanie przychodów nie można włączyć za pomocą modułu Zarządzanie funkcjami. Obecnie można ją włączyć tylko przy użyciu kluczy konfiguracji.
 
 Moduł **Rozpoznawanie przychodów** ma następujące opcje konfiguracji:
 
@@ -40,16 +41,12 @@ Moduł **Rozpoznawanie przychodów** ma następujące opcje konfiguracji:
     - Grupy pozycji i zwolnione produkty
     - Definiowanie harmonogramu przychodów
     - Definiowanie ceny przychodu
-    - Ustawienia zapasów
 
-        - Definiowanie harmonogramu przychodów
-        - Definiowanie ceny przychodu
+        - Profile księgowania
+        - Pakiety
 
-    - Profile księgowania
-    - Pakiety
-
-        - Składniki pakietu
-        - Element pakietu
+    - Składniki pakietu
+    - Element pakietu
 
 - Ustawienia projektu
 
@@ -61,7 +58,7 @@ Pierwszy scenariusz występuje po spełnieniu wszystkich zobowiązań umownych, 
 
 Drugi scenariusz występuje, gdy zostanie utworzony arkusz po zmianie alokacji. Zmiana alokacji ma miejsce, gdy wiersz zamówienia sprzedaży zostanie dodany do wcześniej zafakturowanego zamówienia sprzedaży lub gdy tworzone jest nowe zamówienie sprzedaży zawierające wiersz będący częścią oryginalnej umowy. Jeśli faktura została zaksięgowana przed dodaniem nowego wiersza zamówienia sprzedaży, należy utworzyć wpis księgowania korygującego dla zaksięgowanej faktury dla odbiorcy.
 
-Arkusz jest ustawiany na stronie **Nazwa arkusza** (**Rozpoznawanie przychodów \> Ustawienia \> Nazwy arkusza**). Typ arkusza musi być określony jako **Rozpoznawanie przychodów**. 
+Arkusz jest ustawiany na stronie **Nazwa arkusza** (**Rozpoznawanie przychodów \> Ustawienia \> Nazwy arkusza**). Typ arkusza musi być określony jako **Rozpoznawanie przychodów**. Arkusz rozpoznawania przychodów umożliwia wybranie warstwy księgowania, na której ma być wykonywane księgowanie.
 
 ## <a name="parameters-for-revenue-recognition"></a>Parametry rozpoznawania przychodów
 
@@ -76,7 +73,7 @@ Ustawienia rozpoznawania przychodów są konfigurowane na karcie **Rozpoznawanie
     - Ustawienie tej opcji na wartość **Nie** ograniczy księgowanie transakcji korygującej do księgi głównej. Jeśli ta opcja jest ustawiona na **Nie**, w rozrachunkach z odbiorcami nie są tworzone dodatkowe dokumenty dla wewnętrznej korekty księgowej. Podczas opłacania faktury proces rozliczenia używa starego wpisu księgowania do księgowania rabatów gotówkowych lub wszelkich zrealizowanych zysków lub strat.
     - Ustawienie tej opcji na wartość **Tak** powoduje automatyczne tworzenie dokumentu wycofania i nowej faktury dla korygowanej transakcji w module Rozrachunki z odbiorcami. Ponieważ korekta jest wewnętrzną korektą księgowania, nowe dokumenty nie są wysyłane ani przekazywane odbiorcy. Dokument wycofania jest rozliczany z oryginalną fakturą, a nowa skorygowana faktura jest opłacana przez odbiorcę. Należy zwrócić uwagę, że wszystkie trzy dokumenty są wyświetlane w raportach, np. wyciągach odbiorców.
 
-[![Informacje o ustawieniach.](./media/revenue-recognition-setup-info.png)](./media/revenue-recognition-setup-info.png)
+[![Informacje o ustawieniach](./media/revenue-recognition-setup-info.png)](./media/revenue-recognition-setup-info.png)
 
 ## <a name="revenue-schedules"></a>Harmonogramy przychodów
 
@@ -86,7 +83,7 @@ Jeśli przychód jest rozpoznawany według punktów kontrolnych, zaleca się utw
 
 Harmonogramy przychodów są tworzone na stronie **Harmonogramy przychodów** (**Rozpoznawanie przychodów \> Ustawienia \> Harmonogramy przychodów**).
 
-[![Harmonogramy przychodów.](./media/revenue-recognition-revenue-schedules.png)](./media/revenue-recognition-revenue-schedules.png)
+[![Harmonogramy przychodów](./media/revenue-recognition-revenue-schedules.png)](./media/revenue-recognition-revenue-schedules.png)
 
 Wprowadź wartości opisowe w polach **Harmonogram przychodów** i **Opis**. Poniższe dodatkowe ustawienia są używane do tworzenia harmonogramu przychodów podczas księgowania faktury.
 
@@ -95,27 +92,20 @@ Wprowadź wartości opisowe w polach **Harmonogram przychodów** i **Opis**. Pon
 - **Automatyczne warunki umowy** — to pole wyboru należy zaznaczyć, jeśli daty rozpoczęcia i zakończenia umowy mają być ustawiane automatycznie. Te daty są ustawiane automatycznie tylko dla zwolnionych produktów typu przychodu **Obsługa po wygaśnięciu umowy**. Data rozpoczęcia umowy jest automatycznie ustawiana na żądaną datę wysyłki w wierszu zamówienia sprzedaży, a data zakończenia umowy jest automatycznie ustawiana na datę początkową powiększoną o liczbę miesięcy lub wystąpień zdefiniowaną w ustawieniach harmonogramu przychodów. Na przykład produkt w wierszu zamówienia sprzedaży dotyczy gwarancji na jeden rok. Domyślny harmonogram przychodów to **12M** (12 miesięcy) i dla tego harmonogramu przychodów jest zaznaczone pole wyboru **Automatyczne warunki umowy**. Jeśli wiersz zamówienia sprzedaży ma żądaną datę wysyłki w dniu 16 grudnia 2019 r., to domyślną datą rozpoczęcia umowy jest 16 grudnia 2019 r., a domyślną datą końcową umowy jest 15 grudnia 2020 r.
 - **Podstawa uznania** — podstawa uznania określa sposób alokacji ceny przychodu w poszczególnych wystąpieniach.
 
-    - **Miesięcznie według dni** — kwota jest alokowana na podstawie rzeczywistych dni w każdym miesiącu kalendarzowym.
+    - **Miesięcznie według dat** — kwota jest alokowana na podstawie rzeczywistych dni w każdym miesiącu.
     - **Miesięcznie** — kwota jest alokowana równomiernie między liczbą miesięcy zdefiniowaną w wystąpieniach.
     - **Wystąpienia** — kwota jest alokowana równomiernie między wystąpieniami, ale może zawierać dodatkowy okres, jeśli jako konwencję uznania została wybrana **Rzeczywista data rozpoczęcia**.
-    - **Okres obrachunkowy według dni** — kwota jest alokowana na podstawie rzeczywistych dni w każdym okresie obrachunkowym. 
 
-    Wyniki **Miesięcznie według dni** i **Okres obrachunkowy według dni** będą takie same, gdy okresy obrachunkowe są zgodne z miesiącami kalendarzowymi. Jedyny wyjątek ma miejsce w przypadku, gdy konwencja rozpoznawania ma wartość **Koniec miesiąca/okresu**, a pola **Data rozpoczęcia umowy** i **Data zakończenia** są puste w wierszu zamówienia sprzedaży.
-
-- **Konwencja uznania** — konwencja uznania określa daty ustawione w harmonogramie przychodów dla faktury.
+- **Konwencja uznania** — konwencja uznania określa domyślne daty określone w harmonogramie przychodów dla faktury.
 
     - **Rzeczywista data rozpoczęcia** — harmonogram jest tworzony przy użyciu daty początkowej umowy (w przypadku pozycji z obsługą po wygaśnięciu umowy \[PCS\]) lub daty faktury (dla podstawowych i nieistotnych pozycji).
-    - **1. dzień miesiąca/okresu** — data pierwszego wiersza harmonogramu to data rozpoczęcia umowy (lub data faktury). Jednak wszystkie kolejne wiersze harmonogramu są tworzone dla pierwszego dnia miesiąca lub okresu obrachunkowego.
+    - **1. dzień miesiąca** — data pierwszego wiersza harmonogramu to data rozpoczęcia umowy (lub data faktury). Jednak wszystkie kolejne wiersze harmonogramu są tworzone dla pierwszego dnia miesiąca.
     - **Podział półmiesięczny** — data pierwszego wiersza harmonogramu zależy od daty faktury. Jeśli faktura zostanie zaksięgowana między pierwszym a piętnastym dniem miesiąca, harmonogram przychodów jest tworzony przy użyciu pierwszego dnia miesiąca. Jeśli faktura zostanie zaksięgowana po szesnastym dniu miesiąca, harmonogram przychodów jest tworzony przy użyciu pierwszego dnia następnego miesiąca.
+    - **1. dzień następnego miesiąca** — data w harmonogramie to pierwszy dzień następnego miesiąca.
 
-        Nie można wybrać **Podziału w ciągu miesiąca**, jeśli podstawa rozpoznawania ma wartość **Okres obrachunkowy według dni**.
+Wybierz przycisk **Szczegóły harmonogramu przychodów**, aby wyświetlić okresy ogólne i wartości procentowe rozpoznawane w każdym okresie. Domyślnie **Wartość procentowa rozpoznawania** jest równo podzielona przez liczbę okresów. Jeśli podstawą rozpoznawania jest wartość **Miesięczna** lub **Liczba wystąpień**, można zmienić wartość procentową rozpoznawania. Podczas zmiany wartości procentowej rozpoznawania wyświetlany jest komunikat z ostrzeżeniem informującym, że suma nie jest równa 100 procent. Po wyświetleniu komunikatu można kontynuować edycję wierszy. Jednak suma wartości procentowych musi być równa 100 przed zamknięciem strony.
 
-    - **1. dzień następnego miesiąca/okresu** — data, która w harmonogramie zaczyna się pierwszego dnia następnego miesiąca lub okresu obrachunkowego.
-    - **Koniec miesiąca/okresu** — data pierwszego wiersza harmonogramu to data rozpoczęcia umowy (lub data faktury). Jednak wszystkie kolejne wiersze harmonogramu są tworzone dla ostatniego dnia miesiąca lub okresu obrachunkowego. 
-
-Wybierz przycisk **Szczegóły harmonogramu przychodów**, aby wyświetlić okresy ogólne i wartości procentowe rozpoznawane w każdym okresie. Domyślnie **Wartość procentowa rozpoznawania** jest równo podzielona przez liczbę okresów. Jeśli podstawą rozpoznawania jest wartość **Miesięcznie**, można zmienić wartość procentową rozpoznawania. Podczas zmiany wartości procentowej rozpoznawania wyświetlany jest komunikat z ostrzeżeniem informującym, że suma nie jest równa 100 procent. Po wyświetleniu tego komunikatu można kontynuować edycję wierszy. Jednak suma wartości procentowych musi być równa 100 przed zamknięciem strony.
-
-[![Szczegóły harmonogramu przychodów.](./media/revenue-schedule-details-2nd-scrn.png)](./media/revenue-schedule-details-2nd-scrn.png)
+[![Szczegóły harmonogramu przychodów](./media/revenue-recognition-revenue-schedule-details.png)](./media/revenue-recognition-revenue-schedule-details.png)
 
 ## <a name="inventory-setup"></a>Ustawienia zapasów
 
@@ -148,9 +138,9 @@ Grupy pozycji i zwolnione produkty można konfigurować za pomocą metody ceny m
     - **Maksymalna tolerancja** — umożliwia wprowadzenie procentu powyżej dozwolonej ceny mediany.
     - **Minimalna tolerancja** — umożliwia wprowadzenie procentu poniżej dozwolonej ceny mediany.
 
-Po zakończeniu konfigurowania ustawień zwolnionego produktu należy ręcznie zdefiniować cenę przychodu, wprowadzając rzeczywistą cenę wartości lub cenę mediany (jeśli jest używana metoda ceny mediany) na stronie **Ceny przychodu** (przejdź do **Rozpoznawanie przychodów \> Ustawienia \> Ustawienia zapasów \> Zwolnione produkty**, a następnie w okienku zadań na karcie **Sprzedaż** w grupie **Rozpoznawanie przychodów** wybierz **Ceny przychodu**).
+Po zakończeniu konfigurowania ustawień zwolnionego produktu należy ręcznie zdefiniować cenę przychodu, wprowadzając rzeczywistą cenę wartości lub cenę mediany (jeśli jest używana metoda ceny mediany) na stronie **Ceny przychodu** (przejdź do **Rozpoznawanie przychodów \> Ustawienia \> Ustawienia zapasów \> Zwolnione produkty**, a następnie w okienku akcji na karcie **Sprzedaż** w grupie **Rozpoznawanie przychodów** wybierz **Ceny przychodu**).
 
-[![Ceny przychodu.](./media/revenue-recognition-revenue-prices.png)](./media/revenue-recognition-revenue-prices.png)
+[![Ceny przychodu](./media/revenue-recognition-revenue-prices.png)](./media/revenue-recognition-revenue-prices.png)
 
 Cena przychodu, która jest ręcznie zdefiniowana na tej stronie, służy do ustalania alokacji ceny przychodu na poszczególnych zamówieniach sprzedaży na podstawie zdefiniowanych kryteriów. Każde kryterium jest dopasowywane do wiersza zamówienia sprzedaży w celu określenia ceny przychodu, która powinna zostać użyta w procesie alokacji.
 
@@ -192,7 +182,7 @@ Podczas konfiguracji elementu pakietu należy ustawić dwa pola na stronie **Zwo
 
 Składniki muszą być następnie przypisane do elementu nadrzędnego pakietu/BOM na stronie **Wersje BOM** (przejdź do **Rozpoznawanie przychodów \> Ustawienia \> Ustawienia zapasów i produktu \> Zwolnione produkty**, a następnie w okienku akcji na karcie **Konstruuj** w grupie **BOM** wybierz **Wersje BOM**). Aby uzyskać więcej informacji, zapoznaj się z dokumentacją konfiguracji elementów BOM.
 
-[![Zwolnione produkty, harmonogramy BOM.](./media/revenue-recognition-bom-scheduleds.jpg)](./media/revenue-recognition-bom-scheduleds.jpg)
+[![Zwolnione produkty, harmonogramy BOM](./media/revenue-recognition-bom-scheduleds.jpg)](./media/revenue-recognition-bom-scheduleds.jpg)
 
 Jeśli pakiet nadrzędny i składniki pakietu są ustawione jako alokowane, cena przychodu pakietu będzie dystrybuowana do składników na podstawie wartości procentowej marży przychodu.
 
@@ -202,6 +192,3 @@ Rozpoznawanie przychodów może być również używane dla zamówień sprzedaż
 
 - **Odroczony przychód faktury** (pod **Kontami przychodów**) — umożliwia wprowadzenie konta głównego dla ceny przychodu, która jest księgowana jako przychód odroczony (zamiast przychód). Cena przychodu jest odroczona, jeśli wiersz zamówienia sprzedaży ma harmonogram przychodów.
 - **Odroczony koszt** (pod **Kontami kosztów**) — umożliwia wprowadzenie konta głównego dla kwoty kosztu własnego sprzedaży, księgowanej do odroczonego kosztu własnego sprzedaży, jeśli przychód jest również odroczony.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

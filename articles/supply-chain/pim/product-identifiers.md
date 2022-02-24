@@ -1,31 +1,34 @@
 ---
 title: Identyfikatory produktów
 description: Ten temat zawiera informacje o różnych typach identyfikatorów produktów i wyjaśnia, jak można dodawać identyfikatory produktów w danych produktów.
-author: t-benebo
+author: cvocph
+manager: tfehr
 ms.date: 03/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductEntityIdentifierCode, EcoResProductListPage, EcoResProductDetailsExtended, EcoResProductVariantsPerCompany
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: benebotg
+ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 638b5c3b0c83f67f3d99331b6456efd1b8f5225a
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: c16818f1dc52c9e21130539213e7e8d1053fef1d
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063348"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529193"
 ---
 # <a name="product-identifiers"></a>Identyfikatory produktów
 
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 [!include [banner](../includes/banner.md)]
 
@@ -39,9 +42,9 @@ W Dynamics 365 Supply Chain Management podstawowym identyfikatorem produktu jest
 
 W wielu przypadkach numer produktu nie jest pierwotnie tworzony w Dynamics 365 Supply Chain Management. Zamiast tego jest kojarzony z produktem w systemie zarządzania cyklem życia produktu (PLM) lub systemie zarządzania danymi produktów (PDM). W takim przypadku są używane jednostki danych do importowania produktów i wariantów produktów. Supply Chain Management korzysta z numerów we wszystkich operacjach.
 
-Podczas wdrażania programu Supply Chain Management należy zwrócić szczególną uwagę na strategię numerowania produktów. Dobry system numerowania usprawnia logistykę i pomaga uniknąć błędów. Dobry identyfikator produktu powinien mieć zazwyczaj 20 znaków lub mniej, ale zalecane jest używanie mniej niż 10 znaków i nie więcej niż 5 znaków klasyfikacji. Można również używać aliasów do szybkiego wyszukiwania. Alias jest dodatkową nazwę reprezentującą klasyfikacje produktu.
+Podczas wdrażania programu Supply Chain Management należy zwrócić szczególną uwagę na strategię numerowania produktów. Dobry system numerowania usprawnia logistykę i pomaga uniknąć błędów. Dobry identyfikator produktu zawiera maksymalnie 15 znaków. Najlepiej, aby miał nie więcej niż 10 znaków i zawierał maksymalnie 5 znaków klasyfikujących. Można również używać aliasów do szybkiego wyszukiwania. Alias jest dodatkową nazwę reprezentującą klasyfikacje produktu.
 
-Jeśli jest używany Microsoft Dataverse, numer produktu w module Supply Chain Management jest także numerem produktu w formularzu Microsoft Dataverse. Warianty produktów są synchronizowane z usługą Dataverse jako odrębne produkty.
+Jeśli jest używany Common Data Service, numer produktu w module Supply Chain Management jest także numerem produktu w formularzu Common Data Service. Warianty produktów są synchronizowane z usługą Common Data Service jako odrębne produkty.
 
 ## <a name="item-number-and-product-dimensions"></a>Numer towaru i wymiary produktu
 
@@ -72,7 +75,7 @@ Alias może także zawierać identyfikator produktu odbiorcy lub dostawcy albo j
 
 Dla zwolnionych produktów można przechowywać numery, nazwy i opisy towarów używane przez odbiorcę lub dostawcę. Odwołania są wyświetlane w zewnętrznych dokumentach, takich jak zamówienia sprzedaży, zamówień zakupu, dokumentów dostawy i faktury. W bieżącej wersji programu Supply Chain Management odwołania zewnętrzne nie są pokazywane na stronach podstawowych operacji. Jedynym wyjątkiem jest numer towaru dostawcy. Ten numer jest wyświetlany w oknie dialogowym **Informacje o produktach**, jeśli dla zwolnionego produktu zdefiniowano domyślnego dostawcę.
 
-Zewnętrzne identyfikatory produktów można przechowywać z podziałem na zwolnione produkty, warianty zwolnionych produktów, odbiorców, grupy odbiorców lub dostawców lub grupy dostawców.
+Zewnętrzne identyfikatory produktów można przechowywać z podziałem na zwolnione produkty, warianty zwolnionych produktów, odbiorców lub grupy odbiorców albo dostawców lub grupy dostawców.
 
 Na stronie **Zwolnione produkty** wykonaj jedną z następujących czynności.
 
@@ -87,7 +90,7 @@ Na stronie **Zewnętrzne opisy pozycji** można skojarzyć numer towaru odbiorcy
 | opis | Nazwa, którą odbiorca łączy z towarem | Nazwa, którą dostawca łączy z towarem |
 | Zewnętrzny tekst pozycji | Opis nadany towarowi przez odbiorcę | Opis nadany towarowi przez dostawcę |
 
-Jeżeli wielu odbiorców lub dostawców używa tych samych numerów towarów (jak w przypadku skojarzenia zakupu lub grupy handlu), można utworzyć grupy odbiorców lub dostawców, aby uprościć zarządzanie zewnętrznymi informacjami o produktach.
+Jeżeli wielu odbiorców lub dostawców używa tych samych numerów towarów (jak na przykład w przypadku skojarzenia zakupu lub grupy handlu), można utworzyć grupy odbiorców lub dostawców, aby uprościć zarządzanie zewnętrznymi informacjami o produktach.
 
 - Dla grup odbiorców przejdź do okna **Sprzedaż** &gt; **Ustawienia** &gt; **Pozycje** &gt; **Zewnętrzny opis pozycji**, aby utworzyć i obsługiwać grupy i pokrewne numery towarów. Aby skojarzyć odbiorców z grupą, przejdź do okna **Rozrachunki z odbiorcami** &gt; **Odbiorcy** &gt; **Wszyscy odbiorcy**, a następnie na skróconej karcie **Ustawienia domyślne zamówienia sprzedaży** określ wartość w polu **Pozycja — Grupa odbiorców**.
 - Dla grup dostawców przejdź do okna **Zaopatrzenie i sourcing** &gt; **Ustawienia** &gt; **Grupa zewnętrznych opisów pozycji**, aby utworzyć i obsługiwać grupy i pokrewne numery towarów. Aby skojarzyć dostawców z grupą, przejdź do okna **Rozrachunki z dostawcami** &gt; **Dostawcy** &gt; **Wszyscy dostawcy**, a następnie na skróconej karcie **Ustawienia domyślne zamówienia zakupu** określ wartość w polu **Pozycja — Grupa dostawców**.
@@ -106,7 +109,7 @@ W celu obsługi kodów kreskowych na stronie **Zwolnione produkty** na karcie **
 
 W handlu elektronicznym jest bardzo ważne, aby wszystkie strony posługiwały się wspólnym językiem i odnosiły do produktów przy użyciu wspólnego zestawu identyfikatorów. Z tego względu niektóre branże opierają się na używaniu [GTIN](https://www.gs1.org/id-keys/gtin), który jest globalnym systemem numeracji towarów wykorzystującym kody kreskowe GS1.
 
-Zaleca się, aby zachować numer GTIN jako kod kreskowy. Jednak można także przechowywać je na stronie **Pozycja — numer GTIN**. Aby otworzyć tę stronę, na stronie **Zwolnione produkty** na karcie **Zarządzanie zapasami** w grupie **Magazyn** wybierz opcję **Numery GTIN**. Numer GTIN nie jest przechowywany jako numer globalny. Zamiast tego jest zarządzany przez firmę.
+Zaleca się, aby zachować numer GTIN jako kod kreskowy. Jednak można także przechowywać je na stronie **Pozycja — numer GTIN**. Aby otworzyć tę stronę, na stronie **Zwolnione produkty** na karcie **Zarządzanie zapasami** w grupie **Magazyn** wybierz opcję **Numery GTIN**. Należy zwrócić uwagę, że numer GTIN nie jest przechowywany jako numer globalny. Zamiast tego jest zarządzany przez firmę.
 
 W programie Supply Chain Management definiuje się warianty opakowań w operacjach magazynowych poprzez definiowanie określonych jednostek miary. Na przykład towar może być przechowywany w sztukach, pakietach po 6 sztuk, w zasobnikach po 18 sztuk lub w pełnych paletach. Konkretna jednostka miary zostanie zdefiniowana dla każdego z tych wariantów opakowań. Ponieważ numer GTIN jest zwykle powiązany z jednostką opakowania produktu, na stronie **Pozycja — numer GTIN** można przechowywać wiele kodów GTIN dla każdego produktu i jednostki miary. Jednak w danej firmie nie można użyć tego samego kodu GTIN więcej niż jeden raz, tzn. ustawić go dla różnych towarów lub wariantów produktu.
 
@@ -124,12 +127,12 @@ Niestety, nie istnieje standardowa funkcja umożliwiająca wyszukiwanie produkt�
 |-------------|--------------------|--------------------|----------|
 | Produkty wer. 2 | Numer produktu, alias produktu, nazwa produktu, opis produktu | Numer produktu, alias produktu, nazwa produktu, opis produktu | W zależności od ustawień jednostki oraz ustawień mechanizmu numerowania produktów numer produktu może być tworzony automatycznie podczas importu. |
 | Warianty produktu | Numer produktu, alias produktu, nazwa produktu, opis produktu | Numer produktu, alias produktu, nazwa produktu, opis produktu | W zależności od szablonu nazewnictwa produktów numer produktu może być tworzony automatycznie w czasie importu. Jednak można zaimportować dowolny unikatowy numer produktu, a ten numer produktu nie musi być zgodny ze strukturą szablonów nazewnictwa produktów. |
-| Tłumaczenia produktu | Nazwa produktu, opis produktu | Nazwa produktu, opis produktu | Ta jednostka zastępuje dowolny język. W przypadku zastąpienia nazwy lub opisu podstawowego języka osoby prawnej zmieniają się nazwa i opis samego produktu. |
+| Tłumaczenia produktu | Nazwa produktu, opis produktu | Nazwa produktu, opis produktu | Ta jednostka zastępuje dowolny język. Należy zauważyć, że w przypadku zastąpienia nazwy lub opisu podstawowego języka osoby prawnej zmieniają się nazwa i opis samego produktu. |
 | Tworzenie zwolnionego produktu (wersja 2) | Numer towaru, numer produktu, alias towaru| Numer towaru, numer produktu, alias towaru, alias produktu, nazwa produktu | Ta jednostka może sprawiać problemy, jeśli podczas tworzenia nowych zwolnionych produktów są używane numeracje. Obie numeracje — **Numer towaru** i **Numer produktu** — wywierają wpływ. Jednak numeracja **Numer towaru** dotyczy konkretnej firmy, natomiast numeracja **Numer produktu** jest globalna. Z tego względu nie zalecamy korzystania z numeracji **Numer towaru** podczas wdrażania nowych zwolnionych produktów. Oczywiście gdy jednostka jest używana do zwalniania istniejącego produktu, numer produktu musi być nadany w jednostce. Aby uzyskać więcej informacji, zobacz rozdział „Numeracje produktów i towarów” w tym temacie. |
 | Zwolnione warianty produktu | Numer towaru, wymiary produktu, numer produktu | Numer produktu, alias produktu, nazwa produktu, opis produktu, wymiary produktu | Podobnie jak jednostka **Warianty produktu**, ta jednostka może być stosowana do tworzenia nowych produktów, które są zgodne z szablonem nazewnictwa produktów lub używają własnych numerów produktu dla wariantów. |
 | Zewnętrzny opisy towaru dla odbiorców | Numer towaru u odbiorcy, nazwa towaru u odbiorcy, opis odbiorcy, konto odbiorcy | Numer towaru u odbiorcy, nazwa towaru u odbiorcy, opis odbiorcy, konto odbiorcy | Grupę odbiorców (na przykład zrzeszenie kupców) można zagregować w jedną grupę za pomocą jednostki **Grupy odbiorców — zewnętrzny opis pozycji**. |
 | Zewnętrzny opis pozycji dla dostawców | Numer towaru u dostawcy, nazwa towaru u dostawcy, opis dostawcy, konto dostawcy | Numer towaru u dostawcy, nazwa towaru u dostawcy, opis dostawcy, konto dostawcy | Grupę dostawców (na przykład zrzeszenie sprzedawców lub branżową organizację) można zagregować w jedną grupę za pomocą jednostki **Grupy dostawców — zewnętrzny opis pozycji**. |
-| Kod kreskowy towaru | Kod kreskowy | Kod kreskowy | Podczas importu trzeba utworzyć odwołanie do konfiguracji kodów kreskowych zdefiniowanej w systemie docelowym. Odwołania do importowanych kodów kreskowych są weryfikowane względem konfiguracji kodów kreskowych i odrzucane, jeśli kody kreskowe nie spełniają wymagań zdefiniowanych w tej konfiguracji. |
+| Kod kreskowy towaru | Kod kreskowy | Kod kreskowy | Należy zauważyć, że podczas importu trzeba utworzyć odwołanie do konfiguracji kodów kreskowych zdefiniowanej w systemie docelowym. Odwołania do importowanych kodów kreskowych są weryfikowane względem konfiguracji kodów kreskowych i odrzucane, jeśli kody kreskowe nie spełniają wymagań zdefiniowanych w tej konfiguracji kodów kreskowych. |
 | Kody zewnętrzne dla zwolnionych produktów | Kod zewnętrzny | Kod zewnętrzny, klasy kodów zewnętrznych, numer towaru | Kody zewnętrzne są powiązane z firmami. Podczas importu trzeba utworzyć odwołanie do zdefiniowanej klasy kodów. Do importowania klas kodów służy jednostka **Klasy kodów zewnętrznych dla zwolnionych produktów**. |
 | Kody zewnętrzne dla zwolnionych wariantów produktów | Kod zewnętrzny | Kod zewnętrzny, klasy kodów zewnętrznych, numer towaru, wymiary produktu | Kody zewnętrzne są powiązane z firmami. Podczas importu trzeba utworzyć odwołanie do zdefiniowanej klasy kodów. Do importowania klas kodów służy jednostka **Klasy kodów zewnętrznych dla zwolnionych produktów**. Ta jednostka odwołuje się do wariantów produktu według numeru towaru i wymiarów produktu. |
 | Kody zewnętrzne zwolnionych wariantów produktu według numeru identyfikacyjnego produktu | Kod zewnętrzny | Kod zewnętrzny, klasy kodów zewnętrznych, numer produktu | Kody zewnętrzne są powiązane z firmami. Podczas importu trzeba utworzyć odwołanie do zdefiniowanej klasy kodów. Do importowania klas kodów służy jednostka **Klasy kodów zewnętrznych dla zwolnionych produktów**. Ta jednostka odwołuje się do wariantów produktu według numeru produktu ustawionego w wariancie. (Od następnego głównego wydania) |
@@ -158,13 +161,13 @@ Poniższa tabela zawiera przegląd wyników importu i ręcznego tworzenia przy o
 | Numeracja Numer produktu | Numeracja Numer towaru | Mapowanie numeru towaru | Mapowanie numeru produktu | Wynik importu jednostki | Wynik ręcznego tworzenia | Wniosek |
 |--------------------------------|-----------------------------|----------------------------|-------------------------------|-------------------------|----------------------------|-----------|
 | Ręcznie = Nie | Ręcznie = Nie | Brak mapowania | Brak mapowania | Numery produktów używają numeracji **Numer produktu**. Numery towarów używają numeracji **Numer towaru**. | Numery produktów używają numeracji **Numer produktu**. Numery towarów używają numeracji **Numer towaru**. | W przypadku tej konfiguracji numery produktów są zgodne z sekwencją numerów produktów, a numery towarów są zgodne z sekwencją numerów towarów. Jednak ta konfiguracja nie będzie działać, jeśli istnieje więcej niż jedna pozycja (wiersz) do zaimportowania. |
-| Ręcznie = Nie | Ręczne = Tak | Wygeneruj automatycznie | Brak mapowania | Numery produktów i numery towarów używają numeracji **Numer towaru**. | Numery produktów i numery towarów używają numeracji **Numer produktu**. | Numery produktów i numery towarów używają sekwencji numerów produktu. Jest to zalecane podejście do importowania produktów masowych za pomocą jednostki danych o Zwolnionych tworzeniach produktów w wersji 2.<br><br>Tego podejścia można używać tylko podczas zbiorczego importowania elementów (kilku wierszy) i gdy nie tworzysz elementów za pomocą interfejsu użytkownika. Jeśli potrzebujesz zarówno importowania zbiorczego, jak i tworzenia produktów za pośrednictwem interfejsu użytkownika, zamiast tego użyj procedury z następnego wiersza tej tabeli. Aby przejść od stosowania metody importu zbiorczego do korzystania z interfejsu użytkownika do ręcznego importowania i tworzenia produktów, należy ręcznie dostosować **Następny numer** w sekwencji numerów pozycji, aby pasował do **Następnego numeru** w sekwencji numerów produktów. Następnie możesz przejść do podejścia w następnym wierszu tej tabeli. |
-| Ręcznie = Nie | Ręczne = Tak | Brak mapowania | Brak mapowania | Numery produktów i numery towarów używają numeracji **Numer produktu**. | Numery produktów i numery towarów używają numeracji **Numer produktu**. | Numery produktów i numery towarów używają sekwencji numerów produktu. Jednak ta konfiguracja nie będzie działać, jeśli istnieje więcej niż jedna pozycja (wiersz) do zaimportowania.<br><br>Tej metody należy użyć, jeśli trzeba zarówno importować produkty przy użyciu jednostek (jednocześnie można importować tylko jeden wiersz), jak i tworzyć produkty za pośrednictwem interfejsu użytkownika. |
+| Ręcznie = Nie | Ręczne = Tak | Wygeneruj automatycznie | Brak mapowania | Numery produktów i numery towarów używają numeracji **Numer towaru**. | Numery produktów i numery towarów używają numeracji **Numer produktu**. | Numery produktów i numery towarów używają sekwencji numerów produktu. Jest to zalecane podejście do importowania produktów masowych za pomocą jednostki danych o Zwolnionych tworzeniach produktów w wersji 2. |
+| Ręcznie = Nie | Ręczne = Tak | Brak mapowania | Brak mapowania | Numery produktów i numery towarów używają numeracji **Numer produktu**. | Numery produktów i numery towarów używają numeracji **Numer produktu**. | Numery produktów i numery towarów używają sekwencji numerów produktu. Jednak ta konfiguracja nie będzie działać, jeśli istnieje więcej niż jedna pozycja (wiersz) do zaimportowania. |
 | Ręczne = Tak | Nie dotyczy | Nie dotyczy | Wygeneruj automatycznie | Pojawia się komunikat o błędzie „Nie można wykryć numeracji”. | Według numeracji **Numer towaru** | To ustawienie nie jest obsługiwane dla importu. |
 
 ## <a name="product-entity-identifier-export-all-product-identifiers"></a>Identyfikator jednostki Produkt (eksport wszystkich identyfikatorów produktów)
 
-Model Identyfikator jednostki Produkt został utworzony, aby w wersji 1.0 usługi Dataverse umożliwić obsługę wszystkich identyfikatorów używanych do odwoływania się do produktu. Aby uprościć to zadanie, wszystkie identyfikatory są agregowane do jednej globalnej tabeli identyfikatorów, dzięki czemu mogą zostać wyeksportowane jako jeden model. Należy zauważyć, że ta wersja usługi Dataverse nie używa modelu identyfikatorów produktów. Z tego względu jednostka **Jednostka identyfikatora Common Data Service jednostki produktu** i ten proces mają ograniczone praktyczne zastosowanie i prawdopodobnie ulegną zmianie w przyszłości.
+Model Identyfikator jednostki Produkt został utworzony, aby w wersji 1.0 usługi CDS umożliwić obsługę wszystkich identyfikatorów używanych do odwoływania się do produktu. Aby uprościć to zadanie, wszystkie identyfikatory są agregowane do jednej globalnej tabeli identyfikatorów, dzięki czemu mogą zostać wyeksportowane jako jeden model. Należy zauważyć, że ta wersja usługi CDS nie używa modelu identyfikatorów produktów. Z tego względu jednostka **Jednostka identyfikatora Common Data Service jednostki produktu** i ten proces mają ograniczone praktyczne zastosowanie i prawdopodobnie ulegną zmianie w przyszłości.
 
 Tabela identyfikatorów produktów jest globalną tabelą wypełnianą na podstawie wszystkich tabel odwołań głównej firmy za pomocą cyklicznego zadania wsadowego. Należy wybrać firmę i hierarchię kategorii produktów jako definicję globalnego zakresu produktów głównych. Generowanie globalnej tabeli identyfikatorów produktów jest ograniczone do produktów zwalnianych do wybranej firmy oraz produktów będących elementami członkowskimi hierarchii produktów wybranej dla roli **Common Data Service** w hierarchii kategorii produktów.
 
@@ -172,11 +175,11 @@ W tym procesie zakłada się, że dane produktów głównych są przechowywane g
 
 Wykonaj następujące kroki, aby skonfigurować środowisko.
 
-1. Wybierz hierarchię kategorii dla usługi Dataverse. Jeśli na stronie **Skojarzenia ról hierarchii kategorii** żadna hierarchia nie jest skojarzona z rolą **Common Data Service**, należy utworzyć nowe skojarzenie. Wybierz rolę **Common Data Service**, a następnie skojarz hierarchię kategorii reprezentującą portfolio produktów, które powinno być synchronizowane z usługą Dataverse.
+1. Wybierz hierarchię kategorii dla usługi CDS. Jeśli na stronie **Skojarzenia ról hierarchii kategorii** żadna hierarchia nie jest skojarzona z rolą **Common Data Service**, należy utworzyć nowe skojarzenie. Wybierz rolę **Common Data Service**, a następnie skojarz hierarchię kategorii reprezentującą portfolio produktów, które powinno być synchronizowane z usługą CDS.
 2. Wybierz firmę dla globalnych danych głównych produktów. Na stronie **Parametry modułu Zarządzanie informacjami o produktach** na karcie **Atrybuty produktu** zaznacz główną firmę, w której są głównie przechowywane identyfikatory produktów i towarów.
 3. Zdefiniuj typy kodów i kody identyfikatorów, które powinny zostać wyeksportowane. Wybierz kolejno opcje **Zarządzanie informacjami o produktach** &gt; **Ustawienia** &gt; **Kody identyfikujące produkty**. Aby wygenerować typy kodów identyfikatorów, wybierz opcję **Generuj kody**. Wpis kodu typu zostanie wygenerowany dla każdego typu identyfikatora znalezionego w wybranej firmie.
 
-    Dla kodów kreskowych typ kodu jest generowany dla każdej konfiguracji kodów kreskowych. W przypadku kodów zewnętrznych typ kodu jest generowany dla każdej klasy kodów zewnętrznych.
+    Należy zwrócić uwagę, że dla kodów kreskowych typ kodu jest generowany dla każdej konfiguracji kodów kreskowych. W przypadku kodów zewnętrznych typ kodu jest generowany dla każdej klasy kodów zewnętrznych.
 
     Teraz można zarządzać listą typów kodów. Można zmienić kod, nazwę i opis. Ponadto można usuwać typy kodów. Usunięte typy kodów nie będą używane do wypełniania globalnych tabel identyfikatorów jednostek Produkt.
 
@@ -187,6 +190,3 @@ Teraz można używać jednostek danych **Jednostka identyfikatora Common Data Se
 ## <a name="related-topic"></a>Powiązany temat
 
 [Wyszukiwanie produktów i wariantów produktów podczas wprowadzania zamówień](search-products-product-variants.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

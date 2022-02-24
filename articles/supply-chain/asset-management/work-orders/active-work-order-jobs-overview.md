@@ -1,22 +1,29 @@
 ---
-# required metadata
 title: Omówienie zadań konserwacji aktywnych zleceń pracy
 description: W tym temacie omówienie zadań konserwacji aktywnych zleceń pracy w module Zarządzanie składnikami majątku.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/15/2019
-ms.topic: overview
-ms.prod: null
-ms.technology: null
-ms.search.form: null
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.assetid: null
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
-ms.search.validFrom: '2019-09-30'
+ms.author: riluan
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
+ms.openlocfilehash: 81e5611cd1491ee0c119f049e992afb4b6299991
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019486"
 ---
-
 # <a name="active-work-order-maintenance-jobs-overview"></a>Omówienie zadań konserwacji aktywnych zleceń pracy
 
 [!include [banner](../../includes/banner.md)]
@@ -31,10 +38,7 @@ Podany w kolumnie **%** numer przedstawia ukończenie zlecenia pracy jako warto�
 
 Na poniższej ilustracji pokazano przykład strony listy **Zadania konserwacji aktywnych zleceń pracy**.
 
-![Rysunek 1.](media/23-work-orders.png)
+![Rysunek 1](media/23-work-orders.png)
 
 Krótki opis przycisków na stronie listy **Zadania konserwacji aktywnych zleceń pracy** można znaleźć w temacie [Wprowadzenie do zleceń pracy](../work-orders/introduction-to-work-orders.md), w którym opisano identyczne przyciski.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

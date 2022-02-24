@@ -1,31 +1,37 @@
 ---
-title: Konfigurowanie kanału online
+title: Konfigurowanie kanału internetowego
 description: W tym temacie opisano, jak dodać utworzyć nowy kanał online w Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 02/04/2022
+manager: annbe
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: f32872fcc27e2e74300c4f18dfa08d666e4ad8a8
-ms.sourcegitcommit: fefe93f3f44d8aa0b7e6d54cc4a3e5eca6e64feb
+ms.openlocfilehash: 07225d97af76ea665fa28362cc205c6e8dc4fdf4
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8092119"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4415092"
 ---
-# <a name="set-up-an-online-channel"></a>Konfigurowanie kanału online
+# <a name="set-up-an-online-channel"></a>Konfigurowanie kanału internetowego
+
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano, jak dodać utworzyć nowy kanał online w Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Omówienie
 
 Moduł Dynamics 365 Commerce obsługuje wiele kanałów sprzedaży detalicznej. Te kanały sprzedaży detalicznej obejmują sklepy internetowe, internetowe serwisy sprzedażowe i sklepy sieci sprzedaży (nazywane także sklepami tradycyjnymi). Sklepy internetowe dają klientom możliwość zakupu produktów w sklepie internetowym detalisty oprócz sklepów detalicznych.
 
@@ -52,15 +58,11 @@ Aby utworzyć i skonfigurować nowy kanał online, wykonaj następujące kroki.
 
 Poniższy rysunek przedstawia utworzenie nowego kanału online.
 
-![Nowy kanał online.](media/channel-setup-online-1.png)
+![Nowy kanał online](media/channel-setup-online-1.png)
 
 Poniższy obraz przedstawia przykład kanału online.
 
-![Przykład kanału online.](media/channel-setup-online-2.png)
-
-## <a name="assign-the-channel-to-a-commerce-scale-unit"></a>Przypisywanie kanału do Commerce Scale Unit
-
-Twój nowy kanał musi być przypisany do Commerce Scale Unit. Aby uzyskać instrukcje, zobacz temat [Konfigurowanie kanałów do używania Commerce Scale Unit](../fin-ops-core/dev-itpro/deployment/initialize-retail-channels.md#configure-channels-to-use-commerce-scale-unit).
+![Przykład kanału online](media/channel-setup-online-2.png)
 
 ## <a name="set-up-languages"></a>Konfiguracja języków
 
@@ -68,7 +70,7 @@ Jeśli dana witryna handlu elektronicznego będzie obsługiwać wiele języków,
 
 ## <a name="set-up-payment-account"></a>Konfiguracja konta płatności
 
-W sekcji **Konto płatności** można dodać innego dostawcę płatności. Aby uzyskać informacje o ustawieniu łącznika płatności Adyen, zajrzyj do [Łącznik płatności usługi Dynamics 365 dla Adyen](./dev-itpro/adyen-connector.md).
+W sekcji **Konto płatności** można dodać innego dostawcę płatności. Aby uzyskać informacje o ustawieniu łącznika płatności Adyen, zajrzyj do [Łącznik płatności usługi Dynamics 365 dla Adyen](../retail/dev-itpro/adyen-connector.md).
 
 ## <a name="additional-channel-setup"></a>Konfiguracja kanałów dodatkowych
 
@@ -76,7 +78,7 @@ Dodatkowe zadania wymagane dla konfiguracji kanału online, obejmują Konfigurow
 
 Poniższy obraz pokazuje opcje ustawień **Metody dostawy**, **Metody płatności** i **Przypisania grupy realizacji** na karcie **Konfiguracja**.
 
-![Dodatkowe akcje konfiguracji kanału online.](media/channel-setup-online-3.png)
+![Dodatkowe akcje konfiguracji kanału online](media/channel-setup-online-3.png)
 
 ### <a name="set-up-payment-methods"></a>Konfigurowanie metod płatności
 
@@ -91,7 +93,7 @@ Aby skonfigurować metody płatności, należy wykonać następujące kroki dla 
 
 Poniższy obraz przedstawia przykład kart i metod płatności gotówką.
 
-![Przykład metod płatności.](media/channel-setup-retail-5.png)
+![Przykład metod płatności](media/channel-setup-retail-5.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Ustaw metody dostawy
 
@@ -105,7 +107,7 @@ Aby zmienić lub dodać metodę dostawy, wykonaj następujące kroki.
 
 Poniższy obraz przedstawia przykład kart i metodę dostawy.
 
-![Ustaw metody dostawy.](media/channel-setup-retail-7.png)
+![Ustaw metody dostawy](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-a-fulfillment-group-assignment"></a>Konfiguracja przypisania grupy realizacji
 
@@ -119,19 +121,16 @@ Aby skonfigurować przypisanie grupy realizacji, należy wykonać następujące 
 
 Poniższy obraz przedstawia przykład konfiguracji przypisania grupy realizacji.
 
-![Konfiguracja przypisania grupy realizacji.](media/channel-setup-retail-9.png)
+![Konfiguracja przypisania grupy realizacji](media/channel-setup-retail-9.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Omówienie kanałów](channels-overview.md)
 
-[Wymagania wstępne dotyczące konfiguracji kanału](channels-prerequisites.md)
+[Wymagania wstępne konfiguracji kanałów](channels-prerequisites.md)
 
 [Konfigurowanie kanału sprzedaży](channel-setup-retail.md)
 
 [Konfigurowanie kanału biura obsługi](channel-setup-callcenter.md)
 
-[Łącznik płatności usługi Dynamics 365 dla Adyen](./dev-itpro/adyen-connector.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Łącznik płatności usługi Dynamics 365 dla Adyen](../retail/dev-itpro/adyen-connector.md)

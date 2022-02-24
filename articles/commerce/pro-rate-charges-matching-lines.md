@@ -2,13 +2,16 @@
 title: Określona proporcjonalnie do opłat dodatkowych z nagłówka do wierszy sprzedaży uzgadniania
 description: W tym temacie opisano dodatkowe funkcje obliczania i stosowania opłat automatycznych dla zamówień kanału Commerce przy użyciu funkcji zaawansowanych opłat automatycznych.
 author: hhaines
+manager: annbe
 ms.date: 03/30/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 0de29e1817840c172f9235f2ee48251c4878a0573d270a60fde5b42ba6f88d31
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 048885cac7a316e144b2df072da405d74096203f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774516"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414815"
 ---
 # <a name="prorate-header-charges-to-matching-sales-lines"></a>Określona proporcjonalnie do opłat dodatkowych z nagłówka do wierszy sprzedaży uzgadniania
 
@@ -30,7 +33,7 @@ ms.locfileid: "6774516"
 
 W tym temacie opisano funkcje grupowania automatycznych opłat na poziomie nagłówka i określenia ich proporcji do wierszy sprzedaży handlu. Ta funkcja jest dostępna dla transakcji, które zostały utworzone w punkcie sprzedaży (POS) w Retail wersji 10.0.1 i sprzedaży, które zostały utworzone w biurze obsługi w Retail wersji 10.0.2.
 
-Ta funkcja jest dostępna tylko wtedy, gdy [zaawansowane automatyczne opłaty](/dynamics365/unified-operations/retail/omni-auto-charges) włączono za pomocą opcji na stronie **Parametry handlu**. Ponadto rozszerzona metoda obliczania automatycznych opłat może być stosowana tylko w przypadku zamówień sprzedaży utworzonych przez kanały handlu (punkt sprzedaży, biuro obsługi, platforma Dynamics e-Commerce).
+Ta funkcja jest dostępna tylko wtedy, gdy [zaawansowane automatyczne opłaty](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges) włączono za pomocą opcji na stronie **Parametry handlu**. Ponadto rozszerzona metoda obliczania automatycznych opłat może być stosowana tylko w przypadku zamówień sprzedaży utworzonych przez kanały handlu (punkt sprzedaży, biuro obsługi, platforma Dynamics e-Commerce).
 
 Ta nowa funkcja daje organizacjom większą elastyczność w taki sposób, że automatyczne opłaty poziomu nagłówka są obliczane i dodawane do transakcji sprzedaży.
 
@@ -38,7 +41,7 @@ W wersjach aplikacji, które są starsze niż wersja 10.0.1, opłaty automatyczn
 
 Na przykład automatyczne opłaty na poziomie nagłówka są zdefiniowane dla metody dostawy **99** i metody dostawy **11**. Zamówienie sprzedaży jest tworzone i metoda dostawy **99** jest zdefiniowana w nagłówku zamówienia. Jednak niektóre wiersze sprzedaży ustawiono tak, że są one wysłane przy użyciu metody dostawy **11**. W takim przypadku tylko opłaty poziomu nagłówka odnoszące się do metody dostawy **99** są brane pod uwagę oraz stosowane do zamówienia sprzedaży.
 
-W Commerce opłaty na poziomie nagłówka mają dodatkową funkcję, która pozwala zdefiniować [konfigurację opłat warstwowych](/dynamics365/unified-operations/retail/configure-call-center-delivery) na podstawie wartości zamówienia. Na przykład jeśli wartość zamówienia wynosi między $50.00 i $200.00, organizacja może chcieć naliczyć opłatę transportową $5.00. Jeśli jednak wartość zamówienia wynosi między $200.01 i $500.00, koszt transportu może wynosić $4.00.
+W Commerce opłaty na poziomie nagłówka mają dodatkową funkcję, która pozwala zdefiniować [konfigurację opłat warstwowych](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery) na podstawie wartości zamówienia. Na przykład jeśli wartość zamówienia wynosi między $50.00 i $200.00, organizacja może chcieć naliczyć opłatę transportową $5.00. Jeśli jednak wartość zamówienia wynosi między $200.01 i $500.00, koszt transportu może wynosić $4.00.
 
 Niektóre organizacje chcą mieć korzyści z warstwowego naliczania opłat w przypadku opłat na poziomie nagłówka. Jednak w scenariuszach obejmujących mieszane metody dostawy, również chcą mieć pewność, że opłaty są obliczane na podstawie dopasowania do metody dostawy określonej w każdym wierszu sprzedaży.
 
@@ -56,9 +59,9 @@ W tym scenariuszu opisano zachowanie, gdy opcja **Proporcjonalnie do wierszy spr
 
 W tym scenariuszu organizacja zdefiniowała opłaty na poziomie nagłówka dla relacji metod dostawy **99** i **11**. Dla metody dostawy **21** nie skonfigurowano automatycznych opłat.
 
-![Automatyczne opłaty dodatkowe dla metody dostawy 99, gdy jest wyłączona funkcja proporcjonalnego dopasowywania wartości wierszy.](media/99_disabled.png)
+![Automatyczne opłaty dodatkowe dla metody dostawy 99, gdy jest wyłączona funkcja proporcjonalnego dopasowywania wartości wierszy](media/99_disabled.png)
 
-![Automatyczne opłaty dodatkowe dla metody dostawy 11, gdy jest wyłączona funkcja proporcjonalnego dopasowywania wartości wierszy.](media/11_disabled.png)
+![Automatyczne opłaty dodatkowe dla metody dostawy 11, gdy jest wyłączona funkcja proporcjonalnego dopasowywania wartości wierszy](media/11_disabled.png)
 
 Zamówienie sprzedaży jest tworzone w Centrum obsługi z metodą dostawy **99**. To zamówienie zawiera pięć elementów. Dwa wiersze zamówienia zostały skonfigurowane do używania metody dostawy **99**, dwa wiersze zostały skonfigurowane do używania metody dostawy **11** i jeden wiersz został skonfigurowany do używania metody dostawy **21**, jak to pokazano w tabeli poniżej.
 
@@ -72,15 +75,15 @@ Zamówienie sprzedaży jest tworzone w Centrum obsługi z metodą dostawy **99**
 
 W tym scenariuszu całe zamówienie jest obliczana na podstawie tabeli automatycznych opłat dla metody dostawy **99**. Pełna suma wszystkich wierszy sprzedaży służy do określania warstwy dopasowania w konfiguracji automatycznych opłat, a ta opłata jest stosowana na poziomie nagłówka zamówienia. W tym przykładzie suma zamówienia wynosi $165,00, a opłata transportowa $15,00 jest uwzględniona w nagłówku zamówienia. Automatyczne opłaty ustawione dla metody dostawy **11** nie zostały zastosowane.
 
-W tym scenariuszu jeśli klient zwraca niektóre towary z zamówienia, i [kod opłaty został skonfigurowany tak, aby można było zwrócić pieniądze](/dynamics365/unified-operations/retail/omni-auto-charges#setup-and-configuration-2), całkowita kwota opłaty na poziomie nagłówka jest systematycznie stosowana do zwrotu, nawet jeśli klient zwraca tylko niektóre kupione przedmioty.
+W tym scenariuszu jeśli klient zwraca niektóre towary z zamówienia, i [kod opłaty został skonfigurowany tak, aby można było zwrócić pieniądze](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges#setup-and-configuration-2), całkowita kwota opłaty na poziomie nagłówka jest systematycznie stosowana do zwrotu, nawet jeśli klient zwraca tylko niektóre kupione przedmioty.
 
 ### <a name="scenario-2"></a>Scenariusz 2
 
 W tym scenariuszu opłaty na poziomie nagłówka są zdefiniowane dla relacji metod dostawy **99** i **11**. Jednak opcja **Proporcjonalnie do wierszy sprzedaży** jest ustawiona jako **Tak** dla tych tabel automatycznych opłat.
 
-![Automatyczne opłaty dodatkowe dla metody dostawy 99, gdy jest włączona funkcja proporcjonalnego dopasowywania wartości wierszy.](media/99_enabled.png)
+![Automatyczne opłaty dodatkowe dla metody dostawy 99, gdy jest włączona funkcja proporcjonalnego dopasowywania wartości wierszy](media/99_enabled.png)
 
-![Automatyczne opłaty dodatkowe dla metody dostawy 11, gdy jest włączona funkcja proporcjonalnego dopasowywania wartości wierszy.](media/11_enabled.png)
+![Automatyczne opłaty dodatkowe dla metody dostawy 11, gdy jest włączona funkcja proporcjonalnego dopasowywania wartości wierszy](media/11_enabled.png)
 
 Ten scenariusz używa tego samego zamówienia sprzedaży zawierającego pięć wierszy. Metoda dostawy w nagłówku zamówienia jest ustawiona jako **99**, ale metody dostawy dla poszczególnych towarów w zamówieniu sprzedaży są ustawione, jak pokazano w poniższej tabeli.
 
@@ -130,9 +133,9 @@ Ponieważ konfiguracja automatycznej opłaty jest ustawiona tak, aby proporcjona
     - Łączna wartość produktu = 15 USD
     - **Wysokość opłaty = $0** (nie skonfigurowano automatycznych opłat dla tej kombinacji odbiorcy i metody dostawy.)
 
-    ![Opłaty za metodę dostawy 11 mieszczą się w podkreślonej warstwie.](media/step2mode11.png)
+    ![Opłaty za metodę dostawy 11 mieszczą się w podkreślonej warstwie](media/step2mode11.png)
 
-    ![Opłaty za metodę dostawy 99 mieszczą się w podkreślonej warstwie.](media/step2mode99.png)
+    ![Opłaty za metodę dostawy 99 mieszczą się w podkreślonej warstwie](media/step2mode99.png)
 
 3. System oblicza wartość opłaty, która ma być stosowana dla każdego wiersza, na podstawie mechanizmu proporcji, który uwzględnia proporcjonalną wartość wiersza w odniesieniu do łącznej wartości produktu w grupie.
 
@@ -163,7 +166,7 @@ Ponieważ konfiguracja automatycznej opłaty jest ustawiona tak, aby proporcjona
 
 W związku z tym na przykład do elementu 81334 zostanie przypisana opłata transportowa $5.62. Opłaty te można wyświetlać na stronie **Obsługa opłat** w wierszu sprzedaży. Na poniższej ilustracji przedstawiono, jak wygląda ta strona dla elementu 81334.
 
-![Proporcjonalne opłaty w wierszu sprzedaży dla elementu 81334.](media/proratedlinecharge.png)
+![Proporcjonalne opłaty w wierszu sprzedaży dla elementu 81334](media/proratedlinecharge.png)
 
 W przypadku używania tej metody obliczania w sytuacji zwrotu części zamówienia, jeżeli kod opłaty kwalifikuje do zwrotu, tylko część opłaty przypisanej do tego wiersza zostanie zwrócona, gdy klient odda towar.
 
@@ -172,6 +175,3 @@ W przypadku używania tej metody obliczania w sytuacji zwrotu części zamówien
 [Wielokanałowe zaawansowane opłaty automatyczne](omni-auto-charges.md)
 
 [Włączanie i konfigurowanie opłat automatycznych według kanałów](auto-charges-by-channel.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

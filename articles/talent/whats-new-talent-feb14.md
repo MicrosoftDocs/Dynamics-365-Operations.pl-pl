@@ -52,6 +52,3 @@ Wprowadzono zmianę w domyślnym kodzie "Powód rozwiązania umowy" przy dodawan
 
 ### <a name="new-entity-created-for-job-compensation-levels"></a>Utworzono nową jednostkę dla poziomów wynagrodzenia
 Utworzono nową jednostkę DMF. Jednostka zapewnia tworzenie i aktualizacje poziomów wynagrodzeń, wartości rynkowej i informacji dotyczących badania dla każdego stanowiska zdefiniowanego w systemie.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

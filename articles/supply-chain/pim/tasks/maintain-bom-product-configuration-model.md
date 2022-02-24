@@ -1,24 +1,26 @@
 ---
 title: Obsługa BOM dla modelu konfiguracji produktu
 description: Wykonanie tej procedury wymaga istnienia modelu konfiguracji produktu.
-author: t-benebo
+author: ShylaThompson
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCProductConfigurationModelDetails, PCBOMLineDetails, InventItemIdLookupSimple
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bd78b06f10d0c9b1df57dacdd824b06ebe414b3b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 267ac5447d36f63094fdb57c0d450e4d79cf138b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577295"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966862"
 ---
 # <a name="maintain-bom-for-a-product-configuration-model"></a>Obsługa BOM dla modelu konfiguracji produktu
 
@@ -26,34 +28,32 @@ ms.locfileid: "7577295"
 
 Wykonanie tej procedury wymaga istnienia modelu konfiguracji produktu. Do utworzenia tej procedury użyto modelu Głośnik o wysokiej jakości zawartego w firmie demonstracyjnej USMF.
 
-## <a name="add-a-bom-line"></a>Dodawanie wiersza BOM
 
-1. Przejdź do **Zarządzanie informacjami o produktach \> Produkty \> Modele konfiguracji produktów**.
-1. Na liście znajdź i zaznacz odpowiedni rekord.
+## <a name="add-a-bom-line"></a>Dodawanie wiersza BOM
+1. Kliknij opcję Definicja modelu wariantu produktu.
+2. Kliknij opcję Modele konfiguracji produktu.
+3. Na liście znajdź i zaznacz odpowiedni rekord.
     * Do wykonania tej procedury wybierz towar Głośnik o wysokiej jakości.  
-1. Na liście wybierz łącze w wybranym wierszu.
-1. Rozwiń sekcję **Wiersze BOM**.
-1. Wybierz opcję **Dodaj**.
-1. W polu **Nazwa** wpisz wartość.
-1. W polu **Opis** wpisz wartość.
-1. Wybierz opcję **Zapisz**.
+4. Na liście kliknij łącze w wybranym wierszu.
+5. Rozwiń sekcję Wiersze BOM.
+6. Kliknij przycisk Dodaj.
+7. W polu Nazwa wpisz wartość.
+8. Wypełnij pole Opis.
+9. Kliknij przycisk Zapisz.
 
 ## <a name="add-bom-line-details"></a>Dodawanie szczegółów wiersza BOM
-
-1. Wybierz opcję **Szczegóły wiersza BOM**.
-2. W polu **Kod towaru** wpisz lub wprowadź wartość.
+1. Kliknij opcję Szczegóły wiersza BOM.
+2. W polu Numer towaru wprowadź lub wybierz wartość.
     * Można na przykład wybrać towar M0055.  
     * Dla każdej właściwości wiersza BOM można wybrać, czy ma ona wartość stałą czy też jest mapowana do atrybutu.  
-3. Zaznacz pole wyboru **Ustaw**.
-4. W polu **Obliczanie** wybierz opcję *Tak*.
-    * Ustawienie we właściwości **Obliczanie** wartości *Tak* gwarantuje, że wiersz BOM zostanie uwzględniony w obliczeniach kosztów.  
-5. Kliknij kartę **Konfiguracja**.
-6. Zaznacz pole wyboru **Ustaw**.
-7. W polu **Ilość** wpisz liczbę.
+3. Zaznacz pole wyboru Ustaw.
+4. W polu Obliczanie wybierz opcję Tak.
+    * Ustawienie we właściwości Obliczanie wartości Tak gwarantuje, że wiersz BOM zostanie uwzględniony w obliczeniach kosztów.  
+5. Kliknij kartę Ustawienia.
+6. Zaznacz pole wyboru Ustaw.
+7. Wprowadź liczbę w polu Ilość.
     * Pole ilości określa, jaka część towaru zostanie uwzględniona na liście składowej. To pole jest idealnym kandydatem do mapowania atrybutów.  
-8. Wybierz kartę **Wymiary**.
+8. Kliknij kartę Wymiar.
     * Sprawdź, czy którykolwiek wymiar produktu jest aktywny i w związku z tym musi mieć przypisaną wartość lub atrybut.  
-9. Kliknij przycisk **OK**.
+9. Kliknij przycisk OK.
 
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

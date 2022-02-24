@@ -2,9 +2,11 @@
 title: Planowanie hierarchii organizacyjnej
 description: Przed skonfigurowaniem organizacji i hierarchii organizacyjnych upewnij się, że wiesz, jak najlepiej modelować firmę.
 author: sericks007
-ms.date: 02/19/2021
+manager: AnnBe
+ms.date: 08/28/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMHierarchyManager, OMLegalEntity, OMOperatingUnit
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef906c0d60639da763f2a9c1e1adf508b0849b8978dff17cd0e7b3936fc4779e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 986d8986375aac9454483d89c46c1b2b6f52e68e
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771879"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694696"
 ---
 # <a name="plan-your-organizational-hierarchy"></a>Planowanie hierarchii organizacyjnej
 
@@ -164,7 +166,7 @@ Jednostki operacyjne używają kontekstu kraju firmy nadrzędnej. Operacyjne jed
 
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a>Jeśli organizacja jest modelowana jako firma
 
-Dla krajów/regionów, które są obsługiwane, można utworzyć większość raportów ustawowych. 
+Dla krajów/regionów, które są obsługiwane, można utworzyć większość raportów ustawowych. Aby uzyskać informacje o tym, które raporty są dostępne dla każdego kraju/regionu, zobacz [Microsoft Dynamics Localization Portal](https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC). (Wymagane jest logowanie w CustomerSource).
 
 > [!NOTE]
 > Warstwy księgowania w księdze głównej pozwalają na dodawanie wpisów korygujących dla firmy nadrzędnej, która stosuje inne standardy księgowania niż firma podrzędna. Na przykład dla firmy stosującej zasady ogólnie przyjęte w Wielkiej Brytanii (UK GAAP) można dokonać wpisów korygujących w warstwie księgowania. Te wpisy mogą być konsolidowane dla firmy nadrzędnej, która używa ogólnie przyjętych zasad rachunkowości (GAAP) w Stanach Zjednoczonych. Wpisy korygujące nie wpływają na raportowanie UK GAAP.
@@ -239,6 +241,3 @@ Podczas implementowania hierarchii organizacyjnej należy wziąć pod uwagę nas
 - Przed modelowaniem głównych scenariuszy restrukturyzacji użyj efektywnych dat hierarchii w celu wykonania analizy wpływu i testów weryfikacyjnych.
 - Użyj trybu roboczego w celu zmiany hierarchii, zanim opublikujesz nową wersję w środowisku produkcyjnym.
 - Ogranicz liczbę osób, które mają uprawnienia do dodawania i usuwania organizacji z hierarchii w środowisku produkcyjnym. Mniejsza liczba zmniejsza ryzyko, że mogą wystąpić kosztowne błędy i trzeba będzie dokonywać korekt.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

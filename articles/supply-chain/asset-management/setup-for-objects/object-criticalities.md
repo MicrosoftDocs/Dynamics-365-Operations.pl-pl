@@ -1,10 +1,12 @@
 ---
 title: Typy krytyczności składnika majątku
 description: W tym temacie objaśniono typy krytyczności składników majątku w module Zarządzanie składnikami majątku.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetCriticality, EntAssetObjectCriticality
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9edf55c22375a66fda04ae7ff76d7a0a191140e5ffb3a377b9ac1a7ba604a8d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9d2c5e8b6676abf03fe0d3de8b23f125713d6f2
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776927"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021711"
 ---
 # <a name="asset-criticality-types"></a>Typy krytyczności składnika majątku
 
@@ -40,7 +42,7 @@ Aby skonfigurować krytyczność, należy najpierw utworzyć typy krytyczności,
 4. W polu **Nazwa** wprowadź nazwę typu krytyczności.
 5. W polu **Współczynnik** wpisz współczynnik. Ten współczynnik jest używany podczas obliczania planowania zleceń pracy w celu określenia rekordu krytyczności, który ma zostać użyty. (Zawsze jest używany rekord o najwyższym współczynniku). To ustawienie ma zastosowanie, jeśli, jak to pokazano na poniższej ilustracji, zostaną utworzone wiersze krytyczności, które mają taką samą wartość krytyczności.
 
-    ![Strona typów krytyczności.](media/23-setup-for-objects.png)
+    ![Strona typów krytyczności](media/23-setup-for-objects.png)
 
 ## <a name="set-up-asset-criticalities"></a>Konfigurowanie krytyczności składników majątku
 
@@ -59,6 +61,3 @@ Aby skonfigurować krytyczność, należy najpierw utworzyć typy krytyczności,
 - Krytyczność na zleceniu pracy jest przeliczana za każdym razem, gdy wiersz zlecenia pracy jest dodawany lub usuwany ze zlecenia pracy.
 - Jeśli zlecenie pracy zawiera kilka zadań pracy, najwyższy poziom krytyczności, zgodnie z polem **Współczynnik** na stronie **Typy krytyczności**, jest zawsze używana w zleceniu pracy.
 - Ogólnie rzecz biorąc, krytyczność składników majątku można zmienić na przestrzeni czasu. Krytyczność może mieć wpływ na zakup nowego sprzętu, remonty i tak dalej. Rozważ ponowną ocenę krytyczności składników majątku w regularnych odstępach czasu (np. raz na rok lub co dwa lata), aby upewnić się, że definicje krytyczności odpowiadają aktualnej konfiguracji produkcji.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

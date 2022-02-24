@@ -1,32 +1,30 @@
 ---
-title: Klient rozłącza się
-description: W tym temacie wyjaśniono, co należy zrobić, jeśli klient zostaje odłączony od własnego środowiska.
-author: twheeloc
-ms.date: 08/19/2021
+title: Klient aplikacji rozłącza się
+description: W tym artykule wyjaśniono, co należy zrobić, jeśli klient zostaje odłączony od własnego środowiska i nie może ustalić, dlaczego.
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b15c5db19f1b07e3d469986ac700138ecb1d1525
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 2088706baf8735fa371960955a2ffc3240ccac76
+ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071142"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "4420153"
 ---
-# <a name="client-disconnects"></a>Klient rozłącza się
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+# <a name="client-disconnects"></a>Klient aplikacji rozłącza się
 
 **Szczegóły środowiska** 
 
@@ -54,6 +52,3 @@ Microsoft Dynamics 365 Human Resources rozłącza użytkowników, gdy są otwart
 Upewnij się, że tylko jedno środowisko jest otwarte w danej chwili dla danego typu przeglądarki. Użytkownicy mogą otwierać wiele sesji w tym samym środowisku (to znaczy wiele kart w tej samej przeglądarce).
 
 Użytkownicy, którzy chcą do przechodzić między dwiema środowiskami w tym samym czasie powinni otwierać każde środowisko w innym typie przeglądarki. (Na przykład użytkownik A może wyświetlić środowisko 1 w przeglądarce Chrome i środowisko 2 w Microsoft Edge).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

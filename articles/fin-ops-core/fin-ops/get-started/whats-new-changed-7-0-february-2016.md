@@ -2,9 +2,11 @@
 title: Nowości i zmiany w systemie Dynamics AX 7.0 (luty 2016)
 description: W tym artykule opisano nowe oraz zmienione funkcje dostępne w systemie Microsoft Dynamics AX 7.0. Ta wersja zawiera funkcje zarówno platformy, jak i aplikacji. Została wydana w lutym 2016 r.
 author: sericks007
+manager: AnnBe
 ms.date: 10/23/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bcc69cbf418131d0b1747f1c904de3188d7ba84216cb3145607b45553263244c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3c1b63ba623eb1699938476825a77fd40d838142
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757226"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797226"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Nowości i zmiany w systemie Dynamics AX 7.0 (luty 2016)
 
@@ -732,7 +734,7 @@ Usługa Retail Server i zarządzanie danymi pozwala odbiorcom i firmom tworzy je
 </tr>
 <tr>
 <td>Przenoszenie danych miedzy zapleczem systemu Microsoft Dynamics AX i kanałami za pomocą usługi Commerce Data Exchange.</td>
-<td>Commerce Data Exchange to system, który przesyła dane między systemem Microsoft Dynamics AX a kanałami sieci sprzedaży, np. między sklepami internetowymi i tradycyjnymi. Aby uzyskać więcej informacji, zobacz <a href="/dynamicsax-2012/appuser-itpro/commerce-data-exchange">Commerce Data Exchange [AX 2012]</a>.</td>
+<td>Commerce Data Exchange to system, który przesyła dane między systemem Microsoft Dynamics AX a kanałami sieci sprzedaży, np. między sklepami internetowymi i tradycyjnymi. Aby uzyskać więcej informacji, zobacz <a href="https://technet.microsoft.com/library/dn741440.aspx">Commerce Data Exchange [AX 2012]</a>.</td>
 <td>Funkcje pokrywają się z systemem Microsoft Dynamics AX 2012 CU8. Warto jednak pamiętać o następujących szczegółach:
 <ul>
 <li>Usługa Commerce Data Exchange została ponownie zaprogramowana pod kątem chmury.</li>
@@ -1031,6 +1033,3 @@ Nie dodano żadnych nowych funkcji.
 [Nowości i zmiany w rozwiązaniu Finance and Operations — strona główna](whats-new-changed.md)
 
 [Nowe przewodniki po zadaniach (luty 2016 r.)](new-task-guides-available-february-2016.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

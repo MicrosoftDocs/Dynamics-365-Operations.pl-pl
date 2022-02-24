@@ -1,10 +1,12 @@
 ---
 title: Raport zlecenia pracy
 description: W tym temacie opisano raporty zlecenia pracy w module Zarządzanie składnikami majątku.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3686629af4116df6fc7ea530216ec0d12ecd60bab8f7150e0d2a3917bc12adaf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 93544f0459641c5e72ec6a0af10f0db9718ad799
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6780253"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022369"
 ---
 # <a name="work-order-report"></a>Raport zlecenia pracy
 
@@ -42,12 +44,9 @@ Istnieje możliwość wygenerowania raportu zlecenia pracy, który pokazuje szcz
 
 Na poniższej ilustracji przedstawiono przykład konfiguracji parametrów raportu.
 
-![Rysunek 1.](media/20-work-orders.png)
+![Rysunek 1](media/20-work-orders.png)
 
 Na poniższej ilustracji pokazano przykład raportu dotyczącego zlecenia pracy, który jest generowany na podstawie tej konfiguracji.
 
-![Rysunek 2.](media/21-work-orders.png)
+![Rysunek 2](media/21-work-orders.png)
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

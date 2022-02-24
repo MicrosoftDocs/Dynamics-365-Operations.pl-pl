@@ -1,37 +1,36 @@
 ---
 title: Konfigurowanie kursów szkoleniowych
 description: Administratorzy zasobów ludzkich i menedżerowie mogą korzystać z funkcji kursów do obsługi informacji o szkoleniu oferowanym pracownikom.
-author: twheeloc
-ms.date: 08/26/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 06/24/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HcmCourseType, HcmCourseTypeGroup, HRMCourseTable, HcmLearningWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Human Resources
 ms.custom: 7532
 ms.assetid: a6950c29-8b3e-45b2-9084-ddfb1317ffaa
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: c66459a044419535d66875cddac7eb73af744ca7
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 253f0d07679b6327a0ed1e3cc20ede66249750b8
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066757"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420134"
 ---
 # <a name="set-up-training-courses"></a>Konfigurowanie kursów szkoleniowych
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
 Administratorzy zasobów ludzkich i menedżerowie mogą korzystać z funkcji kursów do obsługi informacji o szkoleniu oferowanym pracownikom.
 
-##  <a name="set-up-prerequisites"></a> Ustawianie wymagań wstępnych
+ <a name="set-up-prerequisites"></a> Ustawianie wymagań wstępnych
+---------------------
 
 Następujące informacje są wymagane i muszą być skonfigurowane przed utworzeniem kursów.
 -   **Typy kursów**
@@ -83,7 +82,7 @@ Dla każdego kursu można wykonać następujące zadania.
 - Określenie minimalnej i maksymalnej liczby uczestników
 - Przypisanie lokalizacji i sali
 - Hotele rekomendowane uczestnikom kursu
-- Utworzenie opisu kursu, który później może zostać zareklamowany w module **Samoobsługa pracownika etatowego**
+- Utworzenie opisu kursu, który później może zostać zareklamowany w Samoobsłudze pracownika
 
   >**Uwaga** Kurs można usunąć tylko wtedy, gdy nikt się na niego nie zarejestrował. 
 
@@ -129,7 +128,8 @@ W poniższej tabeli wymieniono możliwe stany i akcje kursu, które można wykon
 ## <a name="course-participants"></a>Uczestnicy kursu
 Uczestnikami kursu są pracownicy, którzy biorą udział w kursie lub wydarzeniu. Można zarejestrować uczestników tylko na kursach otwartych. Minimalną i maksymalną liczbę uczestników, jaką można zarejestrować na kurs, określa się na skróconej karcie **Ogólne** na stronie **Kursy**.
 
-## <a name="workflow"></a>System Workflow
+<a name="workflow"></a>System Workflow
+--------
 
 Rejestracje pracowników, którzy zapisali się na kurs poprzez stronę **Samoobsługa pracownika etatowego**, mogą zostać przekierowane przez przepływ pracy celem zatwierdzenia. Możesz przypisać przepływ pracy do kursu na skróconej karcie **Ogólne** na stronie **Kursy**.
 
@@ -137,6 +137,3 @@ Rejestracje pracowników, którzy zapisali się na kurs poprzez stronę **Samoob
 
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

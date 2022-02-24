@@ -1,10 +1,12 @@
 ---
 title: Amortyzacja ręczna
 description: Ten artykuł zawiera omówienie metody amortyzacji Amortyzacja ręczna.
-author: moaamer
+author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: roschlom
 ms.custom: 13811
 ms.assetid: b0e837c9-515a-4aed-9060-5ec94f37edeb
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b5b62bbdd5d745bc9d0745cc6fa6d6e8034a61e3
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 228e6c94042942a26793eb0bebc1186dd4767e7f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674834"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969036"
 ---
 # <a name="manual-depreciation"></a>Amortyzacja ręczna
 
@@ -30,11 +32,11 @@ Ten artykuł zawiera omówienie metody amortyzacji Amortyzacja ręczna.
 
 Po skonfigurowaniu profilu amortyzacji środków trwałych i wybraniu opcji **Ręczna** w polu **Metoda** na stronie **Profile amortyzacji**, amortyzacja środków trwałych przypisanych do tego profilu amortyzacji jest określana przez wartości procentowe wprowadzone dla poszczególnych interwałów w roku kalendarzowym. Interwały, dla których zostały ustawione wartości procentowe, są księgowane na podstawie wartości wybranej w polu **Częstotliwość okresu** na skróconej karcie **Ogólne** na stronie **Profile amortyzacji**. Można wybrać następujące wartości:
 
-- Co rok
-- Miesięczne
-- Kwartalna
-- Półrocznie
-- Dziennie
+-   Co rok
+-   Miesięczne
+-   Kwartalna
+-   Półrocznie
+-   Dziennie
 
 Po wybraniu częstotliwości okresu kliknij opcję **Planowanie ręczne** i ustaw wartości procentowe dla poszczególnych interwałów księgowania. Harmonogramy ręczne i interwały księgowania razem określają kwotę amortyzacji, co pokazano w poniższych przykładach w tym artykule. Amortyzacja ręczna jest zawsze obliczana jako wartość procentowa ceny nabycia. W przypadku amortyzacji ręcznej suma wartości procentowych wprowadzonych w interwałach amortyzacji nie musi wynosić 100%. Amortyzacja ręczna jest to elastyczna metoda amortyzacji, która jest zwykle używana do definiowania dodatkowego profilu amortyzacji na stronie **Księga**, jak np. amortyzacji nieokresowej dla celów specjalnych (np. podatkowych).
 
@@ -73,6 +75,3 @@ Suma wartości procentowych dla wszystkich interwałów nie musi być równa 100
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,42 +1,43 @@
 ---
 title: Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (14 maja 2020 r.)
 description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Human Resources w dniu 14 maja 2020 roku.
-author: andreabichsel
+author: Darinkramer
+manager: AnnBe
 ms.date: 05/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: jaredha
+ms.author: dkrame
 ms.search.validFrom: 2020-05-14
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cb4693f3c856e7abcc39cbd658183d01ec98a066
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 76ca497cc7fabf737c8a0ee71363f22fd4201ea8
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063754"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528504"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-14-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (14 maja 2020 r.)
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Dynamics 365 Human Resources. Zmiany dotyczą kompilacji o numerze 8.1.3244. Liczby w nawiasach w niektórych nagłówkach odnoszą się do numerów pomocy w usługach Lifecycle Services (LCS).
 
 ## <a name="platform-changes"></a>Zmiany w platformie
 
-Zmiany w platformie są uwzględniane w wydaniu z danego tygodnia. Aby uzyskać więcej informacji, zobacz temat [Aktualizacje platformy dla wersji 10.0.10 aplikacji Finanse i Działania (maj 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md). Ta wersja zawiera poprawki usterek i zmiany w zapisanych widokach.
+Zmiany w platformie są uwzględniane w wydaniu z danego tygodnia. Aby uzyskać więcej informacji, zobacz temat [Aktualizacje platformy dla wersji 10.0.10 aplikacji Finance and Operations (maj 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34). Ta wersja zawiera poprawki usterek i zmiany w zapisanych widokach.
  
-## <a name="ensure-dataverse-picklists-are-consistent-with-leave-enums-436343"></a>Upewnij się, że listy wyboru usługi Dataverse są spójne z wyliczeniami nieobecności (436343)
+## <a name="ensure-common-data-service-picklists-are-consistent-with-leave-enums-436343"></a>Upewnij się, że listy wyboru usługi Common Data Service są spójne z wyliczeniami nieobecności (436343)
 
-Listy wyboru usługi Dataverse są teraz spójne z wyliczeniami nieobecności.
+Listy wyboru usługi Common Data Service są teraz spójne z wyliczeniami nieobecności.
 
 ## <a name="allow-users-to-configure-leave-request-workflow-based-on-the-request-amount-300044"></a>Umożliwienie użytkownikom konfigurowania przepływu pracy wniosku o urlop na podstawie ilości żądania (300044)
 
@@ -74,7 +75,7 @@ Ta zmiana naprawia błąd występujący w przypadku, gdy do planu urlopu przypis
 
 W przypadku tej zmiany transparent wprowadzający jest ukryty dla użytkowników, którzy nie są administratorami systemu ani administratorami zarządzania danymi. 
 
-## <a name="the-dataverse-worker-address-entity-works-differently-in-terms-of-date-time-effective-dates-in-human-resources-425071"></a>Jednostka adresu pracownika Dataverse działa inaczej w zależności od daty i godziny dla czasu obowiązywania dat w aplikacji Human Resources (425071)
+## <a name="the-common-data-service-worker-address-entity-works-differently-in-terms-of-date-time-effective-dates-in-human-resources-425071"></a>Jednostka adresu pracownika Common Data Service działa inaczej w zależności od daty i godziny dla czasu obowiązywania dat w aplikacji Human Resources (425071)
 
 Ta zmiana powoduje, że informacje adresowe są wyrównywane w określonych scenariuszach na podstawie dat adresu.
 
@@ -115,8 +116,6 @@ Można określić typ urlopu przeniesienia do przodu dla sald przeniesionych na 
 ## <a name="see-also"></a>Informacje dodatkowe
 
 [Nowości i zmiany w rozwiązaniu Human Resources](hr-admin-whats-new.md)</br>
-[Omówienie rozwiązania Dynamics 365 Human Resources 2019, wydanie 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Omówienie rozwiązania Dynamics 365 Human Resources 2019, wydanie 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Aktualizowanie procesu](hr-admin-setup-update-process.md)</br>
 [Zarządzanie funkcjami](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

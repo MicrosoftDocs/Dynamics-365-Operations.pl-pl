@@ -1,133 +1,120 @@
 ---
-title: Konfigurowanie integracji usługi Dataverse
-description: W tym temacie opisano integrację między Microsoft Dataverse i Dynamics 365 Human Resources.
-author: twheeloc
-ms.date: 08/19/2021
+title: Konfigurowanie integracji z usługą Common Data Service
+description: Można włączyć lub wyłączyć integrację między usługą Common Data Service a Dynamics 365 Human Resources. Można również wyświetlić szczegóły synchronizacji, wyczyścić dane śledzenia i dokonać ponownej synchronizacji jednostki, aby ułatwić rozwiązywanie problemów z danymi między tymi dwoma środowiskami.
+author: andreabichsel
+manager: AnnBe
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: CDSIntegrationAdministration
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c4e68142045b72b139bdda8be707a73e21e568fd
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: d9ee4715526e18b33ae4b7e90b081ed5868bb19c
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065458"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527938"
 ---
-# <a name="configure-dataverse-integration"></a>Konfigurowanie integracji usługi Dataverse
+# <a name="configure-common-data-service-integration"></a>Konfigurowanie integracji z usługą Common Data Service
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-[!INCLUDE [PEAP](../includes/peap-2.md)]
+Można włączyć lub wyłączyć integrację między usługą Common Data Service a Dynamics 365 Human Resources. Można również wyświetlić szczegóły synchronizacji, wyczyścić dane śledzenia i dokonać ponownej synchronizacji jednostki, aby ułatwić rozwiązywanie problemów z danymi między tymi dwoma środowiskami.
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+Po wyłączeniu integracji użytkownicy mogą wprowadzać zmiany w module Human Resources lub usłudze Common Data Service, ale te zmiany nie są synchronizowane między oboma środowiskami.
 
-Można włączyć lub wyłączyć integrację między usługą Microsoft Dataverse a Dynamics 365 Human Resources. Można również wyświetlić szczegóły synchronizacji, wyczyścić dane śledzenia i dokonać ponownej synchronizacji tabeli, aby ułatwić rozwiązywanie problemów z danymi między tymi dwoma środowiskami.
-
-> [!NOTE]
-> Aby uzyskać więcej informacji o Dataverse (poprzednio Common Data Service) i aktualizacjach terminologii, zobacz [Co to jest Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
-
-Po wyłączeniu integracji użytkownicy mogą wprowadzać zmiany w module Human Resources lub usłudze Dataverse, ale te zmiany nie są synchronizowane między oboma środowiskami.
-
-Domyślnie integracja danych między modułem Human Resources a usługą Dataverse jest wyłączona.
+Domyślnie integracja danych między modułem Human Resources a usługą Common Data Service jest wyłączona.
 
 Wyłączenie integracji może być zalecane w następujących sytuacjach:
 
 - Wprowadzasz dane za pomocą struktury zarządzania danymi i musisz je zaimportować wielokrotnie, aby osiągnęły poprawny stan.
 
-- Istnieją problemy z danymi w module Human Resources lub usłudze Dataverse. Po wyłączeniu integracji można usunąć rekord w jednym środowisku bez usuwania go w drugim. Po ponownym włączeniu integracji rekord w środowisku, w którym nie został usunięty, jest zsynchronizowany do środowiska, w którym został usunięty. Synchronizacja rozpocznie się przy następnym uruchomieniu zadania wsadowego **Żądanie synchronizacji pominiętej integracji z usługą Dataverse**.
+- Istnieją problemy z danymi w module Human Resources lub usłudze Common Data Service. Po wyłączeniu integracji można usunąć rekord w jednym środowisku bez usuwania go w drugim. Po ponownym włączeniu integracji rekord w środowisku, w którym nie został usunięty, jest zsynchronizowany do środowiska, w którym został usunięty. Synchronizacja rozpocznie się przy następnym uruchomieniu zadania wsadowego **Żądanie synchronizacji pominiętej integracji z usługą Common Data Service**.
 
 > [!WARNING]
 > Po wyłączeniu integracji danych należy się upewnić, że ten sam rekord nie będzie edytowany w obu środowiskach. Po ponownym włączeniu integracji zostanie zsynchronizowany rekord, który był ostatnio edytowany. W związku z tym jeśli nie dokonano takich samych zmian w rekordzie w obu środowiskach, może nastąpić utrata danych.
 
-## <a name="access-the-dataverse-integration-page"></a>Dostęp do strony integracji z usługą Dataverse
+## <a name="access-the-common-data-service-integration-page"></a>Dostęp do strony integracji z usługą Common Data Service
 
-1. W wystąpieniu modułu Human Resources, w którym chcesz wyświetlić lub skonfigurować ustawienia integracji z usługą Dataverse, wybierz kafelek **Administrowanie systemem**.
+1. W wystąpieniu modułu Human Resources, w którym chcesz wyświetlić lub skonfigurować ustawienia integracji z usługą Common Data Service, wybierz kafelek **Administrowanie systemem**.
 
-    [![Kafelek Administrowanie systemem.](./media/hr-select-system-administration.png)](./media/hr-select-system-administration.png)
+    [![Kafelek Administrowanie systemem](./media/hr-select-system-administration.png)](./media/hr-select-system-administration.png)
 
 2. Kliknij kartę **Łącza**.
 
-    [![Karta Łącza.](./media/hr-system-administration-links.png)](./media/hr-system-administration-links.png)
+    [![Karta Łącza](./media/hr-system-administration-links.png)](./media/hr-system-administration-links.png)
 
-3. W obszarze **Integracje** wybierz pozycję **Konfiguracja usługi Dataverse**.
+3. W obszarze **Integracje** wybierz pozycję **Konfiguracja usługi Common Data Service**.
 
-    [![Łącze Konfiguracja usługi Dataverse.](./media/hr-admin-integration-dataverse-select.png)](./media/hr-admin-integration-dataverse-select.png)
+    [![Łącze Konfiguracja usługi Common Data Service](./media/hr-select-common-data-service-configuration.png)](./media/hr-select-common-data-service-configuration.png)
 
-## <a name="turn-data-integration-between-human-resources-and-dataverse-on-or-off"></a>Włączenie lub wyłączanie integracji danych między modułem Human Resources a usługą Dataverse
+## <a name="turn-data-integration-between-human-resources-and-common-data-service-on-or-off"></a>Włączenie lub wyłączanie integracji danych między modułem Human Resources a usługą Common Data Service
 
-- Aby włączyć integrację, w opcji **Włącz integrację z usługą Dataverse** ustaw wartość **Tak** na stronie **integracja Microsoft Dataverse**.
+- Aby włączyć integrację, w opcji **Włącz integrację z usługą Common Data Service** ustaw wartość **Tak**.
 
     > [!NOTE]
-    > Po włączeniu integracji dane zostaną zsynchronizowane przy następnym uruchomieniu zadania wsadowego **Żądanie synchronizacji pominiętej integracji z usługą Dataverse**. Po zakończeniu zadania wsadowego wszystkie dane powinny być dostępne.
+    > Po włączeniu integracji dane zostaną zsynchronizowane przy następnym uruchomieniu zadania wsadowego **Żądanie synchronizacji pominiętej integracji z usługą Common Data Service**. Po zakończeniu zadania wsadowego wszystkie dane powinny być dostępne.
 
 - Aby wyłączyć integrację, ustaw w opcji wartość **Nie**.
 
-[![Włączanie lub wyłączanie integracji z usługą Dataverse.](./media/hr-admin-integration-dataverse-enable-disable.png)](./media/hr-admin-integration-dataverse-enable-disable.png)
+[![Włączanie lub wyłączanie integracji z usługą Common Data Service](./media/hr-enable-or-disable-common-data-service-integration.png)](./media/hr-enable-or-disable-common-data-service-integration.png)
 
 > [!WARNING]
-> Stanowczo zaleca się wyłączenie integracji Dataverse podczas wykonywania zadań migracji danych. Duże operacje przekazywania danych mogą znacząco wpłynąć na wydajność. Na przykład przekazywanie 2000 pracowników może potrwać kilka godzin, gdy integracja jest włączona, i mniej niż jedna godzina, gdy jest wyłączona. Numery podane w tym przykładzie służą tylko do celów demonstracyjnych. Dokładna ilość czasu importowania rekordów może się znacznie różnić w zależności od wielu czynników.
+> Stanowczo zaleca się wyłączenie integracji Common Data Service podczas wykonywania zadań migracji danych. Duże operacje przekazywania danych mogą znacząco wpłynąć na wydajność. Na przykład przekazywanie 2000 pracowników może potrwać kilka godzin, gdy integracja jest włączona, i mniej niż jedna godzina, gdy jest wyłączona. Numery podane w tym przykładzie służą tylko do celów demonstracyjnych. Dokładna ilość czasu importowania rekordów może się znacznie różnić w zależności od wielu czynników.
 
 ## <a name="view-data-integration-details"></a>Wyświetlanie szczegółów integracji danych
 
-Na stronie **Integracja z usługą Microsoft Dataverse** na skróconej karcie **Administracja** można zobaczyć, jak wiersze są z sobą połączone między modułem Human Resources a usługą Dataverse.
+Na stronie **Integracja z usługą Common Data Service** na skróconej karcie **Administracja** można zobaczyć, jak rekordy są z sobą połączone między modułem Human Resources a usługą Common Data Service.
 
-- Aby wyświetlić wiersze dla tabeli, wybierz tabelę w polu **tabeli Dataverse**. W siatce zostaną wyświetlone wszystkie wiersze połączone z wybraną tabelę.
+- Aby wyświetlić rekordy jednostki, wybierz jednostkę w polu **Nazwa jednostki w usłudze CDS**. W siatce zostaną wyświetlone wszystkie rekordy połączone z wybraną jednostką.
+
+[![Wyświetlanie rekordów jednostki](./media/hr-common-data-service-configuration-view-entity.png)](./media/hr-common-data-service-configuration-view-entity.png)
 
 > [!NOTE]
-> Nie wszystkie tabele usługi Dataverse są obecnie wyświetlane. W siatce widać tylko tabele, które obsługują używanie pól niestandardowych. Nowe tabele są udostępniane w kolejnych wydaniach programu Human Resources.
+> Nie wszystkie jednostki usługi Common Data Service są obecnie wyświetlane. W siatce widać tylko jednostki, które obsługują używanie pól niestandardowych. Nowe jednostki są udostępniane w kolejnych wydaniach programu Human Resources.
 
 Siatka zawiera następujące pola:
 
-- **Tabele Dataverse** – Nazwa tabeli przemieszczania w Dataverse.
-- **Odwołanie do tabeli Dataverse** — identyfikator wykorzystywany przez usługę Dataverse do identyfikowania rekordu. Ta wartość jest równoważna wartości **RecId** w module Human Resources. Identyfikator można znaleźć po otwarciu tabeli usługi Dataverse w programie Microsoft Excel.
-- **Nazwa jednostki modułu Human Resources** — jednostka Human Resources, której dane były ostatnio synchronizowane z usługą Dataverse. Jednostka może mieć prefiks usługi Dataverse lub inny prefiks.
+- **Nazwa jednostki w usłudze CDS** — nazwa jednostki w usłudze Common Data Service.
+- **Odwołanie do jednostki w usłudze CDS** — identyfikator wykorzystywany przez usługę Common Data Service do identyfikowania rekordu. Ta wartość jest równoważna wartości **RecId** w module Human Resources. Identyfikator można znaleźć po otwarciu jednostki usługi Common Data Service w programie Microsoft Excel.
+- **Nazwa jednostki modułu Human Resources** — jednostka, której dane były ostatnio synchronizowane z usługą Common Data Service. Jednostka może mieć prefiks usługi Common Data Service lub inny prefiks.
 - **Odwołanie do modułu Human Resources** – wartość **RecId** skojarzona z rekordem w module Human Resources.
-- **Usunięto z usługi Dataverse** — wartość wskazująca, czy wiersz został usunięty z usługi Dataverse.
+- **Usunięto z usługi CDS** — wartość wskazująca, czy rekord został usunięty z usługi Common Data Service.
 
-> [!NOTE]
-> Rekordy w Human Resources odpowiadają wierszom w Dataverse.
+## <a name="remove-the-association-of-a-record-in-human-resources-from-common-data-service"></a>Usuwanie skojarzenia rekordu z usługi Common Data Service w module Human Resources
 
-## <a name="remove-the-association-of-a-human-resources-record-from-a-dataverse-row"></a>Usuwanie skojarzenia rekordu Human Resources z wiersza usługi Dataverse
+Jeśli występują problemy podczas synchronizacji danych między modułem Human Resources a usługą Common Data Service, można je rozwiązać, czyszcząc dane śledzenia i umożliwiając ponowne zsynchronizowanie tabeli śledzenia. Jeśli usuniesz skojarzenie, a następnie zmienisz lub usuniesz rekord w usłudze Common Data Service, zmiany nie zostaną zsynchronizowane z usługą Human Resources. W przypadku wprowadzenia zmian w module Human Resources zostanie utworzony nowy rekord śledzenia, a rekord danych zostanie zaktualizowany w Common Data Service.
 
-Jeśli występują problemy podczas synchronizacji danych między modułem Human Resources a usługą Dataverse, można je rozwiązać, czyszcząc dane śledzenia i umożliwiając ponowne zsynchronizowanie tabeli śledzenia. Jeśli usuniesz skojarzenie, a następnie zmienisz lub usuniesz wiersz w usłudze Dataverse, zmiany nie zostaną zsynchronizowane z usługą Human Resources. W przypadku wprowadzenia zmian w module Human Resources zostanie utworzony nowy rekord śledzenia, a wiersz danych zostanie zaktualizowany w Dataverse.
+- Aby usunąć powiązanie rekordu między modułem Human Resources a usługą Common Data Service, zaznacz jednostkę w polu **Nazwa jednostki w usłudze CDS**, a następnie wybierz opcję **Wyczyść informacje śledzenia**.
 
-- Aby usunąć powiązanie rekordu między rekordem Human Resources a wierszem Dataverse, zaznacz tabelę w polu **Tabela Dataverse**, a następnie wybierz opcję **Wyczyść informacje śledzenia**.
+[![Czyszczenie informacji śledzenia](./media/hr-common-data-service-configuration-clear-tracking.png)](./media/hr-common-data-service-configuration-clear-tracking.png)
 
-[![Czyszczenie informacji śledzenia.](./media/hr-admin-integration-dataverse-clear-tracking.png)](./media/hr-admin-integration-dataverse-clear-tracking.png)
+Aby wykonać pełną synchronizację jednostki po wyczyszczeniu danych śledzenia, skorzystaj z następnej procedury.
 
-Aby wykonać pełną synchronizację tabeli po wyczyszczeniu danych śledzenia, skorzystaj z następnej procedury.
-
-## <a name="sync-a-table-between-human-resources-and-dataverse"></a>Synchronizowanie tabeli między modułem Human Resources a usługą Dataverse
+## <a name="sync-an-entity-between-human-resources-and-common-data-service"></a>Synchronizowanie jednostki między modułem Human Resources a usługą Common Data Service
 
 Tę procedurę należy wykonać jeśli:
 
-- Zmiany wprowadzone w Dataverse zbyt wolno pojawiają się w Human Resources.
+- Zmiany wprowadzone w Common Data Service zbyt wolno pojawiają się w Human Resources.
 
 - Tabelę śledzenia należy odświeżyć po wyczyszczeniu śledzenia.
 
-Aby uruchomić pełną synchronizację tabeli między Human Resources a Dataverse:
+Aby uruchomić pełną synchronizację jednostki między Human Resources a Common Data Service:
 
-1. Wybierz tabelę w polu **tabela Dataverse**.
+1. W polu **Nazwa jednostki w usłudze CDS** wybierz firmę.
 
 2. Wybierz opcję **Synchronizuj teraz**.
 
-[![Wykonywanie pełnej synchronizacji.](./media/hr-admin-integration-dataverse-sync-now.png)](./media/hr-admin-integration-dataverse-sync-now.png)
-
-## <a name="see-also"></a>Informacje dodatkowe
-
-[Tabele Dataverse](hr-developer-entities.md)<br>
-[Konfiguruj tabele wirtualne usługi Dataverse](hr-admin-integration-common-data-service-virtual-entities.md)<br>
-[Tabele wirtualne usługi Human Resources — często zadawane pytania](hr-admin-virtual-entity-faq.md)<br>
-[Co to jest usługa Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)<br>
-[Aktualizacje terminologii](/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
+[![Wykonywanie pełnej synchronizacji](./media/hr-common-data-service-configuration-sync-now.png)](./media/hr-common-data-service-configuration-sync-now.png)
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

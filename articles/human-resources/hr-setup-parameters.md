@@ -1,152 +1,52 @@
 ---
-title: Konfigurowanie parametrów rozwiązania Human Resources
-description: W tym temacie wyjaśniono, jak skonfigurować parametry specyficzne dla firmy w Dynamics 365 Human Resources.
-author: twheeloc
-ms.date: 11/03/2021
+title: Konfigurowanie parametrów modułu Human Resources
+description: Niektóre parametry modułu Human Resources są wspólne dla wielu firm, podczas gdy inne parametry są specyficzne dla firm. W tym artykule wyjaśniono, jak skonfigurować parametry modułu Zasoby ludzkie specyficzne dla firmy.
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HRMParameters, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Human Resources
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fd9bb907f95ba4c368871a470ca9b2bc807646ee
-ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
+ms.openlocfilehash: bac50c5f302797e28df2bc792893c8a682899a93
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7771442"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420011"
 ---
-# <a name="configure-human-resources-parameters"></a>Konfigurowanie parametrów rozwiązania Human Resources
+# <a name="configure-human-resources-parameters"></a>Konfigurowanie parametrów modułu Human Resources
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+Niektóre parametry modułu Zasoby ludzkie (HR) są wspólne dla wielu firm, podczas gdy inne parametry są specyficzne dla firm. W tym artykule wyjaśniono, jak skonfigurować parametry modułu Zasoby ludzkie specyficzne dla firmy.
 
-Niektóre parametry modułu Zasobów ludzkich są wspólne dla wielu firm, podczas gdy inne parametry są specyficzne dla firm. W tym temacie wyjaśniono, jak skonfigurować parametry Zasobów ludzkich.
+Do ustawiania parametrów Zasobów ludzkich służą dwie strony. W przypadku parametrów współużytkowanych przez firmy, użyj strony **Udostępniane parametry zasobów ludzkich**. W przypadku parametrów specyficznych dla firmy (ustawienie dotyczy tylko jednej firmy), użyj strony **Parametry zasobów ludzkich**. Na stronie **parametrów zasobów ludzkich** ustawienia są podzielone na sześciu kartach:
 
-Do ustawiania parametrów Zasobów ludzkich służą dwie strony. W przypadku parametrów współużytkowanych przez firmy, użyj strony **Udostępniane parametry zasobów ludzkich**. W przypadku parametrów specyficznych dla firmy (ustawienie dotyczy tylko jednej firmy), użyj strony **Parametry zasobów ludzkich**.
+-   Ogólne
+-   Rekrutacja — tej funkcjonalności nie ma w aplikacji Dynamics 365 Human Resources
+-   Kompensata
+-   Sekwencje identyfikatorów
+-   Rozporządzenie dotyczące zwolnień chorobowych i rodzinnych (FMLA)
+-   Samoobsługa pracownika
 
-![Przejdź do parametrów zasobów ludzkich.](./media/hr-employee-self-service-human-resources-parameters.png)
+Każda karta zawiera informacje dotyczące jednej firmy. Ustawienia wprowadzone na karcie **Ogólne** definiują wygląd informacji o nieobecności, urazach, chorobach i zatrudnianiu nowych pracowników. Ustawienia na tej karcie definiują także niektóre domyślne wpisy pojawiające się podczas pracy. Karta ta umożliwia wybranie koloru stosowanego do otwartych transakcji nieobecności, zamówienia, w którym są wyświetlane nazwy, arkusza stylów używanego w raportach oraz włączania integracji między kursami szkoleniowymi a rejestracją nieobecności, a także wybranie kodu nieobecności służącego do kontroli tej integracji. Można również określić, jak długo jak długo przechowywać zdarzenia urazów i chorób i określić domyślny numer identyfikacyjny, który jest wyświetlany, kiedy nowy pracownik jest zatrudniony. 
 
-Na stronie **parametrów zasobów ludzkich** ustawienia są podzielone na sześciu kartach:
+Ustawienia wprowadzone na karcie **rekrutacji** definiują typy dokumentów używanych do korespondencji automatycznie wysyłanej do kandydatów, i projekt rekrutacji używany do obsługi niezamawianych zgłoszeń (które nie dotyczą określonego projektu rekrutacji). Okres zdefiniowany dla wiekowania projektu rekrutacji określa projekty rekrutacji uwzględnione w kafelku **Projekty wiekowania** w obszarze roboczym **Zarządzanie rekrutacją**. Okres zdefiniowany dla ostrzeżenia o ostatecznym terminie zgłoszenia jest używany do wyświetlania projektów rekrutacji, których ostateczny termin zgłoszeń się zbliża i jest określony w kafelku **Zbliża się ostateczny termin zgłoszenia** w obszarze roboczym **Rekrutacja**. 
 
-- **Ogólny**
-- **Rekrutacja** (tej karty nie ma w aplikacji Dynamics 365 Human Resources)
-- **Kompensacja**
-- **Sekwencje identyfikatorów**
-- **FMLA**
-- **Samoobsługa pracownika etatowego**
-- **Samoobsługa menedżera**
-- **Zarządzanie świadczeniami**
-- **Urlopy i nieobecności**
-- **Metody płatności**
+Ustawienia wprowadzone na karcie **Wynagrodzenie** określają, czy użytkownicy muszą potwierdzać, że chcą zapisać informacje dla systemu wynagrodzeń o stałej lub zmiennej wysokości. W przypadku zaznaczenia pola wyboru **Włącz weryfikację zapisu** za każdym razem, kiedy użytkownik zamknie stronę związaną z wynagrodzeniami, otrzyma wiadomość z zapytaniem, czy chce zapisać rekord. Niektóre strony w module zarządzania wynagrodzeniami nie zezwalają na usuwanie informacji. Dzięki pytaniu użytkowników, czy chcą zapisać informacje, można ograniczyć ilość zapisywanych danych, których potem nie można usunąć. Jeśli pole wyboru **Włącz weryfikację zapisu** nie zostanie zaznaczone, rekordy będą zawsze natychmiast zapisywane, być może zanim użytkownik będzie gotowy. W przypadku korzystania z funkcji zarządzania wydajnością można wybrać model oceniania na karcie **Wynagrodzenie** zamiast modelu przypisanego do systemów wynagrodzeń przy ocenie wydajności. 
 
-Każda karta zawiera informacje dotyczące jednej firmy.
+### <a name="previously-released-functionality"></a>Wcześniej wydane grupy funkcjonalności
 
-## <a name="general"></a>Ogólny
-
-Ustawienia wprowadzone na karcie **Ogólne** definiują wygląd informacji o nieobecności, urazach, chorobach i zatrudnianiu nowych pracowników. Ustawienia na tej karcie definiują także niektóre domyślne wpisy pojawiające się podczas pracy. W szczególności ta karta umożliwia:
-
-- Wybierz kolor, który ma być zastosowany do otwartych transakcji nieobecności.
-- Umożliwia określenie arkusza stylów, który będzie używany dla raportów.
-- Włącz integrację między kursami szkoleniowymi a rejestracją nieobecności.
-- Umożliwia wybranie kodu nieobecności używanego do kontrolowania tej integracji.
-- Wskaż, jak długo mają utrzymywać się przypadki obrażeń i chorób.
-- Umożliwia określenie domyślnego numeru identyfikacyjnego wyświetlanego podczas zatrudniania nowego pracownika.
-- Określ datę używaną do obliczania lat pracy. 
-
-![Karta Ogólne.](./media/hr-setup-parameters-general.png)
-
-## <a name="recruitment"></a>Rekrutacja
-
-Ustawienia na karcie **Rekrutacja** określają typy dokumentów używane do korespondencji automatycznie wysyłanej do kandydatów. Można także wskazać projekt rekrutacji używany dla niechcianych zgłoszeń.
-
-Okres zdefiniowany dla **wiekowania projektu rekrutacji** określa projekty rekrutacji uwzględnione w kafelku **Projekty wiekowania** w obszarze roboczym **Zarządzanie rekrutacją**. Okres zdefiniowany dla ostrzeżenia o ostatecznym terminie zgłoszenia jest używany do wyświetlania projektów rekrutacji, których ostateczny termin zgłoszeń się zbliża i jest określony w kafelku **Zbliża się ostateczny termin zgłoszenia** w obszarze roboczym **Rekrutacja**.
-
-Aby uzyskać więcej informacji o rekrutacji, zobacz temat [Rekrutowanie kandydatów do pracy](hr-personnel-recruit.md).
-
-## <a name="compensation"></a>Kompensacja
-
-W Dynamics 365 Finance ustawienia wprowadzone na karcie **Wynagrodzenie** określają, czy użytkownicy muszą potwierdzać, że chcą zapisać informacje dla systemu wynagrodzeń o stałej lub zmiennej wysokości. W wybrania **Włącz weryfikację zapisu** kiedy użytkownik zamknie stronę związaną z wynagrodzeniami, otrzyma wiadomość z zapytaniem, czy chce zapisać rekord. Niektóre strony w module Zarządzania wynagrodzeniami nie zezwalają na usuwanie informacji. Dzięki pytaniu użytkowników, czy chcą zapisać informacje, można ograniczyć ilość zapisywanych danych, których potem nie można usunąć. Jeśli pole wyboru **Włącz weryfikację zapisu** nie jest zaznaczone, rekordy będą natychmiast zapisywane, być może zanim użytkownik będzie gotowy. W przypadku korzystania z funkcji Zarządzania wydajnością można wybrać model oceniania na karcie **Wynagrodzenie** zamiast modelu przypisanego do systemów wynagrodzeń przy ocenie wydajności.
-
-W obszarze Zasoby ludzkie można użyć karty **Wynagrodzenie**, aby ograniczyć dostęp do planów wynagrodzeń i ustawić walutę domyślną.
-
-Aby uzyskać więcej informacji o planach wynagrodzeń, zobacz [Omówienie planów wynagrodzeń](hr-compensation-overview.md).
-
-![Karta Wynagrodzenie.](./media/hr-setup-parameters-compensation.png)
-
-## <a name="number-sequences"></a>Sekwencje identyfikatorów
-
-Ustawienia na karcie **Sekwencja numerów** decydują o sekwencjach używanych do automatycznego przypisywania identyfikatorów do towarów w zasobach ludzkich, takich jak:
-
-- Aplikacje
-- Rejestracje nieobecności
-- Wyniki procesu związanego z wynagrodzeniem
-- Numery przypadków
-- Kursy
-- Programy kursów
-
-Aby obsługiwać odwołania numeracji i kody, użyj strony listy **Sekwencje identyfikatorów** (wybierz **Administrowanie organizacją > Sekwencje identyfikatorów > Sekwencje identyfikatorów**).
-
-Aby uzyskać więcej informacji, zobacz temat [Omówienie sekwencji identyfikatorów](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
+Ustawienia wprowadzone na karcie **Sekwencja numerów** określają sekwencje używane do automatycznego przypisywania identyfikatorów do elementów w module Zasoby ludzkie, takich jak zgłoszenia, rejestracje nieobecności, wyniki procesu wynagrodzenia, numery spraw i terminarze kursów. Aby obsługiwać odwołania numeracji i kody, użyj strony listy **Sekwencje identyfikatorów** (kliknij kolejno opcje **Administrowanie organizacją** &gt; **Sekwencje identyfikatorów** &gt; **Sekwencje identyfikatorów**).
 
 > [!NOTE]
-> Liczba przepracowanych godzin nie może przekroczyć 1250, a staż pracy nie może przekroczyć 12 miesięcy. Te maksymalne wartości są zgodne z prawem federalnym w Stanach Zjednoczonych.
-
-![Karta Sekwencje numerów.](./media/hr-setup-parameters-number-sequences.png)
-
-## <a name="fmla"></a>FMLA
-
-Na karcie FMLA są ustawiane wymagania dotyczące uprawnień FMLA i godziny uprawnień FMLA. Aby uzyskać więcej informacji, zobacz [Konfigurowanie parametrów urlopu i nieobecności](hr-leave-and-absence-parameters.md).
-
-![Karta FMLA.](./media/hr-setup-parameters-fmla.png)
-
-## <a name="employee-self-service"></a>Samoobsługa pracownika etatowego
-
-Ustawienia na karcie **Samoobsługa pracownika etatowego** mają wpływ na sposób, w jaki **samoobsługa pracownika etatowego** jest wyświetlana pracownikom etatowym. Na tej karcie możesz wykonać następujące zadania:
-
-- Wprowadź nazwę obszaru roboczego **samoobsługi pracownika**
-- Wybierz, jakie informacje menedżer może wprowadzić dla pracowników
-- Dodawanie przydatnych łączy dla pracowników
-- Zablokuj pracownikom możliwość dodawania lub edytowania biznesowych danych kontaktowych. Aby uzyskać więcej informacji, zobacz temat [Ogranicz edycję danych osobowych](hr-employee-self-service-restrict-editing.md).
-
-Aby uzyskać więcej informacji dotyczących konfigurowania funkcji **samoobsługi pracowników etatowych**, zobacz [Omówienie samoobsługi dla pracownika etatowego i menedżera](hr-employee-manager-self-service-overview.md).
-
-![Karta Samoobsługa pracownika etatowego.](./media/hr-setup-parameters-employee-self-service.png)
-
-## <a name="manager-self-service"></a>Samoobsługa menedżera
-
-Ustawienia na karcie **Samoobsługa menedżera** wpływają na to, co menedżerowie widzą w **samoobsłudze menedżera**. Na tej karcie można skonfigurować następujące opcje:
-
-- Zakres wygasających rekordów
-- Informacje, które menedżerowie mogą wyświetlać w wygasających rekordach
-- Określa, czy menedżerowie mogą wyświetlać otwarte stanowiska w raportach rozszerzonych
-- Widoki odchodzących pracowników
-- Przydatne łącza dla menedżerów
-
-Aby uzyskać więcej informacji dotyczących konfigurowania funkcji **samoobsługi menedżerów**, zobacz [Omówienie samoobsługi dla pracownika etatowego i menedżera](hr-employee-manager-self-service-overview.md).
-
-![Karta Samoobsługa menedżera.](./media/hr-setup-parameters-manager-self-service.png)
-
-## <a name="benefits-management"></a>Zarządzanie świadczeniami
-
-Na karcie **Zarządzanie świadczeniami** możesz skonfigurować opcje poczty e-mail dotyczące zarządzania świadczeniami. Aby uzyskać więcej informacji na temat konfiguracji i użytkowania funkcji Zarządzanie świadczeniami, zobacz [Zarządzanie świadczeniami - omówienie](hr-benefits-management-overview.md).
-
-![Karta Zarządzanie świadczeniami.](./media/hr-setup-parameters-benefits-management.png)
-
-## <a name="leave-and-absence"></a>Urlopy i nieobecności
-
-Aby uzyskać więcej informacji dotyczących konfigurowania i korzystania z Urlopów i nieobecności, zobacz [Zarządzanie urlopami i nieobecnościami](hr-leave-and-absence-overview.md).
-
-## <a name="payment-methods"></a>Metody płatności
-
-Na karcie **Metody płatności** możesz wybrać metody płatności obsługiwane przez organizację. Aby uzyskać więcej informacji o konfiguracji planów wynagrodzeń, zobacz [Omówienie planów wynagrodzeń](hr-compensation-overview.md).
-
-![Karta Metody płatności.](./media/hr-setup-parameters-payment-methods.png)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+> Liczba przepracowanych godzin nie może przekroczyć 1250, a staż pracy nie może przekroczyć 12 miesięcy. Te maksymalne wartości są zgodne z prawem federalnym w Stanach Zjednoczonych. Ustawienia na karcie **Samoobsługa pracownika etatowego** określają informacje,jakie mogą wprowadzać menedżerowie w imieniu swoich pracowników.

@@ -2,30 +2,36 @@
 title: Zarządzanie metadanymi funkcji optymalizacji aparatu wyszukiwania
 description: W tym temacie opisano sposób zarządzania metadanymi optymalizacji aparatu wyszukiwania (SEO) w rozwiązaniu Microsoft Dynamics 365 Commerce.
 author: psimolin
+manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 06d2da60695be499971904451fd56fb8a64dfd64c9192d93f87ababb349e9378
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 74229628e48ffb8ac974acd868e325eeca77d91e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751574"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414923"
 ---
-# <a name="manage-seo-metadata"></a>Zarządzanie metadanymi SEO
+# <a name="manage-seo-metadata"></a>Zarządzanie metadanymi funkcji optymalizacji aparatu wyszukiwania
+
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano sposób zarządzania metadanymi optymalizacji aparatu wyszukiwania (SEO) w rozwiązaniu Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Omówienie
 
 Metadane funkcji optymalizacji wyszukiwania dla witryny można zarządzać za pomocą map witryn i metadanych strony.
     
@@ -89,8 +95,3 @@ Aby skonfigurować metadane strony, wykonaj następujące kroki.
 [Wzbogacanie strony docelowej kategorii](enrich-category-page.md)
 
 [Weryfikowanie dostępności zawartości strony](verify-accessibility.md)
-
-[Tworzenie dynamicznych stron handlu elektronicznego na podstawie parametrów adresu URL](create-dynamic-pages.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

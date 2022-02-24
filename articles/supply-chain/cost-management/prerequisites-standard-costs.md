@@ -1,23 +1,30 @@
 ---
-# required metadata
 title: Omówienie wymagań wstępnych dotyczących kosztów standardowych
 description: W tym temacie opisano podstawowe czynności związane z używaniem kosztów standardowych.
 author: AndersGirke
+manager: tfehr
 ms.date: 07/25/2019
-ms.topic: overview
-ms.prod: null
-ms.technology: null
-ms.search.form: 'InventStdCostConv, CostingVersion'
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: InventStdCostConv, CostingVersion
 audience: Application User
 ms.reviewer: kamaybac
-ms.assetid: null
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: aevengir
-ms.search.validFrom: '2016-02-28'
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9333bda96ceae378ab74892534db13761038a06c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967365"
 ---
-
 # <a name="prerequisites-for-standard-costs-overview"></a>Omówienie wymagań wstępnych dotyczących kosztów standardowych
 
 [!include [banner](../includes/banner.md)]
@@ -61,7 +68,8 @@ Na stronie **Konfiguracja wersji wyceny** można utworzyć jedną lub więcej we
 Odbiorcy, którzy chcą przestawić istniejące towary na model zapasów z kosztem standardowym, muszą w tym celu użyć strony **Konwersje na koszt standardowy**.
 
 
-## <a name="related-topics"></a>Powiązane tematy
+<a name="related-topics"></a>Powiązane tematy
+--------
 
 [Omówienie konwersji na koszt standardowy](standard-cost-conversion-overview.md)
 
@@ -71,6 +79,3 @@ Odbiorcy, którzy chcą przestawić istniejące towary na model zapasów z koszt
 
 - [Jak ustawić standardowe koszty w materiałów bezpośrednich w Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/06/07/how-to-set-up-standard-costs-for-direct-materials-in-dynamics-365-for-finance-and-operations)
 - [Koszty standardowe bezpośredniej robocizny w Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/07/16/standard-direct-labor-cost-in-dynamics-365-for-finance-and-operations)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,12 +2,15 @@
 title: Moduł mapy
 description: W tym temacie opisano moduły mapy i sposób ich konfiguracji w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
+manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: bc5962d6bedba1f5abf423c396382e5c8a901c81797ae95132833e23c46cfd57
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: af6aedb6c0112822155c6d855909578a927d1c2c
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747400"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665427"
 ---
 # <a name="map-module"></a>Moduł mapy
 
@@ -29,7 +32,9 @@ ms.locfileid: "6747400"
 
 W tym temacie opisano moduły mapy i sposób ich konfiguracji w Microsoft Dynamics 365 Commerce.
 
-Moduł mapy pokazuje lokalizacje sklepów na interakcyjnej mapie, która jest renderowana przy użyciu [kontrolki sieci Web usługi Bing Maps V8](/bingmaps/v8-web-control/). Klucz interfejsu API map usługi Bing jest wymagany i należy go dodać do strony udostępnione parametry Commerce headquarters. Moduły mapy zapewniają różne widoki, takie jak drogi, z powietrza i widok z ulicy, które użytkownicy mogą wybrać, aby wyświetlić lokalizacje mapy. Pozwalają również na interakcje, takie jak powiększanie i wykorzystywanie lokalizacji użytkownika.
+## <a name="overview"></a>Omówienie
+
+Moduł mapy pokazuje lokalizacje sklepów na interakcyjnej mapie, która jest renderowana przy użyciu [kontrolki sieci Web usługi Bing Maps V8](https://docs.microsoft.com/bingmaps/v8-web-control/). Klucz interfejsu API map usługi Bing jest wymagany i należy go dodać do strony udostępnione parametry Commerce headquarters. Moduły mapy zapewniają różne widoki, takie jak drogi, z powietrza i widok z ulicy, które użytkownicy mogą wybrać, aby wyświetlić lokalizacje mapy. Pozwalają również na interakcje, takie jak powiększanie i wykorzystywanie lokalizacji użytkownika.
 
 Moduł mapy działa w połączeniu z modułem selektora sklepów, aby określić lokalizacje geograficzne sklepów, które muszą być renderowane na mapie. Moduły selektora sklepu i mapy współdziałają, gdy użytkownik wybierze sklep w jednym z tych modułów na stronie serwisu. Moduły mapy można rozszerzyć na inne scenariusze, poza interakcją z modułami selektora sklepów. Wymagane jest jednak dostosowanie modułu.
 
@@ -38,7 +43,7 @@ Moduł mapy działa w połączeniu z modułem selektora sklepów, aby określić
 
 Poniższy obraz pokazuje przykład modułu mapy, który jest używany na stronie lokalizacji sklepu.
 
-![Przykład modułu wyboru sklepu.](./media/ecommerce-Storelocator.PNG)
+![Przykład modułu wyboru sklepu](./media/ecommerce-Storelocator.PNG)
 
 ## <a name="module-properties"></a>Właściwości modułu
 
@@ -76,7 +81,4 @@ Aby uzyskać szczegółowe informacje dotyczące konfigurowania modułu mapy na 
 
 [Zarządzanie Mapami Bing dla swojej organizacji](./dev-itpro/manage-bing-maps.md)
 
-[Kontrolka sieci Web Bing Maps V8](/bingmaps/v8-web-control/)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Kontrolka sieci Web Bing Maps V8](https://docs.microsoft.com/bingmaps/v8-web-control/)

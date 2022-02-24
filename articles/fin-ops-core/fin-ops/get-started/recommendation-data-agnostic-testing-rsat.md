@@ -2,9 +2,11 @@
 title: Testowanie danych agnostycznych przy użyciu pola Regression Suite Automation Tool
 description: W tym temacie omówiono zalecenia dotyczące testowania danych agnostic przy użyciu Regression Suite Automation Tool.
 author: kfend
+manager: AnnBe
 ms.date: 09/13/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2019-09-11
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: d9a5bce1cc56dfdf66b2ce58c2e740b7c4b3bdfc7f4e75396fe5dc7cb931b6d0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2398bcbf0d148932e62ebe90aa8016acf0c79c28
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763417"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798209"
 ---
 # <a name="data-agnostic-testing-using-the-regression-suite-automation-tool"></a>Testowanie danych agnostycznych przy użyciu pola Regression Suite Automation Tool
 
@@ -30,9 +32,9 @@ Chociaż sprawdzenie funkcjonalne aplikacji ERP nie może być w pełni anostycz
 - Strukturę ATL
 - Regression Suite Automation Tool (RSAT)
 
-[![Piramida klasyfikacji testu.](./media/rsat-data-agnostic-testing-01.PNG)](./media/rsat-data-agnostic-testing-01.PNG)
+[![Piramida klasyfikacji testu](./media/rsat-data-agnostic-testing-01.PNG)](./media/rsat-data-agnostic-testing-01.PNG)
 
-## <a name="overview"></a>Omówienie
+## <a name="overview"></a>Przegląd
 -   **SysTest Framework** — struktura SysTest jest godna zaufania do pisania testów jednostkowych. Ponieważ testy jednostkowe zwykle testuje metodę lub funkcję, powinny zawsze być agnostic i uzależnione od danych wejściowych dostarczanych w ramach testu.
 -   **Struktura ATL** — firma Microsoft ma strukturę ATL, która jest abstrakcyjna w strukturze SysTest i upraszcza tworzenie prostych i niezawodnych testów funkcjonalnych Te struktury powinny być używane do pisania testów składników lub testów integracji prostej.
 -   **RSAT** — składnik RSAT jest używany do testów integracji i testów cyklu biznesowego. Testy cyklu biznesowego, nazywane również testami sprawdzania poprawności regresji, są zależne od istniejących danych. Jednak te testy mogą stać się agnostic danymi, Jeśli rozważasz dodatkowe czynniki. 
@@ -42,11 +44,8 @@ Chociaż sprawdzenie funkcjonalne aplikacji ERP nie może być w pełni anostycz
     - O umożliwia wprowadzenie unikatowych identyfikatorów, takich jak numery faktur, za pomocą sekwencji numerów lub funkcji Microsoft Excel, takich jak =TEXT(NOW(),"yyyymmddhhmm"). Ta funkcja będzie dostarczać unikatowy numer co minutę, co pozwala śledzić czas wykonania akcji. Ta opcja może być używana dla zmiennych, takich jak numery dokumentów przyjęcia produktów i numery faktur dostawców. Te testy kontynuują pracę z tą samą bazą danych ponownie i ponownie, bez konieczności przywracania.
     - Należy zawsze ustawiać **tryb edycji** środowiska jako **odczytany** lub **edytowany** jako pierwszy przypadek testowy, ponieważ opcja domyślna to **automatyczne**. Opcje **automatyczne** zawsze korzystają z poprzedniego ustawienia i mogą powodować niezawodne testy 
  
-    [![Strona opcji, karta wydajności.](./media/rsat-data-agnostic-testing-02.PNG)](./media/rsat-data-agnostic-testing-02.PNG)
+    [![Strona opcji, karta wydajności](./media/rsat-data-agnostic-testing-02.PNG)](./media/rsat-data-agnostic-testing-02.PNG)
  
     - Sprawdź tylko poprawność po filtrowaniu według określonej transakcji zamiast w ogólnym sprawdzaniu poprawności. Na przykład dla liczby rekordów należy filtrować numer transakcji lub datę transakcji, dzięki czemu sprawdzanie poprawności wyklucza wszystkie inne transakcje. 
     - W przypadku sprawdzania salda odbiorcy lub kontroli budżetu najpierw Zapisz wartość, a następnie Dodaj wartość transakcji, aby sprawdzić oczekiwany wynik, zamiast sprawdzać poprawność stałej oczekiwanej wartości. 
  
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

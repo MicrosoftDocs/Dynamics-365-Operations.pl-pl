@@ -1,10 +1,12 @@
 ---
 title: ER Używanie wymiarów finansowych jako źródła danych (Część 2 — Mapowanie modelu)
-description: W tym temacie opisano sposób konfigurowania modelu raportowania elektronicznego w celu używania wymiarów finansowych jako źródła danych dla raportów ER. (część 2)
+description: W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli administratora systemu lub dewelopera raportowania elektronicznego może tak skonfigurować model raportowania elektronicznego (ER), aby używał on wymiarów finansowych jako źródła danych w raportach ER.
 author: NickSelin
+manager: AnnBe
 ms.date: 05/27/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bc7c6bc299dd0af83db3b09b06276a210ecfada5
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 3214ddb1e077d889fb7b785bee2554b96c3907ed
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605412"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681692"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-2---model-mapping"></a>ER Używanie wymiarów finansowych jako źródła danych (Część 2 — Mapowanie modelu)
 
@@ -56,14 +58,14 @@ Aby wykonać te kroki, należy najpierw wykonać kroki w procedurze „ER Używa
 21. W polu Zapytaj o konto główne wybierz opcję Tak.
     * W ustawieniu „Zapytaj o konto główne” zaznacz wartość Tak, aby zezwolić użytkownikom na wybieranie konta głównego jako części listy wymiarów.   Jeśli zaznaczysz wartość Nie, konto główne nie zostanie włączone do listy wymiarów, a opcja „Czy konto główne jest obowiązkowe” zostanie włączona. Jeśli w opcji „Czy konto główne jest obowiązkowe” ustawisz wartość Tak, konto główne będzie umieszczane na liście wymiarów niezależnie od wyboru dokonanego przez użytkownika.  
 22. Kliknij przycisk OK.
-![Wysuwane właściwości źródła danych szczegółów wymiarów finansowych.](../media/er-financial-dimensions-guides-model-mapping1.png)
+![Strona projektanta mapowania modelu ER](../media/er-financial-dimensions-guides-model-mapping1.png)
 23. W drzewie zaznacz element „Dynamics 365 for Operations\Rekordy w tabeli”.
 24. Kliknij opcję Dodaj element główny.
 25. W polu Nazwa wpisz „LedgerJournal”.
 26. W polu Monituj o zapytanie wybierz opcję Tak.
 27. W polu Tabela wpisz „LedgerJournalTable”.
 28. Kliknij przycisk OK.
-![Strona projektanta mapowania modelu, tabela rejestruje typ źródła danych.](../media/er-financial-dimensions-guides-model-mapping2.png)
+![Strona projektanta mapowania modelu ER](../media/er-financial-dimensions-guides-model-mapping2.png)
 
 ## <a name="map-data-model-elements-to-added-data-sources"></a>Mapowanie elementów modelu danych na dodane źródła danych
 1. W drzewie rozwiń węzeł „Arkusz”.
@@ -94,7 +96,7 @@ Aby wykonać te kroki, należy najpierw wykonać kroki w procedurze „ER Używa
 25. W drzewie zaznacz element „LedgerJournal\<Relacje\LedgerJournalTrans\Konto.Wymiar(LedgerDimension.Wymiar)\Konto główne i wymiary”.
 26. W drzewie zaznacz element „Arkusz\Transakcja\Dane wymiarów”.
 27. Kliknij opcję Powiąż.
-!Strona konstruktora mapowania modelu, karta Mapowanie, Drzewo źródeł danych.](../media/er-financial-dimensions-guides-model-mapping3.png)
+![Strona projektanta mapowania modelu ER](../media/er-financial-dimensions-guides-model-mapping3.png)
 28. W drzewie zaznacz element „LedgerJournal\<Relacje\LedgerJournalTrans\Debet(AmountCurDebit)”.
 29. W drzewie zaznacz element „Arkusz\Transakcja\Debet”.
 30. Kliknij opcję Powiąż.
@@ -133,7 +135,7 @@ Aby wykonać te kroki, należy najpierw wykonać kroki w procedurze „ER Używa
 63. W polu expressionAsStringText wpisz „Firma.'find()'.'name()'”.
     * Firma.'find()'.'name()'  
 64. Kliknij przycisk Zapisz.
-![Strona projektanta mapowania modelu ER.](../media/er-financial-dimensions-guides-model-mapping4.png)
+![Strona projektanta mapowania modelu ER](../media/er-financial-dimensions-guides-model-mapping4.png)
 65. Zamknij stronę.
 66. Kliknij przycisk Zapisz.
 67. Zamknij stronę.
@@ -144,7 +146,4 @@ Aby wykonać te kroki, należy najpierw wykonać kroki w procedurze „ER Używa
 3. Kliknij przycisk Zmień stan.
 4. Kliknij przycisk Wykonaj.
 5. Kliknij przycisk OK.
-![Strona konfiguracji raportowania elektronicznego.](../media/er-financial-dimensions-guides-model-mapping5.png)
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+![Strona projektanta mapowania modelu ER](../media/er-financial-dimensions-guides-model-mapping5.png)

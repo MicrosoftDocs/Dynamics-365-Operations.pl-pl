@@ -66,6 +66,3 @@ Moduł Zarządzanie urlopami i nieobecnościami udostępnia następujące funkcj
 - **Przesyłanie wniosków o czas wolny.**
 
     Pracownicy mogą przesyłać wnioski o czas wolny względem dostępnej dla siebie liczby godzin. Wnioski mogą być prostymi wnioskami na jeden dzień lub obejmować wiele dni, z kilkoma typami urlopów i nieobecności. Jeśli funkcja przepływu pracy nie jest włączona, wnioski są automatycznie zatwierdzane. Gdy funkcja przepływu pracy jest włączona, zatwierdzenie może odbywać się automatycznie lub wymagać podpisania, zależnie od konfiguracji przepływu pracy.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

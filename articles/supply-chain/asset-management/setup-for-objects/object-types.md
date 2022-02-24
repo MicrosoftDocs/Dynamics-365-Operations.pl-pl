@@ -1,10 +1,12 @@
 ---
 title: Typy składnika majątku
 description: W tym temacie wyjaśniono, jak tworzyć typy składników majątku w Zarządzaniu składnikami majątku. Opisano również elementy, które są związane z typami składników majątku.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetObjectJobType, EntAssetObjectType, EntAssetObjectTypeDefaultSparePart, EntAssetObjectTypeDefaultSparePartApprove, EntAssetObjectTypeDefaultCreateCombinations, EntAssetObjectTypeDefault, EntAssetObjectTypeDefaultCopy
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fc1a8d98e9a8853e2e72bfcc7415ddb9a0a3b7758504621d6fccff00a08a36be
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 295840c12f89bc6c6a4d53023985259ac761d6b2
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730380"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017424"
 ---
 # <a name="asset-types"></a>Typy składników majątku
 
@@ -45,9 +47,9 @@ Najpierw należy skonfigurować wymagane typy składników majątku. Następnie 
 7. Wybierz opcję **Zapisz**.
 8. Na skróconej karcie **typy zadań konserwacji** wybierz typy zadań konserwacji, które powinny być powiązane z typem składnika majątku:
 
-    - Aby wybrać typ zadania konserwacji, zaznacz go w polu **Pozostałe typy zadań konserwacji**, a następnie wybierz przycisk strzałki w prawo ![Przycisk strzałki w prawo.](media/29-setup-for-objects.png), aby przenieść go do sekcji **Wybrane typy zadań konserwacji**.
-    - Aby wybrać wszystkie dostępne typy zadań konserwacji, wybierz ![przycisk strzałki do przodu.](media/30-setup-for-objects.png) . Wszystkie typy zadań konserwacji są przenoszone z pola **Pozostałe typy zadań konserwacji** do pola **Wybrane typy zadań konserwacji**.
-    - Aby usunąć wybór typu zadania konserwacji, zaznacz go w polu **Wybrane typy zadań konserwacji**, a następnie wybierz przycisk strzałki w lewo ![Przycisk strzałki w lewo.](media/31-setup-for-objects.png), aby przenieść go do pola **Pozostałe typy zadań konserwacji**.
+    - Aby wybrać typ zadania konserwacji, zaznacz go w polu **Pozostałe typy zadań konserwacji**, a następnie wybierz przycisk strzałki w prawo ![Przycisk strzałki w prawo](media/29-setup-for-objects.png), aby przenieść go do sekcji **Wybrane typy zadań konserwacji**.
+    - Aby wybrać wszystkie dostępne typy zadań konserwacji, wybierz ![przycisk strzałki do przodu](media/30-setup-for-objects.png). Wszystkie typy zadań konserwacji są przenoszone z pola **Pozostałe typy zadań konserwacji** do pola **Wybrane typy zadań konserwacji**.
+    - Aby anulować wybór typu zadania konserwacyjnego, wybierz je w polu **Wybrane typy zadań konserwacyjnych**, a następnie wybierz przycisk strzałki w lewo ![Przycisk strzałki w lewo](media/31-setup-for-objects.png), aby przenieść je do pola **Pozostałe typy zadań konserwacyjnych**.
 
 9. Można również wybrać liczniki składnika majątku, które powinny być powiązane z typem składnika majątku. Na karcie skróconej **Liczniki** dokonaj wyborów przy użyciu metod, które są opisane dla typów zadań konserwacyjnych w kroku 8. Aby uzyskać więcej informacji o konfiguracji liczników, zobacz temat [Liczniki](counters.md).
 10. Można również wybrać typy atrybutów, które powinny być powiązane z typem składnika majątku. Na karcie skróconej **Typy atrybutów** dokonaj wyborów przy użyciu metod, które są opisane dla typów zadań konserwacyjnych w kroku 8. Następnie, aby utworzyć preferowaną sekwencję typów atrybutów, wybierz typ atrybutu w polu **Wybrane typy atrybutów** i użyj strzałek w górę i w dół, aby je przenieść. Sekwencja typów atrybutów będzie wyświetlana w składnikach majątku, które używają tego typu składnika majątku. Aby uzyskać więcej informacji o atrybutach składników majątku, zobacz temat [Typy atrybutów konserwacji](../setup-for-functional-locations/specification-types.md).
@@ -94,6 +96,3 @@ Na stronie **Części zamienne** można również tworzyć nowe części zamienn
 
 Aby sprawdzić, czy część zamienna w wybranym wierszu jest używana gdziekolwiek indziej w module Zarządzanie składnikami majątku (na przykład w odniesieniu do składników majątku i zleceń pracy), wybierz **Używająca pozycja**, aby otworzyć stronę **Używająca pozycja**. 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

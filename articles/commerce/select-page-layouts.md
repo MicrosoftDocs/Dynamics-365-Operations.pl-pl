@@ -2,24 +2,27 @@
 title: Wybieranie układów stron
 description: W tym temacie opisano sposób tworzenia i wybierania układów stron w Microsoft Dynamics 365 Commerce.
 author: psimolin
+manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e7424755ed794f4e4b8ff640a7e7b9dd96b2145fddcf91511266fa166626112d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0cbcba7ce4f40298e0f2665fa811b125f11e9490
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738006"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415064"
 ---
 # <a name="select-page-layouts"></a>Wybieranie układów stron
 
@@ -75,8 +78,3 @@ Aby wybrać inny układ dla istniejącej strony, wykonaj następujące kroki.
 
 [Weryfikowanie dostępności zawartości strony](verify-accessibility.md)
 
-[Tworzenie dynamicznych stron handlu elektronicznego na podstawie parametrów adresu URL](create-dynamic-pages.md)
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

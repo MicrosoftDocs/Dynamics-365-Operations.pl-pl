@@ -2,24 +2,27 @@
 title: Zarządzanie asortymentem (listopad 2016)
 description: Ta procedura przedstawia sposób tworzenia i publikowania nowego asortymentu produktu. Wykorzystuje dane firmy demonstracyjnej USRT.
 author: jashanno
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, RetailCategoryAndProductWorkspace, RetailCategoryAndProductAssortment, RetailAssortmentDetails, RetailOperatingUnitPicker, EcoResCategorySingleLookup
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 91d5b7077b033514f699c0393ec151d82dae5bf2551546c7371cb934273310e9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: caac7baa7841eea85c2c47f938f75663a7f9255a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769302"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414980"
 ---
 # <a name="manage-assortments-november-2016"></a>Zarządzanie asortymentem (listopad 2016)
 
@@ -52,6 +55,3 @@ Ta procedura przedstawia sposób tworzenia i publikowania nowego asortymentu pro
 1. Kliknij przycisk Publikuj.
 2. Kliknij przycisk Tak.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

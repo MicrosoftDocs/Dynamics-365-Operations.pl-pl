@@ -1,42 +1,36 @@
 ---
 title: Tworzenie opcji zapotrzebowania
-description: W tym temacie opisano opcje objęcia świadczeniem w programie Microsoft Dynamics 365 Human Resources w przypadku wyboru uczestnika w planie lub programie świadczeń.
-author: twheeloc
-ms.date: 08/24/2021
+description: Opcje zapotrzebowań w Microsoft Dynamics 365 Human Resources to poziomy zapotrzebowań na wybory uczestnika w planie lub programie świadczeń.
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 01eb0c56578cf6f6b070c4a05768ec5361993555
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 8690dbe00c2316ccf745f5222c3cbaa9c3379f85
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065875"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420114"
 ---
 # <a name="create-coverage-options"></a>Tworzenie opcji zapotrzebowania
 
+Opcje zapotrzebowań w Microsoft Dynamics 365 Human Resources to poziomy zapotrzebowań na wybory uczestnika w planie lub programie świadczeń. Na przykład opcje pokrycia mogą obejmować **Tylko pracownik** dla planu medycznego lub **Wynagrodzenie x2** dla planu ubezpieczenia na życie. Po zdefiniowaniu można ponownie użyć opcji świadczeń. Istnieje możliwość skojarzenia opcji z jednym lub kilkoma planami.
 
-[!INCLUDE [PEAP](../includes/peap-2.md)]
+Po zdefiniowaniu opcji zapotrzebowania należy dołączyć opcje zapotrzebowania do typu planu świadczeń. Typ planu jest następnie kojarzony z planem lub programem świadczeń. Opcje zapotrzebowania skojarzone z typem planu będą dostępne dla wszystkich planów utworzonych przy użyciu tego typu planu. 
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Opcje ubezpieczenia określają, kto powinien być objęty ubezpieczeniem lub jaka część jest dostępna w planie ubezpieczeniowym. Na przykład w przypadku abonamentu medycznego możesz mieć opcję **Tylko pracownik**, **Pracownik + 1** i **Rodzina**. W przypadku ubezpieczenia na życie możesz zaoferować ubezpieczenie na **1 x pensja** lub **2 x pensja**.
-
-Po zdefiniowaniu opcji zakresu świadczeń można je ponownie wykorzystać. Istnieje możliwość skojarzenia opcji z jednym lub kilkoma planami.
-
-> [!IMPORTANT]
-> Po zdefiniowaniu opcji ubezpieczenia dołącz je do typu planu świadczeń. Typ planu jest następnie kojarzony z planem lub programem świadczeń. Opcje zasięgu skojarzone z typem planu są dostępne dla wszystkich tworzonych planów tego typu.
-
-## <a name="create-coverage-options"></a>Tworzenie opcji zapotrzebowania
 1. W obszarze roboczym **Zarządzanie świadczeniami** w sekcji **Konfiguracja** wybierz opcję **Opcje objęcia świadczeniem**.
 
 2. Wybierz pozycję **Nowy**.
@@ -47,9 +41,9 @@ Po zdefiniowaniu opcji zakresu świadczeń można je ponownie wykorzystać. Istn
    | --- | --- |
    | **Opcja objęcia świadczeniem** | Unikatowa nazwa opcji objęcia świadczeniem. |
    | **Opis** | Opis opcji objęcia świadczeniem. |
-   | **Kod objęcia świadczeniem** | Kody objęcia świadczeniem przypisują kwoty minimalne i maksymalne dla każdego uprawnionego typu osoby objętej. Kod objęcia świadczeniem wskazuje, kto jest objęty lub jaki jest zakres dozwolony dla typu planu. Można wyrażać kwotę pokrycia jako kwotę dolara lub procent. Na przykład:<ul><li>**Pracownik etatowy + 1** — aby się kwalifikować, pracownik etatowy musi mieć wybraną osobę zależną (Jeśli wybrano więcej niż jedną, nie kwalifikuje się on już do tego celu).</li><li>**Pracownik etatowy + Rodzina** — Aby się kwalifikować, pracownik musi mieć wybrane co najmniej dwie osoby zależne.</li></ul> |
+   | **Kod objęcia świadczeniem** | Kody objęcia świadczeniem przypisują kwoty minimalne i maksymalne dla każdego uprawnionego typu osoby objętej. Kod objęcia świadczeniem wskazuje, kto jest objęty lub jaki jest zakres dozwolony dla typu planu. Można wyrażać kwotę pokrycia jako kwotę dolara lub procent. Na przykład:</br></br>- **EMP + 1** — aby się kwalifikować, pracownik etatowy musi mieć wybraną osobę zależną (Jeśli wybrano więcej niż jedną, nie kwalifikuje się on już do tego celu).</br></br>- **EMP + Rodzina** — Aby się kwalifikować, pracownik musi mieć wybrane co najmniej dwie osoby zależne. |
    | **Maksymalna liczba** | Maksymalna liczba osób zależnych. |
-   | **Stan** | Stan opcji objęcia świadczeniem. Jeśli stan opcji objęcia świadczeniem jest określony jako **nieaktywny**, nie można wybierać opcji objęcia w przypadku typów planów. |
+   | **Stan** | Stan opcji objęcia świadczeniem. Jeśli stan opcji objęcia świadczeniem jest określony jako nieaktywny, nie można wybierać opcji objęcia w przypadku typów planów. |
    | **Procent** | Kwota procentu. To pole jest aktywne tylko wtedy, gdy w polu Kod objęcia świadczeniem wybrano % x wynagrodzenie. |
    | **Dzielnik** | Dzielnik używany w obliczeniach po wybraniu kodu objęcia świadczeniem % x wynagrodzenie. |
    | **Minimalny procent** | Minimalna wartość procentowa w przypadku wybrania procentowego kodu objęcia świadczeniem. |
@@ -61,10 +55,7 @@ Po zdefiniowaniu opcji zakresu świadczeń można je ponownie wykorzystać. Istn
 
    | Pole | Opis |
    | --- | --- |
-   | **Zezwalaj na kwotę wkładu pracownika etatowego** | Określa, czy zezwalać pracownikom na modyfikowanie kwoty wkładu w samoobsłudze świadczeń podczas wybierania świadczeń. Jeśli to pole wyboru zostanie zaznaczone, system będzie obliczał parametry planu świadczeń na podstawie kwoty udziału, jaką pracownik wprowadzi w ramach samoobsługi świadczeń. |
+   | **Zezwalaj na kwotę wkładu pracownika etatowego** | Określa, czy zezwalać pracownikom na modyfikowanie kwoty wkładu w samoobsłudze świadczeń podczas wybierania świadczeń. Jeśli to pole wyboru zostanie zaznaczone, system będzie obliczał parametry planu świadczeń na podstawie kwoty udziału, jaką pracownik wprowadzi w ramach modułu samoobsługowego. |
    | **Zezwalaj na kwotę objęcia świadczeniem pracownika etatowego** | Określa, czy zezwalać pracownikom na modyfikowanie kwoty uprawnienia w samoobsłudze świadczeń podczas wybierania świadczeń. Jeśli to pole wyboru zostanie zaznaczone, system będzie obliczał parametry planu świadczeń na podstawie kwoty uprawnienia, jaką pracownik wprowadzi w ramach modułu samoobsługowego pracownika. |
 
 6. Wybierz opcję **Zapisz**. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

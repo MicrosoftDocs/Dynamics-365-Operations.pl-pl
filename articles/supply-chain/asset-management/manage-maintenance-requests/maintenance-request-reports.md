@@ -1,10 +1,12 @@
 ---
 title: Raporty żądania konserwacji
 description: W tym temacie wyjaśniono, jak utworzyć raporty żądania konserwacji w module Zarządzanie składnikami majątku.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/31/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: cd0d50bacd43fe66628fec94aead3a2406e8d4e62c1e2e6c3d31afa9073baa6a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9c93697921e6199587da6e3f3a116e55d4b079e8
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773616"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019611"
 ---
 # <a name="maintenance-request-reports"></a>Raporty żądania konserwacji
 
@@ -41,7 +43,7 @@ Raport **Szczegóły żądania konserwacji** zawiera różne informacje związan
 
 Na poniższej ilustracji pokazano przykład raportu **Szczegóły żądania konserwacji**.
 
-![Raport szczegółów żądania konserwacji.](media/09-manage-maintenance-requests.png)
+![Raport szczegółów żądania konserwacji](media/09-manage-maintenance-requests.png)
 
 ## <a name="create-a-maintenance-request-list-report"></a>Tworzenie raportu Lista żądań konserwacji
 
@@ -54,7 +56,4 @@ Raport **Lista żądań konserwacji** zawiera listę wszystkich żądań konserw
 
 Na poniższej ilustracji przedstawiono przykładowy raport **Lista żądań konserwacji** dla wszystkich aktywnych żądań konserwacji.
 
-![Raport listy żądania konserwacji.](media/10-manage-maintenance-requests.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+![Raport listy żądania konserwacji](media/10-manage-maintenance-requests.png)

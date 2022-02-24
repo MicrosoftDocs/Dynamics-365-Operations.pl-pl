@@ -1,14 +1,17 @@
 ---
-title: Wyświetlanie rabatów w punkcie sprzedaży
+title: Wyświetl rabaty w punkcie sprzedaży
 description: W tym temacie wyjaśniono, w jaki sposób Microsoft Dynamics 365 Commerce pomaga współpracownikom ds. sprzedaży dowiedzieć się o promocjach i sposobach ich wykorzystania do sprzedaży krzyżowej i dodatkowej.
 author: ShalabhjainMSFT
+manager: AnnBe
 ms.date: 07/29/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-Commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail, Commerce
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: 9e3fa5030cb684c01153d255ca2bd34d9be7dc9945f0c7ec26985cf74540b73d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7531e250580019a1e9892d22fc7761770227c61f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731674"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414945"
 ---
 # <a name="show-discounts-in-pos"></a>Wyświetl rabaty w punkcie sprzedaży
 
@@ -33,7 +36,7 @@ Promocje odgrywają ważną rolę w motywach klientów, którzy podejmują decyz
 
 Commerce zawiera operację o nazwie „Wyświetl wszystkie rabaty”. Ta operacja umożliwia wyświetlenie wszystkich rabatów, które są obecnie uruchomione w sklepie. Operację „Wyświetl wszystkie rabaty” można zamapować na przycisk w punkt sprzedaży (POS), a ten przycisk można dodać do strony **powitalnej** lub do strony **transakcji**. Na poniższej ilustracji pokazano przykład otwartej strony **Wszystkie rabaty**.
 
-![Strona wszystkich rabatów.](./media/View_all_discounts.png "Strona wszystkich rabatów")
+![Strona wszystkich rabatów](./media/View_all_discounts.png "Strona wszystkich rabatów")
 
 Aby wyświetlić rabaty, system wyszuka wszystkie rabaty spełniające co najmniej jeden z następujących warunków:
 
@@ -61,11 +64,8 @@ Na poniższych ilustracjach przedstawiono logikę, która określa, które rabat
 
 Na poniższej ilustracji przedstawiono logikę, która jest używana w przypadku, gdy kontrola współbieżności rabatu jest ustawiona na **najlepszą cenę i związek z priorytetem, a nie związek między priorytetami**.
 
-![Logika dla najlepszej ceny i związku w ramach priorytetu, nigdy nie związane między priorytetami.](./media/Model_1.png "Logika dla najlepszej ceny i związku w ramach priorytetu, nigdy nie związane między priorytetami")
+![Logika dla najlepszej ceny i związku w ramach priorytetu, nigdy nie związane między priorytetami](./media/Model_1.png "Logika dla najlepszej ceny i związku w ramach priorytetu, nigdy nie związane między priorytetami")
 
 Na poniższej ilustracji przedstawiono logikę, która jest używana w przypadku, gdy kontrola współbieżności rabatu jest ustawiona na **najlepszą cenę tylko w ramach priorytetu, zawsze w ramach związku między priorytetami**.
 
-![Logika dla najlepszej ceny tylko w ramach priorytetu, zawsze w ramach związku między priorytetami.](./media/Model_2.png "Logika dla najlepszej ceny tylko w ramach priorytetu, zawsze w ramach związku między priorytetami")
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+![Logika dla najlepszej ceny tylko w ramach priorytetu, zawsze w ramach związku między priorytetami](./media/Model_2.png "Logika dla najlepszej ceny tylko w ramach priorytetu, zawsze w ramach związku między priorytetami")

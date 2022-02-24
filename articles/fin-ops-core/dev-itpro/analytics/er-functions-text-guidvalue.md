@@ -2,8 +2,11 @@
 title: GUIDVALUE, funkcja ER
 description: Ten temat zawiera ogólne informacje o używaniu funkcji GUIDVALUE w module Raportowanie elektroniczne (ER).
 author: NickSelin
+manager: kfend
 ms.date: 12/12/2019
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -14,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76b918354be9b5b695cfec9d0fe7aca6c5c9e08e01b6e3d0ddfa28af877942e3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eb6f301cf7a39208aa23337401a9684fb5b3a73d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733154"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685962"
 ---
 # <a name="guidvalue-er-function"></a>GUIDVALUE, funkcja ER
 
@@ -61,6 +64,3 @@ Następnie użyj wyrażenia, takiego jak `FILTER (Users, Users.objectId = myID)`
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Funkcje tekstowe](er-functions-category-text.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

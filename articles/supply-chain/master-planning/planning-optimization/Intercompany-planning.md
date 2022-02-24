@@ -2,13 +2,16 @@
 title: Planowanie międzyfirmowe
 description: W tym temacie opisano planowanie międzyfirmowe i wyjaśniono sposób konfigurowania planowania międzyfirmowego przy użyciu optymalizacji planowania w rozwiązaniu Microsoft Dynamics 365 Supply Chain Management.
 author: ChristianRytt
+manager: tfehr
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 2bf69a5d0d6e070374277e2d82d5fbf6eb4b8704895ffe31aa7e2d2d3546bb16
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 25c80ce27498131c6eb92174ab14a592bfa9915a
+ms.sourcegitcommit: fe21a3a98dcf6fe4eb9351941493f2c0443d8696
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777918"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "4672202"
 ---
 # <a name="intercompany-planning"></a>Planowanie międzyfirmowe
 
@@ -45,8 +48,8 @@ W przypadku uruchomienia planowania głównego z planu głównego, który zawier
 
 Aby skorzystać z planowania międzyfirmowego, należy przygotować system w następujący sposób:
 
-1. Odpowiednie produkty muszą być zwolnione we wszystkich odpowiednich firmach. Aby uzyskać więcej informacji, zobacz [Konfigurowanie i używanie handlu międzyfirmowego w Dynamics 365 Supply Chain Management](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) w Microsoft Learn.
-1. Popyt od dostawcy do odbiorcy musi być pokryty zakupami od dostawcy, który pozostaje w relacji międzyfirmowej z firmą nadrzędną oraz odpowiednimi wymiarami magazynowymi (oddział i magazyn) odbiorcy. Aby uzyskać więcej informacji, zobacz [Konfigurowanie i używanie handlu międzyfirmowego w Dynamics 365 Supply Chain Management](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) w Microsoft Learn.
+1. Odpowiednie produkty muszą być zwolnione we wszystkich odpowiednich firmach. Aby uzyskać więcej informacji, zobacz [Konfigurowanie i używanie handlu międzyfirmowego w Dynamics 365 Supply Chain Management ](https://docs.microsoft.com/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) w witrynie Microsoft Learn.
+1. Popyt od dostawcy do odbiorcy musi być pokryty zakupami od dostawcy, który pozostaje w relacji międzyfirmowej z firmą nadrzędną oraz odpowiednimi wymiarami magazynowymi (oddział i magazyn) odbiorcy. Aby uzyskać więcej informacji, zobacz [Konfigurowanie i używanie handlu międzyfirmowego w Dynamics 365 Supply Chain Management ](https://docs.microsoft.com/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) w witrynie Microsoft Learn.
 1. Plan główny w firmie obsługującej przełączenie musi zawierać planowane zapotrzebowanie na zamówienie podrzędne, a odpowiednia firma i plan główny muszą być określone w planach podrzędnych.
 
 ## <a name="include-planned-downstream-demand"></a>Uwzględnij planowany popyt od dostawcy do odbiorcy
@@ -76,7 +79,7 @@ W tym przykładzie planowane zlecenie produkcyjne jest tworzone w firmie USMF w 
 
 Na poniższej ilustracji pokazano, jak ten przykład może wyglądać na stronie **Wielopoziomowe oznaczanie transakcji** dla planowanego zlecenia produkcyjnego.
 
-![Przykład obrotu międzyfirmowego obejmujący dwie firmy.](media/IntercompanyPlanning1.png)
+![Przykład obrotu międzyfirmowego obejmujący dwie firmy](media/IntercompanyPlanning1.png)
 
 ### <a name="intercompany-example-that-involves-three-companies"></a>Przykład obrotu międzyfirmowego obejmujący trzy firmy
 
@@ -84,7 +87,4 @@ W tym przykładzie planowane zamówienie zakupu jest tworzone w firmie USMF w ce
 
 Na poniższej ilustracji pokazano, jak ten przykład może wyglądać na stronie **Wielopoziomowe oznaczanie transakcji** dla planowanego zlecenia produkcyjnego.
 
-![Przykład obrotu międzyfirmowego obejmujący trzy firmy.](media/IntercompanyPlanning2.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+![Przykład obrotu międzyfirmowego obejmujący trzy firmy](media/IntercompanyPlanning2.png)

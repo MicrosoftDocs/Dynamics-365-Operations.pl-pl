@@ -52,6 +52,3 @@ Onboard automatycznie wyśle nowemu pracownikowi wiadomość e-mail, w której b
     ![[Wysyłanie zmian w szablonie wdrażania do pracy do wszystkich przewodników, które zostały utworzone z niego](./media/onboard-push-changes.png)](./media/onboard-push-changes.png)
 
 Zmiany będą widoczne dla nowych pracowników, którzy otworzą przewodniki wdrażania do pracy. Jednak Onboard nie będzie wysyłać alertów e-mail do nowych pracowników, aby poinformować ich, że ich przewodnik wdrażania do pracy się zmienił. Aby ułatwić identyfikację, obok każdej zmiany pojawi się czerwony znacznik **Nowe**. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

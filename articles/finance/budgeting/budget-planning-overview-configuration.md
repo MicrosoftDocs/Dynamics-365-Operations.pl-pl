@@ -1,25 +1,29 @@
 ---
-# required metadata
 title: Omówienie planowania budżetu
 description: W tym temacie opisano planowanie budżetu. Ten temat zawiera informacje na temat sposobu skonfigurowania planowania budżetu i procesów konfigurowania planowania budżetu.
 author: panolte
+manager: AnnBe
 ms.date: 01/11/2018
-ms.topic: overview
-ms.prod: null
-ms.technology: null
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-  - '17251'
-  - intro-internal
+ms.custom: 17251
 ms.assetid: a2e06633-a800-4840-a962-88fed8462104
 ms.search.region: Global
 ms.author: sigitac
-ms.search.validFrom: '2016-02-28'
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 847ae83102345a8005a8b2a630805d22ccfd736d
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019235"
 ---
-
 # <a name="budget-planning-overview"></a>Omówienie planowania budżetu
 
 [!include [banner](../includes/banner.md)]
@@ -38,7 +42,7 @@ Organizacja może konfigurować planowanie budżetu, a następnie konfigurować 
 - **Etapy planowania budżetu** — etapy planowania budżetu definiują kroki planu budżetu od początku do ostatecznego zatwierdzenia. Etapy planowania budżetu są organizowane w przepływy pracy dla planowania budżetu.
 - **Przepływy pracy planowania budżetu** — przepływy pracy planowania budżetu obejmują i definiują etapy planowania budżetu. Przepływy pracy planowania budżetu są skojarzone z przepływami pracy budżetowania. Przepływy pracy Budżetowanie są zautomatyzowanymi i ręcznymi procesami, które przenoszą plany budżetu przez etapy planowania budżetu.
 
-[![Terminologia związana z planowaniem budżetu.](./media/budgetplanning-terms-1024x504.png)](./media/budgetplanning-terms.png)
+[![Terminologia związana z planowaniem budżetu](./media/budgetplanning-terms-1024x504.png)](./media/budgetplanning-terms.png)
 
 ### <a name="typical-tasks"></a>Typowe zadania
 
@@ -63,17 +67,17 @@ Opcjonalnym, ale zalecanym pierwszym krokiem jest utworzenie schematu zawierają
 
 Na poniższej ilustracji pokazano ogólny przykład, w którym dla różnych poziomów organizacji tworzone są oddzielne przepływy pracy. Dla każdego przepływu pracy definiowane są etapy, a do każdego etapu przypisywane są określone scenariusze z danymi budżetowymi. Wykonywane są zadania przenoszenia danych z jednego etapu do następnego. Na przykład kwoty mogą być przydzielane lub agregowane na różnych kontach, zatwierdzeniach lub innych dokumentach kontrolnych. W tej ilustracji kursywa oznacza scenariusz niedostępny do edycji na danym etapie lub dane archiwalne albo zatwierdzone na wcześniejszym etapie, które z tego powodu nie powinny być zmieniane.
 
-[![Ogólny schemat planowania budżetu.](./media/budgetplanninggenericschema-300x145.png)](./media/budgetplanninggenericschema.png) 
+[![Ogólny schemat planowania budżetu](./media/budgetplanninggenericschema-300x145.png)](./media/budgetplanninggenericschema.png) 
 
 Na poniższej ilustracji widać przykład, gdzie centrala firmy szacuje kwoty podstawowe dla wstępnego budżetu i dystrybuuje jest do departamentów sprzedaży. Następnie działy sprzedaży prognozują i przesyłają prognozy z powrotem do centrali, gdzie menedżer budżetu agreguje je i dostosowuje. Na koniec menedżer budżetu wysyła skorygowane kwoty budżetu do dyrektora finansowego (CFO) w celu sprawdzenia, wprowadzenia ostatnich korekt i ostatecznego zatwierdzenia.
 
-[![Przykład schematu planowania budżetu.](./media/budgetplanningexampleschema-300x145.png)](./media/budgetplanningexampleschema.png)
+[![Przykład schematu planowania budżetu](./media/budgetplanningexampleschema-300x145.png)](./media/budgetplanningexampleschema.png)
 
 ### <a name="organization-hierarchy-for-budget-planning"></a>Hierarchia organizacyjna dla planowania budżetu
 
 Na stronie **Hierarchia organizacyjna** można określić hierarchię organizacyjną jako hierarchię planowania budżetu dla każdego procesu planowania budżetu. Hierarchia planowania budżetu nie musi pasować do standardowej hierarchii organizacyjnej, która jest używana do innych celów. Ponieważ ta hierarchia służy do agregowania i dystrybucji danych, można zaprojektować dla niej inną strukturę. W przykładowym schemacie działy sprzedaży są poniżej poziomu centrali obejmującego działy budżetu i finansowy. Ta struktura prawdopodobnie różni się od struktury służącej do zarządzania operacjami działów sprzedaży. Do każdego procesu planowania budżetu można przypisać tylko hierarchię organizacyjną.
 
-Więcej informacji można znaleźć w temacie [Organizacje i hierarchie organizacyjne](../../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md).
+Więcej informacji można znaleźć w temacie [Organizacje i hierarchie organizacyjne](../../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md).
 
 ### <a name="user-security"></a>Zabezpieczenia użytkownika
 
@@ -91,7 +95,7 @@ Dobrym rozwiązaniem jest utworzenie przepływu pracy planowania budżetu dla ka
 
 Przepływ pracy budżetowanie dla planowania budżetu tworzy się na stronie **Przepływy pracy Budżetowanie**. Ten proces przypomina proce tworzenia innych przepływów pracy. Na poniższe ilustracji pokazano przykład przepływu pracy dla centrali.
 
-[![Przepływ pracy Budżetowanie dla planowania budżetu.](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
+[![Przepływ pracy Budżetowanie dla planowania budżetu](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
 
 Typy przepływu pracy zawierają następujące elementy:
 
@@ -139,11 +143,11 @@ Podczas konfigurowania alokacji etapu należy skojarzyć przepływ pracy planowa
 
 W przykładowym schemacie, pokazanym wcześniej w tym temacie, alokacja służy do przenoszenia kwot z planu i scenariuszy budżetu na etapie „Podstawowy” w centrali do innego planu i scenariuszy budżetu na etapie „Szacowanie” w dziale sprzedaży. Poniższa ilustracja pokazuje odpowiednią sekcję przykładowego schematu.
 
-[![Alokacja etapu.](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
+[![Alokacja etapu](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
 
 Ponadto w przykładowym schemacie agregacja jest wykonywana z planów i scenariuszy budżetu na etapie „Przesłano” w Dziale sprzedaży do nadrzędnego planu na etapie „Akumulacja” w Centrali. Poniższa ilustracja pokazuje odpowiednią sekcję przykładowego schematu.
 
-[![Agregacja.](./media/aggregation-109x300.png)](./media/aggregation.png)
+[![Agregacja](./media/aggregation-109x300.png)](./media/aggregation.png)
 
 ### <a name="priorities"></a>Priorytety
 
@@ -161,7 +165,7 @@ Oprócz kolumn dla kwot budżetu można zdefiniować kolumny dla pól projektu, 
 
 W przypadku przykładowego schematu można utworzyć kolumny scenariuszy „sprzedaż”, „kontrakty” i „Prognoza”. (Na poniższej ilustracji pokazano odpowiednią sekcję schematu.) Można następnie podzielić jeden lub wszystkie z tych scenariuszy na osobne kolumny dla każdego kwartału roku obrachunkowego, tak aby menedżer ds. sprzedaży w dziale mógł dokładnie wprowadzać kwoty prognozy dla każdego okresu.
 
-[![Ilustracja sekcji schematu dodawania kolumn.](./media/columns.png)](./media/columns.png)
+[![Kolumny](./media/columns.png)](./media/columns.png)
 
 Można również określić, czy poszczególne elementy układu (kolumna) są dostępne do edycji i czy są one dostępne w jakimkolwiek szablonie arkusza utworzonego w tym układzie. W przykładowym schemacie w układzie używanym dla etapu „Szacowanie”, kolumny „Prognoza” są dostępne do edycji, a kolumny „Sprzedaż w poprzednim roku” i „Umowy” są tylko do odczytu.
 
@@ -199,7 +203,4 @@ Menu **Akcje** można też użyć do utworzenia nowego procesu przez skopiowanie
 
 Innym przydatnym poleceniem w menu **Akcje** jest **Wyświetlenie stanu procesu budżetu**. To polecenie graficznie pokazuje plany budżetu w procesie wraz z odpowiednimi danymi, takimi jak stan przepływu pracy planów, podsumowania według kwot i jednostki oraz przechodzenie jednym kliknięciem do samych planów budżetu.
 
-[![Stan procesu planowania budżetu.](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[![Stan procesu planowania budżetu](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)

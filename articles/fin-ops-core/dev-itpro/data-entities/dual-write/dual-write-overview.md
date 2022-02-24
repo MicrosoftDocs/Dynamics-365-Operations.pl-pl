@@ -1,36 +1,45 @@
 ---
-title: Omówienie podwójnego zapisu
-description: Ten temat zawiera opis podwójnego zapisu, który zapewnia współpracę prawie w czasie rzeczywistym między aplikacjami Customer Engagement a aplikacjami Finanse i Operacje.
+title: Przegląd o podwójnym zapisie
+description: Ten temat stanowi omówienie podwójnego zapisu. Podwójny zapis to infrastruktura umożliwiająca współpracę w czasie rzeczywistym między aplikacjami opartymi na modelach Microsoft Dynamics 365 i aplikacjami Finance and Operations.
 author: RamaKrishnamoorthy
+manager: AnnBe
 ms.date: 02/06/2020
-ms.topic: overview
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
+ms.search.industry: ''
 ms.author: ramasri
+ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: f39322a0c2ef50ef2bbeb256c80096e0687c4642
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 85530cf644c7b7ffe922a6fb3288f4e05c5df91c
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061341"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685620"
 ---
-# <a name="dual-write-overview"></a>Omówienie podwójnego zapisu
+# <a name="dual-write-overview"></a>Przegląd o podwójnym zapisie
 
 [!include [banner](../../includes/banner.md)]
 
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
 
 ## <a name="what-is-dual-write"></a>Co to jest podwójny zapis?
 
-Podwójny zapis to gotowa infrastruktura umożliwiająca współpracę w czasie rzeczywistym między aplikacjami oferującymi spersonalizowaną obsługę klienta a aplikacjami Finanse i Operacje. Gdy dane dotyczące odbiorców, produktów, osób i operacji przepływają poza granice aplikacji, wszystkie działy w organizacji zyskują możliwości.
+Podwójny zapis to gotowa infrastruktura umożliwiająca współpracę w czasie rzeczywistym między aplikacjami oferującymi spersonalizowaną obsługę klienta a aplikacjami Finance and Operations. Gdy dane dotyczące odbiorców, produktów, osób i operacji przepływają poza granice aplikacji, wszystkie działy w organizacji zyskują możliwości.
 
-Funkcja podwójnego zapisu zapewnia ściśle powiązaną, dwukierunkową integrację między aplikacjami Finanse i Operacje i Dataverse. Każda zmiana danych w aplikacjach Finanse i Operacje powoduje zapis do Dataverse, a zmiana danych w Dataverse powoduje zapis w aplikacjach Finanse i Operacje. Ten zautomatyzowany przepływ danych umożliwia korzystanie ze zintegrowanego środowiska użytkownika w aplikacjach.
+Podwójny zapis to ściśle sprzężona i dwukierunkowa integracja między aplikacjami Finance and Operations i Dataverse. Każda zmiana danych w aplikacjach Finance and Operations powoduje zapis do Dataverse, a zmiana danych w Dataverse powoduje zapis w aplikacjach Finance and Operations. Ten zautomatyzowany przepływ danych umożliwia korzystanie ze zintegrowanego środowiska użytkownika w aplikacjach.
 
-![Relacja danych między aplikacjami.](media/dual-write-overview.jpg)
+![Relacja danych między aplikacjami](media/dual-write-overview.jpg)
 
 Podwójny zapis ma dwie aspekty: *aspekt infrastruktury* i aspekt *aplikacji*.
 
@@ -44,14 +53,14 @@ Infrastruktura podwójnego zapisu jest rozszerzalna i niezawodna i obejmuje nast
 + Połączony widok działań i dzienników błędów dla administratorów danych
 + Możliwość konfigurowania niestandardowych alertów i progów oraz subskrybowanie powiadomień
 + Intuicyjny interfejs użytkownika służący do filtrowania i przekształcania
-+ Możliwość ustawiania i wyświetlania zależności i relacji tabel
++ Możliwość ustawiania i wyświetlania zależności i relacji jednostek
 + Rozszerzalność dla tabel i map standardowych i niestandardowych
 + Niezawodne zarządzanie cyklem życia zasobu
 + Korzystanie z gotowej konfiguracji wstępnej dla nowych odbiorców
 
-### <a name="application"></a>Zgłoszenie
+### <a name="application"></a>Zgłoszenia
 
-Podwójny zapis tworzy mapowanie między pojęciami w aplikacjach Finanse i Operacje i koncepcjami w aplikacjach służących do oferowania spersonalizowanej obsługi klienta. Ta integracja obsługuje następujące scenariusze:
+Podwójny zapis tworzy mapowanie między pojęciami w aplikacjach Finance and Operations i koncepcjami w aplikacjach służących do oferowania spersonalizowanej obsługi klienta. Ta integracja obsługuje następujące scenariusze:
 
 + Zintegrowane dane główne odbiorcy
 + Dostęp do kart lojalnościowych odbiorcy i punktów lojalnościowych
@@ -67,35 +76,36 @@ Podwójny zapis tworzy mapowanie między pojęciami w aplikacjach Finanse i Oper
 + Możliwość wyszukiwania dostępnych zapasów i szczegółów
 + Edytuj doświadczenie Od projektu do środków pieniężnych
 + Możliwość obsługi wielu adresów i ról za pośrednictwem koncepcji strony
-
++ Zarządzanie pojedynczym źródłem danych dla użytkowników
++ Zintegrowane kanały do sprzedaży detalicznej i marketingu
++ Widoczność dla promocji i rabatów
++ Funkcje Od żądania do usługi
++ Usprawnione operacje usług
 
 ## <a name="top-reasons-to-use-dual-write"></a>Najważniejsze powody użycia funkcji podwójnego zapisu
 
 Podwójny zapis dostarcza integrację danych między aplikacjami Microsoft Dynamics 365. To niezawodne środowisko łączy szkieletowo i umożliwia różnym aplikacjom biznesowym współdziałanie ze sobą. Oto najważniejsze powody, dla których należy zastosować metodę podwójnego odpisu:
 
-+ Funkcja podwójnego zapisu zapewnia ściśle powiązaną, działającą niemal w czasie rzeczywistym i dwukierunkową integrację między aplikacjami finansowymi i operacyjnymi oraz aplikacjami do obsługi klientów. Taka integracja stanowi Microsoft Dynamics 365 miejsce, gdzie można znaleźć wszystkie rozwiązania biznesowe. Klienci, którzy korzystają z Dynamics 365 Finance i Dynamics 365 Supply Chain Management, ale używają rozwiązań innych firm niż Microsoft do zarządzania relacjami z klientami (CRM), przenoszą się do Dynamics 365, aby skorzystać ze wsparcia podwójnego zapisu.
++ Podwójny zapis umożliwia ścisłą integrację między aplikacjami Finance and Operations a aplikacjami opartymi na modelach w Dynamics 365. Taka integracja stanowi Microsoft Dynamics 365 miejsce, gdzie można znaleźć wszystkie rozwiązania biznesowe. Klienci, którzy korzystają z Dynamics 365 Finance i Dynamics 365 Supply Chain Management, ale używają rozwiązań innych firm niż Microsoft do zarządzania relacjami z klientami (CRM), przenoszą się do Dynamics 365, aby skorzystać ze wsparcia podwójnego zapisu.
 + Dane pochodzące od odbiorców, produktów, operacji, projektów i Internetu rzeczy (IoT) automatycznie przepływają do Dataverse w ramach podwójnego zapisu. To połączenie jest przydatne w przypadku firm, które interesują się tymi samymi rozszerzeniami Power Platform.
 + Infrastruktura podwójnego zapisywania jest zgodna z zasadą braku kodowania/małej ilości kodowania. Wymagane są minimalne nakłady pracy inżynieryjnej, aby rozszerzyć standardowe mapy od tabeli do tabeli i uwzględnić mapy niestandardowe.
 + Podwójne zapisywanie obsługuje tryb online i tryb offline. Firma Microsoft jest jedyną firmą, która oferuje obsługę trybów online i offline.
 
 ## <a name="what-does-dual-write-mean-for-developers-and-architects-of-customer-engagement-apps"></a><a id="developer-architect"></a>Co oznacza podwójny zapis dla programistów i architektów aplikacji do personalizowania obsługi klienta?
 
-Podwójny odpis automatyzuje przepływ danych między aplikacjami Finanse i Operacje i aplikacjami służącymi do personalizowania obsługi klienta. Podwójny zapis składa się z dwóch rozwiązań AppSource, które są zainstalowane w Dataverse. W rozwiązaniach jest rozszerzany schemat tabeli, wtyczki i przepływy pracy w ramach Dataverse, dzięki czemu można je skalować do rozmiarów ERP. W przypadku pomyślnej implementacji deweloperzy i architekci aplikacji do personalizowania obsługi klienta muszą zrozumieć te zmiany i współpracować z ich odpowiednikami w aplikacjach Finanse i Operacje.
+Podwójny odpis automatyzuje przepływ danych między aplikacjami Finance and Operations i aplikacjami służącymi do personalizowania obsługi klienta. Podwójny zapis składa się z dwóch rozwiązań AppSource, które są zainstalowane w Dataverse. W rozwiązaniach jest rozszerzany schemat encji, wtyczki i przepływy pracy w ramach Dataverse, dzięki czemu można je skalować do rozmiarów ERP. W przypadku pomyślnej implementacji deweloperzy i architekci aplikacji do personalizowania obsługi klienta muszą zrozumieć te zmiany i współpracować z ich odpowiednikami w aplikacjach Finance and Operations.
 
-Aby utworzyć równość z odpowiednikami aplikacji Finanse i Operacje, system podwójnego zapisu tworzy istotne zmiany w schemacie Dataverse. W przypadku zrozumienia planu można uniknąć przepracowania projektu i dodatkowej pracy w przyszłości.
+Aby utworzyć równość z odpowiednikami aplikacji Finance and Operations, system podwójnego zapisu tworzy istotne zmiany w schemacie Dataverse. W przypadku zrozumienia planu można uniknąć przepracowania projektu i dodatkowej pracy w przyszłości.
 
-+ Po zainstalowaniu pakietu podwójnego zapisu AppSource, w ramach Dataverse będą istniały nowe koncepcje, takie jak firma i strona. Te pojęcia pomagają aplikacjom utworzonym w Dataverse, takim jak m.in. Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Customer Service oraz Dynamics 365 Field Service, wchodzić w płynną interakcję z aplikacjami Finanse i Operacje.
++ Po zainstalowaniu pakietu podwójnego zapisu AppSource, w ramach Dataverse będą istniały nowe koncepcje, takie jak firma i strona. Te pojęcia pomagają aplikacjom utworzonym w Dataverse,takim jak m.in. Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Customer Service oraz Dynamics 365 Field Service, wchodzić w płynną interakcję z aplikacjami Finance and Operations.
 
 + Działania i uwagi są zunifikowane i rozwinięte, co pozwala na obsługę zarówno C1 (użytkowników systemu), jak i C2 (odbiorców systemu).
 
-+ Aby zapobiec utracie danych podczas przesyłania walut między aplikacjami Finanse i Operacje i Dataverse, można rozszerzyć liczbę miejsc dziesiętnych w typie danych Waluta dla aplikacji służących do spersonalizowanej obsługi klienta. Funkcja automatycznie tłumaczy istniejące wiersze na nowy stan rozszerzony na warstwie metadanych. W trakcie tego procesu wartość waluty jest tłumaczona na dane dziesiętne, a nie dane pieniężne, a wartość waluty obsługuje do 10 miejsc po przecinku. Ta funkcja jest opcjonalna. Organizacje, które nie potrzebują korzystać z więcej niż 4 miejsc po przecinku, nie muszą jej używać. Aby uzyskać więcej informacji, przejrzyj [migrację danych typu Waluta w systemie podwójnego zapisu](currrency-decimal-places.md).
++ Aby zapobiec utracie danych podczas przesyłania walut między aplikacjami Finance and Operations i Dataverse, można rozszerzyć liczbę miejsc dziesiętnych w typie danych Waluta dla aplikacji służących do spersonalizowanej obsługi klienta. Funkcja automatycznie tłumaczy istniejące wiersze na nowy stan rozszerzony na warstwie metadanych. W trakcie tego procesu wartość waluty jest tłumaczona na dane dziesiętne, a nie dane pieniężne, a wartość waluty obsługuje do 10 miejsc po przecinku. Ta funkcja jest opcjonalna. Organizacje, które nie potrzebują korzystać z więcej niż 4 miejsc po przecinku, nie muszą jej używać. Aby uzyskać więcej informacji, przejrzyj [migrację danych typu Waluta w systemie podwójnego zapisu](currrency-decimal-places.md).
 
-+ [Efektywność danych](../../dev-tools/date-effectivity.md) zostanie dodana do Dataverse. Będzie obsługiwać przeszłe, obecne i przyszłe dane w tej samej tabeli.
++ [Efektywność danych](../../dev-tools/date-effectivity.md) zostanie dodana do Dataverse. Będzie obsługiwać przeszłe, obecne i przyszłe dane w tej samej encji.
 
 + [Konwersje jednostek](../../../../supply-chain/pim/tasks/manage-unit-measure.md) produktów są obsługiwane w przypadku produktów, ofert, zamówień i faktur.
 
 Aby uzyskać więcej informacji o nadchodzących zmianach, zapoznaj się z [nowościami lub zmianami dotyczącymi podwójnego zapisu](whats-new-dual-write.md).
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

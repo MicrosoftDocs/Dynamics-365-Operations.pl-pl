@@ -1,39 +1,37 @@
 ---
 title: Konfigurowanie integracji z rozwiązaniem Finance
-description: W tym temacie opisano integrację między Dynamics 365 Human Resources i Dynamics 365 Finance.
-author: twheeloc
-ms.date: 08/19/2021
+description: W tym artykule opisano dostępne funkcje integracji między rozwiązaniami Dynamics 365 Human Resources i Dynamics 365 Finance.
+author: andreabichsel
+manager: AnnBe
+ms.date: 03/26/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0a2c5dd0ce97f33f5f8b65c801fbc15dfc65e8d4
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 3b4d6369ab567879e23e1f132265aaff45c8ce47
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065023"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527929"
 ---
 # <a name="configure-integration-with-finance"></a>Konfigurowanie integracji z rozwiązaniem Finance
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-[!INCLUDE [PEAP](../includes/peap-2.md)]
+Aby zintegrować Dynamics 365 Human Resources z Dynamics 365 Finance, można skorzystać z szablonu Human Resources do Finance w [Integratorze danych](https://docs.microsoft.com/powerapps/administrator/data-integrator). Szablon Human Resources do Finance umożliwia przepływ danych dla zadań, stanowisk i pracowników. Szablon umożliwia przepływ danych z Human Resources do Finance, ale nie pozwala na przepływ danych z Finance do Human Resources.
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
-
-Aby zintegrować Dynamics 365 Human Resources z Dynamics 365 Finance, można skorzystać z szablonu Human Resources do Finance w [Integratorze danych](/powerapps/administrator/data-integrator). Szablon Human Resources do Finance umożliwia przepływ danych dla zadań, stanowisk i pracowników. Szablon umożliwia przepływ danych z Human Resources do Finance, ale nie pozwala na przepływ danych z Finance do Human Resources.
-
-![Przepływ integracji z programu Human Resources do programu Finance.](./media/hr-admin-integration-finance-flow.png)
+![Przepływ integracji z programu Human Resources do programu Finance](./media/hr-admin-integration-finance-flow.png)
 
 Rozwiązanie Z Human Resources do Finance oferuje następujące rodzaje synchronizacji danych:
 
@@ -46,7 +44,7 @@ Rozwiązanie Z Human Resources do Finance oferuje następujące rodzaje synchron
 
 Rozwiązanie integracyjne wymaga następujących wersji modułu Human Resources i aplikacji Finance: 
 
-- Dynamics 365 Human Resources w tabeli Dataverse
+- Dynamics 365 Human Resources w tabeli Common Data Service
 - Dynamics 365 Finance, wersja 7.2 lub nowsza
 
 ## <a name="template-and-tasks"></a>Szablon i zadania
@@ -57,7 +55,7 @@ Aby uzyskać dostęp do szablonu Z Human Resources do Finance.
 
 2. Wybierz **Projekty**, a następnie wybierz opcję **Nowy projekt** w prawym górnym rogu. Dla każdej firmy, która ma zostać zintegrowana z Finance, należy utworzyć nowy projekt.
 
-3. Wybierz **Human Resources (Human Resources Dataverse do Finance)**, aby synchronizować rekordy z Human Resources do Finance.
+3. Wybierz **Human Resources (Human Resources Common Data Service do Finance)**, aby synchronizować rekordy z Human Resources do Finance.
 
 Szablon używa poniższych podstawowcy zadań do synchronizowania rekordów z Human Resources do Finance:
 
@@ -83,14 +81,14 @@ W poniższych tabelach mapowania szablonów nazwa zadania zawiera jednostki uży
 
 ### <a name="job-functions-to-compensation-job-function"></a>Z Funkcje stanowisk do Wynagrodzenie — funkcja stanowiska
 
-| Tabela Dataverse (źródło) | Jednostka finansowa (lokalizacja docelowa) |
+| Jednostka usługi Common Data Service (źródło) | Jednostka finansowa (lokalizacja docelowa) |
 |-------------------------------------|---------------------------------------------|
 | cdm_name (cdm_Job   Nazwa funkcji)  | JOBFUNCTIONID   (JOBFUNCTIONID)            |
 | cdm_description   (cdm_description) | DESCRIPTION   (DESCRIPTION)                 |
 
 ### <a name="departments-to-operating-unit"></a>Z Działy do Jednostka operacyjna
 
-| Tabela Dataverse (źródło)           | Jednostka finansowa (lokalizacja docelowa) |
+| Jednostka usługi Common Data Service (źródło)           | Jednostka finansowa (lokalizacja docelowa) |
 |-----------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                           | NAME (NAME)                                 |
 | cdm_departmentnumber   (cdm_departmentnumber) | OPERATINGUNITNUMBER   (OPERATINGUNITNUMBER) |
@@ -99,7 +97,7 @@ W poniższych tabelach mapowania szablonów nazwa zadania zawiera jednostki uży
 
 ### <a name="job-types-to-compensation-job-type"></a>Z Typy funkcji do Wynagrodzenie — typ stanowiska
 
-| Tabela Dataverse (źródło)   | Jednostka finansowa (lokalizacja docelowa) |
+| Jednostka usługi Common Data Service (źródło)   | Jednostka finansowa (lokalizacja docelowa) |
 |---------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                   | JOBTYPEID   (JOBTYPEID)                     |
 | cdm_description   (cdm_description)   | DESCRIPTION   (DESCRIPTION)                 |
@@ -107,7 +105,7 @@ W poniższych tabelach mapowania szablonów nazwa zadania zawiera jednostki uży
 
 ### <a name="jobs-to-jobs"></a>Z Funkcje do Funkcje
 
-| Tabela Dataverse (źródło)                           | Jednostka finansowa (lokalizacja docelowa)           |
+| Jednostka usługi Common Data Service (źródło)                           | Jednostka finansowa (lokalizacja docelowa)           |
 |---------------------------------------------------------------|-------------------------------------------------------|
 | cdm_name (cdm_name)                                           | JOBID (JOBID)                                         |
 | cdm_maximumnumberofpositions   (cdm_maximumnumberofpositions) | MAXIMUMNUMBEROFPOSITIONS   (MAXIMUMNUMBEROFPOSITIONS) |
@@ -117,7 +115,7 @@ W poniższych tabelach mapowania szablonów nazwa zadania zawiera jednostki uży
 
 ### <a name="jobs-to-job-detail"></a>Z Funkcje do Szczegóły funkcji
 
-| Tabela Dataverse (źródło)                             | Jednostka finansowa (lokalizacja docelowa) |
+| Jednostka usługi Common Data Service (źródło)                             | Jednostka finansowa (lokalizacja docelowa) |
 |-----------------------------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                                             | JOBID (JOBID)                               |
 | cdm_jobtypeid.cdm_name   (Typ funkcji (Nazwa typu funkcji))             | JOBTYPEID   (JOBTYPEID)                     |
@@ -128,7 +126,7 @@ W poniższych tabelach mapowania szablonów nazwa zadania zawiera jednostki uży
 
 ### <a name="position-types-to-position-type"></a>Z Typy stanowisk do Typ stanowiska
 
-| Tabela Dataverse (źródło)       | Jednostka finansowa (lokalizacja docelowa) |
+| Jednostka usługi Common Data Service (źródło)       | Jednostka finansowa (lokalizacja docelowa) |
 |-------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                       | POSITIONTYPEID   (POSITIONTYPEID)           |
 | cdm_description   (cdm_description)       | DESCRIPTION   (DESCRIPTION)                 |
@@ -136,13 +134,13 @@ W poniższych tabelach mapowania szablonów nazwa zadania zawiera jednostki uży
 
 ### <a name="job-positions-to-base-position"></a>Ze Stanowiska funkcji do Bazowe stanowisko
 
-| Tabela Dataverse (źródło)           | Jednostka finansowa (lokalizacja docelowa) |
+| Jednostka usługi Common Data Service (źródło)           | Jednostka finansowa (lokalizacja docelowa) |
 |-----------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber   (Numer stanowiska funkcji) | POSITIONID (POSITIONID)                      |
 
 ### <a name="job-positions-to-position-details"></a>Ze Stanowiska funkcji do Szczegóły stanowiska
 
-| Tabela Dataverse (źródło)              | Jednostka finansowa (lokalizacja docelowa)       |
+| Jednostka usługi Common Data Service (źródło)              | Jednostka finansowa (lokalizacja docelowa)       |
 |--------------------------------------------------------------------------|---------------------------------------------------|
 | cdm_jobpositionnumber  (Numer stanowiska funkcji)                            | POSITIONID (POSITIONID)                             |
 | cdm_jobid.cdm_name   (Funkcja (Nazwa))                                        | JOBID (JOBID)                                    |
@@ -156,7 +154,7 @@ W poniższych tabelach mapowania szablonów nazwa zadania zawiera jednostki uży
 
 ### <a name="job-positions-to-position-durations"></a>Ze Stanowiska funkcji do Okresy ważności stanowisk
 
-| Tabela Dataverse (źródło)             | Jednostka finansowa (lokalizacja docelowa) |
+| Jednostka usługi Common Data Service (źródło)             | Jednostka finansowa (lokalizacja docelowa) |
 |-------------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber   (Numer stanowiska funkcji)   | POSITIONID (POSITIONID)                      |
 | Obliczona aktywacja (Obliczona aktywacja) | VALIDFROM (VALIDFROM)                        |
@@ -164,7 +162,7 @@ W poniższych tabelach mapowania szablonów nazwa zadania zawiera jednostki uży
 
 ### <a name="job-positions-to-position-hierarchies"></a>Ze Stanowiska funkcji do Hierarchii stanowisk
 
-| Tabela Dataverse (źródło)        | Jednostka finansowa (lokalizacja docelowa) |
+| Jednostka usługi Common Data Service (źródło)        | Jednostka finansowa (lokalizacja docelowa) |
 |-----------------------------------------------------------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber   (Numer stanowiska funkcji)                                                 | POSITIONID(POSITIONID)                      |
 | cdm_parentjobpositionid.cdmjobpositionnumber   (cdm_parentjobpositionid.cdmjobpositionnumber) | PARENTPOSITIONID (PARENTPOSITIONID)         |
@@ -174,7 +172,7 @@ W poniższych tabelach mapowania szablonów nazwa zadania zawiera jednostki uży
 
 
 ### <a name="workers-to-worker"></a>Z Pracownik do Pracownik
-| Tabela Dataverse (źródło)           | Jednostka finansowa (lokalizacja docelowa)       |
+| Jednostka usługi Common Data Service (źródło)           | Jednostka finansowa (lokalizacja docelowa)       |
 |-----------------------------------------------|---------------------------------------------------|
 | cdm_birthdate   (cdm_birthdate)               | BIRTHDATE   (BIRTHDATE)                           |
 | cdm_gender   (cdm_gender)                     | GENDER (GENDER)                                   |
@@ -193,7 +191,7 @@ W poniższych tabelach mapowania szablonów nazwa zadania zawiera jednostki uży
 
 ### <a name="employments-to-employment"></a>Z Etaty do Zatrudnienie
 
-| Tabela Dataverse (źródło)                             | Jednostka finansowa (lokalizacja docelowa) |
+| Jednostka usługi Common Data Service (źródło)                             | Jednostka finansowa (lokalizacja docelowa) |
 |-----------------------------------------------------------------|---------------------------------------------|
 | cdm_employmentstartdate   (cdm_employmentstartdate)             | EMPLOYMENTSTARTDATE   (EMPLOYMENTSTARTDATE) |
 | cdm_employmentenddate   (cdm_employmentenddate)                 | EMPLOYMENTENDDATE   (EMPLOYMENTENDDATE)     |
@@ -203,7 +201,7 @@ W poniższych tabelach mapowania szablonów nazwa zadania zawiera jednostki uży
 
 ### <a name="employments-to-employment-detail"></a>Z Etaty do Szczegóły zatrudnienia
 
-| Tabela Dataverse (źródło)                             | Jednostka finansowa (lokalizacja docelowa)   |
+| Jednostka usługi Common Data Service (źródło)                             | Jednostka finansowa (lokalizacja docelowa)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_employmentstartdate   (cdm_employmentstartdate)             | EMPLOYMENTSTARTDATE   (EMPLOYMENTSTARTDATE)   |
 | cdm_employmentenddate   (cdm_employmentenddate)                 | EMPLOYMENTENDDATE   (EMPLOYMENTENDDATE)       |
@@ -221,7 +219,7 @@ W poniższych tabelach mapowania szablonów nazwa zadania zawiera jednostki uży
 
 ### <a name="position-worker-assignment-to-position-worker-assignments"></a>Z Przypisanie pracownika do stanowiska do Przypisania pracowników do stanowisk
 
-| Tabela Dataverse (źródło)                             | Jednostka finansowa (lokalizacja docelowa)   |
+| Jednostka usługi Common Data Service (źródło)                             | Jednostka finansowa (lokalizacja docelowa)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_workerid.cdm_workernumber   (cdm_workerid.cdm_workernumber) | PERSONNELNUMBER   (PERSONNELNUMBER)           |
 | cdm_jobpositionnumber   (Numer stanowiska funkcji)                   | POSITIONID(POSITIONID)                        |
@@ -230,7 +228,7 @@ W poniższych tabelach mapowania szablonów nazwa zadania zawiera jednostki uży
 
 ### <a name="worker-addresses-to-worker-postal-address-v2"></a>Z Adresy pracowników do Adres pocztowy pracownika wer. 2
 
-| Tabela Dataverse (źródło)                             | Jednostka finansowa (lokalizacja docelowa)   |
+| Jednostka usługi Common Data Service (źródło)                             | Jednostka finansowa (lokalizacja docelowa)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_workerid.cdm_workernumber   (cdm_workerid.cdm_workernumber) | PERSONNELNUMBER   (PERSONNELNUMBER)           |
 | cdm_addresstype   (cdm_addresstype)                             | ADDRESSLOCATIONROLES   (ADDRESSLOCATIONROLES) |
@@ -250,12 +248,10 @@ Proces integracji z Human Resources do Finance będzie próbował dopasować rek
 
 Ten problem może nastąpić z obszarem **Pracownik**, gdzie do wykonania dopasowania jest używany **Numer pracownika** oraz **Stanowiska**. W obszarze Funkcje nie są używane sekwencje numerów. W efekcie jeśli ten sam identyfikator funkcji istnieje zarówno w Human Resources, jak i w Finance, informacje z Human Resources zastąpią informacje w Dynamics 365 Finance. 
 
-Aby zapobiec problemom ze zduplikowanymi identyfikatorami, można w [numeracji](/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json) dodać prefiks albo określić w niej numer początkowy, który wykracza poza zakres drugiego systemu. 
+Aby zapobiec problemom ze zduplikowanymi identyfikatorami, można w [numeracji](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=/dynamics365/unified-operations/talent/toc.json) dodać prefiks albo określić w niej numer początkowy, który wykracza poza zakres drugiego systemu. 
 
 Identyfikator lokalizacji używany w adresie pracownika nie jest częścią numeracji. Jeśli podczas integrowania adresu pracownika z modułu Human Resources do aplikacji Finance adres pracownika już istnieje w aplikacji Finance, może zostać utworzony zduplikowany rekord adresu. 
 
 Poniższa ilustracja przedstawia przykład mapowania w szablonie w Integratorze danych. 
 
-![Mapowanie szablonu.](./media/IntegrationMapping.png)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+![Mapowanie w szablonie](./media/IntegrationMapping.png)

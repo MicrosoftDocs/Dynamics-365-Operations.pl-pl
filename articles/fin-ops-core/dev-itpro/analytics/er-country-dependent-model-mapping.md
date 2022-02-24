@@ -2,9 +2,11 @@
 title: Skonfiguruj mapowania modelu ER zależne od kontekstu kraju
 description: W tym temacie wyjaśniono, jak można skonfigurować mapowania modeli ER, aby zależały one od kontekstu kraju/regionu firmy kontrolującej ich użycie.
 author: NickSelin
+manager: AnnBe
 ms.date: 11/11/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionTable
 audience: Application User, Developer, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.2
-ms.openlocfilehash: 5b26c605bd64b8d8e5a90f4389261e8e56825111
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: a9035f128a1db4bcd126f09c0fe30c1857fa884a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605378"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680884"
 ---
 # <a name="configure-country-context-dependent-er-model-mappings"></a>Skonfiguruj mapowania modelu ER zależne od kontekstu kraju
 
@@ -48,7 +50,7 @@ Niektóre kroki przedstawione w tym temacie wymagają wykonania formatu ER. W ni
 
 Aby zaprojektować wymagane składniki ER, należy wykonać kroki opisane w [Dodatku 1](#appendix1) do tego tematu Teraz istnieje konfiguracja mapowania modelu **Mapowania (ogólne)**, która zawiera mapowanie modelu dla definicji **Punktu wejścia 1**.
 
-![Strona konfiguracji raportowania elektronicznego, format do nauki konfiguracji mapowań.](./media/RCS-Context-specific-mapping-Tree.PNG)
+![Strona konfiguracji raportowania elektronicznego](./media/RCS-Context-specific-mapping-Tree.PNG)
 
 ### <a name="run-the-configured-format"></a>Uruchom skonfigurowany format
 
@@ -61,7 +63,7 @@ Należy zauważyć, że przeglądarka sieci Web proponuje pobranie pliku tekstow
 
 Aby zaprojektować wymagane składniki ER, należy wykonać kroki opisane w [Dodatku 2](#appendix2) do tego tematu Teraz istnieją konfiguracje mapowania modelu **Mapowanie (ogólne)** i **Mapowanie (ogólnie) niestandardowe**, które zawierają mapowanie modelu dla definicji **Punktu wejścia 1**.
 
-![Strona konfiguracji raportowania elektronicznego, mapowanie ogólnej konfiguracji niestandardowej.](./media/RCS-Context-specific-mapping-TreeCustom.PNG)
+![Strona konfiguracji raportowania elektronicznego](./media/RCS-Context-specific-mapping-TreeCustom.PNG)
 
 ### <a name="run-the-configured-format"></a>Uruchom skonfigurowany format
 
@@ -71,7 +73,7 @@ Aby zaprojektować wymagane składniki ER, należy wykonać kroki opisane w [Dod
 
 Zauważ, że wykonanie wybranego formatu ER nie powiedzie się. Komunikat o błędzie informuje o tym, że dla modelu istnieje więcej niż jedno mapowanie modelu dla modelu **Model nauki mapowania** i definicja **Punktu wejścia 1** w **Mapowanie (ogólne)** i **Mapowanie (ogólnie) niestandardowe**. Ponadto w komunikacie zaleca się wybranie jednej z tych konfiguracji jako konfiguracji domyślnej.
 
-![Strona konfiguracji raportowania elektronicznego z komunikatem o błędzie.](./media/RCS-Context-specific-mapping-FormatRunCustomFailed.PNG)
+![Strona konfiguracji raportowania elektronicznego](./media/RCS-Context-specific-mapping-FormatRunCustomFailed.PNG)
 
 ### <a name="define-a-default-mapping-configuration"></a>Definiowanie domyślnej konfiguracji mapowania
 
@@ -82,7 +84,7 @@ Wykonaj poniższe kroki, aby określić konfigurację **Mapowanie (ogólne) nies
 3.  Ustaw opcję **domyślnego mapowania modelu** jako **Tak**.
 4.  Wybierz opcję **Zapisz**.
 
-![Strona konfiguracji raportowania elektronicznego, ustawienie domyślne dla suwaka mapowania modelu na wartość Tak.](./media/RCS-Context-specific-mapping-MappingsCustomDefault.PNG)
+![Strona konfiguracji raportowania elektronicznego](./media/RCS-Context-specific-mapping-MappingsCustomDefault.PNG)
 
 ### <a name="run-the-configured-format"></a>Uruchom skonfigurowany format
 
@@ -101,7 +103,7 @@ Aby zaprojektować wymagane składniki ER, należy wykonać kroki opisane w [Dod
 
 Zauważ, że wersja 1 konfiguracji mapowania modelu **Mapowanie (FR)** jest skonfigurowana w taki sposób, że dotyczy ona tylko formatów ER **Model nauki mapowania** uruchamiane w Finance, które mają francuski kontekst kraju/regionu.
 
-![Strona konfiguracji raportowania elektronicznego, konfiguracja mapowania modelu (FR).](./media/RCS-Context-specific-mapping-TreeFR.PNG)
+![Strona konfiguracji raportowania elektronicznego](./media/RCS-Context-specific-mapping-TreeFR.PNG)
 
 ### <a name="run-the-configured-format"></a>Uruchom skonfigurowany format
 
@@ -121,7 +123,7 @@ Wykonaj poniższe kroki, aby zdefiniować konfigurację **mapowania (FR)** model
 3.  Ustaw opcję **domyślnego mapowania modelu** jako **Tak**.
 4.  Wybierz opcję **Zapisz**.
 
-![Strona konfiguracji raportowania elektronicznego, konfiguracja mapowania (FR), ustawienie domyślne dla suwaka mapowania modelu na wartość Tak.](./media/RCS-Context-specific-mapping-TreeFRDefault.PNG)
+![Strona konfiguracji raportowania elektronicznego](./media/RCS-Context-specific-mapping-TreeFRDefault.PNG)
 
 ### <a name="run-the-configured-format"></a>Uruchom skonfigurowany format
 
@@ -195,7 +197,7 @@ W tabeli znak plus (+) wskazuje obecność konfiguracji mapowania modelu w bież
 1.  W okienku nawigacji przejdź do **Moduły \> Administrowanie organizacją \> Obszary robocze \> Dzienniki debugowania konfiguracji**.
 2.  Wybierz przycisk **Załaduj ponownie tę stronę**.
 
-![Strona dzienniki wykonywania ER.](./media/RCS-Context-specific-mapping-DebugLog.PNG)
+![Strona dzienniki wykonywania ER](./media/RCS-Context-specific-mapping-DebugLog.PNG)
 
 Należy zauważyć, że nowy rekord został dodany do dziennika debugowania modułu operacji (ER) dla wykonywanego formatu ER. Ponieważ pole **poziomu** tego rekordu ma wartość **informacje**, rekord ma charakter informacyjny. Ponieważ pole składnik formatu jest ustawione na **konfigurację mapowania**, rekord informuje o mapowaniu modelu, które zostało użyte podczas wykonywania **formatu w celu uzyskania informacji** o formacie ER mapowania rekordów (wybranym w polu **Nazwa konfiguracji**). Zawartość **wygenerowanego pola tekstowego** informuje, że składnik **mapowania (FR)**, który znajduje się w konfiguracji **mapowania (FR)**, został użyty do uruchomienia tego raportu.
 
@@ -236,7 +238,7 @@ Zwróć uwagę, że wersja 1 tej konfiguracji ER jest gotowa do edycji. Ta wersj
 14. W oknie dialogowym rozwijanym w polu **nazwa** wprowadź **Opis funkcji**.
 15. Wybierz opcję **Dodaj**.
 
-    ![Strona projektanta mapowania modelu danych ER.](./media/RCS-Context-specific-mapping-Model.PNG)
+    ![Strona projektanta mapowania modelu danych ER](./media/RCS-Context-specific-mapping-Model.PNG)
 
 16. Wybierz opcję **Zapisz**.
 17. Zamknij stronę.
@@ -276,7 +278,7 @@ Zwróć uwagę, że wersja 1 tej konfiguracji ER jest gotowa do edycji. Ta wersj
 5.  Wybierz opcję **Zapisz**.
 6.  Zamknij stronę **Projektowanie formuły**.
 
-    ![Strona konstruktora mapowania modelu raportowania elektronicznego, definicja punktu wejścia 1.](./media/RCS-Context-specific-mapping-Mapping1.PNG)
+    ![Strona projektanta mapowania modelu ER](./media/RCS-Context-specific-mapping-Mapping1.PNG)
 
 7.  Wybierz opcję **Zapisz**.
 8.  Zamknij stronę **Projektant mapowania modelu**.
@@ -289,12 +291,12 @@ Zwróć uwagę, że wersja 1 tej konfiguracji ER jest gotowa do edycji. Ta wersj
 15. Wybierz opcję **Zapisz**.
 16. Zamknij stronę **Projektowanie formuły**.
 
-    ![Strona konstruktora mapowania modelu raportowania elektronicznego, definicja punktu wejścia 2.](./media/RCS-Context-specific-mapping-Mapping2.PNG)
+    ![Strona projektanta mapowania modelu ER](./media/RCS-Context-specific-mapping-Mapping2.PNG)
 
 17. Wybierz opcję **Zapisz**.
 18. Zamknij stronę **Projektant mapowania modelu**.
 
-    ![Strona mapowania modelu raportowania elektronicznego z definicjami punktu wejścia.](./media/RCS-Context-specific-mapping-Mappings.PNG)
+    ![Strona Projektowanie mapowań modeli ER](./media/RCS-Context-specific-mapping-Mappings.PNG)
 
 19. Zamknij stronę **Mapowanie modelu**.
 
@@ -335,7 +337,7 @@ Zwróć uwagę, że wersja 1 tej konfiguracji ER jest gotowa do edycji. Ta wersj
 2.  Zaznacz pole **opis funkcji**.
 3.  Wybierz **Powiąż**.
 
-    ![Strona projektanta formatu ER.](./media/RCS-Context-specific-mapping-Format.PNG)
+    ![Strona projektanta formatu ER](./media/RCS-Context-specific-mapping-Format.PNG)
 
 4.  Wybierz opcję **Zapisz**.
 5.  Zamknij stronę.
@@ -369,7 +371,7 @@ Zwróć uwagę, że wersja 1 tej konfiguracji ER jest gotowa do edycji.
 6.  Wybierz opcję **Zapisz**.
 7.  Zamknij stronę.
 
-    ![Strona konstruktora mapowania modelu raportowania elektronicznego, niestandardowa formuła 1 ogólnej funkcjonalności.](./media/RCS-Context-specific-mapping-Mapping1Custom.PNG)
+    ![Strona projektanta mapowania modelu ER](./media/RCS-Context-specific-mapping-Mapping1Custom.PNG)
 
 8.  Wybierz opcję **Zapisz**.
 9.  Zamknij stronę.
@@ -380,12 +382,12 @@ Zwróć uwagę, że wersja 1 tej konfiguracji ER jest gotowa do edycji.
 14. Wybierz opcję **Zapisz**.
 15. Zamknij stronę.
 
-    ![Strona konstruktora mapowania modelu raportowania elektronicznego, niestandardowa formuła 2 ogólnej funkcjonalności.](./media/RCS-Context-specific-mapping-Mapping2Custom.PNG)
+    ![Strona projektanta mapowania modelu ER](./media/RCS-Context-specific-mapping-Mapping2Custom.PNG)
 
 16. Wybierz opcję **Zapisz**.
 17. Zamknij stronę.
 
-    ![Strona mapowania modelu raportowania elektronicznego dla mapowania kopii (ogólnego) mapowania.](./media/RCS-Context-specific-mapping-MappingsCustom.PNG)
+    ![Strona Projektowanie mapowań modeli ER](./media/RCS-Context-specific-mapping-MappingsCustom.PNG)
 
 18. Zamknij stronę.
 
@@ -432,7 +434,7 @@ Zwróć uwagę, że wersja 1 tej konfiguracji ER jest gotowa do edycji.
 7.  Wybierz opcję **Zapisz**.
 8.  Zamknij stronę.
 
-    ![Strona konstruktora mapowania modelu raportowania elektronicznego, formuła 1 funkcjonalności FR.](./media/RCS-Context-specific-mapping-Mapping1FR.PNG)
+    ![Strona projektanta mapowania modelu ER](./media/RCS-Context-specific-mapping-Mapping1FR.PNG)
 
 9.  Wybierz opcję **Zapisz**.
 10. Zamknij stronę.
@@ -444,12 +446,12 @@ Zwróć uwagę, że wersja 1 tej konfiguracji ER jest gotowa do edycji.
 16. Wybierz opcję **Zapisz**.
 17. Zamknij stronę.
 
-    ![Strona konstruktora mapowania modelu raportowania elektronicznego, formuła 2 funkcjonalności FR.](./media/RCS-Context-specific-mapping-Mapping2FR.PNG)
+    ![Strona projektanta mapowania modelu ER](./media/RCS-Context-specific-mapping-Mapping2FR.PNG)
 
 18. Wybierz opcję **Zapisz**.
 19. Zamknij stronę.
 
-    ![Strona mapowania modelu raportowania elektronicznego na źródło danych.](./media/RCS-Context-specific-mapping-MappingsFR.PNG)
+    ![Strona Projektowanie mapowań modeli ER](./media/RCS-Context-specific-mapping-MappingsFR.PNG)
 
 20. Zamknij stronę.
 
@@ -494,6 +496,3 @@ Upewnij się, że konfiguracja mapowania modelu udostępnionego nie jest oznaczo
 - Co najmniej jedna wersja konfiguracji mapowania modelu ER ma **stan zakończony** lub **udostępniony**. W tym przypadku wersja o najwyższym numerze wersji zostanie użyta w celu wykonania formatu ER.
 - Opcja **Uruchom wersję roboczą** dla konfiguracji mapowania modelu ER jest włączona. W tym przypadku wersja o statusie **Wersja robocza** zostanie użyta w celu wykonania formatu ER.
 > Opcja **Uruchom wersję roboczą** staje się dostępna na stronie **konfiguracje** dla każdej konfiguracji mapowania modelu ER, jeśli jest włączony parametr **Uruchom ustawienia** użytkownika ER.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

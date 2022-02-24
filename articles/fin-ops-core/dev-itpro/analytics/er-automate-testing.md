@@ -2,9 +2,11 @@
 title: Zautomatyzuj testowanie dzięki Elektronicznemu reportowaniu
 description: W tym temacie wyjaśniono, w jaki sposób można skorzystać z podstawowej funkcji platformy Elektroniczne raportowanie (ER) w celu zautomatyzowania testowania funkcjonalności.
 author: NickSelin
+manager: AnnBe
 ms.date: 07/02/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERFormatBaselineTable, ERFormatMappingRunLogTable, ERParameters
 audience: Application User, Developer, IT Pro
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: da69cc903197dbfae536c8494f126074c51aa77f9522d57f2673c97b1e682d9d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0a2586afd56eef0f953454ad246ff3647a5b09d1
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749807"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681455"
 ---
 # <a name="automate-testing-with-electronic-reporting"></a>Automatyzacja testowania za pomocą modułu Raportowanie elektroniczne
 
@@ -59,7 +61,7 @@ Przed zakończeniem zadań w tym temacie, należy najpierw wypełnić następuj�
 - Wdrażaj topologię, która obsługuje automatyzację testów. Musisz mieć dostęp do instancji dla tej topologii w roli **Administrator systemu**. Ta topologia musi zawierać dane demonstracyjne, które będą używane w tym przykładzie. Więcej informacji znajdziesz w [Wdrażanie i użycie środowisk obsługujących ciągłą kompilację i automatyzację testów](../perf-test/continuous-build-test-automation.md).
 - Aby automatycznie przeprowadzić testy akceptacji i integracji użytkowników, musisz zainstalować RSAT w topologii, z której korzystasz, i skonfigurować go w odpowiedni sposób. Aby uzyskać informacje o tym, jak zainstalować RSAT i skonfigurować go do pracy z aplikacjami Finance and Operations i Azure DevOps, zobacz [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Zwróć uwagę na warunki wstępne użycia narzędzia. Na poniższej ilustracji przedstawiono przykład ustawień RSAT. Niebieski prostokąt zawiera parametry określające dostęp do Azure DevOps. Zielony prostokąt zawiera parametry określające dostęp do instancji.
 
-    ![Ustawienia RSAT.](media/GER-Configure.png "Zrzut ekranu ekranu okna dialogowego Ustawienia RSAT")
+    ![Ustawienia RSAT](media/GER-Configure.png "Zrzut ekranu ekranu okna dialogowego Ustawienia RSAT")
 
 - Aby zorganizować przypadki testowe w pakietach, aby zagwarantować poprawną sekwencję wykonania, tak aby można było gromadzić dzienniki wykonań testowych w celu dalszego raportowania i badania, należy mieć dostęp do usługi Azure DevOps z wdrożonej topologii.
 - Aby uzupełnić podany przykład, zalecamy pobranie [Korzystanie z ER do testów RSAT](https://go.microsoft.com/fwlink/?linkid=874684). Niniejsza instrukcja obejmuje następujące zadania przykładowe:
@@ -78,7 +80,7 @@ Przed zakończeniem zadań w tym temacie, należy najpierw wypełnić następuj�
     - **Mapowanie 1611 modelu płatności** konfiguracja mapowania modelu ER.
     - **BACS (UK)** Konfiguracja formatu ER
 
-    ![Konfiguracje raportowania elektronicznego.](media/GER-Configurations.png "Zrzut ekranu strony ustawień formatu raportowania elektronicznego")
+    ![Konfiguracje raportowania elektronicznego](media/GER-Configurations.png "Zrzut ekranu strony ustawień formatu raportowania elektronicznego")
 
 3. Wybierz dane demonstarcyjne firmy **GBSI** , która ma ustawiony Wielką Brytanię jako kraj/region.
 4. Konfiguruj parametry płatnych kont:
@@ -90,7 +92,7 @@ Przed zakończeniem zadań w tym temacie, należy najpierw wypełnić następuj�
         1. W karcie **Formaty plików** ustaw **Ogólny elektroniczny format eksportu** jako **Tak**.
         2. W polu **Eksportuj format konfiguracji** wybierz **BACS (UK)**.
 
-    ![Strona Metody płatności.](media/GER-APParameters.png "Zrzut ekranu metod płatności strony")
+    ![Strona Metody płatności](media/GER-APParameters.png "Zrzut ekranu metod płatności strony")
 
     > [!NOTE]
     > Jeśli masz pochodną wersję tego formatu ER utworzoną w celu obsługi dostosowań, możesz wybrać tę konfigurację w metodzie płatności **Elektroniczna**.
@@ -100,7 +102,7 @@ Przed zakończeniem zadań w tym temacie, należy najpierw wypełnić następuj�
     1. Otwórz **Konta płatne \> Płatności \> Dziennik płatności**.
     2. Upewnij się, że nie opublikowałeś dziennika płatności.
 
-        ![Strona Nazwa arkusza płatności.](media/GER-APJournal.png "Zrzut ekranu strony arkuszy płatności")
+        ![Strona Nazwa arkusza płatności](media/GER-APJournal.png "Zrzut ekranu strony arkuszy płatności")
 
     3. Wybierz **Linie** i wpisz linię, która ma następujące informacje.
 
@@ -113,7 +115,7 @@ Przed zakończeniem zadań w tym temacie, należy najpierw wypełnić następuj�
         | Konto przeciwstawne      | GBSI OPER       |
         | Metoda płatności   | Elektroniczne      |
 
-    ![Strona Płatności dla dostawców.](media/GER-APJournalLines.png "Zrzut ekranu strony płatności dostawcy")
+    ![Strona Płatności dla dostawców](media/GER-APJournalLines.png "Zrzut ekranu strony płatności dostawcy")
 
 ## <a name="prepare-the-er-framework-to-test-vendor-payment-processing"></a>Przygotuj strukturę ER do przetestowania przetwarzania płatności przez dostawców
 
@@ -122,7 +124,7 @@ Przed zakończeniem zadań w tym temacie, należy najpierw wypełnić następuj�
 1. Otwórz **Administracja organizacji \> Elektroniczne raportowanie \> Parametry elektronicznego raportowania**.
 2. Na karcie **Załączniki** w polu **Linia bazowa** wybierz **Plik** jako typ dokumentu używany przez strukturę zarządzania dokumentami (DM) do przechowywania dokumentów związanych z funkcją linii bazowej jako załączników DM.
 
-    ![Strona parametrów raportowania elektronicznego.](media/GER-ERParameters.png "Zrzut ekranu strony parametrów raportowania elektronicznego")
+    ![Strona parametrów raportowania elektronicznego](media/GER-ERParameters.png "Zrzut ekranu strony parametrów raportowania elektronicznego")
 
 ### <a name="generate-baseline-copies-of-vendor-paymentrelated-documents"></a>Generuj kopie bazowe dokumentów związanych z płatnościami dostawcy
 
@@ -139,7 +141,7 @@ Przed zakończeniem zadań w tym temacie, należy najpierw wypełnić następuj�
     - **Plik** plik płatności w formie tekstowej
     - **ERVendOutPaymControlReport** plik raportu kontrolnego w formacie XLSX
 
-    ![Strona Wyodrębnione pliki.](media/GER-APJournalProcessed.png "Zrzut ekranu eksportowanych plików w Windows explorer")
+    ![Strona Wyodrębnione pliki](media/GER-APJournalProcessed.png "Zrzut ekranu eksportowanych plików w Windows explorer")
 
 ### <a name="turn-on-the-er-baseline-feature"></a>Włącz funkcję linii bazowej ER
 
@@ -177,7 +179,7 @@ Poprzez włączenie parametru **Uruchom w trybie debugowania** zmuszasz struktur
     3. Przeglądaj, aby wybrać lokalnie zapisany **ERVendOutPaymControlReport** w formacie XLSX.
     4. W polu **Opis** wpisz **Płatność XLSX raport kontrolny**.
 
-    ![Linie bazowe dla pliku płatności dostawcy i raportu kontrolnego.](media/GER-BaselineAttachments.png "Zrzut ekranu strony konfiguracje z wybraną pozycją raport kontroli płatności XLSX")
+    ![Linie bazowe dla pliku płatności dostawcy i raportu kontrolnego](media/GER-BaselineAttachments.png "Zrzut ekranu strony konfiguracje z wybraną pozycją raport kontroli płatności XLSX")
 
 8. Zamknij stronę.
 9. Na skróconej karcie **Linie bazowe** wybierz **Nowy**, żeby skonfigurować linię bazową dla pliku płatności:
@@ -196,7 +198,7 @@ Poprzez włączenie parametru **Uruchom w trybie debugowania** zmuszasz struktur
     4. W polu **Maska nazwy pliku** wpisz **\*.XLSX** , aby zastosować tę linię bazową tylko do wyjść składowych formatu **ERVendOutPaymControlReport**, które mają rozszerzenie nazwy pliku **.xslx**.
     5. W polu **Linia bazowa** wybierz **Plik raportu kontroli XLSX** tak, że ta linia bazowa jest używana do porównania z wygenerowanym wynikiem.
 
-    ![Skrócona karta Plany bazowe na stronie konfiguracje.](media/GER-BaselineRules.png "Zrzut ekranu skróconej karty Plany bazowe na stronie konfiguracji")
+    ![Skrócona karta Plany bazowe na stronie konfiguracje](media/GER-BaselineRules.png "Zrzut ekranu skróconej karty Plany bazowe na stronie konfiguracji")
 
 ## <a name="record-tests-to-validate-vendor-payment-processing"></a>Przykładowe zadania zadania w celu przetworzenia płatności dostawcy
 
@@ -226,15 +228,15 @@ To nagranie zadania obejmuje następujące czynności:
 
 1. Ustaw status przetworzonej linii płatności na **Żadne**.
 
-    ![Kroki od 3 do 4 dotyczące rejestrowania zadań.](media/GER-Recording1Review1.png "Zrzut ekranu kroków od 3 do 4 dla rejestrowania zadań")
+    ![Kroki od 3 do 4 dotyczące rejestrowania zadań](media/GER-Recording1Review1.png "Zrzut ekranu kroków od 3 do 4 dla rejestrowania zadań")
 
 2. Ustaw opcję **Uruchom w trybie debugowania** w parametrach użytkownika ER.
 
-    ![Kroki od 9 do 10 dotyczące rejestrowania zadań.](media/GER-Recording1Review2.png "Zrzut ekranu kroków od 9 do 10 dla rejestrowania zadań")
+    ![Kroki od 9 do 10 dotyczące rejestrowania zadań](media/GER-Recording1Review2.png "Zrzut ekranu kroków od 9 do 10 dla rejestrowania zadań")
 
 3. Wyczyść dziennik debugowania ER zawierający wyniki porównania wygenerowanych plików do linii bazowych.
 
-    ![Kroki od 13 do 15 dotyczące rejestrowania zadań.](media/GER-Recording1Review3.png "Zrzut ekranu kroków od 13 do 15 dla rejestrowania zadań")
+    ![Kroki od 13 do 15 dotyczące rejestrowania zadań](media/GER-Recording1Review3.png "Zrzut ekranu kroków od 13 do 15 dla rejestrowania zadań")
 
 ### <a name="record-the-steps-to-test-vendor-payment-processing"></a>Nagraj zadania testu przetworzenia płatności dostawcy
 
@@ -253,7 +255,7 @@ To nagranie zadania obejmuje następujące czynności:
 1. Zacznij przetwarzanie płatności dostawcy.
 2. Wybierz poprawne parametry środowiska wykonawczego i włącz generowanie raportu kontrolnego.
 
-    ![Kroki od 3 do 8 dotyczące rejestrowania zadań.](media/GER-Recording2Review1.png "Zrzut ekranu kroków od 3 do 8 dla rejestrowania zadań")
+    ![Kroki od 3 do 8 dotyczące rejestrowania zadań](media/GER-Recording2Review1.png "Zrzut ekranu kroków od 3 do 8 dla rejestrowania zadań")
 
 3. Włącz i wyczyść dziennik debugowania ER zawierający wyniki porównania wygenerowanych plików do odpowiadających linii bazowych.
 
@@ -263,11 +265,11 @@ To nagranie zadania obejmuje następujące czynności:
 
 4. Porównanie bieżącego wyniku z linią bazową jest rejestrowane za pomocą opcji **Potwierdź** opcji Rejestratora zadań i wybranie  **Obecna wartość**.
 
-    ![Używanie opcji Walidacja w celu porównania z bieżącą wartością.](media/GER-TRRecordValidation.png "Zrzut ekranu używania opcji Walidacja w celu porównania z bieżącą wartością")
+    ![Używanie opcji Walidacja w celu porównania z bieżącą wartością](media/GER-TRRecordValidation.png "Zrzut ekranu używania opcji Walidacja w celu porównania z bieżącą wartością")
 
     Poniższa ilustracja pokazuje, jak wyglądają zarejestrowane kroki sprawdzania poprawności w zapisie zadania.
 
-    ![Kroki od 13 i 15 dotyczące rejestrowania zadań.](media/GER-Recording2Review2.png "Zrzut ekranu kroków od 13 i 15 dla rejestrowania zadań")
+    ![Kroki od 13 i 15 dotyczące rejestrowania zadań](media/GER-Recording2Review2.png "Zrzut ekranu kroków od 13 i 15 dla rejestrowania zadań")
 
 ## <a name="add-the-recorded-tests-to-azure-devops"></a>Dodaj nagrane testy do Azure DevOps
 
@@ -284,7 +286,7 @@ To nagranie zadania obejmuje następujące czynności:
     1. Nazwij przypadek testowy **Przetestuj przetwarzanie płatności dostawcy za pomocą formatu ER BACS (Wielka Brytania)**.
     2. Dodaj plik **Nagranie.xml** z folderu **Proces**, który pobrałeś wcześniej.
 
-    ![Nowe przypadki testowe dla wybranego planu testów.](media/GER-RSAT-DevOps-Tests-Passed.png "Zrzut ekranu nowych przypadków testowych dla wybranego planu testów")
+    ![Nowe przypadki testowe dla wybranego planu testów](media/GER-RSAT-DevOps-Tests-Passed.png "Zrzut ekranu nowych przypadków testowych dla wybranego planu testów")
 
 > [!NOTE]
 > Zwróć uwagę na prawidłową kolejność wykonywania dodawanych testów.
@@ -296,14 +298,14 @@ To nagranie zadania obejmuje następujące czynności:
 1. Otwórz lokalną aplikację RSAT w bieżącej topologii.
 2. Zaznacz **Wgraj**, żeby załadować testy, które obecnie znajdują się w Azure DevOps na RSAT.
 
-    ![Testy załadowane do pakietu RSAT.](media/GER-RSAT-RSAT-Tests-Loaded.png "Zrzut ekranu testów załadowanych do pakietu RSAT")
+    ![Testy załadowane do pakietu RSAT](media/GER-RSAT-RSAT-Tests-Loaded.png "Zrzut ekranu testów załadowanych do pakietu RSAT")
 
 ### <a name="create-automation-and-parameters-files"></a>Utwórz pliki automatyzacji i parametrów
 
 1. W RSAT wybierz pliki, które wgrałeś z Azure DevOps.
 2. Wybierz **Nowy**, żeby stworzyć filty automatyzacji i parametrów.
 
-    ![Pliki automatyzacji i parametrów RSAT utworzone w RSAT.](media/GER-RSAT-RSAT-Tests-Initiated.png "Zrzut ekranu plików automatyzacji i parametrów RSAT utworzone w RSAT")
+    ![Pliki automatyzacji i parametrów RSAT utworzone w RSAT](media/GER-RSAT-RSAT-Tests-Initiated.png "Zrzut ekranu plików automatyzacji i parametrów RSAT utworzone w RSAT")
 
 ### <a name="modify-the-parameters-files"></a>Zmodyfikuj pliki parametrów
 
@@ -315,7 +317,7 @@ To nagranie zadania obejmuje następujące czynności:
 6. W otwartym pliku ćwiczeń Excel, w karcie **Ogólne** zmień kod firmy na **GBSI**.
 7. W ćwiczeniach **ERFormatMappingRunLogTable** zauważ, że komórki A: 3 i C: 3 zawierają tekst pól w tabeli dziennika debugowania ER, które są używane do sprawdzania poprawności wyników porównania danych wyjściowych z linią bazową. Teksty te zostaną wykorzystane do oceny rekordów dziennika debugowania ER, które są tworzone podczas wykonywania testu.
 
-    ![Arkusz ERFormatMappingRunLogTable.](media/GER-RSAT-RSAT-ExcelParameters.png "Zrzut ekranu arkusza ERFormatMappingRunLogTable")
+    ![Arkusz ERFormatMappingRunLogTable](media/GER-RSAT-RSAT-ExcelParameters.png "Zrzut ekranu arkusza ERFormatMappingRunLogTable")
 
 ## <a name="run-the-tests-and-analyze-the-results"></a>Uruchom testy i przeanalizuj wyniki
 
@@ -330,11 +332,11 @@ Zauważ, że przypadki testowe są automatycznie uruchamiane w obszarze aplikacj
 
 Wyniki testów są przechowywane w RSAT. Zauważ, że oba testy zostały zaliczone.
 
-![Testy przekazane w narzędziu RSAT.](media/GER-RSAT-RSAT-Tests-Passed.png "Zrzut ekranu testów przekazanych w narzędziu RSAT")
+![Testy przekazane w narzędziu RSAT](media/GER-RSAT-RSAT-Tests-Passed.png "Zrzut ekranu testów przekazanych w narzędziu RSAT")
 
 Zwróć uwagę, że wyniki wykonania testu są również wysyłane do Azure DevOps, dzięki czemu możesz przeprowadzić dalszą analizę.
 
-![Wyniki wykonania testu w Azure DevOps.](media/GER-RSAT-DevOps-Tests-Added.png "Zrzut ekranu wyników wykonywania testu w Azure DevOps")
+![Wyniki wykonania testu w Azure DevOps](media/GER-RSAT-DevOps-Tests-Added.png "Zrzut ekranu wyników wykonywania testu w Azure DevOps")
 
 ### <a name="simulate-a-situation-where-tests-fail"></a>Symuluj sytuację, w której testy nie zostaną zaliczone
 
@@ -357,15 +359,15 @@ Zauważ, że przypadki testowe są automatycznie uruchamiane w obszarze aplikacj
 
 Wyniki testów są przechowywane w RSAT. Zauważ, że drugi test zakończył się niepowodzeniem podczas drugiego wykonania.
 
-![Wyniki testu zakończonego niepowodzeniem w narzędziu RSAT.](media/GER-RSAT-RSAT-Tests-Failed.png "Zrzut ekranu wyników testu zakończonego niepowodzeniem w narzędziu RSAT")
+![Wyniki testu zakończonego niepowodzeniem w narzędziu RSAT](media/GER-RSAT-RSAT-Tests-Failed.png "Zrzut ekranu wyników testu zakończonego niepowodzeniem w narzędziu RSAT")
 
 Zwróć uwagę, że wyniki wykonania testu są również wysyłane do Azure DevOps, dzięki czemu możesz przeprowadzić dalszą analizę.
 
-![Wyniki testu zakończonego niepowodzeniem w Azure DevOps.](media/GER-RSAT-DevOps-Tests-Failed.png "Zrzut ekranu wyników testu zakończonego niepowodzeniem w narzędziu Azure DevOps")
+![Wyniki testu zakończonego niepowodzeniem w Azure DevOps](media/GER-RSAT-DevOps-Tests-Failed.png "Zrzut ekranu wyników testu zakończonego niepowodzeniem w narzędziu Azure DevOps")
 
 Możesz zobaczyć status każdego testu. Możesz także uzyskać dostęp do dziennika wykonania, aby przeanalizować przyczyny niepowodzenia. Na poniższej ilustracji dziennik wykonania pokazuje, że błąd wystąpił z powodu różnicy treści między wygenerowanym plikiem płatności a jego linią bazową.
 
-![Dziennik wykonywania analizy niepowodzenia w usłudze Azure DevOps.](media/GER-RSAT-DevOps-Tests-Failed-Log.png "Zrzut ekranu dziennika wykonywania analizy niepowodzenia w Azure DevOps")
+![Dziennik wykonywania analizy niepowodzenia w usłudze Azure DevOps](media/GER-RSAT-DevOps-Tests-Failed-Log.png "Zrzut ekranu dziennika wykonywania analizy niepowodzenia w Azure DevOps")
 
 Dlatego, jak widzieliście, funkcjonowanie dowolnego formatu ER może być oceniane automatycznie za pomocą RSAT jako platformy testowej i przy użyciu przypadków testowych opartych na rejestratorze zadań, które wykorzystują funkcję linii bazowej ER.
 
@@ -378,6 +380,3 @@ Dlatego, jak widzieliście, funkcjonowanie dowolnego formatu ER może być oceni
 - [Śledzenie wyników wygenerowanych raportów i porównywanie ich z wartościami bazowymi](er-trace-reports-compare-baseline.md)
 - [ER Uaktualnianie formatu poprzez przyjęcie jego nowej wersji bazowej](tasks/er-upgrade-format.md)
 - [ER Importowanie konfiguracji z usługi Lifecycle Services](tasks/er-import-configuration-lifecycle-services.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

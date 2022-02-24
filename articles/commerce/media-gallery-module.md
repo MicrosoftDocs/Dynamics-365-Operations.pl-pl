@@ -2,30 +2,35 @@
 title: Moduł galerii multimediów
 description: W tym temacie opisano moduły galerii multimediów i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 08/02/2021
+manager: annbe
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 328a56a6efbdd97c8dac32d65c65ad31953cdb4c3ce56ef818ebe8bf633f93a4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 647387bafe8866cb1bee8c57675629af796f33e6
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733204"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415037"
 ---
 # <a name="media-gallery-module"></a>Moduł galerii multimediów
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano moduły galerii multimediów i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Omówienie
 
 Moduły galerii multimediów pokazują jeden lub więcej obrazów w widoku galerii. Moduły galerii multimediów obsługują miniatury obrazów, które można układać poziomo (jako wiersz pod obrazem) lub pionowo (jako kolumna obok obrazu). Moduły galerii multimediów zapewniają również możliwości, które umożliwiają powiększanie (powiększanie) obrazów lub przeglądanie ich w trybie pełnoekranowym. Aby obraz był renderowany w module galerii multimediów, obraz musi być dostępny w bibliotece multimediów narzędzia do tworzenia witryn Commerce. Obecnie moduły galerii multimediów obsługują tylko obrazy.
 
@@ -41,7 +46,7 @@ Oto kilka przykładów użycia modułów programu galerii multimediów:
 
 W przykładzie na poniższej ilustracji pole zakupu na PDP zawiera obrazy produktów przy użyciu modułu galerii multimediów.
 
-![Przykład pola zakupu na stronie szczegółów produktu obsługującego obrazy produktu przy użyciu modułu galerii multimediów.](./media/ecommerce-pdp-buybox.PNG)
+![Przykład pola zakupu na stronie szczegółów produktu obsługującego obrazy produktu przy użyciu modułu galerii multimediów](./media/ecommerce-pdp-buybox.PNG)
 
 ## <a name="media-gallery-properties"></a>Właściwości galerii multimediów
 
@@ -49,25 +54,19 @@ W przykładzie na poniższej ilustracji pole zakupu na PDP zawiera obrazy produk
 |---------------|--------|-------------|
 | Źródło obrazu | **Kontekst strony** lub **Identyfikator produktu** | Wartość domyślna to **Kontekst strony**. Jeśli wybrano **Kontekst strony**, moduł oczekuje na stronę do dostarczenia informacji o identyfikatorze produktu. Jeśli wybrano **Identyfikator produktu**, identyfikator produktu dla obrazu musi być podany jako wartość właściwości **Identyfikator produktu**. Ta możliwość jest dostępna w Commerce w wersji 10.0.12. |
 | Identyfikator produktu | Identyfikator produktu | Ta właściwość jest stosowana tylko w przypadku, gdy wartość właściwości **Źródło obrazu** to **Identyfikator produktu**. |
-| Powiększenie obrazu | **Wbudowane** lub **Kontener** | Ta właściwość umożliwia użytkownikowi powiększenie obrazu w module galeria multimediów. Obraz można powiększać w tekście albo w osobnym kontenerze obok obrazu. Ta funkcja jest dostępna w 10.0.12. |
-| Współczynnik powiększenia | Liczba dziesiętna | Właściwość ta określa współczynnik skali dla powiększania obrazów. Jeśli na przykład wartość jest ustawiona na **2,5**, obrazy zostaną powiększone 2,5 razy. |
-| Pełny ekran | **Prawda** lub **Fałsz** | Właściwość ta określa, czy obrazy mogą być wyświetlane w trybie pełnoekranowym. W trybie pełnoekranowym obrazy można również dodatkowo powiększać, jeśli jest włączona funkcja powiększania. Ta funkcja jest dostępna w Commerce w wersji 10.0.13. |
-| Jakość powiększonego obrazu | Liczba od 1 do 100, która reprezentuje wartość procentową i jest wybierana za pomocą formantu paska śledzenia | Ta właściwość definiuje jakość obrazu powiększanych obrazów. Wartość tego ustawienia może być ustawiona na 100 procent, aby mieć pewność, że dla powiększanych obrazów jest zawsze używana najwyższa możliwa rozdzielczości. Ta właściwość nie ma zastosowania do plików PNG, ponieważ używają bezstratnego formatu. Ta funkcja jest dostępna w Commerce od wersji 10.0.19. |
+| Powiększenie obrazu | **Wbudowane** lub **Kontener** | Ta właściwość umożliwia użytkownikowi powiększenie obrazu w module galeria multimediów. Obraz można powiększać w tekście albo w osobnym kontenerze obok obrazu. Funkcja jest dostępna w 10.0.12 |
+| Skala powiększenia | Liczba dziesiętna | Właściwość ta określa współczynnik skali dla powiększania obrazów. Jeśli na przykład wartość jest ustawiona na **2,5**, obrazy zostaną powiększone 2,5 razy.|
+| Pełny ekran | **Prawda** lub **Fałsz** | Właściwość ta określa, czy obrazy mogą być wyświetlane w trybie pełnoekranowym. W trybie pełnoekranowym obrazy można również dodatkowo powiększać, jeśli jest włączona funkcja powiększania. Ta możliwość jest dostępna w Commerce w wersji 10.0.13. |
 | Obrazy | Obrazy wybrane z biblioteki multimediów konstruktora witryn | Oprócz renderowania z poziomu produktu obrazy mogą być wybrane dla modułu galerii multimediów. Obrazy te zostaną dołączone do wszystkich dostępnych obrazów produktów. Ta możliwość jest dostępna w Commerce w wersji 10.0.12. |
 | Orientacja miniatury | **Pionowa** lub **Pozioma** | Właściwość ta określa, czy miniatury obrazów mają być pokazywane w pionowym czy poziomym pasku. |
-| Ukrywanie obrazów produktu głównego dla wariantu | **Prawda** lub **Fałsz** | Jeśli właściwość ma wartość **Prawda**, po wybraniu wariantu obrazy produktu głównego są ukryte, chyba że wariant nie ma obrazów. Ta właściwość nie ma wpływu na produkty, które nie mają wariantów. |
-| Aktualizuj multimedia po wybraniu wymiarów | **Prawda** lub **Fałsz** | Jeśli ta właściwość jest ustawiona na **True**, obrazy w bibliotece multimediów zostaną zaktualizowane, gdy zaznaczony jest dowolny wymiar (taki jak kolor, styl lub rozmiar) i jeśli obraz jest dostępny. Ta właściwość pomaga uprościć środowisko przeglądania, ponieważ nie każdy wymiar wariantu produktu musi być wybrany dla odpowiedniego obrazu, który ma zostać zaktualizowany. Ta właściwość jest dostępna na karcie **Zaawansowane**. |
-
-> [!IMPORTANT]
-> Właściwość **Aktualizuj nośnik w wyborze wymiaru** jest dostępna od wersji Commerce w wersji 10.0.21. Wymaga, pakietu biblioteki modułów Commerce w wersji 9.31.
 
 Na poniższej ilustracji przedstawiono przykład modułu galerii multimediów, w którym są dostępne opcje pełnego ekranu i powiększenia.
 
-![Przykład modułu galerii multimediów, w którym są dostępne opcje pełnego ekranu i powiększenia.](./media/ecommerce-media-zoom.png)
+![Przykład modułu galerii multimediów, w którym są dostępne opcje pełnego ekranu i powiększenia](./media/ecommerce-media-zoom.png)
 
 Na poniższej ilustracji przedstawiono przykład modułu galerii multimediów, który zawiera wybrane obrazy (czyli określone obrazy nie są zależne od identyfikatora produktu lub kontekstu strony).
 
-![Przykład modułu galerii multimediów, który ma dobrane obrazy.](./media/ecommerce-media-curated.PNG)
+![Przykład modułu galerii multimediów, który ma dobrane obrazy](./media/ecommerce-media-curated.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Interakcja Commerce Scale Unit
 
@@ -105,6 +104,3 @@ Aby dodać moduł galerii multimediów do strony marketingowej, wykonaj następu
 [Moduł kontenera](add-container-module.md)
 
 [Przekazanie obrazów](dam-upload-images.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

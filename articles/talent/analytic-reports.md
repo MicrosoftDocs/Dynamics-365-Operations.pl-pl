@@ -88,6 +88,3 @@ Jedną z doskonałych funkcji tego Power BI jest sposób, w jaki są wzajemnie p
 ## <a name="export-to-excel"></a>Eksportuj do programu Excel
 
 Aby wyświetlić dane raportu w programie Excel, można kliknąć menu Opcje (trzy kropki) w elemencie wizualnym i wybrać polecenie **Eksportuj dane źródłowe**. Eksportowane dane są eksportowane jako przefiltrowane, zgodnie z uprawnieniami użytkownika w Attract. Aby uzyskać więcej informacji, zajrzyj do [Eksport danych z wizualizacji](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-export-data).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

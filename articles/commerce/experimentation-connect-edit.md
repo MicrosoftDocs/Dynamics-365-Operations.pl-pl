@@ -2,12 +2,15 @@
 title: Łączenie eksperymentu i edytowanie odmian
 description: W tym temacie opisano sposób łączenia eksperymentów z usługą innej firmy z systemem Dynamics 365 Commerce i edytowania odmian eksperymentu.
 author: sushma-rao
+manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -15,12 +18,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: d3b1a099e29073e82e2118f9e43441a9068a4d10f0ea9f79123b97d2b7d5c419
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 030640ba8907ae52c198ac96ad2c243b533d8c53
+ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773040"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "4415081"
 ---
 # <a name="connect-an-experiment-and-edit-variations"></a>Łączenie eksperymentu i edytowanie odmian
 
@@ -28,7 +31,7 @@ W tym temacie opisano sposób łączenia doświadczenia w Commerce i wprowadzani
 
 Na poniższym diagramie przedstawiono wszystkie kroki związane z konfigurowaniem i przeprowadzaniem eksperymentu na stronie internetowej środowiska handlu elektronicznego w systemie Dynamics 365 Commerce. Dodatkowe kroki są zawarte w odrębnych tematach.
 
-[ ![Proces użytkownika eksperymentu — łączenie i edycja.](./media/experimentation_connect_edit.svg) ](./media/experimentation_connect_edit.svg#lightbox)
+[ ![Proces użytkownika eksperymentu — łączenie i edycja](./media/experimentation_connect_edit.svg) ](./media/experimentation_connect_edit.svg#lightbox)
 
 Po [skonfigurowaniu eksperymentu](experimentation-setup.md) w usłudze innej firmy nastąpi połączenie eksperymentu w Dynamics 365 Commerce i edycja odmian eksperymentów.
 
@@ -92,6 +95,3 @@ Jeśli zdefiniowano **całkowity** zakres eksperymentu w kreatorze **Łączenie 
 
 ## <a name="next-step"></a>Następne kroki
 [Podgląd i publikowanie eksperymentu](experimentation-preview-publish.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

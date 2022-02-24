@@ -61,6 +61,3 @@ W procesie inspekcji są dostępne następujące dane:
 |Historia zgłoszeń o pracę | Zgłoszenie o pracę (msdyn_JobapplicatonId)<br></br>Stan (msdyn_status) <br></br>Przyczyna stanu (msdyn_statusreason) <br></br>Przyczyna odrzucenia (msdyn_rejectionreason) |
 | Historia wakatu | Wakat (msdyn_JobopeningId) <br></br>Stan (msdyn_jobopeningstatus) <br></br>Przyczyna stanu (msdyn_jobopeningstatusreason) |
 | Historia kandydata | Kandydat (msdyn_CandidateId) |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

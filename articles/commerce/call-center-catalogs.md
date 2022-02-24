@@ -2,13 +2,16 @@
 title: Katalogi biura obsługi
 description: W tym artykule opisano funkcje katalogów specyficzne dla biur obsługi dostępne w Dynamics 365 Commerce.
 author: josaw1
+manager: AnnBe
 ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, RetailCatalogDetails
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 16231
 ms.assetid: f28a827c-3a50-4d5e-83eb-e5a768db70a1
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 6fae877b04fdbd84e1c2508f91bbf53b5412b350c5d2c8978aafb2d7f49783f6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9abe493746719d2e229ef09c2eb5f436b91b2171
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742519"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4415088"
 ---
 # <a name="call-center-catalogs"></a>Katalogi biura obsługi
 
@@ -39,7 +42,7 @@ Firmy prowadzące działalność marketingową kierowane bezpośrednio do konsum
 
 Wybierz kolejno opcje **Retail i Commerce** \> **Katalogi i asortymenty** \> **Wszystkie katalogi** i skonfiguruj katalog.
 
-Podczas tworzenia nowego katalogu, należy najpierw połączyć katalog z jednym lub kilkoma kanałami. Jest to wykonywane na skróconej karcie **Kanały Commerce** w formularzu **Konfiguracja katalogu**. Kliknij przycisk **Dodaj** i wybierz jeden lub więcej kanałów. Podczas tworzenia katalogu można używać tylko elementów połączonych z wybranymi [asortymentami](/dynamics365/unified-operations/retail/assortments) kanału.
+Podczas tworzenia nowego katalogu, należy najpierw połączyć katalog z jednym lub kilkoma kanałami. Jest to wykonywane na skróconej karcie **Kanały Commerce** w formularzu **Konfiguracja katalogu**. Kliknij przycisk **Dodaj** i wybierz jeden lub więcej kanałów. Podczas tworzenia katalogu można używać tylko elementów połączonych z wybranymi [asortymentami](https://docs.microsoft.com/dynamics365/unified-operations/retail/assortments) kanału.
 
 Aby dodać produkty do katalogu, należy wybrać hierarchię nawigacji. Hierarchia nawigacji będzie obsługiwać strukturę kategorii dla katalogu. Należy wybrać jedną z hierarchii nawigacji połączoną z kanałami wybranymi w skróconej karcie **Kanały Commerce** na stronie **Katalog**. Jeśli kanał nawigacji nie był wcześniej połączony z kanałem, wybierz kolejno opcje **Retail i Commerce** \> **Ustawienia kanału** \> **Kategorie kanału sprzedaży i atrybuty produktów** i połącz domyślne wartości hierarchii nawigacji z poszczególnymi kanałami.
 
@@ -98,6 +101,3 @@ Na karcie **Katalogi** znajdują się również sekcje z opcjami konfiguracyjnym
 ## <a name="additional-notes"></a>Dodatkowe notatki
 
 Obecnie gdy identyfikator kodu źródłowego jest stosowany do zamówienia sprzedaży w biurze obsługi, służy do ustalania cen, promocji, skryptów i produktów przeznaczonych do sprzedaży dodatkowej/powiązanej specyficznych dla katalogu. System nie będzie zabraniać ani uniemożliwiać złożenia zamówienia sprzedaży na produkt nieznajdujący się w katalogu. Jeśli zostanie zamówiony towar, który nie jest częścią katalogu, system najpierw użyje **grupy cenowej** zdefiniowanej w kanale biura obsługi (**Retail i Commerce** \> **Kanały** \> **Biura obsługi** \> **Wszystkie biura obsługi**) dla ceny towaru lub promocji. Jeśli nie zostanie znaleziona żadna konkretna cena dla kanału, będzie używana podstawowa cena sprzedaży towaru.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,30 +2,36 @@
 title: Ustawianie magazynu
 description: W tym temacie opisano sposób konfigurowania magazynu, który ma być używany z nowym kanałem w rozwiązaniu Microsoft Dynamics 365 Commerce.
 author: samjarawan
+manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6987263bfa83582f465e3b47c4f7b9d96cf087c814a1e002afd289852346975b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6da72ae612f0520965a2b11a21123d4642303ac3
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734026"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414933"
 ---
 # <a name="warehouse-set-up"></a>Ustawianie magazynu
+
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano sposób konfigurowania magazynu, który ma być używany z nowym kanałem w rozwiązaniu Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Omówienie
 
 Każdy kanał Commerce wymaga, aby skonfigurowany magazyn był skojarzony z nim. Poniższe procedury zapewniają minimalną konfigurację wymaganą do skonfigurowania magazynu dla kanału Commerce. Aby uzyskać więcej informacji dotyczących konfiguracji magazynu, zobacz [Omówienie zarządzania magazynem](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json).
 
@@ -45,7 +51,7 @@ Aby skonfigurować oddział magazynu, wykonaj następujące kroki.
 
 Poniższy obraz przedstawia przykład oddział magazynu.
 
-![Przykład oddziału magazynu.](media/warehouse-site.png)
+![Przykład oddziału magazynu](media/warehouse-site.png)
 
 ## <a name="set-up-a-warehouse"></a>Ustawianie magazynu
 
@@ -98,7 +104,7 @@ Aby skonfigurować lokalizacje magazynów magazynowych dla standardowych, uszkod
     
 Na poniższym rysunku przedstawiono konfigurację lokalizacji magazynu w San Francisco.
 
-![Przykładowe ustawienia lokalizacji zapasów.](media/warehouse-inventory-locations.png)
+![Przykładowe ustawienia lokalizacji zapasów](media/warehouse-inventory-locations.png)
     
 ## <a name="complete-warehouse-setup"></a>Zakończ konfigurację magazynu
 
@@ -121,7 +127,7 @@ Aby zakończyć tę konfigurację magazynu, należy wykonać następujące czynn
 
 Poniższy obraz przedstawia szczegóły dotyczące skonfigurowanego magazynu.
 
-![Przykładowy magazyn skonfigurowany.](media/warehouse-sample.png)
+![Przykładowy magazyn skonfigurowany](media/warehouse-sample.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
@@ -141,6 +147,3 @@ Poniższy obraz przedstawia szczegóły dotyczące skonfigurowanego magazynu.
 
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

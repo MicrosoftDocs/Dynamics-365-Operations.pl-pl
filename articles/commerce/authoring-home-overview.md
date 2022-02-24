@@ -1,19 +1,28 @@
 ---
-# required metadata
 title: Omówienie strony tworzenia
 description: Ten temat zawiera omówienie strony tworzenia w Microsoft Dynamics 365 Commerce.
 author: brendans
+manager: annbe
 ms.date: 10/31/2019
-ms.topic: overview
-ms.prod: null
-ms.technology: null
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-commerce
+ms.technology: ''
 audience: Application USer
 ms.reviewer: v-chgri
-ms.assetid: null
+ms.search.scope: Retail, Core, Operations
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: brendans
-ms.search.validFrom: '2019-10-31'
+ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
+ms.openlocfilehash: 95908c3a8b6c5231f2f5b283fa05f07c4e91b5d7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414920"
 ---
 # <a name="authoring-page-overview"></a>Omówienie strony tworzenia
 
@@ -21,6 +30,8 @@ ms.dyn365.ops.version: Release 10.0.5
  [!include [banner](includes/banner.md)]
 
 Ten temat zawiera omówienie strony tworzenia w Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Omówienie
 
 Witryny sieci Web można tworzyć w celu obsługi różnych potrzeb biznesowych. Mogą one reprezentować całą firmę, oferować jeden kanał działalności lub kierować konkretną grupę odbiorców lub segmentów odbiorców. Na przykład producent odzieży może mieć witrynę sieci Web, która zawiera wszystkie posiadane marki. Ten sam producent odzieży może wówczas mieć oddzielną witrynę sieci Web dla każdej z tych marek, a także zbiór witryn sieci Web, które są przeznaczone dla odzieży luksusowej, outdoor lub dziecięcej.
 
@@ -34,7 +45,7 @@ Obecnie strona tworzenia składa się z następujących sekcji:
 
 Ilustracja poniżej przedstawia stronę tworzenia.
 
-![Dynamics 365 Commerce strona tworzenia.](../commerce/media/authoring_tools_01.png)
+![Dynamics 365 Commerce strona tworzenia](../commerce/media/authoring_tools_01.png)
 
 ## <a name="use-the-home-button-to-select-a-tool"></a>Aby wybrać narzędzie, należy skorzystać z przycisku Strona główna
 
@@ -111,6 +122,3 @@ Po załadowaniu narzędzia autorskiego możesz wybrać opcję **Strona główna*
 [Zagadnienia optymalizacji wyszukiwarki dla witryny](search-engine-optimization-considerations.md)
 
 [Zarządzanie zasadami zabezpieczeń zawartości (CSP)](manage-csp.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

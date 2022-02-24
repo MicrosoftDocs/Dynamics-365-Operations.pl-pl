@@ -1,27 +1,36 @@
 ---
-# required metadata
 title: Praca z predefiniowanymi ustawieniami stylów
-description: 'W tym temacie opisano, jak pracować z predefiniowanymi ustawieniami stylów w konstruktorze witryn Microsoft Dynamics 365 Commerce.'
+description: W tym temacie opisano, jak pracować z predefiniowanymi ustawieniami stylów w konstruktorze witryn Microsoft Dynamics 365 Commerce.
 author: phinneyridge
+manager: annbe
 ms.date: 05/28/2020
 ms.topic: article
-ms.prod: null
-ms.technology: null
+ms.prod: ''
+ms.service: dynamics-365-commerce
+ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.custom: null
-ms.assetid: null
+ms.search.scope: Retail, Core, Operations
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: niholman
-ms.search.validFrom: '2019-10-31'
+ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
+ms.openlocfilehash: 250f2386cefee8bef45df66c4eef31b4e7fc2686
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415009"
 ---
-
 # <a name="work-with-style-presets"></a>Praca z predefiniowanymi ustawieniami stylów
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano, jak pracować z predefiniowanymi ustawieniami stylów w konstruktorze witryn Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Omówienie
 
 Ustawienie predefiniowane stylu jest zapamiętanym zestawem wszystkich wartości stylów, które są tworzone w motywie danej witryny. Można go użyć do natychmiastowego zmiany wyglądu witryny za pomocą konstruktora witryn. Ustawienia predefiniowane stylów umożliwiają autorom modułu Commerce site Builder szybkie zmienianie, przeglądanie i uaktywnianie zbioru wartości stylów w ich oddziale, bez konieczności używania arkuszy stylów kaskadowych (CSS) lub wdrażania motywów. Style czcionek, style przycisków i kolory oddziału są typowymi przykładami zmiennych stylów, którymi można zarządzać za pomocą predefiniowanych ustawień stylu.
 
@@ -112,11 +121,10 @@ Wartości stylu ustawienia wstępnego są aktywne w całej publicznej witrynie s
 
 [Dodawanie ikony favicon](add-favicon.md)
 
+[Dodawanie wiadomości powitalnej](add-welcome-message.md)
+
 [Dodawanie powiadomienia o prawach autorskich](add-copyright-notice.md)
 
 [Dodawanie języków do witryny](add-languages-to-site.md)
 
 [Dodawanie kodu skryptu do stron witryny w celu obsługi telemetrii](add-telemetry.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

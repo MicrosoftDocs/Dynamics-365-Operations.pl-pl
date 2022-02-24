@@ -2,12 +2,15 @@
 title: Ulepszenia w zakresie zarządzania gotówką
 description: W tym temacie opisano ulepszenia w zakresie zarządzania gotówką w punkcie sprzedaży w programie Dynamics 365 Commerce.
 author: anpurush
+manager: AnnBe
 ms.date: 05/21/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
@@ -15,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f878f39e8e9913edbe1da192e199090139a88adb6b7ed9a1e9b779c5748171b5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0c561c39dfcbfa739c5a22394c05191e7f9bc107
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735661"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414906"
 ---
 # <a name="cash-management-improvements"></a>Ulepszenia w zakresie zarządzania gotówką
 
@@ -30,7 +33,7 @@ ms.locfileid: "6735661"
 Zarządzanie gotówką jest kluczową funkcją dla sprzedawców detalicznych w sklepach fizycznych. Sklepy detaliczne chcą mieć systemy, które zapewnią im pełną identyfikowalność i możliwość rozliczania gotówki i jej przepływów między różnymi kasami i kasjerami w sklepie. Muszą oni być w stanie uzgodnić wszelkie różnice i określić odpowiedzialność.
 
 
-Program Microsoft Dynamics 365 Commerce ma funkcje zarządzania gotówką w swojej aplikacji punktu sprzedaży. Jednak w wersjach aplikacji Retail starszych niż 10.0.3 funkcje zarządzania gotówką nie są na tyle rozbudowane, aby zapewnić pełną identyfikowalność przepływów gotówki w sklepach. Chociaż sprzedawcy detaliczni mogą uzgodnić gotówkę w sklepie, to nie są w stanie precyzyjnie określić odpowiedzialności w razie rozbieżności ze stanem faktycznym.
+Microsoft Dynamics 365 Commerce ma funkcje zarządzania gotówką w swojej aplikacji punktu sprzedaży. Jednak w wersjach aplikacji Retail starszych niż 10.0.3 funkcje zarządzania gotówką nie są na tyle rozbudowane, aby zapewnić pełną identyfikowalność przepływów gotówki w sklepach. Chociaż sprzedawcy detaliczni mogą uzgodnić gotówkę w sklepie, to nie są w stanie precyzyjnie określić odpowiedzialności w razie rozbieżności ze stanem faktycznym.
 
 
 W usłudze Retail w wersji 10.0.3 i nowszych sprzedawcy detaliczni zyskują identyfikowalność przepływów gotówki. W ramach tej identyfikowalności sprzedawcy detaliczni będą mogli definiować sejfy, tworzyć dwustronne transakcje kasowe oraz uzgadniać transakcje zarządzania gotówką.
@@ -59,6 +62,3 @@ W module Retail w wersji 10.0.3 i nowszych dostępne są ponadto następujące f
 - W trakcie uzgadniania, jeśli wybrana transakcja nie ma salda, użytkownik musi wprowadzić opis przyczyny niezbilansowania uzgodnienia. Użytkownicy mogą wybrać pojedynczą transakcję i uzgodnić ją z odpowiednim opisem przyczyny w razie potrzeby.
 - Użytkownicy mogą kontynuować uzgadnianie i nieuzgadnianie transakcji, aż zmiana zostanie zamknięta. Po zamknięciu zmiany transakcje nie mogą być nieuzgodnione.
 - Gdy użytkownik decyduje się na zamknięcie zmiany, moduł Commerce sprawdza, czy zmiana nie zawiera żadnych nieuzgodnionych transakcji zarządzania gotówką. Użytkownicy nie mogą zamknąć zmiany, jeśli zawiera nieuzgodnione transakcje.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

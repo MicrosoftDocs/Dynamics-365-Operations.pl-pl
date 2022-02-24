@@ -1,24 +1,26 @@
 ---
 title: Rabaty dostawcy
 description: Ten temat zawiera omówienie najpopularniejszych zadań, które może wykonać podczas pracy z rabatami dostawcy. Rabaty dostawcy ułatwiają firmom zarządzanie programami rabatów dla dostawców dzięki automatyzacji zadań wymaganych do administrowania, śledzenia i wykorzystywania uzyskanych rabatów.
-author: Henrikan
+author: omulvad
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TAMVendRebateAgreement
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: ec8d054d023b7e3f6611199e60f661c480d44d57
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 46d6beb287f7d034c6fde09999f7854695a4987c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566870"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966662"
 ---
 # <a name="vendor-rebates"></a>Rabaty dostawcy
 
@@ -53,7 +55,7 @@ Umowa rabatowa z dostawcą to zapis umowy z dostawcą, która określa wynegocjo
 
 Aby otworzyć stronę **Umowy rabatowe z dostawcą**, wybierz opcję **Zaopatrzenie i sourcing** &gt; **Rabaty dostawcy** &gt; **Umowy rabatowe**.
 
-![Umowa zakupu.](media/purchase-agreement.PNG)
+![Umowa zakupu](media/purchase-agreement.PNG)
 
 Na stronie **Umowy rabatowe z dostawcą** można wyświetlić szczegóły dotyczące wynegocjowanych warunków umowy z dostawcą.
 
@@ -129,7 +131,7 @@ Po zatwierdzeniu roszczenia mogą zostać przetworzone przez moduł Rozrachunki 
 
     Arkusz naliczania rabatów zostanie zaksięgowany dla kwoty roszczenia. To księgowanie obciąża rachunek Naliczone należności rabatów dostawcy na oczekiwany kredyt dostawcy i uznaje tymczasowy rachunek Naliczone odebrane rabaty dostawcy na oczekiwany zysk.
 
-    ![Komunikat.](media/message.png)
+    ![Wiadomość](media/message.png)
 
 5. Na liście rabatów wybierz wiersz, a następnie w okienku akcji wybierz opcję **Transakcje rabatowe**, aby wyświetlić i przejść do arkusza z numerem partii dla tego księgowania naliczania rabatu.
 
@@ -164,6 +166,3 @@ Proces obsługi rabatów dostawcy obejmuje wiele zadań śledzenia ręcznego, kt
 - Generowanie prawidłowych roszczeń dotyczących rabatu
 - Naliczenie oczekiwanych należności i tymczasowego zysku w księdze głównej
 - Aktualizacja salda dostawcy i rachunku strat i zysków o należny odpis
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

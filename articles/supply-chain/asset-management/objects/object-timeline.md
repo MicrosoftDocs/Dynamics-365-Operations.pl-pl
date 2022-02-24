@@ -1,10 +1,12 @@
 ---
 title: Historia zdarzeń składnika majątku
 description: W tym temacie wyjaśniono, jak uzyskiwać dostęp do historii zdarzeń składnika majątku w Zarządzaniu składnikami majątku.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 670fa5800efad99d913e96dee8c6883f150b86d2227143dbdf392c7b380e89a6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ea71dee6f653f73a86d31e82cf3541b4447bd552
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750179"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019522"
 ---
 # <a name="asset-event-history"></a>Historia zdarzeń składnika majątku
 
@@ -46,6 +48,3 @@ Oś czasu jest aktualizowana za każdym razem, gdy strona jest otwarta. Zawiera 
 - Zlecenia pracy, w tym zaksięgowane pozycje i notatki
 - Błędy
 - Oceny warunku
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

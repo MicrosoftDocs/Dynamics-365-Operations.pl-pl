@@ -2,13 +2,16 @@
 title: Włączanie rekomendacji produktów
 description: W tym temacie wyjaśniono, jak udostępnić rekomendacje produktów oparte na sztucznym uczeniu maszynowym (AI-ML) dostępne dla klientów Microsoft Dynamics 365 Commerce.
 author: bebeale
-ms.date: 08/31/2021
+manager: AnnBe
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,14 +19,14 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4a7be82b3a40aba621693f080ff41767fdaea474
-ms.sourcegitcommit: 98061a5d096ff4b9078d1849e2ce6dd7116408d1
+ms.openlocfilehash: b201e5481cfaf5bb6cd64a89cdb6b5a91f31447f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "7466323"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414824"
 ---
-# <a name="enable-product-recommendations"></a>Włącz rekomendacje produktów
+# <a name="enable-product-recommendations"></a>Włączanie rekomendacji produktów
 
 [!include [banner](includes/banner.md)]
 
@@ -31,28 +34,32 @@ W tym temacie wyjaśniono, jak udostępnić rekomendacje produktów oparte na sz
 
 ## <a name="recommendations-pre-check"></a>Wstępne sprawdzanie rekomendacji
 
-1. Upewnij się, że masz prawidłową licencję rekomendacji Dynamics 365 Commerce.
-1. Upewnij się, że magazyn encji jest połączony z kontem usługi Azure Data Lake Storage Gen2 należącym do klienta. Aby uzyskać więcej informacji, zobacz [Upewnij się, że Azure Data Lake Storage został zakupiony i pomyślnie zweryfikowany w środowisku](enable-ADLS-environment.md).
-1. Potwierdź, że konfiguracja tożsamości Azure AD zawiera wpis do Rekomendacji. Poniżej znajduje się więcej informacji dotyczących wykonywania tej akcji.
-1. Upewnij się, że dzienne odświeżanie magazynu encji do usługi Azure Data Lake Storage Gen2 zostało zaplanowane. Aby uzyskać więcej informacji, zobacz [Upewnij się, że odświeżanie magazynu jednostek zostało zautomatyzowane. ](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
-1. Włącz miary RetailSale dla magazynu encji. Aby uzyskać więcej informacji o konfigurowanie tego procesu, zobacz [Praca z pomiarami](/dynamics365/ai/customer-insights/pm-measures).
+Przed włączeniem należy pamiętać, że rekomendacje produktów są obsługiwane tylko dla klientów Commerce, którzy przeprowadzili migrację danych za pomocą Azure Data Lake Storage. 
 
-Po ukończeniu poszczególnych kroków można włączyć rekomendacje.
+Przed włączeniem rekomendacji należy włączyć w biurze zaplecza następujące konfiguracje:
+
+1. Upewnij się, że Azure Data Lake Storage został zakupiony i pomyślnie zweryfikowany w środowisku. Aby uzyskać więcej informacji, zobacz [Upewnij się, że Azure Data Lake Storage został zakupiony i pomyślnie zweryfikowany w środowisku](enable-ADLS-environment.md).
+2. Upewnij się, że odświeżanie magazynu jednostek zostało zautomatyzowane. Aby uzyskać więcej informacji, zobacz [Upewnij się, że odświeżanie magazynu jednostek zostało zautomatyzowane. ](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
+3. Potwierdź, że konfiguracja tożsamości Azure AD zawiera wpis do Rekomendacji. Poniżej znajduje się więcej informacji dotyczących wykonywania tej akcji.
+
+Ponadto upewnij się, że zostały włączone pomiary RetailSale. Aby dowiedzieć się więcej o tym procesie konfiguracji, zobacz [Praca z pomiarami](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-measures).
 
 ## <a name="azure-ad-identity-configuration"></a>Identyfikator konfiguracji Azure AD
 
-Ten krok jest wymagany tylko dla klientów, którzy uruchamiają konfigurację infrastruktury jako usługi (IaaS). Konfiguracja tożsamości usługi Azure AD jest automatyczna w przypadku klientów uruchamiających usługę Azure Service Fabric, ale zalecane jest sprawdzenie, czy ustawienie jest skonfigurowane zgodnie z oczekiwaniami.
+Ten krok jest wymagany dla wszystkich klientów, którzy uruchamiają strukturę podsieciową jako konfigurację usługi (IaaS). W przypadku klientów korzystających z service fabric (SF) ten krok powinien być automatyczny i zaleca się sprawdzenie, czy ustawienie zostało skonfigurowane zgodnie z oczekiwaniami.
 
 ### <a name="setup"></a>Konfiguracja
 
-1. W centrali rozwiązania Commerce Headquarters wyszukaj stronę **aplikacji usługi Azure Active Directory**.
-1. Sprawdź, czy istnieje wpis **RecommendationSystemApplication-1**. Jeśli wpis nie istnieje, utwórz go, używając następujących informacji:
+1. W zapleczu do biura wyszukaj stronę **Aplikacje Azure Active Directory**.
+2. Sprawdź, czy istnieje wpis „RecommendationSystemApplication-1”.
 
-    - **Identyfikator klienta**: d37b07e8-dd1c-4514-835d-8b918e6f9727
-    - **Nazwa**: RecommendationSystemApplication-1
-    - **Identyfikator użytkownika**: RetailServiceAccount
+Jeśli wpis nie istnieje, dodaj nowy wpis z następującymi informacjami:
 
-1. Zapisz i zamknij stronę. 
+- **Identyfikator klienta** - d37b07e8-dd1c-4514-835d-8b918e6f9727
+- **Nazwa** - RecommendationSystemApplication-1
+- **Identyfikator użytkownika** — RetailServiceAccount
+
+Zapisz i zamknij stronę. 
 
 ## <a name="turn-on-recommendations"></a>Włączanie rekomendacji
 
@@ -64,23 +71,18 @@ Aby włączyć rekomendacje produktu, wykonaj następujące czynności.
 1. Wybierz funkcję **Rekomendacje produktów**.
 1. W okienku właściwości **Rekomendacje produktów** wybierz opcję **Włącz teraz**.
 
-![Włączanie rekomendacji.](./media/FeatureManagement_Recommendations.PNG)
+![Włączanie rekomendacji](./media/FeatureManagement_Recommendations.PNG)
 
 > [!NOTE]
-> - Powyższa procedura rozpoczyna proces generowania list rekomendacji produktów. Może upłynąć kilka godzin zanim listy będą dostępne i mogą być widoczne w punkcie sprzedaży (POS) lub w Dynamics 365 Commerce.
-> - Ta konfiguracja nie włącza wszystkich funkcji rekomendacji. Do kontrolowania zaawansowanych funkcji, takich jak spersonalizowana rekomendacje, „kupowanie podobnie wyglądających produktów” i „kupowania podobnie opisanych produktów”, są kontrolowane przez dedykowane wpisy zarządzania funkcjami. Aby uzyskać informacje dotyczące włączania tych funkcji w centrali rozwiązania, zobacz [Włączanie rekomendacji spersonalizowanych](personalized-recommendations.md), [Włączanie rekomendacji „kupowania podobnie wyglądających produktów”](shop-similar-looks.md) i [Włączanie rekomendacji „kupowania podobnie opisanych produktów”](shop-similar-description.md).
+> Ta procedura rozpoczyna proces generowania list rekomendacji produktów. Może upłynąć kilka godzin zanim listy będą dostępne i mogą być widoczne w punkcie sprzedaży (POS) lub w Dynamics 365 Commerce.
 
 ## <a name="configure-recommendation-list-parameters"></a>Konfigurowanie parametrów listy rekomendacji
 
 Domyślnie lista rekomendacji produktów opartych na AI-ML zawiera sugerowane wartości. Można zmienić domyślne sugerowane wartości, tak aby odpowiadały przepływowi działalności firmy. Aby dowiedzieć się więcej o zmienianiu domyślnych parametrów, należy przejść do obszaru [Zarządzanie wynikami rekomendacji produktów na podstawie plików AI-ML](modify-product-recommendation-results.md).
 
-## <a name="include-recommendations-in-e-commerce-experiences"></a>Uwzględnianie rekomendacji w środowiskach e-commerce
-
-Po włączeniu rekomendacji w centrali Commerce moduły Commerce używane do wyświetlania wyników rekomendacji dla środowisk e-commerce są gotowe do skonfigurowania. Aby uzyskać więcej informacji, zobacz temat [Moduły kolekcji produktów](product-collection-module-overview.md).
-
 ## <a name="show-recommendations-on-pos-devices"></a>Pokaż rekomendacje dotyczące urządzeń punktu sprzedaży (POS)
 
-Po włączeniu rekomendacji w centrali rozwiązania Commerce, panel rekomendacji musi zostać dodany do ekranu kontroli punktu sprzedaży (POS) za pomocą narzędzia układu. Aby dowiedzieć się więcej o tym procesie, zobacz temat [Dodawanie kontroli zaleceń do ekranu transakcji na urządzeniach z punktu sprzedaży](add-recommendations-control-pos-screen.md). 
+Po włączeniu rekomendacji w bac office Commerce, pannel rekomendacje musi zostać dodany do ekranu kontrolki punktu sprzedaży (POS) za pomocą narzędzia układ. Aby dowiedzieć się więcej o tym procesie, zobacz temat [Dodawanie kontroli zaleceń do ekranu transakcji na urządzeniach z punktu sprzedaży](add-recommendations-control-pos-screen.md). 
 
 ## <a name="enable-personalized-recommendations"></a>Włączanie rekomendacji spersonalizowanych
 
@@ -112,6 +114,3 @@ Aby uzyskać informacje o spersonalizowanych rekomendacjach, zobacz [Włączanie
 
 [Rekomendacje produktów — często zadawane pytania](faq-recommendations.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

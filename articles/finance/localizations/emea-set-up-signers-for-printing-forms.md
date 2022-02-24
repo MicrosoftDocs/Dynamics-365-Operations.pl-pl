@@ -2,23 +2,26 @@
 title: Konfigurowanie osób podpisujących drukowane formularze
 description: Dla firm w Czechach, Estonii, na Węgrzech, Litwie, Łotwie, w Polsce i Rosji można skonfigurować osoby podpisujące oraz tytuły dla odbiorców i dostawców, którzy drukują dokumenty, takie jak faktury i zamówienia gotówkowe.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.custom: 263464
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e5e80699f3ac2faaf947e0ce93e9408e3d0811265ec70d41c2a8b93e0f0d358a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 64868aa08201fa3df99cd86fa6ef5231a9347151
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717456"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408384"
 ---
 # <a name="set-up-signers-for-print-forms"></a>Konfigurowanie osób podpisujących drukowane formularze
 
@@ -26,7 +29,8 @@ ms.locfileid: "6717456"
 
 Dla firm w Czechach, Estonii, na Węgrzech, Litwie, Łotwie, w Polsce i Rosji można skonfigurować osoby podpisujące oraz tytuły dla odbiorców i dostawców, którzy drukują dokumenty, takie jak faktury i zamówienia gotówkowe.
 
-## <a name="set-up-default-values"></a>Konfigurowanie wartości domyślnych
+<a name="set-up-default-values"></a>Konfigurowanie wartości domyślnych
+---------------------
 
 Aby skonfigurować osoby podpisujące dokumenty drukowane przez firmę, należy użyć strony **Dane urzędowe**. Można skonfigurować osoby podpisujące i ich tytuły zarówno dla firmy, jak i dla odbiorców lub dostawców, w zależności od typu dokumentu. W poniższej tabeli opisano karty znajdujące się na stronie **Dane urzędowe**.
 
@@ -161,6 +165,3 @@ Funkcjonalność danych urzędowych pokazuje domyślne predefiniowane osoby podp
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

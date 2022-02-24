@@ -1,24 +1,27 @@
 ---
 title: Importowanie plików ISO20022
 description: W tym temacie wyjaśniono, jak importować pliki płatności w formatach ISO 20022 camt.054 i pain.002 do Microsoft Dynamics 365 Finance.
-author: anasyash
+author: neserovleo
+manager: AnnBe
 ms.date: 07/27/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustPaymMode, CustBankAccounts, VendPaymMode, VendBankAccounts
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Italy, Latvia, Lithuania, Norway, Poland, Spain, Sweden, Switzerland, United Kingdom
-ms.author: anasyash
+ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 19b9e90ac42c496931c2fc936a25ee3b1b16ce58
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.openlocfilehash: b809ba8d92772d8f3f416d4854d4af322e6f954a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592610"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408361"
 ---
 # <a name="import-iso20022-files"></a>Importowanie plików ISO20022
 
@@ -114,7 +117,7 @@ Podczas importowania konfiguracji formatu z usługi LCS importujesz całe drzewo
  - **Pain.002** — ten format zostanie użyty wraz z konfiguracją Mapowanie modelu płatności do lokalizacji docelowej ISO20022 w celu zaimportowania pliku pain.002 do arkusza przeniesień płatności dostawców
  - **Camt.054** — ten format zostanie użyty wraz z konfiguracją Mapowanie modelu płatności do lokalizacji docelowej ISO20022 w celu zaimportowania pliku camt.054 do arkusza przeniesień płatności dostawców Ta sama konfiguracja formatu będzie używana w funkcji importowania płatności odbiorców, ale inne mapowanie będzie używane w konfiguracji Mapowanie modelu płatności do lokalizacji docelowej ISO20022.
 
-Aby uzyskać więcej informacji na temat raportowania elektronicznego, zobacz [Omówienie raportowania elektronicznego](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
+Aby uzyskać więcej informacji na temat raportowania elektronicznego, zobacz [Omówienie raportowania elektronicznego](../../dev-itpro/analytics/general-electronic-reporting.md).
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 - [Tworzenie i eksport płatności dla dostawcy przy użyciu formatu płatności ISO20022](./tasks/create-export-vendor-payments-iso20022-payment-format.md)
@@ -126,6 +129,3 @@ Aby uzyskać więcej informacji na temat raportowania elektronicznego, zobacz [O
 - [Konfigurowanie metody płatności przelewu ISO20022](./tasks/set-up-method-payment-iso20022-credit-transfer.md)
 - [Konfigurowanie metody płatności poleceniem zapłaty ISO20022](./tasks/setup-method-payment-iso20022-direct-debit.md)
 - [Konfigurowanie dostawców i kont bankowych dostawców dla poleceń przelewu ISO20022](./tasks/set-up-vendor-iso20022-credit-transfers.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

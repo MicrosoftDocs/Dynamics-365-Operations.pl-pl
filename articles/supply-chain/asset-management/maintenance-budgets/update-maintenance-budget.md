@@ -1,10 +1,12 @@
 ---
 title: Aktualizowanie budżetu konserwacji
 description: W tym temacie wyjaśniono, jak aktualizować budżet konserwacji w zarządzaniu składnikami majątku.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 87c054cb96d56e40e35ee44142396f59d61395263ff41232423f6c7911478b0d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b04549700b51f73a3629fe9cd67a3e1f6c1bafbb
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724947"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021039"
 ---
 # <a name="update-maintenance-budgets"></a>Aktualizowanie budżetu konserwacji
 
@@ -72,6 +74,3 @@ Na stronie **Wiersze budżetu konserwacji** można ręcznie dodać nowy wiersz b
 
 - Wiadomo, że odnawianiem niektórych środków trwałych znajduje się obecnie w fazie planowania, ale powiązane zadania nie zostały jeszcze utworzone w module Zarządzanie składnikami majątku. Należy jednak uwzględnić koszty budżetowe tych zadań, które mają być uwzględnione w budżecie konserwacji.
 - Nowe środki trwałe lub typy środków zostały utworzone od czasu dokonania budżetu konserwacji, ale nie skonfigurowano jeszcze planów konserwacji dla tych składników lub typów składników majątku. Należy jednak uwzględnić koszty budżetowe tych składników majątku, które mają być uwzględnione w budżecie konserwacji.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,33 +2,31 @@
 title: Optymalizowanie wydajności – planowanie zadań wsadowych po godzinach pracy
 description: W tym temacie wyjaśniono, jak rozwiązywać pewne problemy z wydajnością w Microsoft Dynamics 365 Human Resources poprzez planowanie długotrwałych zadań wsadowych po godzinach pracy.
 author: andreabichsel
+manager: AnnBe
 ms.date: 06/23/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-23
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 14354ba9454b8837246b75cd413497553423511e
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 452a87cf5ba6c1ac73636584d75b2ec2ac555e02
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065433"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527772"
 ---
 # <a name="optimize-performance-by-scheduling-batch-jobs-after-hours"></a>Optymalizowanie wydajności – planowanie zadań wsadowych po godzinach pracy
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 ## <a name="issue"></a>Wystawienie
 
@@ -54,11 +52,11 @@ Poniższe zadania wsadowe powinny być uruchamiane w nocy lub po godzinach. Nale
 
 3. Wybierz **Uruchom w tle**, a następnie **Cykl**.
 
-   ![Ustaw cykl.](media/talent-batch-history-cleanup-recurrence.png)
+   ![Ustaw cykl](media/talent-batch-history-cleanup-recurrence.png)
 
 4. W obszarze **Zdefiniuj cykl** ustaw **datę rozpoczęcia** i **godzinę rozpoczęcia** na czas poza godzinami pracy lub weekend. Wybierz **Brak daty zakończenia**. 
 
-   ![Definiowanie daty i godziny rozpoczęcia.](media/talent-batch-history-cleanup-define-recurrence.png)
+   ![Definiowanie daty i godziny rozpoczęcia](media/talent-batch-history-cleanup-define-recurrence.png)
 
 5. Kliknij przycisk **OK**.
 
@@ -67,6 +65,3 @@ Poniższe zadania wsadowe powinny być uruchamiane w nocy lub po godzinach. Nale
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Optymalizowanie wydajności za pomocą zadań automatycznego czyszczenia](hr-admin-troubleshooting-batch-history.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

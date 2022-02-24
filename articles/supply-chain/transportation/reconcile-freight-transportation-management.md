@@ -1,10 +1,12 @@
 ---
 title: Uzgadnianie frachtu w module Zarządzanie transportem
 description: W tym artykule opisano proces uzgadniania frachtu.
-author: Henrikan
+author: MarkusFogelberg
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSAuditMaster, TMSFreightBillInvoiceReconcile, TMSFreightBillSummary, TMSFreightBillType, TMSFreightMatchReason, TMSFBDetailReconcile, TMSInvoiceTable,TMSInvoiceLineReconcile,TMSReconcileInvoice, TMSFreightBillDetail, TMSFreightBillTypeAssignment, TMSRejectInvoiceLine, TMSMiscellaneousCharge
 audience: Application User
@@ -13,15 +15,15 @@ ms.custom: 89983
 ms.assetid: bc34a9b1-0c11-4797-b463-25409cf98ca8
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: henrikan
+ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a63bfd34860c6a7c34cbc526c6a621cbc9666efc
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ac07155e4dde77689b1994abfb8b30f45d5a5a30
+ms.sourcegitcommit: b6686265314499056690538eaa95ca51cff7c720
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574912"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5014515"
 ---
 # <a name="reconcile-freight-in-transportation-management"></a>Uzgadnianie frachtu w module Zarządzanie transportem
 
@@ -35,13 +37,13 @@ Uzgadnianie frachtu można wykonać ręcznie lub skonfigurować jego wykonywanie
 
 Stawki frachtowe są obliczane przez aparat stawki skojarzony z odnośnym przewoźnikiem. Po potwierdzeniu ładunku jest generowany list frachtowy, a do niego są przenoszone stawki frachtowe. Stawki frachtowe są przypisywane jako opłaty dodatkowe do odnośnego dokumentu źródłowego (zamówienia zakupu, zamówienia sprzedaży i/lub zamówienie przeniesienia), w zależności od konfiguracji używanej w standardowym procesie fakturowania. Proces uzgadniania frachtu (nazywany także procesem dopasowywania) może się rozpocząć natychmiast po otrzymaniu faktury za fracht od firmy przewozowej. Fakturę można odebrać elektronicznie lub na papierze. Jeśli faktura jest otrzymywana na papierze, można wygenerować fakturę elektroniczną, używając listu frachtowego jako szablonu.
 
-[![Proces uzgadniania frachtu.](./media/freight-reconcilation-process.jpg)](./media/freight-reconcilation-process.jpg)
+[![Proces uzgadniania frachtu](./media/freight-reconcilation-process.jpg)](./media/freight-reconcilation-process.jpg)
 
 ## <a name="manual-reconciliation"></a>Ręczne uzgadnianie
 
 Jeśli uzgadniasz fracht ręcznie, trzeba dopasować każdy wiersz faktury do wiersza lub wierszy listu frachtowego dla fakturowanego ładunku. To dopasowanie odbywa się na stronie **Dopasowywanie opłat frachtowych i faktur**. Jeśli kwota w wierszu faktury nie pasuje do kwoty w liście frachtowym, dla różnicy należy wybrać przyczynę uzgodnienia. Jeśli istnieje wiele przyczyn uzgodnienia, można rozdzielić niezgodną kwotę między nie. Przyczyna uzgodnienia określa, jak kwoty różnic są księgowane w księdze głównej. Po uzgodnieniu całej kwoty faktury faktura jest przedstawiana do zatwierdzenia, po czym następuje zaksięgowanie arkusza. Poniższa ilustracja pokazuje sposób generowania faktury za fracht oraz uzgadniania frachtu.
 
-[![Zadania uzgadniania frachtu.](./media/processflowforfreightreconciliation.jpg)](./media/processflowforfreightreconciliation.jpg)
+[![Zadania uzgadniania frachtu](./media/processflowforfreightreconciliation.jpg)](./media/processflowforfreightreconciliation.jpg)
 
 ## <a name="automatic-reconciliation"></a>Automatyczne uzgadnianie
 
@@ -103,6 +105,3 @@ W tym przykładzie można wykonać uzgadnianie ręczne w inny sposób:
 1. Dopasuj kolejno faktury Inv1 i Inv 2 do FB. Rachunek FB jest w pełni dopasowany.
 
 Jak pokazano w tym przykładzie, uzgadnianie faktur za fracht z kwotami ujemnymi należy wykonać tylko ręcznie. Zapewnia to, że zawsze jest możliwe dopasowanie faktur za fracht z kwotami ujemnymi do w pełni dopasowanej opłaty frachtowej, ponieważ umożliwia to kontrolowanie kolejności uzgadniania.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

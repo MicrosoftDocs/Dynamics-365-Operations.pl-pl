@@ -2,9 +2,11 @@
 title: Płaca oparta na rejestracjach
 description: W tym temacie wyjaśniono, jak płaca jest obliczana na podstawie rejestracji pracowników.
 author: johanhoffmann
+manager: tfehr
 ms.date: 03/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgCalcApproveWeekView, JmgProdStatusListPagePayrollCostDetails, JmgPayCountTable, JmgPayStatConfig, JmgOvertimeSlize, JmgPayAgreementOverride, JmgPayCountSum, JmgPayAdjustSetup, JmgPayAdjustCostType, JmgPayEmployee, JmgMESBreak, JmgPayAddTable, JmgPayAddTransSelectTransId, JmgPayrollCostDetailsPart, jmgProdStatusListPagePayrollCosts, JmgPayrollCostPart, JmgPayEvents, JmgTermRegPayStatSetup, JmgPayStatGroup, JmgPayAddTrans, JmgPayStatTrans
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 58ff2629c2894e85ca5529df5f995ffa5273de67e1c22564f5f9911ea86fbd95
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 98ca6f7713b2f605a49a97d391fb8485bea78c4b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715729"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966387"
 ---
 # <a name="pay-based-on-registrations"></a>Płaca oparta na rejestracjach
 
@@ -168,9 +170,9 @@ Aby w systemie skonfigurować jednoznaczne rozróżnianie standardowego czasu pr
 
 Na stronie **Parametry obliczania** wybierz wartość **Nadgodziny** jako typ specyfikacji profilu, a w opcji **Czas płatny** ustaw wartość **Nie**, jak pokazano poniżej.
 
-| Specyfikacja reg. | Typ specyfikacji profilu | Obliczenie   | Ustawienie | Zapłacona         | Ustawienie |
+| Specyfikacja reg. | Typ specyfikacji profilu | Obliczenie   |     | Zapłacony         |     |
 |--------------------|----------------------------|---------------|-----|--------------|-----|
-| Czas pracy       | Nadgodziny                   | Czas standardowy | Tak | Czas płatny     | Nie  |
+| Czas pracy       | Nadgodziny                   | Czas standardowy | Tak | Czas płatny     | Nr  |
 |                    |                            | Czas płatny      | Tak | Płatne nadgodziny | Tak |
 
 Po ustawieniu parametrów obliczania zostaną wygenerowane następujące elementy płacowe.
@@ -559,7 +561,7 @@ Z drugiej strony jeśli pole wyboru **Odejmij nadgodziny** jest wyczyszczone dla
 
 W poniższym przykładzie pokazano, jak saldo konta elastycznego czasu pracy pracownika można zmniejszyć poprzez przekonwertowanie okresu nieobecności na okres odjęcia elastycznego czasu pracy.
 
-Pracownik wchodzi o 7.00, a wychodzi o 13.00. Pracownik ma umowę, że może wrócić do domu na weekend, jeśli odliczy te godziny ze swojego konta elastycznego. Jeśli pracownik wyjdzie o 13.00, zobaczy monit o wybranie kodu nieobecności, ponieważ okres nieobecności w pozostałej części dnia pracy nie jest planowanym okresem odjęcia elastycznego czasu pracy. Aby przekształcić pozostałą część dnia pracy na okres odjęcia elastycznego czasu pracy, pracownik może wybrać kod nieobecności skonfigurowany do zmniejszania salda konta elastycznego czasu pracy.
+Pracownik wchodzi o 7.00, a wychodzi o 13.00. Uzgodnił z przełożonym, że może iść do domu na weekend, jeśli odliczy te godziny od salda swojego konta elastycznego czasu pracy. Jeśli pracownik wyjdzie o 13.00, zobaczy monit o wybranie kodu nieobecności, ponieważ okres nieobecności w pozostałej części dnia pracy nie jest planowanym okresem odjęcia elastycznego czasu pracy. Aby przekształcić pozostałą część dnia pracy na okres odjęcia elastycznego czasu pracy, pracownik może wybrać kod nieobecności skonfigurowany do zmniejszania salda konta elastycznego czasu pracy.
 
 Aby zmniejszać saldo elastycznego czasu pracy dla pracowników, którzy rejestrują nieobecność w trakcie dnia roboczego, wybierz kolejno opcje **Czas i frekwencja** &gt; **Ustawienia** &gt; **Grupy** &gt; **Grupy nieobecności** i zaznacz pole wyboru **Redukcja elastycznego czasu pracy**.
 
@@ -596,6 +598,3 @@ Jeśli pracownik nie przyjdzie do pracy w dniu roboczym oraz nie ma planowanej n
 - Automatyczne wstawianie nieobecności
 
 Podczas obliczania dziennych rejestracji dla pracownika, który ma włączoną funkcję elastycznych godzin pracy, kod nieobecności określony w polu **Automatyczne wstawianie elastycznego czasu pracy-** jest używany jako domyślny kod nieobecności. Jeśli pracownik nie ma włączonej funkcji elastycznych godzin pracy, jest używany kod nieobecności określony w polu **Automatyczne wstawianie nieobecności**. Jeśli w firmie części pracowników ma, a część nie ma włączonej funkcji elastycznych godzin pracy, należy skonfigurować oba parametry.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

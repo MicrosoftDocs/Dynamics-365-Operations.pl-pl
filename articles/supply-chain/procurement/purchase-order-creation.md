@@ -1,10 +1,12 @@
 ---
 title: Tworzenie zamówień zakupu
 description: W tym artykule opisano proces i opcje ręcznego tworzenia zamówienia zakupu.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 93053
 ms.assetid: 25b1c9f1-20f8-4cf5-b87c-876e32f68846
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 20b8e00316b45126b028b6d9812a455ef0e53f19
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 105d4022e1867f553fcae5e4ae9c0ed7ce4e912d
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575519"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022288"
 ---
 # <a name="create-purchase-orders"></a>Tworzenie zamówień zakupu
 
@@ -65,7 +67,7 @@ Czasami trzeba podzielić zamówioną ilość, tak aby różne części zostały
 Opłaty mogą być automatycznie dodawane do wierszy zamówienia zakupu, jeśli skonfigurowano automatyczne opłaty dla dostawcy lub grupy opłat dostawcy oraz dla pozycji lub grupy opłat za pozycje. Jednak najczęściej opłaty są dodawane ręcznie na poziomie wiersza zamówienia. Aby dodać opłatę, otwórz stronę **Obsługuj opłaty** za pomocą działania **Obsługuj opłaty** w menu **Finanse** w widoku **Wiersze**. Zaletą dodawania opłat bezpośrednio na poziomie wiersza zamówienia jest to, że opłatę można przydzielić jako koszt zapasów. Aby skonfigurować kody opłat w celu ujęcia kosztu produktu, należy użyć **Pozycja** po stronie debetowej (obciążeniowej). Tego rodzaju opłaty muszą być przydzielone z nagłówka zamówienia zakupu do wierszy, aby można było potwierdzić zamówienie. Na przykład można chcieć przydzielić opłaty na podstawie ilości w każdym wierszu. Kategoria opłat wpływa również na sposób ujmowania opłat. Na przykład opłaty stałe określają stałą kwotę, a opłaty Procentowe są obliczane jako procent kwoty netto w wierszu zamówienia. Zamówienia zakupu mogą być przypisane do ładunku, a ładunek może zawierać preliminarz oczekiwanych wydatków z tytułu kosztów transportu. Wydatek ten można przydzielić z powrotem od ładunku do wierszy zamówienia zakupu.
 
 ## <a name="purchase-order-actions"></a>Akcje związane z zamówieniem zakupu
-Po dodaniu nagłówka i wierszy do zamówienia zakupu często należy wykonać dodatkowe kroki, zanim zamówienie będzie gotowe do potwierdzenia. Ponieważ jest dostępnych bardzo dużo opcji, warto użyć funkcji [Wyszukiwanie akcji](../../fin-ops-core/fin-ops/get-started/action-search.md), aby znaleźć odpowiednią pozycję menu.  
+Po dodaniu nagłówka i wierszy do zamówienia zakupu często należy wykonać dodatkowe kroki, zanim zamówienie będzie gotowe do potwierdzenia. Ponieważ jest dostępnych bardzo dużo opcji, warto użyć funkcji [Wyszukiwanie akcji](../../fin-and-ops/get-started/action-search.md), aby znaleźć odpowiednią pozycję menu.  
 
 Produkty w zamówieniu można konfigurować w taki sposób, aby zawierały pozycje dodatkowe. Pozycje dodatkowe to produkty, które muszą lub mogą zostać kupione razem z innymi produktami. Pozycje dodatkowe mogą być dodawane bezpłatnie jako produkty towarzyszące lub też można decydować, czy mają być dodawane do zamówienia, czy nie. Pozycje dodatkowe można przejrzeć po każdym dodanym wierszu zamówienia. Jednakże prawdopodobnie bardziej wygodne będzie przejrzeć i dodać odpowiednie pozycje dodatkowe razem dla wszystkich wierszy zamówienia za pomocą strony **Pozycje dodatkowe**, którą można otworzyć z okienka akcji.  
 
@@ -80,7 +82,8 @@ Zamówienia zakupu można skonfigurować tak, aby środki budżetu zostały przy
 
 Może wystąpić konieczność opóźnienia finalizacji zamówienia zakupu. Na przykład mogą być potrzebne dodatkowe informacje o produktach lub usługach lub może zajść potrzeba uzyskania autoryzacji na wydatek. Istnieje kilka sposobów wstrzymania zamówienia. Na przykład można poczekać z potwierdzeniem zamówienia. Alternatywnie, jeśli jest stosowany przepływ pracy zarządzania zmianami, nie przesyłaj zamówienia do zatwierdzenia. Jeśli należy zablokować wszystkie zamówienia dla konkretnego dostawcy, można również oznaczyć dostawcę w jego danych głównych jako **Wstrzymane** w zakresie przetwarzania. Istnieją okoliczności, które mogą uniemożliwić przetwarzanie zamówienia. Na przykład przetwarzanie może być niemożliwe, jeśli przekroczono limity kredytowe lub jeżeli wymagane środki budżetowe nie są dostępne.
 
-## <a name="additional-resources"></a>Dodatkowe zasoby
+<a name="additional-resources"></a>Dodatkowe zasoby
+--------
 
 [Omówienie zamówień zakupu](purchase-order-overview.md)
 
@@ -92,6 +95,3 @@ Może wystąpić konieczność opóźnienia finalizacji zamówienia zakupu. Na p
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

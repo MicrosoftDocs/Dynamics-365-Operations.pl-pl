@@ -1,10 +1,12 @@
 ---
 title: Generowanie raportów w formatach pakietu Office z osadzonymi obrazami
-description: W tym temacie opisano sposób projektowania konfiguracji raportowania elektronicznego generujących dokumenty elektroniczne w programach Excel i Word z osadzonymi obrazami.
+description: W poniższych krokach wyjaśniono, jak użytkownik odtwarzający rolę „Administrator systemu” lub „Deweloper raportowania elektronicznego” może projektować konfiguracje raportowania elektronicznego (ER) w celu generowania dokumentów elektronicznych w formatach dokumentów pakietu MS Office (Excel i Word) zawierających osadzone obrazy.
 author: NickSelin
+manager: AnnBe
 ms.date: 06/13/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6ec9f3013c1e365a3ca1a4c6cabe71a22e3e8b730eac38155ef023fe68107524
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 78dcdbd83dc717104d437662f7f451c9ecb714cf
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735533"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684386"
 ---
 # <a name="generate-reports-in-office-format-that-have-embedded-images"></a>Generowanie raportów w formatach pakietu Office z osadzonymi obrazami
 
@@ -117,6 +119,3 @@ W tym przykładzie użyjesz utworzonych konfiguracji ER dla przykładowej firmy 
 23. Kliknij przycisk OK.
     * Przejrzyj produkt wyjściowy. Dane wyjściowe zostały wygenerowane jako dokument programu Word z osadzonymi obrazami prezentującymi logo firmy, podpis osoby upoważnionej i wybrany tekst znaku wodnego.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -1,33 +1,31 @@
 ---
 title: Dostarczanie programu świadczeń dla pracowników
-description: W tym temacie wyjaśniono sposób tworzenia elementów świadczenia, które będą używane podczas tworzenia nowego świadczenia.
-author: twheeloc
-ms.date: 08/23/2021
+description: Ten artykuł pokazuje sposób tworzenia elementów świadczenia, które będą używane podczas tworzenia nowego świadczenia.
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmBenefitElementSetup, HcmBenefit, HcmBenefitNewBenefit, HcmBenefitPlanLookup, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Human Resources
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: 868ddb9b372b90ec75a5f35ebf3c987f2d39bd74
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: cc02346ebccd04f2b4f6fc7029717a8793d75e0d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066075"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420094"
 ---
 # <a name="deliver-employee-benefits-program"></a>Dostarczanie programu świadczeń dla pracowników
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-W tym temacie wyjaśniono sposób tworzenia elementów świadczenia, które będą używane podczas tworzenia nowego świadczenia. Dane wykorzystane do stworzenia tego zadania pochodzą z firmy demonstracyjnej USMF. Zadanie jest przeznaczona dla menedżer ds. wynagrodzeń i świadczeń.
+Ten artykuł pokazuje sposób tworzenia elementów świadczenia, które będą używane podczas tworzenia nowego świadczenia. Dane wykorzystane do stworzenia tego zadania pochodzą z firmy demonstracyjnej USMF. Zadanie jest przeznaczona dla menedżer ds. wynagrodzeń i świadczeń.
 
 
 ## <a name="create-benefit-elements"></a>Tworzenie elementów świadczenia
@@ -70,6 +68,3 @@ W tym temacie wyjaśniono sposób tworzenia elementów świadczenia, które będ
 16. W polu Podstawa wybierz opcję.
 17. W polu Kwota lub stawka wpisz liczbę.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

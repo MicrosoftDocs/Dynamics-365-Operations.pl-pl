@@ -1,10 +1,12 @@
 ---
 title: Współpraca z dostawcami za pomocą portalu dostawców
 description: W tym temacie wyjaśniono, jak pracownicy działu zakupów mogą używać portalu dostawców do współpracy z dostawcami zewnętrznymi w trakcie procesu potwierdzenia zamówień zakupu. Informacje te dotyczą tylko wersji systemu Dynamics AX z lutego i maja 2016 roku.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchVendorPortalRequests
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e691d0e2e4260e75b70e22d94486afdb779871f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 4aece4fd621be803abe5011e40785f6a3301924f
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568071"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019110"
 ---
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Współpraca z dostawcami za pomocą portalu dostawców
 
@@ -92,14 +94,12 @@ W poniższej tabeli pokazano przykład zmian stanu i wersji, przez jakie może p
 |                           Wysyłasz nową wersję zamówienia zakupu do portalu dostawców.                            |                                                                                                                                                                    Nowa wersja jest rejestrowana w portalu dostawców, a jej stan zmienia wartość na <strong>W trakcie analizy zewnętrznej</strong>.                                                                                                                                                                     |
 |                                Dostawca zatwierdza nową wersję zamówienia zakupu.                                 |                                                                                                                                                     Stan zmienia się na <strong>Potwierdzone</strong> automatycznie lub po otrzymaniu odpowiedzi od dostawcy i następnie ręcznym potwierdzeniu.                                                                                                                                                     |
 
-## <a name="additional-resources"></a>Dodatkowe zasoby
+<a name="additional-resources"></a>Dodatkowe zasoby
+--------
 
 [Zabezpieczenia użytkowników portalu dostawców](configure-security-vendor-portal-users.md)
 
-[Obszar roboczy fakturowania w portalu współpracy z dostawcami](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md)
+[Obszar roboczy fakturowania w portalu współpracy z dostawcami](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md)
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

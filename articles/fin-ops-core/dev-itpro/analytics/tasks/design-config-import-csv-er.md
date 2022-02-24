@@ -1,10 +1,12 @@
 ---
 title: Projektowanie konfiguracji ER do importowania danych z zewnętrznych plików CSV
-description: Za pomocą tej procedury można zaprojektować konfigurację raportowania elektronicznego w celu importowania danych do aplikacji Finance and Operations z zewnętrznego pliku w formacie CSV.
+description: Za pomocą tej procedury można zaprojektować konfigurację raportowania elektronicznego (RE) w celu importowania danych do Finance and Operations z zewnętrznego pliku w formacie CSV.
 author: NickSelin
+manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b42f0cf8c7260c85d405a5dfdcd50323ffee4d4528b982997a802b859ab8327b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b542b6250bcc72334659e050f7ab6d5bd87d3508
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747278"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682052"
 ---
 # <a name="design-er-configurations-to-import-data-from-external-csv-files"></a>Projektowanie konfiguracji ER do importowania danych z zewnętrznych plików CSV
 
@@ -122,6 +124,3 @@ W celach testowych wykonaj mapowanie formatu z użyciem pliku 1099entriescsv.csv
     * Przejrzyj dane wyjściowe w formacie XML, które reprezentują dane zaimportowane z wybranego pliku i przeniesione do modelu danych. Należy zauważyć, że wszystkie 7 wierszy zaimportowanego pliku CSV zostało przetworzone. Wiersz 1 zawierający tytuły pól został pominięty, 4 transakcje zostały poprawnie przeanalizowane, a 2 transakcje zostały rozpoznane jako nieprawidłowe.
 3. Zamknij stronę.
 4. Zamknij stronę.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

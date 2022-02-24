@@ -2,9 +2,11 @@
 title: Podziel zrealizowaną różnicę kursów kwoty na różnicę wartości netto faktury i kwoty VAT
 description: W tym temacie opisano, jak podzielić zrealizowaną różnicę kursów kwoty na różnicę wartości netto faktury i kwoty podatku od towarów i usług (VAT).
 author: anasyash
+manager: ''
 ms.date: 04/07/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -13,12 +15,12 @@ ms.search.region: Poland
 ms.author: roschlom
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-04-01
-ms.openlocfilehash: 1b40b8f066b399aef64566ea4ac4c8bd03631782134d4615f8d262322fcd135d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 07fcd94945f7ef8a2794f49d591944962aa2d045
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6781160"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968337"
 ---
 # <a name="split-the-realized-exchange-difference-amount-into-the-difference-of-the-invoice-net-value-and-the-vat-amount"></a>Podziel zrealizowaną różnicę kursów kwoty na różnicę wartości netto faktury i kwoty VAT
 
@@ -46,7 +48,7 @@ Wykonaj poniższe kroki, aby skonfigurować konto księgowe, za pomocą którego
 1. Przejdź do **Księga główna** \> **Waluty** \> **Konta przeszacowania waluty**. 
 2. Na stronie **Konta przeszacowania waluty** wybierz kod waluty, a następnie w polu **Księga** wybierz kod firmy.
 
-    ![Strona Konta przeszacowania waluty.](media/Currency-revaluation-accounts.png)
+    ![Strona Konta przeszacowania waluty](media/Currency-revaluation-accounts.png)
 
 2. Wybierz wiersz, w którym pole **Księgowanie** jest ustawione jako **Zrealizowana dodatnia różnica kursowa** lub **Zrealizowana ujemna różnica kursowa**.
 3. Skonfiguruj konto główne i wybierz konto księgowe, na które chcesz zaksięgować zrealizowaną różnicę kursową.
@@ -227,6 +229,3 @@ W tym przykładzie:
 
 - 10.00 (= 11.90 × 80.00 ÷ 95.20) to różnica kursowa powiązana z wartością netto na fakturze.
 - 1.90 (= 11.90 – 10.00) to różnica kursowa powiązana z wartością podatku na fakturze.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

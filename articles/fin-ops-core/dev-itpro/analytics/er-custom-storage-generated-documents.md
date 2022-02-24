@@ -2,9 +2,11 @@
 title: Określanie lokalizacji niestandardowego magazynu wygenerowanych dokumentów
 description: W tym temacie wyjaśniono, jak rozszerzyć listę lokalizacji przechowywania dokumentów generowanych przez raportowanie elektroniczne.
 author: NickSelin
+manager: AnnBe
 ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 61a1e46497d650e2c063a5fe7537d17cf7aa1828a5a4504bb781e84aeb88f04a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5e9afad936a353c8db3c316ad45c4ce28d33b129
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718508"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680813"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Określanie lokalizacji niestandardowego magazynu wygenerowanych dokumentów
 
@@ -27,7 +29,7 @@ Interfejs API raportowania elektronicznego pozwala rozszerzyć listę lokalizacj
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Należy wdrożyć topologię, która obsługuje ciągłą kompilację. (Aby uzyskać więcej informacji, zobacz [Wdrażanie topologii, która obsługuje ciągłą kompilację i automatyzację testowania](/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation).) Musisz mieć dostęp do tej topologii dla jednej z następujących ról:
+Należy wdrożyć topologię, która obsługuje ciągłą kompilację. (Aby uzyskać więcej informacji, zobacz [Wdrażanie topologii, która obsługuje ciągłą kompilację i automatyzację testowania](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation).) Musisz mieć dostęp do tej topologii dla jednej z następujących ról:
 
 - Deweloper raportowania elektronicznego
 - Konsultant funkcjonalny raportowania elektronicznego
@@ -39,7 +41,7 @@ Ponadto musisz także mieć dostęp do środowiska programowania dla tej topolog
 
 W bieżącej topologii [utwórz nowy format raportowania elektronicznego](tasks/er-format-configuration-2016-11.md) do generowania dokumentów, dla których chcesz dodać niestandardową lokalizację przechowywania. Alternatywnie [Zaimportuj istniejący format raportowania elektronicznego do tej topologii](general-electronic-reporting-manage-configuration-lifecycle.md).
 
-![Strona projektanta formatu.](media/er-extend-file-storages-format.png)
+![Strona projektanta formatu](media/er-extend-file-storages-format.png)
 
 > [!IMPORTANT]
 > Format raportowania elektronicznego, który tworzysz lub importujesz, musi zawierać co najmniej jedenz następujących elementów formatu:
@@ -53,12 +55,12 @@ W bieżącej topologii [utwórz nowy format raportowania elektronicznego](tasks/
 
 Aby określić, jak dokumenty, które generuje format raportowania elektronicznego są kierowane, należy skonfigurować [Lokalizacje docelowe raportowania elektronicznego (ER)](electronic-reporting-destinations.md). W każdym miejscu docelowym raportowania elektronicznego, które jest skonfigurowane do przechowywania wygenerowanych dokumentów jako plików należy określić typ dokumentu struktury zarządzania dokumentami. Różne typy dokumentów mogą służyć do kierowania dokumentów generowanych przez raportowanie elektroniczne.
 
-1. Dodaj nowy [typu dokumentu](../../fin-ops/organization-administration/configure-document-management.md) dla formatu raportowania elektronicznego utworzonego lub zaimportowanego wcześniej. Na ilustracji typem dokumentu jest **FileX**.
+1. Dodaj nowy [typu dokumentu](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) dla formatu raportowania elektronicznego utworzonego lub zaimportowanego wcześniej. Na ilustracji typem dokumentu jest **FileX**.
 2. W celu odróżnienia tego typu dokumentu od innych zamieść specjalne słowo kluczowe w jego nazwie. Na przykład na ilustracji poniżej, nazwa jest **(LOKALNY) folder**.
 3. W polu **klasy** wybierz **Dołącz plik**.
 4. W polu **grupa** wybierz **Plik**.
 
-![Strona Typy dokumentów.](media/er-extend-file-storages-document-type.png)
+![Strona Typy dokumentów](media/er-extend-file-storages-document-type.png)
 
 > [!NOTE]
 > Typy dokumentów są specyficzne dla firmy. Aby użyć formatu raportowania elektronicznego ze skonfigurowanym miejscem docelowym w wielu firmach, musisz skonfigurować osobny typ dokumentu w każdej firmie.
@@ -113,18 +115,18 @@ Zdarzenie **AttachingFile()** jest wywoływane po przetworzeniu następujących 
 - **Archiwum** — kiedy jest używana ta lokalizacja, jest tworzony nowy rekord dla formatu raportowania elektronicznego w tabeli ERFormatMappingRunJobTable. Pole **Archiwizacji** w tym rekordzie jest ustawione jako **Fałsz**. Jeśli format raportowania elektronicznego zostanie pomyślnie uruchomiony, wygenerowany dokument będzie dołączony do rekordu i zostanie wywołane zdarzenie **AttachingFile()**. Typ dokumentu, który jest wybrany w tym miejscu docelowym elektronicznego raportowania określa lokalizację przechowywania dla dołączonego pliku (Microsoft Azure lub folder SharePoint).
 - **Archiwum zadania** — kiedy jest używana ta lokalizacja, jest tworzony nowy rekord dla formatu raportowania elektronicznego w tabeli ERFormatMappingRunJobTable. Pole **Archiwizacji** w tym rekordzie jest ustawione jako **Prawda**. Jeśli format raportowania elektronicznego zostanie pomyślnie uruchomiony, wygenerowany dokument będzie dołączony do rekordu i zostanie wywołane zdarzenie **AttachingFile()**. Typ dokumentu, który jest skonfigurowany w parametrach elektronicznego raportowania określa lokalizację przechowywania dla dołączonego pliku (Magazyn Azure lub folder SharePoint).
 
-![Strona parametrów raportowania elektronicznego.](media/er-extend-file-storages-parameters.png)
+![Strona parametrów raportowania elektronicznego](media/er-extend-file-storages-parameters.png)
 
 ## <a name="configure-an-er-destination"></a>Konfigurowanie miejsca docelowego raportowania elektronicznego
 
-1. Skonfiguruj zarchiwizowane miejsce docelowe dla jednego z wcześniej wspomnianych elementów raportowania elektronicznego (plik, folder, scalanie lub załącznik), który został utworzony lub zaimportowany. Aby uzyskać instrukcje, zobacz [Konfigurowanie miejsc docelowych dla raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11).
+1. Skonfiguruj zarchiwizowane miejsce docelowe dla jednego z wcześniej wspomnianych elementów raportowania elektronicznego (plik, folder, scalanie lub załącznik), który został utworzony lub zaimportowany. Aby uzyskać instrukcje, zobacz [Konfigurowanie miejsc docelowych dla raportowania elektronicznego](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11).
 2. Użyj wcześniej typu dokumentu dodanego wcześniej do skonfigurowanego miejsca docelowego. (Na przykład w tym temacie, typem dokumentu jest **FileX**.)
 
-![Okno dialogowe Ustawienia lokalizacji docelowej.](media/er-extend-file-storages-destination.png)
+![Okno dialogowe Ustawienia lokalizacji docelowej](media/er-extend-file-storages-destination.png)
 
 ## <a name="modify-source-code"></a>Zmień kod źródłowy
 
-1. Dodaj nową klasę do projektu Microsoft Visual Studio i napisz kod, aby subskrybować wcześniej wspomniane zdarzenie **AttachingFile()**. (Aby uzyskać więcej informacji o używanym wzorcu rozszerzenia, zobacz [Odpowiedz za pomocą EventHandlerResult](/dynamics365/unified-operations/dev-itpro/extensibility/respond-event-handler-result).) Na przykład: w nowej klasie napisz kod do wykonywania następujących akcji:
+1. Dodaj nową klasę do projektu Microsoft Visual Studio i napisz kod, aby subskrybować wcześniej wspomniane zdarzenie **AttachingFile()**. (Aby uzyskać więcej informacji o używanym wzorcu rozszerzenia, zobacz [Odpowiedz za pomocą EventHandlerResult](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/extensibility/respond-event-handler-result).) Na przykład: w nowej klasie napisz kod do wykonywania następujących akcji:
 
     1. Wygenerowane pliki przechowuje w folderze lokalnego systemu plików serwera, na którym działa usługa Serwer obiektów aplikacji (AOS).
     2. Zapisuje te wygenerowane pliki tylko kiedy jest używany nowy typ dokumentu (na przykład typ **FileX**, którego nazwa zawiera słowo „(LOCAL)”), jeśli plik jest załączany do rekordu w dzienniku wykonania zadania raportowania elektronicznego.
@@ -173,6 +175,3 @@ Zdarzenie **AttachingFile()** jest wywoływane po przetworzeniu następujących 
 
 - [Lokalizacje docelowe raportowania elektronicznego (ER)](electronic-reporting-destinations.md)
 - [Możliwości rozszerzania — strona główna](../extensibility/extensibility-home-page.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

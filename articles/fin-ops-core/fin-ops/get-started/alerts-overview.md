@@ -1,21 +1,27 @@
 ---
-# required metadata
-title: Omówienie alertów (zawiera wideo)
-description: 'Ten temat zawiera ogólne informacje o alertach. Alerty pozwalają na bieżąco uzyskiwać informacje o zdarzeniach, które chcesz śledzić podczas dnia pracy.'
-author: RichdiMSFT
+title: Omówienie alertów
+description: Ten temat zawiera ogólne informacje o alertach. Alerty pozwalają na bieżąco uzyskiwać informacje o zdarzeniach, które chcesz śledzić podczas dnia pracy.
+author: tjvass
+manager: AnnBe
 ms.date: 09/04/2019
-ms.topic: overview
-ms.prod: null
-ms.technology: null
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
 ms.search.form: EventCreateRule
 audience: Application user
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: richdi
+ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
+ms.openlocfilehash: 473f53d230d7272ba0fcf78bd05d7020635a870f
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798596"
 ---
-
 # <a name="alerts-overview"></a>Omówienie alertów
 
 [!include [banner](../includes/banner.md)]
@@ -73,7 +79,7 @@ Reguła alertu ma pięć składników:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3DWZ3]
 
-Film wideo [Sposób używania alertów do monitorowania filtrowanych danych](https://youtu.be/ZYKMcv6kl9s) (pokazany powyżej) znajduje się [na liście odtwarzania Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) dostępnej na platformie YouTube.
+Film wideo [Sposób używania alertów do monitorowania filtrowanych danych](https://youtu.be/ZYKMcv6kl9s) (pokazany powyżej) znajduje się na [Liście odtwarzania Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) dostępnej na platformie YouTube.
 
 ### <a name="alert-rule-options"></a>Opcje reguł alertów
 
@@ -82,6 +88,3 @@ Film wideo [Sposób używania alertów do monitorowania filtrowanych danych](htt
 Film wideo [Opcje reguł alertów](https://youtu.be/cpzimwOjicM) (widoczny powyżej) jest zawarty na [liście odtwarzania Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) dostępnej na platformie YouTube.
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

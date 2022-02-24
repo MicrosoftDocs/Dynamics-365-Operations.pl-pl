@@ -2,30 +2,35 @@
 title: Sposoby dodawania zawartości
 description: Ten temat zawiera omówienie i umożliwia wybranie łączy do określania, gdzie i jak zacząć zarządzanie zawartością za pomocą zbioru narzędzi konstruktora witryn Microsoft Dynamics 365 Commerce.
 author: phinneyridge
+manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f8a2dbb7bc7659e2e23b0ba6e2b5645dbe508ef9c9bda10df3bad8d04a6cfb32
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 802a41b8c55e65eee58d26137c2f160b69847010
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727685"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414888"
 ---
 # <a name="ways-to-add-content"></a>Sposoby dodawania zawartości
 
 [!include [banner](includes/banner.md)]
 
 Ten temat zawiera omówienie i łącza do dokumentacji na temat zarządzania zawartością za pomocą zbioru narzędzi konstruktora witryn Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Omówienie
 
 Istnieje wiele sposobów zmiany wyglądu, działania i zawartości witryny. W zależności od wymaganego poziomu dostosowania wiele z tych zmian mogą implementować osoby inne niż deweloperzy w ramach konstruktora witryn, który jest zestawem narzędzi do tworzenia treści w sieci Web Dynamics 365 Commerce. Konstruktor witryn umożliwia tworzenie szablonów, wybieranie motywów oraz wybieranie i konfigurowanie modułów bez konieczności pisania kodu. Z kolei umiejętności programistyczne są wymagane w celu utworzenia nowego motywu lub modułu, ponieważ musi być używany pakiet e-Commerce Software Development Kit (SDK) i wdrażanie przepływu pracy Microsoft Dynamics Lifecycle Services (usługi LCS).
 
@@ -52,6 +57,3 @@ Aby rozpocząć, wybierz jeden z poniższych tematów.
 [Dokumentowanie stanów i cyklów życia](document-states-overview.md)
 
 [Włączanie i używanie udostępniania między kanałami](cross-channel-sharing.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,30 +2,36 @@
 title: Włączanie wykrywania sklepu na podstawie lokalizacji
 description: W tym temacie opisano sposób włączania wykrywania magazynu opartego na lokalizacji dla witryny Dynamics 365 Commerce.
 author: brianshook
+manager: annbe
 ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 98aa781a42b1c82cc00c8a680007b7200e9c7413fb8e3a67b0c723ff62c1d8e1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f87d29a8cffb70e4dea211cea7538e5e4c85295c
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749883"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517313"
 ---
 # <a name="enable-location-based-store-detection"></a>Włączanie wykrywania sklepu na podstawie lokalizacji
+
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano sposób włączania wykrywania magazynu opartego na lokalizacji dla witryny Dynamics 365 Commerce.
+
+## <a name="overview"></a>Omówienie
 
 Wykrywanie magazynu opartego na lokalizacji w module Commerce umożliwia dostarczanie klientom odpowiedniej zawartości oddziału na podstawie ich lokalizacji. Jeśli jest włączona funkcja wykrywania magazynu opartego na lokalizacji, usługa renderowanie Commerce będzie korzystać z informacji o kraju/regionie z adresu IP przeglądarki sieci Web klienta, aby skierować odbiorcę do najlepszej dostępnej konfiguracji geograficznej.
 
@@ -63,6 +69,3 @@ Aby włączyć wykrywanie sklepu opartego na lokalizacji w module Commerce, wyko
 [Konfigurowanie wielu dzierżawców B2C w środowisku Commerce](configure-multi-B2C-tenants.md)
 
 [Dodawanie obsługi dla sieci dostarczania zawartości (CDN)](add-cdn-support.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,12 +2,15 @@
 title: Moduł iframe
 description: W tym temacie opisano moduł iframe i opisano, jak dodać go do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 11/04/2021
+manager: annbe
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: bce6a50e8c145f8961bd0c839fe16c1f4d69e811
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 4afd8f60938c99d1981be1625ef28f91d9e4bb4c
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7754021"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665403"
 ---
 # <a name="iframe-module"></a>Moduł iframe
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano moduł iframe i opisano, jak dodać go do stron witryny w Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Omówienie
 
 Moduł iframe udostępnia element iframe (ramkę wbudowaną), który obsługuje zawartość zewnętrzną w witrynie. Na przykład można go używać do obsługi pliku wideo YouTube lub przeglądarki plików PDF na dowolnej stronie witryny. 
 
@@ -37,7 +42,7 @@ Moduł iframe wymaga docelowego adresu URL. Następnie znajduje zawartość stro
 
 Poniższy obraz przedstawia przykłady modułów iframe, które prezentują zewnętrzne pliki wideo na stronach witryny.
 
-![Przykład modułów iframe, które prezentują zewnętrzne pliki wideo.](./media/ecommerce-iframe.PNG)
+![Przykład modułów iframe, które prezentują zewnętrzne pliki wideo](./media/ecommerce-iframe.PNG)
 
 ## <a name="iframe-module-properties"></a>Właściwości modułu Iframe
 
@@ -66,15 +71,9 @@ Aby dodać moduł iframe do strony w celu wyświetlenia zewnętrznego wideo, nal
 1. W razie konieczności określ inne właściwości, takie jak **Nagłówek** i **Wysokość**.
 1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować stronę, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
 1. Przejdź do strony Marketing w witrynie. Należy sprawdzić, czy plik wideo jest renderowany w module iframe.
-
-> [!NOTE]
-> Ponieważ moduł iframe zawiera zawartość zewnętrzną, twórcy witryny muszą zagwarantować, że zawartość hostowana w module iframe nie będzie naruszać zasad ograniczeń dotyczących zawartości na odpowiednim rynku. Jeśli na stronie korzystającej z modułu iframe doszło do naruszenia zawartości, autor witryny może usunąć moduł iframe, otwierając stronę w Konstruktorze witryn, wybierając opcję **Usuń moduł** w gnieździe modułu iframe, a następnie zapisując i ponownie opublikować stronę.
-
+ 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Przegląd biblioteki modułów](starter-kit-overview.md)
+[Omówienie biblioteki modułów](starter-kit-overview.md)
 
 [Zarządzanie zasadami zabezpieczeń zawartości (CSP)](manage-csp.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

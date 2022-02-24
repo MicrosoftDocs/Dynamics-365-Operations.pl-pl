@@ -2,9 +2,11 @@
 title: Konfigurowanie asortymentu
 description: W tym artykule opisano, co jest asortyment, i wyjaśniono, jak konfigurować asortymenty w programie Dynamics 365 Commerce.
 author: jblucher
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailAssortmentDetails
 audience: Application User
@@ -16,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 31ec0079584832537431872fea61a07b58d31648cdac0f29a469bc977009622f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 32edf6534716236706847556a14b951f18ef40ae
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774492"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969833"
 ---
 # <a name="set-up-assortments"></a>Konfigurowanie asortymentów
 
@@ -31,7 +33,7 @@ W tym artykule opisano, co jest asortyment, i wyjaśniono, jak konfigurować aso
 
 Asortyment jest zbiorem pokrewnych produktów, które można przypisać do kanału handlu, takich jak sklep tradycyjny (stacjonarny) lub sklep internetowy. Asortymenty służą do identyfikacji produktów, które są dostępne w każdym sklepie. Asortyment może zawierać kategorie produktów. W związku z tym wszystkie produkty, które są przypisane do wybranej kategorii, znajdują się w asortymencie. Asortyment może również uwzględniać określone produkty i ich warianty. Konfigurując asortyment można jednocześnie przypisać tysiące produktów do kanałów w dowolnej kombinacji wymaganej w sklepach. Można skonfigurować dowolną liczbę asortymentów produktów. Każdy produkt można włączyć do jednego lub większej liczby asortymentów, a każdy z asortymentów można przypisać do jednego lub większej liczby kanałów. Na przykład można zdefiniować jeden asortyment, który uwzględnia bazowy zestaw produktów. Wszystkie sklepy otrzymają ten sam asortyment. Następnie można zdefiniować inny asortyment zawierający tylko duży sprzęt sportowy. Ten asortyment trafi tylko do większych sklepów. Na poniższym diagramie pokazano, jak można przypisać produkty do asortymentu, i jak przypisać asortymenty do kanałów.
 
-![Asortyment produktów — relacje.](./media/assortments_relationship.gif)
+![Asortyment produktów — relacje](./media/assortments_relationship.gif)
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -52,6 +54,3 @@ Po spełnieniu wymagań wstępnych można tworzyć asortyment i przypisywać go 
 2. Wybierz kanały grup wysokiego poziomu kanałów, których dotyczy asortyment.
 3. Dodaj kategorie produktu, pojedyncze produkty lub ich warianty do asortymentu. Można uwzględnić wszystkie produkty w konkretnej kategorii lub można wykluczyć wybrane produkty z kategorii, która jest uwzględniona w asortymencie.
 4. Opublikuj asortyment. Po opublikowaniu asortymentu harmonogram Asortymenty jest uruchamiany automatycznie. Ten proces generuje listę produktów. Po zakończeniu tego procesu, produkty stają się dostępne dla kanałów przypisanych do asortymentu produktów. Jeśli wprowadzono zmiany asortymentu, który został opublikowany lub kanałów przypisanych do asortymentu, należy zaktualizować asortyment. Do aktualizacji asortymentu, gdy zostaną wprowadzone zmiany, można uruchomić zadanie przetwarzania wsadowego asortymentu.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

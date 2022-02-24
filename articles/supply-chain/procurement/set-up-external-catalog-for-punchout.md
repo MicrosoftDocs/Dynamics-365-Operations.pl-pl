@@ -1,10 +1,12 @@
 ---
 title: Konfigurowanie katalogu zewnętrznego dla rozwiązania PunchOut e-procurement
 description: W tym temacie opisano używanie zewnętrznego katalogu (dynamicznie dostępnego katalogu dostawcy, PunchOut) w celu zbierania informacji ofertowych od dostawcy i dodawania ich do zapotrzebowania.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchVendorPortalRequests, CatExternalCatalogConfiguration, CatCXMLCartLogList
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f1065c68723baa395bc06be6313e45a44661ea3
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1f6e551f9d3d181674595e945bf1fb4c62a70ed5
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566919"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016384"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-e-procurement"></a>Konfigurowanie katalogu zewnętrznego dla rozwiązania PunchOut e-procurement
 
@@ -40,7 +42,7 @@ Zewnętrzny katalog powinien umożliwiać pracownikowi wprowadzającemu zapotrze
 
 1. Ustawianie hierarchii kategorii zaopatrzenia. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zasad dla hierarchii kategorii zaopatrzenia](tasks/set-up-policies-procurement-category-hierarchies.md).
 2. Zarejestruj dostawcę w Supply Chain Management. Aby można było utworzyć konfiguracje pozwalające na dostęp do zewnętrznego katalogu dostawcy, należy skonfigurować dostawcę i jego osobę kontaktową w programie Microsoft Dynamics 365. Ponadto dostawca zewnętrznego katalogu musi być dodany do wybranej kategorii zaopatrzenia. Aby uzyskać więcej informacji o rejestrowaniu dostawców, zobacz [Zarządzanie użytkownikami modułu Współpraca z dostawcami](manage-vendor-collaboration-users.md). Aby uzyskać informacje o przypisywaniu dostawców do kategorii zaopatrzenia, zobacz [Zatwierdzanie dostawców dla konkretnych kategorii zaopatrzenia](tasks/approve-vendors-specific-procurement-categories.md).
-3. Skonfigurowanie jednostek miary i waluty używanych przez dostawcę. Aby uzyskać informacje o tworzeniu jednostki miary, zobacz [Zarządzanie jednostkami miary](../pim/tasks/manage-unit-measure.md).
+3. Skonfigurowanie jednostek miary i waluty używanych przez dostawcę. Aby uzyskać informacje o tworzeniu jednostki miary, zobacz [Zarządzanie jednostką miary](../pim/tasks/manage-unit-measure.md).
 4. Skonfigurowanie zewnętrznego katalogu dostawcy z uwzględnieniem wymagań obowiązujących w witrynie tego katalogu. Aby uzyskać szczegółowe informacje o tym zadaniu, zobacz temat [Konfigurowanie zewnętrznego katalogu dostawcy](#configure-the-external-vendor-catalog).
 5. Przetestowanie konfiguracji zewnętrznego katalogu dostawcy w celu sprawdzenia, czy ustawienia są prawidłowe i czy masz dostęp do katalog. Za pomocą akcji **Sprawdź poprawność ustawień** zweryfikuj zdefiniowany przez siebie komunikat konfiguracji żądania. Ten komunikat powinien powodować otwieranie witryny zewnętrznego katalogu dostawcy w oknie przeglądarki internetowej. Podczas sprawdzania poprawności nie można zamawiać towarów ani usług od dostawcy. Aby zamawiać towary i usługi, należy przejść do katalogu dostawcy z poziomu zapotrzebowania na zakup.
 6. Aktywacja zewnętrznego katalogu za pomocą przycisku **Uaktywnij katalog** znajdującego się na stronie **Katalogi zewnętrzne**. Zewnętrzny katalog musi zostać aktywowany, zanim będą go mogli używać pracownicy. Zewnętrzny katalog można w dowolnym momencie zdezaktywować.
@@ -110,5 +112,3 @@ Jeśli poproszono o produkt z zewnętrznego katalogu dostawcy, nie można usuną
 
 - [Udoskonalenia cXML dotyczące zakupów](purchasing-cxml-enhancements.md)
 - [Używanie katalogów zewnętrznych dla rozwiązania PunchOut e-procurement](use-external-catalogs-for-punchout.md)
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

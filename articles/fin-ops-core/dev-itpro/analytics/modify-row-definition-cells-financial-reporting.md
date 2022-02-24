@@ -2,9 +2,11 @@
 title: Modyfikowanie komórek definicji wiersza
 description: W tym temacie opisano informacje, które są wymagane dla każdej komórki w definicji wiersza w raporcie finansowym, oraz wyjaśniono, jak wprowadzić te informacje.
 author: ShylaThompson
-ms.date: 08/11/2021
+manager: AnnBe
+ms.date: 02/11/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 80df992ce14577ba78587648f8af2c35b382a589
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 92d03f08fc5e34402f10068ed770b1f724cfd3a8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344892"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685866"
 ---
 # <a name="modify-row-definition-cells"></a>Modyfikowanie komórek definicji wiersza
 
@@ -174,7 +176,7 @@ W kolumnie **Kod formatu** w definicji wiersza kody formatu **DES**, **LFT**, **
 
 W poniższym przykładzie użytkownik chce zapobiec drukowaniu nagłówków i podkreśleń w wierszu **Gotówka — razem**, ponieważ na żadnym z kont kasowych nie było aktywności. W związku z tym w wierszu 220 (który jest wierszem formatowania, na co wskazuje kod formatu **---**) w komórce **Powiązane formuły/wiersze/jednostki** użytkownik wprowadza wartość **250**, czyli numer kodu wiersza, który chce pomijać podczas drukowania.
 
-[![RelatedRowsRowDefinition.](./media/relatedrowsrowdefinition-1024x144.png)](./media/relatedrowsrowdefinition.png)
+[![RelatedRowsRowDefinition](./media/relatedrowsrowdefinition-1024x144.png)](./media/relatedrowsrowdefinition.png)
 
 ## <a name="select-the-base-row-for-a-column-calculation"></a>Wybieranie wiersza podstawowego dla obliczeń kolumny
 W raportach relacyjnych można przypisać jeden lub więcej wierszy podstawowych w definicji wiersza za pomocą kodu formatu **CBR** (zmień wiersz podstawowy). Do wiersza podstawowy odwołuje się następnie obliczenie w definicji kolumny. Oto kilka typowych przykładów obliczeń CBR:
@@ -399,7 +401,7 @@ Komórka **Łącze do wymiarów finansowych** zawiera łącza do danych finansow
 2. Kliknij dwukrotnie komórkę w kolumnie **Łącze do Wymiary finansowe**.
 3. W oknie dialogowym **Wymiary** kliknij dwukrotnie komórkę pod nazwą wymiaru.
 4. W oknie dialogowym wymiaru wybierz **Pojedynczy lub zakres**.
-5. W polu **Od** wprowadź wymiar początkowy lub kliknij przycisk ![Przeglądaj.](media/browse.gif "Przeglądaj") aby wyszukać dostępne wymiary. Aby wprowadzić zakres wymiarów, należy wprowadzić wymiar końcowy w polu **Do**.
+5. W polu **Z** wpisz wymiar początkowy lub kliknij przycisk ![Przeglądaj](media/browse.gif "Przeglądaj"), aby wyszukać dostępne wymiary. Aby wprowadzić zakres wymiarów, należy wprowadzić wymiar końcowy w polu **Do**.
 6. Kliknij **OK**, aby zamknąć okno dialogowe wymiaru. Okno dialogowe **Wymiary** wyświetla zaktualizowane wymiary lub zakresy.
 7. Kliknij **OK**, aby zamknąć okno dialogowe **Wymiary**.
 
@@ -476,7 +478,7 @@ W poniższej tabeli opisano pola w tym oknie dialogowym **Wymiary**.
 
 | Pozycja                | Opis |
 |---------------------|-------------|
-| Pojedynczy lub zakres | W polu **Z** wpisz nazwę konta lub kliknij przycisk **Przeglądaj** ![Przeglądaj](media/browse.gif "Przeglądaj") aby wyszukać konto. Aby wybrać zakres, wpisz lub przeglądaj, aby wybrać wartość w polu **Do**. |
+| Pojedynczy lub zakres | W polu **Z** wpisz nazwę konta lub kliknij przycisk **Przeglądaj** ![Przeglądaj](media/browse.gif "Przeglądaj"), aby przejść do konta. Aby wybrać zakres, wpisz lub przeglądaj, aby wybrać wartość w polu **Do**. |
 | Zestaw wartości wymiarów | W polu **Nazwa** wprowadź nazwę zestawu wartości wymiarów. Aby utworzyć, zmodyfikować lub usunąć zestaw, kliknij **Zarządzaj zestawami wartości wymiarów**. Pole **Formuła** jest wypełniane przy użyciu formuły z komórki **Łącze do wymiarów finansowych** dla tego zestawu wartości wymiarów w definicji wiersza. |
 | Konta sumujące   | W polu **Nazwa** wprowadź lub przeglądaj, aby wybrać wymiar kont sumujących. Pole **Formuła** jest wypełniane przy użyciu formuły w komórce **Łącze do wymiarów finansowych** dla tego konta sumującego w definicji raportowania. |
 
@@ -527,6 +529,3 @@ Zestaw wartości wymiarów jest nazwaną grupą wartości wymiarów. Zestaw wart
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Raportowanie finansowe](financial-reporting-intro.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

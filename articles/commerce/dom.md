@@ -2,12 +2,15 @@
 title: Zarządzanie zamówieniami rozdzielonymi (DOM)
 description: W tym temacie opisano funkcję zarządzania zamówieniami rozdzielonymi (DOM) w rozwiązaniu Dynamics 365 Commerce.
 author: josaw1
-ms.date: 01/08/2021
+manager: AnnBe
+ms.date: 05/22/2020
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
@@ -15,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 442a7449e0b28e1086d50ab68dbaf85370fce8ea6e178dd91ad972a2b47d7de3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3a83bd6e997110d107bac836abf237f99db78d99
+ms.sourcegitcommit: d77e902b1ab436e5ff3e78c496f5a70ef38e737c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717704"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4459745"
 ---
 # <a name="distributed-order-management-dom"></a>Zarządzanie zamówieniami rozdzielonymi (DOM)
 
@@ -34,9 +37,9 @@ System DOM zapewnia optymalizację realizacji zamówień w złożonej sieci syst
 
 Poniższa ilustracja przedstawia cykl życia zamówienia sprzedaży w systemie DOM.
 
-![Cykl życia zamówienia sprzedaży w kontekście systemu DOM.](./media/flow.png "Cykl życia zamówienia sprzedaży w kontekście systemu DOM")
+![Cykl życia zamówienia sprzedaży w kontekście systemu DOM](./media/flow.png "Cykl życia zamówienia sprzedaży w kontekście systemu DOM")
 
-## <a name="set-up-dom"></a>Ustaw format DOM
+## <a name="set-up-dom"></a>Konfigurowanie systemu DOM
 
 1. Wybierz kolejno opcje **Administrowanie systemem \> Ustawienia \> Konfiguracja licencji**.
 2. Na karcie **Klucze konfiguracji** rozwiń węzeł **Commerce**, a następnie wybierz pole wyboru **Zarządzanie zamówieniami rozdzielonymi**.
@@ -46,12 +49,8 @@ Poniższa ilustracja przedstawia cykl życia zamówienia sprzedaży w systemie D
     - **Włącz zarządzanie zamówieniami rozdzielonymi** — ustaw wartość **Tak** dla tej opcji.
     - **Potwierdź użycie Map Bing dla DOM** — ustaw wartość **Tak** dla tej opcji.
 
-
         > [!NOTE]
-        > Dla tej opcji możesz ustawić wartość **Tak**, tylko jeśli ustawiono wartość **Tak** dla opcji **Włącz Mapy Bing** na karcie **Mapy Bing** strony **Wspólne parametry Commerce** (**Retail i Commerce \> Ustawienia centrali \> Parametry \> Wspólne parametry Commerce**) oraz jeśli wprowadzono prawidłowy klucz w polu **Klucz Map Bing**.
-        >
-        > [Centrum deweloperów usługi Mapy Bing](https://www.bingmapsportal.com/) umożliwia ograniczenie dla kluczy API Map Bing dostępu do zestawu określonych domen. Dzięki tej funkcji odbiorcy mogą zdefiniować ściśle określony zestaw wartości odwołań lub zakresy adresów IP, na podstawie których będzie sprawdzana poprawność klucza. Zapytania pochodzące z listy dozwolonych będą przetwarzane w zwykły sposób, podczas gdy żądania spoza listy będą zwracać odpowiedź o odmowie dostępu. Zwiększenie bezpieczeństwa domeny klucza interfejsu API jest opcjonalne, a klucze, dla których poziom ten nie zostanie dodatkowo zwiększony, będą nadal działać. Lista dozwolonych klucza działa niezależnie od pozostałych kluczy, dzięki czemu można ustanowić odrębne reguły dla każdego klucza. Zarządzanie zamówieniami rozdzielonymi nie obsługuje konfigurowania właściwości z odwołaniami domen.
-
+        > Dla tej opcji możesz ustawić wartość **Tak**, tylko jeśli ustawiono wartość **Tak** dla opcji **Włącz Mapy Bing** na karcie **Mapy Bing** strony **Wspólne parametry handlu** (**Retail i Commerce \> Ustawienia centrali \> Parametry \> Wspólne parametry handlu**) oraz jeśli wprowadzono prawidłowy klucz w polu **Klucz Map Bing**.
 
     - **Okres przechowywania w dniach** — określ okres przechowywania w systemie planów realizacji generowanych przez sesje DOM. Uruchomienie zadania wsadowego **Ustawienia zadania usuwania danych realizacji DOM** spowoduje usunięcie wszystkich planów realizacji starszych niż liczba dni określona w tym miejscu.
     - **Okres odrzucania (w dniach)** — określ czas, jaki musi upłynąć, aby można było przypisać wiersz odrzuconego zamówienia do tej samej lokalizacji.
@@ -63,15 +62,14 @@ Poniższa ilustracja przedstawia cykl życia zamówienia sprzedaży w systemie D
     - **Typ zmiennej** — wybierz wartości. W aplikacji Commerce zwalniane są dwa typy zmiennych: **Zmienna produkcji** i **Zmienna uproszczona**. W przypadku wszystkich maszyn z uruchomioną funkcją DOM (tj. wszystkich serwerów, które są częścią grupy DOMBatch) wybierz typ **Zmienna produkcji**. Zmienna produkcji wymaga specjalnego klucza licencji, który domyślnie jest licencjonowany i wdrażany w środowiskach produkcyjnych. W przypadku środowisk nieprodukcyjnych wdróż ten klucz licencji ręcznie. Aby ręcznie wdrożyć klucz licencji, wykonaj następujące czynności:
 
         1. W usłudze Microsoft Dynamics Lifecycle Services otwórz bibliotekę udostępnionych elementów zawartości, wybierz wartość **Model** jako typ elementu zawartości i pobierz plik **licencji DOM**.
-        1. Uruchom Menedżera usług Microsoft Internet Information Services (IIS) kliknij prawym przyciskiem myszy pozycję **AOSService website**, a następnie wybierz opcję **Eksploruj**. Zostanie wyświetlone okno Eksploratora Windows z lokalizacją **\<AOS service root\>\\webroot**. Zanotuj ścieżkę \<AOS Service root\>, ponieważ będzie ona potrzebna w kolejnym kroku.
-        1. Skopiuj plik konfiguracji do katalogu **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin**.
-        1. Przejdź do klienta centrali, a następnie otwórz stronę **Parametry DOM**. Na karcie **Zmienna** w polu **Typ zmiennej** zaznacz opcję **Zmienna produkcji** i upewnij się, że nie są wyświetlane żadne komunikaty o błędach.
-
+        2. Uruchom Menedżera usług Microsoft Internet Information Services (IIS) kliknij prawym przyciskiem myszy pozycję **AOSService website**, a następnie wybierz opcję **Eksploruj**. Zostanie wyświetlone okno Eksploratora Windows z lokalizacją **\<AOS service root\>\\webroot**. Zanotuj ścieżkę \<AOS Service root\>, ponieważ będzie ona potrzebna w kolejnym kroku.
+        3. Skopiuj plik konfiguracji do katalogu **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin**.
+        4. Przejdź do klienta centrali, a następnie otwórz stronę **Parametry DOM**. Na karcie **Zmienna** w polu **Typ zmiennej** zaznacz opcję **Zmienna produkcji** i upewnij się, że nie są wyświetlane żadne komunikaty o błędach.
 
         > [!NOTE]
         > Zmienna uproszczona została udostępniona, aby sprzedawcy detaliczni mogli wypróbować funkcję DOM bez konieczności wdrażania specjalnej licencji. Organizacje nie powinny używać zmiennej uproszczonej w środowiskach produkcyjnych.
         >
-        > Zmienna produkcji wpływa na poprawę wydajności (np. liczbę obsługiwanych w ramach sesji zamówień i wierszy zamówienia) i zbieżności wyników (partia zamówień może nie dawać najlepszych wyników w przypadku niektórych scenariuszy). Niektóre reguły, takie jak **Reguła zamówień częściowych** i **Reguła maksymalnej liczby lokalizacji**, wymagają zmiennej produkcji.
+        > Chociaż zmienna uproszczona udostępnia ten sam zestaw możliwości co zmienna produkcji, to istnieją ograniczenia dotyczące działania (liczba obsługiwanych w ramach sesji zamówień i wierszy zamówienia) i zbieżności wyników (partia zamówień może nie dawać najlepszych wyników w przypadku niektórych scenariuszy).
      
 6. Przejdź z powrotem do opcji **Retail i Commerce \> Zarządzanie zamówieniami rozdzielonymi \> Ustawienia \> Parametry DOM**.
 7. Na karcie **Sekwencje identyfikatorów** przypisz wymagane sekwencje numerów do różnych jednostek DOM.
@@ -123,7 +121,7 @@ Poniższa ilustracja przedstawia cykl życia zamówienia sprzedaży w systemie D
         \* W przypadku ustawienia wartości **Nie** dla opcji **Zrealizować zamówienia częściowe** wartość opcji **Zrealizować wiersze częściowe** jest traktowana jako **Nie** niezależnie od jej rzeczywistego ustawienia.
 
         > [!NOTE]
-        > W wersji 10.0.5 rozwiązania Retail parametr **Zrealizować zamówienie tylko z jednej lokalizacji** został zmieniony na **Lokalizacje maksymalnej realizacji**. Zamiast konfigurowania, czy zamówienia mogą być realizowane tylko z jednej lokalizacji lub ze wszystkich możliwych lokalizacji, użytkownicy mogą teraz określać, czy realizacja może być dokonana z konkretnego zestawu lokalizacji (do 5), czy ze wszystkich możliwych lokalizacji. Oferuje to większą elastyczność pod kątem liczby lokalizacji, w których zamówienie może być realizowane. Ta reguła działa tylko ze zmienną produkcji. 
+        > W wersji 10.0.5 rozwiązania Retail parametr **Zrealizować zamówienie tylko z jednej lokalizacji** został zmieniony na **Lokalizacje maksymalnej realizacji**. Zamiast konfigurowania, czy zamówienia mogą być realizowane tylko z jednej lokalizacji lub ze wszystkich możliwych lokalizacji, użytkownicy mogą teraz określać, czy realizacja może być dokonana z konkretnego zestawu lokalizacji (do 5), czy ze wszystkich możliwych lokalizacji. Oferuje to większą elastyczność pod kątem liczby lokalizacji, w których zamówienie może być realizowane.
 
    - **Reguła lokalizacji realizacji offline** — ta reguła umożliwia organizacji określenie lokalizacji lub grupy lokalizacji jako działających w trybie offline lub niedostępnych dla funkcji DOM, dzięki czemu nie możesz przypisać do tych lokalizacji zamówień do realizacji.
     - **Reguła maksymalnej liczby odrzuceń** — ta reguła umożliwia organizacjom określenie progu liczby odrzuceń. Po osiągnięciu progu procesor DOM oznaczy zamówienie lub wiersz zamówienia jako wyjątek i wykluczy go z dalszego przetwarzania.
@@ -200,7 +198,7 @@ W czasie przetwarzania funkcja DOM uwzględni zamówienie i wiersze zamówienia 
 
 Po zastosowaniu reguł, ograniczeń zapasów i optymalizacji funkcja DOM wybiera lokalizację położoną najbliżej adresu dostawy klienta.
 
-![Kryteria zamówień sprzedaży.](./media/ordercriteria.png "Kryteria zamówień sprzedaży")
+![Kryteria zamówień sprzedaży](./media/ordercriteria.png "Kryteria zamówień sprzedaży")
 
 ## <a name="results-of-dom-runs"></a>Wyniki sesji DOM
 
@@ -254,6 +252,3 @@ Poniżej przedstawiono niektóre kwestie, o których należy pamiętać podczas 
 - Obecnie funkcja DOM sprawdza tylko zamówienia, które są tworzone w kanałach handlu. Zamówienia sprzedaży są identyfikowane jako zamówienia sprzedaży detalicznej, jeśli dla opcji **Commerce — sprzedaż** jest ustawiona wartość **Tak**.
 - Firma Microsoft nie przetestowała funkcji DOM z wykorzystaniem zaawansowanych funkcji zarządzania magazynem. Klienci i partnerzy powinni zachować ostrożność i ustalić, czy funkcja DOM jest zgodna z zaawansowanymi funkcjami zarządzania magazynem i istotnymi dla nich procesami.
 - Funkcja DOM jest dostępna tylko w chmurowej wersji aplikacji Commerce. Nie jest ona obsługiwana w przypadku wdrożeń lokalnych.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

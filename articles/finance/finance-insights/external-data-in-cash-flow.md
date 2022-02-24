@@ -1,41 +1,46 @@
 ---
-# required metadata
-title: Dane zewnętrzne w prognozach przepływów pieniężnych
-description: 'W tym temacie opisano czynności konfiguracyjne, które należy wykonać, aby można było wprowadzać i importować dane zewnętrzne do prognoz przepływów pieniężnych.'
+title: Używanie danych zewnętrznych w prognozach przepływów pieniężnych (wersja zapoznawcza)
+description: W tym temacie opisano czynności konfiguracyjne, które należy wykonać, aby można było wprowadzać i importować dane zewnętrzne do prognoz przepływów pieniężnych.
 author: rcarlson
-ms.date: 12/21/2021
+manager: AnnBe
+ms.date: 05/01/2020
 ms.topic: article
-ms.prod: null
-ms.technology: null
-ms.search.form: 'LedgerJournalSetup, LedgerJournalTable'
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
 ms.author: peakerbl
-ms.search.validFrom: '2020-06-08'
+ms.search.validFrom: 2020-06-08
 ms.dyn365.ops.version: AX 10.0.12
+ms.openlocfilehash: 801327dc54f6d4cfef7a9f062395e29846783e8f
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4644952"
 ---
-# <a name="external-data-in-cash-flow-forecasts"></a>Dane zewnętrzne w prognozach przepływów pieniężnych
+# <a name="use-external-data-in-cash-flow-forecasts-preview"></a>Używanie danych zewnętrznych w prognozach przepływów pieniężnych (wersja zapoznawcza)
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Dane zewnętrzne można wprowadzać lub importować do prognoz przepływów pieniężnych. W tym temacie opisano czynności konfiguracyjne właściwe dla korzystania z danych zewnętrznych, które umożliwiają uwzględnienie danych zewnętrznych w prognozie przepływów pieniężnych.
 
 ## <a name="external-data-setup"></a>Ustawienia danych zewnętrznych
 
-Karta **Źródło zewnętrzne** na stronie **Ustawienia prognozy przepływów pieniężnych** (**Zarządzanie gotówką i bankami \> Prognozowanie przepływów pieniężnych \> Ustawienia prognozy przepływów pieniężnych**) służy do wprowadzania ustawień, które pozwalają na używanie danych zewnętrznych w prognozach przepływów pieniężnych.
+Karta **Źródło zewnętrzne** na stronie **Ustawienia prognozy przepływów pieniężnych** (**Zarządzanie gotówką i bankami \> Prognozowanie przepływów pieniężnych**) służy do wprowadzania ustawień, które pozwalają na używanie danych zewnętrznych w prognozach przepływów pieniężnych.
 
-Dane zewnętrzne można wprowadzać lub importować do prognoz przepływów pieniężnych. Przed wprowadzeniu lub zaimportowaniu danych zewnętrznych należy skonfigurować źródła zewnętrzne. Na karcie **Źródło zewnętrzne** skonfiguruj kategorie zewnętrznych przepływów pieniężnych. Może to być kategoria **Wychodząca** lub **Przychodząca**. Jako typ księgowania należy wybrać **płynność**. W siatce **Ustawienia firmy wybierz firmy** i odpowiednie konta główne, do których mają zastosowanie kategorie zewnętrznych przepływów pieniężnych.
+Aby uzyskać więcej informacji o konfiguracji, zobacz temat [Prognozowanie przepływów pieniężnych](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-flow-forecasting).
 
-Więcej informacji na temat uruchamiania Prognozy przepływów pieniężnych znajdziesz: [Prognozy przepływów pieniężnych](../cash-bank-management/cash-flow-forecasting.md).
+Aby wprowadzić dane zewnętrzne dla prognoz przepływów pieniężnych, można skorzystać z funkcji Otwórz w programie Excel służącej do wprowadzania i modyfikowania danych zewnętrznych. Wybierz przycisk **Dane zewnętrzne**, a następnie wybierz opcję **Dodaj dane zewnętrzne** lub **Edytuj istniejące dane zewnętrzne**. Po otwarciu pliku programu Microsoft Excel można wprowadzić informacje w następujących polach:
 
-## <a name="enter-external-data"></a>Wprowadź dane zewnętrzne
-
-Aby wprowadzać i modyfikować dane zewnętrzne na potrzeby prognoz przepływów pieniężnych, możesz użyć środowiska **Otwórz w programie Excel**. Wybierz przycisk **Dane zewnętrzne** na stronie **Ustawienia prognozy przepływów pieniężnych**, a następnie wybierz opcję **Dodaj dane zewnętrzne** lub **Edytuj istniejące dane zewnętrzne**. Po otwarciu pliku programu Microsoft Excel można wprowadzić informacje w następujących polach:
-
-- **Identyfikator wpisu** (unikatowy)
+- **Identyfikator wpisu**
 - **Opis** (opcjonalnie)
 - **Nazwa źródła zewnętrznego** — wybierz jedną z wartości z listy zdefiniowanej podczas konfigurowania modułu Finance Insights.
 - **Osoba prawna**
@@ -56,4 +61,5 @@ Ponadto jeśli trzeba przenieść dane konfiguracyjne z jednego środowiska do d
 - Konfiguracja zewnętrznego źródła prognozowania przepływów pieniężnych
 - Konfiguracja firmy zewnętrznego źródła prognozowania przepływów pieniężnych
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+#### <a name="privacy-notice"></a>Klauzula prywatności
+Wersje zapoznawcze (1) mogą wykorzystywać mniej rygorystyczne funkcje ochrony prywatności i bezpieczeństwa niż usługa Dynamics 365 Finance and Operations, (2) nie są objęte umową dotyczącą poziomu usług (SLA) dla tej usługi, (3) nie powinny być używane do przetwarzania danych osobowych ani innych danych podlegających wymogom zapewnienia zgodności z przepisami lub regulacjami, oraz (4) mają ograniczone wsparcie techniczne.

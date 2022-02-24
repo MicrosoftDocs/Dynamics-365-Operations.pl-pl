@@ -1,10 +1,12 @@
 ---
-title: Usprawnienie śledzenia wyników generowanych raportów ER w celu porównania z wartościami bazowymi
-description: W tym temacie opisano usprawnienia podstawowej funkcji ER w wersji Microsoft Dynamics 365 for Finance and Operations 10.0.3 (czerwiec 2019).
+title: Poprawa śledzenia wyników wygenerowanych raportów ER i porównanie ich z wartościami wyjściowymi
+description: Ten temat zawiera informacje o tym, jak ulepszono funkcję linii bazowej ER w Microsoft Dynamics 365 for Finance and Operations wersja 10.0.3 (czerwiec 2019).
 author: NickSelin
+manager: AnnBe
 ms.date: 06/19/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -14,14 +16,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: b6e8299dd57730486c731cd38578bd5ff6b8a1754f145432e300c1217c6dd640
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 55e821b27f80383d8a8dc7a2d46f87e17c554078
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760757"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682854"
 ---
-# <a name="improve-tracing-the-results-of-generated-er-reports-to-compare-with-baseline-values"></a>Usprawnienie śledzenia wyników generowanych raportów ER w celu porównania z wartościami bazowymi
+# <a name="improvements-in-tracing-the-results-of-generated-er-reports-and-comparing-them-with-baseline-values"></a>Poprawa śledzenia wyników wygenerowanych raportów ER i porównanie ich z wartościami wyjściowymi
 
 [!include[banner](../includes/banner.md)]
 
@@ -57,7 +59,7 @@ Oto kilka najważniejszych kroków:
 
 Linia bazowa została dodana do **Format do nauki podstawowych linii ER** format, ale zasady linii bazowej nie zostały jeszcze dodane dla tej linii bazowej.
 
-![Strona podstawy formatu raportowania elektronicznego, w tej chwili bez reguł.](media/GER-BaselineSample-AddBaseline2.PNG "Zrzut ekranu strony podstawy formatu raportowania elektronicznego")
+![Strona podstawy formatu raportowania elektronicznego](media/GER-BaselineSample-AddBaseline2.PNG "Zrzut ekranu strony podstawy formatu raportowania elektronicznego")
 
 ### <a name="make-a-new-baseline-rule"></a>Utwórz nową zasadę bazową
 
@@ -70,7 +72,7 @@ Linia bazowa została dodana do **Format do nauki podstawowych linii ER** format
 7. Kliknij przycisk **OK**.
 8. Wybierz **Linie bazowe**.
 
-    ![Zrzut ekranu strony podstawy formatu raportowania elektronicznego, linie bazowe wybrane.](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Zrzut ekranu strony podstawy formatu raportowania elektronicznego")
+    ![Strona podstawy formatu raportowania elektronicznego](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Zrzut ekranu strony podstawy formatu raportowania elektronicznego")
 
     Wygenerowany plik wychodzący został automatycznie dołączony do linii bazowej wykonanego formatu ER. Reguła linii bazowej została automatycznie dodana do tej linii bazowej i zawiera również odniesienie do załączonego pliku.
 
@@ -110,14 +112,14 @@ Skonfiguruj linię bazową, aby ignorować stare zmieniające się części wyj�
 13. Wybierz **Zapisz** i następnie wybierz **Test**.
 14. Wybierz **Test** ponownie, żeby jeszcze raz sprawdzić skonfigurowaną formułę.
 
-    ![Strona projektanta formuł.](media/GER-BaselineSample-DefineProcessingDTExpression.PNG "Zrzut ekranu strony projektanta formuł")
+    ![Strona projektanta formuł](media/GER-BaselineSample-DefineProcessingDTExpression.PNG "Zrzut ekranu strony projektanta formuł")
 
     > [!NOTE]
     > Karta **Wyniki testu** pokazuje, że skonfigurowane wyrażenie zwraca inną wartość daty i godziny, gdy jest wywoływana.
 
 15. Zamknij stronę **Projektowanie formuły** i następnie wybierz **Zapisz**.
 
-    ![Strona projektanta formatu.](media/GER-BaselineSample-FormatMappingDesign2.PNG "Zrzut ekranu strony projektanta formatu")
+    ![Strona projektanta formatu](media/GER-BaselineSample-FormatMappingDesign2.PNG "Zrzut ekranu strony projektanta formatu")
 
 16. Zamknij stronę **Projektowanie formuły**.
 
@@ -128,7 +130,7 @@ Skonfiguruj linię bazową, aby ignorować stare zmieniające się części wyj�
 3. Na liście linii bazowych wybierz linię, która została skonfigurowana do **Format do nauki podstawowych linii ER**.
 4. Na skróconej karcie **Linie bazowe** wybierz **Usuń**, żeby usunąć zasadę linii bazowej. którą ustaliłes wcześniej.
 
-![Strona podstawy formatu raportowania elektronicznego, usunięta.](media/GER-BaselineSample-AddBaseline3.PNG "Zrzut ekranu strony podstawy formatu raportowania elektronicznego")
+![Strona podstawy formatu raportowania elektronicznego](media/GER-BaselineSample-AddBaseline3.PNG "Zrzut ekranu strony podstawy formatu raportowania elektronicznego")
 
 ### <a name="define-replacements-for-bindings-of-designed-er-format"></a>Zdefiniuj zamienniki dla powiązań zaprojektowanego formatu ER
 
@@ -136,7 +138,7 @@ Skonfiguruj linię bazową, aby ignorować stare zmieniające się części wyj�
 2. Na drzewie komponentów formatu rozwiń **Wyjście**, rozwiń **Wyjście\\Dokument**, a następnie zaznacz okienko dla **Wyjście\\Dokument\\ProcessingDateTime**.
 3. Kliknij przycisk **OK**.
 
-![Strona podstawy formatu raportowania elektronicznego, składniki.](media/GER-BaselineSample-AddBaseline4.PNG "Zrzut ekranu strony podstawy formatu raportowania elektronicznego")
+![Strona podstawy formatu raportowania elektronicznego](media/GER-BaselineSample-AddBaseline4.PNG "Zrzut ekranu strony podstawy formatu raportowania elektronicznego")
 
 Wybrany komponent formatu ER został dodany do listy komponentów na skróconej karcie w **Zastąpienia**. Gdy podstawowy format ER jest uruchamiany w trybie debugowania, powiązanie formatu dla każdego komponentu zostanie zastąpione przez powiązanie pokazane w kolumnie **Powiązania**. Aby zmienić domyślne wiązanie dla komponentu wymienionego na skróconej karcie w **Zastąpienia** wybierz **Edytuj**.
 
@@ -144,7 +146,7 @@ Wybrany komponent formatu ER został dodany do listy komponentów na skróconej 
 
 Wykonaj kroki opisane w sekcji „Przykład: zautomatyzuj ustawienie zasad podstawowych” wcześniej w tym temacie. Powiadomienie ostrzega, że plik wychodzący został wygenerowany przy użyciu ustawień linii bazowej i wystąpiła wymuszona wymiana powiązań formatu.
 
-![Strona Notyfikacja na stronie konfiguracji.](media/GER-BaselineSample-FormatRunToMakeBaselineFile4.PNG "Zrzut ekranu powiadomienia na stronie konfiguracji")
+![Strona Notyfikacja na stronie konfiguracjii](media/GER-BaselineSample-FormatRunToMakeBaselineFile4.PNG "Zrzut ekranu powiadomienia na stronie konfiguracji")
 
 ### <a name="suppress-warnings-about-the-replacement-of-format-bindings"></a>Pomiń ostrzeżenia dotyczące wymiany powiązań formatu
 
@@ -192,11 +194,11 @@ Wyeksportowane ustawienia linii bazowej można zaimportować do innego środowis
 
 Aby zaimportować ustawienia linii bazowej z lokalnie przechowywanego pliku XML, w przypadku linii bazowych na stronie **Elektronicznego formatu raportowania** wybierz **Import**, a następnie wybierz **Przeglądaj**, aby wybrać plik XML.
 
-![Okienko dialogowe importuj ustawienia podstawowe.](media/GER-BaselineSample-ImportBaseline1.PNG "Zrzut ekranu okna dialogowego importowania ustawień podstawowych")
+![Okienko dialogowe importuj ustawienia podstawowe](media/GER-BaselineSample-ImportBaseline1.PNG "Zrzut ekranu okna dialogowego importowania ustawień podstawowych")
 
 Aby zaimportować ustawienia linii bazowej z pliku XML przechowywanego na serwerze Microsoft SharePoint w oparciu o bieżące ustawienia zarządzania dokumentami i wybrany typ dokumentu, w przypadku linii bazowych **Elektronicznego formatu raportowania** wybierz opcję **Import ze źródła**. Następnie wybierz typ dokumentu i plik XML. Wymagany typ dokumentu, aby uzyskać dostęp do folderu SharePoint należy go wcześniej skonfigurować.
 
-![Okno dialogowe Importowanie ze źródła.](media/GER-BaselineSample-ImportBaseline2.PNG "Zrzut ekranu okna dialogowego importowania ze źródła")
+![Okno dialogowe Importowanie ze źródła](media/GER-BaselineSample-ImportBaseline2.PNG "Zrzut ekranu okna dialogowego importowania ze źródła")
 
 > [!NOTE]
 > Możesz użyć Rejestratora zadań do zapisania kroków wyboru wymaganego typu dokumentu i nazwy pliku w oknie dialogowym **Import ze źródła**. W ten sposób można zachować wymagane ustawienia linii bazowej na serwerze SharePoint, a następnie automatycznie zaimportować je, odtwarzając nagranie zadania po uruchomieniu automatycznych testów za pomocą narzędzia Regression Suite Automation Tool.
@@ -205,6 +207,3 @@ Aby zaimportować ustawienia linii bazowej z pliku XML przechowywanego na serwer
 
 - [Śledzenie wyników wygenerowanych raportów i porównywanie ich z wartościami bazowymi](er-trace-reports-compare-baseline.md)
 - [Zasoby rejestratora zadań](../user-interface/task-recorder.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

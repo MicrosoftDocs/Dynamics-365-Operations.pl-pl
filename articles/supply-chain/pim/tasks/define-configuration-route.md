@@ -1,24 +1,26 @@
 ---
 title: Definiowanie marszruty konfiguracji
 description: Ta procedura skupia się na definiowaniu marszruty konfiguracji, która decyduje o kolejności, w jakiej grupy konfiguracji będą prezentowane.
-author: t-benebo
+author: ShylaThompson
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 54fd7d70f219a0a77957d421088f732032614ff0
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 3a0234fcce4f108fc6b03f0c4221613bb8526e86
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567062"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966887"
 ---
 # <a name="define-configuration-route"></a>Definiowanie marszruty konfiguracji
 
@@ -43,6 +45,3 @@ Ta procedura skupia się na definiowaniu marszruty konfiguracji, która decyduje
 15. Na liście kliknij łącze w wybranym wierszu.
 16. Kliknij przycisk Zapisz.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

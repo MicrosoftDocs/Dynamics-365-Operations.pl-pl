@@ -1,27 +1,30 @@
 ---
 title: Konfigurowanie i projektowanie formatów paragonów
 description: W tym artykule opisano modyfikowanie układów formularzy w celu sterowania sposobem drukowania paragonów, faktur i innych dokumentów. Moduł Dynamics 365 Commerce zawiera projektanta układów, który pozwala łatwo tworzyć i modyfikować różne układy formularzy.
-author: BrianShook
-ms.date: 09/16/2021
+author: rubencdelgado
+manager: AnnBe
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFormLayout
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 57841
 ms.assetid: e530dd8e-95e2-4021-90bd-ce1235f9e250
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: brshoo
+ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: dac0ad75ff35367b5d6ac84c75c68e22e2cb0cb1
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: ab6b01d6833850af8c04167d94b0a60c7312075c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779408"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415045"
 ---
 # <a name="set-up-and-design-receipt-formats"></a>Konfigurowanie i projektowanie formatów paragonów
 
@@ -43,15 +46,6 @@ W tym artykule opisano modyfikowanie układów formularzy w celu sterowania spos
     - **Nie Drukuj** — paragon nie jest drukowany.
     - **Monituj użytkownika** — użytkownik jest proszony o wydrukowanie paragonu.
     - **Zgodnie z wymogami** — ta opcja jest używana tylko dla paragonów za upominek. Gdy ta opcja jest zaznaczona, użytkownik może drukować paragon ze strony **zmiany**, jeśli paragon za upominek jest wymagany.
-
-## <a name="print-images"></a>Drukuj obrazy
-
-Konstruktor paragonów zawiera zmienną **Logo**. Możesz użyć tej zmiennej, aby określić obraz, który ma być drukowany na paragonach. Obrazy drukowane na paragonach przy użyciu zmiennej **Logo** powinny być plikami map bitowych (bmp). Jeśli obraz bitmapowy jest określony w projektancie paragonów, ale nie jest drukowany po wysłaniu paragonu do drukarki, przyczyną może być jeden z następujących problemów:
-
-- Rozmiar pliku jest za duży lub wymiary obrazu w pikselach nie są zgodne z drukarką. W takim przypadku spróbuj zmniejszyć rozdzielczość lub wymiary pliku obrazu.
-- Niektóre sterowniki drukarki PrintMemoryBitmap nie implementują metody **PrintMemoryBitmap** używanej przez stacje sprzętowe do drukowania obrazów logo. W takim przypadku spróbuj dodać następującą flagę do pliku **HardwareStation.Extension.config** dedykowanej lub udostępnionej stacji sprzętowej:
-
-    `<add name="HardwareStation.UsePrintBitmapMethod" value="true"/>`
 
 ## <a name="design-a-receipt-format"></a>Projektowanie formatu paragonu
 
@@ -88,6 +82,3 @@ Profile paragonów są przypisywane bezpośrednio do drukarki za pomocą profilu
 
 > [!NOTE]
 > Jeśli używane są dwie drukarki, jedna drukarka może służyć do standardowych 40-kolumnowych paragonów. Druga drukarka jest zwykle używana do drukowania paragonów pełnostronicowych, które muszą zawierać więcej informacji. Paragony te uwzględniają paragony do zamówienia sprzedaży odbiorcy i faktury odbiorcy.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

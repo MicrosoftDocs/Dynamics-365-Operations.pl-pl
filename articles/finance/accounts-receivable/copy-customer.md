@@ -1,24 +1,27 @@
 ---
 title: Kopiowanie odbiorców przy użyciu udostępnionych sekwencji numerów
 description: W tym temacie wyjaśniono, w jaki sposób należy używać udostępnionych sekwencji numerów w celu kopiowania odbiorców do innej firmy z zachowaniem niezmienionego identyfikatora odbiorcy.
-author: abruer
+author: mikefalkner
+manager: aolson
 ms.date: 08/31/2018
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustTable
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 0a93f0519b292c12ea31a8faf3bff051fc111216
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 91f7568ea8364f97de7e514fb207191ee00041a5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753496"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459681"
 ---
 # <a name="copy-customers-by-using-shared-number-sequences"></a>Kopiowanie odbiorców przy użyciu udostępnionych sekwencji numerów
 
@@ -62,6 +65,3 @@ Odbiorców możesz także kopiować za pomocą funkcji wyszukiwania numeru ident
 
 1. Zostanie wyświetlona opcja **Kopiuj odbiorcę**. Domyślnie ta opcja ma wartość **Nie**. Aby skopiować odbiorcę do bieżącej firmy, ustaw dla tej opcji wartość **Tak**. 
 2. Wybierz pozycję **Wybierz**. Zostanie otworzony nowy odbiorca.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

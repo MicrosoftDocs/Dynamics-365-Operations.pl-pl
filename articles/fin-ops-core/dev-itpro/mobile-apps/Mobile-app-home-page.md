@@ -2,24 +2,26 @@
 title: Aplikacja mobilna — strona główna
 description: W tym temacie opisano aplikację mobilną Finance and Operations (Dynamics 365) i zamieszczono łącza do zasobów, które mogą pomóc w jej zaimplementowaniu w organizacji.
 author: ChrisGarty
+manager: AnnBe
 ms.date: 01/22/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: intro-internal
+ms.custom: 272853
 ms.assetid: c99f818f-27b3-4e45-92b4-74272dad0e17
 ms.search.region: Global
 ms.author: cgarty
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: 8a91f603b4dd058341110c59039a6d3c782e06ee768fbf0e7f94e9527a6354ba
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e4a9d6424e2d214624c148c0565c88ea4cf4ccf9
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729715"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683465"
 ---
 # <a name="mobile-app-home-page"></a>Aplikacja mobilna — strona główna
 
@@ -27,7 +29,8 @@ ms.locfileid: "6729715"
 
 W tym temacie opisano aplikację mobilną **Finance and Operations (Dynamics 365)** i zamieszczono łącza do zasobów, które mogą pomóc w jej zaimplementowaniu w organizacji.
 
-## <a name="overview"></a>Przegląd
+<a name="overview"></a>Przegląd
+--------
 
 Aplikacja komórkowa umożliwia organizacji udostępnianie procesów biznesowych na urządzeniach przenośnych. Gdy administrator systemów informatycznych włączy komórkowe obszary robocze w organizacji, użytkownicy mogą się logować do aplikacji i natychmiast zacząć wykonywać procesy biznesowe na swoich urządzeniach komórkowych. Aplikacja mobilna zawiera następujące funkcje, które mogą pomóc zwiększyć wydajność pracy:
 
@@ -39,7 +42,7 @@ Aplikacja komórkowa umożliwia organizacji udostępnianie procesów biznesowych
 ## <a name="elements-of-the-mobile-app"></a>Elementy aplikacji mobilnej
 Nawigacja w aplikacji mobilnej jest podzielona na cztery podstawowe koncepcje: pulpit nawigacyjny, obszary robocze, strony i akcje. 
 
-[![Koncepcje nawigacyjne w aplikacji mobilnej.](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
+[![Koncepcje nawigacyjne w aplikacji mobilnej](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
 
 1. Po uruchomieniu aplikacji przechodzisz do **pulpitu nawigacyjnego**.
 2. Na pulpicie nawigacyjnym widać listę **obszarów roboczych**, które zostały opublikowane.
@@ -53,7 +56,7 @@ Nawigacja w aplikacji mobilnej jest podzielona na cztery podstawowe koncepcje: p
 ## <a name="implementation-process"></a>Projekt wdrażania
 Na poniższej ilustracji przedstawiono proces wdrażania mobilnych obszarów roboczych dostarczanych przez Microsoft i niestandardowych mobilnych obszarów roboczych. 
 
-[![Proces implementacji aplikacji mobilnych.](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)
+[![Proces implementacji aplikacji mobilnych](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)
 
 Poniższa tabela zawiera łącza do zasobów, które mogą pomóc we wdrażaniu mobilnych obszarów roboczych dostarczanych przez Microsoft i niestandardowych mobilnych obszarów roboczych. Numery w pierwszej kolumnie odpowiadają ponumerowanym krokom na poprzedniej ilustracji.
 
@@ -90,8 +93,8 @@ Poniższa tabela zawiera łącza do zasobów, które mogą pomóc we wdrażaniu 
 <li><a href="../../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md">Mobilny obszar roboczy Dostępne zapasy</a></li>
 <li><a href="../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md">Mobilny obszar roboczy Zamówienia sprzedaży</a></li>
 <li><a href="../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md">Obszar roboczy współpracy z dostawcami za pomocą urządzeń przenośnych</a></li>
-<li><a href="/dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace">Mobilny obszar roboczy Wprowadzanie czasu projektu</a></li>
-<li><a href="/dynamics365/project-operations/prod-exp/expense-management-mobile-workspace">Mobilny obszar roboczy Zarządzanie wydatkami</a></li>
+<li><a href="../../../finance/project-management/project-time-entry-mobile-workspace.md">Mobilny obszar roboczy Wprowadzanie czasu projektu</a></li>
+<li><a href="../../../finance/expense-management/expense-management-mobile-workspace.md">Mobilny obszar roboczy Zarządzanie wydatkami</a></li>
 
 </ul></td>
 </tr>
@@ -148,6 +151,3 @@ Poniższa tabela zawiera łącza do zasobów, które mogą pomóc we wdrażaniu 
 
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
 [Zasoby platformy mobilnej](platform/mobile-platform-home-page.md#troubleshooting-the-app)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

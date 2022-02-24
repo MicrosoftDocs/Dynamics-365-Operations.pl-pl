@@ -1,10 +1,12 @@
 ---
 title: Planowanie operacji
 description: Ten temat zawiera informacje o planowaniu operacji. Funkcji planowania operacji można używać, aby przedstawić ogólne oszacowanie procesu produkcji w wybranym okresie.
-author: johanhoffmann
+author: ChristianRytt
+manager: tfehr
 ms.date: 06/20/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProdSchedule
 audience: Application User
@@ -13,15 +15,15 @@ ms.custom: 198073
 ms.assetid: 12c28b11-80aa-4668-b15b-724cb24890bd
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e3c380297b56f615a6b285ef7daf1ecbd7bb420f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: eb4e1a38c675a3c8d102741a027d54294e335ac1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574576"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966412"
 ---
 # <a name="operations-scheduling"></a>Planowanie operacji
 
@@ -74,12 +76,10 @@ Podczas planowania operacji można anulować określone części marszruty. Tymi
 ## <a name="finite-materials"></a>Ograniczone materiały
 Jeśli pracujesz z ograniczonymi materiałami, planowanie zależy również od dostępności materiałów wymaganych do produkcji. Jeśli jest za mało dostępnych składników produkcji, może dojść do opóźnienia produkcji. Planowanie można oprzeć na zużyciu materiałów poprzez określenie materiałów, które muszą być dostępne do produkcji. Gdy optymalizujesz względem zarówno zdolności produkcyjnych zasobów, jak i dostępności materiałów, produkcja jest obliczana zgodnie z tymi ograniczeniami. Rozpoczęcie zlecenia produkcyjnego można zaplanować dopiero na moment, gdy zdolności produkcyjne i materiały są dostępne w tym samym czasie i w wymaganych ilościach.
 
-## <a name="additional-resources"></a>Dodatkowe zasoby
+<a name="additional-resources"></a>Dodatkowe zasoby
+--------
 
 [Opcje planowania operacji](operation-scheduling-options.md)
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

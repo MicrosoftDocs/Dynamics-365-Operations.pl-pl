@@ -1,25 +1,28 @@
 ---
 title: Raporty arkuszy magazynowych
 description: Jeśli używasz konfigurowalnych raportów o zapasach opartych na raportowaniu elektronicznym, należy zdefiniować relacje między określonymi raportami a typami arkuszy.
-author: anasyash
+author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalName
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.custom: 265144
 ms.search.region: Estonia, Hungary, Latvia, Lithuania, Poland
-ms.author: anasyash
+ms.author: v-lenest
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c2e1f8c534cf63ee65d29ccaa797c8a5a339a87b
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.openlocfilehash: f8b52043f9c09dfe7e80f9fec7b495acd3ccb590
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592465"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4408400"
 ---
 # <a name="inventory-journal-reports"></a>Raporty arkuszy magazynowych
 
@@ -27,7 +30,7 @@ ms.locfileid: "7592465"
 
 Jeśli używasz konfigurowalnych raportów o zapasach opartych na raportowaniu elektronicznym, należy zdefiniować relacje między określonymi raportami a typami arkuszy.
 
-Aby skonfigurować relację między określonym raportem a typem arkusza, na stronie **Nazwy arkuszy magazynowych** (**Zarządzanie zapasami** &gt; **Ustawienia** &gt; **Nazwy arkuszy** &gt; **Zapasy**) nadaj raportowi nazwę. **Uwaga:** Aby utworzyć obsługiwane konfiguracje, pobierz wymagane konfiguracje raportowania elektronicznego. Aby uzyskać więcej informacji, zobacz [Pobieranie konfiguracji modułu Raportowanie elektroniczne z usługi Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md). Przykłady raportów o zapasów z obsługiwanymi konfiguracjami w Europie są wymienione w tabeli poniżej.
+Aby skonfigurować relację między określonym raportem a typem arkusza, na stronie **Nazwy arkuszy magazynowych** (**Zarządzanie zapasami** &gt; **Ustawienia** &gt; **Nazwy arkuszy** &gt; **Zapasy**) nadaj raportowi nazwę. **Uwaga:** Aby utworzyć obsługiwane konfiguracje, pobierz wymagane konfiguracje raportowania elektronicznego. Aby uzyskać więcej informacji, zobacz [Pobieranie konfiguracji modułu Raportowanie elektroniczne z usługi Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md). Przykłady raportów o zapasów z obsługiwanymi konfiguracjami w Europie są wymienione w tabeli poniżej.
 
 | Kraj            |    Opis raportu               | Typ arkusza     |    Nazwa mapowania formatu                  |
 |--------------------|-------------------------------------|------------------|-----------------------------------------|
@@ -45,6 +48,3 @@ Aby skonfigurować relację między określonym raportem a typem arkusza, na str
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

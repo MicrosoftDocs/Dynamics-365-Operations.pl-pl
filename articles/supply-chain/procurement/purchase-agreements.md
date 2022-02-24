@@ -1,10 +1,12 @@
 ---
 title: Umowy zakupu
 description: Ten artykuł zawiera informacje o umowach zakupu. Umowa zakupu jest to kontraktem, który zobowiązuje organizację do zakupu określonej ilości lub za określoną kwotę przy użyciu wielu zamówień zakupu na przestrzeni czasu. W zamian za to zobowiązanie kupujący otrzymuje specjalne ceny i rabaty.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AgreementClassification, AgreementLine, AgreementLinePrompt, PurchAgreement, PurchAgreementCreate, PurchAgreementGenerateReleaseOrder, PurchAgreementHistory, PurchAgreementInvoiceJournal, PurchLine, AgreementLines
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 11634
 ms.assetid: 8ac20adf-7412-4929-be8c-aaedf23a76ad
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4911bd891c081892e52bda4bcc87984b3fb189b2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 9cd3c18129724cc67560aee7bf9fc0e5dcd2ebc3
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570503"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017194"
 ---
 # <a name="purchase-agreements"></a>Umowy zakupu
 
@@ -102,13 +104,12 @@ Po utworzeniu międzyfirmowego zamówienia zakupu korzystającego z umowy zakupu
 ## <a name="financial-dimensions-on-purchase-agreements"></a>Wymiary finansowe umów zakupu
 Wymiary finansowe można skopiować do nagłówków dokumentu lub pojedynczych wierszy umowy zakupu. Jeśli zmienisz wymiary w nagłówku umowy lub w wierszu umowy, zmiana nie ma wpływu na jakiekolwiek zwolnione zlecenia, ale zostanie uwzględniona w nowych zamówieniach.
 
-## <a name="additional-resources"></a>Dodatkowe zasoby
+<a name="additional-resources"></a>Dodatkowe zasoby
+--------
 
-- [Tworzenie umowy zakupu](tasks/create-purchase-agreement.md)
-- [Zastosowanie umowy zakupu podczas tworzenia zamówienia zakupu](tasks/create-purchase-release-order-purchase-agreement.md)
+[Tworzenie umowy zakupu](tasks/create-purchase-agreement.md)
+
+[Tworzenie zlecenia wydania zakupu na podstawie umowy zakupu](tasks/create-purchase-release-order-purchase-agreement.md)
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

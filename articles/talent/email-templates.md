@@ -81,6 +81,3 @@ Gdy zespół rekrutacyjny wysyła wiadomość e-mail, może używać szablonów 
 
 > [!NOTE] 
 > Dla wiadomości e-mail wysyłanych automatycznie można utworzyć wiele szablonów. Jednak tylko jeden szablon można ustawić jako aktywny. Ponieważ ten proces jest uruchamiany przez zdarzenia, tylko administrator może określić, który szablon powinien zostać użyty, jako kryterium stosując kombinację znaczków **Domyślnie** i **Wyślij automatycznie** wyświetlanych w bibliotece szablonów.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

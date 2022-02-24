@@ -2,13 +2,16 @@
 title: Konfigurowanie analizy RFM (wg daty ostatniego zakupu, częstotliwości i wartości pieniężnej)
 description: W tym temacie omówiono konfigurowanie analizy ostatniego zakupu, częstotliwości i wartości pieniężnej (RFM) dla odbiorców.
 author: josaw1
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: MCRRFMDefinition
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 78943
 ms.assetid: 8ff9aac3-5ada-4150-85fd-18901c926d53
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d058401541d37dac55d0a500835ce9c357468656e467951f789207452f798d94
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c7cb79fa82b579bee01e51cb635597cc5f711a98
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765229"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415016"
 ---
 # <a name="set-up-recency-frequency-and-monetary-rfm-analysis"></a>Konfigurowanie analizy RFM (wg daty ostatniego zakupu, częstotliwości i wartości pieniężnej)
 
@@ -33,13 +36,13 @@ Analiza RFM (wg daty ostatniego zakupu, częstotliwości i wartości pieniężne
 
 - Pierwsza wartość to ocena odbiorcy według daty ostatniego zakupu.
 - Druga wartość to ocena częstotliwości odbiorcy, czyli jak często odbiorca dokonuje zakupów od organizacji.
-- Trzecia cyfra to ocena pieniężna klienta, czyli kwota, jaką klient wydaje, gdy dokonuje zakupów w Twojej organizacji.
+- Trzecia wartość to ocena wartości pieniężnej odbiorcy, czyli ile pieniędzy odbiorca wydaje, gdy kupuje towary w Twojej firmie.
 
 Załóżmy, że w Twojej firmie używana jest skala ocen od 1 do 5, gdzie 5 oznacza najwyższą ocenę. W tym przypadku jeśli odbiorca otrzymał ocenę 535, można z tego wywnioskować następujące fakty:
 
 - **Ocena daty ostatniego zakupu 5** — ostatni zakup dokonany przez odbiorcę miał miejsce niedawno.
 - **Ocena częstotliwości 3** — odbiorca kupuje produkty od organizacji z średnią częstotliwością.
-- **Ocena wartości pieniężnej 5** — gdy odbiorca dokonuje zakupu, klient wydaje znaczną kwotę pieniędzy.
+- **Ocena wartości pieniężnej 5** — gdy odbiorca dokonuje zakupu, wydaje znaczną kwotę pieniędzy.
 
 Jeśli organizacja używa sum liczbowych do określania wyniku, poszczególne wyniki są sumowane. Jeśli weźmiemy jeszcze raz ten sam przykład, odbiorca otrzymuje ocenę 13 (5 + 3 + 5).
 
@@ -94,6 +97,3 @@ Należy użyć tej procedury w celu wyświetlenia lub wyczyszczenia historii rek
 2. Na stronie **Analiza RFM** wybierz rekord do wyświetlenia.
 3. Aby wyświetlić historię rekordu, wybierz kartę skróconą **Historia**.
 4. Aby wyczyścić historię rekordu, wybierz opcję **Wyczyść historię**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

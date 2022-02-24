@@ -2,9 +2,11 @@
 title: Ograniczenia dotyczące wersji wyceny opartej na kosztach standardowych.
 description: W tym temacie opisano ograniczenia mające zastosowanie do wersji wyceny kosztów standardowych.
 author: AndersGirke
+manager: tfehr
 ms.date: 01/17/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CostingVersion
 audience: Application User
@@ -16,12 +18,12 @@ ms.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2028cdabde3d01de16050b38893ec9e42353ae542be7a0cd7362cf62e9315170
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5339c3c4a62b94a06cbffc200ed1e9b227d6b6af
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748794"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963795"
 ---
 #  <a name="restrictions-on-costing-versions-for-standard-costs"></a>Ograniczenia dotyczące wersji wyceny opartej na kosztach standardowych.
 
@@ -39,7 +41,8 @@ Poniższe ograniczenia zapewniają zgodność ze standardowymi zasadami wyceny:
 
 Dane o kosztach standardowych towaru mogą być kopiowane do rekordów innej wersji wyceny, która obejmuje koszty standardowe i planowane. Dane kosztów planowanych towaru nie mogą być jednak kopiowane do wersji wyceny zawierającej koszty standardowe, ponieważ wymienione powyżej ograniczenia nie mają zastosowania do kosztów planowanych.
 
-## <a name="related-topics"></a>Powiązane tematy
+<a name="related-topics"></a>Powiązane tematy
+--------
 
 [Omówienie wersji wyceny](costing-versions.md)
 
@@ -47,6 +50,3 @@ Dane o kosztach standardowych towaru mogą być kopiowane do rekordów innej wer
 
 [Przygotowanie do zarządzania kosztami standardowymi wyprodukowanych towarów](update-standard-costs-manufacturing-environment.md)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

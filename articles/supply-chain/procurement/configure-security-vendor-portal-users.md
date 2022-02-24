@@ -1,10 +1,12 @@
 ---
 title: Zabezpieczenia użytkowników portalu dostawców
 description: W tym artykule wyjaśniono, jak skonfigurować zabezpieczenia dla zewnętrznych dostawców używających portalu dostawców. Informacje te dotyczą tylko wersji systemu Dynamics AX z lutego i maja 2016 roku.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysUserManagement
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 30231
 ms.assetid: 3574db17-81c7-4c5a-999b-0098aa0b9cda
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8e73e9e874fbb8df029e4eccce922a660513c1bf
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1be210728a6d5fa9a26daf9f13865ff08de03d2d
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568094"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018196"
 ---
 # <a name="vendor-portal-user-security"></a>Zabezpieczenia użytkowników portalu dostawców
 
@@ -40,12 +42,10 @@ Przed utworzeniem konta użytkownika dla kogoś, kto będzie korzystał z Portal
 
 Jeśli ta sama osoba wymaga dostępu do portalu dostawców dla wielu kont dostawców (dla różnych podmiotów prawnych), każde konto użytkownika tej osoby musi być skojarzone z tą samą osobą kontaktową. Rola **dostawcy (zewnętrzna)** zawiera wszystkie podstawowe funkcje, które są niezbędne, aby korzystać z funkcji portalu dostawców. Ta konfiguracja pomaga zagwarantować, że interfejs użytkownika, który widzi użytkownik zewnętrzny, zawiera tylko odpowiednie informacje.
 
-## <a name="additional-resources"></a>Dodatkowe zasoby
+<a name="additional-resources"></a>Dodatkowe zasoby
+--------
 
 [Współpraca z dostawcami za pomocą portalu dostawców](collaborate-vendors-vendor-portal.md)
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

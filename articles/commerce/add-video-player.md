@@ -2,30 +2,36 @@
 title: Moduł odtwarzacza wideo
 description: W tym temacie opisano moduły odtwarzacza wideo i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/08/2021
+manager: annbe
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8d09797d24572a99cc8f5ed2d34b73eb7144af7a35661a929b6a571a20dfed04
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3cf7ead9a5340d5db37a87bdf131ba87681d5a82
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731726"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414896"
 ---
 # <a name="video-player-module"></a>Moduł odtwarzacza wideo
+
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano moduły odtwarzacza wideo i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Omówienie
 
 Moduł odtwarzacza wideo służy do obsługi odtwarzania wideo. Można go dodać do dowolnej strony, pod warunkiem, że zawartość wideo jest przekazywana do systemu zarządzania zawartością (CMS) i dostępna w nim. Moduł odtwarzacz wideo obsługuje typ multimediów MP4.
 
@@ -43,16 +49,12 @@ Moduł odtwarzacza wideo obsługuje również pomocnicze ścieżki audio. Po prz
 
 Poniższy obraz pokazuje przykład modułu odtwarzacza wideo na stronie głównej.
 
-![Przykład modułu odtwarzacza wideo.](./media/ecommerce-videoplayer.PNG)
+![Przykład modułu odtwarzacza wideo](./media/ecommerce-videoplayer.PNG)
 
 ### <a name="video-player-module-properties"></a>Właściwości modułu odtwarzacza wideo
 
 | Nazwa właściwości         | Wartość                               | opis |
 |-----------------------|-------------------------------------|-------------|
-| Nagłówek               | Tekst nagłówka i znacznik nagłówka (**H1**, **H2**, **H3**, **H4**, **H5** lub **H6**) | Domyślnie jest używany znacznik nagłówka **H2**, ale znacznik nagłówka jest używany, ale tag nagłówka można zmienić, aby spełnić wymagania dotyczące dostępności. |
-| Tekst sformatowany             | Tekst akapitu | Moduł obsługuje tekst akapitowy w formacie tekstu sformatowanego. Obsługiwane są niektóre podstawowe funkcje tekstu sformatowanego, takie jak hiperłącza, pogrubienie, podkreślenie i kursywa. Niektóre z tych możliwości mogą być zastąpione przez motyw strony stosowany do modułu. |
-| Link                  | Tekst łącza, adres URL łącza, dostęp do bogatych aplikacji internetowych (ARIA) i **Otwórz łącze na nowej karcie** | Moduł obsługuje łącza do jednego lub wielu „wywołań akcji”. Jeśli zostanie dodane łącze, tekst łącza, adres URL i etykieta ARIA są wymagane. Etykiety ARIA powinny być opisowe w celu spełnienia wymagań dotyczących ułatwień dostępu. Łącza można tak skonfigurować, aby były otwierane na nowej karcie. |
-| Tekst podrzędny              | Nagłówek, tekst lub łącza | Można dodać dodatkowy kontekst dla modułu użytkownika wideo, na przykład nazwisko autora lub projektanta lub łącza do osobistych blogów. |
 | Automatyczne odtwarzanie             | **Prawda** lub **Fałsz**               | Jeśli wartość jest ustawiona na **prawda**, odtwarzanie wideo jest automatycznie odtwarzane. |
 | Wycisz                  | **Prawda** lub **Fałsz**               | Jeśli wartość jest ustawiona na **prawda**, audio jest wyciszane. Domyślną wartością tego odtwarzacza jest **fałsz**. W przeglądarce Chrome klipy wideo autoodtwarzania są domyślnie wyciszone, a dźwięk jest odtwarzany tylko wtedy, gdy użytkownik ręcznie odtworzy wideo. |
 | Pętla                  | **Prawda** lub **Fałsz**               | Jeśli wartość jest ustawiona na **prawda**, wideo jest zapętlone. |
@@ -62,9 +64,6 @@ Poniższy obraz pokazuje przykład modułu odtwarzacza wideo na stronie główne
 | Kontrolki odtwarzacza wideo | **Prawda** lub **Fałsz**               | Jeśli wartość jest ustawiona na **prawda**, wyświetlane są kontrolki odtwarzacza wideo. Te formanty obejmują przyciski odtwarzania i wstrzymywania, wskaźnik postępu oraz opcje napisów kodowanych. |
 | Ukryj kadr     | **Prawda** lub **Fałsz**               | Film wideo może mieć ramkę plakatu. Jeśli dla wartości tej właściwości jest ustawiona wartość **prawda**, ramka plakatu jest ukryta. |
 | Poziom maski            | Liczba z zakresu od **0** do **100** | Maska zastosowana do obrazu wideo dla stylów. |
-
-> [!IMPORTANT]
-> Od wersji Dynamics 365 Commerce 10.0.20 dostępne są właściwości **Nagłówek**, **Tekst sformatowany**, **Łącze** i **Tekst podrzędny**.
 
 ## <a name="add-a-video-player-module-to-a-page"></a>Dodawanie modułu odtwarzacza wideo na stronie
 
@@ -107,6 +106,3 @@ Aby dodać moduł odtwarzacza wideo do nowej strony i ustawić wymagane właści
 [Moduł bloku tekstu](add-content-rich-block.md)
 
 [Moduł bloku zawartości](add-hero-module.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

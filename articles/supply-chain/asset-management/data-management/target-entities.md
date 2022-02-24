@@ -1,10 +1,12 @@
 ---
 title: Jednostki docelowe
 description: W tym temacie opisano sposób uzyskiwania przeglądu jednostek docelowych w Zarządzaniu składnikami majątku.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 09/26/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c2d08781ff75b2435e9b71531ce77a59dbee2d90e647087d7c2c58bb4b1227e1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eb22c5b604f9bc7aacad014385b036e78d9110e6
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772575"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017219"
 ---
 # <a name="target-entities"></a>Jednostki docelowe
 
@@ -34,13 +36,13 @@ W obszarze roboczym **Zarządzanie danymi** można uzyskać przegląd jednostek 
 
 2. W sekcji **Import/eksport** kliknij pozycję **Jednostki danych**. 
 
-    ![Rysunek 1.](media/01-data-management.png)
+    ![Rysunek 1](media/01-data-management.png)
 
 3. Na stronie **Jednostki docelowe** wyszukaj hasło „zarządzanie skłądnikami majątku” w filtrze i naciśnij klawisz ENTER, aby wyświetlić listę jednostek związanych z zarządzaniem składnikami majątku.
 
     Na poniższym rysunku przedstawiono niektóre jednostki zarządzania składnikami majątku.
 
-   ![Rysunek 2.](media/02-data-management.png)
+   ![Rysunek 2](media/02-data-management.png)
 
 4. Wybierz jednostkę i kliknij przycisk **Modyfikuj mapowanie celu**.
 
@@ -48,8 +50,5 @@ W obszarze roboczym **Zarządzanie danymi** można uzyskać przegląd jednostek 
 
     Na poniższym rysunku przedstawiono wizualizację pól związanych z jednostką typy typu składnika majątku.
 
-    ![Rysunek 3.](media/03-data-management.png)
+    ![Rysunek 3](media/03-data-management.png)
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

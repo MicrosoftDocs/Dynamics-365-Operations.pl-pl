@@ -1,22 +1,29 @@
 ---
-# required metadata
 title: Aktualizowanie sposobu wyświetlania kwot w raportach i dokumentach
-description: 'Ten temat zawiera informacje dotyczące aktualizacji sposobu wyświetlania kwot w raportach i innych dokumentach dla Estonii, Łotwy, Litwy, Polski, Czech, Węgier i Rosji.'
+description: Ten temat zawiera informacje dotyczące aktualizacji sposobu wyświetlania kwot w raportach i innych dokumentach dla Estonii, Łotwy, Litwy, Polski, Czech, Węgier i Rosji.
 author: anasyash
-ms.date: 01/18/2022
+manager: AnnBe
+ms.date: 08/13/2019
 ms.topic: article
-ms.prod: null
-ms.technology: null
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
 ms.search.form: Currency
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.custom: 264254
-ms.search.region: 'Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia'
+ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 ms.author: kfend
-ms.search.validFrom: '2016-11-30'
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: dd42a64bb384561cc0c4a8c9baf1213860691849
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4408401"
 ---
-
 # <a name="update-how-amounts-are-displayed-on-reports-and-documents"></a>Aktualizowanie sposobu wyświetlania kwot w raportach i dokumentach
 
 [!include [banner](../includes/banner.md)]
@@ -43,10 +50,7 @@ Aby skonfigurować długie i krótkie nazwy jednostek i podjednostek walut dla j
    |    <strong>Nazwa skrótowa jednostek (grupa pól Krótka nazwa)</strong>    |                                                                                         Wprowadź kod ISO identyfikujący walutę. Na przykład wpisz LTL w celu identyfikowania litów.                                                                                         |
    |   <strong>Nazwa skrótowa części (grupa pól Krótka nazwa)</strong>    |                                                                                               Wprowadź nazwę podjednostki waluty. Na przykład wpisz „groszy”.                                                                                               |
    |       <strong>Spójnik „i” między jednostkami i częściami</strong>       |                                     Zaznacz tę opcję, aby drukować spójnik„i” między jednostkami i częściami waluty. Na przykład w fakturach i raportach kwota 100,20 PLN będzie wyświetlana jako „100 złotych i 20 groszy”.                                      |
-   |       <strong>Rodzaj</strong>       |  Wybierz **Mężczyzna**, **Kobieta** lub **Neutralne**. Ten parametr może mieć wpływ na tekst kwoty odchylenia, która jest wyświetlana w tekście języka lokalnego na Zamówieniu gotówkowym. Na przykład po skonfigurowaniu **Płci** dla waluty euro jako **Neutralne**, kwota 1,01 euro jest zapisywana w języku czeskim na zamówieniu gotówkowym jako *Jedno euro 01 cent*.  |
+   |       <strong>Rodzaj</strong>       |  Wybierz **Mężczyzna**, **Kobieta** lub **Neutralne**. Ten parametr może mieć wpływ na tekst kwoty odchylenia, która jest wyświetlana w tekście języka lokalnego na Zamówieniu gotówkowym. Na przykład po skonfigurowaniu **Płci** dla waluty euro jako **Neutralne**, kwota 1,01 euro jest zapisywana w języku czeskim na zamówieniu gotówkowym jako *Edno euro 01 cent*.  |
 
 5. Wybierz opcję **Zapisz**.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

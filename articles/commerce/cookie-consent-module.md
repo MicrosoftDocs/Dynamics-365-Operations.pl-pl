@@ -2,12 +2,15 @@
 title: Moduł zgody na pliki cookie
 description: W tym temacie opisano moduły zgody na pliki cookie i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
+manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 43f18a0963d84d486c8077bde1dad50fdd4fe85beb95dc8b22ae2f3ee724ba0f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 60ce530575841c22355e4a14e8b0bbec6c0e35ab
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750745"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414840"
 ---
 # <a name="cookie-consent-module"></a>Moduł zgody na pliki cookie
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano moduły zgody na pliki cookie i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Omówienie
 
 Moduł zgody na pliki cookie wysyła użytkownikom zapytanie o udzielenie zgody na używanie plików cookie na potrzeby funkcji lub modułu śledzącego pliki cookie przeglądarki. Zgoda jest wymagana w momencie, gdy użytkownik odwiedzający witrynę po raz pierwszy przegląda witrynę w nowej sesji przeglądarki. Po otrzymaniu zgody pliki będą śledzone, a użytkownik witryny nie będzie ponownie pytany o zgodę. Aby uzyskać więcej informacji, zajrzyj do [Zgodność z plikami cookie](cookie-compliance.md).
 
@@ -35,7 +40,7 @@ Jeśli nie otrzymano zgody na wykorzystanie pliku cookie, wszelkie funkcje lub m
 Moduł zgody na wykorzystanie plików cookie można skonfigurować na fragmencie nagłówka strony, dzięki czemu można wymusić jego załadowanie podczas. Moduł zgody na wykorzystanie plików cookie powinien zawierać jasny komunikat informujący użytkownika witryny o sposobie użycia plików cookie w witrynie i powinien zawierać łącze do strony prywatności witryny.
 
 Na poniższej ilustracji przedstawiono przykład prośby o udzielenie zgody na wykorzystanie pliku cookie z łączem do strony zasady prywatności witryny, który wyświetlany jest w nagłówku strony witryny.
-![Przykład modułu zgody na wykorzystanie plików cookie.](./media/ecommerce-cookieconsent.png)
+![Przykład modułu zgody na wykorzystanie plików cookie](./media/ecommerce-cookieconsent.png)
 
 ## <a name="cookie-consent-module-properties"></a>Moduł zgody na wykorzystanie plików cookie — właściwości
 
@@ -57,6 +62,3 @@ Aby uzyskać więcej informacji o fragmentach i modułach nagłówka, skorzystaj
 [Moduł nagłówka](author-header-module.md) 
 
 [Zgodność z plikami cookie](cookie-compliance.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

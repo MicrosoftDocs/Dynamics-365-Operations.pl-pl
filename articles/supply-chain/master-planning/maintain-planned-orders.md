@@ -1,10 +1,12 @@
 ---
 title: Obsługa zamówień planowanych
 description: Ten temat zawiera informacje o metodach zarządzania zamówienia planowanymi. Opisano w nim sposób aktualizowania stanów zamówień planowanych i ich potwierdzania oraz odfiltrowywania zamówień planowanych, które mają taki sam stan jak wybrane zamówienie planowane.
-author: ChristianRytt
+author: roxanadiaconu
+manager: tfehr
 ms.date: 12/10/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqTransPo, ReqTransFirmLog
 audience: Application User
@@ -13,15 +15,15 @@ ms.custom: 19151
 ms.assetid: 54123f4c-b4ca-4ce4-9358-b067aa04c968
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f4ec4e50d37403107b31117912423b8bbc8ebb35
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 039fce86ac9649989df1eaa6179c79dd98b8ae3f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575735"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967080"
 ---
 # <a name="maintain-planned-orders"></a>Obsługa zamówień planowanych
 
@@ -58,12 +60,10 @@ Jeśli planujesz ustalać wiele zamówień w tym samym czasie, parallelizing prz
 > [!NOTE]
 > Opcja **równoległej akceptacji** jest wyświetlana tylko wtedy, gdy wybrano więcej niż jedno zamówienie planowane do akceptacji.
 
-## <a name="additional-resources"></a>Dodatkowe zasoby
+<a name="additional-resources"></a>Dodatkowe zasoby
+--------
 
 [Omówienie planów głównych](master-plans.md)
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

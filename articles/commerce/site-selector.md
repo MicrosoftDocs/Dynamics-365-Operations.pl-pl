@@ -2,12 +2,15 @@
 title: Moduł wyboru witryny
 description: W tym temacie opisano moduł wyboru witryny i opisano, jak dodać go do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
+manager: annbe
 ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: a5f6f6e3ff459447aa4b3c0058b5526c9e8d1038a5d2629eefbed197012aebf0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b4e5f715efcac7f883df99508d282db904be0d80
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772235"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665230"
 ---
 # <a name="site-selector-module"></a>Moduł wyboru witryny
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano moduł wyboru witryny i opisano, jak dodać go do stron witryny w Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Omówienie
 
 Jeśli firma ma różne oddziały między rynkami, regionami i lokalizacjami, użytkownicy witryny muszą w prosty sposób przełączać się między witrynami i wybierać ich preferowaną witrynę w zakresie zakupów. Aby można było uwzględnić ten scenariusz, moduł selektor witryn umożliwia przeglądanie użytkowników w wielu witrynach.
 
@@ -37,7 +42,7 @@ Dla modułu wyboru witryn należy skonfigurować listę witryn (rynków, region�
 
 Na poniższej ilustracji przedstawiono przykład modułu wyboru witryny, który jest proponowany w nagłówku strony witryny.
 
-![Przykład modułu wyboru witryn w nagłówku strony witryny.](./media/ecommerce-sitepicker.PNG)
+![Przykład modułu wyboru witryn w nagłówku strony witryny](./media/ecommerce-sitepicker.PNG)
 
 ## <a name="site-selector-module-properties"></a>Właściwości Modułu wyboru witryny
 
@@ -59,6 +64,3 @@ Moduł selektor witryn można dodać do [modułu nagłówka](author-header-modul
 [Moduł szlaków nawigacyjnych](add-breadcrumb.md)
 
 [Moduł menu nawigacji](nav-menu-module.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: Stornowanie
 description: Stornowanie to praktyka używania liczb ujemnych, aby odwrócić oryginalne zapisy na koncie arkusza.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -13,12 +15,12 @@ ms.search.region: Czech Republic, Germany, Hungary, Latvia, Lithuania, Poland, R
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c8bea5d5ec8069e78f3ed5e7d1d6a74ee28ce2dea1891ad71e410d4c309a79c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9ee59d879a0500b5addfd9540f35cd818d7126c5
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764215"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968324"
 ---
 # <a name="storno-accounting"></a>Stornowanie
 
@@ -119,7 +121,7 @@ Finance traktuje ujemne kwoty arkuszy w szczególny sposób. Wpis arkusza finans
 <tbody>
 <tr class="row-2">
 <td class="column-1"> Strona debetowa</td>
-<td class="column-2">Nie</td>
+<td class="column-2">Nr</td>
 <td class="column-3">0&gt;</td>
 <td class="column-4" align="right">Ilość</td>
 <td class="column-5" align="right">Ilość</td>
@@ -129,7 +131,7 @@ Finance traktuje ujemne kwoty arkuszy w szczególny sposób. Wpis arkusza finans
 </tr>
 <tr class="row-3">
 <td class="column-1"> Strona kredytowa</td>
-<td class="column-2">Nie</td>
+<td class="column-2">Nr</td>
 <td class="column-3">0&lt;</td>
 <td class="column-4" align="right">-Kwota</td>
 <td class="column-5" align="right">Ilość</td>
@@ -162,11 +164,8 @@ Finance traktuje ujemne kwoty arkuszy w szczególny sposób. Wpis arkusza finans
 
 Można dostosować wyświetlanie storna w formularzach, siatkach, kolumnach i polach. Na przykład można wyłączyć wyświetlanie znaku lub zmienić dopełnianie dla kwot ujemnych. Można również używać pola **Korekta** ze wszystkimi ustawieniami wyświetlania. Jeśli pole **Korekta** ma ustawioną wartość „tak”, jest zapisem stornującym.
 
-![Kwoty storna we wpisach w arkuszu.](./media/journal-storno.png)
+![Kwoty storna we wpisach w arkuszu](./media/journal-storno.png)
 
 ## <a name="how-documents-create-storno"></a>Jak dokumenty tworzą storna
 Niektóre dokumenty powodują tworzenie transakcji anulowania. Na przykład przeszacowania w walucie obcej dla dokumentów księgi głównej, rozrachunków z dostawcami i rozrachunków z odbiorcami powodują anulowanie niezrealizowanych dodatnich i ujemnych różnic kursowych. Aby uzyskać więcej informacji, zajrzyj do [Przeszacowanie w walucie obcej dla księgi głównej](../general-ledger/foreign-currency-revaluation-general-ledger.md) dla [Przeszacowanie w walucie obcej dla rozrachunków z odbiorcami i rozrachunków z dostawcami](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md). Po utworzeniu transakcji anulowania zostaną utworzone nowe transakcje z niezrealizowanymi dodatnimi i ujemnymi różnicami kursowymi. Transakcje anulowania są również tworzone dla zapasów. Aby uzyskać więcej informacji, zobacz [Zamknięcie zapasów](../../supply-chain/cost-management/inventory-close.md). Istnieją dokumenty pozwalające anulować uprzednio zaksięgowany dokument. Na przykład użytkownik może utworzyć fakturę korygującą w celu anulowania uprzednio utworzonej faktury. Do tworzenia transakcji storna lub wycofania dokumenty wykorzystują określone parametry. Na przykład przeszacowanie w walucie obcej tworzy transakcje wycofania lub storna przy użyciu parametru korekty księgi głównej. Faktura korygująca dla odbiorcy tworzy transakcję wycofania lub storna przy użyciu parametru korekty na fakturze korygującej dostępnego w module rozrachunków z odbiorcami.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -91,6 +91,3 @@ Ten szablon procesu zatrudnienia wymaga działania Oferta. Aby użyć oferty zin
 > Zintegrowana aplikacja Offer Management jest dostępna tylko po zainstalowaniu dodatku kompleksowej obsługi rekrutacji. Aby uzyskać więcej informacji, zajrzyj do [Która wersja Microsoft Dynamics 365 Talent - Attract](./attract-comprehensive-hiring.md).
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

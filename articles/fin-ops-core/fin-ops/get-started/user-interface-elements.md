@@ -2,9 +2,11 @@
 title: Elementy interfejsu użytkownika
 description: W tym temacie opisano elementy interfejsu użytkownika w aplikacji.
 author: tlefor
+manager: AnnBe
 ms.date: 08/09/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -12,17 +14,14 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 60e85841ec940ed65d73dc052848168be70301d6
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 3e087a1abec9bf177bb831b9bbfa12895054ad07
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069330"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797953"
 ---
 # <a name="user-interface-elements"></a>Elementy interfejsu użytkownika
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 W tym temacie opisano elementy interfejsu użytkownika używane w aplikacji. Aby użytkownicy mogli nawigować po interfejsie, należy znać nazwy i funkcje elementów tworzących interfejs.
 
@@ -87,6 +86,3 @@ Poniższy obraz przedstawia przykłady tych typów powiadomień.
 *Lista* to nazwa nadawana kolekcji rekordów, którą można przewijać. Te rekordy można przenieść na stronę, zaznaczając je. Często powoduje to otwarcie siatki.
 
 ![Poniższy rysunek przedstawia przykłady pasków narzędzi, siatek i list.](media/user-interface-08.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

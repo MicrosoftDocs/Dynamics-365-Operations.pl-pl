@@ -1,26 +1,29 @@
 ---
 title: Konfigurowanie kuponów dla sprzedaży detalicznej
-description: Ten temat zawiera omówienie koncepcji kuponów oraz wyjaśnienie, jak je konfigurować w rozwiązaniu Dynamics 365 Commerce.
-author: josaw1
-ms.date: 10/05/2021
+description: Ten temat zawiera omówienie koncepcji kuponów oraz wyjaśnienie, jak je konfigurować.
+author: scott-tucker
+manager: AnnBe
+ms.date: 06/04/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailCoupon, RetailParameters, RetailSharedParameters
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: josaw
+ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6a2ee38139f20b883bdfa5f0776951246f763f5f
-ms.sourcegitcommit: f699dbc21a06dbfb3fb299b789b428ea8d643868
+ms.openlocfilehash: a07bed244152327047efd68cfacb329a722c0049
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "7603130"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414870"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Konfigurowanie kuponów dla sprzedaży detalicznej
 
@@ -38,10 +41,6 @@ Aby utworzyć kuponu, należy utworzyć oddzielnie rabat i kupon. Następnie trz
 
 > [!NOTE]
 > Po połączeniu kuponu z rabatem kilka pól na stronie rabatu w Commerce staje się tylko do odczytu, ponieważ są one zarządzane przez ustawienia kuponu. Są to m.in. pola stanu i standardowych zakresów dat.
-> 
-> Podczas używania kuponu w kanale centrum obsługi należy zaznaczyć przycisk **Oblicz ponownie** **(karta Sprzedaż > Oblicz > Oblicz ponownie)**, aby zastosowano rabat skojarzony z kuponem. Ten dodatkowy krok zostanie usunięty w przyszłej wersji.
-
-Aby zastosować kupon do transakcji sprzedaży w punkt sprzedaży (POS), można użyć **kodu kuponu** lub **kodu paska kuponu**. Aby można było użyć **kodu kuponu**, operacja **dodaj kod kuponu** musi być skonfigurowana w [układzie ekranu](pos-screen-layouts.md) **Transakcja** punktu sprzedaży . Wybierz opcję **Dodaj kod kuponu** i wprowadź kod kuponu. Alternatywnie, by użyć **kodu paska kuponu**, zeskanuj kod paska lub wprowadź kod paska za pomocą klawiatury numerycznej na ekranie **Transakcja**.
 
 ### <a name="limited-use-coupons"></a>Kupony o ograniczonym użyciu
 
@@ -83,6 +82,3 @@ Funkcjonalność kuponów obejmuje wiele odrębnych funkcji. Program Commerce He
 - **Program HQ jest częściowo zaktualizowany, ale aplikacje Commerce Scale Unit i POS nie są zaktualizowane.** W aktualizacji programu HQ są aktualizowane strony kuponu i rabatu oraz aparat ustalania cen. Jeśli tylko jeden z tych dwóch składników zostanie zaktualizowany, niektóre strony w module Commerce będą zawierały niezgodne dane obliczania cen. W związku z tym podczas obliczania rabatów mogą się pojawić nieoczekiwane obliczenia rabatów lub błędy.
 - **Program HQ jest zaktualizowany, ale aplikacje Commerce Scale Unit i POS nie są zaktualizowane (N-1).** Ponieważ nie wszystkie sklepy mogą zostać zaktualizowane w tym samym czasie, zaleca się, aby przed zaktualizowaniem sklepów zaktualizować aplikację HQ. W scenariuszu N-1 nowe funkcje dotyczące kuponów nie będą dostępne w sklepach, które nie zostały jeszcze zaktualizowane. Na przykład funkcjonalność kuponów wprowadza wiersze wykluczenia. Użycie opcji wykluczenia do wierszy rabatu spowoduje, że nie będą one stosowane w sklepie, który korzysta ze starszej wersji.
 - **Program HQ nie jest zaktualizowany, ale aplikacje Commerce Scale Unit i POS są zaktualizowane (N+1).** Ponieważ zaktualizowany aparat kalkulacji cen w aplikacji Commerce Scale Unit może obsługiwać starsze kody rabatów podczas obliczania cen, aktualizacja nie powinna mieć żadnego funkcjonalnego wpływu w tym scenariuszu.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,13 +2,16 @@
 title: Raporty cen detalicznych
 description: Ten temat zawiera omówienie funkcji raportu cen, która pozwala na wyświetlanie nadchodzące zmian cen dla produktów w asortymencie.
 author: shajain
+manager: AnnBe
 ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 16181
 ms.assetid: b1b57734-1406-4ed6-8e28-21c705ee17e2
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2019-01-18
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 7fa2710d64d632c6e4ef376528aff8316b02a380ce7e2a976d53a3dd39375fa7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 91c0a96abdd7df9e85e63ca6b1b47a57f3f401eb
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767273"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414816"
 ---
 # <a name="retail-price-reports"></a>Raporty cen detalicznych
 
@@ -41,6 +44,3 @@ Aby włączyć raport cen, parametr **Włącz raport cen w sklepie** musi być w
 | Wyświetl produkty ze zmianami cen | Ustawienie **Tak** spowoduje wyświetlanie cen tylko dla tych dat, w których cena została zmieniona. Cena dla *jednego dnia przed* wybraną **Datą Od** zawsze będzie wyświetlana, tak aby kierownik sklepu mógł łatwo zidentyfikować produkty, których ceny nie zmieniły się przez cały wybrany okres, i mógł również łatwo wyświetlić bieżącą cenę. |
 
 Po wygenerowaniu raportu można pobrać plik programu Excel dla wszelkich dodatkowych potrzeb filtrowania. Raport cen może również służyć do sprawdzania historycznych cen produktów dla dat z przeszłości.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

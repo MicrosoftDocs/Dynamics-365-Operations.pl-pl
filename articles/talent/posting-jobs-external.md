@@ -102,6 +102,3 @@ Jeśli masz problemy z opublikowaniem oferty pracy na Broadbean, wypróbuj poni�
 [Tworzenie, zatwierdzanie i publikowanie funkcji w aplikacji Attract](./creating-jobs-attract.md)
 
 [Włącz integrację z aplikacją Broadbean w Microsoft Dynamics 365 Talent - Attract](./attract-admin-job-board-settings.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

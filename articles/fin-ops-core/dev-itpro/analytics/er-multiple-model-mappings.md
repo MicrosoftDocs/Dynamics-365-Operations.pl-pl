@@ -2,9 +2,11 @@
 title: Zarządzanie wieloma mapowaniami pochodnymi dla pojedynczego poziomu głównego modelu
 description: W tym temacie wyjaśniono, jak zarządzać kilkoma mapowaniami pochodnymi skonfigurowanymi dla pojedynczego poziomu głównego modelu.
 author: NickSelin
+manager: AnnBe
 ms.date: 01/04/2021
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERModelMappingTable
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 10363371713bd5a882b41900249e7061afc577ba6473fdb3356a822c8e48f8f3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3116fe98f499637b3bc7f243ed1b5094853caa7e
+ms.sourcegitcommit: 7cfe8931dd454e811a691f5118a4ecae7ba4b478
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743294"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "4826116"
 ---
 # <a name="manage-several-derived-mappings-for-a-single-model-root"></a>Zarządzanie wieloma mapowaniami pochodnymi dla pojedynczego poziomu głównego modelu
 
@@ -55,7 +57,7 @@ Aby dodać standardowe konfiguracje modułu ER do bieżącego wystąpienia aplik
 2. WNa stronie **Konfiguracje lokalizacji** w sekcji **Konfiguracje** wybierz kafelek **Konfigracje raportowanias**.
 3. Na stronie **Konfiguracje** w drzewie konfiguracji w panelu po lewej wybierz pozycję **Model faktury**.
 
-    ![Przeglądanie zaimportowane konfiguracje na stronie Konfiguracje.](./media/er-multiple-model-mappings-image1.png)
+    ![Przeglądanie zaimportowane konfiguracje na stronie Konfiguracje](./media/er-multiple-model-mappings-image1.png)
 
 4. Przejrzyj format **faktury niezależnej (Excel)**:
 
@@ -66,7 +68,7 @@ Aby dodać standardowe konfiguracje modułu ER do bieżącego wystąpienia aplik
     
        Bieżący format ER jest skonfigurowany do używania definicji głównej **InvoiceCustomer** **modelu faktury**. Po uruchomieniu tego formatu i wywołaniu źródła danych **Model** mapowanie modelu skonfigurowane dla definicji głównej **InvoiceCustomer** będzie używane do uzyskiwania dostępu do danych aplikacji i wypełniania modelu danych.
 
-        ![Przeglądanie źródła danych modelu na stronie projektanta formatów.](./media/er-multiple-model-mappings-image2.png)
+        ![Przeglądanie źródła danych modelu na stronie projektanta formatów](./media/er-multiple-model-mappings-image2.png)
 
     6. Zamknij stronę **Projektowanie formuły**.
 
@@ -79,7 +81,7 @@ Aby dodać standardowe konfiguracje modułu ER do bieżącego wystąpienia aplik
         + Mapowanie modelu **faktury dla odbiorcy** jest skonfigurowane dla definicji głównej **InvoiceCustomer** **modelu faktury**. Dlatego podczas uruchamiania formatu ER **Faktura niezależna (Excel)** można wybrać mapowanie modelu **Faktura dla odbiorcy** dotyczące tej konfiguracji ER, aby uzyskać dostęp do danych aplikacji i wypełnić model danych.
         + Mapowanie modelu **Faktura projektu** jest skonfigurowane dla definicji głównej **InvoiceProject** **modelu faktury**. Dlatego podczas uruchamiania formatu ER **Faktura projektu (Excel)** można wybrać mapowanie modelu **Faktura projektu** dotyczące tej konfiguracji ER, aby uzyskać dostęp do danych aplikacji i wypełnić model danych.
 
-        ![Mapowanie modelu faktury na stronie Mapowanie modelu do źródła danych.](./media/er-multiple-model-mappings-image3.png)
+        ![Mapowanie modelu faktury na stronie Mapowanie modelu do źródła danych](./media/er-multiple-model-mappings-image3.png)
 
     4. Zamknij stronę **Mapowanie modelu do źródła danych**.
     5. Na skróconej karcie **Wersje** wybierz pozycję **Usuń**, aby usunąć wszystkie wersje tej konfiguracji ER nowsze niż wersja 240.175.
@@ -90,7 +92,7 @@ Aby dodać standardowe konfiguracje modułu ER do bieżącego wystąpienia aplik
     2. W okienku akcji wybierz opcję **Projektant**.
     3. Na stronie **mapowania modelu do źródła danych** zauważ, że bieżąca konfiguracja mapowania modelu ER zawiera mapowanie modelu **InvoiceProject**, a to mapowanie modelu jest skonfigurowane dla definicji głównej **InvoiceProject** dla **modelu faktury**. Podczas uruchamiania formatu ER **Faktura projektu (Excel)** wybierz mapowanie modelu **InvoiceProject** dotyczące tej konfiguracji ER, aby uzyskać dostęp do danych aplikacji i wypełnić model danych.
 
-        ![Mapowanie modelu faktury projektu na stronie Mapowanie modelu do źródła danych.](./media/er-multiple-model-mappings-image4.png)
+        ![Mapowanie modelu faktury projektu na stronie Mapowanie modelu do źródła danych](./media/er-multiple-model-mappings-image4.png)
 
     4. Zamknij stronę **Mapowanie modelu do źródła danych**.
     5. Na skróconej karcie **Wersje** wybierz pozycję **Usuń**, aby usunąć wszystkie wersje tej konfiguracji ER nowsze niż wersja 226.35.
@@ -115,7 +117,7 @@ W tej sekcji opisano sposób [dostosowywania](er-quick-start3-customize-report.m
 
 7. W okienku akcji wybierz opcję **Projektant**, aby przejrzeć mapowania modeli tej konfiguracji.
 
-    ![Przeglądanie mapowań modelu faktury na stronie Mapowanie modelu do źródła danych.](./media/er-multiple-model-mappings-image5.png)
+    ![Przeglądanie mapowań modelu faktury na stronie Mapowanie modelu do źródła danych](./media/er-multiple-model-mappings-image5.png)
 
     > [!TIP]
     > Aby skonfigurować logikę niestandardową, można w projektancie otworzyć dowolne składniki mapowania modelu ER dla tej konfiguracji ER. Aby uzyskać więcej informacji, zobacz temat [Dostosowywanie konfiguracji mapowania modelu](er-quick-start3-customize-report.md#customize-the-model-mapping-configuration).
@@ -126,7 +128,7 @@ Masz teraz konfiguracje **Mapowanie modelu faktury** i **Mapowanie modelu faktur
  
 > Istnieje więcej niż jedno mapowanie modelu dla modelu danych „\<model name\> (\<root descriptor\>)” w konfiguracjach \<configuration names separated by commas\>. Ustaw jedną z konfiguracji jako domyślną.
 
-![Otwieranie formatu do edycji na stronie Konfiguracje.](./media/er-multiple-model-mappings-image6.gif)
+![Otwieranie formatu do edycji na stronie Konfiguracje](./media/er-multiple-model-mappings-image6.gif)
 
 ### <a name="customize-the-project-invoice-model-mapping-rdp-configuration"></a>Dostosowywanie konfiguracji mapowania modelu faktury projektu (RDP)
 
@@ -138,7 +140,7 @@ Masz teraz konfiguracje **Mapowanie modelu faktury** i **Mapowanie modelu faktur
 6. W przypadku konfiguracji **Mapowanie modelu faktury projektu, Litware**, która jest aktualnie wybrana w drzewie konfiguracji, ustaw opcję **Uruchom w wersji roboczej** na **Tak**.
 7. W okienku akcji wybierz opcję **Projektant**, aby przejrzeć mapowania modeli tej konfiguracji.
 
-    ![Przeglądanie dostosowanych mapowań modelu faktury projektu na stronie Mapowanie modelu do źródła danych.](./media/er-multiple-model-mappings-image7.png)
+    ![Przeglądanie dostosowanych mapowań modelu faktury projektu na stronie Mapowanie modelu do źródła danych](./media/er-multiple-model-mappings-image7.png)
 
 8. Zamknij stronę **Mapowanie modelu do źródła danych**.
 
@@ -149,7 +151,7 @@ Masz teraz konfiguracje **Mapowanie modelu faktury**, **Mapowanie modelu faktury
 1. Na stronie **Konfiguracje** w drzewie konfiguracji w panelu po lewej wybierz pozycję **Mapowanie modelu faktury, Litware**.
 2. Ustaw opcję **domyślnego mapowania modelu** jako **Tak**.
 
-    ![Ustawianie mapowania modelu jako domyślnego mapowania modelu na stronie Konfiguracje.](./media/er-multiple-model-mappings-image8.png)
+    ![Ustawianie mapowania modelu jako domyślnego mapowania modelu na stronie Konfiguracje](./media/er-multiple-model-mappings-image8.png)
 
     Z powodu tego ustawienia mapowanie modelu **Kopia faktury dla odbiorcy** jest używane podczas uruchamiania **faktury niezależnej (Excel)** lub podczas jej edytowania lub weryfikowania. Mapowanie modelu **Faktura dla klienta** z konfiguracji **Mapowanie modelu faktury** jest ignorowane.
 
@@ -167,7 +169,7 @@ Masz teraz konfiguracje **Mapowanie modelu faktury**, **Mapowanie modelu faktury
 5. Na stronie **mapowania modelu do źródła danych** wybierz pozycję **Edytuj**, aby w razie potrzeby edytować stronę.
 6. Wybierz mapowanie modelu **Kopia faktury projektu**, a następnie zaznacz pole wyboru **Usunięte**.
 
-    ![Ustawianie mapowania modelu jako wirtualnie usuniętego na stronie mapowania modelu do źródła danych.](./media/er-multiple-model-mappings-image9.png)
+    ![Ustawianie mapowania modelu jako wirtualnie usuniętego na stronie mapowania modelu do źródła danych](./media/er-multiple-model-mappings-image9.png)
 
     Z powodu tego ustawienia konfiguracja **Mapowanie modelu faktury, Litware** będzie traktowana tak, jakby nie zawierała mapowania modelu dla definicji głównej **InvoiceProject**. Mapowanie modelu **Kopia InvoiceProject** jest wydawane domyślnie. Konfiguracja **Mapowanie modelu faktury projektu, Litware**, która zawiera to mapowanie modelu, jest oznaczana jako konfiguracja domyślna. Ponieważ jest ona oznaczona jako domyślna, ma wyższy priorytet niż mapowanie modelu **InvoiceProject** z konfiguracji **Mapowanie modelu faktury projektu (RDP)**.
 
@@ -180,6 +182,3 @@ Mapowanie modelu **Kopia faktury projektu** konfiguracji **Mapowanie modelu fakt
 - [Zarządzanie mapowaniem modelu modułu Raportowanie elektroniczne w oddzielnych konfiguracjach modułu Raportowanie elektroniczne](./tasks/er-manage-model-mapping-configurations-july-2017.md)
 - [Konfigurowanie mapowań modelu raportowania elektronicznego w zależności od kraju](er-country-dependent-model-mapping.md)
 - [Zmiany interfejsu API struktury raportowania elektronicznego](er-apis-app10-0-11.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

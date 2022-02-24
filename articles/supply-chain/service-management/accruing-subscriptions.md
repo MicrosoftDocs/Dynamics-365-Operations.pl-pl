@@ -1,10 +1,12 @@
 ---
 title: Naliczanie subskrypcji
 description: W przypadku subskrypcji serwisu należy ręcznie naliczać przychód w okresach następujących po dacie zafakturowania transakcji opłaty.
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMASubscriptionGroup
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3d17737c415f6204359dae3ea4b2a0cb4ebb5d65
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f6d0d6c25cc8a19f5ebea3477cd2c957876752fd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580487"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966087"
 ---
 # <a name="accruing-subscriptions"></a>Naliczanie subskrypcji 
 
@@ -41,7 +43,7 @@ Jeśli zapiszesz zafakturowane kwoty subskrypcji po stronie kredytowej (uznasz j
 
   - Naliczone kwoty można wycofać na dzień zaksięgowania faktury korygującej lub na pierwotny dzień zaksięgowania naliczenia.
 
-Aby uzyskać więcej informacji, zobacz temat [Parametry subskrypcji (formularz)](/dynamicsax-2012//subscription-parameters-form).
+Aby uzyskać więcej informacji, zobacz temat [Parametry subskrypcji (formularz)](https://technet.microsoft.com/library/aa619615.aspx).
 
 ## <a name="setup-requirements"></a>Skonfiguruj wymagania
 
@@ -65,7 +67,7 @@ Aby można było naliczać przychody z subskrypcji, musi być zaznaczone pole wy
 
 ## <a name="enable-revenue-accrual-on-a-subscription-group"></a>Włączanie naliczania przychodu w grupie subskrypcji
 
-Kliknij kolejno opcje **Zarządzanie serwisem** \> **Ustawienia** \> **Subskrypcje serwisowe** \> **Grupy subskrypcji**.
+1.  Kliknij kolejno opcje **Zarządzanie serwisem** \> **Ustawienia** \> **Subskrypcje serwisowe** \> **Grupy subskrypcji**.
 
 ## <a name="periods"></a>Okresy
 
@@ -75,8 +77,8 @@ W następującej tabeli pokazano, które okresy naliczania można skonfigurować
 
 <table>
 <colgroup>
-<col />
-<col />
+<col style="width: 50%" />
+<col style="width: 50%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -149,6 +151,3 @@ Można określić liczbę transakcji finansowych, które będą tworzone podczas
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

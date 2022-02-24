@@ -2,9 +2,11 @@
 title: Równoległe pokazywanie stron przy użyciu funkcji Otwórz w nowym oknie
 description: Ten artykuł zawiera opis sposobu wyświetlania stron obok siebie.
 author: aneesmsft
+manager: AnnBe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,19 +16,16 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a4c8086d511892f8965dfefca2789742a006f63f
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 35ade352edf31fe895a9b9118a8ad7d5fe6c0bde
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068066"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798410"
 ---
 # <a name="show-pages-side-by-side-using-the-open-in-new-window-feature"></a>Równoległe pokazywanie stron przy użyciu funkcji Otwórz w nowym oknie
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Ten artykuł zawiera opis sposobu wyświetlania stron obok siebie.
 
@@ -49,6 +48,3 @@ Przed rozpoczęciem korzystania z funkcji **Otwórz w nowym oknie** należy tak 
 Funkcja **Otwórz w nowym oknie** jest dostępna tylko, gdy więcej niż jedna strona jest otwarta w oknie. Ponadto wyskakujące okienko zostanie automatycznie zamknięte, gdy nie ma więcej otwartych stron (tj. gdy zamkniesz ostatnią stronę w tym oknie). System zamyka również otwarte strony po przejściu do innego obszaru w aplikacji. W związku z tym jeśli masz otwarte wyskakujące okienko i przejdziesz do innego obszaru w aplikacji, wyskakujące okienka są automatycznie zamknięte, ponieważ system zamknął strony w tych oknach.
 
 Górny pasek w wyskakujących okienkach wyświetlają informację o firmie, w której strona została otwarta, i jest tylko do odczytu. Wyskakujące okienko bazuje również na głównym oknie przeglądarki. W przypadku zamknięcia lub odświeżana okna głównego, wszystkie wyskakujące okienka stają się tylko do odczytu. Jeśli tak się stanie, nadal można wyświetlić informacje w tych oknach, ale dane nie są interaktywne.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,13 +2,16 @@
 title: Wypisz się ze spersonalizowanych rekomendacji produktów
 description: W tym temacie wyjaśniono, jak można pozwolić klientom zrezygnować z otrzymywania spersonalizowanych rekomendacji w firmie Microsoft Dynamics 365 Commerce.
 author: bebeale
+manager: AnnBe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,18 +19,20 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f634e39fe8ca7ffecfd1952933cb82e1bfe7d5a8eec28a61e1d78d21847f95f6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6a64b45e1326673dd84c3c705491c9c100cdd069
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772944"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414913"
 ---
-# <a name="opt-out-of-personalized-recommendations"></a>Rezygnowanie z rekomendacji spersonalizowanych
+# <a name="opt-out-of-personalized-recommendations"></a>Wypisz się ze spersonalizowanych rekomendacji produktów
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie wyjaśniono, jak można pozwolić klientom zrezygnować z otrzymywania spersonalizowanych rekomendacji w firmie Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Omówienie
 
 Podczas tworzenia konta nowi odbiorcy są automatycznie konfigurowani w taki sposób, aby otrzymywać spersonalizowane rekomendacje. Jednak Dynamics 365 Commerce oferuje różne sposoby, aby sprzedawcy mogli zrezygnować z otrzymywania tych zaleceń i ograniczyć przetwarzanie ich danych osobowych. Użytkownicy uwierzytelnieni, którzy zrezygnują z otrzymywania spersonalizowanych rekomendacji, nie będą widzieć już tych spersonalizowanych list. Ponadto wszystkie dane osobowe zbierane w celu personalizacji zostaną usunięte z spersonalizowanych modeli rekomendacji.
 
@@ -44,11 +49,11 @@ W przypadku zarządzania kontami w module zaplecza Commerce, sprzedawcy mogą zr
 1. Na stronie głównej zaplecza wyszukaj **wszystkich odbiorców**.
 1. Wyszukaj i wybierz odbiorcę, a następnie wybierz skróconą kartę **Sieć sprzedaży**.
 
-    ![Skrócona karta sieci sprzedaży.](./media/Disablepersonalizationpart1.png)
+    ![Skrócona karta sieci sprzedaży](./media/Disablepersonalizationpart1.png)
 
 1. W obszarze **prywatność** ustaw opcję **Wyłącz personalizację** na **tak**.
 
-    ![Ustawienia prywatności.](./media/Disablepersonalizationpart2.png)
+    ![Ustawienia prywatności](./media/Disablepersonalizationpart2.png)
 
 1. Wybierz przycisk **Zapisz** i zamknij stronę.
 
@@ -99,6 +104,3 @@ Poniższy przykład przedstawia sposób, w jaki sprzedawca może wykonać to zad
 [Tworzenie rekomendacji z danymi demonstracyjnymi](product-recommendations-demo-data.md)
 
 [Rekomendacje produktów — często zadawane pytania](faq-recommendations.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

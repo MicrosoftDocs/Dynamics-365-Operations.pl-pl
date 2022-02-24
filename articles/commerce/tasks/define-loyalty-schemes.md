@@ -2,23 +2,26 @@
 title: Definiowanie schematów lojalnościowych
 description: Ta procedura zawiera instruktaż definiowania schematu lojalnościowego.
 author: jashanno
+manager: AnnBe
 ms.date: 11/14/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Operations, Retail
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3909213aaefa3a63fedfc90e6c02ef89b893b16ff5841bf10249867d406c894c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2bec8653c05d7684202c0e63d049ddb517e12834
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738655"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414982"
 ---
 # <a name="define-loyalty-schemes"></a>Definiowanie schematów lojalnościowych
 
@@ -67,6 +70,3 @@ Ta procedura zawiera instruktaż definiowania schematu lojalnościowego. Schemat
 27. Kliknij przycisk Zapisz.
     * Po każdej modyfikacji kanałów w schemacie lojalnościowym należy uruchomić funkcję Przetwarzanie programów lojalnościowych. W ten sposób kanały będą używały zaktualizowanych schematów lojalnościowych.  
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

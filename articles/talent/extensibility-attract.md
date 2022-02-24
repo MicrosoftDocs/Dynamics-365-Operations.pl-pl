@@ -91,6 +91,3 @@ Działanie Treści internetowe (iframe) pozwala osadzić samodzielnie zbudowane 
 
 > [!NOTE]
 > Działanie Treści internetowe jest dostępne tylko po zainstalowaniu dodatku kompleksowej obsługi rekrutacji.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

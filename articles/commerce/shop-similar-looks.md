@@ -2,13 +2,16 @@
 title: Włącz rekomendacje „Kup podobne”
 description: W tym temacie opisano sposób włączenia zaleceń dotyczących produktu „kup podobne” w rozwiązaniu Microsoft Dynamics 365 Commerce.
 author: bebeale
+manager: AnnBe
 ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,18 +19,20 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: e70365be8484d71ef9e0e9823b0a4406b0fd2761439780cafc30e1284bda1f20
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: da957850072e233a41a042d5857f81ddbf178f7a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722007"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415014"
 ---
-# <a name="enable-shop-similar-looks-recommendations"></a>Włączanie rekomendacji dotyczących „kupowania podobnie wyglądających produktów”
+# <a name="enable-shop-similar-looks-recommendations"></a>Włącz rekomendacje „Kup podobne”
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano sposób włączenia zaleceń dotyczących produktu „kup podobne” w rozwiązaniu Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Omówienie
 
 Funkcja rekomendacji „kup podobne” w Dynamics 365 Commerce wykorzystuje moc sztucznej inteligencji i uczenia maszynowego (AI-ML) do dostarczania klientom rekomendacji dotyczących wizualnie podobnych produktów. Udostępniając rekomendacje „kupuj podobne” dla wszystkich kanałów sprzedaży detalicznej w usłudze Commerce, sprzedawcy mogą zwiększyć satysfakcję klientów, pomagając klientom łatwo znaleźć to, czego szukają.
 
@@ -68,7 +73,7 @@ Aby włączyć funkcję rekomendacji „Kup podobne” w centrali Commerce, wyko
 
 Na poniższej ilustracji przedstawiono funkcję **Kup podobne** na stronie **Zarządzanie funkcjami** w module Commerce Headquarter.
 
-![Funkcja Sklep podobny wygląda na stronie zarządzania funkcjami w siedzibie Commerce.](./media/enableshopsimilarlooks.png)
+![Funkcja Sklep podobny wygląda na stronie zarządzania funkcjami w siedzibie Commerce](./media/enableshopsimilarlooks.png)
 
 Po zakończeniu powyższych zadań terminale POS są automatycznie rozszerzane za pomocą panelu **Kup podobne produkty**. Po wybraniu opcji **Zobacz więcej**, użytkownicy terminalu w punkcie sprzedaży mogą zostać uwzględnieni w dedykowanej stronie „kup podobne”, którą można później przefiltrować.
 
@@ -88,7 +93,7 @@ Aby dodać przycisk **Kup podobne** do stron PDP za pomocą narzędzia do tworze
 
 Na poniższej ilustracji przedstawiono pole wyboru **Włącz łącze zakup podobne** i **Kup podobne** na przykładowej PDP w konstruktorze witryn.
 
-![Włącz pole wyboru Kupuj podobne i przycisk Kupuj podobne na PDP w narzędziu do tworzenia witryn.](./media/SSLecomtooling.png)
+![Włącz pole wyboru Kupuj podobne i przycisk Kupuj podobne na PDP w narzędziu do tworzenia witryn](./media/SSLecomtooling.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
@@ -111,6 +116,3 @@ Na poniższej ilustracji przedstawiono pole wyboru **Włącz łącze zakup podob
 [Tworzenie rekomendacji z danymi demonstracyjnymi](product-recommendations-demo-data.md)
 
 [Rekomendacje produktów — często zadawane pytania](faq-recommendations.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -51,6 +51,3 @@ Chcesz dotrzeć z informacją o wakacie do jak największej liczby kandydatów p
 
 > [!NOTE]
 > Microsoft i Attract nie uczestniczą w tworzeniu ani przechowywaniu tych wartości. Użytkownik ponosi odpowiedzialność za zachowanie aktualności danych w systemie Attract oraz współpracę z Broadbean w celu rozwiązywania wszelkich problemów związanych z jego poświadczeniami.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: Konfigurowanie grup księgowania dla podatku
 description: Podatek jest obliczany i księgowany na kontach głównych określonych w grupach księgowania.
 author: twheeloc
+manager: AnnBe
 ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxAccountGroup
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e779887a650f4ca79ea4c9f0d69a5abb5533ac69abab38e1fae38e745e4157bd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6cc96cbdb11f24d727bddfa5fd4aaa579537802a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754177"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968461"
 ---
 # <a name="set-up-ledger-posting-groups-for-sales-tax"></a>Konfigurowanie grup księgowania dla podatku
 
@@ -39,6 +41,3 @@ Podatek jest obliczany i księgowany na kontach głównych określonych w grupac
 11. W polu **Rabat gotówkowy odbiorcy** wybierz konto główne do księgowania rabatów gotówkowych dla **kodów podatków** skojarzonych z tą **grupą księgowania**. To ustawienie jest opcjonalne i jeśli konto nie zostanie wprowadzone, będzie używane konto główne z **kodów rabatów gotówkowych**. Może być korzystne używanie różnych kont dla poszczególnych **grup księgowania**, jeśli w oknie **Grupy podatków** zaznaczono opcję Cofnij podatek od rabatu gotówkowego.  
 12. Kliknij przycisk **Zapisz**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

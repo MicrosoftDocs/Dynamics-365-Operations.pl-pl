@@ -86,6 +86,3 @@ W chwili obecnej w tym tygodniu dane adresowe są synchronizowane z Common Data 
 ### <a name="print-performance-reviews"></a>Drukowanie przeglądów wydajności
 
 Zapoznaj się z [Drukowanie przeglądów wydajności](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/print-performance-reviews) w Dynamics 365: plan 2. fali publikacji 2019.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

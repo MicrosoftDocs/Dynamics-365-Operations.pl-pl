@@ -1,45 +1,78 @@
 ---
-title: Wewnętrzne składniki majątku do obsługi
-description: W tym temacie opisano, jak można korzystać z usług Microsoft Dynamics 365 Field Service do obsługi środków trwałych odbiorcy i własnych.
+title: Zasoby wewnętrzne do obsługi
+description: W tym temacie opisano sposób korzystania z usługi Microsoft Dynamics 365 Field Service w celu obsługi zarówno składników majątku odbiorcy, jak i wewnętrznych składników majątku.
 author: RamaKrishnamoorthy
+manager: AnnBe
 ms.date: 01/27/2020
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
+ms.search.industry: ''
 ms.author: ramasri
+ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 8048a99951eea3fbae34e56c1b444c75ad3d199d
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: ebc9c1fbb7c0738af13b2a16aafeeb03fa6aaed0
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781423"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684012"
 ---
-# <a name="in-house-assets-for-servicing"></a>Wewnętrzne składniki majątku do obsługi
+# <a name="in-house-assets-for-servicing"></a>Zasoby wewnętrzne do obsługi
 
 [!include [banner](../../includes/banner.md)]
 
+
+
 Usługa Microsoft Dynamics 365 Field Service jest przeznaczona do obsługi składników majątku odbiorców. Zarządzanie składnikami majątku dla Dynamics 365 Supply Chain Management jest przeznaczone do obsługi wewnętrznych składników majątku. Integracja tych dwóch aplikacji umożliwia korzystanie z usługi Field Service w celu obsługi zarówno składników majątku odbiorców, jak i wewnętrznych. Można również sklasyfikować składniki majątku, opierając się na lokalizacji funkcjonalnej lub hierarchii, oraz śledzić obsługę na poziomie szczegółowości.
 
-Aby uzyskać więcej informacji, zajrzyj do [integracji Dynamics 365 Field Service i Supply Chain Management](/dynamics365/field-service/supply-chain-field-service-integration).
+Aby uzyskać więcej informacji, zajrzyj do [integracji Dynamics 365 Field Service i Supply Chain Management](https://docs.microsoft.com/dynamics365/field-service/supply-chain-field-service-integration).
 
 ## <a name="templates"></a>Szablony
 
 Moduł Wewnętrzne składniki majątku zawiera podstawowe mapowania tabel, które działają wspólnie podczas interakcji z danymi, jak pokazano w poniższej tabeli.
 
-| Aplikacje Finance and Operations | Aplikacje Customer Engagement | opis |
+| Aplikacje Finance and Operations | Aplikacje oparte na modelu w systemie Dynamics 365 | opis |
 |-----------------------------|-----------------------------------|-------------|
-[Modele cyklu życia składnika majątku zarządzania składnikami majątku](mapping-reference.md#119) | msdyn_assetlifecyclemodels | |
-[Stany cyklu życia składnika majątku zarządzania składnikami majątku](mapping-reference.md#120) | msdyn_assetlifecyclestates | |
-[Typy składników majątku zarządzania składnikami majątku](mapping-reference.md#124) | msdyn_customerassetcategories | |
-[Składniki majątku zarządzania składnikami majątku](mapping-reference.md#125) | msdyn_customerassets | |
-[Modele cyklu życia lokalizacji czynności konserwacyjnych zarządzania składnikami majątku](mapping-reference.md#134) | msdyn_functionallocationlifecyclemodels | |
-[Stany cyklu życia lokalizacji czynności konserwacyjnych zarządzania składnikami majątku](mapping-reference.md#135) | msdyn_functionallocationlifecyclestates | |
-[Typy lokalizacji czynności konserwacyjnych zarządzania składnikami majątku](mapping-reference.md#137) | msdyn_functionallocationtypes | |
-[Lokalizacje czynności konserwacyjnych zarządzania składnikami majątku](mapping-reference.md#136) | msdyn_functionallocations | |
-[Producenci zarządzania składnikami majątku](mapping-reference.md#153) | msdyn_manufacturers | |
-[Modele zarządzania składnikami majątku](mapping-reference.md#154) | msdyn_models | |
-[Gwarancja zarządzania składnikami majątku](mapping-reference.md#209) | msdyn_warranties | |
+| Modele cyklu życia składnika majątku zarządzania składnikami majątku | msdyn\_assetlifecyclemodels | |
+| Stany cyklu życia składnika majątku zarządzania składnikami majątku | msdyn\_assetlifecyclestates | |
+| Składniki majątku zarządzania składnikami majątku | msdyn\_customerassets | |
+| Typy składników majątku zarządzania składnikami majątku | msdyn\_customerassetcategories | |
+| Modele cyklu życia lokalizacji czynności konserwacyjnych zarządzania składnikami majątku | msdyn\_functionallocationlifecyclemodels | |
+| Stany cyklu życia lokalizacji czynności konserwacyjnych zarządzania składnikami majątku | msdyn\_functionallocationlifecyclestates | |
+| Lokalizacje czynności konserwacyjnych zarządzania składnikami majątku | msdyn\_functionallocations | |
+| Typy lokalizacji czynności konserwacyjnych zarządzania składnikami majątku | msdyn\_functionallocationtypes | |
+| Producenci zarządzania składnikami majątku | msdyn\_manufacturers | |
+| Modele zarządzania składnikami majątku | msdyn\_models | |
+| Gwarancja zarządzania składnikami majątku | msdyn\_warranties | |
 
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+[!include [symbols](../../includes/dual-write-symbols.md)]
+
+[!include [lifecycle models](includes/AssetManagementAssetLifecycleModels-msdyn-assetlifecyclemodels.md)]
+
+[!include [lifecycle states](includes/AssetManagementAssetLifecycleStates-msdyn-assetlifecyclestates.md)]
+
+[!include [assets](includes/AssetManagementAssets-msdyn-customerassets.md)]
+
+[!include [asset types](includes/AssetManagementAssetTypes-msdyn-customerassetcategories.md)]
+
+[!include [functional location lifecycle models](includes/AssetManagementFunctionalLocationLifecycleModels-msdyn-functionallocationlifecyclemodels.md)]
+
+[!include [functional location lifecycle states](includes/AssetManagementFunctionalLocationLifecycleStates-msdyn-functionallocationlifecyclestates.md)]
+
+[!include [functional locations](includes/AssetManagementFunctionalLocations-msdyn-functionallocations.md)]
+
+[!include [functional location types](includes/AssetManagementFunctionalLocationTypes-msdyn-functionallocationtypes.md)]
+
+[!include [manufacturers](includes/AssetManagementManufacturers-msdyn-manufacturers.md)]
+
+[!include [models](includes/AssetManagementModels-msdyn-models.md)]
+
+[!include [warranty](includes/AssetManagementWarranty-msdyn-warranties.md)]

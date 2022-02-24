@@ -89,6 +89,3 @@ Możesz przesłać obraz logo swojej firmy i inne informacje w postaci nagłówk
     ![Dodawanie linków do polityki prywatności i warunków korzystania firmy w stopkach wiadomości e-mail.](./media/attract-admin-email-footer.png)
 
 4. Wybierz **Zapisz**, żeby zapisać ustawienia szablonu e-mail.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

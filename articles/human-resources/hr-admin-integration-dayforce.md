@@ -1,35 +1,33 @@
 ---
 title: Konfigurowanie integracji z rozwiązaniem Dayforce
-description: W tym temacie opisano krok po kroku sposób konfigurowania integracji między programami Microsoft Dynamics 365 Human Resources i Ceridian Dayforce.
-author: twheeloc
-ms.date: 08/19/2021
+description: Integracja między programami Microsoft Dynamics 365 Human Resources i Ceridian Dayforce opiera się na kilku krokach konfiguracji, które opisano w tym artykule. Aby można było przetwarzać sesję płatności, należy skonfigurować integrację w rozwiązaniach Human Resources i Dayforce.
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: PersonnelIntegrationConfiguration
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7e2043e75aa647e21f3e0816247dcf651be64730
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: c66ec772ea66732e042f50081f04a6569852f211
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067083"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419991"
 ---
 # <a name="configure-integration-with-dayforce"></a>Konfigurowanie integracji z rozwiązaniem Dayforce
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Integracja między programami Microsoft Dynamics 365 Human Resources i Ceridian Dayforce opiera się na kilku krokach konfiguracji, które opisano w tym temacie. Aby można było przetwarzać sesję płatności, należy skonfigurować integrację w rozwiązaniach Human Resources i Dayforce.
+Integracja między programami Microsoft Dynamics 365 Human Resources i Ceridian Dayforce opiera się na kilku krokach konfiguracji, które opisano w tym artykule. Aby można było przetwarzać sesję płatności, należy skonfigurować integrację w rozwiązaniach Human Resources i Dayforce.
 
 Jeśli korzystasz z usługi takiej jak Dayforce do realizowania sesji płatności, należy włączyć integrację w aplikacji Human Resources. Integracja wymaga określonych danych z programu Human Resources. W związku z tym należy sprawdzić, czy dane mapowane do systemu Dayforce są skonfigurowano w aplikacji Human Resources w sposób zapewniający obsługę integracji. Integracja wykorzystuje następujące ogólne kategorie danych:
 
@@ -38,7 +36,7 @@ Jeśli korzystasz z usługi takiej jak Dayforce do realizowania sesji płatnośc
 - Dane listy płac, takie jak cykle kalkulacji płac, okresy kalkulacji płac i kody zarobków
 - Dane pracowników
 
-W tym temacie opisano czynności, które należy wykonać, aby uaktywnić integrację, oraz wyjaśniono typy danych i szczegóły konfiguracji wymagane przez integrację.
+W tym artykule opisano czynności, które należy wykonać, aby włączyć integrację. Objaśniono tu także typy danych i szczegóły konfiguracji, których wymaga integracja.
 
 ## <a name="enable-the-integration"></a>Włączanie integracji
 
@@ -53,10 +51,10 @@ Aby włączyć integrację w aplikacji Human Resources, wykonaj następujące kr
 
 Po włączeniu integracji następuje utworzenie pakietu i plików eksportu danych oraz ustawienie częstotliwości. W razie potrzeby można zmienić tę częstotliwość.
 
-Aby uzyskać więcej informacji o kontach magazynu w usłudze Azure i ciągach połączeń z usługą Azure Storage, zobacz następujące tematy poświęcone usłudze Azure:
+Aby uzyskać więcej informacji o kontach magazynu w usłudze Azure i ciągach połączeń z usługą Azure Storage, zobacz następujące artykuły poświęcone usłudze Azure:
 
-- [Konta magazynu w usłudze Azure — informacje](/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
-- [Konfigurowanie ciągów połączeń z usługą Azure Storage](/azure/storage/common/storage-configure-connection-string)
+- [Konta magazynu w usłudze Azure — informacje](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
+- [Konfigurowanie ciągów połączeń z usługą Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-configure-connection-string)
 
 ### <a name="technical-details-when-payroll-integration-is-enabled"></a>Dane techniczne, gdy integracja listy płac jest włączona
 
@@ -124,12 +122,12 @@ System Dayforce tworzy następujące potrącenia w oparciu o wpływ na listę p�
 | Tylko udział          | Jest tworzone potrącenie od pracodawcy.             |
 | Potrącenie i udział | Są tworzone potrącenia od pracownika i pracodawcy. |
 
-Aby uzyskać więcej informacji o sposobie definiowania programu świadczeń i zarządzania nim, zobacz następujące tematy:
+Aby uzyskać więcej informacji o sposobie definiowania programu świadczeń i zarządzania nim, zobacz następujące artykuły:
 
-- [Dostarczanie programu świadczeń dla pracowników](/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
-- [Tworzenie nowego świadczenia](/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
-- [Definiowanie zasad i reguł uprawnień do świadczenia](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
-- [Rejestrowanie i usuwanie świadczeń dla pracowników](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
+- [Dostarczanie programu świadczeń dla pracowników etatowych](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
+- [Utwórz nowe świadczenie](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
+- [Definiowanie zasad i reguł uprawnień do świadczenia](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
+- [Rejestrowanie i usuwanie świadczeń dla pracowników](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
 
 #### <a name="compensation"></a>Wynagrodzenie 
 
@@ -137,22 +135,22 @@ Zarządzanie wynagrodzeniami służy do kontrolowania wypłat podstawowego wynag
 
 Program Dayforce wykorzystuje informacje o wynagrodzeniach do obliczania godzinowej lub rocznej stawki pracownika. Określenie systemów stałych wynagrodzeń i konwersji stawek płac jest wymagane. Pracownicy muszą być skojarzeni z systemem stałych wynagrodzeń.
 
-Aby uzyskać więcej informacji o planach wynagrodzeń, zobacz następujące tematy:
+Aby uzyskać więcej informacji o planach wynagrodzeń, zobacz następujące artykuły:
 
-- [Tworzenie planów stałych wynagrodzeń](/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
-- [Tworzenie planów wynagrodzeń o zmiennej wysokości](/dynamics365/unified-operations/talent/create-variable-compensation-plans)
-- [Opracowywanie struktury i planu pensji/wynagrodzeń](/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
-- [Przetwarzanie wynagrodzenia](/dynamics365/unified-operations/talent/process-compensation)
-- [Definiowanie procesu związanego z wynagrodzeniem i obliczanie wyników](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
-- [Zarejestrowanie pracownika w systemie stałych wynagrodzeń](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
-- [Zarejestrowanie pracownika w systemie wynagrodzeń o zmiennej wysokości](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
+- [Tworzenie planów stałych wynagrodzeń](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
+- [Tworzenie planów wynagrodzeń o zmiennej wysokości](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-variable-compensation-plans)
+- [Opracowywanie struktury i planu pensji/wynagrodzeń](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
+- [Przetwarzanie wynagrodzenia](https://docs.microsoft.com/dynamics365/unified-operations/talent/process-compensation)
+- [Definiowanie procesu związanego z wynagrodzeniem i obliczanie wyników](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
+- [Zarejestrowanie pracownika w systemie stałych wynagrodzeń](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
+- [Zarejestrowanie pracownika w systemie wynagrodzeń o zmiennej wysokości](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
 
 #### <a name="jobs"></a>Funkcje 
 
-Funkcja to zbiór zadań i obowiązków, które są wymagane od osoby wykonującej funkcję. Aby uzyskać więcej informacji, zobacz następujące tematy:
+Funkcja to zbiór zadań i obowiązków, które są wymagane od osoby wykonującej funkcję. Aby uzyskać więcej informacji, zobacz następujące artykuły:
 
-- [Konfigurowanie składników funkcji](/dynamics365/unified-operations/talent/create-job)
-- [Definiowanie nowych zadań](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
+- [Konfigurowanie składników funkcji](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-job)
+- [Definiowanie nowych funkcji](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
 
 ##### <a name="positions"></a>Pozycje
 
@@ -174,19 +172,19 @@ Podczas konfigurowania stanowisk pamiętaj o następujących danych i konfigurac
 
 Jeśli z tą samą funkcją jest skojarzonych wiele stanowisk w tym samym dziale, są one konsolidowane w jedno stanowisko w systemie Dayforce.
 
-Aby uzyskać więcej informacji, zobacz następujące tematy:
+Aby uzyskać więcej informacji, zobacz następujące artykuły:
 
-- [Organizowanie pracowników za pomocą działów, funkcji i stanowisk](/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
-- [Konfigurowanie stanowisk](/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
+- [Organizowanie pracowników za pomocą działów, funkcji i stanowisk](https://docs.microsoft.com/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
+- [Konfigurowanie stanowisk](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
 
 #### <a name="departments"></a>Działy
 
 Dział to jednostka operacyjna należąca do kategorii lub obszaru funkcjonalnego organizacji. Dział jest odpowiedzialny za określony obszar organizacji, np. sprzedaż, księgowość lub zasoby ludzkie. Działy pozwalają tworzyć raporty dotyczące obszarów funkcyjnych. Działy mogą mieć odpowiedzialność zysków i strat.
 
-Aby uzyskać więcej informacji, zobacz następujące tematy:
+Aby uzyskać więcej informacji, zobacz następujące artykuły:
 
-- [Tworzenie działu i kojarzenie go z hierarchią działów](/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
-- [Definiowanie nowych działów](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
+- [Tworzenie działu i kojarzenie go z hierarchią działów](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
+- [Definiowanie nowych działów](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
 
 #### <a name="pay-cycles-and-pay-periods"></a>Cykle płac i okresy płac
 
@@ -678,6 +676,3 @@ Pracownicy mogą podać informacje z paszportów. Te informacje mają typ identy
 
 Pracownicy mogą zadeklarować wiele numerów identyfikacyjnych typu **Paszport**. Jednak tylko obecnie aktywny wpis paszportu jest integrowany z usługą Dayforce. Jeśli wszystkie wpisy paszportów wygasły, z systemem Dayforce zostanie zintegrowany ostatnio wystawiony paszport.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

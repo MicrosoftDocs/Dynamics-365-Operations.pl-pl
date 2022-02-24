@@ -2,24 +2,27 @@
 title: Moduł ikony koszyka
 description: W tym temacie opisano moduł ikony koszyka i opisano, jak dodać go do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 08/02/2021
+manager: annbe
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5cf86876ba03d510b03237c9c89a1fc069a73482b755a1d72227037c91439e86
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ebc5cfa490a4c8538fd081aced0844ed01d63a26
+ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735685"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "4415100"
 ---
 # <a name="cart-icon-module"></a>Moduł ikony koszyka
 
@@ -27,34 +30,20 @@ ms.locfileid: "6735685"
 
 W tym temacie opisano moduł ikony koszyka i opisano, jak dodać go do stron witryny w Microsoft Dynamics 365 Commerce.
 
+## <a name="overview"></a>Omówienie
+
 Moduł ikon koszyka reprezentuje koszyk w module nagłówka strony i pokazuje liczbę pozycji w koszyku. Moduł ikony koszyka wyświetla także podsumowanie koszyka (znane również jako mini wózek), gdy ikona wózka jest najechana kursorem. Mini koszyk zapewnia użytkownikowi podsumowanie pozycji w koszyku bez konieczności przechodzenia do strony koszyka. Ponadto pozwala również użytkownikowi przejść bezpośrednio do strony kasy, jeśli jest zadowolony z podsumowania. Zmniejsza to liczbę nawigacji na stronach i przyspiesza finalizację transakcji. 
+
+> [!NOTE]
+> Obsługa korzystania z modułu ikon koszyka w Dynamics 365 Commerce w wydaniu 10.0.11.
 
 Poniższy obraz pokazuje przykład modułu ikony koszyka, który wyświetla mini koszyk w nagłówku Fabrikam.
 
-![Przykład modułu na ikonie koszyka.](./media/ecommerce-Minicart.PNG)
+![Przykład modułu na ikonie koszyka](./media/ecommerce-Minicart.PNG)
 
 ## <a name="module-properties"></a>Właściwości modułu
 
-- **Wyświetlanie koszyka mini** — gdy ma wartość **True**, ta właściwość umożliwia wyświetlenie podsumowania koszyka (w postaci najmniejszego koszyka) po najechaniu myszą na koszyk. Ta funkcja jest obsługiwana tylko w przypadku portów widoku pulpitu.
-- **Zezwól na anonimowe przejście do kasy** – Kiedy ta właściwość jest ustawiona na **True**, mini koszyk pozwala użytkownikom, którzy nie są zalogowani na przejście do kasy, jako gość. Ta właściwość jest dostępna w wersji Commerce 10.0.21, jako część pakietu biblioteki modułów Commerce.
-- **Kolejność elementów** — ta właściwość kontroluje kolejność, w jakiej elementy są wyświetlane w mini koszyku. Po wybraniu opcji **Nowe elementy dodane do górnej części listy**, nowe produkty, które są dodawane do koszyka, pojawiają się u góry listy elementów mini koszyka. Po wybraniu domyślnej opcji **Nowe elementy dodane do dolnej części listy**, nowe produkty, które są dodawane do koszyka, pojawiają się na dole listy elementów mini koszyka. Ta właściwość jest dostępna w wersji Commerce 10.0.21, jako część pakietu biblioteki modułów Commerce.
-
-> [!IMPORTANT]
-> Właściwości **Zezwól na anonimowe przejście do kasy** i **Kolejność elementów** są dostępne od wersji Commerce w wersji 10.0.21. Wymagają pakietu biblioteki modułów Commerce w wersji 9.31.
-
-## <a name="module-properties-and-slots-in-the-adventure-works-theme"></a>Właściwości i gniazda modułu w motywie Adventure Works
-
-W motywie Adventure Works moduł ikon koszyka zawiera dwa dodatkowe miejsca na mini wózek. Gniazda te są uwzględniane jako rozszerzenie definicji modułu.
-
-- **Opróżnij promocje w koszyku** — w tym gnieździe jest zablokowany moduł zawartości. Gdy koszyk jest pusty, wyświetlany jest określony moduł blokowania zawartości. Modułu blokowania zawartości można używać w przypadku promocji, zawartości marketingowej i łączy do stron kategorii, aby ułatwić klientom kontynuowanie zakupów.
-- **Zawartość promocyjna** — tego gniazda można używać do awansów, takich jak „Bezpłatne wysyłki w przypadku zamówień $100” Moduły bloku treści, bloku tekstowego i listy obrazów mogą być używane w gnieździe zawartości promocyjnej.
-
-Poniższy obraz przedstawia przykład modułu ikony koszyka w motywie Adventure Works, który wyświetla zawartość promocyjną w minikoszyku.
-
-![Przykład modułu ikony koszyka w kompozycji Adventure Works](./media/AW_minicart.PNG)
-
-> [!IMPORTANT]
-> Gniazda motywów Adventure Works są dostępne od wersji Dynamics 365 Commerce 10.0.20.
+- **Wyświetlanie koszyka mini** — gdy ma wartość prawda, ta właściwość umożliwia wyświetlenie podsumowania koszyka (w postaci najminiego koszyka) po aktywowaniu ikony koszyka. Ta funkcja jest obsługiwana tylko w przypadku portów widoku pulpitu.
 
 ## <a name="add-a-cart-icon-module-to-a-page"></a>Dodawanie modułu ikonu koszyka do strony
 
@@ -77,6 +66,3 @@ Aby dodać moduł ikony koszyka, zobacz [Moduł nagłówka](author-header-module
 [Moduł szczegółów zamówienia](order-confirmation-module.md)
 
 [Moduł karty upominkowej](add-giftcard.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

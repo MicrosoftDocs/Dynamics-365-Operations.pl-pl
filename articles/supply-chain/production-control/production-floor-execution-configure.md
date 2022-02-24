@@ -2,27 +2,30 @@
 title: Konfigurowanie interfejsu wykonania hal produkcyjnych
 description: W tym temacie opisano sposób tworzenia jednej lub większej liczby konfiguracji dla interfejsu wykonywania pomieszczenia produkcyjnego. Po otwarciu interfejsu wykonania produkcji system automatycznie ładuje wybraną konfigurację i filtr zadania, które są właściwe dla przeglądarki i urządzenia. W konfiguracji ustawiane są zasady, które muszą być dostępne dla określonego użycia.
 author: johanhoffmann
+manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgProductionFloorExecutionConfiguration
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f852779d43beb3a43c6921a25d393ee00dff96d1
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: ff68761ce1cf2174be8ebb9732b9348439a53a32
+ms.sourcegitcommit: d24ebce50421f8656d23bb1e47cd636ad2e2ca0a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777968"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "4664303"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurowanie interfejsu wykonania hal produkcyjnych
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Pracownicy hali produkcyjnej używają interfejsu wykonywania hali produkcyjnej do rejestrowania swojej codziennej pracy, na przykład kiedy rozpoczynają pracę, zgłaszają opinie o zadaniach, rejestrują czynności pośrednie i zgłaszają nieobecności. Te rejestracje stanowią podstawę śledzenia postępu i kosztu zleceń produkcyjnych oraz obliczania podstawy wypłat dla pracowników.
 
@@ -39,47 +42,28 @@ Sam interfejs wykonywania hal produkcyjnych, a kilka opcjonalnych ustawień opis
 
 ### <a name="the-production-floor-execution-interface"></a>Interfejs wykonania hal produkcyjnych
 
-To jest główna funkcja opisana w tym temacie. Od wersji 10.0.21 Supply Chain Management version funkcja jest domyślnie włączona. Dodaje do systemu interfejs wykonawczy hali produkcyjnej. Aby ją włączyć, włącz następujące funkcje w [Zarządzaniu funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
-
+To jest główna funkcja opisana w tym temacie. Dodaje do systemu interfejs wykonawczy hali produkcyjnej. Aby ją włączyć, włącz następujące funkcje w [Zarządzaniu funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):  
 - Uruchomienie hali produkcyjnej
 
 ### <a name="generate-license-plates"></a>Generuj numery identyfikacyjne
 
 Te funkcje sprawiają, że funkcjonalność numeru identyfikacyjnego jest dostępna dla interfejsu uruchomienia hali produkcyjnej. Jeżeli chcesz z nich skorzystać, włącz następujące funkcje w module [zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (w tej kolejności):
 
-1. Numer identyfikacyjny do zgłoszenia jako gotowy dodany do urządzenia karty zadań (na podstawie wersji 10.0.21 Supply Chain Management, ta funkcja jest domyślnie włączona)
+1. Numer identyfikacyjny do zgłoszenia wyrobów gotowych został dodany do urządzenia karty zadań
 1. Włącz automatyczną generację numeru identyfikacyjnego podczas zgłaszania wyrobów gotowych w urządzeniu karty zadań
 
 ### <a name="print-labels"></a>Drukuj etykiety
 
 Te funkcje sprawiają, że funkcjonalność drukowania etykiet jest dostępna dla interfejsu uruchomienia hali produkcyjnej. Jeżeli chcesz z nich skorzystać, włącz następujące funkcje w module [zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (w tej kolejności):
 
-1. Numer identyfikacyjny do zgłoszenia jako gotowy dodany do urządzenia karty zadań (na podstawie wersji 10.0.21 Supply Chain Management, ta funkcja jest domyślnie włączona)
+1. Numer identyfikacyjny do zgłoszenia wyrobów gotowych został dodany do urządzenia karty zadań
 1. Drukowanie etykiety z menu Urządzenie karty zadań
 
 ### <a name="allow-locking-the-touch-screen"></a>Zezwalaj na blokowanie ekranu dotykowego
 
-Od wersji 10.0.21 Supply Chain Management version ta funkcja jest domyślnie włączona. Ta funkcja dodaje przycisk do interfejsu modułu uruchomienie hali produkcyjnej, który umożliwia pracownikom wypróbowanie ekranu dotykowego. Jeśli chcesz z niego skorzystać, upewnij się, że poniższa funkcja jest włączona w [Zarządzaniu funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Ta funkcja dodaje przycisk do interfejsu modułu uruchomienie hali produkcyjnej, który umożliwia pracownikom wypróbowanie ekranu dotykowego. Jeżeli chcesz z niej skorzystać, włącz następujące funkcje w [Zarządzaniu funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - Funkcja umożliwiająca blokowanie urządzenie karty zadań i terminalu karty zadań w celu ich wyczyszczenia
-
-### <a name="asset-management-functionality-for-the-production-floor-execution-interface"></a>Funkcje zarządzania zasobami dla interfejsu wykonania hali produkcyjnej
-
-Ta funkcja dodaje kartę Zarządzanie składnikami majątku do interfejsu wykonywania produkcji. Pracownicy mogą użyć tej karty, aby wybrać składnik majątku połączony z zasobem maszynowym, który jest w obrębie wybranego filtru listy zadań. Dla wybranego składnika majątku dla urządzenia pracownik może wyświetlić stan i kondycję składnika majątku z wartości liczników dla maksymalnie czterech wybranych liczników. Jeżeli chcesz skorzystać z tej funkcji, włącz następujące funkcje w [Zarządzaniu funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
-
-- Funkcje zarządzania zasobami dla interfejsu wykonania hali produkcyjnej
-
-### <a name="enable-job-search"></a>Włącz wyszukiwanie zadań
-
-Ta funkcja umożliwia dodanie pola wyszukiwania do listy zadań. Pracownicy mogą znaleźć konkretną pracę, wpisując jej ID lub znaleźć wszystkie prace dla konkretnego zlecenia, wpisując ID zlecenia. Pracownicy mogą wprowadzać identyfikator za pomocą klawiatury lub skanując kod kreskowy. Jeżeli chcesz z niej skorzystać, włącz następujące funkcje w [Zarządzaniu funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
-
-- Wyszukiwanie zadań dla interfejsu wykonania hal produkcyjnych
-
-### <a name="enable-reporting-on-co-products-and-by-products"></a>Włącz raportowanie dotyczące produktów towarzyszących i produktów ubocznych
-
-Ta funkcja umożliwia pracownikom raportowanie postępu w realizacji zamówień partii za pomocą interfejsu wykonywania hali produkcyjnej. Raportowanie to obejmuje raportowanie produktów towarzyszących i ubocznych. Aby używać tej funkcji, włącz następujące funkcje w module [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
-
-- Raport dotyczący produktów towarzyszących i ubocznych z interfejsu wykonania hal produkcyjnych
 
 ## <a name="work-with-production-floor-execution-configurations"></a>Praca z konfiguracjami wykonania hali produkcyjnej
 
@@ -90,8 +74,6 @@ Aby utworzyć i zarządzać konfiguracjami urządzeń, przejdź do **Kontrola pr
 
 Następnie skonfiguruj różne ustawienia dla wybranej konfiguracji urządzenia. Dostępne są następujące pola:
 
-- **Tylko wejścia i wyjścia** - dla tej opcji ustaw wartość *Tak*, aby utworzyć uproszczony interfejs, który zapewnia tylko funkcje rejestracji i wyrejestrowywania. Spowoduje to wyłączenie większości innych opcji na tej stronie. Aby można było włączyć tę opcję, należy usunąć wszystkie wiersze ze skróconej karty **Wybór kart**.
-- **Włącz wyszukiwanie** — ustaw tę opcję na wartość *Tak*, aby uwzględnić pole wyszukiwania na liście zadań. Pracownicy mogą znaleźć konkretną pracę, wpisując jej ID lub znaleźć wszystkie prace dla konkretnego zlecenia, wpisując ID zlecenia. Pracownicy mogą wprowadzać identyfikator za pomocą klawiatury lub skanując kod kreskowy.
 - **Zgłoś ilość przy wyjściu** – wartość *Tak* powoduje, że pracownicy będą monitowani o raportowanie informacji zwrotnych dotyczących zadań w toku podczas wyrejestrowywania. Jeśli ustawiono wartość *Nie*, pracownik nie będzie monitowany.
 - **Zablokuj pracownika** — Jeśli ta opcja ma wartość *Nie*, pracownicy są wylogowani natychmiast po dokonaniu rejestracji (np. nowego zadania). Urządzenie wróci do strony rejestracji. Jeśli ta opcja jest ustawiona na wartość *Tak*, pracownicy pozostaną zalogowani na urządzeniu z kartą pracy. Pracownik może jednak wylogować się ręcznie, aby inny pracownik mógł się zalogować, gdy urządzenie karty będzie nadal działać na tym samym koncie użytkownika systemu. Aby uzyskać więcej informacji o tych typach kont, zobacz, zobacz temat [Przypisani użytkownicy](config-job-card-device.md#assigned-users).
 - **Użyj faktycznego czasu rejestracji** – Ustaw to na *Tak*, aby ustawić czas każdej nowej rejestracji na dokładny czas, w którym pracownik przesłał rejestrację. Jeśli ta opcja jest ustawiona na *Nie*, w zamian zostanie użyta godzina logowania. Zazwyczaj ustawienie to jest ustawione na *Tak*, jeśli włączono opcję **Zablokuj pracownika** i/lub opcję **Jeden pracownik** ustawioną na *Tak*, gdzie pracownik często pozostaje zalogowany przez dłuższy okres czasu.
@@ -112,6 +94,3 @@ Zadanie wsadowe okresowo oczyszcza wpisy w tabeli odwołań dla urządzeń, któ
 1. W okienku akcji wybierz opcję **Oczyść konfiguracje klientów**.
 1. W oknie dialogowym **Oczyść konfigurację klientów** w polu **Liczba dni** ustaw liczbę dni nieaktywności (przed dniem dzisiejszym), które mają być brane pod uwagę. Wszystkie konfiguracje i rekordy logowania dla urządzeń, które nie były aktywne w tym czasie, zostaną usunięte.
 1. Wybierz przycisk **OK**, aby oczyścić odpowiednie konfiguracje na podstawie **Liczby dni**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

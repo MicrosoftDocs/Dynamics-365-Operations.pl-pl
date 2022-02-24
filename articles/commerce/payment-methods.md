@@ -1,14 +1,17 @@
 ---
 title: Metody płatności
 description: Każdy typ płatności akceptowany przez sprzedawcę detalicznego musi zostać skonfigurowany na etapie konfiguracji systemu. W tym artykule opisano typy płatności, które można utworzyć, oraz proces ich konfigurowania.
-author: BrianShook
-ms.date: 11/03/2021
+author: rubencdelgado
+manager: AnnBe
+ms.date: 06/17/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTenderTypeTable
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 15831
 ms.assetid: 465893a5-6b4f-4c5f-b305-db071df2d33f
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0450dbaa37365705ca59fd2223c9d3866054c12a
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 2b56609de3b2620dcc605c6c6d697cb74c8ed6c1
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779577"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414952"
 ---
 # <a name="payment-methods"></a>Metody płatności
 
@@ -46,11 +49,3 @@ Aby skonfigurować metody płatności , należy wykonać następujące zadania:
 2. Utwórz typy i numery kart na poziomie organizacji. Jeśli będą przyjmowane karty kredytowe lub debetowe, trzeba utworzyć jeden typ metody płatności kartami, a następnie utworzyć typy i numery kart na poziomie organizacji.
 3. Ustaw formę płatności w sklepie. Skojarz typy metod płatności z poszczególnymi sklepami, a następnie wprowadź dla każdego typu metody płatności ustawienia właściwe dla sklepu.
 4. Skonfiguruj metody płatności kartą dla sklepów. Skonfiguruj karty dla każdej formy płatności akceptowanej w sklepie.
-
-## <a name="handle-change-tendering-for-payment-methods"></a>Obsługa metod płatności za zmianę dla metod płatności
-
-Niektóre metody płatności nie obsługują metod płatności bezpośrednich, jeśli środki są należne klientom w trakcie transakcji w punkcie sprzedaży. W celu płatności za zmianę można użyć tylko metod Płatności **gotówką** i **walutą**. 
-
-Aby obsługiwać sprawy, w których w trakcie transakcji jest wymagana metoda płatności za zmianę, ale metoda płatności nie obsługuje tej metody, można zdefiniować metodę płatności **Zmiana metody płatności**. Po skonfigurowaniu metod płatności sklepu dla sklepu wybierz metodę płatności, która ma być stosowana. Następnie w sekcji **Zmiana** w polu **Zmień metodę płatności** wprowadź opcję płatności w przypadku zmiany metody płatności. Można na przykład wprowadzić wartość **1**, aby wskazać, że gotówka może zostać użyta jako opcja zmiany płatności dla metody płatności.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,97 +1,63 @@
 ---
 title: Zarządzanie funkcjami — omówienie
 description: W tym temacie opisano funkcję zarządzania funkcjami i sposób jego używania.
-author: Peakerbl
-ms.date: 01/10/2022
-ms.topic: overview
+author: ChrisGarty
+manager: AnnBe
+ms.date: 10/05/2020
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: FeatureManagementWorkspace
 audience: IT Pro, Application user
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: peakerbl
+ms.author: cgarty
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: c98bdbd64ee5488da20de3f5b23ae18ebce8c23f
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: a0f7391273e2374bdd136c5db47bcb65487e2a9c
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068016"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798360"
 ---
 # <a name="feature-management-overview"></a>Zarządzanie funkcjami — omówienie
 
 [!include [banner](../../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
-
-Funkcje są dodawane i aktualizowane w każdym wydaniu. Środowisko zarządzania funkcjami udostępnia obszar roboczy, w którym można wyświetlić listę funkcji, które zostały dostarczone w każdej wersji. Następnie można użyć obszaru roboczego do wyświetlania dokumentacji funkcji oraz włączania lub wyłączania funkcji.
+Funkcje są dodawane i aktualizowane w każdym wydaniu. Środowisko zarządzania funkcjami udostępnia obszar roboczy, w którym można wyświetlić listę funkcji, które zostały dostarczone w każdej wersji. Domyślnie nowe funkcje są wyłączone. Można użyć obszaru roboczego, aby włączyć je i wyświetlić dokumentację dla nich.
 
 ## <a name="the-feature-management-workspace"></a>Obszar roboczy Zarządzanie funkcjami
 
-Obszar roboczy **zarządzanie funkcjami** można otworzyć, wybierając odpowiedni kafelek na pulpicie nawigacyjnym. Zobaczysz stronę, która zawiera listę funkcji dla wszystkich wersji, które są obsługiwane przez funkcję zarządzania funkcjami. 
+Obszar roboczy **zarządzanie funkcjami** można otworzyć, wybierając odpowiedni kafelek na pulpicie nawigacyjnym. Zobaczysz stronę, która zawiera listę funkcji dla wszystkich wersji, które są obsługiwane przez funkcję zarządzania funkcjami. Z biegiem czasu firma Microsoft zwiększy funkcjonalność zarządzania funkcjami, tak aby były dostępne kolejne funkcje do łatwiejszego zarządzania funkcjami.
 
 Lista funkcji zawiera następujące informacje:
 
 - **Nazwa funkcji** — opis dodanej funkcji.
-- **Stan** — symbol wskazuje, czy funkcja została włączona (znacznik wyboru), została włączona (pusta), została zaplanowana do włączenia (zegar) lub jest obowiązkowo włączona (kłódka), wymaga uwagi przed włączeniem (ostrzeżenie) lub nie może zostać włączona (X). Pokazane ustawienie jest używane dla wszystkich firm. Należy pamiętać, że nawet wtedy, gdy funkcja została włączona, jest nadal kontrolowana przez zabezpieczenia. W związku z tym funkcja będzie dostępna tylko dla użytkowników, którzy mają do niej dostęp, na podstawie ich roli zabezpieczeń. Będzie ona również dostępna tylko w firmach, do których użytkownik ma dostęp.
+- **Stan włączony** — symbol wskazuje, czy funkcja została włączona (znacznik wyboru), nie została włączona (pusta), została zaplanowana do włączenia (zegar) lub jest obowiązkowo włączona (blokada), wymaga uwagi przed włączeniem (ostrzeżenie) lub nie może zostać włączony (X). Pokazane ustawienie jest używane dla wszystkich firm. Należy pamiętać, że nawet wtedy, gdy funkcja została włączona, jest nadal kontrolowana przez zabezpieczenia. W związku z tym funkcja będzie dostępna tylko dla użytkowników, którzy mają do niej dostęp, na podstawie ich roli zabezpieczeń. Będzie ona również dostępna tylko w firmach, do których użytkownik ma dostęp.
 - **Data włączenia** — data, kiedy funkcja została włączona lub jest zaplanowana do włączenia.
 - **Dodano funkcję** – data, kiedy funkcja została dodana do danego środowiska. Ta data jest automatycznie wprowadzana podczas aktualizowania środowiska podczas comiesięcznych wydań.
-- **Stan funkcji** — bieżący stan cyklu życia funkcji: **Podgląd**, **Wydana** (pokazane jako puste), **Domyślnie włączona** i **Obowiązkowa**. Stany są omówione bardziej szczegółowo w dalszej części tego tematu. 
 - **Moduł** — moduł, którego dotyczy nowa funkcja.
-
-> [!NOTE]
-> Kolumna **Stan funkcji** jest dostępna od wersji 10.0.21.
 
 Po wybraniu funkcji w okienku szczegółów po prawej stronie listy funkcji pojawią się dodatkowe informacje. W górnej części okienka zobaczysz nazwę funkcji, datę dodania funkcji, moduł, którego dotyczy ta funkcja, oraz łacze **Dowiedz się więcej**. Wybierz to łącze, aby wyświetlić dokumentację dla tej funkcji. Jeśli dokumentacja nie jest dostępna, nastąpi przekierowanie do strony tymczasowej. Okienko szczegółów zawiera również pole **komentarzy**, w którym można dodawać własne komentarze dotyczące tej funkcji.
 
 Obszar roboczy **Zarządzanie funkcjami** zawiera również kilka kart i na każdej z nich jest wyświetlona lista funkcji.
 
 - **Nowe** — na tej karcie są pokazane wszystkie funkcje, które zostały dodane od czasu ostatniej aktualizacji miesięcznej. Jeśli użytkownik pominął comiesięczne aktualizacje, na karcie są pokazane wszystkie nowe funkcje, które zostały dodane od czasu ostatniej aktualizacji. Najnowsze funkcje są wyświetlane na górze listy. Całkowita liczba nowych funkcji jest również wyświetlana na kafelku u góry strony.
-- **Nie włączono** — na tej karcie są pokazane wszystkie funkcje, które nie zostały włączone. Najnowsze funkcje są wyświetlane na górze listy. Ponadto kafelek w górnej części strony pokazuje całkowitą liczbę nowych funkcji, które są obecnie wyłączone.
-- **Zaplanowane** — na tej karcie są pokazane wszystkie funkcje, które zostały zaplanowane do włączenia w przyszłości. Funkcje, które mają najwcześniejszą zaplanowaną datę znajdują się u góry listy. Co więcej, całkowita liczba nowych zaplanowanych funkcji jest również wyświetlana na kafelku u góry strony.
+- **Nie włączono** — na tej karcie są pokazane wszystkie funkcje, które nie zostały włączone. Najnowsze funkcje są wyświetlane na górze listy. Całkowita liczba nowych funkcji, które nie zostały włączone, jest również podana na kafelku u góry strony.
+- **Zaplanowane** — na tej karcie są pokazane wszystkie funkcje, które zostały zaplanowane do włączenia w przyszłości. Funkcje, które mają najwcześniejszą zaplanowaną datę znajdują się u góry listy. Całkowita liczba nowych zaplanowanych funkcji jest również wyświetlana na kafelku u góry strony.
 - **Wszystkie** — na tej karcie są pokazane wszystkie funkcje. Najnowsze funkcje są wyświetlane na górze listy.
 
-## <a name="feature-states"></a>Stany elementów
-Funkcje mogą przechodzić pomiędzy kilkoma stanami, od wprowadzenia w zarządzaniu cechami, aż do stania się obowiązkowymi w produkcie. W tej sekcji opisano prawidłowe stany funkcji.
+## <a name="turn-on-a-feature"></a>Włączanie funkcji
 
-### <a name="preview-features-optional"></a>Funkcje w wersji zapoznawczej (opcjonalnie)
+Jeśli funkcja nie została włączona, w okienku szczegółów zostanie wyświetlony przycisk **Włącz teraz**. Za pomocą tego przycisku można włączyć funkcję.
 
-Zespoły produktów mogą zdecydować się na uruchomienie nowej funkcji jako funkcji w wersji zapoznawczej. Funkcje podglądu nie są domyślnie włączone i są opcjonalne. Zespół produktu, który jest właścicielem, zaktualizuje funkcje do wydania po pomyślnym okresie wersji zapoznawczej.
+- Wybierz funkcję, którą chcesz włączyć, a następnie w okienku szczegółów naciśnij przycisk **Włącz teraz**. Funkcja jest włączona.
 
-> [!NOTE]
-> Funkcje w wersji zapoznawczej podlegają określonym [warunkom wersji zapoznawczej](https://go.microsoft.com/fwlink/?linkid=2105274). 
-
-### <a name="released-features-optional"></a>Wydane funkcje (opcjonalnie)
-
-Kolumna **Stan funkcji** dla tych funkcji jest pusta. Funkcje, które są początkowo dodawane jako wydane, nie są domyślnie włączone, a ich włączenie jest opcjonalne. Funkcje, które są aktualizowane z wersji zapoznawczej zachowają stan włączenia.
-
-### <a name="on-by-default-features-optional"></a>Funkcje domyślnie włączone (opcjonalnie)
-
-Funkcje, które są **domyślnie włączone**, są domyślnie włączone, ale można je wyłączyć. Po tym jak funkcje, które mogą być wyłączone, będą w stanie **Wydane** przez co najmniej sześć miesięcy, oczekuje się, że przejdą do tego stanu w następnym dużym wydaniu. Funkcje, które przechodzą do **Domyślnie włączone** powinny być opisane w sekcji [Co nowego](../whats-new-changed.md) dla danej wersji. Aktualizacja jest inicjowana przez zespół będący właścicielem produktu.
-
-> [!NOTE]
-> Ponieważ funkcje te zostaną włączone automatycznie, ważne jest, abyś określił, czy Twoja organizacja jest gotowa na ich wykorzystanie, czy też potrzeba na to więcej czasu. Jeśli potrzeba więcej czasu, może być konieczne tymczasowe wyłączenie tych funkcji. Należy zauważyć, że przejście funkcji do **Domyślnie włączona** odbywa się w głównej wersji, zanim funkcja ma stać się **obowiązkowa**. W tym momencie nie będzie można wyłączyć tej funkcji. 
-
-### <a name="mandatory"></a>Wymagana
-
-**Wymagana** jest oczekiwanym stanem końcowym funkcji. Informuje on, że funkcje są włączone i nie można ich wyłączyć bez kontaktu z firmą Microsoft. Opcjonalne funkcje mają stać się obowiązkowe po dwóch głównych wersjach. Funkcje krytyczne mogą, w drodze wyjątku, zostać wprowadzone jako obowiązkowe.
-
-## <a name="example-of-expected-feature-lifecycles"></a>Przykład oczekiwanych cykli życia operacji
-
-Funkcje, które można wyłączyć i które zostały dodane jako wydane i opcjonalne przed lub w ramach wydania kwietniowego, powinny domyślnie przejść na **Włączone domyślnie** w następnej wersji październikowej. Oczekuje się, że staną się one **Obowiązkowe** w kwietniu następnego roku.
-
-Funkcje, których nie można wyłączyć i które zostały dodane jako wydane i opcjonalne przed lub w ramach wydania kwietniowego, powinny domyślnie przejść na **Obowiązkowe** w następnej wersji kwietniowej.
-
-## <a name="enable-a-feature"></a>Włączanie funkcji
-
-Jeśli funkcja nie została włączona, w okienku szczegółów zostanie wyświetlony przycisk **Włącz teraz**. Za pomocą tego przycisku można włączyć tę funkcję.
-
-Niektóre funkcje nie mogą być wyłączone po ich włączeniu. Jeśli funkcja, którą próbujesz włączyć, nie może zostać wyłączona, zostanie wyświetlone ostrzeżenie. W tym momencie możesz wybrać **Anuluj**, aby anulować operację i pozostawić tę funkcję wyłączoną. Jeśli jednak wybierzesz opcję **Włącz** i włączysz tę funkcję, nie będzie można jej później wyłączyć.
+Niektóre funkcje nie mogą zostać wyłączone po ich włączeniu. Jeśli funkcja, którą próbujesz włączyć, nie może zostać wyłączona, zostanie wyświetlone ostrzeżenie. W tym momencie możesz nacisnąć przycisk **Anuluj**, aby anulować operację i pozostawić funkcję wyłączoną. Jeśli jednak wybierzesz opcję **Włącz**, aby włączyć funkcję, nie będzie można jej później wyłączyć.
 
 Niektóre funkcje będą wyświetlały komunikat, który zawiera dodatkowe informacje, zanim je włączysz. Funkcje te są oznaczone żółtym symbolem ostrzegawczym. Należy uważnie przeczytać dodatkowe informacje, aby lepiej zrozumieć, co się stanie, gdy funkcja jest włączona. Jednak nadal można wybrać **Włącz**, aby włączyć funkcję.
 
@@ -109,33 +75,35 @@ Jeśli zaplanowano włączenie funkcji w przyszłości, w okienku szczegółów 
 2. W wyświetlonym oknie dialogowym, w polu **Data włączenia** określ nową datę włączenia funkcji.
 3. Wybierz opcję **Włącz**, aby ponownie zaplanować operację lub **wyłącz**, aby anulować harmonogram.
 
-## <a name="disable-a-feature"></a>Wyłączanie funkcji
+## <a name="turn-off-a-feature"></a>Wyłączanie funkcji
 
-Jeśli funkcja została już włączona, w okienku szczegółów zostanie wyświetlony przycisk **Wyłącz**. Za pomocą tego przycisku można wyłączyć tę funkcję. Przycisk **Wyłącz** jest niedostępny, jeśli po włączeniu tej funkcji nie można jej wyłączyć. 
+Jeśli funkcja została już włączona, w okienku szczegółów jest wyświetlany przycisk **Wyłącz**. Za pomocą tego przycisku można wyłączyć funkcję. Przycisk **Wyłącz** jest niedostępny, jeśli po włączeniu funkcji nie można jej wyłączyć.
 
-Po włączeniu tej funkcji w okienku szczegółów zostanie wyświetlony komunikat poniżej łącza **Dowiedz się więcej**. Ten komunikat stwierdza, że funkcja nie została jeszcze włączona. Ta wiadomość pojawia się za każdym razem, gdy wybierzesz funkcję na liście funkcji. Funkcje, które nie są włączone, są wyświetlane na karcie **Nie włączono**.
+- Wybierz funkcję, którą chcesz wyłączyć, a następnie w okienku szczegółów naciśnij przycisk **Wyłącz.** Funkcja zostanie wyłączona, a pole **Data włączenia** zostanie opróżnione.
 
-## <a name="features-that-must-be-enabled"></a>Funkcje, które muszą być włączone
+Po wyłączeniu tej funkcji w okienku szczegółów zostanie wyświetlony komunikat poniżej łącza **Dowiedz się więcej**. Ten komunikat stwierdza, że funkcja nie została jeszcze włączona. Ta wiadomość pojawia się za każdym razem, gdy wybierzesz funkcję na liście funkcji. Funkcje, które nie są włączone, są wyświetlane na karcie **Nie włączono**.
 
-Czasami jest dostarczana krytyczna funkcja, która musi zostać włączona automatycznie po wykonaniu aktualizacji. Te funkcje będą włączane automatycznie w dniu określonym w polu **Data włączenia**. W przypadku tych funkcji w okienku szczegółów zostanie wyświetlony komunikat poniżej łącza **Dowiedz się więcej**. Ten komunikat informuje, że funkcja została włączona lub wskazuje, kiedy funkcja zostanie włączona w przyszłości. Ta wiadomość pojawia się za każdym razem, gdy wybierzesz funkcję na liście funkcji.
+## <a name="features-that-must-be-turned-on"></a>Funkcje, które muszą być włączone
+
+Czasami jest dostarczana krytyczna funkcja, która musi zostać włączona automatycznie po wykonaniu aktualizacji. Te funkcje będą włączane automatycznie w dniu określonym w polu **Data włączenia**. W przypadku tych funkcji w okienku szczegółów zostanie wyświetlony komunikat poniżej łącza **Dowiedz się więcej**. Ten komunikat informuje, że funkcja została włączona lub wskazuje przyszłą datę, kiedy zostanie ona włączona. Ta wiadomość pojawia się za każdym razem, gdy wybierzesz funkcję na liście funkcji.
 
 ## <a name="enable-all-features"></a>Włącz wszystkie funkcje
 
-Wszystkie funkcje można włączyć, zaznaczając przycisk **Włącz wszystkie**. 
+Domyślnie wszystkie funkcje dodawane do środowiska są wyłączone. Wszystkie funkcje można włączyć, zaznaczając przycisk **Włącz wszystkie**. 
 
 Po wybraniu **Włącz wszystkie**, opcja pojawi się tam, gdzie potrzebujesz podać następujące informacje:
-
 - Lista wszystkich funkcji, które wymagają potwierdzenia, zanim będą mogły być włączone. Jeśli chcesz włączyć funkcje z list, wybierz **Tak** dla przycisku **Włącz funkcje wymagające potwierdzenia**.
 - Zostanie wyświetlona lista wszystkich funkcji, które nie mogą być włączone. Te funkcje nie zostaną włączone.
 
 Wszystkie funkcje, które mogą być włączone, zostaną włączone. Jeśli funkcja została już zaplanowana do włączenia w przyszłości, harmonogram nie zmieni się. 
 
-## <a name="enable-all-features-automatically"></a>Automatyczne włączanie wszystkich funkcji
+## <a name="turn-on-all-features-automatically"></a>Automatyczne włączanie wszystkich funkcji
 
-Jeśli jednak chcesz, aby wszystkie nowe funkcje były automatycznie włączane, możesz użyć listy rozwijanej pod tytułem obszaru roboczego, aby zmienić to, co dzieje się przy dodawaniu nowych funkcji.
+Domyślnie wszystkie funkcje dodawane do środowiska są wyłączone, o ile nie są obowiązkowe. Jeśli jednak chcesz, aby wszystkie nowe funkcje były automatycznie włączane, możesz użyć listy rozwijanej pod tytułem obszaru roboczego, aby zmienić to, co dzieje się przy dodawaniu nowych funkcji.
 
-- Wybierz opcję **Wszystkie nowe funkcje będą domyślnie włączone**, jeśli chcesz aby wszystkie nowe funkcje były automatycznie włączane po dodaniu ich do Twojego środowiska.
-- Wybierz opcję **Wszystkie nowe funkcje będą domyślnie wyłączone**, jeśli chcesz aby wszystkie nowe funkcje były automatycznie wyłączane po dodaniu ich do Twojego środowiska.
+- Wybierz opcję `Enable new features automatically`, aby wszystkie nowe funkcje były automatycznie włączane po dodaniu ich do Twojego środowiska.
+- Wybierz opcję `Do not enable new features automatically`, aby domyślnie wszystkie nowe funkcje były automatycznie wyłączane po dodaniu ich do Twojego środowiska.
+
 
 Jeśli włączysz wszystkich funkcji automatycznie, spowoduje to włączenie wszystkich funkcji, które byłyby włączone, po kliknięciu przycisku **Włącz wszystkie**. Nie zostaną włączone funkcje wymagające potwierdzenia lub funkcje, które nie mogą być włączone, dopóki nie zostanie podjęta akcja.
 
@@ -172,6 +140,10 @@ Poniższe przykłady opisują, co się dzieje w przypadku importowania danych pr
 
 Zarządzanie funkcjami umożliwia kontrolowanie funkcji, które są dostarczane w poszczególnych wersjach. Dystrybucja testowa umożliwia Microsoft Teams udostępnianie funkcji ograniczonej liczbie klientów, dzięki czemu funkcje mogą być testowane i weryfikowane bez wpływu na wszystkich klientów. Zarządzanie funkcjami nie kontroluje dystrybucji testowej żadnych funkcji.
 
+## <a name="new-features-are-optional-for-12-months"></a>Nowe funkcje są opcjonalne przez 12 miesięcy
+
+Jeśli zainstalowana zostanie nowa funkcja niekrytyczna, korzystanie z niej jest opcjonalne przez okres 12 miesięcy. Dzięki temu użytkownik i jego organizacja mają czas na zaplanowanie wdrożenia funkcji i przetestowania jej w ramach codziennych operacji. Aby uzyskać więcej informacji, zobacz [Aktualizacje do jednej wersji usługi – często zadawane pytania](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/one-version#what-about-new-features).
+
 ## <a name="using-feature-management-to-turn-on-isv-features-or-custom-features"></a>Korzystanie z funkcji Zarządzanie funkcjami w celu włączania funkcji ISV lub funkcji niestandardowych
 
 Zarządzanie funkcjami nie jest obecnie dostępne dla funkcji pochodzących od niezależnych dostawców oprogramowania (ISV) i funkcji niestandardowych. Jednak firma Microsoft rozszerza możliwości Zarządzania funkcjami. Po zakończeniu tych ulepszeń firma Microsoft będzie udostępniać Zarządzanie funkcjami dla wszystkich funkcje i przekaże instrukcje aktualizowania posiadanych funkcji, aby były obsługiwane przez Zarządzanie funkcjami.
@@ -179,24 +151,25 @@ Zarządzanie funkcjami nie jest obecnie dostępne dla funkcji pochodzących od n
 ## <a name="frequently-asked-questions-faq"></a>Często zadawane pytania (FAQ)
 
 ### <a name="when-are-features-added-removed-or-changed"></a>Kiedy są dodawane, usuwane lub zmieniane są funkcje? 
-Funkcje są dodawane, usuwane i zmieniane za pomocą zmian kodu przez zespoły będące właścicielem produktu. Aby te zmiany zostały wprowadzone, należy zaktualizować środowiska.
+Funkcje są dodawane, usuwane i zmieniane za pomocą zmian kodu. Aby te zmiany zostały wprowadzone, należy zaktualizować środowiska.
 
 ### <a name="does-a-feature-become-mandatory-automatically"></a>Czy funkcja staje się obowiązkowa automatycznie? 
-Nie, ta funkcja nie staje się obowiązkowa automatycznie. Zespół odpowiedzialny za produkt musi dokonać zmiany kodu.
+Nie, zamiana funkcji w obowiązkową nie jest akcją automatyczną. Zespoły produktów muszą dokonać zmiany kodu.
+
+### <a name="when-do-features-become-mandatory"></a>Kiedy funkcje stają się obowiązkowe? 
+Zasada polega na tym, że wszystkie nowe funkcje będą obowiązywać przez okres 12 miesięcy i nie będzie konieczne zarządzanie zmianami, dopóki ta funkcja nie zostanie włączona. Zespoły produktów mogą określić, czy funkcja ma być obowiązkowa po zakończeniu tego okresu. 
 
 ### <a name="why-isnt-there-a-specific-mandatory-enabled-date"></a>Dlaczego nie istnieje określona „obowiązkowa data włączenia"? 
 Czas wydania aktualizacji jest zmienny, czas aktualizacji środowiska jest zmienny, a klienci mogą zdecydować się na pominięcie niektórych aktualizacji. W wyniku tego trudno jest ustalić konkretne daty. 
 
-### <a name="wheres-the-documentation-for-features-that-are-mandatory"></a>Gdzie jest dokumentacja funkcji, które są obowiązkowe? 
-Dokumentacja ta pochodzi od każdego zespołu ds. aplikacji Dynamics 365. Często te funkcje będą wymienione w [aktualizacjach do stanów funkcji klienta](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/updates-client-feature-states) albo [usuniętych lub przestarzałych funkcjach](../../../dev-itpro/migration-upgrade/deprecated-features.md). 
+### <a name="wheres-the-documentation-for-features-that-are-being-made-mandatory"></a>Gdzie jest dokumentacja funkcji, które są wprowadzane jako obowiązkowe? 
+Dokumentacja pochodzi od zespołów aplikacji. Często są one wymienione w [usuniętych lub przestarzałych funkcjach](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features). 
 
 ### <a name="is-there-an-in-product-notification-or-signal-that-a-feature-is-going-to-be-mandatory-enabled"></a>Czy istnieje powiadomienie dotyczące produktu lub sygnał, że funkcja jest wymagana do włączenia? 
 Mechanizm powiadamiania związany z wprowadzaniem wymaganej funkcji nie istnieje dzisiaj.
 
 ### <a name="do-features-ever-get-enabled-without-the-customer-knowing-about-it"></a>Czy funkcje zostały kiedykolwiek włączone bez wiedzy klienta? 
-Tak, funkcje mogą zostać włączone bez wiedzy klienta w następujących sytuacjach:
-- Funkcja jest przenoszona do **Domyślnie włączona**. W tym stanie funkcję nadal można wyłączyć. 
-- Funkcja jest aktualizowana do **Obowiązkowa**. Ta zmiana nastąpi tylko w połączeniu z wydaniem głównym. Funkcje krytyczne mogą, w drodze wyjątku, zostać przeniesione do stanu **Obowiązkowa** w każdej aktualizacji.
+Tak, jeśli funkcje nie mają wpływu funkcjonalnego, mogą być wyłączone domyślnie.
 
 ### <a name="what-is-feature-flighting-and-how-does-it-relate-to-feature-management"></a>Co to jest funkcja wylotu i w jaki sposób wiąże się ona z zarządzaniem funkcjami? 
 Usuwanie funkcji to przełączniki w czasie rzeczywistym włączone/wyłączone kontrolki Microsoft. Są one niezależne od kontrolki odbiorcy udostępnianej przez Zarządzanie funkcjami. 
@@ -230,6 +203,3 @@ IFeatureLifecycle jest wewnętrznym mechanizmem Microsoft określającym etap cy
 - `PublicPreview` — wyświetlana domyślnie, ale z ostrzeżeniem, że funkcja jest w wersji zapoznawczej.
 - `Released`— całkowicie wydane.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

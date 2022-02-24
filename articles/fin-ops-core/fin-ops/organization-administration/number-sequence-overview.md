@@ -1,25 +1,29 @@
 ---
-# required metadata
 title: Omówienie sekwencji identyfikatorów
-description: 'Sekwencje numerów są używane do generowania czytelnych, unikatowych identyfikatorów dla rekordów danych głównych i rekordów transakcji, które muszą mieć identyfikatory.'
-author: SunilGarg
+description: Sekwencje numerów są używane do generowania czytelnych, unikatowych identyfikatorów dla rekordów danych głównych i rekordów transakcji, które muszą mieć identyfikatory.
+author: MargoC
+manager: AnnBe
 ms.date: 07/25/2019
-ms.topic: overview
-ms.prod: null
-ms.technology: null
-ms.search.form: 'NumberSequenceTableListPage, NumberSequenceConfiguration'
-audience: 'Application User, IT Pro'
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: NumberSequenceTableListPage, NumberSequenceConfiguration
+audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.custom:
-  - '15461'
-  - intro-internal
+ms.custom: 15461
 ms.assetid: 6e19bd1d-192b-4da2-8573-84f6e1ce98ef
 ms.search.region: Global
-ms.author: sunilg
-ms.search.validFrom: '2016-02-28'
+ms.author: margoc
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 41a3beca0fb373ba985a2d01dd15cdc5a60e2919
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797077"
 ---
-
 # <a name="number-sequences-overview"></a>Omówienie sekwencji identyfikatorów
 
 [!include [banner](../includes/banner.md)]
@@ -111,6 +115,3 @@ Jeśli przepisy nie nakazują używania ciągłej sekwencji numerów, zaleca si�
 W przypadku awarii zasilania, błędu aplikacji lub innego nieoczekiwanego problemu system nie może automatycznie odtworzyć numerów dla ciągłych sekwencji numerów. Proces oczyszczania można uruchomić ręcznie lub automatycznie w celu odzyskania zagubionych numerów.
 
 Należy dokładnie rozważyć zużycie serwera podczas planowania procesu oczyszczania. Zalecane jest przeprowadzanie oczyszczania jako zadania wsadowego w godzinach poza szczytem.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

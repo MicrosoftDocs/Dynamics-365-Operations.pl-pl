@@ -84,6 +84,3 @@ W przypadku kompilacji w tym tygodniu opis będzie wyświetlany podczas wybieran
 ### <a name="print-performance-reviews"></a>Drukowanie przeglądów wydajności
 
 Pracownicy, menedżerowie i pracownicy działu kadr będą mogli drukować przegląd wydajności pracownika.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

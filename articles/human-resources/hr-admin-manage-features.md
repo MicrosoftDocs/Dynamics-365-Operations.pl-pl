@@ -1,39 +1,37 @@
 ---
-title: Zarządzanie funkcjami w module Zasoby ludzkie
-description: W tym temacie opisano funkcję zarządzania funkcjami i sposób jego używania.
-author: twheeloc
-ms.date: 08/19/2021
+title: Zarządzanie funkcjami
+description: Informacje o sposobie włączania i wyłączania nowych funkcji w systemie Dynamics 365 Human Resources.
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: FeatureManagementWorkspace
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2d5a27c02df841dfbb17a9375aaf75f93d05cd8e
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 9176e9519c3bf65ef7a4f1b5ae43dbeb411750f5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069714"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420107"
 ---
-# <a name="manage-features-in-human-resources"></a>Zarządzanie funkcjami w module Zasoby ludzkie
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+# <a name="manage-features"></a>Zarządzanie funkcjami
 
 W ramach ciągłego wdrażania nowych funkcji zarządzania w aplikacji Microsoft Dynamics 365 Human Resources chcemy stworzyć klientom możliwość jak najszybszego zetknięcia się z nimi. Te funkcje są dostępne gdyż są prawie gotowe do ogólnego udostępnienia i przeszły wszechstronne testy. Jednak zanim je upublicznimy powszechnie, chcemy jeszcze poznać finalne opinie klientów i przeprowadzić ostatnią weryfikację.
 
-Aby uzyskać więcej informacji o nowych funkcjach w aplikacji Human Resources, zobacz [Nowości i zmiany w aplikacji Human Resources](hr-admin-whats-new.md) oraz [Informacje o planie wydawniczym Dynamics 365 i Power Platform](/dynamics365/release-plans/?panel=products1#pivot=products).
+Aby uzyskać więcej informacji o nowych funkcjach w aplikacji Human Resources, zobacz [Nowości i zmiany w aplikacji Human Resources](hr-admin-whats-new.md) oraz [Informacje o planie wydawniczym Dynamics 365 i Power Platform](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1).
 
-Obszar roboczy **zarządzanie funkcjami** zawiera listę funkcji dostarczanych w każdym wydaniu. Domyślnie nowe funkcje są wyłączone. Można użyć obszaru roboczego, aby włączyć je i wyświetlić dokumentację dla nich. Aby uzyskać więcej informacji o zarządzaniu funkcjami funkcji, zapoznaj się z [Zarządzanie funkcjami — omówienie](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Obszar roboczy **zarządzanie funkcjami** zawiera listę funkcji dostarczanych w każdym wydaniu. Domyślnie nowe funkcje są wyłączone. Można użyć obszaru roboczego, aby włączyć je i wyświetlić dokumentację dla nich. Aby uzyskać więcej informacji o zarządzaniu funkcjami funkcji, zapoznaj się z [Zarządzanie funkcjami — omówienie](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 
 Wszystkie nowe funkcje pozostają w podglądzie przez co najmniej 30 dni, a zazwyczaj 30-60 dni. Najważniejsze funkcje są zazwyczaj dostępne w październiku i kwietniu każdego roku po okresie podglądu. Po wyświetleniu nowych możliwości w obszarze roboczym **zarządzanie funkcjami** można je włączyć. Niektóre funkcje mogą być domyślnie włączone.
 
@@ -72,7 +70,7 @@ Zarządzanie świadczeniamii zastępuje funkcje w obszarze roboczym **Świadczen
 - **Zasady uprawnień do świadczeń**
 - **Zdarzenia dotyczące uprawnień**
 
-Informacje zawarte na tych stronach można przeglądać w trybie tylko do odczytu. Jeśli chcesz edytować te informacje, musisz najpierw wyłączyć funkcję Zarządzania świadczeniami (dotyczy tylko środowisk **Piaskownicy**).
+Informacje zawarte w tych formularzach można przeglądać w trybie tylko do odczytu. Jeśli chcesz edytować te informacje, musisz najpierw wyłączyć funkcję Zarządzania świadczeniami (dotyczy tylko środowisk **Piaskownicy**).
 
 ## <a name="enable-or-disable-leave-and-absence"></a>Włączanie lub wyłączanie urlopu i nieobecności
 
@@ -95,6 +93,4 @@ W przesyłanych opiniach i recenzjach produktu nie podawaj żadnych danych osobo
 ## <a name="see-also"></a>Informacje dodatkowe
 
 - [Co nowego: Human Resources](hr-admin-whats-new.md)
-- [Plan wydawniczy rozwiązań Dynamics 365 i Power Platform](/dynamics365/release-plans/?panel=products1#pivot=products)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+- [Plan wydawniczy rozwiązań Dynamics 365 i Power Platform](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1)

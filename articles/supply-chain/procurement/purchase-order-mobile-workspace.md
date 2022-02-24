@@ -1,25 +1,27 @@
 ---
 title: Mobilny obszar roboczy Zatwierdzenie zamówienia zakupu
 description: Ten temat zawiera informacje dotyczące komórkowego obszaru roboczego Zatwierdzenia zamówienia zakupu, w którym można wyświetlać zamówienia zakupu i reagować na niej poprzez różne czynności. Można na przykład zatwierdzić lub odrzucić zamówienie zakupu.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchVendorPortalRequests
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 30211
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: fc88f20b50e034f2f27b7e2576fe6a4bb3486e23
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 7f952f3af36620a20a5c991fd9e1ccfd56119f47
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570568"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022313"
 ---
 # <a name="purchase-order-approval-mobile-workspace"></a>Mobilny obszar roboczy Zatwierdzenie zamówienia zakupu
 
@@ -36,7 +38,7 @@ Mobilny obszar roboczy **Zatwierdzenie zamówienia zakupu** pozwala łatwo wyśw
 Wymagania wstępne różnią się w zależności od wersji programu Supply Chain Management wdrożonej w organizacji.
 
 ### <a name="prerequisites-if-you-use-supply-chain-management"></a>Warunki wstępne, jeśli jest używane Supply Chain Management 
-Jeśli w organizacji wdrożono rozwiązanie Supply Chain Management, administrator systemu musi opublikować mobilny obszar roboczy **Zatwierdzenie zamówienia zakupu**. Instrukcje znajdziesz w temacie [Publikowanie mobilnego obszaru roboczego](../../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md).
+Jeśli w organizacji wdrożono rozwiązanie Supply Chain Management, administrator systemu musi opublikować mobilny obszar roboczy **Zatwierdzenie zamówienia zakupu**. Instrukcje znajdziesz w temacie [Publikowanie mobilnego obszaru roboczego](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Warunki wstępne, jeśli jest używany program Microsoft Dynamics 365 for Operations w wersji 1611 z aktualizacją platformy 3 lub nowszą
 Jeśli w organizacji wdrożono oprogramowanie Microsoft Dynamics 365 for Operations w wersji 1611 z aktualizacją platformy 3 lub nowszą, administrator systemu musi wykonać następujące zadania wstępne. 
@@ -55,16 +57,16 @@ Jeśli w organizacji wdrożono oprogramowanie Microsoft Dynamics 365 for Operati
 <td>Administrator systemu</td>
 <td>KB 4017918 jest aktualizacją platformy języka X++ lub poprawką metadanych, która zawiera mobilny obszar roboczy <strong>Zatwierdzenie zamówienia zakupu</strong>. W celu zainstalowania poprawki KB 4017918 administrator systemu musi wykonać następującą procedurę:
 <ol>
-<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs">Pobierz poprawkę metadanych z usługi Microsoft Dynamics Lifecycle Services (LCS)</a>.</li>
-<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Zainstaluj poprawkę metadanych</a>.</li>
-<li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/create-apply-deployable-package">Utwórz wdrażalny pakiet</a> zawierający model <strong>SCMMobile</strong>, a następnie przekaż ten wdrażalny pakiet do usługi LCS.</li>
-<li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system">Zastosuj wdrażalny pakiet</a></li>
+<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Pobierz poprawkę metadanych z usługi Microsoft Dynamics Lifecycle Services (LCS)</a>.</li>
+<li><a href="../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md">Zainstaluj poprawkę metadanych</a>.</li>
+<li><a href="../../dev-itpro/deployment/create-apply-deployable-package.md">Utwórz wdrażalny pakiet</a> zawierający model <strong>SCMMobile</strong>, a następnie przekaż ten wdrażalny pakiet do usługi LCS.</li>
+<li><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Zastosuj wdrażalny pakiet</a></li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Opublikowanie mobilnego obszaru roboczego <strong>Zatwierdzenie zamówienia zakupu</strong>.</td>
 <td>Administrator systemu</td>
-<td>Zobacz <a href="/dynamics365/fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace">Publikowanie mobilnego obszaru roboczego</a>.</td>
+<td>Zobacz <a href="../../dev-itpro/mobile-apps/publish-mobile-workspace.md">Publikowanie mobilnego obszaru roboczego</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -83,7 +85,7 @@ Pobieranie i instalowanie aplikacji mobilnej Finance and Operations:
 3. Podczas pierwszego logowania pojawi się monit o podanie nazwy użytkownika i hasła. Wprowadź swoje poświadczenia.
 4. Po zalogowaniu się zobaczysz obszary robocze dostępne dla firmy. Należy zauważyć, że jeśli administrator systemu później opublikuje nowy obszar roboczy, trzeba odświeżyć listę komórkowych obszarów roboczych.
 
-![Obszar roboczy Zatwierdzenie zamówienia zakupu na liście dostępnych obszarów roboczych.](./media/po-workspaces.png)
+![Obszar roboczy Zatwierdzenie zamówienia zakupu na liście dostępnych obszarów roboczych](./media/po-workspaces.png)
 
 ## <a name="view-orders-that-are-assigned-to-you"></a>Wyświetlanie zamówień, które są Ci przypisane
 1. Na urządzeniu przenośnym wybierz obszar roboczy **Zatwierdzenie zamówienia zakupu**.
@@ -110,6 +112,3 @@ Po przejrzeniu przypisanego Ci zamówienia zakupu i zapoznaniu się z instrukcja
 5. Wybierz odpowiednią akcję.
 6. Na stronie **Wykonaj zadanie** wprowadź komentarz. Należy zauważyć, że po wybraniu akcji **Delegowanie** musisz wybrać użytkownika, któremu zadanie zostanie delegowane.
 7. Wybierz opcję **Gotowe**. Po odświeżeniu obszaru roboczego zamówienie zakupu przestanie być widoczne na liście. 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

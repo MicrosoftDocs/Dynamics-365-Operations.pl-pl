@@ -2,24 +2,27 @@
 title: Wyświetlanie transakcji w rozliczeniu dla Europy Wschodniej
 description: Ten temat zawiera informacje o stronie Transakcje w rozliczeniu dla odbiorców i dostawców.
 author: EvgenyPopovMBS
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustVendTransPostingLog_RU
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.custom: 270544
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ba3e168d188dfe0f808e7d7f7bab6192de25d25977023eb798a923ec97b43b82
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d527f5417ddee57a54b0d65b1de0b4c8ced6ab75
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713742"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408356"
 ---
 # <a name="view-transactions-on-settlement-for-eastern-europe"></a>Wyświetlanie transakcji w rozliczeniu dla Europy Wschodniej
 
@@ -45,6 +48,3 @@ Informacje dotyczące rozliczenia są rejestrowane i mogą być wyświetlane na 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

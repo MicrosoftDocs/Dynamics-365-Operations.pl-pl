@@ -2,9 +2,11 @@
 title: Generowanie dokumentów zawierających dane aplikacji
 description: Aby wykonać kroki opisane w tej procedurze, należy najpierw wykonać procedurę „ER Generowanie dokumentów z aktualizacją danych aplikacji (Część 4 — Modyfikowanie formatu)”.
 author: NickSelin
+manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0166e0afb542baea063f2d563e1eaeb0cdbfd6f62d77898fd9916afbeca90e48
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a2643c85e64373e30aab16be686c50cd224490fe
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726244"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684482"
 ---
 # <a name="generate-documents-that-have-application-data"></a>Generowanie dokumentów zawierających dane aplikacji
 
@@ -76,6 +78,3 @@ Przejrzyj wygenerowany plik XML.
 6. Zamknij stronę.
 7. Zamknij stronę.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

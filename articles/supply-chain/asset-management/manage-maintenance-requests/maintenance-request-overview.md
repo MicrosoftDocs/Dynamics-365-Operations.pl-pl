@@ -1,25 +1,34 @@
 ---
-# required metadata
 title: Żądania konserwacji
 description: Ten temat stanowi omówienie zarządzania żądaniami konserwacji w module Zarządzanie składnikami majątku
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/01/2019
-ms.topic: overview
-ms.prod: null
-ms.technology: null
-ms.search.form: 'EntAssetRequestTable, EntAssetRequestWorkspace, EntAssetRequestActivePart, EntAssetRequestWorkOrderActive, EntAssetRequestType, EntAssetRequestTableCreateWO, EntAssetRequestTableLookup, EntAssetRequestTableActivePart, EntAssetMobileRequestDetails'
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: EntAssetRequestTable, EntAssetRequestWorkspace, EntAssetRequestActivePart, EntAssetRequestWorkOrderActive, EntAssetRequestType, EntAssetRequestTableCreateWO, EntAssetRequestTableLookup, EntAssetRequestTableActivePart, EntAssetMobileRequestDetails
 audience: Application User
 ms.reviewer: kamaybac
-ms.assetid: null
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
-ms.search.validFrom: '2019-10-31'
+ms.author: riluan
+ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
+ms.openlocfilehash: 1e0071ae745987a1217525b2841e3320933a9242
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019636"
 ---
-
 # <a name="maintenance-requests"></a>Żądania konserwacji
 
 [!include [banner](../../includes/banner.md)]
+
+ 
 
 Żądania konserwacji to notatki lub deklaracje utworzone w celu powiadamiania menedżera lub planisty, że składnik majątku może wymagać zadania konserwacji lub naprawy, ale bez tworzenia zlecenia pracy. Jeśli zawartość żądania konserwacji zostanie zweryfikowana i jej ważność zostanie potwierdzona, można następnie utworzyć zlecenie pracy na podstawie żądania konserwacji.
 
@@ -35,7 +44,7 @@ ms.dyn365.ops.version: 10.0.5
 
 Aby wyświetlić żądania konserwacji, wybierz **Zarządzanie składnikami majątku** \> **Wspólne** \> **Żądania konserwacji** \> **Wszystkie żądania konserwacji**, **Aktywne żądania konserwacji** lub **Żądania konserwacji w moich lokalizacjach czynności konserwacyjnych**. Każda strona listy pokazuje wybrane informacje związane z żądaniem konserwacji.
 
-![Przeglądanie żądań konserwacji.](media/01-manage-maintenance-requests.png)
+![Przeglądanie żądań konserwacji](media/01-manage-maintenance-requests.png)
 
 > [!NOTE]
 > Strona listy **Moje żądania konserwacji obsługi lokalizacji czynności konserwacyjnych** służy do wyświetlania listy żądań konserwacji, które zawierają lokalizacje czynności konserwacyjnych, które są powiązane z pracownikiem lub składnikami majątku zainstalowanymi w lokalizacjach czynności konserwacyjnych, które są związane z pracownikiem. (Aby uzyskać informacje na temat konfiguracji lokalizacji czynności konserwacyjnych w odniesieniu do konserwatorów, zobacz temat [Konserwatorzy i grupy pracowników](../setup-for-objects/workers-and-worker-groups.md)).
@@ -44,7 +53,7 @@ Aby wyświetlić żądania konserwacji, wybierz **Zarządzanie składnikami maj�
 
 Aby otworzyć widok szczegółów rekordu, na stronie listy **Wszystkie żądania konserwacji** w widoku siatki wybierz łącze w kolumnie **Żądanie konserwacji**.
 
-![Zobacz szczegóły dotyczące żądania konserwacji.](media/02-manage-maintenance-requests.png)
+![Zobacz szczegóły dotyczące żądania konserwacji](media/02-manage-maintenance-requests.png)
 
 Przyciski w okienku akcji są zorganizowane na kartach. Poniższa tabela zawiera krótkie opisy przycisków związanych z zarządzaniem składnikami majątku.
 
@@ -63,6 +72,3 @@ Przyciski w okienku akcji są zorganizowane na kartach. Poniższa tabela zawiera
 | Wyślij użyczony składnik majątku                  | Wybierz użyczony składnik majątku, który powinien być tymczasowy zamiennikiem składnika majątku wybranego w wybranym żądaniu konserwacji. |
 | Zwróć użyczony składnik majątku                | Zarejestruj użyczony składnik majątku jako zwrócony. |
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

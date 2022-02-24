@@ -2,23 +2,26 @@
 title: Przesyłanie transakcji do systemu Intrastat
 description: Ta procedura pokazuje, jak skonfigurować parametry systemu Intrastat i przesłać do niego transakcje.
 author: Anasyash
+manager: AnnBe
 ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResCategoryHierarchyListPage, EcoResCategory, UnitOfMeasureLookup, ProcCategoryAddCommodityCode, EcoResProductDetailsExtended, IntrastatCommodityLookup, IntrastatTransactionCode, IntrastatParameters, DeliveryMode, MarkupTable, SalesTableListPage, SalesCreateOrder, SalesTable, MarkupTrans, SalesEditLines,  Intrastat, SysQueryForm, DeliveryReason, DeliveryTerms, DestinationCode
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: anasyash
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1bcc40af54b235bddc9a8da5d6e07640788a22714017630d8cd493156dd8991a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9c47412c8ae68b396de41f04731b841f592dcba9
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725966"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408357"
 ---
 # <a name="transfer-transactions-to-the-intrastat"></a>Przesyłanie transakcji do systemu Intrastat
 
@@ -150,6 +153,3 @@ Ta procedura pokazuje, jak skonfigurować parametry systemu Intrastat i przesła
     
 Przejrzyj przeniesione dane, w tym kraj/region miejsca docelowego/wysyłki, kraj pochodzenia, wagę, ilość, ilość w jednostkach dodatkowych, oznaczenie asortymentu, kod transakcji, kwoty na fakturach i kwoty statystyczne. W razie potrzeby można zmodyfikować te dane.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

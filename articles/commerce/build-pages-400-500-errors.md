@@ -2,30 +2,36 @@
 title: Tworzenie niestandardowych stron odpowiedzi dla błędów kodu stanu 4xx/5xx
 description: W tym temacie opisano sposób tworzenia niestandardowych stron odpowiedzi dla błędów kodu stanu 4xx i 5xx przy użyciu narzędzi autorskich Microsoft Dynamics 365 Commerce.
 author: v-chgri
+manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 16cd6c3dab5502826119b6a517414d23e168e79708e306897b04c7ba8c80404b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 060f5e5616624279711f61f582e6a898c7eb7785
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741148"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414910"
 ---
 # <a name="build-custom-response-pages-for-4xx5xx-status-code-errors"></a>Tworzenie niestandardowych stron odpowiedzi dla błędów kodu stanu 4xx/5xx
+
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano sposób tworzenia niestandardowych stron odpowiedzi dla błędów kodu stanu 4xx i 5xx przy użyciu narzędzi autorskich Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Omówienie
 
 Jeśli żądanie nie powiodło się, serwer wystawia odpowiedzi na błędy kodów stanu HTTP. Kod stanu 404 jest przechwytywany i zwracany, jeśli nie odnaleziono strony, a kod stanu 500 jest przechwytywany i zwracany w przypadku wystąpienia błędu serwera. W Dynamics 365 Commerce Użytkownicy aplikacji mogą budować niestandardowe strony odpowiedzi na kod błędu, które są pokazywane użytkownikom w odpowiedzi na te błędy.
 
@@ -77,6 +83,3 @@ Aby skonfigurować przekierowanie dla strony odpowiedzi na błąd kodu stanu, wy
 [Dodawanie nowej strony witryny](add-new-page.md)
 
 [Tworzenie adresu URL strony](create-page-url.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

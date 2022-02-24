@@ -1,36 +1,39 @@
 ---
 title: Synchronizowanie kont klientów bezpośrednio z rozwiązania Sales do odbiorców w Supply Chain Management
 description: Temat zawiera omówienie szablonów i podstawowych zadań, które są używane do synchronizowania kont z Dynamics 365 Sales do Supply Chain Management.
-author: Henrikan
+author: ChristianRytt
+manager: tfehr
 ms.date: 10/25/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: henrikan
+ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: b3257f4582ede6cd1be8e593a5ed99f5ffd0ca6f
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 8aa03f94e0fb89a6d34ce014dbb6004a1a666327
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063092"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529217"
 ---
 # <a name="synchronize-accounts-directly-from-sales-to-customers-in-supply-chain-management"></a>Synchronizowanie kont klientów bezpośrednio z rozwiązania Sales do odbiorców w Supply Chain Management
 
 [!include [banner](../includes/banner.md)]
 
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!NOTE]
-> Zanim zaczniesz używać rozwiązania Prospekt na gotówkę, zapoznaj się z tematem [Integrowanie danych na platformie Microsoft Dataverse for Apps](/powerapps/administrator/data-integrator).
+> Zanim zaczniesz używać rozwiązania Prospekt na gotówkę, zapoznaj się z tematem [Integrowanie danych na platformie Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
 Temat zawiera omówienie szablonów i podstawowych zadań, które są używane do synchronizowania kont bezpośrednio z Dynamics 365 Sales do Dynamics 365 Supply Chain Management.
 
@@ -38,7 +41,7 @@ Temat zawiera omówienie szablonów i podstawowych zadań, które są używane d
 
 Rozwiązanie Prospekt na gotówkę korzysta z funkcji Integracji danych do synchronizacji danych między wystąpieniami Supply Chain Management a Sales.  Szablony Prospekt na gotówkę, które są dostępne w funkcji integracji danych umożliwiają przepływ danych o kontach, kontaktach, produktach, ofertach sprzedaży, zamówieniach sprzedaży i fakturach sprzedaży między usługą Supply Chain Management a Sales. Poniższa ilustracja przedstawia sposób synchronizacji danych między usługą Supply Chain Management a Sales.
 
-[![Przepływ danych w rozwiązaniu Prospekt na gotówkę.](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![Przepływ danych w rozwiązaniu Prospekt na gotówkę](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="templates-and-tasks"></a>Szablony i zadania
 
@@ -63,11 +66,11 @@ Konta klientów są zarządzane w usłudze Sales i synchronizowane z usługą Su
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Rozwiązanie Prospekt na gotówkę dla aplikacji Sales
 
-Kolumna **Numeru konta** jest dostępna na stronie **Konto**. Jego wartość pełni rolę naturalnego i unikatowego klucza wspierającego integrację. Funkcja klucza naturalnego w rozwiązaniu zarządzania relacjami z klientami (CRM) może mieć wpływ na klientów, którzy już korzystają z kolumny **Numeru konta**, ale którzy nie używają unikatowych wartości **Numer konta** dla każdego poszczególnych kont klientów. Obecnie rozwiązanie integracji nie obsługuje takiego przypadku.
+Pole **Numeru konta** jest dostępne na stronie **Konto**. Jego wartość pełni rolę naturalnego i unikatowego klucza wspierającego integrację. Funkcja klucza naturalnego w rozwiązaniu zarządzania relacjami z klientami (CRM) może mieć wpływ na klientów, którzy już korzystają z pola **Numeru konta**, ale którzy nie używają unikatowych wartości **Numer konta** dla każdego poszczególnych kont klientów. Obecnie rozwiązanie integracji nie obsługuje takiego przypadku.
 
 Podczas tworzenia nowego konta klienta jeśli wartość **Numer konta** jeszcze nie istnieje, jest generowana automatycznie przy użyciu numeracji. Wartość składa się z przedrostka **ACC**, następnie rosnącej liczby kolejnej, a na końcu sześcioznakowego przyrostka. Oto przykład: **ACC-01000-BVRCPS**
 
-Gdy rozwiązanie integracji jest stosowane do aplikacji Sales, skrypt uaktualniania ustawia kolumnę **Numer konta** dla istniejących kont klientów w aplikacji Sales. Jeśli nie ma wartości **Numer konta**, jest używana numeracja podana wcześniej.
+Gdy rozwiązanie integracji jest stosowane do aplikacji Sales, skrypt uaktualniania ustawia pole **Numer konta** dla istniejących kont klientów w aplikacji Sales. Jeśli nie ma wartości **Numer konta**, jest używana numeracja podana wcześniej.
 
 ## <a name="preconditions-and-mapping-setup"></a>Warunki wstępne i ustawienia mapowania
 
@@ -92,19 +95,19 @@ Gdy rozwiązanie integracji jest stosowane do aplikacji Sales, skrypt uaktualnia
 ## <a name="template-mapping-in-data-integration"></a>Mapowanie szablonu w integracji danych
 
 > [!NOTE]
-> Kolumny **Warunki płatności**, **Warunki frachtu**, **Warunki dostawy**, **Metoda wysyłki** i **Metoda dostawy** nie wchodzą w skład zbioru domyślnych mapowań. Aby zamapować te kolumny, należy skonfigurować mapowanie wartości specyficzne dla danych w organizacjach, między którymi jest synchronizowana tabela.
+> Pola **Warunki płatności**, **Warunki frachtu**, **Warunki dostawy**, **Metoda wysyłki** i **Metoda dostawy** nie wchodzą w skład zbioru domyślnych mapowań. Aby zamapować te pola, należy skonfigurować mapowanie wartości specyficzne dla danych w organizacjach, między którymi jest synchronizowana jednostka.
 
 Na poniższych ilustracjach pokazano przykładowe mapowanie szablonu w integratorze danych. 
 
 > [!NOTE]
-> Mapowanie pokazuje, które informacje z kolumn zostaną zsynchronizowane z rozwiązania Sales do rozwiązania Supply Chain Management.
+> Mapowanie pokazuje, które informacje z pól zostaną zsynchronizowane z rozwiązania Sales do rozwiązania Supply Chain Management.
 
-![Mapowanie szablonu w integracji danych.](./media/accounts-direct-template-mapping-data-integrator-1.png)
+![Mapowanie szablonu w integracji danych](./media/accounts-direct-template-mapping-data-integrator-1.png)
 
 ## <a name="related-topics"></a>Powiązane tematy
 
 
-[Od prospektu do gotówki](prospect-to-cash.md)
+[Od prospekta do gotówki](prospect-to-cash.md)
 
 [Synchronizowanie kont klientów bezpośrednio z rozwiązania Sales do odbiorców w Supply Chain Management](accounts-template-mapping-direct.md)
 
@@ -114,6 +117,3 @@ Na poniższych ilustracjach pokazano przykładowe mapowanie szablonu w integrato
 
 [Synchronizowanie nagłówków faktur i wierszy zamówień sprzedaży w rozwiązaniu Supply Chain Management bezpośrednio z elementami w rozwiązaniu Sales](sales-invoice-template-mapping-direct.md)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

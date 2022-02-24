@@ -1,25 +1,31 @@
---- 
-# required metadata 
+---
 title: Konfigurowanie profilu przeglądu przyjęć pozycji
 description: Ten temat koncentruje się na konfiguracji profilu przeglądu przyjęć.
-author: yufeihuang
+author: ShylaThompson
+manager: tfehr
 ms.date: 07/30/2019
 ms.topic: business-process
-ms.prod: null
-ms.technology: null
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
 ms.search.form: WMSArrivalOverviewProfile
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: yufeihuang
-ms.search.validFrom: '2016-06-30'
-ms.dyn365.ops.version: AX 7.0.0
+ms.author: kamaybac
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 5ecfe132d9b0e096c5fdf015f80a6efb34c9b178
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4961443"
 ---
 # <a name="set-up-an-item-arrival-overview-profile"></a>Konfigurowanie profilu przeglądu przyjęć pozycji
 
-[!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]]
 
 Ten temat koncentruje się na konfiguracji profilu przeglądu przyjęć. Profil przeglądu przyjęć to zbiór reguł, które zostaną zastosowane po otwarciu strony Przegląd przyjęć przez użytkownika. Procedurę można wykonać przy użyciu danych firmy demonstracyjnej USMF. Tę procedurę zazwyczaj wykonuje pracownik przyjmujący.
 
@@ -47,6 +53,3 @@ Ten temat koncentruje się na konfiguracji profilu przeglądu przyjęć. Profil 
 17. Wybierz opcję **Zapisz**.
 18. Zamknij stronę.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

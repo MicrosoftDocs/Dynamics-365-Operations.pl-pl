@@ -1,26 +1,31 @@
 ---
-# required metadata
 title: Omówienie programu lojalnościowego
-description: 'W tym temacie opisano funkcje programów lojalnościowych zawarte w aplikacji Dynamics 365 Commerce oraz odnośne procedury konfiguracyjne, które ułatwią sprzedawcy detalicznemu rozpoczęcie tworzenia programów lojalnościowych.'
+description: W tym temacie opisano funkcje programów lojalnościowych zawarte w aplikacji Dynamics 365 Commerce oraz odnośne procedury konfiguracyjne, które ułatwią sprzedawcy detalicznemu rozpoczęcie tworzenia programów lojalnościowych.
 author: scott-tucker
+manager: AnnBe
 ms.date: 07/21/2020
-ms.topic: overview
-ms.prod: null
-ms.technology: null
-ms.search.form: 'RetailLoyaltyPrograms, RetailPriceDiscGroup'
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-retail
+ms.technology: ''
+ms.search.form: RetailLoyaltyPrograms, RetailPriceDiscGroup
 audience: Application User
 ms.reviewer: josaw
-ms.custom:
-  - '16201'
-  - intro-internal
+ms.search.scope: Core, Operations, Retail
+ms.custom: 16201
 ms.assetid: f79559d2-bc2d-4f0b-a938-e7a61524ed80
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: scotttuc
-ms.search.validFrom: '2016-02-28'
-ms.dyn365.ops.version: 'AX 7.0.0, Retail July 2017 update'
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 119046ee2b783e6a4b868fff2b1d7a1b59966e7b
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4415066"
 ---
-
 # <a name="loyalty-overview"></a>Omówienie programu lojalnościowego
 
 [!include [banner](includes/banner.md)]
@@ -39,7 +44,7 @@ Program lojalnościowy można skonfigurować w taki sposób, żeby zawierał nas
 
 Należy skonfigurować kilka składników, aby włączyć funkcję lojalnościową w Commerce. Na poniższym diagramie przedstawiono składniki lojalnościowe i ich relacje względem siebie.
 
-![Przebieg procesu konfigurowania systemu lojalności.](./media/loyaltyprocess.gif "Składniki lojalności oraz sposób ich odnoszenia się do siebie")
+![Przebieg procesu konfigurowania systemu lojalności](./media/loyaltyprocess.gif "Składniki lojalności oraz sposób ich odnoszenia się do siebie")
 
 ## <a name="loyalty-components"></a>Składniki lojalnościowe
 
@@ -76,17 +81,17 @@ W poniższej tabeli opisano procesy, które należy wykonać, aby wysłać konfi
 - W ramach programu lojalnościowego sprzedawcy detaliczni mogli tworzyć różne reguły zdobywania punktów i realizacji z podziałem na warstwy (poziomy/szczeble) w celu zróżnicowania korzyści dla odbiorców na różnych poziomach. Również sprzedawcy detaliczni mogą w regułach zdobywania punktów i realizacji dodawać „przynależności”, tak aby określone grupy odbiorców mogły należeć do istniejących szczebli, ale otrzymywać punkty według innego schematu. Eliminuje to konieczność tworzenia dodatkowych szczebli.
     
     > [!NOTE]
-    > Reguły zdobywania punktów w ramach programu lojalnościowego mają charakter dodatkowy. Na przykład jeśli utworzysz regułę przyznającą członkowi na szczeblu Gold 10 punktów za każdego wydanego dolara amerykańskiego, a dodatkowo utworzysz regułę przyznającą 5 punktów za każdego wydanego dolara amerykańskiego dla odbiorców o przynależności „stały klient”, to stały klient należący do warstwy Gold otrzyma 15 punktów za każdego wydanego dolara amerykańskiego, ponieważ spełnia oba kryteria. Jednak jeśli stały klient nie kwalifikował się do poziomu Gold, klient otrzyma 5 punktów za każdego dolara. Aby odzwierciedlić te zmiany w kanałach, uruchom zadania **Przetwarzanie programów lojalnościowych** i **1050** (informacje o lojalności).
+    > Reguły zdobywania punktów w ramach programu lojalnościowego mają charakter dodatkowy. Na przykład jeśli utworzysz regułę przyznającą członkowi na szczeblu Gold 10 punktów za każdego wydanego dolara amerykańskiego, a dodatkowo utworzysz regułę przyznającą 5 punktów za każdego wydanego dolara amerykańskiego dla odbiorców o przynależności „stały klient”, to stały klient należący do warstwy Gold otrzyma 15 punktów za każdego wydanego dolara amerykańskiego, ponieważ spełnia oba kryteria. Jednak jeśli stały klient nie kwalifikował się do poziomu Gold, otrzyma 5 punktów za każdego dolara. Aby odzwierciedlić te zmiany w kanałach, uruchom zadania **Przetwarzanie programów lojalnościowych** i **1050** (informacje o lojalności).
     
-    ![Zarobki na podstawie przynależności.](./media/Affiliation-based-earning.png "Zarobki na podstawie przynależności")
+    ![Zarobki na podstawie przynależności](./media/Affiliation-based-earning.png "Zarobki na podstawie przynależności")
 
 - Sprzedawcy detaliczni często mają specjalne ceny dla określonych grup klientów, do których nie chcą stosować programów lojalnościowych. Na przykład odbiorcy hurtowni i pracownicy dostają specjalne ceny, ale nie otrzymują punktów lojalnościowych. Zazwyczaj ustawianie specjalnych cen dla takich grup odbiorców odbywa się za pomocą „przynależności”. Aby uniemożliwić określonym grupom odbiorców zdobywanie punktów lojalnościowych, sprzedawca detaliczny może zdefiniować jedną lub więcej przynależności w obszarze **Wykluczone przynależności** w ustawieniach programu lojalnościowego. W ten gdy odbiorcami należącymi do wykluczonych przynależności są uczestnicy programu lojalnościowego, nie będą otrzymywać punktów lojalnościowych za swoje zakupy. Aby odzwierciedlić te zmiany w kanałach, uruchom zadania **Przetwarzanie programów lojalnościowych** i **1050** (informacje o lojalności).
 
-    ![Wykluczone przynależności.](./media/Excluded-affiliations.png "Wykluczone przynależności z naliczania punktów lojalnościowych")
+    ![Wykluczone przynależności](./media/Excluded-affiliations.png "Wykluczone przynależności z naliczania punktów lojalnościowych")
     
 - Punkt sprzedaży umożliwia elastyczności detalicznej korzystanie z fizycznych kart lojalnościowych lub automatyczne generowanie unikatowego numeru karty lojalnościowej. Aby umożliwić automatyczne generowanie kart lojalnościowych w sklepach, należy włączyć funkcję **Generuj numer karty lojalnościowej** w profilu funkcjonalności skojarzonym ze sklepem. W kanałach internetowych sprzedawcy detaliczni mogą używać interfejsu API IssueLoyaltyCard w celu wystawiania kart lojalnościowych odbiorcom. Sprzedawcy detaliczni mogą w tym interfejsie API podać numer karty lojalnościowej, który zostanie użyty do wygenerowania karty lojalnościowej, lub też system użyje numeracji kart lojalnościowych ustawionej w aplikacji Commerce. Jednak jeśli numeracja nie jest zdefiniowana, a sprzedawca detaliczny nie poda numeru karty lojalnościowej podczas wywoływania interfejsu API, zostanie wyświetlony błąd.
 
-    ![Generuj kartę lojalnościową.](./media/Generate-loyalty-card.png "Automatycznie Generuj numer karty lojalnościowej")
+    ![Generuj kartę lojalnościową](./media/Generate-loyalty-card.png "Automatycznie Generuj numer karty lojalnościowej")
 
 - Uzyskane i zrealizowane punkty lojalnościowe teraz mogą być zapisywane dla każdej transakcji i zamówienia sprzedaży względem wiersza sprzedaży, dzięki czemu tę samą kwotę można zrefundować lub wycofać w przypadku zwrotów pełnych lub częściowych. Ponadto widoczność punktów na poziomie wiersza sprzedaży pozwala użytkownikom w biurze obsługi odpowiadać na pytania klientów o liczbę punktów zarobionych lub zrealizowanych dla każdego wiersza. Przed tą zmianą punkty lojalnościowe były zawsze ponownie obliczane w przypadku zwrotów, co powodowało różnicę kwot w porównaniu z oryginalnymi, jeśli w międzyczasie zmieniły się reguły zdobywania lub realizacji punktów, a użytkownicy w biurze obsługi nie widzieli szczegółowego podziału punktów. Punkty można obejrzeć w formularzu **Transakcje kartą** dla każdej karty lojalnościowej. Aby włączyć tę funkcję, włącz konfigurację **Księguj punkty lojalnościowe według wierszy sprzedaży** na karcie **Wspólne parametry handlu** \> **Ogólne**.
 
@@ -97,33 +102,33 @@ W poniższej tabeli opisano procesy, które należy wykonać, aby wysłać konfi
 
 Ponadto sprzedawcy detaliczni mogą określać limit maksymalnej liczby punktów lojalnościowych dla każdej karty lojalnościowej. To pole umożliwia zmniejszenie negatywnych skutków oszustw w programach lojalnościowych. Po uzyskaniu maksymalnej liczby punktów lojalnościowych użytkownik nie może zdobyć ich więcej. Sprzedawca detaliczny może postanowić blokować takie karty do czasu zbadania, czy faktycznie doszło do oszustwa. W razie stwierdzenia oszustwa sprzedawca może zablokować kartę lojalnościową odbiorcy i zablokować samego odbiorcę. Aby to zrobić, należy ustawić właściwość **Blokuj rejestrację odbiorcy w programie lojalnościowym** na **Tak** w obszarze **Wszyscy odbiorcy** na skróconej karcie **Commerce**. Zablokowanym klientom nie będzie można wystawiać kart lojalnościowych w każdym z kanałów.
 
-   ![Przysługujące i maksymalne nagrody.](./media/Vesting-and-maximum-reward-points.png "Określ przysługujące i maksymalne nagrody")
+   ![Przysługujące i maksymalne nagrody](./media/Vesting-and-maximum-reward-points.png "Określ przysługujące i maksymalne nagrody")
 
 - Przynależności umożliwiają stosowanie specjalnych cen i rabatów, ale istnieją też przynależności, których sprzedawcy detaliczni nie chcą pokazywać klientom. Na przykład przynależność zatytułowana „Klient wydający dużo” może być negatywnie odbierana przez przedmiotowego odbiorcę. Ponadto istnieją przynależności, którymi nie powinno się zarządzać w sklepie. Przykładem jest przynależność „pracownicy”, ponieważ nie chcesz, aby kasjerzy decydowali, kto jest pracownikiem, i na tej podstawie przyznawali rabaty pracownicze. Sprzedawcy detaliczni mogą teraz wybierać przynależności, które mają być ukryte w kanałach. Przynależności oznaczone jako **Ukryj w kanałach** nie mogą być wyświetlane, dodawane ani usuwane w punkcie sprzedaży. Jednak ceny i rabaty skojarzone z przynależnością nadal będą stosowane do produktów.
 
-    ![Ukryj przynależności.](./media/Hide-affiliations.png "Ukryj przynależności w kanałach")
+    ![Ukryj przynależności](./media/Hide-affiliations.png "Ukryj przynależności w kanałach")
     
 - Użytkownicy w biurze obsługi mogą teraz łatwiej wyszukiwać odbiorców przy użyciu danych z ich kart lojalnościowych oraz przechodzić do stron karty lojalnościowej i transakcji na karcie lojalnościowej odbiorcy ze strony **Obsługa klienta**.
 
-    ![Obsługa klienta.](./media/Customer-service.png "Znajdowanie informacji lojalnościowych dla odbiorcy")
+    ![Obsługa klienta](./media/Customer-service.png "Znajdowanie informacji lojalnościowych dla odbiorcy")
     
 - W razie naruszenia zabezpieczeń karty lojalnościowej należy wygenerować kartę zastępczą, a następnie przenieść do niej istniejące punkty. W tej wersji uproszczono proces wymiany karty. Ponadto klienci mogą przekazywać część lub wszystkie punkty lojalnościowe znajomym i członkom rodziny. Po przeniesieniu punktów dla każdej karty lojalnościowej są tworzone wpisy korekty punktów. Funkcje wymiany karty i przenoszenia sald są dostępne na stronie **Karty lojalnościowe**.
 
-    ![Zamień punkty zastępowania i przenoszenia.](./media/Replace-and-transfer-points.png "Zamień kartę lojalnościową lub przenieś saldo")
+    ![Zamień punkty zastępowania i przenoszenia](./media/Replace-and-transfer-points.png "Zamień kartę lojalnościową lub przenieś saldo")
     
 - Sprzedawcy detaliczni mogą chcieć sprawdzać efektywność rejestrowania odbiorców w programie lojalnościowym przez określony kanał. Źródło rejestrowania kart lojalnościowych jest teraz zapisywane, dzięki czemu sprzedawcy detaliczni mogą generować raporty o tych danych. Źródło rejestracji jest automatycznie zapisywane dla wszystkich wydanych kartach lojalnościowych z aplikacji MPOS/CPOS i kanałów handlu elektronicznego. Dla kart lojalnościowych wydanych z aplikacji zaplecza użytkownik w biurze obsługi może wybrać odpowiedni kanał.
 - W starszych wersjach sprzedawcy detaliczni mogli używać aplikacji MPOS/CPOS do realizowania punktów lojalnościowych odbiorców w sklepie. Jednak w tych wersjach saldo w programie lojalnościowym jest wyświetlane w punktach lojalnościowych, dlatego kasjer nie widział kwoty pieniężnej, którą można było wykorzystać w bieżącej transakcji. Kasjer musiał ręcznie przeliczyć punkty na walutę, zanim klient mógł zapłacić punktami lojalnościowymi. W obecnej wersji po dodaniu wierszy do transakcji kasjer widzi kwotę, jaką można pokryć punktami lojalnościowymi w bieżącej transakcji, dzięki czemu można łatwo zastosować część lub wszystkie punkty lojalnościowe do transakcji. Ponadto kasjer widzi punkty wygasające w ciągu najbliższych 30 dni, więc może zaproponować sprzedaż dodatkową lub wiązaną, aby zmotywować klienta do wydania wygasających punktów w tej transakcji.
 
-    ![Saldo objęte punktami lojalnościowymi.](./media/Points-covered-by-loyalty-balance.png "Wyświetl saldo objęte punktami lojalnościowymi")
+    ![Saldo objęte punktami lojalnościowymi](./media/Points-covered-by-loyalty-balance.png "Wyświetl saldo objęte punktami lojalnościowymi")
 
-    ![Wygasające punkty.](./media/Expiring-points.png "Wyświetlanie wygasające punkty")
+    ![Wygasające punkty](./media/Expiring-points.png "Wyświetlanie wygasające punkty")
 
 - W wersji 8.1.3 udostępniliśmy opcję „płatności lojalnościowej” w kanale biura obsługi. Aby włączyć tę opcję, utwórz typ lojalnościowych metod płatności i skojarz go z biurem obsługi. 
 
     > [!NOTE]
     > Ponieważ płatności lojalnościowe są konfigurowane jako płatności kartą, należy wybrać kartę ze strony **Ustawienia karty**. 
 
-    ![Konfiguracja karty lojalnościowej.](./media/LoyaltyCardSetup.png "Konfiguracja karty lojalnościowej")
+    ![Konfiguracja karty lojalnościowej](./media/LoyaltyCardSetup.png "Konfiguracja karty lojalnościowej")
 
     Po skonfigurowaniu tej opcji odbiorcy mogą wykorzystywać swoje punkty lojalnościowe w biurze obsługi. Ulepszamy też środowisko użytkownika, aby pokazywało „Kwotę pokrywaną przez punkty lojalnościowe”, żeby użytkownicy biura obsługi nie musieli przechodzić do innego ekranu celem sprawdzenia salda w programie lojalnościowym.
 
@@ -140,12 +145,9 @@ Ponadto sprzedawcy detaliczni mogą określać limit maksymalnej liczby punktów
     > Obecnie system zmusza użytkowników do ustawienia sekwencji numerów dla „innych typów działań”, ale nie będzie to krok wymagany w przyszłych wersjach. Aby ustawić sekwencję numerów, przejdź do opcji **Wspólne parametry handlu** \> **Sekwencje numerów** i wybierz sekwencję numerów dla pozycji **Identyfikator innego typu działania w programie lojalnościowym**.
 
 - Aby zapewnić dobrą obsługę klienta i skutecznie rozwiązywać kwerendy klientów, kasjer musi mieć dostęp kompletnego profilu klienta. W wersji 10.0 kasjer będzie mógł wyświetlać szczegóły historii lojalnościową wraz ze skojarzonym programem lojalnościowym oraz informacje warstwy w POS.
-- Jednym z czynników istotnie motywujących klientów do kupowania przez Internet jest bezpłatna lub tania dostawa. Aby umożliwić sprzedawcom detalicznym konfigurowanie promocji na dostawy, w wersji 10.0 wprowadziliśmy nowy rodzaj promocji o nazwie „Rabat progu wysyłki”, w którym sprzedawca detaliczny może definiować progi, po osiągnięciu których odbiorcy otrzymają korzyść w postaci tańszej lub bezpłatnej dostawy. Na przykład, wydaj $35, aby otrzymać darmową wysyłkę w ciągu dwóch dni lub darmową wysyłkę w ciągu dwóch dni dla wszystkich odbiorców w programie lojalnościowym. Ta funkcja wykorzystuje nową funkcję Zaawansowane opłaty automatyczne. Zobacz [dokumentację funkcji Zaawansowane opłaty automatyczne](/dynamics365/unified-operations/retail/omni-auto-charges). Zaawansowane opłaty automatyczne trzeba włączyć dla wysyłania promocji do pracy. Można je włączyć na karcie **Zamówienia odbiorcy** na stronie **Parametry handlu** oraz włączyć konfigurację "Użyj zaawansowanego automatycznego naliczania opłat". Dodatkowo, ponieważ sprzedawca może skonfigurować wiele typów opłat, takich jak obsługa czy instalacja, trzeba określić, która opłata jest uważana za opłatę transportową. Te rabaty są stosowane tylko do opłat transportowych. Aby określić opłatę jako transportową, przejdź do formularza **Kody opłaty** w menu **Sprzedaż detaliczna i inna** \> **Składniki IT w handlu detalicznym i innym** \> **Konfiguracja kanału** \> **Opłaty** i zaznacz pole wyboru „Opłata transportowa” dla żądanych opłat. Teraz można przejść do formularza **rabatu za próg wysyłki** i skonfigurować rabat.
+- Jednym z czynników istotnie motywujących klientów do kupowania przez Internet jest bezpłatna lub tania dostawa. Aby umożliwić sprzedawcom detalicznym konfigurowanie promocji na dostawy, w wersji 10.0 wprowadziliśmy nowy rodzaj promocji o nazwie „Rabat progu wysyłki”, w którym sprzedawca detaliczny może definiować progi, po osiągnięciu których odbiorcy otrzymają korzyść w postaci tańszej lub bezpłatnej dostawy. Na przykład, wydaj $35, aby otrzymać darmową wysyłkę w ciągu dwóch dni lub darmową wysyłkę w ciągu dwóch dni dla wszystkich odbiorców w programie lojalnościowym. Ta funkcja wykorzystuje nową funkcję Zaawansowane opłaty automatyczne. Zobacz [dokumentację funkcji Zaawansowane opłaty automatyczne](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges). Zaawansowane opłaty automatyczne trzeba włączyć dla wysyłania promocji do pracy. Można je włączyć na karcie **Zamówienia odbiorcy** na stronie **Parametry handlu** oraz włączyć konfigurację "Użyj zaawansowanego automatycznego naliczania opłat". Dodatkowo, ponieważ sprzedawca może skonfigurować wiele typów opłat, takich jak obsługa czy instalacja, trzeba określić, która opłata jest uważana za opłatę transportową. Te rabaty są stosowane tylko do opłat transportowych. Aby określić opłatę jako transportową, przejdź do formularza **Kody opłaty** w menu **Sprzedaż detaliczna i inna** \> **Składniki IT w handlu detalicznym i innym** \> **Konfiguracja kanału** \> **Opłaty** i zaznacz pole wyboru „Opłata transportowa” dla żądanych opłat. Teraz można przejść do formularza **rabatu za próg wysyłki** i skonfigurować rabat.
 
     Podobnie jak rabat na produkty, ten rabat uwzględnia wszystkie istniejące standardowe opcje rabatu, takie jak zezwolenie sprzedawcy na ograniczenie tych rabatów za pomocą kuponów, aby tylko odbiorcy z kuponami mogli korzystać z tych rabatów. Ponadto rabaty te wykorzystują również funkcję Grup cen do określenia dostępności takich rabatów. Na przykład sprzedawca może uruchomić te promocje tylko w kanałach online i/lub w różnych kanałów dla pewnych grup odbiorców, takich jak odbiorcy w programie lojalnościowym. Gdy wiersze zamówienia z określonym trybem dostawy spełniają warunki określonego progu, rabat wysyłkowy jest stosowany i ogranicza opłatę transportową na podstawie konfiguracji rabatu. 
 
     > [!NOTE]
     > W przeciwieństwie do innych rabatów okresowych, takich jak ilościowy, prosty, mieszany i progowy rabat wysyłkowy nie tworzy wierszy rabatu, tylko edytuje zmiany opłaty transportowej bezpośrednio i dodaje nazwę rabatu do opisu opłaty.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

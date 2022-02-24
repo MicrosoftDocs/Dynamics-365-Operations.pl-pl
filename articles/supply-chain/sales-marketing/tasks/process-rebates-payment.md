@@ -1,23 +1,25 @@
 ---
 title: Przetwarzanie rabatów za płatność
 description: Ta procedura przedstawia sposób przekonwertowania zatwierdzonych i przetworzonych rabatów dla odbiorców na faktury korygujące.
-author: Henrikan
+author: omulvad
+manager: tfehr
 ms.date: 11/10/2016
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5ce813f0f5d9aa750828b524dd9fdf9b4a9f0854
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b1d32d94daef570e37a1a36d948fe18cd4041e46
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572488"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966162"
 ---
 # <a name="process-rebates-for-payment"></a>Przetwarzanie rabatów za płatność
 
@@ -48,6 +50,3 @@ Ta procedura przedstawia sposób przekonwertowania zatwierdzonych i przetworzony
     * Należy zwrócić uwagę, że do salda odbiorcy została dodana transakcja na kwotę ujemną, reprezentująca łączna kwotę rabatu, bez odwołania do faktury.   
 15. Kliknij przycisk Anuluj.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

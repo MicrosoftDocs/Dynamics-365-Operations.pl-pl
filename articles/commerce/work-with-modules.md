@@ -2,30 +2,35 @@
 title: Praca z modułami
 description: W tym temacie opisano, jak i kiedy używać modułów w Microsoft Dynamics 365 Commerce.
 author: phinneyridge
+manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ce16aa98a37cd5dec60bcdbf86f59f74810da9755a6d3514bdd3e38a21afb748
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 301eb6206fb9e02c3aa7d3c07cf368ba800a1ab9
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728271"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414958"
 ---
 # <a name="work-with-modules"></a>Praca z modułami
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano, jak i kiedy używać modułów w Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Omówienie
 
 Moduły są logicznymi blokami konstrukcyjnymi, które tworzą strukturę strony i mają różne cele i zakresy. Niektóre moduły są kontenerami wysokiego poziomu, a jedynym celem jest przechowywanie i organizowanie innych modułów (modułów podrzędnych). Inne moduły, takie jak prosty moduł rozmieszczenia obrazów, mają ściśle określony cel. Inne moduły, takie jak moduł karuzeli, znajdują się gdzieś między tymi dwiema kategoriami.
 
@@ -53,7 +58,7 @@ Większość typowych działań na stronie codzienne i tworzenie zawartości obe
 
 Na poniższej ilustracji pokazano, jak moduły są zagnieżdżone w gniazdach nadrzędnego modułu kontenera.
 
-![Moduły zagnieżdżone.](../commerce/media/basic-module-nesting.png)
+![Moduły zagnieżdżone](../commerce/media/basic-module-nesting.png)
 
 ## <a name="add-or-remove-modules"></a>Dodaj lub usuń moduły
 
@@ -168,6 +173,3 @@ Aby skonfigurować moduł kontenera na stronie, wykonaj następujące kroki.
 
 [Praca z grupami publikowania](publish-groups.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: Świadectwa wywozowe UE
 description: Ten artykuł zawiera informacje dotyczące świadectw wywozowych umożliwiających wprowadzanie towarów na teren Unii Europejskiej (UE).
 author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustEntryCertificateJour_W, CustParameters, CustTable, SalesTable
 audience: Application User
@@ -14,12 +16,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 00b9e80a931c57722a92c3432f9c1006082b1bfbdd844d72c4d5962e106925dc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f91317f327852bc44a8c88887c18b69f6ec020e8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779797"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4962781"
 ---
 # <a name="eu-entry-certificates"></a>Świadectwa wywozowe UE
 
@@ -123,6 +125,3 @@ Jeśli nie masz dostępu do stron, które są używane do ukończenia tego zadan
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

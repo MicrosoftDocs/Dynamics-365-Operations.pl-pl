@@ -73,6 +73,3 @@ Aby utworzyć lub skopiować szablon procesu biznesowego lub aby rozpocząć pro
 
 Aby wyświetlić aktywne procesy i skojarzone z nimi zadania, otwórz obszar roboczy **Procesy biznesowe**.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

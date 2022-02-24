@@ -2,23 +2,26 @@
 title: Zestawienie obrotów i sald dla Polski
 description: Ten temat zawiera informacje o funkcji zestawienia obrotów i sald dla Polski.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.custom: 264354
 ms.search.region: Poland
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f0e8d3b33dffd18ed515ad5ac12bd835378490c119ea0c0e0ad3668aa742e47d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1a7cffe47ac344af066fcd5565e97479a331f091
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774215"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408386"
 ---
 # <a name="turnover-and-balances-statement-for-poland"></a>Zestawienie obrotów i sald dla Polski
 
@@ -38,6 +41,3 @@ Standardowy sposób obliczania salda konta polega na zapisaniu różnicy między
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

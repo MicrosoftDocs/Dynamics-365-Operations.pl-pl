@@ -1,32 +1,33 @@
 ---
 title: Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (13 kwietnia 2020)
 description: W tym artykule opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Human Resources w dniu 13 kwietnia 2020 roku.
-author: andreabichsel
-ms.date: 04/13/2020
+author: Darinkramer
+manager: AnnBe
+ms.date: 4/13/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: jaredha
+ms.author: dkrame
 ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b5af74329fa741a443932a1007a6c2ef6abd3445
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: a7ea8348cfe1c66d6d0cfa39b46c8e69111fe185
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062218"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528528"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-13-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (13 kwietnia 2020)
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 W tym artykule opisano nowe oraz zmienione funkcje dostępne w Dynamics 365 Human Resources. Zmiany dotyczą kompilacji o numerze 8.1.3136. Liczby w nawiasach w niektórych nagłówkach odnoszą się do numerów pomocy w LCS w charakterze informacyjnym.
 
@@ -42,9 +43,9 @@ W przypadku zmiany pole **Dokładność zaokrąglania** jest teraz dostępne po 
 
 Teraz można edytować datę zakończenia rejestracji bez uzyskiwania błędu „Podstawa daty naliczania pola musi być wypełniona”.
 
-## <a name="employment-entity-doesnt-sync-to-dataverse-430834"></a>Jednostka zatrudnienia nie jest synchronizowana z Dataverse (430834)
+## <a name="employment-entity-doesnt-sync-to-common-data-service-430834"></a>Jednostka zatrudnienia nie jest synchronizowana z Common Data Service (430834)
 
-Ta zmiana polega na usunięciu usterki, do której nie wykonano synchronizacji z Dataverse danych dotyczących zatrudnienia po dodaniu wymiarów finansowych. 
+Ta zmiana polega na usunięciu usterki, do której nie wykonano synchronizacji z Common Data Service danych dotyczących zatrudnienia po dodaniu wymiarów finansowych. 
 
 ## <a name="remove-multi-parenting-for-work-calendar-time-interval-entity-431775"></a>Usuń wiele obiektów nadrzędnych dla jednostki Zakres czasu w kalendarzu roboczym (431775)
 
@@ -93,8 +94,6 @@ Jeśli Podgląd dokumentów przechowywanych w SharePoint nie działa, spróbuj w
 ## <a name="see-also"></a>Informacje dodatkowe
 
 [Nowości i zmiany w rozwiązaniu Human Resources](hr-admin-whats-new.md)</br>
-[Omówienie rozwiązania Dynamics 365 Human Resources 2019, wydanie 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Omówienie rozwiązania Dynamics 365 Human Resources 2019, wydanie 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Aktualizowanie procesu](hr-admin-setup-update-process.md)</br>
 [Zarządzanie funkcjami](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

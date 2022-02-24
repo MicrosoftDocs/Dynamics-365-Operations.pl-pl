@@ -1,50 +1,58 @@
 ---
 title: Zarządzanie wnioskami o urlop w Teams
 description: W tym temacie przedstawiono sposób wysyłania wniosku o urlop w aplikacji Dynamics 365 Human Resources w rozwiązaniu Microsoft Teams.
-author: twheeloc
-ms.date: 12/15/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeaveAbsenceWorkspace
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d004e33d01dbd171626d7e23f93df081bc0210a9
-ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
+ms.openlocfilehash: d24c257054578282f1a2eafa050094194a358aa0
+ms.sourcegitcommit: 369639cd92e03fe792ed9d61a329d842aafa052f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "7924754"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "4420154"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Zarządzanie wnioskami o urlop w Teams
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+[!include [banner](includes/preview-feature.md)]
 
-Aplikacja Dynamics 365 Human Resources w rozwiązaniu Microsoft Teams umożliwia szybkie wysyłanie wniosku o urlop i wyświetlanie informacji dotyczących bilansu nieobecności w rozwiązaniu Microsoft Teams. Możesz wejść w interakcję z botem, aby poprosić o informacje i złożyć wniosek o urlop. Karta **Czas wolny** zawiera bardziej szczegółowe informacje. Możesz też wysyłać użytkownikom informacje o zbliżającym się czasie wolnym w Teams i na czatach poza aplikacją Human Resources.
+Aplikacja Microsoft Dynamics 365 Human Resources w rozwiązaniu Microsoft Teams umożliwia szybkie wysyłanie wniosku o urlop i wyświetlanie informacji dotyczących bilansu nieobecności w rozwiązaniu Microsoft Teams. Możesz wejść w interakcję z botem, aby poprosić o informacje i złożyć wniosek o urlop. Karta **Czas wolny** zawiera bardziej szczegółowe informacje. Możesz też wysyłać użytkownikom informacje o zbliżającym się czasie wolnym w zespołach i na czatach poza aplikacją Human Resources.
 
 ## <a name="install-the-app"></a>Instalowanie aplikacji
 
-Aplikację Dynamics 365 Human Resources można znaleźć w sklepie rozwiązania Teams.
+Aplikację Human Resources można znaleźć w sklepie rozwiązania Teams.
 
-1. W Microsoft Teams przejdź do listy aplikacji.
+1. W rozwiązaniu Microsoft Teams wybierz symbol wielokropka.
+
+   ![Symbol wielokropka w aplikacji obsługującej urlopy Human Resources w Teams](./media/hr-teams-leave-app-ellipses.png)
  
 2. Wyszukaj aplikację Dynamics 365 Human Resources, a następnie wybierz kafelek **Human Resources**.
 
-> [!NOTE]
-> Począwszy od 20 grudnia 2021 roku usługi aplikacji Human Resources App (wersja 1.1.4) hostowane w dzierżawie firmy Microsoft zostaną wyłączone. Najnowsze rozszerzenie (wersja 1.1.5) jest dostępne do instalacji. Aby uzyskać więcej informacji, zobacz temat [Zarządzanie wnioskami o urlop w Teams](hr-admin-teams-leave-app.md#update-app).
+   ![Kafelek HR w aplikacji obsługującej urlopy Human Resources w Teams](./media/hr-teams-leave-app-human-resources-tile.png)
 
 3. Wybierz przycisk **Dodaj**, aby zainstalować aplikację.
 
+   ![Instalacji aplikacji obsługującej urlopy Human Resources w Teams](./media/hr-teams-leave-app-in-store.png)
+
 Jeśli aplikacja nie zaloguje Cię automatycznie, wybierz kartę **Ustawienia**, aby się zalogować.
 
+![Karta Ustawienia w aplikacji obsługującej urlopy Human Resources w Teams](./media/hr-teams-leave-app-settings-tab.png)
+
 > [!NOTE]
-> Jeśli nie widzisz okna logowania, zaktualizuj ustawienia przeglądarki, aby zezwalać na wyskakujące okienka. 
+> Jeśli nie widzisz okna dialogowego logowania, sprawdź ustawienia przeglądarki, aby zezwolić na wyskakujące okienka. 
 
 Jeśli masz dostęp do więcej niż jednego wystąpienia aplikacji Human Resources, możesz wybrać środowisko, z którym chcesz się połączyć, na karcie **Ustawienia**.
 
@@ -55,70 +63,80 @@ Jeśli masz dostęp do więcej niż jednego wystąpienia aplikacji Human Resourc
 
 Po zainstalowaniu aplikacji zostanie wyświetlony komunikat powitalny informujący o typach akcji, które bot może wykonać w Twoim imieniu.
 
+![Komunikat powitalny w aplikacji obsługującej urlopy Human Resources w Teams](./media/hr-teams-leave-app-bot.png)
+ 
 > [!NOTE]
-> Kiedy po raz pierwszy wchodzisz w interakcję z botem, być może będziesz musiał się zalogować. Jeśli nie widzisz okna logowania, zaktualizuj ustawienia przeglądarki, aby zezwalać na wyskakujące okienka.
+> Podczas pierwszej interakcji z botem być może trzeba będzie się zalogować. Jeśli nie widzisz okna dialogowego logowania, sprawdź ustawienia przeglądarki, aby zezwolić na wyskakujące okienka.
 
 Możesz poprosić bota o wykonanie następujących zadań:
 
-- Zobacz swoje aktualne salda urlopów. Na przykład wyślij wiadomość o treści „Wyświetlanie salda urlopów”.
+- Wyświetlenie bilansu nieobecności dla każdego typu urlopu, w którym Cię zarejestrowano.
 
-- Uruchomienie wniosku o urlop w Twoim imieniu. Na przykład, wyślij wiadomość o treści „Weź wolne” lub „Chcę wziąć wolne w następny czwartek i piątek”, aby być bardziej konkretnym w żądaniu urlopu dla typu urlopu. 
+   ![Pokazywanie bilansów w aplikacji obsługującej urlopy Human Resources w Teams](./media/hr-teams-leave-app-bot-balances.png)
+ 
+- Wyświetlenie dodatkowych szczegółów dotyczących określonego typu urlopu.
 
-  ![Rozpoczynanie rozmowy z wnioskami o urlop w Teams.](./media/hr-teams-leave-app-initiate.png)
+   ![Pokazywanie szczegółów w aplikacji obsługującej urlopy Human Resources w Teams](./media/hr-teams-leave-app-bot-details.png)
 
-- Bot czatu wypełni dla Ciebie prośbę o urlop. Wybierz opcję **Żądanie czasu wolnego** i edytuj szczegóły swojego żądania.
+- Uruchomienie wniosku o urlop w Twoim imieniu.
 
-   Aby przesłać wnioski urlopowe dotyczące wielu typów urlopów dla tej samej daty, wybierz z menu **Więcej opcji** opcję **Podziel dzień**. 
+   ![Wysyłanie wniosków o urlop w aplikacji obsługującej urlopy Human Resources w Teams](./media/hr-teams-leave-app-bot-request.png)
+ 
+Po rozpoczęciu żądania urlopu można skorygować dni bezpośrednio na karcie.
 
-   Jeśli wybierzesz urlop na pół dnia, a jednostką wniosku o urlop są dni, możesz określić, czy chcesz wnioskować o wolne za pierwsze pół dnia, czy za drugie pół dnia, wybierając opcję **Definicja połowy dnia** z menu **Więcej opcji**.
-   
-   ![Definicje połowy dnia.](./media/HalfDayDefinitions.png)
+![Edytowanie wniosku o urlop w aplikacji obsługującej urlopy Human Resources w Teams](./media/hr-teams-leave-app-bot-edit.png)
+ 
+Po zakończeniu wprowadzania informacji wybierz **Prześlij**, aby przesłać wniosek do zatwierdzenia. Możesz również wybrać pozycję **Zapisz jako wersję roboczą**, aby wrócić do wniosku później.
 
-- Po zakończeniu edytowania szczegółów wniosku urlopowego wybierz opcję **Prześlij**, aby przesłać go do zatwierdzenia.
-
-  ![Przesyłanie wniosku urlopowego.](./media/hr-teams-leave-app-submit.png)
+![Przesyłanie wniosku o urlop w aplikacji obsługującej urlopy Human Resources w Teams](./media/hr-teams-leave-app-bot-submit.png)
 
 ## <a name="manage-your-leave-in-teams"></a>Zarządzanie urlopami w Teams
 
-Na karcie **Czas wolny** można wyświetlić następujące informacje: 
+Na karcie **Czas wolny** można wyświetlić następujące informacje:
 
 - Informacje na temat bilansu dla każdego typu urlopu, w którym Cię zarejestrowano
 
 - Nadchodzące wnioski o urlop
 
-- Żądania czasu wolnego
+- Wnioski dotyczące czasu wolnego
 
 - Wnioski o urlopu w wersji roboczej
+
+![Karta Czas wolny w aplikacji obsługującej urlopy Human Resources w Teams](./media/hr-teams-leave-app-timeoff-tab.png)
  
 ### <a name="create-a-new-request"></a>Tworzenie nowego wniosku
 
 1. Aby utworzyć nowy wniosek o urlop, wybierz pozycję **Nowy wniosek**.
 
+   ![Nowy wniosek w aplikacji obsługującej urlopy Human Resources w Teams](./media/hr-teams-leave-app-timeoff-tab-new.png)
+
 2. Wprowadź dzień lub dni, w które chcesz wziąć urlop, a następnie wybierz pozycję **Dodaj**.
 
-   ![Dodawanie czasu wolnego w aplikacji obsługującej urlopy Human Resources w Teams.](./media/TimeOffHours.png)
+   ![Dodawanie czasu wolnego w aplikacji obsługującej urlopy Human Resources w Teams](./media/hr-teams-leave-app-timeoff-tab-add.png)
 
 3. Wprowadź kod przyczyny, jeśli ma on zastosowanie. Wprowadź komentarze i dodaj załączniki.
 
-4. Jeśli chcesz przesłać kilka wniosków o urlop na tę samą datę dla różnych typów urlopu., wybierz z menu **Więcej opcji** opcję **Podziel dzień**.
-
-5. Wybierz opcję **Definicja połowy dnia**, aby określić, czy chcesz złożyć wniosek o pierwszą połowę, czy drugą połowę dnia wolnego. Ta opcja jest dostępna w przypadku, gdy jednostka wniosku urlopowego jest w dniach, a wnioskowana ilość wynosi 0,5 dnia.
-
-6. Po zakończeniu wprowadzania informacji wybierz **Prześlij**, aby przesłać wniosek do zatwierdzenia. Możesz również wybrać **Zapisz jako wersję roboczą**, aby wrócić do wniosku później.
+4. Po zakończeniu wprowadzania informacji wpisz **Prześlij**, aby przesłać wniosek do zatwierdzenia. Możesz również wpisać **Zapisz jako wersję roboczą**, aby wrócić do wniosku później.
 
 ### <a name="manage-draft-requests"></a>Zarządzanie wnioskami w wersji roboczej
 
 1. Wybierz kartę **Wersje robocze**.
 
+   ![Karta Wersje robocze w aplikacji obsługującej urlopy Human Resources w Teams](./media/hr-teams-leave-app-drafts-tab.png)
+
 2. Wybierz symbol ołówka, aby edytować wniosek, lub symbol kosza, aby usunąć wniosek.
 
 3. Wprowadź potrzebne zmiany. Po zakończeniu wprowadzania informacji wpisz **Prześlij**, aby przesłać wniosek do zatwierdzenia. Możesz również wybrać pozycję **Zapisz jako wersję roboczą**, aby wrócić do wniosku później.
+
+   ![Edytowanie wersji roboczej w aplikacji obsługującej urlopy Human Resources w Teams](./media/hr-teams-leave-app-drafts-edit.png)
    
 ### <a name="respond-to-teams-notifications"></a>Odpowiadanie na powiadomienia Teams
 
-Gdy użytkownik lub pracownik, dla którego użytkownik jest osobą zatwierdzającą prześle wniosek urlopowy, użytkownik otrzyma powiadomienie w aplikacji Human Resources w Teams. Możesz wybrać powiadomienie, aby wyświetlić wniosek urlopowy. Powiadomienia są również wyświetlane w obszarze **Czatu**.
+Gdy użytkownik lub pracownik, dla którego użytkownik jest osobą zatwierdzającą prześle wniosek urlopowy, użytkownik otrzyma powiadomienie w aplikacji Human Resources w Teams. Możesz wybrać powiadomienie, aby je wyświetlić. Powiadomienia są również wyświetlane w obszarze **Czatu**.
 
 Jeśli jesteś osobą zatwierdzającą, możesz wybrać opcję **Zatwierdzanie** lub **Odmowa** w powiadomieniu. Można również podać opcjonalny komunikat.
+
+![Wnioski o urlop w aplikacji obsługującej urlopy Human Resources w Teams](./media/hr-teams-leave-app-notification.png)
 
 ## <a name="send-upcoming-time-off-information-to-your-coworkers"></a>Wysyłanie nadchodzących informacji o czasie do współpracujących
 
@@ -126,13 +144,19 @@ Po zainstalowaniu aplikacji Human Resources dla Teams można łatwo wysyłać do
 
 1. W zespole lub rozmowę w Teams wybierz przycisk Human Resources poniżej okna rozmowy.
 
-   ![Przycisk Human Resources poniżej okna rozmowy.](./media/hr-teams-leave-app-chat-button.png)
+   ![Przycisk Human Resources poniżej okna rozmowy](./media/hr-teams-leave-app-chat-button.png)
 
 2. Wybierz żądanie opuszczenia, które chcesz udostępnić. Jeśli chcesz udostępnić wersję roboczą wniosku urlopowego, najpierw wybierz opcję **Wersje robocze**.
 
+   ![Wybierz nadchodzące żądanie urlopu do udostępnienia](./media/hr-teams-leave-app-chat-search.png)
+
 Twoje żądanie opuszczenia będzie wyświetlane w rozmowie.
 
-Jeśli udostępniono wersję roboczą żądania, będzie ona wyświetlana jako wersja robocza.
+![Karta z prośbą o urlop w Human Resources](./media/hr-teams-leave-app-chat-card.png)
+
+Jeśli udostępniono wersję roboczą żądania, będzie ona wyświetlana jako wersja robocza:
+
+![Karta wersja robocza z prośbą o urlop w Human Resources](./media/hr-teams-leave-app-chat-draft-card.png)
 
 ## <a name="view-your-teams-leave-calendar"></a>Wyświetlanie kalendarza urlopów zespołu
 
@@ -140,53 +164,21 @@ Jeśli jesteś menedżerem z bezpośrednimi podwładnymi, możesz wyświetlić z
 
 1. W aplikacji zasoby ludzkie w zespołach wybierz opcję **Czas wolny**.
 
-2. Wybierz **Kalendarz zespołu**. W kalendarzu są wyświetlane zatwierdzone i oczekujące urlopy bezpośrednich podwładnych.
+2. Wybierz **Kalendarz zespołu**.
 
-   > [!NOTE]
-   > Jeśli nie możesz zobaczyć kalendarza zespołu, poproś administratora o jego włączenie. Aby uzyskać więcej informacji, zobacz temat [Instalowanie i konfigurowanie](hr-admin-teams-leave-app.md#install-and-setup).
+   ![Wyświetl kalendarz w aplikacji Human Resources w Teams](./media/hr-teams-leave-app-view-calendar.png)
 
-## <a name="supported-languages"></a>Obsługiwane języki
+W kalendarzu są wyświetlane zatwierdzone i oczekujące urlopy bezpośrednich podwładnych.
 
-Aplikacja Dynamics 365 Human Resources w Teams obsługuje następujące języki:
-
-| Identyfikator lokalizacji | Język |
-| --- | --- |
-| de-DE | Niemiecki (Niemcy) |
-| es-ES | Hiszpański (Hiszpania) |
-| es-MX | hiszpański (Meksyk) |
-| fr-CA | francuski (Kanada) |
-| fr-FR | Francuski (Francja) |
-| it-IT | Włoski (Włochy) |
-| nl-NL | Holenderski (Holandia) |
-| pt-BR | Portugalski (Brazylia) |
-| tr-TR | Turecki (Turcja) |
-| zh-CN | Chiński (Uproszczony) |
+![Kalendarz urlopów w aplikacji Human Resources w Teams](./media/hr-teams-leave-app-calendar.png)
 
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
 
-Jeśli masz problemy z zalogowaniem się lub użyciem aplikacji Dynamics 365 Human Resources w aplikacji Teams, spróbuj wykonać poniższe instrukcje rozwiązywania problemów. Jeśli nadal masz problemy po diagnostyce, skontaktuj się z pomocą techniczną. Aby uzyskać więcej informacji, zobacz [Uzyskiwanie pomocy technicznej](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
+Jeśli masz problemy z zalogowaniem się lub użyciem aplikacji Human Resources w aplikacji Teams, spróbuj wykonać poniższe instrukcje rozwiązywania problemów. Jeśli nadal masz problemy po diagnostyce, skontaktuj się z pomocą techniczną. Aby uzyskać więcej informacji, zobacz [Uzyskiwanie pomocy technicznej](hr-admin-troubleshooting-support.md).
 
 ### <a name="cant-sign-into-the-human-resources-app-in-teams"></a>Nie można zalogować się do aplikacji do aplikacji Human Resources w Teams
 
 Jeśli nie możesz zalogować się do aplikacji, być może konto używane do logowania w Microsoft Teams nie jest skojarzone z rekordem pracownika w rozwiązaniu Dynamics 365 Human Resources. Skontaktuj się z administratorem systemu, aby upewnić się, że rekord pracownika jest poprawnie skojarzony.
-
-### <a name="cant-find-the-dynamics-365-human-resources-environment-in-settings"></a>Nie można odnaleźć środowiska Dynamics 365 Human Resources w ustawieniach
-
-Jeśli nie możesz wybrać prawidłowego środowiska Dynamics 365, rekord użytkownika mógł nie zostać poprawnie zsynchronizowany. Skontaktuj się z administratorem systemu, aby ponownie utworzyć rekord użytkownika i powiązać go z poświadczeniami użytkownika. Następnie spróbuj zalogować się do aplikacji Human Resources dla Microsoft Teams za kilka minut.
-
-### <a name="translations-dont-display-correctly"></a>Tłumaczenia nie są wyświetlane prawidłowo
-
-Jeśli tłumaczenia nie są wyświetlane zgodnie z oczekiwaniami, upewnij się, że język wybrany w aplikacji Teams jest zgodny z językiem wybranym w **Opcjach użytkownika** zasobów ludzkich.
-
-W zespołów sprawdź **Język aplikacji** w **Ustawieniach**.
-
-![Ustawienia Teams.](./media/hr-teams-leave-app-settings.png)
-
-W menu Zasoby ludzkie wybierz pozycję **Ustawienia**, a następnie wybierz **Opcje użytkownika**. Upewnij się, że pole **Język** pasuje do pola **Języka aplikacji** w Teams.
-
-![Opcje użytkownika w Human Resources.](./media/hr-teams-leave-app-user-options.png)
-
-Jeśli nadal wystąpią problemy z tłumaczeniami, poinformuj nas o tym. Aby uzyskać więcej informacji, przejrzyj temat [Uzyskaj pomoc techniczną dla aplikacji Finance and Operations lub usług Lifecycle Services (usługi LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 
 ### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Błąd podczas zatwierdzania żądań urlopu w aplikacji Human Resources w Teams
 
@@ -196,14 +188,6 @@ Jeśli otrzymasz komunikat o błędzie podczas próby zatwierdzenia wniosków o 
 
 2. Sprawdź, czy jesteś prawidłową osobą zatwierdzającą żądanie, sprawdzając ustawienia przepływu pracy do zatwierdzenia urlopu. Aby uzyskać więcej informacji o przepływach pracy wniosków o urlop, zobacz temat [Tworzenie przepływu pracy wniosku o urlop](hr-leave-and-absence-workflow.md).
 
-### <a name="leave-approvers-dont-receive-teams-chat-messages-to-approve-leave-requests"></a>Osoby zatwierdzające urlopy nie otrzymują komunikatów rozmowy Teams, aby zatwierdzać wnioski urlopowe
-
-1. Upewnij się, że powiadomienia są włączone dla środowiska i użytkownika. Więcej informacji znajdziesz w tematach [Włączanie powiadomień dla aplikacji Human Resources w Teams](hr-admin-teams-leave-app.md#enable-notifications-for-the-human-resources-app-in-teams) i [Włączanie i wyłączanie powiadomień Teams dla poszczególnych użytkowników](hr-admin-teams-leave-app.md#turn-teams-notifications-on-or-off-for-individual-users).
-
-2. Upewnij się, że użytkownicy są zalogowani na karcie **Rozmowy** z użyciem tych samych poświadczeń, których używają do zatwierdzania wniosków urlopowych. Użyj komunikatów „wyloguj się”, a następnie „zaloguj się”, aby zalogować się przy użyciu odpowiednich poświadczeń.
-
-3. Jeśli problem będzie nadal występował, sprawdź stan zadania wsadowego **Zdarzenia biznesowe** jako administrator systemu. Jeśli ten etap jest w stanie **oczekiwania** lub **wykonywania**, sprawdź ponownie za kilka minut. Jeśli ten stan pozostanie niezmieniony, zarejestruj bilet pomocy technicznej, aby nasz zespół był w stanie pomóc w rozwiązaniu problemu.
-
 ## <a name="known-accessibility-issues"></a>Znane problemy dotyczące ułatwień dostępu
 
 W aplikacji Human Resources w Teams pojawiają się następujące problemy ułatwień dostępu (zostaną one naprawione w kolejnych wersjach aplikacji).
@@ -211,9 +195,11 @@ W aplikacji Human Resources w Teams pojawiają się następujące problemy ułat
 | Wystawienie | Obejście lub wyjaśnienie problemu |
 | --- | --- |
 | Powiększenie do 400% na pulpicie powoduje ukrycie niektórych przycisków akcji. | Zaleca się używanie lupy zamiast powiększenia do czasu, aż usuniemy problemy z tym poziomem powiększenia. |
-| Na karcie **Czas wolny** funkcja VoiceOver podczas odczytywania nagłówka siatki czasu wolnego informuje o akcji powiązanej z przyciskiem. | Nagłówek i elementy siatki są grupowane według lat i można je zwinąć. VoiceOver interpretuje tę prezentację jako element praktyczny, ale tak nie jest. |
+| Na karcie **Czas wolny** funkcja VoiceOver podczas odczytywania nagłówka siatki czasu wolnego informuje o akcji powiązanej z przyciskiem. | Nagłówek i elementy siatki są grupowane według lat i można je zwinąć. VoiceOver błędnie interpretuje je jako pozycję, z którą można powiązać działanie. |
+| Jeśli przeciągniesz palcem po ekranie, kiedy wyskakujące okienko lub menu jest otwarte, VoiceOver pominie odczytywanie zawartości okienka lub menu. | Przeglądaj zawartość, używając skanera linii papilarnych. |
 | Na karcie **Czas wolny** podczas przechodzenia do **Kodu przyczyny** w nowym wniosku uruchamia się dodatkowy gest przeciągnięcia. | Nie ma żadnego ukrytego formantu, do którego można uzyskać dostęp za pomocą tego gestu przeciągnięcia. |
 | Przy otwartym kalendarzu przeciągnięcie palcem na karcie **Czas wolny** prowadzi do obszaru poza formantem, zamiast na górę nowego wniosku lub do trybu edycji wniosku. | Kiedy dojdziesz do opcji **Przejdź do dzisiaj**, potraktuj tę pozycję jako koniec formantu i przesuń palcem w odwrotnym kierunku, aby wrócić na górę strony. |
+| VoiceOver nie odczytuje etykiet dat. | Daty, które wyświetlają się w parach, to zawsze **Data rozpoczęcia** i **Data zakończenia**. |
 | Na karcie **Czatu** podczas wpisywania daty przy użyciu narzędzia wspomagającego lub nawigacji z klawiatury obraz przeskakuje na górę strony. | Naciskaj klawisz Tab, aż przejdziesz z powrotem do obszaru wpisywania wiadomości. |
 
 ## <a name="privacy-notice"></a>Klauzula prywatności
@@ -232,17 +218,14 @@ Aby zarządzać ustawieniami administratora dla aplikacji Microsoft Teams, przej
 
 Podczas korzystania z aplikacji Dynamics 365 Human Resources w Microsoft Teams, niektóre dane klientów mogą przepływać poza region geograficzny, w którym wdrożona jest usługa Human Resources Twojego dzierżawcy.
 
-Dynamics 365 Human Resources przesyła szczegóły żądania urlopu pracownika i zadania przepływu pracy do siatki zdarzeń Microsoft Azure i do Microsoft Teams. Dane te mogą być przechowywane w Microsoft Azure Event Grid przez maksymalnie 24 godziny i przetwarzane w Stanach Zjednoczonych. Są szyfrowane w tranzycie i w stanie spoczynku i nie są używane przez firmę Microsoft ani podsystemy do poprawy szkoleń lub usług. Aby zrozumieć miejsce przechowywania danych w Teams, zobacz: [Lokalizacja danych w Microsoft Teams](/microsoftteams/location-of-data-in-teams?preserve-view=true&view=o365-worldwide).
+Dynamics 365 Human Resources przesyła szczegóły żądania urlopu pracownika i zadania przepływu pracy do siatki zdarzeń Microsoft Azure i do Microsoft Teams. Dane te mogą być przechowywane w Microsoft Azure Event Grid przez maksymalnie 24 godziny i przetwarzane w Stanach Zjednoczonych. Są szyfrowane w tranzycie i w stanie spoczynku i nie są używane przez firmę Microsoft ani podsystemy do poprawy szkoleń lub usług. Aby zrozumieć miejsce przechowywania danych w Teams, zobacz: [Lokalizacja danych w Microsoft Teams](https://docs.microsoft.com/microsoftteams/location-of-data-in-teams?view=o365-worldwide&preserve-view=true).
 
-W przypadku zawracania do bot rozmowy w aplikacji Human Resources zawartość konwersacji może być przechowywana w Azure Cosmos DB i przekazywana do Microsoft Teams. Te dane mogą być przechowywane w usłudze Azure Cosmos DB przez maksymalnie 24 godziny i mogą być przetwarzane poza regionem geograficznym, w którym wdrożona jest usługa HR dzierżawcy, są szyfrowane podczas przesyłania i w spoczynku i nie są używane przez firmę Microsoft ani jej podprocesorów szkolenia lub ulepszenia usług. Aby zrozumieć miejsce przechowywania danych w Teams, zobacz: [Lokalizacja danych w Microsoft Teams](/microsoftteams/location-of-data-in-teams?preserve-view=true&view=o365-worldwide).
+W przypadku zawracania do bot rozmowy w aplikacji Human Resources zawartość konwersacji może być przechowywana w Azure Cosmos DB i przekazywana do Microsoft Teams. Te dane mogą być przechowywane w usłudze Azure Cosmos DB przez maksymalnie 24 godziny i mogą być przetwarzane poza regionem geograficznym, w którym wdrożona jest usługa HR dzierżawcy, są szyfrowane podczas przesyłania i w spoczynku i nie są używane przez firmę Microsoft ani jej podprocesorów szkolenia lub ulepszenia usług. Aby zrozumieć miejsce przechowywania danych w Teams, zobacz: [Lokalizacja danych w Microsoft Teams](https://docs.microsoft.com/microsoftteams/location-of-data-in-teams?view=o365-worldwide&preserve-view=true).
  
-Aby ograniczyć dostęp do aplikacji Human Resources w Microsoft Teams organizacji lub użytkowników w organizacji, należy zapoznać się z tematami [Zarządzanie zasadami uprawnień aplikacji w Microsoft Teams](/MicrosoftTeams/teams-app-permission-policies).
+Aby ograniczyć dostęp do aplikacji Human Resources w Microsoft Teams organizacji lub użytkowników w organizacji, należy zapoznać się z tematami [Zarządzanie zasadami uprawnień aplikacji w Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-app-permission-policies).
 
 ## <a name="see-also"></a>Informacje dodatkowe
 
 [Pobieranie i instalowanie aplikacji Microsoft Teams](https://support.office.com/article/download-and-install-microsoft-teams-422bf3aa-9ae8-46f1-83a2-e65720e1a34d)</br>
 [Centrum pomocy aplikacji Microsoft Teams](https://support.office.com/teams)</br>
 [Aplikacja Human Resources w Teams](hr-admin-teams-leave-app.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

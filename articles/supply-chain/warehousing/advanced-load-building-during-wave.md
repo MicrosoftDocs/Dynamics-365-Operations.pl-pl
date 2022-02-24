@@ -2,23 +2,26 @@
 title: Zaawansowane tworzenie ładunku podczas grupy czynności
 description: Ten temat zawiera informacje dotyczące zaawansowanego tworzenia ładunku podczas grupy czynności, które automatycznie przypisuje wysyłki do istniejących grup czynności w trakcie ich wykonywania. Dzięki temu można tworzyć znaczące ładunki odpowiadające ciężarówkom bez konieczności używania pulpitu planowania wysyłki ładunku.
 author: mirzaab
+manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSPostMethod,WHSWaveTemplateTable,WHSLoadMixGroup,WHSLoadBuildTemplate, WHSWaveTableListPage, TMSLoadBuildTemplateApply, TMSLoadBuildTemplates, TMSLoadBuildTemplateCreate
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 08e44b4e37f28ec91eeb8e53930de5133607bd66
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.9
+ms.openlocfilehash: 7f51b3d65c8dd1e11296956c37ef9dfe568e5ec2
+ms.sourcegitcommit: d9bffbeae2ba14f06294dd275383077d4d65c4fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574744"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "4654205"
 ---
 # <a name="advanced-load-building-during-wave"></a>Zaawansowane tworzenie ładunku podczas grupy czynności
 
@@ -247,6 +250,3 @@ W tym scenariuszu przedstawiono sposób, w jaki ustawienia opisane wcześniej w 
 1. W nowo utworzonym zamówieniu sprzedaży, na skróconej karcie **Wiersze zamówienia sprzedaży** wybierz opcję **Dodaj wiersz**, aby dodać kolejny wiersz.
 1. W tym nowym wierszu ustaw pole **Numer pozycji** na wartość *M9200* oraz pole **Ilość** na *1*.
 1. Powtórz wiersze od 6 do 9, aby zarezerwować wiersz i zwolnić go do magazynu. Tak jak wcześniej, system tworzy **nową** wysyłkę dla dodanego wiersza. Ponieważ jednak przedmiot pochodzi z grupy towarów **CarAudio**, **nie spełnia ograniczeń ustawionych dla grupy mieszania ładunków**. Dlatego jest **dodawany do nowego ładunku**. Jeśli grupa mieszania ładunku nie zostałaby określona w szablonie kompilacji ładunku, ta wysyłka zostałaby dodana do pierwszego ładunku.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

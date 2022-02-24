@@ -2,12 +2,15 @@
 title: Rozpoczynanie eksploatacji — często zadawane pytania
 description: Ten temat zawiera listę często zadawanych pytań dotyczących sposobu przychodzenia do projektu implementacji Dynamics 365 Human Resources.
 author: rachel-profitt
+manager: tfehr
 ms.date: 10/13/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -15,21 +18,16 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c449ae6eb84fb4150072c386d02b100ca3cca219
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: cbf00f7428c9b1852a5bf54fd7e30a3bddc1a31e
+ms.sourcegitcommit: 0e60df840688932795b9c8f8fd45d98f5ab6ba8c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067233"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4668952"
 ---
 # <a name="go-live-faq"></a>Rozpoczynanie eksploatacji — często zadawane pytania 
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Ten temat zawiera listę często zadawanych pytań dotyczących sposobu przychodzenia do projektu implementacji Dynamics 365 Human Resources. 
 
@@ -50,7 +48,7 @@ Aby zapoznać się z listą wymagań wstępnych, przejrzyj temat  [Przygotowyw
 
 ## <a name="what-is-a-go-live-assessment"></a>Co to jest Ocena rozpoczęcia eksploatacji?  
 
-Ocena rozpoczęcia eksploatacji jest częścią  [programu Microsoft FastTrack](/dynamics365/fasttrack/). Podczas tego przeglądu architekt rozwiązania ocenia, czy projekt implementacji jest gotowy do pomyślnej migracji i przejścia do rozpoczęcia eksploatacji. Ten przegląd jest wymagany dla każdego projektu implementacji, zanim będzie można zażądać jego wdrożenia w środowisku produkcyjnym. 
+Ocena rozpoczęcia eksploatacji jest częścią  [programu Microsoft FastTrack](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview). Podczas tego przeglądu architekt rozwiązania ocenia, czy projekt implementacji jest gotowy do pomyślnej migracji i przejścia do rozpoczęcia eksploatacji. Ten przegląd jest wymagany dla każdego projektu implementacji, zanim będzie można zażądać jego wdrożenia w środowisku produkcyjnym. 
 
 ## <a name="our-sandbox-environments-are-deployed-in-the-central-us-datacenter-we-want-our-production-environments-to-be-deployed-in-the-west-us-datacenter-can-i-select-west-us-as-the-datacenter-in-my-production-configuration"></a>Nasze środowiska piaskownicy są wdrażane w centrum danych w środkowych Stanach Zjednoczonych. Chcemy, aby nasze środowiska produkcyjne były wdrażane w centrum danych w zachodnich Stanach Zjednoczonych. Czy mogę wybrać Zachodnie stany USA jako centrum danych w mojej konfiguracji produkcyjnej? 
 
@@ -58,7 +56,7 @@ USŁUGI LCS nie ogranicza wyboru innego centrum danych podczas wdrażania środo
 
 Jeśli chcesz, aby środowisko produkcyjne znajdowało się w centrum danych w zachodnich Stanach Zjednoczonych, najpierw należy ponownie wdrożyć środowiska piaskownicy w centrum danych w zachodnich Stanach Zjednoczonych, przetestować je i się wylogować. 
 
-Aby uzyskać informacje dotyczące wyboru odpowiedniego centrum danych, zapoznaj się z [Wymaganiami sieciowymi](../fin-ops-core/fin-ops/get-started/system-requirements.md#network-requirements). 
+Aby uzyskać informacje dotyczące wyboru odpowiedniego centrum danych, zapoznaj się z [Wymaganiami sieciowymi](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/system-requirements#network-requirements). 
 
 ## <a name="what-level-of-access-do-i-have-to-the-azure-resources-for-my-human-resources-environments"></a>Jaki poziom dostępu muszę posiadać do zasobów systemu Azure dla środowisk z Human Resources?  
 
@@ -66,9 +64,9 @@ Dostęp do środowisk Human Resources jest ograniczony. Nie możesz uzyskać dos
 
 Chociaż nie możesz uzyskać bezpośredniego dostępu do zasobów platformy Azure lub środowiska Dynamics 365 Human Resources, istnieją dodatkowe funkcje, których możesz użyć, aby uzyskać dostęp do swoich danych:
 
-- Bazę danych SQL Azure można wdrożyć we własnej dzierżawie Azure i za pomocą funkcji Używanie własnej bazy danych w celu zsynchronizowania danych. Aby uzyskać więcej informacji, zapoznaj się z tematem [Dobierz własną bazę danych (BYOD)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md).
+- Bazę danych SQL Azure można wdrożyć we własnej dzierżawie Azure i za pomocą funkcji Używanie własnej bazy danych w celu zsynchronizowania danych. Aby uzyskać więcej informacji, zapoznaj się z tematem [Dobierz własną bazę danych (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database).
 
-- Funkcji integracji Dataverse można wykorzystywać do synchronizowania wybranych jednostek w bazie danych Dataverse. Aby uzyskać więcej informacji, zobacz [Tabele Dataverse](hr-developer-entities.md). 
+- Funkcji integracji Common Data Service można wykorzystywać do synchronizowania wybranych jednostek w bazie danych Common Data Service. Aby uzyskać więcej informacji, zobacz [Jednostki usługi Common Data Service](hr-developer-entities.md). 
 
 ## <a name="how-often-is-my-production-database-backed-up"></a>Jak często jest wykonywana kopia zapasowa bazy danych produkcji? 
 
@@ -82,11 +80,11 @@ Automatyczne wykonywanie kopii zapasowych baz danych jest chronione przy użyciu
 
 Firma Microsoft zachowuje wystarczające kopie zapasowe, aby umożliwić przywracanie bazy danych do punktu w czasie (PITR) z ostatnich 14 dni. 
 
-Aby uzyskać więcej informacji, zobacz  [Więcej informacji na temat automatycznego wykonywania kopii zapasowych bazy danych SQL](/azure/azure-sql/database/automated-backups-overview?tabs=single-database). 
+Aby uzyskać więcej informacji, zobacz  [Więcej informacji na temat automatycznego wykonywania kopii zapasowych bazy danych SQL](https://docs.microsoft.com/azure/azure-sql/database/automated-backups-overview?tabs=single-database). 
 
 ## <a name="can-i-request-a-copy-of-the-backup-of-my-production-database"></a>Czy mogę zażądać kopii kopii zapasowej bazy danych produkcji? 
 
-Nr Można jednak przesłać żądanie usługi odświeżania bazy danych w celu skopiowania środowiska produkcyjnego do środowiska piaskownicy. Bazę danych SQL Azure można wdrożyć we własnej dzierżawie Azure i za pomocą funkcji Używanie własnej bazy danych w celu zsynchronizowania danych ze środowiska produkcyjnego. Aby uzyskać więcej informacji, zapoznaj się z tematem [Dobierz własną bazę danych (BYOD)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md). 
+Nr Można jednak przesłać żądanie usługi odświeżania bazy danych w celu skopiowania środowiska produkcyjnego do środowiska piaskownicy. Bazę danych SQL Azure można wdrożyć we własnej dzierżawie Azure i za pomocą funkcji Używanie własnej bazy danych w celu zsynchronizowania danych ze środowiska produkcyjnego. Aby uzyskać więcej informacji, zapoznaj się z tematem [Dobierz własną bazę danych (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database). 
 
 ## <a name="how-do-i-move-my-sandbox-environment-to-production-for-go-live"></a>Jak przenieść środowisko piaskownicy do produkcji, aby rozpocząć eksploatację? 
 
@@ -96,11 +94,8 @@ Zalecamy obsługiwanie jasnej listy jednostek skonfigurowanych w obszarze izolow
 
 ## <a name="what-should-i-do-if-my-production-environment-is-down"></a>Co należy zrobić, jeśli środowisko produkcyjne jest wyłączone? 
 
-Aby zgłosić awarię środowiska produkcji, należy wykonać proces opisany w temacie  [Zgłaszanie awarii produkcji](../fin-ops-core/dev-itpro/lifecycle-services/report-production-outage.md). 
+Aby zgłosić awarię środowiska produkcji, należy wykonać proces opisany w temacie  [Zgłaszanie awarii produkcji](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/report-production-outage). 
 
  ## <a name="see-also"></a>Informacje dodatkowe
 
  [Przygotowywanie do rozpoczęcia eksploatacji](hr-admin-go-live-prepare.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

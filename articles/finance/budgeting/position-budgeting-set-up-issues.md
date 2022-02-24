@@ -2,9 +2,11 @@
 title: Rozwiązywanie problemów z budżetowaniem stanowisk
 description: Ten artykuł zawiera odpowiedzi na pytania, które mogą się pojawić podczas konfigurowania budżetowania stanowisk. Odpowiada na często zadawane pytania na temat tworzenia składników kosztu budżetowego, grup wynagrodzeń i siatek wynagrodzeń.
 author: panolte
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmBudgetPurposeType, HcmPositionForecast
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 492a0798d1934b0fe1adf4f0546013f394beab06948f02f92358bae408e7748f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8211c5bd4514bffbd001f9930859f777dac7f0e1
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726069"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017624"
 ---
 # <a name="position-budgeting-troubleshooting"></a>Rozwiązywanie problemów z budżetowaniem stanowisk
 
@@ -28,7 +30,8 @@ ms.locfileid: "6726069"
 
 Ten artykuł zawiera odpowiedzi na pytania, które mogą się pojawić podczas konfigurowania budżetowania stanowisk. Odpowiada na często zadawane pytania na temat tworzenia składników kosztu budżetowego, grup wynagrodzeń i siatek wynagrodzeń. 
 
-## <a name="why-cant-i-find-the-forecast-position-page-in-human-resources"></a>Dlaczego nie można odnaleźć strony stanowiska podlegającego prognozie w module Zasoby ludzkie?
+<a name="why-cant-i-find-the-forecast-position-page-in-human-resources"></a>Dlaczego nie można odnaleźć strony stanowiska podlegającego prognozie w module Zasoby ludzkie?
+---------------------------------------------------------------
 
 Stanowiska podlegające prognozie zostały przeniesione do moduł Budżetowanie.
 
@@ -60,6 +63,3 @@ Daty w wierszu składnika kosztu stanowiska podlegającego prognozie muszą się
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,33 +1,31 @@
 ---
 title: Konfigurowanie i zarządzanie rejestrowaniem bazy danych
 description: Można śledzić zmiany w tabelach i polach w Dynamics 365 Human Resources z rejestrowaniem w bazie danych.
-author: twheeloc
-ms.date: 12/15/2021
+author: Darinkramer
+manager: AnnBe
+ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: jaredha
+ms.author: dkrame
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3cbe4c105b14935db6803e4bded0d891c564fb81
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 3dc4658a0a13af95978c66f5aab882902f754a2d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066450"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420066"
 ---
 # <a name="configure-and-manage-database-logging"></a>Konfigurowanie i zarządzanie rejestrowaniem bazy danych
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Można śledzić zmiany w tabelach i polach w Dynamics 365 Human Resources z rejestrowaniem w bazie danych. W tym temacie opisano sposób:
 
@@ -68,22 +66,7 @@ Aby poprawić wydajność, ogranicz wpisy dziennika, wybierając określone pola
 Aby skonfigurować rejestrowanie bazy danych, można skorzystać z kreatora **Rejestracji zmian w bazie danych**. Kreator stanowi elastyczny sposób konfigurowania rejestrowania tabel lub pól.
 
 1. Przejdź do **Administrowanie systemem > Łącza > Baza danych > Ustawienia dziennika bazy danych**. Wybierz opcję **Nowy**, aby uruchomić kreatora **Rejestracji zmian w bazie danych**.
-2. Wybierz pozycję **Następny**. 
-3. Na stronie **Tabele i pola** kreatora wybierz tabele i pola, w których chcesz włączyć rejestrowanie bazy danych, i wybierz przycisk **Dalej**.
-
-   > [!Note]
-   > Rejestrowanie bazy danych nie jest dostępne we wszystkich tabelach w bazie danych Zasoby ludzkie. Wybranie opcji **Pokaż wszystkie tabele** pod listą spowoduje rozwinięcie listy tabel i pól w celu pokazania wszystkich tabel baz danych, dla których jest dostępne rejestrowanie bazy danych, ale będzie to podzestaw pełnej listy tabel bazy danych.
-
-4. Na stronie **Typy zmian** w kreatorze wybierz operacje na danych, dla których chcesz śledzić zmiany poszczególnych tabel i pól, a następnie wybierz przycisk **Dalej**. Opis operacji dotyczących danych dostępnych do rejestrowania znajduje się w poniższej tabeli.
-5. Na stronie **Zakończ** przejrzyj zmiany, które zostaną wprowadzone, i wybierz przycisk **Zakończ**.
-
-| Operacja | opis |
-| -- | -- |
-| Śledź nowe transakcje | Utwórz dziennik dla nowych rekordów, które są tworzone w tabeli. |
-| Aktualizowanie | Umożliwia tworzenie dziennika aktualizacji rekordów tabeli lub aktualizacji pojedynczych pól w tabeli. Jeśli użytkownik wybierze opcję rejestrować aktualizacje tabeli, po każdym zaktualizowaniu dowolnego pola rekordu w tabeli tworzony jest rekord dziennika. Jeśli użytkownik wybierze opcję rejestrować aktualizacje określonych pól, rekord dziennika jest tworzony tylko podczas aktualizacji tych pól rekordów tabel. |
-| Usuwanie | Utwórz dziennik dla rekordów usuniętych z tabeli. |
-| Klucz zmiany nazwy | Utwórz rekord dziennika po zmianie nazwy klucza tabeli. |
-
+2. Wykonaj czynności w kreatorze.
 
 ## <a name="clean-up-database-logs"></a>Oczyszczanie dzienników bazy danych
 
@@ -96,14 +79,11 @@ Można usunąć wszystkie dzienniki bazy danych lub ich część, korzystając z
 Aby skonfigurować czyszczenie dziennika bazy danych, wykonaj następujące kroki: 
 
 1. Przejdź do **Administrowanie systemem > Łącza > Baza danych > Dziennik bazy danych**. Wybierz opcję **Oczyszczanie dziennika**.
-2. W sekcji **Rekordy do uwzględnienia** wybierz **Filtr**.
-3. Wybierz metodę, która będzie używana do wybierania dzienników do usunięcia. Wprowadź jedną z poniższych opcji:
+
+2. Wybierz metodę wybierania dzienników do usunięcia, wprowadzając jedną z następujących opcji:
 
    - ID tabeli
    - Typ dziennika
    - Data i godzina utworzenia
 
-4. Karta **Czyszczenie dziennika bazy danych** umożliwia określenie, kiedy ma być wykonywane zadanie oczyszczania dziennika. Domyślnie dzienniki bazy danych są dostępne przez 30 dni.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+3. Karta **Czyszczenie dziennika bazy danych** umożliwia określenie, kiedy ma być wykonywane zadanie oczyszczania dziennika. Domyślnie dzienniki bazy danych są dostępne przez 30 dni.

@@ -157,6 +157,3 @@ Aby utworzyć funkcję, należy wykonać poniższe kroki.
 
 13. Aby aktywować funkcję, wybierz opcję **Aktywuj**.
 14. Aby opublikować funkcję, przejdź do okna **Oferty**, a następnie wybierz opcję **Opublikuj teraz** w sekcji witryny Talent Carriers lub serwisu LinkedIn.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

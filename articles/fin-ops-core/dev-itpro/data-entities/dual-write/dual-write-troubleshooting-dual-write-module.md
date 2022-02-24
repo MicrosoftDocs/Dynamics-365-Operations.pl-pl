@@ -1,33 +1,42 @@
 ---
-title: Rozwiązywanie problemów z podwójnym zapisem w aplikacjach Finanse i Działania
-description: Ten temat zawiera informacje dotyczące rozwiązywania problemów, które mogą pomóc w rozwiązaniu problemów związanych z modułem podwójnego zapisu w aplikacjach Finanse i Działania.
+title: Rozwiązywanie problemów z modułem podwójnego zapisu w aplikacjach Finance and Operations
+description: Ten temat zawiera informacje dotyczące rozwiązywania problemów, które mogą pomóc w rozwiązaniu problemów związanych z modułem podwójnego zapisu w aplikacjach Finance and Operations.
 author: RamaKrishnamoorthy
-ms.date: 08/10/2021
+manager: AnnBe
+ms.date: 03/16/2020
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
+ms.search.industry: ''
 ms.author: ramasri
+ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: db49c6a4555f39800362a5b248f9757b07ee5481
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 2241e7e6219f95115f55bc45a4d94550276e1e21
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061817"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683630"
 ---
-# <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Rozwiązywanie problemów z podwójnym zapisem w aplikacjach Finanse i Działania
+# <a name="troubleshoot-issues-with-the-dual-write-module-in-finance-and-operations-apps"></a>Rozwiązywanie problemów z modułem podwójnego zapisu w aplikacjach Finance and Operations
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-
-Ten temat zawiera informacje dotyczące rozwiązywania problemów dotyczących integracji podwójnego zapisu między aplikacjami Finanse i Działania i Dataverse. Ten temat zawiera informacje dotyczące rozwiązywania problemów, które mogą pomóc w rozwiązaniu problemów związanych z modułem **podwójnego zapisu** w aplikacjach Finanse i Działania.
+Ten temat zawiera informacje dotyczące rozwiązywania problemów dotyczących integracji o podwójnym zapisie między aplikacjami Finance and Operations i Dataverse. Ten temat zawiera informacje dotyczące rozwiązywania problemów, które mogą pomóc w rozwiązaniu problemów związanych z modułem **podwójnego zapisu** w aplikacjach Finance and Operations.
 
 > [!IMPORTANT]
 > Niektóre problemy, których ten problem może wymagać od roli administratora systemu lub poświadczeń administratora dzierżawcy Microsoft Azure Active Directory (Azure AD). W sekcji dotyczącej każdego zagadnienia wyjaśniono, czy określona rola lub poświadczenia są wymagane.
 
-## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>Nie możesz załadować modułu podwójnego zapisu w aplikacji Finanse i Działania
+## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>Nie można załadować modułu podwójnego zapisywania w aplikacji Finance and Operations
 
 Jeśli nie można otworzyć strony **podwójnego zapisywania**, wybierając opcję **podwójnego zapisywania** w obszarze roboczym **zarządzanie danymi**, prawdopodobnie usługa integracji danych jest niemożliwa. Utwórz bilet pomocy technicznej, aby zażądać ponownego uruchomienia usługi integracji danych.
 
@@ -35,9 +44,10 @@ Jeśli nie można otworzyć strony **podwójnego zapisywania**, wybierając opcj
 
 **Wymagane poświadczenia w celu rozwiązania problemu:** Ten sam użytkownik, który skonfigurował podwójne zapisywanie.
 
-Podczas próby skonfigurowania nowej tabeli na potrzeby podwójnego zapisu może pojawić się następujący komunikat o błędzie. Jedyny użytkownik, który może stworzyć mapę, jest użytkownikiem, który konfiguruje połączenie podwójnego zapisu.
+Podczas próby skonfigurowania nowej jednostki na potrzeby podwójnego zapisywania może pojawić się następujący komunikat o błędzie. Jedyny użytkownik, który może stworzyć mapę, jest użytkownikiem, który konfiguruje połączenie podwójnego zapisu.
 
-*Kod stanu odpowiedzi nie wskazuje powodzenia: 401 (nieautoryzowany).*
+*Kod stanu odpowiedzi nie wskazuje powodzenia: 401 (nieautoryzowany)*
+
 
 ## <a name="error-when-you-open-the-dual-write-user-interface"></a>Błąd podczas otwierania interfejsu użytkownika z podwójnym zapisywaniem
 
@@ -49,17 +59,13 @@ Aby rozwiązać ten problem, zaloguj się przy użyciu okna prywatnego w Microso
 
 ## <a name="error-when-you-link-the-environment-for-dual-write-or-add-a-new-table-mapping"></a>Błąd podczas łączenia środowiska w celu wykonania podwójnego zapisywania lub dodania nowego mapowania tabeli
 
-**Wymagana rola, aby rozwiązać problem:** administrator systemu w aplikacjach Finanse i Działania oraz Dataverse.
+**Wymagana rola w celu rozwiązania problemu:** administrator systemu w aplikacjach Finance and Operations i Dataverse.
 
 Podczas łączenia lub tworzenia map może wystąpić następujący błąd:
 
-```dos
-Response status code does not indicate success: 403 (tokenexchange).
-Session ID: \<your session id\>
-Root activity ID: \<your root activity\> id
-```
+*Kod stanu odpowiedzi nie wskazuje powodzenia: 403 (tokenexchange). <br> Identyfikator sesji: \<your session id\><br> Identyfikator głównego działania: \<your root activity id\>*
 
-Ten błąd może wystąpić, jeśli użytkownik nie ma wystarczających uprawnień, aby połączyć podwójny zapis lub utworzyć mapy. Ten błąd może również wystąpić, jeśli środowisko Dataverse zostało zresetowane bez odłączenia podwójnego zapisu. Każdy użytkownik z rolą administratora systemu w aplikacjach Finanse i Działania i Dataverse może łączyć środowiska. Tylko użytkownik instalujący połączenie podwójnego zapisu może dodawać nowe mapowania tabeli. Po zakończeniu instalacji każdy użytkownik z rolą administratora systemu może monitorować stan i edytować mapowania.
+Ten błąd może wystąpić, jeśli użytkownik nie ma wystarczających uprawnień, aby połączyć podwójny zapis lub utworzyć mapy. Ten błąd może również wystąpić, jeśli środowisko Dataverse zostało zresetowane bez odłączenia podwójnego zapisu. Każdy użytkownik z rolą administratora systemu w aplikacjach Finance and Operations i Dataverse może łączyć środowiska. Tylko użytkownik instalujący połączenie podwójnego zapisu może dodawać nowe mapowania tabeli. Po zakończeniu instalacji każdy użytkownik z rolą administratora systemu może monitorować stan i edytować mapowania.
 
 ## <a name="error-when-you-stop-the-table-mapping"></a>Błąd podczas zatrzymania mapowania tabeli
 
@@ -71,29 +77,13 @@ Ten błąd występuje, gdy połączone środowisko Dataverse jest niedostępne.
 
 Aby rozwiązać ten problem, utwórz bilet dla zespołu integracji danych. Dołącz śledzenie sieci, aby zespół integracji danych mógł oznaczyć mapy jako **Nie uruchomione** na zapleczu.
 
-## <a name="errors-while-trying-to-start-a-table-mapping"></a>Błędy podczas próby uruchomienia mapowania tabeli
+## <a name="error-while-trying-to-start-an-table-mapping"></a>Błąd podczas próby uruchomienia mapowania tabeli
 
-### <a name="unable-to-complete-initial-data-sync"></a>Nie można ukończyć początkowej synchronizacji danych
-
-Podczas próby przeprowadzenia wstępnej synchronizacji danych może zostać wyświetlony komunikat o błędzie podobny do następującego:
+Podczas próby ustawienia tego stanu mapowania na **Uruchomione** może się pojawić komunikat o błędzie podobny do następującego:
 
 *Nie można ukończyć wstępnej synchronizacji danych. Błąd: błąd podwójnego zapisu — Rejestracja wtyczki nie powiodła się: nie można zbudować metadanych wyszukiwania przy podwójnym zapisie. Odwołanie do obiektu błędu nie jest ustawione na wystąpienie obiektu.*
 
-Podczas próby ustawienia tego stanu mapowania na **Uruchomione** może zostać wyświetlony ten komunikat o błędzie. Poprawka jest zależna od przyczyny błędu:
+Poprawka dla tego błędu jest zależna od przyczyny błędu:
 
 + Jeśli mapowanie ma zależne mapowania, należy pamiętać, aby włączyć mapowania zależne tego mapowania tabeli.
-+ Być może w mapowaniu brakuje kolumn źródłowych lub docelowych. Jeśli w aplikacji Finanse i Działania nie ma kolumny, należy wykonać kroki w sekcji [Problem związany z brakiem kolumn tabeli na mapach](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). Jeśli w usłudze Dataverse brakuje pola, w mapowaniu należy kliknąć przycisk **Odśwież tabele**, tak aby kolumny były automatycznie wstawiane ponownie do mapowania.
-
-### <a name="version-mismatch-error-and-upgrading-dual-write-solutions"></a>Błąd niezgodności wersji i uaktualnienie rozwiązań podwójnego zapisu
-
-Podczas próby wykonania mapowania tabeli mogą pojawić się następujące komunikaty o błędzie:
-
-+ *Grupy klientów (msdyn_customergroups) : błąd podwójnego zapisu — niezgodność wersji rozwiązania Dynamics 365 for Sales 'Dynamics365Company'. Wersja: '2.0.2.10' Wymagana wersja: '2.0.133'*
-+ Niezgodność wersji rozwiązania *Dynamics 365 for Sales 'Dynamics365FinanceExtended'. Wersja: '1.0.0.0' Wymagana wersja: '2.0.227'*
-+ Niezgodność wersji rozwiązania *Dynamics 365 for Sales 'Dynamics365FinanceAndOperationsCommon'. Wersja: '1.0.0.0' Wymagana wersja: '2.0.133'*
-+ Niezgodność wersji rozwiązania *Dynamics 365 for Sales 'CurrencyExchangeRates'. Wersja: '1.0.0.0' Wymagana wersja: '2.0.133'*
-+ Niezgodność wersji rozwiązania *Dynamics 365 for Sales 'Dynamics365SupplyChainExtended'. Wersja: '1.0.0.0' Wymagana wersja: '2.0.227'*
-
-Aby rozwiązać te problemy, należy zaktualizować rozwiązania podwójnego zapisu w Dataverse. Pamiętaj, aby uaktualnić do najnowszego rozwiązania, które pasuje do wymaganej wersji rozwiązania.
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
++ Być może w mapowaniu brakuje pól źródłowych lub docelowych. Jeśli brak pola w aplikacji Finance and Operations, należy wykonać kroki w sekcji [Problem braku pól jednostki dla map](dual-write-troubleshooting-finops-upgrades.md#missing-entity-fields-issue-on-maps). Jeśli brakuje pola w Dataverse, w mapowaniu należy kliknąć przycisk **Odśwież tabele**, tak aby pola były automatycznie wstawiane ponownie do mapowania.

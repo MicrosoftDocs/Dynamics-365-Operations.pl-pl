@@ -1,38 +1,39 @@
 ---
 title: Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (3 marca 2020 r.)
 description: W tym artykule opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Human Resources w dniu 3 marca 2020 roku.
-author: andreabichsel
+author: Darinkramer
+manager: AnnBe
 ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: jaredha
+ms.author: dkrame
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2fea153f7d532b25d7866f852875453ca3e4fc49
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: d6f6f4a32e4bf85908f51eb1eed858b704c814dc
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061183"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4526855"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-3-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (3 marca 2020 r.)
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 W tym artykule opisano nowe oraz zmienione funkcje dostępne w Dynamics 365 Human Resources. Zmiany dotyczą kompilacji o numerze 8.1.2955. Liczby w nawiasach w niektórych nagłówkach odnoszą się do numerów pomocy w LCS w charakterze informacyjnym.
 
-## <a name="dataverse-solution-is-now-available-with-the-following-changes"></a>Rozwiązanie Dataverse jest teraz dostępne z następującymi zmianami:
+## <a name="common-data-service-solution-is-now-available-with-the-following-changes"></a>Rozwiązanie Common Data Service jest teraz dostępne z następującymi zmianami:
 
-Nowe rozwiązanie Dataverse będzie dostępne wkrótce z następującymi zmianami:
+Nowe rozwiązanie Common Data Service będzie dostępne wkrótce z następującymi zmianami:
 
 | Opis | Zmiana |
 | ----------------------------------------- | --- |
@@ -43,9 +44,9 @@ Nowe rozwiązanie Dataverse będzie dostępne wkrótce z następującymi zmianam
 | Nowe jednostki ustawień wynagrodzeń o zmiennej wysokości | **Typ planu wynagrodzeń o zmiennej wysokości**</br>**Plan wynagrodzeń o zmiennej wysokości**</br>**Reguły wypłat**</br>**Poziom planu wynagrodzeń o zmiennej wysokości** |
 | Nowa jednostka **Zatrudnienie kalendarza pracownika** | Dodano **jednostkę kalendarza pracy** |
 | Nowa jednostka **Szczegół stanowiska listy płac** | Dodano **Szczegół stanowiska listy płac** |
-| Nowa jednostka **Tytuł** | Dodano **Tytuł**. Nowa jednostka **Tytułu** będzie uwzględniana w procesie synchronizacji między Human Resources a Dataverse. Nie będzie początkowo przywoływany z **Stanowiska pracy** lub jednostek **Zadań**. |
+| Nowa jednostka **Tytuł** | Dodano **Tytuł**. Nowa jednostka **Tytułu** będzie uwzględniana w procesie synchronizacji między Human Resources a Common Data Service. Nie będzie początkowo przywoływany z **Stanowiska pracy** lub jednostek **Zadań**. |
 
-W czasie następnych kilku tygodni zmiany tych jednostek będą dostępne we wszystkich środowiskach. Aby ręcznie zainstalować najnowsze rozwiązanie Dataverse dla modułu Human Resources:
+W czasie następnych kilku tygodni zmiany tych jednostek będą dostępne we wszystkich środowiskach. Aby ręcznie zainstalować najnowsze rozwiązanie Common Data Service dla modułu Human Resources:
 
 1.  Przejdź do [Centrum administracyjnego usługi Power Platform](https://admin.powerplatform.microsoft.com).
 
@@ -92,8 +93,6 @@ Następujące funkcje w wersji zapoznawczej zostały udostępnione 3 lutego 2020
 ## <a name="see-also"></a>Informacje dodatkowe
 
 [Nowości i zmiany w rozwiązaniu Human Resources](hr-admin-whats-new.md)</br>
-[Omówienie rozwiązania Dynamics 365 Human Resources 2019, wydanie 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Omówienie rozwiązania Dynamics 365 Human Resources 2019, wydanie 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Aktualizowanie procesu](hr-admin-setup-update-process.md)</br>
 [Zarządzanie funkcjami](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,20 +1,27 @@
 ---
-# required metadata
 title: Europa — omówienie
 description: Ten temat zawiera łącza do zasobów dokumentacji Microsoft Dynamics 365 Finance dla Europy.
-author: kfend
-ms.date: 01/15/2022
-ms.topic: overview
-ms.prod: null
-ms.technology: null
+author: ShylaThompson
+manager: AnnBe
+ms.date: 07/25/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Operations
 ms.search.region: global
-ms.author: kfend
-ms.search.validFrom: '2016-02-28'
+ms.author: roschlom
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1d63d5682521b1991c387604c2cc219c7f147c8d
+ms.sourcegitcommit: cfd84321fba38e02e270d361df369a536a48efa3
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "4512218"
 ---
-
 # <a name="europe-overview"></a>Europa — omówienie
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +41,6 @@ Ten temat zawiera informacje i łącza do zasobów, które mogą pomóc w konfig
 - [Raportowanie listy sprzedaży do UE](emea-eu-sales-list.md)
 - [Korekty kursów wymiany](emea-exchange-rate-adjustments.md)
 - [Formaty plików metod płatności](emea-select-file-formats-for-the-method-of-payments.md)
-- [Finansowe (globalizacja) wytyczne dotyczące wpływu Brexitu](https://businesscenter.mbs.microsoft.com/#contentdetail/GuidanceBrexitImpact)
 - [Integracja usługi obrachunkowej (ESR)](emea-fiscal-service-integration.md)
 - [Likwidacja środków trwałych w Estonii i na Litwie](emea-credit-note-reverse-fixed-asset-sale.md)
 - [Generowanie dokumentu wewnętrznego przesunięcia magazynowego](tasks/transfer-document-internal-inventory-transfer.md)
@@ -59,7 +65,6 @@ Ten temat zawiera informacje i łącza do zasobów, które mogą pomóc w konfig
 - [Przetwarzanie faktur](emea-invoice-processing.md)
 - [Wystawianie świadectw wywozowych UE](tasks/eur-00012-issue-eu-entry-certificate.md)
 - [Wspomagane normy dla elektronicznego fakturowania](emea-oioubl-standards-electronic-invoicing.md)
-- [Wymuszone generowanie faktur elektronicznych](emea-eur-forced-einvoices.md)
 - [Odwołanie do oryginalnej faktury (Europa Wschodnia)](tasks/ee-00004-original-invoice-reference.md)
 - [Wyszukiwanie osób za pomocą identyfikatora VAT](tasks/eur-00015-party-search-vat-id.md)
 - [Narzędzie do generowania odwołań do płatności](tasks/ee-00015-payment-reference-generation-tool.md)
@@ -89,13 +94,8 @@ Ten temat zawiera informacje i łącza do zasobów, które mogą pomóc w konfig
   - [Tworzenie i przesyłanie raportu VAT](tasks/create-submit-vat-report.md)
   - [Wyświetlanie transakcji w rozliczeniu dla Europy Wschodniej](emea-transactions-settlement-form.md)
   - [Data punktu podatkowego (data rejestru VAT)](emea-tax-point-date.md)
-  - [Data rejestru podatku VAT dostawcy](emea-date-vendor-VAT-register.md)
-- [Rozszerzenie funkcji przyczyn finansowych](emea-financial-reason.md)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-- [Omówienie Raportowania elektroniczne](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
-- [Pobieranie konfiguracji Raportowania elektronicznego z usługi Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+- [Omówienie raportowania elektronicznego](../../dev-itpro/analytics/general-electronic-reporting.md)
+- [Pobieranie konfiguracji Raportowania elektronicznego z usługi Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)

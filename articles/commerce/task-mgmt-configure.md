@@ -2,29 +2,34 @@
 title: Konfigurowanie zarządzania zadaniami
 description: W tym temacie opisano sposób konfigurowania funkcji zarządzania zadaniami w Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 02/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 0ae0f3bd58db587d9024beceedd790cc3d3e4ee990a2f4c727dfda96b2f0785c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9a4775c2dba2b9aa8e671ab6c246000303b3a37e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730810"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415006"
 ---
 # <a name="configure-task-management"></a>Konfigurowanie zarządzania zadaniami
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano sposób konfigurowania funkcji zarządzania zadaniami w Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Omówienie
 
 Aby menedżerowie i pracownicy Dynamics 365 Commerce mogli skorzystać z funkcji zarządzania zadaniami w Commerce, należy skonfigurować funkcję zarządzania zadaniami. Kroki konfiguracyjne obejmują przyznawanie uprawnień menedżerom i pracownikom, dystrybuowanie uprawnień do klientów punktu sprzedaży (POS), konfigurowanie powiadomień punktu sprzedaży oraz konfigurowanie kafelka **Zadania** na stronie głównej aplikacji punktu sprzedaży.
 
@@ -44,7 +49,7 @@ Aby skonfigurować uprawnienia zarządzania zadaniami dla menedżerów sklepów,
 
 Poniższa ilustracja pokazuje, jak skonfigurować uprawnienia do zarządzania zadaniami dla menedżerów sklepów.
 
-![Konfigurowanie uprawnienia zarządzania zadaniami dla menedżerów sklepów.](media/HQ-POS-Tasks-Notifications-User-Permission.png)
+![Konfigurowanie uprawnienia zarządzania zadaniami dla menedżerów sklepów](media/HQ-POS-Tasks-Notifications-User-Permission.png)
 
 ## <a name="configure-permissions-for-employees"></a>Konfigurowanie uprawnień pracowników
 
@@ -78,7 +83,7 @@ Aby skonfigurować powiadomienia punktu sprzedazy dla zadań, wykonaj poniższe 
 
 Na poniższej ilustracji przedstawiono operację **Zarządzania zadaniami** na stronie **Operacje punktu sprzedaży**.
 
-![Operacja zarządzania zadaniami na stronie operacji punktu sprzedaży.](media/HQ-POS-Tasks-Notifications.png)
+![Operacja zarządzania zadaniami na stronie operacji punktu sprzedaży](media/HQ-POS-Tasks-Notifications.png)
 
 Aby uzyskać więcej informacji o konfigurowaniu powiadomień punktu sprzedaży, zapoznaj się z tematem [Pokazywanie powiadomień o zamówieniach w aplikacji punktu sprzedaży (POS)](notifications-pos.md).
 
@@ -95,7 +100,7 @@ Aby skonfigurować kafelek **Zadania** na stronie głównej aplikacji punktu spr
 
 Poniższa ilustracja przedstawia przykład kafelka **Zadania** na stronie głównej punktu sprzedaży.
 
-![Kafelek zadań na stronie głównej punktu sprzedaży.](media/POS-home-screen-tasks-button-image.png)
+![Kafelek zadań na stronie głównej punktu sprzedaży](media/POS-home-screen-tasks-button-image.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
@@ -106,6 +111,3 @@ Poniższa ilustracja przedstawia przykład kafelka **Zadania** na stronie głów
 [Przypisywanie list zadań do sklepów lub pracowników etatowych](task-mgmt-assign-lists.md)
 
 [Zarządzanie zadaniami w punkcie sprzedaży](task-mgmt-POS.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
 title: Zarządzanie użytkownikami portalu współpracy z dostawcami
 description: W tym temacie opisano sposoby wnioskowania o zainicjowanie obsługi nowych użytkowników i dodawania nowych osób kontaktowych w portalu współpracy z dostawcami.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: smmContactPerson, VendVendorContactPerson, VendVendorPortalUser
 audience: Application User, IT Pro
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 220744
 ms.assetid: edc19ad0-3565-4d47-98ac-dda6098f63ac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ff0d11bf2c42f7ae63e3db5f31f3ffea2c28f693
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 6356c1d11ba507c0eaa42087bdebe982ef091dbd
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578135"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019944"
 ---
 # <a name="manage-vendor-collaboration-users"></a>Zarządzanie użytkownikami portalu współpracy z dostawcami
 
@@ -62,7 +64,7 @@ Zanim będzie można wnioskować o zainicjowanie obsługi nowego użytkownika, t
 4. W sekcji **Przypisz role użytkownika** zaznacz pole wyboru **Przypisz** dla ról zabezpieczeń, które powinien mieć nowy użytkownik.
 5. Kliknij przycisk **Prześlij**.
 
-Po przesłaniu wniosku o użytkownika dostawcy pole **Dostęp do portalu współpracy z dostawcami jest dozwolony** otrzymuje wartość **Tak** dla wybranego konta dostawcy i rozpoczyna się przepływ pracy wnioskowania o użytkownika. W ramach przepływu pracy nowy użytkownik jest tworzony i są mu przypisywane role zabezpieczeń. Ponadto jest aktywowana usługa Azure B2B, która inicjuje interakcję z portalem Azure i kojarzy nowe lub istniejące konto w usłudze AAD z kontem użytkownika w rozwiązaniu Supply Chain Management. Aby uzyskać więcej informacji, zobacz [Na czym polega współpraca w usłudze Azure AD B2B?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
+Po przesłaniu wniosku o użytkownika dostawcy pole **Dostęp do portalu współpracy z dostawcami jest dozwolony** otrzymuje wartość **Tak** dla wybranego konta dostawcy i rozpoczyna się przepływ pracy wnioskowania o użytkownika. W ramach przepływu pracy nowy użytkownik jest tworzony i są mu przypisywane role zabezpieczeń. Ponadto jest aktywowana usługa Azure B2B, która inicjuje interakcję z portalem Azure i kojarzy nowe lub istniejące konto w usłudze AAD z kontem użytkownika w rozwiązaniu Supply Chain Management. Aby uzyskać więcej informacji, zobacz [Na czym polega współpraca w usłudze Azure AD B2B?](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
 
 ### <a name="inactivate-a-user"></a>Dezaktywowanie użytkownika
 
@@ -91,6 +93,3 @@ Aby poprosić o modyfikację ról zabezpieczeń dla użytkownika:
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

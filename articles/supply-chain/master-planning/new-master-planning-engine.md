@@ -2,13 +2,16 @@
 title: Migracja do modułu Optymalizacja planowania w celu realizacji planowania głównego
 description: Ten temat zawiera informacje o nowym głównym silniku planowania, optymalizacji planowania i migracji z istniejącego aparatu.
 author: ChristianRytt
+manager: tfehr
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8d3edeefca2e2194a8d5484afbfabf2091da4a1c1538d238351a5d389177ccfd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 94e5668da45c524ed9ab9eef10b40d0fb5336a65
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728586"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4646003"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Migracja do modułu Optymalizacja planowania w celu realizacji planowania głównego
 
@@ -63,12 +66,8 @@ Obecnie wyjątki dotyczące migracji optymalizacji planowania są istotne tylko 
 
 Po udostępnieniu wymaganych funkcji firma Microsoft zapewni okres karencji do wygaśnięcia wyjątku. Administrator środowiska zostanie poinformowany, gdy wymagane funkcje staną się dostępne i rozpocznie się okres karencji.
 
-Poniższy schemat blokowy podsumowuje informacje podane w tym temacie, dzięki czemu można szybko dowiedzieć się, czy należy zażądać wyjątku. Jeśli musisz zażądać wyjątku, wypełnij i prześlij [Kwestionariusz migracji optymalizacji planowania i wyjątków](https://go.microsoft.com/fwlink/?linkid=2144962).
-
-![Schemat blokowy wyjątków.](media/exception-diagram.png "Schemat blokowy wyjątków")
-
 > [!NOTE]
-> Możesz zażądać wyjątku tylko dla dzierżawców, którzy obecnie zawierają lub będą zawierać środowisko produkcyjne, a nie dla dzierżawców ze środowiskami piaskownicy. Jeśli chcesz wyłączyć błąd wyjątku optymalizacji planowania w środowisku piaskownicy typu infrastruktura jako usługa (IaaS), uruchom zapytanie SQL podane w [środowiskach piaskownicy](#faq-sandbox).
+> Możesz zażądać wyjątku tylko dla środowisk produkcyjnych, a nie dla środowisk piaskownicy. Jeśli chcesz wyłączyć błąd wyjątku optymalizacji planowania w środowisku piaskownicy typu infrastruktura jako usługa (IaaS), uruchom zapytanie SQL podane w [środowiskach piaskownicy](#faq-sandbox).
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
@@ -117,6 +116,3 @@ Używam wersji 10.0.16 lub nowszej i po uruchomieniu planowania głównego pojaw
 > Wypełnij poniższy kwestionariusz, aby rozpocząć i w razie potrzeby poprosić o wyjątek od migracji do optymalizacji planowania.
 
 **Odpowiedź:** Nie, planowanie główne nie jest zablokowane. Przebieg planowania głównego został ukończony pomyślnie i można go używać w zwykły sposób. Aby jednak uniknąć otrzymywania tego komunikatu o błędzie podczas przyszłych uruchomień planowania głównego, należy natychmiast przeprowadzić migrację do optymalizacji planowania lub zażądać wyjątku, korzystając z łącza w komunikacie o błędzie.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

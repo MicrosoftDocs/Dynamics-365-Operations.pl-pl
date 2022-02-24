@@ -2,22 +2,25 @@
 title: Odsetki podatkowe i rynkowe w Polsce
 description: W tym temacie omówiono proces konfigurowania i obliczania odsetek od podatku dla Polski.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 05/18/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Operations
 ms.search.region: Poland
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: fe09f20f6ac64ebc03900d6eaf4b283eea82323352422d29ccaa95a6e6339a52
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a8bcfc9d8599c46183129532dc15153487b3237a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731409"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408396"
 ---
 # <a name="tax-interest-and-free-hand-interest-for-poland"></a>Odsetki podatkowe i rynkowe w Polsce
 
@@ -97,6 +100,3 @@ W Polsce stawki odsetek od podatku określa Minister Finansów. Dostawca oblicza
 11. W ustawieniu **Odsetki od podatków** zaznacz opcję **Tak**, aby obliczać odsetki rynkowe oraz odsetki od podatków.
 12. Na skróconej karcie **Rekordy do uwzględnienia** wybierz opcję **Filtr**, aby znaleźć i wybrać rekordy dla obliczania odsetek.
 13. Kliknij przycisk **OK**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

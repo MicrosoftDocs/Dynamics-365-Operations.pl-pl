@@ -56,6 +56,3 @@ Zalecenia są wyświetlane jako karty na karcie **prospektów** wszystkich stano
 > Jeśli używasz aplikacji Attract od niedawna, musisz zaczekać, aż w bazie pojawi się co najmniej 10 pełnych profili lub życiorysów, aby korzystać z tej funkcji.
 
 Aby uniknąć potencjalnych różnic w rekomendacjach, Attract skanuje tylko profile kandydatów pod kątem umiejętności, kwalifikacji i innych słów kluczowych odpowiadających opisowi stanowiska. Ponadto Attract usuwa z profilu informacje umożliwiające identyfikację kandydata przed dokonaniem oceny.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

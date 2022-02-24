@@ -1,22 +1,29 @@
 ---
-# required metadata
 title: Omówienie konserwacji zapobiegawczej
 description: W tym temacie wyjaśniono konserwację zapobiegawczą w module Zarządzanie składnikami majątku.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/27/2019
-ms.topic: overview
-ms.prod: null
-ms.technology: null
-ms.search.form: null
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.assetid: null
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
-ms.search.validFrom: '2019-08-31'
+ms.author: riluan
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
+ms.openlocfilehash: 36a70a3e60566fd8048ad404e0c391d898053a0a
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016735"
 ---
-
 # <a name="preventive-maintenance-overview"></a>Omówienie konserwacji zapobiegawczej
 
 [!include [banner](../../includes/banner.md)]
@@ -29,8 +36,5 @@ Plany konserwacji są używane do obsługi prewencyjnej i aktywnej konserwacji p
 
 Poniższa ilustracja przedstawia przepływ pracy, tworząc plany konserwacji i serie czynności konserwacyjnych w celu utworzenia zleceń pracy dla składników majątku na podstawie tych planów konserwacji i serii czynności konserwacyjnych.
 
-![Rysunek 1.](media/01-preventive-maintenance.png)
+![Rysunek 1](media/01-preventive-maintenance.png)
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,30 +1,34 @@
 ---
-title: Usprawnij model przewidywania
+title: Usprawnij model przewidywania (wersja zapoznawcza)
 description: W tym temacie opisano funkcje, których można używać w celu poprawy działania modeli przewidywania.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+manager: AnnBe
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 804c18c1b165fff99390db1fda22da0137249373
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 23c9062dcc13951792306c955b54cae6f656fec5
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595044"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4646086"
 ---
-# <a name="improve-the-prediction-model"></a>Usprawnij model przewidywania
+# <a name="improve-the-prediction-model-preview"></a>Usprawnij model przewidywania (wersja zapoznawcza)
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 W tym temacie opisano funkcje, których można używać w celu poprawy działania modeli przewidywania. Rozpoczynanie ulepszania modelu zaczyna się w obszarze roboczym **Prognozy płatności odbiorcy** w rozwiązaniu Microsoft Dynamics 365 Finance. Następnie czynności ulepszające wykonuje się w aplikacji AI Builder.
 
@@ -32,25 +36,25 @@ W tym temacie opisano funkcje, których można używać w celu poprawy działani
 
 Najpierw wybierz co najmniej jeden z trzech możliwych wyników dla faktur: **Na czas**, **Opóźnione** i **Bardzo opóźnione**. Należy wybrać wszystkie trzy wyniki. Jeśli wyczyścisz wybór któregokolwiek z tych wyników, faktury zostaną odfiltrowane z procesu trenowania, a dokładność przewidywania spadnie.
 
-[![Potwierdzanie wyników.](./media/confirm-3-outcomes.png)](./media/confirm-3-outcomes.png)
+[![Potwierdzanie wyników](./media/confirm-3-outcomes.png)](./media/confirm-3-outcomes.png)
 
 Jeśli organizacja wymaga tylko dwóch wyników, zmień wartości progowe wyników **Opóźnione** i **Bardzo opóźnione** na 0 (zero) dni. W ten sposób w praktyce zwijasz prognozę do stanu binarnego **Na czas** lub **Opóźnione**.
 
 ## <a name="select-fields"></a>Wybierz pola
 
-Wybierając pola, które mają być uwzględnione w modelu, należy pamiętać, że lista zawiera wszystkie pola dostępne w tabeli usługi Microsoft Dataverse, które są mapowane na dane w Azure data lake. Niektóre z tych pól **nie powinny** być zaznaczane. Pola, których nie należy zaznaczać, należą do jednej z trzech kategorii:
+Wybierając pola, które mają być uwzględnione w modelu, należy pamiętać, że lista zawiera wszystkie pola dostępne w jednostce usługi Common Data Service, które są mapowane na dane w jeziorze danych na platformie Azure. Niektóre z tych pól **nie powinny** być zaznaczane. Pola, których nie należy zaznaczać, należą do jednej z trzech kategorii:
 
-- Pole jest wymagane przez tabelę usługi Dataverse, ale w data lake nie ma dla niej żadnych danych.
+- Pole jest wymagane przez jednostkę usługi Common Data Service, ale w jeziorze danych nie ma dla niej żadnych danych.
 - Pole jest identyfikatorem i w związku z tym jest nieprzydatne dla funkcji uczenia maszynowego.
 - Pole reprezentuje informacje, które nie będą dostępne podczas przewidywania.
 
 W poniższych sekcjach przedstawiono pola dostępne dla jednostek faktury i odbiorcy oraz listę pól, które **nie powinny** być wybierane do trenowania. Kategoria określona dla każdego z tych pól nawiązuje do kategorii z poprzedzającej listy.
  
-### <a name="invoice-dataverse-table"></a>Tabela Faktura Dataverse
+### <a name="invoice-common-data-model-entity"></a>Jednostka wspólnego modelu danych Faktura
 
-Na poniższej ilustracji pokazano pola dostępne dla tabali Faktura.
+Na poniższej ilustracji pokazano pola dostępne dla jednostki Faktura.
 
-[![Pola dostępne dla tabeli Faktura.](./media/available-fields.png)](./media/available-fields.png)
+[![Pola dostępne dla jednostki Faktura](./media/available-fields.png)](./media/available-fields.png)
 
 Następujących pól nie należy wybierać do trenowania:
 
@@ -61,11 +65,11 @@ Następujących pól nie należy wybierać do trenowania:
 - **Rekord źródłowy** (kategoria 2)
 - **Tabela źródłowa** (kategoria 2)
 
-### <a name="customer-dataverse-table"></a>Tabela odbiorców Dataverse
+### <a name="customer-common-data-model-entity"></a>Jednostka wspólnego modelu danych Odbiorca
 
-Na poniższej ilustracji pokazano pola dostępne dla tabeli Odbiorca.
+Na poniższej ilustracji pokazano pola dostępne dla jednostki Odbiorca.
 
-[![Pola dostępne dla tabeli Odbiorca.](./media/related-entities.png)](./media/related-entities.png)
+[![Pola dostępne dla jednostki Odbiorca](./media/related-entities.png)](./media/related-entities.png)
 
 Następującego pola nie należy wybierać do trenowania:
 
@@ -73,8 +77,9 @@ Następującego pola nie należy wybierać do trenowania:
 
 ## <a name="filters"></a>Filtry
 
-Faktury używane do szkolenia można filtrować, ustawiając kryteria filtrowania pól na fakturze lub w tabelach odbiorców. Na przykład można ustawić próg, aby uwzględnić tylko faktury, których suma jest równa lub przekracza określoną kwotę. Alternatywnie można wykluczyć faktury skojarzone z odbiorcami w określonej grupie odbiorców.
+Filtry obecnie nie obsługują scenariusza prognozowania płatności od odbiorców. W związku z tym wybierz opcję **Pomiń ten krok** i przejdź do strony podsumowania.
 
-Aby uzyskać więcej informacji na temat filtrowania danych, zobacz [Tworzenie modelu prognozowania](/ai-builder/prediction-create-model#filter-your-data).
+[![Koncentrowanie modelu za pomocą filtrów](./media/focus-model-with-filters.png)](./media/focus-model-with-filters.png)
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+#### <a name="privacy-notice"></a>Klauzula prywatności
+Wersje zapoznawcze (1) mogą wykorzystywać mniej rygorystyczne funkcje ochrony prywatności i bezpieczeństwa niż usługa Dynamics 365 Finance and Operations, (2) nie są objęte umową dotyczącą poziomu usług (SLA) dla tej usługi, (3) nie powinny być używane do przetwarzania danych osobowych ani innych danych podlegających wymogom zapewnienia zgodności z przepisami lub regulacjami, oraz (4) mają ograniczone wsparcie techniczne.

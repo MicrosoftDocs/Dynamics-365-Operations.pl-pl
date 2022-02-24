@@ -2,9 +2,11 @@
 title: Tworzenie hierarchii organizacyjnej
 description: Użyj poniższej procedury, aby utworzyć hierarchię organizacyjną.
 author: sericks007
+manager: AnnBe
 ms.date: 12/15/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMHierarchyManager, OMHierarchyPurposeAssociation, OMHierarchySelection, HierarchyDesigner
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0623f4e97514246c3fb04e7bfbfe1254e8e08847566282f9a28aa526c806aa47
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8627c1aa0ce9ec011b568224040b1143f0f54c31
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758976"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796929"
 ---
 # <a name="create-an-organization-hierarchy"></a>Tworzenie hierarchii organizacyjnej
 
@@ -46,6 +48,3 @@ Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej 
     - W razie potrzeby dodaj organizację.  
     - Aby dodać organizację, kliknij przycisk **Edytuj**, a następnie opcję **Wstaw** , aby dodać organizację. Po zakończeniu wprowadzania zmian można **zapisać** wersję roboczą i/lub **opublikować** zmiany.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

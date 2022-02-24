@@ -1,26 +1,37 @@
 ---
-# required metadata
 title: Moduły kolekcji produktów
 description: Ten temat stanowi przegląd modułów kolekcji produktów w rozwiązaniu Microsoft Dynamics 365 Commerce.
 author: v-chgri
-ms.date: 01/28/2021
-ms.topic: overview
-ms.prod: null
-ms.technology: null
+manager: annbe
+ms.date: 09/15/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-commerce
+ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.assetid: null
+ms.search.scope: Operations, Retail, Core
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
-ms.search.validFrom: '2019-10-31'
+ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
+ms.openlocfilehash: 2d19cac142b870d8ecc677665443602b0a8837d2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414812"
 ---
-
 # <a name="product-collection-modules"></a>Moduły kolekcji produktów
+
 
 [!include [banner](includes/banner.md)]
 
 Ten temat stanowi przegląd modułów kolekcji produktów w rozwiązaniu Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Omówienie
 
 Odnajdowanie produktów to podstawowe narzędzie używane przez sprzedawców detalicznych, którzy mogą współpracować z klientami w witrynie e-Commerce. Moduły kolekcji produktów pomagają detalistom budować atrakcyjne doświadczenie, udostępniając intuicyjny interfejs graficzny, który może być używany do szybkiego tworzenia zbiorów produktów.
 
@@ -35,7 +46,7 @@ Moduły kolekcji produktów reprezentują fizyczne produkty i usługi w witrynie
 
 Na poniższej ilustracji przedstawiono różne typy kolekcji produktów, które są używane w witrynie e-Commerce.
 
-![Przykład różnych typów kolekcji produktów w witrynie e-Commerce.](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
+![Przykład różnych typów kolekcji produktów w witrynie e-Commerce](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
 
 > [!NOTE]
 > Zawsze używaj modułów kolekcji produktów, aby wyświetlić grupę produktów podobnego typu.
@@ -56,10 +67,6 @@ W poniższej tabeli opisano różne typy modułów kolekcji produktów w Dynamic
 | Często kupowane razem | Sztuczna inteligencja/uczenie maszynowe | Ten moduł używa uczenia maszynowego do analizowania wzorów zakupów klientów i rekomendowanych często kupowanych razem z danym produktem towarów. Ta lista może zawierać spersonalizowane wyniki dla zalogowanego użytkownika, jeśli autor witryny wybierze tę opcję. |
 | Klienci także lubią           | Sztuczna inteligencja/uczenie maszynowe | Ten moduł używa uczenia maszynowego do analizowania wzorców zakupów klientów i powiązanych z produktem rekomendowanych towarów. Ta lista może zawierać spersonalizowane wyniki dla zalogowanego użytkownika, jeśli autor witryny wybierze tę opcję. |
 | Wybrane dla Ciebie              | Sztuczna inteligencja/uczenie maszynowe | Ten modułu używa uczenia maszynowego do analizowania wzorców zakupu zalogowanego użytkownika i dostarczania spersonalizowanych rekomendacji opartych na tych wzorcach zakupu. W przypadku użytkownika gościa ta lista zostanie zwinięta. |
-
-## <a name="supported-modules"></a>Obsługiwane moduły 
-
-Moduł kolekcji produktów obsługuje [moduł szybkiego poglądu](quick-view-module.md), który umożliwia użytkownikom przeglądanie informacji o produktach i dodawanie towarów do koszyka ze strony kolekcji produktów.
 
 ## <a name="add-a-product-collection-module-to-a-category-page"></a>Dodawanie modułu kolekcji produktów do strony kategorii
 
@@ -102,8 +109,3 @@ W poniższej tabeli przedstawiono typy list, które są dostępne do wybrania w 
 [Moduł pola zakupu](add-buy-box.md)
 
 [Omówienie rekomendacji produktów](product-recommendations.md)
-
-[Moduł szybkiego podglądu](quick-view-module.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

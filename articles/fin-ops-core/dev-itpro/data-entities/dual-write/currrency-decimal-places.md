@@ -2,25 +2,34 @@
 title: Migracja typu danych Waluta dla podwójnego zapisu
 description: W tym temacie opisano sposób zmiany liczby miejsc dziesiętnych, które podwójny zapis obsługuje dla waluty.
 author: RamaKrishnamoorthy
-ms.date: 12/08/2021
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
+ms.search.industry: ''
 ms.author: ramasri
+ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: e9dc3e6c5fbec9636370b64a9bbdcf8a5834d332
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 5d39bf28dba951a1483412d967c8c6fc6dbcc610
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061843"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744382"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Migracja typu danych Waluta dla podwójnego zapisu
 
 [!include [banner](../../includes/banner.md)]
 
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Można zwiększyć liczbę miejsc dziesiętnych, które są obsługiwane dla wartości walut, do maksymalnie 10. Domyślny limit to cztery miejsca po przecinku. Zwiększenie liczby miejsc po przecinku pozwala zapobiec utracie danych podczas używania funkcji podwójnego zapisywania w celu zsynchronizowania danych. Zwiększenie liczby miejsc dziesiętnych jest zmianą do wyboru. Aby go zaimplementować, musisz zażądać pomocy od firmy Microsoft.
 
@@ -29,7 +38,7 @@ Proces zmiany liczby miejsc dziesiętnych składa się z dwóch kroków:
 1. Zażądaj migracji z rozwiązania Microsoft.
 2. Zmienianie liczby miejsc po przecinku w Dataverse.
 
-Aplikacja Finanse i Działania i Dataverse muszą obsługiwać tę samą liczbę miejsc dziesiętnych w wartościach walutowych. W przeciwnym razie utrata danych może wystąpić, gdy informacje te zostaną zsynchronizowane między aplikacjami. Proces migracji zmienia konfigurację sposobu przechowywania wartości walut i kursów wymiany, ale nie powoduje zmiany żadnych danych. Po zakończeniu migracji liczba miejsc dziesiętnych dla kodów walut i cen może zostać zwiększona, a dane wprowadzane przez użytkowników i widok mogą mieć większą dokładność dziesiętną.
+Aplikacja Finance and Operations i Dataverse muszą obsługiwać tę samą liczbę miejsc dziesiętnych w wartościach walutowych. W przeciwnym razie utrata danych może wystąpić, gdy informacje te zostaną zsynchronizowane między aplikacjami. Proces migracji zmienia konfigurację sposobu przechowywania wartości walut i kursów wymiany, ale nie powoduje zmiany żadnych danych. Po zakończeniu migracji liczba miejsc dziesiętnych dla kodów walut i cen może zostać zwiększona, a dane wprowadzane przez użytkowników i widok mogą mieć większą dokładność dziesiętną.
 
 Migracja jest opcjonalna. Jeśli można korzystać z pomocy technicznej dla większej liczby miejsc dziesiętnych, zaleca się, aby wziąć pod uwagę migrację. Organizacje niewymagające wartości, które mają więcej niż cztery miejsca dziesiętne, nie muszą migrować.
 
@@ -37,7 +46,7 @@ Migracja jest opcjonalna. Jeśli można korzystać z pomocy technicznej dla wię
 
 Przechowywanie w istniejących kolumnach waluty w Dataverse nie obsługuje więcej niż czterech miejsc dziesiętnych. Dlatego podczas procesu migracji wartości walut są kopiowane do nowych kolumn wewnętrznych w bazie danych. Ten proces jest wykonywany w sposób ciągły, dopóki nie zostaną zmigrowane wszystkie dane. Wewnętrznie na zakończenie migracji nowe typy magazynów zastępują stare typy magazynów, ale wartości danych nie są zmieniane. Następnie kolumny waluty mogą obsługiwać maksymalnie 10 miejsc dziesiętnych. W trakcie procesu migracji Dataverse może nadal korzystać z systemu bez zakłóceń.
 
-W tym samym czasie kursy wymiany są modyfikowane w taki sposób, aby obsługiwały maksymalnie 12 miejsc dziesiętnych zamiast bieżącego limitu wynoszący 10. Ta zmiana jest wymagana w celu zapewnienia, że liczba miejsc dziesiętnych jest taka sama w obu wersjach aplikacji Finanse i Działania i Dataverse.
+W tym samym czasie kursy wymiany są modyfikowane w taki sposób, aby obsługiwały maksymalnie 12 miejsc dziesiętnych zamiast bieżącego limitu wynoszący 10. Ta zmiana jest wymagana w celu zapewnienia, że liczba miejsc dziesiętnych jest taka sama w obu wersjach aplikacji Finance and Operations i Dataverse.
 
 Migracja nie powoduje zmiany żadnych danych. Po przekonwertowaniu kolumn waluta i kurs wymiany administratorzy mogą skonfigurować system do 10 miejsc dziesiętnych dla kolumn walut, określając liczbę miejsc dziesiętnych dla każdej waluty transakcji i ceny.
 
@@ -75,28 +84,14 @@ Istnieją pewne ograniczenia:
 
 Po zakończeniu migracji Administratorzy mogą skonfigurować dokładność waluty. Przejdź do **Ustawienia \> Administracja** i wybierz **Ustawienia systemowe**. Następnie na karcie **Ogólne** zmień wartość kolumny **Ustaw dokładność waluty, która jest używana do ustalania cen w całym systemie**, co pokazano na poniższej ilustracji.
 
-![Ustawienia systemowe dla waluty.](media/currency-system-settings.png)
+![Ustawienia systemowe dla waluty](media/currency-system-settings.png)
 
 ### <a name="business-management-currencies"></a>Zarządzanie firmą: waluty
 
 Jeśli precyzja waluty dla konkretnej waluty różni się od precyzji waluty używanej do ustalania cen, można ją zmienić. Przejdź do **Ustawienia \> Zarządzanie firmą**, wybierz opcję **Waluty** i wybierz walutę, która ma zostać zmieniona. Następnie w kolumnie **Dokładność waluty** należy określić żądaną liczbę miejsc dziesiętnych, jak to pokazano na poniższej ilustracji.
 
-![Ustawienia waluty dla określonego ustawienia regionalnego.](media/specific-currency.png)
+![Ustawienia waluty dla określonego ustawienia regionalnego](media/specific-currency.png)
 
-### <a name="tables-currency-column"></a>Tabele: kolumna Waluta
+### <a name="tables-currency-column"></a>tabele: kolumna Waluta
 
 Liczba miejsc dziesiętnych, które można skonfigurować dla określonych kolumn waluty, jest ograniczona do czterech.
-
-### <a name="default-currency-decimal-precision"></a>Dokładność dziesiętna waluty domyślnej
-Aby uzyskać oczekiwane zachowanie dokładności dziesiętnej waluty domyślnej w scenariuszach obejmujących i nieobejmujących migracji, skorzystaj z poniższej tabeli. 
-
-| Data utworzenia  | Pole dziesiętne waluty    | Istniejąca organizacja (pole Waluta nie zostało zmigrowane) | Istniejąca organizacja (pole Waluta zostało zmigrowane) | Nowa organizacja utworzona po kompilacji 9.2.21062.00134 |
-|---------------------------------------------------------|-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|------------------------------------------------|
-| Pole Waluta utworzone przed kompilacją 9.2.21111.00146  |     |  |       |
-|    | Maksymalna dokładność widoczna w interfejsie użytkownika   | 4 cyfry    | 10 cyfr    | Brak    |
-| | Maksymalna dokładność widoczna w interfejsie użytkownika bazy danych i wynikach zapytań wykonywanych w bazie danych         | 4 cyfry   | 10 cyfr   | Brak    |
-| Pole Waluta utworzone po kompilacji 9.2.21111.00146 |    |  |     |   |
-|   | Maksymalna dokładność dziesiętna widoczna w interfejsie użytkownika     | 4 cyfry   | 10 cyfr   | 10 cyfr     |
-|          | Maksymalna dokładność dziesiętna widoczna w interfejsie użytkownika bazy danych i wynikach zapytań wykonywanych w bazie danych | 10 cyfr. Jednak tylko 4 cyfry są cyframi znaczącymi, a poza tymi czterema cyframi znajdują się same zera. Umożliwia to prostszą i szybszą migrację organizacji, gdy jest to wymagane. | 10 cyfr      | 10 cyfr     |
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

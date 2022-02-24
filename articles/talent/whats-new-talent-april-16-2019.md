@@ -94,6 +94,3 @@ Ta zmiana powoduje, że zduplikowane pozycje są wykrywane po wypełnieniu pól 
 Aktualizacja platformy 25 dla Finance and Operations pozwala użytkownikom tworzyć reguły alertów, które automatycznie wysyłają powiadomienia do kontaktów w wyniku wyzwolenia przez zdarzenie.
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

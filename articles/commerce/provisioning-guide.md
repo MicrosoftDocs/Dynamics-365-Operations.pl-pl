@@ -2,9 +2,11 @@
 title: Ustanowienie środowiska oceny rozwiązania Dynamics 365 Commerce
 description: W tym temacie opisano sposób aprowizowania środowiska oceny aplikacji Microsoft Dynamics 365 Commerce.
 author: psimolin
+manager: annbe
 ms.date: 12/17/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -15,12 +17,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c8241c31e82d124398189666c3a1709d25884b8acd9c8f3b1068529cbd216684
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8cda79a6be1aca7ad3826b9409e110524e6560e3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777507"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969908"
 ---
 # <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Ustanowienie środowiska oceny rozwiązania Dynamics 365 Commerce
 
@@ -32,6 +34,8 @@ Przed rozpoczęciem zalecane jest wykonanie szybkiego przeglądu tego tematu w c
 
 > [!NOTE]
 > Środowiska testowe w handlu są zazwyczaj niedostępne i są przyznawane partnerom i odbiorcom na żądanie. Aby uzyskać więcej informacji, skontaktuj się z partnerem firmy Microsoft.
+
+## <a name="overview"></a>Omówienie
 
 Aby pomyślnie aprowizować środowisko oceny rozwiązania Commerce, musisz utworzyć projekt, który ma określoną nazwę i typ produktu. Środowisko i Commerce Scale Unit (CSU) mają także określone parametry, których należy użyć w celu spodziewanego późniejszego aprowizowania na platformie handlu elektronicznego. Instrukcje w tym temacie opisują wszystkie wymagane kroki do zakończenia aprowizowania i parametry, których należy użyć.
 
@@ -76,7 +80,7 @@ Aby utworzyć nowy projekt w usłudze LCS, należy wykonać następujące kroki.
 
 ### <a name="add-the-azure-connector"></a>Dodawanie łącznika platformy Azure
 
-Aby dodać łącznik Azure Connector do projektu usługi LCS, wykonaj kroki opisane w [Proces przygotowania obsługi Azure Resource Manager (ARM)](../fin-ops-core/dev-itpro/deployment/arm-onboarding.md).
+Aby dodać łącznik Azure Connector do projektu usługi LCS, wykonaj kroki opisane w [Proces przygotowania obsługi Azure Resource Manager (ARM)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/arm-onboarding).
 
 ### <a name="deploy-the-environment"></a>Wdrażanie środowiska
 
@@ -90,16 +94,16 @@ Aby wdrożyć środowisko, wykonaj następujące kroki.
 1. W polu **wersja aplikacji** wybierz najbardziej aktualną wersję. Jeśli masz określoną potrzebę wybrania wersji aplikacji innej niż wersja najbardziej aktualna, nie wybieraj wersji przed **10.0.14**.
 1. W polu **wersja platformy** użyj wersji platformy, która jest automatycznie wybierana dla wybranej wersji aplikacji. 
 
-    ![Wybieranie wersji aplikacji i platformy.](./media/project1.png)
+    ![Wybieranie wersji aplikacji i platformy](./media/project1.png)
 
 1. Wybierz pozycję **Następny**.
 1. Wybierz pozycję **Pokaz** jako topologię środowiska.
 
-    ![Wybieranie topologii środowiska 1.](./media/project2.png)
+    ![Wybieranie topologii środowiska 1](./media/project2.png)
 
 1. Na stronie **Wdrażanie środowiska** wprowadź nazwę środowiska. Pozostaw ustawienia zaawansowane niezmienione.
 
-    ![Strona wdrażania środowiska.](./media/project4.png)
+    ![Strona wdrażania środowiska](./media/project4.png)
 
 1. Dostosuj rozmiar maszyny wirtualnej zgodnie z potrzebami. (Zalecamy użycie dla maszyny wirtualnej jednostki magazynowej \[SKU\] **D13 v2**).
 1. Zapoznaj się z cenami i warunkami licencjonowania, a następnie zaznacz pole wyboru, aby wskazać, że zgadzasz się z nimi.
@@ -180,13 +184,10 @@ Aby kontynuować proces aprowizowania i konfigurowania środowiska oceny usługi
 
 [Środowiska oceny usługi Dynamics 365 Commerce — często zadawane pytania](cpe-faq.md)
 
-[Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
+[Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Commerce Scale Unit (w chmurze)](/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Commerce Scale Unit (w chmurze)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Portal Microsoft Azure](https://azure.microsoft.com/features/azure-portal)
 
 [Witryna Dynamics 365 Commerce](https://aka.ms/Dynamics365CommerceWebsite)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

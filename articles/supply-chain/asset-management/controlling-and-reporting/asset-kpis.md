@@ -1,10 +1,12 @@
 ---
 title: Wskaźniki KPI składnika majątku
 description: W tym temacie objaśniono wskaźniki KPI składnika majątku w module Zarządzanie składnikami majątku.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetObjectKPI
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8bdc60d993a784ffc123d36b5e51cbd6028316f18a2dee6f4ee134a93ffc024e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f75db96926e72bab80d0a65ce6f0ab3a92590699
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778755"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021787"
 ---
 # <a name="asset-kpis"></a>Wskaźniki KPI składnika majątku
 
@@ -82,11 +84,8 @@ W poniższej tabeli znajdziesz opisy pól na stronie **Wskaźniki KPI składnika
 
 Na poniższym rysunku przedstawiono zrzut ekranu obliczania KPI dla czterech składników majątku.
 
-![Zrzut ekranu obliczenia wskaźnika KPI dla czterech składników majątku.](media/11-controlling-and-reporting.png)
+![Zrzut ekranu obliczenia wskaźnika KPI dla czterech składników majątku](media/11-controlling-and-reporting.png)
 
 - Można wybrać wiele składników majątku w obszarze **Wszystkie składniki majątku** i kliknąć przycisk **Wskaźniki KPI składnika majątku** na karcie **Ogólne**. Następnie kliknij przycisk **OK** w oknie dialogowym **Oblicz wskaźniki KPI składnika majątku**, aby obliczyć wskaźniki KPI wybranych składników majątku.  
 - Wyniki obliczeń wskaźnika KPI mogą obejmować [rejestracje przerw konserwacyjnych](../work-orders/maintenance-downtime.md), w zależności od konfiguracji i użycia kodów przyczyn przestojów związanych z konserwacją. 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

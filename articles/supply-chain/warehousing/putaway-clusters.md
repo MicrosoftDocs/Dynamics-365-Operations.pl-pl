@@ -2,22 +2,25 @@
 title: Grupy odłożenia
 description: Grupy odłożenia umożliwiają w tym samym czasie pobieranie wielu numerów identyfikacyjnych, a następnie ich odłożenie w różnych lokalizacjach. Mogą być bardzo przydatne w firmach detalicznych, w których numery identyfikacyjne zazwyczaj nie są pełnymi paletami zapasów.
 author: Mirzaab
+manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-19
-ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: c3496d43fa3791f765abfb1eb25c45f1f21b972f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.7
+ms.openlocfilehash: 6a330ddccbd17c92443232fc8488e36a59235773
+ms.sourcegitcommit: cfd84321fba38e02e270d361df369a536a48efa3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573016"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "4512337"
 ---
 # <a name="putaway-clusters"></a>Grupy odłożenia
 
@@ -228,7 +231,7 @@ Ten scenariusz symuluje przetwarzanie grupy odłożenia.
 
 #### <a name="receive-and-sort-the-inventory-into-a-cluster"></a>Przyjmowanie i sortowanie zapasów w grupie
 
-1. Zaloguj się do aplikacji Warehouse Management jako użytkownik, który jest ustawiony dla magazynu *61*.
+1. Zaloguj się do aplikacji magazynowej jako użytkownik, który jest skonfigurowany dla magazynu *61*.
 1. W menu głównym wybierz opcję **Przychodzące**.
 1. W menu **Przychodzące** wybierz opcję **Odbiór i sortowanie grupy**.
 1. W polu **Ponum** wprowadź numer zamówienia zakupu.
@@ -270,7 +273,7 @@ Aby możliwe było odłożenie elementów w grupie, należy zamknąć grupę.
 
 #### <a name="put-the-cluster-away"></a>Odłóż grupę
 
-1. Zaloguj się do aplikacji Warehouse Management jako użytkownik, który jest ustawiony dla magazynu *61*.
+1. Zaloguj się do aplikacji magazynowej jako użytkownik, który jest skonfigurowany dla magazynu *61*.
 1. W menu głównym wybierz opcję **Przychodzące**.
 1. W menu **Przychodzące** wybierz **Grupa odłożenia**.
 1. Wybierz **Identyfikator grupy** i wprowadź identyfikator grupy, który został wprowadzony wcześniej dla zamkniętej grupy.
@@ -284,7 +287,7 @@ Aby możliwe było odłożenie elementów w grupie, należy zamknąć grupę.
 
     Masz standardowe opcje zastąpienia lub przejścia tego kroku.
 
-    ![Strona Grupa odłożenia: Odłożenie.](media/Cluster_putaway-Put.png "Strona Grupa odłożenia: Odłożenie")
+    ![Strona Grupa odłożenia: Odłożenie](media/Cluster_putaway-Put.png "Strona Grupa odłożenia: Odłożenie")
 
 1. Wybierz **OK**, aby potwierdzić odłożenie grupy.
 
@@ -293,6 +296,3 @@ Aby możliwe było odłożenie elementów w grupie, należy zamknąć grupę.
 ## <a name="notes-and-tips"></a>Notatki i porady
 
 W przypadku, gdy identyfikator grupy staje się nadrzędnym numerem identyfikacyjnym dla zagnieżdżonej palety, pozycja jest automatycznie podawana podczas skanowania identyfikatora grupy. Nie trzeba skanować kolejnych numerów identyfikacyjnych, nawet jeśli dla generowania numerów identyfikacyjnych jest ustawiona wartość ręczna.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

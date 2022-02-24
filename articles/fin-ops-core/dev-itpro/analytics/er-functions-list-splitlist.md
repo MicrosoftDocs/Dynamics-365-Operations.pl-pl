@@ -2,8 +2,11 @@
 title: SPLITLIST, funkcja ER
 description: Ten temat zawiera ogólne informacje o używaniu funkcji SPLITLIST w module Raportowanie elektroniczne (ER).
 author: NickSelin
-ms.date: 03/15/2021
+manager: kfend
+ms.date: 12/12/2019
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -14,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef0b548173a01cc5a15fcfb743dfb29397c1349b3c2926fa6401399459d07026
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d0f527dcf313a6a5e3b6601cac9a0f6495f66833
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776129"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680348"
 ---
 # <a name="splitlist-er-function"></a>SPLITLIST, funkcja ER
 
@@ -27,16 +30,10 @@ ms.locfileid: "6776129"
 
 Funkcja `SPLITLIST` dzieli określoną listę na listy podrzędne (lub partie), z których każda zawiera określoną liczbę rekordów. Zwraca ona wynik jako nową wartość typu *Lista rekordów*, która składa się z partii.
 
-## <a name="syntax-1"></a>Składnia 1
+## <a name="syntax"></a>Składnia
 
 ```vb
 SPLITLIST (list, number)
-```
-
-## <a name="syntax-2"></a>Składnia 2
-
-```vb
-SPLITLIST (list, number, on-demand reading flag)
 ```
 
 ## <a name="arguments"></a>Argumenty
@@ -48,10 +45,6 @@ Prawidłowa ścieżka elementu źródła danych o typie danych *Lista rekordów*
 `number`: *Liczba całkowita*
 
 Maksymalna liczba rekordów na partię.
-
-`on-demand reading flag`: *Wartość logiczna*
-
-Wartość *logiczna* określająca, czy elementy podlist powinny być generowane na żądanie.
 
 ## <a name="return-values"></a>Wartości zwracane
 
@@ -71,8 +64,6 @@ Zwracana jest lista partii zawierająca następujące elementy:
 
     Numer bieżącej partii na zwróconej liście.
 
-Gdy flaga odczytu na żądanie ma wartość **Prawda**, podlisty są generowane na żądanie, co pozwala na zmniejszenie zużycia pamięci, ale może spowodować uszkodzenie wydajności, jeśli elementy nie są używane sekwencyjnie.
-
 ## <a name="example"></a>Przykład
 
 Na poniższej ilustracji źródło danych **Lines** jest tworzone jako lista z trzema rekordami. Lista jest podzielona na partie, z których każdy zawiera maksymalnie dwa rekordy.
@@ -90,6 +81,3 @@ Na ilustracji poniżej widać wynik uruchomienia zaprojektowanego formatu.
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Lista funkcji](er-functions-category-list.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

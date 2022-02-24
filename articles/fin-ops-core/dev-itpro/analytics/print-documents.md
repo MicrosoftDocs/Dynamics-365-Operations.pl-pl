@@ -1,24 +1,28 @@
 ---
-# required metadata
 title: Omówienie drukowania dokumentu
 description: Dokumenty można drukować przy użyciu drukarki lokalnej lub urządzenia podłączonego do sieci. Ten artykuł zawiera omówienie sposobu drukowania dokumentów.
-author: RichdiMSFT
+author: TJVass
+manager: AnnBe
 ms.date: 07/25/2019
-ms.topic: overview
-ms.prod: null
-ms.technology: null
-audience: 'IT Pro, Application User'
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+audience: IT Pro, Application User
 ms.reviewer: kfend
-ms.custom:
-  - '69161'
-  - intro-internal
+ms.custom: 69161
 ms.assetid: 7815bddd-c4f4-4bc3-a29b-315458065374
 ms.search.region: Global
-ms.author: richdi
-ms.search.validFrom: '2016-02-28'
+ms.author: tjvass
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b1d64a2efeade5e9ba24f4dfe61c861f5a4cbad4
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680103"
 ---
-
 # <a name="document-printing-overview"></a>Omówienie drukowania dokumentu
 
 [!include [banner](../includes/banner.md)]
@@ -67,9 +71,6 @@ Rozwiązanie oparte na kliencie pozwala klientom zarządzać skalą potrzeb w za
 
 Na poniższym diagramie przedstawiono podstawowe składniki pomagające obsługiwać operacje drukowania przez sieć.
 
-[![service-components-for-network-printing\_2016.](./media/service-components-for-network-printing_2016.png)](./media/service-components-for-network-printing_2016.png)
+[![service-components-for-network-printing\_2016](./media/service-components-for-network-printing_2016.png)](./media/service-components-for-network-printing_2016.png)
 
 Należy zwrócić uwagę, że jedną drukarkę można zarejestrować w wielu Agentach rozsyłania dokumentów. Aby odczytywać preferencje drukarki, hostowana usługa używa ścieżki sieciowej, która unikatowo identyfikuje każdą drukarkę sieciową. W związku z tym nawet jeśli drukarka jest zarejestrowana na wielu klientach, pojawia się jako jedna opcja wyboru na liście dostępnych drukarek w aplikacjach.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

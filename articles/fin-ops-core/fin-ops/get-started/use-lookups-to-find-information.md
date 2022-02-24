@@ -1,10 +1,12 @@
 ---
 title: Znajdowanie informacji za pomocą odnośników
-description: W tym temacie dowiesz się więcej o tych nowych funkcjach odnośników i otrzymasz pomocne wskazówki dotyczące ich optymalnego wykorzystywania w systemie.
+description: Wiele pól ma odnośniki (służące do wyszukiwania), które bardzo ułatwiają znajdowanie poprawnych lub żądanych wartości. W funkcjonalności odnośników wprowadzono szereg ulepszeń, które zwiększają użyteczność tych formantów i w efekcie wydajność pracy użytkowników. W tym temacie dowiesz się więcej o tych nowych funkcjach odnośników i otrzymasz pomocne wskazówki dotyczące ich optymalnego wykorzystywania w systemie.
 author: jasongre
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,19 +16,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e7135487e5d87564163c643d1315c51231fa66de
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: d75e66e8fb9f1a227c9dd15f92ca5db433c0db4a
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069305"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798150"
 ---
 # <a name="find-information-by-using-lookups"></a>Znajdowanie informacji za pomocą odnośników
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Wiele pól ma odnośniki (służące do wyszukiwania), które bardzo ułatwiają znajdowanie poprawnych lub żądanych wartości. W funkcjonalności odnośników wprowadzono szereg ulepszeń, które zwiększają użyteczność tych formantów i w efekcie wydajność pracy użytkowników. W tym temacie dowiesz się więcej o tych nowych funkcjach odnośników i otrzymasz pomocne wskazówki dotyczące ich optymalnego wykorzystywania w systemie.
 
@@ -47,15 +46,15 @@ Rozważmy na przykład pole wyszukiwania o nazwie **Miejscowość**.
 
 Gdy fokus znajduje się w polu **Miejscowość**, można rozpocząć wyszukiwanie żądanej miejscowość, wpisując kilka liter, takich jak „kaz”. Gdy skończysz wpisywanie, odnośnik otworzy się automatycznie z wyfiltrowanymi miejscowościami o nazwach zaczynających się od „kaz”.
 
-[![typeaheadLookupExample.](./media/typeaheadlookupexample.png)](./media/typeaheadlookupexample.png)
+[![typeaheadLookupExample](./media/typeaheadlookupexample.png)](./media/typeaheadlookupexample.png)
 
 W tym momencie kursor jest nadal w polu wyszukiwania. Jeśli będziesz kontynuować wpisywanie, tak że wartość zmieni się na „kazim”, zawartość odnośnika automatycznie się dostosuje i będzie odzwierciedlała najnowszą wartość w formancie.
 
-![updateFilterLookupExample.](./media/updatefilterlookupexample.png)
+![updateFilterLookupExample](./media/updatefilterlookupexample.png)
 
 Mimo iż fokus jest nadal w formancie wyszukiwania, można również użyć klawiszy **strzałki w górę** lub **strzałki w dół**, aby zaznaczyć wiersz, który chcesz wybrać. Jeśli naciśniesz klawisz **Enter**, zaznaczony wiersz zostanie wybrany w odnośniku, a wartość formantu zostanie zaktualizowana.
 
-![changingSelectionLookup.](./media/changingselectionlookup.png)
+![changingSelectionLookup](./media/changingselectionlookup.png)
 
 ## <a name="typing-in-more-than-ids"></a>Wpisywanie nie tylko identyfikatorów
 
@@ -65,25 +64,22 @@ Na przykład rozważmy pole **Konto odbiorcy** podczas tworzenia zamówienia spr
 
 Jeśli użytkownik zacznie wpisywać **identyfikator konta** w formancie wyszukiwania, menu rozwijane otworzy się automatycznie zgodnie z opisem w poprzedniej sekcji i użytkownik zobaczy odnośnik, jak pokazano niżej.
 
-[![Wyszukiwanie kontekstowe po wprowadzeniu identyfikatora konta odbiorcy.](./media/howtocontextuallookups-1.png)](./media/howtocontextuallookups-1.png)
+[![Wyszukiwanie kontekstowe po wprowadzeniu identyfikatora konta odbiorcy](./media/howtocontextuallookups-1.png)](./media/howtocontextuallookups-1.png)
 
 Jednak użytkownik może teraz również wprowadzić początek **nazwy konta**. Jeśli system to wykryje, użytkownik zobaczy poniższy odnośnik. Zwróć uwagę, jak kolumna **Nazwa** przesunęła się i jest teraz pierwszą kolumną w odnośniku, a odnośnik został posortowany i wyfiltrowany w oparciu o zawartość kolumny **Nazwa**.
 
-[![Wyszukiwanie kontekstowe po wprowadzeniu nazwy odbiorcy.](./media/howtocontextuallookups-2.png)](./media/howtocontextuallookups-2.png)
+[![Wyszukiwanie kontekstowe po wprowadzeniu nazwy odbiorcy](./media/howtocontextuallookups-2.png)](./media/howtocontextuallookups-2.png)
 
 ## <a name="using-grid-column-headers-for-more-advanced-filtering-and-sorting"></a>Używanie nagłówków kolumn siatki do bardziej zaawansowanego filtrowania i sortowania
 
 Ulepszenia odnośników omówione w poprzednich dwóch rozdziałach znacznie poprawiają zdolność użytkownika do nawigowania po wierszach odnośnika w oparciu o wyszukiwanie „zaczyna się od” zastosowanego do pola **Identyfikator** lub **Nazwa** w odnośniku. Jednak istnieją sytuacje, w których do znalezienia prawidłowego wiersza jest potrzebne bardziej zaawansowane filtrowanie (lub sortowanie). W takich sytuacjach użytkownik musi użyć opcji filtrowania i sortowania nagłówków kolumn siatki wewnątrz odnośnika. Rozważmy na przykład pracownika wprowadzającego wiersz zamówienia sprzedaży, który musi odnaleźć prawidłowy „kabel” jako produkt. Wpisanie słowa „kabel” w formancie **Numer pozycji** nie wystarczy, ponieważ nie istnieją żadne nazwy produktów rozpoczynające się od „kabel”.
 
-![emptyitemlookup.](./media/emptyitemlookup.png)
+![emptyitemlookup](./media/emptyitemlookup.png)
 
 Zamiast tego użytkownik musi wyczyścić wartości formantu wyszukiwania, otworzyć menu rozwijane wyszukiwania i wyfiltrować to menu przy użyciu nagłówka kolumny siatki, jak pokazano niżej. Użytkownik posługujący się myszą (lub ekranem dotykowym) może po prostu kliknąć (lub dotknąć) dowolny nagłówek kolumny, aby uzyskać dostęp do opcji filtrowania i sortowania tej kolumny. Użytkownik posługujący się klawiaturą musi po prostu nacisnąć kombinację klawiszy **Alt**+**strzałka** **w dół** drugi raz, aby przenieść fokus do menu rozwijanego, po czym klawiszem tabulacji przejść do odpowiedniej kolumny i nacisnąć kombinację klawiszy **Ctrl**+**G**, a zostanie otwarte menu rozwijane nagłówka kolumny siatki.
 
-[![gridfilteritemlookup.](./media/gridfilteritemlookup.png)](./media/gridfilteritemlookup.png)
+[![gridfilteritemlookup](./media/gridfilteritemlookup.png)](./media/gridfilteritemlookup.png)
 
 Po zastosowaniu filtra (zobacz obraz poniżej) użytkownik może odnaleźć i zaznaczyć wiersz w zwykły sposób.
 
-![filtereditemlookup.](./media/filtereditemlookup.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+![filtereditemlookup](./media/filtereditemlookup.png)

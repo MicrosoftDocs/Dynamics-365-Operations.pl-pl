@@ -1,32 +1,30 @@
 ---
 title: Uzyskiwanie dostępu do adresów prywatnych według ról zabezpieczeń
-description: W tym temacie opisano, jak postępować, gdy odbiorca nie ma dostępu do prywatnych adresów.
-author: twheeloc
-ms.date: 08/19/2021
+description: W tym artykule opisano, jak rozwiązać problem, gdy odbiorca nie ma dostępu do prywatnych adresów.
+author: andreabichsel
+manager: AnnBe
+ms.date: 11/02/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 05895d58cfd108c45c3c75921cb6930b904a6482
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: fbe0e8acc1b879e4d7982b33413236432f25f630
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068391"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420044"
 ---
 # <a name="access-to-private-addresses-by-security-role"></a>Uzyskiwanie dostępu do adresów prywatnych według ról zabezpieczeń
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **Wydaj**
 
@@ -40,7 +38,4 @@ Aby rozwiązać ten problem, odbiorca musi wykonać następujące kroki dla zdup
 2. Na karcie **zabezpieczenia lokalizacji prywatnych** przenieś nową rolę zabezpieczeń z listy **dostępnych ról** na listę **wybrane role**.
 3. Wybierz opcję **Zapisz**.
 
-![Strona parametrów globalnej książki adresowej.](media/GAD-parameters.png)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+![Strona parametrów globalnej książki adresowej](media/GAD-parameters.png)

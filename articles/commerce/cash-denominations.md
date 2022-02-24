@@ -2,9 +2,11 @@
 title: Konfigurowanie stawek gotówkowych w punkcie sprzedaży (POS)
 description: Nominały gotówki banknotów i monet można zdefiniować w systemach zaplecza, tak aby były używane przez kasjerów, sprzedawców i kierowników w sklepie z poziomu punktu sprzedaży.
 author: jblucher
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailStoreCashDeclarationTable
 audience: Application User
@@ -16,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0ff4eb5bc7c5e2c0192a5349219301b26e479ac6be978eb05063b68f348b4e55
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e3a5f9a73bdee50e3e7c68125144c3b43305efa8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743465"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4961566"
 ---
 # <a name="configure-cash-denominations-for-the-point-of-sale-pos"></a>Konfigurowanie stawek gotówkowych w punkcie sprzedaży (POS)
 
@@ -33,7 +35,7 @@ Nominały gotówki banknotów i monet można zdefiniować w systemach zaplecza, 
 
 Nominały definiuje się dla konkretnego sklepu w opcji **Konfiguracja** \> **Deklaracja gotówki** na stronie właściwości sklepu.
 
-![Opcja deklaracji gotówki.](./media/image1-denomination.png)
+![Opcja deklaracji gotówki](./media/image1-denomination.png)
 
 Aby zdefiniować nominał:
 
@@ -41,7 +43,7 @@ Aby zdefiniować nominał:
 1. Określ typ (moneta lub banknot).
 1. Określ kwotę (wartość).
 
-![Strona stawek deklaracji gotówki.](./media/image2-denomination.png)
+![Strona stawek deklaracji gotówki](./media/image2-denomination.png)
 
 ## <a name="configure-the-functionality-profile"></a>Konfigurowanie profilu funkcji
 
@@ -49,6 +51,3 @@ W trakcie płacenia gotówką w punkcie sprzedaży użytkownik może za pomocą 
 
 - **Większa lub równa kwocie należnej** — Domyślnie w punkcie sprzedaży będą wyświetlane tylko nominały banknotów większe niż kwota należna, co pozwala zapłacić jednym naciśnięciem przycisku. Na przykład jeśli kwota należna wynosi 7,50 USD, w punkcie sprzedaży byłyby wyświetlane następujące nominały: 10 USD, 20 USD, 50 USD i 100 USD. Dotknięcie dowolnej z tych kwot spowoduje automatyczną zapłatę za sprzedaż na tę kwotę. Banknoty 1 USD i 5 USD nie są wyświetlane, ponieważ te wartości są mniejsze niż kwota należna.
 - **Wszystkie stawki** — Wybierz tę opcję, aby zawsze wyświetlać wszystkie nominały banknotów w punkcie sprzedaży, bez względu na kwotę należną. Oznacza to, że użytkownika może osiągnąć kwotę należną za pomocą kombinacji banknotów. Na przykład jeśli kwota należna wynosi 25,00 USD, użytkownik może wybrać nominały 20 USD i 5 USD, aby sfinalizować sprzedaż.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

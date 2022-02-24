@@ -57,6 +57,3 @@ W tej aktualizacji zwiększono długość tytułów. Teraz pole mieści 65 znak�
 ## <a name="benefit-enrollment-status-report"></a>Raport o stanie rejestracji na świadczenia
 
 Wbudowane raporty o otwartych rejestracjach na świadczenia pomagają łatwo sprawdzić, gdzie w procesie otwartego rejestrowania znajdują się pracownicy. Teraz można zobaczyć, ilu pracowników przeszło proces, aktualnie go przechodzi oraz jeszcze go nie rozpoczęło. Ponadto można szybko przejrzeć wszystkie problemy występujące podczas rejestracji pracowników i przeczytać kompletny dziennik wszystkich przesłań zgłoszeń od pracowników. W efekcie można łatwo zweryfikować i skontrolować zgłoszenia od pracowników.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -61,6 +61,3 @@ Aby uzyskać więcej informacji dotyczących 29. aktualizacji platformy dla Fina
 Zmiany wprowadzone w rekordach pracowników rzadko zaczynają obowiązywać natychmiast. Należy zaktualizować dane na dzień rozpoczęcia pracy pracownika, który często jest w przyszłości, a także zaktualizować informacje w przeszłości. Dzięki temu modelowi nawigacji uproszczonej można aktualizować dane przyszłe i wcześniejsze bez przechodzenia do wielu formularzy ani zmieniania kontekstu daty. Ta zmiana również dynamicznie promuje i wyświetla kluczowe informacje w górnym obszarze transparentu rekordu pracownika.
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

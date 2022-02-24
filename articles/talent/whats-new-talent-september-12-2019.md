@@ -104,6 +104,3 @@ Ta wersja zapewnia obecnie możliwość stosowania list kontrolnych pracowników
 Ta funkcja jest teraz dostępna w środowiskach piaskownicy. Aby włączyć tę funkcję, przejdź do **Administrowanie systemem > Łącza > Ustawienia > Parametry systemowe > Funkcje w wersji zapoznawczej**. Wybierz **Formularz i nawigację rozszerzonego pracownika**. Dzięki temu zmiany są włączone dla wszystkich użytkowników. Opcję tę można wyłączyć w dowolnym momencie.
 
 Aby uzyskać więcej informacji, zajrzyj do [Usprawnione wprowadzanie pracowników i nawigacja](./streamlined-employee-entry.md).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

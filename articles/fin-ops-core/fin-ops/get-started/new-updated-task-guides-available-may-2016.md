@@ -2,9 +2,11 @@
 title: Nowe lub zaktualizowane przewodniki po zadaniach (maj 2016 r.)
 description: Ten artykuł zawiera listę nowych lub zaktualizowanych przewodników po zadaniach, które zostały opublikowane w ujednoliconej bibliotece APQC firmy Microsoft (z maja 2016 r. — wszystkie języki) dla systemu Microsoft Dynamics AX. Nie opublikowano nowej biblioteki ułatwiającej rozpoczęcie pracy.
 author: josaw1
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -14,12 +16,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 38c50dd80a68c5ccdab59f6da039cbd209f06067addce341a931ddb1d127438e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fda3942621a849e7aa1095dddd004ba458933af7
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713315"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796587"
 ---
 # <a name="new-or-updated-task-guides-may-2016"></a>Nowe lub zaktualizowane przewodniki po zadaniach (maj 2016 r.)
 
@@ -191,6 +193,3 @@ Ujednolicona biblioteka APQC (z maja 2016 r.) zawiera przewodniki po zadaniach, 
 [Nowe lub zaktualizowane przewodniki po zadaniach (sierpień 2016 r.)](new-updated-task-guides-available-august-2016.md)
 
 [Nowe lub zaktualizowane przewodniki po zadaniach (listopad 2016 r.)](new-task-guides-november-2016.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

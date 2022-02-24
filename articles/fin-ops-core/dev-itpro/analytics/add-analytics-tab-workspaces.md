@@ -1,23 +1,25 @@
 ---
 title: Dodawanie analizy do obszarów roboczych za pomocą Power BI Embedded
 description: W tym temacie przedstawiono sposób osadzenia raportu programu Power BI na karcie Analizy w obszarze roboczym.
-author: RichdiMSFT
+author: tjvass
+manager: AnnBe
 ms.date: 06/21/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application user, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: richdi
+ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: ed562dca621acea24efa3f157f695257cb919cdda577cf9ae6dd0b0c942e1b70
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 53c9d6343422f64aed74ce436bafd2c8b2ce1c3e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760159"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680943"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Dodawanie analizy do obszarów roboczych za pomocą Power BI Embedded
 
@@ -54,11 +56,11 @@ Wykonaj poniższe kroki, aby dodać plik .pbix jako artefakt projektu programu V
 3. W oknie dialogowym **Dodaj nowy element** w obszarze **Artefakty operacji** zaznacz szablon **Zasób**.
 4. Wprowadź nazwę, która będzie służyć to odwoływania się do raportu w metadanych języka X++, a następnie kliknij przycisk **Dodaj**.
 
-    ![Okno dialogowe Dodaj nowy element.](media/analytical-workspace-add.png)
+    ![Okno dialogowe Dodaj nowy element](media/analytical-workspace-add.png)
 
 5. Znajdź plik .pbix zawierający definicję raportu analitycznego, a następnie kliknij przycisk **Otwórz**.
 
-    ![Okno dialogowe Wybierz plik zasobów.](media/analytical-workspace-select-resource.png)
+    ![Okno dialogowe Wybierz plik zasobów](media/analytical-workspace-select-resource.png)
 
 Teraz gdy masz dodany plik .pbix jako zasób usługi Dynamics 365, można osadzać raporty w obszarach roboczych i dodawać bezpośrednie łącza do nich przy użyciu elementów menu.
 
@@ -67,7 +69,7 @@ W tym przykładzie rozszerzymy obszar roboczy **Zarządzanie rezerwacjami** w mo
 
 Na poniższej ilustracji widać, jak formularz **FMClerkWorkspace** wygląda w projektancie w programie Microsoft Visual Studio.
 
-![Formularz FMClerkWorkspace przed zmianami.](media/analytical-workspace-definition-before.png)
+![Formularz FMClerkWorkspace przed zmianami](media/analytical-workspace-definition-before.png)
 
 Wykonaj następujące kroki w celu rozszerzenia definicji formularza dla obszaru roboczego **Zarządzanie rezerwacjami**.
 
@@ -92,7 +94,7 @@ Wykonaj następujące kroki w celu rozszerzenia definicji formularza dla obszaru
 
 Na poniższej ilustracji widać, jak projekt wygląda po zastosowaniu tych zmian.
 
-![Formularz FMClerkWorkspace po zmianach.](media/analytical-workspace-definition-after.png)
+![Formularz FMClerkWorkspace po zmianach](media/analytical-workspace-definition-after.png)
 
 Teraz gdy masz dodane formanty formularza, które będą używany do osadzania raportu w obszarze roboczym, należy zdefiniować rozmiar formantu nadrzędnego, aby zmieścił układ. Domyślnie w raporcie będą widoczne strony **Okienko filtrów** i **Karta**. Można jednak zmienić widoczność tych formantów zgodnie z potrzebami docelowego odbiorcy raportu.
 
@@ -142,7 +144,7 @@ Wykonaj następujące kroki, aby dodać logikę biznesową, która inicjuje form
 
 Zadanie dodawania logiki biznesowej inicjującej formant podglądu osadzonego raportu zostało zakończone. Na poniższej ilustracji widać, jak obszar roboczy wygląda po zastosowaniu tych zmian.
 
-![Raport osadzony w obszarze roboczym.](media/analytical-workspace-final.png)
+![Raport osadzony w obszarze roboczym](media/analytical-workspace-final.png)
 
 > [!NOTE]
 > Korzystając z kart obszaru roboczego pod tytułem strony, można przejść do istniejącego widoku operacyjnego.
@@ -173,6 +175,3 @@ public static void initializeReportControl(
 | showFilterPane   | Wartość logiczna wskazująca, czy okienko filtrów powinno być wyświetlane (**true**), czy ukryte (**false**).     |
 | showNavPane      | Wartość logiczna wskazująca, czy okienko nawigacji powinno być wyświetlane (**true**), czy ukryte (**false**). |
 | defaultFilters   | Domyślne filtry raportu programu Power BI.                                                                 |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

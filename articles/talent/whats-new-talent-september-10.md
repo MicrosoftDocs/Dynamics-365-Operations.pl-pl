@@ -98,6 +98,3 @@ Ta wersja zawiera kilka dodatkowych poprawek błędów:
 - Podczas zatrudniania zleceniobiorcy karta **Wynagrodzenie** nie powinna być dostępne na stronie wniosku/akcji.
 - W trakcie procesu wnioskowania o zakończenie zatrudnienia można kontynuować dopiero wtedy, gdy wszystkie wymagane pola będą zawierały dane.
 - Rozwiązano problemy z porządkiem sortowania i wyświetlaniem dat w funkcjach analizy w obszarze roboczym Zarządzanie pracownikami.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

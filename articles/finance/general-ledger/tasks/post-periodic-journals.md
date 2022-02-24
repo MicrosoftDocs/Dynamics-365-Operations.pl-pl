@@ -2,9 +2,11 @@
 title: Księgowanie arkuszy okresowych
 description: Arkusze okresowe są czasami nazywane arkuszami cyklicznymi, ponieważ kwota, tekst i inne informacje są powtarzane zawsze podczas pobierania arkusza.
 author: aprilolson
+manager: AnnBe
 ms.date: 06/26/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransPeriodic, LedgerJournalTransDaily
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 214a7618bbec1d30212f7c53b7086ee0d5da4e6b5de40d11d3bf16399b812597
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 99d157e82f8451e2c8f0bc7946ba30ca48e99add
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763125"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968511"
 ---
 # <a name="post-periodic-journals"></a>Księgowanie arkuszy okresowych
 
@@ -55,6 +57,3 @@ Arkusze okresowe są czasami nazywane arkuszami cyklicznymi, ponieważ kwota, te
 27. W polu **Numer arkusza okresowego** wprowadź lub wybierz wartość.
 28. Na liście kliknij łącze w wybranym wierszu.
 29. Kliknij przycisk **OK**. Arkusz okresowy może teraz zostać przejrzany, zatwierdzony lub zaksięgowany, w zależności od wymagań i konfiguracji.   
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,12 +2,15 @@
 title: Śledzenie prowizji w punkcie sprzedaży (POS) przy użyciu grup sprzedaży
 description: 'W sklepach detalicznych typową praktyką jest śledzenia sprzedaży realizowanej przez pracowników, którzy mają bezpośredni kontakt z odbiorcami: udzielają im pomocy, proponują zakup powiązanych lub dodatkowych produktów, przetwarzają transakcje itd.'
 author: jblucher
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 261234
 ms.assetid: 7cd68ecc-cc09-48ab-8cb8-48d5c304effa
 ms.search.region: global
@@ -15,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ca77ad5564cc93e9fcf335b5a49548f91c7c13face41fd73477ae4083f78be57
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: afbf69c072ae205e973203d97a5fbca7504ae04f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770916"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414826"
 ---
 # <a name="track-commissions-in-the-point-of-sale-pos-by-using-sales-groups"></a>Śledzenie prowizji w punkcie sprzedaży (POS) przy użyciu grup sprzedaży
 
@@ -69,7 +72,7 @@ Dla sklepu istnieje wiele ustawień profilu funkcji, które w aplikacji punktu s
 
 ## <a name="displaying-the-sales-representative-information-on-the-pos-transactions-screen"></a>Wyświetlanie informacji o przedstawicielach handlowych na ekranie transakcji w aplikacji POS
 
-Układ i zawartość ekranu transakcji w aplikacji punktu sprzedaży można konfigurować przy użyciu projektanta układu ekranu, a układy ekranu można przypisywać do sklepów, kas lub pracowników. Pole **Przedstawiciel handlowy** można dodać do karty Wiersze w okienku pokwitowania.  Spowoduje to wyświetlenie identyfikatora odnośnej grupy sprzedaży dla każdego wiersza na ekranie transakcji.
+Układ i zawartość ekranu transakcji w aplikacji punktu sprzedaży można konfigurować przy użyciu projektanta układu ekranu, a układy ekranu można przypisywać do sklepów, kas lub pracowników. Pole **Przedstawiciel handlowy** można dodać do karty Wiersze w okienku pokwitowania.  Spowoduje to wyświetlenie identyfikatora odnośnej grupy sprzedaży dla każdego wiersza na ekranie transakcji.
 
 ## <a name="adding-sales-representative-operations-to-pos-button-grids"></a>Dodawanie operacji przedstawicieli handlowych do siatek przycisków aplikacji POS
 
@@ -77,14 +80,11 @@ W aplikacji punktu sprzedaży użytkownicy mogą konfigurować siatki przyciskó
 
 | Operacja                                 | opis |
 |-------------------------------------------|-------------|
-| Ustaw przedstawiciela handlowego w wierszu          | Ta operacja aplikacji POS wyświetla listę kwalifikujących się grup sprzedaży (identyfikator: nazwa) dla sklepu. Zaznaczenie grupy sprzedaży na tej liście spowoduje ustawienie wartości w bieżącym wierszu transakcji. |
+| Ustaw przedstawiciela handlowego w wierszu          | Ta operacja aplikacji POS wyświetla listę kwalifikujących się grup sprzedaży (identyfikator: nazwa) dla sklepu. Zaznaczenie grupy sprzedaży na tej liście spowoduje ustawienie wartości w bieżącym wierszu transakcji. |
 | Wyczyść przedstawiciela handlowego w wierszu        | Ta operacja aplikacji POS usuwa bieżącą wartość grupy sprzedaży z bieżącego wiersza transakcji. |
-| Ustaw przedstawiciela handlowego w transakcji   | Ta operacja aplikacji POS wyświetla listę kwalifikujących się grup sprzedaży (identyfikator: nazwa) dla sklepu. Zaznaczenie grupy sprzedaży na tej liście spowoduje ustawienie domyślnej wartości w bieżącej transakcji. Wartość zostanie ustawiona we wszystkich istniejących wierszach bez przypisanej grupy sprzedaży oraz we wszystkich później dodawanych wierszach. |
+| Ustaw przedstawiciela handlowego w transakcji   | Ta operacja aplikacji POS wyświetla listę kwalifikujących się grup sprzedaży (identyfikator: nazwa) dla sklepu. Zaznaczenie grupy sprzedaży na tej liście spowoduje ustawienie domyślnej wartości w bieżącej transakcji. Wartość zostanie ustawiona we wszystkich istniejących wierszach bez przypisanej grupy sprzedaży oraz we wszystkich później dodawanych wierszach. |
 | Wyczyść przedstawiciela handlowego w transakcji | Ta operacja aplikacji POS usuwa bieżącą domyślną wartość grupy sprzedaży z bieżącej transakcji. Nie wpływa na żadne wiersze już istniejące w transakcji. |
 
 ## <a name="calculating-commissions"></a>Naliczanie prowizji
 
-Prowizja jest obliczana dla pracowników we wskazanych grupach sprzedaży w momencie księgowania zestawienia lub zamówienia sprzedaży. Kwota prowizji jest określana na podstawie udziału pracownika w prowizji, zgodnie z definicją w grupie sprzedaży oraz odnośnymi ustawieniami obliczania prowizji dla odbiorcy i/lub produktów w transakcji.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+Prowizja jest obliczana dla pracowników we wskazanych grupach sprzedaży w momencie księgowania zestawienia lub zamówienia sprzedaży. Kwota prowizji jest określana na podstawie udziału pracownika w prowizji, zgodnie z definicją w grupie sprzedaży oraz odnośnymi ustawieniami obliczania prowizji dla odbiorcy i/lub produktów w transakcji.

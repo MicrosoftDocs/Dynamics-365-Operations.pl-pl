@@ -1,23 +1,31 @@
 ---
-# required metadata
 title: Omówienie rekomendacji produktów
-description: 'Ten temat zawiera ogólne informacje o rekomendacjach produktu. Rekomendacje produktów umożliwiają łatwe i szybkie znajdowanie produktów, które są potrzebne, a nawet produktów, których klient nie zamierzał pierwotnie kupić.'
+description: Ten temat zawiera ogólne informacje o rekomendacjach produktu. Rekomendacje produktów umożliwiają łatwe i szybkie znajdowanie produktów, które są potrzebne, a nawet produktów, których klient nie zamierzał pierwotnie kupić.
 author: Moonma
+manager: AnnBe
 ms.date: 05/26/2020
-ms.topic: overview
-ms.prod: null
-ms.technology: null
-ms.search.form: null
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-commerce
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.assetid: null
+ms.search.scope: Retail, Core, Operations
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: moonma
-ms.search.validFrom: '2019-10-31'
+ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
+ms.openlocfilehash: 5aa7db8e53906f9e1416b912fe2c3b70d5430258
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414814"
 ---
-
 # <a name="product-recommendations-overview"></a>Omówienie rekomendacji produktów
 
 [!include [banner](includes/banner.md)]
@@ -27,9 +35,6 @@ Microsoft Dynamics 365 Commerce może posłużyć do pokazywania zaleceń dotycz
 Zalecenia dotyczące produktów pozwalają klientom łatwo i szybko znaleźć produkty, których chcą, mając doświadczenie, które im dobrze służy. Można nawet użyć sprzedaży powiązanej i oferowanie droższego produktu, aby pomóc klientom znalezienie dodatkowych produktów niż pierwotnie zamierzone. Kiedy rekomendacje są pomocne w odkrywaniu produktów, mogą stworzyć więcej możliwości konwersji, pomóc zwiększyć przychody ze sprzedaży, a nawet pomóc zwiększyć satysfakcję i utrzymanie klientów.
 
 W handlu elektronicznym rekomendacje produktów są oparte na technologiach uczenia maszynowego rekomendacji Microsoft na dużą skalę.
-
-Ta usługa jest dodatkiem do Dynamics 365 Commerce. Aby uzyskać więcej informacji, pobierz najnowszy [Podręcznik licencjonowania rozwiązania Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544).
-
 
 ## <a name="recommendation-service"></a>Usługa rekomendacji
 
@@ -45,7 +50,7 @@ Rekomendacje produktów są dostępne w opisanych niżej scenariuszach:
 - **Na dowolnej stronie sklepu lub stronie magazynowej w e-Commerce:** Jeśli klient lub sprzedawca odwiedza stronę sklepu, aparat rekomendacji może sugerować produkty na listach **Nowości**, **Bestsellery** i **Trendy**.
 - **Na stronie Szczegóły produktu:** Jeśli klienci lub sprzedawcy odwiedzają stronę **Szczegóły produktu**, aparat rekomendacji sugeruje dodatkowe towary, które również prawdopodobnie zostaną nabyte. Pozycje te pojawiają się również na liście osoby **Klientom podoba się również**.
 - **Na stronie transakcja lub stronie realizacja transakcji:** aparat rekomendacji sugeruje pozycje na podstawie całej listy towarów w koszyku. Te pozycje są wyświetlane na liście **Często kupowane razem**.
-- **Spersonalizowane rekomendacje:** Sprzedawcy mogą dostarczać zalogowanym odbiorcom listę **Wybrane dla Ciebie** w dodatku do nowych funkcji, które pozwalają na spersonalizowanie istniejących scenariuszy list na podstawie tego odbiorcy. Aby dowiedzieć się więcej, patrz [Włączanie rekomendacji spersonalizowanych](personalized-recommendations.md).
+- **Spersonalizowane rekomendacje:** Sprzedacy mogą dostarczać zalogowanym odbiorcom listę **Wybrane dla Ciebie** w dodatku do nowych funkcji, które pozwalają na spersonalizowanie istniejących scenariuszy list na podstawie tego odbiorcy. Aby dowiedzieć się więcej, patrz [Włączanie rekomendacji spersonalizowanych](personalized-recommendations.md).
 
 ### <a name="types-of-product-recommendations"></a>Typy rekomendacji produktów
 
@@ -83,6 +88,3 @@ W poniższej tabeli opisano różne typy automatycznych rekomendacji dotyczącyc
 [Tworzenie rekomendacji z danymi demonstracyjnymi](product-recommendations-demo-data.md)
 
 [Rekomendacje produktów — często zadawane pytania](faq-recommendations.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
 title: Amortyzacja środka trwałego
-description: Ten temat zawiera omówienie mechanizmu amortyzacji w funkcji środków trwałych.
-author: moaamer
-ms.date: 12/03/2021
+description: Ten temat zawiera omówienie mechanizmu amortyzacji środków trwałych.
+author: ShylaThompson
+manager: AnnBe
+ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetBonus, AssetBookTable
 audience: Application User
@@ -12,26 +14,23 @@ ms.reviewer: roschlom
 ms.custom: 3121
 ms.assetid: 98ff891f-e0e2-4184-b618-28107a50851f
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2442830766ef1dccc109db5569bfbbbc8182f027
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: 9b399ab3df9bddbce8b96752ef344bf93cb2563c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890987"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969110"
 ---
 # <a name="fixed-asset-depreciation"></a>Amortyzacja środka trwałego
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Ten temat zawiera omówienie mechanizmu amortyzacji w funkcji środków trwałych.
+Ten temat zawiera omówienie mechanizmu amortyzacji środków trwałych.
 
 Amortyzacja jest okresową transakcją, która zwykle zmniejsza wartość środka trwałego w bilansie i jest naliczana jako wydatek na koncie wynikowym. Dlatego do uznawania okresowej amortyzacji w bilansie jest zazwyczaj używane konto główne. Konto przeciwstawne to konto w części wynikowej planu kont.
-
-Od wersji 10.0.24 opcja konfiguracja księgi środków trwałych **Obliczanie amortyzacji dodatniej** na stronie **Księgi** umożliwia obciążenie amortyzacją środka trwałego nabytego z ujemną wartością księgową (uznanie).
 
 ## <a name="depreciation-adjustment"></a>Korekta amortyzacji
 Zwykle tylko korekta do już zaksięgowanej transakcji amortyzacji jest księgowana jako korekta amortyzacji. Dlatego też zarówno konto główne, jak i konto przeciwstawne są konfigurowane w ten sam sposób, co konta amortyzacji. Korekta amortyzacji może być kwotą dodatnią lub ujemną, ale funkcjonalność konta głównego (jako konta bilansowego) oraz konta przeciwstawnego (zazwyczaj jako konta wynikowego) pozostaje taka sama.
@@ -57,6 +56,3 @@ Aby uzyskać więcej informacji, zobacz [Metody i konwencje amortyzacji](depreci
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: Wybieranie definicji modeli danych podczas tworzenia formatów
 description: Aby wykonać kroki podane w tej procedurze, należy najpierw wykonać procedurę ER Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego.
 author: NickSelin
+manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34e6c8df735976ca0f7805fe3e06f141d38abf12faf02ff66195339147aa5405
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 44288cc3979a0ac2ed6b4a8478aac21a85aca24e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720839"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684218"
 ---
 # <a name="select-data-model-definitions-when-you-create-formats"></a>Wybieranie definicji modeli danych podczas tworzenia formatów
 
@@ -96,6 +98,3 @@ Ta procedura jest przeznaczona dla użytkowników z przypisaną rola Administrat
     * Należy zauważyć, że teraz tylko jedna pozycja główna jest dostępna do mapowania źródeł danych aplikacji. Podczas wprowadzania jednego lub więcej mapowań modeli tylko pozycje głównego modelu, które są mapowane na źródła danych aplikacji, mogą być wybierane jako definicja modelu podczas dodawania formatu raportowania elektronicznego.   
 5. Zamknij stronę.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

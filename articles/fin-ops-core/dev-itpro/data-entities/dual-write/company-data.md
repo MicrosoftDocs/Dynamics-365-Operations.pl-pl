@@ -1,65 +1,74 @@
 ---
 title: Pojęcie firmy w usługach Dataverse
-description: W tym temacie opisano integrację danych firmy między programami Finanse i Działania i Dataverse.
+description: W tym temacie opisano integrację danych firmy między Finance and Operations i Dataverse.
 author: RamaKrishnamoorthy
+manager: AnnBe
 ms.date: 08/04/2020
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
+ms.search.industry: ''
 ms.author: ramasri
-ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 3657e41363ca6c1ce8eabfeaf3ba6da9b93f5e2a
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.dyn365.ops.version: ''
+ms.search.validFrom: 2019-07-15
+ms.openlocfilehash: bbe634b87b3cb30ed993f9b3afeb4321d70f07e6
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061033"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744886"
 ---
 # <a name="company-concept-in-dataverse"></a>Pojęcie firmy w usługach Dataverse
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
-
-W Finanse i Działania koncepcja *firmy* jest zarówno konstrukcją prawną, jak i konstrukcją biznesową. Jest to również granicą bezpieczeństwa i widoczności danych. Użytkownicy zawsze pracują w kontekście pojedynczej firmy, a większość danych jest rozłożona według firmy.
+W Finance and Operations koncepcja *firmy* jest zarówno konstrukcją prawną, jak i konstrukcją biznesową. Jest to również granicą bezpieczeństwa i widoczności danych. Użytkownicy zawsze pracują w kontekście pojedynczej firmy, a większość danych jest rozłożona według firmy.
 
 Dataverse nie ma równoważnej koncepcji. Najbliższa koncepcja jest *jednostką biznesową*, która jest przede wszystkim granicą bezpieczeństwa i widoczności danych użytkownika. Koncepcja ta nie ma takich samych konsekwencji prawnych lub biznesowych, co koncepcja firmy.
 
 Ponieważ jednostka biznesowa i firma nie są równoważnymi pojęciami, nie można wymusić mapowania 1:1 między nimi co celu integracji Dataverse. Jednak ponieważ użytkownicy muszą domyślnie być w stanie widzieć te same wiersze w aplikacji i Dataverse, firma Microsoft wprowadziła nową tabelę w Dataverse o nazwie cdm\_Company. Ta tabela jest odpowiednikiem tabeli firmy w aplikacji. Aby zagwarantować, że widoczność wierszy jest równoważna między aplikacją i Dataverse od razu po zainstalowaniu, zaleca się następujące ustawienia dla danych Dataverse:
 
-+ Dla każdego wiersza firmy w programie Finanse i Działania, który jest włączony dla podwójnego zapisu tworzony jest skojarzony wiersz cdm\_Company.
++ Dla każdego wiersza firmy w Finance and Operations, który jest włączony dla podwójnego zapisu tworzony jest skojarzony wiersz cdm\_Company.
 + Gdy wiersz cdm\_Company jest tworzony i włączony dla podwójnego zapisu, tworzona jest domyślna jednostka biznesowa o tej samej nazwie. Mimo że domyślny zespół jest tworzony automatycznie dla tej jednostki biznesowej, jednostka biznesowa nie jest używana.
 + Tworzony jest oddzielny zespół właściciela o takiej samej nazwie. Jest również związany z jednostką biznesową.
 + Domyślnie właścicielem dowolnego wiersza utworzonego i zapisywanym podwójnie w Dataverse jest zestaw do zespołu „DW Owner” połączony ze skojarzoną jednostką biznesową.
 
 Ilustracja poniżej zawiera przykład tej konfiguracji danych w Dataverse.
 
-![Konfiguracja danych w Dataverse.](media/dual-write-company-1.png)
+![Konfiguracja danych w Dataverse](media/dual-write-company-1.png)
 
 Z powodu tej konfiguracji każdy wiersz związany firmą USMF będą własnością zespołu połączonego z jednostką biznesową USMF w Dataverse. W związku z tym każdy użytkownik, który ma dostęp do tej jednostki biznesowej za pośrednictwem roli zabezpieczeń, która jest ustawiona na poziomie widoczności jednostki biznesowej, może teraz widzieć te wiersze. W poniższym przykładzie pokazano, jak zespoły mogą służyć do zapewnienia prawidłowego dostępu do tych wierszy.
 
 + Rola „Menedżer sprzedaży” jest przypisana do członków zespołu „USMF Sales”.
 + Użytkownicy z rolą „Menedżer sprzedaży” mają dostęp do wszystkich wierszy konta należących do tej samej jednostki biznesowej, do której należą ci użytkownicy.
 + Zespół „USMF Sales” jest powiązany z jednostką biznesową USMF, o której wspomniano wcześniej.
-+ W związku z tym członkowie zespołu „USMF Sales” mogą zobaczyć dowolne konto, które jest własnością użytkownika „USMF DW”, i które pochodzi z tabeli Firma USMF w Finanse i Działania.
++ W związku z tym członkowie zespołu „USMF Sales” mogą zobaczyć dowolne konto, które jest własnością użytkownika „USMF DW”, i które pochodzi z tabeli Firma USMF w Finance and Operations.
 
-![Jak mogą być używane zespoły.](media/dual-write-company-2.png)
+![Jak mogą być używane zespoły](media/dual-write-company-2.png)
 
 Jak pokazano na powyższej ilustracji, to mapowanie 1:1 między jednostką biznesową, firmą i zespołem jest tylko punktem początkowym. W tym przykładzie nowa jednostka biznesowa „Europa” jest tworzona ręcznie w Dataverse jako element nadrzędny zarówno dla DEMF, jak i ESMF. Ta nowa główna jednostka biznesowa nie ma związku z podwójnym zapisem. Jednak może służyć do zapewnienia członkom zespołu „EUR Sales” dostępu do danych konta zarówno w DEMF, jak i ESMF, ustawiając widoczność danych na **Nadrzędna/Podrzędna jednostka biznesowa** w skojarzonej roli zabezpieczeń.
 
 Ostatnim tematem do omówienia jest to, w jaki sposób podwójny zapis określa zespół właściciela, do którego ma przypisać wiersze. To zachowanie jest kontrolowane przez kolumnę **Domyślny zespół właściciela** w wierszu cdm\_Company. Kiedy w wierszu cdm\_Company jest włączony podwójny zapis, wtyczka automatycznie tworzy skojarzoną jednostkę biznesową i zespół właściciela (jeśli jeszcze nie istnieje) i ustawia kolumnę **Domyślny zespół właściciela**. Administrator może zmienić wartość tej kolumny na inną. Jednak administrator nie może wyczyścić kolumny, dopóki w tabeli jest włączony podwójny zapis.
 
 > [!div class="mx-imgBorder"]
-![Domyślna kolumna zespołu będącego właścicielem.](media/dual-write-default-owning-team.jpg)
+![Domyślna kolumna zespołu będącego właścicielem](media/dual-write-default-owning-team.jpg)
 
 ## <a name="company-striping-and-bootstrapping"></a>Powielanie danych i inicjowanie firmy
 
 Integracja Dataverse powoduje wywołuje parzystość firmy za pomocą identyfikatora firmy w celu powielenia danych. Na poniższej ilustracji pokazano, że wszystkie tabele właściwe dla firmy są rozszerzane w taki sposób, że mają relacje wiele do jednego (N:1) z tabelą cdm\_Company.
 
 > [!div class="mx-imgBorder"]
-![Relacja N:1 między tabelą specyficzną dla firmy a tabelą cdm_Company.](media/dual-write-bootstrapping.png)
+![Relacja N:1 między tabelą specyficzną dla firmy a tabelą cdm_Company](media/dual-write-bootstrapping.png)
 
 + W przypadku wierszy po dodaniu i zapisaniu firmy jest ona tylko do odczytu. Dlatego użytkownicy powinni upewnić się, że została wybrana prawidłowa firma.
 + Tylko wiersze, które mają dane firmy, są uprawnione do podwójnego zapisywania między aplikacją a Dataverse.
@@ -82,7 +91,7 @@ Istnieje kilka sposobów automatycznego wypełniania nazwy firmy w aplikacjach d
 
     :::image type="content" source="media/autopopulate-company-name-3.png" alt-text="Wybór wiersza powoduje zmianę firmy domyślnej":::
 
-+ Jeśli użytkownik jest konfiguratorem systemów lub administratorem i chce automatycznie wypełniać dane firmy w formularzu niestandardowym, może używać [zdarzeń formularzy](/powerapps/developer/model-driven-apps/clientapi/events-forms-grids). Dodaj odwołanie JavaScript do **msdyn_/DefaultCompany.js** i korzystaj z następujących zdarzeń. Można skorzystać z dowolnego formularza, na przykład formularza **Konto**.
++ Jeśli użytkownik jest konfiguratorem systemów lub administratorem i chce automatycznie wypełniać dane firmy w formularzu niestandardowym, może używać [zdarzeń formularzy](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/events-forms-grids). Dodaj odwołanie JavaScript do **msdyn_/DefaultCompany.js** i korzystaj z następujących zdarzeń. Można skorzystać z dowolnego formularza, na przykład formularza **Konto**.
 
     + Zdarzenie **OnLoad** dla formularza: należy określić kolumnę **defaultCompany**.
     + Zdarzenie **OnChange** dla kolumny **Firma**: należy określić kolumnę **updateDefaultCompany**.
@@ -91,8 +100,5 @@ Istnieje kilka sposobów automatycznego wypełniania nazwy firmy w aplikacjach d
 
 Aby zastosować filtrowanie na podstawie kontekstu firmy w formularzach niestandardowych lub w niestandardowych polach kolumnach wyszukiwania dodanych do standardowych formularzy, należy otworzyć formularz i użyć sekcji **Filtrowanie rekordów pokrewnych** w celu zastosowania filtru firmy. Należy to ustawić dla każdej kolumny wyszukiwania, które wymaga filtrowania na podstawie firmy w danym wierszu. Ustawienie jest wyświetlane dla **Konta** na poniższej ilustracji.
 
-:::image type="content" source="media/apply-company-context.png" alt-text="Zastosuj kontekst firmy.":::
+:::image type="content" source="media/apply-company-context.png" alt-text="Zastosuj kontekst firmy":::
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

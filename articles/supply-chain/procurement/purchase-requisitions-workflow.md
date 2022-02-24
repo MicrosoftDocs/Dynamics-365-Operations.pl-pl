@@ -1,10 +1,12 @@
 ---
 title: przepływ pracy zapotrzebowań zakupu
 description: Przepływ pracy prowadzi zapotrzebowanie na zakup przez proces weryfikacji — od początkowego stanu Wersja robocza do końcowego Zatwierdzone. Gdy zapotrzebowanie na zakup zostanie przesłane do przeglądu, rozpoczyna się proces przepływu pracy. Po zatwierdzeniu zapotrzebowania na zakup można wygenerować zamówienie zakupu dla wierszy zapotrzebowania na zakup i przesłać do dostawcy w celu realizacji zamówienia.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchReqAuthorization, WorkflowParticipantExpenToken
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 2234
 ms.assetid: dad3ba5a-2892-45d2-874a-300896f59b34
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 66305688d1613b9882d3778a81886728df934931
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f6069e2ab93e1ce4299669850bdae37e82b17428
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569464"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021987"
 ---
 # <a name="purchase-requisition-workflow"></a>przepływ pracy zapotrzebowań zakupu
 
@@ -51,7 +53,7 @@ Na poniższej ilustracji pokazano przykładową drogę zapotrzebowania na zakup 
 -   **Pracownik działu zakupów** — użytkownik, który dokonuje przeglądu zamówienia i może zatwierdzić dokument.
 -   **Menedżer zleceniodawcy** — użytkownik, który dokonuje przeglądu menedżerskiego i może zatwierdzić dokument.
 
-![Przepływ pracy w procesie przeglądu zapotrzebowania na zakup.](./media/purchreqworkflowoverview_submission.gif)  
+![Przepływ pracy w procesie przeglądu zapotrzebowania na zakup](./media/purchreqworkflowoverview_submission.gif)  
 W tym przykładzie proces przepływu pracy dla zamówienia na zakup obejmuje następujące kroki:
 
 1.  Wystawca przesyła zapotrzebowanie na zakup do przeglądu.
@@ -74,7 +76,7 @@ W tym przykładzie w procesie przepływu pracy uwzględniono następujące role:
 -   **Menedżer działu** — użytkownik, który dokonuje przeglądu rozchodu i może zatwierdzić dokument.
 -   **Menedżer grupy** — użytkownik, który dokonuje przeglądu związanego z autoryzacją podpisu i może zatwierdzić dokument.
 
-![Przepływ pracy w procesie przeglądu wiersza zapotrzebowania na zakup.](./media/purchreqlineworkflowoverview.gif)  
+![Przepływ pracy w procesie przeglądu wiersza zapotrzebowania na zakup](./media/purchreqlineworkflowoverview.gif)  
 W tym przykładzie proces przepływu pracy dla wierszy zamówienia na zakup obejmuje następujące kroki:
 
 1.  Wystawca przesyła zapotrzebowanie na zakup do przeglądu. Każdy wiersz jest kierowany do osoby sprawdzającej, która w procesie przepływu pracy otrzymała uprawnienia do pobierania go.
@@ -105,7 +107,8 @@ Osoby sprawdzające wydatki można skonfigurować na stronie **Osoby sprawdzają
 
 Aby skorzystać z jednej z osób sprawdzających wydatki, które zostały skonfigurowane w przepływie pracy, należy ustawić opcję **Typ uczestnika** jako **Uczestnicy rozchodu** we właściwościach **przypisania** dla odpowiedniego elementu przepływu pracy.
 
-## <a name="additional-resources"></a>Dodatkowe zasoby
+<a name="additional-resources"></a>Dodatkowe zasoby
+--------
 
 [Tworzenie zapotrzebowania na zużycie](tasks/create-requisition-consumption.md)
 
@@ -117,6 +120,3 @@ Aby skorzystać z jednej z osób sprawdzających wydatki, które zostały skonfi
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

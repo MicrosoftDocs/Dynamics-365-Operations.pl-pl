@@ -2,9 +2,11 @@
 title: Rozwiązanie PowerBI.com Wyniki finansowe
 description: W tym temacie opisano pakiet zawartość Wyniki finansowe dostępny dla rozwiązania PowerBI.com.
 author: kweekley
+manager: AnnBe
 ms.date: 05/09/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1ca8338473b2efd91b6570e140ee1def3fa93df14dcf57273f601efb7f548d08
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 34ebb9c6262defa5ccf520ad51101eb3bc613fef
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767810"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682752"
 ---
 # <a name="financial-performance-powerbicom-solution"></a>Rozwiązanie PowerBI.com Wyniki finansowe
 
@@ -85,7 +87,4 @@ Następujące jednostki zostały użyte jako podstawa w pakiecie zawartości roz
 - Księgi
 - ChartofAccounts
 
-Te jednostki zostały użyte do utworzenia obliczanych miar w modelu danych. Obliczane miary są używane do obliczania kluczowych wskaźników wydajności (KPI) i generowania raportów, które są używane w pakiecie zawartości. Domyślnie pakiet zawartości grupuje dane z trzech ostatnich lat i jednego roku przyszłego. Aby uwzględnić dodatkowe obliczenia w raportach i pulpicie nawigacyjnym, można zmodyfikować [skoroszyt programu Microsoft Excel](/dynamics/s-e/). Ten skoroszyt jest domyślnym modelem danych, który został użyty do utworzenia pakietu zawartości.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+Te jednostki zostały użyte do utworzenia obliczanych miar w modelu danych. Obliczane miary są używane do obliczania kluczowych wskaźników wydajności (KPI) i generowania raportów, które są używane w pakiecie zawartości. Domyślnie pakiet zawartości grupuje dane z trzech ostatnich lat i jednego roku przyszłego. Aby uwzględnić dodatkowe obliczenia w raportach i pulpicie nawigacyjnym, można zmodyfikować [skoroszyt programu Microsoft Excel](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). Ten skoroszyt jest domyślnym modelem danych, który został użyty do utworzenia pakietu zawartości.

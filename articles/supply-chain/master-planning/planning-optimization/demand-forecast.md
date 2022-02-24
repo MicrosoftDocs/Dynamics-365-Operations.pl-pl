@@ -2,13 +2,16 @@
 title: Planowanie główne z uwzględnieniem prognoz popytu
 description: W tym temacie opisano sposób uwzględniania prognoz popytu podczas planowania głównego z optymalizacją planowania.
 author: ChristianRytt
+manager: tfehr
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ReqPlanSched, ReqGroup, ReqReduceKey, ForecastModel
+ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: cbac68b79b2a10f05e0e442d4f0aa716e5a04634
-ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
+ms.openlocfilehash: 8b47aee41494394a32ffc0ea0c42a512e5051532
+ms.sourcegitcommit: b86576e1114e4125eba8c144d40c068025f670fc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7867254"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4666729"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Planowanie główne z uwzględnieniem prognoz popytu
 
@@ -86,9 +89,9 @@ Po dołączeniu prognozy do planu głównego można wybrać sposób redukowania 
 
 Aby uwzględnić prognozę w planie głównym i wybrać metodę, która jest używana do zmniejszenia prognozowanych zapotrzebowań, przejdź do **Planowanie główne \> ustawienia \> Plany \> plany główne**. W polu **Model prognozy** wybierz model prognozy. W polu **Metoda używana w celu zmniejszenia prognozowanych zapotrzebowań** wybierz metodę. Dostępne są następujące opcje:
 
-- Brak
+- None
 - Procent — klucz redukcji
-- Transakcje — klucz redukcji
+- Transakcje — klucz redukcji (nieobsługiwany jeszcze w przypadku optymalizacji planowania)
 - Transakcje — okres dynamiczny
 
 Poniższe sekcje zawierają więcej informacji o każdej funkcji.
@@ -137,85 +140,32 @@ W tym przypadku uruchomienie planowania w dniu 1 stycznia spowoduje, że wymagan
 
 #### <a name="transactions--reduction-key"></a>Transakcje — klucz redukcji
 
-Jeśli ustawiono pole **Metoda używana do redukowania prognozowanego zapotrzebowania** na *Transakcje — klucz redukcji*, wymagania prognoz są redukowane o kwalifikowane transakcje popytu występujące w okresach określonych przez klucz redukcji.
-
-Zakwalifikowany popyt jest definiowany przez pole **Zmniejsz prognozę o** na stronie **Grupy zapotrzebowania**. Jeśli w polu **Zmniejsz prognozę o** zostanie ustawiona wartość *Zamówienia*, popyt kwalifikowany będzie dotyczyć tylko transakcji zamówień sprzedaży. Jeśli zostanie w nim ustawiona wartość *Wszystkie transakcje*, wszelkie transakcje magazynowe wydania innego niż międzyfirmowe będą traktowane jako popyt kwalifikowany. Jeśli międzyfirmowe zamówienia sprzedaży mają być uwzględniane jako zakwalifikowany popyt, ustaw opcję **Uwzględnij zamówienia międzyfirmowe** na *Tak*.
-
-Redukcja prognozy rozpoczyna się od pierwszego (najwcześniejszego) rekordu prognozy popytu w okresie klucza redukcji. Jeśli ilość kwalifikowanych transakcji magazynowych jest większa niż ilość wierszy prognozy popytu w tym samym okresie klucza redukcji, saldo ilości w transakcjach magazynowych zostanie użyte do zmniejszenia ilości prognozy popytu w poprzednim okresie (jeśli istnieje prognoza niewykorzystana).
-
-Jeśli w poprzednim okresie klucza redukcji nie pozostanie niezatwierdzona prognoza, saldo ilości transakcji magazynowych zostanie użyte do zmniejszenia prognozowanych ilości w następnym miesiącu (jeśli istnieje niewykorzystana prognoza).
-
-Wartość pola **Procent** w wierszach klucza redukcji nie jest używana, jeśli pole **Metoda używana w celu zmniejszenia prognozowanych zapotrzebowań** ma wartość *Transakcje — klucz redukcji*. Do definiowania okresu klucza redukcji używane są tylko daty.
-
-> [!NOTE]
-> Wszystkie prognozy zaksięgowane dzisiaj lub z wcześniejszą datą będą ignorowane i nie będą używane do tworzenia zamówień planowanych. Jeśli na przykład prognoza popytu dla tego miesiąca zostanie wygenerowana 1 stycznia, a zostanie uruchomione planowanie główne z prognozowaniem popytu na 2 stycznia, w obliczeniu zostanie zignorowany wiersz prognozy popytu z datą 1 stycznia.
+Jeśli wybierzesz **Transakcje — klucz redukcji** zmniejsza wymagania dotyczące prognozy popytu według transakcji zachodzących w okresach czasu, które są definiowane według klucza redukcji.
 
 ##### <a name="example-transactions--reduction-key"></a>Przykład: Transakcje— klucz redukcji
 
 W tym przykładzie pokazano, jak rzeczywiste zamówienia występujące w okresach zdefiniowanych przez klucz redukują wymagania prognozy popytu.
 
-[![Rzeczywiste zamówienia i prognoza przed uruchomieniem planowania głównego.](media/forecast-reduction-keys-1-small.png)](media/forecast-reduction-keys-1.png)
+W tym przykładzie wybierasz **Transakcje — klucz redukcji** w **Metoda używana w celu zmniejszenia prognozowanych zapotrzebowań** na stronie **Plany główne**.
 
-W tym przykładzie wybierasz *Transakcje — klucz redukcji* w **Metoda używana w celu zmniejszenia prognozowanych zapotrzebowań** na stronie **Plany główne**.
+1 stycznia istnieją następujące zamówienia sprzedaży.
 
-1 kwietnia istnieją następujące wiersze prognozy popytu.
+| Miesiąc    | Zamówiona liczba sztuk |
+|----------|--------------------------|
+| Styczeń  | 956                      |
+| Luty | 1,176                    |
+| Marzec    | 451                      |
+| Kwiecień    | 119                      |
 
-| Data     | Prognozowana liczba sztuk |
-|----------|-----------------------------|
-| 5 kwietnia  | 100                         |
-| 12 kwietnia | 100                         |
-| 19 kwietnia | 100                         |
-| 26 kwietnia | 100                         |
-| 3 maja    | 100                         |
-| 10 maja   | 100                         |
-| 17 maja   | 100                         |
+Przy tej samej prognozie popytu dla 1000 sztuk na miesiąc do planu głównego przesyłane są następujące ilości wymagania.
 
-Poniższe wiersze zamówienia sprzedaży istnieją w kwietniu.
-
-| Data     | Żądana liczba sztuk |
-|----------|----------------------------|
-| 27 kwietnia | 240                        |
-
-[![Planowana podaż wygenerowana na podstawie zamówień z kwietnia.](media/forecast-reduction-keys-2-small.png)](media/forecast-reduction-keys-2.png)
-
-Następujące ilości zapotrzebowania są przenoszone do planu głównego w przypadku uruchomienia planowania głównego w dniu 1 kwietnia. Jak widać, kwietniowe prognozowane transakcje zostały zmniejszone o ilość popytu 240 w sekwencji, począwszy od pierwszej z tych transakcji.
-
-| Data     | Wymagana liczba sztuk |
-|----------|---------------------------|
-| 5 kwietnia  | 0                         |
-| 12 kwietnia | 0                         |
-| 19 kwietnia | 60                        |
-| 26 kwietnia | 100                       |
-| 27 kwietnia | 240                       |
-| 3 maja    | 100                       |
-| 10 maja   | 100                       |
-| 17 maja   | 100                       |
-
-Załóżmy, że nowe zamówienia zostały zaimportowane w maju.
-
-Poniższe wiersze zamówienia sprzedaży istnieją w maju.
-
-| Data   | Żądana liczba sztuk |
-|--------|----------------------------|
-| 4 maja  | 80                         |
-| 11 maja | 130                        |
-
-[![Planowana podaż wygenerowana na podstawie zamówień z kwietnia i maja.](media/forecast-reduction-keys-3-small.png)](media/forecast-reduction-keys-3.png)
-
-Następujące ilości zapotrzebowania są przenoszone do planu głównego w przypadku uruchomienia planowania głównego w dniu 1 kwietnia. Jak widać, kwietniowe prognozowane transakcje zostały zmniejszone o ilość popytu 240 w sekwencji, począwszy od pierwszej z tych transakcji. Jednak transakcje prognozowane z maja zostały zmniejszone o łączną kwotę 210, począwszy od pierwszej transakcji prognozy popytu w maju. Jednak sumy dla okresu są zachowywane (400 w kwietniu i 300 w maju).
-
-| Data     | Wymagana liczba sztuk |
-|----------|---------------------------|
-| 5 kwietnia  | 0                         |
-| 12 kwietnia | 0                         |
-| 19 kwietnia | 60                        |
-| 26 kwietnia | 100                       |
-| 27 kwietnia | 240                       |
-| 3 maja    | 0                         |
-| 4 maja    | 80                        |
-| 10 maja   | 0                         |
-| 11 maja   | 130                       |
-| 17 maja   | 90                        |
+| Miesiąc                | Wymagana liczba sztuk |
+|----------------------|---------------------------|
+| Styczeń              | 44                        |
+| luty             | 0                         |
+| marzec                | 549                       |
+| kwiecień                | 881                       |
+| Od maja do grudnia | 1 000                     |
 
 #### <a name="transactions--dynamic-period"></a>Transakcje — okres dynamiczny
 
@@ -300,7 +250,7 @@ W takim wypadku są tworzone następujące zamówienia planowane.
 Klucz redukcji prognozy jest używany w metodach **transakcje — klucz redukcji** i **procent — klucz redukcji** redukcji prognozowanego zapotrzebowania. Wykonaj następujące kroki, aby utworzyć i skonfigurować klucz redukcji.
 
 1. Przejdź do menu **Planowanie główne \> Konfiguracja \> Zapotrzebowanie \> Klucze redukcji**.
-2. Wybierz pozycję **Nowy**, aby utworzyć klucz redukcji.
+2. Wybierz **nowy** lub naciśnij **Ctrl + N**, aby utworzyć klucz redukcji.
 3. W polu **klucza redukcji** wprowadź unikatowy identyfikator klucza redukcji prognoz. Następnie w polu **Nazwa** nadaj nazwę. 
 4. Definiowanie okresów i procenta klucza redukcji w każdym okresie:
 
@@ -316,78 +266,11 @@ Klucz redukcji prognoz musi być przypisany do grupy zapotrzebowania towaru. Wyk
 2. Na skróconej karcie **Inne** w polu **Klucz redukcji** wybierz klucz redukcji, który zostanie przypisany do grupy zapotrzebowania. Klucz redukcji następnie stosuje się do wszystkich elementów, które należą do grupy zapotrzebowania.
 3. Aby użyć klucza redukcji do obliczania redukcji prognozy w planowaniu głównym, to ustawienie należy zdefiniować w oknie ustawień planu głównego lub planu wg prognozy. Przejdź do jednej z następujących lokalizacji:
 
-    - **Planowanie główne \> Konfiguracja \> Plany \> Plany wg prognoz**
-    - **Planowanie główne \> Ustawienia \> Plany \> Plany główne**
+    - Planowanie główne \> Konfiguracja \> Plany \> Plany wg prognoz
+    - Planowanie główne \> Ustawienia \> Plany \> Plany główne
 
 4. Na stronie **planów wg prognozy** lub **planów głównych** na skróconej karcie **ogólne** w polu **metoda używana do zmniejszenia prognozowanych zapotrzebowań** wybierz opcję **procent — klucz redukcji** lub **transakcje — klucz redukcji**.
 
 ### <a name="reduce-a-forecast-by-transactions"></a>Redukcja prognoz według transakcji
 
 Po wybraniu metody **Transakcje — klucz redukcji** lub **Transakcje — okres dynamiczny** do redukcji prognozowanego zapotrzebowania można wybrać, które transakcje będą uwzględniane w redukowaniu prognozy. Na stronie **Grupy zapotrzebowania** na skróconej karcie **Inne** w polu **Zmniejsz prognozę o** wybierz **Wszystkie transakcje**, jeśli wszystkie transakcje mają redukować prognozę, lub **Zamówienia**, jeśli tylko zamówienia sprzedaży mają redukować prognozę.
-
-## <a name="forecast-models-and-submodels"></a>Modele prognozy i podmodele:
-
-W tej sekcji opisano, jak tworzyć modele prognoz i jak łączyć wiele modeli prognostycznych przez konfigurowanie podmodeli.
-
-*Model prognozy* nazywa i identyfikuje określoną prognozę. Po utworzeniu modelu prognozy można dodać do niego wiersze prognozy. Aby dodać wiersze prognozy dla wielu towarów, użyj strony **Wiersze prognozy popytu**. Aby dodać wiersze prognozy dla wybranej pozycji, użyj strony **Zwolnione produkty**.
-
-Model prognozy może uwzględniać prognozy z innych modeli prognozy. Aby uzyskać ten wynik, należy dodać inne modele prognozy jako *podmodele* nadrzędnego modelu prognozy. Zanim będzie można dodać model jako podmodel nadrzędnego modelu prognozy, należy utworzyć każdy z nich.
-
-Struktura wynikowa umożliwia sterowanie prognozami w rozbudowanej formie, ponieważ umożliwia łączenie (agregowanie) danych wejściowych z wielu poszczególnych prognoz. Dlatego z punktu widzenia planowania można łatwo połączyć prognozy w celu symulacji. Można na przykład skonfigurować symulację opartą na kombinacji zwykłej prognozy z prognozą dla promocji wiosennej.
-
-### <a name="submodel-levels"></a>Poziomy podmodelu
-
-Liczba podmodeli, które można dodać do nadrzędnego modelu prognozy, nie ma żadnego limitu. Struktura może mieć jednak tylko jeden poziom głębokości. Innymi słowy, model prognozy, który jest podmodelem innego modelu prognozy, nie może mieć własnych podmodeli. Podczas dodawania podmodeli do modelu prognozy system sprawdza, czy ten model prognozy nie jest już podmodelem innego modelu prognozy.
-
-Jeśli planowanie główne napotka podmodel, który ma własne podmodele, zostanie wyświetlony komunikat o błędzie.
-
-#### <a name="submodel-levels-example"></a>Przykład poziomów podmodelu
-
-Model prognozy A ma podmodel prognozy B. W związku z tym model prognozy B nie może mieć własnych podmodeli. W przypadku próby dodania podmodelu do modelu prognozy B zostanie wyświetlony następujący komunikat o błędzie: „Model prognozy B jest podmodelem modelu A”
-
-### <a name="aggregating-forecasts-across-forecast-models"></a>Agregowanie prognoz w różnych modelach prognoz
-
-Wiersze prognozy, które wystąpią tego samego dnia, będą agregowane w modelu prognozy i jego podmodelach.
-
-#### <a name="aggregation-example"></a>Przykład agregacji
-
-Model prognozowania A ma modele prognoz B i C jako podmodele.
-
-- Model prognoz A obejmuje prognozę popytu dla 2 sztuk (szt.) na 15 czerwca
-- Model prognoz B obejmuje prognozę popytu dla 3 szt. na 15 czerwca
-- Model prognoz C obejmuje prognozę popytu dla 4 szt. na 15 czerwca
-
-Wynikowa prognoza popytu będzie jednym popytem dla 9 sztuk (2 + 3 + 4) w dniu 15 czerwca.
-
-> [!NOTE]
-> Każdy podmodel używa własnych parametrów, a nie parametrów nadrzędnego modelu prognozy.
-
-### <a name="create-a-forecast-model"></a>Tworzenie modelu prognozy
-
-Aby utworzyć model prognozy, wykonaj następujące kroki.
-
-1. Przejdź do **Planowanie główne \> Konfiguracja \> Prognozowanie popytu \> Modele prognoz**.
-1. W okienku akcji wybierz opcję **Nowy**.
-1. Ustaw następujące pola dla nowego modelu prognozy:
-
-    - **Model** – Umożliwia wprowadzenie unikatowego identyfikatora modelu.
-    - **Nazwa** — umożliwia wprowadzenie opisowej nazwy modelu.
-    - **Zatrzymane** — zazwyczaj dla tej opcji należy ustawić wartość *Nie*. Ustaw wartość *Tak*, jeśli chcesz zapobiec edytowaniu wszystkich wierszy prognozy przypisanych do modelu.
-
-    > [!NOTE]
-    > Pola **Uwzględnij w prognozach przepływów pieniężnych** i pola na skróconej karcie **Projekt** nie są powiązane z planowaniem głównym. W związku z tym można je zignorować w tym kontekście. Należy je uwzględnić tylko podczas pracy z prognozami w module **Zarządzanie projektami i ich księgowanie**.
-
-### <a name="assign-submodels-to-a-forecast-model"></a>Przypisywanie podmodelu do modelu prognozy
-
-Aby przypisać modele podrzędne do modelu prognozy, wykonaj następujące kroki.
-
-1. Przejdź do **Zarządzanie zapasami \> Konfiguracja \> Prognoza \> Modele prognozy**.
-1. W okienku listy wybierz model prognozy, dla którego chcesz skonfigurować podmodel.
-1. Na skróconej karcie **Podmodele** wybierz opcję **Dodaj**, aby dodać wiersz do siatki.
-1. W nowym wierszu ustaw następujące pola:
-
-    - **Podmodel** — umożliwia wybór modelu prognozy, który ma być dodać jako podmodel. Ten model prognozy musi już istnieć i nie może mieć własnych podmodeli.
-    - **Nazwa** — umożliwia wprowadzenie opisowej nazwy podmodelu. Ta nazwa może na przykład wskazywać relację podmodelu do nadrzędnego modelu prognozy.
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

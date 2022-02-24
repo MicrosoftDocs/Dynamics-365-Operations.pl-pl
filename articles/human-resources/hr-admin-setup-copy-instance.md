@@ -2,12 +2,15 @@
 title: Kopiowanie wystąpienia
 description: Można skorzystać z usługi cyklu pomocy technicznej Microsoft Dynamics Lifecycle Services (usługi LCS), aby skopiować bazę danych firmy Microsoft Dynamics 365 Human Resources do środowiska piaskownicy (sandbox).
 author: andreabichsel
+manager: AnnBe
 ms.date: 07/22/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -15,18 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 22aa33135535d543eb8fe437821cab7a4865d6df
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 40ca0a4d9733fc2a163daa4ea1c27a3bfae6d3bf
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060838"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527844"
 ---
 # <a name="copy-an-instance"></a>Kopiowanie wystąpienia
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Można skorzystać z usługi cyklu pomocy technicznej Microsoft Dynamics Lifecycle Services (usługi LCS), aby skopiować bazę danych firmy Microsoft Dynamics 365 Human Resources do środowiska piaskownicy (sandbox). Jeśli masz inne środowisko piaskownicy, możesz również skopiować bazę danych z tego środowiska do docelowego środowiska piaskownicy.
 
@@ -38,9 +39,9 @@ Aby skopiować wystąpienie, należy pamiętać o następujących wskazówkach:
 
 - Użytkownik musi być administratorem w środowisku docelowym, aby mógł się w nim zalogować po skopiowaniu instancji.
 
-- Podczas kopiowania bazy danych Human Resources nie są kopiowane elementy (aplikacje lub dane) zawarte w środowisku Microsoft Power Apps. Aby uzyskać informacje o kopiowaniu elementów w środowisku Power Apps, zapoznaj się z tematem [Kopiuj środowisko](/power-platform/admin/copy-environment). Środowisko Power Apps, które chcesz zastąpić, musi być środowiskiem piaskownicy. Musisz być globalnym administratorem dzierżawy, aby zmienić środowisko produkcyjne Power Apps w środowisko piaskownicy. Aby uzyskać więcej informacji o zmienianiu środowiska Power Apps, zapoznaj się z tematem [Przełącz wystąpienie](/dynamics365/admin/switch-instance).
+- Podczas kopiowania bazy danych Human Resources nie są kopiowane elementy (aplikacje lub dane) zawarte w środowisku Microsoft Power Apps. Aby uzyskać informacje o kopiowaniu elementów w środowisku Power Apps, zapoznaj się z tematem [Kopiuj środowisko](https://docs.microsoft.com/power-platform/admin/copy-environment). Środowisko Power Apps, które chcesz zastąpić, musi być środowiskiem piaskownicy. Musisz być globalnym administratorem dzierżawy, aby zmienić środowisko produkcyjne Power Apps w środowisko piaskownicy. Aby uzyskać więcej informacji o zmienianiu środowiska Power Apps, zapoznaj się z tematem [Przełącz wystąpienie](https://docs.microsoft.com/dynamics365/admin/switch-instance).
 
-- Jeśli użytkownik skopiuje wystąpienie do środowiska piaskownicy i chce zintegrować środowisko piaskownicy z systemem Dataverse, należy ponownie zastosować pola niestandardowe do tabeli Dataverse. Zobacz [Zastosuj niestandardowe pola do Dataverse](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service).
+- Jeśli użytkownik skopiuje wystąpienie do środowiska piaskownicy i chce zintegrować środowisko piaskownicy z systemem Common Data Service, należy ponownie zastosować pola niestandardowe do encji Common Data Service. Zobacz [Zastosuj niestandardowe pola do Common Data Service](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service).
 
 ## <a name="effects-of-copying-a-human-resources-database"></a>Efekty kopiowania bazy danych Human Resources
 
@@ -52,9 +53,9 @@ Podczas kopiowania bazy danych Human Resources zachodzą następujące zdarzenia
 
 - Dokumenty w magazynie obiektów BLOB Microsoft Azure nie są kopiowane z jednego środowiska do drugiego. Z tego też powodu żadne dołączone dokumenty i szablony nie zostaną skopiowane i pozostaną w środowisku źródłowym.
 
-- Wszyscy użytkownicy z wyjątkiem tych z rolą zabezpieczeń „Administrator systemu” i innymi wewnętrznymi kontami użytkowników usługi nie będą dostępne. Administrator może usunąć lub ukryć dane, zanim użytkownicy ponownie uzyskają dostęp do systemu.
+- Wszyscy użytkownicy, z wyjątkiem użytkownika o statusie Administrator i innych wewnętrznych użytkowników usługi, będą niedostępni. Administrator może usunąć lub ukryć dane, zanim użytkownicy ponownie uzyskają dostęp do systemu.
 
-- Użytkownik (rola zabezpieczeń Administrator systemu) musi wprowadzić wymagane zmiany konfiguracji, takie jak ponowne podłączenie punktów końcowych integracji do określonych usług lub adresów URL.
+- Administrator musi wprowadzić wymagane zmiany konfiguracji, takie jak ponowne podłączenie punktów końcowych integracji do określonych usług lub adresów URL.
 
 ## <a name="copy-the-human-resources-database"></a>Kopiowanie bazy danych Human Resources
 
@@ -71,15 +72,15 @@ Aby wykonać to zadanie, najpierw należy skopiować instancję, a następnie za
 
 4. W okienku zadań **Kopiuj instancję** wybierz instancję, która ma zostać zastąpiona, a następnie wybierz **Kopiuj**. Poczekaj na zaktualizowanie wartości pola **Stan kopiowania** na **Zakończone**.
 
-   ![[Wybierz instancję do zastąpienia.](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
+   ![[Wybierz instancję do zastąpienia](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
 5. Wybierz **Power Platform**, zaloguj się do Centrum administracyjnego Microsoft Power Platform.
 
-   ![[Zaznacz pozycję Power Platform.](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
+   ![[Wybierz Power Platform](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
 6. Wybierz środowisko Power Apps do skopiowania, a następnie wybierz **Kopiuj**.
 
-7. Po zakończeniu procesu kopiowania zaloguj się do instancji docelowej i włącz integrację Dataverse. Aby uzyskać więcej informacji i instrukcji, zobacz [Konfigurowanie integracji Dataverse dla przestrzeni roboczych](./hr-admin-integration-common-data-service.md).
+7. Po zakończeniu procesu kopiowania zaloguj się do instancji docelowej i włącz integrację Common Data Service. Aby uzyskać więcej informacji i instrukcji, zobacz [Konfigurowanie integracji Common Data Service dla przestrzeni roboczych](https://docs.microsoft.com/dynamics365/talent/hr-common-data-service-integration).
 
 ## <a name="data-elements-and-statuses"></a>Elementy danych i stany
 
@@ -111,7 +112,7 @@ Niektóre z tych elementów nie są kopiowane, ponieważ są specyficzne dla śr
 
 Ponadto podczas kopiowania istnieją zmieniają się następujące stany:
 
-- Wszyscy użytkownicy z wyjątkiem tych z rolą zabezpieczeń „Administrator systemu” są ustawieni na **Wyłączone**.
+- Wszyscy użytkownicy z wyjątkiem administratora są **Wyłączeni**.
 
 - Wszystkie zadania wsadowe, z wyjątkiem niektórych zadań systemowych, są ustawione na **Wstrzymane**.
 
@@ -121,11 +122,11 @@ Wszyscy użytkownicy w docelowym środowisku piaskownicy, w tym Administratorzy,
 
 Wszyscy użytkownicy niebędący Administratorami w docelowym środowisku piaskownicy są wyłączeni w celu zapobiegania niepotrzebnego rejestrowania w środowisku piaskownicy. W razie potrzeby Administratorzy mogą ponownie włączyć użytkowników.
 
-## <a name="apply-custom-fields-to-dataverse"></a>Zastosuj niestandardowe pola do Dataverse
+## <a name="apply-custom-fields-to-common-data-service"></a>Zastosuj niestandardowe pola do Common Data Service
 
-Jeśli użytkownik skopiuje wystąpienie do środowiska piaskownicy i chce zintegrować środowisko piaskownicy z systemem Dataverse, należy ponownie zastosować pola niestandardowe do tabeli Dataverse.
+Jeśli użytkownik skopiuje wystąpienie do środowiska piaskownicy i chce zintegrować środowisko piaskownicy z systemem Common Data Service, należy ponownie zastosować pola niestandardowe do encji Common Data Service.
 
-Dla każdego pola niestandardowego, które jest uwidocznione na tabelach Dataverse należy wykonać następujące kroki:
+Dla każdego pola niestandardowego, które jest uwidocznione na encjach Common Data Service należy wykonać następujące kroki:
 
 1. Przejdź do pola niestandardowego i wybierz opcję **Edytuj**.
 
@@ -139,9 +140,9 @@ Dla każdego pola niestandardowego, które jest uwidocznione na tabelach Dataver
 
 6. Ponownie wybierz opcję **Zastosuj zmiany**.
 
-Proces cofania wyboru, stosowania zmian, ponownego wybierania i ponownego stosowania zmian powoduje wyświetlenie w schemacie, w którym w Dataverse będą uwzględniane pola niestandardowe.
+Proces cofania wyboru, stosowania zmian, ponownego wybierania i ponownego stosowania zmian powoduje wyświetlenie w schemacie, w którym w Common Data Service będą uwzględniane pola niestandardowe.
 
-Aby uzyskać więcej informacji na temat tworzenia pól niestandardowych, zobacz [Tworzenie pól niestandardowych i praca z nimi](../fin-ops-core/fin-ops/get-started/user-defined-fields.md).
+Aby uzyskać więcej informacji na temat tworzenia pól niestandardowych, zobacz [Tworzenie pól niestandardowych i praca z nimi](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields).
 
 ## <a name="see-also"></a>Informacje dodatkowe
 
@@ -149,6 +150,3 @@ Aby uzyskać więcej informacji na temat tworzenia pól niestandardowych, zobacz
 [Usuwanie wystąpienie](hr-admin-setup-remove-instance.md)</br>
 [Aktualizowanie procesu](hr-admin-setup-update-process.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

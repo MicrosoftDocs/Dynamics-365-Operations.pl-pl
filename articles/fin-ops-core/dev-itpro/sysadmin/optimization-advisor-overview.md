@@ -1,30 +1,37 @@
 ---
-# required metadata
 title: Omówienie Doradcy optymalizacji
-description: 'W tym temacie opisano, jak za pomocą Doradcy optymalizacji uzyskać optymalną konfigurację rozwiązania Finance and Operations.'
+description: W tym temacie opisano, jak za pomocą Doradcy optymalizacji uzyskać optymalną konfigurację rozwiązania Finance and Operations.
 author: roxanadiaconu
+manager: AnnBe
 ms.date: 07/23/2019
-ms.topic: overview
-ms.prod: null
-ms.technology: null
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
 ms.search.form: SelfHealingWorkspace
-audience: 'Application User, IT Pro'
+audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.assetid: null
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: null
+ms.search.industry: ''
 ms.author: sericks
-ms.search.validFrom: '2017-12-01'
-ms.dyn365.ops.version: 7.3
+ms.search.validFrom: 2017-12-01
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 1e53dbae2d139af554b1918102937f8c3579f64a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682544"
 ---
-
 # <a name="optimization-advisor-overview"></a>Omówienie Doradcy optymalizacji
 
 [!include [banner](../includes/banner.md)]
 
 W tym temacie opisano, jak za pomocą Doradcy optymalizacji uzyskać optymalną konfigurację rozwiązania Finance and Operations.
 
-## <a name="overview"></a>Przegląd
+## <a name="overview"></a>Omówienie
 
 Niepoprawna konfiguracja i instalacja modułu mogą negatywnie wpływać na dostępność funkcji aplikacji, wydajność systemu oraz przebieg procesów biznesowych. Również jakość danych biznesowych (na przykład poprawność, kompletność i czystość danych) wpływają na wydajność systemu, zdolność podejmowania decyzji w organizacji, wydajność pracy itd.
 
@@ -87,6 +94,3 @@ Aby zdezaktywować weryfikację przestrzegania określonych reguł, wybierz moż
 [Tworzenie reguł dla Doradcy optymalizacji](./create-rules-optimization-advisor.md)
 
 [Doradca optymalizacji w Dynamics 365 for Finance and Operations (film)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

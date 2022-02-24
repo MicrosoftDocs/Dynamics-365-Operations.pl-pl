@@ -1,25 +1,29 @@
 ---
-# required metadata
 title: Omówienie zapotrzebowania na zakup
-description: 'W tym temacie opisano przepływ pracy zapotrzebowania na zakup oraz różne stany, jakie może przyjmować zapotrzebowanie na zakup.'
-author: Henrikan
+description: W tym temacie opisano przepływ pracy zapotrzebowania na zakup oraz różne stany, jakie może przyjmować zapotrzebowanie na zakup.
+author: RichardLuan
+manager: tfehr
 ms.date: 11/02/2017
-ms.topic: overview
-ms.prod: null
-ms.technology: null
-ms.search.form: 'PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage, PurchReqConsolidationPartByVendor, PurchReqConsolidationLineDetail, PurchReqConsolidationCreate, PurchReqConsolidationBulkEdit, PurchReqConsolidationAddLine'
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage, PurchReqConsolidationPartByVendor, PurchReqConsolidationLineDetail, PurchReqConsolidationCreate, PurchReqConsolidationBulkEdit, PurchReqConsolidationAddLine
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-  - '2174'
-  - intro-internal
+ms.custom: 2174
 ms.assetid: 77d07119-4d9f-4c0e-acbe-d319203571ab
 ms.search.region: Global
-ms.author: henrikan
-ms.search.validFrom: '2016-02-28'
+ms.author: riluan
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 189debe46ea28808cf3081a7d8f49686298e8c8e
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020086"
 ---
-
 # <a name="purchase-requisition-overview"></a>Omówienie zapotrzebowania na zakup
 
 [!include [banner](../includes/banner.md)]
@@ -45,7 +49,7 @@ Można skonfigurować proces przepływu pracy dla zapotrzebowania na zakup, tak 
 
 Na poniższym diagramie przedstawiono stany, które są przypisane do zapotrzebowania na zakup i wiersz zapotrzebowania na zakup w miarę jego przekazywania w procesie przepływu pracy.  
 
-[![Stany nagłówka i wierszy zapotrzebowania na zakup.](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
+[![Stany nagłówka i wierszy zapotrzebowania na zakup](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
 
 ### <a name="purchase-requisition-header-and-line-status-relationships"></a>Relacje stanów nagłówka i wierszy zapotrzebowania na zakup
 
@@ -177,7 +181,7 @@ Aby utworzyć zamówienie zakupu dla wierszy zapotrzebowania na zakup, które ni
 
 Proces konsolidacji popytu rozpoczyna się po zatwierdzeniu zapotrzebowania na zakup w przepływie pracy i — jeśli została skonfigurowana kontrola budżetu dla organizacji — po zarejestrowaniu rezerwacji budżetu i przyszłych zobowiązań niewiążących. Poniższy diagram przedstawia przepływ procesu konsolidacji popytu.  
 
-[![Przepływ procesu konsolidacji popytu.](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
+[![Przepływ procesu konsolidacji popytu](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
 
 Aby skonsolidować zatwierdzone wiersze zapotrzebowania na zakup, wykonaj następujące kroki:
 
@@ -188,7 +192,8 @@ Aby skonsolidować zatwierdzone wiersze zapotrzebowania na zakup, wykonaj nastę
 5.  Utwórz zamówienia zakupu dla skonsolidowanych wierszy zapotrzebowania lub wierszy zapotrzebowania na zakup w możliwości konsolidacji.
 
 
-## <a name="additional-resources"></a>Dodatkowe zasoby
+<a name="additional-resources"></a>Dodatkowe zasoby
+--------
 
 [Tworzenie zapotrzebowania na zużycie](tasks/create-requisition-consumption.md)
 
@@ -196,6 +201,3 @@ Aby skonsolidować zatwierdzone wiersze zapotrzebowania na zakup, wykonaj nastę
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

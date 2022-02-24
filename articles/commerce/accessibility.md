@@ -2,30 +2,36 @@
 title: Funkcje i możliwości dostępności
 description: Ten temat zawiera informacje na temat funkcji i możliwości ułatwień dostępu w usłudze Microsoft Dynamics 365 Commerce.
 author: BrianShook
+manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 77c5b2e40c3dd16b95afe421d4515c45af0e81358940c29a14c03754c39a076e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6f6bca3589da4055eef000fc3b2c88b93eabb4d5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716283"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414862"
 ---
 # <a name="accessibility-features-and-capabilities"></a>Funkcje i możliwości dostępności
+
 
 [!include [banner](includes/banner.md)]
 
 Ten temat zawiera informacje na temat funkcji i możliwości ułatwień dostępu w usłudze Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Omówienie
 
 Funkcje i możliwości ułatwień dostępu umożliwiają wszystkim użytkownikom dostęp do akcji i ich wykonywanie ich, dzięki czemu mogą osiągać założone cele. Ten szeroki zakres użytkowników może wymagać narzędzi wspomagających dla słuchu, wzroku, mobilności lub neuroróżnorodności.
 
@@ -95,11 +101,11 @@ Aby ustawić atrybut **Wiek minimalny** dla elementu zawartości wideo, wykonaj 
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Ułatwienia dostępu w formularzach, produktach i kontrolkach](/dynamics365/unified-operations/dev-itpro/user-interface/enable-accessibility)
+[Ułatwienia dostępu w formularzach, produktach i kontrolkach](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/user-interface/enable-accessibility)
 
 [Centrum ułatwień dostępu Microsoft](https://www.microsoft.com/accessibility)
 
-[Centrum ułatwień dostępu Dynamics 365](/dynamics365/get-started/accessibility/index)
+[Centrum ułatwień dostępu Dynamics 365](https://docs.microsoft.com/dynamics365/get-started/accessibility/index)
 
 [Omówienie zgodności](compliance-overview.md)
 
@@ -108,6 +114,3 @@ Aby ustawić atrybut **Wiek minimalny** dla elementu zawartości wideo, wykonaj 
 [Dodawanie strony zasad ochrony prywatności](add-privacy-page.md)
 
 [Zamień identyfikatory użytkowników skojarzone ze śledzonymi zmianami zawartości](replace-IDs-tracked-changes.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

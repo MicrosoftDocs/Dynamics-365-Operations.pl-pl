@@ -1,28 +1,37 @@
 ---
-# required metadata
 title: Zgoda na korzystanie z ocen i recenzji
-description: 'W tym temacie wyjaśniono, jak korzystać z klasyfikacji i recenzji w witrynie Microsoft Dynamics 365 Commerce.'
+description: W tym temacie wyjaśniono, jak korzystać z klasyfikacji i recenzji w witrynie Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 01/30/2020
 ms.topic: article
-ms.prod: null
-ms.technology: null
+ms.prod: ''
+ms.service: dynamics-365-commerce
+ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.custom: null
-ms.assetid: null
+ms.search.scope: Retail, Core, Operations
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
-ms.search.industry: null
+ms.search.industry: ''
 ms.author: gmohanv
-ms.search.validFrom: '2019-10-31'
+ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
+ms.openlocfilehash: cbdb69202ebec19f4442041cfb1f99857da36d2e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414949"
 ---
-
 # <a name="opt-in-to-use-ratings-and-reviews"></a>Zgoda na korzystanie z ocen i recenzji
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie wyjaśniono, jak korzystać z klasyfikacji i recenzji w witrynie Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Omówienie
 
 Rozwiązanie oceny i recenzje to rozwiązanie wielokanałowe, które można udostępnić w Dynamics 365 Commerce za pomocą Microsoft Dynamics Lifecycle Services (usługi LCS). LCS jest portalem administracyjnym używanym przez detalistów do zarządzania swoimi środowiskami w celu likwidacji.
 
@@ -37,7 +46,7 @@ Aby korzystać z ocen i recenzji w witrynie, wykonaj następujące kroki.
 1. Ustaw opcję **Włącz obsługę ocen i recenzji** na wartość **Tak**.
 1. W grupie zabezpieczeń usługi **AAD na potrzeby moderatora ocen i recenzji (identyfikator obiektu grupy zabezpieczeń)** wprowadź identyfikator grupy zabezpieczeń Microsoft Azure Active Directory (Azure AD), która zawiera moderatorów ocen i recenzji.
 
-    ![Zgoda na korzystanie z ocen i recenzji.](media/LCS_RnR_Preference.png)
+    ![Zgoda na korzystanie z ocen i recenzji](media/LCS_RnR_Preference.png)
 
 1. Zakończ proces inicjowania w e-Commerce.
 
@@ -54,13 +63,4 @@ Aby korzystać z ocen i recenzji w witrynie, wykonaj następujące kroki.
 
 [Synchronizacja ocen produktów w rozwiązaniu Dynamics 365 Commerce](sync-product-ratings.md)
 
-[Włączanie ręcznego publikowania ocen i recenzji przez moderatora](manual-publish-rating-reviews.md)
 
-[Importowanie i eksportowanie klasyfikacji oraz przeglądów](import-export-reviews.md)
-
-[Konfigurowanie uwierzytelniania usługa-usługa](service-to-service-auth.md)
-
-[Oceny i recenzje — często zadawane pytania](ratings-reviews-faq.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

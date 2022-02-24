@@ -2,12 +2,15 @@
 title: Uwierzytelnianie
 description: W tym artykule zamieszczono przegląd informacji na temat sposobów uwierzytelniania w interfejsie programowania aplikacji (API) modułu Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
+manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -15,19 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3396f0ae6d089f43c39f318dc9d92a88a7db3d7c
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: a0509ce99205d49d516e180203ffb65a1dc09a7c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070886"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420000"
 ---
 # <a name="authentication"></a>Uwierzytelnianie
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 W tym artykule zamieszczono przegląd informacji na temat sposobów uwierzytelniania w interfejsie programowania aplikacji (API) modułu Microsoft Dynamics 365 Human Resources.
 
@@ -84,13 +82,13 @@ GET https://{cluster}.hr.talent.dynamics.com/namespaces/{namespace_guid}/data/Jo
         - Dla aplikacji sieci Web podaj podstawowy adres URL aplikacji. Na przykład `http://localhost:31544` może być adresem URL aplikacji internetowej działającej na komputerze lokalnym. Następnie użytkownicy za pomocą tego adresu URL będą się logować do aplikacji klienckiej sieci Web.
         - W przypadku aplikacji klienta publicznego podaj identyfikator URI używany przez usługę Azure AD do zwracania odpowiedzi na tokeny. Wprowadź wartość charakterystyczną dla Twojej aplikacji, np. `myapp://auth`.
 
-        Aby zapoznać się z konkretnymi przykładami aplikacji sieci Web lub aplikacji natywnych, zobacz przewodniki szybkiego startu na [platformie tożsamości Microsoft (dawniej Azure Active Directory dla deweloperów)](/azure/active-directory/develop/#quickstarts).
+        Aby zapoznać się z konkretnymi przykładami aplikacji sieci Web lub aplikacji natywnych, zobacz przewodniki szybkiego startu na [platformie tożsamości Microsoft (dawniej Azure Active Directory dla deweloperów)](https://docs.microsoft.com/azure/active-directory/develop/#quickstarts).
 
 5. W obszarze **Uprawnienia do interfejsu API** wybierz opcję **Dodaj uprawnienie**. Następnie na karcie **Interfejsy API używane w mojej organizacji** poszukaj pozycji **Dynamics 365 Human Resources** i dodaj do aplikacji uprawnienie **user\_impersonation**. Identyfikator aplikacji dla modułu Human Resources to f9be0c49-aa22-4ec6-911a-c5da515226ff. Użyj tego identyfikatora, aby upewnić się, że wybrano prawidłową aplikację.
 
 6. Wybierz opcję **Zarejestruj**.
 
-   [![Rejestrowanie nowej aplikacji w portalu Azure.](media/api-new-app-registration-expanded.png)](media/api-new-app-registration-expanded.png#lightbox)
+   [![Rejestrowanie nowej aplikacji w portalu Azure](media/api-new-app-registration-expanded.png)](media/api-new-app-registration-expanded.png#lightbox)
 
 Usługa Azure AD przypisze aplikacji unikatowy identyfikator aplikacji (identyfikator klienta) i przełączy do strony **Omówienie** dla tej aplikacji. Aby dodać więcej funkcji do aplikacji, można wybrać inne opcje konfiguracji, takie jak opcje znakowania marką oraz certyfikaty i klucze tajne.
 
@@ -187,6 +185,3 @@ namespace TalentODataPoC
 ```
 
 Po pobraniu tokenu dostępu przekażesz go w nagłówku autoryzacji jako token okaziciela w każdym żądaniu wysyłanym do interfejsu API danych, jak opisano powyżej.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

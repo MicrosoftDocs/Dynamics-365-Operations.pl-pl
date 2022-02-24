@@ -115,6 +115,3 @@ Następujące jednostki zostaną włączone dla niestandardowych pól w Common D
 - **Typ urlopu**
 - **Konto bankowe pracownika**
 - **Kalendarz pracy**
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

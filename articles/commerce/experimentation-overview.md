@@ -1,22 +1,30 @@
 ---
-# required metadata
 title: Eksperymentowanie w programie Dynamics 365 Commerce
 description: Eksperymentowanie umożliwia tworzenie i edytowanie układu strony i zawartości w konstruktorze witryn oraz zarządzanie nimi. Obsługa kompleksowych eksperymentów jest włączona dla stron i jednostek handlu elektronicznego na stronie.
 author: sushma-rao
+manager: AnnBe
 ms.date: 10/21/2020
-ms.topic: overview
-ms.prod: null
-ms.technology: null
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-retail
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.assetid: null
+ms.search.scope: Core, Operations, Retail
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: sushmar
-ms.search.validFrom: '2020-09-30'
+ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
+ms.openlocfilehash: 85eb7a661cc66c42699797cca4fa6820941de7c0
+ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "4415080"
 ---
-
 # <a name="experimentation-in-dynamics-365-commerce"></a>Eksperymentowanie w programie Dynamics 365 Commerce
 Eksperymentowanie w Dynamics 365 Commerce pozwala sprawdzić skuteczność stron handlu elektronicznego i podjęcie decyzji na podstawie danych. Program Commerce obsługuje testy A/B na stronach, modułach i fragmentach oraz umożliwia mierzenie wpływu proponowanych zmian w witrynie internetowej.
 
@@ -34,7 +42,7 @@ W konstruktorze witryn Commerce można tworzyć, edytować i zarządzać element
 ## <a name="experimentation-lifecycle"></a>Cykl życia eksperymentowania
 Konfigurowanie eksperymentu, tworzenie odmian i uruchamianie eksperymentu jest procesem iteracyjnym. Poniższy diagram przedstawia czas trwania eksperymentowania w Commerce i usłudze innej firmy. 
 
-[ ![Cykl życia eksperymentowania.](./media/experimentation_lifecycle.svg) ](./media/experimentation_lifecycle.svg#lightbox)
+[ ![Cykl życia eksperymentowania](./media/experimentation_lifecycle.svg) ](./media/experimentation_lifecycle.svg#lightbox)
 
 Więcej informacji na temat każdego kroku procesu eksperymentowania można znaleźć w poniższych tematach.
 - [Określanie hipotezy i ustalanie metryki eksperymentu](experimentation-identify.md)
@@ -49,6 +57,3 @@ Więcej informacji na temat każdego kroku procesu eksperymentowania można znal
 
 ## <a name="next-step"></a>Następne kroki
 [Określanie hipotezy i ustalanie metryki sukcesu eksperymentu](experimentation-identify.md) 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

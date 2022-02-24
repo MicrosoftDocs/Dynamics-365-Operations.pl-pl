@@ -2,9 +2,11 @@
 title: Analiza kosztów zlecenia produkcyjnego
 description: Ten artykuł zawiera informacje o analizach kosztów, jakie można wykonywać na zakończonych i bieżących zleceniach produkcyjnych. Koszty szacowane i rzeczywiste można analizować na stronie Obliczanie ceny lub w raporcie Szacowanie kosztów i wycena. Można oglądać informacje o szacowanych i rzeczywistych kosztach (oraz ilościach) dla każdego składnika, operacji marszruty i kosztu pośredniego.
 author: AndersGirke
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventCostTrans, ProdCalcTrans, ProdTableJour, ProdTableListPage, ProdSetupHistoricalCost
 audience: Application User
@@ -16,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b0690a683cdefaeb5e441d3e2ea467a680a8fc1dd0905b6a94fd72bcbf36e1e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0858e0e9ed0f09a47954274a05f6da1a2537c4a3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734266"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967290"
 ---
 # <a name="production-order-cost-analysis"></a>Analiza kosztów zlecenia produkcyjnego
 
@@ -41,7 +43,7 @@ Odchylenia odzwierciedlają wynik porównania zgłoszonych działań produkcyjny
 
 Poniższy diagram przedstawia cztery odchylenia, które składają się na różnicę między kosztami rzeczywistymi zlecenia produkcyjnego a kosztami obliczonymi w rekordzie kosztu towaru po zakończeniu zlecenia produkcyjnego. 
 
-![Odchylenia odzwierciedlające różnice w zakończonym zleceniu produkcyjnym.](./media/control.jpg) 
+![Odchylenia odzwierciedlające różnice w zakończonym zleceniu produkcyjnym](./media/control.jpg) 
 
 Odchylenia produkcji można analizować za pomocą strony **Odchylenie** lub raportu **Odchylenia produkcji**. Korzystając z odpowiednich opcji wyświetlania, można przeglądać szczegóły odchyleń według towarów, zasobów operacyjnych lub grup kosztów. Zasady podziału kosztów określone w parametrach zapasów decydują o tym, czy odchylenia są śledzone według grup kosztów. Można także używać opcji wyświetlania **jeden**, **wiele** i **suma**, aby obejrzeć zbiorcze odchylenia. Szczegóły odchyleń pomagają poznać źródło każdego odchylenia. Aby przewidzieć odchylenia przed zakończeniem zlecenia produkcyjnego, należy przeanalizować szczegółowe informacje zawarte w raporcie **Szacowanie kosztów i wycena**.
 
@@ -55,12 +57,10 @@ Oddzielne raporty zapewniają informację o każdym typie transakcji. Raporty te
 -   **Pozycje gotowe w toku** — Ten raport zawiera listę bieżących zleceń produkcyjnych oraz transakcji zgłoszenia wyrobów jako gotowe do określonego dnia transakcji.
 
 
-## <a name="additional-resources"></a>Dodatkowe zasoby
+<a name="additional-resources"></a>Dodatkowe zasoby
+--------
 
 [Typowe źródła odchyleń produkcji](common-sources-of-production-variances.md)
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

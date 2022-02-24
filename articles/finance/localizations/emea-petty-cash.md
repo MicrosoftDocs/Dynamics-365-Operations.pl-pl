@@ -2,24 +2,27 @@
 title: Zarządzanie gotówką podręczną dla Europy Wschodniej i Rosji
 description: Ten temat zawiera informacje o funkcji gotówki podręcznej, która pozwala użytkownikom w Estonii, na Litwie, w Czechach, na Węgrzech, na Łotwie, w Polsce i w Rosji uwzględniać operacje gotówkowe w systemie.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RCashBalance, RCashCountStatementForm, RCashPosting, RCashRemainLimit, RCashReportJour_PL, RCashTable, RCashTableBalance, RCashTableCredLimit, RCashTableLastRevaluation, RCashTableTransactions, RCashTrans
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.custom: 268504
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8d301cb7b16960d9f239719841516ca6354381c0011d0b2d8302f8b85012ed1e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 890300d1251b2befce47f62535f44771378f3cb7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733594"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408399"
 ---
 # <a name="petty-cash-for-eastern-europe-and-russia"></a>Zarządzanie gotówką podręczną dla Europy Wschodniej i Rosji
 
@@ -476,6 +479,3 @@ Rozliczona kwota znajduje odzwierciedlenie w polu <strong>Rozliczona waluta</str
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

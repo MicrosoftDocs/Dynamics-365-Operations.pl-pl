@@ -1,51 +1,47 @@
 ---
 title: Zatrudnianie kandydata przez rekrutację
 description: Ta procedura umożliwia osobie rekrutującej zatrudnienie kandydata, który przesłał zgłoszenie za pośrednictwem określonego projektu rekrutacji.
-author: twheeloc
-ms.date: 01/10/2022
+author: andreabichsel
+manager: AnnBe
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HRMApplication, HcmWorkerNewWorker, HcmPositionLookup, HcmWorker, HcmPosition, HcmPositionDateManager,  DefaultDashboard
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: anbichse
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2a6ecee078b18b12769a14cadc7e0182bf03d704
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 120fc00de7b66490c491d70b38aae79190de708f
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075380"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797290"
 ---
 # <a name="hiring-candidate-through-recruiting"></a>Zatrudnianie kandydata przez rekrutację
 
 [!include [banner](../../includes/banner.md)]
 
-> [!IMPORTANT]
-> Funkcjonalność opisana w tym temacie jest obecnie dostępna dla klientów Human Resources na infrastrukturze Finance.  
+Ta procedura umożliwia osobie rekrutującej zatrudnienie kandydata, który przesłał zgłoszenie za pośrednictwem określonego projektu rekrutacji. W przypadku zatrudniania kandydata za pośrednictwem projektu rekrutacji zostanie utworzony nowy rekord pracownika, a w rekordzie kandydata zostanie ustawiony stan Zatrudniony. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. Aby wykonać tę procedurę, wybierz kolejno opcje Zasoby ludzkie > Rekrutacja > Zgłoszenia > Zgłoszenia. 
 
+1. Zaznacz zgłoszenie zewnętrznego kandydata.
+2. Na liście kliknij łącze w wybranym wierszu.
+3. Kliknij opcję Stan zgłoszenia.
+4. Kliknij przycisk Zatrudnij nowego pracownika.
+5. W polu Data zatrudnienia wprowadź datę i godzinę.
+6. W polu Stanowisko kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
+7. Na liście kliknij łącze w wybranym wierszu.
+8. W polu Rozpoczęcie przypisania wprowadź datę i godzinę.
+9. Kliknij przycisk Zatrudnij nowego pracownika.
+10. Rozwiń pole informacji Historia zatrudnienia.
+11. Rozwiń pole informacji Bieżące stanowiska.
+12. Rozwiń pole informacji Historia zatrudnienia.
+13. Rozwiń pole informacji Bieżące stanowiska.
+14. Rozwiń lub zwiń sekcję Adresy.
+15. Rozwiń lub zwiń sekcję Informacje kontaktowe.
+16. Rozwiń lub zwiń sekcję Informacje osobiste.
 
-Ta procedura umożliwia osobie rekrutującej zatrudnienie kandydata, który przesłał zgłoszenie za pośrednictwem określonego projektu rekrutacji. W przypadku zatrudniania kandydata za pośrednictwem projektu rekrutacji zostanie utworzony nowy rekord pracownika, a w rekordzie kandydata zostanie ustawiony stan **Zatrudniony**. Do stworzenia tej procedury wykorzystano dane z firmy demonstracyjnej **USMF**.
-
-1. Wybierz kolejno opcje **Zasoby ludzkie \> Rekrutacja \> Zgłoszenia \> Zgłoszenia**. 
-2. Zaznacz zgłoszenie zewnętrznego kandydata.
-3. Na liście wybierz łącze w wybranym wierszu.
-4. Wybierz **Stan aplikacji**.
-5. Wybierz **Zatrudnij nowego pracownika**.
-6. W polu **Data zatrudnienia** wprowadź datę i godzinę.
-7. W polu **Umieszczenie** wybierz strzałkę rozwijaną, aby otworzyć wyszukiwanie.
-8. Na liście wybierz łącze w wybranym wierszu.
-9. W polu **Rozpoczęcie przypisania** wprowadź datę i godzinę.
-10. Wybierz **Zatrudnij nowego pracownika**.
-11. Rozwiń pole informacji **Historia zatrudnienia**.
-12. Rozwiń pole informacji **Bieżące stanowiska**.
-13. Rozwiń pole informacji **Historia zatrudnienia**.
-14. Rozwiń pole informacji **Bieżące stanowiska**.
-15. Rozwiń lub zwiń sekcję **Adresy**.
-16. Rozwiń lub zwiń sekcję **Informacje kontaktowe**.
-17. Rozwiń lub zwiń sekcję **Informacje osobiste**.
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

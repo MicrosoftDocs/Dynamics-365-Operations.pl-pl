@@ -2,9 +2,11 @@
 title: Edytowanie identyfikator faktur w zamówieniach sprzedaży dla Europy Wschodniej
 description: Ten temat zawiera informacje o parametrach rozrachunków z odbiorcami, które wpływają na numery faktur w dokumentach dostawy i fakturach dla Czech, Estonii, Węgier, Litwy, Łotwy i Polski.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustParameters
 audience: Application User
@@ -14,12 +16,12 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e5c84ee88ae96a64c56be8eb81685ba64dd9345e5e5a88e3479b255cb4d10131
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2c17ec8720dc40ba50aa2364e03cf363c1122a9c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757961"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4962805"
 ---
 # <a name="edit-invoice-ids-on-sales-orders-for-eastern-europe"></a>Edytowanie identyfikator faktur w zamówieniach sprzedaży dla Europy Wschodniej
 
@@ -58,6 +60,3 @@ Firmom w Czechach, Estonii, na Węgrzech, Litwie, Łotwie i w Polsce opcja **Edy
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

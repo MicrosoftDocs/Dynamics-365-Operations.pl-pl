@@ -1,10 +1,12 @@
 ---
 title: Parametry zarządzania składnikami majątku
 description: W module Zarządzanie składnikami majątku należy skonfigurować ogólne parametry odnoszące się do składników majątku, zleceń pracy i planowania zlecenia pracy.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetParameters
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e1deef00f01d83bc809a004265c386ba9d300df5fa4a1be245812ed5632059f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5e4b76ba90ab03cd35e72eff8acc89f780659fa5
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751968"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020661"
 ---
 # <a name="asset-management-parameters"></a>Parametry zarządzania składnikami majątku
 
@@ -99,11 +101,8 @@ Pola opisane poniżej na liście poniżej odnoszą się do obliczonych wyników 
 
 ## <a name="the-document-types-tab"></a>Karta Typy dokumentów
 
-Wybierz typy dokumentów, które powinny być dostępne do drukowania załączników związanych z raportem zlecenia pracy. W tym celu wybierz typ dokumentu w sekcji **Dostępne** i wybierz ![strzałkę do przodu.](media/15-setup-for-objects.png). Jeśli chcesz usunąć wybrany typ dokumentu, wybierz typ dokumentu w sekcji **Wybrane**, a następnie wybierz ![strzałkę wstecz](media/16-setup-for-objects.png).
+Wybierz typy dokumentów, które powinny być dostępne do drukowania załączników związanych z raportem zlecenia pracy. W tym celu wybierz typ dokumentu w sekcji **Dostępne** i wybierz ![strzałkę do przodu](media/15-setup-for-objects.png). Jeśli chcesz usunąć wybrany typ dokumentu, wybierz typ dokumentu w sekcji **Wybrane**, a następnie wybierz ![strzałkę wstecz](media/16-setup-for-objects.png).
 
 ## <a name="the-number-sequences-tab"></a>Karta Sekwencje numerów
 
 Wybierz żądane sekwencje numerów w tej sekcji. Istnieją dwie sekwencje numerów dla składników majątku: jedna dla składników majątku utworzonych ręcznie, a druga dla składników majątku utworzonych za pośrednictwem oczekujących składników majątku.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: Mobilny obszar roboczy Firmowa książka adresowa
 description: W tym temacie przedstawiono informacje o komórkowym obszarze roboczym Firmowa książka adresowa, gdzie użytkownicy mogą wyświetlać dane i kontaktować się z innymi pracownikami w organizacji.
 author: jcart1106
+manager: AnnBe
 ms.date: 09/17/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 2152d89e7d60a74e8d7561ea888e60cff42dd1ffd0ec697fac371aad9b85383c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3193fbc4d4b3492960c7c13dc24b41bb920e7d23
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720655"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683439"
 ---
 # <a name="company-directory-mobile-workspace"></a>Mobilny obszar roboczy Firmowa książka adresowa
 
@@ -77,7 +79,7 @@ Pobieranie i instalowanie aplikacji mobilnej Finance and Operations:
 3.  Podczas pierwszego logowania pojawi się monit o podanie nazwy użytkownika i hasła. Wprowadź swoje poświadczenia.
 4.  Po zalogowaniu się zobaczysz obszary robocze dostępne dla firmy. Należy zauważyć, że jeśli administrator systemu później opublikuje nowy obszar roboczy, trzeba odświeżyć listę komórkowych obszarów roboczych.
 
-[![Ściąganie w celu odświeżenia.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+[![Ściąganie w celu odświeżenia](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="view-the-company-directory-by-using-the-mobile-workspace"></a>Wyświetlanie firmowej książki adresowej przy użyciu mobilnego obszaru roboczego
 1.  W aplikacji komórkowej zaznacz obszar roboczy **Firmowa książka adresowa**. Zostanie wyświetlona lista pracowników.
@@ -87,6 +89,3 @@ Pobieranie i instalowanie aplikacji mobilnej Finance and Operations:
 1.  W aplikacji komórkowej zaznacz obszar roboczy **Firmowa książka adresowa**.
 2.  W polu **Szukaj** wprowadź imię, nazwisko, tytuł lub dział pracownika, aby rozpocząć wyszukiwanie.
 3.  Wybierz pracownika. Zostanie wyświetlona strona **Profil pracownika**. Informacje na tej stronie obejmują imię, nazwisko, tytuł i dział pracownika.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

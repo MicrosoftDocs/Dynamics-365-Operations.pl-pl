@@ -1,24 +1,26 @@
 ---
 title: Tworzenie zamówienia zwrotu zakupu
 description: W tej procedurze pokazano, jak utworzyć zamówienie zwrotu zakupu przy użyciu akcji Faktura korygująca w celu skopiowania wierszy z dokumentu faktury od dostawcy do nowego zamówienia zakupu.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, PurchCopying, InventMarking, PurchEditLines
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ea0d227966b69063993acf14e68cd069681357f1
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 10b3e695ffcd44909be4781eac5d4eaeef199b03
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569416"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017066"
 ---
 # <a name="create-a-purchase-return-order"></a>Tworzenie zamówienia zwrotu zakupu
 
@@ -65,6 +67,3 @@ W tej procedurze pokazano, jak utworzyć zamówienie zwrotu zakupu przy użyciu 
 4. W polu **Dokument przyjęcia produktów** wpisz wartość. To pole służy do wprowadzania odwołania, które będzie używane jako załącznik dla arkusza dokumentu przyjęcia produktów.  
 5. Kliknij przycisk **OK**. Towary zostały teraz zarejestrowane jako wysłane w zamówieniu zwrotu zakupu oraz utworzono arkusz dokumentu przyjęcia produktów. Można użyć akcji Dokument przyjęcia produktów, aby przejrzeć arkusze utworzone z zamówieniem zakupu i sprawdzić, co zostało przyjęte lub zwrócone i kiedy.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

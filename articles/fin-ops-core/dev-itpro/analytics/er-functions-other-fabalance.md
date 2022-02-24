@@ -2,8 +2,11 @@
 title: FA_BALANCE, funkcja ER
 description: Ten temat zawiera ogólne informacje o używaniu funkcji FA_BALANCE w module Raportowanie elektroniczne (ER).
 author: NickSelin
+manager: kfend
 ms.date: 12/17/2019
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -14,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 17730b23313eaa417a824470d5b31abedb58bc7a7e8e62479358378b708b99e4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5570e1295ff6da0eadd7e18143a2206032597ae5
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712695"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684842"
 ---
 # <a name="fa_balance-er-function"></a>FA_BALANCE, funkcja ER
 
@@ -64,6 +67,3 @@ Funkcja `FA_ BALANCE ("COMP-000001", "Current", AxEnumAssetYear.ThisYear, SESSIO
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Inne funkcje (specyficzne dla domeny biznesowej)](er-functions-category-other.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

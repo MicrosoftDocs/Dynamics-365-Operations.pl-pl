@@ -62,6 +62,3 @@ Ta aktualizacja sprawia, że zwolnieni i ponownie zatrudnieni pracownicy będą 
 
 - **Problem**: Podczas dodawania nowego załącznika do pracownika przyciski **Nowy** i **Edytuj** są wyszarzone. 
 - **Obejście:** Przed otwarciem strony załącznika upewnij się, że pola informacji na stronie **Pracownik** są zamknięte. Jeśli pola informacji są zamknięte podczas wczytywania strony **Pracownik**, przyciski złączników będą włączone. (Ten problem zostanie rozwiązany w następnej aktualizacji platformy).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

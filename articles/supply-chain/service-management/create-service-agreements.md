@@ -1,10 +1,12 @@
 ---
 title: Tworzenie umów o świadczenie usług
 description: W tym temacie opisano sposób korzystania z funkcji w modułach Zarządzanie serwisem oraz Zarządzanie projektami i ich księgowanie do tworzenia umów serwisowych.
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 02/19/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAAgreementTable
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9a5d580b0bb146bf5d445823b37f607e507f7eb
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ef5ca8cc9c80581b9f7ef69bd8c4403d3d0296e8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569150"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965980"
 ---
 # <a name="create-service-agreements"></a>Tworzenie umów o świadczenie usług
 
@@ -31,8 +33,8 @@ W tym temacie opisano sposób korzystania z funkcji w modułach Zarządzanie ser
 ## <a name="create-a-service-agreement-from-service-management"></a>Tworzenie umowy serwisowej z Zarządzania serwisem
 
 1. Przejdź do modułu **Zarządzanie serwisem**.
-2. Wybierz opcję **Umowy serwisowe**, aby utworzyć nowy wiersz umowy serwisowej w nagłówku strony. 
-3. Wybierz pozycję **Nowy**. Wprowadź opis, wybierz odwołanie do projektu w polu **Identyfikator projektu** i uzupełnij pozostałe wiersze i pola dla umowy serwisowej. Wybierz opcję **Zapisz**.
+2. Kliknij opcję **Umowy serwisowe**, aby utworzyć nowy wiersz umowy serwisowej w nagłówku strony. 
+3. Kliknij przycisk **Nowy**. Wprowadź opis, wybierz odwołanie do projektu w polu **Identyfikator projektu** i uzupełnij pozostałe wiersze i pola dla umowy serwisowej. Kliknij przycisk **Zapisz**.
 4. Na karcie **Relacje** wybierz opcję **Przedmioty serwisu** lub **Zadania serwisowe**, aby utworzyć relacje przedmiotów serwisu lub relacje zadań serwisowych dla umowy serwisowej. Przedmioty serwisu i zadania serwisowe, dla których zostały utworzone relacje, można dołączać do wierszy umowy serwisowej.
 5. W dolnej połowie strony utwórz wiersze umowy serwisowej, kopiując je z szablonu serwisu lub innej umowy serwisowej albo tworząc je ręcznie.
 
@@ -43,14 +45,14 @@ W tym temacie opisano sposób korzystania z funkcji w modułach Zarządzanie ser
 
 1. Na stronie **Umowy serwisowe** dodaj wiersz umowy serwisowej w siatce wierszy. 
 2. Wprowadź odpowiednie informacje w wierszu umowy serwisowej. 
-3. Wybierz **Zapisz**, aby zapisać wiersz, a następnie zamknij stronę.
+3. Naciśnij klawisze **CTRL+S**, aby zapisać wiersz, a następnie zamknij stronę.
 
 ## <a name="create-a-service-agreement-from-project"></a>Tworzenie umowy serwisowej z modułu Projekt
 
-1. Wybierz **Zarządzanie projektami i ich księgowanie**.
-2. Wybierz opcję **Wszystkie projekty**.
+1. Kliknij opcję **Zarządzanie projektami i ich księgowanie**.
+2. Kliknij opcję **Wszystkie projekty**.
 3. Wybierz projekt z listy.
-4. W **Okienku akcji** wybierz pozycję **Zarządzaj**. W grupie akcji **Nowy** wybierz opcję **Serwis**, a następnie opcję **Umowa serwisowa**.
+4. W **okienku akcji** kliknij pozycję **Zarządzaj**. W grupie akcji **Nowy** kliknij opcję **Serwis**, a następnie opcję **Umowa serwisowa**.
 5. Wykonaj kroki opisane w sekcji zatytułowanej **Tworzenie umowy serwisowej** wcześniej w tym temacie, aby wprowadzić odwołanie do projektu.
 
 
@@ -59,6 +61,3 @@ W tym temacie opisano sposób korzystania z funkcji w modułach Zarządzanie ser
 [Omówienie opracowania i ustanawiania przeglądów umów serwisowych](service-agreements.md)
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

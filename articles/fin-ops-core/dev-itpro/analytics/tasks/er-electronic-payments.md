@@ -1,10 +1,12 @@
 ---
 title: ER Generowanie dokumentów elektronicznych dla płatności przy użyciu konfiguracji formatu
-description: W tym temacie opisano sposób utworzenia nowej konfiguracji formatu raportowania elektronicznego do generowania dokumentów elektronicznych na potrzeby przetwarzania płatności.
+description: W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli Administrator systemu lub Deweloper raportowania elektronicznego może używać nowej konfiguracji formatu raportowania elektronicznego (ER) do generowania dokumentów elektronicznych w celu przetwarzania płatności.
 author: NickSelin
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendPaymMode, LedgerJournalTable, LedgerJournalTransVendPaym, BankAccountTableLookUp
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 05295ff36ffd194b3f50fcdd9d7528c787c80f39104f46f9c51890a75a852735
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6e88df5c2f92ee2b9b448ba100c8bc4105eddae4
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712671"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681740"
 ---
 # <a name="er-generate-electronic-documents-for-payments-using-a-format-configuration"></a>ER Generowanie dokumentów elektronicznych dla płatności przy użyciu konfiguracji formatu
 
@@ -79,6 +81,3 @@ Aby wykonać te kroki, należy najpierw wykonać kroki w procedurze „Tworzenie
 25. Kliknij przycisk OK.
     * Przeanalizuj utworzony plik płatności w formacie XML. Porównaj go z zaprojektowanym układem dokumentu i zdefiniowanymi atrybutami transakcji płatności.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
