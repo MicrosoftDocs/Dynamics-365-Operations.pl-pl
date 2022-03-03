@@ -1,12 +1,10 @@
 ---
 title: Parametry zarządzania składnikami majątku
 description: W module Zarządzanie składnikami majątku należy skonfigurować ogólne parametry odnoszące się do składników majątku, zleceń pracy i planowania zlecenia pracy.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetParameters
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5e4b76ba90ab03cd35e72eff8acc89f780659fa5
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 1659fd3b4c173ffe09f245631309d329bba5b1bd
+ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020661"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8105496"
 ---
 # <a name="asset-management-parameters"></a>Parametry zarządzania składnikami majątku
 
@@ -51,7 +49,7 @@ Karta **Zlecenia pracy** zawiera następujące ustawienia:
 - **Domyślny typ zlecenia** definiuje ustawienia standardowe podczas tworzenia zlecenia pracy.  
 - **Typ zlecenia prewencyjnego** definiuje typ zlecenia pracy używany podczas tworzenia zleceń pracy z planów konserwacji. Jeśli to pole pozostanie puste, używany jest typ zlecenia pracy określony w polu **Domyślny typ zlecenia pracy**.  
 - W polu **Maska powiązanego zlecenia pracy** definiuje się maksymalną liczbę zleceń pracy, które mogą być związane ze zleceniem pracy. Na przykład, ## pozwala na posiadanie do powiązanych 99 zleceń pracy. Jeśli zdefiniujesz maskę zgodnie z opisem w tym miejscu, powiązane zlecenia pracy będą numerowane [identyfikator zlecenia pracy, z którym jest powiązane zlecenie pracy]-01,-02,-03 itd. Jeśli nie zdefiniujesz maski w tym polu, powiązane zlecenie pracy otrzyma następny sekwencyjny identyfikator zlecenia pracy.  
-- Wybierz **Tak** na przełączniku **Błędy kopiowania**, jeśli chcesz automatycznie kopiować błędy zarejestrowane w zleceniach pracy do powiązanych żądań konserwacji. 
+- Wybierz **Tak** na przełączniku **Błędy kopiowania**, jeśli chcesz automatycznie kopiować błędy zarejestrowane w żądaniach konserwacji do powiązanych zleceń pracy. 
 - W polu **Poziom** można zdefiniować poziom lokalizacji czynności konserwacyjnych, który jest automatycznie wstawiany w zleceniu pracy, jeśli wszystkie powiązane zadania zlecenia pracy odnoszą się do tej samej lokalizacji czynności konserwacyjnych. Jeśli zadania zlecenia pracy nie odnoszą się do tej samej lokalizacji czynności konserwacyjnych na zdefiniowanym poziomie, pole **Lokalizacja czynności konserwacyjnych** jest pusta na zleceniu pracy. Na przykład, jeśli wstawisz cyfrę „1” w tym polu, to jest to najwyższy poziom w strukturze lokalizacji czynności konserwacyjnych. Jeśli w tym polu zostanie wstawiona cyfra „0”, nie zdefiniowano określonego poziomu lokalizacji czynności konserwacyjnych, tylko że wszystkie zadania zlecenia pracy w zleceniu pracy muszą być powiązane z tą samą lokalizacją czynności konserwacyjnych dla tej lokalizacji czynności konserwacyjnych, która ma zostać dodana do zlecenia pracy.  
 - Arkusze używane podczas księgowania zużycia na zleceniu pracy można wybrać na skróconej karcie **Ogólne** w polach **Godzina**, **Zapas** i **Wydatek**.  
 - W polu **Źródło języka produktu** wybierz język, który ma być używany dla nazw produktów w raportach modułu Zarządzanie składnikami majątku. Można wybrać język skonfigurowany dla konta firmowego lub język skonfigurowany dla aktualnie zalogowanego użytkownika.  
@@ -101,8 +99,11 @@ Pola opisane poniżej na liście poniżej odnoszą się do obliczonych wyników 
 
 ## <a name="the-document-types-tab"></a>Karta Typy dokumentów
 
-Wybierz typy dokumentów, które powinny być dostępne do drukowania załączników związanych z raportem zlecenia pracy. W tym celu wybierz typ dokumentu w sekcji **Dostępne** i wybierz ![strzałkę do przodu](media/15-setup-for-objects.png). Jeśli chcesz usunąć wybrany typ dokumentu, wybierz typ dokumentu w sekcji **Wybrane**, a następnie wybierz ![strzałkę wstecz](media/16-setup-for-objects.png).
+Wybierz typy dokumentów, które powinny być dostępne do drukowania załączników związanych z raportem zlecenia pracy. W tym celu wybierz typ dokumentu w sekcji **Dostępne** i wybierz ![strzałkę do przodu.](media/15-setup-for-objects.png). Jeśli chcesz usunąć wybrany typ dokumentu, wybierz typ dokumentu w sekcji **Wybrane**, a następnie wybierz ![strzałkę wstecz](media/16-setup-for-objects.png).
 
 ## <a name="the-number-sequences-tab"></a>Karta Sekwencje numerów
 
 Wybierz żądane sekwencje numerów w tej sekcji. Istnieją dwie sekwencje numerów dla składników majątku: jedna dla składników majątku utworzonych ręcznie, a druga dla składników majątku utworzonych za pośrednictwem oczekujących składników majątku.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

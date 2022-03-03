@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f362aef527272781464d5c1a17f0a382cfb8cacc
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 93f5c3e4951784a6c4925b8f9026816bfaf551ee
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568142"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102920"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Zarządzanie zmianami dotyczącymi produktów inżynieryjnych
 
@@ -123,7 +123,7 @@ Aby dokonać przeglądu transakcji, których to dotyczy, zablokować wybrane tra
     - **Wyświetl wszystkie transakcje** — umożliwia otwarcie pełnej listy wszystkich transakcji, a nie tylko transakcji otwartych.
 
 > [!IMPORTANT]
-> Przycisk **Powiadom o produkcji** jest dostępny tylko wtedy, gdy w systemie jest włączona funkcja *Powiadomienia inżynieryjne dla produkcji*. Aby uzyskać instrukcje, zobacz [Omówienie zarządzania zmianą inżynieryjną](product-engineering-overview.md).
+> Przycisk **Powiadom o produkcji** jest dostępny tylko wtedy, gdy w systemie jest włączona funkcja *Powiadomienia inżynieryjne dla produkcji*. Aby uzyskać instrukcje włączanie i wyłączanie tej funkcji oraz jej wymagań wstępnych, zobacz omówienie zarządzania [zmianami inżynieryjnymi](product-engineering-overview.md).
 
 #### <a name="review-and-process-change-notifications-for-transactions"></a><a name="review-notifications"></a>Przeglądanie i przetwarzanie powiadomień o zmianach dla transakcji
 
@@ -136,7 +136,7 @@ Wysyłane do ciebie powiadomienia o zmianach możesz odczytywać i przetwarzać 
 Przeglądając powiadomienia dotyczące zlecenia produkcyjnego na stronie **Powiadomienia inżynieryjne**, można śledzić łącza do powiązanych zleceń zmian lub zleceń produkcyjnych, wybierając wartości kolumn lub używając powiązanych poleceń w okienku akcji. Po zakończeniu obliczania zmian i po anulowaniu lub zmodyfikowaniu zleceń produkcyjnych w razie potrzeby można oznaczyć powiadomienie jako rozwiązane. Zaznacz powiadomienie, a następnie w okienku akcji wybierz pozycję **Rozwiąż**. Powiadomienie zostanie usunięte z widoków wszystkich użytkowników.
 
 > [!IMPORTANT]
-> Możliwość wysyłania powiadomień o zleceniach produkcyjnych wymaga, aby w systemie był włączona funkcja *Powiadomienia inżynieryjne dla produkcji*. Aby uzyskać instrukcje, zobacz [Omówienie zarządzania zmianą inżynieryjną](product-engineering-overview.md).
+> Możliwość wysyłania powiadomień o zleceniach produkcyjnych wymaga, aby w systemie był włączona funkcja *Powiadomienia inżynieryjne dla produkcji*. Aby uzyskać instrukcje włączanie i wyłączanie tej funkcji oraz jej wymagań wstępnych, zobacz omówienie zarządzania [zmianami inżynieryjnymi](product-engineering-overview.md).
 
 ### <a name="create-a-change-order-from-a-change-request"></a>Tworzenie zlecenia zmiany za pomocą żądania zmiany
 

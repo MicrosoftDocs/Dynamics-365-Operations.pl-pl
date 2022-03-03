@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: cfabd6f544dca6f48448da4ef9ff8383c6583f8488a718a7c971ff7b39c1f2cb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f8e74902e939355aba9bbadd8e7f8f8aa46fe5c5
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737982"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323932"
 ---
 # <a name="suppress-word-content-controls-in-generated-reports"></a>Pomijanie formantów zawartości programu Word w generowanych raportach
 
 [!include [banner](../includes/banner.md)]
 
-Aby generować raporty jako dokumenty Microsoft Word, musisz zaprojektować szablon raportów jako dokument Word. Ten szablon musi zawierać kontrolki zawartości programu Word jako symbole zastępcze dla danych, które zostaną wypełnione w czasie wykonywania. Aby użyć dokumentu Word, który jest tworzony jako szablon dla twoich raportów, możesz [skonfigurować](er-design-configuration-word.md) nowe [rozwiązanie](er-quick-start1-new-solution.md) [Raportowania elektronicznego (ER)](general-electronic-reporting.md). To rozwiązanie musi zawierać [konfigurację](general-electronic-reporting.md#Configuration) zawierającą składnik [formatu](general-electronic-reporting.md#FormatComponentOutbound) ER. Ten format raportu ER musi być skonfigurowany do używania zaprojektowanego szablonu do generowania raportów.
+Aby generować raporty jako dokumenty Microsoft Word, musisz zaprojektować szablon raportów jako dokument Word. Ten szablon musi zawierać kontrolki zawartości programu Word jako symbole zastępcze dla danych, które zostaną wypełnione w czasie wykonywania. Aby użyć dokumentu Word, który jest tworzony jako szablon dla twoich raportów, możesz [skonfigurować](er-design-configuration-word.md) nowe [rozwiązanie](er-quick-start1-new-solution.md) [Raportowania elektronicznego (ER)](general-electronic-reporting.md). To rozwiązanie musi zawierać [konfigurację](general-electronic-reporting.md#Configuration) zawierającą składnik formatu ER. Ten format raportu ER musi być skonfigurowany do używania zaprojektowanego szablonu do generowania raportów.
 
 W wersji 10.0.6 i nowszych Dynamics 365 Finance możesz skonfigurować formuły w formacie ER, aby pomijać niektóre kontrolki zawartości programu Word w generowanych dokumentach.
 

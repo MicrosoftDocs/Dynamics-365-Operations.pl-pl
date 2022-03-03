@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-01-01
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: f001734baf9aee59f0a61d21ca5a99af0c55b56f
-ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
+ms.openlocfilehash: 185fb9a33cb4cc655dfdf640b4c239d617426c64
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "7413612"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323908"
 ---
 # <a name="use-data-collection-data-sources-in-electronic-reporting-formats"></a>Korzystanie ze źródeł danych DATA COLLECTION w formatach raportowania elektronicznego
 
 [!include [banner](../includes/banner.md)]
 
-Za pomocą projektanta operacji w strukturze [elektronicznego modułu sprawozdawczego (ER)](general-electronic-reporting.md) można skonfigurować składnik [formatu](general-electronic-reporting.md#FormatComponentOutbound) rozwiązania ER używanego do generowania dokumentów wychodzących w różnych formatach. Hierarchiczna struktura skonfigurowanego składnika formatu składa się z elementów formatu różnych typów. Te elementy formatu służą do wypełniania wygenerowanych dokumentów informacjami wymaganymi w czasie wykonywania. Domyślnie w przypadku uruchamiania formatu ER elementy formatu są uruchamiane w tej samej kolejności, w jakiej są przedstawione w hierarchii formatów: jeden po jednym — od góry do dołu.
+Za pomocą projektanta operacji w strukturze [elektronicznego modułu sprawozdawczego](general-electronic-reporting.md) (ER) można skonfigurować składnik formatu rozwiązania ER używanego do generowania dokumentów wychodzących w różnych formatach. Hierarchiczna struktura skonfigurowanego składnika formatu składa się z elementów formatu różnych typów. Te elementy formatu służą do wypełniania wygenerowanych dokumentów informacjami wymaganymi w czasie wykonywania. Domyślnie w przypadku uruchamiania formatu ER elementy formatu są uruchamiane w tej samej kolejności, w jakiej są przedstawione w hierarchii formatów: jeden po jednym — od góry do dołu.
 
-Gdy ER korzysta z formatu zawierającego powiązanie, zostanie uruchomiona formuła tego powiązania, a element formatu doda wartość do wygenerowanego dokumentu. Na przykład powiązanie może przekazać wartość pola [modelu danych](general-electronic-reporting.md#data-model-and-model-mapping-components) do elementu formatu. Źródło danych DATA COLLECTION można skonfigurować w taki sposób, aby zbierało wartości pól modelu danych w czasie wykonywania, sumowało wartości i wypełniało wygenerowany dokument zebranymi wartościami. Aby użyć tej metody, zmień początkowe powiązanie, tak aby skonfigurowane źródło danych DATA COLLECTION było używane do przekazania wartości pola modelu danych do elementu formatu. Przekazując wartości za pośrednictwem źródła danych DATA COLLECTION, można gromadzić wymagane szczegóły do dalszego użycia.
+Gdy ER korzysta z formatu zawierającego powiązanie, zostanie uruchomiona formuła tego powiązania, a element formatu doda wartość do wygenerowanego dokumentu. Na przykład powiązanie może przekazać wartość pola modelu danych do elementu formatu. Źródło danych DATA COLLECTION można skonfigurować w taki sposób, aby zbierało wartości pól modelu danych w czasie wykonywania, sumowało wartości i wypełniało wygenerowany dokument zebranymi wartościami. Aby użyć tej metody, zmień początkowe powiązanie, tak aby skonfigurowane źródło danych DATA COLLECTION było używane do przekazania wartości pola modelu danych do elementu formatu. Przekazując wartości za pośrednictwem źródła danych DATA COLLECTION, można gromadzić wymagane szczegóły do dalszego użycia.
 
 Konfigurując źródło danych DATA COLLECTION, należy określić typ wartości, który będzie zarządzany w źródle danych. Następujące [typy danych](er-formula-supported-data-types-primitive.md) są obecnie obsługiwane do zbierania wartości:
 

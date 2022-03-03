@@ -1,12 +1,10 @@
 ---
 title: Umowy zakupu
 description: Ten artykuł zawiera informacje o umowach zakupu. Umowa zakupu jest to kontraktem, który zobowiązuje organizację do zakupu określonej ilości lub za określoną kwotę przy użyciu wielu zamówień zakupu na przestrzeni czasu. W zamian za to zobowiązanie kupujący otrzymuje specjalne ceny i rabaty.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AgreementClassification, AgreementLine, AgreementLinePrompt, PurchAgreement, PurchAgreementCreate, PurchAgreementGenerateReleaseOrder, PurchAgreementHistory, PurchAgreementInvoiceJournal, PurchLine, AgreementLines
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 11634
 ms.assetid: 8ac20adf-7412-4929-be8c-aaedf23a76ad
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9cd3c18129724cc67560aee7bf9fc0e5dcd2ebc3
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: d8084ebed80a509d543053867bb1f4d483b3f8eb
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017194"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103745"
 ---
 # <a name="purchase-agreements"></a>Umowy zakupu
 
@@ -43,10 +41,7 @@ Aby zapobiec używaniu i potwierdzaniu umowy zakupu, oznacz stan umowy jako **Za
 W klasyfikacji umowy zakupu można zidentyfikować odpowiedzialnego pracownika podstawowego i odpowiedzialnego pracownika pomocniczego. Te wartości będą dziedziczone przez wynikową umowę zakupu. Nie musisz dodawać odpowiedzialnych pracowników do umowy zakupu. Można ich modyfikowane bezpośrednio na podstawie każdego przypadku w umowie zakupu. Nie można określić odpowiedzialnego pracownika pomocniczego bez odpowiedzialnego pracownika podstawowego, chociaż nie trzeba mieć odpowiedzialnego pracownika pomocniczego. Nie można określić tego samego pracownika jako odpowiedzialnego pracownika podstawowego i pomocniczego.
 
 > [!IMPORTANT]
-> Aby móc używać funkcji strony odpowiedzialnej, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
-> 
-> - **Moduł:** *Zaopatrzenie i sourcing*
-> - **Nazwa funkcji:** *Strona odpowiedzialna za umowę zakupu*
+> Aby móc używać funkcji strony odpowiedzialnej, należy ją włączyć w systemie. Od wersji 10.0.25 Supply Chain Management version ta funkcja jest domyślnie włączona. Administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Strona odpowiedzialna za umowę zakupu* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="commitment-types"></a>Typy zobowiązania
 Każdy wiersz umowy zakupu jest zobowiązaniem do zakupu czegoś. Do wypełniania zobowiązania można używać wierszy z wielu zamówień zakupu. Istnieją cztery typy zobowiązań:
@@ -104,12 +99,13 @@ Po utworzeniu międzyfirmowego zamówienia zakupu korzystającego z umowy zakupu
 ## <a name="financial-dimensions-on-purchase-agreements"></a>Wymiary finansowe umów zakupu
 Wymiary finansowe można skopiować do nagłówków dokumentu lub pojedynczych wierszy umowy zakupu. Jeśli zmienisz wymiary w nagłówku umowy lub w wierszu umowy, zmiana nie ma wpływu na jakiekolwiek zwolnione zlecenia, ale zostanie uwzględniona w nowych zamówieniach.
 
-<a name="additional-resources"></a>Dodatkowe zasoby
---------
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Tworzenie umowy zakupu](tasks/create-purchase-agreement.md)
-
-[Tworzenie zlecenia wydania zakupu na podstawie umowy zakupu](tasks/create-purchase-release-order-purchase-agreement.md)
+- [Tworzenie umowy zakupu](tasks/create-purchase-agreement.md)
+- [Zastosowanie umowy zakupu podczas tworzenia zamówienia zakupu](tasks/create-purchase-release-order-purchase-agreement.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

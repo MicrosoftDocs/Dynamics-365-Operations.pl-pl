@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0389db98c00f8ad98a9cf919a21110c31206949199f06328782d25e9c415b315
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3d30dd5ba29ee34784921047627642644c0c4ab2
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762170"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182486"
 ---
 # <a name="generate-and-post-recurring-free-text-invoices"></a>Generowanie i księgowanie cyklicznych faktur niezależnych
 
@@ -30,17 +30,17 @@ Faktury cykliczne są używane do fakturowania odbiorców regularnie na tę sam�
 ## <a name="generate-recurring-invoices"></a>Generuj faktury cykliczne
 
 ## <a name="post-recurring-invoices"></a>Księguj faktury cykliczne
-1. Wybierz kolejno opcje Rozrachunki z odbiorcami > Faktury > Faktury cykliczne > Księguj faktury cykliczne.
+1. Wybierz kolejno opcje **Rozrachunki z odbiorcami > Faktury > Faktury cykliczne > Księguj faktury cykliczne**.
     * Ta strona służy do wyświetlania i drukowania faktur cyklicznych, które już zostały wygenerowane.  
 2. Na liście kliknij łącze w wybranym wierszu.
     * Wybierz grupę faktur cyklicznych.  
-3. Kliknij przycisk Sumy.
+3. Kliknij przycisk **Suma**.
     * Weryfikuj sumy dla grupy faktur cyklicznych.  
-4. Kliknij przycisk Zamknij.
-    * Każdy wiersz poniżej odpowiada cyklicznej fakturze niezależnej. Można wybrać wiersz i kliknąć przycisk „Szczegóły”, aby wyświetlić szczegóły faktury niezależnej.  
-5. Kliknij przycisk Sprawdź poprawność.
+4. Kliknij przycisk **Zamknij**.
+    * Każdy wiersz poniżej odpowiada cyklicznej fakturze niezależnej. Można wybrać wiersz i kliknąć przycisk **Szczegóły**, aby wyświetlić szczegóły faktury niezależnej.  
+5. Kliknij **Potwierdź**.
     * Sprawdź, czy wybrane faktury nie zawierają błędów, ale nie księguj faktur.  
-6. Kliknij przycisk Księguj.
+6. Kliknij przycisk **Księguj**.
     * Zaksięguj wybrane faktury.  
 
 

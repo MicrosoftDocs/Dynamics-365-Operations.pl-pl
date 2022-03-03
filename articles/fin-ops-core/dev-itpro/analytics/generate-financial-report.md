@@ -2,7 +2,7 @@
 title: Generowanie raportów finansowych
 description: Ten temat zawiera informacje o generowaniu sprawozdania finansowego.
 author: jinniew
-ms.date: 03/08/2021
+ms.date: 02/08/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 101cf2b29bb6f91cec5a3dac0be30b53388905c96ecf481f5b7b3e90cda3f804
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 00a860089265800ca1a0058f222d5e85c360501c
+ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740270"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "8119534"
 ---
 # <a name="generate-financial-reports"></a>Generowanie raportów finansowych
 
@@ -28,9 +28,22 @@ ms.locfileid: "6740270"
 
 Ten temat zawiera informacje o generowaniu sprawozdania finansowego.
 
-Aby wygenerować raport, otwórz definicję raportu, a następnie wybierz przycisk **Generuj** na pasku narzędzi. Strona **Stan kolejki raportów** otworzy się i wskaże lokalizację raportu w kolejce. Domyślnie wygenerowany raport zostanie otwarty w przeglądarce sieci web.
+Aby wygenerować raport, otwórz definicję raportu, a następnie wybierz przycisk **Generuj**. Strona **Stan kolejki raportów** otworzy się i wskaże lokalizację raportu w kolejce.
 
-Są dostępne następujące opcje generowania raportów:
+W trakcie generowania raportu następujące wskaźniki stanu kolejki raportów mogą być widoczne na stronie **Stan kolejki raportów**.
+
+| Stan          | Stanowy | Opis|
+|-----------------|--------|--------------------|
+| Kolejkowanie        | Tymczasowe |Definicja raportu jest sprawdzana przed jego odłogowaniem w kolejce generowania.                    |
+| W kolejce          | Tymczasowe | Raport wprowadza kolejkę generowania raportu i czeka na przetworzenie.                      |
+| Przetwarzanie      | Tymczasowe | Ten stan zazwyczaj następuje po stanie **W kolejce** i zazwyczaj po zakończeniu przetwarzania przechodzi w stan **Ostateczny**.       |
+| Przetwarzanie końcowe | Tymczasowe | Stan ten następuje po stanie **Przetwarzanie** i wskazuje, że są gromadzone wszystkie dane raportu, ale są wykonywane akcje zasypczania, takie jak obliczanie i akumacja.            |
+| Anulowanie      | Tymczasowe | Raportowanie zostało anulowane na wniosek użytkownika. Ten stan jest skutkiem anulowania raportu żądanego przez użytkownika w stanie **Oczekiwania** lub **Przetwarzanie**. System próbuje umieścić raport w stanie **Anulowano**, chyba że system jest za bardzo do siebie schowany i musi sfinalizować go w innym stanie. |
+| Anulowane        | Ostateczne | Przetwarzanie raportu zakończyło się, ale nie zakończyło się z powodu zatrzymania żądanego przez użytkownika.            |
+| Ukończono       | Ostateczne | Raport jest gotowy do użycia.                      |
+| Zakończone niepowodzeniem          | Ostateczne | Przetwarzanie raportu zakończyło się niepowodzeniem i nie należy go używać. |
+
+Domyślnie wygenerowany raport zostanie otwarty w przeglądarce sieci web. Są dostępne następujące opcje generowania raportów:
 
 - Konfigurowanie harmonogramu w celu automatycznego generowania raportu lub grupy raportów
 - Sprawdzanie brakujących kont lub danych w raporcie i sprawdzanie poprawności raportu

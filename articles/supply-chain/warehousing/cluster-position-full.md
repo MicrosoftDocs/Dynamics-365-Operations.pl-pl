@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: a23168b550bfa2bb6a51c8df5d0a558431c23ebb
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 459c8fce892d9437c7466458b7e53743c71da38f
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574264"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102845"
 ---
 # <a name="cluster-position-full"></a>Stanowisko w grupie pełne
 
@@ -28,12 +28,9 @@ Funkcja *Stanowisko w grupie pełne* oferuje alternatywę dla sztywnego egzekwow
 
 Ta funkcja wprowadza możliwość skorzystania z przycisku **Pełne** przy jednej z jednostek pracy w grupie. W starszych wersjach ta opcja była dostępna tylko w przypadku pobierania zamówienia zwykłego, a nie w przypadku pobierania z grupy. Jednak ta funkcja różni się od standardowego przycisku **Pełne**, gdyż anuluje pozostałą pracę. Nie sugeruje to użytkownikowi dodaia kolejnego pojemnika do tego samego klastra i nie powoduje automatycznego utworzenia nowej pracy.
 
-## <a name="turn-on-the-cluster-position-full-feature"></a>Włącz funkcję „Stanowisko w grupie pełne”
+## <a name="turn-the-cluster-position-full-feature-on-or-off"></a>Włącz lub wyłącz pełną funkcję pozycji klastra
 
-Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
-
-- **Moduł:** *Zarządzanie magazynem*
-- **Nazwa funkcji:** *Stanowisko w grupie pełne*
+Aby korzystać z funkcji opisanej w tym temacie, w systemie musi być włączona funkcja *Pełna pozycja klastra*. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.25, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Pełna pozycja klastra* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="setup"></a>Konfiguracja
 

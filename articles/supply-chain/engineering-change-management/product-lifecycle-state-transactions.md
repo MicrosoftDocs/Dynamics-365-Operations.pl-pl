@@ -2,7 +2,7 @@
 title: Stany cyklu życia produktu i transakcje
 description: W tym temacie wyjaśniono, w jaki sposób można kontrolować, które transakcje są dozwolone dla poszczególnych stanów cyklu życia w trakcie przechodzenia produktu inżynieryjnego przez cykl życia.
 author: t-benebo
-ms.date: 09/28/2020
+ms.date: 02/17/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 12f95feda887b5f1284624e5f072b498a78d00e1
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1e9b8a9f25edfa654a57e0ab4071cd93c8033d85
+ms.sourcegitcommit: d375ef4138e898621416754c40770d8ccca4d271
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574648"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8322751"
 ---
 # <a name="product-lifecycle-states-and-transactions"></a>Stany cyklu życia produktu i transakcje
 
@@ -93,5 +93,13 @@ Przypuśćmy na przykład, że użytkownik chce sprzedać tylko jeden wariant (c
 - Przypisz produkt do stanu cyklu życia, który umożliwia ten proces. Na przykład przypisz produkt w koszulce do stanu Cyklu życia — *Sprzedaż*, co pozwala na proces biznesowy *zamówienia sprzedaży*.
 - Przypisz wariantowi przeznaczonemu do sprzedaży stan cyklu życia, który zezwala na proces. Na przykład czerwony wariant oznacza stan cyklu życia *sprzedaży*.
 - Wszystkie pozostałe warianty zostaną przypisane do innego stanu cyklu życia, w którym proces jest zablokowany. Na przykład przypisz wariant biały (i wszystkie inne warianty) stan cyklu życia *Nie można sprzedać*, co blokuje proces biznesowy *Zamówienie sprzedaży*.
+
+## <a name="default-product-lifecycle-states"></a>Domyślne stany cyklu życia produktu
+
+Domyślny stan cyklu życia wersji inżynieryjnej jest określony przez kategorię inżynieryjną. Stan będzie domyślny podczas tworzenia nowej wersji inżynieryjnej, w tym pierwszej wersji nowego produktu.
+
+Podczas tworzenia nowego produktu lub produktu inżynierskiego można również ustawić domyślny stan cyklu życia, określając go w szablonie zwolnionym produkcie w zasadach zwalniania przypisanych do produktu.
+
+W takim przypadku produkt może mieć inny stan cyklu życia niż wersja podczas tworzenia nowego produktu inżynierskiego.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

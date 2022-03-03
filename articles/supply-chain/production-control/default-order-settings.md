@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 419e2b3b6bc5636aa75cf3ecc26e32ad22260a7e
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: dca0aba081321dff5ae061ebe4bddcae0e42bc54
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778114"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102771"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Domyślne ustawienia zamówienia dla wymiarów i wariantów produktu
 
@@ -186,12 +186,9 @@ Można określić, jak rygorystyczny system ma mieć wpływ na sprawdzanie iloś
 
 Sprawdzanie poprawności dotyczy **Standardowych wartości ilości zamówienia** określonych na skróconych kartach **Zamówieniu zakupu**, **Zapasy** i **Zamówieniu sprzedaży** na stronie **Ustawienia domyślne zamówienia**. Każde skróconej karcie ma własne ustawienie **Wiele**, które służy do sprawdzania poprawności **Standardowej wartości ilości zamówienia** określonej dla tej skróconej karty.
 
-### <a name="enable-the-strict-validation-option"></a>Włącz opcję ścisłego sprawdzania poprawności
+### <a name="turn-the-strict-validation-option-on-or-off"></a>Włącz lub wyłącz opcję ścisłej weryfikacji
 
-Od wersji 10.0.21 Supply Chain Management version ta funkcja jest domyślnie włączona. Administratorzy mogą skorzystać ze strony [Zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją lub wyłączyć w razie potrzeby. W tym miejscu funkcja jest wyświetlana jako:
-
-- **Moduł** - *Zarządzanie informacjami o produktach*
-- **Nazwa funkcji** - *Ścisłe sprawdzanie poprawności domyślnych ilości zamówień*
+Aby korzystać ze ścisłej walidacji, w systemie musi być włączona funkcja *Ścisła walidacja w przypadku domyślnych ilości zamówienia*. Od wersji 10.0.21 Supply Chain Management version ta funkcja jest domyślnie włączona. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli korzystasz z wersji starszej niż 10.0.25, możesz włączyć lub wyłączyć tę funkcję, przechodząc do [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) i wyszukując funkcję *Ścisła weryfikacja domyślnych ilości zamówienia.*
 
 ### <a name="set-the-validation-option"></a>Umożliwia ustawienie opcji sprawdzania poprawności
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 72b97b2f7091883e445b2e8474ca140217bda004b0c4d8988411b9ed4209e254
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bf7178888e39a5f26ae92e77df9c996374b76bf3
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758271"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323672"
 ---
 # <a name="supported-composite-data-types-for-electronic-reporting-formulas"></a>Obsługiwane typy danych złożonych dla formuł raportowania elektronicznego
 
@@ -27,7 +27,7 @@ Ten temat zawiera ogólne informacje o funkcjach danych złożonych obsługiwany
 
 Typ danych *klasy* odwołuje się do klasy aplikacji publicznej. W ER jest ona przedstawiana jako [*rekord*](#record) zawierający osobne pole dla każdej metody publicznej klasy, do których odwołuje się odwołanie. Gdy wywołanie metody jest parametryzowane, należy także określić wymagane argumenty odpowiednich typów w wyrażeniu ER skonfigurowanym do wywołania metody.
 
-W składnikach [mapowania](general-electronic-reporting.md#data-model-and-model-mapping-components) i [formatu](general-electronic-reporting.md#FormatComponentOutbound) ER można dodać źródło danych **klasy**, które jest prezentowane jako źródło danych i zwraca wartość typu *klasa*. To źródło danych uwidocznia metody publiczne klasy, które można wywołać w czasie wykonywania.
+W składnikach mapowania i formatu ER można dodać źródło danych **klasy**, które jest prezentowane jako źródło danych i zwraca wartość typu *klasa*. To źródło danych uwidocznia metody publiczne klasy, które można wywołać w czasie wykonywania.
 
 > [!NOTE]
 > Tylko metody, które zwracają wartość, mogą być wywoływane z wyrażeń ER.

@@ -2,11 +2,9 @@
 title: Zadanie czyszczenia wpisów dostępnych zapasów do zarządzania magazynem
 description: W tym temacie opisano zadanie czyszczenia wpisów dostępnych zapasów, które ułatwia poprawę wydajności systemu przez identyfikowanie i usuwanie powiązanych z nimi rekordów.
 author: perlynne
-manager: tfehr
 ms.date: 04/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysOperationTemplateForm
 audience: Application User
@@ -14,15 +12,17 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
-ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: f045b9686bbdfcf3e82f5158f0fd28860354b7d7
-ms.sourcegitcommit: b6686265314499056690538eaa95ca51cff7c720
+ms.dyn365.ops.version: 10.0.12
+ms.openlocfilehash: b2bdfb7fa0c9c4d9e1f630a41357dc405f0082bc
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5014490"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103870"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Zadanie czyszczenia wpisów dostępnych zapasów do zarządzania magazynem
+
+[!include [banner](../includes/banner.md)]
 
 Na wydajność zapytań używanych do obliczania dostępnych zapasów ma wpływ liczba rekordów w zaangażowanych tabelach. Jednym ze sposobów zwiększenia wydajności jest zmniejszenie liczby rekordów, które musi uwzględnić baza danych.
 
@@ -58,7 +58,7 @@ Jednak poprawa wydajności zapewniana przez zadanie oczyszczania powinna nadrobi
 
 ## <a name="make-the-maximum-execution-time-setting-available"></a><a name="max-execution-time"></a>Umożliwia ustawienie maksymalnego czasu wykonywania
 
-Domyślnie ustawienie **Maksymalny czas wykonania** jest niedostępne. Aby go użyć, należy użyć [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) w celu włączenia pokrewnej funkcji w systemie. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
+Ustawienie **Maksymalny czas wykonania** jest dostępne tylko wtedy, gdy jest włączony *maksymalny czas wykonywania* dla funkcji czyszczenia wpisów dostępnych zapasów w zarządzaniu magazynem. Od wersji 10.0.25 Supply Chain Management version ta funkcja jest domyślnie włączona. Administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując *maksymalny czas wykonania zadania oczyszczania wpisów stanu zapasów* w zarządzaniu magazynem w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-- **Moduł:** *Zarządzanie magazynem*
-- **Nazwa funkcji:** *Maksymalny czas wykonywania zadania oczyszczania dla wpisów dostępnych zapasów w magazynie*
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

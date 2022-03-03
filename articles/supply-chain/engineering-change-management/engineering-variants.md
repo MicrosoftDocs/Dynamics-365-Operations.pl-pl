@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: e24bceac9457212ecaafda876d19ba62df049371
-ms.sourcegitcommit: 2113678369f47944f8725ca656f461fa159f87f6
+ms.openlocfilehash: 7921983a965af5557f54f608418c8ec922256ba6
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7471843"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103645"
 ---
 # <a name="generate-variants-for-engineering-products"></a>Generowanie wariantów dla produktów projektowych
 
@@ -23,15 +23,9 @@ ms.locfileid: "7471843"
 
 W tym temacie opisano sposób generowania wariantów dla produktów projektowych.
 
-## <a name="turn-on-variant-generation-for-engineering-products"></a>Włączanie generowania wariantów dla produktów projektowych
+## <a name="turn-variant-generation-for-engineering-products-on-or-off"></a>Włącz lub wyłącz generowanie wariantów produktów inżynierskich
 
-Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
-
-- **Moduł**: *Zarządzanie zmianami projektowymi*
-- **Nazwa funkcji:** *Generowanie wariantów dla produktów projektowych*
-
-> [!IMPORTANT]
-> Funkcja *generowania wariantów produktów projektowych* będzie widoczna w systemie tylko po włączeniu klucza konfiguracji *Zarządzanie zmianami projektowymi*. Aby uzyskać instrukcje, zobacz [Omówienie zarządzania zmianą inżynieryjną](product-engineering-overview.md).
+Funkcje opisane w tym temacie wymagają włączania w *systemie zarówno zarządzania zmianami inżynieryjnymi*, jak i *Generowanie wariantów dla produktów inżynierskich*. Aby uzyskać szczegółowe informacje dotyczące sposobu włączanie i wyłączanie tych funkcji, zobacz [omówienie zarządzania zmianami inżynieryjnymi](product-engineering-overview.md).
 
 ## <a name="generate-one-or-more-new-variants-of-an-engineering-product"></a>Generowanie jednego lub więcej nowych wariantów produktu projektowego
 

@@ -1,23 +1,29 @@
 ---
-# required metadata
 title: Rozpoczynanie pracy z fakturowaniem elektronicznym dla Włoch
-description: 'Ten temat zawiera informacje, które pomogą w rozpoczęciu pracy z Faktury elektroniczne dla Włoch.'
+description: Ten temat zawiera informacje, które pomogą w rozpoczęciu pracy z Faktury elektroniczne dla Włoch.
 author: gionoder
 ms.date: 09/22/2020
 ms.topic: article
-ms.prod: null
-ms.technology: null
-ms.search.form: null
+ms.prod: ''
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: intro-internal
-ms.assetid: null
+ms.custom:
+- "97423"
+- intro-internal
+ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
-ms.search.validFrom: '2020-07-08'
+ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
+ms.openlocfilehash: c0197ff9d93833aa50fef56ec597fa0c904d792d
+ms.sourcegitcommit: 8bcb9c13eccb14e61c39ca6578d135b64090fad2
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8313653"
 ---
-
 # <a name="get-started-with-electronic-invoicing-for-italy"></a>Rozpoczynanie pracy z fakturowaniem elektronicznym dla Włoch
 
 [!include [banner](../includes/banner.md)]

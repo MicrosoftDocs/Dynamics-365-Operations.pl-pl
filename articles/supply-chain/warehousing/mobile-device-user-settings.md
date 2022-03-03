@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 13c99854224a6d220e73a43636d85ec1951f8149
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 4ea0fcfa7a165587567968f95549799859edaa60
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7901903"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103720"
 ---
 # <a name="mobile-device-user-settings"></a>Ustawienia użytkownika urządzenia przenośnego
 
@@ -39,12 +39,9 @@ Ta funkcja pomaga pracownikom szybciej rozpocząć, gdy zaczynają korzystać z 
 > [!IMPORTANT]
 > Funkcja *ustawień użytkownika urządzenia przenośnego* dotyczy tylko nowej aplikacji mobilnej Zarządzanie magazynem. Nie działa ze starą aplikacją magazynu.
 
-## <a name="turn-on-the-mobile-device-user-settings-feature"></a>Włącz funkcję ustawień użytkownika urządzenia przenośnego
+## <a name="turn-the-mobile-device-user-settings-feature-on-or-off"></a>Włącz lub wyłącz funkcję ustawień użytkownika urządzenia mobilnego
 
-Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
-
-- **Moduł:** *Zarządzanie magazynem*
-- **Nazwa funkcji:** *ustawienia użytkownika, ikony i tytuły kroków dla nowej aplikacji magazynowej*
+Aby można było korzystać z funkcji opisanych w tym temacie, *w systemie muszą być włączone ustawienia użytkownika,* ikony i tytuły kroku nowej funkcji aplikacji magazynowej. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.25, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Ustawienia użytkownika, ikony i tytuły kroków dla nowej aplikacji magazynowej* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="create-and-manage-user-settings"></a>Umożliwia tworzenie ustawień użytkownika i zarządzanie nimi
 

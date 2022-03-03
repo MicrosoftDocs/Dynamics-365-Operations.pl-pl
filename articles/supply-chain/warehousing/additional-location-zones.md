@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 4801077ac498699972244f3f86216790b517b47247fc7fb288614ec143c3c5cb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dd9e97cabe5e3d3bdc261a7280930b73eb8e1419
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762777"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103845"
 ---
 # <a name="additional-location-zones"></a>Dodatkowe strefy lokalizacji
 
@@ -30,12 +30,9 @@ W rozwiązaniu Microsoft Dynamics 365 Supply Chain Management są dostępne trzy
 
 Do użycia pól strefy nie są wymagane żadne dodatkowe ustawienia.
 
-## <a name="turn-on-the-additional-location-zone-feature"></a>Włącz funkcję dodatkowej strefy lokalizacji
+## <a name="turn-the-additional-location-zone-feature-on-or-off"></a>Włącz lub wyłącz funkcję Dodatkowa strefa lokalizacji
 
-Aby móc używać funkcji *Dodatkowa strefa lokalizacji*, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
-
-- **Moduł:** *Zarządzanie magazynem*
-- **Nazwa funkcji:** *Dodatkowa strefa lokalizacji*
+Od wersji 10.0.25 Supply Chain Management version ta funkcja jest domyślnie włączona. Administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Dodatkowa strefa lokalizacji* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="use-location-zones"></a>Używanie stref lokalizacji
 

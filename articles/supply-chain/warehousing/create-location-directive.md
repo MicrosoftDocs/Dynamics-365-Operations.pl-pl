@@ -2,11 +2,9 @@
 title: Praca z dyrektywami lokalizacji
 description: W tym temacie opisano sposób pracy z dyrektywami lokalizacji. Dyrektywy lokalizacji to zdefiniowane przez użytkownika zasady pomagające w zidentyfikowaniu lokalizacji pobrania i odłożenia do celów przesunięcia magazynowego.
 author: Mirzaab
-manager: tfehr
 ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocDirTable, WHSLocDirHint, WHSLocDirTableUOM, WHSLocDirFailure
 audience: Application User
@@ -14,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: b1b3bafb24ff6eb0c42d901fac3b6668cedf39ef
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 84ff0a466c037db05aecaff14aa2e17990ce8799
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963317"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103145"
 ---
 # <a name="work-with-location-directives"></a>Praca z dyrektywami lokalizacji
 
@@ -46,14 +44,14 @@ Aby można było utworzyć dyrektywę lokalizacji, należy wykonać poniższe kr
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Magazyn \> Magazyny**.
 1. Tworzenie magazynu.
 1. Na skróconej karcie **Magazyn** ustaw opcję **Użyj procesów zarządzania magazynami** na *Tak*.
-1. Utwórz lokalizacje, typy lokalizacji, profile lokalizacji i formaty lokalizacji. Aby uzyskać więcej informacji, przejrzyj [Konfigurowanie lokalizacji w magazynie z obsługą WMS](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
-1. Tworzenie oddziałów, stref i grupy stref. Aby uzyskać więcej informacji, przejrzyj [Konfiguracja magazynu](https://docs.microsoft.com/dynamics365/commerce/channels-setup-warehouse) i [Konfigurowanie lokalizacji w magazynie z obsługą WMS](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
+1. Utwórz lokalizacje, typy lokalizacji, profile lokalizacji i formaty lokalizacji. Aby uzyskać więcej informacji, przejrzyj [Konfigurowanie lokalizacji w magazynie z obsługą WMS](./tasks/configure-locations-wms-enabled-warehouse.md).
+1. Tworzenie oddziałów, stref i grupy stref. Aby uzyskać więcej informacji, przejrzyj [Konfiguracja magazynu](../../commerce/channels-setup-warehouse.md) i [Konfigurowanie lokalizacji w magazynie z obsługą WMS](./tasks/configure-locations-wms-enabled-warehouse.md).
 
 ## <a name="work-order-types-for-location-directives"></a>Typy zleceń roboczych dyrektyw dotyczących lokalizacji
 
 Wiele pól, które można ustawiać w dyrektywach lokalizacji, jest wspólne dla wszystkich typów zleceń produkcyjnych. Jednak inne pola są charakterystyczne dla poszczególnych typów zleceń produkcyjnych.
 
-![Typy zleceń roboczych dyrektyw dotyczących lokalizacji](media/Location_Directives_Work_Order_Types.png "Typy zleceń roboczych dyrektyw dotyczących lokalizacji")
+![Typy zleceń roboczych dyrektyw dotyczących lokalizacji.](media/Location_Directives_Work_Order_Types.png "Typy zleceń roboczych dyrektyw dotyczących lokalizacji")
 
 > [!NOTE]
 > Dwa typy zleceń roboczych, *anulowane zadania* i *Inwentaryzacja* są używane tylko w systemie. Nie można utworzyć dyrektyw lokalizacji dla tych typów zleceń roboczych.
@@ -145,14 +143,14 @@ Pola w **dyrektywach lokalizacji** na skróconej karcie są charakterystyczne dl
 - **Kod dyrektywy** – Umożliwia wybranie kodu dyrektywy, który ma zostać skojarzony z szablonem pracy lub szablonem uzupełnienia zapasów. Na stronie **kod dyrektywy** można utworzyć nowe kody, za pomocą których można połączyć szablony pracy lub uzupełnienia z dyrektywą lokalizacji. Możesz również użyć kodów dyrektywy do ustanowienia połączenia między dowolnym wierszem szablonu pracy a dyrektywą dotyczącą lokalizacji (taką jak drzwi do hali lub lokalizacja sceny).
 
     > [!TIP]
-    > Jeśli kod dyrektywy jest ustawiony, kiedy praca musi zostać wygenerowana, system nie przeszuka dyrektywy lokalizacji według kodu sekwencji. W zamian zostanie wyszukany kod dyrektywy. W ten sposób można bardziej precyzyjnie określić szablon lokalizacji, który jest używany do określonego kroku w szablonie roboczym, na przykład etapu przygotowania materiałów.
+    > Jeśli kod dyrektywy jest ustawiony, kiedy praca musi zostać wygenerowana, system nie przeszuka dyrektywy lokalizacji według kodu sekwencji. W zamian zostanie wyszukany kod dyrektywy. W ten sposób można bardziej precyzyjnie określić dyrektywę lokalizacji, która jest używana do określonego kroku w szablonie roboczym, na przykład etapu przygotowania materiałów.
 
 - **Wiele SKU** – Ustaw tę opcję na *Tak*, aby używać wielu jednostek magazynowych (SKU) w lokalizacji. Na przykład dla lokalizacji drzwi ładowania musi być włączone wiele jednostek SKU. Jeśli zostanie włączona wiele jednostek SKU, lokalizacja umieszczania zostanie określona w pracy w oczekiwany sposób. Jednak lokalizacja umieszczania będzie mogła obsługiwać tylko wiele pozycji (Jeśli praca obejmuje różne jednostki SKU, które muszą zostać pobrane i umieszczone). Nie będzie mógł obsłużyć operacji załadowania z jedną jednostką SKU. Jeśli ta opcja zostanie ustawiona na *nie*, lokalizacja umieszczania będzie określona tylko wtedy, gdy dla danego odłożenia jest używany tylko jeden rodzaj jednostki SKU.
 
     > [!IMPORTANT]
     > Aby można było wykonywać zarówno ładowanie z wieloma pozycjami, jak i pojedyncze jednostki SKU, należy określić dwa wiersze o tej samej strukturze i konfiguracji, ale dla opcji **wielu jednostek SKU** należy ustawić wartość *tak* dla jednego wiersza, a *nie* dla drugiego. Dlatego dla operacji odłożenia potrzeba dwóch dyrektyw lokalizacji, które są identyczne, nawet jeśli w pracy o danym identyfikatorze nie trzeba stosować rozróżniania między zdefiniowaniem jednej a wielu jednostek SKU. Często, jeśli nie zostaną skonfigurowane obie te dyrektywy lokalizacji, nieoczekiwane lokalizacje procesów biznesowych będą pochodzić z dyrektywy dotyczącej lokalizacji zastosowania. Należy użyć podobnej konfiguracji dla dyrektyw lokalizacji, które mają **Typ pracy** określony jako *pobranie*, jeśli zachodzi potrzeba przetwarzania zamówień zawierających wiele jednostek SKU.
 
-    W przypadku wierszy pracy obsługujących więcej niż jeden kod towaru należy używać opcji **wielu jednostek SKU**. (Kod pozycji będzie pusty w szczegółach pracy i będzie wyświetlany jako **Wiele** na stronach przetwarzania w aplikacji magazynu.)
+    W przypadku wierszy pracy obsługujących więcej niż jeden kod towaru należy używać opcji **wielu jednostek SKU**. (Kod pozycji będzie pusty w szczegółach pracy i będzie wyświetlany jako **Wiele** na stronach przetwarzania w aplikacji Warehouse Management.)
 
     W typowym scenariuszu przykładowym szablon pracy jest skonfigurowany w taki sposób, aby miał więcej niż jedną parę pobranie/odłożenie. W takim przypadku można wyszukać określoną lokalizację przemieszczania, która ma być używana dla wierszy **Typu pracy** jako *Odłożenie*.
 
@@ -166,12 +164,12 @@ Pola w **dyrektywach lokalizacji** na skróconej karcie są charakterystyczne dl
     > [!NOTE]
     > To pole jest dostępne tylko dla wybranych typów zlecenia produkcyjnego, w których jest dozwolone uzupełnienie zapasów. Aby uzyskać pełną listę, należy zapoznać się z [polami w sekcji Typy zleceń roboczych](#fields-specific-types) wcześniej w tym temacie.
 
-- **Znajdź według** — umożliwia określenie, czy ilość putaway powinna być całkowitą ilością na numer identyfikacyjny, czy powinna być towarem towaru. To pole służy do zapewnienia, że cała zawartość numeru identyfikacyjnego jest umieszczana w jednej lokalizacji, a system nie sugeruje podzielenia zawartości na kilka lokalizacji dla systemu **ASN** (odbierającego numer identyfikacyjny), **odbierania mieszanych numerów identyfikacyjnych** oraz **procesów odbierania w klastrze**. (Proces odbierania w **Klastrze** wymaga włączenia funkcji *Odłóż klaster*.) Zachowanie kwerendy dotyczącej dyrektywy lokalizacji, wierszy oraz akcji dotyczących dyrektywy lokalizacji zależy od wybranej wartości. **Wiersze** skróconej karcie są używane tylko wtedy, gdy pole **Znajdź według** jest ustawione na wartość *pozycja*.
+- **Znajdź według** — umożliwia określenie, czy ilość putaway powinna być całkowitą ilością na numer identyfikacyjny, czy powinna być towarem towaru. To pole służy do zapewnienia, że cała zawartość numeru identyfikacyjnego jest umieszczana w jednej lokalizacji, a system nie sugeruje podzielenia zawartości na kilka lokalizacji dla systemu **ASN** (odbierającego numer identyfikacyjny), **odbierania mieszanych numerów identyfikacyjnych** oraz **procesów odbierania w klastrze**. (Proces odbierania w **Klastrze** wymaga włączenia funkcji [Odłóż klaster](putaway-clusters.md).) Zachowanie kwerendy dotyczącej dyrektywy lokalizacji, wierszy oraz akcji dotyczących dyrektywy lokalizacji zależy od wybranej wartości. **Wiersze** skróconej karcie są używane tylko wtedy, gdy pole **Znajdź według** jest ustawione na wartość *pozycja*.
 
     > [!NOTE]
     > To pole jest dostępne tylko dla wybranych typów zlecenia produkcyjnego, w których jest dozwolone uzupełnienie zapasów. Aby uzyskać pełną listę, należy zapoznać się z [polami dla typów zleceń roboczych](#fields-specific-types).
 
-- **Kod dyspozycji** — to pole jest używane w dyrektywach lokalizacji, które mają typ *zlecenia zakupu*, *towary gotowe odłożone* lub *zamówienia zwrotu* oraz typ pracy *odłożenie*. Za jego pomocą można kierować przepływem do używania konkretnej dyrektywy lokalizacji, w zależności od kodu dyspozycji wybranego przez pracownika w aplikacji magazynowej. Można na przykład skierować towary do lokalizacji inspekcji przed ich zwróceniem do magazynu. Kod dyspozycji można połączyć ze stanem zapasów. W ten sposób można go użyć do zmiany stanu zapasów jako części procesu przyjmowania. Na przykład użytkownik ma kod dyspozycji, *QA*, który ustawia stan zapasów na *QA*. Następnie można umieścić oddzielną dyrektywę lokalizacji w celu przeniesienia jej zapasów do lokalizacji kwarantanny.
+- **Kod dyspozycji** — to pole jest używane w dyrektywach lokalizacji, które mają typ *zlecenia zakupu*, *towary gotowe odłożone* lub *zamówienia zwrotu* oraz typ pracy *odłożenie*. Za jego pomocą można kierować przepływem do używania konkretnej dyrektywy lokalizacji, w zależności od kodu dyspozycji wybranego przez pracownika w aplikacji Warehouse Management. Można na przykład skierować towary do lokalizacji inspekcji przed ich zwróceniem do magazynu. Kod dyspozycji można połączyć ze stanem zapasów. W ten sposób można go użyć do zmiany stanu zapasów jako części procesu przyjmowania. Na przykład użytkownik ma kod dyspozycji, *QA*, który ustawia stan zapasów na *QA*. Następnie można umieścić oddzielną dyrektywę lokalizacji w celu przeniesienia jej zapasów do lokalizacji kwarantanny.
 
     > [!NOTE]
     > To pole jest dostępne tylko dla wybranych typów zlecenia produkcyjnego, w których jest dozwolone uzupełnienie zapasów. Aby uzyskać pełną listę, należy zapoznać się z [polami dla typów zleceń roboczych](#fields-specific-types).
@@ -239,7 +237,7 @@ Można określić wiele działań dyrektywy lokalizacji dla każdego wiersza. I 
     - **Zaokrąglanie w górę do pełnej partii LP i FEFO** — Ta strategia łączy elementy *rezerwacji partii FEFO* i *zaokrągla w górę do strategii z pełnym LP*. Jest ona ważna tylko dla pozycji z włączonymi partiami i dyrektyw lokalizacji, które mają typ prac *pobrania*. Wiersz musi mieć włączoną funkcję wsadową, aby można było użyć strategii *rezerwacji wsadowej FEFO*, zaś strategii *zaokrąglenia do pełnego LP* można użyć tylko do odnawiania. Jeśli ta strategia zostanie skonfigurowana razem z limitem składowania lokalizacji, może to spowodować, że wybrana lokalizacja pracy zostanie zastąpiona, a limity składowania zostaną pominięte.
     - **Zaokrąglij w górę do pełnego nr id.** – Ta strategia zaokrągla ilość zapasów, tak aby była zgodna z ilością na tablicach rejestracyjnych przypisaną do towarów, które muszą zostać pobrane. Tę strategię można stosować tylko do typu uzupełniania zapasów w dyrektywie lokalizacji typu *Pobranie*. Jeśli ta strategia zostanie skonfigurowana razem z limitem składowania lokalizacji, może to spowodować, że wybrana lokalizacja pracy zostanie zastąpiona, a limity składowania zostaną pominięte.
     - **Oparta na numerze ID** – Po zwolnieniu zamówienia do magazynu, w celu utworzenia pracy pobrania i odłożenia wykorzystywana jest strategia w dyrektywie lokalizacji. Można to zrobić dla wielu numerów identyfikacyjnych. Ta strategia oparta na numerach identyfikacyjnych będzie próbować zarezerwować i utworzyć pracę pobrania w odniesieniu do lokalizacji przechowujących żądane numery identyfikacyjne, które zostały skojarzone z wierszami zamówienia przeniesienia. Jeśli jednak nie można ukończyć tych akcji, ale nadal chcesz utworzyć pracę pobrania, powróć do innej strategii dotyczącej akcji dyrektyw dotyczących lokalizacji. W zależności od wymagań dotyczących procesu biznesowego można również wyszukać zapasy w innym obszarze magazynu.
-    - **Pusta lokalizacja bez przychodzącej pracy** – ta strategia jest używana do znajdowania pustych lokalizacji. Lokalizacja jest uważana za pustą, jeśli nie ma w niej fizycznych zapasów i nie ma żadnych oczekiwanych prac przychodzących. Tę strategię można stosować tylko do lokalizacji, które mają typ pracy *Pobranie*.
+    - **Pusta lokalizacja bez przychodzącej pracy** – ta strategia jest używana do znajdowania pustych lokalizacji. Lokalizacja jest uważana za pustą, jeśli nie ma w niej fizycznych zapasów i nie ma żadnych oczekiwanych prac przychodzących. Tę strategię można stosować tylko do lokalizacji, które mają typ pracy *Odłożenie*.
     - **Wiekowanie lokacji FIFO** Za pomocą strategii FIFO  można wysyłać zarówno towary śledzone wsadowo, jak i towary nieśledzone partiami, na podstawie daty wprowadzenia zapasów do magazynu. Ta możliwość może być szczególnie przydatna w przypadku nieśledzonych partii zapasów, gdy data wygaśnięcia nie jest dostępna do sortowania. Strategia FIFO znajduje lokalizację, która zawiera najstarszą datę wiekowania, oraz przydziela pobieranie na podstawie tej daty wiekowania.
     - **Wiekowanie lokacji LIFO** Za pomocą strategii LIFO można wysyłać zarówno towary śledzone wsadowo, jak i towary nieśledzone partiami, na podstawie daty wprowadzenia zapasów do magazynu. Ta możliwość może być szczególnie przydatna w przypadku nieśledzonych partii zapasów, gdy data wygaśnięcia nie jest dostępna do sortowania. Strategia LIFO znajduje lokalizację, która zawiera najnowszą datę wiekowania, oraz przydziela pobieranie na podstawie tej daty wiekowania.
 
@@ -251,9 +249,12 @@ W tym scenariuszu należy zdefiniować dwa działania dyrektywy lokalizacji. Pie
 
 ## <a name="next-step"></a>Następne kroki
 
-Po utworzeniu dyrektywy lokalizacji, każdy kod dyrektywy można skojarzyć z kodem szablonu pracy dla utworzenia pracy. Aby uzyskać więcej informacji, zobacz [Kontrola pracy magazynu za pomocą szablonów pracy i dyrektyw lokalizacji](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/control-warehouse-location-directives).
+Po utworzeniu dyrektywy lokalizacji, każdy kod dyrektywy można skojarzyć z kodem szablonu pracy dla utworzenia pracy. Aby uzyskać więcej informacji, zobacz [Kontrola pracy magazynu za pomocą szablonów pracy i dyrektyw lokalizacji](./control-warehouse-location-directives.md).
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 - Wideo: [Konfiguracja zarządzania magazynem — zaawansowana](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
 - Temat pomocy: [Kontrola pracy magazynu za pomocą szablonów pracy i dyrektyw lokalizacji](control-warehouse-location-directives.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

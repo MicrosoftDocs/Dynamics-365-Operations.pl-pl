@@ -1,28 +1,25 @@
 ---
 title: Opcje konfiguracji automatyzacji faktur od dostawcy (wersja zapoznawcza)
 description: W tym temacie opisano opcje dostępne przy ustawianiu i konfigurowaniu automatyzacji faktur od dostawców.
-author: abruer
-manager: AnnBe
-ms.date: 10/16/2020
+author: sunfzam
+ms.date: 02/14/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+ms.reviewer: twheeloc
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ebab41d8b7697f20095d6d4654718b88c8b08a82
-ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
+ms.openlocfilehash: c1dc443e4225a3ffc6b88cedf7add396a66ec25d
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4665205"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182450"
 ---
 # <a name="setup-options-for-vendor-invoice-automation"></a>Opcje ustawień automatyzacji faktur od dostawców
 
@@ -30,12 +27,18 @@ ms.locfileid: "4665205"
 
 W tym temacie opisano opcje dostępne przy ustawianiu i konfigurowaniu automatyzacji faktur od dostawców. Funkcje automatyzacji faktur używają następujących typów parametrów ustawień:
 
+- Parametry do automatycznego stosowania przedpłat w importowanych fakturach.
 - Parametry przesyłania zaimportowanych faktur od dostawców do systemu przepływu pracy i dopasowywanie zaksięgowanych wierszy przyjęcia produktów do wierszy oczekujących faktur od dostawcy.
 - Parametry zadań automatyzacji przetwarzania w tle. Struktura automatyzacji procesów służy do przesyłania zaimportowanych faktur od dostawców do systemu przepływu pracy. Służy on również do automatycznego dopasowywania zaksięgowanych wierszy dokumentu przyjęcia produktów do wierszy oczekujących faktur od dostawcy oraz do weryfikacji uzgadniania faktur ręcznych, które zostały automatycznie uzgodnione z wierszami dokumentu przyjęcia produktów. W różnych procesach biznesowych te struktury są używane do definiowania częstotliwości uruchamiania wybranego procesu. Dostępne częstotliwości procesów w tle **Dopasuj dokumenty przyjęcia produktów do wierszy faktur** i **Prześlij faktury od dostawców do przepływu pracy** obejmują opcje **Godzina** i **Codzienne**.
 
 Aby skonfigurować lub wyświetlić informacje o zadaniu w tle, należy przejść do funkcji **Administracja systemu \> Ustawienia \> Automatyzacje procesów** i wybrać kartę **Zadanie w tle**.
 
 Aby uzyskać automatyzację bez działań z procesu importowania za pomocą księgowania faktur od dostawców, należy skonfigurować przepływ pracy faktury od dostawcy. Aby skonfigurować przepływ pracy, wybierz kolejno opcje **Rozrachunki z dostawcami > Ustawienia > Przepływy pracy dla rozrachunków z dostawcami**. Aby zapewnić możliwość przetwarzania faktury od początku do końca bez ręcznej interwencji, należy dołączyć do konfiguracji przepływu pracy zadanie automatycznego księgowania.
+
+## <a name="parameters-for-automatically-applying-prepayments-in-imported-invoices"></a>Parametry do automatycznego stosowania przedpłat w importowanych fakturach
+
+- **Automatycznie stosuj przedpłaty dla importowanych faktur** – Gdy ta opcja jest ustawiona na **Tak**, system automatycznie wyszukuje istniejące przedpłaty dla odpowiedniego zamówienia zakupu, gdy faktury dostawcy są importowane. Jeśli znalezione zostaną jakiekolwiek zaliczki, które można zastosować, dodawany jest jeden dodatkowy wiersz w celu zastosowania zaliczek w importowanych fakturach dostawców.
+- **Blokuj automatyzację działań następczych w przypadku braku możliwości zastosowania przedpłaty** - Gdy opcja jest ustawiona na **Tak**, faktury będą blokowane w przypadku braku możliwości zastosowania przedpłaty. Podobnie jak inne zautomatyzowane procesy, takie jak proces dopasowywania paragonów i przekazywania do procesu obiegu dokumentów, proces automatyzacji faktur nie wyłapie zablokowanych faktur, dopóki nie zostanie ręcznie zastosowana przedpłata. 
 
 ## <a name="parameters-for-submitting-imported-vendor-invoices-to-the-workflow-system"></a>Parametry służące do przesyłania zaimportowanych faktur od dostawców do systemu przepływu pracy
 
@@ -52,7 +55,7 @@ Dostępne są następujące parametry:
 
 - **Dopasuj dokumenty przyjęcia produktów do wierszy faktury przed automatycznym przesłaniem** — w przypadku ustawienia tej opcji na **Tak** importowana faktura nie będzie automatycznie przesyłana do systemu przepływu pracy, dopóki nie zostanie wystawiona ilość na fakturze dopasowana do produktów. Ustawienie tej opcji na **Tak** powoduje włączenie automatycznego dopasowywania zaksięgowanych dokumentów przyjęcia produktów do wierszy faktury, dla których zdefiniowano trzyelementowe zasady uzgadniania. Ten proces będzie działał, dopóki dopasowana ilość z dokumentu przyjęcia produktów nie będzie równa ilości fakturowanej. W tym momencie faktura zostanie automatycznie przesłana do systemu przepływu pracy.
 
-    Opcja „Dopasuj dokumenty przyjęcia produktów do wierszy faktury przed automatycznym zatwierdzeniem” jest dostępna tylko wtedy, gdy zaznaczono opcję **Włącz sprawdzanie zgodności z fakturami**. Po wybraniu tej opcji automatycznie wybierana jest opcja **Automatycznie dopasuj dokumenty przyjęcia produktów do wierszy faktury**.
+    Opcja **Dopasuj dokumenty przyjęcia produktów do wierszy faktury przed automatycznym zatwierdzeniem** jest dostępna tylko wtedy, gdy zaznaczono opcję **Włącz sprawdzanie zgodności z fakturami**. Po wybraniu tej opcji automatycznie wybierana jest opcja **Automatycznie dopasuj dokumenty przyjęcia produktów do wierszy faktury**.
 
 - **Wymagaj, aby obliczone sumy były równe wartościom importowanym do automatycznego przesyłania przepływu pracy** — w przypadku ustawienia tej opcji na **Tak** faktura nie będzie automatycznie przesyłana do systemu przepływu pracy do momentu, gdy sumy obliczone dla faktury nie mają takiej wartości importowanej. Jeśli ta opcja ma wartość **Nie**, faktura może być automatycznie przesłana do systemu przepływu pracy, ale nie można jej zaksięgować, dopóki obliczone sumy nie zostaną skorygowane tak, aby odpowiadały importowanym sumie. Jeśli nie zostanie zaimportowana kwota faktury ani kwota podatku, ta opcja powinna mieć wartość **Nie**.
 - **Automatyczne dopasowywanie dokumentów przyjęcia produktów do wierszy faktury** — w przypadku ustawienia tej opcji na **Tak**, przetwarzanie w tle może być używane do automatycznego dopasowywania zaksięgowanych dokumentów przyjęcia produktów do wierszy faktury, dla których zdefiniowano trzyelementowe zasady uzgadniania. Ten proces będzie uruchomiany do czasu, aż dopasowana ilość odebranych produktów będzie równa ilości fakturowanej lub osiągnięta zostanie wartość pola **Liczba prób automatycznego dopasowania**. Proces może być uruchamiany, dopóki faktura nie zostanie przesłana do systemu przepływu pracy.
@@ -63,3 +66,6 @@ Dostępne są następujące parametry:
 
 - **Liczba prób automatycznego dopasowania** — umożliwia wybór liczby prób dopasowania przez systemu przyjęcia produktów do wiersza faktury przed poinformowaniem o niepowodzeniu procesu. Po osiągnięciu określonej liczby prób faktura zostanie usunięta z automatyzacji przetwarzania.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

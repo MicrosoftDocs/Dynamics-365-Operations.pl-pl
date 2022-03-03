@@ -2,11 +2,9 @@
 title: Przypisywanie użytkowników do ról zabezpieczeń
 description: Aby mieć dostęp do aplikacji Finance and Operations, użytkownicy muszą być przypisani do ról zabezpieczeń.
 author: Peakerbl
-manager: AnnBe
-ms.date: 05/06/2020
+ms.date: 02/09/2022
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysSecRolesEditUsers, SysSecAssignmentQueryLookup, SysQueryForm, SysSecRoleExcludeUsers
 audience: Application User
@@ -15,18 +13,18 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f78c24e8c2ffe5418ce119e19b7c0193f01f64b8
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 36874b996cc5708f6fd7fbc45251f3066b5b1c97
+ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679871"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8105545"
 ---
-# <a name="assign-users-to-security-roles"></a>Przypisywanie użytkowników do ról zabezpieczeń
+# <a name="manage-users-and-security-roles"></a>Zarządzaj użytkownikami i rolami bezpieczeństwa
 
 [!include [banner](../../includes/banner.md)]
 
-Aby można było skorzystać z innych funkcji niż typowe w aplikacjach Finance and Operations, użytkownicy muszą być przypisani do ról zabezpieczeń. Można przypisywać użytkowników do ról automatycznie, na podstawie reguł i danych biznesowych, wykluczać użytkowników z automatycznego przypisania ról lub dodawać użytkowników do ról ręcznie.
+Aby można było skorzystać z innych funkcji niż typowe w aplikacjach finansowych i operacyjnych, użytkownicy muszą być przypisani do ról zabezpieczeń. Można przypisywać użytkowników do ról automatycznie, na podstawie reguł i danych biznesowych, wykluczać użytkowników z automatycznego przypisania ról lub dodawać użytkowników do ról ręcznie.
 
 ## <a name="automatically-assign-users-to-roles"></a>Automatyczne przypisywanie użytkowników do ról
 W tej procedurze pokazano, jak administratorzy systemu mogą automatycznie przypisywać użytkowników do ról, na podstawie danych biznesowych. 
@@ -42,6 +40,8 @@ W tej procedurze pokazano, jak administratorzy systemu mogą automatycznie przyp
 10. Przejrzyj role przypisane różnym użytkownikom, aby potwierdzić, że kwerenda przypisania roli była poprawna. W razie potrzeby skoryguj i uruchom ponownie.
 
 ## <a name="exclude-users-from-automatic-role-assignment"></a>Wykluczanie użytkowników z automatycznego przypisywania ról
+W tej procedurze popisano sposób wykluczenia użytkowników z automatycznego przypisywania ról.
+
 1. Zamknij stronę.
 2. Otwórz **Okienko nawigacji > Moduły > Administracja systemu > Ochrona > Przypisz użytkowników do ról**.
 3. W drzewie zaznacz rolę „Kierownik ds. księgowania”. Służy do wybierania roli. W tym przykładzie wybierz rolę Kierownik ds. księgowania.  
@@ -57,3 +57,19 @@ Użytkownicy ręcznie przypisani do ról zabezpieczeń muszą również zostać 
 2. W drzewie wybierz rolę, a następnie w menu **Użytkownicy przypisani do roli** wybierz pozycję **Ręcznie przypisz/wyklucz użytkowników**.
 4. W obszarze **Przypisz użytkowników do roli lub wyklucz użytkowników z roli** użytkownicy, do których nie przypisano roli, są wyświetlani z **trybem przypisania** ustawionym na **Brak**. Wybierz co najmniej jednego użytkownika, do którego ma zostać przypisana rola.
 5. W **okienku akcji** wybierz pozycję **Przypisz do roli**. **Tryb przypisania** jest aktualizowany do opcji **Ręcznie**, a użytkownicy mają teraz przypisaną nową rolę.
+
+## <a name="manually-remove-users-from-roles"></a>Ręczne usuwanie użytkowników z ról
+Użytkownicy ręcznie przypisani do ról zabezpieczeń muszą również zostać usunięci ręcznie przez administratora. Użytkownicy ci nie są usuwani z ról za pomocą reguł automatycznego przypisania ról.
+
+1. Otwórz **Okienko nawigacji > Moduły > Administracja systemu > Ochrona > Przypisz użytkowników do ról**.
+2. Aby usunąć jednego użytkownika, należy wykonać następujące czynności:
+   1. W drzewie wybierz rolę. 
+   2. W obszarze **Użytkownicy przypisani do roli** wybierz użytkownika, który ma zostać usunięty.
+   3. Wybierz **pozycję** Usuń, a użytkownik zostanie usunięty z roli.
+3. Aby usunąć wielu użytkowników, wykonaj następujące kroki:
+   1. W drzewie wybierz rolę. 
+   2. W obszarze **Użytkownicy przypisani do roli** wybierz **Ręcznie przypisz / wyklucz użytkowników**.
+   3. Na stronie **Przypisz użytkowników do roli lub wyklucz użytkowników z roli** użytkownicy, do których nie przypisano roli, są wyświetlani z **trybem przypisania** ustawionym na **Brak**. Wybierz użytkowników, których należy wykluczyć z roli.
+   4. W **Panelu akcji** wybierz **Wyklucz z roli**. **Tryb przypisania** jest aktualizowany do opcji **Ręcznie** i użytkownicy są teraz wykluczeni z roli.
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

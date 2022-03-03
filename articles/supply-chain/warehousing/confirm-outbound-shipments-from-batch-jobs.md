@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 4af84383fe1d214849d5d05463bd0cbfad7d0536
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: f68dcfc0c1454ee5b095e186c52faa6c83bf8dc6
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778480"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103922"
 ---
 # <a name="confirm-outbound-shipments-from-batch-jobs"></a>Potwierdź wychodzące wysyłki z zadań wsadowych
 
@@ -25,12 +25,9 @@ ms.locfileid: "7778480"
 
 W tym temacie opisano sposób konfigurowania zadania wsadowego, które automatycznie potwierdza wysyłki wychodzących zamówień przeniesienia dla ładunków gotowych do wysyłki. Opisane tu zadanie wsadowe dotyczy tylko wysyłek zamówień przeniesienia, a nie zamówień sprzedaży.
 
-## <a name="enable-the-confirm-outbound-shipments-from-batch-jobs-feature"></a>Włącz funkcję Potwierdź wychodzące wysyłki z zadań wsadowych
+## <a name="turn-the-confirm-outbound-shipments-from-batch-jobs-feature-on-or-off"></a>Włącz lub wyłącz funkcję Potwierdź przesyłki wychodzące z zadań wsadowych
 
-Od wersji 10.0.21 Supply Chain Management version ta funkcja jest domyślnie włączona. Administratorzy mogą skorzystać ze strony [Zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją lub wyłączyć w razie potrzeby. W tym miejscu funkcja jest wyświetlana jako:
-
-- **Moduł** - *Zarządzanie magazynem*
-- **Nazwa funkcji** - *Potwierdź wychodzące wysyłki z zadań wsadowych*
+Aby korzystać z funkcji opisanej w tym temacie, w systemie musi być włączona funkcja *Potwierdź przesyłki wychodzące z zadań wsadowych*. Od wersji 10.0.21 Supply Chain Management version ta funkcja jest domyślnie włączona. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.25, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Potwierdź przesyłki wychodzące z zadań wsadowych* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="process-outbound-shipments"></a>Przetwarzanie wysyłek wychodzących
 

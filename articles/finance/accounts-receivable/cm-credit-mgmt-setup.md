@@ -7,17 +7,17 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 745a51617f8c87c0f757aee0304ec3efb55d0f98
-ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
+ms.openlocfilehash: d8bc4f0a981b75c1b65d51aa1d8fada9c2187e22
+ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7921222"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323417"
 ---
 # <a name="credit-management-parameters-setup"></a>Ustawienia parametrów modułu Zarządzanie kredytami
 
@@ -50,7 +50,8 @@ Można również zdefiniować liczbę dni prolongaty przed ponownym sprawdzeniem
 
 Jeśli liczba dni prolongaty nie zostanie określona, reguły kredytu będą sprawdzane przy każdym kroku księgowania skonfigurowanym do uruchamiania reguł zarządzania kredytami. Jeśli zamówienie sprzedaży zostanie zwolnione bez księgowania, a następnie ponownie uruchomiony ten sam krok przetwarzania zamówienia, reguły kredytu zostaną ponownie sprawdzone. Zamówienie jest na przykład wstrzymywane po potwierdzeniu, a zwolnienie jest możliwe przy księgowaniu lub bez niego. W takim przypadku zamówienie zostanie wstrzymane ponownie, jeśli zostanie ponownie potwierdzone. Należy używać dni prolongaty, jeśli zamówienie powinno zostać przeniesione do następnego kroku przetwarzania bez konieczności ponownego przetrzymywania.
 
-Nie można określić dni prolongaty dla niektórych punktów kontrolnych księgowania, ale nie dla innych. Należy skonfigurować wszystkie punkty kontrolne księgowania, tak aby miały dni prolongaty, lub skonfigurować je w taki sposób, aby nie miały dni prolongaty.
+> [!Note]
+> Jeśli dla jednego punktu kontrolnego księgowania wprowadzono dzień prolongaty, wszystkie punkty kontrolne oznaczone do księgowania muszą mieć dni prolongaty.
 
 - Zaznaczenie pola wyboru **Księgowanie** powoduje uruchomienie reguł zarządzania kredytami po uruchomieniu punktu kontrolnego księgowania wyświetlanego w wierszu. Jeśli pole wyboru nie zostanie zaznaczone, reguły będą sprawdzane tylko raz w całym procesie księgowania.
 - W przypadku zaznaczenia pola wyboru **Księgowanie** należy określić liczbę dni prolongaty, które powinny upłynąć przed ponownym sprawdzeniem reguł blokowania. Nie można dodać dni prolongaty, jeśli pole wyboru **Księgowanie** jest puste.

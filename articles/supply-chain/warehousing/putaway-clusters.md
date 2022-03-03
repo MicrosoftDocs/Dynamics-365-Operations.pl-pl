@@ -2,25 +2,22 @@
 title: Grupy odłożenia
 description: Grupy odłożenia umożliwiają w tym samym czasie pobieranie wielu numerów identyfikacyjnych, a następnie ich odłożenie w różnych lokalizacjach. Mogą być bardzo przydatne w firmach detalicznych, w których numery identyfikacyjne zazwyczaj nie są pełnymi paletami zapasów.
 author: Mirzaab
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-19
-ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 6a330ddccbd17c92443232fc8488e36a59235773
-ms.sourcegitcommit: cfd84321fba38e02e270d361df369a536a48efa3
+ms.dyn365.ops.version: 10.0.7
+ms.openlocfilehash: d5aa579394a0e3bd4c27cd44c9ff98951b3bfe1c
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "4512337"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103670"
 ---
 # <a name="putaway-clusters"></a>Grupy odłożenia
 
@@ -28,12 +25,9 @@ ms.locfileid: "4512337"
 
 Grupy odłożenia umożliwiają w tym samym czasie pobieranie wielu numerów identyfikacyjnych, a następnie ich odłożenie w różnych lokalizacjach. Ten proces jest często nazywany *trasą objazdową*. Grupy odłożenia mogą być bardzo przydatne w firmach detalicznych, w których numery identyfikacyjne zazwyczaj nie są pełnymi paletami zapasów. 
 
-## <a name="turn-on-the-cluster-putaway-feature"></a>Włącz funkcję grup odłożenia
+## <a name="turn-the-cluster-putaway-feature-on-or-off"></a>Włącz lub wyłącz funkcję odkładania klastra
 
-Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z obszaru roboczego [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. Ta funkcja jest wymieniona w następujący sposób:
-
-- **Moduł:** *Zarządzanie magazynem*
-- **Nazwa funkcji:** *Funkcja grup odłożenia*
+Aby korzystać z funkcji opisanej w tym temacie, w systemie musi być włączona funkcja *Funkcja odkładania klastra*. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.25, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Funkcja odkładania klastra* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="setup-for-the-example-scenario"></a>Konfiguracja scenariusza przykładowego
 
@@ -231,7 +225,7 @@ Ten scenariusz symuluje przetwarzanie grupy odłożenia.
 
 #### <a name="receive-and-sort-the-inventory-into-a-cluster"></a>Przyjmowanie i sortowanie zapasów w grupie
 
-1. Zaloguj się do aplikacji magazynowej jako użytkownik, który jest skonfigurowany dla magazynu *61*.
+1. Zaloguj się do aplikacji Warehouse Management jako użytkownik, który jest ustawiony dla magazynu *61*.
 1. W menu głównym wybierz opcję **Przychodzące**.
 1. W menu **Przychodzące** wybierz opcję **Odbiór i sortowanie grupy**.
 1. W polu **Ponum** wprowadź numer zamówienia zakupu.
@@ -273,7 +267,7 @@ Aby możliwe było odłożenie elementów w grupie, należy zamknąć grupę.
 
 #### <a name="put-the-cluster-away"></a>Odłóż grupę
 
-1. Zaloguj się do aplikacji magazynowej jako użytkownik, który jest skonfigurowany dla magazynu *61*.
+1. Zaloguj się do aplikacji Warehouse Management jako użytkownik, który jest ustawiony dla magazynu *61*.
 1. W menu głównym wybierz opcję **Przychodzące**.
 1. W menu **Przychodzące** wybierz **Grupa odłożenia**.
 1. Wybierz **Identyfikator grupy** i wprowadź identyfikator grupy, który został wprowadzony wcześniej dla zamkniętej grupy.
@@ -287,7 +281,7 @@ Aby możliwe było odłożenie elementów w grupie, należy zamknąć grupę.
 
     Masz standardowe opcje zastąpienia lub przejścia tego kroku.
 
-    ![Strona Grupa odłożenia: Odłożenie](media/Cluster_putaway-Put.png "Strona Grupa odłożenia: Odłożenie")
+    ![Strona Grupa odłożenia: Odłożenie.](media/Cluster_putaway-Put.png "Strona Grupa odłożenia: Odłożenie")
 
 1. Wybierz **OK**, aby potwierdzić odłożenie grupy.
 
@@ -296,3 +290,6 @@ Aby możliwe było odłożenie elementów w grupie, należy zamknąć grupę.
 ## <a name="notes-and-tips"></a>Notatki i porady
 
 W przypadku, gdy identyfikator grupy staje się nadrzędnym numerem identyfikacyjnym dla zagnieżdżonej palety, pozycja jest automatycznie podawana podczas skanowania identyfikatora grupy. Nie trzeba skanować kolejnych numerów identyfikacyjnych, nawet jeśli dla generowania numerów identyfikacyjnych jest ustawiona wartość ręczna.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

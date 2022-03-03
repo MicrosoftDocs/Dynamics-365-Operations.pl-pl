@@ -2,11 +2,9 @@
 title: Używanie źródeł danych z kodem kreskowym do generowania obrazów kodów kreskowych
 description: W tym temacie objaśniono sposób używania źródeł danych z kodem kreskowym w celu generowania obrazów kodów kreskowych.
 author: NickSelin
-manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERModelMappingDesigner, EROperationDesigner
 audience: Application User, Developer, IT Pro
@@ -17,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Version 10.0.13
-ms.openlocfilehash: 3fb754267de1120bc3c086d49cb7c63028183bda
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a5a396080d8b5dd4c2ed9a0eb15c1286e8799ebf
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681431"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323959"
 ---
 # <a name="use-barcode-data-sources-to-generate-bar-code-images"></a>Używanie źródeł danych z kodem kreskowym do generowania obrazów kodów kreskowych
 
 [!include[banner](../includes/banner.md)]
 
-Struktury [Elektronicznego raportowania (ER)](general-electronic-reporting.md) można używać do projektowania [składników frormatu ER](general-electronic-reporting.md#FormatComponentOutbound), które można uruchomić w celu wygenerowania potrzebnych elektronicznych i drukowalnych dokumentów wychodzących. Aby wygenerować dokument wychodzący w formacie Microsoft Office, należy określić układ raportu, używając dokumentu Microsoft Excel lub dokumentu Microsoft Word jako szablonu raportu. [Projektant Operacji ER](general-electronic-reporting.md#building-a-format-that-uses-a-data-model-as-a-base) umożliwia dołączenie dokumentu programu Excel lub Word jako szablonu dla formatu ER. Następujące nazwane elementy w dołączonym szablonie są skojarzone z elementami skonfigurowanego składnika formatu:
+Struktury [Elektronicznego raportowania](general-electronic-reporting.md) (ER) można używać do projektowania składników frormatu ER, które można uruchomić w celu wygenerowania potrzebnych elektronicznych i drukowalnych dokumentów wychodzących. Aby wygenerować dokument wychodzący w formacie Microsoft Office, należy określić układ raportu, używając dokumentu Microsoft Excel lub dokumentu Microsoft Word jako szablonu raportu. [Projektant Operacji ER](general-electronic-reporting.md#building-a-format-that-uses-a-data-model-as-a-base) umożliwia dołączenie dokumentu programu Excel lub Word jako szablonu dla formatu ER. Następujące nazwane elementy w dołączonym szablonie są skojarzone z elementami skonfigurowanego składnika formatu:
 
 - Kontrolki zawartości w programie Word
 - Nazwane arkusze, zakresy, komórki, kształty i obrazy w programie Excel
@@ -39,7 +37,7 @@ ER obsługuje obecnie typ źródła danych **Kod kreskowy**. Dlatego teraz możn
 
 W szablonach raportów można używać następujących symboli zastępczych do wprowadzania obrazów kodów kreskowych:
 
-- Kontrolka zawartości [obrazu](https://docs.microsoft.com/office/client-developer/word/content-controls-in-word) dla programu Word
+- Kontrolka zawartości [obrazu](/office/client-developer/word/content-controls-in-word) dla programu Word
 - Objekt [obrazu](https://support.office.com/article/insert-pictures-3c51edf4-22e1-460a-b372-9329a8724344) w programie Excel
 
 Korzystając ze źródła danych typu **Kod kreskowy**, można generować kody kreskowe w następujących formatach:
@@ -118,21 +116,21 @@ Jeśli nie zakończono jeszcze analizy przykładu w temacie [Osadzanie obrazów 
 
 | Opis zawartości         | Nazwa pliku                   |
 |-----------------------------|-----------------------------|
-| Konfiguracja modelu danych ER | Model czeków.xml       |
-| ER format konfiguracji     | Format drukowania czeków.xml |
+| Konfiguracja modelu danych ER | [Model czeków.xml](https://download.microsoft.com/download/6/e/a/6ea166fd-1382-4fdb-8dcb-0f13379f9c8e/Modelforcheques.xml)      |
+| ER format konfiguracji     | [Format drukowania czeków.xml](https://download.microsoft.com/download/1/7/c/17c301e3-c4ee-4886-ae75-440fcc002c8c/Chequesprintingformat.xml) |
 
 Ponadto Pobierz następujący plik programu Excel zawierający zmodyfikowany szablon dla dostarczonego rozwiązania ER.
 
 | Opis zawartości | Nazwa pliku                 |
 |---------------------|---------------------------|
-| Szablon raportu     | Szablon czeków w Excel.xlsx |
+| Szablon raportu     | [Szablon czeków w Excel.xlsx](https://download.microsoft.com/download/3/b/d/3bd3b944-da8f-43b4-8533-3c1292a4c3ef/CheckTemplateExcel.xlsx) |
 
 ### <a name="activate-a-configuration-provider"></a><a name="ExampleProvider"></a>Aktywuj dostawcę konfiguracji
 
 1. Wybierz kolejno opcje **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
 2. Na stronie **Konfiguracje lokalizacji** w sekcji **Dostawcy konfiguracji** sprawdź, czy [dostawca konfiguracji](general-electronic-reporting.md#Provider) dla przykładowej firmy **Litware, Inc.** jest wymieniony na liście i czy jest oznaczony jako akywny. Jeśli nie ma go na liście lub jeśli nie jest on oznaczony jako aktywny, wykonaj kroki opisane w temacie [Tworzenia dostawcy konfiguracji i zaznaczanie go jako aktywny](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-![Ustawienie aktywnej przykładowej firmy na stronie konfiguracji lokalizacji](./media/er-barcode-data-source-active-provider.png)
+![Ustawienie aktywnej przykładowej firmy na stronie konfiguracji lokalizacji.](./media/er-barcode-data-source-active-provider.png)
 
 ### <a name="import-the-provided-er-solution"></a><a name="ExampleImportSolution"></a>Importuj dostarczone rozwiązanie ER
 
@@ -162,14 +160,14 @@ Ponadto Pobierz następujący plik programu Excel zawierający zmodyfikowany sza
 7. W okienku akcji wybierz pozycję **Drukowanie tekstu**.
 8. W oknie dialogowym określ opcję **Format czeków zbywalnych** na **Tak**, a następnie wybierz **OK**.
 
-    ![Układ zaznaczenia — okno dialogowe drukowanie tekstu](./media/er-barcode-data-source-check-layout.png)
+    ![Układ zaznaczenia — okno dialogowe drukowanie tekstu.](./media/er-barcode-data-source-check-layout.png)
 
 ### <a name="review-the-generated-payment-check"></a><a name="ExampleReviewGeneratedCheque"></a>Przejrzyj wygenerowany czek płatności
 
 - Otwórz wygenerowany czek w programie Excel.
 2. Przejrzyj wygenerowany czek.
 
-    ![Wygenerowany czek płatności w programie Excel](./media/er-barcode-data-source-cheque1.png)
+    ![Wygenerowany czek płatności w programie Excel.](./media/er-barcode-data-source-cheque1.png)
 
 ### <a name="modify-the-format-of-the-provided-er-solution"></a><a name="ExampleModifyFormat"></a>Zmodyfikuj format dostarczonego rozwiązania ER
 
@@ -177,7 +175,7 @@ Ponadto Pobierz następujący plik programu Excel zawierający zmodyfikowany sza
 
 Za jego poziomu można otworzyć plik **Szablon czeków w Excel.xlsx**, który został wcześniej zaimportowany. Zauważ, że ten szablon różni się od szablonu użytego do wygenerowania czeku płatności w podanym rozwiązaniu ER. Ponadto zawiera element **AmountBarcode** dla obrazu kodu kreskowego.
 
-![Element AmountBarcode w szablonie programu Excel](./media/er-barcode-data-source-cheque2.png)
+![Element AmountBarcode w szablonie programu Excel.](./media/er-barcode-data-source-cheque2.png)
 
 Musisz teraz zmodyfikować rozwiązanie ER, a następnie [ponownie zastosować](modify-electronic-reporting-format-reapply-excel-template.md) zmodyfikowany szablon.
 
@@ -188,7 +186,7 @@ Musisz teraz zmodyfikować rozwiązanie ER, a następnie [ponownie zastosować](
 5. W projektancie operacji modułu ER wybierz kartę **Mapowanie** po prawej stronie strony, a następnie w okienku drzewa formatów po lewej stronie wybierz opcję **Rozwiń/Zwiń**.
 6. Zwróć uwagę, że wszystkie elementy formatu komórki są powiązane z odpowiednimi źródłami danych.
 
-    ![Powiązanie elementów formatu komórki ze źródłami danych w projektancie operacji ER](./media/er-barcode-data-source-cells-bound.png)
+    ![Powiązanie elementów formatu komórki ze źródłami danych w projektancie operacji ER.](./media/er-barcode-data-source-cells-bound.png)
 
 7. Wybierz kartę **Format** po prawej stronie strony.
 8. W okienku akcji wybierz wielokropek (**...**), a następnie wybierz opcję **Importuj**.
@@ -197,7 +195,7 @@ Musisz teraz zmodyfikować rozwiązanie ER, a następnie [ponownie zastosować](
 11. Wybierz kartę **Mapowanie** po prawej stronie strony, a następnie w okienku drzewa formatów po lewej stronie wybierz opcję **Rozwiń/Zwiń**.
 12. Zauważ, że element komórki **AmountBarcode** został dodany do formatu. Ten element jest skojarzony z elementem **AmountBarcode**, który został dodany do zmodyfikowanego szablonu programu Excel jako symbol zastępczy obrazu kodu kreskowego.
 
-    ![Element komórki AmountBarcode dodany do formatu w projektancie operacji ER](./media/er-barcode-data-source-cell-added.png)
+    ![Element komórki AmountBarcode dodany do formatu w projektancie operacji ER.](./media/er-barcode-data-source-cell-added.png)
 
 #### <a name="add-a-new-barcode-data-source"></a><a name="ExampleModifyFormatAddDataSource"></a>Dodaj nowe źródło danych kodów kreskowych
 
@@ -206,14 +204,14 @@ Następnie należy dodać nowe źródło danych typu **Kod kreskowy**.
 1. W projektancie operacji modułu ER na karcie **Mapowanie** po prawej stronie strony wybierz źródło danych **Drukuj**.
 2. Wybierz opcję **Dodaj**, a następnie w grupie **Funkcje** wybierz typ źródła danych **Kod kreskowy**.
 
-    ![Wybieranie typu źródła danych kodu kreskowego](./media/er-barcode-data-source-add.png)
+    ![Wybieranie typu źródła danych kodu kreskowego.](./media/er-barcode-data-source-add.png)
 
 3. W oknie dialogowym rozwijanym w polu **Nazwa** wprowadź **kod kreskowy**.
 4. W **Format kodu kreskowego** wybierz **Kod 128**.
 5. W polu **Szerokość** wpisz wartość **500**.
 6. Kliknij przycisk **OK**.
 
-    ![Okno dialogowe Właściwości źródła danych](./media/er-barcode-data-source-add2.png)
+    ![Okno dialogowe Właściwości źródła danych.](./media/er-barcode-data-source-add2.png)
 
 #### <a name="bind-a-new-format-element"></a><a name="ExampleModifyFormatBindFormatElement"></a>Powiąż nowy element formatu
 
@@ -224,7 +222,7 @@ Następnie należy powiązać nowy element formatu ze źródłem danych, które 
 3. W okienku akcji wybierz pozycję **Pokaż szczegóły**.
 4. Zwróć uwagę, że ponieważ źródło danych **Kod kreskowy** jest reprezentowane w powiązaniu jako funkcja zawierająca jeden parametr, nazwa elementu formatu powiązanego jest automatycznie traktowana jako argument tego parametru.
 
-    ![Szczegóły źródła danych kodu kreskowego w projektancie operacji ER](./media/er-barcode-data-source-bind1.png)
+    ![Szczegóły źródła danych kodu kreskowego w projektancie operacji ER.](./media/er-barcode-data-source-bind1.png)
 
 5. Wybierz opcję **Edytuj formułę**, aby dostosować powiązanie.
 
@@ -234,7 +232,7 @@ Następnie należy powiązać nowy element formatu ze źródłem danych, które 
 7. Wybierz **Zapisz** i następnie zamknij [projektanta formuł ER](general-electronic-reporting-formula-designer.md).
 8. Zauważ, że powiązanie zostało skorygowane.
 
-    ![Skorygowane powiązanie w projektancie operacji ER](./media/er-barcode-data-source-bind2.png)
+    ![Skorygowane powiązanie w projektancie operacji ER.](./media/er-barcode-data-source-bind2.png)
 
 9. Wybierz **Zapisz** i następnie zamknij projektanta operacji ER.
 
@@ -279,7 +277,7 @@ Wersja robocza wybranego formatu jest oznaczona jako dostępna do użycia w przy
 6. Kliknij przycisk **OK**.
 7. Przejrzyj wygenerowany czek. Należy zauważyć, że kod kreskowy został wygenerowany w celu zakodowania kwoty płatności czeku.
 
-    ![Wygenerowane sprawdzenie płatności z kodem kreskowym w programie Excel](./media/er-barcode-data-source-cheque3.png)
+    ![Wygenerowane sprawdzenie płatności z kodem kreskowym w programie Excel.](./media/er-barcode-data-source-cheque3.png)
 
 > [!IMPORTANT]
 > Wyjątek jest generowany, jeśli argument źródła danych **Kod kreskowy** nie jest zgodny z odpowiednimi wymaganiami określonymi dla formatu kodu kreskowego. Jeśli na przykład zostanie wywołane źródło danych **Kod kreskowy** w celu wygenerowania kodu kreskowego [EAN-8](https://wikipedia.org/wiki/EAN-8) dla dostarczonego tekstu, zostanie zgłoszony wyjątek, jeśli długość tekstu przekracza siedem znaków.
@@ -290,7 +288,7 @@ Zgodnie z opisem w temacie [Generowanie drukowalnych formularzy FTI](er-generate
 
 Jeśli jednak do tworzenia kodów kreskowych jest używane źródło danych **Kod kreskowy**, renderowanie tych kodów kreskowych nie zależy od żadnej czcionki. Dzięki temu można łatwo przekonwertować dokumenty zawierające kody kreskowe na format PDF. Na poniższej ilustracji przedstawiono Podgląd wygenerowanego czeku płatności, który został [przekonwertowany](electronic-reporting-destinations.md#OutputConversionToPDF) na format PDF, na podstawie ustawienia skonfigurowanego [miejsca docelowego](electronic-reporting-destinations.md) ER.
 
-![Podgląd pliku PDF czeku płatniczego](./media/er-barcode-data-source-cheque4.png)
+![Podgląd pliku PDF czeku płatniczego.](./media/er-barcode-data-source-cheque4.png)
 
 ## <a name="limitations"></a>Ograniczenia
 
@@ -303,3 +301,6 @@ Jeśli jednak do tworzenia kodów kreskowych jest używane źródło danych **Ko
 - [Aplikacje docelowe Raportowania elektronicznego](electronic-reporting-destinations.md)
 - [Język formuł raportowania elektronicznego](er-formula-language.md)
 - [Funkcja NUMBERFORMAT](er-functions-text-numberformat.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,25 +2,25 @@
 title: Trzyelementowe zasady uzgadniania
 description: Ten temat zawiera przykłady uzgadniania trzyelementowego.
 author: abruer
-ms.date: 10/26/2017
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: VendInvoicePostingHistory
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 2761
 ms.assetid: 70f3cb1a-18b7-4474-95ec-28b2410dd8f8
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d33a8cb001f1cd2f79c2a174710af90af423b9b3abc66eb80aa4811953ea4a14
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cffdc06216ce8ab1bfb79265f265bec1aee334c5
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722846"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8110000"
 ---
 # <a name="three-way-matching-policies"></a>Trzyelementowe zasady uzgadniania
 
@@ -42,15 +42,15 @@ Zasady uzgadniania faktur w tym przykładzie ułatwiają pracę osobom na nastę
 
 ### <a name="prerequisites"></a>Wymagania wstępne
 
--   Ken ustawia zasadę uzgadniania na poziomie firmy na uzgadnianie trzyelementowe.
--   W pola Automatycznie aktualizuj stan uzgodnienia nagłówka na poziomie firmy Ken wybiera wartość Tak.
--   Wolu Dopasuj ceny całkowite dla firmy Ken wybiera wartość Procent i wpisuje 15% jako wartość procentową rozbieżności.
--   Ken ustawia uzgodnienie trzyelementowe dla zasady uzgadniania dla pozycji 1500 — Milicron Obrabiarka na poziomie pozycji. Ta pozycja jest pozycją środka trwałego używanego do produkcji w firmie Fabrikam. Faktury dla tej pozycji są uzgadnianie z wierszami zamówienia zakupu dla cen i z dokumentami przyjęcia produktów dla ilości.
+-   Ken ustawia **zasadę uzgadniania** na poziomie firmy na **uzgadnianie trzyelementowe**.
+-   W pola **Automatycznie aktualizuj stan uzgodnienia nagłówka** na poziomie firmy Ken wybiera wartość **Tak**.
+-   Wolu **Dopasuj ceny** całkowite dla firmy Ken wybiera wartość **Procent** i wpisuje 15% jako **wartość procentową rozbieżności**.
+-   Ken ustawia **uzgodnienie trzyelementowe** dla zasady uzgadniania dla pozycji 1500 — Milicron Obrabiarka na poziomie pozycji. Ta pozycja jest pozycją środka trwałego używanego do produkcji w firmie Fabrikam. Faktury dla tej pozycji są uzgadnianie z wierszami zamówienia zakupu dla cen i z dokumentami przyjęcia produktów dla ilości.
 -   Tony wpisuje zapotrzebowanie na pięć obrabiarek Milicron. Alicia, pracowniczka działu zamówień zakupów w firmie Fabrikam, wysyła zamówienie zakupu do firmy o nazwie Contoso na dostawę towarów.
 
-    | Numer towaru                 | Ilość | Cena jednostkowa | Kwota netto | Kod opłat        | Wartość opłat |
+    | Numer pozycji                 | Ilość | Cena jednostkowa | Kwota netto | Kod opłat        | Wartość opłat |
     |-----------------------------|----------|------------|------------|---------------------|---------------|
-    | 1500 — Milicron Obrabiarka | 5 przypada na składniki z tytułu ubezpieczeń majątkowych i osobowych        | 8000,00   | 40 000,00  | Wysyłka i obsługa | 3,000.00      |
+    | 1500 — Milicron Obrabiarka | 5 przypada na składniki z tytułu ubezpieczeń majątkowych i osobowych        | 8000,00   | 40 000,00  | Wysyłka i obsługa | 3000,00      |
 
 -   Arnie, pracownik działu rozrachunki z odbiorcami w Contoso, sprawdza wysyłki w danym tygodniu. Wybiera transakcje wysyłki do zafakturowania dla Fabrikam za dostawę obrabiarek Milicron. Arnie uwzględnia opłatę za wysyłkę i obsługę. Fabrikam uzna, że ta opłata jest częścią kosztów środka trwałego.
 
@@ -91,11 +91,11 @@ Zasady uzgadniania faktur w tym przykładzie ułatwiają pracę osobom na nastę
 
 ### <a name="prerequisites"></a>Wymagania wstępne
 
--   Ken ustawia zasadę uzgadniania na poziomie firmy na uzgadnianie dwuelementowe.
--   Wolu Dopasuj ceny całkowite dla firmy Ken wybiera wartość Procent i wpisuje 10% jako wartość procentową rozbieżności.
+-   Ken ustawia **zasadę uzgadniania** na poziomie firmy na **uzgadnianie dwuelementowe**.
+-   Wolu **Dopasuj ceny całkowite** dla firmy Ken wybiera wartość **Procent** i wpisuje **10%** jako wartość **procentową rozbieżności**.
 -   Ken ustawia tolerancję ceny jednostkowej dla wszystkich pozycji na 2%.
--   Cassie ustawia zasadę uzgadniania trzyelementowego dla kombinacji towaru i dostawcy (PH2500 — komputer i dostawca Contoso).
--   Alicia, która pracuje w dziale zamówień zakupów w malezyjskim oddziale firmy Fabrikam, wystawia zamówienie zakupu firmie Contoso na trzy pozycje, jak pokazano w tabeli poniżej. Kiedy tworzy zamówienie zakupu, zastępuje zasadę uzgadniania dla bezprzewodowej myszy na trzyelementowe zamiast dwuelementowego.
+-   Cassie ustawia **zasadę uzgadniania** **trzyelementowego** dla kombinacji towaru i dostawcy (PH2500 — komputer i dostawca Contoso).
+-   Alicia, która pracuje w dziale zamówień zakupów w malezyjskim oddziale firmy Fabrikam, wystawia zamówienie zakupu firmie Contoso na trzy pozycje, jak pokazano w tabeli poniżej. Kiedy tworzy zamówienie zakupu, zastępuje **zasadę uzgadniania** dla bezprzewodowej myszy na trzyelementowe zamiast dwuelementowego.
 
     | Numer pozycji           | Ilość | Cena jednostkowa | Kwota netto | Zasady uzgadniania (domyślna) | Zasada uzgadniania (w wierszu zamówienia zakupu) |
     |-----------------------|----------|------------|------------|---------------------------------|----------------------------------------------|
@@ -134,7 +134,7 @@ Należy uwzględnić następujące elementy:
 -   Dla wiersza MM01 — mysz bezprzewodowa, kolumna Dopasowanie ilości dokumentów przyjęcia produktów zawiera ikonę ostrzeżenia, bo wiersz faktury nie jest uzgodniony z dokumentem przyjęcia produktów. Kolumna Uzgodnienie cen jednostkowych zawiera ikonę ostrzeżenia, ponieważ przekroczono 2% tolerancję ceny jednostkowej netto.
 -   Dla wiersza Napęd USB kolumna Dopasowanie ilości dokumentów przyjęcia produktów jest pusta, bo uzgadnianie dwuelementowe nie pasuje do ilości w wierszu faktury ani w wierszu dokumentu przyjęcia produktów.
 
-Jeśli zatwierdzenie jest wymagane, aby można było zaksięgować faktury z rozbieżnościami uzgadniania, opcja Zatwierdzaj księgowanie w razie rozbieżności w uzgadnianiu na stronie Szczegóły uzgadniania faktur musi być wybrana, zanim faktura będzie mogła być zaksięgowana z błędami uzgadniania cen i błędami uzgadniania ilości. Jeśli zatwierdzanie nie jest wymagane, przetwarzanie faktury może być kontynuowane, jeśli nie ma żadnych innych błędów księgowania.
+Jeśli zatwierdzenie jest wymagane, aby można było zaksięgować faktury z rozbieżnościami uzgadniania, opcja **Zatwierdzaj księgowanie w razie rozbieżności** w uzgadnianiu na stronie **Szczegóły uzgadniania faktur** musi być wybrana, zanim faktura będzie mogła być zaksięgowana z błędami uzgadniania cen i błędami uzgadniania ilości. Jeśli zatwierdzanie nie jest wymagane, przetwarzanie faktury może być kontynuowane, jeśli nie ma żadnych innych błędów księgowania.
 
 
 Aby uzyskać więcej informacji, zobacz [Omówienie uzgadniania faktur rozrachunków z dostawcami](accounts-payable-invoice-matching.md).

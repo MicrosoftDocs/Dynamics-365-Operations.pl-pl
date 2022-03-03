@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2021-04-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 560b62183f9c0c45c872998373a90dc9dc0ebbb3
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5d06f05ca27ed8fe58a9a24fcde8c0082662b866
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571720"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103119"
 ---
 # <a name="category-requests-from-vendors"></a>Wnioski o nadanie kategorii od dostawców
 
@@ -26,9 +26,9 @@ Proces wniosku o nadanie kategorii umożliwia dostawcy żądanie, aby nowe kateg
 
 Wnioski o nadanie kategorii są inicjowane przez dostawców w obszarze roboczym **Informacje o dostawcy**. Są one następnie przesyłane do agencji w celu ich przejrzenia i zatwierdzenia. Zatwierdzone kategorie są dodawane do listy kategorii zaopatrzenia dla konta dostawcy.
 
-## <a name="turn-on-the-feature-in-your-system"></a>Włączanie funkcji w systemie
+## <a name="turn-the-category-requests-from-vendors-feature-on-or-off"></a>Włączanie lub wyłączanie funkcji wniosków o nadanych dostawcom kategorii
 
-Jeśli system jeszcze nie zawiera funkcji opisanej w tym temacie, przejdź do modułu [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) i włącz funkcję *Zezwalaj dostawcom na stosowanie kategorii zaopatrzenia za pośrednictwem portalu współpracy z dostawcami*.
+Od wersji 10.0.25 Supply Chain Management version ta funkcja jest domyślnie włączona. Administratorzy mogą włączyć lub wyłączyć tę funkcję, *wyszukując funkcję Zezwalaj dostawcom na stosowanie kategorii zaopatrzenia za pośrednictwem funkcji portalu współpracy* z dostawcami w obszarze [roboczym Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 Po włączeniu tej funkcji nadal można ręcznie dodawać kategorie zaopatrzenia do kont dostawców. Aby uzyskać więcej informacji, zobacz [Zatwierdzanie dostawców dla konkretnych kategorii zaopatrzenia](tasks/approve-vendors-specific-procurement-categories.md).
 

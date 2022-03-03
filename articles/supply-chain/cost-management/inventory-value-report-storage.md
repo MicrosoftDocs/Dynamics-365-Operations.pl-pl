@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: banluo
 ms.search.validFrom: 2021-10-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 7978c7b326ef1b62f76711ac187c28539eb1f449
-ms.sourcegitcommit: ba10ba2cd4fb4267afb5aacae4f6a52aa2456e7e
+ms.openlocfilehash: 3da92c384d3074335067433120eccc97d11b6b81
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "7798328"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103947"
 ---
 # <a name="inventory-value-reports"></a>Raporty wartości zapasów
 
@@ -53,12 +53,9 @@ Raport **Przechowywanie raportu wartości zapasów** jest przydatny, gdy dane wy
 > [!NOTE]
 > Raport **Przechowywanie raportów wartości zapasów** nie zawiera sum częściowych zdefiniowanych w układzie raportu. Nie obejmuje również sald księgi głównej, nawet jeśli te salda są zdefiniowane w układzie raportu. Uzgodnienia księgi głównej należy wykonać przy użyciu bilansów próbnych. Jednak standardowy raport **wartości zapasów** zawiera te podsumy i salda.
 
-## <a name="turn-on-the-inventory-value-report-storage-feature"></a>Włącz funkcję przechowywania raportu wartości zapasów
+## <a name="turn-the-inventory-value-report-storage-feature-on-or-off"></a>Włącz lub wyłącz funkcję przechowywania raportu o wartości zapasów
 
-Standardowy raport **wartości zapasów** jest domyślnie włączony. Jeśli jednak chcesz wygenerować bardziej zaawansowany raport **Przechowywanie raportów wartości zapasów**, musisz włączyć tę funkcję w swoim systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
-
-- **Moduł:** *zarządzanie kosztami*
-- **Nazwa funkcji:** *Magazyn raportów wiekowania zapasów*
+Od wersji 10.0.25 Supply Chain Management version ta funkcja jest domyślnie włączona. Administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Przechowywanie raportu wartości zapasów* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="define-inventory-value-report-configurations"></a><a name="report-configuration"></a>Zdefiniuj konfiguracje raportu wartości zapasów
 

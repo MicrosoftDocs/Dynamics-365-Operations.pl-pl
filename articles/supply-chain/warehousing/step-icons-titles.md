@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-05-17
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 6b8d663fa9743fae83654ed9938b4131e0fa08b9
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: a687c26cacc0dbdaf0091b2d26277864553ca1bf
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902199"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103320"
 ---
 # <a name="assign-step-icons-and-titles-for-the-warehouse-management-mobile-app"></a>Przypisanie ikon i tytułów kroków dla aplikacji mobilnej Warehouse Management
 
@@ -27,12 +27,9 @@ Na ilustracjach pokazano, jak ikony kroku i tytuły kroku pojawiają się w apli
 
 ![Przykład ikony kroku i tytułu kroku w aplikacji mobilnej Warehouse Management.](media/step-icon-example.png "Przykład ikony kroku i tytułu kroku w aplikacji mobilnej Warehouse Management")
 
-## <a name="turn-on-this-feature-in-your-system"></a>Włączanie funkcji w systemie
+## <a name="turn-this-feature-on-or-off"></a>Włączanie lub wyłączanie tej funkcji
 
-Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [Zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
-
-- **Moduł:** *Zarządzanie magazynem*
-- **Nazwa funkcji:** *ustawienia użytkownika, ikony i tytuły kroków dla nowej aplikacji magazynowej*
+Aby można było korzystać z funkcji opisanych w tym temacie, *w systemie muszą być włączone ustawienia użytkownika,* ikony i tytuły kroku nowej funkcji aplikacji magazynowej. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.25, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Ustawienia użytkownika, ikony i tytuły kroków dla nowej aplikacji magazynowej* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="standard-step-ids-classes-and-icons"></a>Standardowe identyfikatory kroków, klasy i ikony
 

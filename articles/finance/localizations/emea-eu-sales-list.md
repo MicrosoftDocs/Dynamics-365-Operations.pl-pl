@@ -2,27 +2,24 @@
 title: Raportowanie listy sprzedaży do UE
 description: Ten artykuł zawiera informacje o raportowaniu listy sprzedaży do państw Unii Europejskiej (UE).
 author: EvgenyPopovMBS
-manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/17/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EUSalesList
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 12811
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 68cbd8d3495f8c10c57fa0751fabb03a6946c7dd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: af49817667999dd02a96a7a9bd5bb966be652d35
+ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408367"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323480"
 ---
 # <a name="eu-sales-list-reporting"></a>Raportowanie listy sprzedaży do UE
 
@@ -30,8 +27,7 @@ ms.locfileid: "4408367"
 
 Ten artykuł zawiera informacje o raportowaniu listy sprzedaży do państw Unii Europejskiej (UE).
 
-<a name="eu-sales-list-reporting"></a>Raportowanie listy sprzedaży do UE
------------------------
+## <a name="eu-sales-list-reporting"></a>Raportowanie listy sprzedaży do UE
 
 Dostawca, który dostarcza towary lub usługi wewnątrz Wspólnoty firmom, które są zarejestrowane w Unii Europejskiej (UE), musi przesyłać deklarację sprzedaży do UE (Lista sprzedaży do UE lub ESL). Ogólnie dokument ESL musi zostać przesłany do urzędu skarbowego nie później niż ostatniego dnia miesiąca po zakończeniu okresu kalendarzowego, objętego przez ESL. Dostawca musi podać swój numer identyfikacyjny VAT na ESL i musi także podać, według odbiorcy, następujące informacje:
 
@@ -72,13 +68,19 @@ W poniższej tabeli przedstawiono wymagania wstępne, które muszą istnieć prz
 <td>Ustaw parametry identyfikacji podatkowej na stronie <strong>Parametry kraju/regionu</strong> (kliknij kolejno opcje <strong>Podatek</strong> &gt; <strong>Ustawienia</strong> &gt; <strong>Podatek</strong> &gt; <strong>Parametry kraju/regionu</strong>). Dla każdego kraju/regionu, w którym masz kontrahentów, utwórz rekord na stronie, a następnie określ następujące informacje:
 <ul>
 <li><strong>Kraj/region</strong> — wybierz kraj/region do powiązania z numerem identyfikacji podatkowej.</li>
-<li><strong>Podatek</strong> — umożliwia wprowadzenie numeru identyfikacji podatkowej (czyli prefiksu numeru identyfikacji podatkowej) dla wybranego kraju/regionu.</li>
+<li><strong>Podatek</strong> — Wprowadź numer identyfikacyjny NIP (czyli numer NIP lub prefiks NIP) dla wybranego kraju/regionu.</li>
 <li><strong>Sprawdź numer identyfikacji podatkowej</strong> — zaznaczenie tego pola wyboru pozwala sprawdzić poprawność numeru identyfikacji podatkowej dla wybranego kraju/regionu.</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><strong>Konfiguracja:</strong> Numery identyfikacji podatkowej</td>
-<td>Utwórz numery identyfikacji podatkowej na stronie <strong>Numery identyfikacji podatkowej</strong> (kliknij kolejno opcje <strong>Podatek</strong> &gt; <strong>Ustawienia</strong> &gt; <strong>Podatek</strong> &gt; <strong>Numery identyfikacji podatkowej</strong>). Dla każdego numeru identyfikacji podatkowej utwórz rekord na stronie, a następnie określ następujące informacje:
+<td><strong>Ustawienie:</strong> Numery rejestracyjne VAT</td>
+<td>Utwórz numery rejestracyjne VAT dla swoich kontrahentów na stronie <strong>Wszyscy klienci</strong> (przejdź do <strong>Sprzedaż i marketing</strong> &gt; <strong>Klienci</strong> &gt; <strong>Wszyscy klienci</strong>, wybierz rekord klienta, a następnie wybierz <strong>Klienci</strong> &gt; <strong>Identyfikatory rejestracji</strong>) lub <strong>Dostawcy</strong> (przejdź do <strong>Zaopatrzenie i sourcing</strong> &gt; <strong>Dostawcy</strong> &gt; <strong>Dostawcy</strong>, wybierz rekord dostawcy, a następnie wybierz <strong>Dostawcy</strong> &gt; <strong>Identyfikatory rejestracji</strong>). Na skróconej <strong>karcie Identyfikator</strong> rejestracji na <strong>karcie Ogólne</strong> utwórz rekord i określ następujące informacje:
+<ul>
+<li><strong>Typ rejestracji</strong> — umożliwia wybór typu rejestracji przypisanego do <strong>kategorii rejestracji identyfikatorów VAT</strong> dla kraju/regionu odpowiednika.</li>
+<li><strong>Numer rejestracji</strong> – Wprowadź numer NIP kontrahenta.</li>
+<li><strong>Początek okresu używania</strong> – Wybierz początek okresu użytkowania numeru NIP.</li>
+</ul>  
+Alternatywnie możesz utworzyć numer rejestracyjny VAT na stronie <strong>Numery identyfikacji podatkowej</strong> (kliknij kolejno opcje <strong>Podatek</strong> &gt; <strong>Ustawienia</strong> &gt; <strong>Podatek</strong> &gt; <strong>Numery identyfikacji podatkowej</strong>). Dla każdego numeru identyfikacji podatkowej utwórz rekord na stronie, a następnie określ następujące informacje:
 <ul>
 <li><strong>Kraj/region </strong>— wybierz kraj/region identyfikacji podatkowej kontrahenta.</li>
 <li><strong>Numer identyfikacji podatkowej</strong> — umożliwia wprowadzenie numeru identyfikacji podatkowej kontrahenta.</li>
@@ -87,7 +89,7 @@ W poniższej tabeli przedstawiono wymagania wstępne, które muszą istnieć prz
 </tr>
 <tr class="even">
 <td><strong>Konfiguracja:</strong> Rejestracja kontrahentów</td>
-<td>Ustaw informacje o identyfikacji podatkowej na stronie <strong>Wszyscy odbiorcy</strong> (kliknij kolejno opcje <strong>Sprzedaż i marketing</strong> &gt; <strong>Odbiorcy</strong> &gt; <strong>Wszyscy odbiorcy</strong>, wybierz rekord odbiorcy, a następnie kliknij kolejno opcje <strong>Opcje</strong> &gt; <strong>Zmień widok</strong> &gt; <strong>Widok szczegółów</strong>) lub na stronie <strong>Dostawcy</strong> (kliknij kolejno opcje <strong>Zaopatrzenie i sourcing</strong> &gt; <strong>Dostawcy</strong> &gt; <strong>Dostawcy</strong>, wybierz rekord dostawcy, a następnie kliknij kolejno opcje <strong>Opcje</strong> &gt; <strong>Zmień widok</strong> &gt; <strong>Widok szczegółów</strong>). Na skróconej karcie <strong>Faktura i dostawa</strong> w polu <strong>Numer identyfikacji podatkowej</strong> wybierz numer identyfikacji podatkowej.</td>
+<td>Ustaw informacje o identyfikacji podatkowej na stronie <strong>Wszyscy odbiorcy</strong> (kliknij kolejno opcje <strong>Sprzedaż i marketing</strong> &gt; <strong>Odbiorcy</strong> &gt; <strong>Wszyscy odbiorcy</strong>, wybierz rekord odbiorcy, a następnie kliknij kolejno opcje <strong>Opcje</strong> &gt; <strong>Zmień widok</strong> &gt; <strong>Widok szczegółów</strong>) lub na stronie <strong>Dostawcy</strong> (kliknij kolejno opcje <strong>Zaopatrzenie i sourcing</strong> &gt; <strong>Dostawcy</strong> &gt; <strong>Dostawcy</strong>, wybierz rekord dostawcy, a następnie kliknij kolejno opcje <strong>Opcje</strong> &gt; <strong>Zmień widok</strong> &gt; <strong>Widok szczegółów</strong>). Na skróconej karcie <strong>Faktura i dostawa</strong> w polu <strong>Numer identyfikacji podatkowej</strong> wybierz numer identyfikacji VAT.</td>
 </tr>
 <tr class="odd">
 <td><strong>Konfiguracja:</strong> Podatek</td>
@@ -160,3 +162,6 @@ Po zakończeniu procesu generowania raportów w danym okresie (na przykład, kie
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,25 +2,25 @@
 title: Zasady podziału księgowań i wpisów w arkuszu księgi dla faktur od dostawców
 description: Zasady podziału księgowań są używane do określania sposobu księgowania kwot, to znaczy sposobu księgowania wydatków, podatków lub opłat na fakturze od dostawcy. Każdy kwota, która musi zostać zaksięgowana w trakcie zapisu w arkuszu dla faktury od dostawcy, będzie posiadać jedną lub więcej zasad podziału księgowań.
 author: sunfzam
-ms.date: 08/20/2017
+ms.date: 02/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: VendEditInvoice
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 26891
 ms.assetid: 93dc608a-b5b4-4ec3-83c2-618e3d80a583
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7296b1e00bfd49bceb40a0e8b859d46c6517450a
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: fecdafe8765121d6d54389a70e6c2e497a03611a
+ms.sourcegitcommit: 43d0555c17a0643c9e5ba3bc2da3ce5f80754642
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594698"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "8325975"
 ---
 # <a name="accounting-distributions-and-journal-entries-for-vendor-invoices"></a>Zasady podziału księgowań i wpisów w arkuszu księgi dla faktur od dostawców
 
@@ -62,7 +62,7 @@ Podczas wprowadzania faktury od dostawcy, każda kwota będzie podzielona w nast
 <td>Produkt magazynowany</td>
 <td><ol>
 <li>Zasady podziału księgowań dla wiersza zamówienia zakupu.</li>
-<li>Pole Konto główne po wybraniu opcji Koszty zakupu produktów na stronie Księgowanie.</li>
+<li>Pole **Konto główne** po wybraniu opcji Koszty zakupu produktów na stronie **Księgowanie**.</li>
 </ol></td>
 <td><ol>
 <li>Jeśli wiersz faktury odwołuje się do wiersza zamówienia zakupu, należy użyć zasady podziału księgowań dla wiersza zamówienia zakupu.</li>
@@ -73,35 +73,35 @@ Podczas wprowadzania faktury od dostawcy, każda kwota będzie podzielona w nast
 <td>Kategoria zaopatrzenia lub towar, który nie jest składowany</td>
 <td><ol>
 <li>Zasady podziału księgowań dla wiersza zamówienia zakupu, jeśli wiersz faktury od dostawcy odwołuje się do wiersza zamówienia zakupu.</li>
-<li>Pole Konto główne po wybraniu opcji Koszty zakupu na stronie Księgowanie.</li>
+<li>Pole **Konto główne** po wybraniu opcji Koszty zakupu na stronie **Księgowanie**.</li>
 </ol></td>
 <td><ol>
 <li>Jeśli wiersz faktury odwołuje się do wiersza zamówienia zakupu, należy użyć zasady podziału księgowań dla wiersza zamówienia zakupu.</li>
 <li>Jeśli konto główne jest kontem alokacji, użyj domyślnej wartości głównego z definicji konta alokacji.</li>
 <li>Użyj domyślnych wartości wymiaru finansowego dla faktury od dostawcy.</li>
 <li>Użyj wartości wymiaru finansowego z wiersza faktury od dostawcy.</li>
-<li>Użyj domyślnych wartości wymiarów finansowych z konta głównego na stronie Plan kont.</li>
+<li>Użyj domyślnych wartości wymiarów finansowych z konta głównego na stronie **Plan kont**.</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Środek trwały</td>
 <td><ol>
 <li>Zasady podziału księgowań dla wiersza zamówienia zakupu, jeśli wiersz faktury od dostawcy odwołuje się do wiersza zamówienia zakupu.</li>
-<li>Jeśli opcja Nabycie jest wybrana w polu Typ transakcji w formularzu Faktura od dostawcy, pole Konto główne po wybraniu opcji Nabycie na stronie Profile księgowania środków trwałych.</li>
-<li>Jeśli opcja Korekta wartości początkowej jest wybrana w polu Typ transakcji, pole Konto główne po wybraniu opcji Korekta wartości początkowej na stronie Profile księgowania środków trwałych.</li>
+<li>Jeśli opcja **Nabycie** jest wybrana w polu **Typ transakcji** w formularzu **Faktura od dostawcy**, pole **Konto główne** po wybraniu opcji **Nabycie** na stronie **Profile księgowania środków trwałych**.</li>
+<li>Jeśli opcja **Korekta wartości początkowej** jest wybrana w polu **Typ transakcji**, pole **Konto główne** po wybraniu opcji **Korekta wartości początkowej** na stronie **Profile księgowania środków trwałych**.</li>
 </ol></td>
 <td><ol>
 <li>Użyj zasady podziału księgowań dla wiersza zamówienia zakupu, jeśli wiersz faktury odwołuje się do wiersza zamówienia zakupu.</li>
 <li>Użyj wartości wymiaru finansowego z wiersza faktury od dostawcy.</li>
-<li>Użyj domyślnych wartości wymiarów finansowych z konta głównego na stronie Plan kont.</li>
+<li>Użyj domyślnych wartości wymiarów finansowych z konta głównego na stronie **Plan kont**.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Projekt zdefiniowany w wierszu faktury od dostawcy</td>
 <td><ol>
 <li>Zasady podziału księgowań dla wiersza zamówienia zakupu, jeśli wiersz faktury odwołuje się do wiersza zamówienia zakupu.</li>
-<li>Po wybraniu opcji Saldo w Księgowaniu kosztów — pole towaru na stronie Grupy projektu, pole Konto główne, gdy wybrana jest opcja Koszt na stronie Konfiguracja księgowania.</li>
-<li>Po wybraniu opcji Zyski i straty w Księgowaniu kosztów — pole towaru na stronie Grupy projektu, pole Konto główne, gdy wybrana jest opcja Koszt — towar na stronie Konfiguracja księgowania.</li>
+<li>Po wybraniu opcji **Saldo** w **Księgowaniu kosztów — pole towaru** na stronie **Grupy projektu**, pole **Konto główne**, gdy wybrana jest opcja **Koszt** na stronie **Konfiguracja księgowania**.</li>
+<li>Po wybraniu opcji **Zyski i straty** w **Księgowaniu kosztów — pole towaru** na stronie **Grupy projektu**, pole **Konto główne**, gdy wybrana jest opcja **Koszt — towar** na stronie **Konfiguracja księgowania**.</li>
 </ol></td>
 <td><ol>
 <li>Jeśli wiersz faktury odwołuje się do wiersza zamówienia zakupu, należy użyć zasady podziału księgowań dla wiersza zamówienia zakupu.</li>
@@ -111,18 +111,18 @@ Podczas wprowadzania faktury od dostawcy, każda kwota będzie podzielona w nast
 <td>Rabat wiersza</td>
 <td><ol>
 <li>Zasady podziału księgowań dla wiersza zamówienia zakupu, jeśli wiersz faktury odwołuje się do wiersza zamówienia zakupu.</li>
-<li>Pole Konto główne, gdy opcja Rabat jest wybrana na stronie Księgowanie.</li>
+<li>Pole **Konto główne**, gdy opcja **Rabat** jest wybrana na stronie **Księgowanie**.</li>
 <li>Jeśli nie zdefiniowano konta głównego dla rabatów w profilu księgowania, zasada podziału księgowań dla ceny rozszerzonej w wierszu zamówienia zakupu.</li>
 </ol></td>
 <td><ol>
 <li>Jeśli wiersz faktury odwołuje się do wiersza zamówienia zakupu, należy użyć zasady podziału księgowań dla wiersza zamówienia zakupu.</li>
 <li>Użyj wymiarów finansowych z zasad podziału księgowań dla rozszerzonej ceny w wierszu faktury od dostawcy.</li>
 <li>Użyj wartości wymiaru finansowego dla wiersza faktury od dostawcy.</li>
-<li>Użyj domyślnych wartości wymiarów finansowych z konta głównego na stronie Plan kont.</li>
+<li>Użyj domyślnych wartości wymiarów finansowych z konta głównego na stronie **Plan kont**.</li>
 </ol></td>
 </tr>
 <tr class="even">
-<td>Opłata za zakup, która jest wprowadzona na karcie Cena i rabat wiersza zamówienia zakupu</td>
+<td>Opłata za zakup, która jest wprowadzona na karcie **Cena i rabat** wiersza zamówienia zakupu</td>
 <td><ol>
 <li>Zasady podziału księgowań dla wiersza zamówienia zakupu, jeśli wiersz faktury odwołuje się do wiersza zamówienia zakupu.</li>
 <li>Zasada podziału księgowań rozszerzonej ceny w wierszu zamówienia zakupu.</li>
@@ -136,21 +136,21 @@ Podczas wprowadzania faktury od dostawcy, każda kwota będzie podzielona w nast
 <td>Opłata za wiersz</td>
 <td><ol>
 <li>Zasady podziału księgowań dla wiersza zamówienia zakupu, jeśli wiersz faktury odwołuje się do wiersza zamówienia zakupu.</li>
-<li>Jeśli wybrano Konto księgowe w polu debetu Typ w formularzu Kod opłat, pole debetu Konto na stronie Kod opłat.</li>
-<li>Jeśli wybrano Towar w polu debetu Typ w formularzu Kod opłat, zasady podziału księgowań dla ceny rozszerzonej w wierszu zamówienia zakupu.</li>
-<li>Jeśli wybrano Odbiorca/Dostawca w polu debetu Typ w formularzu Kod opłat, pole kredytu Konto na stronie Kod opłat.</li>
+<li>Jeśli wybrano **Konto księgowe** w polu **Typ debetu** w formularzu **Kod opłat**, pole **Konto debetu** na stronie **Kod opłat**.</li>
+<li>Jeśli wybrano **Towar** w polu **Typ debetu** w formularzu **Kod opłat**, zasady podziału księgowań dla ceny rozszerzonej w wierszu zamówienia zakupu.</li>
+<li>Jeśli wybrano **Odbiorca/Dostawca** w polu **Typ debetu** na stronie **Kod opłat**, pole **Konto kredytu** na stronie **Kod opłat**.</li>
 </ol></td>
 <td><ol>
 <li>Jeśli wiersz faktury odwołuje się do wiersza zamówienia zakupu, należy użyć zasady podziału księgowań dla wiersza zamówienia zakupu.</li>
 <li>Użyj wymiarów finansowych z zasad podziału księgowań dla rozszerzonej ceny w wierszu faktury od dostawcy.</li>
 <li>Użyj wartości wymiaru finansowego z wiersza faktury od dostawcy.</li>
-<li>Użyj domyślnych wartości wymiarów finansowych z konta głównego na stronie Plan kont.</li>
+<li>Użyj domyślnych wartości wymiarów finansowych z konta głównego na stronie **Plan kont**.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Podatek, pod następującym warunkiem:
 <ul>
-<li>Opcja Zastosuj zasady opodatkowania dla Stanów Zjednoczonych jest wybrana na stronie Parametry księgi głównej.</li>
+<li>Opcja Zastosuj zasady opodatkowania dla Stanów Zjednoczonych jest wybrana na stronie **Parametry księgi głównej**.</li>
 </ul></td>
 <td><ol>
 <li>Zasady podziału księgowań dla wiersza zamówienia zakupu, jeśli wiersz faktury odwołuje się do wiersza zamówienia zakupu.</li>
@@ -165,61 +165,61 @@ Podczas wprowadzania faktury od dostawcy, każda kwota będzie podzielona w nast
 <tr class="odd">
 <td>Podatek, pod następującymi warunkami:
 <ul>
-<li>Opcja Zastosuj zasady opodatkowania dla Stanów Zjednoczonych nie jest wybrana na stronie Parametry księgi głównej.</li>
-<li>Pole Użyj podatku dla grupy podatku nie jest zaznaczone na stronie Grupy podatku.</li>
+<li>Opcja Zastosuj zasady opodatkowania dla Stanów Zjednoczonych nie jest wybrana na stronie **Parametry księgi głównej**.</li>
+<li>Pole **Użyj podatku** dla grupy podatku nie jest zaznaczone na stronie **Grupy podatku**.</li>
 </ul></td>
 <td><ol>
-<li>Jeśli kwota podatku jest objęta zwrotem, pole Podatek naliczony na stronie Grupy księgowania.</li>
+<li>Jeśli kwota podatku jest objęta zwrotem, pole **Podatek naliczony** na stronie **Grupy księgowania**.</li>
 <li>Jeśli kwota podatku nie jest objęta zwrotem, cena rozszerzona lub zasada podziału księgowań dla opłaty.</li>
 </ol></td>
 <td><ol>
 <li>Jeśli wiersz faktury odwołuje się do wiersza zamówienia zakupu, należy użyć zasady podziału księgowań dla wiersza zamówienia zakupu.</li>
 <li>Użyj wymiarów finansowych z ceny rozszerzonej lub zasad podziału księgowań dla opłaty w wierszu faktury od dostawcy.</li>
 <li>Użyj wartości wymiaru finansowego z wiersza faktury od dostawcy.</li>
-<li>Użyj domyślnych wartości wymiarów finansowych z konta głównego na stronie Plan kont.</li>
+<li>Użyj domyślnych wartości wymiarów finansowych z konta głównego na stronie **Plan kont**.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Podatek, pod następującymi warunkami:
 <ul>
-<li>Opcja Zastosuj zasady opodatkowania dla Stanów Zjednoczonych nie jest wybrana na stronie Parametry księgi głównej.</li>
-<li>Pole Użyj podatku dla grupy podatku jest zaznaczone na stronie Grupy podatku.</li>
+<li>Opcja Zastosuj zasady opodatkowania dla Stanów Zjednoczonych nie jest wybrana na stronie **Parametry księgi głównej**.</li>
+<li>Pole **Użyj podatku** dla grupy podatku jest zaznaczone na stronie **Grupy podatku**.</li>
 </ul></td>
 <td><ol>
-<li>Jeśli kwota podatku jest objęta zwrotem, pole Podatek naliczony na stronie Grupy księgowania.</li>
-<li>Jeśli kwota podatku nie jest objęta zwrotem, pole Wydatki podatku nienaliczonego na stronie Grupy księgowania.</li>
+<li>Jeśli kwota podatku jest objęta zwrotem, pole **Podatek naliczony** na stronie **Grupy księgowania**.</li>
+<li>Jeśli kwota podatku nie jest objęta zwrotem, pole **Wydatki podatku nienaliczonego** na stronie **Grupy księgowania**.</li>
 </ol></td>
 <td><ol>
 <li>Jeśli wiersz faktury odwołuje się do wiersza zamówienia zakupu, należy użyć zasady podziału księgowań dla wiersza zamówienia zakupu.</li>
 <li>Użyj wymiarów finansowych z ceny rozszerzonej lub zasad podziału księgowań dla opłaty w wierszu faktury od dostawcy.</li>
 <li>Użyj wartości wymiaru finansowego z wiersza faktury od dostawcy.</li>
-<li>Użyj domyślnych wartości wymiarów finansowych z konta głównego na stronie Plan kont.</li>
+<li>Użyj domyślnych wartości wymiarów finansowych z konta głównego na stronie **Plan kont**.</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Opłata w nagłówku</td>
 <td><ol>
-<li>Jeśli wybrano Konto księgowe w polu debetu Typ w formularzu Kod opłat, pole debetu Konto na stronie Kod opłat.</li>
-<li>Jeśli wybrano Odbiorca/Dostawca w polu debetu Typ w formularzu Kod opłat, pole kredytu Konto na stronie Kod opłat.</li>
+<li>Jeśli wybrano **Konto księgowe** w polu **Typ debetu** w formularzu **Kod opłat**, pole **Konto debetu** na stronie **Kod opłat**.</li>
+<li>Jeśli wybrano **Odbiorca/Dostawca** w polu **Typ debetu** na stronie **Kod opłat**, pole **Konto kredytu** na stronie **Kod opłat**.</li>
 </ol></td>
 <td><ol>
 <li>Jeśli wiersz faktury odwołuje się do wiersza zamówienia zakupu, należy użyć zasady podziału księgowań dla wiersza zamówienia zakupu.</li>
 <li>Jeśli konto główne jest kontem alokacji, użyj domyślnej wartości głównego z definicji konta alokacji.</li>
 <li>Użyj domyślnych wartości szablonu wymiaru finansowego z nagłówka faktury od dostawcy.</li>
 <li>Użyj wartości wymiaru finansowego z wiersza faktury od dostawcy.</li>
-<li>Użyj domyślnych wartości wymiarów finansowych z konta głównego na stronie Plan kont.</li>
+<li>Użyj domyślnych wartości wymiarów finansowych z konta głównego na stronie **Plan kont**.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Rabat dla nagłówka</td>
 <td><ol>
-<li>Pole Konto główne dla typu księgowania Rabat na fakturze dostawcy na stronie Konta dla transakcji automatycznych.</li>
+<li>Pole **Konto główne** dla typu księgowania **Rabat na fakturze dostawcy** na stronie **Konta dla transakcji automatycznych**.</li>
 </ol></td>
 <td><ol>
 <li>Jeśli wiersz faktury odwołuje się do wiersza zamówienia zakupu, należy użyć zasady podziału księgowań dla wiersza zamówienia zakupu.</li>
 <li>Użyj wymiarów finansowych z zasad podziału księgowań dla rozszerzonej ceny w wierszu faktury od dostawcy.</li>
 <li>Użyj wartości wymiaru finansowego z wiersza faktury od dostawcy.</li>
-<li>Użyj domyślnych wartości wymiarów finansowych z konta głównego na stronie Plan kont.</li>
+<li>Użyj domyślnych wartości wymiarów finansowych z konta głównego na stronie **Plan kont**.</li>
 </ol></td>
 </tr>
 </tbody>

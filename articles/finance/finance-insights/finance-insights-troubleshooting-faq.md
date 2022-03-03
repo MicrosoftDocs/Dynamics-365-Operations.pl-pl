@@ -2,7 +2,7 @@
 title: Rozwiązywanie problemów z ustawieniami Finance insights
 description: W tym temacie wymieniono problemy, które mogą wystąpić, gdy są dostępne funkcje analizy Finance insights. Opisano w nim również sposób rozwiązania tych problemów.
 author: panolte
-ms.date: 01/29/2022
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: f77cddfdab22bef8af7f62d49723e330c4f13261
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: fc616e5fce6bbfeaa3b36ccc35f1b1cf407af4a6
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8064873"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109867"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Rozwiązywanie problemów z ustawieniami Finance insights
 
@@ -111,6 +111,14 @@ Więcej informacji o tym, jak dostosować kategorie **Na czas**, **Późno** i *
 
 ### <a name="resolution"></a>Rozwiązanie
 
-Szkolenie dotyczące **modelu prognozy przepływów pieniężnych** wymaga danych, które obejmują więcej niż rok i zawierają ponad 100 transakcji. Transakcje te muszą wpływać na konta płynności, które są uwzględnione w ustawieniach prognozy przepływów pieniężnych.
+Uczenie modelu **Prognoza przepływów pieniężnych** wymaga danych zawierających 100 lub więcej transakcji obejmujących ponad rok. Zaleca się, aby mieć co najmniej dwa lata z ponad 1000 transakcji.
 
-**Prognozy płatności od klientów** wymagają co najmniej 100 transakcji faktur i płatności od klientów w ciągu ostatnich sześciu do dziewięciu miesięcy, aby stworzyć prognozy.  
+Funkcja **prognozy płatności odbiorcy** wymaga ponad 100 transakcji w ciągu ostatnich sześciu do 9 miesięcy. Transakcje mogą obejmować faktury tekstowe, zamówienia sprzedaży i płatności odbiorcy. Te dane muszą się rozłożyć na ustawieniach **Na czas**, **Późno** i **Bardzo późno** zdefiniowane na stronie **Konfiguracja**.    
+
+Funkcja **propozycji budżetu** wymaga co najmniej trzech lat budżetów lub danych rzeczywistych. To rozwiązanie wykorzystuje w prognozach dane z trzech do dziesięciu lat. Więcej niż trzy lata przyniesie lepsze rezultaty. Same dane najlepiej działa w przypadku odchylenia wartości. Jeśli dane zawierają wszystkie stałe dane, takie jak wydatki na dzierżawę, szkolenie może się nie powieść, ponieważ brak odchylenia nie wymaga AI dla projektu kwot.
+
+## <a name="symptom-error-message-states-that-the-table-with-name-msdyn_paypredpredictionresultentities-does-not-exist-the-remote-server-returned-an-error-404-not-found"></a>Objaw: Komunikat o błędzie wskazuje, że tabela o nazwie „msdyn_paypredpredictionresultentities” nie istnieje. Serwer zdalny zwrócił błąd: (404) Nie znaleziono.
+
+### <a name="resolution"></a>Rozwiązanie
+
+Środowisko osiągnęła limit maksymalnej liczby tabel usług Data Lake. Aby uzyskać więcej informacji dotyczących limitu, zobacz sekcję **Włącz zmiany danych** w pobliżu godzin rzeczywistych w tym temacie, [Omówienie eksportu do usługi Azure Data Lake](../../fin-ops-core/dev-itpro/data-entities/Azure-Data-Lake-GA-version-overview.md).

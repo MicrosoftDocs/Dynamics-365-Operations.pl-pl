@@ -1,23 +1,27 @@
 ---
-# required metadata
 title: Składniki raportowania elektronicznego
 description: W tym temacie opisano składniki raportowania elektronicznego.
 author: nselin
 ms.date: 09/28/2021
-ms.topic: overview
-ms.prod: null
-ms.technology: null
+ms.prod: ''
+ms.technology: ''
 ms.search.form: ERWorkspace
-audience: 'Application User, Developer, IT Pro'
+audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.custom: 58941
 ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
+ms.topic: overview
 ms.author: nselin
-ms.search.validFrom: '2016-02-28'
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1a24aa52c805722c20045b6227ceac0103cfbe6b
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8324042"
 ---
-
 # <a name="electronic-reporting-components"></a>Składniki raportowania elektronicznego
 
 [!include [banner](../includes/banner.md)]

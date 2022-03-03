@@ -2,7 +2,7 @@
 title: Podatki w zamówieniach online są niepoprawnie obliczone
 description: Ten temat zawiera wskazówki dotyczące rozwiązywania problemów, które mogą pomóc w nieprawidłowym obliczniu podatków od zamówień online lub gdy grupa podatków w wierszu sprzedaży nie jest poprawnie ustawiona.
 author: Reza-Assadi
-ms.date: 03/11/2021
+ms.date: 02/16/2022
 ms.topic: Troubleshooting
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: e51ae789dad2c7b5118be2cf8a88f4e4090a8c74c8259b4eaaddad1a134af80a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0e4361b436cc78eccaff29dfa2927d342e26072d
+ms.sourcegitcommit: 4d52c67f52ad0add63cd905df61367b344389069
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715267"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8312038"
 ---
 # <a name="taxes-on-online-orders-are-incorrectly-calculated"></a>Podatki w zamówieniach online są niepoprawnie obliczone
 
@@ -32,7 +32,18 @@ Ten temat zawiera wskazówki dotyczące rozwiązywania problemów, które mogą 
 
 Po umieszczeniu zamówienia w sieci e-commerce podatki są niepoprawnie obliczone lub grupa podatków w wierszu sprzedaży jest niepoprawnie ustawiona.
 
-## <a name="resolution"></a>Rozdzielczość
+## <a name="resolution"></a>Rozwiązanie
+
+### <a name="configure-general-sales-tax-groups-in-commerce-headquarters"></a>Konfigurowanie ogólnych grup podatków w programie Commerce Headquarters
+
+Aby skonfigurować ogólne grupy podatków w Commerce headquarters, wykonaj następujące kroki.
+
+1. Wybierz kolejno opcje **Podatek \> Podatki pośrednie \> Podatek \> Grupy podatków**.
+1. W lewym okienku nawigacji wybierz grupę podatków do skonfigurowania.
+1. Na skróconej karcie **Podatek oparty na lokalizacji detalicznej** skonfiguruj podatki dla grupy podatków.
+
+> [!NOTE]
+> W przypadku wysyłki, która nie obejmuje podatku od sprzedaży, który jest określany na podstawie adresu klienta, adres dostawy wiersza i podatki od miejsca docelowego skonfigurowane dla grupy podatkowej określają grupę podatków. Aby uzyskać więcej informacji, zajrzyj do [Konfigurowanie podatków dla sklepów internetowych w oparciu o miejsce docelowe](/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination).
 
 ### <a name="configure-the-sales-tax-for-a-retail-store-in-commerce-headquarters"></a>Konfigurowanie podatku dla sklepu detalicznego w programie Commerce Headquarters
 
@@ -57,17 +68,6 @@ Aby skonfigurować podatek od sprzedaży dla adresu klienta w siedzibie Commerce
 
 > [!NOTE]
 > W przypadku wysyłki, która obejmuje podatek w adresie odbiorcy, adres dostawy wiersza określa grupę podatków dla wiersza. Jeśli odbiorca wysyła przesyłkę na istniejący adres, który ma już skonfigurowaną grupę podatków, używana będzie istniejąca grupa podatku. Domyślnie podczas tworzenia adresów nie ma grupy podatków.
-
-### <a name="configure-general-sales-tax-groups-in-commerce-headquarters"></a>Konfigurowanie ogólnych grup podatków w programie Commerce Headquarters
-
-Aby skonfigurować ogólne grupy podatków w Commerce headquarters, wykonaj następujące kroki.
-
-1. Wybierz kolejno opcje **Podatek \> Podatki pośrednie \> Podatek \> Grupy podatków**.
-1. W lewym okienku wybierz grupę podatków do skonfigurowania.
-1. Na skróconej karcie **Podatek oparty na lokalizacji detalicznej** skonfiguruj podatki dla grupy podatków.
-
-> [!NOTE]
-> W przypadku wysyłki, która nie obejmuje podatku w adresie odbiorcy, grupa podatków określa adres dostawy wiersza oraz podatki oparte na lokalizacji docelowej, które są skonfigurowane dla grupy podatków. Aby uzyskać więcej informacji, zajrzyj do [Konfigurowanie podatków dla sklepów internetowych w oparciu o miejsce docelowe](/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination).
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

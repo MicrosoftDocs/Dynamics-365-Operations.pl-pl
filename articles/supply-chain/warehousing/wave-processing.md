@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 4b7c01a21dcbe7543332439ee6fd371b426851f4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b89a13e72816bbf140986bd5450d037cf2510753
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579935"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103520"
 ---
 # <a name="wave-creation-and-processing"></a>Tworzenie i przetwarzanie grupy czynności
 
@@ -190,9 +190,9 @@ W razie potrzeby można anulować grupę czynności, która została przetworzon
 
 Strona **Szczegóły zadania wsadowego grupy czynności** zawiera informacje o sprawdzaniu zadań wsadowych i powiązanych z nimi zadań. Jest to szczególnie przydatne do rozwiązywania problemów z grupy czynności, która zakończyła się niepowodzeniem. W przypadku tej funkcji dostęp do szczegółów zadania wsadowego będzie zazwyczaj mieć wyłącznie administratorzy. Strona **Szczegółów zadania wsadowego grupy czynności** może być dostępna dla użytkowników niebędących administratorami i umożliwia wyświetlanie tylko do odczytu zadań wsadowych i powiązanych zadań.
 
-### <a name="enable-the-wave-batch-job-details-page"></a>Włączanie strony szczegółów zadania wsadowego grupy czynności
+### <a name="turn-the-wave-batch-job-details-page-on-or-off"></a>Włącz lub wyłącz stronę szczegółów zadania wsadowego Wave
 
-Jeśli w systemie nie ma jeszcze strony **Szczegółów zadania wsadowego grupy czynności**, przejdź do [funkcji zarządzania](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) i włącz funkcję *Szczegóły zadania wsadowego grupy czynności*.
+Od wersji 10.0.25 rozwiązania Supply Chain Management strona **Szczegóły zadania wsadowego Wave** jest domyślnie włączona. Administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Szczegóły zadania wsadowego Wave* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="use-the-wave-batch-job-details-page"></a>Korzystanie ze strony szczegółów zadania wsadowego grupy czynności
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 4c366d2f9091ee46ac3b1b6eff72e178932da18e
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.openlocfilehash: 7b487684980f60112d9af6bea02672f7e919c834
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592635"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103596"
 ---
 # <a name="confirm-and-transfer"></a>Potwierdź i przenieś
 
@@ -53,12 +53,9 @@ Można dzielić tylko ładunki spełniające wszystkie następujące kryteria:
 >
 > Należy korzystać z funkcji *Potwierdzania i przeniesienia* w sytuacjach, gdy ładunki są zwykle planowane i tworzone z wyprzedzeniem, a czasami występują wyjątki, w których ładunek nie mieści się na dostępny środek transportu (np. ciężarówkę).
 
-## <a name="turn-on-confirm-and-transfer"></a>Włącz funkcję Potwierdź i przenieś
+## <a name="turn-the-confirm-and-transfer-feature-on-or-off"></a>Włączanie lub wyłączanie funkcji potwierdzania i przenoszenia
 
-Aby móc używać funkcji *Potwierdzenia i przeniesienia*, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
-
-- **Moduł:** *Zarządzanie magazynem*
-- **Nazwa funkcji:** *Potwierdź i przenieś*
+Aby korzystać z funkcji opisanej w tym temacie, w systemie musi być włączona funkcja *Potwierdź i przenieś*. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.25, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Potwierdź i przenieś* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-confirm-and-transfer"></a>Konfiguracja funkcji Potwierdź i przenieś
 

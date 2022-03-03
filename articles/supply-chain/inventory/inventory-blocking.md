@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4b6169362c9e8cb3a9ace2f300dd9d80aa9cd085
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 606bc23f552b57d0f4e3fdad28d1144cdf43e5d5
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568886"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103545"
 ---
 # <a name="inventory-blocking"></a>Blokowanie zapasów
 
@@ -96,13 +96,11 @@ Jeśli opcja **Zarezerwuj zamówione produkty** są wyłączone, nie można zare
 
 Należy zwrócić uwagę na różnicę między stanem transakcji a wymiarami między tymi dwoma sprawami. Z tego powodu zaleca się włączenie opcji **Zarezerwuj zamówione produkty**.
 
-<!-- KFM: (Enable this section when the feature leaves private preview)
+### <a name="disable-expected-receipts-from-quality-orders-that-sample-blocked-inventory-feature"></a>Wyłącz oczekiwane wpływy z zamówień jakościowych, które próbują funkcję zablokowanych zapasów
 
-### Disable expected receipts from quality orders that sample blocked inventory feature
+Aby uprościć transakcje magazynowe w przypadku zamówień jakościowych, które próbują zapasy zablokowane w wyniku stanu zapasów, system udostępnia funkcję, która wyłącza oczekiwane wpływy z takich zamówień jakościowych. Ponieważ oczekiwane przyjęcie jest natychmiast zablokowane przez blokowanie stanu zapasów, zmiana ta nie zmniejsza dostępnych zapasów.
 
-To simplify the inventory transactions in the case of quality orders that sample inventory blocked as a consequence of inventory status, the system provides a feature that disables expected receipts from such quality orders. As the expected receipt is in any case immediately blocked by inventory status blocking, there is no reduction of on-hand inventory because of this change.
-
--->
+Domyślnie ta opcja jest wyłączona. Administratorzy mogą je włączać lub wyłączać, wyszukując funkcję *Wyłącz oczekiwane przychody ze zleceń kontroli jakości*, które przykładowe funkcje magazynu zablokowały w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

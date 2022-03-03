@@ -2,23 +2,23 @@
 title: Konfigurowanie sprawdzania poprawności uzgadniania faktur rozrachunków z dostawcami
 description: Ten temat zawiera informacje o tym, jak skonfigurować weryfikację uzgadniania rozrachunków z dostawcami.
 author: abruer
-ms.date: 06/26/2019
+ms.date: 02/14/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: VendParameters
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 017b0197563b9d7fd03f5fc927353be8d16586090f467cff792016431e0fafad
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 602666df4cf015791398939a3067a2cae85a12eb
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722870"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182562"
 ---
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a>Konfigurowanie sprawdzania poprawności uzgadniania faktur rozrachunków z dostawcami
 
@@ -54,7 +54,7 @@ Dostępne są cztery różne typy weryfikacji zgodności.
 12. W polu **Tolerancja sumy ceny zakupu** wprowadź kwotę w walucie rozliczeniowej. To pole jest dostępne wtedy, gdy w polu **Dopasuj ceny całkowite** wybrano opcję **Kwota** lub **Procent i kwota**.
 13. W polu **Wyświetl ikonę dopasowania ceny całkowitej** określ, czy ikona jest wyświetlana, gdy rozbieżność dla uzgadniania faktur przekracza limity tolerancji. Ikona może być wyświetlana, gdy dodatnia rozbieżność przekracza limity tolerancji lub gdy dodatnia lub ujemna rozbieżność przekracza limity tolerancji.
 Przykładowo, tolerancja wynosi 5 procent, a cena całkowita dla wiersza zamówienia zakupu to 10,00. W takim wypadku ikona uzgadniania cen zostanie wyświetlona, jeśli cena całkowita dla wiersza na fakturze przekracza 10,50. Wybranie opcji  **Jeśli większe lub mniejsze niż dopuszczalna rozbieżność** sprawi, że odpowiednia ikona zostanie również wyświetlona w przypadku kwoty wiersza faktury mniejszej niż 9,50.
-13. Ustaw Uzgadnianie opłat
+13. Ustaw **Uzgadnianie opłat**.
 14. Aby uzgadniać rzeczywiste opłaty z opłatami oczekiwanymi zgodnie z informacjami zawartymi w zamówieniu zakupu, zaznacz pole wyboru **Dopasuj opłaty**.
 
 ## <a name="set-up-unit-price-tolerance-percentages"></a>Konfigurowanie dozwolonych wartości procentowych tolerancji ceny jednostkowej
@@ -75,7 +75,7 @@ Domyślnie w systemie są dozwolone ujemne wartości rozbieżności cen. Jednak�
 
 ## <a name="set-up-matching-policy-override"></a>Skonfiguruj na zastępowanie zasad uzgadniania
 
-Przejdź do **Ustawień rozrachunków z dostawcami >Ustawienia > Ustawienia uzgadniania faktur > Zasady uzgadniania**, aby zdefiniować domyślny wpis dla pól zasad uzgadniania dla wierszy w formularzu zamówienia zakupu. To jest opcjonalna konfiguracja. Ten formularz służy do ustawiania dwukierunkowego lub trzykierunkowego dopasowywania dla kombinacji towarów, dostawców, towarów i dostawców. Te wpisy umożliwiają zdefiniowanie bardziej szczegółowych zasad niż zasady uzgadniania firmy zdefiniowane na stronie parametry **Rozrachunki z dostawcami**. Domyślne zasady dopasowywania wierszy firmy są stosowane do wszystkich towarów i dostawców, z wyjątkiem tych, dla których na tej stronie określono różne zasady dotyczące zgodności wierszy.
+Przejdź do **Ustawień rozrachunków z dostawcami >Ustawienia > Ustawienia uzgadniania faktur > Zasady uzgadniania**, aby zdefiniować domyślny wpis dla pól **zasad uzgadniania** dla wierszy na stronie **zamówienia zakupu**. To jest opcjonalna konfiguracja. Użyj tej strony, aby skonfigurować dopasowanie dwukierunkowe lub trzykierunkowe dla towarów, dostawców lub kombinacji pozycji i dostawców. Te wpisy umożliwiają zdefiniowanie bardziej szczegółowych zasad niż zasady uzgadniania firmy zdefiniowane na stronie parametry **Rozrachunki z dostawcami**. Domyślne zasady dopasowywania wierszy firmy są stosowane do wszystkich towarów i dostawców, z wyjątkiem tych, dla których na tej stronie określono różne zasady dotyczące zgodności wierszy.
 
 Na tej stronie wybierz **Poziom zasad dopasowywania**. Wybierz poziom w dopasowanej hierarchii zasad, aby ustawić zasady uzgadniania wierszy.
 

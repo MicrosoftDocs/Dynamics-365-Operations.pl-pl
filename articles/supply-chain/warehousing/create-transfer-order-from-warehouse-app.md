@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 4ceedd8b42383dc1334f472ba754ac3e18261b9d
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: cbaeb120032bf2239fd9a5bce39fd7936229b308
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777822"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102945"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Tworzenie zamówień przeniesienia z aplikacji magazynu
 
@@ -26,19 +26,14 @@ ms.locfileid: "7777822"
 
 Ta funkcja umożliwia pracownikom magazynu tworzenie i przetwarzanie zamówień przeniesienia bezpośrednio z poziomu aplikacji Warehouse Management. Pracownik rozpoczyna od wybrania magazynu docelowego i może skanować jeden lub więcej numerów identyfikacyjnych za pomocą aplikacji, aby dodać je do zamówienia przeniesienia. Gdy pracownik magazynu wybierze **Zakończ zamówienie**, zadanie wsadowe utworzy wymagane zamówienie przeniesienia i wiersze zamówienia na podstawie dostępnych zapasów zarejestrowanych dla tych numerów identyfikacyjnych.
 
-## <a name="enable-the-create-transfer-orders-from-the-warehouse-app-feature"></a><a name="enable-create-transfer-order-from-warehouse-app"></a>Włączanie tworzenia zamówień przeniesienia z funkcji aplikacji magazynowej
+## <a name="turn-this-feature-on-or-off"></a><a name="enable-create-transfer-order-from-warehouse-app"></a>Włączanie lub wyłączanie tej funkcji
 
 Aby móc używać tej funkcji, musi zostać włączona w systemie razem z warunkami wstępnymi. Administratorzy mogą skorzystać ze strony [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją w razie potrzeby.
 
-1. Najpierw włącz funkcję [zdarzeń aplikacji magazynu procesów](warehouse-app-events.md), która jest widoczna w obszarze [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) jako:
-    - **Moduł** - Zarządzanie magazynem
-    - **Nazwa funkcji** - Przetwarzanie zdarzeń aplikacji magazynu
-1. Następnie włącz funkcję *Utwórz zamówienia przeniesienia z poziomu aplikacji magazynowej*, która jest widoczna jako:
-    - **Moduł** - Zarządzanie magazynem
-    - **Nazwa funkcji** — tworzenie i przetwarzanie zamówień przeniesienia z aplikacji magazynowej
-1. Aby zautomatyzować przetwarzanie wydań wychodzących, należy również włączyć funkcję [Potwierdź wychodzące wysyłki z zadań wsadowych](confirm-outbound-shipments-from-batch-jobs.md). Od wersji 10.0.21 Supply Chain Management version ta funkcja jest domyślnie włączona. Administratorzy mogą skorzystać ze strony [Zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją lub wyłączyć w razie potrzeby. W tym miejscu funkcja jest wyświetlana jako:
-    - **Moduł** - Zarządzanie magazynem
-    - **Nazwa funkcji** — potwierdzanie wychodzących wysyłek z zadań wsadowych
+1. Włącz następujące dwie funkcje (w kolejności) w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). W rozwiązaniu Supply Chain Management w wersji 10.0.25 obie te funkcje są domyślnie włączone.
+    1. *Przetwarzanie zdarzeń aplikacji magazynowej*
+    1. *Tworzenie i przetwarzanie zamówień przeniesienia z aplikacji magazynowej*
+1. Aby zautomatyzować przetwarzanie wydań wychodzących, należy również włączyć funkcję [Potwierdź wychodzące wysyłki z zadań wsadowych](confirm-outbound-shipments-from-batch-jobs.md).
 
 ## <a name="set-up-a-mobile-device-menu-item-to-create-transfer-orders"></a><a name="setup-warehouse-app-menu"></a>Konfigurowanie elementu menu urządzenia przenośnego do tworzenia zamówień przeniesienia
 

@@ -2,25 +2,25 @@
 title: Daty wystawienia faktury przez sprzedawcę
 description: W tym temacie opisano daty, które są widoczne na fakturach dostawcy. Wyjaśnia również, jak skonfigurować system, aby automatycznie dostosowywał datę księgowania.
 author: sunfzam
-ms.date: 08/30/2021
+ms.date: 2/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: a066f828b47f297b8ad520b9eb0f4f311d49b111
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 064a125d448ebb3511db2d9b1f4228380805dc44
+ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647906"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8105471"
 ---
 # <a name="vendor-invoice-dates"></a>Daty wystawienia faktury przez sprzedawcę
 
@@ -50,6 +50,9 @@ Wykonaj poniższe kroki, aby umożliwić systemowi automatyczną korektę daty k
     - **Zawsze zmieniaj datę księgowania na datę systemową** — podczas księgowania system automatycznie zmienia datę księgowania na datę systemową.
     - **Zmień datę księgowania na datę systemową, gdy okres daty księgowania jest zamknięty lub wstrzymany** – System zmienia datę księgowania na datę systemową podczas księgowania, ale tylko wtedy, gdy okres odpowiadający dacie księgowania ma status **Zamknięty** lub **Zatrzymany**.
     - **Zmień datę księgowania na pierwszy dzień nowego okresu, gdy okres z datą księgowania jest zamknięty lub wstrzymany** – System zmienia datę księgowania na pierwszy dzień nowego okresu otwartego, ale tylko wtedy, gdy okres odpowiadający dacie księgowania ma status **Zamknięty** lub **Zatrzymany**.
+
+> [!NOTE]
+> Jeśli automatycznie skorygowana data księgowania znajduje się w nowym roku obrachunkowym, data księgowania faktury nie zostanie zaktualizowana. Użytkownik otrzyma błąd „Rok obrachunkowy został zmieniony. Sprawdź i wprowadź ponownie datę księgowania”. Aby można było zakturować, data księgowania faktury musi zostać zaktualizowana do daty nowego roku obrachunkowego.
 
 ## <a name="impact-of-posting-date-changes"></a>Wpływ zmiany daty księgowania
 

@@ -1,22 +1,26 @@
 ---
-# required metadata
 title: Omówienie obliczania podatku
 description: W tym temacie wyjaśniono ogólny zakres i funkcje obliczania podatku.
 author: wangchen
 ms.date: 11/17/2021
 ms.topic: overview
-ms.prod: null
-ms.technology: null
+ms.prod: ''
+ms.technology: ''
 ms.search.form: TaxIntegrationTaxServiceParameters
 audience: Application user
 ms.reviewer: kfend
-ms.search.scope: 'Core, Operations'
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: wangchen
-ms.search.validFrom: '2021-04-01'
+ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
+ms.openlocfilehash: 1dff1767b8e19215a2b27f87c45325e6abd1266e
+ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8105444"
 ---
-
 # <a name="tax-calculation-overview"></a>Omówienie obliczania podatku
 
 [!include [banner](../includes/banner.md)]
@@ -72,6 +76,7 @@ Zaleca się zaimportowanie i skonfigurowanie konfiguracji obliczania podatku z w
 | 10.0.22         | Konfiguracja obliczania podatku 40.48.215 |
 | 10.0.23         | Konfiguracja obliczania podatku 40.50.221 |
 | 10.0.24         | Konfiguracja obliczania podatku 40.50.225 |
+| 10.0.25         | Konfiguracja obliczania podatku 40.50.225 |
 
 
 ## <a name="data-flow"></a>Przepływ danych

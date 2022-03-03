@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: d1e648b5db9405e749fbd24502f65f344d0549b0f13b48e98c38d1476866db01
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8c92bf179006d668f8673e9abc3419a10e644184
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729993"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103270"
 ---
 # <a name="warehouse-app-event-processing"></a>Przetwarzanie zdarzenia aplikacji magazynu
 
@@ -26,12 +26,9 @@ ms.locfileid: "6729993"
 
 Zadania wsadowe działające w module Supply Chain Management mogą używać danych z kolejki do przetwarzania zdarzeń wydawanych przez aplikację Warehouse Management w celu reagowania w razie potrzeby na zdarzenia sygnalizujące. Ta funkcja umożliwia dodanie odpowiednich zdarzeń do kolejki w odpowiedzi na określone typy akcji podejmowanych przez pracowników korzystających z aplikacji. Przykładem jest użycie opcji *Utwórz i przetwórz zamówienia przeniesienia z funkcji aplikacji magazynu*, nagłówek i wiersze zamówienia przeniesienia są tworzone i aktualizowane w wewnętrznej odpowiedzi, gdy system uruchamia zadanie wsadowe **Przetwarzanie zdarzeń aplikacji magazynu**.
 
-## <a name="enable-the-process-warehouse-app-events-feature"></a>Włączanie funkcji Przetwarzanie zdarzeń aplikacji magazynu
+## <a name="turn-the-process-warehouse-app-events-feature-on-or-off"></a>Włącz lub wyłącz funkcję Zdarzenia aplikacji magazynu procesów
 
-Aby móc używać tej funkcji, musi zosyać włączona w systemie. Administratorzy mogą skorzystać ze strony [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją w razie potrzeby. Funkcja Przetwarzanie zdarzeń aplikacji magazynu jest wymieniona jako:
-
-- **Moduł** - Zarządzanie magazynem
-- **Nazwa funkcji** - Przetwarzanie zdarzeń aplikacji magazynu
+Od wersji 10.0.25 Supply Chain Management version ta funkcja jest domyślnie włączona. Administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Zdarzenia aplikacji magazynu procesów* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-a-batch-job-to-process-warehouse-app-events"></a>Umożliwia konfigurowanie zadania wsadowego w celu przetwarzania zdarzeń aplikacji magazynowych
 

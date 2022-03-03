@@ -2,7 +2,7 @@
 title: Obliczony podatek dla ogólnych wierszy arkuszy finansowych
 description: W tym temacie objaśniono, w jaki sposób podatki są obliczane dla różnych typów kont (dostawca, odbiorca, Księga i projekt) w wierszach arkusza finansowego.
 author: EricWangChen
-ms.date: 04/22/2021
+ms.date: 02/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 654917705400e0aecc7240e12f68d578827f6ad2
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 684b38a4940ff00978201334d1db0cef87b79b35
+ms.sourcegitcommit: 4d52c67f52ad0add63cd905df61367b344389069
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488318"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8311961"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Obliczony podatek dla ogólnych wierszy arkuszy finansowych
 [!include [banner](../includes/banner.md)]
@@ -77,19 +77,9 @@ Na poniższym diagramie przedstawiono regułę graficznie.
 
 ### <a name="account-type-is-customer"></a>Konto typu Odbiorca
 
-Jeśli załącznik ma wiersz arkusza, w którym typem konta jest **Odbiorca**, to ten sam kierunek podatku jest stosowany w odniesieniu do wszystkich wierszy arkusza w załączniku. W poniższych punktach przedstawiono możliwe kierunki podatku dla kont odbiorców.
+Jeśli załącznik ma wiersz arkusza, w którym typem konta jest **Odbiorca**, to ten sam kierunek podatku jest stosowany w odniesieniu do wszystkich wierszy arkusza w załączniku. 
 
-• Jeśli kod podatku jest używany jako wyjatek podatkowy, kierunek podatku jest używany jako zakup bez podatku.
-
-• Jeśli kod podatku jest używany jako VAT między firmami, kierunek podatku jest używany jako Podatek naliczony.
-
-• Jeśli kod podatku jest używany jako odwrotne obciążenie, kierunek podatku jest używany jako Podatek naliczony.
-
-W przeciwnym razie kierunek podatku jest podatek naliczony.
-
-Na poniższym diagramie przedstawiono regułę graficznie.
-
-![Możliwości podatkowe dla kont odbiorców.](media/Sales-Tax-Direction-Customer.jpg)
+Jeśli kod podatku jest zwolniony z podatku, kierunek podatku to Sprzedaż bez podatku. W przeciwnym razie kierunek podatku jest podatek naliczony.
 
 ### <a name="account-type-is-ledger"></a>Konto typu Księga
 

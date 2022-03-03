@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: a709528b04e82c32f644073f79513b7ef11bb6bf
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 7e3a86e2aa0e7182f7f9e853b9e8667e677a8ad6
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920730"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102720"
 ---
 # <a name="firm-planned-orders"></a>Zaakceptuj zamówienia planowane
 
@@ -35,17 +35,15 @@ W tym temacie opisano szczegółowo poszczególne metody.
 
 Większość funkcji zamówienia planowanego jest dostępna we wszystkich standardowych instalacjach rozwiązania Microsoft Dynamics 365 Supply Chain Management, które korzystają z optymalizacji planowania. Jednak kilka funkcji opisanych w tym temacie musi zostać włączonych w module Zarządzanie funkcjami, aby można ich było używać.
 
-### <a name="enable-parallelized-firming-of-planned-orders"></a>Włączanie równoległego ustalania planowanych zamówień
+### <a name="turn-parallelized-firming-of-planned-orders-on-or-off"></a>Włącz lub wyłącz równoległe potwierdzanie planowanych zamówień
 
-Równoległe ustalanie pomaga przyspieszyć proces ustalania przez przeprowadzanie go równolegle w wielu wątkach. Takie podejście może być przydatne, jeśli jest ustalanych wiele zamówień planowanych.
-
-Aby udostępnić tę funkcję w systemie, przejdź do modułu [Zarządzanie funkcjami](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) i włącz funkcję *Równoległe ustalanie zamówień planowanych*. (Od wersji 10.0.21 Supply Chain Management version ta funkcja jest domyślnie włączona)
+Równoległe ustalanie pomaga przyspieszyć proces ustalania przez przeprowadzanie go równolegle w wielu wątkach. Takie podejście może być przydatne, jeśli jest ustalanych wiele zamówień planowanych. Aby można było korzystać z tej funkcji, w systemie musi być włączona funkcja *Równoległe oznaczanie zamówień planowanych*. Od wersji 10.0.21 Supply Chain Management version ta funkcja jest domyślnie włączona. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli korzystasz z wersji starszej niż 10.0.25, możesz włączyć lub wyłączyć tę funkcję, przechodząc do [Zarządzanie funkcjami](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) i wyszukując funkcję *Równoległe usztywnianie planowanych zleceń*.
 
 ### <a name="enable-planned-order-firming-with-filtering"></a>Włączanie ustalania zamówień z filtrowaniem
 
 Ustalanie zamówień planowanych z filtrowaniem umożliwia określenie logicznych kryteriów wybierania zamówień planowanych do ustalenia. Można także wyświetlić podgląd wybranych zamówień planowanych, uruchomić proces w tle i/lub zaplanować je jako zadanie wsadowe.
 
-Aby udostępnić tę funkcję w systemie, przejdź do modułu [Zarządzanie funkcjami](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) i włącz funkcję *Ustalanie zamówień planowanych z filtrowaniem*.
+Od wersji 10.0.25 Supply Chain Management version ta funkcja jest domyślnie włączona. Administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując *Planowane ustalanie zamówień z funkcją filtrowania* w obszarze roboczym [Zarządzanie funkcjami](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="enable-auto-firming-for-planning-optimization"></a>Włączanie automatycznego ustalania dla optymalizacji planowania
 

@@ -2,24 +2,24 @@
 title: Obszar roboczy Automatyzacja faktur od dostawców
 description: W tym temacie wyjaśniono, jak skonfigurować obszar roboczy, który jest powiązany z fakturami od dostawcy, oraz wyświetlić informacje dostępne w Microsoft Power BI.
 author: abruer
-ms.date: 09/28/2020
+ms.date: 02/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.assetid: ''
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2020-09-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: dde77a19fae9af8f40af8b14259a29db80f4a80cf8be75233a463d6fec2dac46
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f28cc5f63df2f0d8a4c8cae407f7166aa4fa03db
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722726"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182586"
 ---
 # <a name="vendor-invoice-automation-workspace"></a>Obszar roboczy Automatyzacja faktur od dostawców
 
@@ -60,14 +60,14 @@ Po włączeniu funkcji **Automatyzacja faktur od dostawców** pole **Firma** jes
 
 Tabliczki w sekcji **Podsumowanie oczekujących faktur** w widoku **Moja praca** zawierają przegląd informacji o stanie faktur od dostawców. Można wyświetlić arkusze, które nie zostały jeszcze zaksięgowane i faktury, które zostały wstrzymane. Ponadto istnieją cztery tabliczki skojarzone z funkcją automatyzacji faktur od dostawcy:
 
-- Wymagane jest dopasowanie ręcznego dokumentu dostawy
-- Nie powiodła się weryfikacja zgodności
-- Faktury nie przesłane do przepływu pracy
-- Niezaimportowane faktury
+- **Wymagane jest dopasowanie ręcznego dokumentu dostawy**
+- **Nie powiodła się weryfikacja zgodności**
+- **Faktury nie przesłane do przepływu pracy**
+- **Niezaimportowane faktury**
 
-(Te cztery kafelki wymagają włączenia funkcji automatyzacji faktur od dostawcy w module Zarządzanie funkcjami.)
+(Te cztery kafelki wymagają włączenia funkcji automatyzacji faktur od dostawcy w module **Zarządzanie funkcjami**.)
 
-Aby można było skorzystać z kafelka **Odzyskaj faktury od dostawcy**, funkcja musi być włączona w parametrach modułu rozrachunków z dostawcami. Przejdź do **Rozrachunki z dostawcami \> Parametry modułu rozrachunków z dostawcami**, a następnie na karcie **Faktura** określ opcję **Zezwalaj na zwrot faktury od dostawcy** na **Tak**.
+Aby można było skorzystać z kafelka **Odzyskaj faktury od dostawcy**, funkcja musi być włączona w **parametrach modułu rozrachunków z dostawcami**. Przejdź do **Rozrachunki z dostawcami \> Parametry modułu rozrachunków z dostawcami**, a następnie na karcie **Faktura** określ opcję **Zezwalaj na zwrot faktury od dostawcy** na **Tak**.
 
 Gdy funkcja jest włączona, trzy kafelki zostaną zgrupowane razem w obszarze roboczym w sekcji nazywanej **Arkuszami**. Kafelki to **Arkusze**, **Arkusze - przypisane do mnie** oraz **Pula faktur**. 
 

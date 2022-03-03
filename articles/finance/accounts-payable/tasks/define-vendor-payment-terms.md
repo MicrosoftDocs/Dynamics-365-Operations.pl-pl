@@ -2,23 +2,23 @@
 title: Definiowanie warunków płatności dla dostawcy
 description: W tym temacie opisano sposób konfigurowania warunków płatności dla faktur od dostawcy.
 author: abruer
-ms.date: 07/09/2019
+ms.date: 02/11/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: PaymTerm, CashDisc
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e70a68ab5e14e8dadfd8d61f696f5971c8e60262d0fd55c5de1589e572ff8085
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2199c12e92d631d3eb058637c48b53335d779f2d
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722990"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109823"
 ---
 # <a name="define-vendor-payment-terms"></a>Definiowanie warunków płatności dla dostawcy
 
@@ -27,10 +27,10 @@ ms.locfileid: "6722990"
 W tym temacie opisano sposób konfigurowania warunków płatności dla faktur od dostawcy. W zadaniu wykorzystano firmę demonstracyjną USMF.
 
 1. Wybierz kolejno **okienko nawigacji > Moduły > Rozrachunki z dostawcami > Ustawienia płatności > Warunki płatności**.
-2. Wybierz pozycję **Nowy**. Strona Warunki płatności służy do definiowania sposobu obliczania terminu płatności. Nie jest używana do definiowania sposobu obliczania daty rabatu gotówkowego.  
+2. Wybierz pozycję **Nowy**. Strona **Warunki płatności** służy do definiowania sposobu obliczania terminu płatności. Nie jest używana do definiowania sposobu obliczania daty rabatu gotówkowego.  
 3. W polu **Warunki płatności** wpisz wartość.
 4. W polu **Opis** wpisz wartość.
-5. W polu **Dni** wpisz liczbę. Liczba wprowadzona w tym polu zostanie użyta w celu dodania czasu do terminu płatności lub do końca okresu zidentyfikowanego w metodzie płatności. Na przykład wybranie opcji **Netto** spowoduje dodanie czasu do terminu płatności. Jeśli zaznaczysz opcję **Bieżący miesiąc**, w celu obliczenia terminu płatności czas zostanie dodany do ostatniego dnia bieżącego miesiąca.  
+5. W polu **Dni** wpisz liczbę. Liczba wprowadzona w tym polu zostanie użyta w celu dodania czasu do terminu płatności lub do końca okresu zidentyfikowanego w **metodzie płatności**. Na przykład wybranie opcji **Netto** spowoduje dodanie czasu do terminu płatności. Jeśli zaznaczysz opcję **Bieżący miesiąc**, w celu obliczenia terminu płatności czas zostanie dodany do ostatniego dnia bieżącego miesiąca.  
 6. Wybierz opcję **Zapisz**.
 7. Zamknij stronę.
 8. Wybierz kolejno opcje **Rozrachunki z dostawcami > Ustawienia płatności > Rabaty gotówkowe**.
@@ -39,7 +39,7 @@ W tym temacie opisano sposób konfigurowania warunków płatności dla faktur od
 11. W polu **Opis** wpisz wartość.
 12. Jeśli dostawca oferuje rabat warstwowy, zaznacz następny rabat gotówkowy, który będzie stosowany po upływie terminu bieżącego rabatu.
 13. Zamknij stronę.
-14. W polu **Dni** wpisz liczbę. Ilość wprowadzona w polu **Dni** będzie używana do obliczania daty rabatu gotówkowego w oparciu o opcję wybraną w polu **Netto/Bieżące**. Jeśli wybrano opcję **Netto**, w celu wyznaczenia daty rabatu gotówkowego ilość zostanie dodana do daty faktury. Jeśli wybrano opcję **Bieżący miesiąc**, w celu wyznaczenia daty rabatu gotówkowego ilość zostanie dodana na końcu bieżącego miesiąca.  
+14. W polu **Dni** wpisz liczbę. Ilość wprowadzona w polu **Dni** będzie używana do obliczania **daty rabatu gotówkowego** w oparciu o opcję wybraną w polu **Netto/Bieżące**. Jeśli wybrano opcję **Netto**, w celu wyznaczenia daty rabatu gotówkowego ilość zostanie dodana do daty faktury. Jeśli wybrano opcję **Bieżący miesiąc**, w celu wyznaczenia daty rabatu gotówkowego ilość zostanie dodana na końcu bieżącego miesiąca.  
 15. W polu **Rabat** wprowadź wartość procentową rabatu gotówkowego. 
 16. Wprowadź konto główne, do którego zostanie zaksięgowany rabat gotówkowy dla faktur odbiorcy, a następnie wprowadź konto główne, do którego zostanie zaksięgowany rabat gotówkowy dla faktur od dostawcy. Jeśli w polu **Konta przeciwstawne rabatów** jest ustawiona opcja **Użyj konta głównego dla rabaty dostawcy**, będzie używane konto główne. Jeśli wybierzesz opcję **Konta w wierszach faktury**, rabat gotówkowy będzie księgowany na kontach środków trwałych/wydatków z wierszy faktury.  
 17. Wybierz opcję **Zapisz**.

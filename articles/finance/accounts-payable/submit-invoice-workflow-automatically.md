@@ -2,24 +2,24 @@
 title: Przesyłanie faktur do systemu przepływu pracy i dopasowywanie wierszy dokumentu przyjęcia produktów
 description: W tym temacie objaśniono proces przesyłania faktur od dostawców do systemu przepływu pracy i automatycznego dopasowywania zaksięgowanych wierszy dokumentu przyjęcia produktów do faktur od dostawcy.
 author: abruer
-ms.date: 09/08/2020
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-09-08
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: fd7ec9f4f30c444fd6442c9a2f1333fcaba4246520de3997f3bb9064a8ee16e1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0962ea2bfa28deb3e86620c364feffd209cfc38e
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736980"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109950"
 ---
 # <a name="submit-invoices-to-the-workflow-system-and-match-product-receipt-lines"></a>Przesyłanie faktur do systemu przepływu pracy i dopasowywanie wierszy dokumentu przyjęcia produktów
 
@@ -29,7 +29,7 @@ W tym temacie objaśniono proces przesyłania faktur od dostawców do systemu pr
 
 ## <a name="submitting-imported-vendor-invoices-to-the-workflow-system-and-matching-posted-product-receipt-lines-to-pending-vendor-invoice-lines"></a>Przesyłanie zaimportowanych faktur od dostawców do systemu przepływu pracy i dopasowywanie zaksięgowanych wierszy przyjęcia produktów do wierszy oczekujących faktur od dostawcy
 
-W ramach bezobsługowego procesu fakturowania rozrachunków z odbiorcami system może automatycznie przesłać zaimportowaną fakturę do systemu przepływu pracy. Proces przesyłania zaimportowanych faktur do systemu przepływu pracy można skonfigurować na karcie **Automatyzacja faktur od dostawcy** strony **Parametry rozrachunków z dostawcami** (**Rozrachunki z dostawcami \> Konfiguracja \> Parametry rozrachunków z dostawcami**). Proces przesyłania do przepływu pracy będzie uruchamiany w tle z częstotliwością określoną przez użytkownika (co godzinę lub codziennie).
+W ramach bezdotykowego procesu fakturowania rozrachunków z dostawcami, zaimportowana faktura może zostać automatycznie przesłana do systemu workflow. Proces przesyłania zaimportowanych faktur do systemu przepływu pracy można skonfigurować na karcie **Automatyzacja faktur od dostawcy** strony **Parametry rozrachunków z dostawcami** (**Rozrachunki z dostawcami \> Konfiguracja \> Parametry rozrachunków z dostawcami**). Proces przesyłania do przepływu pracy będzie uruchamiany w tle z częstotliwością określoną przez użytkownika (co godzinę lub codziennie).
 
 Podczas automatycznego przesyłania faktur do systemu przepływu pracy należy rozpocząć od zaimportowanej faktury. Aby zapewnić możliwość przetwarzania faktury od początku do końca bez ręcznej interwencji, należy dołączyć do konfiguracji przepływu pracy zadanie automatycznego księgowania. Faktury związane z zamówieniami zakupu (punktami sprzedaży) i fakturami zawierającymi kategorię zaopatrzenia spoza zamówienia na zamówienie mogą być automatycznie przesyłane do systemu przepływu pracy. Ręcznie wprowadzone faktury muszą zostać przesłane ręcznie do systemu przepływu pracy.
 
@@ -37,7 +37,7 @@ Wartość **Przesłane przez** w przepływie pracy to identyfikator użytkownika
 
 ## <a name="matching-posted-product-receipts-to-invoice-lines-that-have-a-three-way-matching-policy"></a>Dopasowywanie zaksięgowanych dokumentów przyjęcia produktów do wierszy faktury, które mają trzyelementowe zasady uzgadniania
 
-System może automatycznie dopasowywać zaksięgowane dokumenty przyjęcia produktów do wierszy faktury jako część bezobsługowego procesu fakturowania rozrachunków z odbiorcami. Dla tego zadania muszą być zdefiniowane trzyelementowe zasady uzgadniania. Ta funkcja jest dostępna, jeśli została włączona funkcja **Automatyzacja faktur od dostawcy** na stronie **Zarządzanie funkcjami**.
+W ramach bezdotykowego procesu fakturowania rozrachunków z dostawcami, zaksięgowane paragony produktów mogą być automatycznie dopasowywane do wierszy faktury. Dla tego zadania muszą być zdefiniowane trzyelementowe zasady uzgadniania. Ta funkcja jest dostępna, jeśli została włączona funkcja **Automatyzacja faktur od dostawcy** na stronie **Zarządzanie funkcjami**.
 
 Proces dopasowania będzie działał, dopóki dopasowana ilość z dokumentu przyjęcia produktów nie będzie równa ilości fakturowanej. Jeśli jednak istnieje wiele dokumentów przyjęcia produktów dla jednego wiersza faktury, musisz kilka razy uruchomić ten proces, aby uzyskać pełne dopasowanie ilości. Można określić maksymalną liczbę prób dopasowania przez systemu przyjęcia produktów do wiersza faktury przed poinformowaniem o niepowodzeniu procesu. Proces będzie uruchamiany w tle, co godzinę lub codziennie. 
 

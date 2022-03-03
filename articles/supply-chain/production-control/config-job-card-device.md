@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 0382e34664f20389c43e8dec4437f0078fa1f60a
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 4c7a9585d96a1e08790e0f3c972e704971f27dc0
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777747"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103445"
 ---
 # <a name="configure-job-card-for-devices"></a>Konfiguruj kartę zadań dla urządzeń
 
@@ -34,21 +34,19 @@ Niektóre z ustawień opisanych w tym temacie muszą być włączone w systemie,
 
 Aby ta funkcja była dostępna, włącz następujące funkcje w module [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (w kolejności):
 
-1. Numer identyfikacyjny do zgłoszenia jako gotowy dodany do urządzenia karty zadań (na podstawie wersji 10.0.21 Supply Chain Management, ta funkcja jest domyślnie włączona)
-1. Włącz automatyczną generację numeru identyfikacyjnego podczas zgłaszania wyrobów gotowych w urządzeniu karty zadań
+1. *Numer identyfikacyjny do zgłoszenia wyrobów gotowych został dodany do urządzenia karty zadań*<br>(Od wersji 10.0.21 Supply Chain Management version ta funkcja jest domyślnie włączona. Od wersji 10.0.25 Supply Chain Management version ta funkcja jest wymagana).
+1. *Włącz automatyczną generację numeru identyfikacyjnego podczas zgłaszania wyrobów gotowych w urządzeniu karty zadań*<br>(Od wersji 10.0.25 Supply Chain Management version ta funkcja jest wymagana).
 
 ### <a name="print-label"></a>Drukuj etykietę
 
 Aby ta funkcja była dostępna, włącz następujące funkcje w module [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (w kolejności):
 
-1. Numer identyfikacyjny do zgłoszenia jako gotowy dodany do urządzenia karty zadań (na podstawie wersji 10.0.21 Supply Chain Management, ta funkcja jest domyślnie włączona)
-1. Drukowanie etykiety z menu Urządzenie karty zadań
+1. *Numer identyfikacyjny do zgłoszenia wyrobów gotowych został dodany do urządzenia karty zadań*<br>(Od wersji 10.0.21 Supply Chain Management version ta funkcja jest domyślnie włączona. Od wersji 10.0.25 Supply Chain Management version ta funkcja jest wymagana).
+1. *Drukowanie etykiety z menu Urządzenie karty zadań*<br>(Od wersji 10.0.25 Supply Chain Management version ta funkcja jest wymagana).
 
 ### <a name="allow-locking-of-touch-screen"></a>Zezwalaj na blokowanie ekranu dotykowego
 
-Od wersji 10.0.21 Supply Chain Management version ta funkcja jest domyślnie włączona. Jeśli chcesz z niego skorzystać, upewnij się, że poniższa funkcja jest włączona w [Zarządzaniu funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
-
-- Funkcja umożliwiająca blokowanie urządzenie karty zadań i terminalu karty zadań w celu ich wyczyszczenia
+Od wersji 10.0.21 Supply Chain Management version ta funkcja jest domyślnie włączona. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli korzystasz z wersji starszej niż 10.0.25, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując *Funkcja blokowania urządzenia kart zadań i terminala kart zadań, aby można było je oczyścić* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="manage-your-device-configurations"></a>Zarządzaj konfiguracjami urządzeń
 
