@@ -1,12 +1,10 @@
 ---
 title: Pakiet zawartości Analiza rachunku kosztów dostępny w usłudze Power BI
-description: W tym temacie opisano, co się znajduje w pakiecie zawartości Analiza rachunku kosztów usługi Power BI. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
+description: W tym temacie opisano, co się znajduje w pakiecie zawartości Analiza rachunku kosztów usługi Power BI.
 author: AndersGirke
-manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -16,14 +14,14 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c15995edb5d65a00207fdb425447779d3a17d993
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d3b8832e5a5612fd0311811f43454689d5b274c36404b4fb92b710411d45e573
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683878"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6747376"
 ---
-# <a name="cost-accounting-analysis-power-bi-content"></a>Pakiet zawartości Analiza rachunku kosztów dostępny w usłudze Power BI
+# <a name="cost-accounting-analysis-power-bi-content"></a>Analiza rachunku kosztów dostępny w usłudze Power BI
 
 [!include [banner](../includes/banner.md)]
 
@@ -42,7 +40,7 @@ Aby dowiedzieć się więcej o module Rachunek kosztów, zobacz [Rachunek koszt�
 Poprzez zdefiniowanie zabezpieczeń na poziomie dostępu w module Rachunek kosztów i połączenie ich z zabezpieczeniami na poziomie wierszy w usłudze Power BI można wszystkim właścicielom obiektów kosztów udzielić dostępu do pakietu zawartości **Analiza rachunku kosztów** usługi Power BI. Wszystkie dane w wizualizacjach będą następnie filtrowane według poziomu dostępu kontrolowanego w module Rachunek kosztów. Aby dowiedzieć się więcej na temat zabezpieczeń na poziomie dostępu i zabezpieczeń na poziomie wierszy, zobacz [Konfigurowanie zabezpieczeń pakietu zawartości usług Power BI Analiza rachunku kosztów](setup-security-cost-accounting-content-pack.md).
 
 ## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
-Pakiet zawartości **Analiza rachunku kosztów** usługi Power BI znajduje się w bibliotece zasobów wspólnych w usłudze Microsoft Dynamics Lifecycle Services (LCS). Aby dowiedzieć się więcej o pobieraniu pakietu zawartości i jego implementowaniu w swojej organizacji, zobacz [Pakiety zawartości dla usługi Power BI w usłudze LCS od Microsoft i partnerów](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
+Pakiet zawartości **Analiza rachunku kosztów** usługi Power BI znajduje się w bibliotece zasobów wspólnych w usłudze Microsoft Dynamics Lifecycle Services (LCS). Aby dowiedzieć się więcej o pobieraniu pakietu zawartości i jego implementowaniu w swojej organizacji, zobacz [Pakiety zawartości dla usługi Power BI w usłudze LCS od Microsoft i partnerów](/archive/blogs/dynamicsaxbi/power-bi-content-from-microsoft-and-your-partners).
 
 Uważaj, aby pobrać pakiet zawartości **Analiza rachunku kosztów** mający zastosowanie do używanej wersji systemu Microsoft Dynamics 365.
 
@@ -123,3 +121,6 @@ Następujące najważniejsze wymiary są używane jako filtry do dzielenia zagre
 | Kalendarze obrachunkowe                   | Kalendarz, Opis kalendarza                                                                                       |
 | Lata obrachunkowe                       | Rok kalendarzowy                                                                                                        |
 | Okresy obrachunkowe                     | Okres roku kalendarzowego                                                                                                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

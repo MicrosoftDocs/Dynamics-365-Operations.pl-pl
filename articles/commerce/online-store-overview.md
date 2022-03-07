@@ -2,16 +2,13 @@
 title: Omówienie witryny handlu elektronicznego
 description: Ten temat stanowi omówienie pomocy technicznej dotyczącej witryn handlu elektronicznego w usłudze Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-manager: AnnBe
 ms.date: 11/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a5ced6311f32405e544e66d18c912ce40deb177f
-ms.sourcegitcommit: 33a746e41cd6f7b6b056b19b550a84f6a1b905d4
+ms.openlocfilehash: 55c40029082e49c1fbc9d9d5e9361218e5ddc5a0
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "4512924"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022479"
 ---
 # <a name="e-commerce-site-overview"></a>Omówienie witryny handlu elektronicznego
 
@@ -40,11 +37,11 @@ W aplikacji Dynamics 365 Commerce używasz kanału sklepu internetowego w celu u
 
 Aby rozpocząć pracę w aplikacji Dynamics 365 Commerce, wystarczy skonfigurować tylko jeden kanał sklepu internetowego. Jednak pojedyncza witryna handlu elektronicznego może zapewnić środowisko online dla wielu sklepów internetowych. Na przykład jeśli wiele sklepów internetowych skonfigurowano do obsługi różnych regionów geograficznych, pojedynczy zestaw stron handlu elektronicznego może służyć do zapewnienia unikatowych środowisk definiowanych przez poszczególne sklepy. Aby uzyskać więcej informacji dotyczących sposobu konfigurowania witryny do obsługi wielu sklepów internetowych, zobacz [Kojarzenie witryny online z kanałem](associate-site-online-store.md).
 
-Po skonfigurowaniu sklepu internetowego można go skojarzyć z witryną Dynamics 365 Commerce, która będzie służyć jako witryna sklepowa. Aby uzyskać więcej informacji o sklepach internetowych i sposobie ich konfigurowania, zobacz [Konfigurowanie sklepów internetowych](https://docs.microsoft.com/dynamics365/unified-operations/retail/online-stores).
+Po skonfigurowaniu sklepu internetowego można go skojarzyć z witryną Dynamics 365 Commerce, która będzie służyć jako witryna sklepowa. Aby uzyskać więcej informacji o sklepach internetowych i sposobie ich konfigurowania, zobacz [Konfigurowanie sklepów internetowych](/dynamics365/unified-operations/retail/online-stores).
 
 ## <a name="deploy-a-new-e-commerce-tenant"></a>Wdrażanie nowej dzierżawy handlu elektronicznego
 
-Podczas inicjowania witryny handlu elektronicznego wyświetlany jest monit o podanie nazwy domeny. Więcej informacji o domenach w Commerce znajduje się w artykułach [Konfigurowanie nazwy domeny](configure-your-domain-name.md) i [Domeny w Dynamics 365 Commerce](domains-commerce.md). Aby wdrożyć nową dzierżawę handlu elektronicznego przez używanie [Microsoft Dynamics Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide), wykonaj kroki w artykule [Wdrażanie nowej dzierżawy handlu elektronicznego](deploy-ecommerce-site.md). Po skonfigurowaniu dzierżawy handlu elektronicznego w LCS zostanie podanych link do konstruktora witryn Commerce. Możesz użyć konstruktora witryn Commerce do inicjalizacji i konfigurowania witryn handlu elektronicznego.
+Podczas inicjowania witryny handlu elektronicznego wyświetlany jest monit o podanie nazwy domeny. Więcej informacji o domenach w Commerce znajduje się w artykułach [Konfigurowanie nazwy domeny](configure-your-domain-name.md) i [Domeny w Dynamics 365 Commerce](domains-commerce.md). Aby wdrożyć nową dzierżawę handlu elektronicznego przez używanie [Microsoft Dynamics Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide), wykonaj kroki w artykule [Wdrażanie nowej dzierżawy handlu elektronicznego](deploy-ecommerce-site.md). Po skonfigurowaniu dzierżawy handlu elektronicznego w LCS zostanie podanych link do konstruktora witryn Commerce. Możesz użyć konstruktora witryn Commerce do inicjalizacji i konfigurowania witryn handlu elektronicznego.
 
 ## <a name="initialize-your-e-commerce-site"></a>Inicjalizacja witryny handlu elektronicznego
 
@@ -121,3 +118,6 @@ Aby uzyskać więcej informacji dotyczących zarządzania zawartością witryny,
 [Włączanie wykrywania sklepu na podstawie lokalizacji](enable-store-detection.md)
 
 [Konfigurowanie stron niestandardowych do logowań użytkowników](custom-pages-user-logins.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

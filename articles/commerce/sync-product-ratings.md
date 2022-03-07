@@ -2,15 +2,12 @@
 title: Synchronizacja ocen produktów w rozwiązaniu Dynamics 365 Commerce
 description: W tym temacie opisano sposób synchronizowania ocen produktów w Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: dec87b548f3a218e1f833b752305f373e893b14c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3ceac78e6dbc6f83ed4968f76672367e79bdd968
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415008"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7967957"
 ---
 # <a name="sync-product-ratings-in-dynamics-365-commerce"></a>Synchronizacja ocen produktów w rozwiązaniu Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano sposób synchronizowania ocen produktów w Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 W celu użycia ocen produktów w wielu kanałach, na przykład w punkt sprzedaży (POS) i w biurach obsługi, oceny produktów z usługi ocen i recenzji muszą zostać zaimportowane do bazy danych kanału Commerce. Po udostępnieniu ocen produktów w wielu kanałach mogą one pomóc klientom w pośredniej interakcji ze sprzedawcą.
 
@@ -62,7 +57,7 @@ Aby sprawdzić, czy istnieje podzadania **RetailProductRating**, wykonaj następ
 
 Na poniższej ilustracji pokazano przykład strony szczegóły podzadania w Commerce.
 
-![Szczegóły podzadania RetailProductRating](media/rnr-hq-ratings-sub-job.png)
+![Szczegóły podzadania RetailProductRating.](media/rnr-hq-ratings-sub-job.png)
 
 > [!NOTE]
 > Jeśli nie znajdziesz podzadania **RetailProductRating**, możesz już wcześniej uruchomić zadanie **Synchronizuj oceny produktów** i zadanie **1040 CDX** przed zainicjowaniem harmonogramu Commerce. W takim przypadku należy wykonać następujące kroki w celu uruchomienia zadania **Pełnej synchronizacji danych**.
@@ -86,7 +81,7 @@ Aby zaimportować oceny produktów do Commerce z usługi ocen i recenzji, należ
 
 Na poniższej ilustracji pokazano przykład strony konfiguracji zadania wsadowego w Commerce.
 
-![Konfiguracja zadania wsadowego Synchronizuj oceny produktów](media/rnr-hq-batchjob-recurrence.png)
+![Konfiguracja zadania wsadowego Synchronizuj oceny produktów.](media/rnr-hq-batchjob-recurrence.png)
 
 ## <a name="verify-that-the-batch-job-for-product-rating-synchronization-was-successful"></a>Sprawdź, czy zadanie wsadowe synchronizacji ocen produktu zakończyło się pomyślnie
 
@@ -98,7 +93,7 @@ Aby sprawdzić, czy zadanie wsadowe **Synchronizacja ocen produktów w rozwiąza
 
 Na poniższej ilustracji przedstawiono przykładowe szczegóły zadania wsadowego w Commerce, gdy zaplanowano uruchomienie zadania wsadowego w odstępach dwugodzinnych.
 
-![Szczegóły zadania wsadowego Synchronizuj oceny produktów](media/rnr-hq-batchjob-status-checking.png)
+![Szczegóły zadania wsadowego Synchronizuj oceny produktów.](media/rnr-hq-batchjob-status-checking.png)
 
 ## <a name="make-product-ratings-available-at-the-pos"></a>Umożliwia udostępnienie ocen produktów w punkcie sprzedaży
 
@@ -116,15 +111,15 @@ Aby włączyć oceny produktu w punkcie sprzedazy, wykonaj następujące czynno�
 
 Na poniższej ilustracji przedstawiono przykład konfiguracji parametrów Commerce w celu włączenia ocen produktów w punkcie sprzedaży.
 
-![Konfiguracja parametrów Commerce dla ocen produktów w punkcie sprzedaży](media/rnr-hq-enable-ratings-in-pos.png)
+![Konfiguracja parametrów Commerce dla ocen produktów w punkcie sprzedaży.](media/rnr-hq-enable-ratings-in-pos.png)
 
 Na poniższej ilustracji przedstawiono przykład ocen produktów w POS.
 
-![Oceny produktu w POS](media/rnr-pos-catalog-ratings.png)
+![Oceny produktu w POS.](media/rnr-pos-catalog-ratings.png)
 
 Na poniższej ilustracji przedstawiono przykład ocen produktów w kanałach biura obsługi.
 
-![Oceny produktu w kanale biura obsługi](media/rnr-call-center-ratings.png)
+![Oceny produktu w kanale biura obsługi.](media/rnr-call-center-ratings.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
@@ -135,3 +130,16 @@ Na poniższej ilustracji przedstawiono przykład ocen produktów w kanałach biu
 [Zarządzanie ocenami i recenzjami](manage-reviews.md)
 
 [Konfigurowanie ocen i recenzji](configure-ratings-reviews.md)
+
+[Synchronizacja ocen produktów](sync-product-ratings.md)
+
+[Włączanie ręcznego publikowania ocen i recenzji przez moderatora](manual-publish-rating-reviews.md)
+
+[Importowanie i eksportowanie klasyfikacji oraz przeglądów](import-export-reviews.md)
+
+[Konfigurowanie uwierzytelniania usługa-usługa](service-to-service-auth.md)
+
+[Oceny i recenzje — często zadawane pytania](ratings-reviews-faq.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

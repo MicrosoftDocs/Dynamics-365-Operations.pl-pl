@@ -1,7 +1,7 @@
 ---
 title: Konfigurowanie opartej na atrybutach wyceny konfigurowalnych produktów
 description: W tym temacie pokazano sposób konfigurowania wyceny opartej na atrybutach.
-author: t-benebo
+author: ShylaThompson
 ms.date: 08/20/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProdu
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c4acd7b423396124dd1059602f5aa6460ec5e259
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 0f54d0ea87d8ce5ffdf5600995004e558ddd86fa
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578159"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833264"
 ---
 # <a name="set-up-attribute-based-pricing-for-configurable-products"></a>Konfigurowanie opartej na atrybutach wyceny konfigurowalnych produktów
 
@@ -28,18 +28,17 @@ W tym temacie pokazano sposób konfigurowania wyceny opartej na atrybutach. Waru
 
 
 ## <a name="create-a-new-price-model"></a>Tworzenie nowego modelu ceny
-
-1. Przejdź do **Zarządzanie informacjami o produktach \> Produkty \> Modele konfiguracji produktów**.
-1. Na liście zaznacz wiersz **Głośnik o wysokiej jakości**, ale nie wybieraj łącza z nazwą.
-1. W okienku akcji kliknij pozycję **Model**.
-1. Wybierz **Modele ceny**.
-1. Wybierz pozycję **Nowy**.
-1. W polu **Nazwa modelu ceny** wpisz wartość. Użyj nazwy, która sprawi, że model będzie łatwy do zidentyfikowania.  
-1. W polu **Opis** wpisz wartość.
-1. Wybierz opcję **Zapisz**.
+1. Wybierz **Definicja modelu wariantu produktu** na stronie głównej.
+2. Wybierz **Modele konfiguracji produktu** w sekcji **łącza**.
+3. Na liście zaznacz wiersz **Głośnik o wysokiej jakości**, ale nie wybieraj łącza z nazwą.
+4. W okienku akcji kliknij pozycję **Model**.
+5. Wybierz **Modele ceny**.
+6. Wybierz pozycję **Nowy**.
+7. W polu **Nazwa modelu ceny** wpisz wartość. Użyj nazwy, która sprawi, że model będzie łatwy do zidentyfikowania.  
+8. W polu **Opis** wpisz wartość.
+9. Wybierz opcję **Zapisz**.
 
 ## <a name="add-price-elements"></a>Dodawanie elementów ceny
-
 1. Wybierz opcję **Edycja**. Każdy składnik w modelu produktu może mieć element ceny podstawowej i dowolną liczbę reguł wyrażenia ceny. Można również dodawać ceny w różnych walutach.  
 2. W polu **Wyrażenie podstawy ceny** wpisz wartość. Na przykład wpisz 100. Wyrażenie ceny podstawowej może być wartością liczbową lub mieć formę obliczenia arytmetycznego, w którym występuje jeden lub więcej atrybutów.  
 3. Wybierz opcję **Dodaj**.

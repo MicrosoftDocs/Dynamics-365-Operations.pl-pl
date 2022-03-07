@@ -2,35 +2,30 @@
 title: Moduł koszyka
 description: W tym temacie opisano moduły koszyka i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
-ms.date: 10/20/2020
+ms.date: 12/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 33db06ecfa2a8fa93cde3c4f1b31d6b30bfd0c34
-ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
+ms.openlocfilehash: f2db61cf23c217365274297c6e9878a4eb5679f8d9502cb70484372ae43f6b18
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "4415098"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716891"
 ---
 # <a name="cart-module"></a>Moduł koszyka
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano moduły koszyka i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 Moduł koszyka wyświetla towary, które zostały dodane do koszyka, zanim odbiorca przejdzie do procesu realizacji transakcji. Ten moduł pokazuje również podsumowanie zamówień i pozwala odbiorcy na zastosowanie lub usunięcie kodów promocyjnych.
 
@@ -40,11 +35,11 @@ Moduł koszyka służy do renderowania danych na podstawie identyfikatora koszyk
 
 Poniższy obraz przedstawia przykład strony koszyka w witrynie Fabrikam.
 
-![Przykład modułu koszyka w witrynie Fabrikam](./media/cart2.PNG)
+![Przykład modułu koszyka w witrynie Fabrikam.](./media/cart2.PNG)
 
 Poniższy obraz przedstawia przykład strony koszyka w witrynie Fabrikam. W tym przykładzie istnieje opłata manipulacyjna dla pozycji w wierszu.
 
-![Przykład modułu koszyka z opłatą manipulacyjną dla pozycji w wierszu](./media/ecommerce-handling-fee.png)
+![Przykład modułu koszyka z opłatą manipulacyjną dla pozycji w wierszu.](./media/ecommerce-handling-fee.png)
 
 ## <a name="cart-module-properties-and-slots"></a>Właściwości modułu koszyka i gniazda
 
@@ -53,6 +48,7 @@ Poniższy obraz przedstawia przykład strony koszyka w witrynie Fabrikam. W tym 
 | Nagłówek | Tekst nagłówka i znacznik nagłówka (**H1**, **H2**, **H3**, **H4**, **H5** lub **H6**) | Nagłówek koszyka, na przykład „Torba na zakupy” lub „Produkty w Twoim koszyku”. |
 | Pokaż błędy niedostępnych w magazynie | **Prawda** lub **Fałsz** | Jeśli ta właściwość ma wartość **Prawda**, na stronie kozyka będą widoczne błędy dotyczące zapasów. Zaleca się ustawienie tej właściwości na **Prawda**, jeśli sprawdzanie zapasów jest wykonywane w odniesieniu do danego oddziału. |
 | Pokaż opłaty transportowe dla pozycji w wierszu | **Prawda** lub **Fałsz** | Jeśli ta właściwość ma wartość **Prawda**, pozycje w wierszu koszyka będą pokazywały opłaty transportowe, jeśli te informacje są dostępne. Ta funkcja nie jest obsługiwana w motywie Fabrikam, ponieważ użytkownicy wybierają tylko wysyłkę w ramach przepływu realizacji transakcji. Tę funkcję można jednak włączyć w innych przepływach pracy, jeśli ma ona zastosowania. |
+| Wyświetl dostępne promocje| **Prawda** lub **Fałsz** | Jeśli właściwość ma wartość **Prawda**, w koszyku są pokazuje dostępne promocje oparte na pozycjach w koszyku. Ta funkcja nie jest dostępna tylko w Dynamics 365 Commerce w wersji 10.0.16. |
 
 ## <a name="modules-that-can-be-used-in-a-cart-module"></a>Moduły, których można używać w module koszyka
 
@@ -117,3 +113,6 @@ Aby dodać moduł koszyka do nowej strony i ustawić wymagane właściwości, wy
 [Obliczanie dostępności zapasów dla kanałów sprzedaży detalicznej](calculated-inventory-retail-channels.md)
 
 [Tworzenie profilu funkcji online](online-functionality-profile.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

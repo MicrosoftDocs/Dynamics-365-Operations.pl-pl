@@ -2,27 +2,24 @@
 title: Omówienie zgodności
 description: W tym temacie omówiono wskazówki dotyczące zgodności oferowane przez aplikację Microsoft Dynamics 365 Commerce, aby pomóc Ci zapewnić zgodność witryn firmy.
 author: BrianShook
-manager: annbe
 ms.date: 01/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 45d96317f5b6ef956647bfc511e80533e2c34bca
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9c1c5f389bc67df53ee0a56ae7bff84ee9dcd24bdc2897914223e8d183ce4692
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414940"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6747728"
 ---
 # <a name="compliance-overview"></a>Omówienie zgodności
 
@@ -46,3 +43,6 @@ Aby dowiedzieć się więcej na temat podstawowych zasad stosowanych przez Micro
 [Dodawanie strony zasad ochrony prywatności](add-privacy-page.md)
 
 [Zamień identyfikatory użytkowników skojarzone ze śledzonymi zmianami zawartości](replace-IDs-tracked-changes.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,26 +2,25 @@
 title: Omówienie szablonów i układów
 description: Ten temat obejmuje szablony i układy w Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-manager: annbe
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 835b283ea93f761791745a41c74b6a12c11eea02
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 02c184ce8690c0000450fa58e03dde9b01c7d91304cfac680a312be90d59a09d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4962967"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6756556"
 ---
 # <a name="templates-and-layouts-overview"></a>Omówienie szablonów i układów
 
@@ -34,7 +33,7 @@ Dobrym sposobem na rozpoczęcie pracy z szablonami jest zrozumienie funkcjonalny
 
 Na poniższej ilustracji przedstawiono hierarchię modelu stron za wyrenderowaną stroną sieci Web.
 
-![Diagram modelu strony](../commerce/media/page-model-diagram.png)
+![Diagram modelu strony.](../commerce/media/page-model-diagram.png)
 
 | Jednostka        | Podstawowea funkcja |
 |---------------|----------------|
@@ -100,7 +99,7 @@ Wstępnie ustawiony układ i niestandardowe układy są edytowane w różnych cz
 
 Poniższe ilustracje przedstawiają scenariusze dla gotowych i niestandardowych układów.
 
-![Wstępnie ustawione i niestandardowe scenariusze układu](../commerce/media/template-figure1.png)
+![Wstępnie ustawione i niestandardowe scenariusze układu.](../commerce/media/template-figure1.png)
 
 Aby rozpocząć korzystanie ze wstępnie ustawionych układów, należy zapoznać się z [Praca z układami predefiniowanymi](work-with-layouts.md).
 
@@ -111,3 +110,6 @@ Aby rozpocząć korzystanie ze wstępnie ustawionych układów, należy zapozna�
 [Praca z układami predefiniowanymi](work-with-layouts.md)
 
 [Praca z grupami publikowania](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

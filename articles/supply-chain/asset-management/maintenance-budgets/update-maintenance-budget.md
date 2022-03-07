@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b04549700b51f73a3629fe9cd67a3e1f6c1bafbb
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 21aba6224bba98eb9bbb423847e123616003b5d9
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021039"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5253477"
 ---
 # <a name="update-maintenance-budgets"></a>Aktualizowanie budżetu konserwacji
 
@@ -74,3 +74,6 @@ Na stronie **Wiersze budżetu konserwacji** można ręcznie dodać nowy wiersz b
 
 - Wiadomo, że odnawianiem niektórych środków trwałych znajduje się obecnie w fazie planowania, ale powiązane zadania nie zostały jeszcze utworzone w module Zarządzanie składnikami majątku. Należy jednak uwzględnić koszty budżetowe tych zadań, które mają być uwzględnione w budżecie konserwacji.
 - Nowe środki trwałe lub typy środków zostały utworzone od czasu dokonania budżetu konserwacji, ale nie skonfigurowano jeszcze planów konserwacji dla tych składników lub typów składników majątku. Należy jednak uwzględnić koszty budżetowe tych składników majątku, które mają być uwzględnione w budżecie konserwacji.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

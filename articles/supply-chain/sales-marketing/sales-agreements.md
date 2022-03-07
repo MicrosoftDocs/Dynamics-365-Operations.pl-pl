@@ -1,25 +1,29 @@
 ---
-# required metadata
 title: Omówienie umów sprzedaży
-description: 'Ten temat zawiera informacje dotyczące umów sprzedaży. Umowa sprzedaży jest kontraktem, który zobowiązuje odbiorcę do zakupu produktów w określonej ilości lub za określoną kwotę w ustalonym czasie w zamian za specjalne ceny i rabaty.'
-author: Henrikan
+description: Ten temat zawiera informacje dotyczące umów sprzedaży. Umowa sprzedaży jest kontraktem, który zobowiązuje odbiorcę do zakupu produktów w określonej ilości lub za określoną kwotę w ustalonym czasie w zamian za specjalne ceny i rabaty.
+author: omulvad
+manager: tfehr
 ms.date: 07/25/2019
-ms.topic: overview
-ms.prod: null
-ms.technology: null
-ms.search.form: 'SalesAgreement, SalesAgreementGenerateReleaseOrder, SalesAgreementListPage, SalesAgreementInvoiceJournal, SalesAgreementInvoicePart'
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: SalesAgreement, SalesAgreementGenerateReleaseOrder, SalesAgreementListPage, SalesAgreementInvoiceJournal, SalesAgreementInvoicePart
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-  - '9554'
-  - intro-internal
+ms.custom: 9554
 ms.assetid: c5d55c8d-99f2-44f9-a897-5b0dee85fc81
 ms.search.region: Global
-ms.author: henrikan
-ms.search.validFrom: '2016-02-28'
+ms.author: kamaybac
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7d86e7b9c6c2c21083ec79f798038a74b133577d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001481"
 ---
-
 # <a name="sales-agreements-overview"></a>Omówienie umów sprzedaży
 
 [!include [banner](../includes/banner.md)]
@@ -108,6 +112,3 @@ Wymiary finansowe można skopiować do nagłówków dokumentu lub pojedynczych w
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

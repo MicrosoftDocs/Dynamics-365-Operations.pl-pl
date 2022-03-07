@@ -1,33 +1,32 @@
 ---
-title: Przetwórz uprawnienia do świadczeń
-description: W tym artykule opisano sposób uruchamiania procesu uprawnień do rejestracji.
-author: andreabichsel
-manager: AnnBe
-ms.date: 04/06/2020
+title: Przetwarzanie uprawnień do rejestracji
+description: W tym temacie opisano sposób uruchamiania procesu uprawnień do rejestracji.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: dfb7f13dce48f33c111af491918702763f7e3b8a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7c83753c17721487ba6adbf822c994a71ae0a0e6
+ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420021"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "7417491"
 ---
-# <a name="process-enrollment-eligibility"></a>Przetwórz uprawnienia do świadczeń
+# <a name="process-enrollment-eligibility"></a>Przetwarzanie uprawnień do rejestracji
 
-W tym artykule opisano sposób uruchamiania procesu uprawnień do rejestracji.
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+W tym temacie opisano sposób uruchamiania procesu uprawnień do rejestracji.
 
 1. W obszarze roboczym **Zarządzanie świadczeniami** w sekcji **Przetwarzanie** wybierz opcję **Przetwarzanie uprawnień do świadczeń**.
 
@@ -54,11 +53,11 @@ W tym artykule opisano sposób uruchamiania procesu uprawnień do rejestracji.
 
 ## <a name="view-process-results"></a>Wyświetlanie wyników procesu
 
-W tym artykule opisano sposób wyświetlania wyników procesu.
+W tym temacie opisano sposób wyświetlania wyników procesu.
 
 1.  W obszarze roboczym **Zarządzanie świadczeniami** w sekcji **Przetwarzanie** wybierz opcję **Wyniki procesu**.
 
-2.  W formularzu **Wyniki procesu** są określone następujące pola:
+2.  Na stronie **Wyniki procesu** należy określić następujące pola:
 
    | Pole | opis |
    | --- | --- |
@@ -72,3 +71,6 @@ W tym artykule opisano sposób wyświetlania wyników procesu.
    | **Stan wyniku** | Ta opcja będzie Uprawniona lub Niekwalifikująca się. Stan wyniku jest nieuprawniony, jeśli pracownik nie spełnił kryteriów reguły uprawnień, jeśli pracownik nie dostarczył wymaganych informacji, takich jak częstotliwość płac lub stałe wynagrodzenie, lub jeśli w planie świadczeń brakuje informacji, co uniemożliwia zarejestrowanie się pracowników. |
    | **Komunikat wyniku** | Wskazuje, dlaczego pracownik nie kwalifikuje się do planu świadczeń lub jeśli została przekazana reguła uprawnienia. |
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

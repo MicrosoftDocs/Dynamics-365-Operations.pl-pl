@@ -1,7 +1,7 @@
 ---
 title: Konfiguracje wniosku o nowego dostawcę
 description: W tym temacie opisano pola, których wypełnienie jest wymagane w nowym wniosku o nowego dostawcę.
-author: RichardLuan
+author: mkirknel
 manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
@@ -11,16 +11,17 @@ ms.technology: ''
 ms.search.form: VendProspectiveVendorRegistrationConfig
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: riluan
+ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 987b9cefef395b3bf3e915f41232fe0daba213b9
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: d78aa7c14ed2a2a5097f6f80c946c6ae4ed8bb94
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021172"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435437"
 ---
 # <a name="vendor-request-configurations"></a>Konfiguracje wniosku o nowego dostawcę
 [!include [banner](../includes/banner.md)]

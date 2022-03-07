@@ -2,25 +2,22 @@
 title: Aktywowanie stornowania dla Polski
 description: Ten temat zawiera informacje o funkcji stornowania dla Polski.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 09/11/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Poland
 ms.author: roschlom
 ms.dyn365.ops.version: AX 7.0.1
 ms.search.validFrom: 2016-05-31
-ms.openlocfilehash: 249b7eced6eb0c6bbcbbe14125c8cfdd98ce5f3d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 519e77c9f05f67aa654142ec308d7746bf7a6a3156296069f733f359c97002ac
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408392"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6747058"
 ---
 # <a name="activate-storno-accounting-for-poland"></a>Aktywowanie stornowania dla Polski
 
@@ -82,3 +79,6 @@ Na stronie **Parametry modułu rozrachunków z dostawcami** w obszarze **Faktura
  8. W polu **Data faktury** wprowadź datę.  
  9. Kliknij przycisk **Księguj**.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

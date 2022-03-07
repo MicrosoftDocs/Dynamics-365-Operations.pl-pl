@@ -2,25 +2,22 @@
 title: Strategie uzupełniania zapasów
 description: Ten temat zawiera informacje o strategiach uzupełniania zapasów i objaśnieniach, w jaki sposób można skorzystać z pola Strategia uzupełnienia zapasów w wierszach szablonu uzupełnienia grupy popytu w celu wybrania sposobu uzupełniania zapasów.
 author: mirzaab
-manager: tfehr
 ms.date: 10/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-29
-ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 45b3b1a4d2e92a52ee69c17865634a6578181ac7
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.dyn365.ops.version: 10.0.16
+ms.openlocfilehash: bd2ddbfeef454f2759ca09d8d763bada36a1fc83
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4646140"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574168"
 ---
 # <a name="replenishment-strategies"></a>Strategie uzupełniania zapasów
 
@@ -48,7 +45,7 @@ Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorz
 
 Aby uzyskać dostęp do szablonów, przejdź do **Zarządzanie magazynem \> Konfiguracja \> Uzupełnianie zapasów \> Szablony uzupełniania zapasów**. W sekcji **Omówienie** wybierz lub utwórz szablon grupy czynności do uzupełnienia (uzupełnienie), w którym pole **Typ uzupełnienia** ma wartość *Popyt grupy czynności*. Następnie skonfiguruj wiersze szablonu uzupełnienia w sekcji **Szczegóły szablonu uzupełniania zapasów**. W przypadku każdego wiersza w polu **Strategia uzupełniania zapasów** wybierz strategię uzupełniania zapasów, która ma zostać użyta.
 
-![Strona szablonów uzupełniania zapasów](media/ReplenTempWaveDmdMaxLocCap.png "Strony szablonów uzupełniania zapasów")
+![Strona szablonów uzupełniania zapasów.](media/ReplenTempWaveDmdMaxLocCap.png "Strony szablonów uzupełniania zapasów")
 
 Jeśli kolumna **Strategia uzupełniania zapasów** nie jest wyświetlana w siatce w sekcji **Szczegóły szablonu uzupełniania zapasów**, upewnij się, że funkcja została włączona i że wybrany szablon uzupełnienia zapasów ma typ uzupełnienia zapasów ustawiony na *Popyt grupy czynności*.
 
@@ -88,7 +85,7 @@ W przypadku ustawienia strategii uzupełniania zapasów na *Maksymalna pojemnoś
 - **Praca uzupełniania zapasów 1:** Pobierz 4 pudełka z lokalizacji zbiorczej i umieść je w lokalizacji Pobranie-001.
 - **Praca uzupełniania zapasów 2:** Pobierz 5 pudełka z lokalizacji zbiorczej i umieść je w lokalizacji Pobranie-002.
 
-[![Przykład 1](media/ReplenTemp_example_1.png "Przykład 1")](media/ReplenTemp_example_1_large.png)
+[![Przykład 1.](media/ReplenTemp_example_1.png "Przykład 1")](media/ReplenTemp_example_1_large.png)
 
 ### <a name="example-2"></a>Przykład 2
 
@@ -112,6 +109,9 @@ W zależności od ustawienia opcji **Zezwalaj na podział** w dyrektywach lokali
 
 Wyniki różnią się ze względu na informacje, które są dostępne podczas tworzenia pracy. Jeśli pole **Zezwalaj na podział** jest ustawione na wartość *Tak* w dyrektywach dotyczących pobrania uzupełnienia zapasów, wiadomo, że znaleziono 160 sztuk. Można więc utworzyć pracę dla tej ilości. Jeśli jednak opcja **Zezwalaj na podział** jest ustawiona na *Nie*, nie wiadomo o istnieniu 160 sztuk. Ponieważ dodatkowa ilość, którą zdecydowałeś się uzupełnić, wynosiła 3 pudełka, odrzucasz tę dodatkową ilość i ponownie próbujesz użyć oryginalnej ilości.
 
-[![Przykład 2](media/ReplenTemp_example_2.png "Przykład 2")](media/ReplenTemp_example_2_large.png)
+[![Przykład 2.](media/ReplenTemp_example_2.png "Przykład 2")](media/ReplenTemp_example_2_large.png)
 
 Dlatego, aby uzyskać maksymalną ilość w uzupełnianych lokalizacjach, należy ustawić opcję **Zezwalaj na podział** na *Tak* w dyrektywach lokalizacji dotyczących pobierania do uzupełnienia zapasów.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

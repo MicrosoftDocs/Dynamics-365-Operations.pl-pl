@@ -2,11 +2,13 @@
 title: Podwójne raportowanie
 description: W tym temacie przedstawiono przykład, w jaki sposób można spełnić wymagania zarówno Międzynarodowych Standardów Sprawozdawczości Finansowej (MSSF), jak i ustawowe dotyczące sprawozdawczości wynajmu składników majątku.
 author: moaamer
-ms.date: 04/12/2021
+manager: Ann Beebe
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: AssetLeaseBookMaster
+ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 406fbb53fc4cd17a7c257b5f5463227118c9051f44d81db000fbe87dca142efe
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a7d9b3ea3d4f1d48b8a7326bd5a01d3119310c62
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767063"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5003188"
 ---
 # <a name="dual-reporting"></a>Podwójne raportowanie
 
@@ -47,7 +49,7 @@ Księga MSSF 16 jest skonfigurowana w taki sposób, aby była zgodna ze standard
 | Konfiguracja wartości obecnej / wartości godziwej składnika majątku | 0,00           |
 | Próg krótkiego terminu                    | 12             |
 | Próg niskiej wartości                     | 5,000.00       |
-| Płatność dla dostawcy                           | Nie             |
+| Płatność dla dostawcy                           | Nr             |
 
 **Księga ustawowa**
 
@@ -64,7 +66,7 @@ Księga ustawowa to księga metody kasowej, w której firma będzie księgować 
 | Konfiguracja wartości obecnej / wartości godziwej składnika majątku | 0,00        |
 | Próg krótkiego terminu                    | 0           |
 | Próg niskiej wartości                     | 0           |
-| Płatność dla dostawcy                           | Nie          |
+| Płatność dla dostawcy                           | Nr          |
 
 **Księga wycofania ustawowego**
 
@@ -81,7 +83,7 @@ Księga wycofania ustawowego jest konfigurowana w taki sam sposób, jak księga 
 | Konfiguracja wartości obecnej / wartości godziwej składnika majątku | 0,00                           |
 | Próg krótkiego terminu                    | 0                              |
 | Próg niskiej wartości                     | 0                              |
-| Płatność dla dostawcy                           | Nie                             |
+| Płatność dla dostawcy                           | Nr                             |
 
 W tym przykładzie utworzono wynajem, który ma następujące ustawienia na kartach **Ogólne** i **Wiersze harmonogramu płatności**.
 
@@ -520,6 +522,3 @@ Po utworzeniu i zaksięgowaniu wszystkich tych wpisów w arkuszu będą widoczne
 | 11         | Umorzenie |                                                   |                                                   |                                                   | 0\.00                   |   |                                                 |                                                |                                                |                                                | \-949\.75                                      | \-949\.75                               |
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Tworzenie listu przewozowego
 description: W tym temacie opisano sposób tworzenia listu przewozowego podczas korzystania z procesów zarządzania magazynem.
-author: Henrikan
+author: MarkusFogelberg
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 193583
 ms.assetid: 1ad0c1cb-4346-4042-a59b-923115fac03e
 ms.search.region: Global
-ms.author: henrikan
+ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b79408e21e9acda12617cf35464007e58ae1b5fe
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ec1dfed6573792f9ff9fd1bfacf38d58972f0a79884a7ad542e592c4f2843f1f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573136"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773941"
 ---
 # <a name="create-a-bill-of-lading"></a>Tworzenie listu przewozowego
 

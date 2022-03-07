@@ -1,26 +1,30 @@
 ---
-# required metadata
 title: Omówienie planowania ładunków przy użyciu konsolidacji w centrum
-description: 'W tym artykule opisano funkcjonalność konsolidowania wysyłek w centrum, gdy towary są dostarczane z różnych magazynów do tego samego odbiorcy albo od wielu dostawców do tego samego magazynu.'
+description: W tym artykule opisano funkcjonalność konsolidowania wysyłek w centrum, gdy towary są dostarczane z różnych magazynów do tego samego odbiorcy albo od wielu dostawców do tego samego magazynu.
 author: Henrikan
 ms.date: 07/25/2019
 ms.topic: overview
-ms.prod: null
-ms.technology: null
-ms.search.form: 'WHSLoadPlanningWorkbench, WHSHistory, WHSLoadTable, WHSLoadPlanningListPage, TMSParameters'
+ms.prod: ''
+ms.technology: ''
+ms.search.form: WHSLoadPlanningWorkbench, WHSHistory, WHSLoadTable, WHSLoadPlanningListPage, TMSParameters
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom:
-  - '92273'
-  - intro-internal
+- "92273"
+- intro-internal
 ms.assetid: d27b0926-a534-4caf-a2a3-acbc7c440bca
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: henrikan
-ms.search.validFrom: '2016-02-28'
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: fd47a5745719873cc491d93b9a98a7fde609fe38
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985818"
 ---
-
 # <a name="plan-loads-using-hub-consolidation-overview"></a>Omówienie planowania ładunków przy użyciu konsolidacji w centrum
 
 [!include [banner](../includes/banner.md)]

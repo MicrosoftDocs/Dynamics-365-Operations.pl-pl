@@ -10,18 +10,17 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 47251a7167a00346aed26b9e9535f1b12301e5a6
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: 311c894d709985d0d053b0ec3a317142aa582c39
+ms.sourcegitcommit: eceae470f4ae58000ec33fea34db34b7a7a1af43
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860593"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "6273211"
 ---
 # <a name="business-documents-supported-by-global-inventory-accounting"></a>Dokumenty biznesowe obsługiwane przez Globalne księgowanie zapasów
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!--KFM: Preview until 4/30/2022 -->
 
 Po pełnym skonfigurowaniu dodatku Globalne księgowanie zapasów jest on gotowy do przetwarzania dokumentów związanych z inwentaryzacją, które są wprowadzane w systemie Microsoft Dynamics 365 Supply Chain Management.
 

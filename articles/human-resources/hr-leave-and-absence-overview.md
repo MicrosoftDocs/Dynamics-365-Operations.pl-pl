@@ -1,31 +1,30 @@
 ---
 title: Omówienie urlopów i nieobecności
-description: Korzystając z Dynamics 365 Human Resources, obszar roboczy urlopy i nieobecności stanowi elastyczne ramy tworzenia nowych planów urlopów. Umożliwia także przepływy pracy służące do zarządzania żądaniami oraz intuicyjną stronę samoobsługi umożliwiającą pracownikom zgłoszenie prośby o urlop lub nieobecność w pracy.
-author: andreabichsel
-manager: AnnBe
-ms.date: 06/01/2020
+description: Korzystając z Dynamics 365 Human Resources, obszar roboczy urlopy i nieobecności stanowi elastyczne ramy tworzenia nowych planów urlopów.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
-ms.custom: 7521
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ea58c3a08e74eea1ab51aa19a5a28445a9bcbb04
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0088f9fe070ee4054c531ca128daba9389054902
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420124"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7728620"
 ---
 # <a name="leave-and-absence-overview"></a>Omówienie urlopów i nieobecności
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Program Dynamics 365 Human Resources pomaga oferować pracownikom doskonale warunki urlopowe. Obszar roboczy **urlopy i nieobecności** stanowi elastyczne ramy tworzenia nowych planów urlopów. Umożliwia także przepływy pracy służące do zarządzania żądaniami oraz intuicyjną stronę samoobsługi umożliwiającą pracownikom zgłoszenie prośby o urlop lub nieobecność w pracy. Funkcje analityczne pomagają organizacji mierzyć i monitorować salda i wykorzystanie urlopów ujętych w planach urlopów.
 
@@ -35,7 +34,8 @@ Zanim utworzy się plany urlopów dla pracowników, należy wykonać kilka krok�
 
 - [Konfigurowanie parametrów urlopów i nieobecności](hr-leave-and-absence-parameters.md)
 - [Tworzenie kalendarza czasu pracy](hr-leave-and-absence-working-time-calendar.md)
-- [Tworzenie przepływu pracy wniosku urlopowego](hr-leave-and-absence-workflow.md)
+- [Tworzenie przepływu pracy wniosku o urlop](hr-leave-and-absence-workflow.md)
+- [Konfigurowanie roli menedżera nieobecności](hr-configure-absence-manager.md)
 
 ## <a name="create-and-manage-leave-plans"></a>Tworzenie planów urlopów i zarządzanie nimi
 
@@ -51,6 +51,10 @@ Przed rozpoczęciem tworzenia planów urlopów dla pracowników należy utworzy�
 
 W obszarze roboczym **Samoobsługa pracownika etatowego** pracownicy mogą przesyłać wnioski urlopowe, a Ty możesz nimi zarządzać.
 
-[Zgłaszanie prośby o czas wolny](hr-employee-self-service-request-time-off.md)
-[Zarządzanie wnioskami o urlop i nieobecność](hr-employee-self-service-manage-requests.md)
+- [Złóż wniosek o czas wolny](hr-employee-self-service-request-time-off.md)
+- [Zarządzanie wnioskami o urlop i nieobecność](hr-employee-self-service-manage-requests.md)
+- [Konfigurowanie roli menedżera nieobecności](hr-configure-absence-manager.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: Konfigurowanie środowiska pomocy dla aplikacji Finance and Operations
-description: Ten temat zawiera informacje dotyczące składników systemu pomocy dla niektórych aplikacji Microsoft Dynamics 365. Omówiono również sposób łączenia tych aplikacji oraz przedstawiono podsumowanie procesu tworzenia pomocy niestandardowej.
+description: Ten temat zawiera informacje dotyczące składników systemu pomocy dla niektórych aplikacji Microsoft Dynamics 365.
 author: margoc
-manager: AnnBe
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d000c3f801d382921a027c8ee259fd44ac5cdc80
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 82bb9a09e6d302b0d453ceb5131da039769b58fb
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798287"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745696"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Konfigurowanie środowiska pomocy dla aplikacji Finance and Operations
 
@@ -99,3 +97,6 @@ Aby współpracować z firmą Microsoft w zakresie tworzenia do narzędzi i proc
 [Zasoby rejestratora zadań](../../dev-itpro/user-interface/task-recorder.md)  
 [Tworzenie dokumentacji lub szkolenia za pomocą Rejestratora zadań](../../dev-itpro/user-interface/task-recorder-training-docs.md)  
 [Repozytorium GitHub pomocy niestandardowej](https://github.com/microsoft/dynamics356f-o-custom-help)  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

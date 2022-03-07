@@ -1,12 +1,10 @@
 ---
 title: Przerwa konserwacyjną dla zleceń pracy
 description: Ten temat wyjaśnia, jak można utworzyć rejestracje przestojów podczas obsługi dla środka trwałego wybranego w zleceniu pracy.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 53487a0173453ef7a8f5ea818672d999fe71cb65
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 38c47a47fdf64c1d3601f6f3f7b84bf128823ec2ceb0c50e586822f6bdb97906
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020918"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6753379"
 ---
 # <a name="maintenance-downtime-for-work-orders"></a>Przerwa konserwacyjną dla zleceń pracy
 
@@ -47,7 +45,7 @@ Można utworzyć rejestracje przestojów podczas obsługi dla środka trwałego 
 
 Na poniższej ilustracji pokazano przykład strony **Kody przyczyny przerwy konserwacyjnej**.
 
-![Rysunek 1](media/15-work-orders.png)
+![Rysunek 1.](media/15-work-orders.png)
 
 Po utworzeniu kodów przyczyny przestojów, które mają być używane, można utworzyć rejestracje przestojów związanych z obsługą zleceń i składników majątku.
 
@@ -73,18 +71,21 @@ Po utworzeniu kodów przyczyny przestojów, które mają być używane, można u
 
 Na poniższej ilustracji pokazano przykład rejestracji przerwy konserwacyjnej.
 
-![Rysunek 2](media/16-work-orders.png)
+![Rysunek 2.](media/16-work-orders.png)
 
 Kalendarz używany do obliczania rejestracji przerw konserwacyjnych związanych z obsługą zależy od wyboru dokonanego w konfiguracji składników majątku i parametrów. Jeśli zasób jest wybrany dla składnika majątku w polu **Zasób**, na karcie skróconej **Środek trwały** na stronie **Wszystkie składniki majątku** zostanie użyty kalendarz skonfigurowany dla skojarzonej grupy zasobów, co pokazano na poniższym rysunku.
 
-![Rysunek 3](media/17-work-orders.png)
+![Rysunek 3.](media/17-work-orders.png)
 
 Jeśli składnik majątku nie jest powiązany z zasobem, zostanie użyty standardowy kalendarz wybrany na stronie **Parametry zarządzania składnikami majątku** jak pokazano na ilustracji poniżej.
 
-![Rysunek 4](media/18-work-orders.png)
+![Rysunek 4.](media/18-work-orders.png)
 
 Kliknij **Zarządzanie składnikami majątku** > **Zapytania** > **Przerwa konserwacyjna** , aby wyświetlić przegląd wszystkich rejestracji przerw konserwacyjnych.
 
 >[!NOTE]
 >Wszystkie kalendarze używane w module **Zarządzanie składnikami majątku** są konfigurowane w **Administrowanie organizacją** > **Ustawienia** > **Kalendarze** > **Kalendarze**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

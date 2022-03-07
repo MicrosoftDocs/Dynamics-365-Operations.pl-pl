@@ -2,15 +2,12 @@
 title: Zastosuj ustawienia zapasów
 description: W tym temacie opisano ustawienia zapasów oraz sposób ich stosowania w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: dfa8b2bdc03e3698feda26932db757421097140d
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.openlocfilehash: 4ba3e67cf9c72b9a9606528c02f9e57d19a74c1f
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517071"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647591"
 ---
 # <a name="apply-inventory-settings"></a>Zastosuj ustawienia zapasów
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano ustawienia zapasów oraz sposób ich stosowania w Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 Ustawienia zapasów określają, czy zapasy powinny być sprawdzane przed dodaniem produktów do koszyka. Definiują również komunikaty promocyjne dotyczące zapasów, takie jak „w magazynie” i „zostało tylko parę sztuk”. Te ustawienia gwarantują, że produkt nie może zostać zakupiony, jeśli nie jest w stanie zapasów.
 
@@ -44,12 +39,22 @@ W konstruktorze witryn Commerce można definiować progi i zakresy zapasów dla 
 
 ## <a name="inventory-settings"></a>Ustawienia zapasów
 
-W module Commerce ustawienia zapasów są definiowane w **Ustawienia witryny \> Rozszerzenia \> Zarządzanie zapasami** w konstruktorze witryn. Istnieją cztery ustawienia zapasów, z których jedna jest przestarzała (przestarzałe):
+W module Commerce ustawienia zapasów są definiowane w **Ustawienia witryny \> Rozszerzenia \> Zarządzanie zapasami** w konstruktorze witryn. Istnieje sześć ustawień zapasów, z których jedno jest przestarzałe:
 
 - **Włącz sprawdzanie zapasów w aplikacji** — to ustawienie powoduje włączenie sprawdzania zapasów produktów. Pole zakupu, koszyk i pobieranie w modułach sklepów będą sprawdzać magazyn produktów i zezwalać na dodanie produktu do koszyka tylko wtedy, gdy zapasy są dostępne.
 - **Poziom zapasów na podstawie** — to ustawienie określa sposób obliczania poziomów zapasów. Dostępne wartości to **Razem dostępne**, **Dostępne fizycznie** i **Próg wyprzedania**. W Commerce można zdefiniować próg i zakresy zapasów dla każdego produktu i kategorii. Interfejsy API magazynu zwracają informacje o zapasach produktów dla zarówno właściwości **Razem dostępne**, jak i właściwości **Fizycznie dostępne**. Detalista decyduje, czy wartość **Razem dostępne** lub **Fizycznie dostępne** powinna być używana do określenia licznika zapasów i odpowiednich zakresów w Stanach zapasów i poza magazynem.
 
     Wartość **Próg wyprzedania** ustawienia **Poziom zapasów na podstawie** jest starsza (przestarzała), nieaktualna. Po wybraniu tej opcji Inwentaryzacja jest określana na podstawie wyników wartości **Razem dostępne**, ale próg jest definiowany przez ustawienie wartości liczbowej **Próg wyprzedania**, które zostało opisane w dalszej części tego pola. To ustawienie wartości progowej ma zastosowanie w odniesieniu do wszystkich produktów w witrynie handlu elektronicznego. Jeśli zapasy są poniżej numeru progowego, produkt jest uważany za zapasy. W przeciwnym razie zostanie uznane za dostępne w magazynie. Możliwości wartości **Próg wyprzedania** są ograniczone i nie zaleca się używania jej w wersji 10.0.12 lub nowszej.
+
+- **Poziom zapasów dla wielu magazynów** — to ustawienie umożliwia obliczenia poziomu zapasów względem domyślnego magazynu lub wielu magazynów. Opcja **Oparte na pojedynczych magazynach** umożliwia obliczanie poziomów zapasów na podstawie magazynu domyślnego. Innym rozwiązaniem jest witryna handlu elektronicznego wskazująca wiele magazynów, aby ułatwić realizację. W takim przypadku do wskazania dostępności zapasów służy opcja **Na podstawie agregowania magazynów wysyłki i pobrania**. Jeśli na przykład odbiorca kupuje towar i wybiera opcję „wysyłka” jako tryb dostawy, towar można wysłać z dowolnego magazynu w grupie realizacji, który ma dostępne zapasy. Na stronie szczegółów produktu (PDP) wyświetlany jest komunikat „W magazynie” dla wysyłki, jeśli dowolny dostępny magazyn wysyłkowy w grupie realizacji ma jego zapas. 
+
+    > [!IMPORTANT] 
+    > Ustawienie **Poziom zapasów dla wielu magazynów** jest dostępne w Commerce od wersji 10.0.19. W przypadku aktualizacji ze starszej wersji Commerce należy ręcznie zaktualizować plik appsettings.json. Aby uzyskać instrukcje, zobacz [Aktualizacje zestawu SDK i biblioteki modułów](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+
+- **Ustawienia zapasów dla stron listy produktów** — to ustawienie definiuje sposób, w jaki produkty są poza magazynem pokazywane na listach produktów renderowanych w modułach wyników gromadzenia produktów i wyników wyszukiwania. Dostępne wartości to **Wyświetlanie w kolejności z innymi produktami**, **Ukrywanie się niedostępnych produktów na liście** i **Wyświetlanie niedostępnych produktów na końcu listy**. Aby można było korzystać z tego ustawienia, najpierw należy skonfigurować wymagane ustawienia w programie Commerce Headquarters. Aby uzyskać więcej informacji, zobacz temat [Włączanie świadomości zapasów dla modułu wyników wyszukiwania](search-result-module.md#enable-inventory-awareness-for-the-search-results-module).
+
+    > [!IMPORTANT] 
+    > Ustawienie **Ustawienia zapasów dla stron listy produktów** jest dostępne w Commerce od wersji 10.0.20. W przypadku aktualizacji ze starszej wersji Commerce należy ręcznie zaktualizować plik appsettings.json. Aby uzyskać instrukcje, zobacz [Aktualizacje zestawu SDK i biblioteki modułów](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 - **Zakresy zapasów** — to ustawienie definiuje zakresy zapasów, które są wyświetlane w wiadomościach w modułach witryny. Ma to zastosowanie tylko wtedy, gdy wybrano wartość **Razem Dostępne** lub **Dostępne Fizycznie** dla poziomu **Poziom zapasów w oparciu o ustawienie**. Dostępne wartości to **Wszystkie**, **Mała ilość i wyprzedane** oraz **Wyprzedane**.
 
@@ -66,21 +71,21 @@ W module Commerce ustawienia zapasów są definiowane w **Ustawienia witryny \> 
 
 Pole Kup, Wishlist, selektor sklepu, koszyk i ikony koszyka Użyj ustawień zapasów, aby wyświetlić zakresy i komunikaty magazynowe.
 
-Poniższy obraz przedstawia przykład strony ze szczegółowymi informacjami o produkcie (PDP), która pokazuje komunikat w magazynie („Dostępny”).
+Na przykładzie na poniższej ilustracji w PDP jest wyświetlany komunikat o posiadaniu towaru w magazynie („Dostępny”).
 
-![Przykład modułu PDP, który ma komunikat w magazynie](./media/pdp-InStock.png)
+![Przykład modułu PDP, który ma komunikat w magazynie.](./media/pdp-InStock.png)
 
-Poniższy obraz pokazuje przykład PDP, który wyświetla komunikat „Wyprzedano”.
+Na przykładzie na poniższej ilustracji w PDP jest wyświetlany komunikat o braku towaru w magazynie („Wyprzedane”).
 
-![Przykład modułu PDP, który ma komunikat o wyprzedaniu](./media/pdp-outofstock.png)
+![Przykład modułu PDP, który ma komunikat o wyprzedaniu.](./media/pdp-outofstock.png)
 
-Poniższy obraz pokazuje przykład wózka z komunikatem o stanie magazynowym („Dostępne”).
+Na przykładzie na poniższej ilustracji w koszyku jest wyświetlany komunikat o posiadaniu towaru w magazynie („Dostępny”).
 
-![Przykład modułu koszyka, który ma komunikat w magazynie](./media/cart-instock.png)
+![Przykład modułu koszyka, który ma komunikat w magazynie.](./media/cart-instock.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Omówienie biblioteki modułów](starter-kit-overview.md)
+[Przegląd biblioteki modułów](starter-kit-overview.md)
 
 [Konfigurowanie buforów zapasów i poziomów zapasów](inventory-buffers-levels.md)
 
@@ -93,3 +98,6 @@ Poniższy obraz pokazuje przykład wózka z komunikatem o stanie magazynowym (�
 [Moduł wyboru sklepu](store-selector.md)
 
 [Aktualizacje zestawu SDK i biblioteki modułów](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

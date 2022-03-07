@@ -2,28 +2,27 @@
 title: Tworzenie celu
 description: Można tworzyć cele, dodawać działania do celów, śledzić miary oraz łączyć cele z przeglądem.
 author: andreabichsel
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EssWorkspace, HcmGoal, HcmMeasurementDetailDialog, HcmPerfJournalAdd, HcmGoalChangeSettings, HcmEmployeeDevelopmentWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2157e3b31786c8f0412ea447831e45a2290b8e35
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c6e329c2219c57f83ef02f9fa224bcac84fb83fa
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420007"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6055467"
 ---
 # <a name="create-a-goal"></a>Tworzenie celu
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Można tworzyć cele, dodawać działania do celów, śledzić miary oraz łączyć cele z przeglądem. Procedurę utworzono przy użyciu danych firmy demonstracyjnej USMF. Ta procedura dotyczy funkcji, która została dodana w programie Dynamics 365 for Operations w wersji 1611.
 
@@ -58,3 +57,6 @@ Można tworzyć cele, dodawać działania do celów, śledzić miary oraz łącz
     * Często istnieje kilka celów, które są takie same lub podobne dla członków zespołu lub wszystkich pracowników.     Administrator działu kadr lub kierownik może utworzyć grupy celów zawierające jeden lub więcej szablonów celów. Możesz dodać cele z grupy celów, a następnie zmodyfikować je, dostosowując do swojej osi czasu.  
     * Podczas tworzenia przeglądu można dodać do niego cele. Aby dowiedzieć się, jak dodać cele do swoich przeglądów, skorzystaj z przewodników po zadaniach dotyczących przeglądów.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

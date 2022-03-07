@@ -2,7 +2,7 @@
 title: Osadzanie aplikacji innych firm
 description: W tym temacie opisano sposób osadzania aplikacji innych firm w celu rozszerzenia funkcjonalności produktu.
 author: jasongre
-ms.date: 09/13/2021
+ms.date: 08/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,16 +13,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 89f101bcf33080f6a73664fe7c3fe6719de04a4e
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: b0471fd2ea9a5e8b07b9e8bc279da53f6a1539ca
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488241"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345417"
 ---
 # <a name="embed-third-party-apps"></a>Osadzanie aplikacji innych firm
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Wielu odbiorców używa wielu aplikacji do prowadzenia działalności gospodarczej. Niektóre z tych aplikacji to aplikacje sieci web innych firm, które działają w połączeniu z aplikacjami Finance and Operations. Aby zapewnić bezproblemowe korzystanie z aplikacji, można za pomocą funkcji **Aplikacje dla całej strony** osadzać aplikacje innych firm bezpośrednio w aplikacjach Finance and Operations (pod warunkiem że aplikacje innych firm pozwalają na osadzanie ich w tej aplikacji). Dzięki temu użytkownicy będą mieli dostęp do wymaganych przez nich witryn internetowych i aplikacji bez konieczności przełączania kart lub okien.
 

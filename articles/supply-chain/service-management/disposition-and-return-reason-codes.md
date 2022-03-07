@@ -1,22 +1,26 @@
 ---
-# required metadata
 title: Omówienie zwrotów od odbiorcy
 description: W ramach wsparcia procesu zwrotu produktów można tworzyć i stosować kody przyczyn zwrotu i kody dyspozycji.
 author: kamaybac
 ms.date: 07/25/2019
 ms.topic: overview
-ms.prod: null
-ms.technology: null
-ms.search.form: 'ReturnTableListPage, ReturnReasonCodeLookup'
+ms.prod: ''
+ms.technology: ''
+ms.search.form: ReturnTableListPage, ReturnReasonCodeLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.assetid: null
+ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
-ms.search.validFrom: '2016-02-28'
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0f0231cf33c9b422adc08e7244915ab8235b18ca
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983776"
 ---
-
 # <a name="customer-returns-overview"></a>Omówienie zwrotów od odbiorcy
 
 [!include [banner](../includes/banner.md)]

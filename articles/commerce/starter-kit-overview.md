@@ -1,37 +1,32 @@
 ---
-title: Omówienie biblioteki modułów
+title: Przegląd biblioteki modułów
 description: W tym temacie omówiono bibliotekę modułów Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: dfc52dd8e14bb2e9f2f9c026ee0e058aee4cedcb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f1301f61e6bc0d408d4883b238808f66b14abc2d372e97671c71ba7dd5174124
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415013"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6721983"
 ---
-# <a name="module-library-overview"></a>Omówienie biblioteki modułów
+# <a name="module-library-overview"></a>Przegląd biblioteki modułów
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie omówiono bibliotekę modułów Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 Biblioteka modułów Dynamics 365 Commerce to zbiór modułów, za pomocą których można utworzyć witrynę sieci Web e-Commerce. Moduły mają aspekty interfejsu użytkownika (UI) i aspekty zachowania funkcjonalnego.
 
@@ -66,3 +61,6 @@ W bibliotece modułów są dostępne następujące typy modułów:
 [Moduł nagłówka](author-header-module.md)
 
 [Moduł stopki](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

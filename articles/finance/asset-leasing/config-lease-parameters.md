@@ -1,23 +1,27 @@
 ---
-# required metadata
 title: Konfigurowanie parametrów wynajmu (wersja zapoznawcza)
-description: 'W tym temacie opisano ustawienia konfiguracji dotyczące wynajmu składników aktywów, takie jak informacje o zabezpieczeniach i ustawienia księgowania.'
+description: W tym temacie opisano ustawienia konfiguracji dotyczące wynajmu składników aktywów, takie jak informacje o zabezpieczeniach i ustawienia księgowania.
 author: moaamer
-ms.date: 01/11/2022
+ms.date: 10/28/2020
 ms.topic: article
-ms.prod: null
-ms.technology: null
-ms.search.form: AssetLeasePostingAccounts
+ms.prod: ''
+ms.technology: ''
+ms.search.form: TaxTable
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
-ms.search.validFrom: '2020-10-28'
+ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
+ms.openlocfilehash: c681f7d356752a2194a86bc7eaef6ceac1e0af6b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5816107"
 ---
-
 # <a name="configure-lease-parameters"></a>Konfigurowanie parametrów wynajmu
 
 [!include [banner](../includes/banner.md)]
@@ -35,11 +39,10 @@ Niektóre ustawienia konfiguracji wpływają na sposób działania wynajmu skła
 
     Jeśli ta opcja zostanie ustawiona na wartość **tak**, a typ przejścia księgi to **Skumulowana opcja A lub B**, system ustawi wartość pola **Krańcowa stopa procentowa** na **Krańcowa stopa procentowa przy przejściu** na stronie **Ustawienia księgi**. Jeśli ta opcja ma wartość **Nie**, stawka wynajmu głównego jest ustawiona na wartość pola **Stawka przyrostowego oprocentowania** na stronie **Szczegóły księgi**, niezależnie od typu przejścia w księdze.
 
-4. Ustawienie **Zezwalaj na cofnięcia amortyzacji w zamkniętej księdze** na **Tak** umożliwia wycofanie transakcji wydatku amortyzacji. Transakcje wydatku można wycofywać nawet po zamknięciu wersji księgi.
+4. Ustawienie **Zezwalaj na cofnięcia amortyzacji w zamkniętej wersji księgi** na **Tak** umożliwia wycofanie transakcji wydatku amortyzacji. Transakcje wydatku można wycofywać nawet po zamknięciu wersji księgi.
 
     > [!NOTE]
     > Zaleca się, aby ta opcja była ustawiona na wartość **Nie**. Ustawienie tej opcji jest używane jako weryfikacja i kontrola, która zapobiega przypadkowemu zamortyzowaniu zamkniętej wersji księgi. Pozostawienie wartości **Nie** tej opcji pozwala utrzymać dokładną wartość księgową netto i przyszłych obliczeń amortyzacji.
 
-5. Ustaw dla opcji **Zezwalaj na podział kwoty płatności** wartość **Tak** dlby umożliwić podział kwot płatności na skróconej karcie **wierszy harmonogramu płatności** na stronie **Dzierżawa**. Typy podziału płatności są definiowane w obszarze **Ustawienia** na stronie **Typy kwot płatności**. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Rejestracja nieobecności w module Czas i frekwencja
 description: W tym temacie opisano sposób obsługi nieobecności w module Czas i frekwencja.
 author: johanhoffmann
-manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JMGParameters, JmgAbsenceCalendar
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12a61f23ac5a16000275e53d3901c8aea202bab0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 06adca12c172dffa241fe44a6b64bb30863bcb4a8f3867429ad10bc852efd7c3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966637"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730233"
 ---
 # <a name="absence-registration-in-time-and-attendance"></a>Rejestracja nieobecności w module Czas i frekwencja
 
@@ -108,3 +106,6 @@ Przykładowo pracownica rejestruje się przy wyjściu o 10:00 i wybiera kod nieo
 ### <a name="calculate-and-approve-absence"></a>Obliczanie i zatwierdzanie nieobecności
 
 - Wybierz opcję **Czas i frekwencja** &gt; **Przejrzyj i zatwierdź** &gt; **Zatwierdź lub oblicz**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

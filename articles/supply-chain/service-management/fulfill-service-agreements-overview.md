@@ -1,23 +1,26 @@
 ---
-# required metadata
 title: Omówienie realizacji umów serwisowych
 description: Ten temat zawiera omówienie zadań związanych z wypełnianiem umów serwisowych.
 author: kamaybac
 ms.date: 05/03/2018
 ms.topic: overview
-ms.prod: null
-ms.technology: null
-ms.search.form: 'SMAServiceOrderTable, SMAAgreementTable'
+ms.prod: ''
+ms.technology: ''
+ms.search.form: SMAServiceOrderTable, SMAAgreementTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.assetid: null
+ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
-ms.search.validFrom: '2016-02-28'
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 39fe65638c413f5fbc1ea6ad4922e97f6e8fb35e
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985893"
 ---
-
-
 # <a name="fulfill-service-agreements-overview"></a>Omówienie realizacji umów serwisowych
 
 [!include [banner](../includes/banner.md)]

@@ -2,11 +2,9 @@
 title: Tworzenie i aktualizowanie przedziałów czasu na potrzeby odbiorów przez odbiorcę
 description: W tym temacie opisano sposób tworzenia, konfigurowania i aktualizowania przedziałów czasu odbioru klientów w centrali Commerce.
 author: anupamar-ms
-manager: AnnBe
 ms.date: 01/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.15 update
-ms.openlocfilehash: 125696e8f32c2452a572a2316f512779f399f5c4
-ms.sourcegitcommit: 8b4cb7b6ad4aab37566bcc91e426bd56db771416
+ms.openlocfilehash: c3da7474f9a61e97ee11688a18cb91a5ad1ccb5c
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "4828218"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791172"
 ---
 # <a name="create-and-update-time-slots-for-customer-pickup"></a>Tworzenie i aktualizowanie przedziałów czasu na potrzeby odbiorów przez odbiorcę
 
@@ -127,3 +125,6 @@ W aplikacji biura obsługi agenci biura obsługi mogą wybrać punkt odbioru lub
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Moduł informacji o odbiorze](../pickup-info-module.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,21 +1,26 @@
 ---
-# required metadata
 title: Omówienie planowania optymalizacji
 description: Ten temat zawiera omówienie funkcji sprzedaży przez biuro obsługi w optymalizacji planowania.
 author: ChristianRytt
 ms.date: 10/31/2019
 ms.topic: overview
-ms.prod: null
-ms.technology: null
+ms.prod: ''
+ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.assetid: null
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
-ms.search.validFrom: '2019-10-31'
+ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
+ms.openlocfilehash: 49da88be9faff8f327f8079245b3c07db79308e6
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983449"
 ---
 # <a name="planning-optimization-overview"></a>Omówienie planowania optymalizacji
 

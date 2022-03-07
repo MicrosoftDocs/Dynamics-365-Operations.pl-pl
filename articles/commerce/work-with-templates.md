@@ -2,36 +2,30 @@
 title: Praca z szablonami
 description: W tym temacie opisano, jak pracować z szablonami w Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-manager: annbe
-ms.date: 04/14/2020
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a3fc4259a76f6edcfaa0b8f6e08292477c6c0835
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ab6ccfac96249b39cb007d9a9fce10475f0c7149
+ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414954"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090801"
 ---
 # <a name="work-with-templates"></a>Praca z szablonami
-
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano, jak pracować z szablonami w Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 Zgodnie z tematem [Omówienie szablonów i układów](templates-layouts-overview.md), szablony definiują zbiór opcji dostępnych dla autorów podrzędnych. Szablony są przydatne dla zespołu tworzenia sieci Web w przedsiębiorstwie z kilku powodów, a strukturalne dobre szablony mogą pomóc we wszystkich następujących celach:
 
@@ -55,7 +49,7 @@ Zgodnie z tematem [Omówienie szablonów i układów](templates-layouts-overview
 
 Szablony są modyfikowane za pomocą edytora szablonów.
 
-Aby otworzyć Edytor szablonów, należy wykonać następujące kroki:
+Aby otworzyć edytor szablonów w kreatorze witryn Commerce, wykonaj jeden z poniższych kroków:
 
 - W okienku nawigacji w witrynie wybierz pozycję **Szablony**, a następnie wybierz szablon do zmodyfikowania.
 - W edytorze stron dla istniejącej strony wybierz węzeł górny w drzewie konspektu z lewej strony. Następnie w okienku właściwości po prawej stronie wybierz opcję **Edytuj szablon**.
@@ -72,7 +66,7 @@ Widok drzewa konspektu po lewej stronie zawiera opcje i struktury modułu dostę
 
 ## <a name="create-a-new-template"></a>Utwórz nowy szablon
 
-Aby utworzyć nowy szablon, należy wykonać poniższe kroki.
+Aby utworzyć szablon w konstruktorze witryn, należy wykonać następujące kroki.
 
 1. W okienku nawigacji w witrynie wybierz pozycję **Szablony**, a następnie otwórz szablon w widoku inspekcji.
 1. Wybierz **Nowy szablon**.
@@ -91,7 +85,7 @@ Szablon jest teraz technicznie prawidłowy i może być zapisany, zaewidencjonow
 
 ## <a name="add-a-header-and-a-footer"></a>Dodawanie nagłówka i stopki
 
-Jeśli witryna ma już fragment nagłówka, należy wykonać poniższe kroki w celu dodania nagłówka i stopki do szablonu.
+Jeśli twoja witryna posiada już fragment nagłówka, wykonaj poniższe kroki w konstruktorze witryn, aby dodać nagłówek i stopkę do szablonu.
 
 1. W drzewie konspektu rozwiń miejsce w **treści** i podrzędny moduł strony.
 1. Wybierz gniazdo **nagłówka**.
@@ -104,7 +98,7 @@ Jeśli witryna nie ma jeszcze fragmentu nagłówka, zapoznaj się z tematem [Two
 
 ## <a name="change-the-template-theme"></a>Zmień szablon motywu
 
-Aby określić domyślny motyw dla wszystkich stron korzystających z szablonu, wykonaj następujące kroki.
+Aby określić domyślny motyw dla wszystkich stron korzystających z szablonu, wykonaj następujące kroki w konstruktorze witryn.
 
 1. W drzewie konspektu z lewej strony rozwiń gniazdo w **treści**.
 1. W gnieździe **treści** wybierz moduł kontenera strony (na przykład **strona domyślna**).
@@ -116,7 +110,7 @@ Domyślnie wszystkie nowe strony używają teraz wybranej kompozycji. Aby strony
 
 Do szablonu można dodawać elementy **&lt;skryptu&gt;** HTML zawierające kod JavaScript. W ten sposób można udostępnić domyślne zachowania skryptów w sekcjach nagłówka HTML, początku treści oraz końcowych treści stron.
 
-Aby dodać skrypt do szablonu pracy, wykonaj następujące kroki.
+Aby dodać skrypt do szablonu w konstruktorze stron, należy wykonać następujące kroki.
 
 1. W drzewie konspektu z lewej strony wybierz gniazdo, w którym chcesz dodać element **&lt;skryptu&gt;** (np. nagłówek HTML, początek treści lub zakończenie treści).
 1. Wybierz przycisk wielokropka (...) dla gniazda, a następnie wybierz opcję **Dodaj moduł**.
@@ -129,7 +123,7 @@ Aby dodać skrypt do szablonu pracy, wykonaj następujące kroki.
 
 ## <a name="save-check-in-preview-and-publish-a-template"></a>Zapisywanie, zaewidencjonuj, przejrzyj i opublikuj szablon
 
-Aby zapisać i zewidencjonować szablon, wykonaj następujące kroki.
+Aby zapisać i zewidencjonować szablon w konstruktorze witryn, wykonaj następujące kroki.
 
 1. Wybierz opcję **Zapisz** u góry edytora szablonów. Zapisane zmiany nie wpływają na strony podrzędne, dopóki nie zostaną zaewidencjonowane.
 1. Wybierz opcję **Zakończ edycję**. Twoje zmiany są teraz wykrywalne dla podrzędnych przepływów pracy.
@@ -145,8 +139,23 @@ Po przejrzeniu zmian w szablonie należy wykonać jedną z następujących czynn
 > [!WARNING]
 > Po opublikowaniu szablon lub dowolny inny element systemu zarządzania zawartością (CMS) jest wykrywalny w Internecie. Nie Publikuj dokumentów ani zasobów, dopóki nie przygotujesz ich do publicznego udostępnienia. Wersje dokumentów, które zostały zapisane i zaewidencjonowane, ale nie zostały opublikowane, są wykrywalne tylko dla uwierzytelnionych użytkowników systemu.
 
+## <a name="rename-a-template"></a>Zmiana nazwy szablonu
+
+Aby zmienić nazwę istniejącego szablonu w kreatorze witryn, wykonaj poniższe kroki.
+
+1. W okienku nawigacji po lewej stronie wybierz pozycję **Szablony**.
+1. Wybierz nazwę szablonu, którego nazwę chcesz zmienić.
+1. Wybierz pozycję **Edytuj**, aby rozpocząć edytowanie szablonu. Zauważ, że nie możesz edytować szablonu, jeśli ktoś inny już go edytuje.
+1. W okienku właściwości szablonu wybierz symbol pióra znajdujący się obok nazwy.
+1. Edytuj nazwę szablonu stosownie do potrzeb.
+1. Zaznacz znacznik wyboru, aby potwierdzić zmianę nazwy.
+1. Wybierz opcję **Zakończ edycję**.
+
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Omówienie szablonów i układów](templates-layouts-overview.md)
 
 [Praca z układami predefiniowanymi](work-with-layouts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

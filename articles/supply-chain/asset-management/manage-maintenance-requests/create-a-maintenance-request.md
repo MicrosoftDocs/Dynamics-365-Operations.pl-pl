@@ -1,12 +1,10 @@
 ---
 title: Utwórz żądania konserwacji
 description: W tym temacie wyjaśniono, jak utworzyć żądanie konserwacji w zarządzaniu składnikami majątku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetRequestTableCreate
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f45378405d9ea06ae847d93b7eacd9badf6d7e00
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 4b48a0504b79d2edf7815296312c7839052092e7d6773b7ebd5d38cbb59c9428
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019185"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6714987"
 ---
 # <a name="create-maintenance-requests"></a>Utwórz żądania konserwacji
 
@@ -54,7 +52,7 @@ Sekcja **Aktywne żądania konserwacji** w okienku **Powiązane informacje** po 
 11. W polu **notatki** wprowadź wszelkie dodatkowe notatki, które są wymagane.
 12. Kliknij przycisk **OK**.
 
-![Utwórz żądanie konserwacji](media/03-manage-maintenance-requests.png)
+![Utwórz żądanie konserwacji.](media/03-manage-maintenance-requests.png)
 
 ## <a name="subsequent-processing-of-maintenance-requests"></a>Późniejsze przetwarzanie żądań konserwacji
 
@@ -69,7 +67,10 @@ W widoku szczegółów można aktualizować różne informacje. Oto kilka przyk�
 - Wybierz typ zadania konserwacji i, jeśli te informacje są istotne, wariant zadania konserwacji i profesję zadania.
 - W polach **szerokość** i **długość** geograficzna wprowadź współrzędne geograficzne. Wszystkie współrzędne, które są dodawane do żądania konserwacji są automatycznie przenoszone do powiązanego zlecenia pracy. 
 
-![Aktualizuj żądanie konserwacji](media/04-manage-maintenance-requests.png)
+![Aktualizuj żądanie konserwacji.](media/04-manage-maintenance-requests.png)
 
 > [!NOTE]
 > Jeśli wybierzesz składnik majątku podczas tworzenia żądania konserwacji, można dodać jeden błąd do zasobu. Po utworzeniu żądania konserwacji można dodać więcej błędów, zgodnie z żądaniem. Aby dodać błędy, wybierz opcję **błąd składnika majątku** na stronie **wszystkie żądania konserwacji**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

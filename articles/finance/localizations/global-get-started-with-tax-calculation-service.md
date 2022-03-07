@@ -2,7 +2,7 @@
 title: Rozpoczynanie pracy z obliczaniem podatku
 description: W tym temacie wyjaśniono, jak skonfigurować obliczanie podatku.
 author: wangchen
-ms.date: 01/05/2022
+ms.date: 08/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,77 +15,55 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ae2c20fe79c2f8fd8d102740441230ae443f16a3
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: a849343cda54745f5ba3afc53e2082e79f71a29a
+ms.sourcegitcommit: 86f0574363fb869482ef73ff294f345f81d17c5b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952528"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7562133"
 ---
 # <a name="get-started-with-tax-calculation"></a>Rozpoczynanie pracy z obliczaniem podatku
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje dotyczące sposobu rozpoczęcia pracy z obliczaniem podatku. Ta sekcja przeprowadzi użytkownika przez etapy projektowania na wysokim poziomie i konfiguracji Microsoft Dynamics Lifecycle Services (usługi LCS), Regulatory Configuration Service (RCS) Dynamics 365 Finance i Dynamics 365 Supply Chain Management. 
+[!include [banner](../includes/preview-banner.md)]
 
-Ta konfiguracja składa się z następujących trzech kroków.
+Ten temat zawiera informacje dotyczące sposobu rozpoczęcia pracy z obliczaniem podatku. Przeprowadzi użytkownika przez etapy konfiguracji Microsoft Dynamics Lifecycle Services (usługi LCS), Regulatory Configuration Services (RCS) Dynamics 365 Finance i Dynamics 365 Supply Chain Management. Następnie przegląda wspólny proces korzystania z funkcji obliczania podatków w transakcjach zarządzania Finance i Supply Chain Management.
+
+Ta konfiguracja składa się z następujących czterech kroków:
 
 1. W LCS zainstaluj dodatek do obliczania podatku.
 2. W RCS należy skonfigurować funkcję obliczania podatku. Te dane konfiguracyjne nie są specyficzne dla pojedynczej firmy. Można je udostępnić innym podmiotom prawnym w zarządzaniu Finance i Supply Chain Management.
 3. W Finance i Supply Chain Management dostaw skonfiguruj parametry obliczania podatku według firmy.
-
-## <a name="high-level-design"></a>Projektowanie na wysokim poziomie
-
-### <a name="runtime-design"></a>Projektowanie w czasie rzeczywistym
-
-Poniższa ilustracja pokazuje wysokopoziomowy projekt uruchamiania Obliczania podatków. Ponieważ Obliczanie podatku może być zintegrowane z wieloma aplikacjami Dynamics 365, na ilustracji wykorzystano integrację z aplikacją Finance jako przykład.
-
-1. Transakcja, taka jak zamówienie sprzedaży lub zamówienie zakupu, jest tworzona w Finance.
-2. Finance automatycznie używa domyślnych wartości grupy podatku od sprzedaży i grupy podatku od sprzedaży pozycji.
-3. Jeśli wybrano przycisk **Podatek od transakcji**, jest wyzwalane obliczanie podatku. Finance wysyła następnie plik z ładunkiem do usługi Obliczanie podatków.
-4. Usługa obliczania podatku dopasowuje ładunek do predefiniowanych reguł w funkcji podatkowej, aby znaleźć dokładniejszą grupę podatku od sprzedaży i grupę podatku od sprzedaży pozycji jednocześnie.
-
-    - Jeśli ładunek może być dopasowany do matrycy **Zastosowanie grupy podatkowej**, nadpisuje ona wartość grupy podatkowej sprzedaży wartością dopasowanej grupy podatkowej w regule stosowalności. W przeciwnym razie nadal będzie używać wartości grupy podatku od sprzedaży z Finance.
-    - Jeśli ładunek może być dopasowany do matrycy **Zastosowanie grupy podatkowej dla elementu**, nadpisuje ona wartość grupy podatkowej sprzedaży elementu wartością dopasowanej grupy podatkowej elementu w regule stosowalności. W przeciwnym razie nadal będzie używać wartości grupy podatku elementu od sprzedaży z Finance.
-
-5. Usługa Obliczania podatku określa ostateczne kody podatkowe, używając przecięcia grupy podatków od sprzedaży i grupy podatków od sprzedaży artykułu.
-6. Usługa Obliczania podatku oblicza podatek na podstawie ostatecznych określonych kodów podatków.
-7. Usługa Obliczania podatku zwraca wynik obliczenia podatku do Finance.
-
-![Projekt środowiska uruchomieniowego obliczania podatku.](media/tax-calculation-runtime-logic.png)
-
-### <a name="high-level-configuration"></a>Konfiguracja wysokiego poziomu
-
-Poniższe kroki zawierają ogólny przegląd procesu konfiguracji usługi Obliczania podatku.
-
-1. W LCS zainstaluj dodatek do **obliczania podatku** w swoim projekcie LCS.
-2. W RCS należy utworzyć funkcję **obliczania podatku**.
-3. W RCS należy skonfigurować funkcję **obliczania podatku**:
-
-    1. Wybierz wersję konfiguracji podatku.
-    2. Utwórz kody podatkowe.
-    3. Utwórz grupę podatkową.
-    4. Utwórz grupę podatkową dla przedmiotów.
-    5. Opcjonalnie: Stwórz możliwość zastosowania grupy podatkowej, jeśli chcesz zastąpić domyślną grupę podatku od sprzedaży, która jest wprowadzona z danych głównych klienta lub sprzedawcy.
-    6. Opcjonalnie: Stwórz możliwość zastosowania grupy przedmiotów, jeśli chcesz zastąpić domyślną grupę podatku od sprzedaży przedmiotów, która jest wprowadzona z danych głównych przedmiotów.
-
-4. W RCS ukończ i opublikuj nową wersję funkcji **Obliczania podatku**.
-5. W Finance wybierz opublikowaną funkcję **Obliczanie podatku**.
-
-Po wykonaniu tych kroków następujące ustawienia zostaną automatycznie zsynchronizowane z RCS do Finance.
-
-- Kody podatków
-- Grupy podatków
-- Grupy podatków dla pozycji
-
-Pozostałe sekcje w tym temacie przedstawiają bardziej szczegółowe kroki konfiguracji.
+4. W programie Finance and Supply Chain Management utwórz transakcje, takie jak zamówienia sprzedaży, i użyj funkcji Obliczanie podatku do określania i obliczania podatków.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Zanim będziesz mógł wykonać pozostałe procedury w tym temacie, muszą być spełnione następujące warunki wstępne:<!--TO HERE-->
+Przed wykonaniem procedur opisanych w tym temacie muszą być spełnione wymagania wstępne dotyczące poszczególnych typów środowiska:
+
+### <a name="for-a-production-environment"></a>W przypadku środowiska produkcyjnego
+
+W przypadku środowiska produkcyjnego muszą być spełnione następujące wymagania wstępne:
 
 - Musisz mieć dostęp do swojego konta usługi LCS i mieć wdrożony projekt usługi LCS ze środowiskiem warstwy 2 (lub wyższej), w którym jest uruchomiona wersja Dynamics 365 10.0.21 lub nowsza.
 - Musisz utworzyć środowisko RCS dla swojej organizacji i mieć dostęp do swojego konta. Aby uzyskać więcej informacji dotyczących sposobu tworzenia środowiska RCS, zobacz temat [Omówienie usługi Regulatory Configuration Service](rcs-overview.md).
+- Następujące funkcje muszą być włączone w obszarze roboczym **Zarządzanie funkcjami** w wdrożonym środowisku Finance lub Supply Chain Management, zależnie od indywidualnych potrzeb:
+
+    - Usługa obliczania podatku
+    - Obsługa wielu numerów rejestracji VAT
+    - Podatek w zleceniu przeniesienia
+
+- Następujące funkcje muszą być włączone w obszarze roboczym **Zarządzanie funkcjami** w wdrożonym środowisku RCS.
+
+    - Funkcje globalizacji
+
+### <a name="for-a-test-environment-public-preview"></a>W przypadku środowiska testowego (publiczna wersja zapoznawcza)
+
+W przypadku środowiska testowego muszą być spełnione następujące wymagania wstępne:
+
+- Musisz mieć dostęp do swojego konta usługi LCS i mieć wdrożony projekt usługi LCS ze środowiskiem warstwy 2 (lub wyższej), w którym jest uruchomiona wersja Dynamics 365 10.0.21 lub nowsza wersja.
+- Musisz utworzyć środowisko RCS dla swojej organizacji i mieć dostęp do swojego konta. Aby uzyskać więcej informacji dotyczących sposobu tworzenia środowiska RCS, zobacz temat [Omówienie usługi Regulatory Configuration Service](rcs-overview.md).
+- Musisz skontaktować się z firmą Microsoft, wysyłając e-mail na adres <taxcalc@microsoft.com>, w sprawie włączenia lotowania w wdrożonym środowisku Finance lub Supply Chain Management.
 - Następujące funkcje muszą być włączone w obszarze roboczym **Zarządzanie funkcjami** w wdrożonym środowisku Finance lub Supply Chain Management, zależnie od indywidualnych potrzeb:
 
     - Usługa obliczania podatku
@@ -115,7 +93,15 @@ Kroki w tej sekcji nie są powiązane z określoną firmą. Tę procedurę nale�
 5. W polu **Typ** wybierz **Globalne**.
 6. Kliknij przycisk **Otwórz**.
 7. Przejdź do **Modelu danych podatkowych**, rozwiń drzewo plików, a następnie wybierz pozycję **Konfiguracja podatków**.
-8. Wybierz poprawną [wersję konfiguracji podatku](global-tax-calcuation-service-overview.md#versions) zależnie od wersji modułu Finance, a następnie wybierz pozycję **Importuj**.
+8. Wybierz poprawną wersję konfiguracji podatku zależnie od wersji modułu Finance, a następnie wybierz pozycję **Importuj**.
+
+    | Wersja wydania | Konfiguracja podatku                       |
+    | --------------- | --------------------------------------- |
+    | 10.0.18         | Konfiguracja podatku — Europa 30.12.82     |
+    | 10.0.19         | Konfiguracja obliczania podatku 36.38.193 |
+    | 10.0.20         | Konfiguracja obliczania podatku 40.43.208 |
+    | 10.0.21         | Konfiguracja obliczania podatku 40.48.215 |
+
 9. W obszarze roboczym **Funkcje globalizacji**, wybierz opcję **Funkcje**, wybierz kafelek **Obliczania podatku**, a następnie wybierz opcję **Dodaj**.
 10. Umożliwia wybór jednego z następujących typów funkcji:
 
@@ -236,7 +222,7 @@ Konfigurację w tej sekcji konfiguruje firma. Należy je skonfigurować dla każ
 3. Na karcie **Obliczania** zdefiniuj oczekiwaną regułę zaokrąglania dla firmy. Aby uzyskać więcej informacji o logice zaokrąglania, zobacz temat [Reguły zaokrąglania obliczania podatku](https://go.microsoft.com/fwlink/?linkid=2166988).
 4. Na karcie **Obsługa błędów** zdefiniuj oczekiwaną metodę obsługi błędów dla firmy. Dostępne są trzy opcje:
 
-    - Nie
+    - Nr
     - Ostrzeżenie
     - Wadliwe
 
@@ -244,3 +230,42 @@ Konfigurację w tej sekcji konfiguruje firma. Należy je skonfigurować dla każ
 
 5. Na karcie **Wiele rejestracji podatku VAT** można włączyć oddzielnie działanie deklaracji VAT, listy sprzedaży do UE oraz raportów Intrastat w scenariuszach wielu rejestracji podatku VAT. Aby uzyskać więcej informacji o raportowaniu podatku w przypadku wielu rejestracji VAT, zobacz temat [Raportowanie dla wielu numerów rejestracji podatku VAT](emea-reporting-for-multiple-vat-registrations.md).
 6. Zapisz konfigurację i wykonaj te same kroki z każdą dodatkową firmą. Gdy zostanie opublikowana nowa wersja i ma zostać zastosowana, ustaw pole **Konfiguracja funkcji** na karcie **Ogólne** strony **Parametry obliczania podatku** (krok 2).
+
+## <a name="transaction-processing"></a>Przetwarzanie transakcji
+
+Po zakończeniu wszystkich procedur konfiguracji można użyć obliczania podatku w celu ustalenia i obliczenia podatku w Finance. Kroki przetwarzania transakcji pozostają takie same. W wersji finansów 10.0.21 są obsługiwane następujące transakcje:
+
+- Proces sprzedaży
+
+    - Oferta sprzedaży
+    - Zamówienie sprzedaży
+    - Potwierdzenie
+    - Lista pobrania
+    - Dokument dostawy
+    - Faktura sprzedaży
+    - Faktura kredytowa
+    - Zwróć zamówienie
+    - Opłata w nagłówku
+    - Opłata z wiersza
+
+- Proces zakupu
+
+    - Zamówienie zakupu
+    - Potwierdzenie
+    - Lista przychodu
+    - Dokument przyjęcia produktów
+    - Faktura zakupu
+    - Opłata w nagłówku
+    - Opłata z wiersza
+    - Faktura kredytowa
+    - Zwróć zamówienie
+    - Zapotrzebowanie na zakup
+    - Stan wiersza zapotrzebowania na zakup
+    - Zapytanie ofertowe
+    - Opłata od nagłówka zapytania ofertowego
+    - Opłata od nagłówka zapytania ofertowego
+
+- Proces zapasów
+
+    - Przeniesienie zamówienia - wysyłka
+    - Zamówienie przeniesienia - przyjęcie

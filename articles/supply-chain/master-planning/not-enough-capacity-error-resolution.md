@@ -1,6 +1,6 @@
 ---
 title: Napraw błąd silnika planowania „Nie można znaleźć wystarczającej pojemności” i skończoną pojemność
-description: 'Ten temat zawiera informacje o przyczynach i rozwiązaniach problemu polegającego na tym, że nie można zaplanować zlecenia produkcyjnego %1. Nie znaleziono wystarczających zdolności produkcyjnych”.'
+description: Ten temat zawiera informacje o przyczynach i rozwiązaniach problemu polegającego na tym, że nie można zaplanować zlecenia produkcyjnego %1. Nie znaleziono wystarczających zdolności produkcyjnych”.
 author: ChristianRytt
 ms.date: 7/29/2021
 ms.topic: article
@@ -9,10 +9,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: crytt
-ms.search.validFrom: '2021-07-19'
+ms.search.validFrom: 2021-07-19
 ms.dyn365.ops.version: 10.0.20
+ms.openlocfilehash: becd537d37a8ba8931f2598dccbae8554a4d168e
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985037"
 ---
-
 # <a name="fix-the-not-enough-capacity-could-be-found-scheduling-engine-error"></a>Usuwanie błędu aparatu planowania „Nie znaleziono wystarczających zdolności produkcyjnych”
 
 [!include [banner](../includes/banner.md)]

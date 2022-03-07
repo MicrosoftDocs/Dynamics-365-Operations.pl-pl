@@ -1,21 +1,25 @@
 ---
-# required metadata
 title: Raport warunków płatności w transakcjach handlowych (PL-00053)
 description: Ten temat zawiera informacje dotyczące raportu Warunki płatności oraz informacje dotyczące jego konfigurowania i generowania.
 author: sndray
 ms.date: 01/07/2022
 ms.topic: article
-ms.prod: null
-ms.technology: null
-ms.search.form: null
+ms.prod: ''
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Poland
 ms.author: sndray
-ms.search.validFrom: null
+ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.24
+ms.openlocfilehash: 185cda99ab03189b25e4d79d080e62ffedd483d5
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7965127"
 ---
-
 # <a name="payment-terms-in-commercial-transactions-report"></a>Raport warunków płatności w transakcjach handlowych
 
 [!include [banner](../includes/banner.md)]

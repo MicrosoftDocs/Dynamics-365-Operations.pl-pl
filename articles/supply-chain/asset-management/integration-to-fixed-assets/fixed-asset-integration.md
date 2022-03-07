@@ -1,7 +1,7 @@
 ---
 title: Integrowanie zarządzania składnikami majątku ze środkami trwałymi
 description: W tym temacie opisano sposób integrowania modułów zarządzanie składnikami majątku i Środki trwałe, dzięki czemu można łączyć środki trwałe z konserwowanymi składnikami majątku.
-author: johanhoffmann
+author: kamaybac
 ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
@@ -9,15 +9,15 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: johanho
+ms.author: dabourq
 ms.search.validFrom: 2020-04-17
-ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 40e4fdce50b335668a53d2efe53b7cf6c66f364f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.11
+ms.openlocfilehash: 63ab3e772d54c7d27ade1c0cef07f275f49a143ad382fe618035117bca2cd43d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567590"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6746287"
 ---
 # <a name="integrate-asset-management-with-fixed-assets"></a>Integrowanie zarządzania składnikami majątku ze środkami trwałymi
 

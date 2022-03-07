@@ -2,11 +2,9 @@
 title: Wyświetlanie i eksportowanie opisów pól
 description: W tym artykule opisano, jak wyświetlać opisy pól i jak używać strony Opisy pól do eksportowania opisów.
 author: rschloma
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: FieldDescriptions
 audience: Application User, Developer, IT Pro
@@ -17,16 +15,19 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 39dd9a86ffb04d18f61c75fb2c9634e441dc823b
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: ea52c39ef1c7d7b62f20da9fe4d94103119ccc23
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797906"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069280"
 ---
 # <a name="view-and-export-field-descriptions"></a>Wyświetlanie i eksportowanie opisów pól
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 W tym artykule opisano, jak wyświetlać opisy pól i jak używać strony Opisy pól do eksportowania opisów.
 
@@ -45,7 +46,7 @@ Opisy pól można wyświetlić, umieszczając kursor myszy nad polem. Jeśli opi
 
 Na poniższej ilustracji przedstawiono opis pola, który pojawia się po umieszczeniu wskaźnika myszy nad polem **Zablokuj pozycje podczas inwentaryzacji**.
 
-[![Przykład opisu pola](./media/field-description.png)](./media/field-description.png)
+[![Przykład opisu pola.](./media/field-description.png)](./media/field-description.png)
 
 ## <a name="use-the-field-descriptions-page-to-view-and-export-field-help"></a>Używanie strony Opisy pól do wyświetlania i eksportowania pomocy dla pól
 
@@ -107,3 +108,6 @@ Aby uzyskać informacje o różnych sposobach znajdowania stron, zobacz sekcję 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Dostosowywanie opisów pól](../../dev-itpro/user-interface/customize-field-help.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

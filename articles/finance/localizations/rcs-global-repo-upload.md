@@ -1,23 +1,27 @@
 ---
-# required metadata
 title: Tworzenie konfiguracji raportowania elektronicznego w RCS i przekazywanie ich do repozytorium globalnego
 description: W tym temacie objaśniono sposób tworzenia konfiguracji Raportowania elektronicznego (ER) w usługach Microsoft Regulatory Configuration Services (RCS) i przekazywania jej do repozytorium globalnego.
 author: JaneA07
 ms.date: 01/11/2021
 ms.topic: article
-ms.prod: null
-ms.technology: null
-ms.search.form: 'ERSolutionTable, ERWorkspace, RCS'
+ms.prod: ''
+ms.technology: ''
+ms.search.form: ERSolutionTable, ERWorkspace, RCS
 audience: Application User
 ms.reviewer: kfend
 ms.custom: 97423
-ms.assetid: null
+ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
-ms.search.validFrom: '2020-02-01'
+ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
+ms.openlocfilehash: eb04362d6d7261af56d2940b085fbc8d43c9d662
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7965096"
 ---
-
 # <a name="create-er-configurations-in-regulatory-configuration-services-rcs-and-upload-them-to-the-global-repository"></a>Tworzenie konfiguracji raportowania elektronicznego w usługach Regulatory Configuration Services (RCS) i przekazywanie ich do repozytorium globalnego
 
 [!include [banner](../includes/banner.md)]

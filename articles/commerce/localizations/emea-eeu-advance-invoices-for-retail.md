@@ -2,11 +2,9 @@
 title: Faktury zaliczkowe w rozwiązaniu Commerce dla Europy Wschodniej
 description: W tym temacie opisano, jak skonfigurować faktury zaliczkowe w aplikacji Commerce dla Europy Wschodniej.
 author: epopov
-manager: annbe
 ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
@@ -15,12 +13,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: d27eec5ad2ec12d1f2e617fc3e182e2bbefa39a9
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 4433dfad61aacb41aba9cf233515460410c7260304e8e3d690b015b193ffe774
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017247"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718692"
 ---
 # <a name="advance-invoices-for-commerce-for-eastern-europe"></a>Faktury zaliczkowe w rozwiązaniu Commerce dla Europy Wschodniej
 
@@ -32,7 +30,7 @@ W Polsce, na Węgrzech i w Czechach po otrzymaniu od klienta przedpłaty za poś
 
 Gdy faktura za zamówienie sprzedaży jest finalnie księgowana, ostateczny dokument powinien uwzględniać dane faktury zaliczkowej z oznaczeniem wszelkich przedpłat.
 
-Jeśli generujesz zamówienia sprzedaży z modułu Rozrachunki z odbiorcami, należy ręcznie wygenerować faktury zaliczkowe przy użyciu procedury opisanej w temacie [Faktury zaliczkowe dla Europy Wschodniej](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/emea-advance-invoice). Jeśli generujesz zamówienia sprzedaży z aplikacji POS, system automatycznie wygeneruje i zaksięguje faktury zaliczkowe.
+Jeśli generujesz zamówienia sprzedaży z modułu Rozrachunki z odbiorcami, należy ręcznie wygenerować faktury zaliczkowe przy użyciu procedury opisanej w temacie [Faktury zaliczkowe dla Europy Wschodniej](/dynamics365/unified-operations/financials/localizations/emea-advance-invoice). Jeśli generujesz zamówienia sprzedaży z aplikacji POS, system automatycznie wygeneruje i zaksięguje faktury zaliczkowe.
 
 ## <a name="supported-scenarios"></a>Obsługiwane scenariusze
 
@@ -87,3 +85,6 @@ Wykonaj następujące kroki, aby umożliwić drukowanie dokumentów z aplikacji 
 
 4. Wybierz kolejno opcje **Retail i Commerce \> Retail i Commerce IT \> Harmonogram dystrybucji**.
 5. Wybierz zadanie **1090**, a następnie kliknij przycisk **Uruchom teraz**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.22 (listopad 2021 r.)
+title: Wersja zapoznawcza Dynamics 365 Supply Chain Management 10.0.22 (listopad 2021)
 description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Supply Chain Management 10.0.22.
 author: kamaybac
 ms.date: 08/09/2021
@@ -10,18 +10,19 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: a795f88aed78582ad4a2faa90ab1c2529017850f
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 3f5166338aebe784fe7f95372a437d4ed660de77
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778164"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579719"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10022-november-2021"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.22 (listopad 2021 r.)
+# <a name="preview-of-dynamics-365-supply-chain-management-10022-november-2021"></a>Wersja zapoznawcza Dynamics 365 Supply Chain Management 10.0.22 (listopad 2021)
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-W tym temacie wymieniono nowe oraz zmienione funkcje dostępne w programie Microsoft Dynamics 365 Supply Chain Management w wersji 10.0.22. Ta wersja ma numer kompilacji 10.0.995 i jest dostępna w następujący sposób:
+W tym temacie wymieniono nowe oraz zmienione funkcje dostępne w programie Microsoft Dynamics 365 Supply Chain Management w wersji zapoznawczej 10.0.22. Ta wersja ma numer kompilacji 10.0.995 i jest dostępna w następujący sposób:
 
 - **Wersja zapoznawcza:** wrzesień 2021
 - **Ogólna dostępność wydania (samodzielna aktualizacja):** październik 2021 r.
@@ -39,11 +40,13 @@ To wydanie zawiera funkcje, które są podane w następującej tabeli. Kolumna *
 
 W poniższej tabeli wymieniono rozszerzenia funkcji, które są zawarte w tym wydaniu. Każde z tych rozszerzeń zapewnia stopniowe ulepszanie istniejącej funkcji. Ponieważ są to tylko rozszerzenia, nie są one wymienione w [planie wydawniczym](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features). Aby jednak mieć pewność, że te ulepszenia nie będą kolidować z istniejącymi ustawieniami lub preferencjami użytkownika, każde z nich jest domyślnie wyłączone (chyba że zaznaczono inaczej). Aby korzystać z tych funkcji, należy jawnie włączyć te funkcje w [zarządzaniu funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-| Moduł | Nazwa funkcji w zarządzaniu funkcjami | Więcej informacji |
+| Obszar funkcji | Nazwa funkcji w zarządzaniu funkcjami | Więcej informacji |
 |---|---|---|
+| Zarządzanie kosztami | Tworzenie powiązanych załączników dla standardowych przeszacowań zaokrąglania kosztów | <p>W przypadku księgowania finansowego zapasów (np. faktury zamówienia sprzedaży lub transakcji magazynowej) ta funkcja powoduje, że system tworzy oddzielny załącznik dla dowolnych powiązanych przeszacowań zaokrąglania kosztów standardowych i dołącza go do finansowego załącznika księgowania jako powiązany załącznik.</p><p>Bez tej funkcji system rejestruje standardowe przeszacowania zaokrąglania kosztów na tym samym księgowaniu załącznika. Takie zachowanie może czasem powodować konflikt z informacjami o datach, ponieważ w przeszacowaniach jest używana daty sesji lub systemowa, podczas gdy w księgowaniach finansowych jest używana data księgowania.</p> |
 | Rozproszona topologia hybrydowa | *(Nie jest wymagane zarządzanie funkcjami).* | <p>Ta wersja rozszerza możliwości planowania wysyłki ładunku wychodzącego z obciążenia pracą zarządzania magazynem dla jednostek skalowania chmury i krawędzi.</p><p>Aby uzyskać więcej informacji, zobacz temat [Obciążenia pracą dotyczące zarządzania magazynem dla jednostek skalowania chmury i urządzenia brzegowego](../cloud-edge/cloud-edge-workload-warehousing.md).</p> |
 | Zarządzanie zmianami projektowymi | Generowanie wariantów produktów projektowych | <p>Ta funkcja umożliwia generowanie kilku wariantów produktu inżynieryjnego na podstawie jego wymiarów koloru, rozmiaru, stylu lub konfiguracji.</p><p>Aby uzyskać więcej informacji, zobacz [Generowanie wariantów dla produktów inżynieryjnych](../engineering-change-management/engineering-variants.md).</p> |
 | Zarządzanie zapasami i magazynem | Integracja Widoczności zapasów z przesunięciem rezerwacji | <p>Tę funkcję można włączyć tylko po włączeniu funkcji *Integracja z widocznością zapasów*. Zapewnia ona funkcjonalność kompensowania rezerwacji, które są dokonywane na widoczności zapasów.</p><p>Więcej informacji zawiera temat [Rezerwacje dodatku Widoczność magazynu](../inventory/inventory-visibility-reservations.md).</p> |
+| Sprzedaż i marketing | Ograniczenie liczby zamówień sprzedaży, które można wybierać do księgowania | <p>Ta funkcja jest domyślnie włączona. Dodaje pole **Maksymalna liczba zamówień sprzedaży do zaksięgowania** do strony **Parametry rozrachunków z odbiorcami**. To pole umożliwia zdefiniowanie maksymalnej liczby zamówień sprzedaży, które można wybrać podczas księgowania potwierdzeń, list pobrania, dokumentów dostawy i faktur z strony listy zamówień sprzedaży. Wartość domyślna to *100*.</p><p>Ta funkcja pomaga zwiększyć wydajność strony listy zamówień sprzedaży po wybraniu znaczącej liczby zamówień sprzedaży. Nie ma to wpływu na liczbę zamówień sprzedaży, które mogą być przetwarzane przez zadanie okresowe.</p> |
 
 ## <a name="new-and-updated-documentation-resources"></a>Nowe i zaktualizowane zasoby dokumentacji
 
@@ -60,7 +63,7 @@ Niedawno dodano lub znacząco zaktualizowano następujące tematy pomocy. Te tem
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizacja platformy dla aplikacji Finance and Operations
 
-Pakiet Microsoft Dynamics 365 Supply Chain Management 10.0.22 zawiera aktualizację platformy. Aby dowiedzieć się więcej, zobacz [aktualizacje platformy dla wersji 10.0.22 aplikacji Finance and Operations (listopad 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22.md).
+Pakiet Microsoft Dynamics 365 Supply Chain Management 10.0.22 zawiera aktualizację platformy. Aby dowiedzieć się więcej, zobacz [aktualizacje platformy dla wersji 10.0.22 aplikacji Finance and Operations (listopad 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22.md). <!-- KFM: Confirm link -->
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 

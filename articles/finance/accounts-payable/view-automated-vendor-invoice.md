@@ -2,11 +2,9 @@
 title: Wyświetlanie wyników automatyzacji faktur od dostawców (wersja zapoznawcza)
 description: W tym temacie opisano sposób wyświetlania stanu faktur od dostawców w zautomatyzowanym procesie przesyłania do przepływu pracy.
 author: abruer
-manager: AnnBe
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-09-08
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: baa2f1f55dfb9bb93b4f27c45db563e39850dd37
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e7ec69177cdb4f6304b75016963f4111bbfde6ed975d66ffa702426a68dce640
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969733"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728968"
 ---
 # <a name="view-vendor-invoice-automation-results"></a>Wyświetlanie wyników automatyzacji faktur od dostawców
 
@@ -37,3 +35,6 @@ Jeśli zaimportowana faktura podlega procesowi przesyłania do przepływu pracy�
 - **Wstrzymane** — wykonywane są zautomatyzowane procesy zdefiniowane na stronie **Parametry rozrachunków z dostawcami**, ale co najmniej jeden krok w procesie nie powiódł się. Stan **Wstrzymane** jest również stosowany, jeśli w polu **Uwzględnij w zautomatyzowanym przetwarzaniu** jest ustawiona wartość **Nie**. Te błędy można wyświetlić, wybierając opcję **Wyświetl ostatnie wyniki**.
 - **W przepływie pracy** — zaimportowana faktura została przesłana do systemu przepływu pracy przez zautomatyzowany proces przesyłania do przepływu pracy lub ręcznie.
 - **Przepływ pracy ukończony** — ukończono proces przepływu pracy dla zaimportowanej faktury.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

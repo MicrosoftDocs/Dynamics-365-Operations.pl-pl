@@ -2,9 +2,11 @@
 title: Rozwiązywanie problemów z Dynamics 365 Payment Connector w przypadku problemów z Adyen
 description: Ten temat zawiera wskazówki dotyczące rozwiązywania problemów, które mogą pomóc w uzyskania pomocy technicznej w przypadku problemów z łącznikiem płatności Microsoft Dynamics 365 dla Adyen.
 author: Reza-Assadi
+manager: AnnBe
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -15,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: f40e29a17fe860440bd8192a89b0f5150f0db9ab213b2190f9deaf33a4f2aaba
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f01db3fa670355696c094be544775a3abc557a70
+ms.sourcegitcommit: 6c108be3378b365e6ec596a1a8666d59b758db25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743942"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "5585476"
 ---
 # <a name="troubleshoot-dynamics-365-payment-connector-for-adyen-issues"></a>Rozwiązywanie problemów z Dynamics 365 Payment Connector w przypadku problemów z Adyen
 

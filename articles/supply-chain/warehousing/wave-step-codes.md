@@ -1,10 +1,12 @@
 ---
 title: Kody kroku grupy czynności
 description: Ten temat zawiera przegląd kodów etapów grupy czynności oraz sposobu ich używania.
-author: Mirzaab
+author: josaw1
+manager: tfehr
 ms.date: 09/06/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWaveTableListPage, WHSWaveStepCode, WHSReplenishmentTemplates, WHSWaveTemplateTable
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: perlynne
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c32e795fcb12be02d9c9324051101fa378935303
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: c28134b9be92802196b4861cbd20801419ef8d23
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572248"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5212682"
 ---
 # <a name="wave-step-codes"></a>Kody kroku grupy czynności
 

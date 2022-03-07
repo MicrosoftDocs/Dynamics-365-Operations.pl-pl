@@ -2,9 +2,11 @@
 title: Wymiary finansowe i księgowanie
 description: Podczas planowania i konfigurowania planu kont należy wziąć pod uwagę, jak różne składniki będą współpracowały podczas księgowania dokumentu lub arkusza. Te składniki obejmują struktury kont, zaawansowane reguły oraz wymiary bilansowania i stałe. W tym temacie przestawiono poszczególne składniki i opisano sposób ich współdziałania.
 author: aprilolson
+manager: AnnBe
 ms.date: 08/04/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerChartofAccounts,DimensionDetails
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 9e7416c1ed69fa9783694e2adee7ada4e25e14054daeb1761428855690eb522f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a6179841259186c8438c72bb4a4f9cd2bf5dbaa8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778973"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985094"
 ---
 # <a name="financial-dimensions-and-posting"></a>Wymiary finansowe i księgowanie 
 
@@ -71,29 +73,29 @@ Ludzie często pytają o kolejność uruchamiania różnych składników. Bardzo
 
 Na poniższej ilustracji przedstawiono stały wymiar domyślny ustawiony na koncie głównym 401100.
 
-[![Domyślne wymiary finansowe.](./media/default-dimensions.png)](./media/default-dimensions.png)
+[![Domyślne wymiary finansowe](./media/default-dimensions.png)](./media/default-dimensions.png)
 
 W tym bardzo podstawowym przykładzie wprowadzimy arkusz finansowy, gdzie dla wymiaru Dział skonfigurowano używanie wartości domyślnej **023** (Operacje). Wprowadzimy i zaksięgujemy na koncie księgowym. Poniższa ilustracja pokazuje domyślny wymiar finansowy w nagłówku księgi głównej.
 
-[![Arkusze finansowe.](./media/general-journal.png)](./media/general-journal.png)
+[![Arkusze finansowe](./media/general-journal.png)](./media/general-journal.png)
 
 Wymiar domyślny w nagłówku arkusza spowoduje, że dział 023 będzie stosowany domyślnie do wiersza konta sprzedaży. Na poniższej ilustracji przedstawiono wiersz arkusza finansowego, gdzie jest stosowana domyślna wartość wymiaru **023** z nagłówka.
 
-[![Załącznik arkusza.](./media/journal-voucher.png)](./media/journal-voucher.png)
+[![Załącznik arkusza](./media/journal-voucher.png)](./media/journal-voucher.png)
 
 Jednak podczas księgowania wiersza jest stosowany wymiar stały, a wiersz jest księgowany do działu 022. Na poniższej ilustracji przedstawiono zaksięgowany załącznik, w którym do konta sprzedaży został zastosowany stały wymiar.
 
-[![Transakcje z załącznikami z zastosowanym stałym wymiarem.](./media/voucher-transactions.png)](./media/voucher-transactions.png)
+[![Transakcje na załączniku](./media/voucher-transactions.png)](./media/voucher-transactions.png)
 
 ### <a name="example-2"></a>Przykład 2
 
 W tym przykładzie użyto tych samych ustawień, co w pierwszym przykładzie. Jednak dodamy drugi składnik i użyjemy wymiaru Dział jako wymiaru bilansowania. Na poniższej ilustracji **Dział** jest ustawiony jako wymiar finansowy bilansowania w księdze firmy USMF.
 
-[![Ilustracja przedstawiająca departament jako wymiar finansowy bilansowania.](./media/ledger.png)](./media/ledger.png)
+[![Księga](./media/ledger.png)](./media/ledger.png)
 
 Gdy jest używana ta sama konfiguracja nagłówka arkusza i księgowana ta sama transakcja, stały wymiar jest stosowany najpierw. Następnie jest stosowana logika bilansowania w celu zagwarantowania, że każdy dział ma wpis zbilansowany. Na poniższej ilustracji przedstawiono transakcje załączników, które zawierają zapis bilansowania po zastosowaniu wymiaru stałego.
 
-[![Transakcje z załącznikiem po zastosowaniu zapisu bilansowania.](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
+[![Transakcje na załączniku](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
 
 ### <a name="example-3"></a>Przykład 3
 
@@ -101,11 +103,11 @@ W tym przykładzie dodamy regułę zaawansowaną. Reguła zaawansowana określa,
 
 Ten przykład jest ważny ze względu na kolejność. Struktura konta jest ustalana po wprowadzeniu konta głównego. Po utworzeniu odwołania do konfiguracji struktury konta system może określić, że istotne są konto główne, jednostka biznesowa, dział i centrum kosztów. W tym momencie reguła zaawansowana nie została jeszcze zainicjowana, ponieważ stałe wymiary nie są stosowane, dopóki w załączniku arkusza nie zastosowano wymiarów domyślnych podczas księgowania. Na poniższej ilustracji segment Odbiorca nie jest obecny, ponieważ nie zostały spełnione kryteria reguły zaawansowanej.
 
-[![Konto finansowe.](./media/drop-down.png)](./media/drop-down.png)
+[![Konto finansowe](./media/drop-down.png)](./media/drop-down.png)
 
 Księgowanie się nie powiedzie, ponieważ na końcu procesu zastosowano stały wymiar. Funkcja weryfikacji wymiarów stwierdza, że segment Odbiorca jest wymagany, jeśli kontem głównym jest 401100, a działem 022. Księgowanie nie może nastąpić z powodu błędu sprawdzania poprawności. Na poniższej ilustracji przedstawiono komunikat, który jest wyświetlany, gdy funkcja weryfikacji wymiarów stwierdzi, że segment Odbiorca jest wymagany.
 
-[![Szczegóły komunikatu.](./media/message.png)](./media/message.png)
+[![Szczegóły komunikatu](./media/message.png)](./media/message.png)
 
 W tym przykładzie należy zastąpić wartość domyślną, tak aby reguła zaawansowana była inicjowana i można było wprowadzić segment Odbiorca. Jednak to rozwiązanie nie zawsze jest możliwe, a niektórzy użytkownicy nawet nie są świadomi istnienia reguł księgowania. W związku z tym ważna jest znajomość kolejności stosowania wymiarów domyślnych podczas konfigurowania planu kont.
 
@@ -119,11 +121,8 @@ Niektóre z poniższych zasobów odnoszą się do starszej wersji naszego oprogr
 
 [Planowanie planu kont](plan-chart-of-accounts.md) 
 
-[Planowanie planu kont w systemie AX 2012 (blog)](/archive/blogs/axsa/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7) — to łącze prowadzi do 1. części siedmioczęściowej serii.
+[Planowanie planu kont w systemie AX 2012 (blog)](https://blogs.msdn.microsoft.com/axsa/2014/06/12/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7/) — to łącze prowadzi do 1. części siedmioczęściowej serii.
 
-[Ustawienia domyślne wymiarów w zasadach podziałów księgowań](/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-in-accounting-distributions-part-1-introduction)
+[Ustawienia domyślne wymiarów w zasadach podziałów księgowań](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2013/12/16/dimension-defaulting-in-accounting-distributions-part-1-introduction/)
 
-[Ustawienia domyślne wymiarów w strukturze wymiarów](/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[Ustawienia domyślne wymiarów w strukturze wymiarów](https://docs.microsoft.com/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)

@@ -2,11 +2,9 @@
 title: Tworzenie witryny handlu elektronicznego
 description: W tym temacie opisano kroki i informacje wymagane do utworzenia nowej witryny e-Commerce w konstruktorze witryn Dynamics 365 Commerce.
 author: bicyclingfool
-manager: AnnBe
-ms.date: 07/02/2020
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -18,12 +16,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: cf084f90d203d84c91ddf7c0d963780b895ef23d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 01f22772fd8c8984a2f92c516972d6659325a18c
+ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963042"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090776"
 ---
 # <a name="create-an-e-commerce-site"></a>Tworzenie witryny handlu elektronicznego
 
@@ -50,8 +48,15 @@ Aby skonfigurować witrynę, wykonaj następujące czynności.
 | Domena                              | Wybierz nazwę domeny, która będzie służyć jako domena dla tego sklepu internetowego. Jeśli nie skonfigurowano żadnych domen w usłudze LCS, to pole można pozostawić puste. Po skonfigurowaniu domeny w usługi LCS, należy ją dodać do swojego sklepu internetowego w **Ustawieniach witryny**.  |
 | Ścieżka                              | Jeśli witryna obsługuje więcej niż jeden język dla danej nazwy domeny, użyj pola ścieżki, aby utworzyć unikalny adres URL witryny dla tej kombinacji domeny i języka. Jeśli język określony w polu **Język domyślny** jest jedynym językiem, który będzie obsługiwany dla tej domeny, lub będzie używany domyślny język po zlokalizowaniu witryny w dodatkowych językach, zaleca się pozostawienie tego pola pustego. |
 
-
 Po utworzeniu witryny można sprawdzić, czy jest skojarzona ze swoim sklepem internetowym, wybierając kartę **Produkty**. Powinien być widoczny asortyment produktów, które zostały przypisane do sklepu internetowego. Możesz także użyć menu rozwijanego w lewym górnym rogu strony, aby uzyskać dostęp do przydzielonych produktów według kategorii.
+
+## <a name="rename-your-site"></a>Zmiana nazwy witryny
+
+Aby zmienić nazwę witryny w kreatorze witryn, wykonaj poniższe kroki.
+
+1. Aby otworzyć widok listy witryn, wybierz Opcję **Przełączania witryn** w prawym górnym rogu, a następnie wybierz pozycję **Zarządzaj witrynami**. 
+1. Zaznacz pole wyboru obok witryny, której nazwę chcesz zmienić, a następnie wybierz pozycję **Zmień nazwę** na pasku poleceń.
+1. W oknie dialogowym **Nowa nazwa witryny**, wprowadź nazwę, a następnie wybierz **OK**. Lista witryn zostanie zaktualizowana tak, by pokazywała ich nową nazwę.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
@@ -74,3 +79,6 @@ Po utworzeniu witryny można sprawdzić, czy jest skojarzona ze swoim sklepem in
 [Dodawanie obsługi dla sieci dostarczania zawartości (CDN)](add-cdn-support.md)
 
 [Włączanie wykrywania sklepu na podstawie lokalizacji](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

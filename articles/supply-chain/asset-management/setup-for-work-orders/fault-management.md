@@ -1,12 +1,10 @@
 ---
 title: Zarządzanie usterkami
 description: W tym temacie wyjaśniono analizę zarządzania usterkami składników majątku w module Zarządzanie składnikami majątku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetFaultArea, EntAssetFaultDesigner, EntAssetFaultCopyFromObjectType, EntAssetFaultRemedy, EntAssetObjectFaultRelationRequestInfoPart, EntAssetObjectFaultRelationWorkOrderInfoPart, EntAssetFaultCreateCombinations, EntAssetObjectFaultSymptom, EntAssetObjectFaultSymptomListPage, EntAssetFaultType, EntAssetFaultSymptom, EntAssetFaultCause
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 176fbebcf88e7557bf2bafc56524cd2ec015220e
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 149d4fc8026a2a1878155d2b708cf3a79dd0e5af966db4e7f9339d8ca582da70
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020971"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6711960"
 ---
 # <a name="fault-management"></a>Zarządzanie usterkami
 
@@ -108,7 +106,7 @@ W projektancie usterek można skonfigurować dane usterek dla typów składnikó
 
 7. Wybierz **Zapisz**, żeby zapisać zmiany.
 
-![Strona Projektant usterek](media/21-setup-for-work-orders.png)
+![Strona Projektant usterek.](media/21-setup-for-work-orders.png)
 
 ## <a name="create-fault-causes"></a>Utwórz przyczyny usterek
 
@@ -132,3 +130,6 @@ Wykonaj poniższe kroki, aby utworzyć listę znanych środków zaradczych dla u
 
 > [!NOTE]
 > Istnieje możliwość zmiany nazw objawów usterek, obszarów, typów, przyczyn i środków zaradczych stosownie do potrzeb. Zmiany nazwy są automatycznie odzwierciedlane w powiązanych z nią rejestracjach błędów.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

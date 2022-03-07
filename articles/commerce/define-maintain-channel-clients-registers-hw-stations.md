@@ -2,16 +2,13 @@
 title: Podłączanie urządzeń peryferyjnych do komputera z aplikacją POS
 description: Ten temat omawia sposób podłączania urządzeń peryferyjnych do komputera z wystąpieniem aplikacji Retail POS.
 author: rubencdelgado
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 92383
 ms.assetid: 83f31ea6-f0a2-4501-9d4d-a37b6eec2599
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ec64cb8a7c490c6798a897fd20a56e5af5c8be3a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5c9f38cc7874fa6c9188f87ca01e561d434092fadaddf2504c79e4bd6dc322ad
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414860"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6725345"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Podłączanie urządzeń peryferyjnych do komputera z aplikacją POS
 
@@ -81,7 +78,7 @@ Sama stacja sprzętowa jest określana na poziomie kanału przy użyciu informac
 
 ### <a name="mpos-with-connected-peripheral-devices"></a>Punkt MPOS z podłączonymi urządzeniami peryferyjnymi
 
-[![Tradycyjny, stacjonarny punkt sprzedaży](./media/traditional-300x279.png)](./media/traditional.png)
+[![Tradycyjny, stacjonarny punkt sprzedaży.](./media/traditional-300x279.png)](./media/traditional.png)
 
 Aby podłączyć punkt MPOS do urządzeń peryferyjnych punktu sprzedaży w tradycyjnym scenariuszu stacjonarnego punktu sprzedaży, najpierw przejdź do samej kasy POS i przypisz jej profil sprzętu. Kasy POS są wyszczególnione w oknie **Retail i Commerce** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Rejestry**. 
 
@@ -100,7 +97,7 @@ Na koniec w aplikacji MPOS za pomocą operacji **Wybierz stację sprzętową** z
 
 ### <a name="mpos-or-cloud-pos-with-a-stand-alone-hardware-station"></a>Urządzenie MPOS lub Cloud POS z autonomiczną stacją sprzętową
 
-[![Współużytkowane urządzenia peryferyjne](./media/shared-300x254.png)](./media/shared.png)
+[![Współużytkowane urządzenia peryferyjne.](./media/shared-300x254.png)](./media/shared.png)
 
 W tym scenariuszu autonomiczna stacja sprzętowa jest współużytkowana przez klientów MPOS i Cloud POS. Ten scenariusz wymaga utworzenia profilu stacji sprzętowej, aby określić pakiet do pobrania, port oraz profil sprzętu, który będzie używany przez stację. Profil stacji sprzętowej można znaleźć w oknie **Retail and Commerce** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Profile punktów sprzedaży** &gt; **Profile stacji sprzętowych**. 
 
@@ -205,3 +202,6 @@ Dodatkowe informacje związane z aktywacją obejmują dane pracownika, który zm
 ### <a name="client-data-synchronization"></a>Synchronizacja danych klienta
 
 Wszystkie zmiany na kliencie punktu sprzedaży, z wyjątkiem zmian stanu aktywacji urządzenia, działają dopiero po zsynchronizowaniu z bazą danych kanału. Aby zsynchronizować zmiany z bazą danych kanału, wybierz kolejno opcje **Retail i Commerce** &gt; **Składniki IT w handlu detalicznym i innym** &gt; **Harmonogram dystrybucji** i uruchom wymagany harmonogram dystrybucji. W przypadku zmian na kliencie należy uruchomić harmonogramy dystrybucji **Rejestry** i **Konfiguracja kanału**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

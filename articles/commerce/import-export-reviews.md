@@ -1,17 +1,21 @@
 ---
-# required metadata
 title: Importowanie i eksportowanie klasyfikacji oraz przeglądów
 description: W tym temacie opisano sposób importowania i eksportowania ocen produktów oraz przeglądanych w tej sekcji Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 01/12/2022
 ms.topic: article
-audience: 'Application User, Developer, IT Pro'
+audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgri
 ms.search.region: Global
 ms.author: gmohanv
-ms.search.validFrom: '2017-06-20'
+ms.search.validFrom: 2017-06-20
+ms.openlocfilehash: 3ae85f21f7a78d56621aed60527207badcee9c75
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968528"
 ---
-
 # <a name="import-and-export-ratings-and-reviews"></a>Importowanie i eksportowanie klasyfikacji oraz przeglądów
 
 [!include [banner](includes/banner.md)]

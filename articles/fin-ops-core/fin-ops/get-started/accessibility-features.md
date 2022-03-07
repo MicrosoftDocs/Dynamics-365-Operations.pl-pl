@@ -2,11 +2,9 @@
 title: Funkcje związane z ułatwianiem dostępu
 description: W tym temacie opisano funkcje przeznaczone do wspomagania użytkowników z różnymi niepełnosprawnościami.
 author: TLeforMicrosoft
-manager: AnnBe
 ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,16 +12,19 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 2d0dd3ebf4b50f43f9fb1893081ede2a93428c72
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 022c51f7050d11caf5ce67c5df8f9f9040a54b98
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798702"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071065"
 ---
 # <a name="accessibility-features"></a>Funkcje ułatwień dostępu
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 W tym temacie opisano funkcje przeznaczone do wspomagania użytkowników z różnymi niepełnosprawnościami w używaniu tej aplikacji. Dostępne są na przykład funkcje przeznaczone dla osób korzystających z technologii wspomagających dla osób z wadami wzroku, takich jak Narrator w systemie Microsoft Windows.
 
@@ -54,13 +55,13 @@ Z każdej akcji dostępnej na stronie można skorzystać za pomocą klawiatury, 
 
 Chcesz uruchomić akcję **Dziennik powiadomień pocztą E-mail**, która znajduje się w grupie **Powiadomienie pocztą E-mail** na karcie **Zamówienie sprzedaży** w okienku akcji.
 
-![Akcja dziennika powiadomień poczty e-mail w okienku akcji](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "Akcja „Dziennik powiadomień poczty e-mail” w okienku akcji")
+![Akcja dziennika powiadomień poczty e-mail w okienku akcji.](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "Akcja „Dziennik powiadomień poczty e-mail” w okienku akcji")
 
 Jedną z opcji jest użycie klawiatury. Naciśnij kombinację klawiszy Ctrl + F6, aby uaktywnić okienko akcji, a następnie naciskaj klawisz Tab, aby przechodzić kolejno między kartami i akcjami do momentu uaktywnienia akcji **Dziennik powiadomień pocztą E-mail**.
 
 Jednak można również uruchomić akcję bardziej bezpośrednio. Z dowolnego miejsca na stronie naciśnij kombinację klawiszy Ctrl + apostrof ('), aby wyświetlić pole wyszukiwania akcji.
 
-![Pole wyszukiwania akcji](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "Pole wyszukiwania akcji")
+![Pole wyszukiwania akcji.](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "Pole wyszukiwania akcji")
 
 W polu wyszukiwania wpisz wyrazy opisujące akcji. Akcja zostanie udostępniona i będzie ją można uruchomić bezpośrednio. Na przykład po wpisaniu **e-mail**, **powiadom** (część wyrazu) lub **dziennik** można „przeskoczyć” do funkcji Dziennik powiadomień pocztą E-mail.
 
@@ -97,3 +98,6 @@ Na smartfonach i innych małych ekranach kontrolki i układ formularza będą do
 ## <a name="guidance-to-help-developers-and-customers-incorporate-accessible-thinking-in-their-customizations"></a>Wytyczne dotyczące podejścia z uwzględnieniem ułatwiania dostępu w swoich konfiguracjach niestandardowych dla programistów i klientów
 
 Aby uzyskać więcej informacji na temat najlepszych praktyk firmy Microsoft w zakresie ułatwiania dostępu, zobacz [Ułatwienia dostępu w formularzach, produktach i kontrolkach](../../dev-itpro/user-interface/enable-accessibility.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

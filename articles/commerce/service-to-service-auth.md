@@ -1,17 +1,21 @@
 ---
-# required metadata
 title: Konfigurowanie uwierzytelniania usługa-usługa
-description: 'W tym temacie opisano, jak skonfigurować uwierzytelnianie między usługami w Microsoft Dynamics 365 Commerce, aby bezpiecznie wywoływać interfejsy API usług dla ocen i recenzji.'
+description: W tym temacie opisano, jak skonfigurować uwierzytelnianie między usługami w Microsoft Dynamics 365 Commerce, aby bezpiecznie wywoływać interfejsy API usług dla ocen i recenzji.
 author: gvrmohanreddy
 ms.date: 01/12/2022
 ms.topic: article
-audience: 'Application User, Developer, IT Pro'
+audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgri
 ms.search.region: Global
 ms.author: gmohanv
-ms.search.validFrom: '2017-06-20'
+ms.search.validFrom: 2017-06-20
+ms.openlocfilehash: da780de5f15d72bdac85a261eae809125c830260
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968523"
 ---
-
 # <a name="configure-service-to-service-authentication"></a>Konfigurowanie uwierzytelniania usługa-usługa
 
 [!include [banner](includes/banner.md)]

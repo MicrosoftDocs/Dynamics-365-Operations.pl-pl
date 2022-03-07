@@ -1,7 +1,7 @@
 ---
 title: Obszar roboczy zamknięcia okresu obrachunkowego
 description: Ten artykuł zawiera omówienie obszaru roboczego Zamknięcie okresu obrachunkowego oraz pokrewnej konfiguracji.
-author: kweekley
+author: ShylaThompson
 ms.date: 11/29/2017
 ms.topic: article
 ms.prod: ''
@@ -12,21 +12,21 @@ ms.reviewer: roschlom
 ms.custom: 13791
 ms.assetid: 6ee51758-639b-448e-9cb2-56cf1d804273
 ms.search.region: Global
-ms.author: kweekley
+ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ab203a18229cd426f8483ed6d0483c98614af9c
-ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
+ms.openlocfilehash: 388cf90221f04014ebced7b322fda14558769127
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2021
-ms.locfileid: "7727071"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5811344"
 ---
 # <a name="financial-period-close-workspace"></a>Obszar roboczy zamknięcia okresu obrachunkowego
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera omówienie obszaru roboczego **Zamknięcie okresu obrachunkowego** oraz skojarzonej konfiguracji.
+Ten artykuł zawiera omówienie obszaru roboczego Zamknięcie okresu obrachunkowego oraz pokrewnej konfiguracji.
 
 Obszar roboczy zamknięcia okresu obrachunkowego
 

@@ -1,7 +1,7 @@
 ---
 title: Umowy zakupu
 description: Ten artykuł zawiera informacje o umowach zakupu. Umowa zakupu jest to kontraktem, który zobowiązuje organizację do zakupu określonej ilości lub za określoną kwotę przy użyciu wielu zamówień zakupu na przestrzeni czasu. W zamian za to zobowiązanie kupujący otrzymuje specjalne ceny i rabaty.
-author: Henrikan
+author: kamaybac
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 11634
 ms.assetid: 8ac20adf-7412-4929-be8c-aaedf23a76ad
 ms.search.region: Global
-ms.author: henrikan
+ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d8084ebed80a509d543053867bb1f4d483b3f8eb
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: a125e894aa52083fccca2f10873305db8cc4528e
+ms.sourcegitcommit: 787c94b35f343f4c38fc8efaaa0cfaf20a846368
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103745"
+ms.lasthandoff: 07/21/2021
+ms.locfileid: "6647237"
 ---
 # <a name="purchase-agreements"></a>Umowy zakupu
 
@@ -41,7 +41,10 @@ Aby zapobiec używaniu i potwierdzaniu umowy zakupu, oznacz stan umowy jako **Za
 W klasyfikacji umowy zakupu można zidentyfikować odpowiedzialnego pracownika podstawowego i odpowiedzialnego pracownika pomocniczego. Te wartości będą dziedziczone przez wynikową umowę zakupu. Nie musisz dodawać odpowiedzialnych pracowników do umowy zakupu. Można ich modyfikowane bezpośrednio na podstawie każdego przypadku w umowie zakupu. Nie można określić odpowiedzialnego pracownika pomocniczego bez odpowiedzialnego pracownika podstawowego, chociaż nie trzeba mieć odpowiedzialnego pracownika pomocniczego. Nie można określić tego samego pracownika jako odpowiedzialnego pracownika podstawowego i pomocniczego.
 
 > [!IMPORTANT]
-> Aby móc używać funkcji strony odpowiedzialnej, należy ją włączyć w systemie. Od wersji 10.0.25 Supply Chain Management version ta funkcja jest domyślnie włączona. Administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Strona odpowiedzialna za umowę zakupu* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+> Aby móc używać funkcji strony odpowiedzialnej, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
+> 
+> - **Moduł:** *Zaopatrzenie i sourcing*
+> - **Nazwa funkcji:** *Strona odpowiedzialna za umowę zakupu*
 
 ## <a name="commitment-types"></a>Typy zobowiązania
 Każdy wiersz umowy zakupu jest zobowiązaniem do zakupu czegoś. Do wypełniania zobowiązania można używać wierszy z wielu zamówień zakupu. Istnieją cztery typy zobowiązań:

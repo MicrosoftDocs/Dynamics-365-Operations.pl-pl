@@ -2,11 +2,9 @@
 title: Wartości obiektu zapasów
 description: Ten artykuł zawiera informacje o sposobie obliczania wartości obiektu zapasów.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventCostOnhandItem
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 914c7e8c757664ec791b46924600b74c9c979e8f
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: bb0a7ede00b129638d42ef3feb1cb683e844b048bf212efc17cf28b2eb76240f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967440"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6734362"
 ---
 # <a name="inventory-object-values"></a>Wartości obiektu zapasów
 
@@ -135,14 +133,16 @@ Poniższa tabela przedstawia wynik obliczeń dla obiektu magazynu. Wyniki można
 
 
 
-<a name="additional-resources"></a>Dodatkowe zasoby
---------
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Obiekty kosztów](cost-object.md)
 
 [Wpisy kosztów](cost-entries.md)
 
-[Nowości i zmiany](../../fin-and-ops/get-started/whats-new-changed.md)
+[Nowości i zmiany](../../fin-ops-core/fin-ops/get-started/whats-new-changed.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: Kontrola godzin pracy
 description: W tym temacie opisano typy kontroli godzin pracy w module Zarządzanie składnikami majątku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetHourControl
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: cc4382d72e032fdfad05f2077ffe8e41e64c6a55
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 90c4f649cc9ea45341ede923294a7c5a892cd68714db356c3799430d18f5de60
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018478"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742783"
 ---
 # <a name="work-hour-control"></a>Kontrola godzin pracy
 
@@ -68,8 +66,11 @@ Na poniższym zrzucie ekranu pokazano przykład obliczania **Formant godzin skł
 - W polu **Rzeczywiste godziny** są wyświetlane zaksięgowane godziny w zleceniach pracy. 
 - W polu **Ustalone godziny** są wyświetlane łączne godziny, na które firma jest zobowiązana w związku ze zleceniami pracy.
 
-![Przykład obliczania kontroli godzin składnika majątku](media/04-controlling-and-reporting.png)
+![Przykład obliczania kontroli godzin składnika majątku.](media/04-controlling-and-reporting.png)
 
 Innym sposobem obliczenia godziny jest wielokrotne wybranie składników majątku w **Wszystkie składniki majątku** lub **Aktywne składniki majątku**. Następnie należy kliknąć przycisk **Formant godzin** na skróconej karcie **Ogólne**. Wybrane środki trwałe są automatycznie wstawiane do pola **Składnik majątku** na skróconej karcie **Rekordy do uwzględnienia**. Kliknij **OK** woknie dialogowym **Formant godzin składnika majątku**, a następnie zostanie wyświetlona wartość obliczona dla wybranych składników. Tę samą procedurę można wykonać w odniesieniu do lokalizacji czynności konserwacyjnych we **Wszystkie lokalizacje czynności konserwacyjnych** lub **Aktywne lokalizacje czynności konserwacyjnych** lub przypadku zleceń pracy **Wszystkie zlecenia pracy** lub **Aktywne zlecenia pracy**.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,23 +1,27 @@
 ---
-# required metadata
 title: Menedżer ds. księgowości z dostawcami
-description: 'W tym temacie wyjaśniono, w jaki sposób księgowanie jest skonfigurowane w rozrachunkach z dostawcami, i przedstawiono przykłady konfiguracji księgowania.'
+description: W tym temacie wyjaśniono, w jaki sposób księgowanie jest skonfigurowane w rozrachunkach z dostawcami, i przedstawiono przykłady konfiguracji księgowania.
 author: rachel-profitt
 ms.date: 01/19/2022
 ms.topic: article
-ms.prod: null
-ms.technology: null
-ms.search.form: 'VendPosting, VendPaymMode, VendCashDiscount, MarkupTable\_Vend, VendPaymFee'
+ms.prod: ''
+ms.technology: ''
+ms.search.form: VendPosting, VendPaymMode, VendCashDiscount, MarkupTable\_Vend, VendPaymFee
 audience: Application User
 ms.reviewer: twheeloc
-ms.custom: null
+ms.custom: ''
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: '2022-01-03'
+ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: fb3ebad31c9f41e405b9fc31a0f71df05fa1cc60
+ms.sourcegitcommit: 10b85a09e8a550155a69aa2a8877a7c88b887242
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "8014464"
 ---
-
 # <a name="accounts-payable-posting"></a>Menedżer ds. księgowości z dostawcami
 
 [!include [banner](../includes/banner.md)]

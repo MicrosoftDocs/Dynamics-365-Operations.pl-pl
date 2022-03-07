@@ -2,9 +2,11 @@
 title: Tworzenie wymiarów i importowanie członków wymiaru
 description: Rachunek kosztów to niezależny moduł, który wymaga danych głównych z innych modułów.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 09/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMDimension
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6febb8a48cf6496fb7f4c2ee9f5281d47aa1ccae1a8ecc51c908b3810302e11c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3eedce9cd092f9c299a2381a28a801351f15c4cc
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775129"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5226396"
 ---
 # <a name="create-dimensions-and-import-dimension-members"></a>Tworzenie wymiarów i importowanie członków wymiaru
 
@@ -36,7 +38,7 @@ Rachunek kosztów to niezależny moduł, który wymaga danych z innych modułów
 
 Poniższy schemat przedstawia wymiary, które są używane w module Rachunek kosztów.
 
-[![Wymiary rachunku kosztów.](./media/cost-eos-dimensions.png)](./media/cost-eos-dimensions.png)
+[![Wymiary rachunku kosztów](./media/cost-eos-dimensions.png)](./media/cost-eos-dimensions.png)
 
 Po zaimportowaniu danych do modułu Rachunek kosztów można ich użyć do tworzenia różnych perspektyw zapewniających informacje menedżerom na wszystkich poziomach organizacji. Poniższe tematy zawierają informacje dotyczące tworzenia wymiarów i importowania elementów wymiarów. 
 

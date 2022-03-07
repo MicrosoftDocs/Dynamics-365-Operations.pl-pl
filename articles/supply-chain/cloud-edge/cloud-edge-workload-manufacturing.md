@@ -2,11 +2,9 @@
 title: Obciążenia pracą dotyczące uruchomienia produkcji dla jednostek skalowania chmury i urządzenia brzegowego
 description: W tym temacie opisano, jak działa obciążenie pracą nad wykonywaniem produkcji z jednostkami skali w chmurze i urządzenia brzegowego.
 author: cabeln
-manager: ''
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,22 +16,25 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 08c46655d3966ad1433935318c5e60667dd10bb6
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 633740ee1e26d2e4ed2ea7031ef298fb11c2ab58
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967777"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068851"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Obciążenia pracą dotyczące uruchomienia produkcji dla jednostek skalowania chmury i urządzenia brzegowego
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-> [!WARNING]
+> [!IMPORTANT]
+> Obciążenie produkcyjne jest obecnie dostępne tylko w wersji zapoznawczej.
+>
 > Nie wszystkie funkcje biznesowe są w pełni obsługiwane w podglądzie publicznym, gdy są używane jednostki skali obciążenia pracą.
+>
+> Nie możesz uruchomić produkcyjnego obciążenia roboczego na jednostce wagi, na której zainstalowane jest również obciążenie wykonawcze magazynu.
 
-W module Uruchomienie produkcji jednostki skali chmury i urządzenia brzegowego zapewniają następujące możliwości, nawet jeśli jednostki brzegowe nie są połączone z centrum:
+W wykonaniu produkcyjnym jednostki wagowe zapewniają następujące możliwości:
 
 - Operatorzy maszyn i kierownicy mogą uzyskać dostęp do operacyjnego planu produkcji.
 - Operatorzy maszynowi mogą regularnie aktualizować plan, uruchamiając dyskretne i przetwarzające zadania produkcyjne.
@@ -46,7 +47,7 @@ W tym temacie opisano, jak działa obciążenie pracą nad wykonywaniem produkcj
 
 Na poniższej ilustracji przedstawiono cykl produkcyjny podzielony na trzy etapy: *Planowanie*, *wykonywanie* i *finalizowanie*.
 
-[![Fazy uruchamiania produkcji w przypadku korzystania z jednego środowiska](media/mes-phases.png "Fazy uruchamiania produkcji w przypadku korzystania z jednego środowiska")](media/mes-phases-large.png)
+[![Fazy uruchamiania produkcji w przypadku korzystania z jednego środowiska](media/mes-phases.png "Fazy uruchamiania produkcji w przypadku korzystania z jednego środowiska.")](media/mes-phases-large.png)
 
 _Faza planu_ obejmuje definicje produktów, planowanie, tworzenie i planowanie zamówień oraz zwalnianie. Krok wydania wskazuje przejście z fazy _planu_ do fazy _wykonania_. Po zwolnieniu zlecenia produkcyjnego zadania zlecenia produkcyjnego będą widoczne w oddziale produkcyjnym i gotowe do wykonania.
 
@@ -56,7 +57,7 @@ Jeśli zadanie produkcji jest oznaczone jako ukończone, następuje przejście z
 
 W poniższej ilustracji pokazano, kiedy są używane jednostki skalowania, _faza wykonania_ jest dzielona jako oddzielne obciążenie pracą.
 
-[![Fazy uruchamiania produkcji podczas używania jednostek miary](media/mes-phases-workloads.png "Fazy uruchamiania produkcji podczas używania jednostek miary")](media/mes-phases-workloads-large.png)
+[![Fazy uruchamiania produkcji podczas używania jednostek miary](media/mes-phases-workloads.png "Fazy uruchamiania produkcji podczas używania jednostek miary.")](media/mes-phases-workloads-large.png)
 
 Obecnie model pochodzi z instalacji z jednym wystąpieniem do modelu opartego na centrum i jednostkach skali. Fazy _Planowanie_ i _Finalizacja_ są wykonywane jako operacje zaplecza w centrali, a obciążenie pracą nad produkcją jest wykonywane na jednostkach skali. Dane są przesyłane asynchronicznie między jednostkami centrum i skali.
 
@@ -73,6 +74,7 @@ Następujące zadania dotyczące wykonania produkcji mogą być obecnie uruchami
 - Raportuj odpadki
 - Działanie pośrednie
 - Przerwa
+- Raportuj jako zakończone i odłożone (wymaga uruchomienia obciążenia wykonawczego magazynu na jednostce skalowania patrz również [Reportuj jako zakończone i odłożone na jednostce skalowania](#RAF))
 
 ## <a name="working-with-manufacturing-execution-workloads-on-the-hub"></a>Praca z obciążeniem pracą produkcyjną w centrum
 
@@ -88,7 +90,7 @@ Mimo że zadanie zazwyczaj jest uruchamiane automatycznie, można je uruchomić 
 
 Aby przejrzeć dziennik przetwarzania rejestracji, zaloguj się do centrum, a następnie przejdź do obszaru **Kontrola produkcji \> Zadania okresowe \> Zarządzanie przepływem pracy backoffice \> Dziennik przetwarzania rejestracji wstępnych**. Na stronie **Dziennik przetwarzania rejestracji wstępnych** jest wyświetlana lista przetworzonych rejestracji wstępnych oraz stan każdej rejestracji.
 
-![Strona dziennika przetwarzania rejestracji nieprzetworzonej](media/mes-processing-log.png "Strona dziennika przetwarzania rejestracji nieprzetworzonej")
+![Strona dziennika przetwarzania rejestracji nieprzetworzonej.](media/mes-processing-log.png "Strona dziennika przetwarzania rejestracji nieprzetworzonej")
 
 Można pracować z dowolną rejestracją na liście, zaznaczając ją, a następnie wybierając jeden z następujących przycisków w okienku akcji:
 
@@ -109,3 +111,43 @@ Aby przejrzeć historię zadań produkcji, które zostały przetworzone na jedno
 ### <a name="manufacturing-hub-to-scale-unit-message-processor-job"></a>Zadanie procesora w ramach centrum produkcji dla wiadomości jednostki skalowania
 
 _Zadanie procesora produkcyjnego w centrum produkcji_ przetwarza dane z centrum do jednostki skali. To zadanie jest uruchamiane automatycznie po wdrożeniu obciążenia pracą modułu uruchomienie produkcji. Można jednak uruchomić ją ręcznie w dowolnym momencie, przechodząc do **Kontrola produkcji \> Zadania okresowe \> Zarządzanie obciążeniem backoffice \> Zadanie procesora w ramach centrum produkcji dla wiadomości jednostki skalowania**.
+
+<a name="RAF"></a>
+
+## <a name="report-as-finished-and-putaway-on-a-scale-unit"></a>Zgłoś jako gotowe i odłóż na jednostce skalowania
+
+<!-- KFM: 
+This section describes how to enable the abilities to report as finished and then putaway finished items when you are using to a scale unit.
+
+### Enable and use report as finished and putaway on a scale unit -->
+
+W bieżącej wersji operacje raportowania jako zakończone i odłożone (dla produktów gotowych, półproduktów i produktów ubocznych) są obsługiwane przez [obciążenie wykonawcze magazynu](cloud-edge-workload-warehousing.md) (a nie przez obciążenie wykonawcze produkcji). Aby korzystać z tej funkcji w przypadku połączenia z jednostką skalowania, należy wykonać następujące czynności:
+
+- Zainstaluj zarówno obciążenie wykonawcze magazynu, jak i obciążenie wykonawcze produkcji na swojej jednostce skalowania.
+- Użyj aplikacji mobilnej Warehouse Management, aby zgłosić jako zakończone i przetworzyć pracę odłożenia. Interfejs wykonywania produkcji nie obsługuje obecnie tych procesów.
+
+<!-- KFM: API details needed
+
+### Customize report as finished and putaway functionality
+
+ -->
+
+## <a name="enable-and-use-the-start-operation-on-a-scale-unit"></a>Włączanie i stosowanie operacji startu na jednostce skalowania
+
+W aktualnym wydaniu operacja startowa dla zleceń produkcyjnych i wsadowych jest obsługiwana przez [obciążenie wykonawcze magazynu](cloud-edge-workload-warehousing.md) (nie przez obciążenie wykonawcze produkcji). Aby korzystać z tej funkcji w przypadku połączenia z jednostką skalowania, należy wykonać następujące czynności:
+
+- Zainstaluj zarówno obciążenie wykonawcze magazynu, jak i obciążenie wykonawcze produkcji na swojej jednostce skalowania.
+- Włączenie w sekcji [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) opcji *Uruchamianie zlecenia produkcyjnego w obciążeniach zarządzania magazynem dla jednostek skalowania chmury i urządzenia brzegowego*.
+- Użyj aplikacji mobilnej Warehouse Management, aby rozpocząć produkcję lub zlecenie wsadowe.
+
+## <a name="enable-and-use-material-consumption-on-a-scale-unit"></a>Włączanie i używanie zużycia materiałów w jednostkach skalowania
+
+W obecnej wersji aplikacji mobilnej Warehouse Management przepływ rejestracji zużycia materiałów jest obsługiwany przez obciążenie [obciążenie wykonawcze magazynu](cloud-edge-workload-warehousing.md) (a nie przez obciążenie wykonawcze produkcji). Aby korzystać z tej funkcji w przypadku połączenia z jednostką skalowania, należy wykonać następujące czynności:
+
+- Zainstaluj zarówno obciążenie wykonawcze magazynu, jak i obciążenie wykonawcze produkcji na swojej jednostce skalowania.
+- Włącz funkcję *Rejestruj zużycie materiału w aplikacji mobilnej na jednostce skalowania* w [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- Nie można korzystać z aplikacji mobilnej Warehouse Management do rejestrowania zużycia materiałów.
+
+[!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

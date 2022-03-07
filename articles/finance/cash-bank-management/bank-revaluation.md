@@ -1,24 +1,27 @@
 ---
 title: Bank — przeszacowanie w walucie obcej
 description: Ten temat zawiera omówienie procesu bankowego przeszacowania w walucie obcej. Zawiera informacje dotyczące programu instalacyjnego, procesu, obliczenia dla procesu i wycofywania transakcji przeszacowania.
-author: roschlom
+author: mikefalkner
+manager: AnnBe
 ms.date: 05/16/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankCurrencyRevalHistory
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 3df6a22e06abbfa75a12ffddac242dd34f5beba5
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: f99a5ed82fd4d74a5d20620dbe19b4f18e332432
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7754127"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446895"
 ---
 # <a name="bank-foreign-currency-revaluation"></a>Bank — przeszacowanie w walucie obcej
 
@@ -85,6 +88,3 @@ Transakcja przeszacowania w walucie obcej jest też podzielona na wymiary, któr
 Jeśli musisz wycofać transakcję przeszacowania, kliknij przycisk **Wycofaj transakcję** znajdujący się na stronie **Przeszacowanie w walucie obcej** w okienku akcji. Zostanie utworzony nowy rekord historyczny przeszacowania w walucie obcej na potrzeby prowadzenia dziennika historii pokazującego, kiedy przeszacowania nastąpiły lub zostały wycofane.
 
 Aby cofnąć kilka przeszacowań, musisz najpierw cofnąć najnowsze przeszacowanie. Następnie cofaj starsze przeszacowania według ich dat. Następnie można przetworzyć nowe przeszacowania dla okresów, w których przeszacowania zostały cofnięte.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: Zmień klasyfikację środków trwałych
-description: Aby przeklasyfikować środek trwały, należy przenieść go do nowej grupy środków trwałych lub przypisać mu nowy numer środka trwałego w tej samej grupie.
-author: saraschi2
-manager: AnnBe
+description: W tym temacie wyjaśniono proces przeklasyfikowania środków trwałych. Aby przeklasyfikować środek trwały, należy przenieść go do nowej grupy środków trwałych lub przypisać mu nowy numer środka trwałego w tej samej grupie.
+author: moaamer
 ms.date: 05/14/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4cfc1425aca7a62205e0c7c50237f206a179a0e7
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a5fadebe685810d6833d1cb0581ed9a4869cc124
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4968861"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883653"
 ---
 # <a name="reclassify-fixed-assets"></a>Zmień klasyfikację środków trwałych
 
@@ -29,11 +27,25 @@ Aby przeklasyfikować środek trwały, należy przenieść go do nowej grupy śr
 
 Po przeklasyfikowaniu środka trwałego:
 
-* Wszystkie księgi dla istniejącego środka trwałego zostają utworzone dla nowego środka trwałego. Wszystkie informacje skonfigurowane dla oryginalnego środka trwałego zostają skopiowane do nowego środka stałego. Stan ksiąg oryginalnego środka trwałego zostaje ustawiony na Zamknięte. 
+- Wszystkie księgi dla istniejącego środka trwałego zostają utworzone dla nowego środka trwałego. Wszystkie informacje skonfigurowane dla oryginalnego środka trwałego zostają skopiowane do nowego środka stałego. Stan ksiąg oryginalnego środka trwałego zostaje ustawiony na Zamknięte. 
 
-* Nowe księgi nowego środka stałego zawierają datę przeklasyfikowania w polu **Data nabycia**. Data w polu **Data rozpoczęcia amortyzacji** jest kopiowana z oryginalnych informacji o środku trwałym. Jeśli amortyzacja jest już rozpoczęta, to w polu **Data ostatniego uruchomienia amortyzacji** zostaje wyświetlona data przeklasyfikowania. 
+- Nowe księgi nowego środka stałego zawierają datę przeklasyfikowania w polu **Data nabycia**. Data w polu **Data rozpoczęcia amortyzacji** jest kopiowana z oryginalnych informacji o środku trwałym. Jeśli amortyzacja jest już rozpoczęta, to w polu **Data ostatniego uruchomienia amortyzacji** zostaje wyświetlona data przeklasyfikowania. 
 
-* Transakcje istniejącego środka trwałego zostają anulowane i wygenerowane ponownie dla nowego środka trwałego.
+- Transakcje istniejącego środka trwałego zostają anulowane i wygenerowane ponownie dla nowego środka trwałego.
+
+- W przypadku przeklasyfikowania środka trwałego z transakcją przeniesienia w **centrum akcji** zostanie wyświetlony komunikat informujący, że transakcja przeniesienia nie została zakończona w trakcie procesu przeklasyfikowania. Konieczne jest zakończenie transakcji przeniesienia w celu przeniesienia istniejących transakcji przeklasyfikowania do odpowiednich wymiarów finansowych. 
+
+   W procesie przeklasyfikowania system uruchamia następujące akcje w celu przeklasyfikowania salda środków trwałych z oryginalnego środka trwałego do nowego środka trwałego. 
+   
+   - Proces przeklasyfikowania kopiuje dane z oryginalnej księgi środków trwałych do nowej księgi środków trwałych.
+
+   - Transakcja przeklasyfikowania wykorzystuje informacje z oryginalnego zaksięgowanego nabycia, które zawiera informacje o wymiarach finansowych zawartych w transakcji nabycia.  
+   
+   - Jednocześnie proces przeklasyfikowania wycofuje oryginalną transakcję nabycia i przeniesienia środka trwałego. 
+
+Poniższy diagram i procedura stanowią przykład procesu przeklasyfikowania. 
+
+[![Diagram pokazujący proces przeklasyfikowania.](../media/reclassification-process-01.png)](../media/reclassification-process-01.png)
 
 Aby przeklasyfikować środek trwały, należy wykonać następujące kroki:
 
@@ -45,3 +57,6 @@ Aby przeklasyfikować środek trwały, należy wykonać następujące kroki:
 5. W polu **Data przeklasyfikowania** wprowadź datę.
 6. W polu **Seria załączników** wprowadź lub wybierz wartość.
 7. Kliknij przycisk **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

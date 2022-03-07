@@ -1,23 +1,27 @@
 ---
-# required metadata
 title: Omówienie publikowania profili
-description: 'W tym temacie opisano sposób, w jaki profile księgowania są używane w Microsoft Dynamics 365 aplikacjach.'
+description: W tym temacie opisano sposób, w jaki profile księgowania są używane w Microsoft Dynamics 365 aplikacjach.
 author: rachel-profitt
 ms.date: 12/03/2021
 ms.topic: article
-ms.prod: null
-ms.technology: null
-ms.search.form: 'LedgerSystemSetup, CustPosting, VendPosting, InventPosting, AssetPosting, ProjPosting, AssetLeasePostingAccounts, ProjCategory, ITMCostTypeTable, ProdGroup, WrkCtrTable, WrkCtrResourceGroup'
+ms.prod: ''
+ms.technology: ''
+ms.search.form: LedgerSystemSetup, CustPosting, VendPosting, InventPosting, AssetPosting, ProjPosting, AssetLeasePostingAccounts, ProjCategory, ITMCostTypeTable, ProdGroup, WrkCtrTable, WrkCtrResourceGroup
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: null
+ms.custom: ''
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: '2022-01-03'
+ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f9ad33d9a34bc449b81ec6d02a78b9ca1653aca5
+ms.sourcegitcommit: 96f936267d3f314f06da6ce6f809eba2ec3b205f
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "8018386"
 ---
-
 # <a name="posting-profiles-overview"></a>Omówienie publikowania profili
 
 W aplikacjach Finanse i Operacje termin *Profile księgowania* służy do opisywania konfiguracji sterujących konwersją kont księgi podrzędnej na konta główne, dzięki czemu można ich używać w transakcjach księgowanych w księdze głównej. Na przykład kontrolują one sposób konwersji odbiorcy na konto główne rozrachunków z odbiorcami podczas zaksięgowania faktury.

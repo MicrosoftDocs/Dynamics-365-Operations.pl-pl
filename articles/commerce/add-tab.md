@@ -2,15 +2,12 @@
 title: Moduł karty
 description: W tym temacie opisano moduły karty i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c9d897113442f14b95539efb9fec9482be96447a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e7d2cd7b7ce9446d77eff66433739c8ea6b1f309
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414885"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348303"
 ---
-# <a name="tab-module"></a>Moduł karty
+# <a name="tab-module"></a>Moduł tabularny
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano moduły karty i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 Moduły kart są modułami przypominającymi kontenery, które służą do organizowania informacji na stronie witryny na kartach. Można ich używać na dowolnej stronie, na której należy przedstawić informacje na kartach.
 
@@ -39,7 +34,7 @@ W każdym module karty można dodać jeden lub więcej modułów pozycji karty. 
 
 Poniższy obraz pokazuje przykład modułu karty na stronie witryny. W tym przykładzie wybrano kartę **Wysyłka**.
 
-![Przykład modułu karty](./media/ecommerce-tab.PNG)
+![Przykład modułu karty.](./media/ecommerce-tab.PNG)
 
 ## <a name="tab-module-properties"></a>Właściwości modułu karty
 
@@ -84,3 +79,6 @@ Aby dodać moduł karty do strony i ustawić właściwości, wykonaj następują
 [Moduł typu accordion](add-accordion.md)
 
 [Moduł bloku tekstu](add-content-rich-block.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

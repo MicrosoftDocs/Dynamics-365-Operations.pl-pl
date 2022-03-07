@@ -1,30 +1,27 @@
 ---
-title: Konfigurowanie kanału internetowego
+title: Konfigurowanie kanału online
 description: W tym temacie opisano, jak dodać utworzyć nowy kanał online w Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 07225d97af76ea665fa28362cc205c6e8dc4fdf4
-ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
+ms.openlocfilehash: f0f1e0f3e7145c66b8f2b082b44ad7035c57d947
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4415092"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936951"
 ---
-# <a name="set-up-an-online-channel"></a>Konfigurowanie kanału internetowego
+# <a name="set-up-an-online-channel"></a>Konfigurowanie kanału online
 
 
 [!include [banner](includes/banner.md)]
@@ -70,7 +67,7 @@ Jeśli dana witryna handlu elektronicznego będzie obsługiwać wiele języków,
 
 ## <a name="set-up-payment-account"></a>Konfiguracja konta płatności
 
-W sekcji **Konto płatności** można dodać innego dostawcę płatności. Aby uzyskać informacje o ustawieniu łącznika płatności Adyen, zajrzyj do [Łącznik płatności usługi Dynamics 365 dla Adyen](../retail/dev-itpro/adyen-connector.md).
+W sekcji **Konto płatności** można dodać innego dostawcę płatności. Aby uzyskać informacje o ustawieniu łącznika płatności Adyen, zajrzyj do [Łącznik płatności usługi Dynamics 365 dla Adyen](./dev-itpro/adyen-connector.md).
 
 ## <a name="additional-channel-setup"></a>Konfiguracja kanałów dodatkowych
 
@@ -133,4 +130,7 @@ Poniższy obraz przedstawia przykład konfiguracji przypisania grupy realizacji.
 
 [Konfigurowanie kanału biura obsługi](channel-setup-callcenter.md)
 
-[Łącznik płatności usługi Dynamics 365 dla Adyen](../retail/dev-itpro/adyen-connector.md)
+[Łącznik płatności usługi Dynamics 365 dla Adyen](./dev-itpro/adyen-connector.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

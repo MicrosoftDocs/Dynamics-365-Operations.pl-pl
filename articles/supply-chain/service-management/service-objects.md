@@ -1,22 +1,26 @@
 ---
-# required metadata
 title: Omówienie przedmiotów serwisu
 description: Ten temat zawiera omówienie sposobu pracy z obiektami usług.
 author: kamaybac
 ms.date: 07/25/2019
 ms.topic: overview
-ms.prod: null
-ms.technology: null
+ms.prod: ''
+ms.technology: ''
 ms.search.form: SMAServiceObjectTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.assetid: null
+ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
-ms.search.validFrom: '2016-02-28'
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ad758d32c6e9de0758c6fddb57a7dea886ab73d4
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986442"
 ---
-
 # <a name="service-objects-overview"></a>Omówienie przedmiotów serwisu
 
 [!include [banner](../includes/banner.md)]

@@ -2,11 +2,9 @@
 title: Konfigurowanie podwyższenia amortyzacji
 description: W tej procedurze pokazano, jak utworzyć specjalny odpis amortyzacyjny i skojarzyć go z księgą środków trwałych.
 author: saraschi2
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetBonus, AssetGroup, AssetGroupBookSetup, AssetGroupSetupBonus
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7fed9f09b4e37da00a5d78fa088e8814db48456b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ad1b7f584d2b2a63dba5f8519ada9d89d6265e7b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4968936"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5815627"
 ---
 # <a name="set-up-bonus-depreciation"></a>Konfigurowanie podwyższenia amortyzacji
 
@@ -48,3 +46,6 @@ W tej procedurze pokazano, jak utworzyć specjalny odpis amortyzacyjny i skojarz
     * Domyślna wartość ustawienia Wartość procentowa lub Kwota pochodzi z konfiguracji specjalnego odpisu amortyzacyjnego.  
 8. W polu Priorytet wprowadź liczbę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

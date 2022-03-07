@@ -2,16 +2,13 @@
 title: Zarządzanie czasem i frekwencją w module Retail
 description: W tym temacie opisano scenariusze obsługiwane w zakresie zarządzania czasem i frekwencją w module Dynamics 365 Commerce.
 author: aamirallaqaband
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: JMGParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 62813
 ms.assetid: 821994a6-cd29-45a3-a526-ce204064f080
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: cca5e3232450e75f931a621b278c134129fc745c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 68aafc9f397333d88644bb1870bb4e65da32c265decb10e6ac420be99c1e2c4e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415059"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6762675"
 ---
 # <a name="time-and-attendance-management-in-retail"></a>Zarządzanie czasem i frekwencją w module Retail
 
@@ -41,9 +38,9 @@ W tym temacie opisano scenariusze obsługiwane w zakresie zarządzania czasem i 
 
 ### <a name="plan-worker-schedules"></a>Planowanie harmonogramów pracowników
 
-- Zastosuj profil za pomocą planowania pracy. Aby uzyskać więcej informacji, zobacz [Stosowanie profilu poprzez planowanie pracy](https://technet.microsoft.com/library/aa551234.aspx).
+- Zastosuj profil za pomocą planowania pracy. Aby uzyskać więcej informacji, zobacz [Stosowanie profilu poprzez planowanie pracy](/dynamicsax-2012/appuser-itpro/apply-profiles-using-work-planner).
 
-Uzyskać informacje dotyczące kroków konfiguracji, zobacz [Konfigurowanie modułu Czas i frekwencja](https://technet.microsoft.com/library/aa496971.aspx).
+Uzyskać informacje dotyczące kroków konfiguracji, zobacz [Konfigurowanie modułu Czas i frekwencja](/dynamicsax-2012/appuser-itpro/setting-up-time-and-attendance).
 
 ### <a name="commerce-specific-configuration"></a>Konfiguracja usług określonych dla Commerce
 
@@ -100,7 +97,7 @@ Uzyskać informacje dotyczące kroków konfiguracji, zobacz [Konfigurowanie modu
         </tbody>
         </table>
 
-        [![Stany zegara](./media/timeclockstates.png)](./media/timeclockstates.png)
+        [![Stany zegara.](./media/timeclockstates.png)](./media/timeclockstates.png)
 
 - Wyświetl komunikat potwierdzający i sprawdź, czy godzina aktualnego działania jest prawidłowa.
 - Dziennik:
@@ -138,4 +135,7 @@ Użytkownik usługi Commerce wykonuje procedurę obliczania, zatwierdzania i prz
 - Grupowe wyrejestrowania
 - Rejestrowanie nieobecności
 
-Aby uzyskać więcej informacji na temat procesu rejestracji czasu i obecności, zobacz [Przetwarzanie rejestracji czasu i frekwencji](https://technet.microsoft.com/library/aa573180.aspx).
+Aby uzyskać więcej informacji na temat procesu rejestracji czasu i obecności, zobacz [Przetwarzanie rejestracji czasu i frekwencji](/dynamicsax-2012/appuser-itpro/process-time-and-attendance-registrations).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

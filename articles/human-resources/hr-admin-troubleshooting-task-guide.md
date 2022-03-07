@@ -2,14 +2,11 @@
 title: Zapisywanie przewodników zadań w usłudze LCS i odtwarzanie ich ponownie
 description: W tym artykule opisano, jak zapisać przewodniki po zadaniach do programu Microsoft Dynamics Lifecycle Services (LCS), a następnie odtworzyć je ponownie.
 author: andreabichsel
-manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
@@ -17,14 +14,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b55937c0867117809471f50f1987f7bf12a4b25d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8a18bb14ba8c3c926065c97b0ee26c38ee86ded2
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420075"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6053282"
 ---
 # <a name="save-task-guides-to-lcs-and-replay-them"></a>Zapisywanie przewodników zadań w usłudze LCS i odtwarzanie ich ponownie
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **Szczegóły środowiska** 
 
@@ -63,3 +62,6 @@ Wykonaj następujące kroki, aby powtórzyć odtworzyć przewodnik zadania z LCS
 2. Wybierz **Otwórz z LCS**.
 3. Wybierz bibliotekę i węzeł BPM, który ma zapisany przewodnik zadania.
 4. Otwórz przewodnik zadania.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

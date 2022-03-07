@@ -2,16 +2,13 @@
 title: Wychodząca operacja magazynowa w punkcie sprzedaży
 description: W tym temacie opisano możliwości wychodzących operacji magazynowych w punkcie sprzedaży (POS).
 author: hhaines
-manager: annbe
 ms.date: 07/30/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,14 +16,14 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 1f74df94b1647520880ff994581872b9d9f8e067
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3cfe144f7bba2bbc4b25024b68155045271f6366
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414827"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5795652"
 ---
-# <a name="outbound-inventory-operation-in-pos"></a>Wychodząca operacja magazynowa w punkcie sprzedaży
+# <a name="outbound-inventory-operation-in-pos"></a>Operacja zapasów wychodzących w punkcie sprzedaży
 
 [!include [banner](includes/banner.md)]
 
@@ -193,3 +190,6 @@ W pełni wysłane zamówienia przeniesienia są przenoszone na kartę **Zakończ
 ## <a name="related-topics"></a>Powiązane tematy
 
 [Operacja zapasów przychodzących w punkcie sprzedaży](pos-inbound-inventory-operation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

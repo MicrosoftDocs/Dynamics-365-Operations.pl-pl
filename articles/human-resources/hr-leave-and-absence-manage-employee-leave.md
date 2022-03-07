@@ -2,15 +2,12 @@
 title: Zarządzanie urlopem pracownika etatowego
 description: Zarządzanie urlopami pracownika etatowego w Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
-ms.date: 11/02/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,14 +15,16 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 627c8959b1845fbad761a85bdca7dc93bfc6a105
-ms.sourcegitcommit: ffb5998e611b83c2e4f98323f39e3e8f6419c652
+ms.openlocfilehash: 6a0f3aaa35abc0b1818ebcedded3fb9d18d1ecf7f3a26a9aa75477b53d2eacdc
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "4420156"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6772695"
 ---
 # <a name="manage-employee-leave"></a>Zarządzanie urlopem pracownika etatowego
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Urlopem pracownika etatowego można zarządzać według typu urlopu. Obejmuje to wygasanie rejestracji urlopu i korygowanie sald typu urlopu. 
 
@@ -45,14 +44,16 @@ Urlopem pracownika etatowego można zarządzać według typu urlopu. Obejmuje to
 
 Możesz uwzględnić kod przyczyny i komentarz podczas korygowania salda urlopu pracownika etatowego. 
 
->[!IMPORTANT]
->Opcja wyświetlania dodatkowych informacji o saldach urlopowych jest dostępna w wersji zapoznawczej. Należy ją włączyć w środowisku **piaskownicy**. Aby uzyskać więcej informacji na temat włączania funkcji w wersji zapoznawczej, zobacz temat [Zarządzanie funkcjami](hr-admin-manage-features.md).<br>
->Po umieszczeniu kursora na saldzie urlopowym zostaną wyświetlone następujące informacje:<br>
->- **Dostępne** : Łącznie w tym roku — Wykorzystane w tym roku
->- **Łącznie w tym roku**: wszystkie naliczone urlopy, korekty i urlopy przeniesione na następny okres dla danego roku
->- **Wykorzystane w tym roku**: wszystkie zatwierdzone urlopy
+Teraz, gdy najedziesz kursorem na dowolne saldo urlopów, wyświetlone zostaną następujące informacje:
+
+- **Dostępne** — wartość **Łącznie w tym roku** pomniejszona o wartość **Wzięte w tym roku**.
+- **Łącznie w tym roku** – wszystkie naliczone urlopy, korekty i urlopy przeniesione na następny okres dla danego roku.
+- **Wykorzystane w tym roku** – wszystkie zatwierdzone urlopy.
 
 ## <a name="see-also"></a>Informacje dodatkowe
 
 - [Omówienie urlopów i nieobecności](hr-leave-and-absence-overview.md)
 - [Zarządzanie wnioskami o urlop i nieobecność](hr-employee-self-service-manage-requests.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

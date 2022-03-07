@@ -1,25 +1,27 @@
 ---
 title: Przenoszenie materiałów za pomocą zadań systemu Kanban
 description: Ta procedura skupia się na wycofywaniu zadania przeniesienia materiałów w systemie Kanban.
-author: johanhoffmann
+author: ChristianRytt
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanBoardTransferJob
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: crytt
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11771bbedc9fe4bdfaaa074c449cd329ce1a1d8f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: df65ea59be29dbe4eaad30558fcff4394737158f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567998"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5224937"
 ---
 # <a name="transfer-materials-with-kanban-jobs"></a>Przenoszenie materiałów za pomocą zadań systemu Kanban
 

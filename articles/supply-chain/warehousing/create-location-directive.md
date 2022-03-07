@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 84ff0a466c037db05aecaff14aa2e17990ce8799
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 77e3139f62ca73f461ff4a4b5114f5e7ba181d3b
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103145"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7575250"
 ---
 # <a name="work-with-location-directives"></a>Praca z dyrektywami lokalizacji
 
@@ -164,7 +164,7 @@ Pola w **dyrektywach lokalizacji** na skróconej karcie są charakterystyczne dl
     > [!NOTE]
     > To pole jest dostępne tylko dla wybranych typów zlecenia produkcyjnego, w których jest dozwolone uzupełnienie zapasów. Aby uzyskać pełną listę, należy zapoznać się z [polami w sekcji Typy zleceń roboczych](#fields-specific-types) wcześniej w tym temacie.
 
-- **Znajdź według** — umożliwia określenie, czy ilość putaway powinna być całkowitą ilością na numer identyfikacyjny, czy powinna być towarem towaru. To pole służy do zapewnienia, że cała zawartość numeru identyfikacyjnego jest umieszczana w jednej lokalizacji, a system nie sugeruje podzielenia zawartości na kilka lokalizacji dla systemu **ASN** (odbierającego numer identyfikacyjny), **odbierania mieszanych numerów identyfikacyjnych** oraz **procesów odbierania w klastrze**. (Proces odbierania w **Klastrze** wymaga włączenia funkcji [Odłóż klaster](putaway-clusters.md).) Zachowanie kwerendy dotyczącej dyrektywy lokalizacji, wierszy oraz akcji dotyczących dyrektywy lokalizacji zależy od wybranej wartości. **Wiersze** skróconej karcie są używane tylko wtedy, gdy pole **Znajdź według** jest ustawione na wartość *pozycja*.
+- **Znajdź według** — umożliwia określenie, czy ilość putaway powinna być całkowitą ilością na numer identyfikacyjny, czy powinna być towarem towaru. To pole służy do zapewnienia, że cała zawartość numeru identyfikacyjnego jest umieszczana w jednej lokalizacji, a system nie sugeruje podzielenia zawartości na kilka lokalizacji dla systemu **ASN** (odbierającego numer identyfikacyjny), **odbierania mieszanych numerów identyfikacyjnych** oraz **procesów odbierania w klastrze**. (Proces odbierania w **Klastrze** wymaga włączenia funkcji *Odłóż klaster*.) Zachowanie kwerendy dotyczącej dyrektywy lokalizacji, wierszy oraz akcji dotyczących dyrektywy lokalizacji zależy od wybranej wartości. **Wiersze** skróconej karcie są używane tylko wtedy, gdy pole **Znajdź według** jest ustawione na wartość *pozycja*.
 
     > [!NOTE]
     > To pole jest dostępne tylko dla wybranych typów zlecenia produkcyjnego, w których jest dozwolone uzupełnienie zapasów. Aby uzyskać pełną listę, należy zapoznać się z [polami dla typów zleceń roboczych](#fields-specific-types).

@@ -2,25 +2,22 @@
 title: Mechanizm opłaty zwrotnej dla schematu VAT/GST
 description: W tym temacie opisano, jak skonfigurować odwrócony podatek od towarów i usług (VAT) dla krajów europejskich i Arabii Saudyjskiej i Singapurze.
 author: epodkolz
-manager: AnnBe
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Saudi Arabia, Spain, Sweden, United Kingdom, Singapore, Bahrain, Kuwait, Oman, Qatar
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 247bc64bf0b90a641ead8a21971a6043691762fa
-ms.sourcegitcommit: f12ce34cc08cf1fa205c67f48669ea9a6566b526
+ms.openlocfilehash: 326a74d0f962cf0455033b04950ded7ca26bfc77
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4515055"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594723"
 ---
 # <a name="reverse-charge-mechanism-for-vatgst-scheme"></a>Mechanizm opłaty zwrotnej dla schematu VAT/GST
 
@@ -48,7 +45,6 @@ Aby zastosować podatek odwrócony, należy skonfigurować następujące ustawie
 Zalecamy stosowanie oddzielnych kodów podatków dla operacji sprzedaży i zakupu.
 
 <table>
-<body>
 <tr>
 <td><strong>Kod podatku dla sprzedaży</strong></td>
 <td>Utwórz kod podatku dla operacji sprzedaży z podatkiem odwróconym (<strong>Podatek</strong> &gt; <strong>Podatki pośrednie</strong> &gt; <strong>Podatek</strong> &gt; <strong>Kody podatków</strong>).
@@ -65,7 +61,6 @@ Ten kod podatku ujemnego należy przypisać do grupy podatków od towarów, po c
 <p>Aby uzyskać więcej informacji, zobacz następną sekcję &quot;Konfigurowanie grup podatków i grup podatków dla towarów&quot;.</p>
 </td>
 </tr>
-</tbody>
 </table>
 
 ## <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a><a name="sales-tax-item-sales-tax-groups"></a>Konfigurowanie grup podatków i grup podatków dla towarów
@@ -124,7 +119,7 @@ Podczas księgowania faktury zakupu zawierającej podatek odwrócony są tworzon
 
 Na zrzucie ekranu poniżej jedna transakcja ma kierunek **Podatek naliczony**, a druga transakcja ma kierunek jest **Podatek należny**. 
 
-![Zaksięgowany podatek](media/apac-sau-posted-sales-tax.png)
+![Zaksięgowany podatek.](media/apac-sau-posted-sales-tax.png)
 
 ## <a name="enable-reverse-charge-mechanism-for-vatgst-scheme-feature"></a><a name="enable-reverse-charge"></a>Włącz funkcję Mechanizm opłaty zwrotnej dla schematu podatku VAT/GST
 W obszarze roboczym **Zarządzanie funkcjami** znajdź funkcję i wybierz opcję **Włącz**.
@@ -137,3 +132,6 @@ Dostępne będą następujące strony i elementy menu związane z konfiguracją 
  - **Parametry handlu zagranicznego** (**Podatek** > **Konfiguracja** > **Podatek** > **Handel zagraniczny** > **Parametry handlu zagranicznego**). Patrz [Ustawianie właściwości kraju/regionu](#Set-up-Country/region-properties).
 
 Pole wyboru **Opłata zwrotna** będzie dostępne dla stron **Grupa podatków** i **Zaksięgowany podatek**. Więcej informacji zawierają sekcje, [Konfigurowanie grup podatków i grup podatków dla towarów](#sales-tax-item-sales-tax-groups), [Podatek odwrócony w fakturze sprzedaży](#reverse-charge-sale) i [Podatek odwrócony w fakturze zakupu](#reverse-charge-purchase).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

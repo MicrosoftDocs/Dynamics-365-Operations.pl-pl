@@ -1,10 +1,12 @@
 ---
 title: Tworzenie modelu konfiguracji produktu
 description: W tym artykule opisano kroki tworzenia i konfigurowania modelu konfiguracji produktu.
-author: t-benebo
+author: cvocph
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PCProductConfigurationModelListPage
 audience: Application User
@@ -13,15 +15,15 @@ ms.custom: 4051
 ms.assetid: 00df5537-b148-4e32-a248-3e35876ad4e1
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2dc9f46d91dc298a5c8babee2b370fea09f61741
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: e6562353a96c2a69c255d20c3f2084c9c3f99bd3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578231"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011304"
 ---
 # <a name="set-up-a-product-configuration-model"></a>Tworzenie modelu konfiguracji produktu
 
@@ -50,6 +52,3 @@ W tym artykule opisano kroki tworzenia i konfigurowania modelu konfiguracji prod
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Nowości i zmiany w programie Dynamics 365 for Operations w wersji 1611 (listopad 2016)
 description: W tym temacie opisano nowe oraz zmienione funkcje dostępne w programie Dynamics 365 for Operations w wersji 1611.
 author: sericks007
-manager: AnnBe
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0b5856ef83ff1e101896eefbbe022e70ad954219
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 0625010143b7df9c3c897bf7f43ef25993303240
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797202"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752815"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Nowości i zmiany w programie Dynamics 365 for Operations w wersji 1611 (listopad 2016)
 
@@ -498,7 +496,7 @@ W tym temacie opisano nowe oraz zmienione funkcje dostępne w programie Dynamics
 <li>Format płatności poleceniem zapłaty ISO20022 dla Włoch</li>
 <li>Format zapłaty z tytułu inkasa RIBA dla Włoch</li>
 <li>Krajowy raport transakcji podatkowych dla Włoch</li>
-<li>Raport czarnej listy dla Włoch</li>
+<li>Raport zablokowanych dla Włoch</li>
 <li>Raport Modello770 dla Włoch</li>
 <li>Roczne sprawozdanie podatkowe dla Włoch</li>
 </ul>
@@ -945,3 +943,6 @@ Obecnie moduł Retail Modern POS jest dostępny tylko jako aplikacja systemu Win
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Nowości i zmiany w rozwiązaniu Finance and Operations — strona główna](whats-new-changed.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

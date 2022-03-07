@@ -1,12 +1,10 @@
 ---
 title: Dokumenty składnika majątku
 description: W tym temacie objaśniono dokumenty w module Zarządzanie składnikami majątku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetObjectDocument
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0f8bcae99a96ccd83dc4543b1c56007a4263a19b
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 77b7265b1ba56dbd1cd955f5d90afea02f589ce2eebdd05a2fef3a7ddebc0ee1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021686"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6722494"
 ---
 # <a name="asset-documents"></a>Dokumenty składnika majątku
 
@@ -49,3 +47,6 @@ W module Zarządzanie składnikami majątku można skonfigurować dokumenty w ta
 
 4. Wybierz **Załączniki**. Zostanie wyświetlona standardowa strona **Obsługa dokumentów**.
 5. Skonfiguruj dokumenty lub notatki, które powinny być dołączone do rekordu dokumentu składnika majątku. Po dołączeniu dokumentów w polu **Załączniki** pokazuje się liczba dokumentów powiązanych z rekordem.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

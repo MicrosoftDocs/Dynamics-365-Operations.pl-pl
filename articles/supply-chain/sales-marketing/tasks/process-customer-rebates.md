@@ -1,19 +1,26 @@
---- 
-# required metadata 
+---
 title: Generowanie i przetwarzanie rabatów dla odbiorców
 description: Ta procedura przedstawia sposób przetwarzania rabatów dla odbiorców na etapach od wygenerowania wniosku do przekazania ich jako naliczenia do modułu Rozrachunki z odbiorcami.
-author: Henrikan
+author: omulvad
+manager: tfehr
 ms.date: 06/25/2019
 ms.topic: business-process
-ms.prod: null
-ms.technology: null
-ms.search.form: 'PdsRebateAgreement, SalesTableListPage, SalesCreateOrder, SalesTable, MCRPriceHistory, SalesEditLines,  PdsRebateTableListPage, MCRBrokerWriteOffReason, MRCHierarchyAddCust, PdsItemRebateGroup, PdsRebate, PdsRebateProgramTMATable, PdsRebateTable, PdsRebateTableListPagePreviewPane, PdsRebateTrans, PdsRebateType_CustLookup'
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: PdsRebateAgreement, SalesTableListPage, SalesCreateOrder, SalesTable, MCRPriceHistory, SalesEditLines,  PdsRebateTableListPage, MCRBrokerWriteOffReason, MRCHierarchyAddCust, PdsItemRebateGroup, PdsRebate, PdsRebateProgramTMATable, PdsRebateTable, PdsRebateTableListPagePreviewPane, PdsRebateTrans, PdsRebateType_CustLookup
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
-ms.search.validFrom: '2016-06-30'
-ms.dyn365.ops.version: AX 7.0.0
+ms.author: kamaybac
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 54242bfac2fa8dbdd982d36083c1dd0f4b8e077e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006798"
 ---
 # <a name="generate-and-process-customer-rebates"></a>Generowanie i przetwarzanie rabatów dla odbiorców
 
@@ -64,7 +71,7 @@ Ta procedura przedstawia sposób przetwarzania rabatów dla odbiorców na etapac
 2. Kliknij opcję **Kumuluj**.
 3. W polu **Odbiorca** wprowadź lub wybierz wartość.
 4. W polu **Data początkowa** wybierz dzisiejszą datę.
-5. Kliknij przycisk **OK**. W wyniku uruchomienia funkcji **kumulacji** szacowana kwota wniosku została teraz skorygowana, aby uwzględnić fakt, że całkowita wielkości sprzedaży dla odbiorcy w okresie jest wyższa niż podczas generowania pierwszego rabatu. Dokładniej rzecz biorąc: ponieważ łączna ilość zakupu osiągnęła 100 sztuk, odbiorca kwalifikuje się na rabat 40 USD za sztukę (zgodnie z drugim przedziałem ilości w umowie), czyli łącznie 4,000 USD kwoty rabatu. Różnica została zarejestrowana jako nowa „korekta” wniosku na dodatkowe 800 USD. Stan wniosków rabatowych uwzględnionych w aktualizacji kumulacji jest teraz ustawiony na Obliczone. 
+5. Kliknij przycisk **OK**. W wyniku uruchomienia funkcji **kumulacji** szacowana kwota wniosku została teraz skorygowana, aby uwzględnić fakt, że całkowita wielkości sprzedaży dla odbiorcy w okresie jest wyższa niż podczas generowania pierwszego rabatu. Dokładniej rzecz biorąc: ponieważ łączna ilość zakupu osiągnęła 100 sztuk, odbiorca kwalifikuje się na rabat 40 USD za sztukę (zgodnie z drugim przedziałem ilości w umowie), czyli łącznie 400 USD kwoty rabatu. Różnica została zarejestrowana jako nowa „korekta” wniosku na dodatkowe 800 USD. Stan wniosków rabatowych uwzględnionych w aktualizacji kumulacji jest teraz ustawiony na Obliczone. 
 6. Na liście zaznacz wszystkie wiersze.
 7. Kliknij przycisk **Zatwierdź**.
 8. Kliknij przycisk **Przetwarzaj**.
@@ -74,6 +81,3 @@ Ta procedura przedstawia sposób przetwarzania rabatów dla odbiorców na etapac
     - Konto naliczania rabatów zostało uznane kwotą reprezentującą przyszłe zobowiązanie odbiorcy.
     - Konto wydatków rabatowych zostało obciążone kwotą reprezentującą koszt poniesiony w związku ze sprzedażą.   
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

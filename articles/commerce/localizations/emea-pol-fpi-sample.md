@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Poland
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-2-1
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 253973408d48ff37769accb630e8e6bab50ac3d9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3050c20a0fec508330a609eea9f9dfebb53a8950
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408377"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5215672"
 ---
 # <a name="fiscal-printer-integration-sample-for-poland"></a>Przykładowa integracja drukarki fiskalnej dla Polski
 
@@ -278,3 +277,6 @@ Plik konfiguracyjny znajduje się w folderze **Konfiguracja** projektu rozszerze
 - **Ciąg połączenia** — ten ciąg opisuje szczegóły połączenia do urządzenia w formacie obsługiwanym przez sterownik urządzenia. Aby uzyskać szczegółowe informacje, zobacz dokumentację sterownika POSNET.
 - **Data i godzina synchronizacji** — to ustawienie określa, czy należy zsynchronizować datę i godzinę drukarki ze stacją połączoną Hardware Station
 - **Limit czasu urządzenia** — ilość czasu, w milisekundach, przez który sterownik czeka na odpowiedź z urządzenia. Aby uzyskać szczegółowe informacje, zobacz dokumentację sterownika POSNET.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

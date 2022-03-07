@@ -1,10 +1,12 @@
 ---
 title: Konfigurowanie dokumentów przesunięcia towarów wewnątrz firmy
-description: Ta procedura pokazuje, jak skonfigurować dokumenty przeniesienia w celu przesunięcia towarów wewnątrz firmy.
+description: Ta procedura pokazuje, jak utworzyć dokumenty przeniesienia w celu przesunięcia towarów wewnątrz firmy.
 author: v-oloski
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventTransferOrders, InventLocationIdLookup, TransportationDocument, HcmWorkerLookUp, SrsReportViewerForm, InventTransferParmShip
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 80805bf30b4be753d7543ed4c6de30401d36e981
-ms.sourcegitcommit: 2fba4f2ef7e513357366fc640befe0d2f7bc31f5
+ms.openlocfilehash: f4c71d1b0e756cc20fa68bf79102479447cf8f86
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "7601457"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988052"
 ---
 # <a name="set-up-the-transfer-documents-for-goods-movement-inside-a-company"></a>Konfigurowanie dokumentów przesunięcia towarów wewnątrz firmy
 
@@ -71,6 +73,3 @@ Ta procedura pokazuje, jak utworzyć dokumenty przeniesienia w celu przesunięci
 10. Kliknij opcję Dokument dostawy.
 11. Kliknij przycisk OK.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -5,6 +5,7 @@ author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TAMRebateGroup
 audience: Application User
@@ -13,19 +14,19 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
-ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 1f9deeedef504d1b2d0ba3431902c50bc65d62ba
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.18
+ms.openlocfilehash: cef7abbbf2a94e26b6b9e66492cd7347d3b4d1f2
+ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572704"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920068"
 ---
 # <a name="rebate-management-groups"></a>Zarządzanie rabatami — grupy
 
 [!include [banner](../includes/banner.md)]
 
-Obliczenia dotyczące zarządzania rabatami mogą być prowadzone przez grupy. Grupy zarządzania rabatami mogą być tworzone dla odbiorców, dostawców i towarów. Można je dołączyć do rekordu głównego.
+Obliczenia rabatów i potrąceń mogą być oparte na grupach. Grupy zarządzania rabatami mogą być tworzone dla odbiorców, dostawców i towarów. Można je dołączyć do rekordu głównego.
 
 ## <a name="rebate-management-customer-groups"></a>Zarządzanie rabatami — grupy klientów
 
@@ -49,9 +50,10 @@ Aby wyświetlić, dodać lub usunąć odbiorców z wybranej grupy, należy wykon
 1. Przejdź do **Zarządzanie rabatami \> Ustawienia grup zarządzania rabtami \> Grupy klientów**.
 1. Wybierz grupę do zarządzania.
 1. W okienku akcji wybierz **Klienci**. Zostanie wyświetlona strona **Grupy zarządzania rabatami** i pokazuje listę odbiorców, którzy już są członkami wybranej grupy.
-1. Aby dodać nowego klienta do grupy, wybierz **Nowy** w okienku akcji, aby dodać wiersz do siatki. Następnie ustaw następujące pole dla nowego wiersza:
+1. Aby dodać nowego klienta do grupy, wybierz **Nowy** w okienku akcji, aby dodać wiersz do siatki. Następnie ustaw następujące pola dla nowego wiersza:
 
     - **Konto klienta**  - wybierz dowolne ID klienta.
+    - **Nazwa** — wprowadź nazwę i/lub opis odbiorcy.
 
 1. Aby usunąć klienta z grupy, wybierz klienta, a następnie wybierz polecenie **Usuń** w okienku akcji.
 
@@ -60,9 +62,10 @@ Aby wyświetlić, dodać lub usunąć przypisania grupowe dla wybranego klienta,
 1. Wybierz kolejno opcje **Rozrachunki z odbiorcami \> Odbiorcy \> Wszyscy odbiorcy**.
 1. Wybierz klienta, z którym chcesz pracować.
 1. W okienku akcji, na karcie **Zarządzanie rabatami — umowy** w grupie **Obsługa** wybierz **Zmień stan**. Pojawi się strona **Grupy zarządzania rabatami** i zawiera listę grup, do których należy już wybrany klient.
-1. Aby dodać nowego klienta do nowej grupy, wybierz **Nowy** w okienku akcji, aby dodać wiersz do siatki. Następnie ustaw następujące pole dla nowego wiersza:
+1. Aby dodać nowego klienta do nowej grupy, wybierz **Nowy** w okienku akcji, aby dodać wiersz do siatki. Następnie ustaw następujące pola dla nowego wiersza:
 
     - **Grupa zarządzania rabatami** — wybierz grupę, do których chcesz dodać odbiorcy.
+    - **Opis** — służy do wprowadzania opisu grupy (na przykład w celu wyjaśnienia, dlaczego odbiorca jest jej członkiem).
 
 1. Aby usunąć klienta z grupy, wybierz grupy, a następnie wybierz polecenie **Usuń** w okienku akcji.
 
@@ -86,9 +89,10 @@ Aby wyświetlić, dodać lub usunąć dostawców z wybranej grupy, należy wykon
 1. Przejdź do **Zarządzanie rabatami \> Ustawienia grup zarządzania rabatami \> Grupy dostawców**.
 1. Wybierz grupę do zarządzania.
 1. W okienku akcji wybierz pozycję **Dostawcy**. Zostanie wyświetlona strona **Grupy zarządzania rabatami** i pokazuje listę dostawców, którzy już są członkami wybranej grupy.
-1. Aby dodać nowego dostawcę do nowej grupy, wybierz **Nowy** w okienku akcji, aby dodać wiersz do siatki. Następnie ustaw następujące pole dla nowego wiersza:
+1. Aby dodać nowego dostawcę do nowej grupy, wybierz **Nowy** w okienku akcji, aby dodać wiersz do siatki. Następnie ustaw następujące pola dla nowego wiersza:
 
     - **Konto dostawcy** - wybierz dowolne ID dostawcy.
+    - **Nazwa** — wprowadź nazwę i/lub opis dostawcy.
 
 1. Aby usunąć dostawcę z grupy, wybierz dostawcę, a następnie wybierz polecenie **Usuń** w okienku akcji.
 
@@ -97,9 +101,10 @@ Aby wyświetlić, dodać lub usunąć przypisania grupowe dla wybranego dostawcy
 1. Przejdź do pozycji **Rozrachunki z dostawcami \> Dostawcy \> Wszyscy dostawcy**.
 1. Wybierz dostawcy, z którym chcesz pracować.
 1. W okienku akcji, na karcie **Dostawca** w grupie **Zarządzanie rabatami — umowy** wybierz **Grupy zarządznia rabatami**. Pojawi się strona **Grupy zarządzania rabatami** i zawiera listę grup, do których należy już wybrany dostawca.
-1. Aby dodać nowego dostawcę do nowej grupy, wybierz **Nowy** w okienku akcji, aby dodać wiersz do siatki. Następnie ustaw następujące pole dla nowego wiersza:
+1. Aby dodać nowego dostawcę do nowej grupy, wybierz **Nowy** w okienku akcji, aby dodać wiersz do siatki. Następnie ustaw następujące pola dla nowego wiersza:
 
     - **Grupa zarządzania rabatami** — wybierz grupę, do których chcesz dodać dostawcy.
+    - **Opis** — służy do wprowadzania opisu grupy (na przykład w celu wyjaśnienia, dlaczego dostawca jest jej członkiem).
 
 1. Aby usunąć dostawcę z grupy, wybierz grupy, a następnie wybierz polecenie **Usuń** w okienku akcji.
 
@@ -123,9 +128,10 @@ Aby wyświetlić, dodać lub usunąć towary z wybranej grupy, należy wykonać 
 1. Przejdź do **Zarządzanie rabatami \> Ustawienia grup zarządzania rabatami \> Grupy towarow**.
 1. Wybierz grupę do zarządzania.
 1. W okienku akcji kliknij pozycję **Towary**. Zostanie wyświetlona strona **Grupy zarządzania rabatami** i pokazuje listę towarów, którzy już są członkami wybranej grupy.
-1. Aby dodać nowego towar do nowej grupy, wybierz **Nowy** w okienku akcji, aby dodać wiersz do siatki. Następnie ustaw następujące pole dla nowego wiersza:
+1. Aby dodać nowego towar do nowej grupy, wybierz **Nowy** w okienku akcji, aby dodać wiersz do siatki. Następnie ustaw następujące pola dla nowego wiersza:
 
     - **Konto towaru** - wybierz dowolne ID towaru.
+    - **Nazwa produktu** — wprowadź nazwę i/lub opis towaru.
 
 1. Aby usunąć towar z grupy, wybierz dostawcę, a następnie wybierz polecenie **Usuń** w okienku akcji.
 
@@ -134,9 +140,10 @@ Aby wyświetlić, dodać lub usunąć przypisania grupowe dla wybranego towaru, 
 1. Przejdź do **Zarządzanie informacjami o produktach\> Produkty \> Zwolnione produkty**.
 1. Wybierz towar, z którym chcesz pracować.
 1. W okienku akcji, na karcie **Produkt** w grupie **Zarządzanie rabatami — umowy** wybierz **Grupy zarządznia rabatami**. Pojawi się strona **Grupy zarządzania rabatami** i zawiera listę grup, do których należy już wybrany towar.
-1. Aby dodać towar do nowej grupy, wybierz **Nowy** w okienku akcji, aby dodać wiersz do siatki. Następnie ustaw następujące pole dla nowego wiersza:
+1. Aby dodać towar do nowej grupy, wybierz **Nowy** w okienku akcji, aby dodać wiersz do siatki. Następnie ustaw następujące pola dla nowego wiersza:
 
     - **Grupa zarządzania rabatami** — wybierz grupę, do których chcesz dodać towar.
+    - **Opis** — służy do wprowadzania opisu grupy (na przykład w celu wyjaśnienia, dlaczego towar jest jej członkiem).
 
 1. Aby usunąć towar z grupy, wybierz grupę, a następnie wybierz polecenie **Usuń** w okienku akcji.
 

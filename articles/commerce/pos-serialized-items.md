@@ -2,25 +2,22 @@
 title: Praca z pozycjami serializowanymi w punkcie sprzedaży
 description: W tym temacie opisano sposób zarządzania pozycjami spersonalizowanymi w aplikacji punktu sprzedaży.
 author: boycezhu
-manager: annbe
-ms.date: 08/21/2020
+ms.date: 01/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 6ba01abc3d1a4496ec586a621aa03b4981f84d76
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5725943fd249e1b5d66b08b829c2eb58b6aad3ee24db9ca83bbde9be906bbf82
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415054"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6737585"
 ---
 # <a name="work-with-serialized-items-in-the-pos"></a>Praca z pozycjami serializowanymi w punkcie sprzedaży
 
@@ -90,8 +87,52 @@ Aby włączyć taką weryfikację jako wymaganie wstępne, należy zaplanować c
 - **Retail and Commerce** > **Retail and Commerce — składniki IT** > **Produkty i zapasy** > **Dostępność produktu z wymiarami śledzenia**
 - **Retail and Commerce** > **Harmonogramy dystrybucji** > **1130** (**Dostępność produktu**)
 
+## <a name="sell-serialized-items-in-pos"></a>Sprzedawaj towary z numerami seryjnymi w punkcie sprzedaży
+
+Chociaż aplikacja POS zawsze obsługiwała sprzedaż towarów z numerami seryjnymi, w wersji Commerce 10.0.17 i nowszych organizacje mogą włączyć funkcje, które poprawiają logikę biznesową, która jest wyzwalana podczas sprzedaży produktów skonfigurowanych do śledzenia numerów seryjnych.
+
+Gdy jest włączona funkcja **Ulepszone sprawdzanie poprawności numeru seryjnego podczas rejestrowania i realizacji zamówień w punkcie sprzedaży** w punktów sprzedaży, podczas sprzedaży produktów seryjnych w aplikacji POS są oceniane następujące konfiguracje produktów:
+
+- **Ustawienia typu** numeru seryjnego produktu (**aktywne** lub **aktywne w sprzedaży**).
+- Ustawienia **Dozwolony jest pusty problem** dla produktu.
+- Ustawienia **Fizyczne ujemne zapasy** dla produktu i/lub magazynu sprzedaży.
+
+### <a name="active-serial-configurations"></a>Aktywne konfiguracje numeru seryjnego
+
+Gdy towary są sprzedawane w punkcie sprzedaży, który jest skonfigurowany z wymiarem śledzenia **Aktywny** numer seryjny, punkt sprzedaży inicjuje logikę weryfikacji, która uniemożliwia użytkownikom sfinalizowanie sprzedaży towaru z numerem seryjnym, którego nie można znaleźć w bieżącym stanie magazynu sprzedającego. Istnieją dwa wyjątki od tej reguły sprawdzania poprawności:
+
+- Jeśli dla towaru jest również skonfigurowana opcja **Dozwolony pusty problem**, użytkownicy mogą pominąć wprowadzanie numeru seryjnego i sprzedawać towar bez wyznaczania numeru seryjnego.
+- Jeśli towar i / lub magazyn sprzedaży jest skonfigurowany z włączonym **Fizycznie ujemnym stanem magazynowym**, aplikacja akceptuje i sprzedaje numer seryjny, którego nie można potwierdzić, że znajduje się w magazynie w magazynie, dla którego jest sprzedawany. Taka konfiguracja pozwala na ujemną wartość transakcji magazynowej dla tego konkretnego towaru / numeru seryjnego, a zatem system pozwoli na sprzedaż nieznanych numerów seryjnych.
+
+> [!IMPORTANT]
+> Aby upewnić się, że aplikacja POS może prawidłowo zweryfikować, czy numery seryjne sprzedawane dla **Aktywnych** towarów typu seryjnego znajdują się na stanie magazynu sprzedaży, organizacje muszą uruchamiać zadanie **Dostępność produktu ze śledzeniem wymiarów** w Commerce headquarters i towarzyszące **1130** zlecenie dystrybucji dostępności produktów za pośrednictwem Commerce headquarters w regularnych odstępach czasu. W miarę przyjmowania nowych serializowanych zapasów do magazynów sprzedaży, aby punkt sprzedaży mógł zweryfikować dostępność zapasów sprzedawanych numerów seryjnych, główny inwentarz musi często aktualizować bazę danych kanału najbardziej aktualnymi danymi o dostępności zapasów. Zadanie **Dostępność produktu z wymiarami śledzenia** zawiera bieżącą migawkę magazynu głównego, w tym numerów seryjnych, dla wszystkich magazynów firmy. W zadaniu dystrybucji **1130** migawka zapasów jest uwzględniana we wszystkich skonfigurowanych bazach danych kanału.
+
+### <a name="active-in-sales-process-serial-configurations"></a>Aktywny w konfiguracjach seryjnych procesu sprzedaży
+
+Pozycje skonfigurowane z wymiarem seryjnym jako **Aktywne w procesie sprzedaży** nie przechodzą przez żadną logikę walidacji zapasów, ponieważ ta konfiguracja oznacza, że numery seryjne zapasów nie są wstępnie rejestrowane w magazynie, a numery seryjne są przechwytywane tylko w momencie sprzedaży .  
+
+Jeśli **Dozwolony jest pusty problem** jest również skonfigurowane dla **Aktywny w procesie sprzedaży** skonfigurowane pozycje, wpis numeru seryjnego można pominąć. Jeśli nie skonfigurowano **Dozwolony jest pusty problem**, aplikacja wymaga, aby użytkownik wprowadzał numer seryjny, nawet jeśli nie będzie on sprawdzany pod względem dostępnych zapasów.
+
+### <a name="apply-serial-numbers-during-creation-of-pos-transactions"></a>Zastosuj numery seryjne podczas tworzenia transakcji POS
+
+Aplikacja POS natychmiast monituje użytkowników o przechwycenie numeru seryjnego podczas sprzedaży towaru z numerem seryjnym, ale aplikacja umożliwia użytkownikom pominięcie wprowadzania numerów seryjnych do pewnego momentu w procesie sprzedaży. Kiedy użytkownik zaczyna pobierać płatność, aplikacja wymusza i wymaga wprowadzenia numeru seryjnego dla wszelkich pozycji, które nie są skonfigurowane do realizacji w przyszłych wysyłkach lub odbiorach. Wszelkie pozycje z numerami seryjnymi skonfigurowane do realizacji zamówienia typu kasowych lub zamówienia wymagają od użytkownika przechwycenia numeru seryjnego (lub wyrażenia zgody na pozostawienie go pustego, jeśli pozwala na to konfiguracja przedmiotu) przed zakończeniem sprzedaży.
+
+W przypadku towarów z numerami seryjnymi sprzedawanych do przyszłego odbioru lub wysyłki, użytkownicy POS mogą pominąć wprowadzanie numeru seryjnego i nadal dokończyć tworzenie zamówienia klienta.   
+
+> [!NOTE]
+> W przypadku sprzedaży lub realizacji produktów z numerami seryjnymi za pośrednictwem aplikacji POS wymuszana jest ilość „1” dla towarów z numeracją seryjną w transakcji sprzedaży. Jest to wynik śledzenia informacji o numerze seryjnym w wierszu sprzedaży. W przypadku sprzedaży lub realizacji transakcji dla wielu towarów z numerami seryjnymi za pośrednictwem punktu sprzedaży, każdy wiersz sprzedaży musi być skonfigurowany tylko z ilością „1”. 
+
+### <a name="apply-serial-numbers-during-customer-order-fulfillment-or-pickup"></a>Zastosuj numery seryjne podczas realizacji lub odbioru zamówienia klienta
+
+Podczas wypełniania wierszy zamówień klientów dotyczących produktów z numerami seryjnymi za pomocą operacji **Realizacji zamówienia** w punkcie sprzedaży, POS wymusza przechwycenie numeru seryjnego przed ostateczną realizacją. W związku z tym, jeśli numer seryjny nie został podany podczas wstępnego rejestrowania zamówienia, musi zostać zarejestrowany podczas procesów kompletacji, pakowania lub wysyłki w punkcie sprzedaży. Walidacja jest wykonywana na każdym kroku, a użytkownik zostanie poproszony o podanie numeru seryjnego tylko wtedy, gdy go brakuje lub jest już nieaktualny. Na przykład, jeśli użytkownik pominie etapy pobierania lub pakowania i natychmiast zainicjuje wysyłkę, a numer seryjny nie został zarejestrowany dla linii, punkt sprzedaży będzie wymagał wprowadzenia numeru seryjnego przed zakończeniem ostatniego etapu faktury. Podczas wymuszania przechwytywania numeru seryjnego podczas operacji realizacji zamówień w punkcie sprzedaży nadal obowiązują wszystkie zasady wspomniane wcześniej w tym temacie. Tylko serializowane pozycje skonfigurowane jako **Aktywne** są przechodzić przez weryfikację zapasów o numerze seryjnym. Pozycje skonfigurowane jako **Aktywne w procesie sprzedaży** nie będą sprawdzane poprawność. Jeśli **Ujemne wartości magazynu fizycznego** są dozwolone dla **Aktywnych** produktów, będą przyjmowane numery seryjne, niezależnie od dostępności zapasów w magazynie. W przypadku towarów **Aktywnych** i **Aktywne w procesie sprzedaży**, jeśli skonfigurowano **Dozwolony jest pusty problem**, użytkownik może w razie potrzeby pozostawić puste numery seryjne podczas etapów pobrania, pakowania i wysyłki.
+
+Weryfikacje numerów seryjnych będą również miały miejsce, gdy użytkownik wykonuje operacje odbioru zamówień klientów w punkcie sprzedaży. Aplikacja POS nie pozwala na sfinalizowanie odbioru produktu z numerami seryjnymi, chyba że przejdzie weryfikację, jak wspomniano wcześniej. Weryfikacje są zawsze oparte na wymiarze śledzenia produktu i sprzedaży konfiguracji magazynowych. 
+
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Operacja zapasów przychodzących w punkcie sprzedaży](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation)
+[Operacja zapasów przychodzących w punkcie sprzedaży](./pos-inbound-inventory-operation.md)
 
-[Operacja zapasów wychodzących w punkcie sprzedaży](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation)
+[Operacja zapasów wychodzących w punkcie sprzedaży](./pos-outbound-inventory-operation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

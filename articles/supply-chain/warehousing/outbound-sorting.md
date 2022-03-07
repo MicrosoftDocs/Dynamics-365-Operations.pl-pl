@@ -2,11 +2,9 @@
 title: Sortowanie towarów wychodzących
 description: Ten temat zawiera informacje o sortowaniu towarów wychodzących. Ta funkcjonalność ułatwia obsługę małych pojemników i pomaga pracownikom magazynu lepiej planować i organizować pojemność palet w ciężarówce.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSPack, WHSOutboundSortTemplate, WHSOutboundSortPositionAssignments, WHSLocationType, WHSLoactionProfile
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 2b0049269b69c0777420b3ecd9b1f649c4a1ab11
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a3644964e43b7a1b34aa3bfab4e9172c1cb55bc8ef1d87cc7b5e2733effcb316
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963417"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6726520"
 ---
 # <a name="outbound-sorting"></a>Sortowanie towarów wychodzących
 
@@ -666,3 +664,6 @@ Należy wykonać posortowaną pracę pobrania z magazynu. Po zakończeniu Inwent
     Praca została zakończona.
 
 Od tego momentu obowiązują wszystkie inne procesy magazynowe.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

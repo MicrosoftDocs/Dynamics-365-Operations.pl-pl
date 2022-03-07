@@ -1,28 +1,28 @@
 ---
 title: Budżetowanie — strona główna
 description: Ten temat zawiera omówienie składników funkcji budżetowania, narzędzi budżetowania oraz funkcji raportowania dostępnych w rozwiązaniu Microsoft Dynamics 365 Finance.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 08/09/2017
-ms.topic: index-page
+author: panolte
+ms.date: 04/29/2021
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetPlanningWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 106043
+ms.custom:
+- "106043"
+- intro-internal
 ms.assetid: 702f692e-ad1c-4798-8d3e-c3cf8591d3fa
 ms.search.region: Global
-ms.author: roschlom
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af006a94d29781473c164d108fb48ca7d00d169d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 6ad0d055702a3801bf9fe9ac3159eba7c297b6f0
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4962917"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983959"
 ---
 # <a name="budgeting-home-page"></a>Budżetowanie — strona główna
 
@@ -30,12 +30,11 @@ ms.locfileid: "4962917"
 
 Ten temat zawiera omówienie składników funkcji budżetowania, narzędzi budżetowania oraz funkcji raportowania. 
 
-<a name="components-of-budgeting-functionality"></a>Składniki funkcji budżetowania
--------------------------------------
+## <a name="components-of-budgeting-functionality"></a>Składniki funkcji budżetowania
 
 Cykl planowania zasobów dla firmy zwykle obejmuje działania dotyczące planowania, budżetowania i prognozowania.
 
-[![Składniki funkcji budżetowania](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg)
+[![Składniki funkcji budżetowania.](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg)
 
 Procesy długoterminowego planowania strategicznego oraz planowania budżetu rocznego są obsługiwane za pomocą dokumentu planu budżetu. Dokumenty planu budżetu są ściśle zintegrowane z programem Microsoft Excel. Użytkownicy mogą konfigurować nieograniczoną liczbę scenariuszy pieniężnych i ilościowych oraz definiować hierarchie organizacyjne budżetowania do obsługi metod budżetowania od góry do dołu i od dołu do góry. Po określeniu i zatwierdzeniu budżetu w aplikacji należy przekonwertować plan budżetu na wpis do rejestru budżetu. Wpisy do rejestru budżetu zawierają narzędzia do obsługi budżetu i przechowywania kwot, które można śledzić za pomocą kodów budżetu. Wpisy do rejestru budżetu umożliwiają poprawianie pierwotnych budżetów, wykonywanie przeniesień i przenoszenie na następny okres kwot budżetu z poprzedniego roku. Na podstawie przyjętego budżetu firma może włączyć kontrolę budżetu. Poziom kontroli zależy od kultury organizacyjnej oraz poziomu dojrzałości organizacji. Organizacje o mniejszej dojrzałości mogą pozostawiać budżet „taki, jaki jest” i w sytuacji, gdy budżet nie spełnia oczekiwań, działać reaktywnie, a nie proaktywnie. Inne organizacje mogą włączyć zasady kontroli budżetu, które uniemożliwiają użytkownikom kupowanie, jeśli w budżecie nie ma dostępnych środków.
 
@@ -49,7 +48,7 @@ Organizacje bardzo dojrzałe mogą wykształcić kulturę organizacyjną, w któ
 -   [Szablony planowania budżetu dla programu Excel](budget-planning-excel-templates.md)
 
 ## <a name="budgeting-tools"></a>Narzędzia budżetowania
-[![Narzędzia budżetowania](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
+[![Narzędzia budżetowania.](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
 
 Dodatkowe funkcje planowania i budżetowania są dostępne i zintegrowane z budżetami księgi.
 
@@ -70,3 +69,6 @@ Na przykład można określić, kto wykonuje budżetowanie, co jest ujęte w bud
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

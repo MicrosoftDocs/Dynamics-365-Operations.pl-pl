@@ -1,27 +1,25 @@
 ---
 title: Obszar roboczy współpracy z dostawcami za pomocą urządzeń przenośnych
 description: Ten temat zawiera informacje o komórkowym obszarze roboczym Współpraca z dostawcami. Ten obszar roboczy pomaga Twoim dostawcom być na bieżąco z zamówieniami zakupu, które zostały im wysłane do zatwierdzenia. Mogą również wyświetlać informacje o nowych i zaktualizowanych zamówieniach zakupu i osobach kontaktowych.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 267074
 ms.assetid: 1d293b3a-2fa2-418d-9347-78c2809d67fe
 ms.search.region: global
-ms.author: riluan
+ms.author: henrikan
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 5cd8a2b2db7147aca6bdc29ba15d99a619ddb4f8
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: efbd0afb0d84f76058b75126af200a9b10197559
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020843"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577031"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Obszar roboczy współpracy z dostawcami za pomocą urządzeń przenośnych
 
@@ -59,7 +57,7 @@ Mobilny obszar roboczy **Współpraca z dostawcami** pozwala dostawcy wykonywać
 Wymagania wstępne różnią się w zależności od wersji systemu Microsoft Dynamics 365 wdrożonej w organizacji.
 
 ### <a name="prerequisites-if-you-use-supply-chain-management"></a>Warunki wstępne, jeśli jest używane Supply Chain Management
-Jeśli w organizacji wdrożono rozwiązanie Supply Chain Management, administrator systemu musi opublikować mobilny obszar roboczy **Współpraca z dostawcami**. Instrukcje znajdziesz w temacie [Publikowanie mobilnego obszaru roboczego](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+Jeśli w organizacji wdrożono rozwiązanie Supply Chain Management, administrator systemu musi opublikować mobilny obszar roboczy **Współpraca z dostawcami**. Instrukcje znajdziesz w temacie [Publikowanie mobilnego obszaru roboczego](../../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Warunki wstępne, jeśli jest używany program Microsoft Dynamics 365 for Operations w wersji 1611 z aktualizacją platformy 3 lub nowszą
 Jeśli w organizacji wdrożono oprogramowanie Microsoft Dynamics 365 for Operations w wersji 1611 z aktualizacją platformy 3 lub nowszą, administrator systemu musi wykonać następujące zadania wstępne. 
@@ -79,7 +77,7 @@ Jeśli w organizacji wdrożono oprogramowanie Microsoft Dynamics 365 for Operati
 <td>KB 3216943 to binarna aktualizacja, która jest wymagana, jeśli używasz aktualizacji platformy 3. W celu zainstalowania tej poprawki KB administrator systemu musi wykonać następującą procedurę:
 <ol>
 <li>Pobierz poprawkę KB 3216943 z usługi Microsoft Dynamics Lifecycle Services (LCS).</li>
-<li>Zainstaluj poprawkę binarną, która jest dostarczana jako wdrażalny pakiet. Aby uzyskać informacje o tym, jak zastosować wdrażalny pakiet, zobacz <a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Stosowanie wdrażalnego pakietu</a>.</li>
+<li>Zainstaluj poprawkę binarną, która jest dostarczana jako wdrażalny pakiet. Aby uzyskać informacje o tym, jak zastosować wdrażalny pakiet, zobacz <a href="/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system">Stosowanie wdrażalnego pakietu</a>.</li>
 </ol></td>
 </tr>
 <tr class="even">
@@ -87,14 +85,14 @@ Jeśli w organizacji wdrożono oprogramowanie Microsoft Dynamics 365 for Operati
 <td>Administrator systemu</td>
 <td>KB 4013633 jest aktualizacją platformy języka X++ lub poprawką metadanych, która zawiera mobilny obszar roboczy <strong>Dostępne zapasy</strong>. W celu zainstalowania poprawki KB 4013633 administrator systemu musi wykonać następującą procedurę:
 <ol>
-<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Pobierz poprawkę metadanych z usługi LCS</a>.</li>
-<li><a href="../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md">Zainstaluj poprawkę metadanych</a>.</li><li><a href="../../dev-itpro/deployment/create-apply-deployable-package.md">Utwórz wdrażalny pakiet</a> zawierający model <strong>SCMMobile</strong>, a następnie przekaż ten wdrażalny pakiet do usługi LCS.</li>
-<li><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Zastosuj wdrażalny pakiet</a></li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs">Pobierz poprawkę metadanych z usługi LCS</a>.</li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Zainstaluj poprawkę metadanych</a>.</li><li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/create-apply-deployable-package">Utwórz wdrażalny pakiet</a> zawierający model <strong>SCMMobile</strong>, a następnie przekaż ten wdrażalny pakiet do usługi LCS.</li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system">Zastosuj wdrażalny pakiet</a></li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Mobilny obszar roboczy <strong>Współpraca z dostawcami</strong> musi być opublikowany.</td><td>Administrator systemu</td>
-<td>Zobacz <a href="../../dev-itpro/mobile-apps/publish-mobile-workspace.md">Publikowanie mobilnego obszaru roboczego</a>.</td>
+<td>Zobacz <a href="/dynamics365/fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace">Publikowanie mobilnego obszaru roboczego</a>.</td>
 </tr>
 <tr class="even">
 <td>Użytkownik u dostawcy musi mieć dostęp do internetowego interfejsu współpracy z dostawcami w kliencie internetowym i skonfigurować użytkownika zarządzającego współpracą z dostawcą.</td><td>Specjaliści ds. zakupów i administrator systemu</td>
@@ -122,12 +120,12 @@ Pobieranie i instalowanie aplikacji mobilnej Finance and Operations:
 4.  Podczas pierwszego logowania pojawi się monit o podanie nazwy użytkownika i hasła. Wprowadź swoje poświadczenia.
 5.  Po zalogowaniu się zobaczysz obszary robocze dostępne dla firmy. Należy zauważyć, że jeśli administrator systemu później opublikuje nowy obszar roboczy, trzeba odświeżyć listę komórkowych obszarów roboczych.
 
-    [![Ściąganie w celu odświeżenia](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+    [![Ściąganie w celu odświeżenia.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="use-the-vendor-collaboration-mobile-workspace"></a>Używanie mobilnego obszaru roboczego Współpraca z dostawcami
 Po wybraniu obszaru roboczego **Współpraca z dostawcami** pojawią się następujące opcje.
 
-![Obszar roboczy współpracy z dostawcami za pomocą urządzeń przenośnych](./media/vendor-collaboration-mobile-app.png)
+![Obszar roboczy współpracy z dostawcami za pomocą urządzeń przenośnych.](./media/vendor-collaboration-mobile-app.png)
 
 Obszar roboczy **Współpraca z dostawcami** zawiera następujące strony.
 
@@ -169,3 +167,6 @@ Są wyświetlane wszelkie zmiany wprowadzone w odpowiedzi na wiersz zamówienia.
 
 ### <a name="open-confirmed-orders"></a>Otwarte potwierdzone zamówienia
 Gdy zamówienie zakupu zostanie potwierdzone przez odbiorcę (tzn. jego stan zostanie zmieniony na **Potwierdzone**), pojawi się jako otwarte potwierdzone zamówienie. Pozostanie na tej liście do momentu, aż zostanie zarejestrowane jako przyjęte przez odbiorcę.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

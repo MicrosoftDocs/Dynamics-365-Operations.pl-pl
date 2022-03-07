@@ -2,11 +2,9 @@
 title: Profile certyfikatów zdefiniowane przez użytkownika dla sklepów detalicznych
 description: Ten temat zawiera omówienie sposobu używania certyfikatów w sklepach detalicznych.
 author: josaw
-manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFormLayout, RetailParameters
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 81fa3770a137471e3d7f8cab3c7d7f37febe64fa
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 66a2cc5c87f5567f0e65842638017e5127d68a13
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018875"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5798868"
 ---
 # <a name="user-defined-certificate-profiles-for-retail-stores"></a>Profile certyfikatów zdefiniowane przez użytkownika dla sklepów detalicznych
 
@@ -121,3 +119,6 @@ Jeśli zostanie wprowadzona nowa wersja certyfikatu, ale nie można jej aktualiz
 
 > [!NOTE]
 > W środowisku uruchomieniowym Commerce Runtime nowa wersja certyfikatu zostanie wywołana jako pierwsza. Jeśli certyfikat nie został jeszcze zaktualizowany w określonym sklepie lub na określonym terminalu, zostanie wywołana poprzednia wersja.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

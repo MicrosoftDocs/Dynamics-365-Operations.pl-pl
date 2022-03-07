@@ -1,12 +1,10 @@
 ---
 title: Zaplanuj zlecenia pracy
 description: W tym temacie opisano planowanie zleceń pracy w module Zarządzanie składnikami majątku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderSchdulePreviewPart, EntAssetWorkOrderScheduleExclusively, EntAssetWorkOrderSchduleInfoPart, EntAssetWorkOrderScheduleListPage, EntAssetWorkOrderSchedule, EntAssetWorkOrderScheduleDelete
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7e7751e3e2f216abf46f02ee0644909c6894c5b2
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: becd06c46afd92bf07d9a69147b7768e780aefa57f9045c11698c04154d6ddb8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020236"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718066"
 ---
 # <a name="schedule-work-orders"></a>Zaplanuj zlecenia pracy
 
@@ -58,7 +56,7 @@ Można planować tylko w przypadku zleceń pracy o stanie cyklu życia, który u
 
 *Przykład:* na poniższym rysunku formuła wstawiona w **Oczekiwane rozpoczęcie** będzie generować Planowanie zleceń pracy dla wszystkich zleceń pracy z oczekiwaną datą rozpoczęcia w tygodniu od teraz do później. Ta formuła może być przydatna w przypadku regularnego uruchamiania planowania zlecenia pracy, ale należy się upewnić, że zlecenia pracy zaplanowane na następne 5-6 dni nie zostaną ponownie zaplanowane.
 
-![Rysunek 1](media/03-work-order-scheduling.png)
+![Rysunek 1.](media/03-work-order-scheduling.png)
 
 Typ zlecenia pracy powiązanego ze zleceniami pracy może skonfigurować planowanie dla jednego konserwatora (**Zarządzanie składnikami majątku** > **Ustawienia** > **Zlecenia pracy** > **Typy zleceń pracy** > **Jeden konserwator** przycisk przełączania jest ustawiony na wartość „tak”). Oznacza to, że jeśli typ zlecenia pracy jest używany w zleceniu pracy przycisk przełączania **Jeden konserwator** jest automatycznie ustawiany na wartość „tak” na stronie szczegółowej **wszystkie zlecenia pracy** > w widoku **Nagłowek** > skrócona kart **Zaplanuj**. Podczas planowania zleceń pracy wszystkie zadania zlecenia pracy utworzone w zleceniu pracy będą następnie planowane dla tego samego konserwatora. W razie potrzeby można edytować zaznaczenie na przycisku przełączania **Jeden konserwator** w **Wszystkie zlecenia pracy**, aby umożliwić planowanie kilku pracowników lub jednego pracownika w zadaniach zlecenia.
 
@@ -137,3 +135,6 @@ Aby wyświetlić wykres Gantta i pracować z nim, należy:
     - Aby ponownie zaplanować wyświetlone zlecenie pracy, zaznacz opcję i przeciągnij je do odpowiedniej nowej daty i godziny.
 
 1. W przypadku wprowadzenia jakichkolwiek zmian wybierz opcję **Zapisz** w okienku akcji, aby je zapisać.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

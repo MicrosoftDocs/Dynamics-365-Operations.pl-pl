@@ -1,18 +1,22 @@
 ---
-# required metadata
 title: Asynchroniczny tryb tworzenia klientów
 description: W tym temacie opisano asynchroniczny tryb tworzenia klientów w aplikacji Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 12/10/2021
 ms.topic: article
-audience: 'Application User, Developer, IT Pro'
+audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
-ms.search.scope: 'Retail, Core, Operations'
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: gmohanv
-ms.search.validFrom: '2021-12-17'
+ms.search.validFrom: 2021-12-17
+ms.openlocfilehash: 43418b61778d187364d4d52a05178078a37623eb
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984277"
 ---
-
 # <a name="asynchronous-customer-creation-mode"></a>Asynchroniczny tryb tworzenia klientów
 
 [!include [banner](includes/banner.md)]

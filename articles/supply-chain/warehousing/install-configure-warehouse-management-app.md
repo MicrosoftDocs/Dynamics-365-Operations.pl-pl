@@ -1,7 +1,7 @@
 ---
 title: Instalowanie i łączenie aplikacji mobilnej Zarządzanie magazynem
 description: W tym temacie opisano sposób instalowania aplikacji mobilnej Zarządzanie magazynem na każdym urządzeniu przenośnym i konfigurowania jej w celu nawiązania połączenia ze środowiskiem aplikacji Microsoft Dynamics 365 Supply Chain Management.
-author: Mirzaab
+author: MarkusFogelberg
 ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 267694
 ms.assetid: d95d43b2-13ff-4189-a71a-3a1fb57d55ed
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: mirzaab
+ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 812dd30e0e444bc310fc81edd16958e0c0747885
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 810592bcbe11b03753c12ab7bfe6160d3e9233ee
+ms.sourcegitcommit: c53de2c09b9296b41653e739178edf29f79e0679
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103420"
+ms.lasthandoff: 05/17/2021
+ms.locfileid: "6049323"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Instalowanie i łączenie aplikacji mobilnej Zarządzanie magazynem
 
@@ -39,9 +39,12 @@ Aplikacja mobilna Zarządzanie magazynem jest dostępna w systemach operacyjnych
 - Windows 10 (Uniwersalna platforma systemu Windows \[UWP\]), aktualizacja 1809 z października 2018 r. (kompilacja 10.0.17763) lub nowsza wersja
 - Android 4.4 lub nowsza wersja
 
-## <a name="turn-warehouse-management-mobile-app-features-or-or-off-in-supply-chain-management"></a>Włączanie lub wyłączanie funkcji aplikacji mobilnej Warehouse Management lub Supply Chain Management
+## <a name="turn-on-the-feature"></a>Włączanie funkcji
 
-Aby korzystać z aplikacji mobilnej Warehouse Management, *w systemie muszą być włączone ustawienia użytkownika,* ikony i tytuły kroku nowej funkcji aplikacji magazynowej. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.25, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Ustawienia użytkownika, ikony i tytuły kroków dla nowej aplikacji magazynowej* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Aby móc używać aplikacji, należy w systemie włączyć powiązaną funkcję. Administratorzy mogą skorzystać z obszaru roboczego [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. Ta funkcja jest wymieniona w następujący sposób:
+
+- **Moduł:** *Zarządzanie magazynem*
+- **Nazwa funkcji:** *ustawienia użytkownika, ikony i tytuły kroków dla nowej aplikacji magazynowej*
 
 ## <a name="get-the-warehouse-management-mobile-app"></a>Pobieranie aplikacji mobilnej Zarządzanie magazynem
 
@@ -75,28 +78,28 @@ Aby umożliwić aplikacji mobilnej Zarządzanie magazynem interakcję z konkretn
 1. Wprowadź nazwę i hasło użytkownika z dostępem do subskrypcji platformy Azure.
 1. W witrynie Azure Portal w lewym okienku nawigacji wybierz pozycję **Azure Active Directory**.
 
-    ![Azure Active Directory.](media/app-connect-azure-aad.png "Usługa Azure Active Directory")
+    ![Azure Active Directory](media/app-connect-azure-aad.png "Usługa Azure Active Directory")
 
 1. Upewnij się, że pracujesz z wystąpieniem usługi Azure AD używanym przez aplikację Supply Chain Management.
 1. Na liście **Zarządzaj** wybierz pozycję **Rejestracje aplikacji**.
 
-    ![Rejestracje aplikacji.](media/app-connect-azure-register.png "Rejestracje aplikacji")
+    ![Rejestracje aplikacji](media/app-connect-azure-register.png "Rejestracje aplikacji")
 
 1. Na pasku narzędzi wybierz pozycję **Nowa rejestracja**, aby otworzyć kreatora **Rejestrowanie aplikacji**.
 1. Wprowadź nazwę aplikacji, wybierz pozycję **Tylko konta w tym katalogu organizacyjnym**, a następnie wybierz pozycję **Zarejestruj**.
 
-    ![Kreator rejestrowania aplikacji.](media/app-connect-azure-register-wizard.png "Kreator rejestrowania aplikacji")
+    ![Kreator rejestrowania aplikacji](media/app-connect-azure-register-wizard.png "Kreator rejestrowania aplikacji")
 
 1. Zostanie otwarta nowa rejestracja aplikacji. Zanotuj wartość pola **Identyfikator aplikacji (klienta)**, ponieważ będzie ona potrzebna później. W dalszej części tego tematu ten identyfikator będzie określany jako *identyfikator klienta*.
 
-    ![Identyfikator aplikacji (klienta).](media/app-connect-azure-app-id.png "Identyfikator aplikacji (klienta)")
+    ![Identyfikator aplikacji (klienta)](media/app-connect-azure-app-id.png "Identyfikator aplikacji (klienta)")
 
 1. Na liście **Zarządzaj** wybierz pozycję **Certyfikat i wpisy tajne**. Następnie wybierz jeden z poniższych przycisków, w zależności od tego, w jaki sposób chcesz skonfigurować aplikację do uwierzytelniania. (Aby uzyskać więcej informacji, zapoznaj się z sekcją [Uwierzytelnianie przy użyciu certyfikatu lub wpisu tajnego klienta](#authenticate) w dalszej części tego tematu).
 
     - **Przekaż certyfikat** — umożliwia przekazywanie certyfikatu, który ma być używany jako wpis tajny. Zalecamy stosowanie tego podejścia, ponieważ jest ono bezpieczniejsze i można je również automatyzować w większym stopniu. Jeśli uruchamiasz aplikację mobilną Zarządzanie magazynem na urządzeniach z systemem Windows, zanotuj wartość pola **Odcisk palca** pokazaną po przekazaniu certyfikatu. Ta wartość będzie potrzebna podczas konfigurowania certyfikatu na urządzeniach z systemem Windows.
     - **Nowy wpis tajny klienta** — umożliwia utworzenie klucza przez wprowadzenie opisu i czasu trwania dla klucza w sekcji **Hasła**, a następnie wybranie pozycji **Dodaj**. Utwórz kopię klucza i zapisz go w bezpiecznym miejscu.
 
-    ![Certyfikat i wpisy tajne.](media/app-connect-azure-authentication.png "Certyfikat i wpisy tajne")
+    ![Certyfikat i wpisy tajne](media/app-connect-azure-authentication.png "Certyfikat i wpisy tajne")
 
 Aby uzyskać więcej informacji na temat konfigurowania aplikacji usług internetowych w usłudze Azure AD, zapoznaj się z następującymi zasobami:
 
@@ -106,7 +109,7 @@ Aby uzyskać więcej informacji na temat konfigurowania aplikacji usług interne
     - [Przewodnik Szybki start: Rejestrowanie aplikacji na platformie tożsamości firmy Microsoft](/azure/active-directory/develop/quickstart-register-app)
     - [Instrukcje: korzystanie z portalu do tworzenia aplikacji usługi Azure AD i nazwy głównej usługi, która może uzyskiwać dostęp do zasobów](/azure/active-directory/develop/howto-create-service-principal-portal)
 
-## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a><a name="user-azure-ad"></a>Tworzenie i konfigurowanie konta użytkownika w programie Supply Chain Management
+## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a>Tworzenie i konfigurowanie konta użytkownika w programie Supply Chain Management
 
 Aby aplikacja Supply Chain Management mogła korzystać z aplikacji Azure AD, wykonaj następujące kroki.
 
@@ -114,24 +117,17 @@ Aby aplikacja Supply Chain Management mogła korzystać z aplikacji Azure AD, wy
 
     1. W aplikacji Supply Chain Management wybierz kolejno pozycje **Administrowanie systemem \> Użytkownicy \> Użytkownicy**.
     1. Utwórz użytkownika.
-    1. Przypisz rolę *Użytkownik urządzenia przenośnego dla magazynu* do użytkownika.
+    1. Przypisz użytkownika urządzenia przenośnego dla magazynu.
 
-    ![Przypisz użytkownika urządzenia przenośnego dla magazynu.](media/app-connect-app-users.png "Przypisywanie użytkownika urządzenia przenośnego dla magazynu")
+    ![Przypisywanie użytkownika urządzenia przenośnego dla magazynu](media/app-connect-app-users.png "Przypisywanie użytkownika urządzenia przenośnego dla magazynu")
 
 1. Skojarz aplikację usługi Azure AD z użytkownikiem aplikacji mobilnej Zarządzanie magazynem:
 
     1. Przejdź do pozycji **Administrowanie systemem \> Ustawienia \> Aplikacje usługi Azure Active Directory**.
-    1. Wybierz opcję **Nowy** w okienku akcji, aby utworzyć wiersz.
-    1. W polu **Identyfikator klienta** wprowadź identyfikator klienta, który został zanotowany w poprzedniej sekcji.
-    1. W polu **Nazwa** wprowadź nazwę.
-    1. W polu **Identyfikator użytkownika** wybierz właśnie utworzony identyfikator użytkownika.
+    1. Utwórz wiersz.
+    1. Wprowadź identyfikator klienta, który zanotowano w poprzedniej sekcji, nadaj mu nazwę i wybierz właśnie utworzonego użytkownika. Zalecamy oznakowanie wszystkich urządzeń. W przypadku utraty urządzenia będzie można łatwo usunąć ich dostęp do aplikacji Supply Chain Management z tej strony.
 
-    ![Aplikacje usługi Azure Active Directory.](media/app-connect-aad-apps.png "Aplikacje usługi Azure Active Directory")
-
-> [!TIP]
-> Jednym ze sposobów użycia tych ustawień jest utworzenie identyfikatora klienta na platformie Azure dla każdego urządzenia fizycznego, a następnie dodanie każdego identyfikatora klienta do strony **aplikacji usługi Azure Active Directory**. W przypadku utraty urządzenia będzie można łatwo usunąć ich dostęp do aplikacji Supply Chain Management przez usunięcie identyfikatora klienta z tej strony. (Ta metoda działa, ponieważ poświadczenia połączenia zapisane na każdym urządzeniu określają również identyfikator klienta, zgodnie z opisem w dalszej części tego tematu).
->
-> Ponadto domyślny język, format liczby i ustawienia stref czasowych dla każdego identyfikatora klienta są określone przez preferencje ustawione dla zmapowanej w tym miejscu wartości **identyfikatora użytkownika**. Z tego względu można użyć tych preferencji, aby ustalić domyślne ustawienia dla każdego urządzenia lub kolekcji urządzeń, na podstawie identyfikatora klienta. Jednak te ustawienia domyślne zostaną zastąpione, jeśli są także zdefiniowane dla *konta użytkownika aplikacji magazynu*, którego pracownik używa do zalogowania się na urządzeniu. (Aby uzyskać więcej informacji zobacz temat [Konta użytkownika urządzenia przenośnego](mobile-device-work-users.md)).
+    ![Aplikacje usługi Azure Active Directory](media/app-connect-aad-apps.png "Aplikacje usługi Azure Active Directory")
 
 ## <a name="authenticate-by-using-a-certificate-or-client-secret"></a><a name="authenticate"></a>Uwierzytelnianie przy użyciu certyfikatu lub wpisu tajnego klienta
 
@@ -140,10 +136,6 @@ Uwierzytelnianie za pomocą usługi Azure AD zapewnia bezpieczny sposób połąc
 Certyfikaty mogą być używane jako wpisy tajne w celu udowodnienia tożsamości aplikacji w przypadku żądania tokenu. Publiczna część certyfikatu jest przekazywana do rejestracji aplikacji w witrynie Azure Portal, podczas gdy pełny certyfikat musi zostać wdrożony na każdym urządzeniu, na którym zainstalowano aplikację mobilną Zarządzanie magazynem. Organizacja jest odpowiedzialna za zarządzanie certyfikatem w kategorii wymiany itd. Można używać certyfikatów z podpisem własnym, ale zawsze należy używać certyfikatów bez możliwości eksportowania.
 
 Certyfikat musi zostać udostępniony lokalnie na każdym urządzeniu, na którym działa aplikacja mobilna Zarządzanie magazynem. Aby uzyskać informacje dotyczące sposobu zarządzania certyfikatami urządzeń kontrolowanych przez usługę Intune w przypadku korzystania z usługi Intune, zapoznaj się z tematem [Używanie certyfikatów do uwierzytelniania w usłudze Microsoft Intune](/mem/intune/protect/certificates-configure).
-
-## <a name="configure-the-warehouse-management-mobile-app-for-cloud-and-edge-scale-units"></a>Konfiguracja aplikacji mobilnej Warehouse Management do zarządzania jednostkami skali chmury i brzegowymi
-
-Kilka dodatkowych kroków jest wymaganych, jeśli planujecie uruchomić aplikację mobilną Warehouse Management na jednostce skali w chmurze lub na urządzeniu brzegowym. Instrukcje: [Konfiguracja aplikacji mobilnej Warehouse Management do zarządzania jednostkami skali chmury i brzegowymi](../cloud-edge/cloud-edge-workload-setup-warehouse-app.md).
 
 ## <a name="configure-the-application-by-importing-connection-settings"></a>Konfigurowanie aplikacji przez zaimportowanie ustawień połączenia
 
@@ -158,7 +150,7 @@ Ustawienia połączenia można zaimportować z pliku lub kodu QR. W obu przypadk
 | ConnectionName | Określ nazwę ustawienia połączenia. Tekst może mieć maksymalnie 20 znaków. Ponieważ ta wartość jest unikatowym identyfikatorem ustawienia połączenia, upewnij się, że jest ona unikatowa na liście. Jeśli na urządzeniu istnieje już połączenie o takiej samej nazwie, zostanie ono zastąpione przez ustawienia z importowanego pliku. |
 | ActiveDirectoryClientAppId | Podaj identyfikator klienta zanotowany podczas konfigurowania ustawień usługi Azure AD w sekcji [Tworzenie aplikacji usługi internetowej w usłudze Azure Active Directory](#create-service). |
 | ActiveDirectoryResource | Określ główny adres URL aplikacji Supply Chain Management. |
-| ActiveDirectoryTenant | Określ nazwę domeny usługi Azure AD używaną z serwerem aplikacji Supply Chain Management. Ta wartość ma postać `https://login.windows.net/<your-Azure-AD-domain-name>`. Oto przykład: `https://login.windows.net/contosooperations.onmicrosoft.com`. Więcej informacji na temat znajdowania nazwy domeny w usłudze Azure AD można znaleźć w temacie [Lokalizowanie identyfikatorów ważnych dla użytkownika](/partner-center/find-ids-and-domain-names). |
+| ActiveDirectoryTenant | Określ dzierżawę usługi Azure AD używaną z serwerem aplikacji Supply Chain Management. Ta wartość ma postać `https://login.windows.net/<your-Azure-AD-tenant-ID>`. Oto przykład: `https://login.windows.net/contosooperations.onmicrosoft.com`. |
 | Firma | Określ firmę zdefiniowaną w aplikacji Supply Chain Management, z którą ma się łączyć aplikacja. |
 | ConnectionType | (Opcjonalnie) Określ, czy ustawienie połączenia powinno używać certyfikatu, czy też wpisu tajnego klienta, aby połączyć się ze środowiskiem. Prawidłowe wartości to *„certificate”* i *„clientsecret”*. Domyślna wartość to *„certificate”*.<p>**Uwaga:** wpisów tajnych klienta nie można importować.</p> |
 | IsEditable | (Opcjonalnie) Określ, czy użytkownik aplikacji ma mieć możliwość edytowania ustawienia połączenia. Prawidłowe wartości to *„true”* i *„false”*. Domyślna wartość to *„true”*. |
@@ -221,30 +213,30 @@ Wykonaj poniższe kroki, aby zaimportować ustawienia połączenia z pliku lub k
 
 1. Uruchom aplikację mobilną Zarządzanie magazynem na urządzeniu przenośnym. Przy pierwszym uruchomieniu aplikacji jest wyświetlana wiadomość powitania. Wybierz opcję **Wybierz połączenie**.
 
-    ![Wiadomość powitalna.](media/app-configure-welcome-screen.png "Wiadomość powitalna")
+    ![Wiadomość powitalna](media/app-configure-welcome-screen.png "Wiadomość powitalna")
 
 1. W przypadku importowania ustawień połączenia z pliku z użyciem domyślnej nazwy i lokalizacji zapisania pliku aplikacja mogła już odnaleźć plik. W tym przypadku przejdź do kroku 4. W przeciwnym razie wybierz opcję **Skonfiguruj połączenie**, a następnie przejdź do kroku 3.
 
-    ![Konfiguruj połączenie.](media/app-configure-set-up-connection.png "Konfiguruj połączenie")
+    ![Konfiguruj połączenie](media/app-configure-set-up-connection.png "Konfiguruj połączenie")
 
 1. W oknie dialogowym **Ustawienia połączenia** wybierz opcję **Dodaj z pliku** lub **Dodaj z kodu QR**, w zależności od sposobu importowania ustawień:
 
     - Jeśli importujesz ustawienia połączenia z pliku, wybierz polecenie **Dodaj z pliku**, przejdź do pliku na urządzeniu lokalnym i wybierz go. Jeśli wybierzesz lokalizację niestandardową, aplikacja zapisze ją i automatycznie użyje jej przy następnym uruchomieniu.
     - Jeśli importujesz ustawienia połączenia przez skanowanie kodu QR, wybierz pozycję **Dodaj z kodu QR**. Aplikacja monituje o uprawnienie do korzystania z aparatu urządzenia. Po udzieleniu uprawnienia aparat zostanie uruchomiony i można będzie używać go do skanowania. W zależności od jakości aparatu urządzenia i złożoności kodu QR może się okazać, że uzyskanie poprawnego skanu jest trudne. W takim przypadku spróbuj zmniejszyć złożoność kodu QR, generując tylko jedno połączenie na kod QR. (Obecnie do skanowania kodu QR można używać tylko kamery urządzenia).
 
-    ![Menu ustawień połączenia.](media/app-configure-connection-setup-flyout.png "Menu ustawień połączenia")
+    ![Menu ustawień połączenia](media/app-configure-connection-setup-flyout.png "Menu ustawień połączenia")
 
 1. Po pomyślnym załadowaniu ustawień połączenia zostanie wyświetlone wybrane połączenie.
 
-    ![Załadowane ustawienia połączenia.](media/app-configure-select-connection.png "Załadowane ustawienia połączenia")
+    ![Załadowane ustawienia połączenia](media/app-configure-select-connection.png "Załadowane ustawienia połączenia")
 
 1. Jeśli używasz urządzenia z systemem Android i certyfikatu do uwierzytelniania, urządzenie monituje o wybranie certyfikatu.
 
-    ![Wybieranie monitu o certyfikat na urządzeniu z systemem Android.](media/app-configure-select-certificate.png "Wybieranie monitu o certyfikat na urządzeniu z systemem Android")
+    ![Wybieranie monitu o certyfikat na urządzeniu z systemem Android](media/app-configure-select-certificate.png "Wybieranie monitu o certyfikat na urządzeniu z systemem Android")
 
 1. Aplikacja łączy się z serwerem Supply Chain Management i pokazuje stronę rejestracji.
 
-    ![Strona logowania.](media/app-configure-sign-in-page.png "Strona logowania")
+    ![Strona logowania](media/app-configure-sign-in-page.png "Strona logowania")
 
 ## <a name="manually-configure-the-application"></a><a name="config-manually"></a>Ręczne konfigurowanie aplikacji
 
@@ -254,15 +246,15 @@ Jeśli nie masz pliku lub kodu QR, aplikację w urządzeniu można ręcznie skon
 1. Jeśli aplikacja jest uruchomiona w **trybie pokazu**, wybierz opcję **Ustawienia połączenia**. Jeśli strona **logowania** jest wyświetlana w momencie uruchomienia aplikacji, wybierz pozycję **Zmień połączenie**.
 1. Wybierz opcję **Skonfiguruj połączenie**.
 
-    ![Konfiguruj połączenie.](media/app-configure-set-up-connection.png "Konfiguruj połączenie")
+    ![Konfiguruj połączenie](media/app-configure-set-up-connection.png "Konfiguruj połączenie")
 
 1. Wybierz opcję **Wprowadź ręcznie**.
 
-    ![Menu ustawień połączenia.](media/app-configure-connection-setup-flyout.png "Menu ustawień połączenia")
+    ![Menu ustawień połączenia](media/app-configure-connection-setup-flyout.png "Menu ustawień połączenia")
 
     Zostanie wyświetlona strona **Nowe połączenie** z ustawieniami wymaganymi do ręcznego wprowadzania szczegółów połączenia.
 
-    ![Pola połączenia ręcznego.](media/app-configure-input-manually.png "Pola połączenia ręcznego")
+    ![Pola połączenia ręcznego](media/app-configure-input-manually.png "Pola połączenia ręcznego")
 
 1. Podaj poniższe informacje:
 
@@ -276,7 +268,7 @@ Jeśli nie masz pliku lub kodu QR, aplikację w urządzeniu można ręcznie skon
         > [!IMPORTANT]
         > Tej wartości nie należy kończyć ukośnikiem (/).
 
-    - **Dzierżawa usługi Active Directory** — wprowadź nazwę domeny usługi Azure AD używanej na serwerze programu Supply Chain Management. Ta wartość ma postać `https://login.windows.net/<your-Azure-AD-domain-name>`. Oto przykład: `https://login.windows.net/contosooperations.onmicrosoft.com`. Więcej informacji na temat znajdowania nazwy domeny w usłudze Azure AD można znaleźć w temacie [Lokalizowanie identyfikatorów ważnych dla użytkownika](/partner-center/find-ids-and-domain-names).
+    - **Dzierżawa usługi Active Directory** — wprowadź dzierżawę usługi Azure AD używanej na serwerze programu Supply Chain Management. Ta wartość ma postać `https://login.windows.net/<your-Azure-AD-tenant-ID>`. Oto przykład: `https://login.windows.net/contosooperations.onmicrosoft.com`.
 
         > [!IMPORTANT]
         > Tej wartości nie należy kończyć ukośnikiem (/).
@@ -307,6 +299,5 @@ Jeśli urządzenie zostanie zgubione lub dostanie się w niepowołane ręce, nal
 
 - [Ustawienia użytkownika urządzenia przenośnego](mobile-device-user-settings.md)
 - [Przypisanie ikon i tytułów kroków dla aplikacji mobilnej Warehouse Management](step-icons-titles.md)
-- [Konfiguracja aplikacji mobilnej Warehouse Management do zarządzania jednostkami skali chmury i brzegowymi](../cloud-edge/cloud-edge-workload-setup-warehouse-app.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

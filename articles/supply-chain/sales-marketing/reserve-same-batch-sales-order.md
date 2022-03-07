@@ -1,7 +1,7 @@
 ---
 title: Rezerwowanie takiej samej partii na potrzeby zamówienia sprzedaży
 description: Ten artykuł przedstawia sposób konfigurowania produktu w celu umożliwienia rezerwacji zapasów z jednej partii zapasów.
-author: Henrikan
+author: omulvad
 ms.date: 03/17/2020
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 28911
 ms.assetid: 5823d75e-f839-46dd-beb3-e09b79fc8aa4
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d4f3ee5d99648155e663c9ad0849b0b9ae3f80e
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 9bb3eb067e7e9f8a9108da05602fc6771e7dd12c47be44f989ded53ff7c9d250
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576623"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6754519"
 ---
 # <a name="reserve-the-same-batch-for-a-sales-order"></a>Rezerwowanie takiej samej partii na potrzeby zamówienia sprzedaży
 

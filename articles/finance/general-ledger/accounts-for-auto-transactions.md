@@ -1,23 +1,27 @@
 ---
-# required metadata
 title: Konta dla transakcji automatycznych
-description: 'W tym temacie wyjaśniono, w jaki sposób konta dla transakcji automatycznych są używane do księgowania za pośrednictwem Microsoft Dynamics 365 i przedstawiono przykłady kont kluczowych dla transakcji automatycznych.'
+description: W tym temacie wyjaśniono, w jaki sposób konta dla transakcji automatycznych są używane do księgowania za pośrednictwem Microsoft Dynamics 365 i przedstawiono przykłady kont kluczowych dla transakcji automatycznych.
 author: rachel-profitt
 ms.date: 12/03/2021
 ms.topic: article
-ms.prod: null
-ms.technology: null
+ms.prod: ''
+ms.technology: ''
 ms.search.form: LedgerSystemAccounts
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: null
+ms.custom: ''
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: '2022-01-03'
+ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: cecbeb769235e525390cc7a66800a9b0d55d78a9
+ms.sourcegitcommit: 5bfd6511d710deb539b4030eb0e9c48d25513595
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8014061"
 ---
-
 # <a name="accounts-for-automatic-transactions"></a>Konta dla transakcji automatycznych
 
 Na stronie **Konta transakcji automatycznych** (**Księga główna &gt; Ustawienia księgowania &gt; Konta dla transakcji automatycznych**) służy do definiowania domyślnego konta głównego, które jest używane dla każdego typu księgowania w systemie . Chociaż większość typów księgowania można skonfigurować na stronie specyficznej dla modułu lub funkcji, niektóre typy księgowania można skonfigurować tylko na stronie **Konta dla transakcji automatycznych**.

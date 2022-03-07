@@ -2,7 +2,7 @@
 title: Konfigurowanie powiadomień pocztą e-mail
 description: W tym temacie opisano sposób notyfikacji przez e-mail w rozwiązaniu Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 02/11/2022
+ms.date: 03/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9f7adffd67e8198d16e4f7ed4fc4aadf59071b1d
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: 7504b2b36f6869f90de196bf32c09e7bdd51e7b5
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109638"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792664"
 ---
 # <a name="set-up-an-email-notification-profile"></a>Konfigurowanie profilu powiadomienia
 
@@ -27,7 +27,7 @@ ms.locfileid: "8109638"
 
 W tym temacie opisano sposób notyfikacji przez e-mail w rozwiązaniu Microsoft Dynamics 365 Commerce.
 
-Podczas tworzenia kanałów można skonfigurować profil powiadomienia pocztą e-mail. Profil powiadomień e-mailowych definiuje zdarzenia transakcji sprzedaży (takie jak utworzone zamówienie, zamówienie spakowane i zamówienie zafakturowane), dla których będziesz wysyłać powiadomienia do swoich klientów. 
+Podczas tworzenia kanałów można skonfigurować profil powiadomienia pocztą e-mail. W ten sposób wiadomości e-mail mogą być wysyłane do odbiorców w związku z różnymi zdarzeniami transakcyjnmi, takimi jak tworzenie zamówienia, stan wysyłki zamówienia czy niepowodzenie płatności.
 
 Aby uzyskać więcej informacji o sposobie konfigurowania poczty e-mail, zobacz [Konfigurowanie i wysyłanie wiadomości e-mail](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
 
@@ -43,7 +43,7 @@ Aby utworzyć profil powiadomień e-mail, wykonaj następujące kroki.
 
 ### <a name="create-an-email-template"></a>Tworzenie szablonu wiadomości e-mail
 
-Aby można było włączyć typ powiadomienia pocztą e-mail, należy utworzyć szablon wiadomości e-mail organizacji w programie Commerce Headquarters dla każdego typu powiadomienia, które chcesz obsługiwać. Ten szablon definiuje temat wiadomości e-mail, nadawcę, domyślny język i treść wiadomości e-mail dla każdego obsługiwanego języka.
+Aby można było włączyć typ powiadomienia pocztą e-mail, należy utworzyć szablon wiadomości e-mail organizacji w programie Commerce Headquarters. Ten szablon definiuje temat wiadomości e-mail, nadawcę, domyślny język i treść wiadomości e-mail dla każdego języka, który ma być używany.
 
 Aby utworzyć szablon wiadomości e-mail, należy wykonać poniższe kroki.
 
@@ -59,9 +59,7 @@ Aby utworzyć szablon wiadomości e-mail, należy wykonać poniższe kroki.
 
 Na poniższym obrazie przedstawiono przykładowe ustawienia szablonów wiadomości e-mail.
 
-![Ustawienia szablonu wiadomości e-mail.](media/email-template.png)
-
-Aby uzyskać informacje na temat tworzenia szablonów wiadomości e-mail, należy zapoznać się z tematem [Tworzenie szablonów wiadomości e-mail dla zdarzeń transakcyjnych](email-templates-transactions.md). 
+![Ustawienia szablonu wiadomości e-mail](media/email-template.png)
 
 ### <a name="create-an-email-event"></a>Tworzenie wydarzenia e-mail
 
@@ -76,27 +74,12 @@ Aby utworzyć wydarzenie e-mail, należy wykonać poniższe kroki.
 
 Na poniższym obrazie przedstawiono przykładowe ustawienia powiadomień e-mail wydarzeń.
 
-![Ustawienia powiadomień wydarzeń.](media/email-notification-profile.png)
-
-> [!NOTE]
-> Typ powiadomienia utworzony przez klienta wymaga dostosowania do jego potrzeb, zanim powiadomienie będzie mogło zostać wysłane.
-
-### <a name="schedule-a-recurring-email-notification-process-job"></a>Planowanie cyklicznego zadania przetwarzania powiadomień pocztą e-mail
-
-Aby wysłać powiadomienia pocztą e-mail, musisz mieć uruchomione **zadanie przetwarzania powiadomień pocztą e-mail** dla zamówienia sieci sprzedaży.
-
-Aby skonfigurować zadanie **przetwarzania powiadomień pocztą e-mail** dla zamówienia sieci sprzedaży w programie Commerce Headquarters, jeśli jeszcze tego nie zrobiono, wykonaj następujące kroki.
-
-1. Umożliwia przejście do modułu **Retail i Commerce \> Retail i Commerce — składniki IT \> E-mail i powiadomienia \> Wyślij powiadomienie e-mail**.
-1. W oknie **dialogowym Przetwarzania powiadomień pocztą e-mail** dla zamówienia sieci sprzedaży wybierz opcję **Powtarzaj**.
-1. W oknie dialogowym **Zdefiniuj cykliczność** wybierz **Brak daty końcowej**.
-1. W **obszarze Wzorzec cyklu** wybierz opcję **Minuty**, a następnie **w polu Liczba** ustaw wartość **1**. Te ustawienia zapewniają przetwarzanie powiadomień pocztą e-mail tak szybko, jak to możliwe.
-1. Wybierz **OK**, aby wrócić do okna dialogowego **Przetwarzaj powiadomienia e-mail o zamówieniach detalicznych**.
-1. Naciśnij przycisk **OK**, aby zakończyć konfigurację zadania.
+![Ustawienia powiadomień wydarzeń](media/email-notification-profile.png)
 
 ### <a name="next-steps"></a>Następne kroki
 
 Aby można było wysyłać wiadomości, należy skonfigurować usługę poczty wychodzącej i skonfigurować zadanie wsadowe. Aby uzyskać więcej informacji, zobacz temat [Konfigurowanie i wysyłanie wiadomości e-mail](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
+
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

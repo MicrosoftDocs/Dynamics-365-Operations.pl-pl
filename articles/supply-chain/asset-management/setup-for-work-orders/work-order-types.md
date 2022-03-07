@@ -1,12 +1,10 @@
 ---
 title: Typy zleceń pracy
 description: W tym temacie opisano typy zlecenia pracy w module Zarządzanie składnikami majątku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderType
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9111ffa552059883696cf8248a02dfe70bc12ee7
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: d77effbfe329a449318d6942918245917f22cdc23defadcb5e85f02c6c786f6d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021536"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6754735"
 ---
 # <a name="work-order-types"></a>Typy zleceń pracy
 
@@ -50,4 +48,7 @@ Aby uzyskać więcej informacji na temat stanów cyklu życia zlecenia pracy i e
 
 8. Wybierz opcję **Zapisz**.
 
-![Typy zleceń pracy](media/16-setup-for-work-orders.png)
+![Typy zleceń.](media/16-setup-for-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

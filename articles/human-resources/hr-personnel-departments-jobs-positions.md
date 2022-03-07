@@ -2,7 +2,7 @@
 title: Organizowanie pracowników za pomocą działów, funkcji i stanowisk
 description: Działy, zadania i stanowiska to elementy organizacyjne zarządzane w module Zasoby ludzkie. W tym artykule opisano koncepcję tych elementów.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -11,21 +11,23 @@ ms.technology: ''
 ms.search.form: HcmJob, HcmPosition, OMOperatingUnit, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources, Retail
+ms.search.scope: Human Resources
 ms.custom: 87933
 ms.assetid: eb5dcacb-a5fe-451d-b30a-7ef14da65d81
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 826de9e1e5d70ba1ec088b44254c871726b5c38e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: eb0c50d9030be75947c65e921b3c6d3ba729a0d2
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420051"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5464483"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Organizowanie pracowników za pomocą działów, funkcji i stanowisk
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Działy, zadania i stanowiska to elementy organizacyjne zarządzane w module Zasoby ludzkie. W tym artykule opisano koncepcję tych elementów. 
 
@@ -165,3 +167,6 @@ Można modyfikować informacje wymienione w poprzedniej tabeli dla pozycji lub z
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

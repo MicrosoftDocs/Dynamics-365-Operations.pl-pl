@@ -11,13 +11,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-02
-ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e356ef8339f8f71965bf9313e14fed3d0810152d
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.dyn365.ops.version: Release 10.0.17
+ms.openlocfilehash: 45c5774ac1f6db5845d6be6bf2f5d8f99063ea07
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103620"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488209"
 ---
 # <a name="enable-change-management-on-existing-products"></a>Włącz zarządzanie zmianami w istniejących produktach
 
@@ -27,9 +27,12 @@ W tym temacie opisano, jak włączyć zarządzanie zmianami istniejących produk
 
 Włączenie zarządzania zmianami istniejącego produktu umożliwia tworzenie wersji tego produktu oraz śledzenie zmian wprowadzonych w jego okresie użytkowania. W związku z tym zmiany te można śledzić przy użyciu zamówień zmian. Aby włączyć zarządzanie zmianami, należy przekonwertować odpowiednie produkty na *towary inżynieryjne* (zwane także produktami inżynieryjnymi). Produkty inżynieryjne to produkty, które są wersjonowane i zarządzane poprzez zarządzanie zmianami. Kreator jest dostarczany, aby poprowadzić Cię przez proces konwersji.
 
-## <a name="turn-this-feature-on-or-off"></a>Włączanie lub wyłączanie tej funkcji
+## <a name="turn-on-the-feature-in-your-system"></a>Włączanie funkcji w systemie
 
-Funkcje opisane w tym temacie wymagają włączania w *systemie zarówno zarządzania zmianami inżynieryjnymi*, jak i *włączania zarządzania zmianami w istniejących produktach*. Aby uzyskać szczegółowe informacje dotyczące sposobu włączanie i wyłączanie tych funkcji, zobacz [omówienie zarządzania zmianami inżynieryjnymi](product-engineering-overview.md).
+Aby skorzystać z tej możliwości, musisz wykonać następujące zadania:
+
+1. Włącz funkcję zarządzania zmianami inżynierskimi i jej klucz konfiguracyjny zgodnie z opisem w [Omówienie zarządzania zmianami inżynieryjnymi](product-engineering-overview.md).
+1. Włącz funkcję *Włącz zarządzanie zmianami w istniejących produktach* w zarządzaniu funkcjami. Aby uzyskać więcej informacji, zapoznaj się z tematem [Zarządzanie funkcjami — omówienie](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="restrictions-and-limitations"></a>Ograniczenia i limity
 

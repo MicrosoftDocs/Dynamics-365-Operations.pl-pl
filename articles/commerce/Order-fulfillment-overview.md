@@ -1,27 +1,25 @@
 ---
 title: Realizacja zamówienia w sklepie
 description: Ten temat zawiera omówienie modułu realizacji zamówienia w sklepie.
-author: rubencdelgado
-manager: AnnBe
+author: BrianShook
 ms.date: 10/30/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fa568926ccdde4620294915679cd094adbd1e833
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 36ce908e81639fbb836d33ff3e84976c395b1473
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965409"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983349"
 ---
 # <a name="store-order-fulfillment"></a>Realizacja zamówienia w sklepie
 
@@ -35,7 +33,7 @@ Operacja realizacji zamówienia w punkcie sprzedaży zapewnia jeden obszar roboc
 
 ## <a name="access-unified-order-fulfillment-in-the-point-of-sale"></a>Dostęp do ujednoliconej realizacji zamówienia w punkcie sprzedaży
 
-Realizacja zamówienia, [Identyfikator operacji 928](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-operations), umożliwia uzyskanie dostępu do obszaru roboczego realizacji zamówienia w sklepie w punkcie sprzedaży.
+Realizacja zamówienia, [Identyfikator operacji 928](pos-operations.md), umożliwia uzyskanie dostępu do obszaru roboczego realizacji zamówienia w sklepie w punkcie sprzedaży.
 
 Operacja realizacji zamówienia nie ma własnych uprawnień od razu po zainstalowaniu, ale w przyszłości użytkownicy będą mogli użyć uprawnienia **Zezwalaj na pobieranie zamówienia** w celu wywołania operacji z punktu sprzedaży.
 
@@ -95,7 +93,7 @@ Po zaakceptowaniu zamówienia można zaznaczyć wiersze i oznaczyć je jako **Po
 
 Listy pobrania można wydrukować w punkcie sprzedaży, aby ułatwić pracownikom wykonywanie procesu pobierania. Pracownik może mieć przy sobie wydrukowaną listę pobrania i ręcznie oznaczać produkty jako pobrane na liście podczas wykonywania pobierania.
 
-Format listy pobrania jest skonfigurowany w rozwiązaniu Commerce i dodawany do profilu paragonów. Aby uzyskać więcej informacji o konfigurowaniu profili paragonów, zobacz [Szablony paragonów i drukowanie](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
+Format listy pobrania jest skonfigurowany w rozwiązaniu Commerce i dodawany do profilu paragonów. Aby uzyskać więcej informacji o konfigurowaniu profili paragonów, zobacz [Szablony paragonów i drukowanie](receipt-templates-printing.md).
 
 Jeżeli wiersze są zaznaczone, a dla tych wierszy drukowana jest lista pobrania, ich stan jest automatycznie aktualizowany na **Pobranie**.
 
@@ -121,7 +119,7 @@ Wiersze zamówienia można spakować w dowolnym momencie po zaakceptowaniu wiers
 - **Stan wynikowy:** Spakowane lub częściowo spakowane
 - **Stan wynikowy zaplecza:** Dostarczone lub częściowo dostarczone
 
-Ta akcja spowoduje oznaczenie wierszy jako spakowanych lub częściowo spakowanych i wydrukowanie dokumentu dostawy. Dokument dostawy można wydrukować, aby zweryfikować produkty spakowane razem. Format dokumentu dostawy jest skonfigurowany w rozwiązaniu Commerce i dodawany do profilu paragonów. Aby uzyskać więcej informacji o konfigurowaniu profili paragonów, zobacz [Szablony paragonów i drukowanie](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
+Ta akcja spowoduje oznaczenie wierszy jako spakowanych lub częściowo spakowanych i wydrukowanie dokumentu dostawy. Dokument dostawy można wydrukować, aby zweryfikować produkty spakowane razem. Format dokumentu dostawy jest skonfigurowany w rozwiązaniu Commerce i dodawany do profilu paragonów. Aby uzyskać więcej informacji o konfigurowaniu profili paragonów, zobacz [Szablony paragonów i drukowanie](receipt-templates-printing.md).
 
 **Akcja: Oznacz jako spakowane**
 
@@ -217,3 +215,6 @@ Realizacja zamówienia w punkcie sprzedaży obejmuje filtrowanie ułatwiające u
 - Data utworzenia
 - Data dostawy
 - Data przyjęcia
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

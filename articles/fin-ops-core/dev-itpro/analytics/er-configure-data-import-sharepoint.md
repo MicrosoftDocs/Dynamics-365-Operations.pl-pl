@@ -2,11 +2,9 @@
 title: Konfigurowanie importu danych z programu SharePoint
 description: W tym temacie wyjaśniono, jak przeprowadzić import danych z programu Microsoft SharePoint.
 author: NickSelin
-manager: AnnBe
-ms.date: 11/19/2020
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 1f7754a3e69238ab1760b3f7eb8f5e2c792b451b
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 9ac328e660c7a8a3b4a4f34a650062a0fa974771
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680909"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074773"
 ---
 # <a name="configure-data-import-from-sharepoint"></a>Konfigurowanie importu danych z programu SharePoint
 
@@ -49,13 +47,13 @@ Odtwórz przewodniki po zadaniach **ER Importowanie danych z pliku programu Micr
 - Konfiguracja modelu ER, **Model płatności 1099**
 - Konfiguracja formatu ER, **Format importowania transakcji z dostawcami z programu Excel**
 
-![Konfiguracje ER do importowania danych z programu SharePoint](./media/GERImportFromSharePoint-01-Configurations.PNG)
+![Konfiguracje ER do importowania danych z programu SharePoint.](./media/GERImportFromSharePoint-01-Configurations.PNG)
 
 #### <a name="sample-of-the-incoming-file-for-data-import"></a>Przykład pliku przychodzącego w imporcie danych
 
 - Plik programu Excel **1099import data.xlsx**, z transakcjami z dostawcami, które należy zaimportować.
 
-![Przykładowy plik programu Excel do zaimportowania z programu SharePoint](./media/GERImportFromSharePoint-02-Excel.PNG)
+![Przykładowy plik programu Excel do zaimportowania z programu SharePoint.](./media/GERImportFromSharePoint-02-Excel.PNG)
     
 > [!NOTE]
 > Format na potrzeby importowania transakcji dostawcy jest zaznaczony jako domyślne mapowanie modelu. Dlatego po uruchomieniu mapowania modelu **Model płatności 1099”**, jeśli to mapowanie modelu jest typu **Do lokalizacji docelowej**, mapowanie modelu uruchamia ten format, aby importować dane z plików zewnętrznych. Następnie używa tych danych do aktualizowania tabel aplikacji.
@@ -70,7 +68,7 @@ Aby zapisywać pliki raportów elektronicznych w lokalizacji programu SharePoint
      - Źródło importu plików (główne) (przykład pokazany na zrzucie ekranu poniżej)
      - Źródło importu plików (alternatywne)
 
-    ![Źródło importu plików (główne)](./media/GERImportFromSharePoint-04-SharePointFolder1.png)
+    ![Źródło importu plików (główne).](./media/GERImportFromSharePoint-04-SharePointFolder1.png)
 
 4. (Opcjonalnie) Utwórz następujące foldery, w których pliki mogą być zapisywane po zaimportowaniu. 
 
@@ -89,7 +87,7 @@ Aby zapisywać pliki raportów elektronicznych w lokalizacji programu SharePoint
 |Ostrzeżenie SP             |Plik                |SharePoint     |Folder plików z ostrzeżeniami|
 |Błąd SP             |Plik                |SharePoint     |Folder plików z błędami|
 
-![Ustawienie programu SharePoint — nowy typ dokumentu](./media/GERImportFromSharePoint-06-SharePointDocumentTypesSetup.png)
+![Ustawienie programu SharePoint — nowy typ dokumentu.](./media/GERImportFromSharePoint-06-SharePointDocumentTypesSetup.png)
 
 ## <a name="configure-er-sources-for-the-er-format"></a>Konfigurowanie źródeł ER formatu ER
 1. Wybierz kolejno opcje **Administrowanie organizacją** \> **Raportowanie elektroniczne** \> **Źródło raportowania elektronicznego**.
@@ -98,7 +96,7 @@ Aby zapisywać pliki raportów elektronicznych w lokalizacji programu SharePoint
 4. Zmień ustawienie **Sortuj pliki przed zaimportowaniem** na **Nie sortuj**, jeśli istnieje kilka plików do importu i kolejność importu nie jest ważna
 5. Zaznacz wszystkie utworzone wcześniej foldery programu SharePoint.
 
-    [![Ustawienie źródła plików modułu ER](./media/GERImportFromSharePoint-07-FormatSourceSetup.PNG)](./media/GERImportFromSharePoint-07-FormatSourceSetup.PNG)
+    [![Ustawienie źródła plików modułu ER.](./media/GERImportFromSharePoint-07-FormatSourceSetup.PNG)](./media/GERImportFromSharePoint-07-FormatSourceSetup.PNG)
 
 > [!NOTE]
 > - *Źródło* ER jest określane indywidualnie dla każdej firmy aplikacji. Z kolei *konfiguracje* raportowania elektronicznego są wspólne we wszystkich firmach.
@@ -116,7 +114,7 @@ Można również otworzyć stronę **stanów plików dla źródeł**, wybierają
 ## <a name="import-data-from-excel-files-that-are-in-a-sharepoint-folder"></a>Importowanie danych z plików programu Excel znajdujących się w folderze programu SharePoint
 1. W programie SharePoint przekaż plik programu Microsoft Excel **1099import data.xlsx** zawierający transakcje z dostawcą do utworzonego wcześniej folderu programu SharePoint **Źródło importu plików (główne)**.
 
-    [![Zawartość SharePoint — plik programu Microsoft Excel do zaimportowania](./media/GERImportFromSharePoint-08-UploadFile.png)](./media/GERImportFromSharePoint-08-UploadFile.png)
+    [![Zawartość SharePoint — plik programu Microsoft Excel do zaimportowania.](./media/GERImportFromSharePoint-08-UploadFile.png)](./media/GERImportFromSharePoint-08-UploadFile.png)
 
 2. Na stronie **Stany plików dla źródeł** wybierz opcję **Odśwież**, aby odświeżyć stronę. Plik programu Excel przekazany do programu SharePoint były wyświetlany na tej stronie ze stanem **Gotowe**. Następujące stany postępu są obecnie obsługiwane:
 
@@ -126,19 +124,19 @@ Można również otworzyć stronę **stanów plików dla źródeł**, wybierają
     - **Niepowodzenie** — Przypisywany automatycznie przez raport modułu ER, gdy import pliku zakończył się z błędami lub wyjątkami.
     - **Wstrzymane** — Przypisywany ręcznie przez użytkownika na tej stronie. Taki stan oznacza, że nie będzie można teraz zaimportować pliku. Ten stan może służyć do odłożenia w czasie importowania niektórych plików.
 
-    [![Odświeżona strona stanu plików modułu ER dla wybranych źródeł](./media/GERImportFromSharePoint-09-FileStatesForm.png)](./media/GERImportFromSharePoint-09-FileStatesForm.png)
+    [![Odświeżona strona stanu plików modułu ER dla wybranych źródeł.](./media/GERImportFromSharePoint-09-FileStatesForm.png)](./media/GERImportFromSharePoint-09-FileStatesForm.png)
 
 ## <a name="import-data-from-sharepoint-files"></a>Importowanie danych z plików programu SharePoint
 1. Otwórz drzewo konfiguracji raportowania elektronicznego, zaznacz pozycję **Model płatności 1099** i rozwiń listę składników modelu ER.
 2. Wybierz nazwę mapowania modelu, aby otworzyć listę mapowań modeli dla wybranej konfiguracji modelu ER.
 
-    [![Strona konfiguracji](./media/GERImportFromSharePoint-10-SelectModelMapping.PNG)](./media/GERImportFromSharePoint-10-SelectModelMapping.PNG)
+    [![Strona konfiguracji.](./media/GERImportFromSharePoint-10-SelectModelMapping.PNG)](./media/GERImportFromSharePoint-10-SelectModelMapping.PNG)
 
 3. Wybierz opcję **Uruchom**, aby uruchomić wybrane mapowanie modelu ER. Ponieważ skonfigurowano źródła plików dla formatu ER, można zmienić wartość opcji **Źródło plików** zgodnie z potrzebami. Jeśli zachowasz wartość tej, opcji pliki .xslx będą importowane ze skonfigurowanych źródeł (w tym przykładzie z folderów programu SharePoint).
 
     W tym przykładzie importujesz tylko jeden plik. Jednak jeśli istnieje wiele plików, są one wybierane do importowania w kolejności, w jakiej zostały dodane do folderu programu SharePoint. Każde uruchomienie formatu ER powoduje import jednego wybranego pliku.
 
-    [![Importowanie z programu SharePoint i uruchamianie mapowania modelu ER](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)
+    [![Importowanie z programu SharePoint i uruchamianie mapowania modelu ER.](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)
 
 4. Mapowanie modelu można uruchomić [bez nadzoru](#limitations) w trybie wsadowym. W takim przypadku podczas każdego wykonywania zadania wsadowego z tym formatem ER jest importowany jeden plik ze skonfigurowanych źródeł plików.
 
@@ -146,11 +144,11 @@ Można również otworzyć stronę **stanów plików dla źródeł**, wybierają
 
 5. Wprowadź identyfikator załącznika, na przykład **V-00001**, a następnie wybierz opcję **OK**.
 
-    [![Uruchamianie mapowania modelu ER](./media/GERImportFromSharePoint-12-ModelMappingRunFinished.PNG)](./media/GERImportFromSharePoint-12-ModelMappingRunFinished.PNG)
+    [![Uruchamianie mapowania modelu ER.](./media/GERImportFromSharePoint-12-ModelMappingRunFinished.PNG)](./media/GERImportFromSharePoint-12-ModelMappingRunFinished.PNG)
 
 6. Na stronie **Stany plików dla źródeł** wybierz opcję **Odśwież**, aby odświeżyć stronę.
 
-    [![Strona stanu plików modułu ER dla źródeł](./media/GERImportFromSharePoint-13-FileStatesForm.PNG)](./media/GERImportFromSharePoint-13-FileStatesForm.PNG)
+    [![Strona stanu plików modułu ER dla źródeł.](./media/GERImportFromSharePoint-13-FileStatesForm.PNG)](./media/GERImportFromSharePoint-13-FileStatesForm.PNG)
 
 7. W sekcji **Pliki** przejrzyj listę plików. Sekcja **Dziennik źródeł dla formatu importu** zawiera historię importu pliku programu Excel. Ponieważ ten plik został pomyślnie zaimportowany, jest w folderze programu SharePoint oznaczony jako **Usunięty**.
 8. Przejrzyj folder programu SharePoint **Źródła importu plików (główne)**. Pliki programu Excel, które zostały zaimportowane pomyślnie, zostały usunięte z tego folderu.
@@ -159,12 +157,12 @@ Można również otworzyć stronę **stanów plików dla źródeł**, wybierają
 
     Transakcje dostawcy, które zostały zaimportowane z plików programu Excel w programie SharePoint dla załącznika **V-00001**, są wyświetlone na stronie.
 
-    [![Strona transakcji z dostawcą z podatkiem 1099](./media/GERImportFromSharePoint-14-ImportedTransactions.PNG)](./media/GERImportFromSharePoint-14-ImportedTransactions.PNG)
+    [![Strona transakcji z dostawcą z podatkiem 1099.](./media/GERImportFromSharePoint-14-ImportedTransactions.PNG)](./media/GERImportFromSharePoint-14-ImportedTransactions.PNG)
 
 ## <a name="prepare-an-excel-file-for-import"></a>Przygotowywanie pliku programu Excel do importu
 1. Otwórz użyty wcześniej plik programu Excel. W wierszu 1 w kolumnie 3 dodaj kod dostawcy, który nie istnieje w aplikacji. Dodaj do wiersza więcej fałszywych informacji o dostawcy.
 
-    [![Przykładowy plik programu Microsoft Excel do zaimportowania z programu SharePoint](./media/GERImportFromSharePoint-15-Excel.PNG)](./media/GERImportFromSharePoint-15-Excel.PNG)
+    [![Przykładowy plik programu Microsoft Excel do zaimportowania z programu SharePoint.](./media/GERImportFromSharePoint-15-Excel.PNG)](./media/GERImportFromSharePoint-15-Excel.PNG)
 
 2. Prześlij zaktualizowany plik programu Excel zawierający transakcje dostawcy do folderu programu SharePoint **Źródło importu plików (główne)**.
 3. Otwórz drzewo konfiguracji raportowania elektronicznego, zaznacz pozycję **Model płatności 1099** i rozwiń listę składników modelu ER.
@@ -172,7 +170,7 @@ Można również otworzyć stronę **stanów plików dla źródeł**, wybierają
 5. Wybierz opcję **Konstruktor**.
 6. Na karcie **Weryfikacje** należy zmienić akcję po weryfikacji w skonfigurowanej reguły weryfikacji, tak aby oceniać, czy importowane konto dostawcy istnieje w aplikacji. Aktualizuj wartość pola **Akcja po weryfikacji** na **Zatrzymać wykonywanie**, zapisz zmiany i zamknij stronę.
 
-    [![Strona projektanta mapowania modelu ER](./media/GERImportFromSharePoint-16-UpdateModelMapping.PNG)](./media/GERImportFromSharePoint-16-UpdateModelMapping.PNG)
+    [![Strona projektanta mapowania modelu ER.](./media/GERImportFromSharePoint-16-UpdateModelMapping.PNG)](./media/GERImportFromSharePoint-16-UpdateModelMapping.PNG)
 
 7. Zapisz zmiany i zamknij projektanta mapowania modelu ER.
 8. Wybierz opcję **Uruchom**, aby uruchomić zmodyfikowane mapowanie modelu ER.
@@ -180,11 +178,11 @@ Można również otworzyć stronę **stanów plików dla źródeł**, wybierają
 
     Dziennik informacyjny zawiera powiadomienie mówiące o tym, że w folderze programu SharePoint znajduje się plik zawierający niepoprawne konto dostawcy i nie można go zaimportować.
 
-    [![Zakończone mapowania modelu ER](./media/GERImportFromSharePoint-17-ModelMappingRunFinished.PNG)](./media/GERImportFromSharePoint-17-ModelMappingRunFinished.PNG)
+    [![Zakończone mapowania modelu ER.](./media/GERImportFromSharePoint-17-ModelMappingRunFinished.PNG)](./media/GERImportFromSharePoint-17-ModelMappingRunFinished.PNG)
 
 10. Na stronie **Stany plików dla źródeł** wybierz opcję **Odśwież**, a następnie w sekcji **Pliki** przejrzyj listę plików.
 
-    [![Strona stanu plików modułu ER dla wybranych źródeł](./media/GERImportFromSharePoint-18-FileStatesForm.PNG)](./media/GERImportFromSharePoint-18-FileStatesForm.PNG)
+    [![Strona stanu plików modułu ER dla wybranych źródeł.](./media/GERImportFromSharePoint-18-FileStatesForm.PNG)](./media/GERImportFromSharePoint-18-FileStatesForm.PNG)
 
    Sekcja **Dziennik źródeł dla formatu importu** wskazuje, że proces importowania nie powiódł się, a plik jest wciąż w folderze plików z błędami programu SharePoint (pole wyboru **Jest usunięty** nie jest zaznaczone). Jeżeli naprawisz ten plik w programie SharePoint, dodając odpowiedni kod dostawcy, a następnie przeniesiesz go do (głównego) folderu źródła importu plików programu SharePoint, możesz zaimportować plik ponownie.
 
@@ -194,11 +192,11 @@ Można również otworzyć stronę **stanów plików dla źródeł**, wybierają
 
 ## <a name=""></a><a name="limitations">Ograniczenia</a>
 
-Struktura modułu ER nie oferuje możliwości inicjowania nowego zadania wsadowego, które wykona mapowanie modelu w trybie nienadzorowanym w celu zaimportowania danych. Chcąc to zrobić, trzeba opracować nową logikę umożliwiającą wywoływanie skonfigurowanego mapowania modelu ER z interfejsu użytkownika aplikacji w celu importowania danych z przychodzących plików. W związku z tym wymagane są pewne prace technologiczne. 
+W wersjach Dynamics 365 Finance wcześniejszych niż 10.0.25, interfejs użytkownika (UI)w strukturze modułu ER nie oferuje możliwości inicjowania nowego zadania wsadowego, które wykona mapowanie modelu w trybie nienadzorowanym w celu zaimportowania danych w trybie nienadzorowanym. Zamiast tego trzeba opracować nową logikę umożliwiającą wywoływanie skonfigurowanego mapowania modelu ER z interfejsu użytkownika aplikacji w celu importowania danych z przychodzących plików. Aby rozwinąć tę logikę, potrzebna jest pewna praca inżynierska. 
 
-Aby dowiedzieć się więcej o odpowiednim interfejsie API modułu ER, zobacz sekcję [Kod źródłowy uruchamiania mapowania formatu w celu importowania danych](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import) w temacie [Zmiany w interfejsie API struktury ER w aktualizacji Application update 7.3](er-apis-app73.md).
+Aby dowiedzieć się więcej o odpowiednim interfejsie API modułu ER, zobacz sekcję [Kod źródłowy uruchamiania mapowania formatu w celu importowania danych](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import) w temacie [Zmiany w interfejsie API struktury ER w aktualizacji Application update 7.3](er-apis-app73.md). Przejrzyj kod w klasie `BankImport_RU` modelu `Application Suite`, aby zobaczyć, jak można zaimplementować niestandardową logikę. Klasa `BankImport_RU` rozszerza klasę `RunBaseBatch`. W szczególności przejrzyj metodę `runER()`, w której obiekt `ERIModelMappingDestinationRun` jest tworzony jako moduł uruchamiający mapowania modelu ER.
 
-Przejrzyj kod w klasie `BankImport_RU` modelu `Application Suite`, aby zobaczyć, jak można zaimplementować niestandardową logikę. Ta klasa rozszerza klasę `RunBaseBatch`. W szczególności przejrzyj metodę `runER()`, w której obiekt `ERIModelMappingDestinationRun` jest tworzony jako moduł uruchamiający mapowania modelu ER.
+W wersjach Finance 10.0.25 i późniejszych struktura UI modułu ER nie oferuje możliwości inicjowania nowego zadania wsadowego, które wykona mapowanie modelu w trybie nienadzorowanym w celu zaimportowania danych w trybie nienadzorowanym. Aby uzyskać więcej informacji o tym procesie, zobacz temat [Importowanie danych w trybie wsadowym z ręcznie wybranych plików](er-configure-data-import-batch.md).
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
@@ -206,3 +204,10 @@ Przejrzyj kod w klasie `BankImport_RU` modelu `Application Suite`, aby zobaczyć
 
 [Zmiany w interfejsie API struktury ER w aktualizacji Application update 7.3](er-apis-app73.md)
 
+[Zmiany w interfejsie API struktury ER w aktualizacji Application update 10.0.23](er-apis-app10-0-23.md)
+
+[Zmiany w interfejsie API struktury ER w aktualizacji Application update 10.0.25](er-apis-app10-0-25.md)
+
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

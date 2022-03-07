@@ -2,16 +2,13 @@
 title: Korekty ceny i rabaty
 description: Ten artykuł zawiera informacje dotyczące korekt cen i rabatów w Dynamics 365 Commerce.
 author: scott-tucker
-manager: AnnBe
-ms.date: 11/16/2020
+ms.date: 06/11/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailParameters, RetailPeriodicDiscount
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 15891
 ms.assetid: bab5adf3-ddf0-4c22-a2eb-b4d25b88de99
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0c2adaa5cd935d5b593bfbb3215d3466fcafab7b
-ms.sourcegitcommit: 1d74636bf9db5fb33e998322899504b709b4f89f
+ms.openlocfilehash: 96a695df250cda514b7bd8b9716c0f03fb2bfd28d3af4daedaf1335c3099fbb6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "4584322"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6748505"
 ---
 # <a name="price-adjustments-and-discounts"></a>Korekty ceny i rabaty
 
@@ -51,3 +48,13 @@ Istnieje wiele typów rabatów:
 - **Rabat wysyłkowy** — Rabat stosowany, gdy suma transakcji przekracza określoną kwotę, a zamówienie jest objęte określonym sposobem dostawy (na przykład dostawa w ciągu dwóch dni lub dostawa z dnia na dzień).
 
 Z grupami cen mogą być skojarzone zarówno korekty ceny i rabaty. Grupy cen mogą być następnie skojarzone z kanałami, katalogami, przynależnościami i programami lojalnościowymi.
+
+> [!NOTE]
+> Rabat typu „mieszaj dowolnie” oraz rabat progowy posiadają właściwości o nazwach odpowiednio „Licz produkty niedyskontowalne” oraz „Licz produkty niedyskontowalne względem progu”. Jeśli te właściwości są włączone, pozycja, która nie kwalifikuje się do żadnej zniżki, może nadal pomóc zakwalifikować transakcję do zniżki, ale niekwalifikująca się pozycja nie otrzyma zniżki. 
+> 
+> Na przykład, jeśli utworzysz rabat typu „mieszaj dowolnie” z dwoma liniami, A i B, gdzie klient powinien otrzymać 10% zniżki na obie pozycje, ale pozycja A ma zaznaczoną konfigurację „Zapobiegaj wszystkim rabatom”, to typowo uniemożliwiłoby to uwzględnienie pozycji A w rabacie. Jeśli jednak włączona jest właściwość „Licz produkty niedyskontowalne”, wówczas pozycja A może zostać użyta do uzyskania rabatu „mieszaj dowolnie”, ale rabat 10% zostanie zastosowany tylko do pozycji B. Podobna logika dotyczy rabatu progowego. 
+>
+> Właściwość „Licz produkty niedyskontowalne do progu” ma jednak dodatkową możliwość w porównaniu z właściwością „Licz produkty niedyskontowalne” dla rabatów typu „mieszaj dowolnie”. Jeśli rabat progowy jest włączony i jeśli istnieje pozycja, która ma istniejący rabat, który uniemożliwiłby tej pozycji jakiekolwiek inne rabaty, wtedy cena zapłacona za tę pozycję będzie kwalifikować się do spełnienia progu, ale ta pozycja nie otrzyma dodatkowego rabatu.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

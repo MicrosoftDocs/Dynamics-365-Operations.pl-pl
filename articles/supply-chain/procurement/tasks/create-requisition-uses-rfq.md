@@ -1,26 +1,24 @@
 ---
 title: Tworzenie zapotrzebowania wykorzystującego ZO
 description: W tym temacie przedstawiono sposób dodawania informacji o cenie i dostawcy do zapotrzebowania na zakup z procesu ZO.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchReqTableListPage, PurchReqCreate, PurchReqTable, PurchReqLineRelatedDocuments, EcoResCategorySingleLookup, PurchReqWorkflowDropDialog, WorkflowSubmitDialog, WorkflowStatus, WorkflowWorkItemActionDialog, WorkflowUserListLookup, PurchReqCopyRFQ, SysDataAreaSelectLookup, PurchRFQCaseTable, PurchRFQEditLines, PurchRFQReplyTable, UnitOfMeasureLookup
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 05ff98b5fd95fa345d344e54d9116c73434e5de5
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 6083afe0e2bfafd337d572863a198330e8cb6cc8
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018903"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5812141"
 ---
 # <a name="create-a-requisition-that-uses-an-rfq"></a>Tworzenie zapotrzebowania wykorzystującego ZO
 
@@ -98,3 +96,6 @@ Następne zadanie polega na utworzeniu ZO w celu uzyskania od dostawców ofert n
 8. Wybierz stronę.
 9. Wybierz opcję Zakończone.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

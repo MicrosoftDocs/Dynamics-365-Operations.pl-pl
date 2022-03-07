@@ -6,22 +6,21 @@ manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User
 ms.reviewer: rhaertle
 ms.custom: 62303
 ms.search.region: Global
-ms.author: margoc
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a44324a14a78174ad4d68e6686c523c49d7aa3bd
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: d9421cbe9eeb44fcd0d0f0c688e84ae2043610ac
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694393"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5562383"
 ---
 # <a name="finance-and-operations-application-documentation"></a>Dokumentacja aplikacji Finance and Operations
 
@@ -67,7 +66,7 @@ Wiele z tych informacji dotyczy również produktów pokrewnych: Dynamics 365 Co
 <h3><a href="../dev-itpro/data-entities/integration-overview.md">Integracje</a></h3>
 <p><a href="../dev-itpro/business-events/home-page.md">Zdarzenia biznesowe</a></p>
 <p><a href="../dev-itpro/data-entities/data-entities.md">Jednostki danych</a></p>
-<p><a href="../dev-itpro/data-entities/fin-ops-connector.md">Integracja przy użyciu oprogramowania Microsoft Power Automate</a></p>
+<p><a href="../dev-itpro/data-entities/fin-ops-connector.md">Integracja przy użyciu usługi Microsoft Power Automate</a></p>
 
 <h3><a href="../../finance/index.md">Zarządzanie finansami</a></h3>
 <p><a href="../../finance/accounts-payable/accounts-payable.md">Rozrachunki z dostawcami</a></p>
@@ -145,3 +144,6 @@ Wiele z tych informacji dotyczy również produktów pokrewnych: Dynamics 365 Co
 
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

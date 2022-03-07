@@ -2,11 +2,9 @@
 title: Planowanie operacji
 description: Ten temat zawiera informacje o planowaniu operacji. Funkcji planowania operacji można używać, aby przedstawić ogólne oszacowanie procesu produkcji w wybranym okresie.
 author: ChristianRytt
-manager: tfehr
 ms.date: 06/20/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProdSchedule
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eb4e1a38c675a3c8d102741a027d54294e335ac1
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 94ac865db8a01f6b3c72e3a8851d6be4fe2ce0cf9faaa21bdb0d465605066b4f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966412"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6734146"
 ---
 # <a name="operations-scheduling"></a>Planowanie operacji
 
@@ -76,10 +74,12 @@ Podczas planowania operacji można anulować określone części marszruty. Tymi
 ## <a name="finite-materials"></a>Ograniczone materiały
 Jeśli pracujesz z ograniczonymi materiałami, planowanie zależy również od dostępności materiałów wymaganych do produkcji. Jeśli jest za mało dostępnych składników produkcji, może dojść do opóźnienia produkcji. Planowanie można oprzeć na zużyciu materiałów poprzez określenie materiałów, które muszą być dostępne do produkcji. Gdy optymalizujesz względem zarówno zdolności produkcyjnych zasobów, jak i dostępności materiałów, produkcja jest obliczana zgodnie z tymi ograniczeniami. Rozpoczęcie zlecenia produkcyjnego można zaplanować dopiero na moment, gdy zdolności produkcyjne i materiały są dostępne w tym samym czasie i w wymaganych ilościach.
 
-<a name="additional-resources"></a>Dodatkowe zasoby
---------
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Opcje planowania operacji](operation-scheduling-options.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

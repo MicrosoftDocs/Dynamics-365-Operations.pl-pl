@@ -1,37 +1,31 @@
 ---
 title: Zarządzanie plikami robots.txt
-description: W tym temacie opisano sposób zarządzania plikami robots. txt w aplikacji Microsoft Dynamics 365 Commerce.
+description: W tym temacie opisano sposób zarządzania plikami robots.txt w aplikacji Microsoft Dynamics 365 Commerce.
 author: BrianShook
-manager: annbe
 ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2019-12-18
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ad87594b9c20d0c2b53e8d4e7c1170a78babe74b
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.openlocfilehash: e1078de354a96cc50b7c1b79a864db5041ea5069df650670e65531faaeb32e0a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517459"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6754399"
 ---
 # <a name="manage-robotstxt-files"></a>Zarządzanie plikami robots.txt
 
-
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano sposób zarządzania plikami robots. txt w aplikacji Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
+W tym temacie opisano sposób zarządzania plikami robots.txt w aplikacji Microsoft Dynamics 365 Commerce.
 
 Standard wykluczenia robotów lub robots. txt to standard używany przez witryny internetowe do komunikowania się z robotami internetowymi. Instruuje on roboty internetowe o obszarach witryny, które nie powinny być odwiedzane. Roboty są często używane przez wyszukiwarki do indeksowania witryn internetowych.
 
@@ -107,3 +101,6 @@ Aby usunąć plik robots.txt w usłudze Commerce, wykonaj następujące kroki.
 [Dodawanie obsługi dla sieci dostarczania zawartości (CDN)](add-cdn-support.md)
 
 [Włączanie wykrywania sklepu na podstawie lokalizacji](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

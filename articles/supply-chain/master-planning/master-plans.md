@@ -1,26 +1,30 @@
 ---
-# required metadata
 title: Omówienie planów głównych
-description: 'Istnieje możliwość korzystania z różnych planów głównych w celu obsługiwania codziennych operacji w firmie, symulowania różnych strategii planowania, które mają być monitorowane, oraz wdrażania polityki firmy, na przykład dotyczącej wydajności lub zadowolenia klientów.'
+description: Istnieje możliwość korzystania z różnych planów głównych w celu obsługiwania codziennych operacji w firmie, symulowania różnych strategii planowania, które mają być monitorowane, oraz wdrażania polityki firmy, na przykład dotyczącej wydajności lub zadowolenia klientów.
 author: ChristianRytt
 ms.date: 05/28/2020
 ms.topic: overview
-ms.prod: null
-ms.technology: null
-ms.search.form: 'ReqParameters, ReqPlanSched'
+ms.prod: ''
+ms.technology: ''
+ms.search.form: ReqParameters, ReqPlanSched
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom:
-  - '7911'
-  - intro-internal
+- "7911"
+- intro-internal
 ms.assetid: a116b7de-3d6d-4321-87ba-5a5d99c2f64e
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
-ms.search.validFrom: '2016-02-28'
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 03467778025287f3692e171bea37b1bfb2ca1646
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982361"
 ---
-
 # <a name="master-plans-overview"></a>Omówienie planów głównych
 
 [!include [banner](../includes/banner.md)]

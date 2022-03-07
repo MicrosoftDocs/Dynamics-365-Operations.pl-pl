@@ -1,26 +1,30 @@
 ---
-# required metadata
 title: Omówienie konfiguracji produktów opartych na wymiarach
 description: Konfiguracja produktu oparta na wymiarach to prosty sposób tworzenia wielu wariantów produktu z jednego produktu głównego i jego BOM.
-author: t-benebo
+author: cvocph
 ms.date: 07/25/2019
-ms.topic: overview
-ms.prod: null
-ms.technology: null
-ms.search.form: 'BOMConfigRule, BOMTable, ConfigChooseFromRoute, ConfigGroup, ConfigHierarchy, EcoResDimensionBasedConfiguration'
+ms.topic: article
+ms.prod: ''
+ms.technology: ''
+ms.search.form: BOMConfigRule, BOMTable, ConfigChooseFromRoute, ConfigGroup, ConfigHierarchy, EcoResDimensionBasedConfiguration
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom:
-  - '19821'
-  - intro-internal
+- "19821"
+- intro-internal
 ms.assetid: 4db9890b-306b-4be7-ba98-3be2094d561f
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: benebotg
-ms.search.validFrom: '2016-02-28'
+ms.author: kamaybac
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 604b9e14d7a218ab75ebeff5b686f380ef88b34e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354696"
 ---
-
 # <a name="dimension-based-product-configuration-overview"></a>Omówienie konfiguracji produktów opartych na wymiarach
 
 [!include [banner](../includes/banner.md)]
