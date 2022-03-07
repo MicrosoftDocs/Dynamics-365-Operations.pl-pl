@@ -2,11 +2,9 @@
 title: Wyszukiwanie produktów i odbiorców w punkcie sprzedaży (POS)
 description: Ten temat zawiera omówienie ulepszeń wprowadzonych w produkcie i funkcji wyszukiwania klientów w rozwiązaniu Dynamics 365 Commerce.
 author: ShalabhjainMSFT
-manager: AnnBe
-ms.date: 07/28/2020
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 1de8373471ff8187bd476305c9ed0b26beaa52d5
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 022dcaca9bb3c9e7e749ee143702325367e5149b
+ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965285"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "7700096"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Wyszukiwanie produktów i odbiorców w punkcie sprzedaży (POS)
 
@@ -38,7 +36,7 @@ Domyślnie wyszukiwania produktów są przeprowadzane w asortymencie sklepu. Ten
 
 Na stronie **Zmień katalog** pracownicy mogą łatwo wybrać dowolny sklep, lub wyszukać produkty we wszystkich sklepach.
 
-![Zmiana katalogu](./media/Changecatalog.png "Zmiana katalogu")
+![Zmiana katalogu.](./media/Changecatalog.png "Zmiana katalogu")
 
 Lokalne wyszukiwanie produktów powoduje wyszukiwanie w następujących właściwościach produktów:
 
@@ -49,22 +47,21 @@ Lokalne wyszukiwanie produktów powoduje wyszukiwanie w następujących właści
 - Kod kreskowy
 - Alias
 
-### <a name="enhancements-to-local-product-searches"></a>Ulepszenia lokalnych wyszukiwań produktów
+### <a name="additional-local-product-search-capabilities-conventional-sql-full-text-search"></a>Dodatkowe możliwości lokalnego wyszukiwania produktów (typowe wyszukiwanie pełnotekstowe w bazie danych SQL) 
 
-Lokalne wyszukiwanie produktów jest teraz bardziej przyjazne dla użytkownika. Wprowadzono również następujące ulepszenia:
-
-- Do paska wyszukiwania dodano menu rozwijane produktu i klienta, aby pracownicy mogli wybrać opcję **Produkt** lub **Klient** przed rozpoczęciem wyszukiwania. Domyślnie wybrana jest opcja **Produkt**, jak pokazano na poniższej ilustracji.
 - W przypadku wyszukiwania słów kluczowych (tj. wyszukiwań wykorzystujących terminy) sprzedawcy mogą skonfigurować, czy wyniki wyszukiwania obejmują wyniki zgodne z *dowolnym* wyszukiwanym terminem czy tylko wyniki zgodne ze *wszystkimi* wyszukiwanymi terminami. Ustawienie tej funkcji jest dostępne w profilu funkcji POS, w nowej grupie o nazwie **Wyszukiwanie produktu**. Ustawienie domyślne to **Dopasuj dowolne szukane terminy**. To ustawienie jest także ustawieniem zalecanym. Gdy używane jest ustawienie **Dopasuj dowolne szukane terminy**, wszystkie produkty całkowicie lub częściowo zgodne z co najmniej jednym szukanym terminem są zwracane jako wyniki. Te wyniki są automatycznie sortowane w kolejności rosnącej produktów dopasowanych do największej liczby słów kluczowych (całkowicie lub częściowo).
 
     Ustawienie **Dopasuj wszystkie szukane terminy** zwraca tylko produkty zgodne ze wszystkimi szukanymi terminami (całkowicie lub częściowo). To ustawienie jest przydatne, gdy nazwy produktów są długie, a pracownicy chcą zobaczyć w wynikach wyszukiwania tylko ograniczoną liczbę produktów. Jednak ten rodzaj wyszukiwania ma dwa ograniczenia:
 
     - Wyszukiwanie jest przeprowadzane w poszczególnych właściwościach produktu. Na przykład zwracane są tylko produkty, które zawierają wszystkie wyszukiwane słowa kluczowe we właściwości co najmniej jednego produktu.
     - Wymiary nie są przeszukiwane.
+> [!NOTE]
+> Poniższe konfiguracje funkcji **Dopasuj dowolne wyszukiwane terminy**/**Dopasuj wszystkie terminy** w profilach funkcji punktu sprzedaży są dostępne tylko dla wyszukiwania produktów **lokalnych** (typowe wyszukiwanie pełnotekstowe w bazie danych SQL). Ta konfiguracja nie ma wpływu na możliwości wyszukiwania w chmurze. Nowy aparat wyszukiwania ma własny zaawansowany algorytm, który zasila wyszukiwanie według istotności dla wyników wyszukiwania produktów. 
 
 - Sprzedawcy mogą teraz konfigurować wyszukiwanie produktu tak, aby wyświetlać sugestie wyszukiwania, gdy użytkownicy wpisują nazwy produktów. Nowe ustawienie tej funkcji jest dostępne w profilu funkcji POS, w grupie o nazwie **Wyszukiwanie produktu**. To ustawienie nosi nazwę **Pokaż sugestie podczas wpisywania**. Ta funkcja może ułatwić pracownikom szybkie znalezienie wyszukiwanego produktu, ponieważ nie muszą wprowadzać ręcznie pełnej nazwy.
 - Algorytm wyszukiwania produktów wyszukuje także szukane terminy we właściwości **Wyszukaj nazwę** produktu.
 
-![Sugestie produktów](./media/Productsuggestions.png "Sugestie produktów")
+![Sugestie produktów.](./media/Productsuggestions.png "Sugestie produktów")
 
 ## <a name="customer-search"></a>Wyszukiwanie odbiorcy
 
@@ -86,24 +83,24 @@ Aby wyszukiwać globalnie, pracownicy mogą wybrać przycisk **Filtruj wyniki** 
 > [!NOTE]
 > Aby zdalne wyszukiwanie odbiorców zwróciło wyniki, należy wprowadzić co najmniej cztery znaki.
 
-W zdalnym wyszukiwaniu odbiorców identyfikator odbiorcy nie jest widoczny dla odbiorców z innych firm, ponieważ żaden identyfikator odbiorcy nie został utworzony dla tych jednostek w bieżącej firmie. Jeżeli jednak pracownik otworzy stronę szczegółów klienta, system automatycznie wygeneruje identyfikator odbiorcy dla jednostki i skojarzy z klientem książkę adresową klienta sklepu. Dlatego odbiorca będzie widoczny w lokalnych wyszukiwaniach sklepu wykonanych później.
+Identyfikator klienta nie jest wyświetlany dla klientów zapytanych z innych firm, ponieważ nie utworzono identyfikatora klienta dla tych stron w bieżącej firmie. Jeżeli jednak pracownik otworzy stronę szczegółów klienta, system automatycznie wygeneruje identyfikator odbiorcy dla jednostki i skojarzy z klientem książkę adresową klienta sklepu. Dlatego odbiorca będzie widoczny w lokalnych wyszukiwaniach sklepu wykonanych później.
 
-![Globalne wyszukiwanie odbiorcy](./media/Globalcustomersearch.png "Globalne wyszukiwanie odbiorcy")
+![Globalne wyszukiwanie odbiorcy.](./media/Globalcustomersearch.png "Globalne wyszukiwanie odbiorcy")
 
-### <a name="enhancements-to-local-customer-search"></a>Ulepszenia lokalnego wyszukiwania odbiorców
+### <a name="additional-local-customer-search-capabilities"></a>Dodatkowe możliwości lokalnego wyszukiwania klientów
 
-Wyszukiwania oparte na numerze telefonu zostały uproszczone. Te wyszukiwania teraz ignorują znaki specjalne, takie jak spacje, łączniki i nawiasy, które mogły zostać dodane podczas tworzenia odbiorcy. Dzięki temu kasjerzy nie muszą się już martwić o formaty numerów telefonów podczas wyszukiwania. Jeżeli na przykład numer telefonu odbiorcy wprowadzono jako **123-456-7890**, kasjer może wyszukać odbiorcę, wpisując **1234567890** albo wpisując kilka pierwszych cyfr numeru telefonu.
+Gdy użytkownik wyszukuje numer telefonu, system ignoruje znaki specjalne (takie jak spacje, łączniki i nawiasy), które mogły zostać dodane podczas tworzenia klienta. Dzięki temu kasjerzy nie muszą się już martwić o formaty numerów telefonów podczas wyszukiwania. Jeżeli na przykład numer telefonu odbiorcy wprowadzono jako **123-456-7890**, kasjer może wyszukać odbiorcę, wpisując **1234567890** albo wpisując kilka pierwszych cyfr numeru telefonu.
 
 > [!NOTE]
 > Odbiorca może mieć wiele numerów telefonów i wiele wiadomości e-mail. Algorytm wyszukiwania odbiorcy również przeszukuje te pomocnicze wiadomości e-mail i numery telefonów, ale na stronie wyników wyszukiwania odbiorcy jest wyświetlany główny adres e-mail i numer telefonu. Może to spowodować pewne pomyłki, ponieważ zwrócone wyniki odbiorcy nie będą pokazywały poszukiwanego adresu e-mail lub numeru telefonu. W przyszłych zwolnieniach planuje się poprawienie ekranu wyniki wyszukiwania klientów w celu wyświetlenia tych informacji.
 
 Tradycyjne wyszukiwanie odbiorcy może być czasochłonne, ponieważ obejmuje wiele pól. Zamiast tego kasjerzy mogą teraz szukać jedną właściwość klienta, taką jak imię i nazwisko, adres e-mail lub numer telefonu. Właściwości używane przez algorytm wyszukiwania odbiorców są zbiorczo nazywane *kryteriami wyszukiwania odbiorców*. Administrator systemu może w prosty sposób skonfigurować jedno lub więcej kryteriów jako skróty, które będą wyświetlane w aplikacji POS. Ponieważ wyszukiwanie jest ograniczone do jednego kryterium, są wyświetlane tylko pasujące wyniki wyszukiwania, a proces działa znacznie szybciej, niż standardowe wyszukiwanie odbiorców. Poniższa ilustracja przedstawia skróty wyszukiwania odbiorców w aplikacji POS.
 
-![Skróty wyszukiwania odbiorcy](./media/SearchShortcutsPOS.png "Skróty wyszukiwania odbiorcy")
+![Skróty wyszukiwania odbiorcy.](./media/SearchShortcutsPOS.png "Skróty wyszukiwania odbiorcy")
 
 Aby ustawić kryteria wyszukiwania jako skróty, administrator musi otworzyć stronę **Parametry sprzedaży** w aplikacji Commerce , a następnie na karcie **Kryteria wyszukiwania w punkcie sprzedaży** zaznaczyć wszystkie kryteria, które powinny być wyświetlane w postaci skrótów.
 
-![Konfiguruj skróty wyszukiwania](./media/ConfigureShortcutsAX.png "Konfiguruj skróty wyszukiwania")
+![Konfiguruj skróty wyszukiwania.](./media/ConfigureShortcutsAX.png "Konfiguruj skróty wyszukiwania")
 
 > [!NOTE]
 > Jeśli dodasz zbyt wiele skrótów, menu rozwijane na pasku wyszukiwania w aplikacji POS będzie bardzo nieczytelne, co utrudni pracownikowi wyszukiwanie. Zalecamy, aby dodać tylko potrzebną liczbę skrótów.
@@ -113,7 +110,44 @@ Pole **Kolejność wyświetlania** określa kolejność, w jakiej skróty są wy
 > [!NOTE]
 > Niestandardowa właściwość dodana do elementu stałotekstowego nie wpływa na standardowy algorytm wyszukiwania odbiorców. Innymi słowy algorytm wyszukiwania odbiorców nie wyszukuje w niestandardowej właściwości. Użytkownicy mogą stosować niestandardową właściwość do wyszukiwania tylko wtedy, gdy jest ona dodana jako skrót albo gdy domyślny algorytm wyszukiwania zostanie zastąpiony.
 
-W nadchodzącej wersji Commerce, sprzedawcy detaliczni będą mogli skonfigurować domyślny tryb wyszukiwania klientów w punkcie sprzedaży, aby **Przeszukiwać wszystkie sklepy**. Ta konfiguracja może być przydatna w scenariuszach, w których klienci, którzy zostali wytworzeniu poza systemem, muszą być natychmiast wyszukiwani (na przykład, jeszcze przed uruchomieniem zadania dystrybucji). Nowa opcja **Domyślny tryb wyszukiwania odbiorców** będzie dostępna w profilu funkcji punktu sprzedaży. Ustaw na **Włączony** aby skonfigurować domyślny tryb wyszukiwania na **Szukaj we wszystkich sklepach**. Każda próba wyszukania odbiorcy spowoduje przetworzenie połączenia w czasie rzeczywistym z centralą.
+Detaliści mogą również ustawić domyślny tryb wyszukiwania odbiorcy w aplikacji POS w celu **Wyszukiwania wszystkich sklepów**. Ta konfiguracja może być przydatna w scenariuszach, w których klienci, którzy zostali wytworzeniu poza systemem, muszą być natychmiast wyszukiwani (na przykład, jeszcze przed uruchomieniem zadania dystrybucji). W tym celu sprzedawca detaliczny musi włączyć opcję **Domyślny tryb wyszukiwania odbiorcy** w profilu funkcji programu POS. Po ustawieniu **Tak** każda próba wyszukania odbiorcy spowoduje przetworzenie połączenia w czasie rzeczywistym z centralą.
 
 Aby zapobiec nieoczekiwanem problemom z wydajnością, ta konfiguracja jest ukryta za flagą lotu o nazwie **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING**. Dlatego w celu wyświetlenia ustawienia interfejs użytkownika (UI) **Tryb domyślnego wyszukiwania klientów**, należy utworzyć bilet pomocy technicznej dla systemu testowania akceptacji użytkowników (UAT) i środowisk produkcyjnych. Po otrzymaniu biletu zespół inżynierów będzie pracował ze sprzedawcą, aby upewnić się, że sprzedawca przeprowadza testy w środowiskach nieprodukcyjnych, aby ocenić wydajność i wdrożyć wymagane optymalizacje.
 
+## <a name="cloud-powered-customer-search"></a>Omówienie wyszukiwania odbiorców
+
+Publiczna wersja zapoznawcza możliwości wyszukiwania klientów, która używa usługi Azure Cognitive Search, została wydana jako część wersji Commerce 10.0.18. Oprócz ulepszeń wydajności, użytkownicy usługi korzystają również z bogatego udoskonalenia i ulepszonych możliwości trafności. Usprawnienia wydajności są charakterystyczne zwłaszcza w przypadku korzystania z funkcji wyszukiwania globalnego („Wyszukiwanie wszystkich sklepów”) w POS. Wynika to z tego, że wyniki wyszukiwania są pobierane z indeksu wyszukiwania systemu Azure, a nie z danych w centrali Commerce. 
+
+### <a name="enable-the-cloud-powered-search-feature"></a>Włącz funkcję wyszukiwania w chmurze
+
+> [!NOTE]
+> Wymagane jest zaktualizowanie zarówno centrali Commerce, jak i Commerce Scale Unit do wersji 10.0.18. Aktualizacja POS nie jest wymagana.
+
+Aby włączyć funkcję wyszukiwania w chmurze w centrali Commerce, wykonaj następujące kroki.
+
+1. Wybierz kolejno opcje **Administrator systemu \> Obszary robocze \> Zarządzanie funkcjami**.
+1. Znajdź i zaznacz funkcję **Wyszukiwania klientów w chmurze (Wersja zapoznawcza)**, a następnie wybierz opcję **Włącz teraz**.
+1. Przejdź do ekranu **Handel detaliczny i commerce > Ustawienia centrali > Harmonogram handlu > Zainicjuj harmonogram handlu** i wybierz przycisk **OK**, aby wyświetlić nowe zadanie **1010_CustomerSearch** w formularzu **Harmonogram dystrybucji**.
+1. Wybierz kolejno opcje **Retail i Commerce > Retail i Commerce IT > Harmonogram dystrybucji**.
+1. Uruchom zadanie **1010_CustomerSearch**. To zadanie publikuje datę w indeksie wyszukiwania systemu Azure. Po zakończeniu publikowania indeksu stan zadania zostanie ustawiony na **Zastosowano**.
+1. Gdy stan **1010_CustomerSearch** ma wartość **Zastosowane**, uruchom zadanie **1110 - konfiguracji globalnej**, aby zaktualizować kanały POS nowo włączonej funkcji w **Zarządzaniu funkcjami**.
+1. Następnie uruchom zadanie **1010_CustomerSearch** w regularnych interwałach, aby wysłać aktualizacje odbiorcy do indeksu wyszukiwania.
+
+> [!NOTE]
+> Na potrzeby publikacji indeksu początkowego zadanie **1010_CustomerSearch** może potrwać kilka godzin, ponieważ spowoduje wysłanie wszystkich rekordów odbiorcy do indeksu wyszukiwania systemu Azure. Kolejne aktualizacje powinny potrwać kilka minut. W okresie, w którym funkcja wyszukiwania w chmurze jest włączona, ale publikowanie indeksu nie zostało jeszcze zakończone, wyszukiwanie klientów w punkcie sprzedaży będzie domyślnie stosowane do istniejącego wyszukiwania opartego na języku SQL. Gwarantuje to, że operacje sklepu nie będą przerywane.
+
+### <a name="functional-differences-from-the-existing-search"></a>Różnice funkcjonalności z istniejącego wyszukiwania
+
+Na poniższej liście pokazano, w jaki sposób funkcja wyszukiwania klientów w chmurze różni się od istniejącej funkcji wyszukiwania. 
+
+- Odbiorcy utworzeni i edytowani w programie Commerce Headquarters są wysyłani do indeksu wyszukiwania Systemu Azure po uruchomieniu **1010_CustomerSearch**. Aktualizacja indeksu trwa co najmniej 15–20 minut. Użytkownicy programu POS będą mogli wyszukiwać nowych odbiorców (lub wyszukiwać oparte na zaktualizowanych informacjach) w ciągu około 15–20 minut od aktualizacji w programie Commerce Headquarters. Jeśli proces biznesowy wymaga, aby odbiorcy utworzeni w programie Commerce Headquarters mogli natychmiast podlegać wyszukiwaniu w programie POS, może to nie być właściwą usługą dla użytkownika.
+- Nowi odbiorcy utworzeni w programie POS są wysyłani do indeksu wyszukiwania Systemu Azure z jednostki skalowania Commerce Scale Unit i natychmiast mogą przeszukiwać każdy sklep. Jeśli jednak funkcja tworzenia asynchronicznego odbiorcy jest włączona, nowe rekordy odbiorców nie zostaną opublikowane w indeksie wyszukiwania systemu Azure z jednostki skalowania Commerce Scale Unit i nie będzie można ich wyszukiwać w programie POS, dopóki informacje o odbiorcy nie zostaną zsynchronizowane z Commerce headquarters i identyfikatorami odbiorców dla odbiorców tej usługi. Zadanie **1010_CustomerSearch** będzie w stanie wysyłać rekordy asynchronicznych klientów do indeksu wyszukiwania systemu Azure. Średnio około 30 minut zajmuje wyszukiwanie nowo utworzonych odbiorców asynchronicznych w POS. W tym szacowaniu założono, że zadania **1010_CustomerSearch**, **P-job** oraz **Synchronizowanie odbiorców i partnerów biznesowych z zadań trybu asynchronicznego** są planowane do uruchamiania co 15 minut.
+- Wyszukiwanie w chmurze umożliwia także wyszukiwanie pomocniczych wiadomości e-mail i numerów telefonów odbiorców, ale obecnie w wynikach wyszukiwania odbiorcy jest wyświetlany tylko podstawowy numer telefonu i podstawowy adres e-mail odbiorców. Na pierwszy rzut oka może się wydawać, że zwrócono nieistotne wyniki wyszukiwania, ale sprawdzenie dodatkowego adresu e-mail i numeru telefonu klienta w wynikach wyszukiwania może pomóc w zweryfikowaniu, czy wyszukiwane słowo kluczowe doprowadziło do dopasowania klienta. W celu uniknięcia tego nieporozumień istnieją plany usprawniania strony wyników wyszukiwania, co ułatwia użytkownikom zrozumienie przyczyny zwrotu wyniku wyszukiwania.
+- Wymaganie wyszukiwania przy użyciu co najmniej 4 znaków w wyszukiwaniu globalnym („Wyszukiwanie wszystkich sklepów”) nie ma zastosowania do tej usługi.
+
+> [!NOTE]
+> Funkcja wyszukiwania klientów używająca usługi Azure Cognitive Search w ograniczonym regionie jest dostępna w wersji zapoznawczej. Funkcja wyszukiwania klientów jest *niedostępny* w następujących regionach:
+> - Brazylia
+> - Indie
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

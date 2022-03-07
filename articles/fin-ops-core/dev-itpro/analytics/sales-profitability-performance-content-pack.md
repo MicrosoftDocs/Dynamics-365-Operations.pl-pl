@@ -2,6 +2,7 @@
 title: Pakiet zawartości usługi Power BI Wyniki sprzedaży i rentowności
 description: W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Power BI Wyniki sprzedaży i rentowności.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
 ms.prod: ''
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9ec9ef5f4abf898100c670b1ca1cc845d6ebeeea36f21cdda3a9b7d3f1027d4e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6eb5a78c6ac4ad13ad1d263c557359ad2f789cc0
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725217"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5569919"
 ---
 # <a name="sales-and-profitability-performance-power-bi-content"></a>Pakiet zawartości usługi Power BI Wyniki sprzedaży i rentowności
 
@@ -76,7 +77,7 @@ Pakiet zawartości usługi Power BI **Wyniki sprzedaży i rentowności** zawiera
 ## <a name="understanding-the-data-model-and-entities"></a>Opis modelu danych i jednostek
 Następujące dane są używane do wypełniania raportów w pakiecie zawartości usługi Power BI **Wyniki sprzedaży i rentowności**. Te dane są reprezentowane jako zagregowane miary umieszczone w magazynie jednostek. Magazyn jednostek to baza danych programu Microsoft SQL Server zoptymalizowana pod kątem analiz. Aby uzyskać więcej informacji, zobacz [Integracja usługi Power BI z magazynem jednostek](power-bi-integration-entity-store.md).
 
-Zagregowane miary w tym pakiecie zawartości są podzbiorem zagregowanych miar, które były dostępne w module Sprzedaż w programach Microsoft Dynamics AX 2012 i Microsoft Dynamics AX 2012 R3. Aby zagregowane miary modułu można było umieścić w magazynie jednostek, trzeba ustawić te miary jako wdrażalne. Aby uzyskać więcej informacji, zobacz procedurę umieszczania zagregowanych miar w magazynie jednostek we wpisie na blogu [Integracja usługi Power BI z magazynem jednostek w systemie Dynamics](/archive/blogs/dynamicsaxbi/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update).
+Zagregowane miary w tym pakiecie zawartości są podzbiorem zagregowanych miar, które były dostępne w module Sprzedaż w programach Microsoft Dynamics AX 2012 i Microsoft Dynamics AX 2012 R3. Aby zagregowane miary modułu można było umieścić w magazynie jednostek, trzeba ustawić te miary jako wdrażalne. Aby uzyskać więcej informacji, zobacz procedurę umieszczania zagregowanych miar w magazynie jednostek we wpisie na blogu [Integracja usługi Power BI z magazynem jednostek w systemie Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/).
 
 Następujące najważniejsze zagregowane miary jednostki Wiersze faktury są używane jako podstawa w pakiecie zawartości:
 

@@ -1,22 +1,26 @@
 ---
-# required metadata
 title: Omówienie zadań serwisowych
-description: 'Zadania serwisowe służą do opisywania zadań, które mają zostać wykonane podczas zlecenia serwisowego. Te informacje są widoczne zarówno dla techników, jak i klientów.'
+description: Zadania serwisowe służą do opisywania zadań, które mają zostać wykonane podczas zlecenia serwisowego. Te informacje są widoczne zarówno dla techników, jak i klientów.
 author: kamaybac
 ms.date: 07/25/2019
 ms.topic: overview
-ms.prod: null
-ms.technology: null
+ms.prod: ''
+ms.technology: ''
 ms.search.form: SMAServiceTask
 audience: Application User
 ms.reviewer: kamaybac
-ms.assetid: null
+ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
-ms.search.validFrom: '2016-02-28'
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a789c435bfba6948895f6d00c6a350c03b2e9d63
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982491"
 ---
-
 # <a name="service-tasks-overview"></a>Omówienie zadań serwisowych
 
 [!include [banner](../includes/banner.md)]

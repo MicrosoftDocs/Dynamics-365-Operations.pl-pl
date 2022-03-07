@@ -1,27 +1,25 @@
 ---
 title: Wymiary finansowe i konta główne w językach pisanych od prawej do lewej
-description: W tym temacie opisano niektóre decyzje wdrożeniowe, które należy podjąć w przypadku używania języka z pisownią od prawej do lewej, gdy trzeba skonfigurować wymiary finansowe i konta główne.
-author: aprilolson
-manager: AnnBe
+description: W tym temacie opisano decyzje, które należy podjąć w przypadku używania języka z pisownią od prawej do lewej, gdy trzeba skonfigurować wymiary finansowe i konta główne.
+author: RyanCCarlson2
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User
 ms.reviewer: rhaertle
 ms.custom: 222564
 ms.assetid: 875dcebb-1bbb-4841-a8c6-9e134da07e96
 ms.search.region: global
-ms.author: aolson
+ms.author: rcarlson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 192ed371eec24ed4e0532aaca341bb249a4933c7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 26fd186415db0adf01b8c53b188171fcf86fbc88
+ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680489"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6111669"
 ---
 # <a name="financial-dimensions-and-main-accounts-in-right-to-left-languages"></a>Wymiary finansowe i konta główne w językach pisanych od prawej do lewej
 
@@ -38,3 +36,6 @@ Wymiary finansowe i konta główne są kluczowymi składnikami fazy planowania w
 - Unikaj stosowania wybranego separatora planu kont w wartościach wymiarów finansowych i kont głównych.
 
 Przestrzegając poniższych najważniejszych wskazówek, pomagasz zapewnić spójne reprezentowanie kolejności zdefiniowanej przez użytkownika w całym systemie.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

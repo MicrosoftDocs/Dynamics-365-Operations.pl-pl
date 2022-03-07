@@ -2,28 +2,19 @@
 title: Ustawianie mapowania kolumn stanu zamówienia sprzedaży
 description: W tym temacie opisano sposób konfigurowania kolumn stanu zamówienia sprzedaży na potrzeby podwójnego zapisywania.
 author: dasani-madipalli
-manager: tonyafehr
 ms.date: 06/25/2020
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
 ms.author: damadipa
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-06-25
-ms.openlocfilehash: cc70501d231390ea15104d508a36300a1b2cd44c
-ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.openlocfilehash: 53d824ca2fb1eadf34e62bf9c08b837db3efaf42
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4744306"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782291"
 ---
 # <a name="set-up-the-mapping-for-the-sales-order-status-columns"></a>Ustawianie mapowania kolumn stanu zamówienia sprzedaży
 
@@ -102,7 +93,7 @@ Aby włączyć atrybut **IsSOPIntegrationEnabled**, wykonaj następujące kroki.
 1. W przeglądarce przejdź do strony `https://<test-name>.crm.dynamics.com/api/data/v9.0/organizations`. Zastąp **\<test-name\>** łączem firmy w Sales.
 2. Na otwartej stronie znajdź **organizationid** i zanotuj wartość.
 
-    ![Znajdowanie organizationid](media/sales-map-orgid.png)
+    ![Znajdowanie organizationid.](media/sales-map-orgid.png)
 
 3. W Sales otwórz konsolę przeglądarki i uruchom następujący skrypt. Należy zastosować wartość **organizationid** z kroku 2.
 
@@ -121,32 +112,35 @@ Aby włączyć atrybut **IsSOPIntegrationEnabled**, wykonaj następujące kroki.
     );
     ```
 
-    ![Kod JavaScript w konsoli przeglądarki](media/sales-map-script.png)
+    ![Kod JavaScript w konsoli przeglądarki.](media/sales-map-script.png)
 
 4. Upewnij się, że **IsSOPIntegrationEnabled** ma ustawioną wartość **true**. Użyj adresu URL z kroku 1, aby sprawdzić wartość.
 
-    ![IsSOPIntegrationEnabled ma ustawioną wartość true](media/sales-map-integration-enabled.png)
+    ![IsSOPIntegrationEnabled ma ustawioną wartość true.](media/sales-map-integration-enabled.png)
 
 Aby włączyć atrybut **isIntegrationUser**, wykonaj następujące kroki.
 
 1. W Sales przejdź do **Ustawienia \> Dostosowania \> Dostosuj system**, wybierz pozycję **Tabela użytkownika**, a następnie otwórz **Formularz \> Użytkownik**.
 
-    ![Otwieranie formularza użytkownika](media/sales-map-user.png)
+    ![Otwieranie formularza użytkownika.](media/sales-map-user.png)
 
 2. W Eksploratorze pól znajdź **Tryb użytkownika integracyjnego** i kliknij go dwukrotnie, aby dodać go do formularza. Zapisz zmiany.
 
-    ![Dodanie kolumny trybu użytkownika integracyjnego do formularza](media/sales-map-field-explorer.png)
+    ![Dodanie kolumny trybu użytkownika integracyjnego do formularza.](media/sales-map-field-explorer.png)
 
 3. W module Sprzedaż należy posłużyć do **Ustawienia \> Zabezpieczenia \> Użytkownicy** i zmień widok z **Włączeni użytkownicy** na **Uzytkownicy aplikacji**.
 
-    ![Zmienianie widoku z Włączonych użytkowników na Użytkowników aplikacji](media/sales-map-enabled-users.png)
+    ![Zmienianie widoku z Włączonych użytkowników na Użytkowników aplikacji.](media/sales-map-enabled-users.png)
 
 4. Wybierz dwa wpisy dla **DualWrite IntegrationUser**.
 
-    ![Lista użytkowników aplikacji](media/sales-map-user-mode.png)
+    ![Lista użytkowników aplikacji.](media/sales-map-user-mode.png)
 
 5. Zmień wartość w kolumnie **Tryb użytkownika integracyjnego** na **Tak**.
 
-    ![Zmiana wartości kolumny Tryb użytkownika integracji](media/sales-map-user-mode-yes.png)
+    ![Zmiana wartości kolumny Tryb użytkownika integracji.](media/sales-map-user-mode-yes.png)
 
 Twoje zamówienia sprzedaży są teraz zamapowane.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

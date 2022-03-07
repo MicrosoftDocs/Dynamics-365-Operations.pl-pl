@@ -2,16 +2,13 @@
 title: Konfigurowanie i używanie wstrzymań zamówień w biurze obsługi
 description: W tym temacie opisano sposób pracy ze wstrzymaniami zamówień za pomocą Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
 ms.date: 05/14/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: MCRHoldCodeTable, MCRSalesTableOrderHistory, MCRHoldCodeTrans, MCROrderEventSetup, MCROrderEventTable
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 79132
 ms.assetid: 7c00dc35-73e5-400a-8587-22f37ddfc0e0
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b11dd48ac629910a82b4d5bfdf9889809b0d829d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f474b5936f2ae154ad54185becd91865642e8efe3cf10e7dcdbb650c6c833b21
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414957"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6762603"
 ---
 # <a name="configure-and-work-with-call-center-order-holds"></a>Konfigurowanie i używanie wstrzymań zamówień w biurze obsługi
 
@@ -56,7 +53,7 @@ Po wprowadzeniu i zapisaniu informacji o wstrzymaniu użytkownik może zamknąć
 
 Jeśli flaga **Włącz kończenie zamówienia** jest włączona w kanale biura obsługi, płatność nie musi być stosowana do wstrzymanego zamówienia. Z drugiej strony w przypadku zamówienia sprzedaży, które nie jest wstrzymane, użytkownicy nie mogą opuścić strony wprowadzania zamówienia do momentu zastosowania płatności. Oczywiście przed zwolnieniem wstrzymania zamówienia musi zostać dokonana płatność.
 
-Ponadto użytkownicy biura obsługi mogą nakładać ręczne wstrzymania z powodu oszustwa na zamówienia, które z jakiegoś powodu są podejrzane. Zamówienia mogą także być wstrzymywane automatycznie, jeśli spełniają aktywne kryteria i reguły decydujące o uznaniu za oszustwo. Aby uzyskać więcej informacji na temat tego rodzaju wstrzymania zamówienia, zobacz [Konfigurowanie alertów o oszustwie](https://docs.microsoft.com/dynamics365/unified-operations/retail/set-up-fraud-alerts).
+Ponadto użytkownicy biura obsługi mogą nakładać ręczne wstrzymania z powodu oszustwa na zamówienia, które z jakiegoś powodu są podejrzane. Zamówienia mogą także być wstrzymywane automatycznie, jeśli spełniają aktywne kryteria i reguły decydujące o uznaniu za oszustwo. Aby uzyskać więcej informacji na temat tego rodzaju wstrzymania zamówienia, zobacz [Konfigurowanie alertów o oszustwie](/dynamics365/unified-operations/retail/set-up-fraud-alerts).
 
 ## <a name="viewing-and-managing-orders-that-are-on-hold"></a>Podgląd i zarządzanie wstrzymanymi zamówieniami
 
@@ -103,3 +100,6 @@ Jeśli użytkownicy chcą usunąć wstrzymanie, ale wprowadzić dodatkowe zmiany
 ## <a name="reporting-options"></a>Opcje raportowania
 
 Wybierz kolejno opcje **Handel detaliczny i inny** \> **Zapytania i raporty** \> **Raporty biura obsługi** \> **Raport wstrzymań zamówień**, aby uruchomić raport o wstrzymaniach zamówień według zakresów dat, kodów wstrzymania lub innych pokrewnych kryteriów.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

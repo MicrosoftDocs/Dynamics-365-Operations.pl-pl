@@ -2,11 +2,9 @@
 title: Pakiet zawartości usługi Power BI Szkolenia
 description: W tym temacie opisano pakiet zawartość Szkolenia dostępny dla usługi Power BI.
 author: jcart1106
-manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -14,18 +12,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 46b7a442470d1fe78ebc5c9d5a0c6e155c0d9918
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 668308b0a5cfe2fe242a218250c4f714d6f2c279
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685256"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744270"
 ---
 # <a name="learning-power-bi-content"></a>Pakiet zawartości usługi Power BI Szkolenia
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano pakiet zawartość **Szkolenia** dostępny dla usługi Microsoft Power BI.
+W tym temacie opisano pakiet zawartości **Szkolenia** dostępny dla usługi Microsoft Power BI.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Raporty dostępne w pakiecie zawartości dla usługi Power BI
 
@@ -62,3 +60,6 @@ Następujące dane są używane do wypełniania raportów w pakiecie zawartości
 | Pozycja         | Stanowisko, tytuł i równoważnik pełnego etatu (FTE)                  | Terminarz kursu, Uczestnicy kursu |
 | Nazwisko pracownika etatowego    | Imię, drugie imię i nazwisko                             | Uczestnicy kursu |
 | Tytuł pracownika   | Tytuł i data ustalenia stażu pracy                                         | Uczestnicy kursu |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

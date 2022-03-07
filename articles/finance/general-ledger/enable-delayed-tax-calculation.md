@@ -2,11 +2,9 @@
 title: Włączanie opóźnionego obliczania podatku w arkuszach
 description: W tym temacie objaśniono sposób włączania funkcji opóźnionego obliczania podatku w celu zwiększenia wydajności obliczeń podatku, gdy liczba wierszy arkusza jest duża.
 author: ericwang
-manager: Ann Beebe
 ms.date: 09/18/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-09-18
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 4ea79747e8e7c078baa6e270ecebf88c4832e079
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 8394c83245865fd7fa02ddf80ada0532d1d4368e10e0a3248d0f8163f8e2224d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4968811"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742912"
 ---
 # <a name="enable-delayed-tax-calculation-on-journals"></a>Włączanie opóźnionego obliczania podatku w arkuszach
 [!include [banner](../includes/banner.md)]
@@ -47,14 +45,14 @@ System nadaje priorytet ustawieniu dla nagłówka arkusza. Domyślnie to ustawie
 1. Przejdź do pozycji **Księga główna \> Ustawienia księgi \> Parametry księgi głównej**.
 2. Na karcie **Podatek**, na skróconej karcie **Ogólne** ustaw opcję **Obliczanie podatku opóźnionego** na **Tak**.
 
-![Obraz parametrów księgi głównej](media/delayed-tax-calculation-gl.png)
+![Obraz parametrów księgi głównej.](media/delayed-tax-calculation-gl.png)
 
 ## <a name="turn-on-delayed-tax-calculation-at-the-journal-name-level"></a>Włączanie opóźnionego obliczania podatku na poziomie nazwy arkusza
 
 1. Przejdź do pozycji **Księga główna \> Konfiguracja arkusza \> Nazwy arkuszy**.
 2. Na skróconej karcie **Ogólne**, w sekcji **Podatek** ustaw opcję **Obliczanie podatku opóźnionego** na **Tak**.
 
-![Obraz nazw arkusza](media/delayed-tax-calculation-journal-name.png)
+![Obraz nazw arkusza.](media/delayed-tax-calculation-journal-name.png)
 
 ## <a name="turn-on-delayed-tax-calculation-at-the-journal-header-level"></a>Włączanie opóźnionego obliczania podatku na poziomie nagłówka arkusza
 
@@ -63,4 +61,7 @@ System nadaje priorytet ustawieniu dla nagłówka arkusza. Domyślnie to ustawie
 3. Wybierz nazwę arkusza.
 4. Na karcie **Ustawienia** ustaw opcję **Obliczanie podatku opóźnionego** na **Tak**.
 
-![Obraz strony arkusza finansowego](media/delayed-tax-calculation-journal-header.png)
+![Obraz strony arkusza finansowego.](media/delayed-tax-calculation-journal-header.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

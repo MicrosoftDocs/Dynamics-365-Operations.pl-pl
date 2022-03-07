@@ -2,7 +2,7 @@
 title: Tworzenie typów planu
 description: W programie Microsoft Dynamics 365 Human Resources typ planu to nadrzędna grupa konkretnych typów świadczeń. Każdy typ planu ma kod typu planu, który określa reguły typu planu.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 88a6d89bf98ea145bbb6a4eb8f4e052e5f4088e5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1d8db6900e6b697e988e2a7e9e31828b70e4ad0d
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420091"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463919"
 ---
 # <a name="create-plan-types"></a>Tworzenie typów planu
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 W programie Microsoft Dynamics 365 Human Resources typ planu to nadrzędna grupa konkretnych typów świadczeń. Każdy typ planu ma kod typu planu, który określa reguły typu planu. Na przykład typ planu Podstawowe ubezpieczenie na życie może mieć kod typu planu Ubezpieczenie na życie, ponieważ jest to rodzaj planu ubezpieczenia na życie i musi być zgodny z regułami określonymi w typie planu o kodzie Ubezpieczenie na życie. Kolejnym typem planu może być Dodatkowe ubezpieczenie na życie, również z kodem typu planu Ubezpieczenie na życie.
 
@@ -63,3 +65,6 @@ Typ planu może określać opcje objęcia świadczeniami. Opcje objęcia świadc
    | **Okno raportowania** | Określa w dniach okno raportowania dotyczące zdarzenia zmiany sytuacji życiowej. **Uwaga**: Jeśli nie wprowadzisz ilości, system przyjmie, że okno raportowania ma wartość zero, i nie przetworzy zmiany sytuacji życiowej. |
 
 5. Wybierz opcję **Zapisz**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

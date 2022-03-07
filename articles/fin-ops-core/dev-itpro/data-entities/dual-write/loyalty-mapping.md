@@ -2,28 +2,19 @@
 title: Karty lojalnościowe odbiorców i punkty lojalnościowe
 description: W tym temacie opisano integrację danych o kartach lojalnościowych odbiorców i punktach wynagrodzenia w konfiguracjach z podwójnym zapisem.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 03/10/2019
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-10
-ms.openlocfilehash: 28872e9510394cf3d5cee151798d4130b8b6fe27
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 919ce0d57fb306b39cdcdd8655ac9f0b9e26847e
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683505"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781671"
 ---
 # <a name="customer-loyalty-cards-and-reward-points"></a>Karty lojalnościowe odbiorców i punkty lojalnościowe
 
@@ -35,13 +26,10 @@ Firmy klasyfikują odbiorców i świadczą zaawansowane usługi w oparciu o zaku
 
 ## <a name="templates"></a>Szablony
 
-| Aplikacje Finance and Operations | Aplikacje oparte na modelu w systemie Dynamics 365 | opis |
+Aplikacje Finance and Operations | Aplikacje Customer Engagement     | opis
 |-----------------------------|-----------------------------------|-------------|
-| Karta lojalnościowa                | msdyn\_loyaltycards               | Ten szablon powoduje zsynchronizowanie informacji o kartach lojalnościowych klienta. |
-| Punkty lojalnościowe       | msdyn\_loyaltyrewardpoints        | Ten szablon powoduje zsynchronizowanie informacji o punktach nagród klienta. |
+[Karta lojalnościowa](mapping-reference.md#149) | msdyn_loyaltycards | Ten szablon powoduje zsynchronizowanie informacji o kartach lojalnościowych klienta. |
+[Poziomy lojalności](mapping-reference.md#226) | msdyn_loyaltylevels | Ten szablon powoduje zsynchronizowanie informacji o punktach nagród klienta. |
+[Punkty lojalnościowe](mapping-reference.md#150) | msdyn_loyaltyrewardpoints | |
 
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-[!include [mapping loyalty card](includes/LoyaltyCard-msdyn-loyaltycards.md)]
-
-[!include [mapping reward points](includes/LoyaltyRewardPoints-msdyn-loyaltyrewardpoints.md)]
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

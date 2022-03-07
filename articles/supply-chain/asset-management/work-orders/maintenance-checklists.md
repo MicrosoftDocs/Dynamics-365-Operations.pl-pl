@@ -1,12 +1,10 @@
 ---
 title: Listy kontrolne konserwacji
 description: W tym temacie opisano listy kontrolne konserwacji w module Zarządzanie składnikami majątku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderChecklist, EntAssetMobileWorkOrderLineChecklistDetails
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b2ec7130fbe8c397c30cdc2a76f34ecfdfdc0737
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 135887e4ca8dfc6cae9aa73b316815ed3a7041a9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017925"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347099"
 ---
 # <a name="maintenance-checklists"></a>Listy kontrolne konserwacji
 
@@ -77,5 +75,8 @@ Listy kontrolne konserwowanego składnika majątku są tworzone na podstawie def
 
 Na poniższej ilustracji pokazano przykład listy kontrolnej konserwowanego składnika majątku.
 
-![Rysunek 1](media/14-work-orders.png)
+![Rysunek 1.](media/14-work-orders.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

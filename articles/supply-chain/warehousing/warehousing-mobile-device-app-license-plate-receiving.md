@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 6663188334c70035906f924c7850a0dc5002f306
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 872a08241f3d0156d0ccf1f89443e3a894656404
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103070"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777609"
 ---
 # <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Numer identyfikacyjny odbierany za pomocą aplikacji mobilnej Zarządzanie magazynem
 
@@ -77,13 +77,15 @@ Gdy ta funkcja jest włączona, pozycje menu urządzenia mobilnego dotyczące od
 - **Wyświetlenie szczegółowego podsumowania** — podczas przyjmowania numeru identyfikacyjnego pracownicy będą widzieć dodatkową stronę, na której są wyświetlane pełne informacje dotyczące ASN.
 - **Pomiń podsumowanie** — pracownicy nie będą widzieli pełnych informacji ASN. Pracownicy magazynu również nie będą mogli ustawić kodu dyspozycji ani dodać wyjątków podczas procesu odbioru.
 
-Aby udostępnić tę funkcję w systemie, należy włączyć *Kontroluj, czy wyświetlać stronę podsumowania odbioru na urządzeniach mobilnych*. Od wersji 10.0.21 Supply Chain Management version ta funkcja jest domyślnie włączona. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.25, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Określ, czy wyświetlać stronę podsumowania odbioru na urządzeniach mobilnych* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Aby udostępnić tę funkcję w systemie, należy włączyć *Kontroluj, czy wyświetlać stronę podsumowania odbioru na urządzeniach mobilnych* w [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). (Od wersji 10.0.21 Supply Chain Management version ta funkcja jest domyślnie włączona)
 
 ## <a name="prevent-transfer-ordershipped-license-plates-from-being-used-at-warehouses-other-than-the-destination-warehouse"></a>Zapobiegaj używaniu numerów identyfikacyjnych wysłanych z zamówienia przeniesienia w magazynach innych niż magazyn docelowy
 
 Nie można użyć procesu odbierania numeru identyfikacyjnego, jeśli numer ASN zawiera identyfikator numeru identyfikacyjnego, który już istnieje, i zawiera fizyczne dostępne dane w lokalizacji magazynowej innej niż lokalizacja magazynu, w którym występuje rejestracja numeru identyfikacyjnego.
 
-W scenariuszach zamówień przeniesienia, w których magazyn tranzytowy nie śledzi numerów identyfikacyjnych (a zatem nie śledzi fizycznych dostępnych zapasów powiązanych z numerem identyfikacyjnym), można użyć funkcji *Zapobiegaj wykorzystywaniu wysłanych numerów identyfikacyjnych z zamówień przeniesienia w magazynach innych niż magazyn docelowy* w celu uniemożliwienia fizycznej aktualizacji numerów identyfikacyjnych w tranzycie. Aby ta funkcja była dostępna, w systemie musi być włączona funkcja *Zapobiegaj używaniu dostarczonych tablic rejestracyjnych z zamówienia przeniesienia w magazynach innych niż magazyn docelowy*. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.25, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+W scenariuszach zamówień przeniesienia, w których magazyn tranzytowy nie śledzi numerów identyfikacyjnych (a zatem nie śledzi fizycznych dostępnych zapasów powiązanych z numerem identyfikacyjnym), można użyć funkcji *Zapobiegaj wykorzystywaniu wysłanych numerów identyfikacyjnych z zamówień przeniesienia w magazynach innych niż magazyn docelowy* w celu uniemożliwienia fizycznej aktualizacji numerów identyfikacyjnych w tranzycie.
+
+Aby udostępnić tę funkcję w systemie, należy włączyć *Zapobiegaj używaniu numerów identyfikacyjnych wysłanych z zamówienia przeniesienia w magazynach innych niż magazyn docelowy* w module [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 Aby zarządzać funkcjami, gdy ta funkcja jest dostępna, wykonaj następujące kroki.
 

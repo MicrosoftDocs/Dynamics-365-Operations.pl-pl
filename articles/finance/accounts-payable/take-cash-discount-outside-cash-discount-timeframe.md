@@ -2,9 +2,11 @@
 title: Zastosowanie rabatu gotówkowego poza okresem rabatu gotówkowego
 description: Ten artykuł zawiera dwa scenariusze pokazujące stosowanie rabatu gotówkowego nawet w przypadku, gdy płatność jest dokonywana poza okresem rabatu gotówkowego.
 author: abruer
+manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b9ba9c8176571a8b97b43565c89f8614bd828b3d9e1498a248fd896069d5d5c2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7698a244c57d027d07fa7df324d3010eea6e2fe8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736999"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979370"
 ---
 # <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>Zastosowanie rabatu gotówkowego poza okresem rabatu gotówkowego
 
@@ -41,9 +43,9 @@ Oznacza fakturę do płatności. Rabat gotówkowy nie jest pobierany, ponieważ 
 
 Informacje o rabacie pojawiają się w dolnej części strony **Rozliczanie transakcji**.
 
-| Pole                        | Wartość     |
+|                              |           |
 |------------------------------|-----------|
-| Data rabatu           | 7/12/2015 |
+| Data rabatu gotówkowego           | 7/12/2015 |
 | Kwota rabatu gotówkowego         | -20,00    |
 | Użyj rabatu gotówkowego            | Zawsze    |
 | Pobrany rabat gotówkowy          | 0,00      |
@@ -59,9 +61,9 @@ Po zaksięgowaniu faktury i płatności rabat gotówkowego nadal może zostać p
 
 Informacje o rabacie pojawiają się w dolnej części strony **Rozliczanie otwartych transakcji**. Kwota pobranego rabatu gotówkowego wynosi 20.00, ponieważ kwota do rozliczenia dla faktury jest wartością domyślną: 1,980.00.
 
-| Pole                        | Wartość     |
+|                              |           |
 |------------------------------|-----------|
-| Data rabatu           | 7/12/2015 |
+| Data rabatu gotówkowego           | 7/12/2015 |
 | Kwota rabatu gotówkowego         | -20,00    |
 | Użyj rabatu gotówkowego            | Normalna    |
 | Pobrany rabat gotówkowy          | 0,00      |
@@ -76,9 +78,9 @@ April zmienia wartość w polu **Kwota do rozliczenia** na **500.00**. Wartość
 
 Informacje o rabacie pojawiają się w dolnej części strony **Rozliczanie otwartych transakcji**. Wartość w polu **Kwota rabatu gotówkowego do pobrania** wynosi **5,05**, ponieważ kwota do rozliczenia dla faktury została zmieniona na kwotę płatności, 500,00.
 
-| Pole                        | Wartość     |
+|                              |           |
 |------------------------------|-----------|
-| Data rabatu           | 7/12/2015 |
+| Data rabatu gotówkowego           | 7/12/2015 |
 | Kwota rabatu gotówkowego         | -20,00    |
 | Użyj rabatu gotówkowego            | Normalna    |
 | Pobrany rabat gotówkowy          | 0,00      |
@@ -88,6 +90,3 @@ Informacje o rabacie pojawiają się w dolnej części strony **Rozliczanie otwa
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

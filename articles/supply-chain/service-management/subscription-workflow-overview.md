@@ -1,23 +1,26 @@
 ---
-# required metadata
 title: Przegląd procesu subskrypcji
 description: Ten temat zawiera omówienie przepływu pracy subskrypcji.
 author: kamaybac
 ms.date: 05/07/2018
 ms.topic: overview
-ms.prod: null
-ms.technology: null
-ms.search.form: 'SMASubscriptionGroup, SMASubscriptionCreateDialog'
+ms.prod: ''
+ms.technology: ''
+ms.search.form: SMASubscriptionGroup, SMASubscriptionCreateDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.assetid: null
+ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
-ms.search.validFrom: '2016-02-28'
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: cd1484563e9650b9ddae543e3440eec2a3ed075c
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983052"
 ---
-
-
 # <a name="subscription-workflow-overview"></a>Przegląd procesu subskrypcji 
 
 [!include [banner](../includes/banner.md)]

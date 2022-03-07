@@ -2,28 +2,25 @@
 title: Konfigurowanie kuponów dla sprzedaży detalicznej
 description: Ten temat zawiera omówienie koncepcji kuponów oraz wyjaśnienie, jak je konfigurować.
 author: scott-tucker
-manager: AnnBe
 ms.date: 06/04/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailCoupon, RetailParameters, RetailSharedParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a07bed244152327047efd68cfacb329a722c0049
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9d8b9977d733c87566249bcb9658b80c4350c17d
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414870"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792032"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Konfigurowanie kuponów dla sprzedaży detalicznej
 
@@ -82,3 +79,6 @@ Funkcjonalność kuponów obejmuje wiele odrębnych funkcji. Program Commerce He
 - **Program HQ jest częściowo zaktualizowany, ale aplikacje Commerce Scale Unit i POS nie są zaktualizowane.** W aktualizacji programu HQ są aktualizowane strony kuponu i rabatu oraz aparat ustalania cen. Jeśli tylko jeden z tych dwóch składników zostanie zaktualizowany, niektóre strony w module Commerce będą zawierały niezgodne dane obliczania cen. W związku z tym podczas obliczania rabatów mogą się pojawić nieoczekiwane obliczenia rabatów lub błędy.
 - **Program HQ jest zaktualizowany, ale aplikacje Commerce Scale Unit i POS nie są zaktualizowane (N-1).** Ponieważ nie wszystkie sklepy mogą zostać zaktualizowane w tym samym czasie, zaleca się, aby przed zaktualizowaniem sklepów zaktualizować aplikację HQ. W scenariuszu N-1 nowe funkcje dotyczące kuponów nie będą dostępne w sklepach, które nie zostały jeszcze zaktualizowane. Na przykład funkcjonalność kuponów wprowadza wiersze wykluczenia. Użycie opcji wykluczenia do wierszy rabatu spowoduje, że nie będą one stosowane w sklepie, który korzysta ze starszej wersji.
 - **Program HQ nie jest zaktualizowany, ale aplikacje Commerce Scale Unit i POS są zaktualizowane (N+1).** Ponieważ zaktualizowany aparat kalkulacji cen w aplikacji Commerce Scale Unit może obsługiwać starsze kody rabatów podczas obliczania cen, aktualizacja nie powinna mieć żadnego funkcjonalnego wpływu w tym scenariuszu.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

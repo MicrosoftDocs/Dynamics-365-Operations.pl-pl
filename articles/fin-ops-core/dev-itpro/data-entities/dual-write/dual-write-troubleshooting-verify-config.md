@@ -1,12 +1,10 @@
 ---
-title: Sprawdź, czy w aplikacjach Finance and Operations i Dataverse jest skonfigurowany tryb podwójnego zapisu
+title: Weryfikowanie konfiguracji podwójnego zapisu w aplikacjach Finance and Operations i Dataverse
 description: W tym temacie wyjaśniono, jak można określić, czy podwójne zapisywanie jest skonfigurowane w aplikacjach Finance and Operations i w Dataverse.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,14 +16,14 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: f389bcf133cc7e6a086167d5e26c1b8795d0fa30
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: af746d1d20ddd1552bce797288c6d62d69d7bd16
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685546"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748856"
 ---
-# <a name="verify-that-dual-write-is-configured-in-finance-and-operations-apps-and-dataverse"></a>Sprawdź, czy w aplikacjach Finance and Operations i Dataverse jest skonfigurowany tryb podwójnego zapisu
+# <a name="verify-dual-write-configuration-in-finance-and-operations-apps-and-dataverse"></a>Weryfikowanie konfiguracji podwójnego zapisu w aplikacjach Finance and Operations i Dataverse
 
 [!include [banner](../../includes/banner.md)]
 
@@ -51,10 +49,13 @@ Aby uzyskać informacje dotyczące rozwiązywania problemów podczas tworzenia d
 
 ## <a name="verify-that-dual-write-is-configured-in-dataverse"></a>Sprawdź, czy w Dataverse jest skonfigurowany tryb podwójnego zapisu
 
-Jeśli w formularzu są tworzone dane, to w przypadku wyświetlenia pola **Firma** na stronach w Dataverse zostanie skonfigurowany podwójny zapis.
+Jeśli w formularzu są tworzone dane, to w przypadku wyświetlenia kolumny **Firma** na stronach w Dataverse zostanie skonfigurowany podwójny zapis.
 
 ![Trwa weryfikowanie połączenia Dataverse](media/verify_cds.png)
 
 Aby uzyskać informacje dotyczące rozwiązywania problemów podczas tworzenia danych w Dataverse, należy zapoznać się z [Rozwiązywanie problemów z synchronizacją na żywo](dual-write-troubleshooting-live-sync.md).
 
 Aby uzyskać informacje o wyświetlaniu szczegółów błędów w przypadku wystąpienia jakichkolwiek błędów podczas tworzenia danych w Dataverse, zobacz temat [Włączanie i wyświetlanie informacji o wtyczkach w Dataverse w celu wyświetlenia szczegółów błędu](dual-write-troubleshooting.md#enable-view-trace).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Subskrypcja — ceny sprzedaży
 description: W przypadku tworzenia subskrypcji cena sprzedaży jest ustalana na podstawie konfiguracji ceny sprzedaży utworzonej w formularzu Cena sprzedaży — subskrypcja.
-author: kamaybac
+author: ShylaThompson
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd63fc290263babafabd6e29441f008d0cf10e13
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 59e9084c1b1a2d27ac7a813dd412ebf49011252a199742b31af7c3c328c5ffd2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569992"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712941"
 ---
-# <a name="subscription-sales-prices"></a>Subskrypcja — ceny sprzedaży
+# <a name="subscription-sales-prices"></a>Subskrypcja — ceny sprzedaży   
 
 [!include [banner](../includes/banner.md)]
+
 
 W przypadku tworzenia subskrypcji cena sprzedaży jest ustalana na podstawie konfiguracji ceny sprzedaży utworzonej w formularzu **Cena sprzedaży — subskrypcja**.
 
@@ -32,14 +33,14 @@ W formularzu **Cena sprzedaży — subskrypcja** można utworzyć ceny sprzedaż
 
 Jeśli kod okresu i waluta są takie same dla subskrypcji i ceny sprzedaży, ceny sprzedaży subskrypcji są wybierane na podstawie priorytetów przedstawionych w poniższej tabeli. Pusta komórka w tabeli wskazuje puste pole, a znak X wskazuje wartość równą wartości określonej w subskrypcji, na podstawie której jest generowana transakcja.
 
-<table>
+<table style="width:100%;">
 <colgroup>
-<col />
-<col />
-<col />
-<col />
-<col />
-<col />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -119,6 +120,7 @@ Jeśli kod okresu i waluta są takie same dla subskrypcji i ceny sprzedaży, cen
 </tbody>
 </table>
 
+
 Podczas tworzenia opłaty subskrypcji jako cena sprzedaży subskrypcji jest wybierana cena sprzedaży o najwyższym poziomie szczegółowości, zgodnie z powyższą tabelą.
 
 ## <a name="update-and-index-subscription-sales-prices"></a>Aktualizacja i subskrypcje indeksu cen sprzedaży
@@ -133,15 +135,15 @@ W przypadku tworzenia opłaty subskrypcji cena sprzedaży jest ustalana na podst
 
 Chcesz skonfigurować cenę sprzedaży subskrypcji równą 500 euro dla nowego projektu 9030. W formularzu **Cena sprzedaży — subskrypcja** tworzy się wiersz ceny sprzedaży subskrypcji w sposób przedstawiony w tabeli poniżej.
 
-<table>
+<table style="width:100%;">
 <colgroup>
-<col />
-<col />
-<col />
-<col />
-<col />
-<col />
-<col />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -172,14 +174,14 @@ Należy zauważyć, że pola **Kategoria** i **Subskrypcja** są puste.
 
 Następnie tworzysz poniższe subskrypcje:
 
-<table>
+<table style="width:100%;">
 <colgroup>
-<col />
-<col />
-<col />
-<col />
-<col />
-<col />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -224,14 +226,14 @@ Opłaty subskrypcyjne, których cena sprzedaży wynosi 500 euro, są tworzone dl
 
 <table>
 <colgroup>
-<col />
-<col />
-<col />
-<col />
-<col />
-<col />
-<col />
-<col />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -272,15 +274,15 @@ Opłaty subskrypcyjne, których cena sprzedaży wynosi 500 euro, są tworzone dl
 
 Następnie decydujesz się określić ceny sprzedaży dla kategorii KatSub1 i projektu 9030. Dlatego tworzysz nowy wiersz ceny sprzedaży z ceną sprzedaży 550 euro dla kombinacji projektu 9030 i kategorii opłaty KatSub1. Dla projektu 9030 są teraz dwa wiersze ceny sprzedaży subskrypcji, jak widać w tabeli poniżej:
 
-<table>
+<table style="width:100%;">
 <colgroup>
-<col />
-<col />
-<col />
-<col />
-<col />
-<col />
-<col />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -315,18 +317,19 @@ Następnie decydujesz się określić ceny sprzedaży dla kategorii KatSub1 i pr
 </tbody>
 </table>
 
+
 Powtarzasz procedurę opisaną powyżej w celu utworzenia opłat subskrypcji dla obu subskrypcji w grupie subskrypcji Sub1. Tabela poniżej pokazuje transakcje, które są tworzone dla każdej subskrypcji dołączonej do grupy subskrypcji:
 
 <table>
 <colgroup>
-<col />
-<col />
-<col />
-<col />
-<col />
-<col />
-<col />
-<col />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -364,10 +367,16 @@ Powtarzasz procedurę opisaną powyżej w celu utworzenia opłat subskrypcji dla
 </tbody>
 </table>
 
+
 W pierwszej transakcji — dla subskrypcji 00020\_135 — cena sprzedaży 550 euro została ustalona na podstawie cen sprzedaży subskrypcji skonfigurowanej dla kombinacji określonego projektu i kategorii. W drugiej transakcji — dla subskrypcji 00021\_135 — cena sprzedaży 500 euro została ustalona jako cena sprzedaży subskrypcji projektu, ponieważ nie ma skonfigurowanej ceny dla kombinacji projektu 9030 i kategorii KatSub2.
 
 ## <a name="see-also"></a>Informacje dodatkowe
 
 [Aktualizacja i subskrypcje indeksu cen sprzedaży](update-and-index-subscription-sales-prices.md)
+
+  
+
+
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

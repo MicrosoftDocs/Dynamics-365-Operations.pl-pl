@@ -2,25 +2,22 @@
 title: Instalowanie, konfigurowanie i aktualizowanie portalu klienta
 description: W tym temacie przedstawiono szczegółowe informacje na temat licencjonowania i instrukcje konfiguracji dla portalu klienta.
 author: dasani-madipalli
-manager: tfehr
 ms.date: 06/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: e61fc5f7151a0bb61d496d47f4ad4e727a2a1d65
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 5c4cad305e3d130b3283ca3424c84f60e2d13307
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529537"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907822"
 ---
 # <a name="install-set-up-and-update-the-customer-portal"></a>Instalowanie, konfigurowanie i aktualizowanie portalu klienta
 
@@ -30,8 +27,8 @@ ms.locfileid: "4529537"
 
 Aby zaimplementować Portal odbiorców, należy dysponować następującymi licencjami:
 
-- **Portale Power Apps** — Ta licencja jest wymagana do obsługi portalu klienta. Portale są licencjonowane na podstawie użycia. Aby uzyskać więcej informacji, zajrzyj do [wymagań licencyjnych dotyczących portali Power Apps](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#portals).
-- **Podwójny zapis** — wymagane są licencje niezbędne do włączenia podwójnego zapisywania dla jednostek Supply Chain Management. Aby uzyskać więcej informacji, zobacz [Wymagania systemowe dotyczące podwójnego zapisu](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req.md).
+- **Portale Power Apps** — Ta licencja jest wymagana do obsługi portalu klienta. Portale są licencjonowane na podstawie użycia. Aby uzyskać więcej informacji, zajrzyj do [wymagań licencyjnych dotyczących portali Power Apps](/power-platform/admin/powerapps-flow-licensing-faq#portals).
+- **Podwójny zapis** — wymagane są licencje niezbędne do włączenia podwójnego zapisywania dla tabel Supply Chain Management. Aby uzyskać więcej informacji, zobacz [Wymagania systemowe dotyczące podwójnego zapisu](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req.md).
 
 ## <a name="dependencies-on-dual-write-and-power-apps-portals"></a>Zależności od podwójnego zapisu i portali Power Apps
 
@@ -39,13 +36,13 @@ Portal klienta zależy od portali Power Apps i podwójnego zapisu, co pokazano n
 
 ![Zależności portalu klienta](media/customer-portal-elements.png "Zależności portalu klienta")
 
-W przeciwieństwie do innych funkcji Supply Chain Management, szablon Portalu klienta znajduje się w portalach Power Apps. Z tego względu Portal klienta jest ograniczony przez funkcje i możliwości dostarczane przez portale Power Apps i podmioty zamawiające z podwójnym zapisem.
+W przeciwieństwie do innych funkcji Supply Chain Management, szablon Portalu klienta znajduje się w portalach Power Apps. Z tego względu Portal klienta jest ograniczony przez funkcje i możliwości dostarczane przez portale Power Apps i tabele z podwójnym zapisem.
 
 ## <a name="required-setup-to-enable-the-customer-portal"></a><a name="required-setup"></a>Konfiguracja wymagana do włączenia portalu klienta
 
-Po upewnieniu się, że użytkownik dysponuje wymaganymi licencjami, można skonfigurować podwójny zapis w sposób opisany w [instrukcjach wstępnej synchronizacji podwójnego zapisu](../../fin-ops-core/dev-itpro/data-entities/dual-write/initial-sync.md).
+Po upewnieniu się, że użytkownik dysponuje wymaganymi licencjami, można skonfigurować podwójny zapis w sposób opisany w [instrukcjach wstępnej synchronizacji podwójnego zapisu](/dynamics365/supply-chain/sales-marketing/enable-entity-map).
 
-Należy pamiętać, aby w podwójnym zapisywaniu włączyć następujące mapowania jednostek:
+Należy pamiętać, aby w podwójnym zapisywaniu włączyć następujące mapowania tabel:
 
 - Nagłówek zamówienia sprzedaży
 - Szczegóły zamówienia sprzedaży
@@ -77,12 +74,15 @@ Do portalu klienta można później dodać więcej funkcji. Wszelkie zmiany, kt�
 
 Aby dowiedzieć się, jak można skonfigurować i dostosować Portal klienta, należy zacząć od przejrzenia następującej dokumentacji dla podstawowych technologii:
 
-- [Dokumentacja portali Power Apps](https://docs.microsoft.com/powerapps/maker/portals/overview)
+- [Dokumentacja portali Power Apps](/powerapps/maker/portals/overview)
 - [Dokumentacja podwójnego zapisu](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md)
 
-Aby efektywnie zarządzać portalami, należy zrozumieć portale Power Apps i cykl życia Common Data Service. Aby uzyskać więcej informacji, zobacz następujące zasoby:
+Aby efektywnie zarządzać portalami, należy zrozumieć portale Power Apps i cykl życia Microsoft Dataverse. Aby uzyskać więcej informacji, zobacz następujące zasoby:
 
-- [Cykl życia portalu — informacje](https://docs.microsoft.com/powerapps/maker/portals/admin/portal-lifecycle)
-- [Uaktualnianie portalu](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
-- [Migruj konfigurację portalu](https://docs.microsoft.com/powerapps/maker/portals/admin/migrate-portal-configuration)
+- [Cykl życia portalu — informacje](/powerapps/maker/portals/admin/portal-lifecycle)
+- [Uaktualnianie portalu](/powerapps/maker/portals/admin/upgrade-portal)
+- [Migruj konfigurację portalu](/powerapps/maker/portals/admin/migrate-portal-configuration)
 - [Zarządzanie cyklem życia rozwiązania: Dynamics 365 dla aplikacji Customer Engagement](https://www.microsoft.com/download/details.aspx?id=57777)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

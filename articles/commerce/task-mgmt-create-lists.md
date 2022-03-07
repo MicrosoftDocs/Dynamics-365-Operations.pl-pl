@@ -2,35 +2,30 @@
 title: Tworzenie list zadań i dodawanie zadań
 description: W tym temacie opisano, jak tworzyć listy zadań i dodawać do nich zadania w Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 02/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 1cab31784db9f3242dce20e98762088436a5a8f8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2e6bd69435ee8fe58dbbf66eb0c5eee3d2ec09ee1998ef0218cdef643522c5bf
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415004"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6756532"
 ---
 # <a name="create-task-lists-and-add-tasks"></a>Tworzenie list zadań i dodawanie zadań
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano, jak tworzyć listy zadań i dodawać do nich zadania w Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 *Zadanie* definiuje określony element pracy lub akcję, którą ktoś musi zakończyć w dniu lub przed określonym terminem płatności. W Dynamics 365 Commerce zadanie może zawierać szczegółowe instrukcje i informacje o osobie kontaktowej. Może również zawierać łącza do operacji związanych z kopiami zapasowymi, operacje punktu sprzedaży (POS) lub stron witryny w celu zwiększenia produktywności i zapewnienia kontekstu potrzebnego właścicielowi zadania w celu efektywnego wykonania zadania.
 
@@ -54,7 +49,7 @@ Aby dodać zadanie do listy zadań, wykonaj następujące kroki.
 1. W nowym oknie dialogowym **Utwórz nowe zadanie**, w polu **Nazwa** wprowadź unikatową nazwę zadania.
 1. W polu **Przesunięcie danych należnych od daty docelowej** wprowadź dodatnią lub ujemną wartość całkowitą. Na przykład wprowadź **-2**, jeśli zadanie ma zostać wykonane dwa dni przed datą ukończenia listy zadań.
 1. W polu **Uwagi** wprowadź szczegółowe instrukcje.
-1. W polu **Osoba kontaktowa** wprowadź nazwisko eksperta, którego właściciel zadania może skontaktować się, jeśli wymaga tego pomoc.
+1. W polu **Osoba kontaktowa** wprowadź nazwisko eksperta w danej dziedzinie, z którym właściciel zadania może się skontaktować, jeśli potrzebuje pomocy.
 1. W polu **Łącze zadania** wprowadź łącze na podstawie charakteru zadania.
 
 > [!TIP]
@@ -75,7 +70,7 @@ Aby dodać łącza do zadań podczas tworzenia zadania, należy wykonać następ
 
 Na poniższej ilustracji przedstawiono wybór łączy zadań w oknie dialogowym **Edytuj zadanie**.
 
-![Wybieranie łączy zadań w oknie dialogowym Edytuj zadanie](media/HQ-POS-Tasks-Linking.png)
+![Wybieranie łączy zadań w oknie dialogowym Edytuj zadanie.](media/HQ-POS-Tasks-Linking.png)
 
 ### <a name="configure-a-pos-operation-so-that-it-can-be-linked-to-a-task"></a>Skonfiguruj operację punktu sprzedaży, aby mogła być połączona z zadaniem
 
@@ -93,3 +88,6 @@ Aby skonfigurować operację punktu sprzedaży, aby można ją było połączyć
 [Przypisywanie list zadań do sklepów lub pracowników etatowych](task-mgmt-assign-lists.md)
 
 [Zarządzanie zadaniami w punkcie sprzedaży](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

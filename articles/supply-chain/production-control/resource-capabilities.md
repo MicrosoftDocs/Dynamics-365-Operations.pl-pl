@@ -1,7 +1,7 @@
 ---
 title: Możliwości zasobu
 description: Ten artykuł zawiera informacje o organizowaniu możliwościach zasobów. Możliwość to zdolność zasobu operacyjnego do wykonania określonego działania. Wyjaśniono, jak możliwości i związane z nimi funkcje, takie jak poziom biegłości i priorytet, służą do wybierania zasobów odpowiednich dla działań.
-author: johanhoffmann
+author: sorenva
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 29961
 ms.assetid: 30e38233-2a64-4070-911f-8ffd78dd8281
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 260537767d083445aa908c850526a5472c529763
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8a96dbbe76cd0b1355123a7654e29cdc516a07ff4e45f77b7a850786042a2394
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572776"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758383"
 ---
 # <a name="resource-capabilities"></a>Możliwości zasobu
 

@@ -1,37 +1,31 @@
 ---
 title: Ulepszenia funkcji księgowania zestawień
 description: W tym temacie opisano ulepszenia, które zostały wprowadzone w funkcji księgowania zestawień.
-author: josaw1
-manager: AnnBe
-ms.date: 05/14/2019
+author: analpert
+ms.date: 01/31/2022
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
-ms.search.industry: retail
-ms.author: anpurush
+ms.author: analpert
 ms.search.validFrom: 2018-04-30
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 68abef8f28c04a4f6f88e638c8abf944d06a32c4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6ee0cea76be05634aa21643acef5b341f19d75ef
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415012"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087610"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Ulepszenia funkcji księgowania zestawień
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 W tym temacie opisano pierwszy zestaw ulepszeń, które zostały wprowadzone w funkcji księgowania zestawień. Te ulepszenia są dostępne w programie Microsoft Dynamics 365 for Finance and Operations 7.3.2.
 
 ## <a name="activation"></a>Aktywacja
 
-Domyślnie podczas instalowania programu Finance and Operations 7.3.2 jest w nim konfigurowane używanie starszej funkcji księgowania zestawień. Aby włączyć ulepszoną funkcję księgowania zestawień, należy wyłączyć dla niej klucz konfiguracji.
+Domyślnie podczas instalowania programu Finanse i Działania 7.3.2 jest w nim konfigurowane używanie starszej funkcji księgowania zestawień. Aby włączyć ulepszoną funkcję księgowania zestawień, należy wyłączyć dla niej klucz konfiguracji.
 
 - Wybierz kolejno opcje **Administrowanie systemem** \> **Ustawienia** \> **Konfiguracja licencji**, a następnie w węźle **Retail i Commerce** wyczyść pole wyboru **Zestawienia (starsze)**, po czym zaznacz pole wyboru **Zestawienia**.
 
@@ -56,12 +50,24 @@ W ramach ulepszania funkcji księgowania zestawień wprowadzono trzy nowe parame
 
 - **Wymagane wyłączenie zliczania** — Jeśli ta opcja jest ustawiona na **Tak**, proces księgowania zestawienia jest kontynuowany, nawet gdy różnica między kwotą obliczoną a kwotą transakcji wykracza poza próg zdefiniowany na skróconej karcie **Zestawienie** dla sklepów.
 
+> [!NOTE]
+> Od wersji 10.0.14 Commerce, gdy włączona jest opcja **Zestawienia detaliczne – zasilanie cykliczne**, zadanie wsadowe **Księgowanie zapasów** nie ma już zastosowania i nie może być uruchomione.
+
 Ponadto w skróconej karcie **przetwarzania wsadowego** na karcie **Księgowanie** na stronie **Parametry rozwiązania Commerce** wprowadzono następujące parametry: 
 
 - **Maksymalna liczba równoległych operacji księgowania zestawień** — to pole określa liczbę zadań wsadowych, które będą używane do księgowania wielu zestawień. 
 - **Maksymalny wątek na potrzeby przetwarzania zamówień na zestawienie** — to pole reprezentuje maksymalną liczbę wątków używanych przez zadanie wsadowe księgowania zestawienia do tworzenia i fakturowania zamówień sprzedaży dla jednego zestawienia. Łączna liczba wątków, które będą używane przez proces księgowania zestawienia, zostanie obliczona na podstawie wartości w tym parametrze pomnożonej przez wartość w polu parametru **Maksymalna liczba równoległych operacji księgowania zestawień**. Ustawienie zbyt dużej wartości tego parametru może mieć negatywny wpływ na wydajność procesu księgowania zestawienia.
 - **Maksymalna liczba wierszy transakcji uwzględnionych w agregacji** — to pole określa liczbę wierszy transakcji, które zostaną uwzględnione w jednej zagregowanej transakcji przed utworzeniem nowej. Zagregowane transakcje są tworzone na podstawie różnych kryteriów agregacji, takich jak odbiorca, Data firmy lub wymiary finansowe. Należy pamiętać, że wiersze z pojedynczej transakcji nie będą dzielone między różne zagregowane transakcje. Oznacza to, że istnieje możliwość, że liczba wierszy w zagregowanej transakcji jest nieco wyższa lub niższa w zależności od czynników, takich jak liczba odrębnych produktów.
 - **Maksymalna liczba wątków sprawdzania poprawność transakcji w sklepie** — to pole określa liczbę wątków, które będą używane do sprawdzania poprawności transakcji. Sprawdzanie transakcji jest wymaganym krokiem, który musi nastąpić, zanim transakcje będą mogły zostać uwzględnione w zestawieniach. Ponadto konieczne jest zdefiniowanie ustawienia **Produkt karty upominkowej** na skróconej karcie **Karta upominkowa** dostępnej na karcie **Księgowanie** na stronie **Parametry rozwiązania Commerce**. Ta zasada obowiązuje, nawet jeśli organizacja nie używa żadnych kart upominkowych.
+
+Poniższa tabela przedstawia zalecane wartości dla poprzednich parametrów. Wartości te powinny być przetestowane i dopasowane do konfiguracji wdrożenia oraz dostępnej infrastruktury. Każde zwiększenie zalecanych wartości może mieć negatywny wpływ na inne procesy wsadowe i powinno być potwierdzone.
+
+| Parametr | Zalecana wartość | Szczegóły |
+|-----------|-------------------|---------|
+| Maksymalna liczba równoległych operacji księgowania zestawień | <p>Umożliwia ustawienie tego parametru na liczbę zadań wsadowych dostępnych dla grupy zadań wsadowych, w których jest uruchomione zadanie **Zestawienia**.</p><p>**Reguła ogólna:** Pomnóż liczbę serwerów wirtualnych serwera obiektów aplikacji (AOS) przez liczbę zadań wsadowych dostępnych na serwerze wirtualnym AOS.</p> | Ten parametr nie ma zastosowania, gdy włączona jest funkcja **Zestawienia detaliczne – podawanie kroplowe**. |
+| Maksymalna liczba wątków do przetwarzania zamówień z jednego zamówienia | Rozpocznij od wartości testowych o wartości **4**. Zwykle wartość nie powinna przekraczać **8**. | Ten parametr określa liczbę wątków, które są używane do tworzenia i wysyłania zamówień sprzedaży. Reprezentuje on liczbę wątków, które są dostępne do wysłania w każdej wypowiedzi. |
+| Maksymalna liczba wierszy transakcji w agregacji | Rozpocznij od wartości testowych o wartości **1000**. W zależności od konfiguracji centrali, mniejsze rozkazy mogą być bardziej korzystne dla wydajności. | Ten parametr określa liczbę wierszy, które będą zawarte w każdym zamówieniu sprzedaży podczas księgowania zestawienia. Po osiągnięciu tej liczby linie zostaną rozdzielone do nowego porządku. Chociaż liczba linii sprzedaży nie będzie dokładna, ponieważ podział następuje na poziomie zamówienia sprzedaży, będzie ona zbliżona do liczby, która jest ustawiona. Ten parametr jest używany do generowania zleceń sprzedaży dla transakcji detalicznych, które nie mają określonego klienta. |
+| Maksymalna liczba wątków sprawdzania poprawność transakcji w sklepie | Zalecamy, abyś ustawił ten parametr na **4** i zwiększał go tylko wtedy, gdy nie osiągniesz zadowalającej wydajności. Liczba wątków, których używa ten proces, nie może przekroczyć liczby procesorów dostępnych dla serwera wsadowego. Jeśli przypiszesz tutaj zbyt wiele wątków, możesz wpłynąć na inne przetwarzanie wsadowe. | Ten parametr kontroluje liczbę transakcji, które mogą być potwierdzane w tym samym czasie dla danego sklepu. |
 
 > [!NOTE]
 > Wszystkie ustawienia i parametry związane z księgowaniem zestawień, które są zdefiniowane w oknie Sklepy sieci sprzedaży i na stronie **Parametry rozwiązania Commerce**, mają zastosowanie do ulepszonej funkcji księgowania zestawień.
@@ -119,9 +125,17 @@ Zestawienie przechodzi przez różne operacje (na przykład tworzenia, obliczani
 
 ### <a name="aggregated-transactions"></a>Zagregowane transakcje
 
-W trakcie procesu księgowania transakcje sprzedaży są agregowane na podstawie konfiguracji. Te zagregowane transakcje są przechowywane w systemie i używane do tworzenia zamówień sprzedaży. Każda zagregowana transakcja tworzy jedno odnośne zamówienie sprzedaży w systemie. Zagregowane transakcje można zobaczyć, naciskając przycisk **Zagregowane transakcje** w grupie **Szczegóły wykonania** dla zestawienia.
+W procesie księgowania transakcje kasowe i gotówkowe są agregowane według klienta i produktu. W związku z tym jest zmniejszana liczba utworzonych zamówień sprzedaży i wierszy. Zagregowane transakcje są przechowywane w systemie i używane do tworzenia zamówień sprzedaży. Każda zagregowana transakcja tworzy jedno odnośne zamówienie sprzedaży w systemie. 
 
-Karta **Szczegóły zamówienia sprzedaży** w oknie zagregowanej transakcji pokazuje następujące informacje:
+Jeśli zestawienie nie zostało w pełni zaksięgowany, można wyświetlić agregowane transakcje w zestawieniu. W okienku akcji, na karcie **Zestawienie**, w grupie **Szczegóły wykonania** wybierz pozycję **Agregowane transakcje**.
+
+![Przycisk agregowanych transakcji dla zestawienia, które nie zostało w pełni zaksięgowane.](media/aggregated-transactions.png)
+
+W przypadku zaksięgowanych zestawień można wyświetlić agregowane transakcje na stronie **Zaksięgowane zestawienia**. W okienku akcji wybierz opcję **Zapytania**, a następnie wybierz opcję **Zagregowane transakcje**.
+
+![Polecenie zagregowanych transakcji dla zaksięgowanych wyciągów.](media/aggregated-transactions-posted-statements.png)
+
+Skrócona karta **Szczegóły zamówienia sprzedaży** w oknie zagregowanej transakcji pokazuje następujące informacje:
 
 - **Identyfikator rekordu** — Identyfikator rekordu zagregowanej transakcji.
 - **Numer zestawienia** — Zestawienie, do którego należy zagregowana transakcja.
@@ -130,10 +144,26 @@ Karta **Szczegóły zamówienia sprzedaży** w oknie zagregowanej transakcji pok
 - **Liczba zagregowanych wierszy** — Łączna liczba wierszy zagregowanej transakcji i zamówienia sprzedaży.
 - **Stan** — Ostatni stan zagregowanej transakcji.
 - **Identyfikator faktury** — Identyfikator faktury sprzedaży wstawiany po zafakturowaniu zamówienia sprzedaży powiązanego ze zagregowaną transakcją. Jeśli to pole jest puste, faktura za zamówienie sprzedaży nie została jeszcze zaksięgowana.
+- **Kod błędu** — to pole jest ustawiane, jeśli agregacja znajduje się w stanie błędu.
+- **Komunikat o błędzie** — to pole jest ustawiane, jeśli agregacja znajduje się w stanie błędu. Pokazuje szczegółowe informacje o tym, co spowodowało niepowodzenie procesu. Informacje zawarte w kodzie błędu mogą zostać podane w celu rozwiązania problemu. Następnie można ponownie ręcznie uruchomić proces. W zależności od typu rozwiązania może być konieczne usunięcie i przetworzenie zagregowanej sprzedaży w nowym zestawieniu.
 
-Karta **Szczegóły transakcji** w oknie zagregowanej transakcji pokazuje wszystkie transakcje pobrane do zagregowanej transakcji. Zagregowane wiersze w zagregowanej transakcji pokazują wszystkie zagregowane rekordy z transakcji. W zagregowanych wierszach są również wyświetlane szczegóły takie jak towar, wariant, ilość, cena, kwota netto, jednostka i magazyn. Zasadniczo każdy zagregowany wiersz odpowiada jednemu wierszowi zamówienia sprzedaży.
+![Pola na skróconej karcie szczegółów zamówienia sprzedaży zagregowanej transakcji.](media/aggregated-transactions-error-message-view.png)
 
-Na stronie **Zagregowane transakcje** można pobrać kod źródłowy XML konkretnej zagregowanej transakcji, naciskając przycisk **Eksportuj kod XML zamówienia sprzedaży**. Kodu XML można używać do debugowania problemów dotyczących tworzenia i księgowania zamówienia sprzedaży. Wystarczy pobrać kod XML, przekazać go do środowiska testowego, a następnie debugować problem w środowisku testowym. Funkcja pobierania kodu XML zagregowanych transakcji nie jest dostępna dla zestawień, które zostały już zaksięgowane.
+Skrócona karta **Szczegóły transakcji** w oknie zagregowanej transakcji pokazuje wszystkie transakcje pobrane do zagregowanej transakcji. Zagregowane wiersze w zagregowanej transakcji pokazują wszystkie zagregowane rekordy z transakcji. W zagregowanych wierszach są również wyświetlane szczegóły takie jak towar, wariant, ilość, cena, kwota netto, jednostka i magazyn. Zasadniczo każdy zagregowany wiersz odpowiada jednemu wierszowi zamówienia sprzedaży.
+
+![Skrócona karta szczegółów zagregowanej transakcji.](media/aggregated-transactions-sales-details.png)
+
+W pewnych sytuacjach zagregowane transakcje mogą nie księgować skonsolidowanego zamówienia sprzedaży. W takich sytuacjach kod błędu jest skojarzony ze stanem zestawienia. Aby wyświetlić tylko zagregowane transakcje, które mają błędy, można włączyć filtr **Pokaż tylko błędy** w widoku zagregowanych transakcji, zaznaczając to pole wyboru. Włączenie tego filtru umożliwia ograniczenie wyników do zagregowanych transakcji, które mają błędy wymagające rozwiązania. Aby uzyskać informacje na temat usuwania tych błędów, zobacz temat [Edycja i przeprowadzanie inspekcji transakcji zamówień online i asynchronicznych zamówień odbiorcy](edit-order-trans.md).
+
+![Pole wyboru filtru Pokaż tylko błędy w widoku zagregowanych transakcji.](media/aggregated-transactions-failure-view.png)
+
+Na stronie **Zagregowane transakcje** można pobrać kod źródłowy XML konkretnej zagregowanej transakcji, wybierając pozycję **Eksportuj dane agregacji**. Plik XML można przeglądać w dowolnym formacie XML, aby wyświetlić szczegóły danych, które wymagają utworzenia i zaksięgowania zamówienia sprzedaży. Funkcja pobierania kodu XML zagregowanych transakcji nie jest dostępna dla zestawień, które zostały już zaksięgowane.
+
+![Przycisk Eksportuj dane agregacji na stronie Zagregowane transakcje.](media/aggregated-transactions-export.png)
+
+Jeśli nie można poprawić tego błędu, korygując dane zamówienia sprzedaży lub dane obsługujące zamówienie sprzedaży, można użyć dostępnego przycisku **Usuń zamówienie klienta**. Aby usunąć zamówienie, zaznacz zagregowaną transakcję z błędem, a następnie wybierz pozycję **Usuń zamówienie klienta**. Zagregowana transakcja i odpowiadające jej zamówienie sprzedaży zostaną usunięte. Transakcje można teraz przeglądać za pomocą funkcji edycji i inspekcji. Można je również przetworzyć ponownie w nowym zestawieniu. Po usunięciu błędów można wznowić księgowanie zestawienia, uruchamiając funkcję księgowania zestawienia dla odpowiedniego zestawienia.
+
+![Przycisk Usuń zamówienie klienta w widoku zagregowanych transakcji.](media/aggregated-transactions-delete-cust-order.png)
 
 Widok zagregowanych transakcji oferuje następujące zalety:
 
@@ -174,3 +204,6 @@ W funkcji księgowania zestawień wprowadzono również różne ulepszenia w sys
 
     - Wybierz kolejno opcje **Retail i Commerce** \> **Ustawienia central** \> **Parametry** \> **Parametry rozwiązania Commerce**. Następnie na karcie **Księgowanie** na skróconej karcie **Aktualizacja zapasów** w polu **Poziom szczegółowości** zaznacz wartość **Podsumowanie**.
     - Wybierz kolejno opcje **Retail i Commerce** \> **Ustawienia central** \> **Parametry** \> **Parametry rozwiązania Commerce**. Następnie na karcie **Księgowanie** na skróconej karcie **Agregacja** w opcji **Transakcje na załączniku** ustaw wartość **Tak**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

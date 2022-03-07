@@ -2,11 +2,9 @@
 title: Szablony dostawców dla członków wymiaru statystycznego i dostawców miar
 description: Ten temat zawiera informacje o elementach członkowskich wymiaru statystycznego i szablonach dostawców miar statystycznych. Elementy członkowskie wymiaru statystycznego mogą służyć jako podstawa alokacji w zasadach, na przykład dystrybucji kosztów i alokacji kosztów. Mogą być również używane do raportowania zużycia kosztów niepieniężnych.
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMCostAccountingLedgerSourceEntryProvider, CAMStatisticalDimension, CAMAXStatisticalMeasureProviderTemplate, CAMAXStatisticalMeasureProviderConfiguration, CAMStatisticalDimensionMember, CAMDataConnectorStatisticalMeasure, CAMImportedStatisticalMeasure, CAMImportedStatisticalMeasureProviderConfiguration
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 79e8bf0714871ffd342bb6053153e6e4d0f5c668
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: c79451a5145a6e419ae0e332c67f06ca2df65996f959333a508dbf62dbf435ff
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969460"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767654"
 ---
 # <a name="provider-templates-for-statistical-dimension-members-and-measure-providers"></a>Szablony dostawców dla członków wymiaru statystycznego i dostawców miar
 
@@ -162,7 +160,7 @@ Po przetworzeniu danych źródłowych miary statystycznej następujące wpisy st
 
 **Wpisy statystyczne**
 
-| Obiekt kosztów |    | Data księgowania | Element członkowski wymiaru statystycznego |  opis        | Wartość |
+| Obiekt kosztów |  opis  | Data księgowania | Element członkowski wymiaru statystycznego |  opis        | Wartość |
 |-------------|----|-----------------|------------------------------|---------------------|-----------|
 | CC001       | Zasoby ludzkie | 31-01-2017      | Pracownicy pełnoetatowi                         | Pracownicy etatowi zatrudnieni w pełnym wymiarze czasu | 1.00      |
 | CC002       | FI | 31-01-2017      | Pracownicy pełnoetatowi                         | Pracownicy etatowi zatrudnieni w pełnym wymiarze czasu | 2.00      |
@@ -328,7 +326,7 @@ Przejdź do okna **Księga rachunku kosztów** \> **Wersja rzeczywista** \> **Za
 
 **Wpisy statystyczne**
 
-| Obiekt kosztów |    | Data księgowania | Element członkowski wymiaru statystycznego |      opis                   | Wartość  |
+| Obiekt kosztów | opis | Data księgowania | Element członkowski wymiaru statystycznego |      opis                   | Wartość  |
 |-------------|----|-----------------|------------------------------|-------------------------|------------|
 | CC001       | Zasoby ludzkie | 31-01-2017      | Elektryczność                  | Zużycie energii elektrycznej | 2,450.00   |
 | CC002       | FI | 31-01-2017      | Elektryczność                  | Zużycie energii elektrycznej | 4,100.00   |
@@ -336,12 +334,15 @@ Przejdź do okna **Księga rachunku kosztów** \> **Wersja rzeczywista** \> **Za
 
 Jeśli w regule dystrybucji kosztów jako podstawę alokacji przypisano wstępnie zdefiniowaną podstawę alokacji elementu członkowskiego wymiaru Elektryczność, koszt zostanie rozdzielony przy użyciu następującego współczynnika alokacji.
 
-| Obiekt kosztów |    | Wartość | Współczynnik alokacji          |
-|-------------|----|-----------|----------------------------|
-| CC001       | Zasoby ludzkie | 2,450.00  | (2450 ÷ 21 550) × kwota  |
-| CC002       | FI | 4,100.00  | (4100 ÷ 21 550) × kwota  |
-| CC003       | MM | 15,000.00 | (15 000 ÷ 21 550) × kwota |
+| Obiekt kosztów | opis   | Wartość | Współczynnik alokacji          |
+|-------------|---------------|-----------|----------------------------|
+| CC001       | Zasoby ludzkie            | 2,450.00  | (2450 ÷ 21 550) × kwota  |
+| CC002       | FI            | 4,100.00  | (4100 ÷ 21 550) × kwota  |
+| CC003       | MM            | 15,000.00 | (15 000 ÷ 21 550) × kwota |
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Podstawy alokacji](allocation-bases.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

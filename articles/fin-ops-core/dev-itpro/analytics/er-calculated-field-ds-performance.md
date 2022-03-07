@@ -2,11 +2,9 @@
 title: Zwiększ wydajność rozwiązań Raportowania elektronicznego, dodając sparametryzowane źródła danych PÓL OBLICZENIOWYCH
 description: W tym temacie wyjaśniono, w jaki sposób można usprawnić działanie rozwiązań raportowania elektronicznego (ER), dodając sparametryzowane źródła danych PÓL OBLICZENIOWYCH.
 author: NickSelin
-manager: AnnBe
 ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 940b696a06fb46bcd0557f059327cd4340448137
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 299570d6a94b0f9e7ee7cf490d4c1aeeb86d5716
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681287"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749520"
 ---
 # <a name="improve-the-performance-of-er-solutions-by-adding-parameterized-calculated-field-data-sources"></a>Zwiększ wydajność rozwiązań Raportowania elektronicznego, dodając sparametryzowane źródła danych PÓL OBLICZENIOWYCH
 
@@ -300,3 +298,6 @@ Dalsze informacje o dostawcach konfiguracji ER znajdują się w temacie [Tworzen
 - [Raportowanie elektroniczne — omówienie](general-electronic-reporting.md)
 - [Śledzenie wykonywania formatów raportowania elektronicznego w celu rozwiązywania problemów z wydajnością](trace-execution-er-troubleshoot-perf.md)
 - [Obsługuj sparametryzowane wywołania źródeł danych ER typu pola obliczeniowego](er-calculated-field-type.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

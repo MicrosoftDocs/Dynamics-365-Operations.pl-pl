@@ -2,24 +2,27 @@
 title: Konfigurowanie lokalizacji w magazynie z obsługą WMS
 description: W tym przewodniku pokazano, jak skonfigurować lokalizację dla nowego magazynu obsługującego WMS (magazynu, który używa zaawansowanych procesów zarządzania magazynem).
 author: perlynne
+manager: tfehr
 ms.date: 06/26/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventLocation, WHSLocationFormat, WHSLocationType, WHSLocationProfile, WHSParameters, WHSZoneGroup, WHSZone, WHSLocationBuild, WHSLocation, WHSPackSizeCategory, WHSLocationLimit, WHSInventFixedLocation, WMSLocationIdLookup
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b5273a388b30a41b75bd76c92fa4b9ff05c8f8d6
-ms.sourcegitcommit: db80edbe0c32e3a5f22aae6154781f3ff8a2ab2a
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 31f016c4c8b8b08139836336ac38196fbd1fba6f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "7599355"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435090"
 ---
 # <a name="configure-locations-in-a-wms-enabled-warehouse"></a>Konfigurowanie lokalizacji w magazynie z obsługą WMS
 
@@ -33,7 +36,7 @@ W tym przewodniku pokazano, jak skonfigurować lokalizację dla nowego magazynu 
 2. Kliknij przycisk **Nowy**.
 3. W polu **Magazyn** wpisz wartość.
 4. W polu **Nazwa** wpisz wartość.
-5. W polu **Witryna** wybierz lub wpisz istniejącą wartość witryny.
+5. W polu **Oddział** wpisz wartość.
 6. Rozwiń sekcję **Magazyn**.
 7. W opcji **Użyj procesów zarządzania magazynami** zaznacz wartość Tak. To ustawienie pozwala uruchomiać zaawansowane procesy magazynowe przy użyciu pracy magazynowej i urządzeń przenośnych.
 8. Zamknij stronę.
@@ -172,6 +175,3 @@ W tym przewodniku pokazano, jak skonfigurować lokalizację dla nowego magazynu 
 6. Na liście kliknij łącze w wybranym wierszu.
 7. Zamknij stronę.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

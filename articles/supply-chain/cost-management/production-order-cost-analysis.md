@@ -2,11 +2,9 @@
 title: Analiza kosztów zlecenia produkcyjnego
 description: Ten artykuł zawiera informacje o analizach kosztów, jakie można wykonywać na zakończonych i bieżących zleceniach produkcyjnych. Koszty szacowane i rzeczywiste można analizować na stronie Obliczanie ceny lub w raporcie Szacowanie kosztów i wycena. Można oglądać informacje o szacowanych i rzeczywistych kosztach (oraz ilościach) dla każdego składnika, operacji marszruty i kosztu pośredniego.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventCostTrans, ProdCalcTrans, ProdTableJour, ProdTableListPage, ProdSetupHistoricalCost
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0858e0e9ed0f09a47954274a05f6da1a2537c4a3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 12e9446c145752cd74fb71884fcabe9d4bd03c68
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967290"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187705"
 ---
 # <a name="production-order-cost-analysis"></a>Analiza kosztów zlecenia produkcyjnego
 
@@ -57,10 +55,12 @@ Oddzielne raporty zapewniają informację o każdym typie transakcji. Raporty te
 -   **Pozycje gotowe w toku** — Ten raport zawiera listę bieżących zleceń produkcyjnych oraz transakcji zgłoszenia wyrobów jako gotowe do określonego dnia transakcji.
 
 
-<a name="additional-resources"></a>Dodatkowe zasoby
---------
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Typowe źródła odchyleń produkcji](common-sources-of-production-variances.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

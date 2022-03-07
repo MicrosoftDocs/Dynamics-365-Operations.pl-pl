@@ -1,23 +1,27 @@
 ---
-# required metadata
 title: Zalecane wskazówki dotyczące profili księgowania
 description: W tym temacie opisano zalecane wskazówki dotyczące konfigurowania profilów księgowania.
 author: rachel-profitt
 ms.date: 12/03/2021
 ms.topic: article
-ms.prod: null
-ms.technology: null
-ms.search.form: 'LedgerSystemSetup, CustPosting, VendPosting, InventPosting, AssetPosting, ProjPosting, AssetLeasePostingAccounts, ProjCategory, ITMCostTypeTable, ProdGroup, WrkCtrTable, WrkCtrResourceGroup, MainAccount, SysDatabaseLogSetup, CustGroup, VendGroup, InventItemGroup'
+ms.prod: ''
+ms.technology: ''
+ms.search.form: LedgerSystemSetup, CustPosting, VendPosting, InventPosting, AssetPosting, ProjPosting, AssetLeasePostingAccounts, ProjCategory, ITMCostTypeTable, ProdGroup, WrkCtrTable, WrkCtrResourceGroup, MainAccount, SysDatabaseLogSetup, CustGroup, VendGroup, InventItemGroup
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: null
+ms.custom: ''
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: '2022-01-03'
+ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 097d1c6d1fbe64dadc69cdb275a0aef38922036d
+ms.sourcegitcommit: 5bfd6511d710deb539b4030eb0e9c48d25513595
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8014070"
 ---
-
 # <a name="recommended-practices-for-posting-profiles"></a>Zalecane wskazówki dotyczące profili księgowania
 
 Podczas konfigurowania profilów księgowania w systemie należy postępować zgodnie z kilkoma zalecanymi praktykami. W tym temacie opisano różne scenariusze i odpowiednie zalecane rozwiązania.

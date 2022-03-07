@@ -1,12 +1,10 @@
 ---
 title: Importowanie konfiguracji z usługi Lifecycle Services
-description: Ten temat wyjaśnia, jak użytkownik w roli Administrator systemu lub Deweloper raportowania elektronicznego może zaimportować nową wersję konfiguracji raportowania elektronicznego (ER) z usługi Microsoft Dynamics Lifecycle Services (LCS).
+description: W tym temacie opisano sposób importowania nowej wersji konfiguracji raportowania elektronicznego z usług Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
-manager: AnnBe
 ms.date: 09/14/2020
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionRepositoryTable, ERSolutionImport
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5c43cdce8d073f04a3158c8beb13a5376e669a4c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 674d0dc02b4a53e455a15a06fdb7f24ca3036ba3
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684458"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752371"
 ---
 # <a name="import-a-configuration-from-lifecycle-services"></a>Importowanie konfiguracji z usługi Lifecycle Services
 
@@ -103,3 +101,6 @@ W tym przykładzie wybierzesz żądaną wersję konfiguracji raportowania elektr
     W tym przykładzie zaznacz wersję tej konfiguracji mającą stan **Udostępniono**.
 
     Należy zauważyć, że teraz jest również dostępna udostępniona wersja 1 wybranej konfiguracji przykładowego modelu danych.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

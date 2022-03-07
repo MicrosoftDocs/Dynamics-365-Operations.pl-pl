@@ -2,11 +2,9 @@
 title: Kompresuj duże dokumenty generowane w ramach raportowania elektronicznego
 description: W tym temacie opisano sposób kompresowania dużych dokumentów generowanych przez format modułu raportowanie elektroniczne (ER).
 author: NickSelin
-manager: kfend
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: EROperationDesigner, ERFormatDestinationTable
 audience: Application User, IT Pro
@@ -17,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 30de55f9e55911290750c148621fd3d4531686c2
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: cd056798773bce492e429f8cca2ef39cb59bf739
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680862"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753823"
 ---
 # <a name="compress-large-documents-that-are-generated-in-electronic-reporting"></a>Kompresuj duże dokumenty generowane w ramach raportowania elektronicznego 
 
 [!include [banner](../includes/banner.md)]
 
-Możesz użyć [Struktury raportowania elektronicznego (ER)](general-electronic-reporting.md), aby skonfigurować rozwiązanie, które pobiera dane transakcyjne w celu wygenerowania dokumentu wychodzącego. Wygenerowany dokument może być dość duży. Po wygenerowaniu tego typu dokumentu używana jest pamięć [Application Object Server (AOS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-tools/access-instances#location-of-packages-source-code-and-other-aos-configurations). W pewnym momencie dokument musi zostać pobrany z aplikacji Microsoft Dynamics 365 Finance. Obecnie maksymalny rozmiar pojedynczego dokumentu wygenerowanego w module ER jest ograniczony do 2 gigabajtów (GB). Ponadto Finance [ograniczają](https://fix.lcs.dynamics.com/Issue/Details?bugId=489291) obecnie rozmiar pobranego pliku do 1 GB. Dlatego należy skonfigurować rozwiązanie ER, które zmniejsza prawdopodobieństwo, że te ograniczenia zostaną przekroczone i że zostanie wyświetlony wyjątek **Strumień był zbyt długi** lub **Przepełnienie lub niedomiar w operacji arytmetycznej**.
+Możesz użyć [Struktury raportowania elektronicznego (ER)](general-electronic-reporting.md), aby skonfigurować rozwiązanie, które pobiera dane transakcyjne w celu wygenerowania dokumentu wychodzącego. Wygenerowany dokument może być dość duży. Po wygenerowaniu tego typu dokumentu używana jest pamięć [Application Object Server (AOS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-tools/access-instances#location-of-packages-source-code-and-other-aos-configurations). W pewnym momencie dokument musi zostać pobrany z aplikacji Microsoft Dynamics 365 Finance. Obecnie maksymalny rozmiar pojedynczego dokumentu wygenerowanego w module ER jest ograniczony do 2 gigabajtów (GB). Ponadto Finance [ograniczają](https://fix.lcs.dynamics.com/Issue/Details?kb=4569432&bugId=453907&dbType=3) obecnie rozmiar pobranego pliku do 1 GB. Dlatego należy skonfigurować rozwiązanie ER, które zmniejsza prawdopodobieństwo, że te ograniczenia zostaną przekroczone i że zostanie wyświetlony wyjątek **Strumień był zbyt długi** lub **Przepełnienie lub niedomiar w operacji arytmetycznej**.
 
 Podczas konfigurowania rozwiązania można dostosować format ER w Projektancie operacji, dodając element główny typu **Folder**, aby skompresować zawartość generowaną przez dowolny z jego zagnieżdżonych elementów. Kompresja działa „w samą porę”, dzięki czemu maksymalne zużycie pamięci i rozmiar pobieranego pliku można zmniejszyć.
 
@@ -94,3 +92,6 @@ Przed wykonaniem procedur opisanych w tym temacie należy wykonać następujące
 [Miejsca docelowe raportowania elektronicznego (ER)](electronic-reporting-destinations.md)
 
 [Odłóż wykonanie elementów XML w formatach raportowania elektronicznego](er-defer-xml-element.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

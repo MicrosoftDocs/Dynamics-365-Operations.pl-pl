@@ -1,25 +1,29 @@
 ---
-# required metadata
 title: Omówienie podatku
 description: Ten temat zawiera omówienie systemu podatków. Objaśniono w nim elementy konfiguracji podatku od sprzedaży oraz ich współdziałanie.
 author: kailiang
 ms.date: 10/28/2019
 ms.topic: overview
-ms.prod: null
-ms.technology: null
-ms.search.form: 'TaxAuthority, TaxPeriod, TaxTable'
+ms.prod: ''
+ms.technology: ''
+ms.search.form: TaxAuthority, TaxPeriod, TaxTable
 audience: Application User
 ms.reviewer: roschlom
 ms.custom:
-  - '13111'
-  - intro-internal
+- "13111"
+- intro-internal
 ms.assetid: fe5fdc7f-9834-49fb-a611-1dd9c289619d
 ms.search.region: Global
 ms.author: kailiang
-ms.search.validFrom: '2016-02-28'
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 021692e0b599731db1d991405fcb4632080582bf
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983935"
 ---
-
 # <a name="sales-tax-overview"></a>Omówienie podatku
 
 [!include [banner](../includes/banner.md)]

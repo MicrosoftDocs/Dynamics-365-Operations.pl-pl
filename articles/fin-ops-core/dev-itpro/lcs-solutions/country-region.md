@@ -1,34 +1,32 @@
 ---
 title: Zasoby globalizacji
 description: Ten temat zawiera listę zasobów, które mogą pomóc Ci dowiedzieć się więcej na temat funkcjonalności i ofert dla danego kraju/regionu.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 10/02/2019
+author: kfend
+ms.date: 02/19/2021
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User
 ms.reviewer: sericks
 ms.custom: 104173
 ms.search.region: Global
-ms.author: sericks
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ee422b2bdc8b94c2a465d0e48f5da983a410674
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 822f00c21715b928027a7656f299a693686bf5dfc01f1f5a1738d5eb8d4bf124
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685060"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6747522"
 ---
 # <a name="globalization-resources"></a>Zasoby globalizacji
 
 ## <a name="local-and-regional-deployments"></a>Lokalne i regionalne wdrożenia
 Jeśli przepisy obowiązujące w danym kraju wymagają, aby dane były przechowywane w inny sposób lub obsługiwane inaczej niż wymagane w innych krajach/regionach, mogą istnieć wymagania kraju/regionu, które należy wziąć pod uwagę podczas wdrażania. Pamiętaj o następujących zasobach, które mogą być przydatne w Twojej sytuacji:
 
-[Aplikacje Finance and Operations obsługiwane przez firmę 21Vianet w Chinach](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
+[Aplikacje Finance and Operations obsługiwane przez firmę 21Vianet w Chinach](../deployment/china-local-deployment.md)
 
 ## <a name="localization-and-regulatory-features"></a>Funkcje związane z lokalizacją i wymagane przepisami prawa
 
@@ -55,7 +53,6 @@ Wymienione poniżej zasoby zawierają informacje o planowanych i nowych funkcjac
 
 #### <a name="regulatory-updates"></a>Aktualizacje wymagane przepisami prawa
 -   [Aktualizacje wymagane przepisami prawa](../../../finance/localizations/regulatory-updates.md)
--   [Portal lokalizacji](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC) (aktualizacja co tydzień)
 -   [Wyszukiwanie problemów w usługach Lifecycle Services (LCS)](../lifecycle-services/issue-search-lcs.md) (aktualizacja codziennie)
 
 #### <a name="communication-and-alerts"></a>Komunikacja i alerty
@@ -63,7 +60,7 @@ Wymienione poniżej zasoby zawierają informacje o planowanych i nowych funkcjac
 -   [Przesyłanie alertów dotyczących funkcji wymaganych lokalnymi przepisami specyficznych dla kraju/regionu](submit-localization-alerts.md)
 
 #### <a name="dynamics-365-release-plans"></a>Plany wydań Dynamics 365
-W dokumencie [Plany wydań Dynamics 365](https://docs.microsoft.com/business-applications-release-notes/) znajdują się opisy nowych i ulepszonych możliwości, które mają zostać wprowadzone w aplikacjach biznesowych oraz platformach aplikacji usługi Dynamics 365. 
+W dokumencie [Plany wydań Dynamics 365](/business-applications-release-notes/) znajdują się opisy nowych i ulepszonych możliwości, które mają zostać wprowadzone w aplikacjach biznesowych oraz platformach aplikacji usługi Dynamics 365. 
 
 #### <a name="finance-and-operations-apps-whats-new"></a>Co nowego w aplikacjach Finance and Operations
 Zawartość [strony głównej Nowości i zmiany w rozwiązaniu Finance and Operations](../../fin-ops/get-started/whats-new-changed.md) obejmuje listę funkcji wchodzących w skład poszczególnych wydań aplikacji Finance and Operations.
@@ -133,3 +130,6 @@ Aby uzyskać więcej informacji, zobacz [System Pomocy](../../fin-ops/get-starte
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

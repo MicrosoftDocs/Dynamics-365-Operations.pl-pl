@@ -2,11 +2,9 @@
 title: Wymagania systemowe
 description: W tym artykule opisano wymagania dotyczące rozwiązania Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
@@ -18,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f68b8f642ada1345e7097b5e7220e222b132b1dd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 44a1332a7c2cb30724198d61190cb6dc207ad2d0
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420100"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5795004"
 ---
 # <a name="system-requirements"></a>Wymagania systemowe
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 W tym artykule opisano wymagania dotyczące rozwiązania Microsoft Dynamics 365 Human Resources. Zawiera także opis krajów i regionów, w których jest dostępne rozwiązanie Human Resources oraz informacje na temat języków i lokalizacji danych aplikacji Human Resources.
 
@@ -64,3 +64,6 @@ Można pobrać plik PDF zawierający listy krajów, regionów i języków obsłu
 > Gdy interfejs użytkownika jest zlokalizowany w innych językach, wszystkie dane użytkownika są przechowywane w języku, w którym zostały wprowadzone. Możesz tworzyć wiadomości e-mail i szablony w innych językach, ale dane, takie jak informacje o harmonogramie, są w tej chwili dostępne tylko w języku angielskim.
 
 Jeśli jesteś programistą zainteresowanym tworzeniem dostosowań specyficznych dla kraju lub regionu lub stworzeniem rozwiązania dla kraju lub regionu, który nie jest obecnie obsługiwany przez firmę Microsoft, zobacz [Globalizacja](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

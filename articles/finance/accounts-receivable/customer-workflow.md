@@ -1,27 +1,24 @@
 ---
 title: Przepływ pracy odbiorcy
 description: Ten temat zawiera informacje dotyczące przepływu pracy odbiorcy. Możesz zmienić określone pola dla odbiorcy, a następnie wysłać te zmiany do zatwierdzenia, używając przepływu pracy, zanim zostaną one dodane do danych odbiorcy.
-author: mikefalkner
-manager: aolson
+author: abruer
 ms.date: 08/24/2018
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 5998a492e12cb93aeec029c6e56f811f8b90055a
-ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
+ms.openlocfilehash: c74f18997b390d70b5012199fab1adc9734994f4
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4459748"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7753833"
 ---
 # <a name="customer-workflow"></a>Przepływ pracy odbiorcy
 
@@ -61,3 +58,6 @@ Jeśli będzie dostępna co najmniej jedna proponowana zmiana, w okienku akcji z
     Status na stronie zmienia się na **Zmiany oczekują na zatwierdzenie**.
 
 Przepływ pracy jest zgodny ze standardowym procesem przepływu pracy w aplikacji. Osoba zatwierdzająca jest kierowana na stronę **Odbiorca**, gdzie może przejrzeć zmiany na stronie **Proponowane zmiany**, a następnie wybrać **Przepływ pracy \> Zatwierdź**, aby zatwierdzić przepływ pracy. Po wykonaniu wszystkich zatwierdzeń pola zostaną zaktualizowane za pomocą proponowanych przez Ciebie wartości.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

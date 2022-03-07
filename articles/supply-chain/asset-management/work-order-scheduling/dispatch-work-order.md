@@ -1,12 +1,10 @@
 ---
 title: Wysyłanie zlecenia pracy
 description: W tym temacie opisano wysyłanie zleceń pracy w module Zarządzanie składnikami majątku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetScheduledExecution
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6b4b05dfe351bb61dc47c9c2bfe30831ab7b0a16
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 87f67f4db143fabbfae926e30e7e5d97ac6af0f6fa5469218e4ab3605aa44dcb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016863"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6778731"
 ---
 # <a name="dispatch-work-order"></a>Wysyłanie zlecenia pracy
 
@@ -54,8 +52,11 @@ Istnieje możliwość zaplanowania jednego zadania zlecenia pracy lub zlecenia p
 
 Na poniższym rysunku pokazano przykładowe opcje wysyłki w oknie dialogowym **Zaplanuj zlecenie pracy**.
 
-![Rysunek 1](media/04-work-order-scheduling.png)
+![Rysunek 1.](media/04-work-order-scheduling.png)
 
 [!NOTE]
 Aby usunąć harmonogram w zleceniu pracy, wybierz zlecenie pracy w obszarze **Wszystkie zlecenia pracy** i kliknij pozycję **Usuń harmonogram** na karcie **Ogólne**. Pamiętaj, aby ręcznie zaktualizować stan cyklu życia zlecenia pracy w przypadku usuwania harmonogramu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

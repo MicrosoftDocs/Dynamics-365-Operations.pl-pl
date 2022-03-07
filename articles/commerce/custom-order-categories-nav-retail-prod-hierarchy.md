@@ -2,33 +2,30 @@
 title: Zmiana porządku sortowania dla podmiotów merchandisingowych
 description: W tym temacie objaśniono koncepcje związane z kontrolowaniem kolejności wyświetlania dla różnych jednostek związanych z merchandisingiem w Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
 ms.date: 08/05/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: Category, Retail product hierarchy, Navigation hierarchy
 audience: Application User, Merchandising manager, Catalog manager
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 268444
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b983cb5c63db171c76d34375a93a2b9086185d3a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 444f1ebd99cf8443181a51d93a48b6b4d1addf4d
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414948"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779549"
 ---
 # <a name="change-the-sort-order-for-merchandising-entities"></a>Zmiana porządku sortowania dla podmiotów merchandisingowych
 
 
-[!include [banner](includes/banner.md)]
+[!Include [banner](includes/banner.md)]
 
 Detaliści uważają znajdowanie produktów za podstawowe narzędzie do wykrywania produktów na potrzeby interakcji z klientami we wszystkich kanałach. Klienci mogą łatwo odkrywać produkty, korzystając z różnych funkcji. Na przykład mogą przeglądać kategorie, wyszukiwać i filtrować.
 
@@ -54,9 +51,9 @@ Aby można było wykonać tę procedurę, w środowisku muszą być zainstalowan
 
 Kolejność wyświetlania dla hierarchii nawigacji kanału zostanie odzwierciedlona w HQ dla hierarchii produktów handlu i zwolnionych produktów według kategorii.
 
-![Hierarchia produktów niestandardowo posortowana z wartościami ujemnymi](./media/RetailProductHierarchyCustomSortedWithNegativeValues.png)
+![Hierarchia produktów niestandardowo posortowana z wartościami ujemnymi.](./media/RetailProductHierarchyCustomSortedWithNegativeValues.png)
 
-![Zwolnione produkty według kategorii — sortowanie niestandardowe na podstawie hierarchii produktów](./media/ReleasedProductsByCategoryCustomSortedBasedOnRetailProductHierarchy.png)
+![Zwolnione produkty według kategorii — sortowanie niestandardowe na podstawie hierarchii produktów.](./media/ReleasedProductsByCategoryCustomSortedBasedOnRetailProductHierarchy.png)
 
 ## <a name="configure-the-display-order-for-categories-in-the-channel-navigation-hierarchy"></a>Skonfiguruj kolejność wyświetlania dla kategorii w hierarchii kategorii nawigacji
 
@@ -80,11 +77,14 @@ Aby można było wykonać tę procedurę, w środowisku muszą być zainstalowan
 
 Kolejność wyświetlania dla hierarchii nawigacji kanału jest odzwierciedlona w HQ, katalogu i kanałach.
 
-![Niestandardowa hierarchia nawigacji kanału](./media/ChannelNavCustomSorted.png)
+![Niestandardowa hierarchia nawigacji kanału.](./media/ChannelNavCustomSorted.png)
 
-![Hierarchia nawigacji katalogu sortowanie niestandardowa na podstawie hierarchii nawigacji kanału](./media/CatalogNavHierarchyCustomSortedBasedOnChannelNav.png)
+![Hierarchia nawigacji katalogu sortowanie niestandardowa na podstawie hierarchii nawigacji kanału.](./media/CatalogNavHierarchyCustomSortedBasedOnChannelNav.png)
 
-![Punkt sprzedaży z niestandardowymi kategoriami posortowanymi](./media/POSChannelCategoriesCustomSorted.png)
+![Punkt sprzedaży z niestandardowymi kategoriami posortowanymi.](./media/POSChannelCategoriesCustomSorted.png)
 
 > [!NOTE]
-> Domyślnie ta funkcja niestandardowego sortowania jest wyłączona. Aby dowiedzieć się, jak włączyć tę funkcję i inne funkcje, zobacz [Zarządzanie funkcjami](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).
+> Domyślnie ta funkcja niestandardowego sortowania jest wyłączona. Aby dowiedzieć się, jak włączyć tę funkcję i inne funkcje, zobacz [Zarządzanie funkcjami](/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

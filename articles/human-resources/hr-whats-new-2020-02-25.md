@@ -1,12 +1,10 @@
 ---
 title: Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (25 lutego 2020 r.)
 description: W tym artykule opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Human Resources w dniu 25 lutego 2020 roku.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
 ms.date: 02/25/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -15,17 +13,19 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-02-25
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1302686aeba52de484ad520efe292fafefc39ebf
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: dc79c464f74961fd431f1d42583e4dcd67c30fb9
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4526817"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5790411"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-25-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (25 lutego 2020 r.)
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -55,15 +55,15 @@ Przy tej zmianie zostanie wyświetlone ostrzeżenie podczas próby usunięcia st
 
 Ta zmiana powoduje usunięcie problemy, gdy do przeglądu wydajności zostaną dodane dodatkowi podpisani uczestnicy.
 
-## <a name="worker-position-assignment-not-created-in-common-data-service-when-selected-on-the-new-worker-dialog-413479"></a>Przypisanie stanowiska roboczego nie zostało utworzone w Common Data Service w przypadku wybrania opcji w oknie dialogowym Nowy pracownik (413479)
+## <a name="worker-position-assignment-not-created-in-dataverse-when-selected-on-the-new-worker-dialog-413479"></a>Przypisanie stanowiska roboczego nie zostało utworzone w Dataverse w przypadku wybrania opcji w oknie dialogowym Nowy pracownik (413479)
 
-Ta zmiana powoduje usunięcie błędu podczas zatrudniania nowego pracownika i przypisywania nowego zatrudnienia do stanowiska za pośrednictwem okna dialogowego **Nowy pracownik**. Przypisana pozycja jest teraz odzwierciedlona w programie Common Data Service.
+Ta zmiana powoduje usunięcie błędu podczas zatrudniania nowego pracownika i przypisywania nowego zatrudnienia do stanowiska za pośrednictwem okna dialogowego **Nowy pracownik**. Przypisana pozycja jest teraz odzwierciedlona w programie Dataverse.
 
 ## <a name="coming-soon"></a>Wkrótce
 
-### <a name="updated-common-data-service-solution"></a>Zaktualizowano rozwiązanie Common Data Service
+### <a name="updated-dataverse-solution"></a>Zaktualizowano rozwiązanie Dataverse
 
-Nowe rozwiązanie Common Data Service będzie dostępne wkrótce z następującymi zmianami:
+Nowe rozwiązanie Dataverse będzie dostępne wkrótce z następującymi zmianami:
 
 | Opis | Zmiana |
 | ----------------------------------------- | --- |
@@ -74,9 +74,9 @@ Nowe rozwiązanie Common Data Service będzie dostępne wkrótce z następujący
 | Nowe jednostki ustawień wynagrodzeń o zmiennej wysokości | **Typ planu wynagrodzeń o zmiennej wysokości**</br>**Plan wynagrodzeń o zmiennej wysokości**</br>**Reguły wypłat**</br>**Poziom planu wynagrodzeń o zmiennej wysokości** |
 | Nowa jednostka **Zatrudnienie kalendarza pracownika** | Dodano **jednostkę kalendarza pracy** |
 | Nowa jednostka **Szczegół stanowiska listy płac** | Dodano **Szczegół stanowiska listy płac** |
-| Nowa jednostka **Tytuł** | Dodano **Tytuł**. Nowa jednostka **Tytułu** będzie uwzględniana w procesie synchronizacji między Human Resources a Common Data Service. Nie będzie początkowo przywoływany z **Stanowiska pracy** lub jednostek **Zadań**. |
+| Nowa jednostka **Tytuł** | Dodano **Tytuł**. Nowa jednostka **Tytułu** będzie uwzględniana w procesie synchronizacji między Human Resources a Dataverse. Nie będzie początkowo przywoływany z **Stanowiska pracy** lub jednostek **Zadań**. |
 
-W czasie następnych kilku tygodni zmiany tych jednostek będą dostępne we wszystkich środowiskach. Aby ręcznie zainstalować najnowsze rozwiązanie Common Data Service dla modułu Human Resources:
+W czasie następnych kilku tygodni zmiany tych jednostek będą dostępne we wszystkich środowiskach. Aby ręcznie zainstalować najnowsze rozwiązanie Dataverse dla modułu Human Resources:
 
 1.  Przejdź do [Centrum administracyjnego usługi Power Platform](https://admin.powerplatform.microsoft.com).
 
@@ -106,3 +106,5 @@ Następujące funkcje w wersji zapoznawczej zostały udostępnione 3 lutego 2020
 [Omówienie rozwiązania Dynamics 365 Human Resources 2019, wydanie 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Aktualizowanie procesu](hr-admin-setup-update-process.md)</br>
 [Zarządzanie funkcjami](hr-admin-manage-features.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

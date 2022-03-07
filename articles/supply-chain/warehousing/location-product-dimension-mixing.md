@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 031b92f827979c01dbf0208ba21ae827fb13920b
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.dyn365.ops.version: Release 10.0.7
+ms.openlocfilehash: 28f59052a74b6d8b263c7a8a8b6061f2c4b34c89
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103495"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831297"
 ---
 # <a name="location-product-dimension-mixing"></a>Mieszanie wymiarów produktów w lokalizacji
 
@@ -26,9 +26,12 @@ ms.locfileid: "8103495"
 
 Mieszanie wymiarów produktów w lokalizacji to funkcja profilu lokalizacji pomagająca poprawić zarządzanie przestrzenią, gdy używane są różne warianty produktu lub produkty mają różne wymiary – np. w branży modowej. Dzięki temu można określić, czy konfiguracje, kolory, style i rozmiary mogą być mieszane dla określonego profilu lokalizacji, czy dozwolony jest np. tylko jeden z tych wymiarów lub jakieś połączenie możliwości, które można umieścić w tej samej lokalizacji.
 
-## <a name="turn-the-location-product-dimension-mixing-feature-on-or-off"></a>Włącz lub wyłącz funkcję mieszania wymiarów produktu lokalizacji
+## <a name="turn-on-the-location-product-dimension-mixing-feature"></a>Włącz funkcję mieszania różnych wymiarów produktów w lokalizacji
 
-Aby korzystać z funkcji opisanej w tym temacie, w systemie musi być włączona funkcja *Lokalizacja mieszania wymiarów produktu*. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.25, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Lokalizacja mieszania wymiarów produktu* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Aby móc używać funkcji mieszania wymiarów produktów w lokalizacji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z obszaru roboczego [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. Ta funkcja jest wymieniona w następujący sposób:
+
+- **Moduł:** *Zarządzanie magazynem*
+- **Nazwa funkcji:** *Mieszanie różnych wymiarów produktów w lokalizacji*
 
 ## <a name="setup"></a>Konfiguracja
 

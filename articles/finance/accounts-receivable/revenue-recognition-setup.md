@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 73acfc92777b8fe07b89bea782e13213d38000cd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ba9f58bc21bed25a5e86cb0c9133507a83371d83
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459707"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5245671"
 ---
 # <a name="revenue-recognition-setup"></a>Konfiguracja rozpoznawania przychodów
 [!include [banner](../includes/banner.md)]
@@ -30,6 +29,8 @@ Dodano nowy moduł **Rozpoznawanie przychodów** obejmujący elementy menu dla w
 
 > [!NOTE]
 > Funkcji Rozpoznawanie przychodów nie można włączyć za pomocą modułu Zarządzanie funkcjami. Obecnie można ją włączyć tylko przy użyciu kluczy konfiguracji.
+
+> Funkcje rozpoznawania przychodów, w tym funkcja pakietu, nie są obsługiwane w kanałach Commerce (handel elektroniczny, punkt sprzedaży, biuro obsługi). Towary skonfigurowane pod kątem rozpoznawania przychodu nie powinny być dodawane do zamówień ani transakcji tworzonych w kanałach Commerce.
 
 Moduł **Rozpoznawanie przychodów** ma następujące opcje konfiguracji:
 
@@ -192,3 +193,6 @@ Rozpoznawanie przychodów może być również używane dla zamówień sprzedaż
 
 - **Odroczony przychód faktury** (pod **Kontami przychodów**) — umożliwia wprowadzenie konta głównego dla ceny przychodu, która jest księgowana jako przychód odroczony (zamiast przychód). Cena przychodu jest odroczona, jeśli wiersz zamówienia sprzedaży ma harmonogram przychodów.
 - **Odroczony koszt** (pod **Kontami kosztów**) — umożliwia wprowadzenie konta głównego dla kwoty kosztu własnego sprzedaży, księgowanej do odroczonego kosztu własnego sprzedaży, jeśli przychód jest również odroczony.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

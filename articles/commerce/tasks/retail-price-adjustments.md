@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7443f69473c0aad478d47f80f284b1156bad9c24
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: dbd2f818930424313e1d76aea4a257efa7c7b3be
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4962992"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5232792"
 ---
 # <a name="retail-price-adjustments"></a>Korekty ceny detalicznej
 
@@ -52,3 +52,6 @@ Ta procedura prowadzi przez proces tworzenia korekty cen sprzedaży. Korekta cen
 14. Zamknij stronę.
 15. Odśwież stronę.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

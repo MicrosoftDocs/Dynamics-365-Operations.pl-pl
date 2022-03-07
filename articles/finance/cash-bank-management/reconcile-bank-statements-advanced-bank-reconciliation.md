@@ -2,11 +2,9 @@
 title: Uzgadnianie wyciągów bankowych przy użyciu funkcji Zaawansowane uzgadnianie konta bankowego
 description: Funkcja Zaawansowane uzgadnianie konta bankowego umożliwia importowanie elektronicznych wyciągów bankowych, a następnie ich automatyczne uzgadnianie z transakcjami bankowymi w Microsoft Dynamics 365 Finance. W tym temacie opisano proces uzgadniania.
 author: saraschi2
-manager: AnnBe
 ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankReconciliationWorksheet
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 92c04a47b134584280736f4d3d2fa401d2a2a9b7
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: fbfa999d2aaa4b6dad711bb57916a68fb37c57d9add09092783ad3a8d6450c1f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969435"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6714455"
 ---
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Uzgadnianie wyciągów bankowych przy użyciu funkcji Zaawansowane uzgadnianie konta bankowego
 
@@ -30,8 +28,7 @@ ms.locfileid: "4969435"
 
 Funkcja Zaawansowane uzgadnianie konta bankowego umożliwia importowanie elektronicznych wyciągów bankowych, a następnie ich automatyczne uzgadnianie z transakcjami bankowymi w programie Dynamics 365 Finance. W tym temacie opisano proces uzgadniania.  
 
-<a name="import-an-electronic-bank-statement"></a>Importowanie elektronicznego wyciągu bankowego
------------------------------------
+## <a name="import-an-electronic-bank-statement"></a>Importowanie elektronicznego wyciągu bankowego
 
 Wyciągi bankowe importuje się przy użyciu operacji **Importowanie wyciągu** dostępnej na karcie **Wyciągi bankowe**. Na wyciągu bankowym konto bankowe jest identyfikowane za pomocą kombinacji wartości ustawianych w szczegółach konta bankowego. Wartości te obejmują nazwę banku, numer konta bankowego, numer rozliczeniowy, kod SWIFT (Stowarzyszenie na rzecz Światowej Międzybankowej Telekomunikacji Finansowej) i międzynarodowy numer konta bankowego (IBAN). 
 
@@ -95,3 +92,6 @@ Transakcje na wyciągu bankowym, które w arkuszu uzgadniania zostały oznaczone
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

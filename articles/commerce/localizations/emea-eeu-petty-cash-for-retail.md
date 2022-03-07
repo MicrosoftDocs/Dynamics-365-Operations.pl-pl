@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 91a3e35c973405f3b0eefb42d83847f5dd3fc60c
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 8807fbf3be7d5a69fb66efed0635c8813674da51
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017232"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5225716"
 ---
 # <a name="petty-cash-management-for-commerce-for-eastern-europe"></a>Zarządzanie gotówką podręczną w aplikacji Commerce dla Europy Wschodniej
 
@@ -92,3 +92,6 @@ Poniższa procedura umożliwia konfigurowanie metody płatności dla płatności
 
 > [!NOTE]
 > Konta przeciwstawne należy skonfigurować dla obu metod płatności używanych w sklepie — wpłacania gotówki oraz usunięcia lub przyjęcia środków płatniczych. Spowoduje to utworzenie zbilansowanych zapisów księgi głównej dla transakcji usunięcia lub przyjęcia środków płatniczych.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Konfigurowanie integracji fiskalnej dla kanałów Commerce
 description: W tym temacie zawarto wskazówki dotyczące konfigurowania funkcji integracji fiskalnej dla kanałów Commerce.
 author: josaw
-manager: annbe
 ms.date: 02/01/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 889340c13d150ce8e3ad49a08b3d7f0c25a4b77a
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: fb48eb93d8cf4f26174441de65c0b105c5e8774c2030e844ec7bd1352bff64b0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017900"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719903"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>Konfigurowanie integracji fiskalnej dla kanałów Commerce
 
@@ -88,7 +86,7 @@ Przed użyciem funkcji integracji fiskalnej należy skonfigurować następujące
 
         **Przykłady**
 
-        |   | Format | Przykład |
+        | Parametr  | Format | Przykład |
         |---|--------|---------|
         | **Ustawienia stawek podatku VAT** | wartość : VATrate | 1 : 2000, 2 : 1800 |
         | **Mapowanie kodów VAT** | VATcode : wartość | vat20 : 1, vat18 : 2 |
@@ -225,3 +223,6 @@ Aby włączyć ręczne wykonywanie odroczonej rejestracji fiskalnej, należy dod
     1. Wybierz układ do zaktualizowania.
     2. Dodaj nowy przycisk i ustaw właściwość przycisku **Zakończ proces rejestracji fiskalnej**.
     3. Na stronie **Harmonogram dystrybucji** uruchom zadanie **1090**, aby przenieść zmiany do bazy danych kanału.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

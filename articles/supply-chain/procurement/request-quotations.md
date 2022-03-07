@@ -1,28 +1,28 @@
 ---
 title: Omówienie zapytań ofertowych (ZO)
 description: W tym temacie opisano zapytania ofertowe (ZO). Organizacje wystawiają zapytania ofertowe (ZO), kiedy chcą uzyskać od kilku dostawców konkurencyjne oferty na produkty i usługi, które muszą kupić.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 10/05/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchRFQCaseTable, PurchRFQCaseTableListPage, PurchRFQCompare, PurchRFQReplyTable, PurchRFQVendReplyTableListPage, BOMExpandPurchRFQ, PurchRFQReplyFollowupItem, PurchRFQCaseVend, PurchRFQReplyFollowup, PurchRFQCaseAmendmentInfo, PurchRFQReplyFollowupCase, PurchRFQReplyStatus, PurchRFQCaseReplyFields, PurchRFQAddQuestionnaire, PurchRFQAmendmentWizard, PurchRFQReplyTableStatus, PurchRFQReplyTableListPage, PurchRFQCancelWizard
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 2154
+ms.custom:
+- "2154"
+- intro-internal
 ms.assetid: 3936996e-d943-46ca-8385-84c042990f1d
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b3338e1837496605ce94a54eb57a32b1b83145b
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 7338897feb2c3a28350d366f26eecc56f8eeb3fb
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016938"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983399"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Omówienie zapytań ofertowych (ZO)
 
@@ -39,13 +39,13 @@ Proces ZO składa się z następujących zadań:
 
 Na poniższej ilustracji przedstawiono przegląd procesu ZO.
 
-[![Proces RFQ](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)
+[![Proces RFQ.](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)
 
 Sprawy ZO można tworzyć z zamówień planowanych lub zapotrzebowań na zakup albo wprowadzać je ręcznie. Sprawa ZO to podstawowy dokument używany do wysyłania ZO do każdego dostawcy.
 
 Po przygotowaniu sprawy ZO i dodaniu dostawców wybierz opcję **Wyślij** (**Wysyłanie i publikowanie** w przypadku podmiotów z sektora publicznego) w sprawie ZO. Dla każdego dostawcy, do którego wysłano ZO generowany jest arkusz ZO. Można skonfigurować opcje drukowania dla akcji wysyłania, aby wydrukować raport dla każdego dostawcy w celu archiwizowania, lub wysłać raporty na adresy e-mail dostawców. Ponadto arkusz ZO dla każdego dostawcy może służyć do generowania raportu, który można wysłać lub później ponownie wysłać do dostawcy. Można również skonfigurować akcję wysłania, aby wygenerować arkusz odpowiedzi, który mogą wypełniać dostawcy.
 
-W tym temacie opisano proces obsługi ZO, gdy nie jest używana współpraca z dostawcą. Jeśli system jest skonfigurowany do współpracy z dostawcami, dostawcy mogą wprowadzić oferty bezpośrednio w rozwiązaniu Supply Chain Management. Aby uzyskać więcej informacji, zobacz [Współpraca z odbiorcami przy użyciu modułu Współpraca z dostawcami](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) i [Współpraca z dostawcami zewnętrznymi przy użyciu modułu Współpraca z dostawcami](vendor-collaboration-work-external-vendors.md).
+W tym temacie opisano proces obsługi ZO, gdy nie jest używana współpraca z dostawcą. Jeśli system jest skonfigurowany do współpracy z dostawcami, dostawcy mogą wprowadzić oferty bezpośrednio w rozwiązaniu Supply Chain Management. Aby uzyskać więcej informacji, zobacz [Współpraca z odbiorcami przy użyciu modułu Współpraca z dostawcami](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) i [Współpraca z dostawcami zewnętrznymi przy użyciu modułu Współpraca z dostawcami](vendor-collaboration-work-external-vendors.md).
 
 Jeżeli po wysłaniu wymagana jest zmiana ZO, po zakończeniu można ponownie wysłać ZO do dostawców, korzystając z dwóch akcji zmian: Utwórz i Finalizuj.
 
@@ -80,19 +80,19 @@ Na stronie **Parametry modułu Zaopatrzenie i sourcing** można wybrać szablon 
 - %Przyczyna zwrotu oferty%
 - %Przyczyna sporządzenia poprawki%
 - %Poprawka przygotowana przez%
-- %Firma%
+- %Company%
 - %RFQ case name%
 - %Expiry Date Time%
 - %Date%
 
-Tokeny %Przyczyna zwrotu oferty% i %Przyczyna sporządzenia poprawki% zastępuje tekst, który pracownik działu zakupów może wpisać po zakończeniu poprawki w **kreatorze poprawek**. Wartości tokenów %poprawki przygotowane przez% i %firma% są automatycznie pobierane z ZO. Token %Date% jest zastępowany przez bieżącą datę.
+Tokeny %Przyczyna zwrotu oferty% i %Przyczyna sporządzenia poprawki% zastępuje tekst, który pracownik działu zakupów może wpisać po zakończeniu poprawki w **kreatorze poprawek**. Wartości tokenów %poprawki przygotowane przez% i %Company% są automatycznie pobierane z ZO. Token %Date% jest zastępowany przez bieżącą datę.
 
 Jeśli chcesz anulować ZO po jego wysłaniu, można to zrobić z poziomu sprawy ZO. W przypadku anulowania należy użyć szablonu wiadomości e-mail, aby wysłać powiadomienie o anulowaniu do osób kontaktowych dostawcy. Szablon należy wybrać na stronie **Parametry modułu Zaopatrzenie i sourcing**. Po utworzeniu szablon może zawierać następujące tokeny wymiany:
 
 - %Reason for cancellation%
 - %RFQ case%
 - %RFQ cancelled by%
-- %Firma%
+- %Company%
 - %RFQ case name%
 - %Date%
 
@@ -167,7 +167,7 @@ Jeżeli skonfigurowano proces zmiany tak, aby był bardziej restrykcyjny, przed 
 
 W przypadku skonfigurowania mniej restrykcyjnej metody wprowadzania zmian nie trzeba wybierać opcji **Utwórz** przed zmodyfikowaniem pól w sprawie ZO, które zostało już wysłane. Trzeba jednak ręczne wpisać informację o zmianie na ZO i wysłać tę sprawę ponownie. Należy pamiętać, że tej metody można użyć tylko wtedy, gdy żadne odpowiedzi (oferty) nie były edytowane. Jeżeli wprowadzono odpowiedź i jest ona w stanie **Odebrana** przycisk **Wyślij** jest niedostępny. W takim przypadku należy wybrać opcję **Utwórz**, a następnie **Finalizuj**, podobnie jak w bardziej restrykcyjnym procesie. Odpowiedź jest następnie resetowana, aby uwzględniała zmiany w sprawie ZO.
 
-Jeżeli dostawcy korzystają z interfejsu portalu współpracy dostawcami do wprowadzania ofert, należy zawsze użyć procesu zmiany do powiadomienia dostawców o zmianach w sprawie ZO. Ten proces pozwala zapobiec sytuacji, w której dostawcy składają oferty dotyczące nieaktualnej sprawy ZO, gdy ich oferta jest w toku. Aby uzyskać więcej informacji o portalu współpracy z dostawcami, zobacz [Współpraca z dostawcami zewnętrznymi przy użyciu modułu Współpraca z dostawcami](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
+Jeżeli dostawcy korzystają z interfejsu portalu współpracy dostawcami do wprowadzania ofert, należy zawsze użyć procesu zmiany do powiadomienia dostawców o zmianach w sprawie ZO. Ten proces pozwala zapobiec sytuacji, w której dostawcy składają oferty dotyczące nieaktualnej sprawy ZO, gdy ich oferta jest w toku. Aby uzyskać więcej informacji o portalu współpracy z dostawcami, zobacz [Współpraca z dostawcami zewnętrznymi przy użyciu modułu Współpraca z dostawcami](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
 
 Jeżeli chcesz zastąpić dodatkowych dostawców do oferty i nie wprowadzono zmian w sprawie RFQ case, możesz użyć przycisku **Wyślij**. Dodani dostawcy będą widoczni na stronie **Wyślij** i otrzymają zaproszenie w wiadomości e-mail.
 
@@ -246,3 +246,6 @@ W przykładzie poniżej widać najwyższy i najniższy stan w sprawie ZO, gdzie 
 | Zaakceptowanie jednej z ofert. (lub co najmniej jeden wiersz) |                          Odebrane                           |                           Zaakceptowana                           |                    Odebrane                    |                    Zaakceptowana                     |                   Odebrane                   |                   Zaakceptowana                    |
 |           Odrzucenie wszystkich innych ofert.           |                          Odrzucona                           |                           Zaakceptowana                           |                    Odrzucona                    |                    Zaakceptowana                     |                   Odrzucona                   |                   Zaakceptowany                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

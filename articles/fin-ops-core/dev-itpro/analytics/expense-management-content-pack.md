@@ -2,11 +2,9 @@
 title: Zarządzanie wydatkami — zawartość usługi Power BI
 description: W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Power BI Zarządzanie wydatkami.
 author: panolte
-manager: AnnBe
 ms.date: 03/18/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: TrvExpenseWorkspace, ExpenseWorkspace
 audience: Application User, IT Pro
@@ -16,12 +14,12 @@ ms.search.industry: Manufacturing
 ms.author: kfend
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: d580502a08c2c176a000616abc3513cc45bd58a6
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 178a65c44abd0c9c068d4da1f2684a60062da595247560de4cb81d97ab7b6521
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016459"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769905"
 ---
 # <a name="expense-management-power-bi-content"></a>Zarządzanie wydatkami — zawartość usługi Power BI
 
@@ -43,7 +41,7 @@ Dwa pakiety zawartości Power BI są dostępne do użytku z modułem Zarządzani
 Wszystkie kwoty są wyświetlane w walucie firmy. Wyświetlane są dane dla wszystkich firm, ale w razie potrzeby można dodać filtr firmy. 
 
 ## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
-Zawartość Expense Admin Dashboard.pbix i Expense Personal Dashboard.pbix Power BI można znaleźć w bibliotece zasobów współużytkowanych Microsoft Dynamics Lifecycle Services (LCS). Aby dowiedzieć się więcej o pobieraniu pakietu zawartości i jego implementowaniu w swojej organizacji, zobacz [Pakiety zawartości dla usługi Power BI w usłudze LCS od Microsoft i partnerów](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
+Zawartość Expense Admin Dashboard.pbix i Expense Personal Dashboard.pbix Power BI można znaleźć w bibliotece zasobów współużytkowanych Microsoft Dynamics Lifecycle Services (LCS). Aby dowiedzieć się więcej o pobieraniu pakietu zawartości i jego implementowaniu w swojej organizacji, zobacz [Pakiety zawartości dla usługi Power BI w usłudze LCS od Microsoft i partnerów](/archive/blogs/dynamicsaxbi/power-bi-content-from-microsoft-and-your-partners).
 Zawartość znajduje się w obszarze roboczym Zarządzanie wydatkami jako zawartość osadzona Power Bi. Właściciel wydatków może wyświetlić własne wydatki, ale tylko pracownicy ds. rozrachunków z dostawcami mają dostep do treści administratora i mogą oglądać wszystkie wydatki użytkownika.
 
 ## <a name="refreshing-the-power-bi-content"></a>Odświeżanie zawartości Power BI
@@ -93,3 +91,6 @@ Pakiet zawartości zawiera zestaw stron raportów. Każda strona zawiera zestaw 
 | Statystyki pracownika etatowego | Raporty wydatków według typu kosztu            |
 |                     | Wydatki osobiste                       |
 |                     | Raporty z wydatków według grup statystycznych     |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

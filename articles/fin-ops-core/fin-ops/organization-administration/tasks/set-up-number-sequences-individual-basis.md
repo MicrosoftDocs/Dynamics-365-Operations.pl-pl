@@ -2,11 +2,9 @@
 title: Konfigurowanie indywidualnych sekwencji numerów
 description: Ten temat wyjaśnia, jak konfiguruje się indywidualne sekwencje numerów.
 author: sericks007
-manager: AnnBe
 ms.date: 08/16/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: NumberSequenceTableListPage, NumberSequenceDetails
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 260fae39d9a98feb7bfa82188c5b05de9a533136
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 74422a9f2b737053288d21ba7a578c854cab1335
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796637"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5747328"
 ---
 # <a name="set-up-number-sequences-on-an-individual-basis"></a>Konfigurowanie indywidualnych sekwencji numerów
 
@@ -40,3 +38,6 @@ Ten temat wyjaśnia, jak konfiguruje się indywidualne sekwencje numerów. Sekwe
 8. Rozwiń sekcję **Ogólne**. Na skróconej karcie Ogólne określ, czy sekwencja identyfikatorów jest wprowadzana ręcznie oraz ciągła czy nieciągła. Poza tym umożliwia wprowadzenie największych i najmniejszych numerów, które mogą być używane w sekwencji. Nie zaleca się zmieniać nieciągłej sekwencji numerów na ciągłą sekwencji numerów. Nie będzie to naprawdę ciągła sekwencja numerów. Zmiana ta może też spowodować zduplikowanie naruszeń kluczy w bazie danych. Ponadto ciągłe sekwencje numerów mają największy wpływ na wydajność.   
 9. Kliknij przycisk **Zapisz**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

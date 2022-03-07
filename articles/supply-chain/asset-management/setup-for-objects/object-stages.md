@@ -1,12 +1,10 @@
 ---
 title: Stany cyklu życia składnika majątku
 description: W tym temacie wyjaśniono stany cyklu życia składników majątku i modele cyklu życia w zarządzaniu składnikami majątku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetLifecycleModelStateNext, EntAssetObjectLifecycleState, EntAssetLifecycleStateUpdate, EntAssetObjectLifecycleModel
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dffedfafd9d75320accf0e27f072bab6fd51f135
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 55139c6458e569b15518f0f11f1c12c3a26cae2f26c6a2046a7ebdc1277cb144
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016559"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6722470"
 ---
 # <a name="asset-lifecycle-states"></a>Stany cyklu życia składnika majątku
 
@@ -63,9 +61,12 @@ Po utworzeniu stanów cyklu życia wymaganego składnika majątku można skonfig
 
 5. Na skróconej karcie **Stany cyklu życia** wybierz stany cyklu życia składnika majątku, które powinny być uwzględnione w modelu cyklu życia składnika majątku:
 
-    - Aby użyć stanu cyklu życia dla modelu, zaznacz go w sekcji **Pozostałe stany cyklu życia**, a następnie wybierz przycisk strzałki w prawo ![Strzałka w prawo](media/15-setup-for-objects.png), aby przenieść go do sekcji **Wybrane stany cyklu życia**.
-    - Aby użyć wszystkich dostępnych stanów cyklu życia dla modelu, wybierz przycisk **Wszystkie dostępne stany cyklu życia** ![Wszystkie dostępne stany cyklu życia](media/20-setup-for-objects.png). Wszystkie stany cyklu życia są przenoszone do sekcji **Wybrane cykle życia**.
-    - Aby usunąć stan cyklu życia z modelu, wybierz go w sekcji **wybrane stany cyklu życia**, a następnie wybierz przycisk strzałki lewo ![Strzałka w lewo](media/16-setup-for-objects.png), aby przenieść go do sekcji **Pozostałe stany cyklu życia**.
+    - Aby uwzględnić stanu cyklu życia w modelu, zaznacz go w sekcji **Pozostałe stany cyklu życia**, a następnie wybierz przycisk strzałki w prawo ![Strzałka w prawo.](media/15-setup-for-objects.png) , aby przenieść ją do wybranej sekcji **Stany cyklu życia**.
+    - Aby użyć wszystkich dostępnych stanów cyklu życia dla modelu, wybierz przycisk **Wszystkie dostępne stany cyklu życia** ![Wszystkie dostępne stany cyklu życia.](media/20-setup-for-objects.png). Wszystkie stany cyklu życia są przenoszone do sekcji **Wybrane cykle życia**.
+    - Aby usunąć stanu cyklu życia z modelu, zaznacz go w sekcji **wybrane stany cyklu życia**, a następnie wybierz przycisk strzałki w lewo ![Strzałka w lewo.](media/16-setup-for-objects.png) , aby przenieść ją do wybranej sekcji **Pozostałe stany cyklu życia**.
 
 6. Wybierz pozycję **Aktualizacje stanu cyklu życia**, aby określić stany cyklu życia składnika majątku, które mogą być wybranym stanem cyklu życia.
 7. Możesz użyć skróconej karty **Stan składnika majątku**, jeśli obsługujesz składniki majątku otrzymywane do naprawy. W sekcji **Przychodzące/wychodzące** można wybrać stany cyklu życia składnika majątku, aby wskazać przepływ pracy dla składnika majątku otrzymywanego w celu naprawy. Jeśli użyczasz składników majątku klientom lub oddziałom, w sekcji **Użyczenie** wybierz stany cyklu życia użyczonych składników majątku.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

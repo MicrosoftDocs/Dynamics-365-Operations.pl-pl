@@ -2,9 +2,11 @@
 title: Grupowanie wierszy pobrania
 description: Ten temat zawiera omówienie grupowania wierszy pobrania.
 author: Mirzaab
+manager: tfehr
 ms.date: 12/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFMenuItem,WHSWorkTemplateTable
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-12-31
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 076a4dfdc49525eef616d1008073371be1dd4a248cd6f16d395b544ae70e7531
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7ab8cdd7cad5420aca0de53e59220da9e230d411
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757501"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5234640"
 ---
 # <a name="pick-line-grouping"></a>Grupowanie wierszy pobrania
 

@@ -2,26 +2,23 @@
 title: Sprawozdania podatkowe dla Polski
 description: Ten temat zawiera informacje o sprawozdawczości podatku VAT w Polsce oraz podaje informacje, które są wymagane przez prawo w rejestrach podatku VAT w Polsce.
 author: mrolecki
-manager: AnnBe
 ms.date: 12/06/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 274063
 ms.search.region: Poland
 ms.author: roschlom
 ms.dyn365.ops.version: AX 7.0.1
 ms.search.validFrom: 2016-05-31
-ms.openlocfilehash: b2fa38afc95064cea29e408747bf0d22ec548a0e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ed6005f4ee59c3c1e1f3854f69aa6a45e54466f80d727cd3426479a1bad7dc64
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408389"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720488"
 ---
 # <a name="sales-tax-reports-for-poland"></a>Sprawozdania podatkowe dla Polski
 [!include [banner](../includes/banner.md)]
@@ -432,3 +429,6 @@ Po skonfigurowaniu kosztów niepodlegających odliczeniu na stronie **Arkusze CI
 - **Drukowanie raportu**
 
 Okienko pola informacji zawiera sumy w arkuszu oraz łączną kwotę zaległości.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

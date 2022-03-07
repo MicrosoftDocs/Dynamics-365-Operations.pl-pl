@@ -1,12 +1,10 @@
 ---
 title: Instalowanie składników majątku w lokalizacjach czynności konserwacyjnych
 description: W tym temacie opisano sposób instalowania składników majątku w lokalizacjach czynności konserwacyjnych modułu Zarządzanie składnikami majątku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetFunctionalLocationObjectChange, EntAssetFunctionalLocationObjectInstall, EntAssetFunctionalLocationObject
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5ea67e2392d8e25a2a5f3cb7e1ff5032322f2c48
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: bc278564b02335b44a0b35d6a3a981125e6f456b08893be2b5886f0a55396d52
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5022037"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775754"
 ---
 # <a name="install-assets-on-functional-locations"></a>Instalowanie składników majątku w lokalizacjach czynności konserwacyjnych
 
@@ -82,3 +80,6 @@ Gdy dane konfiguracyjne są dostępne, możesz przystąpić do tworzenia składn
 1. Na stronie **Wszystkie lokalizacje czynności konserwacyjnych** upewnij się, że lokalizacja czynności konserwacyjnych, w której ma zostać automatycznie utworzony składnik majątku, korzysta z typu lokalizacji czynności konserwacyjnych utworzonego w tym celu.
 2. Wybierz lokalizację czynności konserwacyjnych na liście.
 3. Wybierz pozycję **Aktualizuj stan lokalizacji czynności konserwacyjnych**, a następnie wybierz stan cyklu życia utworzony w tym celu. Jeden składnik majątku jest teraz automatycznie instalowany w lokalizacji czynności konserwacyjnych. Tan składnik majątku ma tę samą nazwę co lokalizacja czynności konserwacyjnych.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,27 +2,27 @@
 title: Omówienie konfiguracji magazynu
 description: W tym artykule wyjaśniono sposób konfigurowania magazynu. Artykuł zawiera informacje o włączaniu układu magazynu i procesów magazynowych.
 author: perlynne
-manager: tfehr
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventLocation, WHSLocation, WHSLocationBuild, WHSLocationProfile, WHSLocationType, WHSLocDirTable, WHSParameters, WHSWaveTemplateTable, WHSWorkPool, WHSWorkTemplateTable, WHSZone, WHSZoneGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 11554
+ms.custom:
+- "11554"
+- intro-internal
 ms.assetid: 262b7b88-2cce-44f7-9a5b-77c12af1be20
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7b0ebb5d7f77e2104d0280bcee7c018d9cf97bd5
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 28e026b01bbc2b2534556ce6018eec66fc5517d6
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4970163"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983011"
 ---
 # <a name="warehouse-configuration-overview"></a>Omówienie konfiguracji magazynu
 
@@ -111,10 +111,12 @@ Jak sugeruje nazwa, dyrektywy lokalizacji służą do kierowania transakcji prac
 
 Aby szybciej i łatwiej określić zadania związane z wierszem dyrektywy lokalizacji, użyj jednej z wstępnie zdefiniowanych strategii. Na przykład, można użyć strategii **Pusta lokalizacja bez przychodzącej pracy** do wyszukiwania wolnej lokalizacji w magazynie, lub można użyć strategii **Rezerwacja partii FEFO** dla wychodzących pobrań sprzedaży.
 
-<a name="additional-resources"></a>Dodatkowe zasoby
---------
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Konfigurowanie lokalizacji w magazynie z obsługą WMS](tasks/configure-locations-wms-enabled-warehouse.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

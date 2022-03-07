@@ -2,34 +2,29 @@
 title: Przypisywanie list zadań do sklepów lub pracowników etatowych
 description: W tym temacie opisano sposób przypisywania list zadań do sklepów lub pracowników w Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 02/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 82cec9861b759037f40315fb2e6f36002a0ac059
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 18f13fb1754b2740b8447a67f09320651b0ca4003c6f46c6d4668e5159ae1a2d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415007"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730834"
 ---
 # <a name="assign-task-lists-to-stores-or-employees"></a>Przypisywanie list zadań do sklepów lub pracowników etatowych
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano sposób przypisywania list zadań do sklepów lub pracowników w Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 Zarządzanie zadaniami w Dynamics 365 Commerce umożliwia przypisywanie listy zadań do wielu sklepów lub pracowników, a także na połączenie sklepów i pracowników. Na przykład Menedżer regionalny dla 20 sklepów może chcieć przypisać listę zadań **Przygotowania do sezonu świątecznego** do wszystkich 20 sklepów.
 
@@ -50,7 +45,7 @@ Aby rozpocząć proces przypisywania listy zadań, wykonaj następujące kroki.
 
 Na poniższej ilustracji przedstawiono przykład wyszukiwania i wybierania sklepów w oknie dialogowym **Rozpocznij proces**.
 
-![Znajdowanie i wybieranie sklepów w oknie dialogowym Rozpocznij proces](media/HQ-Assign-Tasks-Lists.png)
+![Znajdowanie i wybieranie sklepów w oknie dialogowym Rozpocznij proces.](media/HQ-Assign-Tasks-Lists.png)
 
 ## <a name="assign-task-lists-on-a-recurring-basis"></a>Umożliwia przypisywanie list zadań na podstawie cyklu
 
@@ -67,7 +62,7 @@ Czasami detalista ma powtarzalne zadania, takie jak „Lista kontrolna czwartek�
 
 Na poniższej ilustracji przedstawiono przykład sposobu wprowadzania kryteriów częstotliwości w oknie dialogowym **Definiowanie cyklu**.
 
-![Wprowadzanie kryteriów częstotliwości w oknie dialogowym Zdefiniuj cykl](media/HQ-Assign-Tasks-Lists-Recurrently.png)
+![Wprowadzanie kryteriów częstotliwości w oknie dialogowym Zdefiniuj cykl.](media/HQ-Assign-Tasks-Lists-Recurrently.png)
 
 ## <a name="track-task-list-status"></a>Śledzenie stanu listy zadań
 
@@ -92,3 +87,6 @@ Aby śledzić stan listy zadań dla wszystkich zadań przypisanych do Ciebie, na
 [Tworzenie list zadań i dodawanie zadań](task-mgmt-create-lists.md)
 
 [Zarządzanie zadaniami w punkcie sprzedaży](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

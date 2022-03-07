@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 081c2e5145a9175ace946e332e299247e706b548
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 7cb6baefb9880ac0135405c4a3b2449814afd4a6
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019886"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5246628"
 ---
 # <a name="onboard-vendors"></a>Wdrażanie dostawców
 
@@ -174,3 +174,6 @@ Wybierając akcję **Usuń** we wniosku o rejestrację potencjalnego dostawcy mo
 |         Zatwierdzona         |                                                                               Wniosek o nowego dostawcę został zatwierdzony.                                                                               |                                                                                                   Wniosek o rejestracje potencjalnego dostawcy, dane wprowadzone w kreatorze rejestracji dostawcy i wniosek o nowego dostawcę zostały usunięte.                                                                                                    |
 |         Odrzucona         |                                                                               Wniosek o nowego dostawcę został odrzucony.                                                                               |                                                                                                   Wniosek o rejestracje potencjalnego dostawcy, dane wprowadzone w kreatorze rejestracji dostawcy i wniosek o nowego dostawcę zostały usunięte.                                                                                                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

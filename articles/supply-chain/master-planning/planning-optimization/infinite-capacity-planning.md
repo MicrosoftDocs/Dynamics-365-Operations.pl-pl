@@ -9,10 +9,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: crytt
-ms.search.validFrom: '2021-06-09'
+ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
+ms.openlocfilehash: 6ea27f4e38697d517b1520176eb5dfeee651a598
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982157"
 ---
-
 # <a name="scheduling-with-infinite-capacity"></a>Planowanie z nieskończoną zdolnością produkcyjną
 
 [!include [banner](../../includes/banner.md)]

@@ -2,30 +2,28 @@
 title: MyLeaveRequests — omówienie
 description: Jednostka MyLeaveRequests w programie Microsoft Dynamics 365 Human Resources udostępnia listę wniosków urlopowych w systemie, ograniczoną do wniosków dostępnych dla bieżącego użytkownika wykonującego zapytanie o jednostkę.
 author: andreabichsel
-manager: AnnBe
 ms.date: 02/03/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
-ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4bf3b298af9eb39e03514a4005afb43a42908e47
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 90698ddcc8fcf0eb975dffed0bdad11e6b277c90
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419999"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984703"
 ---
 # <a name="myleaverequests-overview"></a>MyLeaveRequests — omówienie
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Jednostka MyLeaveRequests w programie Microsoft Dynamics 365 Human Resources udostępnia listę wniosków urlopowych w systemie, ograniczoną do wniosków dostępnych dla bieżącego użytkownika wykonującego zapytanie o jednostkę.
 
@@ -64,3 +62,5 @@ Jednostka MyLeaveRequests w programie Microsoft Dynamics 365 Human Resources udo
 
 - [Przesyłanie wniosku o urlop do przepływu pracy](hr-developer-api-myleaverequests-submit.md)
 - [Uwierzytelnianie](hr-developer-api-authentication.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

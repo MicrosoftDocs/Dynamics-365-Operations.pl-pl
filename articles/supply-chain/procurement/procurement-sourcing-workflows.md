@@ -1,12 +1,10 @@
 ---
 title: Przepływy pracy dla zaopatrzenia i sourcingu
 description: Niektóre organizacje wymagają, aby zapotrzebowania na zakup i zamówienia zakupu były zatwierdzane przez użytkowników innych niż osoby, która wprowadziły transakcję. Aby skonfigurować proces zatwierdzania, można utworzyć przepływ pracy.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 12/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WorkflowTableListPageRnr
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2074
 ms.assetid: e54a1d59-b9fb-421b-821d-01f32878aa9b
 ms.search.region: Global
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af614b7f29144d02a853ef15b008f2a21d3d3aa5
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 126e9969f312ff7f6a6c64b733708754e7659214
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019761"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909238"
 ---
 # <a name="procurement-and-sourcing-workflows"></a>Przepływy pracy dla zaopatrzenia i sourcingu
 
@@ -49,7 +47,7 @@ Następujące typy przepływu pracy są dostępne w module Zaopatrzenie i sourci
 | Przepływ pracy zgłaszania dodania dostawcy | Służy do tworzenia przepływów pracy przeglądania i zatwierdzania w celu dodawania nowych dostawców za pomocą wniosków o nowych dostawców. |
 
 > [!IMPORTANT]
-> Podczas dodawania nowego przepływu pracy mogą być również wyświetlane następujące przestarzałe przepływy pracy w oknie dialogowym **Utwórz przepływ pracy**. Są one powiązane z funkcją *potwierdzenia odbioru* dostępną w [Dynamics AX 2012](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-procurement-and-sourcing-workflows), która jest już przestarzała. Te przepływy pracy są obecnie nieobsługiwane.
+> Podczas dodawania nowego przepływu pracy mogą być również wyświetlane następujące przestarzałe przepływy pracy w oknie dialogowym **Utwórz przepływ pracy**. Są one powiązane z funkcją *potwierdzenia odbioru* dostępną w [Dynamics AX 2012](/dynamicsax-2012/appuser-itpro/set-up-procurement-and-sourcing-workflows), która jest już przestarzała. Te przepływy pracy są obecnie nieobsługiwane.
 > 
 > - Przepływ pracy powiadomienia o terminie dostawy
 > - Przepływ pracy powiadomienia o otrzymaniu faktury
@@ -79,3 +77,6 @@ Można przypisać krok zatwierdzania do następujących grup uczestników.
 - [Definiowanie przepływów pracy procesów biznesowych dla zapotrzebowań na zakup](https://www.microsoft.com/download/details.aspx?id=101821)
 - [Przepływ pracy zapotrzebowań na zakup](purchase-requisitions-workflow.md)
 - [Wdrażanie dostawców](vendor-onboarding.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

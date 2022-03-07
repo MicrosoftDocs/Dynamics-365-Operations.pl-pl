@@ -2,9 +2,11 @@
 title: Rejestracja na urządzeniu przenośnym zużycia materiałów
 description: W tym temacie opisano przepływ pracy umożliwiający rejestrowanie zużycia surowców w produkcji przy użyciu urządzenia przenośnego (podręcznego).
 author: johanhoffmann
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFMenuItem
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1aeb527255358ecafafcb64185cb9dcb31243d499c533f9c9390d79658534e3c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 40779d1f8bc14072928767ae1c83fdda47476871
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777870"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4998885"
 ---
 # <a name="register-material-consumption-using-a-mobile-device"></a>Rejestracja na urządzeniu przenośnym zużycia materiałów
 
@@ -28,9 +30,10 @@ ms.locfileid: "6777870"
 
 W tym temacie opisano przepływ pracy umożliwiający rejestrowanie zużycia surowców w produkcji przy użyciu urządzenia przenośnego (podręcznego).
 
-## <a name="introduction"></a>Wprowadzenie
+<a name="introduction"></a>Wprowadzenie
+------------
 
-Ten przepływ pracy ma zastosowanie, jeśli istnieje ścisły wymóg identyfikowalności materiałów. W tych przypadkach w celu utrzymania identyfikowalności materiałów należy raportować dokładny czas i ilość zużycia. Ten proces może być traktowany jako przeciwieństwo operacji rozliczania wstępnego i wstecznego, gdzie występuje przesunięcie między czasem rejestracji a momentem, gdy dochodzi do faktycznego zużycia. To wyjaśnia, dlaczego strategii automatycznego zużycia nie można używać do niektórych materiałów z wymogiem identyfikowalności. Spójrzmy na prosty scenariusz, który wyjaśnia, jak skonfigurować przepływ pracy, aby włączyć rejestrowanie zużycia surowców w produkcji za pomocą urządzenia podręcznego. [![Konfigurowanie przepływu pracy w celu włączenie rejestracji zużycia surowców za pomocą urządzenia podręcznego.](./media/scenario3.png)](./media/scenario3.png)
+Ten przepływ pracy ma zastosowanie, jeśli istnieje ścisły wymóg identyfikowalności materiałów. W tych przypadkach w celu utrzymania identyfikowalności materiałów należy raportować dokładny czas i ilość zużycia. Ten proces może być traktowany jako przeciwieństwo operacji rozliczania wstępnego i wstecznego, gdzie występuje przesunięcie między czasem rejestracji a momentem, gdy dochodzi do faktycznego zużycia. To wyjaśnia, dlaczego strategii automatycznego zużycia nie można używać do niektórych materiałów z wymogiem identyfikowalności. Spójrzmy na prosty scenariusz, który wyjaśnia, jak skonfigurować przepływ pracy, aby włączyć rejestrowanie zużycia surowców w produkcji za pomocą urządzenia podręcznego. [![Konfigurowanie przepływu pracy w celu włączenie rejestracji zużycia surowców za pomocą urządzenia podręcznego](./media/scenario3.png)](./media/scenario3.png)
 
 ### <a name="scenario-details"></a>Szczegóły scenariusza
 
@@ -88,6 +91,3 @@ Po zakończeniu rejestrowania kliknij przycisk **Gotowe**, aby zaksięgować ark
 -   Materiał może być zużywany ponad miarę. Na przykład jeśli szacuje się, że materiał zostanie zużyty w ilości 100 kg, można go zużyć ponad miarę, na przykład w ilości 105 kg.
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

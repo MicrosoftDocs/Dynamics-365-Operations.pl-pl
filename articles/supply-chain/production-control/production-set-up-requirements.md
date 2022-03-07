@@ -1,13 +1,12 @@
 ---
-# required metadata
 title: Wymagania konfiguracji produkcji
-description: 'Ten artykuł zawiera informacje o konfiguracji, jaką należy zapewnić przed rozpoczęciem używania modułu Kontrola produkcji.'
+description: Ten artykuł zawiera informacje o konfiguracji, jaką należy zapewnić przed rozpoczęciem używania modułu Kontrola produkcji.
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: null
-ms.technology: null
-ms.search.form: 'ProdParameters, RouteOpr, RouteOprTable, WorkCalendarTable, WorkTimeTable, WrkCtrTable'
+ms.prod: ''
+ms.technology: ''
+ms.search.form: ProdParameters, RouteOpr, RouteOprTable, WorkCalendarTable, WorkTimeTable, WrkCtrTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 55561
@@ -15,10 +14,15 @@ ms.assetid: 1953059f-478d-4706-b461-25b89ace5fc3
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: johanho
-ms.search.validFrom: '2016-02-28'
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bfde8b40927ceaa216878d58ef72c5d91e9ebe01
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968803"
 ---
-
 # <a name="production-setup-requirements"></a>Wymagania konfiguracji produkcji
 
 [!include [banner](../includes/banner.md)]

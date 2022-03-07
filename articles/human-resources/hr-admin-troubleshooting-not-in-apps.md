@@ -1,32 +1,31 @@
 ---
 title: Human Resources nie wyświetla się w ramach aplikacji Microsoft Dynamics 365
-description: W tym artykule wyjaśniono, co należy zrobić, jeśli klient nie widzi aplikacji Microsoft Dynamics 365 Human Resources wśród aplikacji Microsoft Dynamics 365.
-author: andreabichsel
-manager: AnnBe
-ms.date: 02/03/2020
+description: W tym temacie wyjaśniono, co należy zrobić, jeśli aplikacja Microsoft Dynamics 365 Human Resources nie jest wyszczególniona na liście aplikacji Microsoft Dynamics 365.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cbf47b4673e1c97965bba7728e5669b7639c4d56
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dfed82463eece882bed66c7b2dac1dd30e04720e
+ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420046"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "7413408"
 ---
-# <a name="human-resources-doesnt-appear-in-microsoft-dynamics-365-apps"></a>Human Resources nie wyświetla się w ramach aplikacji Microsoft Dynamics 365
+# <a name="human-resources-app-doesnt-appear-in-microsoft-dynamics-365-apps"></a>Aplikacja Human Resources nie jest wyświetlana wśród aplikacji Microsoft Dynamics 365
 
-**Wystawienie**
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+**Problem**
 
 Klient nie widzi programu Dynamics 365 Human Resources wśród aplikacji systemu Microsoft Dynamics 365.
 
@@ -40,11 +39,11 @@ Użytkownik musi być dodany do roli Twórca środowisk dla środowiska w Micros
 
 3. Na karcie **zabezpieczeń** na karcie **ról środowiska** wybierz opcję **Twórca środowiska**.
 
-    ![Karta role środowiska](media/environment-roles.png)
+    ![Karta role środowiska.](media/environment-roles.png)
 
 4. Na karcie **użytkownicy** dodać użytkownika lub organizację.
 
-    ![Karta użytkowników](media/environment-maker.png)
+    ![Karta użytkowników.](media/environment-maker.png)
 
 5. Wybierz opcję **Zapisz**.
 
@@ -52,6 +51,9 @@ Użytkownik musi być dodany do roli Twórca środowisk dla środowiska w Micros
 
 7. Wybierz **Synchronizuj**, aby zaktualizować aplikacje użytkownika.
 
-    ![Przycisk synchronizacji](media/get-more.png)
+    ![Przycisk synchronizacji.](media/get-more.png)
 
     Po zakończeniu synchronizacji program Human Resources będzie wyświetlany na stronie głównej.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,38 +1,35 @@
 ---
 title: Konfigurowanie BOPIS w środowisku oceny usługi Dynamics 365 Commerce
-description: W tym temacie opisano sposób konfigurowania modułu kupowanie online, odbiór w sklepie (BOPIS) w środowisku oceny Microsoft Dynamics 365 Commerce po jego zainicjowaniu.
+description: W tym temacie opisano sposób konfigurowania modułu kupowanie online, odbiór w sklepie (BOPIS) w środowisku ewaluacji Microsoft Dynamics 365 Commerce po jego zainicjowaniu.
 author: rubendel
-manager: annbe
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: rubendel
 ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 62dabaa2610341cc8ad8e85812a317ac3123fcb1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 56319035ac092a376f0766c20eee71af6256b6f9
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414838"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936918"
 ---
-# <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurowanie BOPIS w środowisku oceny usługi Dynamics 365 Commerce
+# <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurowanie BOPIS w środowisku oceny rozwiązania Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano sposób konfigurowania modułu kupowanie online, odbiór w sklepie (BOPIS) w środowisku oceny Microsoft Dynamics 365 Commerce po zainicjowaniu środowiska.
+W tym temacie opisano sposób konfigurowania modułu kupowanie online, odbiór w sklepie (BOPIS) w środowisku Microsoft Dynamics 365 Commerce po zainicjowaniu środowiska.
 
 ## <a name="prerequisite"></a>Wymaganie wstępne
 
-Procedury opisane w tym temacie należy wykonać dopiero po zakończeniu aprowizacji i konfiguracji środowiska oceny wersji zapoznawczej usługi Commerce. Aby uzyskać informacje dotyczące sposobu prowizji i konfigurowania środowiska, zobacz [Inicjowaniw środowiska oceny wersji zapoznawczej Dynamics 365 Commerce](provisioning-guide.md) i [Konfiguracja środowiska oceny wersji zapoznawczej Dynamics 365 Commerce](https://docs.microsoft.com/dynamics365/commerce/cpe-post-provisioning).
+Procedury opisane w tym temacie należy wykonać dopiero po zakończeniu aprowizacji i konfiguracji środowiska oceny wersji zapoznawczej usługi Commerce. Aby uzyskać informacje dotyczące sposobu prowizji i konfigurowania środowiska, zobacz [Inicjowaniw środowiska oceny wersji zapoznawczej Dynamics 365 Commerce](provisioning-guide.md) i [Konfiguracja środowiska oceny wersji zapoznawczej Dynamics 365 Commerce](./cpe-post-provisioning.md).
 
 Po zainicjowaniu obsługi i skonfigurowaniu środowiska Commerce można skorzystać z tego tematu w celu włączenia scenariuszy BOPIS.
 
@@ -40,7 +37,7 @@ Po zainicjowaniu obsługi i skonfigurowaniu środowiska Commerce można skorzyst
 
 ### <a name="configure-modern-pos"></a>Konfiguracja Modern POS
 
-Scenariusze BOPIS, które obejmują płatność kartą kredytową, wymagają stacji sprzętowej. Stacja sprzętowa jest wbudowana w Modern POS dla systemu Windows i klientach Android. Jeśli w systemie iOS jest używany program Cloud POS lub Modern POS, klient punktu sprzedaży (POS) musi być sparowany z udostępnioną stacją sprzętową. W tym temacie wyjaśniono, jak skonfigurować BOPIS dla systemu Windows i klientów Android. Aby uzyskać więcej informacji dotyczących sposobu konfiguracji współużytkowanej stacji sprzętowej, zobacz [Konfiguracja i instalacja programu Retail hardware station](https://docs.microsoft.com/dynamics365/commerce/retail-hardware-station-configuration-installation).
+Scenariusze BOPIS, które obejmują płatność kartą kredytową, wymagają stacji sprzętowej. Stacja sprzętowa jest wbudowana w Modern POS dla systemu Windows i klientach Android. Jeśli w systemie iOS jest używany program Cloud POS lub Modern POS, klient punktu sprzedaży (POS) musi być sparowany z udostępnioną stacją sprzętową. W tym temacie wyjaśniono, jak skonfigurować BOPIS dla systemu Windows i klientów Android. Aby uzyskać więcej informacji dotyczących sposobu konfiguracji współużytkowanej stacji sprzętowej, zobacz [Konfiguracja i instalacja programu Retail hardware station](./retail-hardware-station-configuration-installation.md).
 
 1. Wybierz kolejno opcje **Retail i Commerce \> Ustawienia kanału \> Ustawienia punktu sprzedaży \> Rejestry**.
 2. Wybierz rejestr **SANFRAN-5**, a następnie wybierz opcję **Edytuj**.
@@ -90,7 +87,7 @@ Scenariusze BOPIS, które obejmują płatność kartą kredytową, wymagają sta
 
 ### <a name="create-a-storefront-order-for-in-store-pickup"></a>Tworzenie zamówienia sklepu na potrzeby odbioru w sklepie
 
-1. Umożliwia przejście do adresu URL, który został określony w kroku [Inicjalizowanie e-Commerce](https://docs.microsoft.com/dynamics365/commerce/provisioning-guide#initialize-e-commerce) podczas konfigurowania środowiska.
+1. Umożliwia przejście do adresu URL, który został określony w kroku [Inicjalizowanie e-Commerce](./provisioning-guide.md#initialize-e-commerce) podczas konfigurowania środowiska.
 2. Wybierz towar i wybierz opcję **Dodaj do koszyka**.
 3. Na stronie koszyka, wybierz **Odbierz tę pozycję** dla dodanego właśnie wiersza zamówienia.
 4. W oknie dialogowym **Wybierz sklep** wprowadź wartość **San Francisco**, a następnie wybierz przycisk **Wyszukaj**.
@@ -115,7 +112,7 @@ Scenariusze BOPIS, które obejmują płatność kartą kredytową, wymagają sta
 
 ### <a name="synchronize-online-orders-to-the-back-office"></a>Synchronizuj zamówienia online w biurze zaplecza
 
-Aby uzyskać informacje na temat synchronizowania zamówień online, zapoznaj się z tematem [Księgowanie sprzedaży i płatności online](https://docs.microsoft.com/dynamics365/commerce/tasks/posting-online-sales-payments).
+Aby uzyskać informacje na temat synchronizowania zamówień online, zapoznaj się z tematem [Księgowanie sprzedaży i płatności online](./tasks/posting-online-sales-payments.md).
 
 ### <a name="pick-up-an-order-in-the-store"></a>Odbiór zamówienia w sklepie
 
@@ -151,16 +148,19 @@ Aby uzyskać wszystkie ogólne problemy, należy zawsze najpierw zapoznać się 
 
 [Środowiska oceny usługi Dynamics 365 Commerce — często zadawane pytania](cpe-faq.md)
 
-[Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
+[Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Retail Cloud Scale Unit (RCSU)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Retail Cloud Scale Unit (RCSU)](/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Portal Microsoft Azure](https://azure.microsoft.com/features/azure-portal)
 
 [Witryna Dynamics 365 Commerce](https://aka.ms/Dynamics365CommerceWebsite)
 
-[Łącznik płatności Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
+[Łącznik płatności Adyen](./dev-itpro/adyen-connector.md?tabs=8-1-3)
 
-[Zapisywanie instrumentów płatniczych online za pomocą łącznika Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector-listpi)
+[Zapisywanie instrumentów płatniczych online za pomocą łącznika Adyen](./dev-itpro/adyen-connector-listpi.md)
 
-[Omówienie płatności wielokanałowych](https://docs.microsoft.com/dynamics365/commerce/omni-channel-payments)
+[Omówienie płatności wielokanałowych](./omni-channel-payments.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

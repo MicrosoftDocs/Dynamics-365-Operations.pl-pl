@@ -1,12 +1,10 @@
 ---
 title: Możliwości siatki
-description: W tym temacie opisano kilka zaawansowanych funkcji formantu siatki. Funkcja nowej siatki musi być włączona, aby można było uzyskać dostęp do tych możliwości.
+description: W tym temacie opisano kilka zaawansowanych funkcji formantu siatki. Musisz włączyć nową funkcje siatki, aby można było uzyskać dostęp do tych możliwości.
 author: jasongre
-manager: AnnBe
-ms.date: 11/17/2020
+ms.date: 10/25/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
@@ -15,25 +13,28 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: fb30cdded33f90bb472c8abdb70875077b1dd985
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: a21a41399b5884fda9cce214f99851ffa93bbc43
+ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693781"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "7700144"
 ---
 # <a name="grid-capabilities"></a>Możliwości siatki
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Nowy formant siatki zapewnia wiele przydatnych i zaawansowanych funkcji, które mogą być używane w celu zwiększenia wydajności użytkowników, tworzenia bardziej interesujących widoków danych oraz uzyskiwania informacji o szczegółowych danych. Ten artykuł będzie obejmował następujące możliwości: 
+
+Nowa kontrolka siatki zapewnia kilka przydatnych i zaawansowanych funkcji, które mogą być używane w celu zwiększenia wydajności użytkowników, tworzenia bardziej interesujących widoków danych oraz uzyskiwania informacji o szczegółowych danych. Ten artykuł będzie obejmował następujące możliwości: 
 
 -  Obliczanie sum
 -  Pisanie przed systemem
 -  Ocenianie wyrażeń matematycznych 
--  Grupowanie danych tabelarycznych (włączone oddzielnie za pomocą funkcji **Grupowania w module siatki (wersja zapoznawcza)**)
--  Przypięte kolumny systemowe
+-  Grupowanie danych tabelarycznych (włączone oddzielnie za pomocą funkcji **Grupowania w module siatki**)
+-  Zamrażanie kolumn
+-  Automatyczne dopasowanie szerokości kolumny
+-  Rozszerzalne kolumny
 
 ## <a name="calculating-totals"></a>Obliczanie sum
 W aplikacjach grupy Finance and Operations użytkownicy mają możliwość wyświetlania sum na dole kolumn liczbowych w siatkach. Sumy te są wyświetlane w sekcji stopki u dołu siatki. 
@@ -41,14 +42,14 @@ W aplikacjach grupy Finance and Operations użytkownicy mają możliwość wyśw
 ### <a name="showing-the-grid-footer"></a>Pokazywanie stopki siatki
 W dolnej części każdej siatki tabelarycznej w aplikacjach Finance and Operations znajduje się obszar stopki. Stopka może zawierać cenne informacje związane z danymi wyświetlanymi w siatce. Oto kilka przykładów takich informacji:
 
-- Liczba zaznaczonych wierszy w tabeli (gdy zaznaczony jest więcej niż jeden rekord)
+- Liczba zaznaczonych wierszy w tabeli (gdy zaznaczysz więcej niż jeden rekord)
 - Sumy końcowe u dołu skonfigurowanych kolumn liczbowych
 - Liczby kolumn w zestawie danych 
 
-Ta stopka jest domyślnie ukryta, ale można ją łatwo włączyć. Aby wyświetlić stopkę siatki, kliknij prawym przyciskiem myszy nagłówek kolumny w siatce i wybierz opcję **Pokazuj stopkę**. Po włączeniu stopki dla określonej siatki ustawienie to zostanie zapamiętane, dopóki użytkownik nie zdecyduje się na ukrycie stopki, co można wykonać, klikając prawym przyciskiem myszy nagłówek kolumny i wybierając polecenie **Ukryj stopkę**.  Uwaga: umieszczenie akcji **Pokazuj stopkę/Ukryj stopkę** zostanie zmienione w przyszłej aktualizacji. 
+Ta stopka jest domyślnie ukryta, ale możesz ją włączyć. Aby wyświetlić stopkę siatki, wybierz przycisk **Opcje siatki** w nagłówku siatki i wybierz opcję **Pokazuj stopkę**. Po włączeniu stopki dla określonej siatki to ustawienie będzie przypominane do czasu, aż użytkownik wybierze opcję ukrywania stopki. Aby ukryć stopkę, wybierz opcję **Ukryj stopkę** w menu **Opcje siatki**.  
 
 ### <a name="specifying-columns-with-totals"></a>Określanie kolumn z sumami
-Obecnie żadne kolumny nie zostaną skonfigurowane tak, aby domyślnie były wyświetlane sumy. Zamiast tego jest to uważane za jednorazowe działanie konfiguracji, podobne do korygowania szerokości kolumn w siatkach. Po określeniu, że dla kolumny mają być wyświetlone sumy, to ustawienie zostanie zapamiętane przy następnej wizycie na tej stronie.  
+Obecnie domyślnie żadne kolumny nie zawierają sum. Zamiast tego jest to uważane za jednorazowe działanie konfiguracji, podobne do korygowania szerokości kolumn w siatkach. Po określeniu, że dla kolumny mają być wyświetlone sumy, to ustawienie zostanie zapamiętane przy następnej wizycie na tej stronie.  
 
 Istnieją dwa sposoby skonfigurowania kolumny do wyświetlania sumy: 
 
@@ -84,7 +85,7 @@ Aby można było obsłużyć to nowe zachowanie, nowa kolumna dla stanu wiersza 
 Gdy użytkownicy wprowadzają dane przed miejscem przetwarzania serwera, mogą oczekiwać na wprowadzenie kilku degradacji w środowisku wprowadzania danych, takich jak brak wyszukiwań, sprawdzanie poprawności na poziomie kontroli i wprowadzanie wartości domyślnych. Użytkownicy, którzy potrzebują listy rozwijanej do znalezienia wartości, są zachęcani do czekania, aż serwer dogoni bieżący wiersz. Sprawdzanie poprawności na poziomie kontroli i wprowadzanie wartości domyślnych będą również występować, gdy serwer przetwarza ten wiersz.   
 
 ### <a name="pasting-from-excel"></a>Wklejanie z programu Excel
-Użytkownicy zawsze mogli eksportować dane z siatek w aplikacjach Finance and Operations do programu Excel za pomocą mechanizmu **Eksport do programu Excel**. Jednak możliwość wprowadzania danych przed systemem umożliwia nowej siatce obsługę kopiowania tabel z programu Excel i wklejanie ich bezpośrednio do siatek w aplikacjach Finance and Operations. Komórka siatki, z której jest inicjowana operacja wklejenia określa miejsce, w którym rozpocznie się wklejanie skopiowanej tabeli. Zawartość siatki jest zastępowana zawartością skopiowanej tabeli, z wyjątkiem dwóch przypadków:
+Użytkownicy zawsze mogli eksportować dane z siatek w aplikacjach Finance and Operations do programu Microsoft Excel za pomocą mechanizmu **Eksport do programu Excel**. Jednak możliwość wprowadzania danych przed systemem umożliwia nowej siatce obsługę kopiowania tabel z programu Excel i wklejanie ich bezpośrednio do siatek w aplikacjach Finance and Operations. Komórka siatki, z której jest inicjowana operacja wklejenia określa miejsce, w którym rozpocznie się wklejanie skopiowanej tabeli. Zawartość siatki jest zastępowana zawartością skopiowanej tabeli, z wyjątkiem dwóch przypadków:
 
 - Jeśli liczba kolumn w kopiowanej tabeli przekracza liczbę kolumn pozostających w siatce, rozpoczynając od lokalizacji wklejania, użytkownik zostanie poinformowany, że dodatkowe kolumny zostały zignorowane. 
 - Jeśli liczba wierszy w kopiowanej tabeli przekracza liczbę wierszy w siatce, począwszy od lokalizacji wklejania, istniejące komórki zostaną zastąpione przez wklejoną zawartość, a wszystkie dodatkowe wiersze ze skopiowanej tabeli zostaną wstawione jako nowe wiersze u dołu siatki. 
@@ -95,7 +96,7 @@ Jako środek zwiększający produktywność, użytkownicy mogą wprowadzać form
 Aby system rozpoznawał wartość jako wyrażenie, należy uruchomić wartość ze znakiem równości (**=**). Więcej informacji na temat obsługiwanych operatorów i składni zawiera sekcja [obsługiwane symbole matematyczne](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
 ## <a name="grouping-tabular-data"></a>Grupowanie danych tabelarycznych
-Użytkownicy biznesowi często muszą przeprowadzać analizę danych ad hoc. Chociaż można to zrobić przez wyeksportowanie danych do Microsoft Excel i za pomocą tabel przestawnych, funkcja **Grupowanie w siatkach**, zasadniczo dostępna w wersji 10.0.16/aktualizacji platformy 40 i zależna od nowej funkcji kontroli siatki, umożliwia użytkownikom organizowanie swoich danych tabelarycznych w interesujący sposób w aplikacjach Finance and Operations. Ponieważ ta funkcja rozszerza funkcję **Sum**, **Grupowanie** umożliwia również uzyskanie istotnych informacji na temat danych przez zapewnienie sum częściowych na poziomie grupy.
+Użytkownicy biznesowi często muszą przeprowadzać analizę danych ad hoc. Chociaż można to zrobić przez wyeksportowanie danych do Microsoft Excel i za pomocą tabel przestawnych, możliwość **Grupowania w siatkach tabelarycznych**, zależna od nowej funkcji kontroli siatki, umożliwia użytkownikom organizowanie swoich danych tabelarycznych w interesujący sposób w aplikacjach Finance and Operations. Ponieważ ta funkcja rozszerza funkcję **Sum**, **Grupowanie** umożliwia również uzyskanie istotnych informacji na temat danych przez zapewnienie sum częściowych na poziomie grupy.
 
 Aby skorzystać z tej funkcji, kliknij prawym przyciskiem myszy kolumnę, według której chcesz grupować, a następnie wybierz polecenie **Grupuj według tej kolumny**. Ta akcja spowoduje posortowanie danych według wybranej kolumny, dodanie nowej kolumny **Grupy według** do początku do siatki, a następnie wstawienie „wierszy nagłówka” na początku każdej grupy. Te wiersze nagłówka zawierają następujące informacje o każdej grupie: 
 -  Wartość danych dla grupy 
@@ -110,56 +111,53 @@ Po zgrupowaniu danych według jednej kolumny można je pogrupować według innej
 
 W dowolnym momencie można usunąć grupowanie według dowolnej kolumny, klikając prawym przyciskiem myszy tę kolumnę i wybierając polecenie **Rozgrupuj**. Można również usunąć grupowanie ze wszystkich kolumn, wybierając kolejno polecenia **Opcje siatki** i **Rozgrupuj wszystko**.   
 
-Uwaga: przed wersją 10.0.16/aktualizacją platformy 40 jest obsługiwany tylko jeden poziom grupowania. W tych wersjach jeśli dane są pogrupowane i wybierzesz opcję **Grupuj według tej kolumny** dla innej kolumny, pierwotne grupowanie zostanie zastąpione.  
-
-
 ### <a name="expanding-and-collapsing-groups"></a>Rozwijanie i zwijanie grup
 Początkowe grupowanie danych będzie miało rozwinięte wszystkie grupy. Podsumowane widoki danych można tworzyć, zwijając poszczególne grupy, a także rozwijając grupę i zwijając ją, aby ułatwić nawigację między danymi. Aby rozwinąć lub zwinąć grupę, wybierz przycisk pagonu (>) w odpowiednim wierszu nagłówka grupy. Należy pamiętać, że stan rozwijania/zwijania poszczególnych grup **nie jest** zapisywany w obszarze Personalizacja.
 
 ### <a name="selecting-and-unselecting-rows-at-the-group-level"></a>Zaznaczanie i odznaczanie wierszy na poziomie grupy
-W taki sam sposób, w jaki można wybrać (lub usunąć zaznaczenie) wszystkie wiersze w siatce — zaznaczając pole wyboru u góry pierwszej kolumny w siatce — można również szybko zaznaczyć (lub usunąć zaznaczenie) wszystkich wierszy w grupie, zaznaczając pole wyboru w odpowiednim wierszu nagłówka grupy. Pole wyboru w wierszu nagłówka grupy zawsze odzwierciedla bieżący stan zaznaczenia wierszy w tej grupie, niezależnie od zaznaczenia wszystkich wierszy, braku ich zaznaczenia lub wybrania tylko niektórych wierszy.
+W taki sam sposób, w jaki można wybrać (lub usunąć zaznaczenie) wszystkie wiersze w siatce — zaznaczając pole wyboru u góry pierwszej kolumny w siatce — można również szybko zaznaczyć (lub usunąć zaznaczenie) wszystkich wierszy w grupie, zaznaczając pole wyboru w odpowiednim wierszu nagłówka grupy. Pole wyboru w wierszu nagłówka grupy zawsze odzwierciedla bieżący stan zaznaczenia wierszy w tej grupie, niezależnie od tego, czy zaznaczono wszystkie wierszy, nie zaznaczono wierszy lub wybrano tylko niektóre wiersze.
 
 ### <a name="hiding-column-names"></a>Ukrywanie nazw kolumn
-Podczas grupowania danych domyślnym zachowaniem jest wyświetlenie nazwy kolumny w wierszu nagłówka grupy. Począwszy od wersji 10.0.14 z aktualizacją platformy 38 można wybrać opcję wyłączania nazwy kolumny w wierszach nagłówka grupy, wybierając **Opcje siatki** > **Ukryj nazwę kolumny grupy**.
+Podczas grupowania danych domyślnym zachowaniem jest wyświetlenie nazwy kolumny w wierszu nagłówka grupy. Można wybrać opcję wyłączania nazwy kolumny w wierszach nagłówka grupy, wybierając **Opcje siatki** > **Ukryj nazwę kolumny grupy**.
 
-## <a name="pinned-system-columns"></a>Przypięte kolumny systemowe
-Kolumna wyboru wiersza i kolumna stanu wiersza w nowej siatce są przypięte lub zablokowane w skrajnej lewej części siatki. Dlatego kiedy te kolumny są zawarte w siatce, zawsze będą widoczne dla użytkownika, niezależnie od pozycji przewijania w poziomie w siatce.   
+## <a name="freezing-columns"></a>Zamrażanie kolumn
+Niektóre kolumny w siatce mogą być na tyle ważne dla kontekstu, że nie powinny być przewijane w widoku. Zamiast tego możesz chcieć, aby wartości w tych kolumnach były zawsze widoczne. Funkcja **Zamroź kolumny w siatce** zapewnia użytkownikom tę elastyczność. 
+
+Aby zamrozić kolumnę, kliknij prawym przyciskiem myszy nagłówek kolumny, a następnie wybierz polecenie **Zamroź kolumnę**. Gdy ten krok zostanie ukończony po raz pierwszy, wybrana kolumna stanie się pierwszą kolumną i nie będzie już przewijana w widoku. Każda kolejna zamrożona kolumna zostanie dodana po prawej stronie ostatniej zamrożonej kolumny. W celu zmiany kolejności zamrożonych kolumn można użyć standardowych funkcji przenoszenia. Jednak zamrożonych kolumn nie można przenieść, aby były widoczne wśród zestawu odmrożonych kolumn. Podobnie odmrożonych kolumn nie można przenieść, aby były widoczne wśród zestawu zamrożonych kolumn.
+
+Aby odmrozić kolumnę, kliknij prawym przyciskiem myszy nagłówek zamrożonej kolumny, a następnie wybierz polecenie **Odmroź kolumnę**. 
+
+Należy zauważyć, że wybór wierszy i kolumny stanu wiersza w nowej siatce są zawsze zamrożone jako pierwsze dwie kolumny. Dlatego kiedy te kolumny są zawarte w siatce, zawsze będą widoczne dla użytkowników, niezależnie od pozycji przewijania w poziomie w siatce. Nie można zmienić kolejności tych dwóch kolumn.
+
+## <a name="autofit-column-width"></a>Automatyczne dopasowanie szerokości kolumny
+Podobnie jak w programie Excel, użytkownicy mogą automatycznie wymuszać zmianę rozmiaru kolumny na podstawie zawartości aktualnie wyświetlanej w tej kolumnie. W tym celu należy dwukrotnie kliknąć w kolumnie uchwyty zmiany rozmiaru lub umieścić fokus w nagłówku kolumny i nacisnąć klawisz **A** (w celu automatycznego dopasowania). Ta możliwość jest dostępna od wersji 10.0.23.  
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 ### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Jak włączyć formant nowej siatki w środowisku? 
 
-**10.0.9 / Aktualizacja Platform update 33 i nowsze**
+Funkcja **Kontrolka nowej siatki** jest dostępna bezpośrednio w module Zarządzanie funkcjami w dowolnym środowisku. Po włączeniu tej funkcji w Zarządzaniu funkcjami wszystkie kolejne sesje użytkowników będą korzystać z nowej kontroli siatki. 
 
-Funkcja **Kontrolka nowej siatki** jest dostępna bezpośrednio w module Zarządzanie funkcjami w dowolnym środowisku. Podobnie jak inne funkcje prapremiery publicznej, włączenie tej funkcji w produkcji podlega [uzupełniającemu warunkowi stosowania umowy](https://go.microsoft.com/fwlink/?linkid=2105274).  
-
-**10.0.8/Aktualizacja platformy 32 i 10.0.7/Aktualizacja platformy 31**
-
-Funkcja **Kontrolka nowej siatki** można włączyć w środowiskach warstwy 1 (Dev/Test) i warstwa 2 (piaskownicy) w celu zapewnienia dodatkowych zmian w testowaniu i projekcie, wykonując poniższe kroki.
-
-1.  **Włącz funkcję testową**: wykonaj następującą instrukcję SQL: 
-
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('CLIReactGridEnableFeature', 1, 0, 5637144576);`
-
-2. **Zresetuj usługi IIS**, aby opróżnić statyczną dystrybucję testową pamięci podręcznej. 
-
-3.  **Znajdź funkcję**: przejdź do obszaru roboczego **Zarządzanie funkcjami**. Jeśli **Formant nowej siatki** nie jest wyświetlana na liście wszystkich funkcji, wybierz opcję **Sprawdź aktualizacje**.   
-
-4.  **Włącz funkcję**: Znajdź funkcję **Formant nowej siatki** na liście funkcji i wybierz przycisk **Włącz teraz** w okienku szczegółów. Zauważ, że jest wymagane odświeżenie przeglądarki. 
-
-Wszystkie kolejne sesje użytkownika będą uruchamiane z włączonymi formantami nowej siatki.
+Ta funkcja jest domyślnie włączona od wersji 10.0.21 i ma być obowiązkowa w wersji 10.0.25. 
 
 ## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Deweloper] Rezygnacja z używania nowej siatki dla poszczególnych stron 
-Jeśli Twoja organizacja odkryje stronę, na której występują pewne problemy z wykorzystaniem nowej siatki, począwszy od wersji 10.0.13/Aktualizacji platformy 37 dostępny jest interfejs API, który umożliwia indywidualnemu formularzowi korzystanie ze starszej kontroli sieci, jednocześnie zezwalając reszcie systemu na korzystanie z nowej kontroli sieci. Aby wycofać pojedynczą stronę z nowej siatki, należy dodać następujący wpis wywołania `super()` w metodzie `run()` dla formularza.
+Jeśli Twoja organizacja odkryje stronę, na której występują pewne problemy z wykorzystaniem nowej siatki, dostępny jest interfejs API, który umożliwia indywidualnemu formularzowi korzystanie ze starszej kontroli sieci, jednocześnie zezwalając reszcie systemu na korzystanie z nowej kontroli sieci. Aby wycofać pojedynczą stronę z nowej siatki, należy dodać następujący wpis wywołania `super()` w metodzie `run()` dla formularza.
 
  ```this.forceLegacyGrid();```
 
-Ten interfejs API będzie uznawany do wydania w październiku 2021, gdy nowa kontrolka siatki stanie się wymagana. Jeśli jakiekolwiek problemy wymagają użycia tego interfejsu API, należy zgłosić je do rozwiązania Microsoft.
+Ten interfejs API będzie honorowany do momentu, gdy nowa kontrola sieci stanie się obowiązkowa, co jest obecnie ukierunkowane na kwiecień 2022 r. Jeśli jakiekolwiek problemy wymagają użycia tego interfejsu API, należy zgłosić je do rozwiązania Microsoft.
+
+### <a name="forcing-a-page-to-use-the-new-grid-after-previously-opting-out-the-grid"></a>Wymuszanie strony do korzystania z nowej siatki po wcześniejszym zrezygnowaniu z siatki
+Jeśli użytkownik zrezygnował z używania nowej siatki przez pojedynczą stronę, można później ponownie włączyć nową siatkę po rozwiązaniu podstawowych problemów. Aby to zrobić, wystarczy usunąć połączenie do `forceLegacyGrid()`. Zmiana zostanie wniesienie w życie dopiero po wystąpieniu jednej z następujących sytuacji:
+
+- **Ponowne wdrożenie środowiska**: Gdy środowisko jest aktualizowane i ponownie rozmieszczane, tabela, która przechowuje strony, które zrezygnowały z nowej siatki (FormControlReactGridState) jest automatycznie czyszczona.
+
+- **Ręczne czyszczenie tabeli**: W przypadku scenariuszy rozwoju należy użyć języka SQL, aby wyczyścić tabelę FormControlReactGridState, a następnie ponownie uruchomić system AOS. Ta kombinacja akcji spowoduje zresetowanie buforowania stron, które zrezygnowały z nowej siatki.  
 
 ## <a name="developer-size-to-available-width-columns"></a>[Deweloper] Kolumny od rozmiaru do dostępnej szerokości
 Jeśli projektant ustawi właściwość **WidthMode** na **SizeToAvailable** dla kolumn w nowej siatce, te kolumny mają początkowo taką samą szerokość, jaką miałyby w przypadku ustawienia właściwości na **SizeToContent**. Jednak rozciągają się one na użycie dowolnej dodatkowej szerokości w siatce. Jeśli właściwość jest ustawiona jako **SizeToAvailable** dla wielu kolumn, wszystkie te kolumny mają dowolną dodatkową szerokość w siatce. Jeśli jednak użytkownik ręcznie zmieni rozmiar jednej z tych kolumn, kolumna stanie się statyczna. Pozostanie on o tej samej szerokości i nie będzie już rozciągany, aby uzyskać dodatkową szerokość siatki.  
 
 ## <a name="known-issues"></a>Znane problemy
-W tej sekcji jest przechowywana lista znanych problemów dotyczących nowej kontrolki siatki, gdy ta funkcja jest w stanie podglądu.  
+Ta sekcja zawiera listę znanych problemów związanych z nową kontrolą siatki.  
 
 ### <a name="open-issues"></a>Otwarte problemy
 -  Po włączeniu funkcji **Kontrolka nowej siatki** niektóre strony będą nadal korzystać z istniejącej kontrolki siatki. Ma to miejsce w następujących sytuacjach:  
@@ -170,20 +168,44 @@ W tej sekcji jest przechowywana lista znanych problemów dotyczących nowej kont
     Gdy użytkownik po raz pierwszy napotka jedną z tych sytuacji, zostanie wyświetlony komunikat o odświeżeniu strony. Po wyświetleniu tego komunikatu strona będzie nadal wykorzystywać istniejącą siatkę dla wszystkich użytkowników, aż do następnej aktualizacji wersji produktu. Lepsza obsługa tych scenariuszy, dzięki czemu może być wykorzystywana nowa siatka, będzie brana pod uwagę podczas przyszłej aktualizacji.    
     
 -  [KB 4582758] Rekordy są zamazane po zmianie powiększenia ze 100 na dowolną inną wartość procentową
-    
+-  [KB 4592012] Nieoczekiwany błąd klienta w programie IE11 podczas wklejania wielu wierszy z programu Excel
+    -  Microsoft nie przygotowuje poprawki dla tego problemu
+
+### <a name="fixed-as-part-of-10016"></a>Naprawiono w ramach 10.0.16
+
+-  [KB 4598335] Kontrolki ciągu wielowierszowego nie są zgodne z ich wartościami DisplayHeights na listach/kartach 
+-  [KB 4591891] Wiersze propozycji faktury znikają podczas cofania zaznaczenia wierszy
+-  [KB 4592104] Nie można edytować rekordów po kliknięciu przycisku „Rozwiąż problem” i przeniesieniu do innego wiersza bez rozwiązania problemu z weryfikacją
+-  [KB 4594449] W selektorze dat brakuje przycisków „Nigdy” i „Wyczyść” 
+-  [KB 4594448] Czas wprowadzania w nowej siatce jest traktowany inaczej
+-  [kb 4600059] Nieoczekiwany błąd klienta z ograniczeniem poczty e-mail
+-  [KB 4574584] Podgląd załącznika wydatku jest niedostępny po umieszczeniu kursora na ikonie paragonu
+
 ### <a name="fixed-as-part-of-10015"></a>Naprawiono w ramach 10.0.15    
 
+-  (Aktualizacja dotycząca jakości) [KB 4594444] Nieoczekiwany błąd klienta z podglądem dla kontrolki wpisów segmentowanych
 -  [KB 4582723] Opcje wyświetlania nie są pokazywane przy próbie ich wybrania na dalszym etapie cyklu życia formularza
+-  [KB 4591988] Problemy z klawiaturą podczas wybierania wartości z wyszukiwania ReferenceGroup
+-  [KB 4588958] Test Regression Suite Automation Tool (RSAT) zakończył sie z błędem: TypeError: nNie można odczytać właściwości „text” elementów niezdefiniowanych
+-  [KB 4591970] Nieoczekiwany błąd klienta, jeśli wklejanie danych z programu Excel zostało wykonane natychmiast po kliknięciu siatki
+-  [KB 4591904] Zmiany danych nie są zapisywane, jeśli po edycji kontrolki użytkownik natychmiast kliknął i otworzył wyszukiwanie innej kontrolki
+-  [KB 4584752] Nieoczekiwany błąd klienta po otwarciu strony Propozycje faktur projektu
+-  [KB 4584540] Nie można wyjść z siatki po wklejeniu jednego wiersza w wierszu arkusza
+-  [KB 4591908] Podczas tworzenia nowego wiersza uwaga jest koncentrowana na kolumnie, w której znajdował się użytkownik
 
 ### <a name="fixed-as-part-of-10014"></a>Naprawiono w ramach 10.0.14
 
 -  (Aktualizacja jakości) [KB 4584752] Nieoczekiwany błąd na urządzeniu klienckim po otwarciu strony Propozycje faktur projektu
+-  [KB 4583880] Testy w narzędziu Regression Suite Automation Tool (RSAT) kończą się niepowodzeniem na akcji OpenLookup, czemu towarzyszy komunikat „Nie można odczytać niezdefiniowanej właściwości RowIndex”
+-  [KB 4583847] Nieoczekiwany błąd klienta podczas nawigowania po odnośnikach
 
 ### <a name="fixed-as-part-of-10013"></a>Naprawiono w ramach 10.0.13
 
+-  (Aktualizacja jakości) [KB 4584752] Nieoczekiwany błąd na urządzeniu klienckim po otwarciu strony Propozycje faktur projektu
 -  (Aktualizacja jakości) [KB 4583880] Testy w narzędziu Regression Suite Automation Tool (RSAT) kończą się niepowodzeniem na akcji OpenLookup, czemu towarzyszy komunikat „Nie można odczytać niezdefiniowanej właściwości RowIndex”
 -  (Aktualizacja jakości) [KB 4583847] Nieoczekiwany błąd na urządzeniu klienckim podczas nawigowania po odnośnikach 
 -  (Aktualizacja jakości) [Usterka 471777] Nie można wybrać pól w siatce do edytowania lub utworzenia aplikacji mobilnej
+-  [KB 4582727] Siatka jest zamrażana po tym, jak użytkownik otworzy okno dialogowe dla pozycji z wieloma ilościami
 -  [Usterka 474851] Hiperłącza w kontrolkach grup odwołań nie działają 
 -  [Usterka 474848] Rozszerzone podglądy z siatkami nie są wyświetlane
 -  [KB 4582726] Właściwość RotateSign nie jest respektowana  
@@ -263,3 +285,6 @@ W tej sekcji jest przechowywana lista znanych problemów dotyczących nowej kont
 ### <a name="quality-update-for-1009platform-update-33"></a>Aktualizacja jakości dla 10.0.9/aktualizacja Platform update 33
 
 - [KB 4550367] Wartości czasu nie są poprawnie sformatowane.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

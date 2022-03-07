@@ -2,16 +2,13 @@
 title: Katalogi biura obsługi
 description: W tym artykule opisano funkcje katalogów specyficzne dla biur obsługi dostępne w Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
 ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, RetailCatalogDetails
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 16231
 ms.assetid: f28a827c-3a50-4d5e-83eb-e5a768db70a1
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9abe493746719d2e229ef09c2eb5f436b91b2171
-ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
+ms.openlocfilehash: a091e059d4528c356a5038c750cac3a3f31a7edb
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4415088"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799662"
 ---
 # <a name="call-center-catalogs"></a>Katalogi biura obsługi
 
@@ -101,3 +98,6 @@ Na karcie **Katalogi** znajdują się również sekcje z opcjami konfiguracyjnym
 ## <a name="additional-notes"></a>Dodatkowe notatki
 
 Obecnie gdy identyfikator kodu źródłowego jest stosowany do zamówienia sprzedaży w biurze obsługi, służy do ustalania cen, promocji, skryptów i produktów przeznaczonych do sprzedaży dodatkowej/powiązanej specyficznych dla katalogu. System nie będzie zabraniać ani uniemożliwiać złożenia zamówienia sprzedaży na produkt nieznajdujący się w katalogu. Jeśli zostanie zamówiony towar, który nie jest częścią katalogu, system najpierw użyje **grupy cenowej** zdefiniowanej w kanale biura obsługi (**Retail i Commerce** \> **Kanały** \> **Biura obsługi** \> **Wszystkie biura obsługi**) dla ceny towaru lub promocji. Jeśli nie zostanie znaleziona żadna konkretna cena dla kanału, będzie używana podstawowa cena sprzedaży towaru.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

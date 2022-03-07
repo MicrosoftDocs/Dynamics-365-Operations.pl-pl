@@ -2,27 +2,24 @@
 title: Likwidacja środków trwałych dla Polski
 description: Ten temat zawiera informacje o funkcjonalności likwidacji środków trwałych dla użytkowników w firmach w Polsce.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetParameters, AssetPosting, CustFreeInvoice, LedgerJournalTable
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 266964
 ms.search.region: Poland
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 924fd342a7e2452b4d9ef6de364a4a0ae57c6f9e
-ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
+ms.openlocfilehash: 7adf93bfaaa0c5475bcd3a656aff0d6ff8567d31e52f88b14ca8c76e3a8d08a7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4408403"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773714"
 ---
 # <a name="fixed-assets-disposal-for-poland"></a>Likwidacja środków trwałych dla Polski
 
@@ -84,3 +81,6 @@ Domyślnie pole **Sprzedaż częściowa** zawiera wartość **100**. Gdy użytko
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

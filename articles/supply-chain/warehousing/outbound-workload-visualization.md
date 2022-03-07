@@ -2,22 +2,24 @@
 title: Wychodzące wizualizacje obciążenia pracą
 description: Ten temat zawiera informacje o wychodzących wizualizacjach obciążenia pracą. Ta funkcja umożliwia kierownikom i kierownikom magazynów tworzenie niestandardowych wykresów obciążenia, które można wykorzystać do monitorowania postępu bieżącej pracy i jej pozostałej ilości. Kierownicy magazynów mogą tworzyć wiele widoków i konfigurować automatyczne odświeżanie, gdy tego potrzebują.
 author: Mirzaab
+manager: tfehr
 ms.date: 08/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-08-28
-ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: db6ceb40279e53e9c4751a7ceb3db895e889a7c0
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.dyn365.ops.version: Release 10.0.13
+ms.openlocfilehash: 2515a71297df7213f93a4c619f7eebf1c2411b39
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102895"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965559"
 ---
 # <a name="outbound-workload-visualization"></a>Wychodzące wizualizacje obciążenia pracą
 
@@ -27,9 +29,12 @@ Zaawansowane możliwości konfiguracji dostępne na stronie **Wizualizacja obci�
 
 Ta funkcja może służyć do śledzenia postępu pracy pobierania. Ta funkcja jest zintegrowana z zarządzaniem pracą, a jeśli jest skonfigurowane zarządzanie pracą, wizualizacje wychodzących obciążeń mogą przedstawiać obliczenie liczby godzin pozostałych do pobrania pracy, która jest wyświetlana (przefiltrowana).
 
-## <a name="turn-the-outbound-workload-visualization-feature-on-or-off"></a>Włącz lub wyłącz funkcję wizualizacji obciążenia wychodzącego
+## <a name="turn-on-the-outbound-workload-visualization-feature"></a>Włącz funkcję wizualizacji obciążenia wychodzącego
 
-Od wersji 10.0.25 Supply Chain Management version ta funkcja jest domyślnie włączona. Administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *wizualizacji wychodzącego obciążenia pracą* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [Zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
+
+- **Moduł:** *Zarządzanie magazynem*
+- **Nazwa funkcji:** *Wizualizacja obciążenia wychodzącego*
 
 ## <a name="set-up-outbound-workload-visualizations"></a>Skonfiguruj wizualizacje wychodzących obciążeń
 
@@ -57,7 +62,7 @@ Aby skonfigurować wizualizację obciążenia pracą wychodzącą, należy wykon
     - **Dni do uwzględnienia** — umożliwia wprowadzenie liczby dni w przeszłości, dla których ma zostać wygenerowany wykres.
     - **Typ zlecenia pracy** — umożliwia wybór typów wychodzących zleceń pracy, według których ma być wykonywane filtrowanie.
 
-    ![Skonfiguruj stronę filtrów.](media/work-viz-filters-1.png "Skonfiguruj stronę filtrów")
+    ![Skonfiguruj stronę filtrów](media/work-viz-filters-1.png "Skonfiguruj stronę filtrów")
 
 1. Zamknij stronę **Konfigurowanie filtrów** w celu powrotu do strony **Wizualizacje wychodzących obciążeń**.
 
@@ -67,11 +72,11 @@ Aby skonfigurować wizualizację obciążenia pracą wychodzącą, należy wykon
     - **Ostatnie odświeżenie** — to pole zawiera datę i godzinę ostatniej aktualizacji informacji na wykresie.
     - **Szacowany/rzeczywisty czas** — Jeśli w systemie skonfigurowano standardy pracy, ustaw tę opcję na *Tak*, aby wyświetlić skumulowane szacowane czasy kompletacji u góry każdej kolumny na wykresie. Jeśli nie są używane standardy pracy, ta opcja jest niedostępna.
 
-    ![Przykładowa wizualizacja.](media/work-viz-chart.png "Przykładowa wizualizacja")
+    ![Przykładowa wizualizacja](media/work-viz-chart.png "Przykładowa wizualizacja")
 
 1. Wybierz dowolny słupek na wykresie, aby wyświetlić szczegóły skojarzonego wiersza pracy.
 
-    ![Szczegóły wiersza pracy.](media/work-viz-work-details.png "Szczegóły wiersza pracy")
+    ![Szczegóły wiersza pracy](media/work-viz-work-details.png "Szczegóły wiersza pracy")
 
 ## <a name="example-outbound-workload-visualization-for-zones"></a>Przykład: Wychodzące wizualizacje obciążenia pracą dla stref
 
@@ -89,9 +94,6 @@ W tym przykładzie zachodzi potrzeba skonfigurowania wizualizacji pokazującego 
 
 Na poniższej ilustracji pokazano przykład otrzymanego wykresu.
 
-![Wizualizacja stanu strefy a pracy.](media/work-viz-chart.png "Wizualizacja stanu strefy a pracy")
+![Wizualizacja stanu strefy a pracy](media/work-viz-chart.png "Wizualizacja stanu strefy a pracy")
 
 Ten wykres zawiera dwie strefy o nazwach **FLOOR** i **BULK** oraz strefę o nazwie **Puste**. Strefa **Puste** reprezentuje wszystkie wiersze pracy, które nie są członkami żadnej strefy. Na wykresie zawsze są wyświetlane wszystkie niepowiązane filtrowane dane jako **Puste**, co zapewnia możliwie największą widoczność. W strefie **FLOOR** wykres przedstawia trzy zamknięte linie i cztery otwarte linie. W strefie **BULK** wykres przedstawia cztery zamknięte linie, jedną otwartą linię i 24 anulowane linie. Na koniec wykres pokazuje osiem zamkniętych linii, które nie są częścią żadnej strefy i dlatego są wymienione jako **Puste**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

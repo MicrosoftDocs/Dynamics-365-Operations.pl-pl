@@ -2,29 +2,26 @@
 title: Zarządzanie zmianami i szufladami kasowymi
 description: W tym temacie wyjaśniono sposób konfigurowania i używania zmian w punkcie sprzedaży detalicznej (POS) Commerce.
 author: jblucher
-manager: AnnBe
 ms.date: 05/10/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailHardwareProfile, RetailTerminalTable
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 105011
 ms.assetid: 49a0fcc9-d4db-45ad-8c4b-213ccaced82b
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 32b7be42509a2c857f1357eb64a6b488f9cd2269
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2ac42c92d38299c20bfcb293ac062aa9e4b1c628
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415015"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779751"
 ---
 # <a name="shift-and-cash-drawer-management"></a>Zarządzanie zmianami i szufladami kasowymi
 
@@ -157,4 +154,7 @@ Wybierz kolejno opcje **Handel detaliczny i inny \> Kanały \> Sklepy \> Wszystk
 
 Ta konfiguracja pozwala zagwarantować, że zestawienia tworzone w systemach zaplecza będą obejmowały te same transakcje, jak zawierane na zmianach w aplikacji POS, a dane będą sumowane według tej zmiany.
 
-Aby uzyskać więcej informacji o metodach tworzenia zestawień i zamykania, zobacz [Konfiguracje sklepu dla zestawień sieci sprzedaży](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).
+Aby uzyskać więcej informacji o metodach tworzenia zestawień i zamykania, zobacz [Konfiguracje sklepu dla zestawień sieci sprzedaży](/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

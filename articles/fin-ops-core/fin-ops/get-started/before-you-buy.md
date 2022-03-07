@@ -2,11 +2,9 @@
 title: Zanim kupisz
 description: Wytyczne krok po kroku, które warto uwzględnić przy rozważaniu zakupu Dynamics 365 Finance, Dynamics 365 Supply Chain Management lub Dynamics 365 Commerce.
 author: ShellyBakke
-manager: AnnBe
 ms.date: 11/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: ea741e3d4b3a6ce93a30c9d8c8adc7c91b513871
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 648a793b15df5597c0c4c6f2f972e28bb0ce79a5
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798556"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750921"
 ---
 # <a name="before-you-buy"></a>Zanim kupisz
 
@@ -93,3 +91,6 @@ Microsoft FastTrack dla Dynamics 365 to usługa wsparcia wdrożeniowego, która 
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>W przypadku uaktualniania z systemu Dynamics AX 2012 lub migracji z systemu AX 2009
 
 Jeśli jesteś klientem, który uaktualniania z systemu Microsoft Dynamics AX 2012 lub migruje z systemu Microsoft Dynamics AX 2009, być może masz prawo do dłuższego okresu próbnego. Napisz na adres <daxcf@microsoft.com>, aby uzyskać więcej informacji.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: Modyfikowanie formatów w celu generowania dokumentów zawierających dane aplikacji
-description: Aby wykonać kroki opisane w tej procedurze, należy najpierw wykonać procedurę „ER Generowanie dokumentów z aktualizacją danych aplikacji (Część 3 — Modyfikowanie modelu i mapowania)”.
+description: W tym temacie opisano sposób projektowania konfiguracji raportowania elektronicznego (ER) do generowania dokumentu elektronicznego i aktualizowania danych aplikacji.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7dfa8fcb3525876da66659fe3bd8bbe3b81a37a3
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 96b36f987457d6973a96e90d6978438df7c8c6e4
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684554"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754247"
 ---
 # <a name="modify-formats-to-generate-documents-that-have-application-data"></a>Modyfikowanie formatów w celu generowania dokumentów zawierających dane aplikacji
 
@@ -149,3 +147,6 @@ Etapy w tej procedurze wyjaśniają sposób projektowania konfiguracji raportowa
 46. Zamknij stronę.
 47. Zamknij stronę.
 48. Zamknij stronę.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

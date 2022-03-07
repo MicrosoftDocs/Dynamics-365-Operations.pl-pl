@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f31dfa1fdbb3732610748abe4a9de851033f2b89
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a2539880e76ffb1861e0d18227a935a2ef35c120
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414959"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5210882"
 ---
 # <a name="work-with-preset-layouts"></a>Praca z układami predefiniowanymi
 
@@ -109,3 +108,6 @@ Po przejrzeniu zmian w predefiniowanym szablonie należy wykonać jedną z nast�
 [Omówienie szablonów i układów](templates-layouts-overview.md)
 
 [Praca z szablonami](work-with-templates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

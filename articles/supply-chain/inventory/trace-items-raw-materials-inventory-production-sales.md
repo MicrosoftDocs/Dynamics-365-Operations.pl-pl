@@ -1,12 +1,10 @@
 ---
 title: Śledzenie towarów i surowców w zapasach, produkcji i sprzedaży
 description: W tym temacie opisano sposób korzystania ze śledzenia towaru do identyfikowania, gdzie towary lub surowce zostały użyte, są używane lub będą używane w produkcji i procesach sprzedaży.
-author: perlynne
-manager: tfehr
+author: yufeihuang
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventTrackingDimTracing, InventTrackingDimTracingCriteria
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 30191
 ms.assetid: fdd0939a-855c-430f-a684-94f3baea1df4
 ms.search.region: Global
-ms.author: pjacobse
+ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9293578144c51baef34204a2b592d517baa3b0dd
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 95f59a3eca20634d03520ad88f71a3096309e23e
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967187"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571816"
 ---
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>Śledzenie towarów i surowców w zapasach, produkcji i sprzedaży
 
@@ -139,3 +137,6 @@ Można wygenerować raport **Wysłane do klientów** w celu zidentyfikowania ilo
 
 ## <a name="can-i-trace-coproducts-and-byproducts"></a>Czy mogę śledzić produkty towarzyszące i produkty uboczne?
 Można śledzić produkty towarzyszące, ale nie można śledzić produktów ubocznych, ponieważ wymiary śledzenia zwykle nie są przypisane do produktów ubocznych. Podczas śledzenia towaru szczegóły śledzenia uwzględniają wszelkie pokrewne produkty towarzyszące. Węzeł, który zawiera produkt towarzyszący, zawiera określenie „co-product” (produkt towarzyszący) w szczegółach. Można również wyświetlić szczegóły dotyczące produktu towarzyszącego, zaznaczając węzeł w szczegółach śledzenia, a następnie klikając skróconą kartę **Produkcja**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

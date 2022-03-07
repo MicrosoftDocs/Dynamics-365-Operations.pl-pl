@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 60bce611ae1f6ed5d63860793cd5d1da3c421a9e
-ms.sourcegitcommit: e3290eb58ae569a59d6ae2e6922e7d8be8f1980f
+ms.openlocfilehash: 98fd0b4a18b02ed58034ec6e22763ed7c66f567f5c9eeeed124996757470c419
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "7551811"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6766296"
 ---
 # <a name="overhead-calculation"></a>Obliczenie narzutu
 
@@ -1328,12 +1328,83 @@ W poniższej tabeli przedstawiono wynik, gdy usługi pakowania są stosowane jak
 ## <a name="conclusion"></a>Wniosek
 W rachunkowości finansowej koszt 10 000,00 za energię elektryczną jest księgowany w centrum kosztu o fikcyjnym identyfikatorze. W związku z tym księgowi kosztów będą wiedzieć, że ten koszt musi zostać rozdzielony. W rachunku kosztów koszty przepływają przez jednostki organizacyjne i poziomy na podstawie zasad i reguł, które są stosowane. Każdy koszt został skojarzony z podstawą alokacji, która zapewnia najlepszą ocenę alokacji kosztów.
 
-Składnik kosztu | Obiekt kosztów<br>CC099 | Obiekt kosztów<br>CC001 | Obiekt kosztów<br>CC002 | Obiekt kosztów<br>CC003 | Obiekt kosztów<br>CC004 | Obiekt kosztów<br>Proj 1 | Obiekt kosztów<br>Proj 2 | Obiekt kosztów<br>Prod 1 | Obiekt kosztów<br>Prod 2 | Suma
----|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:
-10001 Energia elektryczna | 0,00 | 0,00 | 0,00 | 0,00 |  | 30.00 | 10,00 | 7,770.57 | 2,189.43 | 10,000.00 |
-Niesklasyfikowane | 0,00 |  |  |  |  |  |  |  |  |  |
-Koszt stały | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |  |  | 776.36 | 223.64 | 1,000.00 |
-Koszt zmienny | 000 | 0,00 | 0,00 | 0,00 | 0,00 | 30.00 | 10,00 | 6,994.21 | 1,965.79 | 9,000.00 |
+<table>
+<thead>
+<tr>
+<th colspan="2" rowspan="2">Składnik kosztu</th>
+<th colspan="9">Obiekt kosztów</th>
+<th rowspan="2">Razem</th>
+</tr>
+<tr>
+<th>CC099</th>
+<th>CC001</th>
+<th>CC002</th>
+<th>CC003</th>
+<th>CC004</th>
+<th>Proj 1</th>
+<th>Proj 2</th>
+<th>Prod 1</th>
+<th>Prod 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2">10001 Energia elektryczna</td>
+<td style="text-align: right;"><strong>0,00</strong></td>
+<td style="text-align: right;"><strong>0,00</strong></td>
+<td style="text-align: right;"><strong>0,00</strong></td>
+<td style="text-align: right;"><strong>0,00</strong></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"><strong>30,00</strong></td>
+<td style="text-align: right;"><strong>10,00</strong></td>
+<td style="text-align: right;"><strong>7.770,57</strong></td>
+<td style="text-align: right;"><strong>2.189,43</strong></td>
+<td style="text-align: right;"><strong>10.000,00</strong></td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align: left;">Niesklasyfikowane</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;">Koszt stały</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">776.36</td>
+<td style="text-align: right;">223.64</td>
+<td style="text-align: right;"><strong>1.000,00</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;">Koszt zmienny</td>
+<td style="text-align: right;">000</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">30.00</td>
+<td style="text-align: right;">10,00</td>
+<td style="text-align: right;">6,994.21</td>
+<td style="text-align: right;">1,965.79</td>
+<td style="text-align: right;"><strong>9.000,00</strong></td>
+</tr>
+</tbody>
+</table>
 
 > [!NOTE]
 > W tym temacie opisano, jak podstawowy składnik kosztów — 10001 Energia elektryczna — przepływa przez obiekty kosztów. W efekcie ten koszt ogólny jest rozdzielany (alokowany) do najniższego poziomu w organizacji. Innymi słowy koszt jest zapisywany w ciężar (obciąża) obiekty kosztów na najniższym poziomie. Jeśli potrzebujesz obrazowego przepływu kosztów między obiektami kosztów, można to uzyskać za pomocą zasad akumulacji kosztów. Aby uzyskać więcej informacji, [Zasady akumulacji kosztów i obliczanie narzutu](cost-rollup.md).

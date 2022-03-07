@@ -1,25 +1,29 @@
 ---
-# required metadata
 title: Omówienie zarządzania kontrolą jakości i niezgodnością
-description: 'W tym temacie omówione są funkcje zarządzania jakością i niezgodnościami w systemie Microsoft Dynamics 365 Supply Chain Management i wyjaśniono, w jaki sposób mogą one pomóc w poprawie jakości produktów w łańcuchu dostaw.'
+description: W tym temacie omówione są funkcje zarządzania jakością i niezgodnościami w systemie Microsoft Dynamics 365 Supply Chain Management i wyjaśniono, w jaki sposób mogą one pomóc w poprawie jakości produktów w łańcuchu dostaw.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: overview
-ms.prod: null
-ms.technology: null
-ms.search.form: 'InventItemSampling, InventNonConformanceHistory, InventNonConformanceTable, InventQualityOrderLineResults, InventQualityOrderTable, InventTestCorrection, InventTestDiagnosticType, InventTestInstrument, InventTestReportSetup, InventTestTable'
+ms.prod: ''
+ms.technology: ''
+ms.search.form: InventItemSampling, InventNonConformanceHistory, InventNonConformanceTable, InventQualityOrderLineResults, InventQualityOrderTable, InventTestCorrection, InventTestDiagnosticType, InventTestInstrument, InventTestReportSetup, InventTestTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom:
-  - '11574'
-  - intro-internal
+- "11574"
+- intro-internal
 ms.assetid: 5ac8a059-5cb4-4cb5-ba14-b944bd08dae9
 ms.search.region: Global
 ms.author: yufeihuang
-ms.search.validFrom: '2016-02-28'
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1bb4bcb7f554c22b4e1ab1b41867bd2d3dcca4d4
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985527"
 ---
-
 # <a name="quality-and-nonconformance-management-overview"></a>Omówienie zarządzania kontrolą jakości i niezgodnością
 
 [!include [banner](../includes/banner.md)]

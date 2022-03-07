@@ -1,12 +1,10 @@
 ---
 title: Tworzenie struktur kont
-description: Ten przewodnik po zadaniach prowadzi przez proces tworzenia struktury konta.
+description: W tej procedurze omówiono tworzenie struktury konta.
 author: aprilolson
-manager: AnnBe
 ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DimensionConfigureAccountStructure, DimensionCreateAccountStructure, DimensionHierarchyAddLevel, DimensionHierarchyConstraintActivate
 audience: Application User
@@ -15,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4a8df7d7d9c4555bf46ac1cc3f71695837b1369b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e9ba43e243df4ba4b7c0eb6188629686206ff09b
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4968596"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394546"
 ---
 # <a name="create-account-structures"></a>Tworzenie struktur kont
 
 [!include [banner](../../includes/banner.md)]
 
-Ten przewodnik po zadaniach prowadzi przez proces tworzenia struktury konta. W krokach użyto danych firmy demonstracyjnej USMF.
+W tej procedurze omówiono tworzenie struktury konta. W krokach użyto danych firmy demonstracyjnej USMF.
 
 1. Wybierz kolejno opcje **Okienko nawigacji > Moduły > Księga główna > Plan kont > Struktury > Konfigurowanie struktur kont**.
 2. W **okienku akcji** kliknij **Nowe**, aby otworzyć rozwijane okno dialogowe.
@@ -60,3 +58,6 @@ Ten przewodnik po zadaniach prowadzi przez proces tworzenia struktury konta. W k
 29. W **okienku akcji** kliknij pozycję **Aktywuj**.
 30. Kliknij **Aktywacja**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

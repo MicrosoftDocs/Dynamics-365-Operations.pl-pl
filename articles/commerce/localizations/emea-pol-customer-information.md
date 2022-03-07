@@ -2,27 +2,24 @@
 title: Zarządzanie informacjami dotyczącymi klienta dla Polski
 description: W tym temacie opisano sposób obsługi informacji o klientach w programie Retail POS dla Polski.
 author: sepism
-manager: ''
-ms.date: 03/25/2020
+ms.date: 09/21/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile, RetailParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Poland
 ms.search.industry: Retail
 ms.author: sepism
 ms.search.validFrom: 2019-11-11
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: b38bb95254d5a9713f361a8dd5d9f2455471922a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5d24fc900780a10583e42bb72da7ae6ef1ed521a
+ms.sourcegitcommit: 47a3ad71210c7ac84d0c25e913c440b5ba205282
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408378"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "7512594"
 ---
 # <a name="customer-information-management-for-poland"></a>Zarządzanie informacjami dotyczącymi klienta dla Polski
 
@@ -36,7 +33,7 @@ W tym temacie opisano sposób obsługi informacji o odbiorcy, takich jak numer p
 Numer VAT odbiorcy można określić podczas tworzenia lub edytowania głównego rekordu odbiorcy w punkcie sprzedaży. Można także określić numer VAT dla transakcji sprzedaży, kopiując go z odbiorcy transakcji lub wprowadzając go ręcznie. Informacje dotyczące odbiorcy mogą być następnie drukowane zarówno na stałych, jak i fiskalnych przychodach i mogą być używane do celów fakturowania.
 
 > [!NOTE]
-> Ta funkcja jest dostępna w wersjach 10.0.7 i późniejszych.
+> Nie można określić numeru VAT odbiorcy w POS, gdy w profilu funkcji POS włączono opcję **Tworzenie odbiorcy w trybie asynchronicznym**. Obsługę trybu tworzenia asynchronicznego odbiorcy można dodać w przyszłych aktualizacjach.
 
 ## <a name="setup"></a>Konfiguracja
 
@@ -65,7 +62,7 @@ Na stronie **Siatki przycisków** wybierz siatkę przycisków, na której ma si�
 
 Jeśli dla transakcji sprzedaży nie określono informacji o odbiorcy, prośba o te informacje może zostać wyzwolona automatycznie po sfinalizowaniu transakcji. Ta metoda jest alternatywą dla operacji **Dodawania informacji o odbiorcy**.
 
-Aby uaktywnić opcję żądania informacji o odbiorcy, należy w sekcji **Umożliwienie zapytań dot. informacji o kliencie w transakcjach sprzedaży** na **Tak** w sekcji **Parametry podatkowe** na skróconej karcie pt. **Funkcje** na stronie **Funkcjonalności profili POS**.
+Aby aktywować zapytanie o informacje o kliencie, włącz funkcję **(Polska) Zarządzanie informacjami o kliencie w Retail POS** w obszarze roboczym **Zarządzanie funkcjami** i ustaw **Włącz zapytanie o informacje o kliencie w transakcjach sprzedaży** opcja do **Tak** w sekcji **Parametry podatkowe** na skróconej karcie **Funkcje** na stronie **Profile funkcji POS**.
 
 ### <a name="set-up-receipt-formats"></a>Konfiguracja formatów paragonu
 
@@ -266,3 +263,6 @@ Wykonaj następujące kroki, aby utworzyć możliwe do wdrożenia pakiety, któr
 
 1. Uruchom narzędzie **msbulid** dla całego zestawu Retail Software Development Kit (SDK), aby utworzyć pakiety do wdrożenia.
 1. Zastosuj pakiety za pośrednictwem Microsoft Dynamics Lifecycle Services (LCS) lub ręcznie. Aby uzyskać więcej informacji, zobacz [Pakiety Retail SDK](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

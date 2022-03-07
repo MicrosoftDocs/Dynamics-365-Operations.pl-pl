@@ -1,31 +1,33 @@
 ---
 title: Tworzenie planu urlopów i nieobecności
-description: W programie Dynamics 365 Human Resources można tworzyć plany różnego rodzaju urlopów.
-author: andreabichsel
-manager: AnnBe
-ms.date: 09/11/2020
+description: W tym temacie opisano sposób tworzenia planów urlopów w Dynamics 365 Human Resources dla różnych typów urlopów.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cb42860292c5e3e654917cf2f62b525993aa795a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9267b4d4025ef0e5cec2d3e995785a6291c850e5
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420119"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070257"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>Tworzenie planu urlopów i nieobecności
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Zdefiniuj plany urlopów i nieobecności w programie Dynamics 365 Human Resources dla każdego typu oferowanego urlopu. Plany urlopów i nieobecności mogą być naliczane z różnymi częstotliwościami, na przykład corocznie, miesięczne czy co pół miesiąca. Plan można również zdefiniować jako przydział, gdzie jedno naliczanie odbywa się w określonym dniu. Można na przykład utworzyć plan przyznający corocznie urlopy na żądanie.
 
@@ -383,3 +385,6 @@ Prognozowane saldo (30) = Kwota naliczeń (10 × 1) + Saldo bieżące (40) – K
 - [Omówienie urlopów i nieobecności](hr-leave-and-absence-overview.md)
 - [Konfigurowanie typów urlopów i nieobecności](hr-leave-and-absence-types.md)
 - [Naliczanie do planów urlopów i nieobecności](hr-leave-and-absence-accrue.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

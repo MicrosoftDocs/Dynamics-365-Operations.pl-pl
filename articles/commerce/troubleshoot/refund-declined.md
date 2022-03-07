@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8880d72d702758d611755bce48a331e3f2e28ca1b7abf485e8b4f7301317c875
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 99fd4b816b1a3a1fe3c2d1579be45b43fdc3d385
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738631"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020763"
 ---
 # <a name="refund-on-a-return-order-is-declined"></a>Zwrot za zamówienie zwrotu został odrzucony
 
@@ -34,9 +34,9 @@ Zwrot jest odrzucany, jeśli karta kredytowa użyta do zafakturowana zamówienia
 
 Szczegóły autoryzacji płatności będą zawierać następujący komunikat o błędzie: „Brama Adyen SendRequest () nie powiodła się ze statusem„ InternalServerError ”. 22144; Adyen zwróciła pustą odpowiedź. (22001);”
 
-![Odrzucony zwrot pieniędzy z powodu błędu zamówienia zwrotu.](media/refund-order-decline.jpg)
+![Odrzucony zwrot pieniędzy z powodu błędu zamówienia zwrotu](media/refund-order-decline.jpg)
 
-## <a name="resolution"></a>Rozwiązanie
+## <a name="resolution"></a>Rozdzielczość
 
 ### <a name="enable-blind-returns-in-adyen"></a>Włącz zwroty w ciemno w Adyen
 

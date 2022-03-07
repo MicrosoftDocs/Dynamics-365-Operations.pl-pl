@@ -2,7 +2,7 @@
 title: Projektowanie konfiguracji projektu w celu generowania dokumentów wychodzących w formacie programu Excel
 description: Ten temat zawiera informacje o tym, jak zaprojektować format modułu raportowania elektronicznego (ER) do wypełniania w szablonie programu Excel, a następnie generować dokumenty wychodzące w formacie programu Excel.
 author: NickSelin
-ms.date: 01/05/2022
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9b1c83894d93789a270ed4521ba7f80da70285ac
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 87d5929557e5120a5339ee46eac655fd399679d1
+ms.sourcegitcommit: f51e74ee9162fe2b63c6ce236e514840795acfe1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952659"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "7943619"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Projektowanie konfiguracji projektu w celu generowania dokumentów wychodzących w formacie programu Excel
 
@@ -379,7 +379,7 @@ Jeśli jeden z szablonów zawiera tabelę przestawną opartą na modelu PowerPiv
     2. Funkcji tej można użyć w celu wygenerowania na podstawie danych finansowych drugiego skoroszytu programu Excel (skoroszyt B) z wymaganymi szczegółami. 
     3. Po wygenerowaniu skoroszytu B zapoznaj się ze skoroszytem B w skoroszycie A.
 
-- Wyłącz funkcję **Zezwalaj na korzystanie z biblioteki EPPlus w Strukturze raportowania elektronicznego**, aby korzystać z opcji innej niż EPPlus. 
+- Aby wyłączyć tę funkcję, należy użyć opcji innej niż EPPlus. 
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

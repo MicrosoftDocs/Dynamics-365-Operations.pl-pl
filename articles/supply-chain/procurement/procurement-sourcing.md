@@ -1,27 +1,27 @@
 ---
 title: Zaopatrzenie i sourcing — strona główna
 description: Ten temat zawiera listę tematów Pomocy oraz innych zasobów dostępnych dla modułu Zaopatrzenie i sourcing.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 09/27/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-- "50651"
-- intro-internal
+ms.custom: 50651
 ms.assetid: 17f06036-cac2-4c28-8dc6-1dff6b81a7cc
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 54ddaee1fd820435c245f3946ae1cc91209b12d4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a8d47aa7ebe61a0ac90f4f4794a8eeff7e84974f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565502"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5218448"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Zaopatrzenie i sourcing — strona główna
 
@@ -78,18 +78,19 @@ Zaopatrzenie i sourcing obejmują wszystkie etapy od identyfikacji popytu na pro
 -   [Tworzenie zamówienia zakupu dla dostawcy jednorazowego](tasks/create-purchase-order-one-time-supplier.md)
 -   [Tworzenie zamówienia zakupu z harmonogramem dostaw](tasks/create-purchase-order-delivery-schedule.md)
 -   [Tworzenie zamówienia zwrotu zakupu](tasks/create-purchase-return-order.md)
--   [Zastosowanie umowy zakupu podczas tworzenia zamówienia zakupu](tasks/create-purchase-release-order-purchase-agreement.md)
+-   [Tworzenie zlecenia wydania zakupu na podstawie umów zakupu](tasks/create-purchase-release-order-purchase-agreement.md)
+-   [Tworzenie zlecenia wydania zakupu podczas tworzenia zamówienia zakupu](tasks/create-purchase-release-order-creating-purchase-order.md)
 -   [Tworzenie zamówienia uzupełnienia zapasów konsygnacyjnych](../inventory/tasks/create-consignment-replenishment-order.md)
 
 ## <a name="prices-and-discounts"></a>Ceny i rabaty
 -   [Umowy zakupu](purchase-agreements.md)
 -   [Tworzenie umowy zakupu](tasks/create-purchase-agreement.md)
--   [Rabaty dostawców](/dynamics/s-e/) (oficjalny dokument)
+-   [Rabaty dostawców](https://docs.microsoft.com/dynamics/s-e/) (oficjalny dokument)
 
 ## <a name="product-receipt-and-invoicing"></a>Dokument przyjęcia produktów i fakturowanie
 -   [Przyjęcie produktów względem zamówień zakupu](product-receipt-against-purchase-orders.md)
--   [Omówienie faktur od dostawców](../../finance/accounts-payable/vendor-invoices-overview.md)
--   [Profile księgowania dostawców](../../finance/accounts-payable/vendor-posting-profiles.md)
+-   [Omówienie faktur od dostawców](../../financials/accounts-payable/vendor-invoices-overview.md)
+-   [Profile księgowania dostawców](../../financials/accounts-payable/vendor-posting-profiles.md)
 
 ## <a name="procurement-and-sourcing-workflows"></a>Przepływy pracy dla zaopatrzenia i sourcingu
 -   [Omówienie zaopatrzenia i sourcingu](procurement-sourcing-overview.md)

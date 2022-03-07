@@ -1,25 +1,30 @@
 ---
-# required metadata
 title: Omówienie uzgadniania rozrachunków z dostawcami
-description: 'Uzgadnianie faktur rozrachunków z dostawcami jest procesem uzgadniania obejmującym informacje z faktury dostawcy, zamówienia zakupu i przyjęć produktów.'
-author: sunfzam
+description: Uzgadnianie faktur rozrachunków z dostawcami jest procesem uzgadniania obejmującym informacje z faktury dostawcy, zamówienia zakupu i przyjęć produktów.
+author: abruer
+manager: AnnBe
 ms.date: 07/25/2019
-ms.topic: overview
-ms.prod: null
-ms.technology: null
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
 ms.search.form: VendInvoicePostingHistory
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-  - '27361'
-  - intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 27361
 ms.assetid: 9f3dace7-05d8-4974-8f85-aca2e224876c
 ms.search.region: Global
 ms.author: shpandey
-ms.search.validFrom: '2016-02-28'
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a8e283038a0cc1c9834a827c453f2951e9e87bcf
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446886"
 ---
-
 # <a name="accounts-payable-invoice-matching-overview"></a>Omówienie uzgadniania rozrachunków z dostawcami
 
 [!include [banner](../includes/banner.md)]
@@ -44,7 +49,7 @@ Można użyć następujących typów uzgadniania faktur w rozliczeniach z dostaw
 
 Uzgadnianie dwuelementowe i trzyelementowe zawsze uzgadnia informacje o cenie na podstawie ceny jednostki. Za pomocą tych zasad można też uzgadniać informacje o cenach według ceny całkowitej.
 -   Uzgadnianie ceny jednostkowej netto — dopasowywanie informacji dla uzgadniania dwu- i trzyelementowego przez porównywanie ceny jednostkowej netto dla każdego wiersza z odpowiednia ceną jednostkową netto na zamówieniu zakupu. Cena jednostkowa netto jest określana według następującego wzoru: kwota netto wiersza / ilość w wierszu
--   Uzgodnienie cen całkowitych — dopasowywanie informacji dla uzgadniania dwu- i trzyelementowego przez porównywanie ceny jednostkowej netto dla każdego wiersza z odpowiednia kwotą netto na zamówieniu zakupu. Kwota netto jest określana według następującego wzoru: *(cena jednostkowa \* ilość w wierszu) + opłaty za wiersze - rabaty wiersza*. Podczas uzgadniania cen całkowitych według wartości procentowej system porównuje wartości w walucie transakcji. Podczas uzgadniania cen całkowitych według kwoty system porównuje wartości w walucie rozliczeniowej. Podczas częściowej fakturowania wiersza zamówienia zakupu weryfikacja uzgadniania cen całkowitych jest sprawdzana na ostatniej fakturze dla tego wiersza. 
+-   Uzgodnienie cen całkowitych — dopasowywanie informacji dla uzgadniania dwu- i trzyelementowego przez porównywanie ceny jednostkowej netto dla każdego wiersza z odpowiednia kwotą netto na zamówieniu zakupu. Kwota netto jest określana według następującego wzoru: *(cena jednostkowa \* ilość w wierszu) + opłaty za wiersze - rabaty wiersza*. Podczas uzgadniania cen całkowitych według wartości procentowej system porównuje wartości w walucie transakcji. Podczas uzgadniania cen całkowitych według kwoty system porównuje wartości w walucie rozliczeniowej.
 
 Na ogół obliczenia związane z uzgadnianiem faktur są wykonywane automatycznie podczas edytowania faktur od dostawcy na stronie Faktura od dostawcy. Ewentualnie uzgadnianie faktur może być wykonywane na żądanie, jeśli jest taka potrzeba. Uzgadnianie faktur na żądanie jest kontrolowane dla firmy za pomocą opcji Automatycznie aktualizuj stan nagłówka faktury na stronie Parametry modułu rozrachunków z dostawcami na karcie Weryfikacja faktury. Uzgadnianie faktury może być również wykonane w ramach procesu przeglądania faktury. Można wyświetlić wyniki uzgadniania faktury na stronie Faktura od dostawcy i na pokrewnych stronach uzgadniania faktur.
 
@@ -189,6 +194,3 @@ Aby uzyskać więcej informacji, zobacz [Trzyelementowe zasady uzgadniania](thre
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

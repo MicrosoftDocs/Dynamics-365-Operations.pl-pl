@@ -2,8 +2,11 @@
 title: Lista funkcji modułu ER w kategorii funkcji specyficznych dla domeny biznesowej
 description: Ten temat zawiera ogólne informacje o funkcjach specyficznych dla domeny biznesowej obsługiwanych w module Raportowanie elektroniczne (ER).
 author: NickSelin
+manager: kfend
 ms.date: 12/12/2019
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -14,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a8f0812e4262a264ffc89b72e0f4fc8c55d6c6822095f550c8f05296bb057a38
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8f7612e83d9f30281e2b1a783275365459e67a40
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712340"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686130"
 ---
 # <a name="list-of-er-functions-in-the-business-domainspecific-category"></a>Lista funkcji modułu ER w kategorii funkcji specyficznych dla domeny biznesowej
 
@@ -52,6 +55,3 @@ Funkcje specyficzne dla domeny w module raportowania elektronicznego (ER) mogą 
 [Projektant formuł w module Raportowanie elektroniczne](general-electronic-reporting-formula-designer.md)
 
 [Język formuł raportowania elektronicznego](er-formula-language.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

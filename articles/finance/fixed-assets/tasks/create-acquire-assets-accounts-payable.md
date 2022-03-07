@@ -1,10 +1,12 @@
 ---
 title: Tworzenie i nabywanie środków trwałych z modułu Rozrachunki z dostawcami
-description: W tej procedurze omówiono tworzenie i nabywanie środka trwałego za pomocą procesu zakupów.
+description: Ten przewodnik po zadaniach zawiera instruktaż tworzenia i nabywania środka trwałego za pomocą procesu zakupów.
 author: saraschi2
+manager: AnnBe
 ms.date: 08/13/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetParameters, VendInvoiceWorkspace, VendEditInvoice, VendTableLookup, InventItemIdLookupSimple, AssetTable
 audience: Application User
@@ -13,18 +15,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dbac069362a15b5ab1d2dbf88a732a14a3cf709d
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: cb7c92fcab622109b01590d4acadce0d707d3d2d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394665"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5227095"
 ---
 # <a name="create-and-acquire-assets-from-accounts-payable"></a>Tworzenie i nabywanie środków trwałych z modułu Rozrachunki z dostawcami
 
 [!include [banner](../../includes/banner.md)]
 
-W tej procedurze omówiono tworzenie i nabywanie środka trwałego za pomocą procesu zakupów.  Wykorzystuje role Księgowy i Pracownik ds. rozrachunków z dostawcami oraz firmę demonstracyjną USMF.
+Ten przewodnik po zadaniach zawiera instruktaż tworzenia i nabywania środka trwałego za pomocą procesu zakupów.  Wykorzystuje role Księgowy i Pracownik ds. rozrachunków z dostawcami oraz firmę demonstracyjną USMF.
 
 
 ## <a name="set-fixed-assets-parameters"></a>Konfigurowanie parametrów środków trwałych

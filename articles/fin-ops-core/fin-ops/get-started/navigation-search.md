@@ -2,11 +2,9 @@
 title: Nawigacja z wyszukiwaniem
 description: W tym temacie wyjaśniono, jak za pomocą funkcji wyszukiwania nawigować między stronami.
 author: aneesmsft
-manager: AnnBe
-ms.date: 04/27/2017
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -16,16 +14,19 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 43fa263bcbb6f5a6465af59ffb744aa865d66239
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 9e689bef43930dbe364baefaa9f4d0231394ff4f
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4799115"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069991"
 ---
 # <a name="navigation-search"></a>Nawigacja z wyszukiwaniem
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 W tym temacie wyjaśniono, jak za pomocą funkcji wyszukiwania nawigować między stronami.
 
@@ -36,7 +37,7 @@ Aby użyć tej funkcji, kliknij ikonę **wyszukiwania**, aby wyświetlić pole *
 > [!NOTE]
 > **Pole wyszukiwania** ułatwia znajdowanie i przechodzenie do stron. Nie pomaga w wyszukiwaniu konkretnych danych ani akcji.
 
-[![pole wyszukiwania](media/navigation-search.png "Pole wyszukiwania")
+![pole wyszukiwania.](media/navigation-search.png "Pole wyszukiwania")
 
 ## <a name="quickly-navigate-to-a-particular-page"></a>Szybkie przechodzenie do określonej strony
 
@@ -62,3 +63,6 @@ Lista wyników wyszukiwania jest ograniczona do 10 pozycji. Jeśli w wynikach ni
 ## <a name="development"></a>Programowanie
 
 Z programistycznego punktu widzenia funkcja nawigacji z wyszukiwaniem jest łatwa do wykorzystania, ponieważ wdrażane elementy menu mogą pojawiać się w wynikach wyszukiwania niemal natychmiast. Jeśli tylko elementy menu mają łącza do okienka nawigacji lub pulpitu nawigacyjnego, automatycznie stają się one dostępne do wyszukiwania.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

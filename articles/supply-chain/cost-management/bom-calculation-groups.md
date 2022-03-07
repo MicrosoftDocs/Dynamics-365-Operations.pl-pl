@@ -13,15 +13,15 @@ ms.custom: 94063
 ms.assetid: 63e1b7dc-c2c5-41b0-81ed-e3e02d1b39e0
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: aevengir
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 098a2fc065f6ace992dba1b1ae78756d456eb73a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ce954b61b4d6a12f2bc62a71ef2e1bc69732a4c0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579863"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5813298"
 ---
 # <a name="bom-calculations-groups"></a>Grupy obliczeń BOM
 

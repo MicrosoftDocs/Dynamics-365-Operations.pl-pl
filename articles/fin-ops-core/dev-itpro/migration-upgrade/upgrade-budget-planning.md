@@ -1,27 +1,26 @@
 ---
-title: Uaktualnienie funkcjonalności planowania budżetu
-description: Istnieją znaczne różnice funkcjonalności planowania budżetu między programami Microsoft Dynamics AX 2012 i Dynamics 365 Finance. Niektóre funkcje nie zostały uaktualnione i dlatego wymagają zmiany konfiguracji. W tym temacie wyjaśniono, co trzeba ponownie skonfigurować, oraz opisano nowe funkcje, które trzeba wziąć pod uwagę po wykonaniu uaktualnienia.
-author: ryansandness
+title: Uaktualnianie funkcjonalności planowania budżetu
+description: W tym temacie wyjaśniono, co trzeba ponownie skonfigurować, oraz opisano nowe funkcje, które trzeba wziąć pod uwagę po wykonaniu uaktualnienia.
+author: panolte
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.custom: 272923
 ms.assetid: 17cdfe74-bdfd-466a-9bdd-c12583f250c7
 ms.search.region: Global
-ms.author: ryansand
+ms.author: panolte
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 1c62771170212039112c777e55d45a0d88d2f49d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 86c4d83d35c7ca6bd5fe3a9f6c09e0457b40c523
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681005"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5565071"
 ---
 # <a name="upgrade-budget-planning"></a>Uaktualnienie funkcjonalności planowania budżetu
 
@@ -162,3 +161,6 @@ Dodano kilka jednostek danych umożliwiających szybkie wdrażanie funkcjonalno�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

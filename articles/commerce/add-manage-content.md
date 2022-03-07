@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 802a41b8c55e65eee58d26137c2f160b69847010
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: eb0b1c3f77bb71ba04c9110ed25fb80c2f2e61f4
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414888"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5208070"
 ---
 # <a name="ways-to-add-content"></a>Sposoby dodawania zawartości
 
@@ -57,3 +56,6 @@ Aby rozpocząć, wybierz jeden z poniższych tematów.
 [Dokumentowanie stanów i cyklów życia](document-states-overview.md)
 
 [Włączanie i używanie udostępniania między kanałami](cross-channel-sharing.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

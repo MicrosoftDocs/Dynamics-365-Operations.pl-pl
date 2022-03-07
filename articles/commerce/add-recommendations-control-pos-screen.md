@@ -1,17 +1,14 @@
 ---
 title: Dodawanie rekomendacji do ekranu transakcji
-description: W tym temacie opisano sposób dodawania kontrolki rekomendacji do ekranu transakcji na urządzeniu w punkcie sprzedaży (POS) przy użyciu projektanta układu ekranu w Microsoft Dynamics 365 Commerce.
+description: W tym temacie opisano sposób dodawania formantu rekomendacji do ekranu transakcji na urządzeniu w punkcie sprzedaży (POS) przy użyciu projektanta układu ekranu w programie Microsoft Dynamics 365 Commerce.
 author: bebeale
-manager: AnnBe
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 260624
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
 ms.search.region: global
@@ -19,19 +16,19 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: af2450b27106325a86f6db68f9791637694cda63
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: af76169455cef16467b1faa9eda92a969aa923e85750cf245b0a6bd071a092e8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414825"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6731014"
 ---
 # <a name="add-recommendations-to-the-transaction-screen"></a>Dodawanie rekomendacji do ekranu transakcji
 
 [!include [banner](includes/banner.md)]
 
 
-W tym temacie opisano sposób dodawania kontrolki rekomendacji do ekranu transakcji na urządzeniu w punkcie sprzedaży (POS) przy użyciu projektanta układu ekranu w Microsoft Dynamics 365 Commerce. Aby uzyskać więcej informacji na temat zaleceń dotyczących produktów, zapoznaj się z [zaleceniami dotyczącymi produktów w dokumentacji punktu sprzedaży](product.md).
+W tym temacie opisano sposób dodawania formantu rekomendacji do ekranu transakcji na urządzeniu w punkcie sprzedaży (POS) przy użyciu projektanta układu ekranu w programie Microsoft Dynamics 365 Commerce. Aby uzyskać więcej informacji na temat zaleceń dotyczących produktów, zapoznaj się z [zaleceniami dotyczącymi produktów w dokumentacji punktu sprzedaży](product.md).
 
 
 Rekomendacje produktów mogą być wyświetlane na urządzeniu punktu sprzedaży podczas używania Commerce. Aby wyświetlać rekomendacje produktów, należy za pomocą projektanta układu ekranu dodać formant do ekranu transakcji. 
@@ -46,7 +43,7 @@ Rekomendacje produktów mogą być wyświetlane na urządzeniu punktu sprzedaży
 6. Po zalogowaniu się zobaczysz stronę podobną do przedstawionej poniżej. Układ może się różnić w zależności od dostosowań wprowadzonych dla sklepu.
 
 
-    [![Projektant układu](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
+    [![Projektant układu.](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
 
 ## <a name="choose-a-display-option"></a>Wybierz opcję wyświetlaną
 
@@ -61,11 +58,11 @@ Dostępne są dwie opcje konfiguracji. Wybierz opcję, która sprawdza się najl
 1. Zmniejsz wysokość obszaru szczegółów wierszy transakcji, tak aby była taka sama, jak wysokość panelu odbiorcy po lewej stronie.
 
 
-    [![Zmniejszona wysokość obszaru szczegółów wierszy transakcji](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
+    [![Zmniejszona wysokość obszaru szczegółów wierszy transakcji.](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
 
 2. Z menu po lewej stronie przeciągnij formant rekomendacji i upuść go między obszar szczegółów wierszy transakcji a siatkę przycisków na środku w dolnej części ekranu transakcji. Zmień rozmiar formantu, tak aby mieścił się w tej przestrzeni.
 
-    [![Formant rekomendacji dodany do układu](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
+    [![Formant rekomendacji dodany do układu.](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
 
 
 3. Kliknij przycisk **X**, aby zapisać zmiany i zamknąć projektanta układu.
@@ -80,13 +77,13 @@ Dostępne są dwie opcje konfiguracji. Wybierz opcję, która sprawdza się najl
 
 2. Kliknij **Dostosuj**.
 
-    [![Dostosowywanie — okno dialogowe Formant karty](./media/pic-5.png)](./media/pic-5.png)
+    [![Dostosowywanie — okno dialogowe Formant karty.](./media/pic-5.png)](./media/pic-5.png)
 
 3. Kliknij opcję **Nowa karta**.
 4. Znajdź nową kartę, który została właśnie dodana. Może być konieczne przewinięcie w dół.
 5. Na liście rozwijanej **Zawartość** wybierz opcję **Rekomendowane produkty**.
 
-    [![Wybieranie Rekomendowanych produktów w polu Zawartość](./media/pic-6.png)](./media/pic-6.png)
+    [![Wybieranie Rekomendowanych produktów w polu Zawartość.](./media/pic-6.png)](./media/pic-6.png)
 
 6. W polu **Etykieta** wpisz nazwę karty rekomendacji. Na przykład wpisz „Zalecane produkty”.
 7. W polu **Obraz** zaznacz ilustrację, która ma być wyświetlana na karcie.
@@ -119,3 +116,6 @@ Dostępne są dwie opcje konfiguracji. Wybierz opcję, która sprawdza się najl
 [Tworzenie rekomendacji z danymi demonstracyjnymi](product-recommendations-demo-data.md)
 
 [Rekomendacje produktów — często zadawane pytania](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

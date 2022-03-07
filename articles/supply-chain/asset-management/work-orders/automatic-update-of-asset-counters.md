@@ -1,12 +1,10 @@
 ---
 title: Automatyczna aktualizacja liczników składników majątku
 description: W tym temacie opisano automatyczną aktualizację liczników składników majątku w module Zarządzanie składnikami majątku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d3e8619439545cf3ea42f84a6dd7ee6ffdf1026e
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 9a3814a575fbe4379b59723f269d83379a253ede71962c0c82b5f4cc55d36e6c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021937"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6738302"
 ---
 # <a name="automatic-update-of-asset-counters"></a>Automatyczna aktualizacja liczników zasobów
 
@@ -51,7 +49,7 @@ Jak wspomniano powyżej, liczniki automatyczne mogą być aktualizowane na podst
 
     Na poniższej ilustracji przedstawiono przykład okna dialogowego **Aktualizowanie liczników składnika majątku**.
 
-    ![Rysunek 1](media/12-work-orders.png)
+    ![Rysunek 1.](media/12-work-orders.png)
 
 5. Kliknij przycisk **OK**. 
 
@@ -61,7 +59,7 @@ Na stronie **Zagregowana wartość składnika majątku** można uzyskać przegl�
 
 Na poniższej ilustracji przedstawiono przykład strony **Zagregowana wartość składnika majątku**.
 
-![Rysunek 2](media/13-work-orders.png)
+![Rysunek 2.](media/13-work-orders.png)
 
 Należy uwzględnić następujące informacje:
 
@@ -69,3 +67,6 @@ Należy uwzględnić następujące informacje:
 
 - Możesz konfigurować liczniki powiązane z innym licznikiem. W tym przypadku jeśli licznik jest aktualizowany, powiązane liczniki są automatycznie aktualizowane w tym samym czasie. Aby uzyskać więcej informacji na temat sposobu konfigurowania powiązanych liczników, zobacz [Liczniki](../setup-for-objects/counters.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

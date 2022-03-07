@@ -1,21 +1,23 @@
 ---
 title: Integracja zaopatrzenia między aplikacjami Supply Chain Management i Field Service
 description: W tym temacie opisano, w jaki sposób integracja podwójnego zapisu obsługuje tworzenie i aktualizacje zamówień zakupu zarówno z aplikacji Supply Chain Management i Field Service.
-author: RamaKrishnamoorthy
+author: RichardLuan
 ms.date: 11/11/2020
 ms.topic: article
+ms.prod: ''
+ms.technology: ''
 audience: Application User
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: tfehr
+ms.author: rhaertle
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: ab251ee60bf3c831b0139beb9557c6b3faaf9f66
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 2c27f06524b91f91d95ef4b901740e7761232c28
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783290"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941116"
 ---
 # <a name="integrate-procurement-between-supply-chain-management-and-field-service"></a>Integracja zaopatrzenia między aplikacjami Supply Chain Management i Field Service
 
@@ -29,7 +31,7 @@ Integracja ta obsługuje tworzenie zamówień zakupu, a w większości przypadk�
 
 Na poniższej ilustracji przedstawiono tabele na obu platformach oraz sposób ich wzajemnego mapowania. Zamówienia zakupu w usłudze Field Service odwołują się do wiersza *konta*, podczas gdy zamówienia zakupu w aplikacji Supply Chain Management odwołują się do wiersza *dostawcy*. Aby rozwiązać ten problem, w przypadku podwójnego zapisu odwołanie jest używane do łączenia wierszy *dostawcy* z wierszami *konta*. Aby uzyskać więcej informacji, zobacz temat [Zintegrowane dane główne dostawcy](vendor-mapping.md)
 
-![Mapowania zaopatrzenia.](media/scm-field-service-tables.png)
+![Mapowania zaopatrzenia](media/scm-field-service-tables.png)
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -194,10 +196,23 @@ Do integracji dokumentów związanych z zaopatrzeniem służą następujące sza
 
 | Zarządzanie łańcuchem dostaw | Field Service | opis |
 |---|---|---|
-| [Nagłówek zamówienia zakupu (wersja 2)](mapping-reference.md#183) | msdyn\_Purchaseorders | Ta tabela zawiera kolumny reprezentujące nagłówek zamówienia zakupu. |
-| [Jednostka wiersza zamówienia zakupu](mapping-reference.md#181) | msdyn\_PurchaseOrderProducts | Ta tabela zawiera wiersze reprezentujące wiersze w zamówieniu zakupu. Numer produktu jest używany podczas synchronizacji. Identyfikuje produkt jako jednostkę magazynową (SKU), w tym wymiary produktu. Aby uzyskać więcej informacji na temat integracji produktów z usługą Dataverse, zobacz temat [Ujednolicone działanie produktu](product-mapping.md). |
-| [Nagłówek dokumentu przyjęcia produktów](mapping-reference.md#185) | msdyn\_purchaseorderreceipts | Ta tabela zawiera nagłówki dokumentów przyjęcia produktów, które są tworzone po zaksięgowaniu dokumentu przyjęcia produktów w aplikacji Supply Chain Management. |
-| [Wiersz dokumentu przyjęcia produktów](mapping-reference.md#184) | msdyn\_purchaseorderreceiptproducts | Ta tabela zawiera wiersze dokumentów przyjęcia produktów, które są tworzone po zaksięgowaniu dokumentu przyjęcia produktów w aplikacji Supply Chain Management. |
-| [Jednostka usuniętego nietrwale wiersza zamówienia zakupu](mapping-reference.md#182) | msdyn\_purchaseorderproducts | Ta tabela zawiera informacje o wierszach zamówienia zakupu, które są usuwane nietrwale. Wiersz zamówienia zakupu w aplikacji Supply Chain Management można usunąć nietrwale tylko wtedy, gdy zamówienie zakupu zostało potwierdzone lub zatwierdzone w przypadku włączenia zarządzania zmianami. Wiersz istnieje w bazie danych Supply Chain Management i jest oznaczony jako **IsDeleted**. Ponieważ usługa Dataverse nie ma koncepcji usuwania nietrwałego, bardzo ważne jest, aby te informacje zostały zsynchronizowane z usługą Dataverse. W ten sposób wiersze, które są usuwane nietrwale w aplikacji Supply Chain Management, mogą być automatycznie usuwane z usługi Dataverse. W tym przypadku logika usuwania wiersza w usłudze Dataverse jest zlokalizowana w rozszerzonej aplikacji Supply Chain Management. |
+| Nagłówek zamówienia zakupu (wersja 2) | msdyn\_Purchaseorders | Ta tabela zawiera kolumny reprezentujące nagłówek zamówienia zakupu. |
+| Jednostka wiersza zamówienia zakupu | msdyn\_PurchaseOrderProducts | Ta tabela zawiera wiersze reprezentujące wiersze w zamówieniu zakupu. Numer produktu jest używany podczas synchronizacji. Identyfikuje produkt jako jednostkę magazynową (SKU), w tym wymiary produktu. Aby uzyskać więcej informacji na temat integracji produktów z usługą Dataverse, zobacz temat [Ujednolicone działanie produktu](product-mapping.md). |
+| Nagłówek dokumentu przyjęcia produktów | msdyn\_purchaseorderreceipts | Ta tabela zawiera nagłówki dokumentów przyjęcia produktów, które są tworzone po zaksięgowaniu dokumentu przyjęcia produktów w aplikacji Supply Chain Management. |
+| Wiersz dokumentu przyjęcia produktów | msdyn\_purchaseorderreceiptproducts | Ta tabela zawiera wiersze dokumentów przyjęcia produktów, które są tworzone po zaksięgowaniu dokumentu przyjęcia produktów w aplikacji Supply Chain Management. |
+| Jednostka usuniętego nietrwale wiersza zamówienia zakupu | msdyn\_purchaseorderproducts | Ta tabela zawiera informacje o wierszach zamówienia zakupu, które są usuwane nietrwale. Wiersz zamówienia zakupu w aplikacji Supply Chain Management można usunąć nietrwale tylko wtedy, gdy zamówienie zakupu zostało potwierdzone lub zatwierdzone w przypadku włączenia zarządzania zmianami. Wiersz istnieje w bazie danych Supply Chain Management i jest oznaczony jako **IsDeleted**. Ponieważ usługa Dataverse nie ma koncepcji usuwania nietrwałego, bardzo ważne jest, aby te informacje zostały zsynchronizowane z usługą Dataverse. W ten sposób wiersze, które są usuwane nietrwale w aplikacji Supply Chain Management, mogą być automatycznie usuwane z usługi Dataverse. W tym przypadku logika usuwania wiersza w usłudze Dataverse jest zlokalizowana w rozszerzonej aplikacji Supply Chain Management. |
+
+[!include [banner](../../includes/dual-write-symbols.md)]
+
+[!include [Currency](includes/productreceiptheader-msdyn-purchaseorderreceipts.md)]
+
+[!include [Currency](includes/productreceiptline-msdyn-purchaseorderreceiptproducts.md)]
+
+[!include [Currency](includes/purchaseorderheadersv2-msdyn-purchaseorders.md)]
+
+[!include [Currency](includes/purchaseorderlinesoftdeletedtable-msdyn-purchaseorderproducts.md)]
+
+[!include [Currency](includes/purchaseorderlinetable-msdyn-purchaseorderproducts.md)]
+
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

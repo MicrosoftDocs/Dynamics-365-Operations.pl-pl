@@ -1,25 +1,29 @@
 ---
-# required metadata
 title: Omówienie usuwania rozbieżności podczas dopasowywania sum faktur
-description: 'Uzgadnianie sum faktury może pomóc zagwarantować, że rozbieżność sum faktury i kwot oczekiwanych nie wykracza poza dopuszczalne limity tolerancji.'
+description: Uzgadnianie sum faktury może pomóc zagwarantować, że rozbieżność sum faktury i kwot oczekiwanych nie wykracza poza dopuszczalne limity tolerancji.
 author: abruer
 ms.date: 07/25/2019
 ms.topic: overview
-ms.prod: null
-ms.technology: null
+ms.prod: ''
+ms.technology: ''
 ms.search.form: VendTotalPriceTolerance
 audience: Application User
 ms.reviewer: roschlom
 ms.custom:
-  - '63413'
-  - intro-internal
+- "63413"
+- intro-internal
 ms.assetid: 9ac42457-95b2-4191-ad06-c7e323704466
 ms.search.region: Global
 ms.author: shpandey
-ms.search.validFrom: '2016-02-28'
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4f15edb0423bba2a6fe01f4b3ef1ba1be4e463d4
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985320"
 ---
-
 # <a name="resolve-discrepancies-during-invoice-totals-matching-overview"></a>Omówienie usuwania rozbieżności podczas dopasowywania sum faktur
 
 [!include [banner](../includes/banner.md)]

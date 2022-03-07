@@ -1,12 +1,10 @@
 ---
 title: Dodawanie błędu do zlecenia pracy
 description: W tym temacie opisano sposób dodawania rejestracji błędów do zleceń pracy w module Zarządzanie składnikami majątku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 083ceca9605ad044c172ba7aa23739d170f8c301
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 30cd077402928bc33949b821b9b114fbf8a632f2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019311"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359156"
 ---
 # <a name="add-fault-to-work-order"></a>Dodawanie błędu do zlecenia pracy
 
@@ -52,7 +50,7 @@ Do zlecenia pracy można dodawać usterki, które zostały skonfigurowane w proj
 
 Na poniższej ilustracji pokazano przykład rejestracji usterki.
 
-![Rysunek 1](media/19-work-orders.png)
+![Rysunek 1.](media/19-work-orders.png)
 
 
 ## <a name="view-asset-faults"></a>Zobacz usterki składnika majątku
@@ -79,3 +77,6 @@ Na stronie z listą **Wszystkie składniki majątku** można wydrukować raport 
 >[!NOTE]
 >Aby wydrukować raport usterek dla kilku składników majątku lub typów składników majątku, kliknij pozycję **Zarządzanie składnikami majątku** > **Raporty** > **Składniki majątku** > **Usterka składnika majątku**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

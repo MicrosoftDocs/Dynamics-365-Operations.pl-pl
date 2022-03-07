@@ -2,28 +2,26 @@
 title: Zarządzanie kosztami — strona główna
 description: Moduł Zarządzanie kosztami pozwala wykonywać operacje wyceny i księgowania surowców, półproduktów, wyrobów gotowych oraz zasobów produkcji w toku.
 author: AndersGirke
-manager: tfehr
 ms.date: 04/25/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc146f8a3707e830ff574964c5a8865271e69b50
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 83881e6b3bb588dad61fd14aa4db28aa76305925aab3ee08e2ebe7e001f2aff2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967690"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6739114"
 ---
 # <a name="cost-management-home-page"></a>Zarządzanie kosztami — strona główna
 
@@ -45,7 +43,7 @@ Do modułów Księgowanie zapasów i Księgowanie produkcji można przejść z o
 
 Moduł Księgowanie produkcji umożliwia obsługę [kalkulacji doliczeniowej zleceniowej](production-order-cost-analysis.md) w zleceniach produkcyjnych i szarżach produkcyjnych oraz [wyceny wstecznej](backflush-costing.md) w produkcji oszczędnej.
 
-[Pakiet zawartości Zarządzanie kosztami usługi Power BI](../../dev-itpro/analytics/cost-management-content-pack.md) zapewnia zaawansowany wgląd w zapasy i zapasy pracy w toku (PWT) oraz przepływy kosztów między tymi zapasami z podziałem na kategorie w ujęciu czasowym. Informacje mogą być również wykorzystywane jako szczegółowe uzupełnienie sprawozdania finansowego.
+[Pakiet zawartości Zarządzanie kosztami usługi Power BI](../../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md) zapewnia zaawansowany wgląd w zapasy i zapasy pracy w toku (PWT) oraz przepływy kosztów między tymi zapasami z podziałem na kategorie w ujęciu czasowym. Informacje mogą być również wykorzystywane jako szczegółowe uzupełnienie sprawozdania finansowego.
 
 ### <a name="additional-resources"></a>Dodatkowe zasoby
 
@@ -59,8 +57,10 @@ W artykule [Obliczenia BOM za pomocą arkusza wyceny](https://www.microsoft.com/
 
 #### <a name="blogs"></a>Blogi
 
-Opinie, wiadomości i inne informacje na temat modułu Zarządzanie kosztami można znaleźć w [blogu zespołu ds. badań i rozwoju modułu Wytwarzanie systemu Dynamics AX](https://blogs.msdn.microsoft.com/axmfg) oraz [blogu zespołu ds. badań i rozwoju modułu Zarządzanie łańcuchem dostaw systemu Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm). Mimo że część z tych wpisów została napisana dla poprzedniej wersji modułu Zarządzanie kosztami, to w obecnej wersji są również używane te same pojęcia i podobne procedury.
+Opinie, wiadomości i inne informacje na temat modułu Zarządzanie kosztami można znaleźć w [blogu zespołu ds. badań i rozwoju modułu Wytwarzanie systemu Dynamics AX](/archive/blogs/axmfg/) oraz [blogu zespołu ds. badań i rozwoju modułu Zarządzanie łańcuchem dostaw systemu Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm). Mimo że część z tych wpisów została napisana dla poprzedniej wersji modułu Zarządzanie kosztami, to w obecnej wersji są również używane te same pojęcia i podobne procedury.
 
 #### <a name="task-guides"></a>Przewodniki zadań
 
 Dodatkowa pomoc jest dostępna jako przewodniki po zadaniach. Aby uzyskać dostęp do przewodników po zadaniach, kliknij przycisk Pomoc na dowolnej stronie.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management w wersji 10.0.15 (styczeń 2021 r.)
 description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.15.
 author: kamaybac
-manager: tfehr
 ms.date: 10/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9b84aaef5348d2cb6bdd6d35e7e26bca9a4e0f6b
-ms.sourcegitcommit: b6686265314499056690538eaa95ca51cff7c720
+ms.openlocfilehash: e550f310fe3ec0aaee9c16f3edccd775921a64be
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5014540"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821160"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10015-january-2021"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management w wersji 10.0.15 (styczeń 2021 r.)
 
@@ -35,7 +33,7 @@ W tym temacie wymieniono nowe oraz zmienione funkcje dostępne w programie Micro
 
 ## <a name="features-included-in-this-release"></a>Funkcje zawarte w tym wydaniu
 
-To wydanie obejmuje następujące nowe funkcje. Niektóre z tych funkcji są nadal w wersji zapoznawczej, a inne mogą być już ogólnie dostępne. Postępuj zgodnie z łączami do [planu wydania](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features), aby przejrzeć oficjalne daty zwolnienia dla każdej z funkcji.
+To wydanie obejmuje następujące nowe funkcje. Postępuj zgodnie z łączami do [planu wydania](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features), aby przejrzeć oficjalne daty zwolnienia dla każdej z funkcji.
 
 - Zarządzanie jednostką skali chmurą i jej krawędzią przy produkcji i wykonywaniu zadań magazynowych<br> - Aby uzyskać więcej informacji, zobacz [Zarządzanie jednostką skali chmurą i jej krawędzią przy produkcji i wykonywaniu zadań magazynowych](../cloud-edge/cloud-edge-landing-page.md).
 
@@ -83,3 +81,6 @@ W temacie [Usunięte lub przestarzałe funkcje w Dynamics 365 Supply Chain Manag
 Zanim jakakolwiek funkcja zostanie usunięta z produktu, powiadomienie o zaniechaniu będzie anonsowane w sekcji na temat [usuniętych lub przestarzałych funkcji w Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 miesięcy przed usunięciem.
 
 W przypadku zmian, które wpływają tylko na czas kompilacji, ale są zgodne z trybem piaskownicy i środowiskami produkcyjnymi, czas niezgodności będzie krótszy niż 12 miesięcy. Zazwyczaj są to aktualizacje funkcjonalne, które należy wykonać w kompilatorze.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,27 +2,30 @@
 title: Przetwarzanie ilości efektywnej produktu przy użyciu funkcji zarządzania magazynem
 description: W tym temacie opisano sposób używania szablonów pracy i dyrektyw lokalizacji do określania, jak i gdzie praca jest wykonywana w magazynie.
 author: perlynne
+manager: tfehr
 ms.date: 08/13/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy, TMSLoadBuildWorkbench, WHSCatchWeightTagRegistration, WHSCatchWeightTagFullDimDiscrepancies, WHSCatchWeightTagChangeWeightDropDownDialog, WHSCatchWeightLinkWorkLineTagDropDownDialog
+ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy, TMSLoadBuildWorkbench
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 830e05db47e2e2d3bb5970869bc395cfa73ad603
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 45f8d53b5ac212866a9c693e0039631507e14dd7
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087377"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5233086"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Przetwarzanie ilości efektywnej produktu przy użyciu funkcji zarządzania magazynem
 
 [!include [banner](../includes/banner.md)]
+
 
 ## <a name="feature-exposure"></a>Funkcja ekspozycji
 
@@ -40,7 +43,7 @@ Przed użyciem tego produktu w module Zarządzanie magazynem należy wprowadzić
 - Skonfiguruj grupę sekwencji jednostki, gdzie jednostka ilości efektywnej jest definiowana jako najniższa jednostka magazynowa (SKU).
 - Skonfiguruj zasady obsługi towarów w ilości efektywnej.
 
-Aby uzyskać więcej informacji, zobacz [Konfigurowanie i obsługa towarów w ilości efektywnej](/dynamicsax-2012/appuser-itpro/setting-up-and-maintaining-catch-weight-items).
+Aby uzyskać więcej informacji, zobacz [Konfigurowanie i obsługa towarów w ilości efektywnej](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/setting-up-and-maintaining-catch-weight-items).
 
 ## <a name="transaction-adjustments"></a>Korekta transakcji
 
@@ -49,7 +52,7 @@ Ponieważ waga zapasów przychodzących do magazynu może różnić się od wagi
 > [!NOTE]
 > Działanie urządzenia przenośnego spowoduje wyzwolenie korekt transakcji tylko wtedy, gdy metoda odchylenia wychodzącej wagi towaru w zasadach obsługi towarów w ilości efektywnej to **Zezwalaj na odchylenie masy**.
 
-### <a name="example-1"></a>Przykład 1
+**Przykład 1**
 
 Podczas procesu produkcyjnego **Zgłoś jako gotowe** waga wejściowa w numerze identyfikacyjnym ośmiu opakowań produktu w ilości efektywnej jest rejestrowana jako 80,1 kg. Numer identyfikacyjny jest następnie przechowywany w obszarze wyrobów gotowych, a podczas w okresie przechowywania część wagi ulatnia się.
 
@@ -57,7 +60,7 @@ Później w ramach procesu odbioru zamówienia sprzedaży waga tego samego numer
 
 W takim przypadku system automatycznie koryguje różnicę, księgując transakcję dla brakujących 0,3 kg.
 
-### <a name="example-2"></a>Przykład 2
+**Przykład 2**
 
 W definicji produkt toleruje minimalną wagę 8 kg i maksymalną wagę 12 kg dla jednostki efektywnej **Opakowanie**.
 
@@ -103,7 +106,7 @@ Ponadto, gdy towar jest śledzony przez znacznik, istnieje parametr **Metody prz
 **Ilość używane jest śledzenie ilości efektywnej**, znacznik musi zawsze zostać utworzony do każdej przyjmowanej jednostki ilości efektywnej i każdy znacznik musi być zawsze skojarzony z wagą.
 
 Na przykład jednostką ilości efektywnej jest **Opakowanie** i odbierasz jedną paletę ośmiu opakowań. W takim przypadku osiem unikatowych znaczników ilości efektywnej musi zostać utworzonych i waga musi być skojarzona z każdym z tych znaczników. W zależności od znacznika ilości efektywnej przyjmowanej do magazynu można zarejestrować albo wagę wszystkich ośmiu opakowań, a następnie przypisać do każdego z nich wagę uśrednioną, lub można zważyć indywidualnie każde opakowanie.
-W przypadku **użyj znaczników ilości efektywnej podczas zgłaszania funkcji zleceń produkcyjnych jako gotowych** z włączonym elementem menu urządzenia przenośnego zapasy są aktualizowane na podstawie istniejących informacji o znacznikach ilości efektywnej. W rezultacie aplikacja Warehouse Management nie monituje o przechwytywanie danych znaczników ilości efektywnej jako części raportu produkcji jako zakończonej operacji.
+W przypadku **użyj znaczników ilości efektywnej podczas zgłaszania funkcji zleceń produkcyjnych jako gotowych** z włączonym elementem menu urządzenia przenośnego zapasy są aktualizowane na podstawie istniejących informacji o znacznikach ilości efektywnej. W rezultacie aplikacja magazynowa nie monituje o przechwytywanie danych znaczników ilości efektywnej jako części raportu produkcji jako zakończonej operacji.
 
 **Jeśli śledzenie znaczników ilości efektywnej nie jest używane**, można zarejestrować wagę dla każdego wymiaru (na przykład, dla każdego numeru identyfikacyjnego i wymiaru śledzenia). Alternatywnie waga może być rejestrowana na podstawie poziomu zagregowanego, np. pięciu numerów identyfikacyjnych (palet).
 
@@ -138,6 +141,7 @@ Nie wszystkie przepływy prac obsługują przetwarzanie ilości efektywnej produ
 - Produkty w ilości efektywnej, które obsługują wariant, nie mogą być używane razem z funkcją konwersji jednostek miary wariantu.
 - Produkty w ilości efektywnej nie mogą być oznaczone jako „zestaw produktów” handlowych.
 - Produkty w ilości efektywnej mogą być używane tylko z grupą sekwencji jednostek, która ma jednostki obsługi ilości efektywnej, i w której jednostka ilości efektywnej ma najmniejszy numer sekwencyjny.
+- Dla produktów w ilości efektywnej jednostka magazynowa może być konwertowana na jednostkę ilości efektywnej tylko wtedy, gdy konwersji generuje ilość nominalną większą niż 1.
 - Konfiguracja kodów kreskowych dla produktów w ilości efektywnej nie obsługuje konfiguracji ilości zmiennej.
 
 ### <a name="order-processing"></a>Przetwarzanie zamówień
@@ -190,11 +194,7 @@ Nie wszystkie przepływy prac obsługują przetwarzanie ilości efektywnej produ
 
 ### <a name="catch-weight-tags"></a>Znaczniki ilości efektywnej
 
-Znacznik ilości efektywnej można utworzyć za pomocą procesu aplikacji Warehouse Management, ręcznie za pomocą formularza, **Warehouse management > Zapytania i raporty > Metoda śledzenia wymiaru znaczników ilości efektywnej** albo stworzony za pomocą procesu jednostki danych. Jeśli znacznik ilości efektywnej jest skojarzony z wierszem dokumentu źródłowego przychodzącego, takim jak wiersz zamówienia zakupu, znacznik zostanie zarejestrowany. Jeśli wiersz jest używany do przetwarzania wychodzącego, znacznik zostanie zaktualizowany jako wysłany. Wszystkie historyczne zdarzenia metody śledzenia wymiaru znaczników ilości efektywnej można wyświetlić za pomocą opcji **Rejestracja wymiaru znaczników ilości efektywnej** na stronie **Metoda śledzenia wymiaru znaczników ilości efektywnej**.
-
-Za pomocą opcji **Zmień znacznik ilości efektywnej** można ręcznie zaktualizować wartość ilości dla znacznika ilości efektywnej. Należy zauważyć, że ilość dostępnych zapasów nie zostanie skorygowana w ramach tego ręcznego procesu, ale można łatwo użyć strony **Rozbieżności dostępnych zapasów dla towarów ze znacznikami ilości efektywnej** w celu wyszukiwania wszelkich rozbieżności między aktualnie aktywnymi znacznikami ilości efektywnej a bieżącym stanem zapasów.
-
-Inne opcje ręczne to **Rejestrowanie znaczników** w wierszu dokumentu źródłowego i **Rejestrowanie pracy** w ramach istniejącej pracy magazynowej.
+Znacznik ilości efektywnej można utworzyć za pomocą procesu aplikacji magazynowej, ręcznie za pomocą formularza, albo stworzony za pomocą procesu jednostki danych. Jeśli znacznik ilości efektywnej jest skojarzony z wierszem dokumentu źródłowego przychodzącego, takim jak wiersz zamówienia zakupu, znacznik zostanie zarejestrowany. Jeśli wiersz jest używany do przetwarzania wychodzącego, znacznik zostanie zaktualizowany jako wysłany.
 
 Oprócz ograniczeń, które obecnie dotyczą produktów w ilości efektywnej, oznakowane produkty w ilości efektywnej mają inne ograniczenia, które obecnie obowiązują.
 

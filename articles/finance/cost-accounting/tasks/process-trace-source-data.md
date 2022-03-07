@@ -2,9 +2,11 @@
 title: Przetwarzanie i śledzenie danych źródłowych
 description: Całe przetwarzanie danych jest wykonywane przez zadania.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 06/27/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fa4daff2d35ecfc9d2be171167683679b1e6db5698f9d04c13edf773253590d2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 12137c0d82109a8b757df6f6990922994d49c71a
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775897"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5208662"
 ---
 # <a name="process-and-trace-source-data"></a>Przetwarzanie i śledzenie danych źródłowych
 

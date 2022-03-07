@@ -1,23 +1,27 @@
 ---
-# required metadata
 title: Tworzenia kodów opłat
-description: 'W tym temacie opisano sposób konfigurowania kodów opłat zarówno dla rozrachunków z dostawcami, jak i rozrachunków z odbiorcami.'
+description: W tym temacie opisano sposób konfigurowania kodów opłat zarówno dla rozrachunków z dostawcami, jak i rozrachunków z odbiorcami.
 author: rachel-profitt
 ms.date: 12/03/2021
 ms.topic: article
-ms.prod: null
-ms.technology: null
+ms.prod: ''
+ms.technology: ''
 ms.search.form: MarkupTable
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: null
+ms.custom: ''
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: '2022-01-03'
+ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 034be190890a67fd0921d40fffdc704b9d6d5df7
+ms.sourcegitcommit: 5bfd6511d710deb539b4030eb0e9c48d25513595
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8014077"
 ---
-
 # <a name="create-charges-codes"></a>Tworzenia kodów opłat
 
 W tym temacie opisano sposób konfigurowania kodów opłat zarówno dla rozrachunków z dostawcami, jak i rozrachunków z odbiorcami. Jeśli organizacja wymaga, aby oprócz towarów w zamówieniu sprzedaży lub zamówieniu zakupu kwoty sprzedaży lub zakupu było śledzone, można do tego celu użyć kodów opłat. Na przykład opłaty frachtowe i ubezpieczenie są opłacane w zamówieniu zakupu i kwoty te są oddzielnie pozycjami w zamówieniu zakupu. W tym przypadku można określić, czy kwoty są księgowane na kontach wydatków czy dodawane do kosztu towarów.

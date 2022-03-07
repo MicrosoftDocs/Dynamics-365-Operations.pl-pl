@@ -2,34 +2,34 @@
 title: Wprowadzenie do interfejsu API integracji systemu śledzenia kandydatów
 description: W tym temacie opisano interfejs API integracji systemu śledzenia kandydatów (ATS) Dynamics 365 Human Resources.
 author: andreabichsel
+manager: tfehr
 ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.custom: intro-internal
+ms.reviewer: anbichse
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e16c781a6e51c57db8ae76dcfe0d28ec709428eb
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 61d8502a8f420d387b5b7f48fca2f8a680f6f3f8
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069939"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5464039"
 ---
 # <a name="applicant-tracking-system-integration-api-introduction"></a>Wprowadzenie do interfejsu API integracji systemu śledzenia kandydatów
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 W tym temacie opisano interfejs API integracji systemu śledzenia kandydatów (ATS) Dynamics 365 Human Resources. Celem API jest umożliwienie usprawnionej integracji między Dynamics 365 Human Resources i współpracującymi ATS.
 
-![Przepływ integracji ATS.](media/hr-admin-integration-ats-api-introduction-flow.png)
+![Przepływ integracji ATS](media/hr-admin-integration-ats-api-introduction-flow.png)
 
 Zintegrowane doświadczenie zaczyna się w dziale zasobów ludzkich, gdy kierownik kadr tworzy wniosek rekrutacyjny. Gdy wniosek zostanie uaktywniony, ATS ściąga szczegóły wniosku o utworzenie projektu rekrutacji. Następnie następuje rekrutacja, aby wybrać i zatrudnić kandydata na dane stanowisko. Na koniec ATS kończy integrację w obie strony, przesyłając rekord wybranego kandydata do działu kadr. Rekord kandydata może następnie przejść przez kolejne walidacje wprowadzające i przepływy pracy, aby utworzyć rekord pracownika.
 
@@ -47,21 +47,21 @@ Ten interfejs API jest wbudowany Microsoft Dataverse (poprzednio Common Data Ser
 
 Aby uzyskać więcej ogólnych informacji na temat interfejsu API sieci Web Microsoft Dataverse, zobacz:
 
-- [Co to jest usługa Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
-- [Użyj interfejsu API sieci Web Microsoft Dataverse](/powerapps/developer/data-platform/webapi/overview)
-- [Podręcznik dewelopera Microsoft Dataverse](/powerapps/developer/data-platform)
+- [Co to jest usługa Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
+- [Użyj interfejsu API sieci Web Microsoft Dataverse](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview)
+- [Podręcznik dewelopera Microsoft Dataverse](https://docs.microsoft.com/powerapps/developer/data-platform)
 
-Powyższe dokumentacja zawiera szczegółowe wskazówki dla programistów dotyczące używania interfejsu API sieci Web Dataverse, takie jak [zarządzanie uwierzytelnianiem](/powerapps/developer/data-platform/webapi/authenticate-web-api), [wykonywanie operacji](/powerapps/developer/data-platform/webapi/perform-operations-web-api), [używanie Postmana z interfejsem API](/powerapps/developer/data-platform/webapi/use-postman-web-api) oraz [korzystanie z tokenów śledzenia zmian lub różnic](/powerapps/developer/data-platform/use-change-tracking-synchronize-data-external-systems) z interfejsem API.
+Powyższe dokumentacja zawiera szczegółowe wskazówki dla programistów dotyczące używania interfejsu API sieci Web Dataverse, takie jak [zarządzanie uwierzytelnianiem](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/authenticate-web-api), [wykonywanie operacji](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/perform-operations-web-api), [używanie Postmana z interfejsem API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/use-postman-web-api) oraz [korzystanie z tokenów śledzenia zmian lub różnic](https://docs.microsoft.com/powerapps/developer/data-platform/use-change-tracking-synchronize-data-external-systems) z interfejsem API.
 
 ### <a name="option-sets"></a>Zestawy opcji
 
-Model danych dla interfejsu API integracji ATS opisany w tym dokumencie obejmuje zestawy opcji, które zapewniają wyliczone wartości powiązane z właściwościami jednostki. Aby uzyskać szczegółowe informacje dotyczące pracy z zestawami opcji w interfejsie API sieci Web Dataverse, zobacz temat [Tworzenie i aktualizowanie zestawów opcji przy użyciu interfejsu API sieci Web](/powerapps/developer/data-platform/webapi/create-update-optionsets). Zestawy opcji są definiowane dla każdego środowiska Dataverse.
+Model danych dla interfejsu API integracji ATS opisany w tym dokumencie obejmuje zestawy opcji, które zapewniają wyliczone wartości powiązane z właściwościami jednostki. Aby uzyskać szczegółowe informacje dotyczące pracy z zestawami opcji w interfejsie API sieci Web Dataverse, zobacz temat [Tworzenie i aktualizowanie zestawów opcji przy użyciu interfejsu API sieci Web](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-update-optionsets). Zestawy opcji są definiowane dla każdego środowiska Dataverse.
 
 ### <a name="virtual-tables-for-human-resources-in-dataverse"></a>Wirtualne tabele dla Human Resources w Dataverse
 
 Punkty końcowe dla interfejsu API integracji ATS korzystają z możliwości platformy tabel wirtualnych Microsoft Dataverse. Domyślnie tabele wirtualne i skojarzone z nimi punkty końcowe interfejsu API nie są wdrażane w środowiskach Human Resources, co umożliwia organizacjom określenie, które punkty końcowe OData będą widoczne dla środowiska. Aby można było korzystać z interfejsu API, należy wygenerować tabele wirtualne dla jednostek Human Resources dla środowiska. 
 
-Aby uzyskać informacje dotyczące generowania tabel wirtualnych dla interfejsu API, zobacz temat [Konfigurowanie tabel wirtualnych Dataverse](./hr-admin-integration-common-data-service-virtual-entities.md).
+Aby uzyskać informacje dotyczące generowania tabel wirtualnych dla interfejsu API, zobacz temat [Konfigurowanie tabel wirtualnych Dataverse](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
 
 ## <a name="data-model"></a>Model danych
 
@@ -72,7 +72,7 @@ Model danych jest na środku dwóch głównych jednostek:
 
 Poniższy diagram ilustruje relacje w ramach interfejsu API. Kilka typów ma klucze obce do innych, wcześniej istniejących jednostek w dziale Human Resources, które nie zostały tutaj zilustrowane. Ten dokument zawiera informacje o jednostkach, które są specyficzne dla scenariuszy integracji rekrutacji. W interfejsie API sieci Web Dataverse istnieje jednak wiele innych jednostek, które mogą być także istotne dla integracji Dynamics 365 Human Resources. Na przykład mogą być potrzebne szczegółowe informacje dotyczące pracowników, stanowisk, stanowisk lub innych jednostek, które nie zostały tutaj zdefiniowane. Wiele z tych jednostek odwołuje się do relacji klucza obcego lub właściwości nawigacji.
 
-![Model danych ATS integracji API.](media/hr-admin-integration-ats-api-data-model.png)
+![Model danych ATS integracji API](media/hr-admin-integration-ats-api-data-model.png)
 
 ## <a name="recruiting-request-and-related-entities-and-option-sets"></a>Żądania rekrutacji oraz powiązane jednostki i zestawy opcji
 
@@ -136,8 +136,8 @@ Zestawy opcji:
 ## <a name="see-also"></a>Informacje dodatkowe
 
 [Rekrutowanie kandydatów](hr-personnel-recruit.md)<br>
-[Co to jest usługa Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)<br>
-[Użyj interfejsu API sieci Web Microsoft Dataverse](/powerapps/developer/data-platform/webapi/overview)<br>
-[Tworzenie i aktualizowanie zestawów opcji przy użyciu interfejsu API sieci Web](/powerapps/developer/data-platform/webapi/create-update-optionsets)<br>
+[Co to jest usługa Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
+[Użyj interfejsu API sieci Web Microsoft Dataverse](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview)<br>
+[Tworzenie i aktualizowanie zestawów opcji przy użyciu interfejsu API sieci Web](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-update-optionsets)<br>
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

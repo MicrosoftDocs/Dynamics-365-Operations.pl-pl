@@ -2,6 +2,7 @@
 title: Preferencje użytkownika w projektancie raportów finansowych
 description: W tym temacie opisano, jak skonfigurować preferencje użytkownika, aby dostosować swoje interakcje w projektancie raportów finansowych i kontrolować zachowanie interfejsu podczas pierwszego logowania.
 author: aprilolson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 1f4c9bdde367044cfbf736c1aecbe0387031309318a7bf929f1b9ba2fd9368be
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bc8308ab8f856adf5045af5f005c95bffb8ad864
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724376"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5561131"
 ---
 # <a name="user-preferences-in-financial-report-designer"></a>Preferencje użytkownika w projektancie raportów finansowych
 

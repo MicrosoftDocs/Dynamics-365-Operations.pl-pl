@@ -2,7 +2,7 @@
 title: Projektowanie raportów wielojęzycznych w module raportowanie elektroniczne
 description: W tym temacie wyjaśniono, jak można stosować etykiety raportów elektronicznych (ER) do projektowania i generowania raportów wielojęzycznych.
 author: NickSelin
-ms.date: 11/30/2021
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eab17635494657740fe46364bde0773dae5b9e4b
-ms.sourcegitcommit: 8bcb9c13eccb14e61c39ca6578d135b64090fad2
+ms.openlocfilehash: 86facc26f57b3ab166d6274689d774adbac50e46aa7759cfd079a0ef5a45456e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8313698"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718436"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Projektowanie raportów wielojęzycznych w module raportowanie elektroniczne
 
@@ -28,9 +28,9 @@ ms.locfileid: "8313698"
 
 ## <a name="overview"></a>Omówienie
 
-Użytkownicy biznesowi używają platformy [Raportowanie elektroniczne (ER)](general-electronic-reporting.md), która umożliwia konfigurowanie formatów dokumentów, które muszą zostać utworzone zgodnie z wymogami prawnymi obowiązującymi w różnych krajach lub regionach. Gdy wymagania te wymagają, aby dokumenty wychodzące były generowane w różnych językach dla różnych krajów lub regionów, możesz skonfigurować jeden format ER zawierający zasoby zależne od języka. W ten sposób można ponownie użyć formatu, aby wygenerować dokumenty wychodzące dla różnych krajów lub regionów. Można również użyć jednego formatu ER do wygenerowania dokumentu wychodzącego w różnych językach dla odpowiednich odbiorców, dostawców, filii lub innych jednostek.
+Użytkownicy biznesowi używają platformy [Raportowanie elektroniczne (ER)](general-electronic-reporting.md), która umożliwia konfigurowanie formatów dokumentów, które muszą zostać utworzone zgodnie z wymogami prawnymi obowiązującymi w różnych krajach lub regionach. Gdy wymagania te wymagają, aby dokumenty wychodzące były generowane w różnych językach dla różnych krajów lub regionów, możesz skonfigurować jeden [format](general-electronic-reporting.md#FormatComponentOutbound) ER zawierający zasoby zależne od języka. W ten sposób można ponownie użyć formatu, aby wygenerować dokumenty wychodzące dla różnych krajów lub regionów. Można również użyć jednego formatu ER do wygenerowania dokumentu wychodzącego w różnych językach dla odpowiednich odbiorców, dostawców, filii lub innych jednostek.
 
-Modele i mapowania danych ER można skonfigurować jako źródła danych skonfigurowanych formatów ER, aby zdefiniować przepływ danych określający, jakie dane aplikacji są umieszczane w generowanych dokumentach. Jako [dostawca](general-electronic-reporting.md#Provider) konfiguracji ER można [publikować](tasks/er-upload-configuration-into-lifecycle-services.md#upload-a-configuration-into-lcs) skonfigurowane modele danych, mapowania modeli i formaty jako składniki rozwiązania ER w celu generowania określonych dokumentów wychodzących. Można również zezwolić klientom na [przekazywanie](general-electronic-reporting-manage-configuration-lifecycle.md) opublikowanego rozwiązania ER, aby można było go używać i dostosowywać. Jeśli użytkownik oczekuje, że klienci mogą mówić do innych języków, można skonfigurować składniki ER, tak aby zawierały zasoby zależne od języka. W ten sposób zawartość edytowalnego składnika ER może być prezentowana w języku preferowanym przez użytkownika klienta w czasie projektowania.
+Modele i mapowania danych ER można skonfigurować jako źródła danych skonfigurowanych formatów ER, aby zdefiniować przepływ danych określający, jakie dane aplikacji są umieszczane w generowanych dokumentach. Jako [dostawca](general-electronic-reporting.md#Provider) konfiguracji ER można [publikować](tasks/er-upload-configuration-into-lifecycle-services.md#upload-a-configuration-into-lcs) skonfigurowane [modele danych](general-electronic-reporting.md#data-model-and-model-mapping-components), [mapowania modeli](general-electronic-reporting.md#data-model-and-model-mapping-components) i [formaty](general-electronic-reporting.md#FormatComponentOutbound) jako składniki rozwiązania ER w celu generowania określonych dokumentów wychodzących. Można również zezwolić klientom na [przekazywanie](general-electronic-reporting-manage-configuration-lifecycle.md) opublikowanego rozwiązania ER, aby można było go używać i dostosowywać. Jeśli użytkownik oczekuje, że klienci mogą mówić do innych języków, można skonfigurować składniki ER, tak aby zawierały zasoby zależne od języka. W ten sposób zawartość edytowalnego składnika ER może być prezentowana w języku preferowanym przez użytkownika klienta w czasie projektowania.
 
 Zasoby zależne od języka można konfigurować jako etykiety ER. Następnie można skorzystać z tych etykiet, aby skonfigurować składniki ER do następujących celów:
 
@@ -229,27 +229,10 @@ Zgodnie z opisem opisanym wcześniej w tym temacie atrybuty **Etykieta** i **Opi
 - Wartość etykiety ER połączona z atrybutami **Etykiety** jest przechowywana w polu **Etykieta** zwróconego rekordu.
 - Wartość etykiety ER połączona z atrybutami **Opisu** jest przechowywana w polu **Opis** zwróconego rekordu.
 
-## <a name="performance"></a><a name=performance></a>Wydajność
-
-Podczas konfigurowania składnika formatu ER w celu wygenerowania raportu w preferowanym [języku](#language) lub zaimportowania dokumentu przychodzącego, w którym zawartość jest analizowana według preferowanego języka, zaleca się włączenie funkcji **buforowania preferowanego języka bieżącego użytkownika dla uruchamiania ER** w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops/get-started/feature-management/feature-management-overview.md). Ta funkcja pomaga poprawić wydajność, zwłaszcza w przypadku składników formatu ER, które zawierają wiele odwołań do etykiet w formułach i powiązaniach funkcji elektronicznej oraz wiele reguł [walidacji](general-electronic-reporting-formula-designer.md#TestFormula) do generowania komunikatów użytkownika w preferowanym języku.
-
-Gdy zmieniasz status wersji konfiguracji ER z **Wersja robocza** na **Zakończono**, jeśli wersja konfiguracji zawiera etykiety ER, są one zapisywane w bazie danych aplikacji. Schemat przechowywania zależy od stanu funkcji **Przyspieszenie przechowywania etykiet ER**:
-
-- Jeśli ta cecha nie jest włączona, wszystkie etykiety są przechowywane w polu **LABELXML** tabeli **ERSOLUTIONVERSIONTABLE** jako pojedynczy wycinek XML.
-- Jeśli ta cecha jest włączona, dla każdego języka tworzony jest osobny rekord w tabeli **ERSOLUTIONVERSIONLABELSTABLE**. Pole **CONTENTS** tej tabeli przechowuje etykiety dla każdego języka jako skompresowany wycinek XML.
-
-Zalecamy, abyś włączył funkcję **Przyspieszenie przechowywania etykiet ER** w przestrzeni roboczej **Zarządzanie funkcjami**. Ta funkcja pomaga poprawić wykorzystanie przepustowości sieci i ogólną wydajność systemu, ponieważ w większości przypadków podczas pracy z jedną konfiguracją ER używane są etykiety ER w jednym języku.
-
-Aby zastosować wybrany schemat przechowywania etykiet dla wszystkich konfiguracji ER w aktualnej instancji Finance, wykonaj następujące kroki.
-
-1. Przejdź do **Administracja organizacją** > **Okresowe** > **Zastosuj wybrany schemat przechowywania etykiet dla wszystkich konfiguracji ER**.
-2. Kliknij przycisk **OK**.
-
-
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 - [Raportowanie elektroniczne — omówienie](general-electronic-reporting.md)
-- [Funkcje raportowania elektronicznego](er-formula-language.md#Functions)
+- [Funkcje raportowania elektronicznego](er-formula-language.md#functions)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

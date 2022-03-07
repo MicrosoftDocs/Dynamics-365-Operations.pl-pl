@@ -2,7 +2,7 @@
 title: Włączanie wyszukiwania zamówień dla realizacji transakcji gościa
 description: W tym temacie opisano sposób włączania wyszukiwania zamówień dla realizacji transakcji gościa w aplikacji Microsoft Dynamics 365 Commerce.
 author: stuharg
-ms.date: 12/03/2021
+ms.date: 09/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2021-08-15
 ms.dyn365.ops.version: Release 10.0.22
-ms.openlocfilehash: a2a10b122faae354b0ea002e43a9bd60157f6216
-ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
+ms.openlocfilehash: 639ee670b83198423425d03dad308306c9eed25c
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7891507"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674983"
 ---
 # <a name="enable-order-lookup-for-guest-checkouts"></a>Włączanie wyszukiwania zamówień dla realizacji transakcji gościa
 
@@ -63,16 +63,6 @@ Po zmianie wartości pola **Uwzględnij dane osobowe w wyszukiwaniu zamówień g
 ## <a name="configure-the-order-lookup-module"></a>Konfigurowanie modułu wyszukiwania zamówień
 
 Moduł wyszukiwania zamówień w bibliotece modułów Commerce służy do renderowania formularza używanego przez użytkowników gości do wyszukiwania zamówień. Moduł wyszukiwania zamówień może zostać uwzględniony w gnieździe treści dowolnej strony, która nie wymaga zalogowania się klienta. Aby uzyskać informacje dotyczące sposobu konfigurowania modułu, zobacz [Moduł wyszukiwania zamówień](order-lookup-module.md).
-
-## <a name="configure-the-order-details-page"></a>Konfigurowanie strony szczegółów zamówienia
-
-Aby użytkownicy gości zobaczyli szczegóły swojego zamówienia, strona szczegółów zamówienia w witrynie e-commerce musi być skonfigurowana tak, aby nie wymagała logowania. Aby wyłączyć wymaganie logowania dla strony szczegółów zamówienia, otwórz stronę konstruktora witryn Commerce, zaznacz w widoku drzewa gniazdo **Strona domyślna (wymagane)** i wyczyść pole wyboru **Wymaga zalogowania się?** u dołu okienka właściwości po prawej stronie.
-
-## <a name="add-a-link-to-order-details-in-transactional-emails"></a>Dodawanie linku do szczegółów zamówienia w wiadomościach e-mail dotyczących transakcji
-
-W wiadomościach e-mail związanych z zamówieniem można podać link lub przycisk, który powoduje, że odbiorcy są przekierowywani do strony szczegółów zamówienia. Aby dodać ten link lub przycisk, utwórz hiperlink HTML, które wskazuje stronę szczegółów zamówienia w witrynie e-commerce, a następnie przekaż identyfikator potwierdzenia zamówienia i adres e-mail odbiorcy jako parametry adresu URL, tak jak pokazano w poniższym przykładzie.
-
-`<a href="https://[domain]/[orderdetailspage]?confirmationId=%orderconfirmationid%&propertyName=email&propertyValue=%customeremailaddress%" target="_blank">View my order status</a>`
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

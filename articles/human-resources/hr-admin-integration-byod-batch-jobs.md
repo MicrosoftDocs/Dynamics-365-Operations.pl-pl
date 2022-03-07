@@ -2,35 +2,37 @@
 title: Optymalizacja zadań wsadowych BYOD w harmonogramie
 description: W tym temacie wyjaśniono, jak optymalizować wydajność, gdy jest używana funkcja „Dobierz własną bazę danych (BYOD)” w rozwiązaniu Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
 ms.date: 08/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Human Resources
+ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-10
 ms.dyn365.ops.version: Platform update 36
-ms.openlocfilehash: d08762ff40b4da8264bd5bc4a1c16fd2afc4d610
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a2f110d105b8c04f07f219f7f11a57d24e00ce4a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420049"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067786"
 ---
 # <a name="optimize-byod-scheduled-batch-jobs"></a>Optymalizacja zadań wsadowych BYOD w harmonogramie
 
-W tym temacie wyjaśniono, jak optymalizować wydajność, gdy jest używana funkcja „Dobierz własną bazę danych (BYOD)”. Aby uzyskać więcej informacji o BYOD, zapoznaj się z tematem [Dobierz własną bazę danych (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database?toc=/dynamics365/human-resources/toc.json).
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+W tym temacie wyjaśniono, jak optymalizować wydajność, gdy jest używana funkcja „Dobierz własną bazę danych (BYOD)”. Aby uzyskać więcej informacji o BYOD, zapoznaj się z tematem [Dobierz własną bazę danych (BYOD)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 
 ## <a name="performance-considerations-for-data-export"></a>Zagadnienia dotyczące wydajności eksportu danych
 
-Po opublikowaniu jednostek w docelowej bazie danych można skorzystać z funkcji eksportu w obszarze roboczym **Zarządzanie danymi**, aby przenieść dane. Funkcja eksportu umożliwia zdefiniowanie zadania przenoszenia danych, które zawiera jedną lub więcej encji. Aby uzyskać więcej informacji o funkcji zarządzania danymi do eksportowania danych, zapoznaj się z [Omówieniem importowania i eksportowania danych](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job?toc=/dynamics365/human-resources/toc.json).
+Po opublikowaniu jednostek w docelowej bazie danych można skorzystać z funkcji eksportu w obszarze roboczym **Zarządzanie danymi**, aby przenieść dane. Funkcja eksportu umożliwia zdefiniowanie zadania przenoszenia danych, które zawiera jedną lub więcej encji. Aby uzyskać więcej informacji o funkcji zarządzania danymi do eksportowania danych, zapoznaj się z [Omówieniem importowania i eksportowania danych](../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 
 Strony **Eksport** można używać do eksportowania danych do różnych docelowych formatów danych, takich jak plik CSV (wartości rozdzielane przecinkami). Ta strona obsługuje również bazy danych SQL jako inne miejsce docelowe.
 
@@ -61,7 +63,7 @@ Aby uzyskać najlepszą wydajność, należy zawsze stosować opcję **Eksportuj
 
 Podczas dodawania jednostki do eksportu danych można wykonać zarówno operację przyrostową (eksport), jak i pełne wypychanie. Pełna wypychanie powoduje usunięcie wszystkich istniejących rekordów z jednostki w bazie danych BYOD. Następnie wstawia bieżący zbiór rekordów z encji Human Resources.
 
-Aby wykonać operację wypychania przyrostowego, należy włączyć śledzenie zmian dla każdej encji na stronie **Encje**. Aby uzyskać więcej informacji, przejrzyj temat [Włączanie śledzenia zmian dla encji](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track?toc=/dynamics365/human-resources/toc.json).
+Aby wykonać operację wypychania przyrostowego, należy włączyć śledzenie zmian dla każdej encji na stronie **Encje**. Aby uzyskać więcej informacji, przejrzyj temat [Włączanie śledzenia zmian dla encji](../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 
 W przypadku wybrania opcji wypychania przyrostowego pierwszy punkt wypychania będzie zawsze pełnym wypychaniem. Program SQL śledzi te zmiany z pierwszego pełnego wypychania. Po wstawieniu nowego rekordu lub po zaktualizowaniu lub usunięciu rekordu, zmiana jest odzwierciedlana w encji docelowej.
 
@@ -88,11 +90,20 @@ Funkcja BYOD ma następujące ograniczenia:
 
 **Problem:** Podczas wykonywania pełnego wypychania dla danej encji widoczne jest wiele rekordów BYOD po wybraniu instrukcji **wybierz**. Jednak w przypadku wypychania przyrostowego widoczna jest tylko liczba rekordów w BYOD. Wygląda na to, jakby przyrostowa metoda wypychania usunęła wszystkie rekordy i dodała tylko zmienione rekordy w BYOD.
 
-**Rozwiązanie:** tabele śledzenia zmian SQL mogą nie znajdować się w oczekiwanym stanie. W przypadku tego typu sytuacji zaleca się wyłączenie śledzenia zmian dla jednostki, a następnie włączenie funkcji z powrotem. Aby uzyskać więcej informacji, przejrzyj temat [Włączanie śledzenia zmian dla encji](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track?toc=/dynamics365/human-resources/toc.json).
+**Rozwiązanie:** tabele śledzenia zmian SQL mogą nie znajdować się w oczekiwanym stanie. W przypadku tego typu sytuacji zaleca się wyłączenie śledzenia zmian dla jednostki, a następnie włączenie funkcji z powrotem. Aby uzyskać więcej informacji, przejrzyj temat [Włączanie śledzenia zmian dla encji](../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
+
+### <a name="staging-tables-arent-clearing"></a>Tabele przemieszczania nie są czyszczone
+
+**Problem:** Podczas korzystania z funkcji przemieszczania w projekcie tabele przemieszczania nie są poprawnie czyszczone. Dane w tabelach wciąż przyrastają, powodując problemy z wydajnością.
+
+**Rozwiązanie:** W tabelach przemieszczania jest zachowywanych siedem dni historii. Dane historyczne starsze niż siedem dni są automatycznie usuwane z tabel przemieszczania przez zadanie **Oczyszczanie przemieszczania importu i eksportu**. Jeśli to zadanie zostanie zablokowane, tabele nie będą poprawnie czyszczone. Ponowne uruchomienie tego zadania wsadowego spowoduje automatyczne wyczyszczenie tabel przemieszczania.
 
 ## <a name="see-also"></a>Informacje dodatkowe
 
-[Omówienie zarządzania danymi](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages?toc=/dynamics365/human-resources/toc.json)<br>
-[Używanie własnej bazy danych (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database?toc=/dynamics365/human-resources/toc.json)<br>
-[Omówienie zadań importowania i eksportowania danych](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job?toc=/dynamics365/human-resources/toc.json)<br>
-[Włączanie śledzenia zmian dla jednostek](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track?toc=/dynamics365/human-resources/toc.json)
+[Omówienie zarządzania danymi](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)<br>
+[Używanie własnej bazy danych (BYOD)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)<br>
+[Omówienie zadań importowania i eksportowania danych](../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)<br>
+[Włączanie śledzenia zmian dla jednostek](../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

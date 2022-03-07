@@ -1,21 +1,25 @@
 ---
-# required metadata
 title: Omówienie integracji Dynamics 365 Commerce i Microsoft Teams
 description: Ten temat zawiera omówienie integracji Microsoft Dynamics 365 Commerce i Microsoft Teams.
 author: gvrmohanreddy
 ms.date: 03/31/2021
 ms.topic: overview
-ms.prod: null
-ms.technology: null
+ms.prod: ''
+ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: 'Retail, Core, Operations'
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: gmohanv
-ms.search.validFrom: '2021-01-15'
+ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
+ms.openlocfilehash: 39de59d182fd6f4cb1616a47a09b44cd249f2187
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984202"
 ---
-
 # <a name="dynamics-365-commerce-and-microsoft-teams-integration-overview"></a>Omówienie integracji Dynamics 365 Commerce i Microsoft Teams
 
 [!include [banner](includes/banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: Prognozy konserwacji
 description: W tym temacie wyjaśniono prognozy konserwacji w module Zarządzanie składnikami majątku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderForecastToJournals, EntAssetWorkOrderForecast
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c60834a1f818b142a0f2f022d66fe1f42edeb536
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 6503d5110a4cb5e4041afa7b4e80395b2974a64e5a150eb6bfce1f32a6703e06
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020874"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6761861"
 ---
 # <a name="maintenance-forecasts"></a>Prognozy konserwacji
 
@@ -104,7 +102,7 @@ Aby uzyskać informacje o tym, gdzie jest używana pozycja w wybranym wierszu w 
 
 Na poniższej ilustracji pokazano przykład strony listy **Prognoza konserwacji zlecenia pracy**.
 
-![Rysunek 1](media/06-work-orders.png)
+![Rysunek 1.](media/06-work-orders.png)
 
 
 ## <a name="automatic-update-of-work-order-forecasts"></a>Automatyczna aktualizacja prognoz zleceń pracy
@@ -122,4 +120,7 @@ W module Zarządzanie składnikami majątku można automatycznie aktualizować z
 
 Na poniższej ilustracji pokazano przykład okna dialogowego **Aktualizacja prognozy zlecenia pracy**.
 
-![Rysunek 2](media/07-work-orders.png)
+![Rysunek 2.](media/07-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

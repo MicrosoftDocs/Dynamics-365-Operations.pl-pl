@@ -1,23 +1,25 @@
 ---
 title: Znajdowanie przestarzałych wariantów produktów
 description: Ta procedura przedstawia, jak znaleźć przestarzałe zwolnione produkty lub warianty produktów i skojarzyć stan cyklu życia produktu z przestarzałymi produktami.
-author: t-benebo
+author: cvocph
+manager: tfehr
 ms.date: 12/05/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 13db6620575b4c97b3f8079ac94f5231a2fd9c1b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 2b212a6b4268776893d4e018cab605e6441080fa
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577247"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4986861"
 ---
 # <a name="find-obsolete-product-variants"></a>Znajdowanie przestarzałych wariantów produktów 
 
@@ -70,6 +72,3 @@ Ta procedura przedstawia, jak znaleźć przestarzałe zwolnione produkty lub war
 
 8. Na liście znajdź i zaznacz odpowiedni rekord.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

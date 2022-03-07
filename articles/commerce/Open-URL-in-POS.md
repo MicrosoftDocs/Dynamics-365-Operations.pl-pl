@@ -2,11 +2,9 @@
 title: Otwieranie adresu URL w aplikacji punktu sprzedaży
 description: Ten temat zawiera omówienie ulepszeń wprowadzonych w produkcie i funkcji wyszukiwania klientów w rozwiązaniu Dynamics 365 Commerce.
 author: AamirAllaq
-manager: AnnBe
 ms.date: 01/28/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
@@ -17,18 +15,18 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: e4ccb8e03d63a7bd1ab2d118d86633a8c6324d43
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0e02a08e5afd15fd9622495fd77f4dc01b85786bcffc222b5c979c82a59a6aab
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965459"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6714121"
 ---
-# <a name="open-url-in-pos"></a>Otwieranie adresu URL w aplikacji punktu sprzedaży
+# <a name="open-url-in-pos"></a>Otwieranie adresu URL w punkcie sprzedaży
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano, jak można skonfigurować przycisk w punkcie sprzedaży (POS), aby otworzyć adres URL. Ta funkcja nie wymaga dostosowania kodu i może być skonfigurowana przez dowolną osobę, która nie ma roli dewelopera. 
+W tym temacie opisano, jak można skonfigurować przycisk w punkcie sprzedaży (POS) Dynamics 365 Commerce, aby otworzyć adres URL. Ta funkcja nie wymaga dostosowania kodu i może być skonfigurowana przez dowolną osobę, która nie ma roli dewelopera. 
 
 Ta funkcja umożliwia konfigurację przycisku w punkcie sprzedaży, otwieranie adresu URL przy użyciu projektanta siatki przycisków. Obecnie jest to obsługiwane w następujących konfiguracjach:
 
@@ -48,15 +46,15 @@ Otwieranie adresu URL sieci web w punkcie sprzedaży jest obecnie obsługiwane t
 
 Ta funkcja umożliwia określenie URL innych niż sieci web, aby otworzyć aplikację macierzystą. Na przykład można określić protokoły, takie jak MailTo, SIP, IM lub MSTEAMS, które następnie są obsługiwane przez odpowiednie aplikacje natywne na urządzeniu hostującym. Aby włączyć tę opcję, należy skonfigurować adres URL z zaznaczoną opcją **Otwórz w nowym oknie**.
 
-- Na komputerach z systemem Windows, zobacz [eksport lub import domyślnych skojarzeń aplikacji](https://docs.microsoft.com/windows-hardware/manufacture/desktop/export-or-import-default-application-associations), aby ustawić domyślne powiązania protokołu, jeśli konfigurujesz komputer przy użyciu Deployment Image Servicing and Management (DISM).
-- Jeśli używasz MDM, takich jak Intune do zarządzania na komputerach z systemem Windows, zobacz [CSP zasad - ApplicationDefaults](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationdefaults).
-- Jeśli jesteś programistą i tworzysz niestandardową witrynę sieci Web, zobacz [uruchamianie aplikacji domyślnej dla identyfikatora URI](https://docs.microsoft.com/windows/uwp/launch-resume/launch-default-app).
+- Na komputerach z systemem Windows, zobacz [eksport lub import domyślnych skojarzeń aplikacji](/windows-hardware/manufacture/desktop/export-or-import-default-application-associations), aby ustawić domyślne powiązania protokołu, jeśli konfigurujesz komputer przy użyciu Deployment Image Servicing and Management (DISM).
+- Jeśli używasz MDM, takich jak Intune do zarządzania na komputerach z systemem Windows, zobacz [CSP zasad - ApplicationDefaults](/windows/client-management/mdm/policy-csp-applicationdefaults).
+- Jeśli jesteś programistą i tworzysz niestandardową witrynę sieci Web, zobacz [uruchamianie aplikacji domyślnej dla identyfikatora URI](/windows/uwp/launch-resume/launch-default-app).
 
 ## <a name="open-a-native-app-seamlessly"></a>Otwórz aplikację macierzystą bez problemów.
 
 Windows, iOS i Android także umożliwiają łatwiejsze otwarcie aplikacji na podstawie powiązania protokołu aplikacji. Jeśli aplikacji nie jest jeszcze skonfigurowana do obsługi otwarcia w przeglądarce sieci web, może być konieczne ustawienie tej opcji.
 
-- Dla systemu Windows, zobacz [Włączanie aplikacji dla witryny sieci Web przy użyciu programów obsługi URI](https://docs.microsoft.com/windows/uwp/launch-resume/web-to-app-linking).
+- Dla systemu Windows, zobacz [Włączanie aplikacji dla witryny sieci Web przy użyciu programów obsługi URI](/windows/uwp/launch-resume/web-to-app-linking).
 - W przypadku iOS zobacz [uniwersalne łącza dla deweloperów](https://developer.apple.com/ios/universal-links/).
 - W przypadku systemu Android zobacz [obsługa łączy aplikacji Android](https://developer.android.com/training/app-links/).
 
@@ -82,3 +80,6 @@ Aby skonfigurować adres URL, który można otworzyć w punkcie sprzedaży, wyko
 5. Wybierz akcję **Otwórz URL**.
 6. Wprowadź URL, którego chcesz użyć.
 7. Skonfiguruj, czy należy otworzyć adres URL w nowym oknie.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,25 +1,27 @@
 ---
 title: Konfigurowanie elementu menu urządzenia przenośnego do rejestrowania towarów przyjętych
 description: Ten temat przedstawia konfigurowanie elementu menu urządzenia przenośnego.
-author: Mirzaab
+author: ShylaThompson
+manager: tfehr
 ms.date: 08/16/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFMenuItem, WHSRFMenu, WHSRFDefaultData
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: mirzaab
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 410a70294e5a417950ed5332ec5fdd7da321a31d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 81282e8db199c0d81e4f10de964b2fd09a5734fe
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565166"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5255998"
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-register-received-items"></a>Konfigurowanie elementu menu urządzenia przenośnego do rejestrowania towarów przyjętych
 

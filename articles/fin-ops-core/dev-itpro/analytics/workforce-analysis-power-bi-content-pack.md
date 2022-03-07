@@ -2,6 +2,7 @@
 title: Pakiet zawartości usługi Power BI Metryki pracowników
 description: W tym temacie opisano pakiet zawartość Metryki pracowników dostępny dla usługi Power BI.
 author: jcart1106
+manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: ''
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9393b4dcc6cb5f65d38c6904bf38def9d50af281671e0e09314148824f3e6891
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8ea0bcafa616e5b12ac0a997af87c7d57564362d
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757280"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5563758"
 ---
 # <a name="workforce-metrics-power-bi-content"></a>Pakiet zawartości usługi Power BI Metryki pracowników
 

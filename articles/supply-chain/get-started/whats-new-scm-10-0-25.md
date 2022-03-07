@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 8a9b873b7b4bba43b7b3e6e83c389ac35b4e223e
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 0ce9bc4685542cf691d862c0fec76f3f7b40c6b6
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103003"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087327"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10025-april-2022"></a>Omówienie aplikacji Dynamics 365 Supply Chain Management 10.0.25 (kwiecień 2022 r.)
 
@@ -52,9 +52,11 @@ Aby włączyć lub wyłączyć te funkcje, należy przejść do obszaru [zarząd
 |---|---|---|
 | Zarządzanie zapasami i magazynem | (Polska) Zezwalaj na łączenie kilku faktur SAD do jednego wiersza zamówienia zakupu w jednej bazie danych SAD | Ta funkcja pozwala ci rozdzielić wiersze zamówień zakupu i połączyć je z pojedynczym dokumentem administracyjnym (SAD), gdy te wiersze zamówień zakupu zostały zaksięgowane dla kilku różnych faktur (np. dla różnych wysyłek). |
 | Zaopatrzenie i sourcing | Konsolidacja wielu zapotrzebowań na zakup w jedno zamówienie zakupu według daty księgowania | Ta funkcja pozwala na konsolidację wielu zapotrzebowań na zakup w jedno zamówienie, jeśli poszczególne zamówienia mają różne daty księgowania. Reguły polityki zakupowej dotyczące tworzenia zamówień i konsolidacji zapotrzebowania mogą być tworzone w celu zautomatyzowania decyzji o grupowaniu wierszy zapotrzebowania według daty księgowania na poziomie zamówienia. Konsolidacja zamówień według daty księgowania nie jest obsługiwana, jeśli włączona jest kontrola budżetowa, ponieważ data księgowania jest używana do rezerw budżetowych i obciążeń. Dlatego powinien on być zachowany podczas przejścia od zamówienia zakupu do zlecenia zakupu. |
+| Zaopatrzenie i sourcing | Wyłącz przycisk resetowania dystrybucji zapotrzebowania na zakup | Ta funkcja wyłącza przycisk **Resetuj** na stronie **Rozdzielczość księgowa** dla rekwizycji zakupu, które są w trakcie przeglądu. |
 | Zaopatrzenie i sourcing | Wyświetl starsze domyślne ustawienia pola odpowiedzi ZO | Ta funkcja przywraca dotychczasowe domyślne ustawienia pola odpowiedzi na zapytanie ofertowe (RFQ), które wcześniej zostały usunięte z interfejsu użytkownika. Te ustawienia nie zapewniają żadnej funkcjonalności po wyjęciu z pudełka, ale mogą być dostosowane tak, by zapewniały ją w razie potrzeby. Włącz tę funkcję, jeśli twoja organizacja dodała już funkcjonalność dla domyślnych ustawień pola odpowiedzi RFQ lub planuje to zrobić. Kiedy ta funkcja jest włączona, możesz uzyskać dostęp do ustawień, przechodząc na stronę **Parametry zamówień i zaopatrzenia**, otwierając zakładkę **Zapytanie ofertowe** i wybierając **Domyślne pola odpowiedzi na zapytanie ofertowe**. |
 | Zaopatrzenie i sourcing | Scal wymiary finansowe od dostawcy z aktywnym wymiarem finansowym łącza wymiaru w zamówieniu zakupu | Ta funkcja pozwala na łączenie wymiarów finansowych od dostawców z aktywnymi wymiarami finansowymi łączącymi wymiary po zatwierdzeniu zamówienia zakupu, jeśli ustawisz powiązanie między wymiarem finansowym a wymiarem zasobów miejsca. Reguły polityki zakupowej dotyczące tworzenia zamówień i konsolidacji zapotrzebowania mogą być ustawione tak, aby podejmować decyzje o łączeniu wymiarów finansowych od dostawców z aktywnym wymiarem łączącym wymiar finansowy na poziomie nagłówka zamówienia zakupu. |
 | Kontrola produkcji | (Rosja) Włącz domyślne ustawienia lokalizacji dla formuły/BOM oraz automatycznej rezerwacji/zużycia GTD w produkcji | Funkcja ta umożliwia dodatkowe opcje produkcji z importowanych surowców (tylko lokalizacja w Rosji):<ul><li>Opcja ustawienia automatycznej domyślnej lokalizacji dla formuł produkcyjnych i zestawień materiałów zarówno na grupach zasobów, jak i na magazynach.</li><li>Automatyczna rezerwacja surowców według wymiaru *numeru GTD* w magazynach aktywowanych przez system WMS zgodnie z algorytmem rezerwacji bez systemu WMS. Dotyczy to sytuacji, gdy istnieje polityka pracy dla *Pobierania surowców* z **Metodą tworzenia pracy** ustawioną na *Nigdy*, a ustawienia magazynu, lokalizacji i numeru pozycji odpowiadają transakcjom inwentaryzacyjnym zlecenia produkcyjnego (seryjnego).</li><li>Automatyczne zużycie surowców według wymiaru *numeru GTD* przy księgowaniu listy pobrań, zgodnie z nabytą rezerwacją opisaną wcześniej.</li></ul> |
+| Zarządzanie magazynem | Wyłącz oczekiwane przyjęcia ze zleceń kontroli jakości, które pobierają próbki zablokowanych zapasów | Funkcja ta uniemożliwia systemowi tworzenie transakcji oczekiwanego odbioru dla zleceń jakościowych, które próbkują zapasy o statusie blokującym. Ponieważ zablokowane zapasy nie są dostępne, funkcja ta usuwa spodziewane wpływy. Pomaga to upewnić się, że zapasy nie będą miały wielu statusów blokowania, co może prowadzić do problemów z integralnością danych. |
 | Zarządzanie magazynem | (Wersja zapoznawcza) Obsługa jednostki skalowania dla przychodzących i wychodzących zamówień magazynu | Funkcja ta powoduje, że system tworzy zlecenia wychodzące z magazynu podczas procesu wydania do magazynu oraz tworzy zlecenia przychodzące z magazynu, gdy zlecenia transferu są księgowane jako wysłane. Następnie system synchronizuje każde przychodzące lub wychodzące zamówienie magazynowe z jednostką wagi odpowiedzialną za wysyłkę lub odbiór zamówienia. Zwróć uwagę, że po włączeniu tej funkcji należy zaktualizować obciążenia wykonawcze magazynu. Aby uzyskać więcej informacji, zobacz temat [Obciążenia pracą dotyczące zarządzania magazynem dla jednostek skalowania chmury i urządzenia brzegowego](../cloud-edge/cloud-edge-workload-warehousing.md).<br><br>Ta funkcja wymaga funkcji *Oddzielenie pracy odkładania od ASN-ów* i umożliwi przyjmowanie zleceń transferu przy użyciu procesu przyjmowania tablic rejestracyjnych w aplikacji mobilnej Warehouse Management. |
 
 ## <a name="feature-state-changes-in-this-release"></a>Zmiany w stanie funkcji w tym wydaniu
@@ -65,121 +67,121 @@ Tabela zawiera również listę funkcji, które były wcześniej w publicznej we
 
 | Moduł | Nazwa funkcji | Stan funkcji |
 | --- | --- | --- |
-| Zarządzanie składnikami majątku | [Zastosuj reguły grupowania zleceń pracy podczas uruchamiania planu konserwacji](../asset-management/preventive-and-reactive-maintenance/creating-work-orders.md) | Ogólnie dostępne |
-| Zarządzanie składnikami majątku | [Ulepszenia konserwacji opartej na licznikach](../asset-management/preventive-and-reactive-maintenance/maintenance-plans.md) | Ogólnie dostępne |
-| Zarządzanie kosztami | [Poziom obliczania kosztu](../cost-management/cost-calculation-level.md) | Ogólnie dostępne |
+| Zarządzanie składnikami majątku | Zastosuj reguły grupowania zleceń pracy podczas uruchamiania planu konserwacji | Ogólnie dostępne |
+| Zarządzanie składnikami majątku | Ulepszenia konserwacji opartej na licznikach | Ogólnie dostępne |
+| Zarządzanie kosztami | Poziom obliczania kosztu | Ogólnie dostępne |
 | Zarządzanie kosztami | Włącz definiowane przez użytkownika ustawienia numerów partii dla wycofania zamknięcia magazynu | Ogólnie dostępne |
-| Zarządzanie kosztami | [Szczegóły postępu zamknięcia zapasów](whats-new-scm-10-0-21.md) | Ogólnie dostępne |
-| Zarządzanie kosztami | [Opcje ustawiania wartości domyślnych wymiarów finansowych dla ponownej oceny standardowego kosztu zapasów](../cost-management/manage-standard-cost-updates.md) | Ogólnie dostępne |
+| Zarządzanie kosztami | Szczegóły postępu zamknięcia zapasów | Ogólnie dostępne |
+| Zarządzanie kosztami | Opcje ustawiania wartości domyślnych wymiarów finansowych dla ponownej oceny standardowego kosztu zapasów | Ogólnie dostępne |
 | Zarządzanie kosztami | Czyszczenie danych raportu wartości zapasów | Domyślnie włączona |
-| Zarządzanie kosztami | [Magazyn raportów wartości zapasów](../cost-management/inventory-value-report-storage.md) | Domyślnie włączona |
+| Zarządzanie kosztami | Magazyn raportów wartości zapasów | Domyślnie włączona |
 | Zarządzanie kosztami | Pokaż dziennik zamykania magazynu w siatce | Domyślnie włączona |
-| Zarządzanie zmianami projektowymi | [Włącz zarządzanie zmianami w istniejących produktach](../engineering-change-management/change-management-existing-products.md) | Domyślnie włączona |
-| Zarządzanie zmianami projektowymi | [Zarządzanie zmianami projektowymi](../engineering-change-management/product-engineering-overview.md) | Domyślnie włączona |
-| Zarządzanie zmianami projektowymi | [Powiadomienia projektowe dla produkcji](../engineering-change-management/engineering-change-management.md) | Domyślnie włączona |
-| Zarządzanie zmianami projektowymi | [Poprawione dziedziczenie atrybutów dla zarządzania zmianami produkcyjnymi](../engineering-change-management/engineering-attributes-and-search.md) | Domyślnie włączona |
-| Zarządzanie zmianami projektowymi | [Zarządzanie zmianami dotyczącymi formuł i ich substancji](../engineering-change-management/manage-formula-changes.md) | Domyślnie włączona |
-| Zarządzanie zmianami projektowymi | [Kontrole gotowości produktu](../engineering-change-management/product-readiness.md) | Domyślnie włączona |
-| Zarządzanie zmianami projektowymi | [Generowanie wariantów produktów projektowych](../engineering-change-management/engineering-variants.md) | Domyślnie włączona |
+| Zarządzanie zmianami projektowymi | Włącz zarządzanie zmianami w istniejących produktach | Domyślnie włączona |
+| Zarządzanie zmianami projektowymi | Zarządzanie zmianami projektowymi | Domyślnie włączona |
+| Zarządzanie zmianami projektowymi | Powiadomienia projektowe dla produkcji | Domyślnie włączona |
+| Zarządzanie zmianami projektowymi | Poprawione dziedziczenie atrybutów dla zarządzania zmianami produkcyjnymi | Domyślnie włączona |
+| Zarządzanie zmianami projektowymi | Zarządzanie zmianami dotyczącymi formuł i ich substancji | Domyślnie włączona |
+| Zarządzanie zmianami projektowymi | Kontrole gotowości produktu | Domyślnie włączona |
+| Zarządzanie zmianami projektowymi | Generowanie wariantów produktów projektowych | Domyślnie włączona |
 | Zarządzanie zapasami i magazynem | Nawigacja do wersji listy składowej (BOM) z wierszy listy składowej (BOM) | Wymagana |
-| Planowanie główne | [Akceptowanie i konsolidacja, które mogą być przeprowadzane w partiach, dla planowanych zamówień partii masowych i paczkowanych](whats-new-scm-10-0-20.md) | Ogólnie dostępne |
+| Planowanie główne | Akceptowanie i konsolidacja, które mogą być przeprowadzane w partiach, dla planowanych zamówień partii masowych i paczkowanych | Ogólnie dostępne |
 | Planowanie główne | Planowanie zasobów z obsługą konserwacyjną | Ogólnie dostępne |
 | Planowanie główne | Włączanie funkcji kreatora konfiguracji planu głównego | Wymagana |
-| Planowanie główne | [Wybór modelu prognozy w szczegółach prognozy popytu](../master-planning/manual-adjustments-baseline-forecast.md) | Wymagana |
-| Planowanie główne | [Wizualizacja postępu planowania głównego](../master-planning/tasks/monitor-master-planning-run.md) | Wymagana |
-| Planowanie główne | [Równoległa akceptacja zamówień planowanych](../master-planning/planning-optimization/planned-order-firming.md) | Wymagana |
-| Planowanie główne | [Akceptowanie zamówień planowanych z filtrowaniem](../master-planning/planning-optimization/planned-order-firming.md) | Domyślnie włączona |
-| Planowanie główne | [Zapisane widoki dla planowanych zamówień](saved-views-scm.md) | Domyślnie włączona |
+| Planowanie główne | Wybór modelu prognozy w szczegółach prognozy popytu | Wymagana |
+| Planowanie główne | Wizualizacja postępu planowania głównego | Wymagana |
+| Planowanie główne | Równoległa akceptacja zamówień planowanych | Wymagana |
+| Planowanie główne | Akceptowanie zamówień planowanych z filtrowaniem | Domyślnie włączona |
+| Planowanie główne | Zapisane widoki dla planowanych zamówień | Domyślnie włączona |
 | Zaopatrzenie i sourcing | Wyłącz przycisk resetowania dystrybucji zapotrzebowania na zakup | Ogólnie dostępne |
-| Zaopatrzenie i sourcing | [Włącz resetowanie przepływów pracy związanych z zaopatrzeniem](whats-new-scm-10-0-20.md) | Ogólnie dostępne |
+| Zaopatrzenie i sourcing | Włącz resetowanie przepływów pracy związanych z zaopatrzeniem | Ogólnie dostępne |
 | Zaopatrzenie i sourcing | Możliwość zbiorczego potwierdzania zaakceptowanych zamówień zakupu z portalu współpracy z dostawcami | Wymagana |
 | Zaopatrzenie i sourcing | Stan umowy zakupu Zamknięta | Wymagana |
 | Zaopatrzenie i sourcing | Dodaj wiersze do faktur do zamówienia zakupu skojarzonych z umową zakupu | Domyślnie włączona |
 | Zaopatrzenie i sourcing | Dodaj pole Ilość zamówiona na stronie Księgowanie dokumentu przyjęcia produktów | Domyślnie włączona |
-| Zaopatrzenie i sourcing | [Zezwól dostawcom na zgłoszenie się do kategorii zaopatrzenia za pośrednictwem współpracy z dostawcami](../procurement/category-requests-from-vendors.md) | Domyślnie włączona |
+| Zaopatrzenie i sourcing | Zezwól dostawcom na zgłoszenie się do kategorii zaopatrzenia za pośrednictwem współpracy z dostawcami | Domyślnie włączona |
 | Zaopatrzenie i sourcing | Kwoty od i do opłat dla zamówień zakupu | Domyślnie włączona |
 | Zaopatrzenie i sourcing | Konfiguracja opłat dla obiektu i magazynu | Domyślnie włączona |
 | Zaopatrzenie i sourcing | Włącz obliczanie cła od zakupu na podstawie rocznej taryfy | Domyślnie włączona |
-| Zaopatrzenie i sourcing | [Strona odpowiedzialna za umowę zakupu](../procurement/purchase-agreements.md) | Domyślnie włączona |
-| Zaopatrzenie i sourcing | [Zapisane widoki dla zamówień zakupu](saved-views-scm.md) | Domyślnie włączona |
-| Zarządzanie informacjami o produktach | [Ścisła weryfikacja w domyślnych ilościach zamówienia](../production-control/default-order-settings.md) | Wymagana |
+| Zaopatrzenie i sourcing | Strona odpowiedzialna za umowę zakupu | Domyślnie włączona |
+| Zaopatrzenie i sourcing | Zapisane widoki dla zamówień zakupu | Domyślnie włączona |
+| Zarządzanie informacjami o produktach | Ścisła weryfikacja w domyślnych ilościach zamówienia | Wymagana |
 | Zarządzanie informacjami o produktach | Przetwarzanie wstępne raportu listy składowej (BOM) w celu uniknięcia limitu czasu | Domyślnie włączona |
 | Zarządzanie informacjami o produktach | Domyślne wymiary finansowe osobno w przypadku korzystania z szablonów pozycji | Domyślnie włączona |
 | Zarządzanie informacjami o produktach | Włącz grupy wymiarów produktów dla szablonów pozycji | Domyślnie włączona |
 | Zarządzanie informacjami o produktach | Generuj ponownie nazwy wariantów produktu na podstawie nazewnictwa | Domyślnie włączona |
-| Zarządzanie informacjami o produktach | [Ulepszenia strony sugestii dotyczących wariantów](../pim/tasks/create-predefined-product-variants.md) | Domyślnie włączona |
+| Zarządzanie informacjami o produktach | Ulepszenia strony sugestii dotyczących wariantów | Domyślnie włączona |
 | Kontrola produkcji | Poprawione pobieranie ilości efektywnej produkcji | Ogólnie dostępne |
 | Kontrola produkcji | Do strony Terminal kart zadań dodany został nowy przycisk Zatrzymaj przerwę | Wymagana |
-| Kontrola produkcji | [Włącz automatyczną generację numeru identyfikacyjnego podczas zgłaszania wyrobów gotowych w urządzeniu karty zadań](../production-control/production-floor-execution-configure.md) | Wymagana |
+| Kontrola produkcji | Włącz automatyczną generację numeru identyfikacyjnego podczas zgłaszania wyrobów gotowych w urządzeniu karty zadań | Wymagana |
 | Kontrola produkcji | Włącz częściowe przyjęcie pozycji podwykonawczych i rozwiąż problem z obliczaniem odpadków dla wierszy listy składowej (BOM) typu Dostawca | Wymagana |
-| Kontrola produkcji | [Funkcja umożliwiająca blokowanie urządzenie karty zadań i terminalu karty zadań w celu ich wyczyszczenia](../production-control/production-floor-execution-configure.md) | Wymagana |
+| Kontrola produkcji | Funkcja umożliwiająca blokowanie urządzenie karty zadań i terminalu karty zadań w celu ich wyczyszczenia | Wymagana |
 | Kontrola produkcji | Ulepszenia w oknach dialogowych Zadania zatwierdzania i Zadania przenoszenia | Wymagana |
-| Kontrola produkcji | [Numer identyfikacyjny do zgłoszenia wyrobów gotowych został dodany do urządzenia karty zadań](../production-control/production-floor-execution-configure.md) | Wymagana |
-| Kontrola produkcji | [Drukowanie etykiety z menu Urządzenie karty zadań](../production-control/production-floor-execution-configure.md) | Wymagana |
-| Kontrola produkcji | [Wykonanie hali produkcyjnej](../production-control/production-floor-execution-configure.md) | Wymagana |
-| Kontrola produkcji | [Funkcje zarządzania zasobami dla interfejsu wykonania hali produkcyjnej](../production-control/production-floor-execution-configure.md) | Domyślnie włączona |
-| Kontrola produkcji | [Wyszukiwanie zadań dla interfejsu wykonania hal produkcyjnych](../production-control/production-floor-execution-configure.md) | Domyślnie włączona |
-| Kontrola produkcji | [Zastąp domyślną rezerwację produkcji](../production-control/override-default-reservation-principle.md) | Domyślnie włączona |
-| Kontrola produkcji | [Pokaż pełne numery seryjne, partii i numery identyfikacyjne w interfejsie wykonania hal produkcyjnych](whats-new-scm-10-0-21.md) | Domyślnie włączona |
-| Sprzedaż i marketing | [Rozszerzenie wydajności szczegółów zamówienia sprzedaży](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-order-details-performance-enhancement) | Ogólnie dostępne |
+| Kontrola produkcji | Numer identyfikacyjny do zgłoszenia wyrobów gotowych został dodany do urządzenia karty zadań | Wymagana |
+| Kontrola produkcji | Drukowanie etykiety z menu Urządzenie karty zadań | Wymagana |
+| Kontrola produkcji | Wykonanie hali produkcyjnej | Wymagana |
+| Kontrola produkcji | Funkcje zarządzania zasobami dla interfejsu wykonania hali produkcyjnej | Domyślnie włączona |
+| Kontrola produkcji | Wyszukiwanie zadań dla interfejsu wykonania hal produkcyjnych | Domyślnie włączona |
+| Kontrola produkcji | Zastąp domyślną rezerwację produkcji | Domyślnie włączona |
+| Kontrola produkcji | Pokaż pełne numery seryjne, partii i numery identyfikacyjne w interfejsie wykonania hal produkcyjnych | Domyślnie włączona |
+| Sprzedaż i marketing | Rozszerzenie wydajności szczegółów zamówienia sprzedaży | Ogólnie dostępne |
 | Sprzedaż i marketing | Rozszerzenie wydajności szczegółów oferty sprzedaży | Ogólnie dostępne |
 | Sprzedaż i marketing | Zasady eksportu danych, do których odwołuje się zamówienie sprzedaży | Wymagana |
-| Sprzedaż i marketing | [Zasady usuwania wiersza zamówienia sprzedaży do zamówienia zakupu](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-order-purchase-order-line-deletion-policy) | Wymagana |
-| Sprzedaż i marketing | [Zasady eksportu danych, do których odwołuje się oferta sprzedaży](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sales-quotation-referenced-data-export-policy)| Wymagana |
-| Sprzedaż i marketing | [Optymalizacja eksportu jednostki danych osoby kontaktowej](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/contact-person-data-entity-export-optimization) | Domyślnie włączona |
+| Sprzedaż i marketing | Zasady usuwania wiersza zamówienia sprzedaży do zamówienia zakupu | Wymagana |
+| Sprzedaż i marketing | Zasady eksportu danych, do których odwołuje się oferta sprzedaży | Wymagana |
+| Sprzedaż i marketing | Optymalizacja eksportu jednostki danych osoby kontaktowej | Domyślnie włączona |
 | Sprzedaż i marketing | Włącz wyszukiwanie pól wprowadzenia do dokumentu i wniosków z dokumentu ofert sprzedaży | Domyślnie włączona |
-| Sprzedaż i marketing | [Popraw wydajność raportu „100 najlepszych” odbiorców](whats-new-scm-10-0-23.md) | Domyślnie włączona |
+| Sprzedaż i marketing | Popraw wydajność raportu „100 najlepszych” odbiorców | Domyślnie włączona |
 | Sprzedaż i marketing | Ponowne obliczanie szacowanego salda odbiorcy | Domyślnie włączona |
-| Sprzedaż i marketing | [Rejestracja wiersza zamówienia zwrotu sprzedaży z dokładnością do wartości dziesiętnych wraz z i bez ilości efektywnej](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-return-order-line-registration-decimal-precision-without-catch-weight) | Domyślnie włączona |
-| Sprzedaż i marketing | [Zapisane widoki dla sprzedaży i marketingu](saved-views-scm.md) | Domyślnie włączona |
+| Sprzedaż i marketing | Rejestracja wiersza zamówienia zwrotu sprzedaży z dokładnością do wartości dziesiętnych wraz z i bez ilości efektywnej | Domyślnie włączona |
+| Sprzedaż i marketing | Zapisane widoki dla sprzedaży i marketingu | Domyślnie włączona |
 | Sprzedaż i marketing | Potwierdzenie zamówienia sprzedaży za jednym kliknięciem | Domyślnie włączona |
-| Zarządzanie magazynem | [Szablony przeładunku kompletacyjnego z dyrektywami lokalizacji](../warehousing/planned-cross-docking.md) | Ogólnie dostępne |
-| Zarządzanie magazynem | [Wyłącz oczekiwane przyjęcia ze zleceń kontroli jakości, które pobierają próbki zablokowanych zapasów](../inventory/inventory-blocking.md) | Ogólnie dostępne |
+| Zarządzanie magazynem | Szablony przeładunku kompletacyjnego z dyrektywami lokalizacji | Ogólnie dostępne |
+| Zarządzanie magazynem | Wyłącz oczekiwane przyjęcia ze zleceń kontroli jakości, które pobierają próbki zablokowanych zapasów | Ogólnie dostępne |
 | Zarządzanie magazynem | Historia odbierania numeru identyfikacyjnego | Ogólnie dostępne |
-| Zarządzanie magazynem | [Interfejs urządzeń do obsługi materiałów](../warehousing/mhax.md) | Ogólnie dostępne |
-| Zarządzanie magazynem | [Zaokrąglij ilości w dół do najbliższej jednostki sprzedaży podczas zwalniania do magazynu](whats-new-scm-10-0-19.md) | Ogólnie dostępne |
+| Zarządzanie magazynem | Zaokrąglij ilości w dół do najbliższej jednostki sprzedaży podczas zwalniania do magazynu | Ogólnie dostępne |
 | Zarządzanie magazynem | Obsługa jednostki skalowania dla list pracy aplikacji magazynowej | Ogólnie dostępne |
 | Zarządzanie magazynem | Szczegóły etykiety grupy czynności wysyłki | Ogólnie dostępne |
-| Zarządzanie magazynem | [Użyj szybszego interfejsu API do zamykania/ponownego otwierania kontenerów na stacji pakowania](whats-new-scm-10-0-21.md) | Ogólnie dostępne |
-| Zarządzanie magazynem | [Weryfikuj szablony wybrane dla zadań uzupełniania zapasów](whats-new-scm-10-0-20.md) | Ogólnie dostępne |
+| Zarządzanie magazynem | Użyj szybszego interfejsu API do zamykania/ponownego otwierania kontenerów na stacji pakowania | Ogólnie dostępne |
+| Zarządzanie magazynem | Weryfikuj szablony wybrane dla zadań uzupełniania zapasów | Ogólnie dostępne |
 | Zarządzanie magazynem | Zezwalaj szablonowi uzupełniania zapasów na użycie istniejącej pracy natychmiastowego uzupełniania zapasów (między jednostkami) | Wymagana |
 | Zarządzanie magazynem | Automatyczne przypisywanie identyfikatorów GUID przy tworzeniu użytkownika WHS | Wymagana |
 | Zarządzanie magazynem | Przechwytywanie wariantów produktu i wymiarów śledzenia w aplikacji magazynowej podczas przyjmowania pozycji ładunku | Wymagana |
-| Zarządzanie magazynem | [Zmień stan zapasów dla pozycji kontrolowanych przez wymiary śledzenia](../inventory/inventory-statuses.md) | Wymagana |
-| Zarządzanie magazynem | [Zmień pulę pracy w pracy](../warehousing/change-work-pool-on-work.md) | Wymagana |
-| Zarządzanie magazynem | [Stanowisko w grupie pełne](../warehousing/cluster-position-full.md) | Wymagana |
-| Zarządzanie magazynem | [Funkcja odłożenia grupy](../warehousing/putaway-clusters.md) | Wymagana |
-| Zarządzanie magazynem | [Potwierdź i przenieś](../warehousing/confirm-and-transfer.md) | Wymagana |
-| Zarządzanie magazynem | [Potwierdź wychodzące wysyłki z zadań wsadowych](../warehousing/confirm-outbound-shipments-from-batch-jobs.md) | Wymagana |
-| Zarządzanie magazynem | [Określ, czy wyświetlać stronę podsumowania odbierania na urządzeniach przenośnych](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md) | Wymagana |
-| Zarządzanie magazynem | [Odroczone przetwarzanie operacji ręcznego przenoszenia zapasów](../warehousing/deferred-processing-manual-inventory-movement.md) | Wymagana |
+| Zarządzanie magazynem | Zmień stan zapasów dla pozycji kontrolowanych przez wymiary śledzenia | Wymagana |
+| Zarządzanie magazynem | Zmień pulę pracy w pracy | Wymagana |
+| Zarządzanie magazynem | Stanowisko w grupie pełne | Wymagana |
+| Zarządzanie magazynem | Funkcja odłożenia grupy | Wymagana |
+| Zarządzanie magazynem | Potwierdź i przenieś | Wymagana |
+| Zarządzanie magazynem | Potwierdź wychodzące wysyłki z zadań wsadowych | Wymagana |
+| Zarządzanie magazynem | Określ, czy wyświetlać stronę podsumowania odbierania na urządzeniach przenośnych | Wymagana |
+| Zarządzanie magazynem | Odroczone przetwarzanie operacji ręcznego przenoszenia zapasów | Wymagana |
 | Zarządzanie magazynem | Nie zezwalaj na tworzenie ładunków, które nie spełniają wymagań szablonu kompilowania ładunku grupy czynności | Wymagana |
-| Zarządzanie magazynem | [Rozszerzone układy etykiet numerów identyfikacyjnych](../warehousing/document-routing-layout-for-license-plates.md) | Wymagana |
-| Zarządzanie magazynem | [Ocenianie wszystkich akcji dla dyrektyw lokalizacji wielu jednostek SKU](../troubleshooting/warehousing/evaluate-multiple-location-directive-actions.md) | Wymagana |
+| Zarządzanie magazynem | Rozszerzone układy etykiet numerów identyfikacyjnych | Wymagana |
+| Zarządzanie magazynem | Ocenianie wszystkich akcji dla dyrektyw lokalizacji wielu jednostek SKU | Wymagana |
 | Zarządzanie magazynem | Ukryj pole Wartość całkowita na stronach „Wszystkie ładunki” i „Szczegóły ładunku” | Wymagana |
 | Zarządzanie magazynem | Konfiguracja kompilacji etykiet numerów identyfikacyjnych | Wymagana |
 | Zarządzanie magazynem | Ręczna korekta wiersza obciążenia pracą dla administratora lub podobnych zaufanych użytkowników | Wymagana |
-| Zarządzanie magazynem | [Stanowisko obiektu o numerze identyfikacyjnym w lokalizacji](../warehousing/location-license-plate-positioning.md) | Wymagana |
-| Zarządzanie magazynem | [Mieszanie wymiarów produktów w lokalizacji](../warehousing/location-product-dimension-mixing.md) | Wymagana |
+| Zarządzanie magazynem | Stanowisko obiektu o numerze identyfikacyjnym w lokalizacji | Wymagana |
+| Zarządzanie magazynem | Mieszanie wymiarów produktów w lokalizacji | Wymagana |
 | Zarządzanie magazynem | Umożliwia edytowanie pola stanu zapasów dla przeniesienia magazynowego urządzeń przenośnych | Wymagana |
 | Zarządzanie magazynem | Ręczna usługa pobierania wierszy sprzedaży dla administratora lub podobnych zaufanych użytkowników | Wymagana |
-| Zarządzanie magazynem | [Zapobiegaj używaniu numerów identyfikacyjnych wysłanych zamówień przeniesienia w magazynach innych niż magazyn docelowy](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md) | Wymagana |
+| Zarządzanie magazynem | Zapobiegaj używaniu numerów identyfikacyjnych wysłanych zamówień przeniesienia w magazynach innych niż magazyn docelowy | Wymagana |
 | Zarządzanie magazynem | Monituj o rozwiązanie niejednoznacznych nazw typu „Lokalizacja/numer identyfikacyjny” | Wymagana |
-| Zarządzanie magazynem | [Kontrola jakości](../warehousing/quality-check.md) | Wymagana |
-| Zarządzanie magazynem | [Ustawienia użytkownika, ikony i tytuły kroków dla nowej aplikacji magazynowej](../warehousing/install-configure-warehouse-management-app.md) | Wymagana |
-| Zarządzanie magazynem | [Dodatkowa strefa lokalizacji](../warehousing/additional-location-zones.md) | Domyślnie włączona |
-| Zarządzanie magazynem | [Tworzenie i przetwarzanie zamówień przeniesienia z aplikacji magazynowej](../warehousing/create-transfer-order-from-warehouse-app.md) | Domyślnie włączona |
+| Zarządzanie magazynem | Kontrola jakości | Wymagana |
+| Zarządzanie magazynem | Ustawienia użytkownika, ikony i tytuły kroków dla nowej aplikacji magazynowej | Wymagana |
+| Zarządzanie magazynem | Dodatkowa strefa lokalizacji | Domyślnie włączona |
+| Zarządzanie magazynem | Tworzenie i przetwarzanie zamówień przeniesienia z aplikacji magazynowej | Domyślnie włączona |
 | Zarządzanie magazynem | Włączanie funkcji szybkiej weryfikacji dla urządzeń przenośnych używanych w magazynie | Domyślnie włączona |
-| Zarządzanie magazynem | [Maksymalny czas wykonywania zadania oczyszczania wpisów dostępnych zapasów w zarządzaniu magazynem](../warehousing/onhand-cleanup.md) | Domyślnie włączona |
-| Zarządzanie magazynem | [Wychodzące wizualizacje obciążenia pracą](../warehousing/outbound-workload-visualization.md) | Domyślnie włączona |
-| Zarządzanie magazynem | [Przetwarzanie zdarzeń aplikacji magazynowej](../warehousing/warehouse-app-events.md) | Domyślnie włączona |
-| Zarządzanie magazynem | [Zapisane widoki dla warsztatu planowania wysyłki ładunku](saved-views-scm.md) | Domyślnie włączona |
-| Zarządzanie magazynem | [Zapisany widok dla strony szczegółów pracy](saved-views-scm.md) | Domyślnie włączona |
-| Zarządzanie magazynem | [Zapisany widok dla przetwarzania grupy czynności](saved-views-scm.md) | Domyślnie włączona |
-| Zarządzanie magazynem | [Zapisane widoki dla przetwarzania ładunku](saved-views-scm.md) | Domyślnie włączona |
-| Zarządzanie magazynem | [Zapisane widoki dla przetwarzania wysyłki](saved-views-scm.md) | Domyślnie włączona |
-| Zarządzanie magazynem | [Szczegóły zadania wsadowego grupy czynności](../warehousing/wave-processing.md) | Domyślnie włączona |
-| Zarządzanie magazynem | [Powiadomienia dotyczące wykonania grupy czynności](../warehousing/wave-execution-notifications.md) | Domyślnie włączona |
+| Zarządzanie magazynem | Wykorzystanie lokalizacji konsolidacji pozycji | Domyślnie włączona |
+| Zarządzanie magazynem | Maksymalny czas wykonywania zadania oczyszczania wpisów dostępnych zapasów w zarządzaniu magazynem | Domyślnie włączona |
+| Zarządzanie magazynem | Wychodzące wizualizacje obciążenia pracą | Domyślnie włączona |
+| Zarządzanie magazynem | Przetwarzanie zdarzeń aplikacji magazynowej | Domyślnie włączona |
+| Zarządzanie magazynem | Zapisane widoki dla warsztatu planowania wysyłki ładunku | Domyślnie włączona |
+| Zarządzanie magazynem | Zapisany widok dla strony szczegółów pracy | Domyślnie włączona |
+| Zarządzanie magazynem | Zapisany widok dla przetwarzania grupy czynności | Domyślnie włączona |
+| Zarządzanie magazynem | Zapisane widoki dla przetwarzania ładunku | Domyślnie włączona |
+| Zarządzanie magazynem | Zapisane widoki dla przetwarzania wysyłki | Domyślnie włączona |
+| Zarządzanie magazynem | Szczegóły zadania wsadowego grupy czynności | Domyślnie włączona |
+| Zarządzanie magazynem | Powiadomienia dotyczące wykonania grupy czynności | Domyślnie włączona |
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

@@ -2,11 +2,9 @@
 title: Zapobieganie obcinaniu tekstu w hierarchii stanowisk i eksportowanie do programu Visio
 description: W tym artykule wyjaśniono, jak można rozwiązać problem polegający na tym, że nazwy stanowisk i imiona i nazwiska osób są obcinane, gdy odbiorcy wyświetlają hierarchię stanowisk w Microsoft Dynamics 365 Human Resources. Obcinanie tekstu może utrudniać wykonywanie zrzutów ekranu lub wydrukowanie hierarchii.
 author: andreabichsel
-manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -17,14 +15,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 02fb0098cc6f5a0b353e827653b1c8c96af2470c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f8310def6f33b807f7f749e659432e482245d007
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420074"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5803880"
 ---
 # <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a>Zapobieganie obcinaniu tekstu w hierarchii stanowisk i eksportowanie do programu Visio
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **Wystawienie**
 
@@ -104,3 +104,6 @@ Na podstawie pól wybranych do uwzględnienia w schemacie, każdy węzeł wyświ
 **Opcja dodatkowa**
 
 W programie Human Resources również można używać obszaru roboczego **Osoby** w celu wyświetlenia niektórych informacji dotyczących hierarchii.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

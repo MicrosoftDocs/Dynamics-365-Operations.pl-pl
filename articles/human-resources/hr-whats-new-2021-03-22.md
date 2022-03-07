@@ -5,9 +5,11 @@ author: marcelbf
 ms.date: 03/22/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-03-22
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0f08dc966353cc612c8145f29e2cd8c303da5b359292a8f928d97f0e0de99585
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5854fa8c89f1a72c32bd480e71c1cd0a743c6cd7
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777095"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5803352"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-22-2021"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources 22 marca 2021 r.
 
@@ -30,7 +32,7 @@ W tym temacie opisano nowe, zmienione i wkrótce dostępne funkcje dostępne w r
 
 Aby uzyskać więcej informacji na temat procesu aktualizacji i harmonogramu, należy zapoznać się z tematem [Aktualizacja procesu](hr-admin-setup-update-process.md).
 
-Aby uzyskać więcej informacji o nowych funkcjach i oczekiwanych ogólnych datach dostępności, zapoznaj się z [omówieniem Dynamics 365 Human Resources 2021 wydanie 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
+Aby uzyskać więcej informacji o nowych funkcjach i oczekiwanych ogólnych datach dostępności, zapoznaj się z [omówieniem Dynamics 365 Human Resources 2021 wydanie 1](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
 
 ## <a name="in-this-release"></a>W tej wersji
 
@@ -42,7 +44,7 @@ W tym wydaniu są zazwyczaj dostępne następujące funkcje.
 
 | Funkcja | Plan wydań | Dokumentacja |
 | --- | --- | --- |
-| Opcja wymuszania anulowania i resetowania zablokowanych zadań wsadowych (560976) | NA | [Resetowanie zablokowanych zadań wsadowych](./hr-admin-troubleshooting-batch-execution.md) |
+| Opcja wymuszania anulowania i resetowania zablokowanych zadań wsadowych (560976) | NA | [Resetowanie zablokowanych zadań wsadowych](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-troubleshooting-batch-execution) |
 | Pomocnicze aktualizacje UX w celu utworzenia nowego planu świadczeń (419941) | NA | [Tworzenie planu świadczeń](hr-benefits-plans-setup.md) |
 
 ### <a name="bug-fixes"></a>Poprawki błędów
@@ -72,8 +74,8 @@ Następujące nowe funkcje są dostępne w wersji zapoznawczej. Aby uzyskać inf
 
 | Funkcja | Plan wydań | Dokumentacja |
 | --- | --- | --- |
-| Obszar roboczy zarządzania świadczeniami | [Obszar roboczy zarządzania korzyściami (wersja zapoznawcza)](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [Obszar roboczy zarządzania świadczeniami](hr-benefits-management-workspace.md) |
-| Ograniczenie pracownikom możliwości edytowania biznesowych danych kontaktowych | [Ograniczenie pracownikom możliwości edytowania biznesowych danych kontaktowych](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/restrict-employees-editing-business-contact-details) | [Ogranicz edytowanie informacji osobistych](hr-employee-self-service-restrict-editing.md)|
+| Obszar roboczy zarządzania świadczeniami | [Obszar roboczy zarządzania korzyściami (wersja zapoznawcza)](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [Obszar roboczy zarządzania świadczeniami](hr-benefits-management-workspace.md) |
+| Ograniczenie pracownikom możliwości edytowania biznesowych danych kontaktowych | [Ograniczenie pracownikom możliwości edytowania biznesowych danych kontaktowych](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/restrict-employees-editing-business-contact-details) | [Ogranicz edytowanie informacji osobistych](hr-employee-self-service-restrict-editing.md)|
 
 ## <a name="coming-soon"></a>Wkrótce
 
@@ -81,12 +83,12 @@ Następujące nowe funkcje są dostępne w wersji zapoznawczej. Aby uzyskać inf
 | --- | --- |
 | Umiejętności wprowadzone przez menedżera dla swoich pracowników mogą być automatycznie zatwierdzane w przepływie pracy | Wkrótce. |
 
-Aby uzyskać pełną listę zaplanowanych funkcji i ich zaplanowanych wersji, zajrzyj do [omówienia Dynamics 365 Human Resources 2021 wydanie 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
+Aby uzyskać pełną listę zaplanowanych funkcji i ich zaplanowanych wersji, zajrzyj do [omówienia Dynamics 365 Human Resources 2021 wydanie 1](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
 
 ## <a name="see-also"></a>Informacje dodatkowe
 
 [Nowości i zmiany w rozwiązaniu Human Resources](hr-admin-whats-new.md)</br>
-[Omówienie rozwiązania Dynamics 365 Human Resources 2021, wydanie 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/)</br>
+[Omówienie rozwiązania Dynamics 365 Human Resources 2021, wydanie 1](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/)</br>
 [Aktualizowanie procesu](hr-admin-setup-update-process.md)</br>
 [Zarządzanie funkcjami](hr-admin-manage-features.md)
 

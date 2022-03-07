@@ -1,18 +1,23 @@
 ---
-# required metadata
 title: Omówienie kredytów i windykacji
 description: W tym temacie omówiono funkcje dotyczące kredytów i windykacji.
 author: JodiChristiansen
 ms.date: 09/04/2019
 ms.topic: overview
-ms.prod: null
-ms.technology: null
+ms.prod: ''
+ms.technology: ''
 audience: Application User
 ms.reviewer: roschloma
 ms.search.region: Global
 ms.author: roschlom
-ms.search.validFrom: null
-ms.dyn365.ops.version: null
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
+ms.openlocfilehash: 293a6c507c6abd6009a23403384c3b58a1a55a52
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982619"
 ---
 # <a name="credit-and-collections-overview"></a>Omówienie kredytów i windykacji
 

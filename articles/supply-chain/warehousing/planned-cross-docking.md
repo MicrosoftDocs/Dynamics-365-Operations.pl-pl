@@ -2,11 +2,9 @@
 title: Planowany przeładunek kompletacyjny
 description: W tym temacie opisano zaawansowane planowane przeładunki kompletacyjne, w którym ilość zapasów wymagana dla zamówienia jest skierowana bezpośrednio z paragonu lub tworzenia do właściwego doku załadunkowego lub obszaru tymczasowego. Wszystkie pozostałe zapasy ze źródła przychodzącego są kierowane do poprawnego miejsca przechowywania za pośrednictwem zwykłego procesu umieszczenia.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSCrossDockingTemplate, WHSLoadPostMethod, WHSWorkClass, WHSWorkTemplateTable, WHSLocDirTable, WHSPlannedCrossDocking
 audience: Application User
@@ -14,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: fb598b3ac7dd72e8c500f0c2eaf07462009c67f7
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.7
+ms.openlocfilehash: c28639a4a575f5f356bf947ba8e0aee6bcd256b4
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4970313"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7573040"
 ---
 # <a name="planned-cross-docking"></a>Planowany przeładunek kompletacyjny
 
@@ -30,19 +28,21 @@ W tym temacie opisano zaawansowany planowany przeładunek kompletacyjny. Zaawans
 
 Proces ten pozwala pracownikom pominąć przychodzące umieszczenia i pobrania wychodzące zapasów, które są już oznaczone dla zamówienia wychodzącego. Z tego względu liczba przypadków, gdy zapasy są poruszane, jest zminimalizowana, jeśli to możliwe. Ponadto, ponieważ mniejsza jest interakcja z systemem, wzrasta oszczędność czasu i miejsca w ramach produkcji magazynowej.
 
-Aby można było uruchomić przeładunek kompletacyjny, użytkownik musi skonfigurować nowy szablon przeładunku kompletacyjnego, w którym określono źródło dostaw i inne zestawy wymagań. Po utworzeniu zamówienia wychodzącego wiersz musi być zaznaczony względem zamówienia przychodzącego, które zawiera ten sam towar.
+Aby można było uruchomić przeładunek kompletacyjny, użytkownik musi skonfigurować nowy szablon przeładunku kompletacyjnego, w którym określono źródło dostaw i inne zestawy wymagań. Po utworzeniu zamówienia wychodzącego wiersz musi być zaznaczony względem zamówienia przychodzącego, które zawiera ten sam towar. Można wybrać pole kodu dyrektywy w szablonie przeładunku kompletacyjnego, podobnie jak w przypadku konfigurowania zamówień uzupełniania i zakupu.
 
 W momencie przyjęcia zamówienia przychodzącego konfiguracja przeładunku kompletacyjnego automatycznie identyfikuje potrzebę przeładunku kompletacyjnego i tworzy pracę dla wymaganej ilości w oparciu o konfigurację dyrektywy lokalizacji.
 
 > [!NOTE]
-> Transakcje magazynowe **nie są** rejestrowane, gdy praca przeładunku kompletacyjnego została anulowana, nawet jeśli ustawienie tej funkcji jest włączone w parametrach zarządzania magazynem.
+> Transakcje magazynowe *nie są* rejestrowane, gdy praca przeładunku kompletacyjnego została anulowana, nawet jeśli ustawienie tej funkcji jest włączone w parametrach zarządzania magazynem.
 
-## <a name="turn-on-the-planned-cross-docking-feature"></a>Włącz funkcję planowanego przeładunku kompletacyjnego
+## <a name="turn-on-the-planned-cross-docking-features"></a>Włącz funkcje planowanego przeładunku kompletacyjnego
 
-Aby można było korzystać z funkcji zaawansowanego planowanego przeładunku kompletacyjnego, funkcja ta musi być włączona w systemie. Administratorzy mogą skorzystać z obszaru roboczego [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. Ta funkcja jest wymieniona w następujący sposób:
+Jeśli Twój system nie zawiera jeszcze funkcji opisanych w tym temacie, przejdź do [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) i włącz następujące funkcje w następującej kolejności:
 
-- **Moduł:** *Zarządzanie magazynem*
-- **Nazwa funkcji:** *Planowany zaawansowany przeładunek kompletacyjnego*
+1. *Planowany przeładunek kompletacyjny*
+1. *Szablony przeładunku kompletacyjnego z dyrektywami lokalizacji*
+    > [!NOTE]
+    > Ta funkcja umożliwia ustawienie pola **Kod dyrektywy** w szablonie przeładunku kompletacyjny, podobnie jak w przypadku tworzenia szablonów uzupełnienia. Włączenie tej funkcji zapobiega dodaniu kodu dyrektywy w wierszach szablonu pracy przeładunku kompletacyjnego dla wiersza końcowego *Odłożenie*. Zapewnia to, że ostateczną lokalizację odkładania można określić podczas tworzenia pracy przed rozważeniem szablonów pracy.
 
 ## <a name="setup"></a>Konfiguracja
 
@@ -90,6 +90,10 @@ Planowany przeładunek kompletacyjny jest implementowany jako metoda księgowani
 
         Ta opcja umożliwia zdefiniowanie, czy dostawa ma zostać sprawdzona ponownie podczas przyjęcia. Jeśli ta opcja ma wartość *Tak*, sprawdzane są zarówno maksymalne przedziały czasu, jak i zakres daty ważności.
 
+    - Pole **Kod dyrektywy:** należy pozostawić puste
+
+        Ta opcja jest włączona przez funkcję *Szablony przeładunku kompletarnego z dyrektywami lokalizacji*. System korzysta z dyrektyw lokalizacji, aby pomóc w określeniu najlepszej lokalizacji do przeniesienia zapasów kompletacyjnych. Możesz to skonfigurować, przypisując kod dyrektywy do każdego odpowiedniego szablonu przeładunku kompletacyjnego. Jeśli kod dyrektywy jest ustawiony, kiedy praca musi zostać wygenerowana, system przeszuka dyrektywy lokalizacji według kodu dyrektywy. W ten sposób można ograniczyć dyrektywy lokalizacji, które są używane dla określonego szablonu przeładunku kompletacyjnego.
+
     - **Sprawdzanie poprawności – okno czasowe:** *Tak*
 
         Ta opcja służy do definiowania, czy w przypadku wybrania źródła dostaw ma być oceniany maksymalny przedział czasu. Jeśli ta opcja ma wartość *Tak*, pola związane z maksymalnym i minimalnym okienkiem czasowym staną się dostępne.
@@ -112,6 +116,9 @@ Planowany przeładunek kompletacyjny jest implementowany jako metoda księgowani
 
     - **Numer sekwencyjny:** *1*
     - **Źródło dostawy:** *Zamówienie zakupu*
+
+> [!NOTE]
+> Za pomocą specjalnego zapytania można kontrolować sposób używania określonego szablonu przeładunku kompletacyjnego. Zapytanie dla szablonów przeładunku kompletującego ma tylko tabelę *InventTable* (pozycje) i wewnętrznie sprzężoną tabelę *WHSInventTable* (pozycje WHS). Jeśli chcesz dodać inne tabele do zapytania, możesz do nich dołączyć, używając tylko *sprzężeń typu istnieje* lub *sprzężeń typu nie istnieje*. Podczas filtrowania w tabelach połączonych rekord z tabeli głównej jest pobierany dla każdego pasującego rekordu w tabeli połączonej. Jeśli typ sprzężenia to *sprzężenie istnieje*, wyszukiwanie kończy się po znalezieniu pierwszego dopasowania. Na przykład jeśli tabela wiersza zamówienia sprzedaży zostanie przyłączona do tabeli zapasów, system sprawdza poprawność i zwraca towary, dla których co najmniej jeden wiersz zamówienia sprzedaży ma zdefiniowany warunek. Zasadniczo dane są pobierane z tabeli nadrzędnej (pozycje), a nie z tabeli podrzędnej (wiersz zamówienia sprzedaży). W związku z tym filtrowanie według dokumentów źródłowych, takich jak wiersze zamówienia sprzedaży lub klientów, nie może być przeprowadzone od razu po zainstalowaniu produktu.
 
 ### <a name="create-a-work-class"></a>Tworzenie klasy roboczej
 
@@ -147,6 +154,9 @@ Planowany przeładunek kompletacyjny jest implementowany jako metoda księgowani
     - **Identyfikator klasy roboczej:** *CrossDock*
 
 1. Wybierz opcję **Zapisz** i upewnij się, że zaznaczono pole wyboru **Prawidłowe** dla szablonu *51 Cross Dock*.
+1. Opcjonalnie: wybierz opcję **Edytuj zapytanie**, jeśli chcesz ustawić kryteria, aby kontrolować, kiedy i gdzie jest używany szablon pracy.
+
+    Za pomocą specjalnego zapytania można kontrolować sposób używania określonego szablonu pracy. Na przykład można określić, że szablon może być używany do pracy tylko w określonej lokalizacji. Jeśli szablon pracy przeładunku kompletacyjnego być stosowany w określonej lokalizacji, należy odfiltrować pole **Lokalizacja początkowa**, a nie w polu **Lokalizacja**, ponieważ tworzenie pracy dla procesów przychodzących (zakup, przeładunek kompletacyjny i uzupełnianie zapasów) rozpoczyna się od wiersza odłożenia. Podczas tworzenia pracy dyrektywa lokalizacji ustawia pole **Lokalizacja** na lokalizację odłożenia. Jednak lokalizacja pobrania jest przechowywana w polu **Lokalizacja początkowa**.
 
 > [!NOTE]
 > Identyfikatory klas roboczych dla typów pracy *Pobranie* i *Umieszczenie* muszą być takie same.
@@ -314,4 +324,7 @@ Obecnie oba identyfikatory pracy mają taki sam docelowy numer identyfikacyjny. 
 
 Na poniższej ilustracji przedstawiono sposób ukończenia pracy przeładunku kompletacyjnego w rozwiązaniu Microsoft Dynamics 365 Supply Chain Management.
 
-![Praca przeładunku kompletacyjnego została zakończona](media/PlannedCrossDockingWork.png "Praca przeładunku kompletacyjnego została zakończona")
+![Praca przeładunku kompletacyjnego została zakończona.](media/PlannedCrossDockingWork.png "Praca przeładunku kompletacyjnego została zakończona")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3ec43b16b1df07400cffe597378ad4035e4d07e0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 41fb0be51f7af25faba1b860319aea84ae7a8b56
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414944"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5207806"
 ---
 # <a name="work-with-css-override-files"></a>Praca z plikami zastępowania CSS
 
@@ -114,3 +113,6 @@ Aby dezaktywować plik zastępowania CSS w witrynie, wykonaj następujące kroki
 [Dodawanie języków do witryny](add-languages-to-site.md)
 
 [Dodawanie kodu skryptu do stron witryny w celu obsługi telemetrii](add-telemetry.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

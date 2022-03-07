@@ -2,35 +2,30 @@
 title: Moduł galerii multimediów
 description: W tym temacie opisano moduły galerii multimediów i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 647387bafe8866cb1bee8c57675629af796f33e6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b0b1ec7324ff60ee7cdd01c97c8c08260bd8c947
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415037"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5802822"
 ---
 # <a name="media-gallery-module"></a>Moduł galerii multimediów
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano moduły galerii multimediów i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 Moduły galerii multimediów pokazują jeden lub więcej obrazów w widoku galerii. Moduły galerii multimediów obsługują miniatury obrazów, które można układać poziomo (jako wiersz pod obrazem) lub pionowo (jako kolumna obok obrazu). Moduły galerii multimediów zapewniają również możliwości, które umożliwiają powiększanie (powiększanie) obrazów lub przeglądanie ich w trybie pełnoekranowym. Aby obraz był renderowany w module galerii multimediów, obraz musi być dostępny w bibliotece multimediów narzędzia do tworzenia witryn Commerce. Obecnie moduły galerii multimediów obsługują tylko obrazy.
 
@@ -104,3 +99,6 @@ Aby dodać moduł galerii multimediów do strony marketingowej, wykonaj następu
 [Moduł kontenera](add-container-module.md)
 
 [Przekazanie obrazów](dam-upload-images.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

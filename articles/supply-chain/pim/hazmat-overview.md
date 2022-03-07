@@ -1,20 +1,24 @@
 ---
-# required metadata
 title: Omówienie materiałów niebezpiecznych
 description: Ten temat zawiera przegląd funkcji związanych z obsługą i dokumentami materiałów niebezpiecznych podczas zarządzania informacjami o produktach i zarządzania magazynem.
 author: t-benebo
 ms.date: 06/10/2020
 ms.topic: overview
-ms.prod: null
-ms.technology: null
+ms.prod: ''
+ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
-ms.search.validFrom: '2020-06-10'
+ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.11
+ms.openlocfilehash: cfea2cd6a2699bdf2a14de72a8bdeb3e8cd32a17
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986283"
 ---
-
 # <a name="hazardous-materials-overview"></a>Omówienie materiałów niebezpiecznych
 
 [!include [banner](../includes/banner.md)]

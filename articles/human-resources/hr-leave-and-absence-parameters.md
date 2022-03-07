@@ -2,11 +2,9 @@
 title: Konfigurowanie parametrów urlopów i nieobecności
 description: W programie Dynamics 365 Human Resources można definiować parametry urlopów i nieobecności.
 author: andreabichsel
-manager: tfehr
 ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
@@ -18,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e1b2de94f9d9ac1ada16b6ef0e7628edbc9d683f
-ms.sourcegitcommit: ffb5998e611b83c2e4f98323f39e3e8f6419c652
+ms.openlocfilehash: 45f5ebfe7bd11a529e871f5fd3244577954534f5
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "4420157"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5794644"
 ---
 # <a name="configure-leave-and-absence-parameters"></a>Konfigurowanie parametrów urlopów i nieobecności
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Przed skonfigurowaniem urlopów i nieobecności w module Dynamics 365 Human Resources dobrze jest sprawdzić ustawienia wszystkich powiązanych parametrów tego modułu, w tym takich jak:
 
@@ -92,3 +92,6 @@ Przed skonfigurowaniem urlopów i nieobecności w module Dynamics 365 Human Reso
 ## <a name="see-also"></a>Informacje dodatkowe
 
 - [Omówienie urlopów i nieobecności](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

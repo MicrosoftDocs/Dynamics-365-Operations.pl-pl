@@ -1,23 +1,27 @@
 ---
-# required metadata
 title: Włączanie ręcznego publikowania ocen i recenzji przez moderatora
 description: W tym temacie opisano sposób włączania ręcznego publikowania ocen i recenzji przez moderatora w aplikacji Microsoft Dynamics 365 Commerce oraz ręcznego publikowania ocen i recenzji.
 author: gvrmohanreddy
 manager: annbe
 ms.date: 09/03/2021
 ms.topic: article
-ms.prod: null
+ms.prod: ''
 ms.service: dynamics-365-commerce
-ms.technology: null
+ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: 'Retail, Core, Operations'
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: gmohanv
-ms.search.validFrom: '2021-09-03'
+ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.22
+ms.openlocfilehash: 443ebaa13d7ac29df66ffe77a2ed938e44a0c488
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968210"
 ---
-
 # <a name="enable-manual-publishing-of-ratings-and-reviews-by-a-moderator"></a>Włączanie ręcznego publikowania ocen i recenzji przez moderatora
 
 [!include [banner](includes/banner.md)]

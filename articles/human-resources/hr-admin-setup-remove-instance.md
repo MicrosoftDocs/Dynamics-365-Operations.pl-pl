@@ -1,33 +1,32 @@
 ---
 title: Usuwanie wystąpienie
-description: Ten artykuł przeprowadzi użytkownika przez proces usuwania środowiska testowego lub produkcyjnego dla oprogramowania Microsoft Dynamics 365 Human Resources.
-author: andreabichsel
-manager: AnnBe
-ms.date: 08/07/2020
+description: Ten temat przeprowadzi użytkownika przez proces usuwania środowiska testowego lub produkcyjnego dla oprogramowania Microsoft Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0a8eac74f0d840251ab56445dd5af4d19d3c0490
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e32058280d0cb1eab436bc25bd29bc3e39fabc92
+ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420103"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7393504"
 ---
 # <a name="remove-an-instance"></a>Usuwanie wystąpienie
 
-Ten artykuł przeprowadzi użytkownika przez proces usuwania środowiska testowego lub produkcyjnego dla oprogramowania Microsoft Dynamics 365 Human Resources.
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+W tym temacie wyjaśniono przebieg procesu usuwania środowiska testowego lub produkcyjnego dla oprogramowania Microsoft Dynamics 365 Human Resources.
 
 ## <a name="remove-a-test-drive-environment"></a>Usuń środowisko testowe
 
@@ -81,7 +80,10 @@ Aby przywrócić środowisko:
 
 1. Wykonaj instrukcje w [Odzyskaj środowisko Power Apps](/power-platform/admin/recover-environment.md).
 
-2. Skontaktuj się z pomocą techniczną w celu przywrócenia środowiska Human Resources. Aby uzyskać więcej informacji, zobacz [Uzyskiwanie pomocy technicznej](hr-admin-troubleshooting-support.md).
+2. Skontaktuj się z pomocą techniczną w celu przywrócenia środowiska Human Resources. Aby uzyskać więcej informacji, zobacz [Uzyskiwanie pomocy technicznej](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
 
 > [!Warning]
 > Środowiska Power Apps są zapisywane tylko przez siedem dni po usunięciu. Musisz odzyskać środowisko w okresie siedmiu dni.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,41 +1,41 @@
 ---
 title: Omówienie integracji fiskalnej dla kanałów modułu Commerce
 description: Ten temat zawiera omówienie funkcji integracji fiskalnej dostępnych w programie Dynamics 365 Commerce.
-author: josaw
+author: EvgenyPopovMBS
 manager: annbe
-ms.date: 02/01/2019
+ms.date: 09/22/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
 ms.reviewer: josaw
+ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 2f1abf29058e773f1645301fcd7a960df488d92b
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 323d9f4816a4f622143692ead3d1871980b19b52
+ms.sourcegitcommit: 47a3ad71210c7ac84d0c25e913c440b5ba205282
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017474"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "7512587"
 ---
 # <a name="overview-of-fiscal-integration-for-commerce-channels"></a>Omówienie integracji fiskalnej dla kanałów modułu Commerce
 
 [!include [banner](../includes/banner.md)]
 
-## <a name="introduction"></a>Wprowadzenie
+Ten temat zawiera omówienie funkcji integracji fiskalnej dostępnych w programie Dynamics 365 Commerce. 
 
-Ten temat zawiera omówienie funkcji integracji fiskalnej dostępnych w programie Dynamics 365 Commerce. Integracja fiskalna obejmuje integrację z różnymi urządzeniami i usługami fiskalnych umożliwiających rejestrację fiskalną sprzedaży zgodnie z lokalnymi przepisami podatkowymi, które mają na celu zapobieganie oszustwom podatkowym w sprzedaży detalicznej. Oto kilka typowych scenariuszy wykorzystania funkcji integracji fiskalnej:
+Integracja fiskalna obejmuje integrację z różnymi urządzeniami i usługami fiskalnych umożliwiających rejestrację fiskalną sprzedaży zgodnie z lokalnymi przepisami podatkowymi, które mają na celu zapobieganie oszustwom podatkowym w sprzedaży detalicznej. Oto kilka typowych scenariuszy wykorzystania funkcji integracji fiskalnej:
 
 - Rejestrowanie sprzedaży detalicznej na urządzeniu fiskalnym w punkcie sprzedaży (POS), np. na drukarce fiskalnej, i drukowanie paragonu fiskalnego dla klienta.
 - Bezpieczne przesyłanie informacji związanych ze sprzedażą i zwrotami, które są wykonywane w programie Retail POS, do zewnętrznej usługi sieci web, która jest prowadzona przez urząd skarbowy.
 - Pomoc w zapewnieniu niezmienności danych transakcji sprzedaży za pomocą podpisów cyfrowych.
 
-Funkcji integracji fiskalnej w Retail jest podstawą zapewniającą wspólne rozwiązanie dla dalszego rozwoju i dostosowywania integracji między Retail POS a urządzeniami i usługami fiskalnymi. Funkcja obejmuje również przykładowe integracje fiskalne obsługujące podstawowe scenariusze dla określonych krajów lub regionów i współpracujące z określonymi urządzeniami lub usługami fiskalnymi. Przykładowa integracja fiskalna składa się z kilku rozszerzeń składników modułu Commerce i jest częścią zestawu SDK. Aby uzyskać więcej informacji o integracji próbek, zobacz [Omówienie integracji fiskalnej dla próbek w Retail SDK](#fiscal-integration-samples-in-the-retail-sdk). Aby uzyskać informacje dotyczące instalowania i używania zestawu SDK modułu Retail, zobacz [Omówienie zestawu SDK (software development kit) modułu Retail](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+Funkcji integracji fiskalnej w Retail jest podstawą zapewniającą wspólne rozwiązanie dla dalszego rozwoju i dostosowywania integracji między Retail POS a urządzeniami i usługami fiskalnymi. Funkcja obejmuje również przykładowe integracje fiskalne obsługujące podstawowe scenariusze dla określonych krajów lub regionów i współpracujące z określonymi urządzeniami lub usługami fiskalnymi. Przykładowa integracja fiskalna składa się z kilku rozszerzeń składników modułu Commerce i jest częścią zestawu SDK. Aby uzyskać więcej informacji o integracji próbek, zobacz [Omówienie integracji fiskalnej dla próbek w Commerce SDK](#fiscal-integration-samples-in-the-commerce-sdk). Aby uzyskać informacje dotyczące instalowania i używania zestawu SDK modułu Comerce, zobacz [Omówienie zestawu SDK (software development kit) modułu Retail](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 Do obsługi innych scenariusze, które nie są obsługiwane przez przykładową integrację fiskalną, do integracji programu Retail POS z innymi urządzeniami lub usługami fiskalnymi lub do spełnienia wymagań innych krajów lub regionów, należy albo rozszerzyć istniejącą przykładową integrację fiskalną lub utworzyć nową przykładową integrację na podstawie istniejącego przykładu.
 
@@ -56,15 +56,15 @@ Proces rejestracji fiskalnej dla określonej rejestracji POS jest definiowany pr
 Poniższy przykład pokazuje przepływ realizacji typowej rejestracji fiskalnej dla urządzenia fiskalnego. Przepływ rozpoczyna się od zdarzenia w POS (np. finalizacji transakcji sprzedaży) i implementuje następującą sekwencję kroków:
 
 1. POS żąda dokumentu fiskalnego z CRT.
-2. CRT określa, czy bieżące zdarzenie wymaga rejestracji fiskalnej.
-3. Na podstawie konfiguracji procesu rejestracji fiskalnej CRT identyfikuje łącznik fiskalny i odpowiedniego dostawcę dokumentu fiskalnego używanego do użycia w rejestracji fiskalnej.
-4. CRT uruchamia dostawcę dokumentu fiskalnego, który generuje dokument fiskalny (na przykład dokument XML), reprezentujący transakcję lub zdarzenie.
-5. POS wysyła dokument fiskalny przygotowywany przez CRT do Hardware Station.
-6. Hardware Station uruchamia łącznik fiskalny, który przetwarza dokument fiskalny i przesyła go do urządzenia fiskalnego lub usługi fiskalnej.
-7. POS analizuje odpowiedź z urządzenia fiskalnego lub usługi fiskalnego w celu określenia, czy rejestracja fiskalna zakończyła się pomyślnie.
-8. CRT zapisuje odpowiedź w bazie danych kanału.
+1. CRT określa, czy bieżące zdarzenie wymaga rejestracji fiskalnej.
+1. Na podstawie konfiguracji procesu rejestracji fiskalnej CRT identyfikuje łącznik fiskalny i odpowiedniego dostawcę dokumentu fiskalnego używanego do użycia w rejestracji fiskalnej.
+1. CRT uruchamia dostawcę dokumentu fiskalnego, który generuje dokument fiskalny (na przykład dokument XML), reprezentujący transakcję lub zdarzenie.
+1. POS wysyła dokument fiskalny przygotowywany przez CRT do Hardware Station.
+1. Hardware Station uruchamia łącznik fiskalny, który przetwarza dokument fiskalny i przesyła go do urządzenia fiskalnego lub usługi fiskalnej.
+1. POS analizuje odpowiedź z urządzenia fiskalnego lub usługi fiskalnego w celu określenia, czy rejestracja fiskalna zakończyła się pomyślnie.
+1. CRT zapisuje odpowiedź w bazie danych kanału.
 
-![Schemat rozwiązania](media/emea-fiscal-integration-solution.png "Schemat rozwiązania")
+![Schemat rozwiązania.](media/emea-fiscal-integration-solution.png "Schemat rozwiązania")
 
 ## <a name="error-handling"></a>Obsługa błędów
 
@@ -118,6 +118,8 @@ Transakcja fiskalna przechowuje następujące informacje:
 - Stan rejestracji fiskalnej: **Zakończona** dla pomyślnej rejestracji **Pominięty** jeśli operator wybrał opcję **Pomiń** dla rejestracji nieudanej lub **Oznaczona jako zarejestrowane**, jeśli operator wybrał opcję **Oznacz jako zarejestrowaną**.
 - Transakcje kodu informacji powiązane z wybraną transakcją fiskalną. Aby wyświetlić transakcje kodu informacji na skróconej karcie **Transakcje fiskalne**, wybierz transakcję fiskalną ze stanem **Pominięta** lub **Oznaczona jako zarejestrowana**, a następnie wybierz **Transakcje kodu informacji**.
 
+Po wybraniu opcji **Dane rozszerzone** można również wyświetlić niektóre właściwości transakcji fiskalnej. Lista właściwości, które można wyświetlić, jest specyficzna dla funkcji rejestracji podatkowej, która wygenerowała transakcję fiskalną. Na przykład można wyświetlić podpis cyfrowy, numer kolejny, odcisk palca certyfikatu, identyfikację algorytmu skrótu i inne właściwości transakcji fiskalnej dla funkcji podpisu cyfrowego we Francji.
+
 ## <a name="fiscal-texts-for-discounts"></a>Teksty fiskalne dla rabatów
 
 Niektóre kraje i regiony mają specjalne wymagania dotyczące dodatkowych tekstów, które muszą być wydrukowane na paragonach fiskalnych przy stosowaniu różnych typów rabatów. Funkcja integracji fiskalnej umożliwia określanie specjalnego tekstu dla rabat, który zostanie wydrukowany po wierszu rabatu na paragonie fiskalnym. Dla rabatów ręcznych można skonfigurować tekst fiskalny dla kodu informacji, który został określony jako kod informacji **Rabatu produktu** w profilu funkcji POS. Aby uzyskać więcej informacji o sposobie konfigurowania rabatów fiskalnych, zobacz [Konfigurowanie tekstów fiskalnych dla rabatów](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-texts-for-discounts).
@@ -129,23 +131,30 @@ Funkcja integracji fiskalnej obsługuje generowanie zestawień na koniec dnia, k
 - Nowe przyciski uruchamiające odpowiednie operacje powinny zostać dodane do układu ekranu POS. Aby uzyskać więcej informacji, zobacz [Konfigurowanie raportów X / końcowych raportów sprzedaży w POS](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
 - W przykładowej integracji fiskalnej te operacje powinny być dopasowane do odpowiednich operacji fiskalnych urządzenia fiskalnego.
 
-## <a name="fiscal-integration-samples-in-the-retail-sdk"></a>Przykładowa integracja fiskalna w zestawie SDK modułu Retail
+## <a name="fiscal-integration-samples-in-the-commerce-sdk"></a>Przykładowa integracja fiskalna w zestawie SDK modułu Commerce
 
-Następujące przykładowe integracje fiskalne są obecnie dostępne w zestawie SDK modułu Retail:
+Następujące przykładowe integracje fiskalne są obecnie dostępne w zestawie SDK modułu Commerce:
 
-- [Przykładowa integracja drukarki fiskalnej dla Włoch](emea-ita-fpi-sample.md)
-- [Przykładowa integracja drukarki fiskalnej (Polska)](emea-pol-fpi-sample.md)
-- [Przykład integracji usługi rejestracji fiskalnej (Austria)](emea-aut-fi-sample.md)
-- [Przykład integracji usługi rejestracji fiskalnej (Czechy)](emea-cze-fi-sample.md)
+- [Przykładowa integracja drukarki fiskalnej dla Włoch](./emea-ita-fpi-sample.md)
+- [Przykładowa integracja drukarki fiskalnej (Polska)](./emea-pol-fpi-sample.md)
+- [Przykład integracji usługi rejestracji fiskalnej (Austria)](./emea-aut-fi-sample.md)
+- [Przykład integracji usługi rejestracji fiskalnej (Czechy)](./emea-cze-fi-sample.md)
 - [Przykładowa integracja jednostki kontrolnej dla Szwecji](./emea-swe-fi-sample.md)
 - [Przykład integracji usługi rejestracji fiskalnej (Niemcy)](./emea-deu-fi-sample.md)
+- [Przykładowa integracja drukarki fiskalnej dla Rosji](./rus-fpi-sample.md)
 
-Następujące funkcje integracji fiskalnej są także dostępne w zestawie SDK modułu Retail, ale obecnie nie używają schematu integracji fiskalnej. Migracja tej funkcji do schematu integracji fiskalnej jest planowana w późniejszych aktualizacjach.
+Następujące funkcje integracji fiskalnej są także implementowane przy użyciu schematu integracji fiskalnej, ale nie są gotowe do użycia ani nie są zawarte w zestawie SDK Commerce:
 
+- [Rejestracja fiskalna w Brazylii](./latam-bra-commerce-localization.md#fiscal-registration-for-brazil)
+- [Podpis cyfrowy dla Francji](./emea-fra-cash-registers.md)
 
-- [Podpis cyfrowy dla Francji](emea-fra-cash-registers.md)
-- [Podpis cyfrowy dla Norwegii](emea-nor-cash-registers.md)
+Następujące funkcje integracji fiskalnej są także dostępne w zestawie SDK modułu Commerce, ale obecnie nie używają schematu integracji fiskalnej. Migracja tej funkcji do schematu integracji fiskalnej jest planowana w późniejszych aktualizacjach.
 
-Następujące starsze funkcje integracji fiskalnej, które są dostępne w zestawie Retail SDK, nie używają platformy integracji fiskalnej i zostaną wycofane w późniejszych aktualizacjach:
+- [Podpis cyfrowy dla Norwegii](./emea-nor-cash-registers.md)
+
+Następujące starsze funkcje integracji fiskalnej, które są dostępne w zestawie SDK modułu Commerce, nie używają platformy integracji fiskalnej i zostaną wycofane w późniejszych aktualizacjach:
 
 - [Przykładowa integracja jednostki kontrolnej dla Szwecji (starsza wersja)](./retail-sdk-control-unit-sample.md)
+- [Podpis cyfrowy we Francji (starego typu)](./emea-fra-deployment.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

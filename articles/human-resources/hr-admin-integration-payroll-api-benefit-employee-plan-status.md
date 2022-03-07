@@ -13,17 +13,14 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-07-25
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e038eebcb3c703ebf56c781a332edcd6a5badf1a
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: ce729acbe078479b5fdf7cb77c7035ecb402d652e445595886d7d35d0e54c66f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066175"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6774157"
 ---
 # <a name="benefit-employee-plan-status"></a>Status planu pracownika etatowego świadczeń
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

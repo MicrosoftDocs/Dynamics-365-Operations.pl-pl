@@ -15,16 +15,14 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-29-11
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 727e1eb75f807d84f088cf3dd139eb094aa76618
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 614f37236bbd0239925e37ebf29f59ac006d09cd
+ms.sourcegitcommit: 4f84540e6121ca3d5ae52ee07e414116d423cefa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087224"
+ms.lasthandoff: 01/03/2022
+ms.locfileid: "7948797"
 ---
 # <a name="task-management"></a>Zarządzanie zadaniami
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 Zarządzanie zadaniami pozwala ci tworzyć zadania, które muszą być wykonane, aby zatrudnić (onboard), zakończyć (offboard) i przenieść (transition) pracowników. Zarządzanie zadaniami wykorzystuje koncepcję list kontrolnych. Lista kontrolna to lista zadań do wykonania w trakcie onboardingu, offboardingu lub przejścia. Zarządzanie zadaniami wykorzystuje listy kontrolne do grupowania zadań i przypisywania ich osobom lub grupom. Funkcjonalność list kontrolnych dla onboardingu, offboardingu i przejść jest podobna.
 

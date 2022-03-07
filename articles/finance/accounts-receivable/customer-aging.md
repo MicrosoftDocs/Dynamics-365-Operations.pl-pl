@@ -2,9 +2,11 @@
 title: Raport wiekowania dla odbiorców
 description: Raport wiekowania dla odbiorców zawiera salda należne od odbiorców, posortowane według interwałów dat lub okresów wiekowania.
 author: JodiChristiansen
+manager: AnnBe
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 33bee60a3807c92cc97f0f5e6d660a67cdd7f297
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 9291299e0b2ee040bc25ef21237a73c3bc0ea412
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595096"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995670"
 ---
 # <a name="customer-aging-report"></a>Raport wiekowania dla odbiorców 
 
@@ -30,8 +32,8 @@ Podczas generowania tego raportu, wyświetlane są następujące parametry domy�
 
 <table>
 <colgroup>
-<col>
-<col>
+<col style="width: 50%" />
+<col style="width: 50%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -142,6 +144,3 @@ Podczas generowania tego raportu, wyświetlane są następujące parametry domy�
 </tbody>
 </table>
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 206434
 ms.assetid: 8a6238bd-9d6f-48d9-8752-3966836364a4
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c39d8ea92b5482b32e27d433b745151373553120
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7b2338bcb727e0a513430c74b28b54f2101f2e3b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459734"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5218890"
 ---
 # <a name="finance-home-page"></a>Finance — strona główna
 
@@ -74,3 +73,6 @@ Przepisy krajowe/regionalne wpływają na ustawienia podatku i inne aspekty zarz
 
 Funkcja zarządzania łańcuchem dostaw obejmuje części procesu „procure-to-pay” zawierającego zapotrzebowanie, zamawianie, przyjmowanie, fakturowanie i płatności za towary i usługi, które kupuje organizacja. Więcej informacji na temat możliwości zarządzania zakupami, zapasami i produkcją zawiera [strona główna aplikacji Supply Chain Management](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md). 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

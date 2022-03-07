@@ -1,7 +1,7 @@
 ---
 title: Tworzenie umowy instrumentu bankowego na akredytywę
-description: To zadanie prowadzi przez etapy tworzenia umowy kredytu bankowego w celu przetworzenia akredytywy.
-author: panolte
+description: To zadanie poprowadzi przez proces tworzenia umowy instrumentu bankowego do przetwarzania akredytywy.
+author: ShylaThompson
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 607d9688aebb6288735cc04f6b4d8e7b8f7362b9
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 582a41a0a4a3c509eae8a05c57b0910446addb26
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595020"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5834843"
 ---
 # <a name="create-a-bank-facility-agreement-for-a-letter-of-credit"></a>Tworzenie umowy instrumentu bankowego na akredytywę
 
 [!include [banner](../../includes/banner.md)]
 
-To zadanie prowadzi przez etapy tworzenia umowy kredytu bankowego w celu przetworzenia akredytywy. Przed rozpoczęciem tego zadania warto skonfigurować instrumenty bankowe i profile księgowania.  Zadanie wykorzystuje firmę demonstracyjną „USMF”.  
+To zadanie poprowadzi przez proces tworzenia umowy instrumentu bankowego do przetwarzania akredytywy. Przed rozpoczęciem tego zadania warto skonfigurować instrumenty bankowe i profile księgowania.  Zadanie wykorzystuje firmę demonstracyjną „USMF”.  
 
 
 ## <a name="create-bank-facility-agreement"></a>Tworzenie umowy instrumentu bankowego

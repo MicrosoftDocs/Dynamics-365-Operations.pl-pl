@@ -2,7 +2,7 @@
 title: Uzależnienie pytania od odpowiedzi na poprzednie pytanie
 description: Pytania warunkowe umożliwiają określenie, jakie pytanie uzupełniające zostanie wyświetlone osobie udzielającej odpowiedzi na podstawie odpowiedzi na poprzednie pytanie.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,19 +11,21 @@ ms.technology: ''
 ms.search.form: KMCollection, KMCollectionQuestion, KMCollectionQuestionTree, HcmLearningWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4295b49336ec7ac3cff4deba675bc63511be48de
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0a76220647417b6ff69e2f0ab5b2fa5297db5c49
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420137"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467850"
 ---
 # <a name="make-a-question-dependent-on-the-answer-of-the-previous-question"></a>Uzależnienie pytania od odpowiedzi na poprzednie pytanie
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -56,3 +58,6 @@ Pytania warunkowe umożliwiają określenie, jakie pytanie uzupełniające zosta
 10. W drzewie zaznacz element „Pytania\Otrzymuję uczciwe wynagrodzenie za wykonywaną pracę.”.
     * Należy zauważyć, że drzewo pytań zostało zaktualizowane w celu pokazania zależności.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

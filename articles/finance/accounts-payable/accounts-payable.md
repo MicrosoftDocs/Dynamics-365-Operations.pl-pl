@@ -1,29 +1,28 @@
 ---
 title: Rozrachunki z dostawcami — strona główna
 description: Ten temat zawiera omówienie modułu Rozrachunki z dostawcami.
-author: ShylaThompson
-manager: AnnBe
+author: sunfzam
 ms.date: 02/15/2019
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendInvoiceWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
-ms.custom: 21901
+ms.custom:
+- "21901"
+- intro-internal
 ms.assetid: 1e4c2ac4-077b-4678-8733-5cec8f6ff659
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 6a6f53007f8bd04724c43c518c5a9b10856b68d7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ce768ecaa668f2c69d6753401eaa145b6fddc5ec
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459723"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595294"
 ---
 # <a name="accounts-payable-home-page"></a>Rozrachunki z dostawcami — strona główna
 
@@ -35,7 +34,7 @@ Faktury od dostawców można wprowadzać ręcznie, ale można też przyjmować j
 
 **Procesy biznesowe**
 
-[![Diagram procesów biznesowych](./media/AP-process.PNG)](./media/AP-process.PNG)
+[![Diagram procesów biznesowych.](./media/AP-process.PNG)](./media/AP-process.PNG)
 
 ## <a name="set-up-accounts-payable"></a>Ustawienia modułu Rozrachunki z dostawcami
 
@@ -123,7 +122,7 @@ Poniższe tematy zawierają informacje dotyczące rozliczeń. Rozliczenie to pro
 
 #### <a name="whats-new-and-in-development"></a>Nowe i opracowywane funkcje
 
-Przejdź do [Planów wydań Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158), aby zobaczyć, jakie nowe funkcje są planowane. 
+Przejdź do [Planów wydań Microsoft Dynamics 365](/dynamics365/release-plans/), aby zobaczyć, jakie nowe funkcje są planowane. 
 
 #### <a name="blogs"></a>Blogi
 
@@ -145,3 +144,6 @@ Obejrzyj filmy instruktażowe w [kanale YouTube rozwiązania Microsoft Dynamics 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

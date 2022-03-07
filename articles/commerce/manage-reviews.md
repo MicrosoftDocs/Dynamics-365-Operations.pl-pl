@@ -2,15 +2,12 @@
 title: Zarządzanie ocenami i recenzjami
 description: W tym temacie wyjaśniono, jak zarządzać klasyfikacjami recenzjami konstruktorze witryn Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +15,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3fc88bc5a5868dce7c0539bf3f0ddc5b751e7b75
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 60ad0dd821dc91576a59cf73ec46da4aefd34a2f
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414963"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5794266"
 ---
 # <a name="manage-ratings-and-reviews"></a>Zarządzanie ocenami i recenzjami
 
@@ -132,3 +129,6 @@ Aby wyświetlić trendy ocen i recenzji w konstruktorze witryn w module Commerce
 [Konfigurowanie ocen i recenzji](configure-ratings-reviews.md)
 
 [Synchronizacja ocen produktów w rozwiązaniu Dynamics 365 Retail](sync-product-ratings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

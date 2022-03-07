@@ -1,31 +1,30 @@
 ---
 title: Opracowywanie struktury wynagrodzeń
-description: W tym artykule przedstawiono proces tworzenia stałego planu wynagrodzeń i przypisywania pracowników do planu za pomocą reguł kwalifikowalności.
-author: andreabichsel
-manager: AnnBe
-ms.date: 02/10/2020
+description: W tym temacie wyjaśniono, jak utworzyć plan stałego wynagrodzenia i zarejestrować pracowników w planie za pomocą reguł uprawnień.
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: DefaultDashboard, HcmCompensationWorkspace, HcmCompFixedPlansPart, HRMCompFixedPlanTable, HRMCompCreateGridDialog, HRCCompGridView, HRMCompEligibility,  HRCCompGrid
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 124d0f7f83feebabf622f00732c25bfa0f6eccdd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ec30d6259b755bf7c304e8796b32d373027ce7ff
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420096"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483959"
 ---
 # <a name="develop-a-compensation-structure"></a>Opracowywanie struktury wynagrodzeń
 
-W tym artykule przedstawiono proces tworzenia stałego planu wynagrodzeń i przypisywania pracowników do planu za pomocą reguł kwalifikowalności. W tym artykule używane są dane demonstracyjne USMF i dotyczą menedżerów wynagrodzeń i świadczeń.
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+W tym temacie opisano tworzenie planu stałego wynagrodzenia i rejestrowanie pracowników w planie za pomocą reguł uprawnień. W tym temacie wykorzystano dane demonstracyjne USMF i dotyczy menedżerów wynagrodzeń i świadczeń.
 
 ## <a name="create-a-fixed-compensation-plan"></a>Tworzenie systemu stałych wynagrodzeń
 
@@ -113,3 +112,6 @@ Nie możesz przypisać systemu stałych wynagrodzeń pracownikowi, dopóki nie z
 
 8. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

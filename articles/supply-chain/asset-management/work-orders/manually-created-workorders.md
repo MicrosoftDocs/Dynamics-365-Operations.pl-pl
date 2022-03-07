@@ -1,12 +1,10 @@
 ---
 title: Ręcznie utworzone zlecenia pracy
 description: W tym temacie opisano ręczne tworzenie zleceń pracy w module Zarządzanie składnikami majątku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderTableCreateRelated, EntAssetWorkOrderTableCreate, EntAssetWorkOrderTableCopy
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8c787dbc9889139df76b9b102deb18fce567e382
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: a755fa579d929056296c5512f976d15c4808c336b6688b891a4712051e15e9a1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017875"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6750107"
 ---
 # <a name="manually-created-work-orders"></a>Ręcznie utworzone zlecenia pracy
 
@@ -113,7 +111,7 @@ Można utworzyć nowe zlecenie pracy odnoszące się do istniejącego zlecenia p
 
 Na poniższej ilustracji pokazano przykład okna dialogowego **Utwórz powiązane zlecenie pracy**.
 
-![Rysunek 1](media/03-work-orders.png)
+![Rysunek 1.](media/03-work-orders.png)
 
 >[!NOTE]
 >W przypadku skonfigurowania powiązanej maski zleceń pracy w polach **Parametry zarządzania składnikami majątku** > **karta Zlecenia pracy** > **Maska powiązanego zlecenia pracy**, identyfikatory zleceń pracy zostaną utworzone zgodnie z konfiguracją maski. Jeśli nie skonfigurowano powiązanej maski zlecenia pracy, dla pokrewnych zleceń pracy jest użyty kolejny dostępny identyfikator zlecenia pracy.
@@ -139,7 +137,7 @@ Istnieje możliwość szybkiego utworzenia nowego zlecenia pracy na podstawie is
 
 Na poniższej ilustracji przedstawiono przykład okna dialogowego **Kopiuj zlecenie pracy**.
 
-![Rysunek 2](media/04-work-orders.png)
+![Rysunek 2.](media/04-work-orders.png)
 
 
 ## <a name="create-a-work-order-based-on-a-maintenance-request"></a>Tworzenie zlecenia pracy oparte na żądaniu konserwacji
@@ -159,9 +157,12 @@ Na poniższej ilustracji przedstawiono przykład okna dialogowego **Kopiuj zlece
 
 Na poniższej ilustracji przedstawiono przykład okna dialogowego **Tworzenie zlecenia pracy**.
 
-![Rysunek 3](media/05-work-orders.png)
+![Rysunek 3.](media/05-work-orders.png)
 
 
 >[!NOTE]
 >Jeśli chcesz, żeby zlecenia pracy były tworzone automatycznie, możesz zaplanować zadania planu konserwacji lub ustawić „Automatyczne tworzenie” [planów konserwacji](../preventive-and-reactive-maintenance/maintenance-plans.md) lub [serii czynności konserwacyjnych](../preventive-and-reactive-maintenance/maintenance-rounds.md) dla składnika majątku. Zlecenia pracy utworzone na podstawie żądań konserwacji na stronie listy **Wszystkie harmonogramy konserwacji** mają typy zadań konserwacji, które są wybrane w żądaniach konserwacji.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

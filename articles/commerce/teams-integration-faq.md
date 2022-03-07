@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ae4a7f9d9576c9d0408f562eb05bc309d0fbca0ecb8530e8c032b2bb80f12ff4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3fc7cff0a3f8d0fbfb196ec5951b138088afece7
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773821"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019477"
 ---
 # <a name="dynamics-365-commerce-and-microsoft-teams-integration-faq"></a>Integracja z usługami Dynamics 365 Commerce i Microsoft Teams — często zadawane pytania
 
@@ -45,7 +45,7 @@ Aby przypisać rolę menedżera zadań sieci sprzedaży do pracownika w programi
 
 W programie Commerce Headquarters hierarchia każdej organizacji jest skojarzona z jednym lub większą ich celem. Upewnij się, że z hierarchią, w której mają być obsługiwane usługi Microsoft Teams, jest skojarzony cel **Raportowania sieci sprzedaży**, tak jak pokazano na poniższym przykładzie. 
 
-![Przykład celu hierarchii organizacyjnej w programie Commerce Headquarters.](media/d365-commerce-organization-hierarchies-purpose.png)
+![Przykład celu hierarchii organizacyjnej w programie Commerce Headquarters](media/d365-commerce-organization-hierarchies-purpose.png)
 
 ### <a name="how-do-i-enable-retail-store-workers-to-sign-in-to-commerce-point-of-sale-pos-using-azure-active-directory-azure-ad"></a>Jak umożliwić pracownikom sklepu detalicznego logowanie się do usługi Commerce punkt sprzedaży (POS) przy użyciu Azure Active Directory (Azure AD)?
 

@@ -2,11 +2,9 @@
 title: Utwórz i skonfiguruj rozszerzone gwarancje
 description: W tym temacie opisano rozszerzone gwarancje i sposób ich tworzenia i konfigurowanie w Microsoft Dynamics 365 Commerce.
 author: sijoshi
-manager: annbe
 ms.date: 06/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,14 +15,14 @@ ms.search.industry: ''
 ms.author: sijoshi
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 411895763cc282766b5a668208f20c72496059cd
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 772dc1fdda7c34448ffa946237f717e657df6d83d8fda9336049e79d19ed1af0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965127"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745387"
 ---
-# <a name="create-and-configure-extended-warranties"></a>Utwórz i skonfiguruj rozszerzone gwarancje
+# <a name="create-and-configure-extended-warranties"></a>Tworzenie i konfigurowanie gwarancji rozszerzonych
 
 [!include [banner](includes/banner.md)]
 
@@ -83,7 +81,7 @@ Aby utworzyć towar objęty gwarancją w Commerce, należy wykonać następując
 
     Na przykład w przypadku dwuletniej gwarancji należy określić pole **Jednostka czasu** jako **Lata** i pole **Długość czasu** na **2**. Można również ustawić pole **Jednostka czasu** na **Miesiące** i pole **Długość czasu** na **24**, jak to pokazano na poniższej ilustracji.
 
-    ![Strona szczegółów produktu dla pozycji gwarancji](./media/ew-time-properties.png)
+    ![Strona szczegółów produktu dla pozycji gwarancji.](./media/ew-time-properties.png)
 
 1. Wybierz **Zapisz**, aby zapisać pozycję gwarancji.
 1. Zwolnij produkt gwarancyjny do firmy, aby można było go sprzedać. Aby uzyskać więcej informacji, zobacz temat [Konfigurowanie produktów handlu detalicznego](set-up-retail-products.md).
@@ -96,7 +94,7 @@ Aby utworzyć towar objęty gwarancją w Commerce, należy wykonać następując
 
     Na przykład na poniższej ilustracji pokazano pole **Postawa przedziału cenowego** ustawione na wartość **Cena podstawowa**, pole **Dolny limit** jest ustawione na 500$ a pole **Górny limit** jest ustawione na 1000$.
     
-    ![Strona szczegółów wydanego produktu dla pozycji gwarancji](./media/ew-release-product-details.png)
+    ![Strona szczegółów wydanego produktu dla pozycji gwarancji.](./media/ew-release-product-details.png)
 
 1. Asortyment pozycji gwarancyjnej dla kanału, w którym zostanie on sprzedany. Aby uzyskać więcej informacji, zobacz [Konfigurowanie asortymentów](set-up-assortments.md).
 
@@ -163,11 +161,11 @@ Dwie operacje POS pozwalają sprzedawcą sprzedawać pozycje gwarancyji podczas 
 
 Na poniższej ilustracji pokazano przykład strony terminalu w punkcie sprzedaży z monitem o dodanie pozycji gwarancji w odniesieniu do bieżącego zakupu pozycji objętej gwarancją.
 
-![Przykład monitu o dodanie pozycji gwarancji dla bieżącego zakupu](./media/ew-sell-warranty.png)
+![Przykład monitu o dodanie pozycji gwarancji dla bieżącego zakupu.](./media/ew-sell-warranty.png)
 
 Na poniższej ilustracji przedstawiono przykład funkcji służącej do dodawania pozycji gwarancji do pozycji objętej gwarancją, która została wcześniej sprzedana.
 
-![Przykładowa funkcja dodawania pozycji gwarancji dla wcześniej sprzedanej pozycji objętej gwarancją](./media/ew-add-warranty-existing.png)
+![Przykładowa funkcja dodawania pozycji gwarancji dla wcześniej sprzedanej pozycji objętej gwarancją.](./media/ew-add-warranty-existing.png)
 
 ## <a name="process-warranty-transactions"></a>Przetwarzanie transakcji gwarancyjnych
 
@@ -238,3 +236,6 @@ Gwarancja to usługa oferowana dla konkretnego, unikatowego produktu. W Dynamics
 [Konfigurowanie asortymentów](set-up-assortments.md)
 
 [Omówienie sekwencji identyfikatorów](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

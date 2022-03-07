@@ -1,12 +1,10 @@
 ---
 title: ER Projektowanie konfiguracji do generowania raportów w formacie OPENXML (listopad 2016)
-description: W tym temacie wyjaśniono, jak użytkownik przypisany do roli Administrator systemu lub Deweloper raportowania elektronicznego może utworzyć nową konfigurację raportowania elektronicznego (ER) zawierającą szablon generowania dokumentów elektronicznych w formacie OPENXML.
+description: W tym temacie opisano sposób utworzenia nowej konfiguracji raportowania elektronicznego zawierającej szablon do generowania dokumentów elektronicznych w formacie OPENXML.
 author: NickSelin
-manager: AnnBe
-ms.date: 08/12/2019
+ms.date: 04/23/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERVendorPart, ERSolutionRepositoryTable, ERSolutionRepositoryCreateDropDialog, ERSolutionImport,  ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERDataSourceAddDropDialog, ERModelGroupByFunctionEditor, VendPaymMode, LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bf909efbac5dce8e22d9713ad2e694ce624ffeb0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0f23748f6f1d2c3045b1dc69d8e46821f67da593
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681908"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944275"
 ---
 # <a name="er-design-a-configuration-for-generating-reports-in-openxml-format-november-2016"></a>ER Projektowanie konfiguracji do generowania raportów w formacie OPENXML (listopad 2016)
 
@@ -30,7 +28,7 @@ W tym temacie wyjaśniono, jak użytkownik przypisany do roli Administrator syst
 
 W tym przykładzie utworzysz konfigurację dla przykładowej firmy Litware, Inc. Kroki można wykonać na danych firmy GBSI.
 
-Aby wykonać te kroki, należy najpierw wykonać kroki w procedurze „Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego”. Musi także istnieć plik programu Excel, który zostanie zaimportowany podczas tworzenia szablonu. Do pliku można przejść z [szablonu raportu o płatnościach](https://go.microsoft.com/fwlink/?linkid=862266).
+Aby wykonać te kroki, należy najpierw wykonać kroki w procedurze „Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego”. Musi także istnieć plik programu Excel, który zostanie zaimportowany podczas tworzenia szablonu. Do pliku można przejść z [szablonu raportu o płatnościach](https://download.microsoft.com/download/3/f/0/3f0658b2-042c-43cf-a776-0f4c7f7cfe4e/SampleVendPaymWsReport.xlsx).
 
 
 ## <a name="upload-the-payments-data-model-configuration"></a>Przekazywanie konfiguracji modelu danych płatności
@@ -150,3 +148,6 @@ Aby wykonać te kroki, należy najpierw wykonać kroki w procedurze „Tworzenie
 17. W polu **Konto bankowe** wpisz `GBSI OPER`.
 18. Zaznacz element **OK** i kliknij przycisk **OK** ponownie. Przejrzyj utworzony arkusz, łącznie ze szczegółami wierszy płatności oraz sumami dla każdego kodu waluty użytego w tym komunikacie płatności.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

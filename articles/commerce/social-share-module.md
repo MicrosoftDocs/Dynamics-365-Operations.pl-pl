@@ -10,7 +10,6 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +17,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 82a8795360f453cdee19fa6e9e376a42e8276849
-ms.sourcegitcommit: 510ca8b14d8b5334e50aca1b15d636c65fcc9888
+ms.openlocfilehash: 0e7f30686894f9cf92257e99d95cc8b00f76f899
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4415071"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5234324"
 ---
-# <a name="social-share-module"></a>Moduł udostępnienia w mediach społecznościowych
+# <a name="social-share-module"></a>Moduł udostępniania społeczności
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano moduły udostępniania w plikach społecznościowych i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 Moduły udostępniania w mediach społecznych umożliwiają użytkownikom udostępnianie adresów URL stron witryn handlu elektronicznego w mediach społecznościowych takich jak Facebook, Twitter, Pinterest i LinkedIn. Adres URL witryny może być również udostępniany za pośrednictwem poczty e-mail. Moduły udostępniania w mediach społecznościowych są często używane na stronach szczegółów produktów (PDP), aby ułatwić użytkownikom udostępnianie informacji o produktach.
 
@@ -82,3 +79,6 @@ Aby dodać moduł udostępniania w mediach społecznościowych do pola zakupu, n
 [Moduł pola zakupu](add-buy-box.md)
 
 [Zgodność z plikami cookie](cookie-compliance.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -6,7 +6,6 @@ ms.topic: article
 ms.date: 07/27/2020
 ms.author: margoc
 ms.prod: ''
-ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
@@ -14,12 +13,12 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: c42baed36c0163a6254cadd8e27f91fb4562d6c2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 66e73ff2bd5dbff2cb0bcca8e0645c485f3a0bba
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414915"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402404"
 ---
 # <a name="learning-catalog-for-commerce-microsoft-partner-sales-and-marketing-roles-for-dynamics-365-commerce"></a>Katalog szkoleń dla ról sprzedażowych i marketingowych partnerów Commerce Microsoft dla Dynamics 365 Commerce
 
@@ -33,6 +32,9 @@ Aby uzyskać informacje dotyczące funkcji udostępnianych innym aplikacjom Fina
 
 | Zawartość  | opis  | Format  | Długość    |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
-| [Zapoznaj się z biznesową wartością Microsoft Dynamics 365 i Power Platform](https://docs.microsoft.com/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/)   | Dzięki tej funkcji można rozpocząć podróż, która pokazuje, jak cyfrowe przekształcenie i możliwości aplikacji biznesowych mogą przekształcić firmę. Firma Microsoft przedstawi informacje na temat sposobu, w jaki system Dynamics 365 i Power   Platform pomagają w podejmowaniu świadomych decyzji na podstawie potrzeb i celów organizacji, za pomocą czterech bloków konstrukcyjnych transformacji cyfrowej — nowoczesnych, ujednoliconych, inteligentnych i dostosowywanych. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 6.5 godzin |
-| [Rozpoczęcie korzystania z Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/get-started-dynamics-365-commerce/) | Dynamics 365 Commerce, stworzony na sprawdzonych   możliwościach rozwiązania Dynamics 365 Retail, zapewnia kompleksowe rozwiązanie wielokanałowe, które łączy zaplecze biurowe, sklepowe, biura obsługi i cyfrowe. Dynamics 365   Commerce umożliwia budowanie lojalności marki przez spersonalizowane zakontraktowania klientów, zwiększanie przychodów z ulepszoną produktywnością pracowników, optymalizowanie operacji w celu obniżenia kosztów i zwiększenia wydajności łańcucha dostaw, zapewniając lepsze wyniki działalności. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 2 godzin   |
-| [Rozpoczęcie korzystania z Dynamics 365 Fraud Protection](https://docs.microsoft.com/learn/modules/get-started-fraud-protection/)| Dynamics 365 Fraud Protection to oparte na chmurze rozwiązanie przeznaczone dla handlu elektronicznego, sklepów stacjonarnych i sprzedawców wielokanałowych, aby pomóc chronić ich przychody i reputację, zapewniając narzędzia i możliwości zmniejszania liczby oszustw i nadużyć, zmniejszania kosztów operacyjnych i zwiększania akceptacji stawki, jednocześnie chroniąc konta użytkowników przed narażeniem na oszustwa. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 35 minut |
+| [Zapoznaj się z biznesową wartością Microsoft Dynamics 365 i Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/)   | Dzięki tej funkcji można rozpocząć podróż, która pokazuje, jak cyfrowe przekształcenie i możliwości aplikacji biznesowych mogą przekształcić firmę. Firma Microsoft przedstawi informacje na temat sposobu, w jaki system Dynamics 365 i Power   Platform pomagają w podejmowaniu świadomych decyzji na podstawie potrzeb i celów organizacji, za pomocą czterech bloków konstrukcyjnych transformacji cyfrowej — nowoczesnych, ujednoliconych, inteligentnych i dostosowywanych. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 6.5 godzin |
+| [Rozpoczęcie korzystania z Dynamics 365 Commerce](/learn/paths/get-started-dynamics-365-commerce/) | Dynamics 365 Commerce, stworzony na sprawdzonych   możliwościach rozwiązania Dynamics 365 Retail, zapewnia kompleksowe rozwiązanie wielokanałowe, które łączy zaplecze biurowe, sklepowe, biura obsługi i cyfrowe. Dynamics 365   Commerce umożliwia budowanie lojalności marki przez spersonalizowane zakontraktowania klientów, zwiększanie przychodów z ulepszoną produktywnością pracowników, optymalizowanie operacji w celu obniżenia kosztów i zwiększenia wydajności łańcucha dostaw, zapewniając lepsze wyniki działalności. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 2 godzin   |
+| [Rozpoczęcie korzystania z Dynamics 365 Fraud Protection](/learn/modules/get-started-fraud-protection/)| Dynamics 365 Fraud Protection to oparte na chmurze rozwiązanie przeznaczone dla handlu elektronicznego, sklepów stacjonarnych i sprzedawców wielokanałowych, aby pomóc chronić ich przychody i reputację, zapewniając narzędzia i możliwości zmniejszania liczby oszustw i nadużyć, zmniejszania kosztów operacyjnych i zwiększania akceptacji stawki, jednocześnie chroniąc konta użytkowników przed narażeniem na oszustwa. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 35 minut |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

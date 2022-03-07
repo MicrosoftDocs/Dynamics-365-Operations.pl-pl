@@ -2,11 +2,9 @@
 title: Personalizowanie środowiska użytkownika
 description: W tym temacie wyjaśniono, jak można spersonalizować aplikację.
 author: jasongre
-manager: AnnBe
-ms.date: 09/11/2020
+ms.date: 09/27/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysUserSetup, DefaultDashboard
 audience: Application User, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 734f6499753d74b0bac8b2df1381ece4a7824142
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: a1f24ff1a0730f13af6231510c8e6b3cb46fde48
+ms.sourcegitcommit: 89906aa2f18f16e622fd280433c8fc9fe74d2aec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797497"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7581072"
 ---
 # <a name="personalize-the-user-experience"></a>Personalizowanie środowiska użytkownika
 
@@ -87,7 +85,7 @@ Niektóre z najbardziej typowych i ważnych zmiany, jakie użytkownicy wprowadza
 
 Ponadto większość podstawowych typów personalizacji jest dostępnych po kliknięciu elementu prawym przyciskiem myszy i wybraniu polecenia **Personalizuj**. (Pamiętaj, że nie wszystkie elementy na stronie można personalizować). Podczas używania tej metody personalizacji pojawi się *okno właściwości* elementu.
 
-![Personalizowanie właściwości elementu](./media/cli-element-property-window.png)
+![Personalizowanie właściwości elementu.](./media/cli-element-property-window.png)
 
 Okno właściwości służy do spersonalizowania elementu na następujące sposoby:
 
@@ -100,7 +98,7 @@ Okno właściwości służy do spersonalizowania elementu na następujące sposo
 
 Okno właściwości może zawierać inne możliwości personalizacji w zależności od elementu. Na przykład okno właściwości kafelka może umożliwiać promowanie tego kafelka do pulpitu nawigacyjnego, a okna właściwości elementów na domyślnym pulpicie nawigacyjnym mogą umożliwiać tworzenie nowego niestandardowego obszaru roboczego.
 
-### <a name="the-personalization-toolbar"></a>Pasek narzędzi personalizacji
+### <a name="personalization-toolbar"></a>Pasek narzędzi personalizacji
 
 eJeśli chcesz wprowadzić wiele zmian na stronie lub wprowadzić zmiany, które nie są dostępne za pośrednictwem innych mechanizmów (np. zmiany kolejności elementów), można użyć pasek narzędzi **Personalizacja**. Aby otworzyć pasek narzędzi **Personalizacja**, wykonaj następujące kroki:
 
@@ -109,7 +107,7 @@ eJeśli chcesz wprowadzić wiele zmian na stronie lub wprowadzić zmiany, które
 - Wybierz **Personalizuj ten formularz** w grupie **Personalizacja** na karcie **Opcje** okienka akcji jakiejkolwiek strony.
 - Wybierz przycisk **ustawienia** (symbol koła zębatego) na pasku nawigacyjnym, a następnie wybierz opcję **Personalizuj**.
 
-[![Pasek narzędzi personalizacji](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
+[![Pasek narzędzi personalizacji.](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
 
 #### <a name="navigating-the-page"></a>Nawigacja po stronie
 
@@ -121,7 +119,8 @@ Następujące narzędzia są dostępne na pasku narzędzi **Personalizacja**:
 
 - Użyj narzędzia **Wybierz**, aby wybrać i zmienić właściwości elementu. Aby skorzystać z tego narzędzia, należy zaznaczyć przycisk **Wybierz** na pasku narzędzi, a następnie wybrać żądany element. Pojawi się okno właściwości elementu, w którym można zmienić dowolne właściwości tego elementu. Można powtórzyć ten proces dla innych elementów, które można personalizować na stronie. Należy pamiętać, że niektóre właściwości personalizacji mogą być niedostępne w niektórych scenariuszach. Na przykład nie można zamknąć pola, które jest wymagane.
 - Użyj narzędzia **Ukryj**, aby ukryć element na tej stronie. Aby skorzystać z tego narzędzia, należy zaznaczyć przycisk **Ukryj** na pasku narzędzi, a następnie wybrać element do ukrycia. Używając narzędzia **Ukryj** w zacieniowanym kontenerze zostaną pokazane wszystkie elementy, które są obecnie ukryte. Można wówczas wyświetlić element, zaznaczając go. Aby zobaczyć, jak strona będzie wyglądała po ukryciu elementów, przełącz się na inne narzędzie do personalizacji lub zamknąć pasek narzędzi personalizacji.
-- Wybierz narzędzie **Dodaj pola**, aby dodać pola do strony. Korzystając z tego narzędzia, można dodawać tylko pola, które są częścią definicji strony. Aby uzyskać informacje o tworzeniu nowych pól, które nie są częścią bieżącej definicji strony, zobacz [Tworzenie pól niestandardowych i praca z nimi](user-defined-fields.md). Po wybraniu przycisku **Dodaj pola** na pasku narzędzi należy najpierw zaznaczyć siatkę lub sekcję, gdzie chcesz dodać pole. W oknie dialogowym zostanie wyświetlona lista pól powiązanych z wybraną siatkę lub sekcję. W oknie dialogowym zaznacz jedno lub więcej pól, które mają zostać dodane, a następnie kliknij opcję **Aktualizuj**. Aby usunąć pole, które zostało wcześniej dodane, należy powtórzyć proces, ale należy usunąć zaznaczenie tego pola w oknie dialogowym.
+- Wybierz narzędzie **Dodaj pola**, aby dodać pola do strony. Korzystając z tego narzędzia, można dodawać tylko pola, które są częścią definicji strony. Aby uzyskać informacje o tworzeniu nowych pól, które nie są częścią bieżącej definicji strony, zobacz [Tworzenie pól niestandardowych i praca z nimi](user-defined-fields.md). Po wybraniu przycisku **Dodaj pola** na pasku narzędzi należy najpierw zaznaczyć siatkę lub sekcję, gdzie chcesz dodać pole. W oknie dialogowym zostanie wyświetlona lista pól powiązanych z wybraną siatkę lub sekcję. W oknie dialogowym wybierz jedno lub więcej pól do dodania z listy **Zalecane pola** lub **Wszystkie pola**. Po wybraniu żądanych pól wybierz **opcję Aktualizuj**. Aby usunąć pole, które zostało wcześniej dodane, należy powtórzyć proces, ale należy usunąć zaznaczenie tego pola w oknie dialogowym.
+    - Lista **pól zalecanych** zawiera pola dodane wcześniej przez innych użytkowników w organizacji. Lista pól jest aktualizowana na podstawie częstotliwości cyklu **zadania wsadowego Rekomendacja**. Podobne działanie występuje podczas dodawania nowych pól filtru za pomocą okienka Filtr na stronie.
 - Użyj narzędzia **Przenieś**, aby przenieść element w inne miejsce w bieżącej grupie elementów. Nie można przenieść elementu poza jego grupę nadrzędną. Aby skorzystać z tego narzędzia, należy zaznaczyć przycisk **Przenieś** na pasku narzędzi, a następnie wybrać element do przeniesienia. Po wybraniu elementu aplikacja określa lokalizację, dokąd można przenieść element. Te lokalizacje są nazywane *strefami upuszczania*. Podczas przeciągania elementu w granicach bieżącej grupy każda sfera upuszczania jest wyświetlana za pomocą kolorowej, pogrubionej linii obok obszaru, w którym można upuścić element.
 - Użyj narzędzia **Pomiń**, aby usunąć element z sekwencji tabulacji na stronie. Po wybraniu przycisku **Pomiń** na pasku narzędzi w zacieniowanym kontenerze wyświetlone zostaną wszystkie elementy, które zostały pominięte. Można interaktywnie usunąć lub dodać pola do sekwencji kart.
 - Użyj narzędzia **Pokaż w nagłówku**, aby wyświetlić pole w sekcji podsumowania skróconej karty. Po wybraniu przycisku **Pokaż w nagłówku** na pasku narzędzi w zacieniowanym kontenerze wyświetlone zostaną wszystkie pola, które wybrano jako pola podsumowania. Można dodać w interaktywny sposób pola do podsumowania skróconej karty lub je wybrać, by je z niego usunąć.
@@ -149,7 +148,7 @@ W przypadku niektórych stron zawierających listy funkcja **Dodaj do personaliz
 > [!NOTE]
 > Jeśli funkcja [Zapisane widoki](saved-views.md) jest włączona, zawartość przekazana do obszaru roboczego jest bezpośrednio połączona z widokiem. Kwerenda w widoku służy do pobierania danych do obszaru roboczego, a odpowiadający jej fragment lub łącze w obszarze roboczym powoduje otwarcie strony w tym widoku, dzięki czemu zostanie do niej zastosowany sposób wykonywania kwerend i personalizacji widoku. Jeśli widok zostanie zaktualizowany, odpowiednie elementy obszaru roboczego zostaną skorygowane do nowej definicji widoku.
 
-[![Dodaj do obszaru roboczego](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
+[![Dodaj do obszaru roboczego.](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
 
 - Aby dodać listę do obszaru roboczego, najpierw należy prze sortować lub przefiltrować listę na stronie, tak aby informacje były wyświetlane tak, jak mają być widoczne w obszarze roboczym. (Jeśli funkcja **Zapisanych widoków** jest włączona, nie można kontynuować, dopóki nie zapiszesz widoku, który ma te warunki.) Następnie wybierz opcję **Dodaj do obszaru roboczego**. Wybierz obszar roboczy, a następnie w polu **Prezentacja** wybierz opcję **Lista**. Po naciśnięciu przycisku **Konfiguruj** pojawi się okno dialogowe, w którym można wybrać kolumny, jakie mają być wyświetlane na liście w obszarze roboczym. Także można wybrać etykietę dla listy w obszarze roboczym.
 - Aby dodać kafelek do obszaru roboczego, najpierw przefiltruj listę, tak aby przedstawiała dane, które mają być podsumowane lub chcesz mieć do nich szybki dostęp. (Jeśli funkcja **Zapisanych widoków** jest włączona, nie można kontynuować, dopóki nie zapiszesz widoku, który ma te warunki.) Następnie wybierz opcję **Dodaj do obszaru roboczego**. Wybierz obszar roboczy, a następnie w polu **Prezentacja** wybierz opcję **Kafelek**. Po naciśnięciu przycisku **Konfiguruj** pojawi się okno dialogowe, gdzie można określić etykietę, która ma być używana dla kafelka w obszarze roboczym. Można również określić, czy na kafelku ma się pojawić liczba elementów. Po dodaniu kafelka do obszaru roboczego można go wybrać, aby otworzyć bieżącą stronę z obszaru roboczego. Następnie można wyświetlić przefiltrowaną listę, która jest skojarzona z kafelkiem.
@@ -171,11 +170,94 @@ Pulpit nawigacyjny jest często pierwszą stroną, którą widzisz po uruchomien
 Jedną z unikatowych możliwości personalizacji dostępnych na pulpicie nawigacyjnym jest możliwość dodawania kafelków. 
 
 - Jeśli funkcja **Aplikacje całostronicowe** jest wyłączona, można dodać nowy kafelek, klikając prawym przyciskiem myszy element na pulpicie nawigacyjnym, a następnie wybierając polecenie **Dodaj obszar roboczy**. W dolnej części pulpitu nawigacyjnego jest tworzony nowy kafelek obszaru roboczego. Ten kafelek obszaru roboczego można zmieniać dowolnie. Można również dodać listy, kafelki oraz linki do obszaru roboczego w sposób opisany w sekcji tego tematu pt. [Dodawanie kafelków, list i łączy do obszaru roboczego](personalize-user-experience.md#adding-tiles-lists-and-links-to-a-workspace).
-- Jeśli funkcja **Aplikacje całostronicowe** jest wyłączona, można dodać nowy kafelek, klikając prawym przyciskiem myszy element na pulpicie nawigacyjnym, a następnie wybierając polecenie **Dodaj aplikację**. W oknie dialogowym określ, czy chcesz dodać kafelek dla nowego obszaru roboczego czy kafelka z zawartością, który ma zawartość z Power Apps lub z witryny sieci Web. Następnie postępuj zgodnie z instrukcjami, aby skonfigurować wybraną opcję. W dolnej części pulpitu nawigacyjnego jest tworzony nowy kafelek. 
+- Jeśli funkcja **Aplikacje całostronicowe** jest wyłączona, można dodać nowy kafelek, klikając prawym przyciskiem myszy element na pulpicie nawigacyjnym, a następnie wybierając polecenie **Dodaj aplikację**. W oknie dialogowym określ, czy chcesz dodać kafelek dla nowego obszaru roboczego czy kafelka z zawartością, który ma zawartość z Power Apps lub z witryny sieci Web. Następnie postępuj zgodnie z instrukcjami, aby skonfigurować wybraną opcję. W dolnej części pulpitu nawigacyjnego jest tworzony nowy kafelek. Aby uzyskać więcej informacji dotyczących dodawania, edytowania, usuwania i udostępniania tych osadzonych aplikacji, zobacz temat [Osadzanie aplikacji kanwy z aplikacji Power Apps](embed-power-apps.md) [Osadzanie aplikacji innych firm](embed-website.md).
 
 ## <a name="sharing-personalizations"></a>Udostępnianie personalizacji
 
-Po spersonalizowaniu strony można udostępnić te personalizacje innym użytkownikom poprzez wyeksportowanie spersonalizowanej strony. Następnie można poprosić innych użytkowników o zaimportowanie pliku personalizacji. Alternatywnie można przekazać swoje personalizacje użytkownikowi posiadającemu uprawnienia administratora. Użytkownik ten może następnie zastosować ten plik personalizacji do wielu użytkowników jednocześnie, korzystając ze strony administracji **Personalizacja**.
+Po spersonalizowaniu strony można udostępnić te personalizacje innym użytkownikom na różne metody. Na poniższej liście metody są ułożone w kolejności od najbardziej zalecanych do najmniej zalecanych.
+
+1. Publikowanie widoków użytkownikom.
+2. Kopiowanie widoków lub personalizacji użytkownikom.
+3. Eksportowanie i importowanie widoków lub personalizacji.
+
+### <a name="publish-views-to-users"></a>Publikowanie widoków użytkownikom
+
+Jeśli funkcja [Zapisane widoki](saved-views.md) jest włączona, a strona obsługuje widoki, najlepszym sposobem udostępniania personalizacji innym użytkownikom jest opublikowanie tego widoku użytkownikom, którzy mają co najmniej jedną rolę zabezpieczeń. Aby uzyskać więcej informacji, zobacz [Publikowanie widoków](saved-views.md#publishing-views).
+
+### <a name="copy-views-or-personalizations-to-users"></a>Kopiowanie widoków lub personalizacji użytkownikom
+
+Jeśli funkcja [Zapisane widoki](saved-views.md) jest wyłączona lub strona nie obsługuje widoków, zalecanym sposobem udostępniania personalizacji jest kopiowanie ich między użytkownikami. Ta metoda jest dostępna tylko dla użytkowników z uprawnieniami (na przykład Administratorzy systemu). Administratorzy mogą jednak wyszukać personalizację określonego użytkownika w systemie (uwzględniając widok osobisty użytkownika, jeśli zapisane widoki są włączone) i skopiować konfigurację innym użytkownikom.
+
+Jeśli zapisane widoki są włączone, wykonaj następujące kroki, aby skopiować personalizacje.
+
+1. Przejdź do pozycji **Administrowanie systemem \> Ustawienia \> Personalizacja**.
+2. Aby skopiować widoki osobiste, należy wykonać następujące kroki:
+
+    1. Wybierz opcję **Widoki osobiste**.
+    2. Na liście zaznacz żądane widoki.
+    3. Wybierz pozycję **Kopiuj do użytkowników**.
+    4. Wybierz użytkowników, którym mają być dystrybuowane widoki.
+
+    Aby skopiować personalizacje na stronach, które nie obsługują widoków, należy wykonać następujące kroki:
+
+    1. Wubierz **Ustawienia użytkownika**.
+    2. Wybierz użytkownika, który ma personalizację, którą chcesz dystrybuować.
+    3. Wybierz opcję **Zarządzanie wszystkimi personalizacjami**.
+    4. Na liście zaznacz żądane personalizacje.
+    5. Wybierz pozycję **Kopiuj do użytkowników**.
+    6. Wybierz użytkowników, którym mają być dystrybuowane personalizacje.
+
+Jeśli zapisane widoki nie są włączone, wykonaj następujące kroki, aby skopiować personalizację.
+
+1. Przejdź do pozycji **Administrowanie systemem \> Ustawienia \> Personalizacja**.
+2. Wybierz opcję **Zastosuj**.
+3. Wybierz użytkowników, którym ma być dystrybuowana personalizacja.
+4. Wybierz opcję **Wybierz istniejącą personalizację**.
+5. Znajdź i wybierz (pojedynczą) personalizację, która ma być dystrybuowana.
+6. Kliknij przycisk **OK**.
+
+### <a name="export-and-import-views-or-personalizations"></a>Eksportowanie i importowanie widoków lub personalizacji
+
+Innym sposobem udostępniania personalizacji jest eksport i import. Pojedynczy użytkownicy lub administrator, który działa w ich imieniu, mogą użyć tej metody w celu wyeksportowania swoich personalizacji lub widoków, a następnie przekazać eksportowany plik innym użytkownikom do zaimportowania. Innym rozwiązaniem jest przekazanie ich wyeksportowanych personalizacji użytkownikowi, który ma uprawnienia administratora, a następnie użycie strony administracji **Personalizacja** w celu zastosowania pliku personalizacji jednocześnie dla wielu użytkowników.
+
+#### <a name="export"></a>Eksportowanie
+
+Na ogół można wyeksportować jeden z własnych widoków lub personalizacji, otwierając odpowiednią stronę, otwierając pasek narzędzi **Personalizacja**, a następnie wybierając pozycję **Eksportuj**. Aby uzyskać więcej informacji o pasku narzędzi, zobacz sekcję [Pasek narzędzi personalizacji](#personalization-toolbar) we wcześniejszej części tego tematu. Ewentualnie, jeśli [zapisane widoki](saved-views.md) są włączone, można przejść do opcji **Ustawienia \> Opcje użytkownika \> Personalizacja**, aby wyświetlić listę wszystkich personalizacji w systemie. Stamtąd można wybrać widoki lub personalizacje do eksportu, a następnie wybrać pozycję **Eksportuj**.
+
+Ponadto administratorzy mogą eksportować personalizacje innych użytkowników, wykonując następujące kroki.
+
+1. Przejdź do pozycji **Administrowanie systemem \> Ustawienia \> Personalizacja**.
+2. Na karcie **Użytkownicy** wybierz wymaganego użytkownika.
+3. Znajdź i wybierz widok personalizacji, która ma być dystrybuowana.
+4. Wybierz opcję **Eksportuj**.
+
+#### <a name="import"></a>Import
+
+Aby zaimportować widok lub personalizację, wystarczy otworzyć pasek narzędzi **Personalizacja** i wybrać pozycję **Importuj**. Ponadto administratorzy mogą zaimportować plik i natychmiast przekazać go użytkownikom.
+
+Jeśli zapisane widoki są włączone, wykonaj następujące kroki.
+
+1. Przejdź do pozycji **Administrowanie systemem \> Ustawienia \> Personalizacja**.
+2. W okienku akcji wybierz pozycję **Importuj widoki \> Widoki użytkowników**.
+3. Wybierz tryb importowania:
+
+    - **Wybierz określonych użytkowników** — umożliwia wyświetlanie lub personalizację wybranych użytkowników.
+    - **Importuj w stanie, w którym jest** — umożliwia zaimportowanie widoku lub personalizacji do tego samego użytkownika, który go wyeksportował.
+
+4. Wybierz opcję **Przeglądaj**, a następnie znajdź i wybierz personalizację do zaimportowania.
+5. Wybierz pozycję **Następny**.
+6. Jeśli w kroku 3 wybrano opcję **Wybierz określonych użytkowników**, wybierz użytkowników, do których chcesz zaimportować personalizację.
+7. Wybierz opcję **Importuj**.
+8. W razie potrzeby rozwiąż konflikty.
+
+Jeśli zapisane widoki nie są włączone, wykonaj następujące kroki.
+
+1. Przejdź do pozycji **Administrowanie systemem \> Ustawienia \> Personalizacja**.
+2. Wybierz opcję **Zastosuj**.
+3. Wybierz użytkowników, którym ma być dystrybuowana personalizacja.
+4. Wybierz opcję **Importuj personalizacje z pliku**.
+5. Wybierz opcję **Przeglądaj**, a następnie znajdź i wybierz personalizację do zaimportowania.
+6. Kliknij przycisk **OK**.
 
 ## <a name="administration-of-personalizations"></a>Administrowanie personalizacjami
 
@@ -186,8 +268,11 @@ Klienci, którzy włączyli funkcję **Zapisane widoki**, powinni zapoznać się
 W przypadku użytkowników, którzy jeszcze nie włączyli funskcji [Zapisane widoki](saved-views.md), na tej stronie znajdują się cztery karty:
 
 - **Zastosuj** — ta opcja pozwala zaimportować lub wybrać personalizację dla co najmniej jednego użytkownika. Aby zastosować personalizację dla jednego lub kilku użytkowników, należy najpierw zaznaczyć rolę i użytkowników, którzy pełnią tę rolę. Następnie wybierz istniejącą personalizację do zastosowania do wybranych użytkowników lub zaimportuj plik personalizacji. Personalizacja jest zweryfikowana i zostanie zastosowana do wszystkich zaznaczonych użytkowników następnym razem, gdy otworzą wybraną stronę.
+
 - **Wyczyść** — Tutaj można wyczyścić wszystkie personalizacje strony lub obszaru roboczego dla jednego lub więcej użytkowników. Najpierw wybierz stronę lub obszar roboczy, aby wyświetlić listę użytkowników, którzy spersonalizowali tę stronę/obszar. Następnie wybierz użytkowników, dla których chcesz wyczyścić personalizację danej strony lub obszaru roboczego, i wybierz opcję **Wyczyść**. Wszystkie personalizacje zastosowane przez wybranych użytkowników do wybranej strony lub obszaru roboczego zostaną usunięte. Tej operacji nie można cofnąć. Jednak jeśli dla strony lub obszaru roboczego zapisano personalizację, można ją ponownie zaimportować.
+
 - **Użytkownicy** — Wybierz użytkownika, aby wyświetlić listę stron spersonalizowanych przez tę osobę. Następnie można włączyć lub wyłączyć dla wybranego użytkownika możliwość korzystania z personalizacji określonych stron lub całego systemu. Można również zaimportować, wyeksportować lub wyczyścić personalizację dla wybranego użytkownika. Ponadto można zresetować objaśnienia funkcji dla użytkownika. W takim przypadku, jeśli użytkownik wyłączył wszystkie okna wyskakujące, które wprowadzają nowe funkcje, pojawią się ponownie przy następnym napotkaniu tych funkcji przez użytkownika.
+
 - **System** — ta opcja pozwala tymczasowo wyłączyć personalizacje dla wszystkich użytkowników w systemie. W takim przypadku wszystkie personalizacje są usuwane dla wszystkich użytkowników, a wszystkie strony są resetowane do ich stanu domyślnego. W przypadku ponownego włączenia personalizacji wszystkie personalizacje zostaną zastosowane ponownie. Można również trwale usunąć wszystkie personalizacje dla wszystkich użytkowników w systemie. Nie jest możliwe odzyskanie personalizacji, które zostały usunięte. Dlatego przed wykonaniem tego zadania należy koniecznie wyeksportować wszystkie personalizacje, które potem możesz chcieć zaimportować.
 
 ## <a name="personalizing-inventory-dimensions"></a>Personalizacja wymiarów magazynowych
@@ -195,3 +280,6 @@ W przypadku użytkowników, którzy jeszcze nie włączyli funskcji [Zapisane wi
 W przypadku personalizowania konfiguracji wymiarów magazynowych na stronie należy wziąć pod uwagę ustawienia utworzone przy użyciu opcji **Wyświetl wymiary**. Na przykład można użyć personalizacji w celu ukrycia kolumny dla wymiaru zapasów Numer partii, ale kolumna pojawi się przy następnym otwarciu strony. To zachowanie występuje, ponieważ ustawienia **Wyświetlanie wymiarów** sterują wyświetlanymi kolumnami wymiaru zapasów. Ustawienia w sekcji **Wyświetlanie wymiarów** mają zastosowanie do wszystkich stron i zastępują wszelkie spersonalizowane konfiguracje pól wymiarów magazynowych na poszczególnych stronach.
 
 Tym samym w poprzednim przykładzie, jeśli nie chcesz wyświetlania kolumny dla wymiaru inwentaryzacji numeru partii na stronie, musisz wyczyścić ten wymiar w ramach opcji tabeli **Wyświetl wymiary** dla tej strony.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

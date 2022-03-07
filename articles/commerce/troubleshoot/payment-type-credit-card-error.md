@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 03bcbedb12b95a00141d27e9a93186a7fa7dabba70147177524f604dd10ed252
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5be19949e9d1dbc43fdd3e6def119effa50a34d0
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750679"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018417"
 ---
 # <a name="payment-type-must-be-credit-card-error-on-the-sales-order-page"></a>Błąd „Typ płatności musi być kartą kredytową” na stronie zamówienia sprzedaży
 
@@ -32,9 +32,9 @@ Ten temat zawiera wskazówki dotyczące rozwiązywania problemów, które mogą 
 
 Po otwarciu strony zamówienia sprzedaży po zsynchronizowaniu zamówienia pojawia się następujący komunikat o błędzie: „Typ płatności musi być kartą kredytową, ponieważ określono numer karty kredytowej”.
 
-![Typem płatności musi być błąd karty kredytowej.](media/payment-type-must-be-credit-card.jpg)
+![Typem płatności musi być błąd karty kredytowej](media/payment-type-must-be-credit-card.jpg)
 
-## <a name="resolution"></a>Rozwiązanie
+## <a name="resolution"></a>Rozdzielczość
 
 ### <a name="set-the-payment-type-in-commerce-headquarters"></a>Ustawianie typu płatności w programie Commerce Headquarters
 

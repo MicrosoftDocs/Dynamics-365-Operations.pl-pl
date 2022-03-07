@@ -2,35 +2,30 @@
 title: Dodawanie ikony favicon
 description: W tym temacie opisano sposób dodawania ikony favicon do witryny.
 author: bicyclingfool
-manager: annbe
 ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 262e478d426fd913130b21a3434331c7d27b54b2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9268bc74a4131256f5a2e88df833104db271b56a
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414875"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797726"
 ---
 # <a name="add-a-favicon"></a>Dodawanie ikony favicon
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano sposób dodawania ikony favicon do witryny.
-
-## <a name="overview"></a>Omówienie
 
 Favicon jest małym plikiem graficznym wyświetlanym na karcie przeglądarki sieci Web, na pasku adresu, w historii przeglądania oraz w zakładkach lub ulubionych i w innych miejscach. Zaleca się dodanie favicon do witryny, ponieważ reprezentuje ona i wzmacnia daną markę oraz pomaga odróżnić witrynę od innych odwiedzanych przez odbiorców witryn sieci Web.
 
@@ -66,7 +61,7 @@ Aby utworzyć fragment zawierający metatag dla ikony favicon, wykonaj poniższe
 1. W oknie dialogowym **Nowy fragment** wybierz pozycję **Tagi meta** jako moduł, na którym oparty jest fragment strony.
 1. Wprowadź nazwę fragmentu, a następnie kliknij przycisk **OK**.
 1. W drzewie hierarchii fragmentów wybierz element podrzędny **Domyślne tagi meta**.
-1. W prawym okienku, w obszarze **Tagi meta**, wybierz pozycję **Dodaj**, a następnie wprowadź ciąg HTML utworzony wcześniej dla ikony favicon. 
+1. W prawym okienku, w obszarze **Tagi meta**, wybierz pozycję **Dodaj**, a następnie wprowadź ciąg HTML utworzony wcześniej dla ikony favicon. 
 1. Wybierz pozycję **Zakończ edycję**, a następnie wybierz pozycję **Publikuj**, aby opublikować fragment.
 
 ## <a name="add-the-metatag-fragment-to-the-html-head-section-of-your-pages"></a>Dodawanie fragmentu metatagów do sekcji nagłówka kodu HTML stron
@@ -99,3 +94,6 @@ Podczas wyświetlania podglądu stron opartych na szablonie, do którego dodano 
 
 [Dodawanie kodu skryptu do stron witryny w celu obsługi telemetrii](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

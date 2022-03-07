@@ -2,11 +2,9 @@
 title: EUR-00002 Określanie adresu załadunku dla transakcji wewnątrzwspólnotowej
 description: Ta procedura pokazuje, jak określić adres załadunku dla transakcji handlu wewnątrzwspólnotowego.
 author: v-oloski
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, TransportationDocument, LogisticsPostalAddress, SysLookupMultiSelectGrid,  VendEditInvoice, VendEditInvoiceDefaultQuantityForLinesDropDialog, Intrastat, SysQueryForm
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 634f6cd840262895e6593c12dbe43923598241a5
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 68a62a26be418b7a0cb8e17532d022d76cd552411f438ffc5a0ddad589a9e476
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4962489"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6780797"
 ---
 # <a name="eur-00002-specifying-a-lading-address-for-an-intra-community-transaction"></a>EUR-00002 Określanie adresu załadunku dla transakcji wewnątrzwspólnotowej
 
@@ -72,3 +70,6 @@ Ta procedura dotyczy wszystkich krajów/regionów Europy. Zadanie utworzono przy
 37. Kliknij kartę Ogólne.
     * Znajdź nowo utworzony wiersz i upewnij się, że nadawca wysłał towary z Włoch.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

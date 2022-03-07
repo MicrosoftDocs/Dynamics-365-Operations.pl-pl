@@ -2,16 +2,13 @@
 title: Częściowa inwentaryzacja ciągła w lokalizacji
 description: Plany inwentaryzacji ciągłej decydują o faktycznym przebiegu operacji inwentaryzacji. Można poprosić, aby były inwentaryzowane tylko określone produkty i warianty produktu, a nie wszystkie zapasy dostępne w lokalizacji.
 author: perlynne
-manager: tfehr
 ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSCycleCountPlan, WHSWorkLineCycleCount, WHSWorkTemplateLineGroup, WHSWorkTemplateTable, WHSRFMenuItemCycleCount, WHSCycleCountPlanListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a541818a72f5c24db8784071f447c83a2aa4edfd
-ms.sourcegitcommit: 95f90ac3f248716abdab16d5de6ccbf059616e4b
+ms.openlocfilehash: 9f06b39f3c2d2f5a0bdfef1da9395c71686ed46968a1143305b5a10787f7e85f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4666753"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6778441"
 ---
 # <a name="partial-location-cycle-counting"></a>Częściowa inwentaryzacja ciągła w lokalizacji
 
@@ -49,7 +46,7 @@ Aby można było wykonywać pracę częściowej inwentaryzacji ciągłej, należ
 W procesie częściowej inwentaryzacji ciągłej pole daty/godziny **Ostatnie obliczenie cyklu** nie będzie aktualizowane dla lokalizacji, mimo że wszystkie dostępne towary w danej lokalizacji są zliczane. W procesie częściowej inwentaryzacji nie są brane pod uwagę parametry **Dni pomiędzy zliczaniem cyklicznym** na stronie **Plany inwentaryzacji**. W procesie częściowej inwentaryzacji nie obsługuje się jednoczesnego zliczania wielu towarów w tej samej lokalizacji. Funkcja inwentaryzacji ciągłej może spowodować, że ta sama lokalizacja będzie wielokrotnie liczona dla towaru po uruchomieniu **Przetwarzania planu inwentaryzacji ciągłej**. Aby uniknąć takiego zachowania, należy określić filtry w polu **Wybierz lokalizacje**.
 
 > [!NOTE]
-> Podczas korzystania z procesu częściowej inwentaryzacji aplikacja magazynowa nie udostępnia przycisku **Dodaj dodatek numer identyfikacyjny lub pozycja**.
+> Podczas korzystania z procesu częściowej inwentaryzacji aplikacja Warehouse Management nie udostępnia przycisku **Dodaj dodatek numer identyfikacyjny lub pozycja**.
 
 ## <a name="example"></a>Przykład
 
@@ -62,3 +59,6 @@ W tym przykładzie musi być inwentaryzowany tylko towar o numerze A0001 w magaz
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Inwentaryzacja ciągła](cycle-counting.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

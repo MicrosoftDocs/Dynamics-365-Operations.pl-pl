@@ -1,25 +1,27 @@
 ---
 title: Tworzenie nowego układu magazynu
 description: W tym temacie opisano sposób konfigurowania informacji na temat lokalizacji w magazynie.
-author: yufeihuang
+author: perlynne
+manager: tfehr
 ms.date: 07/29/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventParameters, DefaultDashboard, InventLocation, WMSLocationWizard
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: yufeihuang
+ms.author: perlynne
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf5c5203aa0a4c8522b8f9d04fc6a8cd306a64a3
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: f07fee1787cc2719bafbe2bb6d54849edda14018
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580895"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5000041"
 ---
 # <a name="create-a-new-warehouse-layout"></a>Tworzenie nowego układu magazynu
 
@@ -60,6 +62,3 @@ W tym temacie opisano sposób konfigurowania informacji na temat lokalizacji w m
 7. Zamknij stronę.
 8. Odśwież stronę.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

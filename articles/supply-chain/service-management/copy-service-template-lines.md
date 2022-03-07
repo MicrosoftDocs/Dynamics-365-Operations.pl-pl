@@ -11,18 +11,19 @@ ms.technology: ''
 ms.search.form: SMAAgreementTable, SMAServiceOrderTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7d542d7fc0ba33bb587bb3ffde22da2aa37d1e98
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a8b26924641b8b0d26fa6834623b482be7fb7d6d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966037"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435010"
 ---
 # <a name="copy-service-templates-lines"></a>Kopiowanie wierszy szablonów serwisu 
 

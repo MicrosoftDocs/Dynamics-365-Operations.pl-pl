@@ -2,11 +2,9 @@
 title: Określanie niestandardowych lokalizacji przechowywania wygenerowanych dokumentów
 description: W tym temacie wyjaśniono, jak rozszerzyć listę lokalizacji przechowywania dokumentów generowanych przez formaty modułu Raportowanie elektroniczne (ER).
 author: NickSelin
-manager: AnnBe
 ms.date: 10/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 362ac7f10cc61e26be89dfbae0e84745d42588a3
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 337e760f28161721d886c7bbec09b5ff8dbfad45
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680765"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594916"
 ---
 # <a name="specify-custom-storage-locations-for-generated-documents"></a>Określanie niestandardowych lokalizacji przechowywania wygenerowanych dokumentów
 
@@ -29,7 +27,7 @@ Interfejs API raportowania elektronicznego pozwala rozszerzyć listę lokalizacj
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Wdróż topologię, która obsługuje ciągłą kompilację. Więcej informacji znajdziesz w [Wdrażanie topologii obsługujących ciągłą budowę i automatyzację testów](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation). Musisz mieć dostęp do tej topologii w jednej z następujących ról:
+Wdróż topologię, która obsługuje ciągłą kompilację. Więcej informacji znajdziesz w [Wdrażanie topologii obsługujących ciągłą budowę i automatyzację testów](/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation). Musisz mieć dostęp do tej topologii w jednej z następujących ról:
 
 - Deweloper raportowania elektronicznego
 - Konsultant funkcjonalny raportowania elektronicznego
@@ -43,7 +41,7 @@ Wszystkie zadania przedstawione w tym temacie można wykonać w kontekście firm
 
 Aby wygenerować dokumenty, dla których ma zostać dodana niestandardowa lokalizacja przechowywania, [zaimportuj](er-download-configurations-global-repo.md) konfigurację formatu ER **Przesunięcie środków trwałych do przodu** do bieżącej topologii.
 
-![Strona Repozytorium konfiguracji](./media/er-custom-storage-generated-files-import-format.png)
+![Strona Repozytorium konfiguracji.](./media/er-custom-storage-generated-files-import-format.png)
 
 ## <a name="run-the-fixed-asset-roll-forward-report"></a>Uruchamianie raportu Przesunięcie środków trwałych do przodu
 
@@ -54,7 +52,7 @@ Aby wygenerować dokumenty, dla których ma zostać dodana niestandardowa lokali
 5. W polu **Mapowanie formatu** wybierz opcję **Przesunięcie środków trwałych do przodu**.
 6. Kliknij przycisk **OK**.
 
-![Okno dialogowe środowiska uruchomieniowego dla raportu Przesunięcie środków trwałych do przodu](./media/er-custom-storage-generated-files-runtime-dialog.png)
+![Okno dialogowe środowiska uruchomieniowego dla raportu Przesunięcie środków trwałych do przodu.](./media/er-custom-storage-generated-files-runtime-dialog.png)
 
 W programie Microsoft Excel przejrzyj dokument wychodzący, który został wygenerowany i jest dostępny do pobrania. To zachowanie jest [domyślnym zachowaniem](electronic-reporting-destinations.md#default-behavior) dla formatu ER, dla którego nie są skonfigurowane żadne [miejsca docelowe](electronic-reporting-destinations.md) i który działa w trybie interaktywnym.
 
@@ -257,7 +255,7 @@ class AssetRollForwardService extends SysOperationServiceBase
 3. Zmodyfikuj istniejącą klasę `AssetRollForwardService` i wpisz kod źródłowy, który skonfiguruje fabrykę niestandardowego miejsca docelowego dla modułu uruchamiającego raport. Zauważ, że podczas konstruowania fabryki niestandardowego miejsca docelowego jest przekazywany parametr oparty na aplikacji, który określa folder docelowy. W ten sposób folder docelowy jest używany do przechowywania wygenerowanych plików.
 
     > [!NOTE] 
-    > Upewnij się, że podany folder (w tym przykładzie **c:\\0**) jest obecny w lokalnym systemie plików serwera, na którym jest uruchomiona usługa AOS. W przeciwnym razie w czasie wykonywania zostanie zgłoszony wyjątek [DirectoryNotFoundException](https://docs.microsoft.com/dotnet/api/system.io.directorynotfoundexception?view=netcore-3.1).
+    > Upewnij się, że podany folder (w tym przykładzie **c:\\0**) jest obecny w lokalnym systemie plików serwera, na którym jest uruchomiona usługa AOS. W przeciwnym razie w czasie wykonywania zostanie zgłoszony wyjątek [DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception).
 
     ```xpp
     using Microsoft.Dynamics365.LocalizationFramework;
@@ -341,3 +339,6 @@ class AssetRollForwardService extends SysOperationServiceBase
 
 - [Miejsca docelowe raportowania elektronicznego (ER)](electronic-reporting-destinations.md)
 - [Możliwości rozszerzania — strona główna](../extensibility/extensibility-home-page.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

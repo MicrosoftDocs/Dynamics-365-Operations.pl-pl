@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: InventJournalName
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 265144
 ms.search.region: Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: v-lenest
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f8b52043f9c09dfe7e80f9fec7b495acd3ccb590
-ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
+ms.openlocfilehash: dd19f17b46cdaa6526aa4f30cda253c35a53167d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4408400"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5236235"
 ---
 # <a name="inventory-journal-reports"></a>Raporty arkuszy magazynowych
 
@@ -48,3 +47,6 @@ Aby skonfigurować relację między określonym raportem a typem arkusza, na str
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

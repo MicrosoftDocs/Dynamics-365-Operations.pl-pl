@@ -2,11 +2,9 @@
 title: Faktury dla odbiorcy i zwrotne zamówienia sprzedaży w krajach wschodnioeuropejskich
 description: W tym temacie opisano sposób konfigurowania informacji do faktur dla odbiorców i zwrotnych zamówień sprzedaży w krajów środkowoeuropejskich.
 author: epopov
-manager: annbe
 ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
@@ -15,12 +13,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: f5b46748ad2f780bfd56078631f3ac66814df9cc
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 38d1708f6b113c4915b208941e1ebab70b07323f7523d742c54f3acb32b40569
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018848"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6750691"
 ---
 # <a name="customer-invoices-and-return-sales-orders-in-eastern-european-countries"></a>Faktury dla odbiorcy i zwrotne zamówienia sprzedaży w krajach wschodnioeuropejskich
 
@@ -41,3 +39,6 @@ Można skonfigurować następujące informacje dla faktur dla odbiorcy i zwrotny
 
     * Wybierz kolejno opcje **Administrowanie organizacją \> Sekwencje numerów \> Zarządzanie licznikami**. Powinien istnieć rekord, gdzie **Moduł** = **Sprzedaż**, a **Typ** = **Faktura**.
     * Wybierz kolejno opcje **Administrowanie organizacją \> Sekwencje numerów \> Konfiguracja numerowania faktur**. Zaznacz pole wyboru **Hande** dla wiersza numeracji używanego do numerowania faktur dla odbiorców.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -12,16 +12,14 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-06-11
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 4e5faf8e4544b2bcb58f3c578789b2bd379a27b0
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d39283dea37c0e0fbf432aae8b1a30a87198f9f0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572368"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343731"
 ---
 # <a name="container-packing-strategies"></a>Strategie pakowania kontenerów
-
-[!include [banner](../includes/banner.md)]
 
 *Strategia pakowania kontenerów* to strategia, która umożliwia definiowanie alokacji towarów między kontenerami. W tym temacie wyjaśniono różnice pomiędzy strategiami *Pakowaniem do wszystkich otwartych pojemników* i *Pakowaniem tylko do bieżącego pojemnika*.
 

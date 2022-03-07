@@ -2,11 +2,9 @@
 title: Podział pracy
 description: Ten temat zawiera informacje dotyczące funkcji podziału pracy. Ta funkcja umożliwia dzielenie dużych zleceń roboczych na kilka mniejszych zleceń produkcyjnych, które można następnie przypisać do wielu pracowników magazynu. Dzięki temu ta sama praca może być pobierana jednocześnie przez kilku pracowników magazynu.
 author: mirzaab
-manager: tfehr
 ms.date: 10/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,15 +12,17 @@ ms.search.region: Global
 ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-15
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 8a530f3887c3c66295177d480a8c486dd0984153
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: 8b06164a81a18548cf9d98ea2f577b5783145100
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965534"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778264"
 ---
 # <a name="work-split"></a>Podział pracy
+
+[!include [banner](../includes/banner.md)]
 
 Funkcja podziału pracy umożliwia dzielenie identyfikatorów dużych zleceń roboczych (czyli zleceń pracy, które mają kilka wierszy) na kilka mniejszych identyfikatorów zleceń produkcyjnych, które można następnie przypisać do wielu pracowników magazynu. Dzięki temu numer utworzenia tej samej pracy może być pobierany jednocześnie przez kilku pracowników magazynu.
 
@@ -33,7 +33,7 @@ Funkcja podziału pracy umożliwia dzielenie identyfikatorów dużych zleceń ro
 
 Aby można było korzystać z funkcji podziału pracy, należy włączyć tę funkcję i jej funkcję wstępnie wymaganą w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć je, jeśli istnieje taka potrzeba.
 
-Najpierw włącz wstępnie wymaganą funkcję *Blokowania pracy w całej organizacji*, jeśli nie została jeszcze włączona. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
+Najpierw włącz wstępnie wymaganą funkcję *Blokowania pracy w całej organizacji*, jeśli nie została jeszcze włączona. W przypadku Supply Chain Management w wersji 10.0.21 ta funkcja jest obowiązkowa, więc jest domyślnie włączona i nie można jej ponownie wyłączyć. Jednak ta funkcja jest nadal wymieniona w [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) jako:
 
 - **Moduł:** *Zarządzanie magazynem*
 - **Nazwa funkcji:** *Blokowanie pracy w całej organizacji*
@@ -53,7 +53,7 @@ Funkcja *Podziału pracy* powoduje dodanie poniższych dwóch przycisków do kar
 - **Podział pracy** — dzielenie bieżącej pracy o podanym identyfikatorze na wiele mniejszych prac, które mogą być wykonywane przez różnych pracowników.
 - **Anuluj sesję podziału pracy** — umożliwia anulowanie sesji podziału pracy i udostępnienie pracy do przetwarzania.
 
-![Przyciski sesji podziału pracy i anulowania podziału pracy](media/Work_split_buttons.png "Przyciski sesji podziału pracy i anulowania podziału pracy")
+![Przyciski sesji podziału pracy i anulowania podziału pracy.](media/Work_split_buttons.png "Przyciski sesji podziału pracy i anulowania podziału pracy")
 
 > [!IMPORTANT]
 > Przycisk **Podziału pracy** nie jest dostępny, jeśli spełniony jest dowolny z następujących warunków:
@@ -69,7 +69,7 @@ Funkcja *Podziału pracy* powoduje dodanie poniższych dwóch przycisków do kar
 >
 > - Obecnie praca jest dzielona przez innego użytkownika. W przypadku próby otwarcia strony podziału dla pracy, która jest już podzielona przez innego użytkownika, pojawia się następujący komunikat o błędzie: „Praca o identyfikatorze \#\#\#\# jest obecnie dzielona. Spróbuj ponownie za kilka minut. Jeśli ten komunikat będzie nadal wyświetlany, skontaktuj się z kierownikiem”.
 
-Nowa przyczyna blokowania pracy — *Podział pracy* wskazuje, kiedy identyfikator pracy jest w trakcie dzielenia. Jest ona wyświetlana zarówno na stronie **Podziału pracy**, jak i w aplikacji magazynu, jeśli użytkownik podejmie próbę uruchomienia pracy. Jeśli są używane przyczyny blokowania, nazwa pola **Zablokowanej grupy czynności** w identyfikatorze pracy zostaje zmieniona na **Zablokowane**.
+Nowa przyczyna blokowania pracy — *Podział pracy* wskazuje, kiedy identyfikator pracy jest w trakcie dzielenia. Jest ona wyświetlana zarówno na stronie **Podziału pracy**, jak i w aplikacji Warehouse Management, jeśli użytkownik podejmie próbę uruchomienia pracy. Jeśli są używane przyczyny blokowania, nazwa pola **Zablokowanej grupy czynności** w identyfikatorze pracy zostaje zmieniona na **Zablokowane**.
 
 ## <a name="initiate-a-work-split"></a>Inicjowanie podziału pracy
 
@@ -96,7 +96,7 @@ Aby podzielić pracę, wykonaj następujące kroki.
 
     W polu **Przyczyna blokady pracy** dla bieżącej pracy zostanie ustawiona wartość *Podział pracy*, a praca zostanie zablokowana.
 
-    ![Przyczyna blokowania](media/Blocking_reason.png "Przyczyna blokowania")
+    ![Przyczyna blokowania.](media/Blocking_reason.png "Przyczyna blokowania")
 
 1. Wybierz wiersze, które mają zostać usunięte z bieżącego identyfikatora pracy i dodane do nowego identyfikatora pracy. Występują wówczas następujące zdarzenia:
 
@@ -147,10 +147,13 @@ Aby zakończyć pracę z podziałem, należy usunąć przyczynę blokady *Podzia
 
 Po usunięciu przyczyny zablokowania *Podziału pracy* można uruchomić pracę na urządzeniu przenośnym, pod warunkiem, że w identyfikatorze pracy stan **Zablokowane** jest ustawiony wartość *Nie*.
 
-## <a name="user-blocking-on-the-warehouse-app"></a>Blokowanie użytkowników w aplikacji magazynowej
+## <a name="user-blocking-on-the-warehouse-management-mobile-app"></a>Blokowanie użytkowników w aplikacji mobilnej Warehouse Management
 
-W przypadku użycia aplikacji magazynowej do uruchomienia pobierania pracy według identyfikatora pracy, pojawi się następujący komunikat o błędzie: „Praca o identyfikatorze \#\#\#\# jest obecnie dzielona”. Jeśli zostanie wyświetlony ten komunikat, wybierz przycisk **Anuluj**. Następnie można kontynuować przetwarzanie innej pracy.
+W przypadku użycia aplikacji Warehouse Management do uruchomienia pobierania pracy według identyfikatora pracy, pojawi się następujący komunikat o błędzie: „Praca o identyfikatorze \#\#\#\# jest obecnie dzielona”. Jeśli zostanie wyświetlony ten komunikat, wybierz przycisk **Anuluj**. Następnie można kontynuować przetwarzanie innej pracy.
 
 ## <a name="other-blocked-operations"></a>Inne zablokowane operacje
 
 Wszystkie operacje, które modyfikują wiersze pracy, transakcje dotyczące magazynu pracy lub łącza uzupełniania związane z pracą, która jest podzielona, będą kończyć się niepowodzeniem i wyświetlany będzie następujący komunikat o błędzie: „Praca z identyfikatorem \#\#\#\# jest obecnie dzielona”.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Czynności w procesach zatwierdzania w przepływie pracy
 description: Ten artykuł wyjaśnia czynności, jakie może wykonywać każdy uczestnik procesu zatwierdzania w ramach przepływu pracy.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,22 +14,25 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e622f9a0a50cd6c5dbcbaf9cd5d56b691232c849
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 2e546dc57692e31d4501984dafa21fbae23a48fe
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797609"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070940"
 ---
 # <a name="actions-in-workflow-approval-processes"></a>Czynności w procesach zatwierdzania w przepływie pracy
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
 Ten artykuł wyjaśnia czynności, jakie może wykonywać każdy uczestnik procesu zatwierdzania w ramach przepływu pracy.
 
 Przepływ pracy może obejmować kilka grup osób: inicjatora, osoby przydzielone do zadań, osoby podejmujące decyzje i osoby zatwierdzające. Na przykład w następującym przepływie pracy raportów z wydatków Sam jest inicjatorem, osoby w kolejce są przypisane do zadania, John podejmuje decyzje, a Frank, Sue i Ann są osobami zatwierdzającymi.
 
-[![Przepływ pracy\_WithManualDecision](./media/workflow_withmanualdecision.gif)](./media/workflow_withmanualdecision.gif)
+[![Przepływ pracy\_WithManualDecision.](./media/workflow_withmanualdecision.gif)](./media/workflow_withmanualdecision.gif)
 
 W poniższych sekcjach wyjaśniono, jakie akcje przepływu pracy może podejmować każda grupa.
 
@@ -141,3 +142,6 @@ Zażądanie przez osobę zatwierdzającą wprowadzenia zmian w dokumencie powodu
 Na przykład Sam przesłał raport z wydatków na kwotę 12 000 USD, a ten dokument jest przypisany do Sue. Jeśli Sue poprosi o wprowadzenie zmian, raport z wydatków jest wysyłany z powrotem do Sama.
 
 Sam może ponownie przesłać raport z wydatków. Może on najpierw wprowadzić żądane zmiany lub ponownie przesłać oryginalną wersję raportu z wydatków. Jeśli Sam ponownie prześle raport, zostanie on wysłany do zatwierdzenia do Franka, ponieważ Frank jest pierwszą osobą zatwierdzającą w procesie zatwierdzania.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

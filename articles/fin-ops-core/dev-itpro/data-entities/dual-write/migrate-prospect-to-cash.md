@@ -2,36 +2,37 @@
 title: Migracja danych prospektu do gotówki z Integratora danych do podwójnego zapisu
 description: W tym temacie opisano sposób migracji danych prospektu do gotówki z Integratora danych do podwójnego zapisu.
 author: RamaKrishnamoorthy
-manager: AnnBe
-ms.date: 01/04/2021
+ms.date: 02/01/2022
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
-ms.search.validFrom: 2021-01-04
-ms.openlocfilehash: f1478f0246e7f1ff8bd72232cbaf4c2034cf4edb
-ms.sourcegitcommit: 6af7b37b1c8950ad706e684cc13a79e662985b34
+ms.search.validFrom: 2020-01-26
+ms.openlocfilehash: 82bfb768b0ecac04184f4b806527346d39584d64
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "4959853"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087275"
 ---
 # <a name="migrate-prospect-to-cash-data-from-data-integrator-to-dual-write"></a>Migracja danych prospektu do gotówki z Integratora danych do podwójnego zapisu
 
 [!include [banner](../../includes/banner.md)]
 
+Rozwiązanie Prospect to cash dostępne dla Data Integratora nie jest kompatybilne z podwójnego zapisu. Powodem tego jest indeks msdynce_AccountNumber w tabeli kont, który został dostarczony jako część rozwiązania Perspektywa do gotówki. Jeśli ten indeks istnieje, nie możesz utworzyć tego samego numeru konta klienta w dwóch różnych podmiotach prawnych. Możesz albo zacząć od nowa z podwójnego zapisu, migrując dane Perspektywa do gotówki z Data Integrator do podwójnego zapisu, albo zainstalować ostatnią wersję "dorman" rozwiązania Perspektywa do gotówki . Ten temat obejmuje oba te podejścia.
+
+## <a name="install-the-last-dorman-version-of-the-data-integrator-prospect-to-cash-solution"></a>Zainstaluj ostatnią "dorman" wersję rozwiązania Data Integrator Perspektywa do gotówki
+
+**P2C Version 15.0.0.2** jest uważana za ostatnią "uśpioną" wersję rozwiązania integrującego dane Perspektywa do gotówki. Można go pobrać z [FastTrack for Dynamics 365](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Dual-write/P2C).
+
+Należy go zainstalować ręcznie. Po instalacji wszystko pozostaje dokładnie takie samo, z wyjątkiem indeksu msdynce_AccountNumber, który został usunięty.
+
+## <a name="steps-to-migrate-prospect-to-cash-data-from-data-integrator-to-dual-write"></a>Kroki do migracji danych prospektu do gotówki z Integratora danych do podwójnego zapisu
+
 Aby migrować dane prospektu do gotówki z Integratora danych do podwójnego zapisu, wykonaj poniższe kroki.
 
-1. Uruchom zadania Integratora danych od prospektu do gotówki, aby wykonać jedną pełną synchronizację końcową. W ten sposób można mieć pewność, że oba systemy (aplikacje Finance and Operations i aplikacje typu Customer Engagement) będą mieć wszystkie dane.
+1. Uruchom zadania Integratora danych od prospektu do gotówki, aby wykonać jedną pełną synchronizację końcową. W ten sposób można mieć pewność, że oba systemy (aplikacje Finanse i Działania i aplikacje typu Customer Engagement) będą mieć wszystkie dane.
 2. Aby zapobiec potencjalnej utracie danych, eksportuj dane prospektu do gotówki z aplikacji Microsoft Dynamics 365 Sales do pliku programu Excel lub pliku z wartościami rozdzielaymi przecinkami (CSV). Eksportuj dane z następujących jednostek:
 
     - [Konto](#account-table)
@@ -46,25 +47,25 @@ Aby migrować dane prospektu do gotówki z Integratora danych do podwójnego zap
 
 3. Odinstalowywanie rozwiązania od prospektu do gotówki ze środowiska sprzedaży. Ten krok powoduje usunięcie kolumn i odpowiednich danych wprowadzonych przez rozwiązanie od prospektu do gotówki.
 4. Zainstaluj rozwiązanie podwójnego zapisu.
-5. Utwórz połączenie podwójnego zapisu między aplikacją Finance and Operations a aplikacją Customer Engagement dla co najmniej jednej firmy.
+5. Utwórz połączenie podwójnego zapisu między aplikacją Finanse i Działania a aplikacją Customer Engagement dla co najmniej jednej firmy.
 6. Włącz mapy tabel podwójnego zapisu i uruchom wstępną synchronizację dla wymaganych danych referencyjnych. (Aby uzyskać więcej informacji, zobacz temat [Uwagi dotyczące wstępnej synchronizacji](initial-sync-guidance.md).) Przykłady wymaganych danych to grupy klientów, warunki płatności i harmonogramy płatności. Nie włączaj map podwójnego zapisu dla tabel wymagających inicjowania, takich jak tabele kont, ofert, wiersza oferty, zamówienia i wiersza zamówienia.
 7. W aplikacji Customer Engagement przejdź do pozycji **Ustawienia zaawansowane \> Ustawienia systemowe \> Zarządzanie danymi \> Reguły wykrywania duplikatów** i wyłącz wszystkie reguły.
 8. Zainicjuj tabele wymienione w kroku 2. Aby uzyskać instrukcje, zobacz pozostałe sekcje tego tematu.
-9. Otwórz aplikację Finance and Operations i włącz mapy tabel, takie jak konto, oferta, wiersz oferty, zamówienie i mapy tabel wiersza zamówienia. Następnie uruchom wstępną synchronizację. (Aby uzyskać więcej informacji, zobacz temat [Uwagi dotyczące wstępnej synchronizacji](initial-sync-guidance.md)). Ten proces synchronizuje dodatkowe informacje z aplikacji Finance and Operations, takie jak stan przetwarzania, adresy wysyłki i adresy rozliczeniowe, lokacje i magazyny.
+9. Otwórz aplikację Finanse i Działania i włącz mapy tabel, takie jak konto, oferta, wiersz oferty, zamówienie i mapy tabel wiersza zamówienia. Następnie uruchom wstępną synchronizację. (Aby uzyskać więcej informacji, zobacz temat [Uwagi dotyczące wstępnej synchronizacji](initial-sync-guidance.md)). Ten proces synchronizuje dodatkowe informacje z aplikacji Finanse i Działania, takie jak stan przetwarzania, adresy wysyłki i adresy rozliczeniowe, lokacje i magazyny.
 
 ## <a name="account-table"></a>Tabela Konto
 
 1. W kolumnie **Firma** wprowadź nazwę firmy, na przykład **USMF**.
 2. W kolumnie **Typ relacji** wprowadź **Klient** jako wartość statyczną. Nie można klasyfikować każdego rekordu konta jako klienta w logice biznesowej.
-3. W kolumnie **Identyfikator grupy klientów** wprowadź numer grupy klientów z aplikacji Finance and Operations. Domyślna wartość z rozwiązania od prospektu do gotówki to **10**.
-4. Jeśli używasz rozwiązania od prospektu do gotówki bez dostosowania **numeru konta**, wprowadź wartość **Numer konta** w kolumnie **Numer strony**. Jeśli istnieją dostosowania i nie znasz numeru strony, pobierz te informacje z aplikacji Finance and Operations.
+3. W kolumnie **Identyfikator grupy klientów** wprowadź numer grupy klientów z aplikacji Finanse i Działania. Domyślna wartość z rozwiązania od prospektu do gotówki to **10**.
+4. Jeśli używasz rozwiązania od prospektu do gotówki bez dostosowania **numeru konta**, wprowadź wartość **Numer konta** w kolumnie **Numer strony**. Jeśli istnieją dostosowania i nie znasz numeru strony, pobierz te informacje z aplikacji Finanse i Działania.
 
 ## <a name="contact-table"></a>Tabela Osoba kontaktowa
 
 1. W kolumnie **Firma** wprowadź nazwę firmy, na przykład **USMF**.
 2. Ustaw następujące kolumny na podstawie wartości **IsActiveCustomer** w pliku CSV:
 
-    - Jeśli ustawienie **IsActiveCustomer** ma wartość **Yes** w pliku CSV, ustaw kolumnę **Sellable** na wartość **Yes**. W kolumnie **Identyfikator grupy klientów** wprowadź numer grupy klientów z aplikacji Finance and Operations. Domyślna wartość z rozwiązania od prospektu do gotówki to **10**.
+    - Jeśli ustawienie **IsActiveCustomer** ma wartość **Yes** w pliku CSV, ustaw kolumnę **Sellable** na wartość **Yes**. W kolumnie **Identyfikator grupy klientów** wprowadź numer grupy klientów z aplikacji Finanse i Działania. Domyślna wartość z rozwiązania od prospektu do gotówki to **10**.
     - Jeśli ustawienie **IsActiveCustomer** ma wartość **No** w pliku CSV, ustaw kolumnę **Sellable** na **No** i ustaw kolumnę **Kontakt dla** na **Klient**.
 
 3. Jeśli używasz rozwiązania od prospektu do gotówki bez dostosowania **numeru kontaktu**, ustaw następujące kolumny:
@@ -75,7 +76,7 @@ Aby migrować dane prospektu do gotówki z Integratora danych do podwójnego zap
 
 ## <a name="invoice-table"></a>Tabela Faktura
 
-Ponieważ dane z tabeli **Faktura** zaprojektowano tak, aby przepływały w jedną stronę, z aplikacji Finance and Operations do aplikacji Customer Engagement, inicjowanie nie jest wymagane. Uruchom wstępną synchronizację, aby migrować wszystkie wymagane dane z aplikacji Finance and Operations do aplikacji Customer Engagement. Aby uzyskać więcej informacji, zobacz [Uwagi dotyczące wstępnej synchronizacji](initial-sync-guidance.md).
+Ponieważ dane z tabeli **Faktura** zaprojektowano tak, aby przepływały w jedną stronę, z aplikacji Finanse i Działania do aplikacji Customer Engagement, inicjowanie nie jest wymagane. Uruchom wstępną synchronizację, aby migrować wszystkie wymagane dane z aplikacji Finanse i Działania do aplikacji Customer Engagement. Aby uzyskać więcej informacji, zobacz [Uwagi dotyczące wstępnej synchronizacji](initial-sync-guidance.md).
 
 ## <a name="order-table"></a>Tabela Zamówienie
 
@@ -93,8 +94,11 @@ Ponieważ dane z tabeli **Faktura** zaprojektowano tak, aby przepływały w jedn
 
 ## <a name="products-table"></a>Tabela Produkty
 
-Ponieważ dane z tabeli **Produkty** zaprojektowano tak, aby przepływały w jedną stronę, z aplikacji Finance and Operations do aplikacji Customer Engagement, inicjowanie nie jest wymagane. Uruchom wstępną synchronizację, aby migrować wszystkie wymagane dane z aplikacji Finance and Operations do aplikacji Customer Engagement. Aby uzyskać więcej informacji, zobacz [Uwagi dotyczące wstępnej synchronizacji](initial-sync-guidance.md).
+Ponieważ dane z tabeli **Produkty** zaprojektowano tak, aby przepływały w jedną stronę, z aplikacji Finanse i Działania do aplikacji Customer Engagement, inicjowanie nie jest wymagane. Uruchom wstępną synchronizację, aby migrować wszystkie wymagane dane z aplikacji Finanse i Działania do aplikacji Customer Engagement. Aby uzyskać więcej informacji, zobacz [Uwagi dotyczące wstępnej synchronizacji](initial-sync-guidance.md).
 
 ## <a name="quote-and-quote-product-tables"></a>Tabele Oferta i Produkty z oferty
 
 W przypadku tabeli **Oferta** postępuj zgodnie z instrukcjami w sekcji [Tabela Zamówienie](#order-table) wcześniej w tym temacie. W przypadku tabeli **Produkt z oferty** postępuj zgodnie z instrukcjami w sekcji [Tabela Produkty z zamówienia](#order-products-table).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

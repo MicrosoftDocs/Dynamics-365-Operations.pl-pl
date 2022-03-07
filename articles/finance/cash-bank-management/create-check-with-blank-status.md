@@ -2,28 +2,25 @@
 title: Tworzenie czeków z pustym statusem
 description: W tym temacie wyjaśniono, jak tworzyć puste czeki dla konta bankowego na stronie Czeki.
 author: abruer
-manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankChequeTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 21941
 ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2019-09-17
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 47d54524f87cf718b9b41462b5133df267d5dd9e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3c431ed975aecf116fbf626018038b112a0a8cca063e1462e31e206480643e11
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459739"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720557"
 ---
 # <a name="create-checks-that-have-blank-status"></a>Tworzenie czeków z pustym statusem
 
@@ -39,3 +36,6 @@ Na stronie **Czeki** wykonuje się zadania konserwacyjne związane z czekami. Na
 Aby otworzyć stronę **Czeki**, przejdź do **Zarządzanie gotówką i bankami \> Konta bankowe \> Konta bankowe**, a następnie w okienku akcji na karcie **Zarządzanie płatnościami** w grupie **Informacje pokrewne**, wybierz opcję **Czeki**. Możesz też wybrać opcje **Zarządzanie gotówką i bankami \> Zapytania i raporty \> Czeki**.
 
 Następnie, aby utworzyć czeki, które mają status **Pusty** w okienku akcji wybierz **Utwórz puste czeki**. Gdy system tworzy puste czeki, powiązane konto bankowe zostaje tymczasowo dezaktywowane. To zachowanie zmniejsza ryzyko, że płatności będą generowane w tym samym czasie, gdy tworzone są puste czeki. Po zakończeniu przetwarzania powiązane konto bankowe zostanie ponownie aktywowane.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,16 +2,13 @@
 title: Opcje blokowania rabatów na produkty detaliczne
 description: Istnieją różne powody, dla których sprzedawcy detaliczni chcą uniemożliwiać stosowanie rabatów do niektórych produktów — poprzez promocję albo podczas sprzedaży w punkcie sprzedaży.
 author: jblucher
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailPeriodicDiscount
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 85183
 ms.assetid: e8c5a24f-7edd-4fd6-af80-5e0ac9f03127
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 6a683ffce487dc4388711ad160c2e8dc55a690dd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 257e52d38512aacdf852fb58cb2b0e6f7c949cb3ac8b32e4dc9f9c859bb1eef9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414871"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763795"
 ---
 # <a name="options-for-preventing-discounts-for-retail-products"></a>Opcje blokowania rabatów na produkty detaliczne
 
@@ -40,4 +37,7 @@ Następujące opcje, które można znaleźć na karcie **Sprzedaż** dla zwolnio
 > [!NOTE]
 > Te ustawienia nie ograniczają operacji ręcznej zmiany ceny, ponieważ ustawia ona podstawę ceny i nie jest traktowana jako rabat.
 
-[![Pole blokowania rabatów](./media/prevent-discounts.png)](./media/prevent-discounts.png)
+[![Pole blokowania rabatów.](./media/prevent-discounts.png)](./media/prevent-discounts.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

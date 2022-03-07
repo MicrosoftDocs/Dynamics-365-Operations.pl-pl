@@ -1,26 +1,30 @@
 ---
-# required metadata
 title: Omówienie planowania głównego i funkcjonalności wielooddziałowości
 description: Planowanie główne uwzględnia ustawienia wymiarów magazynowych „oddział” i „magazyn”.
-author: ChristianRytt
+author: roxanadiaconu
+manager: tfehr
 ms.date: 07/25/2019
-ms.topic: overview
-ms.prod: null
-ms.technology: null
-ms.search.form: 'InventLocation, InventSite'
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: InventLocation, InventSite
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-  - '2434'
-  - intro-internal
+ms.custom: 2434
 ms.assetid: 7f05c031-a446-4168-8cce-03a6305f5c4d
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
-ms.search.validFrom: '2016-02-28'
+ms.author: kamaybac
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c42fbd42288a072803e4f5de46560d13129515db
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5005159"
 ---
-
 # <a name="master-planning-and-multisite-functionality-overview"></a>Omówienie planowania głównego i funkcjonalności wielooddziałowości
 
 [!include [banner](../includes/banner.md)]
@@ -47,6 +51,3 @@ Poniższe tematy zawierają opisy działania aparatu planowania podczas określa
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

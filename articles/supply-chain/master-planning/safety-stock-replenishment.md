@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-oldolg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 937341e17688959e5721153c61af904a88608b17
-ms.sourcegitcommit: bc9e75c38e192664cde226ed3a94df5a0b304369
+ms.openlocfilehash: 28f902c589cd80f1c34dc2758232548309db9aca
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7790945"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474635"
 ---
 # <a name="safety-stock-fulfillment-for-items"></a>Realizacja zapasów bezpieczeństwa dla towarów
 
@@ -189,9 +189,5 @@ Priorytet realizacji zapotrzebowania na zapasy bezpieczeństwa jest obniżany, j
 Na etapie realizacji zapotrzebowania planowania głównego priorytet uzupełniania zapasów bezpieczeństwa nie jest już obniżany. Dostępnych zapasów można użyć przed innymi typami zapotrzebowania. Podczas obliczania opóźnienia zostanie dodana nowa logika w celu uniknięcia opóźnionych wierszy sprzedaży, zapotrzebowania wiersza BOM i wszystkich innych typów zapotrzebowania w celu określenia, czy mogą zostać dostarczone na czas, pod warunkiem że używane są zapasy bezpieczeństwa. Jeżeli system określi, że może zminimalizować opóźnienia, używając zapasów bezpieczeństwa, wiersze sprzedaży lub BOM zastąpią początkowe zapotrzebowania zapasami bezpieczeństwa, a system uruchomi uzupełnianie zapasów bezpieczeństwa.
 
 Jeżeli plan lub towar nie jest skonfigurowany do opóźnionego obliczania, ograniczenie zapasów bezpieczeństwa będzie miało taki sam priorytet jak inne typy zapotrzebowania. Oznacza to, że występuje rezerwa dostępnych zapasów i innych dostępnych zapasów przed innymi typami popytu.
-
-## <a name="additional-resources"></a>Dodatkowe zasoby
-
-- [Używanie arkusza zapasu bezpieczeństwa do aktualizowania minimalnego zapotrzebowania dla pozycji](safety-stock-journal.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

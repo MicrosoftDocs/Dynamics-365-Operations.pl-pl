@@ -2,11 +2,9 @@
 title: Podgląd zgodności z umowami SLA
 description: Można przejrzeć zgodność z umowami SLA.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0359e7d314610901c331419ab49a3d1cb446dc5e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5e720dca64e328e2b085b21d2cd8cf7733719ae159c3f6ac3b98c2338a01a104
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965737"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6780949"
 ---
 # <a name="view-compliance-with-service-level-agreements"></a>Podgląd zgodności z umowami SLA    
 
@@ -48,3 +46,6 @@ ms.locfileid: "4965737"
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

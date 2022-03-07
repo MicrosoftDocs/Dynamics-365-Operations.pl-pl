@@ -10,28 +10,24 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3cf7ead9a5340d5db37a87bdf131ba87681d5a82
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 13072c8d6839fef1ab0dd55d626c23a2a1084d4d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414896"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5209186"
 ---
 # <a name="video-player-module"></a>Moduł odtwarzacza wideo
-
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano moduły odtwarzacza wideo i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 Moduł odtwarzacza wideo służy do obsługi odtwarzania wideo. Można go dodać do dowolnej strony, pod warunkiem, że zawartość wideo jest przekazywana do systemu zarządzania zawartością (CMS) i dostępna w nim. Moduł odtwarzacz wideo obsługuje typ multimediów MP4.
 
@@ -106,3 +102,6 @@ Aby dodać moduł odtwarzacza wideo do nowej strony i ustawić wymagane właści
 [Moduł bloku tekstu](add-content-rich-block.md)
 
 [Moduł bloku zawartości](add-hero-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

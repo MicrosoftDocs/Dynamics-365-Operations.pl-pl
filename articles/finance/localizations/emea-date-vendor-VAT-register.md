@@ -1,21 +1,25 @@
 ---
-# required metadata
 title: Data rejestru podatku VAT dostawcy
 description: Ten temat zawiera informacje dotyczące funkcji włączania daty rejestru VAT dostawcy
 author: anasyash
 ms.date: 01/15/2022
 ms.topic: article
-ms.prod: null
-ms.technology: null
+ms.prod: ''
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.custom: intro-internal
 ms.search.region: global
 ms.author: anasyash
-ms.search.validFrom: '2022-01-15'
+ms.search.validFrom: 2022-01-15
 ms.dyn365.ops.version: AX 10.0.24
+ms.openlocfilehash: 882d5a8718d819cff80bfa5b86e054a39e9db159
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7992066"
 ---
-
 # <a name="date-of-vendor-vat-register"></a>Data rejestru podatku VAT dostawcy
 
 W wersji rozwiązania Microsoft Dynamics 365 Finance 10.0.24 dla faktur od dostawcy jest dostępne nowe pole **daty rejestru VAT dostawcy**. To pole określa datę podlegającej opodatkowaniu dostawy dla zakupu.

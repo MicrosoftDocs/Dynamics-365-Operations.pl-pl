@@ -2,7 +2,7 @@
 title: Tworzenie pytania otwartego
 description: Pytania otwarte umożliwiają osobom udzielającym odpowiedzi udzielanie własnych odpowiedzi.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,19 +11,21 @@ ms.technology: ''
 ms.search.form: KMQuestion, HcmLearningWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ebcacb2aa53d58e06cec18f30b358f7ec85b61e9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f140690f3abe32ab3ba8b8ff4b5fca30b9fa51b2
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420133"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467874"
 ---
 # <a name="create-an-open-ended-question"></a>Tworzenie pytania otwartego
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -38,3 +40,6 @@ Pytania otwarte umożliwiają osobom udzielającym odpowiedzi udzielanie własny
     * Dla pytań otwartych jest używany typ danych wejściowych Tekst lub Notatka.  
 6. W polu Tekst wprowadź pytanie.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

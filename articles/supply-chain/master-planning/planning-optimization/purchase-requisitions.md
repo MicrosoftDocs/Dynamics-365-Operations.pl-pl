@@ -16,16 +16,14 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 1d6fd4be0ee1913264c4a565234cfdf711365792
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 564f87fe78e79107feb103f953ed4769e4734aa1
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570871"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5808047"
 ---
 # <a name="purchase-requisitions"></a>Zapotrzebowania na zakup
-
-[!include [banner](../../includes/banner.md)]
 
 Planowanie główne może uzupełniać zapasy dla zatwierdzonych zapotrzebowań na zakup. Dlatego aby pokryć zapotrzebowania na zakup, użytkownicy nie muszą używać przepływu pracy do tworzenia zamówień zakupu. Zapotrzebowania na zakup mogą być natomiast pokrywane przez planowanie główne. Dzięki tej funkcji zapotrzebowania na zakup mogą tworzyć zamówienia zakupu, zamówienia przeniesienia lub zlecenia produkcyjne, w zależności od wartości **typu planowanego zamówienia** ustawionej dla powiązanego produktu.
 

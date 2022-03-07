@@ -2,11 +2,9 @@
 title: Pliki wideo
 description: Ta strona zawiera listę filmów instruktażowych i technicznych przygotowanych przez Microsoft, które dotyczą aplikacji Finance and Operations i są dostępne na YouTube i w innych witrynach.
 author: sericks007
-manager: AnnBe
-ms.date: 12/01/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro, Developer
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 56fdfc400b5bc3e640e7951985d54ffa870f96c9
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 1fa07f8a021bb5b4138b833ce8a7ff68c6f06d2f9eae560f776b220195213658
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797882"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6777345"
 ---
 # <a name="videos"></a>Filmy wideo 
 
@@ -86,17 +84,17 @@ Na [kanale rozwiązania Microsoft Dynamics 365 na YouTube](https://www.youtube.c
 
 ## <a name="videos-for-dynamics-365-finance"></a>Klipy wideo dla Dynamics 365 Finance
 
+### <a name="business-document-management"></a>Zarządzanie dokumentem biznesowym
+- [Utwórz nowy dokument biznesowy za pomocą funkcji Zarządzanie dokumentami biznesowymi](https://www.youtube.com/watch?v=gAIYl-mM_pw)
+
 ### <a name="customize-the-app"></a>Dostosuj aplikację
 - [Dodawanie pól niestandardowych](https://www.youtube.com/watch?v=gWSGZI9Vtnc)
 - [Osadź Power Apps](https://www.youtube.com/watch?v=x3qyA1bH-NY)
 
-### <a name="expenses"></a>Koszty
-- [Obsługa wydatków](https://youtu.be/Ocy-MsTvEE0)
-
-### <a name="financial-reporting"></a>Raportowanie finansowe
+### <a name="financial-reporting"></a>Raporty finansowe
 - [Znajdowanie wersji Projektanta raportów](https://www.youtube.com/embed/icfA5Q3kp4w)
 
-### <a name="help-system"></a>System Pomocy
+### <a name="help-system"></a>System pomocy
 
 - [Jak wnieść wkład do Microsoft Dynamics 365 documentacji](https://youtu.be/m5djioozRbg)
 
@@ -117,6 +115,9 @@ Na [kanale rozwiązania Microsoft Dynamics 365 na YouTube](https://www.youtube.c
 
 
 ## <a name="videos-for-dynamics-365-supply-chain-management"></a>Klipy wideo dla Dynamics 365 Supply Chain Management
+
+### <a name="business-document-management"></a>Zarządzanie dokumentem biznesowym
+- [Utwórz nowy dokument biznesowy za pomocą funkcji Zarządzanie dokumentami biznesowymi](https://www.youtube.com/watch?v=gAIYl-mM_pw)
 
 ### <a name="costs"></a>Koszty
 - [Obszar roboczy kontroli kosztów na urządzeniach przenośnych](https://youtu.be/imsuTg8rUVk)
@@ -167,3 +168,6 @@ Na [kanale rozwiązania Microsoft Dynamics 365 na YouTube](https://www.youtube.c
 [Filmy Informacje dotyczące nowych technologii o rozwiązaniu FastTrack](https://community.dynamics.com/365/b/techtalks?c=Finance%20and%20Operations) mają na celu zaprezentowanie szczegółów technicznych i najlepszych praktyk, które dostarczą klientom i partnerom szczegółowej wiedzy w konkretnych dziedzinach.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,21 +1,26 @@
 ---
-# required metadata
 title: Model danych obliczania podatku
-description: 'Ten temat zawiera informacje dotyczące modelu danych podatku oraz sposobu, w jaki wartości pól poszczególnych modeli danych są określane na podstawie kontekstu transakcji obliczania podatku.'
+description: Ten temat zawiera informacje dotyczące modelu danych podatku oraz sposobu, w jaki wartości pól poszczególnych modeli danych są określane na podstawie kontekstu transakcji obliczania podatku.
 author: kailiang
 ms.date: 10/15/2021
 ms.topic: overview
-ms.prod: null
-ms.technology: null
-ms.search.form: null
+ms.prod: ''
+ms.technology: ''
+ms.search.form: ''
 audience: Application user
 ms.reviewer: kfend
-ms.search.scope: 'Core, Operations'
-ms.custom: null
+ms.search.scope: Core, Operations
+ms.custom: ''
 ms.search.region: Global
 ms.author: kailiang
-ms.search.validFrom: '2021-08-02'
+ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
+ms.openlocfilehash: 2773efaed9ee30ccb27b35f5aa00515ebba1c84a
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985973"
 ---
 # <a name="tax-calculation-data-model"></a>Model danych obliczania podatku
 

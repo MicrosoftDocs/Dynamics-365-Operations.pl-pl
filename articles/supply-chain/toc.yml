@@ -4,32 +4,6 @@
       items:
         - name: Dynamics 365 Supply Chain Management — strona główna
           href: index.md
-        - name: Nowości i zmiany
-          items:
-            - name: Nowości i zmiany w aplikacjach Finance and Operations
-              href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Nowości lub zmiany w aplikacji Supply Chain Management
-              items:
-                - name: Nowości i zmiany w aplikacji Supply Chain Management — strona główna
-                  href: get-started/whats-new-home-page.md
-                - name: Rozwiązanie Supply Chain Management w wersji 10.0.25 (kwiecień 2022)
-                  href: get-started/whats-new-scm-10-0-25.md
-                - name: Supply Chain Management w wersji 10.0.24 (luty 2022)
-                  href: get-started/whats-new-scm-10-0-24.md
-                - name: Supply Chain Management w wersji 10.0.23 (styczeń 2022)
-                  href: get-started/whats-new-scm-10-0-23.md
-            - name: Usunięte lub wycofane funkcje
-              items:
-                - name: Usunięte lub wycofane funkcje — strona główna
-                  href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Supply Chain Management
-                  href: get-started/removed-deprecated-features-scm-updates.md
-                - name: Usunięte lub wycofane funkcje w poprzednich wersjach
-                  href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
-            - name: 'Funkcje systemu AX 2012, które zostały odroczone'
-              href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Zakończenie wsparcia podstawowego dla usługi Microsoft Dynamics AX 2009 i 2012
-              href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
         - name: Rozpocznij
           items:
             - name: Opis usługi
@@ -88,6 +62,38 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurowanie modułu Magazynowanie dla wdrożeń lokalnych
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Aplikacje Finance and Operations obsługiwane przez firmę 21Vianet w Chinach
+                  href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Aplikacje Finance and Operations we Francji
+                  href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Nowości i zmiany
+              items:
+                - name: Nowości i zmiany w aplikacjach Finance and Operations
+                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Nowości lub zmiany w aplikacji Supply Chain Management
+                  items:
+                    - name: Nowości i zmiany w aplikacji Supply Chain Management — strona główna
+                      href: get-started/whats-new-home-page.md
+                    - name: Rozwiązanie Supply Chain Management w wersji 10.0.22 (listopad 2021)
+                      href: get-started/whats-new-scm-10-0-22.md
+                    - name: Rozwiązanie Supply Chain Management w wersji 10.0.21 (październik 2021)
+                      href: get-started/whats-new-scm-10-0-21.md
+                    - name: Rozwiązanie Supply Chain Management w wersji 10.0.20 (sierpień 2021)
+                      href: get-started/whats-new-scm-10-0-20.md
+                    - name: Rozwiązanie Supply Chain Management w wersji 10.0.19 (czerwiec 2021)
+                      href: get-started/whats-new-scm-10-0-19.md
+                - name: Usunięte lub wycofane funkcje
+                  items:
+                    - name: Usunięte lub wycofane funkcje — strona główna
+                      href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Supply Chain Management
+                      href: get-started/removed-deprecated-features-scm-updates.md
+                    - name: Usunięte lub wycofane funkcje w poprzednich wersjach
+                      href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 'Funkcje systemu AX 2012, które zostały odroczone'
+                  href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Zakończenie wsparcia podstawowego dla usługi Microsoft Dynamics AX 2009 i 2012
+                  href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
             - name: Zasoby dokumentacji
               items:
                 - name: System pomocy
@@ -104,11 +110,13 @@
                   href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Filmy
                   href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Słownik
+                  href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/supply-chain/toc.json
             - name: Katalog szkoleń
               items:
                 - name: Katalog szkoleń — strona główna
                   href: ./get-started/learning-catalog.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Osoby decydujące o sprawach biznesowych
+                - name: Osoby podejmujące decyzje biznesowe
                   href: ./get-started/learning-catalog-bdm.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Użytkownicy biznesowi
                   href: ./get-started/learning-catalog-business-user.md
@@ -174,7 +182,7 @@
               items:
                 - name: Strona główna zarządzania cyklem życia implementacji
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Architektura dla aplikacji Finance and Operations
+                - name: Architektura aplikacji Finance and Operations
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Microsoft FastTrack
                   href: /dynamics365/fasttrack/
@@ -184,7 +192,7 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Przygotowywanie do rozpoczęcia eksploatacji
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Rozpoczynanie eksploatacji — często zadawane pytania
+                - name: Rozpocznij na żywo — często zadawane pytania
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Przesyłanie żądania obsługi
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/supply-chain/toc.json
@@ -284,7 +292,7 @@
                       href: ../finance/localizations/emea-multiple-vat-registration-numbers.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Ustawianie środowiska wyszukiwania danych głównych
                       href: ../finance/localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Aktualizacje wymogów prawnych
+            - name: Aktualizacje wymagane przepisami prawa
               href: ../finance/localizations/regulatory-updates.md?toc=/dynamics365/supply-chain/toc.json
             - name: Indie
               items:
@@ -308,8 +316,6 @@
               href: cloud-edge/cloud-edge-workload-manufacturing.md
             - name: Obciążenia pracą dotyczące zarządzania magazynem dla jednostek skalowania chmury i urządzenia brzegowego
               href: cloud-edge/cloud-edge-workload-warehousing.md
-            - name: Konfigurowanie aplikacji mobilnej Warehouse Management dla jednostki skalowania chmury i urządzenia brzegowego
-              href: cloud-edge/cloud-edge-workload-setup-warehouse-app.md
             - name: Zamówienia magazynu dla jednostek skalowania chmury i urządzenia brzegowego
               href: cloud-edge/cloud-edge-warehouse-order.md
             - name: Korekta zapasów w magazynie
@@ -709,10 +715,8 @@
                   href: cost-management/inventory-close.md
                 - name: Korygowanie wartości kosztów dostępnych zapasów
                   href: cost-management/adjust-hand-inventory-cost-values.md
-                - name: Raporty wartości zapasów
+                - name: Raport magazynu wartości zapasów
                   href: cost-management/inventory-value-report-storage.md
-                - name: Przykłady i logika raportu wartości zapasów
-                  href: cost-management/inventory-value-report-examples.md
                 - name: Magazyn raportów wiekowania zapasów
                   href: cost-management/inventory-aging-report-storage.md
                 - name: Przykłady i logika raportu wiekowania zapasów
@@ -835,7 +839,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Dodawanie wymiarów finansowych do miar agregacji
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Tworzenie raportów analitycznych za pomocą aplikacji PowerBI Desktop
+                - name: Tworzenie raportów analitycznych za pomocą aplikacji Power BI Desktop
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Dodawanie analizy do obszarów roboczych za pomocą Power BI Embedded
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/supply-chain/toc.json
@@ -947,9 +951,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Today
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: WeekNum
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: List
+                    - name: Lista
                       items:
                         - name: Lista funkcji
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/supply-chain/toc.json
@@ -1235,8 +1237,6 @@
                   items:
                     - name: Tworzenie konfiguracji w celu importowania danych z zewnętrznego pliku XML
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Importowanie danych z ręcznie wybranych plików w trybie partii
-                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurowanie importowania danych w trybie wsadowym z danych zlokalizowanych w programie SharePoint
                   href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Importowanie plików w formacie XML
@@ -1455,20 +1455,16 @@
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Zmiany w interfejsie API
                   items:
-                    - name: Aktualizacja aplikacji 7.3
+                    - name: Aktualizacja Application Update 7.3
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Aktualizacja aplikacji 10.0.11
+                    - name: Aktualizacja Application Update 10.0.11
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Aktualizacja aplikacji 10.0.17
+                    - name: Aktualizacja Application Update 10.0.17
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Aktualizacja aplikacji 10.0.19
+                    - name: Aktualizacja Application Update 10.0.19
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Aktualizacja aplikacji 10.0.21
+                    - name: Aktualizacja Application Update 10.0.21
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Aktualizacja aplikacji 10.0.23
-                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Aktualizacja aplikacji 10.0.25
-                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-25.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Określanie niestandardowej lokalizacji wygenerowanych dokumentów
                   items:
                     - name: Subskrybowanie zdarzenia w celu zażądania odpowiedzi z programu obsługi subskrypcji
@@ -1621,8 +1617,6 @@
                   href: inventory/inventory-visibility-reservations.md
                 - name: Publiczne interfejsy API dodatku Widoczność magazynu
                   href: inventory/inventory-visibility-api.md
-                - name: Wskazówki dotyczące widoczności magazynu
-                  href: inventory/inventory-visibility-tips.md
         - name: Analiza Internetu rzeczy (IoT)
           items:
             - name: Analiza Internetu rzeczy (IoT) — strona główna
@@ -1659,16 +1653,12 @@
                   href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
                 - name: Parametry nieużywane przez optymalizację planowania
                   href: master-planning/planning-optimization/not-used-parameters.md
-                - name: Harmonogram dostaw
-                  href: master-planning/supply-schedule.md
                 - name: Stosowanie filtrów do planu
                   href: master-planning/planning-optimization/plan-filters.md
                 - name: Planowanie główne z uwzględnieniem prognozy popytu
                   href: master-planning/planning-optimization/demand-forecast.md
                 - name: Planowanie główne przy użyciu umów handlowych zakupu
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
-                - name: Parametry daty i godziny używane przez optymalizację planowania
-                  href: master-planning/planning-optimization/date-time-used.md
                 - name: Marginesy bezpieczeństwa
                   href: master-planning/planning-optimization/safety-margins.md
                 - name: Tolerancja opóźnienia (dni z ujemnym opóźnieniem)
@@ -1679,10 +1669,6 @@
                   href: master-planning/planning-optimization/production-planning.md
                 - name: Planowanie z nieskończoną zdolnością produkcyjną
                   href: master-planning/planning-optimization/infinite-capacity-planning.md
-                - name: Planowanie z wyborem zasobu na podstawie pojemności
-                  href: master-planning/planning-optimization/capability-based-scheduling.md
-                - name: Planowanie oparte na priorytecie
-                  href: master-planning/planning-optimization/priority-based-planning.md
                 - name: Oznaczanie zapasów przy użyciu modułu Optymalizacja planowania
                   href: master-planning/planning-optimization/marking.md
                 - name: Planowanie międzyfirmowe
@@ -1699,16 +1685,12 @@
                   href: master-planning/planning-optimization/approved-planned-order.md
                 - name: Zaakceptuj zamówienia planowane
                   href: master-planning/planning-optimization/planned-order-firming.md
-                - name: Uproszczone zamówienia planowane
-                  href: master-planning/planning-optimization/planned-orders-simplified.md
                 - name: Planowanie z użyciem ujemnych ilości dostępnych zapasów
                   href: master-planning/planning-optimization/negative-on-hand.md
                 - name: Wyświetlanie historii planu i dzienników planowania
                   href: master-planning/planning-optimization/plan-history-logs.md
                 - name: Anulowanie zadania planowania
                   href: master-planning/planning-optimization/cancel-planning-job.md
-                - name: Komunikaty akcji
-                  href: master-planning/action-messages.md
                 - name: Rozwiązywanie problemów z optymalizacją planowania
                   href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
                 - name: Rozszerzalność optymalizacji planowania
@@ -1733,14 +1715,14 @@
                   href: master-planning/maintain-planned-orders.md
                 - name: Realizacja zapasów bezpieczeństwa dla towarów
                   href: master-planning/safety-stock-replenishment.md
-                - name: Używanie arkusza zapasu bezpieczeństwa do aktualizowania minimalnego zapotrzebowania dla pozycji
-                  href: master-planning/safety-stock-journal.md
                 - name: Opóźnienia
                   href: master-planning/delays.md
                 - name: Anulowanie zadania planowania głównego
                   href: master-planning/cancel-master-planning-job.md
                 - name: Korzystanie z funkcji śledzenia rozłożenia
                   href: master-planning/trace-explosion.md
+                - name: Komunikaty akcji
+                  href: master-planning/action-messages.md
                 - name: Monitorowanie przebiegu planowania głównego
                   href: master-planning/tasks/monitor-master-planning-run.md
                 - name: Tworzenie harmonogramu dla oddziału
@@ -1777,6 +1759,8 @@
                   href: master-planning/tasks/create-intercompany-plan.md
                 - name: Wyświetlanie wychodzących danych o zaplanowanym popycie międzyfirmowym
                   href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
+                - name: Współpraca z odbiorcami w ramach wewnętrznego łańcucha dostaw
+                  href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
                 - name: Wymagania netto i informacje oznaczania transakcji za pomocą wbudowanego planowania głównego
                   href: master-planning/net-requirements-built-in-master-planning.md
             - name: Prognozowanie
@@ -1901,8 +1885,6 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurowanie globalnej książki adresowej
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Ustawienia adresu
-                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Książki adresowe — często zadawane pytania
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurowanie książek adresowych
@@ -2035,8 +2017,6 @@
                   href: procurement/request-quotations.md
                 - name: Tworzenie zapytania ofertowego
                   href: procurement/tasks/create-request-quotation.md
-                - name: Oferty zapieczętowane na potrzeby ZO
-                  href: procurement/sealed-bidding.md
                 - name: Tworzenie zapotrzebowania wykorzystującego ZO
                   href: procurement/tasks/create-requisition-uses-rfq.md
                 - name: Tworzenie metody punktowania dla ZO
@@ -2055,12 +2035,8 @@
                   href: procurement/purchase-order-approval-confirmation.md
                 - name: Mobilny obszar roboczy zatwierdzenia zamówienia zakupu
                   href: procurement/purchase-order-mobile-workspace.md
-                - name: Tworzenie i fakturowanie międzyfirmowego zamówienia zakupu do użytku wewnętrznego
-                  href: sales-marketing/intercompany-purchase-order-for-internal-use.md
-                - name: Sprawdź rozbieżności ceny zamówienia międzyfirmowego
-                  href: sales-marketing/intercompany-check-price-discrepancies.md
                 - name: Rejestrowanie przyjęcia towarów w zamówieniu zakupu
-                  href: procurement/tasks/record-receipt-goods-purchase-order.md
+                  href: ../supply-chain/procurement/tasks/record-receipt-goods-purchase-order.md
             - name: Tworzenie zamówienia zakupu
               items:
                 - name: Ręczne tworzenie zamówień zakupu
@@ -2155,7 +2131,7 @@
               items:
                 - name: Konfigurowanie informacji o zasobach projektu
                   href: procurement/tasks/set-up-project-resource-information.md
-                - name: Tworzenie i przesyłanie przepływu pracy budżetu projektu
+                - name: Przesyłanie i zatwierdzanie budżetu projektu
                   href: procurement/tasks/submit-approve-project-budget.md
                 - name: Przesyłanie i zatwierdzanie zmian budżetu projektu
                   href: procurement/tasks/submit-approve-project-budget-revision.md
@@ -2365,8 +2341,6 @@
               href: production-control/unified-job-ids.md
             - name: Wywoływanie przepływów automatyzacji procesów w celu utworzenia zleceń kontroli jakości
               href: production-control/process-automation-quality-orders.md
-            - name: Integracja z systemami wykonywania produkcji innych firm
-              href: production-control/mes-integration.md
             - name: Wytwarzanie dyskretne
               items:
                 - name: Obsługa danych głównych produkcji
@@ -2447,7 +2421,19 @@
                       href: production-control/release-production-orders.md
                     - name: Zgłaszanie zleceń produkcyjnych jako gotowych
                       href: production-control/report-production-orders-as-finished.md
-                    - name: Konfiguruj kartę zadań dla urządzeń
+                    - name: Konfigurowanie i korzystanie z interfejsu wykonania hal produkcyjnych
+                      items:
+                        - name: Konfigurowanie interfejsu wykonania hal produkcyjnych
+                          href: production-control/production-floor-execution-configure.md
+                        - name: Projektowanie interfejsu wykonania hal produkcyjnych
+                          href: production-control/production-floor-execution-tabs.md
+                        - name: Konfigurowanie urządzenia do uruchamiania interfejsu wykonania hal produkcyjnych
+                          href: production-control/production-floor-execution-setup.md
+                        - name: Jak pracownicy korzystają z interfejsu wykonania hal produkcyjnych
+                          href: production-control/production-floor-execution-use.md
+                        - name: Dobór stylu interfejsu wykonania hal produkcyjnych
+                          href: production-control/production-floor-execution-styles.md
+                    - name: Konfigurowanie karty zadań dla urządzeń
                       href: production-control/config-job-card-device.md
                     - name: Zgłoszenie jako gotowe z poziomu urządzenia karty działań
                       href: production-control/report-finished-job-device.md
@@ -2653,20 +2639,6 @@
                       href: production-control/consumption.md
                     - name: Księgowanie produkcji
                       href: cost-management/production-posting.md
-            - name: Konfigurowanie i korzystanie z interfejsu wykonania hal produkcyjnych
-              items:
-                - name: Konfigurowanie interfejsu wykonania hal produkcyjnych
-                  href: production-control/production-floor-execution-configure.md
-                - name: Projektowanie interfejsu wykonania hal produkcyjnych
-                  href: production-control/production-floor-execution-tabs.md
-                - name: Konfigurowanie urządzenia do uruchamiania interfejsu wykonania hal produkcyjnych
-                  href: production-control/production-floor-execution-setup.md
-                - name: Jak pracownicy korzystają z interfejsu wykonania hal produkcyjnych
-                  href: production-control/production-floor-execution-use.md
-                - name: Dobór stylu interfejsu wykonania hal produkcyjnych
-                  href: production-control/production-floor-execution-styles.md
-                - name: Dostosowanie interfejsu wykonania hal produkcyjnych
-                  href: production-control/production-floor-execution-customize.md
         - name: Zarządzanie rabatami
           items:
             - name: Omówienie modułu Zarządzanie rabatami
@@ -2751,66 +2723,10 @@
               items:
                 - name: Symulacja ceny
                   href: sales-marketing/price-simulation.md
-                - name: Tworzenie grupowe ofert sprzedaży
+                - name: Zbiorowe tworzenie ofert sprzedaży
                   href: sales-marketing/tasks/mass-sales-quotations.md
                 - name: Tworzenie i edytowanie ofert sprzedaży
                   href: sales-marketing/tasks/create-edit-sales-quotations.md
-            - name: Handel międzyfirmowy
-              items:
-                - name: Konfigurowanie handlu międzyfirmowego
-                  items:
-                    - name: Konfigurowanie handlu międzyfirmowego
-                      href: sales-marketing/intercompany-trade-set-up.md
-                    - name: Parametry międzyfirmowe
-                      href: sales-marketing/intercompany-parameters.md
-                    - name: 'Konfigurowanie dostawców, odbiorców i towarów dla handlu międzyfirmowego'
-                      href: sales-marketing/intercompany-set-up-vendors-customers-items.md
-                    - name: Ustawianie opłat w międzyfirmowych zamówieniach
-                      href: sales-marketing/intercompany-set-up-charges.md
-                    - name: Konfigurowanie parametrów księgowania zamówienia międzyfirmowego
-                      href: sales-marketing/intercompany-set-up-parameters-to-post-order.md
-                - name: Synchronizacja informacji międzyfirmowych
-                  items:
-                    - name: Synchronizacja cen i rabatów międzyfirmowych
-                      href: sales-marketing/intercompany-sync-prices-discounts.md
-                    - name: Synchronizacja opłat międzyfirmowych
-                      href: sales-marketing/intercompany-sync-charges.md
-                    - name: Synchronizacja informacji międzyfirmowych o odbiorcy
-                      href: sales-marketing/intercompany-synch-customer-information.md
-                    - name: Synchronizacja międzyfirmowych kodów dyspozycji
-                      href: sales-marketing/intercompany-synchronize-disposition-codes.md
-                - name: Międzyfirmowe zamówienia sprzedaży i faktury
-                  items:
-                    - name: Tworzenie międzyfirmowych zamówień zakupu i sprzedaży w kilku firmach
-                      href: sales-marketing/intercompany-orders-in-several-companies.md
-                    - name: Międzyfirmowe zamówienia i zamówienia zwrotu
-                      href: sales-marketing/intercompany-orders-and-return-orders.md
-                    - name: Tworzenie międzyfirmowego zamówienia sprzedaży do użytku wewnętrznego
-                      href: sales-marketing/intercompany-sales-order-for-internal-use.md
-                    - name: Tworzenie i fakturowanie międzyfirmowego zamówienia sprzedaży dla odbiorcy zewnętrznego
-                      href: sales-marketing/intercompany-sales-order-for-external-customer.md
-                    - name: Rezerwacje międzyfirmowe
-                      href: sales-marketing/intercompany-reservations.md
-                    - name: Zmienianie lub usuwanie oryginalnego międzyfirmowego zamówienia sprzedaży
-                      href: sales-marketing/intercompany-change-delete-original-sales-order.md
-                    - name: Zmienianie zamówień międzyfirmowych
-                      href: sales-marketing/intercompany-change-orders.md
-                    - name: Międzyfirmowe numery partii i seryjne
-                      href: sales-marketing/intercompany-batch-serial-numbers.md
-                    - name: Międzyfirmowe dokumenty dostawy
-                      href: sales-marketing/intercompany-packing-slips.md
-                    - name: Automatyczna rejestracja płatności za międzyfirmowe faktury dla odbiorcy
-                      href: sales-marketing/intercompany-register-customer-payments-automatically.md
-                - name: Międzyfirmowe zamówienia zakupu
-                  items:
-                    - name: Tworzenie i fakturowanie międzyfirmowego zamówienia zakupu do użytku wewnętrznego
-                      href: sales-marketing/intercompany-purchase-order-for-internal-use.md
-                    - name: Sprawdź rozbieżności ceny zamówienia międzyfirmowego
-                      href: sales-marketing/intercompany-check-price-discrepancies.md
-                - name: Międzyfirmowe konwersje walut
-                  href: sales-marketing/intercompany-currency-conversions.md
-                - name: Międzyfirmowe planowanie główne
-                  href: sales-marketing/intercompany-master-scheduling.md
             - name: Zwroty
               items:
                 - name: Zwroty sprzedaży
@@ -2835,11 +2751,9 @@
               href: sales-marketing/trade-allowance.md
             - name: Tworzenie nowej umowy handlowej
               href: sales-marketing/tasks/create-new-trade-agreement.md
-            - name: Ulepszenia wydajności oczyszczania historii sprzedaży
-              href: sales-marketing/sales-update-history-cleanup-performance-improvements.md
-        - name: Zarządzanie usługami
+        - name: Zarządzanie serwisem
           items:
-            - name: Omówienie zarządzania usługami
+            - name: Omówienie zarządzania usługą
               href: service-management/service-management-home-page.md
             - name: Konfigurowanie obsługi klienta
               items:
@@ -3151,8 +3065,6 @@
               href: landed-cost/landed-cost-vs-tms.md
             - name: Ustawianie i konfigurowanie modułu Koszt z wyładunkiem
               items:
-                - name: Włączanie modułu Koszt z wyładunkiem dla własnej platformy
-                  href: landed-cost/landed-cost-enable.md
                 - name: Parametry kosztu z wyładunkiem
                   href: landed-cost/landed-cost-parameters.md
                 - name: Parametry zaopatrzenia i sourcingu kosztu z wyładunkiem
@@ -3271,8 +3183,6 @@
                       href: warehousing/warehouse-slotting.md
                     - name: Wiekowanie pobierania z zapasów dla dyrektywy lokalizacji
                       href: warehousing/location-directive-inventory-picking-aging.md
-                    - name: Kotwiczenie
-                      href: warehousing/anchoring.md
                     - name: Sortowanie towarów wychodzących
                       href: warehousing/outbound-sorting.md
                     - name: Umieszczenie na ścianie — odłożenie do sklepu
@@ -3413,10 +3323,6 @@
                       href: warehousing/configure-mobile-devices-warehouse.md
                     - name: Dostosowywanie tytułów kroków i instrukcji dla aplikacji mobilnej Warehouse Management
                       href: warehousing/mobile-app-titles-instructions.md
-                    - name: Konfigurowanie pól promowanych dla kroków na urządzeniu przenośnym
-                      href: warehousing/warehouse-app-promoted-fields.md
-                    - name: Konfigurowanie przekierowań dla kroków w elementach menu urządzenia przenośnego
-                      href: warehousing/warehouse-app-detours.md
                     - name: Numer identyfikacyjny odbierany za pomocą aplikacji mobilnej Warehouse Management
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Konfigurowanie elementu menu urządzenia przenośnego do wykonania pracy w ramach zamówienia zakupu
@@ -3433,10 +3339,6 @@
                       href: warehousing/display-older-batches-within-warehouses.md
                     - name: Pobieranie najstarszej partii na urządzeniu przenośnym
                       href: warehousing/pick-oldest-batch.md
-                - name: Globalne parametry urządzenia przenośnego
-                  href: warehousing/mobile-device-parameters.md
-                - name: Konta użytkownika urządzenia przenośnego
-                  href: warehousing/mobile-device-work-users.md
                 - name: Ustawienia użytkownika urządzenia przenośnego
                   href: warehousing/mobile-device-user-settings.md
                 - name: Przetwarzanie zdarzenia aplikacji magazynu
@@ -3519,7 +3421,7 @@
                       href: warehousing/transfer-orders-warehouse.md
                 - name: Uaktualnianie i migracja
                   items:
-                    - name: Uaktualnianie procesów zarządzania magazynem z systemu Microsoft Dynamics AX 2012 do rozwiązania Finance and Operations
+                    - name: Uaktualnianie procesów zarządzania magazynem z Microsoft Dynamics AX 2012 do Finance and Operations
                       href: warehousing/upgrade-migration-warehouse-management-processes.md
         - name: Rozwój modułu Supply Chain Management
           items:
@@ -3581,8 +3483,6 @@
                   href: troubleshooting/inventory/while-splitting-the.md
             - name: Planowanie główne
               items:
-                - name: System nie może znaleźć planowanego zamówienia w przypadku obsługi wielu zamówień
-                  href: troubleshooting/planning/planned-order-not-exist.md
                 - name: Rozłożenie BOM zachowuje się inaczej w przypadku ustalonych i szacowanych zleceń produkcyjnych
                   href: troubleshooting/planning/bom-explosion-works-differently.md
                 - name: Wartość opóźnienia nie jest aktualizowana podczas ponownego planowania zamówienia planowanego
@@ -3629,8 +3529,6 @@
                   href: troubleshooting/planning/when-importing-to-th.md
             - name: Zaopatrzenie
               items:
-                - name: Rozbieżności danych wiersza zamówienia zakupu
-                  href: troubleshooting/procurement/purchase-order-line-data-issues.md
                 - name: Co najmniej jedne zasady podziału księgowań są nadmiernie lub niedostatecznie rozdzielone
                   href: troubleshooting/procurement/accounting-over-under-distributed.md
                 - name: Akcję zamówienia zakupu można ukończyć tylko dla w pełni rozdzielonych numerów wiersza
@@ -3741,12 +3639,10 @@
                   href: troubleshooting/production/the-warehouse-in-pic.md
             - name: Zarządzanie rabatami
               items:
-                - name: Kumulacja rabatów dla klienta przy użyciu grup rabatowych dla towarów kończy się niepowodzeniem
+                - name: Kumulacja rabatów dla odbiorcy przy użyciu grup rabatowych dla towarów kończy się niepowodzeniem
                   href: troubleshooting/rebates/cumulating-customer-.md
             - name: Sprzedaż i marketing
               items:
-                - name: Zadanie oczyszczania historii aktualizacji sprzedaży nie powiodło się lub istnieją problemy z wydajnością
-                  href: troubleshooting/sales/sales-update-history-cleanup-job-performance-issues.md
                 - name: Element pakietu nie jest obsługiwany w procesie międzyfirmowym
                   href: troubleshooting/sales/bundle-item-intercompany-process.md
                 - name: Nie można anulować międzyfirmowego zamówienia zakupu połączonego z zamówieniem sprzedaży
@@ -3769,14 +3665,6 @@
                   href: troubleshooting/transportation/reconciliation-reaso.md
             - name: Zarządzanie magazynem
               items:
-                - name: Warehouse mobile app
-                  items:
-                    - name: Nie znaleziono kotwicy zaufania dla ścieżki certyfikacji podczas konfigurowania połączenia z aplikacją
-                      href: troubleshooting/warehousing/certification-path-app-connection-error.md
-                    - name: Nie znaleziono kotwicy zaufania dla ścieżki certyfikacji podczas aktualizacji i migracji do WMS
-                      href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
-                - name: Występują problemy z przetwarzaniem po zainstalowaniu obciążenia magazynu jednostki skalowania
-                  href: troubleshooting/warehousing/Scale-unit-warehouse-workload-installation-issues.md
                 - name: Monit o automatyczną rezerwację dla numeru partii jest wyświetlany nawet w przypadku dostępnych zapasów
                   href: troubleshooting/warehousing/auto-reservation-prompt-shown.md
                 - name: Nie można odblokować pracy pobrania z powodu niezakończonej pracy uzupełniania zapasów
@@ -3787,6 +3675,8 @@
                   href: troubleshooting/warehousing/cant-move-license-plate.md
                 - name: Nie można przenieść zapasów do lokalizacji kontrolowanej za pomocą numeru identyfikacyjnego
                   href: troubleshooting/warehousing/cant-reduce-picked-quantities.md
+                - name: Nie znaleziono kotwicy zaufania dla ścieżki certyfikacji podczas konfigurowania połączenia z aplikacją
+                  href: troubleshooting/warehousing/certification-path-app-connection-error.md
                 - name: Nie można odnaleźć profilu grupy
                   href: troubleshooting/warehousing/cluster-profile-not-found-error.md
                 - name: Nie można przetworzyć korekty dokumentu dostawy
@@ -3857,7 +3747,9 @@
                   href: troubleshooting/warehousing/unconfirmed-purchase-orders-confirmed.md
                 - name: Nie można usunąć rezerwacji zapasów w wierszu zamówienia sprzedaży
                   href: troubleshooting/warehousing/unreserve-inventory-sales-line.md
-                - name: 'Nie można potwierdzić wysyłki, ponieważ klient jest wstrzymany'
+                - name: Nie znaleziono kotwicy zaufania dla ścieżki certyfikacji podczas aktualizacji i migracji do WMS
+                  href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
+                - name: 'Nie można potwierdzić wysyłki, ponieważ odbiorca jest wstrzymany'
                   href: troubleshooting/warehousing/customer-is-on-hold.md
                 - name: 'Nie można potwierdzić wysyłki, ponieważ wiersze ładunku mają ilość zerową'
                   href: troubleshooting/warehousing/load-line-quantity-is-zero.md
@@ -3915,11 +3807,9 @@
                   href: troubleshooting/warehousing/work-remains-blocked.md
                 - name: Nie można anulować pracy dotyczącej użytkownika
                   href: troubleshooting/warehousing/you-cannot-cancel-wo.md
-    - name: Rozwój i administracja aplikacjami finansowymi i operacyjnymi
+    - name: Programowanie aplikacji Finance and Operations i administrowanie nimi
       href: ../fin-ops-core/dev-itpro/index.md
-    - name: Rozwiązanie Dynamics 365 Finance
+    - name: Dynamics 365 Finance
       href: ../finance/index.md
     - name: Dynamics 365 Commerce
       href: ../commerce/index.md
-    - name: Dynamics 365 Human Resources
-      href: ../human-resources/index.md

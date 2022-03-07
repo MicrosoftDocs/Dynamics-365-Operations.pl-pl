@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ca9ddaed0c4aad6aeb3877384778d33f83e6e4aa
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: c0b55046e6c523398b4a30e674dc9f77bb6fedf3
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796861"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693215"
 ---
 # <a name="record-templates-overview"></a>Omówienie szablonów rekordów
 

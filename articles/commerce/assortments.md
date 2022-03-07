@@ -2,25 +2,22 @@
 title: Zarządzanie asortymentem
 description: W tym temacie wyjaśniono podstawowe pojęcia dotyczące zarządzania asortymentem w Dynamics 365 Commerce oraz omówiono różne opcje projektu wdrożenia.
 author: jblucher
-manager: AnnBe
 ms.date: 03/12/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Retail, Operations
 ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
-ms.openlocfilehash: e1b177989065740eef0bd917a7ce1e0a2c79088b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 74df8ac27c2028582b8909db0a7260b9b0ed38f5
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414867"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797288"
 ---
 # <a name="assortment-management"></a>Zarządzanie asortymentem
 
@@ -107,3 +104,6 @@ Planując i organizując asortymenty dla swojego wdrożenia Commerce, należy wz
 - **Sprzedaż i zwroty poza asortymentami** — ta funkcja pozwala sprzedawcom detalicznym efektywnie zarządzać liczebnością asortymentów poprzez ograniczenie dostępności produktów tylko do tych, które należą do podstawowego asortymentu sklepu. Pomaga również reagować w sytuacjach, gdy produkt został omyłkowo pominięty z asortyment lub zwrócony poza datami obowiązywania asortymentu.
 
 Jeśli dane produktu nie istnieją w bazie danych kanału, aplikacja POS wykonuje w czasie rzeczywistym wywołania do centrali w celu pobrania wymaganych informacji, dzięki czemu produkt można sprzedać, zwrócić lub umieścić w zamówieniu klienta. Informacje o produkcie pobrane w ten sposób są dostępne tylko w zakresie danej transakcji. Produkt nie jest dodawany do definicji asortymentu. W związku później również będą wykonywane wywołania w czasie rzeczywistym tylko w razie potrzeby.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

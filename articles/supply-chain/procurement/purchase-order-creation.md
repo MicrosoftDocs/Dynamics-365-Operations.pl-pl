@@ -1,12 +1,10 @@
 ---
 title: Tworzenie zamówień zakupu
 description: W tym artykule opisano proces i opcje ręcznego tworzenia zamówienia zakupu.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 93053
 ms.assetid: 25b1c9f1-20f8-4cf5-b87c-876e32f68846
 ms.search.region: Global
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 105d4022e1867f553fcae5e4ae9c0ed7ce4e912d
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: f4679ce27b248770b9998914407cd2eb21d7dd16
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5022288"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5825405"
 ---
 # <a name="create-purchase-orders"></a>Tworzenie zamówień zakupu
 
@@ -95,3 +93,6 @@ Może wystąpić konieczność opóźnienia finalizacji zamówienia zakupu. Na p
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

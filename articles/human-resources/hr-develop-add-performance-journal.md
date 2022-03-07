@@ -2,28 +2,27 @@
 title: Dodawanie do swojego arkusza wydajności i wysyłanie pochwały innej osobie
 description: Arkusz wydajności przechowuje informacje, które odnoszą się do sposobu osiągania celów lub efektywności działania w okresie.
 author: andreabichsel
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EssWorkspace, HcmPerfJournal, HcmPerfJournalAddLink, HcmPerfPraise, HcmWorkerLookUpByPerson, HcmPerfJournalAdd, HcmEmployeeDevelopmentWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a2a90a5f746e49e1a5df9910867e8cd35feb1147
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: caedd7df4f86abfbf154b367065fb075e6ef081c
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420008"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6055491"
 ---
 # <a name="add-to-your-performance-journal-and-send-praise-to-someone"></a>Dodawanie do swojego arkusza wydajności i wysyłanie pochwały innej osobie
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Arkusz wydajności przechowuje informacje, które odnoszą się do sposobu osiągania celów lub efektywności działania w okresie. Z arkusza można także pochwalić działania współpracownika. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. Procedura dotyczy funkcji dodanej w programie Dynamics 365 for Operations w wersji 1611.
 
@@ -54,3 +53,6 @@ Arkusz wydajności przechowuje informacje, które odnoszą się do sposobu osią
 20. W polu Opis wpisz „Dziękuję za całą pomoc podczas konferencji!”.
 21. Kliknij przycisk Wyślij.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

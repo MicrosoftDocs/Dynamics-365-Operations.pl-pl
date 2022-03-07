@@ -1,7 +1,7 @@
 ---
 title: Szablony serwisów
 description: Można zdefiniować umowę serwisową jako szablon, tak aby później można było kopiować wiersze z tego szablonu do innej umowy serwisowej lub zlecenia serwisowego.
-author: kamaybac
+author: ShylaThompson
 ms.date: 02/19/2018
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 82a19dbee91f13eb3ef56dfd67a775930170b8e7
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a5e2e1eb04811f063547622395e6ec9289e04b68c2ac8efadc70e61cbc87f77d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576311"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6777822"
 ---
 # <a name="service-templates"></a>Szablony serwisów
 

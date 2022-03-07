@@ -2,11 +2,9 @@
 title: Średnia ruchoma sekwencji kosztu rezerwowego
 description: Ten temat zawiera informacje dotyczące sekwencji kosztów rezerwowych dla obliczeń średniej ruchomej w rozwiązaniu Microsoft Dynamics 365 Supply Chain Management.
 author: AndersGirke
-manager: tfehr
 ms.date: 03/25/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2020-03-25
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 541b7ecca5c1c36999f573d6d0f2dc0c9e901631
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 09da3c3a79b5540670db25d5466023132d2848f4
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967590"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832281"
 ---
 # <a name="moving-average-fallback-cost-sequence"></a>Średnia ruchoma sekwencji kosztu rezerwowego
 
@@ -45,3 +43,6 @@ Aby wybrać sekwencję kosztów rezerwowych dla obliczeń średniej ruchomej, na
     - **Koszt aktywny — cena towaru** — w organizacjach mogą występować problemy z wydajnością, jeśli są one używane w procesach biznesowych, w których zapasy są zwykle ujemne, a jednocześnie objętość transakcji jest wysoka. To ustawienie pomaga złagodzić te problemy z wydajnością.
 
 ![Parametry księgowania zapasów](media/inventory-accounting-parameters.png "Parametry księgowania zapasów")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

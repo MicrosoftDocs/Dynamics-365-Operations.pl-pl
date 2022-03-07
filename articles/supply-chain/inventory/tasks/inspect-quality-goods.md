@@ -1,60 +1,52 @@
 ---
 title: Sprawdzanie jakości towarów
-description: W tym temacie opisano sposób przetwarzania zleceń kontroli jakości.
-author: yufeihuang
-ms.date: 03/23/2021
+description: W tym temacie wyjaśniono sposób przetwarzania zlecenia kontroli jakości.
+author: perlynne
+manager: tfehr
+ms.date: 08/01/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventQualityOrderTable, InventQualityOrderLineResults, HcmWorkerLookUp
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: yufeihuang
+ms.author: perlynne
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cc2fbbedb608b38c6855fbd48ff0c3e26ee3e0bc
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: dbfb3733cc52f0f8f54ab4388764429387358ee7
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575855"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011529"
 ---
 # <a name="inspect-the-quality-of-goods"></a>Sprawdzanie jakości towarów
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie opisano sposób przetwarzania zleceń kontroli jakości. Kontrole jakości są zazwyczaj wykonywane przez pracownika ds. kontroli jakości.
+W tym temacie wyjaśniono sposób przetwarzania zlecenia kontroli jakości. Zadania z przewodnika można wykonać przy użyciu danych firmy demonstracyjnej USMF. Przed rozpoczęciem tej przykładowej procedury należy potwierdzić zamówienia zakupu „000016” i zaksięgować dokument przyjęcia produktu. Spowoduje to automatyczne utworzenie zlecenia kontroli jakości. Kontrole jakości są zazwyczaj wykonywane przez pracownika ds. kontroli jakości.
 
-Jeśli są zainstalowane standardowe dane demonstracyjne, możesz użyć ich do wykonania procedur standardowych w tym temacie. Aby użyć danych demonstracyjnych, należy wybrać firmę *USMF* przed rozpoczęciem. Następnie musisz potwierdzić zamówienie zakupu *000016* i zatwierdzić dokument przyjęcia produktów. Zlecenie kontroli jakości zostanie wygenerowane automatycznie.
 
-## <a name="step-1-select-a-quality-order"></a>Krok 1: Wybieranie zlecenia kontroli jakości
+## <a name="select-a-quality-order"></a>Wybieranie zlecenia kontroli jakości
+1. W okienku nawigacji otwórz **Moduły > Zarządzanie zapasami > Zadania okresowe > Zarządzanie jakością > Zlecenia kontroli jakości**.
+2. Przed rozpoczęciem tej procedury wybierz utworzone zlecenie kontroli jakości.  
 
-Aby wybrać zlecenie kontroli jakości, należy wykonać następujące czynności.
-
-1. Wybierz kolejno opcje **Zarządzanie zapasami \> Zadania okresowe \> Zarządzanie jakością \> Zlecenia kontroli jakości**.
-1. Przed rozpoczęciem tej procedury wybierz wygenerowane zlecenie kontroli jakości.
-
-## <a name="step-2-record-test-results"></a>Krok 2: Rejestrowanie wyników testów
-
-Aby zarejestrować wyniki testów, wykonaj następujące kroki.
-
+## <a name="record-test-results"></a>Rejestrowanie wyników testów
 1. Wybierz opcję **Wyniki**.
-1. Wybierz opcję **Edycja**.
-1. W polu **Liczba wyników** wprowadź liczbę.
-1. W polu **Wynik** wybierz pożądany rekord. W tym przykładzie wynik bazuje na wstępnie zdefiniowanym wyniku. Zazwyczaj rejestruje się bardziej szczegółowy wynik testu, na przykład rozmiar lub inny wymiar.
-1. Wybierz opcję **Zapisz**.
-1. Zamknij stronę.
+2. Wybierz opcję **Edycja**.
+3. W polu **Liczba wyników** wprowadź liczbę.
+4. W polu **Wynik** wybierz odpowiedni rekord z menu rozwijanego.  
+- W tym przykładzie wynik bazuje na wstępnie zdefiniowanym wyniku. Zwyczajowo rejestruje się bardziej szczegółowy wynik inspekcji, na przykład rozmiaru lub innego wymiaru.  
+5. Wybierz opcję **Zapisz**.
+6. Zamknij stronę.
 
-## <a name="step-3-validate-the-quality-order"></a>Krok 3: Sprawdzanie poprawności zlecenia kontroli jakości
-
-Aby sprawdzić poprawność zlecenia kontroli jakości, należy wykonać następujące czynności.
-
+## <a name="validate-the-quality-order"></a>Sprawdź poprawność zlecenia kontroli jakości
 1. Wybierz **Potwierdź**.
-1. W polu **Poprawność sprawdzona przez** wybierz użytkownika, który wykonuje inspekcję.
-1. Wybierz pozycję **Wybierz**.
-1. Kliknij przycisk **OK**.
-1. Zamknij stronę.
+2. W polu **Poprawność sprawdzona przez** wybierz użytkownika wykonującego inspekcję z menu rozwijanego.  
+3. Kliknij opcję **Wybierz**.
+4. Kliknij przycisk **OK**.
+5. Zamknij stronę.
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

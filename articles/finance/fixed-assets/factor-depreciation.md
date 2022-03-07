@@ -1,10 +1,12 @@
 ---
 title: Amortyzacja czynnikowa
 description: Ten artykuł zawiera omówienie metody amortyzacji współczynnikowej.
-author: moaamer
+author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: roschlom
 ms.custom: 13831
 ms.assetid: 2b6c4fe4-02ff-4191-bcad-32f1f34c15f2
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aab5ab518f2806e1b27f352e354dc9280fd27def
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 87cca8b3472f572cd1c4ba3d894269f7ba0f248a
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674462"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5241081"
 ---
 # <a name="factor-depreciation"></a>Amortyzacja czynnikowa
 
@@ -28,7 +30,7 @@ ms.locfileid: "7674462"
 
 Ten artykuł zawiera omówienie metody amortyzacji współczynnikowej.
 
-Czynniki to wartości procentowe używane do amortyzacji środków. Po konfiguracji profilu amortyzacji środka trwałego i wybraniu wartości **Współczynnik** w polu **Metoda** na stronie **Profile amortyzacji** można skonfigurować amortyzację progresywną, degresywną lub liniową.
+Czynniki to wartości procentowe używane do amortyzacji środków. Po konfiguracji profilu amortyzacji środka trwałego i wybraniu wartości **Współczynnik** w polu **Metoda** na stronie **Profile amortyzacji** można skonfigurować amortyzację progresywną, degresywną lub liniową:
 
 -   W przypadku wybrania amortyzacji progresywnej kwota wzrasta z każdym okresem amortyzacji.
 -   W przypadku wybrania amortyzacji degresywnej kwota amortyzacji na okres systematycznie spada.

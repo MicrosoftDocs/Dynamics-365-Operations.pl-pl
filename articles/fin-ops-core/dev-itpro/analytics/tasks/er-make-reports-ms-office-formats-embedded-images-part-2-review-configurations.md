@@ -1,6 +1,6 @@
 ---
 title: Przeglądanie konfiguracji służących do generowania raportów w formatach pakietu Office z osadzonymi obrazami
-description: Aby wykonać te kroki, należy najpierw wykonać kroki z przewodnika po zadaniu „ER Tworzenie raportów w formatach programu MS Office z osadzonymi obrazami (Część 1 — Konfigurowanie parametrów)”.
+description: W tym temacie opisano sposób projektowania konfiguracji generujących dokumenty elektroniczne z osadzonymi obrazami. (część 1 — konfigurowanie parametrów).
 author: NickSelin
 manager: AnnBe
 ms.date: 06/13/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c41ff1ba99411b97ea2b5d9f31bdee7c7701315
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3eee6300350dd96c34f2eab44704d1895e6171ff
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684362"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093652"
 ---
 # <a name="review-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>Przeglądanie konfiguracji służących do generowania raportów w formatach pakietu Office z osadzonymi obrazami
 

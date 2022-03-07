@@ -1,26 +1,30 @@
 ---
-# required metadata
 title: Omówienie wersji wyceny
-description: 'Ten artykuł zawiera informacje o wersjach wyceny, zarządzaniu nimi oraz o typach danych, które można w nich uwzględnić. Głównym celem wersji wyceny jest objęcie rekordów kosztów dotyczących towarów, kategorii kosztów oraz wzorów obliczania kosztów pośrednich.'
+description: Ten artykuł zawiera informacje o wersjach wyceny, zarządzaniu nimi oraz o typach danych, które można w nich uwzględnić. Głównym celem wersji wyceny jest objęcie rekordów kosztów dotyczących towarów, kategorii kosztów oraz wzorów obliczania kosztów pośrednich.
 author: AndersGirke
 ms.date: 07/25/2019
-ms.topic: overview
-ms.prod: null
-ms.technology: null
-ms.search.form: 'BOMCalcDialog, BOMCalcTable, CostingVersion'
+ms.topic: article
+ms.prod: ''
+ms.technology: ''
+ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom:
-  - '54532'
-  - intro-internal
+- "54532"
+- intro-internal
 ms.assetid: cd239da5-f434-4d1b-8196-5414c888d76d
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: aevengir
-ms.search.validFrom: '2016-02-28'
+ms.author: kamaybac
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 355721d5ac313553bd573665c616bfb155b70826
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6339650"
 ---
-
 # <a name="costing-versions-overview"></a>Omówienie wersji wyceny
 
 [!include [banner](../includes/banner.md)]

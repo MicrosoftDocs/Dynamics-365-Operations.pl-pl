@@ -1,26 +1,32 @@
 ---
-# required metadata
 title: Rozpoczynanie pracy z fakturowaniem elektronicznym dla Egiptu
-description: 'Ten temat zawiera informacje, które pomogą w rozpoczęciu pracy z funkcją Faktury elektroniczne dla Egiptu w Finance i Supply Chain Management.'
+description: Ten temat zawiera informacje, które pomogą w rozpoczęciu pracy z funkcją Faktury elektroniczne dla Egiptu w Finance i Supply Chain Management.
 author: gionoder
-ms.date: 04/20/2021
+ms.date: 03/29/2021
 ms.topic: article
-ms.prod: null
-ms.technology: null
-ms.search.form: null
+ms.prod: ''
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: intro-internal
-ms.assetid: null
+ms.custom: 97423
+ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
-ms.search.validFrom: '2020-07-08'
+ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
+ms.openlocfilehash: f6175a50a88d2d636bfafc5988265b8657630758
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840203"
 ---
-
 # <a name="get-started-with-electronic-invoicing-for-egypt"></a>Rozpoczynanie pracy z fakturowaniem elektronicznym dla Egiptu
 
 [!include [banner](../includes/banner.md)]
+
+[!include [banner](../includes/preview-banner.md)]
 
 Ten temat zawiera informacje, które pomogą w rozpoczęciu pracy z Faktury elektroniczne dla Egiptu. W tym temacie podasz informacje o krokach konfiguracji zależnych od kraju w Regulatory Configuration Services (RCS) i uzupełnij czynności opisane w temacie [Wprowadzenie do Fakturowania elektronicznego](e-invoicing-get-started.md).
 

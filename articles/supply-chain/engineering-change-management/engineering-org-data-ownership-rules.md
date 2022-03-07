@@ -2,11 +2,9 @@
 title: Reguły dotyczące firm inżynieryjnych i własności danych
 description: W tym temacie wyjaśniono, w jaki sposób można wykorzystać jedną lub więcej firm inżynierskich, aby zapewnić, że dane główne dla produktów są tworzone centralnie i obsługiwane. Firma inżynieryjna reprezentuje firmę, która jest właścicielem produktów technologicznych i posiada odpowiednie dane techniczne.
 author: t-benebo
-manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EngChgEngineeringOrganization
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: ab5ca3bee65bb0ee8ce7f44ba97c00347fe38366
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 8bfb0a05fb608f1ee7c6377adaba0c15ee360579aefb74d8218ea4b3dfed9003
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963670"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716549"
 ---
 # <a name="engineering-companies-and-data-ownership-rules"></a>Reguły dotyczące firm inżynieryjnych i własności danych
 
@@ -66,3 +64,6 @@ Ponieważ firma inżynieryjna posiada dane techniczne, system ten kontroluje nas
 
     - Gdy te dokumenty są wydawane do innych firm, dokumenty są chronione przed usunięciem przez firmę operacyjną.
     - Inne firmy mogą dodawać zupełnie nowe dokumenty lokalne. Firma operacyjna posiada i obsługuje te lokalne dokumenty.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

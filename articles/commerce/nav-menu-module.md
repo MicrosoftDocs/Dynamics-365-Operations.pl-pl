@@ -2,7 +2,7 @@
 title: Moduł Menu nawigacji
 description: W tym temacie opisano moduły menu nawigacji i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 10/27/2021
+ms.date: 01/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 1af1fc03ead21150415295d83d292afe0110e5bd
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: 486f20c26f97c236dfde2cbaedd8df434fe762947a6caa1c7cc03e4d244f4d47
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109689"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6761593"
 ---
 # <a name="navigation-menu-module"></a>Moduł menu nawigacji
 
@@ -41,8 +41,8 @@ Na poniższej ilustracji pokazano przykład menu nawigacji dla witryny Fabrikam 
 |---------------------------|-----------------------|-------------|
 | Źródło                  | **Handel detaliczny**, **Ręczne tworzenie**, **Tworzenie detaliczne i ręczne** | Wartość **Detaliczna** umożliwia wyświetlanie hierarchii nawigacji kanału w menu nawigacji z poziomu modułu Commerce Headquarter. **Tworzenie ręczne** umożliwia analizę statycznych elementów menu. Ustawienie wartości **Tworzenie ręczne i detaliczne** umożliwia stosowanie kombinacji obu typów. |
 | Wyświetlanie obrazów kategorii | **Prawda** lub **Fałsz**    | Po włączeniu tej właściwości w menu nawigacji są wyświetlane obrazy kategorii zdefiniowane w module Commerce Headquarter dla każdej kategorii. Dodane do modułu Commerce Release 10.0.14. |
-| Pokaż obrazy promocyjne | **Prawda** lub **Fałsz** | Gdy ta właściwość jest włączona, promocje można konfigurować za pomocą obrazów, linków i tekstu. Ta właściwość została dodana w wersji 10.0.17 programu Commerce. |
-|Dodaj zawartość promocyjną kategorii | Tekst, obraz lub łącze | Gdy jest włączona właściwość **Pokaż promocyjne obrazy**, w menu nawigacji można dodawać tekst, obraz lub łącze jako zawartość promocyjną. |
+| Pokaż promocje | **Prawda** lub **Fałsz** | Gdy ta właściwość jest włączona, promocje można konfigurować za pomocą obrazów, linków i tekstu. Ta właściwość została dodana w wersji 10.0.17 programu Commerce. |
+| Dodaj promocje | Tekst, obraz lub łącze | Gdy jest włączona właściwość **Pokaż promocje**, w menu nawigacji można dodawać tekst, obraz lub łącze jako zawartość promocyjną. |
 | Włącz wielopoziomowe menu nawigacji | **Prawda** lub **Fałsz** | Po włączeniu tej właściwości menu nawigacji może zawierać wiele poziomów hierarchii nawigacji. Ta funkcja jest dostępna w wersji Commerce 10.0.15. |
 | Liczba poziomów | liczba całkowita | Właściwość ta definiuje liczby poziomów, które powinny być pokazywane, jeśli dla właściwości **Włącz wielopoziomowe menu nawigacji** jest ustawiona wartość **Prawda**. |
 | Statyczny element menu| Tablica wartości| Statyczne elementy menu, które kojarzą nazwę elementu menu z łączem do statycznej strony witryny. Można utworzyć elementy menu poniżej innych elementów menu. Domyślnie menu statyczne pojawia się na poziomie głównym i zostanie dołączone do hierarchii nawigacji kanału, jeśli taka istnieje. |
@@ -62,7 +62,7 @@ Aby uzyskać szczegółowe informacje na temat dodawania modułu menu nawigacji 
 
 [Moduł szlaków nawigacyjnych](add-breadcrumb.md)
 
-[Moduł selektora witryn](site-selector.md)
+[Moduł wyboru witryny](site-selector.md)
 
 [Moduł pola zakupu](add-buy-box.md)
 

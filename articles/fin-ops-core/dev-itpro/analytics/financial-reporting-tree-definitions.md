@@ -1,28 +1,26 @@
 ---
 title: Definicje drzewa raportowania w raportach finansowych
-description: Ten artykuł zawiera informacje o definicjach drzew raportowania. Definicja drzewa raportowania to składnik (blok konstrukcyjny) raportu, który pomaga określić strukturę i hierarchię organizacji.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 10/07/2019
+description: W tym artykule opisano definicje drzewa raportowania. Definicja drzewa raportowania to składnik raportu definiujący strukturę organizacji.
+author: jinniew
+ms.date: 04/01/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: roschlom
 ms.custom: 57592
 ms.assetid: 747faa47-9a23-4277-bc11-8d0a1267c3a4
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8ae024c2d791e1219c7383dc95283219a9300eac
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 92da476f64b937d339b5f0c6088b8ce722a0584938ccf2a6c6cbd39fdc15544d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682681"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6714642"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Definicje drzewa raportowania w raportach finansowych
 
@@ -54,9 +52,7 @@ Definicja drzewa raportowania zawiera kolumny opisane w poniższej tabeli.
 | Opis jednostki      | Tytuł jednostki raportowania jest wyświetlany w nagłówku lub stopce raportu po wprowadzeniu **UnitDesc** jako kodu na karcie **Nagłówki i stopki** w definicji raportu. Tytuł jest wyświetlany w opisie wiersza raportu po wprowadzeniu **UnitDesc** w komórce **Opis** w definicji wiersza. |
 | Wymiary            | Jednostka raportowania, która pobiera dane bezpośrednio z danych finansowych. Definiuje ona logiczne pozycjonowanie i długości dla konta i powiązanych segmentów. Każdy wiersz jednostki raportowania musi mieć wymiar w tej kolumnie. Wymiar można również umieścić w wierszu jednostki podsumowania (np. dla wydatków bezpośrednio związanych z tą jednostką). Jeśli wymiar zostanie wprowadzony w wierszu jednostki podsumowania, konta używane w jednostkach nadrzędnych nie powinny być używane w jednostkach podrzędnych. W przeciwnym razie może dojść do zduplikowania kwot. |
 | Definicje wierszy       | Nazwa definicji wiersza dla jednostki raportowania. Ta sama definicja wiersza jest używana do każdej jednostki w drzewie raportowania. Podczas generowania raportu definicja jest używana w każdej jednostce raportowania. Definicja wiersza może zawierać wiele łączy do wymiarów finansowych. Jeśli w drzewie raportowania określono definicję wiersza, w oknie definicji raportu na karcie **Raport** zaznacz pole wyboru **Użyj definicji wierszy z drzewa raportowania**. |
-| Łącze wiersza              | Łącze wiersza powiązane z jednostką raportowania. Celem tworzenia łączy wierszy w definicjach wierszy jest określenie wymiarów finansowych, z którymi mają zostać nawiązane połączenia. |
-| Łącze zewnętrzne         | Łącze wiersza powiązane z tą jednostką raportowania. Łącza wiersza są tworzone dla definicji wiersza w celu identyfikacji raportu, z którym ma nastąpić powiązanie. |
-| Plik zewnętrzny         | Ścieżka do pliku arkusza raportowania finansowego, z którego mają być pobierane dane. |
+| Łącze wymiarów finansowych| Łącze wymiarów finansowych do użycia dla jednostki raportowania. Celem łączy wymiarów finansowych w definicjach wierszy jest określenie wymiarów finansowych, z którymi mają zostać nawiązane połączenia. |
 | Opcje strony          | Ta kolumna kontroluje, czy szczegóły jednostki raportowania są pomijane podczas wyświetlania lub drukowania raportu. |
 | Procent akumulacji              | Wartość procentowa jednostki raportowania, która powinna być przydzielona do jednostki nadrzędnej. Wartość procentowa wprowadzona w tej kolumnie ma zastosowanie do każdego wiersza w definicji wiersza przed dodaniem wartość w wierszu do raportu nadrzędnego. Na przykład jeśli jednostka podrzędna musi być równo podzielona między dwa działy, kwoty w każdym wierszu zostaną pomnożone przez 50 procent i dopiero wtedy wartości zostaną dodane do raportów poszczególnych działów. Jedna jednostka raportowania nie może mieć dwóch jednostek nadrzędnych. Aby przydzielić kwoty z jednostki raportowania do dwóch jednostek nadrzędnych, należy utworzyć inną jednostkę raportowania z tym samym wymiarem w celu akumulacji dodatkowych 50 procent. Całe procenty należy wpisywać bez separatora dziesiętnego. Na przykład **25** reprezentuje alokację 25 procent do obiektu nadrzędnego. Jeśli dołączysz separator dziesiętny (**,25**), do obiektu nadrzędnego zostanie przydzielone 0,25%. Aby zastosować wartość procentową mniejsza niż 1%, należy w definicji raportu użyć opcji **Zezwalaj na akumulację &lt;1%**. Ta opcja jest dostępna na karcie **Opcje dodatkowe** w oknie dialogowym **Ustawienia raportu**. W celu wyświetlenia tego okna dialogowego należy użyć przycisku **Inne** na karcie **Ustawienia** w definicji raportu. |
 | Jednostka zabezpieczeń         | Ograniczenia dostępu do informacji jednostki raportowania dla użytkowników i grup. |
@@ -75,7 +71,7 @@ Aby utworzyć definicję drzewa raportowania, należy wykonać następujące kro
     | Uwzględnij/położenie znaku       | W tej sekcji jest wyświetlona lista wymiarów zdefiniowanych w danych finansowych, a także liczba znaków w najdłużej wartości zdefiniowanej dla każdego wymiaru. Zaznacz pole wyboru obok wymiaru, aby uwzględnić ten wymiar w hierarchii drzewa raportowania. |
     | Hierarchia i zakresy segmentów     | Ta sekcja pokazuje hierarchię wymiarów. Na liście można przenosić wymiary, aby zmieniać kolejność raportowania. W polach **Od wymiaru** i **Do wymiaru** można określić zakres wartości dla każdego wymiaru. Jeśli nie określisz zakresu, wszystkie wartości wymiarów są wstawiane do drzewa raportowania.<blockquote>[!NOTE] Jeśli jest używanych kilka wymiarów, w wynikach zostaną zwrócone tylko kombinacje wymiarów, które zostały opublikowane.</blockquote> |
 
-    Aby obejrzeć zrzut ekranu pokazujący przykład okna dialogowego **Wstawianie jednostek raportowania z wymiarów**, zobacz sekcję „Przykład okna dialogowego Wstawianie jednostek raportowania z wymiarów” w dalszej części tego artykułu.
+    Aby obejrzeć obraz pokazujący przykład okna dialogowego **Wstawianie jednostek raportowania z wymiarów**, zobacz sekcję „Przykład okna dialogowego Wstawianie jednostek raportowania z wymiarów” w dalszej części tego artykułu.
 
 5. Aby utworzyć dodatkowe segmenty (np. poprzez podział jednego segmentu na dwa krótsze segmenty), kliknij prawidłową lokalizację w polu **Pozycja znaku**, a następnie kliknij przycisk **Podziel segment**.
 6. Aby scalić dwa segmenty w jeden, kliknij pole dowolnego z dwóch segmentów do scalenia, a następnie kliknij przycisk **Połącz segmenty**.
@@ -115,10 +111,10 @@ Każda definicja drzewa raportowania jest wyświetlana w osobnym widoku. Dostęp
 
 W raportowaniu finansowym są używane następujące typy jednostek raportowania:
 
-- Jednostka szczegółów pobiera informacje bezpośrednio z danych finansowych, z arkusza programu Excel lub z innego arkusza raportowania finansowego.
+- Jednostka szczegółowa pobiera informacje bezpośrednio z danych finansowych.
 - Jednostka podsumowania zestawia dane z jednostek niższego poziomu.
 
-Nadrzędna jednostka raportowania jest jednostką podsumowania, która zbiera podsumowane informacje z jednostki szczegółów. Jednostka podsumowania może być zarówno jednostką szczegółów, jak i jednostką podsumowania. W związku z tym jednostka podsumowania można pobierać informacje z jednostki niższego poziomu, danych finansowych lub arkusza programu Excel. Jednostka nadrzędna może być jednostką podrzędną jednostki nadrzędnej na wyższym poziomie. Podrzędna jednostka raportowania może być jednostką szczegółów, która pobiera informacje bezpośrednio z danych finansowych lub arkusza programu Excel. Podrzędna jednostka raportowania może być również pośrednią jednostką podsumowania. Innymi słowy może być jednostką nadrzędną jednostki niższego poziomu, a równocześnie jednostką podrzędną jednostki podsumowania na wyższym poziomie. W najbardziej typowym scenariuszu jednostek raportowania jednostki nadrzędne mają pustą komórkę w kolumnie **Wymiary**, a jednostki podrzędne mają łącza do konkretnych lub wieloznacznych kombinacji wymiarów.
+Nadrzędna jednostka raportowania jest jednostką podsumowania, która zbiera podsumowane informacje z jednostki szczegółów. Jednostka podsumowania może być zarówno jednostką szczegółów, jak i jednostką podsumowania. W związku z tym jednostka podsumowania można pobierać informacje z jednostki niższego poziomu lub danych finansowych. Jednostka nadrzędna może być jednostką podrzędną jednostki nadrzędnej na wyższym poziomie. Podrzędna jednostka raportowania może być jednostką szczegółów, która pobiera informacje bezpośrednio z danych finansowych. Podrzędna jednostka raportowania może być również pośrednią jednostką podsumowania. Innymi słowy może być jednostką nadrzędną jednostki niższego poziomu, a równocześnie jednostką podrzędną jednostki podsumowania na wyższym poziomie. W najbardziej typowym scenariuszu jednostek raportowania jednostki nadrzędne mają pustą komórkę w kolumnie **Wymiary**, a jednostki podrzędne mają łącza do konkretnych lub wieloznacznych kombinacji wymiarów.
 
 ### <a name="organize-reporting-units"></a> Organizowanie jednostki raportowania
 
@@ -162,20 +158,7 @@ Aby uniemożliwić wybranym użytkownikom i grupom dostęp do jednostki raportow
 1. W Projektancie raportów otwórz definicję drzewa raportowania do zmodyfikowania.
 2. Kliknij dwukrotnie komórkę **Jednostka zabezpieczeń** dla wiersza jednostki raportowania, do którego dostęp chcesz zablokować.
 3. W oknie dialogowym **Jednostka zabezpieczeń** zaznacz nazwę i kliknij przycisk **Usuń**.
-4. Kliknij przycisk **OK**
-
-### <a name="link-to-reports"></a>Łącza do raportów
-
-Po utworzeniu kolumny **raportu** w definicji wiersza i wskazaniu raportu, który ma się znaleźć w raporcie, należy zaktualizować drzewo raportowania o połączoną kolumnę oraz informacje o raporcie. Raport można zaimportować do dowolnej jednostki w drzewie raportowania.
-
-### <a name="identify-the-report-in-a-reporting-tree"></a>Identyfikowanie raportu w drzewie raportowania
-
-1. W Projektancie raportów otwórz definicję drzewa raportowania do zmodyfikowania.
-2. W kolumnie **Definicje wierszy** informacje w komórkach bazują na informacjach wybranego wiersza, ponieważ ta sama definicja wiersza musi być używana we wszystkich jednostkach drzewa raportowania. Kliknij dwukrotnie komórkę **Definicje wierszy**, a następnie wybierz definicję wiersza zawierającą informacje o raporcie.
-3. W komórce **Łącze skoroszytu** dla jednostki raportowania wybierz nazwę łącza odpowiadającą raportowi.
-4. W komórce **Ścieżka skoroszytu lub raportu** dla jednostki raportowania wprowadź nazwę raportu lub przeglądaj w poszukiwaniu żądanego raportu.
-5. Aby określić arkusz w raporcie, wprowadź nazwę arkusza w komórce **Nazwa arkusza**.
-6. Powtórz kroki od 3 do 5 dla każdej jednostki raportowania, która powinna otrzymywać dane z raportu. Aby uniknąć nieprawidłowych danych w raporcie, upewnij się, że są wyświetlane poprawne nazwy raportów w odpowiedniej jednostce drzewa raportowania.
+4. Kliknij przycisk **OK**.
 
 ## <a name="examples"></a>Przykłady
 ### <a name="reporting-unit-structure--example-1"></a>Struktura jednostki raportowania — przykład 1
@@ -187,23 +170,23 @@ Oto struktura jednostek raportowania w poniższym drzewie raportowania:
 - Jednostki raportowania najniższego poziomu szczegółów (Home Sales, Auto Sales, Client Services i Operations) reprezentują działy w danych finansowych. Te jednostki raportowania znajdują się w zacienionym obszarze diagramu.
 - Jednostki podsumowania wyższego poziomu podsumowują informacje z jednostek szczegółów.
 
-[![ContosoEntertainmentSummaryReportStructure](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
+[![Struktura raportu zbiorczego Contoso — przykład 1.](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
 
 ### <a name="reporting-unit-structure--example-2"></a>Struktura jednostki raportowania — przykład 2
 
 Na diagramie poniżej drzewo raportowania ma strukturę organizacyjną podzieloną według funkcji biznesowych.
 
-[![summaryofallunitscontoso](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
+[![Struktura raportu zbiorczego Contoso — przykład 2.](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
 
 ### <a name="example-of-the-insert-reporting-units-from-dimensions-dialog-box"></a>Przykład okna dialogowego Wstawianie jednostek raportowania z wymiarów
 
 Ilustracja poniżej zawiera przykład okna dialogowego **Wstawianie jednostek raportowania z wymiarów**. W tym przykładzie zwracanymi wynikami są kombinacje jednostek biznesowych, centrów kosztów i działów.
 
-[![InsertReportingUnits](./media/insertreportingunits.png)](./media/insertreportingunits.png)
+[![Wstaw jednostki raportowania.](./media/insertreportingunits.png)](./media/insertreportingunits.png)
 
 Powstała definicja drzewa raportowania jest sortowana według jednostek biznesowych, następnie według centrów kosztów, a na końcu według działów. Wymiarem piątej jednostki raportowania jest **Jednostka biznesowa = \[001\], Centrum kosztu =\[\], Dział = \[022\]**. Identyfikuje on jednostkę raportowania dla kont, które są specyficzne dla jednostki biznesowej 001 i działu 022.
 
-[![ReportingTree](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
+[![Ilustracja drzewa raportowania.](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
 
 ### <a name="examples-of-data-roll-up"></a>Przykłady akumulacji danych
 
@@ -211,12 +194,15 @@ Poniższe przykłady przedstawiają informacje, które mogą być używane w def
 
 #### <a name="example-1"></a>Przykład 1
 
-[![MutliCompanyRollUp](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
+[![Wdrożenie w wielu firmach.](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
 
 #### <a name="example-2"></a>Przykład 2
 
-[![CrossCompanyDepartmentRollUp](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
+[![Wdrożenie w działach między firmami.](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Raporty finansowe](financial-reporting-intro.md)
+[Raportowanie finansowe](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

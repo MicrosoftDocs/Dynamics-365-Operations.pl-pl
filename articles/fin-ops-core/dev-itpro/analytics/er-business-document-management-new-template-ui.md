@@ -1,12 +1,11 @@
 ---
 title: Nowy interfejs użytkownika dokumentu w zarządzaniu dokumentami biznesowymi
-description: Ten temat zawiera informacje dotyczące korzystania z interfejsu użytkownika nowego dokumentu (UI) w funkcji zarządzania dokumentami biznesowymi struktury modułu raportowanie elektroniczne (ER).
+description: Ten temat zawiera informacje dotyczące korzystania z interfejsu użytkownika nowego dokumentu w funkcji zarządzania dokumentami biznesowymi struktury modułu raportowania elektronicznego.
 author: v-anamir
 manager: AnnBe
 ms.date: 05/12/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERBDWorkspace, ERBDParameters
 audience: Application User, Developer, IT Pro
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: v-anamir
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2cb6e0da4af07b9b8486bf1e5bda29523cbd08e9
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7f8099f2f6872c34c30de918a6fc5fd27bcde958
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681359"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5565717"
 ---
 # <a name="new-document-user-interface-in-business-document-management"></a>Nowy interfejs użytkownika dokumentu w zarządzaniu dokumentami biznesowymi
 
@@ -64,3 +63,6 @@ Aby włączyć tę funkcję dla wszystkich firm, należy wykonać następujące 
 Przycisk **Nowy dokument** umożliwia użytkownikom tworzenie i edytowanie szablonu w konfiguracji formatu sprawozdawczości elektronicznej (ER) dostarczonej przez innego dostawcę. W przykładzie przedstawionym w tym temacie dostawcą jest Microsoft. Kliknięcie przycisku **Nowy dokument** powoduje wyświetlenie wszystkich szablonów należących do bieżącego i innych dostawców. Po wybraniu szablonu, zostanie on otwarty do edycji. Edytowany szablon zostanie następnie zapisany w nowej konfiguracji formatu, która jest generowana automatycznie.
 
 Aby uzyskać więcej informacji, zajrzyj do omówienia [Zarządzania dokumentami biznesowymi](er-business-document-management.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,23 +1,27 @@
 ---
-# required metadata
 title: Zmiana podstawy w obliczeniach podatku ICMS-DIF dla produktów od dostawców z innych stanów
-description: 'W tym temacie opisano konfigurację obliczania typu podatku ICMS-DIF w przypadku, gdy dokument fiskalny jest odbierany w stanie Brazylijskie do Dos lub Wyspy Świętego Wsadowego (SP).'
+description: W tym temacie opisano konfigurację obliczania typu podatku ICMS-DIF w przypadku, gdy dokument fiskalny jest odbierany w stanie Brazylijskie do Dos lub Wyspy Świętego Wsadowego (SP).
 author: Kai-Cloud
 ms.date: 1/20/2022
 ms.topic: article
-ms.prod: null
-ms.technology: null
-ms.search.form: null
+ms.prod: ''
+ms.technology: ''
+ms.search.form: ''
 audience: Application user
 ms.reviewer: kfend
-ms.search.scope: 'Core, Operations'
-ms.custom: null
+ms.search.scope: Core, Operations
+ms.custom: ''
 ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2022-1-17
 ms.dyn365.ops.version: 10.0.26
+ms.openlocfilehash: 16f78b85567e6d08c588e621119513ff070bf618
+ms.sourcegitcommit: 68655c5673aef9892063e5913ffee6bfc3817387
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "8016176"
 ---
-
 # <a name="basis-change-in-icms-dif-tax-calculations-for-products-from-suppliers-in-other-states"></a>Zmiana podstawy w obliczeniach podatku ICMS-DIF dla produktów od dostawców z innych stanów
 
 W tym temacie opisano konfigurację obliczania typu podatku **ICMS-DIF** w przypadku, gdy dokument fiskalny jest odbierany w stanie Brazylijskie do Dos lub Wyspy Świętego Wsadowego (SP).

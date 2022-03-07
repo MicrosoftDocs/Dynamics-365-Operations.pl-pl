@@ -1,22 +1,26 @@
 ---
-# required metadata
 title: Konfigurowanie witryny handlu elektornicznego B2B
 description: W tym temacie opisano sposób skonfigurowania witryny handlu elektronicznego (B2B) w Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 12/03/2021
+ms.date: 04/23/2021
 ms.topic: article
-ms.prod: null
-ms.technology: null
+ms.prod: ''
+ms.technology: ''
 ms.search.form: RetailOperations
-audience: 'Application User, IT Pro'
+audience: Application User, IT Pro
 ms.reviewer: v-chgri
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: josaw
-ms.search.validFrom: '2021-01-31'
+ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
+ms.openlocfilehash: e46b04005b03a2a4c1ce50650a51ba4e02d85111
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270916"
 ---
-
 # <a name="set-up-a-b2b-e-commerce-site"></a>Konfigurowanie witryny wykorzystywanej na potrzeby handlu elektronicznego B2B
 
 [!include [banner](../../includes/banner.md)]
@@ -33,7 +37,7 @@ Witryny handlu elektronicznego typu business-to-business (B2B) zapewniają kilka
 
 Dostęp do ustawień na poziomie witryny można uzyskać w Konstruktorze witryn w **Ustawienia witryny \> Rozszerzenia**. Następujące dwa ustawienia na poziomie witryny dotyczą scenariuszy B2B:
 
-- **Włącz płatności na konta odbiorcy** — ta właściwość umożliwia użytkownikom płacenie za zamówienia przy użyciu kont odbiorcy. Dostępne wartości są **Włączone dla klientów B2B**, **Włączone dla klientów B2C**, **Włączone dla wszystkich klientów** i **Wyłączone dla wszystkich klientów**. Jeśli witryna B2B obsługuje konta odbiorców, należy wybrać opcję **Włączone dla klientów B2B**.
+- **Włącz płatności na konta odbiorcy** — ta właściwość umożliwia użytkownikom płacenie za zamówienia przy użyciu kont odbiorcy. Dostępne wartości są **Włączone dla klientów B2B**, **Włączone dla klientów B2C**, **Włączone dla wszystkich klientów** i **Wyłączone dla wszystkich klientów**. Jeśli witryna B2B obsługuje konta odbiorców, należy wybrać opcję **Włączone dla klientów B2C**.
 - **Włącz limity ilości zamówienia** — ta właściwość umożliwia ustawienie limitów liczby towarów, które można zamówić dla każdego produktu lub kategorii. Dostępne wartości są **Włączone dla klientów B2B**, **Włączone dla klientów B2C**, **Włączone dla wszystkich klientów** i **Wyłączone dla wszystkich klientów**.
 
 > [!NOTE]
@@ -302,30 +306,6 @@ Aby dodać moduł szybkiego dodawania do strony koszyka w narzędziu do tworzeni
 
 > [!NOTE] 
 > Moduł szybkiego dodawania jest dostępny od wersji Commerce 10.0.17. W przypadku aktualizacji ze starszej wersji Commerce należy ręcznie zaktualizować plik appsettings.json. Aby uzyskać instrukcje, zobacz [Aktualizacje zestawu SDK i biblioteki modułów](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
-
-## <a name="add-a-bulk-purchase-module-to-a-product-details-page"></a>Dodawanie modułu zakupów zbiorczych do strony szczegółów produktu
-
-Moduł zakupów zbiorczych na stronie szczegółów produktu (PDP) oferuje oparte na macierzy doświadczenie, które umożliwia kupującym szybkie dodawanie różnych wariantów produktu do koszyka. Gdy użytkownik witryny musi zamówić wiele wariantów tego samego produktu, eliminuje potrzebę wybierania kombinacji wymiarów produktu, definiowania ilości, dodawania wariantu do koszyka, a następnie powtarzania procesu dla innych kombinacji wymiarów produktów.
-
-Aby dodać moduł zakupów zbiorczych do strony PDP w konstruktorze witryn Commerce, należy wykonać następujące kroki.
-
-1. Przejdź do strony **Szablony** i wybierz szablon strony PDP dla witryny.
-1. Wybierz opcję **Edycja**.
-1. W gnieździe **Głównym** w module **Strony domyślnej** wybierz przycisk wielokropka (**...**), a następnie wybierz pozycję **Dodaj moduł**.
-1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Kontener** i wybierz przycisk **OK**.
-1. W gnieździe **Kontener** wybierz wielokropek (**...**), a następnie wybierz **Dodaj moduł**.
-1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Zakup zbiorczy** i wybierz przycisk **OK**.
-1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować szablon, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
-1. Przejdź do lokalizacji **Strony** i wybierz szablon strony PDP witryny.
-1. W gnieździe **Głównym** w module **Strony domyślnej** wybierz przycisk wielokropka (**...**), a następnie wybierz pozycję **Dodaj moduł**.
-1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Kontener** i wybierz przycisk **OK**.
-1. W okienku właściwości modułu **Kontener**, w obszarze **Szerokość** wybierz opcję **Wypełnij kontener**.
-1. W gnieździe **Kontener** wybierz wielokropek (**...**), a następnie wybierz **Dodaj moduł**.
-1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Zakup zbiorczy** i wybierz przycisk **OK**.
-1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować stronę, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
-
-> [!NOTE] 
-> Moduł zakupów zbiorczych jest dostępny od wersji Commerce 10.0.24. W przypadku aktualizacji ze starszej wersji Commerce należy ręcznie zaktualizować plik appsettings.json. Aby uzyskać instrukcje, zobacz [Aktualizacje zestawu SDK i biblioteki modułów](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

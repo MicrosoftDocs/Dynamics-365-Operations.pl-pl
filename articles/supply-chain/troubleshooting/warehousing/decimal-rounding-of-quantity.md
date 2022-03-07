@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: a9e0475aab452daa9e1a6f012e17a59e611010da
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: ddfac7106eb0e8b934516ca10e3950891d10910a2ccdef1868faf25812243159
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920480"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6726568"
 ---
 # <a name="decimal-rounding-of-the-physical-updating-quantity-is-incorrect"></a>Zaokrąglenie dziesiętne ilości aktualizowanej fizycznie jest niepoprawne
 
@@ -49,10 +49,10 @@ Skorzystaj z poniższej procedury, aby przejrzeć linie ładunkowe i wprowadzić
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ładunki \> Wszystkie ładunki**.
 1. Wybierz ładunek, dla których nie można wygenerować dokumentu dostawy.
-1. W okienku akcji na karcie **Wysyłka i odbiór** w grupie **Wycofaj** wybierz pozycję **Wycofaj potwierdzenie wysyłki**.
-1. Na karcie **Wiersze ładunku** wybierz wiersz ładunku dla towaru, który powoduje problem.
+1. Na pasku akcji, na zakładce  **Wysyłka i odbiór**, w grupie  **Odwróć** zaznaczamy  **Odwrócenie potwierdzenia wysyłki**.
+1. Na karcie  **Wiersze ładunku** wybierz wiersz ładunku dla pozycji, która powoduje problem.
 1. Wybierz pozycję **Zmniejsz pobraną ilość**, aby dostosować pobraną ilość.
-1. Na karcie **Szczegóły wiersza** wybierz pozycję **Zamówienie**.
+1. Na karcie  **Szczegóły wiersza** wybierz **Zamówienie**.
 1. Ustaw pole **Ilość** na ilość pobraną (czyli wartość pola **Ilość utworzona**), aby można było rozpocząć generowanie kartonu.
 
 ### <a name="review-your-load-lines-and-make-adjustments-to-ensure-that-the-unit-and-quantity-are-aligned-with-the-decimal-precision-of-the-unit"></a>Przejrzyj linie ładunkowe i dokonaj korekty, aby upewnić się, że jednostka i ilość są wyrównane z precyzją dziesiętną jednostki

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ab825227e7cd8848dbad58c58f5c6d7afc338f9c
-ms.sourcegitcommit: 7cbd53617af179a0de74aae30c149edc95e86684
+ms.openlocfilehash: b31f949304dfc9cf8723c29c1354c35ff41dbe17
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "7891960"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566702"
 ---
 # <a name="routes-and-operations"></a>Marszruty i operacje
 
@@ -223,7 +223,7 @@ Kiedy używasz tej metody, strona **Relacje operacji** staje się głównym miej
 Jeśli w ramach zapotrzebowania na zasoby dla operacji nie określisz zasobu operacyjnego ani grupy zasobów, odnośne zasoby mogą pracować z różnymi prędkościami. W związku z tym czas potrzebny na przetwarzanie operacji może się różnić. Aby rozwiązać ten problem, można użyć pola **Formuła** w relacji operacji, aby określić sposób obliczania czasu procesu. Dostępne są następujące opcje:
 
 - **Standardowy** — (Opcja domyślna) W obliczeniu są używane tylko pola z relacji operacji, a podany czas wykonywania jest mnożony przez ilość zamówienia.
-- **Zdolności produkcyjne** — Obliczanie obejmuje pole **Zdolności produkcyjne** z zasobu operacyjnego. W związku z tym czas jest zależny od zasobu. Wartość określona w zasobie operacyjnym jest zdolnościami produkcyjnymi na godzinę. **Czas procesu** jest obliczany jako **Ilość zamówienia** podzielona przez **Zdolności produkcyjne**. Wartość wydajności nie jest specyficzna dla określonej jednostki miary i dlatego nie jest konwertowana na podstawie pola **Jednostka wydajności**, które jest tylko polem opisowym i nie jest używane w obliczeniach.
+- **Zdolności produkcyjne** — Obliczanie obejmuje pole **Zdolności produkcyjne** z zasobu operacyjnego. W związku z tym czas jest zależny od zasobu. Wartość określona w zasobie operacyjnym jest zdolnościami produkcyjnymi na godzinę. **Czas procesu** jest obliczany jako **Ilość zamówienia** podzielona przez **Zdolności produkcyjne**.
 - **Partia** — Wielkość partii jest obliczana przy użyciu informacji z relacji operacji. Liczbę partii, i w związku z tym czas procesu, można następnie obliczyć na podstawie ilości zamówienia.
 - **Partia zasobów** — Ta opcja zasadniczo działa tak samo, jak opcja **Partia**. Jednak obliczanie obejmuje pole **Wielkość partii** z zasobu operacyjnego. W związku z tym czas jest zależny od zasobu.
 

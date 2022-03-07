@@ -2,11 +2,9 @@
 title: Migracja typu danych Waluta dla podwójnego zapisu
 description: W tym temacie opisano sposób zmiany liczby miejsc dziesiętnych, które podwójny zapis obsługuje dla waluty.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: 5d39bf28dba951a1483412d967c8c6fc6dbcc610
-ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.openlocfilehash: 073f89b5ae44e20d1d2e854341afaa176f9b6280
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4744382"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350942"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Migracja typu danych Waluta dla podwójnego zapisu
 
@@ -84,14 +82,17 @@ Istnieją pewne ograniczenia:
 
 Po zakończeniu migracji Administratorzy mogą skonfigurować dokładność waluty. Przejdź do **Ustawienia \> Administracja** i wybierz **Ustawienia systemowe**. Następnie na karcie **Ogólne** zmień wartość kolumny **Ustaw dokładność waluty, która jest używana do ustalania cen w całym systemie**, co pokazano na poniższej ilustracji.
 
-![Ustawienia systemowe dla waluty](media/currency-system-settings.png)
+![Ustawienia systemowe dla waluty.](media/currency-system-settings.png)
 
 ### <a name="business-management-currencies"></a>Zarządzanie firmą: waluty
 
 Jeśli precyzja waluty dla konkretnej waluty różni się od precyzji waluty używanej do ustalania cen, można ją zmienić. Przejdź do **Ustawienia \> Zarządzanie firmą**, wybierz opcję **Waluty** i wybierz walutę, która ma zostać zmieniona. Następnie w kolumnie **Dokładność waluty** należy określić żądaną liczbę miejsc dziesiętnych, jak to pokazano na poniższej ilustracji.
 
-![Ustawienia waluty dla określonego ustawienia regionalnego](media/specific-currency.png)
+![Ustawienia waluty dla określonego ustawienia regionalnego.](media/specific-currency.png)
 
 ### <a name="tables-currency-column"></a>tabele: kolumna Waluta
 
 Liczba miejsc dziesiętnych, które można skonfigurować dla określonych kolumn waluty, jest ograniczona do czterech.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

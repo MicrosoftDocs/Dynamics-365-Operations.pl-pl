@@ -1,21 +1,25 @@
 ---
-# required metadata
 title: Oceny i recenzje — często zadawane pytania
 description: Ten temat zawiera odpowiedzi na często zadawane pytania dotyczące rozwiązania do obsługi ocen i recenzji w aplikacji Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 09/02/2021
 ms.topic: article
-ms.prod: null
-ms.technology: null
+ms.prod: ''
+ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: 'Retail, Core, Operations'
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: gmohanv
-ms.search.validFrom: '2021-09-03'
+ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.22
+ms.openlocfilehash: d3642392ed2cf231f261b24428756c6e32a79f98
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674581"
 ---
-
 # <a name="ratings-and-reviews-faq"></a>Oceny i recenzje — często zadawane pytania
 
 [!include [banner](includes/banner.md)]
@@ -37,17 +41,5 @@ Aby uzyskać instrukcje włączania i wymuszania ręcznego publikowania ocen i r
 [Zgoda na korzystanie z ocen i recenzji](opt-in-ratings-reviews.md)
 
 [Włączanie ręcznego publikowania ocen i recenzji przez moderatora](manual-publish-rating-reviews.md)
-
-[Zarządzanie ocenami i recenzjami](manage-reviews.md)
-
-[Konfigurowanie ocen i recenzji](configure-ratings-reviews.md)
-
-[Synchronizacja ocen produktów](sync-product-ratings.md)
-
-[Włączanie ręcznego publikowania ocen i recenzji przez moderatora](manual-publish-rating-reviews.md)
-
-[Importowanie i eksportowanie klasyfikacji oraz przeglądów](import-export-reviews.md)
-
-[Konfigurowanie uwierzytelniania usługa-usługa](service-to-service-auth.md)
 
 [Jeśli nie jest włączone rozwiązanie ocen i recenzji, na stronach wyników wyszukiwania i kategorii wyświetlana jest funkcja poprawiania ocen](troubleshoot/hide-ratings-refiner.md)

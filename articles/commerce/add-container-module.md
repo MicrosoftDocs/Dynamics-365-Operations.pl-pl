@@ -1,36 +1,31 @@
 ---
 title: Moduł kontenera
-description: W tym temacie opisano moduły kontenerów i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
+description: W tym temacie opisano moduły kontenera i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 9bb2c7d56184d009492b4aa839a3546160ad342f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 752d0ddc6f666a5d96a2593c8c246a82dc7e1de2fd4bd2356a275222d7abec29
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414877"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6715447"
 ---
 # <a name="container-module"></a>Moduł kontenera
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano moduły kontenerów i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
+W tym temacie opisano moduły kontenera i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 
 Moduł kontenerowy to moduł, który obsługuje inne moduły w nim zawarte. Podstawowym celem modułu kontenera jest zdefiniowanie, za pomocą ustawionych dla niego właściwości, układu modułów, które zawiera. Na przykład moduły te mogą pojawiać się obok siebie w układzie dwukolumnowym, trzykolumnowym, czterokolumnowym lub sześciokolumnowym. Mogą być także ograniczone do szerokości kontenera lub mogą wypełniać ekran. Nagłówek można również dodać do każdego modułu kontenerów.
 
@@ -47,7 +42,7 @@ Trzy standardowe typy modułów kontenerowych są obsługiwane: kontener, konten
 
 Poniższy obraz przedstawia przykład modułu kontenera zawierającego moduł karuzeli w konstruktorze witryn Commerce. W tym przykładzie właściwość **Szerokość** modułu kontenera jest ustawiona na **Wypełnij ekran**.
 
-![Przykład modułu kontenera](./media/ecommerce-container.PNG)
+![Przykład modułu kontenera.](./media/ecommerce-container.PNG)
 
 ## <a name="container-module-properties"></a>Właściwości modułu kontenera
 
@@ -142,3 +137,6 @@ Aby dodać moduł kontenera do nowej strony i ustawić wymagane właściwości, 
 [Moduł nagłówka](author-header-module.md)
 
 [Moduł stopki](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

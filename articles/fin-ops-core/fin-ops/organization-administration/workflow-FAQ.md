@@ -2,11 +2,9 @@
 title: 'Przepływ pracy: często zadawane pytania'
 description: W tym temacie znajdują się odpowiedzi na często zadawane pytania dotyczące systemu przepływu pracy.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 09/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -14,16 +12,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 58aa4a6d313a78e88c2858637d6de167895ec534
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: fe11942ca41dd8c0ca23d94006569c50a4501a52
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797398"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065587"
 ---
 # <a name="workflow-faq"></a>Przepływ pracy — często zadawane pytania
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 W tym temacie znajdują się odpowiedzi na często zadawane pytania dotyczące systemu przepływu pracy.
 
@@ -47,9 +48,9 @@ Poniżej znajduje się kilka kluczowych obszarów, w których należy pamiętać
     - W przyszłej aktualizacji zostanie dodany komunikat centrum akcji, dzięki czemu użytkownikowi zostanie przypisany element pracy przepływu pracy. 
 - Dodawanie powiadomień do przepływów pracy
     - Komunikaty centrum akcji mogą być tworzone dla określonych użytkowników, takich jak wiadomość utworzona z przepływu pracy w X ++.
-    - [Przepływy pracy mają zdarzenia biznesowe](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow), których odbiorca może wywoływać w celu wyzwolenia Przepływów, które mają wyszukiwane przez nich powiadomienia.   
+    - [Przepływy pracy mają zdarzenia biznesowe](../../dev-itpro/business-events/business-events-workflow.md), których odbiorca może wywoływać w celu wyzwolenia Przepływów, które mają wyszukiwane przez nich powiadomienia.   
 
-Podsumowując, jeśli użytkownik nie otrzyma odpowiedniego powiadomienia z centrum akcji, gdy ma przypisany element pracy przepływu pracy, będzie korzystać ze [zdarzeń biznesowych przepływu pracy](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) w Microsoft Power Automate w celu wprowadzenia dodatkowych lub innych powiadomień.
+Podsumowując, jeśli użytkownik nie otrzyma odpowiedniego powiadomienia z centrum akcji, gdy ma przypisany element pracy przepływu pracy, będzie korzystać [ze zdarzeń biznesowych przepływu pracy](../../dev-itpro/business-events/business-events-workflow.md) w Microsoft Power Automate w celu wprowadzenia dodatkowych lub różnych powiadomień.
 
 ## <a name="why-is-workflow-editor-not-able-to-start-under-ad-fs"></a>Dlaczego Edytor przepływu pracy nie może być uruchomiony w programie AD FS?
 Podczas uruchamiania w usługach Active Directory Federation Services (AD FS) w uaktualnionym środowisku, edytor przepływu pracy może mieć problemy z uruchomieniem. Jeśli tak, upewnij się, że adres URL „https://dynamicsaxworkfloweditor/” jest dodawany do właściwości **Microsoft Dynamics 365 for Operations (Lokalne — Przepływ pracy — Aplikacja natywna)** w ustawieniach usługi ADFS.
@@ -59,3 +60,6 @@ Domyślna wartość pola **Liczba elementów przepływu pracy przypadająca na p
 
 ## <a name="what-is-the-workflow-enhanced-error-feature"></a>Co to jest funkcja błędów rozszerzonych przepływu pracy?
 Funkcja błędów rozszerzonych przepływu pracy w wersji 10.0.13 dodaje kody błędów w celu odróżnienia różnych klas błędów przepływu pracy. Komunikaty o błędach raportowane są głównie pod kątem mniejszych różnic w celu ich wyraźniejszego wyróżnienia.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

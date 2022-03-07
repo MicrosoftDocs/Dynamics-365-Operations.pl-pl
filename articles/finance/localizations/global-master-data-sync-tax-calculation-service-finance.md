@@ -1,23 +1,27 @@
 ---
-# required metadata
 title: Synchronizuj ustawienia podatku z usługi obliczania podatku z Dynamics 365 Finance
-description: 'W tym temacie wyjaśniono, jak synchronizować dane główne ustawień podatków z usługi obliczania podatku z Microsoft Dynamics 365 Finance.'
+description: W tym temacie wyjaśniono, jak synchronizować dane główne ustawień podatków z usługi obliczania podatku z Microsoft Dynamics 365 Finance.
 author: wangchen
 ms.date: 01/05/2022
 ms.topic: article
-ms.prod: null
-ms.technology: null
-ms.search.form: 'TaxIntegration, TaxServiceParameters'
+ms.prod: ''
+ms.technology: ''
+ms.search.form: TaxIntegration, TaxServiceParameters
 audience: Application user
 ms.reviewer: kfend
-ms.search.scope: 'Core, Operations'
+ms.search.scope: Core, Operations
 ms.custom: intro-internal
 ms.search.region: Global
 ms.author: wangchen
-ms.search.validFrom: '2021-04-01'
+ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.21
+ms.openlocfilehash: d5d994934014a146f825431cb53dfbef8fe20bc8
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7965144"
 ---
-
 # <a name="sync-the-tax-setup-from-the-tax-calculation-service-to-dynamics-365-finance"></a>Synchronizuj ustawienia podatku z usługi obliczania podatku z Dynamics 365 Finance
 
 [!include [banner](../includes/banner.md)]

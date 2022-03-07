@@ -1,23 +1,29 @@
 ---
-# required metadata
 title: Używanie usługi fakturowania elektronicznego do importowania faktur od dostawców
 description: Ten temat zawiera informacje dotyczące importowania faktur od dostawców przy użyciu usługi fakturowania elektronicznego.
 author: gionoder
-ms.date: 09/03/2021
+ms.date: 08/03/2021
 ms.topic: article
-ms.prod: null
-ms.technology: null
-ms.search.form: null
+ms.prod: ''
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: intro-internal
-ms.assetid: null
+ms.custom:
+- "97423"
+- intro-internal
+ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
-ms.search.validFrom: '2020-07-08'
+ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
+ms.openlocfilehash: 434bf1f6a5a727a71592493b85ab166cbeff2f0980c2c968c99973a03f4dc660
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6751259"
 ---
-
 # <a name="use-the-electronic-invoicing-service-to-import-vendor-invoices"></a>Używanie usługi fakturowania elektronicznego do importowania faktur od dostawców
 
 [!include [banner](../includes/banner.md)]
@@ -39,21 +45,13 @@ Skonfiguruj kanał konta e-mail, jeśli utworzona funkcja fakturowania elektroni
 
 1. W RCS wybierz utworzoną funkcję fakturowania elektronicznego. Upewnij się, że wybierzesz wersję o stanie **Wersja robocza**.
 2. Na karcie **Konfiguracja** w siatce wybierz konfigurację funkcji, a następnie wybierz pozycję **Edytuj**.
-3. Na karcie **Kanał danych** w grupie pól **Parametry** w polu **Kanał danych** wprowadź nazwę kanału. Nazwa kanału nie może mieć więcej niż dziesięć znaków.
-4. W polu **Adres serwera** wprowadź dostawcę konta e-mail. Na przykład adres serwera dla **https://outlook.live.com/** to **imap-mail.outlook.com**.
-5. W polu **Port serwera** wprowadź port używany przez dostawcę konta e-mail. Na przykład port serwera dla **https://outlook.live.com/** to **993**.
-6. W polu **Wpis tajny nazwy użytkownika** wprowadź nazwę wpisu tajnego klucza, który zawiera identyfikator konta użytkownika poczty e-mail. Ten klucz tajny musi zostać utworzony w usłudze Azure Key i skonfigurowany w środowisku usług. 
-7. W polu **Wpis tajny hasła użytkownika** wprowadź nazwę wpisu tajnego klucza, który zawiera hasło konta użytkownika poczty e-mail.
-8. Opcjonalnie — wprowadź wartości w polach **Z filtru**, **Filtr tematu** i **Filtr daty**.
-9. Wprowadź nazw folderów skrzynki poczty, w których mają być wiadomości e-mail:
-
-    - Zaimportowano z: **Folder główny**
-    - Zapisane po pomyślnym przetworzeniu: **Folder archiwum**
-    - Zapisane po nieudanym przetwarzaniu: **Folder błędów**, nie trzeba tworzyć tych folderów w skrzynce pocztowej. Foldery są tworzone automatycznie po pierwszym zaimportowaniu i przetworzeniu faktury elektronicznej. 
-   
-10. W grupie pól **Filtr załączników** dodaj informacje o filtrowaniu plików. Przetwarzane są tylko załączniki spełniające kryteria zdefiniowanego filtru. Na przykład można skonfigurować plik „\*.xml” dla załączników z rozszerzeniem XML. Nazwa załącznika jest używana w aplikacji Dynamics 365 Finance lub Dynamics 365 Supply Chain Management podczas konfiguracji. 
-11. W razie potrzeby na karcie **Reguły możliwości zastosowania** przejrzyj i zaktualizuj kryteria. Pole **Kanał** musi mieć identyczną wartość jak podana wcześniej wartość **Kanał danych**. Aby uzyskać więcej informacji, zobacz [Reguły możliwości zastosowania](e-invoicing-configuration-rcs.md#applicability-rules).
-12. Wybierz przycisk **Zapisz** i zamknij stronę.
+3. Na karcie **Kanał danych** w grupie pól **Parametry** wybierz **adres serwera** i wprowadź dostawcę konta e-mail.
+4. Wybierz **Port serwera** i wprowadź port używany przez dostawcę konta e-mail.
+5. Wybierz **Wpis tajny nazwy użytkownika** i wprowadź nazwę wpisu tajnego klucza, który zawiera identyfikator konta użytkownika poczty e-mail.
+6. Wybierz **Wpis tajny hasła użytkownika** i wprowadź nazwę wpisu tajnego klucza, który zawiera identyfikator konta użytkownika poczty e-mail.
+7. Wybierz **filtr tematu**. Przejrzyj i zaktualizuj ciąg znaków zawierający domyślny temat wiadomości e-mail, aby zidentyfikować wiadomość e-mail zawierającą elektroniczną fakturę sprzedawcy do zaimportowania.
+8. W razie potrzeby na karcie **Reguły możliwości zastosowania** przejrzyj i zaktualizuj kryteria. Aby uzyskać więcej informacji, zobacz [Reguły możliwości zastosowania](e-invoicing-configuration-rcs.md#applicability-rules).
+9. Wybierz przycisk **Zapisz** i zamknij stronę.
 
 ### <a name="configure-a-microsoft-sharepoint-channel"></a>Konfigurowanie kanału Microsoft SharePoint
 
@@ -73,10 +71,10 @@ Skonfiguruj kanał Microsoft SharePoint, jeśli funkcja fakturowania elektronicz
 
 Aby wdrożyć funkcję fakturowania elektronicznego w środowisku usługi, zobacz temat [Wdrożenie funkcji elektronicznego fakturowania do środowiska serwisowego](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment).
 
-## <a name="set-up-vendor-invoice-import-in-finance-or-supply-chain-management"></a>Skonfiguruj import faktur dostawców w aplikacji Finance lub Supply Chain Management
+## <a name="set-up-vendor-invoice-import-in-finance-and-supply-chain-management"></a>Skonfiguruj import faktur dostawców w programie Finance i Supply Chain Management
 Aby skonfigurować różne typy importowania faktur od dostawców, wykonaj kroki opisane w poniższych dwóch sekcjach.
 
-### <a name="import-brazilian-nf-e-from-email"></a>Import brazylijskiego NF-e z poczty e-mail
+### <a name="import-vendor-invoices-from-email"></a>Importowanie faktur od dostawców z wiadomości e-mail
 
 1. Zaloguj się do środowiska Finance lub Supply Chain Management i sprawdź, czy jesteś we właściwej firmie.
 2. Przejdź do **Administrowanie organizacją** > **Konfiguracja** > **Parametry dokumentu elektronicznego**.
@@ -100,43 +98,30 @@ Aby skonfigurować różne typy importowania faktur od dostawców, wykonaj kroki
 ### <a name="import-peppol-electronic-vendor-invoices"></a>Import elektronicznych faktur dostawców PEPPOL
 
 1. W obszarze roboczym **Raportowanie elektroniczne** wybierz kafelek **Konfiguracje raportowania**.
-2. Wybierz opcję **Model kontekstu faktury dla odbiorcy**, a następnie wybierz pozycję **Utwórz konfigurację** > **Na podstawie nazwy: Model kontekstu faktury dla odbiorcy, Microsoft**, aby utworzyć konfigurację pochodną.
-3. W obszarze wersji **próbnej** wybierz pozycję **Projektant**, a w drzewie **modelu danych** wybierz pozycję **Mapuj model na źródła danych**.
-4. W drzewie **definicji** wybierz pozycję **DataChannel**, a następnie wybierz pozycję **Projektant**.
-5. W drzewie **Źródła danych** rozwiń kontener **$Context\_Channel**. W polu **Wartość** wybierz pozycję **Edytuj** i wprowadź nazwę kanału danych. Jest to nazwa kanału podana w konfiguracji kanału danych dla funkcji Fakturowanie elektroniczne w RCS. 
+2. Wybierz **Model kontekstowy faktury klienta** i utwórz konfigurację pochodną.
+3. W **wersji roboczej** wybierz pozycję **Projektant**.
+4. W drzewie **modeli danych** wybierz pozycję **Faktura dla odbiorcy**, a następnie wybierz opcję **Mapuj model na źródła danych**.
+5. W drzewie **definicji** wybierz pozycję **CustomerInvoice**, a następnie wybierz pozycję **Projektant**.
+6. W drzewku **Źródła danych** wybierz **Kontekst\_Kanał**. W polu **Wartość** wybierz **PEPPOL**. Jest to nazwa kanału podana w konfiguracji kanału danych dla funkcji Fakturowanie elektroniczne w RCS. 
 7. Wybierz przycisk **Zapisz** i zamknij stronę.
 8. Zamknij stronę.
-9. Wybierz konfigurację pochodną utworzoną właśnie w **modelu kontekstu faktury dla odbiorcy**, a następnie na skróconej karcie **Wersje** wybierz pozycję **Zmień stan** > **Zakończone**.
+9. Wybierz **model kontekstu faktury dla odbiorcy** i na skróconej karcie **Wersje** wybierz pozycję **Zmień stan** > **Zakończone**.
 10. Przejdź do pola **Ustawienia administrowania organizacją** > **Ustawienia** > **Parametry dokumentu elektronicznego** i na karcie **Funkcje** upewnij się, że wybrano globalną fakturę elektroniczną **PEPPOL Globalne faktury elektroniczne**. 
 11. Na karcie **Kanały zewnętrzne**, w grupie pól **Kanały** wybierz opcję **Dodaj**.
-12. W polu **Kanał** wprowadź nazwę kanału danych, a w polu **Opis** wprowadź opis.
-13. W polu **Firma** wybierz firmę. 
-14. W polu **Kontekst dokumentu** wybierz nową pochodną konfigurację z pola **modelu kontekstu faktury dla odbiorcy**. Opis mapowania powinien brzmieć **Kontekst kanału danych**.
-15. W grupie pól **Importowanie źródeł** wybierz pozycję **Dodaj**.
-16. W polu **Nazwa** wprowadź **nazwę filtru załączników**, a w polu **Nazwa encji danych** wybierz pozycję **Nagłówek faktury od dostawcy**.
-17. W polu **Mapowanie modelu** wybierz pozycję **Import faktury od dostawcy — importuj fakturę od dostawcy**.
-18. Kliknij przycisk **Zapisz** i zamknij stronę.
+12. W polu **Kanał** wprowadź **PEPPOL**. W polu **Opis wprowadź** opis.
+13. W polu **Firma** wybierz firmę. W polu **Kontekst dokumentu** wybierz opcję **Kontekst faktury dla klienta — kontekst dokumentu fiskalnego**.
+14. Wybierz przycisk **Zapisz** i zamknij stronę.
 
 
 ## <a name="receive-electronic-invoices"></a>Odbieranie faktur elektronicznych
-
-Usługa fakturowania elektronicznego wykonuje dwa kroki podczas importowania faktur z kanałów danych:
-
-1. Uzyskuje dostęp do skrzynki pocztowej i odczytywania wiadomości e-mail.
-2. Przetwarza wiadomości e-mail. 
-    
-Aby wykonać te dwa kroki, klient powinien wywołać usługę ręcznie dla każdego kroku. Zaleca się jednak skonfigurowanie przetwarzania wsadowego w celu odbierania dokumentów elektronicznych.
-
 Aby otrzymać faktury elektroniczne, należy wykonać następujące czynności:
 
 1. Przejdź do **Administrowanie organizacją** > **Okresowe** > **Dokumenty elektroniczne** > **Odbieraj dokumenty elektroniczne**.
 2. Wybierz przycisk **OK** i zamknij stronę.
 
-
 ## <a name="view-receive-logs-for-electronic-invoices"></a>Wyświetlanie dzienników odbioru faktur elektronicznych
 
 Aby wyświetlić dzienniki odbierania faktur elektronicznych, przejdź do **Zarządzanie organizacją** > **Okresowe** > **Dokumenty elektroniczne** > **Elektroniczny rejestr odbioru dokumentów**.
-Jeśli nie widać pomyślnie przetworzonych faktur, usuń filtr tabeli.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

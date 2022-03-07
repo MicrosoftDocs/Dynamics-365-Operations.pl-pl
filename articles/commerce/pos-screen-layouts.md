@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailTillLayout
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 90573
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 2a6fdbc957a50adba38627bc37622c17ab4be419
-ms.sourcegitcommit: 510ca8b14d8b5334e50aca1b15d636c65fcc9888
+ms.openlocfilehash: 521fbd2c73adca1db38ba7258abf183f7350b109
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4415073"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5231303"
 ---
 # <a name="pos-user-interface-visual-configurations"></a>Konfiguracje wizualne interfejsu użytkownika punktu sprzedaży
 
@@ -117,6 +116,9 @@ W kompaktowych wersjach układów aplikacji POS siatki przycisków są układane
 
 ![Siatka przycisków w układzie kompaktowym](../commerce/media/Compact-View-Button-Grids.png)
 
+> [!NOTE]
+> Rozmiary przycisków w projektancie będą skalowane w celu dopasowania do rozmiaru okna, dlatego mogą nie odzwierciedlać dokładnie rzeczywistych przycisków renderowanych w punkcie sprzedaży. Aby najlepiej zasymulować układ siatki przycisków, dostosuj okna projektanta do tego samego rozmiaru co POS.
+
 ### <a name="images"></a>Obrazy
 
 W każdym rozmiarze układu ekranu można określić obrazy, które mają się znaleźć w interfejsie użytkownika aplikacji POS. W pełnowymiarowych układach aplikacji POS można określić jeden obraz dla ekranu powitalnego. Obraz ten jest wyświetlany jako pierwszy element interfejsu użytkownika po lewej stronie. Na ekranie **Transakcja** obrazy mogą pełnić rolę obrazów kart lub logo. W kompaktowych układach aplikacji POS te obrazy nie są używane.
@@ -205,3 +207,6 @@ Projektant siatki przycisków pozwala konfigurować siatki przycisków, których
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Instalowanie projektanta układów aplikacji Retail Point of Sale (POS)](install-pos-layout-designer.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

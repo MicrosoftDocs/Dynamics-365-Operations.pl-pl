@@ -2,11 +2,9 @@
 title: Nowości i zmiany w aplikacji Dynamics AX w wersji 7.0.1 (maj 2016)
 description: W tym artykule opisano nowe oraz zmienione funkcje dostępne w aplikacji Microsoft Dynamics AX w wersji 7.0.1. Ta wersja została wydana w maju 2016 r. i ma numer kompilacji 7.0.1265.23014.
 author: sericks007
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 17067ff534e0e3f4636d7a307563128db55cf2ba
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: c4d762a6750a295b91a1d146b7bf0ae750e2e9bd
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797171"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923196"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-application-version-701-may-2016"></a>Nowości i zmiany w aplikacji Dynamics AX w wersji 7.0.1 (maj 2016)
 
@@ -78,7 +76,7 @@ W tym artykule opisano nowe oraz zmienione funkcje dostępne w aplikacji Microso
 </tr>
 <tr>
 <td>Obsługa BOM zawierających towary o różnych wymiarach produktów w tym samym wierszu.</td>
-<td>Podczas używania jednego lub wielu wymiarów produktu w produkcji można mieć sytuacje, gdy chcesz wytworzyć towar oparty na innym wariancie tego samego towaru. Aby uzyskać więcej informacji, zobacz <a href="https://blogs.msdn.microsoft.com/axmfg/2015/12/22/support-for-boms-that-includes-items-with-different-product-dimensions-of-the-same-item/">ten blog</a>.</td>
+<td>Podczas używania jednego lub wielu wymiarów produktu w produkcji można mieć sytuacje, gdy chcesz wytworzyć towar oparty na innym wariancie tego samego towaru. Aby uzyskać więcej informacji, zobacz <a href="/archive/blogs/axmfg/support-for-boms-that-includes-items-with-different-product-dimensions-of-the-same-item">ten blog</a>.</td>
 </tr>
 <tr>
 <td>Zlecenia produkcyjne ze strukturami rekurencyjnymi na pierwszym poziomie ich BOM są wykluczone z obliczeń poziomu BOM w planowania zasobów materiałowych.</td>
@@ -106,3 +104,6 @@ W tym artykule opisano nowe oraz zmienione funkcje dostępne w aplikacji Microso
 [Nowości i zmiany w rozwiązaniu Finance and Operations — strona główna](whats-new-changed.md)
 
 [Nowe lub zaktualizowane przewodniki po zadaniach (maj 2016 r.)](new-updated-task-guides-available-may-2016.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

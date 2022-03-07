@@ -2,16 +2,13 @@
 title: Dodawanie logo
 description: W tym temacie opisano, jak dodać logo do witryny w Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-manager: AnnBe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,20 +16,18 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f15680deb0eab763ba68f2897139c915d1f8a6a3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 583462755838e51b4c988b8da057dbeeee773e0b
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414889"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964586"
 ---
 # <a name="add-a-logo"></a>Dodawanie logo
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano, jak dodać logo do witryny w Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 Podczas kompilowania witryny jedną z pierwszych rzeczy, którą prawdopodobnie będzie zrobić, będzie dodanie logo firmy lub marki do nagłówka witryny. Biblioteka modułów online Dynamics 365 Commerce oferuje moduł, który ułatwia to zadanie.
 
@@ -66,11 +61,12 @@ Po opublikowaniu zaktualizowanego fragmentu nagłówka wszystkie strony witryny,
 
 [Dodawanie ikony favicon](add-favicon.md)
 
-[Dodawanie wiadomości powitalnej](add-welcome-message.md)
-
 [Dodawanie powiadomienia o prawach autorskich](add-copyright-notice.md)
 
 [Dodawanie języków do witryny](add-languages-to-site.md)
 
 [Dodawanie kodu skryptu do stron witryny w celu obsługi telemetrii](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

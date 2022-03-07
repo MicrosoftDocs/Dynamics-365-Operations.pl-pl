@@ -1,7 +1,7 @@
 ---
 title: Przykładowe czeki od dostawców w raportowaniu elektronicznym
 description: Ten temat zawiera ogólne informacje o używaniu przykładowych formatów czeków w module Raportowanie elektroniczne.
-author: sunfzam
+author: ShylaThompson
 ms.date: 06/14/2017
 ms.topic: article
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 2e1aa349b505713d0502aa90ddd5c3caff1f083c
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: a48a20939b346b2d8536128107a730761b13f71c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595186"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5820720"
 ---
 # <a name="electronic-reporting-sample-vendor-checks"></a>Przykładowe czeki od dostawców w raportowaniu elektronicznym
 
@@ -34,13 +34,13 @@ Microsoft Dynamics 365 Finance zawiera przykładowy formularz, w którym czek zn
 
 ## <a name="what-do-i-have-to-set-up"></a>Co trzeba skonfigurować?
 
-- Aby możliwe było drukowanie czeków przy użyciu modułu ER, co najmniej jedna aktywna konfiguracja czeku musi zostać zaimportowana do konfiguracji ER. Instrukcje znajdują się w temacie [Pobieranie konfiguracji modułu Raportowanie elektroniczne z usługi Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+- Aby możliwe było drukowanie czeków przy użyciu modułu ER, co najmniej jedna aktywna konfiguracja czeku musi zostać zaimportowana do konfiguracji ER. Instrukcje znajdują się w temacie [Pobieranie konfiguracji modułu Raportowanie elektroniczne z usługi Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 - Podczas konfigurowania czeków w module Zarządzanie gotówką i bankami dla rachunku bankowego zaznacz pole wyboru **Ogólny elektroniczny format eksportu**, a następnie wybierz odpowiedni format czeku jako konfigurację formatu eksportu.
 - Ponadto należy określić liczbę wierszy pokwitowania, które zostaną wydrukowane na przekazie. Pamiętaj, aby przy obliczaniu tej liczby uwzględnić wiersze nagłówka. W dwóch przykładowych formatach czeku zaleca się, aby było 17 wierszy pokwitowania. Jednak ta liczba będzie się różnić w zależności od wzorów blankietów czeków i sterowników drukarki.
 - Zalecamy wydrukowanie testowego czeku w celu sprawdzania poprawności jego układu. Aby wydrukować czek testowy, zaznacz opcję **Drukowanie testu**. Przykładowe formaty czeków działają najlepiej, gdy w zaawansowanych właściwościach drukarki dla programu Microsoft Excel w opcji **Marginesy** jest ustawiona wartość **Brak**. Po wygenerowaniu testowego czeku włącz edytowanie danych wyjściowych programu Excel i skonfiguruj układ strony tak, aby wszystkie marginesy miały ustawioną wartość **0** (zero). Porównaj kopię testową czeku z używanymi blankietami czeków i koryguj ustawienia, aż osiągniesz zadowalające wyrównanie.
 - Podczas generowania płatności dla skonfigurowanego konta bankowego w arkuszu płatności czeki zostaną wydrukowanie zgodnie z podanym formatem.
 
-Aby uzyskać więcej informacji, zobacz [Modyfikowanie formatu raportowania elektronicznego](../../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md).
+Aby uzyskać więcej informacji, zobacz [Modyfikowanie formatu raportowania elektronicznego](../../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

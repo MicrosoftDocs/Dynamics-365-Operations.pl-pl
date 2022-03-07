@@ -1,12 +1,11 @@
 ---
-# required metadata
 title: Dodaj typy kwot płatności
-description: 'W tym temacie wyjaśniono, jak skonfigurować rodzaje kwot płatności w leasingu aktywów.'
+description: W tym temacie wyjaśniono, jak skonfigurować rodzaje kwot płatności w leasingu aktywów.
 author: moaamer
 ms.date: 01/11/2022
 ms.topic: article
-ms.prod: null
-ms.technology: null
+ms.prod: ''
+ms.technology: ''
 ms.search.form: AssetLeaseIndexRevaluation
 audience: Application User
 ms.reviewer: twheeloc
@@ -14,10 +13,15 @@ ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
-ms.search.validFrom: '2020-10-28'
+ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
+ms.openlocfilehash: 037afa458277a3a07bcb937c6ec4d961d0dd5ca9
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968326"
 ---
-
 # <a name="add-payment-amount-types"></a>Dodaj typy kwot płatności
 
 [!include [banner](../includes/banner.md)]

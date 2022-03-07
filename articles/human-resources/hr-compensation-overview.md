@@ -1,33 +1,34 @@
 ---
 title: Plany wynagrodzeń
-description: Menedżerowie ds. wynagrodzeń i świadczeń mogą za pomocą modułu Zarządzanie wynagrodzeniami obsługiwać i przetwarzać plany wynagrodzeń o stałej i zmiennej wysokości dla pracowników organizacji.
-author: andreabichsel
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
+description: W tym temacie opisano, jak używać zarządzania wynagrodzeniami do zarządzania i przetwarzania planów wynagrodzeń.
+author: twheeloc
+ms.date: 08/25/2021
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HcmCompensationLevel, HRCCompGrid, HRMCompFixedAction, HRMCompFixedBudget, HRMCompFixedPlanTable, HcmCompensationWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
-ms.custom: 7521
+ms.search.scope: Human Resources
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: b6dd163b0e956624eb57fa031b918a94609f9cfa
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7571f220780ca383f57338bb69505cc68a741877
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420026"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066907"
 ---
 # <a name="compensation-plans"></a>Plany wynagrodzeń
 
-Menedżerowie ds. wynagrodzeń i świadczeń mogą za pomocą modułu Zarządzanie wynagrodzeniami obsługiwać i przetwarzać plany wynagrodzeń o stałej i zmiennej wysokości dla pracowników organizacji.
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Menedżerowie ds. wynagrodzeń i świadczeń mogą za pomocą modułu **Zarządzanie wynagrodzeniami** obsługiwać i przetwarzać plany wynagrodzeń o stałej i zmiennej wysokości dla pracowników organizacji.
 
 ### <a name="introduction"></a>Wprowadzenie
 
@@ -44,7 +45,7 @@ W poniższej tabeli wymieniono składniki procesu wynagrodzenia, który może by
 <thead>
 <tr class="header">
 <th>Składnik</th>
-<th>Więcej informacji...</th>
+<th>Więcej informacji</th>
 </tr>
 </thead>
 <tbody>
@@ -90,10 +91,10 @@ W poniższej tabeli wymieniono składniki procesu wynagrodzenia, który może by
 </tr>
 <tr class="even">
 <td>Punkt kontrolny</td>
-<td>Punkt kontrolny wskazuje idealną stawkę płacową dla wszystkich pracowników, którym przypisano dany poziom wynagrodzeń. W przypadku struktur z kategoriami wynagrodzeń punktami kontrolnymi są zazwyczaj punkty centralne zakresu. Punkty kontrolne są rzadko używane odnośnie do struktur pasmowych systemów wynagrodzeń. Punkt kontrolny stałych wynagrodzeń można określić w formularzu systemów stałych wynagrodzeń.</td>
+<td>Punkt kontrolny wskazuje idealną stawkę płacową dla wszystkich pracowników, którym przypisano dany poziom wynagrodzeń. W przypadku struktur z kategoriami wynagrodzeń punktami kontrolnymi są zazwyczaj punkty centralne zakresu. Punkty kontrolne są rzadko używane odnośnie do struktur pasmowych systemów wynagrodzeń. Punkt kontrolny stałych wynagrodzeń można określić na stronie **systemów stałych wynagrodzeń**.</td>
 </tr>
 <tr class="odd">
-<td>Funkcje stanowisk</td>
+<td>Funkcje posad</td>
 <td>Funkcje stanowisk są używane do klasyfikowania i filtrowania systemów wynagrodzeń dla określonych zadań.</td>
 </tr>
 <tr class="even">
@@ -122,8 +123,7 @@ W poniższej tabeli wymieniono składniki procesu wynagrodzenia, który może by
 ## <a name="process-events"></a>Zdarzenia procesowe
 Zdarzenie procesowe oblicza wysokość wynagrodzenia w danym okresie dla wszystkich pracowników objętych co najmniej jednym stałym lub zmiennym planem wynagrodzeń. Zdarzenie procesu można uruchamiać wielokrotnie, aby na przykład testować lub aktualizować obliczone wyniki wynagrodzeń.
 
-<a name="compensation-events"></a>Wynagrodzenie — zdarzenia
--------------------
+## <a name="compensation-events"></a>Wynagrodzenie — zdarzenia
 
 Po każdym uruchomieniu procesu jest tworzone zdarzenie dotyczące wynagrodzenia.  Zdarzenie dotyczące wynagrodzenia zawiera wyniki procesu wynagrodzenia dla każdego pracownika uwzględnionego w zdarzeniu tego procesu.  Jeśli obliczenia są poprawne, można załadować zdarzenie związane z wynagrodzeniem w celu aktualizacji rekordów wynagrodzeń dla pracowników, których dotyczą zdarzenia procesu.
 
@@ -132,3 +132,6 @@ Po uruchomieniu zdarzenia procesowego może zalecić korekty podwyżki uznaniowe
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

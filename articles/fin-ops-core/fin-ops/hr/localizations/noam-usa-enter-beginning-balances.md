@@ -1,12 +1,10 @@
 ---
 title: Wprowadzanie sald początkowych listy płac
-description: W tym temacie opisano kroki wprowadzania sald początkowych dla kodów zarobków, potrąceń, świadczeń i podatków. Informacje te są przydatne dla partnerów, którzy chcą zmigrować lub przenieść dane do nowej implementacji modułu Lista płac z innego systemu.
+description: W tym temacie opisano kroki wprowadzania sald początkowych dla kodów zarobków, potrąceń, świadczeń i podatków.
 author: andreabichsel
-manager: AnnBe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8443bc5c63a90d80757ab4b7507502497c2aaa69
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 0a5529e3268727dce022daebb853e50710e5bde84811014febe30e80afee9ed6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797791"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6721883"
 ---
 # <a name="enter-payroll-beginning-balances"></a>Wprowadzanie sald początkowych listy płac
 
@@ -166,3 +164,6 @@ Istnieje możliwość wycofywania i ponownego wprowadzania transakcji. Aby wysto
 2. Kliknij przycisk **Tak**, gdy zostanie wyświetlony komunikat „Wycofanie tego sprawozdania o wynagrodzeniach spowoduje utworzenie wycofującego sprawozdania o wynagrodzeniach, które będzie do niego przeciwstawne. Żadnego z tych sprawozdań o wynagrodzeniach nie można edytować. Czy chcesz wycofać to sprawozdanie o wynagrodzeniach?” . 
 
 Po wycofaniu sprawozdania o wynagrodzeniach można wygenerować nowe sprawozdanie o wynagrodzeniach dla pracownika ze sprawozdania o zarobkach, które utworzono wcześniej. Pamiętaj, aby przed wygenerowaniem nowego sprawozdania o wynagrodzeniach poprawić wszelkie nieprawidłowe wiersze w sprawozdaniu o zarobkach, a następnie wygenerować nowe sprawozdania o wynagrodzeniach z właściwymi kwotami. 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

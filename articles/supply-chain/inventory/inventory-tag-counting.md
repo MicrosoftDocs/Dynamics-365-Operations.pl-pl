@@ -1,10 +1,12 @@
 ---
 title: Zliczanie znaczników zapasów
 description: Ten temat zawiera informacje o procesie zliczania znaczników, który służy do porównywania rzeczywistej zawartości magazynu z zapasami dostępnymi na stanie.
-author: yufeihuang
+author: MarkusFogelberg
+manager: tfehr
 ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalCount, InventJournalCountTag
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 11594
 ms.assetid: 03772d0e-5c37-454c-ab85-82bc8b60a76d
 ms.search.region: Global
-ms.author: yufeihuang
+ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 64315b8c5f0be1dbd19239a8b07746e90aebb0d4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 78402840ad86a0f43d30b3c80307b4646fffbaeb
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567374"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5216136"
 ---
 # <a name="inventory-tag-counting"></a>Zliczanie znaczników zapasów
 

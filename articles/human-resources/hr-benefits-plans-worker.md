@@ -1,31 +1,30 @@
 ---
-title: Tworzenie planów świadczeń pracowniczych
-description: W programie Microsoft Dynamics 365 Human Resources można tworzyć plany świadczeń pracowniczych, aby umożliwić wybieranie planów świadczeń dla pracowników i zatwierdzać wybory planów świadczeń.
-author: andreabichsel
-manager: AnnBe
-ms.date: 04/06/2020
+title: Tworzenie planów świadczeń dla pracowników
+description: W tym temacie opisano sposób tworzenia, wybierania i potwierdzania planów świadczeń dla pracowników w programie Microsoft Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitPlanEmployee, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0ebd19cba8dd7cac8ccf6d17d4206731be87a225
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 701bc6f1bb3ef684b163c32032e1094c8ae4deb0
+ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420019"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "7417499"
 ---
-# <a name="create-worker-benefit-plans"></a>Tworzenie planów świadczeń pracowniczych
+# <a name="create-worker-benefit-plans"></a>Tworzenie planów świadczeń dla pracowników
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 W programie Microsoft Dynamics 365 Human Resources można tworzyć plany świadczeń pracowniczych, aby umożliwić wybieranie planów świadczeń dla pracowników i zatwierdzać wybory planów świadczeń. Zazwyczaj pracownicy sami wybierają plany świadczeń w obszarze Samoobsługa pracownika etatowego, a następnie administratorowi świadczeń zatwierdza te wybory. 
 
@@ -49,3 +48,6 @@ W programie Microsoft Dynamics 365 Human Resources można tworzyć plany świadc
    | Plany | Skrócona karta Plany zawiera plany spełniające ustawione kryteria filtrowania. W każdym wierszu znajdują się odpowiednie opcje konfiguracji, które zostały ustawione przez pracowników działu kadr, oraz wybory rejestracji dokonane przez pracowników. Pole Kwalifikowany określa, czy wybrane opcje nie powodują konfliktu z wybranym planem. |
 
 4. Wybierz opcję **Zapisz**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

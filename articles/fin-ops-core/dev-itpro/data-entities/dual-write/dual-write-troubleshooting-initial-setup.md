@@ -1,90 +1,91 @@
 ---
 title: Rozwiązywanie problemów podczas konfiguracji początkowej
-description: Ten temat zawiera informacje ułatwiające rozwiązywanie problemów, które mogą wystąpić podczas wstępnej instalacji podwójnego zapisywania między aplikacjami Finance and Operations i Dataverse.
+description: Ten temat zawiera informacje ułatwiające rozwiązywanie problemów, które mogą wystąpić podczas integracji podwójnego zapisu.
 author: RamaKrishnamoorthy
-manager: AnnBe
-ms.date: 03/16/2020
+ms.date: 08/10/2021
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 5ac6ec5003794fb5875fed6a2c4403c1444ab8b2
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 9a70de253eff2a3273be4a31ab32757bb014328f
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685594"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061474"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Rozwiązywanie problemów podczas konfiguracji początkowej
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
-
-Ten temat zawiera informacje dotyczące rozwiązywania problemów dotyczących integracji o podwójnym zapisie między aplikacjami Finance and Operations i Dataverse. A dokładniej, ten temat zawiera informacje ułatwiające rozwiązywanie problemów, które mogą wystąpić podczas integracji podwójnego zapisu.
+Ten temat zawiera informacje dotyczące rozwiązywania problemów dotyczących integracji podwójnego zapisu między aplikacjami Finanse i Działania i Dataverse. A dokładniej, ten temat zawiera informacje ułatwiające rozwiązywanie problemów, które mogą wystąpić podczas integracji podwójnego zapisu.
 
 > [!IMPORTANT]
 > Niektóre problemy, których ten problem może wymagać od roli administratora systemu lub poświadczeń administratora dzierżawcy Microsoft Azure Active Directory (Azure AD). W sekcji dotyczącej każdego zagadnienia wyjaśniono, czy określona rola lub poświadczenia są wymagane.
 
-## <a name="you-cant-link-a-finance-and-operations-app-to-dataverse"></a>Nie można połączyć aplikacji Finance and Operations z Dataverse
+## <a name="you-cant-link-a-finance-and-operations-app-to-dataverse"></a>Nie można połączyć aplikacji Finanse i Działania z Dataverse
 
-**Wymagana rola w celu konfiguracji podwójnego zapisu:** administrator systemu w aplikacjach Finance and Operations i Dataverse.
+**Wymagana rola w celu konfiguracji podwójnego zapisu:** administrator systemu w aplikacjach Finanse i Działania i Dataverse.
 
 Błędy na stronie **Łącze konfiguracji do Dataverse** są zazwyczaj spowodowane niekompletnymi problemami z ustawieniami lub uprawnieniami. Upewnij się, że cała kontrola kondycji jest przekazana na stronie **Łącze konfiguracji do Dataverse**, jak to pokazano na poniższej ilustracji. Nie można połączyć się z podwójnym zapisywaniem, dopóki nie przejdzie cała kontrola kondycji.
 
-![Pomyślne sprawdzenie kondycji](media/health_check.png)
+![Pomyślne sprawdzenie kondycji.](media/health_check.png)
 
-Aby połączyć środowiska Finance and Operations i Dataverse, trzeba mieć poświadczenia administratora dzierżawy Azure AD. Po połączeniu środowiska użytkownicy mogą się logować przy użyciu swoich poświadczeń konta i aktualizować istniejące mapowanie tabeli.
-
-## <a name="error-when-you-open-the-link-to-dataverse-page"></a>Błąd podczas otwierania łącza do strony Dataverse
-
-**Wymagane poświadczenia w celu rozwiązania problemu:** administrator dzierżawy Azure AD
-
-Może pojawić się następujący komunikat o błędzie podczas otwierania strony **Łącze do Dataverse** w aplikacji Finance and Operations:
-
-*Kod stanu odpowiedzi nie wskazuje powodzenia: 404 (Nie znaleziono).*
-
-Ten błąd występuje, gdy krok zgody nie został ukończony. Aby sprawdzić, czy krok zgody został zakończony, zaloguj się do portal.Azure.com przy użyciu konta administratora dzierżawy Azure AD i sprawdź, czy strona trzecia o identyfikatorze **33976c19-1db5-4c02-810e-c243db79efde** jest na liście w Azure AD **Aplikacji przedsiębiorstwa**. Jeśli nie, musisz podać zgodę aplikacji.
-
-Aby zapewnić zgodę aplikacji, wykonaj następujące kroki.
-
-1. Otwórz następujący adres URL, używając poświadczeń administratora. Powinien zostać wyświetlony monit o zgodę.
-
-    <https://login.microsoftonline.com/common/oauth2/authorize?client_id=33976c19-1db5-4c02-810e-c243db79efde&response_type=code&prompt=admin_consent>
-
-2. Wybierz przycisk **Akceptuj**, aby wskazać, że wyrażasz zgodę na zainstalowanie aplikacji o identyfikatorze **33976c19-1db5-4c02-810e-c243db79efde** w dzierżawie.
-
-    > [!TIP]
-    > Ta aplikacja jest wymagana do łączenia Dataverse i aplikacji Finance and Operations. Jeśli występują problemy z tym krokiem, należy otworzyć przeglądarkę w trybie incognito (w usłudze Google Chrome) lub w trybie InPrivate ( w Microsoft Edge).
-
-## <a name="verify-that-company-data-and-dual-write-teams-are-set-up-correctly-during-linking"></a>Sprawdź, czy dane firmy i zespoły podwójnego zapisywania są poprawnie skonfigurowane podczas łączenia
-
-Aby zapewnić poprawne działanie funkcji podwójnego zapisywania, w środowisku Dataverse zostaną utworzone firmy wybrane podczas konfigurowania. Domyślnie te firmy są tylko do odczytu, a właściwość **IsDualWriteEnable** ma wartość **prawda**. Ponadto tworzony jest domyślny właściciel i zespół jednostki biznesowej będący właścicielem, który zawiera nazwę firmy. Przed włączeniem map należy sprawdzić, czy jest określony domyślny właściciel zespołu. Aby znaleźć jednostkę **firmy (CDM\_Company)**, należy wykonać następujące kroki:
-
-1. W aplikacji opartej na modelu w Dynamics 365 wybierz filtr w prawym górnym rogu.
-2. Z listy rozwijanej wybierz **Firma**.
-3. Wybierz opcję **Uruchom**, aby zobaczyć wyniki.
-4. Umożliwia wybór firmy połączonej w przypadku skonfigurowania podwójnego zapisywania.
-5. Sprawdź, czy w polu **Domyślnego zespołu będącego właścicielem** znajduje się wartość. Na poniższej ilustracji pole **Domyślny zespół będący właścicielem** jest ustawione na **USMF podwójnego zapisywania**.
-
-    ![Weryfikowanie domyślnego zespołu będącego właścicielem](media/default_owning_team.png)
+Aby połączyć środowiska Finanse i Działania i Dataverse, trzeba mieć poświadczenia administratora dzierżawy Azure AD. Po połączeniu środowiska użytkownicy mogą się logować przy użyciu swoich poświadczeń konta i aktualizować istniejące mapowanie tabeli.
 
 ## <a name="find-the-limit-on-the-number-of-legal-tables-or-companies-that-can-be-linked-for-dual-write"></a>Umożliwia znalezienie limitu liczby tabel prawnych lub firm, które mogą być połączone w celu wykonania podwójnego odpisu
 
 Podczas próby włączenia map może pojawić się następujący komunikat o błędzie:
 
-*Błąd podwójnego zapisywania — Rejestracja wtyczki nie powiodła się: \[(nie można uzyskać mapy partycji Menedżera okien pulpitu-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea. Błąd przekracza maksymalną liczbę partycji dozwoloną w mapowaniu Menedżera okien pulpitu-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea)\]. Wystąpił co najmniej jeden błąd.*
+*Błąd podwójnego zapisywania — Rejestracja wtyczki nie powiodła się: [(nie można uzyskać mapy partycji Menedżera okien pulpitu projektu-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea. Błąd przekracza maksymalną liczbę partycji dozwoloną w mapowaniu Menedżera okien pulpitu-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea)]. Wystąpił co najmniej jeden błąd.*
 
 Bieżący limit czasu połączenia ze środowiskiem wynosi około 40 tabel prawnych. Ten błąd występuje podczas próby włączenia map, a więcej niż 40 tabel prawnych jest połączonych między środowiskami.
+
+## <a name="connection-set-failed-while-linking-environment"></a>Błąd zestawu połączenia podczas łączenia środowiska
+
+Podczas łączenia środowiska podwójnego zapisu akcja została zakończona komunikatem o błędzie:
+
+*Zapisywanie zestawu połączeń nie powiodło się! Element z tym samym kluczem został już dodany.*
+
+Funkcja podwójnego zapisu nie obsługuje wielu firm o tej samej nazwie. Na przykład w przypadku dwóch firm o nazwie „DAT” w Dataverse zostanie wyświetlony ten komunikat o błędzie.
+
+Aby odblokować odbiorcę, usuń duplikaty rekordów z tabeli **cdm_company** w Dataverse. Ponadto, jeśli tabela **cdm_company** ma rekordy bez nazwy, usuń lub popraw te rekordy.
+
+## <a name="error-when-opening-the-dual-write-page-in-finance-and-operations-apps"></a>Błąd podczas otwierania strony podwójnego zapisu w aplikacjach Finanse i Działania
+
+Podczas próby połączenia środowiska Dataverse na potrzeby podwójnego zapisu może pojawić się następujący komunikat o błędzie:
+
+*Kod stanu odpowiedzi nie wskazuje powodzenia: 404 (Nie znaleziono).*
+
+Ten błąd występuje, gdy krok zgody aplikacji nie jest ukończony. Można sprawdzić, czy zgoda została udzielona, logując się do `portal.azure.com` przy użyciu konta administratora dzierżawy i sprawdzając, czy na liście aplikacji dla przedsiębiorstw usługi AAD jest wyświetlona aplikacja innej firmy z identyfikatorem `33976c19-1db5-4c02-810e-c243db79efde`. Jeśli nie, należy ponownie uruchomić krok zgody w sposób opisany w następnej sekcji.
+
+### <a name="providing-app-consent"></a>Udzielanie zgody aplikacji
+
++ Uruchom następujący adres URL, używając poświadczeń administratora.
+
+    `https://login.microsoftonline.com/common/oauth2/authorize?client_id=33976c19-1db5-4c02-810e-c243db79efde&response_type=code&prompt=admin_consent`
+
++ Naciśnij przycisk **Akceptuj**, aby wyrazić zgodę. Udzielasz zgody na zainstalowanie aplikacji (z `id=33976c19-1db5-4c02-810e-c243db79efde`) w swojej dzierżawie.
++ Ta aplikacja jest wymagana przez Dataverse do komunikowania się z aplikacjami Finanse i Działania.
+
+    ![Rozwiązywanie problemów z konfiguracją początkowe synchronizacji.](media/Initial-sync-setup-troubleshooting-1.png)
+
+> [!NOTE]
+> Jeśli to nie działa, uruchom adres URL w trybie prywatnym programu Microsoft Edge lub trybie incognito programu Chrome.
+
+## <a name="finance-and-operations-environment-is-not-discoverable"></a>Nie można wykryć środowiska Finanse i Działania
+
+Może zostać wyświetlony następujący komunikat o błędzie:
+
+*Środowisko aplikacji Finanse i Działania \*\*\*.cloudax.dynamics.com nie jest wykrywalne*.
+
+Istnieją dwie przyczyny, które mogą powodować, że środowisko nie będzie wykrywalne:
+
++ Zalogowany użytkownik nie znajduje się w tej samej dzierżawie co wystąpienie Finanse i Działania.
++ Istnieje kilka starszych wystąpień Finanse i Działania, które były hostowane przez firmę Microsoft i miały problem z wykrywaniem. Aby usunąć ten problem, zaktualizuj wystąpienie Finanse i Działania. Po każdej aktualizacji środowisko staje się wykrywalne.
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

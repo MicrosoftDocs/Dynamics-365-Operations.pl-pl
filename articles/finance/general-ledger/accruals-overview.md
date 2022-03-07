@@ -1,25 +1,29 @@
 ---
-# required metadata
 title: Przegląd naliczeń
 description: W tym artykule opisano koncepcję naliczeń oraz sposób ich konfigurowania i tworzenia transakcji.
 author: aprilolson
 ms.date: 01/11/2018
 ms.topic: overview
-ms.prod: null
-ms.technology: null
+ms.prod: ''
+ms.technology: ''
 ms.search.form: LedgerAccuralTable
 audience: Application User
 ms.reviewer: roschlom
 ms.custom:
-  - '14131'
-  - intro-internal
+- "14131"
+- intro-internal
 ms.assetid: 0489b59a-37a7-4a78-87bf-4b597e9efad9
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: '2016-02-28'
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: dc3234c1a64155e1d0ad53cb7008d91847f7af7d
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985294"
 ---
-
 # <a name="accruals-overview"></a>Przegląd naliczeń
 
 [!include [banner](../includes/banner.md)]

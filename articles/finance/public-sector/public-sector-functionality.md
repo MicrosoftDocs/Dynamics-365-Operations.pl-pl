@@ -1,6 +1,6 @@
 ---
 title: Sektor publiczny — strona główna
-description: Rozwiązanie Microsoft Dynamics 365 Finance obsługuje procesy biznesowe, które są wspólne dla zarówno sektora publicznego jak i prywatnego, takie jak budżetowanie zakupów, rozrachunki z dostawcami i rozrachunki z odbiorcami.
+description: Usługa Dynamics 365 Finance obsługuje procesy biznesowe powszechnie wykorzystywane w sektorze publicznym. Dotyczy to zadań budżetowania, zakupów, rozrachunków z dostawcami oraz rozrachunków z odbiorcami.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: SysConfiguration
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 20691
 ms.assetid: 391a6899-7011-40bc-b54b-5665b06bcecb
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Public sector
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f4a3722cf286909c83b5154137c86508929a2691
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7d4b499337d26e2209ee73f2f8ea93f55a124652
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459693"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5218739"
 ---
 # <a name="public-sector-home-page"></a>Sektor publiczny — strona główna
 
@@ -60,9 +59,8 @@ Klucz konfiguracji **Sektora publicznego** obsługuje strony i formanty uzupełn
 ## <a name="how-does-the-public-sector-configuration-key-relate-to-other-configuration-keys"></a>Jaki jest związek między kluczem konfiguracji sektora publicznego i innymi kluczami konfiguracji?
 Poniższa tabela pokazuje związek między tym kluczem konfiguracji a innymi kluczami konfiguracji.
 
-|            |                                                                                                                                                                                                                     |
+|   **Szczegóły**         |              **Opis**                                                                                                                                                                                        |
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Szczegóły** | **Opis**                                                                                                                                                                                                     |
 | Klucz nadrzędny | Brak                                                                                                                                                                                                                |
 | Klucze podrzędne | Klucz konfiguracji **Zapis księgowy dotyczący zaliczki** (AdvancedLedgerEntry) klucz konfiguracji **1099G dla sektora publicznego** (Tax1099G) klucz konfiguracji **1099S dla sektora publicznego** (Tax1099S) klucz konfiguracji **Przepisy francuskie** |
 
@@ -74,3 +72,6 @@ Poniższa tabela pokazuje związek między tym kluczem konfiguracji a innymi klu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

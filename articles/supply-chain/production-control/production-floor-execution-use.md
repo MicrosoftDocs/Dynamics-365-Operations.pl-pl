@@ -2,7 +2,7 @@
 title: Jak pracownicy korzystają z interfejsu wykonania hal produkcyjnych
 description: W tym temacie opisano sposób korzystania z interfejsu wykonywania pomieszczeń produkcyjnych z punktu widzenia pracownika.
 author: johanhoffmann
-ms.date: 01/24/2022
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 086d05b4080015f6185a083ca20963539f76619f
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: c8c50a9a6f9f3c6582e9fd0f28080a3259faab21
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075026"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349777"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Jak pracownicy korzystają z interfejsu wykonania hal produkcyjnych
 
@@ -93,6 +93,7 @@ Na karcie **Moje urządzenie** są wyświetlane następujące kolumny. Liczby od
 1. **Zarejestruj przestój** — ten przycisk należy wybrać, aby otworzyć okno dialogowe, w którym można zarejestrować przestój urządzenia. Możesz wybrać kod przyczyny i wprowadzić okres przestoju w postaci zakresu dat/godzin. Rejestracja przestoju urządzania jest używana do obliczenia wydajności składnika majątku dla urządzenia.
 1. **Wyświetl lub edytuj** — ten przycisk należy wybrać, aby otworzyć okno dialogowe, w którym można edytować lub wyświetlać istniejące rekordy przestoju.
 
+
 ## <a name="starting-and-completing-production-jobs"></a>Rozpoczynanie i kończenie zadań produkcyjnych
 
 Pracownicy rozpoczynają zadanie produkcji, zaznaczając zadanie na karcie **Wszystkie zadania**, a następnie wybierając przycisk **Rozpocznij zadanie**, aby otworzyć okno dialogowe **Rozpoczęcie zadania**.
@@ -109,94 +110,11 @@ Gdy pracownik ukończy lub częściowo wykonuje zadanie, może zgłosić dobre i
 
 ![Okno dialogowe Postęp raportu.](media/pfei-report-progress-dialog.png "Okno dialogowe Postęp raportu")
 
-## <a name="reporting-good-quantities-on-batch-orders-that-have-co-products-and-by-products"></a>Raportowanie dobrych ilości w zamówieniach partii, które mają produkty towarzyszące i uboczne
-
-Pracownicy mogą raportować postęp w realizacji zamówień partii za pomocą interfejsu wykonywania hali produkcyjnej. Raportowanie to obejmuje raportowanie produktów towarzyszących i ubocznych.
-
-Niektórzy producenci, szczególnie w przemyśle procesowym, używają zamówień partii do zarządzania procesami produkcji. Zamówienia partii są tworzone na podstawie formuł i można je zdefiniować w taki sposób, aby w ich wyniku powstawały produkty towarzyszące i uboczne. W przypadku zgłoszonych informacji zwrotnych o tych zamówieniach partii ilość produkcji musi zostać zarejestrowana w produkcie typu formuła, a także w produktach towarzyszących i ubocznych.
-
-Gdy pracownik zakończy lub częściowo zakończy zadanie w zamówieniu partii, może zgłaszać ilości towarów dobrych lub odpadków dla każdego produktu zdefiniowanego jako produkt wyjściowy dla zamówienia. Produkty zdefiniowane jako produkty wyjściowe w zamówieniu partii mogą mieć typ *Formuła*, *Produkt towarzyszący* lub *Produkt uboczny*.
-
-Aby zgłosić dobre ilości produktów, pracownik wybiera zadanie na karcie **Aktywne zadania**, a następnie wybiera opcję **Postęp raportu**.
-
-Następnie w oknie dialogowym **Postęp raportu** pracownik może wybrać spośród produktów, które są zdefiniowane jako produkty wyjściowe dla zamówienia partii, które będą raportować. Pracownik może wybrać jeden lub wiele produktów na liście, a następnie wybrać opcję **Postęp raportu**. W przypadku każdego produktu ilość jest domyślnie pusta, a pracownik może wprowadzić ilość za pomocą klawiatury numerycznej. Pracownik może używać przycisków **Poprzedni** i **Następny**, aby przechodzić między wybranymi produktami. Po wprowadzeniu ilości dla każdego produktu pracownik może zaktualizować stan zadania jako *W toku*, *Zatrzymane* lub *Zakończone*.
-
-![Raportowanie produktów towarzyszących i produktów ubocznych.](media/report-co-by-products.png "Raportowanie produktów towarzyszących i produktów ubocznych")
-
-### <a name="reporting-on-batch-orders-for-planning-items"></a>Raportowanie zamówień partii dotyczących pozycji planowania
-
-Pracownik, który ukończy zadanie w zamówieniu partii dotyczącej pozycji planowania, będzie raportować ilości tylko w odniesieniu do produktów towarzyszących i ubocznych, ponieważ pozycje planowania nie zawierają pozycji typu *Formuła*.
-
-### <a name="reporting-co-product-variation"></a>Raportowanie odchylenia produktu towarzyszącego
-
-Jeśli zamówienie partii jest tworzone na podstawie wersji formuły, w której opcja **Warianty produktów towarzyszących** ma wartość *Tak*, pracownik może składać raporty o produktach towarzyszących, które nie są częścią definicji tych zamówień partii. Ta funkcja jest używana w scenariuszach, w których w procesie produkcji może wystąpić nieoczekiwany produktu wynikowy.
-
-W takim przypadku pracownik może określić produkt towarzyszący w raporcie, zaznaczając w oknie dialogowym postępu raportu **Warianty produktów towarzyszących**. Pracownik może następnie wybrać spośród wszystkich zwolnionych produktów, które są zdefiniowane jako produkty towarzyszące.
-
 ## <a name="reporting-scrap"></a>Raportowanie odpadków
 
 Gdy pracownik ukończy lub częściowo wykonuje zadanie, może zgłosić odpadki przez zaznaczenie zadania na karcie **Aktywne zadania**, a następnie wybrać **Zgłoś odpadki**. Następnie w oknie dialogowym **Zgłoś odpadki** pracownik wprowadza ilość odpadków za pomocą klawiatury numerycznej. Pracownik również wybiera przyczynę (*Brak*, *Maszyna*, *Operator* lub *Materiały*).
 
 ![Okno dialogowe Zgłoś odpadki.](media/pfei-report-scrap-dialog.png "Okno dialogowe Zgłoś odpadki")
-
-## <a name="adjust-material-consumption-and-make-material-reservations"></a>Dostosuj zużycie materiałów i dokonaj rezerwacji materiałów
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until further notice -->
-
-Pracownicy mogą dostosować zużycie materiałów do każdego zadania produkcyjnego. Ta funkcjonalność jest używana w scenariuszach, w których rzeczywista ilość materiałów zużytych przez zadanie produkcyjne była większa lub mniejsza od ilości planowanej. Dlatego też musi on być korygowany, aby utrzymać aktualny poziom zapasów.
-
-Pracownicy mogą również dokonywać zastrzeżeń dotyczących numerów partii i serii materiałów. Ta funkcjonalność jest wykorzystywana w scenariuszach, w których pracownik musi ręcznie określić, które numery partii lub serii materiału zostały zużyte, aby spełnić wymagania dotyczące identyfikowalności materiału.
-
-Pracownicy mogą określać ilość do skorygowania, wybierając pozycję **Korygowanie materiału**. Ten przycisk jest dostępny w następujących miejscach:
-
-- W oknie dialogowym **Zgłoś odpadki**
-- Okno dialogowe **Raport postępów**
-- Na pasku narzędzi po prawej stronie
-
-### <a name="adjust-material-consumption-from-the-report-scrap-and-report-progress-dialog-boxes"></a>Dostosuj zużycie materiału w oknach dialogowych Raport odpadów i Raport postępów
-
-Po wprowadzeniu przez pracownika ilości do raportowania w oknie dialogowym **Raport postępów** lub **Raport odpadów** dostępny staje się przycisk **Dopasuj materiał**. Gdy użytkownik wybierze ten przycisk, zostanie wyświetlone okno dialogowe **Korygowanie materiału**. To okno dialogowe zawiera listę pozycji, które są planowane do zużycia, gdy zgłaszana jest ilość dobra lub złomowana dla zadania.
-
-Lista w oknie dialogowym pokazuje następujące informacje:
-
-- **Numer produktu** – wzorzec produktu i wariant produktu.
-- **Nazwa produktu** – Nazwa produktu.
-- **Propozycja** – szacowana ilość materiału, która zostanie zużyta w momencie zgłoszonych postępów lub odpadków dla określonej ilości zadania.
-- **Zużycie** – rzeczywista ilość materiału, która zostanie zużyta w momencie zgłoszonych postępów lub odpadków dla określonej ilości zadania.
-- **Rezerwacja** – ilość materiału fizycznie zarezerwowana w magazynie.
-- **Jednostka** – jednostka listy składowej (BOM).
-
-Po prawej stronie okna dialogowego znajdują się następujące informacje:
-
-- **Numer produktu** – wzorzec produktu i wariant produktu.
-- **Szacowane** – ilość, która ma zostać zużyta.
-- **Rozpoczęte** – ilość rozpoczęta dla zadania produkcyjnego.
-- **Pozostała ilość** – z oszacowanej ilości pozostała ilość, która jeszcze nie została zużyta.
-- **Ilość wydana** – ilość, która nie została jeszcze zużyta.
-
-Można wykonać następujące czynności:
-
-- Pracownicy mogą określać ilość do skorygowania, wybierając pozycję **Korygowanie zużycia**. Po zatwierdzeniu ilości, ilość w kolumnie **Zużycie** zostaje zaktualizowana o dostosowaną ilość.
-- Gdy pracownik wybierze opcję **Korygowanie materiału**, zostanie utworzony arkusz listy pobrania do produkcji. Arkusz zawiera te same towary i ilości co lista **Korygowanie materiałów**.
-- Kiedy pracownik dostosowuje ilość w oknie dialogowym **Dopasuj materiał**, pole **Propozycja** w odpowiedniej linii dziennika jest aktualizowane o tę samą ilość. Jeśli pracownik wybierze opcję **Anuluj** w oknie dialogowym **Korygowanie materiału**, lista pobrania zostanie usunięta.
-- Jeśli pracownik wybierze przycisk **OK**, lista pobrania nie zostanie usunięta. Zostanie on zaksięgowany po raporcie zadania w oknie dialogowym **Raport odpadów** lub **Raport postępów**.
-- Jeśli pracownik wybierze opcję **Anuluj** w oknie dialogowym **Raport postępów** lub **Raport odpadów**, lista pobrania zostanie usunięta.
-
-### <a name="adjust-material-from-the-toolbar-on-the-right"></a>Korygowanie materiału z paska narzędzi po prawej stronie
-
-Przycisk **Korygowanie materiału** można skonfigurować w taki sposób, aby był wyświetlany na pasku narzędzi po prawej stronie. (Więcej informacji znajdziesz w [Zaprojektuj interfejs wykonawczy hali produkcyjnej](production-floor-execution-tabs.md).) Pracownik może wybrać **Dostosuj materiał** dla zadania produkcyjnego, które jest w toku. W tym przypadku zostanie wyświetlone okno dialogowe **Korekta materiału**, w którym pracownik może dokonać żądanych korekt. Gdy okno dialogowe zostanie otwarte, dla zlecenia produkcyjnego zostanie utworzona produkcyjna lista pobrań, która zawiera wiersze dla dostosowanych ilości. Jeśli pracownik wybierze opcję **Księguj teraz**, korekta zostanie potwierdzona i zostanie zaksięgowana lista pobrania. Jeśli pracownik wybierze opcję **Anuluj**, lista pobrań zostaje usunięta i nie dokonuje się żadnej korekty.
-
-### <a name="reserve-materials"></a>Rezerwuj materiały
-
-W oknie dialogowym **Koryguj materiał** pracownik może dokonać i dostosować rezerwację materiału, wybierając **Zarezerwuj materiał**. W oknie dialogowym **Rezerwacja materiału** wyświetlane są fizycznie dostępne zapasy towaru dla poszczególnych wymiarów przechowywania i śledzenia.
-
-Jeśli materiał jest włączony w zaawansowane procesy magazynowe, lista pokazuje tylko fizycznie dostępne zapasy dla miejsca wejścia do produkcji dla danego materiału. Miejsce wejścia do produkcji jest zdefiniowane w zasobie, w którym zaplanowane jest zadanie produkcyjne. Jeśli numer pozycji jest kontrolowany przez numer partii lub numer seryjny, pokaże się pełna lista fizycznie dostępnych numerów partii i numerów seryjnych. Aby określić ilość do rezerwacji, pracownik może wybrać opcję **Rezerwuj materiał**. Aby usunąć istniejącą rezerwację, pracownik może wybrać opcję **Usuń rezerwację**.
-
-Aby uzyskać więcej informacji dotyczących konfigurowania lokalizacji wejściowej produkcji, zobacz następujący wpis w blogu: [Konfigurowanie lokalizacji wejściowej produkcji](/archive/blogs/axmfg/deliver-picked-materials-to-the-locations-where-the-materials-are-consumed-by-operations-in-production).
-
-> [!NOTE]
-> Rezerwacje przez pracownika w oknie dialogowym **Rezerwacja materiałów** pozostają, gdy pracownik wybierze opcję **Anuluj** w oknie dialogowym **Raport postępów** lub **Raport odpadów**.
 
 ## <a name="completing-a-job-and-starting-a-new-job"></a>Kończenie zadania i rozpoczynanie nowego zadania
 

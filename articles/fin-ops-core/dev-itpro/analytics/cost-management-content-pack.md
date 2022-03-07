@@ -2,11 +2,9 @@
 title: Pakiet zawartości zarządzania kosztami w usłudze Power BI
 description: W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Power BI Zarządzanie kosztami.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 03/16/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace, CostObjectWithLowestAccuracy, CostVarianceChart, CostObjectWithLowestTurn
 audience: Application User, IT Pro
@@ -18,25 +16,20 @@ ms.search.industry: Manufacturing
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bd5558c89130b48595a9b889072a18a4416b5bd7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 9fbdc6addc820aadc1f5469cb059a62724cfe905
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683902"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752647"
 ---
 # <a name="cost-management-power-bi-content"></a>Pakiet zawartości zarządzania kosztami w usłudze Power BI
 
 [!include [banner](../includes/banner.md)]
 
-## <a name="overview"></a>Przegląd
+## <a name="overview"></a>Omówienie
 
 Pakiet zawartości **Zarządzanie kosztami** dostępny w usłudze Microsoft Power BI jest przeznaczony dla pracowników księgujących zapasy lub osób w organizacji, które są zainteresowane lub odpowiedzialne za zapasy lub produkcję w toku (PWT) albo zainteresowane lub odpowiedzialne za analizowanie odchyleń kosztu standardowego.
-
-> [!NOTE]
-> Pakiet zawartości usługi Power BI **Zarządzanie kosztami** opisany w tym temacie dotyczy programu Dynamics 365 Finance and Operations 8.0.
-> 
-> Pakiet zawartości usługi Power BI **Zarządzanie kosztami** opublikowany w witrynie AppSource został wycofany. Więcej informacji o tym wycofaniu zawiera sekcja [Usuwanie lub przestarzałe funkcje w Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Ten pakiet zawartości usługi Power BI oferuje skategoryzowany format, który pomaga monitorować sytuację w zapasach oraz wizualizować przepływy kosztów przez zapasy. Można uzyskać różne informacje przydatne kierownictwu, takie jak wskaźnik obrotu, liczba dni dostępności zapasów na stanie, dokładność oraz „klasyfikacja ABC” na preferowanym zagregowanym poziomie (firmy, towaru, grupy towarów lub oddziału). Dostępne informacje mogą być również wykorzystywane jako szczegółowe uzupełnienie sprawozdania finansowego.
 
@@ -207,3 +200,6 @@ Następujące najważniejsze wymiary są używane jako filtry do dzielenia zagre
 | Firmy                                          | Nazwy firm                              |
 | Kalendarze obrachunkowe                                        | Kalendarz obrachunkowy, Rok, Kwartał, Okres, Miesiąc   |
 | Witryna                                                    | Identyfikator, Nazwa, Adres, Województwo, Kraj               |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

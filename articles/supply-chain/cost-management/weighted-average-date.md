@@ -2,11 +2,9 @@
 title: Średnia ważona z datą
 description: Średnia ważona z datą jest modelem magazynu opartym na zasadzie średniej ważonej, w którym towary magazynowe są szacowane na podstawie średniej wartości towarów przyjętych na magazyn dla każdego dnia osobno w okresie zamknięcia magazynu.
 author: AndersGirke
-manager: tfehr
 ms.date: 10/25/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5df497a8590c6d60a5f0bc39469cf048c3448572
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 563fa291754f7f795fa64d530de49b9fe4083c56
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963745"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821304"
 ---
 # <a name="weighted-average-date"></a>Średnia ważona z datą
 
@@ -195,3 +193,6 @@ Nowa średnia ruchoma kosztów własnych odzwierciedla średnią wynikającą z 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

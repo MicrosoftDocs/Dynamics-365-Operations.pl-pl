@@ -2,11 +2,9 @@
 title: Wpisy kosztów
 description: Ten artykuł zawiera informacje o wpisach kosztów i sytuacjach, kiedy są tworzone. Wpis kosztu to rekord, w którym są rejestrowane ilość i koszt danego zdarzenia.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventCostOnhandItem
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12ff771cf44595420ca721605daabaa6b071a4ff
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: c03a059aa3491f3f42a1a7ce67cff56e67314edaebbcbe8a766fe769ee06ae88
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967830"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6782007"
 ---
 # <a name="cost-entries"></a>Wpisy kosztów
 
@@ -64,10 +62,12 @@ Strona **Wpisy kosztu** umożliwia filtrowanie według identyfikatora dokumentu 
 > [!NOTE]
 > Wpisy kosztów są dostępne tylko dla [obiektów kosztów](cost-object.md) lub zwolnionych produktów.
 
-<a name="additional-resources"></a>Dodatkowe zasoby
---------
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Obiekty kosztów](cost-object.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

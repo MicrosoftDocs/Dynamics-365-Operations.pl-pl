@@ -1,21 +1,21 @@
 ---
 title: Nowości lub zmiany w aplikacji mobilnej Warehouse Management
 description: W tym temacie wymieniono nowe i zmienione funkcje dla każdej wydanej wersji aplikacji mobilnej Warehouse Management dla firmy Microsoft Dynamics 365 Supply Chain Management.
-author: Mirzaab
-ms.date: 01/18/2022
+author: ivanv-microsoft
+ms.date: 07/30/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: ivanv
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ceb327599bb2651a37ac51c3e0fdffc39d20c7f6
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 43d1381e73d5659bfd6ae6c6d944b7e6918b681a4f89df7ad23abbed5b4a0d3c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067258"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720091"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Nowości lub zmiany w aplikacji mobilnej Warehouse Management
 
@@ -23,88 +23,7 @@ ms.locfileid: "8067258"
 
 W tym temacie wymieniono nowe funkcje, poprawki, ulepszenia i znane problemy dla każdej wydanej wersji aplikacji mobilnej Warehouse Management w Microsoft Dynamics 365 Supply Chain Management.
 
-## <a name="version-20150"></a>Wersja 2.0.15.0
-
-Ta wersja wprowadza następujące nowe funkcje, poprawki i ulepszenia:
-
-- Poprawiono wydajność poprzez naprawienie problemu z wyciekiem pamięci.
-- Naprawiono problem, w którym niektóre wartości pól nie aktualizowały się poprawnie, kiedy były wybierane na stronie szczegółów.
-
-## <a name="version-20140"></a>Wersja 2.0.14.0
-
-Ta wersja wprowadza następujące nowe funkcje, poprawki i ulepszenia:
-
-- Rozwiązano problem z wyłączonym domyślnym przyciskiem Prześlij.
-
-## <a name="version-20130"></a>Wersja 2.0.13.0
-
-Ta wersja wprowadza następujące nowe funkcje, poprawki i ulepszenia:
- 
-- Poprawiono przesuwanie między stronami z wygładzonej animacji.
-- Stałe odpowiedzi na licznik odpowiedzi na przeciąganie ruchów i sporadyczne zamrożenie ekranu.
-- Poprawione kombinacje kolorów tekstu i tła w trybie ciemno w celu lepszej czytelności.
-- Rozwiązano problem, który podczas zmiany rozmiaru okna aplikacji mógł stać się bardzo mały.
-- Naprawiono problem, który czasami powodował awarię aplikacji podczas skanowania kodów kreskowych.
-- Dodano możliwość zastępowania suwaka przyciskiem.
-- Rozwiązano problem, który mógł spowodować, że aplikacja pokaż komunikat o błędzie: „AADSTS7000215: Podano nieprawidłowy klucz tajny klienta”
-- Poprawiono animację wskazówki pokazującą sposób zamykania strony za pomocą przeciągania w dół.
-- Dodano możliwość zamknięcia strony za pomocą gestu machnięcia w dół.
-- Rozwiązano problem, przez który tytuły list rozwijanych nie były wyświetlane na **stronie Ustawienia użytkownika**.
-- Naprawiono problem z lokalizacją, w którym aplikacja nie rozpoznawała przecinka (,) jako separatora dziesiętnego.
-- Zwiększona dostępność.
-- Poprawiono nawigację na **stronie Nowe połączenie**, aby zapewnić poprawione ułatwienia dostępu.
-- Rozwiązano problem z tym, że podczas wybierania pola wejściowego nie jest wyświetlana klawiatura ekranowa.
-- Rozwiązano problem, który może rozbić aplikację, jeśli użytkownicy szybko zmienili jej rozmiar.
-- Rozwiązano problem, w którym szybkie naciśnięcie klawisza było czasami interpretowane jako długie naciśnięcie.
-- Rozwiązano problem, przez który układ aplikacji mógł zostać uszkodzony z powodu dostosowań pól w Supply Chain Management.
-- Rozwiązano problem z tym, że lokalizacje pozycji nie były wyświetlane prawidłowo.
-- Rozwiązano problem związany z krótkim pobraniem dla przepływu pracy wariantu produktu.
-- Usunięto zbędne sprawdzanie poprawności pól zawierających wstępnie ustawione wartości domyślne.
-- Zwiększona wydajność.
-- Dodano nowe ustawienie, które umożliwia użytkownikom wybieranie sposobu filtrowania i zamawiania pól na stronie karty.
-
-## <a name="version-20110"></a>Wersja 2.0.11.0
-
-Ta wersja wprowadza następujące nowe funkcje, poprawki i ulepszenia:
-
-- Dodano wsparcie dla promowanych pól.
-- Dodano obsługę nawigacji za pomocą klawiatury sprzętowej.
-- Zwiększona dostępność.
-- Rozszerzone karty szczegółów.
-- Ulepszone pominięcia kroków pozycji menu.
-- Drobne poprawki interfejsu użytkownika.
-- Naprawiono problem, który mógł powodować zawieszenie się aplikacji podczas skanowania kodów kreskowych.
-- Naprawiono różne problemy, które mogły powodować, że system przestawał odpowiadać.
-
-## <a name="version-20100"></a>Wersja 2.0.10.0
-
-Ta wersja wprowadza następujące nowe funkcje, poprawki i ulepszenia:
-
-- Dodano animację po wsuwaniu przez listy i strony.
-- Tekst jest teraz prawidłowo wyświetlany na stronie błędu połączenia.
-- Pola kombi bez wartości domyślnych będą teraz poprawnie wyświetlane.
-- Informacje w obszarze podtytułów są teraz wyświetlane tylko na stronie z pełnymi informacjami.
-- Puste pola wejściowe nie są już wyświetlane na karcie szczegółów.
-- Wartości potwierdzenia nie są już duplikowane na karcie szczegółów.
-- Naprawiono różne problemy, które powodowały, że system przestawał odpowiadać.
-
-## <a name="version-2090"></a>Wersja 2.0.9.0
-
-Ta wersja rozwiąże problem, przez który aplikacja może przestać odpowiadać, jeśli użytkownicy chcą wejść wyżej znajdując się na początku listy.
-
-## <a name="version-2080"></a>Wersja 2.0.8.0
-
-Ta wersja wprowadza następujące nowe funkcje, poprawki i ulepszenia:
-
-- Dodano obsługę [funkcji instrukcji kroku](mobile-app-titles-instructions.md), która została wprowadzona w Supply Chain Management w wersji 10.0.21.
-- Dodano animację wskazówki, aby pokazać użytkownikom, że mogą zamykać nakładki, przesuwając palcem w dół.
-- Dodano obsługę klawiszy funkcyjnych na listach akcji i w menu. Użytkownicy mogą wyświetlić listę dostępnych poleceń, przytrzymując dowolny klawisz funkcyjny.
-- Rozwiązano problem, który powodował wyświetlanie na niektórych urządzeniach następującego komunikatu o błędzie: „Nie można znaleźć odpowiedniego widoku dla określonego rozmiaru”.
-- Rozwiązano problem, który powodował, że tryb pełnoekranowy nie zawsze działał, gdy była używana klawiatura ekranowa.
-- Rozwiązano problem z tym, że przesuwanie strony nie działało na urządzeniach z systemem Windows.
-- Naprawiono różne problemy, które powodowały, że system przestawał odpowiadać.
-
-## <a name="version-2070"></a>Wersja 2.0.7.0
+## <a name="2070"></a>2.0.7.0
 
 ### <a name="new-features-fixes-and-improvements-in-version-2070"></a>Nowe funkcje, poprawki i ulepszenia w wersji 2.0.7.0
 

@@ -1,10 +1,12 @@
 ---
 title: Grupy przedmiotów serwisu
 description: Grupy przedmiotów serwisu są przydatne do sortowania i filtrowania danych o przedmiotach serwisu do wykorzystania w raportach i statystykach.
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 05/11/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceObjectGroups
 audience: Application User
@@ -15,14 +17,14 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bfee8bacbf9c62950ff45b90d19258516ec20b20
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f9d19e29dbddb0bccf3221cc82e6dbb2c05f7e85
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568991"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5266086"
 ---
-# <a name="service-object-groups"></a>Grupy przedmiotów serwisu
+# <a name="service-object-groups"></a>Grupy przedmiotów serwisu 
 
 [!include [banner](../includes/banner.md)]
 
@@ -32,17 +34,17 @@ Grupy przedmiotów serwisu są przydatne do sortowania i filtrowania danych o pr
 
 Tej metody grupowania można użyć w celu pokazania, gdzie są zlokalizowane różne przedmioty serwisowane przez firmę. Grupowanie przedmiotów serwisu według lokalizacji geograficznych może być również przydatne, jeśli na przykład trzeba wskazać przedmioty, które firma już serwisuje w określonym kraju/regionie.
 
-## <a name="example-of-grouping-by-geographical-location"></a>Przykład grupowania według lokalizacji geograficznych
+## <a name="example"></a>Przykład
 
-Klient z Belgii dzwoni do centrum serwisowego i chce zawrzeć umowę serwisową dotyczącą przedmiotu ABC. Grupę przedmiotów serwisu odpowiadającą lokalizacji geograficznej Belgia dołączono do wszystkich obiektów serwisowanych w Belgii. Używając tej grupy jako filtru, można szybko stwierdzić, czy przedmiot ABC już istnieje jako rekord w programie lub czy trzeba skonfigurować nowy przedmiot.
+Klient z Belgii dzwoni do centrum serwisowego i chce zawrzeć umowę serwisową dotyczącą przedmiotu ABC. Grupę przedmiotów serwisu odpowiadającą lokalizacji geograficznej Belgia dołączono do wszystkich obiektów serwisowanych w Belgii. Używając tej grupy jako filtru, można szybko stwierdzić, czy przedmiot ABC już istnieje jako rekord w programie lub czy trzeba skonfigurować nowy przedmiot. 
 
 ## <a name="group-by-type"></a>Grupowanie według typów
 
 Tej metody grupowania można użyć w celu pokazania typów przedmiotów serwisowanych przez firmę. Grupowanie przedmiotów serwisu według typów może być również przydatne do tworzenia nowych przedmiotów na podstawie podobnych przedmiotów już istniejących w programie.
 
-## <a name="example-of-grouping-by-type"></a>Przykład grupowania według typów
+## <a name="example"></a>Przykład
 
-Klient dzwoni w sprawie zawarcia umowy serwisowej dotyczącej urządzenia do klimatyzacji, HIJ. Nie masz jeszcze rekordu dla tej maszyny. Jednak skonfigurowano już grupę przedmiotów serwisu o nazwie Klimatyzatory i dołączono tę grupę do wszystkich przedmiotów związanych z klimatyzacją. W związku z tym można szybko wyszukać i zidentyfikować wszystkie urządzenia do klimatyzacji oraz użyć informacji o tych przedmiotach jako szablonu do utworzenia wierszy umowy serwisowej dotyczącej urządzenia HIJ. Korzystanie z grup przedmiotów w ten sposób pozwala szybko konfigurować nowe przedmioty serwisu i ustalać zadania serwisowe, które trzeba na nich wykonywać.
+Klient dzwoni w sprawie zawarcia umowy serwisowej dotyczącej urządzenia do klimatyzacji, HIJ. Nie masz jeszcze rekordu dla tej maszyny. Jednak skonfigurowano już grupę przedmiotów serwisu o nazwie Klimatyzatory i dołączono tę grupę do wszystkich przedmiotów związanych z klimatyzacją. W związku z tym można szybko wyszukać i zidentyfikować wszystkie urządzenia do klimatyzacji oraz użyć informacji o tych przedmiotach jako szablonu do utworzenia wierszy umowy serwisowej dotyczącej urządzenia HIJ. Korzystanie z grup przedmiotów w ten sposób pozwala szybko konfigurować nowe przedmioty serwisu i ustalać zadania serwisowe, które trzeba na nich wykonywać. 
 
 ## <a name="create-service-object-groups"></a>Tworzenie grup przedmiotów serwisu
 

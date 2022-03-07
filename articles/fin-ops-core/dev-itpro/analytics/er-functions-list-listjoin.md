@@ -2,11 +2,8 @@
 title: Funkcja LISTJOIN ER
 description: Ten temat zawiera ogólne informacje o używaniu funkcji LISTJOIN w module Raportowanie elektroniczne (ER).
 author: NickSelin
-manager: kfend
 ms.date: 04/01/2020
-ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28f03e5e6af0f252a994f2e54b57a5ef654f4e67
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d9346afc88adb89c08098f39a5fd1c2cb82f664af2244b8cafbbe8a4d2f516c6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682250"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6755809"
 ---
 # <a name="listjoin-er-function"></a>Funkcja LISTJOIN ER
 
@@ -33,7 +30,7 @@ Funkcja `LISTJOIN` zwraca wartość typu *Lista rekordów*, która reprezentuje 
 ## <a name="syntax"></a>Składnia
 
 ```vb
-LIST (list 1 [, list 2, …, list N])
+LISTJOIN (list 1 [, list 2, …, list N])
 ```
 
 ## <a name="arguments"></a>Argumenty
@@ -68,18 +65,21 @@ Wprowadź następnie źródło danych **Rekord 2** typu `Container`. To źródł
 - **Ilość**: to pole zawiera wyrażenie, które zwraca wartość typu `Real`.
 - **IsValid**: to pole zawiera wyrażenie, które zwraca wartość typu `Boolean`.
 
-![Strona projektanta mapowania modelu ER](./media/er-functions-list-listjoin-image1.gif)
+![Strona projektanta mapowania modelu ER.](./media/er-functions-list-listjoin-image1.gif)
 
 W takim przypadku wyrażenie `LISTJOIN(LIST('Record 1'), LIST('Record 2'))` zwraca nową listę zawierającą dwa rekordy.
 
-![Strona projektanta mapowania modelu ER z dwoma rekordami](./media/er-functions-list-listjoin-image2.gif)
+![Strona projektanta mapowania modelu ER z dwoma rekordami.](./media/er-functions-list-listjoin-image2.gif)
 
 Struktura tej listy składa się z pojedynczego pola **Ilość** typu `Real`, ponieważ jest ono jedynym polem, które jest prezentowane w każdym argumencie wywołanej funkcji.
 
-![Strona projektanta mapowania modelu ER — pole ilości/liczby](./media/er-functions-list-listjoin-image3.gif)
+![Strona projektanta mapowania modelu ER — pole ilości/liczby.](./media/er-functions-list-listjoin-image3.gif)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Lista funkcji](er-functions-category-list.md)
 
 [Debugowanie źródeł danych dla wykonanego formatu ER w celu analizowania przekształcenia i przepływu danych](er-debug-data-sources.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

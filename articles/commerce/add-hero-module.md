@@ -2,15 +2,12 @@
 title: Moduł bloku zawartości
 description: W tym temacie opisano moduły bloku zawartości i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,21 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7a8b1c214ba31b7c47cecbe67bef493f5fa450fc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0b5ec0a75c613cedcee9d156d81380d679224ea476af4f4745a30040f257fed8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414879"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6726446"
 ---
 # <a name="content-block-module"></a>Moduł bloku zawartości
-
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano moduły bloku zawartości i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 Moduł bloku zawartości jest używany do marketingowych produktów lub promocji przy użyciu kombinacji obrazów i tekstu. Na przykład sprzedawca może dodać moduł bloku zawartości do strony głównej witryny e-Commerce, aby promować nowy produkt i zwrócić uwagę odbiorców.
 
@@ -52,15 +46,15 @@ Ponadto motyw może udostępniać różne właściwości dla każdego układu. P
 
 Poniższy obraz przedstawia przykład modułu bloku zawartości z układem Hero.
 
-![Przykład modułu bohatera](./media/Hero.PNG)
+![Przykład modułu bohatera.](./media/Hero.PNG)
 
 Poniższy obraz przedstawia przykład modułu bloku zawartości z układem funkcji.
 
-![Przykłady modułów funkcji](./media/Feature.PNG)
+![Przykłady modułów funkcji.](./media/Feature.PNG)
 
 ## <a name="content-block-module-properties"></a>Właściwości modułu bloku zawartości
 
-| Nazwa właściwości  | Wartości | Opis |
+| Nazwa właściwości  | Wartości | opis |
 |----------------|--------|-------------|
 | Wizerunek          | Plik obrazu | Obraz może służyć do pokazania produktu lub promocji. Obraz można przekazać do galerii obrazów lub można użyć istniejącego obrazu. |
 | Nagłówek        | Tekst nagłówka i znacznik nagłówka (**H1**, **H2**, **H3**, **H4**, **H5** lub **H6**) | Każdy moduł bohatera może mieć nagłówek. Domyślnie w nagłówku jest używany znacznik nagłówka **H2**. Jednak znacznik można zmienić, aby spełniał wymagania dotyczące dostępności. |
@@ -107,3 +101,6 @@ Aby dodać moduł bohatera do nowej strony i ustawić wymagane właściwości, w
 [Moduł bloku tekstu](add-content-rich-block.md)
 
 [Moduł odtwarzacza wideo](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

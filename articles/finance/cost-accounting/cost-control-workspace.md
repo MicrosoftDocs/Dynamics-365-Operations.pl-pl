@@ -2,9 +2,11 @@
 title: Obszar roboczy kontroli kosztów
 description: Ten temat zawiera informacje dotyczące obszaru roboczego Kontrola kosztów. Ten obszar roboczy jest centralnym miejscem, w którym menedżerowie odpowiedzialni za kontrolę obiektu kosztów lub zbioru obiektów kosztów w granicach wymiaru lub między wymiarami mają dostęp do raportów.
 author: AndersGirke
+manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMCostControlWorkspaceConfiguration, CAMCostControlWorkspace, CAMCostControlWorkspaceConfigurationPerUser
 audience: Application User
@@ -16,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: db587f5526e0541fc81964d510000a42a671a9bd65224e7167b9d869475c3601
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 22f441f7dc3d53fee263ebb059679510c2e3d054
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763197"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5226444"
 ---
 # <a name="cost-control-workspace"></a>Obszar roboczy kontroli kosztów 
 
@@ -116,7 +118,7 @@ Obszar roboczy **Kontrola kosztów** został zaprojektowany jako raport sieci We
 
 Lista raportów dostępnych dla użytkowników, na przykład menedżerów, jest kontrolowana przez ustawienie opcji **Opublikowane** na stronie **Konfiguracje obszaru roboczego Kontrola kosztów**.
 
-![Raport widoczny dla użytkowników w obszarze roboczym Kontrola kosztów.](./media/report-cost-control.png)
+![Raport widoczny dla użytkowników w obszarze roboczym Kontrola kosztów](./media/report-cost-control.png)
 
 Menedżer może wybrać okres kalendarza obrachunkowego, który ma być wyświetlany. Data sesji określa domyślny bieżący okres.
 
@@ -136,11 +138,11 @@ Siatka przedstawia każdy składnik kosztu skojarzony z węzłem hierarchii wymi
 
 Dwa wykresy pokazują podsumowanie porównania wartości rzeczywistych z zabudżetowanymi oraz odchylenie budżetu z podziałem na okresy.
 
-![Wykresy pokazujące podsumowanie porównania wartości rzeczywistych z zabudżetowanymi oraz odchylenie budżetu z podziałem na okresy.](./media/cost-element-details-operations.png)
+![Wykresy pokazujące podsumowanie porównania wartości rzeczywistych z zabudżetowanymi oraz odchylenie budżetu z podziałem na okresy](./media/cost-element-details-operations.png)
 
 Użytkownicy mogą kliknąć opcję **Wpisy kosztów** i przejść do szczegółów wpisów.
 
-![Wpisy kosztów.](./media/cost-entries.png)
+![Wpisy kosztów](./media/cost-entries.png)
 
 Na przykład czynsz jest rozchodem rozdzielanym między centra kosztów. Użytkownik, który chce poznać źródło czynszu przypisanego do jego centrum kosztów, musi przejść do szczegółów, aby zobacz sposób obliczenia czynszu.
 
@@ -148,7 +150,7 @@ Po kliknięciu opcji **Podstawa alokacji** na stronie **Wpisy kosztów** pojawia
 
 W poniższym przykładzie podstawa alokacji jest typu **Podstawa alokacji formuły** oraz widać formułę. Wymienione są czynniki definiujące formułę. Ponadto siatki przedstawia obliczenia wykonana dla poszczególnych obiektów kosztów.
 
-![Obliczenia dla obiektów kosztów.](./media/cost-entries-allocation-base.png)
+![Obliczenia dla obiektów kosztów](./media/cost-entries-allocation-base.png)
 
 Dodatkowe zasoby 
 

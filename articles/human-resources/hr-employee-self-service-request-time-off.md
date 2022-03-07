@@ -2,15 +2,12 @@
 title: Żądanie czasu wolnego
 description: W programie Dynamics 365 Human Resources można prosić o czas wolny.
 author: andreabichsel
-manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: EssWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,14 +15,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b034f3bac7264ff96100396cbb45e5b869765ce8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 445360659e993451b1289091e43e4fc64e0ad228
+ms.sourcegitcommit: cee7887282d372c756c5c11f76684315f249bba5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420138"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6303227"
 ---
 # <a name="request-time-off"></a>Żądanie czasu wolnego
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 W module Dynamics 365 Human Resources możesz przesyłać wnioski o czas wolny, wyświetlać salda urlopów, a także sprawdzać stan swoich wniosków urlopowych.
 
@@ -45,7 +44,7 @@ W module Dynamics 365 Human Resources możesz przesyłać wnioski o czas wolny, 
 
 ## <a name="add-an-attachment-to-an-existing-request"></a>Dodaj załącznik do istniejącego żądania
 
-Podczas aktualizowania istniejącego żądania czasu wolnego można dodać załącznik. Można również zobaczyć wszystkie powiązane wnioski dotyczące konkretnej daty. 
+Podczas aktualizowania istniejącego żądania czasu wolnego można dodać załącznik. Można również zobaczyć wszystkie powiązane wnioski dotyczące konkretnej daty.
 
 ## <a name="view-leave-balances"></a>Wyświetlanie sald urlopów
 
@@ -59,6 +58,21 @@ Podczas aktualizowania istniejącego żądania czasu wolnego można dodać zał�
 
 2. Aby wyświetlić zatwierdzone wnioski urlopowe, wybierz opcję **Zatwierdzony czas wolny**. Aby wyświetlić oczekujące wnioski urlopowe, wybierz opcję **Żądania czasu wolnego**.
 
+## <a name="cancel-time-off-requests"></a>Anulowanie wniosków dotyczących czasu wolnego
+
+1. W obszarze roboczym **Samoobsługa pracownika etatowego** na kafelku **Bilans czasu wolnego** wybierz opcję **Wyświetl czas wolny**.
+
+2. W formularzu **Czas wolny** wybierz co najmniej jeden wniosek dotyczący czasu wolnego, aby go anulować.
+
+3. Wybierz przycisk **Anuluj**.
+
+4. W okienku **Szczegóły anulowania** wprowadź komentarz, a następnie wybierz opcję **Prześlij**.
+
+   ![Anulowanie wniosku urlopowego](media/hr-leave-and-absence-cancel.png)
+
 ## <a name="see-also"></a>Informacje dodatkowe
 
 - [Omówienie urlopów i nieobecności](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

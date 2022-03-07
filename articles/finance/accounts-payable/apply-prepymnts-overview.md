@@ -1,22 +1,26 @@
 ---
-# required metadata
 title: Automatyczne stosowanie przedpłat do faktur od dostawcy
 description: W tym temacie opisano możliwości automatycznego stosowania przedpłat do faktur od dostawcy.
 author: sunfzam
 ms.date: 10/19/2021
 ms.topic: overview
-ms.prod: null
-ms.technology: null
-ms.search.form: null
+ms.prod: ''
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.assetid: null
+ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
-ms.search.validFrom: '2017-08-30'
+ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.23
+ms.openlocfilehash: 5b07c1d4c2189184b2ad29d46ec2aef0ee03c1c0
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985369"
 ---
-
 # <a name="automatically-apply-to-vendor-invoices"></a>Automatyczne stosowanie do faktur od dostawcy
 
 [!include [banner](../includes/banner.md)]

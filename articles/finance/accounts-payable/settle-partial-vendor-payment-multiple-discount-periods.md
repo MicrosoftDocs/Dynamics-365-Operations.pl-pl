@@ -2,25 +2,28 @@
 title: Rozliczenie płatności częściowej dostawcy, która ma wiele okresów rabatu
 description: Ten artykuł prowadzi przez scenariusz, w którym jest dokonywanych wiele częściowych płatności do dostawcy oferującego wiele różnych rabatów gotówkowych.
 author: abruer
+manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 14262
 ms.assetid: af95c48a-afd1-476c-978d-e34995100be4
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a0538a522733a9df9ae3b8832959c68bb0c25056694786e4b1a46a2ee7d0fcfc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 659fb6c98b9ed0589932f8c4a67cb7b08264283c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737096"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446953"
 ---
 # <a name="settle-a-partial-vendor-payment-that-has-multiple-discount-periods"></a>Rozliczenie płatności częściowej dostawcy, która ma wiele okresów rabatu
 
@@ -54,9 +57,9 @@ Następujące daty rabatu gotówkowego i kwoty są dostępne dla tej faktury.
 
 Informacje o rabacie pojawiają się w dolnej części strony **Rozliczanie otwartych transakcji**.
 
-| Pole                        | Wartość     |
+|                              |           |
 |------------------------------|-----------|
-| Data rabatu           | 7/02/2015 |
+| Data rabatu gotówkowego           | 7/02/2015 |
 | Kwota rabatu gotówkowego         | -20,00    |
 | Użyj rabatu gotówkowego            | Normalna    |
 | Pobrany rabat gotówkowy          | 0,00      |
@@ -70,9 +73,9 @@ Ponieważ rabat gotówkowy jest dostępny, April chce zmienić kwotę płatnośc
 
 Informacje o rabacie pojawiają się w dolnej części strony **Rozliczanie otwartych transakcji**.
 
-| Pole                        | Wartość     |
+|                              |           |
 |------------------------------|-----------|
-| Data rabatu           | 7/02/2015 |
+| Data rabatu gotówkowego           | 7/02/2015 |
 | Kwota rabatu gotówkowego         | -20,00    |
 | Użyj rabatu gotówkowego            | Normalna    |
 | Pobrany rabat gotówkowy          | 0,00      |
@@ -103,9 +106,9 @@ April decyduje się zapłacić 495,00 i pobrać 5,00 rabatu gotówkowego. Łącz
 
 Informacje o rabacie pojawiają się w dolnej części strony **Rozliczanie otwartych transakcji**.
 
-| Pole                        | Wartość     |
+|                              |           |
 |------------------------------|-----------|
-| Data rabatu           | 7/12/2015 |
+| Data rabatu gotówkowego           | 7/12/2015 |
 | Kwota rabatu gotówkowego         | -10,00    |
 | Użyj rabatu gotówkowego            | Normalna    |
 | Pobrany rabat gotówkowy          | -6,00     |
@@ -137,6 +140,3 @@ W dniu 20 lipca April tworzy ostatnią płatność na kwotę 200,00. Rabat gotó
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

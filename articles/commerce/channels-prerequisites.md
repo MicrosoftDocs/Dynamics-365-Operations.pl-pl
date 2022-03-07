@@ -2,36 +2,30 @@
 title: Wymagania wstępne konfiguracji kanałów
 description: W tym temacie przedstawiono omówienie wymagań wstępnych dotyczących konfiguracji kanałów w rozwiązaniu Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 02/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 0da0457240cf12686fff2fa929c7fb510c11f242
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6ad8911df00fde4675d4d9b52fcdd52ff58d4983b177316a7606de277328226b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414900"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742471"
 ---
-# <a name="channel-setup-prerequisites"></a>Wymagania wstępne konfiguracji kanałów
-
+# <a name="channel-setup-prerequisites"></a>Wymagania wstępne dotyczące konfiguracji kanału
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie przedstawiono omówienie wymagań wstępnych dotyczących konfiguracji kanału w rozwiązaniu Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
+W tym temacie przedstawiono omówienie wymagań wstępnych dotyczących konfiguracji kanałów w rozwiązaniu Microsoft Dynamics 365 Commerce.
 
 Aby można było utworzyć kanał Dynamics 365 Commerce, należy wykonać kilka wymaganych wstępnie zadań. Poniższe listy wstępnie wymaganych zadań uporządkowane według typów kanałów.
 
@@ -86,3 +80,6 @@ Aby można było utworzyć kanał Dynamics 365 Commerce, należy wykonać kilka 
 [Konfigurowanie kanału sprzedaży](channel-setup-retail.md)
     
 [Konfigurowanie kanału internetowego](channel-setup-online.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: Obliczanie zużycia materiału
 description: Ten artykuł zawiera informacje o różnych opcjach związanych z obliczaniem zużycia materiałów.
 author: johanhoffmann
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMDesignerEditBOM, BOMTable, ProdBOM
 audience: Application User
@@ -16,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e62d49b5fa2b26c34106e5bbf3dfbc27145e5c4e9acf798b8faef273d8957e51
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fc39df69a22b90a805aa9967d52dafea27c78c2b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776879"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5246340"
 ---
 # <a name="calculate-material-consumption"></a>Obliczanie zużycia materiału
 
