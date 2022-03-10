@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: VendTable
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: e29932ca34576d15b7350ab6c711563682d8ddf8
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 4cea8269082b39e2374ffb3c3dc82def8ce35679
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753550"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358472"
 ---
 # <a name="copy-vendors-by-using-shared-number-sequences"></a>Kopiowanie dostawców przy użyciu udostępnionych sekwencji numerów
 
@@ -36,9 +36,9 @@ Możesz także kopiować dostawców między firmami, jeśli używasz ręcznie ok
 
 ## <a name="copy-a-vendor"></a>Kopiowanie dostawcy
 
-Aby skopiować dostawcę, wybierz pozycję **Nowy** na stronie listy **Wszyscy dostawcy** w celu otwarcia strony **Wszyscy dostawcy, nowy rekord**. Zauważ, że identyfikator nowego dostawcy nie zostanie przypisany natychmiast. To działanie różni się od działania w poprzednich wersjach. Dzieje się tak dlatego, że nie wybrano jeszcze grupy dostawców, więc system nie może ustalić poprawnej sekwencji numerów do użycia. Ponadto nie może ustalić, czy próbujesz utworzyć nowego dostawcę, czy skopiować dostawcę. Dlatego też identyfikator dostawcy nie zostanie przypisany, dopóki nie wybierzesz pozycji **Zapisz** u dołu strony.
+Aby skopiować dostawcę, wybierz pozycję **Nowy** na stronie listy **Wszyscy dostawcy** w celu otwarcia strony **Wszyscy dostawcy, nowy rekord**. Identyfikator nowego dostawcy nie zostanie natychmiast przypisany. To działanie różni się od działania w poprzednich wersjach. Dzieje się tak dlatego, że nie wybrano jeszcze grupy dostawców, więc system nie może ustalić poprawnej sekwencji numerów do użycia. Ponadto nie może ustalić, czy próbujesz utworzyć nowego dostawcę, czy skopiować dostawcę. Dlatego też identyfikator dostawcy nie zostanie przypisany, dopóki nie wybierzesz pozycji **Zapisz** u dołu strony.
 
-Jeśli tworzysz nowego dostawcę, możesz kontynuować wypełnianie wszystkich pól w normalny sposób. Gdy skończysz i wybierzesz pozycję **Zapisz**, zobaczysz, że identyfikator dostawcy został przypisany automatycznie. Alternatywnie, jeśli używasz określanych ręcznie sekwencji numerów, zobaczysz, że został użyty określony ręcznie identyfikator dostawcy.
+Jeśli tworzysz nowego dostawcę, możesz kontynuować wypełnianie wszystkich pól w normalny sposób. Gdy zakończysz i wybierzesz pozycję **Zapisz**, identyfikator dostawcy zostanie automatycznie przypisany. Alternatywnie, jeśli używasz określanych ręcznie sekwencji numerów, zobaczysz, że został użyty określony ręcznie identyfikator dostawcy.
 
 Aby skopiować dostawcę, w polu **Nazwa** wprowadź co najmniej jeden znak reprezentujący dostawcę, którego szukasz. W oknie dialogowym wyszukiwania zostanie wyświetlona lista stron, które mogą reprezentować szukanego przez Ciebie dostawcę. Gdy wybierzesz jedną z tych stron, po prawej stronie okna dialogowego zostaną wyświetlone dodatkowe informacje:
 
@@ -52,13 +52,13 @@ Stronę możesz skopiować tylko wtedy, gdy ma rolę dostawcy i gdy ma tę rolę
 2. Zostanie wyświetlone pole **Firma**. Wybierz firmę, z której ma zostać skopiowany dostawca. Jeśli dostawca istnieje tylko w jednej firmie, w tym polu domyślnie jest ustawiana ta firma.
 3. Wybierz pozycję **Wybierz**. Zostanie otworzony nowy dostawca.
 
-## <a name="validation"></a>Weryfikacja
+## <a name="validation"></a>Walidacja
 
-Gdy kopiujesz dostawcę, system próbuje zapisać informacje dotyczące nowego dostawcy. W celu sprawdzania, czy kopiowane informacje są poprawne, są wykonywane weryfikacje. W przypadku niepowodzenia dowolnej z tych weryfikacji zostanie wyświetlony komunikat o błędzie. Komunikaty o błędach zawierają wyjaśnienia wskazujące, które informacje należy zaktualizować. Kopii dostawcy nie można zapisać do czasu poprawienia wszystkich błędów weryfikacji.
+Gdy kopiujesz dostawcę, system spróbuje zapisać informacje dotyczące nowego dostawcy. W celu sprawdzania, czy kopiowane dane są poprawne, są wykonywane weryfikacje. W przypadku niepowodzenia dowolnej z tych weryfikacji zostanie wyświetlony komunikat o błędzie. Komunikaty o błędach zawierają wyjaśnienia wskazujące, które informacje należy zaktualizować. Kopii dostawcy nie można zapisać do czasu poprawienia wszystkich błędów weryfikacji.
 
 ## <a name="copy-a-vendor-by-using-the-tax-exempt-number-search-feature"></a>Kopiowanie dostawcy przy użyciu funkcji wyszukiwania numeru identyfikacji podatkowej
 
-Dostawców możesz także kopiować za pomocą funkcji wyszukiwania numeru identyfikacji podatkowej, która jest dostępna w grupie **Rejestracja** na karcie **Dostawca** w okienku akcji na stronie **Wszyscy dostawcy**. W wyświetlonym oknie dialogowym **Wyszukiwanie numeru identyfikacji podatkowej** są widoczne numery identyfikacji podatkowej, identyfikator dostawcy, nazwa dostawcy oraz firma, w której jest używany dany numer identyfikacji podatkowej. Dostawcę można skopiować tylko wtedy, gdy znajduje się on w firmie, która nie jest bieżącą firmą. Po wybraniu dostawcy spełniającego to kryterium wykonaj poniższe kroki.
+Dostawców możesz także kopiować za pomocą funkcji wyszukiwania **Numeru identyfikacji podatkowej**, która jest dostępna w grupie **Rejestracja** na karcie **Dostawca** w okienku zadań na stronie **Wszyscy dostawcy**. W wyświetlonym oknie dialogowym **Wyszukiwanie numeru identyfikacji podatkowej** są widoczne numery identyfikacji podatkowej, identyfikator dostawcy, nazwa dostawcy oraz firma, w której jest używany dany numer identyfikacji podatkowej. Dostawcę można skopiować tylko wtedy, gdy znajduje się on w firmie, która nie jest bieżącą firmą. Po wybraniu dostawcy spełniającego to kryterium wykonaj poniższe kroki.
 
 1. Zostanie wyświetlona opcja **Kopiuj dostawcę**. Domyślnie ta opcja ma wartość **Nie**. Aby skopiować dostawcę do bieżącej firmy, ustaw dla tej opcji wartość **Tak**.
 2. Wybierz pozycję **Wybierz**. Zostanie otworzony nowy dostawca.
