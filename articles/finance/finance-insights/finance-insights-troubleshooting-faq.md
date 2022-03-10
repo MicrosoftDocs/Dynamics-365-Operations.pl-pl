@@ -2,7 +2,7 @@
 title: Rozwiązywanie problemów z ustawieniami Finance insights
 description: W tym temacie wymieniono problemy, które mogą wystąpić, gdy są dostępne funkcje analizy Finance insights. Opisano w nim również sposób rozwiązania tych problemów.
 author: panolte
-ms.date: 11/03/2021
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: c1bbdbec2bc0273a73ffc13a4cce024543af5a13
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.openlocfilehash: fc616e5fce6bbfeaa3b36ccc35f1b1cf407af4a6
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968843"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109867"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Rozwiązywanie problemów z ustawieniami Finance insights
 
@@ -92,3 +92,33 @@ Należy wykonać następujące kroki.
   | ---------------------------- | ---------------- |
   | CDS mikrousług ERP Microsoft Dynamics | 703e2651-d3fc-48f5-942c-74274233dba8 | 
   
+## <a name="symptom-error-we-didnt-find-any-data-for-the-selected-filter-range-please-select-a-different-filter-range-and-try-again"></a>Symptom: Błąd: „Nie znaleźliśmy żadnych danych dla wybranego zakresu filtrów. Wybierz inny zakres filtru i spróbuj ponownie”. 
+
+### <a name="resolution"></a>Rozwiązanie
+
+Sprawdź ustawienia integratora danych, aby upewnić się, że działa on zgodnie z oczekiwaniami i wstawia dane z AI Builder z powrotem do Finance.  
+Aby uzyskać więcej informacji, zobacz temat [Utwórz projekt integracji danych](../finance-insights/create-data-integrate-project.md).
+
+## <a name="symptom-customer-payment-prediction-training-failed-and-the-ai-builder-error-states-prediction-should-have-only-2-distinct-outcome-values-to-train-the-model-map-to-two-outcomes-and-retrain-training-report-issue-isnotminrequireddistinctnonnullvalues"></a>Symptom: Trening przewidywania płatności klienta nie powiódł się, a błąd AI Builder mówi: „Przewidywanie powinno mieć tylko 2 różne wartości wyniku, aby wytrenować model. Mapuj do dwóch wyników i przekwalifikuj się”, „Problem z raportem szkoleniowym: IsNotMinRequiredDistinctNonNullValues”.
+
+### <a name="resolution"></a>Rozwiązanie
+
+Ten błąd oznacza, że w ostatnim roku nie ma wystarczającej liczby historycznych transakcji, które reprezentują każdą z kategorii opisanych w kategoriach **Na czas**, **Późno** i **Bardzo późno**. Aby rozwiązać ten błąd, dostosuj **okres bardzo późnej transakcji**. Jeśli ustawienie **Bardzo późnego** okresu transakcji nie naprawi błędu, **Przewidywanie płatności klientów** nie jest najlepszym rozwiązaniem, ponieważ wymaga danych w każdej kategorii do celów szkoleniowych.
+
+Więcej informacji o tym, jak dostosować kategorie **Na czas**, **Późno** i **Bardzo późno** znajdziesz w [Włącz przewidywania płatności klienta](../finance-insights/enable-cust-paymnt-prediction.md).
+
+## <a name="symptom-model-training-failed"></a>Symptom: Trening modelu nie powiódł się
+
+### <a name="resolution"></a>Rozwiązanie
+
+Uczenie modelu **Prognoza przepływów pieniężnych** wymaga danych zawierających 100 lub więcej transakcji obejmujących ponad rok. Zaleca się, aby mieć co najmniej dwa lata z ponad 1000 transakcji.
+
+Funkcja **prognozy płatności odbiorcy** wymaga ponad 100 transakcji w ciągu ostatnich sześciu do 9 miesięcy. Transakcje mogą obejmować faktury tekstowe, zamówienia sprzedaży i płatności odbiorcy. Te dane muszą się rozłożyć na ustawieniach **Na czas**, **Późno** i **Bardzo późno** zdefiniowane na stronie **Konfiguracja**.    
+
+Funkcja **propozycji budżetu** wymaga co najmniej trzech lat budżetów lub danych rzeczywistych. To rozwiązanie wykorzystuje w prognozach dane z trzech do dziesięciu lat. Więcej niż trzy lata przyniesie lepsze rezultaty. Same dane najlepiej działa w przypadku odchylenia wartości. Jeśli dane zawierają wszystkie stałe dane, takie jak wydatki na dzierżawę, szkolenie może się nie powieść, ponieważ brak odchylenia nie wymaga AI dla projektu kwot.
+
+## <a name="symptom-error-message-states-that-the-table-with-name-msdyn_paypredpredictionresultentities-does-not-exist-the-remote-server-returned-an-error-404-not-found"></a>Objaw: Komunikat o błędzie wskazuje, że tabela o nazwie „msdyn_paypredpredictionresultentities” nie istnieje. Serwer zdalny zwrócił błąd: (404) Nie znaleziono.
+
+### <a name="resolution"></a>Rozwiązanie
+
+Środowisko osiągnęła limit maksymalnej liczby tabel usług Data Lake. Aby uzyskać więcej informacji dotyczących limitu, zobacz sekcję **Włącz zmiany danych** w pobliżu godzin rzeczywistych w tym temacie, [Omówienie eksportu do usługi Azure Data Lake](../../fin-ops-core/dev-itpro/data-entities/Azure-Data-Lake-GA-version-overview.md).

@@ -1,29 +1,29 @@
 ---
 title: Sektor publiczny — strona główna
-description: Usługa Dynamics 365 Finance obsługuje procesy biznesowe powszechnie wykorzystywane w sektorze publicznym. Dotyczy to zadań budżetowania, zakupów, rozrachunków z dostawcami oraz rozrachunków z odbiorcami.
-author: ShylaThompson
-manager: AnnBe
+description: Usługa Dynamics 365 Finance obsługuje procesy biznesowe powszechnie wykorzystywane w sektorze publicznym. Do tych procesów należą zadania budżetowania, zakupów, rozrachunków z dostawcami oraz rozrachunków z odbiorcami.
+author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysConfiguration
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 20691
+ms.custom:
+- "20691"
+- intro-internal
 ms.assetid: 391a6899-7011-40bc-b54b-5665b06bcecb
 ms.search.region: Global
 ms.search.industry: Public sector
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7d4b499337d26e2209ee73f2f8ea93f55a124652
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f59522ab857445d69012f4cfdfade47c40189266
+ms.sourcegitcommit: 52a6b038d42ab28092bb942c61f5196330db3a7b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5218739"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "7817748"
 ---
 # <a name="public-sector-home-page"></a>Sektor publiczny — strona główna
 
@@ -65,8 +65,7 @@ Poniższa tabela pokazuje związek między tym kluczem konfiguracji a innymi klu
 | Klucze podrzędne | Klucz konfiguracji **Zapis księgowy dotyczący zaliczki** (AdvancedLedgerEntry) klucz konfiguracji **1099G dla sektora publicznego** (Tax1099G) klucz konfiguracji **1099S dla sektora publicznego** (Tax1099S) klucz konfiguracji **Przepisy francuskie** |
 
 
-<a name="additional-resources"></a>Dodatkowe zasoby
---------
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Planowanie funkcjonalności dla sektora publicznego](plan-public-sector-functionality.md)
 

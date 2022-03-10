@@ -1,7 +1,7 @@
 ---
 title: Niepoprawna wartość pola w rekordzie TaxTrans
 description: Ten temat zawiera informacje dotyczące rozwiązywania problemów z niepoprawnymi wartościami pola w rekordzie TaxTrans.
-author: bijian
+author: EricWangChen
 ms.date: 04/27/2021
 ms.topic: article
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 488ff54f1dd99208db940024a2fe8b2d25861f44
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 00424d98d5ff99123edf42ee19919d149e7a6abc
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020170"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488294"
 ---
 # <a name="incorrect-field-value-in-taxtrans"></a>Niepoprawna wartość pola w rekordzie TaxTrans
 

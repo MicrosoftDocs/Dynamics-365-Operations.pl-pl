@@ -10,17 +10,16 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-19
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 825cc5b9355695a648c857e5197b5b93a21fdb43
-ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
+ms.openlocfilehash: 31953fd29c471e52bd63dbb02c20f5f224c3cae2
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6115212"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103051"
 ---
 # <a name="manage-changes-in-formulas-and-their-ingredients"></a>Zarządzanie zmianami w formułach i ich składnikach
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 Jeśli w Microsoft Dynamics 365 Supply Chain Management są używane funkcje produkcji procesowej, można również używać powiązanych funkcji zarządzania formułami do zarządzania następującymi zmianami:
 
@@ -28,12 +27,9 @@ Jeśli w Microsoft Dynamics 365 Supply Chain Management są używane funkcje pro
 - **Produkty uboczne i współprodukty:** edycja ilości i innych informacji o produktach dodatkowych i produktach ubocznych w formule.
 - **Pozycje z ilością efektywną:** zarządzanie zmianami w pozycjach z ilością efektywną.
 
-## <a name="turn-on-this-feature-in-your-system"></a>Włączanie funkcji w systemie
+## <a name="turn-this-feature-on-or-off"></a>Włączanie lub wyłączanie tej funkcji
 
-Aby skorzystać z tej możliwości, musisz wykonać następujące zadania:
-
-1. Włącz *funkcję zarządzania zmianami inżynierskimi* i jej klucz konfiguracyjny zgodnie z opisem w [Omówienie zarządzania zmianami inżynieryjnymi](product-engineering-overview.md). Jak wymieniono w tym temacie, należy również włączyć klucz licencji **Zarządzanie zmianami dla procesu wytwarzania**, który jest zagnieżdżony pod kluczem licencji **Zarządzanie zmianami inżynieryjnymi**.
-1. Włącz funkcję *Zarządzanie zmianami formuł i ich składników* w [zarządzaniu funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Funkcje opisane w tym temacie wymagają włączania w *systemie zarówno zarządzania zmianami inżynieryjnymi*, jak i *Zarządzaj zmianami formuł i ich składników*. Aby uzyskać szczegółowe informacje dotyczące sposobu włączanie i wyłączanie tych funkcji, zobacz [omówienie zarządzania zmianami inżynieryjnymi](product-engineering-overview.md).
 
 ## <a name="feature-naming-conventions"></a>Konwencje nazewnictwa funkcji
 

@@ -3,24 +3,23 @@ title: Omówienie obliczania podatku
 description: W tym temacie wyjaśniono ogólny zakres i funkcje obliczania podatku.
 author: wangchen
 ms.date: 11/17/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: TaxIntegrationTaxServiceParameters
 audience: Application user
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
-ms.custom: intro-internal
 ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 28b14eba7dd870e80a83f8d31671525b593a09c9
-ms.sourcegitcommit: e06b7d4de6d5ee7ae491d437d6c0365608a5380b
+ms.openlocfilehash: 1dff1767b8e19215a2b27f87c45325e6abd1266e
+ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "7892431"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8105444"
 ---
 # <a name="tax-calculation-overview"></a>Omówienie obliczania podatku
 
@@ -77,6 +76,7 @@ Zaleca się zaimportowanie i skonfigurowanie konfiguracji obliczania podatku z w
 | 10.0.22         | Konfiguracja obliczania podatku 40.48.215 |
 | 10.0.23         | Konfiguracja obliczania podatku 40.50.221 |
 | 10.0.24         | Konfiguracja obliczania podatku 40.50.225 |
+| 10.0.25         | Konfiguracja obliczania podatku 40.50.225 |
 
 
 ## <a name="data-flow"></a>Przepływ danych

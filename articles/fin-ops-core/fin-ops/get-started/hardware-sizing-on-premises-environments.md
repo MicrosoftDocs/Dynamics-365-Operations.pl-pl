@@ -2,7 +2,7 @@
 title: Wymagania dotyczące szacowania zapotrzebowania na sprzęt dla środowisk lokalnych
 description: W tym temacie opisano wymagania dotyczące szacowania zapotrzebowania na sprzęt w środowisku lokalnym.
 author: sericks007
-ms.date: 11/27/2019
+ms.date: 06/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 55dc237629b7b595b03d48adabc6b31492171e25
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 443b80e44a90a68610fbb2bb5a5f4b6b7d545fa7ad772edb3672972fa82f8cbd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748752"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763441"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Wymagania dotyczące szacowania zapotrzebowania na sprzęt dla środowisk lokalnych
 
@@ -36,7 +36,7 @@ Po przejrzeniu dokumentacji można rozpocząć proces szacowania wolumenu transa
 
 Wszystkie czynniki pokazane na poniższej ilustracji mają wpływ na dobór składników infrastruktury. Im bardziej szczegółowe informacje uda się zebrać, tym dokładniej można określić zapotrzebowanie. Bez danych pomocniczych oszacowanie zapotrzebowania na sprzęt będzie niedokładne. Absolutnym minimalnym wymogiem dla niezbędnych danych jest uwzględnienie szczytowego godzinowego obciążenia wierszami transakcji.
 
-[![Szacowanie zapotrzebowania na sprzęt dla środowisk lokalnych](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)
+[![Szacowanie zapotrzebowania na sprzęt dla środowisk lokalnych.](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)
 
 Patrząc od lewej do prawej, pierwszym i najważniejszym czynnikiem niezbędnym do dokładnego oszacowania zapotrzebowania na elementy infrastruktury jest profil transakcji lub charakterystyka transakcji. Zawsze należy ustalić szczytowy wolumen transakcji na godzinę. Jeśli istnieje wiele okresów szczytowych, należy je precyzyjnie zdefiniować.
 
@@ -132,9 +132,11 @@ W większości przypadków powinno wystarczać minimalne wymagane zalecenie dwó
 
 W wydaniu o ogólnej dostępności można wdrożyć tylko jeden węzeł usługi SSRS. Monitoruj węzeł z usługą SSRS podczas testowania i w razie potrzeby zwiększaj liczbę rdzeni dostępnych dla usługi SSRS. Upewnij się, że masz wstępnie skonfigurowany węzeł pomocniczy dostępny na hoście wirtualnym innym niż maszyna wirtualna z usługą SSRS. Jest to ważne, jeśli wystąpi problem z maszyną wirtualną zawierającą usługę SSRS lub z hostem wirtualnym. W takim przypadku należy wymienić te zasoby.
 
+Począwszy od wersji 10.0.17 możliwe jest skonfigurowanie dodatkowych węzłów SSRS w celu osiągnięcia wysokiej dostępności. Więcej informacji: [Konfigurowanie wysokiej dostępności węzłów usług SQL Server Reporting Services (SSRS)](../../dev-itpro/deployment/onprem-ssrsha.md).
+
 ## <a name="environment-orchestrator"></a>Environment Orchestrator
 
-Usługa Orchestrator zarządza wdrożeniem i pokrewną komunikacją z usługą LCS. Ta usługa jest wdrażana jako podstawowa usługa platformy Service Fabric i wymaga co najmniej trzech maszyn wirtualnych. Usługa znajduje się w tej samej lokalizacji, co usługi organizowania platformy Service Fabric. Szacując dla niej zapotrzebowanie na elementy infrastruktury, należy się kierować szczytowym obciążeniem klastra. Aby uzyskać więcej informacji, zobacz [Planowanie i przygotowywanie wdrożenia samodzielnego klastra usługi Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
+Usługa Orchestrator zarządza wdrożeniem i pokrewną komunikacją z usługą LCS. Ta usługa jest wdrażana jako podstawowa usługa platformy Service Fabric i wymaga co najmniej trzech maszyn wirtualnych. Usługa znajduje się w tej samej lokalizacji, co usługi organizowania platformy Service Fabric. Szacując dla niej zapotrzebowanie na elementy infrastruktury, należy się kierować szczytowym obciążeniem klastra. Aby uzyskać więcej informacji, zobacz [Planowanie i przygotowywanie wdrożenia samodzielnego klastra usługi Service Fabric](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 ## <a name="virtualization-and-oversubscription"></a>Wirtualizacja i nadsubskrypcja
 

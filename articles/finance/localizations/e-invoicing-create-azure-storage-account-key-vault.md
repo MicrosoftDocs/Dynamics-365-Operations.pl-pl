@@ -2,7 +2,7 @@
 title: Utwórz konto magazynu Azure i Magazyn kluczy
 description: W tym temacie opisano sposób tworzenia konta magazynu Azure i magazynu kluczy.
 author: gionoder
-ms.date: 04/29/2021
+ms.date: 08/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d68587a88b52e95d1e11c64b9a2d51dbc8b70561
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 23fec7a00d800719e1a7d2c90f9d0977d56be038
+ms.sourcegitcommit: baf82100f0aa7d5f5f47c7f54bc155d8a07beab5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6357421"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463868"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Utwórz konto magazynu Azure i Magazyn kluczy
 
@@ -43,9 +43,9 @@ W tym temacie przedstawiono dwa główne kroki:
 ## <a name="set-up-the-azure-storage-account-to-get-the-storage-account-uri"></a>Skonfiguruj konto magazynu Azure, aby uzyskać identyfikator URI konta magazynu
 
 1. Umożliwia otwarcie konta magazynu, które ma być używane z funkcją Faktury elektroniczne.
-2. Przejdź do **Usługa Blob** \> **Kontenery** i utwórz nowy kontener.
+2. Przejdź do **Magazyn danych** > **Kontenery** i utwórz nowy kontener.
 3. Wprowadź nazwę kontenera i ustaw dla pola **Poziom dostępu publicznego** wartość **Prywatne (brak dostępu anonimowego)**.
-4. Otwórz kontener i przejdź do **Ustawienia \> Polityka dostępu**.
+4. Otwórz kontener i przejdź do **Ustawienia** > **Zasady dostępu**.
 5. Wybierz opcję **Dodaj zasady**, aby dodać zapisane zasady dostępu.
 6. Odpowiednio określ **Identyfikator** i pola **Uprawnień**. W polu **uprawnienia** zaznacz opcję wszystkie uprawnienia.
 
@@ -53,11 +53,11 @@ W tym temacie przedstawiono dwa główne kroki:
 
 7. Wprowadź daty rozpoczęcia i ważności. Data ważności powinna być w przyszłości.
 8. Wybierz przycisk **OK**, aby zapisać zasady, a następnie zapisz zmiany w kontenerze.
-9. Wróć do konta magazynu i otwórz **Eksplorator magazynu (wersja zapoznawcza)**.
-10. Kliknij prawym przyciskiem myszy kontener, a następnie wybierz polecenie **Pobierz podpis dostępu współdzielonego**.
-11. W oknie dialogowym **Podpis dostępu współdzielonego** skopiuj i zapisz wartość w polu **Identyfikator URI**. Ta wartość będzie używana w następnej procedurze i jest określana jako *Identyfikator URI podpisu dostępu współdzielonego*.
-
-    ![Wybieranie i kopiowanie wartości identyfikatora URI.](media/e-Invoicing-services-create-azure-resources-select-and-copy-uri.png)
+9. Przejdź do **Ustawienia** > **Udostępnione tokeny dostępu** i ustaw wartości pól. 
+10. Wprowadź daty rozpoczęcia i zakończenia. Data zakończenia powinna być w przyszłości.
+11. W polu **Uprawnienia** wybierz następujące uprawnienia: **Odczyt**, **Dodawanie**, **Tworzenie**, **Zapis**, **Usuwanie** i **Lista**. 
+12. Wybierz pozycję **Generuj token SAS i adres URL**.
+13. Skopiuj i przechowaj wartość w polu **adresu URL SAS obiektu blob**. Ta wartość będzie używana w następnej procedurze i jest określana jako *Identyfikator URI podpisu dostępu współdzielonego*.
 
 ## <a name="set-up-the-key-vault-to-store-the-storage-account-uri"></a>Skonfiguruj Magazyn kluczy do przechowywania identyfikatora URI konta magazynu
 
@@ -65,7 +65,7 @@ W tym temacie przedstawiono dwa główne kroki:
 2. Przejdź do **Ustawienia** \> **Wpis tajny**, a następnie wybierz opcję **Generuj/Importuj**, aby utworzyć nowy wpis tajny.
 3. Na stronie **Tworzenie wpisu tajnego** w polu **Opcje przekazywania** wybierz opcję **Ręcznie**.
 4. Pozwala wprowadzić nazwę wpisu tajnego. Ta nazwa będzie używana podczas instalacji usługi w usłudze Regulatory Configuration Service (RCS) i będzie nazywana *nazwą klucza tajnego magazynu kluczy*.
-5. W polu **Wartość** wybierz opcję **Identyfikator URI podpisu dostępu udostępnionego**, a następnie wybierz opcję **Utwórz**.
+5. W polu **Wartość** wprowadź identyfikator URI sygnatury dostępu współdzielonego skopiowany w poprzedniej procedurze, a następnie wybierz polecenie **Utwórz**.
 6. Skonfiguruj zasady dostępu, aby nadać funkcji Faktury elektroniczne odpowiedni poziom bezpiecznego dostępu do utworzonego klucza tajnego. Przejdź do **Ustawienia \> Zasad dostępu** i wybierz pozycję **Dodaj zasady dostępu**.
 7. Umożliwia ustawienie tajnych uprawnień dla operacji **Rozpocznij** i **Lista**.
 
@@ -77,7 +77,7 @@ W tym temacie przedstawiono dwa główne kroki:
 
 9. W polu **Wybierz główny** wybierz opcję **Brak zaznaczonego**.
 10. W oknie dialogowym **Główne** wybierz podmiot zabezpieczeń, dodając **Usługi e-fakturowania**.
-11. Wybierz opcję **Dodaj**, a następnie wybierz opcję **Zapisz zmiany magazynu kluczy**.
+11. Zaznacz element **Dodaj** i kliknij przycisk **Zapisz**.
 12. Na stronie **Przegląd** skopiuj wartość **Nazwa DNS** dla magazynu kluczy. Ta wartość będzie używana podczas instalacji usługi w RCS i będzie określana jako *Identyfikator URI magazynu kluczy*.
 
 > [!NOTE]

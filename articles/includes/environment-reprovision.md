@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: f6bf4b6c946ebc63d3d84140f762cd4b789deb03
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 22911afd3a3da0ce3bcaeb7e42ab0096c868be547d559f14a91e09d6e6e12c08
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459701"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6777071"
 ---
 Podczas kopiowania bazy danych między środowiskami musisz uruchomić narzędzie do ponownego inicjowania obsługi środowiska, zanim skopiowana baza danych osiągnie pełną funkcjonalność, aby zagwarantować aktualność wszystkich składników rozwiązania Commerce.
 

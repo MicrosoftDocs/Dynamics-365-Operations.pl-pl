@@ -2,11 +2,9 @@
 title: Książki adresowe — często zadawane pytania
 description: Ten temat zawiera odpowiedzi na często zadawane pytania dotyczące książek adresowych.
 author: msftbrking
-manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DirPartyCheckDuplicate, DirPartyTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 60e6fb7d38bd3ca78538ca10a15f6fb09bba52a3
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: d429639f52c745a737567419b6012884ab20d43d
+ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693911"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463636"
 ---
 # <a name="address-books-faq"></a>Książki adresowe — często zadawane pytania
 
@@ -67,3 +65,13 @@ Rekordy stron można wprowadzić w globalnej książce adresowej albo na stronie
 ## <a name="can-i-translate-address-information-for-party-records"></a>Czy można tłumaczyć informacje adresowe dla rekordów stron?
 
 Można ustawić tłumaczenia informacji adresowych, tak aby były wyświetlane w języku użytkownika (systemu) w programie, ale w innym języku w dokumentach, takich jak zamówienia sprzedaży. Można wprowadzić tłumaczenia nazw krajów/regionów, celów adresów oraz sekwencji nazw. Jeśli na przykład Twoim językiem jest duński, i chcesz utworzyć zamówienie sprzedaży dla klienta we Francji. W takim przypadku możesz wyświetlić rekord klienta po duńsku w programie, ale wyświetlić informacje adresowe po francusku w drukowanym zamówieniu sprzedaży. Podczas konfigurowania tłumaczenia należy wprowadzić tłumaczenie dla każdego elementu na liście. Elementy bez tłumaczenia będą zawsze wyświetlane w języku systemu. Jeśli na przykład Twoim językiem jest duński, i chcesz utworzyć zamówienie sprzedaży dla klienta we Francji. Jeśli nie wprowadzisz hiszpańskich (ESP) tłumaczeń informacji adresowych, będą one wyświetlane po duńsku zarówno w programie jaki w drukowanych dokumentach.
+
+## <a name="after-i-import-addresses-why-cant-i-edit-the-records"></a>Dlaczego po zaimportowaniu adresów nie można edytować rekordów?
+
+Podczas importowania adresów istnieje pole o nazwie **IsLocationOwner**. To pole wskazuje, czy właścicielem adresu jest strona skojarzona z lokalizacją (adresem). Jeśli strona jest właścicielem adresu, adres można edytować, gdy jest strona jest używana w globalnej książce adresowej lub ze strony formularza rekordu głównego (takiego jak odbiorca, dostawca lub pracownik). Jeśli strona nie jest właścicielem adresu, nie można edytować rekordu. 
+
+Podczas importowania adresów pole **IsLocationOwner** powinno mieć wartość **Tak**, jeśli chcesz, aby adres był edytowany przy użyciu skojarzonej strony. Jeśli to pole zostanie niepoprawnie zaimportowane, właściciela lokalizacji można zaktualizować w globalnej książce adresowej.
+
+Aby uzyskać więcej informacji dotyczących zmiany właściciela lokalizacji dla zaimportowanego adresu, zobacz temat [Zarządzanie właścicielami lokalizacji](./global-address-book-location-owner.md).
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

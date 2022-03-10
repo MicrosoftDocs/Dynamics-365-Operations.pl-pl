@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2f729b1703a7703a8a604b007bd1c8d9e1f604a6
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 485d8f0aee791aa577432947d74b08caf484da0a3056d8119579e9d659ca3d57
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897291"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730513"
 ---
 # <a name="view-financial-reports"></a>Wyświetlanie raportów finansowych
 
@@ -28,8 +28,7 @@ ms.locfileid: "5897291"
 
 W tym temacie opisano sposób wyświetlania i eksplorowania sprawozdań finansowych. Artykuł zawiera informacje dotyczące różnych opcji, które można zastosować do sprawozdań finansowych, aby zmienić ich wygląd i zawarte dane.
 
-<a name="financial-reporting-overview"></a>Omówienie raportowania finansowego
-----------------------------
+## <a name="financial-reporting-overview"></a>Omówienie raportowania finansowego
 
 ## <a name="open-a-financial-report"></a>Otwieranie raportu finansowego
 Aby otworzyć raport, należy wybrać nazwę raportu. Kiedy raport zostanie otwarty po raz pierwszy, zostanie automatycznie wygenerowany raport za poprzedni miesiąc. Na przykład jeśli raport zostanie otwarty po raz pierwszy w sierpniu 2015, jest generowany raport na 31 lipca 2015 r. Po otwarciu raportu, możesz zapoznać się ze szczegółowymi danymi i opcjami modyfikacji.
@@ -76,8 +75,7 @@ Po zakończeniu ustawiania opcji drukowania, kliknij przycisk **Drukuj** aby kon
 ## <a name="export-a-financial-report"></a>Eksportowanie raportu finansowego
 Aby wyeksportować raport finansowy, w okienku akcji kliknij **Eksportuj**. Raport jest eksportowany do programu Microsoft Excel, a Twoja przeglądarka wyświetli monit o otwarcie lub zapisanie wyeksportowanego pliku. Ustawienia eksportu zdefiniowane w projekcie raportu są stosowane do wyeksportowanego raport.    
 
-<a name="additional-resources"></a>Dodatkowe zasoby
---------
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Raportowanie finansowe](../../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md)
 

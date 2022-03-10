@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: d3642392ed2cf231f261b24428756c6e32a79f98
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: c6356f7c085b93e3e3f292e72f813f823e924487
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674581"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968184"
 ---
 # <a name="ratings-and-reviews-faq"></a>Oceny i recenzje — często zadawane pytania
 
@@ -41,5 +41,17 @@ Aby uzyskać instrukcje włączania i wymuszania ręcznego publikowania ocen i r
 [Zgoda na korzystanie z ocen i recenzji](opt-in-ratings-reviews.md)
 
 [Włączanie ręcznego publikowania ocen i recenzji przez moderatora](manual-publish-rating-reviews.md)
+
+[Zarządzanie ocenami i recenzjami](manage-reviews.md)
+
+[Konfigurowanie ocen i recenzji](configure-ratings-reviews.md)
+
+[Synchronizacja ocen produktów](sync-product-ratings.md)
+
+[Włączanie ręcznego publikowania ocen i recenzji przez moderatora](manual-publish-rating-reviews.md)
+
+[Importowanie i eksportowanie klasyfikacji oraz przeglądów](import-export-reviews.md)
+
+[Konfigurowanie uwierzytelniania usługa-usługa](service-to-service-auth.md)
 
 [Jeśli nie jest włączone rozwiązanie ocen i recenzji, na stronach wyników wyszukiwania i kategorii wyświetlana jest funkcja poprawiania ocen](troubleshoot/hide-ratings-refiner.md)

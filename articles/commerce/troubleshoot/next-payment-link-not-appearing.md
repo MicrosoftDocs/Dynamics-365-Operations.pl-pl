@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: af19a3abd78d543d82f7a8d017e2dc413115a6d8
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 4887cde3e4243ae7a4da6402782e69e780ae20331ed80df63ba1239ef5187e41
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018441"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769278"
 ---
 # <a name="save-for-my-next-payment-option-doesnt-appear"></a>Opcja „Zapisz do następnej płatności” nie pojawia się
 
@@ -34,9 +34,9 @@ Pole wyboru **Zapisz dla mojej następnej płatności** nie jest widoczne w sekc
 
 Na poniższej ilustracji pokazano przykład strony realizacji zamówienia, która zawiera pole wyboru **Zapisz dla następnej płatności**.
 
-![Zapisz dla pola wyboru Następna płatność w module Płatność](media/payment-module-save-payment.jpg)
+![Zapisz dla pola wyboru Następna płatność w module Płatność.](media/payment-module-save-payment.jpg)
 
-## <a name="resolution"></a>Rozdzielczość
+## <a name="resolution"></a>Rozwiązanie
 
 ### <a name="verify-that-the-dynamics-365-payment-connector-for-adyen-is-correctly-configured-in-commerce-headquarters"></a>Sprawdź, czy program Dynamics 365 Payment Connector dla Adyen jest poprawnie skonfigurowany w programie Commerce Headquarters
 
@@ -46,7 +46,7 @@ Aby sprawdzić, czy Dynamics 365 Payment Connector dla Adyen jest poprawnie skon
 1. Wybierz sklep internetowy.
 1. Na skróconej karcie **Konta płatności** upewnij się, że ustawienie **Zezwalaj na zapisywanie informacji o płatności w polu e-commerce** ma wartość **Prawda**.
 
-![Zezwalaj na zapisywanie informacji o płatności w polu e-commerce w programie Commerce Headquarters](media/payment-connector-save-payment.jpg)
+![Zezwalaj na zapisywanie informacji o płatności w polu e-commerce w programie Commerce Headquarters.](media/payment-connector-save-payment.jpg)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

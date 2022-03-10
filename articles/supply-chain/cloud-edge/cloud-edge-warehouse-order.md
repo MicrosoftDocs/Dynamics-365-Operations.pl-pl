@@ -2,48 +2,43 @@
 title: Zamówienia magazynowe dla jednostek skalowania chmury i urządzenia brzegowego
 description: Ten temat zawiera informacje dotyczące możliwości zamówień magazynowych, które są używane jako część obciążenia jednostek skalowania magazynów.
 author: perlynne
-ms.date: 01/14/2021
+ms.date: 04/22/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 ms.search.form: WHSWarehouseOrderLine, WHSWarehouseReceiptEntry, PurchTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-ms.custom: ''
-ms.assetid: ''
-ms.search.region: global
-ms.search.industry: SCM
+ms.search.region: Global
 ms.author: perlynne
-ms.search.validFrom: 2021-01-14
-ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: f2401102ab44f5c24f5cd6f545f30438db0a36cf
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.search.validFrom: 2021-04-13
+ms.dyn365.ops.version: 10.0.19
+ms.openlocfilehash: bd3c72f2c008b936ceda53a3fcdde79df1e6b1b7
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836693"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471699"
 ---
 # <a name="warehouse-orders-for-cloud-and-edge-scale-units"></a>Zamówienia magazynowe dla jednostek skalowania chmury i urządzenia brzegowego
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 > [!WARNING]
 > Nie wszystkie funkcje biznesowe są w pełni obsługiwane w wersji zapoznawczej, gdy są używane obciążenia jednostek skalowania. Jeśli używasz jednostek skalowania, pamiętaj, aby użyć tylko tych procesów, które opisano w tym temacie jako obsługiwane.
 
 ## <a name="what-are-warehouse-orders"></a>Co to są zamówienia magazynowe?
 
-*Zamówienia magazynowe* to rodzaj zamówienia utworzonego w celu obsługi wdrożeń magazynu centrum i jednostki skalowania. Umożliwiają one odbieranie zapasów podczas uruchamiania obciążenia magazynu na jednostce skalowania. Są one obecnie używane tylko z zamówieniami zakupu.
+*Zamówienia magazynowe* to rodzaj używanego w celu obsługi wdrożeń magazynu centrum i jednostki skalowania. Umożliwiają one odbieranie i wysyłanie zapasów podczas uruchamiania obciążenia magazynu na jednostce skalowania.
 
-Zamówienia magazynowe są używane w ramach przetwarzania zarządzania magazynem, na przykład gdy aplikacja Warehouse Management służy do rejestrowania fizycznych dostępnych zapasów podczas przetwarzania przychodzącego zamówienia zakupu. Zamówienia magazynowe są tworzone w ramach procesu *Zwalnianie do magazynu* dostępnego dla zamówień zakupu, w których określono magazyn jednostek skalowania oraz towary, dla których można używać procesów zarządzania magazynem.
+Zamówienia magazynowe są używane jako część zarówno zarządzania magazynem przychodzącym, jak i wychodzącym. Są one tworzone w ramach procesu *Zwalnianie do magazynu*, który jest inicjowany w centrum.
+W przypadku przetwarzania przychodzącego aplikacja mobilna magazynu służy do rejestrowania fizycznych dostępnych zapasów podczas przetwarzania zamówień przychodzących. Jest to dostępne dla zamówień zakupu i zleceń produkcyjnych, w których określono magazyn jednostki skalowania, oraz towarów, dla których można używać procesów zarządzania magazynem.
+Wychodzące zamówienia magazynowe są używane jako część procesu grupy czynności wysyłki dla zamówień przeniesienia i sprzedaży.
 
 > [!IMPORTANT]
 > Zamówienia magazynowe są dostępne tylko we wdrożeniach, które korzystają z [obciążenia zarządzania magazynem dla jednostek skali chmury i urządzeń brzegowych](cloud-edge-workload-warehousing.md).
 
-## <a name="create-a-warehouse-order"></a>Tworzenie zamówienia magazynowego
+## <a name="create-an-inbound-warehouse-order"></a>Utworzenie przychodzącego zamówienia magazynowego
 
-Aby utworzyć zamówienie magazynowe, należy wykonać następujące czynności.
+Aby utworzyć przychodzące zamówienie magazynowe dla procesu zamówienia zakupu, należy wykonać następujące kroki.
 
 1. Zaloguj się do wystąpienia rozwiązania Microsoft Dynamics 365 Supply Chain Management działającego w centrum. (Należy zainicjować proces *zwalniania do magazynu* po zalogowaniu się do centrum).
 1. Wybierz kolejno opcje **Zaopatrzenie i sourcing \> Zamówienia zakupu \> Wszystkie zamówienia zakupu**.
@@ -72,6 +67,8 @@ W widoku **wierszy zamówienia magazynowego** można monitorować postęp przyjm
 
 - Przejdź do obszaru **Zarządzanie magazynem \> Zapytania i raporty \> Wiersze zamówień magazynowych** i użyj filtru, aby znaleźć szukane wiersze.
 - Przejdź do pozycji **Zaopatrzenie i sourcing \> Zamówienia zakupu \> Wszystkie zamówienia zakupu** i otwórz odpowiednie zamówienie zakupu. W sekcji **Wiersze zamówienia zakupu** zaznacz jeden lub więcej wierszy, a następnie na pasku narzędzi wybierz pozycje **Magazyn \> Wpisy przyjęcia do magazynu**.
+
+[!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

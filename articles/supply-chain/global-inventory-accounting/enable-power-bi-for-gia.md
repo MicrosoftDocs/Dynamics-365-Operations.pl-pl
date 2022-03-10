@@ -10,17 +10,18 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 0b00de29a4f12719e469c063861b52e0fc20c5f1
-ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
+ms.openlocfilehash: f0a8f5948d9e30eb220aa8177a4b9718223a4f9d
+ms.sourcegitcommit: 5bfd6511d710deb539b4030eb0e9c48d25513595
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "7641118"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8013841"
 ---
 # <a name="enable-power-bi-for-global-inventory-accounting"></a>Włączanie usługi Power BI dla Globalnego księgowania zapasów
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!--KFM: Preview until 4/30/2022 -->
 
 Kafelki, pulpity nawigacyjne i raporty [PowerBI.com](https://powerbi.com/) można przypiąć do obszaru roboczego aplikacji Microsoft Dynamics 365.
 
@@ -50,7 +51,8 @@ Aby skonfigurować integrację z Power BI, wykonaj poniższe kroki.
 
     1. Przejdź do obszaru roboczego **Mój obszar roboczy**, znajdź zestaw danych dla Globalnego księgowania zapasów, a następnie w menu **Opcje** wybierz polecenie **Ustawienia**.
     1. W opcji **Ustawienia globalnego księgowania zapasów** rozwiń pozycję **Parametry** i w razie potrzeby zaktualizuj wszystkie parametry. W szczególności należy sprawdzić następujące ustawienia:
-        1. Zastąp wartości domyślnego adresu **URL Dataverse** i **Identyfikatora środowiska** za pomocą wartości znalezionych na stronie **Szczegóły środowiska** w usłudze LCS (w sekcji **integracji Power Platform**).
+        1. Zastąp domyślne wartości **Dataverse URL** przy użyciu wartości znalezionych w **Informacje o środowisku Power Platform** w LCS (w sekcji **Integracja platformy Power**).
+        1. Zastąp wartości **Identyfikatora środowiska** za pomocą wartości znalezionych na stronie **Szczegóły środowiska** w usłudze LCS (w sekcji integracji **Zarządzaj środowiskami**).
         1. Wybierz łącze **Edytuj poświadczenia** obok etykiety **CDS** w sekcji **Poświadczeń źródła danych**. Następnie zaloguj się na swoje konto Dataverse przy użyciu metody uwierzytelniania **OAuth2**.
     1. Sprawdź, czy raporty Power BI znalezione w **Mój obszar roboczy \> Raporty \> Globalne księgowanie zapasów** działają teraz prawidłowo i wyświetlają zawartość systemu.
 

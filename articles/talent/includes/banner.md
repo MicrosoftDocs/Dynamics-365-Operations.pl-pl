@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 397945991917bf766dfed8498694be3f04b23cbe
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9e235ba4ef2412c50101bc69f467836dd9a9d11e
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459690"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061966"
 ---
 > [!IMPORTANT]
-> Dynamics 365 Talent: Attract i aplikacje Onboard zostają wycofane. Dowiedz się więcej na temat [wycofania rozwiązania Dynamics 365 Talent: Attract i aplikacji Onboard](https://community.dynamics.com/365/talent/b/dynamics365fortalent/posts/retiring-dynamics-365-talent-attract-and-onboard-apps).
+> Z dniem 1 lutego 2022 roku aplikacje Dynamics 365 Talent: Attract i Onboard zostały wycofane. Dowiedz się więcej na temat [wycofania aplikacji Dynamics 365 Talent: Attract i Onboard](../../human-resources/hr-talent-retire.md).

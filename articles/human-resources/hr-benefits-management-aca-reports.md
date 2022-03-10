@@ -1,32 +1,34 @@
 ---
 title: Generuj raporty Affordable Care Act w zarządzaniu świadczeniami
-description: W tym temacie opisano, w jaki sposób zarządzanie świadczeniami pomaga w śledzeniu informacji, które są zgłaszane na formularzu 1095-B i formularzu 1095-C dotyczącym mandatu pracodawcy na podstawie ustawy o przystępnej opiece (ACA).
-author: andreabichsel
-manager: tfehr
-ms.date: 12/28/2020
+description: W tym temacie opisano, w jaki sposób zarządzanie świadczeniami śledzi informacje, które są zgłaszane na formularzu 1095-B i formularzu 1095-C dotyczącym mandatu pracodawcy na podstawie ustawy o przystępnej opiece (ACA).
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-12-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 2e4b250f4a059719067a9e19bbf3ce4aecc9bb1f
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 79bd8e02aeac1be94e735373740cf9508f494a06
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113896"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066000"
 ---
 # <a name="generate-aca-reports-in-benefits-management"></a>Generowanie raportów ACA w zarządzaniu świadczeniami
 
-W jaki sposób zarządzanie świadczeniami pomaga w śledzeniu informacji, które są zgłaszane na formularzu 1095-B i formularzu 1095-C dotyczącym mandatu pracodawcy na podstawie ustawy o przystępnej opiece (ACA). Podobnie jak funkcja raportowania ACA w starym obszarze roboczym **Świadczenia**, ta funkcja dotyczy wyłącznie firm w Stanach Zjednoczonych.
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+W jaki sposób zarządzanie świadczeniami śledzi informacje, które są zgłaszane na formularzu 1095-B i formularzu 1095-C dotyczącym mandatu pracodawcy na podstawie ustawy o przystępnej opiece (ACA). Podobnie jak funkcja raportowania ACA w starym obszarze roboczym **Świadczenia**, ta funkcja dotyczy wyłącznie firm w Stanach Zjednoczonych.
 
 Aby korzystać z tej funkcji, należy najpierw włączyć **Zarządzanie zaawansowanymi świadczeniami**. Aby uzyskać więcej informacji, w tym ważne informacje dotyczące zarządzania świadczeniami, zobacz temat [Włączanie lub wyłączanie funkcji zarządzania świadczeniami](hr-admin-manage-features.md#enable-or-disable-benefits-management).
 
@@ -49,11 +51,11 @@ Grupy objęcia świadczeniami ACA pomagają w zarządzaniu informacjami w przypa
 
 1. W obszarze roboczym **Zarządzanie świadczeniami** wybierz **Grupa ubezpieczeniowa Affordable Care**.
 
-    ![Wybieranie grupy Affordable Care](./media/hr-benefits-management-aca-coverage-group.png)
+    ![Wybieranie grupy Affordable Care.](./media/hr-benefits-management-aca-coverage-group.png)
 
 2. Wybierz pozycję **Nowy**, aby utworzyć nową grupę pokrycia Affordable Care lub **Edytuj**, aby zmienić istniejącą grupę.
 
-    ![Wybieranie nowej lub edycji](./media/hr-benefits-management-aca-new.png)
+    ![Wybieranie nowej lub edycji.](./media/hr-benefits-management-aca-new.png)
 
 3. Ustaw wartości w następujących polach.
 
@@ -68,7 +70,7 @@ Grupy objęcia świadczeniami ACA pomagają w zarządzaniu informacjami w przypa
     | Grupa ważna od | Data, od kiedy ten rekord jest ważny. |
     | Grupa ważna do | Ostatnia data ważności tego rekordu. Jeśli nie ma daty ważności, wprowadź wartość **Nigdy**. |
 
-    ![Tworzenie grupy zapotrzebowania](./media/hr-benefits-management-aca-new-group.png)
+    ![Tworzenie grupy zapotrzebowania.](./media/hr-benefits-management-aca-new-group.png)
 
 4. Wybierz opcję **Zapisz**.
 
@@ -78,11 +80,11 @@ Grupy objęcia świadczeniami ACA pomagają w zarządzaniu informacjami w przypa
 2. Wybierz grupę, do których mają zostać przypisani pracownicy.
 3. Wybierz **Przypisanie grupowe**.
 
-    ![Wybierz Przypisanie grupowe](./media/hr-benefits-management-aca-mass-assignment.png)
+    ![Wybierz Przypisanie grupowe.](./media/hr-benefits-management-aca-mass-assignment.png)
 
 4. Wybierz pracowników z listy, a następnie **Przypisz**.
 
-    ![Przydzielanie wybranych pracowników do grupy](./media/hr-benefits-management-aca-assign-coverage-group.png)
+    ![Przydzielanie wybranych pracowników do grupy.](./media/hr-benefits-management-aca-assign-coverage-group.png)
 
 ## <a name="maintain-multiple-versions-of-coverage-options"></a>Utrzymuj wiele wersji opcji pokrycia
 
@@ -112,12 +114,12 @@ Aby wprowadzić wyjątki dla dowolnej wartości grupy świadczeń Affordable Car
 2. Na liście zaznacz pracownika.
 3. Na karcie **Zatrudnienie** w sekcji **Więcej informacji** wybierz opcję **Świadczenia ACA**.
 
-    ![Zmienianie opcji dla jednego pracownika](./media/hr-benefits-management-aca-change-single-employee.png)
+    ![Zmienianie opcji dla jednego pracownika.](./media/hr-benefits-management-aca-change-single-employee.png)
 
 4. Wybierz opcję **Edycja**.
 5. Dla każdego miesiąca wymagającego zmian zaznacz pole wyboru **Zastąp domyślne**, a następnie w razie potrzeby zmień inne wartości.
 
-    ![Zastępowanie wartości domyślnych](./media/hr-benefits-management-aca-override-default.png)
+    ![Zastępowanie wartości domyślnych.](./media/hr-benefits-management-aca-override-default.png)
 
 6. Wybierz opcję **Zapisz**.
 
@@ -132,7 +134,7 @@ Aby wskazać, czy ma zostać zgłoszony plan świadczeń, należy wykonać nast�
 3. Wybierz opcję **Edycja**.
 4. Ustaw wartość opcji **Zgłoszone do Affordable Care Act** na **Tak**.
 
-    ![Zgłaszanie objęcia świadczeniem zdrowotnym](./media/hr-benefits-management-aca-report-coverage.png)
+    ![Zgłaszanie objęcia świadczeniem zdrowotnym.](./media/hr-benefits-management-aca-report-coverage.png)
 
 5. Wybierz opcję **Zapisz**.
 
@@ -146,25 +148,25 @@ Formularze 1095-B i 1095-C ACA można również wygenerować i rozesłać je odn
 2. W razie potrzeby zmień parametry i wybierz przycisk **OK**.
 
     > [!NOTE]
-    > W wypadku drukowania formularzy 1095-C dla więcej niż 500 pracowników otrzymasz więcej niż jeden plik PDF. Zaleca się zwiększenie wartości pola **Maksymalny rozmiar pliku w megabajtach** na stronie **Parametry zarządzania dokumentami** do **150**. (Aby szybko otworzyć tę stronę, można użyć pola wyszukiwania na pasku nawigacji.)
+    > W wypadku drukowania formularzy 1095-C dla więcej niż 500 pracowników otrzymasz więcej niż jeden plik PDF. Zaleca się zwiększenie wartości pola **Maksymalny rozmiar pliku w megabajtach** na stronie **Parametry zarządzania dokumentami** do **150**. (Aby szybko otworzyć tę stronę, użyj pola wyszukiwania na pasku nawigacji.)
     >
-    > ![Zmienianie maksymalnego rozmiaru pliku](./media/hr-benefits-management-aca-maximum-file-size.png)
+    > ![Zmienianie maksymalnego rozmiaru pliku.](./media/hr-benefits-management-aca-maximum-file-size.png)
 
 3. Aby sprawdzić stan raportów i wyświetlić je, użyj pola wyszukiwania na pasku nawigacyjnym, aby otworzyć stronę **Zadania raportowania elektronicznego**.
 
-    ![Wyszukiwanie strony zadań raportowania elektronicznego](./media/hr-benefits-management-aca-search-electronic-reporting-jobs.png)
+    ![Wyszukiwanie strony zadań raportowania elektronicznego.](./media/hr-benefits-management-aca-search-electronic-reporting-jobs.png)
 
 4. Wybierz raport do wyświetlenia, a następnie wybierz polecenie **Pokaż pliki**.
 
-    ![Wyświetlanie plików](./media/hr-benefits-management-aca-show-files.png)
+    ![Wyświetlanie plików.](./media/hr-benefits-management-aca-show-files.png)
 
 5. Kliknij przycisk **Otwórz**.
 
-    ![Otwieranie pliku](./media/hr-benefits-management-aca-open-file.png)
+    ![Otwieranie pliku.](./media/hr-benefits-management-aca-open-file.png)
 
 6. Na pasku powiadomień w dolnej części okna przeglądarki otwórz plik ZIP, a następnie wybierz raport. Plik PDF można wyświetlić lub wydrukować.
 
-    ![Przykładowy formularz 1095-C](./media/hr-benefits-management-aca-1095-c-form.png)
+    ![Przykładowy formularz 1095-C.](./media/hr-benefits-management-aca-1095-c-form.png)
 
 ## <a name="view-aca-coverage-information"></a>Wyświetlanie informacji o świadczeniach ACA
 
@@ -179,7 +181,7 @@ Aby wyświetlić informacje, wykonaj następujące kroki.
 1. W obszarze roboczym **Zarządzanie świadczeniami** wybierz **Pracownik objęty ubezpieczeniem Affordable Care**.
 2. W polu **Nazwa grupy** wprowadź grupę.
 
-    ![Wyświetlanie świadczeń ACA](./media/hr-benefits-management-aca-view-coverage.png)
+    ![Wyświetlanie świadczeń ACA.](./media/hr-benefits-management-aca-view-coverage.png)
 
 Jeśli którakolwiek domyślna wartość grupy objętej świadczeniem ACA zostanie zastąpiona, obok niej będzie widoczna gwiazdka. Jeśli wartości dla wszystkich dwunastu miesięcy są takie same i nie zostały zastąpione, wartość zostanie wydrukowana w kolumnie **Wszystkie 12 miesięcy**.
 
@@ -199,11 +201,14 @@ Aby wyeksportować dowolną z list do programu Microsoft Excel, wykonaj następu
 
 Jeśli trzeba zgłosić osoby objęte świadczeniem, ponieważ zapewnia się objęcie ubezpieczeniam własnym, można wyświetlać osoby na utrzymaniu objęte planami świadczeń oznaczonymi jako **Objęte zgłoszeniem do ACA**. Na okienku akcji wybierz opcję **Wyświetl świadczenia osób na utrzymaniu**.
 
-![Wyświetlanie zakresu osób na utrzymaniu](./media/hr-benefits-management-aca-view-dependent-coverage.png)
+![Wyświetlanie zakresu osób na utrzymaniu.](./media/hr-benefits-management-aca-view-dependent-coverage.png)
 
 Wyświetlane są informacje o świadczeniach osób na utrzymaniu pracownika.
 
-![Świadczenie dla osoby na utrzymaniu](./media/hr-benefits-management-aca-dependents.png)
+![Świadczenie dla osoby na utrzymaniu.](./media/hr-benefits-management-aca-dependents.png)
 
 > [!NOTE]
 > Na stronie są dostępne tylko plany świadczeń oznaczone jako **objęte zgłoszeniem do ACA**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

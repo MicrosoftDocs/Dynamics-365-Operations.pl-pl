@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e1abf029e6f72c1c6a827a00483bb34c4abcaec5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ad76850fe055e96f3ed96e8a5d9524c58d8a187a87641a8669288468d542bb1e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808143"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6780292"
 ---
 # <a name="maintenance-worker-calendar-and-scheduling"></a>Kalendarz konserwatora i planowanie
 
@@ -32,7 +32,7 @@ Podczas planowania zleceń pracy tworzony jest harmonogram konserwatorów, narz�
 
 Poniższy zrzut ekranu pokazuje przykład konserwatora, który jest powiązany z zasobem korzystającym z kalendarza czasu pracy „produkcja”.
 
-![Rysunek 1](media/01-work-order-scheduling.png)
+![Rysunek 1.](media/01-work-order-scheduling.png)
 
 Ustawienia kalendarza dla narzędzi i składników majątku nie są potrzebne w odniesieniu do planowania zleceń pracy. Założeniem jest, że narzędzia i zasoby są dostępne 24 godziny na dobę w celu konserwacji.
 

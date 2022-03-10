@@ -2,47 +2,64 @@
 title: Plan stałych wynagrodzeń listy płac
 description: Ten temat zawiera szczegółowe informacje i przykładowe zapytanie dotyczące relacji jednostki Płace stałe plany wynagrodzeń w Dynamics 365 Human Resources.
 author: jcart
-ms.date: 04/07/2021
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 85cfce6f626090adab422ea6c60fc0778fd1ac67
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 14829f18fb5e3adde83e265cd6e70b60e1ff03ac
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021303"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069103"
 ---
 # <a name="payroll-fixed-compensation-plan"></a>Plan stałych wynagrodzeń listy płac
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ten temat zawiera szczegółowe informacje i przykładowe zapytanie dotyczące relacji jednostki Płace stałe plany wynagrodzeń w Dynamics 365 Human Resources.
+W tym temacie opisano encję Plan wynagrodzeń stałych dla Dynamics 365 Human Resources.
+
+### <a name="description"></a>opis
+
+Ta jednostka udostępnia system stałych wynagrodzeń przypisany do danego stanowiska pracownika.
+
+Nazwa fizyczna: mshr_payrollfixedcompensationplanentity.
 
 ## <a name="properties"></a>Właściwości
 
-| Właściwość<br>**Nazwa fizyczna**<br>**_Typ_** | Użycie | opis |
+| Właściwość</br>**Nazwa fizyczna**</br>**_Typ_** | Użycie | opis |
 | --- | --- | --- |
-| **Identyfikator pracownika**<br>mshr_fk_employee_id_value<br>*GUID* | Tylko do odczytu<br>Potrzebne<br>Klucz obcy: mshr_Employee_id jednostki mshr_payrollemployeeentity  | Identyfikator pracownika |
-| **Stawka płacy**<br>mshr_payrate<br>*Dziesiętny* | Tylko do odczytu<br>Potrzebne | Stawka płacy zdefiniowana w planie stałych wynagrodzeń. |
-| **Identyfikator planu**<br>mshr_planid<br>*Ciąg* | Tylko do odczytu<br>Potrzebne |Określa plan wynagrodzeń.  |
-| **Data wejścia w życie**<br>mshr_validfrom<br>*Przesunięcie daty i godziny* |  Tylko do odczytu<br>Potrzebne |Data, od której obowiązuje stałe wynagrodzenie pracownika.  |
-| **Jednostka Plan stałych wynagrodzeń listy płac**<br>mshr_payrollfixedcompensationplanentityid<br>*GUID* | Potrzebne<br>Wygenerowany przez system | Wygenerowana przez system wartość identyfikatora GUID w celu unikatowego zidentyfikowania planu wynagrodzeń. |
-| **Częstotliwość wypłat**<br>mshr_payfrequency<br>*Ciąg* | Tylko do odczytu<br>Potrzebne |Częstotliwość wypłat dla pracownika.  |
-| **Data ważności**<br>mshr_validto<br>*Przesunięcie daty i godziny* | Tylko do odczytu <br>Potrzebne | Data, do której obowiązuje stałe wynagrodzenie pracownika. |
-| **Identyfikator stanowiska**<br>mshr_positionid<br>*Ciąg* | Tylko do odczytu <br>Potrzebne | Identyfikator stanowiska powiązany z rejestracją pracownika i planu stałych wynagrodzeń. |
-| **Waluta**<br>mshr_currency<br>*Ciąg* | Tylko do odczytu <br>Potrzebne |Waluta zdefiniowana dla stałego planu wynagrodzeń   |
-| **Numer pracownika**<br>mshr_personnelnumber<br>*Ciąg* | Tylko do odczytu<br>Potrzebne |Unikalny numer personelu pracownika.  |
+| **Identyfikator planu**</br>mshr_planid</br>*Ciąg* | Tylko do odczytu | Określa plan wynagrodzeń.  |
+| **Numer pracownika**</br>mshr_personnelnumber</br>*Ciąg* | Tylko do odczytu | Unikalny numer personelu pracownika. |
+| **Stawka płacy**</br>mshr_payrate</br>*Dziesiętny* | Tylko do odczytu | Stawka płacy zdefiniowana w planie stałych wynagrodzeń. |
+| **Identyfikator stanowiska**</br>mshr_positionid</br>*Ciąg* | Tylko do odczytu | Identyfikator stanowiska powiązany z rejestracją pracownika i planu stałych wynagrodzeń. |
+| **Data wejścia w życie**</br>mshr_validfrom</br>*Przesunięcie daty i godziny* |  Tylko do odczytu | Data, od której obowiązuje stałe wynagrodzenie pracownika.  |
+| **Data ważności**</br>mshr_validto</br>*Przesunięcie daty i godziny* | Tylko do odczytu | Data, do której obowiązuje stałe wynagrodzenie pracownika. |
+| **Częstotliwość wypłat**</br>mshr_payfrequency</br>*Ciąg* | Tylko do odczytu | Identyfikator [częstotliwości wypłat wynagrodzenia](hr-admin-integration-payroll-api-compensation-pay-frequency.md) dla danej stawki płacy. |
+| **Waluta**</br>mshr_currency</br>*Ciąg* | Tylko do odczytu | Waluta zdefiniowana dla stałego planu wynagrodzeń. |
+| **Jednostka Plan stałych wynagrodzeń listy płac**</br>mshr_payrollfixedcompensationplanentityid</br>*GUID* | Wygenerowany przez system | Wygenerowana przez system wartość identyfikatora GUID w celu unikatowego zidentyfikowania planu wynagrodzeń. |
 
-**Kwerenda**
+## <a name="relations"></a>Relacje
+
+|Wartości właściwości | Encja powiązana | Właściwość nawigacji | Typ kolekcji |
+| --- | --- | --- | --- |
+| _mshr_fk_employee_id_value | [mshr_payrollemployeeentity](hr-admin-integration-payroll-api-payroll-employee.md) | mshr_FK_Employee_id | mshr_FK_PayrollEmployeeEntity_FixedCompPlan |
+| _mshr_fk_job_id_value | [mshr_payrollpositionjobentity](hr-admin-integration-payroll-api-payroll-position-job.md) | mshr_FK_Job_id | mshr_FK_PayrollPositionJobEntity_FixedCompPlan |
+| _mshr_fk_payrollposition_id_value | [mshr_payrollpositionentity](hr-admin-integration-payroll-api-payroll-position.md) | mshr_FK_PayrollPosition_id | mshr_FK_PayrollPositionEntity_FixedCompPlan |
+| _mshr_fk_plan_id_value | mshr_hcmcompfixedplantableentity | mshr_FK_Plan_id | - |
+| _mshr_fk_variablecompaward_id_value | [mshr_payrollvariablecompensationawardentity](hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md) | mshr_FK_VariableCompAward_id | mshr_FK_PayrollVariableCompensationAwardEntity_FixedComp |
+
+## <a name="example-query"></a>Przykład kwerendy
 
 **Wniosek**
 
@@ -54,18 +71,24 @@ GET [Organizaton URI]/api/data/v9.1/mshr_payrollfixedcompensationplanentities?$f
 
 ```json
 {
-            "mshr_planid": "GradeC",
-            "mshr_personnelnumber": "000041",
-            "mshr_payrate": 75200,
-            "mshr_positionid": "000276",
-            "mshr_validfrom": "2011-04-05T00:00:00Z",
-            "mshr_validto": "2154-12-31T00:00:00Z",
-            "mshr_payfrequency": "Annual",
-            "mshr_currency": "USD",
-            "_mshr_fk_employee_id_value": "00000d3c-0000-0000-d5ff-004105000000",
-            "_mshr_fk_plan_id_value": "0000070c-0000-0000-b328-fef003000000",
-            "_mshr_fk_job_id_value": "00010094-0000-0000-df00-014105000000",
-            "mshr_payrollfixedcompensationplanentityid": "0000029f-0000-0000-d5ff-004105000000",
-            "_mshr_fk_payroll_id_value": null
+    "mshr_planid": "GradeC",
+    "mshr_personnelnumber": "000041",
+    "mshr_payrate": 75200,
+    "mshr_positionid": "000276",
+    "mshr_validfrom": "2011-04-05T00:00:00Z",
+    "mshr_validto": "2154-12-31T00:00:00Z",
+    "mshr_payfrequency": "Annual",
+    "mshr_currency": "USD",
+    "_mshr_fk_employee_id_value": "00000d3c-0000-0000-d5ff-004105000000",
+    "_mshr_fk_plan_id_value": "0000070c-0000-0000-b328-fef003000000",
+    "_mshr_fk_job_id_value": "00010094-0000-0000-df00-014105000000",
+    "mshr_payrollfixedcompensationplanentityid": "0000029f-0000-0000-d5ff-004105000000",
+    "_mshr_fk_payroll_id_value": null
 }
 ```
+
+## <a name="see-also"></a>Informacje dodatkowe
+
+[Wprowadzenie do API integracji płac](hr-admin-integration-payroll-api-introduction.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

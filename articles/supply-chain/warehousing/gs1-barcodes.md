@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ef28fcaf308225a78bcbac42f591e6b24b21b1b1
-ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
+ms.openlocfilehash: 702985ef9726690829e35e43d270477be318fc41
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7384544"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075221"
 ---
 # <a name="gs1-bar-codes-and-qr-codes"></a>Kody kreskowe GS1 i kody QR
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- Preview until 10.0.25 GA -->
 
 Pracownicy magazynu często muszą wykonywać kilka zadań, gdy używają skanera w urządzeniu przenośnym do rejestrowania ruchów towaru, palety lub kontenera. Te zadania mogą obejmować zarówno skanowanie kodów kreskowych, jak i ręczne wprowadzanie informacji na urządzeniu przenośnym. W kodach kreskowych jest używany format specyficzny dla firmy, który definiuje się w firmie i zarządza za pomocą rozwiązania Microsoft Dynamics 365 Supply Chain Management.
 

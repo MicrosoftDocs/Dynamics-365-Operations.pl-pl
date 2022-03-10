@@ -2,28 +2,27 @@
 title: Omówienie polecenia zapłaty SEPA
 description: Jednolity Obszar Płatniczy w Euro (SEPA) został ustanowiony przez Komisję Europejską i decyduje o tym, że wszystkie płatności elektroniczne są uważane za krajowe, niezależnie od kraju/regionu, w którym znajdują się osoby, przedsiębiorstwa, organizacje oraz właściwy bank. Nie istnieje różnica między płatnościami krajowymi i międzynarodowymi. System SEPA obejmuje 28 państw członkowskich Unii Europejskiej (UE) oraz dodatkowo Islandię, Liechtenstein, Norwegię, Szwajcarię, Monako i San Marino. SEPA tworzy jeden rynek dla transakcji płatności w ramach europejskiego obszaru gospodarczego (EOG). Ostatecznie SEPA umożliwia zmniejszenie liczby formatów płatności, którymi operują banki, firmy i osoby prywatne.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankAccountTable, CustBankAccounts, CustParameters, CustTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
-ms.custom: 11144
+ms.custom:
+- "11144"
+- intro-internal
 ms.assetid: 3277c9b6-e46e-40c9-aa76-9b0449467842
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fcb7585d344988e00093231f785c1a746226e4e0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5f71eca0ca9ee07d43bdf737874f442f0029e87e
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446700"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984385"
 ---
 # <a name="sepa-direct-debit-overview"></a>Omówienie polecenia zapłaty SEPA
 
@@ -31,8 +30,7 @@ ms.locfileid: "4446700"
 
 Jednolity Obszar Płatniczy w Euro (SEPA) został ustanowiony przez Komisję Europejską i decyduje o tym, że wszystkie płatności elektroniczne są uważane za krajowe, niezależnie od kraju/regionu, w którym znajdują się osoby, przedsiębiorstwa, organizacje oraz właściwy bank. Nie istnieje różnica między płatnościami krajowymi i międzynarodowymi. System SEPA obejmuje 28 państw członkowskich Unii Europejskiej (UE) oraz dodatkowo Islandię, Liechtenstein, Norwegię, Szwajcarię, Monako i San Marino. SEPA tworzy jeden rynek dla transakcji płatności w ramach europejskiego obszaru gospodarczego (EOG). Ostatecznie SEPA umożliwia zmniejszenie liczby formatów płatności, którymi operują banki, firmy i osoby prywatne.   
 
-<a name="what-is-the-goal-of-sepa-direct-debits"></a>Jaki jest cel poleceń zapłaty SEPA?
----------------------------------------
+## <a name="what-is-the-goal-of-sepa-direct-debits"></a>Jaki jest cel poleceń zapłaty SEPA?
 
 Polecenie zapłaty SEPA umożliwia wierzycielowi otrzymanie funduszy z konta bankowego odbiorcy, pod warunkiem, że udzielono odpowiedniej zgody podpisanej przez odbiorcę na rzecz wierzyciela. Odbiorca podpisuje zgodę, która autoryzuje wierzyciela do pobrania płatności i powoduje, że bank odbiorcy wypłaca zaległą kwotę. 
 
@@ -84,3 +82,6 @@ W ramach obu schematów poleceń zapłaty SEPA, odbiorcy mają określone prawa 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

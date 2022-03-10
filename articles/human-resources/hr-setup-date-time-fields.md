@@ -1,14 +1,13 @@
 ---
-title: Rozumienie pól Data i Godzina
-description: Opis oczekiwań podczas używania pól daty i godziny w rozwiązaniu Microsoft Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 02/03/2020
+title: Opis pól Data i Godzina
+description: W tym temacie wyjaśniono, czego można się spodziewać podczas korzystania z pól daty i godziny w rozwiązaniu Microsoft Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmPersonnelManagementWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
@@ -16,50 +15,50 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3a8bc27bb4560b4a15aef483ff465c4b943bf02b
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 7c81155f0c5150af44982f224c8eca2026a78ee7
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5889891"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8060896"
 ---
 # <a name="understand-date-and-time-fields"></a>Opis pól Data i Godzina
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-**Pola daty i godziny** stanowią podstawową koncepcję w Dynamics 365 Human Resources. Ważne jest, aby zrozumieć sposób pracy z danymi **Daty i godziny** w formularzach Dataverse i źródłach zewnętrznych.
+
+**Pola daty i godziny** stanowią podstawową koncepcję w Microsoft Dynamics 365 Human Resources. Ważne jest, aby zrozumieć sposób pracy z danymi **Daty i godziny** w formularzach Dataverse i źródłach zewnętrznych.
 
 ## <a name="understanding-the-difference-between-date-and-date-and-time-field-data-types"></a>Opis różnicy między typami danych pól daty oraz daty i godziny
 
-Pola **Data i godzina** zawierają informacje o strefie czasowej, natomiast pola **Data** nie. Pola **Data** zawierają te same informacje w dowolnej lokalizacji. Wprowadzenie daty w polu **Data** powoduje, że Human Resources zapisuje tę samą datę do bazy danych.
+Pola **Data i godzina** zawierają informacje o strefie czasowej, natomiast pola **Data** nie. Pola **Data** zawierają te same informacje w dowolnej lokalizacji. Wprowadzenie daty w polu **Data** powoduje, że zapisuje tę samą datę do bazy danych.
 
-W przypadku wyświetlania danych w polu **Data i Godzina** Human Resources dostosowuje datę i godzinę na podstawie konfiguracji strefy czasowej użytkownika w formularzu **Opcje użytkownika** (**Wspólne > Ustawienia > Opcje użytkownika**). Data i godzina wprowadzona w polu mogą być inne niż informacje zapisane w bazie danych.
+W przypadku wyświetlania danych w polu **Data i Godzina** Human Resources dostosowuje datę i godzinę na podstawie konfiguracji strefy czasowej użytkownika w formularzu **Opcje użytkownika** (**Wspólne \> Ustawienia \> Opcje użytkownika**). Data i godzina wprowadzona w polu mogą być inne niż informacje zapisane w bazie danych.
 
-[![Formularz Opcje użytkownika](./media/useroptionsform.png)](./media/useroptionsform.png)
+[![Strona Opcje użytkownika.](./media/Useroptionsform.png)](./media/Useroptionsform.png)
 
-## <a name="understanding-date-and-time-fields-in-forms"></a>Rozumienie użycia pól Data i Godzina w formularzach 
+## <a name="understanding-date-and-time-fields-on-pages"></a>Rozumienie użycia pól Data i Godzina na stronach 
 
 W polu **Data i Godzina**, dane wyświetlane na ekranie nie są takie same jak dane przechowywane w bazie danych, jeśli strefa czasowa użytkownika nie jest ustawiona na Uniwersalny czas koordynowany (UTC). Dane w polach **Data i godzina** są zawsze zapisywane jako czas UTC.
 
-[![Formularz pracownika UTC](./media/worker-form.png)](./media/worker-form.png)
+[![Czas UTC strony pracownika.](./media/worker-form.png)](./media/worker-form.png)
 
 ## <a name="understand-date-and-time-fields-in-the-database"></a>Rozumienie użycia pól Data i Godzina w bazie danych 
 
-Gdy Human Resources zapisuje wartość **Data i godzina** w bazie danych, zapisuje dane w formacie UTC. Umożliwia to użytkownikom wyświetlanie wszelkich danych dotyczących **Data i godzina** w odniesieniu do stref czasowych zdefiniowanych w opcjach użytkownika.
+Gdy zapisuje wartość **Data i godzina** w bazie danych, zapisuje dane w formacie UTC. Umożliwia to użytkownikom wyświetlanie wszelkich danych dotyczących **Data i godzina** w odniesieniu do stref czasowych zdefiniowanych w opcjach użytkownika.
  
 W powyższym przykładzie czas rozpoczęcia to punkt w czasie, a nie określona data. Zmiana strefy czasowej zalogowanego użytkownika z poziomu GMT +12:00 na GMT UTC powoduje, że ten sam rekord pokazuje dane w formacie 04/30/2019 12:00:00 zamiast 05/01/2019 12:00:00.
-  
+
 W poniższym przykładzie zatrudnienie pracownika nr. 000724 staje się aktywne w tym samym czasie, niezależnie od strefy czasowej. Pracownik będzie aktywny w dniu 04/30/2019 w strefie czasowej GMT, który jest taki sam jak 05/01/2019 w strefie GMT +12:00. Odnoszą się do tego samego punktu w czasie, a nie do określonej daty. 
 
-[![Formularz pracownika GMT](./media/worker-form2.png)](./media/worker-form2.png)
+[![Czas GMT strony pracownika.](./media/worker-form2.png)](./media/worker-form2.png)
 
 ## <a name="date-and-time-data-in-data-management-framework-excel-dataverse-and-power-bi"></a>Dane daty i godziny w strukturze zarządzania danymi, Excel, Dataverse i Power BI 
 
-Środowisko zarządzania danymi, dodatek programu Excel, Dataverse i raportowanie Power BI są przeznaczone do interakcji z danymi bezpośrednio na poziomie bazy danych. Ponieważ nie istnieje klient, który dostosowuje dane **Data i godzina** do strefy czasowej użytkownika, wszystkie wartości **Data i godzina** są w formacie UTC, co może prowadzić do niektórych nieprawidłowych założeń podczas wprowadzania lub wyświetlania danych.  
+Środowisko zarządzania danymi (DMF), dodatek programu Excel, Dataverse i raportowanie Power BI są przeznaczone do interakcji z danymi bezpośrednio na poziomie bazy danych. Ponieważ nie istnieje klient, który dostosowuje dane **Data i godzina** do strefy czasowej użytkownika, wszystkie wartości **Data i godzina** są w formacie UTC, co może prowadzić do niektórych nieprawidłowych założeń podczas wprowadzania lub wyświetlania danych.
  
-Dane **Data i godzina** przesłane za pośrednictwem DMF, programu Excel lub Dataverse są uznawane przez bazę danych w formacie UTC. Może to spowodować pomyłkę w przypadku, gdy przesłana wartość **Data i godzina** nie zostanie wyświetlona w oczekiwany sposób, ponieważ użytkownik wyświetlający dane nie ma ustawionej czasu UTC dla danej strefy czasowej użytkownika. 
+Dane **Data i godzina** są przesyłane przez DMF, Excel lub Dataverse, baza danych przyjmuje, że jest w UTC. Jeśli jednak użytkownik, który wyświetla dane, nie ma ustawionej strefy czasowej użytkownika o wartości UTC, przesłana wartość **daty i czasu** nie będzie wyświetlana zgodnie z oczekiwaniami i użytkownicy mogą zostać zdezgowowani. 
  
 Podczas eksportowania danych ten sam element może mieć stan odwrotny. Dane **Data i godzina** w wyeksportowanej jednostce DMF mogą być różne w zależności od tego, co jest wyświetlane w kliencie systemu Dynamics. 
  
@@ -69,27 +68,27 @@ W przypadku używania źródeł zewnętrznych, takich jak DMF do wyświetlania l
 
 **Human Resources ze strefą czasową użytkownika ustawioną jako UTC**
 
-[![Formularz pracownika ustawiony na czas UTC](./media/worker-form3.png)](./media/worker-form3.png)
+[![Strona pracownika ustawiony na czas UTC.](./media/worker-form3.png)](./media/worker-form3.png)
 
 **Human Resources ze strefą czasową użytkownika ustawioną jako GMT +12:00** 
 
-[![Formularz pracownika ustawiony na czas GMT](./media/worker-form4.png)](./media/worker-form4.png)
+[![Strona pracownika ustawiony na czas GMT.](./media/worker-form4.png)](./media/worker-form4.png)
 
 **Excel za pośrednictwem protokołu OData**
 
-[![Excel za pośrednictwem protokołu OData](./media/Excelviaodata.png)](./media/Excelviaodata.png)
+[![Excel za pośrednictwem protokołu OData.](./media/Excelviaodata.png)](./media/Excelviaodata.png)
 
 **Ustawianie DMF**
 
-[![Ustawianie DMF](./media/DMFStaging.png)](./media/DMFStaging.png)
+[![Ustawianie DMF.](./media/DMFStaging.png)](./media/DMFStaging.png)
 
 **Eksportowanie DMF**
 
-[![Eksportowanie DMF](./media/DMFexport.png)](./media/DMFexport.png)
+[![Eksportowanie DMF.](./media/DMFExport.png)](./media/DMFExport.png)
 
 **Excel za pośrednictwem Dataverse**
 
-[![Excel za pośrednictwem Dataverse](./media/ExcelCDS.png)](./media/ExcelCDS.png)
+[![Excel za pośrednictwem Dataverse.](./media/ExcelCDS.png)](./media/ExcelCDS.png)
 
 ## <a name="see-also"></a>Informacje dodatkowe
 

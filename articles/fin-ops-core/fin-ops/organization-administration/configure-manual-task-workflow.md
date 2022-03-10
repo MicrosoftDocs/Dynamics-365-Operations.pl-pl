@@ -2,11 +2,9 @@
 title: Konfigurowanie zadań ręcznych w przepływie pracy
 description: W tym temacie wyjaśniono sposób konfigurowania właściwości zadania ręcznego.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,16 +14,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f61e0f7ee16519767192fb379f20c1ed20b69caa
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 726abcf20789fb3a7a9a3adbebf17249042910d1
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798812"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066475"
 ---
 # <a name="configure-manual-tasks-in-a-workflow"></a>Konfigurowanie zadań ręcznych w przepływie pracy
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 W tym temacie wyjaśniono sposób konfigurowania właściwości zadania ręcznego.
 
@@ -381,3 +382,6 @@ Gdy zadanie ręczne zostanie przypisane użytkownikowi, musi on podjąć wobec n
 5. Zaznacz pole wyboru **Deleguj**, jeśli użytkownik ma mieć możliwość przypisania zadania do innego użytkownika.
 6. Zaznacz pole wyboru **Przypisz ponownie**, jeśli użytkownik ma mieć możliwość przypisania zadania innemu użytkownikowi w kolejce elementów roboczych.
 7. Zaznacz pole wyboru **Zwolnienie**, jeśli użytkownik ma mieć możliwość przypisania zadania do kolejki elementów roboczych. Następnie inny użytkownik może wykonać to zadanie.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

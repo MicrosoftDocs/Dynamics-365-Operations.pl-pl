@@ -11,18 +11,16 @@ ms.search.region: Global
 ms.author: myvakalo
 ms.search.validFrom: 2021-09-29
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 3dc36c8562f39a076bd4871524e2d132d1883d28
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: 3c8ad7b0bd46c49fc989be091f44630a6a3eebc1
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860724"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985918"
 ---
-# <a name="saleshistorycleanupperformanceimprovements"></a>Ulepszenia wydajności oczyszczania historii sprzedaży
+# <a name="sales-history-cleanup-performance-improvements"></a>Ulepszenia wydajności oczyszczania historii sprzedaży
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)] 
-<!-- KFM: Preview until GA with 10.0.24 -->
 
 Okresowe zadanie wsadowe **Czyszczenie historii sprzedaży** może trwać długo, jeśli jest wykonywane rzadko w środowiskach z dużą ilością aktualizacji sprzedaży. W takich sytuacjach funkcja *Ulepszeń wydajności oczyszczania historii sprzedaży* może pomóc w skróceniu czasu trwania działania i poprawieniu niezawodności.
 
@@ -34,7 +32,7 @@ Ta funkcja usprawnia istniejące zadanie oczyszczania w następujący sposób:
 
 Po włączeniu tej funkcji zadanie wsadowe **Oczyszczania historii aktualizacji sprzedaży** (**Sprzedaż i marketing \> Zadania okresowe \> Czyszczenie \> Oczyszczanie historii aktualizacji sprzedaży**) będzie uruchamiane tak jak poprzednio, ale z lepszą wydajnością i przez maksymalnie 2 godziny. Oznacza to, że może być konieczne uruchomienie go kilka razy w celu oczyszczenia wszystkich danych w określonym horyzoncie czasowym przechowywania.
 
-## <a name="turn-on-the-saleshistorycleanupperformanceimprovements-feature"></a>Funkcja włączania ulepszeń wydajności oczyszczania historii sprzedaży
+## <a name="turn-on-the-sales-history-cleanup-performance-improvements-feature"></a>Włącz funkcję ulepszeń wydajności oczyszczania historii sprzedaży
 
 Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
 

@@ -2,9 +2,7 @@
 title: GETENUMVALUEBYNAME, funkcja ER
 description: Ten temat zawiera ogólne informacje o używaniu funkcji GETENUMVALUEBYNAME w module Raportowanie elektroniczne (ER).
 author: NickSelin
-manager: kfend
 ms.date: 09/23/2020
-ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bfc173130a9fc57385826f77443ec28946ef68fd
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 03759852e5ceb13b79b0df4592bdcef76eb0a82865725c00df40b9cc5f786240
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5570597"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6774444"
 ---
 # <a name="getenumvaluebyname-er-function"></a>GETENUMVALUEBYNAME, funkcja ER
 
@@ -63,7 +61,7 @@ Wyjątek nie jest zgłaszany, jeśli wartość *wyliczenia* nie zostanie znalezi
 
 Na poniższej ilustracji wartość stałotekstowa **ReportDirection** została wprowadzona do modelu danych. Zauważ, że etykiety są zdefiniowane dla wartości wyliczenia.
 
-![Dostępne wartości dla wyliczenia modelu danych](./media/ER-data-model-enumeration-values.PNG)
+![Dostępne wartości dla wyliczenia modelu danych.](./media/ER-data-model-enumeration-values.PNG)
 
 Na ilustracji przedstawiono następujące szczegóły:
 
@@ -71,7 +69,7 @@ Na ilustracji przedstawiono następujące szczegóły:
 - Wyrażenie `$IsArrivals` jest zaprojektowane tak, aby używało źródła danych **$Direction** opartego na wyliczeniu modelu jako parametru tej funkcji.
 - Wartością tego wyrażenia porównania jest **TRUE**.
 
-![Przykład wyliczenia modelu danych](./media/ER-data-model-enumeration-usage.PNG)
+![Przykład wyliczenia modelu danych.](./media/ER-data-model-enumeration-usage.PNG)
 
 ## <a name="example-2"></a>Przykład 2
 
@@ -79,14 +77,14 @@ Funkcje `GETENUMVALUEBYNAME` i [`LISTOFFIELDS`](er-functions-list-listoffields.m
 
 Na poniższej ilustracji źródło danych **TransType** zostało wprowadzone w odwzorowaniu modelu. To źródło danych odwołuje się do wyliczenia aplikacji **LedgerTransType**.
 
-![Źródło danych mapowania modelu, które odwołuje się do wyliczenia aplikacji](./media/er-functions-text-getenumvaluebyname-example2-1.png)
+![Źródło danych mapowania modelu, które odwołuje się do wyliczenia aplikacji.](./media/er-functions-text-getenumvaluebyname-example2-1.png)
 
 Na poniższej ilustracji przedstawiono źródło danych **TransTypeList** skonfigurowane w odwzorowaniu modelu. To źródło danych jest skonfigurowane na podstawie wyliczenia aplikacji **TransType**. Funkcja `LISTOFFIELDS` służy do zwracania wszystkich wartości wyliczenia jako listy rekordów zawierających pola. W ten sposób szczegóły wszystkich wartości wyliczenia są ujawniane.
 
 > [!NOTE]
 > Pole **EnumValue** jest skonfigurowane dla źródła danych **TransTypeList** za pomocą wyrażenia `GETENUMVALUEBYNAME(TransType, TransTypeList.Name)`. To pole zwraca wartość wyliczenia dla każdego rekordu na liście.
 
-![Źródło danych mapowania modelu, które zwraca wszystkie wartości wyliczenia wybranego wyliczenia jako listę rekordów](./media/er-functions-text-getenumvaluebyname-example2-2.png)
+![Źródło danych mapowania modelu, które zwraca wszystkie wartości wyliczenia wybranego wyliczenia jako listę rekordów.](./media/er-functions-text-getenumvaluebyname-example2-2.png)
 
 Na poniższej ilustracji przedstawiono źródło danych **VendTrans** skonfigurowane w odwzorowaniu modelu. To źródło danych zwraca rekordy transakcji dostawcy z tabeli aplikacji **VendTrans**. Typ księgi każdej transakcji jest określony przez wartość pola **VendTrans**.
 
@@ -95,11 +93,11 @@ Na poniższej ilustracji przedstawiono źródło danych **VendTrans** skonfiguro
 >
 > Pole **TransTypeTitle** jest powiązane z polem **LedgerType** modelu danych, które umożliwia używanie tych informacji w każdym formacie ER, który używa modelu danych jako źródła danych.
 
-![Źródło danych mapowania modelu, które zwraca transakcje dostawcy](./media/er-functions-text-getenumvaluebyname-example2-3.png)
+![Źródło danych mapowania modelu, które zwraca transakcje dostawcy.](./media/er-functions-text-getenumvaluebyname-example2-3.png)
 
 Na poniższej ilustracji przedstawiono sposób użycia [debugera źródła danych](er-debug-data-sources.md) do testowania skonfigurowanego mapowania modelu.
 
-![Użycie debugera źródła danych do testowania skonfigurowanego mapowania modelu](./media/er-functions-text-getenumvaluebyname-example2-4.gif)
+![Użycie debugera źródła danych do testowania skonfigurowanego mapowania modelu.](./media/er-functions-text-getenumvaluebyname-example2-4.gif)
 
 Pole **LedgerType** model danych udostępnia etykiety typów transakcji zgodnie z oczekiwaniami.
 

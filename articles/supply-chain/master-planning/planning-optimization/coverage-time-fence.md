@@ -2,11 +2,9 @@
 title: Horyzonty czasowe zapotrzebowania
 description: W tym temacie opisano sposób skonfigurowania horyzontów czasowych zapotrzebowania w przypadku korzystania z optymalizacji planowania. Horyzont czasowy zapotrzebowania wskazuje horyzont i limit planowania.
 author: ChristianRytt
-manager: tfehr
 ms.date: 01/18/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqGroup, ReqItemTable, ReqPlanSched
 audience: Application User
@@ -18,14 +16,16 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2021-01-18
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 2b52a49109274c9be9ed8aa069517b175ea6281c
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 32bf890d1ff74155a75862afd6b0e861fbfc10e2
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5501325"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567326"
 ---
 # <a name="coverage-time-fences"></a>Horyzonty czasowe zapotrzebowania
+
+[!include [banner](../../includes/banner.md)]
 
 W tym temacie opisano sposób skonfigurowania *horyzontów czasowych zapotrzebowania* w przypadku korzystania z optymalizacji planowania. Planiści mogą definiować horyzont planowania (horyzont czasowy zapotrzebowania w dniach) oraz wykluczyć podaż i popyt wykraczający poza ten horyzont. Dlatego też za pomocą horyzontów czasowych zapotrzebowania można zapobiec „hałasowi”, który jest spowodowany sugestiami podaży, których nie trzeba zaksięgować przez wiele miesięcy. Przykłady to prognozy na następny rok i zamówienia klientów, które są poza zwykłym czasem realizacji.
 

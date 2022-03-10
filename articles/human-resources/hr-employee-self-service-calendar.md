@@ -1,8 +1,8 @@
 ---
 title: Tworzenie kalendarza zespołu
 description: W programie Dynamics 365 Human Resources można wyświetlać i tworzyć kalendarze zespołu.
-author: andreabichsel
-ms.date: 07/16/2021
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,17 +12,20 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ccbf12d4dcc75e22fc62c356653a91b9a8a8d1761ccefb18c93e65f343250830
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8ee39f35f9d81f47c5438ddf48451d24ab0c0ed3
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744233"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065259"
 ---
 # <a name="view-team-and-company-calendars"></a>Wyświetlanie kalendarzy zespołów i firm
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -75,7 +78,7 @@ Kalendarze zawierają teraz dodatkowe filtry i opcje. Wszystkie kalendarze zawie
 - Wnioski dotyczące czasu wolnego 
 - Wnioski o nieobecność
 
-Konfiguracja kalendarza w parametrach urlopu i nieobecności określa dostępne opcje widoku.
+Konfiguracja kalendarza w **parametrach urlopu i nieobecności** określa dostępne opcje widoku.
 
 Kalendarze można również filtrować według kierowników lub działów. Przypisanie stanowiska głównego określa pracowników, którzy są wyświetlani po ustawieniu tych filtrów. 
 

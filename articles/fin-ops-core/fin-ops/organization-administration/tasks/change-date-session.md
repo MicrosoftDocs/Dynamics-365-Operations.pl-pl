@@ -2,11 +2,9 @@
 title: Zmienianie daty sesji
 description: W tym temacie wyjaśniono, jak zmienić datę sesji.
 author: pvillads
-manager: AnnBe
 ms.date: 07/31/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SystemDate
 audience: Application User
@@ -15,16 +13,19 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9b83d6044545467f7c7488a4b2a97be75d3e27f9
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: fb8f896645df7c7c9a8afa3d9dc9106a7162959d
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694624"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065637"
 ---
 # <a name="change-the-date-for-a-session"></a>Zmienianie daty sesji
 
 [!include [banner](../../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
 
 W tym temacie wyjaśniono, jak zmienić datę sesji. Domyślnie podczas wprowadzania i księgowania zapisów w arkuszu lub dokumentów źródłowych jest używana bieżąca data. Datę używaną w bieżącej sesji można zmienić. Ta funkcja pozwala w razie potrzeby antydatować zapisy w arkuszu lub dokumenty źródłowe.
 
@@ -32,3 +33,6 @@ W tym temacie wyjaśniono, jak zmienić datę sesji. Domyślnie podczas wprowadz
 2. W polu **Data** wprowadź datę.
 3. Kliknij przycisk **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

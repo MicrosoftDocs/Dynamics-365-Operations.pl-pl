@@ -1,7 +1,7 @@
 ---
 title: Wysyłanie zamówień jako dostaw bezpośrednich
 description: W tym temacie opisano sposób tworzenia dostawy bezpośredniej na podstawie zamówienia sprzedaży.
-author: omulvad
+author: Henrikan
 ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFro
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5488ac6d29a99bcaa5ea29ea6da131858070011c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 94890b0915a49052c298090f124cf2b91c462de8
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5824805"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572448"
 ---
 # <a name="ship-orders-as-direct-deliveries"></a>Wysyłanie zamówień jako dostaw bezpośrednich
 

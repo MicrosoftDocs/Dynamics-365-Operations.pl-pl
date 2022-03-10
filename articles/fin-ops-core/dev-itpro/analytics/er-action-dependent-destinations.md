@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 93adc5b91667fdcd5969439994170fe7d28258fc9f5762d1262d8e72862c4f5f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e0c836d4a0be47b753d74dc9d6d40ea7d9197176
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762255"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323986"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>Konfigurowanie miejsc docelowych raportowania elektronicznego zależnych od akcji
 
 [!include [banner](../includes/banner.md)]
 
-Możesz skonfigurować [miejsca docelowe](electronic-reporting-destinations.md) dla każdej [konfiguracji](general-electronic-reporting.md#Configuration) [formatu](general-electronic-reporting.md#FormatComponentOutbound) składników wyjściowych (folderów lub plików) [raportowania elektronicznego (ER)](general-electronic-reporting.md) używanych do generowania dokumentów wychodzących. Użytkownicy, którzy uruchamiają format ER tego typu i mają odpowiednie prawa dostępu, mogą również zmieniać skonfigurowane ustawienia miejsc docelowych w czasie wykonywania.
+Możesz skonfigurować [miejsca docelowe](electronic-reporting-destinations.md) dla każdej konfiguracji formatu składników wyjściowych (folderów lub plików) [raportowania elektronicznego](general-electronic-reporting.md) (ER) używanych do [generowania](general-electronic-reporting.md#Configuration) dokumentów wychodzących. Użytkownicy, którzy uruchamiają format ER tego typu i mają odpowiednie prawa dostępu, mogą również zmieniać skonfigurowane ustawienia miejsc docelowych w czasie wykonywania.
 
 W wersji rozwiązania Microsoft Dynamics 365 Finance **10.0.17 i nowszej** format ER można uruchomić, [aprowizując ](er-apis-app10-0-17.md) kod akcji, który użytkownik wykonuje, uruchamiając ten format ER. Na przykład w module **Rozrachunki z odbiorcami** w ustawieniach zarządzania drukowaniem można wybrać format ER generujący określony dokument biznesowy, na przykład fakturę niezależną. Następnie można wybrać **Widok**, aby wyświetlić podgląd faktury, lub przycisk **Drukuj**, aby wysłać ją do drukarki. Jeśli akcja użytkownika jest przekazywana w czasie wykonywania dla uruchomionego formatu ER, można skonfigurować różne miejsca docelowe ER dla różnych akcji użytkowników. W tym temacie opisano sposób konfigurowania miejsc docelowych ER dla tego typu formatu ER.
 
@@ -115,7 +115,6 @@ Poniższa lista dokumentów biznesowych jest kontrolowane przez funkcję **Przek
 - Zamówienie zakupu — zapytanie dotyczące zakupu
 - Potwierdzenie dla zamówienia sprzedaży
 - Ponaglenie
-- Wyciąg z konta odbiorcy
 - Nota odsetkowa
 - Zawiadomienie o płatności dostawcy
 - Zapytanie ofertowe

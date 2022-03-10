@@ -1,12 +1,10 @@
 ---
 title: Przetwarzanie arkuszy finansowych
 description: Ten temat opisuje funkcje rozwiązania Microsoft Dynamics 365 Finance, które mogą ułatwić przetwarzanie arkusza finansowego, a także zagwarantować rejestrowanie właściwych danych i bezpieczeństwo dla aparatu wewnętrznej kontroli.
-author: ShylaThompson
-manager: AnnBe
+author: kweekley
 ms.date: 08/09/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
-ms.author: peakerbl
+ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f9f19f0714fc160792a29261e21fe4ec8d62c4b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7f9f4019618891909e674c6b936f79778ac84744
+ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5249246"
+ms.lasthandoff: 10/31/2021
+ms.locfileid: "7726784"
 ---
 # <a name="general-journal-processing"></a>Przetwarzanie arkuszy finansowych
 
@@ -44,14 +42,14 @@ Na stronie **Nazwy arkuszy** można skonfigurować następujące elementy:
 
 Nazwa arkusza może być używana tylko do korekt. W takim przypadku można wskazać, że dla wszystkich firm ważne jest tylko konto typu **Księga**. 
 
-[![Typy kont kontroli arkusza](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
+[![Typy kont kontroli arkusza.](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
 
 Nazwa arkusza może być używana tylko dla określonego segmentu lub w określonym zakresie dla kont głównych. 
 
-[![Segment kontroli arkusza](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
+[![Segment kontroli arkusza.](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
 
 Opcja **Automatyczne stornowanie** jest dostępna w arkuszach finansowych. Na przykład użytkownik ma korektę naliczania, jeśli dokument nie został jeszcze przetworzony, jak pokazano na poniższej ilustracji.
-[![Stornowanie arkusza finansowego](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
+[![Wycofywanie arkusza finansowego.](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
 
 Dodatek programu Microsoft Excel z funkcjonalnością wpisów arkusza oferuje dodatkowy poziom automatyzacji i ułatwia wprowadzanie danych. Działanie **Otwórz wiersze w programie Excel** jest dostępne na stronach **Arkusz finansowy** i **Załącznik arkusza**. 
 

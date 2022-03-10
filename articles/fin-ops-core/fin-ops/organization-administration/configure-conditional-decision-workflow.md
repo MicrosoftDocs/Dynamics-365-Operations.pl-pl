@@ -14,16 +14,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ed53eeb26e1b4b1df1647739ce1d115c7dd169f8
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 0fa708b4ac1f17a9ed6852a9eeb3e764b750a4a4
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747938"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070965"
 ---
 # <a name="configure-conditional-decisions-in-a-workflow"></a>Konfigurowanie decyzji warunkowych w przepływie pracy
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Procedura zamieszczona poniżej umożliwia skonfigurowanie właściwości decyzji warunkowej.
 

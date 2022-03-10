@@ -1,29 +1,26 @@
 ---
 title: Kontrola kondycji urządzeń peryferyjnych i usług punktu sprzedaży
 description: Ten temat stanowi przegląd operacji sprawdzania kondycji w punkcie sprzedaży (POS).
-author: rubendel
-manager: AnnBe
+author: BrianShook
 ms.date: 03/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 86f0964b6d929d0434a8bf04aaefc173bee21c6f
-ms.sourcegitcommit: d77e902b1ab436e5ff3e78c496f5a70ef38e737c
+ms.openlocfilehash: cd4e97b8dbfc4faf336d4ea927342fd4fa3cc7cd
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4415065"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779879"
 ---
 # <a name="health-check-for-pos-peripherals-and-services"></a>Kontrola kondycji urządzeń peryferyjnych i usług punktu sprzedaży
 
@@ -83,3 +80,6 @@ Niestandardowe testy kondycji można również tworzyć w przypadku urządzeń, 
 ## <a name="related-articles"></a>Powiązane artykuły
 
 [Wyzwalacze aplikacji Modern POS (MPOS) i drukowanie](dev-itpro/pos-trigger-printing.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

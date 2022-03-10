@@ -2,11 +2,9 @@
 title: Omówienie stron koszyka i realizacji zamówienia
 description: Ten temat stanowi omówienie stron koszyka i realizacji transakcji w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,20 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a9b7fe1722c366eb504882c61a337a95500c92ab
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3e450192025b29c655be49050aa3e61fc8acd898
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5000516"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982975"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>Omówienie stron koszyka i realizacji zamówienia
 
 [!include [banner](includes/banner.md)]
 
 Ten temat stanowi omówienie stron koszyka i realizacji transakcji w Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 Strona koszyka w witrynie e-Commerce zawiera wszystkie towary dodane przez odbiorcę do koszyka. Strona koszyka jest budowana przy użyciu modułu koszyka. Moduł koszyka jest kontenerem obsługującym wszystkie moduły wymagane do zaprezentowania towarów w koszyku. Moduł koszyk może również wykorzystywać inne moduły do wyświetlania podsumowania zamówień i kodów promocyjnych, które zostały zastosowane do zamówienia odbiorcy.
 
@@ -41,7 +37,7 @@ Strona koszyka służy jako torba do zakupów i zawiera wszystkie towary dodane 
 
 Poniższa ilustracja pokazuje przykład strony koszyka zbudowanej przy użyciu biblioteki modułów online i motywu „Fabrikam”.
 
-![Przykład strony koszyka](./media/cart2.PNG)
+![Przykład strony koszyka.](./media/cart2.PNG)
 
 Główna treść strony koszyka pokazuje wszystkie elementy, które klient dodał do koszyka. Zaprezentuj wszystkie odpowiednie rabaty. Rabaty te obejmują rabaty złożone. Przykładem mogą być „Kup 3 pozycje i uzyskaj 10% zniżki” lub „Kup butelkę i plecak, aby uzyskać 10% zniżki”. W module podsumowanie zamówień jest wyświetlana kwota należna po zastosowaniu rabatów, kosztów wysyłki, podatków itp. Istnieje także moduł kodu promocyjnego, który pozwala odbiorcy na zastosowanie lub usunięcie kodów promocyjnych.
 
@@ -57,7 +53,7 @@ Strona realizacja jest miejscem, w którym odbiorcy wprowadzają informacje wyma
 
 Na poniższej ilustracji przedstawiono przykład strony realizacji, która została utworzona przy użyciu biblioteki modułów.
 
-![Przykład strony realizacji](./media/Checkout.PNG)
+![Przykład strony realizacji.](./media/Checkout.PNG)
 
 Główną treścią strony realizacja jest to, gdzie są zbierane wszystkie informacje o zamówieniach. Informacje te obejmują adres wysyłkowy, opcje dostawy oraz informacje o płatności. Realizacja zamówienia ma przebieg krok po kroku, ponieważ informacje muszą zostać wprowadzone w określonym zamówieniu do przetworzenia. Na przykład adres wysyłkowy musi zostać wprowadzony, aby można było obliczyć koszty wysyłki, a płatność może być autoryzowana.
 
@@ -87,7 +83,7 @@ Klient może ukończyć proces kasy jako użytkownik gość lub użytkownik zalo
 
 ### <a name="order-summary"></a>Podsumowanie zamówienia
 
-W ramach procesu realizacji transakcji jest wyświetlane podsumowanie towarów wierszowych w koszyku, dzięki czemu odbiorca może zweryfikować zamówienie przed jego umieszczeniem. Nie można edytować towarów w wierszach w trakcie przepływu realizacji transakcji. Łącze do koszyka jest jednak dostarczane w sytuacji, gdy użytkownik chce wrócić i edytować pozycje w wierszu.
+Do kasy wyświetla podsumowanie pozycji w koszyku, dzięki czemu klient może zweryfikować zamówienie przed złożeniem zamówienia. Nie można edytować towarów w wierszach w trakcie przepływu realizacji transakcji. Łącze do koszyka jest jednak dostarczane w sytuacji, gdy użytkownik chce wrócić i edytować pozycje w wierszu.
 
 Gdy odbiorca poda informacje dotyczące wysyłki i rozliczania zamówienia, podsumowanie zamówień odzwierciedla kwotę należną po punktach lojalnościowych, kartami upominkowymi i innymi płatnościami.
 
@@ -106,3 +102,6 @@ Aby uzyskać więcej informacji dotyczących sposobu tworzenia strony realizacji
 [Omówienie stron szczegółów produktów](quick-tour-pdp.md)
 
 [Omówienie stron zarządzania kontem](quick-tour-account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

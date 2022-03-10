@@ -1,29 +1,27 @@
 ---
-title: Obszar roboczy wpisu faktury od dostawcy
+title: Obszar roboczy Automatyzacja faktur od dostawców
 description: W tym temacie wyjaśniono, jak skonfigurować obszar roboczy, który jest powiązany z fakturami od dostawcy, oraz wyświetlić informacje dostępne w Microsoft Power BI.
 author: abruer
-manager: AnnBe
-ms.date: 09/28/2020
+ms.date: 02/14/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.assetid: ''
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2020-09-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 04aca717c3f255799699d63fb74ee0b543f8c8ba
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f28cc5f63df2f0d8a4c8cae407f7166aa4fa03db
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993270"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182586"
 ---
-# <a name="vendor-invoice-entry-workspace"></a>Obszar roboczy wpisu faktury od dostawcy
+# <a name="vendor-invoice-automation-workspace"></a>Obszar roboczy Automatyzacja faktur od dostawców
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -32,11 +30,11 @@ W tym temacie wyjaśniono, jak skonfigurować obszar roboczy, który jest powią
 
 ## <a name="overview"></a>Omówienie
 
-Obszar roboczy **Wpis faktury dostawcy** zawiera informacje związane z przetwarzaniem faktur od dostawcy. Ten obszar roboczy zawiera widok **Moja praca** i stronę **Analizy - Wszystkie firmy**. Widok **Moja praca** zawiera kafelki podsumowań, siatki transakcji z dostawcami i informacje o odnośnych dostawcach. Strona **Analizy - Wszystkie firmy** wykorzystuje funkcje programu Power BI, aby pokazywać wizualizacje dotyczące faktur dla dostawców.
+Obszar roboczy **Automatyzacja faktur od dostawców** zawiera informacje związane z przetwarzaniem faktur od dostawcy. Ten obszar roboczy zawiera widok **Moja praca** i stronę **Analizy - Wszystkie firmy**. Widok **Moja praca** zawiera kafelki podsumowań, siatki transakcji z dostawcami i informacje o odnośnych dostawcach. Strona **Analizy - Wszystkie firmy** wykorzystuje funkcje programu Power BI, aby pokazywać wizualizacje dotyczące faktur dla dostawców.
 
 ## <a name="set-up-the-workspace-to-show-power-bi-content"></a>Konfigurowanie obszaru roboczego do wyświetlania zawartości Power BI
 
-Aby umożliwić wyświetlanie danych w wizualizacjach Power BI w obszarze roboczym **Wpis faktury od dostawcy**, należy ukończyć tę konfigurację.
+Aby umożliwić wyświetlanie danych w wizualizacjach Power BI w obszarze roboczym **Automatyzacja faktur od dostawców**, należy ukończyć tę konfigurację.
 
 1. W obszarze roboczym **Zarządzanie funkcjami** filtruj listę, aby znaleźć funkcję **Automatyzacji faktur od dostawców**.
 3. Wybierz **Włącz teraz**.
@@ -56,20 +54,20 @@ Aby wyświetlić informacje wyświetlane w obszarze roboczym, należy mieć rol�
 
 ### <a name="company-selection"></a>Wybór firmy
 
-Po włączeniu funkcji **Automatyczne faktury od dostawców** pole **Firma** jest wyświetlane u góry obszaru roboczego. Wybór w polu **Firma** wpływa na wszystkie informacje wyświetlane w obszarze roboczym. Domyślnie w widoku są wyświetlane informacje o firmie, do której jest zalogowany użytkownik. Wybierając inną firmę w polu **Firma**, można wyświetlić informacje dotyczące firmy w obszarze roboczym systemu. Następnie możesz wybrać kafelek w obszarze roboczym, aby przejść do powiązanej strony w wybranej firmie.
+Po włączeniu funkcji **Automatyzacja faktur od dostawców** pole **Firma** jest wyświetlane u góry obszaru roboczego. Wybór w polu **Firma** wpływa na wszystkie informacje wyświetlane w obszarze roboczym. Domyślnie w widoku są wyświetlane informacje o firmie, do której jest zalogowany użytkownik. Wybierając inną firmę w polu **Firma**, można wyświetlić informacje dotyczące firmy w obszarze roboczym systemu. Następnie możesz wybrać kafelek w obszarze roboczym, aby przejść do powiązanej strony w wybranej firmie.
 
 ### <a name="summary-tiles"></a>Kafelki podsumowania
 
 Tabliczki w sekcji **Podsumowanie oczekujących faktur** w widoku **Moja praca** zawierają przegląd informacji o stanie faktur od dostawców. Można wyświetlić arkusze, które nie zostały jeszcze zaksięgowane i faktury, które zostały wstrzymane. Ponadto istnieją cztery tabliczki skojarzone z funkcją automatyzacji faktur od dostawcy:
 
-- Wymagane jest dopasowanie ręcznego dokumentu dostawy
-- Nie powiodła się weryfikacja zgodności
-- Faktury nie przesłane do przepływu pracy
-- Niezaimportowane faktury
+- **Wymagane jest dopasowanie ręcznego dokumentu dostawy**
+- **Nie powiodła się weryfikacja zgodności**
+- **Faktury nie przesłane do przepływu pracy**
+- **Niezaimportowane faktury**
 
-(Te cztery kafelki wymagają włączenia funkcji automatyzacji faktur od dostawcy w module Zarządzanie funkcjami.)
+(Te cztery kafelki wymagają włączenia funkcji automatyzacji faktur od dostawcy w module **Zarządzanie funkcjami**.)
 
-Aby można było skorzystać z kafelka **Odzyskaj faktury od dostawcy**, funkcja musi być włączona w parametrach modułu rozrachunków z dostawcami. Przejdź do **Rozrachunki z dostawcami \> Parametry modułu rozrachunków z dostawcami**, a następnie na karcie **Faktura** określ opcję **Zezwalaj na zwrot faktury od dostawcy** na **Tak**.
+Aby można było skorzystać z kafelka **Odzyskaj faktury od dostawcy**, funkcja musi być włączona w **parametrach modułu rozrachunków z dostawcami**. Przejdź do **Rozrachunki z dostawcami \> Parametry modułu rozrachunków z dostawcami**, a następnie na karcie **Faktura** określ opcję **Zezwalaj na zwrot faktury od dostawcy** na **Tak**.
 
 Gdy funkcja jest włączona, trzy kafelki zostaną zgrupowane razem w obszarze roboczym w sekcji nazywanej **Arkuszami**. Kafelki to **Arkusze**, **Arkusze - przypisane do mnie** oraz **Pula faktur**. 
 
@@ -116,3 +114,6 @@ W poniższej tabeli pokazano wizualizacje dostępne na każdej stronie raportu.
 | Faktury, których nie udało się zaimportować | <ul><li>Faktury, których nie udało się zaimportować</li><li>Faktury, których nie udało się zaimportować według firmy</li></ul> |
 | Przyczyny niepowodzenia automatyzacji | <ul><li>Faktury zakończone niepowodzeniem</li><li>Faktury zakończone niepowodzeniem przez firmę</li><li>Faktury zakończone niepowodzeniem przez grupę dostawców</li></ul> |
 | Stan przepływu pracy                | <ul><li>Faktury w przepływie pracy</li><li>Wystąpienia przepływu pracy faktur dla dostawców</li><li>Przypisanie na osobę zatwierdzającą</li><li>Przepływ pracy faktury od dostawcy na firmę</li><li>Średnia liczba dni w przepływie pracy wg osób zatwierdzających</li></ul> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

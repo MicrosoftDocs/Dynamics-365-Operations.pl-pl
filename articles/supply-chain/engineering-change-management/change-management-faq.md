@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-03-25
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 69232eed8520bafeb734ffad43b333bf9e36909e
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: dee16f9d6f8ea583f221a7f6eb466675c8c622d0
+ms.sourcegitcommit: 9638d3a2bd592dc28f5952bda4af7dcf06edfaa4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018692"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8007614"
 ---
 # <a name="engineering-change-management-faq"></a>Zarządzanie zmianami projektowymi — FAQ
 
@@ -46,7 +46,7 @@ Ta opcja jest o wiele łatwiejsza do zarządzania, ponieważ jeśli chcesz zmien
 
 Większość organizacji wybiera tę opcję, ponieważ zapewnia zarządzanie wersjami i zmianami, ale nie powoduje to dodatkowych kosztów ogólnych śledzenia wersji w poszczególnych transakcjach, zapasach i podczas planowania głównego.
 
-## <a name="which-fields-are-copied-to-the-released-item-template"></a>Które pola są kopiowane do zwolnionego szablonu towaru?
+## <a name="which-fields-are-copied-from-the-released-item-template"></a>Które pola są kopiowane ze zwolnionego szablonu towaru?
 
 Gdy firma projektowa tworzy produkt projektowy, jest on tworzony jako zwolniony produkt w firmie projektowej. Zwolniony produkt, który jest tworzony na podstawie wybranego *szablonu zwolnionego towaru*. (Szablon zwolnionego towaru jest już istniejącym zwolnionym produktem). Zwolniony szablon towaru jest również używany podczas zwalniania produktu do firmy operacyjnej. W każdym przypadku zwolniony szablon towaru definiuje większość wartości pól dla zwolnionego produktu, a te wartości pochodzą ze skojarzonej strony **Szczegóły zwolnionego produktu**.
 
@@ -63,6 +63,11 @@ W poniższych tabelach przedstawiono pola kopiowane podczas tych procesów.
 | **Warianty produktu** | Wszystkie pola w sekcji **Domyślny wariant produktu** | Te same pola, które są kopiowane dla firmy projektowej |
 
 Oprócz pól widocznych w poprzedniej tabeli wszystkie domyślne ustawienia zamówienia są kopiowane ze zwolnionego szablonu towaru, zarówno podczas tworzenia produktu w firmie projektowej, jak i po zwolnieniu do firmy operacyjnej. (Aby wyświetlić domyślne ustawienia zamówienia dla zwolnionego szablonu towaru, otwórz odpowiednią stronę **Szczegóły zwolnionego produktu**, a następnie, w okienku akcji, na karcie **Zarządzanie zapasami** wybierz opcję **Ustawienia domyślne zamówień**).
+
+> [!NOTE]
+>
+> - Jednostka jest domyślnie domyślną wartością szablonu.
+> - W przypadku sprzedawców detalicznych używających funkcji Dynamics 365 Commerce podczas przypisywania kategorii detalicznej do produktu kategoria detaliczna odnosi się do wartości domyślnych w wielu polach, które dotyczą zwolnionego poziomu produktu. Te wartości domyślne zastępują wartości domyślne, które być może zostały już ustawione w szablonie lub skopiowane z inżynierii.
 
 ## <a name="should-i-create-a-separate-legal-entity-for-engineering-products-or-use-an-existing-legal-entity"></a>Czy należy utworzyć odrębną osobę prawną do tworzenia produktów czy używać istniejącej?
 

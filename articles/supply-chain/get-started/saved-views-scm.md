@@ -2,11 +2,9 @@
 title: Standardowe zapisane widoki w aplikacji Supply Chain Management
 description: W tym temacie opisano standardowe zapisane widoki, które są dostępne, oraz sposób ich włączania.
 author: kamaybac
-manager: annbe
 ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,14 +14,16 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 78cb1c5a90061af224fcd5933af81b6c5cd7e57d
-ms.sourcegitcommit: 5d62c53d84f2ec27136427acfd4314d055298a7b
+ms.openlocfilehash: 0709574ea44fcf841321044da31781862fcf1420
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5123475"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103695"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Standardowe zapisane widoki w aplikacji Supply Chain Management
+
+[!include [banner](../../includes/banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management zawiera kilka zapisanych widoków, które można włączyć i używać. Niektóre z tych standardowych zapisanych widoków są optymalizowane i nazwane dla określonej roli lub zadania (na przykład „Kontrola jakości” lub „Przyjęcie”). Inne są optymalizowane, tak aby uwzględniały tylko pola i ustawienia, które zgodnie ze statystykami Microsoft dotyczącymi użytkowania są najczęściej używane przez klientów. Te zapisane widoki są zazwyczaj nazywane widokami *uproszczonymi*. W tym temacie opisano standardowe zapisane widoki, które są dostępne, oraz sposób ich włączania i dostosowywania.
 
@@ -37,9 +37,9 @@ Aby uzyskać więcej informacji dotyczących dostosowywania zapisanych widoków 
 
 ## <a name="available-saved-views-and-how-to-enable-them"></a>Dostępne zapisane widoki i sposób ich włączania
 
-Aby korzystać z funkcji zapisanych widoków, niezależnie od tego, czy będziesz używać standardowych zapisanych widoków, należy włączyć funkcję *Zapisane widoki* w obszarze [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Aby korzystać z funkcji zapisanych widoków, niezależnie od tego, czy będziesz używać standardowych zapisanych widoków, należy włączyć funkcję *Zapisane widoki* w obszarze [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (od wersji 10.0.21 ta funkcja jest domyślnie włączona).
 
-Pozostałe sekcje tego tematu zawierają tabele opisujące standardowe zapisane widoki, które są obecnie dostępne dla poszczególnych odpowiednich modułów. Każda tabela zawiera nazwę każdego zapisanego widoku, stronę, na której można go znaleźć, oraz opis tego widoku. W każdej tabeli jest również przedstawiana nazwa funkcji, która zawiera zapisany widok. Aby wyświetlić standardowy zapisany widok w systemie, należy włączyć określoną funkcję w [zarządzaniu funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Pozostałe sekcje tego tematu zawierają tabele opisujące standardowe zapisane widoki, które są obecnie dostępne dla poszczególnych odpowiednich modułów. Każda tabela zawiera nazwę każdego zapisanego widoku, stronę, na której można go znaleźć, oraz opis tego widoku. W każdej tabeli jest również przedstawiana nazwa funkcji, która zawiera zapisany widok. Aby wyświetlić standardowy zapisany widok w systemie, należy włączyć określoną funkcję w [zarządzaniu funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). W wersji 10.0.25 wszystkie wyświetlane widoki są domyślnie włączone.
 
 ## <a name="saved-views-for-the-inventory-management-module"></a>Zapisane widoki dla modułu Zarządzanie zapasami
 
@@ -47,15 +47,15 @@ W poniższej tabeli opisano zapisane widoki dostępne dla modułu Zarządzanie z
 
 | Strona | Nazwa widoku | Opis widoku | Nazwa funkcji |
 |---|---|---|---|
-| Lista dostępnych | Finanse | Ten uproszczony widok umożliwia skoncentrowanie się na informacjach finansowych podczas zarządzania dostępnymi zapasami. | Zapisane widoki dla zarządzania zapasami |
-| Lista dostępnych | Kontrola jakości | Ten uproszczony widok umożliwia skoncentrowanie się na kontroli jakości podczas zarządzania dostępnymi zapasami. | Zapisane widoki dla zarządzania zapasami |
-| Lista dostępnych | Przyjęcie | Ten uproszczony widok umożliwia skoncentrowanie się na operacjach przyjęcia podczas zarządzania dostępnymi zapasami. | Zapisane widoki dla zarządzania zapasami |
-| Lista dostępnych | Wysyłkowy | Ten uproszczony widok umożliwia skoncentrowanie się na operacjach wysyłki podczas zarządzania dostępnymi zapasami. | Zapisane widoki dla zarządzania zapasami |
-| Transakcje | Uproszczony | Ten uproszczony widok umożliwia przegląd stanu zapasów bez zakłóceń spowodowanych przez informacje finansowe i inne pola, które są używane rzadziej. | Zapisane widoki dla zarządzania zapasami |
-| Zamówienia przeniesienia | Wysyłkowy | Ten uproszczony widok umożliwia skoncentrowanie się na operacjach wysyłki podczas zarządzania zamówieniami przeniesienia. | Zapisane widoki dla zarządzania zapasami |
-| Zamówienia przeniesienia | Przyjęcie | Ten uproszczony widok umożliwia skoncentrowanie się na operacjach przyjęcia podczas zarządzania zamówieniami przeniesienia. | Zapisane widoki dla zarządzania zapasami |
-| Zamówienia przeniesienia | Kontrola jakości | Ten uproszczony widok umożliwia skoncentrowanie się na kontroli jakości podczas zarządzania zamówieniami przeniesienia. | Zapisane widoki dla zarządzania zapasami |
-| Zamówienia przeniesienia | Finanse | Ten uproszczony widok umożliwia skoncentrowanie się na informacjach finansowych podczas zarządzania zamówieniami przeniesienia. | Zapisane widoki dla zarządzania zapasami |
+| Lista dostępnych | Finanse | Ten uproszczony widok umożliwia skoncentrowanie się na informacjach finansowych podczas zarządzania dostępnymi zapasami. | Zapisane widoki dla zarządzania zapasami<br><br>(domyślnie w dniu, gdy wersja 10.0.21) |
+| Lista dostępnych | Kontrola jakości | Ten uproszczony widok umożliwia skoncentrowanie się na kontroli jakości podczas zarządzania dostępnymi zapasami. | Zapisane widoki dla zarządzania zapasami<br><br>(domyślnie w dniu, gdy wersja 10.0.21) |
+| Lista dostępnych | Odbieranie | Ten uproszczony widok umożliwia skoncentrowanie się na operacjach przyjęcia podczas zarządzania dostępnymi zapasami. | Zapisane widoki dla zarządzania zapasami<br><br>(domyślnie w dniu, gdy wersja 10.0.21) |
+| Lista dostępnych | Wysyłka | Ten uproszczony widok umożliwia skoncentrowanie się na operacjach wysyłki podczas zarządzania dostępnymi zapasami. | Zapisane widoki dla zarządzania zapasami<br><br>(domyślnie w dniu, gdy wersja 10.0.21) |
+| Transakcje | Uproszczone | Ten uproszczony widok umożliwia przegląd stanu zapasów bez zakłóceń spowodowanych przez informacje finansowe i inne pola, które są używane rzadziej. | Zapisane widoki dla zarządzania zapasami<br><br>(domyślnie w dniu, gdy wersja 10.0.21) |
+| Zamówienia przeniesienia | Wysyłka | Ten uproszczony widok umożliwia skoncentrowanie się na operacjach wysyłki podczas zarządzania zamówieniami przeniesienia. | Zapisane widoki dla zarządzania zapasami<br><br>(domyślnie w dniu, gdy wersja 10.0.21) |
+| Zamówienia przeniesienia | Odbieranie | Ten uproszczony widok umożliwia skoncentrowanie się na operacjach przyjęcia podczas zarządzania zamówieniami przeniesienia. | Zapisane widoki dla zarządzania zapasami<br><br>(domyślnie w dniu, gdy wersja 10.0.21) |
+| Zamówienia przeniesienia | Kontrola jakości | Ten uproszczony widok umożliwia skoncentrowanie się na kontroli jakości podczas zarządzania zamówieniami przeniesienia. | Zapisane widoki dla zarządzania zapasami<br><br>(domyślnie w dniu, gdy wersja 10.0.21) |
+| Zamówienia przeniesienia | Finanse | Ten uproszczony widok umożliwia skoncentrowanie się na informacjach finansowych podczas zarządzania zamówieniami przeniesienia. | Zapisane widoki dla zarządzania zapasami<br><br>(domyślnie w dniu, gdy wersja 10.0.21) |
 
 ## <a name="saved-views-for-the-master-planning-module"></a>Zapisane widoki dla modułu Planowanie główne
 
@@ -63,8 +63,8 @@ W poniższej tabeli opisano zapisane widoki dostępne dla modułu Planowanie gł
 
 | Strona | Nazwa widoku | Opis widoku | Nazwa funkcji |
 |---|---|---|---|
-| Zamówienia planowane: strona szczegółów zamówienia planowanego | Uproszczony | Ten uproszczony widok zawiera tylko pola, które są najczęściej używane do pracy ze szczegółami pojedynczego zamówienia planowanego. Dzięki temu zapewnia on szybszy przegląd i usprawnione procesy pracy. | Zapisane widoki dla planowanych zamówień |
-| Zamówienia planowane: strona listy zamówień planowanych | Uproszczony | Ten uproszczony widok zawiera tylko pola, które są najczęściej używane do pracy z listą zamówień planowanych. Dzięki temu zapewnia on szybszy przegląd i usprawnione procesy pracy. | Zapisane widoki dla planowanych zamówień |
+| Zamówienia planowane: strona szczegółów zamówienia planowanego | Uproszczony | Ten uproszczony widok zawiera tylko pola, które są najczęściej używane do pracy ze szczegółami pojedynczego zamówienia planowanego. Dzięki temu zapewnia on szybszy przegląd i usprawnione procesy pracy. | Zapisane widoki dla planowanych zamówień<br><br>(domyślnie w dniu, gdy wersja 10.0.25) |
+| Zamówienia planowane: strona listy zamówień planowanych | Uproszczone | Ten uproszczony widok zawiera tylko pola, które są najczęściej używane do pracy z listą zamówień planowanych. Dzięki temu zapewnia on szybszy przegląd i usprawnione procesy pracy. | Zapisane widoki dla planowanych zamówień<br><br>(domyślnie w dniu, gdy wersja 10.0.25) |
 
 ## <a name="saved-views-for-the-procurement-and-sourcing-module"></a>Zapisane widoki dla modułu Zaopatrzenie i sourcing
 
@@ -72,10 +72,22 @@ W poniższej tabeli opisano zapisane widoki dostępne dla modułu Zaopatrzenie i
 
 | Strona | Nazwa widoku | Opis widoku | Nazwa funkcji |
 |---|---|---|---|
-| Szczegóły zamówienia zakupu | Tworzenie zamówień | Ten uproszczony widok został zoptymalizowany pod kątem tworzenia nowych zamówień zakupu. | Zapisane widoki dla zamówień zakupu |
-| Szczegóły zamówienia zakupu | Zarządzanie zapasami | Ten uproszczony widok został zoptymalizowany pod kątem wykonywania działań związanych z zapasami, takich jak wykonywanie kolejnych czynności dla przyjętych zapasów, przyjmowanie zapasów, sprawdzanie wymagań netto i korygowanie ilości zamówień. | Zapisane widoki dla zamówień zakupu |
-| Szczegóły zamówienia zakupu | Zarządzanie finansami | Ten uproszczony widok został zoptymalizowany pod kątem wykonywania działań związanych z finansami, takich jak fakturowanie i sprawdzanie cen, sum i opłat. | Zapisane widoki dla zamówień zakupu |
-| Szczegóły zamówienia zakupu | Zatwierdzenie zamówienia | Ten uproszczony widok został zoptymalizowany pod kątem zatwierdzania zamówień zakupu. | Zapisane widoki dla zamówień zakupu |
+| Szczegóły zamówienia zakupu | Tworzenie zamówień | Ten uproszczony widok został zoptymalizowany pod kątem tworzenia nowych zamówień zakupu. | Zapisane widoki dla zamówień zakupu<br><br>(domyślnie w dniu, gdy wersja 10.0.25) |
+| Szczegóły zamówienia zakupu | Zarządzanie zapasami | Ten uproszczony widok został zoptymalizowany pod kątem wykonywania działań związanych z zapasami, takich jak wykonywanie kolejnych czynności dla przyjętych zapasów, przyjmowanie zapasów, sprawdzanie wymagań netto i korygowanie ilości zamówień. | Zapisane widoki dla zamówień zakupu<br><br>(domyślnie w dniu, gdy wersja 10.0.25) |
+| Szczegóły zamówienia zakupu | Zarządzanie finansami | Ten uproszczony widok został zoptymalizowany pod kątem wykonywania działań związanych z finansami, takich jak fakturowanie i sprawdzanie cen, sum i opłat. | Zapisane widoki dla zamówień zakupu<br><br>(domyślnie w dniu, gdy wersja 10.0.25) |
+| Szczegóły zamówienia zakupu | Zatwierdzanie zamówienia | Ten uproszczony widok został zoptymalizowany pod kątem zatwierdzania zamówień zakupu. | Zapisane widoki dla zamówień zakupu<br><br>(domyślnie w dniu, gdy wersja 10.0.25) |
+
+## <a name="saved-views-for-the-product-information-management-module"></a>Zapisane widoki dla modułu Zarządzanie informacjami o produktach
+
+W poniższej tabeli opisano zapisane widoki dostępne dla modułu Zarządzanie informacjami o produktach.
+
+| Strona | Nazwa widoku | Opis widoku | Nazwa funkcji |
+|---|---|---|---|
+| Lista zwolnionych produktów | Tworzenie produktu | Uproszczony widok strony, który zawiera tylko pola używane najczęściej podczas tworzenia produktów. | Zapisane widoki zwolnionych produktów<br><br>(domyślnie w dniu, gdy wersja 10.0.21) |
+| Szczegóły zwolnionego produktu | Tworzenie produktu | Uproszczony widok strony, który zawiera tylko pola używane najczęściej podczas tworzenia produktów. | Zapisane widoki zwolnionych produktów<br><br>(domyślnie w dniu, gdy wersja 10.0.21) |
+| Szczegóły zwolnionego produktu | Zarządzanie informacjami logistycznymi | Uproszczony widok strony, który zawiera tylko pola używane najczęściej podczas zarządzania informacjami logistycznymi dla produktów. | Zapisane widoki zwolnionych produktów<br><br>(domyślnie w dniu, gdy wersja 10.0.21) |
+| Szczegóły zwolnionego produktu | Zarządzanie informacjami związanymi z zakupem | Uproszczony widok strony, który zawiera tylko pola używane najczęściej podczas zarządzania informacjami związanymi z zakupem dla produktów. | Zapisane widoki zwolnionych produktów<br><br>(domyślnie w dniu, gdy wersja 10.0.21) |
+| Szczegóły zwolnionego produktu | Zarządzanie informacjami związanymi ze sprzedażą | Uproszczony widok strony, który zawiera tylko pola używane najczęściej podczas zarządzania informacjami związanymi ze sprzedażą dla produktów. | Zapisane widoki zwolnionych produktów<br><br>(domyślnie w dniu, gdy wersja 10.0.21) |
 
 ## <a name="saved-views-for-the-production-control-module"></a>Zapisane widoki dla modułu Kontrola produkcji
 
@@ -83,10 +95,10 @@ W poniższej tabeli opisano zapisane widoki dostępne dla modułu Kontrola produ
 
 | Strona | Nazwa widoku | Opis widoku | Nazwa funkcji |
 |---|---|---|---|
-| Strona listy składowej (BOM) zlecenia produkcyjnego | Uproszczony | Ten uproszczony widok zawiera tylko najczęściej używane pola. Dzięki temu zapewnia on szybszy przegląd i usprawnione procesy pracy. | Zapisane widoki dla kontroli produkcji |
-| Strona szczegółów zlecenia produkcyjnego | Uproszczony | Ten uproszczony widok zawiera tylko najczęściej używane pola. Dzięki temu zapewnia on szybszy przegląd i usprawnione procesy pracy. | Zapisane widoki dla kontroli produkcji |
-| Strona listy pobrania zlecenia produkcyjnego | Uproszczony | Ten uproszczony widok zawiera tylko najczęściej używane pola. Dzięki temu zapewnia on szybszy przegląd i usprawnione procesy pracy. | Zapisane widoki dla kontroli produkcji |
-| Strona listy zleceń produkcyjnych | Uproszczony | Ten uproszczony widok zawiera tylko najczęściej używane pola. Dzięki temu zapewnia on szybszy przegląd i usprawnione procesy pracy. | Zapisane widoki dla kontroli produkcji |
+| Strona listy składowej (BOM) zlecenia produkcyjnego | Uproszczony | Ten uproszczony widok zawiera tylko najczęściej używane pola. Dzięki temu zapewnia on szybszy przegląd i usprawnione procesy pracy. | Zapisane widoki kontroli produkcji<br><br>(domyślnie w dniu, gdy wersja 10.0.21) |
+| Strona szczegółów zlecenia produkcyjnego | Uproszczone | Ten uproszczony widok zawiera tylko najczęściej używane pola. Dzięki temu zapewnia on szybszy przegląd i usprawnione procesy pracy. | Zapisane widoki kontroli produkcji<br><br>(domyślnie w dniu, gdy wersja 10.0.21) |
+| Strona listy pobrania zlecenia produkcyjnego | Uproszczone | Ten uproszczony widok zawiera tylko najczęściej używane pola. Dzięki temu zapewnia on szybszy przegląd i usprawnione procesy pracy. | Zapisane widoki kontroli produkcji<br><br>(domyślnie w dniu, gdy wersja 10.0.21) |
+| Strona listy zleceń produkcyjnych | Uproszczone | Ten uproszczony widok zawiera tylko najczęściej używane pola. Dzięki temu zapewnia on szybszy przegląd i usprawnione procesy pracy. | Zapisane widoki kontroli produkcji<br><br>(domyślnie w dniu, gdy wersja 10.0.21) |
 
 ## <a name="saved-views-for-the-sales-and-marketing-module"></a>Zapisane widoki dla modułu Sprzedaż i marketing
 
@@ -94,10 +106,10 @@ W poniższej tabeli opisano zapisane widoki dostępne dla modułu Sprzedaż i ma
 
 | Strona | Nazwa widoku | Opis widoku | Nazwa funkcji |
 |---|---|---|---|
-| Arkusz dokumentu dostawy | Przegląd arkusza | Ten uproszczony widok zawiera tylko pola, które są najczęściej używane do przeglądania arkuszy dokumentów dostawy. | Zapisane widoki dotyczące sprzedaży i marketingu |
-| Zamówienie sprzedaży | Tworzenie zamówień | Ten uproszczony widok zawiera tylko pola, które są najczęściej używane do tworzenia zamówień sprzedaży. | Zapisane widoki dotyczące sprzedaży i marketingu |
-| Zamówienie sprzedaży | Przegląd zamówienia | Ten uproszczony widok zawiera tylko pola, które są najczęściej używane do przeglądania zamówień sprzedaży. | Zapisane widoki dotyczące sprzedaży i marketingu |
-| Oferta sprzedaży | Tworzenie oferty | Ten uproszczony widok zawiera tylko pola, które są najczęściej używane do tworzenia ofert sprzedaży. | Zapisane widoki dotyczące sprzedaży i marketingu |
+| Arkusz dokumentu dostawy | Przegląd arkusza | Ten uproszczony widok zawiera tylko pola, które są najczęściej używane do przeglądania arkuszy dokumentów dostawy. | Zapisane widoki dotyczące sprzedaży i marketingu<br><br>(domyślnie w dniu, gdy wersja 10.0.25) |
+| Zamówienie sprzedaży | Tworzenie zamówienia | Ten uproszczony widok zawiera tylko pola, które są najczęściej używane do tworzenia zamówień sprzedaży. | Zapisane widoki dotyczące sprzedaży i marketingu<br><br>(domyślnie w dniu, gdy wersja 10.0.25) |
+| Zamówienie sprzedaży | Przegląd zamówienia | Ten uproszczony widok zawiera tylko pola, które są najczęściej używane do przeglądania zamówień sprzedaży. | Zapisane widoki dotyczące sprzedaży i marketingu<br><br>(domyślnie w dniu, gdy wersja 10.0.25) |
+| Oferta sprzedaży | Tworzenie oferty | Ten uproszczony widok zawiera tylko pola, które są najczęściej używane do tworzenia ofert sprzedaży. | Zapisane widoki dotyczące sprzedaży i marketingu<br><br>(domyślnie w dniu, gdy wersja 10.0.25) |
 
 ## <a name="saved-views-for-the-warehouse-management-module"></a>Zapisane widoki dla modułu Zarządzanie magazynem
 
@@ -105,10 +117,13 @@ W poniższej tabeli opisano zapisane widoki dostępne dla modułu Zarządzanie m
 
 | Strona | Nazwa widoku | Opis widoku | Nazwa funkcji |
 |---|---|---|---|
-| Wszystkie ładunki | Przetwarzanie przychodzące | Ten uproszczony widok zawiera tylko pola, które są najczęściej używane do przetwarzania ładunków przychodzących. | Zapisane widoki dla przetwarzania ładunku |
-| Wszystkie ładunki | Przetwarzanie wychodzących | Ten uproszczony widok zawiera tylko pola, które są najczęściej używane do przetwarzania ładunków wychodzących. | Zapisane widoki dla przetwarzania ładunku |
-| Wszystkie wysyłki | Przetwarzanie przychodzące | Ten uproszczony widok zawiera tylko pola, które są najczęściej używane do przetwarzania wysyłek przychodzących. | Zapisane widoki dla przetwarzania wysyłki |
-| Wszystkie wysyłki | Przetwarzanie wychodzących | Ten uproszczony widok zawiera tylko pola, które są najczęściej używane do przetwarzania wysyłek wychodzących. | Zapisane widoki dla przetwarzania wysyłki |
-| Wszystkie grupy czynności | Uproszczony | Ten uproszczony widok zawiera tylko najczęściej używane pola. Dzięki temu zapewnia on szybszy przegląd i usprawnione procesy pracy. | Zapisany widok dla przetwarzania grupy czynności |
-| Warsztat planowania wysyłki ładunku | Uproszczony | Ten uproszczony widok zawiera tylko najczęściej używane pola. Dzięki temu zapewnia on szybszy przegląd i usprawnione procesy pracy. | Zapisany widok dla warsztatu planowania pracy |
-| Szczegóły pracy | Uproszczony | Ten uproszczony widok zawiera tylko najczęściej używane pola. Dzięki temu zapewnia on szybszy przegląd i usprawnione procesy pracy. | Zapisany widok dla strony szczegółów pracy |
+| Wszystkie ładunki | Przetwarzanie przychodzące | Ten uproszczony widok zawiera tylko pola, które są najczęściej używane do przetwarzania ładunków przychodzących. | Zapisane widoki dla przetwarzania ładunku<br><br>(domyślnie w dniu, gdy wersja 10.0.25) |
+| Wszystkie ładunki | Przetwarzanie wychodzących | Ten uproszczony widok zawiera tylko pola, które są najczęściej używane do przetwarzania ładunków wychodzących. | Zapisane widoki dla przetwarzania ładunku<br><br>(domyślnie w dniu, gdy wersja 10.0.25) |
+| Wszystkie wysyłki | Przetwarzanie przychodzących | Ten uproszczony widok zawiera tylko pola, które są najczęściej używane do przetwarzania wysyłek przychodzących. | Zapisane widoki dla przetwarzania wysyłki<br><br>(domyślnie w dniu, gdy wersja 10.0.25) |
+| Wszystkie wysyłki | Przetwarzanie wychodzących | Ten uproszczony widok zawiera tylko pola, które są najczęściej używane do przetwarzania wysyłek wychodzących. | Zapisane widoki dla przetwarzania wysyłki<br><br>(domyślnie w dniu, gdy wersja 10.0.25) |
+| Wszystkie grupy czynności | Uproszczone | Ten uproszczony widok zawiera tylko najczęściej używane pola. Dzięki temu zapewnia on szybszy przegląd i usprawnione procesy pracy. | Zapisany widok dla przetwarzania grupy czynności<br><br>(domyślnie w dniu, gdy wersja 10.0.25) |
+| Warsztat planowania wysyłki ładunku | Uproszczone | Ten uproszczony widok zawiera tylko najczęściej używane pola. Dzięki temu zapewnia on szybszy przegląd i usprawnione procesy pracy. | Zapisane widoki dla warsztatu planowania wysyłki ładunku<br><br>(domyślnie w dniu, gdy wersja 10.0.25) |
+| Szczegóły pracy | Uproszczone | Ten uproszczony widok zawiera tylko najczęściej używane pola. Dzięki temu zapewnia on szybszy przegląd i usprawnione procesy pracy. | Zapisany widok dla strony szczegółów pracy<br><br>(domyślnie w dniu, gdy wersja 10.0.25) |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

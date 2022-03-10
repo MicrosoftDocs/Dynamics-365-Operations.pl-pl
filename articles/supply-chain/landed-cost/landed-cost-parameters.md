@@ -1,12 +1,10 @@
 ---
 title: Ustawienia parametrów kosztów z wyładunkiem
-description: W tych tematach opisano sposób konfigurowania informacji ogólnych i ustawień konfiguracji, które są używane w module Koszty z wyładunkiem do księgowania, aktualizacji stanu, sekwencji numerów i zachowania.
+description: W tym temacie opisano sposób konfigurowania informacji ogólnych i ustawień konfiguracji, które są używane w module Koszty z wyładunkiem do księgowania, aktualizacji stanu, sekwencji numerów i zachowania.
 author: sherry-zheng
-manager: tfehr
 ms.date: 12/07/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ITMParameters
 audience: Application User
@@ -15,18 +13,17 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-07
-ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 489c0db50d52c1e58eab73ad19a73babf22b4de7
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.dyn365.ops.version: 10.0.17
+ms.openlocfilehash: 834a8cc5b50e02afb1ecf7f53d2c4fa661764219
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500773"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571792"
 ---
 # <a name="landed-cost-parameters-setup"></a>Ustawienia parametrów kosztów z wyładunkiem
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Użyj strony **parametry kosztu z wyładunkiem** do konfigurowania informacji ogólnych i ustawień konfiguracji, które są używane w module **Koszty z wyładunkiem** do księgowania, aktualizacji stanu, sekwencji numerów i zachowania. Ustawienia parametrów są udostępniane w różnych firmach i mogą być modyfikowane przez administratora.
 
@@ -34,7 +31,7 @@ Użyj strony **parametry kosztu z wyładunkiem** do konfigurowania informacji og
 
 Aby pracować z parametrami, przejdź do **Koszt z wyładunkiem \> Konfiguracja \> Parametry kosztu z wyładunkiem** i ustaw pola w sposób opisany w poniższych podsekcjach.
 
-![Strona parametrów kosztów z wyładunkiem](media/landed-cost-parameters.png "Strona parametrów kosztów z wyładunkiem")
+![Strona parametrów kosztów z wyładunkiem.](media/landed-cost-parameters.png "Strona parametrów kosztów z wyładunkiem")
 
 ## <a name="general-tab"></a>Karta Ogólne
 

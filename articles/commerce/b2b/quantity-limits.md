@@ -2,11 +2,9 @@
 title: Ustawianie limitów ilości produktów dla witryn B2B handlu elektronicznego
 description: W tym temacie opisano, jak ustawić limity ilości produktów w witrynach handlu elektronicznego typu business-to-business (B2B).
 author: josaw1
-manager: AnnBe
 ms.date: 01/20/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailOperations
 audience: Application User, IT Pro
@@ -16,12 +14,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1208b968e476ccbc7a726facf1db896c7bf3c36f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 2c8adaad2afee3b735c69a501d7949a807f4e770
+ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5211184"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323387"
 ---
 # <a name="set-product-quantity-limits-for-b2b-e-commerce-sites"></a>Ustawianie limitów ilości produktów dla witryn B2B handlu elektronicznego
 
@@ -77,9 +75,9 @@ Aby włączyć funkcję limitów ilości zamówień B2B w narzędziu do tworzeni
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Konfigurowanie witryny handlu elektornicznego B2B](set-up-b2b-site.md)
+[Konfigurowanie witryny wykorzystywanej na potrzeby handlu elektronicznego B2B](set-up-b2b-site.md)
 
-[Tworzenie hierarchii modelowania organizacji dla organizacji B2B](org-model.md)
+[Zarządzanie partnerami biznesowymi B2B przy użyciu hierarchii klientów](partners-customer-hierarchies.md)
 
 [Zarządzanie użytkownikami partnerów biznesowych w witrynach handlu elektronicznego B2B](manage-b2b-users.md)
 

@@ -2,30 +2,33 @@
 title: Omówienie systemu przepływów pracy
 description: W tym temacie opisano system przepływów pracy.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.custom: 56381
+ms.custom:
+- "56381"
+- intro-internal
 ms.assetid: 20b78595-e1d9-439a-ae1c-a776a3438919
 ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 660e01618eea66bc611dd51818694d36993ba9ea
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 70776ba0a0461998d2c1f62ba05b55cd4307a0f7
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797003"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067940"
 ---
 # <a name="workflow-system-overview"></a>Omówienie systemu przepływów pracy
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 W tym temacie opisano system przepływów pracy.
 
@@ -41,7 +44,7 @@ Przepływ pracy to system uruchomiony na serwerze obiektów aplikacji (AOS). Sys
 
 Przepływ pracy reprezentuje proces biznesowy. Definiuje sposób przepływu lub przenoszenia dokumentu przez system, pokazując, kto musi wykonać zadanie, podjąć decyzję lub zatwierdzić dokument. Na przykład poniższa ilustracja pokazuje przepływ pracy dla raportów z wydatków.
 
-![Przepływ pracy z elementami przypisanymi do użytkowników](./media/workflow_user.gif)
+![Przepływ pracy z elementami przypisanymi do użytkowników.](./media/workflow_user.gif)
 
 Aby lepiej zrozumieć ten przepływ pracy, załóżmy, że Sam przesyła raport z wydatków na 7000 USD. W tym scenariuszu Ivan musi przejrzeć pokwitowania wysłane przez Tomasza. Następnie Wojciech i Magda muszą zatwierdzić raport z wydatków. Teraz załóżmy, że Tomasz przesyła raport z wydatków na kwotę 11 000 USD. W tym scenariuszu Maciej musi przejrzeć pokwitowania, a Wojciech, Magda i Anna muszą zatwierdzić raport z wydatków.
 
@@ -71,3 +74,6 @@ Używanie systemu przepływu pracy w organizacji ma kilka zalet:
 + [Konfigurowanie odgałęzień równoległych w przepływie pracy](configure-parallel-branch-workflow.md)
 + [Konfigurowanie przepływów pracy dla pozycji w wierszach](configure-line-item-workflow.md)
 + [Przepływ pracy — często zadawane pytania](workflow-FAQ.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

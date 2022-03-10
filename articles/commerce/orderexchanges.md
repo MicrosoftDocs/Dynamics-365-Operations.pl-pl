@@ -2,7 +2,7 @@
 title: Konfigurowanie i przetwarzanie wymiany w przypadku zamówienia zwrotu
 description: W tym temacie wyjaśniono sposób konfigurowania wymiany w przypadku zwrotu w rozwiązaniu Dynamics 365 Commerce.
 author: josaw1
-ms.date: 11/12/2018
+ms.date: 07/28/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 46d6e912aca64951da2865f5609a9dc22fbbcbe3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 488f6fb5af6451bc462566a9714054b49eb1a80b8264528778797f6a39647764
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804608"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758343"
 ---
 # <a name="configure-and-process-an-exchange-on-a-return-order"></a>Konfigurowanie i przetwarzanie wymiany w przypadku zamówienia zwrotu
 
@@ -28,13 +28,16 @@ ms.locfileid: "5804608"
 
 W poprzednich wersjach rozwiązania Dynamics 365 Commerce zwroty dotyczące zamówień klientów były przetwarzane przy użyciu dokumentu zamówienia zwrotu w centrali. Jednak dokumenty zamówienia zwrotu mogą być używane tylko do przetwarzania produktów zwracanych. Zwracane produkty są oznaczone ilością ujemną w wierszach zamówień zwrotu. Z drugiej strony sprzedaż jest wskazywana przez ilość dodatnią. Dokument zamówienia zwrotu nie obsługuje jednak ilości dodatnich. Ze względu na to ograniczenie w poprzednich wersjach aplikacji nie były obsługiwane sytuacje, w których wymiana produktu była dokonywana przy użyciu dokumentu zamówienia zwrotu.
 
-Dodano jednak funkcję w celu obsługi sytuacji, w których wymiana odbywa się z wykorzystaniem zamówień zwrotu. Aby przetwarzać tego typu transakcje w aplikacji Commerce jest obecnie używany dokument zamówienia sprzedaży zamiast dokumentu zamówienia zwrotu.
+Dodano jednak funkcję w celu obsługi sytuacji, w których wymiana odbywa się z wykorzystaniem zamówień zwrotu. Aby przetwarzać tego typu transakcje, w aplikacji Commerce jest obecnie używany dokument zamówienia sprzedaży zamiast dokumentu zamówienia zwrotu.
 
-## <a name="configure-commerce-to-support-exchanges-on-return-orders"></a>Konfigurowanie aplikacji Commerce pod kątem obsługi wymiany w przypadku zamówień zwrotu
+## <a name="configure-commerce-to-support-exchanges-on-return-orders"></a>Konfigurowanie aplikacji Commerce pod kątem obsługi wymian w przypadku zamówień zwrotu
 
-Aby skonfigurować system do obsługi wymiany w przypadku zamówień zwrotu, należy wykonać poniższe czynności.
+> [!NOTE]
+> W rozwiązaniu Commerce w wersji 10.0.20 i nowszej dostępna jest nowa funkcja o nazwie „Doświadczenie w przetwarzaniu zwrotów zunifikowanych w punkcie sprzedaży”. Jeśli ta funkcja zostanie włączona, poniższe kroki konfiguracji nie są wymagane. Opcja **Przetwarzaj zwroty jako zamówienia sprzedaży** staje się ustawieniem skonfigurowanym na stałe i nie będzie można go zmienić.
 
-1. Kliknij kolejno opcje **Retail i Commerce \> Ustawienia centrali \> Parametry \> Parametry handlowe**. Na skróconej karcie **Zamówienia odbiorcy** ustaw wartość **Tak** opcji **Przetwarzanie zamówień zwrotu jako zamówień sprzedaży**.
+Wykonaj następujące kroki, aby skonfigurować system do obsługi wymian w zamówieniach zwrotu (jeśli opcja **Doświadczenie w przetwarzaniu zwrotów zunifikowanych w punkcie sprzedaży** nie jest włączona).
+
+1. Kliknij kolejno opcje **Retail i Commerce \> Ustawienia centrali \> Parametry \> Parametry rozwiązania Commerce**. Na skróconej karcie **Zamówienia odbiorcy** ustaw wartość **Tak** opcji **Przetwarzanie zamówień zwrotu jako zamówień sprzedaży**.
 2. Uruchom zadanie **Harmonogram dystrybucji konfiguracji globalnej** (**1110**).
 
 ## <a name="make-an-exchange"></a>Dokonywanie wymiany

@@ -2,11 +2,9 @@
 title: Przygotowanie firmy w procesie konsolidacji
 description: Podczas konsolidacji transakcje z kilku zestawów kont podmiotów prawnych są gromadzone w jednym zestawie kont podmiotów prawnych. W tym temacie wyjaśniono, jak przygotować firmę do konsolidacji.
 author: jinniew
-manager: AnnBe
 ms.date: 10/30/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: f6fce69724945448f961769dd383d1047a5d13c4
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a1ffbf79cdccab457b1aee1bc0f1d963bca49b3e390187c6be5da475f278a3d8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4990315"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720509"
 ---
 # <a name="prepare-a-legal-entity-for-the-consolidation-process"></a>Przygotowanie firmy w procesie konsolidacji
 
@@ -67,3 +65,6 @@ Firma skonsolidowanej jest teraz skonfigurowana jako zadanie okresowe **Konsolid
 
 > [!NOTE]
 > Zanim będzie można przeprowadzić konsolidację, należy przygotować do niej oddziały firmy. Aby zapoznać się z dodatkowymi informacjami, zobacz [Konfigurowanie firmy zależnej do konsolidacji](set-up-subsidiary-company-for-consolidation.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

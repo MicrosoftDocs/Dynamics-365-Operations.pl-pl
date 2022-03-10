@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2021-08-12
 ms.dyn365.ops.version: Release 10.0.22
-ms.openlocfilehash: 35d78cdcc356d35776940147e9b0afee0f0be2a2
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 1a8eebb589372051272573895a0ae5b4203eef62
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674730"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109788"
 ---
 # <a name="countryregion-picker-module"></a>Moduł wyboru kraju/regionu
 
@@ -74,5 +74,9 @@ W przypadku każdego adresu URL, który ma być pokazywany i polecany klientom, 
 [Przegląd biblioteki modułów](starter-kit-overview.md)
 
 [Moduł nagłówka](author-header-module.md)
+
+[Moduł selektora witryn](site-selector.md)
+
+[Moduł szlaków nawigacyjnych](add-breadcrumb.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

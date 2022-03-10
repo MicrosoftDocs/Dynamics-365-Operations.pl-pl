@@ -3,7 +3,7 @@ title: Globalna potrącona zaliczka na podatek
 description: Ten temat zawiera informacje dotyczące globalnej funkcjonalności potrąconej zaliczki na podatek oraz sposobu jej skonfigurowania. Funkcjonalność globalnego podatku potrącanego u źródła została rozszerzona o transakcje z dostawcą i odbiorcą, dzięki czemu zaliczka na podatek jest obliczany na poziomie towaru.
 author: roschlom
 ms.date: 01/12/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerParameters
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2020-01-12
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: c51da1257e11543f025fda76c166301477ef78508caac0451267437e918435eb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7a3bb3c8766c7dd591f66a663d8be17769bb7d53
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727379"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986183"
 ---
 # <a name="global-withholding-tax"></a>Globalna potrącona zaliczka na podatek
 

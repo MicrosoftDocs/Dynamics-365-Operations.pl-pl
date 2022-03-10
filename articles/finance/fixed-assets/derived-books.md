@@ -1,12 +1,10 @@
 ---
 title: Księgi pochodne
 description: Ten artykuł zawiera omówienie funkcji ksiąg pochodnych.
-author: ShylaThompson
-manager: AnnBe
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetBookTable
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 3401
 ms.assetid: 862d6450-187b-497f-9822-cce45f2c65a9
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 911bb476a696facfad9dec177261821724d2bfe0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 32abfce013d0daa208138cf698b2abd1f96462f6
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4994922"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674509"
 ---
 # <a name="derived-books"></a>Księgi pochodne
 
@@ -47,3 +45,6 @@ Aby uzyskać więcej informacji, zobacz [Księgowanie z użyciem ksiąg pochodny
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

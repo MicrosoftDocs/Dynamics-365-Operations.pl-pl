@@ -10,17 +10,18 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: f4434afb847104a18a2a2a2f07a7060cf01de816
-ms.sourcegitcommit: eceae470f4ae58000ec33fea34db34b7a7a1af43
+ms.openlocfilehash: 7312ab2491814e7cd266e39820f0e87e79dd84e4
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "6273207"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103571"
 ---
 # <a name="global-inventory-accounting-home-page"></a>Globalne księgowanie zapasów — strona główna
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!--KFM: Preview until 4/30/2022 -->
 
 Organizacje międzynarodowe znajdują się pod rosnącą presją władz, aby przestrzegać lokalnych i globalnych standardów rachunkowości. Wycena zapasów odgrywa istotną rolę w zapewnieniu zgodności z przepisami. Dodatek Globalne księgowanie zapasów do Microsoft Dynamics 365 Supply Chain Management jest kompleksowym rozwiązaniem, które umożliwia organizacjom (szczególnie międzynarodowym) używanie wielu ksiąg wycen do księgowania zapasów. W związku z tym organizacje te mogą jednocześnie spełniać wymogi wielu standardów rachunkowości i wewnętrznej rachunkowości zarządczej.
 
@@ -48,6 +49,8 @@ Globalne księgowanie zapasów jest obecnie dostępne w następujących regionac
 - Kanada
 
 W przypadku próby zainstalowania dodatku z innego regionu geograficznego usługi Microsoft Dynamics Lifecycle Services LCS wyświetlą komunikat informujący, że Twój region geograficzny nie jest obsługiwany. Globalne księgowanie zapasów nie obsługuje lokalnych wdrożeń Supply Chain Management.
+
+Jeśli masz jakiekolwiek problemy z włączeniem globalnego księgowania zapasów w jednym z obsługiwanych regionów geograficznych wymienionych tutaj, wyślij wiadomość e-mail z identyfikatorem swojego środowiska na adres [Zespół globalnego księgowania zapasów](mailto:GlobalInvAccount@microsoft.com) w celu weryfikacji.
 
 ## <a name="licensing"></a>Licencjonowanie
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 72273a125da2e6c4a2fc16b449cd5077f3d767df
-ms.sourcegitcommit: fcfd85a508c0de52cfe11d1986892219e39ef406
+ms.openlocfilehash: b5f7342a997407c8701b836c2a6a6222d8512121
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7548464"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075001"
 ---
 # <a name="create-and-invoice-an-intercompany-sales-order-for-an-external-customer"></a>Tworzenie i fakturowanie międzyfirmowego zamówienia sprzedaży dla odbiorcy zewnętrznego
 
@@ -75,5 +75,18 @@ Wykonaj te czynności w osobie prawnej B. Ta procedura odpowiada polu oznaczonem
 1. Wybierz zamówienie sprzedaży, a następnie wybierz **OK**.
 
 Następnie automatycznie tworzona jest faktura sprzedawcy dla tego zamówienia i księgowana w firmie A. Jeśli pierwotne zamówienie sprzedaży jest skonfigurowane jako dostawa bezpośrednia, faktura klienta jest tworzona dla pierwotnego zamówienia sprzedaży w firmie A.
+
+> [!NOTE]
+> Poprzednio, w przypadku scenariuszy sprzedaży między firmami, jeśli przepływ faktur dla dostawców był skonfigurowany w firmie dokonującej zakupów między firmami, zamówienie sprzedaży między firmami nie mogło zostać pomyślnie zafakturowane. W związku z tym przepływ faktur od dostawców musiał zostać wyłączony dla międzyzakładowej spółki zakupowej. 
+> 
+> To ograniczenie zostało naprawione dzięki funkcji wprowadzonej niedawno w wydaniu 10.0.25. Międzyzakładowe zamówienia sprzedaży mogą być teraz fakturowane, gdy w międzyzakładowej firmie zakupowej skonfigurowany jest przepływ pracy z fakturą dla sprzedawcy.
+> 
+> Aby włączyć tę funkcję, wykonaj wymienione poniżej kroki.
+>
+> 1. Wybierz podmiot prawny sprzedaży wewnątrz firmy.  
+> 2. Wybierz kolejno opcje **Rozrachunki z odbiorcami \> Odbiorcy \> Wszyscy odbiorcy**.
+> 3. Wybierz klienta dla międzyzakładowej spółki handlowej.
+> 4. Przejdź do **Ogólne \>Konfiguracja \> Międzyfirmowa**.
+> 5. W zakładce **Polityka zamówień publicznych** zaznacz parametr **Omijaj obieg faktur dostawcy dla faktur wystawianych przez dostawców wewnętrznych**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

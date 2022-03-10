@@ -1,7 +1,7 @@
 ---
 title: Tworzenie i kojarzenie kas
 description: Ta procedura przedstawia sposób tworzenia kasy w punkcie sprzedaży (POS).
-author: rubencdelgado
+author: BrianShook
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ba978a3d895394760687386197dbb3512c62ef98
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 48ad1891955b15d22f3cecac128a831adabdac87
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798568"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779434"
 ---
 # <a name="create-and-associate-registers"></a>Tworzenie i kojarzenie kas
 

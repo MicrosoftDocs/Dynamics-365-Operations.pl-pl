@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: f543adc8bab5ca224bdb672d6b3c282c2d8531d8
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 33fae9b6d2c69b4404e6faf0a822c704ef0e73f049d0eea000b27501009c74aa
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023496"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6748145"
 ---
 # <a name="record-tds-concession-certificate-numbers"></a>Rejestrowanie numerów certyfikatów koncesji TDS
 
@@ -33,7 +33,7 @@ W tym temacie wyjaśniono, jak rejestrować numery certyfikatów koncesyjnych wy
 2. W polu **Typ podatku** wybierz identyfikator **TDS**, aby zarejestrować certyfikaty koncesji dla typu podatku TDS.
 3. Na karcie **Omówienie** wybierz klawisze **Alt+N**, aby utworzyć wiersz.
 
-    [![Nagłówek nowego wiersza](./media/apac-ind-TDS-34.png)](./media/apac-ind-TDS-34.png)
+    [![Nagłówek nowego wiersza.](./media/apac-ind-TDS-34.png)](./media/apac-ind-TDS-34.png)
 
 4. W polu **Kod potrąconej zaliczki** na podatek wybierz kod podatku TDS, dla których są wystawiane certyfikaty koncesji dostawcy. W polu **Nazwa kodu potrąconej zaliczki na podatek** zawiera nazwę kodu podatku TDS.
 5. W polach **Od dnia** i **Do dnia** określ okres ważności dla certyfikatu koncesji, który używa kodu podatku TDS do obliczenia TDS dla dostawcy na podstawie koncesji.
@@ -50,6 +50,6 @@ W tym temacie wyjaśniono, jak rejestrować numery certyfikatów koncesyjnych wy
 
 11. W polu **Certyfikat** wprowadź numer certyfikatu koncesji TDS.
 
-    [![Skrócona karta certyfikatu](./media/apac-ind-TDS-33.png)](./media/apac-ind-TDS-33.png)
+    [![Skrócona karta certyfikatu.](./media/apac-ind-TDS-33.png)](./media/apac-ind-TDS-33.png)
 
 12. Zamknij stronę.

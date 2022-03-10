@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ecdd377d12faf40f64736e93671dcf42ff132403
-ms.sourcegitcommit: e6437d994c3be0c5bb4a9263af3aa8351020d83a
+ms.openlocfilehash: 7cdc22eeabda6cf9f08484d698e5096f66af4a12
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "6249152"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920705"
 ---
 # <a name="quantity-exceeds-under-delivery-percentage-during-packing-slip-generation"></a>Ilość przekracza procent niedoboru w dostawie podczas generowania dokumentu dostawy
 
@@ -49,8 +49,8 @@ Aby dostosować wartość procentową niedoboru dostawy, należy skorzystać z p
 
 1. Przejdź do pozycji **Rozrachunki z odbiorcami \> Zamówienia \> Wszystkie zamówienia**.
 1. Wybierz zlecenie sprzedaży, dla którego nie można wysłać dokumentu pakowania dla ładunku.
-1. Na karcie  **Wiersze zamówienia sprzedaży** wybierz wiersz zamówienia sprzedaży dla pozycji, która przekracza procent niedoboru w dostawie.
-1. Na karcie  **Szczegóły wiersza** wybierz **Dostawa**.
+1. Na karcie **Wiersze zamówienia sprzedaży** wybierz wiersz zamówienia sprzedaży dla towaru, który przekracza procent niedoboru w dostawie.
+1. Na karcie **Szczegóły wiersza** wybierz pozycję **Dostawa**.
 1. W polu **Niedobór w dostawie** ustaw większą wartość procentową, która mieści się w ilości pobrania w stosunku do ilości ładunku, aby było można przejść dalej w sprawie dokumentu dostawy.
 
 ### <a name="reverse-and-make-adjustments"></a>Odwróć i dokonaj korekt
@@ -60,14 +60,14 @@ Odwróć wszystko, co zostało zaksięgowane dla danego ładunku (na przykład d
 Poniższa procedura służy do anulowania dokumentu dostawy.
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ładunki \> Wszystkie ładunki**.
-1. Na pasku akcji, na zakładce  **Wysyłka i odbiór**, w grupie  **Odwróć** zaznaczamy  **Kasowanie dokumentu dostawy**.
+1. W okienku akcji na karcie **Wysyłka i odbiór** w grupie **Wycofaj** wybierz pozycję **Anuluj dokumenty dostawy**.
 
 Poniższa procedura umożliwia cofnięcie potwierdzenia wysyłki.
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ładunki \> Wszystkie ładunki**.
-1. Na pasku akcji, na zakładce  **Wysyłka i odbiór**, w grupie  **Odwróć** zaznaczamy  **Odwrócenie potwierdzenia wysyłki**.
+1. W okienku akcji na karcie **Wysyłka i odbiór** w grupie **Wycofaj** wybierz pozycję **Wycofaj potwierdzenie wysyłki**.
 
 W celu odwrócenia pracy należy zastosować następującą procedurę.
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ładunki \> Wszystkie ładunki**.
-1. W okienku akcji, na karcie  **Ładunek**, w grupie  **Praca** wybierz pozycję  **Cofnięcie pracy**.
+1. W okienku akcji na karcie **Ładunki** w grupie **Praca** wybierz pozycję **Wycofaj pracę**.

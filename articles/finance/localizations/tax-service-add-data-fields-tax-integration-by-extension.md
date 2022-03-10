@@ -2,10 +2,9 @@
 title: Dodawanie pól danych w integracji podatków przy użyciu rozszerzeń
 description: W tym temacie opisano, jak używać rozszerzeń X++ w celu dodawania pól danych w integracji podatków.
 author: qire
-ms.date: 03/26/2021
+ms.date: 02/17/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -16,18 +15,17 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: fdf112bbdd5245d19ab1d07cfcf94c58bf8208c5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: acbe8070424febf24883362448ea56857d9d72d9
+ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830347"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323525"
 ---
 # <a name="add-data-fields-in-the-tax-integration-by-using-extension"></a>Dodawanie pól danych w integracji podatków przy użyciu rozszerzeń
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 W tym temacie opisano, jak używać rozszerzeń X++ w celu dodawania pól danych w integracji podatków. Te pola mogą być rozszerzone na model danych podatkowych usługi podatkowej i używane do określania kodów podatków. Aby uzyskać więcej informacji, zobacz temat [Dodawanie pól danych w konfiguracjach podatków](tax-service-add-data-fields-tax-configurations.md).
 
@@ -43,7 +41,7 @@ Poniżej znajduje się lista dużych objektów:
 
 Na poniższej ilustracji pokazano, w jaki sposób są one powiązane.
 
-[![Relacja obiektów modelu danych](./media/tax-service-customize-image1.png)](./media/tax-service-customize-image1.png)
+[![Relacja obiektów modelu danych.](./media/tax-service-customize-image1.png)](./media/tax-service-customize-image1.png)
 
 Obiekt **Dokumentu** może zawierać wiele obiektów **Wiersza**. Każdy obiekt zawiera metadane usługi podatków.
 
@@ -355,15 +353,77 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
 }
 ```
 
-W tym kodzie `_destination` jest obiektem otoki, który jest używany do generowania żądania wpisu, a `_source` to obiekt `TaxIntegrationLineObject`. 
+W tym kodzie `_destination` jest obiektem otoki, który jest używany do generowania żądania wpisu, a `_source` to obiekt `TaxIntegrationLineObject`.
 
 > [!NOTE]
-> * Zdefiniuj klucz używany w formularzu żądania jako `private const str`.
-> * Ustaw pole w metodzie `copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine` za pomocą metody `SetField`. Typem danych drugiego parametru musi być `string`. Jeśli typ danych nie jest `string`, przekonwertuj go na `string`.
+> Zdefiniuj klucz używany w formularzu żądania jako **private const str**. Ciąg powinien być dokładnie taki sam, jak nazwa miary dodana do tematu. [Dodaj pola danych w konfiguracjach podatków](tax-service-add-data-fields-tax-configurations.md).
+> Ustaw pole w metodzie **copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine**, używając **metody SetField**. Typem danych drugiego parametru musi być **ciąg**. Jeśli typ danych nie jest **ciąg**, przekonwertuj go.
+> Jeśli **typ tekstu enum** X++ jest rozszerzony, należy zwrócić uwagę na różnicę między jego wartością, etykietą i nazwą.
+> 
+>   - Wartość wyliczenia jest liczbą całkowitą.
+>   - Etykieta wyli roku może być różna w różnych preferowanych językach. Nie używaj tekstu **enum2Str** w celu konwersji typu tekstu wyliczowego na ciąg.
+>   - Nazwa wyli roku jest zalecana, ponieważ jest stała. **enum2Symbol** może służyć do konwersji wyliczeń na jego nazwę. Wartość wyliczenia dodana w konfiguracji podatku powinna być dokładnie taka sama jak nazwa wyliczenia.
+
+## <a name="model-dependency"></a>Zależność modelu
+
+Aby pomyślnie skompilować projekt, dodaj następujące modele odwołania do zależności modeli:
+
+- ApplicationPlatform
+- ApplicationSuite
+- Aparat podatków
+- Wymiary, jeśli jest używany wymiar finansowy
+- Inne potrzebne modele, do których odwołuje się kod
+
+## <a name="validation"></a>Sprawdzenie poprawności
+
+Po ukończeniu poprzednich kroków możesz sprawdzić poprawność wprowadzonych zmian.
+
+1. W polu Finanse przejdź do **rozrachunków z dostawcami** i dodaj wartość **&debug=vs%2CconfirmExit&** do adresu URL. Na przykład https://usnconeboxax1aos.cloud.onebox.dynamics.com/?cmp=DEMF&mi=PurchTableListPage&debug=vs%2CconfirmExit&. Ostateczna **&** jest podstawowa.
+2. Otwórz stronę **Zamówienie zakupu** i wybierz **Nowość**, aby utworzyć zamówienie zakupu.
+3. Ustaw wartość niestandardowego pola, a następnie wybierz opcję **Podatek**. Plik rozwiązywania problemów z prefiksem **TaxServiceTroubleshootingLog** jest pobierany automatycznie. Ten plik zawiera informacje o transakcjach zaksięgowane w usłudze obliczania podatku. 
+4. Sprawdź, czy dodane pole niestandardowe znajduje się w sekcji **Dane wejściowe obliczenia usługi podatkowej JSON** i czy jego wartość jest poprawna. Jeśli wartość jest błędna, sprawdź dwukrotnie kroki w tym dokumencie.
+
+Przykład pliku:
+
+```
+===Tax service calculation input JSON:===
+{
+  "TaxableDocument": {
+    "Header": [
+      {
+        "Lines": [
+          {
+            "Line Type": "Normal",
+            "Item Code": "",
+            "Item Type": "Item",
+            "Quantity": 0.0,
+            "Amount": 1000.0,
+            "Currency": "EUR",
+            "Transaction Date": "2022-1-26T00:00:00",
+            ...
+            /// The new fields added at line level
+            "Cost Center": "003",
+            "Project": "Proj-123"
+          }
+        ],
+        "Amount include tax": true,
+        "Business Process": "Journal",
+        "Currency": "",
+        "Vendor Account": "DE-001",
+        "Vendor Invoice Account": "DE-001",
+        ...
+        // The new fields added at header level, no new fields in this example
+        ...
+      }
+    ]
+  },
+}
+...
+```
 
 ## <a name="appendix"></a>Dodatek
 
-Ten dodatek pokazuje pełny przykładowy kod integracji wymiarów finansowych (**Centrum kosztów** i **Projekt**) na poziomie wiersza.
+Ten dodatek pokazuje pełny przykładowy kod integracji wymiarów finansowych **Centrum kosztów** i **Projekt** na poziomie wiersza.
 
 ### <a name="taxintegrationlineobject_extensionxpp"></a>TaxIntegrationLineObject_Extension.xpp
 

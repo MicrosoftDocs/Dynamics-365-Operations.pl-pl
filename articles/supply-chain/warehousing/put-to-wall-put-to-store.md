@@ -2,11 +2,9 @@
 title: Umieść na ścianie - odłożenie do sklepu
 description: Ten temat zawiera informacje o funkcji Umieść na ścianie - odłóż do sklepu. Ta funkcja umożliwia obsługę scenariuszy, w których trzeba skonsolidować produkt do obszaru tymczasowego na podstawie kryteriów konfigurowalnych. Umożliwia skrócenie czasu pobrania, ponieważ umożliwia pobranie go do jednego docelowego numeru identyfikacyjnego i może spowodować użycie większej liczby stanowisk niż pobranie w klastrze.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationType, WHSLocationProfile, WHSLocation, WHSPackProfile, WHSWaveStepCode, WHSOutboundSortTemplate, WHSPostMethod, WHSWaveTemplateTable, WHSLocDirTable, WHSWorkClass, WHSWorkTemplateTable
 audience: Application User
@@ -14,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
-ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 3f2ae63758fcb6247c5e56433645d9252576c755
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.9
+ms.openlocfilehash: 372bb556ec1207096a8ff3c7df8bac9b7011b5c4
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4996282"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574144"
 ---
 # <a name="put-to-wall---put-to-store"></a>Umieść na ścianie - odłożenie do sklepu
 
@@ -524,7 +522,7 @@ Teraz, gdy wszystkie zapasy zostały wprowadzone do lokalizacji sortowania, nale
 
 Jeśli stanowiska sortowania powinny być zamykane ręcznie, opcja **Automatycznie zamknij stanowisko sortowania** dla szablonu wychodzącego sortowania musi mieć wartość *Nie*, a zamknięcie musi być wykonane przed przeniesieniem zapasów do obszaru bramy dokującej. Stanowiska mogą być zamknięte na różne sposoby:
 
-- Poprzez aplikację magazynową:
+- Poprzez aplikację mobilną Warehouse Management:
 
     - Użytkownik może skanować jeden z towarów znajdujących się już na stanowisku, a następnie wybrać opcję **Zamknij**, aby zamknąć stanowisko.
     - Jeśli użytkownik zeskanuje kontener, który został już posortowany, wyświetlany jest komunikat o błędzie. Użytkownik może jednak nadal zamknąć stanowisko.
@@ -540,3 +538,6 @@ Jeśli stanowiska sortowania powinny być zamykane ręcznie, opcja **Automatyczn
 
 > [!IMPORTANT]
 > Po utworzeniu pracy przesunięcia z lokalizacji sortowania nie można anulować pracy. W przeciwnym razie pozycja i kontenery w niej zostaną usunięte z systemu i nie będą dostępne do dalszego przetwarzania. Zapasy zostaną również usunięte.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
