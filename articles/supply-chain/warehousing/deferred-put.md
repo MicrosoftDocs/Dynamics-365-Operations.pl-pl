@@ -1,7 +1,7 @@
 ---
 title: Odroczone przetwarzanie pracy magazynowej
 description: W tym temacie opisano funkcje, która udostępnia odroczone przetwarzanie operacji odłożenia pracy magazynowej w usłudze Dynamics 365 Supply Chain Management.
-author: josaw1
+author: Mirzaab
 ms.date: 11/18/2019
 ms.topic: article
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: WHSWorkProcessingPolicy, WHSWorkDeferredPutProcessingTask
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: perlynne
+ms.author: mirzaab
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3dad97e13624449d287ded74e7e25f94eb0dbde3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f99e960ffe7ca383563cc49c2e0825592ef5de57
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838329"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577871"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Odroczone przetwarzanie pracy magazynowej
 
@@ -28,7 +28,7 @@ W tym temacie opisano funkcje, która udostępnia odroczone przetwarzanie operac
 
 Funkcja odroczonego przetwarzania umożliwia pracownikom magazynu kontynuowanie innych prac podczas przetwarzania operacji odłożenia w tle. Odroczonego przetwarzania jest przydatne, gdy wiele wierszy pracy musi być przetwarzanych i pracownik może pozwolić, aby praca była przetwarzana asynchronicznie. Jest to również przydatne, kiedy na serwer zdarzają się nieplanowane wydłużenia czasu przetwarzania, a zwiększony czas przetwarzania może wpłynąć na produktywność użytkownika.
 
-Przetwarzanie w tle uzyskuje się za pomocą struktury SysOperation. Aby uzyskać więcej informacji, zobacz temat [Omówienie struktury SysOperation](https://docs.microsoft.com/dynamicsax-2012/developer/sysoperation-framework-overview).
+Przetwarzanie w tle uzyskuje się za pomocą struktury SysOperation. Aby uzyskać więcej informacji, zobacz temat [Omówienie struktury SysOperation](/dynamicsax-2012/developer/sysoperation-framework-overview).
 
 ## <a name="configuring-the-work-processing-policies"></a>Konfigurowanie zasad przetwarzania pracy
 
@@ -108,5 +108,8 @@ Obszar roboczy **Monitorowanie pracy wychodzącej** ma dwa kafelki ułatwiające
 
 Można usunąć odroczone zadania przetwarzania odłożenia, które zostały zakończone, zaznaczając je i usuwając je na stronie.
 
+## <a name="additional-resources"></a>Dodatkowe zasoby
+
+- [Odroczone przetwarzanie operacji ręcznego przenoszenia zapasów](deferred-processing-manual-inventory-movement.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

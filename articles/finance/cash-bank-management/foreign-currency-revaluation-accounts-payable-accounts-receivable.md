@@ -1,12 +1,10 @@
 ---
 title: Przeszacowanie w walucie dla rozrachunków z odbiorcami i rozrachunków z dostawcami
-description: Wahania kursów wymiany powodują, że wartość teoretyczna (wartość księgowa) otwartych transakcji w walutach obcych zmienia się w czasie. Ten artykuł zawiera informacje o procesie przeszacowania w walucie obcej, który jest wykonywany, aby zaktualizować wartość otwartych transakcji w modułach Rozrachunki z odbiorcami i Rozrachunki z dostawcami.
+description: Ten temat zawiera informacje o procesie przeszacowania w walucie obcej, który jest wykonywany, aby zaktualizować wartość otwartych transakcji w modułach Rozrachunki z odbiorcami i Rozrachunki z dostawcami.
 author: kweekley
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustExchRateAdjustment, VendExchRateAdjustment
 audience: Application User
@@ -17,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a95e446184b48be6d48347155ce14554602accbe
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1c84a373363fc066f46eb7891b421be098c0033526f2604d0ee52ff9c3fd9db3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5254018"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6774360"
 ---
 # <a name="currency-revaluation-for-accounts-payable-and-accounts-receivable"></a>Przeszacowanie w walucie dla rozrachunków z odbiorcami i rozrachunków z dostawcami
 
 [!include [banner](../includes/banner.md)]
 
-Wahania kursów wymiany powodują, że wartość teoretyczna (wartość księgowa) otwartych transakcji w walutach obcych zmienia się w czasie. Ten artykuł zawiera informacje o procesie przeszacowania w walucie obcej, który jest wykonywany, aby zaktualizować wartość otwartych transakcji w modułach Rozrachunki z odbiorcami i Rozrachunki z dostawcami. 
+Wahania kursów wymiany powodują, że wartość teoretyczna (wartość księgowa) otwartych transakcji w walutach obcych zmienia się w czasie. Ten temat zawiera informacje o procesie przeszacowania w walucie obcej, który jest wykonywany, aby zaktualizować wartość otwartych transakcji w modułach Rozrachunki z odbiorcami i Rozrachunki z dostawcami. 
 
 Wartość teoretyczna (wartość księgowa) otwartych transakcji w obcych walutach zmienia się w zależności od fluktuacji kursów wymiany. Aby zaktualizować wartość otwartych transakcji w module Rozrachunki z odbiorcami i Rozrachunki z dostawcami, uruchom proces przeszacowania w walucie obcej. Przeszacowanie w walucie obcej można wykonać zarówno dla rozrachunków z odbiorcami, jak i rozrachunków z dostawcami. Proces korzysta z nowego kursu wymiany do przeszacowywania otwartych kwot lub nierozliczonych kwot w określonym dniu. Różnica między kwotami zaksięgowanymi oryginalnie a kwotami przeszacowanymi spowoduje niezrealizowaną dodatnią lub ujemną różnicę kursową dla każdej otwartej transakcji. Księgi podrzędne rozrachunków z dostawcami i rozrachunków z odbiorcami są zaktualizowane tak, aby odzwierciedlały niezrealizowaną dodatnią lub ujemną różnicę kursową, a wpis zostaje zaksięgowany w księdze głównej.
 
@@ -57,7 +55,7 @@ Po każdym uruchomieniu przeszacowania w walucie obcej jest wprowadzany zapis. Z
     -   **Księgowanie** — używany jest profil księgowania transakcji odbiorcy.
     -   **Wybierz** — umożliwia wskazywanie profilu księgowania w polu **Profil księgowania**.
 -   **Profil księgowania** — jeśli wybrano opcję **Wybierz** w polu **Użyj profilu księgowania z**, profil księgowania wprowadzony w tym polu określa profil transakcji przeszacowania w walucie obcej.
--   **Wymiary finansowe** — wymiary finansowe zaksięgowane we wpisach księgowych transakcji z przeszacowaniem w walucie obcej:
+-   **Wymiary finansowe** — wymiary finansowe zaksięgowane we wpisach księgowych transakcji z przeszacowaniem w walucie obcej. Wymiary finansowe nie są sprawdzane pod względem reguł struktury konta. Struktura konta w chwili zaksięgowania faktur może nie być taka sama jak struktura kont obowiązująca w chwili ukończenia przesądu. W przypadku wybrania określonych wymiarów finansowych w procesie przesądu nie ma opcji, więc sprawdzanie poprawności struktury konta jest pomijane.  
     -   **Brak** — nie są księgowane żadne wymiary finansowe. Jeśli w strukturze konta wymagany jest wymiar finansowy, proces przeszacowania jest nadal aktywny i tworzy wpisy księgowe bez wymiarów finansowych. Otrzymasz najpierw wiadomość z ostrzeżeniem, co pozwala anulować przeszacowanie.
     -   **Tabela** — oznacza, że wymiary finansowe konta odbiorcy lub dostawcy zostały zaksięgowane w przypadku transakcji z przeszacowaniem w walucie obcej.
     -   **Zaksięgowanie** — oznacza, że wymiary finansowe przeszacowywanej transakcji zostały zaksięgowane w transakcjach z przeszacowaniem w walucie obcej. Domyślnie wymiary finansowe konta księgowego rozrachunków z dostawcami/rozrachunków z odbiorcami oryginalnych transakcji będą używane do ponownego przeszacowania konta głównego rozrachunków z dostawcami/rozrachunków z odbiorcami transakcji przeszacowania, a wymiary finansowe konta głównego wydatków/środków trwałych/zysków oryginalnej transakcji będą używane do konta głównego niezrealizowanej dodatniej różnicy kursowej/straty transakcji przeszacowania.

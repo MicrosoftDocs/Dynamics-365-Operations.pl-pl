@@ -1,28 +1,25 @@
 ---
 title: Definiowanie procesów zliczania zapasów
 description: Ten temat ukazuje konfigurację podstawowych procesów inwentaryzacji poprzez utworzenie grupy inwentaryzacji i arkusza inwentaryzacji.
-author: MarkusFogelberg
-manager: tfehr
+author: yufeihuang
 ms.date: 07/26/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventCountGroup, InventJournalName, InventParameters, EcoResProductDetailsExtended, InventItemLocation, InventLocationIdLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: mafoge
+ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9df5db0e71f550e82820e15b1597d9e287071f83
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ee47b04ba7ec9f3d74230b7a41b1c295eaea9313
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435486"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580847"
 ---
 # <a name="define-inventory-counting-processes"></a>Definiowanie procesów zliczania zapasów
 
@@ -85,3 +82,6 @@ Ten temat ukazuje konfigurację podstawowych procesów inwentaryzacji poprzez ut
 5. W menu rozwijanym pola **Grupa inwentaryzacji** wybierz grupę inwentaryzacji. Można wybrać określoną grupę inwentaryzacji, która ma być stosowana do towaru w wybranym magazynie. Podczas inwentaryzowania w tym magazynie ta zasada inwentaryzacji zastąpi ogólną zasadę inwentaryzacji towaru.  
 6. Wybierz opcję **Zapisz**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

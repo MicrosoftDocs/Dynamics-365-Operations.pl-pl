@@ -2,24 +2,22 @@
 title: Tryby i metody zarządzania transportem
 description: W tym temacie przedstawiono sposób konfigurowania trybów i metod zarządzania transportem.
 author: Henrikan
-manager: tfehr
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-10-16
-ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: b9b548212c6f1f3faac56cd7ca182d84cc339bd2
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.14
+ms.openlocfilehash: a24e2300f3f3ee21b9c480c8768c4382b21867aa
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4973917"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574792"
 ---
 # <a name="transportation-management-modes-and-methods"></a>Tryby i metody zarządzania transportem
 
@@ -46,3 +44,6 @@ Aby utworzyć metodę transportu, wykonaj następujące kroki:
 1. Wybierz **Nowy**, aby utworzyć nową metodę transportu.
 1. Wprowadź unikatowy identyfikator i opisową nazwę metody transportu.
 1. Zamknij stronę.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

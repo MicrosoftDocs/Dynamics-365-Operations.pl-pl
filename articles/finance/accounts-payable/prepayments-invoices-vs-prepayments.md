@@ -1,12 +1,10 @@
 ---
 title: Faktury zaliczkowe a zaliczki
-description: Ten temat zawiera opis i porównanie dwóch metod, których organizacje używają do obsługi zaliczek (przedpłat). W jednej metodzie należy utworzyć fakturę zaliczkową skojarzoną z zamówieniem zakupu. W drugiej metodzie tworzy się załączniki arkusza zaliczki poprzez utworzenie zapisów w arkuszu i oznaczenie ich jako załączników arkusza zaliczki.
+description: Ten temat zawiera opis i porównanie dwóch metod, których organizacje używają do obsługi zaliczek (przedpłat).
 author: abruer
-manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, PurchTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9c29529aa57eb7685e36f5407f4279544fdb701
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a99e2d52aae925441fbe29ab712944f11317b3e3688c9a1913176a43dd8b5a37
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4979545"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6737314"
 ---
 # <a name="prepayment-invoices-vs-prepayments"></a>Faktury zaliczkowe a zaliczki
 
@@ -37,7 +35,7 @@ Organizacje mogą wystawiać zaliczki (płatności z góry) dla dostawców za to
 | Faktury zaliczkowe                                                                | Zaliczki                                                              |
 |-------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
 | Definiowanie wartości przedpłaty na zamówieniu zakupu.                                    | Na zamówieniu zakupu nie są definiowane żadne wartości przedpłaty.                    |
-| Klucz: faktura zaliczkowa i końcowa muszą być zaksięgowane.                       | Zaliczki nie muszą być księgowane.                                    |
+| Faktura zaliczkowa i końcowa muszą być zaksięgowane.                       | Zaliczki nie muszą być księgowane.                                    |
 | Odpowiedzialność za zaliczkę ponosi konto przedpłaty, na konto rozrachunków z dostawcami. | Odpowiedzialność za zaliczkę ponosi konto rozrachunków z dostawcami.                  |
 | Saldo dostawcy nie odzwierciedla wartości zaliczki w całym procesie.     | Saldo dostawcy odzwierciedla wartość zaliczki w całym procesie. |
 | Faktury zaliczkowe są dostępne tylko w rozrachunkach z dostawcami.                         | Zaliczki są dostępne w rozrachunkach z odbiorcami i dostawcami.    |
@@ -59,9 +57,42 @@ Faktury zaliczkowe są często stosowaną praktyką biznesową. Dostawca wystawi
 1.  Pracownik działu zakupów tworzy, potwierdza, a następnie przesyła dostawcy zamówienie zakupu, dla którego dostawca żądał zaliczki. Wartość przedpłaty jest zdefiniowana na zamówieniu zakupu w ramach umowy.
 2.  Dostawca przesyła fakturę zaliczkową.
 3.  Koordynator rozrachunków z dostawcami rejestruje fakturę zaliczkową dla zamówienia zakupu, a następnie faktura zaliczkowa jest płacona.
-4.  Po tym jak dostawca dostarczy towary lub usługi i otrzymane faktury od dostawcy zostaną otrzymane, koordynator rozrachunków z dostawcami stosuje kwotę płatności, która została już zapłacona w odniesieniu do faktury.
-5.  Koordynator rozrachunków z dostawcami płaci i rozlicza pozostałą kwotę faktury.
+4.  Dostawca wysyła żądanie płatności, zwane standardową fakturą od dostawcy. Po tym jak dostawca dostarczy towary lub usługi i otrzymane standardowej faktury od dostawcy zostaną otrzymane, koordynator rozrachunków z dostawcami stosuje kwotę płatności, która została już zapłacona w odniesieniu do standardowej faktury.
+5.  Koordynator rozrachunków z dostawcami płaci i rozlicza pozostałą kwotę standardowej faktury.
+
+## <a name="set-up-parameters-to-enable-the-prepayment-invoicing-process"></a>Konfigurowanie parametrów w celu włączenia procesu fakturowania przedpłat
+Konto przedpłaty musi być zdefiniowane na karcie **Zamówienie zakupu** na stronie **Księgowania zapasów** (**Księgowanie konfiguracji \> Ustawienia  \> Księgowanie \> Księgowanie**). Po zaksięgowaniu faktury zaliczkowej konto przedpłaty (zwykle obciążane) zostanie zaktualizowane. Saldo na koncie przedpłaty zostanie wycofane, gdy zostanie zaksięgowana standardowa faktura zastosowana do faktury zaliczkowej. Jeśli faktura zaliczkowa nie zostanie rozliowana przed zastosowaniem faktury zaliczkowej do standardowej faktury, wpisy księgowe z zaksięgowanej faktury zaliczkowej zostaną wycofane po zaksięgowaniu faktury standardowej.
+
+Przeciwstawne konto rozrachunkowe rozrachunków z dostawcami jest zdefiniowane w profilu **księgowania dostawcy**. Aby zdefiniować domyślny profil księgowania, kliknij opcję **Rozrachunki z odbiorcami \> ustawienia \> parametry rozrachunków z odbiorcami \> karta Księga i podatek \> Księgowanie profili z wcześniej opłaconą fakurą dostawcy**.
+
+**Zasady stosowania przedpłat** wskazuje, czy system automatycznie zastosuje rozliczone faktury zaliczkowe do ostatecznej faktury utworzonej ręcznie. Faktury tworzone przy użyciu jednostki danych nie będą się odwoływać do zasad **stosowania przedpłat**. Należy ręcznie zastosować rozliczone faktury zaliczkowe do faktur utworzonych przy użyciu jednostki danych. Aby zdefiniować zasady, przejdź do **Rozrachunki z dostawcami \>Ustawienia \> Parametry rozrachunków z dostawcami \> Karta księgi i podatku \> ZAsady stosowania przedpłaty**. Jeśli w polu **Zasady rozliczania przedpłaty** została ustawiona wartość **Automatycznie**, faktura zaliczkowa zostanie automatycznie zaznaczona do rozliczenia z fakturą końcową. Jeśli to pole jest ustawione na **Powiadomienie**, podczas tworzenia faktury końcowej jest wyświetlana graficzna informacja o tym, że faktura zaliczkowa jest dostępna w aplikacji.
+
+## <a name="create-a-purchase-order-that-contains-prepayment-invoice-information"></a>Tworzenie zamówienia zakupu zawierającego informacje o fakturze zaliczkowej
+Jeśli dostawca informuje Użytkownika, że wymaga przedpłaty za towary i usługi zawarte w zamówieniu zakupu, należy zdefiniować wartość przedpłaty dla skojarzonego zamówienia zakupu. Przejdź do **Rozrachunki z dostawcami \> Wspólne \> Zamówienia zakupu \> Wszystkie zamówienia zakupu**, a następnie znajdź zamówienie zakupu dostawcy. W okienku akcji wybierz kartę **Zakup** i wybierz opcję **Zapłata**. Służy do wprowadzania informacji o zaliczce, w tym opisu, wartości przedpłaty, czy przedpłata to kwota stała czy procent oraz identyfikator kategorii przedpłaty. 
+
+Należy zauważyć, że definicje wielu przedpłat na zamówieniu zakupu są niedozwolone. Jeśli jest konieczne zezwalanie na wiele przedpłat na zamówieniu zakupu, księguj płatności za pomocą arkusza płatności zamiast faktury zaliczkowej.
+
+Przedpłatę można usunąć z zamówienia zakupu, chyba że wcześniej rozliczona została płatność z zaksięgowaną fakturą zaliczkową lub zaksięgowano standardową fakturę. Aby usunąć z zamówienia zakupu informacje o przedpłatze, wybierz opcję **Rozrachunki z dostawcami \> Wspólne \> Zamówienia zakupu \> wszystkie zamówienia zakupu** i znajdź zamówienie zakupu dostawcy. W okienku akcji wybierz kartę **Zakup** i wybierz opcję **Usuń przedpłatę**.
+
+## <a name="create-and-post-a-prepayment-invoice"></a>Tworzenie i księgowanie faktury przedpłaty
+Aby zarejestrować fakturę zaliczkową dostawcy, przejdź na stronę **Faktura od dostawcy**, zaznaczając opcję **Faktura zaliczkowa** na stronie **Zamówienia zakupu** (**Rozrachunki z dostawcami \> Wspólne \> Zamówienia zakupu \> Wszystkie zamówienia zakupu \> karta Faktury \> Faktura przedpłaty**). Wprowadź informacje dotyczące faktury przedpłaty, w tym numer faktury. Nie można zmienić ilości dla faktury zaliczkowej. Jeśli dostawca zafakturował częściową kwotę wartości przedpłaty zdefiniowanej w zamówieniu zakupu, można zaktualizować cenę jednostkową, tak aby odzwierciedlała wartość częściową.
+
+Po zaksięgowaniu faktury przedpłaty saldo dostawcy i konto przedpłaty zostaną zaktualizowane. Zostanie także zaktualizowana wartość **Zastosowania przedpłaty** w definicji przedpłaty zawartej w zamówieniu zakupu. Domyślne wpisy wymiaru finansowego dla zaksięgowanego załącznika przedpłaty będą pochodziły z informacji nagłówka zamówienia zakupu.
+
+## <a name="post-and-settle-payments-for-the-prepayment-invoice"></a>Księgowanie i rozliczanie płatności dla faktury zaliczkowej
+Następnie faktura zaliczkowa zostanie zapłacona ze strony **Arkusza płatności**. Aby uzyskać dostęp do arkuszy płatności, kliknij **Rozrachunki z dostawcami \> Arkusze \> Płatności \> Arkusz płatności**. Po zaksięgowaniu rozliczenia płatności na fakturze zaliczkowej zostanie zaktualizowana **Pozostała wartość zastosowania przedpłaty** zamówienia zakupu.
+
+Przed zaksięgowaniem standardowej faktury dla faktury zaliczkowej można wycofać rozliczenie płatności z faktury zaliczkowej. Jednak po zastosowaniu faktury standardowej do faktury przedpłaty nie można cofnąć rozliczenia płatności z faktury przedpłaty.
+
+## <a name="post-the-standard-vendor-invoice-for-the-purchase-order-and-apply-the-prepayment-invoice-to-the-standard-invoice"></a>Księguj standardową fakturę od dostawcy dla zamówienia zakupu i zastosuj fakturę zaliczkową do standardowej faktury
+Zarejestrować standardową fakturę otrzymaną od dostawcy. W ramach tego procesu można zastosować rozliczoną fakturę zaliczkową do faktury dostawcy, dzięki czemu wartość faktury zostanie zmniejszona o już zapłaconą kwotę. Zastosowanie faktury zaliczkowej do faktury od dostawcy zapewnia wycofanie zapisów księgowych z faktury zaliczkowej.
+
+## <a name="application-of-the-prepayment-invoice-after-posting-the-standard-invoice"></a>Zastosowanie faktury zaliczkowej po zaksięgowaniu faktury standardowej
+W razie zapomnienia zastosowania przedpłaty do standardowej faktury od dostawcy w momencie księgowania faktury dostawcy, rozliczona przedpłata będzie dostępna do zastosowania do innych faktur od tego dostawcy ze strony **Dostawcy** (**Rozrachunki z dostawcami \> Wspólne \> Dostawcy \> Wszyscy dostawcy \> Karta Faktury \> Zastosuj**).
+
+## <a name="reversal-of-the-prepayment-application-process"></a>Wycofanie procesu zgłoszenia przedpłaty
+Jeśli musisz cofnąć rozliczenia lub wycofać zastosowanie faktury zaliczkowej z faktury standardowej, wybierz akcję **Wycofaj** ze strony **Dostawcy** (**Rozrachunki z dostawcami \> Wspólne \> Dostawcy \> Wszyscy dostawcy \> Karta Faktury \> Wycofaj**). Po wycofaniu zgłoszenia przedpłaty można zastosować przedpłatę do innej standardowej faktury. 
 
 
 
-
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

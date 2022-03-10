@@ -8,7 +8,6 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -16,14 +15,17 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 94d76a9f6d4a3d7afcb9b85d961899880ca9fc75
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 3396f0ae6d089f43c39f318dc9d92a88a7db3d7c
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893455"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070886"
 ---
 # <a name="authentication"></a>Uwierzytelnianie
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -88,7 +90,7 @@ GET https://{cluster}.hr.talent.dynamics.com/namespaces/{namespace_guid}/data/Jo
 
 6. Wybierz opcję **Zarejestruj**.
 
-   [![Rejestrowanie nowej aplikacji w portalu Azure](media/api-new-app-registration-expanded.png)](media/api-new-app-registration-expanded.png#lightbox)
+   [![Rejestrowanie nowej aplikacji w portalu Azure.](media/api-new-app-registration-expanded.png)](media/api-new-app-registration-expanded.png#lightbox)
 
 Usługa Azure AD przypisze aplikacji unikatowy identyfikator aplikacji (identyfikator klienta) i przełączy do strony **Omówienie** dla tej aplikacji. Aby dodać więcej funkcji do aplikacji, można wybrać inne opcje konfiguracji, takie jak opcje znakowania marką oraz certyfikaty i klucze tajne.
 

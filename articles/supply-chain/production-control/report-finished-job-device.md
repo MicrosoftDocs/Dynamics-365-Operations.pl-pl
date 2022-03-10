@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
-ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 5da18ff1013f0e767ca64b090eb1559bf05cb056
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: 67fa97c938f091c23a41ddd5aaf34a32c5a13c93
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350529"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102833"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Zgłaszanie jako gotowych z urządzenia karty zadania
 
@@ -218,9 +218,9 @@ W przypadku zaawansowanych procesów magazynowych może być używany wymiar num
 
 Aby móc stosować funkcje opisane w tej sekcji, należy skorzystać z [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) w celu włączenia następujących funkcji (w podanej kolejności):
 
-1. Numer identyfikacyjny do zgłoszenia wyrobów gotowych został dodany do urządzenia karty zadań
-1. Włącz automatyczną generację numeru identyfikacyjnego podczas zgłaszania wyrobów gotowych w urządzeniu karty zadań
-1. Drukowanie etykiety z menu Urządzenie karty zadań
+1. *Numer identyfikacyjny do zgłoszenia wyrobów gotowych został dodany do urządzenia karty zadań*<br>(Od wersji 10.0.21 Supply Chain Management version ta funkcja jest domyślnie włączona. Od wersji 10.0.25 Supply Chain Management version ta funkcja jest wymagana).
+1. *Włącz automatyczną generację numeru identyfikacyjnego podczas zgłaszania wyrobów gotowych w urządzeniu karty zadań*<br>(Od wersji 10.0.25 Supply Chain Management version ta funkcja jest wymagana).
+1. *Drukowanie etykiety z menu Urządzenie karty zadań*<br>(Od wersji 10.0.25 Supply Chain Management version ta funkcja jest wymagana).
 
 ### <a name="set-up-reporting-as-finished-to-a-license-plate"></a>Ustawianie zgłaszania wyrobów jako gotowych do numeru identyfikacyjnego
 

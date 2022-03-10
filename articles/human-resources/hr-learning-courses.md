@@ -1,8 +1,8 @@
 ---
 title: Konfigurowanie kursów szkoleniowych
 description: Administratorzy zasobów ludzkich i menedżerowie mogą korzystać z funkcji kursów do obsługi informacji o szkoleniu oferowanym pracownikom.
-author: andreabichsel
-ms.date: 06/24/2019
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,17 +12,20 @@ ms.search.scope: Human Resources
 ms.custom: 7532
 ms.assetid: a6950c29-8b3e-45b2-9084-ddfb1317ffaa
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 1182935dbdf774b89f2c3635bdb18f45f99dc1ddadb398f226672b7b5b9e31de
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c66459a044419535d66875cddac7eb73af744ca7
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727048"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066757"
 ---
 # <a name="set-up-training-courses"></a>Konfigurowanie kursów szkoleniowych
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -80,7 +83,7 @@ Dla każdego kursu można wykonać następujące zadania.
 - Określenie minimalnej i maksymalnej liczby uczestników
 - Przypisanie lokalizacji i sali
 - Hotele rekomendowane uczestnikom kursu
-- Utworzenie opisu kursu, który później może zostać zareklamowany w Samoobsłudze pracownika
+- Utworzenie opisu kursu, który później może zostać zareklamowany w module **Samoobsługa pracownika etatowego**
 
   >**Uwaga** Kurs można usunąć tylko wtedy, gdy nikt się na niego nie zarejestrował. 
 

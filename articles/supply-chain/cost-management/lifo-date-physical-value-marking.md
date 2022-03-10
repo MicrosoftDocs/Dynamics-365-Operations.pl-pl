@@ -13,15 +13,15 @@ ms.custom: 51592
 ms.assetid: d9f13274-3268-444f-85c8-b686fd39286d
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: kamaybac
+ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f6a9f21c6c329ef37d515fa0fbdaca57b4f3be0a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 72e1dab8bbbb830619629d1fb62a89413d388a7f
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821544"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567566"
 ---
 # <a name="lifo-date-with-physical-value-and-marking"></a>LIFO wg daty z wartością fizyczną i oznaczeniami
 
@@ -55,7 +55,9 @@ W tym przykładzie FIFO grupa modelu towaru nie jest oznaczona i nie zawiera war
 
 Nowa średnia ruchoma kosztów własnych odzwierciedla średnią wynikającą z finansowo zaktualizowanych transakcji na poziomie 15,00 USD. 
 
-Poniższa ilustracja pokazuje efekty modelu magazynu LIFO wg daty, gdy nie jest używana opcja **Włącz wartość fizyczną**. ![Data LIFO z uwzględnianiem wartości fizycznej](./media/lifodatewithoutincludephysicalvalue.gif) 
+Poniższa ilustracja pokazuje efekty modelu magazynu LIFO wg daty, gdy nie jest używana opcja **Włącz wartość fizyczną**. 
+
+![LIFO wg daty bez opcji Włącz wartość fizyczną.](./media/lifodatewithoutincludephysicalvalue.gif) 
 
 **Objaśnienie wykresu**
 
@@ -90,7 +92,9 @@ Na ilustracji przedstawiono następujące transakcje:
 
 Nowa średnia ruchoma kosztów własnych odzwierciedla średnią wynikającą z finansowo zaktualizowanych transakcji na poziomie 20,00 USD. 
 
-Poniższa ilustracja pokazuje efekty modelu magazynu LIFO, gdy używana jest opcja **Włącz wartość fizyczną**. ![Data LIFO z uwzględnianiem wartości fizycznej](./media/lifodatewithincludephysicalvalue.gif) 
+Poniższa ilustracja pokazuje efekty modelu magazynu LIFO, gdy używana jest opcja **Włącz wartość fizyczną**. 
+
+![LIFO wg daty z opcją Włącz wartość fizyczną.](./media/lifodatewithincludephysicalvalue.gif) 
 
 **Objaśnienie wykresu**
 
@@ -136,7 +140,7 @@ Na ilustracji przedstawiono następujące transakcje:
 
 Nowa średnia ruchoma kosztów własnych odzwierciedla średnią wynikającą z fizycznie i finansowo zaktualizowanych transakcji na poziomie 27,50 USD. 
 
-Poniższa ilustracja pokazuje efekty modelu magazynu LIFO, gdy używane jest oznaczanie między przychodami i rozchodami towarów. ![Data LIFO z oznaczaniem](./media/lifodatewithmarking.gif) 
+Poniższa ilustracja pokazuje efekty modelu magazynu LIFO, gdy używane jest oznaczanie między przychodami i rozchodami towarów. ![Data LIFO z oznaczaniem.](./media/lifodatewithmarking.gif) 
 
 **Objaśnienie wykresu**
 

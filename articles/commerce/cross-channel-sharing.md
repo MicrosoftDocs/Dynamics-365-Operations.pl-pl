@@ -2,11 +2,9 @@
 title: Włączanie i używanie udostępniania między kanałami
 description: W tym temacie opisano sposób włączania i używania funkcji udostępniania między kanałami w kreatorze witryn programu Microsoft Dynamics 365 Commerce.
 author: psimolin
-manager: annbe
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,20 +14,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3990365dda0a0cff7adcc1d97120293d43f6e858
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 05614b3ec14bfca9551242e5cf31aee0cb21c39a85150114af446a187fac998a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4973138"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742423"
 ---
 # <a name="enable-and-use-cross-channel-sharing"></a>Włączanie i używanie udostępniania między kanałami
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano sposób włączania i używania funkcji udostępniania między kanałami w kreatorze witryn programu Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 Dzięki udostępnianiu między kanałami sprzedawcy mogą ponownie wykorzystać i udostępniać zawartość między wieloma kanałami oddziału. Ta funkcja jest przydatna w przypadku, gdy kanały oddziału mają zgodny język podstawowy lub wiele wspólnych elementów zawartości.
 
@@ -52,15 +48,15 @@ Aby włączyć udostępnianie między kanałami w konstruktorze witryn Commerce,
 1. Przejdź do **Ustawienia witryny \> Funkcje**.
 1. Ustaw funkcję **Między kanałami** na wartość **Włączone**.
 
-    ![Opcja między kanałami ustawiona na Włączone w kreatorze witryn Commerce](./media/enabling-cross-channel-sharing.png)
+    ![Opcja między kanałami ustawiona na Włączone w kreatorze witryn Commerce.](./media/enabling-cross-channel-sharing.png)
 
 Po włączeniu funkcji udostępniania między kanałami informacje będą wyświetlane w sekcji **Kanały** w **Ustawienia witryny \> Funkcje** jak pokazano na przykładzie przedstawionym na poniższej ilustracji.
 
-![Informacje o kanałach widoczne po włączeniu udostępniania między kanałami](./media/channels-cross-channel.png)
+![Informacje o kanałach widoczne po włączeniu udostępniania między kanałami.](./media/channels-cross-channel.png)
 
 Ponadto po włączeniu funkcji udostępniania między kanałami pole **Kanał** w prawym górnym rogu kreatora witryn Commerce będzie zawierać opcję **Sklep internetowy dla kilku kanałów**, która może być używana do zarządzania zawartością między kanałami, jak to pokazano na poniższej ilustracji.
 
-![Opcja Sklep internetowy dla kilku kanałów w polu Kanały po włączeniu udostępniania między kanałami](./media/cross-channel-dropdown.png)
+![Opcja Sklep internetowy dla kilku kanałów w polu Kanały po włączeniu udostępniania między kanałami.](./media/cross-channel-dropdown.png)
 
 ## <a name="create-and-use-cross-channel-content"></a>Tworzenie i używanie zawartości między kanałami
 
@@ -136,3 +132,6 @@ W przypadku użycia podstawowego adresu URL kanału i przejścia do adresu URL s
 [Dokumentowanie stanów i cyklów życia](document-states-overview.md)
 
 [Praca z grupami publikowania](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

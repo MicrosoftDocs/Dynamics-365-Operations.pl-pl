@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: cd056798773bce492e429f8cca2ef39cb59bf739
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7ef8f730f2e207a8fd28c2bf5167d14f57d6c607314bfc48d4358a59d3ef5c43
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753823"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718606"
 ---
 # <a name="compress-large-documents-that-are-generated-in-electronic-reporting"></a>Kompresuj duże dokumenty generowane w ramach raportowania elektronicznego 
 
 [!include [banner](../includes/banner.md)]
 
-Możesz użyć [Struktury raportowania elektronicznego (ER)](general-electronic-reporting.md), aby skonfigurować rozwiązanie, które pobiera dane transakcyjne w celu wygenerowania dokumentu wychodzącego. Wygenerowany dokument może być dość duży. Po wygenerowaniu tego typu dokumentu używana jest pamięć [Application Object Server (AOS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-tools/access-instances#location-of-packages-source-code-and-other-aos-configurations). W pewnym momencie dokument musi zostać pobrany z aplikacji Microsoft Dynamics 365 Finance. Obecnie maksymalny rozmiar pojedynczego dokumentu wygenerowanego w module ER jest ograniczony do 2 gigabajtów (GB). Ponadto Finance [ograniczają](https://fix.lcs.dynamics.com/Issue/Details?kb=4569432&bugId=453907&dbType=3) obecnie rozmiar pobranego pliku do 1 GB. Dlatego należy skonfigurować rozwiązanie ER, które zmniejsza prawdopodobieństwo, że te ograniczenia zostaną przekroczone i że zostanie wyświetlony wyjątek **Strumień był zbyt długi** lub **Przepełnienie lub niedomiar w operacji arytmetycznej**.
+Możesz użyć [Struktury raportowania elektronicznego (ER)](general-electronic-reporting.md), aby skonfigurować rozwiązanie, które pobiera dane transakcyjne w celu wygenerowania dokumentu wychodzącego. Wygenerowany dokument może być dość duży. Po wygenerowaniu tego typu dokumentu używana jest pamięć [Application Object Server (AOS)](../dev-tools/access-instances.md#location-of-packages-source-code-and-other-aos-configurations). W pewnym momencie dokument musi zostać pobrany z aplikacji Microsoft Dynamics 365 Finance. Obecnie maksymalny rozmiar pojedynczego dokumentu wygenerowanego w module ER jest ograniczony do 2 gigabajtów (GB). Ponadto Finance [ograniczają](https://fix.lcs.dynamics.com/Issue/Details?kb=4569432&bugId=453907&dbType=3) obecnie rozmiar pobranego pliku do 1 GB. Dlatego należy skonfigurować rozwiązanie ER, które zmniejsza prawdopodobieństwo, że te ograniczenia zostaną przekroczone i że zostanie wyświetlony wyjątek **Strumień był zbyt długi** lub **Przepełnienie lub niedomiar w operacji arytmetycznej**.
 
 Podczas konfigurowania rozwiązania można dostosować format ER w Projektancie operacji, dodając element główny typu **Folder**, aby skompresować zawartość generowaną przez dowolny z jego zagnieżdżonych elementów. Kompresja działa „w samą porę”, dzięki czemu maksymalne zużycie pamięci i rozmiar pobieranego pliku można zmniejszyć.
 
@@ -55,7 +55,7 @@ Przed wykonaniem procedur opisanych w tym temacie należy wykonać następujące
 1. [Uruchamianie zaimportowanego formatu](er-defer-xml-element.md#run-the-imported-format).
 2. Zauważ, że rozmiar wygenerowanego dokumentu w formacie XML wynosi 3 kilobajty (KB).
 
-    ![Podgląd nieskompresowanego dokumentu wychodzącego](./media/er-compress-outbound-files1.png)
+    ![Podgląd nieskompresowanego dokumentu wychodzącego.](./media/er-compress-outbound-files1.png)
 
 ### <a name="modify-the-format-to-compress-the-generated-output"></a>Zmodyfikuj format, aby skompresować wygenerowany wynik
 
@@ -80,7 +80,7 @@ Przed wykonaniem procedur opisanych w tym temacie należy wykonać następujące
     > [!NOTE] 
     > Stopień kompresji pliku XML, który jest przetrzymany przez ten plik zip, wynosi 87 procent. Współczynnik kompresji zależy od danych, które są kompresowane.
 
-    ![Podgląd skompresowanego dokumentu wychodzącego](./media/er-compress-outbound-files2.png)
+    ![Podgląd skompresowanego dokumentu wychodzącego.](./media/er-compress-outbound-files2.png)
 
 > [!NOTE]
 > Jeśli [miejsce docelowe](electronic-reporting-destinations.md) ER jest skonfigurowane dla elementu formatu, który generuje dane wyjściowe (element **Raport** w tym przykładzie), kompresja danych wyjściowych zostanie pominięta.

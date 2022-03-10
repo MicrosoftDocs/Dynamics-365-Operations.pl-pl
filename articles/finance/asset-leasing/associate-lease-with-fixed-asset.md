@@ -2,13 +2,11 @@
 title: Kojarzenie środków trwałych z wynajmami
 description: W tym temacie opisano sposób kojarzenia istniejącego środka trwałego z nowym wynajmem.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseDetail
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -17,16 +15,17 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 5c4f14d38b3cfc2c4d09cfeb5854204701250757
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: bd55d433b0961b8b210b9c28d7340ff880635a85
+ms.sourcegitcommit: 3af457fc216bd0020843291ca57fd379acb53c96
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5260860"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "7392481"
 ---
 # <a name="associate-fixed-assets-with-leases"></a>Kojarzenie środków trwałych z wynajmami
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 W tym temacie opisano sposób kojarzenia istniejącego środka trwałego z nowym wynajmem. Po skojarzeniu środka trwałego z wynajmem wartość środka trwałego (ROU) w momencie początkowego uznania będzie kosztem nabycia środka trwałego.
 
@@ -51,8 +50,18 @@ Po zaksięgowaniu wpisu w arkuszu początkowego uznania transakcja jest wyświet
 
 Środek trwały może teraz zostać zamortyzowany przy użyciu standardowych funkcji amortyzacji w module Środki trwałe. Aby uzyskać więcej informacji na temat amortyzacji, zobacz [Metody i konwencje amortyzacji środka trwałego](../fixed-assets/depreciation-methods-conventions.md).
 
+Jeśli wynajem jest skojarzony ze środkiem trwałym, pole **Okres użytkowania** w księdze środków trwałych zostanie zaktualizowane w celu dostosowania go do najmniejszej wartości z następujących kryteriów: 
+
+ - Okres użyteczności środka trwałego
+ - Okres wynajmu ze skojarzonej księgi wynajmu
+
+Jeśli w polu **Przeniesienie własności** jest ustawiona wartość **Tak** dla księgi wynajmu, wartość w polu **Okres użyteczności** zawsze będzie okresem użyteczności środka trwałego. 
+ 
+Okres użyteczności będzie aktualizowany za każdym razem, gdy wynajem zostanie skorygowany, aby zagwarantować amortyzację składnika majątku z prawem do użytkowania w czasie wynajmu, tak jakby był on amortyzowany w przypadku wynajmu środka trwałego.
+
 > [!NOTE]
 > Jeśli użytkownik skojarzy środek trwały z wynajmem, przyciski **Amortyzacja środka trwałego** i **Utrata wartości wynajmu** są wyłączone w module Wynajem składnika majątku. Transakcje amortyzacji składnika majątku i utraty wartości wynajmu można wyświetlić w module Środki trwałe. Przycisk **Transakcje składnika majątku**, który powoduje otwarcie formularza kwerendy, również jest wyłączony. Formularz kwerendy **Transakcje składnika majątku** można również otworzyć w module Środki trwałe.  
 
+Na stronach **Środki trwałe** i **Księga środków trwałych** zostanie wyświetlony identyfikator wynajmu skojarzony ze środkami trwałymi. Jeśli środek trwały jest skojarzony z wynajmem, identyfikator wynajmu i opis wynajmu będą wyświetlane na skróconej karcie **Informacje o wynajmie** na stronie **Środki trwałe**. W przypadku ksiąg środków trwałych skojarzonych z księgami wynajmu w polach **Identyfikator wynajmu**, **Opis wynajmu** i **Typ księgi** będą wyświetlane informacje dotyczące wybranej księgi środków trwałych na skróconej karcie **Informacje o wynajmie**, aby wskazać, że jest ona skojarzona z księgą wynajmu.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

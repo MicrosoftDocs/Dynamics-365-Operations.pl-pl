@@ -1,35 +1,37 @@
 ---
-title: Omówienie uaktualniania księgi amortyzacji
-description: 'W poprzednich wersjach istniały dwie koncepcje wyceny środków trwałych: modele ewidencji i księgi amortyzacji.'
-author: ShylaThompson
+title: Omówienie uaktualnienia księgi amortyzacji
+description: W tym temacie opisano funkcje bieżącej księgi w obszarze Środki trwałe. Ta funkcjonalność opiera się na funkcjonalności modelu ewidencji, która była dostępna we wcześniejszych wersjach, ale także zawiera wszystkie funkcje dostępne wcześniej tylko w księgach amortyzacji.
+author: moaamer
 ms.date: 06/20/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User, Developer
 ms.reviewer: roschlom
-ms.custom: 221624
+ms.custom:
+- "221624"
+- intro-internal
 ms.assetid: cf434099-36f9-4b0f-a7c8-bed091e34f39
 ms.search.region: global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d42936a94e0f4d50ae227d760d5bee6e1e3a12e6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: eaa47b47a93deda24a6c76572881d1e5bba29c52
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826985"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985090"
 ---
 # <a name="depreciation-book-upgrade-overview"></a>Omówienie uaktualnienia księgi amortyzacji
 
 [!include [banner](../includes/banner.md)]
 
-W poprzednich wersjach istniały dwie koncepcje wyceny środków trwałych: modele ewidencji i księgi amortyzacji. W programie Microsoft Dynamics 365 for Operations (wydanie 1611) funkcje modeli ewidencji i ksiąg amortyzacji zostały scalone w pojedynczy obiekt zwany księgą. Ten temat porusza kilka zagadnień, które należy wziąć pod uwagę przy uaktualnianiu. 
+W tym temacie opisano funkcje bieżącej księgi w obszarze Środki trwałe. Ta funkcjonalność opiera się na funkcjonalności modelu ewidencji, która była dostępna we wcześniejszych wersjach, ale także zawiera wszystkie funkcje dostępne wcześniej tylko w księgach amortyzacji. Funkcje modeli ewidencji i ksiąg amortyzacji zostały scalone w pojedynczy obiekt zwany księgą. Funkcja księgi umożliwia używanie jednego zestawu stron, zapytań i raportów dla wszystkich procesów środków trwałych w organizacji. Ten temat zawiera pewne zagadnienia, które należy rozważyć przed uaktualnieniem. 
 
-Proces uaktualniania spowoduje przeniesienie istniejących ustawień i wszystkich istniejących transakcji do nowej struktury księgi. Modele ewidencji pozostaną w swoim obecnym kształcie, jako księgi powodujące księgowanie w księdze głównej. Księgi amortyzacji zostaną przeniesione do księgi, która w opcji **Księguj w księdze głównej** ma wartość **Nie**. Arkusze ksiąg amortyzacji zostaną przeniesiona do arkusza księgi głównej, w której ustawiono warstwę księgowania **Brak**. Transakcje księgi amortyzacji zostaną przeniesione do transakcji na środkach trwałych. 
+Proces uaktualniania spowoduje przeniesienie istniejących ustawień i wszystkich istniejących transakcji do nowej struktury księgi. Modele ewidencji pozostaną w swoim obecnym kształcie, jako księgi powodujące księgowanie w księdze głównej. Księgi amortyzacji zostaną przeniesione do księgi, która w opcji Księguj w księdze głównej ma wartość Nie. Arkusze ksiąg amortyzacji zostaną przeniesiona do arkusza księgi głównej, w której ustawiono warstwę księgowania Brak. Transakcje księgi amortyzacji zostaną przeniesione do transakcji na środkach trwałych.
 
-Przed uruchomieniem uaktualniania danych zapoznaj się z dwoma opcjami służącymi do uaktualniania wierszy arkuszy księgi amortyzacji do załączników transakcji oraz do uaktualniania numeracji, która będzie używana dla serii załączników. 
+Przed uruchomieniem uaktualniania danych zapoznaj się z dwoma opcjami służącymi do uaktualniania wierszy arkuszy księgi amortyzacji do załączników transakcji oraz do uaktualniania numeracji, która będzie używana dla serii załączników.
 
 Opcja 1: **Numeracja systemowa** — Jest to opcja domyślna, która optymalizuje przebieg uaktualniania. Uaktualnianie nie będzie używać struktury numeracji, ale zamiast tego przydzieli załącznikom numery w oparciu o zestawy. Po uaktualnieniu nowa numeracja zostanie utworzona z ustawieniem **Następny zestaw numerów** odpowiednio opartym na uaktualnionych transakcjach. Domyślnie używana numeracja będzie w formacie FADBUpgr\#\#\#\#\#\#\#\#\#. Podczas korzystania z tej metody jest dostępnych kilka parametrów umożliwiających korygowanie tego formatu:
 
@@ -51,7 +53,7 @@ Opcja 2: **Istniejąca numeracja zdefiniowana przez użytkownika** — Ta opcja 
 -   **Kod sekwencji numerów** — Kod numeracji.
     -   Nazwa stałej: **NumberSequenceExistingCode**
     -   Wartość domyślna: Brak wartości domyślnej, należy tu wpisać obowiązujący kod numeracji.
--   **Udostępnione sekwencje numerów** — Wartość logiczna identyfikująca zakres numeracji. Użyj wartości „true” dla numeracji współużytkowanej przez wszystkie firmy, a wartości „false” dla zakresu specyficznego dla firmy. W przypadku ustawienia wartości „false” numeracja o podanej nazwie musi istnieć w każdej firmie zawierającej transakcje księgi amortyzacji. Współużytkowane numeracje istnieją w każdej partycji, która zawiera transakcje księgi amortyzacji.
+-   **Udostępnione sekwencje numerów** — wartość logiczna identyfikująca zakres numeracji. Użyj wartości „true” dla numeracji współużytkowanej przez wszystkie firmy, a wartości „false” dla zakresu specyficznego dla firmy. W przypadku ustawienia wartości „false” numeracja o podanej nazwie musi istnieć w każdej firmie zawierającej transakcje księgi amortyzacji. Współużytkowane numeracje istnieją w każdej partycji, która zawiera transakcje księgi amortyzacji.
     -   Nazwa stałej: **NumberSequenceExistingIsShared**
     -   Wartość domyślna: true
 

@@ -1,28 +1,25 @@
 ---
 title: Inicjowanie poziomów zapasów w magazynie
 description: W tej procedurze pokazano, jak ręcznie zaktualizować dostępne zapasy przy użyciu arkusza przesunięć zapasów (można również aktualizować dostępne zapasy przez importowanie transakcji w jednostkach danych).
-author: perlynne
-manager: tfehr
+author: yufeihuang
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalMovement, InventJournalCreate, InventItemIdLookupSimple, InventLocationIdLookup, WMSLocationIdLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 03481ddc5bd12b3459b69d65b1cfaeb23c60dfd4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 264dabf9c1c10c3d2cee3e0c942abbfa249f21f5
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435485"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7565886"
 ---
 # <a name="initialize-stock-levels-in-the-warehouse"></a>Inicjowanie poziomów zapasów w magazynie
 
@@ -60,3 +57,6 @@ W tej procedurze pokazano, jak ręcznie zaktualizować dostępne zapasy przy uż
 25. Zamknij stronę.
 26. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: Prognozowanie przepływów pieniężnych
 description: Ten temat zawiera omówienie procesu prognozowania przepływów pieniężnych. Wyjaśniono również, jak prognozowanie przepływów pieniężnych jest zintegrowane z innych modułami w systemie.
-author: saraschi2
-manager: AnnBe
-ms.date: 08/03/2020
+author: panolte
+ms.date: 02/16/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerCovParameters
 audience: Application User
@@ -15,16 +13,17 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 85e8c8bf0c626e049fd78f326fd0929212f962c5
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5a46946ff2c3569dab0ce8b53b3cddcf18318cbf
+ms.sourcegitcommit: 465c84eb5cdc211692e2ae09b45d1400f9a315ee
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985269"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8314730"
 ---
 # <a name="cash-flow-forecasting"></a>Prognozowanie przepływów pieniężnych
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Narzędzia prognozowania przepływów pieniężnych mogą służyć do analizy nadchodzących przepływów pieniężnych i zapotrzebowania na waluty, co pozwoli szacować przyszłe potrzeby firmy w zakresie gotówki. Aby uzyskać prognozę przepływów pieniężnych, należy wykonać następujące zadania:
 
@@ -38,6 +37,7 @@ Po wykonaniu tych zadań można obliczać i analizować prognozy przepływów pi
 Funkcjonalność prognozowania środków pieniężnych można zintegrować z modułami Księga główna, Rozrachunki z dostawcami, Rozrachunki z odbiorcami, Budżetowanie i Zarządzanie zapasami. Proces prognozowania używa informacji o transakcjach wprowadzonych w systemie, a proces obliczania prognozuje oczekiwany skutek gotówkowy każdej transakcji. Następujące typy transakcji są uwzględniane podczas obliczania przepływ pieniężnych:
 
 - **Zamówienia sprzedaży** — zamówienia sprzedaży, które nie zostały jeszcze zafakturowane i które skutkują fizyczną lub finansową sprzedażą.
+- **Faktury niezależne** — faktury niezależne, które nie zostały jeszcze zaksięgowane i których wynikiem jest sprzedaż finansowa. 
 - **Zamówienia zakupu** — zamówienia zakupu, które nie zostały jeszcze zafakturowane i które skutkują fizycznym lub finansowym zakupem.
 - **Rozrachunki z odbiorcami** — otwarte transakcje z odbiorcami (faktury nie są jeszcze zapłacone).
 - **Rozrachunki z dostawcami** — otwarte transakcje z dostawcami (faktury nie są jeszcze zapłacone).
@@ -45,8 +45,9 @@ Funkcjonalność prognozowania środków pieniężnych można zintegrować z mod
 - **Wpisy do rejestru budżetu** — wpisy do rejestru budżetu, które wybrano dla prognoz przepływów pieniężnych.
 - **Prognozy popytu** — wiersze modelu prognozy zapasów, które wybrano dla prognoz przepływów pieniężnych.
 - **Prognozy dostaw** — wiersze modelu prognozy zapasów, które wybrano dla prognoz przepływów pieniężnych.
-
-Mimo iż nie ma bezpośredniej integracji z modułem Zarządzanie projektami i ich księgowanie, istnieje kilka sposobów na uwzględnienie transakcji projektu w prognozie przepływów pieniężnych. Zaksięgowane faktury projektu są uwzględniane w prognozie jako część otwartych transakcji odbiorcy. Zamówienia sprzedaży i zamówienia zakupu inicjowane przez projekt są uwzględniane w prognozie jako otwarte zamówienia po ich wprowadzeniu w systemie. Można także przenieść prognozy projektu do modelu budżetu księgi. Następnie ten model budżetu księgi zostanie uwzględniony w prognozie przepływów pieniężnych jako część wpisów do rejestru budżetu.
+- **Zewnętrzne źródło danych** — dane zewnętrzne wprowadzane lub importowane do prognoz przepływów pieniężnych za pomocą szablonów arkuszy kalkulacyjnych.
+- **Prognozy projektów** — prognozy zarządzania projektami i ich księgowania za pomocą modelu prognozy.
+- **Przepływy pieniężne — płatności do urzędu skarbowego** — przewidywane kwoty płatności do urzędu skarbowego oraz terminy, których wynikiem są płatności finansowe. Włącz funkcję Przepływy pieniężne — płatności do urzędu skarbowego.
 
 ## <a name="configuration"></a>Konfiguracja
 
@@ -86,18 +87,38 @@ Możesz zastąpić domyślną wartość w polu **Konto płynności** dla konkret
 
 ### <a name="budgeting"></a>Budżetowanie
 
-Budżety tworzone na podstawie modeli budżetu można uwzględniać w prognozach przepływów pieniężnych. Na stronie **Ustawienia prognozy przepływów pieniężnych** na karcie **Budżetowanie** zaznacz modele budżetu do uwzględnienia w prognozie. Domyślnie nowe wpisy do rejestru budżetu są uwzględniane w prognozach po włączeniu opcji wykorzystywania modelu budżetu w prognozowaniu przepływów pieniężnych. Uwzględnianie w prognozowaniu przepływów pieniężnych można zastępować na poziomie poszczególnych wpisów do rejestru budżetu.
+Budżety tworzone na podstawie modeli budżetu można uwzględniać w prognozach przepływów pieniężnych. Na stronie **Ustawienia prognozy przepływów pieniężnych** na karcie **Budżetowanie** zaznacz modele budżetu do uwzględnienia w prognozie. Domyślnie nowe wpisy do rejestru budżetu są uwzględniane w prognozach po włączeniu opcji wykorzystywania modelu budżetu w prognozowaniu przepływów pieniężnych.
+
+Wpisy do rejestru budżetowego mogą być indywidualnie uwzględniane w prognozie przepływów pieniężnych poprzez personalizację. Podczas dodawania kolumny „Uwzględnij w prognozach przepływów pieniężnych” na stronie **wpisu do rejestru budżetu** system zastąpi ustawienia na stronie **ustawień prognozy przepływów pieniężnych**, aby uwzględnić w prognozie pojedynczy wpis do rejestru budżetu.
+
 
 ### <a name="inventory-management"></a>Zarządzanie zapasami
 
 W prognozach przepływów pieniężnych można uwzględniać prognozy dostaw zapasów i popytu na zapasy. Na stronie **Ustawienia prognozy przepływów pieniężnych** na karcie **Zarządzanie zapasami** zaznacz modelu prognozy do uwzględnienia w prognozie przepływów pieniężnych. Uwzględnianie w prognozowaniu przepływów pieniężnych można zastępować na poziomie poszczególnych wierszy prognoz dostaw i popytu.
 
 ### <a name="setting-up-dimensions-for-cash-flow-forecasting"></a>Konfigurowanie wymiarów dla prognozowania przepływów pieniężnych
-Nowa karta na stronie **Konfiguracja prognozowania przepływów pieniężnych** umożliwia kontrolowanie wymiarów finansowych, które mają być używane do filtrowania, w obszarze roboczym **Prognozowanie przepływów pieniężnych**. Ta karta będzie wyświetlana tylko wtedy, gdy jest włączona funkcja prognoz przepływów pieniężnych. 
+Nowa karta na stronie  **Ustawienia prognozowania przepływów pieniężnych**  umożliwia kontrolowanie wymiarów finansowych, które będą używane w celu filtrowania w obszarze roboczym  **Prognozowanie przepływów pieniężnych** . Ta karta będzie wyświetlana tylko wtedy, gdy będzie włączona funkcja Prognozy przepływów pieniężnych.
 
 Na karcie **Wymiary** wybierz z listy wymiary, które mają być użyte do filtrowania, a następnie za pomocą klawiszy strzałek przenieś je do prawej kolumny. Do filtrowania danych prognozy przepływów pieniężnych można wybrać tylko dwa wymiary. 
 
-### <a name="calculation"></a>Obliczenie
+### <a name="setting-up-external-source"></a>Ustawianie źródła zewnętrznego
+Po skonfigurowaniu aplikacji Finance Insights do prognoz przepływów pieniężnych można wprowadzać lub importować dane zewnętrzne. Przed wprowadzeniu lub zaimportowaniu danych zewnętrznych należy skonfigurować źródła zewnętrzne. Na karcie **Źródło zewnętrzne** skonfiguruj kategorie zewnętrznych przepływów pieniężnych. Może to być kategoria **Wychodząca** lub **Przychodząca**. Jako typ księgowania należy wybrać **płynność**. W siatce **Ustawienia firmy wybierz firmy** i odpowiednie konta główne, do których mają zastosowanie kategorie zewnętrznych przepływów pieniężnych.
+
+Aby uzyskać więcej informacji, zobacz [Dane zewnętrzne w prognozach przepływów pieniężnych](../../finance/finance-insights/external-data-in-cash-flow.md). 
+
+### <a name="project-management-and-accounting"></a>Zarządzanie projektami i ich księgowanie
+
+W wersji 10.0.17 nowa funkcja umożliwia integrację z funkcjami zarządzania projektami i ich księgowania oraz prognozowania przepływów pieniężnych. W obszarze roboczym **Zarządzanie funkcjami** włącz funkcję **Prognoza dla projektu przepływów pieniężnych**, aby uwzględnić prognozowane koszty i przychody w prognozie przepływów pieniężnych. Na karcie **Zarządzanie projektami i ich księgowanie** na stronie **Ustawienia prognozy przepływów pieniężnych** wybierz typy projektów i typy transakcji, które powinny być uwzględnione w prognozie przepływów pieniężnych. Następnie wybierz model prognozy projektu. Podmodel typu redukcji działa najlepiej. Konta płynności wprowadzone w ustawieniach rozrachunków z odbiorcami są używane jako domyślne konta płynności. Dlatego nie trzeba wprowadzać domyślnych kont płynności podczas ustawienia prognozy przepływów pieniężnych. Można również użyć modelu budżetu, ale tylko jeden typ można wybrać na stronie **Ustawień prognozy przepływów pieniężnych** dla zarządzania projektami i ich księgowania. Model prognozy oferuje najbardziej elastyczny sposób zarządzania projektami i ich księgowania lub działania w ramach Project Operations.
+
+Po włączeniu funkcji prognozy przepływów pieniężnych można wyświetlać prognozę przepływów pieniężnych dla każdego projektu na stronie **Wszystkie projekty**. W okienku akcji na karcie **Plan** kliknij w grupie **Prognoza** wybierz opcję **Prognoza przepływów pieniężnych**. W obszarach roboczych **Przegląd gotówki** (zobacz sekcję [Raportowanie](#reporting) w dalszej części tego tematu) typ transakcji prognozy projektu pokazuje przychody (przychód prognozy projektu) i przychody (koszty prognoz projektu). Kwoty można uwzględniać tylko wtedy, gdy pole **Etap projektu** w obszarze roboczym **Przegląd gotówki** ma wartość **W trakcie**.
+
+Transakcje projektu są nadal uwzględniane w prognozie przepływów pieniężnych na kilka sposobów, niezależnie od tego, czy funkcja **Prognozy przepływów pieniężnych** jest włączona. Zaksięgowane faktury projektu są uwzględniane w prognozie jako część otwartych transakcji odbiorcy. Zamówienia sprzedaży i zamówienia zakupu inicjowane przez projekt są uwzględniane w prognozie jako otwarte zamówienia po ich wprowadzeniu w systemie. Można także przenieść prognozy projektu do modelu budżetu księgi. Następnie ten model budżetu księgi zostanie uwzględniony w prognozie przepływów pieniężnych jako część wpisów do rejestru budżetu. Jeśli funkcja **Prognozy projektu przepływów pieniężnych** jest włączona, nie należy przenosić prognoz projektu do modelu budżetu księgi, ponieważ ta akcja spowoduje zliczanie prognoz projektów dwa razy.
+
+### <a name="sales-tax-authority-payments"></a>Płatności do urzędu skarbowego 
+
+Funkcja Przepływy pieniężne — płatności do urzędu skarbowego przewiduje wpływ przepływów pieniężnych na płatności podatków. Ta funkcja używa niezapłaconych transakcji podatku, okresów rozliczania podatku oraz terminu płatności podatku w celu przewidywania daty i kwoty płatności związanych z przepływami pieniężnymi. 
+
+### <a name="calculation"></a>Obliczanie
 
 Aby można było wyświetlać analizy prognostyczne przepływów pieniężnych, należy uruchomić proces obliczania przepływów pieniężnych. Proces obliczania będzie prognozował przyszłe skutki gotówkowe wprowadzanych transakcji.
 
@@ -139,7 +160,7 @@ Obszar roboczy **Przegląd środków pieniężnych — wszystkie firmy** pokazuj
 
 Obszar roboczy **Przegląd środków pieniężnych — bieżąca firma** przedstawia analizy prognostyczne przepływów pieniężnych w walucie rozliczeniowej zdefiniowanej dla firmy. Walutę rozliczeniową używaną do analiz definiuje się na stronie **Księga**. Ten obszar roboczy zawiera przegląd prognozowania przepływów pieniężnych i sald kont bankowych dla bieżącej firmy. Wykres przychodów i rozchodów gotówkowych obrazuje przyszłe przepływy pieniężne i salda w walucie rozliczeniowej oraz dostarcza szczegółowych informacji o prognozowanych transakcjach. Widać także prognozowane salda w walutach.
 
-Aby uzyskać więcej informacji na temat analiz prognostycznych przepływów pieniężnych, zobacz temat [Przegląd środków pieniężnych — zawartość usługi Power BI](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-overview-power-bi-content).
+Aby uzyskać więcej informacji na temat analiz prognostycznych przepływów pieniężnych, zobacz [Przegląd środków pieniężnych — zawartość usługi Power BI](Cash-Overview-Power-BI-content.md).
 
 Ponadto można wyświetlać dane prognozowania przepływów pieniężnych dla określonych kont, zamówień i towarów na następujących stronach:
 
@@ -149,3 +170,6 @@ Ponadto można wyświetlać dane prognozowania przepływów pieniężnych dla ok
 - **Prognoza dostaw**: opcja **Prognozy przepływów pieniężnych** pozwala obejrzeć przyszłe przepływy pieniężne skojarzone z prognozą dostaw wybranego towaru.
 - **Prognoza popytu**: opcja **Prognozy przepływów pieniężnych** pozwala obejrzeć przyszłe przepływy pieniężne skojarzone z prognozą popytu na wybrany towar.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

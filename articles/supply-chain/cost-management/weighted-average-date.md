@@ -13,15 +13,15 @@ ms.custom: 28991
 ms.assetid: 945d5088-a99d-4e54-bc42-d2bd61c61e22
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: kamaybac
+ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 563fa291754f7f795fa64d530de49b9fe4083c56
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ce056a661130d30426ccfa4c288a0ce5b62ff959
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821304"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572032"
 ---
 # <a name="weighted-average-date"></a>Średnia ważona z datą
 
@@ -39,7 +39,7 @@ Jeśli do tego dnia miało miejsce tylko jedno przyjęcie, nie trzeba obliczać 
 
 Podczas zamknięcia zapasów obliczenia są wykonywane na każdy dzień okresu zamknięcia, zgodnie z poniższą ilustracją. 
 
-![Model codziennego obliczania średniej ważonej z datą](./media/weightedaveragedatedailycalculationmodel.gif) 
+![Model codziennego obliczania średniej ważonej z datą.](./media/weightedaveragedatedailycalculationmodel.gif) 
 
 Transakcje magazynowe powodujące wydania z zapasów, takie jak transakcje wynikające z zamówień sprzedaży, arkuszy magazynowych i zleceń produkcyjnych, są realizowane według szacowanego kosztu własnego na dzień księgowania. Ten szacowany koszt własny jest również określany mianem średniej kroczącej kosztu własnego. W dniu zamknięcia zapasów system analizuje transakcje magazynowe za poprzednie okresy, poprzednie dni i bieżący dzień. Ta analiza służy określaniu, która z poniższych zasad zamknięcia ma zostać użyta:
 
@@ -72,7 +72,7 @@ Na ilustracji przedstawiono następujące transakcje:
 -   2b. Finansowy rozchód magazynowy zaktualizowany dla ilości 2 i po koszcie 10,00 USD.
 -   3. Zamknięcie magazynu zostało wykonane z zastosowaniem metody rozliczenia bezpośredniego, aby rozliczyć finansowy przychód magazynowy względem finansowego rozchodu magazynowego.
 
-![Rozliczenie bezpośrednie z zastosowaniem średniej ważonej na dzień bez opcji Włącz wartość fizyczną](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
+![Rozliczenie bezpośrednie z zastosowaniem średniej ważonej na dzień bez opcji Włącz wartość fizyczną.](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
 
 **Objaśnienie ilustracji:**
 
@@ -126,7 +126,7 @@ System generuje i księguje sumaryczną transakcję przeniesienia zapasów. Pona
 
 Na poniższym schemacie przedstawiono powyższe transakcje oraz efekt zastosowania w ich przypadku modelu magazynu opartego na średniej ważonej i zasady rozliczenia sumarycznego bez opcji **Włącz wartość fizyczną**. 
 
-![Rozliczenie sumaryczne z zastosowaniem średniej ważonej na dzień bez opcji Włącz wartość fizyczną](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
+![Rozliczenie sumaryczne z zastosowaniem średniej ważonej na dzień bez opcji Włącz wartość fizyczną.](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
 
 **Objaśnienie ilustracji**
 

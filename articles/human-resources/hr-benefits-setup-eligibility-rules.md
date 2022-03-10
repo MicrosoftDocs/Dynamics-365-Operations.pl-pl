@@ -1,33 +1,42 @@
 ---
 title: Konfigurowanie reguł i opcji uprawnień
-description: Określenie reguł i opcji dotyczących uprawnień w obszarze roboczym Zarządzanie świadczeniami w module Microsoft Dynamics 365 Human Resources.
-author: andreabichsel
-manager: AnnBe
-ms.date: 04/06/2020
+description: W tym temacie opisano sposób określenia reguł i opcji dotyczących uprawnień w obszarze roboczym Zarządzanie świadczeniami w programie Microsoft Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 70054acafc3aec35fd985c0ca81e928519ddd0a3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e87bef8994fe1eac0089764c8d4f9b18289c13ea
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420020"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069637"
 ---
-# <a name="configure-eligibility-rules-and-options"></a>Konfigurowanie reguł i opcji uprawnień
+# <a name="configure-eligibility-rules-and-options"></a>Konfigurowanie reguł i opcji uprawnień 
 
-Po skonfigurowaniu niezbędnych parametrów zarządzania świadczeniami w module Microsoft Dynamics 365 Human Resources można utworzyć reguły uprawnień, pakiety, okresy i programy, które zostaną skojarzone z planami świadczeń.
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Po skonfigurowaniu wymaganych parametrów zarządzania świadczeniami można utworzyć reguły, pakiety, okresy i programy uprawnień, które będą kojarzone z planami świadczeń.
+
+Reguły kwalifikacji służą do określenia, czy pracownicy kwalifikują się do planu. Pracownicy muszą spełniać warunek co najmniej jednej zasady, aby zostać uznanymi za kwalifikujących się do świadczenia. Na przykład masz dwie reguły na planie. Pierwsza reguła (wiersz 1) stanowi, że typem pracownika musi być **Pracownik**. Druga zasada (wiersz 2) mówi, że pracownik musi być zatrudniony w pełnym wymiarze czasu pracy. Dlatego pracownicy, którzy spełniają zasadę 1, kwalifikują się, nawet jeśli są zatrudnieni tylko w niepełnym wymiarze godzin.
+
+Możesz jednak skonfigurować pojedynczą regułę, która ma wiele warunków. W takim przypadku pracownicy muszą spełnić wszystkie warunki reguły, aby zostać uznanymi za uprawnionych do świadczenia. Na przykład masz regułę, która nazywa się **Pracownik w pełnym wymiarze godzin**. Ta reguła stanowi, że typ pracownika musi być **pracownikiem**, *a* pracownik musi być zatrudniony w pełnym wymiarze godzin. Dlatego pracownicy muszą spełniać oba warunki reguły, aby się kwalifikować.
+
+> [!IMPORTANT]
+> Z każdym programem świadczeń musi być powiązana co najmniej jedna reguła kwalifikacji. Z korzyścią możesz powiązać wiele reguł.
 
 ## <a name="create-an-eligibility-rule"></a>Tworzenie reguły uprawnienia
 
@@ -39,9 +48,9 @@ W czasie otwartej rejestracji pracownicy mogą wybierać plany świadczeń. Jeś
 
 2. Na karcie **Reguły uprawnienia** wybierz opcję **Nowy**, aby utworzyć regułę uprawnienia. Aby wyświetlić plany skojarzone z regułą uprawnienia, wybierz opcję **Dołączone plany**.
 
-3. Określ wartości dla następujących pól:
+3. Określ wartości dla następujących pól.
 
-   | Pole | Opis |
+   | Pole | opis |
    | --- | --- |
    | **Reguła uprawnienia** | Unikatowy identyfikator reguły uprawnienia. |
    | **Opis** | Opis reguły uprawnienia. |
@@ -57,9 +66,9 @@ W czasie otwartej rejestracji pracownicy mogą wybierać plany świadczeń. Jeś
    | **Okres rejestracji** | Okres, w którym jest dozwolone rejestrowanie nowo zatrudnionej osoby. Jeśli tę opcję ustawisz również w parametrach, tamto ustawienie ma pierwszeństwo wobec tego. |
    | **Użyj stanu wcześniejszego zatrudnienia** | Określa, czy w regule uprawnienia do świadczeń ma być używany stan zatrudnienia poprzedniego pracownika etatowego. Można na przykład określić regułę uprawnienia, która obejmuje okres oczekiwania na pokrycie dla wszystkich pracowników, którzy przeszli ze stanu **Zwolniono** na **Zatrudniono** w ciągu 90 dni od poprzedniego zatrudnienia. |
 
-4. W obszarze **Kryteria dodatkowe** wybierz następujące opcje i w razie potrzeby dodaj informacje:
+4. W obszarze **Kryteria dodatkowe** wybierz następujące opcje i w razie potrzeby dodaj informacje.
 
-   | Opcja | Opis |
+   | Opcja | opis |
    | --- | --- |
    | **Uprawniony zakres wieku** | Określa zakres lub zakresy wieku wymagane do spełnienia reguły uprawnienia. |
    | **Uprawniony dział** | Określa dział lub działy, do których pracownik musi należeć, aby spełniać regułę uprawnienia. |
@@ -73,12 +82,12 @@ W czasie otwartej rejestracji pracownicy mogą wybierać plany świadczeń. Jeś
    | **Typ kwalifikującego się stanowiska** | Określa typ lub typy stanowisk spełniające regułę uprawnienia. Na przykład Pełny etat. |
    | **Stan uprawniony** | Określa stany/województwa/prowincje itd. spełniające regułę uprawnienia. Na przykład Dakota Północna USA lub Kolumbia Brytyjska, Kanada. |
    | **Kwalifikujące się warunki zatrudnienia** | Określa warunki zatrudnienia spełniające regułę uprawnienia. Na przykład Bez gwarancji zatrudnienia lub Umowa zbiorowa. |
-   | **Uprawniony związek** | Określa związki zawodowe, do których przynależność spełnia regułę uprawnienia. Na przykład Amerykański związek zawodowy operatorów wózków widłowych. </br></br>W przypadku używania reguły uprawnienia z kryterium związku zawodowego rekord przynależności do związku musi mieć wypełnioną datę końcową. Nie można pozostawić tego pola pustego. |
+   | **Uprawniony związek** | Określa związki zawodowe, do których przynależność spełnia regułę uprawnienia. Na przykład Amerykański związek zawodowy operatorów wózków widłowych.</br></br>W przypadku używania reguły uprawnienia z kryterium związku zawodowego rekord przynależności do związku musi mieć wypełnioną datę końcową. Nie można pozostawić tego pola pustego. |
    | **Uprawniony kod pocztowy** | Określa kody pocztowe spełniające regułę uprawnienia. Na przykład 58104. |
 
-5. W obszarze **Dodatkowe szczegóły** można obejrzeć następujące dodatkowe informacje:
+5. W obszarze **Dodatkowe szczegóły** można obejrzeć następujące dodatkowe informacje.
 
-   | Pole | Opis |
+   | Pole | opis |
    | --- | --- |
    | **Pole uprawnionego użytkownika** | Określa dodatkowe reguły uprawnień oparte na polach zdefiniowanych przez klienta. |
    | **Typ uprawnienia** | Określa kategorię kryteriów wybranych w obszarze **Kryteria dodatkowe**. |
@@ -87,6 +96,72 @@ W czasie otwartej rejestracji pracownicy mogą wybierać plany świadczeń. Jeś
 
 6. Wybierz opcję **Zapisz**.
 
+## <a name="using-custom-fields-in-eligibility-rules"></a>Używanie pól niestandardowych w regułach kwalifikowalności
+
+[Pola niestandardowe](hr-developer-custom-fields.md) można utworzyć w Human Resources, aby śledzić dodatkowe informacje. Pola te mogą być dodawane bezpośrednio do interfejsu użytkownika, a kolumna jest dynamicznie dodawana do tabeli bazowej.  
+
+Pola niestandardowe mogą być używane w procesie kwalifikacji. Reguły kwalifikowalności mogą wykorzystywać jedną lub więcej wartości pól niestandardowych w celu określenia kwalifikowalności pracownika.  Aby dodać niestandardowe pole do istniejącej reguły lub utworzyć nową, przejdź do menu **Zarządzanie świadczeniami > Łącza > Konfiguracja > Reguły uprawnień > Uprawnienia pola niestandardowego**. Na tej stronie można utworzyć regułę, która używa jednego lub wielu pól niestandardowych i można zdefiniować wiele wartości dla każdego pola niestandardowego w celu określenia kwalifikowalności.
+
+W poniższych tabelach znajdują się pola niestandardowe, które mogą być używane w przetwarzaniu kwalifikacji:
+
+- Pracownik (HcmWorker)  
+- Zadanie (HcmJob)  
+- Stanowisko (HcmPosition)  
+- Szczegóły dotyczące stanowiska (HcmPositionDetail)  
+- Przypisanie pracownika do stanowiska  
+- Zatrudnienie (HcmEmployment)  
+- Szczegóły dotyczące zatrudnienia (HcmEmploymentDetails)  
+- Szczegóły zadania (HcmJobDetails)  
+
+W procesie kwalifikowania obsługiwane są następujące typy pól niestandardowych:
+
+- Tekst  
+- Lista wyboru  
+- Identyfikator  
+- Dziesiętny  
+- Pole wyboru  
+
+Poniższa tabela przedstawia informacje o polu niestandardowym formularza kwalifikującego.
+
+| Pole  | opis |
+|--------|-------------|
+| Imię i nazwisko | Nazwa tworzonego kryterium. |
+| Nazwa tabeli | Nazwa tabeli zawierającej pole własne, które jest używane dla reguły kwalifikacji. |
+| Nazwa pola | Pole, które będzie używane dla reguły kwalifikowalności. |
+| Typ operatora | Wyświetla operator użyty w konfiguracji kwalifikowalności pola niestandardowego. |
+| Wartość | Wyświetla wartość użytą w konfiguracji kwalifikowalności pola niestandardowego. |
+
+## <a name="eligibility-logic"></a>Logika uprawnień
+
+Poniższe sekcje opisują, w jaki sposób przetwarzane są dane dotyczące kwalifikowalności do świadczeń.
+
+### <a name="rules-assigned-to-a-plan"></a>Reguły przypisane do planu 
+Jeśli do programu świadczeń przypisanych jest wiele zasad kwalifikowalności, pracownik musi spełnić co najmniej jedną z nich, aby kwalifikować się do udziału w programie świadczeń.  W poniższym przykładzie pracownik musi spełniać wymagania reguły **Typ zadania** lub reguły **Aktywnych pracowników**.
+
+![Pracownik musi spełniać wymagania reguły Typ zadania lub reguły Aktywnych pracowników.](media/RulesAssignedToAPlan.png)
+ 
+### <a name="criteria-within-an-eligibility-rule"></a>Kryteria w ramach zasady kwalifikowalności 
+W ramach reguły definiuje się kryteria, które składają się na regułę. W przykładzie powyżej kryteria reguły **Typ stanowiska** to Typ stanowisk = dyrektorzy. W związku z tym pracownik musi być dyrektorem, aby móc się kwalifikować. Jest to reguła, w której występuje tylko jedno kryterium.
+
+Można zdefiniować reguły, które mają wiele kryteriów. W przypadku zdefiniowania wielu kryteriów w ramach reguły kwalifikacji, pracownik musi spełnić każde kryterium w ramach reguły, aby kwalifikować się do planu świadczeń. 
+
+Na przykład powyższa reguła **Aktywni pracownicy** składa się z następujących kryteriów. Aby pracownik był uprawniony na podstawie reguły **Aktywni pracownicy**, musi być zatrudniony w firmie USMF *i* mieć typ stanowiska pełnoetatowego.  
+
+![Kryteria w ramach zasady kwalifikowalności.](media/CriteriaWithinAnEligibilityRule.png) 
+ 
+### <a name="multiple-conditions-within-criteria"></a>Wiele warunków w ramach kryteriów
+
+Reguły mogą być dalej rozbudowywane w celu wykorzystania wielu warunków w ramach jednego kryterium. Pracownik musi spełnić co najmniej jeden warunek, aby się kwalifikować. Aby użyć przykładu powyżej, można dodatkowo rozwinąć regułę **Aktywni pracownicy**, tak aby uwzględnić pracowników, którzy są także pracownikami półetatowymi. W związku z tym pracownik musi być pracownikiem z firmy USMF *oraz* pracownikiem zatrudnionym na pełny etat lub na część etatu.  
+
+![Wiele warunków w ramach kryteriów.](media/MultipleConditionsWithinCriteria.png) 
+ 
+### <a name="eligibility-conditions-within-a-custom-field-criterion"></a>Warunki kwalifikowalności w ramach kryterium pola niestandardowego 
+Podobnie jak powyżej, pola niestandardowe mogą być używane podczas tworzenia reguł kwalifikowalności i działają w ten sam sposób. Na przykład, możesz chcieć zaoferować zwrot kosztów Internetu pracownikom z Fargo i Kopenhagi, którzy pracują w domu, ponieważ w tych lokalizacjach koszty Internetu są wyższe. W tym celu należy utworzyć dwa niestandardowe pola: **Lokalizacja biura** (lista wyboru) i **Praca z domu** (pole wyboru). Następnie utwórz regułę o nazwie **Pracownicy zdalni**. Kryterium reguły jest **lokalizacja biura = Fargo** lub **Kopenhaga** *oraz* wartość **praca z domu = Tak**.
+
+Należy skonfigurować niestandardowe reguły uprawnienia zgodnie z poniższym obrazem. 
+
+![Warunki kwalifikowalności w ramach kryterium pola niestandardowego.](media/EligibilityConditionsWithinACustomFieldCriterion.png) 
+ 
 ## <a name="configure-bundles"></a>Konfigurowanie pakietów
 
 Pakiety to zestawy powiązanych planów świadczeń. Pakietów świadczeń można używać do grupowania planów świadczeń, które pracownik musi wybrać, aby się zarejestrować w niektórych planach świadczeń uzależnionych od rejestracji w innych planach świadczeń. Przykłady sytuacji, kiedy może być konieczne użycie pakietów:
@@ -99,9 +174,9 @@ Pakiety to zestawy powiązanych planów świadczeń. Pakietów świadczeń możn
 
 2. Na karcie **Pakiety** wybierz opcję **Nowy**, aby utworzyć pakiet. Aby wyświetlić plany skojarzone z pakietem, wybierz opcję **Dołączone plany**.
 
-3. Określ wartości dla następujących pól:
+3. Określ wartości dla następujących pól.
 
-   | Pole | Opis |
+   | Pole | opis |
    | --- | --- |
    | **Pakiet** | Unikatowy identyfikator pakietu. |
    | **Opis** | Opis pakietu. |
@@ -119,9 +194,9 @@ Okresy wskazują, kiedy świadczenia obowiązują i kiedy pracownicy mogą się 
 
 2. Na karcie **Okresy** wybierz opcję **Nowy**, aby utworzyć okres. Aby uruchomić proces, który dołączy wszystkie ważne aktywne plany świadczeń do okresu świadczeniowego, wybierz opcję **Dołącz plany**. Aby wyświetlić plany skojarzone z pakietem, wybierz opcję **Dołączone plany**. 
 
-3. Określ wartości dla następujących pól:
+3. Określ wartości dla następujących pól.
 
-   | Pole | Opis |
+   | Pole | opis |
    | --- | --- |
    | **Okres** | Unikatowy identyfikator okresu. |
    | **Data i godzina wejścia w życie** | Data i godzina, od kiedy okres świadczeniowy jest aktywny. |
@@ -141,17 +216,17 @@ Za pomocą programów kredytu elastycznego można rejestrować pracowników na �
 
 2. Na karcie **Okresy** wybierz opcję **Programy kredytu elastycznego**.
 
-3. Wybierz program kredytu elastycznego, który ma zostać zastosowany. Okno zawiera następujące pola:
+3. Wybierz program kredytu elastycznego, który ma zostać zastosowany. Okno zawiera następujące pola.
 
-   | Pole | Opis |
+   | Pole | opis |
    | --- | --- |
-   | Identyfikator kredytu świadczenia | Unikatowy identyfikator programu kredytu elastycznego. |
-   | Opis | Opis programu kredytu elastycznego. | 
-   | Data Od | Data i godzina aktywacji programu kredytu elastycznego. |
-   | Data Do | Data i godzina zakończenia działania programu kredytu elastycznego. Można pozostawić wartość domyślną (31.12.2154), aby wskazać, że program kredytu elastycznego nie ma zaplanowanego okresu ważności. |
-   | Suma wartości kredytu | Liczba punktów kredytowych, jakie będzie miał każdy pracownik na swoje świadczenia. |
-   | Reguła naliczania proporcjonalnego | Reguła używana do proporcjonalnego obliczania liczby elastycznych punktów kredytowych, gdy pracownik zostanie zatrudniony w trakcie okresu wykorzystywania elastycznych punktów kredytowych. </br></br><ul><li>**Brak** — pracownik nie otrzymuje żadnych elastycznych punktów kredytowych, jeśli zostanie zatrudniony po rozpoczęciu okresu programu kredytu elastycznego.</li><li>**Pełny kredyt** — pracownik otrzymuje pełną liczbę elastycznych punktów kredytowych, niezależnie od momentu, w którym został zatrudniony.</li><li>**Naliczanie proporcjonalne** — pracownik otrzymuje liczbę elastycznych punktów kredytowych proporcjonalną do daty rozpoczęcia zatrudnienia.</li></ul> |
-   | Formuła naliczania proporcjonalnego kredytu elastycznego | Reguła używana do proporcjonalnego obliczania liczby elastycznych punktów kredytowych dla pracowników, którzy zostali zatrudnieni w trakcie okresu świadczeniowego zdefiniowanego w programie kredytu elastycznego. Naliczanie proporcjonalne jest oparte na dacie rozpoczęcia zatrudnienia. To pole jest używane tylko w przypadku zaznaczenia wartości **Naliczanie proporcjonalne** w polu **Reguła naliczania proporcjonalnego**. </br></br><ul><li>**Dziennie** — liczba elastycznych kredytów, które pracownik otrzymuje, odnosi się do poziomu dni. Łączna liczba elastycznych punktów kredytowych jest dzielona przez liczbę dni w okresie. Jeśli na przykład okres świadczeniowy wynosi 400 dni, system podzieli łączną liczbę elastycznych punktów kredytowych przez 400 w celu obliczenia liczby elastycznych punktów kredytowych, jaką pracownicy otrzymują na dzień.</li><li>**Bieżący miesiąc** — liczba elastycznych kredytów, które pracownik otrzymuje, odnosi się do poziomu miesięcy, z zaokrągleniem do bieżącego miesiąca. Łączna liczba elastycznych punktów kredytowych jest dzielona przez liczbę miesięcy w okresie. Jeśli na przykład okres świadczeniowy wynosi 15 miesięcy, system podzieli łączną liczbę elastycznych punktów kredytowych przez 15 w celu obliczenia liczby elastycznych punktów kredytowych, jaką pracownicy otrzymują na miesiąc.</li><li>**Następny miesiąc** — liczba elastycznych kredytów, które pracownik otrzymuje, odnosi się do poziomu miesięcy, z zaokrągleniem do następnego miesiąca. Łączna liczba elastycznych punktów kredytowych jest dzielona przez liczbę miesięcy w okresie. Jeśli na przykład okres świadczeniowy wynosi 15 miesięcy, system podzieli łączną liczbę elastycznych punktów kredytowych przez 15 w celu obliczenia liczby elastycznych punktów kredytowych, jaką pracownicy otrzymują na miesiąc.</li></ul> |
+   | **Identyfikator kredytu świadczenia** | Unikatowy identyfikator programu kredytu elastycznego. |
+   | **Opis** | Opis programu kredytu elastycznego. | 
+   | **Data Od** | Data i godzina aktywacji programu kredytu elastycznego. |
+   | **Data Do** | Data i godzina zakończenia działania programu kredytu elastycznego. Można pozostawić wartość domyślną (12/31/2154), aby wskazać, że program kredytu elastycznego nie ma zaplanowanego okresu ważności. |
+   | **Suma wartości kredytu** | Liczba punktów kredytowych, jakie będzie miał każdy pracownik na swoje świadczenia. |
+   | **Reguła naliczania proporcjonalnego** | Reguła używana do proporcjonalnego obliczania liczby elastycznych punktów kredytowych, gdy pracownik zostanie zatrudniony w trakcie okresu wykorzystywania elastycznych punktów kredytowych. </br></br><ul><li>**Brak** — pracownik nie otrzymuje żadnych elastycznych punktów kredytowych, jeśli zostanie zatrudniony po rozpoczęciu okresu programu kredytu elastycznego.</li><li>**Pełny kredyt** — pracownik otrzymuje pełną liczbę elastycznych punktów kredytowych, niezależnie od momentu, w którym został zatrudniony.</li><li>**Naliczanie proporcjonalne** — pracownik otrzymuje liczbę elastycznych punktów kredytowych proporcjonalną do daty rozpoczęcia zatrudnienia.</li></ul> |
+   | **Formuła naliczania proporcjonalnego kredytu elastycznego** | Reguła używana do proporcjonalnego obliczania liczby elastycznych punktów kredytowych dla pracowników, którzy zostali zatrudnieni w trakcie okresu świadczeniowego zdefiniowanego w programie kredytu elastycznego. Naliczanie proporcjonalne jest oparte na dacie rozpoczęcia zatrudnienia. To pole jest używane tylko w przypadku zaznaczenia wartości **Naliczanie proporcjonalne** w polu **Reguła naliczania proporcjonalnego**. </br></br><ul><li>**Dziennie** — liczba elastycznych kredytów, które pracownik otrzymuje, odnosi się do poziomu dni. Łączna liczba elastycznych punktów kredytowych jest dzielona przez liczbę dni w okresie. Jeśli na przykład okres świadczeniowy wynosi 400 dni, system podzieli łączną liczbę elastycznych punktów kredytowych przez 400 w celu obliczenia liczby elastycznych punktów kredytowych, jaką pracownicy otrzymują na dzień.</li><li>**Bieżący miesiąc** — liczba elastycznych kredytów, które pracownik otrzymuje, odnosi się do poziomu miesięcy, z zaokrągleniem do bieżącego miesiąca. Łączna liczba elastycznych punktów kredytowych jest dzielona przez liczbę miesięcy w okresie. Jeśli na przykład okres świadczeniowy wynosi 15 miesięcy, system podzieli łączną liczbę elastycznych punktów kredytowych przez 15 w celu obliczenia liczby elastycznych punktów kredytowych, jaką pracownicy otrzymują na miesiąc.</li><li>**Następny miesiąc** — liczba elastycznych kredytów, które pracownik otrzymuje, odnosi się do poziomu miesięcy, z zaokrągleniem do następnego miesiąca. Łączna liczba elastycznych punktów kredytowych jest dzielona przez liczbę miesięcy w okresie. Jeśli na przykład okres świadczeniowy wynosi 15 miesięcy, system podzieli łączną liczbę elastycznych punktów kredytowych przez 15 w celu obliczenia liczby elastycznych punktów kredytowych, jaką pracownicy otrzymują na miesiąc.</li></ul> |
    
    Upewnij się, że każdy plan świadczeń jest zarejestrowany tylko w jednym programie kredytu elastycznego w danym okresie. W przeciwnym razie system nie będzie wiedział, którego programu kredytu elastycznego ma użyć do przypisania elastycznych punktów kredytowych, i wystąpią w nim problemy. 
 
@@ -163,9 +238,9 @@ Programy to zbiory planów świadczeń, które mają wspólne reguły uprawnień
 
 2. Na karcie **Programy** wybierz opcję **Nowy**, aby utworzyć program. Aby wprowadzić wyjątki dla pracowników, którzy nie spełniają wymagań reguł uprawnień, wybierz opcję **Zastąpienie reguły uprawnienia**. Aby wyświetlić plany skojarzone z programem, wybierz opcję **Dołączone plany**.
 
-3. Określ wartości dla następujących pól:
+3. Określ wartości dla następujących pól.
 
-   | Pole | Opis |
+   | Pole | opis |
    | --- | --- |
    | **Program** | Unikatowy identyfikator programu. |
    | **Opis** | Opis programu. | 
@@ -176,3 +251,6 @@ Programy to zbiory planów świadczeń, które mają wspólne reguły uprawnień
    | **Reguły uprawnienia** | Wybierz reguły uprawnień, które mają być stosowane do programu świadczeń. Reguły uprawnień definiuje się na karcie **Reguły uprawnienia** na tej stronie. |
    
 4. Wybierz opcję **Zapisz**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

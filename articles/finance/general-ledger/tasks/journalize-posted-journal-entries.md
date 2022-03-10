@@ -2,26 +2,23 @@
 title: Zapisywanie zaksięgowanych zapisów arkusza w arkuszu
 description: W tej procedurze pokazano sposób zapisywania zaksięgowanych zapisów arkusza w arkuszu.
 author: aprilolson
-manager: AnnBe
 ms.date: 08/09/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerParameters, SysQueryForm
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f50ee568df492bcd811d2fefb1784bb55b50384b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 519431684cd26d566ae4c9dd75010d5c98881b602681211908c0c70215448fea
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446728"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6738462"
 ---
 # <a name="journalize-posted-journal-entries"></a>Zapisywanie zaksięgowanych zapisów arkusza w arkuszu
 
@@ -40,3 +37,6 @@ W tej procedurze pokazano sposób zapisywania zaksięgowanych zapisów arkusza w
 9. Kliknij przycisk **OK**, aby zamknąć stronę filtru.
 10. Kliknij przycisk **OK**, aby rozpocząć proces generowania arkuszy. Po zakończeniu procesu zostanie wygenerowany raport.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

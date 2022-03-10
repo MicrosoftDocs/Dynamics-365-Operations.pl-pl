@@ -1,24 +1,24 @@
 ---
 title: Polska — omówienie
 description: Ten temat zawiera łącza do zasobów dokumentacji Microsoft Dynamics 365 Finance dla Polski.
-author: ShylaThompson
-ms.date: 07/25/2019
-ms.topic: article
+author: kfend
+ms.date: 01/07/2022
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.custom: ''
 ms.search.region: Poland
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 09cc191cec75cb88abf9a4743429d0b83ebbcfd8eafaa26808ff3d38759fbff3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0d0338c988c8e5cff35bb4a98263ffc6a9fec26a
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715912"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986343"
 ---
 # <a name="poland-overview"></a>Polska — omówienie
 
@@ -39,6 +39,7 @@ Ten temat zawiera łącza do zasobów dokumentacji dla Polski.
 - [Zestawienie obrotów i sald](emea-pol-turnover-balances-statement.md)
 - [Podział różnic kursowych dla RzD/RzO](emea-pol-split-ap-ar-exchange-difference.md)
 - [Deklaracja VAT z rejestrami (JPK_V7M, VDEK)](emea-pol-vdek.md)
+- [Raport warunków płatności w transakcjach handlowych](emea-pol-payment-terms-report.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

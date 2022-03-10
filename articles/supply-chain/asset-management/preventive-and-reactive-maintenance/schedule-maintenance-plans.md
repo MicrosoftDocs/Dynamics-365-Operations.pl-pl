@@ -1,12 +1,10 @@
 ---
 title: Planowanie planów konserwacji
 description: W tym temacie wyjaśniono tworzenie planów konserwacji w module Zarządzanie składnikami majątku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3c84711412d799f9d3cce02e0740ec065ef42d8a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: bd5192f727c83c017148405fb1b3ee587c118542450d46b5822d86cd1676d8fd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5223561"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6731326"
 ---
 # <a name="schedule-maintenance-plans"></a>Planowanie planów konserwacji
 
@@ -54,14 +52,14 @@ Planowanie planowania konserwacji powoduje generowanie wpisów kalendarza dla ś
 
 5. Kliknij **OK**, aby rozpocząć generowanie wpisów harmonogramu konserwacji dla składników majątku. Wygenerowane wpisy zostaną wyświetlone na stronie listy **Wszystkie harmonogramy konserwacji**. Na poniższej ilustracji pokazano przykład okienka dialogowego **Szczegóły żądania konserwacji**.
 
-![Rysunek 1](media/09-preventive-maintenance.png)
+![Rysunek 1.](media/09-preventive-maintenance.png)
 
 - Okno dialogowe **Planowanie planów konserwacji** umożliwia skonfigurowanie zadań wsadowych w skróconej karcie **Uruchom w tle** w celu automatycznego generowania wpisów kalendarza w regularnych odstępach czasu.  
 - W przypadku planowania obsługi, wiersze harmonogramu konserwacji z oczekiwaną datą rozpoczęcia i godziną wcześniejszą od daty i godziny systemowej nie zostaną utworzone.  
 
 Poniższy rysunek przedstawia graficzną ilustrację obliczania planu konserwacji opartego na czasie.  
 
-![Rysunek 2](media/10-preventive-maintenance.jpg)
+![Rysunek 2.](media/10-preventive-maintenance.jpg)
 
 W odniesieniu do planów obsługi opartych na licznikach: w poniższej liczbie pokazano dwa różne cykle rejestracji liczników. Są one oparte na planie obsługi, ustawionym dla środka trwałego „V0001”, spodziewając się, że środek trwały (samochód) ma się rozpocząć w przybliżeniu 2 000 km co miesiąc.
 
@@ -71,9 +69,9 @@ Na następnej ilustracji co miesiąc rejestruje się co najmniej 2 000 km. W zwi
 
 Przedstawione tu przykłady pokazują, że wszystkie rejestracje liczników wykonane na składniku majatku pokazują trend z opisem zużycia i rozpiętości składnika. Ta trend jest używany jako podstawa obliczeń czasu planowania planów konserwacji.
 
-![Rysunek 3](media/11-preventive-maintenance.png)
+![Rysunek 3.](media/11-preventive-maintenance.png)
 
-![Rysunek 4](media/12-preventive-maintenance.png)
+![Rysunek 4.](media/12-preventive-maintenance.png)
 
 
 

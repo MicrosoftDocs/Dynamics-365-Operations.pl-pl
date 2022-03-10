@@ -1,35 +1,35 @@
 ---
 title: Rejestrowanie i usuwanie świadczeń dla pracowników
-description: Ta procedura pokazuje, jak można zapisać jednego pracownika na jedno lub więcej świadczeń, a także jak zapisać wielu pracowników na świadczenie.
-author: andreabichsel
-manager: tfehr
-ms.date: 02/03/2020
+description: W tej procedurze pokazano, jak zapisać jednego pracownika na jedno lub więcej świadczeń, a także jak zapisać wielu pracowników na świadczenie.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmWorker, HcmWorkerEnrollment, HcmBenefitByEligibilityLookup, HcmMassBenefitEnrollment, HcmBenefitLookup, HcmMassBenefitEnrollmentResults, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: cb56d11cb3acd1e8e39765284269234fc632f17f
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 1b99db1e480ea4a53d2bda609eb08105509d95f4
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5465109"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065383"
 ---
 # <a name="enroll-and-remove-benefits-from-workers"></a>Rejestrowanie i usuwanie świadczeń dla pracowników
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
-Ta procedura pokazuje, jak można zapisać jednego pracownika na jedno lub więcej świadczeń, a także jak zapisać wielu pracowników na świadczenie. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
+W tej procedurze pokazano, jak zapisać jednego pracownika na jedno lub więcej świadczeń, a także jak zapisać wielu pracowników na świadczenie. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
 
 
 ## <a name="enroll-a-single-worker-in-benefits"></a>Zapisywanie jednego pracownika na świadczenia

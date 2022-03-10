@@ -1,12 +1,10 @@
 ---
 title: Automatyczne aktualizacje wysyłki
 description: Ten temat stanowi przegląd funkcji, które umożliwiają automatyczne aktualizowanie wysyłek.
-author: josaw1
-manager: tfehr
+author: Mirzaab
 ms.date: 11/04/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWaveTemplateTable,SalesTableListPage,SalesTable,WHSWaveTableListPage
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: perlynne
+ms.author: mirzaab
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1f75e9421ab9cac0b62e1cdee17ecf74796783cc
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3402a4c90299cf52e489e85ed55aff9762796545
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001231"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580103"
 ---
 # <a name="shipment-auto-updates"></a>Automatyczne aktualizacje wysyłki
 
@@ -139,3 +137,6 @@ Grupa czynności jest przetwarzana i tworzy pracę dla zarezerwowanych ilości w
 Jeśli wysyłka ma stan **W grupie czynności** lub wyższy, aktualizacje ilości w wierszu zamówienia sprzedaży nie są odzwierciedlane lub sprawdzane w odniesieniu do wiersza ładunku skojarzonego z wysyłką. Zmiany ilości w wierszu ładunku muszą być wprowadzane bezpośrednio w wierszu ładunku.
 
 Sprawdzanie poprawności jest wykonywane po utworzeniu pracy dla wiersza ładunku i wykonaniu rezerwacji. Zmniejszenie ilości w wierszu zamówienia sprzedaży jest następnie sprawdzane w odniesieniu do rezerwacji wiersza pracy.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

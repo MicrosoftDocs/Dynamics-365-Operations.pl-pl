@@ -2,26 +2,23 @@
 title: Omówienie środowiska oceny rozwiązania Dynamics 365 Commerce
 description: Ten temat zawiera omówienie środowiska oceny usługi Microsoft Dynamics 365 Commerce.
 author: v-chgri
-manager: annbe
 ms.date: 07/16/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
-ms.reviewer: v-chgri
-ms.custom: ''
+ms.reviewer: josaw
 ms.assetid: ''
 ms.search.region: Global
-ms.author: v-chgri
+ms.author: josaw
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: cc6bffba6ee402c6b48d6a3c8f8356eb32b5423b
-ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
+ms.openlocfilehash: 35cd06070ff73af1c97706bb1cdb67045715d458
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2021
-ms.locfileid: "5478027"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982646"
 ---
 # <a name="dynamics-365-commerce-evaluation-environment-overview"></a>Omówienie środowiska oceny rozwiązania Dynamics 365 Commerce
 

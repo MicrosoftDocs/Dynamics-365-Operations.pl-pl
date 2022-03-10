@@ -2,11 +2,9 @@
 title: Omówienie stron zarządzania kontem
 description: W tym temacie omówiono strony zarządzania kontami w firmie Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,20 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e194004476545fb142f71aa4bd889dbbc70c6ed4
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b21ae257ce84034f05fa22a93a2c622ee14c0a2b
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969858"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984526"
 ---
 # <a name="account-management-pages-overview"></a>Omówienie stron zarządzania kontem
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie omówiono strony zarządzania kontami w firmie Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 Strony zarządzania kontami umożliwiają użytkownikom wyświetlanie informacji związanych z ich kontami i zamówieniami. Strony zarządzania kontem obejmują stronę docelową zarządzania kontem oraz strony z profilem użytkownika, adresami, historią zamówień, szczegółami zamówień, punktami lojalnościowymi i listą życzeń.
 
@@ -39,7 +35,7 @@ Gdy odbiorca zaloguje się i wybierze **Moje konto**, zostanie otwarta strona do
 
 Poniższa ilustracja pokazuje przykład strony docelowej zarządzania kontem.
 
-![Przykład strony docelowej zarządzania kontem](./media/Account-Management.PNG)
+![Przykład strony docelowej zarządzania kontem.](./media/Account-Management.PNG)
 
 ### <a name="my-profile-page"></a>Strona Mój profil
 
@@ -47,7 +43,7 @@ Na stronie **Mój profil** są wyświetlane informacje o koncie odbiorcy, takie 
 
 Na poniższej ilustracji przedstawiono przykład strony **Mój profil**, która została utworzona przy użyciu biblioteki modułów.
 
-![Przykład strony Mój profil](./media/Account-Management-MyProfile.PNG)
+![Przykład strony Mój profil.](./media/Account-Management-MyProfile.PNG)
 
 ### <a name="addresses-page"></a>Strona adresów
 
@@ -55,7 +51,7 @@ Strona **adresy** pozwala odbiorcy dodawać adresy do swojego konta. Pokazuje ta
 
 Na poniższej ilustracji pokazano przykład strony **Adresy**.
 
-![Przykład strony adresy](./media/Account-Management-Address.png)
+![Przykład strony adresy.](./media/Account-Management-Address.png)
 
 ### <a name="order-history-and-order-details-pages"></a>Strony historii zamówień i Szczegóły zamówień
 
@@ -63,11 +59,11 @@ Na stronie **Historia zamówień** są wyświetlane podsumowanie wszystkich zam�
 
 Na poniższej ilustracji pokazano przykład strony **Historia zamówienia**.
 
-![Przykład strony historia zamówień](./media/Account-Management-OrderHistory.PNG)
+![Przykład strony historia zamówień.](./media/Account-Management-OrderHistory.PNG)
 
 Na poniższej ilustracji pokazano przykład strony **Szczegóły zamówienia**.
 
-![Przykład strony szczegóły zamówień](./media/Account-Management-OrderDetails.PNG)
+![Przykład strony szczegóły zamówień.](./media/Account-Management-OrderDetails.PNG)
 
 ### <a name="loyalty-program-page"></a>Strona Program lojalnościowy
 
@@ -75,7 +71,7 @@ Na stronie **Programu lojalnościowego** klient staje się członkiem programu l
 
 Na poniższe ilustracji pokazano przykład strony **Program lojalnościowy**.
 
-![Przykład strony programu lojalnościowego](./media/Account-Management-Loyalty.PNG)
+![Przykład strony programu lojalnościowego.](./media/Account-Management-Loyalty.PNG)
 
 ### <a name="wishlist-page"></a>Strona z listą życzeń
 
@@ -83,7 +79,7 @@ Na stronie **Lista życzeń** jest wyświetlana lista towarów, które odbiorca 
 
 Na poniższe ilustracji pokazano przykład strony **Lista życzeń**.
 
-![Przykład strony listy życzeń](./media/Account-Management-Wishlist.PNG)
+![Przykład strony listy życzeń.](./media/Account-Management-Wishlist.PNG)
 
 Aby uzyskać więcej informacji o modułach zarządzania kontach i sposobach ich tworzenia, należy zapoznać się z tematem [Zarządzanie kontami](account-management.md).
 
@@ -95,3 +91,6 @@ Aby uzyskać więcej informacji o modułach zarządzania kontach i sposobach ich
 
 [Omówienie stron koszyka i realizacji zamówienia](quick-tour-cart-checkout.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

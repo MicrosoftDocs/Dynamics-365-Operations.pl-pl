@@ -2,11 +2,9 @@
 title: Przeglądanie konfiguracji służących do generowania raportów w formatach pakietu Office z osadzonymi obrazami
 description: W tym temacie opisano sposób projektowania konfiguracji generujących dokumenty elektroniczne z osadzonymi obrazami. (część 1 — konfigurowanie parametrów).
 author: NickSelin
-manager: AnnBe
 ms.date: 06/13/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3eee6300350dd96c34f2eab44704d1895e6171ff
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: f209fcbac310dffb654f7830a4d4b12fa95d7a461b681864b8c9b547f4a4986c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5093652"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6717577"
 ---
 # <a name="review-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>Przeglądanie konfiguracji służących do generowania raportów w formatach pakietu Office z osadzonymi obrazami
 
@@ -91,3 +89,6 @@ Ta procedura jest przeznaczona dla użytkowników z przypisaną rola Administrat
     * Niektóre etykiety prezentowane w formularzu czeku z nadrukiem zostaną uwzględnione w raporcie podczas jego tworzenia do celów testowych. Jednak te etykiety nie będą drukowane podczas rzeczywistego drukowania, ponieważ formularz z nadrukiem już je zawiera.  
 15. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

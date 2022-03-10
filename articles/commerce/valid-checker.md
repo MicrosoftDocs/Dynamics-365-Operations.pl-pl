@@ -1,81 +1,119 @@
 ---
-title: Sprawdzanie spójności transakcji sprzedaży detalicznej
-description: W tym temacie opisano funkcje sprawdzania spójności transakcji w rozwiązaniu Dynamics 365 Commerce.
-author: josaw1
-manager: AnnBe
-ms.date: 10/07/2020
+title: Sprawdzanie poprawności transakcji sklepu na potrzeby obliczenia zestawienia
+description: W tym temacie opisano funkcje sprawdzania poprawności transakcji sklepu w rozwiązaniu Microsoft Dynamics 365 Commerce.
+author: analpert
+ms.date: 01/31/2022
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
+ms.reviewer: v-chgriffin
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: josaw
+ms.author: analpert
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 3c7ca41b9e8a4c3127c98c756348959530a87996
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f51b1f39aa212fe8587761721194db7791bec5bc
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459682"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087456"
 ---
-# <a name="retail-transaction-consistency-checker"></a>Sprawdzanie spójności transakcji sprzedaży detalicznej
+# <a name="validate-store-transactions-for-statement-calculation"></a>Sprawdzanie poprawności transakcji sklepu na potrzeby obliczenia zestawienia
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano funkcje sprawdzania spójności transakcji w rozwiązaniu Microsoft Dynamics 365 Commerce. Moduł sprawdzania spójności umożliwia identyfikowanie i izolowanie niespójnych transakcji przed pobraniem ich przez proces księgowania zestawienia.
+W tym temacie opisano funkcje sprawdzania poprawności transakcji sklepu w rozwiązaniu Microsoft Dynamics 365 Commerce. Proces sprawdzania poprawności umożliwia zidentyfikowanie i oznaczenie transakcji, które będą powodować błędy księgowania, przed pobraniem ich za pomocą procesu księgowania zestawienia.
 
-Gdy zestawienie jest księgowane, księgowanie może zakończyć się niepowodzeniem z powodu niespójności danych w tabelach transakcji handlowych. Przyczyną tego problemu z danymi mogą być nieprzewidziane problemy w aplikacji punktu sprzedaży (POS) lub nieprawidłowy import transakcji z systemów POS innych firm. Przykłady wyświetlania tych niespójności: 
+Podczas próby zaksięgowania zestawienia proces sprawdzania poprawności może zakończyć się niepowodzeniem z powodu niespójności danych w tabelach transakcji handlowych. Oto kilka przykładów czynników, które mogą powodować wspomniane niespójności:
 
 - Suma transakcji w tabeli nagłówka jest niezgodna z łączną wartością transakcji w wierszach.
-- Liczba wierszy w tabeli nagłówka jest niezgodna z liczbą wierszy w tabeli transakcji.
+- Liczba towarów określona w tabeli nagłówka nie odpowiada liczbie towarów w tabeli transakcji.
 - Podatki w tabeli nagłówka są niezgodne z kwotą podatku w wierszach. 
 
-Kiedy niezgodne transakcje są pobierane przez proces księgowania zestawienia, powstają niespójne faktury sprzedaży i dzienniki płatności i w efekcie cały proces księgowania zestawienia kończy się niepowodzeniem. Odzyskiwanie zestawień w tym stanie wymaga skomplikowanych poprawek danych w wielu tabelach transakcji. Kontroler spójności transakcji zapobiega takim problemom.
+Gdy niezgodne transakcje zostaną pobrane przez proces księgowania zestawienia, utworzone faktury sprzedaży i arkusze płatności mogą spowodować, że proces księgowania zestawienia zakończy się niepowodzeniem. Proces **Sprawdź poprawność transakcji w sklepie** zapobiega tego rodzaju problemom, dając gwarancję, że w ramach procesu obliczania zestawień transakcji są uwzględniane tylko te transakcje, które spełniły wymogi reguł sprawdzania poprawności transakcji.
 
-Wykres poniżej pokazuje proces księgowania z kontrolerem spójności transakcji.
+Na poniższej ilustracji przedstawiono realizowane w ciągu dnia cykliczne procesy przekazywania transakcji, sprawdzania poprawności transakcji, obliczania i księgowania zestawień transakcji, a także realizowanych na koniec dnia procesów obliczania i księgowania sprawozdań finansowych.
 
-![Proces księgowania zestawienia z modułem sprawdzania spójności transakcji](./media/validchecker.png "Proces księgowania zestawienia z modułem sprawdzania spójności transakcji")
+![Ilustracja przedstawiająca realizowane w ciągu dnia cykliczne procesy przekazywania transakcji, sprawdzania poprawności transakcji, obliczania i księgowania zestawień transakcji, a także realizowane na koniec dnia procesy obliczania i księgowania sprawozdań finansowych.](./media/valid-checker-statement-posting-flow.png)
 
-Proces wsadowy **Sprawdź poprawność transakcji w sklepie** sprawdza spójność tabel transakcji handlowych w następujących scenariuszach.
+## <a name="store-transaction-validation-rules"></a>Reguły sprawdzania poprawności transakcji sklepu
 
-- **Konto odbiorcy** — sprawdza, czy konto odbiorcy w tabelach transakcji istnieje w danych głównych odbiorcy w centrali.
-- **Liczba wierszy** — sprawdza, czy liczba wierszy w tabeli nagłówka transakcji jest zgodna z liczbą wierszy w tabelach transakcji sprzedaży.
-- **Cena obejmuje podatek** — sprawdza, czy parametr **Cena obejmuje podatek** jest spójny w wierszach transakcji i czy cena w wierszu sprzedaży jest zgodna z konfiguracją ceny obejmującej podatek i zwolnionej z podatku.
-- **Kwota płatności** — sprawdza, czy rekordy płatności pasują do kwoty płatności w nagłówku, uwzględniając także w konfiguracji zaokrąglanie groszowe w księdze głównej.
-- **Kwota brutto** — sprawdza, czy kwota brutto w nagłówku jest sumą kwot netto w wierszach oraz kwoty podatku, uwzględniając także w konfiguracji zaokrąglanie groszowe w księdze głównej.
-- **Kwota netto** — sprawdza, czy kwota netto w nagłówku jest sumą kwot netto w wierszach, uwzględniając także w konfiguracji zaokrąglanie groszowe w księdze głównej.
-- **Niedopłata/Nadpłata** — sprawdza, czy różnica między kwotą brutto w nagłówku a kwotą płatności nie przekracza maksymalnej skonfigurowanej niedopłaty/nadpłaty, uwzględniając także w konfiguracji zaokrąglanie groszowe w księdze głównej.
-- **Kwota rabatu** — sprawdza, czy kwota rabatu w tabelach rabatów i kwota rabatu w tabelach wierszy transakcji są spójne i czy kwota rabatu w nagłówku jest sumą kwot rabatów w wierszach, uwzględniając także w konfiguracji zaokrąglanie groszowe w księdze głównej.
-- **Rabat wiersza** — sprawdza, czy rabat wiersza w wierszu transakcji jest sumą wszystkich wierszy w tabeli rabatów, które odpowiadają wierszowi transakcji.
-- **Pozycja na kartę upominkową** — rozwiązanie Commerce nie obsługuje zwrotów pozycji przekazanych za pośrednictwem karty upominkowej. Można jednak wypłacić saldo karty upominkowej. Każda pozycja na karcie upominkowej, który jest przetwarzana jako wiersz zwrotu, a nie wiersz wypłaty, powoduje niepowodzenie wykonywania procesu księgowania zestawienia. Proces weryfikacji pozycji przekazanych za pośrednictwem karty upominkowej pomaga zagwarantować, że w tabelach transakcji będą istnieć tylko wiersze wypłat kart upominkowych.
-- **Cena ujemna** — sprawdza, czy nie występują wiersze transakcji z ujemną ceną.
-- **Towar i wariant** — sprawdza, czy towary i warianty wymienione w wierszach transakcji istnieją w pliku głównym towarów i wariantów.
-- **Kwota podatku** — sprawdza, czy rekordy podatku pasują do kwot podatku w wierszach.
-- **Numer seryjny** — sprawdza, czy wiersze transakcji dla pozycji kontrolowanych przez numer seryjny zawierają numer seryjny.
-- **Znak** — sprawdza, czy znak na ilości i kwocie netto jest taki sam we wszystkich wierszach transakcji.
-- **Data biznesowa** — sprawdza, czy okresy obrachunkowe są otwarte dla wszystkich dat biznesowych dla transakcji.
-- **Opłaty** — sprawdza, czy kwota opłaty nagłówka i wiersza jest zgodna z ceną, z uwzględnieniem konfiguracji zawierającej podatek i zwolnionej z podatku.
-
-## <a name="set-up-the-consistency-checker"></a>Konfigurowanie modułu sprawdzania spójności
-
-Skonfiguruj cykliczne uruchamianie procesu wsadowego „Sprawdź poprawność transakcji w sklepie” w obszarze **Retail i Commerce \> Retail i Commerce — składniki IT \> Księgowanie w punkcie sprzedaży**. Zadanie wsadowe można zaplanować według hierarchii organizacyjnej sklepu w sposób podobny do tego, w jaki skonfigurowane są procesy „Oblicz zestawienie w trybie wsadowym” i „Księgowanie zestawienia w trybie wsadowym”. Zalecamy skonfigurowanie tego procesu w taki sposób, aby uruchamiał się wiele razy w ciągu dnia i każdorazowo po wykonaniu zadania ściągania.
-
-## <a name="results-of-validation-process"></a>Wyniki procesu sprawdzania
-
-Wyniki sprawdzania przez proces wsadowy są zaznaczone na odpowiedniej transakcji. Pole **Stan weryfikacji** w rekordzie transakcji ma wartość **Powodzenie** lub **Błąd**, a data ostatniej weryfikacji znajduje się w polu **Godzina ostatniej weryfikacji**.
-
-Aby wyświetlić dłuższy opis błędu sprawdzania poprawności, zaznacz odpowiedni rekord transakcji sklepu i kliknij przycisk **Błędy weryfikacji**.
-
-Transakcje, które nie przeszły weryfikacji, oraz transakcji, które nie zostały jeszcze zweryfikowane, nie będą pobierane do zestawień. W trakcie procesu „Oblicz zestawienie” użytkownicy otrzymają powiadomienie, że istnieją transakcje, które mogły zostać uwzględnione w zestawieniu, ale tak się nie stało.
-
-W przypadku wystąpienia błędu weryfikacji można wyeliminować tylko po skontaktowaniu się z Pomocą techniczną firmy Microsoft. W przyszłej wersji zostanie dodana funkcja pozwalająca użytkownikom naprawiać rekordy z błędami za pomocą interfejsu. Zostaną również dodane funkcje rejestrowania i inspekcji pozwalające śledzić historię modyfikacji.
+Proces wsadowy **Sprawdź poprawność transakcji w sklepie** sprawdza spójność tabel transakcji handlowych na podstawie następujących reguł sprawdzania poprawności.
 
 > [!NOTE]
-> Oprócz tego w przyszłej wersji pojawią się też dodatkowe reguły weryfikacji dostosowane do innych scenariuszy.
+> Reguły sprawdzania poprawności będą w dalszym ciągu dodawane w kolejnych wydaniach.
+
+### <a name="transaction-header-validation-rules"></a>Reguły sprawdzania poprawności nagłówka transakcji
+
+W poniższej tabeli wymieniono reguły sprawdzania poprawności nagłówka transakcji, pod kątem których nagłówek transakcji detalicznych jest sprawdzany przed przekazem wspomnianych transakcji do księgowania zestawienia.
+
+| Reguła | Opis |
+|-------|-------------|
+| Data biznesowa | Ta reguła sprawdza, czy data biznesowa transakcji jest skojarzona z otwartym okresem obrachunkowym w księdze. |
+| Zaokrąglanie waluty | Ta reguła sprawdza, czy kwoty transakcji są zaokrąglane zgodnie z regułą zaokrąglania walut. |
+| Konto odbiorcy | Ta reguła sprawdza, czy odbiorca użyty w transakcji istnieje w bazie danych. |
+| Kwota rabatu | Ta reguła sprawdza, czy kwota rabatu w nagłówku jest sumą kwot rabatów w wierszach. |
+| Stan księgowania dokumentu podatkowego (Brazylia) | Ta reguła sprawdza, czy dokument podatkowy może zostać pomyślnie zaksięgowany. |
+| Kwota brutto | Ta reguła sprawdza, czy kwota brutto w nagłówku transakcji odpowiada podanej w wierszach kwocie netto z podatkiem powiększonej o opłaty. |
+| Netto | Ta reguła sprawdza, czy kwota netto w nagłówku transakcji odpowiada podanej w wierszach kwocie netto bez podatku powiększonej o opłaty. |
+| Netto + podatek | Ta reguła sprawdza, czy kwota brutto w nagłówku transakcji odpowiada podanej w wierszach kwocie netto bez podatku powiększonej o wszelkie podatki i opłaty. |
+| Liczba towarów | Ta reguła sprawdza, czy liczba towarów określona w nagłówku transakcji odpowiada sumie ilości w wierszach transakcji. |
+| Kwota płatności | Ta reguła sprawdza, czy kwota płatności w nagłówku transakcji odpowiada sumie wszystkich transakcji płatności. |
+| Obliczanie zwolnienia z podatku | Ta reguła sprawdza, czy suma obliczonej kwoty i kwoty zwolnionej z podatku z wierszy opłat jest równa pierwotnej obliczonej kwocie. |
+| Ceny uwzględniające podatek | Ta reguła sprawdza, czy flaga **Podatek jest wliczony w cenę** jest spójna między nagłówkiem transakcji i transakcjami podatkowymi. |
+| Transakcja nie jest pusta | Ta reguła sprawdza, czy transakcja zawiera wiersze i czy istnieje co najmniej jeden wiersz, który nie został unieważniony. |
+| Niedopłata/Nadpłata | Reguła sprawdza, czy różnica między kwotą brutto a kwotą płatności nie przekracza maksymalnej skonfigurowanej niedopłaty/nadpłaty. |
+
+### <a name="transaction-line-validation-rules"></a>Reguły sprawdzania poprawności wiersza transakcji
+
+W poniższej tabeli wymieniono reguły sprawdzania poprawności wiersza transakcji, pod kątem których szczegóły wiersza transakcji detalicznych są sprawdzane przed przekazem wspomnianych transakcji do księgowania zestawienia.
+
+| Reguła | Opis |
+|-------|-------------|
+| Kod kreskowy | Ta reguła sprawdza, czy wszystkie kody kreskowe używane w wierszach transakcji istnieją w bazie danych. |
+| Wiersze opłat | Ta reguła sprawdza, czy suma obliczonej kwoty i kwoty zwolnionej z podatku z wierszy opłat jest równa pierwotnej obliczonej kwocie. |
+| Zwroty towarów przekazanych za pośrednictwem karty upominkowej | Ta reguła sprawdza. czy transakcja nie obejmuje zwrotów towarów przekazanych za pośrednictwem kart upominkowych. |
+| Wariant towaru | Ta reguła sprawdza, czy wszystkie towary i wszystkie warianty używane w wierszach transakcji istnieją w bazie danych. |
+| Rabat wiersza | Ta reguła sprawdza, czy kwota rabatu w wierszu odpowiada sumie transakcji rabatu. |
+| Podatek dla wiersza | Ta reguła sprawdza, czy kwota podatku w wierszu odpowiada sumie transakcji podatkowych. |
+| Cena ujemna | Ta reguła sprawdza, czy w wierszach transakcji nie są używane ceny ujemne. |
+| Kontrolowany numer seryjny | Ta reguła sprawdza, czy w wierszu transakcji dla towarów kontrolowanych przez numer seryjny znajduje się numer seryjny. |
+| Wymiar numeru seryjnego | Ta reguła sprawdza, czy w przypadku, gdy wymiar numeru seryjnego towaru jest nieaktywny, nie został podany numer seryjny. |
+| Sprzeczność znaku | Ta reguła sprawdza, czy znaki przy ilości i kwocie netto jest taki sam we wszystkich wierszach transakcji. |
+| Zwolnienie z podatku | Ta reguła sprawdza, czy suma ceny towaru z wiersza i kwoty zwolnionej z podatku jest równa pierwotnej cenie. |
+| Przypisanie grupy podatków | Ta reguła sprawdza, czy połączenie grupy podatków sprzedaży i grupy podatków towaru generuje prawidłowe przecięcie podatkowe. |
+| Konwersja jednostki miary | Ta reguła sprawdza, czy jednostka miary wszystkich wierszy ma prawidłową konwersję na jednostkę miary zapasów. |
+
+## <a name="enable-the-store-transaction-validation-process"></a>Włącz proces sprawdzania poprawności transakcji sklepu
+
+Skonfiguruj cykliczne uruchamianie procesu wsadowego **Sprawdź poprawność transakcji w sklepie** w centrali Commerce (**Retail i Commerce \> Retail i Commerce — składniki IT \> Księgowanie w punkcie sprzedaży**). Zadanie wsadowe jest planowane na podstawie hierarchii organizacyjnej sklepu. Zaleca się, aby ten proces wsadowy był uruchamiany z tą samą częstotliwością, co zadania wsadowe: **Zadanie ściągania** i **Obliczanie zestawienia transakcji**.
+
+## <a name="results-of-the-validation-process"></a>Wyniki procesu sprawdzania poprawności
+
+Wyniki procesu wsadowego **Sprawdź poprawność transakcji w sklepie** można wyświetlić dla każdej transakcji sklepu sieci sprzedaży. Pole **Stan weryfikacji** w rekordzie transakcji ma wartość **Powodzenie**, **Błąd** lub **Brak**. Pole **Godzina ostatniej weryfikacji** zawiera datę ostatniego uruchomienia procesu sprawdzania poprawności.
+
+W poniższej tabeli opisano poszczególne stany weryfikacji.
+
+| Stan weryfikacji | Opis |
+|-------------------|-------------|
+| Powodzenie | Uzyskano pomyślny wynik kontroli wszystkich reguł sprawdzania poprawności. |
+| Błąd | Włączona reguła sprawdzania poprawności zidentyfikowała błąd. Więcej szczegółów dotyczących błędu można wyświetlić, wybierając **Błędy weryfikacji** w okienku akcji. |
+| Brak | Typ transakcji nie wymaga stosowania reguł sprawdzania poprawności. |
+
+![Na stronie transakcji sklepu jest wyświetlane pole Stan weryfikacji i przycisk Błędy weryfikacji.](./media/valid-checker-validation-status-errors.png)
+
+Tylko transakcje ze stanem weryfikacji **Powodzenie** zostaną pobrane do zestawień transakcyjnych. Aby wyświetlić transakcje ze stanem **Błąd**, przejrzyj kafelek **Weryfikacje transakcji kasowych zakończone niepowodzeniem** w obszarze roboczym **Finanse sklepu**.
+
+![Kafelki w obszarze roboczym Finanse sklepu.](./media/valid-checker-cash-carry-validation-failures.png)
+
+Aby uzyskać więcej informacji na temat rozwiązywania błędów weryfikacji transakcji kasowych zawiera temat [Edycja i przeprowadzanie inspekcji transakcji kasowych i przeniesienia oraz zarządzania gotówką](edit-cash-trans.md).
+
+## <a name="additional-resources"></a>Dodatkowe zasoby
+
+[Edycja i przeprowadzanie inspekcji transakcji kasowych i przeniesienia oraz zarządzania gotówką](edit-cash-trans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

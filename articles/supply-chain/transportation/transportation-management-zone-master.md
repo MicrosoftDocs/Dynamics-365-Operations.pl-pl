@@ -14,13 +14,13 @@ ms.assetid: b878478c-0e04-4a1e-a037-6fdbb345a9a3
 ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-01-09
-ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: aec1c17d32d1469f3a452084138404de3d498b71
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: 10.0.14
+ms.openlocfilehash: 2f3e50a61f7fc842a2656a443805ef5c9538fef4
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5807591"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567638"
 ---
 # <a name="transportation-management-zone-master"></a>Strefa główna zarządzania transportem
 

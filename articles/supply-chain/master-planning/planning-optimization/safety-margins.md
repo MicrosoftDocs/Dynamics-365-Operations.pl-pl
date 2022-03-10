@@ -2,16 +2,13 @@
 title: Marginesy bezpieczeństwa
 description: W tym temacie opisano, jak marginesy bezpieczeństwa mogą być używane z dodatkiem Optymalizacja planowania dla rozwiązania Microsoft Dynamics 365 Supply Chain Management.
 author: ChristianRytt
-manager: tfehr
 ms.date: 09/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 8ab5f1c3cdfa990a73951ddc5a7469644954d5c2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7eb5128f3a337bd728cfe8e6d8d3deb0b6b5ef88
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435096"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074974"
 ---
 # <a name="safety-margins"></a>Marginesy bezpieczeństwa
 
@@ -44,7 +41,7 @@ Istnieją trzy typy zamówień marginesów bezpieczeństwa:
 
 Na poniższej ilustracji przedstawiono sposób stosowania tych marginesów bezpieczeństwa w czasie.
 
-![Marginesy bezpieczeństwa](media/safety-margins-1.png)
+![Marginesy bezpieczeństwa.](media/safety-margins-1.png)
 
 Wszystkie marginesy są definiowane w dniach. Domyślna wartość *0* (zero) oznacza, że nie jest używany żaden margines. W przypadku skonfigurowania wielu marginesów wszystkie one będą się sumować do łącznego czasu od daty *złożenia zamówienia* do *daty zapotrzebowania*. Na przykład konfiguracja nie ma czasu realizacji, a wszystkie trzy typy marginesu są ustawione na jeden dzień. W takim przypadku będą potrzebne trzy dni między datą zamówienia a datą zapotrzebowania, więc jeśli datą zamówienia jest 1 lipca, datą zapotrzebowania będzie 4 lipca.
 
@@ -54,7 +51,7 @@ Zapas czasu dla przyjęcia jest prawdopodobnie najbardziej używanym z trzech do
 
 Poniższa ilustracja przedstawia ten proces.
 
-![Zapas czasu dla przyjęcia](media/safety-margins-2.png)
+![Zapas czasu dla przyjęcia.](media/safety-margins-2.png)
 
 Zapas czasu dla przyjęcia jest zazwyczaj używany jako bufor w celu zapewnienia czasu na potrzeby rejestracji w magazynie lub innych procesów czasochłonnych, które nie są częścią ogólnego czasu realizacji w systemie. W przypadku zakupów jedną z korzyści jest to, że *Data dostawy* zamówienia zakupu jest odpowiednio przenoszona do przodu. W przypadku zwiększenia czasu realizacji zamiast używania marginesu bezpieczeństwa, dostawca musiałby dostarczyć towar w ostatnim możliwym przedziale czasowym.
 
@@ -64,23 +61,17 @@ Należy zauważyć, że zapas czasu dla przyjęcia nie jest zastosowany, jeśli 
 
 ### <a name="reorder-margin"></a>Zapas czasu dla ponownego zamówienia
 
-> [!NOTE]
-> **Wkrótce:** Ta funkcja nie jest jeszcze obsługiwana na potrzeby planowania optymalizacji. Dopóki nie będzie obsługiwana, wszystkie wartości wprowadzone dla **Zapasu czasu dla ponownego zamówienia** będą traktowane jako *0* (zero).
-
 Poniższa ilustracja przedstawia Zapas czasu dla ponownego zamówienia.
 
-![Zapas czasu dla ponownego zamówienia](media/safety-margins-3.png)
+![Zapas czasu dla ponownego zamówienia.](media/safety-margins-3.png)
 
 Zapas czasu dla ponownego zamówienia jest dodawany przed upływem czasu realizacji towaru dla wszystkich zamówień planowanych podczas planowania głównego. W związku z tym zapewnia on dodatkowy czas na wprowadzenie zlecenia dostawy. Jest zazwyczaj używany jako bufor w celu zapewnienia odpowiedniej ilości czasu dla procesów zatwierdzania lub innych procesów wewnętrznych, które są wymagane podczas tworzenia zleceń dostawy. Zapas czasu dla ponownego zamówienia jest umieszczany między *datą zamówienia* i *datą rozpoczęcia*.
 
 ### <a name="issue-margin"></a>Zapas czasu dla rozchodu
 
-> [!NOTE]
-> **Wkrótce:** Ta funkcja nie jest jeszcze obsługiwana na potrzeby planowania optymalizacji. Dopóki nie będzie obsługiwana, wszystkie wartości wprowadzone dla **Zapas czasu dla rozchodu odjęty od daty zapotrzebowania** będą traktowane jako *0* (zero).
-
 Poniższa ilustracja przedstawia Zapas czasu dla rozchodu.
 
-![Zapas czasu dla rozchodu](media/safety-margins-4.png)
+![Zapas czasu dla rozchodu.](media/safety-margins-4.png)
 
 Podczas planowania głównego zapas czasu dla rozchodu jest odejmowany od daty zapotrzebowania. Pomaga to zapewnić czas na reagowanie na przychodzące zamówienia i ich wysyłanie. Ten zapas czasu jest zazwyczaj używany jako bufor w celu zapewnienia odpowiedniej ilości czasu na potrzeby wysyłek i powiązanych z nimi procesów magazynowych.
 
@@ -90,7 +81,7 @@ Zwróć uwagę, że w przypadku zastosowania zapasu czasu dla rozchodu daty zapo
 
 ### <a name="turn-on-safety-margins-in-feature-management"></a>Włącz marginesy bezpieczeństwa w module Zarządzanie funkcjami
 
-Aby móc używać tej funkcji razem z optymalizacją planowania, należy ją włączyć w systemie. Administratorzy mogą skorzystać z obszaru roboczego [Zarządzanie funkcjami](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. Ta funkcja jest wymieniona w następujący sposób:
+Aby móc używać tej funkcji razem z optymalizacją planowania, należy ją włączyć w systemie. Administratorzy mogą skorzystać z obszaru roboczego [Zarządzanie funkcjami](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. Ta funkcja jest wymieniona w następujący sposób:
 
 - **Moduł:** _Planowanie główne_
 - **Nazwa funkcji:** _Marginesy bezpieczeństwa w optymalizacji planowania_
@@ -168,7 +159,7 @@ Na poniższej ilustracji przedstawiono macierz, która podsumowuje, które kalen
 - **Magazyn (WH):** Żółty
 - **Dostawca (V):** Niebieski
 
-[![Przegląd ustawień kalendarza — macierz](media/safety-margins-calendar-matrix.png)](media/safety-margins-calendar-matrix-high.png)
+[![Przegląd ustawień kalendarza — macierz.](media/safety-margins-calendar-matrix.png)](media/safety-margins-calendar-matrix-high.png)
 
 ## <a name="calculating-delays"></a>Obliczanie opóźnienia
 
@@ -176,10 +167,13 @@ Wszystkie trzy typy marginesów bezpieczeństwa są uwzględniane, gdy system ok
 
 Na przykład towar ma czas realizacji o jeden dzień dłuższy, ale zapas bezpieczeństwa wynoszący trzy dni. Zamówienie sprzedaży dla tego towaru jest ustawiane jako wymagane dzisiaj. W takim przypadku opóźnienie jest obliczane jako *czas realizacji* + *zapas czasu dla przyjęcia* = cztery dni. W związku z tym, jeśli dzisiaj jest 14 sierpnia, cztery dni opóźnienia oznaczają dostawy w dniu 18 sierpnia. Na poniższej ilustracji pokazano ten przykład.
 
-![Przykład obliczania opóźnienia](media/safety-margins-delays.png)
+![Przykład obliczania opóźnienia.](media/safety-margins-delays.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Rozpoczęcie optymalizacji planowania](get-started.md)
 
 [Analiza dopasowań optymalizacji planowania](planning-optimization-fit-analysis.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Stanowisko w grupie pełne
 description: Ten temat zawiera informacje dotyczące funkcji Stanowisko w grupie pełne. Ta funkcja oferuje alternatywę dla sztywnego egzekwowania reguł przerwy w pracy, gdy jest używana funkcja pobierania dla grupy. Zezwala ona na większy margines błędu w ramach ograniczeń dotyczących objętości kontenerów lub pojemników.
 author: Mirzaab
-manager: tfehr
 ms.date: 08/25/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSClusterProfile
 audience: Application User
@@ -14,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9c90380cb5d109e331a2552ba779525b66d10fa6
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: 459c8fce892d9437c7466458b7e53743c71da38f
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001106"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102845"
 ---
 # <a name="cluster-position-full"></a>Stanowisko w grupie pełne
 
@@ -30,12 +28,9 @@ Funkcja *Stanowisko w grupie pełne* oferuje alternatywę dla sztywnego egzekwow
 
 Ta funkcja wprowadza możliwość skorzystania z przycisku **Pełne** przy jednej z jednostek pracy w grupie. W starszych wersjach ta opcja była dostępna tylko w przypadku pobierania zamówienia zwykłego, a nie w przypadku pobierania z grupy. Jednak ta funkcja różni się od standardowego przycisku **Pełne**, gdyż anuluje pozostałą pracę. Nie sugeruje to użytkownikowi dodaia kolejnego pojemnika do tego samego klastra i nie powoduje automatycznego utworzenia nowej pracy.
 
-## <a name="turn-on-the-cluster-position-full-feature"></a>Włącz funkcję „Stanowisko w grupie pełne”
+## <a name="turn-the-cluster-position-full-feature-on-or-off"></a>Włącz lub wyłącz pełną funkcję pozycji klastra
 
-Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
-
-- **Moduł:** *Zarządzanie magazynem*
-- **Nazwa funkcji:** *Stanowisko w grupie pełne*
+Aby korzystać z funkcji opisanej w tym temacie, w systemie musi być włączona funkcja *Pełna pozycja klastra*. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.25, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Pełna pozycja klastra* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="setup"></a>Konfiguracja
 
@@ -213,7 +208,7 @@ Powinny zostać utworzone dwa identyfikatory pracy, z których każdy ma dwa wie
 
 ### <a name="mobile-device-flow-execution--work-confirmation-setup-for-the-product"></a>Wykonywanie przepływu urządzeń przenośnych — konfiguracja potwierdzenia pracy dla produktu
 
-1. Zaloguj się do aplikacji magazynowania jako użytkownik w magazynie *61*.
+1. Zaloguj się do aplikacji Warehouse Management jako użytkownik w magazynie *61*.
 1. Przejdź do **Wychodzące \> Tworzenie pobrania w grupie**.
 
     Zostanie wyświetlona strona **ZADANIE: Przypisz pracę do grupy**.
@@ -275,3 +270,6 @@ W tym scenariuszu pobranie klastra zostało zakończone i użytkownik jest prosz
     Zostanie wyświetlony komunikat „Pobieranie dla grupy zakończone”.
 
 Za pomocą elementu menu **Pobranie sprzedaży** można teraz pobrać pozostałą ilość. Następnie można skorzystać z elementu menu **Ładowanie sprzedaży**, aby przenieść elementy z lokalizacji pośredniej do doku załadunku.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

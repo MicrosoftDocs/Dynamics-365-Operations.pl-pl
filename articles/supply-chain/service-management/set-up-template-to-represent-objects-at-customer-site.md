@@ -1,12 +1,10 @@
 ---
 title: Konfigurowanie szablonu do prezentacji obiektów w siedzibie odbiorcy
 description: Można skonfigurować szablon do reprezentowania obiektów w siedzibie odbiorcy.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAAgreementTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b0507441e62e01771f9e4aee6739fc4c15d1924f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 304fd46e7559791bb14fcf7bca2773f2e30a255d
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5242404"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570016"
 ---
 # <a name="set-up-template-to-represent-objects-at-customer-site"></a>Konfigurowanie szablonu do prezentacji obiektów w siedzibie odbiorcy 
 

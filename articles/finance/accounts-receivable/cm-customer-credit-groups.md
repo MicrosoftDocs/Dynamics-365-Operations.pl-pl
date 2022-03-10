@@ -1,26 +1,23 @@
 ---
 title: Grupy kredytowe odbiorcy
 description: Ten temat zawiera informacje dotyczące przepływu pracy grup kredytowych odbiorców.
-author: mikefalkner
-manager: AnnBe
+author: JodiChristiansen
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschloma
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1ddf41d88d085b102a7d69eeeff0ec463d8b4137
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c8a007dcaaa9e10ab36dd3a7d0f80dd49b8e4d63
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446763"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7753857"
 ---
 # <a name="customer-credit-groups"></a>Grupy kredytowe odbiorcy
 
@@ -39,3 +36,6 @@ Grupy kredytowe odbiorcy można skonfigurować na stronie **Grupy kredytowe odbi
 Po zakończeniu konfigurowania grupy kredytu odbiorcy można dodawać do niej odbiorców, określając ich firmę i identyfikator konta odbiorcy. Podczas dodawania nowego odbiorcy do grupy kredytowej odbiorcy system wyszukuje to samo konto odbiorcy we wszystkich firmach i monituje o dodanie go do grupy kredytowej odbiorcy.
 
 Aby wyświetlić szczegóły dotyczące salda wiekowania dla wszystkich odbiorców faktury w grupie kredytowej odbiorcy, należy skorzystać z menu **Wiekowane salda**. Na stronie **Wiekowane salda** jest wyświetlane podsumowanie zawiekowania sald na kontach odbiorców faktury.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

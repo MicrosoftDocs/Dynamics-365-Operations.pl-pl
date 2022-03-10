@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
-ms.openlocfilehash: 74df8ac27c2028582b8909db0a7260b9b0ed38f5
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1ff4929e8789748433f4e9386397431e174a85f81518d2e0a1d8f9ea68211fa6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797288"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6717778"
 ---
 # <a name="assortment-management"></a>Zarządzanie asortymentem
 
@@ -35,27 +35,27 @@ Całościowa kombinacja produktów w kanale zależy od opublikowanych asortyment
 
 W poniższym przykładzie dla każdego sklepu jest konfigurowany unikatowy asortyment. W tym przypadku tylko produkt 1 jest dostępny w sklepie 1 oraz tylko produkt 2 jest dostępny w sklepie 2.
 
-![Każdy produkt jest dostępny w jednym sklepie](./media/Managing-assortments-figure1.png)
+![Każdy produkt jest dostępny w jednym sklepie.](./media/Managing-assortments-figure1.png)
 
 Aby produkt 2 był dostępny w sklepie 1, można dodać ten produkt do asortymentu 1.
 
-![Produkt 2 dodany do asortymentu 1](./media/Managing-assortments-figure2.png)
+![Produkt 2 dodany do asortymentu 1.](./media/Managing-assortments-figure2.png)
 
 Alternatywnie można dodać sklep 1 do asortymentu 2.
 
-![Sklep 1 dodany do asortymentu 2](./media/Managing-assortments-figure3.png)
+![Sklep 1 dodany do asortymentu 2.](./media/Managing-assortments-figure3.png)
 
 ### <a name="organization-hierarchies"></a>Hierarchie organizacyjne
 
 W sytuacjach, gdzie ten sam produkt jest sprzedawany w różnych kanałach, asortymenty można skonfigurować za pomocą hierarchii organizacyjnej asortymentu Commerce. Podczas dodawania węzłów z tej hierarchii zostaną uwzględnione wszystkie kanały istniejące w tym węźle i jego węzłach podrzędnych.
 
-![Hierarchia organizacyjna](./media/Managing-assortments-figure4.png)
+![Hierarchia organizacyjna.](./media/Managing-assortments-figure4.png)
 
 ### <a name="product-categories"></a>Kategorie produktów
 
 Podobnie po stronie produktu można dołączyć grupy produktów, używając hierarchii kategorii produktów. Można skonfigurować asortymenty, dodając jeden lub więcej węzłów hierarchii kategorii. W takim przypadku asortyment będzie obejmował wszystkie produkty z tego węzła kategorii i jego węzłów podrzędnych.
 
-![Kategorie produktów](./media/Managing-assortments-figure5.png)
+![Kategorie produktów.](./media/Managing-assortments-figure5.png)
 
 ### <a name="excluded-products-or-categories"></a>Wykluczone produkty i kategorie
 
@@ -64,7 +64,7 @@ Poza włączaniem produktów i kategorii do asortymentów można także użyć o
 > [!NOTE]
 > Jeśli produkt jest z definicji zarówno dołączony, jak i wykluczony z jednego lub więcej asortymentów, zawsze będzie uznawany za wykluczony.
 
-![Wykluczone produkty](./media/Managing-assortments-figure6.png)
+![Wykluczone produkty.](./media/Managing-assortments-figure6.png)
 
 ### <a name="global-and-released-products"></a>Produkty globalne i zwolnione
 

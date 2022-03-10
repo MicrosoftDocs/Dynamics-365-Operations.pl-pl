@@ -1,7 +1,7 @@
 ---
-title: Obsługa tablicy Kanban przeniesienia dla skanerów kodów kreskowych
+title: Obsługa tablicy przeniesień w systemie Kanban dla skanerów kodów kreskowych
 description: Tablica Kanban przeniesienia obsługuje wprowadzanie ze skanera przy użyciu widżetu skanera kodów kreskowych, który obsługuje funkcje wybierania, rozpoczynania, kończenia i opróżniania zadań Kanban.
-author: ChristianRytt
+author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -13,24 +13,23 @@ ms.custom: 19391
 ms.assetid: a426f645-d59b-4c98-8d78-eba8d64a562e
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a7073fb5d77e2d11569e86b92433864371f0e1d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b18aad4dcdbf8c2d18960ae306556c3ea679d622
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825874"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566818"
 ---
-# <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Obsługa tablicy Kanban przeniesienia dla skanerów kodów kreskowych
+# <a name="kanban-transfer-board-support-for-bar-code-scanners"></a>Obsługa tablicy przeniesień w systemie Kanban dla skanerów kodów kreskowych
 
 [!include [banner](../includes/banner.md)]
 
 Tablica Kanban przeniesienia obsługuje wprowadzanie ze skanera przy użyciu widżetu skanera kodów kreskowych, który obsługuje funkcje wybierania, rozpoczynania, kończenia i opróżniania zadań Kanban.
 
-<a name="registration-modes"></a>Tryby rejestracji
-------------------
+## <a name="registration-modes"></a>Tryby rejestracji
 
 Na skróconej karcie **Rejestracja skanera** można wybrać tryb rejestracji kontrolujący działanie, podczas którego użytkownik skanuje numer karty Kanban lub ręcznie wpisuje numer w polu Numer karty Kanban.
 
@@ -42,8 +41,7 @@ Na skróconej karcie **Rejestracja skanera** można wybrać tryb rejestracji kon
 | Wybierz                | Rejestruje numer karty Kanban i automatyczne wybiera z listy zadań w systemie Kanban to zadanie, do którego odwołuje się ta karta |
 
  
-<a name="registration-mode-select"></a>Wybierz tryb rejestracji
-------------------------
+## <a name="registration-mode-select"></a>Wybierz tryb rejestracji
 
 Gdy użyjesz czytnika kodów kreskowych do wybrania zadania, tryb wyświetlania na tablicy Kanban zmieni się. W tym trybie mają zastosowanie następujące warunki:
 

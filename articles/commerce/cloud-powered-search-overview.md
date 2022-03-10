@@ -3,23 +3,22 @@ title: Omówienie wyszukiwania w chmurze
 description: Ten temat zawiera omówienie wyszukiwania w chmurze w Microsoft Dynamics 365 Commerce.
 author: ashishmsft
 ms.date: 06/29/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b5182df9d45a3b5d2572a5b6b391c924ef23bf9a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: eb34780d5bdd41a128fff543fe0f1ef73cfead8b
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800428"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983676"
 ---
 # <a name="cloud-powered-search-overview"></a>Omówienie wyszukiwania w chmurze
 
@@ -41,7 +40,7 @@ Trafność i wydajność wyszukiwania są kluczowymi czynnikami w doświadczeniu
 
 Na poniższej ilustracji przedstawiono przykład typowej funkcji przeglądania i wyszukiwania.
 
-![Stona docelowa wyszukiwania](./media/SearchLanding.png)
+![Strona docelowa wyszukiwania.](./media/SearchLanding.png)
 
 ## <a name="faceted-navigation-and-choice-summary"></a>Szlifowana nawigacja i podsumowanie wyboru 
 
@@ -51,7 +50,7 @@ Korzystając z nawigacji fasetowej, możesz skonfigurować różne rafinery dla 
 
 Poniższa ilustracja pokazuje przykład, w którym podczas wyszukiwania używana jest nawigacja fasetowa.
 
-![Podsumowanie wyboru](./media/ChoiceSummary.png)
+![Podsumowanie wyboru.](./media/ChoiceSummary.png)
 
 ## <a name="immersive-autosuggest"></a>Immersyjne autosugerowanie
 
@@ -61,7 +60,7 @@ Dynamics 365 Commerce obsługuje także funkcje dotyczące słów kluczowych w r
 
 Na poniższej ilustracji pokazano przykład, na którym jest używana funkcja automatycznego sugerowania.
 
-![immersyjne autosugerowanie](./media/ImmersiveAutoSuggestUX.png)
+![immersyjne autosugerowanie.](./media/ImmersiveAutoSuggestUX.png)
 
 ## <a name="sort"></a>Sortuj
 
@@ -69,11 +68,11 @@ Ulepszone sortowanie w Dynamics 365 Commerce umożliwia odbiorcom sortowanie, wy
 
 >[!NOTE]
 >Te możliwości wyszukiwania z wykorzystaniem chmury są dostępne począwszy od wersji 10.0.8. Upewnij się, że w menu **Parametry Commerce > Konfigurowanie parametrów** istnieje wpis o wartości „true” dla parametru „ProductSearch.UseAzureSearch”. 
-![Parametry konfiguracji dla wyszukiwania z wykorzystaniem chmury](./media/CloudPoweredSearchConfigurationParameters.png)
+![Parametry konfiguracji dla wyszukiwania z wykorzystaniem chmury.](./media/CloudPoweredSearchConfigurationParameters.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Domyślna strona docelowa kategorii i strona wyników wyszukiwania – omówienie](category-search-page-overview.md)
+[Omówienie domyślnej strony docelowej kategorii i strony wyników wyszukiwania](category-search-page-overview.md)
 
 [Zarządzanie metadanymi SEO](manage-seo-metadata.md)
 

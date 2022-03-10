@@ -2,13 +2,11 @@
 title: Rejestrowanie wynajmów w walutach obcych
 description: W tym temacie wyjaśniono, jak rejestrować umowy wynajmu w walutach innych niż waluta rozliczeniowa lub waluta raportowania.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseDetail
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7f70442450cc1c814ae23e41a1feb3a63f2aade8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 91bf3f91614f0dd4835c253456128c9ced046749c0e13383590e01dfd436c921
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4992896"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6766344"
 ---
 # <a name="record-leases-in-foreign-currencies"></a>Rejestrowanie wynajmów w walutach obcych
 
@@ -52,3 +50,6 @@ Podczas tworzenia wpisów w arkuszu dotyczących wydatków amortyzacji w odniesi
 Ostateczna kwota wydatku amortyzacji może zostać obliczona przy użyciu nieco innego kursu wymiany, tak aby składnik majątku z PDU był w pełni amortyzowany w walucie rozliczeniowej i walucie raportowania.
 
 Jeśli wynajem został przeklasyfikowany jako **Odroczony czynsz**, system automatycznie wyczyści kursy wymiany w walutach rozliczeniowej i raportowania, jeśli zostały one już zdefiniowane.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

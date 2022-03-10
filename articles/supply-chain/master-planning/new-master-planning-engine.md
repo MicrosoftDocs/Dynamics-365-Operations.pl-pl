@@ -2,11 +2,9 @@
 title: Migracja do modułu Optymalizacja planowania w celu realizacji planowania głównego
 description: Ten temat zawiera informacje o nowym głównym silniku planowania, optymalizacji planowania i migracji z istniejącego aparatu.
 author: ChristianRytt
-manager: tfehr
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5fdbe472f24e1140f0af63da8a1fc4eafe4767a2
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8d3edeefca2e2194a8d5484afbfabf2091da4a1c1538d238351a5d389177ccfd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5238045"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728586"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Migracja do modułu Optymalizacja planowania w celu realizacji planowania głównego
 
@@ -65,8 +63,12 @@ Obecnie wyjątki dotyczące migracji optymalizacji planowania są istotne tylko 
 
 Po udostępnieniu wymaganych funkcji firma Microsoft zapewni okres karencji do wygaśnięcia wyjątku. Administrator środowiska zostanie poinformowany, gdy wymagane funkcje staną się dostępne i rozpocznie się okres karencji.
 
+Poniższy schemat blokowy podsumowuje informacje podane w tym temacie, dzięki czemu można szybko dowiedzieć się, czy należy zażądać wyjątku. Jeśli musisz zażądać wyjątku, wypełnij i prześlij [Kwestionariusz migracji optymalizacji planowania i wyjątków](https://go.microsoft.com/fwlink/?linkid=2144962).
+
+![Schemat blokowy wyjątków.](media/exception-diagram.png "Schemat blokowy wyjątków")
+
 > [!NOTE]
-> Możesz zażądać wyjątku tylko dla środowisk produkcyjnych, a nie dla środowisk piaskownicy. Jeśli chcesz wyłączyć błąd wyjątku optymalizacji planowania w środowisku piaskownicy typu infrastruktura jako usługa (IaaS), uruchom zapytanie SQL podane w [środowiskach piaskownicy](#faq-sandbox).
+> Możesz zażądać wyjątku tylko dla dzierżawców, którzy obecnie zawierają lub będą zawierać środowisko produkcyjne, a nie dla dzierżawców ze środowiskami piaskownicy. Jeśli chcesz wyłączyć błąd wyjątku optymalizacji planowania w środowisku piaskownicy typu infrastruktura jako usługa (IaaS), uruchom zapytanie SQL podane w [środowiskach piaskownicy](#faq-sandbox).
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 

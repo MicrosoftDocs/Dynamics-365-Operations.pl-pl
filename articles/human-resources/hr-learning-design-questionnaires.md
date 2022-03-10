@@ -1,33 +1,35 @@
 ---
-title: Projektowanie kwestionariuszy
-description: W tym artykule opisano proces tworzenia kwestionariusza. Pierwszym krokiem jest projektowanie kwestionariusza. Przy projektowaniu kwestionariusza, można nie tylko zapisać pytania i odpowiedzi, ale również utworzyć strukturę, która umożliwia rejestrowanie odpowiedzi i umieszczanie ich w tabelach.
-author: andreabichsel
-manager: AnnBe
-ms.date: 06/20/2017
+title: Tworzenie kwestionariuszy
+description: W tym temacie opisano proces tworzenia kwestionariusza.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KCMCollectionType, KMAnswerCollection, KMCollection, HcmLearningWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 17341
 ms.assetid: b27e2f12-c7a0-4a54-b8d8-17819f8a1c72
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: da4250b281438c29c82150af8db9cb8cca41c6c9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 90dd59b605c21abd03d2e0d64a89dc787850c26e
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420131"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065208"
 ---
-# <a name="design-questionnaires"></a>Projektowanie kwestionariuszy
+# <a name="create-questionnaires"></a>Tworzenie kwestionariuszy
 
-W tym artykule opisano proces tworzenia kwestionariusza. Pierwszym krokiem jest projektowanie kwestionariusza. Przy projektowaniu kwestionariusza, można nie tylko zapisać pytania i odpowiedzi, ale również utworzyć strukturę, która umożliwia rejestrowanie odpowiedzi i umieszczanie ich w tabelach. 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+W tym temacie opisano proces tworzenia kwestionariusza. Pierwszym krokiem jest projektowanie kwestionariusza. Przy projektowaniu kwestionariusza, można nie tylko zapisać pytania i odpowiedzi, ale również utworzyć strukturę, która umożliwia rejestrowanie odpowiedzi i umieszczanie ich w tabelach. 
 
 Starannie zaprojektowany kwestionariusz może pomóc podnieść jakość zbieranych danych. Jeśli dobrze go zaplanujesz, możesz lepiej wybrać odpowiednie opcje w odpowiednim czasie dla kwestionariusza. Następujące porady pomogą Ci zaplanować skuteczny kwestionariusz:
 
@@ -64,7 +66,7 @@ Niektóre warunki wstępne muszą być spełnione przed przystąpieniem do tworz
 
 ### <a name="questionnaire-types"></a>Typy kwestionariuszy
 
-Typy kwestionariuszy są wymagane i muszą być przypisane podczas tworzenia kwestionariusza. Typy kwestionariuszy pomagają w klasyfikacji kwestionariuszy i zarządzaniu nimi. Do klasyfikacji kwestionariuszy i ich rozróżniania od siebie służą typy kwestionariuszy. Na przykład jeśli masz wiele różnych kwestionariuszy do wyboru, możesz je filtrować według typu w formularzu, co ułatwi znalezienie konkretnego kwestionariusza. Oto kilka przykładów typów kwestionariuszy:
+**Typy kwestionariuszy** są wymagane i muszą być przypisane podczas tworzenia kwestionariusza. **Typy kwestionariuszy** pomagają w klasyfikacji kwestionariuszy i zarządzaniu nimi. Do klasyfikacji kwestionariuszy i ich rozróżniania od siebie służą typy kwestionariuszy. Na przykład jeśli masz wiele różnych kwestionariuszy do wyboru, możesz je filtrować według typu w formularzu, co ułatwi znalezienie konkretnego kwestionariusza. Oto kilka przykładów typów kwestionariuszy:
 
 -   Zarządzanie zasobami ludzkimi
 -   Ankiety odbiorców
@@ -72,9 +74,9 @@ Typy kwestionariuszy są wymagane i muszą być przypisane podczas tworzenia kwe
 
 ### <a name="question-types"></a>Typy pytań
 
-Typy pytań są wymagane i muszą być przypisane podczas tworzenia pytań. 
+**Typy pytań** są wymagane i muszą być przypisane podczas tworzenia pytań. 
 
-Typy pytań służą do podziału pytań na kategorie na potrzeby sprawozdawczości. Typy pytań również ułatwiają znajdowanie pytań, ponieważ typy mogą być używane jako filtry na stronie **Pytania**. Oto kilka przykładów typów pytań:
+**Typy pytań** służą do podziału pytań na kategorie na potrzeby sprawozdawczości. **Typy pytań** również ułatwiają znajdowanie pytań, ponieważ typy mogą być używane jako filtry na stronie **Pytania**. Oto kilka przykładów typów pytań:
 
 -   Zasoby ludzkie
 -   Zarządzanie firmą
@@ -91,9 +93,9 @@ Kody sekwencji numerów służą do organizowania pytań i odpowiedzi. W oparciu
 Wszystkie parametry należy zdefiniować przed rozpoczęciem tworzenia danych. Można zmodyfikować ustawienia parametrów kwestionariusza w dowolnym momencie.
 
 ## <a name="questionnaire-components"></a>Składniki kwestionariusza
-Kwestionariusze obejmują trzy główne elementy: grupy odpowiedzi zawierające odpowiedzi dla pytań wielokrotnego wyboru, pytania oraz sam kwestionariusz.  Opcjonalnie można grupować pytania w kwestionariuszu w grupy wyników. Grupy wyników umożliwiają podziału pytań na kategorie i dostarczania dalszych analiz w kwestionariuszu. 
+Kwestionariusze obejmują trzy główne elementy: grupy odpowiedzi zawierające odpowiedzi dla pytań wielokrotnego wyboru, pytania oraz sam kwestionariusz. Opcjonalnie można grupować pytania w kwestionariuszu w grupy wyników. Grupy wyników umożliwiają podziału pytań na kategorie i dostarczania dalszych analiz w kwestionariuszu. 
 
-[![QuestionnaireComponents](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
+[![QuestionnaireComponents.](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 
 ### <a name="answer-groups-and-answers"></a>Grupy pytań i odpowiedzi
 
@@ -106,7 +108,7 @@ Aby zapewnić listę możliwych odpowiedzi dla pytań zamkniętych, należy utwo
 
 Grupy odpowiedzi i odpowiedzi są składnikami, które składają się na główną część informacji, z których tworzone są pytania. Po utworzeniu grupy odpowiedzi można przypisać grupę odpowiedzi do pytania w polu **Grupy pytań** na stronie **Pytania**. 
 
-Grupa odpowiedzi może być następnie używana do jednego lub większej liczby pytań w tym samym kwestionariuszu lub w więcej niż jednym kwestionariuszu. 
+**Grupa odpowiedzi** może być następnie używana do jednego lub większej liczby pytań w tym samym kwestionariuszu lub w więcej niż jednym kwestionariuszu. 
 
 > [!NOTE]
 > Jeśli modyfikujesz tekst odpowiedzi w grupach odpowiedzi już użytych w wypełnionych kwestionariuszach, dane mogą stać się trudne do oceny i wyniki kwestionariusza przestaną być prawidłowe. Jeśli trzeba zmienić grupy odpowiedzi, należy wziąć pod uwagę utworzenie nowej grupy odpowiedzi zamiast zmieniać istniejące. Nie można usunąć grup odpowiedzi dołączonych do pytania lub odpowiedzi albo tych, które zostały wykorzystane.
@@ -172,7 +174,7 @@ Nie można usunąć z kwestionariusza następujących typów pytań:
 
 ### <a name="result-groups"></a>Grupy wyników
 
-Grupy wyników są opcjonalne podczas dołączania pytań do kwestionariusza. 
+**Grupy wyników** są opcjonalne podczas dołączania pytań do kwestionariusza. 
 
 Grupa wyników jest używana do obliczania punktów i klasyfikacji wyników kwestionariusza. Korzystając z grup wyników, można wykonywać następujące zadania:
 
@@ -236,3 +238,5 @@ Aby używać pytań warunkowych to utworzenie hierarchii pytań w kwestionariusz
 Firma oferuje klientom towary i usługi. Zwykle w takich przypadkach niektórzy klienci kupują tylko towary, inni tylko usługi, a jeszcze jedni towary i usługi. Dlatego gdy firma rozsyła ankietę badania poziomu zadowolenia klientów, wprowadza do kwestionariusza strukturę warunkową, aby klienci, którzy nabywają same usługi, nie musieli odpowiadać na pytania dotyczące towarów. 
 
 Alternatywnie można ustawić kwestionariusz tak, że jeśli respondent wybierz odpowiedź A na pytanie 1, następnym pytaniem w sekwencji jest pytanie 2. Jeśli jednak respondent wybierze odpowiedź B na pytanie 1, następnym pytaniem jest pytanie 5.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

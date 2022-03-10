@@ -1,45 +1,43 @@
 ---
 title: Omówienie posiadaczy zaliczek
-description: Więcej informacji na temat funkcji posiadaczy zaliczek w Microsoft Dynamics 365 Finance.
-author: LizaGolub
-manager: AnnBe
-ms.date: 07/25/2019
-ms.topic: article
+description: Ten temat zawiera informacje dotyczące funkcji posiadacza zaliczki.
+author: liza-golub
+ms.date: 09/15/2021
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmWorkerAdvHolderTableListPage_RU
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 262574
+ms.custom:
+- "262574"
+- intro-internal
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
-ms.author: kfend
+ms.author: elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d6563e2cca87cdd3eea38e0f30d7c7de91003197
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ed09542e3f369a079c60c17a02f4d08c9f8a9e99
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4988388"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984952"
 ---
 # <a name="advance-holders-overview"></a>Omówienie posiadaczy zaliczek
 
 [!include [banner](../includes/banner.md)]
 
-Dowiedz się więcej o funkcji posiadaczy zaliczek.
-
 *Posiadacz zaliczki* to pracownik firmy, który odpowiada za kwotę wydatku pokrytą przez organizację. Posiadaczem zaliczki może być tylko pracownik firmy. Gdy następuje zaopatrzenie, posiadacz zaliczki informuje firmę o dokonanych wydatkach. Wtedy firma zwraca pracownikowi wydatkowaną kwotę. Firma kontroluje salda wszystkich posiadaczy zaliczek. Użytkownicy w firmach w Estonii, na Łotwie, Litwie, w Polsce, Czechach, na Węgrzech i w Rosji mogą wykazywać konkretne transakcje towarzyszące operacjom z udziałem pracowników firmy odpowiedzialnych za kwoty wydatków pokrywane przez organizację.
 
 ## <a name="set-up-an-advance-holder"></a>Konfigurowanie posiadacza zaliczki
-Ta sekcja zawiera instruktaż konfigurowania posiadacza zaliczki. Pamiętaj, aby wykonać zadania w tej sekcji koniecznie w podanej kolejności:
+Wykonaj poniższe zadania aż do posiadacza zaliczki. Pamiętaj, aby wykonać te zadania w podanej kolejności.
 
-1. Tworzenie grup posiadaczy zaliczek
-2. Konfigurowanie profilu księgowania pracownika
-3. Konfigurowanie parametrów modułu Rozrachunki z dostawcami
-4. Tworzenie szczegółowych warunków płatności dla posiadacza zaliczki
-5. Tworzenie szczegółowych warunków płatności dla posiadacza zaliczki
-6. Tworzenie posiadacza zaliczki
+1. Utwórz grupę posiadaczy zaliczek.
+2. Konfiguruj profil księgowania pracownika.
+3. Konfiguruj parametry modułu Rozrachunki z dostawcami.
+4. Utwórz szczegółowe warunki płatności dla posiadacza zaliczki.
+5. Utwórz szczegółowe warunki płatności dla posiadacza zaliczki.
+6. Utwórz posiadacza zaliczki.
 
 
 ### <a name="advance-holder-groups"></a>Grupy posiadaczy zaliczek
@@ -61,7 +59,7 @@ Użyj strony **Profile księgowania pracowników**, aby utworzyć profil dla tra
 
 ### <a name="account-payable-parameters"></a>Parametry modułu rozrachunków z dostawcami
 
-Aby wykazywać transakcje posiadaczy zaliczek, należy skonfigurować następujące informacje na stronie **Parametry modułu rozrachunków z dostawcami** w sekcji **Posiadacze zaliczek**.
+Aby wykazywać transakcje posiadaczy zaliczek, należy skonfigurować następujące pola na stronie **Parametry modułu rozrachunków z dostawcami** w sekcji **Posiadacze zaliczek**.
 
 |  Pole                                         | Opis       |
 |------------------------------------------------|-------------------|
@@ -80,9 +78,9 @@ Aby poprawnie zarejestrować i zaksięgować zamówienie zakupu w kontekście po
 
 ### <a name="create-an-advance-holder"></a>Tworzenie posiadacza zaliczki
 
-Przed utworzeniem posiadacza zaliczki muszą już istnieć skonfigurowani pracownicy. Aby uzyskać więcej informacji, zobacz [Wprowadzanie informacji o pracowniku (przewodnik po zadaniu)](../../fin-and-ops/hr/tasks/enter-worker-information.md). 
+Przed utworzeniem posiadacza zaliczki muszą już istnieć skonfigurowani pracownicy. Aby uzyskać więcej informacji, zobacz [Wprowadzanie informacji o pracowniku (przewodnik po zadaniu)](../../human-resources/hr-personnel-enter-worker-information.md). 
 
-1. Wybierz kolejno opcje **Rozrachunki z dostawcami** \> **Posiadacze zaliczek** \> **Posiadacze zaliczek**.
+1. Wybierz kolejno opcje **Rozrachunki z dostawcami** > **Posiadacze zaliczek** > **Posiadacze zaliczek**.
 
     > [!NOTE]
     > Na stronie **Posiadacze zaliczek** nie można dodawać ani usuwać pracowników etatowych. Pracownicy muszą zostać najpierw zatrudnieni w module **Zasoby ludzkie**. Na stronie **Profile księgowania pracowników** można skonfigurować profil księgowania pracownika, który jest używany do księgowania sald posiadacza zaliczki.
@@ -91,10 +89,10 @@ Przed utworzeniem posiadacza zaliczki muszą już istnieć skonfigurowani pracow
 3. Na skróconej karcie **Ogólne** w opcji **Posiadacz zaliczki** ustaw wartość **Tak**, aby wskazać, że pracownik etatowy jest posiadaczem zaliczki.
 4. W polu **Grupa** wybierz grupę posiadaczy zaliczek, do której należy pracownik etatowy.
 5. W obszarze **Dokument tożsamości** podaj dane dokumentu identyfikacyjnego.
-    - **Seria** - wprowadź serię dokumentu używanego do weryfikacji tożsamości posiadacza zaliczki.
-    - **Numer** - wprowadź numer dokumentu używanego do weryfikacji tożsamości posiadacza zaliczki.
-    - **Data wystawienia** - wybierz lub wprowadź datę wydania dokumentu.
-    - **Wystawione przez** - Wprowadź dane organu lub osoby, która wydała dokument.
+    - **Seria**: wprowadź serię dokumentu używanego do weryfikacji tożsamości posiadacza zaliczki.
+    - **Numer**: wprowadź numer dokumentu używanego do weryfikacji tożsamości posiadacza zaliczki.
+    - **Data wystawienia**: wybierz lub wprowadź datę wydania dokumentu.
+    - **Wystawione przez**: Wprowadź dane organu lub osoby, która wydała dokument.
 6. Wybierz przycisk **Zapisz**, aby zamknąć stronę.
 
 > [!NOTE]
@@ -105,7 +103,8 @@ Przed utworzeniem posiadacza zaliczki muszą już istnieć skonfigurowani pracow
 
 ### <a name="advance-holder-transactions-inquiry"></a>Zapytania o transakcje posiadaczy zaliczek
 
-Aby uzyskać listę transakcji posiadacza zaliczki, kliknij przycisk **Transakcje** znajdujący się na stronie **Posiadacze zaliczek**. Aby wyświetlić transakcje wszystkich posiadaczy zaliczek lub utworzyć szczegółowe zapytanie dotyczące transakcji posiadaczy zaliczek, wybierz kolejno opcje **Rozrachunki z dostawcami** &gt; **Zapytania i raporty** &gt; **Zapytania i raporty posiadaczy zaliczek** &gt; **Transakcje**. Kliknij opcję **Załącznik**, a zostanie otwarta strona **Transakcje na załączniku**.
+Aby uzyskać listę transakcji posiadacza zaliczki, wybierz opcję **Transakcje** znajdującą się na stronie **Posiadacze zaliczek**. Aby wyświetlić transakcje wszystkich posiadaczy zaliczek lub utworzyć szczegółowe zapytanie dotyczące transakcji posiadaczy zaliczek, wybierz kolejno opcje **Rozrachunki z dostawcami** > **Zapytania i raporty** > **Zapytania i raporty posiadaczy zaliczek** > **Transakcje**. Wybierz opcję **Załącznik**, a zostanie otwarta strona **Transakcje na załączniku**.
+
 ### <a name="advance-holder-balance-inquiry"></a>Zapytania o salda posiadaczy zaliczek
 
 Aby zobaczyć saldo posiadacza zaliczki, użyj strony **Posiadacze zaliczek**. Aby wyświetlić salda wszystkich posiadaczy zaliczek lub utworzyć szczegółowe zapytanie dotyczące kont posiadaczy zaliczek, wybierz kolejno opcje **Rozrachunki z dostawcami** &gt; **Zapytania i raporty** &gt; **Zapytania i raporty posiadaczy zaliczek** &gt; **Saldo**.
@@ -118,35 +117,42 @@ Aby wyświetlić podgląd i wydrukować raport oparty na transakcjach posiadaczy
 
 ## <a name="advance-holder-transactions"></a>Transakcje posiadacza zaliczki
 
-Dowiedz się, jak pracować z transakcjami posiadaczy zaliczek.
-
 Transakcje dla pracowników będących posiadaczami zaliczek mogą być księgowane przy użyciu kont posiadaczy zaliczek. Identyfikator pracownika określony dla każdego posiadacza zaliczki może służyć do śledzenia wszystkich transakcji danego posiadacza zaliczki. Ten numer jest pobierany jako numer konta dla transakcji posiadacza zaliczki na stronach **Arkusze finansowe** i **Transakcje posiadacza zaliczki**.
 
 ### <a name="create-and-post-a-purchase-order-with-advance-holder-details"></a>Tworzenie i księgowanie zamówienia zakupu z danymi posiadacza zaliczki
 Aby uzyskać bardziej ogólne informacje o zamówieniach zakupu, zobacz [Omówienie zamówień zakupu](../../supply-chain/procurement/purchase-order-overview.md). Jeśli faktura od dostawcy zostanie utworzona i zaksięgowana z danymi posiadacza zaliczki, salda posiadacza zaliczki zostaną zaksięgowane na koncie bilansowym pracownika, a nie na koncie bilansowym dostawcy. Aby dodać szczegóły posiadacza zaliczki do zamówienia zakupu, wykonaj następujące czynności:
 
--   W sekcji **Cena i rabat** w polu **Warunki płatności** wybierz termin płatności. <!---For more information about **Terms of payment**, see [Define vendor payment terms](../accounts-payable/tasks/define-vendor-payment-terms.md).--> Wybierz termin płatności, który ma zaznaczoną opcję **Od posiadacza zaliczki** na stronie **Warunki płatności**. 
--   Na skróconej karcie **Cena i rabat** w polu **Posiadacz zaliczki** wybierz posiadacza zaliczki dla zamówienia zakupu.
+1. W sekcji **Cena i rabat** w polu **Warunki płatności** wybierz termin płatności. Aby uzyskać więcej informacji o **Warunkach płatności**, zobacz temat [Definiowanie warunków płatności dostawcy](../accounts-payable/tasks/define-vendor-payment-terms.md). 
+2. Wybierz termin płatności, który ma zaznaczoną opcję **Od posiadacza zaliczki** na stronie **Warunki płatności**. 
+3. Na skróconej karcie **Cena i rabat** w polu **Posiadacz zaliczki** wybierz posiadacza zaliczki dla zamówienia zakupu.
 
 Proces księgowania zamówienia zakupu utworzy dwie transakcje z dostawcą o przeciwnych kwotach oraz jedną transakcję posiadacza zaliczki. Bez szczegółów posiadacza zaliczki byłaby tworzona tylko jedna transakcja z dostawcą.
 
-### <a name="settle-advance-holder-balances-via-a-bank"></a>Rozliczanie salda posiadacza zaliczki za pośrednictwem banku
-Podczas rozliczania sald posiadaczy zaliczek za pośrednictwem banku zapisy w arkuszu dotyczące zamknięcia tych sald są tworzone w arkuszu finansowym. Można skonfigurować kod dla arkusza i banku w obszarze **Posiadacze zaliczek** na stronie **Parametry modułu rozrachunków z dostawcami**. Aby zamknąć saldo posiadacza zaliczki poprzez bank, wybierz kolejno opcje **Rozrachunki z dostawcami** &gt; **Posiadacze zaliczek** &gt; **Posiadacze zaliczek**. W okienku akcji kliknij przycisk **Saldo**, a następnie kliknij opcję **Zamknij — bank**. Wprowadź poniższe informacje na stronie **Zamknij — bank**:
+### <a name="settle-advance-holder-balances-by-using-the-bank"></a>Rozliczanie salda posiadacza zaliczki za pośrednictwem banku
+Podczas rozliczania sald posiadaczy zaliczek za pośrednictwem banku zapisy w arkuszu dotyczące zamknięcia tych sald są tworzone w arkuszu finansowym. Można skonfigurować kod dla arkusza i banku w obszarze **Posiadacze zaliczek** na stronie **Parametry modułu rozrachunków z dostawcami**. 
 
-| Pole                    | opis |
-|------------------------------|-------------------|
-| **Data płatności**          | Wprowadź dzień, w którym płatność powinna zostać zaksięgowana.|
-| **Kwota do przeniesienia** | Wprowadź kwotę salda istniejącą podczas zamknięcia. Domyślnie jest wyświetlana kwota wskazana w polu **Kwota** w formularzu **Saldo**. |
-| **Automatycznie**                | Zaznacz pole wyboru **Automatycznie**, aby utworzyć i zaksięgować arkusz wstępnie ustawiony na stronie **Parametry modułu rozrachunków z dostawcami**.|
+1. Aby zamknąć saldo posiadacza zaliczki za pośrednictwem banku, wybierz kolejno opcje **Rozrachunki z dostawcami** > **Posiadacze zaliczek** > **Posiadacze zaliczek**. 
+2. W okienku akcji wybierz opcję **Saldo** > **Zamknij za pośrednictwem banku**. 
+3. Wprowadź poniższe informacje na stronie **Zamknij — bank**:
 
-### <a name="settle-advance-holder-balances-via-cash"></a>Rozliczanie salda posiadacza zaliczki za pośrednictwem kasy
-Podczas rozliczenia sald posiadaczy zaliczek za pośrednictwem kasy zapisy w arkuszu dotyczące zamknięcia tych sald są tworzone w arkuszu kasowym. Można skonfigurować kod dla arkusza i kasy na karcie **Posiadacze zaliczek** na stronie **Parametry modułu rozrachunków z dostawcami**. Aby zamknąć saldo posiadacza zaliczki poprzez kasę, wybierz kolejno opcje **Rozrachunki z dostawcami** &gt; **Posiadacze zaliczek** &gt; **Posiadacze zaliczek**. W okienku akcji kliknij przycisk **Saldo**, a następnie kliknij opcję **Zamknij — kasa**. Wprowadź poniższe informacje na stronie **Zamknij — kasa**:
+    | Pole                    | opis |
+    |------------------------------|-------------------|
+    | **Data płatności**          | Wprowadź dzień, w którym płatność powinna zostać zaksięgowana.|
+    | **Kwota do przeniesienia** | Wprowadź kwotę salda istniejącą podczas zamknięcia. Domyślnie jest wyświetlana kwota wskazana w polu **Kwota** na stronie **Saldo**. |
+    | **Automatyczna**                | Zaznacz pole wyboru **Automatycznie**, aby automatycznie tworzyć i zaksięgować arkusz wstępnie ustawiony na stronie **Parametry modułu rozrachunków z dostawcami**.|
 
-| Pole                    | opis
-|------------------------------|-----------------|
-| **Data płatności**          | Wprowadź dzień, w którym płatność powinna zostać zaksięgowana.|
-| **Kwota do przeniesienia** | Wprowadź kwotę salda istniejącą podczas zamknięcia. Domyślnie jest wyświetlana kwota wskazana w polu **Kwota** w formularzu **Saldo**. |
-| **Automatycznie**                | Zaznacz pole wyboru **Automatycznie**, aby automatycznie utworzyć i zaksięgować arkusz wstępnie ustawiony na stronie **Parametry modułu rozrachunków z dostawcami**.     |
+### <a name="settle-advance-holder-balances-by-using-cash"></a>Rozliczanie salda posiadacza zaliczki używając gotówki
+Podczas rozliczenia sald posiadaczy zaliczek używając gotówki zapisy w arkuszu dotyczące zamknięcia tych sald są tworzone w arkuszu kasowym. Można skonfigurować kod dla arkusza i kasy na karcie **Posiadacze zaliczek** na stronie **Parametry modułu rozrachunków z dostawcami**. 
+
+1. Aby zamknąć saldo posiadacza zaliczki używając gotówki, wybierz kolejno opcje **Rozrachunki z dostawcami** > **Posiadacze zaliczek** > **Posiadacze zaliczek**. 
+2. W okienku akcji wybierz opcję **Saldo** > **Zamknij używając gotówki**. 
+3. Wprowadź poniższe informacje na stronie **Zamknij — kasa**:
+
+    | Pole                    | opis
+    |------------------------------|-----------------|
+    | **Data płatności**          | Wprowadź dzień, w którym płatność powinna zostać zaksięgowana.|
+    | **Kwota do przeniesienia** | Wprowadź kwotę salda istniejącą podczas zamknięcia. Domyślnie jest wyświetlana kwota wskazana w polu **Kwota** na stronie **Saldo**. |
+    | **Automatyczna**                | Zaznacz pole wyboru **Automatycznie**, aby automatycznie tworzyć i zaksięgować arkusz wstępnie ustawiony na stronie **Parametry modułu rozrachunków z dostawcami**.     |
 
 Jeśli po przetwarzaniu arkusza kasowego kwota w polu **Kwota do przeniesienia** była ujemna, jest generowany dokument KW dla posiadacza zaliczki po zamknięciu sald. Jeśli kwota w polu **Kwota do przeniesienia** była dodatnia, jest generowany dokument KP.
 
@@ -157,3 +163,6 @@ Jeśli po przetwarzaniu arkusza kasowego kwota w polu **Kwota do przeniesienia**
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

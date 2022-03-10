@@ -2,26 +2,23 @@
 title: Omówienie kanałów
 description: W tym temacie omówiono kanały w Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 8ac188832bdaeba430eed7f08e91a9c2214a0e15
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: cc7f00d69a6fd57efcd9b6eece56ddc0702c6935
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5219108"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985012"
 ---
 # <a name="channels-overview"></a>Omówienie kanałów
 

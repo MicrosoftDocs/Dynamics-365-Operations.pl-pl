@@ -1,25 +1,24 @@
 ---
 title: Omówienie konsolidacji finansowych i przeliczania walut
 description: W tym temacie opisano funkcje konsolidacji finansowych i przeliczania walut dostępne w księdze głównej.
-author: aprilolson
-ms.date: 07/25/2019
-ms.topic: article
+author: jiwo
+ms.date: 10/07/2021
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: intro-internal
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 4e8d4f28c42f44dc01c92e51b5e9a69fe7f40fa0
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: a77fe5e1970c617203706d9d629ac65e3a47909b
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345387"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982412"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Omówienie konsolidacji finansowych i przeliczania walut
 
@@ -182,5 +181,17 @@ Oto kilka scenariuszy konsolidacji obsługiwanych przez narzędzie Raportowanie 
 ## <a name="generating-consolidated-financial-statements"></a>Generowanie skonsolidowanych sprawozdań finansowych
 Aby uzyskać informacje o scenariuszach, w których mogą być tworzone skonsolidowane sprawozdania finansowe, zobacz [Generowanie skonsolidowanych sprawozdań finansowych](./generating-consolidated-financial-statements.md).
 
+## <a name="performance-enhancement-for-large-consolidations"></a>Poprawa wydajności dla dużych konsolidacji
+
+Środowiska, w których istnieje wiele transakcji księgi głównej, mogą być uruchamiane wolniej niż jest to optymalne. Aby rozwiązać ten problem, można skonfigurować równoległe przetwarzanie partii, w których jest używana zdefiniowana przez użytkownika liczba dat. Aby zapewnić, że rozwiązanie działa zgodnie z zamierzeniami, dodaj do konsolidacji punkt rozszerzenia, aby zwrócić kontener zakresów dat. Podstawowa implementacja powinna zawierać jeden zakres dat dla stanu rozpoczęcia i zakończenia konsolidacji. Zakresy dat w implementacji podstawowej zostaną zweryfikowane, aby upewnić się, że nie zawierają przerw lub się nie nakładają. Zakresy dat zostaną użyte do utworzenia równoległych pakietów partii dla każdej firmy.
+
+Można dostosować liczbę zakresów dat do wymagań organizacji. Dostosowanie liczby zakresów dat pomaga uprościć testowanie i zminimalizować wpływ na istniejący kod, ponieważ nie istnieje logika alokacji. Jedyne nowe testy wymagane do sprawdzenia poprawności tworzenia pakietów partii, sprawdzania poprawności zakresów dat i testowania podzestawu zakresów dat w celu sprawdzenia, czy partie mogą zostać połączone w celu wykonania końcowego zadania przetwarzania wsadowego. 
+
+Ta funkcja usprawnia proces konsolidacji w księdze głównej po uruchomieniu tego procesu w trybie wsadowym. Rozszerzenie usprawnia wydajność procesu konsolidacji księgi głównej, dzieląc konsolidację na wiele zadań, które mogą być przetwarzane równolegle. W domyślnej metodzie uruchamiania konsolidacji każde zadanie przetwarza warte osiem dni działania księgi głównej. Dodano jednak punkt rozszerzenia, który umożliwia dostosowanie liczbę utworzonych zadań.
+
+Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z obszaru roboczego **Zarządzanie funkcjami**, aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. Ta funkcja jest wymieniona w następujący sposób:
+
+- **Moduł:** księga główna
+- **Nazwa funkcji:** zwiększenie wydajności dla dużych konsolidacji
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

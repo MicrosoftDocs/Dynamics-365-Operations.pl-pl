@@ -1,29 +1,26 @@
 ---
 title: Konwencje amortyzacji środków trwałych
 description: Ten temat opisuje konwencje amortyzacji środków trwałych.
-author: saraschi2
-manager: AnnBe
+author: moaamer
 ms.date: 09/04/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13891
 ms.assetid: 36d1112d-921c-4fff-abe0-0ff2429848d3
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4315f70e7959e2576e9b87dfb3898318f47aa46d
-ms.sourcegitcommit: 0efa93f11847a2b75d13cd0a49e716c76130ec44
+ms.openlocfilehash: 823f8826e297a01c3658ceb8e82e6f9902d7a359
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4446959"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883419"
 ---
 # <a name="fixed-asset-depreciation-conventions"></a>Konwencje amortyzacji środków trwałych
 
@@ -43,3 +40,6 @@ Konwencje amortyzacji można przypisać do konfiguracji księgi grupy środków 
 | Miesiąc środkowy (15. dzień miesiąca) | W celu obliczenia odpisu amortyzacyjnego za rok, w którym środek wprowadzono do eksploatacji, należy pomnożyć amortyzację całoroczną przez odpowiedni ułamek. Licznik (górna liczba) ułamka jest liczbą pełnych miesięcy w roku, gdy składnik majątku znajdował się w eksploatacji, powiększoną o 1/2 (0,5). Dzielnik (dolna liczba) wynosi 12. Jeśli zlikwidujesz składnik majątku przed końcem okresu amortyzacji, użyj tej samej metody do obliczenia odpisu amortyzacyjnego za rok likwidacji. |
 | Pół roku (początek roku) | Środki trwałe, które mają datę <strong>Rozpoczęcie eksploatacji</strong> w pierwszej połowie roku, zaczynają się amortyzować w pierwszym dniu roku (cały rok). Środki trwałe, które mają datę <strong>Rozpoczęcie eksploatacji</strong> w drugiej połowie roku, zaczynają się amortyzować w połowie roku. |
 | Pół roku (następny rok)     | Środki trwałe, które mają datę <strong>Rozpoczęcie eksploatacji</strong> w pierwszej połowie roku, zaczynają się amortyzować w pierwszym dniu roku (cały rok). Środki trwałe, które mają datę <strong>Rozpoczęcie eksploatacji</strong> w drugiej połowie roku, zaczynają się amortyzować w pierwszym dniu następnego roku. Środki trwałe, które zostaną wycofane w pierwszej połowie roku, są traktowane jako wycofane w ostatnim dniu poprzedniego roku na potrzeby amortyzacji. Każda amortyzacja zaksięgowana w bieżącym roku musi zostać wycofana (skorygowana). Środki trwałe, które zostaną wycofane w drugiej połowie roku, są traktowane jako wycofane na potrzeby amortyzacji w ostatnim dniu roku, w którym nastąpiło wycofanie. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,27 +2,19 @@
 title: Wskazówki dotyczące konfiguracji podwójnego zapisu
 description: W tym temacie opisano scenariusze obsługiwane w konfiguracji podwójnego zapisu.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 10/12/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: dee6bc52a0967dfd6134258d3a02dc18feb404a5
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 6de449b14bcdd82336e3e255bf62ad069d3daaf5
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5560232"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061611"
 ---
 # <a name="guidance-for-dual-write-setup"></a>Wskazówki dotyczące konfiguracji podwójnego zapisu
 
@@ -30,11 +22,11 @@ ms.locfileid: "5560232"
 
 [!include [preview-banner](../../includes/preview-banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Można skonfigurować połączenie podwójnego zapisywania między środowiskiem Finance and Operations a środowiskiem Dataverse.
 
-+ Środowisko **Finance and Operations** stanowi podstawową platformę dla aplikacji **Finance and Operations** (np. Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce i Dynamics 365 Human Resources).
+Można skonfigurować połączenie podwójnego zapisywania między środowiskiem Finanse i Działania a środowiskiem Dataverse.
+
++ **Środowisko Finanse i Działania** stanowi podstawową platformę dla **aplikacji Finanse i Działania** (na przykład Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce oraz Dynamics 365 Human Resources).
 + **Środowisko Dataverse** stanowi podstawową platformę **aplikacji typu Customer Engagement** (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Column Service, Dynamics 365 Marketing i Dynamics 365 Project Service Automation).
 
 > [!IMPORTANT]
@@ -42,92 +34,92 @@ Można skonfigurować połączenie podwójnego zapisywania między środowiskiem
 
 Mechanizm konfiguracji zmienia się w zależności od subskrypcji i środowiska:
 
-+ W przypadku nowych wystąpień aplikacji Finance and Operations konfiguracja podwójnego zapisywania rozpoczyna się w Microsoft Dynamics Lifecycle Services (LCS). Jeśli masz licencję na Microsoft Power Platform, otrzymasz nowe środowisko Dataverse, jeśli Twoja dzierżawa nie ma takiego nowego środowiska.
-+ W przypadku istniejących aplikacji Finance and Operations wystąpień Konfiguracja dwukrotnego zapisu rozpoczyna się w środowisku Finance and Operations.
++ W przypadku nowych wystąpień aplikacji Finanse i Działania konfiguracja podwójnego zapisywania rozpoczyna się w Microsoft Dynamics Lifecycle Services (LCS). Jeśli masz licencję na Microsoft Power Platform, otrzymasz nowe środowisko Dataverse, jeśli Twoja dzierżawa nie ma takiego nowego środowiska.
++ W przypadku obecnych wystąpień aplikacji Finanse i Działania konfiguracja podwójnego zapisywania rozpoczyna się w środowisku Finanse i Działania.
 
-Przed rozpoczęciem podwójnego zapisywania w jednostce można uruchomić synchronizację początkową umożliwiającą obsługę istniejących danych po obu stronach: aplikacji Finance and Operations i aplikacji do zakontraktowania klientów. Synchronizację początkową można pominąć, jeśli nie ma potrzeby synchronizowania danych między tymi środowiskami.
+Przed rozpoczęciem podwójnego zapisywania w jednostce można uruchomić synchronizację początkową umożliwiającą obsługę istniejących danych po obu stronach: aplikacji Finanse i Działania i aplikacji do zakontraktowania klientów. Synchronizację początkową można pominąć, jeśli nie ma potrzeby synchronizowania danych między tymi środowiskami.
 
 Synchronizacja początkowa umożliwia skopiowanie istniejących danych z jednej aplikacji na inną dwukierunkową. Istnieje kilka różnych scenariuszy konfiguracji, w zależności od tego, które środowiska są już dostępne, oraz jakiego typu dane znajdują się w nich.
 
 Obsługiwane są następujące scenariusze konfiguracji:
 
-+ [Nowe wystąpienie aplikacji Finance and Operations i wystąpienie aplikacji do zakontraktowania odbiorcy](#new-new)
-+ [Nowe wystąpienie aplikacji Finance and Operations i wystąpienie istniejącej aplikacji do zakontraktowania odbiorcy](#new-existing)
-+ [Nowe wystąpienie aplikacji Finance and Operations, które ma dane i wystąpienie aplikacji do zakontraktowania odbiorcy](#new-data-new)
-+ [Nowe wystąpienie aplikacji Finance and Operations, które ma dane i wystąpienie aplikacji do zakontraktowania odbiorcy](#new-data-existing)
-+ [Istniejące wystąpienie aplikacji Finance and Operations i wystąpienie nowej aplikacji do zakontraktowania odbiorcy](#existing-new)
-+ [Istniejące wystąpienie aplikacji Finance and Operations i wystąpienie istniejącej aplikacji do zakontraktowania odbiorcy](#existing-existing)
++ [Nowe wystąpienie aplikacji Finanse i Działania i wystąpienie aplikacji do zakontraktowania odbiorcy](#new-new)
++ [Nowe wystąpienie aplikacji Finanse i Działania i obecne wystąpienie aplikacji do zakontraktowania odbiorcy](#new-existing)
++ [Nowe wystąpienie aplikacji Finanse i Działania, które ma dane i wystąpienie aplikacji do zakontraktowania odbiorcy](#new-data-new)
++ [Nowe wystąpienie aplikacji Finanse i Działania, które ma dane i obecne wystąpienie aplikacji do zakontraktowania odbiorcy](#new-data-existing)
++ [Obecne wystąpienie aplikacji Finanse i Działania i nowe wystąpienie aplikacji do zakontraktowania odbiorcy](#existing-new)
++ [Obecne wystąpienie aplikacji Finanse i Działania i obecne wystąpienie aplikacji do zakontraktowania odbiorcy](#existing-existing)
 
-## <a name="a-new-finance-and-operations-app-instance-and-a-new-customer-engagement-app-instance"></a><a id="new-new"></a>Nowe wystąpienie aplikacji Finance and Operations i wystąpienie aplikacji do zakontraktowania odbiorcy
+## <a name="a-new-finance-and-operations-app-instance-and-a-new-customer-engagement-app-instance"></a><a id="new-new"></a>Nowe wystąpienie aplikacji Finanse i Działania i wystąpienie aplikacji do zakontraktowania odbiorcy
 
-Aby skonfigurować połączenie podwójnego zapisywania między nowym wystąpieniem aplikacji Finance and Operations, która nie ma danych i nowym wystąpieniem aplikacji do zakontraktowania odbiorcy, należy wykonać kroki w [konfiguracji podwójnego zapisywania z usług Lifecycle Services](lcs-setup.md). Po zakończeniu konfigurowania połączenia następuje automatyczne wykonywanie następujących akcji:
+Aby skonfigurować połączenie podwójnego zapisywania między nowym wystąpieniem aplikacji Finanse i Działania, która nie ma danych i nowym wystąpieniem aplikacji do zakontraktowania odbiorcy, należy wykonać kroki w [konfiguracji podwójnego zapisywania z usług Lifecycle Services](lcs-setup.md). Po zakończeniu konfigurowania połączenia następuje automatyczne wykonywanie następujących akcji:
 
-- Zainicjowano obsługę administracyjną Finance and Operations nowego, pustego środowiska.
+- Nowe, puste środowisko Finanse i Działania jest konfigurowane.
 - Zainicjowano obsługę administracyjną nowego, pustego wystąpienia aplikacji do zakontraktowania odbiorcy, w której zainstalowano rozwiązanie podstawowe programu CRM.
 - Dla danych firmy DAT jest ustanawiane połączenie podwójnego odpisu.
 - W mapowaniach tabeli włączono obsługę synchronizacji na żywo.
 
 Oba środowiska są następnie gotowe do synchronizacji danych na żywo.
 
-## <a name="a-new-finance-and-operations-app-instance-and-an-existing-customer-engagement-app-instance"></a><a id="new-existing"></a>Nowe wystąpienie aplikacji Finance and Operations i wystąpienie istniejącej aplikacji do zakontraktowania odbiorcy
+## <a name="a-new-finance-and-operations-app-instance-and-an-existing-customer-engagement-app-instance"></a><a id="new-existing"></a>Nowe wystąpienie aplikacji Finanse i Działania i obecne wystąpienie aplikacji do zakontraktowania odbiorcy
 
-Aby skonfigurować połączenie podwójnego zapisywania między nowym wystąpieniem aplikacji Finance and Operations, która nie ma danych i istniejącym wystąpieniem aplikacji do zakontraktowania odbiorcy, należy wykonać kroki w [konfiguracji podwójnego zapisywania z usług Lifecycle Services](lcs-setup.md). Po zakończeniu konfigurowania połączenia następuje automatyczne wykonywanie następujących akcji:
+Aby skonfigurować połączenie podwójnego zapisywania między nowym wystąpieniem aplikacji Finanse i Działania, która nie ma danych i obecnym wystąpieniem aplikacji do zakontraktowania odbiorcy, należy wykonać kroki w [konfiguracji podwójnego zapisywania z usług Lifecycle Services](lcs-setup.md). Po zakończeniu konfigurowania połączenia następuje automatyczne wykonywanie następujących akcji:
 
-- Zainicjowano obsługę administracyjną Finance and Operations nowego, pustego środowiska.
+- Nowe, puste środowisko Finanse i Działania jest konfigurowane.
 - Dla danych firmy DAT jest ustanawiane połączenie podwójnego odpisu.
 - W mapowaniach tabeli włączono obsługę synchronizacji na żywo.
 
 Oba środowiska są następnie gotowe do synchronizacji danych na żywo.
 
-Aby zsynchronizować istniejące dane Dataverse z aplikacją Finance and Operations, wykonaj następujące kroki.
+Aby zsynchronizować istniejące dane Dataverse z aplikacją Finanse i Działania, wykonaj następujące kroki.
 
-1. Utwórz nową firmę w aplikacji Finance and Operations.
+1. Utwórz nową firmę w aplikacji Finanse i Działania.
 2. Dodaj firmę do konfiguracji połączenia z podwójnym zapisem.
 3. [Uruchom](bootstrap-company-data.md) dane Dataverse przy użyciu trzech liter kodu firmy Międzynarodowej Organizacji Normalizacyjnej (ISO).
 4. Uruchom funkcję **synchronizacji początkowej** dla tabel, dla których chcesz synchronizować dane.
 
 Aby uzyskać łącza do przykładowych i alternatywnych rozwiązań, zajrzyj do sekcji [Przykład](#example) w dalszej części tego tematu.
 
-## <a name="a-new-finance-and-operations-app-instance-that-has-data-and-a-new-customer-engagement-app-instance"></a><a id="new-data-new"></a>Nowe wystąpienie aplikacji Finance and Operations, które ma dane i wystąpienie aplikacji do zakontraktowania odbiorcy
+## <a name="a-new-finance-and-operations-app-instance-that-has-data-and-a-new-customer-engagement-app-instance"></a><a id="new-data-new"></a>Nowe wystąpienie aplikacji Finanse i Działania, które ma dane i wystąpienie aplikacji do zakontraktowania odbiorcy
 
-Aby skonfigurować połączenie podwójnego zapisywania między nowym wystąpieniem aplikacji Finance and Operations z danymi pokazowymi a nowym wystąpieniem aplikacji do zakontraktowania odbiorcy, należy wykonać kroki w [nowym wystąpieniu aplikacji Finance and Operations oraz w sekcji wystąpienia aplikacji do zakontraktowania odbiorcy](#new-new), która znajduje się we wcześniejszej części tego tematu. Po zakończeniu konfigurowania połączenia, jeśli chcesz synchronizować dane z aplikacją do zakontraktowania odbiorcy, wykonaj następujące kroki.
+Aby skonfigurować połączenie podwójnego zapisywania między nowym wystąpieniem aplikacji Finanse i Działania z danymi pokazowymi a nowym wystąpieniem aplikacji do zakontraktowania odbiorcy, należy wykonać kroki w [nowym wystąpieniu aplikacji Finanse i Działania oraz w sekcji wystąpienia aplikacji do zakontraktowania odbiorcy](#new-new), która znajduje się we wcześniejszej części tego tematu. Po zakończeniu konfigurowania połączenia, jeśli chcesz synchronizować dane z aplikacją do zakontraktowania odbiorcy, wykonaj następujące kroki.
 
-1. Otwórz aplikację Finance and Operations ze strony usługi LCS, zaloguj się, a następnie przejdź do **Zarządzanie danymi \> Podwójny zapis**.
+1. Otwórz aplikację Finanse i Działania ze strony usługi LCS, zaloguj się, a następnie przejdź do **Zarządzanie danymi \> Podwójny zapis**.
 2. Uruchom funkcję **synchronizacji początkowej** dla tabel, dla których chcesz synchronizować dane.
 
 Aby uzyskać łącza do przykładowych i alternatywnych rozwiązań, zajrzyj do sekcji [Przykład](#example).
 
-## <a name="a-new-finance-and-operations-app-instance-that-has-data-and-an-existing-customer-engagement-app-instance"></a><a id="new-data-existing"></a>Nowe wystąpienie aplikacji Finance and Operations, które ma dane i wystąpienie aplikacji do zakontraktowania odbiorcy
+## <a name="a-new-finance-and-operations-app-instance-that-has-data-and-an-existing-customer-engagement-app-instance"></a><a id="new-data-existing"></a>Nowe wystąpienie aplikacji Finanse i Działania, które ma dane i obecne wystąpienie aplikacji do zakontraktowania odbiorcy
 
-Aby skonfigurować połączenie podwójnego zapisywania między nowym wystąpieniem aplikacji Finance and Operations z danymi pokazowymi a istniejącym wystąpieniem aplikacji do zakontraktowania odbiorcy, należy wykonać kroki w [nowym wystąpieniu aplikacji Finance and Operations oraz w sekcji istniejącego wystąpienia aplikacji do zakontraktowania odbiorcy](#new-existing), która znajduje się we wcześniejszej części tego tematu. Po zakończeniu konfigurowania połączenia, jeśli chcesz synchronizować dane z aplikacją do zakontraktowania odbiorcy, wykonaj następujące kroki.
+Aby skonfigurować połączenie podwójnego zapisywania między nowym wystąpieniem aplikacji Finanse i Działania z danymi pokazowymi a obecnym wystąpieniem aplikacji do zakontraktowania odbiorcy, należy wykonać kroki w [nowym wystąpieniu aplikacji Finanse i Działania oraz w sekcji wystąpienia obecnej aplikacji do zakontraktowania odbiorcy](#new-existing), która znajduje się we wcześniejszej części tego tematu. Po zakończeniu konfigurowania połączenia, jeśli chcesz synchronizować dane z aplikacją do zakontraktowania odbiorcy, wykonaj następujące kroki.
 
-1. Otwórz aplikację Finance and Operations ze strony usługi LCS, zaloguj się, a następnie przejdź do **Zarządzanie danymi \> Podwójny zapis**.
+1. Otwórz aplikację Finanse i Działania ze strony usługi LCS, zaloguj się, a następnie przejdź do **Zarządzanie danymi \> Podwójny zapis**.
 2. Uruchom funkcję **synchronizacji początkowej** dla tabel, dla których chcesz synchronizować dane.
 
-Aby zsynchronizować istniejące dane Dataverse z aplikacją Finance and Operations, wykonaj następujące kroki.
+Aby zsynchronizować istniejące dane Dataverse z aplikacją Finanse i Działania, wykonaj następujące kroki.
 
-1. Utwórz nową firmę w aplikacji Finance and Operations.
+1. Utwórz nową firmę w aplikacji Finanse i Działania.
 2. Dodaj firmę do konfiguracji połączenia z podwójnym zapisem.
 3. [Uruchom](bootstrap-company-data.md) dane Dataverse przy użyciu trzech liter kodu firmy ISO.
 4. Uruchom funkcję **synchronizacji początkowej** dla tabel, dla których chcesz synchronizować dane.
 
 Aby uzyskać łącza do przykładowych i alternatywnych rozwiązań, zajrzyj do sekcji [Przykład](#example).
 
-## <a name="an-existing-finance-and-operations-app-instance-and-a-new-customer-engagement-app-instance"></a><a id="existing-new"></a>Istniejące wystąpienie aplikacji Finance and Operations i wystąpienie nowej aplikacji do zakontraktowania odbiorcy
+## <a name="an-existing-finance-and-operations-app-instance-and-a-new-customer-engagement-app-instance"></a><a id="existing-new"></a>Obecne wystąpienie aplikacji Finanse i Działania i nowe wystąpienie aplikacji do zakontraktowania odbiorcy
 
-Konfiguracja połączenia z podwójnym zapisywaniem między istniejącym wystąpieniem aplikacji Finance and Operations a nowym wystąpieniem aplikacji do zakontraktowania odbiorcy występuje w środowisku Finance and Operation.
+Konfiguracja połączenia z podwójnym zapisywaniem między istniejącym wystąpieniem aplikacji Finanse i Działania a nowym wystąpieniem aplikacji do zakontraktowania odbiorcy występuje w środowisku Finance and Operation.
 
-1. [Skonfiguruj połączenie z aplikacji Finance and Operations](enable-dual-write.md).
+1. [Skonfiguruj połączenie z aplikacją Finanse i Działania](enable-dual-write.md).
 2. Uruchom funkcję **synchronizacji początkowej** dla tabel, dla których chcesz synchronizować dane.
 
 Aby uzyskać łącza do przykładowych i alternatywnych rozwiązań, zajrzyj do sekcji [Przykład](#example).
 
-## <a name="an-existing-finance-and-operations-app-instance-and-an-existing-customer-engagement-app-instance"></a><a id="existing-existing"></a>Istniejące wystąpienie aplikacji Finance and Operations i wystąpienie istniejącej aplikacji do zakontraktowania odbiorcy
+## <a name="an-existing-finance-and-operations-app-instance-and-an-existing-customer-engagement-app-instance"></a><a id="existing-existing"></a>Obecne wystąpienie aplikacji Finanse i Działania i obecne wystąpienie aplikacji do zakontraktowania odbiorcy
 
-Konfiguracja połączenia z podwójnym zapisywaniem między istniejącym wystąpieniem aplikacji Finance and Operations a istniejącym wystąpieniem aplikacji do zakontraktowania odbiorcy występuje w środowisku Finance and Operation.
+Konfiguracja połączenia z podwójnym zapisywaniem między istniejącym wystąpieniem aplikacji Finanse i Działania a obecnym wystąpieniem aplikacji do zakontraktowania odbiorcy występuje w środowisku Finance and Operation.
 
-1. [Skonfiguruj połączenie z aplikacji Finance and Operations](enable-dual-write.md).
-2. Aby zsynchronizować istniejące dane Dataverse z aplikacją Finance and Operations, należy [załadować](bootstrap-company-data.md) dane Dataverse przy użyciu trój-literowego kodu ISO firmy.
+1. [Skonfiguruj połączenie z aplikacją Finanse i Działania](enable-dual-write.md).
+2. Aby zsynchronizować istniejące dane Dataverse z aplikacją Finanse i Działania, należy [załadować](bootstrap-company-data.md) dane Dataverse przy użyciu trój-literowego kodu ISO firmy.
 3. Uruchom funkcję **synchronizacji początkowej** dla tabel, dla których chcesz synchronizować dane.
 
 Aby uzyskać łącza do przykładowych i alternatywnych rozwiązań, zajrzyj do sekcji [Przykład](#example).

@@ -2,28 +2,25 @@
 title: Supply Chain Management — strona główna
 description: Ta strona zawiera listę tematów pomocy oraz innych zasobów dotyczących funkcji Supply Chain Management.
 author: kamaybac
-manager: tfehr
-ms.date: 06/30/2020
+ms.date: 09/15/2021
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
 ms.search.region: global
 ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9255640240ae07c3857c0b6f55a7ee27ba3bf85b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4ea45b238200d4d9d43d563e160e8574271a8ce7
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459743"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7487871"
 ---
 # <a name="supply-chain-management-home-page"></a>Supply Chain Management — strona główna
 
@@ -63,9 +60,8 @@ Ten krótki film wideo podsumowuje nowe funkcje zarządzania łańcuchami dostaw
 
 - [Synchronizowanie zlecenia między rozwiązaniami Field Service i Finance and Operations](https://youtu.be/hAB4TDVMjxU)
 
-Te krótkie filmy wideo podsumowuje nowe funkcje zarządzania łańcuchami dostaw dodane do Microsoft Dynamics 365 for Finance and Operations, Enterprise edition w wersji 7.3 (grudzień 2017).
+Te krótkie filmy wideo podsumowuje nowe funkcje zarządzania łańcuchami dostaw dodane do Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (grudzień 2017).
 
-- [Integracja scenariusza Od potencjalnego klienta do środków pieniężnych](https://youtu.be/AVV9x5x-XCg) 
 - [Doradca optymalizacji](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Używanie szablonu magazynu w celu kopiowania konfiguracji](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
@@ -84,12 +80,11 @@ Poniższe nagrania konferencji technicznych omawiają funkcje zarządzania łań
 - **Planowanie główne:**
   - [Rozszerzanie funkcji prognozowania popytu](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
   - [Planowanie główne — porady i wskazówki dotyczące rozwiązywania problemów z wydajnością](https://youtu.be/7v8BPmEs9Dg)
-  - [Pomocy! Zadania MRP działają zbyt wolno!](https://youtu.be/RLXybx20B5o)
+  - [Dostrajanie wydajności MRP](https://youtu.be/RLXybx20B5o)
 - **Zarządzanie informacjami o produktach:**
-  - [Konfigurator produktu w oprogramowaniu Microsoft Dynamics AX](https://youtu.be/zotrj3SbCl4)
+  - [Konfigurator produktu w systemie Microsoft Dynamics AX](https://youtu.be/zotrj3SbCl4)
 - **Zarządzanie magazynem:**
   - [Wykorzystywanie pełni możliwości systemu zarządzania magazynem](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
-  - [Etykiety modułu Zarządzanie magazynem w nowej wersji oprogramowania Microsoft Dynamics AX 2012 R3](https://youtu.be/5w1MngVchBA)
   - [Dynamics AX 2012 R3: zaawansowane zarządzanie magazynem — codzienne procedury w zakresie produkcji procesowej](https://www.youtube.com/embed/QUxXUrN-7n4)
 - **Filmy wideo dotyczące kontroli produkcji:**
   - [Podwykonawstwo operacji i działania w zakresie produkcji](https://youtu.be/y1jrd3A_k70)
@@ -98,13 +93,16 @@ Poniższe nagrania konferencji technicznych omawiają funkcje zarządzania łań
 
 ## <a name="blogs"></a>Blogi
 
-Wiele tematów dotyczących zarządzania wytwarzaniem i łańcuchem dostaw można znaleźć w [blogu zespołu ds. badań i rozwoju modułu Wytwarzanie systemu Dynamics AX](https://blogs.msdn.microsoft.com/axmfg/) oraz [blogu zespołu ds. badań i rozwoju modułu Supply Chain Management systemu Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm/). Większość z nich została napisana dla poprzedniej wersji, ale w obecnej wersji są używane te same pojęcia i podobne procedury.
+Wiele tematów dotyczących zarządzania wytwarzaniem i łańcuchem dostaw można znaleźć w [blogu zespołu ds. badań i rozwoju modułu Wytwarzanie systemu Dynamics AX](/archive/blogs/axmfg/) oraz [blogu zespołu ds. badań i rozwoju modułu Supply Chain Management systemu Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm/). Większość z nich została napisana dla poprzedniej wersji, ale w obecnej wersji są używane te same pojęcia i podobne procedury.
 
 ## <a name="white-papers"></a>Oficjalne dokumenty
 
-- [Lean Manufacturing: funkcja Możliwe do zrealizowania i planowanie zadań Kanban](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/)
+- [Lean Manufacturing: funkcja Możliwe do zrealizowania i planowanie zadań Kanban](/dynamics/s-e/)
 - [Obliczenia BOM za pomocą arkusza wyceny](https://www.microsoft.com/download/details.aspx?id=101937/)
 
 ## <a name="elearning-courses"></a>Kursy eLearning
 
-W przypadku kursów i szkoleń w trybie online, sprawdź dodatek [Dynamics 365 Supply Chain Management w Microsoft Learn](https://docs.microsoft.com/learn/browse/?products=dynamics-scm&resource_type=learning%20path).
+W przypadku kursów i szkoleń w trybie online, sprawdź dodatek [Dynamics 365 Supply Chain Management w Microsoft Learn](/learn/browse/?products=dynamics-scm&resource_type=learning+path).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

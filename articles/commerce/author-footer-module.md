@@ -2,11 +2,9 @@
 title: Moduł stopki
 description: W tym temacie opisano moduły stopki i sposób ich tworzenia w Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 038fee32cbf1ed6b4967f440faaf3c0d4fa583f6
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0fdf183afe0df71e43a05b65fba06126f75f85b981b78afc4a543fb9310c6906
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4979954"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719993"
 ---
 # <a name="footer-module"></a>Moduł stopki  
 
@@ -29,13 +27,11 @@ ms.locfileid: "4979954"
 
 W tym temacie opisano moduły stopki i sposób ich tworzenia w Microsoft Dynamics 365 Commerce.
 
-## <a name="overview"></a>Omówienie
-
 Moduł stopki jest specjalnym kontenerem używanym do obsługi modułów wyświetlanych w stopce strony. Na przykład może zawierać łącza do różnych stron w witrynie, takie jak **Skontaktuj się z nami** czy **Zasady sklepu**.
 
 Poniższy obraz pokazuje przykład modułu stopki na stronie witryny.
 
-![Przykład modułu stopki](./media/ecommerce-footer.PNG)
+![Przykład modułu stopki.](./media/ecommerce-footer.PNG)
 
 ## <a name="footer-module-properties"></a>Właściwości modułu stopki 
 
@@ -86,3 +82,6 @@ Dodanie fragmentu do szablonów stron pomaga zagwarantować, że stopka będzie 
 [Moduł nagłówka](author-header-module.md)
 
 [Moduł stopki](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

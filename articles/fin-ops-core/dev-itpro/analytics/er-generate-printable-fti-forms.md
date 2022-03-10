@@ -2,7 +2,6 @@
 title: Generowanie drukowalnych formularzy FTI
 description: W tym temacie opisano, jak za pomocą struktury raportowania elektronicznego (ER) generować drukowalne formularze faktur niezależnych (FTI) jako dokumenty pakietu Microsoft Office.
 author: NickSelin
-manager: AnnBe
 ms.date: 07/24/2018
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: da671d7b9302f99fc71860cf41846290d74d11e1
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: be5e3ef0f6ecb3d8f911b5be5f8bc9102d201fd299425e847a2df233d9b4edf4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5570693"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758223"
 ---
 # <a name="generate-printable-fti-forms"></a>Generowanie drukowalnych formularzy FTI
 
@@ -78,7 +77,7 @@ Aby generować formularze faktur niezależnych przy użyciu struktury raportowan
 3. Wybierz poziom dokumentu, aby określić zakres faktur do przetwarzania.
 4. Wybierz format ER dla podanego poziomu dokumentu.
 
-![Konfiguracja zarządzania drukowaniem](media/FTIbyGER-PMSetting.png)
+![Konfiguracja zarządzania drukowaniem.](media/FTIbyGER-PMSetting.png)
 
 > [!NOTE]
 > Tylko formaty ER używające deskryptora głównego **FreeTextInvoice** z modelu danych **CustomersInvoicing** są wyświetlane w polu wyszukiwania **Format raportu** dla wybranego formatu.
@@ -88,9 +87,9 @@ Formularze faktur niezależnych są generowane w strukturze raportowania elektro
 
 Aby wygenerować formularze faktur niezależnych, można wybrać faktury według zakresu lub je zaznaczyć. 
 
-![Wybór faktury](media/FTIbyGER-InvoiceSelection.png)
+![Wybór faktury.](media/FTIbyGER-InvoiceSelection.png)
 
-![Podgląd faktury](media/FTIbyGER-InvoiceExcelPreview.png)
+![Podgląd faktury.](media/FTIbyGER-InvoiceExcelPreview.png)
 
 Jeżeli formaty raportowania elektronicznego są używane do drukowania formularzy faktur niezależnych w ten sposób, są używane domyślne plikowe miejsca docelowe modułu Raportowanie elektroniczne. Nie można zmienić tego miejsca docelowego. Aby uzyskać więcej informacji o konfigurowaniu miejsc docelowych raportowania elektronicznego dla formatów raportowania elektronicznego, zobacz [Miejsca docelowe raportowania elektronicznego (ER)](electronic-reporting-destinations.md).
 
@@ -102,9 +101,9 @@ Można również generować formularze faktur niezależnych podczas księgowania
 > - **Nazwa:** ERFormatDestinationRuntimeMaintain
 > - **Etykieta:** Zarządzanie lokalizacją docelową formatu raportowania elektronicznego w trakcie wykonywania
 
-![Aplikacja docelowa raportowania elektronicznego](media/FTIbyGER-ERFileDestinationSetting.png)
+![Aplikacja docelowa raportowania elektronicznego.](media/FTIbyGER-ERFileDestinationSetting.png)
 
-![Miejsca docelowe formatu raportowania elektronicznego](media/FTIbyGER-ERFileDestinationUsage.png)
+![Miejsca docelowe formatu raportowania elektronicznego.](media/FTIbyGER-ERFileDestinationUsage.png)
 
 Obecnie struktura ER obsługuje następujące lokalizacje docelowe dla generowanych dokumentów:
 
@@ -129,7 +128,7 @@ Można pobrać przykładowe konfiguracje raportowania elektronicznego i używać
 ### <a name="features-that-are-implemented-in-the-sample-er-format"></a>Funkcje zaimplementowane w przykładowym formacie ER
 W przykładowej konfiguracji formatu raportowania elektronicznego plik programu Excel służy jako szablon do generowania formularzy faktur niezależnych.
 
-![Projektant formatów](media/FTIbyGER-ERFormat.png)
+![Projektant formatów.](media/FTIbyGER-ERFormat.png)
 
 Obecnie ten przykładowy format raportowania elektronicznego obsługuje następujące funkcje generowania formularzy faktur niezależnych:
 
@@ -180,7 +179,7 @@ Oprócz generowania formularza faktury mogą być również generowane formularz
 - Dla firmy używającej kontekstu kraju/regionu Finlandia, która ma co najmniej jedno konto bankowe z włączonymi ustawieniami **Konto GIRO** i **Kod kreskowy banku**. 
 - Dla faktury oznaczonej jako wymagana dla załącznika powiązanych płatności z atrybutem **Fiński**.
 
-![Przekaz Giro](media/FTIbyGER-GiroSlip.PNG)
+![Przekaz Giro.](media/FTIbyGER-GiroSlip.PNG)
 
 > [!NOTE]
 > W przykładowym formacie raportowania elektronicznego skonfigurowano opcjonalne generowanie formularzy przekazu GIRO w osobnym arkuszu.
@@ -195,7 +194,7 @@ Użyj poniższych elementów przykładowego formatu raportowania elektronicznego
 - Dostęp do tekstu tematu wiadomości e-mail można uzyskać za pomocą następującego wyrażenia modułu ER: **Emailing.TxtToUse.Subject**.
 - Dostęp do tekstu treści wiadomości e-mail można uzyskać za pomocą następującego wyrażenia modułu ER: **Emailing.TxtToUse.Body**.
 
-![Ustawienia aplikacji docelowej](media/FTIbyGER-ERFileDestinationSettingEmail.png)
+![Ustawienia aplikacji docelowej.](media/FTIbyGER-ERFileDestinationSettingEmail.png)
 
 Domyślne teksty tematu i treści wiadomości e-mail są zdefiniowane w przykładowym formacie raportowania elektronicznego. Język zależy od etykiet formatu. Ten domyślny tekst będzie używany w wiadomościach e-mail, jeśli nie dodano niestandardowego szablonu wiadomości e-mail organizacji ze wstępnie zdefiniowanym identyfikatorem **ERFTITMP**.
 
@@ -204,9 +203,9 @@ Domyślne teksty tematu i treści wiadomości e-mail są zdefiniowane w przykła
 
 Jeśli szablon wiadomości e-mail organizacji ze wstępnie zdefiniowanym identyfikatorem **ERFTITMP** został dodany do firmy, której fakturę przetwarzasz, do wygenerowania wiadomości e-mail zostanie użyty szablon tematu i treści wiadomości e-mail. 
 
-![Szablony wiadomości e-mail organizacji](media/FTIbyGER-EmailTemplate.png)
+![Szablony wiadomości e-mail organizacji.](media/FTIbyGER-EmailTemplate.png)
 
-![Przekaż szablon wiadomości e-mail](media/FTIbyGER-EmailTemplateBody.png)
+![Przekaż szablon wiadomości e-mail.](media/FTIbyGER-EmailTemplateBody.png)
 
 W wyrażeniu ER **Emailing.TxtToUse.Subject** w przykładowym formacie raportowania elektronicznego skonfigurowano zastępowanie wszystkich wystąpień symbolu zastępczego %1 identyfikatorem przetwarzanej faktury.
 
@@ -219,10 +218,10 @@ Dla wyrażenia **Emailing.TxtToUse.Body** w przykładowym formacie skonfigurowan
 - „%5” jest zastępowany stanowiskiem osoby kontaktowej w firmie.
 - „%6” jest zastępowany adresem e-mail osoby kontaktowej w firmie.
 
-![E-mail](media/FTIbyGER-Email.PNG)
+![E-mail.](media/FTIbyGER-Email.PNG)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
-[Omówienie raportowania elektronicznego (RE)](general-electronic-reporting.md)
+[Omówienie raportowania elektronicznego (ER)](general-electronic-reporting.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Stosowanie filtrów do planu
 description: W tym temacie wyjaśniono, jak używać filtrów w planie, gdy używana jest funkcja optymalizacji planowania.
 author: ChristianRytt
-manager: tfehr
 ms.date: 01/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: b5262cc5dc72ffcc50770cf5a2e2dda216d7ff8e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 3612dd45a3f4b8c3597c81962a66c21ed14fb206
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5212109"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7729034"
 ---
 # <a name="apply-filters-to-a-plan"></a>Stosowanie filtrów do planu
 
@@ -45,7 +43,7 @@ Filtr planu jest skonfigurowany z pozycjami A, B i C. Następnie uruchamiane są
 - **Filtr środowiska uruchomieniowego zawierający wszystkie elementy (pusty filtr):** pozycje A, B i C są uwzględnione w procesie planowania i poprzednie dane wyjściowe planowania dla pozycji a i B są zastępowane.
 
 > [!NOTE]
-> Należy unikać ustawiania filtru planu w planie wybranym jako **bieżący dynamiczny plan główny** na stronie **parametrów planowania głównego**. W przeciwnym razie funkcje dynamicznego planu głównego będą ograniczone do elementów filtrowanych. Jeśli na przykład zapotrzebowanie netto jest aktualizowane dla towaru, który nie jest częścią filtru planu, wynik nie zostanie wygenerowany.
+> Jeśli ustawisz filtr planu dla planu wybranego jako **Bieżący dynamiczny plan główny** na stronie **Parametry planowania głównego**, funkcja dynamicznego planu głównego będzie ograniczona do filtrowanych elementów. Jeśli na przykład zapotrzebowanie netto jest aktualizowane dla towaru, który nie jest częścią filtru planu, wynik nie zostanie wygenerowany.
 
 ## <a name="related-resources"></a>Powiązane zasoby
 

@@ -2,16 +2,13 @@
 title: Konfigurowanie obrazów w aplikacji Modern POS (MPOS) i zarządzanie nimi
 description: W tym artykule objaśniono etapy konfigurowania obrazów i zarządzania nimi dla różnych jednostek wyświetlanych w module Modern POS (MPOS).
 author: athinesh99
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailChannelProfile, RetailMediaGallery, RetailImages,
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 52851
 ms.assetid: 5c21385e-64e0-4091-98fa-6a662eb33010
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: aff3bee942f3443eb604311d1d804b66421e332d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 71b90b1bc93c756731960871a0cb7b1e5f416a825399cd135dfbcc7656d6bf65
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415019"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6755038"
 ---
 # <a name="set-up-and-manage-images-for-modern-pos-mpos"></a>Konfigurowanie obrazów w aplikacji Modern POS (MPOS) i zarządzanie nimi
 
@@ -49,11 +46,11 @@ W poniższych procedurach obrazy są konfigurowane dla jednostki katalogu jako p
 1. Otwórz portal Commerce HQ.
 2. Kliknij kolejno opcje **Handel detaliczny i inny** &gt; **Ustawienia kanału** &gt; **Profile kanału**.
 
-    [![Nawigacja](./media/channel-profile1.png)](./media/channel-profile1.png)
+    [![Nawigacja.](./media/channel-profile1.png)](./media/channel-profile1.png)
 
 3. W profilu kanału używanym przez sklep dla MPOS zaktualizuj pole **Podstawowy adres URL obiektu multimedialnego**, wprowadzając podstawowy adres URL serwera multimediów lub CDN. Podstawy adres URL jest pierwszą częścią adresu URL, który jest współużytkowany przez wszystkie foldery obrazów różnych jednostek.
 
-    [![Strona profili kanałów](./media/channel-profile2.png)](./media/channel-profile2.png)
+    [![Strona profili kanałów.](./media/channel-profile2.png)](./media/channel-profile2.png)
 
 ### <a name="define-the-media-template-for-an-entity"></a>Definiowanie szablonu multimediów dla jednostki
 
@@ -71,7 +68,7 @@ W poniższych procedurach obrazy są konfigurowane dla jednostki katalogu jako p
 8. Uruchom zadania synchronizacji, aby przesunąć nowy szablon do bazy danych kanału, tak aby MPOS mógł używać tego szablonu do uzyskania dostępu do obrazów.
 9. Aby zaktualizować szablon multimediów obrazów w katalogu po stronie kanału, uruchom zadanie **Catalog Job 1150** z menu **Dane IT sieci sprzedaży i innej** &gt; **Harmonogram dystrybucji**.
 
-    [![Okno dialogowe definiowania szablonu nośnika](./media/catalog1.png)](./media/catalog1.png)
+    [![Okno dialogowe definiowania szablonu nośnika.](./media/catalog1.png)](./media/catalog1.png)
 
 ## <a name="previewing-an-image-from-the-entity-level"></a>Wyświetlenie podglądu obrazu na poziomie jednostki
 
@@ -80,7 +77,7 @@ W poniższych procedurach obrazy są konfigurowane dla jednostki katalogu jako p
 3. Można użyć przycisków **Dodaj** i **Usuń**, aby ręcznie zmienić ścieżkę na podstawie niejawnego szablonu, używaną do określonego obrazu. Aby uzyskać więcej informacji zobacz sekcję [Zastępowaniu szablonu multimediów dla pozycji jednostki](#overwriting-the-media-template-for-entity-items) w dalszej części tego artykułu.
 4. Po przejrzeniu obrazu i wprowadzeniu zmian, uruchom instancję MPOS dla odpowiedniego sklepu i zobacz, czy zostaną wyświetlone obrazy z katalogu.
 
-    [![Okno dialogowe obrazów](./media/catalog4.png)](./media/catalog4.png)
+    [![Okno dialogowe obrazów.](./media/catalog4.png)](./media/catalog4.png)
 
 > [!NOTE]
 > Możesz użyć tej samej procedury dla wszystkich pięciu obsługiwanych jednostek: Pracownik, Odbiorca, Katalog, Kategoria i Produkty. „Produkty katalogu” (produkty, które są ustawione na poziomie katalogu) i „Produkty kanału” (produkty, które są ustawione na poziomie kanału) używają szablonu multimediów ustawionego dla jednostki Produkty. W przypadku szablonu multimediów produktów można wybrać liczbę wyświetlanych obrazów dla każdego produktu. Można również ustawić domyślny obraz dla danego produktu. W ten sposób można zapobiec wyświetlaniu pustych obrazów w MPOS i kontrolować, które obrazy będą używane jako domyślne dla produktu. W poniższym przykładzie każdy produkt ma pięć obrazów, a pierwszy obraz jest ustawiony jako domyślny. Produkty z wariantami są traktowane w taki sam sposób jak produkty główne. Nazwa pliku dla pliku obrazu powinna opierać się na numerze produktu. Niektóre znaki są również usuwane, gdy generowana jest nazwa pliku. Dlatego warto sprawdzić nazwę pliku w sekcji **generowanie adresów URL obrazu dla programu Excel**. Zapoznaj się z sekcją [Zastępowanie za pomocą edycji w programie Excel](#overwrite-by-using-edit-in-excel) w dalszej części tego artykułu.
@@ -111,7 +108,7 @@ Jak wiesz z poprzedniej sekcji, szablon multimediów dla danej jednostki obsług
 
     Teraz można wyświetlić podgląd adresów URL obrazów wygenerowanych na podstawie ostatnio zapisanej wersji szablonu multimediów.
 
-    [![Skrócona karta generowania adresów URL obrazu dla programu Excel po naciśnięciu przycisku Generuj](./media/excel2.png)](./media/excel2.png)
+    [![Skrócona karta generowania adresów URL obrazu dla programu Excel po naciśnięciu przycisku Generuj.](./media/excel2.png)](./media/excel2.png)
 
     > [!NOTE]
     > Adresy URL, które są generowane dla programu Excel, używają ścieżki i konwencji szablonu multimediów, który jest zdefiniowany. Konwencje te obejmują konwencje nazewnictwa plików. Oczekuje się, że masz już zestaw obrazów fizycznych poza Commerce, a obrazy mogą być pobierane z adresów URL, które pochodzą ze zdefiniowanego wcześniej szablonu multimediów. Możesz zastąpić te adresy URL przy użyciu funkcji edycji programu Excel.
@@ -120,17 +117,17 @@ Jak wiesz z poprzedniej sekcji, szablon multimediów dla danej jednostki obsług
 6. Po otworzeniu arkusza programu Microsoft Excel kliknij przycisk **Włącz edytowanie**, gdy zobaczysz monit.
 7. Gdy zostanie wyświetlony monit, kliknij przycisk **Zaufaj temu dodatkowi** w prawym okienku i poczekaj na zakończenie instalacji dodatku.
 
-    [![Zaufaj temu dodatkowi](./media/excel4.jpg)](./media/excel4.jpg)
+    [![Zaufaj temu dodatkowi.](./media/excel4.jpg)](./media/excel4.jpg)
 
 8. Jeśli zostanie wyświetlony monit o logowanie, wprowadź poświadczenia użyte do zarejestrowania się do HQ.
 
-    [![Monit o zalogowanie się](./media/excel5.png)](./media/excel5.png)
+    [![Monit o zalogowanie się.](./media/excel5.png)](./media/excel5.png)
 
 9. Po zalogowaniu można wyświetlić listę adresów URL obrazu dla poszczególnych pozycji w katalogu.
 10. Można edytować, dodawać i usuwać adresy URL obrazu dla różnych pozycji jednostek.
 11. Można zastąpić adresy URL obrazów dla wszystkich jednostek poza produktami. Modyfikuj istniejący adres URL obrazu tak, aby używał nowego docelowego adresu URL obrazu, i zaktualizuj nazwę pliku, podając nową nazwę pliku dla pliku obrazu. Nazwa pliku musi być unikatowa w celu zagwarantowania, że rekord jest unikatowy.
 
-    [![Zastępowanie adresów URL obrazów w programie Excel](./media/excel6.jpg)](./media/excel6.jpg)
+    [![Zastępowanie adresów URL obrazów w programie Excel.](./media/excel6.jpg)](./media/excel6.jpg)
 
     > [!NOTE]
     > Podczas zastępowania adresów URL obrazów dla jednostek produktów za pomocą funkcji edycji programu Excel lub strony pozycji jednostki program MPOS zawsze pokazuje wszystkie adresy URL obrazów z szablonu multimediów wraz z zastąpionymi adresami URL obrazów.
@@ -156,11 +153,11 @@ Dla wszystkich jednostek za wyjątkiem produktów można zastąpić adres URL ob
 3. Jeśli chcesz, aby ten obraz był wyświetlany w MPOS dla katalogu, możesz go zapisać jako domyślny.
 4. Kliknij przycisk **OK** Adres URL obrazu jest aktualizowany dla tego obrazu z katalogu i zostanie wyświetlony podgląd.
 
-    [![Zaktualizowany adres URL w oknie dialogowym Nowy obraz](./media/preview3.png)](./media/preview3.png)
+    [![Zaktualizowany adres URL w oknie dialogowym Nowy obraz.](./media/preview3.png)](./media/preview3.png)
 
 5. Możesz także wyświetlić podgląd obrazu dla wszystkich zastąpionych adresów URL obrazu na stronie galerii **obrazów w katalogu**.
 
-    [![Strona Galeria obrazów katalogu](./media/preview-4.png)](./media/preview-4.png)
+    [![Strona Galeria obrazów katalogu.](./media/preview-4.png)](./media/preview-4.png)
 
 > [!NOTE]
 > Obecnie, Galeria nie pokazuje podglądów obrazu dla adresów URL obrazów z szablonu multimediów. W przypadku Katalogu, Pracownika, Odbiorcy i Kategorii, jeśli użytkownik jawnie ustala URL na tej stronie, zalecamy wskazanie obrazu domyślnego, ponieważ oprogramowanie klienckie usługi Commerce Scale Unit pokazuje tylko po jednym obrazie na Katalog, Odbiorcę, Pracownika i Kategorię. Jeśli użytkownik nie określi domyślnego obrazu, system określa domyślny obraz i wysyła go do aparatu wywołaniu usługi Commerce (MPOS lub handel elektroniczny).
@@ -175,7 +172,7 @@ Aby zastąpić adresy URL obrazu dla obrazów produktu z katalogu, trzeba użyć
 4. Kliknij **Dodaj** i zastąp adres URL obrazu przy użyciu nowego adresu URL.
 5. Kliknij przycisk **OK** Teraz widać podgląd nowego obrazu i można go ustawić jako domyślny.
 
-    [![Podgląd obrazu w oknie dialogowym Nowy obraz](./media/cat3.png)](./media/cat3.png)
+    [![Podgląd obrazu w oknie dialogowym Nowy obraz.](./media/cat3.png)](./media/cat3.png)
 
 > [!NOTE]
 > Po skojarzeniu obrazu kategorii, należy opublikować kanał i włączyć zadanie Channel job w celu zagwarantowania opublikowania zmian w bazie danych kanału.
@@ -196,7 +193,7 @@ Obrazy produktu, które muszą być używane w trybie Offline, można skonfiguro
 6. Mimo że MPOS jest w trybie Online, należy uruchomić zadanie katalogu w HQ, aby upewnić się, że dane zostały przesłane co najmniej jeden raz do bazy danych offline.
 7. Umieść MPOS w trybie Offline. Powinien być widoczny obraz przesłany dla określonego produktu w HQ.
 
-    [![Obraz produktu w trybie offline](./media/offline1.png)](./media/offline1.png)
+    [![Obraz produktu w trybie offline.](./media/offline1.png)](./media/offline1.png)
 
 ### <a name="set-up-catalog-category-employee-and-customer-images-to-appear-in-offline-mode-for-mpos"></a>Ustawianie obrazów katalogu, kategorii, pracownika i odbiorcy do wyświetlania w trybie Offline dla MPOS
 
@@ -208,4 +205,7 @@ Obrazy katalogu, pracownika, odbiorcy i kategorii, które muszą być używane w
 4. Uruchom zadanie katalogu. Ten obraz będzie teraz używany jako obraz w trybie Offline dla tego katalogu w MPOS.
 5. Należy wykonać podobną procedurę dla kategorii, pracownika i odbiorcy.
 
-    [![Obraz offline](./media/offline2.png)](./media/offline2.png)
+    [![Obraz offline.](./media/offline2.png)](./media/offline2.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

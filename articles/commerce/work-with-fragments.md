@@ -2,7 +2,7 @@
 title: Praca z fragmentami
 description: W tym temacie opisano, dlaczego, kiedy i jak stosować fragmenty w Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 10/16/2020
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1fa55ab83562983273768895db61032ec7199fa6
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 98cb1fba158ea99427d2068ca49b257cb5290de3
+ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793952"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090751"
 ---
 # <a name="work-with-fragments"></a>Praca z fragmentami 
 
@@ -45,7 +45,7 @@ Wszystkie miejsca, w których jest dodawany fragment, są odwołaniami do utworz
 
 Na poniższej ilustracji pokazano, jak fragmenty mogą być używane do scentralizowanego tworzenia konfiguracji modułu udostępnionego w witrynie e-Commerce.
 
-![Na ilustracji pokazano, jak fragmenty mogą być używane do scentralizowanego tworzenia konfiguracji modułu udostępnionego w witrynie e-Commerce](./media/fragment-figure1.png)
+![Na ilustracji pokazano, jak fragmenty mogą być używane do scentralizowanego tworzenia konfiguracji modułu udostępnionego w witrynie e-Commerce.](./media/fragment-figure1.png)
 
 ## <a name="create-a-fragment"></a>Tworzenie fragmentu
 
@@ -62,7 +62,7 @@ Aby przekonwertować poprzednio skonfigurowany moduł na fragment do ponownego u
 1. W oknie dialogowym **Zapisz jako fragment** wprowadź nazwę fragmentu.
 1. Wybierz przycisk **OK**, aby zapisać konfigurację modułu jako fragment, który można dodać do innych stron.
 <!-- The following image shows how to save a module configuration as a fragment.-->
-<!--![A screen capture of how to save a module configuration as a fragment](./media/save-as-fragment.png)-->
+<!--![A screen capture of how to save a module configuration as a fragment.](./media/save-as-fragment.png)-->
 
 ### <a name="create-a-new-fragment"></a>Utwórz nowy fragment
 
@@ -73,7 +73,7 @@ Aby utworzyć fragment w konstruktorze witryn Commerce, należy wykonać następ
 1. Wybierz typ modułu dla danego fragmentu.
 
 <!-- The following image shows where to create a new fragment.-->
-<!-- ![A screen capture of where to create a new fragment](./media/fragment-nav-menu.png)-->
+<!-- ![A screen capture of where to create a new fragment.](./media/fragment-nav-menu.png)-->
 > [!TIP]
 > Wybór typu ogólnego modułu kontenera zapewnia największą elastyczność, jeśli należy później zaktualizować i skonfigurować fragment.
 
@@ -88,14 +88,14 @@ Aby dodać fragment do strony w konstruktorze witryn Commerce, należy wykonać 
 1. W panelu konturu po lewej stronie lub bezpośrednio w wizualnym konstruktorze stron wybierz kontener lub boks, do którego można dodać moduły podrzędne.
 1. Wybierz wielokropek (**...**) obok nazwy kontenera lub gniazda.  Alternatywnie, jeśli jest używany wizualny konstruktor stron, należy wybrać symbol plus (**+**).  
 1. Wybierz opcję **Dodaj fragment**.
-    <!-- ![A screen capture of how to add an existing fragment to a slot or container](./media/add-fragment.png)-->
+    <!-- ![A screen capture of how to add an existing fragment to a slot or container.](./media/add-fragment.png)-->
  
     > [!NOTE]
     > Jeśli kontener lub gniazdo nie obsługuje nowych modułów podrzędnych, opcja **Dodaj fragment** jest niedostępna.
     
 1. W oknie dialogowym **Wybierz fragment** wyszukaj i wybierz fragment do dodania. Jeśli na liście nie ma dostępnych fragmentów, może być konieczne utworzenie fragmentu z typu modułu, który jest obsługiwany przez wybrany kontener lub gniazdo.
 1. Wybierz wybrany fragment do dodania go do kontenera lub gniazda na stronie.
-<!--    ![A screen capture of the fragment picker modal window](./media/fragment-picker.png)-->
+<!--    ![A screen capture of the fragment picker modal window.](./media/fragment-picker.png)-->
 
 > [!NOTE]
 > Moduły dozwolone w kontenerze lub gnieździe są definiowane przez szablon strony lub definicje modułów.
@@ -121,6 +121,20 @@ Aby edytować fragment w konstruktorze witryn Commerce, należy wykonać następ
 1. Edytuj właściwości i strukturę modułu fragmentu stosownie do potrzeb. Proces ten przypomina proces edycji modułów, który jest edytowany w widoku edytora stron.
 
 Fragment można również edytować, zaznaczając go na stronie, w szablonie lub w fragmencie nadrzędnym, a następnie wybierając opcję **Edytuj fragment** w okienku właściwości po prawej stronie.
+
+### <a name="rename-a-fragment"></a>Zmiana nazwy fragmentu
+
+Aby zmienić nazwę istniejącego fragmentu w kreatorze witryn, wykonaj poniższe kroki.
+
+1. W okienku nawigacji po lewej stronie wybierz pozycję **Fragmenty**.
+1. Wybierz nazwę fragmentu, którego nazwę chcesz zmienić.
+1. Wybierz pozycję **Edytuj**, aby rozpocząć edytowanie fragmentu. Zauważ, że nie możesz edytować fragmentu, jeśli ktoś inny już go edytuje.
+1. W okienku właściwości fragmentu wybierz symbol pióra znajdujący się obok nazwy.
+1. Edytuj nazwę fragmentu stosownie do potrzeb.
+1. Zaznacz znacznik wyboru, aby potwierdzić zmianę nazwy.
+1. Wybierz opcję **Zakończ edycję**.
+
+Możesz zmienić nazwę fragmentu później, edytując ją, a następnie wybierając symbol pióra obok nazwy w okienku właściwości.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

@@ -2,7 +2,7 @@
 title: Personalizowanie środowiska użytkownika
 description: W tym temacie wyjaśniono, jak można spersonalizować aplikację.
 author: jasongre
-ms.date: 09/27/2021
+ms.date: 01/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,20 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1f24ff1a0730f13af6231510c8e6b3cb46fde48
-ms.sourcegitcommit: 89906aa2f18f16e622fd280433c8fc9fe74d2aec
+ms.openlocfilehash: 840a68d506664043c9affb67e801429e0594f0bd
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7581072"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075429"
 ---
 # <a name="personalize-the-user-experience"></a>Personalizowanie środowiska użytkownika
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 W tym temacie wyjaśniono, jak można spersonalizować aplikację i omówiono następujące zagadnienia: 
 
@@ -120,7 +124,9 @@ Następujące narzędzia są dostępne na pasku narzędzi **Personalizacja**:
 - Użyj narzędzia **Wybierz**, aby wybrać i zmienić właściwości elementu. Aby skorzystać z tego narzędzia, należy zaznaczyć przycisk **Wybierz** na pasku narzędzi, a następnie wybrać żądany element. Pojawi się okno właściwości elementu, w którym można zmienić dowolne właściwości tego elementu. Można powtórzyć ten proces dla innych elementów, które można personalizować na stronie. Należy pamiętać, że niektóre właściwości personalizacji mogą być niedostępne w niektórych scenariuszach. Na przykład nie można zamknąć pola, które jest wymagane.
 - Użyj narzędzia **Ukryj**, aby ukryć element na tej stronie. Aby skorzystać z tego narzędzia, należy zaznaczyć przycisk **Ukryj** na pasku narzędzi, a następnie wybrać element do ukrycia. Używając narzędzia **Ukryj** w zacieniowanym kontenerze zostaną pokazane wszystkie elementy, które są obecnie ukryte. Można wówczas wyświetlić element, zaznaczając go. Aby zobaczyć, jak strona będzie wyglądała po ukryciu elementów, przełącz się na inne narzędzie do personalizacji lub zamknąć pasek narzędzi personalizacji.
 - Wybierz narzędzie **Dodaj pola**, aby dodać pola do strony. Korzystając z tego narzędzia, można dodawać tylko pola, które są częścią definicji strony. Aby uzyskać informacje o tworzeniu nowych pól, które nie są częścią bieżącej definicji strony, zobacz [Tworzenie pól niestandardowych i praca z nimi](user-defined-fields.md). Po wybraniu przycisku **Dodaj pola** na pasku narzędzi należy najpierw zaznaczyć siatkę lub sekcję, gdzie chcesz dodać pole. W oknie dialogowym zostanie wyświetlona lista pól powiązanych z wybraną siatkę lub sekcję. W oknie dialogowym wybierz jedno lub więcej pól do dodania z listy **Zalecane pola** lub **Wszystkie pola**. Po wybraniu żądanych pól wybierz **opcję Aktualizuj**. Aby usunąć pole, które zostało wcześniej dodane, należy powtórzyć proces, ale należy usunąć zaznaczenie tego pola w oknie dialogowym.
-    - Lista **pól zalecanych** zawiera pola dodane wcześniej przez innych użytkowników w organizacji. Lista pól jest aktualizowana na podstawie częstotliwości cyklu **zadania wsadowego Rekomendacja**. Podobne działanie występuje podczas dodawania nowych pól filtru za pomocą okienka Filtr na stronie.
+
+    Lista **pól zalecanych** zawiera pola dodane wcześniej przez innych użytkowników w organizacji. Lista pól jest aktualizowana na podstawie częstotliwości cyklu **zadania wsadowego Rekomendacja**. Podobne działanie występuje podczas dodawania nowych pól filtru za pomocą okienka Filtr na stronie.
+
 - Użyj narzędzia **Przenieś**, aby przenieść element w inne miejsce w bieżącej grupie elementów. Nie można przenieść elementu poza jego grupę nadrzędną. Aby skorzystać z tego narzędzia, należy zaznaczyć przycisk **Przenieś** na pasku narzędzi, a następnie wybrać element do przeniesienia. Po wybraniu elementu aplikacja określa lokalizację, dokąd można przenieść element. Te lokalizacje są nazywane *strefami upuszczania*. Podczas przeciągania elementu w granicach bieżącej grupy każda sfera upuszczania jest wyświetlana za pomocą kolorowej, pogrubionej linii obok obszaru, w którym można upuścić element.
 - Użyj narzędzia **Pomiń**, aby usunąć element z sekwencji tabulacji na stronie. Po wybraniu przycisku **Pomiń** na pasku narzędzi w zacieniowanym kontenerze wyświetlone zostaną wszystkie elementy, które zostały pominięte. Można interaktywnie usunąć lub dodać pola do sekwencji kart.
 - Użyj narzędzia **Pokaż w nagłówku**, aby wyświetlić pole w sekcji podsumowania skróconej karty. Po wybraniu przycisku **Pokaż w nagłówku** na pasku narzędzi w zacieniowanym kontenerze wyświetlone zostaną wszystkie pola, które wybrano jako pola podsumowania. Można dodać w interaktywny sposób pola do podsumowania skróconej karty lub je wybrać, by je z niego usunąć.
@@ -152,7 +158,10 @@ W przypadku niektórych stron zawierających listy funkcja **Dodaj do personaliz
 
 - Aby dodać listę do obszaru roboczego, najpierw należy prze sortować lub przefiltrować listę na stronie, tak aby informacje były wyświetlane tak, jak mają być widoczne w obszarze roboczym. (Jeśli funkcja **Zapisanych widoków** jest włączona, nie można kontynuować, dopóki nie zapiszesz widoku, który ma te warunki.) Następnie wybierz opcję **Dodaj do obszaru roboczego**. Wybierz obszar roboczy, a następnie w polu **Prezentacja** wybierz opcję **Lista**. Po naciśnięciu przycisku **Konfiguruj** pojawi się okno dialogowe, w którym można wybrać kolumny, jakie mają być wyświetlane na liście w obszarze roboczym. Także można wybrać etykietę dla listy w obszarze roboczym.
 - Aby dodać kafelek do obszaru roboczego, najpierw przefiltruj listę, tak aby przedstawiała dane, które mają być podsumowane lub chcesz mieć do nich szybki dostęp. (Jeśli funkcja **Zapisanych widoków** jest włączona, nie można kontynuować, dopóki nie zapiszesz widoku, który ma te warunki.) Następnie wybierz opcję **Dodaj do obszaru roboczego**. Wybierz obszar roboczy, a następnie w polu **Prezentacja** wybierz opcję **Kafelek**. Po naciśnięciu przycisku **Konfiguruj** pojawi się okno dialogowe, gdzie można określić etykietę, która ma być używana dla kafelka w obszarze roboczym. Można również określić, czy na kafelku ma się pojawić liczba elementów. Po dodaniu kafelka do obszaru roboczego można go wybrać, aby otworzyć bieżącą stronę z obszaru roboczego. Następnie można wyświetlić przefiltrowaną listę, która jest skojarzona z kafelkiem.
-- Aby dodać łącze do obszaru roboczego, najpierw należy przefiltrować listę na stronie tak, aby pokazywała interesujące Cię dane. (Jeśli funkcja **Zapisanych widoków** jest włączona, nie można kontynuować, dopóki nie zapiszesz widoku, który ma te warunki.) Następnie wybierz opcję **Dodaj do obszaru roboczego**. Wybierz obszar roboczy, a następnie w polu **Prezentacja** wybierz opcję **Łącze**. Po naciśnięciu przycisku **Konfiguruj** pojawi się okno dialogowe, gdzie można określić etykietę, która ma być używana dla łącza. Można też opcjonalnie dodać do nowej sekcji etykietę zawierającą ten link.
+- Aby dodać łącze do obszaru roboczego, najpierw należy przefiltrować listę na stronie tak, aby pokazywała interesujące Cię dane. (Jeśli funkcja **Zapisanych widoków** jest włączona, nie można kontynuować, dopóki nie zapiszesz widoku, który ma te warunki.) Następnie wybierz opcję **Dodaj do obszaru roboczego**. Wybierz obszar roboczy, a następnie w polu **Prezentacja** wybierz opcję **Łącze**. Po naciśnięciu przycisku **Konfiguruj** pojawi się okno dialogowe, gdzie można określić etykietę, która ma być używana dla łącza. Możesz też opcjonalnie określić etykietę dla sekcji, w której ten link będzie umieszczony. Jeśli ta sekcja nie istnieje, zostanie utworzona nowa sekcja.
+
+> [!NOTE]
+> Od wersji 10.0.25, kiedy konfigurujesz listę, kafelek lub odnośnik, możesz również wybrać widoki przestrzeni roboczej, do których chcesz dodać element, jeśli włączona jest opcja **(Podgląd) Obsługa zapisanych widoków dla przestrzeni roboczych**. Dostępne widoki przestrzeni roboczej pojawią się w sekcji **Opcje przestrzeni roboczej** w każdym oknie dialogowym **Konfiguracja**. 
 
 Po dodaniu listy, kafelka lub łącza do obszaru roboczego można otworzyć ten obszar roboczy i dowolnie zmienić w nim kolejność elementów.
 
@@ -220,6 +229,9 @@ Jeśli zapisane widoki nie są włączone, wykonaj następujące kroki, aby skop
 
 Innym sposobem udostępniania personalizacji jest eksport i import. Pojedynczy użytkownicy lub administrator, który działa w ich imieniu, mogą użyć tej metody w celu wyeksportowania swoich personalizacji lub widoków, a następnie przekazać eksportowany plik innym użytkownikom do zaimportowania. Innym rozwiązaniem jest przekazanie ich wyeksportowanych personalizacji użytkownikowi, który ma uprawnienia administratora, a następnie użycie strony administracji **Personalizacja** w celu zastosowania pliku personalizacji jednocześnie dla wielu użytkowników.
 
+> [!IMPORTANT]
+> Personalizacja będzie się powtarzać w różnych aktualizacjach, więc ponowne importowanie wszystkich personalizacji po aktualizacji usługi lub w innym czasie jest zbędne i zdecydowanie odradzane.
+
 #### <a name="export"></a>Eksportowanie
 
 Na ogół można wyeksportować jeden z własnych widoków lub personalizacji, otwierając odpowiednią stronę, otwierając pasek narzędzi **Personalizacja**, a następnie wybierając pozycję **Eksportuj**. Aby uzyskać więcej informacji o pasku narzędzi, zobacz sekcję [Pasek narzędzi personalizacji](#personalization-toolbar) we wcześniejszej części tego tematu. Ewentualnie, jeśli [zapisane widoki](saved-views.md) są włączone, można przejść do opcji **Ustawienia \> Opcje użytkownika \> Personalizacja**, aby wyświetlić listę wszystkich personalizacji w systemie. Stamtąd można wybrać widoki lub personalizacje do eksportu, a następnie wybrać pozycję **Eksportuj**.
@@ -268,11 +280,8 @@ Klienci, którzy włączyli funkcję **Zapisane widoki**, powinni zapoznać się
 W przypadku użytkowników, którzy jeszcze nie włączyli funskcji [Zapisane widoki](saved-views.md), na tej stronie znajdują się cztery karty:
 
 - **Zastosuj** — ta opcja pozwala zaimportować lub wybrać personalizację dla co najmniej jednego użytkownika. Aby zastosować personalizację dla jednego lub kilku użytkowników, należy najpierw zaznaczyć rolę i użytkowników, którzy pełnią tę rolę. Następnie wybierz istniejącą personalizację do zastosowania do wybranych użytkowników lub zaimportuj plik personalizacji. Personalizacja jest zweryfikowana i zostanie zastosowana do wszystkich zaznaczonych użytkowników następnym razem, gdy otworzą wybraną stronę.
-
 - **Wyczyść** — Tutaj można wyczyścić wszystkie personalizacje strony lub obszaru roboczego dla jednego lub więcej użytkowników. Najpierw wybierz stronę lub obszar roboczy, aby wyświetlić listę użytkowników, którzy spersonalizowali tę stronę/obszar. Następnie wybierz użytkowników, dla których chcesz wyczyścić personalizację danej strony lub obszaru roboczego, i wybierz opcję **Wyczyść**. Wszystkie personalizacje zastosowane przez wybranych użytkowników do wybranej strony lub obszaru roboczego zostaną usunięte. Tej operacji nie można cofnąć. Jednak jeśli dla strony lub obszaru roboczego zapisano personalizację, można ją ponownie zaimportować.
-
 - **Użytkownicy** — Wybierz użytkownika, aby wyświetlić listę stron spersonalizowanych przez tę osobę. Następnie można włączyć lub wyłączyć dla wybranego użytkownika możliwość korzystania z personalizacji określonych stron lub całego systemu. Można również zaimportować, wyeksportować lub wyczyścić personalizację dla wybranego użytkownika. Ponadto można zresetować objaśnienia funkcji dla użytkownika. W takim przypadku, jeśli użytkownik wyłączył wszystkie okna wyskakujące, które wprowadzają nowe funkcje, pojawią się ponownie przy następnym napotkaniu tych funkcji przez użytkownika.
-
 - **System** — ta opcja pozwala tymczasowo wyłączyć personalizacje dla wszystkich użytkowników w systemie. W takim przypadku wszystkie personalizacje są usuwane dla wszystkich użytkowników, a wszystkie strony są resetowane do ich stanu domyślnego. W przypadku ponownego włączenia personalizacji wszystkie personalizacje zostaną zastosowane ponownie. Można również trwale usunąć wszystkie personalizacje dla wszystkich użytkowników w systemie. Nie jest możliwe odzyskanie personalizacji, które zostały usunięte. Dlatego przed wykonaniem tego zadania należy koniecznie wyeksportować wszystkie personalizacje, które potem możesz chcieć zaimportować.
 
 ## <a name="personalizing-inventory-dimensions"></a>Personalizacja wymiarów magazynowych

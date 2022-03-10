@@ -13,17 +13,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4c1d299a77c5a02c531838aae0750dea87e89e34
-ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
+ms.openlocfilehash: d56e38edc00780ad16aaafdb501b8f5df49020f2
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7731692"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075256"
 ---
 # <a name="create-calendars-and-generate-working-times"></a>Tworzenie kalendarzy i generowanie godzin pracy
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
+> [!IMPORTANT]
+> Funkcjonalność opisana w tym temacie jest obecnie dostępna dla klientów Human Resources na infrastrukturze Finance.  
 
 
 Kalendarze opisują zdolności produkcyjne i czasy pracy zasobów operacyjnych. Ten temat wyjaśnia, jak definiować kalendarz pracy na podstawie szablonu czasu pracy. Można przejść tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych.

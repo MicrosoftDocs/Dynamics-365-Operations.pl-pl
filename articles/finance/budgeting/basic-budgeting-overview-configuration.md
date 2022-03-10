@@ -1,9 +1,9 @@
 ---
 title: Przegląd budżetu
-description: Prawie każda firma, która używa funkcji finansowych w Microsoft Dynamics 365 Finance, będzie musiała mieć możliwość tworzenia raportów porównujących kwoty budżetowe z rzeczywistymi. Ten artykuł wyjaśnia minimalną konfigurację niezbędną do tworzenia budżetów w Finance and Operations lub ich wczytywania z innych programów.
+description: Prawie każda firma, która używa funkcji finansowych w Microsoft Dynamics 365 Finance, będzie musiała mieć możliwość tworzenia raportów porównujących kwoty budżetowe z rzeczywistymi. Ten artykuł wyjaśnia minimalną konfigurację niezbędną do tworzenia budżetów w programie Finance and Operations lub ich wczytywania z innych programów.
 author: panolte
 ms.date: 04/29/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BudgetParameters
@@ -17,20 +17,20 @@ ms.search.region: global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f79da43fa89fd98b3079dc69614553e74493376
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 8e881a878265062dc5ce8cec68a45237711f385d
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6338789"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986517"
 ---
-# <a name="budgeting-overview"></a>Omówienie budżetu 
+# <a name="budgeting-overview"></a>Omówienie budżetu
 
 [!include [banner](../includes/banner.md)]
 
-Prawie każda firma, która używa funkcji finansowych w Microsoft Dynamics 365 Finance, będzie musiała mieć możliwość tworzenia raportów porównujących kwoty budżetowe z rzeczywistymi. Ten artykuł wyjaśnia minimalną konfigurację niezbędną do tworzenia budżetów w Finance and Operations lub ich wczytywania z innych programów.
+Prawie każda firma, która używa funkcji finansowych w Microsoft Dynamics 365 Finance, będzie musiała mieć możliwość tworzenia raportów porównujących kwoty budżetowe z rzeczywistymi. Ten artykuł wyjaśnia minimalną konfigurację niezbędną do tworzenia budżetów w programie Finance and Operations lub ich wczytywania z innych programów.
 
-## <a name="overview"></a>Omówienie
+## <a name="overview"></a>Przegląd
 
 Zatwierdzony budżet dla firmy jest przechowywany w dokumencie pod nazwą *wpisu do rejestru budżetu*. Wiersze dokumentu wpisu rejestru budżetu są nazywane zapisami *konta budżetu* i zawierają informacje o wymiarach finansowych, datach i kwotach zatwierdzonego budżetu. Dokument z wpisami rejestru budżetu jest zintegrowany z podstawowymi raportami finansowymi oraz stronami zapytań, na których porównywane są rzeczywiste kwoty w księgach z kwotami ustalonymi w budżecie. 
 
@@ -38,7 +38,7 @@ Istnieje wiele metod tworzenia wpisów do rejestru budżetu:
 
 -   Ręczne wprowadzanie informacji zawartych w dokumencie na stronie **wpisów do rejestru budżetu**.
 -   Za pomocą szablonu programu Microsoft Excel, który można otworzyć klikają przycisk **Otwórz w programie Excel** na stronie **Wpisy do rejestru budżetu**.
--   Używając jednostki danych **zapisów na koncie budżetu** w module zarządzania danymi w celu zaimportowania wpisów do rejestru budżetu. Rozważ użycie tej metody i włączenie parametru **Przetwarzanie** **oparte na zestawie**, jeśli musisz zaimportować do systemu wiele zapisów na koncie budżetu.
+-   Używając jednostki danych **zapisów na koncie budżetu** w module zarządzania danymi w celu zaimportowania wpisów do rejestru budżetu. Rozważ użycie tej metody i włączenie parametru **Przetwarzanie oparte na zestawie**, jeśli musisz zaimportować do systemu wiele zapisów na koncie budżetu.
 -   Jeśli firma używa funkcji planowania budżetu w celu przygotowania danych budżetu, można użyć procesu okresowego **Generowanie wpisu do rejestru budżetu**.
 
 Wpis do rejestru budżetu jest uważany za zakończony, gdy salda budżetu zostaną zaktualizowane. Na stronie **Wpisy do rejestru budżetu** kliknij przycisk **Aktualizuj salda budżetu** dla wybranego wpisu do rejestru budżetu lub dla wielu wpisów. Po zaktualizowaniu sald budżetu stan wpisu do rejestru budżetu zmienia się na **Zakończono**. Zakończonego wpisu do rejestru budżetu nie można ponownie otworzyć w celu edycji. Dlatego w przypadku konieczności skorygowania danych budżetu należy utworzyć nowy wpis do rejestru budżetu, a nie poprawiać dane w zakończonym wpisie.

@@ -2,11 +2,9 @@
 title: Parametry produkcji w module Wykonywanie produkcji
 description: Ten temat zawiera informacje o ustawieniach parametrów produkcji w module Wykonywanie produkcji.
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgProdParameters
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bd0befdd16b72d7c5d789f635f516cd1bfe9930d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ce0dadd353df756a468384e3bf8e68c0ad2033a7042b4986fce41aa0764afdbc
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5209474"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6752737"
 ---
 # <a name="production-parameters-in-manufacturing-execution"></a>Parametry produkcji w module Wykonywanie produkcji
 

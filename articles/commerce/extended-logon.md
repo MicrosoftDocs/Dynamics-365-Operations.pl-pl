@@ -1,30 +1,27 @@
 ---
 title: Konfigurowanie funkcjonalności logowania rozszerzonego w aplikacjach MPOS i Cloud POS
 description: Ten temat omawia opcje konfigurowania rozszerzonego logowania do aplikacji Cloud POS i Retail Modern POS (MPOS).
-author: rubencdelgado
-manager: AnnBe
-ms.date: 06/20/2017
+author: boycezhu
+ms.date: 09/07/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 92353
 ms.assetid: 7473e237-fbc8-41d5-8ba0-920242747488
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 79878e2ffbf219f77f378997c277ced8bb41598c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0cc3d3a3cadbc614e82b8cc7ae0b78406247cece
+ms.sourcegitcommit: efcb853a68a77037cca23582d9f6f96ea573727a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414897"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7478678"
 ---
 # <a name="set-up-extended-logon-functionality-for-mpos-and-cloud-pos"></a>Konfigurowanie funkcjonalności logowania rozszerzonego w aplikacjach MPOS i Cloud POS
 
@@ -54,7 +51,7 @@ Jeśli włączona jest opcja **Logowanie się pracowników za pomocą karty wyma
 
 ## <a name="assigning-an-extended-logon"></a>Przypisywanie logowania rozszerzonego
 
-Domyślnie tylko menedżerowie mogą przypisywać pracownikom logowanie rozszerzone. Aby przypisać logowanie rozszerzone, przejdź do opcji **Logowanie rozszerzone** w aplikacji punktu sprzedaży. Następnie wyszukaj pracownika, wpisując w polu wyszukiwania jego identyfikator operatora. Wybierz pracownika, a następnie kliknij przycisk **Przypisz**. Na następnej stronie przeciągnij lub zeskanuj kartę lub kod kreskowy do logowania rozszerzonego, aby przypisać pracownika. Jeśli odczyt danych się powiedzie, przycisk **OK** stanie się aktywny. Kliknij **OK**, aby zapisać logowanie rozszerzone dla tego pracownika.
+Domyślnie tylko menedżerowie mogą przypisywać pracownikom logowanie rozszerzone. Aby przypisać logowanie rozszerzone, przejdź do opcji **Logowanie rozszerzone** w aplikacji punktu sprzedaży. Następnie wyszukaj pracownika, wpisując jego identyfikator w polu wyszukiwania. Wybierz pracownika, a następnie kliknij przycisk **Przypisz**. Na następnej stronie przeciągnij lub zeskanuj kartę lub kod kreskowy do logowania rozszerzonego, aby przypisać pracownika. Jeśli odczyt danych się powiedzie, przycisk **OK** stanie się aktywny. Kliknij **OK**, aby zapisać logowanie rozszerzone dla tego pracownika.
 
 ## <a name="deleting-an-extended-logon"></a>Anulowanie przypisania logowania rozszerzonego
 
@@ -62,8 +59,13 @@ Aby anulować przypisanie logowania rozszerzonego do pracownika, znajdź pracown
 
 ## <a name="extending-extended-logon"></a>Rozszerzanie logowania rozszerzonego
 
+Logowanie rozszerzone zezwala wyłącznie na to, aby pięć istotnych znaków było unikatowym identyfikatorem po instalacji. Jeśli na przykład skonfigurujesz dwie karty o identyfikatorach „1234567” i „1234578”, obie karty będą traktowane jako „12345”. Rozszerzenie można utworzyć w celu obsługi większej liczby znaków. Aby uzyskać szczegółowe instrukcje, sprawdź temat [Rozszerzenie funkcji logowania rozszerzonego dla aplikacji MPOS i Cloud POS](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/12/14/extending-the-extended-logon-functionality-for-mpos-and-cloud-pos/).
+
 Usługę logowania można rozszerzyć o obsługę dodatkowych urządzeń do logowania rozszerzonego, takich jak skanery ręczne. Aby uzyskać więcej informacji, zapoznaj się z dokumentacją rozszerzania punktu sprzedaży.
 
 ## <a name="using-extended-logon"></a>Używanie logowania rozszerzonego
 
 Jeśli logowanie rozszerzone jest skonfigurowane i pracownik ma przypisany kod kreskowy lub pasek magnetyczny, pracownik musi tylko przeciągnąć kartę magnetyczną w czytniku lub zeskanować kod kreskowy, gdy na ekranie wyświetlana jest strona logowania punktu sprzedaży. Jeśli logowanie wymaga podania hasła, wyświetla się również monit o podanie hasła.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

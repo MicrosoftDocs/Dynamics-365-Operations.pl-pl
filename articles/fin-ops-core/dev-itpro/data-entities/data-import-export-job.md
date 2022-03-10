@@ -1,27 +1,30 @@
 ---
 title: Omówienie zadań importowania i eksportowania danych
 description: Obszar roboczy Zarządzanie danymi umożliwia tworzenie zadań importu i eksportu danych oraz zarządzanie nimi.
-author: Sunil-Garg
-ms.date: 11/02/2020
-ms.topic: article
+author: peakerbl
+ms.date: 10/21/2021
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1cb38c812aed60bddadce25f66ec77f4e428be71
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e63daad6f206500bfa21c28635648c717f5bbdde
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751007"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071092"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Omówienie zadań importowania i eksportowania danych
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Obszar roboczy **Zarządzanie danymi** umożliwia tworzenie i zarządzanie danymi importu i eksportu zadań. Domyślne proces importowania i eksportowania danych tworzy tabelę przemieszczania dla każdej jednostki w docelowej bazie danych. Tabele tymczasowe umożliwiają sprawdzenie, czyszczenie lub konwersję danych przed ich przeniesieniem.
 
@@ -68,6 +71,9 @@ Podczas wybieranie jednostki należy wybrać format eksportowanych lub importowa
 | Plik XML                    | \-Nie dotyczy-                                      | Element XML Atrybut XML |
 | Ograniczone, stała szerokość | Przecinek, średnik, tabulator, pionowa kreska, dwukropek | \-Nie dotyczy-                     |
 
+> [!NOTE]
+> Ważne jest, aby wybrać poprawną wartość pól **Ogranicznik wiersza**, **Ogranicznik kolumn** i **Kwalifikator tekstu**, jeśli w opcji **Format pliku** jest ustawiona wartość **Ograniczone**. Upewnij się, że dane nie zawierają znaku używanego jako ogranicznik lub kwalifikator, ponieważ może to spowodować błędy podczas importowania i eksportowania.
+
 ### <a name="sequence-the-entities"></a>Określanie kolejności jednostek
 Kolejność jednostek można określić w szablonie danych albo w zadaniach importu lub eksportu. Po uruchomieniu zadania, które zawiera więcej niż jedną jednostkę należy się upewnić, że kolejność jednostek danych jest prawidłowa. Kolejność jednostek określa się głównie po to, aby obsłużyły zależności funkcjonalne między jednostkami. Jeżeli jednostki nie mają żadnych zależności funkcjonalnych, można zaplanować ich import lub eksport równoległy.
 
@@ -106,7 +112,7 @@ Dostępne są dwa widoki mapowania: **Wizualizacja mapowania**, czyli widok domy
 
 Mapowanie można wygenerować na stronie, wybierając opcję **Generuj mapowanie źródła**. Wygenerowane mapowanie zachowuje się jak mapowanie automatyczne. Dlatego należy ręczne zmapować wszystkie niezmapowane pola.
 
-![Mapowanie danych](./media/dixf-map.png)
+![Mapowanie danych.](./media/dixf-map.png)
 
 ## <a name="verify-the-security-for-your-import-or-export-job"></a>Sprawdzanie zabezpieczeń zadania importu lub eksportu
 Dostęp do obszaru roboczego **Zarządzanie danymi** można ograniczyć tak, aby użytkownicy inni niż administratorzy mieli dostęp tylko do określonych zadań danych. Dostęp do zadania danych oznacza pełny dostęp do historii wykonania tego zdania i dostęp do tabeli przemieszczania. W związku z tym należy się upewnić, że kontrola dostępu odpowiednie obowiązują podczas tworzenia zadania danych.
@@ -132,7 +138,7 @@ Zadanie można uruchomić jeden raz, klikając przycisk **Importuj** lub **Ekspo
 ## <a name="validate-that-the-job-ran-as-expected"></a>Sprawdzanie, czy zadanie zostało uruchomione zgodnie z oczekiwaniami
 Dostępna jest historia zadań umożliwiająca rozwiązywanie problemów i badanie zadań importu i eksportu. Historyczne uruchomienia zadań są zorganizowane według zakresów czasu.
 
-![Zakresy historii zadań](./media/dixf-job-history.md.png)
+![Zakresy historii zadań.](./media/dixf-job-history.md.png)
 
 Dla każdego uruchomionego zadania dostępne są następujące informacje:
 
@@ -161,19 +167,7 @@ Aby przyspieszyć Importowanie danych, można włączyć równoległe przetwarza
     - W polu **Licznik rekordów progów importu** wprowadź wartość licznika rekordów progu dla importu. Określa to licznik rekordów, które mają być przetworzone przez wątek. Jeśli plik ma 10 000 rekordów, liczba rekordów 2500 i liczba zadań 4 będą oznaczały, że każdy wątek przetworzy 2500 rekordów.
     - W polu **Licznik importu zadań** wprowadź liczbę zadań importu. Nie może ona przekraczać maksymalnej liczby wątków wsadowych przydzielonych do przetwarzania wsadowego w **Administrowanie systemem \>Administrowanie systemem**.
 
-## <a name="clean-up-the-staging-tables"></a>Czyszczenie tabel przemieszczania
-Począwszy od aktualizacji platformy 29, ta funkcja jest przestarzała. Jest to zastąpione nową wersją funkcji oczyszczania historii zadań wyjaśnioną poniżej.
-
-Tabele przemieszczania można wyczyścić, używając funkcji **Czyszczenie przemieszczania###** w obszarze roboczym **Zarządzanie danymi**. Następujących opcji można użyć, aby wybrać, które rekordy mają zostać usunięte z danej tabeli przemieszczania:
-
-- **Jednostka** — jeżeli dostępna jest tylko jednostka, wszystkie rekordy z tabeli przemieszczania tej jednostki są usuwane. Wybierz tę opcję, aby wyczyścić wszystkie dane dla jednostki we wszystkich projektach danych i wszystkich zadaniach.
-- **Identyfikator zadania** — jeżeli dostępny jest tylko identyfikator zadania, wszystkie rekordy dla wszystkich jednostek w wybranym zadaniu są usuwane z odpowiednich tabel przemieszczania.
-- **Projekty danych** — jeżeli wybrano tylko projekt danych, wszystkie rekordy dla wszystkich obiektów oraz we wszystkich zadaniach dla wybranego projektu danych są usuwane.
-
-Można także połączyć opcje, aby dodatkowo ograniczyć usuwany zestaw rekordów.
-
-## <a name="job-history-clean-up-available-in-platform-update-29-and-later"></a>Czyszczenie historii zadań (dostępne w aktualizacji platformy 29 i nowszych)
-
+## <a name="job-history-clean-up"></a>Czyszczenie historii zadań 
 Funkcja oczyszczania historii zadań w zarządzaniu danymi musi być używana do planowania okresowego oczyszczania historii wykonywania. Ta funkcja zastępuje poprzednią funkcję oczyszczania tabeli przemieszczania, która jest obecnie przestarzała. Poniższe tabele zostaną oczyszczone przez proces oczyszczania.
 
 -   Wszystkie tabele przemieszczania
@@ -209,16 +203,10 @@ Podczas planowania procesu oczyszczania, należy określić następujące parame
 > [!NOTE]
 > Jeśli rekordy w tabelach pośrednich nie zostaną wyczyszczone w całości, upewnij się, że zadanie oczyszczania zaplanowano do uruchomienia w cyklu. Jak to wyjaśniono powyżej, w każdym oczyszczeniu wykonania zadanie jest oczyszczane tylko wtedy, gdy w podanych godzinach maksymalnych będzie istnieć tylko wiele identyfikatorów wykonania. Aby kontynuować oczyszczanie pozostałych rekordów przemieszczania, należy zaplanować okresowe wykonywanie zadania.
 
-## <a name="job-history-clean-up-and-archival-available-for-preview-in-platform-update-39-or-version-10015"></a>Czyszczenie i archiwizowanie historii zadań (dostępne w wersji zapoznawczej w aktualizacji platformy 39 lub wersji 10.0.15)
+## <a name="job-history-clean-up-and-archival"></a>Czyszczenie i archiwizacja historii zadań 
 Funkcja oczyszczania i archiwizacji historii zadań zastępuje poprzednie wersje funkcji oczyszczania. Ta sekcja wyjaśnia te nowe możliwości.
 
-Jedną z głównych zmian funkcji oczyszczania jest użycie w systemie zadania wsadowego do oczyszczenia historii. Użycie zadania wsadowego w systemie umożliwia aplikacjom Finance and Operations automatyczne planowanie i uruchamianie zadania przetwarzania wsadowego zaraz po gotowości systemu. Nie jest już konieczne ręczne planowanie zadania wsadowego. W tym domyślnym trybie wykonywania zadanie wsadowe będzie wykonywane co godzinę, zaczynając o północy, i zachowa historię wykonania z ostatnich 7 dni. Oczyszczana historia jest archiwizowana do przyszłego pobierania.
-
-> [!NOTE]
-> Ponieważ ta funkcja znajduje się w wersji zapoznawczej, zadanie wsadowe w systemie nie usunie historii wykonania, dopóki nie zostanie ono włączone za pośrednictwem lotu DMFEnableExecutionHistoryCleanupSystemJob. Gdy ta funkcja zostanie ogólnie udostępniona w przyszłym wydaniu, ten lot nie będzie wymagany, a zadanie wsadowe w systemie rozpocznie czyszczenie i archiwizowanie po przygotowaniu systemu na podstawie zdefiniowanego powyżej harmonogramu. 
-
-> [!NOTE]
-> W przyszłym wydaniu poprzednie wersje funkcji oczyszczania zostaną usunięte z aplikacji Finance and Operations.
+Jedną z głównych zmian funkcji oczyszczania jest użycie w systemie zadania wsadowego do oczyszczenia historii. Użycie zadania wsadowego w systemie umożliwia aplikacjom Finanse i Operacje automatyczne planowanie i uruchamianie zadania przetwarzania wsadowego zaraz po gotowości systemu. Nie jest już konieczne ręczne planowanie zadania wsadowego. W tym domyślnym trybie wykonywania zadanie wsadowe będzie wykonywane co godzinę, zaczynając o północy, i zachowa historię wykonania z ostatnich 7 dni. Oczyszczana historia jest archiwizowana do przyszłego pobierania. Począwszy od wersji 10.0.20, ta funkcja jest zawsze w użyciu.
 
 Druga zmiana w procesie oczyszczania to archiwizacja oczyszczonej historii wykonania. Zadanie oczyszczania spowoduje zarchiwizowanie usuniętych rekordów w Blob Storage, którego usługa DIXF używa do regularnych integracji. Zarchiwizowany plik będzie w formacie pakietu DIXF i będzie dostępny przez 7 dni w obiekcie blob, w trakcie których można go będzie pobrać. Domyślną trwałość 7 dni zarchiwizowanego pliku można zmienić na maksymalnie 90 dni w parametrach.
 

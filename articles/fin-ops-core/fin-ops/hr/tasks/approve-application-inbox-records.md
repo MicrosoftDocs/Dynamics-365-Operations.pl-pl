@@ -2,11 +2,9 @@
 title: Zatwierdzanie rekordów skrzynki odbiorczej zgłoszeń
 description: W tej procedurze pokazano sposób przeglądania podań o pracę otrzymanych za pośrednictwem stron w portalu samoobsługi pracowniczej.
 author: andreabichsel
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HRMApplicationBasket, HRMApplicationBasketApprove, HRMApplication
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fd54361f4397de75fbd578bc965cd90db963b2f8
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 476e9bf8de408a58edaaf2c488970a1631f4c47610eaa22a136e38c029d2fe0b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693466"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6736177"
 ---
 # <a name="approve-application-inbox-records"></a>Zatwierdzanie rekordów skrzynki odbiorczej zgłoszeń
 
@@ -48,3 +46,6 @@ W tej procedurze pokazano sposób przeglądania podań o pracę otrzymanych za p
 2. Na liście kliknij łącze w wybranym wierszu.
 3. Rozwiń sekcję Załączniki.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

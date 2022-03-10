@@ -1,29 +1,26 @@
 ---
 title: Tworzenie relacji zadania serwisowego
 description: Zadanie serwisowe można skojarzyć z umowami serwisowymi lub zleceniami serwisowymi, aby opisać zadanie serwisowe, jakie ma zostać wykonane w ramach umowy lub zlecenia.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable, SMAAgreementTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e50b4322c65097ab4f8aba9c36e4d5e6cc4c01b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b13309816af6984e77f828e827ecffe6266b3ede
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435346"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7576551"
 ---
 # <a name="create-service-task-relations"></a>Tworzenie relacji zadania serwisowego    
 
@@ -33,13 +30,13 @@ Zadanie serwisowe można skojarzyć z umowami serwisowymi lub zleceniami serwiso
 
 ## <a name="create-a-relation-with-a-service-agreement"></a>Tworzenie relacji z umową serwisową
 
-1.  Kliknij kolejno opcje **Zarządzanie serwisem** \> **Wspólne** \> **Umowy serwisowe** \> **Umowy serwisowe**.
+1.  Przejdź do **Zarządzanie serwisem** \> **Wspólne** \> **Umowy serwisowe** \> **Umowy serwisowe**.
 
 2.  Wybierz istniejącą umowę serwisową lub utwórz nową.
 
-3.  W okienku akcji kliknij przycisk **Zadania serwisowe**.
+3.  W okienku akcji wybierz przycisk **Zadania serwisowe**.
 
-4.  W formularzu **Zadania serwisowe** naciśnij kombinację klawiszy CTRL+N, aby utworzyć nowy wiersz, a następnie wybierz zadanie serwisowe z listy **Zadania serwisowe**, aby je dołączyć do umowy serwisowej.
+4.  W formularzu **Zadania serwisowe** wybierz **Nowy**, aby utworzyć nowy wiersz, a następnie wybierz zadanie serwisowe z listy **Zadania serwisowe**, aby je dołączyć do umowy serwisowej.
 
 5.  Na karcie **Opis** wprowadź w polach tekstowych dowolne opisowe notatki wewnętrzne lub zewnętrzne.
 
@@ -51,13 +48,13 @@ Relacja zadań serwisowych utworzona dla umowy serwisowej jest dostępna z pozio
 
 ## <a name="create-a-relation-with-a-service-order"></a>Tworzenie relacji ze zleceniem serwisowym
 
-1.  Kliknij kolejno opcje **Zarządzanie serwisem** \> **Wspólne** \> **Zlecenia serwisowe** \> **Zlecenia serwisowe**.
+1.  Przejdź do **Zarządzanie serwisem** \> **Wspólne** \> **Zlecenia serwisowe** \> **Zlecenia serwisowe**.
 
 2.  Wybierz istniejące zlecenie serwisowe lub utwórz nowe.
 
-3.  W okienku akcji kliknij przycisk **Zadania serwisowe**.
+3.  W okienku akcji wybierz przycisk **Zadania serwisowe**.
 
-4.  W formularzu **Zadania serwisowe** naciśnij kombinację klawiszy CTRL+N, aby utworzyć nowy wiersz, a następnie wybierz zadanie serwisowe z listy **Zadania serwisowe**, aby je dołączyć do zlecenia serwisowego.
+4.  W formularzu **Zadania serwisowe** wybierz **Nowy**, aby utworzyć nowy wiersz, a następnie wybierz zadanie serwisowe z listy **Zadania serwisowe**, aby je dołączyć do zlecenia serwisowego.
 
 5.  Na karcie **Opis** wprowadź w polach tekstowych dowolne opisowe notatki wewnętrzne lub zewnętrzne.
 
@@ -75,3 +72,6 @@ Relacje zadań serwisowych tworzone dla zlecenia serwisowego są dostępne z poz
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

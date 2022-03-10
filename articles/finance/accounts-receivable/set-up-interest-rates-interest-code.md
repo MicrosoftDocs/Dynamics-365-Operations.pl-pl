@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 62868c30d3ff60e51d99c71b743ab0bbb3c87451
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 09808433140f71bf2d7bfaaca87b6c27adb56d86c4c14ad44b37592d416fa2b9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835203"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716724"
 ---
 # <a name="set-up-interest-rates-for-an-interest-code"></a>Konfigurowanie stopy procentowej dla kodu odsetek
 
@@ -90,7 +90,6 @@ Utworzono zakres informacji w następujący sposób.
 
 
 ## <a name="example-2-interest-by-range--days"></a>Przykład 2: Odsetki według zakupu = dni
---------------------------------------------------
 
 Konfigurowanie odpowiedniego kodu odsetek, który ocenia jeden raz co 15 dni, że płatności za fakturę transakcji przekraczają termin. Podstawą obliczeń wartości procentowej odsetek mają być interwały dni. Wartość odsetek jest równa 10,00 przez 15 dni w okresie pierwszych 60 dni, 15,00 przez 15 dni w okresie 61 do 90 dni i 20,00 przez 15 dni od 91 dnia i później. Utworzono kod odsetek wartości pól w następujący sposób.
 
@@ -111,7 +110,6 @@ Utworzono zakres informacji w następujący sposób.
 
 
 ## <a name="example-3-interest-by-range--months"></a>Przykład 3: Odsetki według zakupu = miesiące
-----------------------------------------------------
 
 Konfigurowanie odpowiedniego kodu odsetek, który ocenia jeden raz co miesiąc, że płatności za fakturę transakcji przekraczają termin. Ma być podstawą obliczeń wartości procentowej odsetek według interwałów miesięcznych. Wartość odsetek jest równa 1,5 procent przez miesiąc dla pierwszych trzech zaległych miesięcy, 2,0 procent przez miesiąc dla kolejnych trzech miesięcy i 2,5 procent przez miesiąc dla każdego miesiąca powyżej okresu pierwszych sześciu miesięcy. Utworzono kod odsetek wartości pól w następujący sposób.
 

@@ -2,27 +2,24 @@
 title: Podstawa ceny i umowy handlowe
 description: Ta procedura poprowadzi przez proces tworzenia umów handlowych na cenę sprzedaży specyficznych dla kanału.
 author: josaw1
-manager: AnnBe
 ms.date: 08/12/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PriceDiscGroup, RetailStoreTable, RetailChannelPriceGroup, EcoResProductDetailsExtended, PriceDiscAdmTable, PriceDiscAdm
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 44dc059f7bfc3ba83a375c197ce67f1378a9bc9b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 282cbe0cb115d6204137613f4754068b8a9a321400d24808eb67266a83d7bcc6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415001"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730738"
 ---
 # <a name="base-price-and-trade-agreements"></a>Podstawa ceny i umowy handlowe
 
@@ -70,3 +67,6 @@ Ta procedura poprowadzi przez proces tworzenia umów handlowych na cenę sprzeda
 38. W **okienku akcji** kliknij pozycję Sprzedaż.
 39. Kliknij opcję **Cena sprzedaży**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

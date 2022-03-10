@@ -2,11 +2,9 @@
 title: Konfigurowanie stawek gotówkowych w punkcie sprzedaży (POS)
 description: Nominały gotówki banknotów i monet można zdefiniować w systemach zaplecza, tak aby były używane przez kasjerów, sprzedawców i kierowników w sklepie z poziomu punktu sprzedaży.
 author: jblucher
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailStoreCashDeclarationTable
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b2fb6676f45bc7efa4652de60e829b507292ac37
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0ff4eb5bc7c5e2c0192a5349219301b26e479ac6be978eb05063b68f348b4e55
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5213193"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6743465"
 ---
 # <a name="configure-cash-denominations-for-the-point-of-sale-pos"></a>Konfigurowanie stawek gotówkowych w punkcie sprzedaży (POS)
 
@@ -35,7 +33,7 @@ Nominały gotówki banknotów i monet można zdefiniować w systemach zaplecza, 
 
 Nominały definiuje się dla konkretnego sklepu w opcji **Konfiguracja** \> **Deklaracja gotówki** na stronie właściwości sklepu.
 
-![Opcja deklaracji gotówki](./media/image1-denomination.png)
+![Opcja deklaracji gotówki.](./media/image1-denomination.png)
 
 Aby zdefiniować nominał:
 
@@ -43,7 +41,7 @@ Aby zdefiniować nominał:
 1. Określ typ (moneta lub banknot).
 1. Określ kwotę (wartość).
 
-![Strona stawek deklaracji gotówki](./media/image2-denomination.png)
+![Strona stawek deklaracji gotówki.](./media/image2-denomination.png)
 
 ## <a name="configure-the-functionality-profile"></a>Konfigurowanie profilu funkcji
 

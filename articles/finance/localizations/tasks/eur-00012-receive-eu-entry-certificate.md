@@ -13,12 +13,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b7ee14445746f117edbc71fa51b4b013a95adc99
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 337013ca2a3c00213e537a0542dc0ebcb755f07db4aad3e77b3abd66173e5634
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822579"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6736892"
 ---
 # <a name="eur-00012-receive-an-eu-entry-certificate"></a>EUR-00012 Odbiór świadectwa wywozowego UE
 

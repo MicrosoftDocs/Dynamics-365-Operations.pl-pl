@@ -1,8 +1,8 @@
 ---
 title: Wstrzymania kredytu dla zamówień sprzedaży
 description: W tym temacie opisano ustawienia reguł używanych do umieszczania wstrzymania kredytu zamówienia sprzedaży.
-author: mikefalkner
-ms.date: 01/25/2019
+author: JodiChristiansen
+ms.date: 07/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,16 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d94b19061838f9bb2552c3c91c6b3591040ccf52
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 14cafa69e75d7e8a0f08fb385a8c364c0162da1ec609a4e0b3cad6178ec3f716
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827657"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6723974"
 ---
 # <a name="credit-holds-for-sales-orders"></a>Wstrzymania kredytu dla zamówień sprzedaży
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 W tym temacie opisano ustawienia reguł używanych do umieszczania wstrzymania kredytu zamówienia sprzedaży. Reguły blokowania zarządzania kredytami mogą dotyczyć pojedynczego odbiorcy lub grupy odbiorców. Reguły blokowania definiują odpowiedzi na następujące okoliczności:
 
@@ -41,6 +42,11 @@ Ponadto istnieją dwa parametry kontrolujące dodatkowe scenariusze, które zabl
 
 Gdy odbiorca zainicjuje transakcję sprzedaży, informacje zawarte w zamówieniu sprzedaży są przeglądane według zbioru reguł blokowania, które kierują decyzję o przyznaniu kredytu odbiorcy i umożliwieniu kontynuowania transakcji sprzedaży. Można również zdefiniować wykluczenia, które zastąpią reguły blokowania i umożliwiają przetwarzanie zamówienia sprzedaży. Istnieje możliwość skonfigurowania reguł blokowania i reguł wykluczeń na stronie **Zarządzanie kredytem > Ustawienia > Ustawienia zarządzania kredytem > Reguły blokowania**.
 
+Od wersji 10.0.21 zasady blokowania w zarządzaniu kredytami zostały ponownie zaprojektowane w następujący sposób, aby zapewnić większą elastyczność:
+
+- Żądania rozszerzalności zostały włączone, dzięki czemu można utworzyć własne reguły blokowania.
+- Pole wyboru **Zwolnij zamówienie sprzedaży** jest teraz dostępne dla wszystkich reguł blokowania. Wcześniej była dostępna tylko dla reguły blokowania zamówienia sprzedaży. Gdy to pole wyboru jest zaznaczone, reguła wykluczenia zwolni zamówienie sprzedaży bez uwzględniania innych reguł, które mogą blokować zamówienia sprzedaży. To pole wyboru jest dostępne tylko dla typu reguły **wykluczeń**.
+
 ### <a name="days-overdue"></a>Dni po terminie
 
 Otwórz kartę **zaległe dni**, jeśli reguła blokowania ma zastosowanie do odbiorcy z jedną lub kilkoma fakturami, które zostały już niezapłacone przez określoną liczbę dni.
@@ -57,7 +63,7 @@ Otwórz kartę **zaległe dni**, jeśli reguła blokowania ma zastosowanie do od
 5. Wybierz **Typ wartości**. Domyślny wpis to stała liczba dni. W przypadku tworzenia wykluczenia zamiast tego można użyć stałej liczby dni lub ilości. 
 6. Umożliwia wprowadzenie liczby dni **zaległych**, które będą dozwolone dla wybranej reguły blokowania, zanim zamówienie zostanie umieszczone w wstrzymaniu zarządzania kredytem do przeglądu. Liczba dni do realizacji jest równa dodatkowej liczbie dni prolongaty, która jest dodawana do liczby dni przekraczającej termin płatności, którą może mieć faktura, zanim zostanie uznana za zaległą. Jeśli **Typ wartości** został określony jako kwota wykluczenia, należy wprowadzić liczbę i walutę tej kwoty.
 
-### <a name="accounts-status"></a>Stan kont
+### <a name="account-status"></a>Stan konta
 
 Umożliwia otwarcie karty **Stan konta**, jeśli reguła blokowania dotyczy odbiorcy o wybranym stanie konta.
 1. Służy do wybierania typu reguły, dla której wprowadzane są ustawienia.  **Blokowanie** powoduje utworzenie reguły blokującej zamówienie. **Wykluczanie** tworzy regułę, która będzie wykluczać regułę z zablokowania zamówienia. 
@@ -102,7 +108,7 @@ Otwórz kartę **Zaległa kwota**, jeśli reguła blokowania dotyczy odbiorców 
    - Wybierz **Blokowanie**, aby spowodować utworzenie reguły blokującej zamówienie. 
    - Wybierz **Wykluczenie**, aby stworzyć reguły, która będzie wykluczać inną regułę z zablokowania zamówienia. 
 5. Należy wprowadzić **Zaległa kwota** dla wybranej reguły blokowania, zanim zamówienie zostanie umieszczone w wstrzymaniu zarządzania kredytem do przeglądu. 
-6. Umożliwia wybranie **Typu wartości** określającego typ wartości, który zostanie użyty do sprawdzenia, jaka część limitu kredytu została użyta. Reguły blokowania wymagają wartości procentowej, ale wykluczenie może mieć stałą kwotę lub procent. Próg odnosi się do limitu kredytu.
+6. Umożliwia wybranie **Typu wartości** określającego typ wartości, który zostanie użyty do sprawdzenia, jaka część limitu kredytu została użyta. Reguły blokowania i reguły wykluczania zezwalają na wartość procentową tylko dla **Zaległej kwoty**. Próg odnosi się do limitu kredytu.
 7. Umożliwia wprowadzenie **wartości progowej limitu kredytu** dla wybranej reguły przed przejściem odbiorcy do wstrzymania zarządzania kredytem. Może to być kwota lub wartość procentowa na podstawie typu wartości, który można wybrać w polu Typ wartości.
 8. Reguła sprawdza, czy **zaległa kwota** została przekroczona i czy przekroczono **próg limitu kredytu**. 
 
@@ -122,8 +128,6 @@ Wybierz **Zamówienie sprzedaży**, jeśli reguła blokowania ma zastosowanie do
    - Wybierz **Blokowanie**, aby spowodować utworzenie reguły blokującej zamówienie. 
    - Wybierz **Wykluczenie**, aby stworzyć reguły, która będzie wykluczać inną regułę z zablokowania zamówienia. 
 5. Należy wprowadzić **Kwota zamówienia sprzedaży** dla wybranej reguły blokowania, zanim zamówienie zostanie umieszczone w wstrzymaniu zarządzania kredytem. 
-
-Reguła zamówienia sprzedaży zawiera dodatkowe ustawienie, które zastępuje wszystkie inne reguły. Aby utworzyć wykluczenie zwalniające zamówienie sprzedaży bez wpływu na inne reguły, zaznacz pole wyboru **Zwolnij zamówienie sprzedaży** w wierszu wykluczenia.
 
 ### <a name="credit-limit-used"></a>Wykorzystany limit kredytu
 

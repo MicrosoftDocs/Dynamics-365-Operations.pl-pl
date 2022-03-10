@@ -3,25 +3,24 @@ title: Omówienie witryny handlu elektronicznego
 description: Ten temat stanowi omówienie pomocy technicznej dotyczącej witryn handlu elektronicznego w usłudze Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 11/05/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: josaw
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 55c40029082e49c1fbc9d9d5e9361218e5ddc5a0
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: c7f679e8d11b0ec01e912a4ad64f02e50b20f299
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022479"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984576"
 ---
 # <a name="e-commerce-site-overview"></a>Omówienie witryny handlu elektronicznego
 
@@ -47,27 +46,27 @@ Podczas inicjowania witryny handlu elektronicznego wyświetlany jest monit o pod
 
 Po uruchomieniu kreatora witryny Commerce w LCS, wyświetli się strona **Witryny**. Ta strona zawiera dwie wstępnie skonfigurowane witryny, **domyślną** i **fabrikam**, jak pokazano na przykładzie na poniższej ilustracji.
 
-![Strona witryny w module konstruktora witryn Commerce](media/e-commerce-site-01.png)
+![Strona witryny w module konstruktora witryn Commerce.](media/e-commerce-site-01.png)
 
 Po wybraniu jednej z tych witryn wyświetli się monit o wybranie nazwy domeny, domyślnego kanału sklepu internetowego, obsługiwanego języka dla wybranego kanału i ścieżki. Jeśli jest używany tylko jeden kanał, można pozostawić ścieżkę pustą. Więcej kanałów sklepu internetowego lub języków można skonfigurować później w module konstruktora witryn Commerce. Każdy dodatkowy kanał lub język wymaga unikatowej ścieżki. Na przykład istnieją dwa kanały online, które są skojarzone z jedną witryną, a nazwa domeny witryny to `www.fabrikam.com`. W takim przypadku ścieżką dla jednego kanału może być wartość domyślna bez ścieżki (`https://www.fabrikam.com`), a drugim kanałem może być nowa ścieżka, taka jak **site2** z adresem URL `https://www.fabrikam.com/site2`. Na poniższej ilustracji znajduje się przykładowe okno dialogowe inicjalizacji witryny w module konstruktora witryn Commerce.
 
-![Okno dialogowe inicjalizacji witryny w module konstruktora witryn Commerce](media/e-commerce-site-02.png)
+![Okno dialogowe inicjalizacji witryny w module konstruktora witryn Commerce.](media/e-commerce-site-02.png)
 
 Na stronie **Witryny** znajduje się przycisk **Nowa witryna**. Okno dialogowe wyświetlane po wybraniu tego przycisku przypomina okno dialogowe inicjalizacji witryny, ale służy do tworzenia nowej witryny. Nowe witryny są puste. Nie obejmują one tych samych domyślnych szablonów, fragmentów, stron i obrazów dostarczanych z witrynami **domyślnymi** i **fabrikam**. W razie konieczności można otworzyć bilet pomocy technicznej i zwrócić się o dodanie kopii domyślnej zawartości do nowej pustej witryny. Aby uzyskać więcej informacji, przejrzyj temat [Tworzenie witryny handlu elektronicznego](create-ecommerce-site.md).
 
 Po inicjacji nowej witryny wyświetli się **Strona główna** w module konstruktora witryn Commerce. Na tej stronie znajdują się linki do typowych akcji i treści związanych ze wskazówkami, jak to pokazano w przykładzie na poniższej ilustracji.
 
-![Linki na stronie głównej modułu konstruktora witryn Commerce](media/e-commerce-site-03.png)
+![Linki na stronie głównej modułu konstruktora witryn Commerce.](media/e-commerce-site-03.png)
 
 ## <a name="modify-online-store-channels-or-add-online-store-channels-to-an-e-commerce-site"></a>Modyfikowanie kanałów sklepu internetowego lub dodawanie kanałów sklepów internetowych do witryny handlu elektronicznego
 
 Po utworzeniu witryny handlu elektronicznego można zmienić kanał, z którym jest skojarzona, poprzez wykonanie kroków opisanych w artykule [Kojarzenie witryny handlu elektronicznego z kanałem online](associate-site-online-store.md). Przykład w poniższej ilustracji pokazuje, jak można zmienić numer jednostki operacyjnej kanału na stronie **Kanały** (**Ustawienia witryny \> Kanały**). Po zakończeniu wprowadzania zmian wybierz opcję **Zapisz i opublikuj**. W ten sposób masz pewność, że zmiana zostanie opublikowana.
 
-![Strona kanały w module konstruktora witryn Commerce](media/e-commerce-site-04.png)
+![Strona kanały w module konstruktora witryn Commerce.](media/e-commerce-site-04.png)
 
 Aby dodać nowe kanały, należy wybrać opcję **Dodaj kanał**. Aby dodać nowe języki do kanału, wybierz kanał, a następnie wybierz opcję **Dodaj ustawienia regionalne** w wyświetlonym oknie dialogowym kanału. Aby w oknie dialogowym wyświetliły się ustawienia regionalne, należy wstępnie skonfigurować kanał sklepu internetowego w centrali Commerce.
 
-![Okno dialogowe w module konstruktora witryn Commerce](media/e-commerce-site-05.png)
+![Okno dialogowe w module konstruktora witryn Commerce.](media/e-commerce-site-05.png)
 
 ## <a name="set-up-an-azure-b2c-tenant"></a>Skonfiguruj nazwę dzierżawcy B2C Azure
 

@@ -1,98 +1,104 @@
 ---
-title: Rozpocznij pracę z dodatkiem Faktury elektroniczne
-description: Ten temat zawiera informacje, które pomogą w rozpoczęciu pracy z dodatkiem Faktury elektroniczne w rozwiązaniach Microsoft Dynamics 365 Finance i Dynamics 365 Supply Chain Management.
+title: Rozpoczynanie pracy z fakturowaniem elektronicznym
+description: Ten temat zawiera informacje, które pomogą w rozpoczęciu pracy z Faktury elektroniczne w rozwiązaniach Microsoft Dynamics 365 Finance i Dynamics 365 Supply Chain Management.
 author: gionoder
-manager: AnnBe
-ms.date: 02/03/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 97423
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 07954c5c96f390bc651794f8b6c61f2a1a17ab8b
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: ebef9cf97f7a91e0a2fd45f5e0e0fc620070b42a
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5111227"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779701"
 ---
-# <a name="get-started-with-the-electronic-invoicing-add-on"></a>Rozpocznij pracę z dodatkiem Faktury elektroniczne
+# <a name="get-started-with-electronic-invoicing"></a>Rozpoczynanie pracy z fakturowaniem elektronicznym
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje, które pomogą w rozpoczęciu pracy z dodatkiem Faktury elektroniczne.
-
-W poniższej tabeli wymieniono funkcje fakturowania elektronicznego oraz dokumenty biznesowe, których można używać.
-
-| Nazwa funkcji                         | Dokument biznesowy |
-|--------------------------------------|-------------------|
-| Faktury elektroniczne w Austrii (AT)    | <p>Faktura sprzedaży</p><p>Faktura projektu</p> |
-| Faktura elektroniczna w Belgii (BE)      | <p>Faktura sprzedaży</p><p>Faktura projektu</p> |
-| Brazylijski NF-e (BR)                  | <p>Dokument fiskalny modelu 55</p><p>List korygujący</p> |
-| Brazylijski NFS-e ABRASF Curitiba (BR) | Obsługa dokumentów fiskalnych |
-| Brazylijski NFS-e São Paulo (BR)       | Obsługa dokumentów fiskalnych |
-| Duńska faktura elektroniczna (DK)       | <p>Faktura sprzedaży</p><p>Faktura projektu</p> |
-| Egipska faktura elektroniczna (EG)     | <p>Faktura sprzedaży</p><p>Faktura projektu</p> |
-| Estońska faktura elektroniczna (EE)     | <p>Faktura sprzedaży</p><p>Faktura projektu</p> |
-| Fińska faktura elektroniczna (FI)       | <p>Faktura sprzedaży</p><p>Faktura projektu</p> |
-| Francuska faktura elektroniczna (FR)       | <p>Faktura sprzedaży</p><p>Faktura projektu</p> |
-| Niemiecka faktura elektroniczna (DE)       | <p>Faktura sprzedaży</p><p>Faktura projektu</p> |
-| FatturaPA (IT)                       | <p>Faktura sprzedaży</p><p>Faktura projektu</p> |
-| Meksykańskie CFDI Interfactura (MX)       | <p>Faktura sprzedaży</p><p>Dokument dostawy</p><p>Przeniesienie magazynowe</p><p>Dopełnienie płatności</p> |
-| Holenderska faktura elektroniczna (NL)        | <p>Faktura sprzedaży</p><p>Faktura projektu</p> |
-| Norweska faktura elektroniczna (NIE)    | <p>Faktura sprzedaży</p><p>Faktura projektu</p> |
-| Hiszpańska faktura elektroniczna (ES)      | <p>Faktura sprzedaży</p><p>Faktura projektu</p> |
-| Faktura elektroniczna PEPPOL            | <p>Faktura sprzedaży</p><p>Faktura projektu</p> |
+Ten temat zawiera informacje, które pomogą w rozpoczęciu pracy z Faktury elektroniczne. W tym temacie pokieruje użytkownika przez typowe kroki konfiguracji w usługach Regulatory Configuration Services (RCS) i Dynamics 365 Finance i wyjaśnimy kroki, które należy wykonać, aby przesłać dokumenty biznesowe i przejrzeć wyniki ich przetwarzania.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
 Przed wykonaniem procedur opisanych w tym temacie muszą być spełnione następujące wymagania wstępne:
 
-- Skonfiguruj usługę Regulatory Configuration Services (RCS) i środowisko Microsoft Dynamics 365 Finance lub Dynamics 365 Supply Chain Management, tak aby można było przesłać do dodatku Fakturowanie elektroniczne.
-- Utwórz środowisko usługi i opublikuj je w dodatku Fakturowanie elektroniczne. Aby uzyskać więcej informacji, zobacz temat [Wprowadzenie do administrowania usługą dodatku Fakturowanie elektroniczne](e-invoicing-get-started-service-administration.md).
-- Utwórz połączoną aplikację. Aby uzyskać więcej informacji, zobacz temat [Wprowadzenie do administrowania usługą dodatku Fakturowanie elektroniczne](e-invoicing-get-started-service-administration.md).
+- Skonfiguruj Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS) oraz środowisko Microsoft Dynamics 365 Finance lub Dynamics 365 Supply Chain Management. Aby uzyskać więcej informacji, zobacz temat [Wprowadzenie do administrowania usługą Fakturowanie elektroniczne](e-invoicing-get-started-service-administration.md).
 - Utwórz dostawcę konfiguracji dla swojej organizacji. Dalsze informacje znajdują się w temacie [Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 ## <a name="import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider"></a>Importuj funkcję fakturowania elektronicznego od dostawcy konfiguracji firmy Microsoft 
 
 1. Zaloguj się na konto usługi Regulatory Configuration Services (RCS).
-2. Otwórz nowy obszar roboczy **Funkcja globalizacji**, a następnie w obszarze **Funkcje** wybierz kafelek **Fakturowanie elektroniczne**.
+2. Otwórz nowy obszar roboczy **Funkcje globalizacji**, a następnie w obszarze **Funkcje** wybierz kafelek **Faktury elektroniczne**.
 3. Wybierz opcję **Import**, a następnie wybierz opcję **Synchronizuj**.
 4. Filtruj kolumnę **Dostawca konfiguracji** według terminu **Microsoft**.
-5. Wybierz nazwę funkcji fakturowania elektronicznego z tabeli na początku tego tematu, a następnie wybierz pozycję **Importuj**.
+5. Wybierz nazwę funkcji fakturowania elektronicznego z tabeli, a następnie wybierz pozycję **Importuj**.
 
 ## <a name="create-an-electronic-invoicing-feature-under-your-organization-provider"></a>Utwórz funkcję fakturowania elektronicznego u swojego dostawcy organizacji
 
-1. W RCS w sekcji **Funkcje** w obszarze roboczym **Funkcja globalizacji** wybierz kafelek **Fakturowanie elektroniczne**.
+1. W RCS w obszarze **Funkcje** obszaru roboczego **Funkcje globalizacji**, wybierz kafelek **Faktury elektroniczne**.
 2. Wybierz opcję **Dodaj** > **Na podstawie istniejącej funkcji**, a następnie w polu **Nazwa** wprowadź nazwę funkcji fakturowania elektronicznego.
 3. W polu **Opis** wprowadź opis funkcji.
 4. W **polu Funkcja podstawowa** wybierz zaimportowaną funkcję fakturowania elektronicznego od dostawcy konfiguracji firmy Microsoft.
 5. Wybierz opcję **Utwórz funkcję**.
 
-## <a name="configure-the-electronic-invoicing-feature"></a>Skonfiguruj funkcję fakturowania elektronicznego
+## <a name="country-specific-configuration-for-electronic-invoicing-feature"></a>Specyficzna dla kraju konfiguracja funkcji fakturowania elektronicznego
 
-W zależności od kraju lub regionu funkcja Fakturowanie elektroniczne może wymagać dodatkowej konfiguracji. Aby uzyskać szczegółowe informacje o tych krokach, zobacz dokumentację „Wprowadzenie” dla danego kraju lub regionu.
+W zależności od kraju lub regionu funkcja Fakturowanie elektroniczne może wymagać konkretnej konfiguracji. 
+
+> [!NOTE]
+> Włączenie funkcji fakturowania elektronicznego w Finlandii nie umożliwia obsługi parametrów specyficznych dla aplikacji w wyszukiwaniach. Aby pracować nad tym problemem, w module **Raportowanie elektroniczne** przejrzyj konfiguracje formatów faktur sprzedaży i faktur projektu. Ręcznie skonfiguruj pole obliczeniowe na **$PaymentMethodSubstitution** projektu, a następnie powiąż to pole z polem **EpiPaymentMeansCode** w formacie Faktura sprzedaży i Faktura projektu.
+>
+> Włączenie funkcji fakturowania elektronicznego we Włoszech nie umożliwia obsługi parametrów specyficznych dla aplikacji w wyszukiwaniach. Aby pracować nad tym problemem, w module **Raportowanie elektroniczne** ręcznie skonfiguruj pole obliczeniowe na mapowanie **$NaturaReverseCharge**.
+>
+> Aby uzyskać szczegółowe kroki, które są związane z innymi lokalizacjami, zapoznaj się z dokumentacją „Rozpocznij” dostępną dla Twojego kraju lub regionu.
+
+## <a name="import-the-model-mapping-configurations-from-electronic-reporting"></a>Importowanie konfiguracji mapowania modeli na potrzeby raportowania elektronicznego
+
+1. W rcS wybierz obszar roboczy **Raportowanie elektroniczne**.
+2. Wybierz dostawcę Konfiguracji **Microsoft**, a następnie **repozytoria**.
+3. Wybierz opcję **Globalna** i w okienku akcji wybierz opcję **Otwórz**.
+4. Zaimportuj konfiguracje mapowania modelu zgodnie z następującą tabelą według nazwy funkcji.
+
+| Nazwa funkcji                         | Sesja mapowania konfiguracji modelu |
+|--------------------------------------|-----------------------------|
+| Faktury elektroniczne w Austrii (AT)    | <p>Model kontekstowy faktur sprzedaży</p><p>Model faktury</p> |
+| Faktura elektroniczna w Belgii (BE)      | <p>Model kontekstowy faktur sprzedaży</p><p>Model faktury</p> |
+| Brazylijski NF-e (BR)                  | <p>Model kontekstowy faktur sprzedaży</p><p>Dokumenty fiskalne</p><p>Model komunikatu odpowiedzi</p> |
+| Brazylijski NFS-e ABRASF Curitiba (BR) | <p>Model kontekstowy faktur sprzedaży</p><p>Dokumenty fiskalne</p><p>Model komunikatu odpowiedzi</p> |
+| Duńska faktura elektroniczna (DK)       | <p>Model kontekstowy faktur sprzedaży</p><p>Model faktury</p> |
+| Egipska faktura elektroniczna (EG)     | <p>Model kontekstowy faktur sprzedaży</p><p>Model faktury</p><p>Model komunikatu odpowiedzi</p> |
+| Estońska faktura elektroniczna (EE)     | <p>Model kontekstowy faktur sprzedaży</p><p>Model faktury</p> |
+| Fińska faktura elektroniczna (FI)       | <p>Model kontekstowy faktur sprzedaży</p><p>Model faktury</p> |
+| Francuska faktura elektroniczna (FR)       | <p>Model kontekstowy faktur sprzedaży</p><p>Model faktury</p> |
+| Niemiecka faktura elektroniczna (DE)       | <p>Model kontekstowy faktur sprzedaży</p><p>Model faktury</p> |
+| FatturaPA (IT)                       | <p>Model kontekstowy faktur sprzedaży</p><p>Model faktury</p> |
+| Meksykańskie CFDI Interfactura (MX)       | <p>Model kontekstowy faktur sprzedaży</p><p>Model faktury</p><p>Model komunikatu odpowiedzi</p> |
+| Holenderska faktura elektroniczna (NL)        | <p>Model kontekstowy faktur sprzedaży</p><p>Model faktury</p> |
+| Norweska faktura elektroniczna (NIE)    | <p>Model kontekstowy faktur sprzedaży</p><p>Model faktury</p> |
+| Hiszpańska faktura elektroniczna (ES)      | <p>Model kontekstowy faktur sprzedaży</p><p>Model faktury</p> |
+| Faktura elektroniczna PEPPOL            | <p>Model kontekstowy faktur sprzedaży</p><p>Model faktury</p> |
+| Faktury elektroniczne dla Arabii Saudyjskiej (SA)| <p>Model kontekstowy faktur sprzedaży</p><p>Model faktury</p> |
+
 
 ## <a name="configure-the-application-setup"></a>Skonfiguruj ustawienia aplikacji
 
 1. Wybierz utworzoną funkcję fakturowania elektronicznego.
-2. Na karcie **Wersja** sprawdź, czy jest wybrana **Wersja robocza**.
-3. Na karcie **Konfiguracje** wybierz opcję **Ustawienia aplikacji**.
-
-    > [!NOTE]
-    > Sprawdź, czy Twoja organizacja jest ustawiona jako **Aktywny** dostawca konfiguracji. Dalsze informacje znajdują się w temacie [Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych.](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
-
-4. Wybierz opcję **Konfiguracja funkcji**, a następnie wybierz pozycję **Połączona aplikacja**.
-5. W sekcji **Elektroniczne typy dokumentów** wybierz przycisk **Dodaj**.
-6. W przypadku każdego dokumentu biznesowego, który obsługuje funkcja, wybierz i wprowadź wartość w **Nazwie tabeli** zgodnie z następującą tabelą.
+2. Na karcie **Konfiguracje** wybierz opcję **Ustawienia aplikacji**.
+3. W polu **Połącz aplikację** wybierz połączenie skojarzone z wystąpieniem zarządzaniem Finance lub Supply Chain Management.
+4. W sekcji **Elektroniczne typy dokumentów** wybierz przycisk **Dodaj**.
+5. Wybierz i wprowadź **wartość nazwy tabeli** zgodnie z następującą tabelą.
 
     | Nazwa funkcji                         | Dokument biznesowy | Nazwa tabeli |
     |--------------------------------------|-------------------|------------|
@@ -100,7 +106,6 @@ W zależności od kraju lub regionu funkcja Fakturowanie elektroniczne może wym
     | Faktura elektroniczna w Belgii (BE)      | <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Arkusz faktur dla odbiorcy</p><p>Faktura projektu</p> |
     | Brazylijski NF-e (BR)                  | <p>Dokument fiskalny</p><p>List korygujący</p> | Dokument fiskalny |
     | Brazylijski NFS-e ABRASF Curitiba (BR) | Obsługa dokumentów fiskalnych | Dokument fiskalny |
-    | Brazylijski NFS-e São Paulo (BR)       | Obsługa dokumentów fiskalnych | Dokument fiskalny |
     | Duńska faktura elektroniczna (DK)       | <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Arkusz faktur dla odbiorcy</p><p>Faktura projektu</p> |
     | Egipska faktura elektroniczna (EG)     | <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Arkusz faktur dla odbiorcy</p><p>Faktura projektu</p> |
     | Estońska faktura elektroniczna (EE)     | <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Arkusz faktur dla odbiorcy</p><p>Faktura projektu</p> |
@@ -113,8 +118,9 @@ W zależności od kraju lub regionu funkcja Fakturowanie elektroniczne może wym
     | Norweska faktura elektroniczna (NIE)    | <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Arkusz faktur dla odbiorcy</p><p>Faktura projektu</p> |
     | Hiszpańska faktura elektroniczna (ES)      | <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Arkusz faktur dla odbiorcy</p><p>Faktura projektu</p> |
     | Faktura elektroniczna PEPPOL            | <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Arkusz faktur dla odbiorcy</p><p>Faktura projektu</p> |
+    | Faktury elektroniczne dla Arabii Saudyjskiej (SA)| <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Arkusz faktur dla odbiorcy</p><p>Faktura projektu</p> |
 
-7. W przypadku każdego dokumentu biznesowego, który obsługuje funkcja, wybierz i wprowadź wartość w **Kontekst** zgodnie z następującą tabelą.
+6. Dla każdej utworzonej nazwy tabeli wybierz i wprowadź wartość kontekstu zgodnie z poniższą tabelą.
 
     | Nazwa funkcji                         | Dokument biznesowy | Kontekst |
     |--------------------------------------|-------------------|---------|
@@ -122,7 +128,6 @@ W zależności od kraju lub regionu funkcja Fakturowanie elektroniczne może wym
     | Faktura elektroniczna w Belgii (BE)      | <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Model kontekstu faktury dla odbiorcy — kontekst faktury dla odbiorcy</p><p>Model kontekstu faktury dla odbiorcy — Kontekst faktury za projekt</p> |
     | Brazylijski NF-e (BR)                  | <p>Dokument fiskalny</p><p>List korygujący</p> | <p>Model kontekstu faktury dla odbiorcy — Kontekst dokumentu fiskalnego</p><p>Model kontekstu faktury dla odbiorcy — Kontekst listu korekcyjnego FD</p> |
     | Brazylijski NFS-e ABRASF Curitiba (BR) | Obsługa dokumentów fiskalnych| Model kontekstu faktury dla odbiorcy — Kontekst dokumentu fiskalnego |
-    | Brazylijski NFS-e São Paulo (BR)       | Obsługa dokumentów fiskalnych| Model kontekstu faktury dla odbiorcy — Kontekst dokumentu fiskalnego |
     | Duńska faktura elektroniczna (DK)       | <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Model kontekstu faktury dla odbiorcy — kontekst faktury dla odbiorcy</p><p>Model kontekstu faktury dla odbiorcy — Kontekst faktury za projekt</p> |
     | Egipska faktura elektroniczna (EG)     | <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Model kontekstu faktury dla odbiorcy — kontekst faktury dla odbiorcy</p><p>Model kontekstu faktury dla odbiorcy — Kontekst faktury za projekt</p> |
     | Estońska faktura elektroniczna (EE)     | <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Model kontekstu faktury dla odbiorcy — kontekst faktury dla odbiorcy</p><p>Model kontekstu faktury dla odbiorcy — Kontekst faktury za projekt</p> |
@@ -135,8 +140,9 @@ W zależności od kraju lub regionu funkcja Fakturowanie elektroniczne może wym
     | Norweska faktura elektroniczna (NIE)    | <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Model kontekstu faktury dla odbiorcy — kontekst faktury dla odbiorcy</p><p>Model kontekstu faktury dla odbiorcy — Kontekst faktury za projekt</p> |
     | Hiszpańska faktura elektroniczna (ES)      | <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Model kontekstu faktury dla odbiorcy — kontekst faktury dla odbiorcy</p><p>Model kontekstu faktury dla odbiorcy — Kontekst faktury za projekt</p> |
     | Faktura elektroniczna PEPPOL            | <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Model kontekstu faktury dla odbiorcy — kontekst faktury dla odbiorcy</p><p>Model kontekstu faktury dla odbiorcy — Kontekst faktury za projekt</p> |
+    | Faktury elektroniczne dla Arabii Saudyjskiej (SA)| <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Model kontekstu faktury dla odbiorcy — kontekst faktury dla odbiorcy</p><p>Model kontekstu faktury dla odbiorcy — Kontekst faktury za projekt</p> |
 
-8. W przypadku każdego dokumentu biznesowego, który obsługuje funkcja, wybierz i wprowadź wartość w **Mapowanie dokumentów biznesowych** zgodnie z następującą tabelą.
+7. Dla każdej nazwy tabeli i kontekstu wybierz i wprowadź wartość odwzorowania dokumentu biznesowego zgodnie z poniższą tabelą.
 
     | Nazwa funkcji                         | Dokument biznesowy | Mapowanie dokumentu biznesowego |
     |--------------------------------------|-------------------|---------------------------|
@@ -144,7 +150,6 @@ W zależności od kraju lub regionu funkcja Fakturowanie elektroniczne może wym
     | Faktura elektroniczna w Belgii (BE)      | <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Mapowanie modelu faktury — faktura dla odbiorcy</p><p>Mapowanie modelu faktury — Faktura za projekt</p> |
     | Brazylijski NF-e (BR)                  | <p>Dokument fiskalny</p><p>List korygujący</p> | <p>Mapowanie dokumentu fiskalnego – mapowanie dokumentu fiskalnego</p><p>Mapowanie dokumentu fiskalnego — mapowanie listu korygującego</p> |
     | Brazylijski NFS-e ABRASF Curitiba (BR) | Obsługa dokumentów fiskalnych | Mapowanie dokumentu fiskalnego – mapowanie dokumentu fiskalnego |
-    | Brazylijski NFS-e São Paulo (BR)       | Obsługa dokumentów fiskalnych | Mapowanie dokumentu fiskalnego – mapowanie dokumentu fiskalnego |
     | Duńska faktura elektroniczna (DK)       | <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Mapowanie modelu faktury — faktura dla odbiorcy</p><p>Mapowanie modelu faktury — Faktura za projekt</p> |
     | Egipska faktura elektroniczna (EG)     | <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Mapowanie modelu faktury — faktura dla odbiorcy</p><p>Mapowanie modelu faktury — Faktura za projekt</p> |
     | Estońska faktura elektroniczna (EE)     | <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Mapowanie modelu faktury — faktura dla odbiorcy</p><p>Mapowanie modelu faktury — Faktura za projekt</p> |
@@ -157,54 +162,69 @@ W zależności od kraju lub regionu funkcja Fakturowanie elektroniczne może wym
     | Norweska faktura elektroniczna (NIE)    | <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Mapowanie modelu faktury — faktura dla odbiorcy</p><p>Mapowanie modelu faktury — Faktura za projekt</p> |
     | Hiszpańska faktura elektroniczna (ES)      | <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Mapowanie modelu faktury — faktura dla odbiorcy</p><p>Mapowanie modelu faktury — Faktura za projekt</p> |
     | Faktura elektroniczna PEPPOL            | <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Mapowanie modelu faktury — faktura dla odbiorcy</p><p>Mapowanie modelu faktury — Faktura za projekt</p> |
+    | Faktury elektroniczne dla Arabii Saudyjskiej (SA)| <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Mapowanie modelu faktury — faktura dla odbiorcy</p><p>Mapowanie modelu faktury — Faktura za projekt</p> |
 
-W zależności od kraju lub regionu funkcja Fakturowanie elektroniczne może wymagać dodatkowej konfiguracji. Aby uzyskać szczegółowe informacje o tych krokach, zobacz dokumentację „Wprowadzenie” dla danego kraju lub regionu.
 
-## <a name="deploy-the-electronic-invoicing-feature"></a>Wdróż funkcję fakturowania elektronicznego
+## <a name="country-specific-configuration-of-application-setup"></a>Specyficzna dla kraju konfiguracja aplikacji
+
+W zależności od kraju lub regionu konfiguracja Aplikacji może wymagać konkretnej konfiguracji. 
+
+Aby uzyskać szczegółowe informacje o tych krokach, zobacz dokumentację „Wprowadzenie” dla danego kraju lub regionu.
+
+## <a name="deploy-the-electronic-invoicing-feature-to-service-environment"></a>Wdrażanie funkcji fakturowania elektronicznego w środowisku usługi
 
 1. Na karcie **Wersje** wybierz wersję funkcji fakturowania elektronicznego, którą chcesz wdrożyć.
 2. Wybierz **Zmień status** \> **Zakończone**.
 3. Wybierz **Zmień status** \> **Opublikuj**.
 4. Wybierz pozycję **Wdrażaj**.
-5. Dla opcji **Wdrażanie połączonej aplikacji** ustaw wartość **Tak**.
-6. Na stronie **Połącz aplikację** wybierz połączenie skojarzone z wystąpieniem zarządzaniem Finance lub Supply Chain Management.
-7. Dla opcji **Wdróż w środowisku usługowym** ustaw wartość **Tak**.
-8. W polu **Środowisko usługi** wybierz środowisko usługi dodatkowe fakturowania elektronicznego, w którym chcesz wdrożyć funkcję fakturowania elektronicznego.
-9. W polu **Od dnia** wybierz datę, od kiedy funkcja fakturowania elektronicznego musi zostać w dostępna w dodatku Fakturowanie elektroniczne.
-10. Kliknij przycisk **OK**.
+5. Dla opcji **Wdrażanie połączonej aplikacji** ustaw wartość **Nie**.
+6. Dla opcji **Wdróż w środowisku usługowym** ustaw wartość **Tak**.
+7. W polu **Środowisko usługi** wybierz środowisko usługi fakturowania elektronicznego, w którym chcesz wdrożyć funkcję fakturowania elektronicznego.
+8. W polu **Od dnia** wybierz datę, od kiedy funkcja fakturowania elektronicznego musi zostać w dostępna w Fakturowanie elektroniczne.
+9. Kliknij przycisk **OK**.
+
+## <a name="deploy-the-electronic-invoicing-feature-to-connected-application"></a>Wdrażanie funkcji fakturowania elektronicznego w Połączonej aplikacji
+
+1. Na karcie **Wersje** wybierz wersję funkcji fakturowania elektronicznego, którą chcesz wdrożyć.
+2. Wybierz pozycję **Wdrażaj**.
+3. Dla opcji **Wdrażanie połączonej aplikacji** ustaw wartość **Tak**.
+4. W polu **Połącz aplikację** wybierz połączenie skojarzone z wystąpieniem zarządzaniem Finance lub Supply Chain Management.
+5. Dla opcji **Wdróż w środowisku usługowym** ustaw wartość **Nie**.
+6. Kliknij przycisk **OK**.
 
 ## <a name="turn-on-the-electronic-invoicing-feature-in-finance-or-supply-chain-management"></a>Włącz funkcję Fakturowanie elektroniczne w Finance lub Supply Chain Management
 
 1. Zaloguj się do Finance lub Supply Chain Management i sprawdź, czy jesteś we właściwej firmie.
 2. Przejdź do **Administrowanie organizacją** \> **Konfiguracja** \> **Parametry dokumentu elektronicznego**.
-3. Na karcie **Funkcje** wybierz odwołanie do funkcji lub odwołania wymienione w poniższej tabeli, aby włączyć funkcję fakturowania elektronicznego w Finance lub Supply Chain Management.
+3. Na karcie **Funkcje** wybierz funkcję specyficzną dla kraju/regionu, aby włączyć funkcję Fakturowanie elektroniczne w części Finance lub Supply Chain Management. W poniższej tabeli przedstawiono listę funkcji fakturowania elektronicznego dostępnych dla określonych krajów/regionów. 
 
-    | Nazwa funkcji                         | Kraj/region  | Odwołanie do funkcji |
-    |--------------------------------------|-----------------|-------------------|
-    | Faktury elektroniczne w Austrii (AT)    | Austria         | EUR-00023 |
-    | Faktura elektroniczna w Belgii (BE)      | Belgia         | EUR-00023 |
-    | Brazylijski NF-e (BR)                  | Brazylia          | BR-00053 |
-    | Brazylijski NFS-e ABRASF Curitiba (BR) | Brazylia          | BR-00095 |
-    | Brazylijski NFS-e São Paulo (BR)       | Brazylia          | BR-00095 |
-    | Duńska faktura elektroniczna (DK)       | Dania         | <p>EUR-00023</p><p>DK-00001</p> |
-    | Holenderska faktura elektroniczna (NL)        | Holandia | EUR-00023 |
-    | Egipska faktura elektroniczna (EG)     | Egipt           | EG-00008 |
-    | Estońska faktura elektroniczna (EE)     | Estonia         | EUR-00023 |
-    | Fińska faktura elektroniczna (FI)      | Finlandia         | EUR-00023 |
-     Francuska faktura elektroniczna (FR)       | Francja           | EUR-00023 |
-    | Niemiecka faktura elektroniczna (DE)       | Niemcy         | EUR-00023 |
-    | Meksykańskie CFDI Interfactura (MX)       | Meksyk          | <p>MX-00010</p><p>MX-00016</p> |
-    | Norweska faktura elektroniczna (NIE)    | Norwegia          | <p>EUR-00023</p><p>NO-00010</p> |
-    | Hiszpańska faktura elektroniczna (ES)      | Hiszpania           | <p>EUR-00023</p><p>ES-00025</p> |
-    | Włoska faktura elektroniczna (IT)      | Włochy           | <p>EUR-00023</p><p>IT-00036</p> |
-    | Faktura elektroniczna PEPPOL            | Europa          | EUR-00023 |
+    | Nazwa funkcji                                          | Kraj/region  |
+    |-------------------------------------------------------|-----------------|
+    | Faktury elektroniczne w Austrii (AT)                     | Austria         |
+    | Faktura elektroniczna w Belgii (BE)                       | Belgia         |
+    | Meksykański faktura elektroniczna CFDI (MX)                  | Meksyk          |
+    | Duńska faktura elektroniczna (DK)                        | Dania         |
+    | Holenderska faktura elektroniczna (NL)                         | Holandia |
+    | Egipska faktura elektroniczna (EG)                      | Egipt           |
+    | Estońska faktura elektroniczna (EE)                      | Estonia         |
+    | Fińska faktura elektroniczna (FI)                       | Finlandia         |
+    | Francuska faktura elektroniczna (FR)                        | Francja          |
+    | Niemiecka faktura elektroniczna (DE)                        | Niemcy         |
+    | Włoska faktura elektroniczna (IT)                       | Włochy           |
+    | NF-e Federal — Brazylijska faktura elektroniczna (BR)      | Brazylia          |
+    | NFS-e — faktura elektroniczna usługi brazylijskiej (miasto)   | Brazylia          |
+    | Norweska faktura elektroniczna (NIE)                     | Norwegia          |
+    | Faktura elektroniczna PEPPOL                             | Globalnie          |
+    | Hiszpańska faktura elektroniczna (ES)                       | Hiszpania           |
+    | Faktury elektroniczne dla Arabii Saudyjskiej (SA)                 | Arabia Saudyjska    |
+    
 
 4. Wybierz opcję **Zapisz**.
 
 ## <a name="issue-electronic-invoices"></a>Wystawiaj faktury elektroniczne
 
 1. Przejdź do **Administrowanie organizacją** \> **Okresowe** \> **Dokumenty elektroniczne** \> **Prześlij dokumenty elektroniczne**.
-2. Na skróconej karcie **Rekord do uwzględnienia** wybierz opcję **Filtr**.
+2. W **Rekordy do uwzględnienia** na skróconej karcie, wybierz opcję **Filtr**.
 3. Wybierz przycisk **Dodaj**, aby dodać nazwę tabeli do filtru kwerendy.
 4. Wybierz tabelę zawierającą faktury.
 
@@ -226,12 +246,24 @@ W zależności od kraju lub regionu funkcja Fakturowanie elektroniczne może wym
 
 3. Wybierz fakturę w siatce, a następnie wybierz opcję **Zapytanie** \> **Szczegóły przesłania**.
 
-W zależności od kraju lub regionu funkcja Fakturowanie elektroniczne może wymagać dodatkowej konfiguracji. Aby uzyskać szczegółowe informacje o tych krokach, zobacz dokumentację „Wprowadzenie” dla danego kraju lub regionu.
+## <a name="download-an-electronic-document-file"></a>Pobierz plik dokumentu elektronicznego
+
+1. Przejdź do **Administrowanie organizacją** \> **Okresowe** \> **Dokumenty elektroniczne** \> **Dziennik przysłania dokumentów elektronicznych**.
+2. W polu **Typ dokumentu** wybierz tabelę zawierającą faktury.
+3. Wybierz dokument w siatce, a następnie wybierz **Dokument elektroniczny** \> **Pobieranie pliku**. Do pobrania zostanie zasugerowane archiwum zawierające plik dokumentu elektronicznego.
+
+> [!NOTE]
+> Aby było można pobierać pliki, opcja **Wynik eksportu** musi być włączona dla pokrewnej akcji w ustawieniach funkcji fakturowania elektronicznego w pliku RCS.
 
 ## <a name="related-topics"></a>Powiązane tematy
 
-- [Omówienie dodatku do fakturowania elektronicznego](e-invoicing-service-overview.md)
-- [Rozpocznij pracę z dodatkiem Faktury elektroniczne dla Brazylii](e-invoicing-bra-get-started.md)
-- [Rozpocznij pracę z dodatkiem Faktury elektroniczne dla Meksyku](e-invoicing-mex-get-started.md)
-- [Rozpocznij pracę z dodatkiem Faktury elektroniczne dla Włoch](e-invoicing-ita-get-started.md)
+- [Omówienie fakturowania elektronicznego](e-invoicing-service-overview.md)
+- [Rozpoczynanie pracy z fakturowaniem elektronicznym — administrowanie usługami](e-invoicing-get-started-service-administration.md)
+- [Rozpoczynanie pracy z fakturowaniem elektronicznym dla Brazylii](e-invoicing-bra-get-started.md)
+- [Rozpoczynanie pracy z fakturowaniem elektronicznym dla Meksyku](e-invoicing-mex-get-started.md)
+- [Rozpoczynanie pracy z fakturowaniem elektronicznym dla Włoch](e-invoicing-ita-get-started.md)
 - [Faktury elektroniczne odbiorcy w Egipcie](emea-egy-e-invoices.md)
+- [Faktury elektroniczne dla odbiorcy w Arabii Saudyjskiej](emea-sau-e-invoices.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

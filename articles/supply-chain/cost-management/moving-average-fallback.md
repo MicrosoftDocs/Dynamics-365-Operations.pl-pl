@@ -11,15 +11,17 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2020-03-25
-ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 09da3c3a79b5540670db25d5466023132d2848f4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: 10.0.11
+ms.openlocfilehash: d91b3b4b8d49e59aa03d62f4dd101b5a1ec18c41
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832281"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568214"
 ---
 # <a name="moving-average-fallback-cost-sequence"></a>Średnia ruchoma sekwencji kosztu rezerwowego
+
+[!include [banner](../includes/banner.md)]
 
 Jednym ze sposobów obliczania kosztów zapasów jest użycie _średniej ruchomej_. Z każdym towarem magazynowym można skojarzyć maksymalnie trzy wartości kosztów:
 
@@ -42,7 +44,7 @@ Aby wybrać sekwencję kosztów rezerwowych dla obliczeń średniej ruchomej, na
     - **Aktywny koszt — Ostatni problem**
     - **Koszt aktywny — cena towaru** — w organizacjach mogą występować problemy z wydajnością, jeśli są one używane w procesach biznesowych, w których zapasy są zwykle ujemne, a jednocześnie objętość transakcji jest wysoka. To ustawienie pomaga złagodzić te problemy z wydajnością.
 
-![Parametry księgowania zapasów](media/inventory-accounting-parameters.png "Parametry księgowania zapasów")
+![Parametry księgowania zapasów.](media/inventory-accounting-parameters.png "Parametry księgowania zapasów")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

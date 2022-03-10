@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6eb052b640d2418f6ddd1a06b1b0d529074b7f89
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: f86529359f548bf48fdef8817bd2e2260235561cce57cac28158739687ade2c1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6355066"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6779963"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Zasady akumulacji kosztów i obliczanie narzutu 
 
@@ -69,7 +69,7 @@ Hierarchię wymiarów spełniającą wymagania sprawozdawcze organizacji można 
 
 | Nazwa hierarchii wymiarów | Wymiar    | Nazwa typu hierarchii wymiarów      | Hierarchia list dostępu |
 |--------------------------|--------------|------------------------------------|-----------------------|
-| Organizacja             | Centra kosztów | Hierarchia klasyfikacji wymiarów | Nr                    |
+| Organizacja             | Centra kosztów | Hierarchia klasyfikacji wymiarów | Nie                    |
 
 **Hierarchia wymiarów**
 

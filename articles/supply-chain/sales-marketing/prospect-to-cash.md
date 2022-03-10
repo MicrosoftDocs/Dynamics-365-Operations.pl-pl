@@ -1,12 +1,10 @@
 ---
 title: Prospekt na gotówkę
 description: Ten temat zawiera omówienie rozwiązania Prospekt na gotówkę działającego między Dynamics 365 Supply Chain Management i Dynamics 365 Sales.
-author: ChristianRytt
-manager: tfehr
+author: Henrikan
 ms.date: 04/25/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustTable, SalesTable, EcoResProductListPage
 audience: Application User, IT Pro
@@ -15,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: b2f2f7d95d3f0e6bd774c43024836aac1f729abd
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b96f22d711ce5b34c2f8de5a86caf5f89dd3f337
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4977645"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578999"
 ---
 # <a name="prospect-to-cash"></a>Od prospekta do gotówki
 
@@ -81,3 +79,6 @@ Aby skorzystać z rozwiązania Prospekt na gotówkę, należy zainstalować nast
 
 - Dynamics 365 Sales wersja 1612 (8.2.1.207) (DB 8.2.1.207) online lub nowsza
 - Rozwiązanie Prospekt na gotówkę (P2C) dla programu Dynamics 365 Sales, wersja 1.15.0.0 lub nowsza. To rozwiązanie jest dostępne do pobrania z usługi AppSource. [Pobierz rozwiązanie Prospekt na gotówkę dla programu Dynamics 365](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

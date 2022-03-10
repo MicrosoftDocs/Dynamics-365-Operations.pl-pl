@@ -1,27 +1,29 @@
 ---
 title: Omówienie konfiguracji produktu
 description: Konieczność konfigurowania produktów spełniających specjalne oczekiwania coraz częściej jest normą, a nie wyjątkiem, zarówno w relacjach między firmami, jak i między firmą a konsumentem.
-author: cvocph
+author: t-benebo
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: PCProductConfigurationModelDetails, ConfigPartOf
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 75083
+ms.custom:
+- "75083"
+- intro-internal
 ms.assetid: f08072b8-cb0b-43aa-9509-f5ec32caecd9
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7d37b1c8ed23bf93f0480c76e10b8aaed86fe2a2
-ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
+ms.openlocfilehash: 62411bff436d34e3d311b078b1bf8f886e5902d6
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "6015984"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983374"
 ---
 # <a name="product-configuration-overview"></a>Omówienie konfiguracji produktu
 
@@ -142,7 +144,7 @@ Interfejs API jest implementowany przy użyciu zestawu klas **PCAdaptor** udost�
 
 Na poniższym diagramie API opisano ten proces.  
 
-[![Diagram przepływu](./media/product_configuration_2.png)](./media/product_configuration_2.png)  
+[![Diagram przepływu.](./media/product_configuration_2.png)](./media/product_configuration_2.png)  
 
 ## <a name="configure-products"></a>Konfigurowanie produktów
 

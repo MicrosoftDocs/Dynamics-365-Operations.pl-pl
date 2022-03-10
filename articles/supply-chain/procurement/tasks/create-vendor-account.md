@@ -1,7 +1,7 @@
 ---
 title: Utworzenie konta dostawcy
 description: W tej procedurze pokazano, jak utworzyć konto dostawcy oraz dodać informacje adresowe i kontaktowe.
-author: kamaybac
+author: Henrikan
 ms.date: 06/26/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: VendTable, LogisticsPostalAddressGrid, DirPartyLookup, Logistics
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: dabourq
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 10012bfe46ed55431c2c4605760660ee156c74a2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 16abc34b881fffdb9f278fd097efbcdc693b235f
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812045"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570352"
 ---
 # <a name="create-a-vendor-account"></a>Utworzenie konta dostawcy
 

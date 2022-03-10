@@ -1,8 +1,8 @@
 ---
 title: Żądanie czasu wolnego
 description: W programie Dynamics 365 Human Resources można prosić o czas wolny.
-author: andreabichsel
-ms.date: 04/21/2021
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 445360659e993451b1289091e43e4fc64e0ad228
-ms.sourcegitcommit: cee7887282d372c756c5c11f76684315f249bba5
+ms.openlocfilehash: f7ca3fd03cda720187cb9c21b7f3ef3545c8901e
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6303227"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066782"
 ---
 # <a name="request-time-off"></a>Żądanie czasu wolnego
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -41,6 +44,8 @@ W module Dynamics 365 Human Resources możesz przesyłać wnioski o czas wolny, 
 5. W razie potrzeby wprowadź informacje w polu **Komentarz**.
 
 6. Gdy masz wszystko gotowe do wysłania wniosku, naciśnij przycisk **Prześlij**. W przeciwnym razie wybierz opcję **Zapisz wersję roboczą**.
+
+Pracownicy, którzy składają nowy wniosek urlopowy, mogą wybrać różne rodzaje urlopu, aby skonstruować swój wniosek urlopowy. Jednak wszystkie typy urlopów wybrane w ramach jednego wniosku urlopowego powinny mieć tę samą jednostkę urlopową. Pracownicy mogą wyświetlić jednostki urlopu dla każdego typu urlopu na stronie **Żądanie urlopu**.
 
 ## <a name="add-an-attachment-to-an-existing-request"></a>Dodaj załącznik do istniejącego żądania
 
@@ -62,13 +67,13 @@ Podczas aktualizowania istniejącego żądania czasu wolnego można dodać zał�
 
 1. W obszarze roboczym **Samoobsługa pracownika etatowego** na kafelku **Bilans czasu wolnego** wybierz opcję **Wyświetl czas wolny**.
 
-2. W formularzu **Czas wolny** wybierz co najmniej jeden wniosek dotyczący czasu wolnego, aby go anulować.
+2. Na stronie **Czas wolny** wybierz co najmniej jeden wniosek dotyczący czasu wolnego, aby go anulować.
 
 3. Wybierz przycisk **Anuluj**.
 
 4. W okienku **Szczegóły anulowania** wprowadź komentarz, a następnie wybierz opcję **Prześlij**.
 
-   ![Anulowanie wniosku urlopowego](media/hr-leave-and-absence-cancel.png)
+   ![Anulowanie wniosku urlopowego.](media/hr-leave-and-absence-cancel.png)
 
 ## <a name="see-also"></a>Informacje dodatkowe
 

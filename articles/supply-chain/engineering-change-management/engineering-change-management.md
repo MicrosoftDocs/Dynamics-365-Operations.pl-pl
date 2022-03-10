@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 56446e6a8abfcab83772e446dc7f01c529404b23
-ms.sourcegitcommit: 05210ceefd8816b889019b2a6554855f3c5b2a6c
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 93f5c3e4951784a6c4925b8f9026816bfaf551ee
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "5954652"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102920"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Zarządzanie zmianami dotyczącymi produktów inżynieryjnych
 
@@ -92,9 +92,13 @@ Ta lista jest używana wyłącznie w celach informacyjnych. Dlatego można doda�
 
 Skrócona karta **Źródło** umożliwia śledzenie punktu początkowego żądania zmiany. Jest to przydatne na przykład wtedy, gdy użytkownik chce zobaczyć, czy żądanie zmiany zostało utworzone z zamówienia sprzedaży, kto je utworzył, oraz czy firma, w której została utworzona, została utworzona.
 
-### <a name="evaluate-the-business-impact-of-a-change-request"></a>Ocenianie wpływu żądania zmiany na biznesowe
+### <a name="evaluate-the-business-impact-of-a-change-request-and-send-notifications"></a>Ocenianie wpływu żądania zmiany na biznesowe i wysyłanie powiadomień
 
-Podczas przeglądania żądania zmiany można wyszukiwać zależności. W ten sposób można ocenić wpływ żądanej zmiany transakcji otwartych, takich jak zamówienia sprzedaży, zlecenia produkcyjne i dostępne zapasy.
+Podczas przeglądania żądania zmiany można wyszukiwać zależności. W ten sposób można ocenić wpływ żądanej zmiany transakcji otwartych, takich jak zamówienia sprzedaży, zlecenia produkcyjne i dostępne zapasy. W trakcie przeglądania zgłoszeń zmian można wysyłać powiadomienia do osób odpowiedzialnych za realizację różnych typów powiązanych zleceń.
+
+#### <a name="review-affected-transactions-block-selected-transactions-and-send-notifications"></a>Przeglądanie transakcji, których to dotyczy, blokowanie wybranych transakcji i wysyłanie powiadomień
+
+Aby dokonać przeglądu transakcji, których to dotyczy, zablokować wybrane transakcje i wysłać odpowiednie powiadomienia, wykonaj poniższe kroki.
 
 1. Przejdź do **Zarządzanie zmianami inżynieryjnymi\> Wspólne \> Zarządzanie zmianami inżynieryjnymi \> Żądania zmiany inżynieryjnej**.
 1. Należy otworzyć istniejące żądanie zmiany lub wybrać polecenie **Nowy** w okienku akcji, aby utworzyć nowe żądanie zmiany.
@@ -103,7 +107,36 @@ Podczas przeglądania żądania zmiany można wyszukiwać zależności. W ten sp
     - **Wyszukiwanie** — skanowanie wszystkich otwartych transakcji, a następnie otwarcie okna dialogowego **efekty biznesowe dla otwartych transakcji**, w którym jest wyświetlana lista wszystkich transakcji, na które wpłynie zmiana.
     - **Wyświetl poprzednie wyszukiwanie** — umożliwia otwarcie okna dialogowego **efekty biznesowe dla otwartych transakcji**, w którym znajduje się lista wyników poprzedniego wyszukiwania. (Nowe wyszukiwanie nie zostało wykonane)
 
-1. Jeśli problem wymagający zmiany jest krytyczny, można zablokować otwarte transakcje lub powiadomić użytkownika odpowiedzialnego za pomocą przycisków na pasku narzędzi w oknie dialogowym **wpływ biznesowy na otwarte transakcje**.
+1. Okno dialogowe **Wpływ biznesowy do otwarcia transakcji** zawiera zestaw kart, z których każda zawiera listę transakcji danego typu (**Zamówienia sprzedaży**, **Zamówienia zakupu**, **Zamówienia produkcyjne**, **Zapasy** itd.). Na każdej zakładce znajduje się również liczba określająca liczbę transakcji danego typu, których dotyczy problem. Wybierz kartę, aby wyświetlić odpowiednią listę.
+1. Aby pracować z transakcją na liście, zaznacz ją, a następnie wybierz jeden z poniższych przycisków na pasku narzędzi:
+
+    - **Wyświetl transakcję** — umożliwia otwarcie wybranego rekordu transakcji.
+    - **Zablokuj zamówienie** — ten przycisk jest dostępny tylko na karcie **Zamówienia sprzedaży**. Zaznaczenie tego przycisku powoduje zablokowanie wybranego zamówienia sprzedaży.
+    - **Zablokuj wiersz** — ten przycisk jest dostępny tylko na karcie **Zamówienia zakupu**. Zaznaczenie tego przycisku powoduje zablokowanie wybranego wiersza zakupów.
+    - **Powiadom osoby odpowiedzialne** — ten przycisk jest dostępny tylko na karcie **Zamówienia sprzedaży**. Wybierz go, aby wysłać powiadomienie o zmianie do użytkownika, który jest ustawiony jako odpowiedzialny za wybrane zamówienie sprzedaży. Więcej informacji o tym, kto może wyświetlić powiadomienia i w jaki sposób, można znaleźć w temacie [Przeglądanie i przetwarzanie powiadomień o zmianach dla transakcji](#review-notifications).
+    - **Powiadom osoby odpowiedzialne** — ten przycisk jest dostępny tylko na karcie **Zamówienia sprzedaży**. Wybierz go, aby wysłać powiadomienie o zmianie do użytkownika, który jest ustawiony jako odpowiedzialny za wybrane zamówienie sprzedaży. Więcej informacji o tym, kto może wyświetlić powiadomienia i w jaki sposób, można znaleźć w temacie [Przeglądanie i przetwarzanie powiadomień o zmianach dla transakcji](#review-notifications).
+    - **Powiadomienie działu produkcji** — ten przycisk jest dostępny tylko na karcie **Zlecenia produkcyjne**. W przeciwieństwie do zamówień sprzedaży i zamówień zakupu, w zleceniach produkcyjnych nie ma jednego użytkownika, który jest ustawiony jako odpowiedzialny za nie od początku do zakończenia. Zamiast tego, różni nadzorcy lub planiści zazwyczaj przejmują odpowiedzialność za konkretny obiekt lub konkretną część produkcji (na przykład za konkretne zasoby lub grupy zasobów). Dlatego po wybraniu tego przycisku wszyscy użytkownicy, którzy są odpowiedzialni za jakikolwiek zasób związany z wybranym zleceniem produkcyjnym, otrzymują powiadomienie o zmianie. Więcej informacji o tym, kto może wyświetlić powiadomienia i w jaki sposób, można znaleźć w temacie [Przeglądanie i przetwarzanie powiadomień o zmianach dla transakcji](#review-notifications).
+    - **Powiadom osoby przygotowujące** — ten przycisk jest dostępny tylko na karcie **Zapotrzebowanie na zakup**. Wybierz go, aby wysłać powiadomienie o zmianie do użytkownika, który jest ustawiony jako przygotowujący wybrane zapotrzebowanie na zakup. Więcej informacji o tym, kto może wyświetlić powiadomienia i w jaki sposób, można znaleźć w temacie [Przeglądanie i przetwarzanie powiadomień o zmianach dla transakcji](#review-notifications).
+    - **Powiadom osoby odpowiedzialne za sprzedaż** — ten przycisk jest dostępny tylko na karcie **Oferty**. Wybierz go, aby wysłać powiadomienie o zmianie do użytkownika, który jest ustawiony jako odpowiedzialny za wybraną ofertę. Więcej informacji o tym, kto może wyświetlić powiadomienia i w jaki sposób, można znaleźć w temacie [Przeglądanie i przetwarzanie powiadomień o zmianach dla transakcji](#review-notifications).
+    - **Wyrzuć** — ten przycisk jest dostępny tylko na karcie **Zapasy**. Wybierz go w celu likwidacji wybranych zapasów.
+    - **Wyświetl historię** — umożliwia otwarcie historii akcji podjętych w związku z wybraną transakcją przy użyciu okna dialogowego **Wpływ biznesowy na otwarte transakcje**. (Historia pokazuje na przykład, czy powiadomienia zostały wysłane lub czy transakcje zostały zablokowane) 
+    - **Wyświetl wszystkie transakcje** — umożliwia otwarcie pełnej listy wszystkich transakcji, a nie tylko transakcji otwartych.
+
+> [!IMPORTANT]
+> Przycisk **Powiadom o produkcji** jest dostępny tylko wtedy, gdy w systemie jest włączona funkcja *Powiadomienia inżynieryjne dla produkcji*. Aby uzyskać instrukcje włączanie i wyłączanie tej funkcji oraz jej wymagań wstępnych, zobacz omówienie zarządzania [zmianami inżynieryjnymi](product-engineering-overview.md).
+
+#### <a name="review-and-process-change-notifications-for-transactions"></a><a name="review-notifications"></a>Przeglądanie i przetwarzanie powiadomień o zmianach dla transakcji
+
+Wysyłane do ciebie powiadomienia o zmianach możesz odczytywać i przetwarzać w następujący sposób:
+
+- W przypadku zleceń produkcyjnych w centrum akcji należy zmieniać powiadomienia o transakcjach, za które użytkownik jest odpowiedzialny. Przycisk **Pokaż komunikaty** (symbol dzwonka) po prawej stronie paska nawigacji wskazuje, kiedy wiadomość z centrum akcji jest dostępna. Wybierz przycisk **Pokaż wiadomości**, aby otworzyć Centrum akcji i przejrzeć wiadomości.
+- Aby wyświetlić wszystkie zlecenia produkcyjne, dla których zostało wysłane powiadomienie inżynierskie, przejdź do **Zlecenia produkcyjne \> Zlecenia produkcyjne \> Wszystkie zlecenia produkcyjne**. Następnie na karcie **Zlecenie produkcyjne**, w grupie **Wniosek o zmianę inżynieryjną** wybierz pozycję **Powiadomienia inżynieryjne**, aby otworzyć stronę **Powiadomienia inżynieryjne**.
+- W przypadku zleceń produkcyjnych możesz wybrać przeglądanie tylko tych powiadomień o zmianach, które dotyczą zarządzanych przez Ciebie zasobów produkcyjnych. W obszarze roboczym **Zarządzanie produkcją**, w okienku akcji wybierz pozycję **Konfiguruj mój obszar roboczy**, aby filtrować stronę, tak aby zawierała tylko informacje o jednostkach produkcyjnych, grupach i/lub zasobach, którymi zarządzasz. W sekcji **Podsumowanie** kafelek o nazwie **Zlecenia produkcyjne ze zmienionymi produktami** zawiera liczbę powiadomień zgodnie z ustawieniami filtru. Zaznaczenie tego kafelka umożliwia otwarcie strony **Powiadomienia inżynieryjne**, na której jest wyświetlona pełna lista transakcji spełniających kryteria filtru.
+
+Przeglądając powiadomienia dotyczące zlecenia produkcyjnego na stronie **Powiadomienia inżynieryjne**, można śledzić łącza do powiązanych zleceń zmian lub zleceń produkcyjnych, wybierając wartości kolumn lub używając powiązanych poleceń w okienku akcji. Po zakończeniu obliczania zmian i po anulowaniu lub zmodyfikowaniu zleceń produkcyjnych w razie potrzeby można oznaczyć powiadomienie jako rozwiązane. Zaznacz powiadomienie, a następnie w okienku akcji wybierz pozycję **Rozwiąż**. Powiadomienie zostanie usunięte z widoków wszystkich użytkowników.
+
+> [!IMPORTANT]
+> Możliwość wysyłania powiadomień o zleceniach produkcyjnych wymaga, aby w systemie był włączona funkcja *Powiadomienia inżynieryjne dla produkcji*. Aby uzyskać instrukcje włączanie i wyłączanie tej funkcji oraz jej wymagań wstępnych, zobacz omówienie zarządzania [zmianami inżynieryjnymi](product-engineering-overview.md).
 
 ### <a name="create-a-change-order-from-a-change-request"></a>Tworzenie zlecenia zmiany za pomocą żądania zmiany
 

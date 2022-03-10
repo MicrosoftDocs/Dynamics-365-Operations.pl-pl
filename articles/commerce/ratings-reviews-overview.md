@@ -2,36 +2,30 @@
 title: Omówienie ocen i recenzji
 description: W tym temacie opisano oceny i recenzje w rozwiązaniu Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 10/01/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ed31982dad8af4509d8dd0615ae53e3d3806640f
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: eb68652e0d3ecd8d75f2bc0fe9c243749d7de284
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4979785"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982259"
 ---
 # <a name="ratings-and-reviews-overview"></a>Omówienie ocen i recenzji
-
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano oceny i recenzje w rozwiązaniu Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 Oceny i Recenzje to kluczowe znaczenie dla odbiorców w e-Commerce, którzy chcą wiedzieć, jak inni odbiorcy mogą postrzegać produkt. Mogą oni również pomagać klientom podejmować decyzje dotyczące zakupu. W Dynamics 365 Commerce oceny i recenzje umożliwiają detalistom przechwycenie ocen produktów i recenzji od klientów. Detaliści mogą następnie wyświetlać średnie oceny i przeglądać informacje w całej witrynie internetowej w e-Commerce.
 
@@ -41,7 +35,7 @@ Funkcje ocen i recenzji w Dynamics 365 Commerce to rozwiązanie wielokanałowe i
 
 Na poniższej ilustracji przedstawiono sposób działania rozwiązania oceny i recenzji w Dynamics 365 Commerce.
 
-![Oceny i recenzje w Dynamics 365 for Commerce](media/Dynamics-365-Commerce-Ratings-and-Reviews-Overview.jpg)
+![Oceny i recenzje w Dynamics 365 for Commerce.](media/Dynamics-365-Commerce-Ratings-and-Reviews-Overview.jpg)
 
 Oceny i recenzje w Dynamics 365 Commerce korzystają z Azure Cognitive Services w celu zaoferowania automatycznego łagodzenia wulgarnych słów w 40 językach. Ponieważ zatwierdzanie przez ludzi nie jest wymagane, koszty moderacji są redukowane. System oferuje również narzędzia moderatora, których można używać do reagowania na obawy klientów, opinie i żądania usuwania oraz do odpowiadania na żądania danych od użytkowników.
 
@@ -58,3 +52,14 @@ Rozwiązanie oceny i recenzje zawiera również szablon analizy biznesowej (BI),
 [Konfigurowanie ocen i recenzji](configure-ratings-reviews.md)
 
 [Synchronizacja ocen produktów w rozwiązaniu Dynamics 365 Commerce](sync-product-ratings.md)
+
+[Włączanie ręcznego publikowania ocen i recenzji przez moderatora](manual-publish-rating-reviews.md)
+
+[Importowanie i eksportowanie klasyfikacji oraz przeglądów](import-export-reviews.md)
+
+[Konfigurowanie uwierzytelniania usługa-usługa](service-to-service-auth.md)
+
+[Oceny i recenzje — często zadawane pytania](ratings-reviews-faq.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

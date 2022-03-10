@@ -1,28 +1,28 @@
 ---
 title: Omówienie atrybutu składnika majątku
 description: Ten temat stanowi przegląd atrybutów składnika majątku w module Zarządzanie składnikami majątku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/26/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetObjectAttributeOverview
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 2214
+ms.custom:
+- "2214"
+- intro-internal
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a092fac4f1b8648c2c93791f1c5efb90708c44e2
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 98386b6ffe2a5f9c79c0ee1f18073ac13fc3a039
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020186"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986467"
 ---
 # <a name="asset-attribute-overview"></a>Omówienie atrybutu składnika majątku
 
@@ -39,3 +39,6 @@ Strona **Omówienie atrybutu składnika majątku** zawiera osobny wiersz dla ka�
 3. Kliknij przycisk **OK**. Lista zawiera wszystkie składniki majątku, które używają wybranego typu składnika majątku. Dla każdego składnika majątku wszystkie powiązane typy atrybutów składnika majątku są wyświetlane w tym samym wierszu.
 
 Strona **Atrybut składnika majątku** zawiera osobny wiersz dla każdego typu atrybutu, który jest używany w składniku majątku. Aby otworzyć tę stronę, wybierz **Zarządzanie składnikami majątku** \> **Informacje** \> **Składniki majątku** \> **Atrybut składnika majątku**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

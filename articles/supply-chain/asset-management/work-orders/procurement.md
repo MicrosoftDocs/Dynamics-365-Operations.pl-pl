@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 18556e35d63ea20b181c525b758788dc0f89f701
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2b5e160beb4743db2530b91020f21b686d84237b17cfa7ff7f0cc1da97695d08
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842232"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6743657"
 ---
 # <a name="procurement"></a>Zaopatrzenie
 
@@ -36,7 +36,7 @@ Na stronie listy **Zapotrzebowanie na zakup zlecenia pracy** (**Zarządzanie sk�
 
 Na poniższej ilustracji przedstawiono przykład strony listy **Zapotrzebowanie na zakup zlecenia pracy**.
 
-![Rysunek 1](media/08-work-orders.png)
+![Rysunek 1.](media/08-work-orders.png)
 
 
 Na stronie listy **Zapotrzebowanie na zakup zlecenia pracy** (**Zarządzanie składnikami majątku** > **Wspólne** > **Zaopatrzenie** > **Zakup zlecenia pracy**) jest wyświetlenia lista zamówień zakupu związanych ze zleceniami pracy. Po wybraniu zadania zlecenia produkcyjnego na tej stronie można użyć przycisków w grupie **Pokaz** na karcie okienka akcji **Zakup zlecenia pracy**, aby wykonać różne akcje:
@@ -47,7 +47,7 @@ Na stronie listy **Zapotrzebowanie na zakup zlecenia pracy** (**Zarządzanie sk�
 
 Na poniższej ilustracji przedstawiono przykład strony listy **Zakup zlecenia pracy**.
 
-![Rysunek 2](media/09-work-orders.png)
+![Rysunek 2.](media/09-work-orders.png)
 
 
 Na stronie listy **Zakup zlecenia pracy** i stronie listy **Zapotrzebowanie na zakup zlecenia pracy**, po prawej stronie każdego wiersza jest wyświetlany symbol związany z kontrolą daty dostawy. Jeśli symbol zawiera wykrzyknik w czerwonym kółku, oznacza to, że dostawa powiązanego zamówienia zakupu lub zapotrzebowania na zakupu może zostać opóźniona.
@@ -93,7 +93,7 @@ Aby wyświetlić lub wprowadzić numer działania powiązany z wierszem zamówie
 
 Poniższa ilustracja przedstawia przykład strony **Zamówienie zakupu** z naciskiem na **Numer działania**.
 
-![Rysunek 3](media/10-work-orders.png)
+![Rysunek 3.](media/10-work-orders.png)
 
 Podobnie, aby wyświetlić lub wprowadzić numer działania powiązany z wierszem zapotrzebowania na zakup zlecenia pracy, na stronie listy **Zapotrzebowanie na zakup zlecenia pracy** należy wybrać rekord zapotrzebowania na zakup, a następnie w kolumnie **Zapotrzebowanie na zakup** wybrać łącze dla tego zapotrzebowania. Pole **Numer działania** można znaleźć na karcie **Projekt** na skróconej karcie **Szczegóły wiersza**.
 

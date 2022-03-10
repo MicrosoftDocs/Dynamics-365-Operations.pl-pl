@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 35db2eb3e0da91207f08d16b8fb1bfa6a6bb8607
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 36998d299e166709778bfaa7bfd0d8980890d4fe
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345967"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323849"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Zaprojektowanie nowego rozwiązania ER w celu wydrukowania raportu niestandardowego
 
@@ -181,7 +181,7 @@ Dalsze informacje o dostawcach konfiguracji ER znajdują się w temacie [Tworzen
 
 ## <a name="design-a-domain-specific-data-model"></a><a name="DesignModel"></a>Projektowanie modelu danych specyficznego dla domeny
 
-Należy utworzyć nową konfigurację ER, która zawiera składnik [modelu danych](general-electronic-reporting.md#data-model-and-model-mapping-components) dla domeny biznesowej **Kwestionariusz**. Ten model danych będzie później używany jako źródło danych podczas projektowania formatu ER w celu wygenerowania raportu **Kwestionariusza**.
+Należy utworzyć nową konfigurację ENCJi, która zawiera składnik modelu danychdla domeny biznesowej **Kwestionariusza**. Ten model danych będzie później używany jako źródło danych podczas projektowania formatu ER w celu wygenerowania raportu **Kwestionariusza**.
 
 Wykonując kroki opisane w sekcji [Importowanie nowej konfiguracji modelu danych](#ImportDataModel), można zaimportować wymagany model danych z podanego pliku XML. Można również wykonać kroki opisane w sekcji [Tworzenie nowej konfiguracji modelu danych](#DesignDataModel), aby zaprojektować ten model danych od podstaw.
 
@@ -296,7 +296,7 @@ Aby uzyskać więcej informacji na temat wersji konfiguracji funkcji ER, zajrzyj
 
 ## <a name="design-a-model-mapping-for-the-configured-data-model"></a><a name="DesignMapping"></a>Umożliwia zaprojektowanie mapowania modelu dla skonfigurowanego modelu danych
 
-Jako użytkownik w roli Deweloper raportowania elektronicznego musisz utworzyć nową konfigurację ER zawierającą zawiera składnik [mapowania modelu](general-electronic-reporting.md#data-model-and-model-mapping-components) dla modelu danych **Kwestionariusza**. Ten składnik implementuje skonfigurowany model danych dla Finance, dlatego jest on związany z Finance. Należy skonfigurować składnik mapowanie modelu, aby określić obiekty aplikacji, które muszą być używane do wypełniania skonfigurowanego modelu danych za pomocą danych aplikacji w czasie wykonywania. Aby wykonać to zadanie, należy zapoznać się ze szczegółami implementacji struktury danych w domenie biznesowej **Kwestionariusza** w Finance.
+Jako użytkownik w roli Deweloper raportowania elektronicznego musisz utworzyć nową konfigurację ER zawierającą zawiera składnik mapowania modelu dla modelu danych **Kwestionariusza**. Ten składnik implementuje skonfigurowany model danych dla Finance, dlatego jest on związany z Finance. Należy skonfigurować składnik mapowanie modelu, aby określić obiekty aplikacji, które muszą być używane do wypełniania skonfigurowanego modelu danych za pomocą danych aplikacji w czasie wykonywania. Aby wykonać to zadanie, należy zapoznać się ze szczegółami implementacji struktury danych w domenie biznesowej **Kwestionariusza** w Finance.
 
 Wykonując kroki opisane w następujaćej sekcji [Importowanie nowej konfiguracji mapowania modelu](#ImportModelMapping), można zaimportować wymagany model mapowania konfiguracji z podanego pliku XML. Można również wykonać kroki opisane w sekcji [Stwórz nowy model konfiguracji mapowania](#CreateModelMapping), aby zaprojektować ten model mapowania od podstaw.
 
@@ -568,7 +568,7 @@ Na poniższej ilustracji przedstawiono nagłówek raportu niestandardowego, któ
 
 ## <a name="design-a-format"></a><a name="DesignFormat"></a>Projektowanie formatu
 
-Jako użytkownik pełniący rolę konsultanta funkcjonalnego raportowania elektronicznego należy utworzyć nową konfigurację ER zawierającą komponent [formatu](general-electronic-reporting.md#FormatComponentOutbound). Należy skonfigurować składnik formatu w celu określenia sposobu, w jaki szablon raportu będzie wypełniał wymagane dane w czasie wykonywania.
+Jako użytkownik pełniący rolę konsultanta funkcjonalnego raportowania elektronicznego należy utworzyć nową konfigurację ER zawierającą komponent formatu. Należy skonfigurować składnik formatu w celu określenia sposobu, w jaki szablon raportu będzie wypełniał wymagane dane w czasie wykonywania.
 
 Wykonując kroki opisane w sekcji [Import zaprojektowanej konfiguracji formatu](#FormatImport), można zaimportować wymagany format z podanego pliku XML. Można również wykonać kroki opisane w sekcji [Utwórz nową konfigurację formatu](#FormatCreate), aby zaprojektować ten format od podstaw.
 

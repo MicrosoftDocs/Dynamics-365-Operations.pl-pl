@@ -15,12 +15,12 @@ ms.search.region: Poland
 ms.author: kfend
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: ce71f8b130de3846b4f5873745bf8d2319b2e877
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 143841deea85aff8b75e8adcd57b99f87acd47accb0212cf771ed8e78d70c666
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894852"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733597"
 ---
 # <a name="standard-audit-file-saf-for-poland"></a>Standardowy plik audytu (SAF) dla Polski
 
@@ -74,11 +74,11 @@ Aby wygenerować plik ksiąg księgowania SAF, kliknij kolejno opcje **Księga g
 
 Domyślnie pole wyboru **Pokaż wszystkie wymiary** nie jest zaznaczone. To pole należy zaznaczyć, aby uwzględnić pola **KodKontaMa** i **KodKontaWinien** w węźle **KontoZapis** jako wymiary finansowe. 
 
-![Przykładowe wymiary KontoZapis są wyłączone](media/jpk-kr-dim-off.png)
+![Przykładowe wymiary KontoZapis są wyłączone.](media/jpk-kr-dim-off.png)
 
 Jeśli zaznaczono pole wyboru **Pokaż wszystkie wymiary**, węzeł **KontoZapis** pokazuje wszystkie wymiary.
 
-![Przykładowe wymiary KontoZapis są włączone](media/jpk-kr-dim-on.png)
+![Przykładowe wymiary KontoZapis są włączone.](media/jpk-kr-dim-on.png)
 
 Z **wersją 98.59.49**, format ER **ksiąg rachunkowych (PL)** może generować plik Ksiąg księgowania SAF. Jednak przed wygenerowaniem pliku należy skonfigurować następujące elementy:
 
@@ -111,7 +111,7 @@ Pola **KodKategorii**, **OpisKategorii**, **KodPodkategorii** i **OpisPodKategor
 1. Wybierz kolejno opcje **Księga główna \> Plan kont \> Konta \> Grupy kont konsolidacji**.
 2. Utwórz dwie nowe grupy: jedną dla kategorii i jedną dla podkategorii.
 
-    ![Strona Grupy kont konsolidacji](media/cons-acc-grp.png)
+    ![Strona Grupy kont konsolidacji.](media/cons-acc-grp.png)
 
 3. Wybierz kolejno opcje **Księga główna \> Plan kont \> Konta \> Dodatkowe konta konsolidacji**.
 4. Utwórz kategorie i podkategorie dla wszystkich kont głównych na podstawie grup kont konsolidacyjnych utworzonych w kroku 2. 
@@ -119,7 +119,7 @@ Pola **KodKategorii**, **OpisKategorii**, **KodPodkategorii** i **OpisPodKategor
     - W przypadku kategorii określ wartość, która musi zostać zgłoszona w polu **KodKategorii** raportu w kolumnie **Konto konsolidacji** oraz w polu **OpisKategorii** raportu w kolumnie **Nazwa konta konsolidacji**. Podaj także opis.
     - W przypadku podkategorii określ wartość, która musi zostać zgłoszona w polu **KodPodKategorii** raportu w kolumnie **Konto konsolidacji** oraz w polu **OpisPodKategorii** raportu w kolumnie **Nazwa konta konsolidacji**. Podaj także opis.
 
-    ![Strona Dodatkowe konta konsolidacji](media/add-cons-acc.png)
+    ![Strona Dodatkowe konta konsolidacji.](media/add-cons-acc.png)
 
 5. Po zakończeniu konfigurowania kategorii i podkategorii zdefiniuj grupy kont konsolidacji, które należy wziąć pod uwagę w formacie ER. Otwórz obszar roboczy **Raportowanie elektroniczne**, a następnie w drzewie konfiguracji wybierz opcję **Standardowy plik inspekcji (SAF-T) \> SAF Polska \> Księgi księgowania (PL)**.
 6. W okienku akcji wybierz **Konfiguracje \> Parametry specyficzne dla aplikacji \> Ustawienia**.
@@ -129,7 +129,7 @@ Pola **KodKategorii**, **OpisKategorii**, **KodPodkategorii** i **OpisPodKategor
 10. Jako ostatnie dwa wiersze dodaj wiersze z warunkami **Niepuste** i **Puste** dla wyniku wyszukiwania **Inne**.
 11. W polu **Stan** wybierz opcję **Zakończone**, a następnie zapisz konfigurację.
 
-    ![Parametr specyficzny dla aplikacji dla konta konsolidacji](media/cons-acco-app-params.png)
+    ![Parametr specyficzny dla aplikacji dla konta konsolidacji.](media/cons-acco-app-params.png)
 
 ### <a name="rodzajdowodu-and-opisdziennika-fields-under-the-dziennik-node"></a>Pola RodzajDowodu i OpisDziennika pod węzłem Dziennik
 Pole **RodzajDowodu** w węźle **Dziennik** raportu musi reprezentować typ załącznika księgowego zgodnie z artykułem 23, paragraf 2, pozycja 2 ustawy (UoR). Pole **OpisDziennika** musi przedstawiać opis czasopisma zgodnie z art. 14 ust. 3 i 4 ustawy. Aby spełnić ten wymóg, w formacie raportu wprowadzono nowe parametry specyficzne dla aplikacji w postaci dowolnego tekstu.
@@ -141,7 +141,7 @@ Pole **RodzajDowodu** w węźle **Dziennik** raportu musi reprezentować typ za�
 5. Na skróconej karcie **Warunki** zdefiniuj wymagane warunki. Ręcznie określ wartości w kolumnie **Wynik wyszukiwania** zgodnie z artykułem 23, paragraf 2, pozycja 2 ustawy.
 6. Jako ostatnie dwa wiersze dodaj wiersze z warunkami **Niepuste** i **Puste**.
 
-    ![Przykład parametru specyficznego dla aplikacji RodzajDowoduSelector](media/example-app-params-setup.png)
+    ![Przykład parametru specyficznego dla aplikacji RodzajDowoduSelector.](media/example-app-params-setup.png)
 
 7. Na skróconej karcie **Wyszukiwania** wybierz pozycję **OpisDziennikaSelector**.
 8. Na skróconej karcie **Warunki** zdefiniuj wymagane warunki. Ręcznie określ wartości w kolumnie **Wynik wyszukiwania** zgodnie z artykułem 14, paragrafy 3 i 4 ustawy.

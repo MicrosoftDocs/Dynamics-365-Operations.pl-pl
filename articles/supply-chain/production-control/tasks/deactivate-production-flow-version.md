@@ -1,27 +1,25 @@
 ---
 title: Dezaktywowanie wersji przepływu produkcji
 description: Gdy aktywna wersja przepływu produkcji nie jest już potrzebna, można ją dezaktywować.
-author: cvocph
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LeanProductionFlow
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0664dd40464000abef0041ef32863a3c9494d9b8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1691dc644e2e191a9e74980784d6dcf741dcd598
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4975142"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7576767"
 ---
 # <a name="deactivate-a-production-flow-version"></a>Dezaktywowanie wersji przepływu produkcji
 
@@ -45,3 +43,6 @@ Do wykonania tej procedury jest potrzebny przepływ produkcji o wersji, która m
     * Nie kontynuuj, jeśli nie masz 100-procentowej pewności, że ta wersja przepływu produkcji jest przestarzała. Kliknięcie przycisku Ok spowoduje unieważnienie wszystkich aktywnych reguł Kanban oraz natychmiastowe zatrzymanie wszystkich działań produkcji i uzupełniania w tej wersji przepływu produkcji.  
 6. Kliknij przycisk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

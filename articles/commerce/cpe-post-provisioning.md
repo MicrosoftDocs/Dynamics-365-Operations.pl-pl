@@ -2,7 +2,7 @@
 title: Konfigurowanie środowiska oceny rozwiązania Dynamics 365 Commerce
 description: W tym temacie opisano sposób konfigurowania środowiska oceny aplikacji Microsoft Dynamics 365 Commerce po jego aprowizacji.
 author: psimolin
-ms.date: 07/16/2020
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b291a6515c6a3ae7382ea2ad8024ca036489de19
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 5883a6e68628d706fa19d7d23b68f17007c32890
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5937045"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913734"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurowanie środowiska oceny rozwiązania Dynamics 365 Commerce
 
@@ -39,6 +39,7 @@ Po zakończeniu kompleksowej aprowizacji środowiska oceny usługi Commerce wyko
 1. Wybierz swoje środowisko na liście.
 1. W obszarze informacji o środowisku po prawej stronie wybierz pozycję **Zaloguj do środowiska**. Nastąpi wysłanie do modułu Commerce Headquarter.
 1. Upewnij się, że wybrano firmę **USRT** w prawym górnym rogu.
+2. Przejdź do pozycji **Parametry Commerce > Konfigurowanie parametrów** i upewnij się, że istnieje wpis **ProductSearch.UseAzureSearch** ustawiony na **true**. Jeśli ten wpis nie istnieje, możesz dodać ten wpis i uruchomić pozycję **Baza danych kanału > Pełna synchronizacja** dla jednostki Commerce Scale Unit skojarzonej z witryną internetową eCommerce.
 
 Podczas wykonywania działań związanych z inicjowaniem obsługi administracyjnej w module Commerce Headquarter należy się upewnić, że firma **USRT** jest zawsze zaznaczona.
 
@@ -106,6 +107,12 @@ Aby włączyć zadania w aplikacji Commerce, wykonaj następujące kroki.
     1. W okienku akcji na karcie **Zadanie wsadowe** wybierz pozycję **Zmień status**.
     1. Wybierz pozycję **Anuluj**, a następnie kliknij przycisk **OK**.
 
+1. Jeśli stan zadania to **Wstrzymane**, wykonaj następujące kroki:
+
+    1. Wybierz rekord.
+    1. W okienku akcji na karcie **Zadanie wsadowe** wybierz pozycję **Zmień status**.
+    1. Wybierz pozycję **Oczekiwanie** i kliknij przycisk **OK**.
+
 Opcjonalnie można również określić interwał cyklu równy jednej (1) minucie dla następujących zadań:
 
 * Przetwarzanie zadania powiadomień pocztą e-mail dla zamówienia sieci sprzedaży
@@ -128,7 +135,7 @@ Aby uruchomić pełną synchronizację danych w aplikacji Commerce, wykonaj nast
 Aby przeprowadzić transakcje testowe w witrynie, można użyć następujących testowych informacji o karcie kredytowej:
 
 - **Numer karty:** 4111-1111-1111-1111
-- **Data ważności:** 10/20
+- **Data ważności:** 10/30
 - **Kod wartości weryfikacji karty (CVV):** 737
 
 > [!IMPORTANT]
@@ -139,6 +146,9 @@ Aby przeprowadzić transakcje testowe w witrynie, można użyć następujących 
 Po zakończeniu czynności obsługi administracyjnej i konfiguracji można rozpocząć korzystanie ze środowiska oceny. Użyj adresu URL konstruktora witryn Commerce, aby przejść do środowiska tworzenia. Użyj adresu URL witryny Commerce, aby przejść do środowiska witryny klienta platformy handlu detalicznego.
 
 Aby skonfigurować opcjonalne funkcje środowiska oceny usługi Commerce, zobacz [Konfigurowanie funkcji opcjonalnych środowiska oceny usługi Commerce](cpe-optional-features.md).
+
+> [!NOTE]
+> Środowiska oceniania handlu są wstępnie załadowane do dzierżawy Azure Active Directory (Azure AD) B2C (business-to-consumer) w celach demonstracyjnych. Konfigurowanie własnej dzierżawy Azure AD B2C nie jest wymagane w przypadku środowisk oceniania. Jeśli jednak środowisko oceniania jest konfigurowane w celu korzystania z własnej dzierżawy Azure AD, należy dodać ``https://login.commerce.dynamics.com/_msdyn365/authresp`` jako adres URL odpowiedzi w aplikacji Azure AD B2C za pośrednictwem Azure Portal.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
@@ -159,6 +169,8 @@ Aby skonfigurować opcjonalne funkcje środowiska oceny usługi Commerce, zobacz
 [Portal Microsoft Azure](https://azure.microsoft.com/features/azure-portal)
 
 [Witryna Dynamics 365 Commerce](https://aka.ms/Dynamics365CommerceWebsite)
+
+[Konfigurowanie dzierżawy B2C w module Commerce](set-up-B2C-tenant.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

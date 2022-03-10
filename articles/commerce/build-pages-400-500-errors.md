@@ -2,11 +2,9 @@
 title: Tworzenie niestandardowych stron odpowiedzi dla błędów kodu stanu 4xx/5xx
 description: W tym temacie opisano sposób tworzenia niestandardowych stron odpowiedzi dla błędów kodu stanu 4xx i 5xx przy użyciu narzędzi autorskich Microsoft Dynamics 365 Commerce.
 author: v-chgri
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
@@ -16,21 +14,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d21ce20b2c7ac8c656a718749dabd76f33893da8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 16cd6c3dab5502826119b6a517414d23e168e79708e306897b04c7ba8c80404b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4991472"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6741148"
 ---
 # <a name="build-custom-response-pages-for-4xx5xx-status-code-errors"></a>Tworzenie niestandardowych stron odpowiedzi dla błędów kodu stanu 4xx/5xx
-
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano sposób tworzenia niestandardowych stron odpowiedzi dla błędów kodu stanu 4xx i 5xx przy użyciu narzędzi autorskich Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 Jeśli żądanie nie powiodło się, serwer wystawia odpowiedzi na błędy kodów stanu HTTP. Kod stanu 404 jest przechwytywany i zwracany, jeśli nie odnaleziono strony, a kod stanu 500 jest przechwytywany i zwracany w przypadku wystąpienia błędu serwera. W Dynamics 365 Commerce Użytkownicy aplikacji mogą budować niestandardowe strony odpowiedzi na kod błędu, które są pokazywane użytkownikom w odpowiedzi na te błędy.
 
@@ -82,3 +77,6 @@ Aby skonfigurować przekierowanie dla strony odpowiedzi na błąd kodu stanu, wy
 [Dodawanie nowej strony witryny](add-new-page.md)
 
 [Tworzenie adresu URL strony](create-page-url.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -11,13 +11,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-19
-ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: c2b12798a6ef9c2d4aa022e0c270d8191b2cf4e7fc844042ed88c4eb9f5b98a5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.7
+ms.openlocfilehash: d5aa579394a0e3bd4c27cd44c9ff98951b3bfe1c
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741915"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103670"
 ---
 # <a name="putaway-clusters"></a>Grupy odłożenia
 
@@ -25,12 +25,9 @@ ms.locfileid: "6741915"
 
 Grupy odłożenia umożliwiają w tym samym czasie pobieranie wielu numerów identyfikacyjnych, a następnie ich odłożenie w różnych lokalizacjach. Ten proces jest często nazywany *trasą objazdową*. Grupy odłożenia mogą być bardzo przydatne w firmach detalicznych, w których numery identyfikacyjne zazwyczaj nie są pełnymi paletami zapasów. 
 
-## <a name="turn-on-the-cluster-putaway-feature"></a>Włącz funkcję grup odłożenia
+## <a name="turn-the-cluster-putaway-feature-on-or-off"></a>Włącz lub wyłącz funkcję odkładania klastra
 
-Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z obszaru roboczego [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. Ta funkcja jest wymieniona w następujący sposób:
-
-- **Moduł:** *Zarządzanie magazynem*
-- **Nazwa funkcji:** *Funkcja grup odłożenia*
+Aby korzystać z funkcji opisanej w tym temacie, w systemie musi być włączona funkcja *Funkcja odkładania klastra*. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.25, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Funkcja odkładania klastra* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="setup-for-the-example-scenario"></a>Konfiguracja scenariusza przykładowego
 

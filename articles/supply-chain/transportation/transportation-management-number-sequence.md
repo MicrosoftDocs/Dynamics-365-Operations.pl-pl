@@ -2,24 +2,22 @@
 title: Sekwencja numerów zarządzania transportem
 description: W tym temacie opisano, jak skonfigurować sekwencje numerów do zarządzania transportem.
 author: Henrikan
-manager: tfehr
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-10-16
-ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: cc19110f481c11ab28532d69a4689c1db048f6c3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.dyn365.ops.version: 10.0.14
+ms.openlocfilehash: 080f72da1b5b00d189f0c7916354cbf2d7093370
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5233374"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7576143"
 ---
 # <a name="transportation-management-number-sequence"></a>Sekwencja numerów zarządzania transportem
 

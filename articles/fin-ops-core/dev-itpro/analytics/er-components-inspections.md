@@ -2,7 +2,7 @@
 title: Sprawdzanie skonfigurowanego składnika ER, aby zapobiec problemom w czasie wykonywania
 description: W tym temacie opisano sposób sprawdzania skonfigurowanych składników raportowania elektronicznego (ER) w celu zapobiegania problemom, które mogą wystąpić w czasie wykonywania.
 author: NickSelin
-ms.date: 03/04/2021
+ms.date: 01/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 309e613b707222920936d5af995ac57c4c423b40
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: c63ffc6316d21d36bb2aad57194b8aa1c477607e
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6357673"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074798"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Sprawdzanie skonfigurowanego składnika ER, aby zapobiec problemom w czasie wykonywania
 
 [!include[banner](../includes/banner.md)]
 
-Każdy skonfigurowany składnik w postaci [formatu](general-electronic-reporting.md#FormatComponentOutbound) i [mapowania modelu](general-electronic-reporting.md#data-model-and-model-mapping-components) modułu [Raportowanie elektroniczne (ER)](general-electronic-reporting.md) może być [weryfikowany](er-fillable-excel.md#validate-an-er-format) w czasie projektowania. Podczas tego sprawdzania spójności jest uruchamiane sprawdzanie spójności w celu uniknięcia problemów, które mogą wystąpić w czasie wykonywania, takich jak błędy wykonywania i pogorszenie wydajności. Dla każdego znalezionego problemu test podaje ścieżkę do problematycznego elementu. W przypadku niektórych problemów jest dostępna automatyczna poprawka.
+Każdy skonfigurowany składnik w postaci [formatu](er-overview-components.md#format-components-for-outgoing-electronic-documents) i [mapowania modelu](er-overview-components.md#model-mapping-component) modułu [Raportowanie elektroniczne (ER)](general-electronic-reporting.md) może być [weryfikowany](er-fillable-excel.md#validate-an-er-format) w czasie projektowania. Podczas tego sprawdzania spójności jest uruchamiane sprawdzanie spójności w celu uniknięcia problemów, które mogą wystąpić w czasie wykonywania, takich jak błędy wykonywania i pogorszenie wydajności. Dla każdego znalezionego problemu test podaje ścieżkę do problematycznego elementu. W przypadku niektórych problemów jest dostępna automatyczna poprawka.
 
 Domyślnie sprawdzanie poprawności jest stosowane automatycznie w następujących przypadkach dla konfiguracji ER, która zawiera wspomniane wcześniej składniki ER:
 
@@ -230,6 +230,21 @@ W poniższej tabeli znajduje się omówienie inspekcji dostępnych w module ER. 
 <p><b>Środowisko uruchomieniowe:</b> Jeśli zostanie wykonana wersja robocza skonfigurowanego formatu ER, ostatni skonfigurowany składnik jest używany w czasie wykonywania.</p>
 </td>
 </tr>
+<tr>
+<td><a href='#i17'>Niespójne ustawienie składnika Strona</a></td>
+<td>Integralność danych</td>
+<td>Wadliwe</td>
+<td>Istnieją co najmniej dwa składniki zakresu bez replikacji. Usuń zbędne składniki.</td>
+</tr>
+<tr>
+<td><a href='#i18'>Wykonywalność wyrażenia z funkcją ORDERBY</a></td>
+<td>Wykonywalność</td>
+<td>Błąd</td>
+<td>
+<p>Wyrażenie listy funkcji ORDERBY nie jest odpytywalne.</p>
+<p><b>Błąd czasu wykonywania:</b> Sortowanie nie jest obsługiwane. Aby uzyskać więcej szczegółowych informacji na ten temat, sprawdź poprawność konfiguracji.</p>
+</td>
+</tr>
 </tbody>
 </table>
 
@@ -359,7 +374,7 @@ Poniższe kroki pokazują, jak może dojść do tego problemu.
 8. Nazwij nowe zagnieżdżone pole **$AccNumber** i skonfiguruj je tak, aby zawierało wyrażenie `TRIM(Vendor.AccountNum)`.
 9. Wybierz opcję **Weryfikuj**, aby przeprowadzić inspekcję edytowalnego składnika mapowania modelu na stronie **Projektant mapowania modelu** oraz sprawdzić, czy można wykonać zapytanie do wyrażenia `FILTER(Vendor, Vendor.AccountNum="US-101")` znajdującego się w źródle danych **Vendor**.
 
-    ![Sprawdzanie, czy można wykonać zapytanie do wyrażenia na stronie Projektant mapowania modelu.](./media/er-components-inspections-04.gif)
+    ![Sprawdzenie, czy wyrażenie z funkcją FILTER może być zapytane na stronie projektanta odwzorowania modelu.](./media/er-components-inspections-04.gif)
 
 10. Zauważ, że występuje błąd sprawdzania poprawności, ponieważ źródło danych **Vendor** zawiera zagnieżdżone pole typu **Pole obliczeniowe**, które nie zezwala na przekształcenie wyrażenia źródła danych **FilteredVendor** na bezpośrednią instrukcję SQL.
 
@@ -866,6 +881,67 @@ Zmodyfikuj skonfigurowany format, usuwając jeden z niespójnych składników **
 #### <a name="option-2"></a>Opcja 2
 
 Modyfikowanie wartości właściwości **Wyglądu nagłówka/stopki** dla jednego z niespójnych składników **Excel\\Nagłówek** lub **Excel\\Stopka**.
+
+## <a name="inconsistent-setting-of-page-component"></a><a id="i17"></a>Niespójne ustawienie składnika Strona
+
+Podczas [konfigurowania](er-fillable-excel.md) składnika formatu raportowania elektronicznego do generowania dokumentu wychodzącego za pomocą szablonu programu Excel można dodać składnik **Excel\\Strona** w celu stronicowania wygenerowanego dokumentu przy użyciu formuł raportowania elektronicznego. W przypadku każdego składnika **Excel\\Strona**, który zostanie dodany, można dodać wiele zagnieżdżonych składników [Zakres](er-fillable-excel.md#range-component) i nadal zachować zgodność z następującą [strukturą](er-fillable-excel.md#page-component-structure):
+
+- Pierwszy zagnieżdżony składnik **Zakres** można skonfigurować w taki sposób, aby właściwość **Kierunek replikacji** miała wartość **Brak replikacji**. Ten zakres służy do generowania nagłówków stron w generowanych dokumentach.
+- Można dodać wiele innych zagnieżdżonych składników **Zakres**, dla których właściwość **Kierunek replikacji** ma wartość **Pionowo**. Te zakresy służą do wypełniania wygenerowanych dokumentów.
+- Ostatni zagnieżdżony składnik **Zakres** można skonfigurować w taki sposób, aby właściwość **Kierunek replikacji** miała wartość **Brak replikacji**. Ten zakres służy do tworzenia stopki strony w generowanych dokumentach i dodawania wymaganych podziałów stron.
+
+Jeśli podczas projektowania nie przestrzegasz tej struktury formatu raportowania elektronicznego w konstruktorze formatów raportowania elektronicznego, wystąpi błąd weryfikacji i zostanie wyświetlony następujący komunikat o błędzie: „Istnieje więcej niż dwa składniki zakresu bez replikacji. Usuń zbędne składniki.”
+
+### <a name="automatic-resolution"></a>Automatyczne rozwiązywanie
+
+Nie jest dostępna żadna opcja automatycznego rozwiązywania tego problemu.
+
+### <a name="manual-resolution"></a>Ręczne rozwiązywanie
+
+#### <a name="option-1"></a>Opcja 1
+
+Zmodyfikuj skonfigurowany format, zmieniając właściwość **Kierunek replikacji** dla wszystkich niespójnych składników zakresu programu **Excel\\Zakres**.
+
+## <a name="executability-of-an-expression-with-orderby-function"></a><a id="i18"></a>Wykonywalność wyrażenia z funkcją ORDERBY
+
+Funkcja wbudowanej listy [ORDERBY](er-functions-list-orderby.md) ER służy do sortowania rekordów źródła danych ER **[listy rekordów](er-formula-supported-data-types-composite.md#record-list)** określonej jako argument funkcji.
+
+Argumenty funkcji `ORDERBY` mogą być [określone](er-functions-list-orderby.md#syntax-2), aby posortować rekordy tabel aplikacji, widoków lub encji danych poprzez pojedyncze wywołanie bazy danych, aby otrzymać posortowane dane jako listę rekordów. Źródło danych typu **Lista rekordów** jest używane jako argument tej funkcji i określa źródło aplikacji dla tego wywołania.
+
+Moduł ER sprawdza, czy można ustanowić bezpośrednie zapytanie bazy danych do źródła danych, do którego istnieje odwołanie w funkcji `ORDERBY`. Jeśli nie można ustanowić bezpośredniego zapytania, w projektancie mapowania modelu ER wystąpi błąd sprawdzania poprawności. Odebrany komunikat stwierdza, że wyrażenie ER zawierające funkcję `ORDERBY` nie może zostać uruchomione w czasie wykonywania.
+
+Poniższe kroki pokazują, jak może dojść do tego problemu.
+
+1. Zacznij konfigurować składnik mapowania modelu ER.
+2. Dodaj źródło danych typu **Dynamics 365 for Operations \\ Rekordy tabeli**.
+3. Nazwij nowe źródło danych **Vendor**. W polu **Tabela** wybierz opcję **VendTable**, aby określić, że to źródło danych będzie żądało tabeli **VendTable**.
+4. Dodaj źródło danych typu **Pole obliczeniowe**.
+5. Nazwij nowe źródło danych **OrderedVendors** i skonfiguruj je tak, aby zawierało wyrażenie `ORDERBY("Query", Vendor, Vendor.AccountNum)`.
+ 
+    ![Konfigurowanie źródeł danych na stronie Projektant mapowania modelu.](./media/er-components-inspections-18-1.png)
+
+6. Wybierz opcję **Weryfikuj**, aby przeprowadzić inspekcję edytowalnego składnika mapowania modelu na stronie **Projektant mapowania modelu** oraz sprawdzić, czy można wykonać zapytanie do wyrażenia znajdującego się w źródle danych **OrderedVendors**.
+7. Zmodyfikuj źródło danych **Vendor** poprzez dodanie pola zagnieżdżonego o typie **Pole obliczeniowe**, aby uzyskać przycięty numer konta dostawcy.
+8. Nazwij nowe zagnieżdżone pole **$AccNumber** i skonfiguruj je tak, aby zawierało wyrażenie `TRIM(Vendor.AccountNum)`.
+9. Wybierz opcję **Weryfikuj**, aby przeprowadzić inspekcję edytowalnego składnika mapowania modelu na stronie **Projektant mapowania modelu** oraz sprawdzić, czy można wykonać zapytanie do wyrażenia znajdującego się w źródle danych **Vendor**.
+
+    ![Sprawdzenie, czy wyrażenie w źródle danych Vendor może być zapytane na stronie projektanta odwzorowania modelu.](./media/er-components-inspections-18-2.png)
+
+10. Zauważ, że występuje błąd sprawdzania poprawności, ponieważ źródło danych **Vendor** zawiera zagnieżdżone pole typu **Pole obliczeniowe**, które nie zezwala na przekształcenie wyrażenia źródła danych **OrderedVendors** na bezpośrednią instrukcję bazy danych. Ten sam błąd pojawia się podczas uruchamiania, jeśli zignorujesz błąd walidacji i wybierzesz **Uruchom**, aby uruchomić to odwzorowanie modelu.
+
+### <a name="automatic-resolution"></a>Automatyczne rozwiązywanie
+
+Nie jest dostępna żadna opcja automatycznego rozwiązywania tego problemu.
+
+### <a name="manual-resolution"></a>Ręczne rozwiązywanie
+
+#### <a name="option-1"></a>Opcja 1
+
+Zamiast dodawać zagnieżdżone pole typu **Pole obliczeniowe** do źródła danych **Vendor**, dodaj zagnieżdżone pole **$AccNumber** do źródła danych **FilteredVendors** i skonfiguruj pole w taki sposób, aby zawierało wyrażenie `TRIM(FilteredVendor.AccountNum)`. W ten sposób wyrażenie `ORDERBY("Query", Vendor, Vendor.AccountNum)` można uruchomić na poziomie bazy danych, a kalkulację zagnieżdżonego pola **$AccNumber** można obliczyć później.
+
+#### <a name="option-2"></a>Opcja 2
+
+Zmień wyrażenie w źródle danych **FilteredVendors** z `ORDERBY("Query", Vendor, Vendor.AccountNum)` na `ORDERBY("InMemory", Vendor, Vendor.AccountNum)`. Nie zalecamy zmiany wyrażenia dla tabeli zawierającej dużą ilość danych (tabela transakcji), ponieważ zostaną pobrane wszystkie rekordy, a porządkowanie wymaganych rekordów zostanie dokonany w pamięci. Z tego względu ta metoda może spowodować pogorszenie wydajności.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

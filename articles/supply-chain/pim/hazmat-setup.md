@@ -1,37 +1,33 @@
 ---
 title: Ustawianie materiałów niebezpiecznych
 description: W tym temacie opisano sposób konfigurowania danych wymaganych do klasyfikowania towarów jako materiałów niebezpiecznych. Podczas tworzenia zamówienia sprzedaży zawierającego towar, który jest zaklasyfikowany jako materiał niebezpieczny, system generuje dokumentację materiału niebezpiecznego dla tego zamówienia sprzedaży, gdy jest on wysyłany.
-author: dasani-madipalli
-manager: tfehr
+author: t-benebo
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: damadipa
+ms.author: benebotg
 ms.search.validFrom: 2020-06-10
-ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: b049559b64045e80a40afd99bac30a9cfe1d0580
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: 10.0.11
+ms.openlocfilehash: 6923bd24fc8f9aad6e758603e3b20f7d5f2b8fde
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435408"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778016"
 ---
 # <a name="set-up-hazardous-materials"></a>Ustawianie materiałów niebezpiecznych
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Aby skorzystać z funkcji materiałów niebezpiecznych, należy najpierw skonfigurować dane wymagane do klasyfikowania towarów jako materiałów niebezpiecznych. Następnie, podczas tworzenia zamówienia sprzedaży zawierającego towar, który jest zaklasyfikowany jako materiał niebezpieczny, system generuje dokumentację materiału niebezpiecznego dla tego zamówienia sprzedaży, gdy jest on wysyłany.
 
 ## <a name="turn-on-the-hazardous-materials-feature-for-your-system"></a>Włączanie funkcji materiałów niebezpiecznych dla systemu
 
-Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
+Od wersji 10.0.21 Supply Chain Management version ta funkcja jest domyślnie włączona. Administratorzy mogą skorzystać ze strony [Zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją lub wyłączyć w razie potrzeby. W tym miejscu funkcja jest wyświetlana jako:
 
 - **Moduł:** *Zarządzanie informacjami o produktach*
 - **Nazwa funkcji:** *Informacje o produktach niebezpiecznych i dokumentacja wysyłki*
@@ -284,3 +280,6 @@ Aby skonfigurować wartości dla tej specyfikacji należy przejść do sekcji **
 Specyfikacja *Tunelu materiału niebezpiecznego* ogranicza typy tuneli, przez które można przetransportować materiały niebezpieczne, podając zidentyfikowaną listę typów tuneli, które muszą być używane. Kategorie tunelu są ustanawiane przez odpowiednie przepisy dotyczące niebezpiecznych przewozów materiałów. Ta specyfikacja dotyczy zazwyczaj transportu drogowego.
 
 Aby skonfigurować wartości dla tej specyfikacji należy przejść do sekcji **Zarządzanie informacjami o produktach \> Konfiguracja \> Dokumentacja wysyłki dot. materiałów niebezpiecznych \> Tunel materiału niebezpiecznego**. Na stronie **Tunel materiału niebezpiecznego** można utworzyć dowolną liczbę identyfikatorów tunelu i skonfigurować każdy z nich przy użyciu kodu identyfikacji oraz krótkiego opisu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

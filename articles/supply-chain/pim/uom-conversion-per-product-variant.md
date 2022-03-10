@@ -1,7 +1,7 @@
 ---
 title: Przeliczanie jednostki miary dla wariantów produktów
 description: W tym temacie wyjaśniono, jak skonfigurować konwersje jednostek miary dla wariantów produktu. Zawiera przykładową konfigurację.
-author: johanhoffmann
+author: t-benebo
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ROBOTS: noindex, nofollow
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: johanho
+ms.author: benebotg
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 03c9406d295fb0dbd22e8072c2695dbef419b706
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: c02252abcaf82cb2aab928949827e25ef7cce8c2
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6353547"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579575"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Przeliczanie jednostki miary dla wariantów produktów
 

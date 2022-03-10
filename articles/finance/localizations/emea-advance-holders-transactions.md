@@ -2,27 +2,24 @@
 title: Transakcje posiadacza zaliczki
 description: Dowiedz się, jak pracować z transakcjami posiadaczy zaliczek w Microsoft Dynamics 365 Finance.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmWorkerAdvHolderTableListPage_RU
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 262554
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a68c00fc7fc6742da7b2732897fd21e0028f1493
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9b780d349c5df4bd578d394efb139e11cef50d13ab704c526cc2e27374b2aee3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408360"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6782221"
 ---
 # <a name="advance-holder-transactions"></a>Transakcje posiadacza zaliczki
 
@@ -64,3 +61,6 @@ Jeśli po przetwarzaniu arkusza kasowego kwota w polu **Kwota do przeniesienia**
 
 - [Zaliczki na rzecz pracownika (Europa Wschodnia)](tasks/advance-payment-employee.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

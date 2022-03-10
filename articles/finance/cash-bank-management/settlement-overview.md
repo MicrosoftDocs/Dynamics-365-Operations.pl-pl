@@ -1,9 +1,9 @@
 ---
 title: Omówienie rozliczeń
 description: Ten temat zawiera ogólne informacje o procesie rozliczania. Opisano w nim typy transakcji, które można rozliczyć, oraz czas i proces ich rozliczania. Przedstawia on także wyniki procesu rozliczania.
-author: kweekley
-ms.date: 04/10/2020
-ms.topic: article
+author: panolte
+ms.date: 07/30/2021
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans
@@ -17,16 +17,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: a4950c4276fb862bcbf82e489ea3313a92e0515a
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 57f2b209a852bb9513218fab3df118c7d7a2a1e7
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6336076"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986390"
 ---
 # <a name="settlement-overview"></a>Omówienie rozliczeń
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 Ten temat zawiera ogólne informacje o procesie rozliczania. Opisano w nim typy transakcji, które można rozliczyć, oraz czas i proces ich rozliczania. Przedstawia on także wyniki procesu rozliczania.
 
@@ -74,9 +76,25 @@ Rozliczenia mogą również generować transakcje. Na przykład rozliczenie fakt
 
 Podczas próby rozliczenia transakcji można zauważyć symbol wskazujący, że transakcja została oznaczona w innej lokalizacji. W takim przypadku można wybrać transakcję na stronie **rozliczania transakcji**, a następnie wybrać pozycję **Zapytanie \> Rozliczenie w oknie rozliczania**. Widok dla tego zapytania zawiera arkusze, zamówienia sprzedaży, faktury, propozycje płatności i lokalizacje odbiorców, które mogą blokować możliwość rozliczenia transakcji. Aby rozwiązać ten problem, można wybrać link umożliwiający bezpośrednie przejście z zapytania do zablokowanej lokalizacji. Następnie można zaktualizować dokument, używając korekt, które są wymagane do jego rozliczenia. Można również skorzystać ze wskaźnika **Oznaczone**, aby zidentyfikować inne dokumenty znajdujące się w tej samej lokalizacji blokowania.
 
+## <a name="resolve-issues-with-transactions-that-cant-be-settled"></a>Rozwiązywanie problemów z transakcjami, których nie można rozliczyć
+
+Czasami nie można rozliczyć transakcji, ponieważ w danej chwili dokument jest przetwarzany przez inne działanie. W przypadku próby rozliczenia transakcji wystąpi błąd, ponieważ te transakcje są używane. Aby rozwiązać ten problem, można użyć strony **Szczegóły zaznaczonych transakcji**, aby znaleźć transakcje zaznaczone do rozliczenia i zidentyfikować inne procesy, które wykonują na nich działania.
+
+Transakcje są oznaczane do rozliczenia albo podczas opłacania faktur dostawcy, albo gdy odbiorcy płacą otwarte faktury. Czasami faktury te mogą być już zaznaczone do rozliczenia. W związku z tym użytkownicy nie mogą ich wybrać do płatności. Faktury mogą być oznaczone przez inny arkusz płatności odbiorcy, zamówienie sprzedaży, arkusz płatności dostawcy lub zamówienie zakupu w bieżącej firmie lub innej firmie.
+
+Jeśli transakcja jest zablokowana do rozliczenia podczas wprowadzania płatności odbiorcy, otwórz stronę **Szczegóły transakcji oznaczonych dla odbiorcy** (**Rozrachunki z odbiorcami \> Zadania okresowe \> Szczegóły zaznaczonej transakcji odbiorcy**). Aby szybko określić miejsce zablokowania transakcji, można ustawić dowolny z następujących parametrów wyboru: **Konto odbiorcy**, **Załącznik**, **Data** lub **Faktura**. Jeśli nie zostaną ustawione żadne parametry wyboru, system będzie wyświetlał wszystkie dokumenty zablokowane dla bieżącej firmy lub innej wybranej firmy. Po zidentyfikowaniu transakcji zablokowanej do rozliczenia można ją zaznaczyć, a następnie wybrać opcję **Odznacz zaznaczone transakcje**. Wybrana transakcja jest następnie usuwana z każdego arkusza, który zawiera tę transakcję. Jednak dokument nie jest usuwany z innej lokalizacji. Z tego arkusza są usuwane tylko informacje o oznaczaniach.
+
+Jeśli transakcja jest zablokowana do rozliczenia podczas wprowadzania płatności dostawcy, otwórz stronę **Szczegóły transakcji oznaczonych dla dostawcy** (**Rozrachunki z dostawcami \> Zadania okresowe \> Szczegóły zaznaczonej transakcji dostawcy**). Aby szybko określić miejsce zablokowania transakcji, można ustawić dowolny z następujących parametrów wyboru: **Konto dostawcy**, **Załącznik**, **Data** lub **Faktura**. Jeśli nie zostaną ustawione żadne parametry wyboru, system będzie wyświetlał wszystkie dokumenty zablokowane dla bieżącej firmy lub innej wybranej firmy. Po zidentyfikowaniu transakcji można ją zaznaczyć, a następnie wybrać opcję **Odznacz zaznaczone transakcje**, aby rozwiązać problem blokujący. Wybrana transakcja jest następnie usuwana z każdego innego arkusza, w którym jest wybrana. Jednak dokument nie jest usuwany z innej lokalizacji. Z tego arkusza są usuwane tylko informacje o oznaczaniach.
+
+Aby zidentyfikować wszystkie zablokowane dokumenty, otwórz stronę **Szczegóły wszystkich transakcji oznaczonych** (**Rozrachunki z odbiorcami \> Zadania okresowe \> Szczegóły wszystkich zaznaczonych transakcji** lub **Rozrachunki z dostawcami \> Zadania okresowe \> Szczegóły wszystkich zaznaczonych transakcji**). Aby szybko określić miejsce zablokowania transakcji, można ustawić dowolny z następujących parametrów wyboru: **Konto odbiorcy**, **Konto dostawcy**, **Załącznik**, **Data** lub **Faktura**. Jeśli nie zostaną ustawione żadne parametry wyboru, system będzie wyświetlał wszystkie dokumenty zablokowane dla bieżącej firmy lub innej wybranej firmy. Po zidentyfikowaniu transakcji można ją zaznaczyć, a następnie wybrać opcję **Odznacz zaznaczone transakcje**, aby rozwiązać problem blokujący. Wybrana transakcja jest następnie usuwana z każdego innego arkusza, w którym jest wybrana. Jednak dokument nie jest usuwany z innej lokalizacji. Z tego arkusza są usuwane tylko informacje o oznaczaniach.
+
+Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z obszaru roboczego **Zarządzanie funkcjami**, aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. Ta funkcja jest wymieniona w następujący sposób:
+
+- **Moduł:** zarządzanie gotówką i bankami
+- **Nazwa funkcji:** formularz szczegółów zaznaczonej transakcji
+
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 - [Rozlicz resztę](settle-remainder.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

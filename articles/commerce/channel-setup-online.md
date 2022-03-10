@@ -2,7 +2,7 @@
 title: Konfigurowanie kanału online
 description: W tym temacie opisano, jak dodać utworzyć nowy kanał online w Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 07/02/2020
+ms.date: 02/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,21 +14,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: f0f1e0f3e7145c66b8f2b082b44ad7035c57d947
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: f32872fcc27e2e74300c4f18dfa08d666e4ad8a8
+ms.sourcegitcommit: fefe93f3f44d8aa0b7e6d54cc4a3e5eca6e64feb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936951"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8092119"
 ---
 # <a name="set-up-an-online-channel"></a>Konfigurowanie kanału online
-
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano, jak dodać utworzyć nowy kanał online w Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 Moduł Dynamics 365 Commerce obsługuje wiele kanałów sprzedaży detalicznej. Te kanały sprzedaży detalicznej obejmują sklepy internetowe, internetowe serwisy sprzedażowe i sklepy sieci sprzedaży (nazywane także sklepami tradycyjnymi). Sklepy internetowe dają klientom możliwość zakupu produktów w sklepie internetowym detalisty oprócz sklepów detalicznych.
 
@@ -55,11 +52,15 @@ Aby utworzyć i skonfigurować nowy kanał online, wykonaj następujące kroki.
 
 Poniższy rysunek przedstawia utworzenie nowego kanału online.
 
-![Nowy kanał online](media/channel-setup-online-1.png)
+![Nowy kanał online.](media/channel-setup-online-1.png)
 
 Poniższy obraz przedstawia przykład kanału online.
 
-![Przykład kanału online](media/channel-setup-online-2.png)
+![Przykład kanału online.](media/channel-setup-online-2.png)
+
+## <a name="assign-the-channel-to-a-commerce-scale-unit"></a>Przypisywanie kanału do Commerce Scale Unit
+
+Twój nowy kanał musi być przypisany do Commerce Scale Unit. Aby uzyskać instrukcje, zobacz temat [Konfigurowanie kanałów do używania Commerce Scale Unit](../fin-ops-core/dev-itpro/deployment/initialize-retail-channels.md#configure-channels-to-use-commerce-scale-unit).
 
 ## <a name="set-up-languages"></a>Konfiguracja języków
 
@@ -75,7 +76,7 @@ Dodatkowe zadania wymagane dla konfiguracji kanału online, obejmują Konfigurow
 
 Poniższy obraz pokazuje opcje ustawień **Metody dostawy**, **Metody płatności** i **Przypisania grupy realizacji** na karcie **Konfiguracja**.
 
-![Dodatkowe akcje konfiguracji kanału online](media/channel-setup-online-3.png)
+![Dodatkowe akcje konfiguracji kanału online.](media/channel-setup-online-3.png)
 
 ### <a name="set-up-payment-methods"></a>Konfigurowanie metod płatności
 
@@ -90,7 +91,7 @@ Aby skonfigurować metody płatności, należy wykonać następujące kroki dla 
 
 Poniższy obraz przedstawia przykład kart i metod płatności gotówką.
 
-![Przykład metod płatności](media/channel-setup-retail-5.png)
+![Przykład metod płatności.](media/channel-setup-retail-5.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Ustaw metody dostawy
 
@@ -104,7 +105,7 @@ Aby zmienić lub dodać metodę dostawy, wykonaj następujące kroki.
 
 Poniższy obraz przedstawia przykład kart i metodę dostawy.
 
-![Ustaw metody dostawy](media/channel-setup-retail-7.png)
+![Ustaw metody dostawy.](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-a-fulfillment-group-assignment"></a>Konfiguracja przypisania grupy realizacji
 
@@ -118,13 +119,13 @@ Aby skonfigurować przypisanie grupy realizacji, należy wykonać następujące 
 
 Poniższy obraz przedstawia przykład konfiguracji przypisania grupy realizacji.
 
-![Konfiguracja przypisania grupy realizacji](media/channel-setup-retail-9.png)
+![Konfiguracja przypisania grupy realizacji.](media/channel-setup-retail-9.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Omówienie kanałów](channels-overview.md)
 
-[Wymagania wstępne konfiguracji kanałów](channels-prerequisites.md)
+[Wymagania wstępne dotyczące konfiguracji kanału](channels-prerequisites.md)
 
 [Konfigurowanie kanału sprzedaży](channel-setup-retail.md)
 

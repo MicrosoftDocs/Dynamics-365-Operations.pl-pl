@@ -5,24 +5,24 @@ author: RamaKrishnamoorthy
 ms.date: 01/27/2020
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: f92fa528f98dd04d99145eba311994848a5db2f02b70412f00e8ef17c63bf74e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c24f3cb6bdc9dc6e287bf2ff06792cb1c643f474
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746591"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061790"
 ---
 # <a name="access-to-finance-and-tax-reference-data"></a>Dostęp do danych finansowych i danych referencyjnych podatku
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Każda firma współpracuje z podstawowym zbiorem danych finansowych, na przykład w roku obrachunkowym, walucie, w której firma prowadzi działalność, na kontach, w których firma jest odpowiedzialna za działalność lub wychodzi z, stawek podatkowych i przekazów. Te dane znajdują się w aplikacjach Finance and Operations. Jest jednak narażony na Dataverse, dzięki czemu aplikacje angażujące klientów mogą mieć jedno źródło danych finansowych i podatkowych. W ten sposób dane są jednorodne w całym ekosystemie firmy.
+
+Każda firma współpracuje z podstawowym zbiorem danych finansowych, na przykład w roku obrachunkowym, walucie, w której firma prowadzi działalność, na kontach, w których firma jest odpowiedzialna za działalność lub wychodzi z, stawek podatkowych i przekazów. Dane te znajdują się w aplikacjach Finanse i Działania. Jest jednak narażony na Dataverse, dzięki czemu aplikacje angażujące klientów mogą mieć jedno źródło danych finansowych i podatkowych. W ten sposób dane są jednorodne w całym ekosystemie firmy.
 
 Dane finansowe i podatkowe są integrowane przy użyciu następujących mapowań:
 

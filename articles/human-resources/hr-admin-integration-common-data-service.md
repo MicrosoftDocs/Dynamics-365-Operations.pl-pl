@@ -1,8 +1,8 @@
 ---
-title: Konfigurowanie integracji z usługą Dataverse
-description: Można włączyć lub wyłączyć integrację między usługą Microsoft Dataverse a Dynamics 365 Human Resources. Można również wyświetlić szczegóły synchronizacji, wyczyścić dane śledzenia i dokonać ponownej synchronizacji tabeli, aby ułatwić rozwiązywanie problemów z danymi między tymi dwoma środowiskami.
-author: andreabichsel
-ms.date: 01/25/2021
+title: Konfigurowanie integracji usługi Dataverse
+description: W tym temacie opisano integrację między Microsoft Dataverse i Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,17 +12,20 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1a1ee5345e2d6b3736d45e233a59ac4009a9f1c8
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: c4e68142045b72b139bdda8be707a73e21e568fd
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6344695"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065458"
 ---
-# <a name="configure-dataverse-integration"></a>Konfigurowanie integracji z usługą Dataverse
+# <a name="configure-dataverse-integration"></a>Konfigurowanie integracji usługi Dataverse
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

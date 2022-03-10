@@ -2,26 +2,23 @@
 title: Akredytywa importowa
 description: Ta procedura poprowadzi przez proces tworzenia akredytywy importowej.
 author: kweekley
-manager: AnnBe
 ms.date: 02/28/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendTable, VendBankAccounts, PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, BankLCImport,  PurchEditLines, VendEditInvoice, SrsReportViewerForm, LedgerJournalTable, LedgerJournalTransVendPaym, VendOpenTrans, SysQueryForm, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9f9c73ec1347e72f8cd4ae8eec580bb8fe3df8ed
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c6119a8b52eece5935bf05d0f2300feeb8d4e90b08f26e949870f491bc9254e8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446867"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6743128"
 ---
 # <a name="import-letter-of-credit"></a>Akredytywa importowa
 
@@ -131,7 +128,8 @@ Ta procedura wykorzystuje firmę demonstracyjną USMF.
 12. Zamknij stronę.
 13. Zamknij stronę.
 
-## <a name="verify-import-letter-of-credit-status"></a>Weryfikacja stanu akredytywy importowej
+## <a name="verify-import-letter-of-credit-status-and-printing"></a>Sprawdzenie statusu akredytywy importowej i drukowanie
+
 1. Wybierz kolejno opcje Zarządzanie gotówką i bankami > Akredytywy > Akredytywa importowa i inkaso importowe.
 2. Na liście znajdź i zaznacz odpowiedni rekord.
 3. Na liście kliknij łącze w wybranym wierszu.
@@ -185,3 +183,6 @@ Ta procedura wykorzystuje firmę demonstracyjną USMF.
     * Sprawdź, czy w raporcie znajdują się transakcje z numerem dokumentu banku, limit instrumentu, wykorzystaną kwotą i kwotą salda instrumentu.  
 8. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

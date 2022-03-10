@@ -2,11 +2,9 @@
 title: Moduł nawigacyjny
 description: W tym temacie opisano moduły nawigacyjne i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,20 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1883281c62575ae0b48b6e584876185bb179b4f4
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f387b6353e58ebb454b74568ddc17ae6d25d7e36
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4986086"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109739"
 ---
-# <a name="breadcrumb-module"></a>Moduł nawigacyjny
+# <a name="breadcrumb-module"></a>Moduł szlaków nawigacyjnych
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano moduły nawigacyjne i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 Moduły do stron nadrzędnych służą do tworzenia pomocniczej nawigacji na stronach witryny. Zazwyczaj są one wyświetlane u góry strony, pod nagłówkiem. Chociaż moduły stron nadrzędnych można dodawać do dowolnej strony, są one najczęściej używane na stronach szczegółów produktów (PDPs), do wyświetlania hierarchii kategorii produktów oraz szybkiego sposobu poruszania się po witrynie. Za pomocą modułu łączy wielokrotnych można również wyświetlić łącze „Powrót do wyników”, gdy użytkownicy otworzą PDP na stronie wyszukiwania lub listy. Dzięki temu użytkownicy mogą szybko powrócić do strony przefiltrowanej listy, aby kontynuować zakupy.
 
@@ -41,7 +37,7 @@ Na stronach z kontekstem kategorii produktów, takimi jak PDPs i strony kategori
 
 Poniższy obraz przedstawia przykład modułu nawigacyjnego, który pokazuje hierarchię kategorii dla PDP.
 
-![Przykład modułu nawigacyjnego](./media/ecommerce-breadcrumb.PNG)
+![Przykład modułu nawigacyjnego.](./media/ecommerce-breadcrumb.PNG)
 
 ## <a name="breadcrumb-module-settings"></a>Ustawienia modułu nawigacyjnego
 
@@ -85,7 +81,7 @@ Aby dodać moduł nawigacyjnego do PDP i ustawić wymagane właściwości, wykon
 
 [Moduł menu nawigacji](nav-menu-module.md)
 
-[Moduł wyboru witryny](site-selector.md)
+[Moduł selektora witryn](site-selector.md)
 
 [Omówienie domyślnej strony docelowej kategorii i strony wyników wyszukiwania](category-search-page-overview.md)
 
@@ -94,3 +90,6 @@ Aby dodać moduł nawigacyjnego do PDP i ustawić wymagane właściwości, wykon
 [Moduł pola zakupu](add-buy-box.md)
 
 [Aktualizacje zestawu SDK i biblioteki modułów](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

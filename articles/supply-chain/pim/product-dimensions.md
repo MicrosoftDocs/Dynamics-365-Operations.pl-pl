@@ -2,11 +2,9 @@
 title: Wymiary produktu
 description: Istnieje pięć wymiarów produktu - kolor, konfiguracja, rozmiar, styl i wersja. Wymiary produktu łączy się w grupy wymiarów, a następnie przypisuje grupy wymiarów do produktów głównych. Kombinacje wymiarów produktu decydują o definicjach wariantów produktu.
 author: t-benebo
-manager: tfehr
 ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductDimension, EcoResProductDimensionGroup, EcoResProductMasterDimension, RetailEcoResColor, RetailEcoResSize, RetailEcoResStyle, EcoResVersionNameLookup, RetailStyleGroupTable
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 285e9d2d184a899f1ffa502d59a853ba83cda491
-ms.sourcegitcommit: 2093c9dc31d1b60b3114085d9cef48fdbbb0ca0d
+ms.openlocfilehash: 46079daafc744421abcbdf0a3539428f2a39f13c
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5118688"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920530"
 ---
 # <a name="product-dimensions"></a>Wymiary produktu
 
@@ -80,7 +78,7 @@ Firma sprzedaje jeansy. Dla towaru — *jeansów* — istnieją wymiary kolor i 
 
 ## <a name="the-version-product-dimension"></a>Wersja wymiaru produktu
 
-Wersja to wymiar produktu, który ma pomóc w zachowaniu i śledzeniu wielu wersji produktu w łańcuchu dostaw. Śledzenie wersji ma zasadnicze znaczenie dla sukcesu producentów, którzy działają w świecie stale kurczących się cykli życia produktów, zwiększonych wymagań dotyczących jakości i niezawodności oraz większego nacisku na bezpieczeństwo produktów.
+Wersja to wymiar produktu, który ma pomóc w zachowaniu i śledzeniu wielu wersji produktu w łańcuchu dostaw. Śledzenie wersji ma zasadnicze znaczenie dla sukcesu producentów, którzy działają w świecie ciągle skracanych cykli życia produktów, zwiększonych wymagań dotyczących jakości i niezawodności oraz zwiększonego nacisku na bezpieczeństwo produktów.
 
 Jako standardowy wymiar produktu, wersja będzie działać podobnie jak istniejące wymiary produktu (rozmiar, styl, kolor i konfiguracja). Z tego względu można go stosować do innych celów oprócz śledzenia wersji produktów.
 
@@ -145,3 +143,6 @@ Wymiar wersji działa podobnie do innych wymiarów produktu. Jednak ze względu 
 
 > [!IMPORTANT]
 > Jeśli włączysz wymiar wersji i użyjesz go, niektóre rozwiązania odwołujące się do wymiarów magazynowych mogą przestać działać zgodnie z oczekiwaniami. Aby potwierdzić i rozwiązać te problemy, skontaktuj się z niezależnym dostawcą oprogramowania (ISV), aby uzyskać rozwiązania, których dotyczy problem. Aby uzyskać więcej informacji, skorzystaj z opcji [Włącz wymiar wersji](#enable-version-dim).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

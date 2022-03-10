@@ -2,29 +2,26 @@
 title: Średnia ważona z wartością fizyczną i oznaczeniami
 description: Średnia ważona jest modelem magazynowym opierającym się na zasadzie średniej ważonej, gdzie rozchody magazynowe są szacowane na podstawie średniej wartości towarów przyjętych do magazynu podczas okresu zamykania magazynu plus dostępnych zapasów z poprzedniego okresu.
 author: AndersGirke
-manager: tfehr
 ms.date: 10/25/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 ms.custom: 65501
 ms.assetid: 25041ff0-bafe-484d-a94a-e1772ad43204
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: kamaybac
+ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 225379df8bb86522d5817add570d614d09a1a92d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d94e61384ad2d0880a6d62b963e9a99518a41db1
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435063"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572008"
 ---
 # <a name="weighted-average-with-physical-value-and-marking"></a>Średnia ważona z wartością fizyczną i oznaczeniami
 
@@ -68,7 +65,7 @@ W poniższym scenariuszu zostały zaksięgowane finansowo zaktualizowane przych�
 
 Poniższy wykres obrazuje tę serię transakcji ze skutkami zastosowania modelu magazynowego średniej ważonej i zasady bezpośredniego rozliczania bez opcji Włącz wartość fizyczną. 
 
-![Średnia ważona — rozrachunek bezpośredni bez uwzględniania wartości fizycznej](./media/weightedaveragedirectsettlementwithoutincludephysicalvalue.gif) 
+![Średnia ważona — rozrachunek bezpośredni bez uwzględniania wartości fizycznej.](./media/weightedaveragedirectsettlementwithoutincludephysicalvalue.gif) 
 
 **Objaśnienie wykresu**
 - Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
@@ -102,7 +99,7 @@ Poniższe transakcje są przedstawione na poniższym rysunku:
 
 Poniższy wykres obrazuje tę serię transakcji ze skutkami zastosowania modelu magazynowego średniej ważonej i zasady sumarycznego rozliczania bez opcji Włącz wartość fizyczną. 
 
-![Średnia ważona — rozrachunek sumaryczny bez uwzględniania wartości fizycznej](./media/weightedaveragesummarizedsettlementwithoutincludephysicalvalue.gif) 
+![Średnia ważona — rozrachunek sumaryczny bez uwzględniania wartości fizycznej.](./media/weightedaveragesummarizedsettlementwithoutincludephysicalvalue.gif) 
 
 **Objaśnienie wykresu**
 - Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
@@ -131,7 +128,7 @@ Na poniższym schemacie przedstawiono następujące transakcje:
 
 Poniższy wykres obrazuje tę serię transakcji ze skutkami zastosowania modelu magazynowego średniej ważonej i zasady bezpośredniego rozliczania z opcją Włącz wartość fizyczną. 
 
-![Średnia ważona — rozrachunek bezpośredni z uwzględnianiem wartości fizycznej](./media/weightedaveragedirectsettlementwithincludephysicalvalue.gif) 
+![Średnia ważona — rozrachunek bezpośredni z uwzględnianiem wartości fizycznej.](./media/weightedaveragedirectsettlementwithincludephysicalvalue.gif) 
 
 **Objaśnienie wykresu**
 - Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
@@ -164,7 +161,7 @@ Poniższe transakcje są przedstawione na poniższym rysunku:
 
 Poniższy wykres obrazuje tę serię transakcji ze skutkami zastosowania modelu magazynowego średniej ważonej i zasady sumarycznego rozliczania bez opcji Włącz wartość fizyczną. 
 
-![Średnia ważona — rozrachunek sumaryczny z uwzględnianiem wartości fizycznej](./media/weightedaveragesummarizedsettlementwithincludephysicalvalue.gif) 
+![Średnia ważona — rozrachunek sumaryczny z uwzględnianiem wartości fizycznej.](./media/weightedaveragesummarizedsettlementwithincludephysicalvalue.gif) 
 
 **Objaśnienie wykresu**
 - Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
@@ -212,7 +209,7 @@ Nowa średnia ruchoma kosztów własnych odzwierciedla średnią wynikającą z 
 
 Poniższy wykres obrazuje tę serię transakcji ze skutkami zastosowania modelu magazynowego średniej ważonej z oznaczeniem. 
 
-![Średnia ważona z oznaczaniem](./media/weightedaveragewithmarking.gif) 
+![Średnia ważona z oznaczaniem.](./media/weightedaveragewithmarking.gif) 
 
 **Objaśnienie wykresu**
 - Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
@@ -230,3 +227,6 @@ Poniższy wykres obrazuje tę serię transakcji ze skutkami zastosowania modelu 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

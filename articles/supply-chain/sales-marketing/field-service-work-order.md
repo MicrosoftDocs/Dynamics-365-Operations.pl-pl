@@ -1,12 +1,10 @@
 ---
 title: Synchronizowanie zleceń pracy w rozwiązaniu Field Service z zamówieniami sprzedaży w rozwiązaniu Supply Chain Management
 description: W tym temacie omówiono szablony i podstawowe zadania, które są używane do synchronizowania zleceń pracy w aplikacji Field Service ze zleceniami pracy w Supply Chain Management.
-author: ChristianRytt
-manager: tfehr
+author: Henrikan
 ms.date: 04/09/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -15,25 +13,25 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 3453d0f6e6217ab63047410c459dc65d8cc4df5c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b7b311701aff12d58392fc036d0f1174678b7dc3
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235443"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061316"
 ---
 # <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>Synchronizowanie zleceń pracy w rozwiązaniu Field Service z zamówieniami sprzedaży w rozwiązaniu Supply Chain Management
 
 [!include[banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 W tym temacie omówiono szablony i podstawowe zadania, które są używane do synchronizowania zleceń w Dynamics 365 Field Service z zamówieniami sprzedaży w Dynamics 365 Supply Chain Management.
 
-[![Synchronizacja procesów biznesowych między rozwiązaniami Supply Chain Management i Field Service](./media/field-service-integration.png)](./media/field-service-integration.png)
+[![Synchronizacja procesów biznesowych między rozwiązaniami Supply Chain Management i Field Service.](./media/field-service-integration.png)](./media/field-service-integration.png)
 
 
 ## <a name="templates-and-tasks"></a>Szablony i zadania
@@ -90,21 +88,21 @@ Poniższa tabela zawiera przegląd różnych kombinacji dla wierszy produktów.
 | Stan systemu <br>(Field Service) | Stan wiersza <br>(Field Service) | Alokowane <br>(Field Service) |Zsynchronizowana wartość <br>(Supply Chain Management) |
 |--------------------|-------------|-----------|---------------------------------|
 | Otwarte — zaplanowane   | Oszacowanie   | Tak       | Oszacowanie                       |
-| Otwarte — zaplanowane   | Oszacowany   | Nr        | Użyte                            |
+| Otwarte — zaplanowane   | Oszacowany   | Nie        | Użyte                            |
 | Otwarte — zaplanowane   | Użyte        | Tak       | Użyte                            |
-| Otwarte — zaplanowane   | Użyte        | Nr        | Użyte                            |
+| Otwarte — zaplanowane   | Użyte        | Nie        | Użyte                            |
 | Otwarte — w toku | Oszacowany   | Tak       | Oszacowany                       |
-| Otwarte — w toku | Oszacowany   | Nr        | Użyte                            |
+| Otwarte — w toku | Oszacowany   | Nie        | Użyte                            |
 | Otwarte — w toku | Użyte        | Tak       | Użyte                            |
-| Otwarte — w toku | Użyte        | Nr        | Użyte                            |
+| Otwarte — w toku | Użyte        | Nie        | Użyte                            |
 | Otwarte — zakończone   | Oszacowany   | Tak       | Oszacowany                       |
-| Otwarte — zakończone   | Oszacowany   | Nr        | Użyte                            |
+| Otwarte — zakończone   | Oszacowany   | Nie        | Użyte                            |
 | Otwarte — zakończone   | Użyte        | Tak       | Użyte                            |
-| Otwarte — zakończone   | Użyte        | Nr        | Użyte                            |
+| Otwarte — zakończone   | Użyte        | Nie        | Użyte                            |
 | Zamknięte — zaksięgowane    | Oszacowany   | Tak       | Użyte                            |
-| Zamknięte — zaksięgowane    | Oszacowany   | Nr        | Użyte                            |
+| Zamknięte — zaksięgowane    | Oszacowany   | Nie        | Użyte                            |
 | Zamknięte — zaksięgowane    | Użyte        | Tak       | Użyte                            |
-| Zamknięte — zaksięgowane    | Użyte        | Nr        | Użyte                            |
+| Zamknięte — zaksięgowane    | Użyte        | Nie        | Użyte                            |
 
 Poniższa tabela zawiera przegląd różnych kombinacji dla wierszy usług.
 
@@ -247,31 +245,31 @@ Na poniższych ilustracjach pokazano mapowanie szablonu w narzędziu Integracja 
 
 Filtr: (msdyn_systemstatus ne 690970005) i (msdyn_systemstatus ne 690970000) i (msdynce_hasexternallymaintainedproductsonly eq true)
 
-[![Mapowanie szablonu w integracji danych](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
+[![Mapowanie szablonów w integracji danych dla zleceń pracy na zamówienia sprzedaży (Field Service do Supply Chain Management): WorkOrderHeader.](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineestimate"></a>Zlecenia pracy do zleceń w Sales (Field Service do Supply Chain Management): WorkOrderServiceLineEstimate
 
 Filtr: (msdynce_headersystemstatus ne 690970005) i (msdynce_headersystemstatus ne 690970000) i (msdynce_orderhasexternalmaintainedproductsonly eq true) i (msdyn_linestatus eq 690970000) i (msdynce_headersystemstatus ne 690970004)
 
-[![Mapowanie szablonu w integracji danych](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
+[![Mapowanie szablonów w integracji danych dla zleceń pracy na zamówienia sprzedaży (Field Service do Supply Chain Management): WorkOrderServiceLineEstimate.](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineused"></a>Zlecenia pracy do zleceń w Sales (Field Service do Supply Chain Management): WorkOrderServiceLineUsed
 
 Filtr: (msdynce_headersystemstatus ne 690970005) i (msdynce_headersystemstatus ne 690970000) i (msdynce_orderhasexternalmaintainedproductsonly eq true) i ((msdyn_linestatus eq 690970001) lub (msdynce_headersystemstatus eq 690970004))
 
-[![Mapowanie szablonu w integracji danych](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
+[![Mapowanie szablonów w integracji danych dla zleceń pracy na zamówienia sprzedaży (Field Service do Supply Chain Management): WorkOrderServiceLineUsed.](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineestimate"></a>Zlecenia pracy do zleceń w Sales (Field Service do Supply Chain Management): WorkOrderProductLineEstimate
 
 Filtr: (msdynce_headersystemstatus ne 690970005) i (msdynce_headersystemstatus ne 690970000) i (msdynce_orderhasexternalmaintainedproductsonly eq true) i (msdyn_linestatus eq 690970000) i (msdynce_headersystemstatus ne 690970004) i (msdyn_allocated eq true)
 
-[![Mapowanie szablonu w integracji danych](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
+[![Mapowanie szablonów w integracji danych dla zleceń pracy na zamówienia sprzedaży (Field Service do Supply Chain Management): WorkOrderProductLineEstimate.](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineused"></a>Zlecenia pracy do zleceń w Sales (Field Service do Supply Chain Management): WorkOrderProductLineUsed
 
 Filtr: (msdynce_headersystemstatus ne 690970005) i (msdynce_headersystemstatus ne 690970000) i (msdynce_orderhasexternalmaintainedproductsonly eq true) i ((msdyn_linestatus eq 690970001) lub (msdynce_headersystemstatus eq 690970004) lub (msdyn_allocated ne true))
 
-[![Mapowanie szablonu w integracji danych](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
+[![Mapowanie szablonów w integracji danych dla zleceń pracy na zamówienia sprzedaży (Field Service do Supply Chain Management): WorkOrderProductLineUsed.](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

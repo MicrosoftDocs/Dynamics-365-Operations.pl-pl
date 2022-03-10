@@ -1,12 +1,10 @@
 ---
-title: Amortyzacja regresywna 175 procent
-description: Ten temat zawiera omówienie metody amortyzacji 175% amortyzacja degresywna.
-author: saraschi2
-manager: AnnBe
+title: Amortyzacja degresywna 175 procent
+description: Ten temat przedstawia omówienie metody amortyzacji 175 procent — amortyzacja degresywna.
+author: moaamer
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
@@ -14,21 +12,21 @@ ms.reviewer: roschlom
 ms.custom: 13911
 ms.assetid: cc5d001f-bcfe-4602-9ec1-9e265e9fd188
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8138003971ace280b08760df718671b1779bd101
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 99bd47192d389c373b29a98f5344e1e0c1ab04e6
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5230353"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883270"
 ---
-# <a name="175-percent-reducing-balance-depreciation"></a>Amortyzacja regresywna 175 procent
+# <a name="175-percent-reducing-balance-depreciation"></a>Amortyzacja degresywna 175 procent
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera omówienie metody amortyzacji 175% amortyzacja degresywna.
+Ten temat przedstawia omówienie metody amortyzacji 175 procent — amortyzacja degresywna.
 
 Po skonfigurowaniu profilu amortyzacji środków trwałych i wybraniu wartości **Degresywna 175%** w polu **Metoda** na stronie **Profile amortyzacji** amortyzacja środków trwałych, które są przypisane do tego profilu amortyzacji, ma taką samą wartość procentową dla każdego okresu amortyzacji. 
 
@@ -66,10 +64,10 @@ W przypadku wybrania opcji **Fiskalny** jako rok amortyzacji, w polu **Częstotl
 
 ## <a name="example-of-175-reducing-balance-depreciation"></a>Przykład amortyzacji degresywnej 175%
 
-|                                |        |
+| Pole                          | Wartość  |
 |--------------------------------|--------|
-| Koszt nabycia               | 11 000 |
-| Wartość odzyskana                  | 1 000  |
+| Koszt nabycia               | 11,000 |
+| Wartość odzyskana                  | 1 000  |
 | Podstawa amortyzacji              | 10000 |
 | Okres użytkowania (lata)             | 5 przypada na składniki z tytułu ubezpieczeń majątkowych i osobowych      |
 | Roczna wartość procentowa amortyzacji | 35%    |

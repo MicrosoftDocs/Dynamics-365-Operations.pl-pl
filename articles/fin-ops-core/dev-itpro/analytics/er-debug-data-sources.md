@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: ba8f20e7b4ca6579016fa60d0bbf69f7b4e9c7d3
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 02aee8c6ec3b2720c2fcbb17f15791d88d688a34
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605388"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323785"
 ---
 # <a name="debug-data-sources-of-an-executed-er-format-to-analyze-data-flow-and-transformation"></a>Debugowanie źródeł danych dla wykonanego formatu ER w celu analizowania przekształcenia i przepływu danych
 
@@ -28,7 +28,7 @@ ms.locfileid: "7605388"
 
 [!include[banner](../includes/preview-banner.md)]
 
-Podczas [konfigurowania](tasks/er-format-configuration-2016-11.md) rozwiązania Raportowanie elektroniczne (ER) w celu generowania dokumentów wychodzących należy zdefiniować metody, które są używane do uzyskiwania danych z aplikacji i wprowadzania ich do generowanych danych wyjściowych. Aby zapewnić wydajniejszą obsługę cyklu życia rozwiązania ER, powinno ono składać się z [modelu danych ER](general-electronic-reporting.md#DataModelComponent) i jego składników [mapowania](general-electronic-reporting.md#ModelMappingComponent), a także z [formatu ER](general-electronic-reporting.md#FormatComponentOutbound) i jego składników mapowania, dzięki czemu mapowanie modelu jest właściwe dla aplikacji, natomiast inne składniki pozostają niezależne od aplikacji. Z tego powodu kilka składników rozwiązania ER może [wpłynąć na](general-electronic-reporting.md#FormatComponentOutbound) proces wprowadzania danych w wygenerowanych danych wyjściowych.
+Podczas [konfigurowania](tasks/er-format-configuration-2016-11.md) rozwiązania Raportowanie elektroniczne (ER) w celu generowania dokumentów wychodzących należy zdefiniować metody, które są używane do uzyskiwania danych z aplikacji i wprowadzania ich do generowanych danych wyjściowych. Aby zapewnić wydajniejszą obsługę cyklu życia rozwiązania ER, powinno ono składać się z modelu danych ER i jego składników mapowania, a także z formatu ER i jego składników mapowania, dzięki czemu mapowanie modelu jest właściwe dla aplikacji, natomiast inne składniki pozostają niezależne od aplikacji. Z tego powodu kilka składników rozwiązania ER może wpłynąć na proces wprowadzania danych w wygenerowanych danych wyjściowych.
 
 Czasami dane wygenerowanego wyniku wyglądają inaczej niż te same dane w bazie danych aplikacji. W takich przypadkach określisz, który składnik ER jest odpowiedzialny za przekształcenie danych. Funkcja debugera źródła danych ER znacznie skraca czas i redukuje koszty związane z takim badaniem. Możesz przerwać wykonywanie formatu ER i otworzyć interfejs debugera źródła danych. Można w nim przeglądać dostępne źródła danych i wybierać pojedyncze źródło danych do wykonania. Takie wykonanie ręczne symuluje wykonywanie źródła danych podczas rzeczywistego uruchamiania formatu ER. Wynik jest przedstawiany na stronie, na której można analizować odebrane dane.
 
@@ -190,9 +190,9 @@ Jeśli chcesz użyć rozwiązania ER do wygenerowania pliku płatności elektron
 
 Oprócz wybranego formatu ER następujące [konfiguracje](general-electronic-reporting.md#Configuration) muszą zostać automatycznie zaimportowane do wystąpienia usługi Microsoft Dynamics 365 Finance jako część rozwiązania ER **Polecenie przelewu ISO20022**:
 
-- [Konfiguracja modelu danych ER](general-electronic-reporting.md#DataModelComponent) **Model płatności**
-- [Konfiguracja formatu ER](general-electronic-reporting.md#FormatComponentOutbound) **Polecenie przelewu ISO20022**
-- [Konfiguracja mapowania modelu ER](general-electronic-reporting.md#ModelMappingComponent) **Mapowanie 1611 modelu płatności**
+- **Konfiguracja modelu** danych ER Model płatności
+- Konfiguracja formatu ER **Polecenie przelewu ISO20022**
+- **Mapowanie 1611 modelu płatności** konfiguracja mapowania modelu ER.
 - Konfiguracja mapowania modelu ER **Mapowanie modelu płatności do miejsca docelowego ISO20022**
 
 Te konfiguracje można znaleźć na stronie **Konfiguracje** struktury ER (**Administracja organizacją** \> **Raportowanie elektroniczne** \> **Konfiguracje**).

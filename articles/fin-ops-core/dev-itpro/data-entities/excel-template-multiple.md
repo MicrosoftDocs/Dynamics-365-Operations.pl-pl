@@ -1,6 +1,6 @@
 ---
 title: Szablony danych z wieloma arkuszami
-description: W tym temacie opisano, jak przeprowadzić import danych przy użyciu szablonów jednostki danych programu Excel do Finance and Operations.
+description: W tym temacie opisano, jak przeprowadzić import danych przy użyciu szablonów jednostki danych programu Excel do Finanse i Działania.
 author: peakerbl
 ms.date: 01/01/2018
 ms.topic: article
@@ -14,16 +14,19 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 343767d056eb164a7da70fb983fe37569a12986c
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: cf3c423bdf06685a3c4025551927123773ae818a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7404007"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070068"
 ---
 # <a name="data-templates-with-multiple-worksheets"></a>Szablony danych z wieloma arkuszami
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Zarządzanie danymi w aplikacji obsługuje szablony Microsoft Excel dla jednostek danych. Szablony te mogą zawierać jeden lub więcej arkuszy. Szablony z wieloma arkuszami są często używane, gdy wygodne jest zarządzanie danymi w jednym pliku i importowanie go do wielu jednostek danych. Przykładem mogą być oddziały i magazyny.
 

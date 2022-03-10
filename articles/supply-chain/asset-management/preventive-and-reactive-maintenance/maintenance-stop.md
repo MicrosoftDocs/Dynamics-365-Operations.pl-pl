@@ -1,29 +1,26 @@
 ---
 title: Działania w ramach przerwy konserwacyjnej
 description: Ten temat wyjaśnia, jak przestoje prac konserwacyjnych służą do uzyskiwania przeglądu zdolności produkcyjnych wymaganych do wykonania zadań konserwacyjnych dotyczących konkretnych składników majątku w danym okresie.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetMaintenanceStopCopy, EntAssetMaintenanceStopObject, EntAssetObjectProductionStop, EntAssetProductionStopType, EntAssetMaintenanceStop
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 617fca55226e216197c385c88a9d7a8e3de03b03
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0e6168033afb97c6f4f1b8466801a6f16332df82a039927ec1b45e03aa3694b8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435255"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6727925"
 ---
 # <a name="maintenance-downtime-activities"></a>Działania w ramach przerwy konserwacyjnej
 
@@ -43,7 +40,7 @@ Po wybraniu składników majątku w rejestracji czasu przestoju, wszystkie otwar
 
 Kliknij **Zarządzanie składnikami majątku** > **Wspólne** > **Działania w ramach przerwy konserwacyjnej** > **Wszystkie działania w ramach przerwy konserwacyjnej**, aby otworzyć listę wszystkich działań związanych z przestojami serwisowych i zobaczyć niektóre informacje dotyczące działań. Kliknij łącze w kolumnie **Działania w ramach przerwy konserwacyjnej**, aby otworzyć widok szczegółów. Na poniższej ilustracji pokazano przykład strony listy **Działania w ramach przerwy konserwacyjnej**.
 
-![Rysunek 1](media/19-preventive-maintenance.png)
+![Rysunek 1.](media/19-preventive-maintenance.png)
 
 
 ## <a name="create-a-maintenance-downtime-activity"></a>Tworzenie działania w ramach przerwy konserwacyjnej
@@ -64,7 +61,7 @@ Kliknij **Zarządzanie składnikami majątku** > **Wspólne** > **Działania w r
 
 Na poniższej ilustracji pokazano przykład widoku szczegółów **Działania w ramach przerwy konserwacyjnej**.
 
-![Rysunek 2](media/20-preventive-maintenance.png)
+![Rysunek 2.](media/20-preventive-maintenance.png)
 
 >[!NOTE]
 >Wiersze zadań obsługi zleceń i harmonogram konserwacji związane z wybranymi składnikami są aktualizowane automatycznie, jeśli po utworzeniu działania dotyczącego przestojów konserwacyjnych zostaną utworzone nowe zlecenia pracy lub wiersze harmonogramu konserwacji. Jeśli na przykład planujesz plany obsługi lub zaokrąglanie obsługi w odniesieniu do powiązanych środków trwałych dwa dni po utworzeniu działania dotyczącego przestojów, nowe wiersze harmonogramu konserwacji są automatycznie dodawane do działania dotyczącego przestojów konserwacyjnych.
@@ -75,7 +72,7 @@ Na poniższej ilustracji pokazano przykład widoku szczegółów **Działania w 
 
 10. Kliknij przycisk **OK**, aby rozpocząć obliczanie. Łączna liczba godzin jest wyświetlana w przeglądzie **Obciążenie wydajności**. Na karcie **Obciążenie wydajności** > **Grupuj według...** (grupy okienka akcji), kliknij odpowiednie przyciski, aby uzyskać bardziej szczegółowy przegląd alokacji prognozowanych godzin. Na poniższej ilustracji przedstawiono wyniki obliczenia **Obciążenia wydajności**.
 
-![Rysunek 3](media/21-preventive-maintenance.png)
+![Rysunek 3.](media/21-preventive-maintenance.png)
 
 11. Po uzyskaniu przeglądu obciążenia zdolności produkcyjnych, jeśli chcesz wprowadzić korekty dotyczące zadań obsługi zleceń lub wierszy harmonogramu konserwacji, Wróć do widoku szczegółowego **Działania w ramach przerwy konserwacyjnej** i wybierz wiersze, które chcesz dopasować na skróconych kartach **Wynikowe zadania konserwacyjne zleceń pracy** i **Wiersze harmonogramu konserwacji**.
 
@@ -92,8 +89,11 @@ Na poniższej ilustracji pokazano przykład widoku szczegółów **Działania w 
 
 16. Kliknij przycisk **OK**, aby rozpocząć obliczanie. Łączna liczba prognoz dla pozycji jest wyświetlana w przeglądzie  **Prognoza dla pozycji**. Na karcie **Prognoza dla pozycji** > **Grupuj według...** (grupy okienka akcji), kliknij odpowiednie przyciski, aby uzyskać bardziej szczegółowy przegląd alokacji prognozowanych pozycji. Ilustracja poniżej przedstawia wyniki obliczeń typu **Prognozy dla pozycji**.
 
-![Rysunek 4](media/22-preventive-maintenance.png)
+![Rysunek 4.](media/22-preventive-maintenance.png)
 
 - Istnieje możliwość kopiowania zasobów z jednej czynności związanej z obsługą przestojów do innej. We **Wszystkie działania w ramach przerwy konserwacyjnej**, wybierz przycisk **Kopiuj działania w ramach przerwy konserwacyjnej** i dokonaj wyboru w polach **Z działań w ramach przerwy konserwacyjnej** i **Do działań w ramach przerwy konserwacyjnej** i kliknij **OK**.
 - We **Wszystkie działania w ramach przerwy konserwacyjnej** kliknij przycisk **Wiersze harmonogramu konserwacji** lub **Aktywne zlecenia pracy**, aby otworzyć powiązane listy i wyświetlić wiersze związane z wybraną obsługą działań dotyczących przerw.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

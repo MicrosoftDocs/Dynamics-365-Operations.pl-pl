@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 6752d79a71a673fedb0caff7b6ad1023093269c0
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 6207627c1e901ce969e39d960adb5ab50f13e17d
+ms.sourcegitcommit: bc9e75c38e192664cde226ed3a94df5a0b304369
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570184"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7790873"
 ---
 # <a name="design-the-production-floor-execution-interface"></a>Projektowanie interfejsu wykonania hal produkcyjnych
 
@@ -53,13 +53,13 @@ Aby utworzyć i skonfigurować nową kartę, wykonaj następujące kroki:
 
 1. W nagłówku strony wprowadź następujące ustawienia:
 
-    - **Nazwa karty** — umożliwia określenie nazwy karty.
-    - **Widok główny** — umożliwia wybór spośród trzech wstępnie zdefiniowanych list zadań (*Aktywne zadania*, *Wszystkie zadania* lub *Moje urządzenie*).
-    - **Widok szczegółów** — umożliwia wybór pustej wartości lub **Szczegółów zadania**. Jeśli wybierzesz pustą wartość, na karcie nie będzie widoku szczegółowego. Jeśli wybierzesz **Szczegóły zadania**, widok szczegółowy będzie zawierał szczegółowy opis oferty pracy wybranej na liście ofert pracy w widoku głównym.
+    - **Nazwa karty** - umożliwia określenie nazwy karty.
+    - **Widok główny** — Wybierz spośród wstępnie zdefiniowanych list zadań (*Aktywne zadania*, *Wszystkie zadania* lub *Moje urządzenie*).
+    - **Widok szczegółów** – umożliwia wybór pustej wartości lub **Szczegółów zadania**. Jeśli wybierzesz pustą wartość, na karcie nie będzie widoku szczegółowego. Jeśli wybierzesz **Szczegóły zadania**, widok szczegółowy będzie zawierał szczegółowy opis oferty pracy wybranej na liście ofert pracy w widoku głównym.
 
 1. W sekcji **Główny pasek narzędzi** wybierz przyciski, które mają być dostępne na głównym pasku narzędzi. W kolumnie **Dostępne akcje** jest wyświetlana lista wszystkich przycisków, które można dodać. Kolumna **Wybrane akcje** zawiera listę wszystkich przycisków zawartych w bieżącej konfiguracji. Użyj przycisków między kolumnami, aby w razie potrzeby przenieść wybrane elementy między kolumnami. Użyj przycisków w górę iw dół obok kolumny **Wybrane akcje**, aby kontrolować kolejność, w jakiej przyciski są prezentowane w interfejsie użytkownika.
 
-1. W sekcji **pomocniczy** **pasek narzędzi** wybierz przyciski, które mają być dostępne na pomocniczym pasku narzędzi. W kolumnie **Dostępne akcje** jest wyświetlana lista wszystkich przycisków, które można dodać. Kolumna **Wybrane akcje** zawiera listę wszystkich przycisków zawartych w bieżącej konfiguracji. Użyj przycisków między kolumnami, aby w razie potrzeby przenieść wybrane elementy między kolumnami. Użyj przycisków w górę iw dół obok kolumny **Wybrane akcje**, aby kontrolować kolejność, w jakiej przyciski są prezentowane w interfejsie użytkownika.
+1. W sekcji **pomocniczy pasek narzędzi** wybierz przyciski, które mają być dostępne na pomocniczym pasku narzędzi. W kolumnie **Dostępne akcje** jest wyświetlana lista wszystkich przycisków, które można dodać. Kolumna **Wybrane akcje** zawiera listę wszystkich przycisków zawartych w bieżącej konfiguracji. Użyj przycisków między kolumnami, aby w razie potrzeby przenieść wybrane elementy między kolumnami. Użyj przycisków w górę iw dół obok kolumny **Wybrane akcje**, aby kontrolować kolejność, w jakiej przyciski są prezentowane w interfejsie użytkownika.
 
 ## <a name="associate-a-tab-with-a-configuration"></a>Umożliwia skojarzenie karty z konfiguracją
 

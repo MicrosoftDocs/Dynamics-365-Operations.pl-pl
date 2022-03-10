@@ -1,7 +1,7 @@
 ---
 title: Synchronizowanie kontaktów w rozwiązaniu Sales bezpośrednio z kontaktami lub odbiorcami w rozwiązaniu Supply Chain Management
 description: W tym temacie omówiono szablony i podstawowe zadania, które są używane do synchronizowania pozycji Kontakt (Kontakty) i Kontakt (Klienci) kont z Dynamics 365 Sales do rozwiązań Dynamics 365 Supply Chain Management.
-author: ChristianRytt
+author: Henrikan
 ms.date: 10/25/2018
 ms.topic: article
 ms.prod: ''
@@ -13,21 +13,21 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: a16006a18e552c00fbed5eda7579fbcb77c315ea
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 57a9c2a860e99855e841f0f4276ba2f92767c2b1
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6355932"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062522"
 ---
 # <a name="synchronize-contacts-directly-from-sales-to-contacts-or-customers-in-supply-chain-management"></a>Synchronizowanie kontaktów w rozwiązaniu Sales bezpośrednio z kontaktami lub odbiorcami w rozwiązaniu Supply Chain Management
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 > [!NOTE]
 > Zanim zaczniesz używać rozwiązania Prospekt na gotówkę, zapoznaj się z tematem [Integrowanie danych na platformie Microsoft Dataverse for Apps](/powerapps/administrator/data-integrator).
@@ -117,13 +117,13 @@ Na poniższych ilustracjach pokazano przykładowe mapowanie szablonu w integrato
 > [!NOTE]
 > Mapowanie pokazuje, które informacje z kolumn zostaną zsynchronizowane z rozwiązania Sales do rozwiązania Supply Chain Management.
 
-### <a name="contact-to-contact"></a>Kontakt > kontakt
+### <a name="contact-to-contact-example"></a>Przykład kontaktu
 
-![Mapowanie szablonu w Integratorze danych.](./media/contacts-direct-template-mapping-data-integrator-1.png)
+![Mapowanie kontaktu do szablonu kontaktu w Integratorze danych.](./media/contacts-direct-template-mapping-data-integrator-1.png)
 
-### <a name="contact-to-customer"></a>Kontakt > odbiorca
+### <a name="contact-to-customer-example"></a>Kontakt do przykładu klienta
 
-![Mapowanie szablonu w Integratorze danych.](./media/contacts-direct-template-mapping-data-integrator-2.png)
+![Mapowanie szablonu kontaktu do klienta w Integratorze danych.](./media/contacts-direct-template-mapping-data-integrator-2.png)
 
 
 ## <a name="related-topics"></a>Powiązane tematy

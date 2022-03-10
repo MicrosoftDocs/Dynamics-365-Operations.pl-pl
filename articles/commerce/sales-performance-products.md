@@ -2,11 +2,9 @@
 title: Ocenianie wydajności sprzedaży według produktów
 description: W programie Dynamics 365 Commerce można badać rentowności 10 najlepszych produktów.
 author: ashishmsft
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: SysOperationsTemplateForm
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 27308f9991a6ddb36ef1f2e93082187fbf867132
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: c16d55426dec090947311b485e68010a6e0b8943b67d00da10d4cd24ac214393
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5254872"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6762651"
 ---
 # <a name="assess-sales-performance-by-product"></a>Ocenianie wydajności sprzedaży według produktów
 

@@ -1,8 +1,8 @@
 ---
 title: Tworzenie i otwieranie zapotrzebowania na stanowisko
 description: Projekty rekrutacji ułatwiają zarządzanie procesem rekrutacji.
-author: andreabichsel
-ms.date: 02/03/2021
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: HRMRecruitingTable, HcmWorkerLookUp, HcmJobLookup, HRMRecruiting
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6b9f47031f67fce830d5e96494dfd75379ea7908
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 0d59ccb88b8a76de6e2f00453f185fec2f149873
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6058807"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731568"
 ---
 # <a name="create-and-open-job-requisition"></a>Tworzenie i otwieranie zapotrzebowania na stanowisko
 
@@ -39,7 +39,7 @@ Projekty rekrutacji ułatwiają zarządzanie procesem rekrutacji. Po utworzeniu 
 6. Na liście znajdź i zaznacz rekord.
 7. Na liście wybierz łącze w wybranym wierszu.
 8. Wybierz opcję **Wybierz**.
-9. W polu Dział wybierz przycisk rozwijany, aby otworzyć wyszukiwanie.
+9. W polu **Dział** wybierz przycisk rozwijany, aby otworzyć wyszukiwanie.
 10. Na liście wybierz łącze w wybranym wierszu.
 11. W polu **Zadanie** kliknij rozwijany przycisk, aby otworzyć wyszukiwanie.
 12. Na liście znajdź i zaznacz rekord.
@@ -58,10 +58,10 @@ Projekty rekrutacji ułatwiają zarządzanie procesem rekrutacji. Po utworzeniu 
 25. W polu **Data końcowa** wprowadź datę.
 26. Wybierz opcję **Zapisz**.
 27. Zamknij stronę.
-28. Wybierz oferty pracy.
+28. Wybierz **oferty pracy**.
 29. Wybierz opcję **Zapisz**.
 30. Zamknij stronę.
-31. Zaznacz lub wyczyść pole wyboru **Wyświetl na ekranie samoobsługi pracownika**. Wybierz pole wyboru **Wyświetl na ekranie samoobsługi pracownika**. Zaznaczenie tego wyboru powoduje, że projekt rekrutacji jest widoczny dla pracowników na ich stronach witryny Samoobsługa pracownika etatowego.
+31. Zaznacz lub wyczyść pole wyboru **Wyświetl na ekranie samoobsługi pracownika**. Wybierz pole wyboru **Wyświetl na ekranie samoobsługi pracownika**. Zaznaczenie tego wyboru powoduje, że projekt rekrutacji jest widoczny dla pracowników na ich stronach witryny **Samoobsługa pracownika etatowego**.
 32. Wybierz **Stan projektu rekrutacji**.
 33. Wybierz **Start**. Stan **Rozpoczęty** oznacza, że projekt jest gotowy do przyjmowania wniosków.  
 34. Kliknij przycisk **OK**.

@@ -1,26 +1,24 @@
 ---
 title: Wprowadzanie i porównywanie ofert dla ZO oraz udzielanie zamówień
 description: W tym temacie pokazano sposób wprowadzania odpowiedzi na ZO, oceniania i porównywania ofert, a następnie zawierania umowy z jednym z dostawców.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 07/09/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchRFQCaseTableListPage, PurchRFQCaseTable, PurchRFQReplyTable, PurchRFQCompare, PurchRFQEditLines, PurchRFQEditLinesParameters, PurchTable, PurchTablePart, PurchRFQCompareLinePrices, PurchRFQCompareRFQ
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6dc3d21c4e7afc579e908ac770edef7b211abdfc
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8378a491e528c1e1166f0688e29f923a25f23eed
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5244118"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579479"
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Wprowadzanie i porównywanie ofert dla ZO oraz udzielanie zamówień
 
@@ -34,7 +32,7 @@ Ofertę można wprowadzić albo jako dostawca, albo jako pracownik działu zaopa
 
 ## <a name="enter-a-reply-as-a-vendor"></a>Wprowadzanie odpowiedzi jako dostawca
 
-1. Na pulpicie nawigacyjnym wybierz **Składanie ofert przez dostawców**.
+1. Wybierz kolejno opcje **Portal współpracy z dostawcami \> Obszary robocze \> Składanie ofert przez dostawców**.
 2. Na liście **Nowe zaproszenia do składania ofert** znajdź ZO, które zostało właśnie wysłane. Wybierz ZO, aby sprawdzić, jakie były wymagania.
 3. Wybierz **Załączniki ZO** w celu przejrzenia dodanych załączników.
 4. Wybierz **Oferta**, aby włączyć opcję edycji pól. Zauważ, że pole **Oferta w toku** jest ustawione jako **Dostawca aktualizuje**.

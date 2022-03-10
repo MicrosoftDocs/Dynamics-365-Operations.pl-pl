@@ -2,15 +2,12 @@
 title: Tabele Dataverse
 description: Moduł Microsoft Dynamics 365 Human Resources wykorzystuje usługę Dataverse do obsługi scenariuszy rozszerzalności i integracji.
 author: andreabichsel
-manager: tfehr
 ms.date: 01/25/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,19 +15,24 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2f075a8e96af55b1363d2d51db377c5b25c38775
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 6774fad3543d80d04faacf5960c8037f1734f084
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113890"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066832"
 ---
 # <a name="dataverse-tables"></a>Tabele Dataverse
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Moduł Microsoft Dynamics 365 Human Resources wykorzystuje usługę Dataverse do obsługi scenariuszy rozszerzalności i integracji.
 
 > [!NOTE]
-> Jednostki Human Resources odpowiadają tabelom Dataverse. Aby uzyskać więcej informacji o Dataverse (poprzednio Common Data Service) i aktualizacjach terminologii, zobacz [Co to jest Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
+> Jednostki Human Resources odpowiadają tabelom Dataverse. Aby uzyskać więcej informacji o Dataverse (poprzednio Common Data Service) i aktualizacjach terminologii, zobacz [Co to jest Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
 
 Poniższe tabele Dataverse są dostępne w oparciu o encje Human Resources.
 
@@ -157,23 +159,23 @@ Poniższe tabele Dataverse są dostępne w oparciu o encje Human Resources.
 
 ### <a name="job-and-job-position"></a>Stanowisko i stanowisko funkcji
 
-![Stanowisko i stanowisko funkcji](./media/HCMCommon-job-and-job-position-entity-diagram.png)
+![Stanowisko i stanowisko funkcji.](./media/HCMCommon-job-and-job-position-entity-diagram.png)
 
-### <a name="benefits"></a>Świadczenia
+### <a name="benefits"></a>Korzyści
 
-![Świadczenia](./media/HCMCommon-benefits-entity-diagram.png)
+![Korzyści.](./media/HCMCommon-benefits-entity-diagram.png)
 
-### <a name="compensation"></a>Kompensacja
+### <a name="compensation"></a>Kompensata
 
-![Kompensacja](./media/HCMCommon-compensation-entity-diagram.png)
+![Kompensacja.](./media/HCMCommon-compensation-entity-diagram.png)
 
-### <a name="leave"></a>Opuść
+### <a name="leave"></a>Urlop
 
-![Opuść](./media/HCMCommon-leave-entity-diagram.png)
+![Urlop.](./media/HCMCommon-leave-entity-diagram.png)
 
 ### <a name="work-calendar"></a>Kalendarz pracy
 
-![Kalendarz pracy](./media/HCMCommon-work-calendar-entity-diagram.png)
+![Kalendarz pracy.](./media/HCMCommon-work-calendar-entity-diagram.png)
 
 ## <a name="see-also"></a>Informacje dodatkowe
 
@@ -181,5 +183,8 @@ Poniższe tabele Dataverse są dostępne w oparciu o encje Human Resources.
 [Konfiguruj integrację z programem Dataverse](hr-admin-integration-common-data-service.md)<br>
 [Konfiguruj tabele wirtualne usługi Dataverse](hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Często zadawanych pytań dotyczące tabel wirtualnych dla Human Resources](hr-admin-virtual-entity-faq.md)<br>
-[Co to jest usługa Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
-[Aktualizacje terminologii](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
+[Co to jest usługa Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)<br>
+[Aktualizacje terminologii](/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Konfiguracje wizualne interfejsu użytkownika punktu sprzedaży
 description: Ten temat zawiera informacje dotyczące układów ekranu w środowiskach POS aplikacji Dynamics 365 Commerce.
 author: boycezhu
-manager: annbe
 ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTillLayout
 audience: Application user
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 521fbd2c73adca1db38ba7258abf183f7350b109
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 17379dc97c7a8b22912482a7aeebd0d8ac08dc496fa7b1661952bca10a21c75b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5231303"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765887"
 ---
 # <a name="pos-user-interface-visual-configurations"></a>Konfiguracje wizualne interfejsu użytkownika punktu sprzedaży
 
@@ -34,15 +32,15 @@ Interfejs użytkownika (UI) punktu sprzedaży Microsoft Dynamics 365 Commerce mo
 
 Poniższa ilustracja pokazuje relacje między różnymi jednostkami, które razem tworzą konfigurowalne aspekty interfejsu użytkownika aplikacji POS.
 
-![Jednostki układu ekranu aplikacji POS](../commerce/media/POS-layout-configuration-entities-diagram.png)
+![Jednostki układu ekranu aplikacji POS.](../commerce/media/POS-layout-configuration-entities-diagram.png)
 
 ## <a name="visual-profile"></a>Profil graficzny
 
 Profile graficzne są przypisywane do kas. Określają elementy wizualnych, które są specyficzne dla kas i wspólne dla użytkowników. Każdy użytkownik, który się loguje do kasy, widzi ten sam motyw, układ, kolory i obrazy.
 
-![Ekran powitalny aplikacji POS z jasnym motywem](../commerce/media/POS-Welcome-Screen-with-Light-theme.png)
+![Ekran powitalny aplikacji POS z jasnym motywem.](../commerce/media/POS-Welcome-Screen-with-Light-theme.png)
 
-![Ekran transakcji w aplikacji POS z ciemnym motywem](../commerce/media/POS-Transaction-Screen-with-Dark-theme.png)
+![Ekran transakcji w aplikacji POS z ciemnym motywem.](../commerce/media/POS-Transaction-Screen-with-Dark-theme.png)
 
 - **Numer profilu** — Numer profilu jest unikatowym identyfikatorem profilu graficznego.
 - **Opis** — Można wprowadzić znaczącą nazwę, która pomoże identyfikować profil odpowiedni w danej sytuacji.
@@ -67,15 +65,15 @@ Aby zsynchronizować najnowsze konfiguracje profilów graficznych z bazą danych
 
 Konfiguracje układu ekranu decydują o akcjach, zawartości i położeniu formantów interfejsu użytkownika na ekranie **Powitalnym** i ekranie **Transakcja** w aplikacji POS.
 
-![Widok układu ekranu aplikacji POS](../commerce/media/POS-Screen-Layout-View.png)
+![Widok układu ekranu aplikacji POS.](../commerce/media/POS-Screen-Layout-View.png)
 
 - **Ekran powitalny** — W większości przypadków ekran powitalny to strona, którą użytkownicy widzą podczas pierwszego logowania do aplikacji POS. Ekran powitalny może zawierać obraz identyfikacyjny marki oraz siatki przycisków umożliwiające dostęp do operacji w punkcie sprzedaży. Zwykle na tym ekranie umieszcza się operacje, które nie są specyficzne dla bieżącej transakcji.
 
-    ![Ekran powitalny aplikacji POS](../commerce/media/POS-Welcome-Screen.png)
+    ![Ekran powitalny POS.](../commerce/media/POS-Welcome-Screen.png)
 
 - **Ekran transakcji** — Ekran **Transakcja** jest w aplikacji POS głównym ekranem do przetwarzania transakcji i zamówień sprzedaży. Zawartość i układ są skonfigurowane przy użyciu konstruktora układu ekranu.
 
-    ![Ekran transakcji w punkcie sprzedaży](../commerce/media/POS-Transaction-Screen.png)
+    ![Ekran transakcji POS.](../commerce/media/POS-Transaction-Screen.png)
 
 - **Domyślny ekran startowy** — Niektórzy sprzedawcy detaliczni wolą, aby kasjerzy po zalogowaniu przechodzili bezpośrednio do ekranu **Transakcja**. Ustawienie **Domyślny ekran startowy** umożliwia określenie domyślnego ekranu, który pojawia się po zalogowaniu przy użyciu poszczególnych układów ekranu.
 
@@ -91,7 +89,7 @@ Większość aspektów interfejsu użytkownika aplikacji POS jest elastyczna, a 
 
 Podczas uruchamiania aplikacja POS wybiera najbliższy rozmiar układu skonfigurowany dla urządzenia. Układ ekranu może również zawierać konfiguracje dla orientacji poziomej i pionowej oraz urządzeń pełnowymiarowych i kompaktowych. Dlatego użytkowników można przypisać do jednego układu ekranu, który działa w urządzeniach o różnych rozmiarach i typach wykorzystywanych w sklepie.
 
-![Rozmiary układów aplikacji POS](../commerce/media/POS-Screen-Layout-Sizes.png)
+![Rozmiary układów aplikacji POS.](../commerce/media/POS-Screen-Layout-Sizes.png)
 
 - **Nazwa** — Można wprowadzić opisową nazwę identyfikującą rozmiar ekranu.
 - **Typ układu** — W aplikacji POS interfejs użytkownika może być wyświetlany w różnych orientacjach, tak aby zapewnić użytkownikowi jak najlepsze środowisko obsługi na konkretnym urządzeniu.
@@ -104,7 +102,7 @@ Podczas uruchamiania aplikacja POS wybiera najbliższy rozmiar układu skonfigur
 > [!TIP]
 > Informację o rozmiarze układu wymaganym dla ekranu aplikacji POS można uzyskać poprzez wyświetlanie rozdzielczości w aplikacji. Uruchom aplikację POS i wybierz kolejno opcje **Ustawienia \> Informacje o sesji**. Aplikacja POS pokazuje aktualnie załadowany układ ekranu, rozmiar układu i rozdzielczość okna aplikacji.
 
-![Ekran Informacje dot. sesji POS pokazuje aktualnie załadowany układ ekranu, rozmiar układu i rozdzielczość okna aplikacji](../commerce/media/POS-Session-Information.png)
+![Ekran Informacje dot. sesji POS pokazuje aktualnie załadowany układ ekranu, rozmiar układu i rozdzielczość okna aplikacji.](../commerce/media/POS-Session-Information.png)
 
 ### <a name="button-grids"></a>Siatki przycisków
 
@@ -114,7 +112,7 @@ W pełnowymiarowych układach aplikacji POS położenie siatki przycisków jest 
 
 W kompaktowych wersjach układów aplikacji POS siatki przycisków są układane automatycznie od góry do dołu, od numeru najniższego (ekran transakcji 1) do najwyższego. Można do nich przejść z menu **Akcje**.
 
-![Siatka przycisków w układzie kompaktowym](../commerce/media/Compact-View-Button-Grids.png)
+![Siatka przycisków w układzie kompaktowym.](../commerce/media/Compact-View-Button-Grids.png)
 
 > [!NOTE]
 > Rozmiary przycisków w projektancie będą skalowane w celu dopasowania do rozmiaru okna, dlatego mogą nie odzwierciedlać dokładnie rzeczywistych przycisków renderowanych w punkcie sprzedaży. Aby najlepiej zasymulować układ siatki przycisków, dostosuj okna projektanta do tego samego rozmiaru co POS.
@@ -134,7 +132,7 @@ W projektancie układu ekranu można skonfigurować różne aspekty ekranu **Tra
 
 W projektancie układu pełnowymiarowego użytkownicy mogą przeciągać formanty interfejsu użytkownika na ekran **Transakcja** aplikacji POS i konfigurować ustawienia tych formantów.
 
-![Projektant układu pełnowymiarowego aplikacji POS (orientacja pozioma)](../commerce/media/POS-Full-Layout-Designer-Landscape.png)
+![Projektant układu pełnowymiarowego aplikacji POS (orientacja pozioma).](../commerce/media/POS-Full-Layout-Designer-Landscape.png)
 
 - **Importowanie/eksportowanie układu** — Projekty układów ekranu aplikacji POS można eksportować i importować jako pliki XML, co pozwala je łatwo wykorzystywać i udostępniać w różnych środowiskach. Ważne jest, aby importować projekty układów dla odpowiednich rozmiarów układów. W przeciwnym razie elementy interfejsu użytkownika mogą nie mieścić się prawidłowo na ekranie.
 - **Orientacja pozioma/pionowa** — Jeśli urządzenie z aplikacją POS pozwala użytkownikom przełączać się między orientacjami poziomą i pionową, należy zdefiniować układ ekranu dla każdej orientacji. Aplikacja POS automatycznie wykryje obrót ekranu i pokaże poprawny układ.
@@ -142,11 +140,11 @@ W projektancie układu pełnowymiarowego użytkownicy mogą przeciągać formant
 - **Powiększenie w projektancie** — Widok projektanta można przybliżać i oddalać, aby lepiej widzieć zawartość ekranu aplikacji POS. Ta funkcja jest przydatna, gdy rozdzielczość ekranu w aplikacji POS różni się znacząco od rozdzielczości ekranu używanej w projektancie.
 - **Pokazywanie/ukrywanie paska nawigacji** — W pełnowymiarowych układach aplikacji POS można określić, czy lewy pasek nawigacji ma być widoczny na ekranie **Transakcja**. Ta funkcja jest przydatna w monitorach o niższej rozdzielczości. Aby ustawić widoczność, kliknij pasek nawigacji prawym przyciskiem myszy w projektancie i zaznacz lub wyczyść pole wyboru **Zawsze widoczny**. Jeśli pasek nawigacji jest ukryty, użytkownicy aplikacji POS nadal mają do niego dostęp za pomocą menu w lewym górnym rogu.
 
-    ![Pokazywanie/ukrywanie paska nawigacji](../commerce/media/Navigation-Bar.PNG)
+    ![Pokazywanie/ukrywanie paska nawigacji.](../commerce/media/Navigation-Bar.PNG)
 
 - **Formanty aplikacji POS** — Projektant układu aplikacji POS obsługuje formanty wymienione poniżej. Wiele formantów można skonfigurować, klikając prawym przyciskiem myszy i używając menu skrótów.
 
-    ![Formanty interfejsu użytkownika aplikacji POS](../commerce/media/POS-UI-Controls.png)
+    ![Formanty interfejsu użytkownika aplikacji POS.](../commerce/media/POS-UI-Controls.png)
 
     - **Klawiatura numeryczna** — Klawiatura numeryczna jest głównym mechanizmem wprowadzania danych przez użytkownika na ekranie **Transakcja** w aplikacji POS. Można tak skonfigurować formant, aby była wyświetlana pełna klawiatura numeryczna. Ta opcja jest idealna dla urządzeń dotykowych. Alternatywnie można ją tak skonfigurować, aby było widoczne tylko pole wejściowe. W takim przypadku do wprowadzania danych jest używana fizyczna klawiatura. Ustawienia klawiatury numerycznej są dostępne tylko w układach pełnowymiarowych. W układach kompaktowych na ekranie **Transakcja** zawsze jest wyświetlana pełna klawiatura numeryczna.
     - **Panel sum** — Panel sum można skonfigurować na jedną lub dwie kolumny pokazujące wartości takie jak liczba wierszy, kwota rabatu, opłaty, suma częściowa i podatek. Układy kompaktowe zawierają tylko jedną kolumnę.
@@ -161,13 +159,13 @@ W projektancie układu pełnowymiarowego użytkownicy mogą przeciągać formant
 
 Analogicznie do projektanta układu pełnowymiarowego, projektant układu kompaktowego umożliwia konfigurowanie układu ekranu aplikacji dla telefonów i małych tabletów. Jednak w tym wypadku układ jest stały. Formanty w układzie można konfigurować, klikając prawym przyciskiem myszy i używając menu skrótów. Nie można jednak używać operacji przeciągania i upuszczania dla dodatkowej zawartości.
 
-![Projektant układu kompaktowego](../commerce/media/Compact-Layout-Designer.png)
+![Projektant układu kompaktowego.](../commerce/media/Compact-Layout-Designer.png)
 
 ### <a name="button-grid-designer"></a>Projektant siatki przycisków
 
 Projektant siatki przycisków pozwala konfigurować siatki przycisków, których można używać na ekranach powitalnym i **Transakcja** w aplikacji POS w układach pełnowymiarowych i kompaktowych. Tej samej siatki przycisków można używać w różnych układach i typach układów. Podobnie jak projektant układu ekranu, projektant siatki przycisków używa technologii wdrażania ClickOnce, która powoduje pobranie, zainstalowanie i uruchomienie najnowszej wersji aplikacji za każdym razem, gdy użytkownicy uzyskują do niej dostęp. Należy koniecznie sprawdzić wymagania technologii ClickOnce w kwestii przeglądarek internetowych. Niektóre przeglądarki, takie jak Google Chrome, wymagają rozszerzeń.
 
-![Projektant siatki przycisków](../commerce/media/Button-Grid-Designer.png)
+![Projektant siatki przycisków.](../commerce/media/Button-Grid-Designer.png)
 
 - **Nowy przycisk** — Kliknij, aby dodać nowy przycisk do siatki przycisków. Domyślnie nowe przyciski pojawiają się w lewym górnym rogu siatki. Jednak można inaczej rozmieścić przyciski, przeciągając je w układzie.
 
@@ -180,7 +178,7 @@ Projektant siatki przycisków pozwala konfigurować siatki przycisków, których
     > [!IMPORTANT]
     > Niektóre ustawienia siatki przycisków mają zastosowanie tylko do aplikacji Enterprise POS, a nie Modern POS ani Cloud POS.
 
-    ![Właściwości przycisku w siatce przycisków](../commerce/media/Button-grid-button-properties.png)
+    ![Właściwości przycisku w siatce przycisków.](../commerce/media/Button-grid-button-properties.png)
 
     - **Akcja** — Na liście operacji aplikacji POS mających zastosowanie wybierz operację, która jest wywoływana po kliknięciu przycisku w aplikacji POS.
 
@@ -192,7 +190,7 @@ Projektant siatki przycisków pozwala konfigurować siatki przycisków, których
     - **Etykietka narzędzia** — Wprowadź dodatkowy tekst pomocy, który ma się pojawiać, gdy użytkownik umieści wskaźnik myszy na przycisku.
     - **Rozmiar w kolumnach/Rozmiar w wierszach** — Można określić wysokość i szerokość przycisku.
 
-        ![Rozmiary przycisków w aplikacji POS wyrażone w wierszach i kolumnach](../commerce/media/POS-Button-Sizes-In-Rows-And-Columns.png)
+        ![Rozmiary przycisków w aplikacji POS wyrażone w wierszach i kolumnach.](../commerce/media/POS-Button-Sizes-In-Rows-And-Columns.png)
 
     - **Niestandardowa czcionka** — Po zaznaczeniu pola wyboru **Włącz czcionkę niestandardową dla programu POS** można dla aplikacji POS określić czcionkę inną niż domyślna czcionka systemowa.
     - **Motyw niestandardowy** — Domyślnie przyciski aplikacji POS używają koloru wiodącego z profilu graficznego. Po zaznaczeniu pola wyboru **Użyj motywu niestandardowego** można określić dodatkowe kolory.
@@ -202,7 +200,7 @@ Projektant siatki przycisków pozwala konfigurować siatki przycisków, których
 
     - **Obraz przycisku** — Przyciski mogą zawierać obrazy lub ikony. Wybierz jeden z dostępnych obrazów podanych w oknie **Handel detaliczny i inny \> Ustawienia kanału \> Ustawienia punktu sprzedaży \> Punkt sprzedaży \> Obrazy**.
 
-![Przykład siatki przycisków w aplikacji POS](../commerce/media/Example-Button-Grid-In-POS.png)
+![Przykład siatki przycisków w aplikacji POS.](../commerce/media/Example-Button-Grid-In-POS.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

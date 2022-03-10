@@ -1,37 +1,34 @@
 ---
 title: Kraj pochodzenia
 description: Wiele organizacji wystawia certyfikaty swoim dostawcom w celu zapewnienia, że produkty spełniają określone standardy certyfikacji. Te certyfikaty często zależą od kraju pochodzenia. Ten temat zawiera informacje o funkcji kraju pochodzenia, która pozwala połączyć produkt z krajem pochodzenia i śledzić certyfikaty produktów.
-author: dasani-madipalli
-manager: tfehr
+author: t-benebo
 ms.date: 07/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: COOVendorCerts
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: damadipa
+ms.author: benebotg
 ms.search.validFrom: 2020-07-15
-ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: bb35770f32c21a685b21a41dc7c369ee01fe3891
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.dyn365.ops.version: 10.0.9
+ms.openlocfilehash: a2740f6b1ccb52073b013e613d8ab779cc088180
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5243304"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777645"
 ---
 # <a name="country-of-origin"></a>Kraj pochodzenia
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Wiele organizacji wystawia certyfikaty swoim dostawcom w celu zapewnienia, że produkty spełniają określone standardy certyfikacji. Te certyfikaty często zależą od kraju pochodzenia. Funkcja kraju pochodzenia umożliwia powiązanie produktu z jego krajem pochodzenia i śledzenie jego certyfikatów.
 
 ## <a name="turn-on-the-country-of-origin-feature"></a>Włączanie funkcji informującej o kraju pochodzenia
 
-Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
+Od wersji 10.0.21 Supply Chain Management version ta funkcja jest domyślnie włączona. Administratorzy mogą skorzystać ze strony [Zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją lub wyłączyć w razie potrzeby. W tym miejscu funkcja jest wyświetlana jako:
 
 - **Moduł:** *Zarządzanie informacjami o produktach*
 - **Nazwa funkcji:** *Funkcja zarządzania krajem pochodzenia*
@@ -89,7 +86,7 @@ Podczas generowania raportu BOM można uwzględnić kraj pochodzenia dla każdej
 
 Raport zawierający informacje o kraju pochodzenia każdej części jest generowany i pokazywany. Oto przykład tabeli raportu.
 
-![Raport kraju pochodzenia](media/country-of-origin-report.png "Raport kraju pochodzenia")
+![Raport kraju pochodzenia.](media/country-of-origin-report.png "Raport kraju pochodzenia")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

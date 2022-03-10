@@ -2,28 +2,25 @@
 title: Dodaj lub kopiuj wynajmy (podgląd)
 description: W tym temacie opisano sposób tworzenia nowego wynajmu przez wprowadzenie informacji jego dotyczących w Wynajem składnika majątku lub przez skopiowanie informacji z istniejącego wynajmu.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 01/11/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
+ms.reviewer: twheeloc
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 706b245971ba065bae86e31853832f721a6f9aff
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: b09a87c7d4f5ba076647218c3586d17a13e6c558
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4447010"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7967933"
 ---
 # <a name="add-or-copy-leases-preview"></a>Dodaj lub kopiuj wynajmy (podgląd)
 
@@ -38,6 +35,19 @@ Aby utworzyć wynajem w Wynajem składnika majątku, należy wykonać następuj�
 1. Na stronie **Podsumowanie wynajmu**, w okienku akcji, wybierz **Nowy**.
 2. Wpisz informacje o wynajmie. Wymagane pola mają czerwone obramowanie.
 
+Data początkowa opłaty z tytułu wynajmu nie może być wcześniejsza niż data rozpoczęcia wynajmu. W przypadku wprowadzenia daty rozpoczęcia opłaty z tytułu wynajmu, która jest wcześniejsza niż data początkowa wynajmu, zostanie wyświetlony komunikat o błędzie.
+
+Domyślnie w opcji **Kwota płatności za podział** na skróconej karcie **Ogólne** strony **szczegółów dzierżawy** jest ustawiona wartość **Nie**, jeśli opcja **Zezwól na podział płatności** na stronie **Parametry dzierżawy środków trwałych** jest ustawiona wartość **Tak**. 
+
+Jeśli opcja **Kwota płatności za podział** ma wartość **Tak**, pole **Kwota płatności** na skróconej karcie **Wiersze harmonogramu płatności** jest zablokowane. Zostanie ona ustawiona jako suma kwot płatności wprowadzonych później w katalogu **podziału kwot płatności**.
+
+Wybierz **podział kwoty płatności**, aby otworzyć stronę, na której można dodać typy płatności dla pozycji. Przycisk **Dodaj sumy do kwoty płatności** spowoduje przeniesienie sum do pola **Kwota płatności**.
+
+> [!NOTE]
+> Jeśli dodasz kwotę płatności dla pozycji, a następnie wybierzesz klawisz **Esc**, wprowadzone kwoty nie zostaną dodane do pola **Kwota płatności** na skróconej karcie **Wiersze harmonogramu płatności**. Zostaną one natomiast zapisane w oknie dialogowym **Podział kwoty płatności**. Jeśli chcesz, aby w oknie dialogowym była pokazywana łączna kwota, wybierz kolumnę **Kwota**, wybierz i przytrzymaj (lub kliknij prawym przyciskiem myszy), a następnie wybierz pozycję **Suma dla tej kolumny**. 
+
+Przycisk **Kopiuj wiersz** spowoduje skopiowanie podziału płatności dla pozycji.
+
 ## <a name="create-a-lease-schedule"></a>Tworzenie harmonogramu wynajmu
 
 Po zakończeniu wprowadzania informacji dotyczących wynajmu należy wykonać poniższe kroki w celu utworzenia harmonogramu wynajmu.
@@ -51,6 +61,9 @@ Po zakończeniu wprowadzania informacji dotyczących wynajmu należy wykonać po
     Strona **Szczegóły księgi** pokazuje, w jaki sposób wynajem jest księgowany w przypisanych do niego księgach. W tym miejscu można przejrzeć harmonogramy wynajmu.
 
     Harmonogram płatności zawiera dane wejściowe z karty **Wiersze harmonogramu płatności** na stronie **Dodaj wynajem**. Nadal można zmienić każdą kwotę płatności i opłaty zmienne. Zobowiązanie z tytułu wynajmu jest obliczane na podstawie zmodyfikowanego harmonogramu płatności.
+
+    > [!NOTE]
+    > Data rozpoczęcia opłaty z tytułu wynajmu musi być taka sama jak data rozpoczęcia wynajmu lub od niej późniejsza. Zostanie wyświetlony komunikat o błędzie, jeśli data rozpoczęcia opłaty z tytułu wynajmu będzie wcześniejsza niż data rozpoczęcia wynajmu. 
 
 4. Po przejrzeniu harmonogramu płatności wybierz pozycję **Potwierdź harmonogram**. Po potwierdzeniu harmonogramu wynajem nie będzie już dostępny do edycji.
 
@@ -89,3 +102,6 @@ Wszystkie wpisy w arkuszu, które są tworzone w module Wynajem składnika mają
 
 > [!NOTE]
 > Nie można ręcznie utworzyć Arkusza wynajmu składnika majątku. Jest on tworzony automatycznie podczas tworzenia harmonogramów wynajmu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

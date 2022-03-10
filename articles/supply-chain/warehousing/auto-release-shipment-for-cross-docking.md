@@ -1,26 +1,24 @@
 ---
 title: Automatyczne zwalnianie wysyłki do przeładunku kompletacyjnego
 description: W tym temacie opisano strategię przeładunku kompletacyjnego, która umożliwia automatyczne zwalnianie zamówienia zapotrzebowania do magazynu, gdy zlecenie produkcyjne dostarczające ilość z zapotrzebowania jest zgłaszane jako gotowe, dzięki czemu ilość jest przenoszona bezpośrednio z lokalizacji wyjściowej produkcji do lokalizacji załadunkowej.
-author: omulvad
-manager: tfehr
+author: Mirzaab
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSCrossDockingTemplate
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: mirzaab
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 619133cb1ef5f85222a42a08fd5fb77250c3d911
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1315bda1fd284eb326d4f08bf36bfea59074fde3
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5233182"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577943"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>Automatyczne zwalnianie wysyłki do przeładunku kompletacyjnego
 
@@ -163,7 +161,7 @@ Aby przeprowadzić przeładunek kompletacyjny ilości towarów gotowych do lokal
 8. Na stronie **Zlecenie produkcyjne**, w okienku akcji, na karcie **Zlecenie produkcyjne**, w grupie **Proces** wybierz pozycję **Szacowanie**, a następnie kliknij przycisk **OK**. Zlecenie zostanie oszacowane, a ilość surowca — zarezerwowana na potrzeby produkcji.
 9. W okienku akcji, na karcie **Zlecenie produkcyjne**, w grupie **Proces** wybierz pozycję **Zwolnienie**, a następnie kliknij przycisk **OK**. Dla surowców zostanie utworzona praca pobrania z magazynu.
 10. Otwórz i przejrzyj pracę. W okienku akcji, na karcie **Magazyn**, w grupie **Ogólne** wybierz pozycję **Szczegóły pracy**. Zanotuj identyfikator pracy.
-11. Zaloguj się do aplikacji magazynowania, aby uruchomić pracę w magazynie 51.
+11. Zaloguj się do aplikacji Warehouse Management, aby uruchomić pracę w magazynie 51.
 12. Przejdź do pozycji **Produkcja** \> **Pobranie produkcji**.
 13. Wprowadź identyfikator pracy w celu rozpoczęcia i ukończenia pobierania surowca. 
 

@@ -1,29 +1,29 @@
 ---
 title: Tworzenie przeglądów wydajności
 description: W tym temacie pokazano sposób utworzenia przeglądu wydajności oraz opisano przeznaczenie każdej sekcji przeglądu.
-author: andreabichsel
-manager: tfehr
-ms.date: 05/05/2020
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EssWorkspace, HcmDiscussionNewDialog, HcmDiscussion, HcmDiscussionChangeSettings, HcmDiscussionAddGoalDialog, HcmTopicCreate, HcmMeasurementDetailDialog, HcmPerfJournalAdd, HcmEmployeeDevelopmentWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 031f1ecf6b9ee0673021e838c4a4e23755199543
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 9c3ab4e769008bd8b401967e454aa6402f013773
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5465613"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066957"
 ---
 # <a name="create-performance-reviews"></a>Tworzenie przeglądów wydajności
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -68,13 +68,13 @@ W tym temacie pokazano sposób utworzenia przeglądu wydajności oraz opisano pr
 30. Kliknij kartę **Wyniki oceny**.  
 
     - Skrócona karta **Szczegóły oceny** umożliwia pracownikom ocenianie samych siebie, a kierownikom ocenianie pracowników. Jeśli są używane wagi, wartość wagi wyniku będzie obliczana automatycznie.  
-    - Aby wyświetlić tę sekcję, należy włączyć ustawienia parametrów wyświetlania ocen pracowników.  
+    - Aby wyświetlić tę sekcję, włącz ustawienia parametrów wyświetlania ocen pracowników na stronie **Udostępniane parametry zasobów ludzkich**.  
 
-31. Wybierz kartę **Podpisy**. Jeśli przegląd używa przepływu pracy, podpisy pojawią się dopiero po zakończeniu przepływu pracy. Jeśli nie jest używany przepływ pracy, są tutaj wyświetlani zarówno pracownik, jak i kierownik. Wymagane pole wyboru jest zaznaczone na podstawie ustawień typu przeglądu.  
+31. Wybierz kartę **Podpisy**. Jeśli przegląd używa przepływu pracy, podpisy pojawią się dopiero po zakończeniu przepływu pracy. Jeśli nie jest używany przepływ pracy, są tutaj wyświetlani zarówno pracownik, jak i kierownik. Pole wyboru **Wymagane** dla obszaru **Podpisy** jest zaznaczone na podstawie ustawień typu przeglądu.  
 32. Kliknij kartę **Ogólne**.
 
     - Okres wydajności tworzy domyślne daty rozpoczęcia i zakończenia. Te daty są edytowalne.  
-    - Stany kontrolują dostęp do przeglądu. Stan **Nie rozpoczęto** umożliwia wszystkim osobom edytowanie przeglądu. Stan **W toku** umożliwia wyświetlania i edytowanie przeglądu tylko konkretnemu pracownikowi. Stan **Gotowe do przeglądu** umożliwia wyświetlanie i edytowanie przeglądu tylko kierownikowi. Stan **Ostateczny przegląd** umożliwia pracownikowi i kierownikowi wyświetlanie przeglądu oraz edytowanie go, jeśli pozwala na to konfiguracja typu przeglądu. Stany **Zakończono** i **Anulowano** powodują, że przegląd jest tylko do odczytu. Jeśli przegląd zostanie **odrzucony** i odesłany do pracownika etatowego, pracownik etatowy i kierownik mogą dokonać niezbędnych zmian, aby pracownik etatowy mógł ponownie go przesłać.
+    - Stany kontrolują dostęp do przeglądu. Stan **Nie rozpoczęto** umożliwia wszystkim osobom edytowanie przeglądu. Stan **W toku** umożliwia wyświetlania i edytowanie przeglądu tylko konkretnemu pracownikowi. Stan **Gotowe do przeglądu** umożliwia wyświetlanie i edytowanie przeglądu tylko kierownikowi. Stan **Ostateczny przegląd** pozwala pracownikowi i menedżerowi na wyświetlanie i edytowanie przeglądu, jeśli w typie przeglądu wybrano opcję **Zezwalaj na edycję ostatecznego przeglądu**. Stany **Zakończono** i **Anulowano** powodują, że przegląd jest tylko do odczytu. Jeśli przegląd zostanie **odrzucony** i odesłany do pracownika etatowego, pracownik etatowy i kierownik mogą dokonać niezbędnych zmian, aby pracownik etatowy mógł ponownie go przesłać.
 
 33. W polu **Przegląd** wpisz wartość.
 34. Wybierz kartę **Przegląd**. Gdy przegląd przechodzi przez kolejne stany, pracownik i kierownik mogą dodawać komentarze do każdego celu lub kompetencji.  

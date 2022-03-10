@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 66a2cc5c87f5567f0e65842638017e5127d68a13
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 9cb82a6d6336bb69fe818fb33e04ad621382b383055b24a4e79eee5ddff217ac
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798868"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719937"
 ---
 # <a name="user-defined-certificate-profiles-for-retail-stores"></a>Profile certyfikatów zdefiniowane przez użytkownika dla sklepów detalicznych
 
@@ -79,7 +79,7 @@ Po dodaniu nowego wiersza do strony **Ustawienia profilu certyfikatu** podaj inf
 - **Certyfikat magazynu kluczy** — to pole jest wymagane w przypadku ustawienia pola **Typ lokalizacji** na **Magazyn kluczy**. Za jego pomocą można określić wpis tajny certyfikatu magazynu kluczy.
 
     > [!NOTE]
-    > Przed użyciem certyfikatu magazynu kluczy w profilach certyfikatów należy przekazać certyfikat do miejsca przechowywania magazynu kluczy, a następnie postępować zgodnie z instrukcjami w obszarze [Konfigurowanie klienta magazynu kluczy systemu Azure](https://docs.microsoft.com/dynamics365/finance/localizations/setting-up-azure-key-vault-client).
+    > Przed użyciem certyfikatu magazynu kluczy w profilach certyfikatów należy przekazać certyfikat do miejsca przechowywania magazynu kluczy, a następnie postępować zgodnie z instrukcjami w obszarze [Konfigurowanie klienta magazynu kluczy systemu Azure](../../finance/localizations/setting-up-azure-key-vault-client.md).
 
 - **Nazwa sklepu** — to pole jest opcjonalne i dostępne tylko w przypadku ustawienia pola **Typ lokalizacji** na **Certyfikat lokalny**. Za jego pomocą można określić domyślną nazwę sklepu, która powinna być używana do wyszukiwania certyfikatów lokalnych.
 - **Nazwa lokalizacji** — to pole jest opcjonalne i dostępne tylko w przypadku ustawienia pola **Typ lokalizacji** na **Certyfikat lokalny**. Za jego pomocą można określić domyślną lokalizację sklepu, która powinna być używana do wyszukiwania certyfikatów lokalnych.

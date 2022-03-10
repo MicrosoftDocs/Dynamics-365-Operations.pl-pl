@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: c36948cc58291b56c1bbe8a3d5c3db52dccc8399
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 0de29e1817840c172f9235f2ee48251c4878a0573d270a60fde5b42ba6f88d31
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018613"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6774516"
 ---
 # <a name="prorate-header-charges-to-matching-sales-lines"></a>Określona proporcjonalnie do opłat dodatkowych z nagłówka do wierszy sprzedaży uzgadniania
 
@@ -56,9 +56,9 @@ W tym scenariuszu opisano zachowanie, gdy opcja **Proporcjonalnie do wierszy spr
 
 W tym scenariuszu organizacja zdefiniowała opłaty na poziomie nagłówka dla relacji metod dostawy **99** i **11**. Dla metody dostawy **21** nie skonfigurowano automatycznych opłat.
 
-![Automatyczne opłaty dodatkowe dla metody dostawy 99, gdy jest wyłączona funkcja proporcjonalnego dopasowywania wartości wierszy](media/99_disabled.png)
+![Automatyczne opłaty dodatkowe dla metody dostawy 99, gdy jest wyłączona funkcja proporcjonalnego dopasowywania wartości wierszy.](media/99_disabled.png)
 
-![Automatyczne opłaty dodatkowe dla metody dostawy 11, gdy jest wyłączona funkcja proporcjonalnego dopasowywania wartości wierszy](media/11_disabled.png)
+![Automatyczne opłaty dodatkowe dla metody dostawy 11, gdy jest wyłączona funkcja proporcjonalnego dopasowywania wartości wierszy.](media/11_disabled.png)
 
 Zamówienie sprzedaży jest tworzone w Centrum obsługi z metodą dostawy **99**. To zamówienie zawiera pięć elementów. Dwa wiersze zamówienia zostały skonfigurowane do używania metody dostawy **99**, dwa wiersze zostały skonfigurowane do używania metody dostawy **11** i jeden wiersz został skonfigurowany do używania metody dostawy **21**, jak to pokazano w tabeli poniżej.
 
@@ -78,9 +78,9 @@ W tym scenariuszu jeśli klient zwraca niektóre towary z zamówienia, i [kod op
 
 W tym scenariuszu opłaty na poziomie nagłówka są zdefiniowane dla relacji metod dostawy **99** i **11**. Jednak opcja **Proporcjonalnie do wierszy sprzedaży** jest ustawiona jako **Tak** dla tych tabel automatycznych opłat.
 
-![Automatyczne opłaty dodatkowe dla metody dostawy 99, gdy jest włączona funkcja proporcjonalnego dopasowywania wartości wierszy](media/99_enabled.png)
+![Automatyczne opłaty dodatkowe dla metody dostawy 99, gdy jest włączona funkcja proporcjonalnego dopasowywania wartości wierszy.](media/99_enabled.png)
 
-![Automatyczne opłaty dodatkowe dla metody dostawy 11, gdy jest włączona funkcja proporcjonalnego dopasowywania wartości wierszy](media/11_enabled.png)
+![Automatyczne opłaty dodatkowe dla metody dostawy 11, gdy jest włączona funkcja proporcjonalnego dopasowywania wartości wierszy.](media/11_enabled.png)
 
 Ten scenariusz używa tego samego zamówienia sprzedaży zawierającego pięć wierszy. Metoda dostawy w nagłówku zamówienia jest ustawiona jako **99**, ale metody dostawy dla poszczególnych towarów w zamówieniu sprzedaży są ustawione, jak pokazano w poniższej tabeli.
 
@@ -130,9 +130,9 @@ Ponieważ konfiguracja automatycznej opłaty jest ustawiona tak, aby proporcjona
     - Łączna wartość produktu = 15 USD
     - **Wysokość opłaty = $0** (nie skonfigurowano automatycznych opłat dla tej kombinacji odbiorcy i metody dostawy.)
 
-    ![Opłaty za metodę dostawy 11 mieszczą się w podkreślonej warstwie](media/step2mode11.png)
+    ![Opłaty za metodę dostawy 11 mieszczą się w podkreślonej warstwie.](media/step2mode11.png)
 
-    ![Opłaty za metodę dostawy 99 mieszczą się w podkreślonej warstwie](media/step2mode99.png)
+    ![Opłaty za metodę dostawy 99 mieszczą się w podkreślonej warstwie.](media/step2mode99.png)
 
 3. System oblicza wartość opłaty, która ma być stosowana dla każdego wiersza, na podstawie mechanizmu proporcji, który uwzględnia proporcjonalną wartość wiersza w odniesieniu do łącznej wartości produktu w grupie.
 
@@ -163,7 +163,7 @@ Ponieważ konfiguracja automatycznej opłaty jest ustawiona tak, aby proporcjona
 
 W związku z tym na przykład do elementu 81334 zostanie przypisana opłata transportowa $5.62. Opłaty te można wyświetlać na stronie **Obsługa opłat** w wierszu sprzedaży. Na poniższej ilustracji przedstawiono, jak wygląda ta strona dla elementu 81334.
 
-![Proporcjonalne opłaty w wierszu sprzedaży dla elementu 81334](media/proratedlinecharge.png)
+![Proporcjonalne opłaty w wierszu sprzedaży dla elementu 81334.](media/proratedlinecharge.png)
 
 W przypadku używania tej metody obliczania w sytuacji zwrotu części zamówienia, jeżeli kod opłaty kwalifikuje do zwrotu, tylko część opłaty przypisanej do tego wiersza zostanie zwrócona, gdy klient odda towar.
 

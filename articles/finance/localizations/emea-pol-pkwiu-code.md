@@ -2,11 +2,9 @@
 title: Konfigurowanie i używanie kodów PKWiU dla Polski
 description: W tym temacie omówiono konfigurowanie kod PKWiU dla Polski.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 09/20/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -15,12 +13,12 @@ ms.search.region: Poland
 ms.author: kfend
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: ef29afadc5570153ba30186620d6698d3dd9434b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 552470c4f55ed37277f9a93c828f3a186986d9468b63066a1994343e3c4e76de
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4990134"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742137"
 ---
 # <a name="set-up-and-use-pkwiu-codes-for-poland"></a>Konfigurowanie i używanie kodów PKWiU dla Polski
 
@@ -46,3 +44,6 @@ Hierarchie kategorii są używane do klasyfikowania produktów czy transakcji dl
 1. Kliknij kolejno **Zarządzanie informacjami o produktach** > **Wspólne** > **Zwolnione produkty**. 
 2. Wybierz zwolniony produkt, do którego chcesz przypisać kod PKWiU. W okienku akcji kliknij przycisk **Edytuj**. 
 3. Na skróconej karcie **Sprzedaż** wprowadź kod PKWiU dla zwolnionego produktu. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

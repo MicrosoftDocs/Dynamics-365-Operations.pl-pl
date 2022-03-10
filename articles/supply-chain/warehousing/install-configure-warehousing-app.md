@@ -1,7 +1,7 @@
 ---
 title: Instalowanie i łączenie aplikacji magazynowej
 description: W tym temacie opisano sposób instalowania aplikacji magazynowej na każdym urządzeniu przenośnym i konfigurowania jej w celu nawiązania połączenia ze środowiskiem aplikacji Microsoft Dynamics 365 Supply Chain Management. Poszczególne urządzenia można konfigurować ręcznie lub można importować ustawienia połączenia za pośrednictwem pliku lub przez skanowanie kodu QR.
-author: MarkusFogelberg
+author: Mirzaab
 ms.date: 05/25/2020
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 267694
 ms.assetid: d95d43b2-13ff-4189-a71a-3a1fb57d55ed
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8386adc3f0e9c9a782e6cd5d4ba770f9650583b8ff3f32c3ac23478475d085ae
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9f123f217aabcc7500832fafb15199043048b5e5
+ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753802"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "7902278"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>Instalowanie i łączenie aplikacji magazynu
 
@@ -136,7 +136,7 @@ Ustawienia połączenia można zaimportować z pliku lub kodu QR. W obu przypadk
 | ConnectionName | Określ nazwę ustawienia połączenia. Tekst może mieć maksymalnie 20 znaków. Ponieważ ta wartość jest unikatowym identyfikatorem ustawienia połączenia, upewnij się, że jest ona unikatowa na liście. Jeśli na urządzeniu istnieje już połączenie o takiej samej nazwie, zostanie ono zastąpione przez ustawienia z importowanego pliku. |
 | ActiveDirectoryClientAppId | Podaj identyfikator klienta zanotowany podczas konfigurowania ustawień usługi Azure AD w sekcji [Tworzenie aplikacji usługi internetowej w usłudze Azure Active Directory](#create-service). |
 | ActiveDirectoryResource | Określ główny adres URL aplikacji Supply Chain Management. |
-| ActiveDirectoryTenant | Określ dzierżawę usługi Azure AD używaną z serwerem aplikacji Supply Chain Management. Ta wartość ma postać `https://login.windows.net/<your-Azure-AD-tenant-ID>`. Oto przykład: `https://login.windows.net/contosooperations.onmicrosoft.com`. |
+| ActiveDirectoryTenant | Określ nazwę domeny usługi Azure AD używaną z serwerem aplikacji Supply Chain Management. Ta wartość ma postać `https://login.windows.net/<your-Azure-AD-domain-name>`. Oto przykład: `https://login.windows.net/contosooperations.onmicrosoft.com`. Więcej informacji na temat znajdowania nazwy domeny w usłudze Azure AD można znaleźć w temacie [Lokalizowanie identyfikatorów ważnych dla użytkownika](/partner-center/find-ids-and-domain-names). |
 | Firma | Określ firmę zdefiniowaną w aplikacji Supply Chain Management, z którą ma się łączyć aplikacja. |
 | ConnectionType | (Opcjonalnie) Określ, czy ustawienie połączenia powinno używać certyfikatu, czy też wpisu tajnego klienta, aby połączyć się ze środowiskiem. Prawidłowe wartości to *„certificate”* i *„clientsecret”*. Domyślna wartość to *„certificate”*.<p>**Uwaga:** wpisów tajnych klienta nie można importować.</p> |
 | IsEditable | (Opcjonalnie) Określ, czy użytkownik aplikacji ma mieć możliwość edytowania ustawienia połączenia. Prawidłowe wartości to *„true”* i *„false”*. Domyślna wartość to *„true”*. |
@@ -248,7 +248,7 @@ Aplikację w urządzeniu można ręcznie skonfigurować tak, aby łączyła się
         > [!NOTE]
         > Tej wartości nie należy kończyć ukośnikiem (/).
 
-    - **Dzierżawa usługi Active Directory** — wprowadź dzierżawę usługi Azure AD używanej na serwerze programu Supply Chain Management. Ta wartość ma postać `https://login.windows.net/<your-Azure-AD-tenant-ID>`. Oto przykład: `https://login.windows.net/contosooperations.onmicrosoft.com`.
+    - **Dzierżawa usługi Active Directory** — wprowadź nazwę domeny usługi Azure AD używanej na serwerze programu Supply Chain Management. Ta wartość ma postać `https://login.windows.net/<your-Azure-AD-domain-name>`. Oto przykład: `https://login.windows.net/contosooperations.onmicrosoft.com`. Więcej informacji na temat znajdowania nazwy domeny w usłudze Azure AD można znaleźć w temacie [Lokalizowanie identyfikatorów ważnych dla użytkownika](/partner-center/find-ids-and-domain-names).
 
         > [!NOTE]
         > Tej wartości nie należy kończyć ukośnikiem (/).

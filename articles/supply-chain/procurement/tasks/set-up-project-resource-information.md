@@ -1,7 +1,7 @@
 ---
 title: Konfigurowanie informacji o zasobach projektu
 description: W tej procedurze pokazano sposób konfigurowania zasobu projektu.
-author: kamaybac
+author: Henrikan
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Service industries
-ms.author: dabourq
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1a91b3c40e798cc0dce3001eb0500aca1b4448a0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c7ba8264bb3ccc6db3b766b76a435e0eccf2d7a2
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837688"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577055"
 ---
 # <a name="set-up-project-resource-information"></a>Konfigurowanie informacji o zasobach projektu
 

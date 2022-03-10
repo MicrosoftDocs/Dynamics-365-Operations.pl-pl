@@ -1,225 +1,217 @@
 ---
 title: Ujednolicone doświadczenie korzystania z produktu
-description: W tym temacie opisano integrację danych produktu między aplikacjami Finance and Operations i Dataverse.
+description: W tym temacie opisano integrację danych produktu między aplikacjami Finanse i Działania i Dataverse.
 author: t-benebo
-manager: AnnBe
 ms.date: 12/12/2019
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 46f2f846f1259d433630a69f17f7b8db9514e6fa
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1b3dc1d16fc34992df0c9478b8b4d163c310b67b
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680055"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062605"
 ---
-# <a name="unified-product-experience"></a>Ujednolicone działanie produktu
+# <a name="unified-product-experience"></a>Ujednolicone doświadczenie korzystania z produktu
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Gdy ekosystem firmy składa się z aplikacji systemu Dynamics 365, takich jak Finance, Supply Chain Management i Sale, firmy często używają tych aplikacji do tworzenia danych produktu źródłowego. Dzieje się tak dlatego, że te aplikacje zawierają rozbudowaną infrastrukturę produktów uzupełnioną o zaawansowane koncepcje cen oraz dokładne dane o dostępnych zapasach. Firmy korzystające z systemu Product Lifecycle Management (PLM) do pozyskiwania danych produktów mogą przesyłać produkty z aplikacji Finance and Operations do innych aplikacji Dynamics 365. Ujednolicone doświadczenie korzystania z produktu w modelu danych produktów jest zintegrowane z Dataverse, dzięki czemu wszyscy użytkownicy aplikacji, w tym użytkownicy Power Platform, mogą korzystać z bogatych danych produktu pochodzących aplikacji Finance and Operations.
+
+Gdy ekosystem firmy składa się z aplikacji systemu Dynamics 365, takich jak Finance, Supply Chain Management i Sale, firmy często używają tych aplikacji do tworzenia danych produktu źródłowego. Dzieje się tak dlatego, że te aplikacje zawierają rozbudowaną infrastrukturę produktów uzupełnioną o zaawansowane koncepcje cen oraz dokładne dane o dostępnych zapasach. Firmy korzystające z systemu Product Lifecycle Management (PLM) do pozyskiwania danych produktów mogą przesyłać produkty z aplikacji Finanse i Działania do innych aplikacji Dynamics 365. Ujednolicone doświadczenie korzystania z produktu w modelu danych produktów jest zintegrowane z Dataverse, dzięki czemu wszyscy użytkownicy aplikacji, w tym użytkownicy Power Platform, mogą korzystać z bogatych danych produktu pochodzących aplikacji Finanse i Działania.
 
 Oto model danych produktu z Sales.
 
-![Model danych produktów w CE](media/dual-write-product-4.jpg)
+![Model danych produktów w CE.](media/dual-write-product-4.jpg)
 
-Oto model danych produktu z aplikacji Finance and Operations.
+Oto model danych produktu z aplikacji Finanse i Działania.
 
-![Model danych produktów w Finance and Operations](media/dual-write-products-5.jpg)
+![Model danych dla produktów w Finanse i Działania.](media/dual-write-products-5.jpg)
 
 Te dwa modele danych produktu zostały zintegrowane w Dataverse w sposób przedstawiony poniżej.
 
-![Model danych produktów w aplikacjach Dynamics 365](media/dual-write-products-6.jpg)
+![Model danych produktów w aplikacjach Dynamics 365.](media/dual-write-products-6.jpg)
 
-Mapowania tabel podwójnego zapisywania dla produktów zostały zaprojektowane tak, aby dane były przesyłane tylko w czasie jak najbliższym rzeczywistemu z aplikacji Finance and Operations do Dataverse. Jednak infrastruktura produktów została otwarta, aby była w razie potrzeby prowadzona w sposób dwukierunkowy. Mimo że można ją dostosować na własną odpowiedzialność, ponieważ nie jest to zalecane rozwiązanie Microsoft.
+Mapowania tabeli podwójnego zapisywania dla produktów zostały zaprojektowane tak, aby dane były przesyłane tylko w czasie jak najbliższym rzeczywistemu z aplikacji Finanse i Działania do Dataverse. Jednak infrastruktura produktów została otwarta, aby była w razie potrzeby prowadzona w sposób dwukierunkowy. Mimo że można ją dostosować na własną odpowiedzialność, ponieważ nie jest to zalecane rozwiązanie Microsoft.
 
 ## <a name="templates"></a>Szablony
 
 Informacje o produkcie zawierają wszystkie informacje związane z produktem i jego definicję, takie jak wymiary produktu lub wymiary śledzenia i przechowywania. W poniższej tabeli przedstawiono kolekcję mapowań tabel, która umożliwia synchronizowanie produktów i informacji pokrewnych.
 
-Aplikacje Finance and Operations | Inne aplikacje w usłudze Dynamics 365 | opis
+Aplikacje Finanse i Działania | Inne aplikacje w usłudze Dynamics 365 | Opis
 -----------------------|--------------------------------|---
-Zwolnione produkty (wersja 2) | msdyn\_sharedproductdetails | Jednostka **msdyn\_sharedproductdetails** zawiera pola z aplikacji Finance and Operations, które definiują produkt, i zawierają informacje finansowe i informacje dotyczące zarządzania produktem. 
-Dataverse odrębne produkty zwolnione w usłudze CDS | Produkt | Jednostka **Produktu** zawiera pola, które definiują produkt. Zawiera produkty indywidualne (produkty podtypu) i warianty produktu. Poniższa tabela przedstawia kolejność mapowań.
-Kod kreskowy zidentyfikowany numer produktu | msdyn\_productbarcodes | Kody kreskowe produktów służą do jednoznacznego identyfikowania produktów.
-Ustawienia domyślne zamówień | msdyn\_productdefaultordersettings
-Ustawienia domyślne określonego produktu (wersja 2) | msdyn_productdefaultordersettings
-Grupy wymiarów produktu | msdyn\_productdimensiongroups | Grupa wymiarów produktu określa, które wymiary produktu definiują produkt. 
-Grupy wymiarów magazynowania | msdyn\_productstoragedimensiongroups | Grupa wymiarów magazynowania produktu reprezentuje metodę używaną do definiowania rozmieszczenia produktu w magazynie.
-Grupy wymiarów śledzenia | msdyn\_producttrackingdimensiongroups | Grupa wymiarów śledzenia produktu reprezentuje metodę używaną do śledzenia produktu w magazynie.
-Kolory | msdyn\_productcolors
-Rozmiary | msdyn\_productsizes
-Style | msdyn\_productsytles
-Konfiguracje | msdyn\_productconfigurations
-Kolory produktu głównego | msdyn_sharedproductcolors | Jednostka **Udostepniony kolor produktu** wskazuje kolory, które może mieć określony produkt główny. Ta koncepcja jest migrowana w Dataverse w celu zachowania spójności danych.
-Rozmiary produktu głównego | msdyn_sharedproductsizes | Jednostka **Udostępnij rozmiar produktu** wskazuje rozmiary, które może mieć określony produkt główny. Ta koncepcja jest migrowana w Dataverse w celu zachowania spójności danych.
-Style produktu głównego | msdyn_sharedproductstyles | Jednostka **Udostepnione style produktu** wskazuje style, które może mieć określony produkt główny. Ta koncepcja jest migrowana w Dataverse w celu zachowania spójności danych.
-Konfiguracje produktu głównego | msdyn_sharedproductconfigurations | Jednostka **Udostepnione konfiguracje produktu** wskazuje konfiguracje, które może mieć określony produkt główny. Ta koncepcja jest migrowana w Dataverse w celu zachowania spójności danych.
-Wszystkie produkty | msdyn_globalproducts | Jednostka wszystkie produkty zawiera wszystkie produkty dostępne w aplikacjach Finance and Operations, w tym produkty zwolnione oraz produkty niezwolnione.
-Jednostka | uoms
-Konwersje jednostek | msdyn_ unitofmeasureconversions
-Konwersja jednostki miary określonego produktu | msdyn_productspecificunitofmeasureconversion
-Kategorie produktów | msdyn_productcategories | Każda kategoria produktu oraz informacje o jego strukturze i charakterystyce znajdują się w jednostce kategorii produktów. 
-Hierarchie kategorii produktów | msdyn_productcategoryhierarhies | Hierarchie produktów umożliwiają łączenie produktów w kategorie i grupy. Hierarchie kategorii są dostępne w Dataverse przy użyciu jednostki Hierarchia kategorii produktów. 
-Role hierarchii kategorii produktów | msdyn_productcategoryhierarchies | Hierarchie produktów mogą być używane w różnych rolach w D365 Finance and Operations. Określają, która kategoria ma być używana w każdej roli, w której jest używana jednostka roli Kategoria produktu. 
-Przypisania kategorii produktów | msdyn_productcategoryassignments | Aby przypisać produkt do kategorii, można użyć jednostki przypisań kategorii produktów.
+[Wszystkie produkty](mapping-reference.md#138) | msdyn_globalproducts | Tabela wszystkie produkty zawiera wszystkie produkty dostępne w aplikacjach Finanse i Działania, w tym produkty zwolnione oraz produkty niezwolnione.
+[Odrębne produkty zwolnione w usłudze CDS](mapping-reference.md#213) | Produkt | Tabela **Produkt** zawiera kolumny, które definiują produkt. Zawiera produkty indywidualne (produkty podtypu) i warianty produktu. Poniższa tabela przedstawia kolejność mapowań.
+[Kolory](mapping-reference.md#170) | msdyn\_productcolors
+[Konfiguracje](mapping-reference.md#171) | msdyn\_productconfigurations
+[Ustawienia domyślne zamówień](mapping-reference.md#172) | msdyn_productdefaultordersettings |
+[Kategorie produktów](mapping-reference.md#166) | msdyn_productcategories | Każda kategoria produktu oraz informacje o jego strukturze i charakterystyce znajdują się w tabeli kategorii produktów.
+[Przypisania kategorii produktów](mapping-reference.md#167) | msdyn_productcategoryassignments | Aby przypisać produkt do kategorii, można użyć tabeli przypisań kategorii produktów.
+[Hierarchie kategorii produktów](mapping-reference.md#168) | msdyn_productcategoryhierarchies | Hierarchie produktów umożliwiają łączenie produktów w kategorie i grupy. Hierarchie kategorii są dostępne w Dataverse przy użyciu tabeli Hierarchia kategorii produktów.
+[Role hierarchii kategorii produktów](mapping-reference.md#169) | msdyn_productcategoryhierarchyroles | Hierarchie produktów mogą być używane w różnych rolach w D365 Finanse i Działania. Określają, która kategoria ma być używana w każdej roli, w której jest używana tabela roli Kategoria produktu.
+[Ustawienia domyślne zamówienia produktu (wersja 2)](mapping-reference.md#175) | msdyn_productspecificdefaultordersettings |
+[Grupy wymiarów produktu](mapping-reference.md#173) | msdyn\_productdimensiongroups | Grupa wymiarów produktu określa, które wymiary produktu definiują produkt.
+[Kolory produktu głównego](mapping-reference.md#187) | msdyn_sharedproductcolors | Tabela **Udostępniony kolor produktu** wskazuje kolory, które może mieć określony produkt główny. Ta koncepcja jest migrowana w Dataverse w celu zachowania spójności danych.
+[Konfiguracje produktu głównego](mapping-reference.md#188) | msdyn_sharedproductconfigurations | Tabela **Udostępnione konfiguracje produktu** wskazuje konfiguracje, które może mieć określony produkt główny. Ta koncepcja jest migrowana w Dataverse w celu zachowania spójności danych.
+[Rozmiary produktu głównego](mapping-reference.md#190) | msdyn_sharedproductsizes | Tabela **Udostępniony rozmiar produktu** wskazuje rozmiary, które może mieć określony produkt główny. Ta koncepcja jest migrowana w Dataverse w celu zachowania spójności danych.
+[Style produktu głównego](mapping-reference.md#191) | msdyn_sharedproductstyles | Tabela **Udostępnione style produktu** wskazuje style, które może mieć określony produkt główny. Ta koncepcja jest migrowana w Dataverse w celu zachowania spójności danych.
+[Kod kreskowy identyfikujący numer produktu](mapping-reference.md#164) | msdyn\_productbarcodes | Kody kreskowe produktów służą do jednoznacznego identyfikowania produktów.
+[Konwersje jednostek specyficzne dla produktu](mapping-reference.md#176) | msdyn_productspecificunitofmeasureconversions |
+[Zwolnione produkty (wersja 2)](mapping-reference.md#189) | msdyn\_sharedproductdetails | Tabela **msdyn\_sharedproductdetails** zawiera kolumny z aplikacji Finanse i Działania, które definiują produkt, i zawierają informacje finansowe i informacje dotyczące zarządzania produktem.
+[Rozmiary](mapping-reference.md#174) | msdyn\_productsizes
+[Grupy wymiarów magazynowania](mapping-reference.md#177) | msdyn_productstoragedimensiongroups | Grupa wymiarów magazynowania produktu reprezentuje metodę używaną do definiowania rozmieszczenia produktu w magazynie.
+[Style](mapping-reference.md#178) | msdyn\_productsytles
+[Grupy wymiarów śledzenia](mapping-reference.md#179) | msdyn_producttrackingdimensiongroups | Grupa wymiarów śledzenia produktu reprezentuje metodę używaną do śledzenia produktu w magazynie.
+[Jednostki](mapping-reference.md#219) | uoms
+[Konwersje jednostek](mapping-reference.md#199) | msdyn_ unitofmeasureconversions
 
 ## <a name="integration-of-products"></a>Integracja produktów
 
-W tym modelu produkt jest reprezentowany przez kombinację dwóch tabel w Dataverse: **Produkt** i **msdyn\_sharedproductdetails**. Pierwsza encja zawiera definicję produktu (unikatowy identyfikator produktu, nazwę produktu i opis), druga encja zawiera pola przechowywane na poziomie produktu. Kombinacja tych dwóch tabel służy do definiowania produktu zgodnie z koncepcją jednostki magazynowej (SKU). Każdy zwolniony produkt będzie miał informacje zawarte w wymienionych tabelach (Szczegóły dotyczące produktu i udostępnionego produktu). Do śledzenia wszystkich produktów (zwolnionych i niezwolnionych) jest używana encja **Produkty globalne**. 
+W tym modelu produkt jest reprezentowany przez kombinację dwóch tabel w Dataverse: **Produkt** i **msdyn\_sharedproductdetails**. Pierwsza tabela zawiera definicję produktu (unikatowy identyfikator produktu, nazwę produktu i opis), druga tabela zawiera kolumny przechowywane na poziomie produktu. Kombinacja tych dwóch tabel służy do definiowania produktu zgodnie z koncepcją jednostki magazynowej (SKU). Każdy zwolniony produkt będzie miał informacje zawarte w wymienionych tabelach (Szczegóły dotyczące produktu i udostępnionego produktu). Do śledzenia wszystkich produktów (zwolnionych i niezwolnionych) jest używana tabela **Produkty globalne**.
 
 Ponieważ produkt jest reprezentowany jako jednostka SKU, pojęcia dotyczące różnych produktów, produktów głównych i wariantów produktu można przechwycić w Dataverse w następujący sposób:
 
-- **Produkty o podtypie produktu** to produkty, które są definiowane przez siebie Nie trzeba definiować wymiarów. Przykładem jest określona księga. W przypadku tych produktów tworzony jest jeden rekord w encji **Produktu**, a jeden rekord jest tworzony w encji **msdyn\_sharedproductdetails**. Nie utworzono rekordu rodziny produktów.
-- **Produkty główne** są używane jako standardowe produkty, które posiadają definicję i reguły określające zachowanie w procesach biznesowych. Na podstawie tych definicji można generować odrębne produkty znane jako warianty produktów. Na przykład, Koszulka jest produktem głównym i może posiadać Kolor i Rozmiar jako wymiary. Można zwalniać warianty, które mają różne kombinacje tych wymiarów, np. małą, niebieską koszulkę lub średnią, zieloną koszulkę. W integracji jeden rekord na wariant jest tworzony w tabeli produktów. Ten rekord zawiera informacje specyficzne dla wariantu, takie jak różne wymiary. Informacje ogólne dotyczące produktu są przechowywane w jednostce **msdyn\_sharedproductdetails**. (Te ogólne informacje są przechowywane w produkcie głównym). Informacje o danych głównych produktu są synchronizowane z Dataverse z chwilą utworzenia zwolnionego produktu głównego (ale przed zwolnieniem wariantów).
-- **Odrębne produkty** odnoszą się do wszystkich produktów podtypu produktu i wszystkich wariantów produktu. 
+- **Produkty o podtypie produktu** to produkty, które są definiowane przez siebie Nie trzeba definiować wymiarów. Przykładem jest określona księga. W przypadku tych produktów tworzony jest jeden wiersz w tabeli **Produkt** i jeden wiersz jest tworzony w tabeli **msdyn\_sharedproductdetails**. Nie utworzono wiersza rodziny produktów.
+- **Produkty główne** są używane jako standardowe produkty, które posiadają definicję i reguły określające zachowanie w procesach biznesowych. Na podstawie tych definicji można generować odrębne produkty znane jako warianty produktów. Na przykład, Koszulka jest produktem głównym i może posiadać Kolor i Rozmiar jako wymiary. Można zwalniać warianty, które mają różne kombinacje tych wymiarów, np. małą, niebieską koszulkę lub średnią, zieloną koszulkę. W integracji jeden wiersz na wariant jest tworzony w tabeli produktów. Ten wiersz zawiera informacje specyficzne dla wariantu, takie jak różne wymiary. Informacje ogólne dotyczące produktu są przechowywane w tabeli **msdyn\_sharedproductdetails**. (Te ogólne informacje są przechowywane w produkcie głównym). Informacje o danych głównych produktu są synchronizowane z Dataverse z chwilą utworzenia zwolnionego produktu głównego (ale przed zwolnieniem wariantów).
+- **Odrębne produkty** odnoszą się do wszystkich produktów podtypu produktu i wszystkich wariantów produktu.
 
-![Model danych produktów](media/dual-write-product.png)
+![Model danych produktów.](media/dual-write-product.png)
 
-W przypadku włączenia funkcji podwójnego zapisywania produktów z Finance and Operations zostaną zsynchronizowane w innych produktach Dynamics 365 w stanie **Wersje robocze**. Są one dodawane do pierwszej listy cen z tą samą walutą. Innymi słowy, są dodawane do pierwszej listy cen w aplikacji Dynamics 365, która odpowiada walucie firmy, w której produkt jest wydawany w aplikacji Finance and Operations. 
+W przypadku włączenia funkcji podwójnego zapisywania produkty Finanse i Działania zostaną zsynchronizowane w innych produktach systemu Dynamics 365 w stanie **Wersje robocze**. Są one dodawane do pierwszego cennika w tej samej walucie, która jest używana w aplikacji spersonalizowanej obsługi odbiorców, i w kolejności alfabetycznej według nazw cennika. Innymi słowy, są dodawane do pierwszej listy cen w aplikacji Dynamics 365, która odpowiada walucie firmy w tabeli, w której produkt jest wydawany w aplikacji Finanse i Działania. Jeśli nie ma cennika w danej walucie, automatycznie zostanie utworzony cennik, a produkt zostanie do niego przypisany.
 
-Produkty domyślne z Finance and Operations operacyjnych są synchronizowane z innymi aplikacjami systemu Dynamics 365 w stanie **wersja robocza**. Aby zsynchronizować produkt z **Aktywnym** stanem, można go bezpośrednio używać w ofertach zamówień sprzedaży, na przykład należy wybrać następujące ustawienie: w obszarze **System > Administracja > Administracja systemu > Ustawienia systemu > karta Sprzedaż** wybierz opcję **Utwórz produkty w stanie aktywnym = tak**. 
+Obecna implementacja wtyczek z podwójnym zapisem, które kojarzą domyślny cennik z jednostką, wyszukują walutę skojarzoną z aplikacją Finanse i Działania i znajdują pierwszy cennik w aplikacji angażującej klientów przy użyciu sortowania alfabetycznego w nazwie cennika. Aby ustawić domyślny cennik dla określonej waluty, gdy masz wiele cenników dla tej waluty, musisz zaktualizować nazwę cennika do nazwy, która jest wcześniejsza w kolejności alfabetycznej niż jakiekolwiek inne cenniki dla tej samej waluty. W przypadku braku cennika w danej walucie tworzony jest nowy cennik.
 
-Zauważ, że synchronizacja produktów jest spowodowana przez Finance and Operations do Dataverse. Oznacza to, że wartości pól jednostki produktu mogą być zmieniane w Dataverse, ale po wyzwoleniu synchronizacji (po zmodyfikowaniu pola produktu w module w aplikacji Finance and Operations) zostaną one zastąpione wartościami w Dataverse. 
+Produkty domyślne z Finanse i Działania operacyjnych są synchronizowane z innymi aplikacjami systemu Dynamics 365 w stanie **wersja robocza**. Aby zsynchronizować produkt z **Aktywnym** stanem, można go bezpośrednio używać w ofertach zamówień sprzedaży, na przykład należy wybrać następujące ustawienie: w obszarze **System > Administracja > Administracja systemu > Ustawienia systemu > karta Sprzedaż** wybierz opcję **Utwórz produkty w stanie aktywnym = tak**.
 
-[!include [symbols](../../includes/dual-write-symbols.md)]
+Jeśli produkty są synchronizowane, należy wprowadzić wartość w polu **Jednostka sprzedaży** w aplikacji Finanse i Działania, ponieważ jest to pole obowiązkowe w aplikacji Sales.
 
-[!include [products](includes/EcoResReleasedDistinctProductCDSEntity-products.md)]
+Tworzenie rodzin produktów z Dynamics 365 Sales nie jest obsługiwane w przypadku synchronizacji produktów z podwójnym zapisem.
 
-[!include [product details](includes/EcoResReleasedProductV2-msdyn-sharedproductdetails.md)]
+Zauważ, że synchronizacja produktów jest spowodowana przez Finanse i Działania do Dataverse. Oznacza to, że wartości kolumn tabeli produktu mogą być zmieniane w Dataverse, ale po wyzwoleniu synchronizacji (po zmodyfikowaniu kolumny produktu w module w aplikacji Finanse i Działania) zostaną one zastąpione wartościami w Dataverse.
 
-[!include [global products](includes/EcoResEveryProductEntity-msdyn-globalproducts.md)]
+Aplikacje Finanse i Działania | Aplikacje Customer Engagement |
+---|---
+[Odrębne produkty zwolnione w usłudze CDS](mapping-reference.md#213) | Produkt |
+[Zwolnione produkty (wersja 2)](mapping-reference.md#189) | msdyn_sharedproductdetails |
+[Wszystkie produkty](mapping-reference.md#138) | msdyn_globalproducts |
 
-## <a name="product-dimensions"></a>Wymiary produktu 
+## <a name="product-dimensions"></a>Wymiary produktu
 
-Wymiary produktu to cechy, które określają wariant produktu. Cztery wymiary produktu (kolor, rozmiar, styl i konfiguracja) są również mapowane w Dataverse w celu zdefiniowania wariantów produktu. Na poniższej ilustracji przedstawiono model danych dla wymiaru produktu Kolor. Ten sam model jest stosowany do rozmiarów, stylów i konfiguracji. 
+Wymiary produktu to cechy, które określają wariant produktu. Cztery wymiary produktu (kolor, rozmiar, styl i konfiguracja) są również mapowane w Dataverse w celu zdefiniowania wariantów produktu. Na poniższej ilustracji przedstawiono model danych dla wymiaru produktu Kolor. Ten sam model jest stosowany do rozmiarów, stylów i konfiguracji.
 
-![Model danych dla wymiarów produktu](media/dual-write-product-two.png)
+![Model danych dla wymiarów produktu.](media/dual-write-product-two.png)
 
-[!include [product colors](includes/EcoResProductColorEntity-msdyn-productcolor.md)]
-
-[!include [product sizes](includes/EcoResProductSizeEntity-msdyn-productsizes.md)]
-
-[!include [product sizes](includes/EcoResProductStyleEntity-msdyn-productstyles.md)]
-
-[!include [product sizes](includes/EcoResProductConfigurationsEntity-msdyn-productconfigurations.md)]
+Aplikacje Finanse i Działania | Aplikacje Customer Engagement |
+---|---
+[Kolory](mapping-reference.md#170) | msdyn\_productcolors
+[Rozmiary](mapping-reference.md#174) | msdyn\_productsizes
+[Style](mapping-reference.md#178) | msdyn\_productsytles
+[Konfiguracje](mapping-reference.md#171) | msdyn\_productconfigurations
 
 Jeśli produkt ma różne wymiary produktu (np. produkt główny ma rozmiar i kolor jako wymiary produktu), każdy odrębny produkt (każdy wariant produktu) jest definiowany jako kombinacja tych wymiarów produktu. Na przykład numer produktu B0001 to bardzo mała czarna koszulka, a numer produktu B0002 jest małą czarną koszulką. W takim przypadku definiowane są istniejące kombinacje wymiarów produktu. Na przykład koszulka z powyższego przykładu może być bardzo mała i czarna, mała i czarna, średnia i czarna, lub duża i czarna, ale nie może być bardzo duża i czarna. Innymi słowy, wymiary produktów, które może pobrać produkt główny produktu, są określone, a warianty mogą być zwalniane na podstawie tych wartości.
 
-Aby śledzić wymiary produktu, które może przyjąć produkt główny, w Dataverse dla każdego wymiaru produktu są tworzone i mapowane następujące tabele. Aby uzyskać więcej informacji, zobacz [Omówienie informacji o produktach](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/pim/product-information).
+Aby śledzić wymiary produktu, które może przyjąć produkt główny, w Dataverse dla każdego wymiaru produktu są tworzone i mapowane następujące tabele. Aby uzyskać więcej informacji, zobacz [Omówienie informacji o produktach](../../../../supply-chain/pim/product-information.md).
 
-[!include [product colors](includes/EcoResProductMasterColorEntity-msdyn-sharedproductcolors.md)]
-
-[!include [product sizes](includes/EcoResProductMasterSize-msdyn-sharedproductsizes.md)]
-
-[!include [product styles](includes/EcoResProductMasterStyleEntity-msdyn-sharedproductstyles.md)]
-
-[!include [product configurations](includes/EcoResProductMasterConfigurationEntity-msdyn-sharedproductconfigurations.md)]
-
-[!include [product bar codes](includes/EcoResProductNumberIdentifiedBarcode-msdyn-productbarcodes.md)]
+Aplikacje Finanse i Działania | Aplikacje Customer Engagement |
+---|---
+[Kolory produktu głównego](mapping-reference.md#187) | msdyn_sharedproductcolors |
+[Konfiguracje produktu głównego](mapping-reference.md#188) | msdyn_sharedproductconfigurations |
+[Rozmiary produktu głównego](mapping-reference.md#190) | msdyn_sharedproductsizes |
+[Style produktu głównego](mapping-reference.md#191) | msdyn_sharedproductstyles |
+[Kod kreskowy identyfikujący numer produktu](mapping-reference.md#164) | msdyn\_productbarcodes |
 
 ## <a name="default-order-settings-and-product-specific-default-order-settings"></a>Domyślne ustawienia zamówień i domyślne ustawienia zamówień charakterystyczne dla produktu
 
-Domyślne ustawienia zamówień definiują: oddział i magazyn, skąd towary będą pobierane lub gdzie będą przechowywane; ilości minimalne, maksymalne, wielokrotne i standardowe, które będą używane do handlu lub zarządzania zapasami; czasy realizacji; flagę blokady; metodę tworzenia zobowiązań zamówień. Te informacje będą dostępne w Dataverse przy użyciu jednostki domyślne ustawienia zamówienia oraz jednostki domyślne ustawienia zamówienia charakterystyczne dla produktu. Możesz przeczytać więcej informacji o funkcjach na [Temacie ustawienia domyślne zamówień](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/default-order-settings).
+Domyślne ustawienia zamówień definiują: oddział i magazyn, skąd towary będą pobierane lub gdzie będą przechowywane; ilości minimalne, maksymalne, wielokrotne i standardowe, które będą używane do handlu lub zarządzania zapasami; czasy realizacji; flagę blokady; metodę tworzenia zobowiązań zamówień. Te informacje będą dostępne w Dataverse przy użyciu jednostki domyślne ustawienia zamówienia oraz jednostki domyślne ustawienia zamówienia charakterystyczne dla produktu. Możesz przeczytać więcej informacji o funkcjach na [Temacie ustawienia domyślne zamówień](../../../../supply-chain/production-control/default-order-settings.md).
 
-[!include [product sizes](includes/InventProductDefaultOrderSettingsEntity-msdyn-productdefaultordersetting.md)]
-
-[!include [product sizes](includes/InventProductSpecificOrderSettingsV2Entity-msdyn-productspecificdefaultordersetting.md)]
+Aplikacje Finanse i Działania | Aplikacje Customer Engagement |
+---|---
+[Ustawienia domyślne zamówień](mapping-reference.md#172) | msdyn_productdefaultordersettings |
+[Ustawienia domyślne zamówienia produktu (wersja 2)](mapping-reference.md#175) | msdyn_productspecificdefaultordersettings |
 
 ## <a name="unit-of-measure-and-unit-of-measure-conversions"></a>Jednostka miary i konwersje jednostki miary
 
-Jednostki miary i odpowiednie konwersja jest dostępna w Dataverse w następującym modelu danych widocznym na diagramie.
+Jednostki miary i odpowiednia konwersja są dostępne w usłudze Dataverse w następującym modelu danych widocznym na diagramie.
 
-![Model danych dla jednostki miary](media/dual-write-product-three.png)
+![Model danych dla jednostki miary.](media/dual-write-product-three.png)
 
-Pojęcie jednostka miary jest zintegrowane między aplikacjami Finance and Operations, a innymi aplikacjami Dynamics 365. Dla każdej klasy jednostek w aplikacji Finance and Operations jest tworzona grupa jednostek w aplikacji Dynamics 365, która zawiera jednostki należące do klasy jednostek. Domyślna jednostka podstawowa jest również tworzona dla każdej grupy jednostek. 
+Pojęcie jednostka miary jest zintegrowane między aplikacjami Finance and Operation, a innymi aplikacjami Dynamics 365. Dla każdej klasy jednostek w aplikacji Finanse i Działania jest tworzona grupa jednostek w aplikacji Dynamics 365, która zawiera jednostki należące do klasy jednostek. Domyślna jednostka podstawowa jest również tworzona dla każdej grupy jednostek.
 
-[!include [unit of measure](includes/UnitOfMeasureEntity-uom.md)]
+Aplikacje Finanse i Działania | Aplikacje Customer Engagement |
+---|---
+[Konwersje jednostek specyficzne dla produktu](mapping-reference.md#176) | msdyn_productspecificunitofmeasureconversions |
+[Jednostki](mapping-reference.md#219) | uoms
+[Konwersje jednostek](mapping-reference.md#199) | msdyn_ unitofmeasureconversions
 
-[!include [unit of measure conversions](includes/UnitOfMeasureConversionEntity-msdyn-unitofmeasureconversions.md)]
-
-[!include [product-specific unit of measure conversions](includes/EcoResProductSpecificUnitConversionEntity-msdyn-productspecificunitofmeasureconversions.md)]
-
-## <a name="initial-synchronization-of-units-data-matching-between-finance-and-operations-and-dataverse"></a>Początkowa synchronizacja danych jednostek pasujących między Finance and Operations i Dataverse
+## <a name="initial-synchronization-of-units-data-matching-between-finance-and-operations-and-dataverse"></a>Początkowa synchronizacja danych jednostek pasujących między Finanse i Działania i Dataverse
 
 ### <a name="initial-synchronization-of-units"></a>Wstępna synchronizacja jednostek
 
-Gdy włączony jest zapis podwójny, produkty z aplikacji Finance and Operations są synchronizowane i innymi aplikacjami Dynamics 365. Grupa jednostek synchronizowana z aplikacjami Finance and Operations w Dataverse ma ustawioną flagę, która wskazuje, że są one „Zarządzane zewnętrznie”.
+Gdy włączony jest zapis podwójny, jednostki z Finanse i Działania operacyjnych są synchronizowane z innymi aplikacjami systemu Dynamics 365. Grupa jednostek synchronizowana z aplikacjami Finanse i Działania Dataverse ma ustawioną flagę, która wskazuje, że są one „zarządzane zewnętrznie”.
 
-### <a name="matching-units-and-unit-classesgroups-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>Jednostki współmierne i klasy jednostek/grupy danych z Finance and Operations oraz innych aplikacji Dynamics 365
+### <a name="matching-units-and-unit-classesgroups-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>Jednostki współmierne i klasy jednostek/grupy danych z Finanse i Działania oraz innych aplikacji Dynamics 365
 
-Najpierw należy pamiętać, że klucz integracji dla jednostki to msdyn_symbol. Dlatego ta wartość musi być unikatowa w Dataverse lub innych aplikacjach systemu Dynamics 365. Ponieważ w innych aplikacjach systemu Dynamics 365 jest to para „Identyfikator grupy jednostek” i „Nazwa”, które określają unikatowość jednostki, należy wziąć pod uwagę różne scenariusze dotyczące dopasowywania danych jednostkowych między aplikacjami Finance and Operations i Dataverse.
+Najpierw należy pamiętać, że klucz integracji dla jednostki to msdyn_symbol. Dlatego ta wartość musi być unikatowa w Dataverse lub innych aplikacjach systemu Dynamics 365. Ponieważ w innych aplikacjach systemu Dynamics 365 jest to para „Identyfikator grupy jednostek” i „nazwa”, która określa unikatowość jednostki, należy wziąć pod uwagę różne scenariusze dotyczące dopasowywania danych jednostkowych między aplikacjami Finanse i Działania i Dataverse.
 
-Dla jednostek uwzględniających/pokrywających się w aplikacjach Finance and Operations oraz inne aplikacje w ramach Dynamics 365:
+Dla jednostek uwzględniających/pokrywających się w aplikacjach Finanse i Działania oraz inne aplikacje w ramach Dynamics 365:
 
-+ **Jednostka należy do grupy jednostek w innych aplikacjach systemu Dynamics 365, które odpowiadają skojarzonej z nią klasom jednostek w aplikacjach Finance and Operations**. W takim przypadku pole msdyn_symbol w innych aplikacjach Dynamics 365 musi być wypełnione symbolem jednostki w aplikacje Finance and Operations. Z tego względu, gdy dane zostaną dopasowane, a grupa jednostek będzie ustawiona jako „Zarządzane zewnętrznie” w innych aplikacjach systemu Dynamics 365.
-+ **Jednostka należy do grupy jednostek w innych aplikacjach systemu Dynamics 365, która nie odpowiada skojarzonej z nią klasie jednostek w aplikacjach Finance and Operations (brak istniejącej klasy jednostek w aplikacjach Finance and Operations dla klasy jednostek w innych aplikacjach Dynamics 365).** W takim przypadku msdyn_symbol musi być wypełniony ciągiem losowym. Należy zauważyć, że ta wartość musi być unikatowa lub innych aplikacjach systemu Dynamics 365.
++ **Jednostka należy do grupy jednostek w innych aplikacjach systemu Dynamics 365, które odpowiadają skojarzonej z nią klasom jednostek w aplikacjach Finanse i Działania**. W takim przypadku kolumna msdyn_symbol w innych aplikacjach Dynamics 365 musi być wypełnione symbolem jednostki w aplikacje Finanse i Działania. Z tego względu, gdy dane zostaną dopasowane, a grupa jednostek będzie ustawiona jako „Zarządzane zewnętrznie” w innych aplikacjach systemu Dynamics 365.
++ **Jednostka należy do grupy jednostek w innych aplikacjach systemu Dynamics 365, która nie odpowiada skojarzonej z nią klasie jednostek w aplikacjach Finanse i Działania (brak istniejącej klasy jednostek w aplikacjach Finanse i Działania dla klasy jednostek w innych aplikacjach Dynamics 365).** W takim przypadku msdyn_symbol musi być wypełniony ciągiem losowym. Należy zauważyć, że ta wartość musi być unikatowa lub innych aplikacjach systemu Dynamics 365.
 
-Dla jednostek i innych klas Finance and Operations, których nie ma w innych aplikacjach Dynamics 365:
+Dla jednostek i innych klas Finanse i Działania, których nie ma w innych aplikacjach Dynamics 365:
 
-W ramach dwóch podwójnych odpisów grup jednostek z aplikacji Finance and Operations i odpowiadające im jednostki są tworzone i synchronizowane w innych aplikacjach Dynamics 365 i Dataverse, a grupa jednostek będzie ustawiona jako „Zarządzane zewnętrznie”. Nie jest wymagany żaden dodatkowy nakład pracy inicjującej.
+W ramach dwóch podwójnych odpisów grup jednostek z aplikacji Finanse i Działania i odpowiadające im jednostki są tworzone i synchronizowane w innych aplikacjach Dynamics 365 i Dataverse, a grupa jednostek będzie ustawiona jako „zatrzymywane zewnętrznie”. Nie jest wymagany żaden dodatkowy nakład pracy inicjującej.
 
-Dla jednostek w innych aplikacjach Dynamics 365, które nie istnieją w aplikacjach Finance and Operations:
+Dla jednostek w innych aplikacjach Dynamics 365, które nie istnieją w aplikacjach Finanse i Działania:
 
-Pole msdyn_symbol musi być wypełnione dla wszystkich jednostek. Jednostki mogą być zawsze tworzone w aplikacjach Finance and Operations w odpowiedniej klasie jednostek (jeśli istnieją). Jeśli klasa jednostek nie istnieje, najpierw należy utworzyć klasę jednostek (należy pamiętać, że nie można utworzyć klasy jednostek w aplikacjach Finance and Operations oprócz przez rozszerzenie, jeśli rozbudowuje się wyliczenie) pasujących do innych grup jednostek aplikacji Dynamics 365. Następnie można utworzyć jednostkę. Zauważ, że symbolem jednostki w aplikacjach Finance and Operations musi być msdyn_symbol poprzednio określony w innych aplikacjach Dynamics 365 dla jednostki.
+Kolumna msdyn_symbol musi być wypełniona dla wszystkich jednostek. Jednostki mogą być zawsze tworzone w aplikacjach Finanse i Działania w odpowiedniej klasie jednostek (jeśli istnieją). Jeśli klasa jednostek nie istnieje, najpierw należy utworzyć klasę jednostek (należy pamiętać, że nie można utworzyć klasy jednostek w aplikacjach Finanse i Działania oprócz przez rozszerzenie, jeśli rozbudowano wyliczenie) pasujących do innych grup jednostek Dynamics 365. Następnie można utworzyć jednostkę. Zauważ, że symbolem jednostki w aplikacjach Finanse i Działania musi być msdyn_symbol poprzednio określony w innych aplikacjach Dynamics 365 dla jednostki.
 
 ## <a name="product-policies-dimension-tracking-and-storage-groups"></a>Zasady dotyczące produktu: Grupa wymiarów, śledzenie i magazynowanie
 
-Zasady dotyczące produktów to zestawy zasad używanych do definiowania produktów i ich charakterystyki w magazynie. Grupę wymiarów produktu, Grupę wymiarów śledzenia produktu i grupę wymiarów magazynowania można odnaleźć jako zasady produktu. 
+Zasady dotyczące produktów to zestawy zasad używanych do definiowania produktów i ich charakterystyki w magazynie. Grupę wymiarów produktu, Grupę wymiarów śledzenia produktu i grupę wymiarów magazynowania można odnaleźć jako zasady produktu.
 
-[!include [product dimension group](includes/EcoResProductDimensionGroup-msdyn-productdimensiongroups.md)]
-
-[!include [product tracking dimension group](includes/EcoResTrackingDimensionGroup-msdyn-producttrackingdimensiongroups.md)]
-
-[!include [product storage dimension group](includes/EcoResStorageDimensionGroup-msdyn-productstoragedimensiongroups.md)]
+Aplikacje Finanse i Działania | Aplikacje Customer Engagement |
+---|---
+[Grupy wymiarów produktu](mapping-reference.md#173) | msdyn\_productdimensiongroups |
+[Grupy wymiarów magazynowania](mapping-reference.md#177) | msdyn_productstoragedimensiongroups |
+[Grupy wymiarów śledzenia](mapping-reference.md#179) | msdyn_producttrackingdimensiongroups |
 
 ## <a name="product-hierarchies"></a>Hierarchie produktów
 
-[!include [product category hierarchy](includes/EcoResProductCategoryHierarchyEntity-msdyn-productcategoryhierarchy.md)]
+Aplikacje Finanse i Działania | Aplikacje Customer Engagement |
+---|---
+[Przypisania kategorii produktów](mapping-reference.md#167) | msdyn_productcategoryassignments |
+[Hierarchie kategorii produktów](mapping-reference.md#168) | msdyn_productcategoryhierarchies |
+[Role hierarchii kategorii produktów](mapping-reference.md#169) | msdyn_productcategoryhierarchyroles |
 
-[!include [product category](includes/EcoResProductCategoryEntity-msdyn-productcategory.md)]
+## <a name="integration-key-for-products"></a>Klucz integracji produktów
 
-[!include [product category assignments](includes/EcoResProductCategoryAssignmentEntity-msdyn-productcategoryassignment.md)]
+Do unikatowego identyfikowania produktów Dynamics 365 for Finance and Operations i produktów Dataverse są używane klucze integracji.
+W przypadku produktów klucz **(productnumber)** jest unikatowym kluczem identyfikującym produkt w Dataverse. Składa się on z połączenia: **(company, msdyn_productnumber)**. **Firma** wskazuje firmę w Finanse i Działania, a **msdyn_productnumber** wskazuje numer produktu dla określonego produktu w Finanse i Działania.
 
-[!include [product category role](includes/EcoResProductCategoryHierarchyRoleEntity-msdyn-productcategoryhierarchyrole.md)]
+W przypadku użytkowników innych aplikacji Dynamics 365, produkt jest identyfikowany w interfejsie użytkownika za pomocą **msdyn_productnumber** (należy zauważyć, że etykieta kolumny jest **Numerem produktu**). W formularzu produktu są wyświetlane zarówno dane firmy, jak i msydn_productnumber. Niemniej jednak kolumna (productnumber), unikatowy klucz produktu, nie jest wyświetlana.
 
+W przypadku konstruowania aplikacji w Dataverse należy zwrócić uwagę na używanie **productnumber** (unikatowego identyfikatora produktu) jako klucza integracji. Nie używaj **msdyn_productnumber**, ponieważ nie jest ono unikatowe.
 
-## <a name="integration-key-for-products"></a>Klucz integracji produktów 
+## <a name="initial-synchronization-of-products-and-migration-of-data-from-dataverse-to-finance-and-operations"></a>Wstępna synchronizacja produktów i migracja danych z Dataverse do Finanse i Działania
 
-Do unikatowego identyfikowania produktów Dynamics 365 for Finance and Operations i produktów Dataverse są używane klucze integracji. W przypadku produktów klucz **(productnumber)** jest unikatowym kluczem identyfikującym produkt w Dataverse. Składa się on z połączenia: **(company, msdyn_productnumber)**. **Firma** wskazuje firmę w Finance and Operations, a **msdyn_productnumber** wskazuje numer produktu dla określonego produktu w Finance and Operations. 
+### <a name="initial-synchronization-of-products"></a>Wstępna synchronizacja produktów
 
-W przypadku użytkowników innych aplikacji Dynamics 365, produkt jest identyfikowany w interfejsie użytkownika za pomocą **msdyn_productnumber** (należy zauważyć, że etykieta pola jest **Numerem produktu**). W formularzu produktu są wyświetlane zarówno dane firmy, jak i msydn_productnumber. Niemniej jednak pole (productnumber) unikatowy klucz produktu nie jest wyświetlane. 
+Gdy włączony jest zapis podwójny, produkty z aplikacji Finanse i Działania są synchronizowane z usługą Dataverse i aplikacjami typu Customer Engagement. Produkty utworzone w Dataverse i inne aplikacje Dynamics 365 przed wydaniem podwójnego zapisu nie będą aktualizowane ani dopasowywane do danych produktu z Finanse i Działania.
 
-W przypadku konstruowania aplikacji w Dataverse należy zwrócić uwagę na używanie **productnumber** (unikatowego identyfikatora produktu) jako klucza integracji. Nie używaj **msdyn_productnumber**, ponieważ nie jest ono unikatowe. 
+### <a name="matching-product-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>Dopasowywanie danych z Finanse i Działania oraz innych aplikacji Dynamics 365
 
-## <a name="initial-synchronization-of-products-and-migration-of-data-from-dataverse-to-finance-and-operations"></a>Wstępna synchronizacja produktów i migracja danych z Dataverse do Finance and Operations
+Jeśli te same produkty są trzymane (nakładające się/dopasowane) w Finanse i Działania oraz w Dataverse i innych aplikacjach Dynamics 365, podczas włączania podwójnego zapisywania produktów z Finanse i Działania będą miały miejsce i zduplikowane wiersze pojawią się w Dataverse dla tego samego produktu.
+Aby uniknąć powyższej sytuacji, jeśli inne aplikacje w wersji Dynamics 365 mają produkty nakładające się/odpowiadają na Finanse i Działania, administrator, który włącza ten proces, musi zainicjować podwójny odczyt, wybierając w kolumnie **Firma** (na przykład: „USMF”) i **msdyn_productnumber** (na przykład: „1234:Black:S”) przed synchronizacją produktów. Innymi słowy, te dwie kolumny w produkcie w Dataverse muszą być wypełnione odpowiednią firmą w Finanse i Działania, do których musi zostać dopasowany produkt i jego numer produktu.
 
-### <a name="initial-synchronization-of-products"></a>Wstępna synchronizacja produktów 
+Następnie, gdy synchronizacja zostanie włączona i ma miejsce, produkty z Finanse i Działania będą synchronizowane z produktami dopasowanymi w Dataverse i innymi aplikacjami Dynamics 365. Dotyczy to zarówno odrębnych produktów, jak i wariantów produktów.
 
-Gdy włączony jest zapis podwójny, produkty z aplikacji Finance and Operations są synchronizowane z Dataverse i innymi aplikacjami opartymi na modelach w Dynamics 365. Produkty utworzone w Dataverse i innych aplikacjach Dynamics 365 przed wydaniem podwójnego zapisywania nie będą aktualizowane ani dopasowywane do danych produktu z Finance and Operations.
+### <a name="migration-of-product-data-from-other-dynamics-365-apps-to-finance-and-operations"></a>Migracja danych produktu z innych aplikacji Dynamics 365 do Finanse i Działania
 
-### <a name="matching-product-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>Dopasowywanie danych z Finance and Operations oraz innych aplikacji Dynamics 365
+Jeśli inne aplikacje Dynamics 365 mają produkty, które nie są obecne w Finanse i Działania, administrator może najpierw wykorzystać **EcoResReleasedProductCreationV2Entity** do importowania tych produktów do Finanse i Działania. Po drugie, należy dopasować dane produktu do Finanse i Działania oraz innych aplikacji Dynamics 365, tak jak opisano powyżej.
 
-Jeśli te same produkty są trzymane (nakładające się/dopasowane) w Finance and Operations oraz w Dataverse i innych aplikacjach Dynamics 365, podczas włączania podwójnego zapisywania produktów z Finance and Operations będą miały miejsce i zduplikowane rekordy pojawią się w Dataverse dla tego samego produktu.
-Aby uniknąć powyższej sytuacji, jeśli inne aplikacje w wersji Dynamics 365 mają produkty nakładające się/odpowiadają na Finance and Operations, administrator, który włącza ten proces, musi zainicjować podwójny odczyt, wybierając w polu **Firma** (na przykład: „USMF”) i **msdyn_productnumber** (na przykład: „1234:Black:S”) przed synchronizacją produktów. Innymi słowy, te dwa pola w produkcie w Dataverse muszą być wypełnione odpowiednią firmą w Finance and Operations, do których musi zostać dopasowany produkt i jego numer produktu. 
-
-Następnie, gdy synchronizacja zostanie włączona i ma miejsce, produkty z Finance and Operations będą synchronizowane z produktami dopasowanymi w Dataverse i innymi aplikacjami Dynamics 365. Dotyczy to zarówno odrębnych produktów, jak i wariantów produktów. 
-
-
-### <a name="migration-of-product-data-from-other-dynamics-365-apps-to-finance-and-operations"></a>Migracja danych produktu z innych aplikacji Dynamics 365 do Finance and Operations
-
-Jeśli inne aplikacje Dynamics 365 mają produkty, które nie są obecne w Finance and Operations, administrator może najpierw wykorzystać **EcoResReleasedProductCreationV2Entity** do importowania tych produktów do Finance and Operations. Po drugie, należy dopasować dane produktu do Finance and Operations oraz innych aplikacji Dynamics 365, tak jak opisano powyżej. 
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

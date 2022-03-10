@@ -1,35 +1,35 @@
 ---
 title: Edytuj informacje osobiste
 description: W tym artykule opisano sposób edycji informacji osobistych w Samoobsłudze pracownika i menedżera.
-author: andreabichsel
-manager: tfehr
-ms.date: 03/19/2020
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HRMParameters, EssWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ed215c4577484269ddf5de20ad93417f8eef38d6
-ms.sourcegitcommit: 45d10d0c25b3ec585323709bb97ba1895b500429
+ms.openlocfilehash: e798646263b9939445f49a3866532cd229c668cd
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "5502995"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071506"
 ---
-# <a name="edit-personal-information"></a>Edytuj informacje osobiste
+# <a name="edit-personal-information"></a>Edytowanie informacji osobistych
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Informacje osobiste można edytować w Dynamics 365 Human Resources w obszarze **roboczym samoobsługi pracownika etatowego**.
+Informacje osobiste można edytować w Dynamics 365 Human Resources, obszar roboczy **samoobsługi pracownika etatowego**.
 
 Informacje osobiste, które można edytować, obejmują:
 
@@ -43,7 +43,7 @@ Informacje osobiste, które można edytować, obejmują:
 >[!NOTE]
 >Możesz nie być w stanie edytować niektórych typów danych osobowych, takich jak biznesowe dane kontaktowe. Aby uzyskać więcej informacji, zobacz temat [Ogranicz edycję danych osobowych](hr-employee-self-service-restrict-editing.md).
 
-Parametry ustawione w globalnej książce adresowej ustalają role, które mogą wyświetlać informacje osobiste użytkownika.
+Parametry ustawione w obszarze **parametrów globalnej książki adresowej** ustalają role, które mogą wyświetlać informacje osobiste użytkownika.
 
 1. W Human Resources wybierz opcję **Samoobsługa pracownika etatowego**.
 
@@ -72,7 +72,7 @@ Parametry ustawione w globalnej książce adresowej ustalają role, które mogą
     - Aby dodać numer identyfikacyjny, wybierz **Nowe**. Wypełnij pola w razie potrzeby i wybierz **Zapisz**.
     - Aby edytować liczbę, wybierz opcję **Edytuj**. Edytuj pola w razie potrzeby i wybierz **Zapisz**.
 
-7. Aby zmienić metody płatności, wybierz kartę **Moje informacje o płatności**. Ta karta jest dostępna tylko w przypadku włączenia metod płatności w formularzu **Parametry Human Resources**. Dział kadr może włączyć **Przekaz bankowy**, **Gotówka**, **Czek**, **Płatność elektroniczna** lub **Inne**. HR może również wyłączyć weryfikację płatności elektronicznych (używaną dla listy płac dla Stanów Zjednoczonych) oraz sprawdzanie poprawności numeru konta bankowego i marszruty.
+7. Aby zmienić metody płatności, wybierz kartę **Moje informacje o płatności**. Ta karta jest dostępna tylko w przypadku włączenia metod płatności na stronie **Parametry Human Resources**. Dział kadr może włączyć **Przekaz bankowy**, **Gotówka**, **Czek**, **Płatność elektroniczna** lub **Inne**. HR może również wyłączyć weryfikację płatności elektronicznych (używaną dla listy płac dla Stanów Zjednoczonych) oraz sprawdzanie poprawności numeru konta bankowego i marszruty.
 
 8. Aby zmienić obraz wyświetlany w Human Resources dla Twojego profilu, wybierz kartę **Obraz** . W zależności od ustawień organizacji obrazy mogą być przekazane do zatwierdzenia.
 

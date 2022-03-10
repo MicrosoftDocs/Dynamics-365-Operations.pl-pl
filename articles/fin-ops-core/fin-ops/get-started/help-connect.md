@@ -1,8 +1,8 @@
 ---
-title: Konfigurowanie środowiska pomocy dla aplikacji Finance and Operations
+title: Skonfiguruj pomoc dla aplikacji Finanse i Działania
 description: Ten temat zawiera informacje dotyczące składników systemu pomocy dla niektórych aplikacji Microsoft Dynamics 365.
 author: margoc
-ms.date: 05/11/2020
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,31 +15,34 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 82bb9a09e6d302b0d453ceb5131da039769b58fb
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: bac06e258a96bb50bb6de7957e3e5ed07e966127
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745696"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071015"
 ---
-# <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Konfigurowanie środowiska pomocy dla aplikacji Finance and Operations
+# <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Skonfiguruj pomoc dla aplikacji Finanse i Działania
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie znajduje się omówienie składników systemu pomocy dla aplikacji Finance and Operations, takich jak Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce i Dynamics 365 Human Resources. W tym temacie omówiono również sposób łączenia tych składników oraz przedstawiono podsumowanie procesu tworzenia pomocy niestandardowej.
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+W tym temacie znajduje się omówienie składników systemu pomocy dla aplikacji Finanse i Działania, takich jak Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce i Dynamics 365 Human Resources. W tym temacie omówiono również sposób łączenia tych składników oraz przedstawiono podsumowanie procesu tworzenia pomocy niestandardowej.
 
 ## <a name="help-architecture"></a>Architektura modułu Pomoc
 
-Aplikacje Finance and Operations oferują omówienia koncepcyjne i inne tematy opublikowane w witrynie [https://docs.microsoft.com/dynamics365](/dynamics365/). Następnie można uzyskać dostęp do tej zawartości za pomocą okienka **Pomoc** w danym produkcie. Poniższa ilustracja pokazuje części Pomocy systemu.
+Aplikacje Finanse i Działania oferują omówienia koncepcyjne i inne tematy opublikowane w witrynie [Dokumentacja Microsoft Dynamics 365](/dynamics365/). Następnie można uzyskać dostęp do tej zawartości za pomocą okienka **Pomoc** w danym produkcie. Poniższa ilustracja pokazuje części Pomocy systemu.
 
-[![Architektura modułu Pomoc](./media/help-architecture.png)](./media/help-architecture.png)
+[![Architektura modułu Pomoc.](./media/help-architecture.png)](./media/help-architecture.png)
 
 System pomocy w danym produkcie pobiera artykuły z witryny docs.microsoft.com i innych połączonych witryn internetowych. Pobierane są również przewodniki zadań przechowywane w Narzędziu do modelowania procesów biznesowych (BPM) w usługach Microsoft Dynamics Lifecycle Services (LCS).
 
 ## <a name="adding-task-guides"></a>Dodawanie przewodników zadań
 
 > [!NOTE]
-> Karta **Przewodniki zadań** nie jest obecnie dostępna w aplikacjach Human Resources i Commerce. <!--We are currently working to enable this functionality in a future release.--> Natomiast przewodniki po zadaniach w sekcji Rozpoczęcie pracy w module Human Resources pozostają dostępne i oferują podstawowe funkcje. Pomoc dotycząca procedur aplikacji Human Resources oraz Commerce jest dostępna w witrynie [https://docs.microsoft.com/dynamics365](/dynamics365/).
+> Karta **Przewodniki zadań** nie jest obecnie dostępna w aplikacjach Human Resources i Commerce. <!--We are currently working to enable this functionality in a future release.--> Natomiast przewodniki po zadaniach w sekcji Rozpoczęcie pracy w module Human Resources pozostają dostępne i oferują podstawowe funkcje. Pomoc dotycząca procedur aplikacji Human Resources oraz Commerce jest dostępna w witrynie [dokumentacja Microsoft Dynamics 365](/dynamics365/).
 
 Na stronie **Parametry systemowe** administratorzy systemu mogą konfigurować dostęp do odpowiednich bibliotek przewodników zadań na potrzeby implementacji.
 
@@ -47,20 +50,20 @@ Na stronie **Parametry systemowe** administratorzy systemu mogą konfigurować d
 > - Aby skonfigurować pomoc, musisz się zalogować przy użyciu konta w tej samej dzierżawie, w której jest wdrożona aplikacja.
 > - Nie można połączyć się z biblioteką LCS z wystąpienia aplikacji działającej na lokalnym wirtualnym dysku twardym (VHD).
 
-[![Formularz Parametry systemu z ustawieniami Pomocy](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
+[![Formularz Parametry systemu z ustawieniami Pomocy.](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
 
 Aby skonfigurować przewodniki zadań dla rozwiązania, wykonaj poniższe kroki na stronie **Parametry systemowe**.
 
 > [!IMPORTANT]
 > Podczas pierwszego otwierania karty **Pomoc** należy utworzyć połączenie z usługą Lifecycle Services. Wybierz link w środku formularza, poczekaj na nawiązanie połączenia, zamknij okno dialogowe i wybierz przycisk **OK**, co spowoduje przejście do formularza **Parametry systemowe**.
 >
-> [![Nawiązywanie połączenia z usługą LCS](./media/connect-to-lcs-crop-1024x365.png "Nawiązywanie połączenia z usługą LCS")](./media/connect-to-lcs-crop.png)
+> [![Nawiązywanie połączenia z usługą LCS](./media/connect-to-lcs-crop-1024x365.png "Nawiązywanie połączenia z usługą LCS.")](./media/connect-to-lcs-crop.png)
 
 1. Wybierz projekt Lifecycle Services, z którym chcesz się połączyć.
 2. Wybierz biblioteki BPM (w ramach wybranego projektu), z których będą pobierane nagrania zadań.
 3. Ustaw kolejność wyświetlania bibliotek BPM. Kolejność wyświetlania to porządek, w jakim nagrania zadań z bibliotek będą pojawiać się w okienku **Pomoc**.
 
-Po wykonaniu tych kroków można utworzyć okienko **Pomoc** i wybrać kartę **Przewodniki zadań**. Zobaczysz przewodniki zadań mające zastosowanie do strony aktualnie wyświetlonej w aplikacjach Finance and Operations. Jeśli nie zostaną znalezione żadne przewodniki po zadaniach, możesz wprowadzić słowa kluczowe, aby doprecyzować wyszukiwanie.
+Po wykonaniu tych kroków można utworzyć okienko **Pomoc** i kliknąć kartę **Przewodniki zadań**. Zobaczysz przewodniki zadań mające zastosowanie do strony aktualnie wyświetlonej w aplikacjach Finanse i Działania. Jeśli nie zostaną znalezione żadne przewodniki po zadaniach, możesz wprowadzić słowa kluczowe, aby doprecyzować wyszukiwanie.
 
 ### <a name="showing-translated-task-guides"></a>Wyświetlanie przetłumaczonych przewodników po zadaniach
 
@@ -84,7 +87,7 @@ Jeśli jesteś partnerem i podwyższasz status biblioteki do biblioteki firmowej
 
 ### <a name="connect-a-custom-help-site"></a>Łączenie z niestandardową witryną pomocy
 
-Aplikacje Finance and Operations są rzadko używane w gotowej postaci. Zamiast tego rozwiązanie jest dostosowywane i rozszerzane w celu dopasowania do potrzeb organizacji. Można również dostosowywać i rozszerzać środowisko pomocy. Można na przykład dodać niestandardową pomoc do okienka **Pomoc** w produkcie.
+Aplikacje Finanse i Działania są rzadko używane w gotowej postaci. Zamiast tego rozwiązanie jest dostosowywane i rozszerzane w celu dopasowania do potrzeb organizacji. Można również dostosowywać i rozszerzać środowisko pomocy. Można na przykład dodać niestandardową pomoc do okienka **Pomoc** w produkcie.
 
 Firma Microsoft udostępniła zestaw narzędzi ułatwiających wdrażanie i łączenie pomocy niestandardowej z okienkiem **Pomoc**. Aby uzyskać informacje o tym, jak można skonfigurować niestandardowe rozwiązanie pomocy połączone z okienkiem **Pomoc**, zapoznaj się z [omówieniem pomocy niestandardowej](../../dev-itpro/help/custom-help-overview.md).
 

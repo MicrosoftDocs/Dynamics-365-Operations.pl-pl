@@ -1,33 +1,26 @@
 ---
 title: Przełączanie się między projektami dostawcy
-description: W tym temacie opisano sposób przełączania integracji danych dostawcy między aplikacjami Finance and Operations i Dataverse.
+description: W tym temacie opisano sposób przełączania integracji danych dostawcy pomiędzy aplikacjami Finanse i Działania i Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 09/20/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
-ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: 5a18fed2eac4c120dca20a1d7797d047639275b9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.search.validFrom: 2020-01-06
+ms.openlocfilehash: 80de21b5e46e4f274626fa311f16e81312a2f5ab
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750601"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062757"
 ---
 # <a name="switch-between-vendor-designs"></a>Przełączanie się między projektami dostawcy
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 
 
@@ -48,14 +41,14 @@ Aby stworzyć nowe procey przepływu pracy przy użyciu szablonów procesu przep
 
 1. Utwórz nowy proces przepływu pracy dla tabeli **Dostawcy** i wybierz szablonu procesu przepływu pracy **Tworzenie dostawców w tabeli kont**. Następnie wybierz opcję **OK**. Ten przepływ pracy obsługuje scenariusz tworzenia dostawcy dla tabeli **konta**.
 
-    ![Proces przepływu pracy Tworzenie dostawców w tabeli kont](media/create_process.png)
+    ![Proces przepływu pracy Tworzenie dostawców w tabeli kont.](media/create_process.png)
 
 2. Utwórz nowy proces przepływu pracy dla tabeli **Dostawcy** i wybierz szablonu procesu przepływu pracy **Aktualizowanie dostawców w tabeli kont**. Następnie wybierz opcję **OK**. Ten przepływ pracy obsługuje scenariusz aktualizacji dostawcy dla tabeli **konta**.
 3. Utwórz nowy proces przepływu pracy dla tabeli **Konto** i wybierz szablonu procesu przepływu pracy **Tworzenie dostawców w tabeli dostawców**.
 4. Utwórz nowy proces przepływu pracy dla tabeli **Konto** i wybierz szablonu procesu przepływu pracy **Aktualizowanie dostawców w tabeli dostawców**.
 5. Przepływy pracy można konfigurować jako przepływy pracy w czasie rzeczywistym lub w tle, zgodnie z wymaganiami użytkownika. Aby skonfigurować przepływ pracy jako przepływ pracy w tle, wybierz opcję **Konwertuj na przepływ pracy w tle**.
 
-    ![Przycisk Konwertuj na przepływ pracy w tle](media/background_workflow.png)
+    ![Przycisk Konwertuj na przepływ pracy w tle.](media/background_workflow.png)
 
 6. Umożliwia aktywowanie przepływów pracy utworzonych dla tabel **Konto** i **Dostawca** w celu rozpoczęcia używania tabeli **Konta** do przechowywania informacji o dostawcy dla typu **Organizacja**.
 

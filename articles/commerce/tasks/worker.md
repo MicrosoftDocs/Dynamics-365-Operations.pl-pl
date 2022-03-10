@@ -2,11 +2,9 @@
 title: Konfigurowanie pracownika
 description: Ta procedura ilustruje sposób konfigurowania pracownika jako przedstawiciela handlowego, który jest uprawniony do prowizji od sprzedaży w punkcie sprzedaży.
 author: jblucher
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CommissionSalesGroup, CommissionSalesMember, DirPartyLookup, HcmWorker
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 73c200f7f6ff0aa5672e50c539bfaa5e30213185
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a21d5f2d5963db2a92b653e8e520f96f11ba1bf6acbb238812211154d5b39fc0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5003610"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6726390"
 ---
 # <a name="configure-a-worker"></a>Konfigurowanie pracownika
 
@@ -56,3 +54,6 @@ Ta procedura ilustruje sposób konfigurowania pracownika jako przedstawiciela ha
 6. W polu Grupa domyślna wprowadź lub wybierz wartość.
 7. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

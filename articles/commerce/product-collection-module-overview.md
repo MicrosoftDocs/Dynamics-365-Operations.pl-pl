@@ -2,31 +2,27 @@
 title: Moduły kolekcji produktów
 description: Ten temat stanowi przegląd modułów kolekcji produktów w rozwiązaniu Microsoft Dynamics 365 Commerce.
 author: v-chgri
-manager: annbe
 ms.date: 01/28/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4bae9ca722c2b6e776abb0e1da9694edc8afadf8
-ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
+ms.openlocfilehash: 7bc76aa8d5728005711ee8f9758532a989e3568c
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "5097110"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984551"
 ---
 # <a name="product-collection-modules"></a>Moduły kolekcji produktów
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Ten temat stanowi przegląd modułów kolekcji produktów w rozwiązaniu Microsoft Dynamics 365 Commerce.
 
@@ -43,7 +39,7 @@ Moduły kolekcji produktów reprezentują fizyczne produkty i usługi w witrynie
 
 Na poniższej ilustracji przedstawiono różne typy kolekcji produktów, które są używane w witrynie e-Commerce.
 
-![Przykład różnych typów kolekcji produktów w witrynie e-Commerce](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
+![Przykład różnych typów kolekcji produktów w witrynie e-Commerce.](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
 
 > [!NOTE]
 > Zawsze używaj modułów kolekcji produktów, aby wyświetlić grupę produktów podobnego typu.
@@ -112,3 +108,6 @@ W poniższej tabeli przedstawiono typy list, które są dostępne do wybrania w 
 [Omówienie rekomendacji produktów](product-recommendations.md)
 
 [Moduł szybkiego podglądu](quick-view-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

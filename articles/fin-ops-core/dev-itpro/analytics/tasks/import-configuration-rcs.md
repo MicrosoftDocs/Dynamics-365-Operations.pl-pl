@@ -2,11 +2,9 @@
 title: (Raportowanie elektroniczne) Importowanie konfiguracji z RCS
 description: Ten temat zawiera informacje o sposobach importowania przez użytkownika nowej wersji konfiguracji ER ze RCS.
 author: NickSelin
-manager: AnnBe
 ms.date: 07/03/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b591df3d384e8dc59646ebb9d0205001db040a55
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f5674c418baaac7817c27780e2f0137ce6e7137eb3f1665f768ad843cc5b3114
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684194"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720791"
 ---
 # <a name="er-import-configurations-from-rcs"></a>(Raportowanie elektroniczne) Importowanie konfiguracji z RCS
 
@@ -55,3 +53,6 @@ W poniższych krokach wyjaśniono, jak użytkownik w roli Administratora systemu
 5. Kliknij przycisk **Zamknij**. 
 6. Wybierz żądaną wersję konfiguracji modułu ER i kliknij przycisk **Importuj**, aby przenieść ją do bieżącego wystąpienia.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

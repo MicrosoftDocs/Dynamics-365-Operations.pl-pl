@@ -2,11 +2,9 @@
 title: Moduł udostępnienia w mediach społecznościowych
 description: W tym temacie opisano moduły udostępniania w plikach społecznościowych i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 0e7f30686894f9cf92257e99d95cc8b00f76f899
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 2e997cad97d45949c8f542764126a08fb6daa73551079eb2d400d7edfb98ca2b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5234324"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730954"
 ---
 # <a name="social-share-module"></a>Moduł udostępniania społeczności
 
@@ -38,7 +36,7 @@ Każda platforma mediów społecznych może śledzić pliki cookie, więc ten mo
 
 Na poniższej ilustracji przedstawiono przykład modułu udostępniania w mediach społecznościowych użytego na stronie Szczegółów produktu.
 
-![Przykład modułu udostępniania w mediach społecznościowych](./media/ecommerce-socialshare.png)
+![Przykład modułu udostępniania w mediach społecznościowych.](./media/ecommerce-socialshare.png)
 
 ## <a name="social-share-module-properties"></a>Ustawienia modułu udostępnienia w mediach społecznościowych
 

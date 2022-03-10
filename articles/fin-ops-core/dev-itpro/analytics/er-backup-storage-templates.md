@@ -2,7 +2,6 @@
 title: Magazyn kopii zapasowej szablonów ER
 description: W tym temacie objaśniono sposób korzystania z magazynu kopii zapasowej modułu raportowanie elektroniczne (ER) w celu odzyskania szablonów.
 author: NickSelin
-manager: AnnBe
 ms.date: 04/29/2020
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d1bf2f13833b4441812b1c5326f897415c752091
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: b5de8b9dc06cf10bda1932d5f4ee4484cdae591564fdcd5dd28c5036b82abc66
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5565632"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767884"
 ---
 # <a name="backup-storage-of-er-templates"></a>Magazyn kopii zapasowej szablonów ER
 
@@ -66,19 +65,19 @@ Aby ustawić parametr **automatycznego uruchomienia procedury przywracania uszko
 > [!NOTE]
 > Ten parametr jest definiowany jako użytkownik aplikacji i jest rejestrowana właściwa firma.
 
-![Strona konfiguracji raportowania elektronicznego](./media/GER-BackupTemplates-1.png)
+![Strona konfiguracji raportowania elektronicznego.](./media/GER-BackupTemplates-1.png)
 
 Na poniższej ilustracji pokazano przykład komunikatu wyświetlanego po **automatycznym uruchomieniu procedury przywracania uszkodzonych szablonów w parametrze wsadowym** jest ustawiony jako **włączony**.
 
-![Strona arkusza płatności dostawcy](./media/GER-BackupTemplates-2.png)
+![Strona arkusza płatności dostawcy.](./media/GER-BackupTemplates-2.png)
 
 Na poniższej ilustracji przedstawiono proces wsadowy **Przywracanie zepsutych szablonów z wewnętrznej kopii zapasowej bazy danych** na stronie **zadanie wsadowe**.
 
-![Strona zadania wsadowe](./media/GER-BackupTemplates-3.png)
+![Strona zadania wsadowe.](./media/GER-BackupTemplates-3.png)
 
 Dziennik wykonania zakończonego procesu wsadowego **Przywracanie zepsutych szablonów z wewnętrznej kopii zapasowej bazy danych** zawiera informacje o szablonach przywróconych z lokalizacji magazynu kopii zapasowej w lokalizacji magazynu głównego.
 
-![Strona historii zadań wsadowych](./media/GER-BackupTemplates-4.png)
+![Strona historii zadań wsadowych.](./media/GER-BackupTemplates-4.png)
 
 Domyślnie jest włączany proces automatycznego tworzenia kopii zapasowych szablonów znajdujących się w konfiguracjach formatu ER. Aby zatrzymać tworzenie kopii zapasowych szablonów, należy skonfigurować opcję **Zatrzymaj tworzenie kopii zapasowych szablonu** na **tak** na karcie **Załączniki** na stronie **Parametry elektronicznego reportowania**. Tę stronę można otworzyć z obszaru roboczego **Raportowanie elektroniczne**.
 
@@ -86,7 +85,7 @@ Jeśli dla opcji **Zatrzymaj tworzenie kopii zapasowych szablonów** ustawiono w
 
 Jeśli środowisko zostało uaktualnione do aplikacji Finance and Operations w wersji 10.0.5 (październik 2019 r.), a użytkownik chce przeprowadzić migrację do nowego środowiska zawierającego konfiguracje formatu ER, które można uruchomić, należy wybrać opcję **Wypełnij w magazynie kopii zapasowych** na stronie **Parametry raportowania elektronicznego** przed migracją. Kliknięcie tego przycisku powoduje uruchomienie procesu tworzenia kopii zapasowych wszystkich dostępnych szablonów, dzięki czemu można je przechowywać w lokalizacji magazynu kopii zapasowych ER dla szablonów.
 
-![Strona parametrów raportowania elektronicznego](./media/GER-BackupTemplates-5.png)
+![Strona parametrów raportowania elektronicznego.](./media/GER-BackupTemplates-5.png)
 
 ## <a name="manual-recovery"></a>Odzyskiwanie ręczne
 

@@ -2,11 +2,9 @@
 title: Praca z plikami zastępowania CSS
 description: W tym temacie opisano, dlaczego, kiedy i jak używać plików zastępowania kaskadowych arkuszy stylów (CSS) w aplikacji Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-manager: annbe
 ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,21 +14,18 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 41fb0be51f7af25faba1b860319aea84ae7a8b56
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 6788481936a54bff32096dba1d0424fc52c669e4
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5207806"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964611"
 ---
 # <a name="work-with-css-override-files"></a>Praca z plikami zastępowania CSS
-
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano, dlaczego, kiedy i jak używać plików zastępowania kaskadowych arkuszy stylów (CSS) w aplikacji Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 Stałe style witryny zazwyczaj powinny być obsługiwane za pośrednictwem motywu witryny. Motywy udostępniają podstawowe ustawienia stylów CSS i ustawienia stylów dla modułów na dowolnej stronie witryny. Motywy są tworzone przy użyciu zestawu Dynamics 365 Commerce SDK (Software Development Kit) w trybie online i są wdrażane w witrynach internetowych za pośrednictwem usług Microsoft Dynamics Lifecycle Services (LCS). Możliwości debugowania modułu i konfiguracje interfejsu modułu w zestawie SDK pomagają deweloperom tworzyć dostosowywalne i spójne pakiety projektów witryny. Gdy te pakiety projektów są wdrażane w witrynie, autorzy witryn mogą skupić się na tworzeniu, edytowaniu i publikowaniu zawartości, a nie na programowaniu witryny.
 
@@ -105,8 +100,6 @@ Aby dezaktywować plik zastępowania CSS w witrynie, wykonaj następujące kroki
 [Praca z predefiniowanymi ustawieniami stylów](style-presets.md)
 
 [Dodawanie ikony favicon](add-favicon.md)
-
-[Dodawanie wiadomości powitalnej](add-welcome-message.md)
 
 [Dodawanie powiadomienia o prawach autorskich](add-copyright-notice.md)
 

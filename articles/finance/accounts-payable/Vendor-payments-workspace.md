@@ -2,27 +2,24 @@
 title: Obszar roboczy płatności dla dostawców
 description: Ten temat zawiera informacje o komórkowym obszarze roboczym Płatności dla dostawców. Obszar roboczy Płatności dla dostawców zawiera informacje związane z przetwarzaniem płatności dla dostawców.
 author: abruer
-manager: AnnBe
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendPaymentWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 39a9ba54ba26db5904c2cd519be9f83bbc68c037
-ms.sourcegitcommit: 30c541426cf2037b768e3556e1b170a64991f64a
+ms.openlocfilehash: 084a18d1af789c7ebb89d9a598754a9478a48b83fb949241c9fc34fefa7c152b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "4446971"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6749277"
 ---
 # <a name="vendor-payments-workspace"></a>Obszar roboczy płatności dla dostawców
 
@@ -78,3 +75,6 @@ W poniższej tabeli pokazano wizualizacje dostępne na każdej stronie raportu.
 |    Saldo dostawcy do salda odbiorcy     |                                                                                                                   <ul><li>Saldo dostawcy do salda odbiorcy</li><li>Saldo dostawcy do salda odbiorcy wg firm</li><li>Szczegóły salda dostawcy do salda odbiorcy</li></ul>                                                                                                                    |
 |    Faktury z wstrzymaniem płatności     |                                                                                         <ul><li>Faktury z wstrzymaniem płatności</li><li>Szczegóły faktur z wstrzymaniem płatności</li><li>Faktury z wstrzymaniem płatności wg firm</li><li>Faktury z wstrzymaniem płatności wg grup dostawców</li></ul>                                                                                          |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

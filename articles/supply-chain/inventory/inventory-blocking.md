@@ -1,12 +1,10 @@
 ---
 title: Blokowanie zapasów
 description: Ten artykuł zawiera omówienie mechanizmu blokowania zapasów, który jest częścią procesu kontroli jakości w Supply Chain Management. Używając blokowania, można zapobiec przetwarzaniu i zużywaniu zapasów.
-author: perlynne
-manager: tfehr
+author: yufeihuang
 ms.date: 03/02/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventBlocking, InventQualityOrderTable
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 2094
 ms.assetid: 1968e32f-eff9-4c17-8f7f-a870f0c38fbc
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1d4b006f37904c0ae20691aaa98c75f1d5833b7
-ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
+ms.openlocfilehash: 606bc23f552b57d0f4e3fdad28d1144cdf43e5d5
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5487904"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103545"
 ---
 # <a name="inventory-blocking"></a>Blokowanie zapasów
 
@@ -98,13 +96,11 @@ Jeśli opcja **Zarezerwuj zamówione produkty** są wyłączone, nie można zare
 
 Należy zwrócić uwagę na różnicę między stanem transakcji a wymiarami między tymi dwoma sprawami. Z tego powodu zaleca się włączenie opcji **Zarezerwuj zamówione produkty**.
 
-<!-- KFM: (Enable this section when the feature leaves private preview)
+### <a name="disable-expected-receipts-from-quality-orders-that-sample-blocked-inventory-feature"></a>Wyłącz oczekiwane wpływy z zamówień jakościowych, które próbują funkcję zablokowanych zapasów
 
-### Disable expected receipts from quality orders that sample blocked inventory feature
+Aby uprościć transakcje magazynowe w przypadku zamówień jakościowych, które próbują zapasy zablokowane w wyniku stanu zapasów, system udostępnia funkcję, która wyłącza oczekiwane wpływy z takich zamówień jakościowych. Ponieważ oczekiwane przyjęcie jest natychmiast zablokowane przez blokowanie stanu zapasów, zmiana ta nie zmniejsza dostępnych zapasów.
 
-To simplify the inventory transactions in the case of quality orders that sample inventory blocked as a consequence of inventory status, the system provides a feature that disables expected receipts from such quality orders. As the expected receipt is in any case immediately blocked by inventory status blocking, there is no reduction of on-hand inventory because of this change.
-
--->
+Domyślnie ta opcja jest wyłączona. Administratorzy mogą je włączać lub wyłączać, wyszukując funkcję *Wyłącz oczekiwane przychody ze zleceń kontroli jakości*, które przykładowe funkcje magazynu zablokowały w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

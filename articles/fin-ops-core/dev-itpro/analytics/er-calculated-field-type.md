@@ -2,7 +2,6 @@
 title: Obsługuj sparametryzowane wywołania źródeł danych ER typu pola obliczeniowego
 description: Ten temat zawiera informacje dotyczące używania typu pola obliczeniowego dla źródeł danych ER.
 author: NickSelin
-manager: AnnBe
 ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1c2c13cd3f165826e0d5b5ac901ffa61895301e7
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: fb09e1ccd4b2be08e43784330adf4092ca25f5a6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5569208"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349167"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Obsługuj sparametryzowane wywołania źródeł danych ER typu pola obliczeniowego
 
@@ -102,21 +101,21 @@ W tej procedurze utworzysz wymagane konfiguracje ER dla przykładowej firmy Litw
     - Zaprezentuj następujące poziomy opodatkowania w sprawozdaniu podatkowym: regularnym, obniżonym i brak.
     - Umożliwia prezentowanie wielu szczegółów na poziomie opodatkowania, mających różną liczbę szczegółów na każdym poziomie.
 
-    ![Strona projektanta formatu](media/er-calculated-field-type-02.png)
+    ![Strona projektanta formatu.](media/er-calculated-field-type-02.png)
 
 4. Wybierz **Mapowanie**.
 5. Rozwiń **Model**, **Dane,** i **podsumowanie**. 
 
     Obliczone pole **Model.Data.Summary.Level** zawiera wyrażenie zwracające kod poziomu opodatkowania (**zwykły**, **ograniczony**, **brak** lub **inny**) jako wartość tekstowa dla dowolnego kodu podatku, który może zostać pobrany z **Model.Data.Summary** źródła danych w czasie wykonywania.
 
-    ![Strona projektant formatów pokazująca szczegóły modelu modelu danych, aby poznać wywołania parametryczne](media/er-calculated-field-type-03.png)
+    ![Strona projektant formatów pokazująca szczegóły modelu modelu danych, aby poznać wywołania parametryczne.](media/er-calculated-field-type-03.png)
 
 6. Rozwiń **Model**.**Dane2**.
 7. Rozwiń **Model**.**Dane2.Summary2**.
    
     **Model**.**Data2.Summary2** źródło danych jest skonfigurowane do grupowania **Model.Data.Summary** transakcji źródła danych sumarycznych według poziomu opodatkowania (zwrócone przez pole obliczeniowe **Model.Data.Summary.Level**) i oblicza agregacje.
 
-    ![Strona Projektant formatów pokazująca szczegóły źródła danych Model.Data2.Summary2](media/er-calculated-field-type-04.png)
+    ![Strona Projektant formatów pokazująca szczegóły źródła danych Model.Data2.Summary2.](media/er-calculated-field-type-04.png)
 
 8. Umożliwia przejrzenie obliczonych pól **Model**.**Data2.Level1**, **Model**.**Data2.Level2**, and **Model**.**Data2.Level3.** Te pola obliczeniowe służą do filtrowania **Model**.**Dane2.Summary2** rekordów listy i zwracają tylko rekordy reprezentujące określony poziom opodatkowania.
 9. Zamknij stronę **Projektowanie formuły**.
@@ -156,7 +155,7 @@ Można poprawić podany format, dodając jedno pole obliczeniowe w celu odfiltro
 
     Maksymalna liczba parametrów, które można określić dla pojedynczego pola obliczeniowego wynosi 8.
 
-    ![Lista źródeł danych parametrów](media/er-calculated-field-type-05.png)
+    ![Lista źródeł danych parametrów.](media/er-calculated-field-type-05.png)
 
 5. Kliknij przycisk **OK**.
 
@@ -166,7 +165,7 @@ Dodając ten parametr, należy określić warunek, który musi mieć miejsce w c
 
    Skonfigurowany parametr jest dostępny na liście źródeł danych dla tego pola obliczeniowego. Ten parametr można dodać do skonfigurowanego wyrażenia, wybierając opcję **Dodaj źródło danych**.
 
-   ![Pola źródła danych](media/er-calculated-field-type-06.png)
+   ![Pola źródła danych.](media/er-calculated-field-type-06.png)
 
 ### <a name="define-an-expression-for-adding-a-calculated-field"></a>Definiowanie wyrażenia służącego do dodawania pola obliczeniowego
 
@@ -182,7 +181,7 @@ Dodając ten parametr, należy określić warunek, który musi mieć miejsce w c
 
 5. Wybierz opcję **Zapisz**.
 
-    ![Informacje dotyczące pola źródła danych](media/er-calculated-field-type-07.png)
+    ![Informacje dotyczące pola źródła danych.](media/er-calculated-field-type-07.png)
 
 6. Zamknij stronę **Projektowanie formuły**.
 
@@ -192,7 +191,7 @@ Dodając ten parametr, należy określić warunek, który musi mieć miejsce w c
 
 Na stronie **Projektant formatu** dla skonfigurowanych **poziomów** pól obliczeniowych z parametrami jest wymagany argument typu **ciąg**.
 
-![Rozszerzona lista poziomów pól obliczeniowych](media/er-calculated-field-type-08.png)
+![Rozszerzona lista poziomów pól obliczeniowych.](media/er-calculated-field-type-08.png)
 
 ### <a name="use-the-configured-calculated-field-for-binding-format-elements"></a>Dla elementów formatu powiązania należy zastosować skonfigurowane pole obliczeniowe
 
@@ -221,7 +220,7 @@ Cykliczne wywołania wszelkich sparametryzowanych pól obliczeniowych nie są ob
 
 Można wybrać opcję **Edytuj formułę** i zmienić argument zastosowany przez domyślny dla sparametryzowanego pola obliczeniowego w wybranym powiązaniu. Brak tego argumentu może spowodować błędy w czasie wykonywania — użytkownicy są informowani o takiej sytuacji w przypadku sprawdzania poprawności bieżącego formatu.
 
-![Powiadomienie o sprawdzeniu poprawności](media/er-calculated-field-type-10.png)
+![Powiadomienie o sprawdzeniu poprawności.](media/er-calculated-field-type-10.png)
 
 ## <a name="configure-a-parameterized-calculated-field-to-return-a-record"></a>Skonfiguruj sparametryzowane pole obliczeniowe, które zwraca rekord
 Jeśli sparametryzowane pole obliczeniowe zwraca rekord, należy obsługiwać powiązanie poszczególnych pól tego rekordu, aby formatować elementy. W takich przypadkach nie zostanie utworzone powiązanie nadrzędne zawierające wartość argumentu wywołującego sparametryzowane pole obliczeniowe — ta wartość musi być zdefiniowana w powiązaniu pola z pojedynczym rekordem.
@@ -273,7 +272,7 @@ Jeśli sparametryzowane pole obliczeniowe zwraca rekord, należy obsługiwać po
 8. Wybierz opcję **Edytuj formułę**.
 9. Zmień wyrażenie na **Model.Data2.LevelRecord("None").aggregated.Base**.
 
-![Aktualizowane wyrażenie](media/er-calculated-field-type-11.png)
+![Aktualizowane wyrażenie.](media/er-calculated-field-type-11.png)
 
 ## <a name="remove-calculated-fields-that-are-not-used"></a>Usuń pola obliczeniowe, które nie są używane
 

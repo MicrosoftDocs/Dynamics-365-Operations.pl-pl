@@ -2,11 +2,9 @@
 title: Układy ekranu danych demonstracyjnych w aplikacjach Modern POS (MPOS) i Cloud POS
 description: Ten temat zawiera informacje o układach ekranu zawartych w zestawie danych demonstracyjnych dla doświadczeń punktu sprzedaży w rozwiązaniu Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
 ms.date: 10/05/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTillLayout
 audience: Application user
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 5e75210e77d1187f482d716f795ec0155553cb3f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: c141325580d698cccc7d186496a0902913961d47764b93fa73c64c3eddf6e791
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5213633"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6761669"
 ---
 # <a name="demo-data-screen-layouts-in-modern-pos-mpos-and-cloud-pos"></a>Układy ekranu danych demonstracyjnych w aplikacjach Modern POS (MPOS) i Cloud POS
 
@@ -35,13 +33,13 @@ Ten temat zawiera informacje o układach ekranu zawartych w zestawie danych demo
 
 Przykładowe układy ekranu zawarte w danych demonstracyjnych Commerce obejmują zawartość zoptymalizowaną dla różnych segmentów sprzedaży detalicznej, ról pracowników sklepu i urządzeń. Jeden układ może zawierać kilka rozmiarów układu i kombinacji siatek przycisków, aby zapewnić możliwość obsługi, gdy pracownicy sklepu zmienią urządzenia i stacje. W tym temacie omówiono różnice między tymi układami, operacja, jakie udostępniają i ogólne zapewniane doświadczenia.
 
-![Układy danych demonstracyjnych działające między urządzeniami](../commerce/media/demo-screen-layouts-fig-1-1.png)
+![Układy danych demonstracyjnych działające między urządzeniami.](../commerce/media/demo-screen-layouts-fig-1-1.png)
 
 ## <a name="anatomy-of-a-screen-layout-id"></a>Struktura identyfikatora układu ekranu
 
 Aby znaleźć układy ekranu w rozwiązaniu Retail, przejdź do **Retail i Commerce** \> **Ustawienia kanału** \> **Ustawienia punktu sprzedaży** \> **Punkt sprzedaży** \> **Układy ekranu**.
 
-![Strona układu ekranu](../commerce/media/demo-screen-layouts-fig-2-1.png)
+![Strona układu ekranu.](../commerce/media/demo-screen-layouts-fig-2-1.png)
 
 Identyfikatory układu ekranu mogą mieć maksymalnie 10 znaków. Identyfikator to ciąg składający się z trzech informacji w następującej kolejności:
 
@@ -54,8 +52,8 @@ Identyfikatory układu ekranu mogą mieć maksymalnie 10 znaków. Identyfikator 
 | List | Firma         |
 |--------|-----------------|
 | A      | Adventure Works |
-| F      | Fabrikam        |
-| F      | Contoso         |
+| P      | Fabrikam        |
+| C      | Contoso         |
 
 ### <a name="layout-version"></a>Wersja układu
 
@@ -81,7 +79,7 @@ F4MGR
 
 Poniższa ilustracja przedstawia przykładowy ekran powitalny kierownika sklepu firmy Fabrikam.
 
-![Ekran powitalny dla kierownika sklepu firmy Fabrikam](../commerce/media/demo-screen-layouts-fig-2-2.png)
+![Ekran powitalny dla kierownika sklepu firmy Fabrikam.](../commerce/media/demo-screen-layouts-fig-2-2.png)
 
 ## <a name="layout-sizes"></a>Rozmiary układów
 
@@ -110,7 +108,7 @@ Poniższa tabela przedstawia rozmiary układu dostępne dla typowych rozdzielczo
 > [!TIP]
 > Punkt sprzedaży automatycznie wybiera rozmiary układu na podstawie najbliższego rozmiaru dostępnego dla rozdzielczości ekranu okna bieżącej aplikacji. Aby znaleźć aktualnie używany identyfikator układu ekranu i rozdzielczość układu, w module Modern POS (MPOS) lub Retail Cloud POS (CPOS) otwórz stronę **Ustawienia** i sprawdź informacje w sekcji **Informacje o sesji**. Możesz także zobaczyć rzeczywistą rozdzielczość okna dla bieżącej aplikacji lub ramki przeglądarki. Po uzyskaniu tych informacji można znaleźć źródło zawartości układu przechodząc do okna **Ustawienia kanału** \> **Ustawienia punktu sprzedaży** \> **Punkt sprzedaży** \> **Układy ekranu**.
 
-![Układy ekranu i rozdzielczości/rozmiary układu w rozwiązaniu Commerce i punkcie sprzedaży](../commerce/media/demo-screen-layouts-fig-3-1.png)
+![Układy ekranu i rozdzielczości/rozmiary układu w rozwiązaniu Commerce i punkcie sprzedaży.](../commerce/media/demo-screen-layouts-fig-3-1.png)
 
 ## <a name="companies-and-brands"></a>Firmy i marki
 
@@ -125,25 +123,25 @@ Każda firma fikcyjna odnosi się do innego segmentu sprzedaży detalicznej i za
 | Contoso         | Boston   | Elektronika    | Czerwony    | Ciemny  |
 
 > [!NOTE]
-> Adventure Works i Fabrikam to dwie marki flagowe. Firma Contoso jest dostępna, ale nie dostarczono wszystkich układów.
+> Adventure Works i Fabrikam to dwie marki flagowe. Contoso jest dostępna, ale nie dostarczono wszystkich układów.
 
 Poniższe ilustracje przedstawiają przykłady strony powitalnej i strony transakcji dla trzech fikcyjnych firm.
 
 ### <a name="adventure-works"></a>Adventure Works
 
-![Stron powitalna danych demonstracyjnych dla firmy Adventure Works](../commerce/media/demo-screen-layouts-fig-4-1a.png)
+![Stron powitalna danych demonstracyjnych dla firmy Adventure Works.](../commerce/media/demo-screen-layouts-fig-4-1a.png)
 
-![Stron transakcji danych demonstracyjnych dla firmy Adventure Works](../commerce/media/demo-screen-layouts-fig-4-1b.png)
+![Stron transakcji danych demonstracyjnych dla firmy Adventure Works.](../commerce/media/demo-screen-layouts-fig-4-1b.png)
 
 ### <a name="fabrikam"></a>Fabrikam
 
-![Stron powitalna danych demonstracyjnych dla firmy Fabrikam](../commerce/media/demo-screen-layouts-fig-4-2a.png)
+![Stron powitalna danych demonstracyjnych dla firmy Fabrikam.](../commerce/media/demo-screen-layouts-fig-4-2a.png)
 
-![Stron transakcji danych demonstracyjnych dla firmy Fabrikam](../commerce/media/demo-screen-layouts-fig-4-2b.png)
+![Stron transakcji danych demonstracyjnych dla firmy Fabrikam.](../commerce/media/demo-screen-layouts-fig-4-2b.png)
 
 ### <a name="contoso"></a>Contoso
 
-![Układy danych demonstracyjnych dla firmy Contoso](../commerce/media/demo-screen-layouts-fig-4-3.png)
+![Układy danych demonstracyjnych dla firmy Contoso.](../commerce/media/demo-screen-layouts-fig-4-3.png)
 
 ## <a name="user-sign-in-matrix"></a>Macierz logowania użytkowników
 
@@ -170,7 +168,7 @@ Użytkownikom udostępniono różne układy ekranu. Korzystając z poniższej ta
 
 <!-- The screen layouts, button grids, and visual profiles were created using images and icons that can be found in **Retail and Commerce \> Channel setup \> POS setup \> POS \> Images**. -->
 
-<!-- ![Images in Dynamics 365 Commerce](../commerce/media/demo-screen-layouts-fig-5-1.png) -->
+<!-- ![Images in Dynamics 365 Commerce.](../commerce/media/demo-screen-layouts-fig-5-1.png) -->
 
 <!-- Use the [POS Icon and Image Mapping](../commerce/media/POS_Icon_and_Image_Mapping.xlsx) reference spreadsheet to locate operation icons, reference photos, swap logos, or provide new images of your own that can be referenced in custom designs. -->
 

@@ -1,29 +1,26 @@
 ---
 title: Stany cyklu życia zlecenia pracy
 description: W tym temacie opisano cykle stanu zlecenia pracy w module Zarządzanie składnikami majątku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderLifecycleState, EntAssetWorkOrderLifecycleModel
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b6e96f2f6b324ffe44e8684d9bd2a42fb52d0aed
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fa0980438ec629ef7ae6bf711d5ae87efca131e6ab86dfcaa1f17d953725147a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435278"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6768673"
 ---
 # <a name="work-order-lifecycle-states"></a>Stany cyklu życia zlecenia pracy
 
@@ -38,11 +35,11 @@ Stany cyklu realizacji zlecenia pracy wymagane dla zleceń pracy muszą być do�
 
 Poniższa tabela opisuje opcje w sekcjach **Zlecenie pracy** i **Harmonogram** na karcie skróconej **Ogólne** na stronie **Stan cyklu życia zlecenia pracy** (**Zarządzanie składnikami majątku** \> **Konfiguracja** \> **Zlecenia pracy** \> **Stany cyklu życia**).
 
-![Strona stanów cyklu życia zlecenia pracy](media/09-setup-for-work-orders.png)
+![Strona stanów cyklu życia zlecenia pracy.](media/09-setup-for-work-orders.png)
 
-| Nazwa opcji                   | Opis |
+| Nazwa opcji                   | opis |
 |-------------------------------|-------------|
-| Aktywna                        | Ustawienie tej opcji na **Tak** powoduje, że zlecenie pracy powinno być aktywne, gdy jest ono w stanie cyklu życia. |
+| Aktywni                        | Ustawienie tej opcji na **Tak** powoduje, że zlecenie pracy powinno być aktywne, gdy jest ono w stanie cyklu życia. |
 | Dodaj wiersz                      | Tę opcję należy ustawiać **Tak**, jeśli zadanie zlecenia pracy można dodać do zlecenia pracy w tym stanie cyklu życia. |
 | Usuwanie                        | Ustawienie tej opcji na **Tak** jeśli zlecenie pracy może być usunięte, gdy jest ono w stanie cyklu życia. |
 | Usuń wiersz                   | Tę opcję należy ustawiać **Tak**, jeśli zadanie zlecenia pracy można usunąć ze zlecenia pracy w tym stanie cyklu życia. |
@@ -96,7 +93,7 @@ Poniższa tabela opisuje opcje w sekcjach **Zlecenie pracy** i **Harmonogram** n
     - Jeśli dla opcji **Przerwa konserwacyjna** jest ustawiona wartość **tak** w przypadku stanu cyklu życia, na którym jest aktualizowane zlecenie pracy, proces sprawdzania przez czas konserwacji jest wykonywany na składniku majątku, który jest powiązany ze zleceniem pracy. Jeśli dokonano rejestracji przestojów związanych z obsługą, ale nie **zakończono** rejestracji, komunikat jest wyświetlany, gdy zlecenie pracy zostanie zaktualizowane do tego stanu cyklu życia.
     - Jeśli standardowe ustawienia projektu nie zawierają wszystkich etapów wymaganych dla konfiguracji Zarządzanie składnikami majątku, można skonfigurować zdefiniowane przez użytkownika etapy projektu na karcie **etap projektu** na stronie **Parametry modułu Zarządzanie projektami i ich księgowanie**. Na poniższej ilustracji przedstawiono kartę **etap projektu** na stronie **Parametry modułu Zarządzanie projektami i ich księgowanie**.
 
-    ![Strona Ustaw etapy projektu dla różnych typów projektów](media/10-setup-for-work-orders.png)
+    ![Strona Ustaw etapy projektu dla różnych typów projektów.](media/10-setup-for-work-orders.png)
 
 > [!NOTE]
 > Jeśli stan cyklu życia, w którym zlecenie pracy zostanie zaktualizowany, nie jest aktywny, Arkusze powiązane ze zleceniem produkcyjnym, które nie zostały jeszcze zaksięgowane, są usuwane automatycznie. To zachowanie pomaga zagwarantować automatyczne oczyszczanie nieużywanych danych. (Stan cyklu życia jest nieaktywny, jeśli **aktywna** opcja dla tej opcji jest ustawiona na wartość **nie** na skróconej karcie **ogólne** strony stan **cyklu życia zlecenia pracy**.)
@@ -114,7 +111,7 @@ Powodem użycia typów jest to, że w przypadku zdefiniowania typu na przykład 
 
 Na poniższej ilustracji przedstawiono relację między typami zleceń pracy, modelami cyklu życia i stanami cyklu życia.
 
-![Strona typ zlecenia pracy porównywanego z modelami cyklu życia zlecenia pracy](media/11-setup-for-work-orders.png)
+![Strona typ zlecenia pracy porównywanego z modelami cyklu życia zlecenia pracy.](media/11-setup-for-work-orders.png)
 
 ## <a name="work-order-lifecycle-models"></a>Modele cyklu życia zlecenia pracy
 
@@ -129,13 +126,16 @@ Po utworzeniu stanów cyklu życia zlecenia pracy, które są wymagane dla zlece
 
 5. Na skróconej karcie **Stany cyklu życia** wybierz stany cyklu życia, które powinny być uwzględnione w modelu cyklu życia:
 
-    - Aby uwzględnić stanu cyklu życia w modelu cyku życia, zaznacz go w sekcji **Pozostałe stany cyklu życia**, a następnie wybierz przycisk strzałki w prawo ![Strzałka w prawo](media/12-setup-for-work-orders.png), aby przenieść go do sekcji **Wybrane stany cyklu życia**.
-    - Aby uwzględnić wszystkie dostępne stany cyklu życia w modelu cyklu życia, wybierz przycisk **Wybierz wszystkie dostępne stany** ![Wybierz wszystkie dostępne stany](media/13-setup-for-work-orders.png). Wszystkie stany cyklu życia są przenoszone do sekcji **Wybrane cykle życia**.
-    - Aby usunąć stan cyklu życia z modelu cyklu życia, wybierz go w sekcji **Wybrane stany cyklu życia**, a następnie wybierz przycisk strzałki lewo ![Strzałka w lewo](media/14-setup-for-work-orders.png), aby przenieść go do sekcji **Pozostałe stany cyklu życia**.
+    - Aby uwzględnić stanu cyklu życia w modelu cyku życia, zaznacz go w sekcji **Pozostałe stany cyklu życia**, a następnie wybierz przycisk strzałki w prawo ![Strzałka w prawo.](media/12-setup-for-work-orders.png) , aby przenieść ją do wybranej sekcji **Stany cyklu życia**.
+    - Aby uwzględnić wszystkie dostępne stany cyklu życia w modelu cyklu życia, wybierz przycisk **Wybierz wszystkie dostępne stany** ![Wybierz wszystkie dostępne stany.](media/13-setup-for-work-orders.png). Wszystkie stany cyklu życia są przenoszone do sekcji **Wybrane cykle życia**.
+    - Aby usunąć stanu cyklu życia z modelu cyku życia, zaznacz go w sekcji **Wybrane stany cyklu życia**, a następnie wybierz przycisk strzałki w lewo ![Strzałka w lewo.](media/14-setup-for-work-orders.png) , aby przenieść ją do wybranej sekcji **Pozostałe stany cyklu życia**.
 
 6. Wybierz pozycję **Aktualizacje stanu cyklu życia**, aby określić stany cyklu życia, które mogą być wybranym stanem cyklu życia.
 7. W skróconej karcie **aktualizacji** w polu **stan zaplanowana** wybierz stan cyklu życia, który zawsze powinien być wybierany dla zlecenia, dla którego wykonano planowanie zlecenia pracy, niezależnie od poprzedniego stanu cyklu życia zlecenia pracy.
 8. W polu **niezaplanowany stan cyklu życia** wybierz stan cyklu życia, który zawsze powinien być wybierany dla zlecenia pracy, jeśli zostanie usunięte Planowanie zleceń pracy.
 9. Zapisz model cyklu życia zlecenia pracy.
 
-![Strona Modele cyklu życia zlecenia pracy](media/15-setup-for-work-orders.png)
+![Strona Modele cyklu życia zlecenia pracy.](media/15-setup-for-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

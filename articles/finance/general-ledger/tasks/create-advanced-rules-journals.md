@@ -2,26 +2,23 @@
 title: Tworzenie reguł zaawansowanych dla arkuszy
 description: Ta procedura prowadzi przez proces tworzenia zaawansowanych reguł dla arkuszy.
 author: aprilolson
-manager: AnnBe
 ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerJournalControl, CompanyLookup, LedgerJournalPostControl
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ea6ca24d27bb5b00bbe31060ce2f7e40bf2fb335
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fe26409ebaa83595885756056810a4a2037045f0f8ad312b52c507343dec3b2d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446875"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6779477"
 ---
 # <a name="create-advanced-rules-for-journals"></a>Tworzenie reguł zaawansowanych dla arkuszy
 
@@ -58,3 +55,6 @@ Ta procedura prowadzi przez proces tworzenia zaawansowanych reguł dla arkuszy. 
 4. W drzewie zaznacz grupę, której chcesz pozwolić na księgowanie w tym arkuszu.
 5. Kliknij przycisk **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

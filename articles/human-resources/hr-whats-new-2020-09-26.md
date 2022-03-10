@@ -8,25 +8,24 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cc730bca25293e7dbc78d72834dc8abf9b2a1ec4
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 8b0260c4d1bafe271a08336ceed7dc3742f1d590
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5892688"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061391"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-26-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources 26 września 2020 r.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 W tym temacie opisano nowe, zmienione i wkrótce dostępne funkcje dostępne w rozwiązaniu Dynamics 365 Human Resources. Aby uzyskać więcej informacji na temat procesu aktualizacji i harmonogramu, należy zapoznać się z tematem [Aktualizacja procesu](hr-admin-setup-update-process.md).
 
@@ -40,7 +39,7 @@ Ta wersja zawiera następujące nowe funkcje i rozwiązania błędów. Zmiany do
 
 W tym wydaniu są zazwyczaj dostępne następujące funkcje:
 
-- **Aktualizacja platformy 10.0.13 jest teraz dostępna**: Aby uzyskać więcej informacji dotyczących tej aktualizacji, zajrzyj do [aktualizacji platformy dotyczących wersji 10.0.13 aplikacji Finance and Operations (październik 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13.md).
+- **Aktualizacja platformy 10.0.13 jest teraz dostępna**: Aby uzyskać więcej informacji dotyczących tej aktualizacji, zajrzyj do [aktualizacji platformy dotyczących wersji 10.0.13 aplikacji Finanse i Działania (październik 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13.md).
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 

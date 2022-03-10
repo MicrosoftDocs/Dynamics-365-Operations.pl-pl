@@ -2,7 +2,7 @@
 title: Włączanie prognoz płatności odbiorcy
 description: W tym temacie wyjaśniono, jak włączyć i konfigurować funkcję prognozowania płatności odbiorcy w Finance Insights.
 author: ShivamPandey-msft
-ms.date: 11/03/2021
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 5002fc79842bef150892347a7ff4702b07cfe5be
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.openlocfilehash: b83d1230c94462ca722ad7ceb7b2185afd636aae
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968894"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109611"
 ---
 # <a name="enable-customer-payment-predictions"></a>Włączanie prognoz płatności odbiorcy
 
@@ -46,6 +46,10 @@ W tym temacie wyjaśniono, jak włączyć i konfigurować funkcję prognozowania
     2. Na stronie **Konfiguracja Financial Insights** na karcie **Prognozy płatności odbiorcy** wybierz łącze **Wyświetl pola danych używane w modelu prognozy**, aby otworzyć stronę **Pola danych modelu prognozy**. Istnieje możliwość wyświetlenia domyślnej listy pól, które są używane do tworzenia modelu predykcyjnego sztucznej inteligencji (AI) prognoz płatności odbiorcy.
 
         Aby utworzyć model przewidywania za użyciu domyślnej listy pól, zamknij stronę **Pola danych dla modelu przewidywania**, a następnie na stronie **Konfiguracja Finance Insights** ustaw wartość **Tak** opcji **Włącz funkcję**.
+        
+   > [!NOTE]
+   > Funkcja **prognozy płatności odbiorcy** wymaga ponad 100 transakcji w ciągu ostatnich sześciu do 9 miesięcy. Transakcje mogą obejmować faktury tekstowe, zamówienia sprzedaży i płatności odbiorcy. Te dane muszą się rozłożyć na ustawieniach **Na czas**, **Późno** i **Bardzo późno**.    
+     
 
     3. Umożliwia określenie okresu transakcji „bardzo późno” w celu zdefiniowania, jaki jest **bardzo późny** zasobnik przewidywania w firmie.
 
