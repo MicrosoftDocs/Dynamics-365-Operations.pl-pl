@@ -2,7 +2,7 @@
 title: Możliwości siatki
 description: W tym temacie opisano kilka zaawansowanych funkcji formantu siatki. Musisz włączyć nową funkcje siatki, aby można było uzyskać dostęp do tych możliwości.
 author: jasongre
-ms.date: 02/01/2022
+ms.date: 03/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 83d0b6243efd802ffc959f8de14f6232736fc88c
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 58a05f893549a8b9e2e5cb83d02475d0fb5b7277
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087581"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384447"
 ---
 # <a name="grid-capabilities"></a>Możliwości siatki
 
@@ -67,7 +67,10 @@ Jeśli popełnisz błąd i nie chcesz już wyświetlać sumy w określonej kolum
 ### <a name="calculating-totals"></a>Obliczanie sum
 Jeśli zostanie wyświetlona strona z widoczną stopką i kolumny już skonfigurowane dla sum, sumy mogą lub nie być widoczne w stopce. Zachowanie zależy od rozmiaru zestawu danych na stronie. Jeśli zestaw danych jest wystarczająco mały, sumy będą pokazywane automatycznie wraz z liczbą wierszy w zestawie danych. Jeśli w stopce w kolumnach skonfigurowanych dla sum znajdują się kreski, wówczas zestaw danych jest za duży, aby system natychmiastowo pokazywał sumy, a do obliczania sum jest wymagana jawna akcja. W tym celu należy kliknąć przycisk **Oblicz** w stopce lub kliknąć prawym przyciskiem myszy kolumnę, dla której ma zostać obliczona suma, a następnie wybrać opcję **Suma dla tej kolumny**.
 
-Jeśli obliczanie trwa zbyt długo, można anulować operację, wybierając przycisk **Anuluj**. Czasami jednak ten zestaw danych będzie zbyt duży do obliczania sum (limit narzucony przez Twoją organizację) i zamiast tego użytkownik zostanie powiadomiony o konieczności przefiltrowania danych.
+Jeśli obliczenie trwa długo, możesz anulować operację, wybierając przycisk **Anuluj**. Czasami ten zestaw danych będzie zbyt duży do obliczania sum (limit narzucony przez Twoją organizację) i zamiast tego użytkownik zostanie powiadomiony o konieczności przefiltrowania danych. 
+
+> [!NOTE]
+> Administratorzy systemu mogą modyfikować limit liczby rekordów dostępnych do obliczania sum, dostosowując **Maksymalna liczba rekordów lokalnych dla każdego parametru siatki** na stronie **Opcje wydajności klienta**. Wartość domyślna to 25000 rekordów. Administratorzy powinni zachować ostrożność podczas dostosowywania tej wartości, ponieważ zbyt duża wartość może wyczerpać dostępną pamięć na komputerze użytkownika. Propozycja nie powinna przekraczać 50 000 rekordów.   
 
 Sumy zostaną automatycznie zaktualizowane podczas aktualizowania, usuwania lub tworzenia wierszy w zestawie danych.
 

@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 4fef5011ead69028a7f667835fd5e5ba2401408d
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: f21b76bb0d30370e4ea4fdd718999d537e9ce925
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985663"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358438"
 ---
 # <a name="automated-vendor-invoicing-processes-overview"></a>Przegląd zautomatyzowanych procesów fakturowania dostawców
 
@@ -43,7 +43,7 @@ Do wykonywania tych zadań można używać procesów automatyzacji:
 
 ## <a name="submit-imported-vendor-invoices-to-the-workflow-system"></a>Przesyłanie zaimportowanych faktur do systemu przepływu pracy
 
-W ramach bezobsługowego procesu fakturowania rozrachunków z odbiorcami system może automatycznie przesłać zaimportowaną fakturę do systemu przepływu pracy. Proces będzie uruchamiany w tle z częstotliwością określoną przez użytkownika (co godzinę lub codziennie). Możliwość automatycznego przesyłania zaimportowanych faktur do systemu przepływu pracy wymaga, aby proces rozpoczynał się od zaimportowanej faktury. Aby zapewnić możliwość przetwarzania faktury od początku do końca bez ręcznej interwencji, do konfiguracji przepływu pracy musi zostać dołączone zadanie automatycznego księgowania.
+W ramach bezdotykowego procesu fakturowania rozrachunków z dostawcami, zaimportowana faktura może zostać automatycznie przesłana do systemu workflow. Proces będzie uruchamiany w tle z częstotliwością określoną przez użytkownika (co godzinę lub codziennie). Możliwość automatycznego przesyłania zaimportowanych faktur do systemu przepływu pracy wymaga, aby proces rozpoczynał się od zaimportowanej faktury. Aby zapewnić możliwość przetwarzania faktury od początku do końca bez ręcznej interwencji, do konfiguracji przepływu pracy musi zostać dołączone zadanie automatycznego księgowania.
 
 
 Faktury związane z zamówieniami zakupu (punktami sprzedaży) i fakturami zawierającymi kategorię zaopatrzenia spoza zamówienia na zamówienie mogą być automatycznie przesyłane do systemu przepływu pracy. Faktury wprowadzane ręcznie i faktury utworzone za pomocą obszaru roboczego **Fakturowanie w ramach współpracy z dostawcą** muszą zostać przesłane ręcznie do systemu przepływu pracy. Przetwarzanie aplikacji zaliczkowej należy wykonać ręcznie dla zaimportowanych faktur. Przedpłaty można stosować ręcznie przed zaksięgowaniem zaimportowanych faktur lub po ich zaksięgowaniu. Za pomocą strony **Faktury od dostawców** można ręcznie zastosować przedpłaty do niezaksięgowanych standardowych faktur. Po zaksięgowaniu rozliczona przedpłata będzie dostępna do ręcznego stosowania do innych faktur od tego dostawcy na stronie **Dostawcy** (**Rozrachunki z dostawcami \> Wspólne \> Dostawcy \> Wszyscy dostawcy \> Karta faktur \> Zastosuj**).
@@ -52,7 +52,7 @@ Funkcja automatyzacji udostępnia elastyczną platformę, która umożliwia defi
 
 ## <a name="match-product-receipts-to-invoice-lines-that-have-a-three-way-matching-policy"></a>Dopasowywanie zaksięgowanych dokumentów przyjęcia produktów do wierszy faktury, które mają trzyelementowe zasady uzgadniania
 
-System może automatycznie dopasowywać zaksięgowane dokumenty przyjęcia produktów do wierszy faktury, dla których zdefiniowano trzyelementowe zasady uzgadniania. Proces będzie działał, dopóki dopasowana ilość z dokumentu przyjęcia produktów nie będzie równa ilości fakturowanej. W ramach tego procesu można określić maksymalną liczbę prób dopasowania przez systemu przyjęcia produktów do wiersza faktury przed poinformowaniem o niepowodzeniu procesu. Proces będzie uruchamiany w tle, co godzinę lub codziennie. Proces automatycznego dopasowywania można uruchomić jako część procesu przesyłania faktur do systemu przepływu pracy. Alternatywnie można uruchomić go jako proces autonomiczny.
+Zaksięgowane paragony produktów mogą być automatycznie dopasowywane do wierszy faktur, dla których zdefiniowana jest zasada trójstronnego dopasowywania. Proces będzie działał, dopóki dopasowana ilość z dokumentu przyjęcia produktów nie będzie równa ilości fakturowanej. W ramach tego procesu można określić maksymalną liczbę prób dopasowania przez systemu przyjęcia produktów do wiersza faktury przed poinformowaniem o niepowodzeniu procesu. Proces będzie uruchamiany w tle, co godzinę lub codziennie. Proces automatycznego dopasowywania można uruchomić jako część procesu przesyłania faktur do systemu przepływu pracy. Alternatywnie można uruchomić go jako proces autonomiczny.
 
 ## <a name="pre-validate-vendor-invoice-posting"></a>Wstępne sprawdzenie poprawności księgowania faktury od dostawcy
 
@@ -60,7 +60,7 @@ Symulacja księgowania kończy kroki sprawdzania poprawności wykonywane podczas
 
 ## <a name="enhanced-experience-for-viewing-workflow-and-automation-historical-information-for-vendor-invoices"></a>Ulepszone możliwości wyświetlania informacji i automatyzacja historycznych dotyczących przepływu pracy dla faktur od dostawców
 
-Dostępny jest łatwy do odczytania widok historii przepływu pracy faktury od dostawcy. Historię przepływu pracy faktury od dostawcy można uzyskać bezpośrednio z faktury od dostawcy. W związku z tym do znalezienia tych informacji jest wymagana mniejsza liczba kliknięć. Jeśli w organizacji włączono możliwość automatycznego przesyłania zaimportowanych faktur od dostawców do przepływu pracy, dla zaimportowanych faktur jest dostępna historia automatyzacji. Historia automatyzacji pomaga identyfikować bieżący krok procesu, a także kroki, które zostały już wykonane. Jeśli krok nie powiedzie się, system podaje szczegółowe informacje pomocne w zrozumieniu przyczyny niepowodzenia.
+Dostępny jest łatwy do odczytania widok historii przepływu pracy faktury od dostawcy. Historię przepływu pracy faktury od dostawcy można uzyskać bezpośrednio z faktury od dostawcy. W związku z tym do znalezienia tych informacji jest wymagana mniejsza liczba kliknięć. Jeśli w organizacji włączono możliwość automatycznego przesyłania zaimportowanych faktur od dostawców do przepływu pracy, dla zaimportowanych faktur jest dostępna historia automatyzacji. Historia automatyzacji pomaga identyfikować bieżący krok procesu, a także kroki, które zostały już wykonane. Gdy krok nie powiedzie się, podane zostaną szczegółowe informacje, które pomogą Ci zrozumieć przyczynę niepowodzenia.
 
 ## <a name="analytics-and-metrics"></a>Analiza i metryki
 
@@ -78,9 +78,9 @@ Wartość **Daty otrzymanej faktury** wskazuje datę, kiedy firma otrzymała fak
 
 ## <a name="tracking-the-imported-invoice-amount-and-imported-sales-tax-amount-values"></a>Śledzenie wartości zaimportowanych faktur i kwot podatku importowanego
 
-**Zaimportowaną kwotę faktury** i **Kwotę importowanego podatku** dla faktur od dostawcy można określić w pliku importu faktur od dostawcy. Zwykle wartości te są wystawiane z faktury, która została zeskanowana przez dostawcę zewnętrznego i uwzględniona w pliku importu. Gdy faktura jest przetwarzana w rozrachunkach z dostawcami, system oblicza wartości na podstawie danych faktury. Fakturę można zakturować tylko wtedy, gdy importowane wartości są zgodne z obliczonymi wartościami. Zgodne wartości zapewniają, że faktura dokładnie odzwierciedla kwotę należną dostawcy. Jeśli organizacja umożliwia automatyczne przesyłane do systemu przepływu pracy zaimportowane faktury, można opcjonalnie określić, że zaimportowane sumy muszą odpowiadać obliczonym sumom, zanim będzie można przesłać fakturę do systemu przepływu pracy.
+**Zaimportowaną kwotę faktury** i **Kwotę importowanego podatku** dla faktur od dostawcy można określić w pliku importu faktur od dostawcy. Zwykle wartości te są wystawiane z faktury, która została zeskanowana przez dostawcę zewnętrznego i uwzględniona w pliku importu. Ponieważ faktura jest przetwarzana w Rozrachunkach z dostawcami, wartości będą obliczane na podstawie danych z faktury. Fakturę można zakturować tylko wtedy, gdy importowane wartości są zgodne z obliczonymi wartościami. Zgodne wartości zapewniają, że faktura dokładnie odzwierciedla kwotę należną dostawcy. Jeśli organizacja umożliwia automatyczne przesyłane do systemu przepływu pracy zaimportowane faktury, można opcjonalnie określić, że zaimportowane sumy muszą odpowiadać obliczonym sumom, zanim będzie można przesłać fakturę do systemu przepływu pracy.
 
 ## <a name="vendor-invoice-automation---resume-automation-processing-for-multiple-invoices"></a>Automatyzacja faktury od dostawcy — wznawianie przetwarzania automatyzacji dla wielu faktur
-Jeśli zaimportowana faktura nie zostanie pomyślnie przesłana do przepływu pracy za pośrednictwem zautomatyzowanego procesu, system usunie ją z dalszego automatycznego przetwarzania. Pracownik rozrachunków z dostawcami może przejrzeć i edytować fakturę, zanim zautomatyzowany proces prześle go do przepływu pracy. Jeśli przyczyna niepowodzenia może zostać usunięta za pomocą tej samej poprawki dla wielu faktur, można ponownie uruchomić zautomatyzowany proces na stronie **Wznawianie automatycznego przetwarzania faktur**. 
+Jeśli zaimportowana faktura nie zostanie pomyślnie przesłana do obiegu w zautomatyzowanym procesie, zostanie usunięta z dalszego automatycznego przetwarzania. Pracownik rozrachunków z dostawcami może przejrzeć i edytować fakturę, zanim zautomatyzowany proces prześle go do przepływu pracy. Jeśli przyczyna niepowodzenia może zostać usunięta za pomocą tej samej poprawki dla wielu faktur, można ponownie uruchomić zautomatyzowany proces na stronie **Wznawianie automatycznego przetwarzania faktur**. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

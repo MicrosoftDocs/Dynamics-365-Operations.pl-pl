@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: afc1b5996667835c460f467526493380aa2d6403
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 9174612743c68595d12dd223f0932ace1857c0fb
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062093"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358371"
 ---
 # <a name="organization-hierarchy-in-dataverse"></a>Hierarchia organizacyjna w usłudze Dataverse
 
@@ -36,11 +36,11 @@ Mapy tabeli hierarchii organizacyjnej są dostępne dla jednokierunkowego synchr
 
 ## <a name="templates"></a>Szablony
 
-Informacje o produkcie zawierają wszystkie informacje związane z produktem i jego definicję, takie jak wymiary produktu lub wymiary śledzenia i przechowywania. W poniższej tabeli przedstawiono kolekcję mapowań tabel, która umożliwia synchronizowanie produktów i informacji pokrewnych.
+Organizacja to grupa osób, które pracują razem, aby przeprowadzić proces biznesowy lub osiągnąć cel. Hierarchie organizacyjne reprezentują relacje między organizacjami, które tworzą firmę. Można zdefiniować następujące typy organizacji wewnętrznych: podmioty prawne (zwykle dla uproszczenia określane jako firmy), jednostki operacyjne i zespoły. Jak pokazano w poniższej tabeli, tworzona jest kolekcja map tabel w celu synchronizowania informacji o firmach, jednostkach operacyjnych i powiązanej hierarchii organizacji.
 
-Aplikacje Finanse i Działania | Aplikacje Customer Engagement     | opis
+Aplikacje Finanse i Działania | Aplikacje Customer Engagement     | Opis
 -----------------------|--------------------------------|---
-[Osoby prawne](mapping-reference.md#102) | cdm_companies | Umożliwia synchronizację dwukierunkową informacji firmy (firmy).
+[Osoby prawne](mapping-reference.md#102) | cdm_companies | 
 [Osoby prawne](mapping-reference.md#142) | msdyn_internalorganizations |
 [Jednostka operacyjna](mapping-reference.md#143) | msdyn_internalorganizations |
 [Hierarchia organizacyjna — opublikowana](mapping-reference.md#139) | msdyn_internalorganizationhierarchies | Ten szablon umożliwia jednokierunkową synchronizację tabeli opublikowanej hierarchii organizacyjnej.

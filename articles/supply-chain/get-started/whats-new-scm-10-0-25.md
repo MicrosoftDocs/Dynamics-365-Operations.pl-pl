@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 8a9b873b7b4bba43b7b3e6e83c389ac35b4e223e
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 068e65d0bd76d7a9af36c6c3539d0c813efd528a
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103003"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384545"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10025-april-2022"></a>Omówienie aplikacji Dynamics 365 Supply Chain Management 10.0.25 (kwiecień 2022 r.)
 
@@ -34,10 +34,10 @@ To wydanie zawiera funkcje, które są podane w następującej tabeli. Firma Mic
 
 | Obszar funkcji | Funkcja | Więcej informacji | Włączone przez   |
 |---|---|---|---|
-| Zapasy&nbsp;i&nbsp;logistyka | Rozszerzenie materiałów niebezpiecznych | Rozszerzenia te bazują na istniejących funkcjach związanych z materiałami niebezpiecznymi, aby pomóc firmom zachować zgodność z lokalnymi przepisami podczas transportu materiałów niebezpiecznych na różnych obszarach geograficznych. <!-- KFM: Update to 2022w1 link when published -->| Zarządzanie funkcjami:<br>*Rozszerzenie materiałów niebezpiecznych* |
-| Zapasy&nbsp;i&nbsp;logistyka | Praca pakowania dla stacji pakowania | Ta funkcja znacznie poprawia elastyczność i sprawność twoich operacji pakowania i wysyłki. Podczas procesu pakowania pracownicy magazynu mogą teraz pakować i wysyłać pojedyncze paczki, które są związane z tą samą przesyłką i ładunkiem. Wiersze zamówień, które są częścią tej samej przesyłki, niekoniecznie muszą być wysłane razem, jeśli niektóre elementy są gotowe do wysyłki od razu. Pojedyncze zamówienie może zostać spakowane i wysłane w wielu paczkach w różnych terminach, co skraca czas oczekiwania i zwiększa sprawność działania.<!-- KFM: Update to 2022w1 link when published --> | Zarządzanie funkcjami:<br>*Praca pakowania dla stacji pakowania* |
-| Zapasy&nbsp;i&nbsp;logistyka | [Skanowanie kodów kreskowych w magazynie przy użyciu standardów formatu GS1](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) <!-- KFM: Update to 2022w1 link when published --> | [Kody kreskowe GS1 i kody QR](../warehousing/gs1-barcodes.md) | Zarządzanie funkcjami:<br>*Zeskanuj kody kreskowe GS1* |
-| Produkcja | [Rejestrowanie zużycia materiału i rezerwacji w interfejsie wykonania hal produkcyjnych (inne niż WMS)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [Jak pracownicy korzystają z interfejsu wykonania hal produkcyjnych](../production-control/production-floor-execution-use.md) | Zarządzanie funkcjami:<br>*(Wersja zapoznawcza) Rejestrowanie zużycia materiału w interfejsie wykonania hal produkcyjnych (z obsługą WMS)* |
+| Zapasy&nbsp;i&nbsp;logistyka | [Rozszerzenie materiałów niebezpiecznych](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/hazardous-materials-enhancements) | Wkrótce | Zarządzanie funkcjami:<br>*Rozszerzenie materiałów niebezpiecznych* |
+| Zapasy&nbsp;i&nbsp;logistyka | [Praca pakowania dla stacji pakowania](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/packing-work-packing-stations) | Wkrótce | Zarządzanie funkcjami:<br>*Praca pakowania dla stacji pakowania* |
+| Zapasy&nbsp;i&nbsp;logistyka | [Skanowanie kodów kreskowych w magazynie przy użyciu standardów formatu GS1](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [Kody kreskowe GS1 i kody QR](../warehousing/gs1-barcodes.md) | Zarządzanie funkcjami:<br>*Zeskanuj kody kreskowe GS1* |
+| Produkcja | [Rejestrowanie zużycia materiału i rezerwacji w interfejsie wykonania hal produkcyjnych (inne niż WMS)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [Jak pracownicy korzystają z interfejsu wykonania hal produkcyjnych](../production-control/production-floor-execution-use.md) | Zarządzanie funkcjami:<br>*(Wersja zapoznawcza) Rejestrowanie zużycia materiału w interfejsie wykonania hal produkcyjnych (inne niż WMS)*<br><br>I/lub:<br><br>Zarządzanie funkcjami:<br>*(Wersja zapoznawcza) Rejestrowanie zużycia materiału w interfejsie wykonania hal produkcyjnych (z obsługą WMS)* |
 | Produkcja | [Rejestrowanie zużycia materiałów w jednostkach skalowania](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/register-material-consumption-scale-units) | [Obciążenia pracą dotyczące uruchomienia produkcji dla jednostek skalowania chmury i urządzenia brzegowego](../cloud-edge/cloud-edge-workload-manufacturing.md) | Zarządzanie funkcjami:<br>*Zarejestruj zużycie materiałów w aplikacji mobilnej dla jednostki skalowania* |
 | Planowanie | [Optymalizacja planowania – propozycje optymalizacji istniejących dostaw](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-suggestions-optimize-existing-supply) | [Komunikaty akcji](../master-planning/action-messages.md) | Domyślnie włączone |
 | Planowanie | Uproszczone zamówienia planowane | [Uproszczone zamówienia planowane](../master-planning/planning-optimization/planned-orders-simplified.md ) | Zarządzanie funkcjami:<br>*Uproszczone zamówienia planowane* |

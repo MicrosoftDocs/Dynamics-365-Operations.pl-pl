@@ -2,7 +2,7 @@
 title: Projektowanie konfiguracji raportowania elektronicznego w celu wypełniania szablonów w formacie PDF
 description: Ten temat zawiera informacje dotyczące projektowania formatu raportowania elektronicznego (ER) w celu wypełnienia szablonu PDF.
 author: NickSelin
-ms.date: 03/24/2021
+ms.date: 02/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 81da1b4f9ca5d2884122266312b2f7cb298572eef3a5c6151daba2f9b17326f2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a568ddd93bfbc7d536e951a13470b3dedb796e1b
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758295"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367863"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>Projektowanie konfiguracji raportowania elektronicznego w celu wypełniania szablonów w formacie PDF
 
@@ -294,6 +294,20 @@ Na poniższej ilustracji przedstawiono przykład pierwszej strony generowanego r
 Na poniższej ilustracji przedstawiono przykład innej strony generowanego raportu.
 
 ![Inna strona wygenerowanego raportu.](media/rcs-ger-filloutpdf-generatedreport2.png)
+
+## <a name="limitations"></a>Ograniczenia
+
+Nazwy pól, które można wypełnić, powinny być unikatowe w formularzu PDF, który ma zostać użycia jako szablon raportu. Dla każdego takiego pola podczas importowania formularza PDF tworzony jest indywidualny element formatu o odpowiedniej nazwie w edytowalnym formacie ER. Jeśli formularz PDF zawiera kilka pól o tej samej nazwie, dla pól tworzony jest jeden element formatu, który nie pozwala na ich indywidualne wypełnianie w czasie wykonywania.
+
+## <a name="frequently-asked-questions"></a>Często zadawane pytania
+
+### <a name="when-i-run-the-er-format-to-generate-a-report-in-pdf-format-why-do-i-get-the-following-errors--cannot-handle-iref-streams-the-current-implementation-of-pdfsharp-cannot-handle-this-pdf-feature-introduced-with-acrobat-6-and-a-pdf-name-must-start-with-a-slash-"></a>Gdy uruchamiam format rej. W celu wygenerowania raportu w formacie PDF, zgłaszam następujące błędy: **Nie mogę obsłużyć strumieni iref. Bieżąca implementacja narzędzia PDFSharp nie może obsługiwać tej funkcji w formacie PDF wprowadzonej w programie Acrobat 6.** i nazwy **w formacie PDF muszą rozpoczynać się ukośnikiem (/).**
+
+Struktura ER używa wersji 1.5 biblioteki PDFSharp do generowania tych raportów PDF. Niektóre funkcje pliku PDF 1.5 (Adobe Reader 6.0) nie zostały jeszcze zaimplementowane w tej bibliotece. Dlatego program PDFSharp nie może jeszcze **otworzyć niektórych plików oznaczonych jako pliki PDF 1.5 lub wyższe** i mogą powodować błędy. Aby rozwiązać problem, użyj jednego z następujących rozwiązań:
+
+-   W przypadku korzystania z własnego szablonu PDF: Zmień szablon na starszą wersję Adobe i zacznij korzystać z nowego szablonu w formacie ER.
+-   W przypadku korzystania z szablonu formatu ER, który został Ci udostępniony przez innego dostawcę konfiguracji w ramach rozwiązania ER: Skontaktuj się z właścicielem tego rozwiązania ER i podaj opis problemu.
+-   W przypadku korzystania z rozwiązania ISV zawierającego wcześniejszą wersję biblioteki PDFSharp: Skontaktuj się z właścicielem rozwiązania i zasugeruj uaktualnienie do nowszej wersji PDFSharp.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

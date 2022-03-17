@@ -1,22 +1,22 @@
 ---
-title: Omówienie integracji fiskalnej dla kanałów modułu Commerce
+title: Omówienie integracji fiskalnej dla kanałów aplikacji Commerce
 description: Ten temat zawiera omówienie funkcji integracji fiskalnej dostępnych w programie Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 01/31/2022
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 82913eaca1d56a5b0609480d8825717278eca132
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 46e0afd5a8cb692da56a7d5f261ca30d9b3aaa80
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077199"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388320"
 ---
-# <a name="overview-of-fiscal-integration-for-commerce-channels"></a>Omówienie integracji fiskalnej dla kanałów modułu Commerce
+# <a name="fiscal-integration-overview-for-commerce-channels"></a>Omówienie integracji fiskalnej dla kanałów aplikacji Commerce
 
 [!include [banner](../includes/banner.md)]
 [!include[banner](../includes/preview-banner.md)]
@@ -46,6 +46,9 @@ Próbka integracji fiskalnej może zawierać Commerce runtime (CRT), stacji sprz
 - **Konfiguracja łącznika fiskalnego** — ta konfiguracja określa fizyczną komunikację z określonym urządzeniem fiskalnym lub usługą.
 
 Proces rejestracji fiskalnej dla określonej rejestracji POS jest definiowany przez odpowiednie ustawienie w profilu funkcji POS. Aby uzyskać więcej szczegółów na temat sposobu konfigurowania procesu rejestracji fiskalnego, przesyłania konfiguracji dostawcy dokumentu fiskalnego i łącznika fiskalnego oraz zmieniania ich parametrów konfiguracji, zobacz [Konfigurowanie procesu rejestracji fiskalnej](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
+
+> [!NOTE]
+> Jeśli potrzebujesz urządzeń do operacji niefiskalnych, takich jak przeszukiwanie katalogu produktów, wyszukiwanie klientów lub tworzenie wersji roboczych transakcji, możesz wybrać je jako rejestry z ograniczeniami procesów fiskalnych. Aby uzyskać więcej informacji, zobacz temat [Konfigurowanie rejestrów z ograniczeniami rejestracji fiskalnej](setting-up-fiscal-integration-for-retail-channel.md#set-up-registers-with-fiscal-registration-restrictions).
 
 Poniższy typowy przepływ rejestracji fiskalnej rozpoczyna się od zdarzenia w punkcie sprzedaży (np. finalizacja transakcji sprzedaży) i realizuje predefiniowaną sekwencję kroków, która angażuje inne komponenty Commerce (takie jak CRT i stacja sprzętowa).
 

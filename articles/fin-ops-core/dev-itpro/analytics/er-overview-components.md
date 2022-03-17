@@ -15,12 +15,12 @@ ms.topic: overview
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a24aa52c805722c20045b6227ceac0103cfbe6b
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: aca1b9bbca490a8a9551ed97d6e100c9115a0d41
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324042"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367831"
 ---
 # <a name="electronic-reporting-components"></a>Składniki raportowania elektronicznego
 
@@ -91,9 +91,23 @@ Składnik typu Format umożliwia załączanie określonych plików, które mogą
 
 Na poniższej ilustracji przedstawiono sposób przepływu danych w tych formatach.
 
-[![Przepływ danych dla składników typu Format dokumentów przychodzących.](./media/ER-overview-03.png)](./media/ER-overview-03.png)
+[![Przepływ danych dla składników typu Format dokumentów wychodzących](./media/ER-overview-02.png)](./media/ER-overview-02.png)
+
+Aby uruchomić jedną konfigurację formatu modułu ER i wygenerować wychodzący dokument elektroniczny, należy określić mapowanie dla konfiguracji formatu.
+
+#### <a name="format-components-for-incoming-electronic-documents"></a>Składniki typu Format dla przychodzących dokumentów elektronicznych
+Składnik typu Format określa schemat dokumentu przychodzącego, który jest importowany w czasie wykonywania. Schemat składa się z następujących elementów:
+
+- Format definiujący strukturę i zawartość dokumentu przychodzącego dokumentu elektronicznego zawierającego dane importowane podczas wykonywania. Składnik typu Format służy do analizowania składni przychodzących dokumentów w różnych formatach, takich jak tekst i XML.
+- Mapowanie formatu, które wiąże poszczególne elementy formatu z elementami modelu danych konkretnej domeny. W czasie wykonywania elementy w modelu danych określają przepływ danych oraz reguły importowania danych z przychodzącego dokumentu, a następnie zapisują te dane w modelu danych.
+- Sprawdzanie poprawności formatu jako zestaw konfigurowalnych reguł sterujących importem danych w czasie wykonywania w zależności od kontekstu pracy. Na przykład może istnieć reguła, która zatrzymuje import danych z wyciągu bankowego zawierającego płatności dla dostawcy i zgłasza wyjątek, gdy brakuje określonych atrybutów dostawcy, takich jak kod identyfikacyjny dostawcy.
+
+Na poniższej ilustracji przedstawiono sposób przepływu danych w tych formatach.
+
+[![Przepływ danych dla składników typu Format dokumentów przychodzących](./media/ER-overview-03.png)](./media/ER-overview-03.png)
 
 Aby uruchomić jedną konfigurację formatu modułu ER w celu zaimportowania danych z przychodzącego dokumentu elektronicznego, należy określić żądane mapowanie konfiguracji formatu oraz punkt integracji mapowania modelu. Tego samego mapowania modelu i miejsc docelowych można używać w połączeniu z różnymi formatami dla różnych rodzajów dokumentów przychodzących.
+
 
 ## <a name="component-versioning"></a>Przechowywanie wersji składnika
 

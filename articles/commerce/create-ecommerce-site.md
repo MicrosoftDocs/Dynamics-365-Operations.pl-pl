@@ -2,7 +2,7 @@
 title: Tworzenie witryny handlu elektronicznego
 description: W tym temacie opisano kroki i informacje wymagane do utworzenia nowej witryny e-Commerce w konstruktorze witryn Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 02/03/2022
+ms.date: 03/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 01f22772fd8c8984a2f92c516972d6659325a18c
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: 5e451b1c95c3e26d1292e7b8300b62af43c81f2f
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090776"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388218"
 ---
 # <a name="create-an-e-commerce-site"></a>Tworzenie witryny handlu elektronicznego
 
@@ -30,6 +30,19 @@ ms.locfileid: "8090776"
 W tym temacie opisano kroki i informacje wymagane do utworzenia nowej witryny e-Commerce w konstruktorze witryn Dynamics 365 Commerce.
 
 Po nadaniu licencji na funkcje Dynamics 365 Commerce, funkcja konstruktora witryn zostanie wdrożona wraz z witryną startową, którą można wykorzystać jako podstawę dla własnego oddziału. Jeśli jednak użytkownik chce rozpocząć od zera lub chce stworzyć drugą witrynę, musi utworzyć nową witrynę w środowisku tworzenia witryn. 
+
+## <a name="site-creation-prerequisites"></a>Wymagania wstępne dotyczące tworzenia witryny
+
+Użytkownik konstruktora lokacji musi mieć konto użytkownika Microsoft Azure Active Directory (Azure AD) uwzględnione w grupie zabezpieczeń Azure AD przypisanej do administratorów systemu handlu elektronicznego. Aby uzyskać więcej informacji, zobacz [Wdrażanie nowej dzierżawy usługi e-commerce](deploy-ecommerce-site.md).
+
+> [!NOTE]
+> Użytkownicy-gości usługi Azure AD mogą mieć różne uprawnienia dostępu w dzierżawie usługi Azure AD. Nawet jeśli użytkownik jest uwzględniony w grupie zabezpieczeń Azure AD przypisanej dla administratorów systemu handlu elektronicznego, użytkownik-gość może wymagać dostosowania ustawień uprawnień usługi Azure AD **Użytkownicy zewnętrzni** w celu utworzenia witryny handlu elektronicznego w aplikacji Commerce. 
+
+Aby dostosować ustawienia usługi Azure AD **Zewnętrzni użytkownicy**, wykonaj następujące kroki.
+
+1. W portalu Azure przejdź do dzierżawy usługi Azure AD.
+1. Przejdź do **ustawień użytkownika \> Użytkownicy zewnętrzni** i wybierz łącze **Zarządzaj ustawieniami współpracy zewnętrznej**. Spowoduje to otwarcie strony **Ustawienia współpracy zewnętrznej**, na której można ustawić dostęp użytkownika-gościa, ustawienia zapraszania gościa i ograniczenia współpracy. 
+1. Dostosuj ustawienia współpracy zewnętrznej zgodnie z zasadami zabezpieczeń firmy. 
 
 ## <a name="set-up-your-site"></a>Konfigurowanie witryny
 

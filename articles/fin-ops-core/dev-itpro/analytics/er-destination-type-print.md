@@ -2,7 +2,7 @@
 title: Typ miejsca docelowego drukarka
 description: Ten temat zawiera wyjaśnienia dotyczące możliwości skonfigurowania miejsca docelowego drukarki dla każdego składnika typu FOLDER lub PLIK w formacie raportowania elektronicznego (ER).
 author: NickSelin
-ms.date: 02/24/2021
+ms.date: 02/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 672b1d70607a32d30c703ce39573d7480462fec45739b6e1e49ef27166a50e2c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2513fc4f86519c71602089cd46e9757813b1a708
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712719"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388295"
 ---
 # <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Miejsce docelowe — drukarka
 
@@ -43,7 +43,24 @@ Aby udostępnić **drukarkę** jako miejsce docelowe w bieżącej instancji rozw
 
 ### <a name="applicability"></a>Możliwość stosowania
 
-Lokalizację docelową **Drukarka** można skonfigurować tylko dla składników plików używanych do generowania danych wyjściowych w formacie PDF (format PDF lub w formacie PDF) lub Microsoft Office Excel / formacie Word (plik programu Excel). Jeśli dane wyjściowe są generowane w formacie PDF, są one wysyłane do drukarki. Jeśli dane wyjściowe są generowane w formacie Microsoft Office, są automatycznie konwertowane na format PDF, a następnie wysyłane na drukarkę.
+#### <a name="pdf-printing"></a>Drukowanie kodu przyczyny rejestracji
+
+W wersjach Finance wcześniejszych niż 10.0.18 miejsce docelowe **Drukarka** może być skonfigurowane tylko dla składników plików, które są używane do generowania danych wyjściowych w formacie PDF do wydrukowania (**PDF Merger** lub **PDF file** elementy formatu) lub format Microsoft Office Excel i Word (**plik Excel** element formatu). Jeśli dane wyjściowe są generowane w formacie PDF, są one wysyłane do drukarki. Gdy dane wyjściowe są generowane w formacie Office przy użyciu elementu formatu **plik Excel**, są one automatycznie konwertowane do formatu PDF, a następnie wysyłane do drukarki.
+
+Jednak w wersji 10.0.18 można skonfigurować **drukarkę** docelową dla elementu formatu **pliku Wspólne**. Ten element formatu jest głównie używany do generowania danych wyjściowych w formacie TXT lub XML. Możesz skonfigurować format ER, który zawiera element formatu **Wspólny plik** jako główny element formatu i element formatu **Zawartość binarna** jako jedyny zagnieżdżony element w nim. W takim przypadku element **wspólny plik** format będzie tworzyć dane wyjściowe w formacie określonym w powiązaniu skonfigurowanym dla elementu **formatu zawartości binarnej**. Na przykład możesz skonfigurować to powiązanie, aby [wypełnić](tasks/er-document-management-files-5.md#modify-the-format-to-populate-attachments-into-generating-messages-in-binary-format) ten element treścią załącznika [Zarządzanie dokumentami](../../fin-ops/organization-administration/configure-document-management.md) w formacie PDF lub Office (Excel lub Word). Dane wyjściowe można wydrukować za pomocą skonfigurowanego miejsca docelowego **drukarki**. 
+
+> [!NOTE]
+> Po wybraniu elementu formatu **Wspólny\\Plik** w celu skonfigurowania lokalizacji docelowej **Drukarka**, nie ma możliwości zagwarantowania w czasie projektowania, że wybrany element wygeneruje dane wyjściowe w formacie PDF lub dane wyjściowe, które można przekonwertować do formatu PDF. W związku z tym zostanie wyświetlony następujący komunikat ostrzegawczy: „Upewnij się, że dane wyjściowe wygenerowane przez wybrany składnik formatu mogą być konwertowane na pliki PDF. W przeciwnym razie usuń zaznaczenie opcji „Konwertuj na plik PDF” Należy podjąć odpowiednie kroki, aby zapobiec problemom w czasie wykonywania, gdy dane wyjściowe nie w formacie PDF lub innym niż PDF są udostępniane do drukowania w czasie wykonywania. Jeśli spodziewasz się otrzymać dane wyjściowe w formacie Office (Excel lub Word), musisz wybrać opcję **Konwertuj na PDF**.
+>
+> W wersji 10.0.26 i nowszych, aby użyć opcji **Konwertuj na PDF**, musisz wybrać **PDF** dla parametru **Typ routingu dokumentów** skonfigurowanej **Drukarki** Miejsce docelowe.
+
+#### <a name="zpl-printing"></a>Drukowanie kodu przyczyny rejestracji
+
+W wersji 10.0.26 i nowszych możesz skonfigurować lokalizację docelową **Drukarka** dla elementu formatu **Wspólny\\Plik**, wybierając **ZPL** dla **Typ routingu dokumentów** parametr. W takim przypadku opcja **Konwertuj na plik PDF** jest ignorowana w czasie wykonywania, a dane wyjściowe TXT lub XML są wysyłane bezpośrednio do wybranej drukarki przy użyciu umowy Zebra Programming Language (ZPL) [agenta rozsyłania dokumentów (TXT)](install-document-routing-agent.md). Ta funkcja jest dostępna w przypadku formatu ER reprezentującego układ etykiet ZPL II w celu drukowania różnych etykiet.
+
+[![Ustawianie parametru Typ rozsyłania dokumentów w oknie dialogowym Ustawienia docelowe.](./media/ER_Destinations-SetDocumentRoutingType.png)](./media/ER_Destinations-SetDocumentRoutingType.png)
+
+Aby uzyskać więcej informacji o tej funkcji, zobacz [projektowanie nowego rozwiązania ER w celu drukowania etykiet ZPL](er-design-zpl-labels.md).
 
 ### <a name="limitations"></a>Ograniczenia
 

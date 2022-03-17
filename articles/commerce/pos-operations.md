@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5e139b7b12b8f2e549fb9c2c8e39125e190c7396
-ms.sourcegitcommit: 4d52c67f52ad0add63cd905df61367b344389069
+ms.openlocfilehash: 0c62e11cc6d39c351321419bb862a5169b162fb7
+ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8311986"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8349724"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Operacje online i offline w punkcie sprzedaży (POS)
 
@@ -159,8 +159,8 @@ Poniższe kolumny określają, gdzie można wywołać informacje:
 | 305 | Zrealizuj punkty lojalnościowe | Ta operacja nie jest obsługiwana. | Nie dotyczy | Nie dotyczy | Nie dotyczy | Nie dotyczy | Tak |
 | 635 | Zwróć opłaty transportowe | Zwróć opłaty transportowe dla anulowanego zamówienia. | Nie | Nie | Nie | Nie | Nie |
 | 644 | Usuń kod kuponu | Monituj użytkownika o usunięcie kuponów, przez zaznaczenie ich na liście kuponów, które są aktualnie skojarzone z transakcją. | Tak | Tak | Nie | Tak | Nie |
-| 1057 | Ponowne drukowanie raportu końcowego | Wydrukuj ponownie raport końcowy sprzedaży dla poprzedniej lub wybranej zmiany. | Tak | Tak | Tak | Nie | Nie |
-| 1216 | Resetuj hasło | Ta operacja umożliwia użytkownikowi z uprawnieniami do resetowania hasła zresetowanie hasła dla pracownika za pomocą hasła tymczasowego. | Tak | Tak | Tak | Nie | Nie |
+| 1057 | Ponowne drukowanie raportu końcowego | Wydrukuj ponownie raport końcowy sprzedaży dla poprzedniej zmiany. | Tak | Tak | Tak | Nie | Nie |
+| 1216 | Wprowadź nowe hasło | Ta operacja umożliwia użytkownikowi z uprawnieniami do resetowania hasła zresetowanie hasła dla pracownika za pomocą hasła tymczasowego. | Tak | Tak | Tak | Nie | Nie |
 | 1219 | Otwieranie adresu URL w punkcie sprzedaży | Otwórz skonfigurowany adres URL administratora w punkcie sprzedaży. | Tak | Tak | Tak | Tak | Nie |
 | 109 | Zwrot produktu | Dokonaj zwrotu poszczególnych produktów. Następny zeskanowany produkt jest wyświetlany jako zwrócony i ma ujemną cenę i ilość. | Tak | Tak | Nie | Tak | Nie |
 | 114 | Transakcja zwrotu | Wycofaj poprzednią transakcję według jej numeru paragonu, aby zwrócić niektóre lub wszystkie produkty. | Tak | Tak | Tak | Tak§ | Nie |

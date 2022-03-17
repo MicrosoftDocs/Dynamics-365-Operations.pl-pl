@@ -2,23 +2,24 @@
 title: Wskazówki dotyczące wdrażania przykładu integracji drukarki fiskalnej dla Włoch (starsza wersja)
 description: Ten temat zawiera wskazówki dotyczące wdrażania przykładu integracji drukarki fiskalnej dla Włoch z poziomu zestawu Software Development Kit (SDK) rozwiązania Microsoft Dynamics 365 Commerce Retail.
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 93aca34239affb41998f4309d7c03f29f7b5f003
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: c820c320410c43cafaae43c59cad04efdee24ab2
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8076919"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388451"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-printer-integration-sample-for-italy-legacy"></a>Wskazówki dotyczące wdrażania przykładu integracji drukarki fiskalnej dla Włoch (starsza wersja)
 
 [!include[banner](../includes/banner.md)]
+[!include[banner](../includes/preview-banner.md)]
 
 Ten temat zawiera wskazówki dotyczące wdrażania przykładu integracji drukarki fiskalnej dla Włoch z poziomu zestawu Software Development Kit (SDK) rozwiązania Microsoft Dynamics 365 Commerce Retail na maszynie wirtualnej dewelopera w usłudze Microsoft Dynamics Lifecycle Services (LCS). Aby uzyskać więcej informacji dotyczących tego przykładu integracji fiskalnej, zobacz [Przykład integracji drukarki fiskalnej dla Włoch](emea-ita-fpi-sample.md). 
 
@@ -89,13 +90,13 @@ Aby utworzyć możliwe do wdrożenia pakiety, które zawierają składniki rozwi
 1. Wykonaj kroki opisane w sekcji [Środowisko projektowe](#development-environment) wcześniej w tym temacie.
 2. Wprowadź następujące zmiany w pliku konfiguracji pakietu w folderze **RetailSdk\\aktywów**:
 
-    - W plikach konfiguracji **commerceruntime.ext.config** i **CommerceRuntime.MPOSOffline.Ext.config** dodaj następujący wiersz w sekcji **kompozycja**.
+    1. W plikach konfiguracji **commerceruntime.ext.config** i **CommerceRuntime.MPOSOffline.Ext.config** dodaj następujący wiersz w sekcji **kompozycja**.
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample" />
         ```
 
-    - W pliku konfiguracji **HardwareStation.Extension.config** dodaj następujący wiersz w sekcji **kompozycja**.
+    1. W pliku konfiguracji **HardwareStation.Extension.config** dodaj następujący wiersz w sekcji **kompozycja**.
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample" />
@@ -103,20 +104,56 @@ Aby utworzyć możliwe do wdrożenia pakiety, które zawierają składniki rozwi
 
 3. Wprowadź poniższe zmiany w pliku konfiguracji dostosowań pakietu **Customization.settings** w folderze **BuildTools**:
 
-    - Dodaj poniższy wiersz, aby dołączyć rozszerzenie CRT w pakietach, które można wdrożyć.
+    1. Dodaj poniższy wiersz, aby dołączyć rozszerzenie CRT w pakietach, które można wdrożyć.
 
         ``` xml
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.dll"/>
         ```
 
-    - Dodaj poniższy wiersz, aby dołączyć rozszerzenie stacji sprzętu w pakietach, które można wdrożyć.
+    1. Dodaj poniższy wiersz, aby dołączyć rozszerzenie stacji sprzętu w pakietach, które można wdrożyć.
 
         ``` xml
         <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample.dll"/>
         ```
 
-4. Uruchom narzędzie Wiersz polecenia programu MSBuild dla programu Visual Studio, a następnie uruchom polecenie **msbuild** w folderze zestawu Retail SDK, aby utworzyć pakiety, które można wdrożyć.
-5. Zastosuj pakiety za pośrednictwem usługi LCS lub ręcznie. Aby uzyskać więcej informacji, zobacz [Tworzenie wdrażalnych pakietów](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+4. Wprowadź następujące zmiany w pliku **Sdk.ModernPos.Shared.csproj** w folderze **Packages\_SharedPackagingProjectComponents**, aby uwzględnić pliki zasobów dla Włoch w pakietach do wdrożenia:
+
+    1. Dodaj sekcję **ItemGroup** zawierającą węzły, które wskazują na pliki zasobów dla żądanych tłumaczeń. Upewnij się, że określono poprawne obszary nazw i przykładowe nazwy. Poniższy przykład dodaje węzły zasobów dla lokalizacji **it** i **it-CH**.
+
+        ```xml
+        <ItemGroup>
+            <ResourcesIt Include="$(SdkReferencesPath)\it\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
+            <ResourcesItCh Include="$(SdkReferencesPath)\it-CH\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
+        </ItemGroup>
+        ```
+
+    1. W sekcji **Nazwa celu=CopyPackageFiles** dodaj jeden wiersz dla każdej lokalizacji lokalnej, tak jak pokazano w poniższym przykładzie.
+
+        ```xml
+        <Copy SourceFiles="@(ResourcesIt)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\it" SkipUnchangedFiles="true" />
+        <Copy SourceFiles="@(ResourcesItCh)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\it-CH" SkipUnchangedFiles="true" />
+        ```
+
+5. Wprowadź następujące zmiany w pliku **Sdk.RetailServerSetup.proj** w folderze **Packages\_SharedPackagingProjectComponents**, aby uwzględnić pliki zasobów dla Włoch w pakietach do wdrożenia:
+
+    1. Dodaj sekcję **ItemGroup** zawierającą węzły, które wskazują na pliki zasobów dla żądanych tłumaczeń. Upewnij się, że określono poprawne obszary nazw i przykładowe nazwy. Poniższy przykład dodaje węzły zasobów dla lokalizacji **it** i **it-CH**.
+
+        ```xml
+        <ItemGroup>
+            <ResourcesIt Include="$(SdkReferencesPath)\it\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
+            <ResourcesItCh Include="$(SdkReferencesPath)\it-CH\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
+        </ItemGroup>
+        ```
+
+    1. W sekcji **Nazwa celu=CopyPackageFiles** dodaj jeden wiersz dla każdej lokalizacji lokalnej, tak jak pokazano w poniższym przykładzie.
+
+        ``` xml
+        <Copy SourceFiles="@(ResourcesIt)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\it" SkipUnchangedFiles="true" />
+        <Copy SourceFiles="@(ResourcesItCh)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\it-CH" SkipUnchangedFiles="true" />
+        ```
+
+6. Uruchom narzędzie Wiersz polecenia programu MSBuild dla programu Visual Studio, a następnie uruchom polecenie **msbuild** w folderze zestawu Retail SDK, aby utworzyć pakiety, które można wdrożyć.
+7. Zastosuj pakiety za pośrednictwem usługi LCS lub ręcznie. Aby uzyskać więcej informacji, zobacz [Tworzenie wdrażalnych pakietów](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
 ## <a name="design-of-extensions"></a>Projekt rozszerzenia
 

@@ -2,7 +2,7 @@
 title: Przetwarzanie arkuszy finansowych
 description: Ten temat opisuje funkcje rozwiązania Microsoft Dynamics 365 Finance, które mogą ułatwić przetwarzanie arkusza finansowego, a także zagwarantować rejestrowanie właściwych danych i bezpieczeństwo dla aparatu wewnętrznej kontroli.
 author: kweekley
-ms.date: 08/09/2019
+ms.date: 02/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7f9f4019618891909e674c6b936f79778ac84744
-ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
+ms.openlocfilehash: 7096d8576cf124e5e1d814c360d96639f66a742a
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2021
-ms.locfileid: "7726784"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367899"
 ---
 # <a name="general-journal-processing"></a>Przetwarzanie arkuszy finansowych
 
@@ -101,7 +101,7 @@ Na stronie arkusza dostępny jest przycisk, aby odblokować arkusz o stanie „Z
 Możliwość odwoływania arkusza w przepływie pracy o stanie „nieodwracalny” jest włączana za pomocą przycisku **przepływu pracy** w arkuszu i na stronie **Historia przepływu pracy**. Jest to włączane przez funkcję o nazwie **Resetowanie stanu przepływu pracy dla arkuszy** na stronie **zarządzanie funkcjami**.
 
 ## <a name="delete-journal-lines"></a>Usuń wiersze arkusza
-Możliwość szybkiego usuwania wszystkich wierszy arkusza jest włączana w arkuszu w obszarze **funkcje** > **Usuń wiersze arkusza**. Aby włączyć tę funkcję, w obszarze **zarządzanie funkcjami** wybierz opcję **Usuń optymalizacje wydajności arkusza**.
+Możliwość szybkiego usuwania wszystkich wierszy arkusza jest włączana w arkuszu w obszarze **funkcje** > **Usuń wiersze arkusza**. Aby włączyć tę funkcję, w obszarze **zarządzanie funkcjami** wybierz opcję **Usuń optymalizacje wydajności arkusza**. Ta funkcja ma wpływ na rozszerzenia w tabeli **LedgerJournalTrans** i jest to metoda **Usuń**, ponieważ zestaw wierszy jest usuwany bez wywoływania metody **Usuń** każdego wiersza. 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

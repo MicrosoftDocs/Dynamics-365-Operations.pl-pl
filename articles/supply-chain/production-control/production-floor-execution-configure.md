@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 30f36ccf967c47d6a034c00544d45cdfdc3d1907
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 5a0ead85eaeb6b96b80716614990af8c8e5e70f7
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103395"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384754"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurowanie interfejsu wykonania hal produkcyjnych
 
@@ -78,6 +78,38 @@ Ta funkcja umożliwia dodanie pola wyszukiwania do listy zadań. Pracownicy mog�
 Ta funkcja umożliwia pracownikom raportowanie postępu w realizacji zamówień partii za pomocą interfejsu wykonywania hali produkcyjnej. Raportowanie to obejmuje raportowanie produktów towarzyszących i ubocznych. Aby używać tej funkcji, włącz następujące funkcje w module [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - *Raport dotyczący produktów towarzyszących i ubocznych z interfejsu wykonania hal produkcyjnych*
+
+### <a name="enable-the-display-of-full-serial-batch-and-license-plate-numbers"></a>Włącz wyświetlanie pełnego numeru seryjnego, partii i numeru identyfikacyjnego
+
+Ta funkcja zapewnia lepsze środowisko wyświetlania list numerów seryjnych, partii i numerów identyfikacyjnych w interfejsie wykonywania dla hali produkcyjnej. Wyświetlanie zmienia się z widoku karty z ograniczoną liczbą znaków do widoku listy, który zapewnia wystarczająco dużo miejsca, aby wyświetlić pełne wartości. Lista umożliwia również wyszukiwanie określonych liczb.
+
+Od wersji 10.0.25 Supply Chain Management version ta funkcja jest domyślnie włączona. Administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując *Pokaż pełne numery seryjne, partii i tablic rejestracyjnych w interfejsie wykonawczym hali produkcyjnej* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+### <a name="enable-registering-of-material-consumption"></a>Włącz rejestrację zużycia materiałów
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Ta funkcja umożliwia pracownikom używanie interfejsu wykonywania produkcji do rejestrowania zużycia materiałów, numerów partii i numerów seryjnych. Niektórzy producenci, szczególnie ci w przemyśle przetwórczym, muszą wyraźnie rejestrować ilość zużywanego materiału dla każdej partii lub zlecenia produkcyjnego. Na przykład pracownicy mogą używać wagi do zważenia ilości zużytego materiału podczas pracy. Aby zapewnić pełną identyfikowalność materiałów, organizacje te muszą również rejestrować numery partii, które zostały zużyte do wytworzenia każdego produktu.
+
+Istnieją dwie wersje tej funkcji. Ta funkcja obsługuje tylko pozycje, dla których *nie* włączono obsługi zaawansowanych procesów magazynowych (WMS). Inne obsługują pozycje, dla których *włączono* używanie usług WMS. Aby skorzystać z tej funkcji, włącz jedną lub obie z następujących funkcji w [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (w tej kolejności), w zależności od tego, czy masz elementy, które są włączone dla WMS:
+
+- *(Wersja zapoznawcza) Rejestrowanie zużycia materiału w interfejsie wykonania hal produkcyjnych (inne niż WMS)*
+- *(Wersja zapoznawcza) Rejestrowanie zużycia materiału w interfejsie wykonania hal produkcyjnych (z obsługą WMS)*
+
+> [!IMPORTANT]
+> Można korzystać z funkcji innych niż WMS. Jednak w przypadku korzystania z programu WMS należy włączyć obie funkcje.
+
+### <a name="enable-reporting-on-catch-weight-items"></a>Włącz raportowanie pozycji wagi połowu
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Pracownicy mogą korzystać z interfejsu wykonywania hali produkcyjnej, aby zgłaszać postępy w zamówieniach partii dla pozycji wagi połowu. Zamówienia wsadowe są tworzone na podstawie formuł, które można zdefiniować w taki sposób, aby pozycje wagi połowu były pozycjami formuły, produktami towarzyszącymi i produktami ubocznymi. Formułę można także zdefiniować tak, aby zawierała wiersze formuły dotyczące składników, które zostały określone dla wagi catch. Pozycje w ilości catch używają dwóch jednostek miary do śledzenia zapasów: ilości catch i ilości magazynowej. Na przykład w branży spożywczej mięso pudełek można zdefiniować jako towar w ilości catch, gdzie ilość catch jest używana do śledzenia liczby pudełek, a ilość magazynowa jest używana do śledzenia wagi pudełek.
+
+Aby używać tej funkcji, włącz następujące funkcje w module [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *(Wersja zapoznawcza) Raport pozycji ilości efektywnej z interfejsu wykonania hal produkcyjnych*
 
 ## <a name="work-with-production-floor-execution-configurations"></a>Praca z konfiguracjami wykonania hali produkcyjnej
 

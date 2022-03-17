@@ -2,27 +2,22 @@
 title: Urządzenia peryferyjne
 description: W tym temacie wyjaśniono pojęcia, które są związane z urządzenia peryferyjnymi Commerce.
 author: BrianShook
-ms.date: 02/04/2022
-ms.topic: overview
-ms.prod: ''
-ms.technology: ''
-ms.search.form: RetailTerminalTable, RetailDevice, RetailHardwareProfile
+ms.date: 03/01/2022
+ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.custom:
 - "268444"
 - intro-internal
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e60b369feff5bf17f58d6a3b4c9e9b290343b1ae
-ms.sourcegitcommit: 39f1455215e0363cd1449bbc6bdff489097f9ded
+ms.openlocfilehash: fa9b8c79d1b3b5ed04a7d277bf09cd05dbd332d2
+ms.sourcegitcommit: 116898def829c0f78bda8a117242aa308793465d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8092491"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8370983"
 ---
 # <a name="peripherals"></a>Urządzenia peryferyjne
 
@@ -45,7 +40,7 @@ Urządzenia mogą być mapowane do następujących typów aplikacji: Retail Mode
 
 ### <a name="modern-pos"></a>Modern POS
 
-Modern POS to oprogramowanie punktu sprzedaży dla systemu Microsoft Windows. Może być instalowane w systemach operacyjnych Windows 10.
+Modern POS to oprogramowanie punktu sprzedaży dla systemu Microsoft Windows. Można go wdrożyć w systemach operacyjnych Windows 10 i Windows 11.
 
 ### <a name="cloud-pos"></a>Cloud POS
 
@@ -108,7 +103,7 @@ Konsole do wpisywania osobistych numerów identyfikacyjnych (PIN) są obsługiwa
 
 ### <a name="secondary-display"></a>Ekran dodatkowy
 
-Po skonfigurowaniu ekranu dodatkowego na ekranie numer 2 w systemie Windows będą pokazywane podstawowe informacje. Zadaniem ekranu dodatkowego jest obsługa rozszerzenia niezależnego dostawcy oprogramowania (ISV), ponieważ w standardzie ekran ten nie jest konfigurowalny i pokazuje ograniczoną treść.
+Po skonfigurowaniu ekranu dodatkowego na ekranie numer 2 w systemie Windows będą pokazywane podstawowe informacje. Domyślnie wyświetlacz pomocniczy nie jest konfigurowalny i wyświetlana jest ograniczona zawartość. Celem dodatkowego wyświetlacza jest obsługa rozszerzenia niezależnego dostawcy oprogramowania (ISV). 
 
 ### <a name="payment-device"></a>Urządzenie płatnicze
 
@@ -132,7 +127,7 @@ Aby zagwarantować możliwość współpracy jak największej gamy urządzeń z 
 Drukowanie paragonów w punkcie sprzedaży jest zoptymalizowane dla standardu OPOS. Drukowanie przez mechanizm OPOS często jest znacznie szybsze niż drukowanie za pośrednictwem systemu Windows. Dlatego dobrze jest używać standardu OPOS szczególnie w środowiskach, gdzie są drukowane paragony 40-kolumnowe, a transakcje muszą być szybko realizowane. Dla większości urządzeń używa się formantów OPOS. Jednak niektóre drukarki paragonów OPOS obsługują również sterowniki systemu Windows. Używanie sterownika systemu Windows zapewnia dostęp do najnowszych czcionek i pozwala ustawić jedną drukarkę sieciową dla wielu kas. Istnieją jednak wady używania sterowników systemu Windows. Oto kilka z nich:
 
 -   Gdy są używane sterowniki dla systemu Windows, obrazy przed wydrukowaniem są renderowane. W związku z tym drukowanie najczęściej jest wolniejsze niż w drukarkach wykorzystujących formanty OPOS.
--   Urządzenia podłączone za pośrednictwem drukarki („łańcuchowo”) mogą nie działać poprawnie w przypadku używania sterowników systemu Windows. Na przykład szuflada kasowa może się nie otwierać lub drukarka pokwitowań może działać w nieoczekiwany sposób.
+-   Urządzenia podłączone za pośrednictwem drukarki („łańcuchowo”) mogą nie działać poprawnie w przypadku używania sterowników systemu Windows. Na przykład szuflada na gotówkę może się nie otworzyć lub drukarka paragonów może nie działać zgodnie z oczekiwaniami.
 -   Standard OPOS obsługuje także szerszy zestaw zmiennych specyficznych dla drukarek paragonów, takich jak obcinanie papieru czy drukowanie pokwitowań.
 -   Drukarki systemu Windows nie są obsługiwane przez stację sprzętową usług IIS. 
 
@@ -176,15 +171,15 @@ Aby korzystać z dedykowanej stacji sprzętowej, wykonaj poniższe kroki.
 1. Otwórz Modern POS w trybie nieszufladowym i użyj operacji **Zarządzaj stacjami sprzętowymi**, aby włączyć możliwości stacji sprzętowych. Dedykowana stacja sprzętowa będzie domyślnie aktywna. 
 1. Wyloguj się z Modern POS. Następnie zaloguj się ponownie i otwórz zmianę. Urządzenia peryferyjne, które są skonfigurowane w profilu sprzętowym, będą teraz możliwe do użycia. 
 
-### <a name="shared"></a>Wspólna 
+### <a name="shared"></a>Wspólna
 
 Czasami nazywane jest również stacją sprzętową „IIS”; „IIS”, która oznacza, że aplikacja punktu sprzedaży łączy się z stacją sprzętową za pośrednictwem internetowych usług informacyjnych Microsoft. Aplikacja punktu sprzedaży łączy się ze stacją sprzętową IIS za pośrednictwem usług internetowych uruchomionych na komputerze, do którego są podłączone urządzenia. Jeśli jest wykorzystywana dzielona stacja sprzętowa, urządzenia peryferyjne podłączone do stacji sprzętowej mogą być używane przez dowolną kasę w punkcie sprzedaży znajdującą się w tej samej sieci, co stacja sprzętowa z usługami IIS. Ponieważ tylko aplikacja Modern POS for Windows i Android zawiera wbudowaną obsługę urządzeń peryferyjnych, wszystkie pozostałe aplikacje Modern POS muszą używać stacji sprzętowej z usługami IIS do komunikowania się z urządzeniami peryferyjnymi punktu sprzedaży skonfigurowanymi w profilu sprzętu. W związku z tym każde wystąpienie stacji sprzętowej IIS wymaga komputera, na którym są uruchomione usługa sieci web i aplikacja komunikujące się z urządzeniami. 
 
-Współużytkowana Stacja sprzętowa może być używana do zezwalania wielu klientom punktu sprzedaży na udostępnianie urządzeń peryferyjnych lub może być używana do zarządzania ustalonym zbiorem lub urządzeniami peryferyjnymi dla jednego punktu sprzedaży. 
+Udostępniona stacja sprzętowa może służyć do umożliwienia wielu klientom punktów sprzedaży współużytkowania urządzeń peryferyjnych lub do zarządzania ustalonym zestawem urządzeń peryferyjnych dla jednego punktu sprzedaży. 
 
 Jeśli Stacja sprzętowa jest używana do obsługi udostępniania urządzeń peryferyjnych między wieloma klientami punktu sprzedaży, należy użyć tylko szuflady środków pieniężnych, drukarek paragonów i terminali płatności. Nie można bezpośrednio podłączać autonomicznych czytników kodów kreskowych, czytników kart magnetycznych, wyświetlaczy wierszowych, wag ani innych urządzeń. W przeciwnym razie wystąpią konflikty, gdy wiele urządzeń punktu sprzedaży będzie próbowało zarezerwować te urządzenia peryferyjne w tym samym czasie. Oto jak są rozwiązywane konflikty dla obsługiwanych urządzeń:
 
--   **Szuflada kasowa** — Szuflada kasowa jest otwierana za pomocą zdarzenia wysyłanego do urządzenia. Jedyny problem, który może wystąpić przy wywoływaniu szuflady kasowej, dotyczy sytuacji, gdy szuflada jest już otwarta. W przypadku wspólnych stacji sprzętowych należy dla szuflady kasowej w profilu sprzętu ustawić wartość **Udostępniona**. Ustawienie to sprawia, że podczas wysyłania polecenia otwarcia aplikacja punktu sprzedaży nie sprawdza, czy szuflada kasowa jest już otwarta.
+-   **Szuflada kasowa** — Szuflada kasowa jest otwierana za pomocą zdarzenia wysyłanego do urządzenia. Jeśli szuflada kasowa jest wywoływana, gdy szuflada jest już otwarta, mogą wystąpić problemy. Szuflada kasowa używana w konfiguracji współużytkowanej stacji sprzętowej powinna być ustawiona na **Udostępniona**. Ustawienie to sprawia, że podczas wysyłania polecenia otwarcia aplikacja punktu sprzedaży nie sprawdza, czy szuflada kasowa jest już otwarta.
 -   **Drukarka paragonów** — Jeżeli w tym samym momencie do stacji sprzętowej zostaną wysłane dwa polecenia drukowania paragonów, jedno z poleceń może zostać utracone, w zależności od urządzenia. Niektóre urządzenia mają wewnętrzną pamięć lub funkcję buforowania, który może zapobiec występowaniu tego problemu. Jeśli polecenie drukowania się nie powiedzie, kasjer otrzymuje komunikat o błędzie i może ponowić próbę wykonania polecenia drukowania z aplikacji punktu sprzedaży.
 -   **Terminal płatniczy** — Jeśli kasjer próbuje opłacić transakcję w terminalu płatniczym, który jest już używany, komunikat powiadamia go, że terminal jest używany, i prosi kasjera, aby spróbował później. Zwykle kasjerzy widzą, że terminal jest już używany, i czekają na zakończenie drugiej transakcji, zanim ponownie spróbują sfinalizować swoją.
 
@@ -205,7 +200,7 @@ Logika sterująca urządzeniami peryferyjnymi połączonymi fizycznie i adresowa
 ## <a name="setup-and-configuration"></a>Instalacja i konfiguracja
 ### <a name="hardware-station-installation"></a>Instalacja stacji sprzętowej
 
-Aby uzyskać więcej informacji, zobacz [Konfiguracja i instalacja stacji sprzętowej](retail-hardware-station-configuration-installation.md).
+Aby uzyskać wskazówki dotyczące instalowania stacji sprzętowej IIS, zobacz [Konfiguracja i instalacja programu Retail hardware station](retail-hardware-station-configuration-installation.md).
 
 ### <a name="modern-pos-for-windows-setup-and-configuration"></a>Instalacja i konfiguracja programu Modern POS for Windows
 
@@ -431,7 +426,7 @@ Sieciowe urządzenia peryferyjne mogą być obsługiwane bezpośrednio przez sta
 </tbody>
 </table>
 
-### <a name="all-modern-pos-clients-shared-an-iis-hardware-station"></a>Wszystkie urządzenia klienckie programu Modern POS dzielą stację sprzętową z usługami IIS
+### <a name="all-modern-pos-clients-that-share-an-iis-hardware-station"></a>Wszystkie urządzenia klienckie programu Modern POS dzielą stację sprzętową z usługami IIS
 
 > [!NOTE]
 > Kiedy stacja sprzętowa z usługami IIS jest „udostępniona”, wiele urządzeń może używać tej stacji w tym samym czasie. W tym scenariuszu należy użyć tylko urządzeń wymienionych w tabeli poniżej. Jeśli spróbujesz współużytkować urządzenia, które nie są tutaj wymienione, takiej jak skanery kodów kreskowych i czytniki kart magnetycznych, wystąpią błędy w chwili, gdy wiele urządzeń będzie próbowało zarezerwować to samo urządzenie peryferyjne. W przyszłości taka konfiguracja będzie technicznie niemożliwa do wykonania.
@@ -487,7 +482,7 @@ Sieciowe urządzenia peryferyjne mogą być obsługiwane bezpośrednio przez sta
 </table>
 
 ## <a name="configuration-for-supported-scenarios"></a>Konfiguracja dla obsługiwanych scenariuszy
-Aby uzyskać więcej informacji dotyczących sposobu tworzenia profili sprzętu, zobacz [Definiowania klientów w kanałach, w tym kas i stacji sprzętowych, oraz zarządzanie nimi](define-maintain-channel-clients-registers-hw-stations.md). 
+Aby uzyskać więcej informacji na temat tworzenia profilów sprzętowych, odwiedź sekcję [Łączenie urządzeń peryferyjnych z punkt sprzedaży (POS)](define-maintain-channel-clients-registers-hw-stations.md). 
 
 ### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a>Modern POS for Windows ze stacją sprzętową z funkcją IPC (wbudowaną)
 
@@ -623,9 +618,8 @@ Następujące urządzenia peryferyjne zostały przetestowane przy użyciu stacji
 | Wytwórca | Model    | Interfejs | Komentarze                |
 | ------------ | -------- | --------- | ----------------------- |
 | Epson        | TM-T88V  | OPOS      |                         |
-| Epson        | TM-T88VI | OPOS      |                         |
-| Epson        | TM-T88   | Niestandardowe    | Połączenie przez sieć   |
-| HP           | F7M67AA  | OPOS      | Zasilanie przez USB             |
+| Epson        | TM-T88IV | OPOS      |                         |
+| HP           | H300     | OPOS      | Zasilanie przez USB             |
 | Star         | TSP650II | Niestandardowe    | Połączenie przez sieć   |
 | Star         | mPOP     | OPOS      | Połączenie przez Bluetooth |
 | Toshiba      | HSP100   | OPOS      |                         |
@@ -637,30 +631,21 @@ Następujące urządzenia peryferyjne zostały przetestowane przy użyciu stacji
 #### <a name="bar-code-scanner"></a>Skaner kodów kreskowych
 
 | Wytwórca  | Model         | Interfejs | Komentarze |
-|---------------|---------------|-----------|----------|
-| Motorola      | DS9208        | OPOS      |          |
-| Honeywell     | 1900          | UWP       |          |
-| Symbol        | LS2208        | OPOS      |          |
-| HP Integrated | E1L07AA       | OPOS      |          |
+| ------------- | ------------- | --------- | -------- |
 | Datalogic     | Magellan 8400 | OPOS      |          |
+| Honeywell     | 1900          | UWP       |          |
+| HP Integrated | E1L07AA       | OPOS      |          |
+| Symbol        | LS2208        | OPOS      |          |
 
-#### <a name="pin-pad"></a>Konsola PIN
+#### <a name="payment-terminals-and-pin-pads"></a>Terminale płatnicze i PIN pady
 
-| Producent | Model  | Interfejs | Komentarze                                        |
-|--------------|--------|-----------|-------------------------------------------------|
-| VeriFone     | 1000SE | OPOS      | Wymaga dostosowania aplikacji łącznika płatności |
+Dynamics 365 Commerce oferuje rozwiązanie out-of-box do integracji z usługami płatności Adyen. Łącznik [Dynamics 365 Payment dla Adyen](dev-itpro/adyen-connector.md) wykorzystuje niezależny od urządzenia interfejs [programowania aplikacji Adyen Payment Terminal (API)](https://www.adyen.com/blog/introducing-the-terminal-api) i może wchodzić w interakcje ze wszystkimi terminalami płatniczymi obsługiwanymi przez ten interfejs API. Aby uzyskać pełną listę obsługiwanych terminali do płatności, zobacz [terminale Adyen w punkcie sprzedaży](https://www.adyen.com/pos-payments/terminals).
 
-#### <a name="payment-terminal"></a>Terminal płatniczy 
-
-| Producent | Model | Interfejs | Komentarze                                                                       |
-|--------------|-------|-----------|--------------------------------------------------------------------------------|
-| Equinox      | L5300 | Niestandardowy    | Wymaga dostosowania aplikacji łącznika płatności                                |
-| VeriFone     | MX925 | Niestandardowy    | Wymaga dostosowania aplikacji łącznika płatności; połączenie przez sieć i USB |
-| VeriFone     | MX915 | Niestandardowy    | Wymaga dostosowania aplikacji łącznika płatności; połączenie przez sieć i USB |
+Można również używać innych dostawców płatności z Dynamics 365 Commerce, tworząc niestandardowy łącznik. Z programem .5 można używać dowolnego terminalu płatności obsługiwanego przez dostawcę płatności Dynamics 365 Commerce. Podobnie, Dynamics 365 Commerce pozwala na dowolny model integracji urządzenia płatniczego obsługiwany przez dostawcę płatności, taki jak lokalny adres IP, interfejs API w chmurze lub bezpośrednie połączenie (na przykład za pośrednictwem USA) z programem POS. Aby uzyskać więcej informacji, zobacz [Tworzenie kompleksowej integracji płatności dla terminala płatniczego](dev-itpro/end-to-end-payment-extension.md).
 
 #### <a name="cash-drawer"></a>Szuflada kasowa
 
-| Producent | Model     | Interfejs | Komentarze                |
+| Wytwórca | Model     | Interfejs | Komentarze                |
 |--------------|-----------|-----------|-------------------------|
 | Star         | mPOP      | OPOS      | Połączenie przez Bluetooth |
 | APG          | Atwood    | Niestandardowy    | Połączenie przez sieć   |
@@ -670,14 +655,14 @@ Następujące urządzenia peryferyjne zostały przetestowane przy użyciu stacji
 
 #### <a name="line-display"></a>Wyświetlacz wierszowy
 
-| Producent  | Model   | Interfejs | Komentarze |
-|---------------|---------|-----------|----------|
-| HP Integrated | G6U79AA | OPOS      |          |
-| Epson         | M58DC   | OPOS      |          |
+| Wytwórca | Model    | Interfejs | Komentarze |
+| ------------ | -------- | --------- | -------- |
+| Epson        | DM-D110  | OPOS      |          |
+| HP           | Seria T | OPOS      |          |
 
 #### <a name="signature-capture"></a>Przechwytywanie podpisu
 
-| Producent | Model  | Interfejs | Komentarze |
+| Wytwórca | Model  | Interfejs | Komentarze |
 |--------------|--------|-----------|----------|
 | Scriptel     | ST1550 | OPOS      |          |
 
@@ -701,43 +686,33 @@ Następujące urządzenia peryferyjne zostały przetestowane przy użyciu dedyko
 
 #### <a name="printer"></a>Drukarka
 
-| Wytwórca | Model    | Interfejs | Komentarze              |
-| ------------ | -------- | --------- | --------------------- |
-| Epson        | TM-T88V  | OPOS      |                       |
-| Epson        | TM-T88VI | OPOS      |                       |
-| Epson        | TM-T88V  | Niestandardowe    | Połączenie przez sieć |
-| HP           | F7M67AA  | OPOS      | Zasilanie przez USB           |
-| Star         | TSP650II | Niestandardowe    | Połączenie przez sieć |
-| Toshiba      | HSP100   | OPOS      |                       |
-| Toshiba      | HSP150   | OPOS      |                       |
-
-
+| Wytwórca | Model    | Interfejs | Komentarze                |
+| ------------ | -------- | --------- | ----------------------- |
+| Epson        | TM-T88V  | OPOS      |                         |
+| Epson        | TM-T88IV | OPOS      |                         |
+| HP           | H300     | OPOS      | Zasilanie przez USB             |
+| Star         | TSP650II | Niestandardowe    | Połączenie przez sieć   |
+| Star         | mPOP     | OPOS      | Połączenie przez Bluetooth |
+| Toshiba      | HSP100   | OPOS      |                         |
+| Toshiba      | HSP150   | OPOS      |                         |
 
 #### <a name="bar-code-scanner"></a>Skaner kodów kreskowych
 
-| Wytwórca  | Model   | Interfejs | Komentarze |
-|---------------|---------|-----------|----------|
-| Motorola      | DS9208  | OPOS      |          |
-| Symbol        | LS2208  | OPOS      |          |
-| HP Integrated | E1L07AA | OPOS      |          |
+| Wytwórca  | Model         | Interfejs | Komentarze |
+| ------------- | ------------- | --------- | -------- |
+| Datalogic     | Magellan 8400 | OPOS      |          |
+| HP Integrated | E1L07AA       | OPOS      |          |
+| Symbol        | LS2208        | OPOS      |          |
 
-#### <a name="pin-pad"></a>Konsola PIN
+#### <a name="payment-terminals-and-pin-pads"></a>Terminale płatnicze i PIN pady
 
-| Producent | Model  | Interfejs | Komentarze                                        |
-|--------------|--------|-----------|-------------------------------------------------|
-| VeriFone     | 1000SE | OPOS      | Wymaga dostosowania aplikacji łącznika płatności |
+Dynamics 365 Commerce oferuje rozwiązanie out-of-box do integracji z usługami płatności Adyen. Łącznik [Dynamics 365 Payment dla Adyen](dev-itpro/adyen-connector.md) wykorzystuje niezależny od urządzenia interfejs [Adyen Payment Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api) i może wchodzić w interakcje ze wszystkimi terminalami płatniczymi obsługiwanymi przez ten interfejs API. Aby uzyskać pełną listę obsługiwanych terminali do płatności, zobacz [terminale Adyen w punkcie sprzedaży](https://www.adyen.com/pos-payments/terminals).
 
-#### <a name="payment-terminal"></a>Terminal płatniczy 
-
-| Producent | Model | Interfejs | Komentarze                                                                       |
-|--------------|-------|-----------|--------------------------------------------------------------------------------|
-| Equinox      | L5300 | Niestandardowy    | Wymaga dostosowania aplikacji łącznika płatności                                |
-| VeriFone     | MX925 | Niestandardowy    | Wymaga dostosowania aplikacji łącznika płatności; połączenie przez sieć i USB |
-| VeriFone     | MX915 | Niestandardowy    | Wymaga dostosowania aplikacji łącznika płatności; połączenie przez sieć i USB |
+Można również używać innych dostawców płatności z Dynamics 365 Commerce, tworząc niestandardowy łącznik. Z programem .5 można używać dowolnego terminalu płatności obsługiwanego przez dostawcę płatności Dynamics 365 Commerce. Podobnie, Dynamics 365 Commerce pozwala na dowolny model integracji urządzenia płatniczego obsługiwany przez dostawcę płatności, taki jak lokalny adres IP, interfejs API w chmurze lub bezpośrednie połączenie (na przykład za pośrednictwem USA) z programem POS. Aby uzyskać więcej informacji, zobacz [Tworzenie kompleksowej integracji płatności dla terminala płatniczego](dev-itpro/end-to-end-payment-extension.md).
 
 #### <a name="cash-drawer"></a>Szuflada kasowa
 
-| Producent | Model     | Interfejs | Komentarze              |
+| Wytwórca | Model     | Interfejs | Komentarze              |
 |--------------|-----------|-----------|-----------------------|
 | APG          | Atwood    | Niestandardowy    | Połączenie przez sieć |
 | Star         | SMD2-1317 | OPOS      |                       |
@@ -780,26 +755,24 @@ Następujące urządzenia peryferyjne zostały przetestowane przy użyciu wspól
 
 #### <a name="printer"></a>Drukarka
 
-| Wytwórca | Model    | Interfejs | Komentarze              |
-| ------------ | -------- | --------- | --------------------- |
-| Epson        | TM-T88V  | OPOS      |                       |
-| Epson        | TM-T88VI | OPOS      |                       |
-| Epson        | TM-T88   | Niestandardowe    | Połączenie przez sieć |
-| HP           | F7M67AA  | OPOS      | Zasilanie przez USB           |
-| Star         | TSP650II | Niestandardowe    | Połączenie przez sieć |
-| Toshiba      | HSP100   | OPOS      |                       |
-| Toshiba      | HSP150   | OPOS      |                       |
+| Wytwórca | Model    | Interfejs | Komentarze                |
+| ------------ | -------- | --------- | ----------------------- |
+| Epson        | TM-T88V  | OPOS      |                         |
+| Epson        | TM-T88IV | OPOS      |                         |
+| HP           | H300     | OPOS      | Zasilanie przez USB             |
+| Star         | mPOP     | OPOS      | Połączenie przez Bluetooth |
+| Toshiba      | HSP100   | OPOS      |                         |
+| Toshiba      | HSP150   | OPOS      |                         |
 
 #### <a name="payment-terminal"></a>Terminal płatniczy
 
-| Wytwórca | Model | Interfejs | Komentarze                                                                       |
-|--------------|-------|-----------|--------------------------------------------------------------------------------|
-| VeriFone     | MX925 | Niestandardowy    | Wymaga dostosowania aplikacji łącznika płatności; połączenie przez sieć i USB |
-| VeriFone     | MX915 | Niestandardowy    | Wymaga dostosowania aplikacji łącznika płatności; połączenie przez sieć i USB |
+Dynamics 365 Commerce oferuje rozwiązanie out-of-box do integracji z usługami płatności Adyen. Łącznik [Dynamics 365 Payment dla Adyen](dev-itpro/adyen-connector.md) wykorzystuje niezależny od urządzenia interfejs [Adyen Payment Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api) i może wchodzić w interakcje ze wszystkimi terminalami płatniczymi obsługiwanymi przez ten interfejs API. Aby uzyskać pełną listę obsługiwanych terminali do płatności, zobacz [terminale Adyen w punkcie sprzedaży](https://www.adyen.com/pos-payments/terminals).
+
+Można również używać innych dostawców płatności z Dynamics 365 Commerce, tworząc niestandardowy łącznik. Z programem .5 można używać dowolnego terminalu płatności obsługiwanego przez dostawcę płatności Dynamics 365 Commerce. Podobnie, Dynamics 365 Commerce pozwala na dowolny model integracji urządzenia płatniczego obsługiwany przez dostawcę płatności, taki jak lokalny adres IP, interfejs API w chmurze lub bezpośrednie połączenie (na przykład za pośrednictwem USA) z programem POS. Aby uzyskać więcej informacji, zobacz [Tworzenie kompleksowej integracji płatności dla terminala płatniczego](dev-itpro/end-to-end-payment-extension.md).
 
 #### <a name="cash-drawer"></a>Szuflada kasowa
 
-| Producent | Model     | Interfejs | Komentarze              |
+| Wytwórca | Model     | Interfejs | Komentarze              |
 |--------------|-----------|-----------|-----------------------|
 | APG          | Atwood    | Niestandardowy    | Połączenie przez sieć |
 | Star         | SMD2-1317 | OPOS      |                       |
@@ -822,7 +795,7 @@ Następujące urządzenia peryferyjne zostały przetestowane przy użyciu wspól
 
 **Rozwiązanie:** Jeden z następujących czynników może powodować ten problem:
 
--   Stacja sprzętowa nie została poprawnie skonfigurowana w centrali. Wykonaj kroki opisane wcześniej w tym temacie, aby sprawdzić, czy profil stacji sprzętowej i stacja sprzętowa są poprawnie wprowadzone.
+-   Stacja sprzętowa nie została poprawnie skonfigurowana w centrali. Aby uzyskać więcej informacji, zobacz [Konfiguracja i instalacja programu Retail hardware station](retail-hardware-station-configuration-installation.md#troubleshooting). 
 -   Nie wykonano zadań aktualizujących konfigurację kanału. W takim przypadku wykonaj zadanie 1070 dotyczące konfigurowania kanału.
 
 ### <a name="modern-pos-doesnt-reflect-new-cash-drawer-settings"></a>Aplikacja Modern POS nie uwzględnia nowych ustawień szuflady kasowej

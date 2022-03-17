@@ -2,7 +2,7 @@
 title: Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Commerce
 description: W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia z Dynamics 365 Commerce.
 author: josaw
-ms.date: 09/27/2021
+ms.date: 03/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b582b8b95fcf2ad45aa1bb49eb5594d30874e0f4
-ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
+ms.openlocfilehash: 7b06f8ca65e4fac13f322f8d72b8ad4f9db8ccd7
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "7559566"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384616"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Commerce
 
@@ -31,7 +31,7 @@ W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do
 Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych funkcji we własnym planowaniu. 
 
 > [!NOTE]
-> Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Operations można znaleźć w temacie [Raporty dotyczące odwołań technicznych](/dynamics/s-e/). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach aplikacji Finance and Operations.
+> Szczegółowe informacje o obiektów w aplikacji Finanse i Działania można znaleźć w [raportach z wykazami parametrów technicznych](/dynamics/s-e/). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach aplikacji Finanse i Działania.
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10021-release"></a>Usunięte lub przestarzałe funkcje w wydaniu rozwiązania Commerce 10.0.21
 
@@ -59,7 +59,7 @@ Zestaw SDK do Retail jest dostarczany w ramach Lifecycle Services (LCS). Ten try
 | **Zamieniona przez inną funkcję?**   |  [Pobieranie próbek i pakietów referencyjnych zestawu SDK do Retail z GitHub i NuGet](../dev-itpro/retail-sdk/sdk-github.md) |
 | **Powiązane obszary produktów**         | Zestaw SDK do Retail |
 | **Opcja wdrażania**              | Wszyscy |
-| **Stan**                         | Przestarzałe: od wersji 10.0.21 zestaw SDK dostarczany za pośrednictwem VM usługi LCS zostanie usunięty w październiku 2022 r. |
+| **Stan**                         | Przestarzałe: od wersji 10.0.21 zestaw SDK dostarczany za pośrednictwem VM usługi LCS zostanie usunięty w kwietniu 2023 r. |
 
 ### <a name="retail-deployable-package-and-combined-pos-hardware-station-and-cloud-scale-unit-installers"></a>Wdrażalny pakiet Retail oraz połączone instalatory punktu sprzedaży, stacji sprzętowej i jednostek skalowania chmury
 
@@ -82,9 +82,9 @@ Aby uzyskać więcej informacji, zobacz:
     + [Jednostka skalowania chmury](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit)
     + [POS, CSU i stacja sprzętowa](https://github.com/microsoft/Dynamics365Commerce.InStore)
 
-### <a name="modernpossln-and-cloudpossln-in-the-retail-sdk"></a>ModernPos.Sln i CloudPOs.sln w zestawie SDK dla Retail
+### <a name="modernpossln-and-cloudpossln-in-the-retail-sdk"></a>ModernPos.Sln i CloudPos.sln w zestawie SDK dla Retail
 
-Opracowywania rozszerzenia POS przy użyciu ModernPos.sln, CloudPOs.sln, POS.Extension.csproj i folderu POS będzie przestarzałe w wersji 10.0.21. W przyszłości należy korzystać z niezależnego pakietu SDK POS dla rozszerzeń POS.
+Opracowywania rozszerzenia POS przy użyciu ModernPos.sln, CloudPos.sln, POS.Extension.csproj i folderu POS będzie przestarzałe w wersji 10.0.21. W przyszłości należy korzystać z niezależnego pakietu SDK POS dla rozszerzeń POS.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -92,7 +92,7 @@ Opracowywania rozszerzenia POS przy użyciu ModernPos.sln, CloudPOs.sln, POS.Ext
 | **Zamieniona przez inną funkcję?**   | [Zestaw SDK do niezależnego pakowania punktu sprzedaży](../dev-itpro/pos-extension/pos-extension-getting-started.md) |
 | **Powiązane obszary produktów**         | Rozszerzenie i wdrażanie Dynamics 365 Commerce POS |
 | **Opcja wdrażania**              | Wszyscy |
-| **Stan**                         | Przestarzałe: od wersji 10.0.21 obsługa łączonych pakietów POS i modelu rozszerzenia przy użyciu ModernPos.Sln, CloudPOs.sln i POS.Extensons.csproj w SDK dla Retail SDK zostanie usunięta w październiku 2022. |
+| **Stan**                         | Przestarzałe: od wersji 10.0.21 obsługa łączonych pakietów POS i modelu rozszerzenia przy użyciu ModernPos.Sln, CloudPOs.sln i POS.Extensons.csproj w SDK dla Retail SDK zostanie usunięta w kwietniu 2023. |
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10017-release"></a>Usunięte lub przestarzałe funkcje w wydaniu rozwiązania Commerce 10.0.17
 

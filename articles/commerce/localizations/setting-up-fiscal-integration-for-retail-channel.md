@@ -2,19 +2,19 @@
 title: Konfigurowanie integracji fiskalnej dla kanałów Commerce
 description: W tym temacie zawarto wskazówki dotyczące konfigurowania funkcji integracji fiskalnej dla kanałów Commerce.
 author: EvgenyPopovMBS
-ms.date: 01/31/2022
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: fd37934e1ebd103d66c5181e0bfb75047f4cb6a3
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: c15104e0f34c1f6cb6a599d506dad741be3e5e9e
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8076970"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388397"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>Konfigurowanie integracji fiskalnej dla kanałów Commerce
 
@@ -46,6 +46,7 @@ Proces konfigurowania integracji fiskalnej obejmuje następujące zadania:
 - Konfigurowanie procesu rejestracji fiskalnej, który określa sekwencję kroków fiskalnych oraz łączników fiskalnych i dostawców dokumentów fiskalnych używanych w każdym kroku.
 - Przypisywanie procesu rejestracji fiskalnej do profili funkcji POS.
 - Przypisywanie profili technicznych łącznika do profili sprzętowych.
+- Przypisz profile techniczne złącza do sprzętu lub profili funkcji w punkcie sprzedaży.
 
 ### <a name="upload-configurations-of-fiscal-document-providers"></a>Wgraj konfiguracje dostawców dokumentów fiskalnych
 
@@ -161,10 +162,12 @@ Aby przypisać podmioty procesu rejestracji fiskalnej do profili POS, wykonaj po
 1. W centrali Commerce przejdź na stronę **Profile funkcjonalności POS** (**Retail i Commerce \> Ustawienia kanału \> Konfiguracja POS \> Profile POS \> Profile funkcjonalności**). 
 1. Przyporządkuj proces rejestracji fiskalnej do profilu funkcjonalności POS.
 1. Wybierz **Edytuj**, a następnie na karcie **Proces rejestracji fiskalnej** w polu **Numer procesu** wybierz proces.
+1. Na karcie **Usługi fiskalne** wybierz profile techniczne łącznika z kasą lokalizacji **łącznika**.
 1. Przejdź do strony **Profil sprzętowy POS** (**Retail i Commerce \> Ustawienia kanału \> Ustawienia punktu sprzedaży \> Profile punktu sprzedaży \> Profil sprzętu**).
 1. Przyporządkuj profile techniczne łączników do profilu sprzętowego. 
 1. Wybierz pozycję **Edytuj**, a następnie na karcie **Fiskalne urządzenia peryferyjne** dodaj wiersz. 
 1. Wybierz profil techniczny łącznika w polu **Identyfikator profilu**.
+1. Na karcie **Peryferia fiskalne** wybierz profile techniczne łącznika z kasą lokalizacji łącznika **Stacja sprzętowa**.
 
 > [!NOTE]
 > Do tego samego profilu sprzętowego można dodać kilka profili technicznych. Jednak profil sprzętowy lub profil funkcjonalności POS powinny mieć tylko jeden punkt styczny z grupą łączników fiskalnych.
@@ -175,6 +178,17 @@ Przepływ rejestracji fiskalnej jest definiowany przez proces rejestracji fiskal
 - Dostawca dokumentów fiskalnych jest również odpowiedzialny za identyfikację łącznika fiskalnego używanego do rejestracji fiskalnej. Jest on zgodny z profilami funkcjonalnymi łącznika, które są uwzględniane w grupie łączników fiskalnych, określonych dla bieżącego kroku procesu rejestracji fiskalnej z profilem technicznym łącznika, który jest skojarzony z profilem sprzętowym Hardware Station, z którą jest sparowany POS.
 - Dostawca dokumentów fiskalnych korzysta z ustawień mapowania danych z konfiguracji dostawcy dokumentów fiskalnych do przekształcania danych transakcji/zdarzeń na podatki i płatności podczas generowania dokumentu fiskalnego.
 - Kiedy dostawca dokumentów fiskalnych generuje dokument fiskalny, łącznik fiskalny może albo wysłać go do urządzenia fiskalnego bez zmian, albo przeanalizować go i zamienić na sekwencję poleceń interfejsu API - to zależy od tego, jak obsługiwana jest komunikacja.
+
+### <a name="set-up-registers-with-fiscal-registration-restrictions"></a>Konfigurowanie rejestrów z ograniczeniami rejestracji fiskalnej
+
+Możesz wybrać rejestry, w których rejestracja fiskalna jest zabroniona, na przykład w przypadkach, w których musisz wykonać tylko operacje niefiskalne, takie jak wyszukiwanie katalogu produktów, wyszukiwanie klientów lub tworzenie wersji roboczej transakcji na tych urządzeniach.
+
+Aby skonfigurować rejestry z ograniczeniami rejestracji fiskalnej, wykonaj następujące kroki.
+
+1. W Commerce headquarters wybierz kolejno pozycje **Handel detaliczny i inny \> Ustawienia kanału \> Integracja fiskalna \> Procesy rejestracji fiskalnej**.
+1. Wybierz żądany proces.
+1. Wybierz kartę **Rejestry w programie POS z ograniczeniami procesów fiskalnych**.
+1. W razie potrzeby dodaj rejestry z ograniczeniami procesu fiskalnego.
 
 ### <a name="validate-the-fiscal-registration-process"></a>Weryfikacja procesu rejestracji fiskalnej
 

@@ -2,7 +2,7 @@
 title: Personalizowanie środowiska użytkownika
 description: W tym temacie wyjaśniono, jak można spersonalizować aplikację.
 author: jasongre
-ms.date: 01/28/2022
+ms.date: 03/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 840a68d506664043c9affb67e801429e0594f0bd
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 4bdce3cd12358112e40a783c73795bd6f35545c8
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075429"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384650"
 ---
 # <a name="personalize-the-user-experience"></a>Personalizowanie środowiska użytkownika
 
@@ -158,6 +158,7 @@ W przypadku niektórych stron zawierających listy funkcja **Dodaj do personaliz
 
 - Aby dodać listę do obszaru roboczego, najpierw należy prze sortować lub przefiltrować listę na stronie, tak aby informacje były wyświetlane tak, jak mają być widoczne w obszarze roboczym. (Jeśli funkcja **Zapisanych widoków** jest włączona, nie można kontynuować, dopóki nie zapiszesz widoku, który ma te warunki.) Następnie wybierz opcję **Dodaj do obszaru roboczego**. Wybierz obszar roboczy, a następnie w polu **Prezentacja** wybierz opcję **Lista**. Po naciśnięciu przycisku **Konfiguruj** pojawi się okno dialogowe, w którym można wybrać kolumny, jakie mają być wyświetlane na liście w obszarze roboczym. Także można wybrać etykietę dla listy w obszarze roboczym.
 - Aby dodać kafelek do obszaru roboczego, najpierw przefiltruj listę, tak aby przedstawiała dane, które mają być podsumowane lub chcesz mieć do nich szybki dostęp. (Jeśli funkcja **Zapisanych widoków** jest włączona, nie można kontynuować, dopóki nie zapiszesz widoku, który ma te warunki.) Następnie wybierz opcję **Dodaj do obszaru roboczego**. Wybierz obszar roboczy, a następnie w polu **Prezentacja** wybierz opcję **Kafelek**. Po naciśnięciu przycisku **Konfiguruj** pojawi się okno dialogowe, gdzie można określić etykietę, która ma być używana dla kafelka w obszarze roboczym. Można również określić, czy na kafelku ma się pojawić liczba elementów. Po dodaniu kafelka do obszaru roboczego można go wybrać, aby otworzyć bieżącą stronę z obszaru roboczego. Następnie można wyświetlić przefiltrowaną listę, która jest skojarzona z kafelkiem.
+    - Począwszy od wersji 10.0.26, jeśli funkcja **Zezwalaj użytkownikom na wybieranie i zmienianie rozmiarów kafelków** jest włączona, możesz wybrać jeden z czterech dostępnych **Rozmiary kafelków** dla nowego kafelka w **Konfiguruj kafelek** okno dialogowe. Ta funkcja umożliwia również korygowanie rozmiaru kafelków po jego utworzeniu bezpośrednio z obszaru roboczego.   
 - Aby dodać łącze do obszaru roboczego, najpierw należy przefiltrować listę na stronie tak, aby pokazywała interesujące Cię dane. (Jeśli funkcja **Zapisanych widoków** jest włączona, nie można kontynuować, dopóki nie zapiszesz widoku, który ma te warunki.) Następnie wybierz opcję **Dodaj do obszaru roboczego**. Wybierz obszar roboczy, a następnie w polu **Prezentacja** wybierz opcję **Łącze**. Po naciśnięciu przycisku **Konfiguruj** pojawi się okno dialogowe, gdzie można określić etykietę, która ma być używana dla łącza. Możesz też opcjonalnie określić etykietę dla sekcji, w której ten link będzie umieszczony. Jeśli ta sekcja nie istnieje, zostanie utworzona nowa sekcja.
 
 > [!NOTE]
@@ -168,6 +169,9 @@ Po dodaniu listy, kafelka lub łącza do obszaru roboczego można otworzyć ten 
 ### <a name="adding-a-summary-from-a-workspace-to-a-dashboard"></a>Dodawanie podsumowania z obszaru roboczego do pulpitu nawigacyjnego
 
 Niektóre obszary robocze zawierają kafelki z liczbami i często je również warto umieścić na pulpicie nawigacyjnym. W obszarze roboczym kliknij prawym przyciskiem myszy kafelek z liczbą, wybierz opcję **Personalizacja**, a następnie w okienku właściwości kafelka wybierz opcję **Przypnij do pulpitu nawigacyjnego**. Następnym razem, kiedy otworzysz pulpit nawigacyjnego (i odświeżysz go), ta liczba zostanie wyświetlona poniżej kafelka nawigacji dla tego obszaru roboczego. Można wybrać tę liczbę, aby przejść bezpośrednio do danych, które reprezentuje.
+
+### <a name="changing-the-size-of-a-tile"></a>Zmiana rozmiaru kafelka
+Począwszy od wersji 10.0.26, funkcja **Zezwalaj użytkownikom na wybieranie i zmienianie rozmiarów kafelków** umożliwia użytkownikom modyfikowanie rozmiaru kafelków innych niż kafelki KPI za pomocą personalizacji. W obszarze roboczym kliknij kafelek prawym przyciskiem myszy i wybierz opcję **Personalizuj**. W oknie właściwości kafelka wybierz żądany rozmiar z opcji **Rozmiar kafelków**. Rozmiar kafelków zostanie skorygowany natychmiast. Jeśli włączona jest funkcja **(Podgląd) zapisanych widoków dla obszarów roboczych**, możesz zapisać tę personalizację w widoku obszaru roboczego.  
 
 ### <a name="personalizing-your-dashboard"></a>Personalizowanie pulpitu nawigacyjnego
 

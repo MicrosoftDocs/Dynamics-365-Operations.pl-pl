@@ -2,13 +2,13 @@
 title: Omówienie faktur od dostawców
 description: Ten temat zawiera ogólne informacje o fakturach od dostawców.
 author: abruer
-ms.date: 06/03/2021
+ms.date: 02/25/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom:
 - "13971"
 - intro-internal
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 22535f4bc320bde096214e2044cfeb00d4e9fbbc
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: b54a60ac3b1868ea7cc5ed88d5a31203b4bd29d3
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985344"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358448"
 ---
 # <a name="vendor-invoices-overview"></a>Omówienie faktur od dostawców
 
@@ -52,9 +52,9 @@ Poniżej oferuje więcej informacji o używaniu stron **Otwarte faktury od dosta
 Po otwarciu faktury od dostawcy z powiązanego zamówienia zakupu system tworzy wiersze faktury z zamówienia zakupu. Domyślnie system pobiera ilości z przyjęcia produktu. Można jednak użyć jednego z następujących zachowań domyślnych:
 
 - **Ilość dostarczana teraz** — należy stosować w przypadku dostaw częściowych. System ustawia wartość domyślną w polu **Ilość** jest pobierana z pola ilości określonej w polu **Dostarczone teraz** na zamówieniu zakupu.
-- **Zamówiona ilość** — ta opcja jest dla dostaw pełnych. System ustawia wartość domyślną w polu **Ilość** jest pobierana z pola ilości określonej w polu **Zamówione** na zamówieniu zakupu.
+- **Zamówiona ilość** — ta opcja jest dla dostaw pełnych. Wartość domyślna ustawiona w polu **Ilość** jest pobierana z pola ilości określonej w polu **Zamówione** na zamówieniu zakupu.
 - **Zarejestrowana ilość** — Użyj tej opcji, jeśli towar wymaga zarejestrowania, jak określono na stronie **grup modeli towarów**. Domyślną wartością w polu **Ilość** jest fizyczna zaktualizowana ilość, która została zarejestrowana.
-- **Ilość na dokumencie przyjęcia produktów** — ta opcja jest używana, jeżeli został już otrzymany dokument przyjęcia produktów dla zamówienia. System przyjmuje wartość domyślną w polu **Ilość** jest określana na podstawie łącznej ilości w dostępnych dokumentach przyjęcia produktów.
+- **Ilość na dokumencie przyjęcia produktów** — ta opcja jest używana, jeżeli został już otrzymany dokument przyjęcia produktów dla zamówienia. Domyślna wartość w polu **Ilość** jest łączną ilością w dostępnych dokumentach przyjęcia produktów.
 - **Zarejestrowane ilości i usługi** — zaznacz tę opcję, jeśli zostały zarejestrowane ilości w arkuszach przyjęć towarów magazynowanych lub towarów, które nie są magazynowane. Ta opcja dotyczy także usług, niezależnie od tego, czy są zarejestrowane.
 
 Jeśli z firma używa uzgadniania faktur, można wyświetlić wyniki uzgadniania ilości w kolumnie **Dopasowanie ilości dokumentów przyjęcia produktów**. Można również nacisnąć przycisk **Szczegóły uzgadniania** na karcie **Przegląd** okienka akcji, aby wyświetlić wyniki uzgadniania ilości.
@@ -65,7 +65,7 @@ Do faktury od dostawcy można dodać wiersz, którego nie było w zamówieniu za
 
 ## <a name="submitting-a-vendor-invoice-for-review"></a>Przesyłanie faktury od dostawcy do przeglądu
 
-Organizacja może używać przepływu pracy do zarządzania procesem przeglądu faktur od dostawców. Przegląd za pomocą przepływu pracy może być wymagany dla nagłówka faktury i/lub wiersza faktury. Formanty przepływu pracy są stosowane do nagłówka lub wiersza, w zależności od tego, gdzie był ustawiony fokus przed wybraniem formantu. Zamiast przycisku **Księguj** widoczny będzie przycisk **Prześlij**, który służy do wysyłania przez proces przeglądu faktury od dostawcy.
+Organizacja może używać przepływu pracy do zarządzania procesem przeglądu faktur od dostawców. Przegląd za pomocą przepływu pracy może być wymagany dla nagłówka faktury i/lub wiersza faktury. Formanty przepływu pracy są stosowane do nagłówka lub wiersza, w zależności od tego, gdzie był ustawiony fokus przed wybraniem formantu. Zamiast przycisku **Księguj** widoczny będzie przycisk **Prześlij**, który wysyła przez proces przeglądu faktury od dostawcy.
 
 ### <a name="preventing-invoice-from-being-submitted-to-workflow"></a>Uniemożliwianie przesyłania faktury do przepływu pracy 
 
@@ -102,7 +102,7 @@ Można określić liczbę faktur do uwzględnienia w partii oraz liczbę godzin 
 
 ## <a name="working-with-multiple-invoices"></a>Korzystanie z wielu faktur
 
-Można pracować z wieloma fakturami w tym samym czasie i księgować je wszystkie równocześnie. Jeśli zachodzi potrzeba utworzenia wielu faktur, użyj strony **oczekujących faktur od dostawcy**. Jeśli musisz zaksięgować i wydrukować wiele faktur od dostawcy, użyj arkusza zatwierdzania faktur. Jeśli używasz arkusza zatwierdzania faktur, przynajmniej jeden dokument przyjęcia produktów musi być zaksięgowany dla zamówienia zakupu oraz faktura dla zamówienia zakupu musi być zaksięgowana w rejestrze faktur. Informacje finansowe dla faktury pochodzą z faktury, która została zaksięgowana w rejestrze.
+Można pracować z wieloma fakturami w tym samym czasie i księgować je wszystkie równocześnie. Jeśli zachodzi potrzeba utworzenia wielu faktur, użyj strony **oczekujących faktur od dostawcy**. Jeśli musisz zaksięgować i wydrukować wiele faktur od dostawcy, użyj **arkusza zatwierdzania faktur**. Jeśli używasz **arkusza zatwierdzania faktur**, przynajmniej jeden dokument przyjęcia produktów musi być zaksięgowany dla zamówienia zakupu oraz faktura dla zamówienia zakupu musi być zaksięgowana w rejestrze faktur. Informacje finansowe dla faktury pochodzą z faktury, która została zaksięgowana w rejestrze.
 
 ## <a name="recovering-vendor-invoices-that-are-being-used"></a>Odzyskiwanie obecnie używanych faktur od dostawców
 

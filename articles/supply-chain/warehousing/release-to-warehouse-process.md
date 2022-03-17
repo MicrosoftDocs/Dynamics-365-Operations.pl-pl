@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-13
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 6c8aa0338ab30e6366601e3759141c7e41bf99fb
-ms.sourcegitcommit: ab1455c67f6ee6ca36bec148bea0dbb0f7704eda
+ms.openlocfilehash: 3269bf3f8a5475fb85e6b51514db29006be9aab1
+ms.sourcegitcommit: b52ff5dfd32580121f74a5f262e5c2495e39d578
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "7428956"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376215"
 ---
 # <a name="release-to-warehouse"></a>Zwolnij do magazynu
 
@@ -125,6 +125,7 @@ Aby skonfigurować zadanie wsadowe, które zwalnia zamówienia sprzedaży, wykon
     - **Ilość do zwolnienia** — określa, czy do magazynu ma być zwolniona cała ilość czy tylko ilość fizycznie dostępna.
     - **Zezwalaj na częściowe zwalnianie zamówień** — umożliwia określenie, czy pozostałe ilości częściowo zwolnionych zamówień mają być zwalniane do magazynu.
     - **Zachowaj rezerwacje w przypadku niepowodzenia zwolnienia** — umożliwia określenie, czy ilości automatycznie zarezerwowane dla zamówienia sprzedaży powinny pozostać zarezerwowane w przypadku niepowodzenia procesu zwalniania do magazynu.
+    - **Wydania grupowe według klienta** – opcja określa, czy system ma przetwarzać operacje zwalniania do magazynu osobno dla każdego odbiorcy czy też wszystkie zamówienia sprzedaży mają być zwalniane jednocześnie. Gdy ta opcja jest ustawiona na *Tak*, system gromadzi wszystkie wiersze zamówienia sprzedaży dla wybranego odbiorcy, zwalnia te zamówienia do magazynu, a następnie przetwarza następnego odbiorcę. Jeśli ta opcja jest ustawiona na *Nie*, system zwolni wszystkie dostępne wiersze z zamówienia sprzedaży w jednym wystąpieniu zwolnienia do magazynu. Włączając tę opcję, możesz poprawić wydajność i odporność procesu wydania do magazynu. Należy jednak zachować ostrożność podczas korzystania z tej opcji razem z szablonami formularzy skonfigurowanymi do przetwarzania fal przy wydaniu do magazynu, ponieważ ta kombinacja może generować wiele fal dla pojedynczego klienta, z których każdy ma pracę wygenerowaną tylko dla tego klienta . Aby wygenerować pracę łączącą wysyłki dla wielu odbiorców, należy wyłączyć opcję *Grupuj zwolnienia według odbiorców* lub skonfigurować szablony grupy czynności w taki sposób, aby korzystały z przetwarzania odroczonego.
     - **Zablokowana obsługa zamówień** — umożliwia wybór sposobu obsługi aktualnie zablokowanych zamówień sprzedaży przez system, ponieważ są one edytowane przez innych użytkowników lub procesy:
 
         - *Czekaj na odblokowanie zamówień* — system powinien czekać na odblokowanie zamówień przed ich zwolnieniem do magazynu. W tym przypadku proces zwalniania do magazynu może potrwać dłużej.

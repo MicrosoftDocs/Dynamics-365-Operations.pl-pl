@@ -2,7 +2,7 @@
 title: Projektowanie konfiguracji projektu w celu generowania dokumentów wychodzących w formacie programu Excel
 description: Ten temat zawiera informacje o tym, jak zaprojektować format modułu raportowania elektronicznego (ER) do wypełniania w szablonie programu Excel, a następnie generować dokumenty wychodzące w formacie programu Excel.
 author: NickSelin
-ms.date: 01/05/2022
+ms.date: 02/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9b1c83894d93789a270ed4521ba7f80da70285ac
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 1b2f38aa9e5eff9366697afd57ceefd06f026096
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952659"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388270"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Projektowanie konfiguracji projektu w celu generowania dokumentów wychodzących w formacie programu Excel
 
@@ -83,31 +83,48 @@ Na karcie **Mapowanie** projektanta operacji ER można skonfigurować właściwo
 
 ## <a name="range-component"></a>Składnik Zakres
 
-Składnik **Zakres** wskazuje zakres programu Excel, który musi być kontrolowany przez ten składnik ER. Nazwa zakresu jest definiowana we właściwości **Zakres programu Excel** tego składnika.
-
-### <a name="replication"></a>Replikacja
-
-Właściwość **Kierunek replikacji** określa, czy i w jaki sposób zakres będzie powtarzany w wygenerowanym dokumencie:
-
-- Jeśli właściwość **Kierunek replikacji** została ustawiona na wartość **Brak replikacji**, odpowiedni zakres programu Excel nie będzie powtarzany w wygenerowanym dokumencie.
-- Jeśli właściwość **Kierunek replikacji** została ustawiona na wartość **Pionowo**, odpowiedni zakres programu Excel będzie powtarzany w wygenerowanym dokumencie. Każdy replikowany zakres jest umieszczany poniżej oryginalnego zakresu w szablonie programu Excel. Liczba powtórzeń jest definiowana przez liczbę rekordów w źródle danych typu **Lista rekordów** powiązanego z tym składnikiem ER.
-- Jeśli właściwość **Kierunek replikacji** została ustawiona na wartość **Poziomo**, odpowiedni zakres programu Excel będzie powtarzany w wygenerowanym dokumencie. Każdy replikowany zakres jest umieszczany po prawej stronie oryginalnego zakresu w szablonie programu Excel. Liczba powtórzeń jest definiowana przez liczbę rekordów w źródle danych typu **Lista rekordów** powiązanego z tym składnikiem ER.
-
-Aby dowiedzieć się więcej o replikacji poziomej, wykonaj kroki opisane w temacie [Używanie poziomo rozszerzalnych zakresów w celu dynamicznego dodawania kolumn w raportach programu Excel](tasks/er-horizontal-1.md).
-
 ### <a name="nested-components"></a>Składniki zagnieżdżone
 
-Składnik **Zakres** może zawierać inne zagnieżdżone składniki ER, które służą do wprowadzania wartości w odpowiednich nazwanych zakresach programu Excel.
+#### <a name="data-typing"></a>Typy danych
+
+Składnik **Zakres** może zawierać inne zagnieżdżone składniki ER, które służą do wprowadzania wartości w odpowiednich nazwanych zakresach.
 
 - Jeśli dowolny składnik grupy **Tekst** jest używany do wprowadzania wartości, wartość jest wprowadzana w zakresie programu Excel jako wartość tekstowa.
 
     > [!NOTE]
     > Ten wzorzec służy do formatowania wprowadzonych wartości na podstawie ustawień regionalnych zdefiniowanych w aplikacji.
 
-- Jeśli składnik **Komórka** grupy **Excel** jest używany do wprowadzania wartości, wartość jest wprowadzana w zakresie programu Excel jako wartość typu danych definiowana przez powiązanie tego składnika **Komórka** (np **Ciąg**, **Liczba rzeczywista** lub **Liczba całkowita**).
+- Jeśli składnik **Komórka** grupy **Excel** jest używany do wprowadzania wartości, wartość jest wprowadzana w zakresie programu Excel jako wartość typu danych definiowana przez powiązanie tego składnika **Komórka**. Typem danych może być na przykład **Ciąg**, **Liczba rzeczywista** lub **Liczba całkowita**.
 
     > [!NOTE]
     > Ten wzorzec służy do formatowania w aplikacji Excel wprowadzonych wartości na podstawie ustawień regionalnych komputera lokalnego, na którym jest otwierany dokument wychodzący.
+
+#### <a name="row-handling"></a>Obsługa wierszy
+
+Składnik **Zakresu** można skonfigurować jako replikowany pionowo, dzięki czemu w arkuszu programu Excel zostanie wygenerowanych wiele wierszy. Wiersze mogą być generowane przez składnik nadrzędny **Zakres** lub przez jego zagnieżdżone składniki **Zakres**.
+
+W wersji 10.0.26 i nowszej można wymusić, że wygenerowany arkusz będzie wymuszał zachowanie wygenerowanych wierszy na tej samej stronie. W konstruktorze formatów ER ustaw opcję **Zachowaj wiersze razem** na wartość **Tak** dla nadrzędnego składnika **zakresu** w edytowalnym formacie ER. Następnie raport ER spróbuje zachować całą zawartość wygenerowaną przez ten zakres na tej samej stronie. Jeśli wysokość treści przekroczy pozostałą przestrzeń na bieżącej stronie, zostanie dodany podział strony, a treść rozpocznie się na górze następnej nowej strony.
+
+> [!NOTE]
+> Zaleca się skonfigurowanie opcji **Zachowaj wiersze razem** tylko dla zakresów, które obejmują całą szerokość wygenerowanego dokumentu.
+>
+> Opcja **Zachowaj wiersze razem** ma zastosowanie tylko do składników **Excel \> Plik** skonfigurowanych do korzystania z szablonu skoroszytu programu Excel.
+>
+> Opcji **Zachowaj wiersze razem** można używać tylko wtedy, gdy włączona jest funkcja **Włącz użycie biblioteki EPPlus w strukturze raportowania elektronicznego**.
+>
+> Tej funkcji można używać w przypadku składników **zakresu**, które znajdują się w składniku **strony**. Nie ma jednak gwarancji, że [sumy stopek](er-paginate-excel-reports.md#add-data-sources-to-calculate-page-footer-totals) stron będą poprawnie obliczane przy użyciu [źródeł danych gromadzenia](er-data-collection-data-sources.md) danych.
+
+Aby się dowiedzieć, jak używać tej opcji, [wykonaj przykładowe kroki w temacie Projektowanie formatu ER, aby zachować wiersze na tej samej stronie programu Excel](er-keep-excel-rows-together.md).
+
+### <a name="replication"></a>Replikacja
+
+Właściwość **Kierunek replikacji** określa, czy i w jaki sposób zakres będzie powtarzany w wygenerowanym dokumencie:
+
+- **Brak replikacji** — odpowiedni zakres programu Excel nie zostanie powtórzony w generowanym dokumencie.
+- **Pionowy** — Odpowiedni zakres Excela zostanie powtórzony w pionie w wygenerowanym dokumencie. Każdy zreplikowany zakres zostanie umieszczony poniżej oryginalnego zakresu w szablonie programu Excel. Liczba powtórzeń jest definiowana przez liczbę rekordów w źródle danych typu **Lista rekordów** powiązanego z tym składnikiem ER.
+- **Poziome** — Odpowiedni zakres Excela zostanie powtórzony w poziomie w wygenerowanym dokumencie. Każdy zreplikowany zakres zostanie umieszczony po prawej stronie oryginalnego zakresu w szablonie programu Excel. Liczba powtórzeń jest definiowana przez liczbę rekordów w źródle danych typu **Lista rekordów** powiązanego z tym składnikiem ER.
+
+    Aby dowiedzieć się więcej o replikacji poziomej, wykonaj kroki opisane w temacie [Używanie poziomo rozszerzalnych zakresów w celu dynamicznego dodawania kolumn w raportach programu Excel](tasks/er-horizontal-1.md).
 
 ### <a name="enabling"></a>Włączanie
 
@@ -280,12 +297,12 @@ Podczas generowania dokumentu wychodzącego w formacie skoroszytu programu Micro
 
 - Wybierz opcję **Automatycznie**, aby ponownie obliczać wszystkie formuły zależne za każdym razem, gdy do wygenerowanego dokumentu są dołączane nowe zakresy, komórki itp.
 
-    >[!NOTE]
+    > [!NOTE]
     > Może to spowodować problemy z wydajnością działania szablonów programu Excel zawierających wiele powiązanych formuł.
 
 - Wybierz opcję **Ręcznie**, aby uniknąć ponownego obliczania formuł podczas generowania dokumentu.
 
-    >[!NOTE]
+    > [!NOTE]
     > Ponowne obliczanie formuł jest wymuszane ręcznie po otwarciu wygenerowanego dokumentu do podglądu za pomocą programu Excel.
     > Nie należy stosować tej opcji w przypadku konfigurowania miejsca docelowego modułu ER, które zakłada używanie wygenerowanego dokumentu bez obejrzenia jego podglądu w programie Excel (konwersja do pliku PDF, wysłanie wiadomości e-mail itp.), ponieważ wygenerowany dokument może nie zawierać wartości w komórkach z formułami.
 

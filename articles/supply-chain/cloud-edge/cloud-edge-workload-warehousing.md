@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 0d8b0f5a4878a924943f6f8876575d5247875811
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 67f78441b0914d18c2a7853bab54c6b8817be3ac
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068116"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384493"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Obciążenia pracą dotyczące zarządzania magazynem dla jednostek skalowania chmury i urządzenia brzegowego
 
@@ -210,9 +210,9 @@ Następująca funkcja zarządzania magazynem nie jest obecnie obsługiwana w obc
 - Przetwarzanie z pozycjami włączonymi tylko dla zarządzania transportem (TMS).
 - Przetwarzanie ujemnych dostępnych zapasów.
 - Udostępnianie danych między firmami dla produktów. <!-- Planned -->
-- Przetwarzanie pracy magazynowej z uwagami do wysyłki.
-- Przetwarzanie pracy magazynowej przy użyciu automatyzacji obsługi materiałów/magazynu.
+- Przetwarzanie prac magazynowych z notatkami wysyłkowymi (na przykład notatkami pakowania na stacji pakowania).
 - Obrazy danych produktu głównego (na przykład w aplikacji Warehouse Management).
+- Przetwarzanie pracy magazynowej przy użyciu automatyzacji obsługi materiałów/magazynu.
 
 > [!WARNING]
 > Niektóre funkcje magazynu nie będą dostępne dla magazynów, w których jest uruchomione obciążenie pracą zarządzania magazynem w jednostce skalowania, a ponadto nie są obsługiwane w centrum ani w obciążeniu jednostki skalowania.
@@ -236,8 +236,7 @@ W poniższej tabeli pokazano, które funkcje wychodzące są obsługiwane i gdzi
 | Obsługa wysyłek dla grupy czynności                                  | Nie  | Tak|
 | Przetwarzanie pracy magazynowej (z uwzględnieniem numeru identyfikacyjnego na płycie licencyjnej)        | Nie  | Tak, ale tylko dla wymienionych wcześniej obsługiwanych możliwości |
 | Wybór grupy                                              | Nie  | Tak|
-| Ręczne przetwarzanie pakowania, w tym przetwarzanie pracy „Pobieranie zapakowanych kontenerów” | Nie <P>Niektóre operacje mogą być wykonywane po początkowym procesie pobierania obsługiwanym przez jednostkę skalowania, ale nie jest to zalecane z powodu następujących zablokowanych operacji.</p>  | Nie |
-| Usuń kontener z grupy                                  | Nie  | Nie |
+| Ręczne przetwarzanie stacji pakowania  | Nie  | Nie |
 | Przetwarzanie sortowania wychodzących                                  | Nie  | Nie |
 | Drukowanie dokumentów powiązanych z ładunkiem                           | Tak | Tak|
 | List przewozowy i generowanie WPW                            | Nie  | Tak|
@@ -258,6 +257,7 @@ W poniższej tabeli pokazano, które funkcje wychodzące są obsługiwane i gdzi
 | Wycofaj potwierdzenie wysyłki                                | Nie  | Tak|
 | Prośba o anulowanie wierszy zamówień magazynowych                      | Tak | Nie, ale wniosek zostanie zatwierdzony lub odrzucony |
 | <p>Zwolnij zamówienie przeniesienia do odbioru</p><p>Ten proces będzie automatycznie występować w procesie wysyłki zamówienia przeniesienia. Można go jednak użyć ręcznie, aby umożliwić odbiór tablic rejestracyjnych w jednostce wagi, jeśli linie zamówień przychodzących do magazynu zostały anulowane lub jako część procesu wdrażania nowego obciążenia.</p> | Tak | Nie|
+<!--| Ręczne przetwarzanie na stanowisku pakowania, w tym praca „Pobieranie zapakowanych kontenerów”  | Nie  | Tak, ale bez manifestacji przesyłki TMS i publikowania listów przewozowych sprzedaży oraz bez notatek dotyczących pakowania i zdjęć produktów |-->
 
 ### <a name="inbound"></a>Przychodzące
 
@@ -359,6 +359,7 @@ W rozmieszczeniu centrum można ręcznie zarządzać następującymi zadaniami w
     - Procesor komunikatów jednostki skalowania do piasty
     - Rejestruj przyjęcia zamówień źródłowych
     - Zakończ zamówienia magazynowe
+    - Generuj brakujące wychodzące zamówienia magazynu
 
 - Zadaniami wsadowymi można zarządzać w obszarze **Zarządzanie magazynem \> Zadania okresowe \> Zarządzanie obciążeniem**:
 

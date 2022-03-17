@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc8e8ec224208990563e7c0f5d354bb13bb45fbcd35821e7f980b6cfb2c5a379
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a4768ee6ddbaba8ae5bab5e2f9f7df9239efeb90
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777271"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358296"
 ---
 # <a name="key-invoice-data-into-the-ap-system-using-invoice-pool"></a>Wprowadzanie najważniejszych danych faktury do modułu rozrachunków z dostawcami za pomocą puli faktur
 
@@ -58,7 +58,7 @@ W tym temacie opisano sposób używania rejestru faktur do tworzenia faktur. Nas
 6. Wybierz **Zmień widok**.
 7. Wybierz **Widok siatki**.
 8. Wybierz opcję **Zaksięguj**.
-9. Zamknij formularz.
+9. Zamknij stronę.
 10. W okienku nawigacji przejdź do **Moduły > Rozrachunki z dostawcami > Dostawcy > Dostawcy**.
 11. Zaznacz dostawcę, który figurował w zamówieniu zakupu. Na przykład zaznacz dostawcę **1001**.
 12. W okienku akcji wybierz pozycję **Dostawca**.

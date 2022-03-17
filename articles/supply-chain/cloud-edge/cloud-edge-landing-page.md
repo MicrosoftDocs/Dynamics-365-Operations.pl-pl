@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ef81ef7ad726ebe0cc6a0acd58cb68d07e222a42
-ms.sourcegitcommit: 0d14c4a1e6cf533dd20463f1a84eae8f6d88f71b
+ms.openlocfilehash: 30f455f37b5161878cf9c864b92966aa74da051f
+ms.sourcegitcommit: b52ff5dfd32580121f74a5f262e5c2495e39d578
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "8119194"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376189"
 ---
 # <a name="scale-units-in-a-distributed-hybrid-topology"></a>Jednostki skalowania w dystrybuowanej topologii hybrydowej
 
@@ -40,7 +40,7 @@ Możliwości obciążenia są udostępniane w sposób ciągły poprzez stopniowe
 
 ## <a name="scale-units-and-dedicated-workloads"></a>Jednostki skali i wydzielone obciążenie pracą
 
-Jednostki skali rozszerzają centralne środowisko centrum Supply Chain Management przez dodanie dedykowanych zdolności produkcyjnych. Jednostki skalowania mogą być uruchamiane w chmurze. Alternatywnie mogą działać na obrzeżach, lokalnie w lokalnym zakładzie.
+Jednostki skali rozszerzają centralne środowisko centrum Supply Chain Management przez dodanie dedykowanych zdolności produkcyjnych. Jednostki skalowania mogą być uruchamiane w chmurze. Alternatywnie mogą działać na [obrzeżach](cloud-edge-edge-scale-units-lbd.md), lokalnie w lokalnym zakładzie.
 
 :::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 z jednostkami skali.":::
 
@@ -125,33 +125,27 @@ Gdy włączysz środowisko Dynamics 365 do obsługi rozproszonej, hybrydowej top
 - Konfiguracje obciążeń, w tym nazwy i adresy fizyczne podmiotów prawnych i obiektów, aby Twoja topologia mogła być pokazana na mapie geograficznej
 - Zebrane metryki (takie jak opóźnienie i przepustowość), które będą wyświetlane na stronie analizy mapy, aby pomóc Ci wybrać najbardziej korzystne wykorzystanie jednostek skali
 
-Dane przesyłane i przechowywane w centrach danych w USA zostaną usunięte zgodnie z zasadami przechowywania danych firmy Microsoft. Twoja prywatność jest ważna dla Microsoft. Więcej informacji na ten temat znajduje się w [zasadach zachowania poufności informacji ](https://go.microsoft.com/fwlink/?LinkId=521839).
+Dane przesyłane i przechowywane w centrach danych w USA zostaną usunięte zgodnie z zasadami przechowywania danych firmy Microsoft. Twoja prywatność jest ważna dla Microsoft. Więcej informacji na ten temat znajduje się w [Oświadczeniu o ochronie prywatności](https://go.microsoft.com/fwlink/?LinkId=521839).
 
-## <a name="onboarding-in-two-stages"></a>Dołączanie w dwóch etapach
+## <a name="onboard-to-the-distributed-hybrid-topology-for-supply-chain-management"></a>Wbudowany w rozproszoną, hybrydową topologię do Supply Chain Management
 
-Proces dołączania do rozproszonej topologii hybrydowej składa się z dwóch etapów. Na pierwszym etapie należy sprawdzić poprawność dostosowań, aby upewnić się, że działają one w topologii rozproszonej z jednostkami skalowania. Środowiska sandbox i produkcyjne są przenoszone dopiero w drugim etapie.
+### <a name="try-out-the-distributed-hybrid-topology"></a>Wypróbuj rozproszoną topologię hybrydową
 
-### <a name="stage-1-evaluate-customizations-in-one-box-development-environments"></a>Etap 1: ocena dostosowań w jedno-pudełkowych środowiskach programistycznych
+Proces dołączania do rozproszonej topologii hybrydowej składa się z dwóch etapów. Na pierwszym etapie należy [wypróbować](cloud-edge-try-out.md) rozwiązanie i zweryfikować dostosowania, aby upewnić się, że działają w rozproszonej topologii obejmującej jednostki skali. (Do walidacji można użyć istniejących środowisk programistycznych). Następnie można przejść do drugiego etapu, w którym nabywa się środowiska produkcyjne.
 
-Zanim zaczniesz wdrażać swoje piaskownice lub środowiska produkcyjne, zalecamy zbadanie jednostek skalowania w konfiguracji programistycznej, takiej jak środowisko typu one-box (znane również jako środowisko warstwy 1), aby można było weryfikować procesy, dostosowania, i rozwiązania. Na tym etapie dane i dostosowania zostaną zastosowane w środowiskach typu „one-box”. Jedno środowisko pełni rolę centrum, a drugie jednostki skali. Te ustawienia zapewniają najlepszą identyfikację i rozwiązywanie problemów. Do ukończenia tego etapu można również użyć najnowszej kompilacji wczesnego dostępu (PEAP).
-
-W przypadku etapu 1 należy używać [narzędzi wdrażania jednostek skalowania w środowiskach programistycznych o jednym polu](https://github.com/microsoft/SCMScaleUnitDevTools). Te narzędzia umożliwiają konfigurowanie centrów i jednostek skalowania w jednym lub dwóch oddzielnych środowiskach typu one-box. Narzędzia są dostarczane w wersji binarnej oraz w kodzie źródłowym w serwisie GitHub. Przejmij stronę typu wiki projektu, która zawiera [Przewodnik krok po kroku](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide), w którym opisano sposób korzystania z tych narzędzi.
-
-### <a name="stage-2-acquire-add-ins-and-deploy-in-your-sandbox-and-production-environments"></a>Etap 2: Nabywanie dodatków oraz wdrażanie w piaskownicy i środowiskach produkcyjnych
-
-Aby dołączyć jedno ze swoich środowisk piaskownicy lub środowisk produkcyjnych do nowej topologii, należy nabyć dodatki dla co najmniej jednej jednostki skalowania w chmurze (a w przyszłości - dla jednostek skalowania brzegowego). Dodatki przyznają odpowiednie miejsca na projekty i środowiska w [LCS](https://lcs.dynamics.com/), aby można było wdrożyć środowiska jednostek skalowania.
-
-> [!NOTE]
-> Dodatki jednostek skalowania nie są połączone z ograniczoną liczbą użytkowników, ale mogą być używane przez dowolnego użytkownika w istniejącej subskrypcji na podstawie ról przypisanych przez administratora.
+## <a name="select-your-lcs-project-tenant-and-the-detailed-onboarding-process"></a>Wybierz dzierżawę projektu usługi LCS i szczegółowy proces dołączania
 
 Jednostki wagowe są oferowane w wielu jednostkach magazynowych (SKU) i opcjach cenowych. Dlatego możesz wybrać opcję, która najlepiej odpowiada planowanej miesięcznej liczbie transakcji i wymaganiom dotyczącym wydajności.
+
+> [!TIP]
+> Aby określić rozmiar, który najlepiej odpowiada Twoim potrzebom, współpracuj z partnerem wdrożeniowym i firmą Microsoft, aby poznać wymagany miesięczny rozmiar transakcji.
 
 Podstawowa jednostka SKU jest znana jako *Podstawowa*, a bardziej wydajna jednostka SKU jest znana jako *Standardowa*. Każdy SKU jest wstępnie załadowany określoną liczbą miesięcznych transakcji. Możesz jednak zwiększyć miesięczny budżet transakcji, dodając dodatki nadwyżkowe dla każdej jednostki SKU.
 
 :::image type="content" source="media/SKUs-highlevel.png" alt-text="Dodatki dla jednostek skalowania w chmurze.":::
 
-> [!TIP]
-> Aby określić rozmiar, który najlepiej odpowiada Twoim potrzebom, we współpracy z partnerem i firmą Microsoft ustal wielkość wymaganej miesięcznej transakcji.
+> [!NOTE]
+> Dodatki jednostek skalowania nie są połączone z ograniczoną liczbą użytkowników. Są one dostępne dla każdego użytkownika w ramach istniejącej subskrypcji (pod warunkiem, że administrator przypisał im wymagane role użytkownika).
 
 Zakup każdego dodatku jednostki skali nie tylko zapewnia miesięczną liczbę transakcji, ale także uprawnia do określonej liczby miejsc w środowisku w LCS. Za każdy dodatek Jednostki skalowania w chmurze masz prawo do jednego nowego miejsca produkcyjnego i jednego nowego miejsca w piaskownicy. Podczas procesu wdrażania zostanie dodany nowy projekt LCS, który ma te miejsca. Prawa użytkowania dla gniazd są powiązane, więc gniazda muszą być używane jako jednostki skalowania, które mają centrum w chmurze.
 
@@ -159,9 +153,6 @@ Dodatki nadwyżkowe nie uprawniają do nowych miejsc w środowisku.
 
 Jeśli chcesz zdobyć więcej środowisk piaskownicy, możesz kupić dodatkowe zwykłe miejsca w piaskownicy. Firma Microsoft pomoże włączyć te gniazda jako jednostki skalowania piaskownicy dla topologii hybrydowej.
 
-## <a name="onboard-to-the-distributed-hybrid-topology-for-supply-chain-management"></a>Wbudowany w rozproszoną, hybrydową topologię do Supply Chain Management
-
-### <a name="select-your-lcs-project-tenant-and-the-detailed-onboarding-process"></a>Wybierz dzierżawę projektu usługi LCS i szczegółowy proces dołączania
 
 Po zakończeniu planowania sposobu dołączania do rozproszonej, hybrydowej topologii Supply Chain Management, będziesz korzystać z [portalu menedżera jednostek skalowania](https://aka.ms/SCMSUM), aby rozpocząć proces wdrażania. W portalu wybierz kartę **Dynamics 365 Tenants**. Ta karta jest wyświetlana lista dzierżawców, do których należy konto, oraz miejsce, w którym użytkownik jest administratorem projektu usługi LCS.
 

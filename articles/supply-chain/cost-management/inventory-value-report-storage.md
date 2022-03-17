@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: banluo
 ms.search.validFrom: 2021-10-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 3da92c384d3074335067433120eccc97d11b6b81
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: d78cde26d238d18744adde9a576552588736e619
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103947"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384702"
 ---
 # <a name="inventory-value-reports"></a>Raporty wartości zapasów
 
@@ -102,7 +102,7 @@ Strona **Raporty wartości zapasów** zawiera informacje o zawartości zawartej 
         - Towary odebrane, ale jeszcze nie zafakturowane, jeśli opcja **Księguj magazyn fizyczny** jest wyczyszczana dla odpowiedniej grupy modeli pozycji.
         - Pozycje otrzymane i jeszcze nie zafakturowane, gdy opcja **Prześlij paragon produktu w księdze** jest wyczyszczona na **Pokwitowaniu produktu** Skróconej karcie na karcie **Ogólne** w **Parametry dotyczące kont z dostawcami** (**Rachunki z dostawcami \> Ustawienia \> Parametry kont z dostawcami**).
 
-    - **Oblicz średni koszt jednostkowy** – Ustaw dla tej opcji wartość *Tak*, aby wyświetlić kolumnę zawierającą średni koszt jednostkowy. Średni koszt jednostkowy to łączna ilość podzielona przez łączną kwotę.
+    - **Oblicz średni koszt jednostkowy** – Ustaw dla tej opcji wartość *Tak*, aby wyświetlić kolumnę zawierającą średni koszt jednostkowy. Średni koszt jednostkowy to łączna kwota podzielona przez całkowitą ilość.
     - **Całkowita ilość i wartość** — Ustaw tę opcję na *Tak*, aby wyświetlić kolumny, które pokazują łączną ilość inwentarza z natury (i ilości finansowe) oraz łączną ilość inwentarza z natury (i kwoty finansowe). Tę opcję można ustawiać na *Tak* tylko wtedy, gdy wartość opcji **Podsumuj wartości fizyczne i finansowe** jest ustawiona na *Nie*.
     - **Wymiary magazynowe** — w tej siatce zaznacz pole wyboru **Widok** dla każdego wymiaru, który ma być pokazywany w raporcie. Wartości w raporcie będą wyświetlane tylko dla wymiarów, dla których jest włączona opcja **Magazyn finansowy**. W innych wymiarach będą wyświetlane tylko puste kolumny. Dla wymiarów wybranych do pokazania można zaznaczyć pole wyboru **Suma**, aby uwzględnić także sumy.
     - **Identyfikator zasobu** – w opcji **Widok** ustaw wartość *Tak*, aby wyświetlić kolumnę identyfikującą pozycję dla każdego wiersza. Ustaw dla **opcji Suma** wartość *Tak*, aby również uwzględnić sumy. W zależności od typu towaru wymienionego w każdym wierszu kolumna zawiera jeden z następujących typów informacji:

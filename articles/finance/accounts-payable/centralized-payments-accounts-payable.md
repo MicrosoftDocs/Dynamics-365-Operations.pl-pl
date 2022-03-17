@@ -15,20 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3030bc7d2501e2162758c94c0dc1a073655c9c0f
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: df0d2178d1ebd3dcb154e2c4f7821a4007da55d4
+ms.sourcegitcommit: 5033d42a2aac852916d726e40bd98a164d1a837d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182525"
+ms.lasthandoff: 02/23/2022
+ms.locfileid: "8331749"
 ---
 # <a name="centralized-payments-for-accounts-payable"></a>Scentralizowane płatności dla rozrachunków z dostawcami
 
 [!include [banner](../includes/banner.md)]
 
 Organizacje obejmujące wiele firm mogą tworzyć i zarządzać płatnościami za pomocą jednej firmy, która obsługuje wszystkie płatności. Dlatego tych samych płatności nie trzeba wpisywać w wielu firmach. W tym temacie przedstawiono przykłady ilustrujące sposób obsługi księgowania płatności scentralizowanych w różnych scenariuszach.
-
-Organizacje obejmujące wiele firm mogą tworzyć i zarządzać płatnościami za pomocą firmy, która obsługuje wszystkie płatności. Dlatego tych samych płatności nie trzeba wpisywać w wielu firmach. Ponadto organizacja oszczędza czas, ponieważ proces płatności przebiega sprawniej.
 
 W organizacji stosującej scentralizowane płatności występuje wiele firm dla operacji i każdej firma operacyjna zarządza własnymi fakturami od dostawców. Płatności dla wszystkich operacyjnych firm są generowane z jednej firmy nazywanej firmą płatności. W trakcie procesu rozrachunku tworzone są odpowiednie transakcje „należne dla” i „należne od”. Użytkownik może określić, która firma w organizacji ma odbierać transakcje zrealizowanych dodatnich oraz ujemnych różnic kursowych i w jaki sposób mają być obsługiwane transakcje rabatów gotówkowych związane z płatnościami międzyfirmowymi. W wierszu dziennika płatności scentralizowanych **typ konta** powinien być ustawiony jako Dostawca. **Typ konta przeciwstawnego** powinien być ustawiony jako Bank lub Księga. Rachunek bankowy powinien być w bieżącej firmie. 
 

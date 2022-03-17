@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 93f5c3e4951784a6c4925b8f9026816bfaf551ee
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 9af5184da4f9507e3c06464a223f0debaea4430e
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102920"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384675"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Zarządzanie zmianami dotyczącymi produktów inżynieryjnych
 
@@ -217,5 +217,15 @@ Większość pól na zleceniach zmiany technologicznej jest taka sama, jak pola 
 
 Aby skopiować informacje o zmianach dotyczących produktów, których dotyczy problem, można skorzystać z przycisku **Zachowaj/Skopiuj zmiany informacji**.
 
+## <a name="use-electronic-signatures-to-approve-and-active-boms-and-routes"></a>Używanie podpisów elektronicznych do zatwierdzania i aktywnych BOM i tras
+
+Aby używać podpisów elektronicznych do zatwierdzania i/lub aktywowania list materiałowych (BOM) i/lub zmian tras, przejdź do **Administracja organizacji \> Konfiguracja \> Podpis elektroniczny \> Wymagania dotyczące podpisu elektronicznego**. Następnie upewnij się, że dla każdej z następujących pozycji w ustawieniach **Podpis jest ustawiona** wartość *Tak*:
+
+- Aktywowanie listy składowej (BOM) produktu zlecenia zmiany projektowej
+- Aktywowanie marszruty produktu zlecenia zmiany projektowej
+- Zatwierdzenie listy składowej (BOM) produktu zlecenia zmiany projektowej
+- Zatwierdzenie marszruty produktu zlecenia zmiany projektowej
+- Zatwierdzenie BOM wersji projektowych i wersji BOM
+- Zatwierdzenie wersji projektowej i wersji marszrut
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

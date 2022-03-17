@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2d8a2e44713607ff2a4df91271c70d96c4d71d9
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 1b7a3dd75f526a076b6fe696f71ec623e20abb24
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982101"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367892"
 ---
 # <a name="europe-overview"></a>Europa — omówienie
 
@@ -36,13 +36,13 @@ Ten temat zawiera informacje i łącza do zasobów, które mogą pomóc w konfig
 - [Edytowanie identyfikator faktur w zamówieniach sprzedaży dla Europy Wschodniej](emea-edit-invoice-id-sales-orders.md)
 - [Świadectwa wywozowe UE](emea-entry-certificates.md)
 - [Raportowanie listy sprzedaży do UE](emea-eu-sales-list.md)
+  - [Przykład ogólnej listy sprzedaży do UE](emea-eu-sales-list-example.md)
 - [Korekty kursów wymiany](emea-exchange-rate-adjustments.md)
 - [Formaty plików metod płatności](emea-select-file-formats-for-the-method-of-payments.md)
 - [Finansowe (globalizacja) wytyczne dotyczące wpływu Brexitu](https://businesscenter.mbs.microsoft.com/#contentdetail/GuidanceBrexitImpact)
 - [Integracja usługi obrachunkowej (ESR)](emea-fiscal-service-integration.md)
 - [Likwidacja środków trwałych w Estonii i na Litwie](emea-credit-note-reverse-fixed-asset-sale.md)
 - [Generowanie dokumentu wewnętrznego przesunięcia magazynowego](tasks/transfer-document-internal-inventory-transfer.md)
-- [Generowanie raportu listy sprzedaży do UE](tasks/eur-00011-eu-sales-list-report.md)
 - Pliki ISO20022
   - [Importowanie plików ISO20022](emea-ISO20022-file-formats.md)
   - [Importowanie konfiguracji polecenia zapłaty ISO20022](tasks/import-iso20022-direct-debit-configuration.md)
@@ -77,7 +77,6 @@ Ten temat zawiera informacje i łącza do zasobów, które mogą pomóc w konfig
 - [Omówienie polecenia przelewu SEPA](../accounts-payable/sepa-credit-transfer.md)
 - [Omówienie polecenia zapłaty SEPA](../accounts-receivable/sepa-direct-debit-overview.md)
 - [Konfiguracja kompensacji odbiorców oraz dostawców](emea-compensation-customer-vendor-transactions.md)
-- [Konfigurowanie raportowania listy sprzedaży do UE](tasks/eur-00011-eu-sales-list-reporting.md)
 - [Konfigurowanie formatu dokumentu płatności dla faktur projektu](tasks/set-up-payment-slip-format-project-invoices.md)
 - [Konfigurowanie osób podpisujących drukowane formularze](emea-set-up-signers-for-printing-forms.md)
 - [Stornowanie](emea-storno.md)

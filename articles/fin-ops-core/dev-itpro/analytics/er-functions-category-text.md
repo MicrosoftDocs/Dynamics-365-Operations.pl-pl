@@ -2,7 +2,7 @@
 title: Lista funkcji modułu ER w kategorii funkcji tekstowych
 description: Ten temat zawiera ogólne informacje o funkcjach tekstowych obsługiwanych w module Raportowanie elektroniczne (ER).
 author: NickSelin
-ms.date: 09/09/2021
+ms.date: 02/28/2022
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: afe45bf1ff5c641346997aa4f32f3241dce2f0a2
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 5d185c128de1120e93d1779db04a7666ba557707
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075507"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367774"
 ---
 # <a name="list-of-er-functions-of-the-text-category"></a>Lista funkcji modułu ER w kategorii funkcji tekstowych
 
@@ -51,7 +51,7 @@ Funkcje tekstowe raportowania elektronicznego (ER) mogą służyć do wykonywani
 | [Prawa](er-functions-text-right.md) | Ta funkcja zwraca wartość *Ciąg*, która reprezentuje określoną liczbę znaków od końca określonego ciągu. |
 | [Tekst](er-functions-text-text.md) | Ta funkcja zwraca określoną liczbę jako wartość typu *Ciąg* po przekształceniu na ciąg tekstowy, który jest sformatowany zgodnie z ustawieniami regionalnymi serwera bieżącego wystąpienia aplikacji. |
 | [Przetłumacz](er-functions-text-translate.md) | Ta funkcja zwraca wartość typu *Ciąg*, która zawiera wynik zastąpienia określonego tekstu w znakach dla innego dostarczonego zbioru znaków. |
-| [Trim](er-functions-text-trim.md) | Ta funkcja zwraca określony ciąg tekstowy jako wartość typu *Ciąg* po obcięciu spacji wiodących i końcowych oraz usunięciu spacji wielokrotnych spomiędzy wyrazów. |
+| [Trim](er-functions-text-trim.md) | Ta funkcja zwraca określony ciąg tekstowy jako wartość *Ciąg* po zastąpieniu znaków tabulacji, powrotu karetki, wysuwu wiersza i wysuwu formularza pojedynczym znakiem spacji, po obcięciu spacji wiodących i końcowych oraz po wielu spacjach między słowa zostały usunięte. |
 | [Upper](er-functions-text-upper.md) | Ta funkcja zwraca określony ciąg tekstowy jako wartość *Ciąg* po przekonwertowaniu go na duże litery. |
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby

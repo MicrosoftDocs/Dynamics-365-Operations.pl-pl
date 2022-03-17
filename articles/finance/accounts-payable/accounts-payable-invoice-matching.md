@@ -8,7 +8,7 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: VendInvoicePostingHistory
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom:
 - "27361"
 - intro-internal
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7ffcd731b127b9a51551d4fe966dcfd69a34e54
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 2959df58dbde71ba516c1a230e64d38b885c23f5
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984084"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358271"
 ---
 # <a name="accounts-payable-invoice-matching-overview"></a>Omówienie uzgadniania rozrachunków z dostawcami
 
@@ -36,24 +36,24 @@ Załóżmy, że wprowadzasz zamówienie zakupu z jednym wierszem towaru dotyczą
 
 Jest dostarczana faktura na 1000 baterii po cenie jednostkowej 1,10. Wedle zasad firmy w przypadku towaru tej kategorii jest dopuszczalna 5-procentowa rozbieżność. Zatem cena 1,05 mieściłaby się w tych granicach, ale cena 1,10 już jest niedopuszczalna. Podczas wprowadzania danych faktury wykrywana jest rozbieżność uzgadniania cen i można zapisać fakturę w oczekiwaniu na rozwiązanie sprawy rozbieżności.
 
-Można użyć następujących typów uzgadniania faktur w rozliczeniach z dostawcami:
+Można użyć następujących typów **uzgadniania faktur w rozliczeniach z dostawcami**:
 
--   Uzgodnienie sum faktur — uzgadnianie sum na fakturze z sumami na zamówieniu zakupu. Ten typ uzgadniania faktury zawiera najmniej szczegółów, pozwala więc wybrać opcje kontroli maksymalnie skracające czas weryfikacji informacji o uzgadniania faktur.
--   Uzgadnianie dwuelementowe — uzgadnianie informacji o cenie na fakturze z informacjami o cenie na zamówieniu zakupu.
--   Uzgadnianie trzyelementowe — uzgadnianie informacji o cenie na fakturze z informacjami o cenie na zamówieniu zakupu. Pozwala też uzgadniać informacje o ilości na fakturze z informacjami o ilości na dokumentach przyjęcia produktów wybranych dla faktury.
--   Uzgadnianie opłat — uzgadnianie informacji o opłatach (kwotach) na fakturze z informacjami o opłatach (kwotami) zamówieniu zakupu.
+-   **Uzgodnienie sum faktur** — uzgadnianie sum na fakturze z sumami na zamówieniu zakupu. Ten typ uzgadniania faktury zawiera najmniej szczegółów, pozwala więc wybrać opcje kontroli maksymalnie skracające czas weryfikacji informacji o uzgadniania faktur.
+-   **Uzgadnianie dwuelementowe** — uzgadnianie informacji o cenie na fakturze z informacjami o cenie na zamówieniu zakupu.
+-   **Uzgadnianie trzyelementowe** — uzgadnianie informacji o cenie na fakturze z informacjami o cenie na zamówieniu zakupu. Pozwala też uzgadniać informacje o ilości na fakturze z informacjami o ilości na dokumentach przyjęcia produktów wybranych dla faktury.
+-   **Uzgadnianie opłat** — uzgadnianie informacji o opłatach (kwotach) na fakturze z informacjami o opłatach (kwotami) zamówieniu zakupu.
 
 > [!NOTE]
 > Inne formy weryfikacji faktury można realizować za pomocą zasad faktur od dostawców. 
 
 Uzgadnianie dwuelementowe i trzyelementowe zawsze uzgadnia informacje o cenie na podstawie ceny jednostki. Za pomocą tych zasad można też uzgadniać informacje o cenach według ceny całkowitej.
--   Uzgadnianie ceny jednostkowej netto — dopasowywanie informacji dla uzgadniania dwu- i trzyelementowego przez porównywanie ceny jednostkowej netto dla każdego wiersza z odpowiednia ceną jednostkową netto na zamówieniu zakupu. Cena jednostkowa netto jest określana według następującego wzoru: kwota netto wiersza / ilość w wierszu
--   Uzgodnienie cen całkowitych — dopasowywanie informacji dla uzgadniania dwu- i trzyelementowego przez porównywanie ceny jednostkowej netto dla każdego wiersza z odpowiednia kwotą netto na zamówieniu zakupu. Kwota netto jest określana według następującego wzoru: *(cena jednostkowa \* ilość w wierszu) + opłaty za wiersze - rabaty wiersza*. Podczas uzgadniania cen całkowitych według wartości procentowej system porównuje wartości w walucie transakcji. Podczas uzgadniania cen całkowitych według kwoty system porównuje wartości w walucie rozliczeniowej. Podczas częściowej fakturowania wiersza zamówienia zakupu weryfikacja uzgadniania cen całkowitych jest sprawdzana na ostatniej fakturze dla tego wiersza. 
+-   **Uzgadnianie ceny jednostkowej netto** — dopasowywanie informacji dla uzgadniania dwu- i trzyelementowego przez porównywanie ceny jednostkowej netto dla każdego wiersza z odpowiednia ceną jednostkową netto na zamówieniu zakupu. Cena jednostkowa netto jest określana według następującego wzoru: kwota netto wiersza / ilość w wierszu
+-   **Uzgodnienie cen całkowitych** — dopasowywanie informacji dla uzgadniania dwu- i trzyelementowego przez porównywanie ceny jednostkowej netto dla każdego wiersza z odpowiednia kwotą netto na zamówieniu zakupu. Kwota netto jest określana według następującego wzoru: *(cena jednostkowa \* ilość w wierszu) + opłaty za wiersze - rabaty wiersza*. Podczas uzgadniania cen całkowitych według wartości procentowej system porównuje wartości w walucie transakcji. Podczas uzgadniania cen całkowitych według kwoty system porównuje wartości w walucie rozliczeniowej. Podczas częściowej fakturowania wiersza zamówienia zakupu weryfikacja uzgadniania cen całkowitych jest sprawdzana na ostatniej fakturze dla tego wiersza. 
 
-Na ogół obliczenia związane z uzgadnianiem faktur są wykonywane automatycznie podczas edytowania faktur od dostawcy na stronie Faktura od dostawcy. Ewentualnie uzgadnianie faktur może być wykonywane na żądanie, jeśli jest taka potrzeba. Uzgadnianie faktur na żądanie jest kontrolowane dla firmy za pomocą opcji Automatycznie aktualizuj stan nagłówka faktury na stronie Parametry modułu rozrachunków z dostawcami na karcie Weryfikacja faktury. Uzgadnianie faktury może być również wykonane w ramach procesu przeglądania faktury. Można wyświetlić wyniki uzgadniania faktury na stronie Faktura od dostawcy i na pokrewnych stronach uzgadniania faktur.
+Na ogół obliczenia związane z uzgadnianiem faktur są wykonywane automatycznie podczas edytowania faktur od dostawcy na stronie **Faktura od dostawcy**. Ewentualnie uzgadnianie faktur może być wykonywane na żądanie, jeśli jest taka potrzeba. Uzgadnianie faktur na żądanie jest kontrolowane dla firmy za pomocą opcji **Automatycznie aktualizuj stan nagłówka faktury** na stronie **Parametry modułu rozrachunków z dostawcami** na karcie **Weryfikacja faktury**. Uzgadnianie faktury może być również wykonane w ramach procesu przeglądania faktury. Można wyświetlić wyniki uzgadniania faktury na stronie **Faktura od dostawcy** i na pokrewnych stronach uzgadniania faktur.
 
 ## <a name="invoice-totals-matching"></a> Uzgadnianie sum faktur
-Uzgadnianie sum faktury może pomóc zagwarantować, że rozbieżność sum faktury i kwot oczekiwanych nie wykracza poza dopuszczalne limity tolerancji. Na stronie Szczegóły uzgadniania faktur porównywanych jest sześć sum (patrz tabela). Jeśli dopuszczalna tolerancja dla uzgadniania sum faktury wynosi 20%, wartość procentowa odchylenia 100% dla łącznej kwoty rabatu jest uznawana za rozbieżność.
+Uzgadnianie sum faktury może pomóc zagwarantować, że rozbieżność sum faktury i kwot oczekiwanych nie wykracza poza dopuszczalne limity tolerancji. Na stronie **Szczegóły uzgadniania faktur** porównywanych jest sześć sum (patrz tabela). Jeśli dopuszczalna tolerancja dla uzgadniania sum faktury wynosi 20%, wartość procentowa odchylenia 100% dla łącznej kwoty rabatu jest uznawana za rozbieżność.
 
 | Pole Łącznie:    | Rzeczywista suma faktury | Oczekiwana suma faktury | Procent odchylenia | Stan uzgadniania |
 |----------------|----------------------|------------------------|---------------------|--------------|
@@ -64,7 +64,7 @@ Uzgadnianie sum faktury może pomóc zagwarantować, że rozbieżność sum fakt
 | Zaokrąglenie      | 0,00                 | 0,00                   | 0%                  | Powodzenie       |
 | Kwota faktury | 699,88               | 687,50                 | 2%                  | Powodzenie       |
 
-Uzgadnianie sum faktury dla firmy jest kontrolowane za pomocą pola Dopasuj sumy faktur na stronie Parametry modułu rozrachunków z dostawcami. Uzgadnianiu podlegają oczekiwane i rzeczywiste sumy faktur. Oczekiwane sumy faktur są obliczane na podstawie informacji o cenach, opłatach i podatkach z zamówienia zakupu i ilości z faktury.
+Uzgadnianie sum faktury dla firmy jest kontrolowane za pomocą pola **Dopasuj sumy faktur** na stronie **Parametry modułu rozrachunków z dostawcami**. Uzgadnianiu podlegają oczekiwane i rzeczywiste sumy faktur. Oczekiwane sumy faktur są obliczane na podstawie informacji o cenach, opłatach i podatkach z zamówienia zakupu i ilości z faktury.
 
 ## <a name="two-way-price-totals-matching"></a> Dwuelementowe uzgadnianie cen całkowitych
 Za pomocą uzgadniania dwuelementowego można sprawdzić, czy odchylenie między informacjami o cenie w zamówieniu zakupu i na fakturze mieści się w dopuszczalnych granicach tolerancji. Istnieje możliwość porównania informacji o cenie netto każdego wiersza na fakturze oraz wszystkich oczekujących i wcześniej zaksięgowanych wierszy faktury z kwotą netto w odpowiednim wierszu zamówienia zakupu. Taki proces jest nazywany uzgadnianiem cen całkowitych. 
@@ -74,33 +74,33 @@ Uzgodnienie cen całkowitych może być oparte na wartości procentowej, kwocie 
 Jeśli określono procent tolerancji dla całkowitej ceny zakupu, porównywanych jest pięć pól, jak pokazano w tabeli poniżej. Ponieważ procent tolerancji całkowitej ceny zakupu wynosi 10%, 50% odchylenia ceny całkowitej jest uznawane za rozbieżność.
 
 | Stan uzgadniania | Kwota netto faktury | Oczekiwana kwota netto | Nieuzgodniona całkowita cena zakupu (kwota odchylenia) | Procent nieuzgodnionych całkowitych cen zakupu (procent odchylenia) | Procent tolerancji całkowitej ceny zakupu |
-|--------------|--------------------|---------------------|--------------------------------------------------|-----------------------------------------------------------------|----------------------------------------|
-| Powodzenie       | 105,00 zł             | 100,00              | 5,00                                             | 5%                                                              | 10%                                    |
-| Błąd       | 150,00             | 100,00              | 50,00                                            | 50%                                                             | 10%                                    |
+|--------------|--------------------|---------------------|--------------------------------------------------|--------------------------------|---------------------------|
+| Powodzenie       | 105,00 zł             | 100,00              | 5,00                                             | 5%                             | 10%                 |
+| Błąd       | 150,00             | 100,00              | 50,00                                            | 50%                            | 10%                     |
 
 Jeśli określono kwotę tolerancji dla całkowitej ceny zakupu, porównywanych jest pięć pól, jak pokazano w tabeli poniżej. Ponieważ kwota tolerancji całkowitej ceny zakupu wynosi 100,00, wartość odchylenia od ceny całkowitej na poziomie 105,00 jest uznawana za rozbieżność.
 
 | Stan uzgadniania | Kwota netto faktury | Oczekiwana kwota netto | Nieuzgodniona całkowita cena zakupu (kwota odchylenia) | Nieuzgodniona całkowita cena zakupu w walucie rozliczeniowej (kwota odchylenia) | Tolerancja całkowitej ceny zakupu |
-|--------------|--------------------|---------------------|--------------------------------------------------|-------------------------------------------------------------------------|--------------------------------|
-| Powodzenie       | 150,00             | 100,00              | 50,00                                            | 50,00                                                                   | 100,00                         |
-| Błąd       | 205,00             | 100,00              | 105,00 zł                                           | 105,00 zł                                                                  | 100,00                         |
+|--------------|--------------------|---------------------|-----------------------------------------------|-------------------------------|--------------------------------|
+| Powodzenie       | 150,00             | 100,00              | 50,00                                            | 50,00                    | 100,00                         |
+| Błąd       | 205,00             | 100,00              | 105,00 zł                                           | 105,00 zł                  | 100,00                         |
 
 Jeśli dla uzgadnianie całkowitych cen ustawiono tolerancję procentową i kwotową (kwota nieprzekraczalna), obie tolerancje są brane pod uwagę przy ocenie, czy w wierszu występuje rozbieżność uzgadniania. Jeśli wartość procentowa lub kwotowa przekroczy próg tolerancji, tak jak w wierszach 150,00 i 205, 00 w poniższej tabeli, oznacza to, że w wierszu występuje rozbieżność.
 
 | Stan uzgadniania | Kwota netto faktury | Oczekiwana kwota netto | Procent nieuzgodnionych całkowitych cen zakupu (procent odchylenia) | Procent tolerancji całkowitej ceny zakupu | Nieuzgodniona całkowita cena zakupu w walucie rozliczeniowej (kwota odchylenia) | Tolerancja całkowitej ceny zakupu |
-|--------------|--------------------|---------------------|-----------------------------------------------------------------|----------------------------------------|-------------------------------------------------------------------------|--------------------------------|
-| Powodzenie       | 105,00 zł             | 100,00              | 5%                                                              | 10%                                    | 5,00                                                                    | 100,00                         |
-| Błąd       | 150,00             | 100,00              | 50%                                                             | 10%                                    | 50,00                                                                   | 100,00                         |
-| Błąd       | 205,00             | 100,00              | 105%                                                            | 10%                                    | 105,00 zł                                                                  | 100,00                         |
+|--------------|--------------------|---------------------|-----------------------------|------------------|----------------------------------|--------------------------------|
+| Powodzenie       | 105,00 zł             | 100,00              | 5%                     | 10%                         | 5,00           | 100,00                         |
+| Błąd       | 150,00             | 100,00              | 50%                   | 10%                     | 50,00            | 100,00                         |
+| Błąd       | 205,00             | 100,00              | 105%                 | 10%                      | 105,00 zł                                  | 100,00                         |
 
-Uzgadnianie dwuelementowe jest kontrolowane dla firmy za pomocą pola Zasady uzgadniania wierszy na stronie Parametry modułu rozrachunków z dostawcami. W zależności od wyboru dokonanego w polu Zezwalaj na zastępowanie zasad uzgadniania można wybrać uzgadnianie dwuelementowe dla określonego dostawcy, towaru lub kombinacji dostawcy i towaru na stronie Zasady uzgadniania i dla konkretnego zamówienia zakupu na stronie Zamówieni zakupu.
+Uzgadnianie dwuelementowe jest kontrolowane dla firmy za pomocą pola **Zasady uzgadniania wierszy** na stronie **Parametry modułu rozrachunków z dostawcami**. W zależności od wyboru dokonanego w polu **Zezwalaj na zastępowanie zasad uzgadniania** można wybrać uzgadnianie dwuelementowe dla określonego dostawcy, towaru lub kombinacji dostawcy i towaru na stronie **Zasady uzgadniania** i dla konkretnego zamówienia zakupu na stronie **Zamówieni zakupu**.
 
-Uzgadnianie cen całkowitych dla firmy jest kontrolowane za pomocą pola Dopasuj ceny całkowite na stronie Parametry modułu rozrachunków z dostawcami. Na tej stronie określa się również tolerancje procentową i kwotową całkowitej ceny zakupu (kwota nieprzekraczalna).
+Uzgadnianie cen całkowitych dla firmy jest kontrolowane za pomocą pola **Dopasuj ceny całkowite** na stronie **Parametry modułu rozrachunków z dostawcami**. Na tej stronie określa się również tolerancje procentową i kwotową całkowitej ceny zakupu (kwota nieprzekraczalna).
 
 ## <a name="two-way-net-unit-price-matching"></a> Dwuelementowe dopasowanie ceny jednostki netto
 Za pomocą uzgadniania dwuelementowego można sprawdzić, czy odchylenie między informacjami o cenie w zamówieniu zakupu i na fakturze mieści się w dopuszczalnych granicach tolerancji. Można porównać informacje o cenie dla jednostkowej ceny netto każdej pozycji na fakturze. Taki proces jest nazywany uzgadnianiem ceny całkowitej netto. 
 
-Na stronie Szczegóły uzgadniania faktur porównywanych jest dziewięć kwot wiersza (patrz tabela). Jeśli dopuszczalna tolerancja cenowa dla uzgadniania ceny jednostkowej netto wynosi 10%, odchylenie 22,61% dla ceny jednostkowej netto jest uznawane za rozbieżność.
+Na stronie **Szczegóły uzgadniania faktur porównywanych** jest dziewięć kwot wiersza (patrz tabela). Jeśli dopuszczalna tolerancja cenowa dla uzgadniania ceny jednostkowej netto wynosi 10%, odchylenie 22,61% dla ceny jednostkowej netto jest uznawane za rozbieżność.
 
 | Pola wiersza                    | Wartość faktury | Wartość zamówienia zakupu | Procent odchylenia | Stan uzgadniania |
 |-------------------------------|---------------|----------------------|---------------------|--------------|
@@ -114,9 +114,9 @@ Na stronie Szczegóły uzgadniania faktur porównywanych jest dziewięć kwot wi
 | Kwota netto                    | 271,60        | 221,52               | 22,61%              | Błąd       |
 | Cena jednostkowa netto                | 67.9000       | 55.3800              | 22,61%              | Błąd       |
 
-Uzgadnianie dwuelementowe jest kontrolowane dla firmy za pomocą pola Zasady uzgadniania wierszy na stronie Parametry modułu rozrachunków z dostawcami. W zależności od wyboru dokonanego w polu Zezwalaj na zastępowanie zasad uzgadniania można wybrać uzgadnianie dwuelementowe dla określonego dostawcy, towaru lub kombinacji dostawcy i towaru na stronie Zasady uzgadniania i dla konkretnego zamówienia zakupu na stronie Zamówieni zakupu. 
+Uzgadnianie dwuelementowe jest kontrolowane dla firmy za pomocą pola **Zasady uzgadniania wierszy** na stronie **Parametry modułu rozrachunków z dostawcami**. W zależności od wyboru dokonanego w polu **Zezwalaj na zastępowanie zasad uzgadniania** można wybrać uzgadnianie dwuelementowe dla określonego dostawcy, towaru lub kombinacji dostawcy i towaru na stronie **Zasady uzgadniania** i dla konkretnego zamówienia zakupu na stronie **Zamówieni zakupu**. 
 
-Uzgadnianie ceny jednostkowej netto dla firmy jest kontrolowane za pomocą pola Włącz weryfikację uzgadniania faktur na stronie Parametry modułu rozrachunków z dostawcami. Wartości tolerancji procentowej dla ceny jednostkowej netto dla towarów, grup towarów, dostawców, grup dostawców, kombinacji towarów i dostawców lub firm można ustawić na stronie Rozbieżności cenowe.
+Uzgadnianie ceny jednostkowej netto dla firmy jest kontrolowane za pomocą pola **Włącz weryfikację uzgadniania faktur** na stronie **Parametry modułu rozrachunków z dostawcami**. Wartości tolerancji procentowej dla ceny jednostkowej netto dla towarów, grup towarów, dostawców, grup dostawców, kombinacji towarów i dostawców lub firm można ustawić na stronie **Rozbieżności cenowe**.
 
 ## <a name="two-way-price-totals-matching-and-net-unit-price-matching"></a> Dwuetapowe uzgadnianie cen całkowitych i uzgadniania ceny jednostkowej netto
 Uzgadnianie cen całkowitych i uzgadniania ceny jednostkowej netto może być stosowane jednocześnie. W tym przykładzie zakładamy następującą konfigurację:
@@ -162,10 +162,10 @@ Porównywane są te same kwoty wiersza na stronie Szczegóły uzgadniania faktur
 | Ilość fakturowana               | 4,00          |              |
 | Łącznie dopasowanych dokumentów przyjęcia produktów | 0,00          | Błąd       |
 
-Uzgadnianie trzyelementowe jest kontrolowane dla firmy za pomocą pola Zasady uzgadniania wierszy na stronie Parametry modułu rozrachunków z dostawcami. W zależności od wyboru dokonanego w polu Zezwalaj na zastępowanie zasad uzgadniania można wybrać uzgadnianie trzyelementowe dla określonego dostawcy, towaru lub kombinacji dostawcy i towaru na stronie Zasady uzgadniania i dla konkretnego zamówienia zakupu na stronie Zamówieni zakupu.
+Uzgadnianie trzyelementowe jest kontrolowane dla firmy za pomocą pola **Zasady uzgadniania wierszy** na stronie **Parametry modułu rozrachunków z dostawcami**. W zależności od wyboru dokonanego w polu **Zezwalaj na zastępowanie zasad uzgadniania** można wybrać uzgadnianie trzyelementowe dla określonego dostawcy, towaru lub kombinacji dostawcy i towaru na stronie **Zasady uzgadniania** i dla konkretnego zamówienia zakupu na stronie **Zamówieni zakupu**.
 
 ## <a name="charges-matching"></a> Uzgadnianie opłat
-Uzgadnianie opłat może pomóc zagwarantować, że rozbieżność opłat i kwot oczekiwanych nie wykracza poza dopuszczalne procentowe limity tolerancji. Sumy dla każdego kodu opłat mającego zastosowanie do faktury i zamówienia zakupu są porównywane na stronie Porównaj wartości dotyczące opłat — faktura:, jak pokazano w poniższej tabeli. Jeśli dopuszczalna tolerancja dla kodu opłat wynosi 25%, wartość procentowa odchylenia 99 999 999 999,99% dla kodu opłat za Licencję jest uznawana za rozbieżność.
+Uzgadnianie opłat może pomóc zagwarantować, że rozbieżność opłat i kwot oczekiwanych nie wykracza poza dopuszczalne procentowe limity tolerancji. Sumy dla każdego kodu opłat mającego zastosowanie do faktury i zamówienia zakupu są porównywane na stronie **Porównaj wartości dotyczące opłat — faktura:** jak pokazano w poniższej tabeli. Jeśli dopuszczalna tolerancja dla kodu opłat wynosi 25%, wartość procentowa odchylenia 99 999 999 999,99% dla **kodu opłat za Licencję** jest uznawana za rozbieżność.
 
 > [!NOTE] 
 > Procent odchylenia 99 999 999 999,99% oznacza, że oczekiwana kwota na podstawie zamówienia zakupu wynosi zero, a rzeczywista kwota na fakturze jest wartością dodatnią. 
@@ -176,10 +176,10 @@ Uzgadnianie opłat może pomóc zagwarantować, że rozbieżność opłat i kwot
 | Powodzenie               | Transport              | 200                           | 200                             | 0               | 0%                  | 25%                  |
 | Błąd               | Przyspieszone             | 4                             | 2                               | 2               | 100%                | 25%                  |
 
-Uzgadnianie opłat dla firmy jest kontrolowane za pomocą pola Dopasuj opłaty na stronie Parametry modułu rozrachunków z dostawcami. Można skonfigurować procent odchylenia wartości dla opłat na stornie Dozwolone rozbieżności opłat.
+Uzgadnianie opłat dla firmy jest kontrolowane za pomocą pola **Dopasuj opłaty** na stronie **Parametry modułu rozrachunków z dostawcami**. Można skonfigurować procent odchylenia wartości dla opłat na stornie **Dozwolone rozbieżności opłat**.
 
 > [!NOTE]
-> Uzgadniania opłat jest wykonywane tylko dla kodów opłat, dla których opcja Porównaj wartości zamówienia zakupu i faktury na stronie Kod opłat została włączona.
+> Uzgadniania opłat jest wykonywane tylko dla kodów opłat, dla których opcja **Porównaj wartości zamówienia zakupu i faktury** na stronie **Kod opłat** została włączona.
 
 ## <a name="related-functionality"></a> Funkcje powiązane
 Faktury dostawców często są oparte na dokumentach przyjęcia produktów odpowiadających rzeczywistym wysyłkom, a nie wartościom na zamówieniach zakupu. Czasem zafakturowane kwoty nie zgadzają się z kwotami na zamówieniach zakupu, a niekiedy wysłane ilości nie zgadzają się z ilościami zafakturowanymi. Zarządzanie tymi informacjami można uprościć w następujący sposób:

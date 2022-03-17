@@ -2,7 +2,7 @@
 title: Skróty klawiaturowe
 description: W tym temacie przedstawiono omówienie kombinacji klawiszy skrótów, które mogą być używane podczas pracy z aplikacjami Finanse i Działania.
 author: jasongre
-ms.date: 02/11/2022
+ms.date: 03/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,17 +14,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5243ea35138aa37d9fc54821e0923d0fa47c95de
-ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
+ms.openlocfilehash: 7d66c1fd08c29b85ca14bf1ae5d08c603e4a1945
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "8119559"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384570"
 ---
 # <a name="keyboard-shortcuts"></a>Skróty klawiaturowe
 
 [!include [banner](../includes/banner.md)]
-
+[!include [preview banner](../includes/preview-banner.md)]
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
@@ -199,9 +199,12 @@ Użytkownicy mogą zapoznawać się z aktualnie dostępnymi skrótami bezpośred
 | Przejdź do zawartości strony głównej (gdy fokus jest w innym okienku)                    | Alt+M, M                    |
 | Przejdź do okienka pola informacji (może obejmować jego otwarcie)                       | Alt+M, B lub Ctrl+F2         |
 
+> [!NOTE]
+> Funkcja **Usprawnienie działania tabulatorów w formularzach pełnostronicowych**, wprowadzona w wersji 10.0.26, pozwala użytkownikom przechodzić przez wszystkie regiony strony bez konieczności poruszania się między regionami za pomocą myszy lub dedykowanego skrótu klawiaturowego. Nadal możesz używać istniejących skrótów klawiaturowych (takich jak skróty klawiszowe Alt+M), aby szybko przechodzić między regionami na stronie.
+
 ## <a name="personalization-shortcuts"></a>Skróty [personalizacji](personalize-user-experience.md) 
 
-| Funkcja                                                                                                             | Klawisze                               |
+| Funkcja                                                                                                             | Naciśnij klawisz                                |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
 | Przejdź do trybu personalizacji strony                                                                          | Ctrl+Shift+P                        |
 | Użyj narzędzia Zaznaczanie (w trybie personalizacji)                                                                     | S                                   |

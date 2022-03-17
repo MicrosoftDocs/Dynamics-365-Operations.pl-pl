@@ -13,12 +13,12 @@ ms.search.region: Poland
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d0338c988c8e5cff35bb4a98263ffc6a9fec26a
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: bb50deb69af6b28821b3f6b95288ccc1b8fe1a6f
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986343"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384734"
 ---
 # <a name="poland-overview"></a>Polska — omówienie
 
@@ -34,6 +34,7 @@ Ten temat zawiera łącza do zasobów dokumentacji dla Polski.
 - [Przeszacowanie w walucie obcej dla kont bankowych](emea-foreign-currency-revaluation.md)
 - [Opakowanie zwrotne](emea-pol-returnable-packages.md)
 - [Raporty podatków](emea-pol-sales-tax-reports.md)
+- [Intrastat — Polska](emea-pol-intrastat.md)
 - [Standardowy plik audytu (SAF)](emea-pol-standard-audit-file-saf.md)
 - [Odsetki podatkowe i rynkowe](emea-pol-interest-calculation.md)
 - [Zestawienie obrotów i sald](emea-pol-turnover-balances-statement.md)

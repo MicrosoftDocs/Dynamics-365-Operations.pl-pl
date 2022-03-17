@@ -2,7 +2,7 @@
 title: Nowości lub zmiany w aplikacji mobilnej Warehouse Management
 description: W tym temacie wymieniono nowe i zmienione funkcje dla każdej wydanej wersji aplikacji mobilnej Warehouse Management dla firmy Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 01/18/2022
+ms.date: 02/21/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,18 +10,51 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ceb327599bb2651a37ac51c3e0fdffc39d20c7f6
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b146fb12f89559efcb3b0973b0dd1ce9b98ffe2a
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067258"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384378"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Nowości lub zmiany w aplikacji mobilnej Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 W tym temacie wymieniono nowe funkcje, poprawki, ulepszenia i znane problemy dla każdej wydanej wersji aplikacji mobilnej Warehouse Management w Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20170"></a>Wersja 2.0.17.0
+
+Ta wersja wprowadza następujące nowe funkcje, poprawki i ulepszenia:
+
+- Rozwiązano problem z nieprawidłowym skanowaniem kodów kreskowych.
+- Poprawiono problem ze skanowaniem GS1 dla skanera kamery.
+- Poprawiono problem ze skanowaniem kodu GS1 dla skanera kodów kreskowych urządzeń Zebra.
+- Poprawiono dekierowy przepływ informacji, więc wybór karty w deim wróci teraz do głównego przepływu.
+- Dodano obsługę ogólnego przepływu zapytań o dane.
+- Dodano komunikat informujący użytkowników o zmianach stanu łączności sieciowej.
+- Wyrównane uprawnienia magazynu z zasadami zachowania poufności informacji w zakresie Android 10.
+- W przypadku przepływów, które są potrzebne, obrót ilościowy zawiera teraz pozycję, która umożliwia użytkownikom przesłanie pustej wartości liczbowej.
+- Stałe rozymy z orientacją obrotnika ilości.
+- Rozwiązano problem, przez który zakręcanie ilości miałoby przeskok na niewłaściwą wartość.
+- Rozwiązano problem z tym, że dane wejściowe na stronie głównej zostałyby utracone po wejściu ze strony szczegółów.
+- Rozwiązano problem, w którym tekst symbolu zastępczego był traktowany jako wartość wstępnie wybrana na listach wyboru.
+- Przycisk „Prześlij” w krokach potwierdzenia zostanie automatycznie włączony, jeśli istnieją wstępnie wybrane wartości.
+- Poprawiono kartę szczegółów, tak aby wyświetlała możliwie jak najwięcej wierszy dla pól tekstowych z wieloma liniami.
+- Stałą wysokość przycisków „Prześlij” i „Więcej akcji”, dzięki czemu teraz zajmą mniej miejsca na ekranie.
+- Dodano brakujące tytuły list wyboru.
+- Rozwiązano problem z tym, że przycisk Wstecz nie działa.
+- Dodano kilka poprawek i usprawnień nawigacji klawiatury, w tym na następujących stronach:
+  - Logowanie użytkownika
+  - Wybierz połączenie
+  - Edytuj połączenie
+- Stałe przewijanie w przypadku korzystania z nawigacji klawiaturą.
+- Rozszerzone ułatwienia dostępu, w tym następujące usprawnienia:
+  - Stały widoczność i przeciwny kolor.
+  - Uniemożliwia utratę fokusu klawiatury po zamknięciu stron okien podręcznych.
+  - Dodano komunikaty o błędach do narracji.
+  - Zwiększyć rozmiar wartości symbolu zastępczego na transparentie kroku.
+- Poprawiono przykład niestandardowej starszej strony w trybie demonstracyjnym.
 
 ## <a name="version-20150"></a>Wersja 2.0.15.0
 
@@ -39,7 +72,7 @@ Ta wersja wprowadza następujące nowe funkcje, poprawki i ulepszenia:
 ## <a name="version-20130"></a>Wersja 2.0.13.0
 
 Ta wersja wprowadza następujące nowe funkcje, poprawki i ulepszenia:
- 
+
 - Poprawiono przesuwanie między stronami z wygładzonej animacji.
 - Stałe odpowiedzi na licznik odpowiedzi na przeciąganie ruchów i sporadyczne zamrożenie ekranu.
 - Poprawione kombinacje kolorów tekstu i tła w trybie ciemno w celu lepszej czytelności.

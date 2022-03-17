@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 086d05b4080015f6185a083ca20963539f76619f
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: a677eb71f97a953c625a1f667b055e5b7696fbe6
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075026"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384432"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Jak pracownicy korzystają z interfejsu wykonania hal produkcyjnych
 
@@ -71,6 +71,18 @@ Lista aktywnych zadań ma następujące kolumny:
 - **Zakończono** — w tej kolumnie jest wyświetlana ilość, która została już zakończona dla zadania.
 - **Wyrzucono** — w tej kolumnie jest wyświetlana ilość, która została już wyrzucona dla zadania.
 - **Pozostało** — w tej kolumnie jest wyświetlana ilość pozostała do wypełnienia dla zadania.
+
+## <a name="my-jobs-tab"></a>Karta moje zadania
+
+Na **karcie Moje zadania** pracownicy mogą łatwo przeglądać wszystkie zadania nieukończone i niezakończone, które są przypisane specjalnie do nich. Jest to przydatne w firmach, w których zadania są czasami lub zawsze przydzielane określonym pracownikom (zasobom ludzkim), a nie innym rodzajom zasobów (takich jak maszyny). 
+
+System planowania automatycznie przypisuje każde zadanie produkcyjne do określonego rekordu zasobu, a każdy rekord zasobu ma typ (na przykład maszyna lub człowiek). Po skonfigurowaniu pracownika jako pracownika produkcyjnego można skojarzyć konto pracownika z unikalnym rekordem zasobów ludzkich. 
+
+Na **karcie Moje zadania** są wyszczególnione wszystkie nieukończone i niezakończone zadania, które zostały przypisane do rekordu zasobów ludzkich zalogowanego pracownika, o ile którykolwiek pracownik jest zalogowany. Nigdy nie wyświetla zadań, które zostały przypisane do komputera lub innego typu zasobu, nawet jeśli zalogowany pracownik rozpoczął pracę nad tymi zadaniami.
+
+Aby wyświetlić wszystkie zadania, które zostały rozpoczęte przez zalogowanego pracownika, niezależnie od typu zasobu, do których jest przypisane każde zadanie, użyj **karty Aktywne zadania**. Aby wyświetlić wszystkie niezakończone zadania zgodne z konfiguracją lokalnego filtru zadań, niezależnie od pracownika lub stanu rozpoczęcia, **użyj karty Wszystkie zadania**.
+
+![Karta moje zadania.](media/pfei-my-jobs-tab.png "Karta moje zadania")
 
 ## <a name="my-machine-tab"></a>Karta Moje urządzenie
 
@@ -133,6 +145,13 @@ Jeśli zamówienie partii jest tworzone na podstawie wersji formuły, w której 
 
 W takim przypadku pracownik może określić produkt towarzyszący w raporcie, zaznaczając w oknie dialogowym postępu raportu **Warianty produktów towarzyszących**. Pracownik może następnie wybrać spośród wszystkich zwolnionych produktów, które są zdefiniowane jako produkty towarzyszące.
 
+### <a name="reporting-catch-weight-items"></a>Zgłaszanie pozycji wagi połowu
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Pracownicy mogą używać interfejsu wykonywania na hali produkcyjnej do raportowania postępu w zamówieniach partii, które są tworzone dla pozycji wagi połowu. Zamówienia wsadowe są tworzone na podstawie formuł, które można zdefiniować w taki sposób, aby pozycje wagi połowu były pozycjami formuły, produktami towarzyszącymi i produktami ubocznymi. Formułę można także zdefiniować tak, aby zawierała wiersze formuły dotyczące składników, które zostały określone dla wagi catch. Pozycje w ilości catch używają dwóch jednostek miary do śledzenia zapasów: ilości catch i ilości magazynowej. Na przykład w branży spożywczej mięso pudełek można zdefiniować jako towar w ilości catch, gdzie ilość catch jest używana do śledzenia liczby pudełek, a ilość magazynowa jest używana do śledzenia wagi pudełek.
+
 ## <a name="reporting-scrap"></a>Raportowanie odpadków
 
 Gdy pracownik ukończy lub częściowo wykonuje zadanie, może zgłosić odpadki przez zaznaczenie zadania na karcie **Aktywne zadania**, a następnie wybrać **Zgłoś odpadki**. Następnie w oknie dialogowym **Zgłoś odpadki** pracownik wprowadza ilość odpadków za pomocą klawiatury numerycznej. Pracownik również wybiera przyczynę (*Brak*, *Maszyna*, *Operator* lub *Materiały*).
@@ -187,6 +206,13 @@ Można wykonać następujące czynności:
 
 Przycisk **Korygowanie materiału** można skonfigurować w taki sposób, aby był wyświetlany na pasku narzędzi po prawej stronie. (Więcej informacji znajdziesz w [Zaprojektuj interfejs wykonawczy hali produkcyjnej](production-floor-execution-tabs.md).) Pracownik może wybrać **Dostosuj materiał** dla zadania produkcyjnego, które jest w toku. W tym przypadku zostanie wyświetlone okno dialogowe **Korekta materiału**, w którym pracownik może dokonać żądanych korekt. Gdy okno dialogowe zostanie otwarte, dla zlecenia produkcyjnego zostanie utworzona produkcyjna lista pobrań, która zawiera wiersze dla dostosowanych ilości. Jeśli pracownik wybierze opcję **Księguj teraz**, korekta zostanie potwierdzona i zostanie zaksięgowana lista pobrania. Jeśli pracownik wybierze opcję **Anuluj**, lista pobrań zostaje usunięta i nie dokonuje się żadnej korekty.
 
+### <a name="adjust-material-consumption-for-catch-weight-items"></a>Dostosuj zużycie materiału dla elementów wagi połowu
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Pracownicy mogą dostosowywać zużycie materiału dla elementów wagi połowu. Ta funkcja jest używana w scenariuszach, w których rzeczywista ilość materiału wagi połowu, która została zużyta przez zadanie produkcyjne, była większa lub mniejsza niż ilość planowana. Dlatego też musi on być korygowany, aby utrzymać aktualny poziom zapasów. Gdy pracownik koryguje zużycie elementu wagi połowu, może dostosować zarówno ilość wagi połowu, jak i ilość zapasów. Na przykład, jeśli w zadaniu produkcyjnym planuje się spożycie pięciu pudełek o szacunkowej wadze 2 kilogramów na pudło, pracownik może dostosować zarówno liczbę pudełek do spożycia, jak i wagę pudeł. System zweryfikuje, czy określona waga pudełek mieści się w określonym minimalnym i maksymalnym progu, który zdefiniowano na zwolnionym produkcie.
+
 ### <a name="reserve-materials"></a>Rezerwuj materiały
 
 W oknie dialogowym **Koryguj materiał** pracownik może dokonać i dostosować rezerwację materiału, wybierając **Zarezerwuj materiał**. W oknie dialogowym **Rezerwacja materiału** wyświetlane są fizycznie dostępne zapasy towaru dla poszczególnych wymiarów przechowywania i śledzenia.
@@ -197,6 +223,8 @@ Aby uzyskać więcej informacji dotyczących konfigurowania lokalizacji wejścio
 
 > [!NOTE]
 > Rezerwacje przez pracownika w oknie dialogowym **Rezerwacja materiałów** pozostają, gdy pracownik wybierze opcję **Anuluj** w oknie dialogowym **Raport postępów** lub **Raport odpadów**.
+>
+> Nie można skorygować rezerwacji pozycji w kg.
 
 ## <a name="completing-a-job-and-starting-a-new-job"></a>Kończenie zadania i rozpoczynanie nowego zadania
 

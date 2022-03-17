@@ -2,7 +2,7 @@
 title: Moduł stopki
 description: W tym temacie opisano moduły stopki i sposób ich tworzenia w Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 03/02/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0fdf183afe0df71e43a05b65fba06126f75f85b981b78afc4a543fb9310c6906
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 81db5cf32f23b7ee1ca8325eeec2e6ceafda55e0
+ms.sourcegitcommit: 90a553e271e7cd471fed2e4f006d753fdb67b47d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719993"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8374838"
 ---
 # <a name="footer-module"></a>Moduł stopki  
 
@@ -39,7 +39,7 @@ Podobnie jak większość kontenerów, moduł stopki obsługuje właściwości n
 
 ## <a name="modules-available-in-a-footer-module"></a>Moduły dostępne w module stopki
 
-**Elementy stopki** — moduł elementów stopki może zawierać nagłówek, obraz i łącze. Nagłówek może być używany zarówno osobno, jak i w połączeniu z obrazem i łączem. Każde łącze w stopce może być skonfigurowane w taki sposób, aby zawierało tylko tekst (na przykład łącza „Skontaktuj się z nami” i „Polityka prywatności”) lub tak, aby zawierał zarówno tekst, jak i obraz (na przykład łącza do nośników społecznościowych).
+**Element stopki** — moduł elementu stopki może zawierać nagłówek lub łącze. Nagłówek jest zwykle używany jako tytuł sekcji stopki.  Każde łącze w stopce może być skonfigurowane w taki sposób, aby zawierało tylko tekst (na przykład łącza „Skontaktuj się z nami” i „Polityka prywatności”) lub tak, aby zawierał zarówno tekst, jak i obraz (na przykład łącza do nośników społecznościowych). Jeśli podano zarówno nagłówek, jak i łącze, właściwość nagłówka będzie miała pierwszeństwo przed łączem. 
 
 **Powrót do początku** — powrót do początku modułu stanowi łącze umożliwiającego szybką nawigację do góry strony. Wymagany jest cel. Domyślną wartością docelową jest \#, co zabiera użytkownika na początek strony.
 

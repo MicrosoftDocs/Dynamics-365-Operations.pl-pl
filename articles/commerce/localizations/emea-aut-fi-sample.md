@@ -2,23 +2,24 @@
 title: Przykład integracji usługi rejestracji fiskalnej (Austria)
 description: W tym temacie znajduje się omówienie przykładu integracji fiskalnej dla Austrii w rozwiązaniu Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: d720bffb98965bdc0276660d2a2e50d2bf155e74
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: b41ff8a112f801cd9bf5ebad3aed588ccb40e1f8
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077172"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388370"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-austria"></a>Przykład integracji usługi rejestracji fiskalnej (Austria)
 
 [!include[banner](../includes/banner.md)]
+[!include[banner](../includes/preview-banner.md)]
 
 W tym temacie znajduje się omówienie przykładu integracji fiskalnej dla Austrii w rozwiązaniu Microsoft Dynamics 365 Commerce.
 
@@ -301,14 +302,28 @@ Aby skonfigurować środowisko projektowe w celu testowania i rozszerzania przyk
             ModernPOS.EFR.Installer.exe install --verbosity 0
             ```
 
-1. Zainstaluj rozszerzenia stacji sprzętowej:
+1. Zainstaluj rozszerzenia programu Fiscal Connector:
 
-    1. W folderze **Efr\\HardwareStation\\HardwareStation.EFR.Installer\\bin\\Debug\\net461** znajdź instalatora **HardwareStation.EFR.Installer**.
-    1. Uruchom instalatora rozszerzeń z poziomu wiersza polecenia.
+    Rozszerzenia programu Fiscal Connector można zainstalować w stacji [sprzętowej](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station) lub kasie [punktu sprzedaży](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-or-service-in-the-local-network).
 
-        ```Console
-        HardwareStation.EFR.Installer.exe install --verbosity 0
-        ```
+    1. Zainstaluj rozszerzenia stacji sprzętowej:
+
+        1. W folderze **Efr\\HardwareStation\\HardwareStation.EFR.Installer\\bin\\Debug\\net461** znajdź instalatora **HardwareStation.EFR.Installer**.
+        1. Uruchom instalator rozszerzenia z wiersza polecenia, uruchamiając następujące polecenie.
+
+            ```Console
+            HardwareStation.EFR.Installer.exe install --verbosity 0
+            ```
+
+    1. Zainstaluj rozszerzenia punktu sprzedaży:
+
+        1. Otwórz przykładowe rozwiązanie łącznika fiskalnego punkty sprzedaży **Dynamics365Commerce.Solutions\\FiscalIntegration\\PosFiscalConnectorSample\\Contoso.PosFiscalConnectorSample.sln** i skompiluj go.
+        1. Commerce Scale Unit: w folderze **PosFiscalConnectorSample\\StoreCommerce.Installer\\bin\\Debug\\net461** znajdź instalatora **Contoso.PosFiscalConnectorSample.StoreCommerce.Installer**.
+        1. Uruchom instalator rozszerzenia z wiersza polecenia, uruchamiając następujące polecenie.
+
+            ```Console
+            Contoso.PosFiscalConnectorSample.StoreCommerce.Installer.exe install --verbosity 0
+            ```
 
 #### <a name="production-environment"></a>Środowisko produkcyjne
 
@@ -321,7 +336,7 @@ Przykład integracji usługi rejestracji fiskalnej dla Austrii jest oparty na [f
 > [!WARNING]
 > Z powodu ograniczeń [nowego modelu niezależnego pakowania i rozszerzeń](../dev-itpro/build-pipeline.md), nie można go obecnie używać na potrzeby tego przykładu integracji fiskalnej. Musisz użyć poprzedniej wersji zestawu Retail SDK na maszynie wirtualnej dewelopera w usłudze LCS. Aby uzyskać więcej informacji, zobacz [Wskazówki dotyczące wdrażania przykładu integracji fiskalnej dla Austrii (starsza wersja)](emea-aut-fi-sample-sdk.md). Wprowadzenie obsługi nowego modelu niezależnego pakowania i rozszerzenia dla przykładów integracji fiskalnej jest planowane w przyszłych wersjach.
 
-### <a name="commerce-runtime-extension-design"></a>Projekt rozszerzenia środowiska uruchomieniowego Commerce
+### <a name="commerce-runtime-extension-design"></a>Projekt rozszerzenia środowiska uruchomieniowego Commerce 
 
 Rozszerzenie (dostawca dokumentów fiskalnych) służy do generowania dokumentów specyficznych dla usługi oraz obsługi odpowiedzi z usługi rejestracji fiskalnej.
 
@@ -352,7 +367,7 @@ Te pliki umożliwiają skonfigurowanie ustawień dostawcy dokumentów fiskalnych
 
 ### <a name="hardware-station-extension-design"></a>Projekt rozszerzenia Hardware Station
 
-Rozszerzenie (łącznik fiskalny) służy do komunikacji z usługą rejestracji fiskalnej. Rozszerzenie stacji sprzętowej używa protokołu HTTP w celu przesyłania dokumentów generowanych przez rozszerzenie kolekcji CRT do usługi rejestracji fiskalnej. Obsługuje również odpowiedzi odbierane z usługi rejestracji fiskalnej.
+Rozszerzenie złącza fiskalnego służy do komunikacji z usługą rejestracji fiskalnej. Rozszerzenie stacji sprzętowej używa HTTP i protokołów HTTP w celu przesyłania dokumentów generowanych przez rozszerzenie kolekcji CRT do usługi rejestracji fiskalnej. Obsługuje również odpowiedzi odbierane z usługi rejestracji fiskalnej.
 
 #### <a name="request-handler"></a>Program obsługi żądań
 
@@ -369,5 +384,28 @@ Program obsługi jest dziedziczony z interfejsu **INamedRequestHandler**. Metoda
 #### <a name="configuration"></a>Konfiguracja
 
 Plik konfiguracji dla łącznika fiskalnego znajduje się w lokalizacji **src\\FiscalIntegration\\Efr\\Configurations\\Connectors\\ConnectorEFRSample.xml** w repozytorium [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/). Ten plik umożliwia skonfigurowanie ustawień łącznika fiskalnego z poziomu centrali rozwiązania Commerce. Format pliku jest zgodny z wymaganiami konfiguracji integracji fiskalnej.
+
+### <a name="pos-fiscal-connector-extension-design"></a>Projekt przedłużenia złącza fiskalnego POS
+
+Rozszerzenie konektor fiskalny POS służy do komunikacji z usługą rejestracji fiskalnej z POS. Używa protokołu HTTPS do komunikacji.
+
+#### <a name="fiscal-connector-factory"></a>Fabryka łącznika fiskalnego
+
+Fabryka łącznika fiskalnego mapuje nazwę łącznika na implementację łącznika fiskalnego i znajduje się w pliku **Pos.Extension\\Connectors\\FiscalConnectorFactory.ts**. Nazwa łącznika powinna być zgodna z nazwą łącznika fiskalnego określoną w centrali handlowej.
+
+#### <a name="efr-fiscal-connector"></a>Łącznik fiskalny EFR
+
+Łącznik obrachunkowy CSV znajduje się w pliku **Pos.Extension\\Connectors\\Efr\\EfrFiscalConnector.ts**. Implementuje on interfejs **IFiscalConnector** obsługujący następujące żądania:
+
+- **FiscalRegisterSubmitDocumentClientRequest** — to żądanie wysyła dokumenty do usługi rejestracji fiskalnej i zwraca odpowiedź z tej usługi.
+- **FiscalRegisterIsReadyClientRequest** — to żądanie służy do sprawdzania kondycji usługi rejestracji fiskalnej.
+- **FiscalRegisterInitializeClientRequest** — to żądanie służy do inicjowania usługi rejestracji fiskalnej.
+
+#### <a name="configuration"></a>Konfiguracja
+
+Plik konfiguracyjny znajduje się w folderze **src\\FiscalIntegration\\Efr\\Configurations\\Connectors** w [Rozwiązania Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repozytorium. Ten plik umożliwia skonfigurowanie ustawień łącznika fiskalnego z poziomu centrali rozwiązania Commerce. Format pliku jest zgodny z wymaganiami konfiguracji integracji fiskalnej. Dodano następujące ustawienia:
+
+- **Adres punktu końcowego** — adres URL usługi rejestracji fiskalnej.
+- **Limit czasu** — Czas w milisekundach, przez który łącznik będzie czekał na odpowiedź z usługi rejestracji fiskalnej.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
