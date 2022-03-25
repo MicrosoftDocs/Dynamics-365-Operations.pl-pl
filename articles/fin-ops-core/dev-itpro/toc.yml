@@ -238,10 +238,12 @@
               href: data-entities/Azure-Data-Lake-GA-version-overview.md
             - name: Instalowanie dodatku Eksportowanie do usługi Azure Data Lake
               href: data-entities/configure-export-data-lake.md
-            - name: Aplikacje Finance and Operations w usłudze Azure Data Lake
+            - name: Aplikacje finansowe i operacyjne w usłudze Azure Data Lake
               href: data-entities/finance-data-azure-data-lake.md
             - name: Udostępnianie magazynu jednostek w usłudze Data Lake
               href: data-entities/entity-store-data-lake.md
+            - name: Zdarzenia biznesowe wygenerowane przez eksport do usługi Azure Data Lake (wersja zapoznawcza)
+              href: data-entities/Azure-Data-Lake-Generates-Biz-events.md
             - name: Zmiana danych w usłudze Azure Data Lake
               href: data-entities/Azure-data-lake-Change-feeds.md
         - name: Operacje przenoszenia bazy danych
@@ -1066,8 +1068,10 @@
                       href: data-entities/dual-write/currrency-decimal-places.md
                     - name: Ustawianie mapowania pól stanu zamówienia sprzedaży
                       href: data-entities/dual-write/sales-status-map.md
-                    - name: Filtrowanie zamówień międzyfirmowych w celu uniknięcia rekordów Orders i OrderLines
+                    - name: Filtrowanie zamówień międzyfirmowych w celu uniknięcia rekordów Zamówienia i Wiersze zamówień
                       href: data-entities/dual-write/filtering-intercompany-orders.md
+                    - name: Odinstalowywanie rozwiązań orkiestracji aplikacji podwójnego zapisu
+                      href: data-entities/dual-write/uninstall-solutions.md
                 - name: Zarządzanie podwójnym zapisem
                   items:
                     - name: Dostosowanie mapowania jednostek i pól

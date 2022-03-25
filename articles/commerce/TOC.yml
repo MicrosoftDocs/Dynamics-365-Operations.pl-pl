@@ -1020,6 +1020,8 @@
                   href: unit-of-measure.md
                 - name: Zastosowanie ustawień wyświetlania dla wymiarów produktu
                   href: dimension-settings.md
+                - name: Włączanie i aktywacja trybu konserwacji handlu elektronicznego
+                  href: enable-maintenance-mode.md
             - name: Zarządzanie zawartością witryny
               items:
                 - name: Sposoby dodawania zawartości
@@ -2100,6 +2102,10 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/commerce/toc.json
                     - name: Debugowanie źródeł danych
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/commerce/toc.json
+                - name: Konfigurowanie modeli danych
+                  items:
+                    - name: Obsługa parametryzowanych wywołań modeli danych raportowania elektronicznego
+                      href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurowanie mapowania modeli
                   items:
                     - name: Konfigurowanie mapowań modelu raportowania elektronicznego w zależności od kraju
@@ -2760,6 +2766,8 @@
                           href: e-commerce-extensibility/clone-starter-module.md
                         - name: Rozszerzenie definicji modułu
                           href: e-commerce-extensibility/extend-module-definition.md
+                        - name: Zmiana statycznych ciągów biblioteki modułów
+                          href: e-commerce-extensibility/change-module-library-strings.md
                     - name: Akcje dotyczące danych
                       items:
                         - name: Zastąpienia akcji danych
@@ -2774,6 +2782,8 @@
                           href: e-commerce-extensibility/override-theme-component.md
                         - name: Rozszerzanie motywu z motywu podstawowego
                           href: e-commerce-extensibility/extend-theme.md
+                        - name: Zmiana ciągów modułów motywu
+                          href: e-commerce-extensibility/change-theme-module-strings.md
                 - name: Pakowanie i wdrażanie
                   items:
                     - name: Konfiguracje pakietów i wdrażanie ich w środowisku online
@@ -2798,6 +2808,8 @@
                           href: e-commerce-extensibility/page-caching.md
                         - name: Pamięć podręczna wystąpienia akcji danych
                           href: e-commerce-extensibility/instance-cache.md
+                        - name: Optymalizacja modułu CSS
+                          href: e-commerce-extensibility/module-css-optimization.md
                     - name: Telemetria i analiza
                       items:
                         - name: Rejestrator telemetryczny

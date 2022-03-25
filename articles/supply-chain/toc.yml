@@ -747,8 +747,32 @@
                   href: cost-management/simulate-cost-changes-costing-version-planned-costs.md
                 - name: Raport magazynowy porównania cen pozycji
                   href: cost-management/compare-item-price.md
+            - name: Metodologie wyceny
+              items:
+                - name: Dynamiczny średni koszt własny
+                  href: cost-management/running-average-cost-price.md
+                - name: Śledzenie dynamicznych średnich kosztów dla wymiaru magazynowego
+                  href: cost-management/track-running-average-cost-per-inventory-dimension.md
+                - name: Kolejka FIFO z wartością fizyczną i oznaczeniami
+                  href: cost-management/fifo-physical-value-marking.md
+                - name: Data LIFO z wartością fizyczną i oznaczeniami
+                  href: cost-management/lifo-date-physical-value-marking.md
+                - name: Kolejka LIFO z wartością fizyczną i oznaczeniami
+                  href: cost-management/lifo-physical-value-marking.md
+                - name: Średnia ważona z wartością fizyczną i oznaczeniami
+                  href: cost-management/weighted-average-physical-value-marking.md
+                - name: Średnia ważona data z wartością fizyczną i oznaczeniami
+                  href: cost-management/weighted-average-date.md
+                - name: Średnia ruchoma
+                  href: cost-management/moving-average.md
+                - name: Sekwencja kosztu rezerwowego średniej ruchomej
+                  href: cost-management/moving-average-fallback.md
             - name: Księgowanie zapasów
               items:
+                - name: Aktualizacje fizyczne i finansowe
+                  href: cost-management/physical-financial-updates.md
+                - name: Uwzględnienie wartości fizycznej
+                  href: cost-management/include-physical-value.md
                 - name: Obiekty kosztów
                   href: cost-management/cost-object.md
                 - name: Wyświetlanie salda obiektu kosztu
@@ -761,30 +785,8 @@
                   href: cost-management/tasks/view-cost-entries-cost-object.md
                 - name: Grupy kosztów
                   href: cost-management/cost-groups.md
-                - name: Kolejka FIFO z wartością fizyczną i oznaczeniami
-                  href: cost-management/fifo-physical-value-marking.md
-                - name: Uwzględnienie wartości fizycznej
-                  href: cost-management/include-physical-value.md
                 - name: Wartości obiektów magazynowych
                   href: cost-management/physical-quantity.md
-                - name: Data LIFO z wartością fizyczną i oznaczeniami
-                  href: cost-management/lifo-date-physical-value-marking.md
-                - name: Kolejka LIFO z wartością fizyczną i oznaczeniami
-                  href: cost-management/lifo-physical-value-marking.md
-                - name: Średnia ruchoma
-                  href: cost-management/moving-average.md
-                - name: Sekwencja kosztu rezerwowego średniej ruchomej
-                  href: cost-management/moving-average-fallback.md
-                - name: Aktualizacje fizyczne i finansowe
-                  href: cost-management/physical-financial-updates.md
-                - name: Dynamiczny średni koszt własny
-                  href: cost-management/running-average-cost-price.md
-                - name: Śledzenie dynamicznych średnich kosztów dla wymiaru magazynowego
-                  href: cost-management/track-running-average-cost-per-inventory-dimension.md
-                - name: Średnia ważona z datą
-                  href: cost-management/weighted-average-date.md
-                - name: Średnia ważona z wartością fizyczną i oznaczeniami
-                  href: cost-management/weighted-average-physical-value-marking.md
                 - name: Zamknięcie zapasów
                   href: cost-management/inventory-close.md
                 - name: Korygowanie wartości kosztów dostępnych zapasów
@@ -1431,6 +1433,10 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Debugowanie źródeł danych
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurowanie modeli danych
+                  items:
+                    - name: Obsługa parametryzowanych wywołań modeli danych raportowania elektronicznego
+                      href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurowanie mapowania modeli
                   items:
                     - name: Konfigurowanie mapowań modelu raportowania elektronicznego w zależności od kraju
@@ -3855,6 +3861,8 @@
               items:
                 - name: Warehouse mobile app
                   items:
+                    - name: Nieoczekiwana różnica między danymi żądania a danymi sesji podczas testowania
+                      href: troubleshooting/warehousing/request-session-data-difference.md
                     - name: Nie znaleziono kotwicy zaufania dla ścieżki certyfikacji podczas konfigurowania połączenia z aplikacją
                       href: troubleshooting/warehousing/certification-path-app-connection-error.md
                     - name: Nie znaleziono kotwicy zaufania dla ścieżki certyfikacji podczas aktualizacji i migracji do WMS
