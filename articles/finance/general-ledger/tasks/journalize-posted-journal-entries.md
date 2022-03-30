@@ -2,41 +2,40 @@
 title: Zapisywanie zaksięgowanych zapisów arkusza w arkuszu
 description: W tej procedurze pokazano sposób zapisywania zaksięgowanych zapisów arkusza w arkuszu.
 author: aprilolson
-ms.date: 08/09/2019
+ms.date: 03/09/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerParameters, SysQueryForm
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 519431684cd26d566ae4c9dd75010d5c98881b602681211908c0c70215448fea
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8d8fca167563b14c825ebe29874c6488ddfb4d9a
+ms.sourcegitcommit: 06acdfbccd7bd213a2397ea7b85d104f01914437
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738462"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "8400882"
 ---
 # <a name="journalize-posted-journal-entries"></a>Zapisywanie zaksięgowanych zapisów arkusza w arkuszu
 
 [!include [banner](../../includes/banner.md)]
 
-W tej procedurze pokazano sposób zapisywania zaksięgowanych zapisów arkusza w arkuszu. Procedura wykorzystuje dane firmy demonstracyjnej USMF.
+Proces zapis do arkusza w księdze głównej umożliwia grupowanie zaksięgowanych zapisów załącznika i zgłaszanie ich w księdze głównej. Na podstawie podanych kryteriów przetwarzanie generuje listę załączników, które używają unikalnej sekwencji numerów i mają wartość **Numer arkusza** wartości księgi głównej jako odniesienie.
 
-1. Przejdź do **Okienko nawigacji**, następnie **Moduły > Księga główna > Ustawienia księgi > Parametry księgi głównej**.
-2. Pole **Rozszerzony arkusz księgi** można ustawić na wartość Tak lub Nie. Jeśli zaznaczysz wartość Tak, dane wyjściowe raportu będą inne.
-3. Określ, czy okres może zostać zamknięty, jeśli nie został wykonany proces zapisywania w arkuszu. Jeśli ta opcja jest ustawiona na wartość Tak, nie można zamknąć okresu do czasu zakończenia procesu zapisywania w arkuszu dla tego okresu.  
+Wykonaj poniższe czynności, aby księgować opublikowane wpisy księgowe. Procedura wykorzystuje dane firmy demonstracyjnej **USMF**.
+
+1. Przejdź do pozycji **Księga główna** \> **Ustawienia księgi** \> **Parametry księgi głównej**.
+2. W polu **Rozszerzony arkusz księgi** wybierz wartość. Jeśli zaznaczysz wartość **Tak**, dane wyjściowe raportu będą inne.
+3. Określ, czy okres może zostać zamknięty, jeśli nie został wykonany proces zapisywania w arkuszu. Jeśli ta opcja jest ustawiona na wartość **Tak**, nie można zamknąć okresu do czasu zakończenia procesu zapisywania w arkuszu dla tego okresu.
 4. Zamknij stronę.
-5. W **Okienku nawigacji** otwórz **Moduły > Księga główna > Zadania okresowe > Generowanie arkuszy**.
-6. Kliknij przycisk **Filtr**.
-7. Zaznacz wiersz z kryteriami filtrowania, które chcesz zdefiniować.
-8. W polu **Kryteria** wprowadź lub wybierz kryteria filtrowania.
-9. Kliknij przycisk **OK**, aby zamknąć stronę filtru.
-10. Kliknij przycisk **OK**, aby rozpocząć proces generowania arkuszy. Po zakończeniu procesu zostanie wygenerowany raport.  
-
-
+5. Przejdź do **Księga główna** \> **Zadania okresowe** \> **Generowanie arkuszy** i wybierz **Filtr**.
+6. Wybierz wiersz kryteriów filtrowania, które chcesz zdefiniować.
+7. W polu **Kryteria** wprowadź lub wybierz kryteria filtrowania.
+8. Kliknij przycisk **OK**, aby zamknąć stronę.
+9. Wybierz **OK**, aby rozpocząć proces generowania arkuszy. Po zakończeniu procesu zostanie wygenerowany raport.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

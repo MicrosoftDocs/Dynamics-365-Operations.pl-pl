@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2022-01-24
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: f1b53b2e7965ae777ffab0f12dc665c6660eebd4
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: bb51293f0fcb421b9d55f8d5cfe1922569fce5d6
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075281"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8408047"
 ---
 # <a name="planned-orders-simplified"></a>Uproszczone zamówienia planowane
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]
-<!-- preview until 10.0.25 GA -->
+<!--KFM: preview until 10.0.25 GA -->
 
 Ten temat opisuje, jak możesz przeglądać, zarządzać i firmować zaplanowane zlecenia za pomocą uproszczonej strony **Zaplanowane zlecenia**.
 

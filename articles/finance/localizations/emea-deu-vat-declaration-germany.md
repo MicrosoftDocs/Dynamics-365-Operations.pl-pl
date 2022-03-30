@@ -2,19 +2,19 @@
 title: Deklaracja podatku VAT (Niemcy)
 description: W tym temacie opisano sposób konfigurowania i generowania deklaracji podatku od towarów i usług (VAT) dla Niemiec w oficjalnym formacie XML.
 author: anasyash
-ms.date: 11/22/2021
+ms.date: 03/10/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: 29c04e1034c05b4672f3657ce0b7bc9d5f6d7c9c
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: a761a145a876584728098a92b3f3e93ac718a164
+ms.sourcegitcommit: 9c19898e1f41495f804c7f07e2636b53a098c4c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860885"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "8402810"
 ---
 # <a name="vat-declaration-germany"></a>Deklaracja podatku VAT (Niemcy)
 
@@ -163,6 +163,9 @@ Otwórz obszar roboczy **Raportowanie elektroniczne** i zaimportuj następujące
 ### <a name="set-up-application-specific-parameters-for-vat-declaration-fields"></a><a name="set-up-application-specific-parameters-for-vat-declaration-fields"></a>Ustaw parametry specyficzne dla aplikacji dla pól deklaracji podatku VAT
 
 Aby automatycznie wygenerować deklarację podatku VAT, należy skojarzyć kody podatków w aplikacji i wyniki wyszukiwania w konfiguracji raportowania elektronicznego.
+
+> [!NOTE]
+> Zaleca się włączenie tej funkcji: **Użyj parametrów specyficznych dla aplikacji z poprzednich wersji formatów raportowania elektronicznego** w obszarze roboczym **Zarządzanie funkcjami**. Gdy ta funkcja jest włączona, parametry skonfigurowane dla wcześniejszej wersji formatu raportowania elektronicznego automatycznie stają się dostępne dla nowszej wersji tego samego formatu. Jeśli ta funkcja nie jest włączona, należy skonfigurować parametry specyficzne dla aplikacji jawnie dla każdej wersji formatu. Funkcja **Użyj parametrów specyficznych dla aplikacji z poprzednich wersji formatów raportowania elektronicznego** jest dostępna w obszarze roboczym **Zarządzanie funkcjami** w aplikacji Finance w wersji 10.0.23. Aby uzyskać więcej informacji dotyczących sposobu konfiguracji parametrów formatu raportowania elektronicznego dla każdej firmy, zobacz temat [Konfigurowanie parametrów formatu raportowania elektronicznego według firmy](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
 
 Aby określić, które kody podatków generują pola deklaracji podatku VAT, należy wykonać następujące kroki.
 

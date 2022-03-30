@@ -2,7 +2,7 @@
 title: Zgodność z plikami cookie
 description: W tym temacie opisano zagadnienia dotyczące zgodności z plikami cookie i domyślnych zasad, które są zawarte w aplikacji Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 07/30/2021
+ms.date: 03/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 509ae998b4d0fa8ab6dd5e3d242dfb4abc492952cd66addc04050fbaff949326
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2efb866d513ba90630b0397c1ca144c92d40719c
+ms.sourcegitcommit: 4645278a4b4a38dcb18fdfb49ce2e276eabb59de
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747704"
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "8403154"
 ---
 # <a name="cookie-compliance"></a>Zgodność z plikami cookie
 
@@ -58,6 +58,7 @@ W poniższej tabeli przedstawiono bieżące listy odwołań plików cookie umies
 | \_msdyn365___aud_0                          | Przechowuje wartości segmentu używane przez kierowanie i jest stosowany tylko wtedy, gdy kierowanie jest skonfigurowane na stronie lub fragment wymagane przez użytkownika witryny. Plik cookie jest umieszczany tylko wtedy, gdy wartości segmentu pochodzą od zewnętrznego dostawcy segmentacji.      | 7 dni |
 | \_msdyn365___aud_1                           | Przechowuje wartości segmentu używane przez kierowanie i jest stosowany tylko wtedy, gdy kierowanie jest skonfigurowane na stronie lub fragment wymagane przez użytkownika witryny. Plik cookie jest umieszczany tylko wtedy, gdy wartości segmentu pochodzą od zewnętrznego dostawcy segmentacji.      | 7 dni |
 | \_msdyn365___aud_2                           | Przechowuje wartości segmentu używane przez kierowanie i jest stosowany tylko wtedy, gdy kierowanie jest skonfigurowane na stronie lub fragment wymagane przez użytkownika witryny. Plik cookie jest umieszczany tylko wtedy, gdy wartości segmentu pochodzą od zewnętrznego dostawcy segmentacji.      | 7 dni |
+| d365gi                                       | Ten plik cookie przechowuje dane o lokalizacji geograficznej, gdy używana jest usługa geolokalizacji innej firmy.      | 1 dzień |
 
 Jeśli użytkownik witryny wybierze jakiekolwiek łącza do mediów społecznościowych w witrynie, pliki cookie z poniższej tabeli będą również śledzone w jego przeglądarce.
 
@@ -65,17 +66,17 @@ Jeśli użytkownik witryny wybierze jakiekolwiek łącza do mediów społecznoś
 | Domena                      | Cookie               | opis                                                  | Źródło                                          |
 | --------------------------- | ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | .linkedin.com                | UserMatchHistory         | Synchronizacja identyfikatora LinkedIn ogłoszeń                                      | LinkedIn kanału informacyjnego i znacznika szczegółówych informacji                                |
-| .linkedin.com               | li_sugr                  | Identyfikator przeglądarki                                           | Znacznik szczegółowych informacji o LinkedIn, jeśli adres IP nie znajduje się w wyznaczonym kraju |
+| .linkedin.com               | li_sugr                  | Identyfikator przeglądarki                                           | Znacznik LinkedIn Insight Tag, jeśli adres IP nie znajduje się w wyznaczonym kraju |
 | .linkedin.com               | BizographicsOptOut       | Określa stan opcji śledzenia przez inne firmy.              | Kontrolki gości LinkedIn i branżowe strony rezygnacji           |
 | .linkedin.com               | \_guid                    | Identyfikator przeglądarki dla Google Ads.                            | Kanał informacyjny LinkedIn                                                |
 | .linkedin.com               | li_oatml                 | Pośredni identyfikator członka do śledzenia konwersji, ponownego kierowania i analiz. | Reklamy LinkedIn i znaczniki szczegółówych informacji                                |
 | Różne domeny własne | li_fat_id                | Pośredni identyfikator członka do śledzenia konwersji, ponownego kierowania i analiz. | Reklamy LinkedIn i znaczniki szczegółówych informacji                                |
-| .adsymptotic.com            | U                        | Identyfikator przeglądarki                                           | Znacznik szczegółowych informacji o LinkedIn, jeśli adres IP nie znajduje się w wyznaczonym kraju |
+| .adsymptotic.com            | U                        | Identyfikator przeglądarki                                           | Znacznik LinkedIn Insight Tag, jeśli adres IP nie znajduje się w wyznaczonym kraju |
 | .linkedin.com                | bcookie                  | Plik cookie identyfikatora przeglądarki                                            | Żądania do LinkedIn                                         |
 | .linkedin.com                | bscookie                 | Zabezpieczanie pliku cookie przeglądarki                                        | Żądania do LinkedIn                                         |
 | .linkedin.com               | lang                     | Umożliwia ustawienie domyślnych ustawień regionalnych i języka.                                 | Żądania do LinkedIn                                         |
 | .linkedin.com                | lidc                     | Służy do wyboru trasy.                                             | Żądania do LinkedIn                                         |
-| .linkedin.com               | aam_uuid                 | Plik cookie Menedżera odbiorców Adobe                                                     | Ustaw dla synchronizacji identyfikatorów                                              |
+| .linkedin.com               | aam_uuid                 | Plik cookie Adobe audience manager                                                     | Ustaw dla synchronizacji identyfikatorów                                              |
 | .linkedin.com               | \_ga                      | Plik cookie Google Analytics                                            | Google Analytics                                             |
 | .linkedin.com               | \_gat                     | Plik cookie Google Analytics                                             | Google Analytics                                             |
 | .linkedin.com               | liap                     | Plik cookie Google Analytics                                             | Google Analytics                                             |

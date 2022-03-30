@@ -2,7 +2,7 @@
 title: Zestawy wymiarów finansowych
 description: W tym temacie opisano zestawy wymiarów finansowych i przedstawiono kilka wskazówek dotyczących optymalizacji ich użycia.
 author: yukonpeegs
-ms.date: 03/23/2021
+ms.date: 03/07/2022
 ms.topic: article
 ems.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: epegors
 ms.search.validFrom: 2021-03-23
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 415a41100cc5be740f064d52598cd256c0aa2ae1d45473c8039bdc6e22381b3c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9274e7f85005ab27d9f2b35fbb0be42e216941c9
+ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739985"
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "8392943"
 ---
 # <a name="financial-dimension-sets"></a>Zestawy wymiarów finansowych
 
@@ -61,6 +61,11 @@ Przycisk **Odbuduj salda** umożliwia ponowne tworzenie sald od podstaw. W ten s
 ## <a name="clear-balances"></a>Uzgodnij salda
 
 Użyj przycisku **Wyczyść salda**, aby usunąć salda i zatrzymać dalsze aktualizacje. Zestaw wymiarów nie będzie już miał wpływu na działania księgowania księgi głównej.
+
+## <a name="delete-a-dimension-set"></a>Usuwanie zestawu wymiarów
+
+Nie **usuwaj i nie twórz ponownie** zestawów wymiarów jako żadnej formy obejścia potencjalnych problemów z danymi salda dla określonego zestawu wymiarów. Odtworzenie zestawu wymiarów jest kosztowne. Aby uzyskać dalszą pomoc w przypadku problemów, skontaktuj się z obsługą klienta. 
+
 
 Aby uzyskać więcej informacji, zobacz [Wymiary finansowe](financial-dimensions.md).
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 43e57b75933a67c1ee3fb0a59400b0d1bdab931cec5826346247cc361a0206df
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e7350e697beec42b349082df06b77a89d526c27c
+ms.sourcegitcommit: ddcab9726e9dbcf3296cb0988b97a3ae7ccb3dfb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720427"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "8396531"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Supply Chain Management
 
@@ -31,7 +31,7 @@ Ten temat zostanie zaktualizowany, jeśli w systemie Dynamics 365 Supply Chain M
 Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych funkcji we własnym planowaniu.
 
 > [!NOTE]
-> Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Operations można znaleźć w temacie [Raporty dotyczące odwołań technicznych](/dynamics/s-e/). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach aplikacji Finance and Operations.
+> Szczegółowe informacje o obiektów w aplikacji Finanse i Działania można znaleźć w [raportach z wykazami parametrów technicznych](/dynamics/s-e/). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach aplikacji Finanse i Działania.
 
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10019-release"></a>Usunięte lub przestarzałe funkcje w wydaniu rozwiązania Supply Chain Management 10.0.19
@@ -52,7 +52,7 @@ Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych fun
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Przyczyna wycofania/usunięcia** | Z dniem 2021 kwietnia rozwiązanie *Dynamics 365 for Finance and Operations* — Magazynowanie (aplikacja magazynu) jest przestarzałe i nie będzie obsługiwane po kwietniu 2022 roku. Zostanie ona zastąpiona przez *aplikację mobilną Warehouse Management*, która została wydana w wersji 10.0.17 Supply Chain Management. Nowa aplikacja jest pełną wymianą, ale korzysta z tej samej struktury źródłowej, co ułatwia migrację. W razie potrzeby obie aplikacje mogą być używane side-by-side, aby pomagać użytkownikom stopniowo dostosowywać się do potrzeb nowej aplikacji.<br><br>Jeśli chcesz uzyskać informacje dotyczące konfigurowania aplikacji Warehouse Management, zobacz temat [aplikacji mobilnej Warehouse Management](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) i [Instalowanie i łączenie aplikacji mobilnej Zarządzanie magazynem](../warehousing/install-configure-warehouse-management-app.md). |
+| **Przyczyna wycofania/usunięcia** | Z dniem 2021 kwietnia rozwiązanie *Dynamics 365 for Finance and Operations — Magazynowanie* (aplikacja magazynu) jest przestarzałe i nie będzie obsługiwane po kwietniu 2022 roku. Zostanie ona zastąpiona przez *aplikację mobilną Warehouse Management*, która została wydana w wersji 10.0.17 Supply Chain Management. Nowa aplikacja jest pełną wymianą, ale korzysta z tej samej struktury źródłowej, co ułatwia migrację. W razie potrzeby obie aplikacje mogą być używane side-by-side, aby pomagać użytkownikom stopniowo dostosowywać się do potrzeb nowej aplikacji.<br><br>Jeśli chcesz uzyskać informacje dotyczące konfigurowania aplikacji Warehouse Management, zobacz temat [aplikacji mobilnej Warehouse Management](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) i [Instalowanie i łączenie aplikacji mobilnej Zarządzanie magazynem](../warehousing/install-configure-warehouse-management-app.md). |
 | **Zamieniona przez inną funkcję?**   | Tak, zastąpiono nową aplikacją mobilną Warehouse Management. |
 | **Powiązane obszary produktów**         | Supply Chain Management — aplikacja magazynowa |
 | **Opcja wdrażania**              | Wdrożenie w chmurze i lokalne |
@@ -78,7 +78,7 @@ Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych fun
 | **Zamieniona przez inną funkcję?**   | Tak, optymalizacja planowania zastąpi istniejący wbudowany aparat planowania głównego aplikacji Supply Chain Management. |
 | **Powiązane obszary produktów**         | Supply Chain Management — planowanie główne |
 | **Opcja wdrażania**              | Tylko chmura. Optymalizacja planowania nie jest obsługiwana w przypadku wdrożeń lokalnych. |
-| **Stan**                         | Wycofane. Do 1 kwietniu 2022 r. scenariusze produkcji nie będą już obsługiwane za pomocą wbudowanego aparatu planowania głównego aplikacji Dynamics 365 Supply Chain Management. W scenariuszach produkcji klienci muszą korzystać z optymalizacji planowania podczas obliczeń planowania głównego. Aby uzyskać więcej informacji, zobacz temat [Dokumentacja dotycząca optymalizacji planowania](../master-planning/planning-optimization/planning-optimization-overview.md). Klienci z wdrożeniami lokalnymi aplikacji Dynamics 365 Supply Chain Management będą mogli nadal korzystać z aparatu planowania głównego aplikacji Supply Chain Management w scenariuszach produkcji po kwietniu 2022 r. Nie będą jednak wprowadzane dodatkowe ulepszenia funkcji. |
+| **Stan**                         | Wycofane. Do 1 kwietniu 2022 r. scenariusze produkcji nie będą już obsługiwane za pomocą wbudowanego aparatu planowania głównego aplikacji Supply Chain Management. Od tego dnia firma Microsoft zaprzestanie wszelkich aktywnych prac nad scenariuszami produkcyjnymi dla wbudowanego silnika planowania, nie wyda żadnych nowych funkcji i wyda jedynie krytyczne poprawki błędów. Po tej dacie wszystkie firmy, które wymagają obsługi scenariuszy produkcyjnych, muszą używać Optymalizacji planowania do swoich obliczeń planowania głównego. Optymalizacja planowania ma w pełni obsługiwać scenariusze produkcji do października 2022 roku. Aby uzyskać więcej informacji, zobacz temat [Dokumentacja dotycząca optymalizacji planowania](../master-planning/planning-optimization/planning-optimization-overview.md).<br><br>Firmy z lokalnymi wdrożeniami rozwiązania Supply Chain Management mogą nadal używać wbudowanego głównego aparatu planowania w scenariuszach produkcyjnych po kwietniu 2022 roku. Nie będą jednak wprowadzane dodatkowe ulepszenia funkcji. |
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10011-release"></a>Usunięte lub przestarzałe funkcje w wydaniu rozwiązania Supply Chain Management 10.0.11
 

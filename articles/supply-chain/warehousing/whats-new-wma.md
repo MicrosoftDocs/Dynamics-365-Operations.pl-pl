@@ -2,7 +2,7 @@
 title: Nowości lub zmiany w aplikacji mobilnej Warehouse Management
 description: W tym temacie wymieniono nowe i zmienione funkcje dla każdej wydanej wersji aplikacji mobilnej Warehouse Management dla firmy Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 02/21/2022
+ms.date: 03/11/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,18 +10,33 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: b146fb12f89559efcb3b0973b0dd1ce9b98ffe2a
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: c4731c5f0b0a1553deb53753d82d29a34e5525df
+ms.sourcegitcommit: 399d0d3f8e2ebb81b6b9d640365ebe182690bab2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384378"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "8418647"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Nowości lub zmiany w aplikacji mobilnej Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 W tym temacie wymieniono nowe funkcje, poprawki, ulepszenia i znane problemy dla każdej wydanej wersji aplikacji mobilnej Warehouse Management w Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20190"></a>Wersja 2.0.19.0
+
+Ta wersja wprowadza następujące nowe funkcje, poprawki i ulepszenia:
+
+- Poprawiono ogólny przepływ informacji o danych.
+- Poprawiono problem z drganiami na stronach **Lista zadań** i **Zapytanie o przedmiot**.
+- Zredukowano zużycie baterii.
+- Usunięto limit liczby pól kart pracy.
+- Skorygowano wysokość kart pracy, tak aby wszystkie były w takiej samej wielkości, niezależnie od liczby pól w każdym z nich.
+- Rozwiązano problem z obcięciem spacji w kodach kreskowych.
+- Dodano ustawienie **Styl przycisku**, które umożliwia zamianę widoku suwaka i widoku przycisków na wszystkie typy urządzeń.
+- Naprawiono różne problemy, które mogły powodować awarię aplikacji.
+- Ustaw fokus automatycznie na pierwszym polu tekstowym na stronach niestandardowych.
+- Usprawnienia ułatwień dostępu związane z tym, że tekst jest powiązany z kolorami, kontraście, treścią narracji i brakującymi tekstami zastępczymi.
 
 ## <a name="version-20170"></a>Wersja 2.0.17.0
 

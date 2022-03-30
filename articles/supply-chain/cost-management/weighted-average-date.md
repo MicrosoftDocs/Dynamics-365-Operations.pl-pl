@@ -1,198 +1,303 @@
 ---
-title: Średnia ważona z datą
+title: Średnia ważona data z uwzględnieniem wartości fizycznej i znakowania
 description: Średnia ważona z datą jest modelem magazynu opartym na zasadzie średniej ważonej, w którym towary magazynowe są szacowane na podstawie średniej wartości towarów przyjętych na magazyn dla każdego dnia osobno w okresie zamknięcia magazynu.
 author: AndersGirke
-ms.date: 10/25/2017
+ms.date: 03/04/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 28991
-ms.assetid: 945d5088-a99d-4e54-bc42-d2bd61c61e22
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce056a661130d30426ccfa4c288a0ce5b62ff959
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 3cf2206863d891eceb9c65ff879da3f9f72032b1
+ms.sourcegitcommit: fcded93fc6c27768a24a3d3dc5cc35e1b4eff22b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572032"
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "8392008"
 ---
-# <a name="weighted-average-date"></a>Średnia ważona z datą
+# <a name="weighted-average-date-with-include-physical-value-and-marking"></a>Średnia ważona data z uwzględnieniem wartości fizycznej i znakowania
 
 [!include [banner](../includes/banner.md)]
 
-Średnia ważona z datą to model zapasów oparty na zasadzie średniej ważonej. W tej metodzie wydania z zapasów są wyceniane na podstawie średniej wartości towarów przyjętych do zapasów w każdym dniu w okresie zamknięcia zapasów. 
+*Data średniej ważonej* to model inwentaryzacji oparty na średniej obliczanej poprzez pomnożenie każdego składnika (transakcji na pozycji) przez współczynnik (cenę nabycia lub koszt wytworzenia) odzwierciedlający jego znaczenie (ilość) w każdym dniu okresu. Innymi słowy, ten model inwentaryzacji przypisuje koszt transakcji wydania na podstawie średniej wartości wszystkich zapasów otrzymywanych każdego dnia, powiększonej o zapasy znajdujące się na stanie z dnia poprzedniego.
 
-Podczas zamknięcia zapasów przy użyciu średniej ważonej z datą wszystkie dzienne przyjęcia są rozliczane względem wirtualnego wydania. To wirtualne wydanie zawiera łączną przyjętą ilość i wartość w danym dniu. Dla wirtualnego rozchodu istnieje odpowiadający mu wirtualny przychód, z którego zostanie rozliczony. W ten sposób wszystkie wydania mają ten sam średni koszt. Wirtualny rozchód i przychód mogą być postrzegane jako wirtualne przeniesienie na podstawie *średniej ważonej zamknięcia magazynu*. 
+Podczas zamykania inwentaryzacji przy użyciu modelu średniej ważonej daty inwentaryzacji można zastosować dwie metody tworzenia rozliczenia. Zazwyczaj wszystkie wpływy są rozliczane z emisją wirtualną, która zawiera całkowitą ilość i wartość otrzymanych wpływów. Ta wirtualna sprawa ma odpowiadający jej wirtualny paragon, z którego są rozliczane sprawy. W ten sposób wszystkie sprawy mają taki sam średni koszt każdego dnia. Wirtualne wydanie i wirtualne przyjęcie można uznać za wirtualne przeniesienie. To wirtualne przeniesienie jest nazywane zamknięciem *magazynu średniej ważonej*. Dlatego ta metoda określana jest jako *sumowania średniej ważonej*. Jeśli jest tylko jeden paragon, wszystkie sprawy można rozliczać na jego podstawie i nie tworzy się przelewu wirtualnego. Ta metoda rozliczania jest określana jako rozliczenie *bezpośrednie*. Wszelkie zapasy, które są w posiadaniu po zamknięciu inwentaryzacji, są wyceniane według średniej ważonej z ostatniego dnia poprzedniego okresu i uwzględniane w kalkulacji średniej ważonej na następny okres.
 
-Jeśli do tego dnia miało miejsce tylko jedno przyjęcie, nie trzeba obliczać średniej. Ponieważ wszystkie wydania są rozliczane względem tego przyjęcia, nie zostanie utworzone wirtualne przeniesienie. Podobnie, jeśli nastąpił tylko rozchód, nie ma przychodów do obliczania średniej i wirtualne przeniesienie nie zostanie utworzone. W przypadku używania średniej ważonej z datą można oznaczać transakcje magazynowe, tak aby określone przyjęcia towarów były rozliczone względem określonych wydań. W takim przypadku nie używaj reguły średniej ważonej z datą. W przypadku używania modelu magazynowego średniej ważonej z datą zaleca się comiesięczne zamykanie magazynu. 
+Można obejść zasadę średniej ważonej daty, oznaczając transakcje inwentaryzacyjne w taki sposób, aby przyjęcie konkretnej pozycji było rozliczane z konkretnym wydaniem. Okresowe zamknięcie zapasów jest wymagane, gdy model zapasów ze średnią ważoną datą jest używany do tworzenia rozliczeń i korygowania wartości rozchodów zgodnie z zasadą średniej ważonej daty. Dopóki nie przeprowadzisz zamknięcia inwentarza, transakcje wydania są wyceniane według średniej bieżącej z momentu aktualizacji fizycznej i finansowej. Jeśli nie używasz znakowania, średnia krocząca jest obliczana w momencie przeprowadzania fizycznej lub finansowej aktualizacji.
 
-Średnia ważona na dzień na potrzeby wyceny zapasów jest obliczana w następujący sposób: 
+Metoda kalkulacji kosztów zapasów według średniej ważonej według daty jest obliczana każdego dnia przy użyciu następującego wzoru:
 
-Średnia ważona = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q *n* × P *n*\]) ÷ (Q1 + Q2 + Q *n*) 
+*Koszt* = \[(*Q*<sub>*b*</sub> × *P*<sub>*b*</sub>) + &#x2211;<sub>*n*</sub>(*Q*<sub>*n*</sub> × *P*<sub>*n*</sub>)\] ÷ (*Q*<sub>*b*</sub> + &#x2211;<sub>*n*</sub>*Q*<sub>*n*</sub>)
 
-Podczas zamknięcia zapasów obliczenia są wykonywane na każdy dzień okresu zamknięcia, zgodnie z poniższą ilustracją. 
+- *Q* = Ilość transakcji
+- *P* = cena transakcji
 
-![Model codziennego obliczania średniej ważonej z datą.](./media/weightedaveragedatedailycalculationmodel.gif) 
+Innymi słowy, średni ważony koszt jest równy początkowej ilości razy cena początkowa plus suma każdej ilości przychodu pomnożona przez jej cenę przychodu, wszystkie podzielone przez początkową ilość plus sumę ilości przyjęć.
 
-Transakcje magazynowe powodujące wydania z zapasów, takie jak transakcje wynikające z zamówień sprzedaży, arkuszy magazynowych i zleceń produkcyjnych, są realizowane według szacowanego kosztu własnego na dzień księgowania. Ten szacowany koszt własny jest również określany mianem średniej kroczącej kosztu własnego. W dniu zamknięcia zapasów system analizuje transakcje magazynowe za poprzednie okresy, poprzednie dni i bieżący dzień. Ta analiza służy określaniu, która z poniższych zasad zamknięcia ma zostać użyta:
+Podczas zamknięcia zapasów kalkulacja jest wykonywana codziennie w okresie zamknięcia.
 
--   Rozliczenie bezpośrednie
--   Rozliczenie sumaryczne
+> [!NOTE]
+> Aby uzyskać więcej informacji o rozliczeniach, zobacz [Zamknięcie inwentarza](inventory-close.md).
 
-Rozliczenia to księgowania dotyczące zamknięcia magazynu, które dostosowują wartość rozchodów do właściwej średniej ważonej na dzień zamknięcia. 
+Poniższe przykłady pokazują efekt użycia średniej ważonej daty z pięcioma konfiguracjami:
 
-**Uwaga:** aby uzyskać więcej informacji o rozliczeniach, zobacz artykuł dotyczący zamknięcia zapasów. Poniższe przykłady ilustrują skutek zastosowania metody średniej ważonej w pięciu konfiguracjach:
-
--   Rozliczenie bezpośrednie z zastosowaniem średniej ważonej na dzień bez opcji **Włącz wartość fizyczną**
--   Rozliczenie sumaryczne z zastosowaniem średniej ważonej na dzień bez opcji **Włącz wartość fizyczną**
--   Rozliczenie bezpośrednie z zastosowaniem średniej ważonej na dzień z opcją **Włącz wartość fizyczną**
--   Rozliczenie sumaryczne z zastosowaniem średniej ważonej na dzień z opcją **Włącz wartość fizyczną**
--   Średnia ważona na dzień z przypisaniem
+- Rozliczenie bezpośrednie z zastosowaniem średniej ważonej na dzień bez opcji **Włącz wartość fizyczną**
+- Rozliczenie sumaryczne z zastosowaniem średniej ważonej na dzień bez opcji **Włącz wartość fizyczną**
+- Rozliczenie bezpośrednie z zastosowaniem średniej ważonej na dzień z opcją **Włącz wartość fizyczną**
+- Rozliczenie sumaryczne z zastosowaniem średniej ważonej na dzień z opcją **Włącz wartość fizyczną**
+- Średnia ważona na dzień z przypisaniem
 
 ## <a name="weighted-average-date-direct-settlement-when-the-include-physical-value-option-isnt-used"></a>Rozliczenie bezpośrednie z zastosowaniem średniej ważonej na dzień bez opcji Włącz wartość fizyczną
-Zasada bezpośredniego rozliczenia stosowana w tej wersji jest tą samą zasadą, która jest stosowana dla średniej ważonej w poprzednich wersjach. System rozliczy rozchody i przychody bezpośrednio. System wykorzystuje tę zasadę bezpośredniego rozliczania w określonych sytuacjach:
 
--   w danym okresie zaksięgowano jedną transakcję dotyczącą przychodów oraz co najmniej jedną transakcję dotyczącą rozchodów lub
--   w danym okresie zaksięgowano wyłącznie rozchody, a w magazynie znajdują się zapasy z poprzedniego okresu zamknięcia.
+Zasada bezpośredniego rozliczania tworzy rozliczenia bezpośrednio między przychodami i rozliczeniami bez tworzenia dodatkowych transakcji magazynowych. System wykorzystuje tę zasadę bezpośredniego rozliczania w następujących sytuacjach:
 
-W poniższym scenariuszu zostały zaksięgowane finansowo zaktualizowane przychód i rozchód. Podczas zamknięcia zapasów system rozlicza przyjęcie bezpośrednio względem wydania i nie będzie konieczna żadna korekta kosztu własnego przy wydaniu towarów. 
+- w danym okresie zaksięgowano jedną transakcję dotyczącą przychodów oraz co najmniej jedną transakcję dotyczącą rozchodów lub
+- w danym okresie zaksięgowano wyłącznie rozchody, a w magazynie znajdują się zapasy z poprzedniego okresu zamknięcia.
 
-Na ilustracji przedstawiono następujące transakcje:
-
--   1a. Fizyczny przychód magazynowy zaktualizowany dla ilości 5 i po koszcie 10,00 USD.
--   1b. Finansowy przychód magazynowy zaktualizowany dla ilości 5 i po koszcie 10,00 USD.
--   2a. Fizyczny rozchód magazynowy zaktualizowany dla ilości 2 i po koszcie 10,00 USD.
--   2b. Finansowy rozchód magazynowy zaktualizowany dla ilości 2 i po koszcie 10,00 USD.
--   3. Zamknięcie magazynu zostało wykonane z zastosowaniem metody rozliczenia bezpośredniego, aby rozliczyć finansowy przychód magazynowy względem finansowego rozchodu magazynowego.
-
-![Rozliczenie bezpośrednie z zastosowaniem średniej ważonej na dzień bez opcji Włącz wartość fizyczną.](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
-
-**Objaśnienie ilustracji:**
-
--   Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
--   Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią czasu.
--   Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią czasu.
--   Nad lub pod każdą strzałką pionową jest podana wartość transakcji magazynowej w formacie *Ilość*@*Cena jednostkowa*.
--   Jeśli wartość transakcji magazynowej została podana w nawiasie, transakcja taka została zaksięgowana fizycznie w magazynie.
--   Jeśli wartość transakcji magazynowej nie została podana w nawiasie, transakcja taka została zaksięgowana finansowo w magazynie.
--   Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
--   Każda strzałka pionowa jest oznaczona sekwencyjnym identyfikatorem, na przykład *1a*. Identyfikatory te wskazują kolejność księgowań transakcji magazynowych na osi czasu.
--   Każde zamknięcie magazynu zostało przedstawione w postaci czerwonej pionowej linii przerywanej z etykietą *Zamknięcie magazynu*.
--   Rozliczenia dokonane przed zamknięciem magazynu zostały przedstawione w postaci czerwonych linii zakończonych strzałkami, biegnących ukośnie od przychodu do rozchodu.
-
-## <a name="weighted-average-date-summarized-settlement-when-the-include-physical-value-option-isnt-used"></a>Rozliczenie sumaryczne z zastosowaniem średniej ważonej na dzień bez opcji Włącz wartość fizyczną
-Średnia ważona jest oparta na zasadzie, że wszystkie przyjęcia w okresie zamknięcia są sumowane do nowej transakcji przeniesienia zapasów. Ta transakcja jest znana jako *średnia ważona zamknięcia magazynu*. Wszystkie przychody dla danego dnia będą rozliczone z rozchodami nowo utworzonej transakcji transferu magazynowego. Wszystkie rozchody dla danego dnia będą rozliczone z przychodem nowej transakcji transferu magazynowego. Jeśli po zamknięciu magazynu wartość dostępnych zapasów jest dodatnia, poszczególne pozycje zapasów i ich wartość są zestawiane w ramach nowej transakcji przeniesienia magazynowego (przychód). Jeśli po zamknięciu magazynu wartość dostępnych zapasów jest ujemna, wartość zapasów jest sumą poszczególnych rozchodów, które nie zostały w pełni rozliczone. 
-
-W poniższym scenariuszu w okresie zamknięcia zostały zaksięgowane finansowo zaktualizowane przychód i rozchód. Podczas zamknięcia zapasów system ocenia poszczególne dni w celu określenia sposobu potraktowania każdego dnia na zamknięciu. 
-
-Na ilustracji przedstawiono następujące transakcje: 
+W tym przykładzie pole wyboru **Uwzględnij wartość fizyczną** jest wyczyszczony w grupie modeli **pozycji dla zwolnionego produktu**. Poniższy diagram przedstawia te transakcje:
 
 **Dzień 1:**
 
--   1a. Fizyczny przychód magazynowy zaktualizowany dla ilości 3 i po koszcie 15,00 USD.
--   1b. Finansowy przychód magazynowy zaktualizowany dla ilości 3 i po koszcie 15,00 USD.
--   2a. Fizyczny rozchód magazynowy w ilości 1 po koszcie średnim ruchomym 15,00 USD.
--   2b. Finansowy rozchód magazynowy w ilości 1 po koszcie średnim ruchomym 15,00 USD.
-
-W pierwszym dniu system zastosuje metodę rozliczenia bezpośredniego. 
+- 1a. Fizyczny przychód magazynowy w ilości 10 i po koszcie 10,00 USD.
+- 1b. Finansowy przychód magazynowy w ilości 10 i po koszcie 10,00 USD.
+- 2a. Fizyczny przychód magazynowy w ilości 10 i po koszcie 20,00 USD.
+- 3a. Fizyczny rozchód magazynowy w ilości 1 po koszcie własnym 10,00 USD (średnia ruchoma zaksięgowanych finansowo transakcji).
+- 3b. Finansowy rozchód magazynowy w ilości 1 po koszcie własnym 10,00 USD (średnia ruchoma zaksięgowanych finansowo transakcji).
 
 **Dzień 2:**
 
--   3a. Fizyczny rozchód magazynowy w ilości 1 po koszcie średnim ruchomym 15,00 USD.
--   3b. finansowy rozchód z magazynu — ilość 1, bieżący koszt średni 15.00 zł
-
-W drugim dniu system zastosuje metodę rozliczenia bezpośredniego. 
+- 4a. Fizyczny przychód magazynowy w ilości 1 i po koszcie 25,00 USD.
+- 5a. Fizyczny przychód magazynowy w ilości 1 i po koszcie 30,00 USD.
+- 5b. Finansowy przychód magazynowy w ilości 1 i po koszcie 30,00 USD.
+- 6a. Finansowy rozchód magazynowy w ilości 1 po koszcie własnym 20,00 USD (średnia ruchoma zaksięgowanych finansowo transakcji).
 
 **Dzień 3:**
 
--   4a. Fizyczny rozchód magazynowy w ilości 1 po koszcie średnim ruchomym 15,00 USD.
--   4b. finansowy rozchód z magazynu — ilość 1, bieżący koszt średni 15.00 zł
--   5a. Fizyczny przychód magazynowy w ilości 1 i po koszcie 17,00 USD.
--   5b. Finansowy przychód magazynowy w ilości 1 i po koszcie 17,00 USD.
+- 7\. Wykonywane jest zamknięcie magazynu. W oparciu o metodę średniej ważonej daty system stosuje metodę bezpośredniego rozliczenia na 30 grudnia (12/30), ponieważ tylko jeden paragon jest aktualizowany finansowo 30 grudnia. W tym przykładzie tworzone jest jedno rozliczenie między transakcjami 1b i 3b. Korekta USD 10.00 w celu zrównania wartości transakcji z 3b do 20,00. Nie dokonano korekty ani rozliczenia 31 grudnia (12/31), ponieważ 31 grudnia nie zaktualizowano finansowo rozliczeniu.
 
-Wykonywane jest zamknięcie magazynu. Musi zostać zastosowana metoda rozliczenia bezpośredniego, ponieważ wystąpiło wiele przyjęć obejmujących wiele dni.
+Poniższy diagram przedstawia tę serię transakcji oraz skutki zastosowania modelu zapasów ze średnią ważoną i zasady rozliczenia bezpośredniego bez opcji **Włącz wartość fizyczną**.
 
--   7a. W ramach opartej na średniej ważonej transakcji zamknięcia magazynu tworzony jest finansowy rozchód magazynowy w ilości 2 i po koszcie 32,00 USD w celu zsumowania rozliczeń wszystkich otwartych finansowych przychodów magazynowych mających miejsce do danego dnia.
--   7b. W ramach opartej na średniej ważonej transakcji zamknięcia magazynu tworzony jest finansowy przychód magazynowy w ilości 2 w celu skompensowania pozycji 7a.
+![Rozliczenie bezpośrednie z zastosowaniem średniej ważonej na dzień bez opcji Włącz wartość fizyczną.](media/weighted-average-date-direct-settlement-without-include-physical-value.png)
 
-System generuje i księguje sumaryczną transakcję przeniesienia zapasów. Ponadto system rozlicza wszystkie przyjęcia w danym dniu i dostępne zapasy z poprzednich dni względem sumarycznej transakcji wydania przeniesionych zapasów. Wszystkie rozchody w danym dniu zostaną rozliczone względem sumarycznej transakcji przyjęcia do magazynu. Średni ważony koszt własny zostanie obliczony na poziomie 16,00 USD. Rozchód zostanie skorygowany o 1,00 USD, aby równał się kosztowi średniemu ważonemu. Nowy średni ruchomy koszt własny wyniesie 16,00. 
+**Objaśnienie wykresu:**
 
-Na poniższym schemacie przedstawiono powyższe transakcje oraz efekt zastosowania w ich przypadku modelu magazynu opartego na średniej ważonej i zasady rozliczenia sumarycznego bez opcji **Włącz wartość fizyczną**. 
+- Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
+- Transakcje fizyczne są reprezentowane przez krótsze jasnoszare strzałki.
+- Transakcje finansowe są reprezentowane przez dłuższe czarne strzałki.
+- Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią.
+- Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią.
+- Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
+- Każda strzałka pionowa jest oznaczona sekwencyjnym identyfikatorem, na przykład *1a*. Identyfikatory te wskazują kolejność księgowań transakcji magazynowych na osi czasu.
+- Daty są rozdzielane przez zużytą czarna pionowe wiersze. Daty są zapisane na dole diagramu.
+- Zamknięcia zapasów są reprezentowane przez czerwone pionowe linie przerywane.
+- Rozliczenia dokonane przed zamknięciem magazynu zostały przedstawione w postaci linii zakończonych strzałkami, biegnących ukośnie od przychodu do rozchodu.
 
-![Rozliczenie sumaryczne z zastosowaniem średniej ważonej na dzień bez opcji Włącz wartość fizyczną.](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
+## <a name="weighted-average-date-summarized-settlement-when-the-include-physical-value-option-isnt-used"></a>Rozliczenie sumaryczne z zastosowaniem średniej ważonej na dzień bez opcji Włącz wartość fizyczną
 
-**Objaśnienie ilustracji**
+Jeśli w okresie występuje wiele przyjęć, średnia ważona data wykorzystuje zasadę rozliczenia sumarycznego, w której wszystkie przychody w ciągu jednego dnia są sumowane w transakcji o nazwie *średnie ważone zamknięcie zapasów*. Wszystkie wpływy na dany dzień zostaną rozliczone z rozchodami nowo utworzonej transakcji magazynowej. Wszystkie sprawy na dany dzień zostaną rozliczone po otrzymaniu transakcji z nową inwentaryzacją. Jeśli po zamknięciu magazynu pozostała wartość dostępnych zapasów, wartość dostępnych zapasów jest uwzględniana w transakcji przychodu transakcji zamknięcia magazynu średniej ważonej.
 
--   Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
--   Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią czasu.
--   Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią czasu.
--   Nad lub pod każdą strzałką pionową jest podana wartość transakcji magazynowej w formacie *Ilość*@*Cena jednostkowa*.
--   Jeśli wartość transakcji magazynowej została podana w nawiasie, transakcja taka została zaksięgowana fizycznie w magazynie.
--   Jeśli wartość transakcji magazynowej nie została podana w nawiasie, transakcja taka została zaksięgowana finansowo w magazynie.
--   Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
--   Każda strzałka pionowa jest oznaczona sekwencyjnym identyfikatorem, na przykład *1a*. Identyfikatory te wskazują kolejność księgowań transakcji magazynowych na osi czasu.
--   Każde zamknięcie magazynu zostało przedstawione w postaci czerwonej pionowej linii przerywanej z etykietą *Zamknięcie magazynu*.
--   Rozliczenia dokonane przed zamknięciem magazynu zostały przedstawione w postaci czerwonych linii zakończonych strzałkami, biegnących ukośnie od przychodu do rozchodu.
--   Czerwone linie zakończone strzałkami przedstawiają transakcje dotyczące przychodu rozliczane względem utworzonych przez system transakcji dotyczących rozchodu.
--   Biegnąca ukośnie zielona linia zakończona strzałkami przedstawia wygenerowaną przez system kompensującą transakcję dotyczącą przychodu, względem której została rozliczona pierwotnie zaksięgowana transakcja dotycząca rozchodu.
+Poniższy diagram przedstawia te transakcje:
+
+**Dzień 1:**
+
+- 1a. Fizyczny przychód magazynowy w ilości 1 i po koszcie 10,00 USD.
+- 1b. Finansowy przychód magazynowy w ilości 1 i po koszcie 10,00 USD.
+- 2a. Fizyczny przychód magazynowy w ilości 1 i po koszcie 20,00 USD.
+- 2b. Finansowy przychód magazynowy w ilości 1 i po koszcie 22,00 USD.
+- 3a. Fizyczny rozchód magazynowy w ilości 1 po koszcie własnym 16,00 USD (średnia ruchoma zaksięgowanych finansowo transakcji).
+- 3b. Finansowy rozchód magazynowy w ilości 1 po koszcie własnym 16,00 USD (średnia ruchoma zaksięgowanych finansowo transakcji).
+
+**Dzień 2:**
+
+- 4a. Fizyczny przychód magazynowy w ilości 1 i po koszcie 25,00 USD.
+- 5a. Fizyczny przychód magazynowy w ilości 1 i po koszcie 30,00 USD.
+- 5b. Finansowy przychód magazynowy w ilości 1 i po koszcie 30,00 USD.
+- 6a. Fizyczny rozchód magazynowy w ilości 1 po koszcie własnym 23,00 USD (średnia ruchoma zaksięgowanych finansowo transakcji).
+
+**Dzień 3:**
+
+- 7\. Wykonywane jest zamknięcie magazynu.
+- 7a. Finansowy rozchód transakcja zamknięcia magazynu średniej ważonej zostaje utworzony w celu zsumowania płatności wszystkich przychodów finansowych magazynu.
+
+    - Transakcja 1b jest rozliczana dla ilości 1 z kwotą rozliczeniową 10,00 USD.
+    - Transakcja 2b jest rozliczana dla ilości 1 z kwotą rozliczeniową 22,00 USD.
+    - Transakcja 7a jest tworzona dla ilości 2 sztuk z kwotą rozliczenia 32,00 USD. Transakcja jest przeciwstawna do sumy dwóch transakcji przychodów, które zostały finansowo zaktualizowane w tym okresie.
+
+- 7b. Średni ważony finansowy przychód zamknięcia magazynu jest tworzony jako kompensacja finansowo zaksięgowanych rozchodów.
+
+    - Transakcja 3b jest rozliczana dla ilości 1 z kwotą rozliczeniową 16,00 USD. Transakcja ta nie jest korygowana, ponieważ jest to średnia ważona transakcji finansowych zaksięgowanych na dzień 1 grudnia (12/1).
+    - Transakcja 7b jest tworzona dla ilości 2 z kwotą finansową 32,00 USD i kwotą rozliczoną 16,00 USD w celu skompensowania transakcji 3b. Ta transakcja kompensuje sumę jednej transakcji wydania, która jest aktualizowana finansowo w danym okresie. Transakcja pozostaje otwarta, ponieważ nadal jest dostępne.
+
+Na poniższym diagramie przedstawiono powyższe transakcje oraz efekt zastosowania w ich przypadku modelu magazynu opartego na średniej ważonej i zasady rozliczenia sumarycznego bez opcji **Włącz wartość fizyczną**.
+
+![Rozliczenie sumaryczne z zastosowaniem średniej ważonej na dzień bez opcji Włącz wartość fizyczną.](media/weighted-average-date-summarized-settlement-without-include-physical-value.png)
+
+**Objaśnienie wykresu:**
+
+- Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
+- Transakcje fizyczne są reprezentowane przez krótsze jasnoszare strzałki.
+- Transakcje finansowe są reprezentowane przez dłuższe czarne strzałki.
+- Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią.
+- Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią.
+- Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
+- Każda strzałka pionowa jest oznaczona sekwencyjnym identyfikatorem, na przykład *1a*. Identyfikatory te wskazują kolejność księgowań transakcji magazynowych na osi czasu.
+- Daty są rozdzielane przez zużytą czarna pionowe wiersze. Daty są zapisane na dole diagramu.
+- Zamknięcia zapasów są reprezentowane przez czerwone pionowe linie przerywane.
+- Rozliczenia dokonane przed zamknięciem magazynu zostały przedstawione w postaci linii zakończonych strzałkami, biegnących ukośnie od przychodu do rozchodu.
 
 ## <a name="weighted-average-date-direct-settlement-when-the-include-physical-value-option-is-used"></a>Rozliczenie bezpośrednie z zastosowaniem średniej ważonej na dzień z opcją Włącz wartość fizyczną
-Zasada bezpośredniego rozliczenia stosowana w tej wersji jest tą samą zasadą, która jest stosowana dla średniej ważonej na dzień w poprzednich wersjach. System rozliczy rozchody i przychody bezpośrednio. System wykorzystuje tę zasadę bezpośredniego rozliczania w określonych sytuacjach:
 
--   w danym okresie zaksięgowano jedną transakcję dotyczącą przychodów oraz co najmniej jedną transakcję dotyczącą rozchodów lub
--   w danym okresie zaksięgowano wyłącznie rozchody, a w magazynie znajdują się zapasy z poprzedniego okresu zamknięcia.
+W bieżącej wersji produktu opcja **Włącz wartość fizyczną** działa inaczej w modelu inwentaryzacji ze średnią ważoną datą niż we wcześniejszych wersjach. Jeśli pole wyboru **Włącz wartość fizyczną** jest zaznaczone dla towaru na stronie **Grupa modeli pozycji**, system użyje fizycznie zaktualizowanych przyjęć podczas obliczania szacowanego kosztu własnego (średniej ruchomej). W danym okresie rozchody będą księgowane według takiego szacowanego kosztu własnego. W okresie zamknięcia magazynu finansowo zaktualizowane przychody będą uwzględniane wyłącznie w przypadku obliczania średniej ważonej.
 
-Jeśli pole wyboru **Włącz wartość fizyczną** jest zaznaczone dla towaru na stronie **Grupa modeli pozycji**, system użyje fizycznie zaktualizowanych przyjęć podczas obliczania szacowanego kosztu własnego (średniej ruchomej). W danym okresie rozchody będą księgowane według takiego szacowanego kosztu własnego. W okresie zamknięcia magazynu finansowo zaktualizowane przychody będą uwzględniane wyłącznie w przypadku obliczania średniej ważonej.
+Poniższy diagram przedstawia te transakcje:
+
+**Dzień 1:**
+
+- 1a. Fizyczny przychód magazynowy w ilości 10 i po koszcie 10,00 USD.
+- 1b. Finansowy przychód magazynowy w ilości 10 i po koszcie 10,00 USD.
+- 2a. Fizyczny przychód magazynowy w ilości 10 i po koszcie 20,00 USD.
+- 3a. Fizyczne wydanie zapasów w ilości 1 szt. po cenie nabycia 15,00 USD (średnia bieżąca z transakcji zaksięgowanych fizycznie i finansowo).
+- 3b. Wydanie finansowe zapasów dla ilości 1 szt. w cenie nabycia 15,00 USD (średnia bieżąca z transakcji zaksięgowanych fizycznie i finansowo).
+
+**Dzień 2:**
+
+- 4a. Fizyczny przychód magazynowy w ilości 1 i po koszcie 25,00 USD.
+- 5a. Fizyczny przychód magazynowy w ilości 1 i po koszcie 30,00 USD.
+- 5b. Finansowy przychód magazynowy w ilości 1 i po koszcie 30,00 USD.
+- 6a. Fizyczne wydanie zapasów w ilości 1 szt. po cenie nabycia 21,25 USD (średnia bieżąca z transakcji zaksięgowanych fizycznie i finansowo).
+
+**Dzień 3:**
+
+- 7\. Wykonywane jest zamknięcie magazynu. W oparciu o metodę średniej ważonej daty system stosuje metodę bezpośredniego rozliczenia na 30 grudnia (12/30), ponieważ tylko jeden paragon jest aktualizowany finansowo 30 grudnia. W tym przykładzie tworzone jest jedno rozliczenie między transakcjami 1b i 3b. Nie dokonano korekty w wydaniu z dnia 12/30. Ponadto na dzień 31 grudnia nie dokonuje się korekty ani rozliczenia, ponieważ na dzień 31 grudnia nie ma żadnych zaktualizowanych finansowo wydań.
+
+Poniższy diagram przedstawia tę serię transakcji oraz skutki zastosowania modelu zapasów ze średnią ważoną i zasady rozliczenia bezpośredniego z opcją **Włącz wartość fizyczną**.
+
+![Średnie ważone rozliczenie bezpośrednie z Uwzględnij wartość fizyczną.](media/weighted-average-date-direct-settlement-with-include-physical-value.png)
+
+**Objaśnienie wykresu:**
+
+- Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
+- Transakcje fizyczne są reprezentowane przez krótsze jasnoszare strzałki.
+- Transakcje finansowe są reprezentowane przez dłuższe czarne strzałki.
+- Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią.
+- Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią.
+- Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
+- Każda strzałka pionowa jest oznaczona sekwencyjnym identyfikatorem, na przykład *1a*. Identyfikatory te wskazują kolejność księgowań transakcji magazynowych na osi czasu.
+- Daty są rozdzielane przez zużytą czarna pionowe wiersze. Daty są zapisane na dole diagramu.
+- Zamknięcia zapasów są reprezentowane przez czerwone pionowe linie przerywane.
+- Rozliczenia dokonane przed zamknięciem magazynu zostały przedstawione w postaci linii zakończonych strzałkami, biegnących ukośnie od przychodu do rozchodu.
 
 ## <a name="weighted-average-date-summarized-settlement-when-the-include-physical-value-option-is-used"></a>Rozliczenie sumaryczne z zastosowaniem średniej ważonej na dzień z opcją Włącz wartość fizyczną
-Jeśli pole wyboru **Włącz wartość fizyczną** jest zaznaczone dla towaru na stronie **Grupa modeli pozycji**, system użyje fizycznie zaktualizowanych przyjęć podczas obliczania szacowanego kosztu własnego (średniej ruchomej). W danym okresie rozchody będą księgowane według takiego szacowanego kosztu własnego. W okresie zamknięcia magazynu finansowo zaktualizowane przychody będą uwzględniane wyłącznie w przypadku obliczania średniej ważonej. Bezpośrednie rozliczenie średniej ważonej opiera się na zasadzie, że wszystkie przychody w ramach okresu zamknięcia są sumowane do nowej transakcji transferu magazynowego, zwanej *średnią ważoną zamknięcia magazynu*. Wszystkie przychody dla danego dnia będą rozliczone z rozchodami nowo utworzonej transakcji transferu magazynowego. Wszystkie rozchody dla danego dnia będą rozliczone z przychodem nowej transakcji transferu magazynowego. Jeśli po zamknięciu magazynu wartość dostępnych zapasów jest dodatnia, poszczególne pozycje zapasów i ich wartość są zestawiane w ramach nowej transakcji przeniesienia magazynowego (przychód). Jeśli po zamknięciu magazynu wartość dostępnych zapasów jest ujemna, wartość zapasów jest sumą poszczególnych rozchodów, które nie zostały w pełni rozliczone.
+
+W bieżącej wersji produktu opcja **Włącz wartość fizyczną** działa inaczej ze średnią ważoną niż we wcześniejszych wersjach. Jeśli pole wyboru **Włącz wartość fizyczną** jest zaznaczone dla towaru na stronie **Grupa modeli pozycji**, system użyje fizycznie zaktualizowanych przyjęć podczas obliczania szacowanego kosztu własnego (średniej ruchomej). W danym okresie rozchody będą księgowane według takiego szacowanego kosztu własnego. W okresie zamknięcia magazynu finansowo zaktualizowane przychody będą uwzględniane wyłącznie w przypadku obliczania średniej ważonej. W przypadku korzystania ze średniej ważonej modelu zapasów zalecamy comiesięczne zamknięcie zapasów. W tym przykładzie rozliczenia sumarycznego ze średnią ważoną z datą model zapasów jest oznaczony tak, aby zawierał wartość fizyczną.
+
+Poniższy diagram przedstawia te transakcje:
+
+**Dzień 1:**
+
+- 1a. Fizyczny przychód magazynowy w ilości 1 i po koszcie 10,00 USD.
+- 1b. Finansowy przychód magazynowy w ilości 1 i po koszcie 10,00 USD.
+- 2a. Fizyczny przychód magazynowy w ilości 1 i po koszcie 20,00 USD.
+- 2b. Finansowy przychód magazynowy w ilości 1 i po koszcie 22,00 USD.
+- 3a. Fizyczne wydanie zapasów w ilości 1 szt. po cenie nabycia 16,00 USD (średnia bieżąca z transakcji zaksięgowanych fizycznie i finansowo).
+- 3b. Wydanie finansowe zapasów dla ilości 1 szt. w cenie nabycia 16,00 USD (średnia bieżąca z transakcji zaksięgowanych fizycznie i finansowo).
+
+**Dzień 2:**
+
+- 4a. Fizyczny przychód magazynowy w ilości 1 i po koszcie 25,00 USD.
+- 5a. Fizyczny przychód magazynowy w ilości 1 i po koszcie 30,00 USD.
+- 5b. Finansowy przychód magazynowy w ilości 1 i po koszcie 30,00 USD.
+- 6a. Fizyczne wydanie zapasów w ilości 1 szt. po cenie nabycia 23,67 USD (średnia bieżąca z transakcji zaksięgowanych fizycznie i finansowo).
+
+**Dzień 3:**
+
+- 7\. Wykonywane jest zamknięcie magazynu.
+- 7a. Finansowy rozchód transakcja zamknięcia magazynu średniej ważonej zostaje utworzony w celu zsumowania płatności wszystkich przychodów finansowych magazynu.
+
+    - Transakcja 1b jest rozliczana dla ilości 1 z kwotą rozliczeniową 10,00 USD.
+    - Transakcja 2b jest rozliczana dla ilości 1 z kwotą rozliczeniową 22,00 USD.
+    - Transakcja 7a jest tworzona dla ilości 2 sztuk z kwotą rozliczenia 32,00 USD. Transakcja jest przeciwstawna do sumy dwóch transakcji przychodów, które zostały finansowo zaktualizowane w tym okresie.
+
+- 7b. Średni ważony finansowy przychód zamknięcia magazynu jest tworzony jako kompensacja finansowo zaksięgowanych rozchodów.
+
+    - Transakcja 3b jest rozliczana dla ilości 1 z kwotą rozliczeniową 16,00 USD. Transakcja ta nie jest korygowana, ponieważ jest to średnia ważona transakcji finansowych zaksięgowanych na dzień 1 grudnia (12/1).
+    - Transakcja 7b jest tworzona dla ilości 2 z kwotą finansową 32,00 USD i kwotą rozliczoną 16,00 USD w celu skompensowania transakcji 3b. Ta transakcja kompensuje sumę jednej transakcji wydania, która jest aktualizowana finansowo w danym okresie. Transakcja pozostaje otwarta, ponieważ nadal jest dostępne.
+
+Poniższy diagram przedstawia tę serię transakcji oraz skutki zastosowania modelu średniej ważonej zapasów i zasady rozliczenia sumarycznego bez opcji **Włącz wartość fizyczną**.
+
+![Średnie ważone sumaryczne rozliczenie z Uwzględnij wartość fizyczną.](media/weighted-average-date-summarized-settlement-with-include-physical-value.png)
+
+**Objaśnienie wykresu:**
+
+- Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
+- Transakcje fizyczne są reprezentowane przez krótsze jasnoszare strzałki.
+- Transakcje finansowe są reprezentowane przez dłuższe czarne strzałki.
+- Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią.
+- Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią.
+- Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
+- Każda strzałka pionowa jest oznaczona sekwencyjnym identyfikatorem, na przykład *1a*. Identyfikatory te wskazują kolejność księgowań transakcji magazynowych na osi czasu.
+- Daty są rozdzielane przez zużytą czarna pionowe wiersze. Daty są zapisane na dole diagramu.
+- Zamknięcia zapasów są reprezentowane przez czerwone pionowe linie przerywane.
+- Rozliczenia dokonane przed zamknięciem magazynu zostały przedstawione w postaci linii zakończonych strzałkami, biegnących ukośnie od przychodu do rozchodu.
 
 ## <a name="weighted-average-date-when-marking-is-used"></a>Średnia ważona na dzień z przypisaniem
-Oznaczanie to proces, który pozwala połączyć transakcję wydania z transakcją przyjęcia. Może to mieć miejsce zarówno przed, jak i po zaksięgowaniu transakcji. Procesu tego można użyć po to, aby sprawdzić dokładny koszt zapasów w momencie księgowania transakcji lub zamknięcia magazynu. 
 
-Na przykład dział obsługi klienta zaakceptował pilne zamówienie od ważnego odbiorcy. Zamówienie jest pilne, trzeba będzie zatem zapłacić więcej za ten towar, aby spełnić wymagania odbiorcy. Należy się więc upewnić, że koszt towaru zostanie uwzględniony przy obliczaniu marży (lub w koszcie sprzedanych towarów) w przypadku realizacji danego zamówienia sprzedaży. Po zaksięgowaniu zamówienia zakupu zapasy zostaną przyjęte do magazynu po koszcie 120 USD. Dokument zamówienia sprzedaży jest oznaczony do zamówienia zakupu przed zaksięgowaniem dokumentu dostawy lub faktury. KWS wyniesie 120,00 USD (nie będzie bieżącą średnią ruchomą kosztów towaru). Jeśli dotyczące zamówienia sprzedaży dokument dostawy lub faktura zostaną zaksięgowane przed wspomnianym przypisaniem, wówczas kosztem sprzedanych towarów będzie średnia ruchoma kosztów własnych. Przed zamknięciem magazynu obie powyższe transakcje mogą nadal zostać przypisane do siebie. Jeśli transakcja dotycząca przychodu jest oznaczona do transakcji dotyczącej rozchodu, metoda wyceny określona w grupie modeli towaru, do której należy dana pozycja, zostanie pominięta. Zamiast tego system dokona wzajemnego rozliczenia tych transakcji. 
+Oznaczanie to proces, który pozwala połączyć (oznaczyć) transakcję wydania z transakcją przyjęcia. Może to mieć miejsce zarówno przed, jak i po zaksięgowaniu transakcji. Możesz użyć oznaczania, gdy chcesz mieć pewność co do dokładnego kosztu zapasów, gdy transakcja jest księgowana lub wykonywane jest zamknięcie zapasów.
 
-Można zaznaczyć transakcję rozchodu do przyjęcia przed zaksięgowaniem transakcji. Można to zrobić z wiersza zamówienia sprzedaży na stronie **Szczegóły zamówienia sprzedaży**. Można wyświetlić otwarte transakcje przychodu na stronie **Zaznaczanie**. Można zaznaczyć transakcję rozchodu do przyjęcia po zaksięgowaniu transakcji. Można dopasować lub oznaczyć transakcję rozchodu dla otwartej transakcji przychodu dla indywidualnej pozycji z zaksięgowanego arkusza korekt zapasów. Na ilustracji przedstawiono następujące transakcje:
+Na przykład dział obsługi klienta zaakceptował pilne zamówienie od ważnego odbiorcy. Zamówienie jest pilne, trzeba będzie zatem zapłacić więcej za ten towar, aby spełnić wymagania odbiorcy. Trzeba się upewnić, że koszt tej pozycji magazynowej zostanie uwzględniony w marży (lub koszcie własnym sprzedaży, COGS) na tej fakturze za zamówienie sprzedaży.
 
--   1a. Fizyczny przychód magazynowy w ilości 1 i po koszcie własnym 10,00 USD.
--   1b. Finansowy przychód magazynowy w ilości 1 i po koszcie własnym 10,00 USD.
--   2a. Fizyczny przychód magazynowy w ilości 1 i po koszcie własnym 20,00 USD.
--   2b. Finansowy przychód magazynowy w ilości 1 i po koszcie własnym 20,00 USD.
--   3a. Fizyczny przychód magazynowy w ilości 1 i po koszcie własnym 25,00 USD.
--   4a. Fizyczny przychód magazynowy w ilości 1 i po koszcie własnym 30,00 USD.
--   4b. Finansowy przychód magazynowy w ilości 1 i po koszcie własnym 30,00 USD.
--   5a. Fizyczny rozchód magazynowy w ilości 1 po koszcie własnym 21,25 USD (średnia ruchoma zaktualizowanych finansowo i fizycznie transakcji).
--   5b. Finansowy rozchód magazynowy w ilości 1 zostaje przypisany do przychodu magazynowego z pozycji 2b przed zaksięgowaniem transakcji. Transakcja ta jest księgowana po koszcie własnym w wysokości 20,00 USD.
--   6a. Fizyczny rozchód magazynowy w ilości 1 i po koszcie własnym 21,25 USD.
--   7. Wykonywane jest zamknięcie magazynu. Finansowo zaktualizowana transakcja została przypisana do istniejącego przychodu magazynowego, obie transakcje są zatem rozliczane względem siebie i nie ma miejsca żadna korekta.
+Po zaksięgowaniu zamówienia zakupu zapasy zostaną przyjęte do magazynu po koszcie 120 USD. Jeśli dokument zamówienia sprzedaży jest oznaczony w zamówieniu zakupu przed zaksięgowaniem dokumentu dostawy lub faktury, KWS wyniesie 120,00 USD zamiast bieżącego średniego kosztu bieżącego towaru. Jeśli oznakowanie nastąpi po zaksięgowaniu dokumentu dostawy lub faktury zamówienia sprzedaży, KWS zostaną zaksięgowane według średniej kroczącej kosztu własnego.
 
-Nowa średnia ruchoma kosztów własnych odzwierciedla średnią wynikającą z fizycznie i finansowo zaktualizowanych transakcji na poziomie 27,50 USD. Poniższy wykres obrazuje tę serię transakcji ze skutkami zastosowania modelu magazynu wykorzystującego metodę średniej ważonej na dzień z oznaczeniem.
+Przed zamknięciem magazynu obie powyższe transakcje mogą nadal zostać przypisane do siebie.
 
-![średnia ważona na dzień z przypisaniem.](./media/weightedaveragedatewithmarking.gif) 
+Jeśli transakcja przyjęcia jest oznaczona jako transakcja wydania, metoda wyceny wybrana dla grupy modeli towaru zostanie pominięta, a system dokona wzajemnego rozliczenia tych transakcji.
 
-**Objaśnienie ilustracji:**
+Można zaznaczyć transakcję rozchodu do przyjęcia przed zaksięgowaniem transakcji. Możesz to zrobić z wiersza zamówienia sprzedaży na stronie **Szczegóły zamówienia sprzedaży**. Można wyświetlić otwarte transakcje przychodu na stronie **Zaznaczanie**.
 
--   Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
--   Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią czasu.
--   Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią czasu.
--   Nad lub pod każdą strzałką pionową jest podana wartość transakcji magazynowej w formacie *Ilość*@*Cena jednostkowa*.
--   Jeśli wartość transakcji magazynowej została podana w nawiasie, transakcja taka została zaksięgowana fizycznie w magazynie.
--   Jeśli wartość transakcji magazynowej nie została podana w nawiasie, transakcja taka została zaksięgowana finansowo w magazynie.
--   Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
--   Każda strzałka pionowa jest oznaczona sekwencyjnym identyfikatorem, na przykład *1a*. Identyfikatory te wskazują kolejność księgowań transakcji magazynowych na osi czasu.
--   Każde zamknięcie magazynu zostało przedstawione w postaci czerwonej pionowej linii przerywanej z etykietą *Zamknięcie magazynu*.
--   Rozliczenia dokonane przed zamknięciem magazynu zostały przedstawione w postaci czerwonych linii zakończonych strzałkami, biegnących ukośnie od przychodu do rozchodu.
+Można też zaznaczyć transakcję rozchodu do przyjęcia po zaksięgowaniu transakcji. Można dopasować lub oznaczyć transakcję rozchodu dla otwartej transakcji przychodu dla indywidualnej pozycji z zaksięgowanego arkusza korekt zapasów.
 
+Poniższy diagram przedstawia te transakcje:
 
+**Dzień 1:**
 
+- 1a. Fizyczny przychód magazynowy w ilości 1 i po koszcie 10,00 USD.
+- 1b. Finansowy przychód magazynowy w ilości 1 i po koszcie 10,00 USD.
+- 2a. Fizyczny przychód magazynowy w ilości 1 i po koszcie 20,00 USD.
+- 2b. Finansowy przychód magazynowy w ilości 1 i po koszcie 22,00 USD.
+- 3a. Fizyczny rozchód magazynowy w ilości 1 po koszcie własnym 16,00 USD (średnia ruchoma zaksięgowanych finansowo transakcji).
+- 3b. Finansowy rozchód magazynowy w ilości 1 po koszcie własnym 16,00 USD (średnia ruchoma zaksięgowanych finansowo transakcji).
+- 3c. Finansowy rozchód magazynowy dla transakcji 3b jest oznaczony jako finansowy rozchód magazynowy dla transakcji 2b.
 
+**Dzień 2:**
 
+- 4a. Fizyczny przychód magazynowy w ilości 1 i po koszcie 25,00 USD.
+- 5a. Fizyczny przychód magazynowy w ilości 1 i po koszcie 30,00 USD.
+- 5b. Finansowy przychód magazynowy w ilości 1 i po koszcie 30,00 USD.
+- 6a. Fizyczny rozchód magazynowy w ilości 1 po koszcie własnym 23,00 USD (średnia ruchoma zaksięgowanych finansowo transakcji).
+
+**Dzień 3:**
+
+- 7\. Wykonywane jest zamknięcie magazynu. W oparciu o zasadę znakowania wykorzystującą metodę średniej ważonej, oznaczone transakcje są rozliczane względem siebie. W tym przykładzie transakcja 3b jest rozliczana z transakcją 2b, a korekta o 6,00 USD jest księgowana w transakcji 3b, aby uzyskać wartość 22,00 USD. W tym przykładzie nie są dokonywane żadne dodatkowe rozliczenia, ponieważ zamknięcie tworzy rozliczenia tylko dla transakcji zaktualizowanych finansowo.
+
+Poniższy diagram przedstawia tę serię transakcji oraz skutki zastosowania modelu średniej ważonej zapasów z oznaczeniem.
+
+![Średnia ważona z oznaczeniem.](media/weighted-average-date-with-marking.png)
+
+**Objaśnienie wykresu:**
+
+- Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
+- Transakcje fizyczne są reprezentowane przez krótsze jasnoszare strzałki.
+- Transakcje finansowe są reprezentowane przez dłuższe czarne strzałki.
+- Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią.
+- Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią.
+- Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
+- Każda strzałka pionowa jest oznaczona sekwencyjnym identyfikatorem, na przykład *1a*. Identyfikatory te wskazują kolejność księgowań transakcji magazynowych na osi czasu.
+- Daty są rozdzielane przez zużytą czarna pionowe wiersze. Daty są zapisane na dole diagramu.
+- Zamknięcia zapasów są reprezentowane przez czerwone pionowe linie przerywane.
+- Rozliczenia dokonane przed zamknięciem magazynu zostały przedstawione w postaci linii zakończonych strzałkami, biegnących ukośnie od przychodu do rozchodu.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

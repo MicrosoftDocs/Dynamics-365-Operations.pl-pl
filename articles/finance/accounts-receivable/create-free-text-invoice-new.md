@@ -1,23 +1,23 @@
 ---
 title: Tworzenie faktury niezależnej
 description: W tym temacie opisano sposób tworzenia faktur niezależnych.
-author: mikefalkner
-ms.date: 08/24/2018
+author: abruer
+ms.date: 02/15/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: e5ca9e00ec881707248d966470288fd3ddba4e785127f30bd0e6dd4e7186c7e6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6e9578d9b2d61f241ab5e92fc9740b88b80969f6
+ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763293"
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "8392892"
 ---
 # <a name="create-a-free-text-invoice"></a>Tworzenie faktury niezależnej
 
@@ -68,6 +68,7 @@ W tym temacie opisano sposób tworzenia faktur niezależnych. Ta procedura wykor
 
     * Możesz zmienić harmonogram drukowania faktur. Zaznacz opcję **Bieżąca**, aby drukować każdą fakturę po jej aktualizacji. Zaznacz opcję **Po**, aby drukować po zaktualizowaniu wszystkich faktur.
     * Aby zmienić sposób weryfikowania limitu kredytowego odbiorcy przed zaksięgowaniem faktury, zmień wartość w pola **Typ limitu kredytu**.
+    * Na karcie **Aktualizacje** na stronie **Parametry rozrachunków z odbiorcami** (**Rozrachunki z odbiorcami > Ustawienia > Parametry rozrachunków z odbiorcami**) możesz zatrzymać księgowanie faktury niezależnej po wystąpieniu błędu. Wybierz opcję **Tak**, aby **zatrzymać księgowanie** faktur wolnych dla pierwszego parametru błędu, aby zatrzymać księgowanie faktur wolnych w przypadku wystąpienia błędu. W przypadku zaksięgowania w partii błąd spowoduje zatrzymanie procesu księgowania, a stan partii będzie ustawiony na **Błąd**. Jeśli ta opcja nie zostanie wybrana, proces księgowania pominie fakturę z błędem księgowania i będzie kontynuował księgowanie dodatkowych faktur. Jeśli księgowanie w partii, błąd księgowania nie zapobiegnie zaksięgowaniu innych faktur. Stan partii będzie **zakończony**. Szczegółowy raport procesu księgowania będzie dostępny do przeglądu w historii zadań wsadowych.
     * Aby wydrukować fakturę, zaznacz w tej opcji wartość **Tak**.
     * Aby zaksięgować fakturę, zaznacz w tej opcji wartość **Tak**. Fakturę można wydrukować bez księgowania.
 
@@ -82,6 +83,12 @@ Po skopiowaniu wierszy można edytować informacje zgodnie z potrzebami.
 Fakturę niezależną można utworzyć na podstawie szablonu. Gdy na karcie **Faktura** wybierzesz opcję **Nowe z szablonu**, można wybrać nazwę szablonu i konto odbiorcy dla nowej faktury niezależnej. Wartości domyślne, takie jak warunki płatności i metoda płatności, mogą być automatycznie wprowadzane na podstawie danych odbiorcy lub też można użyć wartości zapisanych w szablonie.
 
 Zostanie utworzona nowa faktura niezależna i można w niej edytować wartości zgodnie z potrzebami.
+
+## <a name="resetting-the-workflow-status-for-free-text-invoices-from-unrecoverable-to-draft"></a>Resetowanie stanu przepływu pracy dla faktur niezależnych z Nieodwracalne na Wersja robocza
+Wystąpienie przepływu pracy, które zostało zatrzymane z powodu nieodwracalnego błędu będzie miało stan przepływu pracy **Nieodwracalne**. Gdy stan przepływu pracy faktury niezależnej od odbiorcy to **Nieodwracalne**, można go zmienić na **Wersja robocza**, wybierając opcję **Odwołaj** z akcji przepływu pracy. Następnie można edytować fakturę wolną od faktur dla odbiorcy. Ta funkcja jest dostępna, jeśli jest włączony parametr **Resetowanie statusu przepływu pracy dla faktur niezależnych z Nie do odzyskania na Wersja robocza** na stronie **Zarządzanie funkcjami**.
+
+Za pomocą strony **Historia przepływu pracy** można zmienić stan przepływu pracy na **Wersja robocza**. Można otworzyć tę stronę z menu **Faktura niezależna** lub z menu nawigacji **Wspólne > Zapytania > Przepływ pracy**. Aby zresetować stan przepływu pracy na **Wersja robocza**, wybierz opcję **Odwołaj**. Możesz również zresetować stan przepływu pracy do **wersji roboczej**, wybierając akcję **Odwołaj** na stronie **Faktura niezależna** lub na stronie **Wszystkie faktury niezależne**. Po zmianie stanu przepływu pracy na **Wersja robocza**, fakturę będzie można edytować na stronie **Faktura niezależna**.
+
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

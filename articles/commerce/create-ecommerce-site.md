@@ -2,7 +2,7 @@
 title: Tworzenie witryny handlu elektronicznego
 description: W tym temacie opisano kroki i informacje wymagane do utworzenia nowej witryny e-Commerce w konstruktorze witryn Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 03/04/2022
+ms.date: 03/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5e451b1c95c3e26d1292e7b8300b62af43c81f2f
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: 37734e2ceea3a50c70a2f7945329d4a9cf660cc6
+ms.sourcegitcommit: 9c19898e1f41495f804c7f07e2636b53a098c4c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388218"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "8402782"
 ---
 # <a name="create-an-e-commerce-site"></a>Tworzenie witryny handlu elektronicznego
 
@@ -70,6 +70,14 @@ Aby zmienić nazwę witryny w kreatorze witryn, wykonaj poniższe kroki.
 1. Aby otworzyć widok listy witryn, wybierz Opcję **Przełączania witryn** w prawym górnym rogu, a następnie wybierz pozycję **Zarządzaj witrynami**. 
 1. Zaznacz pole wyboru obok witryny, której nazwę chcesz zmienić, a następnie wybierz pozycję **Zmień nazwę** na pasku poleceń.
 1. W oknie dialogowym **Nowa nazwa witryny**, wprowadź nazwę, a następnie wybierz **OK**. Lista witryn zostanie zaktualizowana tak, by pokazywała ich nową nazwę.
+
+## <a name="delete-a-site"></a>Usunięcie witryny
+
+Aby usunąć witrynę w Kreatorze witryn, wykonaj następujące kroki.
+
+1. Aby otworzyć widok listy witryn, wybierz Opcję **Przełączania witryn** w prawym górnym rogu, a następnie wybierz pozycję **Zarządzaj witrynami**.
+1. Wybierz witrynę, którą chcesz usunąć, a następnie wybierz pozycję **Usuń** na pasku poleceń.
+1. W oknie dialogowym **Usuń \<site name\>** wprowadź nazwę witryny, a następnie wybierz **Usuń**.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

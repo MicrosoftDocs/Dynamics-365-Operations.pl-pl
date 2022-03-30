@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-29
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 01edccbf1a50264b3867e303cbca44eb1b1d7dd9
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 32e5ceb607d2c4f3d9794421db5382441ac30467
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087506"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8408237"
 ---
 # <a name="parameters-not-used-by-planning-optimization"></a>Parametry nie są używane przez optymalizację planowania
 
@@ -194,12 +194,6 @@ Optymalizacja planowania nie używa następującej opcji parametru na stronie **
   - **Kontrola daty dostawy** – Optymalizacja planowania nie obsługuje opcji *CTP*, oczekiwanie na obsługę protokołu *CTP*.
   - **Czas realizacji zapasów** — w wersjach usługi Optymalizacja planowania, które są starsze niż wydanie z 6 sierpnia 2021 roku, parametr Optymalizacja planowania używa tego parametru do obliczenia poprawnych dat zamówienia i dostawy, ale nie zapisuje w nim obliczonego czasu realizacji. W późniejszych wersjach usługa korzysta również z obliczonego czasu realizacji w celu ustawienia pola **Czas realizacji** i opcji **Dni robocze** zgodnie z odpowiednim zamówieniem planowanym.
   - **Dni robocze** — w wersjach usługi Optymalizacja planowania, które są starsze niż wydanie z 6 sierpnia 2021 roku, parametr Optymalizacja planowania używa tego parametru do obliczenia poprawnych dat zamówienia i dostawy, ale nie zapisuje w nim obliczonego czasu realizacji. W późniejszych wersjach usługa korzysta również z obliczonego czasu realizacji w celu ustawienia pola **Czas realizacji** i opcji **Dni robocze** zgodnie z odpowiednim zamówieniem planowanym.
-
-## <a name="working-time-calendars-page"></a>Strona Kalendarze czasu pracy
-
-Optymalizacja planowania nie używa następującego parametru na stronie **Kalendarze czasu pracy**:
-
-- **Kalendarz podstawowy** — oczekiwana obsługa *kalendarzy podstawowych*.
 
 ## <a name="batch-disposition-master-page"></a>Strona Wzorzec dyspozycji partii
 

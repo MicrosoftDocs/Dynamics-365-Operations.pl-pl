@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: f9674bb68d7f577a6efdef3416d1731d743d0555
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: fd6ecb0b7bc1fcf85feab2588622a96cf43b6155
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087173"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8407852"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>Proces wydania i historia wydań optymalizacji planowania
 
@@ -33,6 +33,7 @@ Ponieważ powiadomienia nie są wyświetlane, gdy optymalizacja planowania jest 
 
 | Zmiany | Szczegóły zarządzania funkcjami | Daty zwolnienia |
 |---|---|---|
+| <p>Ogólne usprawnienia wydajności, jakości i stabilności.<p>Obsługa kalendarza scentralizowanego optymalizacji planowania<p>Optymalizacja planowania – propozycje optymalizacji istniejących dostaw | Nie jest wymagane zarządzanie funkcjami. | 7-11 marca 2022 r. |
 | <p>Dodano obsługę priorytetów planowania dla zleceń produkcyjnych. | Dostępne od wersji 10.0.25 jako część funkcji o nazwie *Wsparcie MRP oparte na priorytetach dla optymalizacji planowania*. | 12–18 listopada 2021 r. |
 | <p>Ogólne usprawnienia wydajności, jakości i stabilności. | Nie jest wymagane zarządzanie funkcjami. | 12–18 listopada 2021 r. |
 | <p>Dodano obsługę formuł obliczania czasu procesu, marszrutę produkcji z nakładaniem i numer operacji produkcyjnej w transakcjach zapotrzebowania.</p><p>Rozszerzone komunikaty o błędach w planowaniu produkcji związane z limitem czasu, nie można odnaleźć zdolności produkcyjnych i marszrutą cykliczną.</p><p>Poprawiona spójność podczas obliczania dat przyjęcia i wydania zarówno dla zamówień planowanych, jak i zamówień potwierdzonych.</p><p>Ogólne usprawnienia wydajności, jakości i stabilności. | Nazwa funkcji: *Planowanie nieskończonej pojemności dla optymalizacji planowania* | 22-27 października 2021 |

@@ -2,7 +2,7 @@
 title: Tworzenie faktury dla odbiorcy
 description: Faktura dla odbiorcy do zamówienia sprzedaży jest wekslem związanym ze sprzedażą i który organizacja wystawia odbiorcy.
 author: ShivamPandey-msft
-ms.date: 02/01/2022
+ms.date: 03/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d408ca5265802cf17a53dd5cb004f707f6f7855b
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 9ffb2c42748678ae265a706a00db327a160cc9f5
+ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087430"
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "8392918"
 ---
 # <a name="create-a-customer-invoice"></a>Tworzenie faktury dla odbiorcy
 
@@ -82,6 +82,9 @@ Stan zamówienia sprzedaży można wyświetlić na stronie listy **Wszystkie zam
 Za pomocą tego procesu można wyświetlić jedno lub kilka zamówień sprzedaży, które są gotowe do zafakturowania, gdy trzeba skonsolidować je na jednej fakturze. 
 
 Można wybrać wiele faktur na stronie listy **Zamówienie sprzedaży** i skonsolidować je za pomocą funkcji **Generuj faktury**. Na stronie **Księgowanie faktury** można zmienić ustawienie **Zamówienie zbiorcze** w celu podsumowania według numeru zamówienia (jeśli jest wiele dokumentów dostawy dla jednego zamówienia sprzedaży) lub według konta faktury (jeśli istnieje wiele zamówień sprzedaży dla jednego konta faktury). Użyj przycisku **Rozmieść**, aby konsolidować zamówienia sprzedaży na jednej fakturze na podstawie ustawienia **Zamówienie zbiorcze**.
+
+## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price"></a>Księgowanie na koncie przychodów dla wierszy zamówienia sprzedaży, które nie mają ceny
+Będziesz mieć możliwość zaktualizowania konta **Przychody** w **Księdze głównej** dla wierszy zamówienia sprzedaży, które nie mają ceny. Aby skonfigurować lub wyświetlić te informacje, przejdź do parametru **Zaksięguj do przychodów dla wierszy faktury za zamówienie sprzedaży o cenie zerowej** na karcie **Księga i podatek od sprzedaży** w **Parametry na koncie z odbiorcami** strona. (**Rozrachunki z dostawcami > Ustawienia > Parametry modułu rozrachunków z odbiorcami**). Wybierz przycisk **Tak**, aby zaktualizować **konto przychodów** dla wierszy faktury zamówienia sprzedaży, które nie mają ceny. Konto przychodów jest definiowane na stronie **Parametr księgowania zapasów**, na karcie Definicja konta **zamówienia sprzedaży**. Jeśli ta opcja nie jest zaznaczona, wiersze bez informacji o cenach nie będą księgować na koncie **Przychody**.
 
 ## <a name="additional-settings-that-change-the-posting-behavior"></a>Dodatkowe ustawienia, które zmieniają działanie procesu księgowania
 Następujące pola zmieniają działanie procesu księgowania.
