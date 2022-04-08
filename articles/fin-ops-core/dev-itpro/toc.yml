@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-25.md
                 - name: Aktualizacje platformy dla wersji 10.0.24 (luty 2022)
                   href: get-started/whats-new-platform-updates-10-0-24.md
-                - name: Aktualizacja platformy dla wersji 10.0.23 (styczeń 2022)
-                  href: get-started/whats-new-platform-updates-10-0-23.md
             - name: Usunięte lub wycofane funkcje
               items:
                 - name: Usunięte lub wycofane funkcje — strona główna
@@ -240,6 +238,8 @@
               href: data-entities/configure-export-data-lake.md
             - name: Aplikacje finansowe i operacyjne w usłudze Azure Data Lake
               href: data-entities/finance-data-azure-data-lake.md
+            - name: Dane i metadane przechowywane w usłudze Azure Data Lake
+              href: data-entities/Azure-Data-Lake-Enhanced-Metadata.md
             - name: Udostępnianie magazynu jednostek w usłudze Data Lake
               href: data-entities/entity-store-data-lake.md
             - name: Zdarzenia biznesowe wygenerowane przez eksport do usługi Azure Data Lake (wersja zapoznawcza)
@@ -410,6 +410,8 @@
                       href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: Używanie tego samego wystąpienia komponentu AD FS dla wielu środowisk
                       href: deployment/onprem-reuseadfs.md
+                    - name: Uaktualnianie systemu Windows Server w środowiskach usługi Microsoft Dynamics 365 Finance + Operations (on-premises)
+                      href: deployment/onprem-upgrade-os.md
                     - name: Uaktualnianie wystąpienia programu SQL Server w środowiskach Microsoft Dynamics 365 Finance + Operations (on-premises)
                       href: deployment/onprem-upgrade-sqlserver.md
                 - name: Agent lokalny
@@ -932,6 +934,8 @@
                   href: lifecycle-services/lcs-works-lcs.md
                 - name: Usługa LCS dla partnerów
                   href: lifecycle-services/getting-started-lcs.md
+                - name: Obsługiwane przeglądarki
+                  href: lifecycle-services/web-browsers.md
                 - name: Interfejsy API usług RESTful
                   items:
                     - name: Rozpoczynanie i zatrzymywanie środowisk
@@ -1490,6 +1494,8 @@
               href: perf-test/rsat/rsat-derived-test-cases.md
             - name: Uaktualnianie plików parametrów
               href: perf-test/rsat/rsat-upgrade-parameter-files.md
+            - name: Tryb próbny bez usługi Azure DevOps
+              href: perf-test/rsat/rsat-trial-without-devops.md
             - name: Samouczek narzędzia Regression Suite Automation Tool
               href: perf-test/rsat/rsat-tutorial.md
             - name: Konfigurowanie użytkowników niebędących administratorami

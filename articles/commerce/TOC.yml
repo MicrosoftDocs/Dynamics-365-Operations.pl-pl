@@ -390,7 +390,7 @@
                   href: tasks/worker.md
                 - name: 'Modern Point of Sale (MPOS), Cloud POS i Store Commerce'
                   items:
-                    - name: Aplikacja Store Commerce w rozwiązaniu Microsoft Dynamics 365 Commerce (wersja zapoznawcza)
+                    - name: Aplikacja Store Commerce
                       href: dev-itpro/store-commerce.md
                     - name: Wskazówki dotyczące implementacji zarządzania urządzeniami
                       href: implementation-considerations-devices.md
@@ -2872,9 +2872,11 @@
               items:
                 - name: Zwrot za zamówienie zwrotu został odrzucony
                   href: troubleshoot/refund-declined.md
+                - name: Opłaty podlegające zwrotowi są przeliczane nieprawidłowo na podstawie zwracanej ilości
+                  href: troubleshoot/refund-miscalculated-partial-return.md
                 - name: Dynamics 365 Payment Connector dla Adyen
                   items:
-                    - name: Rozwiązywanie problemów z Troubleshoot Dynamics 365 Payment Connector dla Adyen issues
+                    - name: Problemy z Troubleshoot Dynamics 365 Payment Connector dla Adyen
                       href: troubleshoot/adyen-support.md
                     - name: Zapisywanie dla mojej następnej opcji płatności nie jest wyświetlane
                       href: troubleshoot/next-payment-link-not-appearing.md
