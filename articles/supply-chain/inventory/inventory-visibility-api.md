@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: f74bb4bd4ed66520c04261bd9f82faad7775817e
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: cbd33b16a4b21e8e1931bc61cb55e376e7d73179
+ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062118"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8524473"
 ---
 # <a name="inventory-visibility-public-apis"></a>Publiczne interfejsy API dodatku Widoczność magazynu
 
@@ -41,15 +41,17 @@ W poniższej tabeli przedstawiono obecnie dostępne interfejsy API:
 | /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Księguj | [Ustawianie/zastępowanie dostępnych ilości](#set-onhand-quantities) |
 | /api/environment/{environmentId}/onhand/reserve | Księguj | [Tworzenie jednego zdarzenia rezerwacji](#create-one-reservation-event) |
 | /api/environment/{environmentId}/onhand/reserve/bulk | Księguj | [Tworzenie wielu zdarzeń rezerwacji](#create-multiple-reservation-events) |
+| /api/environment/{environmentId}/on-hand/changeschedule | Księguj | [Utwórz jedną zaplanowaną zmianę od ręki](inventory-visibility-available-to-promise.md) |
+| /api/environment/{environmentId}/on-hand/changeschedule/bulk | Księguj | [Utwórz wiele zaplanowanych zmian od ręki](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/indexquery | Księguj | [Zapytanie przy użyciu metody POST](#query-with-post-method) |
 | /api/environment/{environmentId}/onhand | Pobierz | [Zapytanie przy użyciu metody GET](#query-with-get-method) |
-
-Firma Microsoft dostarcza kolekcję gotowych do użycia żądań *Postman*. Kolekcję można zaimportować do oprogramowania *Postman*, korzystając z następującego udostępnionego łącza: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>
 
 > [!NOTE]
 > Część {environmentId} ścieżki jest identyfikatorem środowiska w usługach Microsoft Dynamics Lifecycle Services (LCS).
 > 
 > API zbiorcze może zwrócić maksymalnie 512 rekordów dla każdego żądania.
+
+Firma Microsoft dostarcza kolekcję gotowych do użycia żądań *Postman*. Kolekcję można zaimportować do oprogramowania *Postman*, korzystając z następującego udostępnionego łącza: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>
 
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>Znajdowanie punktu końcowego zgodnie ze środowiskiem Lifecycle Services.
 
@@ -517,6 +519,9 @@ Parametr `groupByValues` powinny być zgodne z konfiguracją na potrzeby indekso
 
 Parametr `returnNegative` określa, czy wyniki zawierają wartości ujemne.
 
+> [!NOTE]
+> Jeśli włączono harmonogram dostępnych zmian i dostępne funkcje (ATP), zapytanie może również zawierać parametr logiczny `QueryATP`, który kontroluje, czy wyniki zapytania zawierają informacje ATP. Aby uzyskać więcej informacji i przykładów, zobacz [Widoczność zapasów — harmonogramy i zmiany dostępnych zapasów oraz dostępność zapasów](inventory-visibility-available-to-promise.md).
+
 W poniższym przykładzie pokazano zawartość przykładowej treści.
 
 ```json
@@ -572,5 +577,9 @@ Oto przykładowy adres URL GET. To żądanie GET jest dokładnie takie samo, jak
 ```txt
 /api/environment/{environmentId}/onhand?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
 ```
+
+## <a name="available-to-promise"></a>Dostępność zapasów
+
+Widoczność zapasów można skonfigurować, aby było można zaplanować przyszłe zmiany dostępnych zapasów i obliczyć ilości ATP. ATP to ilość towaru, która jest dostępna i którą można obiecać klientowi w następnym okresie. Użycie kalkulacji ATP może znacznie zwiększyć twoje możliwości realizacji zamówień. Aby uzyskać informacje o tym, jak włączyć tę funkcję i jak wchodzić w interakcję z widocznością zapasów za pośrednictwem interfejsu API po włączeniu tej funkcji, zobacz [Harmonogramy zmian widoczności zapasów na bieżąco i dostępne do obiecania](inventory-visibility-available-to-promise.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

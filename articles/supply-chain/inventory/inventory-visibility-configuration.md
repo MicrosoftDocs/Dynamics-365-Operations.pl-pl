@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 8ba478fef424a6c4688191ed4e5375bbce52de0c
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: adab5ee3f626390355f4bab1227efd5fe58c2fcf
+ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061008"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8524529"
 ---
 # <a name="configure-inventory-visibility"></a>Konfiguracja dodatku Widoczność magazynu
 
@@ -39,22 +39,25 @@ Przed rozpoczęciem pracy z dodatkiem Widoczność magazynu należy wykonać nas
 
 Przed rozpoczęciem należy zainstalować i skonfigurować dodatek Widoczność zapasów w sposób opisany w temacie [Instalowanie i ustawianie dodatku Widoczność magazynu](inventory-visibility-setup.md).
 
-## <a name="enable-inventory-visibility-features-in-power-apps-feature-management"></a><a name="feature-switch"></a>Włączenie funkcji Widoczność magazynu w zarządzaniu funkcjami usługi Power Apps
-
-Dodatek Widoczność magazynu powoduje dodanie kilku nowych funkcji do instalacji usługi Power Apps. Domyślnie te funkcje są wyłączone. Aby ich użyć, otwórz stronę **Konfiguracja** w Power Apps, a następnie włącz następujące funkcje na karcie **Zarządzanie funkcjami**.
-
-- *OnHandReservation*
-- *OnHandMostSpecificBackgroundService*
-
-## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Znajdowanie punktu końcowego usługi
-
-Jeśli nie znasz prawidłowego punktu końcowego usługi Widoczność magazynu, otwórz stronę **Konfiguracja** w programie Power Apps, a następnie wybierz pozycję **Pokaż punkt końcowy usługi** w prawym górnym rogu. Na stronie zostanie pokazany prawidłowy punkt końcowy usługi.
-
 ## <a name="the-configuration-page-of-the-inventory-visibility-app"></a><a name="configuration"></a>Strona konfiguracji aplikacji Widoczność magazynu
 
 W usłudze Power Apps strona **Konfiguracja** aplikacji [Widoczność zapasów](inventory-visibility-power-platform.md) ułatwia skonfigurowanie dostępnych zapasów i rezerwacji wstępnej. Po zainstalowaniu tego dodatku domyślna konfiguracja zawiera wartość z Microsoft Dynamics 365 Supply Chain Management (źródło danych `fno`). Ustawienia domyślne można przejrzeć. Ponadto na podstawie wymagań firmy oraz wymagań księgowania zapasów w zewnętrznym systemie można zmodyfikować konfigurację w celu standaryzacji sposobu, w jaki zmiany zapasów mogą być księgowane, organizowane i wyszukiwane w różnych systemach. Pozostałe sekcje tego tematu zawierają informacje dotyczące sposobu używania poszczególnych części strony **Konfiguracja**.
 
 Po zakończeniu konfigurowania pamiętaj o wybraniu pozycji **Aktualizuj konfigurację** w aplikacji.
+
+## <a name="enable-inventory-visibility-features-in-power-apps-feature-management"></a><a name="feature-switch"></a>Włączenie funkcji Widoczność magazynu w zarządzaniu funkcjami usługi Power Apps
+
+Dodatek Widoczność magazynu powoduje dodanie kilku nowych funkcji do instalacji usługi Power Apps. Domyślnie te funkcje są wyłączone. Aby z nich skorzystać, otwórz stronę **Konfiguracja**, a następnie na karcie **Zarządzanie funkcjami** włącz te funkcje zgodnie z potrzebami.
+
+| Nazwa Zarządzanie funkcjami | Opis |
+|---|---|
+| OnHandReservation | Ta funkcja umożliwia tworzenie rezerwacji, rezerwacje zużycia i/lub anulowanie rezerwacji określonych ilości zapasów za pomocą funkcji Widoczność zapasów. Więcej informacji zawiera temat [Rezerwacje dodatku Widoczność magazynu](inventory-visibility-reservations.md). |
+| OnHandMostSpecificBackgroundService | Ta funkcja zapewnia podsumowanie zapasów produktów wraz ze wszystkimi wymiarami. Dane podsumowania zapasów będą okresowo synchronizowane z aplikacją Widoczność magazynu. Aby uzyskać więcej informacji, zobacz [Podsumowanie inwentaryzacji](inventory-visibility-power-platform.md#inventory-summary). |
+| OnhandChangeSchedule | Ta funkcja umożliwia włączenie harmonogramu zmian dostępnych dostępność zapasów dodatkowych (atp) (opcjonalnych). Aby uzyskać więcej informacji, zobacz [Widoczność zapasów — harmonogramy i zmiany dostępnych zapasów oraz dostępność zapasów](inventory-visibility-available-to-promise.md). |
+
+## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Znajdowanie punktu końcowego usługi
+
+Jeśli nie znasz prawidłowego punktu końcowego usługi Widoczność magazynu, otwórz stronę **Konfiguracja** w programie Power Apps, a następnie wybierz pozycję **Pokaż punkt końcowy usługi** w prawym górnym rogu. Na stronie zostanie pokazany prawidłowy punkt końcowy usługi.
 
 ## <a name="data-source-configuration"></a>Konfiguracja źródła danych
 
@@ -178,15 +181,21 @@ Aby skonfigurować niestandardową miarę obliczaną, należy wykonać następuj
 
 1. Zaloguj się do swojego środowiska Power Apps i otwórz aplikację **Widoczność magazynu**.
 1. Otwórz stronę **Konfiguracja**.
-1. Na karcie **Obliczona miara** wybierz pozycję **Nowa obliczona miara**, aby dodać obliczoną miarę. Następnie ustaw pola, które są opisane w następującej tabeli.
+1. Na karcie **Obliczona miara** wybierz pozycję **Nowa obliczona miara**, aby dodać obliczoną miarę.
+1. Ustaw następujące pola dla nowej miary wyliczanej:
 
-    | Pole | Wartość |
-    |---|---|
-    | Nazwa nowej obliczonej miary | Umożliwia wprowadzenie nazwy obliczonej miary. |
-    | Źródło danych | Źródłem danych jest system wykonujący zapytanie. |
-    | Źródło danych modyfikatora | Umożliwia wprowadzenie źródła danych modyfikatora. |
-    | Modyfikator | Umożliwia wprowadzenie nazwy modyfikatora. |
-    | Typ modyfikatora | Wybór typ modyfikatora (*Dodawanie* lub *Odejmowanie*). |
+    - **Nazwa nowej miary obliczanej** — wprowadź nazwę miary obliczanej.
+    - **Źródło danych** – wybierz źródło danych skojarzone z nowym modyfikatorem. Źródłem danych jest system wykonujący zapytanie.
+
+1. Wybierz **przycisk Dodaj**, aby dodać modyfikator do nowej miary obliczanej.
+1. Ustaw następujące pola dla nowego modyfikatora:
+
+    - **Modyfikator** – Wybór typ modyfikatora (*Dodawanie* lub *Odejmowanie*).
+    - **Źródło danych** – wybierz źródło danych, w którym ma zostać znaleziona miara dostarczana wartości modyfikatora.
+    - **Miara** — umożliwia wybór nazwy miary (z wybranego źródła danych), która dostarcza wartość modyfikatora.
+
+1. Powtarzaj kroki od 5 do 6, dopóki nie zostaną dodane wszystkie wymagane modyfikatory.
+1. Wybierz opcję **Zapisz**.
 
 Na przykład wynik zapytania może być następujący.
 
@@ -465,6 +474,10 @@ W tym przykładzie rezerwację można wykonać w następujących sekwencjach wym
 - `(SiteId, LocationId, ColorId, SizeId, StyleId)`
 
 Prawidłowa sekwencja wymiarów musi ściśle naśladować hierarchię rezerwacji, wymiar po wymiarze. Na przykład sekwencja hierarchii `(SiteId, LocationId, SizeId)` jest nieprawidłowy, ponieważ brakuje w niej `ColorId`.
+
+## <a name="available-to-promise-configuration-optional"></a>Konfiguracja dostępności zapasów (opcjonalnie)
+
+Widoczność zapasów można skonfigurować, aby było można zaplanować przyszłe zmiany dostępnych zapasów i obliczyć ilości ATP. ATP to ilość towaru, która jest dostępna i którą można obiecać klientowi w następnym okresie. Użycie kalkulacji może znacznie zwiększyć twoje możliwości realizacji zamówień. Aby można było korzystać z tej funkcji, należy ją włączyć na karcie **Zarządzanie funkcjami**, a następnie skonfigurować na **karcie Ustawienia ATP**. Aby uzyskać więcej informacji, zobacz [Widoczność zapasów — harmonogramy i zmiany dostępnych zapasów oraz dostępność zapasów](inventory-visibility-available-to-promise.md).
 
 ## <a name="complete-and-update-the-configuration"></a>Kończenie i aktualizowanie konfiguracji
 

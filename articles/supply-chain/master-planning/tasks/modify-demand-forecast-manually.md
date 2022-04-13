@@ -1,22 +1,22 @@
 ---
 title: 'Przewodnik: Ręczne modyfikowanie prognozy popytu'
 description: W tym temacie opisano, jak zmodyfikować prognozę dla towaru
-author: ChristianRytt
+author: t-benebo
 ms.date: 08/12/2019
 ms.topic: business-process
 ms.search.form: EcoResProductDetailsExtended, ForecastSales
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f48e1689d21fd0085ec38aab8f5171997fbf432
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1e5030bf97bee8dc475f22473ecc87e900298b6f
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567206"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8469414"
 ---
 # <a name="guide-modify-a-demand-forecast-manually"></a>Przewodnik: Ręczne modyfikowanie prognozy popytu
 

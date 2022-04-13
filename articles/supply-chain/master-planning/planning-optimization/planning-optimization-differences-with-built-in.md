@@ -1,21 +1,21 @@
 ---
 title: Różnice między wbudowanym planowaniem głównym a optymalizacją planowania
 description: W tym temacie wymieniono funkcje, których optymalizacja planowania jeszcze nie obsługuje, a które nie są wymienione na stronie Analiza dopasowań optymalizacji planowania.
-author: ChristianRytt
+author: t-benebo
 ms.date: 07/30/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 575aef709a0ac3b0cf8150f1e816dac04c069814
-ms.sourcegitcommit: ddcab9726e9dbcf3296cb0988b97a3ae7ccb3dfb
+ms.openlocfilehash: 642ba812156a95e9b0be2e996d4a93096a5809a9
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "8396506"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8468336"
 ---
 # <a name="differences-between-built-in-master-planning-and-planning-optimization"></a>Różnice między wbudowanym planowaniem głównym a optymalizacją planowania
 

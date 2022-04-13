@@ -1,8 +1,8 @@
 ---
-title: Konfigurowanie funkcjonalności logowania rozszerzonego w aplikacjach MPOS i Cloud POS
-description: Ten temat omawia opcje konfigurowania rozszerzonego logowania do aplikacji Cloud POS i Retail Modern POS (MPOS).
-author: boycezhu
-ms.date: 09/07/2021
+title: Umożliwia konfigurowanie i korzystanie z funkcji logowania rozszerzonego
+description: W tym temacie opisano, jak skonfigurować i używać funkcji rozszerzonego logowania w aplikacji punktu sprzedaży (POS) Microsoft Dynamics 365 Commerce.
+author: boycez
+ms.date: 03/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,56 +16,52 @@ ms.search.industry: Retail
 ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0cc3d3a3cadbc614e82b8cc7ae0b78406247cece
-ms.sourcegitcommit: efcb853a68a77037cca23582d9f6f96ea573727a
+ms.openlocfilehash: d211ecfe1550f6093e1d35e7c2b37c036b50dd4a
+ms.sourcegitcommit: 5aebb181004eb63210503fb566dcda5c55032bee
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7478678"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "8491446"
 ---
-# <a name="set-up-extended-logon-functionality-for-mpos-and-cloud-pos"></a>Konfigurowanie funkcjonalności logowania rozszerzonego w aplikacjach MPOS i Cloud POS
+# <a name="set-up-and-use-the-extended-logon-capability"></a>Umożliwia konfigurowanie i korzystanie z funkcji logowania rozszerzonego
 
 [!include [banner](includes/banner.md)]
 
-Ten temat omawia opcje konfigurowania rozszerzonego logowania do aplikacji Cloud POS i Retail Modern POS (MPOS).
+W tym temacie opisano, jak skonfigurować i używać funkcji rozszerzonego logowania w aplikacji punktu sprzedaży (POS) Microsoft Dynamics 365 Commerce.
 
-## <a name="setting-up-extended-logon"></a>Konfigurowanie logowania rozszerzonego
+Cloud POS (CPOS) i Modern POS (MPOS) zapewniają rozszerzone możliwości logowania, które umożliwiają pracownikom sklepów detalicznych logowanie się do aplikacji POS poprzez zeskanowanie kodu kreskowego lub przeciągnięcie karty za pomocą czytnika pasków magnetycznych (MSR).
 
-Konfiguracje masek kodów kreskowych można znaleźć w menu **Handel detaliczny i inny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Profile punktu sprzedaży** &gt; **Profile funkcji**. Na skróconej karcie **Funkcje** znajdują się następujące opcje, które są związane z logowaniem rozszerzonym.
+## <a name="set-up-extended-logon"></a>Konfigurowanie logowania rozszerzonego
 
-### <a name="staff-bar-code-logon"></a>Logowanie się pracowników za pomocą kodu kreskowego
+Aby skonfigurować logowanie rozszerzone do kas w punktach sprzedaży w sklepie detalicznym, należy wykonać następujące kroki.
 
-Gdy wybrana jest opcja **Logowanie się pracowników za pomocą kodu kreskowego**, pracownicy, którzy do swoich poświadczeń w punkcie sprzedaży mają przypisane logowanie rozszerzone, mogą logować się za pomocą kodu kreskowego.
+1. W Commerce headquarters wybierz kolejno opcje **Handel detaliczny i inny \> Ustawienia kanału \> Ustawienia punktu sprzedaży \> Profile punktów sprzedaży \> Profile funkcji**. 
+2. W lewym okienku nawigacji wybierz profil funkcji skojarzony ze sklepem detalicznym.
+3. Na skróconej **karcie Funkcje**, w obszarze **Opcje uwierzytelniania logowania dodatkowego**, ustaw następujące opcje, **tak** lub **Nie**, zgodnie z potrzebą:
 
-### <a name="staff-bar-code-logon-requires-password"></a>Logowanie się pracowników za pomocą kodu kreskowego wymaga hasła
+    - **Logowanie się pracowników** — ustaw tę opcję na wartość **Tak**, jeśli chcesz, aby pracownicy logują się do programu POS, zeskanowając kod kreskowy. 
+    - **Logowanie za pomocą kodu kreskowego personelu wymaga hasła** — ustaw tę opcję na wartość **Tak**, jeśli chcesz, aby pracownicy wprowadzali hasło podczas logowania się do punktu sprzedaży przez zeskanowanie kodu kreskowego.
+    - **Logowanie na kartę personelu** — ustaw tę opcję na wartość **Tak**, jeśli chcesz, aby pracownicy logowali się do punktu sprzedaży, przesuwając kartę.
+    - **Logowanie na kartę personelu wymaga hasła** — ustaw tę opcję na wartość **Tak**, jeśli chcesz, aby pracownicy wprowadzali hasło, gdy logują się do punktu sprzedaży, przesuwając kartę.
 
-Jeśli włączona jest opcja **Logowanie się pracowników za pomocą kodu kreskowego wymaga hasła**, funkcja logowanie się pracowników za pomocą kodu kreskowego wybiera tylko tego pracownika, który jest przypisany do przedstawionego logowania rozszerzonego. Pracownicy muszą nadal podać hasło, nawet gdy ta opcja jest wybrana.
+Kod pocztowy lub karta jest skojarzona z poświadczeniami, które można przypisać do pracownika. Poświadczenia muszą mieć co najmniej sześć znaków. Ciąg zawierający pierwszych pięć znaków musi być unikatowy i traktowany jako *identyfikator poświadczenia* używany do wyszukiwania pracownika. Pozostałe znaki są używane do weryfikacji zabezpieczeń. Na przykład, użytkownik ma dwie karty, z których jedna ma poświadczenia 12345DGIADEYTDW, a jedna z nich ma poświadczenia 12345EWUDZEDAJH. Ponieważ te dwie karty mają ten sam identyfikator poświadczenia, czyli identyfikator 12345, nie można ich pomyślnie przypisać do pracowników.
 
-### <a name="staff-card-logon"></a>Logowanie się pracowników za pomocą karty
-
-Gdy wybrana jest opcja **Logowanie się pracowników za pomocą karty**, pracownicy, którzy do swoich poświadczeń w punkcie sprzedaży mają przypisane logowanie rozszerzone, mogą logować się za pomocą paska magnetycznego.
-
-### <a name="staff-card-logon-requires-password"></a>Logowanie się pracowników za pomocą karty wymaga hasła
-
-Jeśli włączona jest opcja **Logowanie się pracowników za pomocą karty wymaga hasła**, logowanie się pracowników za pomocą karty wybiera tylko tego pracownika, który jest przypisany do przedstawionego logowania rozszerzonego. Pracownicy muszą nadal podać hasło, nawet gdy ta opcja jest wybrana.
-
-## <a name="assigning-an-extended-logon"></a>Przypisywanie logowania rozszerzonego
+## <a name="assign-extended-logon"></a>Przypisywanie logowania rozszerzonego
 
 Domyślnie tylko menedżerowie mogą przypisywać pracownikom logowanie rozszerzone. Aby przypisać logowanie rozszerzone, przejdź do opcji **Logowanie rozszerzone** w aplikacji punktu sprzedaży. Następnie wyszukaj pracownika, wpisując jego identyfikator w polu wyszukiwania. Wybierz pracownika, a następnie kliknij przycisk **Przypisz**. Na następnej stronie przeciągnij lub zeskanuj kartę lub kod kreskowy do logowania rozszerzonego, aby przypisać pracownika. Jeśli odczyt danych się powiedzie, przycisk **OK** stanie się aktywny. Kliknij **OK**, aby zapisać logowanie rozszerzone dla tego pracownika.
 
-## <a name="deleting-an-extended-logon"></a>Anulowanie przypisania logowania rozszerzonego
+## <a name="delete-extended-logon"></a>Anulowanie przypisania logowania rozszerzonego
 
 Aby anulować przypisanie logowania rozszerzonego do pracownika, znajdź pracownika za pomocą operacji **Logowanie rozszerzone**. Wybierz pracownika, a następnie kliknij przycisk **Anuluj przypisanie**. Wszystkie poświadczenia logowania rozszerzonego przypisane do tego pracownika są usuwane.
 
-## <a name="extending-extended-logon"></a>Rozszerzanie logowania rozszerzonego
+## <a name="use-extended-logon"></a>Używanie logowania rozszerzonego
 
-Logowanie rozszerzone zezwala wyłącznie na to, aby pięć istotnych znaków było unikatowym identyfikatorem po instalacji. Jeśli na przykład skonfigurujesz dwie karty o identyfikatorach „1234567” i „1234578”, obie karty będą traktowane jako „12345”. Rozszerzenie można utworzyć w celu obsługi większej liczby znaków. Aby uzyskać szczegółowe instrukcje, sprawdź temat [Rozszerzenie funkcji logowania rozszerzonego dla aplikacji MPOS i Cloud POS](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/12/14/extending-the-extended-logon-functionality-for-mpos-and-cloud-pos/).
+Po skonfigurowaniu logowania rozszerzonego i przypisaniu pracownikowi kodu kreskowego lub paska magnetycznego pracownik musi tylko przeciągnąć lub zeskanować swoją kartę, gdy wyświetlana jest strona logowania do punktu sprzedaży. Jeśli hasło jest również wymagane przed kontynuowaniem logowania, pracownik zostanie poproszony o wprowadzenie hasła.
 
-Usługę logowania można rozszerzyć o obsługę dodatkowych urządzeń do logowania rozszerzonego, takich jak skanery ręczne. Aby uzyskać więcej informacji, zapoznaj się z dokumentacją rozszerzania punktu sprzedaży.
+## <a name="extend-extended-logon"></a>Rozszerzanie logowania rozszerzonego
 
-## <a name="using-extended-logon"></a>Używanie logowania rozszerzonego
+Implementacja out-of-box możliwości logowania rozszerzonego wymaga, aby poświadczenia były mieć minimalną długość sześciu znaków oraz aby pierwsze pięć znaków (identyfikator poświadczenia) było unikatowych. Pierwotnie był on przeznaczony jako przykład, dla którego deweloperzy mogli dostosować się do wymagań określonej implementacji. (Na przykład można go dostosować, aby obsługiwał więcej znaków lub używał różnych reguł weryfikacji zabezpieczeń.) Aby uzyskać szczegółowe informacje na temat tworzenia rozszerzeń dla rozszerzonego logowania, zobacz [Rozszerzanie funkcji rozszerzonego logowania dla MPOS i Cloud POS](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/12/14/extending-the-extended-logon-functionality-for-mpos-and-cloud-pos/).
 
-Jeśli logowanie rozszerzone jest skonfigurowane i pracownik ma przypisany kod kreskowy lub pasek magnetyczny, pracownik musi tylko przeciągnąć kartę magnetyczną w czytniku lub zeskanować kod kreskowy, gdy na ekranie wyświetlana jest strona logowania punktu sprzedaży. Jeśli logowanie wymaga podania hasła, wyświetla się również monit o podanie hasła.
-
+Usługę logowania też można rozszerzyć o obsługę dodatkowych urządzeń do logowania rozszerzonego, takich jak skanery ręczne. Aby uzyskać więcej informacji, zapoznaj się z [dokumentacją rozszerzania punktu sprzedaży](dev-itpro/pos-extension/pos-extension-overview.md).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 33aab6f0a482ce3d90a7e9828015a8e7bebb7827
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 6aed74656ceb8edd0e88adf53b61fcae81241f54
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371840"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8470185"
 ---
 # <a name="set-up-regulatory-configuration-service-rcs"></a>Włącz Regulatory Configuration Service (RCS)
 
@@ -50,6 +50,13 @@ Kafelki dla obszaru roboczego **Funkcje globalizacji** powinny teraz być widocz
     | Zjednoczone Królestwo             | <p>`https://gw.uk-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.uk-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
     | Azja                       | <p>`https://gw.as-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.as-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
     | Japonia                      | <p>`https://gw.jp-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Szwajcaria                | <p>`https://gw.ch-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Brazylia                     | <p>`https://gw.br-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> <p>`https://gw.br-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Zjednoczone Emiraty Arabskie       | <p>`https://gw.ae-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Australia                  | <p>`https://gw.au-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> <p>`https://gw.au-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Kanada                     | <p>`https://gw.ca-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> <p>`https://gw.ca-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Francja                     | <p>`https://gw.fr-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Indie                      | <p>`https://gw.in-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
 
 3. Upewnij się, że pole **Identyfikator aplikacji** ma ustawioną wartość **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. Ta wartość jest stałą wartością. Należy upewnić się, że wprowadzany jest tylko unikatowy globalnie identyfikator (GUID) i że wartość nie zawiera żadnych innych symboli, takich jak spacje, przecinka, kropki czy cudzysłów.
 4. W polu **Identyfikator środowiska usługi LCS** wprowadź identyfikator środowiska Microsoft Dynamics Lifecycle Services (LCS). Ta wartość jest odwołaniem do środowiska Zarządzania finansami lub Supply Chain Management, które będzie korzystać z usługi fakturowania elektronicznego. Aby uzyskać identyfikator, [zaloguj się do usługi LCS](https://lcs.dynamics.com/), otwórz projekt,a następnie na karcie **Zarządzaj środowiskiem** w **sekcji Szczegóły środowiska** sprawdź **pole Identyfikator środowiska**.

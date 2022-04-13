@@ -1,7 +1,7 @@
 ---
 title: Kopiowanie wystąpienia
 description: Można skorzystać z usługi cyklu pomocy technicznej Microsoft Dynamics Lifecycle Services (usługi LCS), aby skopiować bazę danych firmy Microsoft Dynamics 365 Human Resources do środowiska piaskownicy (sandbox).
-author: andreabichsel
+author: twheeloc
 ms.date: 07/22/2020
 ms.topic: article
 ms.prod: ''
@@ -12,20 +12,19 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 22aa33135535d543eb8fe437821cab7a4865d6df
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 04987f18542ff331124f5224e4b1240672874e83
+ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060838"
+ms.lasthandoff: 04/02/2022
+ms.locfileid: "8533972"
 ---
 # <a name="copy-an-instance"></a>Kopiowanie wystąpienia
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
 
 
 Można skorzystać z usługi cyklu pomocy technicznej Microsoft Dynamics Lifecycle Services (usługi LCS), aby skopiować bazę danych firmy Microsoft Dynamics 365 Human Resources do środowiska piaskownicy (sandbox). Jeśli masz inne środowisko piaskownicy, możesz również skopiować bazę danych z tego środowiska do docelowego środowiska piaskownicy.
@@ -75,7 +74,7 @@ Aby wykonać to zadanie, najpierw należy skopiować instancję, a następnie za
 
 5. Wybierz **Power Platform**, zaloguj się do Centrum administracyjnego Microsoft Power Platform.
 
-   ![[Zaznacz pozycję Power Platform.](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
+   ![[Wybierz Power Platform.](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
 6. Wybierz środowisko Power Apps do skopiowania, a następnie wybierz **Kopiuj**.
 

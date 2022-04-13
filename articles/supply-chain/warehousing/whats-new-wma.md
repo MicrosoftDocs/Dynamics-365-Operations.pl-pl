@@ -10,18 +10,27 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: c4731c5f0b0a1553deb53753d82d29a34e5525df
-ms.sourcegitcommit: 399d0d3f8e2ebb81b6b9d640365ebe182690bab2
+ms.openlocfilehash: 2544c30afe18f290b681efed1705f7cef0cb7620
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "8418647"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487844"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Nowości lub zmiany w aplikacji mobilnej Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 W tym temacie wymieniono nowe funkcje, poprawki, ulepszenia i znane problemy dla każdej wydanej wersji aplikacji mobilnej Warehouse Management w Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20200"></a>Wersja 2.0.20.0
+
+Ta wersja wprowadza następujące nowe funkcje, poprawki i ulepszenia:
+
+- Rozwiązano kilka awarii.
+- Rozwiązano problem z nieprawidłowymi wartościami wyświetlanymi na kartach na **stronie listy prac**.
+- Poprawiono sposób przewijania i wyeliminowano przewijanie jittera na stronach **Lista prac** i **Zapytanie o pozycję** w Android.
+- Dodano przycisk zakończenia do strony logowania, która powoduje zamknięcie zgłoszenia.
 
 ## <a name="version-20190"></a>Wersja 2.0.19.0
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-19
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: eb494cab08453a548a0ac862cbe89dfd9f17fbcd
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 67e228c27d4470c116a193fe11ba306df840744a
+ms.sourcegitcommit: 67c4ed957e43d4d60bb609d93921a0be9619e675
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574768"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8509480"
 ---
 # <a name="not-enough-capacity-could-be-found"></a>Brak wystarczających zdolności produkcyjnych
 
@@ -30,4 +30,5 @@ Istnieje kilka przyczyn awarii aparatu planowania i wystawienia tego komunikatu 
 
 ## <a name="resolution"></a>Rozwiązanie
 
-Istnieje kilka przyczyn awarii aparatu planowania i wystawienia komunikatu o błędzie. Aby uzyskać wskazówki, które pomogą znaleźć główną przyczynę błędu, a następnie go wyeliminować, zobacz temat [Usuwanie błędu aparatu planowania „Nie znaleziono wystarczających zdolności produkcyjnych”](/dynamics365/supply-chain/master-planning/not-enough-capacity-error-resolution.md).
+Istnieje kilka przyczyn awarii aparatu planowania i wystawienia komunikatu o błędzie. Aby uzyskać wskazówki, które pomogą znaleźć główną przyczynę błędu, a następnie go wyeliminować, zobacz temat [Usuwanie błędu aparatu planowania „Nie znaleziono wystarczających zdolności produkcyjnych”](/dynamics365/supply-chain/master-planning/not-enough-capacity-error-resolution).
+

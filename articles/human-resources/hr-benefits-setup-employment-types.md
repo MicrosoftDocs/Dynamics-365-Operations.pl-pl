@@ -1,7 +1,7 @@
 ---
 title: Ustawianie typów zatrudnienia
 description: W programie Dynamics 365 Human Resources można ustawić typy zatrudnienia pasujące do pracowników.
-author: andreabichsel
+author: twheeloc
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8d17bb28782e332ded01ba8166f9993bfa195349
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 85035cbfac804d6235a6232b26033156aefc626b
+ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069612"
+ms.lasthandoff: 04/02/2022
+ms.locfileid: "8534085"
 ---
 # <a name="set-up-employment-types"></a>Ustawianie typów zatrudnienia
 

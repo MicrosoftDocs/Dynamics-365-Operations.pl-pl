@@ -1,22 +1,22 @@
 ---
 title: Parametry nie są używane przez optymalizację planowania
 description: W tym temacie wymieniono parametry, których optymalizacja planowania nie uwzględnia obecnie podczas działania.
-author: ChristianRytt
+author: t-benebo
 ms.date: 09/02/2021
 ms.topic: article
 ms.search.form: ReqParameters, ReqGroup, ReqItemTable, ReqPlanSched, EcoResProductDetailsExtended, InventItemOrderSetup, WorkCalendarTable, PdsDispositionMaster
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2021-06-29
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 32e5ceb607d2c4f3d9794421db5382441ac30467
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: 82bdd522b5b6ca1cf149f9fea508d8d6a96a1466
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8408237"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8469122"
 ---
 # <a name="parameters-not-used-by-planning-optimization"></a>Parametry nie są używane przez optymalizację planowania
 
@@ -65,18 +65,6 @@ Optymalizacja planowania nie korzysta z następujących parametrów ani opcji na
   - **Użyj określonej wersji BOM lub formuły** — oczekujące wsparcie *Wersje formuł z produktem Co/By*.
   - **Użyj określonej wersji marszruty** — oczekujące wsparcie *Zapotrzebowanie z określonymi wymaganiami BOM lub określonymi trasami*.
 
-- Skrócona karta **Akcja**:
-
-  - **Komunikat akcji** – oczekujące wsparcie *Akcje*.
-  - **Ogrodzenie czasu działania** – oczekujące wsparcie *Akcje*.
-  - **Marża odroczona** — oczekujące wsparcie *Akcje*.
-  - **Marża zaawansowana** — oczekujące wsparcie *Akcje*.
-  - **Data podstawy** — oczekujące wsparcie *Akcje*.
-  - **Zaawansowana** — oczekujące wsparcie *Akcje*.
-  - **Odroczona** — oczekujące wsparcie *Akcje*.
-  - **Obniżona** — oczekujące wsparcie *Akcje*.
-  - **Podwyższona** — oczekujące wsparcie *Akcje*.
-  - **Akcje pochodne** – oczekujące wsparcie *Akcje*.
 
 - Skrócona karta **Inne**:
 
@@ -149,7 +137,6 @@ Optymalizacja planowania nie korzysta z następujących parametrów ani opcji na
   - **Plan prognozy czasowej** – dodatkowo oczekuje na obsługę *prognozy*.
   - **Pojemność** — oczekująca obsługa *planowania*.
   - **Ciągły plan** – Oczekująca obsługa *planowania sprzedaży ciągłej*.
-  - **Komunikat akcji** – oczekujące wsparcie *Akcje*.
   - **Obliczone opóźnienia** — dodatkowa oczekująca obsługa *Obliczonych opóźnień*.
   - **Sekwencjonowanie** — oczekująca obsługa *Produkcji*.
 

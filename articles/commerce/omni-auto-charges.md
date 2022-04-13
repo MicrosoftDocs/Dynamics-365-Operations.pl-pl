@@ -2,7 +2,7 @@
 title: Wielokanałowe zaawansowane opłaty automatyczne
 description: W tym temacie opisano możliwości zarządzania innymi opłatami za zamówienia dla zamówień w kanale Commerce przy użyciu zaawansowanych funkcji opłat automatycznych.
 author: hhaines
-ms.date: 03/30/2020
+ms.date: 03/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: ef6396ec66a0f96ba97b176c46bf70d83a080883cf496312398f14dce3ad9758
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 69432e13424b08b75e8ce7c88eaf6be66db59e65
+ms.sourcegitcommit: 94ebdaae6dc996b205ac78ed546e38f91f4f46ed
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743438"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "8489625"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Wielokanałowe zaawansowane opłaty automatyczne
 
@@ -187,6 +187,9 @@ Jeśli kod przyczyny został zarejestrowany dla nadpisanych opłat, nowy raport 
 ### <a name="refunding-charges-on-a-pos-return-transaction"></a>Zwracanie opłat w ramach transakcji zwrotu POS
 
 Jeśli parametr **Użyj zaawansowanego automatycznego naliczania opłat dodatkowych** jest ustawiony na **Tak**, istniejący parametr sieci sprzedaży komercyjnej dla **Zwróć opłaty transportowe** nie ma już zastosowania. Aby wskazać, które opłaty mają być systemowo zwracane odbiorcy w kontekście zaawansowanych automatycznych opłat dodatkowych, należy upewnić się, że odpowiedni kod opłat został skonfigurowany jako **Zwrot** na stronie konfiguracji **Kod opłat**. Upewnij się, że ustawienia zostały zsynchronizowane z bazami danych kanału Commerce za pomocą przetwarzania harmonogramu dystrybucji.
+
+> [!TIP]
+> Aby uzyskać wskazówki, które pomogą zapewnić, że opłaty zwrotne na poziomie wiersza są obliczane na podstawie zwracanej ilości, zobacz temat [Opłaty do zwrotu nie są obliczane na podstawie zwracanej ilości](/troubleshoot/Refund-charges-miscalculated-for-partial-quantity-returned.md).
 
 ### <a name="refunding-charges-on-a-return-order-transaction"></a>Zwracanie opłat w ramach transakcji zamówienia
 

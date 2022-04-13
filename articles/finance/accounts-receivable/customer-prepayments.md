@@ -1,14 +1,14 @@
 ---
 title: Przedpłaty klienta
 description: W tym temacie wyjaśniono, jak tworzyć i przetwarzać przedpłaty odbiorcy (zwane także wpłatami klientów).
-author: roschlom
+author: twheeloc
 ms.date: 04/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CustPosting, LedgerJournalTransCustPaym, CustParameters
 audience: Application User
-ms.reviewer: ''
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 ms.custom: 24651
 ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: ''
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e83c8be1b397f90445230835e415ea4fcea5a8d0bf695e6cc5eadc55275ded7f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7ba462dc2b5fe326db14dfb3c92f986478d31791
+ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768970"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8464884"
 ---
 # <a name="customer-prepayments"></a>Przedpłaty klienta
 
@@ -86,4 +86,4 @@ Obszar roboczy **Płatności odbiorcy** umożliwia łatwe znajdowanie i rozlicza
 4. Zaznacz pole wyboru **Zaznacz** dla faktury i płatność, która zostanie rozliczona.
 5. Wybierz opcję **Zaksięguj**.
 
-Aby uzyskać więcej informacji o rozliczaniu otwartych transakcji, zobacz [Przegląd rozliczania](/cash-bank-management/settlement-overview.md).
+Aby uzyskać więcej informacji o rozliczaniu otwartych transakcji, zobacz [Przegląd rozliczania](/dynamics365/finance/cash-bank-management/settlement-overview).

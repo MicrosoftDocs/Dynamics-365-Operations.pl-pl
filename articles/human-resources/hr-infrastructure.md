@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a80bedd0224f1e31dfec4e9f4c39ad1ed75d7f2f
-ms.sourcegitcommit: 948978183a1da949e35585b28b8e85a63b6c12b1
+ms.openlocfilehash: 9d574f760960241e4d79a988b1b671f224cb345f
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "8024574"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487802"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge---release-10025-update"></a>Scalanie infrastruktury Dynamics 365 Human Resources — wydanie 10.0.25, aktualizacja
 
@@ -34,7 +34,7 @@ Scalenie zapewni spójność użytkownikom zasobów ludzkich na następujące sp
     - Istnieje jedna podstawa kodu, w której nowe funkcje dla Human Resources są zwalniane w ramach zwykłego procesu aktualizacji jednej wersji.
     - Sposób, w jaki uaktualnienia, aktualizacje i poprawki są stosowane do środowisk, jest spójny.
 
-- [Opcje możliwości rozszerzania zostały poprawione.](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/improve-extensibility-options.md)
+- [Opcje możliwości rozszerzania zostały poprawione.](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/improve-extensibility-options)
 
     - W razie potrzeby możesz nadal korzystać z narzędzi Microsoft Power Platform.
     - Funkcje można rozszerzać za pośrednictwem formularzy, tabel, metod i interfejsów API.
@@ -42,7 +42,7 @@ Scalenie zapewni spójność użytkownikom zasobów ludzkich na następujące sp
 
     Aby uzyskać więcej informacji o dostępnych opcjach rozszerzeń, zobacz [Omówienie możliwości rozszerzania w systemie Dynamics 365](../fin-ops-core/dev-itpro/extensibility/extensibility-home-page.md).
 
-- [Utwórz jeden zestaw możliwości zasobów ludzkich w systemie Dynamics 365.](/dynamics365-release-plan/2021wave2/human-resources/create-one-set-human-resources-capabilities-within-dynamics-365.md)
+- [Utwórz jeden zestaw możliwości zasobów ludzkich w systemie Dynamics 365.](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/create-one-set-human-resources-capabilities-within-dynamics-365)
 
     W wersji 10.0.25 funkcje, które istniały tylko w Human Resources, zostały udostępnione w infrastruktury w Finanse i Operacje. Aby klienci mogą korzystać z tych możliwości w środowisku aplikacji Finanse i Operacje, w zarządzaniu funkcjami muszą być włączone poniższe funkcje Zasobów Ludzkich.
 

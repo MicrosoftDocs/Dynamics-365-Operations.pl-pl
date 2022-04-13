@@ -1,7 +1,7 @@
 ---
 title: Rozpocznij pracę z optymalizacją planowania
 description: W tym temacie wyjaśniono, jak zacząć używanie funkcji optymalizacji planowania.
-author: ChristianRytt
+author: t-benebo
 ms.date: 05/20/2021
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 8e6328902cec840b98b401fe8dd46c2a6f18cb54
-ms.sourcegitcommit: 88f8a0369ce66b82314db9639491b695e18a7e5c
+ms.openlocfilehash: faaa2aa921457a3d26c2a921a856a61296192a04
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902566"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8469821"
 ---
 # <a name="get-started-with-planning-optimization"></a>Rozpoczęcie optymalizacji planowania
 
@@ -58,7 +58,7 @@ Przed zainstalowaniem dodatku Optymalizacja planowania muszą zostać spełnione
 
 - Musisz uruchamiać aplikację Supply Chain Management w środowisku wysokiej dostępności z włączonymi usługami LCS w warstwie 2 lub wyższej (nie środowisko OneBox) z aplikacją Dynamics 365 Supply Chain Management w wersji 10.0.7 lub nowszej. W przypadku próby zainstalowania dodatku w środowisku OneBox instalacja nie zostanie zakończona i trzeba będzie ją anulować.
 
-- Należy skonfigurować system do integracji z platformą Power Platform. Aby uzyskać więcej informacji, zobacz [Integracja usługi Microsoft Power Platform z aplikacjami Finance and Operations](../../../fin-ops-core/dev-itpro/power-platform/overview.md).
+- Należy skonfigurować system do integracji z platformą Power Platform. Aby uzyskać więcej informacji, zobacz [Integracja usługi Microsoft Power Platform z aplikacjami finansowymi i operacyjnymi](../../../fin-ops-core/dev-itpro/power-platform/overview.md).
 
 ### <a name="enable-the-planning-optimization-license"></a>Włączanie licencji optymalizacji planowania
 

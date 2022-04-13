@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8917c9b265bc3df19517f052e28fb7644057cb46
-ms.sourcegitcommit: 19f0e69a131e9e4ff680eac13efa51b04ad55a38
+ms.openlocfilehash: 9ec0bedcf1a3a2888a91158ea0353283660d3266
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2022
-ms.locfileid: "8330708"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487589"
 ---
 # <a name="integrate-with-third-party-manufacturing-execution-systems"></a>Integracja z systemami wykonywania produkcji innych firm
 
@@ -65,6 +65,8 @@ Można włączyć dowolny z następujących procesów integracji.
 ## <a name="monitor-incoming-messages"></a>Monitorowanie komunikatów przychodzących
 
 Aby monitorować wiadomości przychodzące do systemu, otwórz stronę **integracji systemów realizacji produkcji**. Można tam wyświetlać, przetwarzać i rozwiązywać problemy.
+
+Wszystkie komunikaty dotyczące określonego zlecenia produkcyjnego są przetwarzane w kolejności ich odejmowania. Jednak wiadomości dla różnych zleceń produkcyjnych mogą nie być przetwarzane w sekwencji odebranych, ponieważ zadania wsadowe są przetwarzane równolegle. W przypadku awarii zadanie wsadowe będzie próbowało przetworzyć każdy komunikat trzy razy przed ustawieniem stanu *Niepowodzenie*.
 
 ## <a name="call-the-api"></a>Wywołaj interfejs API
 
@@ -119,13 +121,13 @@ W poniższej tabeli przedstawiono pola, które obsługuje każdy wiersz w sekcji
 | `ReportedGoodQuantity` | Opcjonalnie | Rzeczywisty|
 | `ReportedErrorCatchWeightQuantity` | Opcjonalnie | Rzeczywisty |
 | `ReportedGoodCatchWeightQuantity` | Opcjonalnie | Rzeczywisty |
-| `AcceptError` | Opcjonalnie |Wartość logiczna |
+| `AcceptError` | Opcjonalnie | Wyliczenie (Tak \| Nie) |
 | `ErrorCause` | Opcjonalnie | Enum (None \| Material \| Machine \| OperatingStaff), extensible |
 | `ExecutedDateTime` | Opcjonalnie | Data/godzina |
 | `ReportAsFinishedDate` | Opcjonalnie | Data |
 | `AutomaticBOMConsumptionRule` | Opcjonalnie | Enum (FlushingPrincip \| Always \| Never) |
 | `AutomaticRouteConsumptionRule` | Opcjonalnie |Enum (RouteDependent \| Always \| Never) |
-| `RespectFlushingPrincipleDuringOverproduction` | Opcjonalnie | Wartość logiczna |
+| `RespectFlushingPrincipleDuringOverproduction` | Opcjonalnie | Wyliczenie (Tak \| Nie) |
 | `ProductionJournalNameId` | Opcjonalnie | Ciąg |
 | `PickingListProductionJournalNameId` | Opcjonalnie | Ciąg|
 | `RouteCardProductionJournalNameId` | Opcjonalnie | Ciąg |
@@ -133,11 +135,11 @@ W poniższej tabeli przedstawiono pola, które obsługuje każdy wiersz w sekcji
 | `ToOperationNumber` | Opcjonalnie | Wartość całkowita|
 | `InventoryLotId` | Opcjonalnie | Ciąg |
 | `BaseValue` | Opcjonalnie | Ciąg |
-| `EndJob` | Opcjonalnie | Wartość logiczna |
-| `EndPickingList` | Opcjonalnie | Wartość logiczna |
-| `EndRouteCard` | Opcjonalnie | Wartość logiczna |
-| `PostNow` | Opcjonalnie | Wartość logiczna |
-| `AutoUpdate` | Opcjonalnie | Wartość logiczna |
+| `EndJob` | Opcjonalnie | Wyliczenie (Tak \| Nie) |
+| `EndPickingList` | Opcjonalnie | Wyliczenie (Tak \| Nie) |
+| `EndRouteCard` | Opcjonalnie | Wyliczenie (Tak \| Nie) |
+| `PostNow` | Opcjonalnie | Wyliczenie (Tak \| Nie) |
+| `AutoUpdate` | Opcjonalnie | Wyliczenie (Tak \| Nie) |
 | `ProductColorId` | Opcjonalnie | Ciąg|
 | `ProductConfigurationId` | Opcjonalnie | Ciąg |
 | `ProductSizeId` | Opcjonalnie | Ciąg |
@@ -181,7 +183,7 @@ W poniższej tabeli przedstawiono pola, które obsługuje każdy wiersz w sekcji
 | `OperationNumber` | Opcjonalnie | Wartość całkowita |
 | `LineNumber` | Opcjonalnie | Rzeczywisty |
 | `PositionNumber` | Opcjonalnie | Ciąg |
-| `IsConsumptionEnded` | Opcjonalnie | Wartość logiczna |
+| `IsConsumptionEnded` | Opcjonalnie | Wyliczenie (Tak \| Nie) |
 | `ErrorCause` | Opcjonalnie | Enum (None \| Material \| Machine \| OperatingStaff), extensible |
 | `InventoryLotId` | Opcjonalnie | Ciąg |
 
@@ -217,9 +219,9 @@ W poniższej tabeli przedstawiono pola, które obsługuje każdy wiersz w sekcji
 | `ConsumptionDate` | Opcjonalnie | Data |
 | `TaskType` | Opcjonalnie | Enum (QueueBefore \| Setup \| Process \| Overlap \| Transport \| QueueAfter \| Burden) |
 | `ErrorCause` | Opcjonalnie | Enum (None \| Material \| Machine \| OperatingStaff), extensible |
-| `OperationCompleted` | Opcjonalnie | Wartość logiczna |
-| `BOMConsumption` | Opcjonalnie | Wartość logiczna |
-| `ReportAsFinished` | Opcjonalnie | Wartość logiczna |
+| `OperationCompleted` | Opcjonalnie | Wyliczenie (Tak \| Nie) |
+| `BOMConsumption` | Opcjonalnie | Wyliczenie (Tak \| Nie) |
+| `ReportAsFinished` | Opcjonalnie | Wyliczenie (Tak \| Nie) |
 
 ### <a name="end-production-order-message"></a>Komunikat o zakończeniu zlecenia produkcyjnego
 
@@ -230,9 +232,13 @@ W *zakończ zlecenie produkcyjne* wartość `_messageType` to `ProdProductionOrd
 | `ProductionOrderNumber` | Wymagana | Ciąg |
 | `ExecutedDateTime` | Opcjonalnie | Data/godzina |
 | `EndedDate` | Opcjonalnie | Data |
-| `UseTimeAndAttendanceCost` | Opcjonalnie | Wartość logiczna |
-| `AutoReportAsFinished` | Opcjonalnie | Wartość logiczna |
-| `AutoUpdate` | Opcjonalnie | Wartość logiczna |
+| `UseTimeAndAttendanceCost` | Opcjonalnie | Wyliczenie (Tak \| Nie) |
+| `AutoReportAsFinished` | Opcjonalnie | Wyliczenie (Tak \| Nie) |
+| `AutoUpdate` | Opcjonalnie | Wyliczenie (Tak \| Nie) |
+
+## <a name="other-production-information"></a>Inne informacje o produkcji
+
+Komunikaty obsługują akcje lub zdarzenia, które mają miejsce w sklepie. Są one przetwarzane przy użyciu struktury integracji MES opisanej w tym temacie. Projekt zakłada, że inne informacje referencyjne, które będą udostępniane MES (takie jak informacje związane z produktem, zestawienie materiałów lub trasa (wraz z konkretnymi czasami ustawienia i konfiguracji) użyte w określonym zleceniu produkcyjnym) zostaną pobrane z systemu przy użyciu [encji danych](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#data-entities) przez transfer plików lub OData.
 
 ## <a name="receive-feedback-about-the-state-of-a-message"></a>Otrzymywanie informacji zwrotnych o stanie wiadomości
 

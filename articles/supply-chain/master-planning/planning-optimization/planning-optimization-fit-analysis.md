@@ -1,7 +1,7 @@
 ---
 title: Analiza dopasowywania optymalizacją planowania
 description: W tym temacie wyjaśniono, jak sprawdzić bieżącą konfigurację i dane, porównując je z możliwościami funkcji optymalizacji planowania.
-author: ChristianRytt
+author: t-benebo
 ms.date: 07/07/2021
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 440cddca11df8d705757c6f6adf01e08626c5158
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: dccc955492d33e9e0156f2a5feb6b33387d80af3
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8408022"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487650"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analiza dopasowań optymalizacji planowania
 
@@ -84,7 +84,7 @@ W poniższej tabeli przedstawiono różne wyniki, które mogą być widoczne po 
 | Produkcyjne | Wiersze BOM/wiersze formuł ze zużyciem zasobu: _\#_ | Ta funkcja jest oczekiwana. Obecnie podczas włączania Optymalizacji planowania ignorowane są wiersze BOM i formuły, w których zużycie zasobów jest włączone. Gdy ta funkcja jest obsługiwana, wymaganie materiałowe zostanie ustawione na datę rozpoczęcia produkcji. Dopóki ta funkcja nie będzie obsługiwana, wymagania nie będą generowane dla materiałów oznaczonych flagą zużycia zasobów. | 2022 października |
 | Produkcyjne | Wiersze BOM/wiersze formuł ze zużyciem etapowym: _\#_ | Ta funkcja jest oczekiwana. Ignorowane jest zużycie etapowe w wierszach BOM i formuły, w których włączona jest Optymalizacja planowania. | 2022 października |
 | Produkcyjne | Listy BOM ze zdefiniowanymi stałymi odpadkami lub odpadkami zmiennymi: _\#_ | Ta funkcja jest oczekiwana. Obecnie stałe odpadki i zmienne odpadki, które są zdefiniowane w BOM, są ignorowane, gdy jest włączona Optymalizacja planowania. | 2022 października |
-| Produkcyjne | Listy BOM z podwykonawstwem: _\#_ | Ta funkcja jest oczekiwana. Obecnie gdy jest włączona Optymalizacja planowania ustawienie podwykonawstwa w BOM nie jest brane pod uwagę, niezależnie od tego ustawienia. | 2022 kwietnia |
+| Produkcyjne | Listy BOM z podwykonawstwem: _\#_ | Ta funkcja jest teraz obsługiwana. | Obsługiwana |
 | Produkcyjne | Listy BOM bez oddziału: _\#_ | Ta funkcja jest teraz obsługiwana. Aby uzyskać dodatkowe informacje, zobacz temat [Planowanie produkcji](production-planning.md) | Obsługiwana |
 | Produkcyjne | Popyt ze zdefiniowanymi konkretnymi wymaganiami dotyczącymi list BOM lub marszruty: _\#_ | Ta funkcja jest oczekiwana. Obecnie określone wymagania dotyczące BOM lub marszruty zdefiniowane na zapotrzebowaniu (takie jak BOM podrzędny lub Podmarszruta w zamówieniu sprzedaży) są ignorowane, gdy jest włączona Optymalizacja planowania. Zostanie użyta standardowa wersja BOM lub marszruta, niezależnie od tego ustawienia. | 2022 października |
 | Produkcyjne | Wersje formuły zawierające produkty towarzyszące/uboczne: _\#_ | Ta funkcja jest oczekiwana. Obecnie produkty towarzyszące i uboczne skojarzone z wersją formuły są ignorowane, gdy jest włączona Optymalizacja planowania. | 2022 października |

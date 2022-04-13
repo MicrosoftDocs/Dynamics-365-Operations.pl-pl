@@ -2,25 +2,27 @@
 title: Omówienie raportowania finansowego
 description: W tym temacie opisano, jak uzyskać dostęp do modułu sprawozdawczości finansowej w Microsoft Dynamics 365 Finance i jak korzystać z funkcji raportowania finansowego.
 author: aprilolson
-ms.date: 07/27/2021
+ms.date: 03/31/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: intro-internal
+ms.custom:
+- "10444"
+- intro-internal
 ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1fbdab1f4f81bbdb8b0b5cb3e6a5237196d7dc76
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: e1db676024f5ec0f254500bd2ceee85ab2150502
+ms.sourcegitcommit: 777f9581dccc0f963c6a04c95b85e00e68573db5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983984"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8527321"
 ---
 # <a name="get-started-with-financial-reporting"></a>Rozpoczynanie pracy z raportowaniem finansowym 
 
@@ -174,7 +176,7 @@ Wydanie 1: Projektant raportów nie rozpoczyna się po wybraniu opcji **Nowy** l
 * W obszarze Internet Explorer wybierz opcję **Ustawienia**, a następnie wybierz **Opcje internetowe**. Wybierz kartę **Zabezpieczenia**. Wybierz opcję Zaufane witryny, a następnie wybierz opcję **Witryny**. W obszarze **Dodaj tę witrynę sieci Web do strefy** wprowadź „\*\.dynamics.com” (bez znaków cudzysłowu), a następnie wybierz pozycję **Dodaj**. 
 * W obszarze Internet Explorer wybierz opcję **Ustawienia**, a następnie wybierz **Opcje internetowe**. Wybierz kartę **Zabezpieczenia**. Wybierz opcję Zaufane witryny. W obszarze o nazwie poziom zabezpieczeń dla tej strefy Zmień opcję na **Średni — niski**.
 * Wyłącz funkcję blokowania wyskakujących okienek w przeglądarce.
-* Do zainstalowania Struktury Microsoft .NET 4.6.2 lub nowszej wymagane są stacje robocze. Tę wersję programu Microsoft .NET Framework można pobrać i zainstalować z witryny [Centrum pobierania Microsoft](https://www.microsoft.com/download/details.aspx?id=53345).
+* Do zainstalowania Struktury Microsoft .NET 4.7.2 lub nowszej wymagane są stacje robocze. Tę wersję programu Microsoft .NET Framework można pobrać i zainstalować z witryny [Centrum pobierania Microsoft](https://dotnet.microsoft.com/download/dotnet-framework/net472).
 * Jeśli używasz przeglądarki Chrome, należy zainstalować rozszerzenie ClickOnce, aby można było pobrać klienta Projektanta raportów. Jeśli w przeglądarce Chrome pracujesz w trybie incognito, upewnij się, że w rozszerzeniu ClickOnce również włączono tryb incognito. Aby uzyskać więcej informacji na temat rozszerzenia ClickOnce w przeglądarce Chrome, zobacz [Wymagania systemowe dla wdrożeń w chmurze](../../fin-ops-core/fin-ops/get-started/system-requirements.md).
 * Jeśli używasz razem przeglądarek Microsoft Edge i Chrome, nie musisz instalować rozszerzenia ClickOnce dla Microsoft Edge Chromium. Trzeba jednak włączyć opcję ClickOnce, aby móc pobrać klienta Projektanta raportów. Jeśli pracujesz w trybie incognito, upewnij się, że w rozszerzeniu ClickOnce również włączono tryb incognito.
 

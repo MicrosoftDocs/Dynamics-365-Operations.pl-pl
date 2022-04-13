@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-09-15
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: f3a930814a1fb98e3b1611adf309c10e66b49b9d
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: c4cb36160e692cc12140b57037d2c9739f7b2ebd
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902104"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462678"
 ---
 # <a name="mobile-device-user-accounts"></a>Konta użytkownika urządzenia przenośnego
 
@@ -90,8 +90,8 @@ Gdy pracownik rejestruje się do aplikacji mobilnej Warehouse Management, język
 1. W Okienku akcji wybierz **Opcje użytkownika**.
 1. Na karcie **Preferencje** ustaw następujące pola:
 
-    - **Język** — wybierz język preferowany przez pracownika. To pole steruje także formatem daty wyświetlanym w aplikacji magazynu.
-    - **Format daty, godziny i liczby** — wybierz język, który określi formaty liczb wyświetlane w aplikacji magazynu. Należy zwrócić uwagę, że formaty daty i godziny wyświetlane w aplikacji magazynu są w rzeczywistości określane przez pole **Język**, a nie przez to pole.
+    - **Język** — wybierz język preferowany przez pracownika. To pole steruje także formatem liczby wyświetlanym w aplikacji magazynu.
+    - **Format daty, czasu i liczby** — wybierz format daty i czasu preferowany przez pracownika. Aplikacja magazynu używa formatu liczby skojarzonego z językiem wybranym w polu **Język** zamiast tego ustawienia.
     - **Strefa czasowa** — umożliwia wybór strefy czasowej, w której pracuje pracownik. To pole wpływa na sygnaturę czasową wszystkich rejestracji, które pracownik wykonuje za pomocą aplikacji.
 
 > [!NOTE]

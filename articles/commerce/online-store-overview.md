@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c7f679e8d11b0ec01e912a4ad64f02e50b20f299
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 90f0f01115b00f231af8d4ae11be1d18d379399b
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984576"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487775"
 ---
 # <a name="e-commerce-site-overview"></a>Omówienie witryny handlu elektronicznego
 
@@ -86,7 +86,7 @@ Witryny **domyślna** i **fabrikam** zawierają wstępnie skonfigurowane szablon
 Aby uzyskać więcej informacji dotyczących zarządzania ustawieniami witryny, zobacz następujące tematy:
 
 - [Zarządzanie użytkownikami i rolami e-Commerce](manage-ecommerce-users-roles.md)
-- [Zagadnienia optymalizacji aparatu wyszukiwania (SEO) dla witryny](/search-engine-optimization-considerations.md)
+- [Zagadnienia optymalizacji aparatu wyszukiwania (SEO) dla witryny](search-engine-optimization-considerations.md)
 - [Zarządzanie zasadami zabezpieczeń zawartości (CSP)](manage-csp.md)
 - [Wybór motywu witryny](select-site-theme.md)
 

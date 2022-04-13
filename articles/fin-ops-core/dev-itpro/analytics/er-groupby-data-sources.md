@@ -2,7 +2,7 @@
 title: Grupowanie rekordów i łączenie obliczeń przy użyciu źródeł danych GROUPBY
 description: W tym temacie wyjaśniono, jak można używać typu źródeł danych GROUPBY w Raportowaniu elektronicznym (ER).
 author: NickSelin
-ms.date: 01/31/2022
+ms.date: 03/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5a6cdc486c5f799bdedafa38e90be989fd328c96
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 3b79dfe62122a031ae9ed7f51ea7ff578cd47358
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075642"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462305"
 ---
 # <a name="group-records-and-aggregate-calculations-by-using-groupby-data-sources"></a>Grupowanie rekordów i łączenie obliczeń przy użyciu źródeł danych GROUPBY
 
 [!include[banner](../includes/banner.md)]
-
-[!include[banner](../includes/preview-banner.md)]
 
 Podczas konfigurowania mapowania lub formatów modelu [Raportowania elektronicznego (ER)](general-electronic-reporting.md) możesz [dodać](#AddMmDataSource2) wymagane źródła danych typu **GroupBy**.
 

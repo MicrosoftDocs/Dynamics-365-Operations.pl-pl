@@ -1,5 +1,5 @@
 ---
-title: Omówienie harmonogramu rozliczeń
+title: Tworzenie harmonogramów rozliczania
 description: W tym temacie wyjaśniono, jak tworzyć, usuwać i edytować harmonogramy rozliczeń.
 author: JodiChristiansen
 ms.date: 02/09/2022
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: e42be3f359e96f0861354ebc8e1e9c87478a5d89
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: 2c4e3c0edadd00fd3a3f2ae9968248a226147996
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182694"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462595"
 ---
-# <a name="billing-schedule-overview"></a>Omówienie harmonogramu rozliczeń
+# <a name="create-billing-schedules"></a>Tworzenie harmonogramów rozliczania
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Na stronie **Harmonogram fakturowania** można tworzyć, usuwać lub edytować harmonogramy fakturowania. Możesz również przejrzeć listę harmonogramów fakturowania. Podczas tworzenia harmonogramu fakturowania domyślne jego wartości są określane przez skojarzoną z nim grupę fakturowania. Dodatkowe informacje można skonfigurować na stronie **Parametry fakturowania umowy cyklicznej**.
 

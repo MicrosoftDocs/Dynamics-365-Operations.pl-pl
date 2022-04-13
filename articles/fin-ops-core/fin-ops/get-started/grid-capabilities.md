@@ -2,7 +2,7 @@
 title: Możliwości siatki
 description: W tym temacie opisano kilka zaawansowanych funkcji formantu siatki. Musisz włączyć nową funkcje siatki, aby można było uzyskać dostęp do tych możliwości.
 author: jasongre
-ms.date: 03/03/2022
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 58a05f893549a8b9e2e5cb83d02475d0fb5b7277
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 81577f54bd7fdc7d683c760dd4410f27da8ee1f0
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384447"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462800"
 ---
 # <a name="grid-capabilities"></a>Możliwości siatki
 
@@ -151,7 +151,7 @@ Podobnie jak w programie Excel, użytkownicy mogą automatycznie wymuszać zmian
 
 Funkcja **Kontrolka nowej siatki** jest dostępna bezpośrednio w module Zarządzanie funkcjami w dowolnym środowisku. Po włączeniu tej funkcji w Zarządzaniu funkcjami wszystkie kolejne sesje użytkowników będą korzystać z nowej kontroli siatki. 
 
-Ta funkcja jest domyślnie włączona od wersji 10.0.21 i ma być obowiązkowa w wersji 10.0.25. 
+Ta funkcja jest domyślnie włączona od wersji 10.0.21 i ma być obowiązkowa w październiku 2022 r.  
 
 ## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Deweloper] Rezygnacja z używania nowej siatki dla poszczególnych stron 
 Jeśli Twoja organizacja odkryje stronę, na której występują pewne problemy z wykorzystaniem nowej siatki, dostępny jest interfejs API, który umożliwia indywidualnemu formularzowi korzystanie ze starszej kontroli sieci, jednocześnie zezwalając reszcie systemu na korzystanie z nowej kontroli sieci. Aby wycofać pojedynczą stronę z nowej siatki, należy dodać następujący wpis wywołania `super()` w metodzie `run()` dla formularza.

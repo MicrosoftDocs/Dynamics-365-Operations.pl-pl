@@ -2,7 +2,7 @@
 title: Raportowanie JPK-V7M
 description: W tym temacie wyjaśniono, jak uruchomić deklarację VAT z rejestrami (znanymi również jako JPK-V7M, VDEK) w Polsce.
 author: liza-golub
-ms.date: 10/26/2021
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,12 +11,12 @@ audience: Application User
 ms.reviewer: kfend
 ms.search.region: Poland
 ms.author: elgolu
-ms.openlocfilehash: 0fe65e0a195533eb0dd6c97e5907d18bac6c4888
-ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
+ms.openlocfilehash: d7b8f860599345a8801a5d82f4a35f937c3ba9f1
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7713708"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462750"
 ---
 # <a name="jpk-v7m-reporting"></a>Raportowanie JPK-V7M
 
@@ -52,7 +52,7 @@ W poniższej tabeli pokazano przykład kodów raportowania podatków i ich mapow
 | K_18             | Wysokość podatku należnego wynikająca z dostawy towarów oraz świadczenia usług na terytorium Polski, opodatkowanych stawką 7% lub 8%, z uwzględnieniem korekty dokonanej zgodnie z art. 89a ust. 1 i 4 ustawy o VAT. | 10403, 10406 |
 | K_19             | Wysokość podstawy opodatkowania wynikająca z dostawy towarów oraz świadczenia usług na terytorium Polski, opodatkowanych stawką 22% lub 23%, z uwzględnieniem korekty dokonanej zgodnie z art. 89a ust. 1 i 4 ustawy o VAT. | 10301, 10304 |
 | K_20             | Wysokość podatku należnego wynikająca z dostawy towarów oraz świadczenia usług na terytorium Polski, opodatkowanych stawką 22% lub 23%, z uwzględnieniem korekty dokonanej zgodnie z art. 89a ust. 1 i 4 ustawy o VAT. | 10303, 10306 |
-| K_21             | Wysokość podstawy opodatkowania wynikająca z wewnątrzwspólnotowej dostawy towarów, o której mowa w art. 13 ust. 1 i 3 ustawy o VAT. | 10807 |
+| K_21             | Wysokość podstawy opodatkowania wynikająca z wewnątrzwspólnotowej dostawy towarów, o której mowa w art. 13 ust. 1 i 3 ustawy o VAT. | 10801 |
 | K_22             | Wysokość podstawy opodatkowania wynikająca z eksportu towarów. | 10901, 10905 |
 | K_23             | Wysokość podstawy opodatkowania wynikająca z wewnątrzwspólnotowego nabycia towarów. | 10810, 10811 (zmiana zwrotna) |
 | K_24             | Wysokość podatku należnego wynikająca z wewnątrzwspólnotowego nabycia towarów. | 10812 |

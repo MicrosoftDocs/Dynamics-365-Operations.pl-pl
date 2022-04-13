@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 82848f1ff068cea0adfc6ec1b33fc4bb035f78dc
-ms.sourcegitcommit: 374bbdde90fc9a68c0799158a50409bfbe8ca64e
+ms.openlocfilehash: 1db4e988653aa55db2b18fb201edeafc4d16a1bc
+ms.sourcegitcommit: ab690bc897699ff8a4c489e749251fe0367050ca
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8353365"
+ms.lasthandoff: 03/26/2022
+ms.locfileid: "8489037"
 ---
 # <a name="detect-abandoned-carts-and-send-notifications-to-customers"></a>Wykrywanie porzuconych koszyków i wysyłanie powiadomień do klientów
 
@@ -127,7 +127,7 @@ Aby skonfigurować porzuconą przykładową aplikację łącznika koszyka, zmody
 
 ### <a name="azurecosmosoptions"></a>AzureCosmosOptions
 
-Stan porzuconego zadania pobierania koszyka, identyfikatory koszyków i zmodyfikowane sygnatury czasowe są przechowywane w systemie Azure Cosmos DB. Domyślnie ustawienia w pliku konfiguracji wskazują lokalne wystąpienie emulatora systemu Azure Cosmos DB. Podczas wdrażania łącznika w środowisku produkcyjnym należy zaktualizować te ustawienia, aby były one punktem wystąpienia systemu Azure Cosmos DB w subskrypcji systemu Azure. Do testowania lokalnego lub w piaskownicy możesz użyć [Emulatora Cosmos Azure](/azure/cosmos-db/local-emulator).
+Stan porzuconego zadania pobierania koszyka, identyfikatory koszyków i zmodyfikowane sygnatury czasowe są przechowywane w systemie Azure Cosmos DB. Domyślnie ustawienia w pliku konfiguracji wskazują lokalne wystąpienie emulatora systemu Azure Cosmos DB. Podczas wdrażania łącznika w środowisku produkcyjnym należy zaktualizować te ustawienia, aby były one punktem wystąpienia systemu Azure Cosmos DB w subskrypcji systemu Azure. Do testowania lokalnego lub w piaskownicy możesz użyć [Emulatora Azure Cosmos DB](/azure/cosmos-db/local-emulator).
 
 | Właściwość    | Opis |
 | ----------- | ----------- |

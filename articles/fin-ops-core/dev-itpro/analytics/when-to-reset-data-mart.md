@@ -2,7 +2,7 @@
 title: Resetowanie składnicy danych FAQ
 description: Ten temat zawiera odpowiedzi na często zadawane pytania dotyczące resetowania składnicy danych.
 author: jinniew
-ms.date: 02/14/2022
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-05-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 53f45f469c39f9e389763aa0daed658e5a62d377
-ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
+ms.openlocfilehash: ab6417a739e9a7b67b9e67d93f3bef654e55e5e4
+ms.sourcegitcommit: 2c2ef3e312e7221006a9e230c9378bb4c1b4cd33
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "8119519"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8466419"
 ---
 # <a name="data-mart-resets-faq"></a>Resetowanie składnicy danych FAQ
 
@@ -47,10 +47,14 @@ Jeśli do danej sytuacji ma zastosowanie co najmniej jedno z następujących spr
 Oto kilka okoliczności, w których nie zalecamy resetowania:
 
 - Występują problemy z integracją danych.
+- Integracja programu Financial Reporter nie jest włączona. 
+
+    - Oznacza to, że dane księgi głównej nie są już synchronizowane z tym schematem danych Financial Reporting. Financial Reporter może nie otrzymywać aktualnych numerów do raportów finansowych. Zazwyczaj dzieje się tak, jeśli od dłuższego czasu nie korzysta się z funkcji Financial Reporter.
+    - Zostanie wyświetlony monit o włączenie integracji przez zresetowanie danych. Możesz kontynuować, wybierając przycisk **Tak**. Użytkownik może również wybrać opcję resetowania danych w późniejszym czasie. Po włączeniu integracji dane księgi głównej są ponownie synchronizowane w programie Financial Reporter. 
 - Jeśli z następujących przyczyn używasz wzorca resetowania cyklicznego:
 
     - **Brakujące lub nieoczekiwane dane w raporcie** – Jeśli zauważysz, że brakuje danych, otwórz zgłoszenie do pomocy technicznej w firmie Microsoft, aby sprawdzić format raportu i ewentualne problemy z synchronizacją danych.
-    - **Stan integracji zatrzymany**
+    - **Stan integracji zatrzymany** — jeśli zauważysz, że stan integracji jest zatrzymany, może to być spowodowane dużą liczby transakcji w systemie. Ten stan zostanie rozwiązany sam. Jeśli jednak zauważysz, że stan pomocy technicznej utknie ponad cztery godziny, otwórz bilet pomocy technicznej dla firmy Microsoft. 
    
 ## <a name="if-i-reset-the-data-mart-will-i-lose-reports-that-ive-already-designed"></a>Czy zresetowanie danych spowoduje utratę raportów, które już zaprojektowano?
 

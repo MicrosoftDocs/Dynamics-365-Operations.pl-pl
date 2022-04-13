@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2022-02-09
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: b94ac36e49d55ad42909877d77903cd40cb22cbe
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: 2796e25ec783941de381fb5ae96145eeba870bde
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182689"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462477"
 ---
 # <a name="subscription-billing-overview"></a>Omówienie rozliczeń subskrypcji
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Fakturowanie subskrypcji umożliwia organizacjom zarządzanie szansami sprzedaży subskrypcji i fakturowaniem cyklicznym za pomocą harmonogramów fakturowania. Złożone modele wyceny i fakturowania oraz alokacja przychodu są łatwe do zarządzania oraz są fakturowane i rozpoznawane na poziomie wiersza. Wieloelementowa alokacja przychodów umożliwia alokację przychodów zgodnie z Międzynarodowymi Standardami Rachunkowości (Międzynarodowy Standard Sprawozdawczości Finansowej 15 \[IFRS 15\]) i ogólnie przyjętymi zasadami rachunkowości (US GAAP) (Zagadnienie Kodyfikacji Standardów Rachunkowości 606 \[ASC 606\]).
 
