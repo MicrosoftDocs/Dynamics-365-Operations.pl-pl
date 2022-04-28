@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0625010143b7df9c3c897bf7f43ef25993303240
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 43a53d5940b2595abb305a08e6f52661bee8ca62
+ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752815"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8548088"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Nowości i zmiany w programie Dynamics 365 for Operations w wersji 1611 (listopad 2016)
 
@@ -816,7 +816,7 @@ Obecnie moduł Retail Modern POS jest dostępny tylko jako aplikacja systemu Win
 | Dostawca może uzyskiwać informacje o ilości zapasów konsygnacyjnych przesyłanych do odbiorcy. | Aby zafakturować odbiorcę, dostawca potrzebuje informacji o surowcach zakupionych z zapasów konsygnacyjnych i o dacie zakupu. Dostawca może również monitorować dostępne zapasy w siedzibie odbiorcy, używając do tego interfejsu współpracy z dostawcami. |
 | Przenoszenie zapasów należących do dostawcy za pomocą arkusza przeniesień. | Aby śledzić fizyczne położenie zapasów będących własnością dostawcy, trzeba mieć możliwość rejestrowania położenia w systemie. Za pomocą arkusza przeniesień można rejestrować fizyczne przesunięcia zapasów, takie jak przesunięcie z jednej lokalizacji w magazynie do innej lokalizacji w tym samym magazynie. |
 | Korygowanie zapasów należących do dostawcy za pomocą arkusza inwentaryzacji. | Ważne jest, aby ilość dostępnych zapasów zapisana w systemie była taka sama, jak fizycznie istniejące zapasy. Zapasy należące do dostawcy można korygować w górę i w dół przy użyciu procesów inwentaryzacji, takich jak procesy korekty ilości i procesy arkusza inwentaryzacji. |
-| Uzyskiwanie dodatkowych informacji o obsłudze konsygnacji w programie Dynamics 365 for Operations | Aby uzyskać więcej informacji o obsłudze procesów konsygnacji, zobacz tematy [Konsygnacja](../../../supply-chain/inventory/consignment.md), [Konfigurowanie konsygnacji](../../../supply-chain/inventory/set-up-consignment.md), [Tworzenie zamówienia uzupełnienia zapasów konsygnacyjnych (przewodnik po zadaniu)](../../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md) i [Zmiana własności zapasów konsygnacyjnych w oparciu o zapotrzebowanie produkcyjne](../../../supply-chain/inventory/tasks/change-ownership-consignment.md). |
+| Uzyskiwanie dodatkowych informacji o obsłudze konsygnacji w programie Dynamics 365 for Operations | Aby uzyskać więcej informacji o obsłudze procesów konsygnacji, zobacz tematy [Konsygnacja](../../../supply-chain/inventory/consignment.md), [Konfigurowanie konsygnacji](/d365F-O/fin-ops-core/fin-ops/get-started/consignment), [Tworzenie zamówienia uzupełnienia zapasów konsygnacyjnych (przewodnik po zadaniu)](../../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md) i [Zmiana własności zapasów konsygnacyjnych w oparciu o zapotrzebowanie produkcyjne](../../../supply-chain/inventory/tasks/change-ownership-consignment.md). |
 
 ### <a name="vendor-collaboration-previously-known-as-the-vendor-portal"></a>Portal współpracy z dostawcami (znany wcześniej jako portal dostawców)
 

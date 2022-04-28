@@ -15,17 +15,17 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5ecd4f5359019e3c4778e21cc4946b9998cd519f
-ms.sourcegitcommit: 9f8da0ae3dcf3861e8ece2c2df4f693490563d5e
+ms.openlocfilehash: 497d49da84f4df90877908bef3031e079bc36066
+ms.sourcegitcommit: d0e99545d722c924db57ae2bd06f72154a1f1f97
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "7817429"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "8557886"
 ---
 # <a name="customer-aging-data-storage"></a>Przestrzeń dyskowa danych wiekowania odbiorcy
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+
 
 W tym temacie opisano proces używania magazynu zewnętrznego do danych wiekowania odbiorcy. W rozwiązaniu Microsoft Dynamics 365 Finance proces przechowywania danych wiekowania odbiorcy można uruchomić, aby udostępnić dane wyjściowe dla eksportu do zewnętrznego systemu. Po uruchomieniu procesu te same opcje raportu wiekowania, które są dostępne w systemie, są dostępne dla systemów zewnętrznych. Szczegóły są zawsze uwzględniane w eksportowanych danych.
 

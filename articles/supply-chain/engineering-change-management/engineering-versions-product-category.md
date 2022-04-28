@@ -2,7 +2,7 @@
 title: Wersje inżynieryjne i kategorie produktów inżynieryjnych
 description: Ten temat zawiera informacje dotyczące pojęć związanych z wersjami inżynieryjnymi. Wersje inżynieryjne zapewniają, że różne stany produktu i jego danych są aktualne i przejrzyste oraz że można je wizualizować w systemie.
 author: t-benebo
-ms.date: 09/28/2020
+ms.date: 04/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 42faa9e5f073d718c18422e37212c2ae8a28b28d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a4d057c603e6592e491af7597e50fce2497860ec
+ms.sourcegitcommit: b96e0c70553bca9b3f5eb65105a52cb71d978a36
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572896"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8553370"
 ---
 # <a name="engineering-versions-and-engineering-product-categories"></a>Wersje inżynieryjne i kategorie produktów inżynieryjnych
 
@@ -137,7 +137,7 @@ Dla każdego dodawanego wiersza do siatki należy określić następujące pola:
 |---|---|
 | Imię i nazwisko | Zaznacz atrybuty do dodania. |
 | Wartość | Wybierz domyślną wartość atrybutu. |
-| Wymagany | W przypadku atrybutów typu *Wartość logiczna*, jeśli ta opcja ma wartość *Tak*, użytkownicy muszą nadać atrybutowi wartość *Tak*. Jeśli ta opcja ma wartość *Nie*, użytkownicy mogą ustawiać atrybut na wartość *Tak* lub *Nie*. W przypadku innych typów danych ustawienie tej opcji ma charakter informacyjny. |
+| Wymagana | Określ, czy atrybut jest obowiązkowy. Oznacza to, że użytkownicy muszą określić prawidłową wartość atrybutu, zanim będą mieli możliwość zapisania produktu. Wpływ tego ustawienia różni się nieco w zależności od typu danych wybranego atrybutu, zgodnie z następującą listą.<ul><li>**Wartość logiczna** – ustaw wartość *Tak*, aby atrybut miał wartość *Tak* (system odrzuci zapisanie produktu, dla którego jest ustawiony atrybut *Nie*). Ustaw wartość *Nie*, aby zaakceptować wartość *Tak* lub *Nie*. (Atrybuty typu *Wartość logiczna* nie może mieć pustej wartości)</li><li>**Liczba całkowita lub** liczba dziesiętna – Ustaw wartość *Tak,* aby wymagać od użytkowników wprowadzania wartości niezerowej dla tego atrybutu. Ustaw to pole na *Nie*, aby umożliwić użytkownikom zapisywanie z wartością zerową.  (Atrybuty tych typów nie mogą mieć pustej wartości).</li><li>**Lista** — lista zawiera typ danych *Tekst*, ale zawiera także wstępnie zdefiniowaną listę możliwych wartości. W związku z tym nie można wprowadzić pustej wartości dla atrybutów tego typu, więc to ustawienie nie ma wpływu i jest po prostu informacyjne.</li><li>**Wszystkie inne typy danych** – Ustaw wartość *Tak,* aby atrybut był obowiązkowy. Ustaw wartość *Nie*, aby umożliwić użytkownikom zapisanie produktu bez podaniem wartości tego atrybutu.</li></ul> |
 | Atrybut partii | Wybierz, czy atrybut ma być propagowany za pomocą funkcji wsadowej. |
 
 ### <a name="readiness-policy-fasttab"></a>Skrócona karta Zasady gotowości

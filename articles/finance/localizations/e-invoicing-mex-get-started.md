@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: f512a6208bc85cd5796ce9515d2bc440f92ea79f
-ms.sourcegitcommit: 5033d42a2aac852916d726e40bd98a164d1a837d
+ms.openlocfilehash: 6fc8a9eaf6c6e4c82719e7c1ebccd4272548e73f
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/23/2022
-ms.locfileid: "7986365"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8566007"
 ---
 # <a name="get-started-with-electronic-invoicing-for-mexico"></a>Rozpoczynanie pracy z fakturowaniem elektronicznym dla Meksyku
 
@@ -141,7 +141,7 @@ Aby przesłać anulowanie faktury CFDI, wymagane są konfiguracje funkcji **Anul
 1. Na stronie **Ustawienia wersji funkcji** na karcie **Zmienne** wybierz nazwę zmiennej **DigitalSignatureXSLT**.
 2. W polu **Wartości** wprowadź: {"containerUrl":"https://&lt;AccountStorageName&gt;.blob.core.windows.net/&lt;ContainerName&gt;","path":"&lt;RelativePath&gt;"}
    
-    gdzie: <RelativePath> = folder\\folder\\filename z podwójnym ukośnikiem odwrotnym, ContainerName musi oznaczać kontener używany dla usługi.
+    gdzie: \<RelativePath\> = folder\\folder\\filename z podwójnym ukośnikiem odwrotnym, ContainerName musi oznaczać kontener używany dla usługi.
    
     Przykładową zmienną może być:
     

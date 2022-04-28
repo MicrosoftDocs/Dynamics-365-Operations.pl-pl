@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 197a5b983b307758425b1acc1f354d0a8bfbf8a1
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 94038b0eb412632c348081bbf467f44310d9e955
+ms.sourcegitcommit: 6109fc2fe5f407363bb6f240d64b7214657f5914
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371819"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "8603033"
 ---
 # <a name="create-a-globalization-feature"></a>Tworzenie funkcji globalizacji
 
@@ -47,7 +47,7 @@ Aby utworzyć funkcję fakturowania elektronicznego, wykonaj następujące kroki
 8. W siatce **Konfiguracje** odszukaj i wybierz konfiguracje formatów wymagane do przetwarzania potoku (na przykład do generowania plików faktur elektronicznych lub odpowiedzi na przetwarzanie odpowiedzi z zewnętrznych usług sieci web).
 9. Kliknij przycisk **OK**. Teraz możesz używać konfiguracji w akcjach potoku przetwarzania. Aby uzyskać więcej informacji na temat szablonów, zobacz [Praca z konfiguracjami](e-invoicing-work-configurations.md).
 10. Aby dodać konfigurację funkcji fakturowania elektronicznego, utwórz ją na karcie **Ustawienia** na **stronie Nowa funkcja**. Aby uzyskać więcej informacji, zobacz [Pracuj z ustawieniami funkcji](e-invoicing-feature-setup.md).
-11. Zakończ konfigurację i wdróż funkcję fakturowania elektronicznego w środowisku usług. Aby uzyskać więcej informacji, zobacz [Zakończenie, publikacja i wdrożenie funkcji globalizacji](e-invoicing-complete-publish-deploy-globalization-feature).
+11. Zakończ konfigurację i wdróż funkcję fakturowania elektronicznego w środowisku usług. Aby uzyskać więcej informacji, zobacz [Zakończenie, publikacja i wdrożenie funkcji globalizacji](e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 ### <a name="create-file-format-configurations-that-are-derived-from-the-existing-invoice-model"></a>Tworzenie konfiguracji formatu plików, które są wyprowadzane z istniejącego modelu faktury
 
@@ -91,4 +91,4 @@ Nowe konfiguracje formatu plików muszą być udostępnione w domenie Microsoft,
     - Przejrzyj konfiguracje, na wypadek potrzeby dostosowania formatów ER i ich powiązania ich z mapowaniami formatu dla wersji funkcji.
     - Przejrzyj ustawienia, jeśli chcesz dostosować kartę **Akcje**, kartę **Reguły stosowania** lub **Zmienne** dla wersji funkcji.
 
-9. Zakończ konfigurację i wdróż funkcję fakturowania elektronicznego w środowisku usług. Aby uzyskać więcej informacji, zobacz [Zakończenie, publikacja i wdrożenie funkcji globalizacji](e-invoicing-complete-publish-deploy-globalization-feature).
+9. Zakończ konfigurację i wdróż funkcję fakturowania elektronicznego w środowisku usług. Aby uzyskać więcej informacji, zobacz [Zakończenie, publikacja i wdrożenie funkcji globalizacji](e-invoicing-complete-publish-deploy-globalization-feature.md).

@@ -2,7 +2,7 @@
 title: Relacja między rozliczeniem księgi a zamknięciem roku
 description: Ten temat zawiera informacje dotyczące ulepszeń, które mają wpływ na rozliczenia księgi oraz zamknięcie na koniec roku księgi głównej.
 author: kweekley
-ms.date: 03/18/2022
+ms.date: 04/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: e18f77d73239de23000b5310d9342c6db95bc524
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 13d0a0a11a8f31e4ba647ccc23906f6b137051c2
+ms.sourcegitcommit: b96e0c70553bca9b3f5eb65105a52cb71d978a36
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462360"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8553340"
 ---
 # <a name="awareness-between-ledger-settlement-and-year-end-close"></a>Relacja między rozliczeniem księgi a zamknięciem roku
 
@@ -48,12 +48,16 @@ Aby wesprzeć nowe usprawnienia, wprowadzono zmiany w rozliczaniu ksiąg i zamyk
 
 Ze względu na zmiany w funkcjonalności i modelu danych ważne jest, abyś rozważył następujące kwestie, zanim włączysz tę funkcję:
 
+- Ponieważ tylko rozliczone transakcje są przenoszone do bilansu otwarcia, musisz wyłączyć transakcje z bieżącego roku obrotowego, które zostały rozliczone z transakcjami z poprzedniego roku obrotowego. Transakcje muszą być rozliczone z transakcjami w bieżącym roku podatkowym. Można to zrobić przez korektę wpisu w bieżącym roku obrachunkowym. Korekta powoduje odwrócenie skróconych bilansów otwarcia i kompensuje szczegółowe transakcje niezbędne do rozliczenia zapisów księgi w bieżącym roku. 
+
+  > [!IMPORTANT]
+  > W przeciwnym razie podczas zamykania roku w bieżącym roku podatkowym pojawi się błąd **pozabilansowe**. Jeśli nie jest możliwe wyłączenie i ponowne rozliczenie transakcji księgi z tym samym rokiem obrotowym, należy włączyć tę funkcję dopiero po zakończeniu zamknięcia roku. Włącz tę funkcję natychmiast po zakończeniu zamknięcia roku i przed rozliczeniem jakichkolwiek nowych transakcji w księdze w następnym roku obrotowym. 
+  
 - Wszystkie transakcje, które zostały oznaczone do rozliczenia, ale nie zostały rozliczone, zostaną automatycznie odznaczone, gdy funkcja ta zostanie włączona. Aby uniknąć strat w pracy, zanim włączysz tę funkcję, rozlicz wszystkie zaznaczone transakcje.
 - Niektóre organizacje uruchamiają zamknięcie na koniec roku wielokrotnie dla tego samego roku obrachunkowego. Nie włączaj tej funkcji, jeśli zamknięcie roku zostało już raz przeprowadzone i będzie przeprowadzone ponownie w tym samym roku podatkowym. Funkcja ta musi być włączona przed pierwszym zamknięciem roku lub po ostatnim zamknięciu roku podatkowego.
 
   Jeśli chcesz włączyć tę funkcję, ale zamknięcie roku zostało już raz przeprowadzone, musisz odwrócić zamknięcie roku, zanim będziesz mógł włączyć tę funkcję.
 
-- Ponieważ rozliczenia między latami podatkowymi nie są już dozwolone, zalecamy, abyś włączył tę funkcję przed rozpoczęciem procesu zamknięcia roku. Następnie, aby upewnić się, że na bilans otwarcia następnego roku podatkowego nie mają wpływu poprzednie rozliczenia międzyfiskalne, transakcja bilansu otwarcia powinna być rozliczona dla zamykanego roku podatkowego.
 - Ponieważ rozliczenia pomiędzy kontami głównymi nie są już dozwolone, dostosuj swój plan kont lub procesy tak, by zapewnić, że rozliczenia ksiąg będą mogły być dokonywane na tym samym koncie głównym.
 - Funkcja ta nie może być włączona, jeśli w sektorze publicznym stosowany jest proces zamknięcia roku.
 

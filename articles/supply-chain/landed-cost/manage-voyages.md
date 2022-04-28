@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 50b6f306da1d32b1fd98da68bd997de1f1c23ffb
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 996a8b62b59dd27691a1eaa5ed619f94e899e8cf
+ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570953"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8570444"
 ---
 # <a name="manage-voyages"></a>Zarządzanie podróżami
 
@@ -66,9 +66,9 @@ W poniższej tabeli opisano akcje, które są dostępne bezpośrednio na karcie 
 | W trakcie przesyłania | Zaktualizuj pole **Stan podróży** do stanu w drodze, który jest ustalony na stronie **[Parametry kosztów z wyładunkiem](landed-cost-parameters.md)**. Nie istnieje żadna kolejna logika tego procesu. Podróż może być również automatycznie aktualizowana do statusu w tranzycie, na podstawie ustawień w [Centrum kontroli śledzenia](delivery-information-setup.md).
 | Gotowa do wyceny | Zaktualizuj pole **Stan podróży** do stanu gotowy do wyceny, który jest ustalony na stronie **[Parametry kosztów z wyładunkiem](landed-cost-parameters.md)**. Koszt podróży można obliczyć, gdy wszystkie faktury zostały przetworzone (zarówno faktury magazynowe, jak i faktury z kosztami podróży), a towary zostały odebrane. Jeśli szacunkowe koszty związane z podróżą nie zostały wycenione, podczas próby przetworzenia wyceny podróży pojawia się błąd. |
 | Wyceniono | Usuń wszelkie nieprawidłowości związane z kosztami po wystawieniu faktury na wszystkie zamówienia i koszty podróży. Po wybraniu tego przycisku pojawi się okno dialogowe wyboru **Aktualizacja podróży - wyceniona**. Tam możesz wybrać księgowanie w standardowym dniu finansowym lub określić datę księgowania, a następnie uruchomić akcję. Możesz ponownie uruchomić akcję tyle razy, ile chcesz. Można również użyć okna dialogowego **Aktualizacja podróży — Wycenone**, aby określić harmonogram, aby akcja działała jako zadanie okresowe (zadanie wsadowe). Zalecamy regularne uruchamianie akcji, konfigurując ją jako zadanie wsadowe. |
-| Księguj listę przychodu | Opublikuj listę potwierdzeń dla wszystkich linii zamówień w podróży. W przypadku podróży obejmujących wiele firm otwierane jest nowe okno dialogowe księgowania listy przyjęcia dla każdej firmy i należy je przetworzyć w każdej firmie. |
-| Księguj dokument przyjęcia produktów | Zaksięguj pokwitowanie produktu dla wszystkich linii zamówienia w podróży. Proces przyjęcia produktów dla wierszy zamówienia zakupu, które są skojarzone z podróżą, będzie używany tylko wtedy, gdy towary **nie** zostaną przetworzone podczas transportu. Jeśli towary zostaną przetworzone podczas transportu, podczas próby zaksięgowania przyjęcia produktu dla wiersza zamówienia zakupu pojawi się błąd. W przypadku podróży obejmujących wiele firm otwierane jest nowe okno dialogowe księgowania dokumentu dostawy dla każdej firmy. |
-| Księguj fakturę | Opublikuj fakturę dla wszystkich linii zamówień w podróży. Jeśli towary w podróży przejdą przez proces przetwarzania towarów w tranzycie, wiersze zamówienia zakupu zostaną zafakturowane przed zakończeniem procesu odbioru. Po zafakturowaniu oryginalnego zamówienia zakupu zostaną utworzone zamówienia towarów w drodze, które są skojarzone z oryginalnymi wierszami zamówienia zakupu. Zamówienia te mogą następnie zostać odebrane przez magazyn. W przypadku wysyłek obejmujących wiele firm otwierane jest nowe okno dialogowe księgowania faktur dla każdej firmy. |
+| Księguj listę przychodu | Opublikuj listę potwierdzeń dla wszystkich linii zamówień w podróży.  |
+| Księguj dokument przyjęcia produktów | Zaksięguj pokwitowanie produktu dla wszystkich linii zamówienia w podróży. Proces przyjęcia produktów dla wierszy zamówienia zakupu, które są skojarzone z podróżą, będzie używany tylko wtedy, gdy towary **nie** zostaną przetworzone podczas transportu. Jeśli towary zostaną przetworzone podczas transportu, podczas próby zaksięgowania przyjęcia produktu dla wiersza zamówienia zakupu pojawi się błąd.  |
+| Księguj fakturę | Opublikuj fakturę dla wszystkich linii zamówień w podróży. Jeśli towary w podróży przejdą przez proces przetwarzania towarów w tranzycie, wiersze zamówienia zakupu zostaną zafakturowane przed zakończeniem procesu odbioru. Po zafakturowaniu oryginalnego zamówienia zakupu zostaną utworzone zamówienia towarów w drodze, które są skojarzone z oryginalnymi wierszami zamówienia zakupu. Zamówienia te mogą następnie zostać odebrane przez magazyn.  |
 | Wyślij zamówienie przeniesienia | Opublikuj zlecenie transferu dla wszystkich linii zlecenia transferu w podróży. Po wybraniu tego przycisku do aktualizacji będą dostępne tylko polecenia przeniesienia. |
 | Przyjmuj zamówienie przeniesienia | Opublikuj paragonu zlecenia dla wszystkich linii zlecenia transferu w podróży. |
 | Przyjmuj towar w drodze | Odbierz wszystkie linie zamówień, które są w trakcie podróży. Ten przycisk jest jedną z trzech dostępnych opcji odbioru towarów w tranzycie podczas podróży. (Pozostałe dwie opcje to przycisk **Utwórz arkusz przybycia**, który jest opisany w dalszej części tej tabeli, oraz aplikacja Warehouse Management). Ta opcja jest najprostszą opcją i umożliwia przetwarzanie towarów w tranzycie z magazynu towarów w tranzycie i do magazyn docelowy. Jeśli chcesz mieć większą kontrolę nad procesem, skorzystaj z dziennika przybycia lub urządzenia mobilnego, aby przetworzyć przyjęcie towarów. |
@@ -84,7 +84,7 @@ W poniższej tabeli opisano przyciski, które są dostępne bezpośrednio na kar
 
 | Przycisk | opis |
 |---|---|
-| Lista przychodu | Otwórz listę przyjęć produktów dla wszystkich linii zamówień w rejsie. W przypadku podróży obejmujących wiele firm otwierana jest nowa lista rachunków dla każdej firmy. Jeśli nie przetworzono żadnych list przyjęć produktów, ten przycisk jest niedostępny. |
+| Lista przychodu | Otwórz listę przyjęć produktów dla wszystkich linii zamówień w rejsie.  Jeśli nie przetworzono żadnych list przyjęć produktów, ten przycisk jest niedostępny. |
 | Dokument przyjęcia produktów | Otwórz rekord przyjęcia produktu dla wierszy zamówienia zakupu, które są skojarzone z podróżą, jeśli ten rekord jest używany. Jeśli nie zostały zaksięgowane żadne potwierdzenia produktów, ten przycisk jest niedostępny. Proces przyjmowania produktów nie będzie używany, jeśli korzystasz z przetwarzania towarów w drodze. |
 | Przyjęcie pozycji | Otwórz arkusz przybycia towaru, jeśli jest używany. |
 | Śledzenie | Otwórz stronę **Śledzenia przychodzącego**, na której można zaktualizować oczekiwaną datę przybycia towarów do kontenera wysyłkowego i podróży, a następnie zaktualizować oczekiwane daty dostawy w wierszach zamówienia zakupu. |

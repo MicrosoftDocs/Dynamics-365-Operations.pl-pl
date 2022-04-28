@@ -2,7 +2,7 @@
 title: Moduł selektora witryn
 description: W tym temacie opisano moduł wyboru witryny i opisano, jak dodać go do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 02/11/2022
+ms.date: 04/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 381163fdd6180a76def2e1bfb733f597b611c517
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: ad4d4d5f950d0631059d8f509e9e808a9106eb98
+ms.sourcegitcommit: 4861ec2d3ae24cc9dd4ad3ac748fd05be3d80c70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109713"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "8551701"
 ---
 # <a name="site-picker-module"></a>Moduł selektora witryn
 
@@ -28,14 +28,9 @@ ms.locfileid: "8109713"
 
 W tym temacie opisano moduł wyboru witryny i opisano, jak dodać go do stron witryny w Microsoft Dynamics 365 Commerce.
 
-Jeśli firma ma różne oddziały między rynkami, regionami i lokalizacjami, użytkownicy witryny muszą w prosty sposób przełączać się między witrynami i wybierać ich preferowaną witrynę w zakresie zakupów. Aby można było uwzględnić ten scenariusz, moduł wyboru witryn umożliwia przeglądanie użytkowników w wielu witrynach.
+Jeśli firma ma różne oddziały między rynkami, regionami i lokalizacjami, użytkownicy witryny muszą w prosty sposób przełączać się między witrynami i wybierać ich preferowaną witrynę w zakresie zakupów. Aby można było uwzględnić ten scenariusz, moduł wyboru witryn umożliwia przeglądanie użytkowników w wielu witrynach. Selektor witryn jest również zalecany w przypadku, gdy w witrynie sklepu internetowego zaimplementowano [funkcję wykrywania i przekierowania geograficznego](geo-detection-redirection.md), aby klienci mieli możliwość pominięcia preferencji witryny wskazanych przez nich za pomocą modułu [wyboru kraju/regionu](country-region-picker-module.md). 
 
-Moduł selektora witryn musi być skonfigurowany z listą witryn (rynków, regionów lub ustawień regionalnych), które mogą przeglądać użytkownicy witryny.
-
-> [!NOTE]
-> Moduł wyboru witryny do stron nadrzędnych jest dostępny w wydaniu Dynamics 365 Commerce 10.0.14.
-
-Na poniższej ilustracji przedstawiono przykład modułu wyboru witryny, który jest proponowany w nagłówku strony witryny.
+Moduł selektora witryn musi być skonfigurowany z listą witryn (rynków, regionów lub ustawień regionalnych), które mogą przeglądać użytkownicy witryny. Na poniższej ilustracji przedstawiono przykład modułu wyboru witryny, który jest proponowany w nagłówku strony witryny.
 
 ![Przykład modułu wyboru witryn w nagłówku strony witryny.](./media/ecommerce-sitepicker.PNG)
 

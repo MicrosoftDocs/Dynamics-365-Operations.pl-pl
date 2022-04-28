@@ -2,19 +2,19 @@
 title: Rozwiązywanie problemów z podwójnym zapisem w aplikacjach Finanse i Działania
 description: Ten temat zawiera informacje dotyczące rozwiązywania problemów, które mogą pomóc w rozwiązaniu problemów związanych z modułem podwójnego zapisu w aplikacjach Finanse i Działania.
 author: RamaKrishnamoorthy
-ms.date: 08/10/2021
+ms.date: 04/12/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: db49c6a4555f39800362a5b248f9757b07ee5481
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 58b20e38269922203b54173509e31c5e6f30c25b
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061817"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565974"
 ---
 # <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Rozwiązywanie problemów z podwójnym zapisem w aplikacjach Finanse i Działania
 
@@ -70,6 +70,21 @@ Podczas próby zatrzymania mapowania tabeli może pojawić się następujący ko
 Ten błąd występuje, gdy połączone środowisko Dataverse jest niedostępne.
 
 Aby rozwiązać ten problem, utwórz bilet dla zespołu integracji danych. Dołącz śledzenie sieci, aby zespół integracji danych mógł oznaczyć mapy jako **Nie uruchomione** na zapleczu.
+
+## <a name="enable-parallel-processing-in-finance-and-operations-apps-to-improve-performance"></a>Umożliwienie przetwarzania równoległego w aplikacjach finansowych i operacyjnych w celu zwiększenia wydajności
+
+Włączenie przetwarzania równoległego może skrócić czas potrzebny na zaimportowanie danych z aplikacji finansowych i operacyjnych do aplikacji angażujących klientów i Microsoft Dataverse. 
+
+Aby włączyć przetwarzanie równoległe w aplikacjach finansowych i operacyjnych, należy wykonać następujące czynności.
+
+1. Zaloguj się do swojego środowiska finansów i operacji.
+2. Kliknij kolejno **Zarządzanie danymi > Ustawienia ramowe**.
+3. Wybierz **pozycję Ustawienia jednostki** i wybierz **opcję Konfiguruj parametry wykonywania jednostki**.
+4. Dodaj parametry przetwarzania równoległego:
+    - **Liczba rekordów progu importu** — liczba rekordów, które muszą zostać spełnione, zanim będzie włączone przetwarzanie równoległe.
+    - **Liczba zadań importu** — liczba wątków (zadań) uruchamianych równolegle.
+5. Wybierz opcję **Zapisz**.
+
 
 ## <a name="errors-while-trying-to-start-a-table-mapping"></a>Błędy podczas próby uruchomienia mapowania tabeli
 

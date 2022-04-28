@@ -4,7 +4,8 @@ description: Ten temat zawiera informacje i łącza do zasobów o wdrożeniach l
 author: sericks007
 ms.date: 07/01/2021
 ms.topic: article
-ms.prod: ''
+ms.prod: dynamics-365
+ms.service: ''
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -16,24 +17,24 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 93ed4e81db18cd02c097ff188003569e7bb391c511fd93fcab0961c14029dc96
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b57183a0c06f4735757c3c0c8d9e355879585e7a
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712575"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8566047"
 ---
-# <a name="on-premises-deployment-home-page"></a>Wdrożenie lokalne — strona główna
+# <a name="on-premises-deployment-home-page"></a>Wdrożenie lokalne – strona główna
 
 [!include [banner](../includes/banner.md)]
 
-Można wdrożyć Dynamics 365 Finance + Operations (lokalnie). Po wybraniu typu wdrożenia lokalnego wymagania systemowe, zapotrzebowanie na sprzęt i funkcje różnią się w stosunku do wdrożenia w chmurze. Ten temat zawiera łącza do zasobów z informacjami specyficznymi dla wdrożeń lokalnych.
+Można wdrożyć Dynamics 365 Finance + Operations (on-premises). Po wybraniu typu wdrożenia lokalnego wymagania systemowe, zapotrzebowanie na sprzęt i funkcje różnią się w stosunku do wdrożenia w chmurze. Ten temat zawiera łącza do zasobów z informacjami specyficznymi dla wdrożeń lokalnych.
 
 ## <a name="get-started"></a>Wprowadzenie
 - [Omówienie wdrażania lokalnego](on-premises-overview.md)
 - [Planowanie i przygotowywanie się na lokalne wdrożenia](plan-onprem-deployment.md)
 - [Wymagania systemowe dotyczące wdrożeń lokalnych](../../fin-ops/get-started/system-requirements-on-prem.md)
-- [Oprogramowanie obsługiwane przez Microsoft Dynamics 365 Finance + Operations (on-premises)](onprem-compatibility.md)
+- [Obsługiwane oprogramowanie usługi Microsoft Dynamics 365 Finance + Operations (on-premises)](onprem-compatibility.md)
 - [Wymagania dotyczące szacowania zapotrzebowania na sprzęt dla środowisk lokalnych](../../fin-ops/get-started/hardware-sizing-on-premises-environments.md)
 - [Zakup rozwiązania Finance + Operations (on-premises)](../../fin-ops/get-started/purchase-on-premises.md)
 - [Porównanie funkcji w chmurze i lokalnych](../../fin-ops/get-started/cloud-prem-comparison.md)
@@ -51,8 +52,8 @@ Można wdrożyć Dynamics 365 Finance + Operations (lokalnie). Po wybraniu typu 
 - [Konfigurowanie zarządzania dokumentami](../../fin-ops/organization-administration/configure-document-management.md)
 - [Importowanie konfiguracji raportowania elektronicznego (ER)](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Generowanie, publikowanie i drukowanie dokumentów we wdrożeniach lokalnych](../analytics/printing-capabilities-on-premises.md)
-- [Konfigurowanie serwerów proxy dla środowisk lokalnych](onprem-reverseproxy.md)
-- [Konfigurowanie pomocy technicznej dla aplikacji Finance and Operations](../lifecycle-services/support-experience.md)
+- [Konfigurowanie zwrotnych serwerów proxy dla środowisk lokalnych](onprem-reverseproxy.md)
+- [Konfigurowanie pomocy technicznej dotyczącej rozwiązania aplikacji Finance and Operations](../lifecycle-services/support-experience.md)
 - [Łączność internetowa klienta](../user-interface/client-disconnected.md)
 - [Stosowanie aktualizacji do wdrożeń lokalnych](apply-updates-on-premises.md)
 - [Ponowne wdrażanie środowisk lokalnych](redeploy-on-prem.md)
@@ -72,7 +73,7 @@ Można wdrożyć Dynamics 365 Finance + Operations (lokalnie). Po wybraniu typu 
 - [Skrypty służące do rozwiązywania problemów w środowiskach lokalnych](onprem-tsg-implementations.md)
 - [Wymiana certyfikatów](certificate-rotation-on-prem.md)
 - [Diagnostyka we wdrożeniach lokalnych](on-premises-diagnostics.md)
-- [Usunięte lub wycofane funkcje Finance and Operations](../migration-upgrade/deprecated-features.md)
+- [Usuwanie lub przestarzałe funkcje w Finance and Operations](../migration-upgrade/deprecated-features.md)
 - [Zasady dotyczące cyklu życia oprogramowania i wydania wersji lokalnych](../migration-upgrade/on-prem-version-update-policy.md)
  
 

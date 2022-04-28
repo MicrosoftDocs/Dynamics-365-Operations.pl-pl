@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e1db676024f5ec0f254500bd2ceee85ab2150502
-ms.sourcegitcommit: 777f9581dccc0f963c6a04c95b85e00e68573db5
+ms.openlocfilehash: fcdb5a934818468e00be960f9afe541966e5eabf
+ms.sourcegitcommit: e8a2a1e34fa48a42afac9724828f4ec72b6d7085
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8527321"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8573658"
 ---
 # <a name="get-started-with-financial-reporting"></a>Rozpoczynanie pracy z raportowaniem finansowym 
 
@@ -138,7 +138,7 @@ Po wybraniu menu **Raportowanie finansowe** jest wyświetlana lista domyślnych 
 
 ## <a name="creating-and-modifying-financial-reports"></a>Tworzenie i modyfikowanie raportów finansowych
 
-Z listy raportów finansowych można utworzyć nowy raport lub zmodyfikować istniejący raport. Jeśli masz odpowiednie uprawnienia, możesz utworzyć nowy raport finansowy, wybierając przycisk **Nowy** w okienku akcji. Projektant raportów zostanie pobrany na Twoje urządzenie i uruchomiony. Po uruchomieniu projektanta raportów można utworzyć nowy raport. Po zapisaniu nowego raportu będzie on widoczny na liście raportów finansowych. Na liście są wyświetlane tylko raporty, które zostały utworzone dla firmy używanej w Dynamics 365 Finance. 
+Z listy raportów finansowych można utworzyć nowy raport lub zmodyfikować istniejący raport. Jeśli masz odpowiednie uprawnienia, możesz utworzyć nowy raport finansowy, wybierając przycisk **Nowy** w okienku akcji. Projektant raportów zostanie pobrany na Twoje urządzenie i uruchomiony. Po uruchomieniu projektanta raportów można utworzyć nowy raport. Po zapisaniu nowego raportu będzie on widoczny na liście raportów finansowych. Na liście są wyświetlane tylko raporty, które zostały utworzone dla firmy używanej w programie Dynamics 365 Finance. 
 
 ## <a name="reporting-tree-definitions"></a>Definicje drzew raportowania
 
@@ -150,7 +150,7 @@ Można utworzyć dowolną liczbę drzew raportowania, aby wyświetlić dane firm
 
 Aplikacje Finanse i Operacje są aktualizowane co miesiąc. Jednak Financial Reporting niekoniecznie jest aktualizowana w tym tempie. Ponadto klienci mają więcej opcji dotyczących implementowania aktualizacji aplikacji Finanse i Operacje. Aktualizacje Financial Reporting są instalowane automatycznie. Financial Reporting ma wyznaczoną wersję, która jest zużywana w środowisku klienta podczas implementowania aktualizacji usługi, rozpoczynania przestoju lub działania środowiska klienta w trybie konserwacji. Ten proces jest nazywany *slipstreaming* lub *true-up*, ponieważ wszystkie implementacje klientów mają tę samą wersję Financial Reporting.
 
-Zmiany, które są wydane w każdej wersji, można znaleźć w poszczególnych [Nowości i zmiany w aplikacjach Dynamics 365 Finance](../../finance/get-started/whats-new-home-page.md). Aktualizacje platformy i poprawki błędów można znaleźć w sekcji „Zasoby dodatkowe” na dole strony dla każdego wydania.
+Zmiany, które są wydane w każdej wersji, można znaleźć w poszczególnych [Nowości i zmiany w Dynamics 365 Finance](../../finance/get-started/whats-new-home-page.md). Aktualizacje platformy i poprawki błędów można znaleźć w sekcji „Zasoby dodatkowe” na dole strony dla każdego wydania.
 
 Wybrana wersja dokumentów dostawy jest przeglądaną i zweryfikowaną wersją Financial Reporting gotowego do produkcji. Jest on zgodny z poprzednią lub przyszłą wersją Dynamics 365 Finance. Na przykład Financial Reporting mogą być dostępne w najnowszej wersji 10.0.19, podczas gdy odbiorca nadal jest w wersji aplikacji 10.0.16.
 
@@ -212,7 +212,7 @@ Oto kilka kroków, które można wykonać, aby rozmowa z pomocą techniczną fir
 Poniższe kroki obejmują proces włączania komunikatów podglądu zdarzeń w Financial reporting. Dzienniki generowane przez Przeglądarkę zdarzeń pomogą inżynierom pomocy technicznej w szybkim zidentyfikowaniu źródła problemu z połączeniem. Przesyłanie kopii tych dzienników wraz z biletem podczas kontaktowania się z pomocą techniczną.
 
 
-1. Skopiuj plik RegisterETW.zip na stację roboczą klienta (najlepiej na pulpicie) i [wyodrębnij plik RegisterETW.zip](https://dev.azure.com/msdyneng/e6f12261-a46a-4af1-ac0c-e22bc2c5a478/_apis/git/repositories/ff923027-67f0-43fb-b63c-6d6b6423840f/Items?path=%2F.attachments%2FRegisterETW-c1a35291-6aa6-4462-a2bc-4ba117fd5f8e.zip&download=false&resolveLfs=true&%24format=octetStream&api-version=5.0-preview.1&sanitize=true&versionDescriptor.version=wikiMaster).
+1. Skopiuj plik RegisterETW.zip na stację roboczą klienta (najlepiej na pulpicie) i [wyodrębnij plik RegisterETW.zip](https://mbs2.microsoft.com/fileexchange/?fileID=60b1106b-d5f8-4e0f-8041-039102505122).
 2. Upewnij się, że przeglądarka zdarzeń systemu Windows jest zamknięta.
 3. Otwórz okno poleceń administratora PowerShell i przejdź do katalogu, w którym znajduje się plik RegisterETW.ps1.
 4. Uruchom następujące polecenie: .\RegisterETW.ps1

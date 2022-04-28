@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 83d19f92984c9f67242946aa8faf445d9d2bd881
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 876f5a5f8ebf77a65ba3aa6271a2957b7dc2cb96
+ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920207"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8570486"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10023-january-2022"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management w wersji 10.0.23 (styczeń 2022 r.)
 
@@ -57,7 +57,7 @@ Jeśli chcesz włączyć lub wyłączyć którąkolwiek z tych funkcji, musisz t
 | Zaopatrzenie i sourcing | Wyczyść historię aktualizacji zamówień zakupu | Ta funkcja pozwala na wyczyszczenie tymczasowych zapisów historycznych związanych z aktualizacjami zamówień zakupu. Dodaje nowy przycisk o nazwie **Wyczyść historię aktualizacji zakupu** do panelu akcji na stronie **Wszystkie zamówienia zakupu**. Ten funkcjonalność jest włączona domyślnie. |
 | Kontrola produkcji | (Wersja zapoznawcza) Automatyczne pobieranie materiałów z obsługą magazynu dla automatycznie księgowanych list pobrania | Funkcja ta pozwala na automatyczne wybieranie i rozwiązywanie wymiarów inwentaryzacji dla automatycznie wysyłanych, pochodnych i wstecznie przepłukiwanych dzienników listy kompletacji. |
 | Kontrola produkcji | Weryfikacja ważności surowców w stosunku do planowanej daty zużycia | Ta funkcja zmienia sposób walidacji dat ważności partii podczas rezerwowania partii surowca do wykorzystania podczas produkcji. Gdy ta funkcja jest włączona, data ważności partii jest sprawdzana względem planowanej daty zużycia (daty surowca), ustalonej w linii BOM produkcji lub linii formuły zamówienia partii. Gdy ta funkcja jest wyłączona, data ważności partii jest weryfikowana względem planowanej daty dostawy zlecenia produkcyjnego lub partyjnego (jak poprzednio). |
-| Sprzedaż i marketing | Oczyszczanie historii aktualizacji sprzedaży na podstawie wieku | Ta funkcja umożliwia ustawienie maksymalnego wieku rekordów, które mają być zachować podczas uruchamiania zadania okresowego **czyszczenia historii aktualizacji sprzedaży**. Starsze rekordy zostaną usunięte. Jest to przydatne w przypadku okresowego uruchamiania zadania, ponieważ wiek jest zawsze obliczany w odniesieniu do daty uruchomienia zadania. Bez tej funkcji można ustawić tylko określoną datę dla najstarszych rekordów do zachowania. |
+| Sprzedaż i marketing | Oczyszczanie historii aktualizacji sprzedaży na podstawie wieku | Ta funkcja umożliwia ustawienie maksymalnego wieku rekordów, które mają być zachować podczas uruchamiania zadania okresowego **czyszczenia historii aktualizacji sprzedaży**. Starsze rekordy zostaną usunięte. Jest to przydatne w przypadku okresowego uruchamiania zadania, ponieważ wiek jest zawsze obliczany w odniesieniu do daty uruchomienia zadania. Bez tej funkcji można ustawić tylko określoną datę dla najstarszych rekordów do zachowania. Aby uzyskać więcej informacji, zobacz [Zaplanuj czyszczenie danych historii sprzedaży](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
 | Sprzedaż i marketing | Popraw wydajność raportu „100 najlepszych” odbiorców | Ta funkcja poprawia wydajność raportu **Top 100** klientów poprzez uruchamianie raportu zawsze dla wszystkich klientów (co jest jego przeznaczeniem), a nie poprzez umożliwienie zapytań niestandardowych. Gdy ta funkcja jest włączona, wszystkie ustawienia **Rekordy powinny zawierać** są wyłączone w oknie dialogowym raportu **Top 100**. |
 | Zarządzanie magazynem | Obsługa jednostki skalowania do zwalniania do magazynu zamówień wychodzących | Gdy ta funkcja jest włączona, zamówienia wychodzące mogą być zwalniane z hubu bezpośrednio do jednostki wagowej, gdzie będą realizowane. |
 
@@ -79,9 +79,9 @@ Niedawno dodano lub znacząco zaktualizowano następujące tematy pomocy. Te tem
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizacja platformy dla aplikacji Finance and Operations
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizacja Platform dla aplikacji Finanse i Działania
 
-Pakiet Microsoft Dynamics 365 Supply Chain Management 10.0.23 zawiera aktualizację platformy. Aby dowiedzieć się więcej, zobacz [aktualizacje platformy dla wersji 10.0.23 aplikacji Finance and Operations (listopad 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md).
+Pakiet Microsoft Dynamics 365 Supply Chain Management 10.0.23 zawiera aktualizację platformy. Aby dowiedzieć się więcej, zobacz [aktualizacje platformy dla wersji 10.0.23 aplikacji Finanse i Operacje (listopad 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md).
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 

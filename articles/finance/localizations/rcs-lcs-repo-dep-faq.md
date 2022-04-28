@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.19
-ms.openlocfilehash: 68f1ed6a6d6bb0d15a81539da7f483ad71a4d696
-ms.sourcegitcommit: 477efa4cb138f41d4f68bcd82552af3473bcc3d9
+ms.openlocfilehash: 8862f42f3ceaed7e1413c49cf9b91f0449fab67b
+ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2021
-ms.locfileid: "7715237"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8547990"
 ---
 # <a name="regulatory-configuration-service-rcs--lifecycle-services-lcs-storage-deprecation"></a>Regulatory Configuration Service (RCS) — deprekacja pamięci w Lifecycle Services (LCS)
 
@@ -29,8 +29,8 @@ ms.locfileid: "7715237"
 Zrezygnowano z używania Microsoft Dynamics Lifecycle Services (LCS) jako repozytorium do przechowywania konfiguracji raportowania elektronicznego (ER). To wycofanie wymaga następujących zmian:
 
 - Wyprodukowane przez firmę Microsoft konfiguracje używane w Microsoft Dynamics 365 nie będą już publikowane w bibliotece udostępnionych zasobów w LCS. Zamiast tego, będą one publikowane tylko poprzez globalne repozytorium RCS. Jednakże, konfiguracje dla Dynamics AX 2012 będą nadal publikowane do biblioteki aktywów wspólnych w LCS aż do zakończenia cyklu wsparcia dla AX 2012.
-- Funkcja, która umożliwia przekazywanie konfiguracji do biblioteki aktywówprojektu w LCS z aplikacji Finance and Operations oraz z usługi RCS, zostanie dezaktywowana. Jednakże, nadal będziesz mógł używać przeglądarki w LCS do wgrywania konfiguracji do biblioteki zasobów projektu. W związku z tym, nadal będziesz mógł dodawać konfiguracje do LCS, aby mogły być one zawarte w pakietach rozwiązań.
-- Import konfiguracji z LCS będzie nadal dostępny i wspierany w aplikacjach Finance and Operations oraz w RCS, przez pewien czas. Jednakże, funkcjonalność ta zostanie w końcu wycofana. (Dokładna data wycofania zostanie ogłoszona później).
+- Funkcja umożliwiająca przesyłanie konfiguracji do biblioteki zasobów projektu w LCS z aplikacji finansowych i operacyjnych oraz z RCS zostanie dezaktywowana. Jednakże, nadal będziesz mógł używać przeglądarki w LCS do wgrywania konfiguracji do biblioteki zasobów projektu. W związku z tym, nadal będziesz mógł dodawać konfiguracje do LCS, aby mogły być one zawarte w pakietach rozwiązań.
+- Import konfiguracji z systemu LCS będzie nadal dostępny i obsługiwany w aplikacjach finansowych i operacyjnych oraz w RCS przez pewien czas. Jednakże, funkcjonalność ta zostanie w końcu wycofana. (Dokładna data wycofania zostanie ogłoszona później).
 
 ## <a name="deprecation-notice"></a>Powiadomienie o wycofaniu
 
@@ -52,7 +52,7 @@ Zaimportuj wszystkie wymagane konfiguracje z LCS do RCS, a następnie opublikuj 
 
 1. Jeśli instancja RCS nie jest jeszcze dostępna, skonfiguruj ją. Aby uzyskać więcej informacji, zobacz [omówienie RCS](rcs-overview.md).
 2. W udostępnionej instancji RCS, dla każdego projektu LCS w bibliotece aktywów, który zawiera pochodne konfiguracje ER, zarejestruj odpowiednie repozytorium LCS.
-3. Zaimportuj konfiguracje ER z repozytoriów LCS do RCS. Aby uzyskać więcej informacji, zobacz temat [Importowanie konfiguracji z usług LCS](../../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md).
+3. Zaimportuj konfiguracje ER z repozytoriów LCS do RCS. Aby uzyskać więcej informacji, zobacz temat [Importowanie konfiguracji z usług LCS](/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services).
 4. Jeśli globalne repozytorium nie zostało automatycznie dostarczone, zarejestruj je w RCS.
 5. Prześlij wszystkie pochodne konfiguracje z bieżącej instancji RCS do globalnego repozytorium. Użyj funkcji **Pakiety konfiguracji**, aby pomóc w przekazywaniu. Aby uzyskać więcej informacji, zobacz [Przesyłanie do globalnego repozytorium RCS](rcs-global-repo-upload.md).
 
@@ -73,7 +73,7 @@ Użyj repozytorium globalnego do następujących celów:
 
 ### <a name="does-this-change-mean-that-lcs-cant-be-used-as-central-storage-for-configurations"></a>Czy ta zmiana oznacza, że LCS nie może być używany jako centralny magazyn dla konfiguracji?
 
-Tak. Funkcja, która umożliwia przekazywanie konfiguracji do biblioteki aktywów projektu w LCS z aplikacji Finance and Operations oraz z usługi RCS, zostanie wycofana. Jednakże, nadal będziesz mógł używać przeglądarki w LCS do wgrywania konfiguracji do biblioteki zasobów projektu.
+Tak. Funkcja umożliwiająca przesyłanie konfiguracji do biblioteki zasobów projektu w LCS z aplikacji finansowych i operacyjnych zostanie wycofana. Jednakże, nadal będziesz mógł używać przeglądarki w LCS do wgrywania konfiguracji do biblioteki zasobów projektu.
 
 ### <a name="i-thought-that-rcs-was-a-replacement-repository-for-importing-global-template-files-i-didnt-think-that-its-used-to-store-configurations-which-is-correct"></a>Myślałem, że RCS to zastępcze repozytorium do importowania globalnych plików szablonów. Nie sądziłem, że jest on używany do przechowywania konfiguracji. Co tu jest poprawne?
 
@@ -81,7 +81,7 @@ RCS to usługa projektowa służąca do tworzenia i edycji konfiguracji ER. RCS 
 
 ### <a name="without-lcs-what-is-the-suggested-way-to-store-configurations-so-that-test-and-production-configurations-can-easily-be-managed-and-transferred"></a>Bez LCS, jaki jest sugerowany sposób przechowywania konfiguracji tak, aby konfiguracje „testowe” i „produkcyjne” mogły być łatwo zarządzane i przenoszone?
 
-System RCS używa koncepcji *połączonej aplikacji*. Połączona aplikacja tworzy połączenie między RCS i dowolnym wystąpieniem aplikacji Finance and Operations. Ponieważ za pomocą usługi RCS można edytować konfiguracje, połączona aplikacja może służyć do wypychania konfiguracji bezpośrednio od konstruktora do środowisk aplikacji Finance and Operations. Dzięki temu można szybko zmieniać i testować konfiguracje, a nie korzystać z magazynu na poziomie projektu usługi LCS.
+System RCS używa koncepcji *połączonej aplikacji*. Połączona aplikacja tworzy połączenie między RCS a dowolną instancją aplikacji finansowych i operacyjnych. Ponieważ do edycji konfiguracji można wykorzystać RCS, połączoną aplikację można wykorzystać do przesyłania konfiguracji bezpośrednio z projektanta do środowisk aplikacji finansowych i operacyjnych. Dzięki temu można szybko zmieniać i testować konfiguracje, a nie korzystać z magazynu na poziomie projektu usługi LCS.
 
 ### <a name="are-there-any-examples-that-show-the-setup-and-management"></a>Czy są jakieś przykłady, które pokazują konfigurację i zarządzanie?
 
@@ -104,4 +104,4 @@ Aby uzyskać więcej informacji o pomocy technicznej dotyczącej produktów, zob
 
 ### <a name="whats-the-cost-of-using-rcs"></a>Jaki jest koszt używania usługi RCS?
 
-RCS i repozytorium globalizacji są udostępniane bez opłat w ramach istniejących licencji aplikacji Finance and Operations. Nie są skojarzone osobne koszty z użyciem usługi projektowania RCS lub przechowywaniem konfiguracji w repozytorium globalnym. Obecnie nie ma limitu liczby konfiguracji lub połączonych aplikacji.
+RCS i repozytorium Globalizacja są udostępniane bezpłatnie w ramach istniejących licencji na aplikacje finansowe i operacyjne. Nie są skojarzone osobne koszty z użyciem usługi projektowania RCS lub przechowywaniem konfiguracji w repozytorium globalnym. Obecnie nie ma limitu liczby konfiguracji lub połączonych aplikacji.

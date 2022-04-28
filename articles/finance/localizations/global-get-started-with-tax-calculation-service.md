@@ -2,7 +2,7 @@
 title: Rozpoczynanie pracy z obliczaniem podatku
 description: W tym temacie wyjaśniono, jak skonfigurować obliczanie podatku.
 author: wangchen
-ms.date: 01/05/2022
+ms.date: 03/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ae2c20fe79c2f8fd8d102740441230ae443f16a3
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 61ee15901a091ee733b83c8cbaa5b84801fa8e5d
+ms.sourcegitcommit: 4afd1e0b325d27cd7c4e0d9a198400b038262ac7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952528"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "8558321"
 ---
 # <a name="get-started-with-tax-calculation"></a>Rozpoczynanie pracy z obliczaniem podatku
 
@@ -36,7 +36,7 @@ Ta konfiguracja składa się z następujących trzech kroków.
 
 ## <a name="high-level-design"></a>Projektowanie na wysokim poziomie
 
-### <a name="runtime-design"></a>Projektowanie w czasie rzeczywistym
+### <a name="runtime-design"></a><a name="runtime"></a> Projektowanie w czasie rzeczywistym
 
 Poniższa ilustracja pokazuje wysokopoziomowy projekt uruchamiania Obliczania podatków. Ponieważ Obliczanie podatku może być zintegrowane z wieloma aplikacjami Dynamics 365, na ilustracji wykorzystano integrację z aplikacją Finance jako przykład.
 
@@ -95,6 +95,14 @@ Zanim będziesz mógł wykonać pozostałe procedury w tym temacie, muszą być 
 - Następujące funkcje muszą być włączone w obszarze roboczym **Zarządzanie funkcjami** w wdrożonym środowisku RCS.
 
     - Funkcje globalizacji
+
+- Następujące role powinny zostać przypisane zgodnie z potrzebą do użytkowników w środowisku z serwera RCS:
+
+    - Deweloper raportowania elektronicznego
+    - Deweloper funkcji globalizacji
+    - Deweloper aparatu podatków
+    - Konsultant funkcjonalny aparatu podatków
+    - Deweloper usługi podatkowej
 
 ## <a name="set-up-tax-calculation-in-lcs"></a>Skonfiguruj obliczanie podatku w LCS
 
@@ -203,15 +211,21 @@ Kroki w tej sekcji nie są powiązane z określoną firmą. Tę procedurę nale�
     | Sprzedaż            | DEU       | FRA     | DEU_EU       |
     | Sprzedaż            | BEL       | BEL     | BEL_Domestic |
     | Sprzedaż            | BEL       | FRA     | BEL_EU       |
+    
+    > [!NOTE]
+    > Jeśli domyślna grupa podatków w wierszach dokumentów podlegających opodatkowaniu jest poprawna, pozostaw macierz pustą. Więcej informacji znajduje się w dalszej sekcji [Projektowanie w czasie rzeczywistym](#runtime) w tym temacie.
 
 22. Na karcie **Zastosowanie grupy podatków dla pozycji** zaznacz kolumny wymagane do ustalenia poprawnej grupy podatków dla pozycji, a następnie wybierz opcję **Dodaj**. Wprowadź lub wybierz wartości dla każdej kolumny. Pole **Grupa podatków dla pozycji** będzie wynikiem tej matrycy. Jeśli ta karta nie jest skonfigurowana, zostanie użyta grupa podatków dla pozycji z wiersza transakcji.
 
     Oto przykład.
 
-    | Kod pozycji | Grupa podatków dla pozycji |
+    | Kod pozycji | Grupa podatków pozycji |
     | --------- | -------------- |
     | D0001     | Pełny           |
     | D0003     | Zredukowane        |
+
+    > [!NOTE]
+    > Jeśli domyślna grupa podatków pozycji w wierszach dokumentów podlegających opodatkowaniu jest poprawna, pozostaw macierz pustą. Więcej informacji znajduje się w dalszej sekcji [Projektowanie w czasie rzeczywistym](#runtime) w tym temacie.
 
     Aby uzyskać więcej informacji na temat określania kodów podatków w obliczaniu podatku, zobacz temat [Logika określania grupy podatków i grupy podatków dla pozycji](global-sales-tax-group-determination.md).
 

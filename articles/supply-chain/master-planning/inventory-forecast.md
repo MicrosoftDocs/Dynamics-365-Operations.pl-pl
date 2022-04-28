@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: abc827139c71f7942335cd2b7e2c7502f7fc1cfe
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 1446928c2f5fe606d1d0732764a2a4460643afcf
+ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469402"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8548175"
 ---
 # <a name="inventory-forecasts"></a>Prognoza zapasów
 
@@ -39,7 +39,7 @@ Istnieją również inne sposoby tworzenia wierszy prognozy:
 - [Generowanie bazowej prognozy statystycznej](generate-statistical-baseline-forecast.md).
 - [Importowanie danych historycznych na potrzeby prognozowania popytu](import-historical-data.md).
 - [Generowanie prognozy za pomocą usługi sieciowej Microsoft Azure Machine Learning](demand-forecasting-setup.md).
-- [Importowanie wierszy prognoz popytu lub dostaw przy użyciu struktury zarządzania danymi (encje ForecastDemandForecastEntryStaging i ForecastSupplyForecastEntryStaging)](../../dev-itpro/data-entities/data-entities-data-packages.md).
+- [Importowanie wierszy prognoz popytu lub dostaw przy użyciu struktury zarządzania danymi (encje ForecastDemandForecastEntryStaging i ForecastSupplyForecastEntryStaging)](/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages).
 
 Jak pokazuje tabela w kroku 1, istnieją różne sposoby dostępu do stron, które są używane.
 

@@ -2,7 +2,7 @@
 title: Moduł płatności
 description: W tym temacie omówiono moduł płatności i wyjaśniono, jak go skonfigurować w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 01/07/2022
+ms.date: 04/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: de92e137815cb79944a2793fc4841c949ed43346
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: ba95386143ca830aeb1b50b31b4bbd2b54f53a40
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952476"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565736"
 ---
 # <a name="payment-module"></a>Moduł płatności
 
@@ -74,6 +74,8 @@ Poniższa ilustracja przedstawia przykład elementu iframe PayPal wywołanego za
 | Zastąpienie stylu płatności | Kod arkuszy stylów kaskadowych (CSS) | Ponieważ moduł płatności jest obsługiwany w iframe, istnieje ograniczona możliwość tworzenia stylów. Aby uzyskać więcej stylów, należy użyć tej właściwości. Aby zastąpić style witryny, musisz wkleić kod CSS jako wartość tej właściwości. Zastąpienia i style konstruktora witryn CSS nie mają zastosowania do tego modułu. |
 |Obsługiwane typy metod płatności| Ciąg| Jeśli skonfigurowano wiele łączników płatności, należy podać ciąg obsługiwanego typu oferty zgodnie z definicją w konfiguracji łącznika płatności w siedzibie firmy Commerce (patrz poniższy obraz). Jeśli pole jest puste, domyślnie jest używany łącznik płatności Adyen. Dodane do modułu Commerce Release 10.0.14.|
 |Jest płatnością główną|  **Prawda** lub **Fałsz** | Jeśli **Prawda**, wszelkie komunikaty o błędach będą generowane na podstawie podstawowego łącznika płatności na stronie realizacja transakcji. Jeśli są skonfigurowane zarówno Adyen, jak i łączniki płatności PayPal, należy określić wartość **Prawda** dla Adyen , która została dodana do modułu Commerce w wydaniu 10.0.14.|
+|Użyj identyfikatora łącznika| **Prawda** lub **Fałsz** | Użyj tej właściwości, jeśli dla witryny skonfigurowano wiele łączników płatności. Jeśli **wartość True**, łączniki muszą używać identyfikatora łącznika dla korelacji płatności.|
+|Użyj kodu języka zestawu przeglądarki dla iFrame|  **Prawda** lub **Fałsz** | (Tylko dla Adyen) Jeśli **True**, ramka Adyen iFrame będzie renderować język na podstawie kontekstu przeglądarki użytkownika witryny, zamiast używać kodu języka kanału Commerce skonfigurowanego dla witryny. Dodane do modułu Commerce Release 10.0.27.|
 
 Na poniższej ilustracji pokazano przykład wartości **Obsługiwane typy płatności** ustawionej na „PayPal” w konfiguracji łącznika płatności w centrali Commerce.
 ![Przykład obsługiwanych typów metod płatności w centrali Commerce.](./media/ecommerce-paymenttendertypes.png)

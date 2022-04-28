@@ -2,19 +2,19 @@
 title: Rozwiązywanie ogólnych problemów
 description: Ten temat zawiera ogólne informacje dotyczące rozwiązywania problemów dotyczących integracji podwójnego zapisu między aplikacjami Finanse i Działania i Dataverse.
 author: RamaKrishnamoorthy
-ms.date: 03/16/2020
+ms.date: 04/07/2020
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: f6f5b9f26990e2f4db9bf69040a6c4be31400b40
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 8b5951f9f40179ca0bf31f5cccf1f05a0f968213
+ms.sourcegitcommit: 1843235766b6f8cf950a13a310e9f4f2f53c59a4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062345"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8554607"
 ---
 # <a name="general-troubleshooting"></a>Rozwiązywanie ogólnych problemów
 
@@ -29,20 +29,31 @@ Ten temat zawiera ogólne informacje dotyczące rozwiązywania problemów dotycz
 
 ## <a name="enable-and-view-the-plug-in-trace-log-in-dataverse-to-view-error-details"></a><a id="enable-view-trace"></a>Umożliwia włączenie i wyświetlenie logowania śledzenia wtyczki w Dataverse w celu wyświetlenia szczegółów błędu
 
+Dzienniki śledzenia mogą być przydatne przy rozwiązywaniu problemów związanych z synchronizacją na żywo między funkcjami Finanse & Operations i Dataverse. Dzienniki mogą dostarczać konkretnych szczegółów zespołom, które zapewniają pomoc techniczną i inżynieryjną w systemie Dynamics 365. W tym artykule opisano sposób włączania dzienników śledzenia i sposobu ich wyświetlania. Dzienniki śledzenia są zarządzane na stronie Ustawienia usługi Dynamics 365 i wymagają uprawnień na poziomie administratora, aby je zmieniać i wyświetlać. 
+
 **Wymagana rola do włączenia dziennika śledzenia i wyświetlenia błędów:** administrator systemu
 
+### <a name="turn-on-the-trace-log"></a>Włączanie dziennika śledzenia
 Aby włączyć śledzenie, należy wykonać następujące kroki.
 
-1. Zaloguj się do aplikacji angażującej klienta , otwórz stronę **Ustawień**, a następnie w obszarze **System** wybierz opcję **Administracja**.
-2. Na stronie **Administracja** wybierz opcję **Konfiguracja systemu**.
-3. Na karcie **Dostosowywanie**, w kolumnie **Wtyczki i niestandardowe śledzenie działania przepływu pracy** zaznacz opcję **Wszystkie**, aby włączyć dziennik śledzenia wtyczek. Jeśli chcesz rejestrować dzienniki śledzenia tylko w przypadku wystąpienia wyjątków, możesz zamiast tego wybrać **Wyjątek**.
+1.  Zaloguj się do systemu Dynamics 365, a następnie wybierz **Ustawienia** w górnym pasku nawigacji. Na stronie Systemy kliknij przycisk **Administracja**.
+2.  Na stronie Administracja wybierz opcję **Konfiguracja systemu**.
+3.  Wybierz kartę **Dostosowywanie** i wtyczkę, a następnie w sekcji Śledzenie aktywności niestandardowego przepływu pracy zmień opcję rozwijaną na **Wszystko**. Pozwala to śledzić wszystkie działania i dostarczać pełny zestaw danych zespołom, które muszą przeglądać potencjalne problemy.
 
+> [!NOTE]
+> Ustawienie opcji na liście rozwijanej **Wyjątek** zapewnia informacje śledzenia tylko w przypadku wystąpienia wyjątków (błędów).
 
+Po włączeniu dzienniki śledzenia dodatku będą zbierane aż do ich ręcznego wyłączenia przez powrót do tej lokalizacji i wybranie **opcji Wyłączone**.
+
+### <a name="view-the-trace-log"></a>Wyświetlanie dziennika śledzenia
 Aby zobaczyć dziennik śledzenia, należy wykonać następujące kroki.
 
-1. Zaloguj się do aplikacji angażującej klienta, otwórz stronę **Ustawień**, a następnie w obszarze **Dostosowywanie** wybierz opcję **Dziennik śledzenia wtyczek**.
-2. Znajdź dzienniki śledzenia, w których w kolumnie **Nazwa typu** jest ustawiona wartość **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
-3. Kliknij dwukrotnie towar, aby wyświetlić pełny dziennik, a następnie w skróconej karcie **Wykonania** przejrzyj tekst **Bloku wiadomości**.
+1. Na stronie Ustawienia systemu Dynamics 365, a następnie wybierz **Ustawienia** w górnym pasku nawigacji. 
+2. Wybierz **pozycję Dziennik śledzenia** dodatku plug-in w sekcji **Dostosowania** strony.
+3. Wpisy znajdują się na liście dzienników śledzenia na podstawie typu Nazwa lub Nazwa komunikatu.
+4. Otwórz żądany wpis, aby wyświetlić pełny dziennik. Sekcja Blokada komunikatów w sekcji Wykonanie będzie zawierała dostępne informacje dotyczące dodatku. Jeśli jest dostępna, zostaną również podane szczegóły wyjątków. 
+
+Można skopiować zawartość dzienników śledzenia i wkleić je do innej aplikacji, np. notatnika lub innego narzędzia, aby przejrzeć dzienniki lub pliki tekstowe, aby łatwiej wyświetlić całą zawartość. 
 
 ## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Włącz tryb debugowania w celu rozwiązywania problemów z synchronizacją na żywo w aplikacjach Finanse i Działania
 
@@ -69,6 +80,34 @@ Błędy podwójnego zapisywania, które pochodzą z Dataverse, mogą pojawić si
 5. Otwórz Podgląd zdarzeń.
 6. Wybierz do **Dzienniki aplikacji i usług \> Microsoft \> Dynamics \> AX-DualWriteSync \> Operacyjny**.
 7. Przejrzyj listę ostatnio używanych błędów.
+
+## <a name="dual-write-ui-landing-page-showing-blank"></a>Strona docelowa interfejsu użytkownika dwóch zapisów pokazująca puste pole
+Podczas otwierania strony z podwójnym zapisem w przeglądarce Microsoft Edge lub Google Chrome strona główna nie ładuje się i wyświetlana jest pusta strona lub błąd, taki jak „Coś poszło nie tak”.
+W narzędziach Devtools występuje błąd w dziennikach konsoli:
+
+>bundle.eed39124e62c58ef34d2.js:37 DOMException: Nie można odczytać właściwości „sessionStorage” z okna. Odmowa dostępu dla tego dokumentu. at t.storeInSessionStorage (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:16:136860 ) at new t (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:69:20103 ) at ci (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:44115 ) at Eo (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:58728 ) at jo (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:65191 ) at Nr (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:84692 ) at Or (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:85076 ) at Ss (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:91750 ) at vs (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:91130 ) at hs (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:90151 )
+
+Interfejs użytkownika używa magazynu sesji przeglądarki do przechowywania pewnych wartości właściwości do ładowania strony głównej. Aby było to potrzebne, w przeglądarce tej witryny muszą być dozwolone pliki cookie innych firm. Błąd wskazuje, że interfejs użytkownika nie może uzyskać dostępu do magazynu sesji. Występują dwa scenariusze tego problemu:
+
+1.  Otwierasz interfejs użytkownika w trybie incognito w przeglądarce Edge/Chrome, a pliki cookie innych firm w trybie incognito są blokowane.
+2.  Pliki cookie innych firm zostały zablokowane w Edge/Chrome.
+
+### <a name="mitigation"></a>Sposób minimalizacji
+Pliki cookie innych firm muszą być dozwolone w ustawieniach przeglądarki.
+
+### <a name="google-chrome-browser"></a>Przeglądarka Google Chrome
+1. opcja:
+1.  Przejdź do ustawień, wpisując w pasku adresu chrome://settings/, a następnie przejdź do sekcji Prywatność i bezpieczeństwo -> Pliki cookie i inne dane witryny.
+2.  Wybierz opcję Zezwalaj na wszystkie ciastka. Jeśli tego nie chcesz, przejdź do drugiej opcji.
+
+Druga opcja:
+1.  Przejdź do ustawień, wpisując w pasku adresu chrome://settings/, a następnie przejdź do sekcji Prywatność i bezpieczeństwo -> Pliki cookie i inne dane witryny.
+2.  Jeśli jest wybrana opcja Zablokuj pliki cookie innej firmy w opcji Incognito” lub „Zablokuj pliki cookie innych firm”, przejdź do witryny Sites, która zawsze może używać ciastek, i kliknij przycisk **Dodaj**. 
+3.  Dodaj nazwę witryny aplikacji Finanse & Operations - https://<your_FinOp_instance>.cloudax.dynamics.com. Upewnij się, że zaznaczysz pole wyboru „Wszystkie ciastka, tylko w tej witrynie”. 
+
+### <a name="microsoft-edge-browser"></a>Przeglądarka Microsoft Edge
+1.  Przejdź do ustawień -> uprawnienia do witryny -> pliki cookie i dane witryny.
+2.  Wyłącz opcję Zablokuj pliki cookie innych firm.  
 
 ## <a name="unlink-and-link-another-dataverse-environment-from-a-finance-and-operations-app"></a>Jak odłączyć i połączyć inne środowisko Dataverse z programu Finanse i Działania
 
@@ -97,14 +136,14 @@ Aby ponownie włączyć opcję formularza **Informacji**, wykonaj następujące 
 
 Aby rozwiązać niektóre problemy, zespół pomocy technicznej może chcieć przejrzeć zapisy zdarzeń sieci. Aby utworzyć śledzenie sieci, należy wykonać następujące kroki:
 
-### <a name="chrome"></a>Chrome
+### <a name="google-chrome-browser"></a>Przeglądarka Google Chrome
 
 1. Na otwartej karcie naciśnij klawisz **F12** lub wybierz pozycję **Narzędzia deweloperskie**, aby otworzyć narzędzia deweloperskie.
 2. Otwórz kartę **Sieć** i wpisz **integ** w polu tekstowym filtru.
 3. Uruchom scenariusz i obserwuj rejestrowane żądania.
 4. Kliknij prawym przyciskiem myszy wpisy i wybierz polecenie **Zapisz wszystko jako HAR z zawartością**.
 
-### <a name="microsoft-edge"></a>Microsoft Edge
+### <a name="microsoft-edge-browser"></a>Przeglądarka Microsoft Edge
 
 1. Na otwartej karcie naciśnij klawisz **F12** lub wybierz pozycję **Narzędzia deweloperskie**, aby otworzyć narzędzia deweloperskie.
 2. Otwórz kartę **Sieć**.

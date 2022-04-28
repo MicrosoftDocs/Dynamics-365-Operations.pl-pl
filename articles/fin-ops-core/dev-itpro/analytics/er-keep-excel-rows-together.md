@@ -15,18 +15,17 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2022-03-01
 ms.dyn365.ops.version: Version 10.0.26
-ms.openlocfilehash: 711681ab38fb24b57a83f008f86a8261176aa5a5
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: 06782a4933fb5c3e86ad436b853f207fd3d5cddb
+ms.sourcegitcommit: 2977e92a76211875421e608555311c363cfbdc25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388596"
+ms.lasthandoff: 04/16/2022
+ms.locfileid: "8612378"
 ---
 # <a name="design-an-er-format-to-keep-rows-together-on-the-same-excel-page"></a>Projektowanie formatu raportowania elektronicznego w celu utrzymania wierszy razem na tej samej stronie programu Excel
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 W tym temacie wyjaśniono, w jaki sposób użytkownik w roli Administrator systemu lub Funkcjonalny konsultant ds. raportowania elektronicznego może skonfigurować [Raportowanie elektroniczne (ER)](general-electronic-reporting.md) [format](er-overview-components.md#format-component), który generuje dokumenty wychodzące w programie Microsoft Excel i zarządzać stronicowaniem dokumentów, tak aby utworzone wiersze były zachowywane na tej samej stronie.
 

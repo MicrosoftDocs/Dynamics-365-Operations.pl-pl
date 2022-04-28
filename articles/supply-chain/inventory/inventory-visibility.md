@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9ee6229937ea27adf231dcd1c9921878e53bd981
-ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
+ms.openlocfilehash: 9eb8a135d2415c867c746a1c40a80cdb84819c0e
+ms.sourcegitcommit: d475dea4cf13eae2f0ce517542c5173bb9d52c1c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8524501"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8547909"
 ---
 # <a name="inventory-visibility-add-in-overview"></a>Dodatek Widoczność magazynu — omówienie
 
@@ -63,7 +63,7 @@ Funkcja ATP jest łatwe do przyjęcia w codziennych procesach realizacji zamówi
 
 ### <a name="compatibility-with-advanced-warehouse-management-items"></a>Zgodność z zaawansowanymi pozycjami zarządzania magazynem
 
-Firma Microsoft zamierza zintegrować ją z zaawansowanym zarządzaniem magazynem (WHS), dzięki czemu pracownicy WHS mogą również korzystać z zalet usługi widoczności zapasów. Zgodnie z wydaniem 2022 grupy czynności 1 (wersja publiczna w marcu) usługa magazynowa obsługuje kwerendy dostępnych zapasów dla pozycji WHS i ATP. Funkcja rezerwacji programowej i alokacji będzie obsługiwana dla odbiorców WHS w następnej grupy czynności. <!-- KFM: Add this link when target is published: For more information, see [Inventory Visibility support for WHS items](inventory-visibility-whs-support.md). -->
+Firma Microsoft zamierza zintegrować ją z zaawansowanym zarządzaniem magazynem (WHS), dzięki czemu pracownicy WHS mogą również korzystać z zalet usługi widoczności zapasów. Zgodnie z wydaniem 2022 grupy czynności 1 (wersja publiczna w marcu) usługa magazynowa obsługuje kwerendy dostępnych zapasów dla pozycji WHS i ATP. Funkcja rezerwacji programowej i alokacji będzie obsługiwana dla odbiorców WHS w następnej grupy czynności. Więcej informacji zawiera temat [Obsługa widoczności inwentarza dla pozycji WHS](inventory-visibility-whs-support.md).
 
 ## <a name="licensing"></a>Licencjonowanie
 

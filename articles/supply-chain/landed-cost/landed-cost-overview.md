@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e4861c0e8b3680f3cd3229facf059b671a4fc765
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 90410585f314aa9f17f2c132afb6568307fb28ab
+ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983424"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8570389"
 ---
 # <a name="landed-cost-module"></a>Moduł Kosztów z wyładunkiem
 
@@ -39,7 +39,7 @@ Koszt z wyładunkiem zapewnia dokładne i terminowe szacowanie kosztów z wyład
 
 ### <a name="voyages"></a>Podróże
 
-W kosztach wyładunku podróż jest odrębnym przemieszczeniem z lokalizacji wyjściowej przez określony zestaw miejsc docelowych w określonym czasie do określonej lokalizacji magazynu przychodzącego. Zamówienia zakupu i wiersze zamówienia można dodać do pojedynczego kontenera lub wielu kontenerów na rejs, a koszty zostaną prawidłowo przypisane do pozycji towaru. Zamówienia i wiersze zamówień można dodawać w różnych firmach w celu pojedynczych podróży.
+W kosztach wyładunku podróż jest odrębnym przemieszczeniem z lokalizacji wyjściowej przez określony zestaw miejsc docelowych w określonym czasie do określonej lokalizacji magazynu przychodzącego. Zamówienia zakupu i wiersze zamówienia można dodać do pojedynczego kontenera lub wielu kontenerów na rejs, a koszty zostaną prawidłowo przypisane do pozycji towaru. 
 
 ### <a name="item-ownership"></a>Prawa własności do pozycji
 

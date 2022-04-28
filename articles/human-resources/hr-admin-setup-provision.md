@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0c856bca32c3dee44469c098961d85b4d8cb70a6
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 65891e380f740f4a1fa404d57789a6f50506d3b5
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060445"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565636"
 ---
 # <a name="provision-human-resources"></a>Inicjowanie obsługi administracyjnej rozwiązania Human Resources
 
@@ -40,6 +40,10 @@ Zanim będzie można aprowizować nowe środowisko produkcyjne, muszą zostać s
 
 ## <a name="provision-a-human-resources-trial-environment"></a>Inicjowanie obsługi środowiska próbnego Human Resources
 
+>[!NOTE]
+> Począwszy od kwietnia 2022 roku środowiska próbne zasobów ludzkich nie będą dostępne w samodzielnym aplikacji. Potencjalni klienci, którzy są zainteresowani oceną możliwości zasobów ludzkich w aplikacjach finansowych i operacyjnych, mogą to zrobić, korzystając z bezpłatnej 30-dniowej wersji próbnej oraz danych demonstracyjnych. Dynamics 365 Finance będzie obejmował funkcje kadrowe wprowadzone do infrastruktury finansowej poprzez połączenie samodzielnej aplikacji. Więcej informacji na ten temat można znaleźć w części [Łączenie ofert HR zapewnia klientom wspólne możliwości](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers) Więcej informacji na temat testów Dynamics 365 Finance można znaleźć w [przewodniku krok po kroku](/fin-ops/get-started/before-you-buy). 
+
+
 Przed rozpoczęciem inicjowania obsługi pierwszej piaskownicy lub środowiska produkcyjnego można zaimprowizować [środowisko próbne Human Resources](https://go.microsoft.com/fwlink/p/?LinkId=2115962) w celu weryfikacji funkcji Human Resources. Środowiska próbne zawierają fikcyjne dane, których można używać do eksplorowania programu w bezpieczny sposób. Chociaż właścicielem środowiska próbnego jest użytkownik, który je utworzył, można do niego zaprosić innych użytkowników za pośrednictwem interfejsu administratora systemu środowiska Human Resources. 
 
 Środowiska próbne zapewniają możliwość oceniania funkcji zasobów ludzkich dla osób, które nie mają jeszcze dostępu do środowiska Human Resources. Jeśli udostępniasz środowisko próbne, a uwierzytelniony użytkownik ma już dostęp do co najmniej jednego istniejącego środowiska zasobów ludzkich, użytkownik zostanie przekierowany do istniejącego środowiska lub listy środowisk.
@@ -58,7 +62,7 @@ Zanim utworzysz swoje pierwsze środowisko kadrowe, powinieneś dokładnie zapla
 Uwagi dotyczące dodatkowych środowisk:
 
 - **Migracja danych**: Konieczne może być rozważenie dodatkowego środowiska do działań związanych z migracją danych, aby umożliwić używanie środowiska piaskownicy do celów testowych w całym projekcie. Dodatkowe środowisko umożliwia kontynuowanie działań migracji danych podczas jednoczesnego testowania i konfigurowania działań w innym środowisku.
-- **Integracja**: W celu skonfigurowania i testowania integracji należy wziąć pod uwagę dodatkowe środowisko. Może to obejmować natywne integracje, takie jak integracje Ceridian Dayforce LinkedIn Talent Hub, lub niestandardowe integracje, takie jak te dotyczące płac, systemów śledzenia kandydatów lub systemów świadczeń i dostawców.
+- **Integracja**: W celu skonfigurowania i testowania integracji należy wziąć pod uwagę dodatkowe środowisko. Może to obejmować natywne integracje, takie jak integracje Ceridian Dayforce lub LinkedIn Talent Hub, lub niestandardowe integracje, takie jak te dotyczące płac, systemów śledzenia kandydatów lub systemów świadczeń i dostawców.
 - **Szkolenie**: Możesz potrzebować osobnego środowiska, które jest skonfigurowane z zestawem danych szkoleniowych, aby przeszkolić pracowników w zakresie korzystania z nowego systemu. 
 - **Projekt wieloetapowy**: Możesz potrzebować dodatkowego środowiska do obsługi konfiguracji, migracji danych, testowania lub innych działań w fazie projektu, która jest planowana po początkowym uruchomieniu projektu.
 

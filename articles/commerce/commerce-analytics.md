@@ -8,12 +8,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2021-11-12
-ms.openlocfilehash: 7e3721421e15bc3e5937691cdbaee51e4d3cdd17
-ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
+ms.openlocfilehash: 63d6e5ef7e883578106495d5ec778bbd686ee92d
+ms.sourcegitcommit: 722854cb0d302d01ce3d9580ac80dc7c23d19bf5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8349750"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "8550014"
 ---
 # <a name="commerce-analytics-preview"></a>Analizy rozwiązania Commerce (wersja zapoznawcza)
 
@@ -352,15 +352,20 @@ Strona **Raport wyświetleń** zawiera następujące metryki:
 
 ### <a name="enable-and-configure-commerce-analytics-preview"></a><a name="enableCommerceAnalytics"></a>Włącz i konfiguruj analizę rozwiązania Commerce (wersja zapoznawcza)
 
-Aby zainstalować analizę rozwiązania Commerce (wersja zapoznawcza), musisz mieć uprawnienia do tworzenia zasobów w subskrypcji systemu Azure. Musisz mieć również uprawnienia do instalowania dodatków w usłudze LCS. 
+Aby zainstalować analizę rozwiązania Commerce (wersja zapoznawcza), musisz mieć uprawnienia do tworzenia zasobów w subskrypcji systemu Azure. Musisz mieć również uprawnienia do instalowania dodatków w usłudze LCS.
 
 Aby włączyć i skonfigurować analitykę handlową (wersja zapoznawcza), wykonaj następujące kroki.
 
-1. [Dodatek Włączanie i konfigurowanie eksportu do Data Lake](#enableExportToDataLake).
-1. [Instalowanie i konfigurowanie obszaru roboczego Azure Synapse Workspace](#configureAzureSynapse).
-1. [Dodaj do klucza klucz](#addSecrets).
-1. [Włącz i konfiguruj dodatek analizy rozwiązania Commerce (wersja zapoznawcza)](#enableCommerceAnalyticsAddin).
-1. [Instalowanie aplikacji szablonu Power BI](#powerbi).
+1. [Prześlij formularz wdrożenia wersji zapoznawczej dla analiz rozwiązania Commerce (wersja zapoznawcza)](#joinPreview)
+2. [Dodatek Włączanie i konfigurowanie eksportu do Data Lake](#enableExportToDataLake).
+3. [Instalowanie i konfigurowanie obszaru roboczego Azure Synapse Workspace](#configureAzureSynapse).
+4. [Dodaj do klucza klucz](#addSecrets).
+5. [Włącz i konfiguruj dodatek analizy rozwiązania Commerce (wersja zapoznawcza)](#enableCommerceAnalyticsAddin).
+6. [Instalowanie aplikacji szablonu Power BI](#powerbi).
+
+### <a name="submit-the-preview-intake-form-for-commerce-analytics-preview"></a><a name="joinPreview"></a>Prześlij formularz wdrożenia wersji zapoznawczej dla analiz rozwiązania Commerce (wersja zapoznawcza)
+
+Prześlij [Formularz wdrożenia wersji zapoznawczej dla analiz rozwiązania Commerce (wersja zapoznawcza)](https://forms.office.com/r/vW5VLJGXZ2). Po przetworzeniu zgłoszenia na adres e-mail podany w formularzu zostanie wysłana wiadomość z potwierdzeniem.
 
 ### <a name="enable-and-configure-the-export-to-data-lake-add-in"></a><a name="enableExportToDataLake"></a>Dodatek Włączanie i konfigurowanie eksportu do Data Lake.
 

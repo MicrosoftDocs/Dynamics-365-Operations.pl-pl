@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 5b84237844ec1d8f6c0716a0a13b05c83b358901
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d414ed7ac55afbbc58b8f5542c713f56392f9bc7
+ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575783"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8570458"
 ---
 # <a name="manage-folios"></a>Zarządzanie foliami
 
 [!include [banner](../../includes/banner.md)]
 
-Folio jest często określone przez przepisy celne. Może ono składać się z jednego towaru dostawcy dla jednej jednostki lub firmy na wysyłkę. Towary w folio mogą znajdować się w jednym kontenerze lub można je rozłożyć na wiele kontenerów.
+Folio jest często określone przez przepisy celne. Może ono składać się z jednego towaru dostawcy dla jednej jednostki lub firmy na wysyłkę. Towary w folio są zarządzane w jednym kontenerze.
 
 Aby otworzyć stronę **Wszystkie folio**, przejdź do strony **Koszt z wyładunkiem \> Folio \> Wszystkie folio**. Ta strona pokazuje listę wszystkich aktualnych folio. Możesz używać przycisków w Okienku akcji do tworzenia, usuwania i pracy z folio. Wybierz dowolne folio na liście, aby wyświetlić jego szczegóły na stronie **Folio**.
 
