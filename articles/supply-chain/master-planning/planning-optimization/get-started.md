@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: faaa2aa921457a3d26c2a921a856a61296192a04
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: a08128f9529e576294181bd70134b02caae54b90
+ms.sourcegitcommit: 5130446fd5327595b2d67e67cbd1b5661bb2983c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469821"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8648717"
 ---
 # <a name="get-started-with-planning-optimization"></a>Rozpoczęcie optymalizacji planowania
 
@@ -40,7 +40,7 @@ Przed włączeniem optymalizacji planowania zdecydowanie zaleca się dokonanie o
 
 ## <a name="availability"></a>Dostępność
 
-Optymalizacja planowania jest obecnie dostępna w następujących regionach geograficznych platformy Azure: Stany Zjednoczone, Kanada, Europa, Zjednoczone Królestwo, Australia, Azja i Pacyfik, Japonia i Indie. W przypadku próby zainstalowania dodatku z innego regionu geograficznego usługi LCS wyświetlą komunikat informujący, że ten region geograficzny nie jest obsługiwany. Aby uzyskać więcej informacji o lokalizacjach geograficznych systemu Azure i pokrewnych regionach, zobacz [lokalizacje geograficznej systemu Azure](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
+Optymalizacja planowania jest obecnie dostępna w następujących regionach geograficznych platformy Azure: Stany Zjednoczone, Kanada, Europa, Zjednoczone Królestwo, Australia, Azja i Pacyfik, Brazylia, Japonia i Indie. W przypadku próby zainstalowania dodatku z innego regionu geograficznego usługi LCS wyświetlą komunikat informujący, że ten region geograficzny nie jest obsługiwany. Aby uzyskać więcej informacji o lokalizacjach geograficznych systemu Azure i pokrewnych regionach, zobacz [lokalizacje geograficznej systemu Azure](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
 
 Pamiętaj, że optymalizacja planowania nie obsługuje wdrożeń lokalnych aplikacji Dynamics 365 Supply Chain Management.
 

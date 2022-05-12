@@ -2,19 +2,19 @@
 title: Rozwiązywanie ogólnych problemów
 description: Ten temat zawiera ogólne informacje dotyczące rozwiązywania problemów dotyczących integracji podwójnego zapisu między aplikacjami Finanse i Działania i Dataverse.
 author: RamaKrishnamoorthy
-ms.date: 04/07/2020
+ms.date: 04/18/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 8b5951f9f40179ca0bf31f5cccf1f05a0f968213
-ms.sourcegitcommit: 1843235766b6f8cf950a13a310e9f4f2f53c59a4
+ms.openlocfilehash: 5896b031229c7fe7e02c8ccf038dd2b1a4f2de05
+ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "8554607"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "8614103"
 ---
 # <a name="general-troubleshooting"></a>Rozwiązywanie ogólnych problemów
 
@@ -131,6 +131,29 @@ Aby ponownie włączyć opcję formularza **Informacji**, wykonaj następujące 
 2. Znajdź formularz **Informacje** w węźle formularze.
 3. Zaznacz formularz **Informacje** i kliknij pozycję **Włącz role zabezpieczeń**.
 4. Zmień ustawienie zabezpieczeń, aby było **Wyświetlane dla wszystkich**.
+
+## <a name="how-to-ensure-data-integration-is-using-the-most-current-finance-and-operations-schema"></a>Jak zapewnić, by integracja danych odbywała się z wykorzystaniem najbardziej aktualnego schematu w aplikacji finansowych i operacyjnych
+
+Możesz napotkać problemy z danymi podczas integracji danych, jeśli nie jest używany najbardziej aktualny schemat. Poniższe kroki pomogą ci odświeżyć listę encji w aplikacjach finansowych i operacyjnych oraz encji w Integratorze danych.
+
+### <a name="refresh-entity-list-in-finance-and-operations-environment"></a>Odśwież listę podmiotów w środowisku aplikacji finansowych i operacyjnych
+1.  Zaloguj się do swojego środowiska finansów i operacji.
+2.  Wybierz pozycję **Zarządzanie danymi**.
+3.  W sekcji Zarządzanie danymi wybierz **Ustawienia ramowe**.
+4.  Na stronie **Parametry importu/eksportu danych** wybierz **Ustawienia jednostki**, a następnie wybierz pozycję **Odśwież listę jednostek**. Odświeżenie może zająć więcej niż 30 minut, w zależności od liczby zaangażowanych podmiotów.
+5.  Przejdź do **Zarządzania danymi** i wybierz **Elementy danych**, aby sprawdzić, czy na liście znajdują się oczekiwane przez ciebie elementy. Jeśli na liście nie ma oczekiwanych encji, sprawdź, czy są one obecne w twoim środowisku aplikacji finansowych i operacyjnych i w razie potrzeby przywróć brakujące encje.
+
+#### <a name="if-the-refresh-fails-to-resolve-the-issue-delete-and-re-add-the-entities"></a>Jeśli odświeżanie nie powiedzie się, usuń i dodaj ponownie encje
+
+> [!NOTE]
+> Przed usunięciem konieczne może się okazać zatrzymanie grup przetwarzania, które aktywnie korzystają z tych encji.
+
+1.  Wybierz pozycję **Zarządzanie danymi** w środowisku aplikacji finansowych i operacyjnych i wybierz **Encje danych**.
+2.  Wyszukaj encje, w których występują problemy, i zanotuj docelową encję, tabelę etapu, nazwę encji i inne ustawienia. Usuń encję lub encje z listy.
+3.  Wybierz **Nowa** i ponownie dodaj encję lub encje, używając danych z kroku 2. 
+
+#### <a name="refresh-entities-in-data-integrator"></a>Odświeżanie encji w Integratorze danych
+Zaloguj się do centrum administracyjnego Power Platform i wybierz **Integrację danych**. Otwórz projekt, w którym pojawiają się problemy, i wybierz **Odśwież encje**.
 
 ## <a name="how-to-enable-and-save-network-trace-so-that-traces-can-be-attached-to-support-tickets"></a>Włączanie i zapisywanie śledzenia sieciowego w celu dołączeniu śledzenia do biletów pomocy technicznej
 

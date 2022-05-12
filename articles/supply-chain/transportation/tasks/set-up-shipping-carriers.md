@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e9bc4fefb6aabc0b93d4d96f5930590ef99235b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 38bf1f9f201e7f34e6a7ea76fbef399ba94caafa
+ms.sourcegitcommit: 367e323bfcfe41976e5d8aa5f5e24a279909d8ac
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567663"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "8660387"
 ---
 # <a name="set-up-shipping-carriers"></a>Konfigurowanie firm przewozowych
 
@@ -27,8 +27,8 @@ ms.locfileid: "7567663"
 
 W tej procedurze opisano sposób konfigurowania firmy przewozowej i definiowania szczegółów, takich jak usługi, tryb wysyłki, metoda płatności za transport, ograniczenia transportu i stawka kosztów wysyłki. Koordynator transportu może następnie przypisać firmę przewozową do ładunku przychodzącego i wychodzącego.
 
-
 ## <a name="create-a-new-shipping-carrier"></a>Tworzenie nowej firmy przewozowej
+
 1. Wybierz kolejno opcje **Okienko Nawigacji > Moduły > Zarządzanie transportem > Ustawienia > Przewoźnicy > Firmy przewozowe**.
 2. Wybierz pozycję **Nowy** w okienku akcji.
 3. W polu **Firma przewozowa** wpisz wartość.
@@ -36,6 +36,7 @@ W tej procedurze opisano sposób konfigurowania firmy przewozowej i definiowania
 5. W polu **Tryb** wybierz opcję z menu rozwijanego.
 
 ## <a name="fill-in-the-general-information-for-the-shipping-carrier"></a>Wprowadzanie ogólnych informacji o firmie przewozowej
+
 1. Przełącz rozwinięcie sekcji **Przegląd**.
 2. Zaznacz lub usuń zaznaczenie pola wyboru **Aktywuj firmę przewozową**.
 3. W polu **Konto dostawcy** wybierz opcję z menu rozwijanego. Wybierz konto dostawcy, do którego chcesz przypisać firmę przewozową.  
@@ -43,13 +44,16 @@ W tej procedurze opisano sposób konfigurowania firmy przewozowej i definiowania
 5. Zaznacz lub usuń zaznaczenie pola wyboru **Aktywuj oceny przewoźników**.
 
 ## <a name="create-the-necessary-services-for-the-shipping-carrier"></a>Tworzenie niezbędnych usług dla firmy przewozowej
+
 1. Przełącz rozwinięcie sekcji **Usługi**.
 2. Wybierz pozycję **Nowy**.
 3. W polu **Usługa przewozowa** wpisz wartość.
 4. W polu **Nazwa** wpisz wartość.
-5. W polu **Metoda transportu** wybierz opcję z menu rozwijanego.
+5. W polu **Identyfikator szablonu obciążenia** wybierz szablon obciążenia, który chcesz powiązać z usługą. Szablon Ładunek określa maksymalne parametry wagi i objętości całego ładunku. Na przykład szablon ładunku może reprezentować rozmiar kontenera lub ciężarówki. Identyfikatory szablonów obciążeń są także podawane w szablonach budowania obciążeń oraz podczas korzystania z [narzędzia do tworzenia ładunków](load-building-workbench.md), które pomaga stosować strategie budowania obciążeń do tworzenia ładunków. W rezultacie system będzie mógł dopasować każdy nowy ładunek do odpowiedniej usługi przewozowej, porównując określone identyfikatory szablonów ładunków.
+6. W polu **Metoda transportu** wybierz opcję z menu rozwijanego.
 
 ## <a name="set-up-the-address-for-the-carrier-optional"></a>Konfigurowanie adresu przewoźnika (opcjonalnie)
+
 1. Przełącz rozwinięcie sekcji **Adresy**.
 2. Wybierz pozycję **Nowy**.
 3. W polu **Nazwa lub opis** wpisz wartość.
@@ -59,6 +63,7 @@ W tej procedurze opisano sposób konfigurowania firmy przewozowej i definiowania
 7. Kliknij przycisk **OK**.
 
 ## <a name="set-up-the-rating-profile-for-the-shipping-carrier"></a>Konfigurowanie profilu wyznaczania stawek dla przewoźnika
+
 1. Przełącz rozwinięcie sekcji **Profile oceny**.
 2. Wybierz pozycję **Nowy**.
 3. W polu **Profil oceny** wpisz wartość.

@@ -2,24 +2,20 @@
 title: Tworzenie zwrotów w POS
 description: W tym temacie opisano sposób inicjowania zwrotów dla transakcji cash-and-carry lub zamówień klientów w aplikacji Point of Sale (POS) Microsoft Dynamics 365 Commerce.
 author: hhainesms
-ms.date: 02/24/2022
+ms.date: 04/27/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application User
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.20
-ms.openlocfilehash: 3250f702f033fb8b00763542fd8342c089b47b2e
-ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
+ms.openlocfilehash: c8e06c0d83e3bc2f5efea1e3a8124c700706aa2e
+ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8349698"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8648995"
 ---
 # <a name="create-returns-in-pos"></a>Tworzenie zwrotów w POS
 
@@ -107,9 +103,64 @@ Poniższa lista zawiera minimalne wymagania dotyczące wersji dla różnych skł
 ## <a name="enable-proper-tax-calculation-for-returns-with-partial-quantity"></a>Włącz poprawne obliczanie podatku dla zwrotów z ilością częściową
 
 Ta funkcja zapewnia, że gdy zamówienie zostanie zwrócone przy użyciu wielu faktur, podatki będą ostatecznie równe kwocie podatku pierwotnie naliczonego.
-1.  Przejdź do obszaru roboczego **Zarządzanie funkcjami** i wyszukaj opcję **Włącz poprawne obliczanie podatku dla zwrotów z ilością częściową**.
-2.  Zaznacz opcję **Włącz poprawną kalkulację podatku dla zwrotów o ilości częściowej**, a następnie kliknij opcję **Włącz**.
 
+1. Przejdź do obszaru roboczego **Zarządzanie funkcjami** i wyszukaj opcję **Włącz poprawne obliczanie podatku dla zwrotów z ilością częściową**.
+1. Zaznacz opcję **Włącz poprawną kalkulację podatku dla zwrotów o ilości częściowej**, a następnie wybierz opcję **Włącz**.
+
+## <a name="set-up-return-locations-for-retail-stores"></a>Ustawianie lokalizacji zwrotów dla sklepów
+
+Commerce umożliwia skonfigurowanie miejsc zwrotu opartych na kodach informacyjnych sprzedaży detalicznej oraz kodach przyczyn sprzedaży i marketingu. Kiedy klienci zwracają zakupy, kasjerzy często podają powód zwrotu. Możesz określić, że zwrócone produkty powinny być przypisane do różnych lokalizacji zwrotów w magazynie, na podstawie kodów informacyjnych i kodów powodów, które kasjerzy wybierają w kasie.
+
+Na przykład, klient zwraca wadliwy produkt, a kasjer przetwarza transakcję zwrotu. Gdy Retail POS pokazuje kod informacyjny dla zwrotów, kasjer wybiera podkod dla wadliwych zwrotów. Zwracany produkt jest wtedy automatycznie przypisywany do określonej lokalizacji zwrotu.
+
+Lokalizacją zwrotu może być magazyn, miejsce w magazynie, a nawet konkretna paleta, w zależności od lokalizacji zapasów, które ma ustawione twoja organizacja. Każdą lokalizację zwrotu możesz przyporządkować do jednego lub kilku kodów informacyjnych sprzedaży detalicznej oraz kodów przyczyn sprzedaży i marketingu.
+
+### <a name="prerequisites"></a>Wymagania wstępne
+
+Zanim będziesz mógł ustawić miejsca powrotu, musisz skonfigurować następujące elementy:
+
+- **Kody informacyjne dla detalu** – podpowiedzi w kasie, które są ustawione w module **Retail**. Aby uzyskać więcej informacji, zobacz [Ustawianie kodów informacyjnych](/dynamicsax-2012/appuser-itpro/setting-up-info-codes).
+- **Kody powodów sprzedaży i marketingu** – podpowiedzi w kasie, które są ustawione w module **Sprzedaż i marketing**. Aby uzyskać więcej informacji, zobacz [Ustawianie kodów powodów](/dynamicsax-2012/appuser-itpro/set-up-return-reason-codes).
+- **Lokalizacje magazynów** – miejsca przechowywania zapasów. Więcej informacji zawiera temat [Ustawianie lokalizacji zapasów](/dynamicsax-2012/appuser-itpro/about-locations).
+    
+### <a name="set-up-return-locations"></a>Ustawianie lokalizacji zwrotu
+
+Aby skonfigurować lokalizacje zwrotów, należy wykonać następujące czynności.
+
+1. Wybierz kolejno opcje **Retail i Commerce \> Ustawienia kanału \> Magazyny**, a następnie wybierz magazyn.
+1. Na Szybkiej karcie **Sprzedaż** w polu **Domyślna lokalizacja zwrotu** wybierz lokalizację magazynową, która ma być używana dla zwrotów, w przypadku których kody informacyjne lub kody przyczyny nie są zmapowane do lokalizacji zwrotu.
+1. W polu **Domyślna paleta zwrotna** wybierz paletę, która będzie używana dla zwrotów, w których kody informacyjne lub kody przyczyny nie są przypisane do miejsc zwrotu.
+1. Przejdź do **Retail i Commerce \> Zarządzanie zapasami \> Poziomy zapasów**.
+1. Naciśnij przycisk **Nowy**, aby stworzyć politykę lokalizacji zwrotu.
+1. Wprowadź unikatową nazwę i opis lokalizacji zwrotu.
+
+    > [!NOTE]
+    > Jeśli dla miejsc powrotu została ustawiona sekwencja numerów, nazwa zostanie wprowadzona automatycznie.
+
+1. Na szybkiej karcie **Ogólne** ustaw opcję **Drukuj etykiety** na **Tak**, aby drukować etykiety dla wszystkich produktów, które są przypisane do miejsc zwrotu.
+1. Ustaw opcję **Blokuj zapasy** na **Tak**, aby umieścić zwracane produkty w domyślnej lokalizacji zwrotu poza zapasami i zapobiec ich sprzedaży.
+1. Aby przypisać określone kody i podkody informacji detalicznej do miejsc zwrotu, wykonaj poniższe kroki:
+
+    1. Na skróconej karcie **Kody informacyjne Retail** wybierz pozycję **Dodaj**.
+    1. W polu **Kod informacyjny** wybierz kod informacji dla zwrotów.
+    1. W polu **Podkod** wybierz podkod przyczyny zwrotu. W polu **Opis** wprowadź opis wybranego podkodu.
+    1. W polu **Sklep** wybierz sklep, w którym używany jest dany kod informacji.
+    1. Użyj pól **Magazyn**, **Miejsce** i **Identyfikator palety**, aby określić miejsce zwrotu. Na przykład, aby wskazać określoną lokalizację w sklepie, wybierz sklep w polu **Sklep** i lokalizację w polu **Miejsce**.
+    1. Zaznacz pole wyboru **Blokada zapasów**, aby wykluczyć zwracane produkty z zapasów i zapobiec ich sprzedaży.
+
+1. Aby przypisać określone kody powodów sprzedaży i marketingu do miejsc powrotu, wykonaj poniższe kroki:
+
+    1. Na skróconej karcie **Kody przyczyn sprzedaży i marketingu** wybierz opcję **Dodaj**.
+    1. Następnie w polu **Kod przyczyny** wybierz nowy kod przyczyny zwrotu. W polu **Opis** wprowadź opis wybranego kodu przyczyny.
+    1. W polu **Sklep**, wybierz sklep, w którym używany jest kod przyczyny.
+    1. Użyj pól **Magazyn**, **Miejsce** i **Identyfikator palety**, aby określić miejsce zwrotu. Na przykład, aby wskazać określoną paletę w lokalizacji w magazynie, wybierz magazyn w polu **Magazyn**, lokalizację w polu **Miejsce** oraz paletę w polu **Identyfikator palety**.
+    1. Zaznacz pole wyboru **Blokada zapasów**, aby wykluczyć zwracane produkty z zapasów i zapobiec ich sprzedaży.
+
+    > [!NOTE]
+    > Jeśli dla danego przedmiotu użyto zasad lokalizacji zwrotu, ale powód zwrotu, który wybierze kasjer, nie pasuje do żadnego kodu określonego na szybkiej karcie **Kody informacyjne sprzedaży detalicznej** lub **Kody przyczyn sprzedaży i marketingu**, przedmiot jest wysyłany do domyślnej lokalizacji zwrotu zdefiniowanej na stronie **Magazyn**. Dodatkowo ustawienie pola wyboru **Blokuj zapasy** w zakładce **Ogólne** na stronie **Miejsca zwrotu** decyduje o tym, czy zwracany przedmiot powinien zostać zablokowany w zapasach.
+
+1. Wybierz kolejno opcje **Retail i Commerce \> Hierarchia produktów Commerce**.
+1. Na skróconej karcie **Właściwości kategorii zapasów**, w polu **Miejsce zwrotu** wybierz miejsce zwrotu. Ponieważ dla tego samego sklepu można zdefiniować wiele zasad lokalizacji zwrotów, wartość, którą tutaj wybierzesz, określa zasady lokalizacji zwrotów, które zostaną zastosowane.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

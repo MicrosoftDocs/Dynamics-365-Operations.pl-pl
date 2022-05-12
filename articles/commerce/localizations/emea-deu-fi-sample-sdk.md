@@ -9,17 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: c578420783a8d19fe4a1522486e0b0146a390722
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: c49e6cedcce1d336486e9fbcc0620bcdf455cc9d
+ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388191"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "8614131"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-germany-legacy"></a>Wskazówki dotyczące wdrażania przykładu integracji usługi rejestracji fiskalnej dla Niemiec (starsza wersja)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Ten temat zawiera wskazówki dotyczące wdrażania przykładu integracji usługi rejestracji fiskalnej dla Niemiec z poziomu zestawu Software Development Kit (SDK) rozwiązania Microsoft Dynamics 365 Commerce Retail na maszynie wirtualnej dewelopera w usłudze Microsoft Dynamics Lifecycle Services (LCS). Aby uzyskać więcej informacji dotyczących tego przykładu integracji fiskalnej, zobacz [Przykład integracji usługi rejestracji fiskalnej dla Niemiec](emea-deu-fi-sample.md). 
 

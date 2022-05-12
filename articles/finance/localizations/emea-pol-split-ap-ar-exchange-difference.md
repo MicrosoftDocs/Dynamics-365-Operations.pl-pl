@@ -2,7 +2,7 @@
 title: Podziel zrealizowaną różnicę kursów kwoty na różnicę wartości netto faktury i kwoty VAT
 description: W tym temacie opisano, jak podzielić zrealizowaną różnicę kursów kwoty na różnicę wartości netto faktury i kwoty podatku od towarów i usług (VAT).
 author: anasyash
-ms.date: 04/07/2020
+ms.date: 04/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ audience: Application User
 ms.reviewer: kfend
 ms.custom: 414136
 ms.search.region: Poland
-ms.author: roschlom
+ms.author: anasyash
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-04-01
-ms.openlocfilehash: 1b40b8f066b399aef64566ea4ac4c8bd03631782134d4615f8d262322fcd135d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a362dd8bf9191efe42c2e08c97cecb3ab3cca120
+ms.sourcegitcommit: 836695c0e95d366ba993f34eee30f57191f356d8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6781160"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "8629342"
 ---
 # <a name="split-the-realized-exchange-difference-amount-into-the-difference-of-the-invoice-net-value-and-the-vat-amount"></a>Podziel zrealizowaną różnicę kursów kwoty na różnicę wartości netto faktury i kwoty VAT
 
@@ -56,6 +56,10 @@ Wykonaj poniższe kroki, aby skonfigurować konto księgowe, za pomocą którego
 ## <a name="post-and-settle-customer-and-vendor-transactions"></a>Księgowanie i rozliczanie transakcji odbiorcy i dostawcy
 
 Umożliwia księgowanie i rozliczanie dokumentów w zwykły sposób. Transakcja różnic kursowych tworzona podczas rozliczania spowoduje wygenerowanie załącznika, w którym kwota różnicy kursowej powiązana z kwotą podatku jest księgowana oddzielnie na koncie księgowym wybranym w polu **Konto księgowania podatku** na stronie **Konta przeszacowania waluty**.
+
+## <a name="known-limitations"></a>Znane ograniczenia
+
+Nie powinieneś korzystać z tej funkcji, jeśli księgujesz faktury od dostawców za pomocą dzienników **Rejestr faktur** i **Zatwierdzanie faktur**.
 
 ## <a name="examples"></a>Przykłady
 

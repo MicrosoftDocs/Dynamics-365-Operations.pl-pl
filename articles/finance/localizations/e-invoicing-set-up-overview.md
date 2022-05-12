@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8138c63e9eff1d2ca934f9d4467e4e3b73dae941
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 42e617e26e7658fae9ee54cb8a4dee45314fddaa
+ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371771"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661700"
 ---
 # <a name="electronic-invoicing-setup"></a>Konfiguracja fakturowania elektronicznego
 
@@ -35,7 +35,5 @@ Następnie skonfiguruj zasoby systemu Azure, które wymagają fakturowania elekt
 Po skonfigurowaniu głównych komponentów, współpracuj z RCS w celu skonfigurowania głównych komponentów logicznych fakturowania elektronicznego. Najpierw zdefiniuj liczbę środowisk usług, które będzie zachowana. W ten sposób definiujesz partycjonowanie danych logicznych i konfiguracji, aby zapewnić granicę między środowiskiem programistycznym lub testowym a środowiskami produkcyjnymi. Aby skonfigurować proces programowania w sposób elastyczny, możesz potrzebować kilku oddzielnych środowisk programistycznych i testowych. Oprócz definiowania środowisk usług należy ustawić łącze do aplikacji biznesowych, takich jak Finanse lub Supply Chain Management, bezpośrednio z systemu RCS w celu skonfigurowania parametrów wymaganych do poprawnego działania fakturowania elektronicznego. Aby uzyskać więcej informacji o środowiskach, należy zapoznać się z tematem [Środowiska usługowe](e-invoicing-service-environments.md).
 
 Po skonfigurowaniu wszystkiego możesz utworzyć własne funkcje globalizacji, które definiują różne scenariusze przetwarzania dokumentów elektronicznych i przekształcania danych lub importowania dokumentów z repozytorium globalnego. Aby uzyskać więcej informacji na temat pracy z funkcjami globalizacji, zobacz [Praca z funkcjami globalizacji](e-invoicing-working-globalization-features.md).
-
-Aby uzyskać informacje o akcjach w procesach przetwarzania procesów kompilowanych w funkcjach globalizacji, zobacz **[COMPLETE!: Document processing actions]**.
 
 Jeśli Twoje scenariusze wymagają integracji z pocztą e-mail lub programem SharePoint w celu przetwarzania przychodzących dokumentów elektronicznych, zobacz [Przetwarzanie przychodzących dokumentów elektronicznych](e-invoicing-process-incoming-electronic-documents.md), aby uzyskać informacje na temat konfigurowania i używania tych kanałów.

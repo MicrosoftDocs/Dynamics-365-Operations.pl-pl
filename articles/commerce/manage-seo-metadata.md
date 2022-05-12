@@ -2,7 +2,7 @@
 title: Zarządzanie metadanymi funkcji optymalizacji aparatu wyszukiwania
 description: W tym temacie opisano sposób zarządzania metadanymi optymalizacji aparatu wyszukiwania (SEO) w rozwiązaniu Microsoft Dynamics 365 Commerce.
 author: psimolin
-ms.date: 04/14/2020
+ms.date: 04/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 06d2da60695be499971904451fd56fb8a64dfd64c9192d93f87ababb349e9378
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3d6f56968e9adfe90142955cba8e6c7ecc50fc92
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751574"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644766"
 ---
 # <a name="manage-seo-metadata"></a>Zarządzanie metadanymi SEO
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 W tym temacie opisano sposób zarządzania metadanymi optymalizacji aparatu wyszukiwania (SEO) w rozwiązaniu Microsoft Dynamics 365 Commerce.
 
@@ -62,17 +63,21 @@ Dynamics 365 Commerce umożliwia zarządzanie metadanymi funkcji optymalizacji d
 ### <a name="modify-page-metadata"></a>Modyfikuj metadane strony
 
 Aby skonfigurować metadane strony, wykonaj następujące kroki.
-
 1. W obszarze **Witryny** wybierz firmę **Fabrikam** (lub nazwę witryny).
 1. W okienku nawigacji po lewej stronie wybierz **Strony**.
 1. Wybierz stronę główną, aby otworzyć ją w edytorze stron.
 1. Na pasku poleceń wybierz opcję **Edytuj**.
-1. W okienku właściwości po prawej stronie rozwiń **Domyślne tagi metadanych**.
-1. Aby dodać nowy tag metadanych, wybierz opcję **Dodaj**, a następnie wprowadź znacznik w polu. Aby usunąć istniejący tag metadanych, należy wybrać symbol kosza na śmieci.
+1. W edytorze stron, na górze kontrolki konspektu strony po lewej stronie, wybierz opcję **Tryb konspektu** (symbol koła zębatego), a następnie wybierz **Zaawansowany widok konspektu**.
+1. W widoku konspektu rozwiń kontrolki drzewa, aby pokazać zawartość slotu **HTML head**.
+1. W slocie **Nagłówek HTML** wybierz odpowiedni moduł SEO (na przykład **Podsumowanie strony**, **Podsumowanie strony produktu**, **Podsumowanie strony kategorii** lub **Metatagi**).
+1. W okienku właściwości po prawej stronie edytuj pożądane dane SEO dla wybranego modułu SEO (na przykład **Tytuł**, **Opis** lub **Udostępnianie obrazka**).
 1. Wybierz **Zapisz** i następnie wybierz **Zakończ edycję**.
-1. W polu **Komentarze** wprowadź **Zaktualizowane Tagi metadanych**, a następnie kliknij przycisk **OK**.
+1. W polu **Komentarze** wprowadź **Zaktualizowane dane SEO**, a następnie kliknij przycisk **OK**.
 1. Wybierz opcję **Podgląd**, aby wyświetlić podgląd strony. Po zakończeniu Zamknij kartę podglądu, aby powrócić do narzędzia autorskiego.
 1. Wybierz opcję **Publikuj**.
+
+> [!TIP]
+> Autorzy mogą używać opcji **Tryb konspektu** (symbol koła zębatego) u góry lewej kontrolki konspektu w edytorze stron, aby przełączać się między **Podstawowym widokiem konspektu** a **Zaawansowanym widokiem konspektu**. **Podstawowy widok konspektu** jest ustawieniem domyślnym i filtruje konspekt tak, że pokazuje tylko moduły w slocie HTML **Tekst główny** dla danej strony. **Zaawansowany widok konspektu** pokazuje cały moduł strony, włączając w to **Nagłówek HTML**, **początek tekstu** i **koniec tekstu**. Ten widok jest przydatny, gdy autorzy muszą edytować specyficzne ustawienia SEO lub modułu skryptu dla danej strony.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

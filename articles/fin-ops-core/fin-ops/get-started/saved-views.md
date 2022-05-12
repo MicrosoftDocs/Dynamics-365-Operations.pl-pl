@@ -2,7 +2,7 @@
 title: Zapisane widoki
 description: W tym temacie opisano sposób korzystania z funkcji zapisanych widoków.
 author: jasongre
-ms.date: 09/13/2021
+ms.date: 04/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: bd1b034ebb66b996e20173c2ad4f958e643f9c2e
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: e10137ff5d11ed06c32613e601e2fa7423e270ac
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065713"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644795"
 ---
 # <a name="saved-views"></a>Zapisane widoki
 
@@ -45,7 +45,7 @@ Po udostępnieniu widoków dla środowiska w górnej części każdej strony obs
 
 Istnieją dwa warianty wielkości selektora widoków: 
 
-- **Duże selektory widoków** - strony z dobrze widoczną listą będą miały duży selektor widoków z kilku powodów. Co najważniejsze, większy selektor widoku wskazuje strony, na których widok może zawierać filtry zdefiniowane przez użytkownika. Ponieważ filtry są uwzględniane w widokach, większy selektor jest również uzasadniony tym, że nazwy widoków często stanowią najlepszy opis danych wyświetlanych na ekranie i można oczekiwać, że użytkownicy będą częściej przełączali widoki na stronach tych typów.
+- **Duże selektory widoków** - strony z dobrze widoczną listą będą miały duży selektor widoków z kilku powodów. Co najważniejsze, większy selektor widoku wskazuje strony, na których widok może zawierać filtry i sortowanie zdefiniowane przez użytkownika. Ponieważ filtry i sortowanie są zawarte w widokach, większy rozmiar selektora jest również uzasadniony, ponieważ nazwy widoków będą często najlepszym opisem danych wyświetlanych na ekranie, a oczekuje się, że użytkownicy będą częściej przełączać się między widokami na tych typach stron. Grupowanie w siatce może być także zapisane w widokach na stronie z dużymi selektorami widoków. 
 - **Małe selektory widoków** - Wszystkie inne strony pełnoekranowe (z wyjątkiem obszarów roboczych i pulpitu nawigacyjnego) mają mniejszy selektor widoku, który pojawia się obok podpisu strony. Widoki na tych stronach obejmują tylko personalizacje, a nie filtry zdefiniowane przez użytkownika. Na tych stronach podpis lub tytuł rekordu często są najważniejszymi informacjami w górnej części strony. Mniejszy rozmiar selektora widoku odzwierciedla również niższą częstotliwość przełączania widoku, której oczekuje się na tych stronach. 
  
 Wybór nazwy widoku powoduje otwarcie selektora widoku i wyświetlenie listy dostępnych widoków tej strony.

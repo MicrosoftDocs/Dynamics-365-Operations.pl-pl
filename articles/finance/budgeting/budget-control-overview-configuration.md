@@ -2,7 +2,7 @@
 title: Omówienie kontroli budżetu
 description: W tym temacie przedstawiono funkcję kontroli budżetu i przedstawiono informacje ułatwiające konfigurowanie kontroli budżetu w celu optymalizacji zarządzania zasobami finansowymi organizacji.
 author: panolte
-ms.date: 11/08/2021
+ms.date: 03/28/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14b852bb4aeca927adeeb2665b9887e467b71158
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 7019b3546b83047e91fa129d8d92f209f131c993
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986063"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644857"
 ---
 # <a name="budget-control-overview"></a>Omówienie kontroli budżetu
 
@@ -80,7 +80,9 @@ Następnie na karcie **Dostępne środki budżetowe** można zdefiniować formu�
 > [!NOTE]
 > Jeśli obliczenie zostanie zmodyfikowane podczas cyklu budżetu, zmiany nie wpłyną na dokumenty, które wcześniej pomyślne przeszły kontrolę budżetu i zostały zaksięgowane lub sfinalizowane. Funkcja o nazwie **Śledź tylko kwoty w obliczeniach dostępnych środków budżetowych** zmianę danych, które są śledzone w tabelach BudgetSourceTracking. Gdy ta funkcja jest włączona, kwoty są przechowywane tylko wtedy, gdy zostaną wybrane do użycia w obliczeniach dostępnych środków budżetowych. Więcej informacji można znaleźć w artykule [Dostępne środki budżetowe](budget-funds-available.md).
 
-Następnie na karcie **Dokumenty i arkusze** można wybrać, które dokumenty źródłowe i arkusze będą podlegać kontroli budżetu, i określić, czy kontrola nastąpi na poziomie wprowadzania wierszy czy całego dokumentu. 
+### <a name="documents-and-journals"></a>Dokumenty i arkusze
+
+Na karcie **Dokumenty i arkusze** można wybrać, które dokumenty źródłowe i arkusze będą podlegać kontroli budżetu, i określić, czy kontrola nastąpi na poziomie wprowadzania wierszy czy całego dokumentu. Ponadto nowa funkcja **Ulepszenie filtrowania dokumentów kontroli budżetowej**, która jest dostępna od wersji 10.0.27 Microsoft Dynamics 365 Finance, zapewnia opcję filtrowania na podstawie zapytań dla każdego dokumentu, który jest uwzględniony w kontroli budżetowej. Dlatego możesz określić, które dokumenty kontroli budżetowej są sprawdzane pod względem budżetowym. W ten sposób funkcja umożliwia sprawdzanie budżetowe tylko podzbioru dokumentów danego typu. Na przykład możesz sprawdzić tylko te zlecenia zakupu, w których pole **Pula** jest ustawione na **01**. Nowa kolumna, która została dodana do zakładki **Dokumenty i czasopisma**, wskazuje, czy dla wybranego typu dokumentu jest zdefiniowana kwerenda. Ponadto dwa nowe przyciski dodane do paska narzędzi nad siatką dokumentów pozwalają dodawać, edytować i usuwać filtrowanie. 
 
 Należy dopasować dokumenty źródłowe wybrane za pomocą pól wyboru dla sald uwzględnionych na potrzeby obliczania dostępnych środków budżetowych. Na przykład, jeśli wybrano opcję **rezerwy w budżecie dla przyszłych zobowiązań wiążących**, należy zaznaczyć opcję **zamówienia zakupu**. Podczas kontroli budżetu dla kwot i kont w wierszu zakupu, kategoria kontroli budżetu przypisana do rezerwacji ma wartość **przyszłe zobowiązanie wiążące**. Podczas kontroli budżetu dla kwot i kont w zapotrzebowaniu na zakup kategoria kontroli budżetu przypisana do rezerwacji ma wartość **Przyszłe zobowiązanie niewiążące**. 
 

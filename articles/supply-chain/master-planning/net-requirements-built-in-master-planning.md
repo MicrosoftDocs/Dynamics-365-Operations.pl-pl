@@ -2,7 +2,7 @@
 title: Zapotrzebowanie netto i informacje o oznaczaniu transakcji za pomocą wbudowanego planowania głównego
 description: Ten temat zawiera informacje dotyczące obliczonego zapotrzebowania netto i informacji o oznaczaniu transakcji w ramach wbudowanego planowania głównego.
 author: t-benebo
-ms.date: 7/28/2021
+ms.date: 04/20/2022
 ms.topic: article
 ms.search.form: ReqTransOverview
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 19c64d62386a94494b729aa05b0612609812a418
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 98da80c73eec58c08d1043e48deb14ca828c34eb
+ms.sourcegitcommit: 70289a33b0a6ff3f9418d91a928db452cfd815bd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8470437"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "8618296"
 ---
 # <a name="net-requirements-and-pegging-information-with-built-in-master-planning"></a>Zapotrzebowanie netto i informacje o oznaczaniu transakcji za pomocą wbudowanego planowania głównego
 
@@ -26,6 +26,8 @@ Podczas uruchamiania planowania głównego ważne jest, aby zrozumieć, jaka jes
 
 Na stronie **Zapotrzebowanie netto** pokazano zapotrzebowanie netto, które obliczono dla produktu podczas planowania głównego. Zawiera również ustawienia zapotrzebowania, które zostały zastosowane podczas planowania głównego, podział sum zapotrzebowania według typów transakcji i informacje o oznaczaniu transakcji.
 
-Strona **Zapotrzebowanie netto** działa w ten sam sposób, niezależnie od tego, czy używasz optymalizacji planowania, czy też jest to wbudowany aparat planowania głównego. Aby uzyskać więcej informacji dotyczących pracy z tą stroną, zobacz [Zapotrzebowanie netto i informacje o oznaczaniu transakcji za pomocą optymalizacji planowania](planning-optimization/net-requirements.md).
+Strona **Zapotrzebowanie netto** zachowuje się nieco inaczej w zależności od tego, czy używasz Optymalizacji planowania, czy wbudowanego mechanizmu planowania głównego. Aby uzyskać więcej informacji na temat tej różnicy, zobacz [Różnice między wbudowanym planowaniem głównym a Optymalizacją planowania](planning-optimization/planning-optimization-differences-with-built-in.md)
+
+Aby uzyskać więcej informacji dotyczących pracy z tą stroną, zobacz [Zapotrzebowanie netto i informacje o oznaczaniu transakcji za pomocą optymalizacji planowania](planning-optimization/net-requirements.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

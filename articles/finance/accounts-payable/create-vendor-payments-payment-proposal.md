@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 14312
 ms.assetid: 585d5b0b-1b79-4a03-ab18-528918070377
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 71e87b1102e21e035c25af4c63245eaaa59e4babb82bcf59c5cfba48f7d114f3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 101cbcc77b2e1eab9fb4b6724fc5e3e8925a54c5
+ms.sourcegitcommit: 836695c0e95d366ba993f34eee30f57191f356d8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749059"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "8629474"
 ---
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Tworzenie płatności od dostawców za pomocą propozycji płatności
 
@@ -48,7 +48,7 @@ Kwerenda propozycji płatności zawiera różne karty, z których każda ma ró�
 - **Uwzględnij faktury od dostawców z innych firm** — jeśli dana organizacja ma scentralizowany proces płatności i propozycji płatności, a propozycja płatności powinna uwzględniać faktury z innych firm zamieszczonych w kryteriach wyszukiwania, ustaw tę opcję na **Tak**.
 - **Proponuj osobną płatność dostawcy dla każdej firmy** — jeśli ta opcja jest ustawiona jako **Tak**, dla każdej firmy zostanie utworzona osobna płatność na dostawcę. Dostawca w płatności jest taki sam jak na fakturze z każdej firmy. Jeśli ta opcja została ustawiona jako **Nie**, a ten sam dostawca ma faktury w wielu podmiotach prawnych, zostanie utworzona jedna płatność na łączną kwotę z wybranych faktur. Dostawca na płatności jest taki sam jak dostawca w bieżącej firmie. Jeśli nie istnieje konto dostawcy w bieżącej firmie, używane jest konto dostawcy dla pierwszej faktury do zapłaty.
 - **Waluta płatności** — To pole określa walutę, w której są tworzone wszystkie płatności. Jeśli waluta nie jest zdefiniowana, każda faktura jest płacona w walucie faktury.
-- **Dzień roboczy dla płatności** — umożliwia wprowadzenie dnia tygodnia, gdy płatność powinna zostać wykonana. To pole jest używane tylko wtedy, gdy skonfigurowano metody płatności do sumy faktur do zapłaty w określonym dniu tygodnia.
+- **Dzień tygodnia** – wpisz dzień tygodnia, w którym ma być dokonana płatność; to pole jest używane tylko wtedy, gdy metoda płatności jest ustawiona na **tydzień**. Kwota faktur do zapłaty jest sumowana w określonym dniu tygodnia w celu dokonania płatności.
 - **Typ konta przeciwstawnego** i **Konto przeciwstawne** — Te pola służą do definiowania określonego typu konta (takiego jak **Księga** lub **Bank**) i konta przeciwstawnego (na przykład określonego konta bankowego). Metoda płatności dla faktury określa domyślny typ konta przeciwstawnego i konto przeciwstawne, ale w tych polach można zmieniać wartości domyślne.
 - **Data sumarycznej płatności** — Ta opcja jest używana tylko wtedy, gdy pole **Okres** w metodzie płatności zawiera wartość **Suma**. Jeśli data jest zdefiniowana, wszystkie płatności zostaną utworzone tego dnia. Pole **Minimalna data płatności** jest ignorowane.
 - **Dodatkowe filtry** — Na skróconej karcie **Rekordy do uwzględnienia** można określić dodatkowe zakresy kryteriów. Na przykład jeśli chcesz zapłacić tylko grupie dostawców, możesz zdefiniować filtr zakresu dostawców. Tej funkcji często używa się do wybrania faktur do określonej formy płatności. Na przykład: jeśli ustawisz filtr, w którym **Metoda płatności** = **Czek**, do zapłaty zostaną zaznaczone tylko te faktury, które są płatne czekiem, chyba że spełniają także inne kryteria wyszczególnione w zapytaniu.

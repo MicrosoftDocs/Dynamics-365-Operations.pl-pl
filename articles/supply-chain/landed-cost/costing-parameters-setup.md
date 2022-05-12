@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 1bcce7af0a15add63f1d9c3b32563de0ab6698bd
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 335bed49b05bf64547d7ded885f365a30487484f
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577655"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644646"
 ---
 # <a name="costing-parameter-values-setup"></a>Ustawienia wartości parametrów wyceny
 
@@ -123,9 +123,9 @@ W poniższej tabeli przedstawiono ustawienia dostępne w nagłówku dla każdego
 
 ## <a name="volumetric-divisors"></a>Dzielniki objętościowe
 
-Dzielniki wolumetryczne służą do obliczania ciężaru objętościowego. Każda firma transportowa / spedycyjna formułuje własne dzielniki wolumetryczne. Ponadto dzielniki firmy zwykle różnią się w zależności od sposobu dostawy. Na przykład przewóz lotniczy i morski często mają bardzo różne dzielniki. Firma może również skomplikować swoje zasady, w zależności od tego, skąd wysyła.
+Dzielniki wolumetryczne służą do obliczania ciężaru objętościowego. Każda firma transportowa / spedycyjna formułuje własne dzielniki wolumetryczne. Ponadto dzielniki firmy zwykle różnią się w zależności od sposobu dostawy. Na przykład przewóz lotniczy i morski często mają bardzo różne dzielniki. Firma może również skomplikować swoje zasady, w zależności od tego, skąd wysyła. System używa następującego wzoru, aby znaleźć wagę objętościową: VolumetricWeight = Volume ÷ VolumetricDivisor.
 
-Na przykład paczka wysyłana samolotem ma objętość 3 metrów sześciennych (m³). Firma pobiera opłaty według wagi wolumetrycznej i stosuje dzielnik wolumetryczny równy 6. Ten dzielnik jest mnożony przez objętość, aby określić wagę wolumetryczną. Dlatego masa wolumetryczna w tym przykładzie wynosi 3 × 6 = 18 kilogramów (kg).
+Na przykład paczka wysyłana samolotem ma objętość 3 metrów sześciennych (m³). Firma pobiera opłaty według wagi wolumetrycznej i stosuje dzielnik wolumetryczny równy 6. Ten dzielnik jest dzielony przez objętość, aby określić wagę wolumetryczną. Dlatego masa wolumetryczna w tym przykładzie wynosi 3 ÷ 6 = 0,5 kilograma (kg).
 
 Aby ustawić dzielniki wolumetryczne, przejdź do **Koszt z wyładunkiem \> Konfiguracja wyceny \> Dzielniki wolumetryczne**. Strona **Dzielniki wolumetryczne** zawiera siatkę, w która zawiera listę wszystkich istniejących dzielników wolumetrycznych. Za pomocą przycisków w okienku akcji można dodawać, usuwać i edytować wiersze w siatce.
 
@@ -136,4 +136,7 @@ W poniższej tabeli opisano pola dostępne w każdym wierszu siatki.
 | Firma przewozowa | Wybierz konto dostawcy firmy przewozowej, które jest skojarzone z dzielnikiem wolumetrycznym. |
 | Kod typu kosztu | Umożliwia wybór kodu typu kosztu skojarzonego z dzielnikiem wolumetrycznym. W tym polu można umieszczać typy kosztów w przedziałach raportowania. Raporty można drukować według kategorii raportowania lub według typu kosztu. |
 | Port źródłowy | Wybierz port „od”, do którego ma zastosowanie dzielnik wolumetryczny. |
-| Dzielnik objętościowy | Wprowadź wartość dzielnika wolumetrycznego, która ma zastosowanie do wiersza. W celu określenia wagi objętościowej paczki w wolumetryka zostanie *pomnożona* przez objętość każdej paczki. |
+| Dzielnik objętościowy | Wprowadź wartość dzielnika wolumetrycznego, która ma zastosowanie do wiersza. Objętość każdej paczki zostanie podzielona przez wartość, którą tu wpiszesz, aby określić wagę objętościową pakietu. |
+
+> [!NOTE]
+> System użyje maksymalnej wartości pomiędzy **wagą rzeczywistą** a **wagą objętościową**.

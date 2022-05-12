@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7f765e7cfd97170bd144dfff12c18ced96e3332a
-ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
+ms.openlocfilehash: 3c9b9602e5c219be5756f5987b0497f2ce5c269d
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2022
-ms.locfileid: "8533720"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644310"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>Nalicz plany urlopów i nieobecności
 
@@ -105,8 +105,10 @@ Usuwanie rekordów naliczeń dla określonego planu i zakresu dat. Daty naliczan
 **Inspekcja naliczania urlopów** wyświetla się przy każdym uruchomieniu lub usunięciu naliczenia dla jednego lub wszystkich pracowników. Zostanie wyświetlona data i osoba, która wykonała akcję.
 
 1. Na stronie **Urlopy i nieobecności** wybierz kartę **Łącza**.
-
 2. W obszarze **Zarządzaj urlopami** wybierz opcję **Usuń inspekcję naliczania planów**.
+
+## <a name="leave-accrual-rounding"></a>Zaokrąglanie naliczania urlopów
+Jeżeli pracownik jest zapisany lub nie jest zapisany, zaokrąglenie urlopu będzie proporcjonalne. Wcześniej zaokrąglanie było możliwe tylko wtedy, gdy plan urlopowy był ustawiony na proporcjonalny, a pracownik był zapisany/wypisany w połowie okresu. Naliczanie urlopu będzie teraz zaokrąglane niezależnie od zapisania/wypisania się w połowie okresu lub na początku okresu.
 
 ## <a name="leave-accrual-transaction-auditing"></a>Przeprowadzanie inspekcji transakcji naliczania urlopów
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 4eb8f6aee50d74127ecc816af691a96bb1d8966b
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: bb837a38485bad2b9b76a5e4f20d311c0281e192
+ms.sourcegitcommit: 1050e58e621d9a0454895ed07c286936f8c03320
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469150"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "8625393"
 ---
 # <a name="planning-with-negative-on-hand-quantities"></a>Planowanie z użyciem ujemnych ilości dostępnych zapasów
 
@@ -75,7 +75,7 @@ Wynik jest planowanym zamówieniem o ilości 25 szt. (= 25 szt. &minus; 0 szt.) 
 
 ## <a name="planning-when-there-is-a-reservation-against-negative-on-hand-inventory"></a>Planowanie w przypadku rezerwacji względem ujemnych dostępnych zapasów
 
-Jeśli dostosujesz zapasy, gdy istnieją rezerwacje fizyczne, możesz spowodować sytuację, w której zamówienie jest fizycznie zarezerwowane dla ujemnych zapasów. W takim przypadku, ponieważ istnieje rezerwacja fizyczna, optymalizacja planowania zakłada, że jest obsługiwana przez dostępne zapasy, nawet jeśli odbiór dostępnych zapasów nie jest jeszcze zarejestrowany w systemie. W związku z tym zakłada, że uzupełnianie zapasów nie jest wymagane i nie tworzy zamówienia planowanego, aby uzupełnić ilość zamówienia.
+Jeśli dostosujesz zapasy, gdy istnieją rezerwacje fizyczne, możesz spowodować sytuację, w której zamówienie jest fizycznie zarezerwowane dla ujemnych zapasów. W tym przypadku, ponieważ istnieje fizyczna rezerwacja, musisz mieć zapas, który pokryje zarezerwowaną ilość. W związku z tym konieczne jest uzupełnienie zapasów, więc system albo utworzy planowane zamówienie na uzupełnienie ilości, która nie może być pokryta z istniejących zapasów, albo pokryje ją z istniejącego zamówienia na daną pozycję.
 
 Poniższy przykład ilustruje ten scenariusz.
 
@@ -88,7 +88,7 @@ System jest skonfigurowany w następujący sposób:
 - Zamówienie sprzedaży istnieje dla ilości *10* szt. produktu *FG*.
 - Ilość zamówienia sprzedaży jest fizycznie zarezerwowana na istniejące dostępne zapasy.
 
-Następnie można dostosować ilość produktu *FG* tak, aby dostępne zapasy miały 0 (zero). Ponieważ dostępne zapasy produktów są zerowe, ilość zamówienia sprzedaży jest teraz zarezerwowana na ujemne zapasy. Jeśli jednak teraz uruchomisz planowanie główne, nie zostanie utworzone żadne zamówienie planowane w celu dostarczenia zamówienia sprzedaży, ponieważ optymalizacja planowania zakłada, że wymagane dostępne zapasy istnieją w celu dostarczenia rezerwacji fizycznej.
+Następnie można dostosować ilość produktu *FG* tak, aby dostępne zapasy miały 5. Ponieważ stan zapasów produktów w magazynie wynosi 5, ilość zamówienia sprzedaży jest teraz zarezerwowana dla ilości, która nie jest dostępna w magazynie (podobnie byłoby, gdyby stan zapasów w magazynie wynosił 0, wtedy zamówienie sprzedaży byłoby zarezerwowane dla ujemnego stanu zapasów). Jeśli uruchomisz teraz planowanie główne, zostanie utworzone planowane zamówienie na ilość 5 dla *FG* w celu dostarczenia zamówienia sprzedaży, ponieważ Optymalizacja Planowania zawsze wykorzysta istniejące dostawy lub utworzy nowe planowane zamówienie w celu dostarczenia fizycznej rezerwacji.
 
 ## <a name="related-resources"></a>Powiązane zasoby
 

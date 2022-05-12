@@ -2,7 +2,7 @@
 title: Nowości lub zmiany w aplikacji mobilnej Warehouse Management
 description: W tym temacie wymieniono nowe i zmienione funkcje dla każdej wydanej wersji aplikacji mobilnej Warehouse Management dla firmy Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 03/11/2022
+ms.date: 04/25/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,18 +10,33 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 2544c30afe18f290b681efed1705f7cef0cb7620
-ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
+ms.openlocfilehash: 679222005fe12009004921fa75a56145ae94c3ba
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "8487844"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644740"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Nowości lub zmiany w aplikacji mobilnej Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 W tym temacie wymieniono nowe funkcje, poprawki, ulepszenia i znane problemy dla każdej wydanej wersji aplikacji mobilnej Warehouse Management w Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20210"></a>Wersja 2.0.21.0
+
+Ta wersja wprowadza następujące nowe funkcje, poprawki i ulepszenia:
+
+- Rozwiązano kilka awarii.
+- Naprawiono błąd powodujący, że niektóre znaki nie były rozpoznawane podczas skanowania lub pisania na stronie domyślnej.
+- Naprawiono problem, w którym wpisanie backspace na stronie domyślnej powodowało usunięcie dwóch znaków naraz.
+- Naprawiono błąd, który powodował, że pole **Sortuj według** na stronie **Lista prac** wyświetlało nieprawidłową wartość, która nie odpowiadała rzeczywistej kolejności sortowania kart.
+- Naprawiono błąd, który powodował, że po zmianie rozmiaru okna aplikacji w systemie Microsoft Windows wyświetlany był nieprawidłowy układ.
+- Naprawiono błąd, który powodował, że przewijanie wyskakującej listy mogło powodować, że niektóre jej elementy pozostawały ukryte lub były zniekształcone.
+- Przeprojektowanie strony logowania, aby wyświetlała pola nazwy użytkownika i hasła na tej samej stronie, gdy działa na większych ekranach.
+- Poprawiono sposób, w jaki kontrolki reagują na szybkie stukanie.
+- Dodano widok dziennika błędów w aplikacji.
+- Dodano kilka usprawnień dotyczących dostępności (poprawiono narrację, naprawiono brakujące placeholdery na Androidzie, umożliwiono wprowadzanie tekstu z klawiatury dla suwaków i wiele innych).
 
 ## <a name="version-20200"></a>Wersja 2.0.20.0
 

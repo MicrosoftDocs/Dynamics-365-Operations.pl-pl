@@ -2,7 +2,7 @@
 title: Zarządzaj użytkownikami partnerów biznesowych w witrynach handlu elektronicznego B2B
 description: W tym temacie opisano, jak dodawać, usuwać i edytować użytkowników partnerów biznesowych w witrynach e-commerce Microsoft Dynamics 365 Commerce typu business-to-business (B2B) oraz w centrali Commerce.
 author: josaw1
-ms.date: 02/17/2022
+ms.date: 04/19/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: def8d4de082ceb4be77ed7e8898cbef82d52b749
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: c2fb4846a8457296a2ce758198ade5f4b0df8124
+ms.sourcegitcommit: 96e2fb26efd2cd07bbf97518b5c115e17b77a0a8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323462"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "8616864"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>Zarządzaj użytkownikami partnerów biznesowych w witrynach handlu elektronicznego B2B
 
@@ -28,7 +28,8 @@ ms.locfileid: "8323462"
 W tym temacie opisano, jak dodawać, usuwać i edytować użytkowników partnerów biznesowych w witrynach e-commerce Microsoft Dynamics 365 Commerce typu business-to-business (B2B) oraz w centrali Commerce.
 
 > [!NOTE]
-> Warunkiem [wstępnym tego dokumentu jest temat Zarządzanie partnerami biznesowymi b2B przy użyciu hierarchii](partners-customer-hierarchies.md) klientów. 
+> - Warunkiem [wstępnym tego dokumentu jest temat Zarządzanie partnerami biznesowymi b2B przy użyciu hierarchii](partners-customer-hierarchies.md) klientów.
+> - Upewnij się, że zainicjowałeś encję Typy dokumentów w centrali Commerce, otwierając formularz **Typy dokumentów** w zakładce **Administracja organizacji \> Zarządzanie dokumentami \> Typy dokumentów**.
 
 Witryny handlu elektronicznego B2B wymagają od organizacji rejestracji, aby zostać partnerami biznesowymi. Po przesłaniu przez organizację danych rejestracyjnych do witryny handlu elektronicznego B2B żądanie rejestracji przechodzi proces kwalifikacji. Jeśli organizacja zostanie pomyślnie zakwalifikowana, zostaje przyjęta jako partner biznesowy.
 

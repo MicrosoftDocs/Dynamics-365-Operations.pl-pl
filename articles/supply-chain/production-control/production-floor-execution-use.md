@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: a677eb71f97a953c625a1f667b055e5b7696fbe6
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: f163b8feb906470f31a648bf09abf5647c5f1bab
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384432"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644998"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Jak pracownicy korzystają z interfejsu wykonania hal produkcyjnych
 
@@ -74,9 +74,9 @@ Lista aktywnych zadań ma następujące kolumny:
 
 ## <a name="my-jobs-tab"></a>Karta moje zadania
 
-Na **karcie Moje zadania** pracownicy mogą łatwo przeglądać wszystkie zadania nieukończone i niezakończone, które są przypisane specjalnie do nich. Jest to przydatne w firmach, w których zadania są czasami lub zawsze przydzielane określonym pracownikom (zasobom ludzkim), a nie innym rodzajom zasobów (takich jak maszyny). 
+Na **karcie Moje zadania** pracownicy mogą łatwo przeglądać wszystkie zadania nieukończone i niezakończone, które są przypisane specjalnie do nich. Jest to przydatne w firmach, w których zadania są czasami lub zawsze przydzielane określonym pracownikom (zasobom ludzkim), a nie innym rodzajom zasobów (takich jak maszyny).
 
-System planowania automatycznie przypisuje każde zadanie produkcyjne do określonego rekordu zasobu, a każdy rekord zasobu ma typ (na przykład maszyna lub człowiek). Po skonfigurowaniu pracownika jako pracownika produkcyjnego można skojarzyć konto pracownika z unikalnym rekordem zasobów ludzkich. 
+System planowania automatycznie przypisuje każde zadanie produkcyjne do określonego rekordu zasobu, a każdy rekord zasobu ma typ (na przykład maszyna lub człowiek). Po skonfigurowaniu pracownika jako pracownika produkcyjnego można skojarzyć konto pracownika z unikalnym rekordem zasobów ludzkich.
 
 Na **karcie Moje zadania** są wyszczególnione wszystkie nieukończone i niezakończone zadania, które zostały przypisane do rekordu zasobów ludzkich zalogowanego pracownika, o ile którykolwiek pracownik jest zalogowany. Nigdy nie wyświetla zadań, które zostały przypisane do komputera lub innego typu zasobu, nawet jeśli zalogowany pracownik rozpoczął pracę nad tymi zadaniami.
 
@@ -87,7 +87,7 @@ Aby wyświetlić wszystkie zadania, które zostały rozpoczęte przez zalogowane
 ## <a name="my-machine-tab"></a>Karta Moje urządzenie
 
 Na karcie **Moje urządzenie** pracownicy mogą wybrać składnik majątku, który jest połączony z zasobem urządzenia w obrębie filtru ustawionego na karcie **Wszystkie zadania**. Pracownik może następnie wyświetlić stan i kondycję wybranego składnika majątku, odczytując wartości dla maksymalnie czterech wybranych liczników oraz listy ostatnich żądań konserwacji oraz zarejestrowanych przestojów. Pracownik może także zażądać konserwacji wybranego składnika majątku oraz zarejestrowania i edycji przestoju urządzenia. (Tę nazwę karty można dostosowywać i może być inna w przypadku Twojego systemu).
- 
+
 ![Karta Moje urządzenie.](media/pfei-my-machine-tab.png "Karta Moje urządzenie")
 
 Na karcie **Moje urządzenie** są wyświetlane następujące kolumny. Liczby odpowiadają liczbom na poprzedniej ilustracji.
@@ -202,9 +202,9 @@ Można wykonać następujące czynności:
 - Jeśli pracownik wybierze przycisk **OK**, lista pobrania nie zostanie usunięta. Zostanie on zaksięgowany po raporcie zadania w oknie dialogowym **Raport odpadów** lub **Raport postępów**.
 - Jeśli pracownik wybierze opcję **Anuluj** w oknie dialogowym **Raport postępów** lub **Raport odpadów**, lista pobrania zostanie usunięta.
 
-### <a name="adjust-material-from-the-toolbar-on-the-right"></a>Korygowanie materiału z paska narzędzi po prawej stronie
+### <a name="adjust-material-from-the-primary-or-secondary-toolbar"></a>Dostosuj materiał z głównego lub dodatkowego paska narzędzi
 
-Przycisk **Korygowanie materiału** można skonfigurować w taki sposób, aby był wyświetlany na pasku narzędzi po prawej stronie. (Więcej informacji znajdziesz w [Zaprojektuj interfejs wykonawczy hali produkcyjnej](production-floor-execution-tabs.md).) Pracownik może wybrać **Dostosuj materiał** dla zadania produkcyjnego, które jest w toku. W tym przypadku zostanie wyświetlone okno dialogowe **Korekta materiału**, w którym pracownik może dokonać żądanych korekt. Gdy okno dialogowe zostanie otwarte, dla zlecenia produkcyjnego zostanie utworzona produkcyjna lista pobrań, która zawiera wiersze dla dostosowanych ilości. Jeśli pracownik wybierze opcję **Księguj teraz**, korekta zostanie potwierdzona i zostanie zaksięgowana lista pobrania. Jeśli pracownik wybierze opcję **Anuluj**, lista pobrań zostaje usunięta i nie dokonuje się żadnej korekty.
+Przycisk **Korygowanie materiału** można skonfigurować w taki sposób, by pojawiał się na głównym lub dodatkowym pasku narzędzi. (Więcej informacji znajdziesz w [Zaprojektuj interfejs wykonawczy hali produkcyjnej](production-floor-execution-tabs.md).) Pracownik może wybrać **Dostosuj materiał** dla zadania produkcyjnego, które jest w toku. W tym przypadku zostanie wyświetlone okno dialogowe **Korekta materiału**, w którym pracownik może dokonać żądanych korekt. Gdy okno dialogowe zostanie otwarte, dla zlecenia produkcyjnego zostanie utworzona produkcyjna lista pobrań, która zawiera wiersze dla dostosowanych ilości. Jeśli pracownik wybierze opcję **Księguj teraz**, korekta zostanie potwierdzona i zostanie zaksięgowana lista pobrania. Jeśli pracownik wybierze opcję **Anuluj**, lista pobrań zostaje usunięta i nie dokonuje się żadnej korekty.
 
 ### <a name="adjust-material-consumption-for-catch-weight-items"></a>Dostosuj zużycie materiału dla elementów wagi połowu
 
@@ -260,6 +260,42 @@ W obu przypadkach, po potwierdzeniu przez Shannon wyboru, przechodzi do strony l
 Pracownicy mogą rejestrować przerwy. Przerwy można definiować elastycznie, zgodnie z opisem w [Płaca oparta na rejestracjach](pay-based-on-registrations.md).
 
 Pracownik rejestruje przerwę, wybierając opcję **Przerwa**, a następnie wybierając kartę, która reprezentuje typ przerwy (np. obiad). Gdy pracownik potwierdzi wybór, na urządzeniu zostanie wyświetlona strona logowania lub strona, która będzie czekać, aż pracownik potwierdzi, że wrócił z przerwy. Wyświetlana strona zależy od konfiguracji interfejsu wykonywania pomieszczeń produkcyjnych. (Aby uzyskać więcej informacji, zobacz [Konfigurowanie interfejsu wykonania hal produkcyjnych](production-floor-execution-configure.md).)
+
+## <a name="view-the-my-day-dialog"></a>Wyświetl okno dialogowe „Mój dzień”
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+Okno dialogowe **Mój dzień** umożliwia pracownikom przegląd ich rejestracji i sald. Dialog jest podzielony na trzy następujące części:
+
+- Sekcja główna zawiera listę rejestracji, których aktualny pracownik dokonał w wybranym dniu. Otwiera się on, pokazując rejestracje na bieżący dzień, a także umożliwia wybór daty, dzięki czemu pracownik może zobaczyć inne dni.
+- Sekcja **Ostatnie obliczone saldo dzienne** pokazuje aktualne salda pracownika dotyczące płatnego czasu pracy, płatnych nadgodzin, nieobecności i płatnej nieobecności. Wartości te są oparte na rejestracjach, które zostały obliczone podczas procesu zatwierdzania.
+- Sekcja **Balanse** zawiera przegląd sald w określonym okresie dla wybranych kategorii rejestracji (takich jak urlopy, czas standardowy i nadgodziny). Salda te opierają się na sposobie, w jaki ustawia się salda statystyczne w module **Czas pracy i obecność**. Aby uzyskać więcej informacji o tym, jak to ustawić, zobacz [Pokaż salda urlopów w interfejsie wykonawczym hali produkcyjnej](production-floor-execution-payroll-stats.md).
+
+Administratorzy mogą dodać tę funkcję do interfejsu, umieszczając przycisk **Mój dzień** na pasku narzędzi dla każdej odpowiedniej zakładki, jak opisano w [Projektowanie interfejsu wykonawczego hali produkcyjnej](production-floor-execution-tabs.md).
+
+## <a name="working-in-teams"></a>Praca w zespołach
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+Kiedy kilku pracowników jest przydzielonych do tego samego zadania produkcyjnego, mogą oni tworzyć zespół. Drużyna może wyznaczyć jednego pracownika jako pilota. Pozostali pracownicy automatycznie stają się asystentami tego pilota. W powstałej w ten sposób drużynie tylko pilot musi zarejestrować status pracy. Ewidencja czasu pracy dotyczy wszystkich członków zespołu.
+
+### <a name="prerequisites"></a>Wymagania wstępne
+
+Aby móc korzystać z zespołów, administrator musi włączyć akcję **Asysstent** dla głównego paska narzędzi w zakładce **Wszystkie zadania** w interfejsie wykonawczym hali produkcyjnej. Aby uzyskać więcej informacji, zobacz [Projektowanie interfejsu wykonania hal produkcyjnych](production-floor-execution-tabs.md).
+
+### <a name="form-a-new-team-that-has-a-pilot-and-an-assistant"></a>Utwórz nową drużynę, która będzie miała pilota i asystenta
+
+Pracownik może zarejestrować się jako asystent, wybierając **Asystenta** w zakładce **Wszystkie zadania**. Następnie w wyświetlonym oknie dialogowym **Wybierz pracownika do asystowania** pracownik może wybrać pilota z listy pracowników, którzy aktywnie pracują nad danym zadaniem. Gdy pracownik potwierdzi swój wybór, zostaje asystentem wybranego pracownika, który staje się pilotem nowego zespołu.
+
+### <a name="assign-a-new-pilot-to-an-existing-team"></a>Przydziel nowego pilota do istniejącego zespołu
+
+Kiedy drużyna chce wybrać nowego pilota, obecny pilot musi wyznaczyć innego pracownika w zespole na nowego pilota. Aby wyznaczyć nowego pilota, obecny pilot wybiera **Asystenta** w zakładce **Wszystkie zadania**. Następnie, w wyświetlonym oknie dialogowym **Zmień pilota**, pilot może wybrać nowego pilota z listy pracowników, którzy już są w zespole. Gdy aktualny pilot potwierdzi swój wybór, zostaje on całkowicie usunięty z drużyny. Mogą jednak powrócić do zespołu, gdy będą tego potrzebować.
+
+### <a name="assistant-clocks-out"></a>Asystent kończy pracę
+
+Kiedy pracownik, który pracuje jako asystent, odchodzi z zespołu. Jeśli opcje **Stałe zespoły** i **Restart po włączeniu** są ustawione na *Tak*, pracownik, który się wylogował, automatycznie dołączy do zespołu przy następnym włączeniu. Opcje te możesz znaleźć w zakładce **Ogólne** na stronie **Parametry czasu pracy**.
 
 ## <a name="opening-instructions"></a>Otwieranie instrukcji
 

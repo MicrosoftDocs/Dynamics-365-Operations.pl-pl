@@ -1,8 +1,8 @@
 ---
 title: Omówienie rozliczeń subskrypcji
-description: W tym temacie opisano rozliczanie subskrypcji w Microsoft Dynamics 365 Finance.
+description: W tym temacie opisano rozliczanie subskrypcji w Microsoft Dynamics 365 Finance..
 author: JodiChristiansen
-ms.date: 02/09/2022
+ms.date: 04/13/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2022-02-09
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 2796e25ec783941de381fb5ae96145eeba870bde
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 9d46492cca3cc435048fa497f6b1f3a28b77140a
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462477"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644535"
 ---
 # <a name="subscription-billing-overview"></a>Omówienie rozliczeń subskrypcji
 
@@ -33,6 +33,8 @@ Rozwiązanie ma trzy moduły, których można używać niezależnie. Można rów
 - **Cykliczne fakturowanie umowy** — ten moduł umożliwia cykliczne zarządzanie fakturowaniem i ceną zapewnia kontrolę parametrów cen i fakturowania, odnowienia umowy oraz fakturowania skonsolidowanego.
 - **Przychody i odroczenia wydatków** — Ten moduł eliminuje ręczne procesy i zależność systemów zewnętrznych, zarządzając przychodami i umożliwiając w czasie rzeczywistym wgląd w miesięczny cykliczny przychód.
 - **Wielo elementowa alokacja przychodów** — ten moduł pomaga zapewnić zgodność przychodów, obsługuj alokację cen i przychodów dla wielu towarów.
+
+Więcej informacji o rozliczaniu subskrypcji znajdziesz w [Rozliczanie subskrypcji zawartości Power BI](sub-bill-power-bi.md).
 
 Fakturowanie subskrypcji jest włączane za pośrednictwem **funkcji zarządzania**. Nie można go jednak używać z funkcją **Rozpoznawania przychodów**. Dlatego tę funkcję należy wyłączyć przed włączeniem fakturowania subskrypcji.
 

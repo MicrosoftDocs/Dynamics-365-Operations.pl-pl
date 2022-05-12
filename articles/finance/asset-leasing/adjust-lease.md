@@ -2,7 +2,7 @@
 title: Korygowanie wynajmów
 description: W temacie wyjaśniono sposób korygowania wynajmu. Korekta może być wymagana w przypadku zmodyfikowania warunków wynajmu, wydłużenia wynajmu lub zmiany innych okoliczności.
 author: moaamer
-ms.date: 10/28/2020
+ms.date: 03/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1016b69fd59bbe90924996f5c931cb5d0f779253de66f5f3821a8c3001d3313b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7d7151c28d124420638dc4e69a8ab5359ecf443c
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729661"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644563"
 ---
 # <a name="adjust-leases"></a>Korygowanie wynajmów
 
@@ -134,5 +134,19 @@ Jeśli wynajem został dostosowany, można wyświetlić jego różne wersje. Mo�
 2. Aby wyświetlić harmonogramy historyczne, otwórz zmodyfikowany wynajem na stronie **Podsumowanie wynajmu**, wybierz żądaną księgę, a następnie w okienku akcji wybierz opcję **Historia wersji księgi**.
 3. Na stronie **Wersja księgi** wybierz wersję i harmonogram do wyświetlenia.
 
+## <a name="adjust-a-lease-book"></a>Korygowanie księgi wynajmu
+
+Wykonaj poniższe kroki, aby dostosować tylko księgę wynajmu.
+
+1. Przejdź do **Wynajem składnika majątku** \> **Wynajmy** \> **Podsumowanie wynajmu**.
+2. Wybierz i otwórz wynajem.
+3. Na stronie **Szczegóły wynajmu** wybierz pozycję **Księgi**.
+4. W Okienku akcji na karcie **Szczegóły księgi** w grupie **Obsługa** wybierz **Dostosuj księgę**. 
+5. Usuń wiersze harmonogramu płatności.
+6. W polu **Data modyfikacji wynajmu** wpisz datę modyfikacji. Następnie rozważ usunięcie wszystkich dodatkowych czynników związanych z aktywami/pasywami (początkowy koszt bezpośredni, zachęta do wynajmu, przedpłata, koszt demontażu i gwarancja wartości końcowej), jeśli takie istnieją. 
+7. Aby uniknąć niedokładnych obliczeń korekty wynajmu, dodaj nowe wiersze harmonogramu płatności dla nowych dat płatności, które odpowiadają dacie modyfikacji. 
+
+> [!NOTE] 
+> Zalecamy, abyś do dostosowania wynajmu użył kreatora **Korekta leasingu**. Kreator zmniejsza liczbę kroków wykonywanych ręcznie, daje podgląd sald po korekcie i pozwala zmienić kwoty przed zaksięgowaniem.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

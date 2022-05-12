@@ -2,7 +2,7 @@
 title: Konfigurowanie metody płatności na konto odbiorcy dla witryn handlu elektronicznego B2B
 description: W tym temacie opisano sposób konfigurowania metody płatności konta odbiorcy w programie Microsoft Dynamics 365 Commerce. Opisano w nim także wpływ limitów kredytowych na rejestrowanie płatności a konta w witrynach e-commerce (B2B) firmy.
 author: josaw1
-ms.date: 02/16/2022
+ms.date: 04/19/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 0366f7b51ac138cc7305f98d5607c554440e6d34
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: a8fdeb109204557f0e44457e23a60224e662474f
+ms.sourcegitcommit: 96e2fb26efd2cd07bbf97518b5c115e17b77a0a8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323362"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "8616839"
 ---
 # <a name="configure-the-customer-account-payment-method-for-b2b-e-commerce-sites"></a>Konfigurowanie metody płatności na konto odbiorcy dla witryn handlu elektronicznego B2B
 
@@ -82,13 +82,13 @@ Wartości, które obsługuje właściwość **Typu Limit kredytu**, to **Brak**,
 
 Inną właściwością mającą wpływ na zamawianie a konta jest właściwość **Wymagany limit kredytu**, która znajduje się na skróconej karcie **Kredyty i windykacja** w rekordzie odbiorcy. Ustawienie tej właściwości na wartość **Tak** dla określonych odbiorców może wymusić w systemie sprawdzanie limitu kredytu, nawet jeśli właściwość typu **Limit kredytu** została ustawiona na **Brak**, aby określić, że limit kredytu nie powinien być sprawdzany dla żadnego odbiorcy.
 
-Obecnie witryny B2B, w których jest włączona właściwość **Wymagany limit kredytu**, mają dodatkowe funkcje. Jeśli właściwość jest włączona w rekordzie klienta, gdy klient składa zamówienie, witryna B2B uniemożliwia mu korzystanie z metody płatności na koncie w celu spłacenia większej kwoty niż pozostałe saldo kredytu. Na przykład, jeśli pozostałe saldo kredytu klienta wynosi 1000 USD, ale zamówienie ma wartość 1200 USD, klient może zapłacić tylko 1000 USD za pomocą metody na koncie. Aby spłać saldo, muszą użyć innej metody płatności. Jeśli właściwość **Wymagany limit kredytu** jest wyłączona w rekordzie odbiorcy, odbiorca może zapłacić dowolną kwotę przy użyciu metody płatności a a kontem. Mimo to, nawet jeśli odbiorca może składać zamówienia, system nie pozwoli na realizację tych zamówień, jeśli ich realizacja przekroczy limit kredytu. Jeśli musisz sprawdzić limit kredytu dla wszystkich klientów, którzy kwalifikują się do płatności na koncie, zalecamy ustawienie właściwości **Typ limitu kredytu** na **Saldo + list przewozowy lub list przewozowy** oraz **Obowiązkowy limit kredytowy** nieruchomości do **Nie**.
+Obecnie klient korzystający z formy płatności akonto nie może zapłacić więcej niż pozostała kwota kredytu za zamówienie. Na przykład, jeśli pozostałe saldo kredytu klienta wynosi 1000 USD, ale zamówienie ma wartość 1200 USD, klient może zapłacić tylko 1000 USD za pomocą metody na koncie. Klient musi wtedy użyć innej metody płatności, by zapłacić saldo. W przyszłym wydaniu, w konfiguracji Commerce, użytkownicy będą mogli wydawać więcej niż wynosi ich limit kredytowy podczas składania zamówień.
 
 Moduł **Kredyty i windykacja** ma nowe możliwości zarządzania kredytem. Aby włączyć te możliwości, włącz funkcję **Zarządzanie kredytem** w obszarze roboczym **Zarządzanie funkcjami**. Jeden z nowych możliwości umożliwia wstrzymywanie zamówień sprzedaży na podstawie reguł blokowania. Osoba kierownika ds. kredytów może następnie zwolnić lub odrzucić zamówienia po dalszej analizie. Możliwość wstrzymywania zamówień sprzedaży nie ma jednak zastosowania do zamówień commerce, ponieważ zamówienia sprzedaży często mają przedpłatę, a funkcja **Zarządzanie kredytem** nie obsługuje w pełni scenariuszy przedpłat. 
 
 Niezależnie od tego, czy funkcja **Zarządzanie kredytami** jest włączona, jeśli saldo klienta przekroczy limit kredytowy podczas realizacji zamówienia, zamówienia sprzedaży nie zostaną wstrzymane. W zamian usługa Commerce będzie generować komunikat ostrzegawczy lub komunikat o błędzie, w zależności od wartości pola **Komunikat przy przekroczeniu limitu kredytu** na skróconej karcie Limity **kredytowe**.
 
-Właściwość **Wyklucz z zarządzania kredytami** zapobiegająca zawieszaniu zamówień sprzedaży w ramach usługi handlowej znajduje się w nagłówku zamówienia sprzedaży (**Handel detaliczny \> klientów \> Wszystkie zamówienia sprzedaży**). Jeśli właściwość ma wartość **Tak** (wartość domyślna) dla zamówień sprzedaży w handlu, zamówienia zostaną wykluczone z wstrzymanego przepływu pracy zarządzania kredytem. Należy zauważyć, że chociaż właściwość nosi nazwę **Wyklucz z zarządzania kredytem**, zdefiniowany limit kredytu będzie nadal używany podczas realizacji zamówienia. Zamówienia właśnie nie będą wstrzymane.
+Właściwość **Wyklucz z zarządzania kredytami** zapobiegająca zawieszaniu zamówień sprzedaży w ramach usługi handlowej znajduje się w nagłówku zamówienia sprzedaży (**Handel detaliczny \> klientów \> Wszystkie zamówienia sprzedaży**). Jeśli właściwość ma wartość **Tak** (wartość domyślna) dla zamówień sprzedaży w handlu, zamówienia zostaną wykluczone z wstrzymanego przepływu pracy zarządzania kredytem. Chociaż właściwość nosi nazwę **Wyklucz z zarządzania kredytem**, zdefiniowany limit kredytu będzie nadal używany podczas realizacji zamówienia. Zamówienia właśnie nie będą wstrzymane.
 
 Możliwość wstrzymywania zamówień sprzedaży w usługach Commerce na podstawie reguł blokowania jest planowana dla przyszłych wersji handlowych. Dopóki nie będzie obsługiwane, jeśli musisz wymusić przechodzenie zamówień sprzedaży w ramach usługi Commerce przez nowe przepływy zarządzania kredytami, możesz dostosować następujące pliki XML w rozwiązaniu Visual Studio. W plikach zmodyfikuj logikę, tak aby flaga **CredManExcludeSalesOrder** mieć wartość **No**. W ten sposób właściwość **Wyklucz z zarządzania kredytami** zostanie domyślnie ustawiona na **Nie** dla zamówień sprzedaży w usłudze Commerce.
 

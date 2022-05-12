@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c022bb15975a1411230d28067a2225c95c0573bf
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: e43aaad2f5b80996eb0fc10f550f073aec67fe5d
+ms.sourcegitcommit: 26c726bd0b00935e3d2c31fdc5a3b2ae03a8a2b0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062732"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661466"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge-faq"></a>Infrastruktura Dynamics 365 Human Resources – często zadawane pytania
 
@@ -32,7 +32,7 @@ Ten temat zawiera odpowiedzi na często zadawane pytania dotyczące scalania inf
 
 ## <a name="what-is-the-dynamics-365-human-resources-infrastructure-merge"></a>Co to jest scalanie infrastruktury Dynamics 365 Human Resources?
 
-Dynamics 365 Human Resources jest autonomiczną aplikacją, która korzysta z innej infrastruktury niż inne aplikacje Finanse i Działania, takie jak Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce i Dynamics 365 Project Operations. Scalanie infrastruktury przeniesie Dynamics 365 Human Resources do tej samej infrastruktury, co inne aplikacje Finanse i Działania.
+Dynamics 365 Human Resources jest samodzielną aplikacją, która korzysta z innej infrastruktury niż pozostałe aplikacje finansowe i operacyjne, takie jak Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce i Dynamics 365 Project Operations. Scalanie infrastruktury przeniesie Dynamics 365 Human Resources do tej samej infrastruktury, co inne aplikacje Finanse i Działania.
 
 ## <a name="value-and-benefits-of-the-infrastructure-merge"></a>Wartość i korzyści związane z fuzją infrastruktury
 
@@ -231,6 +231,3 @@ Obecni użytkownicy aplikacji Dynamics 365 i użytkownicy autonomicznych Dynamic
 
 Dodatkowe środowiska nie są wymagane do obsługi zmiany infrastruktury.
 
-### <a name="where-should-i-go-if-i-have-additional-questions-about-product-licensing"></a>Gdzie mam się udać, jeśli mam dodatkowe pytania dotyczące licencjonowania produktów?
-
-W przypadku pytań dotyczących licencjonowania można znaleźć więcej informacji w [Biz Apps Hub — ceny i licencje D365](https://businessapplications.transform.microsoft.com/resources/pricing-and-licensing?tab=grandfathering). Jeśli te informacje nie pomogą w tym problemie, otwórz prośbę za pomocą usługi LicenseQ.

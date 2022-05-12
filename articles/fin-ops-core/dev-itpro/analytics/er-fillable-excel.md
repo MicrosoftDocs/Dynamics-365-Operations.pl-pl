@@ -2,7 +2,7 @@
 title: Projektowanie konfiguracji projektu w celu generowania dokumentów wychodzących w formacie programu Excel
 description: Ten temat zawiera informacje o tym, jak zaprojektować format modułu raportowania elektronicznego (ER) do wypełniania w szablonie programu Excel, a następnie generować dokumenty wychodzące w formacie programu Excel.
 author: NickSelin
-ms.date: 02/28/2022
+ms.date: 03/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1b2f38aa9e5eff9366697afd57ceefd06f026096
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: ec25065f2e3cc3b5dd3c9004d5330447f7b2ac61
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388270"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8645143"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Projektowanie konfiguracji projektu w celu generowania dokumentów wychodzących w formacie programu Excel
 
@@ -141,7 +141,12 @@ Można skonfigurować szablon programu Excel do używania komórek do prezentowa
 > [!NOTE]
 > Z powodu znanego [ograniczenia programu Excel](https://support.microsoft.com/topic/you-cannot-use-the-autofit-feature-for-rows-or-columns-that-contain-merged-cells-in-excel-34b54dd7-9bfc-6c8f-5ee3-2715d7db4353), nawet jeśli skonfigurujesz komórki do zawijania tekstu i skonfigurujesz wiersze zawierające te komórki tak, aby automatycznie dopasowywały ich wysokość do zawiniętego tekstu, możesz nie być w stanie użyj funkcji **AutoFit** i **Zawijanie tekstu** Excela dla scalonych komórek i zawierających je wierszy. 
 
-Na podstawie wersji Dynamics 365 Finance 10.0.23 można wymusić na ER obliczenie, w generowanym dokumencie, wysokości każdego wiersza, który został skonfigurowany tak, aby jego wysokość automatycznie pasowała do zawartości zagnieżdżonych komórek za każdym razem, gdy wiersz zawiera co najmniej jedną scalone komórkę, która została skonfigurowana do oznaczania tekstu wewnątrz tego wiersza. Obliczona wysokość służy do zmiany rozmiaru wiersza w celu zapewnienia, że wszystkie komórki wiersza są widoczne w generowanym dokumencie. Aby rozpocząć korzystanie z tej funkcji po uruchomieniu formatów raportów elektronicznych skonfigurowanych do generowania dokumentów wychodzących za pomocą szablonów programu Excel, należy wykonać następujące kroki.
+Od wersji 10.0.23 Dynamics 365 Finance, kiedy pracujesz w wygenerowanym dokumencie, na wysokości każdego wiersza, który został skonfigurowany tak, aby jego wysokość automatycznie pasowała do zawartości zagnieżdżonych komórek za każdym razem, gdy wiersz zawiera co najmniej jedną scalone komórkę, która została skonfigurowana do oznaczania tekstu wewnątrz tego wiersza. Obliczona wysokość służy do zmiany rozmiaru wiersza w celu zapewnienia, że wszystkie komórki wiersza są widoczne w generowanym dokumencie.
+
+> [!NOTE]
+> Należy pamiętać, że ta funkcja może nie działać zgodnie z oczekiwaniami, jeśli do formatowania scalanej komórki zostanie użyta niestandardowa czcionka. Ponieważ Excel nie osadza czcionek niestandardowych, nie dostarcza informacji o rozmiarze czcionki niestandardowej. Dlatego rozmiar scalonej komórki może być niepoprawnie oszacowany.
+
+Aby rozpocząć korzystanie z tej funkcji po uruchomieniu formatów raportów elektronicznych skonfigurowanych do generowania dokumentów wychodzących za pomocą szablonów programu Excel, należy wykonać następujące kroki.
 
 1. Wybierz kolejno opcje **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
 2. Na stronie **Konfiguracje lokalizacji** w sekcji **Powiązane łącza** wybierz kafelek **Parametry raportowania elektronicznego**.

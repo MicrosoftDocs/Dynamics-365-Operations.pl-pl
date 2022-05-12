@@ -9,17 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: b41ff8a112f801cd9bf5ebad3aed588ccb40e1f8
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: 826c1cb0fba7025b16dadbfa6157683392945103
+ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388370"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "8614158"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-austria"></a>Przykład integracji usługi rejestracji fiskalnej (Austria)
 
 [!include[banner](../includes/banner.md)]
-[!include[banner](../includes/preview-banner.md)]
 
 W tym temacie znajduje się omówienie przykładu integracji fiskalnej dla Austrii w rozwiązaniu Microsoft Dynamics 365 Commerce.
 

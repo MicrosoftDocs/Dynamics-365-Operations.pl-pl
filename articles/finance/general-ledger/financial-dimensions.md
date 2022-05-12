@@ -2,7 +2,7 @@
 title: Wymiary finansowe
 description: W tym temacie opisano różne typy wymiarów finansowych oraz sposoby ich konfigurowania.
 author: aprilolson
-ms.date: 01/03/2019
+ms.date: 03/07/2022
 ms.topic: article
 ems.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9d5de5b58f0d498c4766659671d43fdb216cd6a870345509505b5a6bc19bdd4a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 36e667e8dd1282e788eb40cd392baa9db824cec2
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754201"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644367"
 ---
 # <a name="financial-dimensions"></a>Wymiary finansowe
 
@@ -79,8 +79,12 @@ Aby pomóc utrzymać więzy integralności danych, w wyjątkowych sytuacjach mo�
 - Czy wymiar finansowy jest używany w jakiejkolwiek aktywnej strukturze konta, strukturze reguły zaawansowanej lub zestawie wymiarów finansowych?
 - Czy wymiar finansowy wchodzi w skład domyślnego formatu integracji wymiarów finansowych?
 - Czy wymiar finansowy ustawiono jako wymiar domyślny?
+- Czy wymiar finansowy został odznaczony w ustawieniach Financial Reporting? 
 
 Jeśli którekolwiek z tych kryteriów jest spełnione, nie można usunąć wymiaru finansowego.
+
+> [!NOTE]
+> Począwszy od wersji 10.0.27 Finance, wymiary finansowe nie będą już automatycznie wybierane do konfiguracji raportów finansowych podczas ich tworzenia. 
 
 ## <a name="default-dimension-values"></a>Wartości domyślne wymiarów
 

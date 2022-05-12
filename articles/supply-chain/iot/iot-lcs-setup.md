@@ -14,18 +14,27 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ebf11b55f1034b9a84dda9ada77c2f1b7f587a58
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 89d2f53a761085949885c987d664654c3423524b
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781596"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8645085"
 ---
 # <a name="install-the-iot-intelligence-add-in-in-lcs"></a>Instalowanie dodatku Analiza Internetu rzeczy (IoT) w usługach LCS
 
 [!include [banner](../../includes/banner.md)]
 
 W tym temacie objaśniono, jak zainstalować dodatek analizy Internetu rzeczy (IoT) w usługach Microsoft Dynamics Lifecycle Services (LCS). Należy zauważyć, że dodatki nie mogą być instalowane w środowisku demonstracyjnym/próbnym. Aby można było zainstalować dodatek, trzeba [utworzyć zasoby platformy Azure](iot-azure-setup.md).
+
+Analizę IoT można konfigurować bez pisania kodu. Oto podstawowe kroki.
+
+1. [Skonfiguruj zasoby platformy Azure](iot-azure-setup.md) — utwórz centrum IoT, pamięć podręczną Redis i magazyn kluczy, które będą dostępny z poziomu aplikacji Supply Chain Management.
+2. [Formaty schematu wiadomości dla usługi IoT Hub](iot-schema-format.md) — skonfiguruj urządzenia do wysyłania wiadomości do usługi IoT Hub oraz zdefiniuj format komunikatu JSON (JavaScript Object Notation).
+3. W zarządzaniu funkcjami włącz flagę funkcji analizy IoT.
+4. Zainstaluj dodatek analizy IoT w usłudze Microsoft Dynamics Lifecycle Services (LCS) – zainstaluj ten dodatek w usłudze LCS i skonfiguruj wpisy tajne platformy Azure (jak opisano w tym temacie).
+5. [Skonfiguruj metryki](iot-metrics-setup.md) — skonfiguruj metryki w aplikacji Supply Chain Management.
+6. [Skonfiguruj scenariusz](iot-scenario-setup.md) — skonfiguruj scenariusze w aplikacji Supply Chain Management.
 
 ## <a name="set-up-the-lcs-environment"></a>Konfigurowanie środowiska usług LSC
 

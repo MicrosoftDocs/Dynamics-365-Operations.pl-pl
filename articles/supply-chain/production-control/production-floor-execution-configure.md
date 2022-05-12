@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 5a0ead85eaeb6b96b80716614990af8c8e5e70f7
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 083f5a30323cdc813116af7462563c3b8dd5e4f5
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384754"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644405"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurowanie interfejsu wykonania hal produkcyjnych
 
@@ -111,17 +111,67 @@ Aby używać tej funkcji, włącz następujące funkcje w module [Zarządzanie f
 
 - *(Wersja zapoznawcza) Raport pozycji ilości efektywnej z interfejsu wykonania hal produkcyjnych*
 
+### <a name="enable-the-my-day-dialog"></a>Włącz okno dialogowe „Mój dzień”
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+Okno dialogowe **Mój dzień** zapewnia pracownikom przegląd ich codziennych rejestracji i aktualnych sald płatnego czasu pracy, płatnych nadgodzin, nieobecności i płatnej nieobecności.
+
+Aby używać tej funkcji, włącz następujące funkcje w module [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *Widok „Mój dzień” dla interfejsu wykonania hal produkcyjnych*
+
+### <a name="enable-teams"></a>Włączanie zespołów
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+Kiedy kilku pracowników jest przydzielonych do tego samego zadania produkcyjnego, mogą oni tworzyć zespół. Drużyna może wyznaczyć jednego pracownika jako pilota. Pozostali pracownicy automatycznie stają się asystentami tego pilota. W powstałej w ten sposób drużynie tylko pilot musi zarejestrować status pracy. Ewidencja czasu pracy dotyczy wszystkich członków zespołu.
+
+Aby używać tej funkcji, włącz następujące funkcje w module [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *Zespoły produkcyjne w interfejsie wykonania hal produkcyjnych*
+
+### <a name="enable-additional-configuration-in-the-production-floor-execution-interface"></a>Włączenie dodatkowej konfiguracji w interfejsie wykonawczym hali produkcyjnej
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+Ta funkcja dodaje do strony **Konfiguracja wykonania hali produkcyjnej** ustawienia dla następujących funkcji:
+
+- Automatycznie otwieraj okno dialogowe **Rozpocznij zadanie** po zakończeniu wyszukiwania.
+- Automatycznie otwieraj okno dialogowe **Zgłoś postępy** po zakończeniu wyszukiwania.
+- Wstępnie wypełnij pozostałą ilość w oknie dialogowym **Raport postępu**.
+- Włącz korekty zużycia materiałów w oknie dialogowym **Raport o postępie**. (Ta funkcjonalność wymaga również funkcji *Rejestruj zużycie materiału na interfejsie wykonawczym hali produkcyjnej (nie-WMS)*).
+- Włącz wyszukiwanie według ID projektu.
+
+Informacje o tym, jak korzystać z tych ustawień, znajdują się w dalszej części tego tematu.
+
+Aby używać tej funkcji, włącz następujące funkcje w module [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *Dodatkowa konfiguracja w interfejsie wykonania hal produkcyjnych*
+
+
 ## <a name="work-with-production-floor-execution-configurations"></a>Praca z konfiguracjami wykonania hali produkcyjnej
 
 Aby utworzyć i utrzymać konfiguracje wykonania hali produkcyjnej, przejdź do **Kontrola produkcji \> Konfiguracja \> Uruchomienie produkcji \> Konfigurowanie interfejsu wykonania hal produkcyjnych**. Na stronie **Konfigurowanie interfejsu wykonania hal produkcyjnych** wyświetlana jest lista istniejących konfiguracji. Na tej stronie można wykonać następujące akcje:
 
 - Wybierz dowolną konfigurację hali produkcyjnej znajdującą się w lewej kolumnie, aby ją wyświetlić i edytować.
-- Wybierz opcję **Nowy** w okienku akcji, aby dodać nową konfigurację do listy. Następnie w polu **Konfiguracja** wprowadź nazwę, aby zidentyfikować nową konfigurację. Wprowadzona tutaj nazwa musi być unikatowa wśród wszystkich konfiguracji i nie będzie można jej później edytować.
+- Wybierz **Nowy** w okienku akcji, aby dodać nową konfigurację do listy. Następnie w polu **Konfiguracja** wprowadź nazwę, aby zidentyfikować nową konfigurację. Wprowadzona tutaj nazwa musi być unikatowa wśród wszystkich konfiguracji i nie będzie można jej później edytować. Opcjonalnie: W polu **opis** opcjonalnie możesz wprowadzić opis konfiguracji.
 
-Następnie skonfiguruj różne ustawienia dla wybranej konfiguracji. Dostępne są następujące pola:
+Następnie skonfiguruj różne ustawienia dla wybranej konfiguracji, tak jak to opisano w kolejnych podrozdziałach.
 
-- **Tylko wejścia i wyjścia** - dla tej opcji ustaw wartość *Tak*, aby utworzyć uproszczony interfejs, który zapewnia tylko funkcje rejestracji i wyrejestrowywania. Spowoduje to wyłączenie większości innych opcji na tej stronie. Aby można było włączyć tę opcję, należy usunąć wszystkie wiersze ze skróconej karty **Wybór kart**.
-- **Włącz wyszukiwanie** — ustaw tę opcję na wartość *Tak*, aby uwzględnić pole wyszukiwania na liście zadań. Pracownicy mogą znaleźć konkretną pracę, wpisując jej ID lub znaleźć wszystkie prace dla konkretnego zlecenia, wpisując ID zlecenia. Pracownicy mogą wprowadzać identyfikator za pomocą klawiatury lub skanując kod kreskowy.
+### <a name="the-general-fasttab"></a>Skrócona karta Ogólne
+
+Poniższe ustawienia są dostępne na skróconej karcie **Ogólne**.
+
+- **Tylko wejścia i wyjścia** – dla tej opcji ustaw wartość *Tak*, aby utworzyć uproszczony interfejs, który zapewnia tylko funkcje rejestracji i wyrejestrowywania. To ustawienie wyłącza większość innych opcji dostępnych na tej stronie. Aby można było włączyć tę opcję, należy usunąć wszystkie wiersze ze skróconej karty **Wybór kart**.
+- **Włącz wyszukiwanie** – ustaw tę opcję na wartość *Tak*, aby uwzględnić pole wyszukiwania na liście zadań. Pracownicy mogą znaleźć konkretną pracę, wpisując jej ID lub można znaleźć wszystkie prace dla konkretnego zlecenia, wpisując ID zlecenia. Pracownicy mogą wprowadzać identyfikator za pomocą klawiatury lub skanując kod kreskowy.
+- **Włącz wyszukiwanie według ID projektu** – ustaw tę opcję na *Tak*, aby umożliwić pracownikom wyszukiwanie według ID projektu (oprócz ID zadania i ID zlecenia) w polu wyszukiwania interfejsu wykonawczego hali produkcyjnej. Możesz ustawić tę opcję na *Tak* tylko wtedy, gdy opcja **Włącz wyszukiwanie** jest również ustawiona na *Tak*.
+- **Automatycznie otwieraj okno dialogowe startu** – kiedy ta opcja jest ustawiona na *Tak*, okno dialogowe **Rozpocznij pracę** jest automatycznie otwierane, kiedy pracownicy używają paska wyszukiwania, by znaleźć pracę.
+- **Automatycznie otwieraj okno dialogowe Zgłoś postępy** – kiedy ta opcja jest ustawiona na *Tak*, okno dialogowe **Zgłaszanie postępu** jest automatycznie otwierane, kiedy pracownicy używają paska wyszukiwania, by znaleźć pracę.
+- **Włącz dostosowanie materiału** – ustaw tę opcję na *Tak*, aby włączyć przycisk **Dostosuj materiał** w oknie dialogowym **Raport postępu**. Pracownicy mogą wybrać ten przycisk, aby dostosować zużycie materiału dla danego zadania.
 - **Zgłoś ilość przy wyjściu** – wartość *Tak* powoduje, że pracownicy będą monitowani o raportowanie informacji zwrotnych dotyczących zadań w toku podczas wyrejestrowywania. Jeśli ustawiono wartość *Nie*, pracownik nie będzie monitowany.
 - **Zablokuj pracownika** — Jeśli ta opcja ma wartość *Nie*, pracownicy są wylogowani natychmiast po dokonaniu rejestracji (np. nowego zadania). Interfejs powróci do strony logowania. Jeśli ta opcja jest ustawiona na wartość *Tak*, pracownicy pozostaną zalogowani do interfejsu wykonawczego hali produkcyjnej. Jednak pracownik może ręcznie wylogować się, aby inny pracownik mógł się zalogować, podczas gdy interfejs wykonywania na poziomie produkcyjnym nadal działa na tym samym koncie użytkownika systemu. Aby uzyskać więcej informacji o tych typach kont, zobacz, zobacz temat [Przypisani użytkownicy](config-job-card-device.md#assigned-users).
 - **Użyj faktycznego czasu rejestracji** – Ustaw to na *Tak*, aby ustawić czas każdej nowej rejestracji na dokładny czas, w którym pracownik przesłał rejestrację. Jeśli ta opcja jest ustawiona na *Nie*, w zamian zostanie użyta godzina logowania. Zazwyczaj ustawienie to jest ustawione na *Tak*, jeśli włączono opcję **Zablokuj pracownika** i/lub opcję **Jeden pracownik** ustawioną na *Tak*, gdzie pracownik często pozostaje zalogowany przez dłuższy okres czasu.
@@ -130,7 +180,17 @@ Następnie skonfiguruj różne ustawienia dla wybranej konfiguracji. Dostępne s
 - **Czas trwania blokady ekranu** – gdy opcja **Zezwalaj na blokowanie ekranu dotykowego** jest ustawiona na *Tak*, ta opcja służy do określenia liczby sekund, kiedy ekran dotykowy powinien być zablokowany do oczyszczania. Czas trwania musi być liczbą od 5 do 120 sekund.
 - **Generowanie numeru identyfikacyjnego** – ustawienie tej opcji na wartość *Tak*, aby generować nową tablicę rejestracyjną za każdym razem, gdy pracownik korzysta z interfejsu wykonawczego hali produkcyjnej, aby zgłosić gotowość. Numer identyfikacyjny jest generowany na podstawie sekwencji numerów ustawionej na stronie **Parametry zarządzania magazynem**. Po ustawieniu wartości opcji *Nie* pracownicy muszą określić istniejący numer identyfikacyjny podczas zgłaszania wyrobów gotowych.
 - **Drukuj etykietę** – ustawienie tej opcji na wartość *Tak* powoduje Drukowanie etykiety numeru identyfikacyjnego, gdy pracownik używa interfejsu wykonawczego hali produkcyjnej do zgłaszania zakończenia. Konfiguracja etykiety jest ustawiana w obszarze marszruta dokumentów, zgodnie z opisem w [Układ rozsyłania dokumentów dla etykiet numerów identyfikacyjnych](../warehousing/document-routing-layout-for-license-plates.md).
-- **Wybór karty**  – Ustawienia w tej sekcji służą do wybrania kart, które mają być wyświetlane w interfejsie uruchomienia hali produkcyjnej, gdy bieżąca konfiguracja jest aktywna. W razie potrzeby można zaprojektować dowolną liczbę kart, a następnie dodać i umieścić je w tym miejscu. Aby uzyskać szczegółowe informacje na temat projektowania kart i pracy z ustawieniami tutaj, zobacz [Projektowanie interfejsu wykonania hal produkcyjnych](production-floor-execution-tabs.md).
+
+### <a name="the-tab-selection-fasttab"></a>Wybór karty na skróconej karcie
+
+Użyj ustawień na skróconej karcie **Wybór karty**, aby wybrać, które karty powinien pokazywać interfejs wykonawczy hali produkcyjnej, gdy aktywna jest bieżąca konfiguracja. Możesz zaprojektować tyle zakładek, ile potrzebujesz, a następnie dodawać je i rozmieszczać według własnych potrzeb za pomocą przycisków na pasku narzędzi skróconej karty. Aby uzyskać informacje na temat projektowania kart i pracy z ustawieniami tutaj, zobacz [Projektowanie interfejsu wykonania hal produkcyjnych](production-floor-execution-tabs.md).
+
+### <a name="the-report-progress-fasttab"></a>Skrócona karta Zgłaszanie postępu
+
+Poniższe ustawienia są dostępne na skróconej karcie **Zgłaszanie postępu**.
+
+- **Włącz dostosowanie materiału** – ustaw tę opcję na *Tak*, aby zawrzeć przycisk **Dostosuj materiał** w oknie dialogowym **Raport postępu**. Pracownicy mogą wybrać ten przycisk, aby dostosować zużycie materiału dla danego zadania.
+- **Domyślna ilość pozostała** – ustaw tę opcję na *Tak*, aby w oknie dialogowym **Raport o postępie** wstępnie wypełnić oczekiwaną ilość pozostałą dla zadania produkcyjnego.
 
 ## <a name="clean-up-job-configurations"></a>Oczyszczanie konfiguracji zadań
 

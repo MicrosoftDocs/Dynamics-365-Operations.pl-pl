@@ -2,7 +2,7 @@
 title: Dodawanie pól danych w integracji podatków przy użyciu rozszerzeń
 description: W tym temacie opisano, jak używać rozszerzeń X++ w celu dodawania pól danych w integracji podatków.
 author: qire
-ms.date: 02/17/2022
+ms.date: 04/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: acbe8070424febf24883362448ea56857d9d72d9
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: 79b51812eac354072ebf2a0ef6fe8d39610c6385
+ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323525"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8649109"
 ---
 # <a name="add-data-fields-in-the-tax-integration-by-using-extension"></a>Dodawanie pól danych w integracji podatków przy użyciu rozszerzeń
 
@@ -334,9 +334,10 @@ Rozszerzaj metodę `copyToTaxableDocumentHeaderWrapperFromTaxIntegrationDocument
 [ExtensionOf(classStr(TaxIntegrationCalculationActivityOnDocument_CalculationService))]
 final static class TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension
 {
-    // Define key for the form in post request
+    // Define the field name in the request
     private const str IOCostCenter = 'Cost Center';
     private const str IOProject = 'Project';
+    // private const str IOEnumExample = 'Enum Example';
 
     /// <summary>
     /// Copies to <c>TaxableDocumentLineWrapper</c> from <c>TaxIntegrationLineObject</c> by line.
@@ -349,20 +350,24 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
         // Set the field we need to integrated for tax service
         _destination.SetField(IOCostCenter, _source.getCostCenter());
         _destination.SetField(IOProject, _source.getProjectId());
+
+        // If the field to be extended is an enum type, use enum2Symbol to convert an enum variable exampleEnum of ExampleEnumType to a string
+        // _destination.SetField(IOEnumExample, enum2Symbol(enumNum(ExampleEnumType), _source.getExampleEnum()));
     }
 }
 ```
 
-W tym kodzie `_destination` jest obiektem otoki, który jest używany do generowania żądania wpisu, a `_source` to obiekt `TaxIntegrationLineObject`.
+W tym kodzie `_destination` jest obiektem otoki, który jest używany do generowania żądania, a `_source` to obiekt `TaxIntegrationLineObject`.
 
 > [!NOTE]
-> Zdefiniuj klucz używany w formularzu żądania jako **private const str**. Ciąg powinien być dokładnie taki sam, jak nazwa miary dodana do tematu. [Dodaj pola danych w konfiguracjach podatków](tax-service-add-data-fields-tax-configurations.md).
-> Ustaw pole w metodzie **copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine**, używając **metody SetField**. Typem danych drugiego parametru musi być **ciąg**. Jeśli typ danych nie jest **ciąg**, przekonwertuj go.
-> Jeśli **typ tekstu enum** X++ jest rozszerzony, należy zwrócić uwagę na różnicę między jego wartością, etykietą i nazwą.
+> Zdefiniuj nazwę pola, która jest używana w żądaniu jako **private const str**. Ciąg powinien być dokładnie taki sam, jak nazwa węzła (nie etykieta) dodana w temacie [Dodawanie pól danych w konfiguracjach podatkowych](tax-service-add-data-fields-tax-configurations.md).
 > 
+> Ustaw pole w metodzie **copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine**, używając **metody SetField**. Typem danych drugiego parametru musi być **ciąg**. Jeśli typ danych nie jest **ciąg**, przekonwertuj go na string.
+> Jeśli typem danych jest X++ **typ enum**, zalecamy użycie metody **enum2Symbol** do konwersji wartości wyliczenia na ciąg znaków. Wartość wyliczenia dodana w konfiguracji podatku powinna być dokładnie taka sama jak nazwa wyliczenia. Poniżej znajduje się lista różnic pomiędzy wartością wyliczenia, etykietą i nazwą.
+> 
+>   - Nazwa wyliczenia jest nazwą symboliczną w kodzie. **enum2Symbol()** może przekształcić wartość wyliczenia na jego nazwę.
 >   - Wartość wyliczenia jest liczbą całkowitą.
->   - Etykieta wyli roku może być różna w różnych preferowanych językach. Nie używaj tekstu **enum2Str** w celu konwersji typu tekstu wyliczowego na ciąg.
->   - Nazwa wyli roku jest zalecana, ponieważ jest stała. **enum2Symbol** może służyć do konwersji wyliczeń na jego nazwę. Wartość wyliczenia dodana w konfiguracji podatku powinna być dokładnie taka sama jak nazwa wyliczenia.
+>   - Etykieta wyli roku może być różna w różnych preferowanych językach. **enum2Str()** może przekształcić wartość wyliczeniową na jej etykietę.
 
 ## <a name="model-dependency"></a>Zależność modelu
 
@@ -526,7 +531,7 @@ final class TaxIntegrationPurchTableDataRetrieval_Extension
 [ExtensionOf(classStr(TaxIntegrationCalculationActivityOnDocument_CalculationService))]
 final static class TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension
 {
-    // Define key for the form in post request
+    // Define the field name in the request
     private const str IOCostCenter = 'Cost Center';
     private const str IOProject = 'Project';
 

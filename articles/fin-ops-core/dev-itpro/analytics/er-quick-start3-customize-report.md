@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2c8cf4866b6a8c239359d726d8cd4f03a9eb4137
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: a7353d7d8149ff1316fbc0adc55b7e1050f443a8
+ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324094"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661666"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>Umożliwia dostosowanie konfiguracji raportowania elektronicznego w celu wygenerowania dokumentu elektronicznego
 
@@ -61,7 +61,7 @@ Użytkownik należący do roli konsultanta funkcjonalnego raportowania elektroni
 ### <a name="configure-er-parameters"></a>Konfigurowanie parametrów modułu ER
 
 1. Wybierz kolejno opcje **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
-2. Na stronie **Konfiguracje lokalizacji** w sekcji **Powiązane łącza** wybierz kafelek **Parametry raportowania elektronicznego**.
+2. Na stronie **Strategia lokalizacji** w sekcji **Powiązane łącza** wybierz kafelek **Parametry raportowania elektronicznego**.
 3. Na stronie **Parametry raportowania elektronicznego** na karcie **Ogólne** ustaw opcję **Włącz tryb projektowania** na **Tak**.
 4. Na karcie **Załączniki**, w polu **Konfiguracje** wybierz opcję **Plik**.
 5. W polach **Archiwum zadań**, **Tymczasowe**, **Podstawowe** i **Inne** należy wybrać typ **Plik**.
@@ -78,13 +78,13 @@ Każda dodana konfiguracja ER jest oznaczona jako posiadana przez dostawcę konf
 #### <a name="review-the-list-of-er-configuration-providers"></a>Przejrzenie listy dostawców konfiguracji ER
 
 1. Wybierz kolejno opcje **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
-2. Na stronie **Konfiguracje lokalizacji** w sekcji **Powiązane łącza** wybierz kafelek **Dostawcy konfiguracji**.
+2. Na stronie **Strategia lokalizacji** w sekcji **Powiązane łącza** wybierz kafelek **Dostawcy konfiguracji**.
 3. Na stronie **Tabela dostawcy konfiguracji** każdy rekord dostawcy ma unikatową nazwę i adres URL. Przejrzyj zawartość tej strony. Jeśli rekord dla **Litware, Inc.** (`https://www.litware.com`) już istnieje, pomiń następną procedurę, [Dodawanie nowego dostawcy konfiguracji ER](#AddProvider).
 
 #### <a name="add-a-new-er-configuration-provider"></a><a id="AddProvider"></a>Dodawanie nowego dostawcy formatu ER
 
 1. Wybierz kolejno opcje **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
-2. Na stronie **Konfiguracje lokalizacji** w sekcji **Powiązane łącza** wybierz kafelek **Dostawcy konfiguracji**.
+2. Na stronie **Strategia lokalizacji** w sekcji **Powiązane łącza** wybierz kafelek **Dostawcy konfiguracji**.
 3. Na stronie **Dostawcy konfiguracji** wybierz opcję **Nowa**.
 4. W polu **Nazwa** wpisz **Litware, Inc.**
 5. W polu **Adres internetowy** wprowadź `https://www.litware.com`.
@@ -93,7 +93,7 @@ Każda dodana konfiguracja ER jest oznaczona jako posiadana przez dostawcę konf
 #### <a name="activate-an-er-configuration-provider"></a>Aktywowanie dostawcy konfiguracji ER
 
 1. Wybierz kolejno opcje **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
-2. Na stronie **Konfiguracje lokalizacji** w sekcji **Dostawcy konfiguracji** wybierz pozycję **Litware, Inc.**, a następnie wybierz pozycję **Ustaw, jako aktywne**.
+2. Na stronie **Strategia lokalizacji** w sekcji **Dostawcy konfiguracji** wybierz pozycję **Litware, Inc.**, a następnie wybierz pozycję **Ustaw, jako aktywne**.
 
 Dalsze informacje o dostawcach konfiguracji ER znajdują się w temacie [Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
@@ -102,7 +102,7 @@ Dalsze informacje o dostawcach konfiguracji ER znajdują się w temacie [Tworzen
 Aby dodać standardowe konfiguracje obiektu ER do bieżącego wystąpienia Finance, należy zaimportować je z [repozytorium](general-electronic-reporting.md#Repository) ER, które zostało skonfigurowane dla tego wystąpienia.
 
 1. Wybierz kolejno opcje **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
-2. Na stronie **Konfiguracje lokalizacji** w sekcji **Dostawcy konfiguracji** wybierz kafelek **Microsoft**, a następnie wybierz pozycję **Repozytoria**, aby wyświetlić listę repozytoriów dla dostawcy rozwiązania: Microsoft.
+2. Na stronie **Strategia lokalizacji** w sekcji **Dostawcy konfiguracji** wybierz kafelek **Microsoft**, a następnie wybierz pozycję **Repozytoria**, aby wyświetlić listę repozytoriów dla dostawcy rozwiązania: Microsoft.
 3. Na stronie **Repozytoria konfiguracji** zaznacz repozytorium typu **Globalne**, a następnie kliknij przycisk **Otwórz**. Jeśli zostanie wyświetlony monit o autoryzację połączenia z usługą Regulatory Configuration Service, postępuj zgodnie z instrukcjami autoryzacji.
 4. Na stronie **Repozytorium konfiguracji** w drzewie konfiguracje w panelu po lewej wybierz format konfiguracji **Faktura sprzedaży PEPPOL**.
 5. Na skróconej karcie **wersje** wybierz opcję wersja **11.2.2**.
@@ -116,7 +116,7 @@ Aby dodać standardowe konfiguracje obiektu ER do bieżącego wystąpienia Finan
 ### <a name="review-the-imported-er-configurations"></a>Przeglądanie zaimportowanych konfiguracji ER
 
 1. Wybierz kolejno opcje **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
-2. WNa stronie **Konfiguracje lokalizacji** w sekcji **Konfiguracje** wybierz kafelek **Konfigracje raportowanias**.
+2. Na stronie **Strategie lokalizacji** w sekcji **Konfiguracje** wybierz kafelek **Konfiguracje raportowania**.
 3. Na stronie **Konfiguracje** rozwiń skróconą kartę **Składniki konfiguracji**.
 4. W drzewie konfiguracji w lewym okienku rozwiń węzeł **Model faktury**, a następnie rozwiń węzeł **UBL faktura sprzedaży**.
 

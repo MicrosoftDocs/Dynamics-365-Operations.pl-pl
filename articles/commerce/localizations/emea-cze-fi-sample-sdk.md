@@ -9,17 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 80778547b99af5a7a9717146850d8161f2e8f686
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: aaa894ccfd77a5522a3696e20987b9e67f3abee0
+ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388345"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "8613968"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-the-czech-republic-legacy"></a>Wskazówki dotyczące wdrażania przykładu integracji usługi rejestracji fiskalnej dla Republiki Czeskiej (starsza wersja)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Ten temat zawiera wskazówki dotyczące wdrażania przykładu integracji usługi rejestracji fiskalnej dla Republiki Czeskiej z poziomu zestawu Software Development Kit (SDK) rozwiązania Microsoft Dynamics 365 Commerce Retail na maszynie wirtualnej dewelopera w usłudze Microsoft Dynamics Lifecycle Services (LCS). Aby uzyskać więcej informacji dotyczących tego przykładu integracji fiskalnej, zobacz [Przykład integracji usługi rejestracji fiskalnej dla Republiki Czeskiej](emea-cze-fi-sample.md). 
 

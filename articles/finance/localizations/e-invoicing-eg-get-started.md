@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6fe1dd4254db8b390c17558320a6eaff2b0dcd19
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: e21c4ce4d676c3194665672a078dc1e3d0492799
+ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371363"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661730"
 ---
 # <a name="electronic-invoicing-for-egypt"></a>Fakturowanie elektroniczne dla Egiptu
 
@@ -42,7 +42,7 @@ Przed rozpoczęciem procedur opisanych w tym temacie należy spełnić następuj
     - [Zainstaluj dodatek dla mikrousług w Lifecycle Services](e-invoicing-install-add-in-microservices-lcs.md)
     
 - Uaktywnij integrację między firmą Microsoft Dynamics 365 Finance lub aplikacją Dynamics 365 Supply Chain Management a usługą fakturowania elektronicznego, jak opisano w temacie [Aktywuj i skonfiguruj integrację z fakturowaniem elektronicznym](e-invoicing-activate-setup-integration.md).
-- Utwórz tajny klucz certyfikatu cyfrowego w kluczu Azure Key, a następnie skonfiguruj go w sposób [opisany w certyfikatach odbiorcy](e-invoicing-customer-certificates-secrets.md). Do celów testowych egipski urząd skarbowy zapewnia specjalne testowe certyfikaty cyfrowe, których należy używać tylko na etapie testowania i weryfikacji rozwiązania. Aby uzyskać więcej informacji, odwiedź witrynę internetową egipskiego organu podatkowego, korzystając z łącza znajdującego się w [Egipskim zestawie SDK do e-fakturowania](https://sdk.sit.invoicing.eta.gov.eg/faq/).
+- Utwórz tajny klucz certyfikatu cyfrowego w kluczu Azure Key, a następnie skonfiguruj go w sposób [opisany w certyfikatach odbiorcy](e-invoicing-customer-certificates-secrets.md). Do celów testowych egipski urząd skarbowy zapewnia specjalne testowe certyfikaty cyfrowe, których należy używać tylko na etapie testowania i weryfikacji rozwiązania. Aby uzyskać więcej informacji, odwiedź witrynę internetową egipskiego organu podatkowego, korzystając z łącza znajdującego się w [Egipskim zestawie SDK do e-fakturowania](https://sdk.invoicing.eta.gov.eg/faq/).
 
 ## <a name="country-specific-configuration-for-the-egyptian-electronic-invoice-eg-feature"></a>Specyficzna dla kraju konfiguracja egipskiej faktury elektronicznej (EG) Funkcja fakturowania elektronicznego
 
@@ -56,7 +56,7 @@ Niektóre parametry dostępne w funkcji **Faktura elektroniczna Elektroniczna (E
 6. Na karcie **Przetwarzanie** w sekcji **Przetwarzanie** wybierz **Podpisz dokument json dla egipskiego urzędu podatkowego**.
 7. W sekcji **Parametry** wybierz nazwę **certyfikatu**, a następnie wybierz nazwę utworzonego certyfikatu cyfrowego.
 8. W grupie pól **Potok przetwarzania** wybierz opcję **Integruj z usługą ETA**. Powtórz ten krok dla dwóch wystąpień tej akcji.
-9. W sekcji **Parametry** wybierz **Adres URL usługi internetowej** i **Adres URL usługi logowania**. Następnie przejrzyj parametry adresu URL. Aby uzyskać testowy i produkcyjny adres URL, przejdź do witryny egipskiego urzędu skarbowego, korzystając z podanego linku w [Egipskim zestawie SDK do e-fakturowania](https://sdk.sit.invoicing.eta.gov.eg/faq/).
+9. W sekcji **Parametry** wybierz **Adres URL usługi internetowej** i **Adres URL usługi logowania**. Następnie przejrzyj parametry adresu URL. Aby uzyskać testowy i produkcyjny adres URL, przejdź do witryny egipskiego urzędu skarbowego, korzystając z podanego linku w [Egipskim zestawie SDK do e-fakturowania](https://sdk.invoicing.eta.gov.eg/faq/).
 10. Wybierz przycisk **Zapisz** i zamknij stronę.
 11. Powtórz kroki od 4 do 10 w przypadku konfiguracji **funkcji faktur pochodnych** projektu.
 

@@ -2,7 +2,7 @@
 title: Umożliwia konfigurowanie parametrów formatu ER dla firmy
 description: W tym temacie wyjaśniono, w jaki sposób można skonfigurować parametry formatu raportowania elektronicznego (ER) dla firmy.
 author: NickSelin
-ms.date: 10/22/2021
+ms.date: 03/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: cb600c55cb2d40129d1b29ab989bc8f7cf3f4686
-ms.sourcegitcommit: a5861c2fef4071e130208ad20e26cb3a42a45cf1
+ms.openlocfilehash: f72ce72e9cbd268efc6ab09dbec7009794d69613
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "7927461"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644507"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>Umożliwia konfigurowanie parametrów formatu ER dla firmy
 
@@ -226,7 +226,7 @@ Jeśli skonfigurujesz parametry specyficzne dla aplikacji dla jednej wersji form
 Po wybraniu pliku do zaimportowania struktura parametrów specyficznych dla aplikacji w tym pliku jest porównywana ze strukturą odpowiednich źródeł danych typu **Wyszukiwanie** w formacie ER, który został wybrany do importu. Domyślnie jest wykonywany tylko wtedy, gdy struktura każdego parametru specyficznego dla aplikacji odpowiada strukturze odpowiedniego źródła danych w formacie ER wybranym do importu. Jeśli struktury nie są zgodne, komunikat ostrzegawczy poinformuje Cię o tym, że nie można wykonać importu. W przypadku wymuszenia importu istniejące parametry specyficzne dla aplikacji dla wybranego formatu ER zostaną oczyszczone i należy je skonfigurować od początku.
 
 
-Od aplikacji Dynamics 365 Finance w wersji 10.0.24 można zmienić domyślne zachowanie i uniknąć pojawiania się komunikatów ostrzegawczych, włączając funkcję **Podczas importowania wyrównaj parametry specyficzne dla aplikacji raportowania elektronicznego** w obszarze roboczym **Zarządzanie funkcjami**. Po włączeniu tej funkcji, jeśli struktura importowanych parametrów specyficznych różni się od struktury odpowiedniego źródła danych typu wyszukiwania w docelowym formacie ER, który został wybrany do importu, w następujących przypadkach importowanie zakończy się powodzeniem:
+Od aplikacji Finance w wersji 10.0.24 można zmienić domyślne zachowanie i uniknąć pojawiania się komunikatów ostrzegawczych, włączając funkcję **Podczas importowania wyrównaj parametry specyficzne dla aplikacji raportowania elektronicznego** w obszarze roboczym **Zarządzanie funkcjami**. Po włączeniu tej funkcji, jeśli struktura importowanych parametrów specyficznych różni się od struktury odpowiedniego źródła danych typu wyszukiwania w docelowym formacie ER, który został wybrany do importu, w następujących przypadkach importowanie zakończy się powodzeniem:
 
 - Struktura docelowego formatu ER została zmieniona przez dodanie nowych kolumn warunku do istniejących źródeł danych typu **Wyszukiwanie**. Po zakończeniu importowania parametry specyficzne dla aplikacji są aktualizowane. We wszystkich importowanych rekordach parametrów specyficznych dla aplikacji wartości w każdej kolumnie dodawanego warunku są inicjowane z wartością domyślną dla [typu danych](er-formula-supported-data-types-primitive.md) danej kolumny.
 - Struktura docelowego formatu ER została zmieniona przez usunięcie niektórych kolumn warunku z istniejących źródeł danych typu **Wyszukiwanie**. Po zakończeniu importowania parametry specyficzne dla aplikacji są aktualizowane. Ze wszystkich importowanych rekordów parametrów specyficznych dla aplikacji usuwane są wartości z każdej usuniętej kolumny warunku.
@@ -235,9 +235,33 @@ Od aplikacji Dynamics 365 Finance w wersji 10.0.24 można zmienić domyślne zac
 
 Po zakończeniu importowania, oprócz opisanych zmian, stan zaimportowanych parametrów specyficznych dla aplikacji zmienia się na **W toku**. Komunikat ostrzegawczy informuje, że automatycznie skorygowane parametry aplikacji należy edytować ręcznie.
 
+#### <a name="replicate-parameters"></a>Parametry replikacji
+
+Od wersji Finance 10.0.27 możesz kopiować parametry, które skonfigurowałeś w jednej firmie, do innych firm w tym samym czasie.
+
+Aby skopiować parametry, wykonaj następujące czynności.
+
+1. Wybierz kolejno opcje **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
+2. Wybierz **Raportowanie konfiguracji**.
+3. W drzewie konfiguracji wybierz **Format, aby uzyskać informacje o wyszukiwaniu danych LE**.
+4. W okienku akcji na karcie **Konfiguracje** w grupie **Parametry specyficzne dla aplikacji** wybierz opcję **Konfiguracja**.
+5. Wybierz wersję **1.1.1** formatu ER.
+6. W okienku akcji wybierz opcję **Replikuj**.
+7. W oknie dialogowym **Replikuj**, w zakładce **Firmy** wybierz firmy, do których chcesz skopiować parametry.
+
+    > [!NOTE]
+    > Lista firm docelowych jest dostępna tylko dla użytkowników, którzy mają przypisaną [rolę](../sysadmin/role-based-security.md#security-roles) bezpieczeństwa skonfigurowaną tak, aby dawała dostęp do wszystkich organizacji.
+
+8. Kliknij przycisk **OK**.
+
+    > [!NOTE]
+    > Okno dialogowe potwierdzenia informuje cię, czy niektóre firmy docelowe zawierają wcześniej skonfigurowane parametry dla wybranej wersji formatu ER. Wybierz przycisk **Tak**, aby zastąpić parametry, kopiując je z bieżącej firmy.
+
+    Skonfigurowany zestaw parametrów specyficznych dla aplikacji jest teraz kopiowany do wybranych firm.
+
 ### <a name="reuse-existing-parameters"></a>Ponowne używanie istniejących parametrów
 
-Od aplikacji Dynamics 365 Finance w wersji 10.0.23 można używać parametrów specyficznych dla aplikacji skonfigurowanych dla jednej wersji formatu ER, gdy jest uruchamiana wyższa wersja tego samego formatu. W tym celu włącz funkcję **Użyj parametrów specyficznych dla aplikacji z poprzednich wersji formatów raportowania elektronicznego** w obszarze roboczym **Zarządzanie funkcjami**. Gdy ta funkcja jest włączona i uruchamiana jest jedna wersja formatu raportu ER, który próbuje odczytać parametry specyficzne dla aplikacji, funkcja ER spróbuje znaleźć parametry specyficzne dla aplikacji, które zostały skonfigurowane dla uruchomionej wersji tego formatu. Lub, jeśli nie są dostępne, dla najbliższej dolnej wersji tego formatu.
+Od aplikacji Finance w wersji 10.0.23 można używać parametrów specyficznych dla aplikacji skonfigurowanych dla jednej wersji formatu ER, gdy jest uruchamiana wyższa wersja tego samego formatu. Aby ponownie wykorzystać istniejące parametry, **Użyj parametrów specyficznych dla aplikacji z poprzednich wersji formatów raportowania elektronicznego** w obszarze roboczym **Zarządzanie funkcjami**. Gdy ta funkcja jest włączona i uruchamiana jest jedna wersja formatu raportu ER, który próbuje odczytać parametry specyficzne dla aplikacji, funkcja ER spróbuje znaleźć parametry specyficzne dla aplikacji, które zostały skonfigurowane dla uruchomionej wersji tego formatu. Jeśli nie są one dostępne, ER postara się je znaleźć dla najbliższej niższej wersji formatu.
 
 > [!NOTE]
 > Parametrów specyficznych dla aplikacji można używać ponownie tylko w zakresie bieżącej firmy.

@@ -2,7 +2,7 @@
 title: Omówienie zadań importowania i eksportowania danych
 description: Obszar roboczy Zarządzanie danymi umożliwia tworzenie zadań importu i eksportu danych oraz zarządzanie nimi.
 author: peakerbl
-ms.date: 10/21/2021
+ms.date: 04/25/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e63daad6f206500bfa21c28635648c717f5bbdde
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 74430aadc661a49e330960135ce7b0912079f79b
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071092"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644469"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Omówienie zadań importowania i eksportowania danych
 
@@ -74,8 +74,11 @@ Podczas wybieranie jednostki należy wybrać format eksportowanych lub importowa
 > [!NOTE]
 > Ważne jest, aby wybrać poprawną wartość pól **Ogranicznik wiersza**, **Ogranicznik kolumn** i **Kwalifikator tekstu**, jeśli w opcji **Format pliku** jest ustawiona wartość **Ograniczone**. Upewnij się, że dane nie zawierają znaku używanego jako ogranicznik lub kwalifikator, ponieważ może to spowodować błędy podczas importowania i eksportowania.
 
+> [!NOTE]
+> W przypadku formatów plików opartych na XML-u pamiętaj, by używać tylko dozwolonych znaków. Więcej szczegółów na temat ważnych znaków znajdziesz w [dozwolone znaki w XML 1.0](https://www.w3.org/TR/2006/REC-xml-20060816/Overview.html#charsets/). XML 1.0 nie dopuszcza żadnych znaków sterujących z wyjątkiem tabulatorów, powrotów karetki i podawania wierszy. Przykładami niedozwolonych znaków są nawiasy kwadratowe, nawiasy klamrowe i ukośniki. 
+
 ### <a name="sequence-the-entities"></a>Określanie kolejności jednostek
-Kolejność jednostek można określić w szablonie danych albo w zadaniach importu lub eksportu. Po uruchomieniu zadania, które zawiera więcej niż jedną jednostkę należy się upewnić, że kolejność jednostek danych jest prawidłowa. Kolejność jednostek określa się głównie po to, aby obsłużyły zależności funkcjonalne między jednostkami. Jeżeli jednostki nie mają żadnych zależności funkcjonalnych, można zaplanować ich import lub eksport równoległy.
+Kolejność jednostek można określić w szablonie danych albo w zadaniach importu lub eksportu. Po uruchomieniu zadania, które zawiera więcej niż jedną jednostkę należy się upewnić, że kolejność jednostek danych jest prawidłowa. Kolejność jednostek określa się głównie po to, aby obsłużyły zależności funkcjonalne między jednostkami. Jeżeli jednostki nie mają żadnych zależności funkcjonalnych, można zaplanować ich import lub eksport równoległy. 
 
 #### <a name="execution-units-levels-and-sequences"></a>Jednostki wykonywania, poziomy i kolejności
 Jednostka wykonywania, poziom w jednostce wykonywania i kolejność jednostek ułatwiają kontrolowanie jakości eksportu lub importu danych.

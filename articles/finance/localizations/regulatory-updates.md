@@ -12,14 +12,14 @@ ms.search.region: Global
 ms.author: vastrup
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 19aadf844f239ef06ca4d9dbe60b597228d72e52
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 734a4abf4559d05b1f96bcfbde151b49bba8e827
+ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8470101"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8649137"
 ---
-# <a name="regulatory-updates"></a>Aktualizacje wymagane przepisami prawa
+# <a name="regulatory-updates"></a>Aktualizacje wymogów prawnych
 
 [!include [banner](../includes/banner.md)]
 
@@ -39,26 +39,26 @@ Aby uzyskać informacje o najnowszych planach w zakresie aktualizacji wymaganych
 
 |Kraj|Data zwolnienia|Wersja wydania|Aktualizacje wymagane przepisami prawa|
 |--------------------|---------------|-------|-------| 
-|      Brazylia         |   2021 grudnia         | 10.0.24, 10.0.25         |    Funkcja fiskalna SPED układ 2022  |
-|      Brazylia         |   2022 marca    | 10.0.24HF, 10.0.25HF         |    Kolekcja ICMS-DIFAL w operacjach dotyczy podatników nie opodatkowania (nr uzupełniający 190/22)  |
+|      Brazylia         |   2021 grudnia         | 10.0.25         |    Funkcja fiskalna SPED układ 2022  |
+|      Brazylia         |   2022 marca    | 10.0.25HF, 10.0.26HF, 10.0.27        |    Kolekcja ICMS-DIFAL w operacjach dotyczy podatników nie opodatkowania (nr uzupełniający 190/22)  |
+|      Brazylia         |   2022 marca         | 10.0.26HF         |    Sped Fiscal – nowe pola w rekordzie C500 (34-40) dla przychodzących dokumentów fiskalnych  |
+|      Brazylia         |   2022 marca         | 10.0.27         |    NF-e NT2021.004 v1.00 – aktualizacja układu i zasad walidacji  |
+|      Brazylia         |   2022 marca         | 10.0.27         |    NF-e NT2021.004 v1.00 – aktualizacja układu i zasad walidacji – Retail  |
 |      Dania         |   2022 stycznia  | 10.0.25HF         |    Podgląd deklaracji podatku VAT w programie Excel |
+|      Finlandia         |   2022 stycznia  | 10.0.26         |    Deklaracja VAT w TXT i podgląd w Excelu |
 |      Francja   |   Listopad 2021 | 10.0.25         |    Francuski eksport archiwizacji danych (FEC) — załącznik „Brakujące numery uzasadnienia” |
-|      Włochy         |   Listopad 2021         | 10.0.24         |    Fakturowanie elektroniczne dla transakcji transgranicznych  |
-|      Włochy         |   2022 lutego | 10.0.24HF, 10.0.25HF| Unikatowa certyfikacja — 2022 rok w Dynamics 365 Finance  |
-|      Litwa|   2022 lutego | 10.0.24HF, 10.0.25HF | Zmiany i.SAF z 2022-01-01 w Dynamics 365 Finance  |
-|      Meksyk         |   2021 grudnia      | 10.0.24      |   Carta de Porte uzupełnia wersję 2.0  |
-|      Norwegia        |   Listopad 2021      | 10.0.24      |   Format deklaracji VAT 2022 z przesłaniem bezpośrednim — Dynamics 365 Finance |
-|      Polska          |   2021 października     | 10.0.24     |   JPK_V7M — nowa wersja schematu od stycznia 2022 roku |
-|      Polska          |   Listopad 2021     | 10,0,24HF     |   Raport roczny o terminach płatności w transakcjach handlowych |
-|      Polska          |   2021 października     | 10.0.24     |   Elektroniczny format listy sprzedaży do UE (VAT-UE) |
-|      Rosja          |   2021 października     | 10.0.24    |   Zmiany w sprzedaży, zakupach ksiąg i dziennikach faktograficznych|
-|      Rosja          |   2021 października     | 10,0,24HF    |   Zmiana w formatach deklaracji VAT z załącznikami|
-|      Rosja          |   Listopad 2021     | 10.0.24    |   Federalne Standardy Rachunkowości 6/2020 (Środki trwałe)|
-|      Rosja          |   2022 stycznia     | 10,0,24HF, 10.0.25    |   Włącz docelową funkcję raportowania elektronicznego (ER) do przechowywania rosyjskich dokumentów księgowych (dokumentów podstawowych i raportów księgowych)|
+|      Włochy         |   2022 lutego | 10.0.25HF, 10.0.26| Unique Certification – 2022 w Dynamics 365 Finance  |
+|      Litwa|   2022 lutego | 10.0.25HF, 10.0.26HF, 10.0.27 | i.SAF zmienia się od 2022-01-01 w Dynamics 365 Finance  |
+|      Malezja|   2022 lutego |10.0.26HF | Deklaracja podatkowa SST-02. Zmiany w pudełkach  |
+|      Meksyk         |   2022 stycznia      | 10.0.26      |   MX – CFDI wersja 4.0 (anulowanie)  |
+|      Meksyk         |   2022 marca      | 10.0.25, 10.0.26, 10.0.26      |   Formaty CFDI wersja 4.0 (faktury i płatności)  |
+|      Meksyk         |   2022 lutego      | 10.0.27      |   Od 1 stycznia 2022 roku wchodzi w życie wersja 4.0 CFDI, z okresem współistnienia pomiędzy wersją 3.3 a wersją 4.0, który trwa od 1 stycznia do 30 czerwca 2022 roku.  |
+|      Meksyk         |   2022 marca      | 10.0.25, 10.0.26, 10.0.27      |   Formaty CFDI wersja 4.0 (potrącenia)  |
+|      Polska          |   2022 kwietnia     | 10.0.25HF, 10.0.26HF, 10.0.27HF     |   JPK_FA wersja 4 od 1 kwietnia 2022 rokuJPK_V7M – nowa wersja schematu od stycznia 2022 roku |
+|      Rosja          |   2022 stycznia     | 10.0.25    |   Włącz docelową funkcję raportowania elektronicznego (ER) do przechowywania rosyjskich dokumentów księgowych (dokumentów podstawowych i raportów księgowych)|
 |      Rosja          |   2021 grudnia     | 10.0.25    |   Integracja Moduł środków trwałych (Rosja) z modułem zarządzania aktywami|
-|      Rosja          |   2022 lutego     | 10,0,24HF, 10.0.25    |  Nowy format faktury transportowej (Dekret Rządu N 2116 30.11.2021)|
-|      Arabia Saudyjska          |   Listopad 2021     | 10.0.24    |   Handel detaliczny - fakturowanie elektroniczne w Arabii Saudyjskiej — faza 1|
-|      Hiszpania      |   2022 marca| 10.0.24HF, 10.0.25HF | Hiszpania: deklaracja VAT model 303 zmienia się 1 stycznia 2022 w Dynamics 365 Finance|
+|      Rosja          |   Marzec – kwiecień 2022 r.     | 10.0.25, 10.0.26    |  Nowy format faktury transportowej (Dekret Rządu N 2116 30.11.2021)|
+|      Hiszpania      |   2022 marca| 10.0.25HF, 10.0.26HF, 10.0.27 | Deklaracja VAT Model 303 zmiany 1 stycznia 2022 r. w Dynamics 365 Finance|
 
 
 

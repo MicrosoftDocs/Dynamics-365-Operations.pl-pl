@@ -2,7 +2,7 @@
 title: Projektowanie konfiguracji raportowania elektronicznego w celu wypełniania szablonów w formacie PDF
 description: Ten temat zawiera informacje dotyczące projektowania formatu raportowania elektronicznego (ER) w celu wypełnienia szablonu PDF.
 author: NickSelin
-ms.date: 02/28/2022
+ms.date: 03/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: a568ddd93bfbc7d536e951a13470b3dedb796e1b
-ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
+ms.openlocfilehash: 706256300cf0b64bc5b5e1e7adb77c1da500d16f
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8367863"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8645115"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>Projektowanie konfiguracji raportowania elektronicznego w celu wypełniania szablonów w formacie PDF
 
 [!include[banner](../includes/banner.md)]
 
-Procedury opisane w tym temacie są przykładami, które pokazują, jak użytkownik w roli **administratora systemu** lub roli **deweloper raportowania elektronicznego** może skonfigurować format raportowania elektronicznego (er), który generuje raporty jako Pliki PDF przy użyciu wypełnialnych dokumentów PDF jako szablonów raportów. Te kroki można wykonać w dowolnej firmie Dynamics 365 Finance Regulatory Configuration Services (RCS).
+Procedury opisane w tym temacie są przykładami, które pokazują, jak użytkownik w roli **administratora systemu** lub roli **deweloper raportowania elektronicznego** może skonfigurować format raportowania elektronicznego (er), który generuje raporty jako Pliki PDF przy użyciu wypełnialnych dokumentów PDF jako szablonów raportów. Te kroki można wykonać w dowolnej firmie Dynamics 365 Finance lub Regulatory Configuration Services (RCS).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -252,10 +252,14 @@ Ponieważ obie właściwości są opcjonalne dla elementu formatu **pola**, do o
 - Jeśli atrybut **nazwy** jest zdefiniowany, a wyrażenie **nazwy** jest skonfigurowane, pole PDF o takiej samej nazwie jak wartość jest zwracane przez wyrażenie **nazwy** wypełnionego elementu formatu.
 
 > [!NOTE]
-> Pole wyboru PDF może być wypełniane jako wybrane w następujący sposób:
+> Gdy pole wyboru w szablonie PDF nie należy do grupy pól wyboru, jest ono reprezentowane w edytowalnym formacie ER jako element **Pól**, który jest zagnieżdżony pod elementem **Plik PDF**. Ten typ pola wyboru PDF można ustawić jako zaznaczony w następujący sposób:
 >
-> - Jeśli odpowiedni element formatu **Pola** jest powiązany z polem źródła danych o typie danych **Wartość logiczna** z wartością **Prawda**
-> - Jeśli odpowiedni element formatu **pola** zawiera element formatu **ciągu** zagnieżdżonego powiązany z polem źródła danych o wartości tekstowej **1**, **prawda** lub **tak**
+> - Odpowiedni element formatu **Pole** jest związany z polem źródła danych typu danych *[Wartość logiczna](er-formula-supported-data-types-primitive.md#boolean)*, które ma wartość **True**.
+> - Odpowiedni element formatu **pola** zawiera element formatu **ciągu** zagnieżdżonego powiązany z polem źródła danych o wartości tekstowej **1**, **prawda** lub **tak**.
+>
+> Twój szablon może zawierać grupę pól wyboru, w których w danym momencie może być zaznaczone tylko jedno pole. Te pola wyboru są reprezentowane w szablonie PDF jako wiele pól formularza typu *CHECKBOX*. Każde pole ma tę samą nazwę, ale inną wartość eksportową. Kiedy zaimportujesz szablon do edytowalnego formatu ER, każde pole wyboru będzie reprezentowane w strukturze hierarchicznej formatu jako element **grupy pól wyboru**, który jest zagnieżdżony pod tym samym elementem **grupy pól wyboru**. Nazwa elementu **Grupa pól wyboru** będzie równa nazwie pól wyboru w szablonie PDF. Nazwa każdego elementu **Grupy pól wyboru** będzie równa wartości eksportu odpowiedniego pola wyboru w szablonie PDF.
+>
+> Możesz powiązać **Element grupy pól wyboru** polem źródła danych typu *wartość logiczna*.
 
 ## <a name="run-the-format-configuration"></a>Uruchom konfigurację formatu
 

@@ -2,27 +2,42 @@
 title: Konfigurowanie integracji fiskalnej dla kanałów Commerce
 description: W tym temacie zawarto wskazówki dotyczące konfigurowania funkcji integracji fiskalnej dla kanałów Commerce.
 author: EvgenyPopovMBS
-ms.date: 03/04/2022
+ms.date: 04/28/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: e4b0b9f7eb4fb0ffab3237459d85ea92c83dd206
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 51a75ce03b0ae6b744ec56df35bd3fdb1f40cf3a
+ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462173"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661756"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>Konfigurowanie integracji fiskalnej dla kanałów Commerce
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 W tym temacie zawarto wskazówki dotyczące konfigurowania funkcji integracji fiskalnej dla kanałów Commerce. Aby uzyskać więcej informacji o integracji fiskalnej, zobacz [Omówienie integracji fiskalnej dla kanałów Commerce](fiscal-integration-for-retail-channel.md).
 
+## <a name="enable-features-in-commerce-headquarters"></a>Włącz funkcje w centrali Commerce
+
+Aby włączyć funkcje związane z integracją fiskalną dla kanałów Commerce, wykonaj poniższe kroki.
+
+1. W centrali Commerce wybierz kolejno opcje **Administrator systemu \> Obszary robocze \> Zarządzanie funkcjami**.
+1. Znajdź i włącz następujące funkcje:
+
+    - **Bezpośrednia integracja fiskalna z kas POS** – Ta funkcja rozszerza ramy integracji fiskalnej, dodając możliwość tworzenia łączników fiskalnych, które będą uruchamiane w punktach sprzedaży (POS). Ten typ łącznika komunikuje się z urządzeniem fiskalnym lub usługą, która udostępnia interfejs programowania aplikacji (API) HTTP i nie wymaga dedykowanej maszyny fizycznej w sklepie. Na przykład, ta funkcjonalność umożliwia integrację fiskalną dla urządzeń mobilnych bez konieczności posiadania wspólnej stacji sprzętowej.
+    - **Nadpisywanie profili technicznych integracji fiskalnej** – ta funkcja umożliwia rozszerzenie konfiguracji integracji fiskalnej i dodaje możliwość sprawdzania parametrów połączenia na stronie ustawień kasy. Gdy ta funkcja jest włączona, możesz zmienić parametry profilu technicznego.
+    - **Stan rejestracji fiskalnej w rejestrach POS** – kiedy ta funkcja jest włączona, możesz wyłączyć proces rejestracji fiskalnej dla określonych kas. Jeśli rejestracja fiskalna jest wyłączona dla danego rejestru POS, nie można na nim dokonywać transakcji sprzedaży.
+    - **Kopia zapasowa lokalnego magazynu integracji fiskalnej** – ta funkcja rozszerza możliwości obsługi błędów w ramach integracji fiskalnej. Umożliwia również automatyczne tworzenie kopii zapasowych danych rejestracji fiskalnej w przypadku utraty danych, dzięki czemu dane w pamięci lokalnej są przywracane podczas aktywacji urządzenia.
+
 ## <a name="set-up-commerce-parameters"></a>Ustawianie parametrów Commerce
+
+Aby skonfigurować parametry Commerce, wykonaj poniższe kroki.
 
 1. Na stronie **Wspólne parametry handlu** na karcie **Ogólne** ustaw opcję **Włącz integrację fiskalną** na **Tak**.
 1. Na karcie **Sekwencje identyfikatorów** zdefiniuj sekwencję numerów dla następujących odwołań:
@@ -33,8 +48,8 @@ W tym temacie zawarto wskazówki dotyczące konfigurowania funkcji integracji fi
 
 1. Na stronie **Parametry handlu** zdefiniuj sekwencję numerów dla fiskalnego profilu funkcjonalności.
 
-    > [!NOTE]
-    > Sekwencje numerów są opcjonalne. Numery dla wszystkich jednostek integracji fiskalnej mogą być generowane z sekwencji numerów albo ręcznie.
+> [!NOTE]
+> Sekwencje numerów są opcjonalne. Numery dla wszystkich jednostek integracji fiskalnej mogą być generowane z sekwencji numerów albo ręcznie.
 
 ## <a name="set-up-a-fiscal-registration-process"></a>Konfigurowanie procesu rejestracji fiskalnej
 
@@ -43,7 +58,7 @@ Proces konfigurowania integracji fiskalnej obejmuje następujące zadania:
 - Konfigurowanie łączników fiskalnych dla urządzeń lub usług fiskalnych używanych do celów rejestracji fiskalnej, np. drukarki fiskalne.
 - Konfigurowanie dostawców dokumentu, generujących dokumenty fiskalne, którzy będą zarejestrowani w urządzeniach lub usługach fiskalnych przez łączniki fiskalne.
 - Konfigurowanie procesu rejestracji fiskalnej, który określa sekwencję kroków fiskalnych oraz łączników fiskalnych i dostawców dokumentów fiskalnych używanych w każdym kroku.
-- Przypisywanie procesu rejestracji fiskalnej do profili funkcji POS.
+- Przyporządkuj proces rejestracji fiskalnej do profili funkcjonalności POS.
 - Przypisywanie profili technicznych łącznika do profili sprzętowych.
 - Przypisz profile techniczne złącza do sprzętu lub profili funkcji w punkcie sprzedaży.
 
@@ -176,7 +191,7 @@ Przepływ rejestracji fiskalnej jest definiowany przez proces rejestracji fiskal
 - Subskrypcja zdarzeń i transakcji w rejestracji fiskalnej jest wstępnie zdefiniowana w dostawcy dokumentów fiskalnych.
 - Dostawca dokumentów fiskalnych jest również odpowiedzialny za identyfikację łącznika fiskalnego używanego do rejestracji fiskalnej. Jest on zgodny z profilami funkcjonalnymi łącznika, które są uwzględniane w grupie łączników fiskalnych, określonych dla bieżącego kroku procesu rejestracji fiskalnej z profilem technicznym łącznika, który jest skojarzony z profilem sprzętowym Hardware Station, z którą jest sparowany POS.
 - Dostawca dokumentów fiskalnych korzysta z ustawień mapowania danych z konfiguracji dostawcy dokumentów fiskalnych do przekształcania danych transakcji/zdarzeń na podatki i płatności podczas generowania dokumentu fiskalnego.
-- Kiedy dostawca dokumentów fiskalnych generuje dokument fiskalny, łącznik fiskalny może albo wysłać go do urządzenia fiskalnego bez zmian, albo przeanalizować go i zamienić na sekwencję poleceń interfejsu API - to zależy od tego, jak obsługiwana jest komunikacja.
+- Kiedy dostawca dokumentów fiskalnych generuje dokument fiskalny, złącze fiskalne może albo wysłać go do urządzenia fiskalnego w takiej postaci, w jakiej jest, albo sparsować go i przekształcić w sekwencję poleceń API urządzenia, w zależności od sposobu komunikacji.
 
 ### <a name="set-up-registers-with-fiscal-registration-restrictions"></a>Konfigurowanie rejestrów z ograniczeniami rejestracji fiskalnej
 
@@ -283,4 +298,21 @@ Aby włączyć ręczne wykonywanie odroczonej rejestracji fiskalnej, należy dod
     1. Na stronie **Harmonogram dystrybucji** uruchom zadanie **1090**, aby przenieść zmiany do bazy danych kanału.
 
 
+## <a name="view-connection-parameters-and-other-information-in-pos"></a>Wyświetlanie parametrów połączenia i innych informacji w POS
+
+Aby wyświetlić parametry połączenia i inne informacje w POS, wykonaj poniższe kroki.
+
+1. Open Modern POS (MPOS) lub Cloud POS (CPOS).
+1. Wybierz **Ustawienia**. Jeśli integracja fiskalna jest włączona, w sekcji **Integracja fiskalna** po prawej stronie pojawią się następujące informacje:
+
+    - Status rejestracji podatkowej
+    - Stan ostatniej transakcji fiskalnej
+    - Liczba oczekujących zdarzeń audytowych
+
+1. Kliknij przycisk **Szczegóły**, aby wyświetlić następujące informacje:
+
+    - Etapy procesu rejestracji
+    - Parametry połączenia
+    - Szczegóły zdarzeń audytowych
+ 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

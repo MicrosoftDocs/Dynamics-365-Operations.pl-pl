@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 65891e380f740f4a1fa404d57789a6f50506d3b5
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 7ce30b64bc7c3889347bec94186614bd6cc337f4
+ms.sourcegitcommit: 1050e58e621d9a0454895ed07c286936f8c03320
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565636"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "8625365"
 ---
 # <a name="provision-human-resources"></a>Inicjowanie obsługi administracyjnej rozwiązania Human Resources
 
@@ -41,7 +41,7 @@ Zanim będzie można aprowizować nowe środowisko produkcyjne, muszą zostać s
 ## <a name="provision-a-human-resources-trial-environment"></a>Inicjowanie obsługi środowiska próbnego Human Resources
 
 >[!NOTE]
-> Począwszy od kwietnia 2022 roku środowiska próbne zasobów ludzkich nie będą dostępne w samodzielnym aplikacji. Potencjalni klienci, którzy są zainteresowani oceną możliwości zasobów ludzkich w aplikacjach finansowych i operacyjnych, mogą to zrobić, korzystając z bezpłatnej 30-dniowej wersji próbnej oraz danych demonstracyjnych. Dynamics 365 Finance będzie obejmował funkcje kadrowe wprowadzone do infrastruktury finansowej poprzez połączenie samodzielnej aplikacji. Więcej informacji na ten temat można znaleźć w części [Łączenie ofert HR zapewnia klientom wspólne możliwości](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers) Więcej informacji na temat testów Dynamics 365 Finance można znaleźć w [przewodniku krok po kroku](/fin-ops/get-started/before-you-buy). 
+> Począwszy od kwietnia 2022 roku środowiska próbne zasobów ludzkich nie będą dostępne w samodzielnym aplikacji. Potencjalni klienci, którzy są zainteresowani oceną możliwości zasobów ludzkich w aplikacjach finansowych i operacyjnych, mogą to zrobić, korzystając z bezpłatnej 30-dniowej wersji próbnej oraz danych demonstracyjnych. Dynamics 365 Finance będzie obejmował funkcje kadrowe wprowadzone do infrastruktury finansowej poprzez połączenie samodzielnej aplikacji. Więcej informacji na ten temat można znaleźć w części [Łączenie ofert HR zapewnia klientom wspólne możliwości](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers) Więcej informacji na temat testów Dynamics 365 Finance można znaleźć w [przewodniku krok po kroku](../fin-ops-core/fin-ops/get-started/before-you-buy.md). 
 
 
 Przed rozpoczęciem inicjowania obsługi pierwszej piaskownicy lub środowiska produkcyjnego można zaimprowizować [środowisko próbne Human Resources](https://go.microsoft.com/fwlink/p/?LinkId=2115962) w celu weryfikacji funkcji Human Resources. Środowiska próbne zawierają fikcyjne dane, których można używać do eksplorowania programu w bezpieczny sposób. Chociaż właścicielem środowiska próbnego jest użytkownik, który je utworzył, można do niego zaprosić innych użytkowników za pośrednictwem interfejsu administratora systemu środowiska Human Resources. 

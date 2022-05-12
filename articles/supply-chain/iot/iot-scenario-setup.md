@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b8e8c65cebe64f86dcf158668e8a4f5600c158a1
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 2956a9e18e24532c5a26bbbaf61438c9b7550a1a
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782434"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644708"
 ---
 # <a name="scenario-setup-for-iot-intelligence"></a>Ustawienia scenariusza dla analizy Internetu rzeczy (IoT)
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak skonfigurować scenariusze dla analizy IoT w Microsoft Dynamics 365 Supply Chain Management. Przed skonfigurowaniem scenariusza trzeba ustawić [Microsoft Dynamics Lifecycle Services (LCS)](iot-lcs-setup.md).
+W tym temacie wyjaśniono, jak skonfigurować scenariusze dla analizy IoT w Microsoft Dynamics 365 Supply Chain Management. <!-- KFM: Hide setup info for now: Before you can set up the scenarios, you must [set up Microsoft Dynamics Lifecycle Services (LCS)](iot-lcs-setup.md). -->
 
 W tym temacie skonfigurujesz scenariusz **przestoju sprzętu** w celu wygenerowania powiadomienia w aplikacji Supply Chain Management w przypadku awarii urządzenia. W tym temacie przedstawiono również sposób konfigurowania scenariusza **Jakości produktu** w taki sposób, aby było generowane powiadomienie, jeśli atrybut towaru wykracza poza określony zakres i jak skonfigurować scenariusz **opóźnienia produkcji**, aby było generowane powiadomienie, jeśli przepływność produkcji spadnie poniżej wartości ustalonego progu.
 
