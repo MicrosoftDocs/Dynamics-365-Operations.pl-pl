@@ -12,14 +12,12 @@
               items:
                 - name: Nowości i zmiany w aplikacji Supply Chain Management — strona główna
                   href: get-started/whats-new-home-page.md
-                - name: Rozwiązanie Supply Chain Management w wersji 10.0.26 (maj 2022)
+                - name: Rozwiązanie Supply Chain Management 10.0.27 (lipiec 2022)
+                  href: get-started/whats-new-scm-10-0-27.md
+                - name: Rozwiązanie Supply Chain Management 10.0.26 (maj 2022)
                   href: get-started/whats-new-scm-10-0-26.md
-                - name: Rozwiązanie Supply Chain Management w wersji 10.0.25 (kwiecień 2022)
+                - name: Rozwiązanie Supply Chain Management 10.0.25 (kwiecień 2022)
                   href: get-started/whats-new-scm-10-0-25.md
-                - name: Supply Chain Management w wersji 10.0.24 (luty 2022)
-                  href: get-started/whats-new-scm-10-0-24.md
-                - name: Supply Chain Management w wersji 10.0.23 (styczeń 2022)
-                  href: get-started/whats-new-scm-10-0-23.md
             - name: Usunięte lub wycofane funkcje
               items:
                 - name: Usunięte lub wycofane funkcje — strona główna
@@ -1723,10 +1721,8 @@
               href: iot/iot-intelligence-home-page.md
             - name: Ustawianie zasobów rozwiązania Azure
               href: iot/iot-azure-setup.md
-            - name: Formaty schematów wiadomości dla centrum IoT
+            - name: Formaty schematów wiadomości dla centrum IoT Hub
               href: iot/iot-schema-format.md
-            - name: Zainstaluj dodatek w usłudze LCS
-              href: iot/iot-lcs-setup.md
             - name: Ustawianie metryk
               href: iot/iot-metrics-setup.md
             - name: Ustawienia scenariusza
@@ -2757,6 +2753,8 @@
                   href: production-control/production-floor-execution-setup.md
                 - name: Jak pracownicy korzystają z interfejsu wykonania hal produkcyjnych
                   href: production-control/production-floor-execution-use.md
+                - name: Wyświetlanie sald urlopów w interfejsie wykonania hal produkcyjnych
+                  href: production-control/production-floor-execution-payroll-stats.md
                 - name: Dobór stylu interfejsu wykonania hal produkcyjnych
                   href: production-control/production-floor-execution-styles.md
                 - name: Dostosowanie interfejsu wykonania hal produkcyjnych

@@ -10,6 +10,8 @@
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
             - name: Nowości i zmiany w rozwiązaniu Human Resources
               items:
+                - name: Human Resources 10.0.27 (scalona infrastruktura)
+                  href: ./get-started/hr-whats-new-changed-10-0-27.md
                 - name: Human Resources 10.0.26 (scalona infrastruktura)
                   href: ./get-started/hr-whats-new-changed-10-0-26.md
                 - name: Human Resources 10.0.25 (scalona infrastruktura)
@@ -974,9 +976,9 @@
                   href: hr-admin-integration-payroll-api-benefit-employee-plan-status.md
     - name: Rozwój i administracja aplikacjami finansowymi i operacyjnymi
       href: ../fin-ops-core/dev-itpro/index.md
-    - name: Rozwiązanie Dynamics 365 Finance
+    - name: Dynamics 365 Finance
       href: ../finance/index.md
-    - name: Rozwiązanie Dynamics 365 Supply Chain Management
+    - name: Dynamics 365 Supply Chain Management
       href: ../supply-chain/index.md
     - name: Dynamics 365 Commerce
       href: ../commerce/index.md

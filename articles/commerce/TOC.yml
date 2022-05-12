@@ -12,14 +12,12 @@
               items:
                 - name: Nowości i zmiany w rozwiązaniu Commerce — strona główna
                   href: get-started/whats-new-home-page.md
+                - name: Rozwiązanie Commerce 10.0.27 (lipiec 2022)
+                  href: get-started/whats-new-commerce-10-0-27.md
                 - name: Rozwiązanie Commerce 10.0.26 (maj 2022)
                   href: get-started/whats-new-commerce-10-0-26.md
                 - name: Rozwiązanie Commerce 10.0.25 (kwiecień 2022)
                   href: get-started/whats-new-commerce-10-0-25.md
-                - name: Rozwiązanie Commerce 10.0.24 (luty 2022)
-                  href: get-started/whats-new-commerce-10-0-24.md
-                - name: Rozwiązanie Commerce w wersji 10.0.23 (styczeń 2022)
-                  href: get-started/whats-new-commerce-10-0-23.md
             - name: Usunięte lub wycofane funkcje
               items:
                 - name: Usunięte lub wycofane funkcje — strona główna
@@ -356,7 +354,9 @@
                           href: tax-exempt-price-inclusive.md
                         - name: Konfigurowanie podatku dla zamówień online
                           href: sales-tax-config.md
-                    - name: Konfigurowanie profilu powiadomienia
+                        - name: Ukrywanie informacji o podziałach podatkowych w podsumowaniach zamówień
+                          href: hide-taxes-breakup.md
+                    - name: Konfigurowanie profilu powiadomienia e-mail
                       href: email-notification-profiles.md
                     - name: Sekwencje identyfikatorów
                       items:
@@ -394,7 +394,7 @@
                       href: dev-itpro/store-commerce.md
                     - name: Wskazówki dotyczące implementacji zarządzania urządzeniami
                       href: implementation-considerations-devices.md
-                    - name: Wybór między aplikacjami MPOS i Cloud POS
+                    - name: Wybierz między rozwiązaniem Store Commerce i Cloud POS
                       href: MPOS-or-CPOS.md
                     - name: Operacje online i offline w punkcie sprzedaży
                       href: pos-operations.md
@@ -496,6 +496,8 @@
                   href: tasks/configure-functionality-profile-sales-representative.md
                 - name: Tworzenie wymiarów finansowych dla kanałów sprzedaży detalicznej i konfigurowanie wartości w sklepach
                   href: tasks/create-financial-dimensions-retail-channels.md
+                - name: Konfigurowanie sekwencji identyfikatorów dla zestawień sprzedaży detalicznej
+                  href: retail-statements-number-sequences.md
                 - name: Włączanie spójnej obsługi trybu dostawy w kanałach handlu elektronicznego
                   href: consistent-delivery-mode-handling.md
             - name: Konfigurowanie kanału online
@@ -884,6 +886,8 @@
           items:
             - name: Omówienie zestawień
               href: retail-statements.md
+            - name: Parametry księgowania rozwiązania Commerce
+              href: commerce-posting-parameters.md
             - name: Sprawdzanie poprawności transakcji sklepu na potrzeby obliczenia zestawienia
               href: valid-checker.md
             - name: Wyłączanie reguł w sprawdzaniu spójności transakcji sprzedaży detalicznej
@@ -1100,6 +1104,8 @@
                       href: adventure-works-theme.md
                     - name: Instalacja motywu Adventure Works
                       href: install-adventure-works.md
+                - name: Przewodnik lokalizacji rozwiązania Commerce
+                  href: e-commerce-localization-guide.md
             - name: Zarządzanie cyfrowymi składnikami majątku
               items:
                 - name: Omówienie zarządzania cyfrowymi składnikami majątku
@@ -1312,6 +1318,14 @@
               href: b2b/payment-method.md
             - name: Ustawianie limitów ilości produktów dla witryn handlu elektronicznego B2B
               href: b2b/quantity-limits.md
+            - name: Katalogi rozwiązania Commerce dla witryn B2B
+              items:
+                - name: Tworzenie katalogów rozwiązania Commerce dla witryn B2B
+                  href: catalogs-b2b-sites.md
+                - name: Wpływ możliwości rozszerzania katalogów Commerce dla dostosowań B2B
+                  href: catalogs-b2b-sites-dev.md
+                - name: Katalogi rozwiązania Commerce dla B2B — często zadawane pytania
+                  href: catalogs-b2b-sites-FAQ.md
         - name: Monitorowanie i analizy
           items:
             - name: Monitorowanie wydajności sprzedaży i marży
@@ -2472,15 +2486,19 @@
                   items:
                     - name: Dostosowanie zasobów rozszerzeń rozwiązania Commerce i plików etykiet
                       href: dev-itpro/extension-resource-localization.md
-            - name: Rozwiązanie Commerce bez kierownictwa
+            - name: Handel bez kierownictwa
               items:
+                - name: Omówienie
+                  items:
+                    - name: Wprowadzenie do podstawowych funkcji usługi Commerce Scale Unit (CSU)
+                      href: dev-itpro/CSU-core.md
                 - name: Interfejsy API i odwołanie
                   items:
                     - name: Interfejsy API klienta i odbiorcy Commerce Scale Unit
                       href: dev-itpro/retail-server-customer-consumer-api.md
                     - name: Korzystanie z interfejsów API usługi Retail Server w aplikacjach zewnętrznych
                       href: dev-itpro/consume-retail-server-api.md
-                    - name: Serwery proxy Typescript i C# dla aplikacji Retail POS
+                    - name: Serwery proxy TypeScript i C# dla aplikacji Retail POS
                       href: dev-itpro/typescript-proxy-retail-pos.md
                     - name: Architektura i konfiguracja środowiska uruchomieniowego Commerce Runtime (CRT)
                       href: dev-itpro/commerce-runtime-overview.md
@@ -2528,7 +2546,9 @@
                       href: dev-itpro/extensions-shipping-carrier-integration.md
                 - name: Pakowanie i wdrażanie
                   items:
-                    - name: Usuwanie rozszerzeń jednostki skalowania chmury
+                    - name: Tworzenie pakietu rozszerzenia Cloud Scale Unit
+                      href: dev-itpro/CSU-packaging.md
+                    - name: Usuwanie rozszerzeń Cloud Scale Unit
                       href: dev-itpro/retail-sdk/remove-csu-package.md
             - name: Store Commerce
               items:
@@ -2540,6 +2560,8 @@
                       href: dev-itpro/pos-extension/pos-extension-basics.md
                     - name: Migracja rozszerzeń punktu sprzedaży do zestawu SDK do Commerce
                       href: dev-itpro/pos-extension/migrate-pos-extension.md
+                    - name: Debugowanie rozszerzeń Store Commerce przy użyciu kodu usługi VS Code
+                      href: dev-itpro/sc-debug.md
                 - name: Konfiguracja środowiska
                   items:
                     - name: Lokalne środowisko projektowe
@@ -2614,6 +2636,8 @@
                       href: dev-itpro/pos-extension/mpos-extension-signing.md
                     - name: Tworzenie pakietu rozszerzenia aplikacji Cloud POS
                       href: dev-itpro/pos-extension/cpos-extension-package.md
+                    - name: Tworzenie pakietu instalatora rozszerzeń rozwiązania Store Commerce
+                      href: dev-itpro/store-comm-extension-installer.md
             - name: Handel elektroniczny
               items:
                 - name: Omówienie
@@ -2814,11 +2838,15 @@
                       items:
                         - name: Rejestrator telemetryczny
                           href: e-commerce-extensibility/telemetry-logger.md
-            - name: Commerce HQ
+            - name: Commerce Headquarters
               items:
+                - name: Rozszerzenie pakietu CDX
+                  items:
+                    - name: Rozszerzenie pakietu CDX klienta w celu dodania niestandardowych danych
+                      href: dev-itpro/extend-customer-CDX-package.md
                 - name: Pakowanie i wdrażanie
                   items:
-                    - name: Tworzenie pakowania płatności Commerce dla wdrożenia finansów i operacji
+                    - name: Tworzenie pakietu płatności rozwiązania Commerce dla wdrożenia finansowego i operacyjnego
                       href: dev-itpro/payment-connector-package.md
             - name: Zestaw SDK do Retail (starszy)
               items:

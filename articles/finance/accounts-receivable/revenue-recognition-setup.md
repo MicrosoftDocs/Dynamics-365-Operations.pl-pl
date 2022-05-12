@@ -2,7 +2,7 @@
 title: Konfiguracja rozpoznawania przychodów
 description: W tym temacie opisano opcje konfiguracji dotyczące rozpoznawania przychodów oraz ich implikacje.
 author: kweekley
-ms.date: 11/24/2021
+ms.date: 04/28/2022
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: e8e29ec1ca5a02db67bb4baf522da96ec23c740f
-ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
+ms.openlocfilehash: 5f72ebd743763db7c68340a833c2501d47d27081
+ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7867227"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "8656729"
 ---
 # <a name="revenue-recognition-setup"></a>Konfiguracja rozpoznawania przychodów
 [!include [banner](../includes/banner.md)]
@@ -100,7 +100,7 @@ Wprowadź wartości opisowe w polach **Harmonogram przychodów** i **Opis**. Pon
     - **Wystąpienia** — kwota jest alokowana równomiernie między wystąpieniami, ale może zawierać dodatkowy okres, jeśli jako konwencję uznania została wybrana **Rzeczywista data rozpoczęcia**.
     - **Okres obrachunkowy według dni** — kwota jest alokowana na podstawie rzeczywistych dni w każdym okresie obrachunkowym. 
 
-    Wyniki **Miesięcznie według dni** i **Okres obrachunkowy według dni** będą takie same, gdy okresy obrachunkowe są zgodne z miesiącami kalendarzowymi. Jedyny wyjątek ma miejsce w przypadku, gdy konwencja rozpoznawania ma wartość **Koniec miesiąca/okresu**, a pola **Data rozpoczęcia umowy** i **Data zakończenia** są puste w wierszu zamówienia sprzedaży.
+         - Wyniki **Miesięcznie według dni** i **Okres obrachunkowy według dni** będą takie same, gdy okresy obrachunkowe są zgodne z miesiącami kalendarzowymi. Jedyny wyjątek ma miejsce w przypadku, gdy konwencja rozpoznawania ma wartość **Koniec miesiąca/okresu**, a pola **Data rozpoczęcia umowy** i **Data zakończenia** są puste w wierszu zamówienia sprzedaży.
 
 - **Konwencja uznania** — konwencja uznania określa daty ustawione w harmonogramie przychodów dla faktury.
 
@@ -108,7 +108,7 @@ Wprowadź wartości opisowe w polach **Harmonogram przychodów** i **Opis**. Pon
     - **1. dzień miesiąca/okresu** — data pierwszego wiersza harmonogramu to data rozpoczęcia umowy (lub data faktury). Jednak wszystkie kolejne wiersze harmonogramu są tworzone dla pierwszego dnia miesiąca lub okresu obrachunkowego.
     - **Podział półmiesięczny** — data pierwszego wiersza harmonogramu zależy od daty faktury. Jeśli faktura zostanie zaksięgowana między pierwszym a piętnastym dniem miesiąca, harmonogram przychodów jest tworzony przy użyciu pierwszego dnia miesiąca. Jeśli faktura zostanie zaksięgowana po szesnastym dniu miesiąca, harmonogram przychodów jest tworzony przy użyciu pierwszego dnia następnego miesiąca.
 
-        Nie można wybrać **Podziału w ciągu miesiąca**, jeśli podstawa rozpoznawania ma wartość **Okres obrachunkowy według dni**.
+        - Nie można wybrać **Podziału w ciągu miesiąca**, jeśli podstawa rozpoznawania ma wartość **Okres obrachunkowy według dni**.
 
     - **1. dzień następnego miesiąca/okresu** — data, która w harmonogramie zaczyna się pierwszego dnia następnego miesiąca lub okresu obrachunkowego.
     - **Koniec miesiąca/okresu** — data pierwszego wiersza harmonogramu to data rozpoczęcia umowy (lub data faktury). Jednak wszystkie kolejne wiersze harmonogramu są tworzone dla ostatniego dnia miesiąca lub okresu obrachunkowego. 
