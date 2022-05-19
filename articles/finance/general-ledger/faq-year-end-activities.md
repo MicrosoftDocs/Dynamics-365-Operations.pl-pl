@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: kweekley
+ms.author: moaamer
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: b0560024d87ad72c7ab77eaff52a305a4ab5a089
-ms.sourcegitcommit: cd0ba5f0ac7c44d36559a3e6e0fffb6ed18f9a20
+ms.openlocfilehash: 19d23c2c5a8fabd6799c6240c25f3ede4064c001
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/28/2021
-ms.locfileid: "7947269"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8725608"
 ---
 # <a name="year-end-activities-faq"></a>Działania na koniec roku — często zadawane pytania 
 
@@ -170,9 +170,9 @@ Organizacja może wymagać ręcznego utworzenia transakcji 1099, które nie są 
 
 Ręcznie utworzone transakcje dotyczące podatku 1099 nie są aktualizowane przy użyciu narzędzia **Aktualizuj wszystko** ani **Ponowne obliczanie istniejące kwoty podatku 1099** w narzędziu **Aktualizacja formularza 1099**.
 
-## <a name="accounts-payable-1099--does-dynamics-365-finance-support-the-1096-form"></a>Rozrachunki z dostawcami: 1099 — czy Dynamics 365 Finance obsługuje formularz 1096? 
+## <a name="accounts-payable-1099--does-dynamics-365-finance-support-the-1096-form"></a>Rozrachunki z dostawcami: 1099 — czy rozwiązanie Dynamics 365 Finance obsługuje formularz 1096? 
 
-Program Dynamics 365 Finance nie umożliwia wydrukowania formularza 1096 „Roczne podsumowanie i przekazywanie informacji zwrotnych w USA”.
+Rozwiązanie Dynamics 365 Finance nie umożliwia wydrukowania formularza 1096 Roczne podsumowanie i przekazywanie informacji zwrotnych w USA.
 
 ## <a name="accounts-payable-1099--are-there-any-new-features-that-support-1099-reporting-for-public-sector"></a>Rozrachunki z dostawcami: 1099 — czy są dostępne nowe funkcje do obsługi raportów 1099 dla sektora publicznego? 
 **Aktualizacja danych formularza 1099 za pośrednictwem konta głównego** to nowa funkcja dla sektora publicznego, którą można włączyć w obszarze roboczym **Zarządzanie funkcjami**. Ta funkcja umożliwia powiązanie wartości formularza 1099 dla dostawcy za pośrednictwem konta głównego w obszarze podziału księgowań, a nie na domyślnym koncie w rekordzie dostawcy.

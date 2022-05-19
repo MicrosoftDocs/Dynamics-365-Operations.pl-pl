@@ -448,12 +448,10 @@
               href: hr-personnel-add-department-hierarchy.md
             - name: Definiowanie funkcji
               href: hr-personnel-define-jobs.md
-            - name: Stanowiska
+            - name: Pozycje
               href: hr-personnel-positions.md
             - name: Tworzenie kalendarza czasów pracy
               href: hr-personnel-create-working-time-calendar.md
-            - name: Rekrutowanie kandydatów
-              href: hr-personnel-recruit.md
             - name: Akcje dotyczące pracowników — często zadawane pytania
               href: hr-personnel-actions-faq.md
             - name: Używanie przepływów pracy do zarządzania informacjami pracowników etatowych
@@ -463,7 +461,7 @@
             - name: Modyfikowanie relacji zależności służbowych stanowiska
               href: hr-personnel-modify-reporting-relationships-position.md
             - name: Usprawniony wpis pracownika etatowego
-              href: ../talent/streamlined-employee-entry.md?toc=/dynamics365/human-resources/toc.json
+              href: stream-employee-entry.md
             - name: Wprowadzanie informacji o pracowniku
               href: hr-personnel-enter-worker-information.md
             - name: Pracownicy bez zatrudnienia
@@ -488,26 +486,34 @@
               href: hr-personnel-set-up-injury-illness-information.md
             - name: Obsługa informacji dotyczących urazów i chorób pracowników etatowych
               href: hr-personnel-maintain-employee-injury-illness-information.md
-            - name: Rekrutowanie kandydatów
+            - name: Rekrutacja
               items:
-                - name: Zarządzanie procesami rekrutacji
-                  href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
-                - name: Projekty zatrudnienia grupowego
-                  href: ../human-resources/hr-personnel-mass-hire-projects.md
-                - name: Tworzenie projektów zatrudnienia grupowego
-                  href: ../human-resources/hr-personnel-create-mass-hire-project.md
-                - name: Ręczne wprowadzanie danych kandydata i zgłoszenia
-                  href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
-                - name: Opracowywanie i otwieranie zapotrzebowań na funkcje
-                  href: ../fin-ops-core/fin-ops/hr/tasks/develop-open-job-requisition.md
-                - name: Konfigurowanie stanowisk
-                  href: ../human-resources/hr-personnel-set-up-positions.md
-                - name: Zatrudnianie kandydatów przez rekrutację
-                  href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
-                - name: Zatrudnianie istniejących pracowników etatowych przez rekrutację
-                  href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
-                - name: Identyfikowanie i wdrażanie narzędzi do wybierania kandydatów
-                  href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md
+                - name: Omówienie
+                  href: ../human-resources/hr-recruit-overview.md
+                - name: Projekty rekrutacji
+                  items:
+                    - name: Zarządzanie procesami projektu rekrutacji
+                      href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
+                    - name: Ręczne wprowadzanie danych kandydata i zgłoszenia
+                      href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
+                    - name: Opracowywanie i otwieranie zapotrzebowań na funkcje
+                      href: ../fin-ops-core/fin-ops/hr/tasks/develop-open-job-requisition.md
+                    - name: Konfigurowanie stanowisk
+                      href: ../human-resources/hr-personnel-set-up-positions.md
+                    - name: Zatrudnianie kandydatów przez rekrutację
+                      href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
+                    - name: Zatrudnianie istniejących pracowników etatowych przez rekrutację
+                      href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
+                    - name: Identyfikowanie i wdrażanie narzędzi do wybierania kandydatów
+                      href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md
+                    - name: Projekty zatrudnienia grupowego
+                      href: ../human-resources/hr-personnel-mass-hire-projects.md
+                    - name: Tworzenie projektów zatrudnienia grupowego
+                      href: ../human-resources/hr-personnel-create-mass-hire-project.md
+                - name: Żądania rekrutacji (scalona infrastruktura)
+                  items:
+                    - name: Rekrutowanie kandydatów
+                      href: hr-personnel-recruit.md
         - name: Zarządzanie zadaniami
           href: hr-task-mgmt.md
         - name: Urlopy i nieobecności
@@ -800,6 +806,8 @@
               href: hr-admin-integration-common-data-service-virtual-entities.md
             - name: Konfigurowanie integracji z rozwiązaniem Finance
               href: hr-admin-integration-finance.md
+            - name: Tworzenie łączy z rozwiązania Human Resources do innego środowiska
+              href: configure-links.md
             - name: Konfigurowanie integracji z rozwiązaniem Dayforce
               href: hr-admin-integration-dayforce.md
             - name: Tworzenie aplikacji do cyklicznego eksportowania danych

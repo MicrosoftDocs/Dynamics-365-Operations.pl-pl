@@ -48,12 +48,8 @@
               href: dev-tools/version-models-build.md
         - name: Integracja danych
           items:
-            - name: Integracja między aplikacjami Finance and Operations i usługami innych firm
+            - name: Integracja między aplikacjami finansowymi i operacyjnymi i usługami innych firm
               href: data-entities/integration-overview.md
-            - name: Dławienie oparte na priorytetach
-              hreF: data-entities/priority-based-throttling.md
-            - name: Często zadawane pytania dotyczące dławienia opartego na priorytetach
-              href: data-entities/throttling-faq.md
             - name: Interfejsy API integracji danych
               items:
                 - name: Interfejs API REST pakietu zarządzania danymi
@@ -74,6 +70,18 @@
                   href: data-entities/recurring-integrations.md
                 - name: Testowanie usług za pomocą narzędzi innych firm
                   href: data-entities/third-party-service-test.md
+            - name: Limity ochrony usługi
+              items:
+                - name: Limity interfejsu API ochrony usługi
+                  href: data-entities/service-protection-api-limits.md
+                - name: Priorytety ograniczania
+                  href: data-entities/priority-based-throttling.md
+                - name: Ponowne wykonanie operacji
+                  href: data-entities/service-protection-retry-operations.md
+                - name: Monitorowanie ograniczania interfejsu API
+                  href: data-entities/service-protection-monitoring.md
+                - name: Maksymalizowanie przepływności interfejsu API
+                  href: data-entities/service-protection-maximizing-api-throughput.md
             - name: Łącznik rozwiązania Finance and Operations
               href: data-entities/fin-ops-connector.md
             - name: Programowanie na potrzeby integracji
@@ -398,6 +406,8 @@
                       href: deployment/onprem-SSRSHA.md
                     - name: Konfigurowanie serwerów proxy dla środowisk lokalnych
                       href: deployment/onprem-reverseproxy.md
+                    - name: Konfigurowanie aplikacji Magazynowanie dla wdrożeń lokalnych
+                      href: deployment/warehousing-for-on-premise-deployments.md
                     - name: Instalowanie urządzeń drukarek sieciowych w środowiskach lokalnych
                       href: analytics/install-network-printer-onprem.md
                     - name: Diagnostyka we wdrożeniach lokalnych
@@ -472,16 +482,14 @@
                   href: help/language-locale.md
                 - name: 'Rozszerzanie, dostosowywanie i współpraca z pomocą'
                   href: help/contributor-guide.md
-            - name: Uwagi dotyczące wdrażania
+            - name: Regionalne usługi aplikacji finansowych i operacyjnych
               items:
-                - name: Opcje wdrożenia niezależnego i w lokalnej chmurze dla rozwiązań Dynamics 365 Finance oraz Dynamics 365 Supply Chain Management
+                - name: Lokalne geografie
                   href: deployment/deployment-options-geo.md
-                - name: Rozwiązania Finance i Supply Chain Management w amerykańskiej chmurze Government Community Cloud (GCC)
+                - name: Amerykańska chmura Government Community Cloud (GCC)
                   href: deployment/us-gcc-deployment.md
-                - name: Rozwiązania Finance i Supply Chain Management obsługiwane przez firmę 21Vianet w Chinach
+                - name: Obsługiwane przez firmę 21Vianet w Chinach
                   href: deployment/china-local-deployment.md
-                - name: Aplikacje Finance and Operations we Francji
-                  href: deployment/france-local-deployment.md
         - name: Tworzenie i dostosowywanie
           items:
             - name: Opracowywanie i dostosowywanie strony głównej
@@ -559,7 +567,7 @@
                     - name: Tworzenie modeli i omówienia elementów modelu danych
                       href: dev-tools/create-data-model-elements.md
                     - name: Wytyczne dotyczące nazewnictwa rozszerzeń
-                      href: /dynamics365/fin-ops-core/dev-itpro/naming-guidelines-extensions
+                      href: /dynamics365/fin-ops-core/dev-itpro/extensibility/naming-guidelines-extensions
                     - name: Wyłączanie dostosowania modelu i wycofywanie funkcji
                       href: dev-tools/lock-models.md
                 - name: Raport Analizy dostosowań

@@ -86,8 +86,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Kup rozwiązanie Finance + Operations (on-premises)
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfigurowanie modułu Magazynowanie dla wdrożeń lokalnych
-                  href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
             - name: Zasoby dokumentacji
               items:
                 - name: System pomocy
@@ -3299,8 +3297,8 @@
                   href: warehousing/tasks/register-items-advanced-warehousing.md
                 - name: Rejestrowanie elementów dla podstawowego magazynowania za pomocą arkusza przyjęć towarów
                   href: warehousing/tasks/register-items-basic-warehousing.md
-                - name: Importowanie przychodzących wcześniejszych powiadomień o wysyłce za pomocą jednostki danych V2
-                  href: warehousing/import-asn-v2-data-entity.md
+                - name: Importowanie przychodzących wcześniejszych powiadomień o wysyłce za pomocą jednostki danych V3
+                  href: warehousing/import-asn-data-entity.md
                 - name: Przeładunek kompletacyjny z magazynu przyjmującego do sklepów
                   href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
                 - name: Konfigurowanie dyrektywy lokalizacji dla odłożenia zamówienia zakupu

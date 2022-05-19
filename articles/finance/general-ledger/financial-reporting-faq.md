@@ -1,25 +1,23 @@
 ---
 title: Raportowanie finansowe — często zadawane pytania
 description: Ten temat zawiera odpowiedzi na niektóre często zadawane pytania dotyczące raportowania finansowego.
-author: jiwo
+author: jinniew
 ms.date: 07/07/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 3690a541b503281f204221a72bfb5a371984d9e4
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: b5e0702864815c630f35e3f5b753ece1cb1daa71
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605286"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8722304"
 ---
 # <a name="financial-reporting-faq"></a>Raportowanie finansowe — często zadawane pytania
 
@@ -57,7 +55,7 @@ Jeśli masz raport, który nie zawiera pasujących sald, zastosuj następujące 
 9. Wygeneruj raport. 
 10. Wyeksportuj raport do programu Microsoft Excel.
 
-### <a name="in-dynamics-365-finance"></a>W Dynamics 365 Finance
+### <a name="in-dynamics-365-finance"></a>W rozwiązaniu Dynamics 365 Finance
 
 1. Przejdź do opcji **Księga główna \> Zapytania i raporty \> Bilans próbny**.
 2. Ustaw wartości w następujących polach:
@@ -104,7 +102,7 @@ Podobnie, gdy raporty są generowane przy użyciu przeliczania walut dla kont ty
 
 ## <a name="what-are-the-estimated-data-mart-integration-intervals"></a>Jakie są szacowane interwały integracji składnicy danych?
 
-Program Financial Reporter używa 16 zadań do kopiowania danych z usługi Dynamics 365 Finance do bazy danych Financial Reporter. W poniższej tabeli wymieniono te 16 zadań i przedstawiono interwał określający częstotliwość wykonywania poszczególnych zadań. Interwałów nie można zmienić.
+Program Financial Reporter używa 16 zadań do kopiowania danych z rozwiązania Dynamics 365 Finance do bazy danych Financial Reporter. W poniższej tabeli wymieniono te 16 zadań i przedstawiono interwał określający częstotliwość wykonywania poszczególnych zadań. Interwałów nie można zmienić.
 
 | Nazwa                                                       | Interwał | Czas interwału |
 |------------------------------------------------------------|----------|-----------------|

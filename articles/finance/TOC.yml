@@ -86,8 +86,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/finance/toc.json
                 - name: Kup rozwiązanie Finance + Operations (on-premises)
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/finance/toc.json
-                - name: Konfigurowanie modułu Magazynowanie dla wdrożeń lokalnych
-                  href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/finance/toc.json
             - name: Zasoby dokumentacji
               items:
                 - name: System pomocy
@@ -272,6 +270,8 @@
                   href: accounts-payable/tasks/research-resolve-exceptions.md
             - name: Profile księgowania dostawców
               href: accounts-payable/vendor-posting-profiles.md
+            - name: Tworzenia kodów opłat
+              href: accounts-receivable/create-charges-codes.md
             - name: Daty faktury od dostawcy
               href: accounts-payable/vendor-invoice-dates.md
             - name: Przeszacowanie w walucie obcej dla rozrachunków z dostawcami i rozrachunków z odbiorcami
@@ -292,9 +292,11 @@
               items:
                 - name: Scentralizowane płatności na potrzeby rozrachunków z dostawcami
                   href: accounts-payable/centralized-payments-accounts-payable.md
+                - name: Konfigurowanie i przetwarzanie płatności pomostowych
+                  href: accounts-receivable/set-up-and-process-bridged-payments.md
                 - name: Konfigurowanie rozliczenia
                   href: cash-bank-management/configure-settlement.md
-                - name: Rozliczanie reszty
+                - name: Przypomnienie o rozliczeniu
                   href: cash-bank-management/settle-remainder.md
                 - name: Omówienie płatności dla dostawców
                   href: cash-bank-management/tasks/vendor-payment-overview.md
@@ -354,8 +356,12 @@
               href: accounts-receivable/set-up-process-recurring-invoices.md
             - name: Zasady podziału księgowań i zapisy w arkuszu księgi podrzędnej dla faktur niezależnych
               href: accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices.md
-            - name: Profile księgowania odbiorców
+            - name: Księgowanie rozrachunków z odbiorcami
+              href: general-ledger/accts-recvble-posting.md
+            - name: Profile księgowania klientów
               href: accounts-receivable/customer-posting-profiles.md
+            - name: Tworzenia kodów opłat
+              href: accounts-receivable/create-charges-codes.md
             - name: Omówienie polecenia zapłaty SEPA
               href: accounts-receivable/sepa-direct-debit-overview.md
             - name: Konfigurowanie upoważnienia bankowego dla polecenia zapłaty SEPA
@@ -436,6 +442,8 @@
                       href: accounts-receivable/terminate-billing-schedule.md
                     - name: Scenariusze daty wyrównania
                       href: accounts-receivable/sb-alignment-date-examples.md
+                    - name: Podział przychodu
+                      href: accounts-receivable/sb-revenue-split.md
                 - name: Odroczenia przychodów i wydatków
                   items:
                     - name: Konfigurowanie odroczeń przychodów i wydatków
@@ -452,9 +460,11 @@
               items:
                 - name: Omówienie płatności klientów
                   href: cash-bank-management/tasks/customer-payment-overview.md
+                - name: Konfigurowanie i przetwarzanie płatności pomostowych
+                  href: accounts-receivable/set-up-and-process-bridged-payments.md
                 - name: Scentralizowane płatności na potrzeby rozrachunków z odbiorcami
                   href: accounts-receivable/centralized-payments-accounts-receivable.md
-                - name: Deponowanie płatności odbiorców
+                - name: Deponowanie płatności klientów
                   href: accounts-receivable/tasks/deposit-customer-payments.md
                 - name: Omówienie polecenia zapłaty SEPA
                   href: accounts-receivable/sepa-direct-debit-overview.md
@@ -1026,6 +1036,14 @@
                       href: general-ledger/import-currency-exchange-rates.md
                     - name: Dwie waluty
                       href: general-ledger/dual-currency.md
+                - name: Profile księgowania
+                  items:
+                    - name: Omówienie profili księgowania
+                      href: general-ledger/pstg-prfles-ovrvw.md
+                    - name: Zalecane wskazówki dotyczące profili księgowania
+                      href: general-ledger/recommended-practices-pstg-prfles.md
+                    - name: Konta dla transakcji automatycznych
+                      href: general-ledger/accounts-for-auto-transactions.md
                 - name: Reguły alokacji
                   items:
                     - name: Reguły alokacji księgi
