@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 24ddd242185d736287f61ec250c631ab65e08c95
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 98c1c56b445ae426103d19f96cbf1a77891221ef
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065048"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8717147"
 ---
 # <a name="choose-a-data-integration-technology"></a>Wybieranie technologii integracji danych
 
@@ -31,7 +30,7 @@ ms.locfileid: "8065048"
 
 
 
-Ten temat zawiera informacje dotyczące integrowania z danymi zarządzanymi przez Dynamics 365 Human Resources. Opisuje różne technologie integracji, które pomagają określić, które technologie najlepiej pasują do potrzeb użytkownika.
+Ten temat zawiera informacje dotyczące integrowania z danymi zarządzanymi przez Dynamics 365 Human resources. Opisuje różne technologie integracji, które pomagają określić, które technologie najlepiej pasują do potrzeb użytkownika.
 
 ## <a name="data-integration-background"></a>Tło integracji danych
 

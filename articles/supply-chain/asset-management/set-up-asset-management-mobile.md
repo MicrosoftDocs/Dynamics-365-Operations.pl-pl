@@ -8,17 +8,16 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-22
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 5d628f99d4fc6788ddb38590c65decb871d49f93
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a056be417d266fd400ce1572312f327dc070cb6a
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572200"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8693508"
 ---
 # <a name="set-up-the-asset-management-mobile-workspace"></a>Konfigurowanie mobilnego obszaru roboczego zarządzania składnikami majątku
 
@@ -51,9 +50,9 @@ Aby udostępnić funkcje zarządzania składnikami majątku w aplikacji mobilnej
 
 1. Wybierz kafelek **Zarządzanie składnikami majątku**, a następnie wybierz pozycję **Publikuj** na pasku narzędzi. Po kilku sekundach powinien zostać wyświetlony komunikat o pomyślnym opublikowaniu obszaru roboczego. Ponadto tekst na kafelku powinien się zmienić na „W metadanych — opublikowano”.
 
-## <a name="install-and-set-up-the-finance-and-operations-dynamics-365-mobile-app"></a>Instalowanie i konfigurowanie aplikacji mobilnej Finance and Operations (Dynamics 365)
+## <a name="install-and-set-up-the-finance-and-operations-dynamics-365-mobile-app"></a>Zainstaluj i skonfiguruj aplikację mobilną Finance and Operations (Dynamics 365)
 
-1. Przejdź do jednego z następujących sklepów z aplikacjami, aby zainstalować aplikację **Microsoft Finance and Operations (Dynamics 365)** na urządzeniu przenośnym:
+1. Przejdź do jednego z następujących sklepów z aplikacjami, aby zainstalować **aplikacja Microsoft Finance and Operations (Dynamics 365)** na urządzeniu przenośnym:
 
     - [Dla urządzeń z systemem Android firmy Google](https://go.microsoft.com/fwlink/?linkid=850662)
     - [Dla urządzeń z systemem IOS firmy Apple](https://go.microsoft.com/fwlink/?linkid=850663)

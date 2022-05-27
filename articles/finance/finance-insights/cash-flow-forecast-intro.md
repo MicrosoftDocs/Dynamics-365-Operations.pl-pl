@@ -8,7 +8,7 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom:
 - "14151"
 - intro-internal
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-19
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 62e30e382d94e4eff73789b3e884c6b81afce6c1
-ms.sourcegitcommit: c8dc60bb760553f166409c2e06dd2377f601c006
+ms.openlocfilehash: 2ed6795073b4a013df7a6a8a7a61df2c11525c51
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "7945836"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711010"
 ---
 # <a name="cash-forecast"></a>Prognoza kasowa
 
@@ -53,7 +53,7 @@ Funkcja prognoz przepływów pieniężnych obejmuje następujące funkcje:
 
 - Umożliwia filtrowanie i wyświetlanie kont bankowych, które są powiązane z wymiarami finansowymi.
 
-Funkcja prognozowania przepływów pieniężnych w systemie Dynamics 365 Finance pozwala organizacji na przekształcanie żmudnych, złożonych i powtarzających się projekcji przepływów pieniężnych w prosty, zautomatyzowany proces. Automatyzacja najbardziej żmudnych aspektów prognozowania przepływów pieniężnych umożliwia skoncentrowanie się na krytycznych decyzjach przekładających się na pożądane wyniki biznesowe.
+Funkcja prognozowania przepływów pieniężnych w Dynamics 365 Finance pozwala organizacji na przekształcanie żmudnych, złożonych i powtarzających się projekcji przepływów pieniężnych w prosty, zautomatyzowany proces. Automatyzacja najbardziej żmudnych aspektów prognozowania przepływów pieniężnych umożliwia skoncentrowanie się na krytycznych decyzjach przekładających się na pożądane wyniki biznesowe.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

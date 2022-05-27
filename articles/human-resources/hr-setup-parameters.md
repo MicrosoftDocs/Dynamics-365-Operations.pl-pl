@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: HRMParameters, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fd9bb907f95ba4c368871a470ca9b2bc807646ee
-ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
+ms.openlocfilehash: 1fc8ba3f69f216d66850485b6ba33cd324a57156
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7771442"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8689418"
 ---
 # <a name="configure-human-resources-parameters"></a>Konfigurowanie parametrów rozwiązania Human Resources
 
@@ -69,7 +68,7 @@ Okres zdefiniowany dla **wiekowania projektu rekrutacji** określa projekty rekr
 
 Aby uzyskać więcej informacji o rekrutacji, zobacz temat [Rekrutowanie kandydatów do pracy](hr-personnel-recruit.md).
 
-## <a name="compensation"></a>Kompensacja
+## <a name="compensation"></a>Kompensata
 
 W Dynamics 365 Finance ustawienia wprowadzone na karcie **Wynagrodzenie** określają, czy użytkownicy muszą potwierdzać, że chcą zapisać informacje dla systemu wynagrodzeń o stałej lub zmiennej wysokości. W wybrania **Włącz weryfikację zapisu** kiedy użytkownik zamknie stronę związaną z wynagrodzeniami, otrzyma wiadomość z zapytaniem, czy chce zapisać rekord. Niektóre strony w module Zarządzania wynagrodzeniami nie zezwalają na usuwanie informacji. Dzięki pytaniu użytkowników, czy chcą zapisać informacje, można ograniczyć ilość zapisywanych danych, których potem nie można usunąć. Jeśli pole wyboru **Włącz weryfikację zapisu** nie jest zaznaczone, rekordy będą natychmiast zapisywane, być może zanim użytkownik będzie gotowy. W przypadku korzystania z funkcji Zarządzania wydajnością można wybrać model oceniania na karcie **Wynagrodzenie** zamiast modelu przypisanego do systemów wynagrodzeń przy ocenie wydajności.
 

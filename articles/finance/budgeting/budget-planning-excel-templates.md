@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: BudgetPlanSetLayout
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 261794
 ms.assetid: 1d8e99c1-b70d-41ba-991e-ab50b16797e0
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8297548bee83d1e982f50c4e5adae748f9f40137362f4ad47ad837ea2af96c29
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 90691aec0ffad8d33a19a09e7bc521cd6d6a09a9
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775177"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711984"
 ---
 # <a name="budget-planning-templates-for-excel"></a>Szablony planowania budżetu dla programu Excel
 
@@ -55,7 +55,7 @@ Możesz przejrzeć konfigurację układu i dostosować ją w razie potrzeby.
 Szablon programu Excel będzie zawierał wszystkie elementy z układu dokumentu planu budżetu, gdzie kolumna **Dostępny w arkuszu** jest ustawiona na Prawda. Nakładające się elementy są niedozwolone w szablonie programu Excel. Na przykład jeśli układ zawiera kolumny Wniosek K1, Wniosek K2, Wniosek K3 i Wniosek K4 oraz kolumnę łącznej kwoty wniosku reprezentującą sumę wszystkich 4 kolumn kwartalnych, w szablonie programu Excel do użycia będą dostępne tylko indywidualne kolumny kwartalne lub kolumna wartości łącznej. Podczas aktualizacji nie można zaktualizować nakładających się kolumn w pliku programu Excel, ponieważ dane w tabeli mogłyby stać się nieaktualne i błędne.
 
 > [!NOTE] 
-> Aby uniknąć potencjalnych problemów z wyświetlaniem i edytowaniem danych planu budżetu za pomocą programu Excel, ten sam użytkownik powinien być zalogowany w usłudze Microsoft Dynamics 365 Finance oraz łączniku danych dodatku pakietu Office dla usługi Microsoft Dynamics.
+> Aby uniknąć potencjalnych problemów z wyświetlaniem i edytowaniem danych planu budżetu za pomocą programu Excel, ten sam użytkownik powinien być zalogowany w programie Microsoft Dynamics 365 Finance oraz łączniku danych dodatku pakietu Office dla usługi Microsoft Dynamics.
 
 ## <a name="add-a-header-to-budget-plan-document-template"></a>Dodawanie nagłówka do szablonu dokumentu planu budżetu
 Aby dodać informacje nagłówka, zaznacz górny wiersz w pliku programu Excel i wstaw puste wiersze. W obszarze **Łącznik danych** kliknij opcję **Projekt** i dodaj pola nagłówka do pliku programu Excel.
@@ -79,7 +79,7 @@ Wybrana grupa pól pokazuje kolumny dostępne w szablonie. Kliknij przycisk **Fo
 [![Dodawanie i wstawianie kolumny.](./media/bpt12-1024x565.png)](./media/bpt12.png)
 
 > [!NOTE] 
-> Aby zdefiniować formułę (wzór), utwórz ją w arkuszu kalkulacyjnym, a następnie skopiuj do okna **Projekt**. Tabela powiązana z Finance and Operations zazwyczaj nosi nazwę „AXTable1”. Na przykład aby podsumować kolumny Wniosek K1: Wniosek K4 w arkuszu kalkulacyjnym, formuła ma postać = AxTable1\[Wniosek K1\]+AxTable1\[Wniosek K2\]+AxTable1\[Wniosek K3\]+AxTable1\[Wniosek K4\].
+> Aby zdefiniować formułę (wzór), utwórz ją w arkuszu kalkulacyjnym, a następnie skopiuj do okna **Projekt**. Tabela powiązana z programem Finance and Operations zazwyczaj nosi nazwę „AXTable1”. Na przykład aby podsumować kolumny Wniosek K1: Wniosek K4 w arkuszu kalkulacyjnym, formuła ma postać = AxTable1\[Wniosek K1\]+AxTable1\[Wniosek K2\]+AxTable1\[Wniosek K3\]+AxTable1\[Wniosek K4\].
 
 Powtórz te kroki, aby wstawić kolumnę **Korekta**. Dla tej kolumny użyj formuły = AxTable1\[Wniosek razem\]\*$I$1. Spowoduje to pobranie wartości z komórki I1 i pomnożenie jej przez wartości z kolumny **Wniosek razem** w celu obliczania kwot korekt.
 

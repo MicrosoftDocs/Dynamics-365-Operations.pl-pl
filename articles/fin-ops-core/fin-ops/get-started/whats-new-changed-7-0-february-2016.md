@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bcc69cbf418131d0b1747f1c904de3188d7ba84216cb3145607b45553263244c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d81d20045c7b06de01a023d1a34ee653dd696ff1
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757226"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711328"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Nowości i zmiany w systemie Dynamics AX 7.0 (luty 2016)
 
@@ -969,7 +969,7 @@ Dostępna jest opcja ulepszonej instalacji składnika odbiorcy z niskim nakłade
 </tr>
 <tr>
 <td>Monitorowanie stanu systemu i diagnozowanie błędów i problemów.</td>
-<td>Ta funkcja wymaga <a href="https://www.microsoft.com/download/details.aspx?id=42636">pakietu System Center 2012 Management dla programu Microsoft Dynamics AX 2012 R3 CU8 Retail</a>.</td>
+<td>Ta funkcja wymaga <a href="https://www.microsoft.com/en-us/download/details.aspx?id=58205">pakietu System Center 2012 Management dla programu Microsoft Dynamics AX 2012 R3 CU8 Retail</a>.</td>
 <td>Monitorowanie i diagnostyka dla składników usługi Retail są teraz dostępne za pośrednictwem pulpitu nawigacyjnego <strong>Wgląd operacyjny</strong> w LCS.</td>
 <td>Pulpit nawigacyjny <strong>Wgląd operacyjny</strong> to chmurowy portal monitorowania, który eliminuje konieczność instalacji infrastruktury System Center Operations Manager (SCOM).</td>
 </tr>

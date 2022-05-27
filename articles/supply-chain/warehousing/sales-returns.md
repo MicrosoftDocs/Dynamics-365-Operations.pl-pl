@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5cfcfd165b5f7b97d1ee88175b3f6c9d418c30c2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 672f24a720f48c420916c197722eb2d9599744fa
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565286"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8695571"
 ---
 # <a name="sales-returns"></a>Zwroty sprzedaży
 
@@ -76,7 +76,6 @@ Podczas tworzenia zamówienia zwrotu należy podać informacje z poniższej tabe
 | Numer autoryzacji zwrotu         | Identyfikator przypisany do zamówienia zwrotu              | Numer autoryzacji zwrotu jest używany jako klucz alternatywny w całym procesie zamówienia zwrotu. Przypisywany numer RMA bazuje na numeracji RMA skonfigurowanej na stronie **Parametry modułu rozrachunków z odbiorcami**.                                                                                                                              |
 | Termin realizacji           | Ostatni dzień, do kiedy można zwrócić towar               | Wartość domyślna jest obliczana jako bieżąca data plus okres ważności. Na przykład jeśli zwrot jest ważny (dopuszczalny) tylko przed 90 dni od daty utworzenia zamówienia zwrotu, a zamówienie zwrotu utworzono w dniu 1 maja, wartością w tym polu jest **30 lipca**. Okres ważności jest ustawiany na stronie **Parametry modułu rozrachunków z odbiorcami**. |
 | Kod przyczyny zwrotu | Przyczyna zwrotu produktu podawana przez odbiorcę          | Kod przyczyny jest wybierany z listy kodów przyczyny zdefiniowanych przez użytkownika. Pole to można zaktualizować w dowolnym momencie.                                                                                                                                                                                                                                    |
-
 ### <a name="create-return-order-lines"></a>Tworzenie wierszy zamówienia zwrotu
 
 Po wypełnieniu nagłówka zwrotu można utworzyć wiersze zwrotu przy użyciu jednej z następujących metod:
@@ -84,7 +83,8 @@ Po wypełnieniu nagłówka zwrotu można utworzyć wiersze zwrotu przy użyciu j
 -   Ręczne wprowadzenie szczegółów towaru, ilości i innych informacji dla każdego wiersza zwrotu.
 -   Utworzenie wiersza zwrotu za pomocą funkcji **Znajdź zamówienie sprzedaży**. Zalecamy używanie tej funkcji podczas tworzenia zamówienia zwrotu. Funkcja **Znajdź zamówienie sprzedaży** ustanawia odwołanie od wiersza zwrotu do wiersza zafakturowanego zamówienia sprzedaży, a następnie pobiera szczegóły wiersza, takie jak numer towaru, ilość, cena, rabat i wartości kosztów, z wiersza sprzedaży. Odwołanie pomaga zagwarantować, że podczas zwracania produktu do firmy jest on wyceniany według tego samego kosztu jednostkowego, jak przy sprzedaży. Odwołanie sprawdza też, czy zamówienia zwrotu nie są tworzone dla ilości przekraczającej ilość sprzedaną na fakturze.
 
->[Uwaga!] Wiersze zwrotu zawierające odwołania do zamówienia sprzedaży są obsługiwane jako korekty (cofnięcia) sprzedaży. Aby uzyskać więcej informacji, zobacz sekcję „Księgowanie w księdze" w dalszej części tego tematu.
+>[!NOTE] 
+>Wiersze zwrotu zawierające odwołania do zamówienia sprzedaży są obsługiwane jako korekty (cofnięcia) sprzedaży. Aby uzyskać więcej informacji, zobacz sekcję „Księgowanie w księdze" w dalszej części tego tematu.
 
 ### <a name="charges"></a>Opłaty
 
@@ -189,8 +189,10 @@ W trakcie procesu przybycia zwroty są integrowane z ogólnym procesem przybycia
 
 ### <a name="identify-products-in-the-arrival-overview-list"></a>Identyfikacji produktów na liście Przegląd przyjęć
 
-Na stronie **Przegląd przyjęć** znajduje się lista wszystkich planowanych przychodzących przybyć. 
->[Uwaga] Przywozy z zamówień zwrotu muszą być przetwarzane oddzielnie od innych typów transakcji przywozu. Po zidentyfikowaniu przychodzącej paczki na stronie **Przegląd przyjęć** (na przykład za pomocą towarzyszącego dokumentu RMA) w okienku akcji kliknij przycisk **Rozpocznij przyjęcie**, aby utworzyć i zainicjować arkusz przybycia pasujący do przybycia.
+Na stronie **Przegląd przyjęć** znajduje się lista wszystkich planowanych przychodzących przybyć.
+
+>[!NOTE] 
+>Przywozy z zamówień zwrotu muszą być przetwarzane oddzielnie od innych typów transakcji przywozu. Po zidentyfikowaniu przychodzącej paczki na stronie **Przegląd przyjęć** (na przykład za pomocą towarzyszącego dokumentu RMA) w okienku akcji kliknij przycisk **Rozpocznij przyjęcie**, aby utworzyć i zainicjować arkusz przybycia pasujący do przybycia.
 
 ### <a name="edit-the-arrival-journal"></a>Edycja arkusza przybycia
 
@@ -232,7 +234,8 @@ Jeśli wysyłasz towar zastępczy do odbiorcy i w zamówieniu zwrotu używasz ak
 
 Towar zastępczy zostanie dostarczony przy użyciu niezależnego zamówienia sprzedaży — zamówienia sprzedaży wymiany. To zamówienie sprzedaży jest tworzone podczas generowania dokumentu dostawy dla zamówienia zwrotu. Nagłówek zamówienia używa informacji od odbiorcy, do którego odwołuje się nagłówek zamówienia zwrotu. Informacje wiersza są pobierane z informacji wprowadzonych na stronie **Pozycja zastępcza**. Strona **Pozycja zastępcza** musi być wypełniona dla wierszy, które mają akcje dyspozycji rozpoczynające się słowem „zamień”. Jednak ani ilość, ani dane identyfikacyjne towaru zastępczego nie są weryfikowane ani w żaden sposób ograniczane. Takie zachowanie pozwala na przypadki, gdy odbiorca chce otrzymać ten sam towar, ale w innej konfiguracji lub rozmiarze, a także na przypadki, gdy odbiorca chce otrzymać całkowicie inny towar. Domyślnie na stronie **Pozycja zastępcza** jest wprowadzany identyczny towar. Można jednak wybrać inny towar, pod warunkiem, że funkcja została skonfigurowana. 
 
->[Uwaga] Po utworzeniu zamówienia sprzedaży wymiany można je edytować i usuwać.
+>[!NOTE] 
+>Po utworzeniu zamówienia sprzedaży wymiany można je edytować i usuwać.
 
 ## <a name="generate-a-packing-slip"></a>Generowanie dokumentu dostawy
 Aby zwrócone towary mogły zostać przyjęte do zapasów, należy zaktualizować dokument dostawy dla zamówienia, do którego należą towary. Podobnie jak proces aktualizacji faktury jest aktualizacją transakcji finansowej, tak proces aktualizacji dokumentu dostawy jest fizyczną aktualizacją rekordu zapasów. Innymi słowy proces ten zatwierdza zmiany zapasów. W przypadku zwrotów kroki przypisane do akcji dyspozycji są implementowane podczas aktualizacji dokumentu dostawy. Podczas generowania dokumentu dostawy zachodzą następujące zdarzenia:
@@ -253,8 +256,10 @@ Chociaż strona **Zamówienie zwrotu** zawiera informacje i czynności, które s
 
 ### <a name="credit-correction"></a>Korekta z czerwonym stornem
 
-W ramach procesu fakturowania sprawdź poprawność wszystkich opłat dodatkowych. Aby spowodować, że księgowania w księdze staną się korektami (stornem), rozważ użycie opcji **Korekta z czerwonym stornem** na karcie **Inne** na stronie **Księgowanie faktury** podczas księgowania faktury/faktury korygującej. 
->[Uwaga] Domyślnie opcja **Korekta z czerwonym stornem** jest aktywna, jeśli włączono opcję **Faktura korygująca z czerwonym stornem** na stronie **Parametry modułu rozrachunków z odbiorcami**. Jednak zalecamy, aby nie księgować zwrotów za pomocą funkcji storna.
+W ramach procesu fakturowania sprawdź poprawność wszystkich opłat dodatkowych. Aby spowodować, że księgowania w księdze staną się korektami (stornem), rozważ użycie opcji **Korekta z czerwonym stornem** na karcie **Inne** na stronie **Księgowanie faktury** podczas księgowania faktury/faktury korygującej.
+
+> [!NOTE]
+> Domyślnie opcja **Korekta z czerwonym stornem** jest aktywna, jeśli włączono opcję **Faktura korygująca z czerwonym stornem** na stronie **Parametry modułu rozrachunków** z odbiorcami. Jednak zalecamy, aby nie księgować zwrotów za pomocą funkcji storna.
 
 ## <a name="create-intercompany-return-orders"></a>Tworzenie międzyfirmowych zamówień zwrotu
 Zamówienia zwrotu mogą być wykonywane między dwoma firmami wewnątrz organizacji. Obsługiwane są następujące scenariusze:
@@ -308,7 +313,8 @@ Zamówienie zwrotu nie odwołuje się do faktury dla odbiorcy. Z tytułu zwrotu 
 
 ![Zamówienie zwrotu nie odwołuje się do faktury dla odbiorcy.](./media/SalesReturn09.png)  
 
->[Uwaga] Domyślną wartością parametru **Koszt własny dla zwrotu** jest cena z rekordu głównego towaru. Cena domyślna różni się od kosztu własnego w momencie wydawania zapasów. Ma to taką konsekwencję, że jest ponoszona strata wynosząca 3 jednostki pieniężne. Ponadto zamówienie zwrotu nie zawiera rabatu udzielonego odbiorcy w zamówieniu sprzedaży. W związku z tym następuje nadmierne uznanie konta odbiorcy.
+> [!NOTE]
+> Domyślną wartością parametru **Koszt własny dla zwrotu** jest cena z rekordu głównego towaru. Cena domyślna różni się od kosztu własnego w momencie wydawania zapasów. Ma to taką konsekwencję, że jest ponoszona strata wynosząca 3 jednostki pieniężne. Ponadto zamówienie zwrotu nie zawiera rabatu udzielonego odbiorcy w zamówieniu sprzedaży. W związku z tym następuje nadmierne uznanie konta odbiorcy.
 
 ### <a name="example-2-credit-correction-is-selected-for-the-return-order"></a>Przykład 2: Dla zamówienia zwrotu wybrano korektę z czerwonym stornem
 
@@ -316,7 +322,8 @@ Przykład 2 jest taki sam, jak przykład 1, ale podczas generowania faktury do z
 
 ![Zamówienie zwrotu z wybraną korektą z czerwonym stornem.](./media/SalesReturn10.png)  
 
->[Uwaga] Księgowania w księdze są wprowadzane jako ujemne korekty.
+>[!NOTE] 
+>Księgowania w księdze są wprowadzane jako ujemne korekty.
 
 ### <a name="example-3-the-return-order-line-is-created-by-using-the-find-sales-order-function"></a>Przykład 3: Jest tworzony wiersz zamówienia zwrotu przy użyciu funkcji Znajdź zamówienie sprzedaży
 
@@ -324,7 +331,8 @@ W tym przykładzie jest tworzony wiersz zamówienia zwrotu przy użyciu funkcji 
 
 ![Wiersz zamówienia zwrotu tworzony przy użyciu funkcji Znajdź zamówienie sprzedaży.](./media/SalesReturn11.png)  
 
->[Uwaga] Opcje **Rabat** i **Koszt własny dla zwrotu** są poprawnie ustawione. W związku z tym następuje dokładne wycofanie faktury dla odbiorcy.
+> [!NOTE]
+> Opcje **Rabat** i **Koszt własny dla zwrotu** są poprawnie ustawione. W związku z tym następuje dokładne wycofanie faktury dla odbiorcy.
 
 
 

@@ -8,26 +8,26 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: b9bad6445e9e77688f66c6c4186422d7a898edd7
-ms.sourcegitcommit: 7fc0a9a6440ac087292e9e76c26c67f56154b9e6
+ms.openlocfilehash: 6ec7e6a7e616e239128281ba669c8bbbfc5e3c7a
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "8051377"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710638"
 ---
 # <a name="configuration-for-finance-insights"></a>Konfiguracja korzystania z modułu Finance Insights
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Finance Insights łączy funkcje firmy Microsoft Dynamics 365 Finance z Dataverse, Azure i AI Builder w celu zapewnienia wydajnego narzędzia prognozowania dla organizacji. W tym temacie objaśniono kroki konfiguracyjne, które umożliwią systemowi korzystanie z funkcji dostępnych w module Finance Insights. Aby pomyślnie wykonać procedury opisane w tym temacie, musisz mieć dostęp administratora systemu i konfiguratora systemu w [Centrum administracyjne portalu Power](https://admin.powerplatform.microsoft.com/), dostęp administratora systemu w Dynamics 365 Finance, oraz dostęp do tworzenia środowisk w Microsoft Dynamics Lifecycle Services (LCS).
+Finance Insights łączy funkcje firmy Microsoft Dynamics 365 Finance z Dataverse, Azure i AI Builder w celu zapewnienia wydajnego narzędzia prognozowania dla organizacji. W tym temacie objaśniono kroki konfiguracyjne, które umożliwią systemowi korzystanie z funkcji dostępnych w module Finance Insights. Aby pomyślnie wykonać procedury opisane w tym temacie, musisz mieć dostęp administratora systemu i konfiguratora systemu w [Centrum administracyjne Power Portal](https://admin.powerplatform.microsoft.com/), dostęp administratora systemu w Dynamics 365 Finance, oraz dostęp do tworzenia środowisk w Microsoft Dynamics Lifecycle Services (LCS).
 
 > [!NOTE]
 > Poniższe procedury konfigurowania rozwiązania Finance Insights są prawidłowe w przypadku wersji rozwiązania Microsoft Dynamics 365 Finance do 10.0.21 i nowszych.
@@ -36,7 +36,7 @@ Finance Insights łączy funkcje firmy Microsoft Dynamics 365 Finance z Datavers
 
 Wykonaj poniższe kroki, aby wdrożyć środowiska.
 
-1. W usługach LCS utwórz lub zaktualizuj środowisko Dynamics 365 Finance. Środowisko wymaga wersji aplikacji 10.0.21 lub nowszej.
+1. W LCS utwórz lub zaktualizuj środowisko Dynamics 365 Finance. Środowisko wymaga wersji aplikacji 10.0.21 lub nowszej.
 
     > [!NOTE]
     > Środowisko musi być środowiskiem o wysokiej dostępności (HA). (Środowisko tego typu jest również nazywane środowiskiem warstwy 2) Aby uzyskać więcej informacji, zobacz [Planowanie środowiska](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).

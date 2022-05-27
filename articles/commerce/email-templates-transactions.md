@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 4fd46ea161fb4441d94a9e7c7f7ffbfb245eb873
-ms.sourcegitcommit: 9c2bc045eafc05b39ed1a6b601ccef48bd62ec55
+ms.openlocfilehash: 08e247bac577dc0bb8a4635d61f0082793380da9
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7919508"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8722526"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Tworzenie szablonów wiadomości e-mail na potrzeby zdarzeń transakcyjnych
 
@@ -64,8 +64,8 @@ Typ powiadomienia o zakończeniu pakowania obsługuje następujące dodatkowe sy
 | ------------------- | ------- |
 | `pickupstorename`     | Nazwa sklepu, w którym zamówienie jest dostępne do pobrania. |
 | `pickupstoreaddress`  | Adres sklepu, w którym zamówienie jest dostępne do pobrania. |
-| `pickupstorehourfrom` | Godzina otwarcia sklepu pobrania. |
-| `pickupstorehourto`   | Godzina zamknięcia sklepu pobrania. |
+| `pickupstoreopenfrom` | Godzina otwarcia sklepu pobrania. |
+| `pickupstoreopento` | Godzina zamknięcia sklepu pobrania. |
 | `pickupchannelid`     | Identyfikator kanału sklepu dla sklepu pobrania. |
 | `packingslipid`      | Identyfikator dokumentu dostawy dla zamówienia, które zostanie pobrane. |
 | `confirmationid`      | Identyfikator potwierdzenia zamówienia, które zostanie pobrane. (Ten identyfikator jest czasami nazywany identyfikatorem odwołania kanału). |
@@ -102,7 +102,7 @@ Typ powiadomienia o wystawieniu karty upominkowej obsługuje następujące dodat
 | Nazwa symbolu zastępczego      | Cel |
 | --------------------- | ------- |
 | `giftcardnumber`        | Identyfikator karty upominkowej dla produktów typu „karta upominkowa”. |
-| `giftcardbalance`       | Saldo karty upominkowej dla produktów typu „karta upominkowa”. |
+| `availablebalance` | Kwota pozostała na karcie upominkowej. |
 | `giftcardmessage`       | Wiadomość dołączona do karty upominkowej dla produktów typu „karta upominkowa”. |
 | `giftcardpin`         | Osobisty identyfikator PIN karty upominkowej dla produktów typu „karta upominkowa”. (Ten symbol zastępczy jest charakterystyczny dla zewnętrznych kart upominkowych). |
 | `giftcardexpiration`    | Data ważności karty upominkowej dla produktów typu „karta upominkowa”. (Ten symbol zastępczy jest charakterystyczny dla zewnętrznych kart upominkowych). |

@@ -2,7 +2,7 @@
 title: Utwórz projekt integracji danych
 description: W tym temacie wyjaśniono, jak utworzyć projekt integracji danych.
 author: ShivamPandey-msft
-ms.date: 02/09/2022
+ms.date: 05/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 50f435f9d461667a1908baa529d73766085c183a
-ms.sourcegitcommit: 6526acd0300d9c5800d3d7675d54e23090d031df
+ms.openlocfilehash: 4d69ffcb6ccfcc7bae2891f2539941f7b6bbf86e
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "8107294"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8722892"
 ---
 # <a name="create-a-data-integration-project"></a>Utwórz projekt integracji danych
 
@@ -28,7 +28,7 @@ ms.locfileid: "8107294"
 
 W tym temacie wyjaśniono, jak utworzyć projekt integracji danych.
 
-1. Zaloguj się do programu Microsoft Dynamics 365 Finance.
+1. Zaloguj się do Microsoft Dynamics 365 Finance.
 2. Przejdź do **Obszary robocze \> Zarządzanie danymi** i wybierz **Jednostki danych**. Poczekaj, aż wszystkie jednostki danych zostaną odświeżone przed przejściem do następnego kroku.
 3. Otwórz [portal Power Apps ](https://make.powerapps.com/)i wykonaj następujące kroki:
 
@@ -55,11 +55,14 @@ W tym temacie wyjaśniono, jak utworzyć projekt integracji danych.
 
 5. Otwórz [środowiska Power Apps ](https://admin.powerapps.com/environments)i wykonaj następujące kroki:  
 
-    1. Utwórz projekty integracji danych dla następujących szablonów przy użyciu utworzonego właśnie zestawu połączeń:
+    1. Utwórz jeden projekt integracji danych dla każdego z następujących szablonów, korzystając z utworzonego zestawu połączeń:
 
         - Wyniki analizy płatności klientów (CDS do Fin and Ops 10.0.17+)
         - Wyniki szeregów czasowych przepływów pieniężnych (CDS do Fin and Ops)
         - Wyniki szeregów czasowych budżetu (CDS do Fin and Ops)
+
+      > [!NOTE]
+      > Utworzenie wielu projektów integracji danych dla każdego szablonu może spowodować błędy, które zablokują aktualizacje.
 
     2. Ustaw odpowiednie planowanie dla każdego projektu.
 

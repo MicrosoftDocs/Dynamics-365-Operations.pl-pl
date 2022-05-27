@@ -2,19 +2,19 @@
 title: Książka adresowa strony i globalna książka adresowa
 description: W tym temacie opisano funkcje aplikacji Party globalna książka adresowa funkcji podwójnego zapisu.
 author: RamaKrishnamoorthy
-ms.date: 03/10/2022
+ms.date: 04/25/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: josaw
+ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: 2e0d16b29a71da23acc925c09c87f0bb4776759c
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: 1e2dcfa69308f6691e787a1ff1893f9080dcaef1
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8407772"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8717454"
 ---
 # <a name="party-and-global-address-book"></a>Książka adresowa strony i globalna książka adresowa
 
@@ -139,7 +139,7 @@ Siatka zawiera następujące kolumny:
 
 Przycisk **Nowy adres elektroniczny** nad siatką pozwala utworzyć dowolną liczbę adresów elektronicznych.
 
-Adresy elektroniczne są dostępne tylko w tej siatce. W przyszłych wersjach wszystkie pola adresu pocztowego i elektronicznego zostaną usunięte z innych kart (na przykład kart **Podsumowanie** i **Szczegóły**). Szczegóły kontaktu wyświetlane na karcie **Szczegóły** są tylko kopiami do odczytu głównego adresu elektronicznego, jak podstawowy numer telefonu, podstawowy adres e-mail, podstawowy telefon, podstawowy faks i podstawowe konto Twitter. Podczas procesu kwalifikacji potencjalnego klienta można podać numer telefonu służbowego i numer telefonu komórkowego. Numer telefonu służbowego jest traktowany jako podstawowy, jeśli **IsMobile=No**, a numer telefonu komórkowego jest traktowany jako pomocniczy, jeśli **IsMobile=Yes**.
+Podczas procesu kwalifikacji potencjalnego klienta można podać numer telefonu służbowego i numer telefonu komórkowego. Numer telefonu służbowego jest traktowany jako podstawowy, jeśli **IsMobile=No**, a numer telefonu komórkowego jest traktowany jako pomocniczy, jeśli **IsMobile=Yes**.
 
 > [!TIP]
 > Do zarządzania adresami pocztowymi i elektronicznymi służą karty **Adresy** i **Adresy elektroniczne** na formularzach **Konto** i **Kontakt**. Zapewnia to synchronizację danych adresowych z aplikacjami finansowymi i operacyjnymi.
@@ -148,7 +148,7 @@ Adresy elektroniczne są dostępne tylko w tej siatce. W przyszłych wersjach ws
 
 1. Otwórz środowisko aplikacji z obsługą klienta.
 
-2. Zainstaluj najnowszą wersję (2.2.2.60 lub nowszą) [rozwiązania aranżacji aplikacji podwójnego zapisu](https://aka.ms/dual-write-app).
+2. Zainstaluj wszystkie wstępnie wymagane rozwiązania, zgodnie z opisem w [Osobny pakiet Aranżacja aplikacji Podwójny zapis](separated-solutions.md).
 
 3. Zainstaluj [rozwiązania z podwójnym zapisem i globalna książka adresowa](https://aka.ms/dual-write-gab).
 
@@ -165,8 +165,8 @@ Adresy elektroniczne są dostępne tylko w tej siatce. W przyszłych wersjach ws
 
     Mapa | Aktualizuj do tej wersji | Zmiany
     ---|---|---
-    `CDS Parties (msdyn_parties)`| 1.0.0.0 | To jest nowa mapa dodawana jako część wersji.
-    `Contacts V2 (msdyn_contactforparties)`| 1.0.0.5 | To jest nowa mapa dodawana jako część wersji.
+    `CDS Parties (msdyn_parties)`| 1.0.0.2 | To jest nowa mapa dodawana jako część wersji.
+    `Contacts V2 (msdyn_contactforparties)`| 1.0.0.6 | To jest nowa mapa dodawana jako część wersji.
     `Customers V3 (accounts)` | 1.0.0.5 |Usunięto `PartyNumber` i inne pola powiązane z stroną, takie jak nazwa, dane osobowe, pola adresu pocztowego i elektroniczny adres kontaktowy.
     `Customer V3 (contacts)` | 1.0.0.5 | Usunięto `PartyNumber` i inne pola powiązane z stroną, takie jak nazwa, dane osobowe, pola adresu pocztowego i elektroniczny adres kontaktowy.
     `Vendors V2 (msdyn_vendors)` | 1.0.0.6 | Usunięto `PartyNumber` i inne pola powiązane z stroną, takie jak nazwa, dane osobowe, pola adresu pocztowego i elektroniczny adres kontaktowy.
@@ -174,16 +174,17 @@ Adresy elektroniczne są dostępne tylko w tej siatce. W przyszłych wersjach ws
     `Sales invoice headers V2 (invoices)` | 1.0.0.4 | Zamieniono osobę kontaktowa na odwołanie `ContactforParty`.
     `CDS Sales order headers (salesorders)` | 1.0.0.5 | Zamieniono osobę kontaktowa na odwołanie `ContactforParty`.
     `CDS Party postal address locations (msdyn_partypostaladdresses)` | 1.0.0.1  | To jest nowa mapa dodawana jako część wersji.
-    `CDS postal address history V2 (msdyn_postaladdresses)` | 1.0.0.1 | To jest nowa mapa dodawana jako część wersji.
+    `CDS postal address history V2 (msdyn_postaladdresses)` | 1.0.0.2 | To jest nowa mapa dodawana jako część wersji.
     `CDS postal address locations (msdyn_postaladdresscollections)` | 1.0.0.0 | To jest nowa mapa dodawana jako część wersji.
     `Party Contacts V3 (msdyn_partyelectronicaddresses)` | 1.0.0.0 | To jest nowa mapa dodawana jako część wersji.
-    `Complimentary Closings ( msdyn_compliemntaryclosings)` | 1.0.0.0 | To jest nowa mapa dodawana jako część wersji.
+    `Complimentary Closings (msdyn_compliemntaryclosings)` | 1.0.0.0 | To jest nowa mapa dodawana jako część wersji.
     `Decision making roles (msdyn_decisionmakingroles)` | 1.0.0.0 | To jest nowa mapa dodawana jako część wersji.
     `Loyalty levels (msdyn_loyaltylevels)` | 1.0.0.0 | To jest nowa mapa dodawana jako część wersji.
     `Contact person titles (msdyn_salescontactpersontitles)` | 1.0.0.0 | To jest nowa mapa dodawana jako część wersji.
     `Personal character types (msdyn_personalcharactertypes)` | 1.0.0.0 | To jest nowa mapa dodawana jako część wersji.
     `Salutations (msdyn_salutations)` | 1.0.0.0 | To jest nowa mapa dodawana jako część wersji.
     `Employment job functions (msdyn_employmentjobfunctions)` | 1.0.0.0 | To jest nowa mapa dodawana jako część wersji.
+    `CDS Address roles (msdyn_addressroles)` | 1.0.0.0 | To jest nowa mapa dodawana jako część wersji.
 
 8. Przed uruchomieniem powyższych map należy ręcznie zaktualizować klucze integracji, zgodnie z poniższymi instrukcjami. Następnie kliknij przycisk **Zapisz**.
 
@@ -251,6 +252,7 @@ Adresy elektroniczne są dostępne tylko w tej siatce. W przyszłych wersjach ws
     [Nagłówek oferty sprzedaży CDS](mapping-reference.md#215) | Cytaty
     [Nagłówki zamówień sprzedaży CDS](mapping-reference.md#217) | salesorders
     [Nagłówki faktur sprzedaży wer. 2](mapping-reference.md#118) | faktury
+    [Role adresów CDS](mapping-reference.md#301) | msdyn_addressroles
 
 > [!NOTE]
 > Mapa `CDS Contacts V2 (contacts)` jest mapą zatrzymaną w kroku 1. Podczas próby uruchomienia innych map te 2 mapy mogą pojawiać się na liście zależnych. Nie uruchamiaj tych map.
@@ -258,7 +260,7 @@ Adresy elektroniczne są dostępne tylko w tej siatce. W przyszłych wersjach ws
 > Jeśli zainstalowano rozwiązanie strony i globalnej książki adresowej, musisz wyłączyć wtyczkę o nazwie `Microsoft.Dynamics.SCMExtended.Plugins.Plugins.LeadPrimaryContactPostCreate: QualifyLead of lead`. Jeśli odinstalujesz rozwiązanie strony i globalnej książki adresowej, musisz ponownie włączyć tę wtyczkę.
 >
 > Pole `msdyn_*partynumber` (jednowierszowe pole tekstowe) zawarte w tabelach **Konto**, **Osoba kontaktowa** i **Dostawca** w przyszłości zostanie wycofane z użytku. Nazwa etykiety ma prefiks **(przestarzały)**, aby to zaznaczyć. Zamiast tego użyj pola **msdyn_partyid**. To pole jest polem wyszukiwania tabeli **msdyn_party**.
-
+>
 > Nazwa tabeli | Stare pole | Nowe pole
 > --------|-------|--------
 > Konto | `msdyn_partynumber` | `msdyn_partyid`
@@ -290,21 +292,22 @@ Zbiór map tabel współpracuje ze sobą na potrzeby interakcji między stronami
 | [Nagłówki faktur sprzedaży wer. 2](mapping-reference.md#118) | faktury |
 | [Zwroty grzecznościowe](mapping-reference.md#228) | msdyn\_salutations |
 | [Dostawcy wersja 2](mapping-reference.md#202) | msdyn\_vendors |
+| [Role adresów CDS](mapping-reference.md#301) |msdyn\_addressroles|
 
 Aby uzyskać więcej informacji, zobacz [Odniesienie do mapowania z podwójnym zapisem](mapping-reference.md).
+
+## <a name="address-roles-as-a-multi-select-drop-down-list"></a>Role w adresach jako lista rozwijana wybierana wiele elementów
+Adres pocztowy lub adres elektroniczny może służyć do więcej niż jednego celu. Adres pocztowy może na przykład pełnić zarówno funkcję adresu bilingowego, jak i adresu dostawy. W takich przypadkach użytkownik może wybrać z listy rozwijanej zarówno **Fakturę**, jak i **Dostawę**, jak pokazano na poniższej ilustracji. 
+
+![Lista rozwijana Cel/Rola.](media/purpose.png)
 
 ## <a name="known-issues-and-limitations"></a>Znane problemy i ograniczenia
 
 + W aplikacjach finansowych i operacyjnych podczas tworzenia odbiorcy wraz z adresem i zapisywania go adres może nie być synchronizowany z tabelą **Adres**. Jest to spowodowane problemem z harmonogramem platformy podwójnego zapisu. Aby obejść ten problem należy najpierw utworzyć odbiorcę, a następnie go zapisać. Następnie dodaj adres.
 + W aplikacjach finansowych i operacyjnych, gdy rekord odbiorcy ma adres podstawowy i tworzysz nowy kontakt dla tego odbiorcy, rekord osoby kontaktowej dziedziczy adres podstawowy ze skojarzonego rekordu odbiorcy. Dzieje się tak również w przypadku osoby kontaktowej dostawcy. Dataverse obecnie nie obsługuje tego działania. Jeśli jest włączona funkcja podwójnego zapisu, osoby kontaktowe odbiorcy dziedziczone z adresu podstawowego z aplikacji finansowych i operacyjnych są synchronizowane z Dataverse razem ze swoim adresem.
-+ Adresy elektroniczne ustawione na kartach adresu elektronicznego formularzy **Konto**, **osoba kontaktowa** i **dostawca** nie pochodzą z tabeli `msdyn_partyelectronicaddress`. Ta informacja nie przepływa do skojarzonych z nim transakcji, takich jak zamówienie sprzedaży, oferta i zamówienie zakupu. Zamierzamy rozwiązać ten problem w przyrostowej wersji. Istniejące dane w polach adresu elektronicznego konta i rekordów kontaktów będą nadal działać dla transakcji, takich jak zamówienie sprzedaży, oferta i zamówienie zakupu.
 + W aplikacjach finansowych i operacyjnych możesz utworzyć rekord osoby kontaktowej za pomocą formularza **Dodaj osobę kontaktową**. Podczas próby utworzenia nowej osoby kontaktowej z formularza **Wyświetl osobę kontaktową** akcja nie powiedzie się. Jest to znany problem.
 
     ![Znany problem z dodawania osoby kontaktowej.](media/party-gab-contact-issue.png)
 
-+ **Synchronizacja początkowa** nie obsługuje pól czasu **Dostępny od** i **Dostępny do** w tabeli **Osoba kontaktowa dla strony**, ponieważ DIXF konwertuje wartość na ciąg, a nie liczbę całkowitą. Konwersja wywołuje błąd `Cannot convert the literal '<say 08:00:00>’ to the expected type edm.int32`.
-+ Jeśli adres pocztowy jest używany z więcej niż jednej przyczyny, na przykład: adres komunikacji biznesowej i adres rozliczeniowy, powinien być wyświetlany jako `Business;Invoice` w sposób pokazany na poniższym obrazie. W przypadku dodawania odstępu między wartościami wystąpi błąd.
-
-    ![Znany problem z adresem.](media/party-gab-address-issue.png)
-
++ **Synchronizacja początkowa** nie obsługuje pól czasu **Dostępny od** i **Dostępny do** w tabeli **Osoba kontaktowa dla strony**, ponieważ DIXF konwertuje wartość na ciąg, a nie liczbę całkowitą. Konwersja wywołuje błąd `Cannot convert the literal '<say 08:00:00>' to the expected type edm.int32`.
 + Nie można wprowadzić adresu pocztowego z datą w przyszłości, używając aplikacji finansowych i operacyjnych z podwójnym zapisem, ponieważ Dataverse nie obsługuje ważności daty. Jeśli użytkownik wpisze w aplikacjach finansowych i operacyjnych adres pocztowy z datą w przyszłości, zostanie on w pełni zsynchronizowany z Dataverse i natychmiast zobaczysz adres w interfejsie użytkownika. Wszelkie aktualizacje tego rekordu będą powodować błąd, ponieważ ma on datę przyszłą, a nie bieżącą w aplikacji finansowej i operacyjnej.

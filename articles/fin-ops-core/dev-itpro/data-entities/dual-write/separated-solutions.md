@@ -2,20 +2,20 @@
 title: Osobny pakiet Aranżacja aplikacji Podwójny zapis
 description: Pakiet Aranżacja aplikacji Podwójny zapis nie jest już pojedynczym pakietem, ale został rozdzielony na mniejsze pakiety. W tym temacie opisano rozwiązania i mapy, które zawiera każdy pakiet, oraz jego zależność od innych pakietów.
 author: RamaKrishnamoorthy
-ms.date: 11/29/2021
+ms.date: 04/25/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.custom: separate-solution
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: e2f870368dc662032a3e7ca7ddca902feb23a713
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: f6950ec3e6ded49a71f119c21be67f538c8e1c69
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063269"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716560"
 ---
 # <a name="separated-dual-write-application-orchestration-package"></a>Osobny pakiet Aranżacja aplikacji Podwójny zapis
 
@@ -27,7 +27,7 @@ Poprzednio pakiet Aranżacja aplikacji Podwójny zapis był jednym pakietem, kt�
 
 - Dynamics 365 Notes
 - Dynamics 365 Finance and Operations Common Anchor
-- Dynamics 365 Finance and Operations mapy podwójnego zapisu encji
+- Mapy encji podwójnego zapisu rozwiązania Dynamics 365 Finance and Operations
 - Aplikacja Dynamics 365 — Zarządzanie składnikami majątku
 - Dynamics 365 — Zarządzanie składnikami majątku
 - Funkcje wspólne modułu HCM
@@ -191,9 +191,9 @@ Pakiet Finance — Podwójny zapis zawiera rozwiązania i mapy wymagane do synch
 | Unikatowa nazwa                            | Nazwa wyświetlana                               |
 |----------------------------------------|-------------------------------------------|
 | Dynamics365FinanceExtended             | Dynamics 365 Finance Extended             |
-| msdyn_Dynamics365FinanceExtendedMaps   | Dynamics 365 Finance Extended — mapy jednostek |
+| msdyn_Dynamics365FinanceExtendedMaps   | Rozszerzone mapy jednostek usługi Dynamics 365 Finance |
 | FieldServiceCommon                     | Field Service Common                      |
-| msdyn_Dynamics365FinanceExtendedAnchor | Dynamics 365 Finance Extended — zakotwiczenie      |
+| msdyn_Dynamics365FinanceExtendedAnchor | Rozszerzona kotwica systemu Dynamics 365 Finance      |
 
 W tym pakiecie są dostępne następujące mapy.
 
@@ -300,3 +300,47 @@ Rozwiązanie Project Operations jest zależne od wymienionych poniżej pakietów
 - Pakiet Supply Chain — Podwójny zapis
 - Pakiet Zarządzanie składnikami majątku — Podwójny zapis
 - Pakiet Human Resources — Podwójny zapis
+
+## <a name="dual-write-party-and-global-address-book-solutions"></a>Zainstaluj rozwiązania z podwójnym zapisem i globalna książka adresowa
+
+Pakiet dwu write party i globalna książka adresowa zawiera następujące rozwiązania i mapy, które są wymagane do synchronizacji strony i globalna książka adresowa danych. 
+
+| Unikatowa nazwa                       | Nazwa wyświetlana                            |
+|-----------------------------------|-----------------------------------------|
+| Strona                             | Strona                                   |
+| Dynamics365GABExtended            | Dynamics 365 GAB Extended               |
+| Dynamics365GABDualWriteEntityMaps | Dynamics 365 GAB Mapy jednostek podwójnego zapisu |
+| Dynamics365GABParty_Anchor        | Dynamics 365 GAB i strona              |
+
+W tym pakiecie są dostępne następujące mapy.
+
+| Aplikacje Finanse i Działania | Aplikacje Customer Engagement | 
+|-----------------------------|--------------------------|
+| Strony usługi CDS | msdyn_parties | 
+| Lokalizacje adresu pocztowego usługi CDS | msdyn_postaladdresscollections | 
+| Historia adresu pocztowego usługi CDS V2 | msdyn_postaladdresses | 
+| Lokalizacje adresu pocztowego strony usługi CDS | msdyn_partypostaladdresses | 
+| Osoby kontaktowe strony wer. 3 | msdyn_partyelectronicaddresses | 
+| Odbiorcy (wersja 3) | Konta | 
+| Odbiorcy (wersja 3) | kontakty | 
+| Dostawcy V2 | msdyn_vendors | 
+| Tytuły osoby kontaktowej | msdyn_salescontactpersontitles | 
+| Formuły grzecznościowe | msdyn_complimentaryclosings | 
+| Zwroty grzecznościowe | msdyn_salutations | 
+| Role podejmujące decyzje | msdyn_decisionmakingroles | 
+| Funkcje stanowisk zatrudnienia | msdyn_employmentjobfunctions | 
+| Poziomy lojalności | msdyn_loyaltylevels | 
+| Typy osób | msdyn_personalcharactertypes | 
+| Osoby kontaktowe (wersja 2) | msdyn_contactforparties | 
+| Nagłówek oferty sprzedaży CDS | Cytaty | 
+| Nagłówki zamówień sprzedaży CDS | salesorders | 
+| Nagłówki faktur sprzedaży wer. 2 | faktury | 
+| Role adresów CDS | msdyn_addressroles |
+
+**Informacje dotyczące zależności**
+
+Rozwiązania typu dwu-write party i globalna książka adresowa zależą od następujących trzech pakietów. Dlatego te pakiety należy zainstalować przed zainstalowaniem pakietu rozwiązań podwójnego zapisu i globalnej książki adresowej.
+
+- Pakiet Podstawowe funkcje aplikacji Podwójny zapis
+- Pakiet Finance — Podwójny zapis
+- Pakiet Supply Chain — Podwójny zapis

@@ -2,7 +2,7 @@
 title: Raport warunków płatności w transakcjach handlowych (PL-00053)
 description: Ten temat zawiera informacje dotyczące raportu Warunki płatności oraz informacje dotyczące jego konfigurowania i generowania.
 author: sndray
-ms.date: 01/07/2022
+ms.date: 05/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Poland
 ms.author: sndray
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 185cda99ab03189b25e4d79d080e62ffedd483d5
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 78e6dbe564e008bcf402e4e11d07b876104e454f
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7965127"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8722199"
 ---
 # <a name="payment-terms-in-commercial-transactions-report"></a>Raport warunków płatności w transakcjach handlowych
 
@@ -36,14 +36,32 @@ Raport warunków płatności jest generowany za pomocą narzędzia Raportowanie 
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Zanim raport zostanie wygenerowany po raz pierwszy, pobierz następujące modele i formaty z usługi Microsoft Dynamics Lifecycle Services (LCS):
-    
-- Statystyki faktur (model) wersja 41
-- Mapowanie modelu warunków płatności w wersji 41.1
-- Raport warunków płatności (PL) w wersji 41.1
+W programie Finance zaimportuj następujące konfiguracje raportowania elektronicznego (ER) z repozytorium globalnego.
+
+| Nazwa konfiguracji ER              | Typ konfiguracji |
+|------------------------------------|--------------------|
+| Statystyki na fakturach             | Model              |
+| Mapowanie modelu warunków płatności        | Mapowanie modelu      |
+| Raport warunków płatności (PL)          | Format (eksportowanie) |
+
+Aby uzyskać więcej informacji na temat pobierania konfiguracji modułu ER, zapoznaj się z tematem [Pobieranie konfiguracji ER z repozytorium globalnego](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+
+Zaimportuj najnowsze wersje konfiguracji. Opis wersji zazwyczaj zawiera numer artykułu z bazy wiedzy Microsoft Knowledge Base (KB), który wyjaśnia zmiany wprowadzone w wersji konfiguracji systemu. Użyj **funkcji wyszukiwania** problemów w portalu [usługi LCS](https://lcs.dynamics.com/v2), aby znaleźć informacje o zmianach według numeru artykułu z Bazy wiedzy.
 
 > [!NOTE]
-> Aby uzyskać więcej informacji dotyczących importowania konfiguracji ER, zobacz temat [Pobieranie konfiguracji raportowania elektronicznego z usługi Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+> Po zaimportowaniu wszystkich konfiguracji raportowania elektronicznego z powyższej tabeli ustaw **Ustawione domyślne mapowanie modelu** na **Tak** w przypadku konfiguracji **Mapowanie modelu warunków płatności**.
+
+### <a name="enable-features-in-feature-management"></a>Włącz nowe funkcje w zarządzaniu funkcjami
+
+Zalecamy włączenie funkcji poprawiających wydajność raportu **Warunki płatności w transakcjach handlowych**.
+
+1. Przejdź do obszaru **Zarządzanie funkcjami** > **Wszystkie**.
+2. Na liście funkcji znajdź i wybierz następujące funkcje:
+
+    - **Optymalizacja czasu tworzenia źródła danych zapytania podczas wykonywania raportów raportowania elektronicznego**
+    - **Optymalizuj zużycie pamięci zestawów danych w środowisku uruchomieniowym raportów raportowania elektronicznego**
+
+3. Wybierz **Włącz teraz**.
 
 ## <a name="scenarios-covered"></a>Objęte scenariusze
 
@@ -69,6 +87,10 @@ Generowanie raportów obejmuje następujące scenariusze:
 
 > [!NOTE]
 > Raport nie zawiera całkowicie rozliczonych not korygujące.
+
+### <a name="payment-terms-in-commercial-transactions-report-and-one-voucher"></a>Warunki płatności w raporcie transakcji handlowych i Jeden voucher
+
+Użycie funkcji Jeden załącznik wprowadza ograniczenie dalszych warunków płatności w raportach transakcji handlowych dla danych, jeśli został zastosowany jeden załącznik. Jeśli księgujesz transakcje, które są częścią raportu Warunki płatności w transakcjach handlowych, zalecamy ustawienie parametru **Zezwalaj na wiele transakcji w ramach jednego vouchera** na stronie **Parametry księgi głównej** na **Nie** w Twojej osobie prawnej. Aby uzyskać informacje o funkcji Jednego załącznika, zobacz [Jeden załącznik](../general-ledger/one-voucher.md).
 
 ## <a name="run-the-statistics-on-invoices-process"></a>Uruchamianie procesu Statystyki faktur
 

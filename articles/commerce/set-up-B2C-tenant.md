@@ -2,7 +2,7 @@
 title: Konfigurowanie dzierżawy B2C w usłudze Commerce
 description: W tym temacie opisano sposób konfigurowania dzierżawcy Azure Active Directory (Azure AD) dzierżawców biznesowych (B2C) dla uwierzytelniania witryny użytkownika w programie Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 02/11/2022
+ms.date: 05/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d4cbb117e47940491266134fb1e2dbe87374d4a3
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: 086128091b23ce6ab46dd2dfc0803af38de6bac7
+ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109896"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8714319"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Konfigurowanie dzierżawy B2C w usłudze Commerce
 
@@ -332,9 +332,9 @@ Aby dodać informacje dotyczące aplikacji dzierżawczej usługi B2C Azure AD do
 
 1. Zaloguj się jako administrator do modułu konstruktora witryn Commerce dla swojego środowiska.
 1. W lewym okienku nawigacji wybierz pozycję **Ustawienia dzierżawcy**, aby ją rozwinąć.
-1. W obszarze **Ustawienia dzierżawy** wybierz pozycję **Ustawienia B2C**. 
-1. W oknie głównym obok **Aplikacje B2C** wybierz opcję **Zarządzaj**. (Jeśli Twoja dzierżawa jest wyświetlana na liście aplikacji B2C, została ona już dodana przez administratora systemu. Sprawdź, czy elementy w kroku 6 są zgodne z aplikacją B2C.)
-1. Wybierz **Dodaj aplikację B2C**.
+1. W **obszarze Ustawienia dzierżawcy** wybierz **konfigurację uwierzytelniania witryny**. 
+1. W głównym oknie obok **profilów uwierzytelniania witryny** wybierz pozycję **Zarządzaj**. (Jeśli dzierżawca pojawia się na liście profili uwierzytelniania witryny, oznacza to, że został już dodany przez administratora. Sprawdź, czy elementy w kroku 6 poniżej są zgodne z zamierzoną konfiguracją B2C. Nowy profil można również utworzyć przy użyciu podobnych dzierżaw lub aplikacji usługi Azure AD B2C w celu uwzględnienia drobnych różnic, takich jak różne identyfikatory zasad użytkownika).
+1. Wybierz **Dodaj profil uwierzytelniania witryny**.
 1. Wprowadź w wyświetlonym formularzu następujące wymagane elementy, używając wartości ze swojej dzierżawy B2C i aplikacji. Pola, które nie są wymagane (bez gwiazdki), mogą pozostać puste.
 
     - **Nazwa aplikacji**: Nazwa aplikacji B2C, na przykład „Fabrikam B2C”.
@@ -347,12 +347,13 @@ Aby dodać informacje dotyczące aplikacji dzierżawczej usługi B2C Azure AD do
 1. Kliknij przycisk **OK**. Na liście powinna być widoczna nazwa aplikacji B2C.
 1. Wybierz **Zapisz**, żeby zapisać zmiany.
 
+Opcjonalne niestandardowe **pole domeny logowania** powinno być używane tylko podczas konfigurowania niestandardowej domeny dla dzierżawy usługi Azure AD B2C. Aby uzyskać dodatkowe informacje i uwagi dotyczące korzystania z pola **Logowanie domeny niestandardowej**, zobacz [Dodatkowe informacje B2C](#additional-b2c-information) poniżej.
+
 ### <a name="associate-the-b2c-application-to-your-site-and-channel"></a>Skojarz aplikację B2C z witryną i kanałem
 
 > [!WARNING]
-> Jeśli witryna jest już skojarzona z aplikacją B2C, zmiana w innej aplikacji B2C spowoduje usunięcie bieżących odwołań ustanowionych dla użytkowników już zarejestrowanych w tym środowisku. W przypadku zmiany wszelkie poświadczenia skojarzone z aktualnie przypisaną aplikacją B2C nie będą dostępne dla użytkowników. 
-> 
-> Aplikację B2C należy aktualizować tylko wtedy, gdy jest ustawiany kanał aplikacji B2C po raz pierwszy lub jeśli użytkownik chce, aby użytkownicy mogli ponownie rejestrować się z nowymi poświadczeniami w tym kanale z nową aplikacją B2C. Należy zachować ostrożność podczas kojarzenia kanałów z aplikacjami B2C i jasno określać nazwy aplikacji. Jeśli kanał nie jest skojarzony z aplikacją B2C w poniższych krokach, użytkownicy logujący się do tego kanału witryny będą wprowadzani do aplikacji B2C, która jest wyświetlana **domyślnie** na liście aplikacji B2C **Ustawienia dzierżawcy \> Ustawienia B2C**.
+> - Jeśli witryna jest już skojarzona z aplikacją B2C, zmiana w innej aplikacji B2C spowoduje usunięcie bieżących odwołań ustanowionych dla użytkowników już zarejestrowanych w tym środowisku. W przypadku zmiany wszelkie poświadczenia skojarzone z aktualnie przypisaną aplikacją B2C nie będą dostępne dla użytkowników. 
+> - Aplikację B2C należy aktualizować tylko wtedy, gdy jest ustawiany kanał aplikacji B2C po raz pierwszy lub jeśli użytkownik chce, aby użytkownicy mogli ponownie rejestrować się z nowymi poświadczeniami w tym kanale z nową aplikacją B2C. Należy zachować ostrożność podczas kojarzenia kanałów z aplikacjami B2C i jasno określać nazwy aplikacji. Jeśli kanał nie jest skojarzony z aplikacją B2C w poniższych krokach, użytkownicy logujący się do tego kanału witryny będą wprowadzani do aplikacji B2C, która jest wyświetlana **domyślnie** na liście aplikacji B2C **Ustawienia dzierżawcy \> Ustawienia B2C**.
 
 Aby skojarzyć aplikację B2C z witryną i kanałem, wykonaj poniższe kroki.
 
@@ -378,6 +379,23 @@ Aby uzyskać dodatkowe informacje dotyczące dostosowywania interakcji B2C Azure
 ### <a name="secondary-admin"></a>Administrator pomocniczy
 
 W sekcji **użytkownicy** dzierżawy B2C można dodać opcjonalne pomocnicze konto administratora. Może to być konto bezpośrednie lub konto ogólne. Jeśli trzeba udostępnić konto w zasobach zespołu, można również utworzyć wspólne konto. Ze względu na wagę danych przechowywanych w B2C Azure AD, wspólne konto powinno być ściśle monitorowane zgodnie z zasadami zabezpieczeń firmy.
+
+### <a name="set-up-a-custom-sign-in-domain"></a>Konfigurowanie niestandardowej domeny logowania
+
+Azure AD B2C umożliwia skonfigurowanie niestandardowej domeny logowania dla dzierżawy Azure AD B2C. Aby uzyskać instrukcje, zobacz temat [Włączanie domen niestandardowych dla Azure Active Directory B2C](/azure/active-directory-b2c/custom-domain). 
+
+W przypadku korzystania z niestandardowej domeny logowania, należy ją wprowadzić do Konstruktora witryn commerce.
+
+Aby wprowadzić niestandardową domenę logowania w narzędziu do tworzenia witryn, wykonaj następujące kroki.
+
+1. W prawym górnym rogu narzędzia do tworzenia witryn wybierz przełącznik witryn, a następnie wybierz **Zarządzaj witrynami**.
+1. W lewym okienku nawigacji wybierz pozycję **Ustawienia dzierżawcy \> Ustawienia uwierzytelniania witryny**.
+1. W sekcji **profilów uwierzytelniania witryny** wybierz pozycję **Zarządzaj**.
+1. W menu wysuwu po prawej stronie wybierz przycisk **Edytuj** (symbol symbolu skrótu) obok profilu uwierzytelniania witryny, dla którego chcesz wprowadzić niestandardową domenę.
+1. W oknie dialogowym **Edytowanie profilu uwierzytelniania** witryny w obszarze **Domena niestandardowa logowania** wprowadź niestandardową domenę logowania (na przykład „login.fabrikam.com”).
+
+> [!WARNING]
+> Podczas aktualizowania niestandardowej domeny dla dzierżawy Azure AD B2C zmiana wpływa na szczegóły wystawcy dzierżawy dla wygenerowanego tokenu. Szczegóły wystawcy będą zawierać domenę niestandardową, a nie domyślną domenę dostarczaną przez Azure AD B2C. Inna konfiguracja **Wydawca** w Commerce headquarters (**Handel detaliczny i handel \> Konfiguracja Headquarters \> Parametry \> Parametry wspólne dla handlu \> Dostawcy tożsamości**) zmienia sposób interakcji systemu z użytkownikami witryny, potencjalnie tworzenie nowego rekordu klienta, jeśli użytkownik uwierzytelnia się wobec nowego wystawcy. Wszelkie niestandardowe zmiany domeny należy dokładnie przetestować przed przełączeniem do niestandardowej domeny w środowisku Azure AD B2C na żywo.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

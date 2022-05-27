@@ -2,7 +2,7 @@
 title: Moduł selektora witryn
 description: W tym temacie opisano moduł wyboru witryny i opisano, jak dodać go do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 04/06/2022
+ms.date: 05/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: ad4d4d5f950d0631059d8f509e9e808a9106eb98
-ms.sourcegitcommit: 4861ec2d3ae24cc9dd4ad3ac748fd05be3d80c70
+ms.openlocfilehash: a1954f6b2fea35d5138218e6a2a23ab1fd04c8fc
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "8551701"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710310"
 ---
 # <a name="site-picker-module"></a>Moduł selektora witryn
 
@@ -43,7 +43,23 @@ Moduł selektora witryn musi być skonfigurowany z listą witryn (rynków, regio
 
 ## <a name="add-a-site-picker-module-to-a-page"></a>Dodawanie modułu wyboru witryny do nowej strony
 
-Moduł selektora witryn można dodać do miejsca **selektora witryn** [modułu nagłówka](author-header-module.md). Po dodaniu modułu selektora witryn można zdefiniować nagłówek modułu i opcje witryny. Zazwyczaj moduł nagłówka znajduje się w fragmencie nagłówka, który można udostępnić na stronach portalu e-commerce dla witryny. W poniższym przykładzie moduł skonseratora witryny został dodany do gniazda **Selektor witryny** modułu nagłówka zawartego w fragmencie nagłówka o nazwie **HeaderContainer**.
+Moduł selektora witryn można dodać do miejsca **selektora witryn** [modułu nagłówka](author-header-module.md). Po dodaniu modułu selektora witryn można zdefiniować nagłówek modułu i opcje witryny. Zazwyczaj moduł nagłówka znajduje się w fragmencie nagłówka, który można udostępnić na stronach portalu e-commerce dla witryny. 
+
+Aby dodać moduł wyboru strony do modułu nagłówka, wykonaj poniższe kroki.
+
+1. W gnieździe **Wybór witryny** w module nagłówka wybierz wielokropek (**...**), a następnie wybierz **Dodaj moduł**.
+1. W oknie dialogowym **Wybór witryny** wybierz moduł **Wybór witryny** i wybierz przycisk **OK**.
+1. W okienku właściwości **Wybór witryny** wybierz pozycję **Dodaj listę opcji witryny**. Zostanie wyświetlona edytowalna opcja **Lista opcji witryny**.
+1. Wybierz **Lista opcji witryny**. Zostanie **wyświetlone okno dialogowe listy** opcji witryny.
+1. W **obszarze Nazwa** witryny wprowadź tekst nazwy witryny, który będzie wyświetlany na liście rozwijanej stora witryn.
+1. W obszarze **Adres URL przekierowywania** witryny wybierz **Dodaj łącze**. Zostanie wyświetlone wysuwane okienko **Dodaj link**.
+1. W okienku wysuwanym **Dodaj link** wybierz **Strona niestandardowa**, a następnie **Dalej**.
+1. Z listy adresów URL witryny wybierz adres URL ze ścieżką utworzoną podczas dodawania kanału do witryny (na przykład `www.adventure-works.com/fr-ca`), a następnie wybierz pozycję **Zastosuj**.
+1. Kliknij przycisk **OK**.
+1. Wybierz **Zapisz** i następnie wybierz **Zakończ edycję**.
+1. Wybierz opcję **Publikuj**, aby opublikować stronę.
+
+W poniższym przykładzie moduł skonseratora witryny został dodany do gniazda **Selektor witryny** modułu nagłówka zawartego w fragmencie nagłówka o nazwie **HeaderContainer**.
 
 ![Przykład modułu selektora witryn we fragmencie nagłówka.](./media/ecommerce-sitepicker-2.png)
 

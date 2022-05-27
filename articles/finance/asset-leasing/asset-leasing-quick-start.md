@@ -8,19 +8,21 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: AssetLeaseLeasingWorkspace
 audience: Application User
-ms.reviewer: roschlom
-ms.custom: intro-internal
+ms.reviewer: kfend
+ms.custom:
+- "4464"
+- intro-internal
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 72c362e651787d2ff120944925e3bc35523f0059
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 991685f50a00e60026331bf573561be904c7f9ab
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982016"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710337"
 ---
 # <a name="asset-leasing-get-started"></a>Wynajem składnika majątku — rozpoczęcie
 
@@ -58,7 +60,7 @@ Na poniższym schemacie przedstawiono księgę wynajmu, wynajem, obliczony harmo
 
 - **Księga wynajmu** — zawiera wszystkie informacje o umowach leasingowych, takie jak warunki wynajmu, wartość godziwa i opłaty z tytułu wynajmu. Zawiera także stosowany standard rachunkowy, typ wynajmu oraz progi, które są brane pod uwagę w teście klasyfikacji wynajmu. Księga wynajmu zawiera także transakcje wynajmu zaksięgowane w księdze głównej. 
   
-- **Wynajem** — wynajem zawiera informacje o wynajmie składnika aktywów, które reprezentują podstawę wynajmu składnika aktywów, źródło informacji o wynajmie to umowa wynajmu i decyzja dotycząca zarządzania, które są wykonywane poza systemem Dynamics 365 Finance. Wartość godziwa środka trwałego to cena, która zostałaby zapłaconą za środek trwały w transakcji w dniu miary. Ta wartość może zależeć od typu składnika aktywów, warunków rynkowych i innych kryteriów, które mogą być brane pod uwagę w ocenie. Wartość godziwa środka trwałego będzie uwzględniana w równaniu testowym klasyfikacji.
+- **Wynajem** — wynajem zawiera informacje o wynajmie składnika aktywów, które reprezentują podstawę wynajmu składnika aktywów, źródło informacji o wynajmie to umowa wynajmu i decyzja dotycząca zarządzania, które są wykonywane poza Dynamics 365 Finance. Wartość godziwa środka trwałego to cena, która zostałaby zapłaconą za środek trwały w transakcji w dniu miary. Ta wartość może zależeć od typu składnika aktywów, warunków rynkowych i innych kryteriów, które mogą być brane pod uwagę w ocenie. Wartość godziwa środka trwałego będzie uwzględniana w równaniu testowym klasyfikacji.
 
 - **Okres użyteczności środków trwałych** — oznacza pozostałe okresy użyteczności środka trwałego, od daty rozpoczęcia wynajmu. Okres użyteczności środka trwałego będzie uwzględniany w równaniu testowym klasyfikacji. Różni się ona od okresu użyteczności zdefiniowanego w środkach trwałych.
 

@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: VendEditInvoiceHeaderStagingListPage
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f407d42fe624206e32a2f58fe8c7fcaf2df52c729a1d945d3d801f450b6ed129
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 02fcb6ce49156c32f23bfb37478a1076f62aa868
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722774"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716417"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>Automatyzacja faktur dla zeskanowanych dokumentów
 
@@ -58,7 +58,7 @@ Pakiet danych jest jednostką pracy, która musi zostać wysłana, aby można by
 
 Załącznik dokumentu faktury od dostawcy jest nową jednostką danych wprowadzoną w ramach tej funkcji. Jednostka Nagłówek faktury od dostawcy została zmodyfikowana, tak aby obsługiwała załączniki. Jednostka Wiersz faktury od dostawcy nie zmodyfikowana dla tej funkcji.
 
-Aby uzyskać szczegółowe informacje o pakietach danych, zapoznaj się z [omówieniem zarządzania danymi](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). Aby uzyskać informacje dotyczące sposobu tworzenia pakietów danych za pomocą obszaru roboczego zarządzania danymi, zobacz temat [Przetwarzanie i zużywanie pakietów danych w rozwiązaniu aplikacji Dynamics 365 Finance and Operations](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md).
+Aby uzyskać szczegółowe informacje o pakietach danych, zapoznaj się z [omówieniem zarządzania danymi](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). Informacje na temat tworzenia pakietów danych przy użyciu przestrzeni roboczej zarządzania danymi można znaleźć w punkcie [Przetwarzanie i wykorzystywanie pakietów danych w rozwiązaniach Dynamics 365 aplikacji finansowych i operacyjnych](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md).
 
 Aby szybko wygenerować dane testowe zawierające faktury i załączniki, wykonaj następujące czynności.
 

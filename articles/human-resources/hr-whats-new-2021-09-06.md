@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-09-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2add53b4b014cb65caacff03bf175078d2b70d8f
-ms.sourcegitcommit: a73df4ddc7f8ddc9e37269c0236dc1bb9b7c7966
+ms.openlocfilehash: 314d836db9b7560c2ed95ad1b9d2eba753e39d2b
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "7485914"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8690590"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-6-2021"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources 6 września 2021 r.
 
@@ -77,8 +76,8 @@ Aby uzyskać pełną listę zaplanowanych funkcji i ich zaplanowanych wersji, za
 
 | Funkcja | Szczegóły |
 |---|---|
-| Aktualizacja Platform Update 10.0.21 (45) | Publikacja aktualizacji platformy 10.0.21 ma się rozpocząć w następnym wydaniu serwisowym w dniu 4 października 2021. Aby uzyskać więcej informacji, zobacz temat [Aktualizacje platformy dla wersji 10.0.21 aplikacji Finance and Operations (październik 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21). |
-| Oświadczenie o korzyściach | Oświadczenie o świadczeniach do przeglądania aktualnych wyborów świadczeń pracownika. Aby uzyskać więcej informacji, zobacz [sprawozdanie o świadczeniach](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/benefits-summary-statement) w dokumencie Grupy czynności wydania. |
+| Aktualizacja Platform Update 10.0.21 (45) | Publikacja aktualizacji platformy 10.0.21 ma się rozpocząć w następnym wydaniu serwisowym w dniu 4 października 2021. Aby uzyskać więcej informacji, zobacz temat [Aktualizacje platformy dla wersji 10.0.21 aplikacji finansowych i operacyjnych (październik 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21). |
+| Oświadczenie o świadczeniach | Oświadczenie o świadczeniach do przeglądania aktualnych wyborów świadczeń pracownika. Aby uzyskać więcej informacji, zobacz [sprawozdanie o świadczeniach](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/benefits-summary-statement) w dokumencie Grupy czynności wydania. |
 
 ## <a name="see-also"></a>Informacje dodatkowe
 

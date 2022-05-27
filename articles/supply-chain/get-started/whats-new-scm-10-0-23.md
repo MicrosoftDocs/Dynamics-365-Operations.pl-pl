@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 876f5a5f8ebf77a65ba3aa6271a2957b7dc2cb96
-ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
+ms.openlocfilehash: 86e33296fd8631082e47bf6814d8e5e716d9fa1b
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8570486"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8691478"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10023-january-2022"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management w wersji 10.0.23 (styczeń 2022 r.)
 
@@ -75,7 +75,9 @@ Niedawno dodano lub znacząco zaktualizowano następujące tematy pomocy. Te tem
 | Zarządzanie magazynem | [Globalne parametry urządzenia przenośnego](../warehousing/mobile-device-parameters.md) |
 | Zarządzanie magazynem | [Kotwiczenie](../warehousing/anchoring.md) |
 | Sprzedaż i marketing | Handel między przedsiębiorstwami jest teraz szczegółowo opisany, począwszy od [Konfiguracja handlu między przedsiębiorstwami](../sales-marketing/intercompany-trade-set-up.md) i powiązanych tematów. |
+| Sprzedaż i marketing | [Ulepszenia wydajności oczyszczania historii sprzedaży](../sales-marketing/sales-update-history-cleanup-performance-improvements.md) |
 | Zarządzanie zapasami | Dokumentacja dotycząca widoczności zapasów została rozszerzona i zaktualizowana, począwszy od [Przegląd dodatku Widoczność zapasów](../inventory/inventory-visibility.md) i powiązanych tematów. |
+| Zarządzanie magazynem | [Konta użytkownika urządzenia przenośnego](../warehousing/mobile-device-work-users.md) |
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
