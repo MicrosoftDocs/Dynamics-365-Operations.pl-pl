@@ -1,7 +1,7 @@
 ---
 title: Zatwierdzanie dostawców dla konkretnych kategorii zaopatrzenia
 description: W tym temacie opisano sposób zatwierdzania dostawców dla poszczególnych kategorii zaopatrzenia w programie Dynamics 365 Supply Chain Management.
-author: Henrikan
+author: GalynaFedorova
 ms.date: 07/30/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: VendTable, DirPartyEcoResCategory, EcoResCategorySingleLookup, P
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a885ba924137c56583db9f81b34db9a20f33bc4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 4247833a011704a9e3c83ad4a2b464ee49d6b3f5
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569440"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8670196"
 ---
 # <a name="approve-vendors-for-specific-procurement-categories"></a>Zatwierdzanie dostawców dla konkretnych kategorii zaopatrzenia
 

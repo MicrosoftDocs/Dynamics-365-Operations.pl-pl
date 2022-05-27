@@ -1,7 +1,7 @@
 ---
 title: Konfigurowanie ograniczeń transportu towaru
 description: Ta procedura skonfiguruje ograniczenie transportu uniemożliwiające przewożenie wybranego towaru za pośrednictwem wybranego centrum.
-author: Henrikan
+author: Weijiesa
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: henrikan
+ms.author: weijiesa
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4fab138e1509b1a1266f683d070eab5a967fb9ef
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 6b37359c6bc756ba9b24015695fed613d01efc19
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580175"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8678471"
 ---
 # <a name="set-up-transportation-constraints-for-an-item"></a>Konfigurowanie ograniczeń transportu towaru
 

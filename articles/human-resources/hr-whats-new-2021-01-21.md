@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-01-21
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 02f0b0664dcb78d20c2719b4377dcc6047f2bf3392225f1cf9c166a1073ecd59
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: be50596cd64839ba82b847b2fabb0f46dc749a3f
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772623"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8686863"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-january-21-2021"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources w z 21 stycznia 2021 r.
 
@@ -43,7 +42,7 @@ W tym wydaniu są zazwyczaj dostępne następujące funkcje.
 
 | Funkcja | Plan wydań | Dokumentacja |
 | --- | --- | --- |
-| Aktualizacja Platform Update 10.0.16(40) | -- | [Aktualizacje platformy dla wersji 10.0.16 aplikacji Finance and Operations (luty 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md) |
+| Aktualizacja Platform Update 10.0.16(40) | -- | [Aktualizacje platformy dla wersji 10.0.16 aplikacji finansowych i operacyjnych (luty 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md) |
 | Rozszerzone żądania i zatwierdzenia przepływu pracy | [Usprawnienia dotyczące przepływu pracy zarządzania organizacją i kadrami](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [Opcja konfiguracji do pozycjonowania elementów pracy na liście elementów do mnie przypisanych](./hr-whats-new-2020-09-03.md#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
 | Aktualizacje przepisów ustawy ACA (ACA) dotyczące formularza 1095-C, formularza 1095-B oraz raportowania elektronicznego w starszych świadczeniach | -- | -- | 
 | Zarządzanie świadczeniami teraz obsługuje raportowanie zgodności z ACA dla firm w USA | -- | [Generowanie raportów ACA w zarządzaniu świadczeniami](hr-benefits-management-aca-reports.md) |

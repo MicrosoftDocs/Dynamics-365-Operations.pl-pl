@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 679222005fe12009004921fa75a56145ae94c3ba
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: c79b18d24c8b9cb90a570496882fdfe91dc6ba51
+ms.sourcegitcommit: a4dc7d170f1504631127c3e92af0c6b03468d375
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644740"
+ms.lasthandoff: 05/02/2022
+ms.locfileid: "8661833"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Nowości lub zmiany w aplikacji mobilnej Warehouse Management
 
@@ -23,7 +23,7 @@ ms.locfileid: "8644740"
 
 W tym temacie wymieniono nowe funkcje, poprawki, ulepszenia i znane problemy dla każdej wydanej wersji aplikacji mobilnej Warehouse Management w Microsoft Dynamics 365 Supply Chain Management.
 
-## <a name="version-20210"></a>Wersja 2.0.21.0
+## <a name="version-20220"></a>Wersja 2.0.22.0
 
 Ta wersja wprowadza następujące nowe funkcje, poprawki i ulepszenia:
 

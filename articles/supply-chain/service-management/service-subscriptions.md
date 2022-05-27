@@ -1,7 +1,7 @@
 ---
 title: Subskrypcje serwisowe
 description: Subskrypcje są tworzone na podstawie projektu typu czas i materiały. Subskrypcje można tworzyć z projektu, ze strony Subskrypcje serwisowe lub za pomocą grupy subskrypcji serwisowych.
-author: kamaybac
+author: sorenva
 ms.date: 02/19/2018
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 98e192cb4553d37437a0637af2006550b4340d84
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: c77a0a1791db7d205d394e63c9f9f0c807e56db2
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570088"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8670784"
 ---
 # <a name="service-subscriptions"></a>Subskrypcje serwisowe
 

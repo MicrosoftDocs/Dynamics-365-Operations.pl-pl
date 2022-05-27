@@ -1,23 +1,23 @@
 ---
 title: Katalog szkoleń dla użytkowników Dynamics 365 Supply Chain Management
 description: Poznaj wszystkie opcje szkoleń dla użytkowników Dynamics 365 Supply Chain Management.
-author: margoc
+author: kamaybac
 ms.topic: article
 ms.date: 07/27/2020
-ms.author: margoc
+ms.author: kamaybac
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: fe547f6e224a072301a4d846f1a2867b70c86da3
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.openlocfilehash: a8324fe183efd956fa39ddd97f562e4c33630580
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402673"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8673194"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-supply-chain-management"></a>Katalog szkoleń dla użytkowników Dynamics 365 Supply Chain Management
 
@@ -31,7 +31,7 @@ Poniższy katalog jest zorganizowany od podstawowej bazy wiedzy do konkretnych d
 |---------|-------------|--------|--------|
 | [Zapoznaj się z biznesową wartością Microsoft Dynamics 365 i Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Czy chcesz poznać aplikacje biznesowe? Być może nie wiadomo, gdzie zacząć z Microsoft Dynamics 365 i aplikacjami Power Platform? Dowiedz się, jak możliwości aplikacji biznesowych umożliwiają przekształcanie firmy. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 8 godzin |
 | [Dynamics 365 i Power Platform Fundamentals](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Czy chcesz poznać aplikacje biznesowe? Rozpocznij od tej ścieżki nauki, aby zobaczyć, jak są używane aplikacje Dynamics 365. Informacje o pojęciach chmur, Power Platform oraz sposobach rozpoczynania pracy z aplikacjami Dynamics 365. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 5.5 godzin |
-| [Rozpoczęcie korzystania z aplikacji Finance and Operations](/learn/paths/get-started-finance-operations/) | Dowiedz się, jak z pomocą aplikacji Finance and Operations w firmach można zarządzać globalnymi systemami finansowymi, operacyjnymi procesami biznesowymi i wydajnymi łańcuchami dostaw, aby umożliwić osobom wykonywanie szybkich, świadomych decyzji. Jako pierwszy etap kariery zawodowej pracy z aplikacjami Finance and Operations, musisz zapoznać się z jego funkcjami, niezależnie od żądanej roli użytkownika. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 2 godzin |
+| [Rozpoczynanie pracy z aplikacjami Finanse i Działania](/learn/paths/get-started-finance-operations/) | Dowiedz się, jak z pomocą aplikacji Finanse i Działania w firmach można zarządzać globalnymi systemami finansowymi, operacyjnymi procesami biznesowymi i wydajnymi łańcuchami dostaw, aby umożliwić osobom wykonywanie szybkich, świadomych decyzji. Jako pierwszy etap kariery zawodowej pracy z Finanse i Działania, musisz zapoznać się z jego funkcjami, niezależnie od żądanej roli użytkownika. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 2 godzin |
 | [Rozpoczęcie pracy z zarządzaniem składnikami majątku dla Dynamics 365 Supply Chain Management](/learn/modules/get-started-asset-management/index) | Zarządzanie składnikami majątku to moduł do zarządzania zasobami i zadaniami konserwacyjnymi w Dynamics 365 Supply Chain Management. Zarządzanie składnikami majątku umożliwia efektywne zarządzanie i wykonywanie zadań związanych z zarządzaniem i serwisowaniem wielu typów urządzeń w firmie, na przykład maszyn, urządzeń produkcyjnych i pojazdów. Zarządzanie składnikami majątku wspiera rozwiązania w wielu branżach. | Bezpłatny, samodzielnie realizowany moduł nauki online | 1 godzina |
 | [Rozpoczynanie pracy z dodatkiem Zarządzanie zmianami inżynieryjnymi dla systemu Dynamics 365 Supply Chain Management](/learn/modules/get-started-engineering-change-management/) | System Dynamics 365 Supply Chain Management umożliwia pracownikom i organizacjom uzyskanie ujednoliconego widoku magazynu, magazynu, produkcji, usług i logistyki dzięki analizie predykcyjnej, która przekształca dane w szczegółowe informacje, aby wspomagać podejmowanie decyzji strategicznych. | Bezpłatny, samodzielnie realizowany moduł nauki online | 2 godzin |
 | [Rozpoczęcie korzystania z Dynamics 365 Intelligent Order Management](/learn/modules/get-started-intelligent-order-management/) | Dzięki Dynamics 365 Intelligent Order Management odbiorcy mogą zarządzać aranżacją zamówień aż do ich realizacji. Te funkcje umożliwiają organizacjom aranżację przepływów zamówień na różnych platformach i aplikacjach. | Bezpłatny, samodzielnie realizowany moduł nauki online | 4 godzin |
@@ -39,10 +39,10 @@ Poniższy katalog jest zorganizowany od podstawowej bazy wiedzy do konkretnych d
 
 ## <a name="core-platform-knowledge"></a>Podstawowa znajomość platformy<a name="core-platform-knowledge"></a>
 
-| Zawartość | opis | Format | Długość |
+| Zawartość | Opis | Format | Długość |
 |---------|-------------|--------|--------|
-| [Konfigurowanie organizacji w aplikacjach Finance and Operations](/learn/paths/configure-your-organization-finance-ops/) | Jako konsultant funkcjonalny, który współpracuje z aplikacjami Finance and Operations, należy zrozumieć, jak skonfigurować organizację dla klienta. Aby zrozumieć sposób konfigurowania organizacji, w tej ścieżce nauki przedstawiono między innymi sposób konfigurowania firm, implentacji ustawień zabezpieczeń, personalizowania interfejsu użytkownika dla użytkowników, projektowania i budowania aplikacji mobilnych, implementowania wspólnych integracji. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 12 godzin |
-| [Konfiguracja i praca z analizami i raportowaniem w aplikacjach Finance and Operations](/learn/paths/configure-analytics-reporting-finance-operations/) | Liderzy biznesowi mogą podejmować ważne decyzje w firmie, jeśli mają dokładne wgląd w podstawowe dane finansowe i operacyjne. Użytkownik biznesowy może również konfigurować i stosować narzędzie do raportowania elektronicznego bez użycia pojedynczego wiersza kodu, do przyjmowania nowych wymagań prawnych i generować dokumenty biznesowe w wymaganym formacie w celu elektronicznego wymiany informacji z instytucjami rządowymi, bankami i innymi stronami. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 4 godzin |
+| [Przeprowadź wdrożenie aplikacji finansowych i operacyjnych w swojej organizacji](/learn/paths/configure-your-organization-finance-ops/) | Jako konsultant funkcjonalny, który współpracuje z aplikacjami finansowymi i operacyjnymi, należy zrozumieć, jak skonfigurować organizację dla klienta. Aby zrozumieć sposób konfigurowania organizacji, w tej ścieżce nauki przedstawiono między innymi sposób konfigurowania firm, implentacji ustawień zabezpieczeń, personalizowania interfejsu użytkownika dla użytkowników, projektowania i budowania aplikacji mobilnych, implementowania wspólnych integracji. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 12 godzin |
+| [Konfiguracja i praca z analityką i raportowaniem w aplikacjach finansowych i operacyjnych](/learn/paths/configure-analytics-reporting-finance-operations/) | Liderzy biznesowi mogą podejmować ważne decyzje w firmie, jeśli mają dokładne wgląd w podstawowe dane finansowe i operacyjne. Użytkownik biznesowy może również konfigurować i stosować narzędzie do raportowania elektronicznego bez użycia pojedynczego wiersza kodu, do przyjmowania nowych wymagań prawnych i generować dokumenty biznesowe w wymaganym formacie w celu elektronicznego wymiany informacji z instytucjami rządowymi, bankami i innymi stronami. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 4 godzin |
 
 ## <a name="supply-chain-management"></a>Zarządzanie łańcuchem dostaw<a name="supply-chain-management"></a>
 

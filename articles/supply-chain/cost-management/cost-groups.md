@@ -1,7 +1,7 @@
 ---
 title: Grupy kosztów
 description: Grupy kosztów są podstawą podczas segmentowania i analizowania udziałów kosztów w obliczonym koszcie wyprodukowanego towaru, takich jak koszt materiału bądź robocizny czy narzuty. Segmentacja grup kosztów jest nazywana w środowiskach produkcyjnych także podziałem kosztów, dekompozycją kosztów lub klasyfikacją kosztów.
-author: AndersGirke
+author: JennySong-SH
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 50871
 ms.assetid: 1855f744-f73f-4fa8-8290-a7ee126d368b
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: aevengir
+ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b60c8a353a4c545cf5c1f1b1e5565d0d7e2a5bb
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a633a654b28cd12e29367eb28ad4d5eeea0e6ef5
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572153"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8674569"
 ---
 # <a name="cost-groups"></a>Grupy kosztów
 

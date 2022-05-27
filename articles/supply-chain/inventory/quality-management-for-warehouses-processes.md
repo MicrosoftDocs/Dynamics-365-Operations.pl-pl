@@ -1,7 +1,7 @@
 ---
 title: Zarządzanie jakością dla procesów magazynowych
 description: Ten temat zawiera informacje o procesie zarządzania jakością dla funkcji procesów magazynu. Ta funkcja rozszerza możliwości zarządzania jakością i umożliwia użytkownikom integrowanie kontroli przez pobieranie próbek towarów z procesem przyjmowania do magazynu przy użyciu zaawansowanego zarządzania magazynem.
-author: Henrikan
+author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
@@ -9,15 +9,15 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: yufeihuang
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: d81441fcc8cb86927923e76bd1a4d16a141ddc75
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a8a7ac8266c14791137f9eda51b5abb5a59e5961
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571888"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8679059"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Zarządzanie jakością dla procesów magazynowych
 

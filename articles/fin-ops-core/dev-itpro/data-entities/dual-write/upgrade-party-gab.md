@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 95d272d9076f1ab25230e4efa98e321bdd618062
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: 22b31b46b247ca5f2d6b8b93f58c090b03a2b38c
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8407802"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8688383"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Uaktualnianie do modelu globalnej książki adresowej i strony
 
@@ -281,7 +281,7 @@ W tej sekcji opisano ustawienia wymagane przed uruchomieniem szablonów adresów
 
     ![Uruchamianie szablonów adresów pocztowych i adresów poczty elektronicznej stron.](media/ADF-7.png)
 
-10. Aby zaktualizować aplikację Finanse i Operacje przy użyciu tych danych, należy przekonwertować pliki CSV na skoroszyt programu Excel i [zaimportować je do aplikacji Finanse i Operacje](/data-entities/data-import-export-job). Alternatywnie, jeśli import CSV jest odpowiedni dla użytkownika, można zaimportować pliki CSV bezpośrednio. Zakończenie tego kroku może potrwać kilka godzin w zależności od objętości danych.
+10. Aby zaktualizować aplikację Finanse i Operacje przy użyciu tych danych, należy przekonwertować pliki CSV na skoroszyt programu Excel i [zaimportować je do aplikacji Finanse i Operacje](../data-import-export-job.md). Alternatywnie, jeśli import CSV jest odpowiedni dla użytkownika, można zaimportować pliki CSV bezpośrednio. Zakończenie tego kroku może potrwać kilka godzin w zależności od objętości danych.
 
     ![Pomyślne zaimportowanie.](media/ADF-8.png)
 

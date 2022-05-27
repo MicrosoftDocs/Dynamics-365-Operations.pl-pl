@@ -1,7 +1,7 @@
 ---
 title: Przesyłanie i zatwierdzanie wersji budżetu projektu
 description: Ta procedura zawiera informacje o korygowaniu budżetu projektu.
-author: Henrikan
+author: GalynaFedorova
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Service industries
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 089c235ac60ce9712da92e445a9c811424f80d00
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d1e3633e823bc54e6bdb98eb552313ba91fb0dc4
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577007"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8673810"
 ---
 # <a name="submit-and-approve-project-budget-revision"></a>Przesyłanie i zatwierdzanie wersji budżetu projektu
 

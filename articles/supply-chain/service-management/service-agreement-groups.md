@@ -1,7 +1,7 @@
 ---
 title: Omówienie umów serwisowych
 description: Ten temat zawiera omówienie sposobu działania umów serwisowych.
-author: kamaybac
+author: sorenva
 ms.date: 07/25/2019
 ms.topic: overview
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.assetid: ''
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: abc82cab3543ab64379207443654e1a57cde964a
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: fc0be99cf492d672f9eaecff25c93b700e7ed230
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983726"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8670840"
 ---
 # <a name="service-agreements-overview"></a>Omówienie umów serwisowych
 

@@ -1,22 +1,22 @@
 ---
 title: Sprawdź rozbieżności ceny zamówienia międzyfirmowego
 description: W tym temacie opisano sposób sprawdzania rozbieżności cen w zamówieniach międzyfirmowych
-author: GalynaFedorova
+author: Henrikan
 ms.date: 09/01/2021
 ms.topic: article
 ms.search.form: PurchTable, PurchTablePart, PurchLineOpenOrder
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: v-gfedorova
+ms.author: henrikan
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: f9a0ba4980f8acf56d84dc865094b405b7402ad5
-ms.sourcegitcommit: fcfd85a508c0de52cfe11d1986892219e39ef406
+ms.openlocfilehash: 3167077e653f2316f5ce54c2a07ef9c2978ecebb
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7548461"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8678326"
 ---
 # <a name="check-intercompany-order-price-discrepancies"></a>Sprawdź rozbieżności ceny zamówienia międzyfirmowego
 
