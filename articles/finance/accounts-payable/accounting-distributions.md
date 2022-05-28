@@ -1,6 +1,6 @@
 ---
 title: Zasady podziału księgowań
-description: Ten temat zawiera informacje o zasadach podziału księgowań oraz opis opcji dostępnych do przetwarzania tych zasad.
+description: Ten temat zawiera informacje o dystrybucjach księgowych i opisuje dostępne opcje przetwarzania.
 author: sunfzam
 ms.date: 09/17/2020
 ms.topic: article
@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: AccountingDistribution
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 17231
 ms.assetid: 9030355d-8e6e-408b-9e7d-7b346eaa652c
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0f81444e0865715925dad2483e8c789221bccb2b
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 6c8178836318600fd6e702d097062d30b91e6c1a
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595321"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735585"
 ---
 # <a name="accounting-distributions"></a>Zasady podziału księgowań
 

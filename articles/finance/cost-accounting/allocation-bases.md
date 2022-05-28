@@ -8,20 +8,20 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMDimensionMember, CAMAllocationBaseDetail, CAMFormulaAllocationBaseDetail, CAMAllocationBasePreview, CAMAllocationBase, CAMCostAllocationRule, CAMPredefinedMemberAllocationBase
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 223174
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2e51d0320d66a2ae094573735df96bc9bc3f93d359f3bbeab2e5cec3081dddbe
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bb50fe7d258bdd56529bc5d0ef55dae309d3edec
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743056"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8733799"
 ---
 # <a name="allocation-bases"></a>Podstawy alokacji 
 
@@ -115,7 +115,7 @@ Po zastosowaniu składnika kosztu 10001 (Wynagrodzenia) jako podstawy alokacji k
 **Arkusz**
 
 | W arkuszu | Typ arkusza                          | Kalendarzowy okres obrachunkowy | Rok | Okres   | Wersja                                                                 |
-|---------|---------------------------------------|------------------------|------|----------|-------------------------------------------------------------------------|
+|---------|---------------------------------------|------------------------|------|----------|---------------------------------------------|
 | 00001   | Arkusz obliczania dystrybucji kosztów | Fiskalny                 | 2017 | Okres 1 | Obliczanie kosztów ogólnych / 01-02-2017 23:51:00: 00 / Księga /2017 / Okres 1 |
 
 **Wpisy w arkuszu dotyczące salda obiektów kosztów**

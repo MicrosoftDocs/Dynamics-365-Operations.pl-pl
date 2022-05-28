@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CollectionLetterCourse
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: adeae6e20a799165e086df28b92a1357e8f2f0d3
-ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
+ms.openlocfilehash: af5d0a001fbe705834e116516933be67f2de8826
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7921232"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734167"
 ---
 # <a name="create-a-collection-letter-sequence"></a>Tworzenie kolejności ponagleń
 
@@ -26,10 +26,10 @@ ms.locfileid: "7921232"
 
 Ta procedura służy do tworzenie kolejności ponagleń. W zadaniu wykorzystano firmę demonstracyjną USMF.
 
-1. W okienku nawigacji przejdź do **Moduły > Kredyty i windykacja > Konfiguracja > Konfiguruj kolejność ponagleń**.
+1. Wybierz kolejno opcje **Kredyty i windykacja > Ustawienia > Konfiguruj kolejność ponagleń**.
 2. Kliknij przycisk **Nowy**.
 3. W polu **Kolejność ponagleń** wpisz identyfikator kolejności, który będzie reprezentował kolejność. Będzie on używany podczas konfigurowania profilu księgowania.
-4. W polu **Opis** wpisz wartość.  Warunki płatności są opcjonalne. Jeśli wprowadzisz wartość w tym polu, faktura za opłaty z ponaglenia będzie używała tych warunków płatności zamiast warunków płatności zapisanych dla odbiorcy.  
+4. W polu **Opis** wpisz wartość. Warunki płatności są opcjonalne. Jeśli wprowadzisz wartość w tym polu, faktura za opłaty z ponaglenia będzie używała tych warunków płatności zamiast warunków płatności zapisanych dla odbiorcy.  
 5. W polu **Kod ponaglenia** wybierz kod pierwszego ponaglenia, które ma zostać wysłane. Pierwsze ponaglenie jest tworzone na podstawie terminu zapłaty na fakturze, wartości okresu prolongaty wprowadzonej w polu Dni w tym wierszu oraz innych informacji wprowadzonych w tym wierszu.  
 6. W polu **Opis** wpisz wartość. 
 7. Waluta domyślna opłaty to waluta osoby prawnej. Ten kod waluty może się różnić od kodu waluty faktury.   
@@ -52,9 +52,9 @@ Ta procedura służy do tworzenie kolejności ponagleń. W zadaniu wykorzystano 
 22. Na liście kliknij łącze w wybranym wierszu.
 23. W polu **Minimalne saldo zaległości** wpisz liczbę.
 24. W polu **Dni** wpisz liczbę.
-25. Zaznacz pole wyboru **Blokuj**, aby zablokować możliwość tworzenia kolejnych dostaw i faktur dla danego odbiorcy. Aby odblokować konto, wybierz **Nie** w Fakturowanie i dostawy zablokowane na stronie Klientów.  
+25. Zaznacz pole wyboru **Blokuj**, aby zablokować możliwość tworzenia kolejnych dostaw i faktur dla danego odbiorcy. Aby odblokować konto, wybierz **Nie** w **Fakturowanie i dostawy zablokowane** na stronie **Klientów**.  
 26. Rozwiń skróconą kartę **Notatka**.
-27. Wprowadź tekst, jaki ma być wyświetlany dla ponaglenia o wybranym kodzie. Ten tekst można przetłumaczyć na wiele języków za pomocą menu Tłumaczenia widocznego nad polem notatki.  
+27. Wprowadź tekst, jaki ma być wyświetlany dla ponaglenia o wybranym kodzie. Ten tekst można przetłumaczyć na wiele języków za pomocą menu **Tłumaczenia** widocznego nad polem notatki.  
 
 
 

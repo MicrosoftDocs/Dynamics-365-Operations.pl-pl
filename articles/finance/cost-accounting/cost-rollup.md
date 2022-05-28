@@ -8,20 +8,20 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy, CAMOverheadRatePolicy
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f86529359f548bf48fdef8817bd2e2260235561cce57cac28158739687ade2c1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9c36587294ff157266e354e06d107000f198061
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779963"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734437"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Zasady akumulacji kosztów i obliczanie narzutu 
 
@@ -30,9 +30,7 @@ ms.locfileid: "6779963"
 Moduł Rachunek kosztów pozwala zobaczyć, jak przepływ kosztów jest powiązany z produktami i usługami dostarczanymi wewnątrz organizacji. Aby czytelnie widzieć koszty, trzeba uzyskać alokację kosztów między obiektami kosztów w oparciu o odpowiednią podstawę alokacji. Domyślnie alokację kosztów uzyskuje się dla podstawowego składnika kosztów, co jest pożądane w niektórych sytuacjach, ale ma kilka konsekwencji, które trzeba wziąć pod uwagę.
 
 -   Po obliczeniu kosztów ogólnych pomocnicze obiekty kosztów będą miały zerowe salda dla podstawowych składników kosztów.
-
 -   Ilość wpisów kosztów wygenerowanych wskutek obliczania kosztów ogólnych może być bardzo duża.
-
 -   Nie jest możliwe śledzenie przepływu kosztów między obiektami kosztów.
 
 Aby uniknąć tych efektów, moduł Rachunek kosztów umożliwia skonfigurowanie alokacji kosztów spełniającej wymagania sprawozdawczości dla kierownictwa. W tym temacie omówiono sposób określania odpowiedniego poziomu podrzędnych składników kosztów i tworzenia reguł akumulacji kosztów, które pasują do schematów sprawozdawczości i monitorowania kosztów w organizacji.

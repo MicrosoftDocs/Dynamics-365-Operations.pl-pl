@@ -1,6 +1,6 @@
 ---
 title: Przegląd przeniesienia kredytu SEPA
-description: Ten artykuł zawiera ogólne informacje o poleceniach przelewu ISO 20022, co obejmuje polecenia przelewu Jednolitego Obszaru Płatniczego w Euro (SEPA) oraz wszelkie inne elektroniczne płatności dla dostawców. Polecenie przelewu SEPA jest szczególną formą płatności (w euro) realizowanej przez jedną firmę lub osobę na rzecz innej firmy lub osoby. W temacie wyjaśniono również, jak ustawić i przesłać plik płatności poleceniem przelewu.
+description: Ten temat zawiera ogólne informacje o poleceniach przelewu ISO 20022, co obejmuje polecenia przelewu Jednolitego Obszaru Płatniczego w Euro (SEPA) oraz wszelkie inne elektroniczne płatności dla dostawców.
 author: sunfzam
 ms.date: 06/20/2017
 ms.topic: overview
@@ -8,7 +8,7 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, VendPaymMode
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom:
 - "11124"
 - intro-internal
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fc37dde8829abdd26a224adbd788538834f4d320
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: f43c45aa4f22f5044e7c10329dafa76226970b3d
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984034"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734524"
 ---
 # <a name="sepa-credit-transfer-overview"></a>Przegląd przeniesienia kredytu SEPA
 
 [!include [banner](../includes/banner.md)]
 
-Ten artykuł zawiera ogólne informacje o poleceniach przelewu ISO 20022, co obejmuje polecenia przelewu Jednolitego Obszaru Płatniczego w Euro (SEPA) oraz wszelkie inne elektroniczne płatności dla dostawców. Polecenie przelewu SEPA jest szczególną formą płatności (w euro) realizowanej przez jedną firmę lub osobę na rzecz innej firmy lub osoby. W temacie wyjaśniono również, jak ustawić i przesłać plik płatności poleceniem przelewu.
+Ten temat zawiera ogólne informacje o poleceniach przelewu ISO 20022, co obejmuje polecenia przelewu Jednolitego Obszaru Płatniczego w Euro (SEPA) oraz wszelkie inne elektroniczne płatności dla dostawców. Polecenie przelewu SEPA jest szczególną formą płatności (w euro) realizowanej przez jedną firmę lub osobę na rzecz innej firmy lub osoby. W temacie wyjaśniono również, jak ustawić i przesłać plik płatności poleceniem przelewu.
 
 ## <a name="what-is-a-credit-transfer-message"></a>Co to jest komunikat polecenia przelewu?
 Komunikat polecenia przelewu to żądanie wysyłane przez stronę inicjującą (Twoją firmę) nakazujące przelania funduszy z jej własnego konta do wierzyciela. Istnieje wiele implementacji komunikatów polecenia przelewu specyficznych dla krajów/regionów i banków. Niektóre z nich są używane wewnątrz jednego kraju/regionu, a niektóre stają się standardami. Jednym z ugruntowanych globalnych standardów jest ISO 20022 i jego komunikaty inicjujące, takie jak polecenie przelewu. Poniższa ilustracja przedstawia powiązania i zasięg wybranych komunikatów poleceń przelewu. 
@@ -50,7 +50,7 @@ EPC, w której skład wchodzą europejskie banki, opracowuje ramy handlowe i tec
 Polecenie przelewu SEPA jest formą płatności realizowanej przez jedną firmę lub osobę na rzecz innej firmy lub osoby. Płatności muszą być w euro i muszą zawierać międzynarodowy numer konta bankowego (IBAN) oraz kod identyfikatora banku (BIC) dla obu stron. (Kod BIC jest również znany pod nazwą Society for Worldwide Interbank Financial Telecommunications \[SWIFT\]). Ponadto koszty transakcji muszą być dzielone między stronami. Polecenia przelewów realizowane między stronami powinny używać plików XML zgodnych z normami przetwarzania płatności ISO 20022 oraz formatem XML według wytycznych EPC.
 
 ## <a name="how-is-a-credit-transfer-implemented"></a>Jak jest implementowane polecenie przelewu?
-Format płatności polecenia przelewu dla krajów europejskich jest implementowany przy użyciu modułu Raportowanie elektroniczne (ER) i funkcji Metody płatności w Microsoft Dynamics 365 Finance. Kilka formatów polecenia przelewu stosowanych w innych regionach nadal wykorzystuje starszą architekturę przelewu płatności. Wśród wielu innych formatów jest dwanaście formatów plików polecenia przelewu ISO 20022, które nadal funkcjonują. Te formaty eksportu są zgodne z normą XML ISO 20022 dla płatności SEPA. Służą do generowania przelewów płatności w walutach innych niż euro w krajach/regionach, gdzie takie waluty są używane, oraz płatności w euro zgodnie z treścią wersji 8.2 Zestawu Zasad Systemu Polecenia Przelewu SEPA publikowanego przez EPC. Zanim będzie można zaimplementować polecenia przelewu, należy skontaktować się z bankiem, by uzyskać oprogramowanie, które jest wymagane do przekazywania plików bankowości elektronicznej. Oprogramowanie to służy to przesyłania plików XML zawierających polecenia zapłaty dla banku.
+Format płatności polecenia przelewu dla krajów europejskich jest implementowany przy użyciu modułu Raportowanie elektroniczne (ER) i funkcji Metody płatności w programie Microsoft Dynamics 365 Finance. Kilka formatów polecenia przelewu stosowanych w innych regionach nadal wykorzystuje starszą architekturę przelewu płatności. Wśród wielu innych formatów jest dwanaście formatów plików polecenia przelewu ISO 20022, które nadal funkcjonują. Te formaty eksportu są zgodne z normą XML ISO 20022 dla płatności SEPA. Służą do generowania przelewów płatności w walutach innych niż euro w krajach/regionach, gdzie takie waluty są używane, oraz płatności w euro zgodnie z treścią wersji 8.2 Zestawu Zasad Systemu Polecenia Przelewu SEPA publikowanego przez EPC. Zanim będzie można zaimplementować polecenia przelewu, należy skontaktować się z bankiem, by uzyskać oprogramowanie, które jest wymagane do przekazywania plików bankowości elektronicznej. Oprogramowanie to służy to przesyłania plików XML zawierających polecenia zapłaty dla banku.
 
 ## <a name="what-credit-transfer-formats-are-currently-supported"></a>Które polecenia przelewu są obecnie obsługiwane?
 Należy zawsze przejść do biblioteki zasobów wspólnych w usłudze Microsoft Dynamics Lifecycle Services (LCS) i wyświetlić najbardziej aktualną listę dostępnych plików, które mają typ składnika aktywów **Konfiguracja GER**. Następna sekcja — „Co trzeba skonfigurować?” — zawiera łącze do tematu, który wyjaśnia sposób tworzenia repozytorium usługi LCS na potrzeby przeglądania dostępnych konfiguracji i importowania wybranych konfiguracji.

@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 511d875baed029df9083da36baf6c48ca4b7abf866ae569038b554bf594473c8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 38b7371ab668eb76801fbe7f15894609a846bbd8
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734434"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8687677"
 ---
 # <a name="set-up-preferred-maintenance-workers"></a>Ustawienia preferowanych konserwatorów
 
 [!include [banner](../../includes/banner.md)]
-
- 
 
 Podczas planowania zlecenia pracy, użytkownik może ustawić preferencję, na której konserwatorzy lub grupy konserwatorów są przydzielane do wykonywania zleceń pracy. Korzystanie z tej funkcji jest opcjonalne, ale może pomóc w wyborze najbardziej kwalifikowanego pracownika obsługi do wykonania zadania na podstawie umiejętności i kwalifikacji pracownika. Zaplanowane są tylko pracownicy obsługi, którzy są dostępni w czasie planowania. Jeśli preferowana konfiguracja pracownika obsługi jest zgodna z zleceniem w trakcie planowania, ale pracownik obsługi jest przydzielany do innych zadań, zlecenie pracy będzie zaplanowane na inną, dostępną dla konserwatora.
 
@@ -51,13 +49,15 @@ Im więcej opcji zostanie wprowadzonych dla tego samego rekordu, tym dokładniej
 
 3. Aby rozpocząć, Utwórz „domyślnego” konserwatora lub grupę konserwatorów. Oznacza to , że można wybierać tylko w polu **Preferowana grupa konserwatorów** lub w polu **preferowany konserwator**. Na poniższym zrzucie ekranu widać przykład w pierwszym rekordzie, w którym "żądania" są wybrane jako **Preferowana grupa konserwatorów**.
 
-    [!NOTE] Ta domyślna konfiguracja będzie używana podczas planowania zleceń pracy, jeśli żadna inna określona kombinacja nie pasuje do zawartości zlecenia pracy.
+    > [!NOTE]
+    > Ta domyślna konfiguracja będzie używana podczas planowania zleceń pracy, jeśli żadna inna określona kombinacja nie pasuje do zawartości zlecenia pracy.
 
 4. Powtórz krok 2, aby utworzyć nowy rekord. Dokonaj wymaganych wyborów w zależności od poziomu szczegółowości dla preferowanego pracownika lub grupy pracowników. 
 
     *Przykład:* na poniższym zrzucie ekranu, w szóstym rekordzie, konserwator Shawn Richardson jest wybrany jako pracownik preferowany. Zostanie on automatycznie wybrany podczas planowania zlecenia pracy zawierającego środek trwały „CH-BP1-03-02” i typ zadania konserwacji „Ocena instrumentu”, jeśli jest on dostępny w zaplanowanym czasie.
 
-    [!NOTE] Jeśli podczas planowania zlecenia pracy wybrano preferowanego konserwatora, Zarządzanie składnikami majątku przechodzi przez wszystkie rekordy **perferowanych konserwatorów**, aby sprawdzić, czy są dostępne w pierwszej kolejności najbardziej specyficzne dane. Jeśli nie zostanie znalezione dopasowanie, zostanie użyty rekord domyślny z wyborem w polu **preferowana grupa konserwatorów** lub w polu **preferowany konserwator**.
+    > [!NOTE]
+    > Jeśli podczas planowania zlecenia pracy wybrano preferowanego konserwatora, Zarządzanie składnikami majątku przechodzi przez wszystkie rekordy **perferowanych konserwatorów**, aby sprawdzić, czy są dostępne w pierwszej kolejności najbardziej specyficzne dane. Jeśli nie zostanie znalezione dopasowanie, zostanie użyty rekord domyślny z wyborem w polu **preferowana grupa konserwatorów** lub w polu **preferowany konserwator**.
 
 ![Rysunek 1.](media/02-work-order-scheduling.png)
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ec7fcb97bd46551846ccee13b369a1b02a589688
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: cf38717ab3768249e3c9b988ee3893c5e539bcd0
+ms.sourcegitcommit: 90ffd763d18f97654b9dbc9e3f71c998e6094c6b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075306"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8739395"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management (10.0.21 październik 2021 r.)
 
@@ -130,7 +130,7 @@ Niedawno dodano lub znacząco zaktualizowano następujące tematy pomocy. Nie za
 | Planowanie główne | [Wyświetlanie historii planu i dzienników planowania](../master-planning/planning-optimization/plan-history-logs.md) |
 | Zarządzanie magazynem | [Strategie pakowania kontenerów](../warehousing/container-packing-strategy-overview.md) |
 | Zarządzanie magazynem | [Przykładowe scenariusze inwentaryzacji ciągłej](../warehousing/cycle-counting-scenarios.md) |
-| Zarządzanie magazynem | [Importowanie przychodzących wcześniejszych powiadomień o wysyłce za pomocą jednostki danych V2](../warehousing/import-asn-v2-data-entity.md) |
+| Zarządzanie magazynem | [Importowanie przychodzących wcześniejszych powiadomień o wysyłce za pomocą jednostki danych V3](../warehousing/import-asn-data-entity.md) |
 | Zarządzanie magazynem | [Pobranie nadmiarowe dla zamówień sprzedaży i zamówień przeniesienia](../warehousing/over-picking-for-sales-and-transfer-orders.md) |
 | Zarządzanie magazynem | [Planowanie drukowania etykiety grupy czynności podczas grupy czynności](../warehousing/configure-task-based-wave-label-printing.md) |
 | Zarządzanie magazynem | [Nowości lub zmiany w aplikacji mobilnej Warehouse Management](../warehousing/whats-new-wma.md) |

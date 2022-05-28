@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-06-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d221e1a47dca85880fd683177ca95dd1b7766fb9
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 350fb5a00b85f28fa8aef2ca50cf1f277b8f635e
+ms.sourcegitcommit: e4cc43b06ef3f0f562849e2c960025cb244d6017
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8064929"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "8743549"
 ---
 # <a name="server-to-server-authentication-for-the-ats-integration-api"></a>Uwierzytelnianie serwer-serwer dla interfejsu API integracji ATS
 
@@ -89,7 +89,7 @@ W przypadku nowej roli odpowiedni dostęp musi być co najmniej przypisany do na
 
 Drugim krokiem jest upewnienie się, że aplikacja ma odpowiednie uprawnienia do danych w Human Resources, łącząc je z użytkownikiem w aplikacji Human Resources. W przypadku użytkownika aplikacji wywołania między serwerami za pośrednictwem tabel wirtualnych Dataverse są wykonywane w kontekście tożsamości użytkownika (aplikacji) w Dataverse, która wywołuje akcję. Usługa adaptera tabel wirtualnych następnie wyszukuje powiązanego użytkownika w dziale Human Resources i uruchamia zapytanie w kontekście tego użytkownika. Oznacza to, że w Human Resources musi zostać utworzony użytkownik z odpowiednimi rolami, aby zapewnić dostęp do danych, których będzie potrzebować integrująca aplikacja.
 
-Użytkownik Human Resources musi mieć również przypisane prawidłowe uprawnienia do danych w Human Resources. Rola **Aplikacji Rekrutacja** (HcmRecruitingIntegrator) jest dostępna z uprawnieniami do podstawowych jednostek wymaganych do integracji z danymi rekrutacji. Tę rolę można przypisać do użytkownika aplikacji na stronie **Użytkownicy**, aby udzielić odpowiedniego dostępu do danych. Aby uzyskać więcej informacji o rolach zabezpieczeń HcmRecruitingIntegrator, zobacz temat [Zabezpieczenia oparte na rolach](/fin-ops-core/dev-itpro/sysadmin/role-based-security).
+Użytkownik Human Resources musi mieć również przypisane prawidłowe uprawnienia do danych w Human Resources. Rola **Aplikacji Rekrutacja** (HcmRecruitingIntegrator) jest dostępna z uprawnieniami do podstawowych jednostek wymaganych do integracji z danymi rekrutacji. Tę rolę można przypisać do użytkownika aplikacji na stronie **Użytkownicy**, aby udzielić odpowiedniego dostępu do danych. Aby uzyskać więcej informacji o rolach zabezpieczeń HcmRecruitingIntegrator, zobacz temat [Zabezpieczenia oparte na rolach](/dynamics365/fin-ops-core/dev-itpro/sysadmin/role-based-security).
 
 ### <a name="set-up-the-new-user-with-appropriate-permissions"></a>Skonfiguruj nowego użytkownika z odpowiednimi uprawnieniami
 

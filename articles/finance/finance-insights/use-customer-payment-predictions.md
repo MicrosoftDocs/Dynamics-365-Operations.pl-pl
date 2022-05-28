@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: ed70e133b93c783542d4669b679fc5b6d2d20240
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.openlocfilehash: ecc864485dfc106df22b48e92a85f2c73d58e0e8
+ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968919"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8740632"
 ---
 # <a name="use-customer-payment-predictions"></a>Korzystanie z prognoz płatności odbiorcy
 
@@ -86,10 +86,6 @@ Dane znajdujące się w sekcji **Wgląd w odbiorcę** i **Historia odbiorcy** po
 
 Aby wyświetlić dokładność prognoz płatności, należy wybrać kolejno opcje **Kredyty i windykacje \> Ustawienia \> Finance Insights \> Parametry Finance Insights**. Na karcie **Wgląd w płatności od odbiorców** w sekcji **Model przewidywania** jest wyświetlana procentowa dokładność modelu przewidywania.
 
-[![Dokładności prognoz płatności.](./media/finance-insights-parameters-accuracy-2nd.png)](./media/finance-insights-parameters-accuracy-2nd.png)
-
 Jeśli dokładność nie jest zadowalająca, wybierz łącze **Zwiększ dokładność modelu**, aby otworzyć środowisko rozszerzenia AI Builder. W środowisku rozszerzenia AI Builder można zaznaczać i anulować zaznaczenie pól do momentu, aż wybierzesz pola, które uznasz za najistotniejsze dla dokładnego przewidywania prawdopodobieństwa zapłaty. Po zakończeniu można łatwo ponownie wytrenować model przewidywania i opublikować zmiany. Nowo wytrenowany model przewidywania będzie automatycznie wybierany na potrzeby prognozowania w rozwiązaniu Dynamics 365 Finance.
-
-[![AI Builder rozszerzenie zakresu obsługi klienta.](./media/ai-builder.png)](./media/ai-builder.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

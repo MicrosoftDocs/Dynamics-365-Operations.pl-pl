@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8775a9225313c0f5a132dbccbe583470fe23beab
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 7e98e9c6931edbbac49c09d8c2fa4d11d90da5d7
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570736"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8694404"
 ---
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>Ograniczenia wyrażenia i ograniczenia tabeli w modelach konfiguracji produktu.
 
@@ -106,7 +106,7 @@ W poniższych tabelach znajdują się listy operatorów i notacji infix, któryc
 <tbody>
 <tr class="odd">
 <td>Implies</td>
-<td>Jest to wartość true, jeśli pierwszy warunek nie jest spełniony, drugi warunek jest prawdziwy, lub oba są.</td>
+<td>Jeśli warunek a jest spełniony, zastosuj ograniczenie b.</td>
 <td>Implies[a, b], infix: a -: b</td>
 <td><ul>
 <li><strong>Operator:</strong> Implies[x != 0, y &gt;= 0]</li>

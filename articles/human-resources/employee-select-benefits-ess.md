@@ -7,19 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-12-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 190eb7e437af7edd8eee97b8f2b7601254cbd240
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 68aa401487a74b9fcd186ec6cbdb268cdb41168c
+ms.sourcegitcommit: e4cc43b06ef3f0f562849e2c960025cb244d6017
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066425"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "8743494"
 ---
 # <a name="employees-select-plans-by-using-employee-self-service-optional"></a>Pracownicy wybierają przy użyciu funkcji Samoobsługa pracownika etatowego (opcjonalnie)
 
@@ -35,11 +34,11 @@ Aby uzyskać dostęp do swoich świadczeń związanych z rejestracją, pracownik
 Na stronie **Samoobsługa świadczeń** plany świadczeń są pogrupowane według typu planu. Aby wyświetlić plany świadczeń w typie planu, pracownik etatowy wybiera kafelek na stronie **Świadczenia dla pracowników**. Pracownik etatowy będzie widział tylko świadczenia, do których jest uprawniony.
 
 > [!IMPORTANT]
-> Aby można było wyświetlać typ planu w aplikacji **Samoobsługa pracownika etatowego**, należy go wcześniej skonfigurować. Aby uzyskać więcej informacji, należy zapoznać się z tematem [Konfigurowanie samoobsługi pracownika etatowego](/hr-benefits-setup-employee-self-service.md).
+> Aby można było wyświetlać typ planu w aplikacji **Samoobsługa pracownika etatowego**, należy go wcześniej skonfigurować. Aby uzyskać więcej informacji, należy zapoznać się z tematem [Konfigurowanie samoobsługi pracownika etatowego](/dynamics365/human-resources/hr-benefits-setup-employee-self-service).
 
 W zależności od typu planu można wybrać co najmniej jedno świadczenie do rejestracji. Na przykład typ planu medycznego można skonfigurować w celu ograniczenia pracownika etatowego do jednego planu medycznego. Typ planu ubezpieczenia na życie umożliwia pracownikowi etatowemu wybranie wielu planów ubezpieczenia na życie.
 
-Po decyzji pracownika etatowego, w którym planie chce się zarejestrować, może być konieczne wybranie osób zależnych. Jeśli pracownik etatowy wybrał opcję objęcia świadczeniem **Pracownik +1**, **Pracownik + dzieci** lub **Rodzina**, należy wybrać osoby zależne. Aby uzyskać więcej informacji na temat opcji objęcia świadczeniem, zobacz [Tworzenie opcji objęcia świadczeniem](/hr-benefits-setup-coverage-options.md).
+Po decyzji pracownika etatowego, w którym planie chce się zarejestrować, może być konieczne wybranie osób zależnych. Jeśli pracownik etatowy wybrał opcję objęcia świadczeniem **Pracownik +1**, **Pracownik + dzieci** lub **Rodzina**, należy wybrać osoby zależne. Aby uzyskać więcej informacji na temat opcji objęcia świadczeniem, zobacz [Tworzenie opcji objęcia świadczeniem](/dynamics365/human-resources/hr-benefits-setup-coverage-options).
 
 Aby wybrać plan świadczeń, pracownik etatowy wybiera przycisk z wielokropkiem (**...**) lub pozycję **Dodaj do koszyka**. Po dodaniu wszystkich wybranych świadczeń do koszyka pracownik etatowy wybiera opcję **Wyświetl koszyk**. Pracownik etatowy jest następnie przekierowywany na stronę **Plany**, gdzie może wyświetlić wybrane i uchylone plany świadczeń.
 

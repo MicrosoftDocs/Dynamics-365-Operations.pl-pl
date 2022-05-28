@@ -1,7 +1,7 @@
 ---
 title: Konfigurowanie i obsługa współpracy z dostawcami
 description: W tym temacie opisano sposób konfigurowania zasad współpracy z dostawcą w Dynamics 365 Supply Chain Management. Wyjaśniono również, jak konfigurować nowych użytkowników współpracujących z dostawcami i zarządzać rolami zabezpieczeń dla tych użytkowników.
-author: Henrikan
+author: GalynaFedorova
 ms.date: 12/03/2018
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 220774
 ms.assetid: 69d05e8b-7dc2-48ea-bc24-bea9ac963579
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b635255fffa6fd3c6612cd248dc692df204aa76d
-ms.sourcegitcommit: 614d79cba238e466d445767a7d0a012e785a9861
+ms.openlocfilehash: 4b59513d86426d3c1bfd759b9aabc331e58d5423
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "7652068"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8677570"
 ---
 # <a name="set-up-and-maintain-vendor-collaboration"></a>Konfigurowanie i obsługa współpracy z dostawcami
 
@@ -31,7 +31,7 @@ Interfejs współpracy z dostawcami udostępnia użytkownikom zewnętrznym ogran
 W tym temacie opisano sposób konfigurowania zasad współpracy z dostawcą w Dynamics 365 Supply Chain Management. Wyjaśniono również, jak skonfigurować przepływ pracy w celu zapewnienia nowych użytkowników współpracujących z dostawcami oraz jak zarządzać rolami zabezpieczeń dla tych użytkowników.
 
 > [!NOTE]
-> Informacje dotyczące konfiguracji ról zabezpieczeń dla współpracy z dostawcami dotyczą tylko bieżącej wersji Finance and Operations. W systemie Microsoft Dynamics AX 7.0 (luty 2016 r.) i aplikacji Microsoft Dynamics AX w wersji 7.0.1 (maj 2016 r.) do współpracy z dostawcami służy moduł **Portal dostawców**. Aby uzyskać informacje na temat uprawnień użytkowników portalu sprzedawcy w Microsoft Dynamics AX, patrz [Bezpieczeństwo użytkownika portalu sprzedawcy](configure-security-vendor-portal-users.md).
+> Informacje dotyczące konfiguracji ról zabezpieczeń dla współpracy z dostawcami dotyczą tylko bieżącej wersji rozwiązania Finance and Operations. W systemie Microsoft Dynamics AX 7.0 (luty 2016 r.) i aplikacji Microsoft Dynamics AX w wersji 7.0.1 (maj 2016 r.) do współpracy z dostawcami służy moduł **Portal dostawców**. Aby uzyskać informacje na temat uprawnień użytkowników portalu sprzedawcy w Microsoft Dynamics AX, patrz [Bezpieczeństwo użytkownika portalu sprzedawcy](configure-security-vendor-portal-users.md).
 
 ## <a name="set-up-vendor-collaboration-security-roles"></a>Konfigurowanie ról zabezpieczeń współpracy z dostawcami
 

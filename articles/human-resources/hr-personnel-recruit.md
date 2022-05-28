@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 77d37cba84fcd6fb8f93da79b10db2db91d91db0
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: ef2f2c82708fd48055faa7546e7e0c4da51e7b6c
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066607"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8733993"
 ---
 # <a name="recruit-job-candidates"></a>Rekrutowanie kandydatów
 
@@ -29,7 +28,7 @@ ms.locfileid: "8066607"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dynamics 365 Human Resources ułatwia zarządzanie wnioskami o rekrutację. Usprawnia również przejście od kandydata do pracownika. Jeśli Twoja organizacja korzysta z oddzielnej aplikacji do rekrutacji, proces rekrutacji może obejmować następujące kroki:
+Dynamics 365 Human Resources ułatwia zarządzanie wnioskami o rekrutację. Usprawnia również przejście od kandydata do pracownika. Jeśli Twoja organizacja korzysta z oddzielnej aplikacji do rekrutacji, proces rekrutacji może obejmować następujące kroki:<!--note from editor: Should this be a numbered list? These steps do seem to follow a particular order.-->
 
 - Wprowadzanie wniosku o rekrutację w module Human Resources.
 - Przekazywanie polecanych kandydatów do modułu Human Resources z aplikacji do rekrutacji.
@@ -42,13 +41,18 @@ W przypadku braku oddzielnej aplikacji do rekrutacji kandydatami w module Human 
 >
 > Aplikacje do integracji rekrutacji można również znaleźć na stronie [AppSource](https://appsource.microsoft.com/marketplace/apps?search=recruiting%20dynamics).
 >
-## <a name="enable-recruiting-requests"></a>Włącz wnioski o rekrutację
+## <a name="enable-recruiting-requests-on-the-merged-infrastructure"></a>Włącz żądania rekrutacyjne w połączonej infrastrukturze
 
-Aby przesyłać wnioski o rekrutację w module Human Resources, należy najpierw włączyć tę funkcję w **Udostępnionych parametrach modułu Human Resources**.
+Jeśli chcesz przesyłać żądania rekrutacyjne w ramach rekrutacji HR, musisz najpierw włączyć funkcje **doświadczenie użytkownaika HR** i **Zarządzanie procesem rekrutacji**.
 
-1. W obszarze roboczym **Zarządzanie personelem** wybierz **Łącza**.
-2. W obszarze **Konfiguracja** wybierz opcję **Udostępniane parametry zasobów ludzkich**.
-3. Na karcie **Rekrutacja** w obszarze **Rekrutacja** przy opcji **Włącz wnioski o rekrutację** ustaw **Tak**.
+Po włączeniu funkcji wybierz tę funkcję, aby wykonać następujące czynności: 
+1. Przejdź do **Zasoby ludzkie** > **Konfiguracja** > **Parametry zasobów ludzkich**.
+2. Na karcie  **Rekrutacja** ustaw pole **Rekrutacja wyłączona** na **Nie**.
+3. Z listy rozwijanej **Doświadczenie w rekrutacji** wybierz pozycję **Rekrutacja do działu personalnego**.   
+
+> [!Note] 
+> Po wybraniu **Rekrutacja do działu personalnego** **projekty rekrutacji** (starsze) będą tylko do odczytu. 
+
 
 ## <a name="add-a-recruiting-request-location"></a>Dodawanie lokalizacji wniosku o rekrutację
 
@@ -61,7 +65,7 @@ Jeśli organizacja ma wiele lokalizacji, można je dodać, tak aby wnioskodawca 
     ![Dodawanie lokalizacji wniosku o rekrutację.](./media/hr-recruit-0a-add-location.png)
 
 4. W polu **Opis** wprowadź opis lokalizacji.
-5. W obszarze **Lokalizacja** wybierz **Dodaj**. Jeśli pojawi się okno **Nowy adres**, wprowadź adres lokalizacji.
+5. W obszarze **Lokalizacja** wybierz **Dodaj**. Jeśli pojawi się okno **Nowy adres**, wprowadź adres lokalizacji.<!--note from editor: Please make the address in this image less plausible. Via the fictitious guidelines on CELAweb: For street addresses, you should use sequential numbers, common street names, and incorrect zip codes (e.g., 4567 Main St Buffalo, NY 98052). (See https://microsoft.sharepoint.com/sites/CELAWeb-Copyrights-Trademarks-And-Patents/SitePages/trademarks-fictitious-names.aspx)-->
 
     ![Wprowadź adres.](./media/hr-recruit-0b-address.png)
 
@@ -91,7 +95,7 @@ Menedżerowie mogą przesyłać wnioski o rekrutację w module Human Resources. 
     Pozostała część wniosku o rekrutację zostanie wypełniona domyślnymi informacjami dotyczącymi danego stanowiska.
 
 8. W obszarze **Zewnętrzny opis** wprowadź opis stanowiska do udostępnienia poza firmą.
-9. W obszarze **Stanowiska** wybierz opcję **Dodaj**, a następnie wybierz stanowisko dla danego wniosku o rekrutację.
+9. W obszarze **Stanowiska** wybierz opcję **Dodaj**, a następnie wybierz stanowisko dla danego wniosku o rekrutację.<!--note from editor: In all of these images, are they approved fictitious names, or do they come from sample data included with the app?-->
 
     ![Dodawanie stanowiska.](./media/hr-recruit-4-select-position.png)
 

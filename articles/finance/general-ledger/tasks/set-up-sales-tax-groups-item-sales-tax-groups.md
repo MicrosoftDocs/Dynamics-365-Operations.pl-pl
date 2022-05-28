@@ -8,23 +8,23 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: TaxGroup,  TaxItemGroup
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7c3bf881f0f11d6d21d5f2e9d3132c2bea00b982411c9c5d76ae617b00a69fda
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c461c3d3e9b073b186e68ff1b0453fafe5da80e7
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739342"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734875"
 ---
 # <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a>Konfigurowanie grup podatków i grup podatków dla towarów
 
 [!include [banner](../../includes/banner.md)]
 
-W tym nagraniu zadania przejdziesz przez proces konfigurowania grup podatków i podatków dla towarów. Grupy podatków są grupami kodów podatków dołączonymi do odbiorców i dostawców. Są one także dołączane do kont księgowych dla transakcji, które nie zostały zaksięgowane do określonego dostawcy lub odbiorcy.  Grupy podatków dla towarów są grupami kodów podatków dołączonymi do zasobów takich jak produkty.  Podatki mające zastosowanie do konkretnej transakcji są określane na podstawie kodów podatków, które są zawarte zarówno w grupie podatków, jak i grupie podatków dla towaru związanej z transakcją.  Podatek można obliczyć tylko wtedy, gdy grupa podatków i grupa podatków dla towaru są wybrane dla każdej transakcji, w przypadku której istnieje konieczność obliczenia lub zarejestrowania podatku.  
+W tym nagraniu zadania przejdziesz przez proces konfigurowania grup podatków i podatków dla towarów. Grupy podatków są grupami kodów podatków dołączonymi do odbiorców i dostawców. Są one także dołączane do kont księgowych dla transakcji, które nie zostały zaksięgowane do określonego dostawcy lub odbiorcy. Grupy podatków dla towarów są grupami kodów podatków dołączonymi do zasobów takich jak produkty. Podatki mające zastosowanie do konkretnej transakcji są określane na podstawie kodów podatków, które są zawarte zarówno w grupie podatków, jak i grupie podatków dla towaru związanej z transakcją. Podatek można obliczyć tylko wtedy, gdy grupa podatków i grupa podatków dla towaru są wybrane dla każdej transakcji, w przypadku której istnieje konieczność obliczenia lub zarejestrowania podatku.  
 
 1. Otwórz **Okienko nawigacji > Podatek > Podatki pośrednie > Podatek > Grupy podatków**.
 2. Kliknij przycisk **Nowy**.

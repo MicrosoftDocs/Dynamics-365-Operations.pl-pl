@@ -2,7 +2,7 @@
 title: Domeny w rozwiązaniu Dynamics 365 Commerce
 description: W tym temacie opisano sposób obsługiwania domen w rozwiązaniach Microsoft Dynamics 365 Commerce.
 author: BrShoo
-ms.date: 03/17/2021
+ms.date: 05/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: bf96c47b8f5e940ffdd9241c3bdda4162a3101c42004c58c431f135f11c39d14
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aab5e983b42aea7d8eb4f198f033634d4663f278
+ms.sourcegitcommit: 7181a022739d6107a75d84546c3379c23f722034
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733998"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8737353"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domeny w rozwiązaniu Dynamics 365 Commerce
 
@@ -28,6 +28,9 @@ ms.locfileid: "6733998"
 W tym temacie opisano sposób obsługiwania domen w rozwiązaniach Microsoft Dynamics 365 Commerce.
 
 Domeny są adresami sieci Web używanymi do nawigacji do witryn Dynamics 365 Commerce w przeglądarce sieciowej. Zarządzanie domeną można kontrolować za pomocą wybranego dostawcy DNS (Domain Name Server). Konstruktorzy witryn odwołują się domeny w ramach narzędzia tworzenia strony Dynamics 365 Commerce, aby koordynować, w jaki sposób witryna będzie dostępna po opublikowaniu. W tym temacie opisano sposób obsługi domen i odwoływanie się do nich w trakcie całego cyklu życia modułu tworzenia stron w Commerce i ich uruchamiania.
+
+> [!NOTE]
+> Od 6 maja 2022 r. wszystkie środowiska utworzone w Dynamics 365 Commerce będą udostępniane w `.dynamics365commerce.ms`, zastępując wcześniejszy wzorzec `.commerce.dynamics.com`. Istniejące środowiska, które są w tej domenie `.commerce.dynamics.com`, będą nadal działać.
 
 ## <a name="provisioning-and-supported-host-names"></a>Konfiguracja i obsługiwane nazwy hostów
 
@@ -44,7 +47,7 @@ Można utworzyć żądanie usługi w celu dodania dodatkowych domen do środowis
 
 ## <a name="commerce-generated-urls"></a>Adresy URL wygenerowane przez Commerce
 
-Podczas inicjowania obsługi Dynamics 365 Commerce środowiska handlu elektronicznego system Commerce wygeneruje adres URL, który będzie adresem roboczym środowiska. Do tego adresu URL odwołuje się łącze lokacji platformy handlu elektronicznego przedstawione w usłudze LCS po zainicjowaniu środowiska. Adres URL wygenerowany przez system Commerce jest zapisany w formacie `https://<e-commerce tenant name>.commerce.dynamics.com`, gdzie nazwą dzierżawy platformy jest nazwa wprowadzona w usłudze LCS dla środowiska Commerce.
+Podczas inicjowania obsługi Dynamics 365 Commerce środowiska handlu elektronicznego system Commerce wygeneruje adres URL, który będzie adresem roboczym środowiska. Do tego adresu URL odwołuje się łącze lokacji platformy handlu elektronicznego przedstawione w usłudze LCS po zainicjowaniu środowiska. Adres URL wygenerowany przez system Commerce jest zapisany w formacie `https://<e-commerce tenant name>.dynamics365commerce.ms`, gdzie nazwą dzierżawy platformy jest nazwa wprowadzona w usłudze LCS dla środowiska Commerce.
 
 Można również skorzystać z nazw hostów witryn produkcji w środowisku piaskownicy. Ta opcja jest idealna, jeśli witryna ma być kopiowana ze środowiska piaskownicy do produkcji.
 
@@ -67,11 +70,11 @@ Pole **Ścieżka** może pozostać puste lub można dodać dodatkowy ciąg ście
 
 Jeśli na przykład tworzysz witrynę w konstruktorze witryn o nazwie „Fabrikam” w dzierżawie o nazwie „XYZ” zostanie utworzona witryna z pustą ścieżką, a dostęp do opublikowanej zawartości witryny będzie można uzyskać w przeglądarce sieciowej, przechodząc bezpośrednio do podstawowego adresu URL wygenerowanego przez Commerce:
 
-`https://xyz.commerce.dynamics.com`
+`https://xyz.dynamics365commerce.ms`
 
 Alternatywnie, jeśli dodano ścieżkę „Fabrikam” podczas konfiguracji tej samej witryny, można uzyskać dostęp do opublikowanej zawartości witryny w przeglądarce sieci Web przy użyciu następującego adresu URL:
 
-`https://xyz.commerce.dynamics.com/fabrikam`
+`https://xyz.dynamics365commerce.ms/fabrikam`
 
 ## <a name="pages-and-urls"></a>Strony i adresy URL
 
@@ -92,16 +95,16 @@ Obsługiwane wartości nazw hostów są dostępne do skojarzenia z domeną podcz
 Jeśli skonfigurowano dwie witryny z dwiema różnymi domenami, podczas pracy w konstruktorze witryn można dołączyć atrybut **?domain=** do funkcjonującego adresu URL, aby uzyskać dostęp do opublikowanej zawartości witryny w przeglądarce.
 
 Na przykład środowisko „xyz” zostało skonfigurowane i utworzono i skojarzono z nim dwie witryny: jedną z domeną `www.fabrikam.com`, a drugą z domeną `www.constoso.com`. Każda witryna została skonfigurowana przy użyciu pustej ścieżki. W przeglądarce sieci Web można uzyskać dostęp do tych dwóch witryn, korzystając z atrybutu **?domain=**:
-- `https://xyz.commerce.dynamics.com?domain=www.fabrikam.com`
-- `https://xyz.commerce.dynamics.com?domain=www.contoso.com`
+- `https://xyz.dynamics365commerce.ms?domain=www.fabrikam.com`
+- `https://xyz.dynamics365commerce.ms?domain=www.contoso.com`
 
-Jeśli ciąg kwerendy domeny nie jest podany w środowisku z podanymi wieloma domenami, w systemie Commerce zostanie użyta pierwsza z nich. Jeśli na przykład podczas konfigurowania witryny została podana ścieżka „fabrikam”, adres URL `https://xyz.commerce.dynamics.com` może zostać użyty do uzyskania dostępu do opublikowanej zawartości witryny `www.fabrikam.com`.
+Jeśli ciąg kwerendy domeny nie jest podany w środowisku z podanymi wieloma domenami, w systemie Commerce zostanie użyta pierwsza z nich. Jeśli na przykład podczas konfigurowania witryny została podana ścieżka „fabrikam”, adres URL `https://xyz.dynamics365commerce.ms` może zostać użyty do uzyskania dostępu do opublikowanej zawartości witryny `www.fabrikam.com`.
 
 ## <a name="traffic-forwarding-in-production"></a>Przekazywanie ruchu w produkcji
 
-Istnieje możliwość symulowania wielu domen za pomocą parametrów kwerendy domeny w samym punkcie końcowym commerce.dynamics.com. Jeśli jednak konieczne jest przechodzenie do trybu produkcji, należy przesłać dalej ruch dla domeny niestandardowej do punktu końcowego `<e-commerce tenant name>.commerce.dynamics.com`.
+Istnieje możliwość symulowania wielu domen za pomocą parametrów kwerendy domeny w samym punkcie końcowym commerce.dynamics.com. Jeśli jednak konieczne jest przechodzenie do trybu produkcji, należy przesłać dalej ruch dla domeny niestandardowej do punktu końcowego `<e-commerce tenant name>.dynamics365commerce.ms`.
 
-Punkt końcowy `<e-commerce tenant name>.commerce.dynamics.com` nie obsługuje niestandardowych warstw sieci Secure Sockets Layer (SSLs), więc domeny niestandardowe należy skonfigurować przy użyciu usługi front door service lub sieci CDN. 
+Punkt końcowy `<e-commerce tenant name>.dynamics365commerce.ms` nie obsługuje niestandardowych warstw sieci Secure Sockets Layer (SSLs), więc domeny niestandardowe należy skonfigurować przy użyciu usługi front door service lub sieci CDN. 
 
 Aby skonfigurować domeny niestandardowe przy użyciu usługi front door service lub sieci CDN, dostępne są dwie opcje:
 

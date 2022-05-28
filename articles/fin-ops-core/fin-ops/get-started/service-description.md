@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: cd033cfc3df21ddac5572aa70c18db5ffe26f54e
-ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
+ms.openlocfilehash: 26b2821f33ea23dde1fda1d461baa5de1b4f9efc
+ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "8656811"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8740660"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Opis usługi dla aplikacji finansowych i operacyjnych
 
@@ -265,7 +265,7 @@ Administrator dzierżawy klienta może uzyskać dostęp do wystąpień produkcyj
 |---|---|---|
 | **Nieprodukcyjne**<br>Piaskownica warstwy 1 | Środowisko nieprodukcyjne, które klienci wdrażają w celach programistycznych, demonstracyjnych lub szkoleniowych. | Piaskownica warstwy 1 (określana także jako środowisko hostowane w chmurze) to maszyna wirtualna zarządzana przez klienta, która jest wdrażana w subskrypcji platformy Azure klienta z usługi LCS. Ponieważ jest to maszyna wirtualna w subskrypcji platformy Azure klienta, klient ma pełny dostęp administracyjny do środowiska za pośrednictwem pulpitu zdalnego. |
 | **Nieprodukcyjne**<br>Piaskownica warstwy 2 (lub wyższej) | Środowisko nieprodukcyjne, które klienci wdrażają w celu testowania akceptacji użytkownika, testowania integracji, szkolenia, przemieszczania lub jakichkolwiek innych scenariuszy przedprodukcyjnych. | Piaskownice warstwy 2 i wyższych są wdrażane w subskrypcji aplikacji finansowych i operacyjnych w modelu SaaS. Dostęp do baz danych Azure SQL Database, które są skojarzone ze środowiskiem nieprodukcyjnym, jest udzielany za pośrednictwem [dostępu dokładnie na czas](../../dev-itpro/database/database-just-in-time-jit-access.md). Brak dostępu do pulpitu zdalnego. |
-| **Produkcyjne** | Środowisko produkcyjne jest wdrażane, gdy projekt jest [gotowy do początkowego uruchomienia](/imp-lifecycle/environment-planning.md#production-system-readiness). | Środowiska produkcyjne są wdrażane w subskrypcji modelu SaaS. Dostęp odbywa się w całości przez przeglądarkę, punkty końcowe usługi lub usługę LCS. |
+| **Produkcyjne** | Środowisko produkcyjne jest wdrażane, gdy projekt jest [gotowy do początkowego uruchomienia](../imp-lifecycle/environment-planning.md#production-system-readiness). | Środowiska produkcyjne są wdrażane w subskrypcji modelu SaaS. Dostęp odbywa się w całości przez przeglądarkę, punkty końcowe usługi lub usługę LCS. |
 
 ### <a name="microsoft-administrative-access"></a>Dostęp administracyjny firmy Microsoft
 
@@ -286,7 +286,7 @@ Firma Microsoft zainwestowała w rozbudowany zestaw narzędzi do monitorowania i
 |---|---|
 | <ul><li>Monitorowanie dostępności usługi.</li><li>Ciągłe monitorowanie i wysyłanie alertów za pomocą metryk kondycji i mechanizmów watchdog dla składników o znaczeniu krytycznym, takich jak serwer obiektów aplikacji (AOS), Batch, struktura importu/eksportu danych (DIXF), Commerce i Management Reporter.</li><li>Monitorowanie obniżenia wydajności spowodowanego przez usługi infrastruktury (takie jak Azure Active Directory \[Azure AD\] i Azure SQL).</li><li>Jeśli firma Microsoft ustali, że jeden proces lub zadanie wsadowe powoduje aberrację, proces lub zadanie zostanie przerwane po zakończeniu komunikacji z klientem.</li></ul> | <ul><li>Monitorowanie zmian konfiguracji i rozszerzeń aplikacji, które mogą powodować problemy z działaniem i wydajnością.</li><li>Błędy aplikacji muszą być diagnozowane przy użyciu narzędzi do monitorowania. Za pomocą tych narzędzi można diagnozować zgłoszone przez użytkownika aberracje dotyczące wydajności.</li><li>Należy informować firmę Microsoft, jeśli istnieje oczekiwane obciążenie systemu wykraczające poza prognozowane szczytowe użycie.</li><li>Jeśli w wystąpieniu produkcyjnym nie ma dostępnej właściwej usługi, klient może użyć usługi LCS do zgłoszenia [przestoju produkcyjnego](../../dev-itpro/lifecycle-services/report-production-outage.md).</li></ul> |
 
-Przesyłając żądania pomocy technicznej w trybie online za pośrednictwem usługi LCS, klienci umożliwiają firmie Microsoft szybką i skuteczną reakcję z wykorzystaniem głębokiej wiedzy technicznej. Chociaż opcja telefonu jest dostępna, należy jej używać tylko w przypadku, gdy opcja online nie działa. Aby uzyskać więcej informacji, zobacz [Opcje telefonicznej pomocy technicznej](/power-platform/admin/support-overview.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json#is-there-a-phone-number-i-can-call-to-contact-support).
+Przesyłając żądania pomocy technicznej w trybie online za pośrednictwem usługi LCS, klienci umożliwiają firmie Microsoft szybką i skuteczną reakcję z wykorzystaniem głębokiej wiedzy technicznej. Chociaż opcja telefonu jest dostępna, należy jej używać tylko w przypadku, gdy opcja online nie działa. Aby uzyskać więcej informacji, zobacz [Opcje telefonicznej pomocy technicznej](/power-platform/admin/support-overview?toc=%2Fdynamics365%2Ffin-ops-core%2Fdev-itpro%2Ftoc.json&bc=%2Fdynamics365%2Fbreadcrumb%2Ftoc.json#is-there-a-phone-number-i-can-call-to-contact-support).
 
 ## <a name="incident-management"></a>Zarządzanie zdarzeniami
 

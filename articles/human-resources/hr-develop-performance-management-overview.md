@@ -7,7 +7,6 @@ ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom:
 - "221024"
 - intro-internal
@@ -16,18 +15,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: fa4d90d568697526adeef52443a01c3251696bf4
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: c1ef722eabc3c3bc740f9ff5d959cfa005862a9b
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984753"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735731"
 ---
 # <a name="performance-management"></a>Zarządzanie wydajnością
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Proces zarządzania wydajnością umożliwia pracowników dokumentowanie i omawianie ich działań z przełożonymi. Z kolei menedżerowie mogą dostarczać informacje zwrotne i wskazówki pracownikom.  
+Proces zarządzania wydajnością umożliwia pracowników dokumentowanie i omawianie ich działań z przełożonymi. Z kolei menedżerowie mogą dostarczać informacje zwrotne i wskazówki pracownikom.
 
 Jak pokazuje poniższy diagram, istnieją trzy strony używane do zarządzania procesem:
 
@@ -35,7 +34,7 @@ Jak pokazuje poniższy diagram, istnieją trzy strony używane do zarządzania p
 -   Cele
 -   Przegląd wydajności
 
-Na poniższym diagramie przedstawiono wzajemne powiązania podstawowych składników zarządzania wydajnością. [![Omówienie procesu zarządzania wydajnością.](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
+Na poniższym diagramie przedstawiono wzajemne powiązania podstawowych składników zarządzania wydajnością. <!--note from editor: This alt text should describe the relationship among the boxes so a reader with low vision will understand. This will require using the :::image type="complex"::: tag and a long description. -->[![Omówienie procesu zarządzania wydajnością.](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
 
 ## <a name="performance-journal"></a>Arkusz wydajności
 
@@ -49,7 +48,7 @@ W przypadku otwierania **arkusza wydajności** z obszaru roboczego **ESS** możn
 -   Opis działania, który zawiera szczegółowe informacje o działaniu.
 -   Data utworzenia arkusza.
 -   Daty rozpoczęcia i zakończenia działania.
--   Ustawienie stanu, które wskazuje, czy działanie może być udostępniane menedżerowi pracownika.
+-   Ustawienie stanu, które wskazuje, czy działanie może być udostępniane menedżerowi pracownika
 -   Ustawienie, które wskazuje, czy element jest częścią planu rozwoju.
 -   Słowa kluczowe, które ułatwiają wyszukiwanie podobnych elementów dziennika wydajności.
 
@@ -57,7 +56,7 @@ Arkusz wydajności można również połączyć z zewnętrzną witryną internet
 
 ### <a name="send-feedback"></a>Wyślij opinię
 
-Arkusz wydajności zawiera dodatkową funkcję o nazwie **Wyślij opinię**. Po kliknięciu opcji **Wyślij informację zwrotną** można wybrać pracownika i przesłać mu informacje zwrotne za pośrednictwem poczty e-mail. Wiadomość zostanie wysłana do pracownika otrzymującego informację zwrotną, jego menedżera, pracownika wysyłającego informację zwrotną i jego menedżera. Dla każdej osoby, która otrzyma wiadomość z informacją zwrotną, jest tworzony wpis w arkuszu wydajności.
+Arkusz wydajności zawiera dodatkową funkcję o nazwie **Wyślij opinię**. Po wybraniu opcji **Wyślij informację zwrotną** można wybrać pracownika i przesłać mu informacje zwrotne za pośrednictwem poczty e-mail. Wiadomość zostanie wysłana do pracownika, o którym jest informacja zwrotna<!--note from editor: Suggested-->, kierownik tego pracownika, pracownik, który wysyła opinię, oraz kierownik tego pracownika. Dla każdej osoby, która otrzyma wiadomość z informacją zwrotną, jest tworzony wpis w arkuszu wydajności.
 
 ## <a name="goals"></a>Cele
 
@@ -76,7 +75,7 @@ Jeśli masz bardziej szczegółowe instrukcje dotyczące celu, można utworzyć 
 
 Cele często mają mierzalne wyniki. Można dodawać miary, aby śledzić docelowe i faktycznie wyniki osiągania celów. Jeśli miara odpowiada ambitnemu celowi, można ją w ten sposób oznaczyć, używając opcji **Ambitny cel**. 
 
-Arkusz wydajności pracownika będzie zawierał działania, które dostarczą menedżerowi więcej informacji na temat osiągania celu. Jeśli arkusz wydajności został połączony z celem, pojawi się w sekcji **Działania** tego celu. Można również dodać nowy arkusz wydajności ze strony **Cele dotyczące wydajności**. Ten arkusz wydajności zostanie automatycznie połączony z celem. 
+Twój dziennik wyników będzie zawierał,<!--note from editor: Suggested.--> które dostarczą menedżerowi więcej informacji na temat osiągania celu. Jeśli arkusz wydajności został połączony z celem, pojawi się w sekcji **Działania** tego celu. Można również dodać nowy arkusz wydajności ze strony **Cele dotyczące wydajności**. Ten arkusz wydajności zostanie automatycznie połączony z celem. 
 
 Jeśli chcesz do celu dołączyć dokument, taki jak świadectwo ukończenia, można to zrobić w sekcji **Załączniki** na stronie **Cele dotyczące wydajności**. Jest dostępna przeglądarka dokumentów, dzięki czemu można szybko wyświetlić zawartość dowolnego dołączonego dokumentu. 
 
@@ -84,7 +83,7 @@ Na podstawie celu można utworzyć szablon, a następnie używać go do tworzeni
 
 ## <a name="performance-reviews"></a>Przeglądy wydajności
 
-Przeglądy wydajności są bardziej formalnie nazywane dyskusjami. Teraz są one na tyle elastyczne, że obsługują ciągłe przekazywanie informacji zwrotnych, plany rozwoju i bardziej formalne metody oceny. Można szybko utworzyć małe spotkania dla dwóch osób, np. bezpośrednią rozmowę, albo zbudować bardziej złożony przegląd dopasowany do ogólnofirmowego procesu oceny pracowników. 
+Przeglądy wydajności są bardziej formalnie nazywane dyskusjami. Teraz są one na tyle elastyczne, że obsługują ciągłe przekazywanie informacji zwrotnych, plany rozwoju i bardziej formalne metody oceny. Dla dwóch osób można szybko tworzyć małe spotkania<!--note from editor: I think "one-on-one meeting" is implied by "two people."--> Lub można utworzyć bardziej złożony przegląd, który pasuje do procesu przeglądu firmy. 
 
 Spotkania takie jak bezpośrednia rozmowa są formą prostych przeglądów (ocen) i wymagają jedynie krótkiej nazwy, dłuższego opisu treści spotkania, daty spotkania oraz omawianego okresu przeglądu. Menedżerowie będą także widzieć imiona i nazwiska osób poddawanych ocenie. 
 
@@ -105,7 +104,7 @@ W przeglądach wydajności można umieszczać różne rodzaje informacji. Są to
 
 ### <a name="review-detail"></a>Szczegóły przeglądu
 
-Do szczegółów przeglądu można pobrać cele i dodać komentarze o nich. Można także skonfigurować kompetencje i je również skomentować.
+Do szczegółów przeglądu można pobrać cele i dodać komentarze o nich. Można także skonfigurować kompetencje i je również skomentować.<!--note from editor: Suggested, in the spirit of using the fewest words to say the same thing.-->
 
 ### <a name="measurements"></a>Miary
 
@@ -115,13 +114,13 @@ Istnieje możliwość wyświetlania miar, które są powiązane z celem lub prze
 
 Można wyświetlić elementy arkusza wydajności powiązane z przeglądem. Można również dodać arkusz wydajności, a zostanie on automatycznie połączony z przeglądem.
 
-### <a name="ratings"></a>Wyniki oceny
+### <a name="ratings"></a>Oceny
 
 Wynik oceny można zastosować do każdego celu i kompetencji, która znajduje się w przeglądzie. Dla każdego przeglądu można zdefiniować modele oceniania. Domyślne ustawienia wyników oceny znajdują się na stronie **Udostępniane parametry zasobów ludzkich** w obszarze **Wydajność.**
 
 ### <a name="sign-offs"></a>Podpisy
 
-Pracownik i/lub menedżer będą figurowali w przeglądzie zgodnie z ustawionymi parametrami przeglądu. Przeglądy mogą być wymagane lub opcjonalne. Po złożeniu wszystkich wymaganych podpisów przegląd zostanie oznaczony stanem **Zakończony**.
+Pracownik i/lub menedżer będą figurowali w przeglądzie zgodnie z ustawionymi parametrami przeglądu. Przeglądy mogą być wymagane lub opcjonalne. Po<!--note from editor: Via Writing Style Guide.--> Po złożeniu wszystkich wymaganych podpisów przegląd zostanie oznaczony stanem **Zakończony**.
 
 ### <a name="attachments"></a>Załączniki
 
@@ -129,9 +128,9 @@ W celu dołączenia dokumentu do przeglądu przejdź do sekcji **Załączniki** 
 
 ## <a name="workflow-for-performance-management"></a>Przepływ pracy zarządzania wydajnością
 
-Do kontroli zatwierdzania przeglądu można użyć przepływu pracy Przegląd pracownika. Można także pominąć automatyczny przepływ pracy i ręcznie zmienić stan przeglądu, co pozwala tworzyć prostsze dokumenty, takie jak spotkania bezpośrednie, bez konieczności używania procesu przepływu pracy. Dostęp do przeglądu jest kontrolowany za pomocą stanu przeglądu.
+Do kontroli zatwierdzania przeglądu można użyć przepływu pracy Przegląd pracownika. Można także pominąć automatyczny przepływ pracy i ręcznie zmienić stan przeglądu, co pozwala tworzyć prostsze dokumenty, takie jak spotkania bezpośrednie, bez konieczności używania procesu przepływu pracy. Dostęp do przeglądu jest kontrolowany za pomocą stanu przeglądu, następująco:<!--note from editor: Suggested as an intro to the list.-->
 
-1.  Po utworzeniu przeglądu otrzymuje on stan **Nierozpoczęty**. Taki przegląd może edytować każdy użytkownik.
+1.  Po utworzeniu przeglądu otrzymuje stan **Nierozpoczęty**. Taki przegląd może edytować każdy użytkownik.
 
 2.  Gdy pracownik naciśnie przycisk **Rozpocznij przegląd**, przegląd otrzyma stan **W toku**. Pracownik rozpoczyna wtedy dodawanie zawartości. W tym momencie menedżer przestaje widzieć dokument przeglądu.
 
@@ -145,17 +144,17 @@ Do kontroli zatwierdzania przeglądu można użyć przepływu pracy Przegląd pr
 
 Przepływ pracy Przegląd pracownika ma dwa elementy:
 
-1.  Zatwierdź przegląd. Dodaj ten element, aby kontrolować zmianę stanu z **W toku** na **Gotowe do przeglądu**. Zmień przypisanie, aby była używana hierarchia menedżerska, gdzie ustawienie Pracownik.poziom kierownika linii = 1.
+1.  Zatwierdź przegląd. Dodaj ten element, aby kontrolować zmianę stanu z **W toku** na **Gotowe do przeglądu**. Zmień przypisanie, aby była używana hierarchia menedżerska, gdzie ustawienie **Pracownik.poziom kierownika linii = 1**.<!--note from editor: Edit assumes that this is a UI string. -->
 
-2.  Ostateczny przegląd. Dodaj ten element, aby kontrolować zmianę stanu z **Gotowe do przeglądu** na **Ostateczny przegląd**. Jeżeli menedżer ma zatwierdzać ostateczny przegląd, zmień przypisanie, aby była używana hierarchia menedżerska, gdzie ustawienie Pracownik.poziom kierownika linii = 1. Jeżeli chcesz, aby zatwierdzenia dokonywał pracownik, zmień przypisanie na Użytkownik przepływu pracy. Jeżeli ostateczny przegląd mają zatwierdzać i menedżer, i pracownik, dodaj dwa kroki w przepływie pracy i dokonaj odpowiedniego przypisania w każdym kroku w kolejności, w jakiej ma się odbywać zatwierdzanie.
+2.  Ostateczny przegląd. Dodaj ten element, aby kontrolować zmianę stanu z **Gotowe do przeglądu** na **Ostateczny przegląd**. Jeżeli menedżer ma zatwierdzać ostateczny przegląd, zmień przypisanie, aby była używana hierarchia menedżerska, gdzie ustawienie **Pracownik.poziom kierownika linii = 1**. Jeżeli chcesz, aby zatwierdzenia dokonywał pracownik, zmień przypisanie na **Użytkownik przepływu pracy**. Jeżeli ostateczny przegląd mają zatwierdzać i menedżer, i pracownik, dodaj dwa kroki w przepływie pracy i dokonaj odpowiedniego przypisania w każdym kroku w kolejności, w jakiej ma się odbywać zatwierdzanie.<!--note from editor: I like this, so succinct.-->
 
 ## <a name="setup"></a>Konfiguracja
 
-Istnieją trzy strony, które pomagają skonfigurować informacje wymagane w celu wykonania procesu oceny wydajności: **Miary**, **Typy źródeł arkusza wydajności** i **Typy przeglądów**.
+Trzy strony<!--note from editor: Suggested, to avoid "there are" (via Writing Style Guide).--> pomagają skonfigurować informacje wymagane w celu wykonania procesu oceny wydajności: **Miary**, **Typy źródeł arkusza wydajności** i **Typy przeglądów**.
 
 ### <a name="measurements"></a>Miary
 
-Na stronie **Miary** można tworzyć standardowe miary, które będą używane na stronach **Cele dotyczące wydajności** i **Przeglądy**. Można tworzyć miary będące datami, kwotami, ilościami lub wartościami procentowymi albo miary oparte na modelu oceniania.
+Na stronie **Miary** można<!--note from editor: Via Writing Style Guide, https://styleguides.azurewebsites.net/Styleguide/Read?id=2700&topicid=35221--> tworzyć standardowe miary, które będą używane na stronach **Cele dotyczące wydajności** i **Recenzje**. Można tworzyć miary będące datami, kwotami, ilościami lub wartościami procentowymi albo miary oparte na modelu oceniania.
 
 ### <a name="performance-journal-source-types"></a>Typy źródeł arkusza wydajności
 

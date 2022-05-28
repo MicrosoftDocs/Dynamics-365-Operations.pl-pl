@@ -1,7 +1,7 @@
 ---
 title: Zanim kupisz
-description: Wytyczne krok po kroku, które warto uwzględnić przy rozważaniu zakupu Dynamics 365 Finance, Dynamics 365 Supply Chain Management lub Dynamics 365 Commerce.
-author: ShellyBakke
+description: Wytyczne krok po kroku, które warto uwzględnić przy rozważaniu zakupu Dynamics 365 Finance, Dynamics 365 Supply Chain Management, lub Dynamics 365 Commerce.
+author: sericks007
 ms.date: 11/30/2021
 ms.topic: article
 ms.prod: ''
@@ -10,29 +10,29 @@ audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.custom: 21761
 ms.search.region: Global
-ms.author: smiller
+ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: f994acfb85e5bb7ccb9cbd3e6c0a0f3c4eec318a
-ms.sourcegitcommit: 34113bd588d53b9aed481da060a1c6738fca0eaf
+ms.openlocfilehash: 9c2f658fbf7fd4db38d572ff80e9d500b5548e0a
+ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "7874591"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8713284"
 ---
 # <a name="before-you-buy"></a>Zanim kupisz
 
 [!include [banner](../includes/banner.md)]
 
-Nowy w  Dynamics 365 Finance, Dynamics 365 Supply Chain Management lub Dynamics 365 Commerce? Zebraliśmy wskazówki krok po kroku, czy nadal oceniasz, czy jesteś gotowy na zakup.
+Pierwszy raz w Dynamics 365 Finance, Dynamics 365 Supply Chain Management lub Dynamics 365 Commerce? Zebraliśmy wskazówki krok po kroku, czy nadal oceniasz, czy jesteś gotowy na zakup.
 
-## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>Krok drugi: Wypróbuj Finance and Operations bezpłatnie przez 30 dni
+## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>Krok 1: Wypróbowanie programu Finance and Operations bezpłatnie przez 30 dni
 
-Możesz wypróbować 365 for Finance, Dynamics 365 Supply Chain Management lub Dynamics 365 Commerce przez 30 dni poprzez prostą rejestrację pocztą e-mail. Wersja próbna aplikacje Finance and Operations zawiera przewodniki po zadaniach Rozpoczęcie pracy, które oferują instrukcje krok po kroku umożliwiające obejrzenie konkretnych scenariuszy w działaniu. Produkt umożliwia poznanie i przećwiczenie scenariuszy, ale nie można go dostosowywać. Dołączone są dane demonstracyjne, które ułatwiają korzystanie z produktu i zwiększają użyteczność całego procesu. 3 dni przed wygaśnięciem wersji próbnej zostanie wysłana wiadomość e-mail z przypomnieniem. Szczegółowe informacje znajdziesz w temacie [Rejestracja w celu uzyskania subskrypcji w wersji zapoznawczej](../../dev-itpro/dev-tools/sign-up-preview-subscription.md#subscribe).
+Możesz wypróbować 365 for Finance, Dynamics 365 Supply Chain Management lub Dynamics 365 Commerce przez 30 dni poprzez prostą rejestrację pocztą e-mail. Wersja próbna aplikacji finansowych i operacyjnych zawiera przewodniki po zadaniach Rozpoczęcie pracy, które oferują instrukcje krok po kroku umożliwiające obejrzenie konkretnych scenariuszy w działaniu. Produkt umożliwia poznanie i przećwiczenie scenariuszy, ale nie można go dostosowywać. Dołączone są dane demonstracyjne, które ułatwiają korzystanie z produktu i zwiększają użyteczność całego procesu. 3 dni przed wygaśnięciem wersji próbnej zostanie wysłana wiadomość e-mail z przypomnieniem. Szczegółowe informacje znajdziesz w temacie [Rejestracja w celu uzyskania subskrypcji w wersji zapoznawczej](../../dev-itpro/dev-tools/sign-up-preview-subscription.md#subscribe).
 
 ## <a name="step-two-choose-a-deployment-option"></a>Krok 2: Wybieranie opcji wdrożenia
 
-Teraz możesz wdrożyć aplikacje Finance and Operations w chmurze lub lokalnie. Wdrożenia chmurowe oferują usługę ERP, która jest w pełni zarządzana przez firmę Microsoft, natomiast wdrożenia lokalne są dokonywane lokalnie we własnym centrum danych klienta.
+Teraz możesz wdrożyć aplikacje finansowe i operacyjne w chmurze lub lokalnie. Wdrożenia chmurowe oferują usługę ERP, która jest w pełni zarządzana przez firmę Microsoft, natomiast wdrożenia lokalne są dokonywane lokalnie we własnym centrum danych klienta.
 
 Przy wybieraniu opcji wdrożenia lokalnego należy wziąć pod uwagę następujące kwestie:
 
@@ -62,13 +62,13 @@ Dostawca rozwiązań chmurowych Microsoft może ściśle współpracować z klie
 
 ### <a name="buy-through-a-dynamics-partner-on-premises"></a>Zakup u partnera w zakresie oprogramowania Dynamics (wdrożenia lokalne)
 
-Aby kupić Finance and Operations do wdrożenia lokalnego, należy współpracować z partnerem. Aby uzyskać więcej informacji, [Zakup rozwiązania Finance + Operations (lokalne)](purchase-on-premises.md).
+Aby kupić program Finance and Operations do wdrożenia lokalnego, należy współpracować z partnerem. Aby uzyskać więcej informacji, [Zakup rozwiązania Finance + Operations (lokalne)](purchase-on-premises.md).
 
 ### <a name="buy-through-volume-licensing-cloud-or-on-premises"></a>Zakup u partnera i korzystanie z licencjonowania zbiorowego (wdrożenia chmurowe lub lokalne)
 
 Jeśli organizacja ma 250 lub więcej użytkowników usługi Dynamics 365, warto rozważyć [umowę licencjonowania zbiorowego](https://www.microsoft.com/Licensing/product-licensing/dynamics365).
 
-W przypadku licencjonowania zbiorowego aplikacje Finance and Operations są dostępne w systemie:
+Licencjonowanie ilościowe, aplikacje finansowe i operacyjne są dostępne za pośrednictwem:
 
 - Umowa Enterprise
 - Subskrypcja programu Enterprise Agreement

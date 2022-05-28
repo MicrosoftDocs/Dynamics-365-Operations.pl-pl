@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie okresów rozliczania podatku
-description: W tym temacie wyjaśniono sposób konfigurowania okresów rozliczenia podatku w Dynamics 365 Finance.
+description: W tym temacie wyjaśniono, jak skonfigurować okresy rozliczeniowe podatku od sprzedaży w Dynamics 365 Finance.
 author: twheeloc
 ms.date: 08/05/2019
 ms.topic: business-process
@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: TaxPeriod
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1f57cd2b5b0f8f86d67500086403c5f484a263f76601453c00f59ede901b01a8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 197b85fb88f966b0a13fc061e2e780dd84e74acb
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732964"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735822"
 ---
-# <a name="set-up-sales-tax-settlement-periods"></a>Konfigurowanie okresów rozliczania podatku
+# <a name="set-up-sales-tax-settlement-periods"></a>Ustawianie okresów rozliczania podatku
 
 [!include [banner](../../includes/banner.md)]
 
@@ -28,7 +28,7 @@ W tym temacie wyjaśniono sposób konfigurowania okresów rozliczenia podatku. O
 
 W zadaniu wykorzystano firmę demonstracyjną USMF.
 
-1. Otwórz w okienku nawigacji otwórz **Moduły > Podatek > Podatki pośrednie > Podatek > Okresy rozliczania podatku**.
+1. Wybierz kolejno opcje **Podatek > Podatki pośrednie > Podatek > Okresy rozliczania podatku**.
 2. Wybierz pozycję **Nowy**.
 3. W polu **Okres rozliczeniowy** wpisz wartość.
 4. W polu **Opis** wpisz wartość.

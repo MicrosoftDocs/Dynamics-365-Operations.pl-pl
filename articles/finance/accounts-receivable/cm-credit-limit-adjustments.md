@@ -7,17 +7,17 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschloma
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c171ab99a434e529c48f39be9147ac411fb08b9b
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 4d96f50db4379a44ad8f2b06725db654a27393f9
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753905"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734811"
 ---
 # <a name="credit-limit-adjustments"></a>Korekty limitu kredytu 
 
@@ -27,7 +27,7 @@ Korekty limitu kredytu umożliwiają menedżerom kredytów aktualizowanie limit�
 
 ## <a name="set-up-credit-limit-adjustments"></a>Konfiguracja limitu kredytu odbiorcy
 
-Istnieje możliwość tworzenia wpisów w arkuszu korekt limitu kredytu na stronie **Korekta limitu kredytu** (**Zarządzanie kredytem \> Korekta limitu kredytu \> Korekty limitu kredytu**).
+Istnieje możliwość tworzenia wpisów w arkuszu **korekt limitu kredytu** na stronie **Korekta limitu kredytu** (**Zarządzanie kredytem \> Korekta limitu kredytu \> Korekty limitu kredytu**).
 
 1. Wybierz pozycję **Nowy**. Zostanie utworzona nowa grupa wpisów z numerem korekty limitu kredytu.
 2. Umożliwia wybór typu korekty limitu kredytu:

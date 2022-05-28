@@ -8,23 +8,23 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: TaxReportCollection
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b7d12ffa90bde30518780d750e74d20db89f007044f8622480b8bd6e629e00dd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3ff5a5622fa63b6058b9e768f1fd1bc776a48962
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728752"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734847"
 ---
 # <a name="set-up-sales-tax-reporting-codes"></a>Ustawianie kodów raportowania podatku
 
 [!include [banner](../../includes/banner.md)]
 
-Kody raportowania podatków odnoszą się do numeru pola zawartego w raporcie podatku. Są one używane w układach raportów właściwych dla danego kraju. Są także używane w raporcie Płatności podatku według kodu. Ten raport przedstawia kwoty podatku dla okresu rozliczeniowego podsumowanego dla każdego kodu raportowania. Po utworzeniu kodów raportowania podatków można tworzyć do nich odwołania na skróconych kartach Konfiguracja raportu, do których można przejść ze strony **Kod podatku**. 
+**Kody raportowania podatków** odnoszą się do numeru pola zawartego w raporcie podatku. Są one używane w układach raportów właściwych dla danego kraju. Są także używane w raporcie Płatności podatku według kodu. Ten raport przedstawia kwoty podatku dla okresu rozliczeniowego podsumowanego dla każdego kodu raportowania. Po utworzeniu **kodów raportowania podatków** można tworzyć do nich odwołania na skróconych kartach **Konfiguracja raportu**, do których można przejść ze strony **Kod podatku**. 
 
 To nagranie wykorzystuje firmę demonstracyjną DEMF.
 

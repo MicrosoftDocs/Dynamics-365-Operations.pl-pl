@@ -7,17 +7,17 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschloma
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3c8584c33b4f77b6d1f5a4dc0d62208b76b3ffa3
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: d5ced2f2bc419f18431663273236d21546c5541b
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753977"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734465"
 ---
 # <a name="add-credit-management-information-for-customers"></a>Dodaj informacje dotyczące zarządzania kredytem odbiorców
 
@@ -32,7 +32,7 @@ Można dodać szegóły odbiorcy w formularzu **Kredyty i windykacje** na skróc
 1. Opcję **Nieograniczony limit kredytu** należy wybrać na **tak**, jeśli odbiorca nie powinien być ograniczony żadnym testem limitu kredytu.
 2. Ustawienie opcji **Wyklucz z zarządzania kredytem** na wartość **tak** powoduje wykluczenie odbiorcy z wszelkich akcji, które zazwyczaj występują podczas procesów zarządzania kredytami.
 3. Wybierz grupę zarządzania kredytem dla danego odbiorcy.
-4. Aby obliczyć limit kredytu w walucie odbiorcy, w polu **Limit kredytu w polu walucie odbiorcy** wprowadź limit kredytu odbiorcy. Limit kredytu w walucie firmy zostanie przekonwertowany przy użyciu kursów wymiany określonych przez limit kredytu typ kursu wymiany wybranego w parametrach zarządzania kredytami.
+4. Aby obliczyć limit kredytu w walucie odbiorcy, w polu **Limit kredytu w polu walucie odbiorcy** wprowadź limit kredytu odbiorcy. Limit kredytu w walucie firmy zostanie przekonwertowany przy użyciu kursów wymiany określonych przez limit kredytu typ kursu wymiany wybranego w parametrach **zarządzania kredytami**.
 5. W polu **Ostatnia data przeglądu** wprowadź datę ostatniej weryfikacji limitu kredytowego odbiorcy przez menedżera kredytu.
 6. W polu **Następna zaplanowana daty przeglądu** wprowadź datę zaplanowanego przeglądu i aktualizacji kredytu dla odbiorcy.
 7. W polu **uprawniony limit** kredytu wprowadź najwyższy limit kredytu, który może być przypisany do odbiorcy na podstawie przeglądu historii kredytowej tego odbiorcy. Kwalifikujący się limit kredytu może się różnić od limitu kredytowego wyświetlanego w skróconej karcie **Kredyt i windykacje**.
@@ -46,7 +46,8 @@ Można dodać szegóły odbiorcy w formularzu **Kredyty i windykacje** na skróc
 15. W polu **Odbiorca od** wprowadź datę przetwarzania pierwszej transakcji dla odbiorcy. Te informacje są używane podczas tworzenia wyników dotyczących ryzyka.
 16. Umożliwia wprowadzenie notatek, które mogą być używane przez zespół kredytów do dalszego oceniania zdolności kredytowej odbiorcy.
 
-Należy zauważyć, że niektóre informacje wyświetlane na stronie **Odbiorcy** są tworzone przez inny proces:
+> [!Note] 
+> Niektóre informacje wyświetlane na stronie **Odbiorcy** są tworzone przez inny proces:
 
 - Pole **Data ważności limitu kredytu** pokazuje datę wygaśnięcia limitu kredytowego. Jeśli to pole nie zostanie ustawione, limit kredytu odbiorcy nie wygaśnie.
 - Pole **Data limitu kredytu** pokazuje datę stworzenia limitu kredytu. To pole jest aktualizowane przy każdym korygowaniu limitu kredytu.

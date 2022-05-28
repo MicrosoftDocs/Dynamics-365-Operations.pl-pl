@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 21910c61cc330e0c9292990b7b1914f56bac844c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 787d0c4ebcf83d6bfec05943f2bb0ddc5961a93a
+ms.sourcegitcommit: e18ea2458ae042b7d83f5102ed40140d1067301a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570760"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8736041"
 ---
 # <a name="dual-use-goods"></a>Towary podwójnego zastosowania
 
@@ -34,7 +34,7 @@ Rozważmy następujący scenariusz:
 2. Strona **Szczegóły zwolnionego produktu** dla produktu X-100 wskazuje, że jest to produkt podwójnego zastosowania. Kod, Kategoria, Grupa i system wskazują klasyfikację kontroli eksportu, do której należy dany produkt.
 3. Strona **Certyfikaty podwójnego zastosowania** zawiera certyfikat dla produktu X-100, który jest wysyłany do Francji. Certyfikat wygasa 1 stycznia 2020.
 4. W dniu 17 czerwca 2020 r. Tworzysz zamówienie sprzedaży dla firmy klienta z siedzibą we Francji, a zamówienie obejmuje produkt X-100.
-5. Podczas zapisywania zamówienia sprzedaży system określa następujące informacje:
+5. Po potwierdzeniu zamówienia sprzedaży system określa następujące informacje:
 
     1. Czy zamówienie obejmuje produkty podwójnego zastosowania?
     2. Jeśli zamówienie zawiera towary podwójnego zastosowania, czy kraj docelowy wymaga certyfikatów podwójnego zastosowania?

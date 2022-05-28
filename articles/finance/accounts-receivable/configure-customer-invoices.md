@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9ffb2c42748678ae265a706a00db327a160cc9f5
-ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
+ms.openlocfilehash: 069ada071fe6a7d3e22ad6aa45e3c2f06a9f4b31
+ms.sourcegitcommit: 5a4b8ce4a7ae82c0ef22d2223c11c6b55f048cdd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/07/2022
-ms.locfileid: "8392918"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "8756971"
 ---
 # <a name="create-a-customer-invoice"></a>Tworzenie faktury dla odbiorcy
 
@@ -30,7 +30,7 @@ ms.locfileid: "8392918"
 
 **Faktura niezależna** nie jest związana z zamówieniem sprzedaży. Zawiera ona wiersze zamówienia uwzględniające konta księgowe, niezależne opisy oraz wprowadzaną przez użytkownika kwotę sprzedaży. Nie można wprowadzić numeru towaru tego rodzaju na fakturze. Konieczne jest wprowadzenie odpowiedniej informacji o podatku. Konto główne dla sprzedaży jest wskazane w każdym wierszu faktury, który użytkownik może dystrybuować do wielu kont księgowych za pomocą przycisku **Dystrybuuj kwoty** na stronie **Faktura niezależnej**. Ponadto saldo odbiorcy jest księgowane na koncie rozrachunkowym z profilu księgowania, który jest używany dla faktury niezależnej.
 
-Aby uzyskać więcej informacji, zobacz: .
+Aby uzyskać więcej informacji, zobacz:
 
 [Tworzenie faktur niezależnych](../accounts-receivable/create-free-text-invoice-new.md)
 
@@ -41,7 +41,10 @@ Aby uzyskać więcej informacji, zobacz: .
 [Generowanie i księgowanie cyklicznych faktur niezależnych](tasks/post-recurring-free-text-invoices.md)
 
 
-**Faktura pro forma** to faktura przygotowana jako oszacowanie rzeczywistej kwoty faktury przed zaksięgowaniem faktury. Fakturę pro forma można wydrukować albo dla faktury dla klienta do zamówienia sprzedaży albo dla faktury niezależnej.
+**Faktura pro forma** to faktura przygotowana jako oszacowanie rzeczywistej kwoty faktury przed zaksięgowaniem faktury. **Fakturę pro forma** można wydrukować albo dla faktury dla klienta do zamówienia sprzedaży albo dla faktury niezależnej. 
+
+>[!NOTE]
+> W przypadku przerwania systemu w trakcie procesu przetwarzania faktura pro forma sprzedaży można faktura pro forma oddzielone. Oddzielone faktura pro forma można usunąć, uruchamiając **zadanie okresowe Usuwanie faktur pro forma ręcznie**. Przejdź do **Sprzedaż i marketing > Zadania okresowe > Oczyszczanie > Usuwanie faktur pro forma ręcznie**.
 
 ## <a name="using-sales-order-customer-invoice-data-entities"></a>Używanie encji danych zamówienia sprzedaży klient faktura
 Możesz używać encji danych do importowania i eksportowania informacji o fakturze klienta dla zamówienia sprzedaży. Istnieją różne jednostki dla informacji w nagłówku faktury sprzedaży i w wierszach faktury sprzedaży.
@@ -82,6 +85,11 @@ Stan zamówienia sprzedaży można wyświetlić na stronie listy **Wszystkie zam
 Za pomocą tego procesu można wyświetlić jedno lub kilka zamówień sprzedaży, które są gotowe do zafakturowania, gdy trzeba skonsolidować je na jednej fakturze. 
 
 Można wybrać wiele faktur na stronie listy **Zamówienie sprzedaży** i skonsolidować je za pomocą funkcji **Generuj faktury**. Na stronie **Księgowanie faktury** można zmienić ustawienie **Zamówienie zbiorcze** w celu podsumowania według numeru zamówienia (jeśli jest wiele dokumentów dostawy dla jednego zamówienia sprzedaży) lub według konta faktury (jeśli istnieje wiele zamówień sprzedaży dla jednego konta faktury). Użyj przycisku **Rozmieść**, aby konsolidować zamówienia sprzedaży na jednej fakturze na podstawie ustawienia **Zamówienie zbiorcze**.
+
+## <a name="split-sales-order-invoices-by-site-and-delivery-information"></a>Podziel faktury zamówień sprzedaży według informacji o miejscu i dostawie
+Podział faktur dla odbiorcy dla zamówienia sprzedaży według witryny lub adresu dostawy można skonfigurować na karcie **Aktualizacja zbiorcza** na stronie **Parametry rozrachunków z odbiorcami**. 
+ - Wybierz opcję **Podziel na podstawie witryny**, aby podczas księgowania utworzyć jedną fakturę na witrynę. 
+ - Wybierz opcję **Podział na podstawie informacji o dostarczeniu faktury**, aby podczas księgowania utworzyć jedną fakturę na adres dostawy wiersza zamówienia sprzedaży. 
 
 ## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price"></a>Księgowanie na koncie przychodów dla wierszy zamówienia sprzedaży, które nie mają ceny
 Będziesz mieć możliwość zaktualizowania konta **Przychody** w **Księdze głównej** dla wierszy zamówienia sprzedaży, które nie mają ceny. Aby skonfigurować lub wyświetlić te informacje, przejdź do parametru **Zaksięguj do przychodów dla wierszy faktury za zamówienie sprzedaży o cenie zerowej** na karcie **Księga i podatek od sprzedaży** w **Parametry na koncie z odbiorcami** strona. (**Rozrachunki z dostawcami > Ustawienia > Parametry modułu rozrachunków z odbiorcami**). Wybierz przycisk **Tak**, aby zaktualizować **konto przychodów** dla wierszy faktury zamówienia sprzedaży, które nie mają ceny. Konto przychodów jest definiowane na stronie **Parametr księgowania zapasów**, na karcie Definicja konta **zamówienia sprzedaży**. Jeśli ta opcja nie jest zaznaczona, wiersze bez informacji o cenach nie będą księgować na koncie **Przychody**.
