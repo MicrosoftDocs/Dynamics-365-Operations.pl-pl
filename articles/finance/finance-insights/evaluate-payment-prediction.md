@@ -2,25 +2,25 @@
 title: Ocenianie modelu początkowych prognoz płatności odbiorcy
 description: W tym temacie opisano kroki, które można wykonać w celu zrozumienia zasad działania modelu przewidywania płatności od odbiorców i oceny jego skuteczności.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 05/02/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 874c6e938681537a0420eece6835a4c2124e11fc
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.openlocfilehash: c0951c8dcf6205ebbb15baf86b1272af4e95547f
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7969119"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8677962"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model"></a>Ocenianie modelu początkowych prognoz płatności odbiorcy
 
@@ -30,7 +30,7 @@ W tym temacie wyjaśniono, jak oceniać model przewidywania po włączeniu modu�
 
 ## <a name="getting-details-about-the-model"></a>Uzyskiwanie szczegółowych informacji o modelu
 
-W systemie Microsoft Dynamics 365 Finance na stronie **Parametry Finance Insights** obok wyniku dokładności jest wyświetlane łącze **Zwiększ dokładność modelu**.
+W systemie Microsoft Microsoft Dynamics 365 Finance na stronie **Parametry Finance Insights** obok wyniku dokładności jest wyświetlane łącze **Zwiększ dokładność modelu**.
 
 [![Łącze Zwiększ dokładność modelu.](./media/prediction-model.png)](./media/prediction-model.png)
 
@@ -89,10 +89,10 @@ W tym przypadku wynik punktowy metryki Makro F1 wynoszący około 49,3 procent w
 
 ## <a name="improving-the-model"></a>Ulepszanie modelu
 
-Po dokładniejszym zrozumieniu wyników uzyskiwanych przez pierwszy model można spróbować go ulepszać, dodając lub usuwając kolumny cech albo odfiltrowując części zestawu danych, które nie przyczyniają się do dokładności prognoz. Zamknij aplikację AI Builder, a następnie w systemie Dynamics 365 Finance użyj łącza **Ulepsz model**, aby od nowa rozpocząć proces w aplikacji AI Builder. Możesz eksperymentować z różnymi cechami bez wpływania na opublikowany model. Opublikowany model zmieni się dopiero po wybraniu opcji **Publikuj**. Pamiętaj, że w wystąpieniu usługi Dynamics 365 Finance jest używany tylko jeden model. Dlatego przed opublikowaniem jakiegokolwiek nowego modelu należy go uważnie sprawdzić.
+Po dokładniejszym zrozumieniu wyników uzyskiwanych przez pierwszy model można spróbować go ulepszać, dodając lub usuwając kolumny cech albo odfiltrowując części zestawu danych, które nie przyczyniają się do dokładności prognoz. Zamknij aplikację AI Builder, a następnie w Dynamics 365 Finance użyj łącza **Ulepsz model**, aby od nowa rozpocząć proces w aplikacji AI Builder. Możesz eksperymentować z różnymi cechami bez wpływania na opublikowany model. Opublikowany model zmieni się dopiero po wybraniu opcji **Publikuj**. Pamiętaj, że w wystąpieniu usługi Dynamics 365 Finance jest używany tylko jeden model. Dlatego przed opublikowaniem jakiegokolwiek nowego modelu należy go uważnie sprawdzić.
 
 ## <a name="for-more-information"></a>Więcej informacji
 
-Aby uzyskać więcej informacji na temat sposobu oceny modeli przewidywania, zobacz [Wyniki modeli uczenia maszynowego](/confusion-matrix.md).
+Aby uzyskać więcej informacji na temat sposobu oceny modeli przewidywania, zobacz [Wyniki modeli uczenia maszynowego](confusion-matrix.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7ce30b64bc7c3889347bec94186614bd6cc337f4
-ms.sourcegitcommit: 1050e58e621d9a0454895ed07c286936f8c03320
+ms.openlocfilehash: 79747d0c5c4265315d1757352dfecef09c469dd8
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8625365"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710871"
 ---
 # <a name="provision-human-resources"></a>Inicjowanie obsługi administracyjnej rozwiązania Human Resources
 
@@ -144,7 +143,7 @@ Przy ustalaniu, w którym środowisku usługi Power Apps wdrożyć moduł Human 
 6. Możliwości podwójnego zapisu do integracji danych zasobów ludzkich ze środowiskiem Power Apps mogą być używane tylko wtedy, gdy dla środowiska wybrano opcję **Włącz aplikacje Dynamics 365**. Zobacz [Podwójny zapis](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md), aby uzyskać więcej informacji, zobacz temat Strona główna podwójnego zapisu.
 
     > [!NOTE]
-    > Opcja **Włącz aplikacje Dynamics 365** musi być zaznaczona podczas tworzenia środowiska Power Apps. Jeśli opcja nie jest zaznaczona w momencie aprowizacji, nie będzie można używać podwójnego zapisu do integrowania danych między Dynamics 365 Human Resources a środowiskiem Power Apps ani instalować aplikacji Dynamics 365, takich jak Dynamics 365 Sales i Field Service na środowisko. Ta opcja jest nieodwracalna. Aby uzyskać więcej informacji, zobacz [Niektóre ważne uwagi dotyczące tworzenia nowego środowiska](//power-platform/admin/create-environment#some-important-considerations-when-creating-a-new-environment) w witrynie dokumentacji Power Platform.
+    > Opcja **Włącz aplikacje Dynamics 365** musi być zaznaczona podczas tworzenia środowiska Power Apps. Jeśli opcja nie jest zaznaczona w momencie aprowizacji, nie będzie można używać podwójnego zapisu do integrowania danych między Dynamics 365 Human Resources a środowiskiem Power Apps ani instalować aplikacji Dynamics 365, takich jak Dynamics 365 Sales i Field Service na środowisko. Ta opcja jest nieodwracalna. Aby uzyskać więcej informacji, zobacz [Niektóre ważne uwagi dotyczące tworzenia nowego środowiska](/power-platform/admin/create-environment#some-important-considerations-when-creating-a-new-environment) w witrynie dokumentacji Power Platform.
 
 7. Po określeniu odpowiedniego środowiska, które będzie używane, można kontynuować proces inicjowania obsługi. 
 

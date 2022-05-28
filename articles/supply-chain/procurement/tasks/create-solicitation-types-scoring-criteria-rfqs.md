@@ -1,7 +1,7 @@
 ---
 title: Tworzenie typów zdobywania zamówień i kryteriów punktowania dla ZO
 description: W tym przewodniku pokazano, jak utworzyć typ zdobywania zamówień i skojarzyć go z metodą punktowania.
-author: Henrikan
+author: GalynaFedorova
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: PurchRFQSolicitationType, PurchRFQCaseTableListPage, PurchCreate
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d55b91def8b8edf8310cfa0bfe9d2bcc321ee6a6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 69d62941629d0b1321a714df5ce6d81c6f94b9f5
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569320"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8678667"
 ---
 # <a name="create-solicitation-types-and-scoring-criteria-for-rfqs"></a>Tworzenie typów zdobywania zamówień i kryteriów punktowania dla ZO
 

@@ -7,19 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 308e2a538666522edf4a76be13b93c82c3f3a774
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 9b83250bdb54ea6e78709dd3a3ea434a994f6211
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071117"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8694012"
 ---
 # <a name="integration-with-finance-faq"></a>Integracja z często zadawanymi pytaniami Finance
 
@@ -34,7 +33,7 @@ W tym temacie zawarto odpowiedzi na podstawowe pytania dotyczące sposobu synchr
 
 ## <a name="can-i-edit-the-dynamics-365-talent-application-user-in-power-apps"></a>Czy mogę modyfikować użytkownika aplikacji Dynamics 365 Talent w Power Apps?
 
-Nr W przypadku modyfikacji użytkownika aplikacji Human Resources integracja między aplikacją Human Resources i Dataverse może zakończyć się niepowodzeniem. W poniższej tabeli przedstawiono ustawienia domyślne dla użytkownika aplikacji Talent.
+Nie W przypadku modyfikacji użytkownika aplikacji Human Resources integracja między aplikacją Human Resources i Dataverse może zakończyć się niepowodzeniem. W poniższej tabeli przedstawiono ustawienia domyślne dla użytkownika aplikacji Talent.
 
 | Imię i nazwisko | Identyfikator aplikacji | Identyfikator obiektu Azure AD | URI identyfikatora aplikacji |
 | --- | --- | --- | --- |
@@ -44,7 +43,7 @@ Nr W przypadku modyfikacji użytkownika aplikacji Human Resources integracja mi�
 
 ## <a name="is-all-data-synchronized-or-just-some-data-entities"></a>Czy wszystkie dane są synchronizowane czy tylko niektóre jednostki danych?
 
-Podzbiór danych został zsynchronizowany. Pełną listę wszystkich jednostek można znaleźć w temacie [Integracja z programem Dynamics 365 Finance](hr-admin-integration-finance.md).
+Podzbiór danych został zsynchronizowany. Pełną listę wszystkich jednostek można znaleźć w temacie [Integracja z Dynamics 365 Finance](hr-admin-integration-finance.md).
 
 ## <a name="why-dont-i-see-any-data-synced-to-dataverse"></a>Dlaczego nie są wyświetlane żadne dane zsynchronizowane z Dataverse?
 

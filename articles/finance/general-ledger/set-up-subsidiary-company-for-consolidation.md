@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: fbec5ad8fa5e17b75859c07ee64a66c9568c97d3d18b6a7616a64303d3a33f10
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bfa913ca1778391ce0f5a1b2fdf6e5828b30cb66
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727966"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8724481"
 ---
 # <a name="set-up-a-subsidiary-legal-entity-for-consolidation"></a>Konfigurowanie firmy zależnej do konsolidacji
 
@@ -29,7 +29,7 @@ Metoda przygotowywania kont oddziałów do konsolidacji zależy w części od te
 Przed rozpoczęciem konsolidacji w ramach zamknięcia okresu należy przeprowadzić czynności wstępne przy zamykaniu okresu, ale nie należy zamykać kont oddziałów przed zakończeniem konsolidacji. Aby uzyskać więcej informacji na temat zamknięcia na koniec okresu, zobacz [Zamknięcie księgi głównej na koniec okresu](close-general-ledger-at-period-end.md) i [Zamykanie roku obrachunkowego](tasks/close-fiscal-year.md).
 
 > [!NOTE]
->  Zalecamy użycie narzędzia Management Reporter dla Microsoft Dynamics 365 Finance w celu połączenia wyników finansowych wielu firm w skonsolidowanym formacie. Program Management Reporter umożliwia tworzenie skonsolidowanych raportów finansowych dla różnych firm, używanie programu Excel do importowania danych konsolidacji z innych źródeł oraz przetłumaczenie kwot na dowolną liczbę walut raportowania bez konieczności uruchamiania procesu konsolidacji w Dynamics 365 Finance.
+>  Zalecamy użycie narzędzia Management Reporter dla Microsoft Microsoft Dynamics 365 Finance w celu połączenia wyników finansowych wielu firm w skonsolidowanym formacie. Program Management Reporter umożliwia tworzenie skonsolidowanych raportów finansowych dla różnych firm, używanie programu Excel do importowania danych konsolidacji z innych źródeł oraz przetłumaczenie kwot na dowolną liczbę walut raportowania bez konieczności uruchamiania procesu konsolidacji w Dynamics 365 Finance.
 
 ## <a name="map-subsidiary-main-accounts-to-consolidated-main-accounts"></a>Odwzorowanie kont głównych na konsolidowane konta główne
 

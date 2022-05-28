@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0a2c5dd0ce97f33f5f8b65c801fbc15dfc65e8d4
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 3880601b40ce8ec544a1976f7f0ac7391dab32e1
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065023"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8687540"
 ---
 # <a name="configure-integration-with-finance"></a>Konfigurowanie integracji z rozwiązaniem Finance
 
@@ -47,7 +46,7 @@ Rozwiązanie Z Human Resources do Finance oferuje następujące rodzaje synchron
 Rozwiązanie integracyjne wymaga następujących wersji modułu Human Resources i aplikacji Finance: 
 
 - Dynamics 365 Human Resources w tabeli Dataverse
-- Dynamics 365 Finance, wersja 7.2 lub nowsza
+- Dynamics 365 Finance w wersji 7.2 lub nowszej
 
 ## <a name="template-and-tasks"></a>Szablon i zadania
 

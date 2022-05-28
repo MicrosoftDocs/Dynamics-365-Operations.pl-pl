@@ -2,7 +2,7 @@
 title: Konfigurowanie środowiska oceny rozwiązania Dynamics 365 Commerce
 description: W tym temacie opisano sposób konfigurowania środowiska oceny aplikacji Microsoft Dynamics 365 Commerce po jego aprowizacji.
 author: psimolin
-ms.date: 12/10/2021
+ms.date: 05/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5883a6e68628d706fa19d7d23b68f17007c32890
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: d9738700ca495d54c91ad91aa9c5a3d32c95a5a5
+ms.sourcegitcommit: 4a973ac0e7af0176270a8070a96a52293567dfbf
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913734"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8747644"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurowanie środowiska oceny rozwiązania Dynamics 365 Commerce
 
@@ -39,7 +39,9 @@ Po zakończeniu kompleksowej aprowizacji środowiska oceny usługi Commerce wyko
 1. Wybierz swoje środowisko na liście.
 1. W obszarze informacji o środowisku po prawej stronie wybierz pozycję **Zaloguj do środowiska**. Nastąpi wysłanie do modułu Commerce Headquarter.
 1. Upewnij się, że wybrano firmę **USRT** w prawym górnym rogu.
-2. Przejdź do pozycji **Parametry Commerce > Konfigurowanie parametrów** i upewnij się, że istnieje wpis **ProductSearch.UseAzureSearch** ustawiony na **true**. Jeśli ten wpis nie istnieje, możesz dodać ten wpis i uruchomić pozycję **Baza danych kanału > Pełna synchronizacja** dla jednostki Commerce Scale Unit skojarzonej z witryną internetową eCommerce.
+1. Przejdź do pozycji **Parametry Commerce \> Konfigurowanie parametrów** i upewnij się, że istnieje wpis **ProductSearch.UseAzureSearch** ustawiony na **true**. Jeśli brakuje tego wpisu, możesz go dodać, ustawić wartość na **true**, a następnie wybrać **Baza danych kanałów \> Pełna synchronizacja danych** dla Commerce Scale Unit powiązanej z Twoją witryną handlu elektronicznego.
+1. Przejdź do **Handel detaliczny i inny \> Ustawienia Headquarters \> Harmonogram handlu \> Zainicjuj harmonogram handlu**. W menu **Inicjowanie harmonogramu handlu** upewnij się, że opcja **Usuń istniejącą konfigurację** jest ustawiona na wartość **Tak**, a następnie kliknij przycisk **OK**.
+1. Aby dodać kanały do modułu Commerce Scale Unit, przejdź do **Sprzedaż detaliczna i handel \> Konfiguracja centrali \> Harmonogram handlu \> Baza danych kanałów**, a następnie w lewym panelu wybierz moduł Commerce Scale Unit. Na skróconej karcie **kanału sprzedaży** detalicznej dodaj **sklep internetowy AW**, **sklep internetowy AW Business** i rozszerzone kanały **sklepu internetowego firmy Fabrikam**. Opcjonalnie można dodać sklepy sieci sprzedaży, jeśli będzie korzystać z aplikacji POS (na przykład **Seattle**, **San Francisco** i **San Jose**).
 
 Podczas wykonywania działań związanych z inicjowaniem obsługi administracyjnej w module Commerce Headquarter należy się upewnić, że firma **USRT** jest zawsze zaznaczona.
 
@@ -85,6 +87,7 @@ Aby rozpocząć konfigurowanie witryny oceny w usłudze Commerce, wykonaj nastę
 1. Wybierz wartość **en-us** jako język domyślny.
 1. Pozostaw niezmienioną wartość pola **Ścieżka**.
 1. Kliknij przycisk **OK**. Zostanie wyświetlona lista stron w witrynie.
+1. Powtórz kroki 2-7 dla witryny **AdventureWorks** (która jest mapowana do kanału **Sklep internetowy AW**) i witryny **AdventureWorks Biznes** (która jest mapowana do kanału **Sklep internetowy AW** Biznes). Jeśli pole **Ścieżka** dla witryny Fabrikam jest puste, należy dodać ścieżki dla tych dwóch witryn AdventureWorks (na przykład „aw” i „awbusiness”).
 
 ## <a name="enable-jobs"></a>Włącz zadania
 
@@ -149,6 +152,28 @@ Aby skonfigurować opcjonalne funkcje środowiska oceny usługi Commerce, zobacz
 
 > [!NOTE]
 > Środowiska oceniania handlu są wstępnie załadowane do dzierżawy Azure Active Directory (Azure AD) B2C (business-to-consumer) w celach demonstracyjnych. Konfigurowanie własnej dzierżawy Azure AD B2C nie jest wymagane w przypadku środowisk oceniania. Jeśli jednak środowisko oceniania jest konfigurowane w celu korzystania z własnej dzierżawy Azure AD, należy dodać ``https://login.commerce.dynamics.com/_msdyn365/authresp`` jako adres URL odpowiedzi w aplikacji Azure AD B2C za pośrednictwem Azure Portal.
+
+## <a name="troubleshooting"></a>Rozwiązywanie problemów
+
+### <a name="site-builder-channel-list-is-empty-when-configuring-site"></a>Lista kanałów konstruktora witryn jest pusta podczas konfigurowania witryny
+
+Jeśli kreator witryn nie wyświetla żadnych kanałów sklepu internetowego, w centrali upewnij się, że kanały zostały dodane do Commerce Scale Unit, jak opisano w sekcji [Zanim zaczniesz](#before-you-start) powyżej. Uruchom też **Zainicjuj harmonogram handlu** z wartością **Usuń istniejącą konfigurację** ustawioną na **Tak**.  Po wykonaniu tych kroków na stronie **Baza danych kanału** (**Sprzedaż detaliczna i handel \> Konfiguracja centrali \> Harmonogram handlu \> Baza danych kanałów**) uruchom zadanie **9999** na Commerce Scale Unit.
+
+### <a name="color-swatches-are-not-rendering-on-the-category-page-but-are-rendering-on-the-product-details-page-pdp-page"></a>Zmiany koloru nie są renderowaniem na stronie kategorii, lecz są renderowaniem na stronie szczegółów produktu (PDP)
+
+Aby zapewnić, że kolory i rozmiary można ulepszać, należy wykonać następujące kroki.
+
+1. W centrali wybierz kolejno opcje **Retail i Commerce \> Ustawienia kanału \> Kategorie kanału sprzedaży i atrybuty produktów**.
+1. W lewym okienku wybierz kanał sklepu internetowego, a następnie **Ustaw metadane atrybutu**.
+1. Ustaw w opcji **Pokaż atrybut kanału** wartość **Tak**, ustaw opcję **Może być wyszukany** na **wartość Tak**, a następnie wybierz opcję **Zapisz**. 
+1. Wróć na stronę kanału sklepu internetowego, a następnie wybierz pozycję **Publikowanie aktualizacji kanału**.
+1. Przejdź do **Sprzedaż detaliczna i handel \> Konfiguracja centrali \> Harmonogram handlu \> Baza danych kanałów** i uruchom zadanie **9999** w module Commerce Scale Unit.
+
+### <a name="business-features-dont-appear-to-be-turned-on-for-the-adventureworks-business-site"></a>Funkcje biznesowe nie są wyświetlane jako włączone dla witryny AdventureWorks biznesowej
+
+W centrali upewnij się, że kanał sklepu internetowego jest skonfigurowany z **Typem klienta** ustawionym na **B2B**. Jeśli **typem klienta** jest **B2C**, należy utworzyć nowy kanał, ponieważ nie można edytować istniejącego kanału. 
+
+Dane demonstracyjne dostarczone w wersji Commerce 10.0.26 i wcześniejszych zawierały błąd, który powodował, że kanał **Biznes AW online** był nieprawidłowo skonfigurowany. Rozwiązaniem jest utworzenie nowego kanału z tymi samymi ustawieniami i konfiguracjami z wyjątkiem **Typ klienta**, który powinien być ustawiony na **B2B**.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

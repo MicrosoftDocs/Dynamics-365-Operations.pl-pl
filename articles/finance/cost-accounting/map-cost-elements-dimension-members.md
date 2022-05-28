@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMDimension, CAMDimensionMember, CAMDimensionMapping
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 223234
 ms.assetid: 4c66a231-aed2-48b5-9727-b3eb4fe6e6aa
 ms.search.region: global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b9ac59f305afd55edfcfb3b47bf38ddd44d92a706904f55a069a6a9fc9050825
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7654f748fb0cfc70d76718f03a235c5d4d13a908
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728038"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735472"
 ---
 # <a name="map-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>Mapowanie elementów członkowskich wymiaru elementu kosztów na wspólny zestaw elementów członkowskich wymiaru
 
@@ -33,12 +33,12 @@ Jeśli pracujesz w globalnej firmie i musisz spełniać ustawowe wymagania księ
 ## <a name="map-cost-element-dimension-members-to-a-common-format"></a>Mapowanie elementów członkowskich wymiarów składników kosztów na wspólny format
 W poniższym przykładzie pokazano, jak kontroler kosztów może w module Rachunek kosztów utworzyć nowy wymiar składników kosztów, który mapuje elementy członkowskie wymiarów składników kosztów ze struktur amerykańskiego planu kont i francuskiego planu kont do wspólnego zestawu elementów członkowskich wymiarów składników kosztów. Następnie wspólnego zestawu elementów członkowskich wymiarów składników kosztów można używać do analizowania danych kosztów z dwóch firm w księdze rachunku kosztów.
 
-| Źródło: Amerykański plan kont                                          | Źródło: Francuski plan kont                                          | Nowy wspólny zestaw elementów członkowskich wymiarów składników kosztów                        |
-|-----------------------------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| Źródło: Amerykański plan kont          | Źródło: Francuski plan kont           | Nowy wspólny zestaw elementów członkowskich wymiarów składników kosztów                        |
+|------------------------------------|----------------------------------------------|-------------------------------------------------------------------------|
 | Elementy członkowskie wymiarów składników kosztów zaimportowane z amerykańskiego planu kont | Elementy członkowskie wymiarów składników kosztów zaimportowane z francuskiego planu kont | Mapowanie amerykańskich i francuskich elementów członkowskich wymiarów składników kosztów do wspólnego zestawu |
-| 5001: Sprzedaż                                                           | 5001: Sprzedaż i reklama                                               | 5000: Sprzedaż i reklama                                             |
-| 5030: Reklama                                                     | 6390: Zakup zapasów\*                                                    | 7000: Wydatki na sprzątanie                                                 |
-| 7001: Wydatki na sprzątanie                                               | 7001: Wydatki na podróże służbowe                                                      | 7001: Wydatki na podróżne służbowe                                                   |
+| 5001: Sprzedaż                   | 5001: Sprzedaż i reklama                      | 5000: Sprzedaż i reklama                               |
+| 5030: Reklama             | 6390: Zakup zapasów\*                          | 7000: Wydatki na sprzątanie                                   |
+| 7001: Wydatki na sprzątanie              | 7001: Wydatki na podróże służbowe                     | 7001: Wydatki na podróżne służbowe                                                   |
 
 \*Francuski element członkowski wymiaru składników kosztów Zakup zapasów nie jest mapowany.
 

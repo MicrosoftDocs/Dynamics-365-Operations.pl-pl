@@ -2,7 +2,7 @@
 title: Aktualizacje wymagane przepisami prawa
 description: Ten temat zawiera listę planowanych i udostępnionych aktualizacji wymaganych przepisami prawa dla Microsoft Dynamics 365 Finance.
 author: VStamberg
-ms.date: 01/20/2022
+ms.date: 04/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: vastrup
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 734a4abf4559d05b1f96bcfbde151b49bba8e827
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.openlocfilehash: 4e9a74f814e6ae93fd5c12b05c4fbd00ad503fca
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8649137"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711922"
 ---
 # <a name="regulatory-updates"></a>Aktualizacje wymogów prawnych
 
@@ -29,11 +29,11 @@ Aktualizacje wymagane przepisami prawa to funkcje implementowane w celu zachowan
 
 Firma Microsoft dokłada starań w celu wprowadzenia w życie nowych wymagań prawnych możliwie jak najszybciej. Rzeczywista data dostarczenia zależy od daty zawiadomienia o zmianie przepisów, dostępności szczegółów nowych wymagań, dostępności narzędzi do walidacji i rozmiaru oraz stopnia skomplikowania zmiany w prawie.
 
-Planujemy dostarczać aktualizacje wymagane przepisami prawa w jednej wersji aktualizacji usług udostępnionej w czasie pozwalającym klientom na uaktualnienie ich narzędzi, tak aby wszystko było gotowe w dniu wejścia w życie nowego przepisu (w przypadku zmian przepisów dot. transakcji) lub w terminie składania obowiązkowych raportów (w przypadku zmian prawa dotyczącego sprawozdawczości). Klienci i partnerzy mogą przeglądać nowe aktualizacje przepisów w programie Preview Early Adoption Program (PEAP).
+Planujemy dostarczać aktualizacje wymagane przepisami prawa w jednej wersji aktualizacji usług udostępnionej w czasie pozwalającym klientom na uaktualnienie ich narzędzi, tak aby wszystko było gotowe w dniu wejścia w życie nowego przepisu (w przypadku zmian przepisów dot. transakcji) lub w terminie składania obowiązkowych raportów (w przypadku zmian prawa dotyczącego sprawozdawczości). Klienci i partnerzy mogą zapoznać się z nowymi aktualizacjami przepisów w pakiecie zapoznawczym dołączonym do każdej aktualizacji usługi.
 
 W przypadku późnego ogłoszenia zmian, późnej dostępności szczegółów wymagań lub narzędzi do walidacji, albo w przypadku wyjątkowo obszernych i skomplikowanych zmian może nie być możliwe udostępnienie aktualizacji wymaganej przepisami prawa do dnia udostępnienia ogólnej comiesięcznej aktualizacji. W takich przypadkach aktualizacja wymagana przepisami prawa będzie rozsyłana jako poprawki dla odpowiednich dostępnych comiesięcznych aktualizacji.
 
-Aktualizacje dotyczące środków ustawowych, które zostały wydane w ramach comiesięcznych aktualizacji, są oznaczone wyłącznie jako wersja wydania. Aktualizacje dotyczące aktualizacji, które są dostarczane jako poprawki na gorąco lub w ramach wersji Preview, mogą być identyfikowane odpowiednio przez skróty HF i PEAP. 
+Aktualizacje dotyczące środków ustawowych, które zostały wydane w ramach comiesięcznych aktualizacji, są oznaczone wyłącznie jako wersja wydania. Aktualizacje dotyczące aktualizacji, które są dostarczane jako poprawki na gorąco lub w ramach wersji Preview, mogą być identyfikowane odpowiednio przez skróty HF i Wersja Zapoznawcza. 
 
 Aby uzyskać informacje o najnowszych planach w zakresie aktualizacji wymaganych przepisami prawa, zapoznaj się z poniższą tabelą.   
 

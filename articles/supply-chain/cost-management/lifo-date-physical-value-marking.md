@@ -1,7 +1,7 @@
 ---
 title: Data LIFO z wartością fizyczną i oznaczeniami
 description: Ostatnie przyszło, pierwsze wyszło na dzień (LIFO na dzień) to model magazynu oparty na metodzie LIFO. Rozchody zapasów są rozliczane w kolejności odwrotnej do odbierania towarów w magazynie, na podstawie daty transakcji magazynowej. W metodzie LIFO wg daty jeśli nie ma żadnego przyjęcia przed wydaniem, wydanie jest rozliczane względem dowolnego przyjęcia po dacie wydania. Kilka rozchodów tego samego dnia można rozliczyć w kolejności ostatni rozchód, ostatnie przyjęcie.
-author: AndersGirke
+author: JennySong-SH
 ms.date: 02/21/2022
 ms.topic: article
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
@@ -9,15 +9,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 51592
 ms.search.region: Global
-ms.author: aevengir
+ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f6f5f447724ace473bece3007a96c4b56e90a908
-ms.sourcegitcommit: addae271ddfc5a8b0721c23337f69916153db4cd
+ms.openlocfilehash: 8ca344e6ca81814e787046f6ece97625d035346d
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2022
-ms.locfileid: "8330283"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8671458"
 ---
 # <a name="lifo-date-with-physical-value-and-marking"></a>Data LIFO z wartością fizyczną i oznaczeniami
 

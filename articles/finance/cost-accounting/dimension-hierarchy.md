@@ -8,20 +8,20 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMDimensionHierarchy,
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 40ae7b61537cdcd1934056b9e289f342e96b57d3eebe5a6e713b2db91310ed9a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 852cfa536ed7e6985ce1f7de612b34e2a492ee07
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766987"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735090"
 ---
 # <a name="dimension-hierarchy"></a>Hierarchia wymiarów
 
@@ -203,13 +203,13 @@ Jeśli tworzysz raporty za pomocą programu Excel lub Power BI, eksportowanych j
 W poniższym przykładzie pokazano, jak hierarchia wymiarów może wyglądać w strukturze raportowania.
 
 | Hierarchia wymiarów obiektów kosztów — poziom 1 | Hierarchia wymiarów obiektów kosztów — poziom 2 | Hierarchia wymiarów obiektów kosztów — poziom 3 | Hierarchia wymiarów obiektów kosztów — poziom 4 | Hierarchia wymiarów obiektów kosztów — poziom 15 |
-|-------------------------------------------|-------------------------------------------|-------------------------------------------|-------------------------------------------|--------------------------------------------|
-| Organizacja                              | Administrator                                     | Finanse                                   | CC002                                     |                                            |
-| Organizacja                              | Administrator                                     | Finanse                                   | CC003                                     |                                            |
-| Organizacja                              | Administrator                                     | Finanse                                   | CC007                                     |                                            |
-| Organizacja                              | Administrator                                     | Zasoby ludzkie                                        | CC001                                     |                                            |
-| Organizacja                              | Produkcja                                | Opakowanie                                 | CC005                                     |                                            |
-| Organizacja                              | Produkcja                                | Zestaw                                  | CC006                                     |                                            |
+|----------------------------------|---------------------------------|-------------------------|-------------------------|----------------------------------------|
+| Organizacja              | Administrator                 | Finanse                    | CC002              |                                            |
+| Organizacja              | Administrator                 | Finanse                    | CC003              |                                            |
+| Organizacja              | Administrator               | Finanse                     | CC007               |                                            |
+| Organizacja              | Administrator                | Zasoby ludzkie                           | CC001              |                                            |
+| Organizacja              | Produkcja           | Opakowanie                    | CC005             |                                            |
+| Organizacja              | Produkcja          | Zestaw                      | CC006            |                                            |
 
 ### <a name="update-the-dimension-hierarchies-that-are-used-for-reporting"></a>Aktualizacja hierarchie wymiarów używanych do raportowania 
 
@@ -328,7 +328,7 @@ Ustawienia hierarchii list dostępu umożliwiają kontrolowanie danych, które s
 - Power BI:
 
     - Dane wyświetlane w wizualizacjach programu Power BI
-    - Wizualizacje danych w rozwiązaniu Power BI osadzone w Dynamics 365 Finance, wersja kliencka
+    - Wizualizacje danych w rozwiązaniu Power BI osadzone w kliencie Dynamics 365 Finance
 
 > [!NOTE] 
 > - Aby hierarchia list dostępu mogła wpływać na dane w programie Power BI, należy w tym programie sparować hierarchię list dostępu i zabezpieczenia na poziomie wiersza w programie Power BI. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zabezpieczeń pakietu zawartości Rachunek kosztów](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).

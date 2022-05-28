@@ -1,6 +1,6 @@
 ---
-title: Określ kurs krzyżowy
-description: Ten temat zawiera informacje o kursach krzyżowych w Microsoft Dynamics 365 Finance.
+title: Określanie kursu krzyżowego
+description: Ten temat zawiera informacje o kursach krzyżowych w Microsoft Microsoft Dynamics 365 Finance.
 author: abruer
 ms.date: 05/16/2018
 ms.topic: article
@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c46ac3324a985810ede61072190014538d0b7ed36f7eedfc387468619cc88cb2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ed1db707cf6aed7c9def76ebbbdef7032b8776b6
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737024"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735298"
 ---
-# <a name="specify-the-cross-rate"></a>Określ kurs krzyżowy
+# <a name="specify-the-cross-rate"></a>Określanie kursu krzyżowego
 
 [!include [banner](../includes/banner.md)]
 

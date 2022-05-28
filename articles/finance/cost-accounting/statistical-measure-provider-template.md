@@ -1,6 +1,6 @@
 ---
 title: Szablony dostawców dla członków wymiaru statystycznego i dostawców miar
-description: Ten temat zawiera informacje o elementach członkowskich wymiaru statystycznego i szablonach dostawców miar statystycznych. Elementy członkowskie wymiaru statystycznego mogą służyć jako podstawa alokacji w zasadach, na przykład dystrybucji kosztów i alokacji kosztów. Mogą być również używane do raportowania zużycia kosztów niepieniężnych.
+description: Ten temat zawiera informacje o elementach członkowskich wymiaru statystycznego i szablonach dostawców miar statystycznych.
 author: AndersGirke
 ms.date: 06/16/2017
 ms.topic: article
@@ -8,20 +8,20 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMCostAccountingLedgerSourceEntryProvider, CAMStatisticalDimension, CAMAXStatisticalMeasureProviderTemplate, CAMAXStatisticalMeasureProviderConfiguration, CAMStatisticalDimensionMember, CAMDataConnectorStatisticalMeasure, CAMImportedStatisticalMeasure, CAMImportedStatisticalMeasureProviderConfiguration
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c79451a5145a6e419ae0e332c67f06ca2df65996f959333a508dbf62dbf435ff
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5daac80fdc62fb996be82aa4c8bb7bb3c8dc03e9
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767654"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8733914"
 ---
 # <a name="provider-templates-for-statistical-dimension-members-and-measure-providers"></a>Szablony dostawców dla członków wymiaru statystycznego i dostawców miar
 
@@ -128,13 +128,13 @@ Zanim będzie można pobrać miary statystyczne do modułu Rachunek kosztów, na
 > [!NOTE]
 > W tym przykładzie zostanie utworzona relacja tylko wersji **Wersja rzeczywista**.
 
-Przejdź do okna **Księga rachunku kosztów** \> **Wersja rzeczywista** \> **Zarządzaj** \> **Miary statystyczne** i ustanów relację. W tym scenariuszu zaznacz łącznik danych **Dynamics 365 Finance — Miary statystyczne**, ponieważ chcemy wyodrębnić dane z aplikacji Finance.
+Przejdź do okna **Księga rachunku kosztów** \> **Wersja rzeczywista** \> **Zarządzaj** \> **Miary statystyczne** i ustanów relację. W tym scenariuszu zaznacz łącznik danych **Dynamics 365 Finance — Miary statystyczne**, ponieważ chcemy wyodrębnić dane z programu Finance.
 
 **Źródło danych**
 
 | Nazwisko        | Łącznik danych                                                                     | Element członkowski wymiaru statystycznego |
 |-------------|------------------------------------------------------------------------------------|------------------------------|
-| Pracownicy pełnoetatowi D365FO | Dynamics 365 Finance — Miary statystyczne | Pracownicy pełnoetatowi                         |
+| Pracownicy pełnoetatowi D365FO | Dynamics 365 Finance — miary statystyczne | Pracownicy pełnoetatowi                         |
 
 **Konfiguracja dostawcy danych**
 
@@ -216,13 +216,13 @@ Zanim będzie można pobrać miary statystyczne do modułu Rachunek kosztów, na
 > [!NOTE]
 > W tym przykładzie zostanie utworzona relacja tylko wersji **Wersja rzeczywista**.
 
-Przejdź do okna **Księga rachunku kosztów** \> **Wersja rzeczywista** \> **Zarządzaj** \> **Miary statystyczne** i ustanów relację. W tym scenariuszu zaznacz łącznik danych **Dynamics 365 Finance — Miary statystyczne**, ponieważ chcemy wyodrębnić dane z aplikacji Finance.
+Przejdź do okna **Księga rachunku kosztów** \> **Wersja rzeczywista** \> **Zarządzaj** \> **Miary statystyczne** i ustanów relację. W tym scenariuszu zaznacz łącznik danych **Dynamics 365 Finance — Miary statystyczne**, ponieważ chcemy wyodrębnić dane z programu Finance.
 
 **Źródło danych**
 
 | Nazwisko           | Łącznik danych                                                                     | Element członkowski wymiaru statystycznego |
 |----------------|------------------------------------------------------------------------------------|------------------------------|
-| Pack CC D365FO | Dynamics 365 Finance — Miary statystyczne | Pack CC                      |
+| Pack CC D365FO | Dynamics 365 Finance — miary statystyczne | Pack CC                      |
 
 System rozpoznaje, że ProdRouteTrans jest tabelą, w której każdy rekord należy do osobnej firmy. W związku z tym zobaczysz monit o wybór firmy, z której powinny zostać zaimportowane transakcje.
 

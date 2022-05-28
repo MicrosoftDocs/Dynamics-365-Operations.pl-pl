@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-04-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fadad34be31f6522654bc3af47a4f71695dcc5fea7f0b3e760ff26d79d88eb4c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6734069b1448999c62a8c538f97d786fc10995e5
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722518"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8685750"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-19-2021"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources 19 kwietnia 2021
 
@@ -42,7 +41,7 @@ W tym wydaniu są zazwyczaj dostępne następujące funkcje.
 
 | Funkcja | Plan wydań | Dokumentacja |
 | --- | --- | --- |
-| Aktualizacja Platform Update 10.0.17 (41) | -- | [Aktualizacje platformy dla wersji 10.0.17 aplikacji Finance and Operations (kwiecień 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md) |
+| Aktualizacja Platform Update 10.0.17 (41) | -- | [Aktualizacje platformy dla wersji 10.0.17 aplikacji finansowych i operacyjnych (kwiecień 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md) |
 | Obsługa pól niestandardowych w formularzach zarządzania świadczeniami | [Obsługa pól niestandardowych w zarządzaniu świadczeniami](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-benefits-management)| [Omówienie zarządzania świadczeniami](hr-benefits-management-overview.md)|
 
 ### <a name="bug-fixes"></a>Poprawki błędów
@@ -78,7 +77,7 @@ Następujące nowe funkcje są dostępne w wersji zapoznawczej. Aby uzyskać inf
 | Funkcja | Szczegóły |
 | --- | --- |
 | Umiejętności wprowadzone przez menedżera dla swoich pracowników mogą być automatycznie zatwierdzane w przepływie pracy | Wkrótce. |
-| Aktualizacja Platform Update 10.0.18 (42) | Aktualizacja platformy z 10.0.18 ma się rozpocząć w następnym wydaniu serwisowym w dniu 17 maja 2021. Aby uzyskać więcej informacji, zobacz temat [Aktualizacje platformy dla wersji 10.0.18 aplikacji Finance and Operations (maj 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18). |
+| Aktualizacja Platform Update 10.0.18 (42) | Aktualizacja platformy z 10.0.18 ma się rozpocząć w następnym wydaniu serwisowym w dniu 17 maja 2021. Aby uzyskać więcej informacji, zobacz temat [Aktualizacje platformy dla wersji 10.0.18 aplikacji Finanse i Działania (maj 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18). |
 | Obsługa pól niestandardowych w regułach uprawnień zarządzania świadczeniami  | [Obsługa pól niestandardowych na potrzeby przetwarzania uprawnień](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-eligibility-processing) |
 
 Aby uzyskać pełną listę zaplanowanych funkcji i ich zaplanowanych wersji, zajrzyj do [omówienia Dynamics 365 Human Resources 2021 wydanie 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).

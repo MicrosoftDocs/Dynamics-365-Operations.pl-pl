@@ -3,7 +3,7 @@ title: Moduł wyboru sklepu
 description: W tym temacie opisano moduł wyboru sklepu i opisano, jak dodać go do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 07/08/2021
+ms.date: 05/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0ee9d3cec9c524f73472929052d46d87f8270ba67568314eceb462b1803cf149
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7276f25daada8286490ad7e1af2b350e4a2805bb
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772163"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710787"
 ---
 # <a name="store-selector-module"></a>Moduł wyboru sklepu
 
@@ -59,6 +59,16 @@ Aby wprowadzić wartości szerokości i długości geograficznej dla lokalizacji
     ![Przykład konfiguracji szerokości geograficznej i długości geograficznej dla sklepu w centrali.](./media/Store-latitude-longitude.png)
 
 1. Na okienku akcji wybierz opcję **Zapisz**. 
+
+### <a name="hide-a-store-from-the-store-selector-module"></a>Ukryj sklep z modułu selektora sklepu
+
+Niektóre sklepy w grupie realizacji mogą nie być prawidłowymi lokalizacjami pobrania. Aby zagwarantować, że w module selektora sklepu będą widoczne tylko prawidłowe lokalizacje pobrania, należy wykonać następujące kroki w programie Commerce Headquarters.
+
+1. Przejdź do opcji **Sprzedaż detaliczna i handel \> Ustawienia handlu \> Grupy realizacji \> Wszystkie sklepy**.
+1. W okienku akcji wybierz pozycję **Edytuj**.
+1. W **obszarze** Ustawienia dla każdego sklepu, który nie jest prawidłową lokalizacją pobrania, wyczyść **pole wyboru Jest lokalizacją** pobrania.
+1. Na okienku akcji wybierz opcję **Zapisz**.
+1. Uruchom **harmonogram dystrybucji** 1070 (Konfiguracja kanału).
 
 ## <a name="bing-maps-integration"></a>Integracja z mapami Bing
 

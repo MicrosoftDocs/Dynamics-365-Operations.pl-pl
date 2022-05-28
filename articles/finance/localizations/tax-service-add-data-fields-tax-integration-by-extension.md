@@ -9,18 +9,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 79b51812eac354072ebf2a0ef6fe8d39610c6385
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.openlocfilehash: 64c68ef6804297f86b5d9dc1933b0c16a0d42aae
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8649109"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8695396"
 ---
 # <a name="add-data-fields-in-the-tax-integration-by-using-extension"></a>Dodawanie pól danych w integracji podatków przy użyciu rozszerzeń
 
@@ -383,7 +382,7 @@ Aby pomyślnie skompilować projekt, dodaj następujące modele odwołania do za
 
 Po ukończeniu poprzednich kroków możesz sprawdzić poprawność wprowadzonych zmian.
 
-1. W polu Finanse przejdź do **rozrachunków z dostawcami** i dodaj wartość **&debug=vs%2CconfirmExit&** do adresu URL. Na przykład https://usnconeboxax1aos.cloud.onebox.dynamics.com/?cmp=DEMF&mi=PurchTableListPage&debug=vs%2CconfirmExit&. Ostateczna **&** jest podstawowa.
+1. W polu Finanse przejdź do **rozrachunków z dostawcami** i dodaj wartość **&debug=vs%2CconfirmExit&** do adresu URL. Na przykład `https://usnconeboxax1aos.cloud.onebox.dynamics.com/?cmp=DEMF&mi=PurchTableListPage&debug=vs%2CconfirmExit&`. Ostateczna **&** jest podstawowa.
 2. Otwórz stronę **Zamówienie zakupu** i wybierz **Nowość**, aby utworzyć zamówienie zakupu.
 3. Ustaw wartość niestandardowego pola, a następnie wybierz opcję **Podatek**. Plik rozwiązywania problemów z prefiksem **TaxServiceTroubleshootingLog** jest pobierany automatycznie. Ten plik zawiera informacje o transakcjach zaksięgowane w usłudze obliczania podatku. 
 4. Sprawdź, czy dodane pole niestandardowe znajduje się w sekcji **Dane wejściowe obliczenia usługi podatkowej JSON** i czy jego wartość jest poprawna. Jeśli wartość jest błędna, sprawdź dwukrotnie kroki w tym dokumencie.

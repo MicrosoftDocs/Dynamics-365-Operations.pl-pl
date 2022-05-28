@@ -9,18 +9,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 2f68a3d7ed4384fe5a97f1e59903e3191df6b741
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: d95ea6795dc5777bfd37f8fbb3ebc47f2db337a0
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647720"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8689222"
 ---
 # <a name="tax-feature-support-for-transfer-orders"></a>Obsługa funkcji podatków dla zamówień przeniesienia
 
@@ -31,7 +30,7 @@ Ten temat zawiera informacje dotyczące obliczania podatku i księgowania integr
 Aby skonfigurować i korzystać z tej funkcji, musisz wykonać trzy główne kroki:
 
 1. **Ustawienia usługi RCS:** W usłudze konfiguracji wymogów prawnych skonfiguruj funkcję podatków, kody podatków i kody podatków, które mogą być aplikacyjne do określania kodów podatków w zamówieniach przeniesienia.
-2. **Ustawienia Dynamics 365 Finance:**: W Finance włącz funkcję **Podatek w zamówieniu przeniesienia**, skonfiguruj parametry usługi podatkowej dla zapasów i skonfiguruj podstawowe parametry podatku.
+2. **Dynamics 365 Finance - ustawienia:** : W Finance włącz funkcję **Podatek w zamówieniu przeniesienia**, skonfiguruj parametry usługi podatkowej dla zapasów i skonfiguruj podstawowe parametry podatku.
 3. **Konfiguracja zapasów:** konfigurowanie konfiguracji zapasów dla transakcji zamówienia przeniesienia.
 
 ## <a name="set-up-rcs-for-tax-and-transfer-order-transactions"></a>Konfigurowanie RCS dla transakcji zamówień podatku i przeniesienia

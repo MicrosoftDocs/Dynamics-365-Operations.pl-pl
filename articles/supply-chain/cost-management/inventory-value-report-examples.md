@@ -1,22 +1,22 @@
 ---
 title: Przykłady i logika raportu wartości zapasów
 description: Ten temat zawiera kilka przykładów wyników, które są prezentowane w każdym typie raportu o wartości zapasów. Raporty wartości zapasów zawierają szczegółowe informacje dotyczące ilości i kwot fizycznych oraz finansowych zapasów.
-author: banluo-ms
+author: JennySong-SH
 ms.date: 10/19/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: banluo
+ms.author: yanansong
 ms.search.validFrom: 2021-10-19
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 4ad85058c8743895185d3da2e8975711f1e3bc2c
-ms.sourcegitcommit: ba10ba2cd4fb4267afb5aacae4f6a52aa2456e7e
+ms.openlocfilehash: 0d594fc18a104c434a334a5b6d1d249330a6be9a
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "7798396"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8675327"
 ---
 # <a name="inventory-value-report-examples-and-logic"></a>Przykłady i logika raportu wartości zapasów
 

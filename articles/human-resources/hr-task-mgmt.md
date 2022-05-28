@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-29-11
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 727e1eb75f807d84f088cf3dd139eb094aa76618
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: ae453bd57217f272038decc7e40ed373f618ae03
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087224"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710230"
 ---
 # <a name="task-management"></a>Zarządzanie zadaniami
 
@@ -57,18 +56,14 @@ Zakładka **Offboarding** zawiera listę pracowników, którzy odchodzą z firmy
 Zakładka **Przejścia** zawiera listę **Wszystkich zadań**, która pokazuje wszystkie zadania dla wszystkich pracowników, którzy będą zmieniać pozycje lub którzy ostatnio je zmieniali. Znajduje się tam również lista zadań zaległych oraz lista zadań, które są przypisane do danego użytkownika.
 
 Na wszystkich trzech zakładkach asystenci i menedżerowie HR mogą wykonywać następujące czynności:
-
-- Zastosuj listę kontrolną wobec pracownika.
-- Aktualizowanie stanu zadania.
-- Przydziel ponownie zadanie.
-- Zaktualizuj termin wykonania zadania.
+- Zastosuj listę kontrolną wobec pracownika
+- Aktualizowanie stanu zadania
+- Przydziel ponownie zadanie
+- Zaktualizuj termin wykonania zadania
 
 > [!NOTE]
 > Domyślnie zakładka **Onboarding** pokazuje pracowników, którzy zostali zatrudnieni w ciągu ostatnich siedmiu dni. Aby zmienić to ustawienie, na stronie **Parametry zasobów ludzkich**, w zakładce **Ogólne**, w polu **Ostatnie zatrudnienia** wpisz przedział czasowy. Informacje w liście **Ostatnio zatrudnieni** mogą być wyświetlane dla określonej liczby dni, miesięcy lub lat. Na przykład, aby wyświetlić listę pracowników, którzy byli zatrudnieni w ciągu ostatnich 14 dni, ustaw w polu **Okres** wartość **14**, a w polu **Jednostka** wartość **Dni**.
->
-> Na stronie **Parametry zasobów ludzkich** możesz również zaktualizować zakres dat dla list wychodzących i odchodzących pracowników, które są widoczne w zakładce **Offboarding**.
->
-> Te ustawienia dotyczą również obszaru roboczego **Zarządzanie personelem**.
+> Na stronie **Parametry zasobów ludzkich** możesz również zaktualizować zakres dat dla list wychodzących i odchodzących pracowników, które są widoczne w zakładce **Zwalnianie z pracy**. Te ustawienia dotyczą również obszaru roboczego **Zarządzanie personelem**.
 
 ## <a name="setting-up-tasks"></a>Ustawianie zadań
 
@@ -188,6 +183,13 @@ Możesz również zastosować listę kontrolną do pracownika, otwierając jego 
 ## <a name="completing-tasks"></a>Wykonanie zadania
 
 Na stronie **Samoobsługa pracownika** pracownik może zobaczyć wszystkie zadania, które są mu przypisane. Dla każdego przydzielonego zadania wyświetlane są wartości **Zadanie**, **Opis**, **Instrukcje** oraz **Osoba kontaktowa**. Dodatkowo, dla każdego zadania pracownik może otworzyć powiązaną stronę zewnętrzną lub powiązaną stronę w aplikacji Dynamics 365.
+
+Zadania mogą być również wyświetlane na domyślnym pulpicie nawigacyjnym. Aby wyświetlić zadania na domyślnym pulpicie nawigacyjnym:
+1. Przejdź do **opcji użytkownika — preferencje – zarządzanie zadaniami** 
+2. Wybierz **Wyświetl zadania na domyślnym panelu** na **Wł**.  
+
+>[!Note] 
+>Funkcja **Zarządzanie zadaniami** musi być włączona w **Zarządzaniu funkcjami**, aby opcja była wyświetlana w **Opcjach użytkownika**.
 
 Zadania mogą być oznaczone jako **w toku**, **anulowane** lub **ukończone**. Jeśli zadanie było przypisane do grupy, zostaje ono oznaczone jako **Zrealizowane**, gdy jedna osoba z grupy je wykona.
 

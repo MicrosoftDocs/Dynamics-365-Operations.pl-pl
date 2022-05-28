@@ -1,7 +1,7 @@
 ---
 title: Konfigurowanie kont odbiorców
 description: W tym temacie opisano typy informacji, które należy wprowadzić podczas tworzenia nowego konta dostawcy.
-author: Henrikan
+author: GalynaFedorova
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 191053
 ms.assetid: 06168199-7c54-40e9-a038-4eb274ca958d
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b9cbfd3a3c1afd794814bbbae07e1dc31eb9f181
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5d524ff99cba733fdd607d9708abba440248d6cc
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565478"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8676982"
 ---
 # <a name="set-up-vendor-accounts"></a>Konfigurowanie kont odbiorców
 
@@ -63,7 +63,7 @@ Kontakty dostawców można tworzyć od podstaw. Alternatywnie można skopiować 
 
 Nie można usunąć rekordu osoby kontaktowej, jeżeli istnieje odwołanie do niej w dokumencie. Zamiast tego można zdezaktywować kontakt.  
 
-Osoby kontaktowe dostawcy można dodać do kontaktów osobistych w usłudze Microsoft 365. Jednakże najpierw należy skonfigurować synchronizację między Supply Chain Management a usługą Microsoft 365 w ustawieniach synchronizacji Microsoft Exchange Server oraz w kreatorze instalacji Microsoft Outlook.
+Osoby kontaktowe dostawcy można dodać do kontaktów osobistych w usłudze Microsoft 365. Jednakże najpierw należy skonfigurować synchronizację między Supply Chain Management a usługą Microsoft 365 w ustawieniach synchronizacji programu Microsoft Exchange Server oraz w kreatorze instalacji programu Microsoft Outlook.
 
 ## <a name="vendors-in-different-legal-entities"></a>Dostawcy w różnych firmach
 Jeśli dostawca jest zarejestrowany tylko dla jednej firmy w organizacji, a inne firmy muszą zarejestrować tego samego dostawcę, można użyć strony **Dodawanie dostawcy do innej firmy**, aby skonfigurować dostawcę do współpracy z inną firmą. Należy wybrać grupę dostawców, walutę i stan wstrzymania dla dostawcy w wybranej firmie.  

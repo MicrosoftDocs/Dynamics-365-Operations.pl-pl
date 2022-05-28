@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a14e485d1e02247159e1d9eb1c5d81be37626216
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d206654dcb7964ac2ed9aa9ccf7cec709e1bd38c
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580511"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8689686"
 ---
 # <a name="price-simulation"></a>Symulacja ceny
 
@@ -32,7 +32,8 @@ Symulacja ceny oferty zawiera nową łączną kwotą, opartą na proponowanej no
 
 Symulacja ceny nie powoduje zmiany ceny w ofercie. Symulacja ceny jest stosowana do całej oferty, jest traktowana jako specjalny rabat w nagłówku oferty. Symulacja ceny jest stosowana do określonych towarów, jest traktowana jako specjalny rabat w wierszach oferty. Cena jednostkowa sprzedaży w utworzonym wierszu sprzedaży nie ulega zmianie po wprowadzeniu symulacji cen. Zamiast tego jest wprowadzany rabat o określonej procentowo wartości, odpowiadający obniżce ceny w wierszu oferty. Po przeprowadzeniu symulacji cen, jednostkowe ceny sprzedaży i rabaty procentowe są transferowane do wiersza oferty lub nagłówka oferty.  
 
->[Uwaga] Podczas wykonywania symulacji cen pod uwagę jest brana tylko bieżąca waluta sprzedaży. Natomiast podczas przeglądania wartości ofert jest widoczna zarówno waluta sprzedaży, jak i waluta podstawowa dla w firmy.  
+>[!NOTE]
+>Podczas wykonywania symulacji cen pod uwagę jest brana tylko bieżąca waluta sprzedaży. Natomiast podczas przeglądania wartości ofert jest widoczna zarówno waluta sprzedaży, jak i waluta podstawowa dla w firmy.  
 
 Dodatkowe towary, które powinny zostać dodane do wierszy oferty mogą uruchamiać rabaty wiersza lub rabaty wspólne. Mogą wywoływać rabat końcowy, co skutkuje zmianą marży pokrycia i współczynników marży dla wierszy oferty i rabatem całościowym.  
 

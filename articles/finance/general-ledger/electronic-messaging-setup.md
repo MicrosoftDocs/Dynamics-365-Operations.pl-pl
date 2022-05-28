@@ -7,17 +7,17 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: ''
+ms.reviewer: kfend
 ms.search.region: Global
 ms.author: elgolu
 ms.search.validFrom: 2021-06-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: a9d623c712de34afd1b38dbc6a8738ebf9613d49
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: 652d8684473d1c1505a80eb1d860c57a214b9488
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860565"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734227"
 ---
 # <a name="set-up-electronic-messages"></a>Ustawianie wiadomości elektronicznych
 
@@ -72,7 +72,7 @@ W poniższej tabeli opisano pola znajdujące się na stronie **Stany wiadomości
 
 ## <a name="additional-fields"></a><a id="additional"></a>Dodatkowe pola
 
-Funkcja EM umożliwia zbieranie rekordów z tabel transakcyjnych w Microsoft Dynamics 365 Finance jako elementów wiadomości. W ten sposób można przygotować rekordy do raportowania i je raportować. Jednak tabele transakcji czasami nie mają wystarczających informacji, aby wypełnić rekordy w sposób, który spełnia wymagania dotyczące raportowania. Możesz wypełnić wszystkie informacje, które muszą zostać przekazane dla rekordu, ustawiając dodatkowe pola. Dodatkowe pola mogą być skojarzone z wiadomościami i elementami wiadomości. Można skonfigurować dodatkowe pola, przechodząc do **Podatek** \> **Ustawienia** \> **Wiadomości elektroniczne** \> **Dodatkowe pola**.
+Funkcja EM umożliwia zbieranie rekordów z tabel transakcyjnych w Microsoft Microsoft Dynamics 365 Finance jako elementów wiadomości. W ten sposób można przygotować rekordy do raportowania i je raportować. Jednak tabele transakcji czasami nie mają wystarczających informacji, aby wypełnić rekordy w sposób, który spełnia wymagania dotyczące raportowania. Możesz wypełnić wszystkie informacje, które muszą zostać przekazane dla rekordu, ustawiając dodatkowe pola. Dodatkowe pola mogą być skojarzone z wiadomościami i elementami wiadomości. Można skonfigurować dodatkowe pola, przechodząc do **Podatek** \> **Ustawienia** \> **Wiadomości elektroniczne** \> **Dodatkowe pola**.
 
 W poniższej tabeli opisano ogólne pola znajdujące się na stronie **Dodatkowe pola**.
 

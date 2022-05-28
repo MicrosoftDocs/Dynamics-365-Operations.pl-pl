@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 206c7f590b495278b7899271db0e83b3a4da3edc
-ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
+ms.openlocfilehash: 3cf83421d5385e3c95dfda6db35edfb8eb4b9336
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "7641437"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8695768"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-5-2021"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources 5 października 2021 r.
 
@@ -42,7 +41,7 @@ W tym wydaniu są zazwyczaj dostępne następujące funkcje.
 
 | Funkcja | Plan wydań | Dokumentacja |
 |---|---|---|
-| Aktualizacja Platform Update 10.0.21 (45) | -- | [Aktualizacje platformy dla wersji 10.0.21 aplikacji Finance and Operations (październik 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21) |
+| Aktualizacja Platform Update 10.0.21 (45) | -- | [Aktualizacje platformy dla wersji 10.0.21 aplikacji finansowych i operacyjnych (październik 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21) |
 
 
 ### <a name="bug-fixes"></a>Poprawki błędów
@@ -87,7 +86,7 @@ Aby uzyskać pełną listę zaplanowanych funkcji i ich zaplanowanych wersji, za
 
 | Funkcja | Szczegóły |
 |---|---|
-| Aktualizacja Platform Update 10.0.22 (46) | Publikacja aktualizacji platformy 10.0.22 ma się rozpocząć w następnym wydaniu serwisowym w dniu 1 listopada 2021 r. Aby uzyskać więcej informacji, zobacz temat [Aktualizacje platformy dla wersji 10.0.22 aplikacji Finance and Operations (listopad 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22). |
+| Aktualizacja Platform Update 10.0.22 (46) | Publikacja aktualizacji platformy 10.0.22 ma się rozpocząć w następnym wydaniu serwisowym w dniu 1 listopada 2021 r. Aby uzyskać więcej informacji, zobacz temat [Aktualizacje platformy dla wersji 10.0.22 aplikacji finansowych i operacyjnych (listopad 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22). |
 
 
 

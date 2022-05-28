@@ -1,7 +1,7 @@
 ---
 title: Wyświetlanie opłat związanych z wytworzonym towarem
 description: Stałe koszty wytworzonego towaru odzwierciedlają czas przezbrajania dla danej operacji oraz składniki o stałej ilości lub stałą ilość odpadków.
-author: AndersGirke
+author: JennySong-SH
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 274483
 ms.assetid: 6f5b851b-c5a7-43ef-b380-0d316667c1ef
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: aevengir
+ms.author: yanansong
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: dbce06f554a5c2cf3a52d1a508c1391882af44b8
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f97495488dbbe504a5e79ef7f65fa97eb287d17b
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575975"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8675439"
 ---
 # <a name="display-charges-for-a-manufactured-item"></a>Wyświetlanie opłat związanych z wytworzonym towarem
 
