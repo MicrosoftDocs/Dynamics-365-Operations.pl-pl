@@ -2,7 +2,7 @@
 title: Standardowy plik audytu (SAF) dla Polski
 description: Użytkownicy w firmach w Polsce mogą generować standardowe plik audytu dla podatku (SAF-T) w formacie XML. Ten temat zawiera informacje o formatach dla Polski.
 author: LizaGolub
-ms.date: 02/05/2021
+ms.date: 05/19/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Poland
 ms.author: kfend
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 143841deea85aff8b75e8adcd57b99f87acd47accb0212cf771ed8e78d70c666
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fe24453803cde4e6d80876937fe4c665ae3fed2e
+ms.sourcegitcommit: 6c1bf233748c4bc70fc5a1a9711758cdfd9e07dc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733597"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8782237"
 ---
 # <a name="standard-audit-file-saf-for-poland"></a>Standardowy plik audytu (SAF) dla Polski
 
@@ -28,7 +28,11 @@ ms.locfileid: "6733597"
 
 Użytkownicy w firmach w Polsce mogą generować standardowe plik audytu dla podatku (SAF-T) w formacie XML. Ten temat zawiera informacje o formatach dla Polski. 
 
-Użytkownicy w firmach w Polsce mogą generować standardowe plik audytu dla podatku (SAF-T) w formacie XML. Ten dokument zawiera informacje o formatach dla Polski. Niniejszy dokument odnosi się do funkcji, która nie została jeszcze wdrożona.
+-  [Księgi księgowania SAF – JPK_KR](#jpk-kr)
+-  [Wyciąg bankowy SAF - JPK_WB](#jpk-wb)
+-  [Magazyn SAF - JPK_MAG](#jpk-mag)
+-  [Ewidencje zakupu i sprzedaży SAF - JPK_VAT](#jpk-vat)
+-  [Faktury VAT SAF - JPK_FA](#jpk-fa)
 
 ## <a name="set-up-the-standard-audit-file-for-tax-for-poland"></a>Konfigurowanie standardowego pliku audytu dla podatku dla Polski
 
@@ -51,7 +55,7 @@ Importowanie ostatniej wersji tych konfiguracji. Opis wersji zwykle zawiera nume
 
 Aby uzyskać więcej informacji na temat pobierania konfiguracji modułu ER z globalnego repozytorium Microsoft, zapoznaj się z tematem [Pobieranie konfiguracji ER z repozytorium globalnego](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
-## <a name="generate-a-saf-accounting-books-file"></a>Generowanie pliku ksiąg księgowania SAF
+## <a name="generate-a-saf-accounting-books-file-jpk_kr"></a><a id="jpk-kr"></a>Generowanie pliku ksiąg księgowania SAF (JPK_KR)
 
 Na żądanie należy podać plik ksiąg księgowania SAF. Plik musi zawierać dane księgowe dla okresu raportowania. Musi również obejmować wybrane warstwy księgowania dla wszystkich głównych rachunków, które mają niezerowy zagregowany obrót lub transakcje w okresie sprawozdawczym.
 
@@ -148,7 +152,7 @@ Pole **RodzajDowodu** w węźle **Dziennik** raportu musi reprezentować typ za�
 9. Jako ostatnie dwa wiersze dodaj wiersze z warunkami **Niepuste** i **Puste**.
 10. W polu **Stan** wybierz opcję **Zakończone**, a następnie zapisz konfigurację.
 
-## <a name="generate-a-saf-bank-statement-file"></a>Generowanie pliku wyciągu bankowego SAF
+## <a name="generate-a-saf-bank-statement-file-jpk_wb"></a><a id="jpk-wb"></a>Generowanie pliku wyciągu bankowego SAF (JPK_WB)
 
 Aby wygenerować plik wyciągu bankowego SAF, kliknij kolejno opcje **Księga główna > Zapytania i raporty > Standardowy plik audytu dla podatku (SAF-T) > Wyciąg bankowy SAF** i ustaw następujące parametry:
 
@@ -161,7 +165,7 @@ Aby wygenerować plik wyciągu bankowego SAF, kliknij kolejno opcje **Księga g�
 
 Plik **Wyciąg bankowy SAF** zawiera informacje o transakcjach zaksięgowanych w określonym przedziale czasu dla rachunku bankowego wybranego w oknie dialogowym raportu. Nazwa kontrahenta zgłoszona w elemencie **NazwaPodmiotu** jest pobierana od **Odbiorców** (**Rozrachunki z odbiorcami** > **Odbiorcy** > **Wszyscy odbiorcy**) i **Dostawców** (**Rozrachunki z dostawcami** > **Dostawcy** > **Wszyscy dostawcy**) danych głównych systemu zarejestrowanego w firmie w postaci, w jakiej są one powiązane z zaksięgowaną transakcją bankową. Opis operacji zgłoszony w elemencie **OpisOperacji** jest pobierany z pola **Opis** transakcji bankowej.
 
-## <a name="generate-a-saf-inventory-file"></a>Generowanie pliku zapasów SAF
+## <a name="generate-a-saf-inventory-file-jpk_mag"></a><a id="jpk-mag"></a>Generowanie pliku zapasów SAF (JPK_MAG)
 
 Aby wygenerować plik zapasów SAF, kliknij kolejno opcje **Księga główna > Zapytania i raporty > Standardowy plik audytu dla podatku (SAF-T) > Zapasy SAF** i ustaw następujące parametry:
 
@@ -172,7 +176,7 @@ Aby wygenerować plik zapasów SAF, kliknij kolejno opcje **Księga główna > Z
 | Identyfikacja urzędu | Na liście zaznacz identyfikator urzędu skarbowego, który ma być używany w pliku eksportu. |
 | Magazyn                | Określ magazyn, dla którego mają zostać wyeksportowane transakcje.                                  |
 
-## <a name="generate-a-saf-vat-sales-and-purchase-register"></a>Generowanie rejestru SAF sprzedaży i zakupów objętych podatkiem VAT
+## <a name="generate-a-saf-vat-sales-and-purchase-register-jpk_vat"></a><a id="jpk-vat"></a>Generowanie rejestru SAF sprzedaży i zakupów objętych podatkiem VAT (JPK_VAT)
 
 Zanim będzie można wygenerować rejestr SAF sprzedaży i zakupów objętych podatkiem od towarów i usług (VAT), należy wykonać następujące czynności konfiguracyjne.
 
@@ -443,6 +447,18 @@ W poniższej tabeli przedstawiono kody podatków i kody sprawozdawczości podatk
 <td>-</td>
 </tr>
 <tr>
+<td rowspan="2">SpecialProc-XII</td>
+<td>11303</td>
+<td>Podatek należny</td>
+<td>Nie dotyczy, tylko JPK_FA</td>
+<td>-</td>
+</tr>
+<tr>
+<td>11306</td>
+<td>Podatek od faktury korygującej sprzedaży</td>
+<td>Nie dotyczy, tylko JPK_FA</td>
+<td>-</td>
+</tr><tr>
 <td rowspan="4">ImportOfGoodsART33</td>
 <td>20207</td>
 <td>Import opodatkowany</td>
@@ -657,7 +673,7 @@ Aby wygenerować rejestr SAF sprzedaży i zakupów objętych podatkiem VAT, klik
 
 Dodatkowe parametry wyboru można określić za pomocą funkcji **Filtr** na karcie **Rekordy do uwzględnienia**.
 
-## <a name="generate-a-saf-vat-invoices-file"></a>Generowanie pliku faktur VAT SAF
+## <a name="generate-a-saf-vat-invoices-file-jpk_fa"></a><a id="jpk-fa"></a>Generowanie pliku faktur VAT SAF (JPK_FA)
 
 Aby można było wygenerować plik faktur VAT SAF, należy wykonać następujące czynności konfiguracyjne.
 
@@ -676,15 +692,15 @@ Począwszy od **128.60.76** ER **Faktury VAT (PL)**, muszą być włączone popr
     > [!NOTE]
     > Po włączeniu lub wyłączeniem **(Polska) Poprawa raportu Faktury SAF VAT (JPK_FA)** konfiguracja formatu ER w polu **Faktury VAT SAF** na stronie **Parametrów księgi głównej** zostanie wyczyszczona. Należy wypełnić pole **Faktury VAT SAF** w **Parametrach księgi głównej** przed uruchomieniem raportu **Faktur VAT SAF**. Po włączeniu funkcji **(Polska) Poprawa raportu Faktury SAF VAT (JPK_FA)** zaimportuj i użyj wersji 128.60.76 formatu ER **Faktur VAT (PL)**.
     
-2. Zaimportuj następujące elementy do obszaru roboczego raportowania elektronicznego:
-    - Format ER **Faktur VAT (PL)**: wersja **128.60.76** lub wyższa 
-    - **Standardowe mapowanie modelu pliku inspekcji**: wersja **128.255** lub wyższa
+2. Zaimportuj najnowsze wersje następujących konfiguracji ER do swojego obszaru roboczego raportowania elektronicznego:
+
+    - **Faktury VAT (PL)** Format ER 
+    - **Mapowanie modelu jednolitego pliku kontrolnego**
     
 3. Wybierz kolejno opcje **Księga główna** > **Ustawienia księgi** > **Parametry księgi głównej**.
 4. Na karcie **Jednolity plik audytu dla podatku (SAT-T)**, w polu **Faktury VAT SAF** wybierz format ER, **Faktury VAT (PL)**. 
     
 Jeśli jest włączona funkcja **(Polska) Poprawa raportu Faktury SAF VAT (JPK_FA)**, format ER **faktur VAT (PL)** będzie widać na liście tylko wtedy, gdy wcześniej zaimportowano wersję 128.60.76 lub nowszą z repozytorium globalnego.
-
 
 ### <a name="configure-the-er-model-and-format-for-the-report"></a>Konfigurowanie modelu i formatu raportowania elektronicznego dla raportu
 
@@ -694,7 +710,7 @@ Aby przejrzeć lub zmodyfikować konfigurację rejestru SAF sprzedaży i zakupó
 - [Pobieranie konfiguracji Raportowania elektronicznego z usługi Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 - [Wymagania dotyczące tłumaczenia — Tworzenie konfiguracji raportowania elektronicznego](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md)
 
-Początkowo konfiguracja jest przykładem rejestru VAT opartego na kodach raportowania opisanego w tabeli powyżej. Jeśli trzeba zaadaptować konfigurację do innego zestawu kodów raportowania, należy użyć konfiguracji, aby uzyskać format. 
+Początkowo konfiguracja jest przykładem raportu Faktury VAT (JPK_FA) opartego na kodach raportowania, które zostały opisane w tabeli we wcześniejszej części tego tematu. Jeśli musisz dostosować konfigurację do innego zestawu kodów raportujących, użyj konfiguracji, aby określić format. 
 
 1. Wybierz format w drzewie konfiguracji, a następnie w **Menu głównym** wybierz **Utwórz konfigurację**. 
 2. Oznacz **Pochodna od nazwy:...**, wprowadź nazwę i opis nowego formatu, a następnie wybierz opcję **Utwórz konfigurację**. Utworzony format jest kopią formatu nadrzędnego. 
@@ -708,18 +724,19 @@ Początkowo konfiguracja jest przykładem rejestru VAT opartego na kodach raport
 
 ### <a name="configure-application-specific-parameters-for-the-format-of-the-report"></a>Skonfiguruj parametry charakterystyczne dla aplikacji dla formatu raportu
 
-Aby poprawnie raportować niektóre z ważnych znaczników w raporcie, należy zdefiniować parametry właściwe dla aplikacji (dla wersji formatu **Faktur VAT (PL)**, począwszy od 48.36.58). 
+Aby poprawnie zgłaszać w raporcie niektóre z ważnych znaczników, zdefiniuj parametry specyficzne dla danej aplikacji. 
 
 1. Otwórz **Konfiguracje** \> **Parametry specyficzne dla aplikacji** w okienku akcji wybierz opcję **Konfiguracja**.
-2. Wybierz wersję formatu, który ma być używany (na przykład **48.36.58**), a następnie ustaw wartości dla każdego wyszukiwania na liście po prawej stronie.
+2. Wybierz wersję formatu, który ma być używany, a następnie ustaw wartości dla każdego wyszukiwania na liście po prawej stronie.
 
     | Imię i nazwisko            | Krótki opis (Angielski) | Krótki opis (Polski) | Opis (Angielski) | Opis (Polski) |
     |-----------------|-----------------------|-----------------------|-----------------|-----------------|
-    | TaxFree_LOOKUP | Wolne od podatku | Wolne od podatku | Transakcje niepodlegające opodatkowaniu do dostarczenia towarów i usług poza krajem, zwolnione z opodatkowania. | Niepodlegające opodatkowaniu — transakcje dostawy towarów oraz świadczenia usług poza terytorium kraju; zwolnione z opodatkowania. |
-    | TaxExemptReason_LOOKUP | Przyczyna zwolnienia z podatku | Przyczyna lub podstawa zwolnienia z podatku lub jego zmniejszenia | W przypadku dostawy towarów lub świadczenia usług, które są zwolnione z podatku zgodnie z artykułem 43 ustęp 1; Artykuł 113 sekcja 1 i 9; lub przepisy wydawane na podstawie artykułu 82, ust. 3. | W przypadku dostawy towarów lub świadczenia usług zwolnionych od podatku na podstawie art. 43 ust. 1, art. 113 ust. 1 I 9 albo przepisów wydanych na podstawie art. 82 ust. 3. |
-    | ItemType_LOOKUP | Typ towaru | Rodzaj przedmiotu | Dostarczenie towarów używanych, dzieł sztuki, pozycji kolekcjonerskich i antyków, dla których podstawa podatkowa jest utworzona zgodnie z artykułem 120, ustęp czwarty, przypis 5. Nowe środki transportu są przedmiotem dostaw wewnątrz wspólnoty. | Dostawy towarów używanych, dzieł sztuki, przedmiotów kolekcjonerskich I antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 I 5 marża; W przypadku, gdy przedmiotem wewnątrzwspólnotowej dostawy są nowe środki transportu. |
-
-#### <a name="taxfree_lookup"></a>TaxFree_LOOKUP
+    | [TaxFree_LOOKUP](#tax-free-lookup) | Wolne od podatku | Wolne od podatku | Transakcje niepodlegające opodatkowaniu do dostarczenia towarów i usług poza krajem. Te transakcje są zwolnione z opodatkowania. | Niepodlegające opodatkowaniu — transakcje dostawy towarów oraz świadczenia usług poza terytorium kraju; zwolnione z opodatkowania. |
+    | [TaxExemptReason_LOOKUP](#tax-exempt-lookup) | Przyczyna zwolnienia z podatku | Przyczyna lub podstawa zwolnienia z podatku lub jego zmniejszenia | W przypadku dostawy towarów lub świadczenia usług, które są zwolnione z podatku zgodnie z artykułem 43 ustęp 1; Artykuł 113 sekcja 1 i 9; lub przepisy wydawane na podstawie artykułu 82, ust. 3. | W przypadku dostawy towarów lub świadczenia usług zwolnionych od podatku na podstawie art. 43 ust. 1, art. 113 ust. 1 I 9 albo przepisów wydanych na podstawie art. 82 ust. 3. |
+    | [ItemType_LOOKUP](#item-type-lookup) | Typ towaru | Rodzaj przedmiotu | Dostarczenie towarów używanych, dzieł sztuki, pozycji kolekcjonerskich i antyków, dla których podstawa podatkowa jest utworzona zgodnie z artykułem 120, ustęp 4, przypis 5. Nowe środki transportu są przedmiotem dostaw wewnątrz wspólnoty. | Dostawy towarów używanych, dzieł sztuki, przedmiotów kolekcjonerskich I antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 I 5 marża; W przypadku, gdy przedmiotem wewnątrzwspólnotowej dostawy są nowe środki transportu. |
+    | [SpecialProcedures_LOOKUP](#special-procedures-lookup) | Procedury specjalne, o których mowa w sekcji XII | Procedury specjalne, o których mowa w sekcji XII | Przypadek szczególnych procedur, o których mowa w sekcji XII w art. 6a, 7 i 9 ustawy o VAT. | Stawka podatku od wartości dodanej w przypadku procedur szczególnych, o których mowa w dziale XII w rozdziałach 6a, 7 i 9 ustawy VAT |
+    
+#### <a name="taxfree_lookup"></a><a id="tax-free-lookup"></a>TaxFree_LOOKUP
 
 W JPK_FA v. 2 wartość pola **P_12** może raportować następujące wartości oprócz stawki podatkowej i **zw** (opłata zwrotna): 
 
@@ -738,7 +755,7 @@ Należy skonfigurować i używać określonych kodów zwolnienia (**Podatek \> K
 
 Po zakończeniu konfigurowania pola wyszukiwania **TaxFree_LOOKUP** i przygotowaniu do skonfigurowania następnego pola wyszukiwania wybierz opcję **Zapisz**.
 
-#### <a name="taxexemptreason_lookup"></a>TaxExemptReason_LOOKUP
+#### <a name="taxexemptreason_lookup"></a><a id="tax-exempt-lookup"></a>TaxExemptReason_LOOKUP
 
 Warunki **TaxExemptReason_LOOKUP** są kodami zwolnienia z podatku zdefiniowanymi w Finance (**Podatek** \> **konfiguracja** \> **Podatek** \> **Kody zwolnienia z podatku**) i używane w grupach podatków podczas księgowania transakcji podatkowych. Jeśli na fakturze nie ma żadnych wierszy zwolnienia z podatku, w polu **P_19** będzie raportowana wartość **fałsz**, a znaczniki **P_19A**, **P_19B** i **P_19C** zostaną pominięte.
 
@@ -750,7 +767,7 @@ Określ jako ostatni warunek na liście, wynik **Inne** lub **Other** z wartośc
 
 Po zakończeniu konfigurowania pola wyszukiwania **TaxExemptReason_LOOKUP** i przygotowaniu do skonfigurowania następnego pola wyszukiwania wybierz opcję **Zapisz**.
 
-#### <a name="itemtype_lookup"></a>ItemType_LOOKUP
+#### <a name="itemtype_lookup"></a><a id="item-type-lookup"></a>ItemType_LOOKUP
 
 Warunki **ItemType_LOOKUP** są kodami podatku zdefiniowanymi w Finance (**Podatek** \> **konfiguracja** \> **Podatek** \> **Kody podatku**) i następnie używane podczas księgowania transakcji podatkowych. Ta konfiguracja wyszukiwania wpływa na raportowanie elementów **P_106E_3A** i **P_22**.
 
@@ -763,6 +780,21 @@ Poniższe wartości są dostępne dla ustawień **ItemType_LOOKUP**.
 | CollectorAntiques | Dostawy przedmiotów kolekcjonerskich i antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120, ustęp czwarty, przypis piąty | Dostawy przedmiotów kolekcjonerskich i antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża | Umożliwia określenie kodów podatków używanych w transakcjach powiązanych z przedmiotami kolekcjonerskimi i antykami. Po zakończeniu tego ustawienia faktura zawierająca transakcje podatkowe, w której używany jest określony **procedura marży — przedmioty kolekcjonerskie i antyki** kod podatku będzie raportowana w **P_106E_3A**. |
 | Transport | Wewnątrzwspólnotowe dostarczanie nowych środków transportu | Wewnątrzwspólnotowa dostawa nowych środków transportu | Umożliwia określenie kodów podatków używanych w transakcjach powiązanych z wewnątrzwspólnotowym dostawą nowych środków transportu. Po zakończeniu tego ustawienia faktura zawierająca transakcje podatkowe, w której używany jest określony kod podatku **P_22** będzie raportowany z wartością **Prawda**. |
 | Inna | Inna | Inne | Należy określać wartość **Nie puste** w polu **Kod podatku**. Ta wartość musi być ostatnią na liście wartości. Ta wartość musi być obowiązkowa dla tego wyszukiwania. |
+
+Po zakończeniu konfigurowania wartości pól wyszukiwania określ pole **Stan** jako **Zakończone**, a następnie zapisz zmiany i zamknij stronę. 
+
+Jeśli dowolne pole wyszukiwania nie zawiera co najmniej jednej wartości **Nie puste**, podczas uruchamiania raportu zostanie wygenerowany błąd. Komunikat o błędzie będzie zawierać informację o braku parametrów specyficznych dla aplikacji.
+
+#### <a name="specialprocedures_lookup"></a><a id="special-procedures-lookup"></a>SpecialProcedures_LOOKUP
+
+Warunki **SpecialProcedures_LOOKUP** są kodami podatku zdefiniowanymi w Finance (**Podatek** \> **konfiguracja** \> **Podatek** \> **Kody podatku**). Kody są następnie używane podczas księgowania transakcji podatkowych. Ta konfiguracja wyszukiwania wpływa na raportowanie elementów **FakturaWiersz \> P_12_XII** i **Zamowienie \> P_12Z_XII**.
+
+Poniższe wartości są dostępne dla ustawień **SpecialProcedures_LOOKUP**.
+
+| Nazwisko | Opis (Angielski) | Opis (Polski) | Konfiguracja |
+|------|------------------|------------------|-------|
+| SpecialProc (XII) | Procedury specjalne, o których mowa w sekcji XII | Procedury specjalne, o których mowa w sekcji XII | Określ kody podatkowe sprzedaży, które są używane dla transakcji związanych z procedurami specjalnymi, o których mowa w części XII w art. 6a, 7 i 9 ustawy o VAT. Po zakończeniu tej konfiguracji faktura, która zawiera transakcje podatkowe wykorzystujące określony kod podatkowy, jest raportowana ze stawką podatkową w polach **\<P_12_XII\>** i **\<P_12Z_XII\>** raportu. |
+| Inne | Inne | Inne | Należy określać wartość **Nie puste** w polu **Kod podatku**. Ta wartość musi być ostatnią na liście wartości. Ta wartość musi być obowiązkowa dla tego wyszukiwania. |
 
 Po zakończeniu konfigurowania wartości pól wyszukiwania określ pole **Stan** jako **Zakończone**, a następnie zapisz zmiany i zamknij stronę. 
 
@@ -792,9 +824,7 @@ Zgodnie z wymaganiami wersji 3 raportu **JPK_FA**, gdy faktura jest księgowana 
 
 #### <a name="p_18a-tag"></a>Znacznik <P_18A>
 
-KB #4339927 („Specjalna aktualizacja kraju dla Polski o podzielonej płatności w aplikacjach Dynamics 365 for Finance and Operations”) wprowadza ustawienia metod płatności jako podzielone płatności w module **Rozrachunki z odbiorcami**.
-
-Zgodnie z wymaganiami wersji 3 raportu **JPK_FA**, znacznik **<P_18A>** dla faktury musi być raportowany jako **Prawda**, jeśli dla tej faktury jest stosowany mechanizm podziału płatności. Aby określić, czy mechanizm podziału płatności został zastosowany dla faktury, system sprawdza parametr **Podziału płatności**, który został użyty podczas księgowania faktury. Parametr jest odzwierciedlany w odpowiedniej transakcji odbiorcy w tabeli CustTrans. Należy zachować konfigurację parametru **Podziału płatności** dla metod płatności stabilnych w celu zapewnienia prawidłowego raportowania.
+Zgodnie z wymaganiami wersji 3 raportu **JPK_FA**, znacznik **<P_18A>** dla faktury musi być raportowany jako **Prawda**, jeśli dla tej faktury jest obowiązkowo stosowany mechanizm podziału płatności. Aby ustalić, czy mechanizm podzielonej płatności został zastosowany do faktury, system sprawdza właściwości **Split payment** i **Dobrowolny split payment** w zaksięgowanych transakcjach klienta (tabela **CustTrans**). Transakcje, w których zastosowano **Split payment**, ale właściwość **Dobrowolny split payment** jest fałszywa, będą raportowane z wartością **True** w znaczniku **<P_18A>** raportu. Więcej informacji o właściwościach **split payment** i **dobrowolny split payment** znajdziesz w [KB4584165](https://support.microsoft.com/topic/a-country-specific-update-for-poland-to-support-split-payments-automation-0441375f-8b0e-24f7-370e-f8dc5d0760ec).
 
 #### <a name="p_22-tag"></a>Znacznik <P_22>
 

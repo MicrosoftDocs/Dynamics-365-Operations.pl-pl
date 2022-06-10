@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a2f7929026f41e921b71bc5a899810695c859902
-ms.sourcegitcommit: d475dea4cf13eae2f0ce517542c5173bb9d52c1c
+ms.openlocfilehash: 7e42c0b49a4083edd0e64551f4840bd74d412fc1
+ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "8547796"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "8786846"
 ---
 # <a name="configure-inventory-visibility"></a>Konfiguracja dodatku Widoczność magazynu
 
@@ -60,7 +60,7 @@ Dodatek Widoczność magazynu powoduje dodanie kilku nowych funkcji do instalacj
 
 Jeśli nie znasz prawidłowego punktu końcowego usługi Widoczność magazynu, otwórz stronę **Konfiguracja** w programie Power Apps, a następnie wybierz pozycję **Pokaż punkt końcowy usługi** w prawym górnym rogu. Na stronie zostanie pokazany prawidłowy punkt końcowy usługi.
 
-## <a name="data-source-configuration"></a>Konfiguracja źródła danych
+## <a name="data-source-configuration"></a><a name="data-source-configuration"></a>Konfiguracja źródła danych
 
 Każde źródło danych reprezentuje system, z których pochodzą dane. Przykładowe nazwy źródła danych to `fno` (co oznacza „aplikacje finansowe i operacyjne Dynamics 365”) i `pos` (co oznacza „punkt sprzedaży”). System Supply Chain Management jest ustawiany jako domyślne źródło danych (`fno`) w aplikacji Widoczność magazynu.
 
@@ -141,7 +141,7 @@ Procedura dodawania mapowań wymiaru jest następująca.
 
 Jeśli źródło danych zawiera na przykład wymiar koloru produktu, można je mapować na wymiar podstawowy `ColorId`, aby dodać wymiar niestandardowy `ProductColor` w źródle danych `exterchannel`. Jest on wtedy mapowany na wymiar podstawowy `ColorId`.
 
-### <a name="physical-measures"></a>Fizyczne miary
+### <a name="physical-measures"></a><a name="data-source-configuration-physical-measures"></a>Fizyczne miary
 
 Gdy źródło danych księguje zmianę stanu zapasów do aplikacji Widoczność magazynu, zmiana ta jest księgowana przy użyciu *fizycznych miar*. Fizyczne miary modyfikują ilość i odzwierciedlają stan zapasów. W zależności od wymagań można zdefiniować własne fizyczne miary. Zapytania mogą być oparte na fizycznych miarach.
 
@@ -175,6 +175,9 @@ Jeśli źródłem danych jest Supply Chain Management, nie trzeba ponownie tworz
 ### <a name="calculated-measures"></a>Obliczone miary
 
 Za pomocą aplikacji Widoczność magazynu można dokonywać zapytań zarówno na fizycznych miarach zapasów, jak i *niestandardowych obliczonych miarach*. Obliczone miary stanowia niestandardową formułę obliczeń, która składa się z kombinacji fizycznych miar. Funkcja ta umożliwia zdefiniowanie zestawu fizycznych miar, które będą dodawane, i/lub zestawu fizycznych miar, które będą odejmowane, aby utworzyć niestandardową miarę.
+
+> [!IMPORTANT]
+> Obliczona miara jest złożeniem miar fizycznych. Jego formuła może zawierać tylko miary fizyczne bez duplikatów, a nie miary obliczone.
 
 Konfiguracja umożliwia zdefiniowanie zestawu modyfikatorów, które są dodawane lub odejmowane w celu uzyskania łącznej zagregowanej ilości wynikowej.
 

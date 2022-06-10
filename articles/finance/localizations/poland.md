@@ -1,6 +1,6 @@
 ---
 title: Polska — omówienie
-description: Ten temat zawiera łącza do zasobów dokumentacji Microsoft Dynamics 365 Finance dla Polski.
+description: Ten temat zawiera łącza do zasobów dokumentacji Microsoft Microsoft Dynamics 365 Finance dla Polski.
 author: kfend
 ms.date: 01/07/2022
 ms.topic: overview
@@ -13,12 +13,12 @@ ms.search.region: Poland
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bb50deb69af6b28821b3f6b95288ccc1b8fe1a6f
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 4a63f5f0c9481ce4714a0562cb188e1405b81961
+ms.sourcegitcommit: bad53cfd55d478611a61fca598f53ce20abf0c73
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384734"
+ms.lasthandoff: 05/21/2022
+ms.locfileid: "8788399"
 ---
 # <a name="poland-overview"></a>Polska — omówienie
 
@@ -29,6 +29,7 @@ Ten temat zawiera łącza do zasobów dokumentacji dla Polski.
 - [Obliczanie rabatów wiersza na podstawie ceny jednostkowej](emea-pol-line-discount-calculation-from-unit-price.md)
 - [Noty korygujące](emea-pol-correction-notes.md)
 - [Numerowanie zduplikowanych faktur sprzedaży](emea-pol-sales-invoice-duplicates-numbering.md)
+- [Lista sprzedaży dla Polski](emea-pol-eu-sales-list.md)
 - [Amortyzacja środka trwałego](emea-pol-fixed-assets-depreciation.md)
 - [Likwidacja środka trwałego](emea-pol-fixed-asset-disposal-functionality-extension.md)
 - [Przeszacowanie w walucie obcej dla kont bankowych](emea-foreign-currency-revaluation.md)

@@ -2,7 +2,7 @@
 title: Mobilny obszar roboczy Firmowa książka adresowa
 description: W tym temacie przedstawiono informacje o komórkowym obszarze roboczym Firmowa książka adresowa, gdzie użytkownicy mogą wyświetlać dane i kontaktować się z innymi pracownikami w organizacji.
 author: jcart1106
-ms.date: 09/17/2019
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,22 +12,23 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 2152d89e7d60a74e8d7561ea888e60cff42dd1ffd0ec697fac371aad9b85383c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b754e46f194f60cc70d02367d4cca2a382821191
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720655"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811547"
 ---
 # <a name="company-directory-mobile-workspace"></a>Mobilny obszar roboczy Firmowa książka adresowa
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
 Ten temat zawiera informacje o komórkowym obszarze roboczym **Firmowa książka adresowa**. Ten obszar roboczy umożliwia użytkownikom wyświetlanie danych i kontaktowanie się z innymi pracownikami w organizacji.
 
 Ten mobilny obszar roboczy może być używany w aplikacji mobilnej Finance and Operations.
 
-## <a name="overview"></a>Omówienie
+## <a name="overview"></a>Przegląd
 Mobilny obszar roboczy **Firmowa książka adresowa** pozwala użytkownikom wykonywać następujące zadania:
 
 - Wyświetlanie listy pracowników w organizacji.

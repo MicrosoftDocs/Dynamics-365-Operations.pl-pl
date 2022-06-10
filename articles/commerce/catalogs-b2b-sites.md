@@ -2,19 +2,19 @@
 title: Tworzenie katalogów Commerce dla stron B2B
 description: W tym temacie opisano, jak tworzyć katalogi Commerce dla witryn business-to-business (B2B) Microsoft Dynamics 365 Commerce.
 author: ashishmsft
-ms.date: 04/28/2022
+ms.date: 05/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: 868f6bbeefeb1698bb136d52c09cebf293c95731
-ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
+ms.openlocfilehash: 7382062706c2de01c499ee05aeb0b45ff6fb37cb
+ms.sourcegitcommit: bca0cb730307948368a9aabe322cf963688ed8b1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "8656865"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8782844"
 ---
 # <a name="create-commerce-catalogs-for-b2b-sites"></a>Tworzenie katalogów Commerce dla stron B2B
 
@@ -24,7 +24,7 @@ ms.locfileid: "8656865"
 W tym temacie opisano, jak tworzyć produkty Commerce dla witryn business-to-business (B2B) Microsoft Dynamics 365 Commerce. Aby uzyskać odpowiedzi na najczęściej zadawane pytania dotyczące katalogów Commerce dla stron B2B, zobacz [Katalogi Commerce dla stron B2B FAQ](catalogs-b2b-sites-FAQ.md).
 
 > [!NOTE]
-> Ten temat dotyczy Dynamics 365 Commerce w wersji 10.0.26 i późniejszych.
+> Ten temat dotyczy Dynamics 365 Commerce w wersji 10.0.27 i późniejszych.
 
 Możesz użyć katalogów Commerce, by zidentyfikować produkty, które chcesz oferować w swoich sklepach internetowych B2B. Kiedy tworzysz katalog, określasz sklepy internetowe, w których oferowane są produkty, dodajesz produkty, które chcesz w nim umieścić, a następnie wzbogacasz ofertę produktów, dodając szczegóły dotyczące merchandisingu. Możesz stworzyć wiele katalogów dla każdego sklepu internetowego B2B.
 
@@ -42,7 +42,7 @@ Katalogi produktów Commerce pozwalają zdefiniować następujące informacje:
 - **Grupy cenowe** – możesz skonfigurować ceny i promocje, które są specyficzne dla danego katalogu. Ta możliwość jest głównym powodem definiowania katalogu dla kanału B2B. Grupy cenowe dla katalogów umożliwiają organizacjom udostępnianie produktów docelowym organizacjom B2B i stosowanie preferowanych przez nie cen i zniżek. Klienci B2B, którzy zamawiają ze skonfigurowanego katalogu, mogą korzystać ze specjalnych cen i promocji po zalogowaniu się na stronie Commerce B2B. Aby skonfigurować ceny określonego katalogu, zaznacz opcję **Grupy cenowe** z karty **Katalogi**, aby połączyć jedną lub więcej grup cen z katalogiem. Wszystkie umowy handlowe, czasopisma korygujące ceny i rabaty zaawansowane, które zostały powiązane z tą samą grupą cenową, będą stosowane, gdy klienci będą zamawiać z tego katalogu. (Zniżki zaawansowane obejmują zniżki progowe, ilościowe oraz typu „Rabat łączony”). Więcej informacji o grupach cenowych znajdziesz w części [Grupy cenowe](price-management.md#price-groups).
 
 > [!NOTE]
-> Ta funkcja jest dostępna od wersji 10.0.26 Dynamics 365 Commerce. Aby skonfigurować specyficzne dla katalogu konfiguracje, takie jak hierarchia nawigacji i hierarchia klientów, w centrali Commerce otwórz przestrzeń roboczą **Zarządzanie funkcjami** (**Administracja systemu \> Obszary robocze \> Zarządzanie funkcjami**), włącz funkcję **Umożliwienie korzystania z wielu katalogów w kanałach sprzedaży detalicznej**, a następnie uruchom zadanie **1110 CDX**.
+> Ta funkcja jest dostępna od wersji 10.0.27 Dynamics 365 Commerce. Aby skonfigurować specyficzne dla katalogu konfiguracje, takie jak hierarchia nawigacji i hierarchia klientów, w centrali Commerce otwórz przestrzeń roboczą **Zarządzanie funkcjami** (**Administracja systemu \> Obszary robocze \> Zarządzanie funkcjami**), włącz funkcję **Umożliwienie korzystania z wielu katalogów w kanałach sprzedaży detalicznej**, a następnie uruchom zadanie **1110 CDX**.
 
 ## <a name="catalog-process-flow"></a>Przebieg procesu katalogowania
 

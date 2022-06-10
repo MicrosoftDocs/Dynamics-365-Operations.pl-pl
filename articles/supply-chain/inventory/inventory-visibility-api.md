@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: cbd33b16a4b21e8e1931bc61cb55e376e7d73179
-ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
+ms.openlocfilehash: cb02e8d10a5c673734727682436ba1b3fc996935
+ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8524473"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "8786874"
 ---
 # <a name="inventory-visibility-public-apis"></a>Publiczne interfejsy API dodatku Widoczność magazynu
 
@@ -41,17 +41,22 @@ W poniższej tabeli przedstawiono obecnie dostępne interfejsy API:
 | /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Księguj | [Ustawianie/zastępowanie dostępnych ilości](#set-onhand-quantities) |
 | /api/environment/{environmentId}/onhand/reserve | Księguj | [Tworzenie jednego zdarzenia rezerwacji](#create-one-reservation-event) |
 | /api/environment/{environmentId}/onhand/reserve/bulk | Księguj | [Tworzenie wielu zdarzeń rezerwacji](#create-multiple-reservation-events) |
-| /api/environment/{environmentId}/on-hand/changeschedule | Księguj | [Utwórz jedną zaplanowaną zmianę od ręki](inventory-visibility-available-to-promise.md) |
-| /api/environment/{environmentId}/on-hand/changeschedule/bulk | Księguj | [Utwórz wiele zaplanowanych zmian od ręki](inventory-visibility-available-to-promise.md) |
+| /api/environment/{environmentId}/onhand/changeschedule | Księguj | [Utwórz jedną zaplanowaną zmianę od ręki](inventory-visibility-available-to-promise.md) |
+| /api/environment/{environmentId}/onhand/changeschedule/bulk | Księguj | [Utwórz wiele zaplanowanych zmian od ręki](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/indexquery | Księguj | [Zapytanie przy użyciu metody POST](#query-with-post-method) |
 | /api/environment/{environmentId}/onhand | Pobierz | [Zapytanie przy użyciu metody GET](#query-with-get-method) |
+| /api/environment/{environmentId}/allocation/allocate | Księguj | [Utwórz jedno zdarzenie przydziału](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/unallocate | Księguj | [Utwórz jedno zdarzenie cofnięcia przydziału](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/reallocate | Księguj | [Utwórz jedno zdarzenie ponownego przydziału](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/consume | Księguj | [Tworzenie jednego zdarzenia zużycia](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/query | Księguj | [Wynik alokacji zapytań](inventory-visibility-allocation.md#using-allocation-api) |
 
 > [!NOTE]
 > Część {environmentId} ścieżki jest identyfikatorem środowiska w usługach Microsoft Dynamics Lifecycle Services (LCS).
 > 
 > API zbiorcze może zwrócić maksymalnie 512 rekordów dla każdego żądania.
 
-Firma Microsoft dostarcza kolekcję gotowych do użycia żądań *Postman*. Kolekcję można zaimportować do oprogramowania *Postman*, korzystając z następującego udostępnionego łącza: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>
+Firma Microsoft dostarcza kolekcję gotowych do użycia żądań *Postman*. Kolekcję można zaimportować do oprogramowania *Postman*, korzystając z następującego udostępnionego łącza: <https://www.getpostman.com/collections/ad8a1322f953f88d9a55>
 
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>Znajdowanie punktu końcowego zgodnie ze środowiskiem Lifecycle Services.
 
@@ -84,7 +89,7 @@ Firma Microsoft wbudowała interfejs użytkownika (UI) w Power Apps, dzięki cze
 
 ## <a name="authentication"></a><a name="inventory-visibility-authentication"></a>Uwierzytelnianie
 
-Token zabezpieczeń platformy służy do wywołania publicznego interfejsu API Widoczność magazynu. Dlatego należy wygenerować _token Azure Active Directory (Azure AD)_ przy użyciu aplikacji Azure AD. Następnie należy użyć tokenu Azure AD, aby uzyskać _token dostępu_ z usługi zabezpieczeń.
+Token zabezpieczeń platformy służy do wywołania publicznego interfejsu API Widoczność magazynu. Dlatego należy wygenerować token _Azure Active Directory (Azure AD)_ przy użyciu aplikacji Azure AD. Następnie należy użyć tokenu Azure AD, aby uzyskać _token dostępu_ z usługi zabezpieczeń.
 
 Firma Microsoft dostarcza kolekcję gotowych do pobierania tokenów *Postman*. Kolekcję można zaimportować do oprogramowania *Postman*, korzystając z następującego udostępnionego łącza: <https://www.getpostman.com/collections/496645018f96b3f0455e>
 
@@ -580,6 +585,10 @@ Oto przykładowy adres URL GET. To żądanie GET jest dokładnie takie samo, jak
 
 ## <a name="available-to-promise"></a>Dostępność zapasów
 
-Widoczność zapasów można skonfigurować, aby było można zaplanować przyszłe zmiany dostępnych zapasów i obliczyć ilości ATP. ATP to ilość towaru, która jest dostępna i którą można obiecać klientowi w następnym okresie. Użycie kalkulacji ATP może znacznie zwiększyć twoje możliwości realizacji zamówień. Aby uzyskać informacje o tym, jak włączyć tę funkcję i jak wchodzić w interakcję z widocznością zapasów za pośrednictwem interfejsu API po włączeniu tej funkcji, zobacz [Harmonogramy zmian widoczności zapasów na bieżąco i dostępne do obiecania](inventory-visibility-available-to-promise.md).
+Widoczność zapasów można skonfigurować, aby było można zaplanować przyszłe zmiany dostępnych zapasów i obliczyć ilości ATP. ATP to ilość towaru, która jest dostępna i którą można obiecać klientowi w następnym okresie. Użycie kalkulacji ATP może znacznie zwiększyć twoje możliwości realizacji zamówień. Aby uzyskać informacje o tym, jak włączyć tę funkcję i jak wchodzić w interakcję z widocznością zapasów za pośrednictwem interfejsu API po włączeniu tej funkcji, zobacz [Harmonogramy zmian widoczności zapasów na bieżąco i dostępne do obiecania](inventory-visibility-available-to-promise.md#api-urls).
+
+## <a name="allocation"></a>Alokacja
+
+Interfejsy API związane z przydziałem znajdują się w [Przydział widoczności zapasów](inventory-visibility-allocation.md#using-allocation-api).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

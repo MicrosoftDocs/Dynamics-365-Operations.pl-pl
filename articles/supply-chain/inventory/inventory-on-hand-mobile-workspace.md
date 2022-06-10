@@ -2,7 +2,7 @@
 title: Mobilny obszar roboczy Dostępne zapasy
 description: Ten temat zawiera informacje o komórkowym obszarze roboczym Dostępne zapasy. Ten obszar roboczy pomaga uzyskać na urządzeniach komórkowych w każdym miejscu i czasie wgląd w zapasy zarezerwowane i dostępne.
 author: yufeihuang
-ms.date: 12/01/2017
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,20 +15,21 @@ ms.search.industry: Manufacturing
 ms.author: yufeihuang
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 9e67e16acc8ed72d571e9010131723038c8586a9
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b380da99b02fe9b7cd834eabac3498ee3b8e54a4
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573904"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811474"
 ---
 # <a name="inventory-on-hand-mobile-workspace"></a>Mobilny obszar roboczy Dostępne zapasy
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
 Ten temat zawiera informacje o komórkowym obszarze roboczym **Dostępne zapasy**. Ten obszar roboczy pomaga uzyskać w każdym miejscu i czasie wgląd w zapasy zarezerwowane i dostępne.
 
-Ten mobilny obszar roboczy jest przeznaczony do używania w aplikacji mobilnej Finance and Operations.
+Ten mobilny obszar roboczy jest przeznaczony do używania w mobilnych aplikacjach finansowych i operacyjnych (Dynamics 365).
 
 ## <a name="overview"></a>Omówienie
 Zazwyczaj firmy codziennie wykonują wiele wydań i przyjęć zapasów. Te przesunięcia cały czas zmieniają stan dostępnych zapasów. Mobilny obszar roboczy **Dostępne zapasy** pozwala widzieć stan dostępnych zapasów w całej organizacji, wykorzystując do tego dowolne urządzenie komórkowe. Niezależnie od tego, czy pracujesz w magazynie, zakupach, sprzedaży, produkcji czy administracji, lub czy masz inne role, informacje o dostępnych zapasach możesz sprawdzać w każdym miejscu i czasie. 
@@ -93,7 +94,7 @@ Jeśli w organizacji wdrożono wersję z aktualizacją platformy 3. lub nowszą,
 
 ## <a name="download-and-install-the-mobile-app"></a>Pobieranie i instalowanie aplikacji mobilnej
 
-Pobieranie i instalowanie aplikacji mobilnej Finance and Operations:
+Pobierz i zainstaluj mobilne aplikacje finansowe i operacyjne (Dynamics 365):
 
 -   [Telefony Android](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Telefony iPhone](https://go.microsoft.com/fwlink/?linkid=850663)

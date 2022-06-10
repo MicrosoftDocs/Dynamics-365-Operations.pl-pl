@@ -2,7 +2,7 @@
 title: Moduł aktywnego obrazu
 description: W tym temacie opisano moduły aktywnych obrazów i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/08/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 36b7d6dea87c7f309c07608794d443a0ae19be211847d2cddcad95f2d933a8db
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 06b9162029de3f5f3fede9583fa8a4a96fefb2f3
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716915"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780292"
 ---
 # <a name="active-image-module"></a>Moduł aktywnego obrazu
 
@@ -58,11 +58,11 @@ Aby dodać aktywny moduł obrazu do nowej strony i ustawić wymagane właściwo�
 
 1. Przejdź do formularza **Szablony** i otwórz szablon marketingowy dla strony głównej witryny (lub utwórz nowy szablon marketingowy).
 1. W gnieździe **Głównym** na stronie domyślna wybierz przycisk wielokropka (**...**), a następnie wybierz pozycję **Dodaj moduł**.
-1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Aktywny obraz** i wybierz przycisk **OK**.
+1. W oknie dialogowym **Wybierz moduły** wybierz moduł **Aktywny obraz** i wybierz przycisk **OK**.
 1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować szablon, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
 1. Przejdź do formularza **Strony** i otwórz stronę główną witryny (lub utwórz nową stronę główną, używając szablonu marketingowego).
 1. Na domyślnej stronie wybierz gniazdo **Główne**, następnie wybierz przycisk wielokropka (**...**), a następnie wybierz pozycję **Dodaj moduł**.
-1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Aktywny obraz** i wybierz przycisk **OK**.
+1. W oknie dialogowym **Wybierz moduły** wybierz moduł **Aktywny obraz** i wybierz przycisk **OK**.
 1. W okienku właściwości aktywnego modułu obrazu dodaj obraz i ustaw szerokość kanwy na rozmiar obrazu.
 1. Należy ustawić współrzędne X i Y i dodać odpowiedni numer identyfikacyjny produktu.
 1. Dodaj i skonfiguruj dodatkowe aktywne moduły obrazu zgodnie z potrzebami.

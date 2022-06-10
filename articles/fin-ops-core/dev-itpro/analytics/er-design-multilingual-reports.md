@@ -2,7 +2,7 @@
 title: Projektowanie raportów wielojęzycznych w module raportowanie elektroniczne
 description: W tym temacie wyjaśniono, jak można stosować etykiety raportów elektronicznych (ER) do projektowania i generowania raportów wielojęzycznych.
 author: NickSelin
-ms.date: 11/30/2021
+ms.date: 04/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eab17635494657740fe46364bde0773dae5b9e4b
-ms.sourcegitcommit: 8bcb9c13eccb14e61c39ca6578d135b64090fad2
+ms.openlocfilehash: aa8297d4f5c56a7a20561b1a90c5852e65dbff31
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8313698"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811615"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Projektowanie raportów wielojęzycznych w module raportowanie elektroniczne
 
@@ -217,6 +217,11 @@ Przetłumaczone etykiety zostaną zaimportowane do wybranej konfiguracji ER. Prz
 Etykiety składnika ER, które mogą być edytowane, są zachowywane wraz z inną zawartością składnika, w odpowiedniej wersji konfiguracji ER.
 
 Etykiety podstawowego składnika ER można odwoływać w wersji pochodnej składnika ER tworzonego w celu wprowadzenia modyfikacji.
+
+> [!TIP]
+> Kiedy projektujesz rozwiązanie ER, możesz stworzyć swój własny składnik [modelu danych](er-overview-components.md#data-model-component) z dostarczonego składnika. W tym pochodnym modelu danych możesz wprowadzić własne etykiety ER i używać ich we wszystkich formatach ER, które będą korzystać z modelu danych jako źródła danych. Możesz wtedy wyprowadzić swój własny składnik [format](er-overview-components.md#format-component) ER z tego, który jest dostarczony, wybierając swój pochodny model danych ER zamiast dostarczonego. W wersji 10.0.28 i nowszych możesz włączyć funkcję **Zwiększony dostęp do etykiet nadrzędnego modelu danych ER**, aby uzyskać dostęp do etykiet nadrzędnego modelu danych ER w pochodnych komponentach formatu ER, nawet jeśli model danych ER, który wybrałeś dla pochodnego komponentu ER, różni się od tego, który został użyty w bazowym komponencie ER.
+>
+> Jeśli ta sama nazwa etykiety jest używana w twoim komponencie pochodnym i jego komponentach nadrzędnych, twoje tłumaczenie tej etykiety jest używane jako najbardziej odpowiednie.
 
 Wersja ER kontroluje przypisywanie etykiet do dowolnego atrybutu w składniku ER. Zmiany w przypisaniu etykiety są rejestrowane na liście zmian (delta) edytowalnego składnika ER, który został utworzony jako pochodna wersja dostarczonego składnika ER. Te zmiany zostaną sprawdzone, gdy wersja pochodna zostanie zmieniona na nową wersję bazową.
 

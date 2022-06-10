@@ -2,7 +2,7 @@
 title: Usunięte lub wycofane funkcje Platform
 description: W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia aktualizacji platformy z aplikacji finansowych i operacyjnych.
 author: sericks007
-ms.date: 04/26/2022
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 0cf0d4b3ff108645c8542ce10a0be58d29cc68ed
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 3de9b9ea0bd20d1346a7cdfd2f919f50374b164c
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644615"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811254"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Usunięte lub wycofane funkcje Platform
 
@@ -31,6 +31,33 @@ W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do
 Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych funkcji we własnym planowaniu. 
 
 Szczegółowe informacje o obiektów w aplikacji Finanse i Działania można znaleźć w [raportach z wykazami parametrów technicznych](/dynamics/s-e/global/axtechrefrep_61). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach aplikacji Finanse i Działania.
+
+
+## <a name="feature-deprecation-effective-june-2022"></a>Wycofanie funkcji z użytku w czerwcu 2022 r.
+
+### <a name="finance-and-operations-dynamics-365-mobile-application-and-mobile-platform"></a>Aplikacja mobilna i platforma mobilna finansów i operacji (Dynamics 365) 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Pozbywamy się aplikacji mobilnej i platformy finansów i operacji (Dynamics 365), aby skonsolidować je z jedną platformą mobilną, którą jest Power Apps. |
+| **Zamieniona przez inną funkcję?**   | Tak, dzięki integracji z Power Platform można zbudować mobilne doświadczenia z danymi z aplikacji finansów i operacji. Więcej szczegółów znajdziesz w [Budowanie doświadczeń mobilnych](../power-platform/build-mobile-experiences.md). |
+| **Powiązane obszary produktów**         | Aplikacje Finanse i Działania |
+| **Opcja wdrażania**              | Wszystko |
+| **Stan**                         | Wycofane. Data zakończenia wsparcia przewidziana jest na październik 2024 roku. |
+
+
+## <a name="platform-updates-for-version-10029-of-finance-and-operations-apps"></a>Aktualizacje platformy dla wersji 10.0.29 aplikacji finansowych i operacyjnych
+
+### <a name="panorama-tab-style"></a>Panorama tab style
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Strony przewijające się w poziomie są zgodne z przestarzałymi wzorcami układu, które mają znane problemy z użytecznością i dostępnością.  |
+| **Zamieniona przez inną funkcję?**   | Nie, ale inne style zakładek są nadal dostępne. |
+| **Powiązane obszary produktów**         | Klient sieci Web |
+| **Opcja wdrażania**              | Wszystko |
+| **Stan**                         | Wycofane. |
+
 
 ## <a name="feature-deprecation-effective-april-2022"></a>Wycofanie funkcji z użytku w kwietniu 2022 r.
 

@@ -2,7 +2,7 @@
 title: Mobilny obszar roboczy Zamówienia sprzedaży
 description: Ten temat zawiera informacje o komórkowym obszarze roboczym Zamówienia sprzedaży. Ten obszar roboczy pomaga być na bieżąco z zamówieniami sprzedaży w dowolnym miejscu i czasie.
 author: Henrikan
-ms.date: 12/01/2017
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,22 +15,23 @@ ms.search.industry: Manufacturing
 ms.author: henrikan
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 3a746ae5d7f0c6ca2fd8e69a23114cfcaa24b16b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: be9fd32f5f5d80bb9bce5f0de7e4ff92d6f5d28f
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675017"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811575"
 ---
 # <a name="sales-orders-mobile-workspace"></a>Mobilny obszar roboczy Zamówienia sprzedaży
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
 Ten temat zawiera informacje o komórkowym obszarze roboczym **Zamówienia sprzedaży**. Ten obszar roboczy pomaga być na bieżąco z zamówieniami sprzedaży w dowolnym miejscu i czasie. 
 
-Ten mobilny obszar roboczy jest przeznaczony do używania w aplikacji mobilnej Finance and Operations.
+Ten mobilny obszar roboczy jest przeznaczony do używania w mobilnych aplikacjach finansowych i operacyjnych (Dynamics 365).
 
-## <a name="overview"></a>Przegląd
+## <a name="overview"></a>Omówienie
 Mobilny obszar roboczy **Zamówienia sprzedaży** umożliwia przeglądanie szczegółowych informacji o poszczególnych zamówieniach sprzedaży. Informacje te obejmują stan zamówienia, informacje kontaktowe odbiorcy oraz informacje kontaktowe osoby przyjmującej zamówienie. Mobilny obszar roboczy **Zamówienia sprzedaży** zapewnia natychmiastowy podgląd zamówień sprzedaży. Można wyświetlić wszystkie zamówienia sprzedaży, zamówienia dla poszczególnych odbiorców albo informacje o określonym zamówieniu sprzedaży. 
 
 Mobilny obszar roboczy oferuje dwa widoki pomagające dogłębnie analizować zamówienia sprzedaży.
@@ -117,7 +118,7 @@ Jeśli w organizacji wdrożono oprogramowanie Dynamics 365 for Operations w wers
 </table>
 
 ## <a name="download-and-install-the-mobile-app"></a>Pobieranie i instalowanie aplikacji mobilnej
-Pobieranie i instalowanie aplikacji mobilnej Finance and Operations:
+Pobierz i zainstaluj mobilne aplikacje finansowe i operacyjne (Dynamics 365):
 
 -   [Telefony Android](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Telefony iPhone](https://go.microsoft.com/fwlink/?linkid=850663)

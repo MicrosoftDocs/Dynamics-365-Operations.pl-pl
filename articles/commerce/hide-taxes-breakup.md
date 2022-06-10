@@ -2,19 +2,19 @@
 title: Ukryj informacje o podziale podatku w podsumowaniach zamówień
 description: W tym temacie opisano, jak ukryć informacje o podziale podatku w podsumowaniach zamówień na stronach koszyka, kasy, potwierdzenia zamówienia i szczegółów zamówienia w Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 04/21/2022
+ms.date: 05/17/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2022-03-28
-ms.openlocfilehash: 9890b5cd92f8c07e6feabb26f4fdd076cb7a02bc
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 9a0bff7afaa10e49ec05f18e2b0fae7a19b5e8af
+ms.sourcegitcommit: 48d094d083c1bd45c3d72f8b666926b48ec7ae35
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645222"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "8767821"
 ---
 # <a name="hide-tax-breakup-information-in-order-summaries"></a>Ukryj informacje o podziale podatku w podsumowaniach zamówień
 
@@ -46,6 +46,9 @@ Aby pokazać informacje o podziale podatku w podsumowaniach zamówień, zaznacz 
 Poniższa ilustracja przedstawia pole wyboru **Pokaż rozbicie podatków w podsumowaniu zamówienia** zaznaczone i wybrane w module budowania witryny.
 
 ![Pokaż podział na podatki w opcji podsumowania zamówienia w kreatorze witryn.](media/prices-include-sales-tax-e-Commerce-site-settings.png)
+
+> [!NOTE]
+> Jeśli masz niestandardowe moduły podsumowujące zamówienia i nie chcesz odziedziczyć funkcji "ukrywania informacji o wysokości podatku w podsumowaniach zamówień" w Commerce w wersji 10.0.27 lub nowszej, zobacz [Suma częściowa podsumowania zamówienia nie zawiera podatków od opłat, gdy używasz niestandardowych modułów podsumowania zamówienia](troubleshoot/summary-taxes-custom-modules-10.0.27.md#resolution).
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

@@ -2,7 +2,7 @@
 title: Obszar roboczy współpracy z dostawcami za pomocą urządzeń przenośnych
 description: Ten temat zawiera informacje o komórkowym obszarze roboczym Współpraca z dostawcami. Ten obszar roboczy pomaga Twoim dostawcom być na bieżąco z zamówieniami zakupu, które zostały im wysłane do zatwierdzenia. Mogą również wyświetlać informacje o nowych i zaktualizowanych zamówieniach zakupu i osobach kontaktowych.
 author: GalynaFedorova
-ms.date: 12/01/2017
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,22 +14,23 @@ ms.search.region: global
 ms.author: gfedorova
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: c1e8a6589b16c4a24b151980d01929ed154bbb7b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 97352ca89cef77b9320f17af5a1dbe6a00df2dd6
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670112"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811722"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Obszar roboczy współpracy z dostawcami za pomocą urządzeń przenośnych
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
 Ten temat zawiera informacje o komórkowym obszarze roboczym **Współpraca z dostawcami**. Ten obszar roboczy pomaga Twoim dostawcom być na bieżąco z zamówieniami zakupu, które zostały im wysłane do zatwierdzenia. Mogą również wyświetlać informacje o nowych i zaktualizowanych zamówieniach zakupu i osobach kontaktowych.
 
-Ten mobilny obszar roboczy jest przeznaczony do używania w aplikacji mobilnej Finance and Operations.
+Ten mobilny obszar roboczy jest przeznaczony do używania w mobilnych aplikacjach finansowych i operacyjnych (Dynamics 365).
 
-## <a name="overview"></a>Przegląd 
+## <a name="overview"></a>Omówienie 
 Mobilny obszar roboczy **Współpraca z dostawcami** przekazuje dostawcom na bieżąco informacje o nowych zamówieniach zakupu, dzięki czemu widzą oni zamówienia zakupu i mogą na nie reagować w kliencie internetowym. 
 
 >[!NOTE]
@@ -109,7 +110,7 @@ Jeśli w organizacji wdrożono oprogramowanie Microsoft Dynamics 365 for Operati
 
 ## <a name="download-and-install-the-mobile-app"></a>Pobieranie i instalowanie aplikacji mobilnej
 
-Pobieranie i instalowanie aplikacji mobilnej Finance and Operations:
+Pobierz i zainstaluj mobilne aplikacje finansowe i operacyjne (Dynamics 365):
 
 -   [Telefony Android](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Telefony iPhone](https://go.microsoft.com/fwlink/?linkid=850663)

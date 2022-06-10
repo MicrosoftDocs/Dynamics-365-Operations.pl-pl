@@ -2,7 +2,7 @@
 title: Projektant formuł w module Raportowanie elektroniczne (ER)
 description: Ten temat zawiera ogólne informacje o używaniu projektanta formuł w module Raportowanie elektroniczne (ER).
 author: NickSelin
-ms.date: 12/05/2019
+ms.date: 04/08/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eec63fb1782c5afed0320eb841b6bfc92af31a691731ef6bac5d00ed442c0dcd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 606532411aa8297654d8d20a9061472597e773da
+ms.sourcegitcommit: 6c1bf233748c4bc70fc5a1a9711758cdfd9e07dc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777411"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8782212"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Projektant formuł w module Raportowanie elektroniczne (ER)
 
@@ -41,7 +41,8 @@ Stronę **Projektant formuł** można otworzyć podczas wykonywania następując
 - Wiązanie elementów źródła danych ze składnikami modelu danych.
 - Wiązanie elementów źródła danych ze składnikami formatu.
 - Obsługa pól obliczeniowych w ramach źródeł danych.
-- Definiowanie warunków widoczności dla parametrów wejściowych użytkownika.
+- Definiowanie warunków widoczności i edytowalności dla parametrów wejściowych użytkownika.
+- Definiowanie domyślnych wartości dla parametrów wejściowych użytkownika.
 - Projektowanie przekształceń formatu.
 - Definiowanie warunków włączania składników formatu.
 - Definiowanie nazw plików dla plikowych składników formatu.

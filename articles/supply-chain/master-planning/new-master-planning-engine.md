@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 20e48fee237615c7b1acdb564e5e524d393f8eba
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 598e29ead50e1ecb249a7338c7f0952a912b4f69
+ms.sourcegitcommit: cbe9493d479f96f271d94599ec1b85131b26169f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469905"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8809103"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Migracja do modułu Optymalizacja planowania w celu realizacji planowania głównego
 
@@ -63,7 +63,7 @@ Obecnie wyjątki dotyczące migracji optymalizacji planowania są istotne tylko 
 
 Po udostępnieniu wymaganych funkcji firma Microsoft zapewni okres karencji do wygaśnięcia wyjątku. Administrator środowiska zostanie poinformowany, gdy wymagane funkcje staną się dostępne i rozpocznie się okres karencji.
 
-Poniższy schemat blokowy podsumowuje informacje podane w tym temacie, dzięki czemu można szybko dowiedzieć się, czy należy zażądać wyjątku. Jeśli musisz zażądać wyjątku, wypełnij i prześlij [Kwestionariusz migracji optymalizacji planowania i wyjątków](https://go.microsoft.com/fwlink/?linkid=2144962).
+Poniższy schemat blokowy podsumowuje informacje podane w tym temacie, dzięki czemu można szybko dowiedzieć się, czy należy zażądać wyjątku. Jeśli musisz zażądać wyjątku, wypełnij i prześlij [Kwestionariusz migracji optymalizacji planowania i wyjątków](https://go.microsoft.com/fwlink/?linkid=2144962). Grupa produktów jest odpowiedzialna za ocenę i zatwierdzenie każdego zgłoszenia wyjątku, dlatego prześlij swoje zgłoszenie bezpośrednio do grupy produktów, korzystając z podanego linku, i nie twórz w tym celu zgłoszenia do działu wsparcia. Jeśli twoja prośba zostanie odrzucona, nie twórz zgłoszenia do pomocy, ponieważ Pomoc techniczna firmy Microsoft nie jest w stanie dokonać ponownej oceny ani przyznać wyjątków.
 
 ![Schemat blokowy wyjątków.](media/exception-diagram.png "Schemat blokowy wyjątków")
 

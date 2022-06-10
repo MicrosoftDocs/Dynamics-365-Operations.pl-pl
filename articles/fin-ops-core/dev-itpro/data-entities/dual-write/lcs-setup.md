@@ -2,19 +2,19 @@
 title: Konfigurowanie podwójnego zapisu z usług Lifecycle Services
 description: W tym temacie opisano sposób skonfigurowania połączenia podwójnego zapisu z usługi Microsoft Dynamics Lifecycle Services (LCS).
 author: laneswenka
-ms.date: 08/03/2021
+ms.date: 05/16/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 825d6a4b3462077d0f4b3f4275792ea0fe5152df
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 53e82fbf8cff834c9eb0d14a0597561158b85fa1
+ms.sourcegitcommit: 6744cc2971047e3e568100eae338885104c38294
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063679"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "8783209"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Konfigurowanie podwójnego zapisu z usług Lifecycle Services
 
@@ -26,12 +26,12 @@ W tym temacie opisano sposób włączenia połączenia podwójnego zapisu z usł
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Integrację Power Platform należy zakończyć w sposób opisany w poniższych tematach:
+Klienci muszą przeprowadzić integrację z Power Platform w sposób opisany w poniższych tematach:
 
-+ [Integracja Power Platform — włącz podczas wdrażania środowiska](../../power-platform/enable-power-platform-integration.md#enable-during-deploy)
-+ [Integracja Power Platform — włącz po wdrożeniu środowiska](../../power-platform/enable-power-platform-integration.md#enable-after-deploy)
+- Jeśli nie używasz jeszcze Microsoft Power Platform, a chcesz rozszerzyć swoje środowiska rozwiązania Finance and Operations o możliwości platformy, zobacz [Integracja z Power Platform — włącz podczas wdrażania środowiska](../../power-platform/enable-power-platform-integration.md#enable-during-deploy).
+- Jeśli masz już środowiska Dataverse i Power Platform i chcesz je połączyć ze środowiskami rozwiązania Finance and Operations, zobacz [Integracja z Power Platform — włącz po wdrożeniu środowiska](../../power-platform/enable-power-platform-integration.md#enable-after-deploy).
 
-## <a name="set-up-dual-write-for-new-dataverse-environments"></a>Wskazówki dotyczące konfigurowania podwójnego zapisu w środowiskach Dataverse
+## <a name="set-up-dual-write-for-new-or-existing-dataverse-environments"></a>Skonfiguruj podwójny zapis dla nowych lub istniejących środowisk Dataverse
 
 Aby skonfigurować podwójny zapis ze strony **Szczegóły środowiska** usługi LCS, należy wykonać następujące kroki:
 
@@ -55,28 +55,19 @@ Aby skonfigurować podwójny zapis ze strony **Szczegóły środowiska** usługi
 
 8. Po zakończeniu łączenia jest wyświetlane hiperłącze. Użyj łącza, aby zalogować się do obszaru administracji podwójnego zapisu w środowisku Finanse i Działania. Istnieje możliwość skonfigurowania mapowań encji.
 
-## <a name="set-up-dual-write-for-an-existing-dataverse-environment"></a>Wskazówki dotyczące konfigurowania podwójnego zapisu dla istniejącego środowiska Dataverse
-
-Aby skonfigurować podwójny zapis dla istniejącego środowiska Dataverse, musisz utworzyć [zgłoszenie](../../lifecycle-services/lcs-support.md) do pomocy technicznej firmy Microsoft. Zgłoszenie musi zawierać następujące informacje:
-
-+ Twój identyfikator środowiska Finanse i Działania.
-+ Twoja nazwa środowiska z usługi Lifecycle Services.
-+ Identyfikator organizacji Dataverse lub identyfikator środowiska Power Platform z centrum administracyjnego Power Platform. W zgłoszeniu poproś, aby identyfikator był wystąpieniem używanym do integracji Power Platform.
-
-> [!NOTE]
-> Nie można odłączyć środowisk za pomocą usługi LCS. Aby rozłączyć środowisko, Otwórz obszar roboczy **integracji danych** w środowisku Finanse i Działania, a następnie wybierz opcję **Rozłącz**.
-
 ## <a name="linking-mismatch"></a>Niezgodność łączenia
 
-Jest możliwe, że środowisko LCS jest połączone z jednym wystąpieniem Dataverse, podczas gdy środowisko podwójnego zapisu jest połączone z innym wystąpieniem Dataverse. Ta niezgodność łączenia może spowodować nieoczekiwane zachowanie i może skończyć się wysyłaniem danych do niewłaściwego środowiska. Zalecane środowisko do użycia dla podwójnego zapisu jest tym, który jest tworzone w ramach integracji Power Platform. Długoterminowo będzie to jedyny sposób, aby ustanowić połączenie między środowiskami.
+Możliwe, że twoje środowisko podwójnego zapisu jest połączone z instancją Dataverse, a LCS nie jest ustawiony na integrację z Power Platform. Ten błąd w łączeniu może spowodować nieoczekiwane zachowanie. Zaleca się, aby szczegóły środowiska LCS odpowiadały temu, z którym jesteś połączony w systemie podwójnego zapisu, tak aby to samo połączenie mogło być używane przez zdarzenia biznesowe, tabele wirtualne i dodatki.
 
-Jeśli Twoje środowisko ma niedopasowane łączenie, LCS wyświetla ostrzeżenie na stronie szczegółów środowiska podobne do „Microsoft wykrył, że Twoje środowisko jest połączone poprzez podwójny zapis do innego miejsca docelowego niż określone w integracji Power Platform, co nie jest zalecane”:
+Jeśli Twoje środowisko ma niedopasowane łączenie, Na stronie szczegółów środowiska LCS pokazuje ostrzeżenie, które przypomina poniższy przykład „Microsoft wykrył, że Twoje środowisko jest połączone poprzez podwójny zapis do innego miejsca docelowego niż określone w integracji Power Platform, co nie jest zalecane”.
 
 :::image type="content" source="media/powerplat_integration_mismatchLink.png" alt-text="niedopasowane łącze integracyjne Power Platform.":::
 
-Jeśli wystąpi ten błąd, dostępne są dwie opcje, w zależności od potrzeb:
+Jeśli otrzymasz to ostrzeżenie, wypróbuj jedno z poniższych rozwiązań:
 
-+ [Odłącz i ponownie połącz środowiska podwójnego zapisu (Resetowanie lub zmienianie łączenia)](relink-environments.md#scenario-reset-or-change-linking) zgodnie z informacjami na stronie szczegółów środowiska LCS. Jest to idealna opcja, ponieważ można go uruchomić bez pomocy technicznej firmy Microsoft.  
-+ Jeśli chcesz zachować łącze w podwójnym zapisie, możesz poprosić o pomoc pomocy technicznej firmy Microsoft, aby zmienić integrację Power Platform, aby użyć istniejącego środowiska Dataverse, jak udokumentowano w poprzedniej sekcji.  
+- Jeśli twoje środowisko LCS nigdy nie było skonfigurowane do integracji z Power Platform, możesz połączyć się z instancją Dataverse, która jest skonfigurowana w trybie podwójnego zapisu, postępując zgodnie z instrukcjami zawartymi w tym artykule.
+- Jeśli Twoje środowisko LCS jest już skonfigurowane do integracji z Power Platform, powinieneś odłączyć dual-write i ponownie połączyć je z tym określonym przez LCS za pomocą [Scenariusza: Resetowanie lub zmiana linkowania](relink-environments.md#scenario-reset-or-change-linking).
+
+W przeszłości dostępna była opcja ręcznego zgłoszenia do supportu, ale było to zanim pojawiła się opcja 1 powyżej.  Microsoft nie obsługuje już ręcznych próśb o relinkowanie za pośrednictwem biletów pomocy.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Wyszukiwanie produktów i odbiorców w punkcie sprzedaży (POS)
 description: Ten temat zawiera omówienie ulepszeń wprowadzonych w produkcie i funkcji wyszukiwania klientów w rozwiązaniu Dynamics 365 Commerce.
 author: ShalabhjainMSFT
-ms.date: 10/26/2021
+ms.date: 05/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 022dcaca9bb3c9e7e749ee143702325367e5149b
-ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
+ms.openlocfilehash: 460c7d3b00421ba43414f7343887edf9b8adad9c
+ms.sourcegitcommit: 9dd2d32fc303023a509d58ec7b5935f89d1e9c6d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "7700096"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "8806435"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Wyszukiwanie produktów i odbiorców w punkcie sprzedaży (POS)
 
@@ -106,6 +106,8 @@ Aby ustawić kryteria wyszukiwania jako skróty, administrator musi otworzyć st
 > Jeśli dodasz zbyt wiele skrótów, menu rozwijane na pasku wyszukiwania w aplikacji POS będzie bardzo nieczytelne, co utrudni pracownikowi wyszukiwanie. Zalecamy, aby dodać tylko potrzebną liczbę skrótów.
 
 Pole **Kolejność wyświetlania** określa kolejność, w jakiej skróty są wyświetlane w aplikacji POS. Wyświetlane kryteria są standardowymi właściwościami używanymi przez algorytm wyszukiwania odbiorców do znajdowania odbiorców. Jednak partnerzy mogą dodawać niestandardowe właściwości jako skróty wyszukiwania. Aby dodać niestandardowe właściwości jako skróty wyszukiwania, administrator systemu musi poszerzyć rozszerzalny element stałotekstowy (enum) używany w kryteriach wyszukiwania odbiorców, a następnie oznaczyć niestandardowe właściwości dostarczone przez partnera jako skróty. Partnerzy są odpowiedzialni za napisanie kodu zapewniającego znajdowanie wyników, gdy ich niestandardowe skróty są używane do wyszukiwania.
+
+Tłumaczenia skrótów są wymagane, jeśli chcesz, by skróty były wyświetlane w punktach sprzedaży. Jeśli język twojego kanału jest inny niż domyślny język systemu, musisz zdefiniować tłumaczenie każdego skrótu w oczekiwanym języku. Tłumaczenia można definiować, wybierając polecenie **Przetłumacz** dla każdego skrótu. 
 
 > [!NOTE]
 > Niestandardowa właściwość dodana do elementu stałotekstowego nie wpływa na standardowy algorytm wyszukiwania odbiorców. Innymi słowy algorytm wyszukiwania odbiorców nie wyszukuje w niestandardowej właściwości. Użytkownicy mogą stosować niestandardową właściwość do wyszukiwania tylko wtedy, gdy jest ona dodana jako skrót albo gdy domyślny algorytm wyszukiwania zostanie zastąpiony.

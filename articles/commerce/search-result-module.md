@@ -2,7 +2,7 @@
 title: Moduł wyników wyszukiwania
 description: W tym temacie omówiono moduły wyników wyszukiwania i opisano, jak dodać je do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 04/21/2022
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 15b3bb50eb0b75fa19ac8e136da83cb362b4cec6
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: dcf3dedbb7c499135bbae45b917153854ecd4a28
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644933"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780925"
 ---
 # <a name="search-results-module"></a>Moduł wyników wyszukiwania
 
@@ -65,23 +65,26 @@ Moduł wyników wyszukiwania obsługuje [moduł szybkiego poglądu](quick-view-m
 
 ## <a name="add-a-search-results-module-to-a-category-page"></a>Dodawanie modułu wyników wyszukiwania do strony kategorii
 
-Aby dodać moduł wyników wyszukiwania do strony kategorii, wykonaj następujące kroki.
+Aby dodać moduł wyników wyszukiwania do strony kategorii w module budowania witryny, wykonaj poniższe kroki.
 
 1. Przejdź do **Szablonu**, a następnie wybierz **Nowy**, aby utworzyć nowy szablon.
 1. W oknie dialogowym **Nowy szablon**, w obszarze **Wyniki wyszukiwania** wprowadź nazwę, a następnie wybierz **OK**.
 1. W gnieździe **Treść** wybierz wielokropek (...), a następnie wybierz **Dodaj moduł**.
-1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Strona domyślna** i wybierz przycisk **OK**.
+1. W oknie dialogowym **Wybierz moduł** wybierz moduł **Strona domyślna** i wybierz przycisk **OK**.
 1. W gnieździe **Głównym** w module **Strony domyślnej** wybierz przycisk wielokropka (...), a następnie wybierz pozycję **Dodaj moduł**.
-1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Kontener** i wybierz przycisk **OK**.
+1. W oknie dialogowym **Wybierz moduły** wybierz moduł **Kontener** i wybierz przycisk **OK**.
 1. W gnieździe **Kontener** wybierz wielokropek (...), a następnie wybierz **Dodaj moduł**.
-1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Nawigacyjny** i wybierz przycisk **OK**.
+1. W oknie dialogowym **Wybierz moduły** wybierz moduł **Łącze do stron nadrzędnych** i wybierz przycisk **OK**.
 1. W okienku właściwości **szlaków nawigacyjnych** wprowadź wartość **1** dla wartości **Minimalne wystąpienia**.
 1. W gnieździe **Kontener** wybierz wielokropek (...), a następnie wybierz **Dodaj moduł**.
-1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Wyniki wyszukiwania** i wybierz przycisk **OK**.
+1. W oknie dialogowym **Wybierz moduły** wybierz moduł **Wyniki wyszukiwania** i wybierz przycisk **OK**.
 1. W okienku właściwości **Wyników wyszukiwania** wprowadź wartość **1** dla **Wartości Minimalne** występują, a następnie ustaw inne wymagane właściwości modułu wyników wyszukiwania. Ustawiając te właściwości w szablonie, zapewniasz, że wszelkie dostosowania do konkretnej strony kategorii będą automatycznie uwzględniać te ustawienia.
 1. Wybierz pozycję **Zakończ edycję**, a następnie wybierz pozycję **Publikuj**, aby opublikować szablon.
 1. Przejdź do **Strony**, a następnie wybierz opcję **Nowy**, aby utworzyć nową stronę.
-1. W oknie dialogowym **Wybierz szablon** wybierz utworzony szablon **Wyników wyszukiwania**, wprowadź **Kategorię strony** dla **Nazwy strony**, a następnie kliknij przycisk **OK**. Ponieważ wszystkie wartości są ustawione w szablonie, strona jest gotowa do opublikowania.
+1. W oknie dialogowym **Utwórz nowa stronę**, w obszarze **Nazwa strony** wprowadź **Strona kategorii**, a następnie wybierz **Dalej**.
+1. W sekcji **Wybierz szablon** wybierz szablon **Wyniki wyszukiwania**, który utworzyłeś, a następnie wybierz **Dalej**.
+1. W sekcji **Wybierz układ** wybierz układ strony (na przykład **Układ elastyczny**), a następnie wybierz **Dalej**.
+1. W sekcji **Przegląd i zakończenie** przejrzyj konfigurację strony. Jeśli chcesz edytować informacje na stronie, wybierz pozycję **Wstecz**. Jeśli informacje na stronie są poprawne, wybierz pozycję **Utwórz stronę**.
 1. Wybierz **Zakończ edycję**, aby zaewidencjonować stronę, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
 
 ## <a name="enable-inventory-awareness-for-the-search-results-module"></a>Włącz świadomość zapasów dla modułu wyników wyszukiwania
@@ -102,7 +105,7 @@ Wyszukiwanie produktów uwzględniające zapasy wykorzystuje atrybuty produktów
 
 Aby utworzyć dedykowane atrybuty produktów, które będą obsługiwać moduł wyników wyszukiwania uwzględniający zapasy, wykonaj poniższe kroki.
 
-1. Przejdź do **Retail i Commerce \> Retail i Commerce IT \> Produkty i zapasy**.
+1. W Commerce przejdź do **Handel detaliczny i inny \> IT: Handel detaliczny i inny \> Harmonogram integracji**.
 1. Wybierz i otwórz **Wypełnij atrybuty produktu poziomem zapasów**.
 1. W oknie dialogowym wprowadź następujące informacje:
 
@@ -116,11 +119,11 @@ Aby utworzyć dedykowane atrybuty produktów, które będą obsługiwać moduł 
 
 Aby skonfigurować atrybuty produktu dla kanału internetowego, wykonaj poniższe kroki. 
 
-1. Wybierz kolejno opcje **Retail i Commerce \> Ustawienia kanału \> Kategorie kanału sprzedaży i atrybuty produktów**.
-2. Wybierz kanał internetowy, dla którego chcesz włączyć moduł wyników wyszukiwania uwzględniający stan inwentarza.
-3. Wybierz i otwórz powiązaną grupę atrybutów, a następnie dodaj do niej nowo utworzony atrybut produktu.
-4. W przypadku wersji Commerce sprzed wydania 10.0.27 wybierz **Ustaw metadane atrybutu**, zaznacz nowo dodany atrybut produktu, a następnie włącz opcje **Pokaż atrybut na kanale**, **Odtwarzanie**, **Możliwość dopracowania** oraz **Możliwość wyszukiwania**.
-5. Przejdź do **Retail i Commerce \> Retail i Commerce IT \> Harmonogram dystrybucji** i uruchom zadanie **1150 (Katalog)**. Jeśli zaplanujesz zadanie **Uzupełnij atrybuty produktu o poziom zapasów** jako proces wsadowy, zalecamy, abyś również zaplanował zadanie 1150 jako proces wsadowy, który będzie wykonywany z tą samą częstotliwością.
+1. W centrali wybierz kolejno opcje **Retail i Commerce \> Ustawienia kanału \> Kategorie kanału sprzedaży i atrybuty produktów**.
+1. Wybierz kanał internetowy, dla którego chcesz włączyć moduł wyników wyszukiwania uwzględniający stan inwentarza.
+1. Wybierz i otwórz powiązaną grupę atrybutów, a następnie dodaj do niej nowo utworzony atrybut produktu.
+1. W przypadku wersji Commerce sprzed wydania 10.0.27 wybierz **Ustaw metadane atrybutu**, zaznacz nowo dodany atrybut produktu, a następnie włącz opcje **Pokaż atrybut na kanale**, **Odtwarzanie**, **Możliwość dopracowania** oraz **Możliwość wyszukiwania**.
+1. Przejdź do **Retail i Commerce \> Retail i Commerce IT \> Harmonogram dystrybucji** i uruchom zadanie **1150 (Katalog)**. Jeśli zaplanujesz zadanie **Uzupełnij atrybuty produktu o poziom zapasów** jako proces wsadowy, zalecamy, abyś również zaplanował zadanie 1150 jako proces wsadowy, który będzie wykonywany z tą samą częstotliwością.
 
 > [!NOTE]
 > W przypadku produktów, które są widoczne w module wyników wyszukiwania, poziom zapasów jest widoczny na poziomie produktu głównego, a nie na poziomie poszczególnych wariantów. Dostępne są tylko dwie możliwe wartości: „Dostępne” i „Poza magazynem”. Rzeczywista etykieta dla wartości jest pobierana z [profilu poziomu inwentaryzacji](inventory-buffers-levels.md). Produkt główny jest uważany za wyczerpany tylko wtedy, gdy wszystkie jego warianty są wyczerpane.

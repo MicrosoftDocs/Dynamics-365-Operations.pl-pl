@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: e8ec20c361f76a6012a7c8e1f03296007f5a05aa
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 77c79c88b08844bf7e399a762bb9eb9746ffb71a
+ms.sourcegitcommit: 611202adaa080250636efabb3b3b32b850d92d04
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645352"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8812952"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10027-july-2022"></a>Wersja zapoznawcza Dynamics 365 Supply Chain Management w wersji 10.0.27 (lipiec 2022)
 
@@ -34,7 +34,7 @@ To wydanie zawiera funkcje, które są podane w następującej tabeli. Możemy z
 
 | Obszar funkcji | Funkcja | Więcej informacji | Włączone przez   |
 |---|---|---|---|
-| Zapasy i logistyka | [Przydzielanie zapasów dla dodatku Widoczność zapasów](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-allocation-inventory-visibility-add-in) | Wkrótce | Domyślnie włączone |
+| Zapasy i logistyka | [Przydzielanie zapasów dla dodatku Widoczność zapasów](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-allocation-inventory-visibility-add-in) | [Widoczność zapasów Przydział zapasów](../inventory/inventory-visibility-allocation.md) | Domyślnie włączone |
 | Produkcja | Widok „Mój dzień” dla interfejsu wykonania hal produkcyjnych | [Jak pracownicy korzystają z interfejsu wykonawczego hali produkcyjnej](../production-control/production-floor-execution-use.md) oraz [Pokaż salda urlopów w interfejsie wykonawczym hali produkcyjnej](../production-control/production-floor-execution-payroll-stats.md) | Zarządzanie funkcjami:<br>*Widok „Mój dzień” dla interfejsu wykonania hal produkcyjnych* |
 | Planowanie | [Wsparcie optymalizacji planowania dla podwykonawstwa](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-subcontracting) | [Zarządzanie pracą podwykonawczą w produkcji](../production-control/manage-subcontract-work-production.md) | Domyślnie włączone |
 
@@ -69,7 +69,7 @@ Niedawno dodano lub znacząco zaktualizowano następujące tematy Pomocy. Te tem
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizacja Platform dla aplikacji Finanse i Działania
 
-Pakiet Microsoft Dynamics 365 Supply Chain Management 10.0.27 zawiera aktualizację platformy. Aby dowiedzieć się więcej, zobacz [aktualizacje platformy dla wersji 10.0.27 aplikacji finansowych i operacyjnych (czerwiec 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-27.md).<!-- KFM Confirm link -->
+Pakiet Microsoft Dynamics 365 Supply Chain Management 10.0.27 zawiera aktualizację platformy. Aby dowiedzieć się więcej, zobacz [aktualizacje platformy dla wersji 10.0.27 aplikacji finansowych i operacyjnych (czerwiec 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-27.md).
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 

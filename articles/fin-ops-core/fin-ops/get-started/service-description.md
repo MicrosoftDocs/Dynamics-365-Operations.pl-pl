@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 26b2821f33ea23dde1fda1d461baa5de1b4f9efc
-ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
+ms.openlocfilehash: 3385edf8961d04cf8bfc4ca06299f1911b76a4f5
+ms.sourcegitcommit: 2b119aec0e6f49bfd36125d9660f49cde5394446
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740660"
+ms.lasthandoff: 05/16/2022
+ms.locfileid: "8758777"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Opis usługi dla aplikacji finansowych i operacyjnych
 
@@ -132,9 +132,9 @@ W tej sekcji opisano typowe zdarzenia zarządzania środowiskiem i danymi wystę
 
 Usługa LCS dostarcza [samoobsługowe narzędzia](../../dev-itpro/deployment/infrastructure-stack.md) oraz [operacje przemieszczania bazy danych](../../dev-itpro/database/dbmovement-operations.md), które służą do wykonywania zadań zarządzania środowiskiem i danymi. Oto kilka przykładów:
 
-**Zdarzenie:** [żądanie wystąpienia produkcyjnego](../imp-lifecycle/prepare-go-live.md#requesting-the-production-environment)
+**Zdarzenie:** [żądanie wystąpienia produkcyjnego](../imp-lifecycle/go-live-faq.md#when-can-i-configure-and-request-my-production-environment)
 
-- Wypełnienie [listy kontrolnej rozpoczynania eksploatacji](../imp-lifecycle/prepare-go-live.md) i przesłanie jej zespołowi [Microsoft FastTrack](/dynamics365/fasttrack/).
+- Wypełnienie [listy przygotowania rozpoczynania eksploatacji](../imp-lifecycle/prepare-go-live.md) i przesłanie jej zespołowi [Microsoft FastTrack](/dynamics365/fasttrack/).
 - Użycie [narzędzia do szacowania zapotrzebowania na subskrypcje](../../dev-itpro/lifecycle-services/subscription-estimator.md) przed zażądaniem wystąpienia produkcyjnego.
 - Wykonanie wszystkich zadań implementacji określonych w [metodologii usługi LCS](../../dev-itpro/lifecycle-services/create-methodology.md).
 

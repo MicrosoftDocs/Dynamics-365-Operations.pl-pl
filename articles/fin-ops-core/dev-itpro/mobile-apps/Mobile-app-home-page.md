@@ -1,8 +1,8 @@
 ---
 title: Aplikacja mobilna — strona główna
-description: W tym temacie opisano aplikację mobilną Finance and Operations (Dynamics 365) i zamieszczono łącza do zasobów, które mogą pomóc w jej zaimplementowaniu w organizacji.
+description: W tym temacie opisano mobilną aplikację finansów i operacji (Dynamics 365) oraz zamieszczono łącza do zasobów, które mogą pomóc w jej zaimplementowaniu w organizacji.
 author: ChrisGarty
-ms.date: 01/22/2020
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,18 +14,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: 8a91f603b4dd058341110c59039a6d3c782e06ee768fbf0e7f94e9527a6354ba
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a6928b1fc7713b6822f53aaa77b8d1281eb6d320
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729715"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811181"
 ---
 # <a name="mobile-app-home-page"></a>Aplikacja mobilna — strona główna
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
-W tym temacie opisano aplikację mobilną **Finance and Operations (Dynamics 365)** i zamieszczono łącza do zasobów, które mogą pomóc w jej zaimplementowaniu w organizacji.
+W tym temacie opisano **mobilną aplikację finansów i operacji (Dynamics 365)** oraz zamieszczono łącza do zasobów, które mogą pomóc w jej zaimplementowaniu w organizacji.
 
 ## <a name="overview"></a>Przegląd
 
@@ -76,7 +77,7 @@ Poniższa tabela zawiera łącza do zasobów, które mogą pomóc we wdrażaniu 
 <tr class="odd">
 <td>1</td>
 <td>Administrator systemu</td>
-<td>Zaimplementuj aplikację Finance and Operations w organizacji.</td>
+<td>Przeprowadź wdrożenie aplikacji finansów i operacji w swojej organizacji.</td>
 <td><ul><li>Jeśli w organizacji jeszcze nie wdrożono wersji oprogramowania Microsoft Dynamics 365, zobacz <a href="../deployment/deploy-demo-environment.md">Wdrażanie środowiska demonstracyjnego</a>.</li><li>Aby wyświetlić listę komórkowych obszarów roboczych, których można używać, zobacz <a href="mobile-workspaces-released.md">Ostatnio wydane mobilne obszary robocze</a>.</li></ul></td>
 </tr>
 <tr class="even">
@@ -131,8 +132,8 @@ Poniższa tabela zawiera łącza do zasobów, które mogą pomóc we wdrażaniu 
 <td>Użytkownik</td>
 <td>Pobieranie i instalowanie aplikacji mobilnej.</td>
 <td>
-<a href="https://go.microsoft.com/fwlink/?linkid=850662">Finance and Operations aplikacja dla systemu Android</a><BR/>
-<a href="https://go.microsoft.com/fwlink/?linkid=850663">Finance and Operations aplikacja dla systemu iOS</a><BR/>
+<a href="https://go.microsoft.com/fwlink/?linkid=850662">Aplikacja Finance and Operations dla Android</a><BR/>
+<a href="https://go.microsoft.com/fwlink/?linkid=850663">Aplikacja Finance and Operations dla iOS</a><BR/>
 (system Windows Phone nie jest obsługiwany)
 </td>
 </tr>

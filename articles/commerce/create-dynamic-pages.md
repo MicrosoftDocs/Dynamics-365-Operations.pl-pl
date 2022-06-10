@@ -2,35 +2,32 @@
 title: Tworzenie dynamicznych stron handlu elektronicznego na podstawie parametrów adresu URL
 description: W tym temacie opisano, jak skonfigurować stronę handlu elektronicznego Microsoft Dynamics 365 Commerce, która może obsługiwać zawartość dynamiczną na podstawie parametrów adresu URL.
 author: StuHarg
-ms.date: 01/28/2021
+ms.date: 05/27/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ROBOTS: ''
-audience: Application user
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
-ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 348fdb30f4d0104e80bea5235c1e337b9f977311
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 3443dad9ead40b59da994c56e22fe2599f4bac82
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694347"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811038"
 ---
 # <a name="create-dynamic-e-commerce-pages-based-on-url-parameters"></a>Tworzenie dynamicznych stron handlu elektronicznego na podstawie parametrów adresu URL
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 W tym temacie opisano, jak skonfigurować stronę handlu elektronicznego Microsoft Dynamics 365 Commerce, która może obsługiwać zawartość dynamiczną na podstawie parametrów adresu URL.
 
-Stronę w usługach handlu elektronicznego można skonfigurować tak, aby obsługiowała inną zawartość, w zależności od segmentu w ścieżce adresu URL. Dlatego strona jest znana jako strona dynamiczna. Segment jest używany jako parametr pobierania zawartości strony. Na przykład strona o nazwie **blog\_viewer** została utworzona i skojarzona z adresem URL `https://fabrikam.com/blog`. Następnie można użyć tej strony, aby wyświetlić inną zawartość, opartą na ostatnim segmencie ścieżki adresu URL. Na przykład ostatnim segmentem adresu URL `https://fabrikam.com/blog/article-1` jest **artykuł-1**.
+Stronę w usługach handlu elektronicznego można skonfigurować tak, aby obsługiowała inną zawartość, w zależności od segmentu w ścieżce adresu URL. Dlatego strona jest znana jako strona dynamiczna. Segment jest używany jako parametr pobierania zawartości strony. Na przykład strona utworzona w programie budującym witrynę i nazwana **blog\_viewer** zostanie zmapowana do adresu URL `https://fabrikam.com/blog`. Następnie można użyć tej strony, aby wyświetlić inną zawartość, opartą na ostatnim segmencie ścieżki adresu URL. Na przykład ostatnim segmentem adresu URL `https://fabrikam.com/blog/article-1` jest **artykuł-1**.
 
-Oddzielne strony niestandardowe, które zastępują stronę dynamiczną, można również powiązać z segmentami w ścieżce adresu URL. Na przykład strona o nazwie **blog\_summary** została utworzona i skojarzona z adresem URL `https://fabrikam.com/blog/about-this-blog`. Gdy zostanie żądany ten adres URL, strona **blog\_summary** skojarzona z parametrem **/about-this-blog** zostanie zwrócona zamiast strony **blog\_viewer**.
+Możesz także zastąpić sparametryzowany segment URL stroną budowania witryny. Na przykład strona utworzona w programie budującym witrynę i nazwana **blog\_summary** może być zmapowana do adresu URL `https://fabrikam.com/blog/about-this-blog`. Kiedy żądany jest URL `https://fabrikam.com/blog` z segmentem `/about-this-blog` na końcu, zwracana jest zawartość strony **blog\_summary**, zamiast segmentu `/about-this-blog` interpretowanego jako parametr do użycia przez stronę `https://fabrikam.com/blog`. 
+
+Wybierając nazwy parametrów, które mają być przekazane stronie dynamicznej, nie można używać nazwy strony dynamicznej w postaci, w jakiej występuje ona w adresie URL (`/blog` w powyższym przykładzie), jako nazwy parametru lub podłańcucha nazwy parametru. 
 
 > [!NOTE]
 > Funkcjonalność hostingu, pobierania i wyświetlania dynamicznej zawartości strony jest implementowana przy użyciu modułu niestandardowego. Więcej informacji jest dostępnych w artykule [Rozszerzanie kanału online](e-commerce-extensibility/overview.md).
@@ -60,7 +57,7 @@ Aby skonfigurować trasę do strony dynamicznej w narzędziu do tworzenia witryn
 1. W obszarze **Ścieżki parametrów adresu URL** wybierz opcję **Dodaj**, a następnie wprowadź ścieżkę URL wprowadzona podczas tworzenia adresu URL (w tym przykładzie jest to **/blog**).
 1. Wybierz **Zapisz i opublikuj**.
 
-Po skonfigurowaniu trasy wszystkie żądania skierowane do sparametryzowanej ścieżki adresu URL spowodują zwrócenie strony skojarzonej z tym adresem URL. Jeśli jakiekolwiek żądania zawierają dodatkowy segment, skojarzona strona zostanie zwrócona, a zawartość strony zostanie pobrana przy użyciu segmentu jako parametru. Na przykład `https://fabrikam.com/blog/article-1` zwróci stronę **blog\_summary**, a zawartość strony zostanie pobrana przy użyciu parametru **/article-1**.
+Po skonfigurowaniu trasy wszystkie żądania skierowane do sparametryzowanej ścieżki adresu URL spowodują zwrócenie strony skojarzonej z tym adresem URL. Jeśli jakiekolwiek żądania zawierają dodatkowy segment, skojarzona strona zostanie zwrócona, a zawartość strony zostanie pobrana przy użyciu segmentu jako parametru. Na przykład `https://fabrikam.com/blog/article-1` zwróci stronę `https://fabrikam.com/blog` wyświetlającą treść, którą pobrano przy użyciu parametru **/article-1**.
 
 ## <a name="override-a-parameterized-url-with-a-custom-page"></a>Zastąp sparametryzowany adres URL stroną niestandardową
 

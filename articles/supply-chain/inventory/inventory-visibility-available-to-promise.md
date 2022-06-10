@@ -2,7 +2,7 @@
 title: Widoczność dostępnych zapasów — harmonogramy zmian i dostępność zapasów
 description: W tym temacie opisano sposób planowania przyszłych zmian dostępnych towarów i obliczania ilości dostępnych towarów (ATP).
 author: yufeihuang
-ms.date: 03/04/2022
+ms.date: 05/11/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-03-04
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 7ce868871f093fd734a466bb8a06c5782bf83302
-ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
+ms.openlocfilehash: 7456f87bede7bd0073223fa4762f96f919799e06
+ms.sourcegitcommit: 38d97efafb66de298c3f504b83a5c9b822f5a62a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8525888"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "8763261"
 ---
 # <a name="inventory-visibility-on-hand-change-schedules-and-available-to-promise"></a>Widoczność dostępnych zapasów — harmonogramy zmian i dostępność zapasów
 
@@ -24,7 +24,7 @@ ms.locfileid: "8525888"
 
 W tym temacie opisano sposób skonfigurowania funkcji *planowania zmian dostępnych towarów* w celu planowania przyszłych zmian dostępnych towarów i obliczania ilości dostępnych towarów (ATP). ATP to ilość towaru, która jest dostępna i którą można obiecać klientowi w następnym okresie. Użycie kalkulacji może znacznie zwiększyć twoje możliwości realizacji zamówień.
 
-W przypadku wielu producentów, sprzedawców lub sprzedawców za mało informacji o dostępnych obecnie sklepach. Muszą mieć pełny wgląd w przyszłą dostępność. Przyszła dostępność powinna uwzględniać przyszłą podaż, przyszły popyt i ATP.
+Dla wielu producentów, detalistów czy sprzedawców nie wystarczy wiedzieć, co jest aktualnie w magazynie. Muszą mieć pełny wgląd w przyszłą dostępność. Przyszła dostępność powinna uwzględniać przyszłą podaż, przyszły popyt i ATP.
 
 ## <a name="enable-and-set-up-the-features"></a><a name="setup"></a>Włączanie i konfigurowanie funkcji
 
@@ -32,9 +32,12 @@ Aby było można używać ATP, należy skonfigurować co najmniej jedną obliczo
 
 ### <a name="set-up-calculated-measures-for-atp-quantities"></a>Ustaw obliczone miary ilości ATP
 
-Miara *obliczona ATP jest* wstępnie zdefiniowaną miarą obliczaną, która jest zwykle używana do znalezienia dostępnej ilości, która jest obecnie dostępna. Suma tych ilości modyfikacji jest ilością dostaw, a suma ilości modyfikatorów odejmowania jest ilością zapotrzebowania.
+Miara *obliczona ATP jest* wstępnie zdefiniowaną miarą obliczaną, która jest zwykle używana do znalezienia dostępnej ilości, która jest obecnie dostępna. Wielkość *podaży* jest sumą ilości dla tych środków fizycznych, które mają modyfikator typu *dodanie*, a *wielkość popytu* jest sumą ilości dla tych środków fizycznych, które mają modyfikator typu *odjęcie*.
 
-W celu obliczenia ilości ATP można dodawać wiele obliczonych miar. Jednak łączna liczba modyfikatorów we wszystkich obliczanych miarach ATP powinna być mniejsza niż dziewięć.
+Możesz dodać wiele działań obliczeniowych, aby obliczyć wiele ilości ATP. Jednakże całkowita liczba odrębnych środków fizycznych we wszystkich środkach obliczanych w ramach ATP powinna być mniejsza niż dziewięć.
+
+> [!IMPORTANT]
+> Obliczona miara jest złożeniem miar fizycznych. Jego formuła może zawierać tylko miary fizyczne bez duplikatów, a nie miary obliczone.
 
 Na przykład konfigurujesz następującą miarę wyliczaną:
 
@@ -43,6 +46,12 @@ Na przykład konfigurujesz następującą miarę wyliczaną:
 Suma (*PhysicalInvent* + *OnHand* + *Unrestricted* + *QualityInspection* + *Inbound*) reprezentuje podaż, a suma (*ReservPhysical* + *SoftReservePhysical* + *Outbound*) reprezentuje popyt. W związku z tym obliczoną miarę można zrozumieć w następujący sposób:
 
 **On-hand-available** = *Supply* – *Demand*
+
+Możesz dodać inną wyliczoną miarę, aby obliczyć **fizyczną ilość** ATP na rękę.
+
+**Fizycznie dostępna ilość** = (*PhysicalInvent* + *OnHand* + *Unrestricted* + *QualityInspection* + *Inbound*) – (*Outbound*)
+
+Istnieje osiem odrębnych miar fizycznych dla tych dwóch obliczonych miar ATP: *PhysicalInvent*, *OnHand*, *Unrestricted*, *QualityInspection*, *Inbound*, *ReservPhysical*, *SoftReservePhysical* i *Outbound*.
 
 Aby uzyskać więcej informacji o miarach wyliczanych, zobacz: [Obliczone miary](inventory-visibility-configuration.md#calculated-measures).
 
@@ -80,7 +89,7 @@ Można na przykład umieścić zamówienie na 10 osób, które ma być przyjeżd
 
 Kwerenda widoczności zapasów w odniesieniu do ilości dostępnych zapasów i ATP zwraca następujące informacje dla każdego dnia w okresie harmonogramu:
 
-- **Data** – Służy do wprowadzania ostatniej daty, do których odnosi się wiersz daty.
+- **Data** – Służy do wprowadzania ostatniej daty, do których odnosi się wiersz daty. Strefą czasową jest uniwersalny czas koordynowany (UTC).
 - **Ilość dostępna —** rzeczywista ilość dostępna w określonym dniu Obliczenia są dokonywane zgodnie z obliczoną miarą ATP skonfigurowaną dla widoczności zapasów.
 - **Zaplanowane dostawy** — suma wszystkich zaplanowanych ilości przychodzących, które w określonym dniu nie stały się fizycznie dostępne do natychmiastowego zużycia lub wysyłki.
 - **Zaplanowany popyt** — suma wszystkich zaplanowanych ilości wychodzących, które nie zostały zużyte lub wysłane w określonym dniu
@@ -108,79 +117,79 @@ W wynikach w tym przykładzie jest pokazywana *prognozowana wartość w ramach* 
 
     | Data | Dostępne zapasy | Planowana dostawa | Zaplanowany popyt | Prognozowane są informacje o zdjętowanych ramach | Dostępność zapasów |
     | --- | --- | --- | --- | --- | --- |
-    | 2022/02/01 | 20 | | 3 | 17 | 17 |
-    | 2022/02/02 | 20 | | | 17 | 17 |
-    | 2022/02/03 | 20 | | | 17 | 17 |
-    | 2022/02/04 | 20 | | | 17 | 17 |
-    | 2022/02/05 | 20 | | | 17 | 17 |
-    | 2022/02/06 | 20 | | | 17 | 17 |
-    | 2022/02/07 | 20 | | | 17 | 17 |
+    | 2022-02-01 | 20 | | 3 | 17 | 17 |
+    | 2022-02-02 | 20 | | | 17 | 17 |
+    | 2022-02-03 | 20 | | | 17 | 17 |
+    | 2022-02-04 | 20 | | | 17 | 17 |
+    | 2022-02-05 | 20 | | | 17 | 17 |
+    | 2022-02-06 | 20 | | | 17 | 17 |
+    | 2022-02-07 | 20 | | | 17 | 17 |
 
 1. W dniu bieżącym (1 lutego 2022) przesyłasz zaplanowaną ilość dostaw 10 na 3 lutego 2022. Poniższa tabela przedstawia wynik.
 
     | Data | Dostępne zapasy | Planowana dostawa | Zaplanowany popyt | Prognozowane są informacje o zdjętowanych ramach | Dostępność zapasów |
     | --- | --- | --- | --- | --- | --- |
-    | 2022/02/01 | 20 | | 3 | 17 | 17 |
-    | 2022/02/02 | 20 | | | 17 | 17 |
-    | 2022/02/03 | 20 | 10 | | 27 | 27 |
-    | 2022/02/04 | 20 | | | 27 | 27 |
-    | 2022/02/05 | 20 | | | 27 | 27 |
-    | 2022/02/06 | 20 | | | 27 | 27 |
-    | 2022/02/07 | 20 | | | 27 | 27 |
+    | 2022-02-01 | 20 | | 3 | 17 | 17 |
+    | 2022-02-02 | 20 | | | 17 | 17 |
+    | 2022-02-03 | 20 | 10 | | 27 | 27 |
+    | 2022-02-04 | 20 | | | 27 | 27 |
+    | 2022-02-05 | 20 | | | 27 | 27 |
+    | 2022-02-06 | 20 | | | 27 | 27 |
+    | 2022-02-07 | 20 | | | 27 | 27 |
 
 1. W dniu bieżącym (1 lutego 2022) można przesłać następujące zaplanowane zmiany ilości:
 
     - Ilość zapotrzebowania 15 na 4 lutego 2022
     - Ilość dostaw 1 na dzień 5 lutego 2022 r.
-    - Ilość zapotrzebowania 3 na 6 lutego 2022
+    - Ilość dostaw 3 na dzień 6 lutego 2022 r.
 
     Poniższa tabela przedstawia wynik.
 
     | Data | Dostępne zapasy | Planowana dostawa | Zaplanowany popyt | Prognozowane są informacje o zdjętowanych ramach | Dostępność zapasów |
     | --- | --- | --- | --- | --- | --- |
-    | 2022/02/01 | 20 | | 3 | 17 | 12 |
-    | 2022/02/02 | 20 | | | 17 | 12 |
-    | 2022/02/03 | 20 | 10 | | 27 | 12 |
-    | 2022/02/04 | 20 | | 15 | 12 | 12 |
-    | 2022/02/05 | 20 | 1 | | 13 | 13 |
-    | 2022/02/06 | 20 | 3 | | 16 | 16 |
-    | 2022/02/07 | 20 | | | 16 | 16 |
+    | 2022-02-01 | 20 | | 3 | 17 | 12 |
+    | 2022-02-02 | 20 | | | 17 | 12 |
+    | 2022-02-03 | 20 | 10 | | 27 | 12 |
+    | 2022-02-04 | 20 | | 15 | 12 | 12 |
+    | 2022-02-05 | 20 | 1 | | 13 | 13 |
+    | 2022-02-06 | 20 | 3 | | 16 | 16 |
+    | 2022-02-07 | 20 | | | 16 | 16 |
 
 1. W dniu bieżącym (1 lutego 2022 r.) wysyłasz zaplanowaną ilość zapotrzebowania wynoszącą 3. W związku z tym należy zatwierdzić tę zmianę, aby była ona odzwierciedlona w rzeczywistej ilości w zapasach. Aby zatwierdzić zmianę, należy przesłać zdarzenie zmiany ilości wychodzącej 3. Następnie cofasz zaplanowaną zmianę, przesyłając harmonogram dostępnych zmian, który ma wychodzącą ilość -3. Poniższa tabela przedstawia wynik.
 
     | Data | Dostępne zapasy | Planowana dostawa | Zaplanowany popyt | Prognozowane są informacje o zdjętowanych ramach | Dostępność zapasów |
     | --- | --- | --- | --- | --- | --- |
-    | 2022/02/01 | 17 | | 0 | 17 | 12 |
-    | 2022/02/02 | 17 | | | 17 | 12 |
-    | 2022/02/03 | 17 | 10 | | 27 | 12 |
-    | 2022/02/04 | 17 | | 15 | 12 | 12 |
-    | 2022/02/05 | 17 | 1 | | 13 | 13 |
-    | 2022/02/06 | 17 | 3 | | 16 | 16 |
-    | 2022/02/07 | 17 | | | 16 | 16 |
+    | 2022-02-01 | 17 | | 0 | 17 | 12 |
+    | 2022-02-02 | 17 | | | 17 | 12 |
+    | 2022-02-03 | 17 | 10 | | 27 | 12 |
+    | 2022-02-04 | 17 | | 15 | 12 | 12 |
+    | 2022-02-05 | 17 | 1 | | 13 | 13 |
+    | 2022-02-06 | 17 | 3 | | 16 | 16 |
+    | 2022-02-07 | 17 | | | 16 | 16 |
 
 1. Następnego dnia (2 lutego 2022) okres harmonogramu zmienia się w przód o jeden dzień. Poniższa tabela przedstawia wynik.
 
     | Data | Dostępne zapasy | Planowana dostawa | Zaplanowany popyt | Prognozowane są informacje o zdjętowanych ramach | Dostępność zapasów |
     | --- | --- | --- | --- | --- | --- |
-    | 2022/02/02 | 17 | | | 17 | 12 |
-    | 2022/02/03 | 17 | 10 | | 27 | 12 |
-    | 2022/02/04 | 17 | | 15 | 12 | 12 |
-    | 2022/02/05 | 17 | 1 | | 13 | 13 |
-    | 2022/02/06 | 17 | 3 | | 16 | 16 |
-    | 2022/02/07 | 17 | | | 16 | 16 |
-    | 2022/02/08 | 17 | | | 16 | 16 |
+    | 2022-02-02 | 17 | | | 17 | 12 |
+    | 2022-02-03 | 17 | 10 | | 27 | 12 |
+    | 2022-02-04 | 17 | | 15 | 12 | 12 |
+    | 2022-02-05 | 17 | 1 | | 13 | 13 |
+    | 2022-02-06 | 17 | 3 | | 16 | 16 |
+    | 2022-02-07 | 17 | | | 16 | 16 |
+    | 2022-02-08 | 17 | | | 16 | 16 |
 
 1. Jednak dwa dni później (4 lutego 2022) ilość dostawy 10 zaplanowana na 3 lutego wciąż nie nadeszła. Poniższa tabela przedstawia wynik.
 
     | Data | Dostępne zapasy | Planowana dostawa | Zaplanowany popyt | Prognozowane są informacje o zdjętowanych ramach | Dostępność zapasów |
     | --- | --- | --- | --- | --- | --- |
-    | 2022/02/04 | 17 | | 15 | 2 | 2 |
-    | 2022/02/05 | 17 | 1 | | 3 | 3 |
-    | 2022/02/06 | 17 | 3 | | 6 | 6 |
-    | 2022/02/07 | 17 | | | 6 | 6 |
-    | 2022/02/08 | 17 | | | 6 | 6 |
-    | 2022/02/09 | 17 | | | 6 | 6 |
-    | 2022/02/10 | 17 | | | 6 | 6 |
+    | 2022-02-04 | 17 | | 15 | 2 | 2 |
+    | 2022-02-05 | 17 | 1 | | 3 | 3 |
+    | 2022-02-06 | 17 | 3 | | 6 | 6 |
+    | 2022-02-07 | 17 | | | 6 | 6 |
+    | 2022-02-08 | 17 | | | 6 | 6 |
+    | 2022-02-09 | 17 | | | 6 | 6 |
+    | 2022-02-10 | 17 | | | 6 | 6 |
 
     Jak widać planowane (ale nie zatwierdzone) zmiany w stanie zapasów nie wpływają na rzeczywistą ilość w zapasach.
 
@@ -190,8 +199,8 @@ Poniższych adresów URL interfejsu programowania aplikacji (API) można używa�
 
 | Ścieżka | Metoda | Opis |
 | --- | --- | --- |
-| `/api/environment/{environmentId}/on-hand/changeschedule` | `POST` | Utwórz jedną zaplanowaną zmianę od ręki. |
-| `/api/environment/{environmentId}/on-hand/changeschedule/bulk` | `POST` | Utwórz wiele zaplanowanych zmian od ręki. |
+| `/api/environment/{environmentId}/onhand/changeschedule` | `POST` | Utwórz jedną zaplanowaną zmianę od ręki. |
+| `/api/environment/{environmentId}/onhand/changeschedule/bulk` | `POST` | Utwórz wiele zaplanowanych zmian od ręki. |
 | `/api/environment/{environmentId}/onhand` | `POST` | Tworzenie jednego zdarzenia zmiany dostępnych zapasów. |
 | `/api/environment/{environmentId}/onhand/bulk` | `POST` | Tworzenie wielu zdarzeń zmiany. |
 | `/api/environment/{environmentId}/onhand/indexquery` | `POST` | Zapytanie przy użyciu metody `POST`. |
@@ -199,31 +208,46 @@ Poniższych adresów URL interfejsu programowania aplikacji (API) można używa�
 
 Więcej informacji zawiera temat [Publiczne interfejsy API widoczności zasobów reklamowych](inventory-visibility-api.md).
 
-### <a name="submit-on-hand-change-schedules"></a>Przesyłanie harmonogramów zmian w sypkich składach
+### <a name="create-one-on-hand-change-schedule"></a>Utwórz jeden harmonogram zmian zapasów dostępnych od ręki
 
-Harmonogramy zmian na bieżąco są tworzone przez przesłanie żądania `POST` do odpowiedniego adresu URL usługi Inventory Visibility (patrz sekcja [Przesyłanie harmonogramów zmian, zdarzeń zmian i zapytań ATP za pośrednictwem interfejsu API](#api-urls)). Możesz również przesłać żądania zbiorcze.
+Harmonogram zmian na miejscu jest tworzony przez wysłanie żądania `POST` do odpowiedniego adresu URL usługi Widoczność zapasów (zobacz sekcję [Wysyłanie harmonogramów zmian, zdarzeń zmian i zapytań ATP przez sekcję interfejsu API](#api-urls)). Możesz również przesłać żądania zbiorcze.
 
-Aby przesłać harmonogram zmian dostępnych towarów, treść żądania musi zawierać identyfikator organizacji, identyfikator produktu, zaplanowaną datę i ilości według daty. Data planowana musi znajdować się między datą bieżącą a końcem bieżącego okresu harmonogramu.
+Harmonogram zmian zapasów dostępnych od ręki może być utworzony tylko wtedy, gdy planowana data jest pomiędzy datą bieżącą a końcem bieżącego okresu harmonogramu. Format daty powinien być następujący: *rok-miesiąc-dzień* (np. **2022-02-01**). Format czasu musi być dokładny tylko do jednego dnia.
 
-#### <a name="example-request-body-that-contains-a-single-update"></a>Przykładowa treść żądania zawierająca pojedynczą aktualizację
+Ten interfejs API tworzy pojedynczy harmonogram zmian w miejscu pracy.
 
-Poniższy przykład przedstawia treść żądania, która zawiera pojedynczą aktualizację.
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/changeschedule
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        id: string,
+        organizationId: string,
+        productId: string,
+        dimensionDataSource: string, # optional
+        dimensions: {
+            [key:string]: string,
+        },
+        quantitiesByDate: {
+            [datetime:datetime]: {
+                [dataSourceName:string]: {
+                    [key:string]: number,
+                },
+            },
+        },
+    }
+```
+
+W poniższym przykładzie pokazano zawartość przykładowej treści bez `dimensionDataSource`.
 
 ```json
-# Url
-# replace {RegionShortName} and {EnvironmentId} with your value
-https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/on-hand/changeschedule
-
-# Method
-Post
-
-# Header
-# Replace {access_token} with the one from your security service
-Api-version: "1.0"
-Content-Type: "application/json"
-Authorization: "Bearer {access_token}"
-
-# Body
 {
     "id": "id-bike-0001",
     "organizationId": "usmf",
@@ -232,38 +256,60 @@ Authorization: "Bearer {access_token}"
         "SiteId": "1",
         "LocationId": "11",
         "ColorId": "Red",
-        "SizeId": "Small"
+        "SizeId&quot;: &quot;Small"
     },
     "quantitiesByDate":
     {
-        "2022/02/01": // today
+        "2022-02-01": // today
         {
             "pos":{
-                "inbound": 10,
-            },
-        },
-    },
+                "inbound": 10
+            }
+        }
+    }
 }
 ```
 
-#### <a name="example-request-body-that-contains-multiple-bulk-updates"></a>Przykładowa treść żądania, która zawiera wiele (zbiorczych) aktualizacji
+### <a name="create-multiple-on-hand-change-schedules"></a>Tworzenie wielu harmonogramów zmian w stanie gotowości do pracy
 
-Poniższy przykład przedstawia treść żądania, która zawiera wiele (zbiorczych) aktualizacji.
+Ten interfejs API może tworzyć wiele rekordów jednocześnie. Jedyną różnicą między tym interfejsem API a interfejsem API jednego zdarzenia są wartości `Path` i `Body`. W tym interfejsie API `Body` dostarcza tablicę rekordów. Maksymalna dozwolona liczba rekordów wynosi 512. Dlatego interfejs API zbiorczego harmonogramu zmian może obsługiwać jednocześnie do 512 zaplanowanych zmian.
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/changeschedule/bulk
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    [
+        {
+            id: string,
+            organizationId: string,
+            productId: string,
+            dimensionDataSource: string,
+            dimensions: {
+                [key:string]: string,
+            },
+            quantityDataSource: string, # optional
+            quantitiesByDate: {
+                [datetime:datetime]: {
+                    [dataSourceName:string]: {
+                        [key:string]: number,
+                    },
+                },
+            },
+        },
+        ...
+    ]
+```
+
+W poniższym przykładzie pokazano zawartość przykładowej treści.
 
 ```json
-# Url
-# replace {RegionShortName} and {EnvironmentId} with your value
-https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/on-hand/changeschedule/bulk
-
-# Method
-Post
-
-# Header
-# replace {access_token} with the one from your security service
-Api-version: "1.0"
-Content-Type: "application/json"
-Authorization: "Bearer {access_token}"
-
 [
     {
         "id": "id-bike-0001",
@@ -273,67 +319,51 @@ Authorization: "Bearer {access_token}"
             "SiteId": "1",
             "LocationId": "11",
             "ColorId": "Red",
-            "SizeId": "Small"
+            "SizeId&quot;: &quot;Small"
         },
         "quantitiesByDate":
         {
-            "2022/02/01": // today
+            "2022-02-01": // today
             {
                 "pos":{
-                    "inbound": 10,
-                },
-            },
-        },
+                    "inbound": 10
+                }
+            }
+        }
     },
     {
-        "id": "id-bike-0002",
+        "id": "id-car-0002",
         "organizationId": "usmf",
         "productId": "Car",
         "dimensions": {
             "SiteId": "1",
             "LocationId": "11",
             "ColorId": "Red",
-            "SizeId": "Small"
+            "SizeId&quot;: &quot;Small"
         },
         "quantitiesByDate":
         {
-            "2022/02/05":
+            "2022-02-05":
             {
                 "pos":{
-                    "outbound": 10,
-                },
-            },
-        },
+                    "outbound": 10
+                }
+            }
+        }
     }
 ]
 ```
 
-### <a name="submit-on-hand-change-events"></a>Przesyłaj bieżące wydarzenia związane ze zmianą
+### <a name="create-on-hand-change-events"></a>Tworzenie zdarzeń zmiany dostępnych zapasów
 
 Harmonogramy wydarzeń na bieżąco są tworzone przez przesłanie żądania `POST` do odpowiedniego adresu URL usługi Inventory Visibility (patrz sekcja [Przesyłanie harmonogramów zmian, zdarzeń zmian i zapytań ATP za pośrednictwem interfejsu API](#api-urls)). Możesz również przesłać żądania zbiorcze.
 
 > [!NOTE]
-> Zdarzenia zmiany dostępnych zapasów nie są unikatowe dla funkcji ATP, ale są częścią standardowego interfejsu API widoczności zapasów. Ten przykład został uwzględniony, ponieważ zdarzenia są istotne podczas pracy z ATP. Zdarzenia zmian na rękę przypominają rezerwacje zmian na rękę, ale komunikaty o zdarzeniach muszą być wysyłane do innego adresu URL interfejsu API, a zdarzenia używają `quantities` zamiast `quantityByDate` w treści wiadomości. Aby uzyskać więcej informacji o zdarzeniach zmian dostępnych zapasów i innych funkcjach interfejsu API widoczności zapasów, zobacz interfejsy [API dotyczące widoczności zapasów](inventory-visibility-api.md).
-
-Aby przesłać zdarzenie dotyczące bieżącej zmiany, treść wniosku musi zawierać identyfikator organizacji, identyfikator produktu, zaplanowaną datę i ilości według daty. Data planowana musi znajdować się między datą bieżącą a końcem bieżącego okresu harmonogramu.
+> Zdarzenia zmiany dostępnych zapasów nie są unikatowe dla funkcji ATP, ale są częścią standardowego interfejsu API widoczności zapasów. Ten przykład został uwzględniony, ponieważ zdarzenia są istotne podczas pracy z ATP. Zdarzenia zmian na rękę przypominają rezerwacje zmian na rękę, ale komunikaty o zdarzeniach muszą być wysyłane do innego adresu URL interfejsu API, a zdarzenia używają `quantities` zamiast `quantityByDate` w treści wiadomości. Aby uzyskać więcej informacji o zdarzeniach zmian dostępnych zapasów i innych funkcjach interfejsu API widoczności zapasów, zobacz interfejsy [API dotyczące widoczności zapasów](inventory-visibility-api.md#create-one-onhand-change-event).
 
 Poniższy przykład przedstawia treść żądania, która zawiera pojedyncze zdarzenie zmiany dostępnej.
 
 ```json
-# Url
-# replace {RegionShortName} and {EnvironmentId} with your value
-https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand
-
-# Method
-Post
-
-# Header
-# Replace {access_token} with the one from your security service
-Api-version: "1.0"
-Content-Type: "application/json"
-Authorization: "Bearer {access_token}"
-
-# Body
 {
     "id": "id-bike-0001",
     "organizationId": "usmf",
@@ -342,7 +372,7 @@ Authorization: "Bearer {access_token}"
         "SiteId": "1",
         "LocationId": "11",
         "SizeId": "Big",
-        "ColorId": "Red",
+        "ColorId": "Red"
     },
     "quantities": {
         "pos": {
@@ -362,46 +392,71 @@ W żądaniu ustaw `QueryATP` na *prawda*, jeśli chcesz odpytywać zaplanowane b
 - Jeśli przesyłasz żądanie za pomocą metody `POST`, ustaw ten parametr w treści żądania.
 
 > [!NOTE]
-> Niezależnie od tego, czy parametr `returnNegative` jest ustawiony na *prawda* lub *fałsz* w treści żądania, wynik będzie zawierał wartości ujemne w przypadku zapytania dotyczącego zaplanowanych dostępnych zmian i wyników ATP. Te ujemne wartości zostaną uwzględnione, ponieważ jeśli zaplanowano tylko zamówienia popytowe lub ilości dostaw są mniejsze niż ilości popytu, ilości planowanych zmian w zapasach będą ujemne. Jeśli wartości ujemne nie zostały uwzględnione, wyniki byłyby mylące. Aby uzyskać więcej informacji dotyczących tej opcji i sposobu działania tej opcji w przypadku innych typów kwerend, zobacz [interfejsy API publiczne widoczności zapasów](inventory-visibility-api.md).
+> Niezależnie od tego, czy parametr `returnNegative` jest ustawiony na *prawda* lub *fałsz* w treści żądania, wynik będzie zawierał wartości ujemne w przypadku zapytania dotyczącego zaplanowanych dostępnych zmian i wyników ATP. Te ujemne wartości zostaną uwzględnione, ponieważ jeśli zaplanowano tylko zamówienia popytowe lub ilości dostaw są mniejsze niż ilości popytu, ilości planowanych zmian w zapasach będą ujemne. Jeśli wartości ujemne nie zostały uwzględnione, wyniki byłyby mylące. Aby uzyskać więcej informacji dotyczących tej opcji i sposobu działania tej opcji w przypadku innych typów kwerend, zobacz [interfejsy API publiczne widoczności zapasów](inventory-visibility-api.md#query-with-post-method).
 
-### <a name="post-method-example"></a>Przykład metody POST
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/indexquery
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        dimensionDataSource: string, # Optional
+        filters: {
+            organizationId: string[],
+            productId: string[],
+            siteId: string[],
+            locationId: string[],
+            [dimensionKey:string]: string[],
+        },
+        groupByValues: string[],
+        returnNegative: boolean,
+    }
+```
 
 W poniższym przykładzie pokazano, jak utworzyć treść żądania, która może zostać przesłana do widoczności zapasów za pomocą metody `POST`.
 
 ```json
-# Url
-# replace {RegionShortName} and {EnvironmentId} with your value
-https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/on-hand/indexquery
-
-# Method
-Post
-
-# Header
-# replace {access_token} with the one from your security service
-Api-version: "1.0"
-Content-Type: "application/json"
-Authorization: "Bearer {access_token}"
-
-# Body
 {
     "filters": {
         "organizationId": ["usmf"],
         "productId": ["Bike"],
         "siteId": ["1"],
-        "LocationId": ["11"],
+        "LocationId": ["11"]
     },
     "groupByValues": ["ColorId", "SizeId"],
     "returnNegative": true,
-    "QueryATP":true,
+    "QueryATP":true
 }
 ```
 
 ### <a name="get-method-example"></a>Przykład metody GET
 
+```txt
+Path:
+    /api/environment/{environmentId}/onhand
+Method:
+    Get
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Query(Url Parameters):
+    groupBy
+    returnNegative
+    [Filters]
+```
+
 W poniższym przykładzie pokazano, jak utworzyć adres URL żądania jako żądanie `GET`.
 
 ```txt
-https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand?organizationId=usmf&productId=Bike&SiteId=1&groupBy=ColorId,SizeId&returnNegative=true&QueryATP=true
+https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand?organizationId=usmf&productId=Bike&SiteId=1&LocationId=11&groupBy=ColorId,SizeId&returnNegative=true&QueryATP=true
 ```
 
 Wynik tego żądania `GET` jest dokładnie taki sam, jak wynik żądania `POST` w poprzednim przykładzie.

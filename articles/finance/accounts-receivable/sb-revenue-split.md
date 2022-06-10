@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 5c2eb6c8e18770eb149c445f662ab7a90aad81a7
-ms.sourcegitcommit: 367e323bfcfe41976e5d8aa5f5e24a279909d8ac
+ms.openlocfilehash: 73dbc2242639a54d687506e7c325fec4b9a95d12
+ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "8660459"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "8770162"
 ---
 # <a name="revenue-split-templates-in-subscription-billing"></a>Szablony podziału przychodów w rozliczeniach subskrypcyjnych
 
@@ -99,3 +99,54 @@ Aby utworzyć harmonogram rozliczeń z pozycją, która jest ustawiona na podzia
 > - Pozycje podrzędne są automatycznie wprowadzane do wiersza zlecenia sprzedaży lub harmonogramu rozliczeń.
 >
 > Jeśli opcja **Automatycznie utwórz podział przychodu** jest ustawiona na **Nie**, zachowanie jest takie, jak opisano wcześniej.
+
+## <a name="additional-revenue-split-information"></a>Dodatkowe informacje o podziale przychodów
+
+Kiedy dodajesz pozycję, która jest częścią podziału przychodu, zwróć uwagę na następujące informacje: 
+
+- Kwota macierzysta nie może być odroczona.
+- Data rozpoczęcia, data zakończenia, ilość, jednostka, miejsce i wartości magazynowe pozycji podrzędnych są oparte na pozycji nadrzędnej. Wartości te nie mogą być zmienione dla elementów podrzędnych. Wszystkie zmiany muszą być dokonywane w elemencie nadrzędnym. 
+- Metoda ustalania cen jest **płaska** i nie można jej zmienić.
+- Elementy podrzędne mogą być dodawane i usuwane.
+- Elementy nadrzędne i podrzędne muszą używać tej samej grupy elementów. 
+- Elementy podrzędne mogą mieć jedną z następujących konfiguracji:
+
+    - Pola **Częstotliwość rozliczeń** i **Częstotliwość rozliczeń** są ustawione na taką samą wartość jak w przypadku elementu nadrzędnego. 
+    - Pole **Częstotliwość rozliczania** jest ustawione na **Jeden raz**. W tym przypadku pole **Odstępy rozliczeniowe** jest automatycznie ustawione na **1**. 
+
+- Suma kwot netto pozycji podrzędnych jest równa kwocie nadrzędnej. Jeśli metodą alokacji jest **kwoty zerowe**, zarówno suma kwot pozycji podrzędnych, jak i kwota nadrzędna wynoszą 0 (zero). 
+
+    > [!NOTE]
+    > Jeśli metodą alokacji jest **Zero kwoty nadrzędnej**, to (niezerowa) suma pozycji podrzędnych nie jest równa kwocie nadrzędnej, czyli wynosi 0 (zero). Ta metoda alokacji jest używana do celów wewnętrznych, aby pracownicy mogli zobaczyć pozycje podrzędne. Klienci mogą jednak zobaczyć tylko element nadrzędny.
+
+- Jeśli typ układu wieloelementowego (MEA) dla zamówienia sprzedaży to **Jeden**, odpowiednia linia transakcyjna przypisania przychodu wieloelementowego jest tworzona po dodaniu pozycji nadrzędnej i podrzędnej. 
+- Jeśli metodą podziału dochodu jest **Równe kwoty**, a kwota nadrzędna zostanie zmieniona, kwoty zostaną przeliczone dla wszystkich linii podrzędnych. 
+- W przypadku podziału przychodu, gdzie metodą alokacji jest **Kwota zmienna**, mają miejsce następujące działania:
+
+    - Kwota netto pozycji nadrzędnej pojawia się w kolumnie **Kwota nadrzędna**. Tej wartości można edytować. Jednak cena jednostkowa, kwota netto i rabat wynoszą 0 (zero) i nie mogą być edytowane.
+    - Cena jednostkowa elementów podrzędnych wynosi 0 (zero). Możesz edytować cenę jednostkową lub kwotę netto. Kiedy edytujesz jedną wartość, druga wartość jest automatycznie aktualizowana.
+
+- W przypadku podziału przychodu, gdzie metodą alokacji jest **Procent**, mają miejsce następujące działania:
+
+    - Kwota netto pozycji nadrzędnej pojawia się w kolumnie **Kwota nadrzędna**. Tej wartości można edytować. Jednak cena jednostkowa, kwota netto i rabat wynoszą 0 (zero) i nie mogą być edytowane. 
+    - Kwota netto elementów podrzędnych jest obliczana jako *procent* &times; *kwota nadrzędna*.
+
+- W przypadku podziału przychodu, gdzie metodą alokacji jest **Równa ilość**, mają miejsce następujące działania:
+
+    - Kwota netto pozycji nadrzędnej pojawia się w kolumnie **Kwota nadrzędna**. Tej wartości można edytować. Jednak cena jednostkowa, kwota netto i rabat wynoszą 0 (zero) i nie mogą być edytowane. 
+    - Kwota netto pozycji podrzędnych jest obliczana przez podzielenie kwoty głównej równo pomiędzy wszystkie pozycje podrzędne. 
+    - Jeśli pozycje podrzędne są usuwane lub dodawane, kwota netto i ceny jednostkowe są przeliczane tak, aby wszystkie linie podrzędne miały równe kwoty. 
+    - Jeśli kwoty głównej nie da się podzielić równo, kwota netto i cena jednostkowa ostatniego elementu podrzędnego może być nieco wyższa lub niższa niż kwota netto i cena jednostkowa pozostałych elementów podrzędnych. 
+
+- W przypadku podziału przychodu, gdzie metodą alokacji jest **Kwota zerowa**, mają miejsce następujące działania:
+
+    - Można edytować cenę jednostkową, kwotę netto i rabat. Kwota nadrzędna wynosi 0 (zero) i nie może być edytowana. 
+    - Ilość, jednostka, miejsce i wartości magazynowe pozycji podrzędnych są oparte na pozycji nadrzędnej. Wartości te nie mogą być zmienione dla elementów podrzędnych. Wszystkie zmiany muszą być dokonywane w elemencie nadrzędnym. 
+    - Cena jednostkowa i cena netto pozycji podrzędnych wynosi 0 (zero) i nie może być edytowana. 
+
+- W przypadku podziału przychodu, gdzie metodą alokacji jest **Zerowa kwota macierzysta**, mają miejsce następujące działania:
+
+    - Cena jednostkowa, kwota nadrzędna i kwota netto pozycji nadrzędnej wynoszą 0 (zero).
+    - W harmonogramie rozliczeń linie podrzędne pojawiają się tak, jakby zostały dodane ręcznie, a wszystkie wartości są aktualizowane na podstawie wybranej grupy harmonogramu rozliczeń. Wartości te mogą być edytowane. W przypadku pozycji podrzędnych możesz uzyskać dostęp do opcji **Eskalacja i rabat** oraz **Zaawansowana wycena**, korzystając z pól **Wprowadzona ilość**, **Cena jednostkowa**, **Zniżka** oraz **Kwota netto** w **Wyświetl szczegóły rozliczenia**. 
+    - W zamówieniu sprzedaży wiersze podrzędne mają rabat i wartość procentową rabatu 0 (zero). 
+    - Częstotliwość fakturowania pozycji nadrzędnych i podrzędnych może być zmieniana, a każda linia może mieć inną częstotliwość. Jednak element nadrzędny jest automatycznie aktualizowany tak, by wykorzystywał najkrótszą częstotliwość spośród swoich linii podrzędnych. Na przykład podział przychodów ma dwie pozycje podrzędne, z których jedna korzysta z **miesięcznej** częstotliwości rozliczeń, a druga z **rocznej** częstotliwości rozliczeń. W tym przypadku częstotliwość rozliczeń elementu nadrzędnego jest aktualizowana do **Miesięcznie**.

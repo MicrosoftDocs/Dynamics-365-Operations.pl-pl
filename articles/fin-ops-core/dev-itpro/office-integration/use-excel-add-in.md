@@ -2,7 +2,7 @@
 title: Wyświetlanie i aktualizowanie danych jednostki przy użyciu programu Excel
 description: W tym temacie wyjaśniono, jak otwierać dane jednostek w programie Microsoft Excel, a następnie wyświetlać, aktualizować i edytować te dane przy użyciu dodatku programu Excel dla usługi Microsoft Dynamics.
 author: jasongre
-ms.date: 10/01/2021
+ms.date: 05/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b97c585009b50c6623036d10f54e78a65a89cea
-ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
+ms.openlocfilehash: f5090674fc4f7c49c55a8a12aea8c567545d519f
+ms.sourcegitcommit: 9f11ce4d24f546e96ab794a23479a43a89b742f0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8464945"
+ms.lasthandoff: 05/16/2022
+ms.locfileid: "8762661"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Wyświetlanie i aktualizowanie danych jednostki przy użyciu programu Excel 
 
@@ -110,7 +110,7 @@ Można użyć projektanta, aby dostosować kolumny dodawane automatycznie do ark
 5. Jeśli dodano pole (kolumnę), wybierz opcję **Odśwież**, aby pobrać zaktualizowany zbiór danych.
 
 ## <a name="change-the-publish-batch-size"></a>Zmienianie rozmiaru partii publikowania
-Gdy użytkownicy publikują zmiany w rekordach danych za pomocą dodatku programu Excel, aktualizacje są przesyłane w partiach. Domyślny rozmiar partii publikowania wynosi 100 wierszy. W wersji 10.0.17 i nowszej funkcja **Zezwalaj na konfigurację rozmiaru partii publikowania w dodatku programu Excel** umożliwia elastyczne sterowanie rozmiarem partii publikowania.
+Gdy użytkownicy publikują zmiany w rekordach danych za pomocą dodatku programu Excel, aktualizacje są przesyłane w partiach. Domyślnym (i maksymalnym) rozmiarem publikowanej partii jest 100 wierszy; jednak funkcja **Zezwalaj na konfigurację rozmiaru publikowanej partii w dodatku do Excel** daje Ci elastyczność w zmniejszaniu rozmiaru publikowanej partii, zwłaszcza jeśli przy próbie publikowania aktualizacji z Excela pojawiają się przerwy w działaniu.
 
 Administratorzy systemu mogą określać limit w całym systemie dla rozmiaru partii publikowania w skoroszytach „Otwórz w programie Excel”, ustawiając pole **Limit partii publikowania** w sekcji **Parametry aplikacji** na stronie **Parametry aplikacji pakietu Office**.
 

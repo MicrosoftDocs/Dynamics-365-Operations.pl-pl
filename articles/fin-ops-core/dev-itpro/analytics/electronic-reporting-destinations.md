@@ -2,7 +2,7 @@
 title: Miejsca docelowe raportowania elektronicznego (ER)
 description: Ten temat zawiera informacje dotyczące zarządzania miejscami docelowymi raportowania elektronicznego, typów obsługiwanych miejsc docelowych oraz względów bezpieczeństwa.
 author: nselin
-ms.date: 09/16/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: e8e176b8d4e14eee2050b3c66f7547ff878b5174
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: e3154cb62531bf956365b420b454c98ead7f7335
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647100"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780468"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Miejsca docelowe raportowania elektronicznego (ER)
 
@@ -45,7 +45,7 @@ Alternatywnie można zainstalować jeden z poniższych wstępnie wymaganych skł
 - Aplikacja Microsoft Dynamics AX w wersji 7.0.1 (z maja 2016 r.)
 - [Poprawka aplikacji zarządzania miejscami docelowymi raportowania elektronicznego](https://fix.lcs.dynamics.com/issue/results/?q=3160213)
 
-Istnieje również typ docelowy [drukowania ](er-destination-type-print.md). Aby je wykorzystać, należy zainstalować rozwiązanie Microsoft Dynamics 365 Finance Version 10.0.9 (kwiecień 2020).
+Istnieje również typ docelowy [drukowania ](er-destination-type-print.md). Aby je wykorzystać, należy zainstalować rozwiązanie Microsoft Dynamics 365 Finance w wersji 10.0.9 (kwiecień 2020).
 
 ## <a name="overview"></a>Omówienie
 
@@ -173,11 +173,11 @@ W wersjach aplikacji Finance **wcześniejszych niż 10.0.18** opcję konwersji P
 
 ### <a name="limitations"></a>Ograniczenia
 
-Opcja konwersji pliku PDF jest dostępna tylko dla wdrożeń w chmurze.
+Od wersji Finance **10.0.9** opcja konwersji PDF jest dostępna tylko dla wdrożeń w chmurze. Począwszy od wersji Finance **10.0.27** opcja konwersji PDF jest dostępna dla każdego wdrożenia lokalnego, które ma włączoną opcję [Łączność z internetem](../user-interface/client-disconnected.md).
 
 Wygenerowany dokument PDF jest ograniczony do maksymalnej długości wynoszącej 300 stron.
 
-W aplikacji Finance w **wersji 10.0.9** w dokumencie PDF wytwarzanym z formatu wyjściowego programu Excel jest obsługiwana tylko pozioma orientacja strony. W aplikacji Finance w **wersji 10.0.10 (maj 2020 r.) lub nowszych** można określić [orientację strony](#SelectPdfPageOrientation) w dokumencie PDF, który jest tworzony na podstawie danych wyjściowych programu Excel podczas konfigurowania miejsca docelowego ER.
+Od Finance w **wersji 10.0.9** w dokumencie PDF wytwarzanym z formatu wyjściowego programu Excel jest obsługiwana tylko pozioma orientacja strony. Począwszy od aplikacji Finance w **wersji 10.0.10 lub nowszych** można określić [orientację strony](#SelectPdfPageOrientation) w dokumencie PDF, który jest tworzony na podstawie danych wyjściowych programu Excel podczas konfigurowania miejsca docelowego ER.
 
 Tylko typowe czcionki systemowe systemu operacyjnego Windows są używane do konwertowania danych wyjściowych, które nie zawierają czcionek osadzonych.
 

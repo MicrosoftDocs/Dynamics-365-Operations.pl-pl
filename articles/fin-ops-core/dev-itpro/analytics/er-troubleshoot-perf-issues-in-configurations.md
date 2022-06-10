@@ -2,7 +2,7 @@
 title: Rozwiązywanie problemów z wydajnością w konfiguracjach ER
 description: W tym temacie opisano sposób wykrywania i usuwania problemów z wydajnością w konfiguracjach raportowania elektronicznego (ER).
 author: NickSelin
-ms.date: 06/08/2021
+ms.date: 05/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: maximbel
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: b5f5308f171b6cd4224debec897dbde133e6d8424673aabfab51e6b83b9014e2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e727e06c73ff445bf4219ac5a9eee7bec25740d9
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744393"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811688"
 ---
 # <a name="troubleshooting-performance-issues-in-er-configurations"></a>Rozwiązywanie problemów z wydajnością w konfiguracjach ER
 
@@ -82,7 +82,7 @@ Następnie otwórz śledzenie w projektancie mapowania modelu ER i spójrz na d�
 
 - Czy liczba zapytań i pobranych rekordów odpowiada ogólnej ilości danych? Na przykład jeśli dokument ma 10 wierszy, czy statystyki pokazują, że raport wyodrębnia 10 wierszy lub 1000 wierszy? Jeśli masz znaczną liczbę pobranych rekordów, należy wziąć pod uwagę jedną z następujących poprawek:
 
-    - [Użyj funkcji **FILTER** zamiast funkcji **WHERE**](#filter) do przetwarzania danych po stronie programu SQL Server.
+    - [Użyj funkcji **FILTER** zamiast funkcji **WHERE**](#filter) do przetwarzania danych po stronie programu Microsoft SQL Server.
     - Użyj buforowania, aby uniknąć pobierania tych samych danych.
     - [Użyj funkcji zebranych danych](#collected-data), aby uniknąć pobierania tych samych danych do podsumowania.
 
@@ -191,6 +191,10 @@ To podejście ma kilka ograniczeń. Musisz mieć dostęp administracyjny do masz
 
 Chociaż buforowanie zmniejsza ilość czasu, który jest wymagany do ponownego pobrania danych, kosztuje pamięć. Używaj buforowania w przypadkach, gdy ilość pobieranych danych nie jest zbyt duża. Więcej informacji oraz przykład pokazujący jak używać buforowania można znaleźć w [Ulepszanie odwzorowania modelu na podstawie informacji ze śladu wykonania](trace-execution-er-troubleshoot-perf.md#improve-the-model-mapping-based-on-information-from-the-execution-trace).
 
+#### <a name="reduce-volume-of-data-fetched"></a><a name="reduce-fetched-data"></a>Zmniejsz ilość pobieranych danych
+
+Możesz zmniejszyć zużycie pamięci na buforowanie, ograniczając liczbę pól w rekordach tabeli aplikacji, które pobierasz w trybie uruchomieniowym. W tym przypadku pobierzesz tylko te wartości pól tabeli aplikacji, które są potrzebne w twoim odwzorowaniu modelu ER. Inne pola w tej tabeli nie będą pobierane. Dzięki temu zmniejsza się ilość pamięci potrzebnej do buforowania pobranych rekordów. Aby uzyskać więcej informacji, zobacz [Zwiększ wydajność rozwiązań ER poprzez zredukowanie liczby pól tabeli pobieranych w czasie działania](er-reduce-fetched-fields-number.md).
+
 #### <a name="use-a-cached-parameterized-calculated-field"></a><a name="cached-parameterized"></a>Użyj buforowanych, parametryzowanych pól obliczeniowych
 
 Czasami wartości muszą być szukane wielokrotnie. Przykłady: nazwy kont i numery kont. Aby zaoszczędzić czas, można utworzyć pole obliczeniowe z parametrami najwyższego poziomu, a następnie dodać je do pamięci podręcznej.
@@ -218,4 +222,4 @@ ER może pobierać dane z następujących źródeł:
 - Klasy (źródła danych **obiekt** i **klasa**)
 - Tabele (źródła danych **tabela** i **rekordy tabeli**)
 
-Interfejs [API ER](er-apis-app73.md#how-to-access-internal-x-objects-by-using-erobjectsfactory) także oferuje sposób wysyłania wstępnie obliczonych danych z wywołującego kodu. Pakiet aplikacji zawiera wiele przykładów tego podejścia.
+[Interfejs programowania aplikacji ER (API)](er-apis-app73.md#how-to-access-internal-x-objects-by-using-erobjectsfactory) także oferuje sposób wysyłania wstępnie obliczonych danych z wywołującego kodu. Pakiet aplikacji zawiera wiele przykładów tego podejścia.

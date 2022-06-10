@@ -2,7 +2,7 @@
 title: Mobilny obszar roboczy Zatwierdzenia faktur
 description: Ten temat zawiera informacje o komórkowym obszarze roboczym Zatwierdzenia faktur.
 author: abruer
-ms.date: 12/01/2017
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,22 +12,23 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 0d19e99776f04eab28eb7371bc0ac90ac046b62af0ad785fd3ab28309cae43ab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 08775a574bcd57948c6bf6a634d822b32112f782
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759987"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811366"
 ---
 # <a name="invoice-approvals-mobile-workspace"></a>Mobilny obszar roboczy Zatwierdzenia faktur
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
 Ten temat zawiera informacje o komórkowym obszarze roboczym **Zatwierdzenia faktur**. Ten obszar roboczy wyświetla listę faktur, które zostały Ci przypisane przez proces przepływu pracy nagłówków faktur od dostawców. 
 
 Ten mobilny obszar roboczy jest przeznaczony do używania w aplikacji mobilnej Finance and Operations.
 
-## <a name="overview"></a>Omówienie
+## <a name="overview"></a>Przegląd
 
 Komórkowy obszar roboczy **Zatwierdzenia faktur** pozwala pracownikom i kierownikom ds. rozrachunków z dostawcami wyświetlać faktury, które zostały im przypisane w procesie przepływu pracy nagłówków faktur od dostawców. Można wyświetlić informacje o fakturze, a nawet szczegóły wiersza i dystrybucji, aby podejmować najbardziej trafne decyzje o zatwierdzeniu. W obszarze roboczym można podjąć odpowiednie działania, aby przeprowadzić fakturę przez kolejne etapy przepływu pracy. 
 

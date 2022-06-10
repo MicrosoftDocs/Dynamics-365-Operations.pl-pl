@@ -2,7 +2,7 @@
 title: Operacje online i offline w punkcie sprzedaży (POS)
 description: Ten temat zawiera szczegółowe informacje dotyczące operacji punktu sprzedaży (POS) w Dynamics 365 Commerce. Określa, gdzie w aplikacji można wywołać operacje oraz czy są dostępne w trybie offline..
 author: jblucher
-ms.date: 05/11/2022
+ms.date: 05/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: dc281a691b34731fb0b5986222b41b436912c782
-ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
+ms.openlocfilehash: 7e4556ad11cbea0cb8fb3c5447116a1b54576e17
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740689"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811209"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Operacje online i offline w punkcie sprzedaży (POS)
 
@@ -44,7 +44,7 @@ Poniższe kolumny określają, gdzie można wywołać informacje:
 > [!NOTE]
 > Operacje wymienione poniżej mają zastosowanie do najnowszej wersji usługi Commerce. Niektóre operacje mogły ulec zmianie lub są niedostępne w poprzednich wersjach.
 
-| Identyfikator   | Operacja                                         | Opis                                                                                                                                                                                                    | Operacja użytkownika?    | Ekran transakcyjny | Ekran powitalny | Dostępne w trybie offline? | Specyficzne dla ustawień regionalnych |
+| Identyfikator   | Operacja                                         | Opis                                                                                                                                                                                                    | Operacje użytkownika    | Ekran transakcyjny | Ekran powitalny | Dostępne w trybie offline? | Specyficzne dla ustawień regionalnych |
 | ---- | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------ | -------------- | ----------------- | --------------- |
 | 100  | Sprzedaż produktu                                      | Dodaj określony produkt do transakcji.                                                                                                                                                                    | Tak            | Tak                | Tak            | Tak               | Nie              |
 | 101  | Sprawdzanie ceny                                       | Szukaj ceny określonego produktu.                                                                                                                                        | Tak            | Tak                | Tak            | Tak               | Nie              |
@@ -273,11 +273,11 @@ Poniższe kolumny określają, gdzie można wywołać informacje:
 | 1219 | Otwieranie adresu URL w punkcie sprzedaży                                   | Otwórz skonfigurowany adres URL administratora w punkcie sprzedaży.                                                                                                                                                                           | Tak            | Tak                | Tak            | Tak               | Nie              |
 | 1220 | Zarządzaj sejfami                                       | Zarządzaj sejfem dla różnych kas.                                                                                                                                                                       | Tak            | Tak                | Tak            | Tak               | Nie              |
 | 1221 | Unieważnij zawieszone transakcje                       | Unieważnij zawieszone transakcje.                                                                                                                                                                               | Tak            | Tak                | Tak            | Tak               | Nie              |
-| 1300 | Pomiń rejestrację fiskalną                          | Pomiń rejestrację fiskalną.                                                                                                                                                                                       | Tak            | Tak                | Tak            | Tak               | Tak             |
-| 1301 | Oznacz zdarzenie fiskalne jako zarejestrowane                      |  Oznacz zdarzenie fiskalne jako zarejestrowane.                                                                                                                                                                                  | Tak            | Tak                | Tak            | Tak               | Tak             |
-| 1302 | Wykonaj proces rejestracji fiskalnej              | Wykonaj proces rejestracji fiskalnej.                                                                                                                                                                           | Tak            | Tak                | Tak            | Tak               | Tak             |
-| 1303 | Pomiń błąd sprawdzania kondycji                           | Pomiń błąd sprawdzania kondycji.                                                                                                                                                                                        | Tak            | Tak                | Tak            | Tak               | Tak             |
-| 1304 |  Odrocz rejestrację fiskalną                     | Odroczenie rejestracji fiskalnej.                                                                                                                                                                                  | Tak            | Tak                | Tak            | Tak               | Tak             |
+| 1300 | Pomiń rejestrację fiskalną                          | Pomiń rejestrację fiskalną.                                                                                                                                                                                       | Nie            | Nie                | Nie            | Tak               | Nie             |
+| 1301 | Oznacz zdarzenie fiskalne jako zarejestrowane                      |  Oznacz zdarzenie fiskalne jako zarejestrowane.                                                                                                                                                                                  | Nie            | Nie                | Nie            | Tak               | Nie             |
+| 1302 | Wykonaj proces rejestracji fiskalnej              | Wykonaj proces rejestracji fiskalnej.                                                                                                                                                                           | Nie            | Nie                | Tak            | Tak               | Tak             |
+| 1303 | Pomiń błąd sprawdzania kondycji                           | Pomiń błąd sprawdzania kondycji.                                                                                                                                                                                        | Tak            | Tak                | Tak            | Tak               | Nie             |
+| 1304 |  Odrocz rejestrację fiskalną                     | Odroczenie rejestracji fiskalnej.                                                                                                                                                                                  | Nie            | Nie                | Nie            | Tak               | Nie             |
 | 1400 | Zarządzaj listami kontrolnymi i zadaniami                       | Zarządzaj listą kontrolną i zadaniami pracownika emisyjnie.                                                                                                                                                                        | Nie             | Nie                 | Tak            | Nie                | Nie              |
 | 2000 | Zarządzanie harmonogramem                               | Ta operacja nie jest jeszcze obsługiwana.                                                                                                                                                                           | Tak            | Tak                | Tak            | Nie                | Nie              |
 | 2001 | Planowanie żądań                                 | Ta operacja nie jest jeszcze obsługiwana.                                                                                                                                                                           | Tak            | Tak                | Tak            | Nie                | Nie              |

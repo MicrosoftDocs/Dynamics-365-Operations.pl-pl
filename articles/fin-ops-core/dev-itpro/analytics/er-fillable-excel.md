@@ -2,7 +2,7 @@
 title: Projektowanie konfiguracji projektu w celu generowania dokumentów wychodzących w formacie programu Excel
 description: Ten temat zawiera informacje o tym, jak zaprojektować format modułu raportowania elektronicznego (ER) do wypełniania w szablonie programu Excel, a następnie generować dokumenty wychodzące w formacie programu Excel.
 author: NickSelin
-ms.date: 03/25/2022
+ms.date: 05/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ec25065f2e3cc3b5dd3c9004d5330447f7b2ac61
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 4a34f990c865aa8c82213a60c23d5a44ad75aee4
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645143"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811428"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Projektowanie konfiguracji projektu w celu generowania dokumentów wychodzących w formacie programu Excel
 
@@ -288,6 +288,16 @@ Możesz wybrać pozycję **Aktualizuj z programu Excel** na karcie **Importowani
 
 ![Opcja Utwórz element formatu Arkusz programu Excel w oknie dialogowym aktualizowania z programu Excel.](./media/er-excel-format-update-template.png)
 
+W wersji 10.0.28 i nowszych możesz użyć opcji **Uaktualnij elementy formatu nagłówka i stopki Excela**.
+
+- Jeśli ustawisz tę opcję na **Nie**, elementy formatu Nagłówek i Stopka Excela pozostaną niezmienione, nawet jeśli odpowiednie nagłówki lub stopki zostały zaktualizowane w arkuszach importowanego szablonu w formacie skoroszytu Excela.
+- Jeśli ustawisz tę opcję na **Tak**, elementy formatu Nagłówek i Stopka Excela pozostaną niezmienione, nawet jeśli odpowiednie nagłówki lub stopki zostały zaktualizowane w arkuszach importowanego szablonu w formacie skoroszytu Excela.
+
+    - Jeśli struktura nagłówka lub stopki arkusza nie została zmieniona lub została tylko dodana, to struktura odpowiedniego elementu formatu Excel Nagłówek lub Excel Stopka jest aktualizowana. Wiązania elementów formatu, które są zagnieżdżone pod tym elementem formatu Nagłówek Excela lub Stopka Excela, zostaną zachowane.
+    - Jeśli struktura nagłówka lub stopki arkusza została zmieniona, odpowiedni element formatu Excel Nagłówek lub Excel Stopka jest tworzony na nowo. Wiązania elementów formatu, które są zagnieżdżone pod tym elementem formatu Nagłówek Excela lub Stopka Excela, zostaną usunięte.
+
+![Opcja Aktualizuj elementy formatu Nagłówek i Stopka programu Excel w oknie dialogowym Aktualizacja z Excela.](./media/er-excel-format-update-template2.png)
+
 Aby dowiedzieć się więcej o tej funkcji, wykonaj kroki opisane w temacie [Modyfikowanie formatów raportowania elektronicznego przez ponowne zastosowanie szablonów programu Excel](modify-electronic-reporting-format-reapply-excel-template.md).
 
 ## <a name="validate-an-er-format"></a>Weryfikowanie formatu ER
@@ -355,7 +365,7 @@ Podczas generowania dokumentu wychodzącego w formacie skoroszytu programu Micro
 
 ## <a name="example-2-fixing-the-merged-cells-epplus-issue"></a><a name="example-2"></a>Przykład 2. Rozwiązywanie problemu EPPlus dotyczącego scalonych komórek
 
-Aby wygenerować dokument wychodzący w formacie skoroszytu programu Excel, można uruchomić format ER. Jeśli funkcja **Włącz użycie biblioteki EPPlus w strukturze raportowania elektronicznego** zostanie włączona w obszarze roboczym **Zarządzanie funkcjami**, [biblioteka EPPlus](https://www.nuget.org/packages/epplus/4.5.2.1) będzie używana do tworzenia danych wyjściowych programu Excel. Jednak ze względu na znane [zachowanie programu Excel](https://answers.microsoft.com/msoffice/forum/all/deleting-a-range-of-cells-that-includes-merged/8601462c-4e2c-48e0-bd23-848eecb872a9) oraz ograniczenie biblioteki EPPlus może wystąpić wyjątek „Nie można usuwać/zastępować scalonych komórek. Zakres został częściowo scalony z innym scalonym zakresem”. Aby dowiedzieć się, jakiego rodzaju szablony programu Excel mogą być przyczyną tego wyjątku i jak można rozwiązać ten problem, wykonaj poniższy przykład.
+Aby wygenerować dokument wychodzący w formacie skoroszytu programu Excel, można uruchomić format ER. Jeśli funkcja **Włącz użycie biblioteki EPPlus w strukturze raportowania elektronicznego** zostanie włączona w obszarze roboczym **Zarządzanie funkcjami**, [biblioteka EPPlus](https://www.nuget.org/packages/epplus/4.5.2.1) będzie używana do tworzenia danych wyjściowych programu Excel. Jednak ze względu na znane [zachowanie programu Excel](https://answers.microsoft.com/en-us/msoffice/forum/all/deleting-a-range-of-cells-that-includes-merged/8601462c-4e2c-48e0-bd23-848eecb872a9) oraz ograniczenie biblioteki EPPlus może wystąpić wyjątek „Nie można usuwać/zastępować scalonych komórek. Zakres został częściowo scalony z innym scalonym zakresem”. Aby dowiedzieć się, jakiego rodzaju szablony programu Excel mogą być przyczyną tego wyjątku i jak można rozwiązać ten problem, wykonaj poniższy przykład.
 
 1. W aplikacji klasycznej Excel utwórz nowy skoroszyt programu Excel.
 2. W arkuszu **Sheet1** dodaj nazwę **ReportTitle** dla komórki **A2**.

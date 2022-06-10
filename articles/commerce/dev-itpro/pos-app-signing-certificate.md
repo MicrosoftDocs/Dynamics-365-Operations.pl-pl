@@ -1,8 +1,8 @@
 ---
-title: Rejestrowanie aplikacji MPOS z certyfikatem podpisywania kodu
+title: Podpisz plik MPOS .appx certyfikatem podpisywania kodu
 description: W tym temacie wyjaśniono sposób podpisywania aplikacji MPOS za pomocą certyfikatu podpisywania kodu.
 author: mugunthanm
-ms.date: 05/11/2022
+ms.date: 05/27/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: tfehr
@@ -10,16 +10,17 @@ ms.custom: 28021
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-09-2019
-ms.openlocfilehash: e45961cf1ddb385d914b700d03bc95d07de47b68
-ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
+ms.openlocfilehash: 38c094de6f94381a809fdb68d2e76d410e406934
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8741550"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811092"
 ---
-# <a name="sign-mpos-appx-with-a-code-signing-certificate"></a>Podpisywanie aplikacji MPOS certyfikatem podpisywania kodu
+# <a name="sign-the-mpos-appx-file-with-a-code-signing-certificate"></a>Podpisz plik MPOS .appx certyfikatem podpisywania kodu
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Aby zainstalować program Modern POS (MPOS), musisz podpisać aplikację MPOS przy użyciu certyfikatu podpisywania kodu od zaufanego dostawcy i zainstalować ten sam certyfikat na wszystkich komputerach, na których program MPOS jest zainstalowany w zaufanym folderze głównym bieżącego użytkownika.
 
@@ -51,21 +52,22 @@ Korzystanie z zadania bezpiecznego pliku jest zalecanym rozwiązaniem w przypadk
 Pobierz zadanie [DownloadFile](/visualstudio/msbuild/downloadfile-task) i dodaj je jako pierwszy krok procesu kompilacji. Użycie funkcji bezpiecznego pliku ma tę zaletę, że plik jest szyfrowany i umieszczany na dysku podczas kompilacji, niezależnie od tego, czy potok kompilacji zakończy się pomyślnie, nie powiedzie się czy zostanie anulowany. Plik jest usuwany z lokalizacji pobierania po zakończeniu procesu kompilacji.
 
 1. Pobierz i dodaj zadanie bezpiecznego pliku jako pierwszy krok w potoku kompilacji platformy Azure. Zadanie Zabezpieczenia pliku można pobrać z pliku [DownloadFile](https://marketplace.visualstudio.com/items?itemName=automagically.DownloadFile).
-2. Przekaż certyfikat do zadania Zabezpieczenia pliku i ustaw nazwę odwołania w obszarze Zmienne wyjściowe, tak jak pokazano na poniższym obrazie.
+1. Przekaż certyfikat do zadania Zabezpieczenia pliku i ustaw nazwę odwołania w obszarze Zmienne wyjściowe, tak jak pokazano na poniższym obrazie.
     > [!div class="mx-imgBorder"]
     > ![Bezpieczny plik zadania.](media/SecureFile.png)
-3. Utwórz nową zmienną w potokach Azure, wybierając **nową zmienną** na karcie **Zmienne**.
-4. Podaj nazwę zmiennej w polu wartości, na przykład **MySigningCert**.
-5. Zapisz zmienną.
-6. Otwórz plik **Customization.settings** z aplikacji **RetailSDK\\BuildTools** i zaktualizuj plik **ModernPOSPackageCertificateKeyFile** przy użyciu nazwy zmiennej utworzonej w potoku (krok 3). Na przykład:
+1. Utwórz nową zmienną w potokach Azure, wybierając **nową zmienną** na karcie **Zmienne**.
+1. Podaj nazwę zmiennej w polu wartości, na przykład **MySigningCert**.
+1. Zapisz zmienną.
+1. Otwórz plik **Customization.settings** z aplikacji **RetailSDK\\BuildTools** i zaktualizuj plik **ModernPOSPackageCertificateKeyFile** przy użyciu nazwy zmiennej utworzonej w potoku (krok 3). Na przykład:
 
     ```Xml
     <ModernPOSPackageCertificateKeyFile Condition="'$(ModernPOSPackageCertificateKeyFile)' ==''">$(MySigningCert)</ModernPOSPackageCertificateKeyFile>
     ```
     Ten krok jest wymagany, jeśli certyfikat nie jest chroniony hasłem. Jeśli certyfikat jest chroniony hasłem, należy wykonać następujące kroki.
- 
-7. Na karcie **Zmienne** potoku dodaj nową zmienną tekstową bezpieczną. Ustaw nazwę **MySigningCert.secret** i ustaw wartość hasła dla certyfikatu. Wybierz ikonę blokady, aby zabezpieczyć zmienną.
-8. Dodaj zadanie **skryptu programu Powershell** do potoku (po pobraniu bezpiecznego pliku i przed krokiem kompilacji). Podaj nazwę **wyświetlaną** i ustaw typ jako **w tekście**. Skopiuj i wklej następujące elementy do sekcji skryptu.
+    
+1. Jeśli chcesz, aby plik MPOS .appx był opatrzony znacznikiem czasu podczas podpisywania go certyfikatem, otwórz plik **Retail SDK\\Build tool\\Customization.settings** i zaktualizuj zmienną **ModernPOSPackageCertificateTimestamp** za pomocą dostawcy znacznika czasu (np, `http://timestamp.digicert.com`).
+1. Na karcie **Zmienne** potoku dodaj nową zmienną tekstową bezpieczną. Ustaw nazwę **MySigningCert.secret** i ustaw wartość hasła dla certyfikatu. Wybierz ikonę blokady, aby zabezpieczyć zmienną.
+1. Dodaj zadanie **skryptu programu Powershell** do potoku (po pobraniu bezpiecznego pliku i przed krokiem kompilacji). Podaj nazwę **wyświetlaną** i ustaw typ jako **w tekście**. Skopiuj i wklej następujące elementy do sekcji skryptu.
 
     ```powershell
     Write-Host "Start adding the PFX file to the certificate store."
@@ -74,7 +76,7 @@ Pobierz zadanie [DownloadFile](/visualstudio/msbuild/downloadfile-task) i dodaj 
     Import-PfxCertificate -FilePath $pfxpath -CertStoreLocation Cert:\CurrentUser\My -Password $secureString
     ```
 
-9. Otwórz plik **Customization.settings** z aplikacji **RetailSDK\\BuildTools** i zaktualizuj plik **ModernPOSPackageCertificateThumbprint** wartością odcisku palca certyfikatu.
+1. Otwórz plik **Customization.settings** z aplikacji **RetailSDK\\BuildTools** i zaktualizuj plik **ModernPOSPackageCertificateThumbprint** wartością odcisku palca certyfikatu.
 
     ```Xml
        <ModernPOSPackageCertificateThumbprint Condition="'$(ModernPOSPackageCertificateThumbprint)' == ''"></ModernPOSPackageCertificateThumbprint>
@@ -82,7 +84,6 @@ Pobierz zadanie [DownloadFile](/visualstudio/msbuild/downloadfile-task) i dodaj 
  
 Aby uzyskać szczegółowe informacje dotyczące pobierania odcisku palca dla certyfikatu, zobacz temat [Pobierania odcisku palca certyfikatu](/dotnet/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate#to-retrieve-a-certificates-thumbprint). 
 
- 
 ## <a name="download-or-generate-a-certificate-to-sign-the-mpos-app-manually-using-msbuild-in-sdk"></a>Pobierz lub wygeneruj certyfikat w celu ręcznego podpisania aplikacji MPOS przy użyciu zestawu msbuild w zestawie SDK
 
 Jeśli pobrany lub wygenerowany certyfikat jest używany do podpisywania aplikacji MPOS, zaktualizuj węzeł **ModernPOSPackageCertificateKeyFile** w pliku **BuildTools\\Customization.settings**, aby wskazywał lokalizację pliku pfx (**$(SdkReferencesPath)\\appxsignkey.pfx**). Na przykład:

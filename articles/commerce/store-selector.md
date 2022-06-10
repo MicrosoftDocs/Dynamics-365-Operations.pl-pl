@@ -3,7 +3,7 @@ title: Moduł wyboru sklepu
 description: W tym temacie opisano moduł wyboru sklepu i opisano, jak dodać go do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/04/2022
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7276f25daada8286490ad7e1af2b350e4a2805bb
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 76682f26f62fe4686f5102e3099f038a50005f5e
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710787"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780663"
 ---
 # <a name="store-selector-module"></a>Moduł wyboru sklepu
 
@@ -138,23 +138,26 @@ Aby skonfigurować moduł selektora sklepu, aby wyświetlał dostępne sklepy dl
 1. W oknie dialogowym **Nowy szablon**, w obszarze **Nazwa szablonu** wprowadź **Szablon marketingowy**, a następnie wybierz **OK**.
 1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować szablon, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
 1. Przejdź do **Strony**, a następnie wybierz opcję **Nowy**, aby utworzyć nową stronę.
-1. W oknie dialogowym **Wybierz szablon** wybierz szablon **Szablon marketingowy**. W sekcji **Nazwa strony** przejdź do **Lokalizacje sklepów**, a następnie wybierz przycisk **OK**.
+1. W oknie dialogowym **Utwórz nowa stronę**, w obszarze **Nazwa strony** wprowadź **Lokalizacje sklepów**, a następnie wybierz **Dalej**.
+1. W sekcji **Wybierz szablon** wybierz **szablon marketingowy**, który utworzyłeś, a następnie wybierz **Dalej**.
+1. W sekcji **Wybierz układ** wybierz układ strony (na przykład **Układ elastyczny**), a następnie wybierz **Dalej**.
+1. W sekcji **Przegląd i zakończenie** przejrzyj konfigurację strony. Jeśli chcesz edytować informacje na stronie, wybierz pozycję **Wstecz**. Jeśli informacje na stronie są poprawne, wybierz pozycję **Utwórz stronę**. 
 1. Na nowej stronie wybierz gniazdo **Główne**, następnie wybierz wielokropek (**...**), a następnie wybierz pozycję **Dodaj moduł**.
-1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Kontener** i wybierz przycisk **OK**.
+1. W oknie dialogowym **Wybierz moduły** wybierz moduł **Kontener** i wybierz przycisk **OK**.
 1. W gnieździe **Kontener** wybierz wielokropek (**...**), a następnie wybierz **Dodaj moduł**.
-1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Kontener z 2 modułami** i wybierz przycisk **OK**.
+1. W oknie dialogowym **Wybierz moduły** wybierz moduł **Kontener z 2 modułami** i wybierz przycisk **OK**.
 1. W okienku właściwości modułu określ wartość **Szerokości** jako **Wypełnij kontener**.
 1. Ustawienie wartości **Konfiguracja kolumny portu widoku X-Small** na **100%**.
 1. Ustawienie wartości **Konfiguracja kolumny portu widoku Small** na **100%**.
 1. Ustawienie wartości **Konfiguracja kolumny portu widoku Medium** na **33% 67%**.
 1. Ustawienie wartości **Konfiguracja kolumny portu widoku Large** na **33% 67%**.
 1. W gnieździe **Kontener z 2 kolumnami** wybierz wielokropek (**...**), a następnie wybierz **Dodaj moduł**.
-1. W oknie dialogowym **Dodawanie modułu** wybierz moduł **Selektor sklepu** i wybierz przycisk **OK**.
+1. W oknie dialogowym **Wybierz moduł** wybierz moduł **Selektor sklepu** i wybierz przycisk **OK**.
 1. W okienku właściwości modułu określ wartość **Tryb** jako **Znajdź sklepy**.
 1. Umożliwia ustawienie wartości **Promień wyszukiwania** w milach.
 1. Określ inne właściwości, takie jak **Ustaw jako preferowany sklep**, **Wyświetl wszystkie sklepy** i **Włącz automatyczną sugestię**, jeśli jest to wymagane.
 1. W gnieździe **Kontener z 2 kolumnami** wybierz wielokropek (**...**), a następnie wybierz **Dodaj moduł**.
-1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Mapa** i wybierz przycisk **OK**.
+1. W oknie dialogowym **Wybierz moduły** wybierz moduł **Mapa** i wybierz przycisk **OK**.
 1. W okienku właściwości modułu określ dowolne dodatkowe właściwości, które są wymagane.
 1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować stronę, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
  

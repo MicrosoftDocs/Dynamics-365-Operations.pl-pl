@@ -2,7 +2,7 @@
 title: Cyfrowe karty upominkowe w handlu elektronicznym
 description: W tym temacie opisano, jak działają cyfrowe karty upominkowe w implementacji handlu elektronicznego Microsoft Dynamics 365 Commerce. Zawiera także przegląd ważnych kroków konfiguracji.
 author: anupamar-ms
-ms.date: 12/15/2020
+ms.date: 05/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,17 +14,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: e0cbab05cfd9dcde8ec5caf802d13cd10bc9123716b46307616b0e3e66f0f061
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: de8811b3265bc582a055aaad1f3dea32def552f4
+ms.sourcegitcommit: d38d2fe85dc2497211ba5731617f590029d07145
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727564"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8809594"
 ---
 # <a name="e-commerce-digital-gift-cards"></a>Cyfrowe karty upominkowe w handlu elektronicznym
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 W tym temacie opisano, jak działają cyfrowe karty upominkowe w implementacji handlu elektronicznego Microsoft Dynamics 365 Commerce. Zawiera także przegląd ważnych kroków konfiguracji.
 
@@ -51,15 +50,18 @@ Produkty z cyfrowymi kartami upominkowymi należy skonfigurować w centrali Comm
 
     ![Pole produktu karty upominkowej w programie Commerce Headquarters.](./media/PostGiftcard.png)
 
-- Jeśli karta upominkowa musi obsługiwać wiele wstępnie zdefiniowanych kwot (na przykład $25, $50, i $100), do skonfigurowania tych wstępnie zdefiniowanych kwot należy użyć wymiaru **Rozmiar**. Każda wstępnie zdefiniowana kwota będzie wariantem. Aby uzyskać więcej informacji, zobacz temat [Wymiary produktów](../supply-chain/pim/product-dimensions.md?toc=%2fdynamics365%2fretail%2ftoc.json).
-- Jeśli klienci muszą mieć możliwość określenia niestandardowej kwoty karty podarunkowej, najpierw skonfiguruj wariant, który pozwala na niestandardową kwotę. Następnie otwórz produkt ze strony **Kategorii Zwolnione produkty**, a następnie na skróconej karcie **Commerce** ustaw w polu **Klucz w cenie** wartość **Musi być wejściowa nowa cena**, tak jak pokazano na poniższej ilustracji. To ustawienie zapewnia klientom możliwość wprowadzenia ceny podczas przeglądania produktu na PDP.
+- Jeśli karta upominkowa musi obsługiwać wiele wstępnie zdefiniowanych kwot (na przykład $25, $50, i $100), do skonfigurowania tych wstępnie zdefiniowanych kwot należy użyć wymiaru **Rozmiar**. Każda wstępnie zdefiniowana kwota będzie wariantem produktu. Aby uzyskać więcej informacji, zobacz temat [Wymiary produktów](../supply-chain/pim/product-dimensions.md?toc=%2fdynamics365%2fretail%2ftoc.json).
+- Jeśli klienci muszą mieć możliwość podania własnej kwoty za kartę podarunkową oprócz kwot predefiniowanych, najpierw utwórz wariant, który pozwala na podanie własnej kwoty. Atrybut **Rozmiar** obsługuje warianty kwot niestandardowych. Następnie otwórz produkt ze strony **Kategorii Zwolnione produkty**, a następnie na skróconej karcie **Commerce** ustaw w polu **Klucz w cenie** wartość **Musi być wejściowa nowa cena**, tak jak pokazano na poniższej ilustracji przykładowej. To ustawienie zapewnia klientom możliwość wprowadzenia ceny podczas przeglądania produktu na PDP.
 
     ![Klucz w polu ceny w Commerce headquarters.](./media/KeyInPrice.png)
+    
+    Poniższy przykład ilustruje listę wariantów produktów cyfrowych kart podarunkowych w centrali Commerce, w tym dwa niestandardowe warianty cenowe.
+    ![Warianty produktu cyfrowych kart upominkowych z niestandardowym wariantem ceny](./media/DigitalGiftCards_ProductVariantsWithCustom.png)
 
 - Jako tryb dostawy cyfrowych kart upominkowych należy ustawić wartość **Elektroniczna**. Na stronie **Tryby dostawy** (**Handel detaliczny i inny \> Ustawienia kanału \> Metody dostawy**) wybierz **Elektroniczną** tryb dostawy w okienku listy, a następnie dodaj do siatki produkt cyfrowych kart upominkowych na skróconej karcie **Produkty**, tak jak pokazano na poniższej ilustracji. Aby uzyskać więcej informacji, zobacz temat [Ustaw metody dostawy](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
     ![Cyfrowe karty upominkowe na stronie Tryb dostawy w Commerce headquarters.](./media/ElectronicMode.PNG)
-
+    
 - Upewnij się, że w programie Commerce Headquarters utworzono profil funkcji online i skojarzono go z jego sklepem internetowym. W profilu funkcji dla opcji **Agregacja produktów** ustaw wartość **Tak**. To ustawienie zapewnia agregację wszystkich pozycji z wyjątkiem kart podarunkowych. Aby uzyskać więcej informacji, zobacz temat [Tworzenie profilu funkcji online](online-functionality-profile.md).
 - Aby zapewnić, że odbiorcy otrzymają wiadomość e-mail po zafaktureniu karty upominkowej, utwórz nowy typ powiadomienia pocztą e-mail na stronie **Profile powiadomień pocztą e-mail** i ustaw w polu **Typ powiadomienia pocztą e-mail** wartość **Wystaw kartę upominkową**. Więcej informacji jest dostępnych w artykule [Konfigurowanie profilu powiadomienia](email-notification-profiles.md).
 
