@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1018cb8c3279a27a55a415c23405571e23ab40e1
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: a442256797cb64d30a18268232a07b463bc0db36
+ms.sourcegitcommit: 9f11ce4d24f546e96ab794a23479a43a89b742f0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713706"
+ms.lasthandoff: 05/16/2022
+ms.locfileid: "8762603"
 ---
 # <a name="finance-home-page"></a>Finance — strona główna
 
@@ -76,7 +76,7 @@ Funkcja zarządzania łańcuchem dostaw obejmuje części procesu przetwarzania 
    - Fakturowanie
    - Płacenie za towary i usługi zakupów organizacji 
     
-Aby uzyskać więcej informacji na temat możliwości zarządzania zakupami, zapasami i produkcją, zobacz temat [Supply Chain Management — strona główna](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md).
+Aby uzyskać więcej informacji na temat możliwości zarządzania zakupami, zapasami i produkcją, zobacz temat [Supply Chain Management — strona główna](../supply-chain/index.md).
 
 ## <a name="elearning-courses"></a>Kursy eLearning
 

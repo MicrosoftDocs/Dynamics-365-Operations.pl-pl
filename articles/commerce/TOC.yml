@@ -12,6 +12,8 @@
               items:
                 - name: Nowości i zmiany w rozwiązaniu Commerce — strona główna
                   href: get-started/whats-new-home-page.md
+                - name: Rozwiązanie Commerce 10.0.28 (lipiec 2022)
+                  href: get-started/whats-new-commerce-10-0-28.md
                 - name: Rozwiązanie Commerce 10.0.27 (lipiec 2022)
                   href: get-started/whats-new-commerce-10-0-27.md
                 - name: Rozwiązanie Commerce 10.0.26 (maj 2022)
@@ -1300,6 +1302,10 @@
               items:
                 - name: Tworzenie niestandardowych stron odpowiedzi dla błędów kodu stanu 4xx/5xx
                   href: build-pages-400-500-errors.md
+            - name: Integracja z usługą
+              items:
+                - name: Integruj usługę Customer Voice ze stronami witryny handlu elektronicznego
+                  href: customer-voice-integration.md
         - name: Ochrona przed oszustwami
           items:
             - name: Integracja aplikacji Dynamics 365 Fraud Protection z aplikacją Dynamics 365 Commerce
@@ -2116,8 +2122,10 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/commerce/toc.json
                     - name: Konfigurowanie źródeł danych WYSZUKIWANIA do używania parametrów specyficznych dla raportowania elektronicznego
                       href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/commerce/toc.json
-                    - name: Używanie źródeł danych GROMADZENIA DANYCH w formatach raportowania elektronicznego
+                    - name: Używanie źródeł danych ZBIERANIA DANYCH w formatach raportowania elektronicznego
                       href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/commerce/toc.json
+                    - name: 'Źródła danych USER INPUT PARAMETER są wykorzystywane do określania parametrów raportu, który ma zostać wygenerowany'
+                      href: ../fin-ops-core/dev-itpro/analytics/er-user-input-parameter-data-sources.md?toc=/dynamics365/commerce/toc.json
                     - name: Debugowanie źródeł danych
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurowanie modeli danych
@@ -2728,6 +2736,8 @@
                               href: e-commerce-extensibility/interactive-components.md
                             - name: Symulacja stanu zalogowania podczas lokalnego tworzenia
                               href: e-commerce-extensibility/mock-sign-in.md
+                            - name: Konfigurowanie przeniesienia uwierzytelniania internetowego interfejsu API przy użyciu usługi Azure Active Directory B2C
+                              href: e-commerce-extensibility/web-api-auth-trans-aad-b2c.md
                             - name: Konfigurowanie właściwości modułu pod kątem wyświetlania na podstawie kontekstu
                               href: e-commerce-extensibility/configure-properties-context.md
                             - name: Globalizacja modułów za pomocą klasy CultureInfoFormatter
@@ -2944,6 +2954,8 @@
                   href: troubleshoot/items-without-inventory-checked-out.md
                 - name: 'Jeśli nie jest włączone rozwiązanie ocen i recenzji, na stronach wyników wyszukiwania i kategorii wyświetlana jest funkcja poprawiania ocen'
                   href: troubleshoot/hide-ratings-refiner.md
+                - name: Suma częściowa podsumowania zamówienia nie uwzględnia podatków od opłat podczas korzystania z niestandardowych modułów podsumowania zamówień
+                  href: troubleshoot/summary-taxes-custom-modules-10.0.27.md
             - name: Zarządzanie klientami
               items:
                 - name: Powitalna wiadomość e-mail nie jest wysyłana po utworzeniu nowych klientów

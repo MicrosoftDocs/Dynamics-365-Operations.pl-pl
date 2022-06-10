@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4ea45b238200d4d9d43d563e160e8574271a8ce7
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 9ae75f33d96261691eee52c963a1f1f00c75b0de
+ms.sourcegitcommit: 220101d2511a3164572226294ef090a43a1e6cdd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7487871"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "8789220"
 ---
 # <a name="supply-chain-management-home-page"></a>Supply Chain Management — strona główna
 
@@ -46,7 +46,7 @@ Wybierz obszar funkcji, aby dowiedzieć się więcej na jego temat.
 - [Zarządzanie informacjami o produktach](pim/product-information.md)
 - [Kontrola produkcji](production-control/production-process-overview.md)
 - [Sprzedaż i marketing](sales-marketing/overview-sales-marketing.md)
-- [Zarządzanie usługą](service-management/service-management-home-page.md)
+- [Zarządzanie usługami](service-management/service-management-home-page.md)
 - [Zarządzanie transportem](transportation/transportation-management-overview.md)
 - [Zarządzanie magazynem](warehousing/warehouse-configuration.md)
 
@@ -58,9 +58,9 @@ Aby dowiedzieć się o rozwiązaniu Dynamics 365 Finance, przejdź na [stronę g
 
 Ten krótki film wideo podsumowuje nowe funkcje zarządzania łańcuchami dostaw dodane do Microsoft Dynamics 365 for Finance and Operations w wersji 8.0 (kwiecień 2018).
 
-- [Synchronizowanie zlecenia między rozwiązaniami Field Service i Finance and Operations](https://youtu.be/hAB4TDVMjxU)
+- [Synchronizowanie zlecenia pracy między rozwiązaniami Field Service i Finance and Operations](https://youtu.be/hAB4TDVMjxU)
 
-Te krótkie filmy wideo podsumowuje nowe funkcje zarządzania łańcuchami dostaw dodane do Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (grudzień 2017).
+Te krótkie filmy wideo podsumowują nowe funkcje zarządzania łańcuchami dostaw dodane do rozwiązań Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (grudzień 2017).
 
 - [Doradca optymalizacji](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Używanie szablonu magazynu w celu kopiowania konfiguracji](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
@@ -98,7 +98,7 @@ Wiele tematów dotyczących zarządzania wytwarzaniem i łańcuchem dostaw możn
 ## <a name="white-papers"></a>Oficjalne dokumenty
 
 - [Lean Manufacturing: funkcja Możliwe do zrealizowania i planowanie zadań Kanban](/dynamics/s-e/)
-- [Obliczenia BOM za pomocą arkusza wyceny](https://www.microsoft.com/download/details.aspx?id=101937/)
+- [Obliczenia BOM za pomocą arkusza wyceny](https://www.microsoft.com/download/details.aspx?id=101937)
 
 ## <a name="elearning-courses"></a>Kursy eLearning
 
