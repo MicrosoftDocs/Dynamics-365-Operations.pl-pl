@@ -1,6 +1,6 @@
 ---
 title: Zmienianie waluty rozliczeniowej lub raportowania
-description: W tym temacie wyjaśniono sposób zmiany waluty rozliczeniowej lub raportowania oraz dodawania waluty raportowania do konfiguracji księgi.
+description: W tym artykule wyjaśniono sposób zmiany waluty rozliczeniowej lub raportowania oraz dodawania waluty raportowania do konfiguracji księgi.
 author: kweekley
 ms.date: 05/05/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ff5c38193e8469cb806c525b77809844847d6c92
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: b02432c8e0bdf52c2a588f67a581b78e682b1bf8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710900"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904622"
 ---
 # <a name="change-the-accounting-or-reporting-currency"></a>Zmienianie waluty rozliczeniowej lub raportowania
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono sposób zmiany waluty rozliczeniowej lub raportowania oraz dodawania waluty raportowania do konfiguracji księgi.
+W tym artykule wyjaśniono sposób zmiany waluty rozliczeniowej lub raportowania oraz dodawania waluty raportowania do konfiguracji księgi.
 
 ## <a name="symptom"></a>Objaw
 
@@ -73,7 +73,7 @@ Aby skopiować dane ustawień i dane główne z bieżącej do nowej firmy, nale�
 10. W obszarze **Wybrane jednostki** wybierz pozycję **Dodaj szablon**.
 11. Wybierz szablon, którego chcesz użyć. Sugerowane szablony dla nowej firmy to **025 — Księga główna** i **Finanse**. Zaleca się przejrzenie wszystkich innych dostępnych szablonów w celu ustalenia, czy żaden z nich nie spełnia odpowiednich wymagań.
 12. Wybierz pozycję **Kopiuj do firmy**, aby uruchomić proces wsadowy, w ramach którego zostaną utworzone wybrane jednostki, a następnie skopiuj je do firmy docelowej.
-13. Po zakończeniu procesu, ale przed zaksięgowaniem dowolnej transakcji, przejdź do księgi i zaktualizuj waluty rozliczeniową i raportowania zgodnie z opisem z wcześniejszej części tego tematu.
+13. Po zakończeniu procesu, ale przed zaksięgowaniem dowolnej transakcji, przejdź do księgi i zaktualizuj waluty rozliczeniową i raportowania zgodnie z opisem z wcześniejszej części tego artykułu.
 
 W przypadku utworzenia nowej firmy w celu zmiany waluty rozliczeniowej lub raportowania upewnij się, że salda początkowe są przeliczane z walut starej firmy na nowe waluty.
 

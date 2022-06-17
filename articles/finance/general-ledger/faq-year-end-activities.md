@@ -1,6 +1,6 @@
 ---
 title: Działania na koniec roku — często zadawane pytania
-description: W tym temacie można znaleźć pytania, które mogą powstać podczas zamknięcia roku, oraz odpowiedzi, które mogą pomóc w działaniach związanych z zamknięciem roku.
+description: W tym artykule można znaleźć pytania, które mogą powstać podczas zamknięcia roku, oraz odpowiedzi, które mogą pomóc w działaniach związanych z zamknięciem roku.
 author: moaamer
 ms.date: 12/21/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 19d23c2c5a8fabd6799c6240c25f3ede4064c001
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 1c5aca6180821dfc9fd1d475d4726c82acdf4d78
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725608"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865748"
 ---
 # <a name="year-end-activities-faq"></a>Działania na koniec roku — często zadawane pytania 
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie można znaleźć pytania, które mogą powstać podczas zamknięcia roku, oraz odpowiedzi, które mogą pomóc w działaniach związanych z zamknięciem roku. Informacje zawarte w tym temacie skupiają się głównie wokół pytań dotyczących działań związanych z zamknięciem roku w obszarach Księga główna i Rozrachunki z dostawcami.
+W tym artykule można znaleźć pytania, które mogą powstać podczas zamknięcia roku, oraz odpowiedzi, które mogą pomóc w działaniach związanych z zamknięciem roku. Informacje zawarte w tym artykule skupiają się głównie wokół pytań dotyczących działań związanych z zamknięciem roku w obszarach Księga główna i Rozrachunki z dostawcami.
 
 ## <a name="general-ledger-year-end-enhancements"></a>Ulepszenia na koniec roku w księdze głównej 
 W wersji 10.0.20 wprowadzono ulepszenie zamknięcia na koniec roku, które jest domyślnie włączone począwszy od wersji 10.0.25. Jeśli w organizacji jest używana wersja wcześniejsza niż 10.0.25, zaleca się włączenie tej funkcji przed rozpoczęciem procesu zamknięcia na koniec roku. Aby używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z obszaru roboczego Zarządzanie funkcjami, aby sprawdzić stan funkcji i ją włączyć, jeśli istnieje taka potrzeba. Ta funkcja jest wymieniona w następujący sposób:
@@ -75,7 +75,7 @@ Zbędne zestawy wymiarów wpływają również na przebieg zadania wsadowego **B
 [![Zestawy wymiarów finansowych.](./media/faq-2020-yr-end-04.png)](./media/faq-2020-yr-end-04.png)
 
 ### <a name="year-end-close-template-configuration"></a>Konfiguracja szablonu zamknięcia na koniec roku
-Szablon zamknięcia na koniec roku pozwala organizacjom wybrać poziom wymiaru finansowego do obsługi podczas przenoszenia sald kont wynikowych do wstrzymanych dochodów. Ustawienia umożliwiają organizacji obsługę szczegółowych wymiarów finansowych (**Zamknij wszystko**) podczas przenoszenia sald do wstrzymanych dochodów lub podjęcie decyzji o podsumowaniu kwot w ramach wartości jednego wymiaru (**Zamknij jeden**). Możliwe jest jego zdefiniowanie dla każdego wymiaru finansowego. Aby uzyskać więcej informacji dotyczących tych ustawień, zobacz temat [Zamknięcie na koniec roku](year-end-close.md).
+Szablon zamknięcia na koniec roku pozwala organizacjom wybrać poziom wymiaru finansowego do obsługi podczas przenoszenia sald kont wynikowych do wstrzymanych dochodów. Ustawienia umożliwiają organizacji obsługę szczegółowych wymiarów finansowych (**Zamknij wszystko**) podczas przenoszenia sald do wstrzymanych dochodów lub podjęcie decyzji o podsumowaniu kwot w ramach wartości jednego wymiaru (**Zamknij jeden**). Możliwe jest jego zdefiniowanie dla każdego wymiaru finansowego. Aby uzyskać więcej informacji dotyczących tych ustawień, zobacz artykuł [Zamknięcie na koniec roku](year-end-close.md).
 
 Zalecamy ocenę wymagań organizacji i, jeśli to możliwe, zamknięcie możliwie wielu wymiarów za pomocą opcji **Zamknij jeden** dotyczącej końca roku, aby poprawić wydajność. Po zamknięciu wartości (która może być także wartością pustą) jednego wymiaru system określa mniej szczegółów podczas ustalania sald dla zapisów na koncie wstrzymanych dochodów.
 

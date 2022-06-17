@@ -1,6 +1,6 @@
 ---
 title: Brakujące salda otwarcia dla zamknięcia na koniec roku
-description: W tym temacie wyjaśniono, dlaczego podczas zamykania roku może brakować sald otwarcia, a także opisano sposób ich odtworzenia w przypadku ich braku.
+description: W tym artykule wyjaśniono, dlaczego podczas zamykania roku może brakować sald otwarcia, a także opisano sposób ich odtworzenia w przypadku ich braku.
 author: kweekley
 ms.date: 05/12/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 582363ba6c5f6e63e695d41e73ee2f0b382cf26e
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 9b64118fc3ff368e21ea8935c1e706f2161c620f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727180"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894856"
 ---
 # <a name="year-end-close-missing-opening-balances"></a>Brakujące salda otwarcia dla zamknięcia na koniec roku
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, dlaczego podczas zamykania roku może brakować sald otwarcia, a także opisano sposób ich odtworzenia w przypadku ich braku.
+W tym artykule wyjaśniono, dlaczego podczas zamykania roku może brakować sald otwarcia, a także opisano sposób ich odtworzenia w przypadku ich braku.
 
 ### <a name="symptom"></a>Objaw
 
@@ -36,7 +36,7 @@ Oto kilka czynności do sprawdzenia w przypadku, gdy zamknięto rok w księdze g
 
 Jeśli dla pola **Cofnij poprzednie zamknięcie** wybrano opcję **Tak**, poprzednie zamknięcie na koniec roku dla tego samego roku obrachunkowego zostanie cofnięte. W przypadku uruchomienia procesu cofnięcia zamknięcia roku wszystkie wpisy zarówno salda zamknięcia, jak i salda otwarcia zostaną usunięte, tak jakby zamknięcie na koniec roku nigdy nie zostało przeprowadzone. Załączniki także zostaną usunięte. Proces zamknięcia na koniec roku nie zostanie ponownie uruchomiony automatycznie. Konieczne będzie ponowne rozpoczęcie procesu, przy czym tym razem należy dla opcji **Cofnij poprzednie zamknięcie** zmienić ustawienie na **Nie**.
 
-Ten scenariusz został opisany w zawierającym często zadawane pytania temacie poświęconym kwestii zamknięcia na koniec roku. Aby uzyskać więcej informacji, zobacz [Działania na koniec roku — często zadawane pytania](faq-year-end-activities.md).
+Ten scenariusz został opisany w zawierającym często zadawane pytania artykule poświęconym kwestii zamknięcia na koniec roku. Aby uzyskać więcej informacji, zobacz [Działania na koniec roku — często zadawane pytania](faq-year-end-activities.md).
 
 ### <a name="symptom"></a>Objaw
 

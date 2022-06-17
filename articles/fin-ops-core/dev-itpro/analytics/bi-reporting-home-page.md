@@ -1,6 +1,6 @@
 ---
 title: Raportowanie i analizy wykonywane przy użyciu usługi Power BI — strona główna
-description: Ten temat odsyła do zasobów zawierających informacje na temat dostępnych narzędzi do wykonywania analiz biznesowych i raportowania.
+description: Ten artykuł odsyła do zasobów zawierających informacje na temat dostępnych narzędzi do wykonywania analiz biznesowych i raportowania.
 author: sericks007
 ms.date: 10/02/2019
 ms.topic: index-page
@@ -16,23 +16,23 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a1c0ee254a5300cfc84eb434e4785b6eceacf0375b983b33991445443957a33
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4be3c576cd0fac1239113efcdd7e97810b193a88
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712743"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906641"
 ---
 # <a name="reporting-and-analytics-with-power-bi-home-page"></a>Raportowanie i analizy wykonywane przy użyciu usługi Power BI — strona główna
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat odsyła do zasobów zawierających informacje na temat dostępnych narzędzi do wykonywania analiz biznesowych (BI) i raportowania.
+Ten artykuł odsyła do zasobów zawierających informacje na temat dostępnych narzędzi do wykonywania analiz biznesowych (BI) i raportowania.
 
 ## <a name="get-started"></a>Rozpocznij
 - [Dostęp do informacji i raportowanie](information-access-reporting.md)
 - [Informacje dotyczące technologii: opcje raportowania](https://www.youtube.com/watch?v=NzZONjKs5xA) (film)
-- [Finance and Operations: Blog poświęcony usługom analiz i raportowania w rozwiązaniu Power BI](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (blog)
+- [Finance and Operations: Power BI Blog o Analityce i Raportowaniu](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (blog)
 
 ## <a name="analytical-workspaces"></a>Analityczne obszary robocze
 Obszary robocze mogą wykorzystywać bogate infografiki i wizualizacje obsługiwane przez Microsoft Power BI. Te infografiki i wizualizacje obejmują wiele formantów dostarczanych przez firmy zewnętrzne. Dlatego materiały w obszarach roboczych są bardzo wzrokowe i interaktywne.

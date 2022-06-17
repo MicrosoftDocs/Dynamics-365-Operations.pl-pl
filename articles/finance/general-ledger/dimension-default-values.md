@@ -1,6 +1,6 @@
 ---
 title: Domyślne wymiary finansowe w arkuszach finansowych
-description: W tym temacie opisano reguły definiujące sposób, w jaki wartości wymiarów finansowych są ustawiane dla transakcji wprowadzanych za pomocą arkuszy finansowych. Zawiera on również szczegółowe scenariusze, w których są używane wymiary stałe.
+description: W tym artykule opisano reguły definiujące sposób, w jaki wartości wymiarów finansowych są ustawiane dla transakcji wprowadzanych za pomocą arkuszy finansowych. Zawiera on również szczegółowe scenariusze, w których są używane wymiary stałe.
 author: kweekley
 ms.date: 09/04/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 51235b8a5dac50aad5031456760c970e50506d66
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 8d0fcf836e22207baae562801fb082d735df0f96
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713114"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907937"
 ---
 # <a name="default-financial-dimensions-on-financial-journals"></a>Domyślne wymiary finansowe w arkuszach finansowych
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano reguły definiujące sposób, w jaki wartości wymiarów finansowych są ustawiane dla transakcji wprowadzanych za pomocą arkuszy finansowych (ale nie za pomocą arkuszy magazynowych lub arkuszy projektu). Zawiera on również szczegółowe scenariusze, w których są używane wymiary stałe.
+W tym artykule opisano reguły definiujące sposób, w jaki wartości wymiarów finansowych są ustawiane dla transakcji wprowadzanych za pomocą arkuszy finansowych (ale nie za pomocą arkuszy magazynowych lub arkuszy projektu). Zawiera on również szczegółowe scenariusze, w których są używane wymiary stałe.
 
 ## <a name="symptom"></a>Objaw
 

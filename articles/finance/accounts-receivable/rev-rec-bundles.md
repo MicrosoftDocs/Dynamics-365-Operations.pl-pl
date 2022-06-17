@@ -1,6 +1,6 @@
 ---
 title: Pakiety rozpoznawania przychodów
-description: W tym temacie opisano funkcję pakietów dostępną w ramach modułu rozpoznawania przychodów w sekcji Rozrachunki z odbiorcami. Pakiet składa się z towaru nadrzędnego i wielu towarów składowych.
+description: W tym artykule opisano funkcję pakietów dostępną w ramach modułu rozpoznawania przychodów w sekcji Rozrachunki z odbiorcami. Pakiet składa się z towaru nadrzędnego i wielu towarów składowych.
 author: kweekley
 ms.date: 01/04/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 62a4d7f36ad0b36edeaec75e9b670e2aad143703
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 478fdfc69514fba829deb63b4e2904ff3fe1e199
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725827"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876304"
 ---
 # <a name="revenue-recognition-bundles"></a>Pakiety rozpoznawania przychodów
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano funkcję pakietów dostępną w ramach modułu rozpoznawania przychodów w sekcji Rozrachunki z odbiorcami. Pakiet składa się z towaru nadrzędnego i wielu towarów składowych. Towar nadrzędny jest wprowadzany w ramach zamówienia sprzedaży, dzięki czemu wprowadzanie zamówień przebiega wydajniej. Następnie jest on rozkładany na towary składowe. W dokumentach wewnętrznych, takich jak dokument dostawy, będą widniały towary składowe. W dokumentach zewnętrznych będzie jednak widoczny tylko towar nadrzędny.
+W tym artykule opisano funkcję pakietów dostępną w ramach modułu rozpoznawania przychodów w sekcji Rozrachunki z odbiorcami. Pakiet składa się z towaru nadrzędnego i wielu towarów składowych. Towar nadrzędny jest wprowadzany w ramach zamówienia sprzedaży, dzięki czemu wprowadzanie zamówień przebiega wydajniej. Następnie jest on rozkładany na towary składowe. W dokumentach wewnętrznych, takich jak dokument dostawy, będą widniały towary składowe. W dokumentach zewnętrznych będzie jednak widoczny tylko towar nadrzędny.
 
 > [!NOTE]
 > Kanały Microsoft Dynamics 365 Commerce, takie jak kanał online, punkt sprzedaży (POS) i biura obsługi, nie obsługują rozpoznania przychodu (w tym funkcji pakietu). Obejmuje to również rozwiązanie Od prospektu do gotówki dla Dynamics 365 Supply Chain Management i Dynamics 365 Sales. Elementy skonfigurowane pod kątem użycia funkcji rozpoznawania przychodów nie powinny być dodawane do zamówień ani transakcji tworzonych w kanałach Commerce ani w rozwiązaniu Od prospektu do gotówki.

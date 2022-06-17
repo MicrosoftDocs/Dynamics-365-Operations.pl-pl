@@ -1,6 +1,6 @@
 ---
 title: Zmiana alokacji rozpoznawania przychodów
-description: Ten temat zawiera informacje dotyczące zmiany alokacji, która umożliwia organizacjom ponowne obliczanie cen przychodów w przypadku zmiany warunków umownych dotyczących sprzedaży. Temat zawiera łącza do innych tematów opisujących sposób rozpoznawania przychodu w wielu scenariuszach.
+description: Ten artykuł zawiera informacje dotyczące zmiany alokacji, która umożliwia organizacjom ponowne obliczanie cen przychodów w przypadku zmiany warunków umownych dotyczących sprzedaży. Temat zawiera łącza do innych tematów opisujących sposób rozpoznawania przychodu w wielu scenariuszach.
 author: kweekley
 ms.date: 09/09/2021
 ms.topic: index-page
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7528202ed140dc2c0a7fc8c595178f155c3c1f75
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: a79288fd69a2e7780ff03952b05b99db2ed88e41
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726135"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903428"
 ---
 # <a name="revenue-recognition-reallocation"></a>Zmiana alokacji rozpoznawania przychodów
 
@@ -58,7 +58,7 @@ Istnieje jeden parametr, który wpływa na proces zmiany alokacji.
 
 Jako że zmianę alokacji można przeprowadzić dla zamówienia sprzedaży, które jest częściowo lub w całości zafakturowane, wszelkie wcześniejsze wpisy księgowania dla faktury muszą zostać skorygowane przy użyciu nowych cen przychodu uwzględniających zmianę alokacji. Korektę wprowadza się poprzez wycofanie wpisu księgowania oryginalnej faktury i zaksięgowanie nowego wpisu księgowania na podstawie cen przychodu uwzględniających zmianę alokacji.
 
-Każda organizacja musi podjąć decyzję o tym, czy korekta ma powodować aktualizację wyłącznie księgi głównej, czy też zarówno księgi głównej, jak i rozrachunków z odbiorcami. Na podstawie podjętej decyzji należy określić właściwe ustawienie opcji **Księgowanie korekt faktury do rozrachunków z odbiorcami** na karcie **Rozpoznawanie przychodów** na stronie **Parametry księgi głównej** (**Rozpoznawanie przychodów \> Konfiguracja \> Parametry księgi głównej**). Właściwe ustawienie zależy od określonego scenariusza. Aby uzyskać więcej informacji na temat możliwych scenariuszy, użyj łączy z sekcji [Scenariusze zmiany alokacji](#scenarios-for-reallocation) w dalszej części tego tematu.
+Każda organizacja musi podjąć decyzję o tym, czy korekta ma powodować aktualizację wyłącznie księgi głównej, czy też zarówno księgi głównej, jak i rozrachunków z odbiorcami. Na podstawie podjętej decyzji należy określić właściwe ustawienie opcji **Księgowanie korekt faktury do rozrachunków z odbiorcami** na karcie **Rozpoznawanie przychodów** na stronie **Parametry księgi głównej** (**Rozpoznawanie przychodów \> Konfiguracja \> Parametry księgi głównej**). Właściwe ustawienie zależy od określonego scenariusza. Aby uzyskać więcej informacji na temat możliwych scenariuszy, użyj łączy z sekcji [Scenariusze zmiany alokacji](#scenarios-for-reallocation) w dalszej części tego artykułu.
 
 [![Karta Rozpoznawanie przychodów na stronie Parametry księgi głównej.](./media/01_RevRecScenarios.png)](./media/01_RevRecScenarios.png)
 
@@ -90,7 +90,7 @@ Aby rozpocząć proces zmiany alokacji, wybierz opcję **Zmień alokację ceny z
 
 [![Strona Zmień alokację ceny za pomocą nowych wierszy zamówienia.](./media/02_RevRecScenarios.png)](./media/02_RevRecScenarios.png)
 
-Górna siatka na stronie **Zmień alokację ceny za pomocą nowych wierszy zamówienia** nosi nazwę **Sprzedaż**. Zawiera ona listę zamówień sprzedaży dla odbiorcy. Wybierz zamówienia sprzedaży, które muszą zostać objęte zmianą alokacji. Jeśli zamówienie sprzedaży ma identyfikator zmiany alokacji, zostało już oznaczone do zmiany alokacji przez innego użytkownika. Jeśli alokacja co najmniej jednego zamówienia sprzedaży została poprzednio zmieniona i musi zostać uwzględniona w innej alokacji, należy najpierw cofnąć zmianę alokacji tych zamówień sprzedaży. Można ją następnie uwzględnić w nowej alokacji. Aby uzyskać bardziej szczegółowe informacje, zobacz sekcje [Cofnij zmianę alokacji](#undo-a-reallocation) i [Wielokrotnie zmień alokację](#reallocate-multiple-times) w dalszej części tego tematu.
+Górna siatka na stronie **Zmień alokację ceny za pomocą nowych wierszy zamówienia** nosi nazwę **Sprzedaż**. Zawiera ona listę zamówień sprzedaży dla odbiorcy. Wybierz zamówienia sprzedaży, które muszą zostać objęte zmianą alokacji. Jeśli zamówienie sprzedaży ma identyfikator zmiany alokacji, zostało już oznaczone do zmiany alokacji przez innego użytkownika. Jeśli alokacja co najmniej jednego zamówienia sprzedaży została poprzednio zmieniona i musi zostać uwzględniona w innej alokacji, należy najpierw cofnąć zmianę alokacji tych zamówień sprzedaży. Można ją następnie uwzględnić w nowej alokacji. Aby uzyskać bardziej szczegółowe informacje, zobacz sekcje [Cofnij zmianę alokacji](#undo-a-reallocation) i [Wielokrotnie zmień alokację](#reallocate-multiple-times) w dalszej części tego artykułu.
 
 Dolna siatka widoczna na stronie nosi nazwę **Wiersze**. Po wybraniu co najmniej jednego zamówienia sprzedaży w siatce **Sprzedaż** w siatce **Wiersze** pojawiają się wiersze zamówienia sprzedaży. Wybierz wiersze zamówienia sprzedaży, które muszą zostać objęte zmianą alokacji. Jeśli wybrano tylko jedno zamówienie sprzedaży, wiersze w tym zamówieniu sprzedaży muszą zostać objęte zmianą alokacji. Taka sytuacja może mieć miejsce, gdy jeden z wierszy zamówienia sprzedaży został wcześniej zafakturowany, a następnie dodany został nowy wiersz albo istniejący wiersz został usunięty lub anulowany. Jeśli wiersz został usunięty, nie będzie widoczny w siatce. W związku z tym nie można go wybrać. Nadal będzie on jednak brany pod uwagę przy uruchamianiu procesu zmiany alokacji.
 

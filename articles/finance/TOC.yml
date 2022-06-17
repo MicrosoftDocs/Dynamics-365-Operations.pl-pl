@@ -60,6 +60,8 @@
                   href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurowanie aktualizacji usług
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/finance/toc.json
+                - name: Obsługa wstępna i obsługa po serwisie
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/pre-post-servicing.md?toc=/dynamics365/finance/toc.json
                 - name: Wstrzymanie aktualizacji usługi
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/finance/toc.json
                 - name: Odbieranie powiadomień o aktualizacjach usług
@@ -172,7 +174,7 @@
               items:
                 - name: Strona główna zarządzania cyklem życia implementacji
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/finance/toc.json
-                - name: Architektura dla aplikacji Finance and Operations
+                - name: Architektura dla aplikacji finansowych i operacyjnych
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/finance/toc.json
                 - name: Microsoft FastTrack
                   href: /dynamics365/fasttrack/index
@@ -214,7 +216,7 @@
                   href: accounts-payable/tasks/key-invoice-data-into-ap-system-approval-journal.md
                 - name: Wprowadzanie najważniejszych danych faktury do modułu rozrachunków z dostawcami za pomocą puli faktur
                   href: accounts-payable/tasks/key-invoice-data-into-ap-system-invoice-pool.md
-                - name: Kopiowanie dostawców przy użyciu udostępnionych sekwencji identyfikatorów
+                - name: Kopiowanie dostawców przy użyciu udostępnionych sekwencji numerów
                   href: accounts-payable/vendor-copy.md
                 - name: Rejestrowanie faktury od dostawcy w arkuszu faktur
                   href: accounts-payable/tasks/record-vendor-invoice-invoice-journal.md
@@ -358,7 +360,7 @@
               href: accounts-receivable/customer-posting-profiles.md
             - name: Tworzenia kodów opłat
               href: accounts-receivable/create-charges-codes.md
-            - name: Kopiuj klientów przy użyciu udostępnionych sekwencji identyfikatorów
+            - name: Kopiowanie klientów przy użyciu udostępnionych sekwencji numerów
               href: accounts-receivable/copy-customer.md
             - name: Przepływ pracy klienta
               href: accounts-receivable/customer-workflow.md
@@ -658,7 +660,7 @@
               href: cash-bank-management/tasks/settle-postdated-check-customer.md
             - name: Rozliczanie czeku postdatowanego dla dostawcy
               href: cash-bank-management/tasks/settle-postdated-check-vendor.md
-            - name: Tworzenie czeków z pustym statusem
+            - name: Tworzenie czeków z pustym stanem
               href: cash-bank-management/create-check-with-blank-status.md
             - name: Faktury zaliczkowe a zaliczki
               href: accounts-payable/prepayments-invoices-vs-prepayments.md
@@ -1684,6 +1686,8 @@
                       href: general-ledger/sales-tax-calculation-methods-origin-field.md
                     - name: Opcje Cała kwota i Obliczanie interwału dla kodów podatku
                       href: general-ledger/whole-amount-interval-options-sales-tax-codes.md
+                    - name: Reguły zaokrąglania i obliczania podatku
+                      href: general-ledger/sales-tax-calculation-rounding.md
                     - name: Obliczanie podatku w ogólnych wierszach arkusza
                       href: general-ledger/sales-tax-calculation-on-general-journal.md
                     - name: Obliczanie i korygowanie podatku na fakturze od dostawcy
@@ -2164,10 +2168,12 @@
                   href: localizations/estonia.md
                 - name: Żądania danych osobowych
                   href: localizations/emea-est-personal-info.md
-                - name: Sprawozdanie podatku VAT
+                - name: Deklaracja podatku VAT
                   href: localizations/emea-est-vat-statement-details.md
                 - name: Intrastat — Estonia
                   href: localizations/emea-est-intrastat.md
+                - name: Lista sprzedaży do UE
+                  href: localizations/emea-est-eu-sales-list.md
             - name: Europa
               items:
                 - name: Europa — omówienie
@@ -2452,6 +2458,8 @@
                   href: localizations/emea-hun-online-invoicing.md
                 - name: Raporty podatków dla Węgier
                   href: localizations/emea-hun-sales-tax-reports.md
+                - name: Intrastat — Węgry
+                  href: localizations/emea-hun-intrastat.md
                 - name: Odroczone obliczenia podatku
                   href: localizations/emea-hun-deferred-vat.md
             - name: Islandia
@@ -3112,6 +3120,8 @@
                   href: localizations/emea-lva-vat-statement-details.md
                 - name: Intrastat — Łotwa
                   href: localizations/emea-lva-intrastat.md
+                - name: Lista sprzedaży do UE
+                  href: localizations/emea-lva-eu-sales-list.md
             - name: Litwa
               items:
                 - name: Litwa — omówienie
@@ -3130,6 +3140,8 @@
                   href: localizations/emea-ltu-saf-t.md
                 - name: Konfigurowanie dokumentów przesunięcia towarów wewnątrz firmy
                   href: localizations/tasks/set-up-transfer-documents-goods-movement-inside-company.md
+                - name: Lista sprzedaży do UE
+                  href: localizations/emea-ltu-eu-sales-list.md
             - name: Malezja
               items:
                 - name: Malezja — omówienie
@@ -3228,7 +3240,7 @@
                   href: localizations/tasks/no-00002-customer-payment-based-payment-id.md
                 - name: Format importu Nets
                   href: localizations/emea-nor-nets-import-format.md
-                - name: Sprawozdanie podatku VAT
+                - name: Deklaracja podatku VAT
                   href: localizations/emea-nor-sales-tax-payment-report.md
                 - name: Zwrot podatku VAT z bezpośrednim przesłaniem do Altinn
                   items:
@@ -4483,6 +4495,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
                     - name: Rozwiązywanie problemów z wydajnością w konfiguracjach raportowania elektronicznego
                       href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/finance/toc.json
+                    - name: Zmniejszanie liczby pól tabeli pobieranych w czasie wykonywania
+                      href: ../fin-ops-core/dev-itpro/analytics/er-reduce-fetched-fields-number.md?toc=/dynamics365/finance/toc.json
                 - name: 'Zarządzanie dokumentem biznesowym (BDM, ang. business document management)'
                   items:
                     - name: BDM — omówienie

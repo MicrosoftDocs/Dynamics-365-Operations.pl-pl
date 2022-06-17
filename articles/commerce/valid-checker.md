@@ -1,6 +1,6 @@
 ---
 title: Sprawdzanie poprawności transakcji sklepu na potrzeby obliczenia zestawienia
-description: W tym temacie opisano funkcje sprawdzania poprawności transakcji sklepu w rozwiązaniu Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano funkcje sprawdzania poprawności transakcji sklepu w rozwiązaniu Microsoft Dynamics 365 Commerce.
 author: analpert
 ms.date: 01/31/2022
 ms.topic: index-page
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: analpert
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: f51b1f39aa212fe8587761721194db7791bec5bc
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 4be40189777a37495f185467050b61af47b684d7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087456"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890521"
 ---
 # <a name="validate-store-transactions-for-statement-calculation"></a>Sprawdzanie poprawności transakcji sklepu na potrzeby obliczenia zestawienia
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano funkcje sprawdzania poprawności transakcji sklepu w rozwiązaniu Microsoft Dynamics 365 Commerce. Proces sprawdzania poprawności umożliwia zidentyfikowanie i oznaczenie transakcji, które będą powodować błędy księgowania, przed pobraniem ich za pomocą procesu księgowania zestawienia.
+W tym artykule opisano funkcje sprawdzania poprawności transakcji sklepu w rozwiązaniu Microsoft Dynamics 365 Commerce. Proces sprawdzania poprawności umożliwia zidentyfikowanie i oznaczenie transakcji, które będą powodować błędy księgowania, przed pobraniem ich za pomocą procesu księgowania zestawienia.
 
 Podczas próby zaksięgowania zestawienia proces sprawdzania poprawności może zakończyć się niepowodzeniem z powodu niespójności danych w tabelach transakcji handlowych. Oto kilka przykładów czynników, które mogą powodować wspomniane niespójności:
 

@@ -1,6 +1,6 @@
 ---
 title: Dodawanie pól do skoroszytu programu Excel w celu edytowania transakcji detalicznych
-description: W tym temacie opisano sposób dodawania pól do skoroszytu programu Microsoft Excel w celu umożliwienia edycji transakcji detalicznych w rozwiązaniu Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano sposób dodawania pól do skoroszytu programu Microsoft Excel w celu umożliwienia edycji transakcji detalicznych w rozwiązaniu Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 11/04/2020
 ms.topic: index-page
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 359d4c360238db746402321a82f825f0d2c9a88a012800c5455d453e3a8bda73
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2abf121f42d8196e52ef98f1dcb4f6b6d9004140
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725465"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867820"
 ---
 # <a name="add-fields-to-an-excel-workbook-to-edit-retail-transactions"></a>Dodawanie pól do skoroszytu programu Excel w celu edytowania transakcji detalicznych
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób dodawania pól do skoroszytu programu Microsoft Excel w celu umożliwienia edycji transakcji detalicznych w rozwiązaniu Microsoft Dynamics 365 Commerce.
+W tym artykule opisano sposób dodawania pól do skoroszytu programu Microsoft Excel w celu umożliwienia edycji transakcji detalicznych w rozwiązaniu Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Omówienie
 

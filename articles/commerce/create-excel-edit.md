@@ -1,6 +1,6 @@
 ---
 title: Tworzenie skoroszytu programu Excel w celu edytowania transakcji detalicznych
-description: W tym temacie opisano sposób tworzenia skoroszytu programu Excel w celu umożliwienia edycji transakcji detalicznych w rozwiązaniu Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano sposób tworzenia skoroszytu programu Excel w celu umożliwienia edycji transakcji detalicznych w rozwiązaniu Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 11/04/2020
 ms.topic: index-page
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: bfc3f6898087445e0276994ceeb52c178785bf3604fa163939327e99a0564f64
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: da3c2eb19491b37decaf29d13f675271ae7a3698
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753115"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873094"
 ---
 # <a name="create-an-excel-workbook-to-edit-retail-transactions"></a>Tworzenie skoroszytu programu Excel w celu edytowania transakcji detalicznych
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób tworzenia skoroszytu programu Excel w celu umożliwienia edycji transakcji detalicznych w rozwiązaniu Microsoft Dynamics 365 Commerce.
+W tym artykule opisano sposób tworzenia skoroszytu programu Excel w celu umożliwienia edycji transakcji detalicznych w rozwiązaniu Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Omówienie
 

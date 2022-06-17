@@ -1,6 +1,6 @@
 ---
 title: Rozpoznawanie przychodów z zamówień sprzedaży
-description: W tym temacie opisano podstawową funkcję rozpoznawania przychodów z zamówień sprzedaży i faktur. Rozpoznawanie przychodów jest dostępne w zamówieniu sprzedaży i na odpowiedniej fakturze utworzonej z zamówienia sprzedaży.
+description: W tym artykule opisano podstawową funkcję rozpoznawania przychodów z zamówień sprzedaży i faktur. Rozpoznawanie przychodów jest dostępne w zamówieniu sprzedaży i na odpowiedniej fakturze utworzonej z zamówienia sprzedaży.
 author: kweekley
 ms.date: 08/24/2018
 ms.topic: index-page
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 7aaa5e7c3b568400c72a1a84b5f29082579aeeae
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 5df7341160940f5c5db0dd4c5d86e4d9698d22e2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725492"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899965"
 ---
 # <a name="revenue-recognition-on-sales-orders"></a>Rozpoznawanie przychodów z zamówień sprzedaży
 
@@ -27,10 +27,10 @@ ms.locfileid: "8725492"
 > [!NOTE]
 > Funkcji Rozpoznawanie przychodów nie można włączyć za pomocą modułu Zarządzanie funkcjami. Obecnie można ją włączyć tylko przy użyciu kluczy konfiguracji.
 
-W tym temacie opisano podstawową funkcję rozpoznawania przychodów z zamówień sprzedaży i faktur. Rozpoznawanie przychodów jest dostępne w zamówieniu sprzedaży i na odpowiedniej fakturze utworzonej z zamówienia sprzedaży. Zamówienie sprzedaży można również utworzyć za pomocą projektu typu czas i materiały.
+W tym artykule opisano podstawową funkcję rozpoznawania przychodów z zamówień sprzedaży i faktur. Rozpoznawanie przychodów jest dostępne w zamówieniu sprzedaży i na odpowiedniej fakturze utworzonej z zamówienia sprzedaży. Zamówienie sprzedaży można również utworzyć za pomocą projektu typu czas i materiały.
 
 > [!NOTE]
-> Na ilustracjach w tym temacie kolumny zostały ukryte lub dodane do siatek, aby lepiej pokazać koncepcje. Z tego względu strony i dane na ilustracjach mogą się różnić od tego, co widać w produkcie.
+> Na ilustracjach w tym artykule kolumny zostały ukryte lub dodane do siatek, aby lepiej pokazać koncepcje. Z tego względu strony i dane na ilustracjach mogą się różnić od tego, co widać w produkcie.
 
 ## <a name="enter-a-sales-order"></a>Wprowadzanie zamówienia sprzedaży
 

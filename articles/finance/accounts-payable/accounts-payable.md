@@ -1,6 +1,6 @@
 ---
 title: Rozrachunki z dostawcami — strona główna
-description: Ten temat zawiera omówienie modułu Rozrachunki z dostawcami.
+description: Ten artykuł zawiera omówienie modułu Rozrachunki z dostawcami.
 author: sunfzam
 ms.date: 02/15/2019
 ms.topic: index-page
@@ -8,27 +8,27 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: VendInvoiceWorkspace
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom:
 - "21901"
 - intro-internal
 ms.assetid: 1e4c2ac4-077b-4678-8733-5cec8f6ff659
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: ce768ecaa668f2c69d6753401eaa145b6fddc5ec
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 5ed6aacb94de14bdb72185cd528f62e74cd3cc15
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595294"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946109"
 ---
 # <a name="accounts-payable-home-page"></a>Rozrachunki z dostawcami — strona główna
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera omówienie modułu Rozrachunki z dostawcami. 
+Ten artykuł zawiera omówienie modułu Rozrachunki z dostawcami. 
 
 Faktury od dostawców można wprowadzać ręcznie, ale można też przyjmować je elektronicznie za pośrednictwem jednostek danych. Wprowadzone lub otrzymane faktury można przeglądać i zatwierdzać za pomocą arkusza zatwierdzania faktur lub strony **Faktura od dostawcy**. Aby zautomatyzować proces przeglądu w celu automatycznego zatwierdzania faktur spełniających określone kryteria i oznaczania pozostałych faktur jako przeznaczonych do przeglądu przez autoryzowanego użytkownika, można używać funkcji uzgadniania faktur, zasad faktur od dostawców oraz przepływu pracy.
 
@@ -126,13 +126,13 @@ Przejdź do [Planów wydań Microsoft Dynamics 365](/dynamics365/release-plans/)
 
 #### <a name="blogs"></a>Blogi
 
-Opinie, wiadomości i inne informacje dotyczące Rozrachunków z dostawcami i innych rozwiązań możesz znaleźć w blogu usługi [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) oraz blogu rozwiązania Financials usługi [Microsoft Dynamics 365 Finance](https://community.dynamics.com/365/financeandoperations/b/financials).
+Opinie, wiadomości i inne informacje dotyczące modułu Rozrachunki z dostawcami możesz znaleźć w blogu usługi [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) oraz [blogu rozwiązania Financials usługi Microsoft Dynamics 365 Finance](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 [Blog społeczności partnerów Microsoft Dynamics Operations](https://community.dynamics.com/partner/b/operationspartnercommunityblog) zapewnia Microsoft Dynamics, jeden zasób, w którym mogą dowiedzieć się, co nowego, poza tym zyskuje na popularności w systemie Dynamics 365.
 
 #### <a name="community-blogs"></a>Blogi społeczności
 
-[Jak zarządzać zobowiązaniami w Dynamics 365 Finance](https://financefunction.tech/2019/02/15/how-to-manage-payables-in-dynamics-365-for-finance-and-operations)
+[Zarządzanie zobowiązaniami w programie Dynamics 365 Finance](https://financefunction.tech/2019/02/15/how-to-manage-payables-in-dynamics-365-for-finance-and-operations)
 
 #### <a name="task-guides"></a>Przewodniki zadania
 Przewodniki zadania to pomocna funkcja dostępna w aplikacji. Aby uzyskać dostęp do przewodników zadania, kliknij przycisk Pomoc na dowolnej stronie.

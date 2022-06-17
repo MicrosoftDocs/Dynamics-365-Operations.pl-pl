@@ -1,6 +1,6 @@
 ---
 title: Wyłączanie reguł używanych w procesie sprawdzania poprawności transakcji
-description: W tym temacie opisano funkcje wyłączania reguł sprawdzania poprawności transakcji wprowadzone w rozwiązaniu Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano funkcje wyłączania reguł sprawdzania poprawności transakcji wprowadzone w rozwiązaniu Microsoft Dynamics 365 Commerce.
 author: analpert
 ms.date: 12/11/2021
 ms.topic: index-page
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: cdaea51b4c84e6a62f0eb9412315ae77b4c11503
-ms.sourcegitcommit: 9c2bc045eafc05b39ed1a6b601ccef48bd62ec55
+ms.openlocfilehash: 7d566aa3b829dad281528925a341382f9637fdba
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7919534"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884884"
 ---
 # <a name="disable-rules-used-in-the-transaction-validation-process"></a>Wyłączanie reguł używanych w procesie sprawdzania poprawności transakcji
 

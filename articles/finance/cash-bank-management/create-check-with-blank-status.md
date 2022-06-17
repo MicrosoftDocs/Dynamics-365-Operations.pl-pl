@@ -1,6 +1,6 @@
 ---
-title: Tworzenie czeków z pustym statusem
-description: W tym temacie wyjaśniono, jak tworzyć puste czeki dla konta bankowego.
+title: Tworzenie czeków z pustym stanem
+description: W tym artykule wyjaśniono, jak tworzyć puste czeki dla konta bankowego.
 author: abruer
 ms.date: 10/26/2017
 ms.topic: index-page
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2019-09-17
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: b3a0fbb26f135e567bf6af7b2f10b39a28be4c9e
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 834e11e0e359521c674e2b6fd78c93dcb23961a0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717224"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861452"
 ---
-# <a name="create-checks-that-have-blank-status"></a>Tworzenie czeków z pustym statusem
+# <a name="create-checks-that-have-blank-status"></a>Tworzenie czeków z pustym stanem
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak tworzyć puste czeki. Na przykład możesz utworzyć pusty czek, aby zarejestrować czek, który został uszkodzony i nie można go wykorzystać do płatności.
+W tym artykule wyjaśniono, jak tworzyć puste czeki. Na przykład możesz utworzyć pusty czek, aby zarejestrować czek, który został uszkodzony i nie można go wykorzystać do płatności.
 
 Na stronie **Czeki** wykonuje się zadania konserwacyjne związane z czekami. Na przykład możesz tworzyć nowe numery czeków i usuwać czeki. Możesz także tworzyć czeki o statusie **Pusty**. Po utworzeniu pustych czeków nie można ich usunąć ani użyć ponownie w systemie.
 

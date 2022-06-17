@@ -58,6 +58,8 @@
                   href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurowanie aktualizacji usług
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/commerce/toc.json
+                - name: Obsługa wstępna i obsługa po serwisie
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/pre-post-servicing.md?toc=/dynamics365/commerce/toc.json
                 - name: Wstrzymanie aktualizacji usługi
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/commerce/toc.json
                 - name: Odbieranie powiadomień o aktualizacjach usług
@@ -196,7 +198,7 @@
               items:
                 - name: Strona główna zarządzania cyklem życia implementacji
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/commerce/toc.json
-                - name: Architektura dla aplikacji Finance and Operations
+                - name: Architektura dla aplikacji finansowych i operacyjnych
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/commerce/toc.json
                 - name: Microsoft FastTrack
                   href: /dynamics365/fasttrack/
@@ -394,6 +396,8 @@
                   items:
                     - name: Aplikacja Store Commerce
                       href: dev-itpro/store-commerce.md
+                    - name: Migracja aplikacji Modern POS do sklepu Store Commerce
+                      href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
                     - name: Wskazówki dotyczące implementacji zarządzania urządzeniami
                       href: implementation-considerations-devices.md
                     - name: Wybierz między rozwiązaniem Store Commerce i Cloud POS
@@ -858,7 +862,7 @@
                   href: orderexchanges.md
                 - name: Ograniczanie metod płatności dla zwrotów bez paragonu
                   href: payment-methods-restrictions.md
-                - name: Zwracanie pozycji w ramach wielu zamówień i faktur odbiorców
+                - name: Zwracanie pozycji w ramach wielu zamówień i faktur dla odbiorcy
                   href: multireturn.md
                 - name: Tworzenie i aktualizowanie zasad zwrotów i refundacji dla kanału
                   href: refund_policy_returns.md
@@ -900,7 +904,7 @@
               items:
                 - name: Edycja i przeprowadzanie inspekcji transakcji kasowych i przeniesienia oraz zarządzania gotówką
                   href: edit-cash-trans.md
-                - name: Edycja i przeprowadzanie inspekcji transakcji zamówień online i asynchronicznych zamówień odbiorcy
+                - name: Edycja i przeprowadzanie inspekcji transakcji zamówień online i asynchronicznych zamówień klienta
                   href: edit-order-trans.md
                 - name: Edytowanie wymiarów finansowych dla transakcji sprzedaży detalicznej
                   href: edit-financial-dim.md
@@ -2222,6 +2226,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/commerce/toc.json
                     - name: Rozwiązywanie problemów z wydajnością w konfiguracjach raportowania elektronicznego
                       href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/commerce/toc.json
+                    - name: Zmniejszanie liczby pól tabeli pobieranych w czasie wykonywania
+                      href: ../fin-ops-core/dev-itpro/analytics/er-reduce-fetched-fields-number.md?toc=/dynamics365/commerce/toc.json
                 - name: 'Zarządzanie dokumentem biznesowym (BDM, ang. business document management)'
                   items:
                     - name: BDM — omówienie
@@ -2476,6 +2482,8 @@
                       href: dev-itpro/retail-sdk/sdk-github.md
                     - name: Migracja starszego zestawu SDK do Retail
                       href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
+                    - name: 'Nieaktualne i usunięte interfejsy API, klasy i sposoby'
+                      href: dev-itpro/obsolete-apis-classes-methods.md
                     - name: Modernizowanie stosu technologii w sklepie rozwiązania Commerce (oficjalny dokument)
                       href: 'https://www.microsoft.com/download/details.aspx?id=103896'
                 - name: Konfiguracja środowiska
@@ -2560,6 +2568,8 @@
                   items:
                     - name: Tworzenie pakietu rozszerzenia Cloud Scale Unit
                       href: dev-itpro/CSU-packaging.md
+                    - name: Scal pakiety rozszerzeń Cloud Scale Unit dla wdrażania
+                      href: dev-itpro/merge-csu-extensions.md
                     - name: Usuwanie rozszerzeń Cloud Scale Unit
                       href: dev-itpro/retail-sdk/remove-csu-package.md
             - name: Store Commerce
@@ -2908,6 +2918,14 @@
                       href: dev-itpro/create-retail-experience-app.md
         - name: Rozwiązywanie problemów
           items:
+            - name: Store Commerce
+              items:
+                - name: Problemy z konfiguracją i instalacją
+                  href: troubleshoot/store-commerce-setup-installation.md
+                - name: Problemy z wydajnością
+                  href: troubleshoot/store-commerce-performance.md
+                - name: Problemy związane z rozszerzeniem
+                  href: troubleshoot/store-commerce-extensions.md
             - name: Przetwarzanie zamówień
               items:
                 - name: Typem płatności musi być błąd karty kredytowej

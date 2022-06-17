@@ -1,6 +1,6 @@
 ---
 title: Środki trwałe — strona główna
-description: Ten temat oferuje dostęp do zasobów pomocnych przy używaniu środków trwałych dla rozwiązania Microsoft Dynamics 365 Finance.
+description: Ten artykuł oferuje dostęp do zasobów pomocnych przy używaniu środków trwałych dla rozwiązania Microsoft Dynamics 365 Finance.
 author: moaamer
 ms.date: 08/31/2017
 ms.topic: index-page
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cee27143ca005f2fa42899365933ec3014aa13f6
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 57e81aaefd61eb9e695d8fe0d1c7cac4091bece7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720454"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880824"
 ---
 # <a name="fixed-assets-home-page"></a>Środki trwałe — strona główna
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat oferuje dostęp do zasobów pomocnych przy używaniu środków trwałych dla rozwiązania Microsoft Dynamics 365 Finance. Środki trwałe są elementami wartości, których właścicielem jest osoba lub organizacja. Elementy obejmują budynki, pojazdy, grunty i sprzęt. 
+Ten artykuł oferuje dostęp do zasobów pomocnych przy używaniu środków trwałych dla rozwiązania Microsoft Dynamics 365 Finance. Środki trwałe są elementami wartości, których właścicielem jest osoba lub organizacja. Elementy obejmują budynki, pojazdy, grunty i sprzęt. 
 
 Po skonfigurowaniu i wprowadzeniu informacji o nabyciu środków trwałych możesz nimi zarządzać, amortyzując je i ustalając próg kapitalizacji w celu określenia amortyzacji. Możesz obliczać korekty środków trwałych i likwidować środki trwałe. W przypadku korzystania z modułu Księga główna wraz z modułem Środki trwałe możesz przeglądać bieżącą wartość wszystkich środków trwałych. Sposób zarządzania środkami trwałymi musi być zgodny zarówno z międzynarodowymi standardami księgowania, jak i z obowiązującym w danym kraju/regionie prawodawstwem dotyczącym księgowania. Wymagania mogą obejmować reguły dotyczące rejestrowania transakcji nabycia i likwidacji, amortyzacji, okresu eksploatacji oraz zwiększania i zmniejszania wartości środków trwałych. Funkcje modułu Środki trwałe obejmują wiele z tych standardów i reguł.
 

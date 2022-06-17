@@ -1,6 +1,6 @@
 ---
 title: Zmienianie lub ponowne przypisywanie kalendarza księgi
-description: W tym temacie opisano sposób zmiany kalendarza aktualnie przypisanego do księgi oraz przypisania nowego kalendarza do księgi.
+description: W tym artykule opisano sposób zmiany kalendarza aktualnie przypisanego do księgi oraz przypisania nowego kalendarza do księgi.
 author: kweekley
 ms.date: 05/07/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-5-07
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 25777a5b807921acc13338116627e9356fe62a20
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 751954e0dc5f682b99ab7fe349cd505dc9da7858
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711639"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848614"
 ---
 # <a name="change-or-reassign-a-ledger-calendar"></a>Zmienianie lub ponowne przypisywanie kalendarza księgi
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób zmiany kalendarza aktualnie przypisanego do księgi oraz przypisania nowego kalendarza do księgi.
+W tym artykule opisano sposób zmiany kalendarza aktualnie przypisanego do księgi oraz przypisania nowego kalendarza do księgi.
 
 ## <a name="issue"></a>Problem
 

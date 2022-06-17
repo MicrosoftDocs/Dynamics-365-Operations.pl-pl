@@ -1,6 +1,6 @@
 ---
 title: Dokumentacja aplikacji Finance and Operations
-description: Dokumentacja dla aplikacji Finance and Operations.
+description: Dokumentacja dla aplikacji finansowych i operacyjnych.
 author: tonyafehr
 ms.date: 04/13/2021
 ms.topic: index-page
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf2278cbf47c5fd2937e7da55c8777709ab7d356
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: c6f646b3216c73e14b550dc438c500a569bb799c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075404"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865840"
 ---
 # <a name="finance-and-operations-application-documentation"></a>Dokumentacja aplikacji Finance and Operations
 
 [!include [banner](includes/banner.md)]
 
-Dowiedz się, jak wykorzystać aplikacje Finance and Operations w firmie. W tym temacie znajdziesz ciekawe materiały dla użytkowników, deweloperów i specjalistów IT. 
+Dowiedz się, jak wykorzystać aplikacje finansowe i operacyjne w firmie. W tym artykule znajdziesz ciekawe materiały dla użytkowników, deweloperów i specjalistów IT. 
 
 Wiele z tych informacji dotyczy również produktów pokrewnych: Dynamics 365 Commerce i Dynamics 365 Human Resources. 
 
@@ -56,8 +56,8 @@ Wiele z tych informacji dotyczy również produktów pokrewnych: Dynamics 365 Co
 <p><a href="get-started/whats-new-changed.md">Nowości i zmiany</a></p>
 <p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Uaktualnienia, aktualizacje i poprawki</a></p>
 <p><a href="../dev-itpro/deployment/apply-deployable-package-system.md">Stosowanie aktualizacji do środowisk w chmurze</a></p>
-<p><a href="../dev-itpro/lifecycle-services/configure-service-updates.md">Konfiguruj aktualizacje usługi</a></p>
-<p><a href="../dev-itpro/lifecycle-services/pause-service-updates.md">Wstrzymywanie aktualizacji usługi</a></p>
+<p><a href="../dev-itpro/lifecycle-services/configure-service-updates.md">Konfigurowanie aktualizacji usług</a></p>
+<p><a href="../dev-itpro/lifecycle-services/pause-service-updates.md">Wstrzymanie aktualizacji usługi</a></p>
 <p><a href="../dev-itpro/lifecycle-services/notifications-service-updates.md">Odbieranie powiadomień o aktualizacjach usług</a></p>
 <p><a href="../dev-itpro/data-entities/data-task-automation.md">Automatyzacja zadań danych</a></p>
 <p><a href="../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md">Regression Suite Automation tool</a></p>

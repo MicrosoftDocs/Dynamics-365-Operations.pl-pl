@@ -1,6 +1,6 @@
 ---
 title: Zasoby globalizacji
-description: Ten temat zawiera listę zasobów, które mogą pomóc Ci dowiedzieć się więcej na temat funkcjonalności i ofert dla danego kraju/regionu.
+description: Ten artykuł zawiera listę zasobów, które mogą pomóc dowiedzieć się więcej na temat funkcjonalności i ofert dla danego kraju/regionu.
 author: kfend
 ms.date: 02/19/2021
 ms.topic: index-page
@@ -14,27 +14,27 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 822f00c21715b928027a7656f299a693686bf5dfc01f1f5a1738d5eb8d4bf124
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4935d54a911701fda4740e3a1116c139730ceb08
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747522"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866545"
 ---
 # <a name="globalization-resources"></a>Zasoby globalizacji
 
 ## <a name="local-and-regional-deployments"></a>Lokalne i regionalne wdrożenia
-Jeśli przepisy obowiązujące w danym kraju wymagają, aby dane były przechowywane w inny sposób lub obsługiwane inaczej niż wymagane w innych krajach/regionach, mogą istnieć wymagania kraju/regionu, które należy wziąć pod uwagę podczas wdrażania. Pamiętaj o następujących zasobach, które mogą być przydatne w Twojej sytuacji:
+Jeśli przepisy obowiązujące w danym kraju wymagają, aby dane były przechowywane w inny sposób lub obsługiwane inaczej niż wymagane w innych krajach/regionach, mogą istnieć wymagania kraju/regionu, które należy wziąć pod uwagę podczas wdrażania. Pamiętaj o następujących zasobach, które mogą być przydatne w danej sytuacji:
 
-[Aplikacje Finance and Operations obsługiwane przez firmę 21Vianet w Chinach](../deployment/china-local-deployment.md)
+[Aplikacje finansowe i operacyjne obsługiwane przez firmę 21Vianet w Chinach](../deployment/china-local-deployment.md)
 
 ## <a name="localization-and-regulatory-features"></a>Funkcje związane z lokalizacją i wymagane przepisami prawa
 
 [!include [banner](../includes/banner.md)]
 
-Aplikacje Finance and Operations zawierają funkcje specyficzne dla krajów/regionów opisanych w dokumencie [Przewodnik dotyczący dostępności lokalizacji i tłumaczeń produktu](https://aka.ms/dynamics_365_international_availability_deck). Te funkcje są włączane na podstawie podstawowego adresu aktywnej firmy. 
+Aplikacje finansowe i operacyjne zawierają funkcje specyficzne dla krajów/regionów opisanych w dokumencie [Przewodnik dotyczący dostępności lokalizacji i tłumaczeń produktu](https://aka.ms/dynamics_365_international_availability_deck). Te funkcje są włączane na podstawie podstawowego adresu aktywnej firmy. 
 
-Ten temat zawiera listę zasobów, które mogą pomóc w wykonywaniu następujących czynności: 
+Ten artykuł zawiera listę zasobów, które mogą pomóc w wykonywaniu następujących czynności: 
 - Uzyskiwanie dodatkowych informacji na temat projektowania rozwiązań specyficznych dla kraju/regionu.
 - Uzyskiwanie aktualizacji specyficznych dla kraju/regionu.
 - Przesyłanie i przeglądanie alertów dotyczących wymogów prawnych.
@@ -62,8 +62,8 @@ Wymienione poniżej zasoby zawierają informacje o planowanych i nowych funkcjac
 #### <a name="dynamics-365-release-plans"></a>Plany wydań Dynamics 365
 W dokumencie [Plany wydań Dynamics 365](/business-applications-release-notes/) znajdują się opisy nowych i ulepszonych możliwości, które mają zostać wprowadzone w aplikacjach biznesowych oraz platformach aplikacji usługi Dynamics 365. 
 
-#### <a name="finance-and-operations-apps-whats-new"></a>Co nowego w aplikacjach Finance and Operations
-Zawartość [strony głównej Nowości i zmiany w rozwiązaniu Finance and Operations](../../fin-ops/get-started/whats-new-changed.md) obejmuje listę funkcji wchodzących w skład poszczególnych wydań aplikacji Finance and Operations.
+#### <a name="finance-and-operations-apps-whats-new"></a>Co nowego w aplikacjach finansowych i operacyjnych
+[Nowości i zmiany w rozwiązaniu Finance and Operations — strona główna](../../fin-ops/get-started/whats-new-changed.md) zawiera listę funkcji wchodzących w skład poszczególnych wydań aplikacji finansowych i operacyjnych.
 
 ### <a name="electronic-reporting"></a>Raportowanie elektroniczne
 Narzędzie Raportowanie elektroniczne umożliwia konfigurowanie formatów dokumentów elektronicznych zgodnie z wymogami prawnymi obowiązującymi w różnych krajach/regionach. Raportowanie elektroniczne umożliwia zarządzanie tymi formatami podczas ich całego cyklu życia. Aby uzyskać więcej informacji, zobacz następujące tematy:

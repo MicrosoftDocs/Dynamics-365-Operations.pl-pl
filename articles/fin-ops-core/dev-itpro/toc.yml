@@ -1,10 +1,10 @@
-- name: Rozwój i administracja aplikacji Finance and Operations
+- name: Rozwój i administracja aplikacji finansowych i operacyjnych
   items:
-    - name: Rozwój i administracja aplikacji Finance and Operations
+    - name: Rozwój i administracja aplikacji finansowych i operacyjnych
       items:
         - name: Dokumentacja aplikacji Finance and Operations
           href: ../fin-ops/index.md
-        - name: Rozwój i administracja aplikacji Finance and Operations
+        - name: Rozwój i administracja aplikacji finansowych i operacyjnych
           href: index.md
         - name: Nowości i zmiany
           items:
@@ -202,7 +202,7 @@
                   href: data-entities/data-synchronize-date-and-time.md
                 - name: Importowanie załączników za pomocą jednostki Arkusz finansowy
                   href: data-entities/tips-tricks-import-general-journal-entity.md
-                - name: Optymalizowanie migracji danych dla aplikacji Finance and Operations
+                - name: Optymalizowanie migracji danych dla aplikacji finansowych i operacyjnych
                   href: sysadmin/optimize-data-migration.md
             - name: Opracowywanie jednostek danych
               items:
@@ -410,6 +410,8 @@
                       href: deployment/onprem-reverseproxy.md
                     - name: Konfigurowanie aplikacji Magazynowanie dla wdrożeń lokalnych
                       href: deployment/warehousing-for-on-premise-deployments.md
+                    - name: Włącz program RSAT w środowiskach Finance + Operations (on-premises)
+                      href: deployment/onprem-rsat-configuration.md
                     - name: Instalowanie urządzeń drukarek sieciowych w środowiskach lokalnych
                       href: analytics/install-network-printer-onprem.md
                     - name: Diagnostyka we wdrożeniach lokalnych
@@ -1048,7 +1050,9 @@
                   href: lifecycle-services/dts-devops-extension.md
                 - name: Samouczek rozszerzenia Azure DevOps (publiczna wersja zapoznawcza)
                   href: lifecycle-services/dts-ado-tutorial.md
-        - name: Integracja z usługą Microsoft Power Platform
+                - name: Rozszerzenie usługi Dynamics 365 Translation Service Visual Studio Code (publiczna wersja zapoznawcza)
+                  href: lifecycle-services/dts-vscode-doc.md
+        - name: Integracja usługi Microsoft Power Platform
           items:
             - name: Omówienie
               href: power-platform/overview.md
@@ -1076,9 +1080,9 @@
                       href: data-entities/dual-write/sync-limits.md
                     - name: Konfigurowanie podwójnego zapisu z usług Lifecycle Services
                       href: data-entities/dual-write/lcs-setup.md
-                    - name: Włączanie podwójnego zapisu dla istniejących aplikacji Finance and Operations
+                    - name: Włączanie podwójnego zapisu dla istniejących aplikacji finansowych i operacyjnych
                       items:
-                        - name: Włączanie podwójnego zapisu dla istniejących aplikacji Finance and Operations
+                        - name: Włączanie podwójnego zapisu dla istniejących aplikacji finansowych i operacyjnych
                           href: data-entities/dual-write/enable-dual-write.md
                         - name: Wymagania systemowe i wymagania wstępne
                           href: data-entities/dual-write/requirements-and-prerequisites.md
@@ -1192,15 +1196,15 @@
                           href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
                         - name: Rozwiązywanie problemów z synchronizacją na żywo
                           href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
-                        - name: Rozwiązywanie problemów z podwójnym zapisem w aplikacjach Finance and Operations
+                        - name: Rozwiązywanie problemów z podwójnym zapisem w aplikacjach finansowych i operacyjnych
                           href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
                         - name: Rozwiązywanie problemów ze stroną i problemy z globalną książką adresową
                           href: data-entities/dual-write/dual-write-troubleshooting-party-gab.md
                         - name: Rozwiązywanie problemów związanych ze świadomością rozwiązania
                           href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
-                        - name: Rozwiązywanie problemów wynikłych z aktualizacji aplikacji Finance and Operations
+                        - name: Rozwiązywanie problemów wynikłych z aktualizacji aplikacji finansowych i operacyjnych
                           href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
-                        - name: Sprawdzanie poprawności konfiguracji podwójnego zapisu w aplikacjach Finance and Operations i usłudze Dataverse
+                        - name: Sprawdzanie poprawności konfiguracji podwójnego zapisu w aplikacjach finansowych i operacyjnych i usłudze Dataverse
                           href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
                         - name: Kody błędów dla kontroli kondycji mapy tabel
                           href: data-entities/dual-write/table-map-health-check.md
@@ -1574,9 +1578,9 @@
               href: /power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
             - name: Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Finance and Operations obsługiwanego przez firmę 21Vianet w Chinach
               href: lifecycle-services/21vianet-support.md
-            - name: Konfigurowanie pomocy technicznej dotyczącej aplikacji Finance and Operations
+            - name: Konfigurowanie pomocy technicznej dotyczącej aplikacji finansowych i operacyjnych
               href: lifecycle-services/support-experience.md
-            - name: Zarządzanie środowiskami pomocy technicznej dla aplikacji Finance and Operations
+            - name: Zarządzanie środowiskami pomocy technicznej dla aplikacji finansowych i operacyjnych
               href: lifecycle-services/cloud-powered-support-lcs.md
             - name: Obsługa i monitorowanie produkcji
               href: ../fin-ops/imp-lifecycle/production-support-monitoring.md
@@ -1604,7 +1608,7 @@
                   href: sysadmin/role-based-security.md
                 - name: Architektura zabezpieczeń
                   href: sysadmin/security-architecture.md
-                - name: Szyfrowanie w aplikacjach Finance and Operations
+                - name: Szyfrowanie w aplikacjach finansowych i operacyjnych
                   href: sysadmin/encryption.md
                 - name: Ustawianie limitu czasu braku aktywności dla sesji
                   href: sysadmin/session-idle-timeout.md
