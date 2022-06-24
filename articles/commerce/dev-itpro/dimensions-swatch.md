@@ -1,6 +1,6 @@
 ---
 title: Skonfiguruj wartości wymiarów produktu, aby były wyświetlane jako próbki
-description: W tym temacie opisano, jak skonfigurować wartości wymiarów produktów jako próbki w centrum Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano, jak skonfigurować wartości wymiarów produktów jako próbki w centrum Microsoft Dynamics 365 Commerce headquarters.
 author: anupamar-ms
 ms.date: 08/02/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.20 update
-ms.openlocfilehash: b1cef992b3d4e3889dd1d5dcc21a0d1ba3f55acc166f5003fc79f64fc54a8754
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a21e02a8e5aacfa5251b9b7bcbc451fa886d37f3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764621"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892659"
 ---
 # <a name="configure-product-dimension-values-to-appear-as-swatches"></a>Skonfiguruj wartości wymiarów produktu, aby były wyświetlane jako próbki
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie opisano, jak skonfigurować wartości wymiarów produktów jako próbki w centrum Microsoft Dynamics 365 Commerce. Aby uzyskać więcej informacji o wymiarach produktu, należy zapoznać się z artykułem [Wymiary produktów](../../supply-chain/pim/product-dimensions.md).
+W tym artykule opisano, jak skonfigurować wartości wymiarów produktów jako próbki w centrum Microsoft Dynamics 365 Commerce headquarters. Aby uzyskać więcej informacji o wymiarach produktu, należy zapoznać się z artykułem [Wymiary produktów](../../supply-chain/pim/product-dimensions.md).
 
 Dynamics 365 Commerce umożliwia używanie wymiarów typu rozmiar, styl i kolor do reprezentowania wariantów produktu. Wymiary produktu mają przyjazne nazwy, które są wyświetlane na stronach szczegółów produktu (PDP), aby można było wybrać warianty produktu. Przykładami tych przyjaznych nazw są „Małe”, „Średnie” i „Duże” dla rozmiarów oraz „Czarny” i „Brązowy” w przypadku kolorów. Jeśli jednak produkt posiada wiele wariantów, do wyświetlenia obrazu dla każdego wariantu wymagane jest wielokrotne wybranie opcji. Dlatego przeglądanie i wybieranie wariantów produktów może być dla klientów powolne i uciążliwe.
 

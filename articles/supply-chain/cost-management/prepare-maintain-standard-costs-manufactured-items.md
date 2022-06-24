@@ -1,6 +1,6 @@
 ---
 title: Przygotowanie do zarządzania kosztami standardowymi wyprodukowanych towarów
-description: W tym temacie opisano etapy przygotowywania się do zarządzania kosztami wytwarzanych towarów.
+description: W tym artykule opisano etapy przygotowywania się do zarządzania kosztami wytwarzanych towarów.
 author: JennySong-SH
 ms.date: 01/17/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8d42f61bcd44e89f0563c8f7450a1cdd6fd0e3ce
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 423da8022faf8066c5aa524c49c5071d0871de04
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679143"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886023"
 ---
 # <a name="prepare-to-maintain-standard-costs-for-manufactured-items"></a>Przygotowanie do zarządzania kosztami standardowymi wyprodukowanych towarów
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano etapy przygotowywania się do zarządzania kosztami wytwarzanych towarów. Kroki dla towarów wytwarzanych różnią się nieco od kroków dla towarów zakupionych.
+W tym artykule opisano etapy przygotowywania się do zarządzania kosztami wytwarzanych towarów. Kroki dla towarów wytwarzanych różnią się nieco od kroków dla towarów zakupionych.
 
 Zasady przypisane do towarów wytwarzanych mogą wpływać na obliczanie kosztów nadrzędnych towarów wytwarzanych. Aby się przygotować do zarządzania kosztami towarów wytwarzanych, wykonaj następujące czynności:
 
@@ -63,7 +63,7 @@ Zasady przypisane do towarów wytwarzanych mogą wpływać na obliczanie kosztó
 
 Jeśli chcesz używać informacji o marszrucie do wyceny, potrzebne są dodatkowe czynności przygotowawcze. Na przykład kategorie kosztów przypisane do operacji marszrut muszą być prawidłowe i kompletne.
 
-## <a name="related-topics"></a>Powiązane tematy
+## <a name="related-articles"></a>Powiązane artykuły
 
 [Amortyzowanie kosztów stałych wytworzonego towaru](amortize-constant-costs-manufactured-item.md)
 

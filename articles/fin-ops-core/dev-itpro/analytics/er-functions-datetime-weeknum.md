@@ -1,6 +1,6 @@
 ---
 title: WEEKNUM, funkcja ER
-description: Ten temat zawiera ogólne informacje o używaniu funkcji WEEKNUM w module Raportowanie elektroniczne (ER).
+description: Ten artykuł zawiera ogólne informacje o używaniu funkcji WEEKNUM w module Raportowanie elektroniczne (ER).
 author: NickSelin
 ms.date: 01/15/2022
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: AX 10.0.24
-ms.openlocfilehash: 37e62b32896e2030b3322a89ac4acdd6c18d5e3c
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 2c6eef0d6e1f90a3f8d382591edad3d568da84ec
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982184"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858778"
 ---
 # <a name="weeknum-er-function"></a>WEEKNUM, funkcja ER
 

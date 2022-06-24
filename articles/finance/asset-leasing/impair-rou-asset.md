@@ -1,6 +1,6 @@
 ---
 title: Utrata wartości składników majątku z prawem do użytkowania
-description: W tym temacie opisano funkcję, która rejestruje utratę wartości i dostosowuje harmonogram amortyzacji składnika majątku w leasingu operacyjnym realizowanym według przepisów Accounting Standards Codification Topic 842 (ASC 842).
+description: W tym artykule opisano funkcję, która rejestruje utratę wartości i dostosowuje harmonogram amortyzacji składnika majątku w leasingu operacyjnym realizowanym według przepisów Accounting Standards Codification Topic 842 (ASC 842).
 author: moaamer
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 497739e56c6ce0f4fe0bd4aec889f0782d08fc4a
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: f953b3a351859c6becba10a129bbb17b49be6290
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720175"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894121"
 ---
 # <a name="impair-right-of-use-assets"></a>Utrata wartości składników majątku z prawem do użytkowania
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Jeśli wartość bilansowa składnika majątku z prawem do użytkowania (PDU) jest nie do odzyskania, może być konieczne sprawdzenie, czy składnik majątku utracił wartość. W przypadku stwierdzenia, że składnik majątku utracił wartość, moduł Wynajem składnika majątku może zarejestrować tę utratę i odpowiednio skorygować harmonogram amortyzacji. W tym temacie opisano funkcję, która rejestruje utratę wartości i dostosowuje harmonogram amortyzacji w leasingu operacyjnym realizowanym według przepisów Accounting Standards Codification Topic 842 (ASC 842). Tę samą metodę stosuje się również do wynajmu zgodnego Międzynarodowym Standardem Sprawozdawczości Finansowej nr 16 (MSSF 16).
+Jeśli wartość bilansowa składnika majątku z prawem do użytkowania (PDU) jest nie do odzyskania, może być konieczne sprawdzenie, czy składnik majątku utracił wartość. W przypadku stwierdzenia, że składnik majątku utracił wartość, moduł Wynajem składnika majątku może zarejestrować tę utratę i odpowiednio skorygować harmonogram amortyzacji. W tym artykule opisano funkcję, która rejestruje utratę wartości i dostosowuje harmonogram amortyzacji w leasingu operacyjnym realizowanym według przepisów Accounting Standards Codification Topic 842 (ASC 842). Tę samą metodę stosuje się również do wynajmu zgodnego Międzynarodowym Standardem Sprawozdawczości Finansowej nr 16 (MSSF 16).
 
 Pozostałe saldo składnika majątku z PDU będzie amortyzowane liniowo przez pozostałą liczbę okresów, niezależnie od tego, czy wynajem został zaklasyfikowany jako leasing finansowy według MSSF 16, czy jako leasing operacyjny według ASC 842.
 
@@ -83,7 +83,7 @@ W poniższych tabelach przedstawiono wartości ustawione na kartach **Ogólne** 
 
 ### <a name="steps"></a>Kroki
 
-1. Po utworzeniu wynajmu zgodnie z opisem wcześniej w tym temacie należy przejść do książki wynajmu i potwierdzić harmonogram płatności. Następnie należy zaksięgować wpis w arkuszu dotyczący początkowego ujęcia. Początkowa wartość składnika majątku z PDU i zobowiązania z tytułu wynajmu powinna wynosić 70 235,81 zł. W tym przykładzie wynajem został zaklasyfikowany jako leasing operacyjny według ASC 842.
+1. Po utworzeniu wynajmu zgodnie z opisem wcześniej w tym artykule należy przejść do książki wynajmu i potwierdzić harmonogram płatności. Następnie należy zaksięgować wpis w arkuszu dotyczący początkowego ujęcia. Początkowa wartość składnika majątku z PDU i zobowiązania z tytułu wynajmu powinna wynosić 70 235,81 zł. W tym przykładzie wynajem został zaklasyfikowany jako leasing operacyjny według ASC 842.
 2. Uruchom trzy razy proces arkusza przetwarzania wsadowego, aby zasymulować upływ trzech lat dla opłat z tytułu wynajmu, kosztów odsetek i wydatków amortyzacji.
 3. Po zakończeniu wykonywania wszystkich trzech zadań wsadowych wróć do księgi wynajmu, a w nich otwórz tabele transakcji na pasywach i aktywach, aby wyświetlić bieżącą wartość bilansową składnika majątku z PDU i zobowiązania z tytułu wynajmu. Po trzech latach wartość zobowiązania powinna wynosić w przybliżeniu -53 893,00 zł, a wartość składnika majątku powinna wynosić w przybliżeniu 53 893,00 zł. 
 

@@ -1,6 +1,6 @@
 ---
 title: Migracja do modułu Optymalizacja planowania w celu realizacji planowania głównego
-description: Ten temat zawiera informacje o nowym głównym silniku planowania, optymalizacji planowania i migracji z istniejącego aparatu.
+description: Ten artykuł zawiera informacje o nowym głównym silniku planowania, optymalizacji planowania i migracji z istniejącego aparatu.
 author: t-benebo
 ms.date: 05/11/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 598e29ead50e1ecb249a7338c7f0952a912b4f69
-ms.sourcegitcommit: cbe9493d479f96f271d94599ec1b85131b26169f
+ms.openlocfilehash: a94b424ad1a454feecede8a7b037171b2984504f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8809103"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846107"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Migracja do modułu Optymalizacja planowania w celu realizacji planowania głównego
 
 [!include [banner](../includes/banner.md)]
 
-Wbudowany aparat planowania głównego jest zaplanowany jako przestarzały (przestarzały). Jest zastępowany dodatkiem optymalizacji planowania dla rozwiązania Microsoft Dynamics 365 Supply Chain Management. Ten temat zawiera informacje dotyczące wpływu na nowe i istniejące wdrożenia. Zawiera on informacje dotyczące wymaganych akcji.
+Wbudowany aparat planowania głównego jest zaplanowany jako przestarzały (przestarzały). Jest zastępowany dodatkiem optymalizacji planowania dla rozwiązania Microsoft Dynamics 365 Supply Chain Management. Ten artykuł zawiera informacje dotyczące wpływu na nowe i istniejące wdrożenia. Zawiera on informacje dotyczące wymaganych akcji.
 
 Optymalizacja planowania umożliwia wykonywanie obliczeń planowania głównego poza Supply Chain Management i jego bazą danych Azure SQL. Korzyści związane z optymalizacją planowania obejmują lepszą wydajność i zminimalizowany wpływ na bazę danych SQL podczas wykonywania głównych operacji planowania. Szybkie przebiegi planowania można wykonać nawet w godzinach pracy, dzięki czemu terminarze mogą natychmiast reagować na zmiany popytu lub parametrów.
 
@@ -63,7 +63,7 @@ Obecnie wyjątki dotyczące migracji optymalizacji planowania są istotne tylko 
 
 Po udostępnieniu wymaganych funkcji firma Microsoft zapewni okres karencji do wygaśnięcia wyjątku. Administrator środowiska zostanie poinformowany, gdy wymagane funkcje staną się dostępne i rozpocznie się okres karencji.
 
-Poniższy schemat blokowy podsumowuje informacje podane w tym temacie, dzięki czemu można szybko dowiedzieć się, czy należy zażądać wyjątku. Jeśli musisz zażądać wyjątku, wypełnij i prześlij [Kwestionariusz migracji optymalizacji planowania i wyjątków](https://go.microsoft.com/fwlink/?linkid=2144962). Grupa produktów jest odpowiedzialna za ocenę i zatwierdzenie każdego zgłoszenia wyjątku, dlatego prześlij swoje zgłoszenie bezpośrednio do grupy produktów, korzystając z podanego linku, i nie twórz w tym celu zgłoszenia do działu wsparcia. Jeśli twoja prośba zostanie odrzucona, nie twórz zgłoszenia do pomocy, ponieważ Pomoc techniczna firmy Microsoft nie jest w stanie dokonać ponownej oceny ani przyznać wyjątków.
+Poniższy schemat blokowy podsumowuje informacje podane w tym artykule, dzięki czemu można szybko dowiedzieć się, czy należy zażądać wyjątku. Jeśli musisz zażądać wyjątku, wypełnij i prześlij [Kwestionariusz migracji optymalizacji planowania i wyjątków](https://go.microsoft.com/fwlink/?linkid=2144962). Grupa produktów jest odpowiedzialna za ocenę i zatwierdzenie każdego zgłoszenia wyjątku, dlatego prześlij swoje zgłoszenie bezpośrednio do grupy produktów, korzystając z podanego linku, i nie twórz w tym celu zgłoszenia do działu wsparcia. Jeśli twoja prośba zostanie odrzucona, nie twórz zgłoszenia do pomocy, ponieważ Pomoc techniczna firmy Microsoft nie jest w stanie dokonać ponownej oceny ani przyznać wyjątków.
 
 ![Schemat blokowy wyjątków.](media/exception-diagram.png "Schemat blokowy wyjątków")
 

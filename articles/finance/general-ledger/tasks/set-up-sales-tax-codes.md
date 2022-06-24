@@ -1,6 +1,6 @@
 ---
 title: Ustawianie kodów podatków
-description: W tym temacie wyjaśniono sposób konfigurowania kodów podatków w Dynamics 365 Finance.
+description: W tym artykule wyjaśniono sposób konfigurowania kodów podatków w Dynamics 365 Finance.
 author: twheeloc
 ms.date: 09/27/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 69e2cf9a16fe0e694154cccf9b49944b49c79b90
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: b12133583f40cc17cb85f6dbd86697592af25caf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565861"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858476"
 ---
 # <a name="set-up-sales-tax-codes"></a>Ustawianie kodów podatków
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie wyjaśniono sposób konfigurowania kodów podatków. Kody podatków tworzy się dla każdego podatku pośredniego lub cła, które firma musi naliczać, pobierać i wpłacać do urzędu skarbowego.
+W tym artykule wyjaśniono sposób konfigurowania kodów podatków. Kody podatków tworzy się dla każdego podatku pośredniego lub cła, które firma musi naliczać, pobierać i wpłacać do urzędu skarbowego.
 
 W zadaniu wykorzystano firmę demonstracyjną USMF.
 

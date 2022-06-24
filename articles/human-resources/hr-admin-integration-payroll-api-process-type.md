@@ -1,6 +1,6 @@
 ---
 title: Typ procesu
-description: W tym temacie opisano opcję Typ procesu ustawioną dla Dynamics 365 Human Resources.
+description: W tym artykule opisano zestaw opcji Typ procesu dla Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 06/25/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-06-25
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9f30b50e6ec24b44f7832905a43c9fd979986065
-ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
+ms.openlocfilehash: 51be840b3af41e1ae32e9eae87ef62f4f4f15a09
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2022
-ms.locfileid: "8533690"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865361"
 ---
 # <a name="process-type"></a>Typ procesu
 
@@ -27,7 +27,7 @@ ms.locfileid: "8533690"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-W tym temacie opisano opcję Nie Tak ustawioną dla Dynamics 365 Human Resources.
+W tym artykule opisano opcję Nie Tak ustawioną dla Dynamics 365 Human Resources.
 
 ## <a name="option-set-process-type"></a>Zestaw opcji: typ procesu
 

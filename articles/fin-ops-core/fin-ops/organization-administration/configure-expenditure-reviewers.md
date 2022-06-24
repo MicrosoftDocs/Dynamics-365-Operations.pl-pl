@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie osób sprawdzających wydatki
-description: W tym temacie opisano, jak używać kontrolerów wydatków do dynamicznego wybierania użytkownika, do którego przypisane jest zadanie przepływu pracy, zatwierdzenie lub decyzja ręczna.
+description: W tym artykule opisano, jak używać kontrolerów wydatków do dynamicznego wybierania użytkownika, do którego przypisane jest zadanie przepływu pracy, zatwierdzenie lub decyzja ręczna.
 author: rachel-profitt
 ms.date: 06/25/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2021-06-24
-ms.openlocfilehash: ad980889247e0239ad743078cb013c1c5839f676
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 110edf4c2733f899368069c7d215ae5b0882f5cc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070153"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863231"
 ---
 # <a name="configure-expenditure-reviewers"></a>Konfigurowanie osób sprawdzających wydatki
 [!include[banner](../includes/banner.md)]
@@ -75,7 +75,7 @@ Podczas tworzenia zamówienia zakupu należy określić pole **Projekt**. Jeśli
 
 ## <a name="set-up-expenditure-reviewers"></a>Konfigurowanie rewidentów rozchodów
 
-Ten przykład pokazuje, jak skonfigurować recenzenta wydatków zapotrzebowania na zakup. Aby skonfigurować inne typy recenzentów wydatków, zastąp ścieżkę nawigacji w kroku 1 odpowiednią ścieżką z tabeli w sekcji [Rodzaje recenzentów wydatków](configure-expenditure-reviewers.md#types-of-expenditure-reviewers) we wcześniejszej części tego tematu.
+Ten przykład pokazuje, jak skonfigurować recenzenta wydatków zapotrzebowania na zakup. Aby skonfigurować inne typy recenzentów wydatków, zastąp ścieżkę nawigacji w kroku 1 odpowiednią ścieżką z tabeli w sekcji [Rodzaje recenzentów wydatków](configure-expenditure-reviewers.md#types-of-expenditure-reviewers) we wcześniejszej części tego artykułu.
 
 1. Przejdź do **Zaopatrzenie i sourcing \> Ustawienia \> Zasady \> Rewidenci wydatków zapotrzebowania na zakup**.
 2. Na stronie **Osób sprawdzających wydatki związane z zapotrzebowaniami** na zakup wybierz pozycję **Nowy**.

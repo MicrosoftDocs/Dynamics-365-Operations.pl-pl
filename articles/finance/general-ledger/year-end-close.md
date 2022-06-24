@@ -1,6 +1,6 @@
 ---
-title: Zamknięcie na koniec roku
-description: W tym temacie opisano wymaganą konfigurację i kroki wykonywania procesu zamknięcia roku w księdze głównej.
+title: Zamknięcie roku
+description: W tym artykule opisano wymaganą konfigurację i kroki wykonywania procesu zamknięcia roku w księdze głównej.
 author: kweekley
 ms.date: 12/06/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 247c3286124da946937c8afd248a275e5a745044
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 032c572ec7b29bb6b2823ddde0c4fa76e5f8fcf1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725241"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883221"
 ---
-# <a name="year-end-close"></a>Zamknięcie na koniec roku
+# <a name="year-end-close"></a>Zamknięcie roku
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano wymaganą konfigurację i kroki wykonywania procesu zamknięcia roku w księdze głównej.
+W tym artykule opisano wymaganą konfigurację i kroki wykonywania procesu zamknięcia roku w księdze głównej.
 
 Na koniec roku obrachunkowego trzeba uruchomić proces zamknięcia roku, aby przenieść salda otwarcia do nowego roku. Większość organizacji wykonuje proces zamknięcia roku wiele razy. Pierwsze uruchomienie powoduje przeniesienie sald do nowego roku obrachunkowego. Proces można następnie powtarzać tyle razy, ile jest to konieczne, aby przenieść salda z wpisów korygujących do nowego roku obrachunkowego.
 

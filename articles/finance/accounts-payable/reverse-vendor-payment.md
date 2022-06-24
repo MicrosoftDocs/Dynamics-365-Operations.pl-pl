@@ -1,6 +1,6 @@
 ---
 title: Cofanie płatność dostawcy
-description: W tym temacie opisano różnice między wycofywaniem, usuwaniem, unieważnianiem i odrzucaniem płatności. Ponadto objaśniono dwie metody wycofywania czeku dostawcy.
+description: W tym artykule opisano różnice między wycofywaniem, usuwaniem, unieważnianiem i odrzucaniem płatności. Ponadto objaśniono dwie metody wycofywania czeku dostawcy.
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d982fc224755e2b1421ce7721e245b89f9eff3cb
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 6216aed10866dbd5d814ae7f6b5a16ee67874fda
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716783"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858564"
 ---
 # <a name="reverse-a-vendor-payment"></a>Cofanie płatność dostawcy
 

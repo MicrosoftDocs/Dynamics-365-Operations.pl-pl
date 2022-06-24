@@ -1,6 +1,6 @@
 ---
 title: Amortyzacja środków trwałych dla Polski
-description: Ten temat zawiera informacje o amortyzowaniu środków trwałych dla firm w Polsce.
+description: Ten artykuł zawiera informacje o amortyzowaniu środków trwałych dla firm w Polsce.
 author: ShylaThompson
 ms.date: 10/31/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Poland
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 9def0df87c5ae3bb2a5869cc1f8865cc6db9f13d91103c527cdaf16b2a797da9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4027006dd66f150692053715b7faf39e4d5212c3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729537"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893952"
 ---
 # <a name="fixed-assets-depreciation-for-poland"></a>Amortyzacja środków trwałych dla Polski
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje o amortyzowaniu środków trwałych dla firm w Polsce.
+Ten artykuł zawiera informacje o amortyzowaniu środków trwałych dla firm w Polsce.
 
 Funkcje amortyzacji środków trwałych oparte na wymaganiach prawnych w Polsce obejmują następujące elementy:
 

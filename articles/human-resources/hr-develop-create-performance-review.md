@@ -1,6 +1,6 @@
 ---
 title: Tworzenie przeglądów wydajności
-description: W tym temacie pokazano sposób utworzenia przeglądu wydajności oraz opisano przeznaczenie każdej sekcji przeglądu.
+description: W tym artykule pokazano sposób utworzenia przeglądu wydajności oraz opisano przeznaczenie każdej sekcji przeglądu.
 author: twheeloc
 ms.date: 08/26/2021
 ms.topic: business-process
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 67a001926c0d5021d952f9b678ec128c68511a8f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ae2de087f4e345ba826ddbe8a65f917476bd6894
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8696048"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872189"
 ---
 # <a name="create-performance-reviews"></a>Tworzenie przeglądów wydajności
 
@@ -27,7 +27,7 @@ ms.locfileid: "8696048"
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
-W tym temacie pokazano sposób utworzenia przeglądu wydajności oraz opisano przeznaczenie każdej sekcji przeglądu. Procedurę utworzono przy użyciu danych firmy demonstracyjnej USMF.
+W tym artykule pokazano sposób utworzenia przeglądu wydajności oraz opisano przeznaczenie każdej sekcji przeglądu. Procedurę utworzono przy użyciu danych firmy demonstracyjnej USMF.
 
 1. Na stronie głównej wybierz obszar roboczy **Samoobsługa pracownika etatowego**.
 2. Wybierz przycisk **Nowy przegląd**, aby utworzyć nowy przegląd.

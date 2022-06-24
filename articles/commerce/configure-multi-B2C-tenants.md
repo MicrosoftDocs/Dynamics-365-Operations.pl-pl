@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie wielu dzierżawców B2C w środowisku Commerce
-description: W tym temacie opisano sposób konfigurowania wielu dzierżawców (B2C) na kanał Microsoft Azure Active Directory (Azure AD) na potrzeby uwierzytelniania użytkowników w środowisku specjalnym w ramach systemu Dynamics 365 Commerce.
+description: W tym artykule opisano sposób konfigurowania wielu dzierżawców (B2C) na kanał Microsoft Azure Active Directory (Azure AD) na potrzeby uwierzytelniania użytkowników w środowisku specjalnym w ramach systemu Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 03/17/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-12
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a372561b8a6cdca8e1a3dc362009379884f1a3414330f3f056d4c3af7703a132
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 13504a612c388b4720ec3328aaf2db83da2aad8c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736411"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890576"
 ---
 # <a name="configure-multiple-b2c-tenants-in-a-commerce-environment"></a>Konfigurowanie wielu dzierżawców B2C w środowisku Commerce
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano sposób konfigurowania wielu dzierżawców (B2C) Microsoft Azure Active Directory (Azure AD) na potrzeby uwierzytelniania użytkowników na kanał w środowisku specjalnym w ramach systemu Dynamics 365 Commerce.
+W tym artykule opisano sposób konfigurowania wielu dzierżawców (B2C) Microsoft Azure Active Directory (Azure AD) na potrzeby uwierzytelniania użytkowników na kanał w środowisku specjalnym w ramach systemu Dynamics 365 Commerce.
 
 Dynamics 365 Commerce używa tożsamości w chmurze B2C usługi Azure AD do obsługi poświadczeń użytkowników i przepływów uwierzytelniania. Użytkownicy mogą skorzystać z przepływów uwierzytelniania, aby zarejestrować się, zalogować i zresetować hasło. Azure AD B2C przechowuje poufne informacje o uwierzytelnianiu użytkownika, takie jak jego nazwa użytkownika i hasło. Rekord użytkownika jest unikatowy dla każdego dzierżawcy B2C i używa zarówno poświadczeń nazwy użytkownika (adresu e-mail), jak i poświadczeń dostawcy tożsamości społecznościowych.
 

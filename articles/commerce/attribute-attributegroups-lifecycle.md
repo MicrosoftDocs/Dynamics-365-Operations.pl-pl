@@ -1,6 +1,6 @@
 ---
 title: Zarządzanie atrybutami i grupami atrybutów
-description: W tym temacie opisano, jak za pomocą atrybutów stworzyć możliwość opisywania produktu i jego cech za pomocą pól definiowanych przez użytkownika.
+description: W tym artykule opisano, jak za pomocą atrybutów stworzyć możliwość opisywania produktu i jego cech za pomocą pól definiowanych przez użytkownika.
 author: ashishmsft
 ms.date: 04/28/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: b3960f0877bdf68dd2f511ad283961b2a92db6a60078e84be55f071a00eae927
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cd74cb7795366bdca80e47d79a9591af69a16daf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727661"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876671"
 ---
 # <a name="manage-attributes-and-attribute-groups"></a>Zarządzanie atrybutami i grupami atrybutów
 
@@ -85,7 +85,7 @@ Atrybuty są oparte na *typach atrybutów*. Typ atrybutu określa typ danych, kt
 
 *Metadane atrybutów* umożliwiają wybranie opcji określających, jak mają się zachować atrybuty każdego produktu. Można na przykład wskazać, czy atrybuty są wymagane, czy mogą być używana w wyszukiwaniach i czy można ich używać jako filtrów.
 
-Dla produktów ustawienia metadanych atrybutów mogą być zastępowane na poziomie kanału. Ta funkcjonalność zostanie omówiona w dalszej części tego tematu.
+Dla produktów ustawienia metadanych atrybutów mogą być zastępowane na poziomie kanału. Ta funkcjonalność zostanie omówiona w dalszej części tego artykułu.
 
 Jak można zauważyć, strona **Atrybuty** zawiera opcje powiązane z metadanymi atrybutów. W obszarze **Metadane atrybutów aplikacji POS** opcja o nazwie **Może być doprecyzowany** wpływa na zachowanie wartości atrybutów w punkcie sprzedaży (POS) oraz na sposób obsługi tych wartości atrybutów przez system. Tylko atrybuty, dla których w opcji **Może być doprecyzowany** można ustawić wartość **Tak**, będą wyświetlane w POS dla operacji doprecyzowywania i filtrowania produktów.
 

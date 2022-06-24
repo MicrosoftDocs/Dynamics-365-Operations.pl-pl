@@ -1,6 +1,6 @@
 ---
 title: Zarządzanie jakością dla procesów magazynowych
-description: Ten temat zawiera informacje o procesie zarządzania jakością dla funkcji procesów magazynu. Ta funkcja rozszerza możliwości zarządzania jakością i umożliwia użytkownikom integrowanie kontroli przez pobieranie próbek towarów z procesem przyjmowania do magazynu przy użyciu zaawansowanego zarządzania magazynem.
+description: Ten artykuł zawiera informacje o procesie zarządzania jakością dla funkcji procesów magazynu. Ta funkcja rozszerza możliwości zarządzania jakością i umożliwia użytkownikom integrowanie kontroli przez pobieranie próbek towarów z procesem przyjmowania do magazynu przy użyciu zaawansowanego zarządzania magazynem.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: a8a7ac8266c14791137f9eda51b5abb5a59e5961
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 7f806b58c5e956e4f26158e8ea5c90a559296655
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679059"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857845"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Zarządzanie jakością dla procesów magazynowych
 
@@ -69,7 +69,7 @@ Przed automatycznym wygenerowaniem pracy magazynowej w celu przeniesienia zapas�
 1. Dla każdego typu zlecenia pracy należy skonfigurować dyrektywy lokalizacji, które stosują poprawne lokalizacje kontroli jakości, do których należy przenieść zapasy. Po zakończeniu kontroli jakości dyrektywa lokalizacji dla typu zlecenia pracy _Zlecenie kontroli jakości_ gwarantuje, że zostanie wybrana nowa lokalizacja docelowa, aby można było przenieść zapasy z lokalizacji kontroli jakości.
 1. Skonfiguruj odpowiednie elementy menu urządzeń przenośnych w celu obsługi przepływu odebranych zapasów do lokalizacji kontroli jakości oraz przenoszenia zapasów, które przechodzą kontrolę jakości z wynikiem pozytywnym lub negatywnym z lokalizacji kontroli jakości do nowej lokalizacji.
 
-Aby zapoznać się z przykładem krok po kroku, który pokazuje, jak ukończyć tę instalację, zajrzyj do [przykładowego scenariusza](#example-scenario) na końcu tego tematu.
+Aby zapoznać się z przykładem krok po kroku, który pokazuje, jak ukończyć tę instalację, zajrzyj do [przykładowego scenariusza](#example-scenario) na końcu tego artykułu.
 
 ## <a name="enable-a-warehouse-for-quality-management"></a>Włącz magazyn do zarządzania jakością
 
@@ -188,7 +188,7 @@ Wartością **Typu odwołania** dla poniższych przykładów jest _Zakup_, a war
 | Obciążenie pracą | Cały obiekt pod numerem identyfikacyjnym | Tak _(zablokowano/nie można edytować)_ | <p>Lokalizacja: Tak</p><p>Numer identyfikacyjny: Tak _(zablokowano/nie można edytować)_</p> | Tak | 3 | <p>**Dwa towary:**</p><ul><li>**Ilość w wierszu zamówienia dla pozycji A: 120 EA (4 palety)**</li><li>**Ilość w wierszu zamówienia dla pozycji B: 90 EA (3 palety)**</li></ul><p>**Jeden ładunek, dwa wiersze ładunku z każdym wierszem zamówienia**</p><ol><li>Rejestrowanie przyjęcia w aplikacji Warehouse Management dla towaru A, 30 EA, LP1<p>Praca wyrywkowej kontroli jakości towaru dla 30 EA</p><p>Zlecenie kontroli jakości 1 dla 30 EA</p></li><li>Rejestrowanie przyjęcia w aplikacji Warehouse Management dla towaru A, 30 EA, LP2<p>Praca zamówienia zakupu dla 30 EA (odłożenie)</p></li><li>Rejestrowanie przyjęcia w aplikacji Warehouse Management dla towaru A, 30 EA, LP3<p>Praca zamówienia zakupu dla 30 EA (odłożenie)</p></li><li>Rejestrowanie przyjęcia w aplikacji Warehouse Management dla towaru A, 30 EA, LP4<p>Praca wyrywkowej kontroli jakości towaru dla 30 EA</p><p>Zlecenie kontroli jakości 1 dla 30 EA</p></li><li>Rejestrowanie przyjęcia w aplikacji Warehouse Management dla towaru B, 30 EA, LP5<p>Praca wyrywkowej kontroli jakości towaru dla 30 EA</p><p>Zlecenie kontroli jakości 1 dla 30 EA</p></li><li>Rejestrowanie przyjęcia w aplikacji Warehouse Management dla towaru B, 30 EA, LP6<p>Praca zamówienia zakupu dla 30 EA (odłożenie)</p></li><li>Rejestrowanie przyjęcia w aplikacji Warehouse Management dla towaru A, 30 EA, LP7<p>Praca zamówienia zakupu dla 30 EA (odłożenie)</p></li></ol> |
 | Obciążenie pracą | Procent = 10 | Tak _(zablokowano/nie można edytować)_ | <p>Lokalizacja: Nie</p><p>Numer identyfikacyjny: Nie</p> | Nie | Nie dotyczy | <p>**Ilość w wierszu zamówienia: 100 EA**</p><p>**Nie są tworzone żadne ładunki. Zakres zamówienia jest stosowany.**</p><ol><li>Rejestrowanie przyjęcia w aplikacji Warehouse Management dla pozycji A, 50 EA, LP1<p>Praca wyrywkowej kontroli jakości towaru dla 5 EA</p><p>Zlecenie kontroli jakości 1 dla 5 EA</p><p>Praca zamówienia zakupu dla 45 EA (odłożenie)</p></li><li>Rejestrowanie przyjęcia w aplikacji Warehouse Management dla pozycji A, 50 EA, LP2<p>Praca wyrywkowej kontroli jakości towaru dla 5 EA</p><p>Zlecenie kontroli jakości 1 dla 5 EA</p><p>Praca zamówienia zakupu dla 45 EA (odłożenie)</p></li></ol> |
 
-Gdy pracownik sprawdza poprawność jednego z zleceń kontroli jakości, które zostały przedstawione w poprzedniej tabeli, system automatycznie generuje zadanie kontroli jakości w celu przeniesienia zapasów z lokalizacji kontroli jakości do lokalizacji określonej w dyrektywie lokalizacji dla typu zlecenia produkcyjnego dla _zlecenia kontroli jakości_. W zależności od wyników testu dla zlecenia kontroli jakości można skonfigurować dowolną lokalizację do tego celu, taką jak zwrot lub lokalizacja przechowywania. Aby zapoznać się z przykładem tej konfiguracji, należy zapoznać się z [przykładowym scenariuszem](#example-scenario) na końcu tego tematu.
+Gdy pracownik sprawdza poprawność jednego z zleceń kontroli jakości, które zostały przedstawione w poprzedniej tabeli, system automatycznie generuje zadanie kontroli jakości w celu przeniesienia zapasów z lokalizacji kontroli jakości do lokalizacji określonej w dyrektywie lokalizacji dla typu zlecenia produkcyjnego dla _zlecenia kontroli jakości_. W zależności od wyników testu dla zlecenia kontroli jakości można skonfigurować dowolną lokalizację do tego celu, taką jak zwrot lub lokalizacja przechowywania. Aby zapoznać się z przykładem tej konfiguracji, należy zapoznać się z [przykładowym scenariuszem](#example-scenario) na końcu tego artykułu.
 
 Można ponownie otworzyć zlecenie kontroli jakości, które zostało już zweryfikowane, pod warunkiem, że praca zlecenia kontroli jakości związana z przenoszeniem zapasów z lokalizacji kontroli jakości nie ma wartości **Stanu pracy** wynoszącej *Zamknięty* lub *W toku*.
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: f3e94cc79f0daac9107f9876ac8414d2c4cff366
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: e3ec1f59e0b1d202d5591bfc1525c9034f4d8f45
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569006"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893128"
 ---
 # <a name="zone-threshold-replenishment"></a>Uzupełnianie zapasów na podstawie progu w strefie
 
@@ -45,7 +45,7 @@ Aby móc używać funkcji *Uzupełniania zapasów na podstawie progu w strefie*,
 
 ## <a name="set-up-zone-based-replenishment"></a><a name="setup"></a>Konfigurowanie uzupełniania zapasów w strefie
 
-Aby skonfigurować uzupełniania zapasów w strefie, należy skonfigurować kilka części systemu. W tej sekcji przedstawiono różne ustawienia oraz dostępne wartości danych demonstracyjnych, które można wprowadzić, aby wykonać czynności wykonywane w scenariuszu na końcu tego tematu.
+Aby skonfigurować uzupełniania zapasów w strefie, należy skonfigurować kilka części systemu. W tej sekcji przedstawiono różne ustawienia oraz dostępne wartości danych demonstracyjnych, które można wprowadzić, aby wykonać czynności wykonywane w scenariuszu na końcu tego artykułu.
 
 ### <a name="set-up-directive-codes"></a>Konfigurowanie kodów dyrektyw
 
@@ -57,7 +57,7 @@ Aby wyświetlić lub edytować kody dyrektyw, przejdź do **Zarządzanie magazyn
 
 #### <a name="prepare-demo-data-directive-codes"></a>Przygotowywanie kodów dyrektyw w danych demonstracyjnych
 
-W tym przykładzie przedstawiono sposób przygotowania kodu dyrektywy. Jeśli planowane jest korzystanie z scenariusza na końcu tego tematu, należy skorzystać z przedstawionych tu wartości danych demonstracyjnych. W przeciwnym razie należy skorzystać z własnych wartości.
+W tym przykładzie przedstawiono sposób przygotowania kodu dyrektywy. Jeśli planowane jest korzystanie z scenariusza na końcu tego artykułu, należy skorzystać z przedstawionych tu wartości danych demonstracyjnych. W przeciwnym razie należy skorzystać z własnych wartości.
 
 1. Wybierz firmę **USMF** do pracy z danymi demonstracyjnymi.
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Kody dyrektyw**.
@@ -79,7 +79,7 @@ Szablon uzupełniania zapasów jest zestawem reguł, które sterują tym, kiedy 
 
 #### <a name="prepare-a-demo-data-replenishment-template"></a>Przygotowywanie demonstracyjnego szablonu uzupełniania danych
 
-W tym przykładzie przedstawiono sposób przygotowania szablonu uzupełniania. Jeśli planowane jest korzystanie z scenariusza na końcu tego tematu, należy skorzystać z przedstawionych tu wartości danych demonstracyjnych. W przeciwnym razie należy skorzystać z własnych wartości.
+W tym przykładzie przedstawiono sposób przygotowania szablonu uzupełniania. Jeśli planowane jest korzystanie z scenariusza na końcu tego artykułu, należy skorzystać z przedstawionych tu wartości danych demonstracyjnych. W przeciwnym razie należy skorzystać z własnych wartości.
 
 1. Wybierz firmę **USMF** do pracy z danymi demonstracyjnymi.
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Uzupełnienie \> Szablony uzupełniania zapasów**.
@@ -144,7 +144,7 @@ Aby zapoznać się z przykładami, w których można skorzystać z ustawień w c
 
 #### <a name="prepare-demo-data-location-directives"></a>Przygotowywanie danych demonstracyjnych dyrektyw lokalizacji
 
-Aby przygotować dane demonstracyjne do użycia w scenariuszu na końcu tego tematu, należy utworzyć dwie dyrektywy lokalizacji: jedną do pobrania i jedną do umieszczenia.
+Aby przygotować dane demonstracyjne do użycia w scenariuszu na końcu tego artykułu, należy utworzyć dwie dyrektywy lokalizacji: jedną do pobrania i jedną do umieszczenia.
 
 ##### <a name="create-a-replenishment-pick-directive"></a>Tworzenie dyrektywy pobierania uzupełniania zapasów
 
@@ -258,7 +258,7 @@ Ta sekcja zawiera przykładowy scenariusz przedstawiający sposób pracy z tą f
 
 ### <a name="prepare-the-sample-data-that-is-required-for-the-sample-scenario"></a>Przygotuj przykładowe dane wymagane dla scenariusza z przykładu
 
-Przed rozpoczęciem pracy nad scenariuszem należy aktywować przykładowe dane i skonfigurować funkcję zgodnie z opisem w tej sekcji i w poprzednich sekcjach tego tematu.
+Przed rozpoczęciem pracy nad scenariuszem należy aktywować przykładowe dane i skonfigurować funkcję zgodnie z opisem w tej sekcji i w poprzednich sekcjach tego artykułu.
 
 #### <a name="use-the-usmf-legal-entity"></a>Użyj firmy USMF
 
@@ -266,7 +266,7 @@ Aby pracować z tymi scenariuszami przy użyciu określonych przykładowych reko
 
 #### <a name="prepare-additional-sample-data"></a>Przygotowywanie dodatkowych przykładowych danych
 
-Po wybraniu firmy **USMF** dodaj dodatkowe przykładowe dane, które są wymagane, zgodnie z opisem w sekcji [konfiguracji uzupełnienia w strefie](#setup), opisanej wcześniej w tym temacie.
+Po wybraniu firmy **USMF** dodaj dodatkowe przykładowe dane, które są wymagane, zgodnie z opisem w sekcji [konfiguracji uzupełnienia w strefie](#setup), opisanej wcześniej w tym artykule.
 
 #### <a name="check-your-on-hand-inventory"></a>Sprawdzanie dostępnych zapasów
 

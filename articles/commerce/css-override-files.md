@@ -1,6 +1,6 @@
 ---
 title: Praca z plikami zastępowania CSS
-description: W tym temacie opisano, dlaczego, kiedy i jak używać plików zastępowania kaskadowych arkuszy stylów (CSS) w aplikacji Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano, dlaczego, kiedy i jak używać plików zastępowania kaskadowych arkuszy stylów (CSS) w aplikacji Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 ms.date: 05/28/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6788481936a54bff32096dba1d0424fc52c669e4
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: eaeeee4c9de7293ba94cc836c4d7b62787eca81d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964611"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892867"
 ---
 # <a name="work-with-css-override-files"></a>Praca z plikami zastępowania CSS
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano, dlaczego, kiedy i jak używać plików zastępowania kaskadowych arkuszy stylów (CSS) w aplikacji Microsoft Dynamics 365 Commerce.
+W tym artykule opisano, dlaczego, kiedy i jak używać plików zastępowania kaskadowych arkuszy stylów (CSS) w aplikacji Microsoft Dynamics 365 Commerce.
 
 Stałe style witryny zazwyczaj powinny być obsługiwane za pośrednictwem motywu witryny. Motywy udostępniają podstawowe ustawienia stylów CSS i ustawienia stylów dla modułów na dowolnej stronie witryny. Motywy są tworzone przy użyciu zestawu Dynamics 365 Commerce SDK (Software Development Kit) w trybie online i są wdrażane w witrynach internetowych za pośrednictwem usług Microsoft Dynamics Lifecycle Services (LCS). Możliwości debugowania modułu i konfiguracje interfejsu modułu w zestawie SDK pomagają deweloperom tworzyć dostosowywalne i spójne pakiety projektów witryny. Gdy te pakiety projektów są wdrażane w witrynie, autorzy witryn mogą skupić się na tworzeniu, edytowaniu i publikowaniu zawartości, a nie na programowaniu witryny.
 

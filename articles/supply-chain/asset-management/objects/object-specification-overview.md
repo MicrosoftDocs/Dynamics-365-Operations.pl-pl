@@ -1,6 +1,6 @@
 ---
-title: Omówienie atrybutu składnika majątku
-description: Ten temat stanowi przegląd atrybutów składnika majątku w module Zarządzanie składnikami majątku.
+title: Omówienie atrybutów składnika majątku
+description: Ten artykuł stanowi przegląd atrybutów składnika majątku w module Zarządzanie składnikami majątku.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: overview
@@ -17,20 +17,20 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 98386b6ffe2a5f9c79c0ee1f18073ac13fc3a039
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: d1585f200e4baba519085685a41979c70a64fb1a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986467"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862751"
 ---
-# <a name="asset-attribute-overview"></a>Omówienie atrybutu składnika majątku
+# <a name="asset-attribute-overview"></a>Omówienie atrybutów składnika majątku
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-Ten temat stanowi przegląd atrybutów składnika majątku w module Zarządzanie składnikami majątku. Atrybuty składnika majątku są właściwościami powiązanymi z typem zasobu lub składnikiem majątku. Jeśli masz skonfigurowane [typy atrybutów](../setup-for-functional-locations/specification-types.md) i użyto ich na zasobach, możesz uzyskać przegląd wartości atrybutów, które są skonfigurowane w składnikach majątku. Ten przegląd wyświetlany na dwóch stronach w module Zarządzanie składnikami majątku: **Omówienie atrybutu składnika majątku** oraz **Atrybut składnika majątku**.
+Ten artykuł stanowi przegląd atrybutów składnika majątku w module Zarządzanie składnikami majątku. Atrybuty składnika majątku są właściwościami powiązanymi z typem zasobu lub składnikiem majątku. Jeśli masz skonfigurowane [typy atrybutów](../setup-for-functional-locations/specification-types.md) i użyto ich na zasobach, możesz uzyskać przegląd wartości atrybutów, które są skonfigurowane w składnikach majątku. Ten przegląd wyświetlany na dwóch stronach w module Zarządzanie składnikami majątku: **Omówienie atrybutu składnika majątku** oraz **Atrybut składnika majątku**.
 
 Strona **Omówienie atrybutu składnika majątku** zawiera osobny wiersz dla każdego zasobu. Wiersz zawiera wszystkie typy atrybutów, które są związane z tym składnikiem majątku. Wykonaj te kroki, aby otworzyć i używać strony **Omówienie atrybutów składnika majątku**.
 

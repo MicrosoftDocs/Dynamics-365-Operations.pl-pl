@@ -1,6 +1,6 @@
 ---
 title: Lista funkcji modułu ER w kategorii funkcji specyficznych dla domeny biznesowej
-description: Ten temat zawiera ogólne informacje o funkcjach specyficznych dla domeny biznesowej obsługiwanych w module Raportowanie elektroniczne (ER).
+description: Ten artykuł zawiera ogólne informacje o funkcjach specyficznych dla domeny biznesowej obsługiwanych w module Raportowanie elektroniczne (ER).
 author: NickSelin
 ms.date: 12/12/2019
 ms.prod: ''
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a8f0812e4262a264ffc89b72e0f4fc8c55d6c6822095f550c8f05296bb057a38
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d9df826dcc0b672977d4d8af1feb985ab9a0ab7d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712340"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879957"
 ---
 # <a name="list-of-er-functions-in-the-business-domainspecific-category"></a>Lista funkcji modułu ER w kategorii funkcji specyficznych dla domeny biznesowej
 
 [!include [banner](../includes/banner.md)]
 
-Funkcje specyficzne dla domeny w module raportowania elektronicznego (ER) mogą służyć do wykonywania obliczeń i żądań dostępu do danych, które są specyficzne dla implementacji aplikacji Microsoft Dynamics 365 Finance. Ten temat zawiera podsumowanie tych funkcji.
+Funkcje specyficzne dla domeny w module raportowania elektronicznego (ER) mogą służyć do wykonywania obliczeń i żądań dostępu do danych, które są specyficzne dla implementacji aplikacji Microsoft Dynamics 365 Finance. Ten artykuł zawiera podsumowanie tych funkcji.
 
 ## <a name="list-of-supported-functions"></a>Lista obsługiwanych funkcji
 

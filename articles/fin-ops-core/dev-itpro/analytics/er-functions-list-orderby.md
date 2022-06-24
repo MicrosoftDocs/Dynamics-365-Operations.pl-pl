@@ -1,6 +1,6 @@
 ---
 title: ORDERBY, funkcja ER
-description: Ten temat zawiera ogólne informacje o używaniu funkcji ORDERBY w module Raportowanie elektroniczne (ER).
+description: Ten artykuł zawiera ogólne informacje o używaniu funkcji ORDERBY w module Raportowanie elektroniczne (ER).
 author: NickSelin
 ms.date: 12/12/2019
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 963d55bcf98a9109c8b6ceb57edf5b55f15a2b0f
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 1a922405ea23d2b1ff5ac062785e68626edbc8f0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075181"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883767"
 ---
 # <a name="orderby-er-function"></a>ORDERBY, funkcja ER
 

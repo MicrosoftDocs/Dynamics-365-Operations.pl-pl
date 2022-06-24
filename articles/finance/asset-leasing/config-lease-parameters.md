@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie parametrów wynajmu (wersja zapoznawcza)
-description: W tym temacie opisano ustawienia konfiguracji dotyczące wynajmu składników aktywów, takie jak informacje o zabezpieczeniach i ustawienia księgowania.
+description: W tym artykule opisano ustawienia konfiguracji dotyczące wynajmu składników aktywów, takie jak informacje o zabezpieczeniach i ustawienia księgowania.
 author: moaamer
 ms.date: 01/11/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 2a644b3c9d9ed4fc86a816af1ab338b96b1aa7ad
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: e878fa7634cfdcc6c0db19a91e771757c545505b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968084"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895088"
 ---
 # <a name="configure-lease-parameters"></a>Konfigurowanie parametrów wynajmu
 

@@ -1,6 +1,6 @@
 ---
 title: Tworzenie zlecenia pracy
-description: W tym temacie opisano tworzenie zleceń pracy w module Zarządzanie składnikami majątku.
+description: W tym artykule opisano tworzenie zleceń pracy w module Zarządzanie składnikami majątku.
 author: johanhoffmann
 ms.date: 02/01/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c1477e3c1b99172d84d2cdc64fc0ed01c057e0fa59422b30c17868ca400de4d0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b1b8b3d8d83bdad2efe49bd4e878793cca6c49f4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743705"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891213"
 ---
 # <a name="creating-work-orders"></a>Tworzenie zlecenia pracy
 
@@ -60,7 +60,7 @@ Aby utworzyć zlecenia pracy na podstawie harmonogramu konserwacji, należy wyko
 
 ## <a name="group-work-order-lines-that-are-automatically-created-while-a-maintenance-plan-runs"></a>Grupowanie wierszy zlecenia pracy tworzonych automatycznie podczas planowania konserwacji
 
-Ta funkcja umożliwia definiowanie reguł grupowania wierszy zleceń pracy w ramach pojedynczego zlecenia, gdy system jest tak ustawiony, aby generował zlecenia pracy automatycznie na podstawie planu konserwacji. Wcześniej generowane automatycznie zlecenia pracy mogły zawierać tylko jeden wiersz. Teraz jednak można grupować zlecenia według na przykład składnika majątku, typu składnika majątku lub lokalizacji czynności. (Ręcznie wygenerowane zlecenia pracy można już grupować w ten sposób, zgodnie z opisem w poprzedniej sekcji tego tematu).
+Ta funkcja umożliwia definiowanie reguł grupowania wierszy zleceń pracy w ramach pojedynczego zlecenia, gdy system jest tak ustawiony, aby generował zlecenia pracy automatycznie na podstawie planu konserwacji. Wcześniej generowane automatycznie zlecenia pracy mogły zawierać tylko jeden wiersz. Teraz jednak można grupować zlecenia według na przykład składnika majątku, typu składnika majątku lub lokalizacji czynności. (Ręcznie wygenerowane zlecenia pracy można już grupować w ten sposób, zgodnie z opisem w poprzedniej sekcji tego artykułu).
 
 ### <a name="enable-grouping-for-automatically-generated-work-orders"></a>Włącz grupowanie dla automatycznie generowanych zleceń pracy
 

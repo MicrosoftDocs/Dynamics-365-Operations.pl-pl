@@ -1,6 +1,6 @@
 ---
 title: Optymalizacja zadań wsadowych BYOD w harmonogramie
-description: W tym temacie wyjaśniono, jak optymalizować wydajność, gdy jest używana funkcja „Dobierz własną bazę danych (BYOD)” w rozwiązaniu Microsoft Dynamics 365 Human Resources.
+description: W tym artykule wyjaśniono, jak optymalizować wydajność, gdy jest używana funkcja „Dobierz własną bazę danych (BYOD)” w rozwiązaniu Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 08/17/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-08-10
 ms.dyn365.ops.version: Platform update 36
-ms.openlocfilehash: 2fcdc89ce65fd123b4cf845acf83070119cc3701
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 4df60a82e016ec8f3ba6ba0d70c261824961d221
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717177"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848321"
 ---
 # <a name="optimize-byod-scheduled-batch-jobs"></a>Optymalizacja zadań wsadowych BYOD w harmonogramie
 
@@ -27,7 +27,7 @@ ms.locfileid: "8717177"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-W tym temacie wyjaśniono, jak optymalizować wydajność, gdy jest używana funkcja „Dobierz własną bazę danych (BYOD)”. Aby uzyskać więcej informacji o BYOD, zapoznaj się z tematem [Dobierz własną bazę danych (BYOD)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
+W tym artykule wyjaśniono, jak optymalizować wydajność, gdy jest używana funkcja „Dobierz własną bazę danych (BYOD)”. Aby uzyskać więcej informacji o BYOD, zapoznaj się z tematem [Dobierz własną bazę danych (BYOD)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 
 ## <a name="performance-considerations-for-data-export"></a>Zagadnienia dotyczące wydajności eksportu danych
 

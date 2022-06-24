@@ -1,6 +1,6 @@
 ---
 title: Uaktualnianie funkcjonalności planowania budżetu
-description: W tym temacie wyjaśniono, co trzeba ponownie skonfigurować, oraz opisano nowe funkcje, które trzeba wziąć pod uwagę po wykonaniu uaktualnienia.
+description: W tym artykule wyjaśniono, co trzeba ponownie skonfigurować, oraz opisano nowe funkcje, które trzeba wziąć pod uwagę po wykonaniu uaktualnienia.
 author: panolte
 ms.date: 04/10/2017
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: panolte
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: c52de15faddd797d31d0875882863b8fe37a7d173b38be058e51a06b2e7fe078
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d098aa77b4eb87118692c18ecd1b09a5de2c53d6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769198"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890414"
 ---
 # <a name="upgrade-budget-planning"></a>Uaktualnienie funkcjonalności planowania budżetu
 
 [!include [banner](../includes/banner.md)]
 
-Istnieją znaczne różnice funkcjonalności planowania budżetu między programami Microsoft Dynamics AX 2012 i Dynamics 365 Finance. Niektóre funkcje nie zostały uaktualnione i dlatego wymagają zmiany konfiguracji. W tym temacie wyjaśniono, co trzeba ponownie skonfigurować, oraz opisano nowe funkcje, które trzeba wziąć pod uwagę po wykonaniu uaktualnienia.  
+Istnieją znaczne różnice funkcjonalności planowania budżetu między programami Microsoft Dynamics AX 2012 i Dynamics 365 Finance. Niektóre funkcje nie zostały uaktualnione i dlatego wymagają zmiany konfiguracji. W tym artykule wyjaśniono, co trzeba ponownie skonfigurować, oraz opisano nowe funkcje, które trzeba wziąć pod uwagę po wykonaniu uaktualnienia.  
 
-W programie Finance funkcjonalność planowania budżetu ma wiele ulepszeń, które nie były dostępne w Dynamics AX 2012. W tym temacie opisano zmiany, które muszą wprowadzić użytkownicy dokonujący uaktualnienia. Wskazano także nowe funkcje, które należy wziąć pod uwagę w procesie uaktualniania. Ze względu na zakres zmian nie będzie można otworzyć żadnych istniejących planów budżetu, dopóki nie zostaną wprowadzone zmiany opisane w tym temacie. Raporty powinny jednak działać bez konieczności wprowadzania dodatkowych zmian.
+W programie Finance funkcjonalność planowania budżetu ma wiele ulepszeń, które nie były dostępne w Dynamics AX 2012. W tym artykule opisano zmiany, które muszą wprowadzić użytkownicy dokonujący uaktualnienia. Wskazano także nowe funkcje, które należy wziąć pod uwagę w procesie uaktualniania. Ze względu na zakres zmian nie będzie można otworzyć żadnych istniejących planów budżetu, dopóki nie zostaną wprowadzone zmiany opisane w tym artykule. Raporty powinny jednak działać bez konieczności wprowadzania dodatkowych zmian.
 
 ## <a name="overview-of-changes"></a>Omówienie zmian
 Wprowadzono wiele istotnych zmian w module Budżetowanie w programie Finance and Operations. Te zmiany służą temu, aby planowanie budżetu było łatwiejsze do skonfigurowania i pozwalało bardziej wykorzystywać już istniejące elementy, co powinno ograniczyć ilość czynności konfiguracyjnych i konserwacyjnych wykonywanych co roku. Następujące obszary systemu AX 2012 nie istnieją już w programie Finance:
@@ -58,7 +58,7 @@ Procesy planowania budżetu są w większości takie same, jak w systemie AX 201
 W systemie AX 2012 dokumenty uzasadnienia były zapisywane w folderze załączników. Żadne wcześniejsze dokumenty uzasadnienia nie są uaktualniane. Obecnie dokumenty uzasadnienia są przechowywane w bazie danych. Jeśli te informacje powinny być zapisywane w uaktualnionej wersji, można przekazać końcowe dokumenty uzasadnienia dla każdego planu jako załącznik, używając przycisku za pomocą **Uzasadnienie** w okienku akcji. W systemie AX 2012 arkusze programu Excel dla każdego planu budżetu były tworzone na podstawie szablonu. W programie Finance we wszystkich planach jest otwierana kopia układu. Jednak nie są zapisywane żadne modyfikacje pliku programu Excel. Wszelkie formuły i informacje pomocnicze, których użyto indywidualnie dla poszczególnych planów, muszą zostać dodane poprzez komentarze, uzasadnienie lub inny proces uzupełniający.
 
 ## <a name="configuring-an-upgraded-environment-from-ax-2012"></a>Konfigurowanie środowiska uaktualnionego z systemu AX 2012
-Aby pomóc użytkownikom dobrać sposób konfigurowania uaktualnionego systemu, poniżej przedstawiono przykład uaktualnienia procesu budżetu opartego na danych demonstracyjnych z systemu AX 2012. Utworzono domyślne dane konfiguracyjne kolumn, aby ułatwić proces uaktualniania. Możesz zaktualizować lub usunąć te dane domyślne, jeśli nie spełniają Twoich wymagań dotyczących konfiguracji. **Uwaga:** Istnieją nowe pola wymagane, które nie zostaną ustawione w systemie. Jeśli zablokujesz się na stronie, takiej jak **Konfiguracja planowania budżetu**, i nie możesz z niej wyjść, zamknij przeglądarkę i otwórz ją ponownie na innej stronie, która pozwoli wprowadzić szczegóły w odpowiedniej kolejności. Istnieją wymagane pola, które jeszcze nie są ustawione. W związku z tym mogą wystąpić problemy, dopóki wszystkie ustawienia nie zostaną skonfigurowane, a wymagane pola wypełnione. W tym temacie wyjaśniono, jak wypełnić te pola zgodnie z wymaganiami. Oto niektóre wymagane pola:
+Aby pomóc użytkownikom dobrać sposób konfigurowania uaktualnionego systemu, poniżej przedstawiono przykład uaktualnienia procesu budżetu opartego na danych demonstracyjnych z systemu AX 2012. Utworzono domyślne dane konfiguracyjne kolumn, aby ułatwić proces uaktualniania. Możesz zaktualizować lub usunąć te dane domyślne, jeśli nie spełniają Twoich wymagań dotyczących konfiguracji. **Uwaga:** Istnieją nowe pola wymagane, które nie zostaną ustawione w systemie. Jeśli zablokujesz się na stronie, takiej jak **Konfiguracja planowania budżetu**, i nie możesz z niej wyjść, zamknij przeglądarkę i otwórz ją ponownie na innej stronie, która pozwoli wprowadzić szczegóły w odpowiedniej kolejności. Istnieją wymagane pola, które jeszcze nie są ustawione. W związku z tym mogą wystąpić problemy, dopóki wszystkie ustawienia nie zostaną skonfigurowane, a wymagane pola wypełnione. W tym artykule wyjaśniono, jak wypełnić te pola zgodnie z wymaganiami. Oto niektóre wymagane pola:
 
 -   Strona **Proces planowania budżetu**: pole **Domyślna struktura konta**
 -   Strona **Proces planowania budżetu**: pole **Układ** na skróconej karcie **Reguły i układy etapu planowania budżetu**

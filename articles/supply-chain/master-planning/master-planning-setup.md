@@ -1,7 +1,7 @@
 ---
 title: Ustawianie planowania głównego
-description: W tym temacie opisano różne ważne strategie i parametry używane do konfigurowania planowania głównego.
-author: ChristianRytt
+description: W tym artykule opisano różne ważne strategie i parametry używane do konfigurowania planowania głównego.
+author: t-benebo
 ms.date: 07/01/2019
 ms.topic: article
 ms.prod: ''
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 6d33fd53dd088ae4c6b4680d2604f783a3e1a5a0
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: effdefcf8326babaa89d7de4b28a86bbef7280f8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580727"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888565"
 ---
 # <a name="set-up-master-planning"></a>Ustawianie planowania głównego
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano różne ważne strategie i parametry używane do konfigurowania planowania głównego. Zawiera omówienie typów planów używanych przez planowanie główne oraz wyjaśnienie, które strategie planu należy stosować w zależności od wymagań biznesowych. Opisano tu także główne parametry wpływające na plan i wyjaśniające, w jaki sposób te parametry wpływają na sugerowane zamówienia planowane.
+W tym artykule opisano różne ważne strategie i parametry używane do konfigurowania planowania głównego. Zawiera omówienie typów planów używanych przez planowanie główne oraz wyjaśnienie, które strategie planu należy stosować w zależności od wymagań biznesowych. Opisano tu także główne parametry wpływające na plan i wyjaśniające, w jaki sposób te parametry wpływają na sugerowane zamówienia planowane.
 
 ## <a name="types-of-master-plans"></a>Typy planów głównych
 

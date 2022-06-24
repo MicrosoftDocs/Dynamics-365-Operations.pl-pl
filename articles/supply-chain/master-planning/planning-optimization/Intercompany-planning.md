@@ -1,6 +1,6 @@
 ---
 title: Planowanie międzyfirmowe
-description: W tym temacie opisano planowanie międzyfirmowe i wyjaśniono sposób konfigurowania planowania międzyfirmowego przy użyciu optymalizacji planowania w rozwiązaniu Microsoft Dynamics 365 Supply Chain Management.
+description: W tym artykule opisano planowanie międzyfirmowe i wyjaśniono sposób konfigurowania planowania międzyfirmowego przy użyciu optymalizacji planowania w rozwiązaniu Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: de9f9679bfaf9491c6b69c11448306627c8a42f9
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: c13ecca9523707ef3df5fdb97dc4cbd79478258d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468504"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850678"
 ---
 # <a name="intercompany-planning"></a>Planowanie międzyfirmowe
 
@@ -29,9 +29,9 @@ ms.locfileid: "8468504"
 
 W niektórych organizacjach operacje logistyczne zależą od innych osób prawnych (firm) w organizacji. Operacje te są obsługiwane przy użyciu międzyfirmowych procesów sprzedaży i zakupów, ponieważ każda osoba prawna ma osobny plan kont.
 
-W tym temacie opisano planowanie międzyfirmowe i wyjaśniono sposób konfigurowania planowania międzyfirmowego przy użyciu optymalizacji planowania w rozwiązaniu Microsoft Dynamics 365 Supply Chain Management.
+W tym artykule opisano planowanie międzyfirmowe i wyjaśniono sposób konfigurowania planowania międzyfirmowego przy użyciu optymalizacji planowania w rozwiązaniu Microsoft Dynamics 365 Supply Chain Management.
 
-W tym temacie są używane następujące ważne terminy związane z obrotem międzyfirmowym:
+W tym artykule są używane następujące ważne terminy związane z obrotem międzyfirmowym:
 
 - **Od odbiorcy do dostawcy** — odwołanie względne w łańcuchu firm lub dostaw. Oznacza przesunięcie w kierunku dostawcy surowca.
 - **Od dostawcy do odbiorcy** — odwołanie względne w łańcuchu firm lub dostaw. Oznacza przesunięcie w kierunku odbiorcy.

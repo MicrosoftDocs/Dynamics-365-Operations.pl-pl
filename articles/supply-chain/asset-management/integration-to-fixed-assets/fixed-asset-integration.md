@@ -1,6 +1,6 @@
 ---
 title: Integrowanie zarządzania składnikami majątku ze środkami trwałymi
-description: W tym temacie opisano sposób integrowania modułów zarządzanie składnikami majątku i Środki trwałe, dzięki czemu można łączyć środki trwałe z konserwowanymi składnikami majątku.
+description: W tym artykule opisano sposób integrowania modułów zarządzanie składnikami majątku i Środki trwałe, dzięki czemu można łączyć środki trwałe z konserwowanymi składnikami majątku.
 author: johanhoffmann
 ms.date: 04/17/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 40e4fdce50b335668a53d2efe53b7cf6c66f364f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d5dfaaf9e4cd989ad6b993e8d152f4713c0d3aa4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567590"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874225"
 ---
 # <a name="integrate-asset-management-with-fixed-assets"></a>Integrowanie zarządzania składnikami majątku ze środkami trwałymi
 
@@ -26,7 +26,7 @@ ms.locfileid: "7567590"
 Integrując moduły **Zarządzanie składnikami majątku** i **Środki trwałe**, dzięki czemu można łączyć środki trwałe z konserwowanymi składnikami majątku. Użytkownicy środków trwałych mogą następnie utworzyć konserwowany składnik majątku z nowego lub istniejącego środka trwałego, a użytkownicy zarządzania zasobami mogą skojarzyć konserwowany składnik majątku z istniejącym środkiem trwałym. Ta funkcja ułatwia także użytkownikom środków trwałych wyświetlanie kosztów zaksięgowanych z zleceń roboczych dla powiązanych konserwowanych składników majątku.
 
 > [!NOTE]
-> W tym temacie *konserwowany składników majątku* odnoszą się do środków trwałych z modułu **Zarządzanie zasobami** , a *środki trwałe* odnoszą się do środków trwałych z modułu **Środki trwałe**.
+> W tym artykule *konserwowany składników majątku* odnoszą się do środków trwałych z modułu **Zarządzanie zasobami** , a *środki trwałe* odnoszą się do środków trwałych z modułu **Środki trwałe**.
 
 ## <a name="set-a-default-location-for-new-maintenance-assets-that-are-created-from-fixed-assets-optional"></a>Umożliwia ustawienie domyślnej lokalizacji dla nowych konserwowanych składników majątku, które są tworzone ze środków trwałych (opcjonalnie)
 

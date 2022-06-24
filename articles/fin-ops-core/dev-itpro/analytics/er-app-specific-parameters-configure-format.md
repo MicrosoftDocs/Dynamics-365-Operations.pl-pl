@@ -1,6 +1,6 @@
 ---
-title: Skonfiguruj formaty ER do używania parametrów określonych dla firmy
-description: W tym temacie wyjaśniono, w jaki sposób można skonfigurować format raportowania elektronicznego (ER) do używania z określonymi dla firmy parametrami.
+title: Konfiguracja formatów raportowania elektronicznego do używania parametrów określonych dla firmy
+description: W tym artykule wyjaśniono, w jaki sposób można skonfigurować format raportowania elektronicznego (ER) do używania z określonymi dla firmy parametrami.
 author: NickSelin
 ms.date: 04/02/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 2bf4d1ecad3e25299df7c87ffa2236736ddcac300a5ded779616b25920745d7e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eb44422c4cdcc87989cdfb28dcd7d5cfea9002eb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765839"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858836"
 ---
 # <a name="configure-er-formats-to-use-parameters-that-are-specified-per-legal-entity"></a>Skonfiguruj formaty ER do używania parametrów określonych dla firmy
 
@@ -33,17 +33,17 @@ W wielu formatach elektronicznego raportowania (ER), które należy zaprojektowa
 -   Im więcej jest firm, tym więcej konfiguracji formatu ER trzeba będzie zachować.
 -   Obsługa konfiguracji ER wymaga, aby użytkownicy biznesowi mieli wiedzę na temat ER.
 
-Funkcja parametrów specyficznych dla aplikacji ER umożliwia użytkownikom zaawansowanym konfigurowanie filtrowania danych w formacie ER, tak aby były oparte na zbiorze reguł abstrakcyjnych. Ten zbiór reguł może być skonfigurowany do korzystania ze źródeł danych dostępnych w formacie ER. Użytkownicy biznesowi mogą następnie określać rzeczywiste reguły poza strukturą ER za pomocą interfejsu użytkownika (UI), który jest generowany automatycznie na podstawie ustawień odpowiedniego formatu ER i bieżących danych firmy, do których mają dostęp dane formatu ER źródłem. Zbiór reguł określonych dla formatu ER można wyeksportować z bieżącej firmy w wystąpieniu Dynamics 365 Finance (Finance). Może on następnie zostać zaimportowany do innego podmiotu prawnego o tej samej instancji Finance lub innym wystąpieniu jako zbiór reguł dla tego samego formatu ER.
+Funkcja parametrów specyficznych dla aplikacji ER umożliwia użytkownikom zaawansowanym konfigurowanie filtrowania danych w formacie ER, tak aby były oparte na zbiorze reguł abstrakcyjnych. Ten zbiór reguł może być skonfigurowany do korzystania ze źródeł danych dostępnych w formacie ER. Użytkownicy biznesowi mogą następnie określać rzeczywiste reguły poza strukturą ER za pomocą interfejsu użytkownika (UI), który jest generowany automatycznie na podstawie ustawień odpowiedniego formatu ER i bieżących danych firmy, do których mają dostęp dane formatu ER źródłem. Zbiór reguł określonych dla formatu ER można wyeksportować z bieżącej firmy w wystąpieniu aplikacji Dynamics 365 Finance (Finance). Może on następnie zostać zaimportowany do innego podmiotu prawnego o tej samej instancji Finance lub innym wystąpieniu jako zbiór reguł dla tego samego formatu ER.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Aby uzupełnić przykłady w tym temacie, musisz mieć dostęp, dostęp do wystąpienia Regulatory Configuration Service (RCS), które zostało zainicjowane dla tej samej dzierżawy co Finance dla jednej z następujących ról:
+Aby uzupełnić przykłady w tym artykule, musisz mieć dostęp, dostęp do wystąpienia Regulatory Configuration Services (RCS), które zostało zainicjowane dla tej samej dzierżawy co Finance dla jednej z następujących ról:
 
 - Deweloper raportowania elektronicznego
 - Konsultant funkcjonalny raportowania elektronicznego
 - Administrator systemu
 
-Zaleca się wykonanie kroków opisanych w temacie [Obsługa sparametryzowanych wywołań źródeł danych narzędzia Raportowanie elektroniczne typu pola obliczeniowego](er-calculated-field-type.md). Jeśli wykonano już te kroki, można pominąć kroki opisane w sekcji **Importowanie konfiguracji zadania do RCS**.
+Zaleca się wykonanie kroków opisanych w artykule [Obsługa sparametryzowanych wywołań źródeł danych narzędzia Raportowanie elektroniczne typu pola obliczeniowego](er-calculated-field-type.md). Jeśli wykonano już te kroki, można pominąć kroki opisane w sekcji **Importowanie konfiguracji zadania do RCS**.
 
 ## <a name="import-er-configurations-into-rcs"></a>Importowanie konfiguracji ER do RCS
 
@@ -58,7 +58,7 @@ Pobierz i lokalnie przechowaj następujące konfiguracje ER.
 
 Następnie zaloguj się do swojego wystąpienia RCS.
 
-W tym przykładzie utworzysz konfigurację dla przykładowej Litware, Inc. Aby ukończyć tę procedurę, musisz wykonać czynności opisane w temacie w RCS [Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+W tym przykładzie utworzysz konfigurację dla przykładowej Litware, Inc. Aby ukończyć tę procedurę, musisz wykonać czynności opisane w artykule w RCS [Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 1.  Na domyślnym pulpicie nawigacyjnym wybierz opcję **Raportowanie elektroniczne**.
 2.  Wybierz **Raportowanie konfiguracji**.
@@ -300,7 +300,7 @@ Powtórz kroki w tej sekcji dla elementów nadrzędnych **Format, aby uzyskać i
 -   Wybierz opcję mapowanie, aby poznać wywołania sparametryzowane.xml
 -   Model do nauczenia sparametryzowanych wywołań.xml
 
-Aby dowiedzieć się, jak wyszukać format ER **Format, aby uzyskać informacje o wyszukiwaniu danych LE** skonfigurować zestawy kodów podatkowych zależne od podmiotu prawnego w celu filtrowania transakcji podatkowych według różnych poziomów opodatkowania należy wykonać kroki opisane w temacie [Umożliwia konfigurowanie parametrów formatu ER dla firmy](er-app-specific-parameters-set-up.md).
+Aby dowiedzieć się, jak wyszukać format ER **Format, aby uzyskać informacje o wyszukiwaniu danych LE** skonfigurować zestawy kodów podatkowych zależne od podmiotu prawnego w celu filtrowania transakcji podatkowych według różnych poziomów opodatkowania należy wykonać kroki opisane w artykule [Konfigurowanie parametrów formatu ER dla firmy](er-app-specific-parameters-set-up.md).
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

@@ -1,6 +1,6 @@
 ---
 title: Domyślna strona docelowa kategorii i strona wyników wyszukiwania – omówienie
-description: W tym temacie omówiono domyślną stronę docelową kategorii i stronę wyników wyszukiwania w Dynamics 365 Commerce.
+description: W tym artykule omówiono domyślną stronę docelową kategorii i stronę wyników wyszukiwania w Dynamics 365 Commerce.
 author: ashishmsft
 ms.date: 06/30/2020
 ms.topic: overview
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6f61ee8ec212185e195e2cf1a9d6d25c31e4f672
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 5e61db026649df8fe331d107bfbda8246fb9d5f9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982441"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881859"
 ---
 # <a name="default-category-landing-page-and-search-results-page-overview"></a>Domyślna strona docelowa kategorii i strona wyników wyszukiwania – omówienie
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie omówiono domyślną stronę docelową kategorii i stronę wyników wyszukiwania w Microsoft Dynamics 365 Commerce e-Commerce.
+W tym artykule omówiono domyślną stronę docelową kategorii i stronę wyników wyszukiwania w Microsoft Dynamics 365 Commerce e-Commerce.
 
 ## <a name="default-category-landing-page"></a>Domyślna strona docelowa kategorii
 
@@ -32,7 +32,7 @@ Domyślna strona docelowa kategorii to strona, do której zazwyczaj są przyjmow
 
 ![Domyślna strona docelowa kategorii.](./media/SimpleCategoryLandingDressCategory.png)
 
-U góry strony znajduje się nagłówek, który pokazuje wszystkie kategorie produktów i inne strony, które podzielił kierownik sprzedaży. Konfiguracja jest wykonana w ramach konfiguracji hierarchii nawigacji kanału. Na dole strony znajduje się stopka zawierająca szybkie linki do różnych tematów, które mogą zainteresować kupującego.
+U góry strony znajduje się nagłówek, który pokazuje wszystkie kategorie produktów i inne strony, które podzielił kierownik sprzedaży. Konfiguracja jest wykonana w ramach konfiguracji hierarchii nawigacji kanału. Na dole strony znajduje się stopka zawierająca szybkie linki do różnych artykułów, które mogą zainteresować kupującego.
 
 Następujące składniki są istotne dla danej kategorii:
 

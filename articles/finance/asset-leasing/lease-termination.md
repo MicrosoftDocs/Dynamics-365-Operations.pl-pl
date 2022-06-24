@@ -1,6 +1,6 @@
 ---
 title: Propozycja wypowiedzenia wynajmu
-description: W tym temacie wyjaśniono, jak zaproponować zakończenie wynajmu.
+description: W tym artykule wyjaśniono, jak zaproponować zakończenie wynajmu.
 author: moaamer
 ms.date: 07/16/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2021-1-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 2f6990177251418bece8c99a0f9befa333d6549f
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: a5939f165943ff76ba453fb49d8c0c376c8ce4b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720510"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879661"
 ---
 # <a name="propose-a-lease-for-termination"></a>Proponowanie wynajmu do zakończenia
 
 [!include [banner](../includes/banner.md)]
 
-W przypadku wcześniejszego zakończenia wynajmu, wynajem aktywów może rejestrować zapis w dzienniku wypowiedzenia, aby odpisać zobowiązanie z tytułu wynajmu, składnik aktywów z tytułu prawa do użytkowania (ROU) i skumulowaną amortyzację oraz zaksięgować zysk lub stratę. Proces wcześniejszego wypowiedzenia kończy umowę najmu i powiązane księgi wynajmu. Nie oznacza to zakończenia poszczególnych ksiąg wynajmu. W tym temacie opisano funkcję, która umożliwia zaproponowanie wynajmu do zakończenia i przetworzenie zapisu księgowego zakończenia wynajmu.
+W przypadku wcześniejszego zakończenia wynajmu, wynajem aktywów może rejestrować zapis w dzienniku wypowiedzenia, aby odpisać zobowiązanie z tytułu wynajmu, składnik aktywów z tytułu prawa do użytkowania (ROU) i skumulowaną amortyzację oraz zaksięgować zysk lub stratę. Proces wcześniejszego wypowiedzenia kończy umowę najmu i powiązane księgi wynajmu. Nie oznacza to zakończenia poszczególnych ksiąg wynajmu. W tym artykule opisano funkcję, która umożliwia zaproponowanie wynajmu do zakończenia i przetworzenie zapisu księgowego zakończenia wynajmu.
 
 Jeśli wynajem nie jest klasyfikowany jako wynajmu z odroczonym czynszem najmu i nie jest powiązany ze środkiem trwałym, w ramach leasingu środków trwałych powstaje następujący wpis dziennika zakończenia.
 
@@ -121,7 +121,7 @@ W poniższych tabelach przedstawiono wartości ustawione na kartach **Ogólne** 
 
 ### <a name="steps-for-terminating-the-lease"></a>Kroki do końenia wynajmu
 
-1. Po utworzeniu wynajmu zgodnie z opisem wcześniej w tym temacie należy przejść do książki wynajmu i potwierdzić harmonogram płatności. Następnie należy zaksięgować wpis w arkuszu dotyczący początkowego ujęcia. Początkowa wartość składnika majątku z PDU to $71 235,81 i zobowiązania z tytułu wynajmu powinna wynosić 70 235,81 zł. W tym przykładzie leasing został sklasyfikowany jako wynajm operacyjny zgodnie z kodyfikacją standardów rachunkowości, temat 842 (ASC 842).
+1. Po utworzeniu wynajmu zgodnie z opisem wcześniej w tym artykule należy przejść do książki wynajmu i potwierdzić harmonogram płatności. Następnie należy zaksięgować wpis w arkuszu dotyczący początkowego ujęcia. Początkowa wartość składnika majątku z PDU to $71 235,81 i zobowiązania z tytułu wynajmu powinna wynosić 70 235,81 zł. W tym przykładzie leasing został sklasyfikowany jako wynajm operacyjny zgodnie z kodyfikacją standardów rachunkowości, temat 842 (ASC 842).
 2. Uruchom trzy razy proces arkusza przetwarzania wsadowego, aby zasymulować upływ trzech lat dla opłat z tytułu wynajmu, kosztów odsetek i wydatków amortyzacji.
 3. Po zakończeniu wykonywania wszystkich trzech zadań wsadowych wróć do księgi wynajmu, a w nich otwórz tabele transakcji na pasywach i aktywach, aby wyświetlić bieżącą wartość bilansową składnika majątku z PDU i zobowiązania z tytułu wynajmu. Po trzech latach wartość zobowiązania powinna wynosić w przybliżeniu -53 893,00 $, a wartość składnika majątku powinna wynosić w przybliżeniu 53 893,00 $.
 

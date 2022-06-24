@@ -1,6 +1,6 @@
 ---
 title: Tworzenie nowego produktu w programie Commerce
-description: W tym temacie opisano, jak dodać utworzyć nowy produkt w Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano, jak dodać utworzyć nowy produkt w Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 01/27/2020
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 73911d9d8e3fdc6d72eadb8d071382e15dd5375eae8274f88d88b1078e7720f6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 35793821eda00453fb11edad28202973df18fb83
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753729"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887147"
 ---
 # <a name="create-a-new-product-in-commerce"></a>Tworzenie nowego produktu w programie Commerce
 
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano, jak dodać utworzyć nowy produkt w Microsoft Dynamics 365 Commerce.
+W tym artykule opisano, jak dodać utworzyć nowy produkt w Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Omówienie
 

@@ -1,6 +1,6 @@
 ---
 title: Rejestrowanie numerów certyfikatów koncesji TDS
-description: W tym temacie wyjaśniono, jak rejestrować numery certyfikatów koncesyjnych wydane dostawcom odliczonego podatku w źródle (TDS).
+description: W tym artykule wyjaśniono, jak rejestrować numery certyfikatów koncesyjnych wydane dostawcom odliczonego podatku w źródle (TDS).
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 994ddbb4666c326d237d53d529ba126f42d48595
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 116bc5c4b4f5f0b95d05dc73f2a012fbbc065bf2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727153"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846621"
 ---
 # <a name="record-tds-concession-certificate-numbers"></a>Rejestrowanie numerów certyfikatów koncesji TDS
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak rejestrować numery certyfikatów koncesyjnych wydane dostawcom odliczonego podatku w źródle (TDS).
+W tym artykule wyjaśniono, jak rejestrować numery certyfikatów koncesyjnych wydane dostawcom odliczonego podatku w źródle (TDS).
 
 1. Wybierz kolejno opcje **Podatek \> Podatki pośrednie \> Potrącona zaliczka na podatek \> Zwolnienia z podatku u źródła**.
 2. W polu **Typ podatku** wybierz identyfikator **TDS**, aby zarejestrować certyfikaty koncesji dla typu podatku TDS.

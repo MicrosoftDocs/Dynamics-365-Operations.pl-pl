@@ -1,6 +1,6 @@
 ---
 title: Rozpoczynanie pracy z fakturowaniem elektronicznym dla Brazylii
-description: Ten temat zawiera informacje, które pomogą w rozpoczęciu pracy z funkcją Faktury elektroniczne dla Brazylii w Finance i Supply Chain Management.
+description: Ten artykuł zawiera informacje, które pomogą w rozpoczęciu pracy z funkcją Faktury elektroniczne dla Brazylii w Finance i Supply Chain Management.
 author: gionoder
 ms.date: 03/29/2021
 ms.topic: article
@@ -9,30 +9,32 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: intro-internal
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 82bbf806d207af0b15406e4bec516420db7f2c06
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 74debbca4ee365e05f1c15d45179f0cd1d23c3e5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984860"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846592"
 ---
 # <a name="get-started-with-electronic-invoicing-for-brazil"></a>Rozpoczynanie pracy z fakturowaniem elektronicznym dla Brazylii 
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje, które pomogą w rozpoczęciu pracy z Faktury elektroniczne dla Brazylii. W tym temacie podasz informacje o krokach konfiguracji zależnych od kraju w Regulatory Configuration Services (RCS) i uzupełnij czynności opisane w temacie [Wprowadzenie do funckji Fakturowanie elektroniczne](e-invoicing-get-started.md).
+Ten artykuł zawiera informacje, które pomogą w rozpoczęciu pracy z Faktury elektroniczne dla Brazylii. W tym artykule poznasz informacje o krokach konfiguracji zależnych od kraju w Regulatory Configuration Services (RCS) i uzupełnij czynności opisane w temacie [Wprowadzenie do funkcji Fakturowanie elektroniczne](e-invoicing-get-started.md).
 
 ## <a name="country-specific-configuration-for-brazilian-nf-e-br-electronic-invoicing-feature"></a>Specyficzna dla kraju konfiguracja brazylijskiej funkcji fakturowania elektronicznego NF-e (BR)
 
 Niektóre parametry dostępne w funkcji **Faktura elektroniczna brazylisjka NF-e (BR)** są publikowane z wartościami domyślnymi. Przejrzyj te wartości, a w razie potrzeby zaktualizuj je, aby lepiej odzwierciedlały operację biznesową przed wdrożeniem funkcji fakturowania elektronicznego w środowisku usługi.
 
-Opisano w sekcji **Specyficzna dla kraju konfiguracja funkcji fakturowania elektronicznego** w tym temacie [Wprowadzenie do dodatku Fakturowanie elektroniczne](e-invoicing-get-started.md).
+Ta sekcja uzupełnia sekcję **Specyficzna dla kraju konfiguracja funkcji fakturowania elektronicznego** w artykule [Wprowadzenie do dodatku Fakturowanie elektroniczne](e-invoicing-get-started.md).
 
 1. W RCS w obszarze **Funkcje** obszaru roboczego **Funkcja globalizacji**, wybierz kafelek **Faktury elektroniczne**.
 2. Na stronie **Funkcje fakturowania elektronicznego** sprawdź, czy jest wybrana utworzona funkcja elektronicznego fakturowania **Brazylijska NF-e (BR)**.
@@ -51,7 +53,7 @@ Opisano w sekcji **Specyficzna dla kraju konfiguracja funkcji fakturowania elekt
 
 Przed wdrożeniem konfiguracji aplikacji w połączonej aplikacji Finance lub Supply Chain Management wykonaj poniższe kroki.
 
-Opisano w sekcji **Specyficzna dla kraju konfiguracja aplikacji** w tym temacie [Wprowadzenie do dodatku Fakturowanie elektroniczne](e-invoicing-get-started.md).
+Ta sekcja uzupełnia sekcję **Specyficzna dla kraju konfiguracja aplikacji** w tym artykule [Wprowadzenie do dodatku Fakturowanie elektroniczne](e-invoicing-get-started.md).
 
 1. W RCS w obszarze **Funkcje** obszaru roboczego **Funkcja globalizacji**, wybierz kafelek **Faktury elektroniczne**.
 2. Na stronie **Funkcje fakturowania elektronicznego** sprawdź, czy jest wybrana utworzona funkcja elektronicznego fakturowania **Brazylijska NF-e (BR)**.
@@ -71,7 +73,7 @@ Opisano w sekcji **Specyficzna dla kraju konfiguracja aplikacji** w tym temacie 
 
 Niektóre parametry dostępne w funkcji **Faktura elektroniczna brazylisjka NFS-e ABRASF Curitiba (BR)** są publikowane z wartościami domyślnymi. Przejrzyj te wartości i w razie potrzeby zaktualizuj je, aby lepiej odzwierciedlały operację biznesową przed wdrożeniem funkcji fakturowania elektronicznego w środowisku usługi.
 
-Opisano w sekcji **Specyficzna dla kraju konfiguracja funkcji fakturowania elektronicznego** w tym temacie [Wprowadzenie do dodatku Fakturowanie elektroniczne](e-invoicing-get-started.md).
+Ta sekcja uzupełnia sekcję **Specyficzna dla kraju konfiguracja funkcji fakturowania elektronicznego** w artykule [Wprowadzenie do dodatku Fakturowanie elektroniczne](e-invoicing-get-started.md).
 
 1. W RCS w obszarze **Funkcje** obszaru roboczego **Funkcja globalizacji**, wybierz kafelek **Faktury elektroniczne**.
 2. Na stronie **Funkcje fakturowania elektronicznego** sprawdź, czy jest wybrana utworzona funkcja elektronicznego fakturowania **Brazylijski NFS-e ABRASF Curitiba (BR)**.
@@ -96,7 +98,7 @@ Opisano w sekcji **Specyficzna dla kraju konfiguracja funkcji fakturowania elekt
 
 Przed wdrożeniem konfiguracji aplikacji w połączonej aplikacji Finance lub Supply Chain Management wykonaj poniższe kroki.
 
-Opisano w sekcji **Specyficzna dla kraju konfiguracja aplikacji** w tym temacie [Wprowadzenie do dodatku Fakturowanie elektroniczne](e-invoicing-get-started.md).
+Ta sekcja uzupełnia sekcję **Specyficzna dla kraju konfiguracja aplikacji** w tym artykule [Wprowadzenie do dodatku Fakturowanie elektroniczne](e-invoicing-get-started.md).
 
 1. W RCS w obszarze **Funkcje** obszaru roboczego **Funkcja globalizacji**, wybierz kafelek **Faktury elektroniczne**.
 2. Na stronie **Funkcje fakturowania elektronicznego** sprawdź, czy jest wybrana funkcja elektronicznego fakturowania **Brazylijski NFS-e ABRASF Curitiba (BR)**.

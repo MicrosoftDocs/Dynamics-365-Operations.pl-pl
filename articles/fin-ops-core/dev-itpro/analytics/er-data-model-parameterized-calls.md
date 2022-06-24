@@ -1,6 +1,6 @@
 ---
 title: Obsługa parametrów wywołań modeli danych ER
-description: W tym temacie opisano sposób implementacji parametrów wywołań modeli danych raportowania elektronicznego (ER).
+description: W tym artykule opisano sposób implementacji parametrów wywołań modeli danych raportowania elektronicznego (ER).
 author: NickSelin
 ms.date: 03/14/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-10-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 968b0769607e9fdbed57c25b727ed44988a92913
-ms.sourcegitcommit: 399d0d3f8e2ebb81b6b9d640365ebe182690bab2
+ms.openlocfilehash: 65ac81e9aa25b286640fd526e71b55de3b0695ca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "8419474"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884265"
 ---
 # <a name="support-parameterized-calls-of-er-data-models"></a>Obsługa parametrów wywołań modeli danych ER
 
@@ -160,7 +160,7 @@ Można określić każdy parametr pola modelu danych, dla którego argument moż
 > [!NOTE]
 > Domyślna wartość parametru pola modelu danych nie jest obsługiwana. Jeśli dodasz parametr do pola w modelu danych, a wersja tego modelu danych została już wydana i opublikowana, musisz [ponownie bazować](general-electronic-reporting.md#upgrading-a-format-selecting-a-new-version-of-base-format-rebase) wszystkie odpowiednie mapowania i formaty modelu na nową wersję tego modelu, ponieważ ten model danych ulega zmianie nie jest kompatybilny wstecz.
 
-Parametryczne pola modelu danych można skonfigurować w celu wywołania mapowań modeli specyficzne dla formatu. Takie podejście pomaga ograniczyć liczbę mapowań modeli, które należy skonfigurować dla wielu formatów jednego modelu danych. Możesz również użyć tego podejścia, aby poprawić wydajność wykonywania formatów i skrócić czas wymagany do wygenerowania dokumentów biznesowych. Wykonaj przykład z tego tematu, aby dowiedzieć się więcej na temat tej funkcji.
+Parametryczne pola modelu danych można skonfigurować w celu wywołania mapowań modeli specyficzne dla formatu. Takie podejście pomaga ograniczyć liczbę mapowań modeli, które należy skonfigurować dla wielu formatów jednego modelu danych. Możesz również użyć tego podejścia, aby poprawić wydajność wykonywania formatów i skrócić czas wymagany do wygenerowania dokumentów biznesowych. Wykonaj przykład z tego artykułu, aby dowiedzieć się więcej na temat tej funkcji.
 
 ## <a name="example-use-parameterized-calls-of-er-data-models"></a>Przykład: Użyj sparametryzowanych wywołań modeli danych ER
 

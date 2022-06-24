@@ -1,6 +1,6 @@
 ---
 title: Włączanie opóźnionego obliczania podatku w arkuszach
-description: W tym temacie objaśniono sposób włączania funkcji opóźnionego obliczania podatku w celu zwiększenia wydajności obliczeń podatku, gdy liczba wierszy arkusza jest duża.
+description: W tym artykule objaśniono sposób włączania funkcji opóźnionego obliczania podatku w celu zwiększenia wydajności obliczeń podatku, gdy liczba wierszy arkusza jest duża.
 author: EricWang
 ms.date: 09/18/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2019-09-18
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: fddb6d3a9850b8f2f88f813f9591006637c7e535
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 02a038318d4c0fb44b6fcc4bb159ea87c2e9368a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713142"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887927"
 ---
 # <a name="enable-delayed-tax-calculation-on-journals"></a>Włączanie opóźnionego obliczania podatku w arkuszach
 [!include [banner](../includes/banner.md)]
 
 
-W tym temacie wyjaśniono, w jaki sposób można opóźnić obliczanie podatku w arkuszach. Dzięki tej funkcji można poprawić wydajność obliczeń podatku, gdy istnieje wiele wierszy arkusza.
+W tym artykule wyjaśniono, w jaki sposób można opóźnić obliczanie podatku w arkuszach. Dzięki tej funkcji można poprawić wydajność obliczeń podatku, gdy istnieje wiele wierszy arkusza.
 
 Domyślnie kwoty podatku w wierszach arkusza są obliczane po każdej aktualizacji pól związanych z podatkiem. Pola te obejmują pola dotyczące grup podatków i grup podatków dla pozycji. Każda aktualizacja wiersza arkusza powoduje ponowne obliczenie kwot podatku dla wszystkich wierszy arkusza. Chociaż to zachowanie pomaga użytkownikowi widzieć kwoty podatku obliczone w czasie rzeczywistym, może również wpływać na wydajność, jeśli liczba wierszy arkusza jest bardzo duża.
 

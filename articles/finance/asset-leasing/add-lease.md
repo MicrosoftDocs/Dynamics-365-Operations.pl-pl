@@ -1,6 +1,6 @@
 ---
 title: Dodaj lub kopiuj wynajmy (podgląd)
-description: W tym temacie opisano sposób tworzenia nowego wynajmu przez wprowadzenie informacji jego dotyczących w Wynajem składnika majątku lub przez skopiowanie informacji z istniejącego wynajmu.
+description: W tym artykule opisano sposób tworzenia nowego wynajmu przez wprowadzenie informacji jego dotyczących w Wynajem składnika majątku lub przez skopiowanie informacji z istniejącego wynajmu.
 author: moaamer
 ms.date: 01/11/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: b09a87c7d4f5ba076647218c3586d17a13e6c558
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: 798ab3ece45ee6f21694a364cfb7a4ff14a9c8aa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7967933"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880940"
 ---
 # <a name="add-or-copy-leases-preview"></a>Dodaj lub kopiuj wynajmy (podgląd)
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak utworzyć wynajem od podstaw w Wynajem składnika majątku, a także jak utworzyć wynajem, kopiując istniejący wynajem. Proces tworzenia wynajmu od podstaw obejmuje wprowadzenie informacji dotyczących nowego wynajmu, a następnie utworzenie harmonogramu wynajmu. Po skonfigurowaniu co najmniej jednego wynajmu może okazać się łatwiejsze skopiowanie informacji z istniejącego wynajmu, a następnie edytowanie tych informacji w razie konieczności utworzenia nowego wynajmu.
+W tym artykule wyjaśniono, jak utworzyć wynajem od podstaw w Wynajem składnika majątku, a także jak utworzyć wynajem, kopiując istniejący wynajem. Proces tworzenia wynajmu od podstaw obejmuje wprowadzenie informacji dotyczących nowego wynajmu, a następnie utworzenie harmonogramu wynajmu. Po skonfigurowaniu co najmniej jednego wynajmu może okazać się łatwiejsze skopiowanie informacji z istniejącego wynajmu, a następnie edytowanie tych informacji w razie konieczności utworzenia nowego wynajmu.
 
 ## <a name="create-a-lease"></a>Tworzenie wynajmu
 

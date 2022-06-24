@@ -1,6 +1,6 @@
 ---
 title: Automatyczne rozliczanie i priorytety
-description: W tym temacie opisano, jak transakcje są rozliczane po wybraniu opcji Automatyczne rozliczanie na stronie Parametry modułu rozrachunków z odbiorcami. Wyjaśniono również możliwości używania automatycznego rozliczania w połączeniu z priorytetem płatności.
+description: W tym artykule opisano, jak transakcje są rozliczane po wybraniu opcji Automatyczne rozliczanie na stronie Parametry modułu rozrachunków z odbiorcami. Wyjaśniono również możliwości używania automatycznego rozliczania w połączeniu z priorytetem płatności.
 author: ShivamPandey-msft
 ms.date: 01/30/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 47ccdb49b4d5c43b4f9cb9a967bd30376474e4c1
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: bd5b894c82beb1b5d69ad6bf485161ab9c91a806
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712266"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855528"
 ---
 # <a name="automatic-settlement-and-prioritization"></a>Automatyczne rozliczanie i priorytety
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano, jak transakcje są rozliczane po wybraniu opcji Automatyczne rozliczanie na stronie Parametry modułu rozrachunków z odbiorcami. Wyjaśniono również możliwości używania automatycznego rozliczania w połączeniu z priorytetem płatności.
+W tym artykule opisano, jak transakcje są rozliczane po wybraniu opcji Automatyczne rozliczanie na stronie Parametry modułu rozrachunków z odbiorcami. Wyjaśniono również możliwości używania automatycznego rozliczania w połączeniu z priorytetem płatności.
 
 Dostępne są dwie opcje rozliczania płatności za pomocą faktur i innych transakcji. Można ręcznie wybrać transakcje do rozliczenia lub system może wybrać transakcje automatycznie za pomocą funkcji automatycznego rozliczania. Można także dostosować sposób przetwarzania automatycznych rozliczeń przy użyciu opcji **Określanie priorytetów rozliczenia**. Wszystkie te opcje są częścią parametrów rozliczenia określanych na stronie **Parametry modułu rozrachunków z odbiorcami**. Sposób automatycznego rozliczania transakcji może się różnić w zależności od używanej metody automatycznego rozliczania. Dostępne są następujące metody:
 

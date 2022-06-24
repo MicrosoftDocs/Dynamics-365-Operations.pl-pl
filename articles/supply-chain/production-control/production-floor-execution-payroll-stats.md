@@ -1,6 +1,6 @@
 ---
-title: Pokaż salda urlopów w interfejsie wykonawczym hali produkcyjnej
-description: Ten temat zawiera przykładowy scenariusz, który pokazuje, jak skonfigurować Microsoft Dynamics 365 Supply Chain Management tak, aby używał statystyk płacowych do zapewnienia pracownikom wglądu w stan ich urlopów w bieżącym roku.
+title: Wyświetlanie sald urlopów w interfejsie wykonania hal produkcyjnych
+description: Ten artykuł zawiera przykładowy scenariusz, który pokazuje, jak skonfigurować Microsoft Dynamics 365 Supply Chain Management tak, aby używał statystyk płacowych do zapewnienia pracownikom wglądu w stan ich urlopów w bieżącym roku.
 author: johanhoffmann
 ms.date: 04/22/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-04-22
 ms.dyn365.ops.version: 10.0.XX
-ms.openlocfilehash: a97858c72b0be50609cee552bd0635e2d68ea478
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 2a6b6f52bfa7539b7c9bb5841536b0d564d0274c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645351"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852281"
 ---
-# <a name="show-vacation-balances-in-the-production-floor-execution-interface"></a>Pokaż salda urlopów w interfejsie wykonawczym hali produkcyjnej
+# <a name="show-vacation-balances-in-the-production-floor-execution-interface"></a>Wyświetlanie sald urlopów w interfejsie wykonania hal produkcyjnych
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera przykładowy scenariusz, który pokazuje, jak skonfigurować Microsoft Dynamics 365 Supply Chain Management tak, aby na podstawie statystyk płacowych udostępniał każdemu pracownikowi informacje o stanie jego urlopu w bieżącym roku. Pracownicy będą mogli zobaczyć stan swojego urlopu w oknie dialogowym **Mój dzień** w interfejsie wykonawczym hali produkcyjnej.
+Ten artykuł zawiera przykładowy scenariusz, który pokazuje, jak skonfigurować Microsoft Dynamics 365 Supply Chain Management tak, aby na podstawie statystyk płacowych udostępniał każdemu pracownikowi informacje o stanie jego urlopu w bieżącym roku. Pracownicy będą mogli zobaczyć stan swojego urlopu w oknie dialogowym **Mój dzień** w interfejsie wykonawczym hali produkcyjnej.
 
 Ten scenariusz wykorzystuje duńskie prawo urlopowe, w którym rok urlopowy trwa od 1 września do 31 sierpnia. W tym scenariuszu Twoja firma zatrudniła nowego pracownika i przyzna mu 10 dni urlopu do końca bieżącego roku urlopowego.
 

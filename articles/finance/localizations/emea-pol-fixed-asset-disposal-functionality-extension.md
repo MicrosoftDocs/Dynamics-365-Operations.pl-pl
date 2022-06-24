@@ -1,6 +1,6 @@
 ---
 title: Likwidacja środków trwałych dla Polski
-description: Ten temat zawiera informacje o funkcjonalności likwidacji środków trwałych dla użytkowników w firmach w Polsce.
+description: Ten artykuł zawiera informacje o funkcjonalności likwidacji środków trwałych dla użytkowników w firmach w Polsce.
 author: ShylaThompson
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Poland
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 7adf93bfaaa0c5475bcd3a656aff0d6ff8567d31e52f88b14ca8c76e3a8d08a7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5be0a6933eefd7850d3df7ce9b32244f729071f0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773714"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888940"
 ---
 # <a name="fixed-assets-disposal-for-poland"></a>Likwidacja środków trwałych dla Polski
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje o funkcjonalności likwidacji środków trwałych dla użytkowników w firmach w Polsce. 
+Ten artykuł zawiera informacje o funkcjonalności likwidacji środków trwałych dla użytkowników w firmach w Polsce. 
 
 Środki trwałe mogą być sprzedawane za pomocą funkcji likwidacji przy użyciu faktury niezależnej, arkusza środków trwałych lub arkusza finansowego w księdze głównej. Aby uzyskać więcej informacji dotyczących likwidacji środków trwałych, zobacz [Konta księgowania likwidacji środków trwałych](../fixed-assets/fixed-asset-disposal-posting-accounts.md). Dla użytkowników w firmach w Polsce rozszerzenie dodające funkcjonalność likwidacji środków trwałych zawiera następujące elementy:
 

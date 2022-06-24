@@ -1,6 +1,6 @@
 ---
 title: Klucze konfiguracji a jednostki danych
-description: W tym temacie opisano relację między kluczami konfiguracji i jednostkami danych.
+description: W tym artykule opisano relację między kluczami konfiguracji i jednostkami danych.
 author: peakerbl
 ms.date: 05/10/2019
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: e9cc92563c426136b2543511ad943fd64b335b70
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 8083c8c053197f685985f340281c43f30053d2a5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065746"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885270"
 ---
 # <a name="configuration-keys-and-data-entities"></a>Klucze konfiguracji i jednostki danych
 

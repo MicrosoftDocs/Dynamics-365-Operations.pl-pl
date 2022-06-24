@@ -1,6 +1,6 @@
 ---
 title: Korekty kursów wymiany
-description: Ten temat zawiera informacje o funkcji korekty kursu wymiany przeznaczonej dla użytkowników w firmach w Estonii, na Węgrzech, w Czechach, na Łotwie, na Litwie, w Polsce i w Rosji.
+description: Ten artykuł zawiera informacje o funkcji korekty kursu wymiany przeznaczonej dla użytkowników w firmach w Estonii, na Węgrzech, w Czechach, na Łotwie, na Litwie, w Polsce i w Rosji.
 author: ShylaThompson
 ms.date: 04/10/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: kfend
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 82f9d51bb882ae83c6382a424fbdff65900fd3822d70f496c0956c2e57180ebf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cf9e047872269b8fca56c702bd9599c759b0acd6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767607"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889796"
 ---
 # <a name="exchange-rate-adjustments"></a>Korekty kursów wymiany
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje o funkcji korekty kursu wymiany przeznaczonej dla użytkowników w firmach w Estonii, na Węgrzech, w Czechach, na Łotwie, na Litwie, w Polsce i w Rosji.
+Ten artykuł zawiera informacje o funkcji korekty kursu wymiany przeznaczonej dla użytkowników w firmach w Estonii, na Węgrzech, w Czechach, na Łotwie, na Litwie, w Polsce i w Rosji.
 
 Funkcja korekty kursów wymiany dla Estonii, Węgier, Czech, Łotwy, Litwy, Polski i Rosji obejmuje następujące rozszerzenia dla modułów Rozrachunki z odbiorcami i Rozrachunki z dostawcami:
 

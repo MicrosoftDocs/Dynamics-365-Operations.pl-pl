@@ -1,6 +1,6 @@
 ---
 title: Omówienie wymagań wstępnych dotyczących kosztów standardowych
-description: W tym temacie opisano podstawowe czynności związane z używaniem kosztów standardowych.
+description: W tym artykule opisano podstawowe czynności związane z używaniem kosztów standardowych.
 author: JennySong-SH
 ms.date: 07/25/2019
 ms.topic: overview
@@ -15,18 +15,18 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7cf37ae8d2cfa2a3f372e37eb66c22711e76dd59
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: bf02653b1d1a2cf5ed45f0fc6bd9affe098e7396
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672326"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895794"
 ---
 # <a name="prerequisites-for-standard-costs-overview"></a>Omówienie wymagań wstępnych dotyczących kosztów standardowych
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano podstawowe czynności związane z używaniem kosztów standardowych. Kolejne czynności zależą od specyfiki działalności firmy. Na przykład są inne dla środowiska nieprodukcyjnego, środowiska produkcyjnego bez marszrut oraz środowiska produkcyjnego wykorzystującego marszruty. 
+W tym artykule opisano podstawowe czynności związane z używaniem kosztów standardowych. Kolejne czynności zależą od specyfiki działalności firmy. Na przykład są inne dla środowiska nieprodukcyjnego, środowiska produkcyjnego bez marszrut oraz środowiska produkcyjnego wykorzystującego marszruty. 
 
 Aby skonfigurować koszty standardowe, należy wykonać następujące czynności.
 
@@ -65,7 +65,7 @@ Na stronie **Konfiguracja wersji wyceny** można utworzyć jedną lub więcej we
 Odbiorcy, którzy chcą przestawić istniejące towary na model zapasów z kosztem standardowym, muszą w tym celu użyć strony **Konwersje na koszt standardowy**.
 
 
-## <a name="related-topics"></a>Powiązane tematy
+## <a name="related-articles"></a>Powiązane artykuły
 
 [Omówienie konwersji na koszt standardowy](standard-cost-conversion-overview.md)
 

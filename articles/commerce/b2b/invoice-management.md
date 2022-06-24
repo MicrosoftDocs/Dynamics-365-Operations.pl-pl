@@ -1,6 +1,6 @@
 ---
 title: Zarządzanie fakturami dla witryn sieci Web b2B e-commerce
-description: W tym temacie opisano możliwości zarządzania fakturami Microsoft Dynamics 365 Commerce w witrynach sieci web handlu elektronicznego (B2B).
+description: W tym artykule opisano możliwości zarządzania fakturami Microsoft Dynamics 365 Commerce w witrynach sieci web handlu elektronicznego (B2B).
 author: shajain
 ms.date: 02/16/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 60cb0c8aaede4a0eaeed80cf5ebe41068da57836
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: fa6b81187481a6b7f47ea02291e5a581052d6c7b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686307"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854933"
 ---
 # <a name="invoice-management-for-b2b-e-commerce-websites"></a>Zarządzanie fakturami dla witryn sieci Web b2B e-commerce
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie opisano możliwości zarządzania fakturami Microsoft Dynamics 365 Commerce w witrynach sieci web handlu elektronicznego (B2B).
+W tym artykule opisano możliwości zarządzania fakturami Microsoft Dynamics 365 Commerce w witrynach sieci web handlu elektronicznego (B2B).
 
 Jest to typowe rozwiązanie dla firm, które obsługują transakcje B2B, aby akceptować zamówienia na kredyt odbiorcy, a następnie wysyłać faktury do odbiorców po zrealizowaniu zamówienia. Warunki płatności są zdefiniowane dla odbiorców i mogą wystąpić pewne rabaty, aby motywować odbiorców do zapłaty w terminie lub przed terminem. Aby zwiększyć prawdopodobieństwo terminowego otrzymania płatności, witryny sieci Web usług B2B e-commerce pozwalają klientom wyświetlić wszystkie ich faktury. Odbiorca może łatwo przefiltrować faktury, aby wyświetlać zapłacone, niezapłacone i częściowo zapłacone faktury wraz z terminami płatności.
 

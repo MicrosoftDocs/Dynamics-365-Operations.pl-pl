@@ -1,6 +1,6 @@
 ---
 title: Dostosowywanie wiadomości e-mail dotyczących transakcji według metod dostawy
-description: W tym temacie opisano sposób konfigurowania niestandardowych szablonów wiadomości e-mail dla określonych typów powiadomień i metod dostawy w firmie Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano sposób konfigurowania niestandardowych szablonów wiadomości e-mail dla określonych typów powiadomień i metod dostawy w firmie Microsoft Dynamics 365 Commerce.
 author: stuharg
 ms.date: 11/16/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: d15e7c5c7050ad373cb45da72de59416e85a5f2034f7a11b007d497b2e2b98bd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f16bc23e3527f57bd61d73e92506946067c6eeb9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749914"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850311"
 ---
 # <a name="customize-transactional-emails-by-mode-of-delivery"></a>Dostosowywanie wiadomości e-mail dotyczących transakcji według metod dostawy
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano sposób konfigurowania niestandardowych szablonów wiadomości e-mail dla określonych typów powiadomień i metod dostawy w firmie Microsoft Dynamics 365 Commerce.
+W tym artykule opisano sposób konfigurowania niestandardowych szablonów wiadomości e-mail dla określonych typów powiadomień i metod dostawy w firmie Microsoft Dynamics 365 Commerce.
 
 Można teraz dostosować wiadomości transakcyjne, aby utworzyć kombinację typu powiadomienia (np. **utworzone zamówienie**, **zapakowane** lub **zafakturowane zamówienie**) oraz metody dostawy (np. na następny dzień, odbiór w sklepie lub odbiór spod domu). Niestandardowe wiadomości transakcyjne umożliwiają detalistom dostarczanie ich klientom zamówień na realizację, które są dostosowane do metody dostawy zamówienia. Na przykład zdarzenie „zapakowanie zapakowane” może być dostosowywane w taki sposób, aby dostarcza klientom Curbside instrukcje dotyczące odbioru, którzy wybierają Curbside pobrania. Można również udostępnić informacje o firmie przewozowej i dostawie dla odbiorców, którzy wybierają zamówienie wysyłki.
 

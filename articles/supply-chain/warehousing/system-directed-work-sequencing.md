@@ -1,6 +1,6 @@
 ---
 title: Harmonogram prac sterowany przez system
-description: Ten temat zawiera informacje dotyczące harmonogramu prac sterowanego przez system. Ta funkcja umożliwia sortowanie i filtrowanie zleceń roboczych przedstawianych przez system użytkownikom w celu wykonania. Jest to przydatne w sytuacjach, w których dodatkowe kryteria są wymagane do kierowania procesu pobierania z magazynu.
+description: Ten artykuł zawiera informacje dotyczące harmonogramu prac sterowanego przez system. Ta funkcja umożliwia sortowanie i filtrowanie zleceń roboczych przedstawianych przez system użytkownikom w celu wykonania. Jest to przydatne w sytuacjach, w których dodatkowe kryteria są wymagane do kierowania procesu pobierania z magazynu.
 author: Mirzaab
 ms.date: 07/03/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: b433787f330de3634c59f7b1b2babfe07e3bdf09
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8dfa7d8e3bdbfd74c6f95d8b79ac1b0698f73bd6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577823"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849134"
 ---
 # <a name="system-directed-work-sequencing"></a>Harmonogram prac sterowany przez system
 
@@ -44,7 +44,7 @@ Aby można było korzystać z funkcji harmonogramu pracy kierowanej przez system
 
 ### <a name="make-demo-data-available"></a>Udostępnianie danych pokazu
 
-Aby przejść przez ten scenariusz przy użyciu określonych przykładowych rekordów i wartości zaprezentowanych w tym temacie, należy korzystać z systemu, w którym są zainstalowane standardowe dane demonstracyjne. Ponadto należy wybrać firmę **USMF**. Scenariusz korzysta z magazynu *51* znajdującego się w danych demonstracyjnych.
+Aby przejść przez ten scenariusz przy użyciu określonych przykładowych rekordów i wartości zaprezentowanych w tym artykule, należy korzystać z systemu, w którym są zainstalowane standardowe dane demonstracyjne. Ponadto należy wybrać firmę **USMF**. Scenariusz korzysta z magazynu *51* znajdującego się w danych demonstracyjnych.
 
 > [!IMPORTANT]
 > Przed zwolnieniem zleceń do magazynu należy upewnić się, że lokalizacje pobrania mają wystarczającą ilość zapasów dla wszystkich pozycji na wszystkich zamówieniach.

@@ -1,6 +1,6 @@
 ---
 title: Sprawozdania podatkowe dla Polski
-description: Ten temat zawiera informacje o sprawozdawczości podatku VAT w Polsce oraz podaje informacje, które są wymagane przez prawo w rejestrach podatku VAT w Polsce.
+description: Ten artykuł zawiera informacje o sprawozdawczości podatku VAT w Polsce oraz podaje informacje, które są wymagane przez prawo w rejestrach podatku VAT w Polsce.
 author: mrolecki
 ms.date: 12/06/2017
 ms.topic: article
@@ -13,17 +13,17 @@ ms.search.region: Poland
 ms.author: roschlom
 ms.dyn365.ops.version: AX 7.0.1
 ms.search.validFrom: 2016-05-31
-ms.openlocfilehash: ed6005f4ee59c3c1e1f3854f69aa6a45e54466f80d727cd3426479a1bad7dc64
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5ab3555c22dae02e41cc62adc2786aea8e93d93b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720488"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875927"
 ---
 # <a name="sales-tax-reports-for-poland"></a>Sprawozdania podatkowe dla Polski
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje o sprawozdawczości podatku od towarów i usług (VAT) w Polsce oraz podaje informacje, które są wymagane przez prawo w rejestrach podatku VAT w Polsce.
+Ten artykuł zawiera informacje o sprawozdawczości podatku od towarów i usług (VAT) w Polsce oraz podaje informacje, które są wymagane przez prawo w rejestrach podatku VAT w Polsce.
 
 ## <a name="vat-report-date-codes"></a>Kody dat raportu VAT
 

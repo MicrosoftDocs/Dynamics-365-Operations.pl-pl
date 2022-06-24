@@ -1,6 +1,6 @@
 ---
 title: Struktura przewodnika procesu
-description: Ten temat zawiera informacje dotyczące struktury przewodnika po procesach dla programistów rozszerzających nasze procesy mobilne magazynu w języku X++.
+description: Ten artykuł zawiera informacje dotyczące struktury przewodnika po procesach dla programistów rozszerzających nasze procesy mobilne magazynu w języku X++.
 author: Mirzaab
 ms.date: 11/01/2018
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 6882c979ad9b37eb4f95a04259b6ac0f0a0edcdc
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: e88f32e0347a808d03615cf85e50b1592d691670
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902053"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860443"
 ---
 # <a name="process-guide-framework"></a>Struktura przewodnika procesu
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje dotyczące struktury przewodnika po procesach dla programistów rozszerzających procesy mobilne magazynu w języku X++. Procesy mobilne magazynu mogą być rozszerzalne w wyniku podziału procesów na mniejsze kroki. Logika biznesowa i interfejs użytkownika poszczególnych kroków zostały wyodrębnione do poszczególnych klas, co umożliwia rozszerzanie.
+Ten artykuł zawiera informacje dotyczące struktury przewodnika po procesach dla programistów rozszerzających procesy mobilne magazynu w języku X++. Procesy mobilne magazynu mogą być rozszerzalne w wyniku podziału procesów na mniejsze kroki. Logika biznesowa i interfejs użytkownika poszczególnych kroków zostały wyodrębnione do poszczególnych klas, co umożliwia rozszerzanie.
 
 ## <a name="overview-of-the-existing-design"></a>Omówienie istniejącego projektu
 
@@ -321,7 +321,7 @@ public class ProdProcessGuideConfirmProductionOrderPageBuilder extends ProcessGu
 ```
 
 > [!NOTE]
-> Ten sam kod źródłowy dla metod X++ można znaleźć w tym temacie, korzystając z Explorera aplikacji. Przefiltruj według nazwy klasy, a następnie kliknij prawym przyciskiem myszy nazwę klasy i wybierz polecenie **Wyświetl kod**.
+> Ten sam kod źródłowy dla metod X++ można znaleźć w tym artykule, korzystając z Explorera aplikacji. Przefiltruj według nazwy klasy, a następnie kliknij prawym przyciskiem myszy nazwę klasy i wybierz polecenie **Wyświetl kod**.
 
 ### <a name="step-3-start-the-production-order"></a>Krok 3: rozpoczynanie zlecenia produkcyjnego
 
@@ -421,7 +421,7 @@ W ten sposób pyta krok o utworzenie klasy akcji dla przekazanej nazwy i wiąże
 
 ### <a name="summary"></a>Sumarycznie
 
-Aby podsumować wszystko, co zostało objaśnione w tym temacie, oto pełne podsumowanie kodu potrzebnego w tym procesie:
+Aby podsumować wszystko, co zostało objaśnione w tym artykule, oto pełne podsumowanie kodu potrzebnego w tym procesie:
 
 1.  **ProdProcessGuideProductionStartController**
 
@@ -570,7 +570,7 @@ Aby podsumować wszystko, co zostało objaśnione w tym temacie, oto pełne pods
         ```
 
         > [!NOTE]
-        > Metoda **generateItemInfoForProdId()** używana do generowania etykiet informacji o pozycji jest wykluczona z tego tematu. Ta metoda wysyła zapytanie do kilku tabel w celu uzyskania identyfikatora pozycji, opisu i wymiarów. Jeśli chcesz lepiej zrozumieć **generateItemInfoForProdId()**, sprawdź kod źródłowy.
+        > Metoda **generateItemInfoForProdId()** używana do generowania etykiet informacji o pozycji jest wykluczona z tego artykułu. Ta metoda wysyła zapytanie do kilku tabel w celu uzyskania identyfikatora pozycji, opisu i wymiarów. Jeśli chcesz lepiej zrozumieć **generateItemInfoForProdId()**, sprawdź kod źródłowy.
 
 4.  **ProdProcessGuideStartProductionOrderStep**
 
@@ -605,7 +605,7 @@ Aby podsumować wszystko, co zostało objaśnione w tym temacie, oto pełne pods
 
 ### <a name="extending-a-business-process"></a>Rozszerzanie procesu biznesowego
 
-Do tej pory w tym temacie opisano sposób tworzenia nowego procesu przy użyciu struktury **ProcessGuide**. W tej ostatniej sekcji znajduje się kilka przykładów możliwości przedłużenia tego procesu biznesowego.
+Do tej pory w tym artykule opisano sposób tworzenia nowego procesu przy użyciu struktury **ProcessGuide**. W tej ostatniej sekcji znajduje się kilka przykładów możliwości przedłużenia tego procesu biznesowego.
 
 ### <a name="add-a-step-in-a-flow-using-processguidenavigationagentdefault"></a>Dodawanie kroku w przepływie (przy użyciu ProcessGuideNavigationAgentDefault)
 

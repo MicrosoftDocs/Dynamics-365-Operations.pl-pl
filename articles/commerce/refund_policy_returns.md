@@ -1,6 +1,6 @@
 ---
-title: Tworzenie i aktualizowanie zasad zwrotu i zwrotów dla kanału
-description: W tym temacie wyjaśniono, jak skonfigurować zasady zwrotu i zwrotów dla kanału.
+title: Tworzenie i aktualizowanie zasad zwrotów i refundacji dla kanału
+description: W tym artykule wyjaśniono, jak skonfigurować zasady zwrotu i zwrotów dla kanału.
 author: ShalabhjainMSFT
 ms.date: 07/13/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Retail 10.0.9 update
-ms.openlocfilehash: 4346f9eefa04688c80ce2512a7972bfd4627942c
-ms.sourcegitcommit: 53fad4d4b5fb67aa75550956ec205f456a5be01d
+ms.openlocfilehash: 54dd19134aea68f73de51086fbaa096961447b62
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "7388940"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873311"
 ---
 # <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a>Tworzenie i aktualizowanie zasad zwrotów i refundacji dla kanału
 
@@ -27,7 +27,7 @@ ms.locfileid: "7388940"
 
 Zasady dotyczące zwrotów kanałów w systemie Dynamics 365 Commerce umożliwiają detalistom Konfigurowanie wymuszeń, dla których może być dozwolone przetworzenie zwrotów na urządzeniu punktu sprzedaży (POS).  
 
-W tym temacie wyjaśniono kroki, jak skonfigurować zasady zwrotu i zwrotów dla kanału.
+W tym artykule wyjaśniono kroki, jak skonfigurować zasady zwrotu i zwrotów dla kanału.
 
 Zakres zasad obecnie ogranicza się do ustawiania ofert płatności, które mogą być dozwolone dla kanału. Lista „dozwolone” jest oparta na metodach płatności używanych do dokonywania zakupu. Na przykład:
 

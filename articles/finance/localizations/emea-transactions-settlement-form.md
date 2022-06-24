@@ -1,6 +1,6 @@
 ---
 title: Wyświetlanie transakcji w rozliczeniu dla Europy Wschodniej
-description: Ten temat zawiera informacje o stronie Transakcje w rozliczeniu dla odbiorców i dostawców.
+description: Ten artykuł zawiera informacje o stronie Transakcje w rozliczeniu dla odbiorców i dostawców.
 author: EvgenyPopovMBS
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ba3e168d188dfe0f808e7d7f7bab6192de25d25977023eb798a923ec97b43b82
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b45dc7a8213c753491c367cef36d7dc1111270c4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713742"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856551"
 ---
 # <a name="view-transactions-on-settlement-for-eastern-europe"></a>Wyświetlanie transakcji w rozliczeniu dla Europy Wschodniej
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje o stronie Transakcje w rozliczeniu dla odbiorców i dostawców.
+Ten artykuł zawiera informacje o stronie Transakcje w rozliczeniu dla odbiorców i dostawców.
 
 Na stronie **Transakcje w rozliczeniu** można obejrzeć informacje o złożonych transakcjach rozliczenia dla odbiorcy lub dostawcy. Ta funkcja jest dostępna tylko dla firm, których adres podstawowy znajduje się na Litwie, na Łotwie, w Estonii, w Czechach, na Węgrzech lub w Polsce. Do strony **Transakcje w rozliczeniu** można przejść z następujących lokalizacji:
 

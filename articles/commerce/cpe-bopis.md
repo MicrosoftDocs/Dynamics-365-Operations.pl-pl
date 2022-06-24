@@ -1,6 +1,6 @@
 ---
-title: Konfigurowanie BOPIS w środowisku oceny usługi Dynamics 365 Commerce
-description: W tym temacie opisano sposób konfigurowania modułu kupowanie online, odbiór w sklepie (BOPIS) w środowisku ewaluacji Microsoft Dynamics 365 Commerce po jego zainicjowaniu.
+title: Konfigurowanie BOPIS w środowisku oceny rozwiązania Dynamics 365 Commerce
+description: W tym artykule opisano sposób konfigurowania modułu kupowanie online, odbiór w sklepie (BOPIS) w środowisku ewaluacji Microsoft Dynamics 365 Commerce po jego zainicjowaniu.
 author: BrianShook
 ms.date: 07/16/2020
 ms.topic: article
@@ -14,30 +14,30 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1e0aabec196aa1ffd2e4d2f2691c03cf11326ee8
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 379537fd490be98497b6e7c5cdfbc33798fe28ad
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779801"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861973"
 ---
 # <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurowanie BOPIS w środowisku oceny rozwiązania Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano sposób konfigurowania modułu kupowanie online, odbiór w sklepie (BOPIS) w środowisku Microsoft Dynamics 365 Commerce po zainicjowaniu środowiska.
+W tym artykule opisano sposób konfigurowania modułu kupowanie online, odbiór w sklepie (BOPIS) w środowisku Microsoft Dynamics 365 Commerce po zainicjowaniu środowiska.
 
 ## <a name="prerequisite"></a>Wymaganie wstępne
 
-Procedury opisane w tym temacie należy wykonać dopiero po zakończeniu aprowizacji i konfiguracji środowiska oceny wersji zapoznawczej usługi Commerce. Aby uzyskać informacje dotyczące sposobu prowizji i konfigurowania środowiska, zobacz [Inicjowaniw środowiska oceny wersji zapoznawczej Dynamics 365 Commerce](provisioning-guide.md) i [Konfiguracja środowiska oceny wersji zapoznawczej Dynamics 365 Commerce](./cpe-post-provisioning.md).
+Procedury opisane w tym artykule należy wykonać dopiero po zakończeniu aprowizacji i konfiguracji środowiska oceny wersji zapoznawczej usługi Commerce. Aby uzyskać informacje dotyczące sposobu prowizji i konfigurowania środowiska, zobacz [Inicjowaniw środowiska oceny wersji zapoznawczej Dynamics 365 Commerce](provisioning-guide.md) i [Konfiguracja środowiska oceny wersji zapoznawczej Dynamics 365 Commerce](./cpe-post-provisioning.md).
 
-Po zainicjowaniu obsługi i skonfigurowaniu środowiska Commerce można skorzystać z tego tematu w celu włączenia scenariuszy BOPIS.
+Po zainicjowaniu obsługi i skonfigurowaniu środowiska Commerce można skorzystać z tego artykułu w celu włączenia scenariuszy BOPIS.
 
 ## <a name="configure-the-pos"></a>Konfigurowanie punktu sprzedaży POS
 
 ### <a name="configure-modern-pos"></a>Konfiguracja Modern POS
 
-Scenariusze BOPIS, które obejmują płatność kartą kredytową, wymagają stacji sprzętowej. Stacja sprzętowa jest wbudowana w Modern POS dla systemu Windows i klientach Android. Jeśli w systemie iOS jest używany program Cloud POS lub Modern POS, klient punktu sprzedaży (POS) musi być sparowany z udostępnioną stacją sprzętową. W tym temacie wyjaśniono, jak skonfigurować BOPIS dla systemu Windows i klientów Android. Aby uzyskać więcej informacji dotyczących sposobu konfiguracji współużytkowanej stacji sprzętowej, zobacz [Konfiguracja i instalacja programu Retail hardware station](./retail-hardware-station-configuration-installation.md).
+Scenariusze BOPIS, które obejmują płatność kartą kredytową, wymagają stacji sprzętowej. Stacja sprzętowa jest wbudowana w Modern POS dla systemu Windows i klientach Android. Jeśli w systemie iOS jest używany program Cloud POS lub Modern POS, klient punktu sprzedaży (POS) musi być sparowany z udostępnioną stacją sprzętową. W tym artykule wyjaśniono, jak skonfigurować BOPIS dla systemu Windows i klientów Android. Aby uzyskać więcej informacji dotyczących sposobu konfiguracji współużytkowanej stacji sprzętowej, zobacz [Konfiguracja i instalacja programu Retail hardware station](./retail-hardware-station-configuration-installation.md).
 
 1. Wybierz kolejno opcje **Retail i Commerce \> Ustawienia kanału \> Ustawienia punktu sprzedaży \> Rejestry**.
 2. Wybierz rejestr **SANFRAN-5**, a następnie wybierz opcję **Edytuj**.
@@ -67,7 +67,7 @@ Scenariusze BOPIS, które obejmują płatność kartą kredytową, wymagają sta
 5. Pojawi się okno dialogowe uwierzytelniania. Wybierz konto korzystające z adresu e-mail, który był poprzednio skojarzony z pracownikiem **000713 - Andrew Collette**.
 
     > [!NOTE]
-    > Jeśli użytkownik nie jest jeszcze skojarzony z tożsamością pracownika, aktywacja nie powiedzie się. W takim przypadku należy wykonać kroki opisane w sekcji „Kojarzenie pracownika z Twoją tożsamością” w temacie [Konfigurowanie środowiska oceny wersji zapoznawczej usługi Dynamics 365 Commerce](cpe-post-provisioning.md#associate-a-worker-with-your-identity).
+    > Jeśli użytkownik nie jest jeszcze skojarzony z tożsamością pracownika, aktywacja nie powiedzie się. W takim przypadku należy wykonać kroki opisane w sekcji „Kojarzenie pracownika z Twoją tożsamością” w artykule [Konfigurowanie środowiska oceny wersji zapoznawczej usługi Dynamics 365 Commerce](cpe-post-provisioning.md#associate-a-worker-with-your-identity).
     
 6. Gdy zostanie wyświetlony monit o zarządzanie urządzeniem, wybierz **Tylko ta aplikacja**.
 7. Po zakończeniu aktywacji wybierz opcję **Rozpoczynanie pracy**.

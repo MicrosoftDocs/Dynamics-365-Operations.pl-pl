@@ -1,6 +1,6 @@
 ---
 title: Magazyn raportów wiekowania zapasów
-description: W tym temacie opisano funkcje umożliwiające uruchamianie raportu wiekowania zapasów oraz udostępnianie danych wyjściowych w postaci formularza i wykresu.
+description: W tym artykule opisano funkcje umożliwiające uruchamianie raportu wiekowania zapasów oraz udostępnianie danych wyjściowych w postaci formularza i wykresu.
 author: JennySong-SH
 ms.date: 11/11/2019
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2019-01-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fe9e91c33c782c319245b9e8c667f5db6a0e929c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 1d810ec90c85f2f7758ec01ef4b24611e026cc80
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672382"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875576"
 ---
 # <a name="inventory-aging-report-storage"></a>Magazyn raportów wiekowania zapasów
 

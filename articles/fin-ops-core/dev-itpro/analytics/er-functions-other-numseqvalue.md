@@ -1,6 +1,6 @@
 ---
 title: NUMSEQVALUE, funkcja ER
-description: Ten temat zawiera ogólne informacje o używaniu funkcji NUMSEQVALUE w module Raportowanie elektroniczne (ER).
+description: Ten artykuł zawiera ogólne informacje o używaniu funkcji NUMSEQVALUE w module Raportowanie elektroniczne (ER).
 author: NickSelin
 ms.date: 12/17/2019
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 53040d1f4b3c8089fab264a524309df909a90ed5e617bd86658704b286fabb34
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 569d9ba1497bbc6dfc0ca909207aa5a78a877fe9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758247"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879841"
 ---
 # <a name="numseqvalue-er-function"></a>NUMSEQVALUE, funkcja ER
 

@@ -1,6 +1,6 @@
 ---
 title: Praca z modułami
-description: W tym temacie opisano, jak i kiedy używać modułów w Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano, jak i kiedy używać modułów w Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 ms.date: 09/15/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ce16aa98a37cd5dec60bcdbf86f59f74810da9755a6d3514bdd3e38a21afb748
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c393f1e619647795a5ae8da3a78500c1678da9f6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728271"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860199"
 ---
 # <a name="work-with-modules"></a>Praca z modułami
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano, jak i kiedy używać modułów w Microsoft Dynamics 365 Commerce.
+W tym artykule opisano, jak i kiedy używać modułów w Microsoft Dynamics 365 Commerce.
 
 Moduły są logicznymi blokami konstrukcyjnymi, które tworzą strukturę strony i mają różne cele i zakresy. Niektóre moduły są kontenerami wysokiego poziomu, a jedynym celem jest przechowywanie i organizowanie innych modułów (modułów podrzędnych). Inne moduły, takie jak prosty moduł rozmieszczenia obrazów, mają ściśle określony cel. Inne moduły, takie jak moduł karuzeli, znajdują się gdzieś między tymi dwiema kategoriami.
 
@@ -151,7 +151,7 @@ Aby skonfigurować moduł kontenera na stronie, wykonaj następujące kroki.
 
 1. Wybierz moduł kontenera na stronie (np. karuzela lub moduł kontener płynny).
 1. W okienku właściwości po prawej stronie rozwiń formanty zagnieżdżone, zaznaczając nagłówki i ustawiając wymagane wartości kontrolne.
-1. W okienku konspektu po lewej wybierz przycisk wielokropka obok nazwy kontenera lub dowolnych szczelin w kontenerze, a następnie wybierz **Dodaj moduł**. Następnie Dodaj moduły podrzędne do wybranego kontenera. Aby uzyskać więcej informacji, zobacz sekcję [Praca z modułami](#add-a-module) we wcześniejszej części tego tematu.
+1. W okienku konspektu po lewej wybierz przycisk wielokropka obok nazwy kontenera lub dowolnych szczelin w kontenerze, a następnie wybierz **Dodaj moduł**. Następnie Dodaj moduły podrzędne do wybranego kontenera. Aby uzyskać więcej informacji, zobacz sekcję [Praca z modułami](#add-a-module) we wcześniejszej części tego artykułu.
 1. Jeśli w kontenerze nadrzędnym istnieje wiele modułów podrzędnych jako elementy równorzędne, można zmienić kolejność wyświetlania w kontenerze nadrzędnym. Wybierz przycisk wielokropek dla modułu, a następnie użyj przycisków strzałki w górę i strzałki w dół.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby

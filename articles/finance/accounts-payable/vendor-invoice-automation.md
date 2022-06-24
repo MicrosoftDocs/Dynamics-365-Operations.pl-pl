@@ -1,6 +1,6 @@
 ---
-title: Automatyzacja obsługi faktur dla zeskanowanych dokumentów
-description: W tym temacie opisano dostępne funkcje kompleksowej automatyzacji obsługi faktur od dostawców, w tym nawet faktur zawierających załączniki.
+title: Automatyzacja faktur dla zeskanowanych dokumentów
+description: W tym artykule opisano dostępne funkcje kompleksowej automatyzacji obsługi faktur od dostawców, w tym nawet faktur zawierających załączniki.
 author: abruer
 ms.date: 03/24/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 02fcb6ce49156c32f23bfb37478a1076f62aa868
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: e7d8e55fc1293e2b33b15f3862498363a6b23f1f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716417"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883424"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>Automatyzacja faktur dla zeskanowanych dokumentów
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono jednostki danych, które są dostępne do kompleksowej automatyzacji faktur od dostawców, w tym faktur z załącznikami.
+W tym artykule wyjaśniono jednostki danych, które są dostępne do kompleksowej automatyzacji faktur od dostawców, w tym faktur z załącznikami.
 
 Organizacje, które chcą usprawnić swoje procesy rozrachunków z dostawcami (AP), często wskazują na przetwarzanie faktur jako na jeden z głównych obszarów przetwarzania, który powinien być bardziej efektywny. W wielu przypadkach takie organizacje przekazują przetwarzanie papierowych faktur zewnętrznym dostawcom usług optycznego rozpoznawania znaków (OCR). Następnie otrzymują metadane faktur nadające się do odczytu maszynowego razem z zeskanowanego obrazem każdej faktury. Aby pomóc w automatyzacji, jest następnie budowane rozwiązanie „ostatniej mili”, które umożliwia wykorzystywanie tych artefaktów w systemie fakturowania. Teraz umożliwia tę automatyzację „ostatniej mili” włączoną w standardzie, za pomocą rozwiązania do automatyzacji obsługi faktur.
 
@@ -46,7 +46,7 @@ Rozwiązanie zawiera następujące składniki:
 + Wyjątek przetwarzanie dla faktur
 + Przeglądarkę umożliwiającą wyświetlanie załączników faktur obok siebie
 
-Pozostała część tego tematu zawiera szczegółowe opisy tych składników rozwiązania.
+Pozostała część tego artykułu zawiera szczegółowe opisy tych składników rozwiązania.
 
 ## <a name="data-entities"></a>Jednostki danych
 

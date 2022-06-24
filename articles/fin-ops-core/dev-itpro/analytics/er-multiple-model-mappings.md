@@ -1,6 +1,6 @@
 ---
 title: Zarządzanie wieloma mapowaniami pochodnymi dla pojedynczego poziomu głównego modelu
-description: W tym temacie wyjaśniono, jak zarządzać kilkoma mapowaniami pochodnymi skonfigurowanymi dla pojedynczego poziomu głównego modelu.
+description: W tym artykule wyjaśniono, jak zarządzać kilkoma mapowaniami pochodnymi skonfigurowanymi dla pojedynczego poziomu głównego modelu.
 author: NickSelin
 ms.date: 01/04/2021
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d71b05b3f2eda93a93f728926e675c040371781e
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 960f5962ec1ea216e35feb0c282856bed95d079a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324119"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892487"
 ---
 # <a name="manage-several-derived-mappings-for-a-single-model-root"></a>Zarządzanie wieloma mapowaniami pochodnymi dla pojedynczego poziomu głównego modelu
 
@@ -32,9 +32,9 @@ Składniki mapowania modelu raportowania elektronicznego mogą znajdować się w
 
 Wielu dostawców konfiguracji może oferować konfiguracje mapowania modelu ER dla tego samego modelu danych ER. Te konfiguracje mapowania modeli mogą zawierać składniki mapowania dla różnych definicji głównych. Mapowanie modelu może być używane dla jednej definicji głównej oferowanej przez jednego [dostawcę](general-electronic-reporting.md#Provider) albo dla innej definicji głównej oferowanej przez innego dostawcę.
 
-Procedury w tym temacie zawierają informacje dotyczące zarządzania wieloma konfiguracjami mapowania modelu ER dla modelu danych ER, jeśli zawierają różne składniki mapowania modelu skonfigurowane dla tej samej definicji głównej. 
+Procedury w tym artykule zawierają informacje dotyczące zarządzania wieloma konfiguracjami mapowania modelu ER dla modelu danych ER, jeśli zawierają różne składniki mapowania modelu skonfigurowane dla tej samej definicji głównej. 
 
-Aby wykonać procedury opisane w tym temacie, użytkownik musi mieć przypisaną rolę Administrator systemu lub Deweloper raportowania elektronicznego.
+Aby wykonać procedury opisane w tym artykule, użytkownik musi mieć przypisaną rolę Administrator systemu lub Deweloper raportowania elektronicznego.
 
 Wszystkie poniższe procedury można wykonać dla firmy USMF. Nie są wymagane umiejętności kodowania.
 

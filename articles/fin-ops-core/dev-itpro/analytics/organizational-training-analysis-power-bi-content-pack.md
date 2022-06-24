@@ -1,6 +1,6 @@
 ---
 title: Pakiet zawartości Szkolenie organizacyjne dla usługi Power BI
-description: W tym temacie opisano pakiet zawartości usługi Power BI Finance and Operations — Szkolenie organizacyjne.
+description: W tym artykule opisano zawartość pakietu aplikacji finansowych i operacyjnych — Szkolenie organizacyjne dla usługi Power BI.
 author: jcart1106
 ms.date: 12/19/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: cd48c12ea3ea31904c437f678888a51e5381cfcfbeef0e1c709858b0c6cb857d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ba332fc0c241969cbe0c25e7985101a2bbe12be4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763555"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892429"
 ---
 # <a name="organizational-training-power-bi-content"></a>Pakiet zawartości Szkolenie organizacyjne dla usługi Power BI
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano pakiet zawartości usługi Power BI Finance and Operations — Szkolenie organizacyjne.
+W tym artykule opisano zawartość pakietu aplikacji finansowych i operacyjnych — Szkolenie organizacyjne dla usługi Power BI.
 
 ## <a name="reports-that-are-included-in-the-content-pack"></a>Raporty dostępne w pakiecie zawartości
 Gdy utworzysz połączenie między pakietem zawartości a Twoimi danymi, w raportach są wyświetlone dane organizacji. Jeśli to Twoja pierwsza styczność z narzędziem Microsoft Power BI, możesz się o nim dowiedzieć więcej na stronie [Przewodnika z instruktażem po narzędziu Power BI](https://powerbi.microsoft.com/guided-learning/?WT.mc_id=PBIService_GetData). Raporty dostępne w pakiecie zawartości mają wykresy i tabele przedstawiające dodatkowe informacje. W poniższej tabeli opisano dostępne raporty.

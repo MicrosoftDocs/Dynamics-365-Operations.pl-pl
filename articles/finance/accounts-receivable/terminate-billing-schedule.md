@@ -1,6 +1,6 @@
 ---
 title: Kończenie harmonogramów rozliczania
-description: W tym temacie wyjaśniono, jak zakończyć fakturowanie harmonogramów i wierszy harmonogramu fakturowania w ramach fakturowania subskrypcji.
+description: W tym artykule wyjaśniono, jak zakończyć fakturowanie harmonogramów i wierszy harmonogramu fakturowania w ramach fakturowania subskrypcji.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: e823ce950d6a4687dc7cda14e06bffdbb4f37f7e
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 4fce23f3cf35ef8c388ce13fc422f268a2bd8e32
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690984"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872565"
 ---
 # <a name="terminate-billing-schedules"></a>Kończenie harmonogramów rozliczania
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak zakończyć fakturowanie harmonogramów i wierszy harmonogramu fakturowania w ramach fakturowania subskrypcji. Po zakończeniu fakturowania harmonogram musi mieć stan **Aktywny**. Nie można mieć stanu **Wstrzymano**. Podobnie, gdy kończysz wiersz harmonogramu rozliczeń, musi on mieć stan **Aktywny**. Sekcja nagłówka harmonogramu fakturowania nie ma wpływu na zakończenie wiersza harmonogramu fakturowania.
+W tym artykule wyjaśniono, jak zakończyć fakturowanie harmonogramów i wierszy harmonogramu fakturowania w ramach fakturowania subskrypcji. Po zakończeniu fakturowania harmonogram musi mieć stan **Aktywny**. Nie można mieć stanu **Wstrzymano**. Podobnie, gdy kończysz wiersz harmonogramu rozliczeń, musi on mieć stan **Aktywny**. Sekcja nagłówka harmonogramu fakturowania nie ma wpływu na zakończenie wiersza harmonogramu fakturowania.
 
 Aby zakończyć fakturowanie zgodnie z harmonogramem lub wierszem harmonogramu fakturowania, przejdź do jednego z następujących miejsc:
 

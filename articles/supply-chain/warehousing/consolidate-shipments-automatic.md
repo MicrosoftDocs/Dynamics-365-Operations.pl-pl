@@ -1,6 +1,6 @@
 ---
 title: Konsolidowanie wysyłek podczas zwalniania ich do magazynu przy użyciu automatycznego zwalniania zamówień sprzedaży
-description: W tym temacie przedstawiono scenariusz, w którym wiele zamówień jest zwalnianych do magazynu w ramach tej samej zautomatyzowanej okresowej procedury zwalniania do magazynu.
+description: W tym artykule przedstawiono scenariusz, w którym wiele zamówień jest zwalnianych do magazynu w ramach tej samej zautomatyzowanej okresowej procedury zwalniania do magazynu.
 author: Mirzaab
 ms.date: 05/12/2020
 ms.topic: article
@@ -13,24 +13,24 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 74d4d9d8429095c3fac80db58f14ac2ef0776798
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 36eb5e788d0473e2fec2214e9aa7e245304347e3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677542"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875080"
 ---
 # <a name="consolidate-shipments-released-to-the-warehouse-using-automatic-release-of-sales-orders"></a>Konsolidowanie wysyłek podczas zwalniania ich do magazynu przy użyciu automatycznego zwalniania zamówień sprzedaży
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie przedstawiono scenariusz, w którym wiele zamówień jest zwalnianych do magazynu w ramach tej samej zautomatyzowanej okresowej procedury zwalniania do magazynu. Zamówienia będą automatycznie konsolidowane w wysyłki na podstawie reguł zdefiniowanych jako zasady konsolidacji wysyłki.
+W tym artykule przedstawiono scenariusz, w którym wiele zamówień jest zwalnianych do magazynu w ramach tej samej zautomatyzowanej okresowej procedury zwalniania do magazynu. Zamówienia będą automatycznie konsolidowane w wysyłki na podstawie reguł zdefiniowanych jako zasady konsolidacji wysyłki.
 
 W tym scenariuszu utworzysz zestawy zamówień sprzedaży i zwolnisz poszczególne zestawy do magazynu. Następnie przejrzysz wysyłki utworzone lub zaktualizowane podczas konsolidowania wysyłki na podstawie skonfigurowanych zasad.
 
 ## <a name="make-demo-data-available"></a>Udostępnianie danych pokazu
 
-Każdy scenariusz w tym temacie zawiera odwołania do wartości i rekordów uwzględnionych w standardowych danych pokazu dostępnych dla rozwiązania Microsoft Dynamics 365 Supply Chain Management. Aby użyć wartości określonych w tym miejscu podczas wykonywania ćwiczeń, upewnij się, że praca odbywa się w środowisku, w którym są zainstalowane dane demonstracyjne, i przed rozpoczęciem ustaw firmę na **USMF**.
+Każdy scenariusz w tym artykule zawiera odwołania do wartości i rekordów uwzględnionych w standardowych danych pokazu dostępnych dla rozwiązania Microsoft Dynamics 365 Supply Chain Management. Aby użyć wartości określonych w tym miejscu podczas wykonywania ćwiczeń, upewnij się, że praca odbywa się w środowisku, w którym są zainstalowane dane demonstracyjne, i przed rozpoczęciem ustaw firmę na **USMF**.
 
 ## <a name="set-up-shipment-consolidation-policies-and-product-filters"></a>Konfigurowanie zasad konsolidacji wysyłki i filtrów produktów
 

@@ -1,6 +1,6 @@
 ---
 title: Zarządzanie gotówką podręczną dla Europy Wschodniej i Rosji
-description: Ten temat zawiera informacje o funkcji gotówki podręcznej, która pozwala użytkownikom w Estonii, na Litwie, w Czechach, na Węgrzech, na Łotwie, w Polsce i w Rosji uwzględniać operacje gotówkowe w systemie.
+description: Ten artykuł zawiera informacje o funkcji gotówki podręcznej, która pozwala użytkownikom w Estonii, na Litwie, w Czechach, na Węgrzech, na Łotwie, w Polsce i w Rosji uwzględniać operacje gotówkowe w systemie.
 author: ShylaThompson
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8d301cb7b16960d9f239719841516ca6354381c0011d0b2d8302f8b85012ed1e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cf5e49f76753188ebeb39e4c14bf177b83bbb018
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733594"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871123"
 ---
 # <a name="petty-cash-for-eastern-europe-and-russia"></a>Zarządzanie gotówką podręczną dla Europy Wschodniej i Rosji
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje o funkcji gotówki podręcznej, która pozwala użytkownikom w Estonii, na Litwie, w Czechach, na Węgrzech, na Łotwie, w Polsce i w Rosji uwzględniać operacje gotówkowe w systemie.
+Ten artykuł zawiera informacje o funkcji gotówki podręcznej, która pozwala użytkownikom w Estonii, na Litwie, w Czechach, na Węgrzech, na Łotwie, w Polsce i w Rosji uwzględniać operacje gotówkowe w systemie.
 
 Funkcja gotówki podręcznej umożliwia automatyzację operacji przychodów i rozchodów gotówkowych, tworzenie dokumentów podstawowych i drukowanie powiązanych raportów. Funkcjonalność gotówki podręcznej umożliwia wykonywanie następujących operacji:
 
@@ -100,7 +100,7 @@ Aby skonfigurować reguły kontroli salda kasowego dla konta kasowego, wybierz k
 <li><strong>Ostrzeżenie</strong> — limit może zostać przekroczony, ale użytkownik otrzyma komunikat ostrzegawczy. Dokument kasowy jest potwierdzany lub zatwierdzany.</li>
 <li><strong>Błąd</strong> — limit nie może zostać przekroczony. Użytkownik otrzymuje komunikat o błędzie, a dokument kasowy nie jest potwierdzany ani zatwierdzany.</li>
 </ul>
-Aby uzyskać więcej informacji na temat procesu zatwierdzania dokumentów kasowych, zobacz sekcję &quot;Zatwierdzanie i księgowanie transakcji kasowych&quot; w dalszej części tego tematu.</td>
+Aby uzyskać więcej informacji na temat procesu zatwierdzania dokumentów kasowych, zobacz sekcję &quot;Zatwierdzanie i księgowanie transakcji kasowych&quot; w dalszej części tego artykułu.</td>
 </tr>
 <tr class="odd">
 <td>Limit salda</td>

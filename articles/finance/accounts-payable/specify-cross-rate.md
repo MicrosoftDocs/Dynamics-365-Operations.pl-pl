@@ -1,6 +1,6 @@
 ---
 title: Określanie kursu krzyżowego
-description: Ten temat zawiera informacje o kursach krzyżowych w Microsoft Microsoft Dynamics 365 Finance.
+description: Ten artykuł zawiera informacje o kursach krzyżowych w Microsoft Dynamics 365 Finance.
 author: abruer
 ms.date: 05/16/2018
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ed1db707cf6aed7c9def76ebbbdef7032b8776b6
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: efb01948af2bcba9ca740e8bd0e12584cf021fce
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735298"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889969"
 ---
 # <a name="specify-the-cross-rate"></a>Określanie kursu krzyżowego
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono przeznaczenie kursu krzyżowego oraz sposobu określania kursu krzyżowego, gdy płatność jest rozliczana z fakturą. Użyć kursu krzyżowego podczas stosowania wszystkich poniższych kryteriów: 
+W tym artykule wyjaśniono przeznaczenie kursu krzyżowego oraz sposobu określania kursu krzyżowego, gdy płatność jest rozliczana z fakturą. Użyć kursu krzyżowego podczas stosowania wszystkich poniższych kryteriów: 
 -   W przypadku rozliczania płatności z faktury. 
 -   Wiersz płatności i faktura używają różnych walut. 
 -   Żadna waluta nie jest walutą rozliczeniową. 

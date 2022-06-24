@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie kont odbiorców
-description: W tym temacie opisano typy informacji, które należy wprowadzić podczas tworzenia nowego konta dostawcy.
+description: W tym artykule opisano typy informacji, które należy wprowadzić podczas tworzenia nowego konta dostawcy.
 author: GalynaFedorova
 ms.date: 02/03/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5d524ff99cba733fdd607d9708abba440248d6cc
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: d1ddf126305f39a35f61b9a98da1c6bce29372cf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676982"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875283"
 ---
 # <a name="set-up-vendor-accounts"></a>Konfigurowanie kont odbiorców
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano typy informacji, które należy wprowadzić podczas tworzenia nowego konta dostawcy.
+W tym artykule opisano typy informacji, które należy wprowadzić podczas tworzenia nowego konta dostawcy.
 
 Podczas tworzenia konta dostawcy wprowadza się informacje o dostawcy. Te informacje są używane do automatycznego wprowadzania danych w dokumentach oraz do śledzenia działań dotyczących dostawcy. Na przykład można skonfigurować następujące informacje dotyczące dostawcy:
 

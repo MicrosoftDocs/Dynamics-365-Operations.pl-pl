@@ -1,6 +1,6 @@
 ---
 title: Zarządzanie funkcjami — omówienie
-description: W tym temacie opisano funkcję zarządzania funkcjami i sposób jego używania.
+description: W tym artykule opisano funkcję zarządzania funkcjami i sposób jego używania.
 author: Peakerbl
 ms.date: 01/10/2022
 ms.topic: overview
@@ -15,12 +15,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: c98bdbd64ee5488da20de3f5b23ae18ebce8c23f
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 0691bc34ac8b57d20cfbeb58b6a2e2a03a57d067
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068016"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850068"
 ---
 # <a name="feature-management-overview"></a>Zarządzanie funkcjami — omówienie
 
@@ -41,7 +41,7 @@ Lista funkcji zawiera następujące informacje:
 - **Stan** — symbol wskazuje, czy funkcja została włączona (znacznik wyboru), została włączona (pusta), została zaplanowana do włączenia (zegar) lub jest obowiązkowo włączona (kłódka), wymaga uwagi przed włączeniem (ostrzeżenie) lub nie może zostać włączona (X). Pokazane ustawienie jest używane dla wszystkich firm. Należy pamiętać, że nawet wtedy, gdy funkcja została włączona, jest nadal kontrolowana przez zabezpieczenia. W związku z tym funkcja będzie dostępna tylko dla użytkowników, którzy mają do niej dostęp, na podstawie ich roli zabezpieczeń. Będzie ona również dostępna tylko w firmach, do których użytkownik ma dostęp.
 - **Data włączenia** — data, kiedy funkcja została włączona lub jest zaplanowana do włączenia.
 - **Dodano funkcję** – data, kiedy funkcja została dodana do danego środowiska. Ta data jest automatycznie wprowadzana podczas aktualizowania środowiska podczas comiesięcznych wydań.
-- **Stan funkcji** — bieżący stan cyklu życia funkcji: **Podgląd**, **Wydana** (pokazane jako puste), **Domyślnie włączona** i **Obowiązkowa**. Stany są omówione bardziej szczegółowo w dalszej części tego tematu. 
+- **Stan funkcji** — bieżący stan cyklu życia funkcji: **Podgląd**, **Wydana** (pokazane jako puste), **Domyślnie włączona** i **Obowiązkowa**. Stany są omówione bardziej szczegółowo w dalszej części tego artykułu. 
 - **Moduł** — moduł, którego dotyczy nowa funkcja.
 
 > [!NOTE]
@@ -72,7 +72,7 @@ Kolumna **Stan funkcji** dla tych funkcji jest pusta. Funkcje, które są począ
 
 ### <a name="on-by-default-features-optional"></a>Funkcje domyślnie włączone (opcjonalnie)
 
-Funkcje, które są **domyślnie włączone**, są domyślnie włączone, ale można je wyłączyć. Po tym jak funkcje, które mogą być wyłączone, będą w stanie **Wydane** przez co najmniej sześć miesięcy, oczekuje się, że przejdą do tego stanu w następnym dużym wydaniu. Funkcje, które przechodzą do **Domyślnie włączone** powinny być opisane w sekcji [Co nowego](../whats-new-changed.md) dla danej wersji. Aktualizacja jest inicjowana przez zespół będący właścicielem produktu.
+Funkcje, które są **domyślnie włączone**, są domyślnie włączone, ale można je wyłączyć. Po tym jak funkcje, które mogą być wyłączone, będą w stanie **Wydane** przez co najmniej sześć miesięcy, oczekuje się, że przejdą do tego stanu w następnym dużym wydaniu. Funkcje, które przechodzą do **Domyślnie włączone** powinny być opisane w artykule [Co nowego](../whats-new-changed.md) dla danej wersji. Aktualizacja jest inicjowana przez zespół będący właścicielem produktu.
 
 > [!NOTE]
 > Ponieważ funkcje te zostaną włączone automatycznie, ważne jest, abyś określił, czy Twoja organizacja jest gotowa na ich wykorzystanie, czy też potrzeba na to więcej czasu. Jeśli potrzeba więcej czasu, może być konieczne tymczasowe wyłączenie tych funkcji. Należy zauważyć, że przejście funkcji do **Domyślnie włączona** odbywa się w głównej wersji, zanim funkcja ma stać się **obowiązkowa**. W tym momencie nie będzie można wyłączyć tej funkcji. 

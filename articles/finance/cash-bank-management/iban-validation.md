@@ -1,6 +1,6 @@
 ---
 title: Zarządzanie sprawdzaniem poprawności międzynarodowego numeru konta bankowego (IBAN)
-description: W tym temacie wyjaśniono, jak zarządzać sprawdzaniem poprawności międzynarodowego numeru konta bankowego (IBAN).
+description: W tym artykule wyjaśniono, jak zarządzać walidacją międzynarodowego numeru konta bankowego (IBAN).
 author: twheeloc
 ms.date: 08/24/2018
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 89d6c38088e43f0f24fa41accecaa262a64006cf
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 3d825e8699fbe10e080cd85f15d3d86f8c780f15
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462772"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880907"
 ---
 # <a name="manage-international-bank-account-number-iban-account-validation"></a>Zarządzanie sprawdzaniem poprawności międzynarodowego numeru konta bankowego (IBAN)
 
@@ -25,7 +25,7 @@ ms.locfileid: "8462772"
 
 Weryfikacja międzynarodowego numeru konta bankowego (IBAN) zwiększa ilość sprawdzania poprawności wykonywanego podczas dodawania numeru IBAN do konta bankowego.
 
-Informacje o strukturze IBAN są przechowywane w firmie Microsoft Dynamics 365 Finance i są automatycznie ładowane, gdy numer IBAN jest pierwszy raz zapisywany na kontach bankowych. Struktura określa długość numeru IBAN oraz pozycje początkowe i długości numeru konta bankowego i kodu banku.
+Informacje o strukturze IBAN są przechowywane w aplikacji Microsoft Dynamics 365 Finance i są automatycznie ładowane, gdy numer IBAN jest pierwszy raz zapisywany na kontach bankowych. Struktura określa długość numeru IBAN oraz pozycje początkowe i długości numeru konta bankowego i kodu banku.
 
 ## <a name="set-up-iban-structures"></a>Konfigurowanie struktur numerów IBAN
 

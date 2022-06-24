@@ -1,6 +1,6 @@
 ---
 title: Ustawianie grup środków trwałych
-description: W tym temacie pokazano sposób tworzenia nowej grupy środków trwałych.
+description: W tym artykule pokazano sposób tworzenia nowej grupy środków trwałych.
 author: moaamer
 ms.date: 08/02/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 17f149f3815867e2b174e017dd6b4998e2d7c16f
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 7eef214142bab80f6754c74787e94c4e79a3e037
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725297"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870083"
 ---
 # <a name="set-up-fixed-asset-groups"></a>Ustawianie grup środków trwałych
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie pokazano sposób tworzenia nowej grupy środków trwałych. Przewodnik korzysta z roli Księgowy i danych firmy demonstracyjnej USMF.
+W tym artykule pokazano sposób tworzenia nowej grupy środków trwałych. Przewodnik korzysta z roli Księgowy i danych firmy demonstracyjnej USMF.
 
 1. W okienku nawigacji przejdź do **Moduły > Środki trwałe > Ustawienia > Grupy środków trwałych**.
 2. Wybierz pozycję **Nowy**.

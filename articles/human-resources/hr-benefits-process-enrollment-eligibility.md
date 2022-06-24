@@ -1,6 +1,6 @@
 ---
-title: Przetwarzanie uprawnień do rejestracji
-description: W tym temacie opisano sposób uruchamiania procesu uprawnień do rejestracji.
+title: Przetwórz uprawnienia do świadczeń
+description: W tym artykule opisano sposób uruchamiania procesu uprawnień do rejestracji.
 author: twheeloc
 ms.date: 08/23/2021
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 78a7de6dbb8d8ed13392eb7eb9aa02b15db2e009
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c01d7a6f456514fc9da1889ccaff5af1ae7c0f52
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693179"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877751"
 ---
-# <a name="process-enrollment-eligibility"></a>Przetwarzanie uprawnień do rejestracji
+# <a name="process-enrollment-eligibility"></a>Przetwórz uprawnienia do świadczeń
 
 
 [!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-W tym temacie opisano sposób uruchamiania procesu uprawnień do rejestracji.
+W tym artykule opisano sposób uruchamiania procesu uprawnień do rejestracji.
 
 1. W obszarze roboczym **Zarządzanie świadczeniami** w sekcji **Przetwarzanie** wybierz opcję **Przetwarzanie uprawnień do świadczeń**.
 
@@ -55,7 +55,7 @@ W tym temacie opisano sposób uruchamiania procesu uprawnień do rejestracji.
 
 ## <a name="view-process-results"></a>Wyświetlanie wyników procesu
 
-W tym temacie opisano sposób wyświetlania wyników procesu.
+W tym artykule opisano sposób wyświetlania wyników procesu.
 
 1.  W obszarze roboczym **Zarządzanie świadczeniami** w sekcji **Przetwarzanie** wybierz opcję **Wyniki procesu**.
 

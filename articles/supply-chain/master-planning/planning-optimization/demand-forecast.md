@@ -1,6 +1,6 @@
 ---
 title: Planowanie główne z uwzględnieniem prognoz popytu
-description: W tym temacie opisano sposób uwzględniania prognoz popytu podczas planowania głównego z optymalizacją planowania.
+description: W tym artykule opisano sposób uwzględniania prognoz popytu podczas planowania głównego z optymalizacją planowania.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: ec5150186e190e67913409b9cac107ff2bd55001
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 63221b5270416cad9cdfb586c697d7700f3b561b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468449"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878998"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Planowanie główne z uwzględnieniem prognoz popytu
 
@@ -42,7 +42,7 @@ Aby skonfigurować plan główny w celu uwzględnienia prognozy popytu, należy 
 
     - W polu **Model prognozy** wybierz model prognozy. Ten model będzie brany pod uwagę podczas generowania sugestii dostaw dla bieżącego planu głównego.
     - **Uwzględnij prognozę popytu** — tę opcję należy określić jako *wartość tak*, aby uwzględnić prognozę popytu w bieżącym planie głównym. Jeśli zostanie ustawiona wartość *nie*, transakcje prognozy popytu nie będą uwzględniane w planie głównym.
-    - **Metoda używana do redukowania zapotrzebowań prognozowanych** — umożliwia wybór metody, która ma zostać użyta do zmniejszenia prognozowanych zapotrzebowań. Aby uzyskać więcej informacji, zobacz sekcję [„Klucze redukcji w prognozie"](#reduction-keys) w dalszej części tego tematu.
+    - **Metoda używana do redukowania zapotrzebowań prognozowanych** — umożliwia wybór metody, która ma zostać użyta do zmniejszenia prognozowanych zapotrzebowań. Aby uzyskać więcej informacji, zobacz sekcję [„Klucze redukcji w prognozie"](#reduction-keys) w dalszej części tego artykułu.
 
 1. Na karcie FastTab dla **horyzontu czasowego w dniach** można ustawić następujące pola, aby określić okres, w którym Prognoza popytu jest uwzględniana w czasie:
 
@@ -61,7 +61,7 @@ Aby skonfigurować grupę zapotrzebowania w celu uwzględnienia prognozy popytu,
 1. Na skróconej karcie **Inne** ustaw następujące pola:
 
     - **Horyzont czasowy planu wg prognozy** — umożliwia wprowadzenie liczby dni (od daty dzisiejszej), dla których ma być stosowana Prognoza popytu. Tę wartość można zastąpić przy użyciu **planu według prognozy** w planie głównym, zgodnie z opisem w poprzedniej sekcji.
-    - **Klucz redukcji** — umożliwia wybór klucza redukcji, który ma zostać zastosowany. Aby uzyskać więcej informacji, zajrzyj do opcji[Utwórz i Ustaw klucz redukcji prognozy](#create-reduction-key) i [Skorzystaj z sekcji klucza redukcji](#use-reduction-key) w dalszej części tego tematu.
+    - **Klucz redukcji** — umożliwia wybór klucza redukcji, który ma zostać zastosowany. Aby uzyskać więcej informacji, zajrzyj do opcji [Utwórz i Ustaw klucz redukcji prognozy](#create-reduction-key) i [Skorzystaj z sekcji klucza redukcji](#use-reduction-key) w dalszej części tego artykułu.
     - **Zmniejszenie prognozy wg** — w przypadku planów głównych, w których **Metoda służąca do zmniejszania** wartości w polu prognozowane zapotrzebowania jest ustawiona na *transakcje — klucz redukcji* lub *transakcje — okres dynamiczny*, należy określić, które transakcje powinny obniżyć prognozę. Należy wybrać jedną z następujących opcji:
 
         - **Wszystkie transakcje** — wszystkie transakcje powinny zmniejszać prognozę.

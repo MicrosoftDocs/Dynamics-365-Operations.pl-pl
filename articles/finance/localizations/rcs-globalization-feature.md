@@ -1,6 +1,6 @@
 ---
 title: Usługi Regulatory Configuration Services (RCS) — funkcje globalizacji
-description: W tym temacie objaśniono sposób korzystania z Microsoft Regulatory Configuration Services (RCS) i repozytorium globalnego do tworzenia i obsługiwania funkcji globalizacji.
+description: W tym artykule objaśniono sposób korzystania z Microsoft Regulatory Configuration Services (RCS) i repozytorium globalnego do tworzenia i obsługiwania funkcji globalizacji.
 author: JaneA07
 ms.date: 06/04/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: e8df8a56d493e58f28699a87dd9dab1f87540a4ee327450384f89e6d426ba1a7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cf08f25f7d092e0f93284a4019096378543adb9d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760638"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888902"
 ---
 # <a name="regulatory-configuration-services-rcs---globalization-features"></a>Usługi Regulatory Configuration Services (RCS) — funkcje globalizacji
 
@@ -40,7 +40,7 @@ Przed wykonaniem tych procedur należy wykonać kroki związane z następującym
 - Uzyskanie dostępu do wystąpienia RCS.
 - Tworzenie i uaktywnianie dostawcy konfiguracji. Dalsze informacje znajdują się w temacie [Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-W wystąpieniu aplikacji Finance and Operations wykonaj następujące kroki.
+W wystąpieniu aplikacji finansowych i operacyjnych wykonaj następujące kroki.
 
 1. Wybierz kolejno opcje **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
 2. Jeśli w firmie nie aprowizowano środowiska RCS, wybierz pozycję **Regulatory services — Konfiguracja** i postępować zgodnie z instrukcjami w celu aprowizowania środowiska RCS.
@@ -64,7 +64,7 @@ Aby skorzystać z funkcji globalizacji, należy najpierw zaimportować ją z rep
 
 ## <a name="access-globalization-features"></a>Dostęp do funkcji globalizacji
 
-1. Należy się upewnić, że funkcja **Funkcje globalizacji** jest włączona w module Zarządzanie funkcjami, tak jak to opisano wcześniej w tym temacie.
+1. Należy się upewnić, że funkcja **Funkcje globalizacji** jest włączona w module Zarządzanie funkcjami, tak jak to opisano wcześniej w tym artykule.
 2. Otwórz nowy obszar roboczy **Funkcje globalizacji**, a następnie w obszarze **Funkcje** wybierz kafelek **Fakturowanie elektroniczne**.
 
     ![Obszar roboczy funkcje globalne.](./media/RCS_GlobalF_2%20Feature%20wrkspace.JPG)
@@ -161,7 +161,7 @@ Dla konfiguracji dostępne są następujące działania:
 - **Wyświetlanie** — umożliwia wyświetlenie konfiguracji funkcji, które nie wymagają aktualizacji.
 - **Edycja** — umożliwia utworzenie wersji roboczej wybranej konfiguracji, dzięki czemu można edytować format lub mapowanie formatów w Projektancie formatów.
 - **Usuwanie** — służy do usuwania wybranej konfiguracji z funkcji.
-- **Zmiana podstawy** — umożliwia zmianę podstawy funkcji. Aby uzyskać więcej informacji, zobacz sekcję [Zmiana podstawy pochodnych funkcji globalizacji](#rebase) w następnej części tego tematu.
+- **Zmiana podstawy** — umożliwia zmianę podstawy funkcji. Aby uzyskać więcej informacji, zobacz sekcję [Zmiana podstawy pochodnych funkcji globalizacji](#rebase) w następnej części tego artykułu.
 
 ### <a name="setups"></a>Konfiguracje
 
@@ -182,7 +182,7 @@ Dostępne są następujące akcje dla konfiguracji funkcji:
 
 Dla środowisk dostępne są następujące działania:
 
-- **Włącz** — dla wybranej wersji funkcji wybierz opublikowane środowisko i wybierz datę **Obowiązuje od**, która powinna być dostępna. Aby uzyskać więcej informacji, zobacz sekcję [Skonfiguruj środowiska do włączania](#configureenvironment) w następnej części tego tematu.
+- **Włącz** — dla wybranej wersji funkcji wybierz opublikowane środowisko i wybierz datę **Obowiązuje od**, która powinna być dostępna. Aby uzyskać więcej informacji, zobacz sekcję [Skonfiguruj środowiska do włączania](#configureenvironment) w następnej części tego artykułu.
 - **Anuluj** — umożliwia usuwanie środowiska konfiguracji funkcji.
 
 ### <a name="organizations"></a>Organizacje
@@ -195,7 +195,7 @@ Aby udostępnić funkcję globalizacji w organizacji zewnętrznej, należy wykon
 
     ![Udostępnianie funkcji organizacji.](./media/RCS_GlobalF_20%20Feature%20orgn_share%20with.JPG)
 
-Funkcja jest udostępniana wybranej organizacji zewnętrznej i jest dostępna dla tej organizacji w repozytorium globalnym. Stamtąd funkcja może być zaimportowana do instancji organizacji RCS lub Dynamics 365 Finance, żeby mogła zostać użyta.
+Funkcja jest udostępniana wybranej organizacji zewnętrznej i jest dostępna dla tej organizacji w repozytorium globalnym. Stamtąd funkcja może być zaimportowana do instancji organizacji RCS lub aplikacji Dynamics 365 Finance, aby można było jej użyć.
 
 ## <a name="rebase-derived-globalization-features"></a><a name="rebase"></a>Zmiana podstawy pochodnych funkcji globalizacji
 

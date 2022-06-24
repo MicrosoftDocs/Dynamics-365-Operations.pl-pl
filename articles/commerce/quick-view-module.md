@@ -1,6 +1,6 @@
 ---
-title: Moduł szybkiego podglądu
-description: W tym temacie omówiono moduły szybkiego podglądu i opisano, jak dodać je do stron witryny w Microsoft Dynamics 365 Commerce.
+title: Moduł szybkiego widoku
+description: W tym artykule omówiono moduły szybkiego podglądu i opisano, jak dodać je do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 5ba42806d8f77f41ab9c5cf5e26b20ecb647aadf
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: e9066357fda4f5d91c547622ac64d8c4eef253ae
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780825"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847582"
 ---
 # <a name="quick-view-module"></a>Moduł szybkiego widoku
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie omówiono moduły szybkiego podglądu i opisano, jak dodać je do stron witryny w Microsoft Dynamics 365 Commerce.
+W tym artykule omówiono moduły szybkiego podglądu i opisano, jak dodać je do stron witryny w Microsoft Dynamics 365 Commerce.
 
 Moduł szybkiego podglądu pozwala użytkownikom szybko przeglądać informacje o produkcie podczas przeglądania produktów na stronie listy i dodawać jeden lub więcej produktów do koszyka ze strony listy, bez konieczności przechodzenia do strony szczegółów produktu (PDP). Moduł szybkiego podglądu zapewnia przegląd informacji o produkcie, których użytkownicy potrzebują, aby podjąć decyzję „dodaj do koszyka”. Zapewnia również łącze do PDP, dzięki czemu użytkownicy mogą przeglądać dodatkowe szczegóły produktu i opcje zakupu.
 

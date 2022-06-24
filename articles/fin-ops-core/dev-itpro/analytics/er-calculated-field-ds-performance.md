@@ -1,6 +1,6 @@
 ---
 title: Zwiększ wydajność rozwiązań Raportowania elektronicznego, dodając sparametryzowane źródła danych PÓL OBLICZENIOWYCH
-description: W tym temacie wyjaśniono, w jaki sposób można usprawnić działanie rozwiązań raportowania elektronicznego (ER), dodając sparametryzowane źródła danych PÓL OBLICZENIOWYCH.
+description: W tym artykule wyjaśniono, w jaki sposób można usprawnić działanie rozwiązań raportowania elektronicznego (ER), dodając sparametryzowane źródła danych PÓL OBLICZENIOWYCH.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: article
@@ -14,32 +14,32 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5fada2fc0b35e22da18f5d6a0505df077d5ada4e0221031d63c316d8c705bc79
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8c2c0499ac3d41c9bb6026cc05f971087799c28f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753677"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850122"
 ---
 # <a name="improve-the-performance-of-er-solutions-by-adding-parameterized-calculated-field-data-sources"></a>Zwiększ wydajność rozwiązań Raportowania elektronicznego, dodając sparametryzowane źródła danych PÓL OBLICZENIOWYCH
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, w jaki sposób można pobierać [dane śledzenia wydajności](trace-execution-er-troubleshoot-perf.md) dla uruchomionych formatów [raportowania elektronicznego (ER)](general-electronic-reporting.md), a następnie używać informacji z tych procesów w celu zwiększenia wydajności, konfigurując źródło danych dla sparametryzowanych **pól obliczeniowych**.
+W tym artykule wyjaśniono, w jaki sposób można pobierać [dane śledzenia wydajności](trace-execution-er-troubleshoot-perf.md) dla uruchomionych formatów [raportowania elektronicznego (ER)](general-electronic-reporting.md), a następnie używać informacji z tych procesów w celu zwiększenia wydajności, konfigurując źródło danych dla sparametryzowanych **pól obliczeniowych**.
 
 W ramach procesu projektowania konfiguracji raportowania elektronicznego (ER) w celu generowania dokumentów biznesowych należy zdefiniować metodę, która jest używana do uzyskiwania danych z aplikacji i wprowadzania ich do generowanych danych wyjściowych. Po zaprojektowaniu wstępnie zdefiniowanego źródła danych dla **Pola obliczeniowego** można zmniejszyć liczbę wywołań bazy danych i znacząco zredukować czas i koszt, który ma być związany z zbieraniem szczegółów dotyczących wykonania formatu ER.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-- Aby wykonać przykłady opisane w tym temacie, trzeba mieć dostęp do jednej z następujących [ról](../sysadmin/tasks/assign-users-security-roles.md):
+- Aby wykonać przykłady opisane w tym artykule, trzeba mieć dostęp do jednej z następujących [ról](../sysadmin/tasks/assign-users-security-roles.md):
 
     - Deweloper raportowania elektronicznego
     - Konsultant funkcjonalny raportowania elektronicznego
     - Administrator systemu
 
 - Firmę należy ustawić na wartość **DEMF**.
-- Wykonaj kroki opisane w [dodatku 1](#appendix1) do tego tematu, aby pobrać składniki przykładowego rozwiązania Microsoft ER wymagane do przetwarzania płatności dostawców.
-- Postępuj zgodnie z krokami opisanymi w [dodatku 2](#appendix2) do tego tematu, aby skonfigurować minimalny zestaw parametrów funkcji ER, który jest wymagany w celu zwiększenia wydajności przykładowego rozwiązania Microsoft ER.
+- Wykonaj kroki opisane w [dodatku 1](#appendix1) do tego artykułu, aby pobrać składniki przykładowego rozwiązania Microsoft ER wymagane do przetwarzania płatności dostawców.
+- Postępuj zgodnie z krokami opisanymi w [dodatku 2](#appendix2) do tego artykułu, aby skonfigurować minimalny zestaw parametrów funkcji ER, który jest wymagany w celu zwiększenia wydajności przykładowego rozwiązania Microsoft ER.
 
 ## <a name="import-the-sample-er-solution"></a>Importuj przykładowe rozwiązania ER
 
@@ -47,8 +47,8 @@ Załóżmy, że rozpoczęto projektowanie nowego rozwiązania ER w celu wygenero
 
 Pierwszym krokiem jest zaimportowanie przykładowego rozwiązania ER w celu wygenerowania raportu transakcji dostawcy.
 
-1. Zaloguj się do wystąpienia Microsoft Dynamics 365 Finance, które zostało zainicjowane dla danej firmy.
-2. W tym temacie utworzysz i zmodyfikujesz konfiguracje dla przykładowej firmy **Litware, Inc.** Upewnij się zatem, że ten dostawca konfiguracji jest dodany do wystąpienia Finance i wybrany jako aktywny. Dalsze informacje znajdują się w temacie [Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+1. Zaloguj się do wystąpienia aplikacji Microsoft Dynamics 365 Finance, które zostało zainicjowane dla danej firmy.
+2. W tym artykule utworzysz i zmodyfikujesz konfiguracje dla przykładowej firmy **Litware, Inc.** Upewnij się zatem, że ten dostawca konfiguracji jest dodany do wystąpienia Finance i wybrany jako aktywny. Dalsze informacje znajdują się w temacie [Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. W obszarze roboczym **raportowanie elektroniczne** wybierz kafelek **konfiguracje raportowania**.
 4. Na stronie **Konfiguracje** zaimportuj konfiguracje ER, które zostały pobrane jako wstępnie wymagane do Finance, w następującej kolejności: model danych, metadane, mapowanie modelu, format. Dla każdej konfiguracji wykonaj następujące czynności:
 
@@ -220,7 +220,7 @@ Wykonaj poniższe kroki, aby użyć buforowania i źródła danych typu **pola o
 
 ## <a name="run-the-modified-er-solution-to-trace-execution"></a>Uruchom zmodyfikowane rozwiązanie ER, aby śledzić wykonywanie
 
-Powtórz kroki opisane w sekcji [Uruchamianie formatu ER](#run-format) tego tematu, aby wygenerować nowy ślad wydajności.
+Powtórz kroki opisane w sekcji [Uruchamianie formatu ER](#run-format) tego artykułu, aby wygenerować nowy ślad wydajności.
 
 ## <a name="use-the-performance-trace-to-analyze-adjustments-to-the-model-mapping"></a>Śledzenie wydajności umożliwia zmiany w mapowaniu modeli 
 

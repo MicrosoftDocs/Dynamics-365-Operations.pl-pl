@@ -1,6 +1,6 @@
 ---
 title: Stany cyklu życia produktu i transakcje
-description: W tym temacie wyjaśniono, w jaki sposób można kontrolować, które transakcje są dozwolone dla poszczególnych stanów cyklu życia w trakcie przechodzenia produktu inżynieryjnego przez cykl życia.
+description: W tym artykule wyjaśniono, w jaki sposób można kontrolować, które transakcje są dozwolone dla poszczególnych stanów cyklu życia w trakcie przechodzenia produktu inżynieryjnego przez cykl życia.
 author: t-benebo
 ms.date: 02/17/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 1e9b8a9f25edfa654a57e0ab4071cd93c8033d85
-ms.sourcegitcommit: d375ef4138e898621416754c40770d8ccca4d271
+ms.openlocfilehash: dd9155f799c66e8297b93d8ffbeeced1acd14220
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8322751"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867964"
 ---
 # <a name="product-lifecycle-states-and-transactions"></a>Stany cyklu życia produktu i transakcje
 
@@ -37,7 +37,7 @@ Praca ze stanami cyklu życia produktu, przejdź do **Zarządzanie zmianami proj
 - Aby usunąć istniejący stan cyklu życia, zaznacz go w okienku listy, a następnie wybierz **Usuń** w okienku akcji.
 
 > [!NOTE]
-> Produkty inżynieryjne korzystają z tych samych stanów cyklu życia, co produkty standardowe (nieinżynieryjne). Możesz także otworzyć **Stan cyklu życia produktu** stronę opisaną w tym temacie, przechodząc do **Zarządzanie informacjami o produkcie \> Konfiguracja \> Stan cyklu życia produktu**. Aby uzyskać więcej informacji o stanach cyklu życia produktu, zarówno dla produktów inżynieryjnych, jak i standardowych, zapoznaj się z [Omówienie stanów cyklu życia produktu](../pim/product-lifecycle.md).
+> Produkty inżynieryjne korzystają z tych samych stanów cyklu życia, co produkty standardowe (nieinżynieryjne). Możesz także otworzyć **Stan cyklu życia produktu** stronę opisaną w tym artykule, przechodząc do **Zarządzanie informacjami o produkcie \> Konfiguracja \> Stan cyklu życia produktu**. Aby uzyskać więcej informacji o stanach cyklu życia produktu, zarówno dla produktów inżynieryjnych, jak i standardowych, zapoznaj się z [Omówienie stanów cyklu życia produktu](../pim/product-lifecycle.md).
 
 ### <a name="header"></a>Nagłówek
 

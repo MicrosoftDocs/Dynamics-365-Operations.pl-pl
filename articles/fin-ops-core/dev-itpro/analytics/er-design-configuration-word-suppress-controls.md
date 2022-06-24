@@ -1,6 +1,6 @@
 ---
 title: Pomijanie formantów zawartości programu Word w generowanych raportach
-description: W tym temacie wyjaśniono, jak skonfigurować format raportowania elektronicznego w celu generowania raportów jako plików Microsoft Word, w których są pomijane formanty zawartości.
+description: W tym artykule wyjaśniono, jak skonfigurować format raportowania elektronicznego w celu generowania raportów jako plików Microsoft Word, w których są pomijane formanty zawartości.
 author: NickSelin
 ms.date: 02/11/2021
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: 2c2d79c9ea36c42cfc0f6ba0d3c81d063d8d9446
-ms.sourcegitcommit: 6c1bf233748c4bc70fc5a1a9711758cdfd9e07dc
+ms.openlocfilehash: e11b697b78c89a1758fa9e81c901bd29fe281539
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8782185"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882121"
 ---
 # <a name="suppress-word-content-controls-in-generated-reports"></a>Pomijanie formantów zawartości programu Word w generowanych raportach
 

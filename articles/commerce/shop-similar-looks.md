@@ -1,6 +1,6 @@
 ---
-title: Włącz rekomendacje „Kup podobne”
-description: W tym temacie opisano sposób włączenia zaleceń dotyczących produktu „kup podobne” w rozwiązaniu Microsoft Dynamics 365 Commerce.
+title: Włączanie rekomendacji dotyczących „kupowania podobnie wyglądających produktów”
+description: W tym artykule opisano sposób włączenia zaleceń dotyczących produktu „kup podobne” w rozwiązaniu Microsoft Dynamics 365 Commerce.
 author: bebeale
 ms.date: 08/06/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: e70365be8484d71ef9e0e9823b0a4406b0fd2761439780cafc30e1284bda1f20
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3024e832de5e6a60b49c5b0c8bfbe36b2c416379
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722007"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884584"
 ---
 # <a name="enable-shop-similar-looks-recommendations"></a>Włączanie rekomendacji dotyczących „kupowania podobnie wyglądających produktów”
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano sposób włączenia zaleceń dotyczących produktu „kup podobne” w rozwiązaniu Microsoft Dynamics 365 Commerce.
+W tym artykule opisano sposób włączenia zaleceń dotyczących produktu „kup podobne” w rozwiązaniu Microsoft Dynamics 365 Commerce.
 
 Funkcja rekomendacji „kup podobne” w Dynamics 365 Commerce wykorzystuje moc sztucznej inteligencji i uczenia maszynowego (AI-ML) do dostarczania klientom rekomendacji dotyczących wizualnie podobnych produktów. Udostępniając rekomendacje „kupuj podobne” dla wszystkich kanałów sprzedaży detalicznej w usłudze Commerce, sprzedawcy mogą zwiększyć satysfakcję klientów, pomagając klientom łatwo znaleźć to, czego szukają.
 

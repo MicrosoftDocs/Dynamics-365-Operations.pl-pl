@@ -1,6 +1,6 @@
 ---
 title: Funkcjonalność konstruktora BOM
-description: W tym temacie opisano, jak za pomocą strony projektanta BOM zaprojektować struktury drzewa dla list składowych (BOM) oraz ich używać.
+description: W tym artykule opisano, jak za pomocą strony projektanta BOM zaprojektować struktury drzewa dla list składowych (BOM) oraz ich używać.
 author: johanhoffmann
 ms.date: 11/03/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c068e7f5f4f36663766e21e14cf8e75cf1442f50
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 2fda2b1d835afdcf06a50528748861fecc6792f8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577991"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844274"
 ---
 # <a name="bom-designer-functionality"></a>Funkcjonalność konstruktora BOM
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano, jak za pomocą strony projektanta BOM zaprojektować struktury drzewa dla list składowych (BOM) oraz ich używać. Można kliknąć przycisk Ustawienia i wybierać różne konfiguracje oraz określić rodzaj informacji wyświetlanych w wierszach drzewa.
+W tym artykule opisano, jak za pomocą strony projektanta BOM zaprojektować struktury drzewa dla list składowych (BOM) oraz ich używać. Można kliknąć przycisk Ustawienia i wybierać różne konfiguracje oraz określić rodzaj informacji wyświetlanych w wierszach drzewa.
 
 Po otwarciu strony **Konstruktor BOM** ze strony **Zwolnione produkty** widać na niej hierarchię list składowych (BOM), które były aktywne i zatwierdzone dla wybranego towaru, domyślny oddział zamówienia towaru oraz rzeczywistą datę.  
 

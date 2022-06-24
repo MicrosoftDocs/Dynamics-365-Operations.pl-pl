@@ -1,6 +1,6 @@
 ---
 title: Omówienie konsolidacji i eliminacji
-description: Ten temat zawiera ogólne informacje o procesie konsolidacji i eliminacji. Znajdują się w nim również odpowiedzi na wybrane często zadawane pytania.
+description: Ten artykuł zawiera ogólne informacje o procesie konsolidacji i eliminacji. Znajdują się w nim również odpowiedzi na wybrane często zadawane pytania.
 author: panolte
 ms.date: 01/11/2018
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 670b238580ecf800686324fe664be747c551090d
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: cd7647df49883f0e3b6cbb2d21b19ca2acb2f065
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710706"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871399"
 ---
 # <a name="consolidation-and-elimination-overview"></a>Omówienie konsolidacji i eliminacji
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera ogólne informacje o procesie konsolidacji i eliminacji. Znajdują się w nim również odpowiedzi na wybrane często zadawane pytania.
+Ten artykuł zawiera ogólne informacje o procesie konsolidacji i eliminacji. Znajdują się w nim również odpowiedzi na wybrane często zadawane pytania.
 
 Gdy konsolidujesz dane, wyniki finansowe dla wielu oddziałów firmy są łączone w wyniki dla jednej, skonsolidowanej firmy. Oddziały mogą znajdować się na różnych wersjach lub systemach, mogą nie być w pełni posiadane i mogą używać różnych walut. Istnieje wiele opcji do konsolidacji danych:
 

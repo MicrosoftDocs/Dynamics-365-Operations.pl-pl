@@ -1,6 +1,6 @@
 ---
 title: Tworzenie zapotrzebowania wykorzystującego ZO
-description: W tym temacie przedstawiono sposób dodawania informacji o cenie i dostawcy do zapotrzebowania na zakup z procesu ZO.
+description: W tym artykule przedstawiono sposób dodawania informacji o cenie i dostawcy do zapotrzebowania na zakup z procesu ZO.
 author: GalynaFedorova
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 78092205c1a1d149b4dc202e085871d1fe46c4ad
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 5ecde250e3517464611b68fe3c960bfbfdf06319
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675129"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846019"
 ---
 # <a name="create-a-requisition-that-uses-an-rfq"></a>Tworzenie zapotrzebowania wykorzystującego ZO
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie przedstawiono sposób dodawania informacji o cenie i dostawcy do zapotrzebowania na zakup z procesu ZO. Przykład opisany w tym przewodniku można wykonać na danych firmy demonstracyjnej USMF. Aby wykonać wszystkie czynności, trzeba być zalogowanym jako administrator. Zadania w tym przewodniku zazwyczaj wykonują pracownicy działu zaopatrzenia.
+W tym artykule przedstawiono sposób dodawania informacji o cenie i dostawcy do zapotrzebowania na zakup z procesu ZO. Przykład opisany w tym przewodniku można wykonać na danych firmy demonstracyjnej USMF. Aby wykonać wszystkie czynności, trzeba być zalogowanym jako administrator. Zadania w tym przewodniku zazwyczaj wykonują pracownicy działu zaopatrzenia.
 
 
 ## <a name="create-a-requisition"></a>Tworzenie zapotrzebowania

@@ -1,6 +1,6 @@
 ---
 title: Omówienie raportowania finansowego
-description: W tym temacie opisano, jak uzyskać dostęp do modułu sprawozdawczości finansowej w Microsoft Dynamics 365 Finance i jak korzystać z funkcji raportowania finansowego.
+description: W tym artykule opisano, jak uzyskać dostęp do modułu sprawozdawczości finansowej w Microsoft Dynamics 365 Finance i jak korzystać z funkcji raportowania finansowego.
 author: aprilolson
 ms.date: 03/31/2022
 ms.topic: article
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8a209390a8424e2ec3d6654b54b36e36fcd349b3
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 3b09adc738ac36625436e5cc3197e79603fff9b8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8721907"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853417"
 ---
 # <a name="get-started-with-financial-reporting"></a>Rozpoczynanie pracy z raportowaniem finansowym 
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano, jak uzyskać dostęp do modułu Financial reporting i jak korzystać z funkcji raportowania finansowego. Zawiera też opis domyślnych raportów finansowych, które są zawarte w programie.
+W tym artykule opisano, jak uzyskać dostęp do modułu Financial Reporting i jak korzystać z funkcji raportowania finansowego. Zawiera też opis domyślnych raportów finansowych, które są zawarte w programie.
 
 ## <a name="accessing-financial-reporting"></a>Uzyskiwanie dostępu do raportowania finansowego
 

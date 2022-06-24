@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0e6af5fbd050642ac462ecb159c05d78f534f0ce
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: ae6b2b505acb211f9fb5506234953eba9f3ec2a3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722557"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865780"
 ---
 # <a name="posting-definition-examples"></a>Szablony definicji księgowania
 
@@ -28,7 +28,7 @@ ms.locfileid: "8722557"
 
 Ten artykuł zawiera przykłady pokazujące, jak definicje księgowania są używane dla przyszłych zobowiązań wiążących w zamówieniach zakupu i dla asygnat budżetu.
 
-Zanim przeczytasz ten temat, zapoznaj się z definicjami księgowania i definicjami księgowania transakcji. Więcej informacji znajdziesz w temacie [Definicje księgowania](posting-definitions.md). Poniższe przykłady można skonfigurować na stronie **Definicje księgowania**. Każdy przykład zawiera następujące sekcje:
+Zanim przeczytasz ten artykuł, zapoznaj się z definicjami księgowania i definicjami księgowania transakcji. Więcej informacji znajdziesz w temacie [Definicje księgowania](posting-definitions.md). Poniższe przykłady można skonfigurować na stronie **Definicje księgowania**. Każdy przykład zawiera następujące sekcje:
 
 -   Definicja księgowania — kryteria uzgadniania
 -   Definicja księgowania — wygenerowane zapisy

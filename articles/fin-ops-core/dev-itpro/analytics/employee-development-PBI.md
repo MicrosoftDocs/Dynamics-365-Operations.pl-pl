@@ -1,6 +1,6 @@
 ---
 title: Pakiet zawartości usługi Power BI Rozwój pracownika etatowego
-description: W tym temacie opisano pakiet zawartość Rozwój pracownika etatowego dostępny dla usługi Power BI.
+description: W tym artykule opisano pakiet zawartość Rozwój pracownika etatowego dostępny dla usługi Power BI.
 author: jcart1106
 ms.date: 12/19/2017
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 280053703a8afac15f0ae377e0d439a9bc9e918fb4c8413022cabad08431f3e4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 67fd3b5907cb52dc1f10d754e12316e21876e888
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776614"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850995"
 ---
 # <a name="employee-development-power-bi-content"></a>Pakiet zawartości usługi Power BI Rozwój pracownika etatowego
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano pakiet zawartości **Rozwój pracownika etatowego** dostępny dla usługi Microsoft Power BI.
+W tym artykule opisano zawartość pakietu **Rozwój pracownika etatowego** dostępny dla usługi Microsoft Power BI.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Raporty dostępne w pakiecie zawartości dla usługi Power BI
 Raporty dostępne w pakiecie zawartości usługi Power BI **Rozwój pracownika etatowego** mają wykresy i tabele przedstawiające dodatkowe informacje. W poniższej tabeli opisano dostępne raporty.

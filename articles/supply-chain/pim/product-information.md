@@ -1,6 +1,6 @@
 ---
 title: Omówienie informacji o produktach
-description: Ten temat zawiera informacje dotyczące zarządzania informacjami o produktach. Moduł Zarządzanie informacjami o produktach współpracuje ze wspólnymi definicjami produktów, kategoriami i identyfikatorami we wszystkich firmach, a także z konkretnymi konfiguracjami produktu, tak aby spełnić wszystkie wymagania procesów biznesowych.
+description: Ten artykuł zawiera informacje na temat zarządzania informacjami o produkcie. Moduł Zarządzanie informacjami o produktach współpracuje ze wspólnymi definicjami produktów, kategoriami i identyfikatorami we wszystkich firmach, a także z konkretnymi konfiguracjami produktu, tak aby spełnić wszystkie wymagania procesów biznesowych.
 author: t-benebo
 ms.date: 06/01/2017
 ms.topic: overview
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c8aabeed66f864d1d1060a6452a3b554611c295
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: fa06e718d2acc44cfced7db842814c48fb210d1e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063323"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867877"
 ---
 # <a name="product-information-overview"></a>Omówienie informacji o produktach
 
@@ -28,7 +28,7 @@ ms.locfileid: "8063323"
 
 
 
-Ten temat zawiera informacje dotyczące zarządzania informacjami o produktach. Moduł Zarządzanie informacjami o produktach współpracuje ze wspólnymi definicjami produktów, kategoriami i identyfikatorami we wszystkich firmach, a także z konkretnymi konfiguracjami produktu, tak aby spełnić wszystkie wymagania procesów biznesowych. 
+Ten artykuł zawiera informacje na temat zarządzania informacjami o produkcie. Moduł Zarządzanie informacjami o produktach współpracuje ze wspólnymi definicjami produktów, kategoriami i identyfikatorami we wszystkich firmach, a także z konkretnymi konfiguracjami produktu, tak aby spełnić wszystkie wymagania procesów biznesowych. 
 
 Informacje o produktach stanowią podstawę wszystkich aplikacji zarządzania łańcuchami dostaw i handlu we wszystkich branżach. Odnoszą się do procesów i technologii koncentrujących się na centralnym zarządzaniu informacjami o produktach (na przykład w całych łańcuchach dostaw). Bardzo istotne jest, aby używać wspólnych definicji produktów, dokumentacji, atrybutów i identyfikatorów. W różnych modułach rozwiązania biznesowego informacje i konfiguracje specyficzne dla produktów są konieczne do zarządzania procesami biznesowymi związanymi z konkretnymi produktami, rodzinami produktów lub kategoriami produktów.
 

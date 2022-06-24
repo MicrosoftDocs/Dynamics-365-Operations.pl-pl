@@ -1,8 +1,8 @@
 ---
 title: Personalizowanie środowiska użytkownika
-description: W tym temacie wyjaśniono, jak można spersonalizować aplikację.
+description: W tym artykule wyjaśniono, jak można spersonalizować aplikację.
 author: jasongre
-ms.date: 03/03/2022
+ms.date: 06/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b922d68fcf3e83be57140cf8c54c4bacd2b75f56
-ms.sourcegitcommit: edc887e0526c415466e9691e642028ecd97cdbe7
+ms.openlocfilehash: c326e51dc127d8b82ccef28146ec223ca5169c5e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "8602998"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845450"
 ---
 # <a name="personalize-the-user-experience"></a>Personalizowanie środowiska użytkownika
 
@@ -28,7 +28,7 @@ ms.locfileid: "8602998"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-W tym temacie wyjaśniono, jak można spersonalizować aplikację i omówiono następujące zagadnienia: 
+W tym artykule wyjaśniono, jak można spersonalizować aplikację i omówiono następujące zagadnienia: 
 
 - **Opcje dotyczące całego systemu** — te opcje personalizacji są wykonywane na stronie ustawień i są dostępne dla wszystkich użytkowników. Przykładami są motyw kolorów i strefa czasowa. 
 - **Ograniczony dostęp do personalizacji** — na tym poziomie dostępu akcje użytkownika, które są związane z typowym użytkowaniem strony, są automatycznie zapisywane przez aplikację i przywracane po następnym odwiedzeniu strony. Na przykład aplikacja przechowuje informacje o szerokość kolumn siatki, jeśli je zmienisz, oraz o rozwiniętych lub zwiniętych skróconych kartach. 
@@ -58,7 +58,7 @@ Poniżej znajduje się lista akcji, które przypadają na typowe wykorzystanie s
 
 - **Szerokości kolumn w siatce** — Można dopasować szerokość kolumny w siatce, zaznaczając pasek zmiany rozmiaru znajdujący się po lewej lub po prawej stronie nagłówka kolumny, a następnie przesuwając go w lewo lub prawo, aż kolumna osiągnie żądaną odległość. Aplikacja przechowuje szerokość ustawioną dla kolumny. Następnie następnym razem, gdy otworzysz tę stronę, rozmiar kolumny zostanie zmieniony na tę szerokość.
 - **Stopka siatki i sumy kolumn** – *(Dostępne tylko wtedy, gdy jest włączona nowa kontrola sieci)* Można określić, czy suma ma być wyświetlana u dołu dowolnej kolumny numerycznej w siatce, a także czy stopka siatki powinna być widoczna. Aplikacja przechowuje te preferencje i stosuje je przy następnym otwarciu strony. Aby uzyskać dodatkowe informacje, zobacz [Zdolności siatki](grid-capabilities.md). 
-- **Skrócone karty** — Niektóre strony mają rozwijane sekcje nazywane *skróconymi kartami*. Aplikacja przechowuje informacje o skróconych kartach, który zostały rozwinięte lub zwinięte. Po następnym otwarciu strony te same skrócone karty będą rozwinięte lub zwinięte, zależnie od ostatniej interakcji ze stroną. W niektórych przypadkach można przyspieszyć działanie systemu poprzez zwinięcie skróconej karty, bo aplikacja nie musi pobierać informacji zawartych w tej skróconej karcie, dopóki nie zostanie ona rozwinięta. Jak wyjaśniono dalej w tym temacie, można również zmienić kolejność skróconych kart na stronie.
+- **Skrócone karty** — Niektóre strony mają rozwijane sekcje nazywane *skróconymi kartami*. Aplikacja przechowuje informacje o skróconych kartach, który zostały rozwinięte lub zwinięte. Po następnym otwarciu strony te same skrócone karty będą rozwinięte lub zwinięte, zależnie od ostatniej interakcji ze stroną. W niektórych przypadkach można przyspieszyć działanie systemu poprzez zwinięcie skróconej karty, bo aplikacja nie musi pobierać informacji zawartych w tej skróconej karcie, dopóki nie zostanie ona rozwinięta. Jak wyjaśniono dalej w tym artykule, można również zmienić kolejność skróconych kart na stronie.
 - **Pola informacji** — na niektórych stronach znajduje się okienko **Informacje pokrewne**, w którym są wyświetlane informacje tylko do odczytu, które są związane z bieżącym tematem strony. Każda sekcja w okienku pola **Informacje pokrewne** jest znana jako *Pole informacji*. Można rozwinąć lub zwinąć całe okienko **Informacje pokrewne**, a także rozwinąć lub zwinąć poszczególne Pola informacji. Aplikacja przechowuje te preferencje. Następnie po każdym otwarciu strony zostanie przywrócony stan rozwinięty lub zwinięty okienka **Informacje pokrewne** i poszczególnych Pól informacji, zgodnie z ostatnią interakcją ze stroną. W niektórych przypadkach można przyspieszyć działanie systemu poprzez zwinięcie okienka **Informacje pokrewne** lub pola informacji, bo aplikacja nie musi pobierać informacji zawartych w tym polu informacji, dopóki nie zostanie ona rozwinięta.
 - **Okienek akcji** — *Okienko akcji* pojawia się u góry większości stron. Okienko akcji zawiera przyciski dla wielu czynności, które można wykonywać na bieżącej stronie. Przyciski te często są pogrupowane na kartach. Można *przypiąć* otwarte całe okienko akcji lub ustawić jego domyślne zwinięcie. Po następnym otwarciu strony okienko akcji będzie otwarte lub zwinięte, zależnie od ostatniej interakcji ze stroną. Jeśli przypięto okienko akcji otwarte, zostanie wyświetlona ostatnio użyta karta.
 - **Szybkie filtry** — *Szybki filtr* pojawia się nad wieloma siatkami. Szybki filtr umożliwia filtrowanie siatki na podstawie pojedyńczej wybranej kolumny. Aplikacja przechowuje informacje o kolumnie, według której filtrowano. Następnie następnym razem, gdy otworzysz tę stronę, siatka użyje tej samej kolumny do domyślnego filtrowania. Potem można wciąż filtrować siatkę według innej kolumny.
@@ -173,14 +173,14 @@ Począwszy od wersji 10.0.26, funkcja **Zezwalaj użytkownikom na wybieranie i z
 
 ### <a name="personalizing-your-dashboard"></a>Personalizowanie pulpitu nawigacyjnego
 
-Pulpit nawigacyjny jest często pierwszą stroną, którą widzisz po uruchomieniu aplikacji. Można je personalizować jak każdą inną stronę w systemie, korzystając z tych samych mechanizmów opisanych wcześniej w tym temacie. 
+Pulpit nawigacyjny jest często pierwszą stroną, którą widzisz po uruchomieniu aplikacji. Można je personalizować jak każdą inną stronę w systemie, korzystając z tych samych mechanizmów opisanych wcześniej w tym artykule. 
 
 > [!WARNING]
 > Obecnie Po ukryciu zawartości na pulpicie nawigacyjnym ważne jest bezpośrednie docelowanie kafelka, a nie obszaru wokół niego. Ukrycie grupy wokół kafelka może przynieść nieoczekiwane wyniki, jeśli kolejne kafelki zostaną dodane później lub jeśli system jest przełączany do innego języka.
 
 Jedną z unikatowych możliwości personalizacji dostępnych na pulpicie nawigacyjnym jest możliwość dodawania kafelków. 
 
-- Jeśli funkcja **Aplikacje całostronicowe** jest wyłączona, można dodać nowy kafelek, klikając prawym przyciskiem myszy element na pulpicie nawigacyjnym, a następnie wybierając polecenie **Dodaj obszar roboczy**. W dolnej części pulpitu nawigacyjnego jest tworzony nowy kafelek obszaru roboczego. Ten kafelek obszaru roboczego można zmieniać dowolnie. Można również dodać listy, kafelki oraz linki do obszaru roboczego w sposób opisany w sekcji tego tematu pt. [Dodawanie kafelków, list i łączy do obszaru roboczego](personalize-user-experience.md#adding-tiles-lists-and-links-to-a-workspace).
+- Jeśli funkcja **Aplikacje całostronicowe** jest wyłączona, można dodać nowy kafelek, klikając prawym przyciskiem myszy element na pulpicie nawigacyjnym, a następnie wybierając polecenie **Dodaj obszar roboczy**. W dolnej części pulpitu nawigacyjnego jest tworzony nowy kafelek obszaru roboczego. Ten kafelek obszaru roboczego można zmieniać dowolnie. Można również dodać listy, kafelki oraz linki do obszaru roboczego w sposób opisany w sekcji tego artykułu pt. [Dodawanie kafelków, list i łączy do obszaru roboczego](personalize-user-experience.md#adding-tiles-lists-and-links-to-a-workspace).
 - Jeśli funkcja **Aplikacje całostronicowe** jest wyłączona, można dodać nowy kafelek, klikając prawym przyciskiem myszy element na pulpicie nawigacyjnym, a następnie wybierając polecenie **Dodaj aplikację**. W oknie dialogowym określ, czy chcesz dodać kafelek dla nowego obszaru roboczego czy kafelka z zawartością, który ma zawartość z Power Apps lub z witryny sieci Web. Następnie postępuj zgodnie z instrukcjami, aby skonfigurować wybraną opcję. W dolnej części pulpitu nawigacyjnego jest tworzony nowy kafelek. Aby uzyskać więcej informacji dotyczących dodawania, edytowania, usuwania i udostępniania tych osadzonych aplikacji, zobacz temat [Osadzanie aplikacji kanwy z aplikacji Power Apps](embed-power-apps.md) [Osadzanie aplikacji innych firm](embed-website.md).
 
 ## <a name="sharing-personalizations"></a>Udostępnianie personalizacji
@@ -236,7 +236,7 @@ Innym sposobem udostępniania personalizacji jest eksport i import. Pojedynczy u
 
 #### <a name="export"></a>Eksportowanie
 
-Na ogół można wyeksportować jeden z własnych widoków lub personalizacji, otwierając odpowiednią stronę, otwierając pasek narzędzi **Personalizacja**, a następnie wybierając pozycję **Eksportuj**. Aby uzyskać więcej informacji o pasku narzędzi, zobacz sekcję [Pasek narzędzi personalizacji](#personalization-toolbar) we wcześniejszej części tego tematu. Ewentualnie, jeśli [zapisane widoki](saved-views.md) są włączone, można przejść do opcji **Ustawienia \> Opcje użytkownika \> Personalizacja**, aby wyświetlić listę wszystkich personalizacji w systemie. Stamtąd można wybrać widoki lub personalizacje do eksportu, a następnie wybrać pozycję **Eksportuj**.
+Na ogół można wyeksportować jeden z własnych widoków lub personalizacji, otwierając odpowiednią stronę, otwierając pasek narzędzi **Personalizacja**, a następnie wybierając pozycję **Eksportuj**. Aby uzyskać więcej informacji o pasku narzędzi, zobacz sekcję [Pasek narzędzi personalizacji](#personalization-toolbar) we wcześniejszej części tego artykułu. Ewentualnie, jeśli [zapisane widoki](saved-views.md) są włączone, można przejść do opcji **Ustawienia \> Opcje użytkownika \> Personalizacja**, aby wyświetlić listę wszystkich personalizacji w systemie. Stamtąd można wybrać widoki lub personalizacje do eksportu, a następnie wybrać pozycję **Eksportuj**.
 
 Ponadto administratorzy mogą eksportować personalizacje innych użytkowników, wykonując następujące kroki.
 
@@ -277,7 +277,7 @@ Jeśli zapisane widoki nie są włączone, wykonaj następujące kroki.
 
 Strona **Personalizacja** jest centralnym centrum zarządzania personalizacjami na poziomie organizacyjnym. Zawartość i możliwości na tej stronie zależą od tego, czy włączono funkcję **Zapisane widoki**.
 
-Klienci, którzy włączyli funkcję **Zapisane widoki**, powinni zapoznać się z sekcją „Zarządzanie globalnie widokami” w temacie [Zapisane widoki](saved-views.md).
+Klienci, którzy włączyli funkcję **Zapisane widoki**, powinni zapoznać się z sekcją „Zarządzanie globalnie widokami” w artykule [Zapisane widoki](saved-views.md).
 
 W przypadku użytkowników, którzy jeszcze nie włączyli funskcji [Zapisane widoki](saved-views.md), na tej stronie znajdują się cztery karty:
 
@@ -285,6 +285,9 @@ W przypadku użytkowników, którzy jeszcze nie włączyli funskcji [Zapisane wi
 - **Wyczyść** — Tutaj można wyczyścić wszystkie personalizacje strony lub obszaru roboczego dla jednego lub więcej użytkowników. Najpierw wybierz stronę lub obszar roboczy, aby wyświetlić listę użytkowników, którzy spersonalizowali tę stronę/obszar. Następnie wybierz użytkowników, dla których chcesz wyczyścić personalizację danej strony lub obszaru roboczego, i wybierz opcję **Wyczyść**. Wszystkie personalizacje zastosowane przez wybranych użytkowników do wybranej strony lub obszaru roboczego zostaną usunięte. Tej operacji nie można cofnąć. Jednak jeśli dla strony lub obszaru roboczego zapisano personalizację, można ją ponownie zaimportować.
 - **Użytkownicy** — Wybierz użytkownika, aby wyświetlić listę stron spersonalizowanych przez tę osobę. Następnie można włączyć lub wyłączyć dla wybranego użytkownika możliwość korzystania z personalizacji określonych stron lub całego systemu. Można również zaimportować, wyeksportować lub wyczyścić personalizację dla wybranego użytkownika. Ponadto można zresetować objaśnienia funkcji dla użytkownika. W takim przypadku, jeśli użytkownik wyłączył wszystkie okna wyskakujące, które wprowadzają nowe funkcje, pojawią się ponownie przy następnym napotkaniu tych funkcji przez użytkownika.
 - **System** — ta opcja pozwala tymczasowo wyłączyć personalizacje dla wszystkich użytkowników w systemie. W takim przypadku wszystkie personalizacje są usuwane dla wszystkich użytkowników, a wszystkie strony są resetowane do ich stanu domyślnego. W przypadku ponownego włączenia personalizacji wszystkie personalizacje zostaną zastosowane ponownie. Można również trwale usunąć wszystkie personalizacje dla wszystkich użytkowników w systemie. Nie jest możliwe odzyskanie personalizacji, które zostały usunięte. Dlatego przed wykonaniem tego zadania należy koniecznie wyeksportować wszystkie personalizacje, które potem możesz chcieć zaimportować.
+
+### <a name="service-updates-and-personalization"></a>Aktualizacje i personalizacja usług
+Dane personalizacji nie wymagają wyczyszczenia ani zresetowania podczas przenoszenia do nowej wersji produktu. Personalizacje i zapisane dane widoków będą nadal działać w różnych aktualizacjach. Wyjątkiem mogą być zmiany w samym formularzu, które unieważniają personalizację (na przykład usuniętą kontrolkę) lub zmiany podstawowego zapytania formularza, które zmieniają drzewo podrzędne źródła danych, dzięki czemu nie pasuje już ono do drzewa podrzędnego źródła danych skojarzonego z zapytaniem dotyczącym widoku.
 
 ## <a name="personalizing-inventory-dimensions"></a>Personalizacja wymiarów magazynowych
 

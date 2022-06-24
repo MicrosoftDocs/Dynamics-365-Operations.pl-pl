@@ -1,6 +1,6 @@
 ---
 title: Środki trwałe i zlecenia pracy
-description: W tym temacie opisano zlecenia pracy i środki trwałe w module Zarządzanie składnikami majątku.
+description: W tym artykule opisano zlecenia pracy i środki trwałe w module Zarządzanie składnikami majątku.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ad4af6bb0df557314f844d3e7a6c5fb84a6331d86f16e1bc76150f78ce3039e4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9a6b9cf8327f65371f8362a5729bb32746d900cd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752809"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885994"
 ---
 # <a name="work-orders-and-fixed-assets"></a>Środki trwałe i zlecenia pracy
 

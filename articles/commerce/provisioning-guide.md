@@ -1,6 +1,6 @@
 ---
 title: Ustanowienie środowiska oceny rozwiązania Dynamics 365 Commerce
-description: W tym temacie opisano sposób aprowizowania środowiska oceny aplikacji Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano sposób aprowizowania środowiska oceny aplikacji Microsoft Dynamics 365 Commerce.
 author: psimolin
 ms.date: 12/17/2020
 ms.topic: article
@@ -15,25 +15,25 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c8241c31e82d124398189666c3a1709d25884b8acd9c8f3b1068529cbd216684
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 52a263d1ab833eb688b1049cd4e8c584e8c9a94d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777507"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868916"
 ---
 # <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Ustanowienie środowiska oceny rozwiązania Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano sposób aprowizowania środowiska oceny aplikacji Microsoft Dynamics 365 Commerce.
+W tym artykule opisano sposób aprowizowania środowiska oceny aplikacji Microsoft Dynamics 365 Commerce.
 
-Przed rozpoczęciem zalecane jest wykonanie szybkiego przeglądu tego tematu w celu uzyskania informacji na temat wymaganego procesu.
+Przed rozpoczęciem zalecane jest wykonanie szybkiego przeglądu tego artykułu w celu uzyskania informacji na temat wymaganego procesu.
 
 > [!NOTE]
 > Środowiska testowe w handlu są zazwyczaj niedostępne i są przyznawane partnerom i odbiorcom na żądanie. Aby uzyskać więcej informacji, skontaktuj się z partnerem firmy Microsoft.
 
-Aby pomyślnie aprowizować środowisko oceny rozwiązania Commerce, musisz utworzyć projekt, który ma określoną nazwę i typ produktu. Środowisko i Commerce Scale Unit (CSU) mają także określone parametry, których należy użyć w celu spodziewanego późniejszego aprowizowania na platformie handlu elektronicznego. Instrukcje w tym temacie opisują wszystkie wymagane kroki do zakończenia aprowizowania i parametry, których należy użyć.
+Aby pomyślnie aprowizować środowisko oceny rozwiązania Commerce, musisz utworzyć projekt, który ma określoną nazwę i typ produktu. Środowisko i Commerce Scale Unit (CSU) mają także określone parametry, których należy użyć w celu spodziewanego późniejszego aprowizowania na platformie handlu elektronicznego. Instrukcje w tym artykule opisują wszystkie wymagane kroki do zakończenia aprowizowania i parametry, których należy użyć.
 
 Po pomyślnym aprowizowaniu środowiska oceny rozwiązania Commerce istnieje kilka kroków aprowizacji, które należy wykonać, aby przygotować to środowisko do użytku. Niektóre kroki są opcjonalne, w zależności od aspektów systemu, które mają być oceniane. Opcjonalne kroki można wykonać później.
 

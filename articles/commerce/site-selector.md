@@ -1,6 +1,6 @@
 ---
 title: Moduł selektora witryn
-description: W tym temacie opisano moduł wyboru witryny i opisano, jak dodać go do stron witryny w Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano moduł wyboru witryny i opisano, jak dodać go do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/04/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: a1954f6b2fea35d5138218e6a2a23ab1fd04c8fc
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: ef7753658f878fdf76c6a6beb82ce54e9c12e212
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710310"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884610"
 ---
 # <a name="site-picker-module"></a>Moduł selektora witryn
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano moduł wyboru witryny i opisano, jak dodać go do stron witryny w Microsoft Dynamics 365 Commerce.
+W tym artykule opisano moduł wyboru witryny i opisano, jak dodać go do stron witryny w Microsoft Dynamics 365 Commerce.
 
 Jeśli firma ma różne oddziały między rynkami, regionami i lokalizacjami, użytkownicy witryny muszą w prosty sposób przełączać się między witrynami i wybierać ich preferowaną witrynę w zakresie zakupów. Aby można było uwzględnić ten scenariusz, moduł wyboru witryn umożliwia przeglądanie użytkowników w wielu witrynach. Selektor witryn jest również zalecany w przypadku, gdy w witrynie sklepu internetowego zaimplementowano [funkcję wykrywania i przekierowania geograficznego](geo-detection-redirection.md), aby klienci mieli możliwość pominięcia preferencji witryny wskazanych przez nich za pomocą modułu [wyboru kraju/regionu](country-region-picker-module.md). 
 

@@ -1,6 +1,6 @@
 ---
 title: Planowanie z wyborem zasobu na podstawie zdolności produkcyjnych
-description: W tym temacie opisano wybór zasobów podczas nieskończonego planowania zdolności produkcyjnych, gdy zdolności produkcyjne są określone jako wymagania dotyczące zasobów dla operacji.
+description: W tym artykule opisano wybór zasobów podczas nieskończonego planowania zdolności produkcyjnych, gdy zdolności produkcyjne są określone jako wymagania dotyczące zasobów dla operacji.
 author: t-benebo
 ms.date: 9/3/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: d1ecdfdbdd605fca953e799ec3f6a82d244bc9f7
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 26b2b65a2d565052b188f4d70f0cc0a773cd7b43
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469793"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847970"
 ---
 # <a name="scheduling-with-resource-selection-based-on-capability"></a>Planowanie z wyborem zasobu na podstawie zdolności produkcyjnych
 
 [!include [banner](../../includes/banner.md)]
 
-Określając wymagania dotyczące zasobów dla operacji w marszrucie produkcji, definiujesz, co jest wymagane do wykonania tej operacji. Na przykład operacja może wymagać użycia określonego zasobu lub grupy zasobów albo kombinacji umiejętności lub zdolności produkcyjnych. W tym temacie opisano wybór zasobów podczas nieskończonego planowania zdolności produkcyjnych, gdy zdolności produkcyjne są określone jako wymagania dotyczące zasobów dla operacji.
+Określając wymagania dotyczące zasobów dla operacji w marszrucie produkcji, definiujesz, co jest wymagane do wykonania tej operacji. Na przykład operacja może wymagać użycia określonego zasobu lub grupy zasobów albo kombinacji umiejętności lub zdolności produkcyjnych. W tym artykule opisano wybór zasobów podczas nieskończonego planowania zdolności produkcyjnych, gdy zdolności produkcyjne są określone jako wymagania dotyczące zasobów dla operacji.
 
 ## <a name="turn-on-the-capability-based-scheduling-feature"></a>Włącz funkcję planowania opartego na zdolnościach produkcyjnych
 

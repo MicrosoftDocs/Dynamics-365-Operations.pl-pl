@@ -1,6 +1,6 @@
 ---
 title: Włączanie i używanie udostępniania między kanałami
-description: W tym temacie opisano sposób włączania i używania funkcji udostępniania między kanałami w kreatorze witryn programu Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano sposób włączania i używania funkcji udostępniania między kanałami w kreatorze witryn programu Microsoft Dynamics 365 Commerce.
 author: psimolin
 ms.date: 10/16/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 05614b3ec14bfca9551242e5cf31aee0cb21c39a85150114af446a187fac998a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 637149c088cb87301018868e680537eb58b17852
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742423"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866011"
 ---
 # <a name="enable-and-use-cross-channel-sharing"></a>Włączanie i używanie udostępniania między kanałami
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano sposób włączania i używania funkcji udostępniania między kanałami w kreatorze witryn programu Microsoft Dynamics 365 Commerce.
+W tym artykule opisano sposób włączania i używania funkcji udostępniania między kanałami w kreatorze witryn programu Microsoft Dynamics 365 Commerce.
 
 Dzięki udostępnianiu między kanałami sprzedawcy mogą ponownie wykorzystać i udostępniać zawartość między wieloma kanałami oddziału. Ta funkcja jest przydatna w przypadku, gdy kanały oddziału mają zgodny język podstawowy lub wiele wspólnych elementów zawartości.
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: f87723ebd6684efba8464a7d64c7e1ea99f194eb
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: e52b313e0a00c04edf9003aa6292146936f837d4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102796"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889436"
 ---
 # <a name="location-license-plate-positioning"></a>Stanowisko obiektu o numerze identyfikacyjnym w lokalizacji
 
@@ -28,11 +28,11 @@ Funkcja Stanowisko obiektu o numerze identyfikacyjnym w lokalizacji pozwala spra
 
 Ta funkcja dodaje numer sekwencyjny do każdego numeru identyfikacyjnego, który jest umieszczany w lokalizacji przechowywania. Ten numer sekwencyjny służy do porządkowania numerów identyfikacyjnych w lokalizacji magazynu. Z tego względu funkcja ta inteligentnie obsługuje scenariusze, w których klienci korzystają z systemu stojaków i muszą znać, do celów pobrania, który numer identyfikacyjny jest zwrócony do przodu.
 
-W tym temacie przedstawiono scenariusz, który pokazuje sposób konfigurowania i korzystania z funkcji.
+W tym artykule przedstawiono scenariusz, który pokazuje sposób konfigurowania i korzystania z funkcji.
 
 ## <a name="turn-the-location-license-plate-positioning-feature-on-or-off"></a>Włącz lub wyłącz funkcję pozycjonowania tablic rejestracyjnych lokalizacji
 
-Aby korzystać z funkcji opisanej w tym temacie, w systemie musi być włączona funkcja *Położenie tablicy rejestracyjnej lokalizacji*. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.25, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Położenie tablicy rejestracyjnej lokalizacji* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Aby korzystać z funkcji opisanej w tym artykule, w systemie musi być włączona funkcja *Położenie tablicy rejestracyjnej lokalizacji*. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.25, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Położenie tablicy rejestracyjnej lokalizacji* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="example-scenario"></a>Przykładowy scenariusz
 
@@ -42,7 +42,7 @@ Aby przejść przez ten scenariusz przy użyciu określonych zaprezentowanych pr
 
 ### <a name="set-up-the-feature-for-this-scenario"></a>Skonfiguruj funkcję dla tego scenariusza
 
-Wykonaj poniższe procedury, aby skonfigurować funkcję *Stanowisko obiektu o numerze identyfikacyjnym w lokalizacji* dla scenariusza przedstawionego w tym temacie.
+Wykonaj poniższe procedury, aby skonfigurować funkcję *Stanowisko obiektu o numerze identyfikacyjnym w lokalizacji* dla scenariusza przedstawionego w tym artykule.
 
 #### <a name="location-profiles"></a>Profile lokalizacji
 

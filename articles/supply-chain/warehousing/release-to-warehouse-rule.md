@@ -1,6 +1,6 @@
 ---
 title: Reguła zwolnienia do magazynu
-description: Ten temat zawiera informacje dotyczące funkcji reguł Zwolnienia do magazynu, która zapewnia elastyczność podczas zwalniania do magazynu. Dodaje opcję konfiguracji, która określa, czy system zezwala na zwalnianie częściowo zarezerwowanych wierszy zamówienia.
+description: Ten artykuł zawiera informacje dotyczące funkcji reguł Zwolnienia do magazynu, która zapewnia elastyczność podczas zwalniania do magazynu. Dodaje opcję konfiguracji, która określa, czy system zezwala na zwalnianie częściowo zarezerwowanych wierszy zamówienia.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 5fef1d942f2e9d3467fb8a00c6d89cc5c018a5aa
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c011938438be32e8a3169d90561ab329da32e32a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674625"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895475"
 ---
 # <a name="release-to-warehouse-rule"></a>Reguła zwolnienia do magazynu
 
@@ -78,7 +78,7 @@ Tych scenariuszy można również używać jako wskazówek dotyczących danej fu
 W tym scenariuszu przedstawiono sposób działania funkcji dla magazynów, dla których ustawiono **Wymaganie pełnej rezerwacji**.
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Magazyn \> Magazyny**.
-1. W przypadku magazynu _62_ należy określić wymaganie, aby pole **Rezerwacja zapasów** wymagało **Pełnej rezerwacji**, jak to opisano w [regułach zwalniania do magazynu dla każdej sekcji magazynowej](#set-option-warehouse), wcześniej w tym temacie.
+1. W przypadku magazynu _62_ należy określić wymaganie, aby pole **Rezerwacja zapasów** wymagało **Pełnej rezerwacji**, jak to opisano w [regułach zwalniania do magazynu dla każdej sekcji magazynowej](#set-option-warehouse), wcześniej w tym artykule.
 1. Wybierz kolejno opcje **Sprzedaż i marketing \> Zamówienia sprzedaży \> Wszystkie zamówienia sprzedaży**.
 1. Wybierz pozycję **Nowe**, aby utworzyć nowe zamówienie sprzedaży.
 1. W wyświetlonym oknie dialogowym **Utwórz zamówienie sprzedaży** można ustawić następujące wartości:
@@ -112,7 +112,7 @@ W tym scenariuszu przedstawiono sposób działania funkcji dla magazynów, dla k
 W tym scenariuszu przedstawiono sposób działania funkcji dla magazynów, dla których ustawiono **Zezwolenie częściowe**.
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Magazyn \> Magazyny**.
-1. W przypadku magazynu _62_ należy określić wymaganie, aby pole **Rezerwacja zapasów** zezwalało na **Częściowe zwolnienie**, jak to opisano w [regułach zwalniania do magazynu dla każdej sekcji magazynowej](#set-option-warehouse), wcześniej w tym temacie.
+1. W przypadku magazynu _62_ należy określić wymaganie, aby pole **Rezerwacja zapasów** zezwalało na **Częściowe zwolnienie**, jak to opisano w [regułach zwalniania do magazynu dla każdej sekcji magazynowej](#set-option-warehouse), wcześniej w tym artykule.
 1. Podobnie jak w [poprzednim scenariuszu](#scenario1), należy przejść do **Zamówień sprzedaży i marketingu \> Zamówień sprzedaży \> Wszystkich zamówień sprzedaży** i utworzyć zamówienie sprzedaży dla konta odbiorcy _US-004_ z magazynu _62_. Dodaj następujące dwa wiersze zamówienia:
 
     - **Wiersz 1:** Ustaw pole **Kod towaru** na _A0001_, natomiast pole **Ilość** ustaw na _2_, a pole **Jednostka** na _Pcs_.

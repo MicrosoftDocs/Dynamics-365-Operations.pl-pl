@@ -1,6 +1,6 @@
 ---
 title: Oferty zapieczętowane na potrzeby ZO
-description: W tym temacie opisano sposób konfigurowania zapieczętowanego przetargu w celu zachowania odpowiedzi na oferty dostawcy w tajemnicy, dopóki nie zostaną one rozpieczętowane przez personel działu zakupów.
+description: W tym artykule opisano sposób konfigurowania zapieczętowanego przetargu w celu zachowania odpowiedzi na oferty dostawcy w tajemnicy, dopóki nie zostaną one rozpieczętowane przez personel działu zakupów.
 author: GalynaFedorova
 ms.date: 08/02/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: dfc19646d6724627c8a25bcfc8a6b2a70a73c261
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 40f1735d7efa5131b1462963758b6b48eec78fea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675157"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890894"
 ---
 # <a name="sealed-bidding-for-rfqs"></a>Oferty zapieczętowane na potrzeby ZO
 
@@ -148,7 +148,7 @@ Proces tworzenia przypadku ZO do zapieczętowanego przetargu jest prawie taki sa
 Przypadki ZO dla zapieczętowanego przetargu muszą mieć wartość **Typ oferty** równą *Zapieczętowane*. Istnieją trzy sposoby przypisania tej wartości do przypadku ZO:
 
 - Ustaw wartość bezpośrednio w przypadku ZO po jego utworzeniu.
-- Zdefiniuj zapieczętowane przetargi jako domyślny typ stawki dla wszystkich przypadków ZO w parametrach zaopatrzenia i sourcingu. (Zobacz sekcję [Ustawianie domyślnego typu oferty](#set-default-bid-type) wcześniej w tym temacie).
+- Zdefiniuj zapieczętowane przetargi jako domyślny typ stawki dla wszystkich przypadków ZO w parametrach zaopatrzenia i sourcingu. (Zobacz sekcję [Ustawianie domyślnego typu oferty](#set-default-bid-type) wcześniej w tym artykule).
 - Podczas tworzenia nowej sprawy ZO wybierz typ zdobywania zamówień skonfigurowany dla zapieczętowanych przetargów. (Zobacz sekcję [Ustawianie domyślnego typu oferty](#set-default-bid-type)).
 
 W przypadku zapieczętowanego przetargu **data i godzina wygaśnięcia przypadku ZO** określa, kiedy złożone oferty mogą zostać rozpieczętowane. Wartość **daty i godziny wygaśnięcia** w każdym wierszu będzie zgodna z wartością w nagłówku.

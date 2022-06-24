@@ -1,6 +1,6 @@
 ---
 title: Korzystanie ze źródeł danych DATA COLLECTION w formatach raportowania elektronicznego
-description: W tym temacie wyjaśniono, jak można używać źródeł danych DATA COLLECTION w formatach raportowania elektronicznego (ER).
+description: W tym artykule wyjaśniono, jak można używać źródeł danych DATA COLLECTION w formatach raportowania elektronicznego (ER).
 author: NickSelin
 ms.date: 08/23/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-01-01
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: 185fb9a33cb4cc655dfdf640b4c239d617426c64
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 7591bed5d01ce2c2f434f0e7c81e441eda98483e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323908"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883854"
 ---
 # <a name="use-data-collection-data-sources-in-electronic-reporting-formats"></a>Korzystanie ze źródeł danych DATA COLLECTION w formatach raportowania elektronicznego
 
@@ -65,7 +65,7 @@ Zapoznaj się z następującym przykładem, aby dowiedzieć się więcej.
 
 W tym przykładzie pokazano, w jaki sposób użytkownik występujący w roli Administrator systemu lub Konsultant funkcjonalny raportowania elektronicznego może skonfigurować format raportowania elektronicznego, który ma źródło danych DATA COLLECTION używane do obliczania sum bieżących i zbierania sumowanych wartości.
 
-Zadania przedstawione w tym przykładzie można wykonać w kontekście firmy USMF w Microsoft Dynamics 365 Finance.
+Zadania przedstawione w tym przykładzie można wykonać w kontekście firmy USMF w aplikacji Microsoft Dynamics 365 Finance.
 
 ### <a name="upload-and-use-the-provided-er-solution"></a>Przekazywanie i używanie dostarczonego rozwiązania ER
 

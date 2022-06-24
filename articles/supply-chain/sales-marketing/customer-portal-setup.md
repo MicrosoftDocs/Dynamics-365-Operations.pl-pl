@@ -1,6 +1,6 @@
 ---
 title: Instalowanie, konfigurowanie i aktualizowanie portalu klienta
-description: W tym temacie przedstawiono szczegółowe informacje na temat licencjonowania i instrukcje konfiguracji dla portalu klienta.
+description: W tym artykule przedstawiono szczegółowe informacje na temat licencjonowania i instrukcje konfiguracji dla portalu klienta.
 author: Henrikan
 ms.date: 06/08/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 187efe1372bf2400241f3d65751189247c001447
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 8344212e66cb57ea8c9d4e8c2cdfbf022bc199c5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060620"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850591"
 ---
 # <a name="install-set-up-and-update-the-customer-portal"></a>Instalowanie, konfigurowanie i aktualizowanie portalu klienta
 

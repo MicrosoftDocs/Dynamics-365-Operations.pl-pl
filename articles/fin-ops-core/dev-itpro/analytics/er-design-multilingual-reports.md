@@ -1,8 +1,8 @@
 ---
 title: Projektowanie raportów wielojęzycznych w module raportowanie elektroniczne
-description: W tym temacie wyjaśniono, jak można stosować etykiety raportów elektronicznych (ER) do projektowania i generowania raportów wielojęzycznych.
+description: W tym artykule wyjaśniono, jak można stosować etykiety raportów elektronicznych (ER) do projektowania i generowania raportów wielojęzycznych.
 author: NickSelin
-ms.date: 04/28/2022
+ms.date: 05/31/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aa8297d4f5c56a7a20561b1a90c5852e65dbff31
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: c042d609d68544aa4be5d707109a15b2ab8d422c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811615"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845752"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Projektowanie raportów wielojęzycznych w module raportowanie elektroniczne
 
@@ -142,6 +142,9 @@ Jeśli w ten sposób skonfigurujesz format ER, raport zostanie wygenerowany przy
 
 Jeśli etykieta, której dotyczy odwołanie, nie ma tłumaczenia dla języka kontekstu formatu, w zamian zostanie użyty tekst etykiety w języku EN-US.
 
+> [!TIP]
+> Aby określić sposób generowania pliku wychodzącego, można użyć elementu **FOLDER** i różnych typów składników **FILE** w edytowalnym formacie ER. Aby nazwać wygenerowany plik, skonfiguruj [wyrażenie](er-formula-language.md) ER dla parametru **Nazwa pliku** składnika. Etykiet można używać w skonfigurowanym wyrażeniu. Ponieważ parametr **Nazwa pliku** jest domyślnym parametrem językowym, tekst wszystkich etykiet, do których odwołują się w tym wyrażeniu, jest udostępniany w domyślnym języku EN-US w czasie wykonywania. Jednak w wersji 10.0.28 i nowszych można włączyć funkcję **Zastosuj preferencje językowe do wyrażenia „Nazwa pliku”**. Wyrażenie **Nazwa pliku** uwzględnia parametr **Preferencje językowe** podczas przetwarzania.
+
 ## <a name="language"></a>Język
 
 ER obsługuje różne sposoby określania języka wygenerowanego raportu. W polu **Preferencje językowe** na karcie **Format** można wybrać następujące wartości:
@@ -198,7 +201,7 @@ Konfigurację składnika ER należy wykonać w wersji roboczej konfiguracji ER, 
 
 ![Strona konfiguracji ER zapewnia dostęp do wersji konfiguracji w wersji roboczej.](./media/er-multilingual-labels-configurations.png)
 
-Jak opisano wcześniej w tym temacie, można dodać wymagane etykiety ER do edytowalnego składnika ER. W ten sposób można określić tekst etykiet ER w języku EN-US. Następnie można wyeksportować etykiety składnika ER za pomocą wbudowanej funkcji ER. Wybierz wersję roboczą konfiguracji ER, która zawiera edytowalny składnik ER, a następnie wybierz **Wymiana \> Eksportuj etykiety**.
+Jak opisano wcześniej w tym artykule, można dodać wymagane etykiety ER do edytowalnego składnika ER. W ten sposób można określić tekst etykiet ER w języku EN-US. Następnie można wyeksportować etykiety składnika ER za pomocą wbudowanej funkcji ER. Wybierz wersję roboczą konfiguracji ER, która zawiera edytowalny składnik ER, a następnie wybierz **Wymiana \> Eksportuj etykiety**.
 
 ![Strona konfiguracji ER umożliwiająca eksportowanie etykiet ER z wybranej wersji konfiguracji.](./media/er-multilingual-labels-export.png)
 
@@ -229,7 +232,7 @@ Wersja ER kontroluje przypisywanie etykiet do dowolnego atrybutu w składniku ER
 
 Wbudowana funkcja ER [LISTOFFIELDS](er-functions-list-listoffields.md) może uzyskiwać dostęp do etykiet ER skonfigurowanych dla niektórych elementów składników ER.
 
-Zgodnie z opisem opisanym wcześniej w tym temacie atrybuty **Etykieta** i **Opis** dla wartości wszystkich [modeli](#LinkModelEnum) lub [formatów](#LinkFormatEnum) ER wartości wyliczania można połączyć z etykietą ER dostępną w odpowiednim składniku ER. Istnieje możliwość skonfigurowania wyrażenia ER, w którym wywoływana jest funkcja **LISTOFFIELDS** przy użyciu wyliczenia ER jako argumentu. To wyrażenie zwraca listę zawierającą rekord dla każdej wartości wyliczenia ER, który został zdefiniowany jako argument tej funkcji. Każdy rekord zawiera wartość etykiety ER, która jest połączona z wartością wyliczenia ER:
+Zgodnie z opisem opisanym wcześniej w tym artykule atrybuty **Etykieta** i **Opis** dla wartości wszystkich [modeli](#LinkModelEnum) lub [formatów](#LinkFormatEnum) ER wartości wyliczania można połączyć z etykietą ER dostępną w odpowiednim składniku ER. Istnieje możliwość skonfigurowania wyrażenia ER, w którym wywoływana jest funkcja **LISTOFFIELDS** przy użyciu wyliczenia ER jako argumentu. To wyrażenie zwraca listę zawierającą rekord dla każdej wartości wyliczenia ER, który został zdefiniowany jako argument tej funkcji. Każdy rekord zawiera wartość etykiety ER, która jest połączona z wartością wyliczenia ER:
 
 - Wartość etykiety ER połączona z atrybutami **Etykiety** jest przechowywana w polu **Etykieta** zwróconego rekordu.
 - Wartość etykiety ER połączona z atrybutami **Opisu** jest przechowywana w polu **Opis** zwróconego rekordu.

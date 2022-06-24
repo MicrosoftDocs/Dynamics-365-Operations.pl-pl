@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie kont księgowania wynajmu
-description: W tym temacie wymieniono konta księgowania wymagane dla transakcji wynajmu składników majątku oraz objaśniono sposób definiowania kont księgowania na stronie Parametry księgowania wynajmu.
+description: W tym artykule wymieniono konta księgowania wymagane dla transakcji wynajmu składników majątku oraz objaśniono sposób definiowania kont księgowania na stronie Parametry księgowania wynajmu.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 147d8cd93f9664039b2004b878dcaff96c8b6ce6
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 6e3a0d8dd3bb3e58ca10b2efce0cc88a2f48d2de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726386"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859922"
 ---
 # <a name="set-up-lease-posting-accounts"></a>Konfigurowanie kont księgowania wynajmu
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wymieniono konta księgowania wymagane dla transakcji wynajmu składników majątku oraz objaśniono sposób definiowania kont księgowania na stronie **Parametry księgowania wynajmu**.
+W tym artykule wymieniono konta księgowania wymagane dla transakcji wynajmu składników majątku oraz objaśniono sposób definiowania kont księgowania na stronie **Parametry księgowania wynajmu**.
 
 Aby spełnić wymagania standardów Accounting Standards Codification Topic 842 (ASC 842) i Międzynarodowy Standard Sprawozdawczości Finansowej nr 16 (MSSF 16), może być konieczne utworzenie różnych kont w planie kont. Jednak konta tworzone zgodnie ze standardami ASC i MSSF nie są kontami środków trwałych. Na mocy regulacji ASC 842 składnik majątku z prawem do użytkowania (PDU) jest odnotowywany w transakcjach leasingu finansowego i operacyjnego. Te formy wynajmu są niezależne od środków trwałych. (Składnikiem majątku z PDU nadal można zarządzać za pomocą modułu Środki trwałe).
 

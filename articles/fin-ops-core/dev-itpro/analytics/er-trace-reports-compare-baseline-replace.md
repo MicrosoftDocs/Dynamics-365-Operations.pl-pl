@@ -1,6 +1,6 @@
 ---
 title: Usprawnienie śledzenia wyników generowanych raportów ER w celu porównania z wartościami bazowymi
-description: W tym temacie opisano usprawnienia podstawowej funkcji ER w wersji Microsoft Dynamics 365 for Finance and Operations 10.0.3 (czerwiec 2019).
+description: W tym artykule opisano usprawnienia podstawowej funkcji ER w wersji Microsoft Dynamics 365 for Finance and Operations 10.0.3 (czerwiec 2019).
 author: NickSelin
 ms.date: 06/19/2019
 ms.topic: article
@@ -14,22 +14,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: b6e8299dd57730486c731cd38578bd5ff6b8a1754f145432e300c1217c6dd640
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3b9ac7dcac4d020759d04fec75e17c43ed627e25
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760757"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847409"
 ---
 # <a name="improve-tracing-the-results-of-generated-er-reports-to-compare-with-baseline-values"></a>Usprawnienie śledzenia wyników generowanych raportów ER w celu porównania z wartościami bazowymi
 
 [!include[banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, w jaki sposób można poprawić korzystanie z podstawowej funkcji platformy Elektroniczne raportowanie (ER). Te poprawki są dostępne w Microsoft Dynamics 365 for Finance and Operations wersja 10.0.3 (czerwiec 2019) i późniejsze.
+W tym artykule wyjaśniono, w jaki sposób można poprawić korzystanie z podstawowej funkcji platformy Elektroniczne raportowanie (ER). Te poprawki są dostępne w Microsoft Dynamics 365 for Finance and Operations wersja 10.0.3 (czerwiec 2019) i późniejsze.
 
 ## <a name="automate-the-setting-of-baseline-rules"></a>Zautomatyzuj ustawianie zasad podstawowych
 
-Temat [Śledź wygenerowane wyniki raportu i porównaj je z wartościami bazowymi](er-trace-reports-compare-baseline.md) wyjaśnia, jak skonfigurować strukturę ER do zbierania informacji o wykonaniach w formacie ER i oceny wyników tych egzekucji. Przykład w tym temacie pokazuje kroki, które należy wykonać.
+Artykuł [Śledź wygenerowane wyniki raportu i porównaj je z wartościami bazowymi](er-trace-reports-compare-baseline.md) wyjaśnia, jak skonfigurować strukturę ER do zbierania informacji o wykonaniach w formacie ER i oceny wyników tych egzekucji. Przykład w tym artykule pokazuje kroki, które należy wykonać.
 
 Oto kilka najważniejszych kroków:
 
@@ -45,7 +45,7 @@ Oto kilka najważniejszych kroków:
 
 ## <a name="example-automate-the-setting-of-baseline-rules"></a>Przykład: Zautomatyzuj ustawianie zasad linii bazowej
 
-Żeby wykonać te kroki, musisz najpierw wypełnić procedury w temacie [Śledź wygenerowane wyniki raportu i porównaj je z wartościami bazowymi](er-trace-reports-compare-baseline.md) aż do "Dodaj nową linię bazową dla wyznaczonego formatu ER".
+Żeby wykonać te kroki, musisz najpierw wypełnić procedury w artykule [Śledź wygenerowane wyniki raportu i porównaj je z wartościami bazowymi](er-trace-reports-compare-baseline.md) aż do "Dodaj nową linię bazową dla wyznaczonego formatu ER".
 
 ### <a name="review-added-baseline"></a>Przeglądnij dodaną linię bazową
 
@@ -80,7 +80,7 @@ Linia bazowa została dodana do **Format do nauki podstawowych linii ER** format
 
 ### <a name="run-the-format"></a>Uruchom format
 
-Jesteś gotowy zakończyć pozostałe kroki w [Śledź wygenerowane wyniki raportu i porównaj je z wartościami bazowymi](er-trace-reports-compare-baseline.md) począwszy od „Uruchom zaprojektowany format ER i przejrzyj dziennik, aby przeanalizować wyniki”.
+Możesz traz zakończyć pozostałe kroki w artykule [Śledź wygenerowane wyniki raportu i porównaj je z wartościami bazowymi](er-trace-reports-compare-baseline.md), począwszy od „Uruchom zaprojektowany format ER i przejrzyj dziennik, aby przeanalizować wyniki”.
 
 > [!NOTE]
 > Po usunięciu automatycznie dodanej reguły linii bazowej w **linie bazowe** na karcie skróconej przywoływany załącznik nie jest automatycznie usuwany.
@@ -91,7 +91,7 @@ Skonfiguruj linię bazową, aby ignorować stare zmieniające się części wyj�
 
 ## <a name="example-configure-the-baseline-so-that-it-ignores-constantly-changing-parts-of-the-er-output"></a>Przykład: Skonfiguruj linię bazową, tak aby ignorowała stale zmieniające się części wyjścia ER
 
-Żeby wykonać te kroki, musisz najpierw wypełnić procedury w przykładzie w [Śledź wygenerowane wyniki raportu i porównaj je z wartościami bazowymi](er-trace-reports-compare-baseline.md).
+Żeby wykonać te kroki, musisz najpierw wypełnić procedury w przykładzie w artykule [Śledź wygenerowane wyniki raportu i porównaj je z wartościami bazowymi](er-trace-reports-compare-baseline.md).
 
 ### <a name="modify-a-configured-er-format"></a>Zmodyfikuj skonfigurowany format ER
 
@@ -142,7 +142,7 @@ Wybrany komponent formatu ER został dodany do listy komponentów na skróconej 
 
 ### <a name="make-a-new-baseline-rule"></a>Utwórz nową zasadę bazową
 
-Wykonaj kroki opisane w sekcji „Przykład: zautomatyzuj ustawienie zasad podstawowych” wcześniej w tym temacie. Powiadomienie ostrzega, że plik wychodzący został wygenerowany przy użyciu ustawień linii bazowej i wystąpiła wymuszona wymiana powiązań formatu.
+Wykonaj kroki opisane w sekcji „Przykład: zautomatyzuj ustawienie zasad podstawowych” wcześniej w tym artykule. Powiadomienie ostrzega, że plik wychodzący został wygenerowany przy użyciu ustawień linii bazowej i wystąpiła wymuszona wymiana powiązań formatu.
 
 ![Strona Notyfikacja na stronie konfiguracji.](media/GER-BaselineSample-FormatRunToMakeBaselineFile4.PNG "Zrzut ekranu powiadomienia na stronie konfiguracji")
 

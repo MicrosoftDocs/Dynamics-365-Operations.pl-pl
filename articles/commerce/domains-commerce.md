@@ -1,6 +1,6 @@
 ---
 title: Domeny w rozwiązaniu Dynamics 365 Commerce
-description: W tym temacie opisano sposób obsługiwania domen w rozwiązaniach Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano sposób obsługiwania domen w rozwiązaniach Microsoft Dynamics 365 Commerce.
 author: BrShoo
 ms.date: 05/10/2022
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: aab5e983b42aea7d8eb4f198f033634d4663f278
-ms.sourcegitcommit: 7181a022739d6107a75d84546c3379c23f722034
+ms.openlocfilehash: c48c8bd57d90a8c7d47bfa4263cd9ab38002629b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8737353"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848961"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domeny w rozwiązaniu Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano sposób obsługiwania domen w rozwiązaniach Microsoft Dynamics 365 Commerce.
+W tym artykule opisano sposób obsługiwania domen w rozwiązaniach Microsoft Dynamics 365 Commerce.
 
-Domeny są adresami sieci Web używanymi do nawigacji do witryn Dynamics 365 Commerce w przeglądarce sieciowej. Zarządzanie domeną można kontrolować za pomocą wybranego dostawcy DNS (Domain Name Server). Konstruktorzy witryn odwołują się domeny w ramach narzędzia tworzenia strony Dynamics 365 Commerce, aby koordynować, w jaki sposób witryna będzie dostępna po opublikowaniu. W tym temacie opisano sposób obsługi domen i odwoływanie się do nich w trakcie całego cyklu życia modułu tworzenia stron w Commerce i ich uruchamiania.
+Domeny są adresami sieci Web używanymi do nawigacji do witryn Dynamics 365 Commerce w przeglądarce sieciowej. Zarządzanie domeną można kontrolować za pomocą wybranego dostawcy DNS (Domain Name Server). Konstruktorzy witryn odwołują się domeny w ramach narzędzia tworzenia strony Dynamics 365 Commerce, aby koordynować, w jaki sposób witryna będzie dostępna po opublikowaniu. W tym artykule opisano sposób obsługi domen i odwoływanie się do nich w trakcie całego cyklu życia modułu tworzenia stron w Commerce i ich uruchamiania.
 
 > [!NOTE]
 > Od 6 maja 2022 r. wszystkie środowiska utworzone w Dynamics 365 Commerce będą udostępniane w `.dynamics365commerce.ms`, zastępując wcześniejszy wzorzec `.commerce.dynamics.com`. Istniejące środowiska, które są w tej domenie `.commerce.dynamics.com`, będą nadal działać.

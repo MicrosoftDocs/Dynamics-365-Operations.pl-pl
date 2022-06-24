@@ -1,6 +1,6 @@
 ---
 title: Wyświetlanie wyników automatyzacji faktur od dostawców (wersja zapoznawcza)
-description: W tym temacie opisano sposób wyświetlania stanu faktur od dostawców w zautomatyzowanym procesie przesyłania do przepływu pracy.
+description: W tym artykule opisano sposób wyświetlania stanu faktur od dostawców w zautomatyzowanym procesie przesyłania do przepływu pracy.
 author: abruer
 ms.date: 10/16/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-09-08
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1700f4c4748dc12bf000b25c0d51bc6ed069a97b
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: dd9b74d2ed34399aff455563504c296a5a25a874
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717257"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895175"
 ---
 # <a name="view-vendor-invoice-automation-results"></a>Wyświetlanie wyników automatyzacji faktur od dostawców
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób wyświetlania stanu faktur od dostawców w zautomatyzowanym procesie przesyłania do przepływu pracy. Szczegóły historii automatyzacji są obsługiwane dla każdej importowanej faktury od dostawcy. W zależności od wykonywanych przez użytkownika procesów biznesowych na stronie **Oczekujące faktury od dostawcy** jest wyświetlana wartość **Stan automatycznego dopasowania odbioru** i **Automatyczne przesyłanie do stanu przepływu pracy**. Istnieje możliwość wyświetlenia szczegółów i utworzenia planu skoncentrowanego na fakturach, które nie wykonały zautomatyzowanego kroku. Po rozwiązaniu tego problemu można wznowić proces zautomatyzowany dla importowanej faktury.
+W tym artykule opisano sposób wyświetlania stanu faktur od dostawców w zautomatyzowanym procesie przesyłania do przepływu pracy. Szczegóły historii automatyzacji są obsługiwane dla każdej importowanej faktury od dostawcy. W zależności od wykonywanych przez użytkownika procesów biznesowych na stronie **Oczekujące faktury od dostawcy** jest wyświetlana wartość **Stan automatycznego dopasowania odbioru** i **Automatyczne przesyłanie do stanu przepływu pracy**. Istnieje możliwość wyświetlenia szczegółów i utworzenia planu skoncentrowanego na fakturach, które nie wykonały zautomatyzowanego kroku. Po rozwiązaniu tego problemu można wznowić proces zautomatyzowany dla importowanej faktury.
 
 Aby można było edytować przesłaną fakturę, należy wstrzymać automatyczne przetwarzanie. Jeśli faktura w procesie zautomatyzowanego przesyłania do przepływu pracy musi zostać wstrzymana, należy w polu **Uwzględnij w zautomatyzowanym przetwarzaniu** ustaw wartość **Nie** na stronie **Faktury od dostawcy**. Automatyzacja nie zostanie uruchamiana, dopóki w polu **Przetwarzanie automatyczne** nie zostanie ustawiona wartość **Tak**. Dalszą automatyzację faktury można wstrzymać, jeśli jeszcze nie znajduje się w systemie przepływu pracy i nie jest używana przez proces zautomatyzowany.
 

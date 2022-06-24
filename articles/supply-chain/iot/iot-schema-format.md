@@ -1,6 +1,6 @@
 ---
 title: Formaty schematów komunikatów centrum IoT
-description: W tym temacie wyjaśniono, jak należy zaprojektować schemat komunikatu, który może być wyświetlany w analizie IoT.
+description: W tym artykule wyjaśniono, jak należy zaprojektować schemat komunikatu, który może być wyświetlany w analizie IoT.
 author: johanhoffmann
 ms.date: 04/25/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-25
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 60d5bc4eacdd7e7d713490998bd1d20c9271ad02
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 705a2150042f9b65f1f4528d6f2699f7306996f5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8673950"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887465"
 ---
 # <a name="schema-formats-for-iot-hub-messages"></a>Formaty schematów komunikatów centrum IoT
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak należy zaprojektować schemat komunikatu, który może być wyświetlany w analizie IoT.
+W tym artykule wyjaśniono, jak należy zaprojektować schemat komunikatu, który może być wyświetlany w analizie IoT.
 
 ## <a name="message-requirements"></a>Wymagania komunikatu
 

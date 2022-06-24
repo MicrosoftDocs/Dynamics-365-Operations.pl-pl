@@ -1,6 +1,6 @@
 ---
 title: Zwiększ wydajność rozwiązań ER poprzez zredukowanie liczby pól tabeli pobieranych w czasie działania.
-description: Ten temat wyjaśnia, jak możesz poprawić wydajność, redukując liczbę pól tabeli pobieranych w czasie wykonywania zadania.
+description: Ten artykuł wyjaśnia, jak możesz poprawić wydajność, redukując liczbę pól tabeli pobieranych w czasie wykonywania zadania.
 author: NickSelin
 ms.date: 05/12/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: dd192a7718ac4fd8bcb636ede6c005ca29ee5f08
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: eb76c415da87d421b8135a93b84f4e905f01e70d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811961"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847459"
 ---
 # <a name="improve-performance-of-er-solutions-by-reducing-the-number-of-table-fields-that-are-fetched-at-runtime"></a>Zwiększ wydajność rozwiązań ER poprzez zredukowanie liczby pól tabeli pobieranych w czasie działania.
 
@@ -28,7 +28,7 @@ ms.locfileid: "8811961"
 
 Można zaprojektować [formaty](er-overview-components.md#format-components-for-outgoing-electronic-documents) [raportów elektronicznych](general-electronic-reporting.md) ER w taki sposób, aby generowały wychodzące dokumenty w różnych formatach. Podczas generowania dokumentu format ER wywołuje źródła danych, które zostały skonfigurowane w odpowiadającym im [mapowaniu modelu](er-overview-components.md#model-mapping-component) ER. Aby skonfigurować dostęp do tabel aplikacji, kwerend lub encji, można skorzystać z Awaryjnych źródeł danych typu *Zapisy tabeli*. Domyślnie źródło danych typu *Zapisy w tabeli* pobiera wartości wszystkich pól w żądanych rekordach. Możesz jednak skonfigurować ten typ źródła danych tak, aby pobierał tylko te wartości pól, które są wymagane dla działającego formatu ER. Taka konfiguracja pomaga zmniejszyć zużycie pamięci przez serwer aplikacji, który wykonuje pobieranie danych i dalsze buforowanie rekordów.
 
-Aby dowiedzieć się więcej o tym, jak ograniczyć listę pobieranych pól w źródłach danych typu *rekordy tabeli*, wykonaj przykład w tym temacie.
+Aby dowiedzieć się więcej o tym, jak ograniczyć listę pobieranych pól w źródłach danych typu *rekordy tabeli*, wykonaj przykład w tym artykule.
 
 ## <a name="example-reduce-the-number-of-table-fields-that-are-fetched-at-runtime"></a>Przykład: Zmniejsz liczbę pól tabeli, które są pobierane w czasie wykonywania zadania
 
@@ -49,7 +49,7 @@ Wykonaj kroki opisane w sekcji [Konfigurowanie platformy ER](er-quick-start2-cus
 
 ### <a name="import-the-sample-er-configurations"></a>Importuj przykładowe konfiguracje formatu ER
 
-Jeśli nie ukończyłeś jeszcze przykładu z tematu [Zaprojektuj nowe rozwiązanie ER do drukowania niestandardowego raportu](er-quick-start1-new-solution.md), pobierz i przechowuj lokalnie pliki XML dla następujących konfiguracji dostarczonego rozwiązania ER.
+Jeśli nie ukończyłeś jeszcze przykładu z artykułu [Zaprojektuj nowe rozwiązanie ER do drukowania niestandardowego raportu](er-quick-start1-new-solution.md), pobierz i przechowuj lokalnie pliki XML dla następujących konfiguracji dostarczonego rozwiązania ER.
 
 | Opis zawartości            | Nazwa pliku |
 |--------------------------------|-----------|

@@ -1,6 +1,6 @@
 ---
 title: Włączanie integracji Dynamics 365 Commerce i Microsoft Teams
-description: W tym temacie opisano sposób włączania integracji Microsoft Dynamics 365 Commerce i Microsoft Teams.
+description: W tym artykule opisano sposób włączania integracji Microsoft Dynamics 365 Commerce i Microsoft Teams.
 author: gvrmohanreddy
 ms.date: 02/17/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: dfada577ab97fdb9912c22d2399529f934b25d54
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 505e3854818e4d5b73fc1a22724be16036300c3b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695741"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872835"
 ---
 # <a name="enable-dynamics-365-commerce-and-microsoft-teams-integration"></a>Włączanie integracji Dynamics 365 Commerce i Microsoft Teams
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano sposób włączania integracji Microsoft Dynamics 365 Commerce i Microsoft Teams.
+W tym artykule opisano sposób włączania integracji Microsoft Dynamics 365 Commerce i Microsoft Teams.
 
 Aby wyposażyć Teams w informacje z Dynamics 365 Commerce i zsynchronizować funkcje zarządzania zadaniami między Teams i aplikacją punktu sprzedaży (POS), musisz włączyć funkcje integracji w centrali Commerce.
 

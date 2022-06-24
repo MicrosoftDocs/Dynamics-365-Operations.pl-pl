@@ -1,6 +1,6 @@
 ---
 title: Zarządzanie potrąceniami przy użyciu pulpitu potrącenia
-description: W tym temacie opisano sposób korzystania z pulpitu potrącenia do przetwarzania płatności klientów, które zawierają potrącenia.
+description: W tym artykule opisano sposób korzystania z pulpitu potrącenia do przetwarzania płatności klientów, które zawierają potrącenia.
 author: sherry-zheng
 ms.date: 08/02/2021
 ms.topic: article
@@ -11,23 +11,23 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: bf98529176fbed368708ea925f542a70f2936037
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 607ad528b56d1f0c9a78e113f67c920cdae6e620
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500409"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873616"
 ---
 # <a name="manage-deductions-using-the-deduction-workbench"></a>Zarządzanie potrąceniami przy użyciu pulpitu potrącenia
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób korzystania z pulpitu potrącenia do przetwarzania płatności klientów, które zawierają potrącenia.
+W tym artykule opisano sposób korzystania z pulpitu potrącenia do przetwarzania płatności klientów, które zawierają potrącenia.
 
 Klient, któremu należny jest rabat, może zrezygnować z czekania na wypłatę rabatu. Zamiast tego klient może wysłać płatność, łącznie z potrąceniem kwoty rabatu. W celu obsługi tego typu transakcji pulpit potrąceń umożliwia dopasowanie potrąceń do otwartych transakcji kredytowych, potrąceń podzielonych, odmów potrąceń i odpisów potrąceń.
 
 > [!NOTE]
-> Pulpit nawigacyjny potrącenia jest częścią funkcji sprzedaży i marketingu w aplikacji Microsoft Dynamics 365 Supply Chain Management przez długi czas. Jednak teraz został on ulepszony tak, że działa również z nowszym modułem **zarządzania rabatami**. W tym temacie opisano sposób używania zarówno starszych funkcji, jak i funkcji zarządzania rabatami na pulpicie nawigacyjnym potrąceń. Jeśli jednak nie [włączysz modułu **zarządzania rabatami** dla swojego systemu](rebate-management-enable.md), niektóre funkcje opisane w tym miejscu nie będą dostępne.
+> Pulpit nawigacyjny potrącenia jest częścią funkcji sprzedaży i marketingu w aplikacji Microsoft Dynamics 365 Supply Chain Management przez długi czas. Jednak teraz został on ulepszony tak, że działa również z nowszym modułem **zarządzania rabatami**. W tym artykule opisano sposób używania zarówno starszych funkcji, jak i funkcji zarządzania rabatami na pulpicie nawigacyjnym potrąceń. Jeśli jednak nie [włączysz modułu **zarządzania rabatami** dla swojego systemu](rebate-management-enable.md), niektóre funkcje opisane w tym miejscu nie będą dostępne.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -159,11 +159,11 @@ Aby utworzyć nowe potrącenie na pulpicie potrącenia, wykonaj następujące cz
         - *Oparte o ilość* — zostanie utworzone zamówienie sprzedaży o wartości ujemnej lub zamówienie zwrotu.
 
     - **Data roszczenia** — wybierz datę roszczenia. Wartością domyślną jest data bieżąca.
-    - **Przyczyna roszczenia** — wybierz kod przyczyny, który ma zastosowanie do bieżącego potrącenia. Wybrana podstawa roszczenia ma wpływ na zastosowane opcje. Aby uzyskać więcej informacji na temat tworzenia i konfigurowania przyczyn roszczeń, które są dostępne do wyboru w tym miejscu, zobacz sekcję [Tworzenie przyczyn potrąceń](#deduction-reasons) wcześniej w tym temacie.
+    - **Przyczyna roszczenia** — wybierz kod przyczyny, który ma zastosowanie do bieżącego potrącenia. Wybrana podstawa roszczenia ma wpływ na zastosowane opcje. Aby uzyskać więcej informacji na temat tworzenia i konfigurowania przyczyn roszczeń, które są dostępne do wyboru w tym miejscu, zobacz sekcję [Tworzenie przyczyn potrąceń](#deduction-reasons) wcześniej w tym artykule.
     - **Uwagi** — dodaj wszystkie notatki, które mają zastosowanie. Po zatwierdzeniu roszczenia osoba zatwierdzająca będzie mogła edytować uwagi dotyczące roszczenia lub dodawać do nich informacje.
     - **Utwórz arkusz roszczen** — ustaw tę opcję, aby określić, czy arkusz roszczeń ma zostać utworzony podczas tworzenia roszczenia lub potrącenia:
 
-        - *Tak* — system utworzy i zaksięguje arkusz główny przy użyciu arkusza roszczeń skonfigurowanego na stronie **Parametry modułu rozrachunków z odbiorcami**. (Aby uzyskać więcej informacji, zobacz sekcję [Konfigurowanie modułu Rozrachunki z odbiorcami i potrąceń](#accounts-receivable-deductions) wcześniej w tym temacie). Gdy faktura jest dołączona do roszczenia, arkusz roszczenia jest używany do zmniejszenia salda odpowiedniej faktury. Jeśli roszczenie zostanie później odrzucone, arkusz roszczeń i rozliczenia (jeśli faktura została załączona) zostaną wycofane.
+        - *Tak* — system utworzy i zaksięguje arkusz główny przy użyciu arkusza roszczeń skonfigurowanego na stronie **Parametry modułu rozrachunków z odbiorcami**. (Aby uzyskać więcej informacji, zobacz sekcję [Konfigurowanie modułu Rozrachunki z odbiorcami i potrąceń](#accounts-receivable-deductions) wcześniej w tym artykule). Gdy faktura jest dołączona do roszczenia, arkusz roszczenia jest używany do zmniejszenia salda odpowiedniej faktury. Jeśli roszczenie zostanie później odrzucone, arkusz roszczeń i rozliczenia (jeśli faktura została załączona) zostaną wycofane.
         - *Nie* — w tej chwili nie jest tworzony żaden arkusz roszczeń. Zostanie on utworzony po zatwierdzeniu roszczenia. Do nowego roszczenia nadal można dołączyć fakturę, nawet jeśli arkusz roszczenia nie został utworzony. Jednak rozliczenie nie może być wykonane bez arkusza roszczeń.
 
 1. Kliknij przycisk **OK**.
@@ -197,11 +197,11 @@ Proces tworzenia potrącenia z rozliczenia klienta przypomina proces tworzenia p
         - *Oparte o ilość* — zostanie utworzone zamówienie sprzedaży o wartości ujemnej lub zamówienie zwrotu.
 
     - **Data roszczenia** — wybierz datę roszczenia. Wartością domyślną jest data bieżąca.
-    - **Przyczyna roszczenia** — wybierz kod przyczyny, który ma zastosowanie do bieżącego potrącenia. Wybrana podstawa roszczenia ma wpływ na zastosowane opcje. Aby uzyskać więcej informacji na temat tworzenia i konfigurowania przyczyn roszczeń, które są dostępne do wyboru w tym miejscu, zobacz sekcję [Tworzenie przyczyn potrąceń](#deduction-reasons) wcześniej w tym temacie.
+    - **Przyczyna roszczenia** — wybierz kod przyczyny, który ma zastosowanie do bieżącego potrącenia. Wybrana podstawa roszczenia ma wpływ na zastosowane opcje. Aby uzyskać więcej informacji na temat tworzenia i konfigurowania przyczyn roszczeń, które są dostępne do wyboru w tym miejscu, zobacz sekcję [Tworzenie przyczyn potrąceń](#deduction-reasons) wcześniej w tym artykule.
     - **Uwagi** — dodaj wszystkie notatki, które mają zastosowanie. Po zatwierdzeniu roszczenia osoba zatwierdzająca będzie mogła edytować uwagi dotyczące roszczenia lub dodawać do nich informacje.
     - **Utwórz arkusz roszczen** — ustaw tę opcję, aby określić, czy arkusz roszczeń ma zostać utworzony podczas tworzenia roszczenia lub potrącenia:
 
-        - *Tak* — system utworzy i zaksięguje arkusz główny przy użyciu arkusza roszczeń skonfigurowanego na stronie **Parametry modułu rozrachunków z odbiorcami**. (Aby uzyskać więcej informacji, zobacz sekcję [Konfigurowanie modułu Rozrachunki z odbiorcami i potrąceń](#accounts-receivable-deductions) wcześniej w tym temacie). Gdy faktura jest dołączona do roszczenia, arkusz roszczenia jest używany do zmniejszenia salda odpowiedniej faktury. Jeśli roszczenie zostanie później odrzucone, arkusz roszczeń i rozliczenia (jeśli faktura została załączona) zostaną wycofane.
+        - *Tak* — system utworzy i zaksięguje arkusz główny przy użyciu arkusza roszczeń skonfigurowanego na stronie **Parametry modułu rozrachunków z odbiorcami**. (Aby uzyskać więcej informacji, zobacz sekcję [Konfigurowanie modułu Rozrachunki z odbiorcami i potrąceń](#accounts-receivable-deductions) wcześniej w tym artykule). Gdy faktura jest dołączona do roszczenia, arkusz roszczenia jest używany do zmniejszenia salda odpowiedniej faktury. Jeśli roszczenie zostanie później odrzucone, arkusz roszczeń i rozliczenia (jeśli faktura została załączona) zostaną wycofane.
         - *Nie* — w tej chwili nie jest tworzony żaden arkusz roszczeń. Zostanie on utworzony po zatwierdzeniu roszczenia. Do nowego roszczenia nadal można dołączyć fakturę, nawet jeśli arkusz roszczenia nie został utworzony. Jednak rozliczenie nie może być wykonane bez arkusza roszczeń.
 
 1. Kliknij przycisk **OK**.
@@ -235,11 +235,11 @@ Proces tworzenia potrącenia ze strony klienta przypomina proces tworzenia potr�
         - *Oparte o ilość* — zostanie utworzone zamówienie sprzedaży o wartości ujemnej lub zamówienie zwrotu.
 
     - **Data roszczenia** — wybierz datę roszczenia. Wartością domyślną jest data bieżąca.
-    - **Przyczyna roszczenia** — wybierz kod przyczyny, który ma zastosowanie do bieżącego potrącenia. Wybrana podstawa roszczenia ma wpływ na zastosowane opcje. Aby uzyskać więcej informacji na temat tworzenia i konfigurowania przyczyn roszczeń, które są dostępne do wyboru w tym miejscu, zobacz sekcję [Tworzenie przyczyn potrąceń](#deduction-reasons) wcześniej w tym temacie.
+    - **Przyczyna roszczenia** — wybierz kod przyczyny, który ma zastosowanie do bieżącego potrącenia. Wybrana podstawa roszczenia ma wpływ na zastosowane opcje. Aby uzyskać więcej informacji na temat tworzenia i konfigurowania przyczyn roszczeń, które są dostępne do wyboru w tym miejscu, zobacz sekcję [Tworzenie przyczyn potrąceń](#deduction-reasons) wcześniej w tym artykule.
     - **Uwagi** — dodaj wszystkie notatki, które mają zastosowanie. Po zatwierdzeniu roszczenia osoba zatwierdzająca będzie mogła edytować uwagi dotyczące roszczenia lub dodawać do nich informacje.
     - **Utwórz arkusz roszczen** — ustaw tę opcję, aby określić, czy arkusz roszczeń ma zostać utworzony podczas tworzenia roszczenia lub potrącenia:
 
-        - *Tak* — system utworzy i zaksięguje arkusz główny przy użyciu arkusza roszczeń skonfigurowanego na stronie **Parametry modułu rozrachunków z odbiorcami**. (Aby uzyskać więcej informacji, zobacz sekcję [Konfigurowanie modułu Rozrachunki z odbiorcami i potrąceń](#accounts-receivable-deductions) wcześniej w tym temacie). Gdy faktura jest dołączona do roszczenia, arkusz roszczenia jest używany do zmniejszenia salda odpowiedniej faktury. Jeśli roszczenie zostanie później odrzucone, arkusz roszczeń i rozliczenia (jeśli faktura została załączona) zostaną wycofane.
+        - *Tak* — system utworzy i zaksięguje arkusz główny przy użyciu arkusza roszczeń skonfigurowanego na stronie **Parametry modułu rozrachunków z odbiorcami**. (Aby uzyskać więcej informacji, zobacz sekcję [Konfigurowanie modułu Rozrachunki z odbiorcami i potrąceń](#accounts-receivable-deductions) wcześniej w tym artykule). Gdy faktura jest dołączona do roszczenia, arkusz roszczenia jest używany do zmniejszenia salda odpowiedniej faktury. Jeśli roszczenie zostanie później odrzucone, arkusz roszczeń i rozliczenia (jeśli faktura została załączona) zostaną wycofane.
         - *Nie* — w tej chwili nie jest tworzony żaden arkusz roszczeń. Zostanie on utworzony po zatwierdzeniu roszczenia. Do nowego roszczenia nadal można dołączyć fakturę, nawet jeśli arkusz roszczenia nie został utworzony. Jednak rozliczenie nie może być wykonane bez arkusza roszczeń.
 
 1. Kliknij przycisk **OK**.
@@ -280,7 +280,7 @@ Aby dopasować potrącenie do kredytu, wykonaj następujące kroki.
 1. W okienku akcji wybierz kolejno opcje **Obsługa \> Dopasuj**. System dopasowuje potrącenie do wpisu po stronie kredytowej. Jeśli saldo pozostaje w potrąceniu, jest ono wyświetlane w polu **Pozostała kwota** na karcie **Potrącenia**.
 
     > [!NOTE]
-    > W przypadku potrąceń utworzonych przy użyciu polecenia **Nowe potrącenie** na pulpicie odliczeń, w rozliczenie klienta lub na stronie klienta polecenie **Obsługa \> Dopasuj** jest dostępne tylko wtedy, gdy pole **Stan roszczenia** jest ustawione na *Zaakceptowane*. To polecenie może służyć do ręcznego dopasowania transakcji opartej na cenie lub ilości do skojarzonego kredytu w sekcji **Otwarte transakcje**. Ten kredyt jest tworzony po zatwierdzeniu potrącenia (za pomocą polecenia **Obsługa \> Zatwierdź polecenie**) lub gdy jest on dołączony do istniejącego kredytu, zgodnie z opisem w sekcji [Kredyty tworzone poza procesem zatwierdzania potrąceń](#credits-outside-approval) w dalszej części tego tematu. Zadanie okresowe *Rozliczanie zatwierdzonych potrąceń* (**Sprzedaż i marketing \> Zadania okresowe \> Rozlicz zatwierdzone potrącenia**) może być również używane do automatycznego dopasowywania potrąceń i kredytów, które mają pasujące wartości i kwoty **Identyfikator potrącenia**.
+    > W przypadku potrąceń utworzonych przy użyciu polecenia **Nowe potrącenie** na pulpicie odliczeń, w rozliczenie klienta lub na stronie klienta polecenie **Obsługa \> Dopasuj** jest dostępne tylko wtedy, gdy pole **Stan roszczenia** jest ustawione na *Zaakceptowane*. To polecenie może służyć do ręcznego dopasowania transakcji opartej na cenie lub ilości do skojarzonego kredytu w sekcji **Otwarte transakcje**. Ten kredyt jest tworzony po zatwierdzeniu potrącenia (za pomocą polecenia **Obsługa \> Zatwierdź polecenie**) lub gdy jest on dołączony do istniejącego kredytu, zgodnie z opisem w sekcji [Kredyty tworzone poza procesem zatwierdzania potrąceń](#credits-outside-approval) w dalszej części tego artykułu. Zadanie okresowe *Rozliczanie zatwierdzonych potrąceń* (**Sprzedaż i marketing \> Zadania okresowe \> Rozlicz zatwierdzone potrącenia**) może być również używane do automatycznego dopasowywania potrąceń i kredytów, które mają pasujące wartości i kwoty **Identyfikator potrącenia**.
 
 ### <a name="split-a-deduction"></a>Dzielenie potrącenia
 

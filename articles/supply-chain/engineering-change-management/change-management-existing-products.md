@@ -1,6 +1,6 @@
 ---
 title: Włącz zarządzanie zmianami w istniejących produktach
-description: W tym temacie opisano, jak włączyć zarządzanie zmianami istniejących produktów. Opisano w nim również przypadki, w których możliwość włączenia zarządzania zmianami jest ograniczona.
+description: W tym artykule opisano, jak włączyć zarządzanie zmianami istniejących produktów. Opisano w nim również przypadki, w których możliwość włączenia zarządzania zmianami jest ograniczona.
 author: t-benebo
 ms.date: 02/05/2021
 ms.topic: article
@@ -12,24 +12,24 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-02
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e356ef8339f8f71965bf9313e14fed3d0810152d
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 9f99529abebdf5490f158c6f0a7be4519449e9f0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103620"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893476"
 ---
 # <a name="enable-change-management-on-existing-products"></a>Włącz zarządzanie zmianami w istniejących produktach
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie opisano, jak włączyć zarządzanie zmianami istniejących produktów. Opisano w nim również przypadki, w których możliwość włączenia zarządzania zmianami jest ograniczona.
+W tym artykule opisano, jak włączyć zarządzanie zmianami istniejących produktów. Opisano w nim również przypadki, w których możliwość włączenia zarządzania zmianami jest ograniczona.
 
 Włączenie zarządzania zmianami istniejącego produktu umożliwia tworzenie wersji tego produktu oraz śledzenie zmian wprowadzonych w jego okresie użytkowania. W związku z tym zmiany te można śledzić przy użyciu zamówień zmian. Aby włączyć zarządzanie zmianami, należy przekonwertować odpowiednie produkty na *towary inżynieryjne* (zwane także produktami inżynieryjnymi). Produkty inżynieryjne to produkty, które są wersjonowane i zarządzane poprzez zarządzanie zmianami. Kreator jest dostarczany, aby poprowadzić Cię przez proces konwersji.
 
 ## <a name="turn-this-feature-on-or-off"></a>Włączanie lub wyłączanie tej funkcji
 
-Funkcje opisane w tym temacie wymagają włączania w *systemie zarówno zarządzania zmianami inżynieryjnymi*, jak i *włączania zarządzania zmianami w istniejących produktach*. Aby uzyskać szczegółowe informacje dotyczące sposobu włączanie i wyłączanie tych funkcji, zobacz [omówienie zarządzania zmianami inżynieryjnymi](product-engineering-overview.md).
+Funkcje opisane w tym artykule wymagają włączania w *systemie zarówno zarządzania zmianami inżynieryjnymi*, jak i *włączania zarządzania zmianami w istniejących produktach*. Aby uzyskać szczegółowe informacje dotyczące sposobu włączanie i wyłączanie tych funkcji, zobacz [omówienie zarządzania zmianami inżynieryjnymi](product-engineering-overview.md).
 
 ## <a name="restrictions-and-limitations"></a>Ograniczenia i limity
 
@@ -38,7 +38,7 @@ Nie wszystkie typy produktów można przekonwertować na wszystkie inne typy. Ob
 - Gdy produkt jest konwertowany na produkt inżynieryjny, pozostaje *produktem*. Nie stanie się on *produktem głównym*.
 - Podczas konwertowania produktu głównego, który ma określony zestaw wymiarów, te wymiary są zachowywane po zmianie. Na przykład przekonwertowanie produktu głównego, który ma wymiar rozmiaru, spowoduje zachowanie wymiaru rozmiaru.
 
-Jeśli więc istnieje odrębnych produktów, można go zmienić tylko na produkt inżynieryjny, który nie śledzi wymiaru produktu w transakcjach (tj. wymiar wersji nie jest używany). Zobacz pozostałe sekcje tego tematu, aby uzyskać więcej informacji na temat tych problemów.
+Jeśli więc istnieje odrębnych produktów, można go zmienić tylko na produkt inżynieryjny, który nie śledzi wymiaru produktu w transakcjach (tj. wymiar wersji nie jest używany). Zobacz pozostałe sekcje tego artykułu, aby uzyskać więcej informacji na temat tych problemów.
 
 ## <a name="prepare-for-conversion-by-creating-all-required-engineering-product-categories"></a>Przygotowanie do konwersji przez utworzenie wszystkich wymaganych kategorii produktów inżynieryjnych
 
@@ -81,7 +81,7 @@ Aby uruchomić kreatora konwersji na produkt inżynieryjny i **Przekonwertować 
 
     - **Numer produktu** – numer produktu.
     - **Nazwa produktu** – Nazwa produktu.
-    - **Kategoria inżynieryjna** — umożliwia wybór kategorii produktów inżynieryjnych, do której po przekonwertowaniu produkt powinien należeć. Dla każdego produktu musi istnieć odpowiednia kategoria, co zostało opisane w poprzedniej sekcji tego tematu. Przypisz kategorię do każdego produktu.
+    - **Kategoria inżynieryjna** — umożliwia wybór kategorii produktów inżynieryjnych, do której po przekonwertowaniu produkt powinien należeć. Dla każdego produktu musi istnieć odpowiednia kategoria, co zostało opisane w poprzedniej sekcji tego artykułu. Przypisz kategorię do każdego produktu.
     - **Wersja** — Wprowadź wersję produktu, która ma zostać przypisana do produktu po konwersji. Można na przykład wybrać liczbę, która będzie pasowała do sekwencji numerów używanej już w danej kategorii. Każda wersja inżynieryjna przechowuje dane techniczne, które są specyficzne dla tej wersji. Aby uzyskać więcej informacji, zobacz [Wersje inżynieryjne i kategorie produktów inżynieryjnych](engineering-versions-product-category.md).
     - **Stan cyklu życia produktu** — wybierz stan cyklu życia produktu, w którym produkt powinien być po przekonwertowaniu. Stan cyklu życia produktu umożliwia kontrolowanie, które transakcje są dozwolone dla danej wersji inżynieryjnej. Aby uzyskać więcej informacji, zobacz [Stany cyklu życia produktu i transakcje](product-lifecycle-state-transactions.md).
     - **Ma BOM** — zaznaczone pole wyboru wskazuje, że produkt ma BOM. Ustawienie tego pola wyboru może pomóc w podjęciu decyzji, jak ustawić pole wyboru **Bieżący BOM będzie częścią produktu inżynieryjnego**.

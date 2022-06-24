@@ -1,6 +1,6 @@
 ---
 title: Przetwarzanie niepołączonych zwrotów z łącznikiem Dynamics 365 Commerce Payment Connector dla Adyen
-description: W tym temacie opisano, jak działają niepołączone zwroty w przypadku korzystania z łącznika Microsoft Dynamics 365 Payment Connector dla Adyen.
+description: W tym artykule opisano, jak działają niepołączone zwroty w przypadku korzystania z łącznika Microsoft Dynamics 365 Payment Connector dla Adyen.
 author: BrianShook
 ms.date: 10/07/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgri
 ms.search.region: Global
 ms.author: BrShoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: c137dcf7d35031a293c88d8c4f5dc1e5f3d9e2f9
-ms.sourcegitcommit: a21a664cd35b95c8600c5af0aac588a64e892902
+ms.openlocfilehash: 634b30de7adbfb0c316fe14456581ea8eb89d070
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "7623928"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885204"
 ---
 # <a name="process-unlinked-refunds-with-the-dynamics-365-commerce-payment-connector-for-adyen"></a>Przetwarzanie niepołączonych zwrotów z łącznikiem Dynamics 365 Commerce Payment Connector dla Adyen
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano, jak działają niepołączone zwroty w przypadku korzystania z łącznika [Microsoft Dynamics 365 Payment Connector dla Adyen](adyen-connector.md). Przegląda również możliwość przetwarzania zwrotu na nową formę płatności w punkcie sprzedaży (POS) lub biurze obsługi.
+W tym artykule opisano, jak działają niepołączone zwroty w przypadku korzystania z łącznika [Microsoft Dynamics 365 Payment Connector dla Adyen](adyen-connector.md). Przegląda również możliwość przetwarzania zwrotu na nową formę płatności w punkcie sprzedaży (POS) lub biurze obsługi.
 
 Łącznik Dynamics 365 Payment Connector dla Adyen obsługuje możliwość przetwarzania zwrotów przy użyciu innej formy płatności, niż ta użyta w oryginalnej transakcji. Mimo że zalecane jest korzystanie z [połączonych zwrotów](linked-refunds.md) w celu przetwarzania zwrotu na podstawie dostarczonej pierwszej formy płatności, w niektórych scenariuszach wymagane są zwroty do innych form. Na przykład karta użyta do oryginalnej płatności może utracić ważność lub zostać zgubiona bądź anulowana przez użytkownika.
 

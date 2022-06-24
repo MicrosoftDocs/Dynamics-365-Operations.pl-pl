@@ -1,6 +1,6 @@
 ---
 title: Śledzenie wykonywania formatów raportowania elektronicznego w celu rozwiązywania problemów z wydajnością
-description: Ten temat zawiera informacje dotyczące korzystania z funkcji śledzenia wydajności w module Raportowanie elektroniczne (ER) w celu rozwiązywania problemów z wydajnością.
+description: Ten artykuł zawiera informacje dotyczące korzystania z funkcji śledzenia wydajności w module Raportowanie elektroniczne (ER) w celu rozwiązywania problemów z wydajnością.
 author: NickSelin
 ms.date: 06/22/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 10eddf2f60db914e6451840d4d7aedb9dce7108874ea3ff45f375b85a55a694f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 886781764b44ca76b327ad49f25f11f6c370a706
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724400"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851959"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Śledzenie wykonywania formatów ER w celu rozwiązywania problemów z wydajnością
 
@@ -134,7 +134,7 @@ Odpowiednie wersje konfiguracji modelu danych i mapowania modelu są automatyczn
             - Uruchamianie poszczególnych źródeł danych w mapowaniu formatu, które są wywoływane w celu uzyskania danych
             - Przetwarzanie poszczególnych elementów formatu w celu wprowadzenia danych w generowanych danych wyjściowych
 
-            Wartość **Format śladu zagregowanego** jest dostępna w Microsoft Dynamics 365 Finance w wersji 10.0.20 i nowszych.
+            Wartość **Format śladu zagregowanego** jest dostępna w aplikacji Microsoft Dynamics 365 Finance w wersji 10.0.20 i nowszych.
 
             W projektancie formatu ER i projektancie odwzorowania modelu ER możesz zobaczyć całkowity czas wykonania dla pojedynczego komponentu. Dodatkowo, ślad zawiera szczegóły dotyczące wykonania, takie jak liczba wykonań oraz minimalny i maksymalny czas pojedynczego wykonania.
 
@@ -305,27 +305,27 @@ Przydatne może być także zmniejszenie liczby wywołań źródła danych Ledge
 
 ### <a name="import-the-modified-er-model-mapping-configuration-from-rcs-into-the-application"></a>Importowanie konfiguracji mapowania modelu ER z RCS do aplikacji
 
-Powtórz kroki opisane w sekcji [Importowanie konfiguracji ER z RCS do Finance and Operations](#import-configuration) tego tematu, aby zaimportować wersję 1.2 konfiguracji **Mapowanie śledzenia wydajności**.
+Powtórz kroki opisane w sekcji [Importowanie konfiguracji ER z RCS do aplikacji finansowych i operacyjnych](#import-configuration) tego artykułu, aby zaimportować wersję 1.2 konfiguracji **Mapowanie śledzenia wydajności**.
 
 ## <a name="run-the-modified-er-solution-to-trace-execution"></a>Uruchom zmodyfikowane rozwiązanie ER, aby śledzić wykonywanie
 
 ### <a name="run-the-er-format"></a>Uruchamianie formatu ER
 
-Powtórz kroki opisane w sekcji [Uruchamianie formatu ER](#run-format) tego tematu, aby wygenerować nowy ślad wydajności.
+Powtórz kroki opisane w sekcji [Uruchamianie formatu ER](#run-format) tego artykułu, aby wygenerować nowy ślad wydajności.
 
 ## <a name="work-with-the-execution-trace"></a>Pracuj z śladem wykonania
 
 ### <a name="export-the-generated-trace-from-the-application"></a>Eksportowanie wygenerowanego śledzenia z aplikacji
 
-Powtórz kroki opisane w sekcji [Eksportowanie wygenerowanego śladu z aplikacji](#export-trace) tego tematu, aby zapisać lokalnie nowy ślad wydajności.
+Powtórz kroki opisane w sekcji [Eksportowanie wygenerowanego śladu z aplikacji](#export-trace) tego artykułu, aby zapisać lokalnie nowy ślad wydajności.
 
 ### <a name="import-the-generated-trace-into-rcs"></a>Importowanie wygenerowanego śladu do RCS
 
-Powtórz kroki opisane w sekcji [Importowanie wygenerowanego śladu do RCS](#import-trace) tego tematu, aby zaimportować nowy ślad wydajności do RCS.
+Powtórz kroki opisane w sekcji [Importowanie wygenerowanego śladu do RCS](#import-trace) tego artykułu, aby zaimportować nowy ślad wydajności do RCS.
 
 ### <a name="use-the-performance-trace-for-analysis-in-rcs--model-mapping"></a>Użycie śledzenia wydajności do analizy w RCS — mapowanie modelu
 
-Powtórz kroki opisane w sekcji [Użycie śledzenia wydajności do analizy w RCS — mapowanie modelu](#use-trace) tego tematu, aby przeanalizować najnowszy ślad wydajności.
+Powtórz kroki opisane w sekcji [Użycie śledzenia wydajności do analizy w RCS — mapowanie modelu](#use-trace) tego artykułu, aby przeanalizować najnowszy ślad wydajności.
 
 Korekty wprowadzone w mapowaniu modelu wyeliminowały duplikowanie zapytań do bazy danych. Liczba wywołań tabel bazy danych i źródeł danych tego mapowania modelu również została zmniejszona. Wydajność całego rozwiązania ER uległa zatem poprawie.
 
@@ -355,7 +355,7 @@ W przypadku korzystania z jednej z tych wersji modułu Finance and Operations mo
 
 ### <a name="run-the-er-format"></a>Uruchamianie formatu ER
 
-Powtórz kroki opisane w sekcji [Uruchamianie formatu ER](#run-format) tego tematu, aby wygenerować nowy ślad wydajności.
+Powtórz kroki opisane w sekcji [Uruchamianie formatu ER](#run-format) tego artykułu, aby wygenerować nowy ślad wydajności.
 
 Przeglądarka sieci Web zaproponuje pobranie pliku zip. Ten plik zawiera ślad wydajności w formacie PerfView. Następnie można przeanalizować szczegóły wykonania formatu ER w narzędziu do analizy wydajności PerfView.
 
@@ -379,7 +379,7 @@ Ze względu na udoskonalenia, które zostały wprowadzone w ramach systemu, śle
 
 ### <a name="run-the-er-format"></a>Uruchamianie formatu ER
 
-Powtórz kroki opisane w sekcji [Uruchamianie formatu ER](#run-format) tego tematu, aby wygenerować nowy ślad wydajności.
+Powtórz kroki opisane w sekcji [Uruchamianie formatu ER](#run-format) tego artykułu, aby wygenerować nowy ślad wydajności.
 
 Przeglądarka sieci Web zaproponuje pobranie pliku zip. Ten plik zawiera ślad wydajności w formacie PerfView. Następnie można przeanalizować szczegóły wykonania formatu ER w narzędziu do analizy wydajności PerfView. Teraz ten ślad zawiera szczegóły dostępu do bazy danych SQL podczas wykonywania formatu ER.
 

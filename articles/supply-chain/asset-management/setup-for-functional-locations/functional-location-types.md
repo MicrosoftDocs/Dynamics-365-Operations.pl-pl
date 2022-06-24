@@ -1,6 +1,6 @@
 ---
 title: Typy lokalizacji czynności konserwacyjnych
-description: W tym temacie opisano sposób tworzenia typów lokalizacjach czynności konserwacyjnych w module Zarządzanie składnikami majątku.
+description: W tym artykule opisano sposób tworzenia typów lokalizacjach czynności konserwacyjnych w module Zarządzanie składnikami majątku.
 author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 301dc838ed204ebe488dd167df75fc84131f235f64285c6ae99c62ee1188362c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 01c8276d77f7655659cab13f3c520d7c171e3cfd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739162"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879229"
 ---
 # <a name="functional-location-types"></a>Typy lokalizacji czynności konserwacyjnych
 
@@ -28,7 +28,7 @@ ms.locfileid: "6739162"
 
  
 
-W tym temacie opisano sposób tworzenia typów lokalizacjach czynności konserwacyjnych w module Zarządzanie składnikami majątku. Typy lokalizacji czynności konserwacyjnych są używane do zarządzania wymaganiami dla lokalizacji czynności konserwacyjnych, w tym w jaki sposób składniki majątku są instalowane w lokalizacji czynności konserwacyjnych. Można skonfigurować typy składników majątku, plany konserwacji, atrybuty lokalizacji czynności konserwacyjnych oraz wymagania dotyczące atrybutów składnika majątku, które mają być używane w lokalizacji czynności konserwacyjnych używającej określonego typu lokalizacji czynności konserwacyjnych. Gdy tworzysz lokalizację czynności konserwacyjnych, typ lokalizacji czynności konserwacyjnych jest obowiązkowy.
+W tym artykule opisano sposób tworzenia typów lokalizacjach czynności konserwacyjnych w module Zarządzanie składnikami majątku. Typy lokalizacji czynności konserwacyjnych są używane do zarządzania wymaganiami dla lokalizacji czynności konserwacyjnych, w tym w jaki sposób składniki majątku są instalowane w lokalizacji czynności konserwacyjnych. Można skonfigurować typy składników majątku, plany konserwacji, atrybuty lokalizacji czynności konserwacyjnych oraz wymagania dotyczące atrybutów składnika majątku, które mają być używane w lokalizacji czynności konserwacyjnych używającej określonego typu lokalizacji czynności konserwacyjnych. Gdy tworzysz lokalizację czynności konserwacyjnych, typ lokalizacji czynności konserwacyjnych jest obowiązkowy.
 
 >[!NOTE] 
 >Aby można było pracować z lokalizacjami czynności konserwacyjnych, należy utworzyć domyślną lokalizację czynności konserwacyjnych, która będzie używana tylko w celu tworzenia nowych składników majątku. Dla tej domyślnej lokalizacji czynności konserwacyjnych należy utworzyć domyślny typ lokalizacji czynności konserwacyjnych, który jest bardzo prosty i umożliwia zainstalowanie wielu składników majątku w domyślnej lokalizacji czynności konserwacyjnych. Zobacz [Tworzenie lokalizacji czynności konserwacyjnych](../functional-locations/create-functional-locations.md), aby uzyskać więcej informacji na temat konfigurowania lokalizacji czynności konserwacyjnych.

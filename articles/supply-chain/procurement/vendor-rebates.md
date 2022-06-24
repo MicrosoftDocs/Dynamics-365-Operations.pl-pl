@@ -1,6 +1,6 @@
 ---
 title: Rabaty dostawcy
-description: Ten temat zawiera omówienie najpopularniejszych zadań, które może wykonać podczas pracy z rabatami dostawcy. Rabaty dostawcy ułatwiają firmom zarządzanie programami rabatów dla dostawców dzięki automatyzacji zadań wymaganych do administrowania, śledzenia i wykorzystywania uzyskanych rabatów.
+description: Ten artykuł zawiera omówienie najpopularniejszych zadań, które może wykonać podczas pracy z rabatami dostawcy. Rabaty dostawcy ułatwiają firmom zarządzanie programami rabatów dla dostawców dzięki automatyzacji zadań wymaganych do administrowania, śledzenia i wykorzystywania uzyskanych rabatów.
 author: GalynaFedorova
 ms.date: 06/20/2017
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: ed41fe18048050ecb80a93e929d66ebc3a2e2441
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 789a58af40595cbb72d55d598510c43315aead2b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672970"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890807"
 ---
 # <a name="vendor-rebates"></a>Rabaty dostawcy
 
@@ -26,7 +26,7 @@ ms.locfileid: "8672970"
 
 Rabaty dostawcy ułatwiają firmom zarządzanie programami rabatów dla dostawców dzięki automatyzacji zadań wymaganych do administrowania, śledzenia i wykorzystywania uzyskanych rabatów.
 
-Ten temat zawiera omówienie najpopularniejszych zadań, które może wykonać podczas pracy z rabatami dostawcy. Przegląd obejmuje następujące zadania:
+Ten artykuł zawiera omówienie najpopularniejszych zadań, które może wykonać podczas pracy z rabatami dostawcy. Przegląd obejmuje następujące zadania:
 
 - Przejrzenie szczegółów umowy rabatowej.
 - Identyfikowanie zamówień uprawiających do skorzystania z rabatu i generowanie roszczeń dotyczących rabatu.
@@ -34,7 +34,7 @@ Ten temat zawiera omówienie najpopularniejszych zadań, które może wykonać p
 
 ## <a name="audience-and-purpose"></a>Odbiorcy i cel
 
-Informacje w tym temacie są przeznaczone dla osób podejmujących decyzje biznesowe w przedsiębiorstwach na stanowiskach takich jak menedżer ds. zaopatrzenia, dyrektor finansowy (CFO) i menedżer księgowości, których obowiązki są następujące:
+Informacje w tym artykule są przeznaczone dla osób podejmujących decyzje biznesowe w przedsiębiorstwach na stanowiskach takich jak menedżer ds. zaopatrzenia, dyrektor finansowy (CFO) i menedżer księgowości, których obowiązki są następujące:
 
 - Negocjowanie cen dla dostawców, zniżek i umów rabatowych.
 - Zarządzanie pracownikami, którzy przetwarzają roszczenia dotyczące rabatu i odbierają płatności.

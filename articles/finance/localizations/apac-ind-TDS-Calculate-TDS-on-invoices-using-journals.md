@@ -1,6 +1,6 @@
 ---
 title: Obliczanie TDS dla faktur przy użyciu arkuszy
-description: W tym temacie wymieniono kroki obliczania podatku potrąconego w źródle (TDS) dla arkuszy.
+description: W tym artykule wymieniono kroki obliczania podatku potrąconego w źródle (TDS) dla arkuszy.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 7f98caf92c49c229a11dd29d54e22106329e2401
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: d9217029a38aa41e42a236d3cfa39993b1bcee4a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711360"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863041"
 ---
 # <a name="calculate-tds-on-invoices-using-journals"></a>Obliczanie TDS dla faktur przy użyciu arkuszy
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wymieniono kroki obliczania podatku potrąconego w źródle (TDS) dla arkuszy.
+W tym artykule wymieniono kroki obliczania podatku potrąconego w źródle (TDS) dla arkuszy.
 
 Otwórz **Księga główna** (**Księga główna > Wpisy w arkuszu > Arkusze finansowe**).
 

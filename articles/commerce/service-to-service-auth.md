@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie uwierzytelniania usługa-usługa
-description: W tym temacie opisano, jak skonfigurować uwierzytelnianie między usługami w Microsoft Dynamics 365 Commerce, aby bezpiecznie wywoływać interfejsy API usług dla ocen i recenzji.
+description: W tym artykule opisano, jak skonfigurować uwierzytelnianie między usługami w Microsoft Dynamics 365 Commerce, aby bezpiecznie wywoływać interfejsy API usług dla ocen i recenzji.
 author: gvrmohanreddy
 ms.date: 01/12/2022
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: v-chgri
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: da780de5f15d72bdac85a261eae809125c830260
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: acb3a6220d146d32bbeb5bd8169033bc897ec3fe
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968523"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871614"
 ---
 # <a name="configure-service-to-service-authentication"></a>Konfigurowanie uwierzytelniania usługa-usługa
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano, jak skonfigurować uwierzytelnianie między usługami (S2S) w Microsoft Dynamics 365 Commerce, aby bezpiecznie wywoływać interfejsy programowania aplikacji (API) usługi na potrzeby ocen i recenzji.
+W tym artykule opisano, jak skonfigurować uwierzytelnianie między usługami (S2S) w Microsoft Dynamics 365 Commerce, aby bezpiecznie wywoływać interfejsy programowania aplikacji (API) usługi na potrzeby ocen i recenzji.
 
-Dynamics 365 Commerce oferuje [oceny i recenzje](ratings-reviews-overview.md) jako rozwiązanie wielokanałowe. To rozwiązanie umożliwia dostęp do interfejsów API usług spoza Commerce, umożliwiając wykonywanie różnych zadań. Do tych zadań należy importowanie ocen i przeglądów z zewnętrznego systemu do systemu Commerce oraz eksportowanie ocen i recenzji z aplikacji Commerce. Aby w programie Commerce można było w bezpieczny sposób wywołać oceny i przeglądać interfejsy API usług, należy najpierw skonfigurować uwierzytelnianie S2S, wykonując procedury w tym temacie.
+Dynamics 365 Commerce oferuje [oceny i recenzje](ratings-reviews-overview.md) jako rozwiązanie wielokanałowe. To rozwiązanie umożliwia dostęp do interfejsów API usług spoza Commerce, umożliwiając wykonywanie różnych zadań. Do tych zadań należy importowanie ocen i przeglądów z zewnętrznego systemu do systemu Commerce oraz eksportowanie ocen i recenzji z aplikacji Commerce. Aby w programie Commerce można było w bezpieczny sposób wywołać oceny i przeglądać interfejsy API usług, należy najpierw skonfigurować uwierzytelnianie S2S, wykonując procedury w tym artykule.
 
 ## <a name="add-a-new-app-registration"></a>Dodaj nową rejestrację aplikacji
 

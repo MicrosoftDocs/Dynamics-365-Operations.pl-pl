@@ -1,6 +1,6 @@
 ---
 title: Zaakceptuj zamówienia planowane
-description: W tym temacie wyjaśniono sposób ustalania zamówień planowanych. Podczas ustalania zamówień planowanych są one przekształcane w rzeczywiste zamówienia zakupu, zamówienia przeniesienia lub zlecenia produkcyjne.
+description: W tym artykule wyjaśniono sposób ustalania zamówień planowanych. Podczas ustalania zamówień planowanych są one przekształcane w rzeczywiste zamówienia zakupu, zamówienia przeniesienia lub zlecenia produkcyjne.
 author: t-benebo
 ms.date: 04/22/2021
 ms.search.form: ReqTransPo, ReqTransFirmLog
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 30f3ee656b97e0337b6e3e78f0acb2300d7d85dc
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 24b5c6cb7e97924ebace8f7131a87e9bffea22e0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468477"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857526"
 ---
 # <a name="firm-planned-orders"></a>Zaakceptuj zamówienia planowane
 
@@ -29,11 +29,11 @@ Istnieją trzy metody ustalania zamówień planowanych:
 - **Automatyczne ustalanie** — służy do definiowania domyślnego horyzontu czasowego dla grup zapotrzebowania, pojedynczych towarów oraz kombinacji towarów i planów głównych. Następnie, podczas planowania głównego, zamówienia planowane będą automatycznie ustalane, jeśli data zamówienia znajduje się w podanym horyzoncie czasowym dla ustalania.
 - **Ustalanie oparte na kwerendzie** — umożliwia zdefiniowanie kwerendy w celu wybrania zamówień planowanych na podstawie ich właściwości. Można skonfigurować zadanie wsadowe w celu regularnego uruchamiania kwerendy i ustalania spełniających warunki zamówień.
 
-W tym temacie opisano szczegółowo poszczególne metody.
+W tym artykule opisano szczegółowo poszczególne metody.
 
-## <a name="enable-the-features-that-are-described-in-this-topic"></a><a name="enable-features"></a>Włączanie funkcji opisanych w tym temacie
+## <a name="enable-the-features-that-are-described-in-this-article"></a><a name="enable-features"></a>Włączanie funkcji opisanych w tym artykule
 
-Większość funkcji zamówienia planowanego jest dostępna we wszystkich standardowych instalacjach rozwiązania Microsoft Dynamics 365 Supply Chain Management, które korzystają z optymalizacji planowania. Jednak kilka funkcji opisanych w tym temacie musi zostać włączonych w module Zarządzanie funkcjami, aby można ich było używać.
+Większość funkcji zamówienia planowanego jest dostępna we wszystkich standardowych instalacjach rozwiązania Microsoft Dynamics 365 Supply Chain Management, które korzystają z optymalizacji planowania. Jednak kilka funkcji opisanych w tym artykule musi zostać włączonych w module Zarządzanie funkcjami, aby można ich było używać.
 
 ### <a name="turn-parallelized-firming-of-planned-orders-on-or-off"></a>Włącz lub wyłącz równoległe potwierdzanie planowanych zamówień
 
@@ -97,7 +97,7 @@ Funkcja automatycznego ustalania umożliwia ustalanie zamówień planowanych w r
 > Zamówienia pochodne (czyli zamówienia podwykonawcze), które są ustalone, będą miały status *W trakcie przeglądu*, gdy włączone jest śledzenie zmian.
 
 > [!IMPORTANT]
-> Aby funkcja opisana w tej sekcji była dostępna dla funkcji Optymalizacja planowania, w systemie musi być włączona [funkcja *Automatyczne ustalanie dla optymalizacji planowania*](#enable-features), zgodnie z opisem na początku tego tematu. Automatycznego ustalania można zawsze używać z wbudowanym aparatem planowania głównego.
+> Aby funkcja opisana w tej sekcji była dostępna dla funkcji Optymalizacja planowania, w systemie musi być włączona [funkcja *Automatyczne ustalanie dla optymalizacji planowania*](#enable-features), zgodnie z opisem na początku tego artykułu. Automatycznego ustalania można zawsze używać z wbudowanym aparatem planowania głównego.
 
 ### <a name="auto-firming-with-planning-optimization-vs-the-built-in-planning-engine"></a>Automatyczne ustalanie z funkcją Optymalizacja planowania w porównaniu z wbudowanym aparatem planowania
 
@@ -130,7 +130,7 @@ Ustalanie oparte na zapytaniu umożliwia planowanie ustalania na podstawie wcze�
 Automatyczne ustalanie można łączyć z ustalanie opartymi na zapytaniu. Na przykład zadanie ustalania oparte na zapytanie ma przyszły horyzont czasowy dłuższy niż horyzont czasowy pasującej konfiguracji zapotrzebowania automatycznego ustalania. W związku z tym zadanie ustalania oparte na zapytaniu będzie przetwarzać jego zamówienia planowane przed uruchomieniem automatycznego ustalania. Dzięki temu można zaplanować zamówienia dla określonych dostawców inaczej niż zamówienia podobnych produktów od innych dostawców.
 
 > [!IMPORTANT]
-> Aby można było korzystać z funkcji opisanej w tej sekcji, [funkcja *Ustalanie zamówień planowanych z filtrowaniem*](#enable-features) musi być włączona w systemie, zgodnie z opisem na początku tego tematu.
+> Aby można było korzystać z funkcji opisanej w tej sekcji, [funkcja *Ustalanie zamówień planowanych z filtrowaniem*](#enable-features) musi być włączona w systemie, zgodnie z opisem na początku tego artykułu.
 
 Aby ustalić zamówienie planowane za pomocą procesu ustalania opartego na zapytaniu, należy wykonać następujące czynności.
 

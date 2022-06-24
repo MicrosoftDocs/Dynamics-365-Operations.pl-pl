@@ -1,6 +1,6 @@
 ---
-title: Omówienie rozliczeń
-description: Ten temat zawiera ogólne informacje o procesie rozliczania. Opisano w nim typy transakcji, które można rozliczyć, oraz czas i proces ich rozliczania. Przedstawia on także wyniki procesu rozliczania.
+title: Przegląd rozliczenia
+description: Ten artykuł zawiera ogólne informacje o procesie rozliczania. Opisano w nim typy transakcji, które można rozliczyć, oraz czas i proces ich rozliczania. Przedstawia on także wyniki procesu rozliczania.
 author: panolte
 ms.date: 07/30/2021
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: e1992019570129461f3ecdd5479a87bafd8aeacb
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: a495a71a95032a0022cbab2783f356db48ee349d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724905"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887956"
 ---
 # <a name="settlement-overview"></a>Omówienie rozliczeń
 
@@ -30,7 +30,7 @@ ms.locfileid: "8724905"
 [!include [preview banner](../includes/preview-banner.md)]
 
 
-Ten temat zawiera ogólne informacje o procesie rozliczania. Opisano w nim typy transakcji, które można rozliczyć, oraz czas i proces ich rozliczania. Przedstawia on także wyniki procesu rozliczania.
+Ten artykuł zawiera ogólne informacje o procesie rozliczania. Opisano w nim typy transakcji, które można rozliczyć, oraz czas i proces ich rozliczania. Przedstawia on także wyniki procesu rozliczania.
 
 Podczas rozliczania transakcje w jednym dokumencie są stosowane do transakcji z innego dokumentu w celu zwiększenia lub zmniejszenia salda każdego dokumentu. Na przykład płatność może być zastosowana do faktury. Różne typy transakcji mogą być rozliczane w różnym czasie i za pośrednictwem różnych metod. Proces rozliczania może również spowodować wygenerowanie nowych transakcji.
 

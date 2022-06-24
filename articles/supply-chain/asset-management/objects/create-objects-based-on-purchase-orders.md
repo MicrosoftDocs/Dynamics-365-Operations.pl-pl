@@ -1,6 +1,6 @@
 ---
 title: Tworzenie składników majątku na podstawie zamówień zakupu
-description: W tym temacie wyjaśniono, w jaki sposób można utworzyć listę pozycji składników majątku, które mogą służyć jako podstawa do tworzenia składników majątku dla zadań konserwacyjnych w module Zarządzanie składnikami majątku.
+description: W tym artykule wyjaśniono, w jaki sposób można utworzyć listę pozycji składników majątku, które mogą służyć jako podstawa do tworzenia składników majątku dla zadań konserwacyjnych w module Zarządzanie składnikami majątku.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5068712a7ea1e0d940d4a05a411fb3e1b6f6d9bb9be924d5375b16676561ea1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8bee66e2d35af6daa8d86539e52b558bde3c79a1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754114"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893708"
 ---
 # <a name="create-assets-based-on-purchase-orders"></a>Tworzenie składników majątku na podstawie zamówień zakupu
 
@@ -28,7 +28,7 @@ ms.locfileid: "6754114"
 
  
 
-W tym temacie wyjaśniono, w jaki sposób można utworzyć listę pozycji składników majątku, które mogą służyć jako podstawa do tworzenia składników majątku dla zadań konserwacyjnych w module Zarządzanie składnikami majątku. Na podstawie pozycji składników majątku można wyświetlić listę wierszy zamówienia zakupu, które zostały utworzone dla tych pozycji. Celem tej funkcji jest łatwe tworzenie składnika majątku w module Zarządzanie składnikami majątku na podstawie zamówienia zakupu.
+W tym artykule wyjaśniono, w jaki sposób można utworzyć listę pozycji składników majątku, które mogą służyć jako podstawa do tworzenia składników majątku dla zadań konserwacyjnych w module Zarządzanie składnikami majątku. Na podstawie pozycji składników majątku można wyświetlić listę wierszy zamówienia zakupu, które zostały utworzone dla tych pozycji. Celem tej funkcji jest łatwe tworzenie składnika majątku w module Zarządzanie składnikami majątku na podstawie zamówienia zakupu.
 
 Najpierw należy skonfigurować pozycje, które mają być używane do tworzenia składników majątku z zamówienia zakupu w obszarze **Pozycje składnika majątku**. Po utworzeniu wiersza zamówienia zakupu należy utworzyć składniki majątku w obszarze **Oczekujące składniki majątku**. Można zdecydować, na którym etapie zamówienia zakupu ma zostać utworzony składnik majątku.
 

@@ -1,6 +1,6 @@
 ---
 title: Liczba dni z ujemnym stanem i dynamiczna liczba dni z ujemnym stanem.
-description: Ten temat zawiera informacje o ujemnych dniach i dynamicznych dniach ujemnych oraz sposobach ich używania aby pomoc twojej firmie.
+description: Ten artykuł zawiera informacje o ujemnych dniach i dynamicznych dniach ujemnych oraz sposobach ich używania aby pomoc twojej firmie.
 author: t-benebo
 ms.date: 05/25/2021
 ms.topic: article
@@ -10,27 +10,27 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2019-06-07
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6d88517c99a274911e8abd8de4bcd318139822a5
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: d83aab9b7d3d30d519e8b313a57f2802de3cfb72
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469877"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846135"
 ---
 # <a name="negative-days-and-dynamic-negative-days"></a>Liczba dni z ujemnym stanem i dynamiczna liczba dni z ujemnym stanem.
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje o ujemnych dniach i dynamicznych dniach ujemnych oraz sposobach ich używania aby pomoc twojej firmie. *Horyzont czasowy w dniach ujemnych* reprezentuje liczbę dni, po upływie których użytkownik chce zamówić nowe uzupełnienie zapasów w przypadku ujemnego stanu zapasów.
+Ten artykuł zawiera informacje o ujemnych dniach i dynamicznych dniach ujemnych oraz sposobach ich używania aby pomoc twojej firmie. *Horyzont czasowy w dniach ujemnych* reprezentuje liczbę dni, po upływie których użytkownik chce zamówić nowe uzupełnienie zapasów w przypadku ujemnego stanu zapasów.
 
-W tym temacie poznasz następujące informacje:
+W tym artykule poznasz następujące informacje:
 
 - Jak są tworzone planowane zamówienia.
 - Korelacja między horyzontem czasowym w dniach ujemnych a czasem realizacji towaru
 - Sposób obliczania dynamicznego okresu czasu ujemnego i sposobu w jaki czas realizacji towaru jest uwzględniany w obliczeniach
 - Sposób interpretacji [sugestii dotyczących poprawiania czasu działania na potrzeby planowania zapotrzebowania materiałowego (MRP) (planowanie główne)](https://blogs.msdn.com/b/axmfg/archive/2015/01/02/checklist-for-improving-mrp-performance-part-2-how-to-setup-planning-parameters.aspx), które są związane z dniami ujemnymi
 
-W tym temacie są używane trzy hipotetyczne scenariusze ułatwiające zrozumienie tych informacji. Różnica między scenariuszami to punkt, w którym użytkownik uzyskuje zapotrzebowanie: przed, w trakcie lub po okresie realizacji danego towaru.
+W tym artykule są używane trzy hipotetyczne scenariusze ułatwiające zrozumienie tych informacji. Różnica między scenariuszami to punkt, w którym użytkownik uzyskuje zapotrzebowanie: przed, w trakcie lub po okresie realizacji danego towaru.
 
 ## <a name="scenario-1-you-get-demand-before-the-items-lead-time-period"></a>Scenariusz 1: przed upływem czasu realizacji towaru uzyskasz zapotrzebowanie
 
@@ -93,7 +93,7 @@ Poniższa ilustracja pokazuje graficzny widok tego, co dzieje się w tym przypad
 
 ### <a name="case-e-use-both-negative-days-that-are-more-than-the-items-lead-time-and-the-dynamic-negative-days-time-fence"></a>Przypadek E: należy stosować obydwa dni ujemne, które są większe niż czas realizacji towaru oraz dynamiczny horyzont czasowy w dniach ujemnych
 
-Jeśli liczba dni ujemnych zostanie ustawiona na liczbę większą niż czas realizacji towaru, a także ten przypadek korzysta z dynamicznego horyzontu czasowego dni ujemnych, to dynamiczny horyzont czasowy w dniach ujemnych wynosi 6 + 6 + 0 = 12 dni. Takie podejście może wytworzyć bardzo długi horyzont czasowy, w którym MRP musi wyszukiwać wyników w programie. Aby uzyskać informacje o tym, jak przypadek E jest związany z sytuacją, w której negatywne dni ustawia się na długi horyzont czasowy, zapoznaj się z [Podsumowanie](#conclusion) sekcją tego tematu.
+Jeśli liczba dni ujemnych zostanie ustawiona na liczbę większą niż czas realizacji towaru, a także ten przypadek korzysta z dynamicznego horyzontu czasowego dni ujemnych, to dynamiczny horyzont czasowy w dniach ujemnych wynosi 6 + 6 + 0 = 12 dni. Takie podejście może wytworzyć bardzo długi horyzont czasowy, w którym MRP musi wyszukiwać wyników w programie. Aby uzyskać informacje o tym, jak przypadek E jest związany z sytuacją, w której negatywne dni ustawia się na długi horyzont czasowy, zapoznaj się z [Podsumowanie](#conclusion) sekcją tego artykułu.
 
 ## <a name="scenario-2-you-get-demand-during-the-items-lead-time-period"></a>Scenariusz 2: podczas czasu realizacji towaru uzyskasz zapotrzebowanie
 
@@ -142,7 +142,7 @@ Jeśli wartość dni ujemnych jest ustawiona na **0** (zero) i zostanie użyty t
 
 ### <a name="case-e-use-both-negative-days-that-are-more-than-the-items-lead-time-and-the-dynamic-negative-days-time-fence"></a>Przypadek E: należy stosować obydwa dni ujemne, które są większe niż czas realizacji towaru oraz dynamiczny horyzont czasowy w dniach ujemnych
 
-Jeśli liczba dni ujemnych zostanie ustawiona na liczbę większą niż czas realizacji towaru, a także ten przypadek korzysta z dynamicznego horyzontu czasowego dni ujemnych, to dynamiczny horyzont czasowy w dniach ujemnych wynosi 6 + 6 - 4 = 8 dni. Takie podejście może wytworzyć bardzo długi horyzont czasowy, w którym MRP musi wyszukiwać wyników w programie. Aby uzyskać informacje o tym, jak przypadek E jest związany z sytuacją, w której negatywne dni ustawia się na długi horyzont czasowy, zapoznaj się z [Podsumowanie](#conclusion) sekcją tego tematu.
+Jeśli liczba dni ujemnych zostanie ustawiona na liczbę większą niż czas realizacji towaru, a także ten przypadek korzysta z dynamicznego horyzontu czasowego dni ujemnych, to dynamiczny horyzont czasowy w dniach ujemnych wynosi 6 + 6 - 4 = 8 dni. Takie podejście może wytworzyć bardzo długi horyzont czasowy, w którym MRP musi wyszukiwać wyników w programie. Aby uzyskać informacje o tym, jak przypadek E jest związany z sytuacją, w której negatywne dni ustawia się na długi horyzont czasowy, zapoznaj się z [Podsumowanie](#conclusion) sekcją tego artykułu.
 
 ## <a name="scenario-3-you-get-demand-after-the-items-lead-time-period"></a>Scenariusz 3: po czasie realizacji towaru uzyskasz zapotrzebowanie
 
@@ -204,7 +204,7 @@ Ten przypadek jest taki sam jak przypadek E dla scenariuszy 1 i 2. Ma zasadniczo
 
 ## <a name="conclusion"></a>Wniosek
 
-Jak pokazują trzy scenariusze w tym temacie, dobrze jest określić liczbę dni ujemnych do liczby, która jest większa niż czas realizacji towarów w grupie zapotrzebowania. Warto również stosować tylko dynamiczne dni ujemne, a także ustawiać liczbę dni ujemnych na liczbę dni, które mogą oczekiwać przed zaksięgowaniem nowego uzupełnienia w przypadku ujemnego stanu zapasów (innymi słowy, liczbę dni, w których jesteś gotów dalej opóźniać popyt). Ponadto towary w tej samej grupie zapotrzebowania powinny mieć podobny czas realizacji.
+Jak pokazują trzy scenariusze w tym artykule, dobrze jest określić liczbę dni ujemnych do liczby, która jest większa niż czas realizacji towarów w grupie zapotrzebowania. Warto również stosować tylko dynamiczne dni ujemne, a także ustawiać liczbę dni ujemnych na liczbę dni, które mogą oczekiwać przed zaksięgowaniem nowego uzupełnienia w przypadku ujemnego stanu zapasów (innymi słowy, liczbę dni, w których jesteś gotów dalej opóźniać popyt). Ponadto towary w tej samej grupie zapotrzebowania powinny mieć podobny czas realizacji.
 
 Jeśli wartość w polu liczby dni ujemnych wynosi **0** (zero) i nie zostanie użyta dynamiczna ujemna liczba dni, MRP zawsze tworzy nowe planowane zamówienie w celu zaspokojenia popytu. W tej sytuacji ważne jest, aby pracować z komunikatami akcji w celu upewnienia się, że zapasy nie zostaną gromadzone.
 

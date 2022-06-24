@@ -1,6 +1,6 @@
 ---
 title: Klucze redukcji prognozy
-description: Ten temat zawiera przykłady pokazujące konfigurowanie klucza redukcji. Zawiera informacje o różnych ustawieniach kluczy redukcji i wynikach ich zastosowania. Za pomocą klucza redukcji można określić sposób zmniejszania prognozowanych zapotrzebowań.
+description: Ten artykuł zawiera przykłady pokazujące konfigurowanie klucza redukcji. Zawiera informacje o różnych ustawieniach kluczy redukcji i wynikach ich zastosowania. Za pomocą klucza redukcji można określić sposób zmniejszania prognozowanych zapotrzebowań.
 author: t-benebo
 ms.date: 04/15/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 054eb28044e532ed2850cde21cb2f9fb5181ae02
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 5cf84598b731e9750e3cf79d312bf0bbf4f8bd81
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468986"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854276"
 ---
 # <a name="forecast-reduction-keys"></a>Klucze redukcji prognozy
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie omówiono różne metody, które służą do zmniejszania prognozowanych zapotrzebowań. Zawiera przykłady wyników każdej z tych metod. Ponadto wyjaśniono, jak tworzyć, konfigurować i używać kluczy redukcji prognoz. Niektóre metody używają kluczy redukcji prognoz do zmniejszania prognozowanych zapotrzebowań.
+W tym artykule omówiono różne metody, które służą do zmniejszania prognozowanych zapotrzebowań. Zawiera przykłady wyników każdej z tych metod. Ponadto wyjaśniono, jak tworzyć, konfigurować i używać kluczy redukcji prognoz. Niektóre metody używają kluczy redukcji prognoz do zmniejszania prognozowanych zapotrzebowań.
 
 ## <a name="methods-that-are-used-to-reduce-forecast-requirements"></a>Metody używane w celu zmniejszenia prognozowanych zapotrzebowań
 

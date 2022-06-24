@@ -1,6 +1,6 @@
 ---
 title: Zestawy wymiarów finansowych
-description: W tym temacie opisano zestawy wymiarów finansowych i przedstawiono kilka wskazówek dotyczących optymalizacji ich użycia.
+description: W tym artykule opisano zestawy wymiarów finansowych i przedstawiono kilka wskazówek dotyczących optymalizacji ich użycia.
 author: yukonpeegs
 ms.date: 03/07/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: epegors
 ms.search.validFrom: 2021-03-23
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: c583a2a89b45b59ea76ffd8e38b6206c9ca9ed41
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 3d4c15504b2ad128493e1bafa36aed271c2ab6dc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722584"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864289"
 ---
 # <a name="financial-dimension-sets"></a>Zestawy wymiarów finansowych
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano zestawy wymiarów finansowych i przedstawiono kilka wskazówek dotyczących optymalizacji ich użycia.
+W tym artykule opisano zestawy wymiarów finansowych i przedstawiono kilka wskazówek dotyczących optymalizacji ich użycia.
 
 Zestaw wymiarów to uporządkowana lista wymiarów finansowych, której można użyć do podsumowania danych księgi głównej w sposób zdefiniowany przez użytkownika. Podstawowym zastosowaniem zestawów wymiarów jest zdefiniowanie salda próbnego.
 
