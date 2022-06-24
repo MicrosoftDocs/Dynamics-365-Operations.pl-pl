@@ -1,6 +1,6 @@
 ---
 title: Integracja z notatkami
-description: W tym temacie opisano integrację danych notatek w trybie zapisu podwójnego.
+description: W tym artykule opisano integrację danych notatek w trybie zapisu podwójnego.
 author: RamaKrishnamoorthy
 ms.date: 02/22/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: c73da804d724ea75ae6ccd479d1b7f3cf02d48c4
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 8e1444aa311bb2dc74705a3791e58c3187ecd8ea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062782"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876723"
 ---
 # <a name="note-integration"></a>Integracja z notatkami
 
@@ -22,7 +22,7 @@ ms.locfileid: "8062782"
 
 
 
-Podczas procesów biznesowych użytkownicy Microsoft Dynamics 365 często zbierają informacje o swoich klientach. Te informacje są rejestrowane jako działania i notatki. W tym temacie opisano integrację danych notatek w trybie zapisu podwójnego.
+Podczas procesów biznesowych użytkownicy Microsoft Dynamics 365 często zbierają informacje o swoich klientach. Te informacje są rejestrowane jako działania i notatki. W tym artykule opisano integrację danych notatek w trybie zapisu podwójnego.
 
 Informacje o odbiorcy można sklasyfikować w następujący sposób:
 

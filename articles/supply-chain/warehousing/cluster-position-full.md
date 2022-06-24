@@ -1,6 +1,6 @@
 ---
 title: Stanowisko w grupie pełne
-description: Ten temat zawiera informacje dotyczące funkcji Stanowisko w grupie pełne. Ta funkcja oferuje alternatywę dla sztywnego egzekwowania reguł przerwy w pracy, gdy jest używana funkcja pobierania dla grupy. Zezwala ona na większy margines błędu w ramach ograniczeń dotyczących objętości kontenerów lub pojemników.
+description: Ten artykuł zawiera informacje dotyczące funkcji Stanowisko w grupie pełne. Ta funkcja oferuje alternatywę dla sztywnego egzekwowania reguł przerwy w pracy, gdy jest używana funkcja pobierania dla grupy. Zezwala ona na większy margines błędu w ramach ograniczeń dotyczących objętości kontenerów lub pojemników.
 author: Mirzaab
 ms.date: 08/25/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 459c8fce892d9437c7466458b7e53743c71da38f
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 4d46933b7c60317234b8e39cd6dfd63d383de860
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102845"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857149"
 ---
 # <a name="cluster-position-full"></a>Stanowisko w grupie pełne
 
@@ -30,7 +30,7 @@ Ta funkcja wprowadza możliwość skorzystania z przycisku **Pełne** przy jedne
 
 ## <a name="turn-the-cluster-position-full-feature-on-or-off"></a>Włącz lub wyłącz pełną funkcję pozycji klastra
 
-Aby korzystać z funkcji opisanej w tym temacie, w systemie musi być włączona funkcja *Pełna pozycja klastra*. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.25, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Pełna pozycja klastra* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Aby korzystać z funkcji opisanej w tym artykule, w systemie musi być włączona funkcja *Pełna pozycja klastra*. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.25, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Pełna pozycja klastra* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="setup"></a>Konfiguracja
 

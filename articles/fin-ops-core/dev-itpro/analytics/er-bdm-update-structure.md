@@ -1,6 +1,6 @@
 ---
 title: Aktualizowanie struktury szablonu dokumentu biznesowego
-description: W tym temacie opisano sposób aktualizacji struktury szablonu dokumentu biznesowego przy użyciu funkcji zarządzania dokumentami biznesowymi.
+description: W tym artykule opisano sposób aktualizacji struktury szablonu dokumentu biznesowego przy użyciu funkcji zarządzania dokumentami biznesowymi.
 author: NickSelin
 ms.date: 11/19/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-12-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 2f57e3f3a84a6e767755c69074bc194e90793e6edd79d0e07ae7449d45ec7539
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2adecba4e988bfe04de2c181501b6c3ef8491dcf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775293"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880291"
 ---
 # <a name="update-the-structure-of-a-business-document-template"></a>Aktualizowanie struktury szablonu dokumentu biznesowego 
 
 [!include[banner](../includes/banner.md)]
 
-W okienku **Struktura szablonów** w Edytorze szablonów [Zarządzanie dokumentami biznesowymi](er-business-document-management.md) można zmodyfikować szablon dokumentu biznesowego, [dodając nowe pola](er-bdm-add-field-to-excel-template.md) do szablonu w systemie Microsoft Excel. Struktura szablonu jest następnie automatycznie aktualizowana w systemie Dynamics 365 Finance, tak aby odzwierciedlała zmiany wprowadzone w okienku **Struktura szablonu**.
+W okienku **Struktura szablonów** w Edytorze szablonów [Zarządzanie dokumentami biznesowymi](er-business-document-management.md) można zmodyfikować szablon dokumentu biznesowego, [dodając nowe pola](er-bdm-add-field-to-excel-template.md) do szablonu w systemie Microsoft Excel. Struktura szablonu jest następnie automatycznie aktualizowana w aplikacji Dynamics 365 Finance, tak aby odzwierciedlała zmiany wprowadzone w okienku **Struktura szablonu**.
 
 Można również zmodyfikować szablon, korzystając z funkcji online systemu Office 365. Można na przykład dodać do edytowalnego arkusza nowy nazwany element, taki jak obraz lub kształt. W takim przypadku struktura szablonu nie jest automatycznie aktualizowana w module Finance, a dodany element nie jest wyświetlany w okienku **Struktura szablonów**. Aby ręcznie zaktualizować strukturę szablonów w module Finance, należy wybrać opcję **Aktualizuj strukturę** na stronie Edytor szablonów.
 

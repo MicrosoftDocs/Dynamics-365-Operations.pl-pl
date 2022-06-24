@@ -1,6 +1,6 @@
 ---
-title: Księgowanie przyjęć i wysyłek dla Intrastat
-description: W tym temacie pokazano na przykładzie, jak księgować przyjęcia i wysyłki dla Intrastat.
+title: Księgowanie przyjęć i wysyłek dla systemu Intrastat
+description: W tym artykule pokazano na przykładzie, jak księgować przyjęcia i wysyłki dla Intrastat.
 author: anasyash
 ms.date: 8/23/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: 4ab4402740d199043519773b18732bdde9a0fb2f
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: aef20f0261e103be7fe231a7efb39751ab4d1151
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724791"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862972"
 ---
-# <a name="post-arrivals-and-dispatches-for-intrastat"></a>Księgowanie przyjęć i wysyłek dla Intrastat
+# <a name="post-arrivals-and-dispatches-for-intrastat"></a>Księgowanie przyjęć i wysyłek dla systemu Intrastat
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie pokazano na przykładzie, jak księgować przyjęcia i wysyłki dla Intrastat. W przykładzie użyto firmy **ITCO**.
+W tym artykule pokazano na przykładzie, jak księgować przyjęcia i wysyłki dla Intrastat. W przykładzie użyto firmy **ITCO**.
 
 ## <a name="setup"></a>Konfiguracja
 

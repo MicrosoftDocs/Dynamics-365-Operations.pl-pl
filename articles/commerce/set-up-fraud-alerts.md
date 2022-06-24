@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie i praca z alertami o oszustwach w biurze obsługi
-description: W tym temacie wyjaśniono sposób konfigurowania reguł powiadomień dla działu obsługi klienta o potencjalnie fałszywych informacjach przy przetwarzaniu zamówień. Można zdefiniować określone kody używane do automatycznego lub ręcznego wstrzymania podejrzanych zamówień.
+description: W tym artykule wyjaśniono sposób konfigurowania reguł powiadomień dla działu obsługi klienta o potencjalnie fałszywych informacjach przy przetwarzaniu zamówień. Można zdefiniować określone kody używane do automatycznego lub ręcznego wstrzymania podejrzanych zamówień.
 author: josaw1
 ms.date: 05/14/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e692d43b8c2648a424ff3b4fdc9d0cf16d0e03702d6a237f71caaf49646c5ec3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 212afd594453d3594fdaef9442a7809e4cafbd07
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763675"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885355"
 ---
 # <a name="set-up-and-work-with-call-center-fraud-alerts"></a>Konfigurowanie i praca z alertami o oszustwach w biurze obsługi
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano sposób ustawiania kryteriów i zasad tak, aby wstrzymać potencjalnie fałszywe zamówienia sprzedaży w celu dalszego sprawdzenia. Funkcja wykrywania oszustw służy do określania prawidłowości informacji w zamówieniu sprzedaży. Jeżeli informacje w zamówieniu sprzedaży budzą wątpliwości na podstawie obowiązujących w organizacji kryteriów i zasad dotyczących oszustw, zamówienie można wstrzymać w celu dalszego sprawdzenia. W takim przypadku nie można zwolnić zamówienia do magazynu w celu dalszego przetwarzania do czasu, aż blokada zostanie zdjęta.
+W tym artykule opisano sposób ustawiania kryteriów i zasad tak, aby wstrzymać potencjalnie fałszywe zamówienia sprzedaży w celu dalszego sprawdzenia. Funkcja wykrywania oszustw służy do określania prawidłowości informacji w zamówieniu sprzedaży. Jeżeli informacje w zamówieniu sprzedaży budzą wątpliwości na podstawie obowiązujących w organizacji kryteriów i zasad dotyczących oszustw, zamówienie można wstrzymać w celu dalszego sprawdzenia. W takim przypadku nie można zwolnić zamówienia do magazynu w celu dalszego przetwarzania do czasu, aż blokada zostanie zdjęta.
 
 > [!NOTE]
 > Tej funkcji można używać tylko z przetwarzaniem zamówień sprzedaży dla kanału Biuro obsługi rozwiązania Commerce.

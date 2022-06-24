@@ -1,6 +1,6 @@
 ---
 title: Ustawianie masek kodów kreskowych
-description: W tym temacie opisano, jak konfigurować znaki maski kodów kreskowych i maski kodów kreskowych oraz jak przypisywać maski kodów kreskowych do kodów kreskowych.
+description: W tym artykule opisano, jak konfigurować znaki maski kodów kreskowych i maski kodów kreskowych oraz jak przypisywać maski kodów kreskowych do kodów kreskowych.
 author: BrianShook
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ddba3ef6c6a1fb1f71198291d5eccd44be737336
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 97b490384cff27c60191a87dc623eb6a2ef868f0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779829"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853719"
 ---
 # <a name="set-up-bar-code-masks"></a>Ustawianie masek kodów kreskowych
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano, jak konfigurować znaki maski kodów kreskowych i maski kodów kreskowych oraz jak przypisywać maski kodów kreskowych do kodów kreskowych.
+W tym artykule opisano, jak konfigurować znaki maski kodów kreskowych i maski kodów kreskowych oraz jak przypisywać maski kodów kreskowych do kodów kreskowych.
 
 ## <a name="set-up-bar-code-mask-characters"></a>Konfigurowanie znaków maski kodu kreskowego
 

@@ -1,6 +1,6 @@
 ---
 title: Wycofaj konfiguracje w repozytorium globalnym RCS
-description: W tym temacie opisano sposób wycofania konfiguracji w repozytorium globalnym RCS.
+description: W tym artykule opisano sposób wycofania konfiguracji w repozytorium globalnym RCS.
 author: JaneA07
 ms.date: 02/17/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2021-02-02
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 340fc96e7dfe56da9ee8d4831a5980e3e96ec3ee0f2f5a8fb2ab72f713de9737
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4121f45a95e1712f21390c317af532662846a0fc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712177"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894819"
 ---
 # <a name="discontinue-configurations-in-the-rcs-global-repository"></a>Wycofaj konfiguracje w repozytorium globalnym RCS
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób wycofania konfiguracji w repozytorium globalnym RCS. Wcześniej można było usuwać tylko konfiguracje, które nie były już wymagane. Teraz jednak można oznaczyć zwolniną konfigurację jako **Wycofaną** w repozytorium globalnym RCS. Dzięki tej funkcji możesz również wykonać następujące czynności: 
+W tym artykule opisano sposób wycofania konfiguracji w repozytorium globalnym RCS. Wcześniej można było usuwać tylko konfiguracje, które nie były już wymagane. Teraz jednak można oznaczyć zwolniną konfigurację jako **Wycofaną** w repozytorium globalnym RCS. Dzięki tej funkcji możesz również wykonać następujące czynności: 
  
  - Jeśli konfiguracja ma zostać przerwana, należy otrzymywać powiadomienia z góry.
  - Uwzględnij odpowiednie szczegóły dotyczące konfiguracji wymiany.
@@ -56,7 +56,7 @@ Aby udostępnić informacje dotyczące planowanego przerwania przed zakończenie
 
 ## <a name="finance-supports-displaying-this-information-starting-in-version-10014"></a>Funkcje finansowe obsługują wyświetlanie tych informacji w wersji 10.0.14
 
-Począwszy od wersji 10.0.14, Dynamics 365 Finance obsługuje wyświetlanie informacji o wycofaniu. Na stronie **Repozytorium globalnym** można wyświetlać aktualne informacje związane z przerwaniem. Domyślnie konfiguracje wycofane są odfiltrowywowane.
+Począwszy od wersji 10.0.14, aplikacja Dynamics 365 Finance obsługuje wyświetlanie informacji o wycofaniu. Na stronie **Repozytorium globalnym** można wyświetlać aktualne informacje związane z przerwaniem. Domyślnie konfiguracje wycofane są odfiltrowywowane.
   
 Strona **Konfiguracje zaimportowane** (ERSolutionTable) zawiera konfiguracje, które zostały już wycofane podczas importowania. W przypadku konfiguracji, które zostały wycofane po imporcie, informacje o wycofaniu można zsynchronizować, uruchamiając zadanie **Importuj aktualizacje konfiguracji**.
 

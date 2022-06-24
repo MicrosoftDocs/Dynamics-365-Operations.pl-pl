@@ -1,6 +1,6 @@
 ---
 title: Deklaracja VAT (Dania)
-description: W tym temacie opisano, jak skonfigurować i wygenerować zaliczkową deklarację podatku od wartości dodanej (VAT) dla Danii.
+description: W tym artykule opisano, jak skonfigurować i wygenerować zaliczkową deklarację podatku od wartości dodanej (VAT) dla Danii.
 author: anasyash
 ms.date: 03/10/2022
 ms.topic: article
@@ -9,22 +9,22 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: 4d4a1185fa3c3b059744018b6e4e195de07126c9
-ms.sourcegitcommit: 9c19898e1f41495f804c7f07e2636b53a098c4c1
+ms.openlocfilehash: 666dc96cb169ab28ac3938299a3f245e3b4511ab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "8402987"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863007"
 ---
 # <a name="vat-declaration-denmark"></a>Deklaracja VAT (Dania)
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano, jak skonfigurować deklarację podatku od wartości dodanej (VAT) dla Danii i wyświetlić jej podgląd w Microsoft Excel.
+W tym artykule opisano, jak skonfigurować deklarację podatku od wartości dodanej (VAT) dla Danii i wyświetlić jej podgląd w Microsoft Excel.
 
 Aby automatycznie wygenerować raport, należy najpierw utworzyć wystarczającą liczbę kodów podatków, aby zachować oddzielne księgowanie podatku VAT dla każdego pola w deklaracji zaliczki na podatek VAT. Ponadto w specyficznych dla aplikacji parametrach formatu raportowania elektronicznego (ER) dla deklaracji zaliczki na podatek VAT należy skojarzyć kody podatków z wynikami wyszukiwania pól w deklaracji podatku VAT.
 
-Dla Danii należy skonfigurować **Wyszukiwanie pól raportu**. Aby uzyskać więcej informacji dotyczących sposobu konfiguracji parametrów specyficznych dla aplikacji, zobacz sekcję [Konfigurowanie parametrów specyficznych dla aplikacji dla pól deklaracji podatku VAT](#set-up-application-specific-parameters) w dalszej części tego tematu.
+Dla Danii należy skonfigurować **Wyszukiwanie pól raportu**. Aby uzyskać więcej informacji dotyczących sposobu konfiguracji parametrów specyficznych dla aplikacji, zobacz sekcję [Konfigurowanie parametrów specyficznych dla aplikacji dla pól deklaracji podatku VAT](#set-up-application-specific-parameters) w dalszej części tego artykułu.
 
 W poniższej tabeli kolumna „Wynik wyszukiwania” zawiera wynik wyszukiwania, który jest wstępnie skonfigurowany dla określonego wiersza deklaracji podatku VAT w formacie deklaracji podatku VAT. Aby poprawnie skojarzyć kody podatków z wynikami wyszukiwania, a następnie z wierszem deklaracji podatku VAT, należy skorzystać z tych informacji.
 
@@ -124,7 +124,7 @@ Aby określić, które kody podatków generują pola deklaracji podatku VAT, nal
 
     | Pole                  | Opis                                                                                                                                                                                                                                                                                                          |
     |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Wynik wyszukiwania          | Wybierz wartość pola raportu. Aby uzyskać więcej informacji o wartościach i ich przypisywaniu do wierszy deklaracji podatku VAT, zobacz sekcję [Omówienie deklaracji VAT](#vat-declaration-overview) wcześniej w tym temacie.                                                                                               |
+    | Wynik wyszukiwania          | Wybierz wartość pola raportu. Aby uzyskać więcej informacji o wartościach i ich przypisywaniu do wierszy deklaracji podatku VAT, zobacz sekcję [Omówienie deklaracji VAT](#vat-declaration-overview) wcześniej w tym artykule.                                                                                               |
     | Kod podatku               | Wybierz kod podatku, z którym będzie skojarzony z polem raportu. W odpowiednim polu deklaracji zostaną zebrane zaksięgowane transakcje podatkowe o wybranym kodzie podatku. Zaleca się rozdzielanie kodów podatków w taki sposób, aby jeden kod podatku generował kwoty tylko w jednym polu deklaracji. |
     | Klasyfikator transakcji | W przypadku utworzenia wystarczającej liczby kodów podatków do ustalenia pola deklaracji, należy zaznaczyć pole **\*Niepuste\***. Jeśli utworzono za mało kodów podatków, aby jeden kod podatku generował kwoty tylko w jednym polu deklaracji, można skonfigurować klasyfikator transakcji. Dostępne są następujące klasyfikatory transakcji:</br>-   **Zakup**</br>-   **PurchaseExempt** (zakup zwolniony z podatku)</br>-   **PurchaseReverseCharge** (podatek naliczony z opłaty zwrotnej zakupu)</br>-   **Sprzedaż**</br>-   **SalesExempt** (sprzedaż zwolniona z podatku)</br>-   **SalesReverseCharge** (podatek należny z opłaty zwrotnej zakupu lub opłaty zwrotnej sprzedaży)</br>-   **Podatek obrotowy**. </br>Dla każdego klasyfikatora transakcji jest również dostępny klasyfikator dla faktury korygującej. Na przykład jednym z tych klasyfikatorów jest **PurchaseCreditNote** (faktura korygująca zakupu).</br>Dla każdego kodu podatku należy utworzyć dwa wiersze: jeden z wartością klasyfikatora transakcji oraz jeden z klasyfikatorem transakcji dla wartości faktury korygującej. |
 
@@ -212,7 +212,7 @@ Pakiet danych zawiera ustawienia wiadomości elektronicznych, które służą do
 
 ## <a name="generate-a-vat-declaration-from-electronic-messages"></a>Generowanie deklaracji podatku VAT z komunikatów elektronicznych
 
-Gdy do generowania raportu są używane wiadomości elektroniczne, można zbierać dane podatkowe od wielu osób prawnych. Aby uzyskać więcej informacji, zobacz sekcję [Uruchamianie deklaracji podatku VAT dla wielu osób prawnych](#run-vat-declaration) w dalszej części tego tematu.
+Gdy do generowania raportu są używane wiadomości elektroniczne, można zbierać dane podatkowe od wielu osób prawnych. Aby uzyskać więcej informacji, zobacz sekcję [Uruchamianie deklaracji podatku VAT dla wielu osób prawnych](#run-vat-declaration) w dalszej części tego artykułu.
 
 Następująca procedura jest stosowana w przykładzie przetwarzania wiadomości elektronicznych zaimportowanych z biblioteki udostępnionych wcześniej elementów zawartości usługi LCS.
 
@@ -224,12 +224,12 @@ Następująca procedura jest stosowana w przykładzie przetwarzania wiadomości 
    > [!NOTE]
    > Kroki od 5 do 7 są opcjonalne.
 
-5. Opcjonalnie: na skróconej karcie **Wiadomości** wybierz pozycję **Zbierz dane**, a następnie wybierz przycisk **OK**. Płatności podatku wygenerowane wcześniej są dodawane do wiadomości. Więcej informacji znajduje się w sekcji [Rozliczanie i księgowanie podatku](#settle-and-post-sales-tax) we wcześniejszej części tego tematu. Jeśli ten krok zostanie pominięty, nadal będzie można wygenerować deklarację podatku VAT, korzystając z pola **Wersja deklaracji podatkowej** w oknie dialogowym **Deklaracja**.
+5. Opcjonalnie: na skróconej karcie **Wiadomości** wybierz pozycję **Zbierz dane**, a następnie wybierz przycisk **OK**. Płatności podatku wygenerowane wcześniej są dodawane do wiadomości. Więcej informacji znajduje się w sekcji [Rozliczanie i księgowanie podatku](#settle-and-post-sales-tax) we wcześniejszej części tego artykułu. Jeśli ten krok zostanie pominięty, nadal będzie można wygenerować deklarację podatku VAT, korzystając z pola **Wersja deklaracji podatkowej** w oknie dialogowym **Deklaracja**.
 6. Opcjonalnie: na skróconej karcie **Elementy wiadomości** przejrzyj płatności podatku przeniesione do przetworzenia. Domyślnie uwzględniane są wszystkie płatności podatku z wybranego okresu, które nie zostały uwzględnione w żadnej innej wiadomości tego samego przetwarzania.
 7. Opcjonalnie: wybierz **Dokument oryginalny**, aby przejrzeć płatności podatków, lub opcję **Usuń**, aby wykluczyć płatności podatku z przetwarzania. Jeśli ten krok zostanie pominięty, nadal będzie można wygenerować deklarację podatku VAT, korzystając z pola **Wersja deklaracji podatkowej** w oknie dialogowym **Deklaracja**.
 8. Na skróconej karcie **Wiadomości** wybierz **Aktualizuj stan**. W oknie dialogowym **Aktualizacja stanu** wybierz pozycję **Gotowe do wygenerowania**, a następnie wybierz przycisk **OK**. Sprawdź, czy stan wiadomości został zmieniony na **Gotowe do wygenerowania**.
 9. Wybierz pozycję **Generuj raport**. Aby wyświetlić podgląd kwot deklaracji podatku VAT, w oknie dialogowym **Uruchamianie przetwarzania** wybierz opcję **Podgląd raportu**, a następnie przycisk **OK**.
-10. W oknie dialogowym **Parametry raportowania elektronicznego** ustaw pola w sposób opisany w sekcji [Podgląd deklaracji VAT w programie Excel](#preview-vat-excel) w sekcji zadania okresowego Raport podatku dla okresu rozliczeniowego wcześniej w tym temacie, a następnie wybierz **przycisk OK**.
+10. W oknie dialogowym **Parametry raportowania elektronicznego** ustaw pola w sposób opisany w sekcji [Podgląd deklaracji VAT w programie Excel](#preview-vat-excel) w sekcji zadania okresowego Raport podatku dla okresu rozliczeniowego wcześniej w tym artykule, a następnie wybierz przycisk **OK**.
 11. Wybierz przycisk **Załączniki** (symbol spinacza do papieru) w prawym górnym rogu strony, a następnie wybierz **Otwórz** , aby otworzyć plik. Przejrzyj kwoty w dokumencie Excel.
 
 ## <a name="run-a-vat-declaration-for-multiple-legal-entities"></a><a name="run-vat-declaration"></a>Uruchomienie deklaracji podatku VAT dla wielu firm

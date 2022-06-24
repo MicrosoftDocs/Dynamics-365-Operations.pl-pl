@@ -1,6 +1,6 @@
 ---
 title: Kupuj i sprzedawaj urlop
-description: W tym temacie opisano sposób przesyłania wniosków o zakup i sprzedaż urlopów w Dynamics 365 Human Resources.
+description: W tym artykule opisano sposób przesyłania wniosków o zakup i sprzedaż urlopów w Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 08/26/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 695840516849dcfeb69895f6808d828d5878c59b
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: a6d38a69a73ce14f099beb6b6b560bf6c5686b0c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688184"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875721"
 ---
 # <a name="buy-and-sell-leave"></a>Kupuj i sprzedawaj urlop
 
 
 >[!Important]
->Funkcjonalność opisana w tym temacie jest obecnie dostępna dla klientów samodzielnej wersji Dynamics 365 Human Resources. Część lub całość tej funkcjonalności będzie dostępna w ramach przyszłego wydania infrastruktury Finance po wydaniu wersji Finance 10.0.26.
+>Funkcjonalność opisana w tym artykule jest obecnie dostępna dla klientów samodzielnej wersji Dynamics 365 Human Resources. Część lub całość tej funkcjonalności będzie dostępna w ramach przyszłego wydania infrastruktury Finance po wydaniu wersji Finance 10.0.26.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

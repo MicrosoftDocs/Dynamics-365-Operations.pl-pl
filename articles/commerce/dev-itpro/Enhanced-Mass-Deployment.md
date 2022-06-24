@@ -1,6 +1,6 @@
 ---
 title: Masowe wdrażanie zapieczętowanych składników samoobsługi rozwiązania Commerce
-description: W tym temacie opisano, jak używać struktury dla instalatorów składników samoobsługowych do instalacji dyskretnych i wdrożeń usług.
+description: W tym artykule opisano, jak używać struktury dla instalatorów składników samoobsługowych do instalacji dyskretnych i wdrożeń usług.
 author: jashanno
 ms.date: 05/11/2022
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2021-04-30
-ms.openlocfilehash: 5cb27fd0ea366d12c8bd6ee1cdb0c6d584375862
-ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
+ms.openlocfilehash: a679d78db3ad5bd9cccbd4ab6a7026bd07890f55
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8741557"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898586"
 ---
 # <a name="mass-deployment-of-sealed-commerce-self-service-components"></a>Masowe wdrażanie zapieczętowanych składników samoobsługi rozwiązania Commerce
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat dotyczy uszczelnionych ram, instalatorów komponentów, które są wydawane co miesiąc, począwszy od wersji 10.0.18, i które są udostępniane w bibliotece Shared asset w usłudze Microsoft Dynamics Lifecycle Services (LCS). Należy zwrócić uwagę, że pierwszych kilka wersji tych nowych instalatorów jest oznaczonych jako **(Wersja zapoznawcza)**. Jednak jedynym celem tego przeznaczenia jest rozróżnianie nowych instalatorów, podczas gdy firma Microsoft określa, czy istnieją dodatkowe wymagania dotyczące ich funkcji. Nie oznacza to, że instalatorzy nie są prawidłowi dla produkcji. Zgodnie z wydaniami tych nowych instalatorów firma Microsoft planuje przestać starszych (starszych) instalatorów w lub w końca październiku 2023 roku. 
+Ten artykuł dotyczy uszczelnionych ram, instalatorów komponentów, które są wydawane co miesiąc, począwszy od wersji 10.0.18, i które są udostępniane w bibliotece Shared asset w usłudze Microsoft Dynamics Lifecycle Services (LCS). Należy zwrócić uwagę, że pierwszych kilka wersji tych nowych instalatorów jest oznaczonych jako **(Wersja zapoznawcza)**. Jednak jedynym celem tego przeznaczenia jest rozróżnianie nowych instalatorów, podczas gdy firma Microsoft określa, czy istnieją dodatkowe wymagania dotyczące ich funkcji. Nie oznacza to, że instalatorzy nie są prawidłowi dla produkcji. Zgodnie z wydaniami tych nowych instalatorów firma Microsoft planuje przestać starszych (starszych) instalatorów w lub w końca październiku 2023 roku. 
 
-W tym temacie wyjaśniono, jak używać nowych instalatorów do wykonywania instalacji dyskretnej i obsługi aktualizacji przy użyciu argumentów wiersza polecenia. Argumenty te pozwalają na masowe rozmieszczanie na kilka sposobów.
+W tym artykule wyjaśniono, jak używać nowych instalatorów do wykonywania instalacji dyskretnej i obsługi aktualizacji przy użyciu argumentów wiersza polecenia. Argumenty te pozwalają na masowe rozmieszczanie na kilka sposobów.
 
 > [!NOTE]
 > Nowy samoobsługowy, zapieczętowany instalator nie będzie dostępny w programie Headquarters i będzie można go pobrać tylko za pośrednictwem usługi LCS.
@@ -108,7 +108,7 @@ Migracja ze starych instalatorów składników struktury samoobsługowej do nowy
 
 ### <a name="before-you-begin"></a>Przed rozpoczęciem
 
-Bardzo ważne jest usunięcie starego, samoobsługowego składnika programu Modern POS. Aby uzyskać więcej informacji, zobacz kroki migracji we wcześniejszej części tego tematu.
+Bardzo ważne jest usunięcie starego, samoobsługowego składnika programu Modern POS. Aby uzyskać więcej informacji, zobacz kroki migracji we wcześniejszej części tego artykułu.
 
 ### <a name="examples-of-silent-deployment"></a>Przykłady wdrożenia w trybie dyskretnym
 
@@ -125,7 +125,7 @@ CommerceModernPOS.exe --help install
 ```
 
 > [!NOTE]
-> Plik konfiguracji nie jest wymagany dla programu Modern POS. Instalator ma teraz parametry (pokazane wcześniej w tym temacie) dla różnych wartości, które są używane podczas aktywacji urządzenia.
+> Plik konfiguracji nie jest wymagany dla programu Modern POS. Instalator ma teraz parametry (pokazane wcześniej w tym artykule) dla różnych wartości, które są używane podczas aktywacji urządzenia.
 
 Poniższe polecenie określa wszystkie parametry, które powinny być używane podczas aktywacji urządzenia po zainstalowaniu aplikacji Modern POS. W tym przykładzie jest używana **Houston-3**, która jest powszechnie używaną wartością w danych demonstracyjnych Dynamics 365 Commerce.
 
@@ -145,7 +145,7 @@ Te pojęcia można łączyć w celu uzyskania pożądanego wyniku instalacji.
 
 ### <a name="before-you-begin"></a>Przed rozpoczęciem
 
-Bardzo ważne jest, aby usunąć stary składnik samoobsługowej stacji sprzętowej. Aby uzyskać więcej informacji, zobacz kroki migracji we wcześniejszej części tego tematu. Nie istnieje już narzędzie do informacji o kontach handlowców. W zamian informacje o koncie handlowca są instalowane podczas parowania terminalu w programie POS ze stacją sprzętową. Podczas testowania tego instalatora po raz pierwszy zdecydowanie zaleca się uruchomienie następującego polecenia:
+Bardzo ważne jest, aby usunąć stary składnik samoobsługowej stacji sprzętowej. Aby uzyskać więcej informacji, zobacz kroki migracji we wcześniejszej części tego artykułu. Nie istnieje już narzędzie do informacji o kontach handlowców. W zamian informacje o koncie handlowca są instalowane podczas parowania terminalu w programie POS ze stacją sprzętową. Podczas testowania tego instalatora po raz pierwszy zdecydowanie zaleca się uruchomienie następującego polecenia:
 
 ```Console
 CommerceHardwareStation.exe --help install
@@ -166,7 +166,7 @@ HardwareStation.exe install --Port 443 --StoreSystemAOSURL "https://MyDynamics36
 ```
 
 > [!NOTE]
-> Plik konfiguracyjny nie jest wymagany dla stacji sprzętowej. Instalator ma teraz parametry (pokazane wcześniej w tym temacie) dla różnych wymaganych wartości.
+> Plik konfiguracyjny nie jest wymagany dla stacji sprzętowej. Instalator ma teraz parametry (pokazane wcześniej w tym artykule) dla różnych wymaganych wartości.
 
 Poniższe polecenie określa wszystkie parametry wymagane do pomijania testów wymagań wstępnych podczas standardowej instalacji. 
 
@@ -189,7 +189,7 @@ CommerceStoreScaleUnitSetup.exe --help install
 
 ### <a name="before-you-begin"></a>Przed rozpoczęciem
 
-Bardzo ważne jest, aby usunąć stary samoobsługowy składnik CSU (samoobsługowy). Aby uzyskać więcej informacji, zobacz kroki migracji we wcześniejszej części tego tematu.
+Bardzo ważne jest, aby usunąć stary samoobsługowy składnik CSU (samoobsługowy). Aby uzyskać więcej informacji, zobacz kroki migracji we wcześniejszej części tego artykułu.
 
 ### <a name="examples-of-silent-deployment"></a>Przykłady wdrożenia w trybie dyskretnym
 

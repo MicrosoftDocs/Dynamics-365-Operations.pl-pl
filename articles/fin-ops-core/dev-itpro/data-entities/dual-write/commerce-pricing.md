@@ -1,6 +1,6 @@
 ---
 title: Używanie aparatu kalkulacji cen Dynamics 365 Commerce z rozwiązaniem Dynamics 365 Sales
-description: W tym temacie opisano sposób używania aparatu kalkulacji cen w Microsoft Dynamics 365 Commerce z Dynamics 365 Sales w celu tworzenia ofert sprzedaży.
+description: W tym artykule opisano sposób używania aparatu kalkulacji cen w Microsoft Dynamics 365 Commerce z Dynamics 365 Sales w celu tworzenia ofert sprzedaży.
 author: ShalabhjainMSFT
 ms.date: 11/19/2020
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgri
 ms.search.region: global
 ms.author: shajain
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: c3f1527e5f37bebba57661ca86b1a3aae7e62da0
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 11a164ec15c8b7a69172a153b961011a8b324712
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416762"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881402"
 ---
 # <a name="use-the-dynamics-365-commerce-pricing-engine-with-dynamics-365-sales"></a>Używanie aparatu kalkulacji cen Dynamics 365 Commerce z rozwiązaniem Dynamics 365 Sales
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie opisano sposób używania aparatu kalkulacji cen w Microsoft Dynamics 365 Commerce z Dynamics 365 Sales w celu tworzenia ofert sprzedaży.
+W tym artykule opisano sposób używania aparatu kalkulacji cen w Microsoft Dynamics 365 Commerce z Dynamics 365 Sales w celu tworzenia ofert sprzedaży.
 
 Aparat kalkulacji cen Dynamics 365 Commerce obsługuje większość scenariuszy kalkulacji cen w relacjach B2C, takich jak ceny na poziomie sklepu, ceny oparte na przynależności i lojalności, rabaty za skład zamówienia, rabaty ilościowe i rabaty progowe. Aparat cenowy używa złożonych reguł w celu określenia najlepszej ceny dla danej oferty lub zamówienia.
 

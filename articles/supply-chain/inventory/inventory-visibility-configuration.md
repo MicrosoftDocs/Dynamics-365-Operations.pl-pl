@@ -1,8 +1,8 @@
 ---
-title: Konfiguracja dodatku Widoczność magazynu
-description: W tym temacie opisano sposób konfigurowania dodatku Widoczność magazynu.
+title: Konfiguracja dodatku Inventory Visibility
+description: W tym artykule opisano sposób konfigurowania dodatku Widoczność magazynu.
 author: yufeihuang
-ms.date: 12/09/2021
+ms.date: 05/27/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,23 +11,23 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 7e42c0b49a4083edd0e64551f4840bd74d412fc1
-ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
+ms.openlocfilehash: 2bdb2ca0067ea430b249ac619a38c8bcec75f2f7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "8786846"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895823"
 ---
-# <a name="configure-inventory-visibility"></a>Konfiguracja dodatku Widoczność magazynu
+# <a name="configure-inventory-visibility"></a>Konfiguracja dodatku Inventory Visibility
 
 [!include [banner](../includes/banner.md)]
 
 
-W tym temacie opisano sposób konfigurowania widoczności magazynu za pomocą aplikacji Widoczność magazynu w usłudze Power Apps.
+W tym artykule opisano sposób konfigurowania widoczności magazynu za pomocą aplikacji Widoczność magazynu w usłudze Power Apps.
 
 ## <a name="introduction"></a><a name="introduction"></a>Wprowadzenie
 
-Przed rozpoczęciem pracy z dodatkiem Widoczność magazynu należy wykonać następującą konfigurację w sposób opisany w tym temacie:
+Przed rozpoczęciem pracy z dodatkiem Widoczność magazynu należy wykonać następującą konfigurację w sposób opisany w tym artykule:
 
 - [Konfiguracja źródła danych](#data-source-configuration)
 - [Konfiguracja partycji](#partition-configuration)
@@ -41,7 +41,7 @@ Przed rozpoczęciem należy zainstalować i skonfigurować dodatek Widoczność 
 
 ## <a name="the-configuration-page-of-the-inventory-visibility-app"></a><a name="configuration"></a>Strona konfiguracji aplikacji Widoczność magazynu
 
-W usłudze Power Apps strona **Konfiguracja** aplikacji [Widoczność zapasów](inventory-visibility-power-platform.md) ułatwia skonfigurowanie dostępnych zapasów i rezerwacji wstępnej. Po zainstalowaniu tego dodatku domyślna konfiguracja zawiera wartość z Microsoft Dynamics 365 Supply Chain Management (źródło danych `fno`). Ustawienia domyślne można przejrzeć. Ponadto na podstawie wymagań firmy oraz wymagań księgowania zapasów w zewnętrznym systemie można zmodyfikować konfigurację w celu standaryzacji sposobu, w jaki zmiany zapasów mogą być księgowane, organizowane i wyszukiwane w różnych systemach. Pozostałe sekcje tego tematu zawierają informacje dotyczące sposobu używania poszczególnych części strony **Konfiguracja**.
+W usłudze Power Apps strona **Konfiguracja** aplikacji [Widoczność zapasów](inventory-visibility-power-platform.md) ułatwia skonfigurowanie dostępnych zapasów i rezerwacji wstępnej. Po zainstalowaniu tego dodatku domyślna konfiguracja zawiera wartość z Microsoft Dynamics 365 Supply Chain Management (źródło danych `fno`). Ustawienia domyślne można przejrzeć. Ponadto na podstawie wymagań firmy oraz wymagań księgowania zapasów w zewnętrznym systemie można zmodyfikować konfigurację w celu standaryzacji sposobu, w jaki zmiany zapasów mogą być księgowane, organizowane i wyszukiwane w różnych systemach. Pozostałe sekcje tego artykułu zawierają informacje dotyczące sposobu używania poszczególnych części strony **Konfiguracja**.
 
 Po zakończeniu konfigurowania pamiętaj o wybraniu pozycji **Aktualizuj konfigurację** w aplikacji.
 
@@ -54,6 +54,7 @@ Dodatek Widoczność magazynu powoduje dodanie kilku nowych funkcji do instalacj
 | *OnHandReservation* | Ta funkcja umożliwia tworzenie rezerwacji, rezerwacje zużycia i/lub anulowanie rezerwacji określonych ilości zapasów za pomocą funkcji Widoczność zapasów. Więcej informacji zawiera temat [Rezerwacje dodatku Widoczność magazynu](inventory-visibility-reservations.md). |
 | *OnHandMostSpecificBackgroundService* | Ta funkcja zapewnia podsumowanie zapasów produktów wraz ze wszystkimi wymiarami. Dane podsumowania zapasów będą okresowo synchronizowane z aplikacją Widoczność magazynu. Aby uzyskać więcej informacji, zobacz [Podsumowanie inwentaryzacji](inventory-visibility-power-platform.md#inventory-summary). |
 | *OnhandChangeSchedule* | Ta opcjonalna funkcja umożliwia korzystanie z funkcji harmonogramu zmian w stanie gotowości do pracy oraz dostępności do przyrzeczenia (ATP). Aby uzyskać więcej informacji, zobacz [Widoczność zapasów — harmonogram i zmiany dostępnych zapasów oraz dostępność zapasów](inventory-visibility-available-to-promise.md). |
+| *Alokacja* | Dzięki tej opcjonalnej funkcji funkcja Widoczność magazynu umożliwia ochronę zapasów (ringfencing) i kontrolę nad nadmierną sprzedażą. Więcej informacji zawiera temat [Alokacja zapasów dodatku Widoczność magazynu](inventory-visibility-allocation.md). |
 | *Włącz pozycje magazynowe w Widoczności magazynu* | Ta opcjonalna funkcja umożliwia widoczności zapasów obsługę pozycji, które są włączone do zaawansowanych procesów magazynowych (pozycje WHS). Więcej informacji zawiera temat [Obsługa widoczności inwentarza dla pozycji WHS](inventory-visibility-whs-support.md). |
 
 ## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Znajdowanie punktu końcowego usługi
@@ -320,6 +321,13 @@ Procedura konfigurowania indeksu hierarchii produktów jest następująca.
     - **Numer zestawu** — wymiary należące do tej samej grupy (indeksu) zostaną pogrupowane i zostanie im przydzielony ten sam numer zestawu.
     - **Hierarchia** — hierarchia służy do definiowania obsługiwanych kombinacji wymiarów, które mogą być używane w zapytaniach w grupie wymiarów (indeksie). Jeśli na przykład zostanie skonfigurowana grupa wymiarów z sekwencją hierarchii *Styl*, *Kolor* i *Rozmiar*, system obsługuje wynik trzech grup zapytań. Pierwsza grupa to sam styl. Druga grupa to kombinacja stylu i koloru. A trzecia grupa to kombinacja stylu, koloru i rozmiaru. Inne kombinacje nie są obsługiwane.
 
+> [!TIP]
+> Poniżej podano kilka wskazówek, które należy pamiętać podczas konfigurowania hierarchii indeksów:
+>
+> - W konfiguracjach indeksów nie należy określać wymiarów podstawowych, które są definiowane w konfiguracji partycji. Jeśli wymiar podstawowy zostanie ponownie zdefiniowany w konfiguracji indeksu, zapytanie według tego indeksu nie będzie możliwe.
+> - Jeśli potrzebne jest tylko zapytanie o stany magazynowe zagregowane według wszystkich kombinacji wymiarów, należy utworzyć pojedynczy indeks zawierający wymiar podstawowy `Empty`.
+> - Musisz mieć co najmniej jedną hierarchię indeksu (na przykład zawierającą wymiar podstawowy `Empty`), w przeciwnym razie zapytania zakończą się niepowodzeniem z błędem "Nie ustawiono hierarchii indeksu".
+
 ### <a name="example"></a>Przykład
 
 Ta sekcja zawiera przykład, który pokazuje, jak działa hierarchia.
@@ -372,11 +380,6 @@ Indeks umożliwia wykonywanie następujących zapytań o dostępne zapasy:
     - T-shirt, czerwony, S, zwykły, 6
     - T-shirt, czerwony, L, zwykły, 7
 
-> [!NOTE]
-> W konfiguracjach indeksów nie należy określać wymiarów podstawowych, które są definiowane w konfiguracji partycji.
-> 
-> Jeśli musisz wykonywać zapytanie tylko w odniesieniu do zapasów agregowanych przez wszystkie kombinacje wymiarów, można skonfigurować jeden indeks zawierający wymiar bazowy `Empty`.
-
 ## <a name="reservation-configuration-optional"></a><a name="reservation-configuration"></a>Konfiguracja rezerwacji (opcjonalna)
 
 Konfiguracja rezerwacji jest potrzebna wtedy, gdy ma być używana funkcja rezerwacji wstępnej. Konfiguracja składa się z dwóch podstawowych części:
@@ -390,7 +393,7 @@ Podczas dokonywania rezerwacji można dowiedzieć się, czy dostępne zapasy mo�
 
 Skonfigurowanie mapowania z fizycznej miary na obliczoną miarę umożliwia usłudze Widoczność magazynu automatyczne sprawdzanie dostępności rezerwacji na podstawie fizycznej miary.
 
-Przed skonfigurowaniem tego mapowania fizyczne miary, obliczone miary i ich źródła danych muszą być zdefiniowane na kartach **Źródło danych** i **Obliczona miara** na stronie **Konfiguracja** w Power Apps (jak opisano wcześniej w tym temacie).
+Przed skonfigurowaniem tego mapowania fizyczne miary, obliczone miary i ich źródła danych muszą być zdefiniowane na kartach **Źródło danych** i **Obliczona miara** na stronie **Konfiguracja** w Power Apps (jak opisano wcześniej w tym artykule).
 
 Procedura definiowania mapowania rezerwacji wstępnej jest następująca.
 
@@ -508,7 +511,7 @@ Na etapie inicjowania dodatek Widoczność magazynu jest ustawiony jako konfigur
 
 W tej sekcji opisano sposób konfigurowania źródła danych `iv`.
 
-##### <a name="physical-measures-configured-for-the-iv-data-source"></a>Fizyczne miary skonfigurowane dla źródła danych iv
+##### <a name="physical-measures-configured-for-the-iv-data-source"></a>Fizyczne miary skonfigurowane dla źródła danych „iv”
 
 Dla źródła danych `iv` są skonfigurowane następujące fizyczne miary:
 
@@ -646,16 +649,16 @@ Obliczona miara `InventoryDemand` jest skonfigurowana dla źródła danych `iv`,
 | Dodanie | `iom` | `OnOrder` |
 | Dodanie | `iv` | `SoftReservPhysical` |
 | Dodanie | `iv` | `SoftReservOrdered` |
-| Dodanie | `fno` | `ReservPhysical` |
-| Dodanie | `fno` | `ReservOrdered` |
-| Dodanie | `iv` | `ReservPhysical` |
-| Dodanie | `iv` | `ReservOrdered` |
+| Dodatek | `fno` | `ReservPhysical` |
+| Dodatek | `fno` | `ReservOrdered` |
+| Dodatek | `iv` | `ReservPhysical` |
+| Dodatek | `iv` | `ReservOrdered` |
 
-#### <a name="configuration-of-the-fno-data-source"></a>Konfiguracja źródła danych fno
+#### <a name="configuration-of-the-fno-data-source"></a>Konfiguracja źródła danych „fno”
 
 W tej sekcji opisano sposób konfigurowania źródła danych `fno`.
 
-##### <a name="dimension-mappings-for-the-fno-data-source"></a>Mapowania wymiarów dla źródła danych fno
+##### <a name="dimension-mappings-for-the-fno-data-source"></a>Mapowania wymiarów dla źródła danych „fno”
 
 Mapowania wymiarów wyszczególnione w następującej tabeli są skonfigurowane dla źródła danych `fno`.
 
@@ -687,7 +690,7 @@ Mapowania wymiarów wyszczególnione w następującej tabeli są skonfigurowane 
 | `InventDimension11` | `CustomDimension11` |
 | `InventDimension12` | `CustomDimension12` |
 
-##### <a name="physical-measures-configured-for-the-fno-data-source"></a>Fizyczne miary skonfigurowane dla źródła danych fno
+##### <a name="physical-measures-configured-for-the-fno-data-source"></a>Fizyczne miary skonfigurowane dla źródła danych „fno”
 
 Dla źródła danych `fno` są skonfigurowane następujące fizyczne miary:
 
@@ -699,11 +702,11 @@ Dla źródła danych `fno` są skonfigurowane następujące fizyczne miary:
 - `ReservOrdered`
 - `OnOrder`
 
-#### <a name="configuration-of-the-pos-data-source"></a>Konfiguracja źródła danych pos
+#### <a name="configuration-of-the-pos-data-source"></a>Konfiguracja źródła danych „pos”
 
 W tej sekcji opisano sposób konfigurowania źródła danych `pos`.
 
-##### <a name="physical-measures-for-the-pos-data-source"></a>Fizyczne miary dla źródła danych pos
+##### <a name="physical-measures-for-the-pos-data-source"></a>Fizyczne miary dla źródła danych „pos”
 
 Dla źródła danych `pos` są skonfigurowane następujące fizyczne miary:
 
@@ -716,18 +719,18 @@ Obliczona miara `AvailQuantity` jest skonfigurowana dla źródła danych `pos`, 
 
 | Typ obliczania | Źródło danych | Fizyczna miara |
 |---|---|---|
-| Dodanie | `fno` | `AvailPhysical` |
-| Dodanie | `pos` | `PosInbound` |
+| Dodatek | `fno` | `AvailPhysical` |
+| Dodatek | `pos` | `PosInbound` |
 | Odejmowanie | `pos` | `PosOutbound` |
 
-#### <a name="configuration-of-the-iom-data-source"></a>Konfiguracja źródła danych iom
+#### <a name="configuration-of-the-iom-data-source"></a>Konfiguracja źródła danych „iom”
 
 Dla źródła danych `iom` (Intelligent Order Management) są skonfigurowane następujące fizyczne miary:
 
 - `OnOrder`
 - `OnHand`
 
-#### <a name="configuration-of-the-erp-data-source"></a>Konfiguracja źródła danych erp
+#### <a name="configuration-of-the-erp-data-source"></a>Konfiguracja źródła danych „erp”
 
 Dla źródła danych `erp` (planowanie zasobów przedsiębiorstwa) są skonfigurowane następujące fizyczne miary:
 

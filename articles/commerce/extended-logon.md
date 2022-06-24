@@ -1,6 +1,6 @@
 ---
 title: Umożliwia konfigurowanie i korzystanie z funkcji logowania rozszerzonego
-description: W tym temacie opisano, jak skonfigurować i używać funkcji rozszerzonego logowania w aplikacji punktu sprzedaży (POS) Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano, jak skonfigurować i używać funkcji rozszerzonego logowania w aplikacji punktu sprzedaży (POS) Microsoft Dynamics 365 Commerce.
 author: boycez
 ms.date: 03/18/2022
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d211ecfe1550f6093e1d35e7c2b37c036b50dd4a
-ms.sourcegitcommit: 5aebb181004eb63210503fb566dcda5c55032bee
+ms.openlocfilehash: e27e8d94adccc46559089928b0481442306567ef
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "8491446"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884318"
 ---
 # <a name="set-up-and-use-the-extended-logon-capability"></a>Umożliwia konfigurowanie i korzystanie z funkcji logowania rozszerzonego
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano, jak skonfigurować i używać funkcji rozszerzonego logowania w aplikacji punktu sprzedaży (POS) Microsoft Dynamics 365 Commerce.
+W tym artykule opisano, jak skonfigurować i używać funkcji rozszerzonego logowania w aplikacji punktu sprzedaży (POS) Microsoft Dynamics 365 Commerce.
 
 Cloud POS (CPOS) i Modern POS (MPOS) zapewniają rozszerzone możliwości logowania, które umożliwiają pracownikom sklepów detalicznych logowanie się do aplikacji POS poprzez zeskanowanie kodu kreskowego lub przeciągnięcie karty za pomocą czytnika pasków magnetycznych (MSR).
 

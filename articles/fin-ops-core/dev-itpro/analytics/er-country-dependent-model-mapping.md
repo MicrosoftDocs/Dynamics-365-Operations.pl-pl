@@ -1,6 +1,6 @@
 ---
-title: Skonfiguruj mapowania modelu ER zależne od kontekstu kraju
-description: W tym temacie wyjaśniono, jak można skonfigurować mapowania modeli ER, aby zależały one od kontekstu kraju/regionu firmy kontrolującej ich użycie.
+title: Konfigurowanie mapowań modelu raportowania elektronicznego w zależności od kraju
+description: W tym artykule wyjaśniono, jak można skonfigurować mapowania modeli ER, aby zależały one od kontekstu kraju/regionu firmy kontrolującej ich użycie.
 author: NickSelin
 ms.date: 11/11/2019
 ms.topic: article
@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.2
-ms.openlocfilehash: 5b26c605bd64b8d8e5a90f4389261e8e56825111
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 771b14662638838ac1f39d85b19ac58a47352c79
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605378"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883883"
 ---
 # <a name="configure-country-context-dependent-er-model-mappings"></a>Skonfiguruj mapowania modelu ER zależne od kontekstu kraju
 
 [!include[banner](../includes/banner.md)]
 
-Mapowania modeli raportowania elektronicznego (ER) można skonfigurować w taki sposób, aby były implementowane w ogólnym modelu danych ER, ale są właściwe dla Dynamics 365 Finance. W tym temacie opisano sposób projektowania wielu mapowań modelu ER dla modelu danych ER w celu kontrolowania sposobu ich używania przez odpowiednie formaty ER, które są uruchamiane z firm mających inne konteksty krajów/regionów.
+Mapowania modeli raportowania elektronicznego (ER) można skonfigurować w taki sposób, aby były implementowane w ogólnym modelu danych ER, ale są właściwe dla Dynamics 365 Finance. W tym artykule opisano sposób projektowania wielu mapowań modelu ER dla modelu danych ER w celu kontrolowania sposobu ich używania przez odpowiednie formaty ER, które są uruchamiane z firm mających inne konteksty krajów/regionów.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Aby wykonać przykłady opisane w tym temacie, musisz mieć następujące uprawnienia dostępu:
+Aby wykonać przykłady opisane w tym artykule, musisz mieć następujące uprawnienia dostępu:
 
 - Dostęp do Finance w jednej z następujących ról:
     - Deweloper raportowania elektronicznego
@@ -42,11 +42,11 @@ Aby wykonać przykłady opisane w tym temacie, musisz mieć następujące uprawn
     - Konsultant funkcjonalny raportowania elektronicznego
     - Administrator systemu
 
-Niektóre kroki przedstawione w tym temacie wymagają wykonania formatu ER. W niektórych przypadkach do wykonania formatu ER jest zmieniany jest kontekst kraju/regionu firmy, do której użytkownik jest aktualnie zalogowany. Można uruchomić format ER w bieżącym wystąpieniu RCS, jeśli w oprogramowaniu RCS jest dostępna firma, która ma wymagany kontekst kraju/regionu W przeciwnym razie należy przekazać ukończoną wersję konfiguracji mapowania modeli ER i formatu ER, który używa modelu danych ER do wystąpienia Finance, a następnie uruchomić format ER w tym wystąpieniu Finance. Aby uzyskać informacje dotyczące importowania konfiguracji, która znajduje się w oprogramowaniu RCS, należy zapoznać się z tematem [Importowanie konfiguracji z RCS](rcs-download-configurations.md).
+Niektóre kroki przedstawione w tym artykule wymagają wykonania formatu ER. W niektórych przypadkach do wykonania formatu ER jest zmieniany jest kontekst kraju/regionu firmy, do której użytkownik jest aktualnie zalogowany. Można uruchomić format ER w bieżącym wystąpieniu RCS, jeśli w oprogramowaniu RCS jest dostępna firma, która ma wymagany kontekst kraju/regionu W przeciwnym razie należy przekazać ukończoną wersję konfiguracji mapowania modeli ER i formatu ER, który używa modelu danych ER do wystąpienia Finance, a następnie uruchomić format ER w tym wystąpieniu Finance. Aby uzyskać informacje dotyczące importowania konfiguracji, która znajduje się w oprogramowaniu RCS, należy zapoznać się z tematem [Importowanie konfiguracji z RCS](rcs-download-configurations.md).
 
 ## <a name="single-model-mapping-case"></a>Przypadek mapowania jednego modelu
 
-Aby zaprojektować wymagane składniki ER, należy wykonać kroki opisane w [Dodatku 1](#appendix1) do tego tematu Teraz istnieje konfiguracja mapowania modelu **Mapowania (ogólne)**, która zawiera mapowanie modelu dla definicji **Punktu wejścia 1**.
+Aby zaprojektować wymagane składniki ER, należy wykonać kroki opisane w [Dodatku 1](#appendix1) do tego artykułu. Teraz istnieje konfiguracja mapowania modelu **Mapowania (ogólne)**, która zawiera mapowanie modelu dla definicji **Punktu wejścia 1**.
 
 ![Strona konfiguracji raportowania elektronicznego, format do nauki konfiguracji mapowań.](./media/RCS-Context-specific-mapping-Tree.PNG)
 
@@ -59,7 +59,7 @@ Należy zauważyć, że przeglądarka sieci Web proponuje pobranie pliku tekstow
 
 ## <a name="multiple-shared-model-mappings-case"></a>Przypadek mapowań wielu wspólnych modeli
 
-Aby zaprojektować wymagane składniki ER, należy wykonać kroki opisane w [Dodatku 2](#appendix2) do tego tematu Teraz istnieją konfiguracje mapowania modelu **Mapowanie (ogólne)** i **Mapowanie (ogólnie) niestandardowe**, które zawierają mapowanie modelu dla definicji **Punktu wejścia 1**.
+Aby zaprojektować wymagane składniki ER, należy wykonać kroki opisane w [Dodatku 2](#appendix2) do tego artykułu. Teraz istnieją konfiguracje mapowania modelu **Mapowanie (ogólne)** i **Mapowanie (ogólnie) niestandardowe**, które zawierają mapowanie modelu dla definicji **Punktu wejścia 1**.
 
 ![Strona konfiguracji raportowania elektronicznego, mapowanie ogólnej konfiguracji niestandardowej.](./media/RCS-Context-specific-mapping-TreeCustom.PNG)
 
@@ -97,7 +97,7 @@ Zauważ, że wykonanie wybranego formatu ER powiedzie się. Przeglądarka sieci 
 
 ## <a name="multiple-mixed-model-mappings-case"></a>Przypadek mapowań wielu zmieszanych modeli
 
-Aby zaprojektować wymagane składniki ER, należy wykonać kroki opisane w [Dodatku 3](#appendix3) do tego tematu Teraz istnieją konfiguracje mapowania modelu **Mapowanie (ogólne)** i **Mapowanie (ogólnie) niestandardowe** i **Mapowanie (FR) modeli mapowania**, które zawierają mapowanie modelu dla definicji **Punktu wejścia 1**.
+Aby zaprojektować wymagane składniki ER, należy wykonać kroki opisane w [Dodatku 3](#appendix3) do tego artykułu. Teraz istnieją konfiguracje mapowania modelu **Mapowanie (ogólne)** i **Mapowanie (ogólnie) niestandardowe** i **Mapowanie (FR) modeli mapowania**, które zawierają mapowanie modelu dla definicji **Punktu wejścia 1**.
 
 Zauważ, że wersja 1 konfiguracji mapowania modelu **Mapowanie (FR)** jest skonfigurowana w taki sposób, że dotyczy ona tylko formatów ER **Model nauki mapowania** uruchamiane w Finance, które mają francuski kontekst kraju/regionu.
 
@@ -138,10 +138,10 @@ Zauważ, że wykonanie wybranego formatu ER powiedzie się. Przeglądarka sieci 
 
 Jak widać, wybór mapowania modelu na potrzeby wykonania formatu ER przebiega w następujący sposób:
 
-- Określono definicję mapowania modelu używaną przez format ER (**punkt wejścia 1** w przykładach w tym temacie).
-- Wszystkie konfiguracje mapowania zawierające mapowanie mające określoną definicję i spełniające wszystkie skonfigurowane ograniczenia kontekstu kraju/regionu mogą być używane do uruchamiania formatu ER (**Mapowanie (ogólne)**, **Mapowania (ogólne) niestandardowe** i **Mapowania (FR)** w przykładach w tym temacie).
-- Każde domyślne mapowanie modelu o ograniczeniach kontekstu kraju/regionu ma najwyższy priorytet w wyborze (**mapowanie (FR)** w przykładach przedstawionych w tym temacie).
-- Każde domyślne mapowanie modelu bez ograniczeń kontekstu kraju/regionu ma następny najwyższy priorytet w wyborze (**mapowanie (ogólne) niestandardowe** w przykładach przedstawionych w tym temacie).
+- Określono definicję mapowania modelu używaną przez format ER (**punkt wejścia 1** w przykładach w tym artykule).
+- Wszystkie konfiguracje mapowania zawierające mapowanie mające określoną definicję i spełniające wszystkie skonfigurowane ograniczenia kontekstu kraju/regionu mogą być używane do uruchamiania formatu ER (**Mapowanie (ogólne)**, **Mapowania (ogólne) niestandardowe** i **Mapowania (FR)** w przykładach w tym artykule).
+- Każde domyślne mapowanie modelu o ograniczeniach kontekstu kraju/regionu ma najwyższy priorytet w wyborze (**mapowanie (FR)** w przykładach przedstawionych w tym artykule).
+- Każde domyślne mapowanie modelu bez ograniczeń kontekstu kraju/regionu ma następny najwyższy priorytet w wyborze (**mapowanie (ogólne) niestandardowe** w przykładach przedstawionych w tym artykule).
 - Każde mapowanie modelu o ograniczeniach kontekstu kraju/regionu ma wyższy priorytet dla wyboru niż mapowanie modelu, które nie ma ograniczeń kontekstu kraju/regionu.
 
 Poniższa tabela zawiera informacje o wynikach wyboru mapowania modelu dla wszystkich możliwych przypadków dla ustawień mapowania modeli:

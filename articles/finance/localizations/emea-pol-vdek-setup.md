@@ -1,6 +1,6 @@
 ---
 title: Przygotowanie do raportowania JPK-V7M
-description: Ten temat zawiera informacje o tym, jak skonfigurować deklarację VAT z rejestrami (znanymi również jako JPK-V7M, VDEK) w Polsce.
+description: Ten artykuł zawiera informacje o tym, jak skonfigurować deklarację VAT z rejestrami (znanymi również jako JPK-V7M, VDEK) w Polsce.
 author: liza-golub
 ms.date: 10/15/2021
 ms.topic: article
@@ -11,12 +11,12 @@ audience: Application User
 ms.reviewer: kfend
 ms.search.region: Poland
 ms.author: elgolu
-ms.openlocfilehash: f4a94920f63d3fdcc1f3037b57d8203867d9f711
-ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
+ms.openlocfilehash: 7dc0067c1c0d70067bf744c4063a8fbd56d4bcef
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7713868"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903005"
 ---
 # <a name="prepare-for-jpk-v7m-reporting"></a>Przygotowanie do raportowania JPK-V7M
 
@@ -24,7 +24,7 @@ ms.locfileid: "7713868"
 
 Rozwiązanie obsługujące raportowanie JPK-V7M opiera się na funkcji [obsługi wiadomości elektronicznych](../general-ledger/electronic-messaging.md). Ta funkcja zapewnia elastyczne podejście do konfigurowania i obsługiwania procesów raportowania.
 
-Poniższe zadania przygotowują Microsoft Dynamics 365 Finance do raportowania JPK-V7M:
+Poniższe zadania przygotowują aplikację Microsoft Dynamics 365 Finance do tworzenia raportu JPK_V7M:
 
 - [Importowanie i konfigurowanie konfiguracji raportowania elektronicznego (ER)](#configurations-vdek).
 - [Konfigurowanie parametrów specyficznych dla aplikacji](#application-specific-parameters-vdek).
@@ -85,7 +85,7 @@ Format zawiera następujące pola wyszukiwania konfiguracji:
 5. Na skróconej karcie **Wyszukiwania** wybierz poszczególne wyszukiwania i zdefiniuj odpowiednie warunki dla nich.
 6. Na skróconej karcie **Warunki** określ, które kody podatków lub inne dostępne kryteria muszą odpowiadać określonemu wynikowi wyszukiwania. 
 
-    Jeśli warunki są zdefiniowane w jednym wierszu, system generalnie zastosuje je do źródłowej transakcji podatkowej za pomocą operatora **AND**. Jeśli warunki muszą być zastosowane za pomocą operatora **OR**, należy je zdefiniować w oddzielnych wierszach. Gdy transakcja podatkowa z okresu raportu spełnia warunek z listy, dla powiązanego dokumentu zostanie zgłoszony powiązany marker z wyniku wyszukiwania. Aby uzyskać więcej informacji o ustawieniach poszczególnych pól wyszukiwania, przejdź do tego tematu.
+    Jeśli warunki są zdefiniowane w jednym wierszu, system generalnie zastosuje je do źródłowej transakcji podatkowej za pomocą operatora **AND**. Jeśli warunki muszą być zastosowane za pomocą operatora **OR**, należy je zdefiniować w oddzielnych wierszach. Gdy transakcja podatkowa z okresu raportu spełnia warunek z listy, dla powiązanego dokumentu zostanie zgłoszony powiązany marker z wyniku wyszukiwania. Aby uzyskać więcej informacji o ustawieniach poszczególnych pól wyszukiwania, przejdź do tego artykułu.
 
 7. Po zakończeniu konfigurowania warunków w polu **Stan** wybierz opcję **Zakończono**, a następnie zapisz konfigurację.
 
@@ -388,7 +388,7 @@ W oknie dialogowym klasy wykonywalnej grupa parametrów **Oznaczenie sprzedaży 
 
 Okno dialogowe dla klasy wykonywalnej zawiera parametr **Uwzględnij kody daty raportu VAT**. Ten parametr służy do zbierania transakcji VAT w raporcie na podstawie reguł, które definiujesz w kodach daty raportu VAT. Ten parametr nie ma wpływu na transakcje specyficzne dla sieci sprzedaży, które będą zgłaszane jako typ dokumentu **FP**. Aby uzyskać więcej informacji o funkcji kodów daty raportu VAT, zobacz temat [Ustawianie kodów daty raportu VAT](/dynamicsax-2012/appuser-itpro/pol-set-up-vat-report-date-codes).
 
-KB5007691 („Polska: Jednolity Plik Kontrolny VDEK (JPK-V7M, VDEK), zmiany ze stycznia 2022 w Dynamics 365 Finance”) wprowadza parametr **Wersja schematu**. Ten parametr umożliwia określenie, że dodatkowe pole zawiera wersję schematu JPK-V7M, która ma zostać zgłoszona. Wybierz opcję **Wersja schematu** jako wartość tego pola.
+KB5007691 („Polska: Jednolity Plik Kontrolny VDEK (JPK-V7M, VDEK), zmiany ze stycznia 2022 w aplikacji Dynamics 365 Finance”) wprowadza parametr **Wersja schematu**. Ten parametr umożliwia określenie, że dodatkowe pole zawiera wersję schematu JPK-V7M, która ma zostać zgłoszona. Wybierz opcję **Wersja schematu** jako wartość tego pola.
 
 ## <a name="set-up-security-roles-for-electronic-message-processing"></a><a id="security-roles-vdek"></a>Konfigurowanie ról zabezpieczeń na potrzeby przetwarzania wiadomości elektronicznych
 

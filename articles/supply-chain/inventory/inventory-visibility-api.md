@@ -1,6 +1,6 @@
 ---
 title: Publiczne interfejsy API dodatku Widoczność magazynu
-description: W tym temacie opisano publiczne interfejsy API udostępniane przez dodatek Widoczność magazynu.
+description: W tym artykule opisano publiczne interfejsy API udostępniane przez dodatek Widoczność magazynu.
 author: yufeihuang
 ms.date: 12/09/2021
 ms.topic: article
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: cb02e8d10a5c673734727682436ba1b3fc996935
-ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
+ms.openlocfilehash: 25f6539616d4567249e1d1eb4297090176526fde
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "8786874"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902032"
 ---
 # <a name="inventory-visibility-public-apis"></a>Publiczne interfejsy API dodatku Widoczność magazynu
 
 [!include [banner](../includes/banner.md)]
 
 
-W tym temacie opisano publiczne interfejsy API udostępniane przez dodatek Widoczność magazynu.
+W tym artykule opisano publiczne interfejsy API udostępniane przez dodatek Widoczność magazynu.
 
 Publiczny interfejs API REST w dodatku Widoczność magazynu przedstawia kilka konkretnych punktów końcowych integracji. Obsługuje on cztery główne typy interakcji:
 
@@ -160,7 +160,7 @@ Procedura uzyskiwania tokenu usługi zabezpieczeń jest następująca.
    ```
 
 > [!IMPORTANT]
-> Gdy do wywołania interfejsów API publicznych widoczności zapasów jest używać kolekcji żądań *Postman*, należy dla każdego żądania dodać token okaziciela. Aby znaleźć token okaziciela, wybierz kartę **Autoryzacja** pod adresem URL żądania, wybierz typ **tokenu okaziciela** i skopiuj token dostępu, który został pobrany w ostatnim kroku. W dalszych częściach tego tematu, `$access_token` będzie używany do reprezentowania tokena, który został pobrany w ostatnim kroku.
+> Gdy do wywołania interfejsów API publicznych widoczności zapasów jest używać kolekcji żądań *Postman*, należy dla każdego żądania dodać token okaziciela. Aby znaleźć token okaziciela, wybierz kartę **Autoryzacja** pod adresem URL żądania, wybierz typ **tokenu okaziciela** i skopiuj token dostępu, który został pobrany w ostatnim kroku. W dalszych częściach tego artykułu, `$access_token` będzie używany do reprezentowania tokena, który został pobrany w ostatnim kroku.
 
 ## <a name="create-on-hand-change-events"></a><a name="create-onhand-change-event"></a>Tworzenie zdarzeń zmiany dostępnych zapasów
 
@@ -359,7 +359,7 @@ Body:
     ]
 ```
 
-W poniższym przykładzie pokazano zawartość przykładowej treści. Zachowanie tego interfejsu API różni się od zachowania interfejsów API, które opisano w sekcji [Tworzenie zdarzeń zmiany dostępnych zapasów](#create-onhand-change-event) we wcześniejszej części tego tematu. W tym przykładzie ilość produktu *T-shirt* przybiera wartość 1.
+W poniższym przykładzie pokazano zawartość przykładowej treści. Zachowanie tego interfejsu API różni się od zachowania interfejsów API, które opisano w sekcji [Tworzenie zdarzeń zmiany dostępnych zapasów](#create-onhand-change-event) we wcześniejszej części tego artykułu. W tym przykładzie ilość produktu *T-shirt* przybiera wartość 1.
 
 ```json
 [

@@ -1,6 +1,6 @@
 ---
 title: Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources 12 lipca 2021
-description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Human Resources w dniu 12 lipca 2021 roku.
+description: W tym artykule opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Human Resources w dniu 12 lipca 2021 roku.
 author: marcelbf
 ms.date: 07/12/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-07-12
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c01d00e7ede44c20e64fc4a8cd8646201caa3992
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 259004773c4e5a7d8865d563da9bcfea3a116632
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686807"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870966"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-july-12-2021"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources 12 lipca 2021
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-W tym temacie opisano nowe, zmienione i wkrótce dostępne funkcje dostępne w rozwiązaniu Dynamics 365 Human Resources.
+W tym artykule opisano nowe, zmienione lub przyszłe funkcje dostępne w aplikacji Dynamics 365 Human Resources.
 
 Aby uzyskać więcej informacji na temat procesu aktualizacji i harmonogramu, należy zapoznać się z tematem [Aktualizacja procesu](hr-admin-setup-update-process.md).
 
@@ -49,9 +49,9 @@ W tym wydaniu są zazwyczaj dostępne następujące funkcje.
 W tej wersji uwzględniono następujące poprawki błędów.
 
 > [!NOTE]
-> Naszym celem jest jak najszybsze uzyskanie tych informacji. Firma Microsoft może zaktualizować ten temat w taki sposób, aby zawierał poprawki powodujące błąd, które wprowadziły je do kompilacji po początkowym opublikowaniu tego tematu.
+> Naszym celem jest jak najszybsze uzyskanie tych informacji. Możemy zaktualizować ten artykuł w taki sposób, aby zawierał poprawki powodujące błąd, które wprowadziły je do kompilacji po początkowym opublikowaniu tego artykułu.
 
-| Numer problemu | Problem |  opis |
+| Numer problemu | Problem |  Opis |
 | --- | --- | --- |
 | 595871 | Okienko „Informacje” w dziale Zasoby ludzkie zawiera nieprawidłową terminologię Dataverse | Wraz ze zmianą nazwy Common Data Service na Dataverse terminologia została zaktualizowana w okienku informacyjnym Microsoft Dynamics 365 Human Resources (**Pomoc i wsparcie > Informacje**). |
 | 598676 | Uproszczony formularz wprowadzania pracownika zastępuje zadanie może powodować błąd, gdy jest używany z Zapisanym widokiem| Jeśli na stronie **Pracownik** jest włączona funkcja „Usprawniony wpis pracownika”, aplikacja może się nie powieść, jeśli w zapisanym widoku ustawiono **Zawsze otwieraj do edycji**. |

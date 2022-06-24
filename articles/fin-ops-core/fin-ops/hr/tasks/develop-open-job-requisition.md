@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 364117133cb7a868e613088b14a33869fd9fedb1
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 15b1796367338bf40b434cfab9368ed3386aed99
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735354"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876510"
 ---
 # <a name="develop-and-open-job-requisition"></a>Opracowywanie i otwieranie zapotrzebowania na stanowisko
 
 [!include [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
-> Funkcje rekrutacji dostępne w tym temacie będą nazywane projektami rekrutacji i dotyczą kandydatów, zgłoszeń oraz projektów rekrutacji.  
+> Funkcje rekrutacji dostępne w tym artykule będą nazywane projektami rekrutacji i dotyczą kandydatów, zgłoszeń oraz projektów rekrutacji.  
 
 
 Projekty rekrutacji ułatwiają zarządzanie procesem rekrutacji. Dla każdego projektu rekrutacyjnego możesz ustawić informacje, takie jak stanowisko, dla którego rekrutacja jest wykonywana, nazwisko osoby rekrutującej, status projektu i dział, w którym praca będzie się znajdować. Po utworzeniu projektu rekrutacji można napisać ogłoszenie o pracę dla projektu, opublikować oferty na stronach w portalu **samoobsługi pracowniczej**, skojarzyć podania o pracę z projektem oraz śledzić działania w tym projekcie. Do stworzenia tej procedury wykorzystano dane z firmy demonstracyjnej **USMF**.

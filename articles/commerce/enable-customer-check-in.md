@@ -1,6 +1,6 @@
 ---
 title: Włączanie powiadomień zameldowania odbiorcy w punkcie sprzedaży
-description: W tym temacie opisano sposób włączania powiadomień zameldowania odbiorcy w punkcie sprzedaży systemu Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano sposób włączania powiadomień zameldowania odbiorcy w punkcie sprzedaży systemu Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 95b4e3a1750cf072db919492f7445e87654701da
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: ae53657c95128eae793f670bd9dbc31d9fac0fe4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983168"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885152"
 ---
 # <a name="enable-customer-check-in-notifications-in-point-of-sale-pos"></a>Włączanie powiadomień zameldowania odbiorcy w punkcie sprzedaży
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano sposób włączania powiadomień zameldowania odbiorcy w punkcie sprzedaży systemu Microsoft Dynamics 365 Commerce.
+W tym artykule opisano sposób włączania powiadomień zameldowania odbiorcy w punkcie sprzedaży systemu Microsoft Dynamics 365 Commerce.
 
 W wiadomościach e-mail „zamówienie gotowe do odbioru” organizacje mogą zamieścić łącze lub przycisk, aby klienci powiadomili sklep, że znajdują się w budynku i oczekują na przyniesienie paczki. Odbiorcy otrzymają następnie potwierdzenie zameldowania, a sklep otrzyma powiadomienie jako zadanie w aplikacji punktu sprzedaży. To zadanie służy jako monit o skojarzenie sprzedaży w celu dostarczenia zamówienia do pojazdu odbiorcy. Wtedy odbiorca nie musi wchodzić do sklepu.
 
@@ -70,7 +70,7 @@ Aby przetestować funkcję zameldowania klienta, wykonaj następujące kroki.
 1. Zaewidencjonuj stronę, ale jej nie publikuj.
 1. Dodaj poniższy link do szablonu wiadomości e-mail wywoływanego przez typ powiadomienia o zakończeniu pakowania dla metody dostawy „odbiór”. Aby uzyskać więcej informacji, zobacz temat [Tworzenie szablonów wiadomości e-mail na potrzeby zdarzeń transakcyjnych](email-templates-transactions.md).
 
-    - **W środowiskach przedprodukcyjnych (UAT):** dodaj fragment kodu z sekcji [Konfigurowanie szablonu transakcyjnej wiadomości e-mail](#configure-the-transactional-email-template) znajdującej się wcześniej w tym temacie.
+    - **W środowiskach przedprodukcyjnych (UAT):** dodaj fragment kodu z sekcji [Konfigurowanie szablonu transakcyjnej wiadomości e-mail](#configure-the-transactional-email-template) znajdującej się wcześniej w tym artykule.
     - **W środowiskach produkcyjnych:** dodaj następujący kod z komentarzem, aby nie wpływał on na istniejących klientów.
 
         `<!-- https://[DOMAIN]/[CHECK_IN_PAGE]?channelReferenceId=%confirmationid%&channelId=%pickupchannelid%&packingSlipId=%packingslipid%&preview=inprogress -->`

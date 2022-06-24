@@ -1,6 +1,6 @@
 ---
 title: Przenoszenie, zamiana i instalowanie składników majątku
-description: W tym temacie opisano sposób przenoszenia, zastępowania i instalowania składników majątku w module Zarządzanie składnikami majątku.
+description: W tym artykule opisano sposób przenoszenia, zastępowania i instalowania składników majątku w module Zarządzanie składnikami majątku.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aad94f17d6efadf7c520c021354963e7135d6d4da1426774925ce877f705e01a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e1454f41bb0b43e22c5278463f63aa4178696eef
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769642"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872132"
 ---
 # <a name="move-replace-and-install-assets"></a>Przenoszenie, zamiana i instalowanie składników majątku
 
@@ -28,7 +28,7 @@ ms.locfileid: "6769642"
 
  
 
-W tym temacie opisano sposób przenoszenia, zastępowania i instalowania składników majątku w module Zarządzanie składnikami majątku. Można utworzyć poszczególne składniki majątku, które nie mają relacji z innymi składnikami majątku, lub utworzyć strukturę składników majątku zawierającą składnik majątku najwyższego poziomu (nadrzędny) i powiązane podrzędne składniki majątku. W module Zarządzaniu składnikami majątku istnieją trzy podejścia do przenoszenia i zmieniania lokalizacji składnika majątku:
+W tym artykule opisano sposób przenoszenia, zastępowania i instalowania składników majątku w module Zarządzanie składnikami majątku. Można utworzyć poszczególne składniki majątku, które nie mają relacji z innymi składnikami majątku, lub utworzyć strukturę składników majątku zawierającą składnik majątku najwyższego poziomu (nadrzędny) i powiązane podrzędne składniki majątku. W module Zarządzaniu składnikami majątku istnieją trzy podejścia do przenoszenia i zmieniania lokalizacji składnika majątku:
 
 - **Przenieś** – przenieś składnik majątku do innej struktury składników majątku lub do innej lokalizacji w tej samej strukturze składników majątku.
 - **Zamień** — tymczasowo usuń składnik majątku ze struktury składników majątku, aby można ją było naprawić lub odnowić, a następnie dodaj odnowiony składnik majątku do struktury składników majątku później. Alternatywnie można trwale zastąpić używany składnik majątku nowym składnikiem majątku.
@@ -42,7 +42,7 @@ W tym temacie opisano sposób przenoszenia, zastępowania i instalowania składn
 Użyj funkcji **Przenieś składnik majątku**, aby przenieść składnik majątku do innej struktury składników majątku lub do innej lokalizacji w tej samej strukturze składników majątku. Można również przenieść składnik majątku poza strukturę składników majątku, tak aby stał się autonomicznym składnikiem majątku, który nie ma relacji struktury.
 
 > [!NOTE]
-> Nie należy używać tej funkcji, jeśli aktywa są naprawiane lub tymczasowo wymieniane. Zamiast tego należy użyć funkcji **Zastąp składnik majątku**, która jest opisany w dalszej części tego tematu.
+> Nie należy używać tej funkcji, jeśli aktywa są naprawiane lub tymczasowo wymieniane. Zamiast tego należy użyć funkcji **Zastąp składnik majątku**, która jest opisany w dalszej części tego artykułu.
 
 1. Wybierz **Zarządzanie składnikami majątku** \> **Wspólne** \> **Składniki majątku** \> **Wszystkie składniki majątku** lub **Aktywne składniki majątku**.
 2. Na liście zaznacz grupę składników majątku do przeniesienia. Jeśli składnik majątku ma składniki podrzędne, możesz również przenieść te składniki majątku.

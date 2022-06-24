@@ -1,6 +1,6 @@
 ---
 title: Wizualne planowanie zadań na potrzeby lean manufacturing
-description: Ten temat zawiera informacje o tablicy harmonogramu Kanban, której planista produkcji może używać do kontrolowania i optymalizowanie planu produkcji dla zadań Kanban.
+description: Ten artykuł zawiera informacje o tablicy harmonogramu Kanban, której planista produkcji może używać do kontrolowania i optymalizowanie planu produkcji dla zadań Kanban.
 author: johanhoffmann
 ms.date: 06/16/2017
 ms.topic: article
@@ -16,20 +16,20 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af5803793a4874ee73f943d0f059047458c37dc48b7d3276dadc8d8803599fb9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a743be96867c1f325e6fe01f23355c27cb4d0cc0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764819"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875196"
 ---
 # <a name="visual-scheduling-for-lean-manufacturing"></a>Wizualne planowanie zadań na potrzeby lean manufacturing
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje o tablicy harmonogramu Kanban, której planista produkcji może używać do kontrolowania i optymalizowanie planu produkcji dla zadań Kanban.
+Ten artykuł zawiera informacje o tablicy harmonogramu Kanban, której planista produkcji może używać do kontrolowania i optymalizowanie planu produkcji dla zadań Kanban.
 
-Ten temat zawiera informacje o tablicy harmonogramu Kanban, której planista produkcji może używać do kontrolowania i optymalizowanie planu produkcji dla zadań Kanban.
+Ten artykuł zawiera informacje o tablicy harmonogramu Kanban, której planista produkcji może używać do kontrolowania i optymalizowanie planu produkcji dla zadań Kanban.
 
 Tablica harmonogramu Kanban umożliwia planiście produkcji kontrolowanie i optymalizowanie planu produkcji dla zadań Kanban. Nadaje przejrzystości przepływowi zadań w systemie Kanban i stanowi dla planisty produkcji narzędzie, które optymalizuje i dostosowuje plan produkcji dla komórki roboczej produkcji oszczędnej.
 

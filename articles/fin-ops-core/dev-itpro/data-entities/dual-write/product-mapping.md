@@ -1,6 +1,6 @@
 ---
-title: Ujednolicone doświadczenie korzystania z produktu
-description: W tym temacie opisano integrację danych produktu między aplikacjami Finanse i Działania i Dataverse.
+title: Ujednolicone działanie produktu
+description: W tym artykule opisano integrację danych produktu między aplikacjami finansowymi i operacyjnymi oraz usługą Dataverse.
 author: t-benebo
 ms.date: 12/12/2019
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 1b3dc1d16fc34992df0c9478b8b4d163c310b67b
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: a8071887678f16a0b8ee075d2aa24a07e4df5319
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062605"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885006"
 ---
 # <a name="unified-product-experience"></a>Ujednolicone doświadczenie korzystania z produktu
 
@@ -126,7 +126,7 @@ Aplikacje Finanse i Działania | Aplikacje Customer Engagement |
 
 ## <a name="default-order-settings-and-product-specific-default-order-settings"></a>Domyślne ustawienia zamówień i domyślne ustawienia zamówień charakterystyczne dla produktu
 
-Domyślne ustawienia zamówień definiują: oddział i magazyn, skąd towary będą pobierane lub gdzie będą przechowywane; ilości minimalne, maksymalne, wielokrotne i standardowe, które będą używane do handlu lub zarządzania zapasami; czasy realizacji; flagę blokady; metodę tworzenia zobowiązań zamówień. Te informacje będą dostępne w Dataverse przy użyciu jednostki domyślne ustawienia zamówienia oraz jednostki domyślne ustawienia zamówienia charakterystyczne dla produktu. Możesz przeczytać więcej informacji o funkcjach na [Temacie ustawienia domyślne zamówień](../../../../supply-chain/production-control/default-order-settings.md).
+Domyślne ustawienia zamówień definiują: oddział i magazyn, skąd towary będą pobierane lub gdzie będą przechowywane; ilości minimalne, maksymalne, wielokrotne i standardowe, które będą używane do handlu lub zarządzania zapasami; czasy realizacji; flagę blokady; metodę tworzenia zobowiązań zamówień. Te informacje będą dostępne w Dataverse przy użyciu jednostki domyślne ustawienia zamówienia oraz jednostki domyślne ustawienia zamówienia charakterystyczne dla produktu. Możesz przeczytać więcej informacji o funkcjach w artykule [Domyślne ustawienia zamówień](../../../../supply-chain/production-control/default-order-settings.md).
 
 Aplikacje Finanse i Działania | Aplikacje Customer Engagement |
 ---|---

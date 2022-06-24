@@ -1,6 +1,6 @@
 ---
 title: Obiekty BOM składnika majątku
-description: W tym temacie opisano BOM składników majątku w module Zarządzanie składnikami majątku.
+description: W tym artykule opisano BOM składników majątku w module Zarządzanie składnikami majątku.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0430891607ac4558c91b86318aee318d0076007daf59a32eda65cb411d274b3a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 71b861ec31e704e001aab29245b9e24ce8beb0de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751992"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882787"
 ---
 # <a name="asset-boms"></a>Obiekty BOM składnika majątku
 
@@ -28,7 +28,7 @@ ms.locfileid: "6751992"
 
  
 
-W tym temacie opisano BOM składników majątku w module Zarządzanie składnikami majątku. Strona **BOM składnika majątku** zawiera listę wszystkich elementów (części zamiennych i innych pozycji) używanych w składniku majątku w całym jego cyklu życia. Podczas tworzenia nowego składnika majątku należy rozważyć skonfigurowanie BOM składnika majątku w ramach procedury instalacji. W ten sposób można śledzić historię elementów dla składnika majątku od daty utworzenia.
+W tym artykule opisano BOM składników majątku w module Zarządzanie składnikami majątku. Strona **BOM składnika majątku** zawiera listę wszystkich elementów (części zamiennych i innych pozycji) używanych w składniku majątku w całym jego cyklu życia. Podczas tworzenia nowego składnika majątku należy rozważyć skonfigurowanie BOM składnika majątku w ramach procedury instalacji. W ten sposób można śledzić historię elementów dla składnika majątku od daty utworzenia.
 
 Po zakończeniu zadania konserwacji i zarejestrowaniu zużycia pozycji w zleceniu pracy, można śledzić zużycie części zamiennych i innych elementów, które są używane w składniku majątku. Ta funkcja pozwala zachować pełny rekord konsumpcji wszystkich składników majątku. Można na przykład użyć rekordu do monitorowania, czy dana część zamienna jest często zastępowana, czy też do śledzenia części zamiennych lub innych elementów, które są aktualnie używane na danym składnikiem majątku.
 

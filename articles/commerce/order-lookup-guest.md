@@ -1,6 +1,6 @@
 ---
 title: Włączanie wyszukiwania zamówień dla realizacji transakcji gościa
-description: W tym temacie opisano sposób włączania wyszukiwania zamówień dla realizacji transakcji gościa w aplikacji Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano sposób włączania wyszukiwania zamówień dla realizacji transakcji gościa w aplikacji Microsoft Dynamics 365 Commerce.
 author: stuharg
 ms.date: 12/03/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2021-08-15
 ms.dyn365.ops.version: Release 10.0.22
-ms.openlocfilehash: a2a10b122faae354b0ea002e43a9bd60157f6216
-ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
+ms.openlocfilehash: fe32bb59b6529dd9686ced92c1016f12a75a32d4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7891507"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891994"
 ---
 # <a name="enable-order-lookup-for-guest-checkouts"></a>Włączanie wyszukiwania zamówień dla realizacji transakcji gościa
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano sposób włączania wyszukiwania zamówień dla realizacji transakcji gościa w aplikacji Microsoft Dynamics 365 Commerce.
+W tym artykule opisano sposób włączania wyszukiwania zamówień dla realizacji transakcji gościa w aplikacji Microsoft Dynamics 365 Commerce.
 
 Funkcja wyszukiwania dla realizacji transakcji gościa umożliwia klientom, którzy dokonają zakupów jako użytkownicy goście, wyszukiwanie ich zamówień. Funkcja wyszukiwania zamówień jest przydatna, gdy klienci chcą wykonać takie akcje, jak sprawdzenie stanu realizacji produktów w zamówieniu, sprawdzenie adresu, na który wysłano zamówienie, ponowne zamówienie produktu lub potwierdzenie sklepu, z którego zostanie odebrane zamówienie.
 

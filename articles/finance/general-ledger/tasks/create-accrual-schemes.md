@@ -1,6 +1,6 @@
 ---
 title: Tworzenie schematów naliczania
-description: W tym temacie opisano sposób tworzenia schematu naliczania.
+description: W tym artykule opisano sposób tworzenia schematu naliczania.
 author: aprilolson
 ms.date: 07/19/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 495c72a6ae19faac0cf2dff155c2073852cb1cbd
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 8974eed40a60aeee5a32932ac070a870289ec20a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722188"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858433"
 ---
 # <a name="create-accrual-schemes"></a>Tworzenie schematów naliczania
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie opisano sposób tworzenia schematu naliczania. W zadaniu wykorzystano firmę demonstracyjną USMF.
+W tym artykule opisano sposób tworzenia schematu naliczania. W zadaniu wykorzystano firmę demonstracyjną USMF.
 
 1. Otwórz **Okienko nawigacji > Moduły > Księga główna > Konfiguracja arkusza > Schematy naliczania**.
 2. Wybierz pozycję **Nowy**.

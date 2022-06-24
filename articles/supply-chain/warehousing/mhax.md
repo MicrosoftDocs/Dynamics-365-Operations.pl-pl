@@ -1,6 +1,6 @@
 ---
 title: Interfejs urządzeń do obsługi materiałów (MHAX)
-description: W tym temacie opisano, jak skonfigurować interfejs sprzętu do obsługi materiałów (MHAX), aby można było połączyć się z zewnętrznymi fizycznymi systemami obsługi materiałów (MH).
+description: W tym artykule opisano, jak skonfigurować interfejs sprzętu do obsługi materiałów (MHAX), aby można było połączyć się z zewnętrznymi fizycznymi systemami obsługi materiałów (MH).
 author: Mirzaab
 ms.date: 03/04/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-04
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4c04b8a9574bb6f34b56b4a7462882f1885f1178
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c4b0d991d320d5a679d0ed60880c56a6cb849e2d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695599"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907095"
 ---
 # <a name="material-handling-equipment-interface-mhax"></a>Interfejs urządzeń do obsługi materiałów (MHAX)
 
@@ -88,7 +88,7 @@ Aby utworzyć subskrypcję, przejdź do **Interfejs urządzeń do obsługi mater
 
 Kwerendę można skojarzyć z każdą subskrypcją. To zapytanie filtruje wiersze pracy i nagłówki, aby dodatkowo ograniczyć pracę, która będzie używać subskrypcji do generowania zdarzeń. Aby dodać kwerendę do subskrypcji, zaznacz pole wyboru **Uruchom kwerendę** dla odpowiedniej subskrypcji na stronie **Subskrypcje**, a następnie wybierz w okienku akcji opcję **Edytuj kwerendę**. Zostanie wyświetlony standardowy edytor kwerend Supply Chain Management.
 
-Ponadto subskrypcja zawiera *mapę subskrypcji*, która mapuje pola z nagłówka pracy lub wiersza pracy do niektórych lub wszystkich 10 wolnych pól danych zdarzenia wychodzącego (zgodnie z potrzebą). Aby zwrócić informacje do usługi MHAX, zazwyczaj jest używany identyfikator rekordu wiersza pracy lub *identyfikator pary wiersza pracy*. (Identyfikator pary linii roboczych to nowa właściwość, która umożliwia systemowi użycie pojedynczego polecenia powrotu do przetwarzania wierszy pobierania i umieszczania). Pozostałe pola zależą od przypadku użycia. Podano kilka przykładów dalej w tym temacie.
+Ponadto subskrypcja zawiera *mapę subskrypcji*, która mapuje pola z nagłówka pracy lub wiersza pracy do niektórych lub wszystkich 10 wolnych pól danych zdarzenia wychodzącego (zgodnie z potrzebą). Aby zwrócić informacje do usługi MHAX, zazwyczaj jest używany identyfikator rekordu wiersza pracy lub *identyfikator pary wiersza pracy*. (Identyfikator pary linii roboczych to nowa właściwość, która umożliwia systemowi użycie pojedynczego polecenia powrotu do przetwarzania wierszy pobierania i umieszczania). Pozostałe pola zależą od przypadku użycia. Podano kilka przykładów dalej w tym artykule.
 
 Aby skonfigurować mapę subskrypcji, wybierz odpowiednią subskrypcję na stronie **Subskrypcje**, a następnie wybierz pozycję **Mapa subskrypcji** w okienku akcji. W wyświetlonym oknie dialogowym **Mapa subskrypcji** można przypisać tabelę i pole do każdego wymaganego pola danych.
 
@@ -161,7 +161,7 @@ Jeśli zostanie podany identyfikator pary wierszy pracy, wszystkie wiersze pobra
 
 Pobrania wierszy z lokalizacji kontrolowanych przez numer identyfikacyjny wymaga, aby **dane03** określały numer identyfikacyjny, z którego należy pobrać, niezależnie od tego, czy wiersze są oznaczone identyfikatorem rekordu wiersza pracy, czy identyfikatorem pary wierszy pracy. Pole **data04** musi określać docelowy numer identyfikacyjny nagłówka pracy dla pobrania.
 
-Wiersze odłożenia nie akceptują dalszych informacji. Są one uruchamiane tylko na podstawie lokalizacji bieżącego wiersza pracy i docelowego numer identyfikacyjnego pracy. Jeśli odłożenie musi zostać wykonane w innej lokalizacji, zmień lokalizację wiersza pracy zgodnie z opisem w sekcji [Zastępowanie zdarzeń](#override-events) w dalszej części tego tematu.
+Wiersze odłożenia nie akceptują dalszych informacji. Są one uruchamiane tylko na podstawie lokalizacji bieżącego wiersza pracy i docelowego numer identyfikacyjnego pracy. Jeśli odłożenie musi zostać wykonane w innej lokalizacji, zmień lokalizację wiersza pracy zgodnie z opisem w sekcji [Zastępowanie zdarzeń](#override-events) w dalszej części tego artykułu.
 
 Niestandardowe wiersze pracy nie wymagają ani nie obsługują żadnych dodatkowych informacji w zdarzeniu przychodzącym.
 
@@ -220,7 +220,7 @@ Ostatecznie kolejka przychodząca stanie się pełna przetworzonych już element
 
 ## <a name="get-a-quick-overview-by-using-the-queue-manager"></a>Uzyskiwanie szybkiego przeglądu przy użyciu menedżera kolejek
 
-Aby uzyskać szybki przegląd wszystkich działań związanych z kolejkami przychodzącymi i wychodzącymi, przejdź do obszaru **Interfejs urządzeń do obsługi materiałów \> Obszary robocze \> Menedżer kolejek**. Strona **Menedżer kolejek** zawiera zestaw kart i kafelków, których można używać do monitorowania i eksplorowania kolejek. Zawiera również przydatne łącza do większości innych stron wymienionych w tym temacie.
+Aby uzyskać szybki przegląd wszystkich działań związanych z kolejkami przychodzącymi i wychodzącymi, przejdź do obszaru **Interfejs urządzeń do obsługi materiałów \> Obszary robocze \> Menedżer kolejek**. Strona **Menedżer kolejek** zawiera zestaw kart i kafelków, których można używać do monitorowania i eksplorowania kolejek. Zawiera również przydatne łącza do większości innych stron wymienionych w tym artykule.
 
 ## <a name="connect-to-the-mhax-service"></a>Połącz się z usługą MHAX
 

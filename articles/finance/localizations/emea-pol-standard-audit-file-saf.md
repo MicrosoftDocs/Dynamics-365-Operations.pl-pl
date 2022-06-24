@@ -1,6 +1,6 @@
 ---
 title: Standardowy plik audytu (SAF) dla Polski
-description: Użytkownicy w firmach w Polsce mogą generować standardowe plik audytu dla podatku (SAF-T) w formacie XML. Ten temat zawiera informacje o formatach dla Polski.
+description: Użytkownicy w firmach w Polsce mogą generować standardowe plik audytu dla podatku (SAF-T) w formacie XML. Ten artykuł zawiera informacje dotyczące formatów dla Polski.
 author: LizaGolub
 ms.date: 05/19/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Poland
 ms.author: kfend
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: fe24453803cde4e6d80876937fe4c665ae3fed2e
-ms.sourcegitcommit: 6c1bf233748c4bc70fc5a1a9711758cdfd9e07dc
+ms.openlocfilehash: 9c68a5750b8e7b886c5b00f341d9a3e038b76fe5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8782237"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903014"
 ---
 # <a name="standard-audit-file-saf-for-poland"></a>Standardowy plik audytu (SAF) dla Polski
 
 [!include [banner](../includes/banner.md)]
 
-Użytkownicy w firmach w Polsce mogą generować standardowe plik audytu dla podatku (SAF-T) w formacie XML. Ten temat zawiera informacje o formatach dla Polski. 
+Użytkownicy w firmach w Polsce mogą generować standardowe plik audytu dla podatku (SAF-T) w formacie XML. Ten artykuł zawiera informacje dotyczące formatów dla Polski. 
 
 -  [Księgi księgowania SAF – JPK_KR](#jpk-kr)
 -  [Wyciąg bankowy SAF - JPK_WB](#jpk-wb)
@@ -710,7 +710,7 @@ Aby przejrzeć lub zmodyfikować konfigurację rejestru SAF sprzedaży i zakupó
 - [Pobieranie konfiguracji Raportowania elektronicznego z usługi Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 - [Wymagania dotyczące tłumaczenia — Tworzenie konfiguracji raportowania elektronicznego](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md)
 
-Początkowo konfiguracja jest przykładem raportu Faktury VAT (JPK_FA) opartego na kodach raportowania, które zostały opisane w tabeli we wcześniejszej części tego tematu. Jeśli musisz dostosować konfigurację do innego zestawu kodów raportujących, użyj konfiguracji, aby określić format. 
+Początkowo konfiguracja jest przykładem raportu Faktury VAT (JPK_FA) opartego na kodach raportowania, które zostały opisane w tabeli we wcześniejszej części tego artykułu. Jeśli musisz dostosować konfigurację do innego zestawu kodów raportujących, użyj konfiguracji, aby określić format. 
 
 1. Wybierz format w drzewie konfiguracji, a następnie w **Menu głównym** wybierz **Utwórz konfigurację**. 
 2. Oznacz **Pochodna od nazwy:...**, wprowadź nazwę i opis nowego formatu, a następnie wybierz opcję **Utwórz konfigurację**. Utworzony format jest kopią formatu nadrzędnego. 

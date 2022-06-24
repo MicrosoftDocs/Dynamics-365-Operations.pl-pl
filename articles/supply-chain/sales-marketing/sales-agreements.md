@@ -1,6 +1,6 @@
 ---
 title: Omówienie umów sprzedaży
-description: Ten temat zawiera informacje dotyczące umów sprzedaży. Umowa sprzedaży jest kontraktem, który zobowiązuje odbiorcę do zakupu produktów w określonej ilości lub za określoną kwotę w ustalonym czasie w zamian za specjalne ceny i rabaty.
+description: Ten artykuł zawiera informacje o umowach sprzedaży. Umowa sprzedaży jest kontraktem, który zobowiązuje odbiorcę do zakupu produktów w określonej ilości lub za określoną kwotę w ustalonym czasie w zamian za specjalne ceny i rabaty.
 author: Henrikan
 ms.date: 07/25/2019
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c36ace4fe61d4f3add7750c66594c0f1060f8127
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 3e84b8be597870deea3beaf1bdc4a98021b7f135
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694376"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903848"
 ---
 # <a name="sales-agreements-overview"></a>Omówienie umów sprzedaży
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje dotyczące umów sprzedaży. Umowa sprzedaży jest kontraktem, który zobowiązuje odbiorcę do zakupu produktów w określonej ilości lub za określoną kwotę w ustalonym czasie w zamian za specjalne ceny i rabaty.
+Ten artykuł zawiera informacje o umowach sprzedaży. Umowa sprzedaży jest kontraktem, który zobowiązuje odbiorcę do zakupu produktów w określonej ilości lub za określoną kwotę w ustalonym czasie w zamian za specjalne ceny i rabaty.
 
 Umowa sprzedaży jest kontraktem, który zobowiązuje odbiorcę do zakupu produktu w pewnej ilości lub kwocie w pewnym okresie czasu w zamian za specjalne ceny i rabaty, oraz z zachowaniem wszelki warunków specjalnych, takich jak warunki płatności i dostawy. Ceny i rabaty dla umowy zakupu zastępują ceny i rabaty, które są określone w jakichkolwiek istniejących umowach handlowych.  
 

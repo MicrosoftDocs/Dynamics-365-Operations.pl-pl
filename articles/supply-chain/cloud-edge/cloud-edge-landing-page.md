@@ -1,6 +1,6 @@
 ---
 title: Jednostki skalowania w dystrybuowanej topologii hybrydowej
-description: Ten temat przedstawia informacje na temat zarządzania jednostką skali chmury i urządzenia brzegowego przy produkcji i wykonywaniu zadań magazynowych.
+description: Ten artykuł przedstawia informacje na temat zarządzania jednostką skali chmury i urządzenia brzegowego przy produkcji i wykonywaniu zadań magazynowych.
 author: Mirzaab
 ms.date: 04/22/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 5ec846b294cd9ca62ff15a5306e012813c77e306
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 6b53822238220ccfcf538d49285e051c49c57189
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676359"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893679"
 ---
 # <a name="scale-units-in-a-distributed-hybrid-topology"></a>Jednostki skalowania w dystrybuowanej topologii hybrydowej
 
@@ -25,7 +25,7 @@ ms.locfileid: "8676359"
 > [!IMPORTANT]
 > Możliwość jednostki skali dla Microsoft Dynamics 365 Dynamics 365 Supply Chain Management jest udostępniana użytkownikowi na warunkach regulujących korzystanie z usługi. Aby uzyskać więcej informacji, zobacz [Informacje prawne Microsoft Dynamics](https://go.microsoft.com/fwlink/?LinkID=290927).
 >
-> Włączając jednostki skali chmury i krawędzi, należy pamiętać, że musisz potwierdzić, że pewne dane związane z konfiguracją i przetwarzaniem jednostek skali granicznej mogą być przechowywane w centrum danych znajdującym się w Stanach Zjednoczonych. Aby dowiedzieć się więcej o przetwarzaniu danych w chmurze i jednostek skali urządzenia brzegowego, zobacz sekcję [Przetwarzanie danych podczas zarządzania jednostkami skali](#data-processing-management) w dalszej części tego tematu.
+> Włączając jednostki skali chmury i krawędzi, należy pamiętać, że musisz potwierdzić, że pewne dane związane z konfiguracją i przetwarzaniem jednostek skali granicznej mogą być przechowywane w centrum danych znajdującym się w Stanach Zjednoczonych. Aby dowiedzieć się więcej o przetwarzaniu danych w chmurze i jednostek skali urządzenia brzegowego, zobacz sekcję [Przetwarzanie danych podczas zarządzania jednostkami skali](#data-processing-management) w dalszej części tego artykułu.
 
 ## <a name="core-value-proposition-for-a-distributed-hybrid-topology"></a>Propozycja wartości podstawowej dla dystrybuowanej topologii hybrydowej
 
@@ -48,7 +48,7 @@ Jednostki skali zapewniają odporność, niezawodność i skalowalność dla prz
 
 *Obciążenie* pracą jest zdefiniowanym zestawem funkcji biznesowych, który może być rozważony i delegowany do jednostki skalowania. Chociaż obciążenie związane z zarządzaniem magazynem zostało zwolnione, obciążenie związane z wykonywaniem produkcji jest nadal dostępne w wersji zapoznawczej.
 
-Można skonfigurować środowisko centrum i jednostki skalowania w chmurze dla wybranych obciążeń, korzystając z [portalu Menedżera jednostki skalowania](https://sum.dynamics.com).. Możesz również przypisać wiele obciążeń na jednostkę skali. Aby uzyskać informacje o wymaganiach wstępnych i ograniczeniach dotyczących jednostek skalowania w chmurze w bieżącej wersji, zobacz sekcję [Wymagania wstępne i ograniczenia dotyczące jednostek skalowania w chmurze](#cloud-scale-unit-prerequisites) w dalszej części tematu.
+Można skonfigurować środowisko centrum i jednostki skalowania w chmurze dla wybranych obciążeń, korzystając z [portalu Menedżera jednostki skalowania](https://sum.dynamics.com).. Możesz również przypisać wiele obciążeń na jednostkę skali. Aby uzyskać informacje o wymaganiach wstępnych i ograniczeniach dotyczących jednostek skalowania w chmurze w bieżącej wersji, zobacz sekcję [Wymagania wstępne i ograniczenia dotyczące jednostek skalowania w chmurze](#cloud-scale-unit-prerequisites) w dalszej części artykułu.
 
 ### <a name="dedicated-warehouse-management-workload-capabilities-in-a-scale-unit"></a>Dedykowane możliwości zarządzania pracą magazynową w jednostce skalowania
 

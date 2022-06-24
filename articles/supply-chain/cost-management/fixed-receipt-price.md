@@ -1,6 +1,6 @@
 ---
 title: Odchylenia od ceny ewidencyjnej
-description: W tym temacie wyjaśniono, jak można skonfigurować i używać stałych cen odbiorów w programie Microsoft Dynamics 365 Supply Chain Management.
+description: W tym artykule wyjaśniono, jak można skonfigurować i używać stałych cen odbiorów w programie Microsoft Dynamics 365 Supply Chain Management.
 author: raprofit
 ms.date: 04/25/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2022-04-25
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 8e26d84ddc309249d8bd6e54987ad3ae8eed68f0
-ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
+ms.openlocfilehash: 2630952f395d1a18202698b4d73b67ef4b760194
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8770304"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907588"
 ---
 # <a name="fixed-receipt-price"></a>Odchylenia od ceny ewidencyjnej
 
 [!include [banner](../includes/banner.md)]
 
-**Stała cena przyjęcia** to opcja, którą możesz wybrać w grupie modelu artykułu, gdy używasz modelu inwentaryzacji innego niż *Koszt standardowy* lub *Średnia ważona krocząca*. We wczesnych wersjach Microsoft Dynamics AX opcja ta nosiła nazwę **Koszt standardowy**. Została ona przemianowana na **stałą cenę przyjęcia**, gdy w Dynamics AX 2012 wprowadzono nowy model inwentaryzacji kosztów standardowych. W tym temacie wyjaśniono, jak można skonfigurować i używać stałych cen odbiorów w programie Dynamics 365 Supply Chain Management.
+**Stała cena przyjęcia** to opcja, którą możesz wybrać w grupie modelu artykułu, gdy używasz modelu inwentaryzacji innego niż *Koszt standardowy* lub *Średnia ważona krocząca*. We wczesnych wersjach Microsoft Dynamics AX opcja ta nosiła nazwę **Koszt standardowy**. Została ona przemianowana na **stałą cenę przyjęcia**, gdy w Dynamics AX 2012 wprowadzono nowy model inwentaryzacji kosztów standardowych. W tym artykule wyjaśniono, jak można skonfigurować i używać stałych cen odbiorów w programie Dynamics 365 Supply Chain Management.
 
 ## <a name="about-fixed-receipt-prices"></a>O stałych cenach odbiorów
 

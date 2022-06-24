@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e3476f1f25ac01d8740cce0442ac48ef25101a0
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f7f15c0f15302c271fac7199b21b7bcd3dcfe88a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574312"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903877"
 ---
 # <a name="credit-limits-for-customers"></a>Limity kredytu dla odbiorców
 
@@ -126,7 +126,7 @@ Użyj formularza **Odbiorcy**, aby określić kwotę limitu kredytu dla określo
 4.  Jeżeli jest to wymagane, wprowadź numer dowodu osobistego wydanego urzędowo lub inny rodzaj urzędowego dokumentu w polu **Identyfikacja urzędowa**.
 
 > [!NOTE]
-> Typ limitu kredytu zwykle wybiera się w formularzu **Parametry modułu rozrachunków z odbiorcami**. Jednakże, jeżeli typ limitu kredytu jest ustawiony na **Brak**, należy także zaznaczyć pole wyboru **Wymagany limit kredytu** w formularzu **Odbiorcy** w celu sprawdzenia limitu kredytu względem salda odbiorcy. Aby uzyskać więcej informacji o typach limitu kredytu, zobacz sekcję „Dla jakich dokumentów i procesów mogę sprawdzić limit kredytu?” w tym temacie. 
+> Typ limitu kredytu zwykle wybiera się w formularzu **Parametry modułu rozrachunków z odbiorcami**. Jednakże, jeżeli typ limitu kredytu jest ustawiony na **Brak**, należy także zaznaczyć pole wyboru **Wymagany limit kredytu** w formularzu **Odbiorcy** w celu sprawdzenia limitu kredytu względem salda odbiorcy. Aby uzyskać więcej informacji o typach limitu kredytu, zobacz sekcję „Dla jakich dokumentów i procesów mogę sprawdzić limit kredytu?” w tym artykule. 
 
 **Jak sprawdzić ręcznie limity kredytu w zamówieniach sprzedaży?**
 

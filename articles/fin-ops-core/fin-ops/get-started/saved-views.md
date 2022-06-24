@@ -1,6 +1,6 @@
 ---
 title: Zapisane widoki
-description: W tym temacie opisano sposób korzystania z funkcji zapisanych widoków.
+description: W tym artykule opisano sposób korzystania z funkcji zapisanych widoków.
 author: jasongre
 ms.date: 04/25/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: e10137ff5d11ed06c32613e601e2fa7423e270ac
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 1218497bbb112c9a9ebeaa4cabdcb9314c604a7f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644795"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845421"
 ---
 # <a name="saved-views"></a>Zapisane widoki
 
@@ -196,7 +196,7 @@ Dostępny zestaw akcji dla listy wszystkich opublikowanych widoków strony jest 
 
 ## <a name="managing-views-globally"></a>Zarządzanie widokami globalnie
 
-Chociaż niektóre funkcje zarządzania znajdują się na każdej stronie, jak wskazano w tym temacie, **administratorzy systemu** i **administratorzy zapisanych widoków** mogą bardziej kompleksowo zarządzać widokami systemu za pośrednictwem strony **Personalizacji**. W szczególności ta strona zawiera następujące sekcje i możliwości: 
+Chociaż niektóre funkcje zarządzania znajdują się na każdej stronie, jak wskazano w tym artykule, **administratorzy systemu** i **administratorzy zapisanych widoków** mogą bardziej kompleksowo zarządzać widokami systemu za pośrednictwem strony **Personalizacji**. W szczególności ta strona zawiera następujące sekcje i możliwości: 
 
 - **Opublikowane widoki** – Ta sekcja zawiera listę wszystkich widoków opublikowanych dla organizacji. W tym miejscu można ponownie opublikować widok po skorygowaniu ról zabezpieczeń lub firm, dla których jest wyświetlany widok. Możesz także eksportować, usuwać lub cofać publikację widoków. Można skorzystać z opcji **Zapisz jako osobisty**, aby utworzyć osobistą kopię widoku, co pozwoli na zaktualizowanie widoku lub uzyskanie lepszego zrozumienia jego zawartości. 
 - **Nieopublikowane widoki** — Ta sekcja zawiera listę wszystkich widoków organizacji w systemie, które nie są obecnie publikowane. Te widoki najczęściej wchodzą w skład systemu poprzez możliwości importu. Te widoki można publikować, eksportować i usuwać. Akcja **Szybkie publikowanie** dodana w wersji 10.0.12 umożliwia publikowanie wielu widoków z tej sekcji w jednej akcji za pomocą istniejących konfiguracji ról zabezpieczeń i firm. Można skorzystać z opcji **Zapisz jako osobisty**, aby utworzyć osobistą kopię tych widoków, co pozwoli na uzyskanie lepszego zrozumienia ich zawartości.

@@ -1,6 +1,6 @@
 ---
 title: Faktury zaliczkowe a zaliczki
-description: Ten temat zawiera opis i porównanie dwóch metod, których organizacje używają do obsługi zaliczek (przedpłat).
+description: Ten artykuł zawiera opis i porównanie dwóch metod, których organizacje używają do obsługi zaliczek (przedpłat).
 author: abruer
 ms.date: 10/26/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f05f1d8d2a1fb454f3f227d2cc8138f2b779ff87
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: a420a0a366e454df14d5fe994691829bc7950306
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716333"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895204"
 ---
 # <a name="prepayment-invoices-vs-prepayments"></a>Faktury zaliczkowe a zaliczki
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera opis i porównanie dwóch metod, których organizacje używają do obsługi zaliczek (przedpłat). W jednej metodzie należy utworzyć fakturę zaliczkową skojarzoną z zamówieniem zakupu. W drugiej metodzie tworzy się załączniki arkusza zaliczki poprzez utworzenie zapisów w arkuszu i oznaczenie ich jako załączników arkusza zaliczki.
+Ten artykuł zawiera opis i porównanie dwóch metod, których organizacje używają do obsługi zaliczek (przedpłat). W jednej metodzie należy utworzyć fakturę zaliczkową skojarzoną z zamówieniem zakupu. W drugiej metodzie tworzy się załączniki arkusza zaliczki poprzez utworzenie zapisów w arkuszu i oznaczenie ich jako załączników arkusza zaliczki.
 
 Organizacje mogą wystawiać zaliczki (płatności z góry) dla dostawców za towary lub usługi, które nie zostały jeszcze dostarczone lub zrealizowane. Dostępne są dwa sposoby wystawiania zaliczek dla dostawców. Aby zminimalizować ryzyko, można śledzić zaliczki, definiując zaliczkę na zamówieniu zakupu. Dla tej metody należy utworzyć fakturę zaliczkową skojarzoną z zamówieniem zakupu. Ta metoda jest nazywana fakturowaniem zaliczki. Organizacje, które nie chcą muszą śledzić zaliczek z taką dokładnością lub nie otrzymują faktury zaliczkowej od dostawcy, mogą zamiast metody fakturowania zaliczki używać załączników arkusza zaliczki. Załączniki arkusza zaliczki można tworzyć przez tworzenie wpisów w arkuszu i oznaczanie ich jako załączników arkusza zaliczki. Dla tej metody nie można śledzić, które zaliczki dla dostawcy odpowiadają którym zamówieniom zakupu. Można jednak można oznaczyć zaksięgowaną zaliczkę do rozliczenia według zamówienia zakupu.
 

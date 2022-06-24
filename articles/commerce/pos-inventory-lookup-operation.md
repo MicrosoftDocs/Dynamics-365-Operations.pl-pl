@@ -1,6 +1,6 @@
 ---
 title: Operacja wyszukiwania zapasów w POS
-description: W tym temacie opisano, jak używać operacji wyszukiwania zapasów w punkcie sprzedaży (POS) Dynamics 365 Commerce do przeglądania dostępnych zapasów produktów w sklepach i magazynach.
+description: W tym artykule opisano, jak używać operacji wyszukiwania zapasów w punkcie sprzedaży (POS) Dynamics 365 Commerce do przeglądania dostępnych zapasów produktów w sklepach i magazynach.
 author: boycezhu
 ms.date: 08/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.openlocfilehash: ded7c0aa00d0806dfe4eb4e182abbbf66fd76d5b
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 01f10c348c61ffbcb30be26a57b3edd436aacc8f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343843"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850256"
 ---
 # <a name="inventory-lookup-operation-in-pos"></a>Operacja wyszukiwania zapasów w POS
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano, jak używać operacji wyszukiwania zapasów w punkcie sprzedaży (POS) Dynamics 365 Commerce do przeglądania dostępnych zapasów produktów w sklepach i magazynach.
+W tym artykule opisano, jak używać operacji wyszukiwania zapasów w punkcie sprzedaży (POS) Dynamics 365 Commerce do przeglądania dostępnych zapasów produktów w sklepach i magazynach.
 
 Dokładny widok zapasów w całej organizacji pomaga pracownikom sklepu zapewnić terminową i efektywną obsługę klienta. Moment, który liczy się najbardziej, to chwila, kiedy klient jest gotowy do podjęcia decyzji zakupowej. Ważne jest, aby kasjerzy w sklepie detalicznym mieli dostęp do informacji o stanie magazynowym w czasie rzeczywistym lub prawie w czasie rzeczywistym, aby mogli dokładnie obiecać dostawę i odbiór produktu.
 

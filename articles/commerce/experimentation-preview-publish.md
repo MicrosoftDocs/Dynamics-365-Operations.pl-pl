@@ -1,30 +1,24 @@
 ---
 title: Podgląd i publikowanie eksperymentu
-description: W tym temacie opisano sposób podglądu i publikowania eksperymentu z Dynamics 365 Commerce.
+description: W tym artykule opisano sposób podglądu i publikowania eksperymentu z Dynamics 365 Commerce.
 author: sushma-rao
-ms.date: 10/21/2020
+ms.date: 06/08/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
-ms.assetid: ''
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
-ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 41957befe109102aaa7d3a5783b54f96824dfe76a25ab787f94afc778c08fca5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5da7a4e3c17057278d02ebd45702d1de404f0dc6
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740390"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946149"
 ---
 # <a name="preview-and-publish-an-experiment"></a>Podgląd i publikowanie eksperymentu
 
-W tym temacie opisano sposób wyświetlania podglądu i publikowania eksperymentu w Dynamics 365 Commerce po [połączeniu eksperymentu i edytowaniu odmian](experimentation-connect-edit.md). Na poniższym diagramie przedstawiono wszystkie kroki związane z konfigurowaniem i przeprowadzaniem eksperymentu na stronie internetowej środowiska handlu elektronicznego w systemie Dynamics 365 Commerce. Dodatkowe kroki są zawarte w odrębnych tematach.
+W tym artykule opisano sposób wyświetlania podglądu i publikowania eksperymentu w Dynamics 365 Commerce po [połączeniu eksperymentu i edytowaniu odmian](experimentation-connect-edit.md). Na poniższym diagramie przedstawiono wszystkie kroki związane z konfigurowaniem i przeprowadzaniem eksperymentu na stronie internetowej środowiska handlu elektronicznego w systemie Dynamics 365 Commerce. Dodatkowe kroki są zawarte w odrębnych artykułach.
 
 [ ![Proces użytkownika eksperymentu — podgląd i publikowanie.](./media/experimentation_preview_publish.svg) ](./media/experimentation_preview_publish.svg#lightbox)
 
@@ -51,6 +45,10 @@ W przypadku korzystania z grup publikacji z eksperymentami należy pamiętać o 
 - Eksperymenty, które są połączone ze stronami w działającej witrynie, nie są dostępne dla stron w grupach publikacji i na odwrót. Podobnie strony, które mają uruchomione eksperymenty w działającej witrynie, nie są dostępne dla innych eksperymentów w grupach publikacji i na odwrót.
 - Podczas publikowania lub planowania grupy publikacji cała zawartość w grupie publikacji jest publikowana niezależnie od tego, czy istnieje doświadczenie związane z grupą publikacji.
 - Ponieważ grupa publikacji nadal utrzymuje się po opublikowaniu jej w działającej witrynie, eksperymenty z grupy publikacji również będą się utrzymywać. Dlatego nie będzie można kojarzyć innych eksperymentów z tą samą stroną lub fragmentem. Aby uniknąć tego ograniczenia, usuń wszystkie grupy publikacji z trwałymi eksperymentami. Podobnie, jeśli chcesz usunąć eksperyment w działającej witrynie, które istnieje również w grupie publikowania, najpierw usuń go z grupy publikacji.
+
+### <a name="force-variations-for-testing"></a>Wymuszaj odchylenia do testowania
+
+Po uruchomieniu eksperymentu można dodać identyfikator eksperymentu i identyfikator odmiany do domyślnego adresu URL strony, aby wymusić odmianę na potrzeby testowania lub automatyzacji. Jeśli na przykład domyślnym adresem URL strony jest adres URL `https://fabrikam.com/modern/homepage`, można wymusić zmianę adresu URL na przykład `https://fabrikam.com/modern/homepage?exp=18012910471|18024360464`. Identyfikator eksperymentu i identyfikator odmiany dla odmiany eksperymentu można uzyskać z adresu URL podglądu w doświadczeniu **Wersja zapoznawcza** opisanym powyżej.
 
 ## <a name="previous-step"></a>Poprzedni krok
 [Łączenie i edytowanie eksperymentu](experimentation-connect-edit.md)

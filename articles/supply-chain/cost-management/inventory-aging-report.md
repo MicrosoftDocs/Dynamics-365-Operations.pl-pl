@@ -1,6 +1,6 @@
 ---
 title: Przykłady i logika raportu wiekowania zapasów
-description: W tym temacie przedstawiono przykłady przedstawiające sposób interpretacji wyników raportu wiekowania zapasów.
+description: W tym artykule przedstawiono przykłady przedstawiające sposób interpretacji wyników raportu wiekowania zapasów.
 author: JennySong-SH
 ms.date: 5/29/2020
 ms.topic: article
@@ -16,24 +16,24 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2020-5-29
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4cfffa49f802c601da391617b123134c435fba92
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 40066431ddfb9644c059025eac55d1b36789882e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672354"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848028"
 ---
 # <a name="inventory-aging-report-examples-and-logic"></a>Przykłady i logika raportu wiekowania zapasów
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie przedstawiono przykłady przedstawiające sposób interpretacji wyników raportu **Wiekowania zapasów**. Ten raport umożliwia kategoryzowanie dostępnych ilości i wartości zapasów dla wybranego towaru lub grupy towarów do kilku przedziałów okresów. W tym temacie przedstawiono również wewnętrzną logikę raportu.
+W tym artykule przedstawiono przykłady przedstawiające sposób interpretacji wyników raportu **Wiekowania zapasów**. Ten raport umożliwia kategoryzowanie dostępnych ilości i wartości zapasów dla wybranego towaru lub grupy towarów do kilku przedziałów okresów. W tym artykule przedstawiono również wewnętrzną logikę raportu.
 
-W przykładach w tym temacie przedstawiono wyniki prezentowane w standardowym raporcie **Wiekowania zapasów**. Zasadniczo zalecamy jednak korzystanie z wersji [raportu przechowywania raportu o starzeniu się zapasów](inventory-aging-report-storage.md), zwłaszcza gdy masz wiele produktów i magazynów, które muszą zostać przetworzone. Przechowywanie raportów wiekowania zapasów powoduje zapisanie wszystkich generowanych raportów, wyświetlenie wyników w postaci strony interakcyjnej i wykresu oraz umożliwia wyeksportowanie dowolnego zapisanego raportu.
+W przykładach w tym artykule przedstawiono wyniki prezentowane w standardowym raporcie **Wiekowania zapasów**. Zasadniczo zalecamy jednak korzystanie z wersji [raportu przechowywania raportu o starzeniu się zapasów](inventory-aging-report-storage.md), zwłaszcza gdy masz wiele produktów i magazynów, które muszą zostać przetworzone. Przechowywanie raportów wiekowania zapasów powoduje zapisanie wszystkich generowanych raportów, wyświetlenie wyników w postaci strony interakcyjnej i wykresu oraz umożliwia wyeksportowanie dowolnego zapisanego raportu.
 
 ## <a name="sample-data-that-is-used-in-these-examples"></a>Przykładowe dane używane w tych przykładach
 
-Przykłady przedstawione w tym temacie są oparte na przykładowych danych transakcji magazynowych opisanych w tej sekcji.
+Przykłady przedstawione w tym artykule są oparte na przykładowych danych transakcji magazynowych opisanych w tej sekcji.
 
 ### <a name="storage-dimension-setup"></a>Konfiguracja wymiarów magazynowania
 

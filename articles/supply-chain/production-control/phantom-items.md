@@ -1,6 +1,6 @@
 ---
 title: Fantomy pozycji
-description: W tym temacie szczegółowo opisano, jak typ wiersza Fantom może być wykorzystywany w wierszach listy składowej (BOM) i formule w Dynamics 365 Supply Chain Management.
+description: W tym artykule szczegółowo opisano, jak typ wiersza Fantom może być wykorzystywany w wierszach listy składowej (BOM) i formule w Dynamics 365 Supply Chain Management.
 author: johanhoffmann
 ms.date: 05/05/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-05-05
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 5c9768381d35709611e4bec3d2b7793a4d896b34
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 64139873216decd8ecb2fcaf1f284e726c53c332
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713255"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893331"
 ---
-# <a name="phantom-items"></a>Towary fantomowe
+# <a name="phantom-items"></a>Fantomy pozycji
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie szczegółowo opisano, jak typ wiersza Fantom może być wykorzystywany w wierszach listy składowej (BOM) i formule.
+W tym artykule szczegółowo opisano, jak typ wiersza Fantom może być wykorzystywany w wierszach listy składowej (BOM) i formule.
 
 Na ilustracji 1 (a) to BOM produktu H oraz części F i G, a (b) to arkusz marszruty dla produktu H i części F.
 

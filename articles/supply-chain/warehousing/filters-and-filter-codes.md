@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie filtrów produktów dla transakcji magazynowych
-description: W tym temacie opisano, jak skonfigurować filtry produktów i filtrować kody w celu skategoryzowania pozycji zapasów w magazynie. Filtry służą również do określania, którzy odbiorcy mogą zamówić określone towary, i określania towarów, które można zakupić od określonego dostawcy.
+description: W tym artykule opisano, jak skonfigurować filtry produktów i filtrować kody w celu skategoryzowania pozycji zapasów w magazynie. Filtry służą również do określania, którzy odbiorcy mogą zamówić określone towary, i określania towarów, które można zakupić od określonego dostawcy.
 author: Mirzaab
 ms.date: 01/04/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 021ce940a4ea6d59719d1c6bc79532832cc2f3ff
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f3d6cd373699d374c019f0db7befaffc169f4f6c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567686"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850446"
 ---
 # <a name="configure-product-filters-for-warehouse-transactions"></a>Konfigurowanie filtrów produktów dla transakcji magazynowych
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano, jak skonfigurować filtry produktów i filtrować kody w celu skategoryzowania pozycji zapasów w magazynie. Filtry służą również do określania, którzy odbiorcy mogą zamówić określone towary, i określania towarów, które można zakupić od określonego dostawcy.
+W tym artykule opisano, jak skonfigurować filtry produktów i filtrować kody w celu skategoryzowania pozycji zapasów w magazynie. Filtry służą również do określania, którzy odbiorcy mogą zamówić określone towary, i określania towarów, które można zakupić od określonego dostawcy.
 
 Ponadto można skonfigurować i korzystać z filtrów produktów do automatycznego organizowania zapasów w magazynie i łączyć przefiltrowane elementy w grupy filtrów. Filtry służą do dzielenia towarów na kategorie w celu obsługi procesów zarządzania, zakupów i sprzedaży. Jeśli sposób obsługi towarów jest oparty na ograniczeniach dotyczących wagi lub obsługi, może być konieczne grupowanie towarów lub oddzielanie ich od siebie. Można również określić odbiorców lub dostawców, od których towar może być kupowany lub którym może być sprzedawany.
 
@@ -48,7 +48,7 @@ Filtry produktów zawierają maksymalnie 10 właściwości **tytułu filtru**, k
 
     ![Konfigurowanie filtru produktów.](media/Product_Filters10.png "Konfigurowanie filtru produktów")
 
-1. W polu **Opis** wprowadź nazwę kodu. Na przykład *kod 2* może reprezentować dostawców. Następnie można utworzyć filtr produktów dla określonego dostawcy lub grupy dostawców. Aby uzyskać więcej informacji, zobacz sekcję [Konfigurowanie kodów filtrów dostawców](#vendor-product-filters) w dalszej części tego tematu.
+1. W polu **Opis** wprowadź nazwę kodu. Na przykład *kod 2* może reprezentować dostawców. Następnie można utworzyć filtr produktów dla określonego dostawcy lub grupy dostawców. Aby uzyskać więcej informacji, zobacz sekcję [Konfigurowanie kodów filtrów dostawców](#vendor-product-filters) w dalszej części tego artykułu.
 
     ![Zestaw filtrów produktu.](media/Product_Filters.png "Zestaw filtrów produktu")
 

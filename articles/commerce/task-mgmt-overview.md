@@ -1,6 +1,6 @@
 ---
 title: Omówienie zarządzania zadaniami
-description: Ten temat stanowi omówienie zarządzania zadaniami dla menedżerów i pracowników w Microsoft Dynamics 365 Commerce.
+description: Ten artykuł stanowi omówienie zarządzania zadaniami dla menedżerów i pracowników w Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 02/10/2020
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 7cdcc0ba6a9f5a3d9dd4ea781adc9e81c45e3d02
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 1a814b76985b9bb7ee47ee287967acbf41ddd0e6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985400"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900341"
 ---
 # <a name="task-management-overview"></a>Omówienie zarządzania zadaniami
 
 [!include [banner](includes/banner.md)]
 
-Ten temat stanowi omówienie zarządzania zadaniami dla menedżerów i pracowników w Microsoft Dynamics 365 Commerce.
+Ten artykuł stanowi omówienie zarządzania zadaniami dla menedżerów i pracowników w Microsoft Dynamics 365 Commerce.
 
 W środowisku detalicznym zawsze trudno jest upewnić się, że zadania są wykonywane przez odpowiednie osoby w odpowiednim czasie. Detaliści muszą mieć możliwość powiadamiania pracowników o nadchodzących zadaniach i udostępnianiu powiązanych kontekstów biznesowych, dzięki czemu zadania mogą być wykonywane poprawnie i na czas.
 

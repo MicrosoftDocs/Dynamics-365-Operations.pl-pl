@@ -1,6 +1,6 @@
 ---
-title: Określona proporcjonalnie do opłat dodatkowych z nagłówka do wierszy sprzedaży uzgadniania
-description: W tym temacie opisano dodatkowe funkcje obliczania i stosowania opłat automatycznych dla zamówień kanału Commerce przy użyciu funkcji zaawansowanych opłat automatycznych.
+title: Proporcjonalne dzielenie opłat z nagłówka między pasujące wiersze sprzedaży
+description: W tym artykule opisano dodatkowe funkcje obliczania i stosowania opłat automatycznych dla zamówień kanału Commerce przy użyciu funkcji zaawansowanych opłat automatycznych.
 author: hhaines
 ms.date: 03/30/2020
 ms.topic: article
@@ -16,19 +16,19 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 0de29e1817840c172f9235f2ee48251c4878a0573d270a60fde5b42ba6f88d31
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6b41aa7b012b161626a98fc4aa2d37134552a57a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774516"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886939"
 ---
-# <a name="prorate-header-charges-to-matching-sales-lines"></a>Określona proporcjonalnie do opłat dodatkowych z nagłówka do wierszy sprzedaży uzgadniania
+# <a name="prorate-header-charges-to-matching-sales-lines"></a>Proporcjonalne dzielenie opłat z nagłówka między pasujące wiersze sprzedaży
 
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano funkcje grupowania automatycznych opłat na poziomie nagłówka i określenia ich proporcji do wierszy sprzedaży handlu. Ta funkcja jest dostępna dla transakcji, które zostały utworzone w punkcie sprzedaży (POS) w Retail wersji 10.0.1 i sprzedaży, które zostały utworzone w biurze obsługi w Retail wersji 10.0.2.
+W tym artykule opisano funkcje grupowania automatycznych opłat na poziomie nagłówka i określenia ich proporcji do wierszy sprzedaży handlu. Ta funkcja jest dostępna dla transakcji, które zostały utworzone w punkcie sprzedaży (POS) w Retail wersji 10.0.1 i sprzedaży, które zostały utworzone w biurze obsługi w Retail wersji 10.0.2.
 
 Ta funkcja jest dostępna tylko wtedy, gdy [zaawansowane automatyczne opłaty](/dynamics365/unified-operations/retail/omni-auto-charges) włączono za pomocą opcji na stronie **Parametry handlu**. Ponadto rozszerzona metoda obliczania automatycznych opłat może być stosowana tylko w przypadku zamówień sprzedaży utworzonych przez kanały handlu (punkt sprzedaży, biuro obsługi, platforma Dynamics e-Commerce).
 

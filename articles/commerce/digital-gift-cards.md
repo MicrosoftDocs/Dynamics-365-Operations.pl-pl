@@ -1,6 +1,6 @@
 ---
 title: Cyfrowe karty upominkowe w handlu elektronicznym
-description: W tym temacie opisano, jak działają cyfrowe karty upominkowe w implementacji handlu elektronicznego Microsoft Dynamics 365 Commerce. Zawiera także przegląd ważnych kroków konfiguracji.
+description: W tym artykule opisano, jak działają cyfrowe karty upominkowe w implementacji handlu elektronicznego Microsoft Dynamics 365 Commerce. Zawiera także przegląd ważnych kroków konfiguracji.
 author: anupamar-ms
 ms.date: 05/27/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: de8811b3265bc582a055aaad1f3dea32def552f4
-ms.sourcegitcommit: d38d2fe85dc2497211ba5731617f590029d07145
+ms.openlocfilehash: 60de6988f14a0dcbbb881e84a9e4d8a45ca1289a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8809594"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884911"
 ---
 # <a name="e-commerce-digital-gift-cards"></a>Cyfrowe karty upominkowe w handlu elektronicznym
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano, jak działają cyfrowe karty upominkowe w implementacji handlu elektronicznego Microsoft Dynamics 365 Commerce. Zawiera także przegląd ważnych kroków konfiguracji.
+W tym artykule opisano, jak działają cyfrowe karty upominkowe w implementacji handlu elektronicznego Microsoft Dynamics 365 Commerce. Zawiera także przegląd ważnych kroków konfiguracji.
 
 W Dynamics 365 Commerce zakup cyfrowych kart podarunkowych przebiega tak samo, jak zakup innych produktów w systemie. Nie trzeba konfigurować żadnych dodatkowych modułów. Jeśli do koszyka dodano wiele kart podarunkowych, pozycje karty podarunkowej nie są agregowane w jednym wierszu sprzedaży. To zachowanie jest wymagane, ponieważ każdy wiersz sprzedaży jest fakturowany przy użyciu oddzielnego numeru karty upominkowej.
 

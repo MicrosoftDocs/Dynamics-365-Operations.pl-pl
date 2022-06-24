@@ -1,6 +1,6 @@
 ---
 title: Migawka wiekowania odbiorcy
-description: Ten temat zawiera informacje o migawkach wiekowania klientów. Migawka wiekowania oblicza salda wiekowe dla grupy klientów w określonym momencie.
+description: Ten artykuł zawiera informacje o migawkach wiekowania klientów. Migawka wiekowania oblicza salda wiekowe dla grupy klientów w określonym momencie.
 author: JodiChristiansen
 ms.date: 05/05/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 54db3e53cd31936ce80f0cdf1147535216d0d4b4
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: c1a83f2648b52e436d19a11862e58dc33313f341
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8723003"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902581"
 ---
-# <a name="customer-aging-snapshots"></a>Migawka wiekowania odbiorcy 
+# <a name="customer-aging-snapshots"></a>Migawka wiekowania odbiorcy
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje o migawkach wiekowania klientów. Migawka wiekowania oblicza salda wiekowe dla grupy klientów w określonym momencie. Możesz tworzyć przedawnione rekordy migawek albo dla wszystkich klientów, albo dla klientów z puli klientów.
+Ten artykuł zawiera informacje o migawkach wiekowania klientów. Migawka wiekowania oblicza salda wiekowe dla grupy klientów w określonym momencie. Możesz tworzyć przedawnione rekordy migawek albo dla wszystkich klientów, albo dla klientów z puli klientów.
 
 Informacje z migawek wiekowania są wyświetlane na stronie z listą **Wiekowane salda** i na stronie **Windykacja**. Należy utworzyć migawki wiekowania, aby można było używać strony listy **Wiekowane salda**. Strona listy zawiera listę tylko klientów, dla których utworzono migawkę wiekowania.
 

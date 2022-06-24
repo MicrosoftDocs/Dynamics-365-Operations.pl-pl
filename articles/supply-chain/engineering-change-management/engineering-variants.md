@@ -1,6 +1,6 @@
 ---
 title: Generowanie wariantów dla produktów projektowych
-description: W tym temacie opisano sposób generowania wariantów dla produktów projektowych
+description: W tym artykule opisano sposób generowania wariantów dla produktów projektowych
 author: t-benebo
 ms.date: 06/08/2021
 ms.topic: article
@@ -10,22 +10,22 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 7921983a965af5557f54f608418c8ec922256ba6
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 08feb66dedfa79f5a21a7723a22f3bef883431e6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103645"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870761"
 ---
 # <a name="generate-variants-for-engineering-products"></a>Generowanie wariantów dla produktów projektowych
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób generowania wariantów dla produktów projektowych.
+W tym artykule opisano sposób generowania wariantów dla produktów projektowych.
 
 ## <a name="turn-variant-generation-for-engineering-products-on-or-off"></a>Włącz lub wyłącz generowanie wariantów produktów inżynierskich
 
-Funkcje opisane w tym temacie wymagają włączania w *systemie zarówno zarządzania zmianami inżynieryjnymi*, jak i *Generowanie wariantów dla produktów inżynierskich*. Aby uzyskać szczegółowe informacje dotyczące sposobu włączanie i wyłączanie tych funkcji, zobacz [omówienie zarządzania zmianami inżynieryjnymi](product-engineering-overview.md).
+Funkcje opisane w tym artykule wymagają włączania w *systemie zarówno zarządzania zmianami inżynieryjnymi*, jak i *Generowanie wariantów dla produktów inżynierskich*. Aby uzyskać szczegółowe informacje dotyczące sposobu włączanie i wyłączanie tych funkcji, zobacz [omówienie zarządzania zmianami inżynieryjnymi](product-engineering-overview.md).
 
 ## <a name="generate-one-or-more-new-variants-of-an-engineering-product"></a>Generowanie jednego lub więcej nowych wariantów produktu projektowego
 

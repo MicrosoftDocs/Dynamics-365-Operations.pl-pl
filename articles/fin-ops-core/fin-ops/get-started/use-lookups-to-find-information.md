@@ -1,6 +1,6 @@
 ---
 title: Znajdowanie informacji za pomocą odnośników
-description: W tym temacie dowiesz się więcej o tych nowych funkcjach odnośników i otrzymasz pomocne wskazówki dotyczące ich optymalnego wykorzystywania w systemie.
+description: W tym artykule dowiesz się więcej o tych nowych funkcjach odnośników i otrzymasz pomocne wskazówki dotyczące ich optymalnego wykorzystywania w systemie.
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e7135487e5d87564163c643d1315c51231fa66de
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: ee309330c165dfb0b67f647afc3514d4c827dad1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069305"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901531"
 ---
 # <a name="find-information-by-using-lookups"></a>Znajdowanie informacji za pomocą odnośników
 
@@ -28,7 +28,7 @@ ms.locfileid: "8069305"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Wiele pól ma odnośniki (służące do wyszukiwania), które bardzo ułatwiają znajdowanie poprawnych lub żądanych wartości. W funkcjonalności odnośników wprowadzono szereg ulepszeń, które zwiększają użyteczność tych formantów i w efekcie wydajność pracy użytkowników. W tym temacie dowiesz się więcej o tych nowych funkcjach odnośników i otrzymasz pomocne wskazówki dotyczące ich optymalnego wykorzystywania w systemie.
+Wiele pól ma odnośniki (służące do wyszukiwania), które bardzo ułatwiają znajdowanie poprawnych lub żądanych wartości. W funkcjonalności odnośników wprowadzono szereg ulepszeń, które zwiększają użyteczność tych formantów i w efekcie wydajność pracy użytkowników. W tym artykule dowiesz się więcej o tych nowych funkcjach odnośników i otrzymasz pomocne wskazówki dotyczące ich optymalnego wykorzystywania w systemie.
 
 ## <a name="responsive-lookups"></a>Odnośniki elastyczne
 

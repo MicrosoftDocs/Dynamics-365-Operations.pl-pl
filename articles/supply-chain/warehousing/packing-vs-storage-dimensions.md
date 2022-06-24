@@ -1,6 +1,6 @@
 ---
 title: Ustawianie różnych wymiarów pakowania i przechowywania
-description: W tym temacie pokazano, jak określić, do którego procesu (pakowanie, przechowywanie lub zagnieżdżone pakowanie) będzie używany każdy określony wymiar.
+description: W tym artykule pokazano, jak określić, do którego procesu (pakowanie, przechowywanie lub zagnieżdżone pakowanie) będzie używany każdy określony wymiar.
 author: Mirzaab
 ms.date: 01/28/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 090a6f653b50d8f22a2f34354172f129624813f1
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 85e40a0768174dcdc5d0fa2647b24cddccf01bdf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687653"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905494"
 ---
 # <a name="set-different-dimensions-for-packing-and-storage"></a>Ustawianie różnych wymiarów pakowania i przechowywania
 
@@ -33,7 +33,7 @@ Niektóre towary są pakowane lub przechowywane w taki sposób, że konieczne mo
 Wymiany *magazynowania* są obsługiwane, nawet jeśli funkcja *Wymiary produktu do pakowania* nie jest włączona. Te ustawienia są ustawiane za pomocą strony **Wymiar fizyczny** w aplikacji Supply Chain Management. Te wymiary są używane przez wszystkie procesy, w których nie określono wymiarów pakowania i zagnieżdżonych wymiarów pakowania.
 
 Wymiary *pakowania* i *zagnieżdżonego pakowania* są ustawiane za pomocą strony **Fizyczne wymiary produktu**, która jest dodawana po włączeniu funkcji *wymiarów produktu do pakowania*.
-Ten temat zawiera scenariusz, który ilustruje sposób używania tej funkcji.
+Ten artykuł zawiera scenariusz, który ilustruje sposób używania tej funkcji.
 
 ## <a name="turn-on-the-packaging-product-dimensions-feature"></a>Włączanie funkcji wymiarów produktu opakowania
 

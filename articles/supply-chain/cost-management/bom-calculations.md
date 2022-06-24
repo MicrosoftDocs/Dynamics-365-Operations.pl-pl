@@ -1,6 +1,6 @@
 ---
 title: Obliczenia BOM
-description: Obliczenia łącznego kosztu i ceny sprzedaży są nazywane obliczeniami listy składowej BOM i inicjuje się je ze strony Obliczenia. Ten temat zawiera informacje dotyczące obliczeń BOM.
+description: Obliczenia łącznego kosztu i ceny sprzedaży są nazywane obliczeniami listy składowej BOM i inicjuje się je ze strony Obliczenia. Ten artykuł zawiera informacje dotyczące obliczeń BOM.
 author: JennySong-SH
 ms.date: 05/01/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 0a71a17efbca3945c5a1010cf7d523a85420e8e2
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c19c15f807a809a68043a75ca935fa92217fcd5f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674597"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902810"
 ---
 # <a name="bom-calculations"></a>Obliczenia BOM
 
 [!include [banner](../includes/banner.md)]
 
-Obliczenia łącznego kosztu i ceny sprzedaży są nazywane obliczeniami listy składowej BOM i inicjuje się je ze strony Obliczenia. Ten temat zawiera informacje dotyczące obliczeń BOM.
+Obliczenia łącznego kosztu i ceny sprzedaży są nazywane obliczeniami listy składowej BOM i inicjuje się je ze strony Obliczenia. Ten artykuł zawiera informacje dotyczące obliczeń BOM.
 
 Obliczenia łącznego kosztu i ceny sprzedaży są nazywane obliczeniami listy składowej BOM i inicjuje się je ze strony **Obliczenia**. Na stronie **Obliczenia** można wykonywać następujące zadania:
 

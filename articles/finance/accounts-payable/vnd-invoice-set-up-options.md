@@ -1,6 +1,6 @@
 ---
 title: Opcje konfiguracji automatyzacji faktur od dostawcy (wersja zapoznawcza)
-description: W tym temacie opisano opcje dostępne przy ustawianiu i konfigurowaniu automatyzacji faktur od dostawców.
+description: W tym artykule opisano opcje dostępne przy ustawianiu i konfigurowaniu automatyzacji faktur od dostawców.
 author: sunfzam
 ms.date: 02/14/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: c1dc443e4225a3ffc6b88cedf7add396a66ec25d
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: 86ad68b3dc08bf2c57ab5f9bc6c65bc37c0901e6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182450"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874849"
 ---
 # <a name="setup-options-for-vendor-invoice-automation"></a>Opcje ustawień automatyzacji faktur od dostawców
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano opcje dostępne przy ustawianiu i konfigurowaniu automatyzacji faktur od dostawców. Funkcje automatyzacji faktur używają następujących typów parametrów ustawień:
+W tym artykule opisano opcje dostępne przy ustawianiu i konfigurowaniu automatyzacji faktur od dostawców. Funkcje automatyzacji faktur używają następujących typów parametrów ustawień:
 
 - Parametry do automatycznego stosowania przedpłat w importowanych fakturach.
 - Parametry przesyłania zaimportowanych faktur od dostawców do systemu przepływu pracy i dopasowywanie zaksięgowanych wierszy przyjęcia produktów do wierszy oczekujących faktur od dostawcy.

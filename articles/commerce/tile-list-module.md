@@ -1,6 +1,6 @@
 ---
 title: Moduł listy kafelków
-description: W tym temacie opisano moduły listy kafelków i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano moduły listy kafelków i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: dd714f29fe2f9acd459be7bda1c0bfac65b72cb0
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: 44eb9b82ef9625734c7fe5ccba85207d9f210a00
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780800"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905405"
 ---
 # <a name="tile-list-module"></a>Moduł listy kafelków
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano moduły listy kafelków i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
+W tym artykule opisano moduły listy kafelków i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 
 Moduł listy kafelków to zbiór kafelków w karuzeli. Służy do promowania kategorii produktów lub marek produktów za pomocą obrazów i tekstu. Na przykład sprzedawca detaliczny może dodać moduł listy kafelków do strony głównej witryny e-commerce, aby promować wszystkie najlepiej sprzedające się kategorie.
 

@@ -1,6 +1,6 @@
 ---
 title: Przykłady i logika raportu wartości zapasów
-description: Ten temat zawiera kilka przykładów wyników, które są prezentowane w każdym typie raportu o wartości zapasów. Raporty wartości zapasów zawierają szczegółowe informacje dotyczące ilości i kwot fizycznych oraz finansowych zapasów.
+description: Ten artykuł zawiera kilka przykładów wyników, które są prezentowane w każdym typie raportu o wartości zapasów. Raporty wartości zapasów zawierają szczegółowe informacje dotyczące ilości i kwot fizycznych oraz finansowych zapasów.
 author: JennySong-SH
 ms.date: 10/19/2021
 ms.topic: article
@@ -11,24 +11,24 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-10-19
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 0d594fc18a104c434a334a5b6d1d249330a6be9a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: e6c6387be5204fde6ebc7a4983567801900974af
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675327"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877661"
 ---
 # <a name="inventory-value-report-examples-and-logic"></a>Przykłady i logika raportu wartości zapasów
 
 [!include [banner](../includes/banner.md)]
 
-Raporty wartości zapasów zawierają szczegółowe informacje dotyczące ilości i kwot fizycznych oraz finansowych zapasów. Ten temat zawiera kilka przykładów wyników, które są prezentowane w każdym typie raportu o wartości zapasów.
+Raporty wartości zapasów zawierają szczegółowe informacje dotyczące ilości i kwot fizycznych oraz finansowych zapasów. Ten artykuł zawiera kilka przykładów wyników, które są prezentowane w każdym typie raportu o wartości zapasów.
 
 Aby uzyskać więcej informacji na temat generowania i używania poszczególnych typów raportów wartości zapasów, zobacz [raporty wartości zapasów](inventory-value-report-storage.md).
 
 ## <a name="sample-data-that-is-used-in-these-examples"></a>Przykładowe dane używane w tych przykładach
 
-Przykłady przedstawione w tym temacie są oparte na przykładowych danych transakcji magazynowych opisanych w tej sekcji.
+Przykłady przedstawione w tym artykule są oparte na przykładowych danych transakcji magazynowych opisanych w tej sekcji.
 
 ### <a name="storage-dimension-setup"></a>Konfiguracja wymiarów magazynowania
 
@@ -70,9 +70,9 @@ Przykładowy system zawiera konfigurację raportu wartości zapasów, która ma 
 
 ## <a name="inventory-value-report-example-1"></a>Przykład raportu wartości zapasów 1
 
-W poniższej tabeli i ilustracjach przedstawiono wyniki użycia przykładowych danych i konfiguracji raportu opisanych wcześniej w tym temacie.
+W poniższej tabeli i ilustracjach przedstawiono wyniki użycia przykładowych danych i konfiguracji raportu opisanych wcześniej w tym artykule.
 
-| Typ zasobu | Zasób | Oddział | Odwołanie | Zapasy: ilość finansowa | Zapasy: kwota finansowa | Zapasy: zaksięgowana ilość fizyczna | Zapasy: zaksięgowana kwota fizyczna | Zapasy: ilość | Zapasy: kwota | Średni koszt jednostkowy |
+| Typ zasobu | Zasób | Witryna | Odwołanie | Zapasy: ilość finansowa | Zapasy: kwota finansowa | Zapasy: zaksięgowana ilość fizyczna | Zapasy: zaksięgowana kwota fizyczna | Zapasy: ilość | Zapasy: kwota | Średni koszt jednostkowy |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Materiał | B0001 | 1 | Saldo końcowe | 9.00 | 908.33 | 5.00 | 375.00 | 14.00 | 1,283.33 | 91.67 |
 | Materiał | B0001 | 2 | Saldo końcowe | 10,00 | 2,000.00 | 0,00 | 0,00 | 10,00 | 2,000.00 | 200.00 |
@@ -91,7 +91,7 @@ Na poniższej ilustracji przedstawiono standardowy **Przechowywanie raportu wart
 
 ## <a name="inventory-value-report-example-2"></a>Przykład raportu wartości zapasów 2
 
-Na poniższych tabelach i ilustracjach przedstawiono wyniki użycia przykładowych danych opisanych wcześniej w tym temacie, ale po uruchomieniu raportu wartość pola **Poziom** została ustawiona na *Transakcje* w konfiguracji raportu. Po uruchomieniu raportu w polu **Od dnia** ustawiono wartość *15 marca*.
+Na poniższych tabelach i ilustracjach przedstawiono wyniki użycia przykładowych danych opisanych wcześniej w tym artykule, ale po uruchomieniu raportu wartość pola **Poziom** została ustawiona na *Transakcje* w konfiguracji raportu. Po uruchomieniu raportu w polu **Od dnia** ustawiono wartość *15 marca*.
 
 | Typ zasobu | Zasób | Oddział | Data | Identyfikator | Odwołanie | Zapasy: ilość finansowa | Zapasy: kwota finansowa | Zapasy: zaksięgowana ilość fizyczna | Zapasy: zaksięgowana kwota fizyczna | Zapasy: ilość | Zapasy: kwota |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -127,7 +127,7 @@ W poniższych podsekcjach są wyświetlane raporty wartości zapasów wygenerowa
 
 ### <a name="example-3-when-the-totals-level-is-used"></a>Przykład 3 w przypadku korzystania z poziomu sum
 
-W poniższej tabeli przedstawiono wyniki w przypadku użycia przykładowych danych i konfiguracji raportu opisanych wcześniej w tym temacie. (W tej konfiguracji raportu jest to **Pole** poziomu ma wartość *Sumy*.)
+W poniższej tabeli przedstawiono wyniki w przypadku użycia przykładowych danych i konfiguracji raportu opisanych wcześniej w tym artykule. (W tej konfiguracji raportu jest to **Pole** poziomu ma wartość *Sumy*.)
 
 | Typ zasobu | Zasób | Oddział | Odwołanie | Zapasy: ilość finansowa | Zapasy: kwota finansowa | Zapasy: zaksięgowana ilość fizyczna | Zapasy: zaksięgowana kwota fizyczna | Zapasy: ilość | Zapasy: kwota | Średni koszt jednostkowy |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -136,7 +136,7 @@ W poniższej tabeli przedstawiono wyniki w przypadku użycia przykładowych dany
 
 ### <a name="example-3-when-the-transactions-level-is-used"></a>Przykład 3, gdy używany jest poziom Transakcje
 
-W poniższej tabeli przedstawiono wyniki użycia przykładowych danych opisanych wcześniej w tym temacie, ale wartość pola **Poziom** została zmienić na *Transakcje* w konfiguracji raportu.
+W poniższej tabeli przedstawiono wyniki użycia przykładowych danych opisanych wcześniej w tym artykule, ale wartość pola **Poziom** została zmienić na *Transakcje* w konfiguracji raportu.
 
 | Typ zasobu | Zasób | Oddział | Data | Identyfikator | Odwołanie | Zapasy: ilość finansowa | Zapasy: kwota finansowa | Zapasy: zaksięgowana ilość fizyczna | Zapasy: zaksięgowana kwota fizyczna | Zapasy: ilość | Zapasy: kwota |
 |---|---|---|---|---|---|---|---|---|---|---|---|

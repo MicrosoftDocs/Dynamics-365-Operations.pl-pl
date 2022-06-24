@@ -1,6 +1,6 @@
 ---
-title: Suma częściowa podsumowania zamówienia nie zawiera podatków od opłat, gdy używasz niestandardowych modułów podsumowania zamówienia
-description: Ten temat zawiera wskazówki dotyczące rozwiązywania problemów, które mogą pomóc w sytuacji, gdy używasz niestandardowych modułów podsumowania zamówienia, a suma częściowa podsumowania zamówienia nie zawiera podatków od opłat w scenariuszu "cena zawiera podatek od sprzedaży".
+title: Suma częściowa podsumowania zamówienia nie uwzględnia podatków od opłat podczas korzystania z niestandardowych modułów podsumowania zamówień
+description: Ten artykuł zawiera wskazówki dotyczące rozwiązywania problemów, które mogą pomóc w sytuacji, gdy używasz niestandardowych modułów podsumowania zamówienia, a suma częściowa podsumowania zamówienia nie zawiera podatków od opłat w scenariuszu "cena zawiera podatek od sprzedaży".
 author: gvrmohanreddy
 ms.date: 05/17/2022
 ms.topic: article
@@ -9,16 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2022-04-22
-ms.openlocfilehash: 1a47561a3ac984bc554b5b93546592237c16cf18
-ms.sourcegitcommit: 48d094d083c1bd45c3d72f8b666926b48ec7ae35
+ms.openlocfilehash: 260dcb6bc1585615195e32adfcd1da6bfbca294e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8767961"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848844"
 ---
-# <a name="order-summary-subtotal-doesnt-include-taxes-on-charges-when-using-customized-order-summary-modules"></a>Suma częściowa podsumowania zamówienia nie zawiera podatków od opłat, gdy używasz niestandardowych modułów podsumowania zamówienia
+# <a name="order-summary-subtotal-doesnt-include-taxes-on-charges-when-using-customized-order-summary-modules"></a>Suma częściowa podsumowania zamówienia nie uwzględnia podatków od opłat podczas korzystania z niestandardowych modułów podsumowania zamówień
 
-Ten temat zawiera wskazówki dotyczące rozwiązywania problemów, które mogą pomóc w sytuacji, gdy używasz niestandardowych modułów podsumowania zamówienia, a suma częściowa podsumowania zamówienia nie zawiera podatków od opłat w scenariuszu "cena zawiera podatek od sprzedaży".
+Ten artykuł zawiera wskazówki dotyczące rozwiązywania problemów, które mogą pomóc w sytuacji, gdy używasz niestandardowych modułów podsumowania zamówienia, a suma częściowa podsumowania zamówienia nie zawiera podatków od opłat w scenariuszu "cena zawiera podatek od sprzedaży".
 
 ## <a name="description"></a>Opis
 

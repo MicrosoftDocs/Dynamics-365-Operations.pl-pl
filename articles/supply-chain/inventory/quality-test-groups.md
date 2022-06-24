@@ -1,6 +1,6 @@
 ---
 title: Grupy testowe zarządzania jakością
-description: W tym temacie opisano sposób tworzenia grup testowych, dzięki czemu można używać wielu testów ze zleceniami kontroli jakości w systemie Microsoft Dynamics 365 Supply Chain Management.
+description: W tym artykule opisano sposób tworzenia grup testowych, dzięki czemu można używać wielu testów ze zleceniami kontroli jakości w systemie Microsoft Dynamics 365 Supply Chain Management.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5619be4a0724556bf0c51dcaa3adcc3725f10706
-ms.sourcegitcommit: 220101d2511a3164572226294ef090a43a1e6cdd
+ms.openlocfilehash: e7722bc92d8c2bf52d6a798a93f07af44037d4e0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "8789276"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857714"
 ---
 # <a name="quality-management-test-groups"></a>Grupy testowe zarządzania jakością
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób tworzenia grup testowych, dzięki czemu można używać wielu testów ze zleceniami kontroli jakości w systemie Microsoft Dynamics 365 Supply Chain Management.
+W tym artykule opisano sposób tworzenia grup testowych, dzięki czemu można używać wielu testów ze zleceniami kontroli jakości w systemie Microsoft Dynamics 365 Supply Chain Management.
 
 Strona **Grupy testowe** służy do konfigurowania, edytowania i wyświetlania grup testowych oraz testów indywidualnych do nich należących. W górnej części strony pokazane są grupy testowe, a w dolnym — testy przypisane do wybranej grupy testowej.
 

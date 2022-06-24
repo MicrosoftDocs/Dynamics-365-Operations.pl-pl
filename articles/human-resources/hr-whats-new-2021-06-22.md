@@ -1,6 +1,6 @@
 ---
 title: Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources 22 czerwca 2021 r.
-description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Human Resources w dniu 22 czerwca 2021 roku.
+description: W tym artykule opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Human Resources w dniu 22 czerwca 2021 roku.
 author: marcelbf
 ms.date: 06/22/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-06-22
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b1d2ccf1083f34aefbe87354f03dbebd6cb5be7e
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: aacb605374d99a3c0bad3438c89e33a04a4d7faf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694432"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897785"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-june-22-2021"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources 22 czerwca 2021 r.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-W tym temacie opisano nowe, zmienione i wkrótce dostępne funkcje dostępne w rozwiązaniu Dynamics 365 Human Resources.
+W tym artykule opisano nowe, zmienione lub przyszłe funkcje dostępne w aplikacji Dynamics 365 Human Resources.
 
 Aby uzyskać więcej informacji na temat procesu aktualizacji i harmonogramu, należy zapoznać się z tematem [Aktualizacja procesu](hr-admin-setup-update-process.md).
 
@@ -51,9 +51,9 @@ W tym wydaniu są zazwyczaj dostępne następujące funkcje.
 W tej wersji uwzględniono następujące poprawki błędów.
 
 > [!NOTE]
-> Naszym celem jest jak najszybsze uzyskanie tych informacji. Firma Microsoft może zaktualizować ten temat w taki sposób, aby zawierał poprawki powodujące błąd, które wprowadziły je do kompilacji po początkowym opublikowaniu tego tematu.
+> Naszym celem jest jak najszybsze uzyskanie tych informacji. Możemy zaktualizować ten artykuł w taki sposób, aby zawierał poprawki powodujące błąd, które wprowadziły je do kompilacji po początkowym opublikowaniu tego artykułu.
 
-| Numer problemu | Problem |  opis |
+| Numer problemu | Problem |  Opis |
 | --- | --- | --- |
 | 583052 | Użytkownik otrzymujący opinię może edytować otrzymaną opinię | Kiedy pracownik otrzymujący informację zwrotną na dzienniku wydajności wybiera **Dodaj link zewnętrzny**, formularz staje się edytowalny, pozwalając pracownikowi na edycję otrzymanej informacji zwrotnej. |
 | 522281 | Wybór liczby pracowników na kafelkach struktury wynagrodzeń w Compensation Management prowadzi do nieprawidłowych wyników| Podczas przechodzenia do planów wynagrodzeń z obszaru roboczego Wynagrodzeń jest teraz wyświetlana prawidłowa liczba pracowników. |

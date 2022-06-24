@@ -1,6 +1,6 @@
 ---
-title: Zarządzanie rabatami — umowy
-description: W tym temacie opisano, jak tworzyć umowy dotyczące zarządzania rabatami. Transakcje służą do kontrolowania różnych metod i podstaw do obliczania rabatów i tantiem. Obejmują one reguły wtrąceń i wkluczeń.
+title: Umowy zarządzania rabatami
+description: W tym artykule opisano, jak tworzyć umowy dotyczące zarządzania rabatami. Transakcje służą do kontrolowania różnych metod i podstaw do obliczania rabatów i tantiem. Obejmują one reguły wtrąceń i wkluczeń.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 76cdbf21cfbc0db7b363d0fbf60a1ecd0046efc1
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 28cfff69ab4e528c146ccbf6a34548a819c99522
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689699"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851602"
 ---
 # <a name="rebate-management-deals"></a>Zarządzanie rabatami — umowy
 
 [!include [banner](../includes/banner.md)]
 
-Umowy dotyczące zarządzania rabatami służą do kontrolowania różnych metod i podstaw do obliczania rabatów i tantiem. Obejmują one reguły wtrąceń i wkluczeń. Dostępne są trzy typy umów zarządzania rabatami: rabaty dla odbiorcy, tantiemy dla odbiorcy i rabaty dostawcy. Wszystkie trzy typy używają podobnych ustawień. Ten temat wskazuje na różnice tam, gdzie one istnieją.
+Umowy dotyczące zarządzania rabatami służą do kontrolowania różnych metod i podstaw do obliczania rabatów i tantiem. Obejmują one reguły wtrąceń i wkluczeń. Dostępne są trzy typy umów zarządzania rabatami: rabaty dla odbiorcy, tantiemy dla odbiorcy i rabaty dostawcy. Wszystkie trzy typy używają podobnych ustawień. Ten artykuł wskazuje na różnice tam, gdzie one istnieją.
 
 ## <a name="create-a-deal"></a>Tworzenie umowy
 
@@ -118,7 +118,7 @@ Karta **Ogólne** w skróconej karcie **Szczegóły zarządzania rabatami** umo�
 
 | Pole | opis |
 |---|---|
-| Metoda obliczania | Umożliwia wybór metody, która będzie stosowana, gdy wybrany wiersz umowy zostanie połączony z innymi wierszami umowy (*Zdjęte*, *Skumulowane*, *Kroczące* lub *Razem*). Wartość tego pola może mieć wpływ na wynik obliczeń rabatu. Aby uzyskać pełny opis każdej metody i przykłady, które pokazują, jak wpływa ona na obliczanie rabatów, zobacz sekcję [Metody obliczania wierszy umowy](#calc-methods) w dalszej części tego tematu. |
+| Metoda obliczania | Umożliwia wybór metody, która będzie stosowana, gdy wybrany wiersz umowy zostanie połączony z innymi wierszami umowy (*Zdjęte*, *Skumulowane*, *Kroczące* lub *Razem*). Wartość tego pola może mieć wpływ na wynik obliczeń rabatu. Aby uzyskać pełny opis każdej metody i przykłady, które pokazują, jak wpływa ona na obliczanie rabatów, zobacz sekcję [Metody obliczania wierszy umowy](#calc-methods) w dalszej części tego artykułu. |
 | Podstawa | Umożliwia określenie, czy rabat jest stosowany na podstawie ilości (to jest łącznej liczby jednostek kupowanych lub sprzedawanych) lub wartości (tj. łącznej ceny towarów, które są kupowane lub sprzedawane). |
 | Typ transakcji | <p>Umożliwia wybór punktu procesu, na którym ma nastąpić obliczenie:</p><ul><li>*Zamówienie* — jako podstawy obliczeń należy użyć zamówione ilości lub wartości.</li><li>*Dostarczone* — jako podstawy obliczeń należy użyć dostarczone ilości lub wartości.</li><li>*Faktura* — jako podstawy obliczeń należy użyć zafakturowane ilości lub wartości.</li></ul> |
 | Jednostka | Jeśli została wybrana opcja *Ilość* w polu **Podstawa** zoależy wybrać jednostkę, w przypadku gdy ta ilość musi zostać określona. |

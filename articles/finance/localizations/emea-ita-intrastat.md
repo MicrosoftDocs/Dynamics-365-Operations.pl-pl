@@ -1,6 +1,6 @@
 ---
 title: Intrastat — Włochy
-description: Ten temat zawiera informacje o raportowaniu Intrastat we Włoszech.
+description: Ten artykuł zawiera informacje o raportowaniu Intrastat we Włoszech.
 author: anasyash
 ms.date: 09/09/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: 3b676ba754cded03fdc6d566ffbfbb35c204b03a
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: a4531baf29759607c877c815b849067f718851b5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488266"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874371"
 ---
 # <a name="italian-intrastat"></a>Intrastat — Włochy
 
@@ -650,7 +650,7 @@ Wykonaj poniższe czynności, aby skonfigurować opcje specyficzne dla języka w
 6. Na skróconej karcie **Wartość statystyczna** ustaw opcję **Drukuj i wyeksportuj dane statystyczne** na **Tak**, jeśl jest to konieczne. To ustawienie aktywuje transfer sekcji statystycznej. Sekcja statystyczna składa się z danych o wagach, dodatkowych jednostkach, wartościach statystycznych, terminach dostaw, harmonogramach dostaw, środkach transportu i regionach pochodzenia.
 
     > [!NOTE]
-    > W przypadku deklaracji kwartalnych raport Intrastat nie będzie zawierał sekcji statystycznej ani informacji o warunkach dostawy i środkach transportu. Aby uzyskać więcej informacji, zobacz tabele w sekcji [Omówienie](#overview) we wcześniejszej części tego tematu.
+    > W przypadku deklaracji kwartalnych raport Intrastat nie będzie zawierał sekcji statystycznej ani informacji o warunkach dostawy i środkach transportu. Aby uzyskać więcej informacji, zobacz tabele w sekcji [Omówienie](#overview) we wcześniejszej części tego artykułu.
 
 7. Na karcie **Właściwości kraju/regionu** lista wszystkich krajów lub regionów, z których organizacja prowadzi interesy. Dla każdego kraju lub regionu ustaw następujące pola:
 

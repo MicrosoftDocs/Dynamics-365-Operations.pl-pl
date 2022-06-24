@@ -1,6 +1,6 @@
 ---
 title: Zarządzanie plikami robots.txt
-description: W tym temacie opisano sposób zarządzania plikami robots.txt w aplikacji Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano sposób zarządzania plikami robots.txt w aplikacji Microsoft Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 07/02/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2019-12-18
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e1078de354a96cc50b7c1b79a864db5041ea5069df650670e65531faaeb32e0a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4ccb09cfce00ba838cb5358afef9b7acc5c61d8d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754399"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896986"
 ---
 # <a name="manage-robotstxt-files"></a>Zarządzanie plikami robots.txt
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano sposób zarządzania plikami robots.txt w aplikacji Microsoft Dynamics 365 Commerce.
+W tym artykule opisano sposób zarządzania plikami robots.txt w aplikacji Microsoft Dynamics 365 Commerce.
 
 Standard wykluczenia robotów lub robots. txt to standard używany przez witryny internetowe do komunikowania się z robotami internetowymi. Instruuje on roboty internetowe o obszarach witryny, które nie powinny być odwiedzane. Roboty są często używane przez wyszukiwarki do indeksowania witryn internetowych.
 

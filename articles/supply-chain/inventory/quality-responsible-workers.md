@@ -1,6 +1,6 @@
 ---
 title: Pracownicy odpowiedzialni za zatwierdzanie niezgodności
-description: W tym temacie opisano sposób konfigurowania pracowników odpowiedzialnych za zatwierdzanie niezgodności.
+description: W tym artykule opisano sposób konfigurowania pracowników odpowiedzialnych za zatwierdzanie niezgodności.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5fd1c7c86ac8627bd332bc578e98b4d7f091cdc8
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a108fc1f8954e32719c93656a64d1d27fda03fb6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575903"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907414"
 ---
 # <a name="workers-responsible-for-approving-nonconformances"></a>Pracownicy odpowiedzialni za zatwierdzanie niezgodności
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób konfigurowania pracowników odpowiedzialnych za zatwierdzanie niezgodności.
+W tym artykule opisano sposób konfigurowania pracowników odpowiedzialnych za zatwierdzanie niezgodności.
 
 Niezgodności muszą zostać zatwierdzone, zanim użytkownicy będą zaczynali wprowadzać szczegóły, takie jak korekty lub operacje. Zanim użytkownicy będą mieć możliwość zatwierdzania lub odrzucania niezgodności, ich identyfikator użytkownika (rekord użytkownika) musi być połączony z rekordem pracownika. Opcjonalnie można skonfigurować pracowników odpowiedzialnych za jakość, a następnie zezwolić jednemu pracownikowi na zatwierdzanie pracy w imieniu innego pracownika.
 

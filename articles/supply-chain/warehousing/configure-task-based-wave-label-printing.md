@@ -1,6 +1,6 @@
 ---
 title: Planowanie drukowania etykiety grupy czynności podczas grupy czynności
-description: W tym temacie opisano sposób konfigurowania i używania funkcji drukowania etykiet grup czynności w oparciu o zadania.
+description: W tym artykule opisano sposób konfigurowania i używania funkcji drukowania etykiet grup czynności w oparciu o zadania.
 author: perlynne
 ms.date: 06/09/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 1323538765308ec3dd366456e31f5e08b08ce5ab
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: ac2bc4cce42bada43334b82301d716414cd6d654
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920156"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889465"
 ---
 # <a name="schedule-wave-label-printing-during-wave"></a>Planowanie drukowania etykiety grupy czynności podczas grupy czynności
 
@@ -30,7 +30,7 @@ W przypadku korzystania z funkcji *drukowania etykiet grupy czynności opartej n
 
 ## <a name="turn-on-the-task-based-wave-label-printing-feature-in-feature-management"></a>Włącz funkcję drukowania etykiet grupy czynności na podstawie zadania w zarządzaniu funkcjami
 
-Aby korzystać z funkcji opisanych w tym temacie, należy je włączona dla systemu. Użyj obszaru roboczego [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) włącz następujące funkcje w kolejności:
+Aby korzystać z funkcji opisanych w tym artykule, należy je włączona dla systemu. Użyj obszaru roboczego [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) włącz następujące funkcje w kolejności:
 
 1. *Drukowanie etykiety grupy czynności* – funkcja wymagana do włączenia metody przetwarzania grupy czynności na potrzeby drukowania etykiet grupy czynności.
 1. *Blokowanie pracy w całej organizacji* — wymagana funkcja zarówno do ręcznej, jak i automatycznej konfiguracji tworzenia zaplanowanych prac. (W przypadku Supply Chain Management w wersji 10.0.21 ta funkcja jest obowiązkowa, więc jest domyślnie włączona i nie można jej ponownie wyłączyć).

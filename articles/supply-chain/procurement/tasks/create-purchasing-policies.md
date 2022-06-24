@@ -1,6 +1,6 @@
 ---
 title: Tworzenie zasad zakupów
-description: W tym temacie pokazano sposób tworzenia zasad zakupów dopasowanych do procesów biznesowych w obszarze zakupów.
+description: W tym artykule pokazano sposób tworzenia zasad zakupów dopasowanych do procesów biznesowych w obszarze zakupów.
 author: GalynaFedorova
 ms.date: 07/31/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f51c88506044359787257ba0e0a6668213a170d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 011705723466d746fa5b23c5499d03a548f133f1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677878"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878853"
 ---
 # <a name="create-purchasing-policies"></a>Tworzenie zasad zakupów
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie pokazano sposób tworzenia zasad zakupów dopasowanych do procesów biznesowych w obszarze zakupów. Zanim będzie można utworzyć zasady dotyczące zakupów, należy skonfigurować parametry zasad zakupów, . Można tworzyć, modyfikować i wycofywać zasady zakupów, ale nie można usunąć zasady zakupów. Tę procedurę zazwyczaj wykonuje kierownik ds. zakupów. Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych.
+W tym artykule pokazano sposób tworzenia zasad zakupów dopasowanych do procesów biznesowych w obszarze zakupów. Zanim będzie można utworzyć zasady dotyczące zakupów, należy skonfigurować parametry zasad zakupów, . Można tworzyć, modyfikować i wycofywać zasady zakupów, ale nie można usunąć zasady zakupów. Tę procedurę zazwyczaj wykonuje kierownik ds. zakupów. Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych.
 
 
 ## <a name="set-up-policy-parameters"></a>Ustawianie parametrów zasad

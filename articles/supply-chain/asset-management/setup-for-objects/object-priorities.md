@@ -1,6 +1,6 @@
 ---
 title: Poziomy usług składnika majątku
-description: W tym temacie wyjaśniono poziomy usług składników majątku w module Zarządzanie składnikami majątku.
+description: W tym artykule wyjaśniono poziomy usług składników majątku w module Zarządzanie składnikami majątku.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5e4f7daa10931ce406a5d2bdbbc1dced067e3de5065cdb61cce369d617709d67
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1f7429b30253f540925e67ff9239667a0a404f26
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723606"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908693"
 ---
 # <a name="asset-service-levels"></a>Poziomy usług składnika majątku
 
@@ -28,7 +28,7 @@ ms.locfileid: "6723606"
 
  
 
-W tym temacie wyjaśniono poziomy usług składników majątku w module Zarządzanie składnikami majątku. Poziomy usługi składników majątku są związane ze składnikami majątku i są przenoszone do żądań konserwacji i zleceń pracy. Są one używane do obliczania priorytetu zleceń pracy podczas planowania zlecenia pracy. Poziomy usług składników majątku można zmienić, jeśli wymagane są zmiany.
+W tym artykule wyjaśniono poziomy usług składników majątku w module Zarządzanie składnikami majątku. Poziomy usługi składników majątku są związane ze składnikami majątku i są przenoszone do żądań konserwacji i zleceń pracy. Są one używane do obliczania priorytetu zleceń pracy podczas planowania zlecenia pracy. Poziomy usług składników majątku można zmienić, jeśli wymagane są zmiany.
 
 Aby uzyskać więcej informacji na temat konfiguracji, która jest powiązana z obliczaniem oceny wyników dla planowania zlecenia pracy, zobacz temat [Parametry modułu Zarządzania składnikami majątku](../setup-for-objects/enterprise-asset-management-parameters.md). Trzeba skonfigurować co najmniej jeden rekord domyślny dla poziomu usługi składnika majątku. Ten rekord domyślny jest używany, jeśli nie znaleziono innego dopasowania podczas planowania zlecenia pracy.
 

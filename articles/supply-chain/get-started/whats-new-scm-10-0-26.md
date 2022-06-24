@@ -1,6 +1,6 @@
 ---
 title: Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.26 (Maj 2022 r.)
-description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Supply Chain Management 10.0.26.
+description: W tym artykule opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Supply Chain Management 10.0.26.
 author: kamaybac
 ms.date: 03/01/2022
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 0724045824f39f316c8b3dbb06a48eb6ca6dbef3
-ms.sourcegitcommit: 1050e58e621d9a0454895ed07c286936f8c03320
+ms.openlocfilehash: 73f2f9a819312d8d6e111b998c68b65ba85e7818
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8625259"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850765"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10026-may-2022"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.26 (Maj 2022 r.)
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wymieniono nowe oraz zmienione funkcje dostępne w programie Microsoft Dynamics 365 Supply Chain Management w wersji 10.0.26. Ta wersja ma numer kompilacji 10.0.1192 i jest dostępna w następujący sposób:
+W tym artykule wymieniono nowe oraz zmienione funkcje dostępne w programie Microsoft Dynamics 365 Supply Chain Management w wersji 10.0.26. Ta wersja ma numer kompilacji 10.0.1192 i jest dostępna w następujący sposób:
 
 - **Wersja podglądu:** marzec 2022
 - **Ogólna dostępność wydania (Samoaktualizacja):** kwiecień 2022 r.
@@ -29,7 +29,7 @@ W tym temacie wymieniono nowe oraz zmienione funkcje dostępne w programie Micro
 
 ## <a name="features-included-in-this-release"></a>Funkcje zawarte w tym wydaniu
 
-To wydanie zawiera funkcje, które są podane w następującej tabeli. Firma Microsoft może zaktualizować ten temat w taki sposób, aby zawierał funkcje wprowadzone do kompilacji po początkowym opublikowaniu tego tematu.
+To wydanie zawiera funkcje, które są podane w następującej tabeli. Firma Microsoft może zaktualizować ten artykuł w taki sposób, aby zawierał funkcje wprowadzone do kompilacji po początkowym opublikowaniu tego artykułu.
 
 | Obszar funkcji | Funkcja | Więcej informacji | Włączone przez   |
 |---|---|---|---|
@@ -56,11 +56,11 @@ Aby włączyć lub wyłączyć te funkcje, należy przejść do obszaru [zarząd
 
 ## <a name="new-and-updated-documentation-resources"></a>Nowe i zaktualizowane zasoby dokumentacji
 
-Niedawno dodano lub znacząco zaktualizowano następujące tematy pomocy. Te tematy nie zawsze są związane z nowymi funkcjami dodanymi w tym wydaniu, jak wymieniono w poprzedniej sekcji. Mogą jednak ułatwić efektywniejsze korzystanie z istniejących funkcji..
+Niedawno dodano lub znacząco zaktualizowano następujące artykuły pomocy. Te artykuły nie zawsze są związane z nowymi funkcjami dodanymi w tym wydaniu, jak wymieniono w poprzedniej sekcji. Mogą jednak ułatwić efektywniejsze korzystanie z istniejących funkcji..
 
-| Obszar funkcji | Nowe lub zaktualizowane tematy |
+| Obszar funkcji | Nowe lub zaktualizowane artykuły |
 |---|---|
-| Zarządzanie kosztami | Zaktualizowane przykłady i diagramy zostały dodane do każdego z następujących tematów:<ul><li>[FIFO z wartością fizyczną i oznaczeniami](../cost-management/fifo-physical-value-marking.md)</li><li>[LIFO z wartością fizyczną i oznaczeniami](../cost-management/lifo-physical-value-marking.md)</li><li>[LIFO wg daty z wartością fizyczną i oznaczeniami](../cost-management/lifo-date-physical-value-marking.md)</li><li>[Średnia krocząca kosztu własnego](../cost-management/running-average-cost-price.md)</li><li>[Średnia ważona z wartością fizyczną i oznaczeniami](../cost-management/weighted-average-physical-value-marking.md)</li></ul> |
+| Zarządzanie kosztami | Zaktualizowane przykłady i diagramy zostały dodane do każdego z następujących artykułów:<ul><li>[FIFO z wartością fizyczną i oznaczeniami](../cost-management/fifo-physical-value-marking.md)</li><li>[LIFO z wartością fizyczną i oznaczeniami](../cost-management/lifo-physical-value-marking.md)</li><li>[LIFO wg daty z wartością fizyczną i oznaczeniami](../cost-management/lifo-date-physical-value-marking.md)</li><li>[Średnia krocząca kosztu własnego](../cost-management/running-average-cost-price.md)</li><li>[Średnia ważona z wartością fizyczną i oznaczeniami](../cost-management/weighted-average-physical-value-marking.md)</li></ul> |
 | Zaopatrzenie i sourcing | [Rozbieżności danych wiersza zamówienia zakupu](../troubleshooting/procurement/purchase-order-line-data-issues.md) |
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
@@ -81,12 +81,12 @@ Zapoznaj się z tematem [Dynamics 365 i chmury branżowe: plan aktualizacji 1 we
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Usunięte i przestarzałe funkcje Supply Chain Management
 
-W temacie [Usunięte lub przestarzałe funkcje w Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) opisano funkcje, które są wycofane lub zostały zaplanowane do usunięcia w Supply Chain Management.
+W artykule [Usunięte lub przestarzałe funkcje w Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) opisano funkcje, które są wycofane lub zostały zaplanowane do usunięcia w Supply Chain Management.
 
 - *Usunięta* funkcja nie jest już dostępna w produkcie.
 - *Przestarzała* funkcja nie jest aktywnie tworzona i może zostać usunięta w przyszłej aktualizacji.
 
-Zanim jakakolwiek funkcja zostanie usunięta z produktu, powiadomienie o zaniechaniu będzie anonsowane w sekcji na temat [usuniętych lub przestarzałych funkcji w Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 miesięcy przed usunięciem.
+Zanim jakakolwiek funkcja zostanie usunięta z produktu, powiadomienie o zaniechaniu będzie anonsowane w sekcji artykułu na temat [usuniętych lub przestarzałych funkcji w Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 miesięcy przed usunięciem.
 
 W przypadku zmian, które wpływają tylko na czas kompilacji, ale są zgodne z trybem piaskownicy i środowiskami produkcyjnymi, czas niezgodności będzie krótszy niż 12 miesięcy. Zazwyczaj są to aktualizacje funkcjonalne, które należy wykonać w kompilatorze.
 

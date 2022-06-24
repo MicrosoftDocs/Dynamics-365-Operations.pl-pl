@@ -1,6 +1,6 @@
 ---
 title: Akcje dotyczące pracowników — często zadawane pytania
-description: Ten temat zawiera odpowiedzi na pytania, które mogą się pojawić, jeśli organizacja używa akcji dotyczących pracowników.
+description: Ten artykuł zawiera odpowiedzi na pytania, które mogą się pojawić, jeśli organizacja używa akcji dotyczących pracowników.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 0782f686c9c91d434214724e2f621225a9e268b3
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 8882fd00c68dc3cafcb4ecf1b2fe351a9e7f5741
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692150"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874315"
 ---
 # <a name="personnel-actions-faq"></a>Akcje dotyczące pracowników — często zadawane pytania
 
@@ -27,7 +27,7 @@ ms.locfileid: "8692150"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ten temat zawiera odpowiedzi na pytania, które mogą się pojawić, jeśli organizacja używa akcji dotyczących pracowników. Akcje dotyczące pracowników są to dodatkowe kroki, które należy wykonać podczas wykonywania pewnych zadań związanych z pracownikami. 
+Ten artykuł zawiera odpowiedzi na pytania, które mogą się pojawić, jeśli organizacja używa akcji dotyczących pracowników. Akcje dotyczące pracowników są to dodatkowe kroki, które należy wykonać podczas wykonywania pewnych zadań związanych z pracownikami. 
 
 Przykłady zadań, które mogą wymagać akcji związanych z pracownikami, to:
  - Podczas tworzenia nowych stanowisk. 

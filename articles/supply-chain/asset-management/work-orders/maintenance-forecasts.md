@@ -1,6 +1,6 @@
 ---
 title: Prognozy konserwacji
-description: W tym temacie wyjaśniono prognozy konserwacji w module Zarządzanie składnikami majątku.
+description: W tym artykule wyjaśniono prognozy konserwacji w module Zarządzanie składnikami majątku.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6503d5110a4cb5e4041afa7b4e80395b2974a64e5a150eb6bfce1f32a6703e06
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c2dbd968a22f2bded29cff3517dacbafc79ff8f1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761861"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902119"
 ---
 # <a name="maintenance-forecasts"></a>Prognozy konserwacji
 

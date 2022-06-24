@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie interwałów serwisu
-description: W tym temacie opisano sposób konfigurowania interwałów serwisowych. Interwał serwisu określa częstotliwość, z jaką są tworzone wiersze umowy serwisowej podczas tworzenia zleceń serwisowych.
+description: W tym artykule opisano sposób konfigurowania interwałów serwisowych. Interwał serwisu określa częstotliwość, z jaką są tworzone wiersze umowy serwisowej podczas tworzenia zleceń serwisowych.
 author: sorenva
 ms.date: 02/20/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 943ed0b8f329b45225b61247998e15a1d82356aa
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 56b8a31af061b90aeddfb460f6e86c2c5636b280
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8673446"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845961"
 ---
 # <a name="set-up-service-intervals"></a>Konfigurowanie ram czasowych serwisu  
 
@@ -48,7 +48,7 @@ Chcesz utworzyć ramy czasowe serwisu o długości 10 dni.
 5. W polu **Częstotliwość** wpisz 10.
 6. Naciśnij klawisze **Alt+S**, aby zapisać ramy czasowe serwisu.
 
-## <a name="related-topics"></a>Powiązane tematy
+## <a name="related-articles"></a>Powiązane artykuły
 
 [Ramy czasowe serwisów ](service-intervals.md)  
 

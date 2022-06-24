@@ -1,6 +1,6 @@
 ---
 title: Zaprojektowanie nowego rozwiązania ER w celu wydrukowania raportu niestandardowego
-description: W tym temacie opisano sposób projektowania rozwiązania do tworzenia raportów elektronicznych (ER) w celu wydrukowania raportu niestandardowego.
+description: W tym artykule opisano sposób projektowania rozwiązania do tworzenia raportów elektronicznych (ER) w celu wydrukowania raportu niestandardowego.
 author: NickSelin
 ms.date: 08/10/2020
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 36998d299e166709778bfaa7bfd0d8980890d4fe
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 7194fa9243362d4eb61d6ce706e30a66c9cf3217
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323849"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847496"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Zaprojektowanie nowego rozwiązania ER w celu wydrukowania raportu niestandardowego
 
@@ -292,7 +292,7 @@ Stan wersja 1 tej konfiguracji zostanie zmieniony z wersji **Roboczej** na **Uko
 Aby uzyskać więcej informacji na temat wersji konfiguracji funkcji ER, zajrzyj do [Omówienie raportowania elektronicznego (ER)](general-electronic-reporting.md#component-versioning).
 
 > [!NOTE]
-> Skonfigurowany model danych to abstrakcyjna reprezentacja domeny biznesowej **Kwestionariusza** i nie zawiera żadnych powiązań z artefaktami specyficznymi dla Microsoft Dynamics 365 Finance.
+> Skonfigurowany model danych to abstrakcyjna reprezentacja domeny biznesowej **Kwestionariusz** i nie zawiera żadnych powiązań z artefaktami specyficznymi dla aplikacji Microsoft Dynamics 365 Finance.
 
 ## <a name="design-a-model-mapping-for-the-configured-data-model"></a><a name="DesignMapping"></a>Umożliwia zaprojektowanie mapowania modelu dla skonfigurowanego modelu danych
 

@@ -1,6 +1,6 @@
 ---
 title: Definiowanie rabatów właściwych dla kanału
-description: Sprzedawcy detaliczni często ustawiają różne rabaty w różnych kanałach. W tym temacie opisano pojęcia, które należy znać, aby tworzyć rabaty dla konkretnych kanałów.
+description: Sprzedawcy detaliczni często ustawiają różne rabaty w różnych kanałach. W tym artykule opisano pojęcia, które należy znać, aby tworzyć rabaty dla konkretnych kanałów.
 author: scott-tucker
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 14b6f8f4a7d344111718fad94418bc3dbb5c9b1e113c0fd613350c49a2511d4f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9ceb5c8e47288e7ffdd3808cd8d60112f81ce314
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759318"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873417"
 ---
 # <a name="define-channel-specific-discounts"></a>Definiowanie rabatów specyficznych dla kanału
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano pojęcia, które należy znać, aby tworzyć rabaty dla konkretnych kanałów.
+W tym artykule opisano pojęcia, które należy znać, aby tworzyć rabaty dla konkretnych kanałów.
 
 ## <a name="channel-specific-discounts"></a>Rabaty właściwe dla kanału
 

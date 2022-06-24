@@ -1,6 +1,6 @@
 ---
 title: Migracja danych prospektu do gotówki z Integratora danych do podwójnego zapisu
-description: W tym temacie opisano sposób migracji danych prospektu do gotówki z Integratora danych do podwójnego zapisu.
+description: W tym artykule opisano sposób migracji danych prospektu do gotówki z Integratora danych do podwójnego zapisu.
 author: RamaKrishnamoorthy
 ms.date: 02/01/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-26
-ms.openlocfilehash: 82bfb768b0ecac04184f4b806527346d39584d64
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 8e5c11e535bd61e9955a4abf1491e88991ee40f1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087275"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894274"
 ---
 # <a name="migrate-prospect-to-cash-data-from-data-integrator-to-dual-write"></a>Migracja danych prospektu do gotówki z Integratora danych do podwójnego zapisu
 
 [!include [banner](../../includes/banner.md)]
 
-Rozwiązanie Prospect to cash dostępne dla Data Integratora nie jest kompatybilne z podwójnego zapisu. Powodem tego jest indeks msdynce_AccountNumber w tabeli kont, który został dostarczony jako część rozwiązania Perspektywa do gotówki. Jeśli ten indeks istnieje, nie możesz utworzyć tego samego numeru konta klienta w dwóch różnych podmiotach prawnych. Możesz albo zacząć od nowa z podwójnego zapisu, migrując dane Perspektywa do gotówki z Data Integrator do podwójnego zapisu, albo zainstalować ostatnią wersję "dorman" rozwiązania Perspektywa do gotówki . Ten temat obejmuje oba te podejścia.
+Rozwiązanie Prospect to cash dostępne dla Data Integratora nie jest kompatybilne z podwójnego zapisu. Powodem tego jest indeks msdynce_AccountNumber w tabeli kont, który został dostarczony jako część rozwiązania Perspektywa do gotówki. Jeśli ten indeks istnieje, nie możesz utworzyć tego samego numeru konta klienta w dwóch różnych podmiotach prawnych. Możesz albo zacząć od nowa z podwójnego zapisu, migrując dane Perspektywa do gotówki z Data Integrator do podwójnego zapisu, albo zainstalować ostatnią wersję "dorman" rozwiązania Perspektywa do gotówki . Ten artykuł obejmuje oba te podejścia.
 
 ## <a name="install-the-last-dorman-version-of-the-data-integrator-prospect-to-cash-solution"></a>Zainstaluj ostatnią "dorman" wersję rozwiązania Data Integrator Perspektywa do gotówki
 
@@ -50,7 +50,7 @@ Aby migrować dane prospektu do gotówki z Integratora danych do podwójnego zap
 5. Utwórz połączenie podwójnego zapisu między aplikacją Finanse i Działania a aplikacją Customer Engagement dla co najmniej jednej firmy.
 6. Włącz mapy tabel podwójnego zapisu i uruchom wstępną synchronizację dla wymaganych danych referencyjnych. (Aby uzyskać więcej informacji, zobacz temat [Uwagi dotyczące wstępnej synchronizacji](initial-sync-guidance.md).) Przykłady wymaganych danych to grupy klientów, warunki płatności i harmonogramy płatności. Nie włączaj map podwójnego zapisu dla tabel wymagających inicjowania, takich jak tabele kont, ofert, wiersza oferty, zamówienia i wiersza zamówienia.
 7. W aplikacji Customer Engagement przejdź do pozycji **Ustawienia zaawansowane \> Ustawienia systemowe \> Zarządzanie danymi \> Reguły wykrywania duplikatów** i wyłącz wszystkie reguły.
-8. Zainicjuj tabele wymienione w kroku 2. Aby uzyskać instrukcje, zobacz pozostałe sekcje tego tematu.
+8. Zainicjuj tabele wymienione w kroku 2. Aby uzyskać instrukcje, zobacz pozostałe sekcje tego artykułu.
 9. Otwórz aplikację Finanse i Działania i włącz mapy tabel, takie jak konto, oferta, wiersz oferty, zamówienie i mapy tabel wiersza zamówienia. Następnie uruchom wstępną synchronizację. (Aby uzyskać więcej informacji, zobacz temat [Uwagi dotyczące wstępnej synchronizacji](initial-sync-guidance.md)). Ten proces synchronizuje dodatkowe informacje z aplikacji Finanse i Działania, takie jak stan przetwarzania, adresy wysyłki i adresy rozliczeniowe, lokacje i magazyny.
 
 ## <a name="account-table"></a>Tabela Konto
@@ -98,7 +98,7 @@ Ponieważ dane z tabeli **Produkty** zaprojektowano tak, aby przepływały w jed
 
 ## <a name="quote-and-quote-product-tables"></a>Tabele Oferta i Produkty z oferty
 
-W przypadku tabeli **Oferta** postępuj zgodnie z instrukcjami w sekcji [Tabela Zamówienie](#order-table) wcześniej w tym temacie. W przypadku tabeli **Produkt z oferty** postępuj zgodnie z instrukcjami w sekcji [Tabela Produkty z zamówienia](#order-products-table).
+W przypadku tabeli **Oferta** postępuj zgodnie z instrukcjami w sekcji [Tabela Zamówienie](#order-table) wcześniej w tym artykule. W przypadku tabeli **Produkt z oferty** postępuj zgodnie z instrukcjami w sekcji [Tabela Produkty z zamówienia](#order-products-table).
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

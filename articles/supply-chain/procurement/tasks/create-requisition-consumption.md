@@ -1,6 +1,6 @@
 ---
 title: Tworzenie zapotrzebowania na zużycie
-description: W tym temacie opisano proces tworzenia wniosku.
+description: W tym artykule opisano proces tworzenia wniosku.
 author: GalynaFedorova
 ms.date: 07/09/2019
 ms.topic: business-process
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5881e8a415ad37ff4bdb61b1043901c0b87ef743
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: b4fc4a9f0dbd5c413300d27640512df69df30122
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671134"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888478"
 ---
 # <a name="create-a-requisition-for-consumption"></a>Tworzenie zapotrzebowania na zużycie
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie opisano proces tworzenia wniosku. Pokazuje różne sposoby wyszukiwania produktów w katalogu zaopatrzenia oraz sposoby dodawania produktu, którego nie ma w katalogu. Przed rozpoczęciem tej procedury musisz mieć skonfigurowaną zasadę zakupów z domyślnym typem zapotrzebowania Zużycie. Można przejść tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych. Procedurę można wykonać tylko przy użyciu profilu użytkownika skonfigurowanego jako pracownik. To zadanie normalnie wykonuje pracownik. Rola zabezpieczeń **Pracownik** pozwoli wykonać te zadania. Jeśli używasz firmy USMF, możesz się zalogować jako **Alicia**.
+W tym artykule opisano proces tworzenia wniosku. Pokazuje różne sposoby wyszukiwania produktów w katalogu zaopatrzenia oraz sposoby dodawania produktu, którego nie ma w katalogu. Przed rozpoczęciem tej procedury musisz mieć skonfigurowaną zasadę zakupów z domyślnym typem zapotrzebowania Zużycie. Można przejść tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych. Procedurę można wykonać tylko przy użyciu profilu użytkownika skonfigurowanego jako pracownik. To zadanie normalnie wykonuje pracownik. Rola zabezpieczeń **Pracownik** pozwoli wykonać te zadania. Jeśli używasz firmy USMF, możesz się zalogować jako **Alicia**.
 
 
 ## <a name="create-a-new-requisition"></a>Tworzenie nowego zapotrzebowania

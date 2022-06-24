@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie zasad konsolidacji wysyłki
-description: W tym temacie opisano sposób konfigurowania domyślnych i niestandardowych zasad konsolidacji wysyłki.
+description: W tym artykule opisano sposób konfigurowania domyślnych i niestandardowych zasad konsolidacji wysyłki.
 author: Mirzaab
 ms.date: 05/12/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 0a575648c0e6f5d0e3b9fb03ea6f47252837bf9c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: f793cb71ff52e49534e1f11b06132f2e20610d7c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672578"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845932"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Konfigurowanie zasad konsolidacji wysyłki
 
@@ -26,12 +26,12 @@ ms.locfileid: "8672578"
 
 Proces konsolidacji wysyłki, który korzysta z zasad konsolidacji wysyłki umożliwia na automatyczną konsolidację wysyłki automatycznego i ręcznego zwalniania do magazynu. Po włączeniu tej funkcji należy skonfigurować zasady początkowe. Jeśli nie skonfigurowano żadnych zasad, każdy wiersz sprzedaży generuje osobną wysyłkę z pojedynczym wierszem ładunku.
 
-W scenariuszach przedstawionych w tym temacie pokazano sposób konfigurowania domyślnych i niestandardowych zasad konsolidacji wysyłki.
+W scenariuszach przedstawionych w tym artykule pokazano sposób konfigurowania domyślnych i niestandardowych zasad konsolidacji wysyłki.
 
 ## <a name="turn-on-the-shipment-consolidation-policies-feature"></a>Włączanie funkcji konfigurowania zasad konsolidacji wysyłki
 
 > [!IMPORTANT]
-> W [pierwszym scenariuszu](#scenario-1) opisanym w tym temacie najpierw skonfigurujesz magazyn, dzięki czemu będzie używana wcześniejsza funkcja konsolidacji wysyłki. Następnie udostępnisz zasady konsolidacji wysyłki. W ten sposób sprawdzisz, jak działa scenariusz uaktualniania. Jeśli planujesz używanie środowiska danych demonstracyjnych do przechodzenia przez pierwszy scenariusz, nie włączaj tej funkcji przed wykonaniem tego scenariusza.
+> W [pierwszym scenariuszu](#scenario-1) opisanym w tym artykule najpierw skonfigurujesz magazyn, dzięki czemu będzie używana wcześniejsza funkcja konsolidacji wysyłki. Następnie udostępnisz zasady konsolidacji wysyłki. W ten sposób sprawdzisz, jak działa scenariusz uaktualniania. Jeśli planujesz używanie środowiska danych demonstracyjnych do przechodzenia przez pierwszy scenariusz, nie włączaj tej funkcji przed wykonaniem tego scenariusza.
 
 Aby można było skorzystać z funkcji *zasad konsolidacji wysyłki*, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
 
@@ -40,7 +40,7 @@ Aby można było skorzystać z funkcji *zasad konsolidacji wysyłki*, należy j�
 
 ## <a name="make-demo-data-available"></a>Udostępnianie danych pokazu
 
-Każdy scenariusz w tym temacie zawiera odwołania do wartości i rekordów uwzględnionych w standardowych danych demonstracyjnych dostępnych dla rozwiązania Microsoft Dynamics 365 Supply Chain Management. Aby użyć wartości określonych w tym miejscu podczas wykonywania ćwiczeń, upewnij się, że praca odbywa się w środowisku, w którym są zainstalowane dane demonstracyjne, i przed rozpoczęciem ustaw firmę na **USMF**.
+Każdy scenariusz w tym artykule zawiera odwołania do wartości i rekordów uwzględnionych w standardowych danych demonstracyjnych dostępnych dla rozwiązania Microsoft Dynamics 365 Supply Chain Management. Aby użyć wartości określonych w tym miejscu podczas wykonywania ćwiczeń, upewnij się, że praca odbywa się w środowisku, w którym są zainstalowane dane demonstracyjne, i przed rozpoczęciem ustaw firmę na **USMF**.
 
 ## <a name="scenario-1-configure-default-shipment-consolidation-policies"></a><a name="scenario-1"></a>Scenariusz 1. Konfigurowanie domyślnych zasad konsolidacji wysyłki
 
@@ -339,7 +339,7 @@ Po utworzeniu wszystkich zasad należy określić kolejność, w jakiej będą o
 
 ## <a name="example-scenarios-of-how-to-use-shipment-consolidation-policies"></a><a name="example-scenarios"></a> Przykładowe scenariusze korzystania z zasad konsolidacji wysyłki
 
-Poniższe scenariusze ilustrują sposób korzystania z zasad konsolidacji wysyłki utworzonych podczas pracy z tym tematem. Każdy scenariusz prowadzi użytkownika przez proces konsolidacji wysyłki, który korzysta z zasad konsolidacji wysyłki podczas automatycznego lub ręcznego zwalniania do magazynu:
+Poniższe scenariusze ilustrują sposób korzystania z zasad konsolidacji wysyłki utworzonych podczas pracy z tym artykułem. Każdy scenariusz prowadzi użytkownika przez proces konsolidacji wysyłki, który korzysta z zasad konsolidacji wysyłki podczas automatycznego lub ręcznego zwalniania do magazynu:
 
 - Scenariusz 1: [Konsolidowanie wysyłek podczas zwalniania ich do magazynu przy użyciu automatycznego zwalniania zamówień sprzedaży](../warehousing/consolidate-shipments-automatic.md)
 - Scenariusz 2: [Konsolidowanie wysyłek, gdy zasady konsolidacji wysyłki są zastąpione na stronie zwalniania do magazynu](../warehousing/consolidate-shipments-release-to-warehouse-override.md)

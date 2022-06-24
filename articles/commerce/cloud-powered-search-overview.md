@@ -1,6 +1,6 @@
 ---
 title: Omówienie wyszukiwania w chmurze
-description: Ten temat zawiera omówienie wyszukiwania w chmurze w Microsoft Dynamics 365 Commerce.
+description: Ten artykuł zawiera omówienie wyszukiwania w chmurze w Microsoft Dynamics 365 Commerce.
 author: ashishmsft
 ms.date: 02/28/2022
 ms.topic: overview
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 9116dd415d44a56fbe8c7852382c413b0a75872c
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 8a3ab869eb9ddc0e73061bd2363cf9b3962da1e3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371436"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850363"
 ---
 # <a name="cloud-powered-search-overview"></a>Omówienie wyszukiwania w chmurze
 
 [!include [banner](includes/banner.md)]
 
-Ten temat zawiera omówienie wyszukiwania w chmurze w Microsoft Dynamics 365 Commerce.
+Ten artykuł zawiera omówienie wyszukiwania w chmurze w Microsoft Dynamics 365 Commerce.
 
 Wykrywanie produktów pomaga zagwarantować klientom szybkie i łatwe wyszukiwanie produktów poprzez przeglądanie kategorii, wyszukiwanie i filtrowanie. Sprzedawcy detaliczni uważają odkrywanie produktów za podstawowe narzędzie interakcji z klientami w kanałach obsługiwanych przez Cloud Scale Unit (CSU), takich jak e-commerce i punkty sprzedaży (POS).
 

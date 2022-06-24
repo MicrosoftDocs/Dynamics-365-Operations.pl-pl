@@ -1,6 +1,6 @@
 ---
 title: Używanie arkusza zapasu bezpieczeństwa do aktualizowania minimalnego zapotrzebowania dla pozycji
-description: W tym temacie opisano sposób używania arkusza zapasu bezpieczeństwa do aktualizowania ilości zapasu bezpieczeństwa dla towarów przez obliczanie propozycji minimalnego zapotrzebowania na podstawie transakcji historycznych.
+description: W tym artykule opisano sposób używania arkusza zapasu bezpieczeństwa do aktualizowania ilości zapasu bezpieczeństwa dla towarów przez obliczanie propozycji minimalnego zapotrzebowania na podstawie transakcji historycznych.
 author: t-benebo
 ms.date: 10/28/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-28
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 391f741ee08eb0624e80f5c297009c527e50c14c
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 385144738b83fcf6873eae5204b4784d6ecd5b80
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468560"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851777"
 ---
 # <a name="use-the-safety-stock-journal-to-update-minimum-coverage-for-items"></a>Używanie arkusza zapasu bezpieczeństwa do aktualizowania minimalnego zapotrzebowania dla pozycji
 
@@ -24,7 +24,7 @@ ms.locfileid: "8468560"
 
 Zapasy bezpieczeństwa wskazują dodatkową ilość towaru, który jest przechowywany w magazynie, aby zmniejszyć ryzyko wyczerpania towaru. Zapasy bezpieczeństwa są używane jako bufor na wypadek przyjścia zamówień sprzedaży, ale dostawca nie może dotrzymać żądanej przez klienta daty wysyłki.
 
-W tym temacie opisano, jak używać dziennika zapasów bezpieczeństwa do obliczania propozycji minimalnego pokrycia na podstawie transakcji historycznych, a następnie aktualizować pokrycie pozycji propozycjami.
+W tym artykule opisano, jak używać dziennika zapasów bezpieczeństwa do obliczania propozycji minimalnego pokrycia na podstawie transakcji historycznych, a następnie aktualizować pokrycie pozycji propozycjami.
 
 ## <a name="overview-of-minimum-coverage-usage"></a>Przegląd minimalnego wykorzystania zapotrzebowania
 
@@ -43,7 +43,7 @@ Wartość **Minimalną** można ustawić na trzy sposoby:
 
 Arkusze zapasu bezpieczeństwa służą do obliczania proponowanej ilości minimalnej na podstawie historycznego użycia towaru w celach min./maks. do celów planu zapasów. Użycie historyczne reprezentuje wszystkie transakcje wydania w podanym okresie. Te transakcje wydania obejmują transakcje zamówień sprzedaży i korekty zapasów. Obliczenia identyfikują również wpływ proponowanej ilości minimalnej na wartość zapasów oraz zmianę wartości zapasów w porównaniu z bieżącymi ilościami minimalnymi.
 
-Każdy wiersz arkusza zapasu bezpieczeństwa reprezentuje towar i jego wymiary zapotrzebowania. Te wiersze arkusza są tworzone i pokazywane na stronie **Wiersze arkusza zapasu bezpieczeństwa** (**Planowanie główne \> Planowanie główne \> Uruchom \> Obliczanie zapasu bezpieczeństwa**). Proces biznesowy używania arkuszy zapasu bezpieczeństwa do obliczania proponowanych minimalnych ilości opisano w dalszej części tego tematu.
+Każdy wiersz arkusza zapasu bezpieczeństwa reprezentuje towar i jego wymiary zapotrzebowania. Te wiersze arkusza są tworzone i pokazywane na stronie **Wiersze arkusza zapasu bezpieczeństwa** (**Planowanie główne \> Planowanie główne \> Uruchom \> Obliczanie zapasu bezpieczeństwa**). Proces biznesowy używania arkuszy zapasu bezpieczeństwa do obliczania proponowanych minimalnych ilości opisano w dalszej części tego artykułu.
 
 Arkusz zapasu bezpieczeństwa jest używany do obliczania proponowanych minimalnych ilości wybranych towarów na podstawie historycznego użycia w wybranych okresach. Proponowane minimum można w razie potrzeby ręcznie zastąpić i przejrzeć potencjalny wpływ proponowanych minimum na wartość zapasów. Po zaksięgowaniu arkusza skojarzone minimalne ilości w za zapotrzebowaniach na towar są automatycznie aktualizowane.
 
@@ -89,7 +89,7 @@ Aby automatycznie generować wiersze arkusza, należy wykonać następujące kro
 
     - **Od dnia** — umożliwia wybór daty rozpoczęcia okresu, dla który mają być uwzględniane w obliczeniach.
     - **Do dnia** — Wybierz datę zakończenia okresu, dla którego emisje powinny być uwzględnione w tych obliczeniach. Między datą rozpoczęcia a datą zakończenia muszą być co najmniej dwa miesiące.
-    - **Oblicz odchylenie standardowe** – Ustaw dla tej opcji wartość *Tak*, aby obliczyć odchylenie standardowe. Tę opcję należy ustawić na wartość *Tak*, aby używać opcji **Użyj poziomu usług** podczas obliczania propozycji (w sposób opisany dalej w tym temacie).
+    - **Oblicz odchylenie standardowe** – Ustaw dla tej opcji wartość *Tak*, aby obliczyć odchylenie standardowe. Tę opcję należy ustawić na wartość *Tak*, aby używać opcji **Użyj poziomu usług** podczas obliczania propozycji (w sposób opisany dalej w tym artykule).
 
 1. Na skróconej karcie **Rekordy do uwzględnienia** możesz skonfigurować filtry i ograniczenia, aby określić, które elementy są uwzględniane. (Można na przykład filtrować według **Wartość grupy zapotrzebowania**.) Wybranie opcji **Filtr** umożliwia otwarcie standardowego okna dialogowego edytora kwerend, w którym można definiować kryteria wyboru, kryteria sortowania i sprzężenia. Pola działają w ten sam sposób, w jaki to robią w przypadku innych typów zapytań w aplikacji Microsoft Dynamics 365 Supply Chain Management.
 1. Na skróconej karcie **Uruchom w tle** wybierz, czy chcesz uruchomić zadanie w trybie wsadowym, i/lub skonfiguruj cykliczny harmonogram. Pola działają w ten sam sposób, jak działają w przypadku innych typów [zadań w tle](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) w module Supply Chain Management.
@@ -110,7 +110,7 @@ Na tym etapie jest obliczana proponowana wartość minimalna dla każdego wiersz
 Wyświetlane obliczenia nie wpływają na rzeczywiste wartości minimalnej ilości dla każdego produktu, dopóki nie wybierzesz opcji **Księguj** w okienku akcji. W tym czasie do każdego produktu będą stosowane **nowe wartości ilości minimalnej**.
 
 1. Przejdź do **Planowanie główne \> Planowanie główne \> Uruchom \> Obliczanie zapasu bezpieczeństwa**.
-1. Otwórz arkusz, dla których będzie obliczana propozycja. Możesz również utworzyć nowy arkusz, tak jak opisano wcześniej w tym temacie.
+1. Otwórz arkusz, dla których będzie obliczana propozycja. Możesz również utworzyć nowy arkusz, tak jak opisano wcześniej w tym artykule.
 1. Na skróconej karcie **Wiersze arkusza** zaznacz na pasku narzędzi **Obliczanie propozycji**. (Nie musisz wybierać żadnych linii.)
 1. W oknie dialogowym **Oblicz propozycję minimalnego poziomu zapasów** należy ustawić następujące pola:
 

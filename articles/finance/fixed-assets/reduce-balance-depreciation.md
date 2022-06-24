@@ -1,6 +1,6 @@
 ---
 title: Amortyzacja degresywna
-description: Ten temat zawiera omówienie metody amortyzacji Degresywna.
+description: Ten artykuł zawiera omówienie metody amortyzacji Degresywna.
 author: moaamer
 ms.date: 04/25/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a81a8f926c30ac26d10c8763f43f39504249616f
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 52bf9d4e9cbc9cabda5d5ab17c1a00ecea0d0348
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725325"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883279"
 ---
 # <a name="reduce-balance-depreciation"></a>Amortyzacja degresywna
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera omówienie metody amortyzacji Degresywna.
+Ten artykuł zawiera omówienie metody amortyzacji Degresywna.
 
 Jeśli przy konfiguracji profilu amortyzacji środka stałego zostanie wybrana opcja Degresywna w polu **Metoda** na stronie **Profile amortyzacji**, wówczas środki trwałe, do których przypisany jest ten profil amortyzacji, będą amortyzowane o tę samą wartość procentową w każdym okresie amortyzacji.
 
@@ -41,7 +41,7 @@ Można wybrać **Kalendarzowy** lub **Obrachunkowy** w polu **Rok amortyzacji** 
 
 ### <a name="calendar"></a>Kalendarz
 
-**Opcja Kalendarz** aktualizuje podstawę amortyzacji (zwykle wartość księgowa netto pomniejszona o wartość likwidacji) 1. stycznia każdego roku. W przykładzie amortyzacji degresywnej, niżej w tym temacie, podstawą amortyzacji jest licznik pierwszego wyrażenia w obliczeniach kolumny Obliczenia. 
+**Opcja Kalendarz** aktualizuje podstawę amortyzacji (zwykle wartość księgowa netto pomniejszona o wartość likwidacji) 1. stycznia każdego roku. W przykładzie amortyzacji degresywnej, niżej w tym artykule, podstawą amortyzacji jest licznik pierwszego wyrażenia w obliczeniach kolumny Obliczenia. 
 
 Po wybraniu opcji **Kalendarz** dostępne są następujące opcje w polu **Częstotliwość okresu**, które określa daty księgowania naliczenia amortyzacji oraz kwoty w całym roku kalendarzowym:
 

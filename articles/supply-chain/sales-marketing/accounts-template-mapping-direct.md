@@ -1,6 +1,6 @@
 ---
 title: Synchronizowanie kont klientów bezpośrednio z rozwiązania Sales do odbiorców w Supply Chain Management
-description: Temat zawiera omówienie szablonów i podstawowych zadań, które są używane do synchronizowania kont z Dynamics 365 Sales do Supply Chain Management.
+description: Artykuł zawiera omówienie szablonów i podstawowych zadań, które są używane do synchronizowania kont z Dynamics 365 Sales do Supply Chain Management.
 author: Henrikan
 ms.date: 10/25/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: b3257f4582ede6cd1be8e593a5ed99f5ffd0ca6f
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 8d415174f62c511626852b91f3591f907b4a85ea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063092"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851573"
 ---
 # <a name="synchronize-accounts-directly-from-sales-to-customers-in-supply-chain-management"></a>Synchronizowanie kont klientów bezpośrednio z rozwiązania Sales do odbiorców w Supply Chain Management
 
@@ -32,7 +32,7 @@ ms.locfileid: "8063092"
 > [!NOTE]
 > Zanim zaczniesz używać rozwiązania Prospekt na gotówkę, zapoznaj się z tematem [Integrowanie danych na platformie Microsoft Dataverse for Apps](/powerapps/administrator/data-integrator).
 
-Temat zawiera omówienie szablonów i podstawowych zadań, które są używane do synchronizowania kont bezpośrednio z Dynamics 365 Sales do Dynamics 365 Supply Chain Management.
+Artykuł zawiera omówienie szablonów i podstawowych zadań, które są używane do synchronizowania kont bezpośrednio z Dynamics 365 Sales do Dynamics 365 Supply Chain Management.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Przepływ danych w rozwiązaniu Prospekt na gotówkę
 
@@ -101,7 +101,7 @@ Na poniższych ilustracjach pokazano przykładowe mapowanie szablonu w integrato
 
 ![Mapowanie szablonu w integracji danych.](./media/accounts-direct-template-mapping-data-integrator-1.png)
 
-## <a name="related-topics"></a>Powiązane tematy
+## <a name="related-articles"></a>Powiązane artykuły
 
 
 [Od prospektu do gotówki](prospect-to-cash.md)

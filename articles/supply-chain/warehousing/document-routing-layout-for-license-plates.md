@@ -1,6 +1,6 @@
 ---
 title: Układ rozsyłania dokumentów dla etykiet numerów identyfikacyjnych
-description: W tym temacie opisano sposób używania metod formatowania do drukowania wartości na etykietach.
+description: W tym artykule opisano sposób używania metod formatowania do drukowania wartości na etykietach.
 author: perlynne
 ms.date: 04/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 9055e4c6e35099b7769faa6fc83f71523f2e64fd
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 10e63353cda93d666d7f23f59508b73e5492c3cc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103897"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847883"
 ---
 # <a name="document-routing-layout-for-license-plate-labels"></a>Układ rozsyłania dokumentów dla etykiet numerów identyfikacyjnych
 
@@ -53,7 +53,7 @@ Wiele narzędzi do generowania etykiet ułatwia formatowanie tekstu w układzie 
 
 ## <a name="turn-on-this-feature-for-your-system"></a>Włączanie funkcji w systemie
 
-Jeśli Twój system nie zawiera jeszcze funkcji opisanych w tym temacie, przejdź do [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) i włącz funkcję *Ulepszone układy etykiet tablic rejestracyjnych*. (Od wersji 10.0.21 Supply Chain Management version ta funkcja jest domyślnie włączona. (Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć).
+Jeśli Twój system nie zawiera jeszcze funkcji opisanych w tym artykule, przejdź do [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) i włącz funkcję *Ulepszone układy etykiet tablic rejestracyjnych*. (Od wersji 10.0.21 Supply Chain Management version ta funkcja jest domyślnie włączona. (Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć).
 
 ## <a name="custom-number-formats"></a>Niestandardowe formaty liczb
 
@@ -129,7 +129,7 @@ Można drukować za pomocą metody wyświetlania przy użyciu następującego fo
 $DisplayMethod()$
 ```
 
-Ten format można łączyć z innymi typami opisanymi wcześniej w tym temacie. Na przykład istnieje metoda wyświetlania o nazwie `DisplayListOfItemsNumbers()` i ma zostać wydrukowany pierwszy numer pozycji tej metody. W takim przypadku można użyć następującego kodu.
+Ten format można łączyć z innymi typami opisanymi wcześniej w tym artykule. Na przykład istnieje metoda wyświetlania o nazwie `DisplayListOfItemsNumbers()` i ma zostać wydrukowany pierwszy numer pozycji tej metody. W takim przypadku można użyć następującego kodu.
 
 ```dos
 $DisplayListOfItemsNumbers()[1]$

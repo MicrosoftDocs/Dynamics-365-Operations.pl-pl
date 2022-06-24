@@ -1,6 +1,6 @@
 ---
 title: Tworzenie nowej książki adresowej
-description: W tym temacie opisano, jak dodać utworzyć książki adresowe w Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano, jak dodać utworzyć książki adresowe w Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 01/27/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: f28e9d301b0a3c30f903ccc32e785ae09f0d702f3625f5febe03817ba44046ce
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7bee4999255e063da946d38561146f5beb98dbc8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729861"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889375"
 ---
 # <a name="create-new-address-book"></a>Tworzenie nowej książki adresowej
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano, jak dodać utworzyć nową książkę adresową w Microsoft Dynamics 365 Commerce.
+W tym artykule opisano, jak dodać utworzyć nową książkę adresową w Microsoft Dynamics 365 Commerce.
 
 Książki adresowe są używane w Commerce w różnych sytuacjach, w tym do przechowywania list odbiorców i list pracowników dla kanału. Książki adresowe mogą być używane dla pojedynczego kanału lub współdzielone między kanałami.
 

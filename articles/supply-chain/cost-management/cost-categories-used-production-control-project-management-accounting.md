@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2e35a6b7da4ead8ab6f007ef8800ed8a05b1c513
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 09a808c91ece25a9a40f662e0aca2c504246fc0a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675355"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854508"
 ---
 # <a name="cost-categories-used-in-production-control-and-project-management-accounting"></a>Kategorie kosztów używane w kontroli produkcji i rachunkowości zarządczej projektów
 
@@ -31,7 +31,7 @@ Niektóre typy działań produkcyjnych mogą mieć zastosowanie do szacowania i 
 
 Niektóre typy działań produkcyjnych mogą mieć zastosowanie do szacowania i raportowania czasu trwania projektu. W takim przypadku kategoria kosztów jest wymagana na potrzeby produkcji i projektu. Jeśli kategoria kosztów jest używana w produkcji i projektach, należy zdefiniować dodatkowe informacje związane z projektem. Na przykład koszty godzinowe skojarzone z projektami mogą się różnić od kosztów godzinowych skojarzonych z produkcją. Można użyć strony **Kategorie kosztu**, aby zdefiniować kategorię kosztów, która będzie używana w modułach kontroli produkcji i rachunkowości zarządczej projektów. 
 
-**Uwaga:** Moduł Rachunek kosztów zawiera stronę **Kategorie projektu**, ale nie ma ona żadnego związku z funkcjami opisywanymi w tym temacie. Gdy używasz kategorii kosztów w projektach, strona **Kategorie kosztu** zawiera dodatkowe karty, na których są wyświetlane dodatkowe informacje związane z projektem. Informacje te obejmują grupę kategorii, właściwość wiersza oraz konta księgowe przypisane do kategorii kosztów.
+**Uwaga:** Moduł Rachunek kosztów zawiera stronę **Kategorie projektu**, ale nie ma ona żadnego związku z funkcjami opisywanymi w tym artykule. Gdy używasz kategorii kosztów w projektach, strona **Kategorie kosztu** zawiera dodatkowe karty, na których są wyświetlane dodatkowe informacje związane z projektem. Informacje te obejmują grupę kategorii, właściwość wiersza oraz konta księgowe przypisane do kategorii kosztów.
 
 -   Kategoria kosztów musi być przypisana do grupy kategorii obsługującej typ transakcji **Godziny**.
 -   Właściwość wiersza wskazuje domyślny sposób zaliczania zgłaszanego czasu w ciężar projektu.

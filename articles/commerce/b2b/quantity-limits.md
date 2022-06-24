@@ -1,6 +1,6 @@
 ---
 title: Ustawianie limitów ilości produktów dla witryn B2B handlu elektronicznego
-description: W tym temacie opisano, jak ustawić limity ilości produktów w witrynach handlu elektronicznego typu business-to-business (B2B).
+description: W tym artykule opisano, jak ustawić limity ilości produktów w witrynach handlu elektronicznego typu business-to-business (B2B).
 author: josaw1
 ms.date: 01/20/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 18dc138693dc9fb0e8cf8727de77b5f8584cde79
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 034441f8f712c676dbcc89f0009361d0a4a65721
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690203"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877012"
 ---
 # <a name="set-product-quantity-limits-for-b2b-e-commerce-sites"></a>Ustawianie limitów ilości produktów dla witryn B2B handlu elektronicznego
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie opisano, jak ustawić limity ilości produktów w witrynach handlu elektronicznego typu business-to-business (B2B).
+W tym artykule opisano, jak ustawić limity ilości produktów w witrynach handlu elektronicznego typu business-to-business (B2B).
 
 Większość produktów ma jednostkę miary, która definiuje ich grupowanie. Grupowanie wpływa na sposób sprzedaży produktów. Niektóre produkty mogą mieć dodatkowe grupowanie według ilości. To grupowanie określa, czy produkty mogą być sprzedawane jako pojedyncze jednostki, czy jako wielokrotności oraz czy istnieje minimalny lub maksymalny limit ilości zamówienia, którego należy przestrzegać.
 

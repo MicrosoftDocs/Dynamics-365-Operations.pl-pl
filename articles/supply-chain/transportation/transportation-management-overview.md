@@ -1,6 +1,6 @@
 ---
-title: Zarządzanie transportem — omówienie
-description: W tym temacie omówiono funkcjonalność zarządzania transportem dostępną w rozwiązaniu Supply Chain Management.
+title: Omówienie zarządzania transportem
+description: W tym artykule omówiono funkcjonalność zarządzania transportem dostępną w rozwiązaniu Supply Chain Management.
 author: Weijiesa
 ms.date: 06/20/2017
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6181d63c9ab447c4892948fe1f3ee41d2680b78d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 12f870c95f28e752c3c3b3dd4161d82815b9954a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671654"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897466"
 ---
 # <a name="transportation-management-overview"></a>Omówienie zarządzania transportem
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie omówiono funkcjonalność zarządzania transportem dostępną w rozwiązaniu Supply Chain Management.
+W tym artykule omówiono funkcjonalność zarządzania transportem dostępną w rozwiązaniu Supply Chain Management.
 
 Moduł Zarządzanie transportem pozwala korzystać z transportu w firmie oraz identyfikować dostawców i rozwiązania wyboru trasy dla zamówień przychodzących i wychodzących. Można na przykład określić najszybszą trasę lub najtańszą stawkę za wysyłkę. W poniższej tabeli opisano główne scenariusze używania zarządzania transportem.
 

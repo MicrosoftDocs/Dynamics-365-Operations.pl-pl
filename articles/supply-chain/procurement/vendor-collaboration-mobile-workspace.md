@@ -1,6 +1,6 @@
 ---
 title: Obszar roboczy współpracy z dostawcami za pomocą urządzeń przenośnych
-description: Ten temat zawiera informacje o komórkowym obszarze roboczym Współpraca z dostawcami. Ten obszar roboczy pomaga Twoim dostawcom być na bieżąco z zamówieniami zakupu, które zostały im wysłane do zatwierdzenia. Mogą również wyświetlać informacje o nowych i zaktualizowanych zamówieniach zakupu i osobach kontaktowych.
+description: Ten artykuł zawiera informacje o komórkowym obszarze roboczym Współpraca z dostawcami. Ten obszar roboczy pomaga Twoim dostawcom być na bieżąco z zamówieniami zakupu, które zostały im wysłane do zatwierdzenia. Mogą również wyświetlać informacje o nowych i zaktualizowanych zamówieniach zakupu i osobach kontaktowych.
 author: GalynaFedorova
 ms.date: 05/24/2022
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: global
 ms.author: gfedorova
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 97352ca89cef77b9320f17af5a1dbe6a00df2dd6
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 591d4269a1188ed8f098a342729ba49b9772f42d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811722"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851660"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Obszar roboczy współpracy z dostawcami za pomocą urządzeń przenośnych
 
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
-Ten temat zawiera informacje o komórkowym obszarze roboczym **Współpraca z dostawcami**. Ten obszar roboczy pomaga Twoim dostawcom być na bieżąco z zamówieniami zakupu, które zostały im wysłane do zatwierdzenia. Mogą również wyświetlać informacje o nowych i zaktualizowanych zamówieniach zakupu i osobach kontaktowych.
+Ten artykuł zawiera informacje o komórkowym obszarze roboczym **Współpraca z dostawcami**. Ten obszar roboczy pomaga Twoim dostawcom być na bieżąco z zamówieniami zakupu, które zostały im wysłane do zatwierdzenia. Mogą również wyświetlać informacje o nowych i zaktualizowanych zamówieniach zakupu i osobach kontaktowych.
 
 Ten mobilny obszar roboczy jest przeznaczony do używania w mobilnych aplikacjach finansowych i operacyjnych (Dynamics 365).
 
@@ -97,7 +97,7 @@ Jeśli w organizacji wdrożono oprogramowanie Microsoft Dynamics 365 for Operati
 </tr>
 <tr class="even">
 <td>Użytkownik u dostawcy musi mieć dostęp do internetowego interfejsu współpracy z dostawcami w kliencie internetowym i skonfigurować użytkownika zarządzającego współpracą z dostawcą.</td><td>Specjaliści ds. zakupów i administrator systemu</td>
-<td>Wykonaj kroki opisane w poniższych tematach, aby skonfigurować internetowy interfejs współpracy dostawcy i w nim pracować.
+<td>Wykonaj kroki opisane w poniższych artykułach, aby skonfigurować internetowy interfejs współpracy dostawcy i w nim pracować.
 <ul>
 <li><a href="vendor-collaboration-work-external-vendors.md">Używanie obszaru roboczego współpracy z dostawcami do pracy z zewnętrznymi dostawcami</a></li>
 <li><a href="manage-vendor-collaboration-users.md">Zarządzanie użytkownikami portalu współpracy z dostawcami</a></li>

@@ -1,6 +1,6 @@
 ---
 title: Zaopatrzenie — często zadawane pytania
-description: Ten temat zawiera odpowiedzi na często zadawane pytania dotyczące funkcji zaopatrzenia w aplikacji Supply Chain Management
+description: Ten artykuł zawiera odpowiedzi na często zadawane pytania dotyczące funkcji zaopatrzenia w aplikacji Supply Chain Management
 author: GalynaFedorova
 ms.date: 05/31/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 718108447dcb5cec488b7fa626feb551808e8dd8
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 6e710b254638b255ce4aa3e0adde0dd23bf60f64
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669356"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869583"
 ---
 # <a name="procurement-faq"></a>Zaopatrzenie — często zadawane pytania
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera odpowiedzi na często zadawane pytania dotyczące funkcji zaopatrzenia w aplikacji Supply Chain Management.
+Ten artykuł zawiera odpowiedzi na często zadawane pytania dotyczące funkcji zaopatrzenia w aplikacji Supply Chain Management.
 
 ## <a name="can-i-show-only-purchase-orders-that-i-created"></a>Czy mogę wyświetlić utworzone przeze mnie zamówienia zakupu?
 

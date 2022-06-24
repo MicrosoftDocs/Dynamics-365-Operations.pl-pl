@@ -1,6 +1,6 @@
 ---
 title: Arkusze magazynowe
-description: W tym temacie opisano, jak używać arkuszy magazynowych do księgowania różnych rodzajów transakcji magazynowych.
+description: W tym artykule opisano, jak używać arkuszy magazynowych do księgowania różnych rodzajów transakcji magazynowych.
 author: yufeihuang
 ms.date: 04/05/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9370e495bf16ed638646843faaf0ff599fe1abc
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 182c0ac9146c44b08698f8f9d15a3610bf0b7cea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573976"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849424"
 ---
 # <a name="inventory-journals"></a>Arkusze magazynowe
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano, jak używać arkuszy magazynowych do księgowania różnych rodzajów transakcji magazynowych.
+W tym artykule opisano, jak używać arkuszy magazynowych do księgowania różnych rodzajów transakcji magazynowych.
 
 Arkusze magazynowe w Supply Chain Management są używane do księgowania transakcji magazynu fizycznego różnych typów, takich jak księgowanie rozchodów i przychodów, przesunięć magazynowych, tworzenie list składowych BOM i uzgadnianie zapasów fizycznych. Wszystkie arkusze magazynowe są używane w sposób podobny, ale są one podzielone na różne typy.
 

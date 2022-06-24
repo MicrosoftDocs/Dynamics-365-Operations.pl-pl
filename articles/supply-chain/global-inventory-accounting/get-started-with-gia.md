@@ -1,6 +1,6 @@
 ---
 title: Wprowadzenie do Globalnego księgowania zapasów
-description: W tym temacie opisano rozpoczęcie pracy z funkcją Globalnego księgowania zapasów.
+description: W tym artykule opisano rozpoczęcie pracy z funkcją Globalnego księgowania zapasów.
 author: JennySong-SH
 ms.date: 06/18/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 17d4816fc5fcad0b0665640a8347b1f4ea032dd7
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 493e0be8ab56abc2a3253876107b7f4fefabf4ad
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679451"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891097"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Wprowadzenie do Globalnego księgowania zapasów
 
@@ -38,12 +38,18 @@ Globalne księgowanie zapasów jest dodatkiem. Aby udostępnić swoje funkcje, n
 
 Funkcja Globalnego księgowania zapasów nie obsługuje obecnie wszystkich funkcji zarządzania kosztami, które są wbudowane w Supply Chain Management. Dlatego ważne jest, aby ocenić, czy aktualnie zestaw funkcji jest obecnie dostępny i spełni wymagania użytkownika.
 
-## <a name="how-to-get-the-global-inventory-accounting-public-preview"></a><a name="sign-up"></a>Jak uzyskać dostęp do publicznej wersji zapoznawczej Globalnego księgowania zapasów
+## <a name="how-to-get-the-global-inventory-accounting-add-in"></a><a name="sign-up"></a>Jak uzyskać dostęp do dodatku Globalnego księgowania zapasów
 
 > [!IMPORTANT]
 > Aby korzystać z funkcji Globalnego księgowania zapasów, musisz mieć włączone środowisko usługi LCS o wysokiej dostępności (nie środowisko OneBox). Ponadto trzeba korzystać z Supply Chain Management w wersji 10.0.19 lub nowszej.
 
-Aby zarejestrować się w publicznej wersji zapoznawczej Globalnego księgowania zapasów, wyślij identyfikator środowiska usługi LCS pocztą e-mail do [zespołu ds. globalnego księgowania zapasów](mailto:GlobalInvAccount@microsoft.com). Po zatwierdzeniu do programu, zespół wyśle do Ciebie wiadomość e-mail zawierającą klucz beta funkcji Globalnego księgowania zapasów oraz punkty końcowe usługi. Po otrzymaniu klucza wersji beta można [zainstalować ten dodatek](#install).
+### <a name="supply-chain-management-version-10019-to-10026"></a>Supply Chain Management w wersji 10.0.19 na 10.0.26
+
+Aby zainstalować dodatek Global Inventory Accounting for Supply Chain Management w wersji od 10.0.19 do 10.0.26, należy rozpocząć od [zainstalowania dodatku](#install). Następnie wyślij identyfikator środowiska usługi LCS i nazwę firmy pocztą e-mail do zespołu [globalnego księgowania zapasów](mailto:GlobalInvAccount@microsoft.com). Zespół wyśle Ci wiadomość e-mail z informacjami o punktach końcowych usługi Globalnego księgowania zapasów.
+
+### <a name="supply-chain-management-version-10027-and-later"></a>Supply Chain Management w wersji 10.0.27 i nowszych
+
+Aby zainstalować dodatek Global Inventory Accounting for Supply Chain Management w wersji od 10.0.27 i nowszych, należy rozpocząć od [zainstalowania dodatku](#install). W tych wersjach systemu Supply Chain Management usługi Globalne księgowanie zapasów są ustawiane automatycznie, więc nie trzeba ich szukać ręcznie. Jeśli podczas konfigurowania dodatku wystąpią jakieś problemy, skontaktuj się z [zespołem globalnego księgowania zapasów](mailto:GlobalInvAccount@microsoft.com).
 
 ## <a name="licensing"></a>Licencjonowanie
 
@@ -98,12 +104,7 @@ Jeśli domyślnym językiem instalacji Dataverse nie jest język angielski, nale
 
 Wykonaj poniższe kroki, aby zainstalować dodatek, który umożliwi korzystanie z programu Globalne księgowanie zapasów.
 
-1. Jak [uzyskać dostęp](#sign-up) do publicznej wersji zapoznawczej Globalnego księgowania zapasów.
 1. Zaloguj się w [LCS](https://lcs.dynamics.com/Logon/Index).
-1. Przejdź do obszaru **Zarządzanie funkcjami w wersji zapoznawczej**.
-1. Wybierz znak plus (**+**).
-1. W polu **Kod** wprowadź swój klucz beta dla usługi Globalnego księgowania zapasów. (Po zalogowaniu się musisz odbierać klucz wersji beta pocztą e-mail)
-1. Wybierz opcję **Odblokuj**.
 1. Otwórz środowisko usługi LCS, w którym chcesz dodać usługę.
 1. Przejdź do **Pełne szczegóły**.
 1. Przejdź do **Integracji Power Platform** i wybierz pozycję **Ustawienia**.
@@ -124,6 +125,8 @@ Wykonaj poniższe kroki, aby skonfigurować integrację pomiędzy programem Glob
 1. Na karcie **Wszystkie** wyszukaj funkcję o nazwie *(wersja zapoznawcza) Globalne księgowanie zapasów*.
 1. Wybierz **Włącz teraz**.
 1. Przejdź do strony **Globalne księgowanie zapasów \> Konfiguracja \> Parametry globalnego księgowania zapasów \> Parametry integracji**.
-1. W polach **Punkt końcowy usługi danych** i **Punkt końcowy globalnego księgowania zapasów** należy wpisać adresy URL z wiadomości e-mail, którą zespół ds. globalnego księgowania zapasów wysłał po zapisaniu się do podglądu.
+1. W zależności od wersji programu Supply Chain Management należy wykonać jedną z poniższych czynności:
+    - **Supply Chain Management w wersji 10.0.19 do 10.0.26**: W polach **Punkt końcowy usługi danych** i **Punkt końcowy globalnej ewidencji zapasów** wprowadź adresy URL, które zostały wysłane do Ciebie pocztą elektroniczną przez zespół ds. globalnej ewidencji zapasów (zob. również [Jak uzyskać dostęp do dodatku Globalnego księgowania zapasów](#sign-up)).
+    - **Supply Chain Management w wersji 10.0.27** i nowsza: nie trzeba wprowadzać punktów końcowych, więc możesz pominąć ten krok.
 
 Globalne księgowanie zapasów jest gotowe do użycia.

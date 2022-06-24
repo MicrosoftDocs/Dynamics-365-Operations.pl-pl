@@ -1,6 +1,6 @@
 ---
 title: Zapotrzebowanie netto i informacje o oznaczaniu transakcji za pomocą optymalizacji planowania
-description: Ten temat zawiera informacje dotyczące obliczonego zapotrzebowania netto i informacji o oznaczaniu transakcji w ramach optymalizacji planowania.
+description: Ten artykuł zawiera informacje dotyczące obliczonego zapotrzebowania netto i informacji o oznaczaniu transakcji w ramach optymalizacji planowania.
 author: t-benebo
 ms.date: 7/28/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: edfa6010074a4b04b3200115891723cd45871624
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 259e5793a8dfac67793034d98ccb627fe1947bab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468868"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888536"
 ---
 # <a name="net-requirements-and-pegging-information-with-planning-optimization"></a>Zapotrzebowanie netto i informacje o oznaczaniu transakcji za pomocą optymalizacji planowania
 

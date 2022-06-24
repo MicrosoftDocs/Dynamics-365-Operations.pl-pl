@@ -1,6 +1,6 @@
 ---
 title: Stany cyklu życia lokalizacji czynności konserwacyjnych
-description: W tym temacie opisano sposób konfigurowania stanów lokalizacji czynności konserwacyjnych i modeli cyklu życia w module Zarządzanie składnikami majątku.
+description: W tym artykule opisano sposób konfigurowania stanów lokalizacji czynności konserwacyjnych i modeli cyklu życia w module Zarządzanie składnikami majątku.
 author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a9893ad497bbe442d74f5212153fa466d2c85eb
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ae56c2b734339343b134be95abe0ce40b70c8a0e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6360977"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8934666"
 ---
 # <a name="functional-location-lifecycle-states"></a>Stany cyklu życia lokalizacji czynności konserwacyjnych
 
@@ -28,7 +28,7 @@ ms.locfileid: "6360977"
 
  
 
-W tym temacie opisano sposób konfigurowania stanów cyklu życia lokalizacji czynności konserwacyjnych i modeli cyklu życia w module Zarządzanie składnikami majątku. Stany cyklu życia lokalizacji czynności konserwacyjnych definiują stany, przez które może przechodzić lokalizacja czynności konserwacyjnych, np. utworzona, aktywna i zakończona. Wszystkie lokalizacje czynności konserwacyjnych, niezależnie od ich stanu cyklu życia, można wyświetlić na stronie listy **Wszystkie lokalizacje czynności konserwacyjnych**. Stan lokalizacji funkcjonalnej można zmienić, zaznaczając go na stronie listy **Wszystkie lokalizacje czynności konserwacyjnych** i wybierając pozycję **Aktualizuj stan lokalizacji czynności konserwacyjnych**.
+W tym artykule opisano sposób konfigurowania stanów cyklu życia lokalizacji czynności konserwacyjnych i modeli cyklu życia w module Zarządzanie składnikami majątku. Stany cyklu życia lokalizacji czynności konserwacyjnych definiują stany, przez które może przechodzić lokalizacja czynności konserwacyjnych, np. utworzona, aktywna i zakończona. Wszystkie lokalizacje czynności konserwacyjnych, niezależnie od ich stanu cyklu życia, można wyświetlić na stronie listy **Wszystkie lokalizacje czynności konserwacyjnych**. Stan lokalizacji funkcjonalnej można zmienić, zaznaczając go na stronie listy **Wszystkie lokalizacje czynności konserwacyjnych** i wybierając pozycję **Aktualizuj stan lokalizacji czynności konserwacyjnych**.
 
 ## <a name="set-up-functional-location-lifecycle-states"></a>Ustawienia stanów cyklu życia lokalizacji czynności konserwacyjnych
 
@@ -39,6 +39,7 @@ W tym temacie opisano sposób konfigurowania stanów cyklu życia lokalizacji cz
 5. Wybierz „Tak” na przełączniku **Utwórz składniki majątku**, jeśli powinno być możliwe automatyczne tworzenie składników majątku o takiej samej nazwie jak lokalizacja czynności konserwacyjnych i zainstalować go w lokalizacji czynności konserwacyjnych w tym stanie.  
 >[!NOTE]
 >Ten przełącznik odnosi się do pola **Typ składnika majątku** na skróconej karcie **Ogólne** w formularzu **Typu lokalizacji czynności konserwacyjnych** (**Zarządzanie składnikami majątku** > **Ustawienia** > **Lokalizacje czynności konserwacyjnych** > **Typy lokalizacji czynności konserwacyjnych**).
+
 6. Wybierz „Tak” na przełączniku **Zmień nazwę lokalizacji**, jeśli powinna być możliwa zmiana nazwy lokalizacji czynności konserwacyjnych w tym stanie.
 7. Wybierz „Tak” na przełączniku **Nowe lokalizacje podrzędne**, jeśli powinno być możliwe dodawanie nowych lokalizacji podrzędnych do lokalizacji czynności konserwacyjnych w tym stanie.
 8. Wybierz „Tak” na przełączniku **Zainstaluj składniki majątku**, jeśli powinno być możliwe instalowanie składników majątku w lokalizacji czynności konserwacyjnych w tym stanie.

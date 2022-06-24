@@ -1,6 +1,6 @@
 ---
 title: Debugowanie źródeł danych dla wykonanego formatu ER w celu analizowania przekształcenia i przepływu danych
-description: W tym temacie wyjaśniono, jak można debugować źródła danych wykonanego formatu ER w celu lepszego zrozumienia skonfigurowanego przekształcenia i przepływu danych.
+description: W tym artykule wyjaśniono, jak można debugować źródła danych wykonanego formatu ER w celu lepszego zrozumienia skonfigurowanego przekształcenia i przepływu danych.
 author: NickSelin
 ms.date: 04/22/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 02aee8c6ec3b2720c2fcbb17f15791d88d688a34
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 6fca177093caf42ad27b58eaa97e3f6997289eeb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323785"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884236"
 ---
 # <a name="debug-data-sources-of-an-executed-er-format-to-analyze-data-flow-and-transformation"></a>Debugowanie źródeł danych dla wykonanego formatu ER w celu analizowania przekształcenia i przepływu danych
 
@@ -34,7 +34,7 @@ Czasami dane wygenerowanego wyniku wyglądają inaczej niż te same dane w bazie
 
 Aby włączyć funkcję debugowania źródła danych, w obszarze parametrów użytkownika rozwiązania ER ustaw opcję **Włącz debugowanie danych podczas uruchamiania formatu** na **Tak**. Następnie możesz rozpocząć debugowanie źródła danych podczas uruchamiania formatu ER w celu wygenerowania dokumentów wychodzących. Możesz również użyć opcji **Rozpocznij debugowanie**, aby zainicjować debugowanie źródła danych dla formatu ER skonfigurowanego w [projektancie operacji ER](./tasks/er-format-configuration-2016-11.md#design-the-format-of-an-electronic-document).
 
-W tym temacie przedstawiono wytyczne dotyczące inicjowania debugowania źródła danych dla wykonywanych formatów ER. Wyjaśniono w nim, jak informacje mogą pomóc w zrozumieniu przepływu danych i przekształceń danych. Przykłady przedstawione w tym temacie używają procesu biznesowego do przetwarzania płatności dostawców.
+W tym artykule przedstawiono wytyczne dotyczące inicjowania debugowania źródła danych dla wykonywanych formatów ER. Wyjaśniono w nim, jak informacje mogą pomóc w zrozumieniu przepływu danych i przekształceń danych. Przykłady przedstawione w tym artykule używają procesu biznesowego do przetwarzania płatności dostawców.
 
 ## <a name="limitations"></a>Ograniczenia
 
@@ -49,7 +49,7 @@ Następujące ustawienia formatów ER nie są obecnie dostępne w przypadku debu
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-- Aby wykonać przykłady opisane w tym temacie, trzeba mieć dostęp do jednej z następujących [ról](../sysadmin/tasks/assign-users-security-roles.md):
+- Aby wykonać przykłady opisane w tym artykule, trzeba mieć dostęp do jednej z następujących [ról](../sysadmin/tasks/assign-users-security-roles.md):
 
     - Deweloper raportowania elektronicznego
     - Konsultant funkcjonalny raportowania elektronicznego
@@ -57,12 +57,12 @@ Następujące ustawienia formatów ER nie są obecnie dostępne w przypadku debu
 
 - Firmę należy ustawić na wartość **DEMF**.
 
-- Wykonaj kroki opisane w [dodatku 1](#appendix1) do tego tematu, aby pobrać składniki rozwiązania Microsoft ER wymagane do przetwarzania płatności dostawców.
-- Wykonaj kroki opisane w [dodatku 2](#appendix2) do tego tematu, aby przygotować rozrachunki z dostawcami na potrzeby przetwarzania płatności dostawców przy użyciu pobranego rozwiązania ER.
+- Wykonaj kroki opisane w [dodatku 1](#appendix1) do tego artykułu, aby pobrać składniki rozwiązania Microsoft ER wymagane do przetwarzania płatności dostawców.
+- Wykonaj kroki opisane w [dodatku 2](#appendix2) do tego artykułu, aby przygotować rozrachunki z dostawcami na potrzeby przetwarzania płatności dostawców przy użyciu pobranego rozwiązania ER.
 
 ## <a name="process-a-vendor-payment-to-get-a-payment-file"></a>Przetwarzanie płatności dostawcy w celu pobrania pliku płatności
 
-1. Wykonaj kroki opisane w [dodatku 3](#appendix3) do tego tematu, aby przetworzyć płatności dostawców.
+1. Wykonaj kroki opisane w [dodatku 3](#appendix3) do tego artykułu, aby przetworzyć płatności dostawców.
 
     ![Przetwarzanie płatności dostawcy w toku.](./media/er-data-debugger-process-payment.png)
 
@@ -89,7 +89,7 @@ Następujące ustawienia formatów ER nie są obecnie dostępne w przypadku debu
 
 ## <a name="process-a-vendor-payment-for-debugging"></a>Przetwarzanie płatności dostawcy na potrzeby debugowania
 
-1. Wykonaj kroki opisane w [dodatku 3](#appendix3) do tego tematu, aby przetworzyć płatności dostawców.
+1. Wykonaj kroki opisane w [dodatku 3](#appendix3) do tego artykułu, aby przetworzyć płatności dostawców.
 2. W oknie komunikatu wybierz opcję **Tak**, aby potwierdzić, że chcesz przerwać przetwarzanie płatności dostawców i w zamian uruchomić debugowanie źródła danych na stronie **Debugowanie źródeł danych**.
 
     ![Okno komunikatu potwierdzającego.](./media/er-data-debugger-start-debugging.png)

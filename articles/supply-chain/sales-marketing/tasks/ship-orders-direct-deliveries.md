@@ -1,6 +1,6 @@
 ---
 title: Wysyłanie zamówień jako dostaw bezpośrednich
-description: W tym temacie opisano sposób tworzenia dostawy bezpośredniej na podstawie zamówienia sprzedaży.
+description: W tym artykule opisano sposób tworzenia dostawy bezpośredniej na podstawie zamówienia sprzedaży.
 author: Henrikan
 ms.date: 07/11/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 94890b0915a49052c298090f124cf2b91c462de8
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f5f145bacecc47a782c60335c6ff5b79f978007c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572448"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875167"
 ---
 # <a name="ship-orders-as-direct-deliveries"></a>Wysyłanie zamówień jako dostaw bezpośrednich
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie opisano sposób tworzenia dostawy bezpośredniej na podstawie zamówienia sprzedaży. Dostawy bezpośredniej można użyć w celu wysłania towarów do odbiorcy bezpośrednio od dostawcy, zamiast wysyłać je najpierw do własnego magazynu. Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych. Aby pomyślnie wykonać drugie podzadanie „Tworzenie dostaw bezpośrednich z pulpitu”, upewnij się, że towar wybrany w zamówieniu sprzedaży ma zdefiniowanego domyślnego dostawcę na skróconej karcie Zakupu w danych podstawowych zwalnianego produktu.
+W tym artykule opisano sposób tworzenia dostawy bezpośredniej na podstawie zamówienia sprzedaży. Dostawy bezpośredniej można użyć w celu wysłania towarów do odbiorcy bezpośrednio od dostawcy, zamiast wysyłać je najpierw do własnego magazynu. Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych. Aby pomyślnie wykonać drugie podzadanie „Tworzenie dostaw bezpośrednich z pulpitu”, upewnij się, że towar wybrany w zamówieniu sprzedaży ma zdefiniowanego domyślnego dostawcę na skróconej karcie Zakupu w danych podstawowych zwalnianego produktu.
 
 ## <a name="set-an-individual-order-for-direct-delivery"></a>Konfigurowanie jednego zamówienie dla dostawy bezpośredniej
 1. Otwórz **Okienko nawigacji > Moduły > Rozrachunki z odbiorcami > Zamówienia > Wszystkie zamówienia zakupu**.

@@ -1,6 +1,6 @@
 ---
 title: Włączanie modułu Koszt z wyładunkiem dla własnej platformy
-description: W tym temacie opisano, jak włączyć moduł Koszt z wyładunkiem w systemie.
+description: W tym artykule opisano, jak włączyć moduł Koszt z wyładunkiem w systemie.
 author: Weijiesa
 ms.date: 09/24/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-09-24
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 8615774a6018a04169216eb888f0199d5f860113
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 2d8265703b2fc9790932a425c9a8ed9721e313e7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676055"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854334"
 ---
 # <a name="turn-on-the-landed-cost-module-for-your-system"></a>Włączanie modułu Koszt z wyładunkiem dla własnej platformy
 

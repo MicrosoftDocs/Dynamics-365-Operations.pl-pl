@@ -1,6 +1,6 @@
 ---
 title: Przygotowanie firmy w procesie konsolidacji
-description: Podczas konsolidacji transakcje z kilku zestawów kont podmiotów prawnych są gromadzone w jednym zestawie kont podmiotów prawnych. W tym temacie wyjaśniono, jak przygotować firmę do konsolidacji.
+description: Podczas konsolidacji transakcje z kilku zestawów kont podmiotów prawnych są gromadzone w jednym zestawie kont podmiotów prawnych. W tym artykule wyjaśniono, jak przygotować firmę do konsolidacji.
 author: jinniew
 ms.date: 10/30/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 0ef6736046748b92357c41d27eeedfc88c610d33
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 2a3d4645c79ec30df2bbb7a32a82a59fdb7016e5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722046"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894034"
 ---
 # <a name="prepare-a-legal-entity-for-the-consolidation-process"></a>Przygotowanie firmy w procesie konsolidacji
 
 [!include [banner](../includes/banner.md)]
 
-Podczas konsolidacji transakcje z kilku zestawów kont podmiotów prawnych są gromadzone w jednym zestawie kont podmiotów prawnych. W tym temacie wyjaśniono, jak przygotować firmę do konsolidacji.
+Podczas konsolidacji transakcje z kilku zestawów kont podmiotów prawnych są gromadzone w jednym zestawie kont podmiotów prawnych. W tym artykule wyjaśniono, jak przygotować firmę do konsolidacji.
 
 > [!NOTE]
 > Zalecamy użycie narzędzia Management Reporter dla Microsoft Microsoft Dynamics 365 Finance w celu połączenia wyników finansowych wielu firm w skonsolidowanym formacie. Program Management Reporter umożliwia tworzenie skonsolidowanych raportów finansowych dla różnych firm, używanie programu Excel do importowania danych konsolidacji z innych źródeł oraz przetłumaczenie kwot na dowolną liczbę walut raportowania bez konieczności uruchamiania procesu konsolidacji w Dynamics 365 Finance.

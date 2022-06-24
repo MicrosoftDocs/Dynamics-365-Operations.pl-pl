@@ -1,6 +1,6 @@
 ---
 title: Funkcje związane z ułatwianiem dostępu
-description: W tym temacie opisano funkcje przeznaczone do wspomagania użytkowników z różnymi niepełnosprawnościami.
+description: W tym artykule opisano funkcje przeznaczone do wspomagania użytkowników z różnymi niepełnosprawnościami.
 author: TLeforMicrosoft
 ms.date: 12/02/2019
 ms.topic: article
@@ -12,21 +12,21 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 022c51f7050d11caf5ce67c5df8f9f9040a54b98
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: af17b7933aed2a40d81fbc4e7b79e4e716aaf59b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071065"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881059"
 ---
-# <a name="accessibility-features"></a>Funkcje ułatwień dostępu
+# <a name="accessibility-features"></a>Funkcje związane z ułatwianiem dostępu
 
 [!include [banner](../includes/banner.md)]
 
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-W tym temacie opisano funkcje przeznaczone do wspomagania użytkowników z różnymi niepełnosprawnościami w używaniu tej aplikacji. Dostępne są na przykład funkcje przeznaczone dla osób korzystających z technologii wspomagających dla osób z wadami wzroku, takich jak Narrator w systemie Microsoft Windows.
+W tym artykule opisano funkcje przeznaczone do wspomagania użytkowników z różnymi niepełnosprawnościami w używaniu tej aplikacji. Dostępne są na przykład funkcje przeznaczone dla osób korzystających z technologii wspomagających dla osób z wadami wzroku, takich jak Narrator w systemie Microsoft Windows.
 
 ## <a name="windows-narrator-and-keyboard-only-access"></a>Narrator w systemie Windows i dostęp wyłącznie za pomocą klawiatury
 
@@ -49,7 +49,7 @@ Aby uzyskać więcej informacji, zobacz [Nawigacja z wyszukiwaniem](navigation-s
 
 ## <a name="action-search-for-keyboard-only-users-or-for-heads-down-data-entry"></a>Wyszukiwanie akcji dla użytkowników samej klawiatury lub przy wprowadzaniu danych z papierowej dokumentacji znajdującej się na biurku
 
-Z każdej akcji dostępnej na stronie można skorzystać za pomocą klawiatury, poprzez sekwencję tabulacji. Informacje na temat sekwencji tabulacji znajdują się w dalszej części tego tematu. Aby uruchamiać akcje w sposób bardziej bezpośredni, można użyć funkcji wyszukiwania akcji.
+Z każdej akcji dostępnej na stronie można skorzystać za pomocą klawiatury, poprzez sekwencję tabulacji. Informacje na temat sekwencji tabulacji znajdują się w dalszej części tego artykułu. Aby uruchamiać akcje w sposób bardziej bezpośredni, można użyć funkcji wyszukiwania akcji.
 
 ### <a name="example"></a>Przykład
 

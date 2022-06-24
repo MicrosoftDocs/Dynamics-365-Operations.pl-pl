@@ -1,6 +1,6 @@
 ---
 title: Planowanie produkcji
-description: W tym temacie opisano planowanie produkcji i sposób modyfikowania planowanych zleceń produkcyjnych przy użyciu funkcji optymalizacji planowania.
+description: W tym artykule opisano planowanie produkcji i sposób modyfikowania planowanych zleceń produkcyjnych przy użyciu funkcji optymalizacji planowania.
 author: t-benebo
 ms.date: 06/01/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 8f23cb62512dfd718fe199867a4b21aaa0eca3fd
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 151aa3688c570ea6ec282c297ed18288dd886131
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469066"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873790"
 ---
 # <a name="production-planning"></a>Planowanie produkcji
 
@@ -24,11 +24,11 @@ ms.locfileid: "8469066"
 
 Optymalizacja planowania obsługuje kilka scenariuszy produkcji. Podczas migrowania z istniejącego, wbudowanego aparatu planowania głównego należy pamiętać o pewnych zmienionych zachowaniach.
 
-Poniższy film przedstawia krótkie wprowadzenie do niektórych pojęć omówionych w tym temacie: [Dynamics 365 Supply Chain Management: Ulepszenia optymalizacji planowania](https://youtu.be/u1pcmZuZBTw).
+Poniższy film przedstawia krótkie wprowadzenie do niektórych pojęć omówionych w tym artykule: [Dynamics 365 Supply Chain Management: Ulepszenia optymalizacji planowania](https://youtu.be/u1pcmZuZBTw).
 
 ## <a name="turn-on-this-feature-for-your-system"></a>Włączanie funkcji w systemie
 
-Jeśli Twój system nie zawiera jeszcze funkcji opisanych w tym temacie, przejdź do [Zarządzanie funkcjami](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) i włącz funkcję *Planowane zlecenia produkcyjne w celu optymalizacji planowania*.
+Jeśli Twój system nie zawiera jeszcze funkcji opisanych w tym artykule, przejdź do [Zarządzanie funkcjami](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) i włącz funkcję *Planowane zlecenia produkcyjne w celu optymalizacji planowania*.
 
 ## <a name="planned-production-orders"></a>Planowane zlecenia produkcyjne
 
@@ -65,7 +65,7 @@ Aby zmienić informacje dotyczące planowanego zamówienia i zobaczyć wpływ na
 2. Zatwierdzanie planowanego zamówienia.
 3. Uruchamianie planowania głównego.
 
-Po uruchomieniu planowania głównego nie należy używać filtrów, jeśli są uwzględnione planowane zlecenia produkcyjne. Więcej informacji znajduje się w dalszej sekcji [Filtry](#filters) w tym temacie.
+Po uruchomieniu planowania głównego nie należy używać filtrów, jeśli są uwzględnione planowane zlecenia produkcyjne. Więcej informacji znajduje się w dalszej sekcji [Filtry](#filters) w tym artykule.
 
 > [!NOTE]
 > Jeśli data dostawy planowanego zamówienia zostanie zmieniona na datę późniejszą, popyt może zostać ustalony względem nowego zamówienia planowanego. Takie działanie ma miejsce, gdy nowa data dostawy powoduje opóźnienie dla ustaleń popytu, ale zgodnie z ustawieniami czasu realizacji można uniknąć opóźnienia.

@@ -1,6 +1,6 @@
 ---
 title: Parametry modułu Zarządzanie rabatami
-description: W tym temacie opisano stronę Parametry zarządzania rabatami. Ta strona zawiera ustawienia mające wpływ na księgowanie, aktualizacje stanu, sekwencje numerów i inne zachowanie.
+description: W tym artykule opisano stronę Parametry zarządzania rabatami. Ta strona zawiera ustawienia mające wpływ na księgowanie, aktualizacje stanu, sekwencje numerów i inne zachowanie.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8f5c9734b2480329eed246bcbbfe3bd6e9991e0b
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 218c54d97f3ac204e8613f5efdda0cc9d713ee04
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688999"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895533"
 ---
 # <a name="rebate-management-parameters"></a>Parametry modułu Zarządzanie rabatami
 
@@ -45,11 +45,11 @@ W poniższej tabeli opisano pola dostępne na karcie **Zarządzanie rabatami** n
 
 ## <a name="number-sequences-tab"></a>Karta Sekwencje numerów
 
-Karta **Sekwencje numerów** na stronie **Parametry zarządzania rabatami** służy do przypisywania kodów sekwencji numerów do różnych sekwencji numerów, które są używane przez zarządzanie rabatami. W poniższej tabeli opisano cel każdej z tych sekwencji numerów. Aby uzyskać więcej informacji o sekwencjach numerów, zobacz [Przegląd sekwencji numerów](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md) i jego tematy pokrewne.
+Karta **Sekwencje numerów** na stronie **Parametry zarządzania rabatami** służy do przypisywania kodów sekwencji numerów do różnych sekwencji numerów, które są używane przez zarządzanie rabatami. W poniższej tabeli opisano cel każdej z tych sekwencji numerów. Aby uzyskać więcej informacji o sekwencjach numerów, zobacz [Przegląd sekwencji numerów](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md) i jego artykuły pokrewne.
 
-| Odwołanie | opis |
+| Odwołanie | Opis |
 |---|---|
-| Zarządzanie rabatami — umowa | Sekwencja numerów przypisuje unikatową wartość klucza do każdej umowy rabatowej. Ten klucz jest używany podczas tworzenia umów. |
+| Umowa zarządzania rabatami | Sekwencja numerów przypisuje unikatową wartość klucza do każdej umowy rabatowej. Ten klucz jest używany podczas tworzenia umów. |
 | Zarządzanie rabatami — liczba | Sekwencja numerów przypisuje unikatową wartość klucza do każdego rabatu. Klucz ten służy do identyfikacji relacji rabatów. |
 | Numer transakcji rabatu | Sekwencja numerów przypisuje unikatową wartość klucza do każdej transakcji rabatowej. Klucz ten służy do identyfikacji ransakcji rabatów. |
 | Faktura podatkowa | Sekwencja numerów przypisuje unikatową wartość klucza do każdej faktury rabatowej. Ten klucz jest używany podczas automatycznego księgowana arkuszy rabatowych. |

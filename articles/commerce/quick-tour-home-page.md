@@ -1,6 +1,6 @@
 ---
 title: Omówienie strony głównej
-description: Ten temat zawiera omówienie strony głównej w Microsoft Dynamics 365 Commerce.
+description: Ten artykuł zawiera omówienie strony głównej w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 09/15/2020
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4c65d040696a72a42c89934533bad6a69c5923f5
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: ce94dce081957af620e3ab85e466877c0bcc5bd9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984501"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844679"
 ---
 # <a name="home-page-overview"></a>Omówienie strony głównej
 
 [!include [banner](includes/banner.md)]
 
-Ten temat zawiera omówienie strony głównej w Microsoft Dynamics 365 Commerce.
+Ten artykuł zawiera omówienie strony głównej w Microsoft Dynamics 365 Commerce.
 
 Strona główna jest stroną domyślną, na którą trafiają klienci podczas odwiedzania witryny e-Commerce. Zazwyczaj ta strona przedstawia produkty i promocje przy użyciu kombinacji modułów marketingowych. Strona główna powinna być sformatowana z obrazami i tekstem, aby klienci byli wciąż zainteresowani.
 
@@ -33,7 +33,7 @@ Poniższa ilustracja pokazuje przykład strony głównej zbudowanej przy użyciu
 
 ![Przykład strony głównej.](./media/Homepage2.PNG)
 
-U góry strony głównej znajduje się nagłówek pokazujący wszystkie kategorie produktów i inne strony, które sprzedawca chce przejrzeć. Dolna część strony głównej zawiera stopkę zawierającą szybkie łącza do różnych tematów, które mogą być przedmiotem zainteresowania odbiorców.
+U góry strony głównej znajduje się nagłówek pokazujący wszystkie kategorie produktów i inne strony, które sprzedawca chce przejrzeć. Dolna część strony głównej zawiera stopkę zawierającą szybkie łącza do różnych artykułów, które mogą być przedmiotem zainteresowania odbiorców.
 
 Główna sekcja strony głównej umożliwia podświetlanie produktów, kategorii lub promocji przy użyciu różnych modułów Dynamics 365 Commerce:
 
@@ -49,8 +49,8 @@ Główna sekcja strony głównej umożliwia podświetlanie produktów, kategorii
 
     ![Przykłady modułów funkcji.](./media/Feature.PNG)
 
-- **Kafelek** — moduł bloku zawartości układu kafelków służy do prezentowania wielu produktów lub kategorii produktów za pomocą kombinacji obrazów i tekstu w układzie wielokolumnowym. Na ilustracji strony głównej, która pojawiła się wcześniej w tym temacie, jest używany moduł układu z trzema kolumnami produktów **Kupuj kolekcję damską**, **Kupuj kolekcję męską** i **Kupuj dodatki**.
-- **Odtwarzacz wideo** — moduł odtwarzacz wideo może służyć do prezentacji zawartości wideo na stronie głównej. Ilustracja strony głównej, która pojawia się we wcześniejszej części tego tematu, zawiera moduł odtwarzacza wideo.
+- **Kafelek** — moduł bloku zawartości układu kafelków służy do prezentowania wielu produktów lub kategorii produktów za pomocą kombinacji obrazów i tekstu w układzie wielokolumnowym. Na ilustracji strony głównej, która pojawiła się wcześniej w tym artykule, jest używany moduł układu z trzema kolumnami produktów **Kupuj kolekcję damską**, **Kupuj kolekcję męską** i **Kupuj dodatki**.
+- **Odtwarzacz wideo** — moduł odtwarzacz wideo może służyć do prezentacji zawartości wideo na stronie głównej. Ilustracja strony głównej, która pojawia się we wcześniejszej części tego artykułu, zawiera moduł odtwarzacza wideo.
 - **Blok tekstowy** — moduł bloku zawartości sformatowanej może służyć do prezentowania zawartości tekstowej na stronie głównej w układzie jednokolumnowym lub wielokolumnowym.
 - **Rekomendacje dotyczące produktów** — moduły propozycji produktów służą do pokazywania na stronie głównej na listach takich, jak **Nowości**, **Trendy** i **Bestsellery**. Listy te zawierają produkty oparte na trendach zakupów i mogą być algorytmicznie wygenerowane lub ręczne wyselekcjonowane. Pomagają klientom szybko odkryć najlepsze produkty, a następnie kontynuować zakupy.
 

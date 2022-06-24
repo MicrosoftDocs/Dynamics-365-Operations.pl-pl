@@ -1,6 +1,6 @@
 ---
 title: Pobranie nadmiarowe dla zamówień sprzedaży i zamówień przeniesienia
-description: W tym temacie wyjaśniono, jak włączyć pobieranie nadmiarowe dla zamówień sprzedaży i zamówień przeniesienia.
+description: W tym artykule wyjaśniono, jak włączyć pobieranie nadmiarowe dla zamówień sprzedaży i zamówień przeniesienia.
 author: GalynaFedorova
 ms.date: 07/06/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-07-06
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 52a4225efa88a7b9303dd611d5652f59da1612a4
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: b8bbc7d532f910edfb442831d6c906f253dee06c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678416"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897292"
 ---
 # <a name="over-picking-for-sales-orders-and-transfer-orders"></a>Pobranie nadmiarowe dla zamówień sprzedaży i zamówień przeniesienia
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie przedstawiono scenariusz, który pokazuje, jak włączyć pobranie nadmiarowe dla określonego pracownika lub wszystkich pracowników. Proces pobierania nadmiarowe pozwala na kontrolowane nadmiernego pobierania podczas pracy pobrania.
+W tym artykule przedstawiono scenariusz, który pokazuje, jak włączyć pobranie nadmiarowe dla określonego pracownika lub wszystkich pracowników. Proces pobierania nadmiarowe pozwala na kontrolowane nadmiernego pobierania podczas pracy pobrania.
 
 Pobieranie nadmiarowe z magazynu to prosta koncepcja. System umożliwia pracownikom pobranie większej liczby pozycji niż określono dla zamówienia. Jednak nadal uwzględnia on limit dostawy nadmiarowej, który jest ustawiony na poziomie wiersza dla zamówienia przeniesienia lub zamówienia sprzedaży. Jeśli ten limit zostanie przekroczony, aplikacja Warehouse Management powiadamia pracowników, że przekraczają limit dostawy nadmiarowej.
 
@@ -41,11 +41,11 @@ Funkcja pobrania nadmiarowego może pomóc pracownikom zaoszczędzić czas i wys
 > [!IMPORTANT]
 > Funkcja pobrania nadmiarowego dotyczy tylko pobierania i przetwarzania zamówień sprzedaży i zamówień przeniesienia. Uzupełnianie zapasów nie obsługuje pobrania nadmiarowego. Po uruchomieniu pracy uzupełniania zapasów system nie pozwoli użytkownikom na pobranie nadmiarowe.
 
-Scenariusz w tym temacie pokazuje sposób konfigurowania funkcji pobrania nadmiarowego i korzystania z niej.
+Scenariusz w tym artykule pokazuje sposób konfigurowania funkcji pobrania nadmiarowego i korzystania z niej.
 
 ## <a name="scenario-prerequisite-make-demo-data-available"></a>Warunek wstępny scenariusza: udostępnij dane pokazu
 
-Każdy scenariusz w tym temacie zawiera odwołania do wartości i rekordów uwzględnionych w standardowych danych pokazu dostępnych dla rozwiązania Microsoft Dynamics 365 Supply Chain Management. Aby użyć wartości określonych w tym miejscu podczas wykonywania ćwiczeń, upewnij się, że praca odbywa się w środowisku, w którym są zainstalowane dane demonstracyjne, i przed rozpoczęciem ustaw firmę na *USMF*.
+Każdy scenariusz w tym artykule zawiera odwołania do wartości i rekordów uwzględnionych w standardowych danych pokazu dostępnych dla rozwiązania Microsoft Dynamics 365 Supply Chain Management. Aby użyć wartości określonych w tym miejscu podczas wykonywania ćwiczeń, upewnij się, że praca odbywa się w środowisku, w którym są zainstalowane dane demonstracyjne, i przed rozpoczęciem ustaw firmę na *USMF*.
 
 ## <a name="scenario-setup"></a>Ustawienia scenariusza
 

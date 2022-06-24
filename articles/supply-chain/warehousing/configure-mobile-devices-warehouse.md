@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie urządzeń przenośnych do pracy magazynowej
-description: W tym temacie opisano sposób konfigurowania elementów menu, których pracownicy magazynu używają do wykonywania różnych czynności na urządzeniach przenośnych.
+description: W tym artykule opisano sposób konfigurowania elementów menu, których pracownicy magazynu używają do wykonywania różnych czynności na urządzeniach przenośnych.
 author: Mirzaab
 ms.date: 03/23/2020
 ms.topic: article
@@ -15,21 +15,21 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9e0f27839d9e6330cc8a11874a5cb1786daf8dc
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: efbf9072c3bbcb20f38e144f9a15d8178d96d708
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902187"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905581"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurowanie urządzeń przenośnych do pracy magazynowej
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób konfigurowania elementów menu, których pracownicy magazynu używają do wykonywania różnych czynności na urządzeniach przenośnych.
+W tym artykule opisano sposób konfigurowania elementów menu, których pracownicy magazynu używają do wykonywania różnych czynności na urządzeniach przenośnych.
 
 > [!NOTE]
-> Ten temat dotyczy funkcji w module Zarządzanie magazynem. Nie ma zastosowania do funkcji w module Zarządzanie zapasami. Elementy menu, które pojawiają się w menu na urządzeniu przenośnym w magazynie, konfiguruje się na stronie **Elementy menu urządzenia przenośnego**. Ponieważ elementy menu mogą być umieszczane w różnych menu, można łatwo skonfigurować struktury menu, tak aby tylko określone typy pracy były dostępne dla określonych użytkowników. Konfiguracja elementów menu może obejmować następujące funkcje:
+> Ten artykule dotyczy funkcji w module Zarządzanie magazynem. Nie ma zastosowania do funkcji w module Zarządzanie zapasami. Elementy menu, które pojawiają się w menu na urządzeniu przenośnym w magazynie, konfiguruje się na stronie **Elementy menu urządzenia przenośnego**. Ponieważ elementy menu mogą być umieszczane w różnych menu, można łatwo skonfigurować struktury menu, tak aby tylko określone typy pracy były dostępne dla określonych użytkowników. Konfiguracja elementów menu może obejmować następujące funkcje:
 
 - Przetwarzanie informacji lub wykonanie działań, np. drukowanie etykiety, generowanie numerów identyfikacyjnych, rozpoczęcia zlecenia produkcyjnego lub szybkie wyszukiwanie informacje o pozycji w lokalizacjach.
 - Tworzenie pracy, która zostanie wykonana za pomocą innego procesu. Na przykład przyjęcie towaru dla zamówienia zakupu może tworzyć pracę odkładania dla innego pracownika.
@@ -38,7 +38,7 @@ W tym temacie opisano sposób konfigurowania elementów menu, których pracownic
 Aby utworzyć element menu dla działania lub zapytania, należy wybrać w polu **Tryb** wartość **Pośredni**. Zostanie wtedy udostępniona lista opcji **Kod działania**, umożliwiając wybranie typu zapytania lub działania, którego dotyczy element menu. Aby utworzyć element menu do generowania pracy magazynu, należy ustawić w polu **Tryb** wartość **Praca**. Zostanie wyświetlona lista opcji **Proces tworzenia pracy**. Aby utworzyć element menu do przetwarzania istniejącej pracy magazynu, należy ustawić pole **Tryb** na **Praca**, a następnie ustawić opcję **Użyj istniejącej pracy** na **Tak**. 
 
 > [!NOTE]
-> W zależności od trybu wybranego dla elementu menu i jeśli służy on do wykonywania istniejącej pracy, dodatkowe pola są dostępne dla tego elementu menu. Informacje o dodatkowych polach wyboru można znaleźć w sekcji „Dodatkowe opcje elementów menu” w tym temacie.
+> W zależności od trybu wybranego dla elementu menu i jeśli służy on do wykonywania istniejącej pracy, dodatkowe pola są dostępne dla tego elementu menu. Informacje o dodatkowych polach wyboru można znaleźć w sekcji „Dodatkowe opcje elementów menu” w tym artykule.
 
 ## <a name="configure-menu-items-for-activities-and-inquiries"></a>Konfigurowanie elementów menu pod kątem działań i zapytań
 

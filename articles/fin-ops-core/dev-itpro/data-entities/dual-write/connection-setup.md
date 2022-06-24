@@ -1,6 +1,6 @@
 ---
 title: Wskazówki dotyczące konfiguracji podwójnego zapisu
-description: W tym temacie opisano scenariusze obsługiwane w konfiguracji podwójnego zapisu.
+description: W tym artykule opisano scenariusze obsługiwane w konfiguracji podwójnego zapisu.
 author: RamaKrishnamoorthy
 ms.date: 10/12/2020
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 6de449b14bcdd82336e3e255bf62ad069d3daaf5
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: a0d1b4e1f093874a8fd37cf7aadb331cd1e7adc4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061611"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873157"
 ---
 # <a name="guidance-for-dual-write-setup"></a>Wskazówki dotyczące konfiguracji podwójnego zapisu
 
@@ -26,11 +26,11 @@ ms.locfileid: "8061611"
 
 Można skonfigurować połączenie podwójnego zapisywania między środowiskiem Finanse i Działania a środowiskiem Dataverse.
 
-+ **Środowisko Finanse i Działania** stanowi podstawową platformę dla **aplikacji Finanse i Działania** (na przykład Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce oraz Dynamics 365 Human Resources).
++ **Środowisko finansowe i operacyjne** stanowi podstawową platformę dla **aplikacji finansowych i operacyjnych** (na przykład Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce oraz Dynamics 365 Human Resources).
 + **Środowisko Dataverse** stanowi podstawową platformę **aplikacji typu Customer Engagement** (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Column Service, Dynamics 365 Marketing i Dynamics 365 Project Service Automation).
 
 > [!IMPORTANT]
-> Moduł Human Resources w Dynamics 365 Finance obsługuje połączenia dwukrotnego zapisu, ale aplikacja Dynamics 365 Human Resources nie.
+> Moduł Human Resources w aplikacji Dynamics 365 Finance obsługuje połączenia dwukrotnego zapisu, ale aplikacja Dynamics 365 Human Resources nie.
 
 Mechanizm konfiguracji zmienia się w zależności od subskrypcji i środowiska:
 
@@ -78,11 +78,11 @@ Aby zsynchronizować istniejące dane Dataverse z aplikacją Finanse i Działani
 3. [Uruchom](bootstrap-company-data.md) dane Dataverse przy użyciu trzech liter kodu firmy Międzynarodowej Organizacji Normalizacyjnej (ISO).
 4. Uruchom funkcję **synchronizacji początkowej** dla tabel, dla których chcesz synchronizować dane.
 
-Aby uzyskać łącza do przykładowych i alternatywnych rozwiązań, zajrzyj do sekcji [Przykład](#example) w dalszej części tego tematu.
+Aby uzyskać linki do przykładowych i alternatywnych rozwiązań, zajrzyj do sekcji [Przykład](#example) w dalszej części tego artykułu.
 
 ## <a name="a-new-finance-and-operations-app-instance-that-has-data-and-a-new-customer-engagement-app-instance"></a><a id="new-data-new"></a>Nowe wystąpienie aplikacji Finanse i Działania, które ma dane i wystąpienie aplikacji do zakontraktowania odbiorcy
 
-Aby skonfigurować połączenie podwójnego zapisywania między nowym wystąpieniem aplikacji Finanse i Działania z danymi pokazowymi a nowym wystąpieniem aplikacji do zakontraktowania odbiorcy, należy wykonać kroki w [nowym wystąpieniu aplikacji Finanse i Działania oraz w sekcji wystąpienia aplikacji do zakontraktowania odbiorcy](#new-new), która znajduje się we wcześniejszej części tego tematu. Po zakończeniu konfigurowania połączenia, jeśli chcesz synchronizować dane z aplikacją do zakontraktowania odbiorcy, wykonaj następujące kroki.
+Aby skonfigurować połączenie podwójnego zapisu między nowym wystąpieniem aplikacji finansowych i operacyjnych z danymi pokazowymi a nowym wystąpieniem aplikacji Customer Engagement, należy wykonać kroki w sekcji [Nowe wystąpienie aplikacji finansowej i operacyjnej i nowe wystąpienie aplikacji Customer Engagement](#new-new), która znajduje się we wcześniejszej części tego artykułu. Po zakończeniu konfigurowania połączenia, jeśli chcesz synchronizować dane z aplikacją do zakontraktowania odbiorcy, wykonaj następujące kroki.
 
 1. Otwórz aplikację Finanse i Działania ze strony usługi LCS, zaloguj się, a następnie przejdź do **Zarządzanie danymi \> Podwójny zapis**.
 2. Uruchom funkcję **synchronizacji początkowej** dla tabel, dla których chcesz synchronizować dane.
@@ -91,7 +91,7 @@ Aby uzyskać łącza do przykładowych i alternatywnych rozwiązań, zajrzyj do 
 
 ## <a name="a-new-finance-and-operations-app-instance-that-has-data-and-an-existing-customer-engagement-app-instance"></a><a id="new-data-existing"></a>Nowe wystąpienie aplikacji Finanse i Działania, które ma dane i obecne wystąpienie aplikacji do zakontraktowania odbiorcy
 
-Aby skonfigurować połączenie podwójnego zapisywania między nowym wystąpieniem aplikacji Finanse i Działania z danymi pokazowymi a obecnym wystąpieniem aplikacji do zakontraktowania odbiorcy, należy wykonać kroki w [nowym wystąpieniu aplikacji Finanse i Działania oraz w sekcji wystąpienia obecnej aplikacji do zakontraktowania odbiorcy](#new-existing), która znajduje się we wcześniejszej części tego tematu. Po zakończeniu konfigurowania połączenia, jeśli chcesz synchronizować dane z aplikacją do zakontraktowania odbiorcy, wykonaj następujące kroki.
+Aby skonfigurować połączenie podwójnego zapisywania między nowym wystąpieniem aplikacji finansowej i operacyjnej z danymi pokazowymi a obecnym wystąpieniem aplikacji Customer Engagement, należy wykonać kroki w sekcji [Nowe wystąpienie aplikacji finansowej i operacyjnej i nowe wystąpienie aplikacji Customer Engagement](#new-existing), która znajduje się we wcześniejszej części tego artykułu. Po zakończeniu konfigurowania połączenia, jeśli chcesz synchronizować dane z aplikacją do zakontraktowania odbiorcy, wykonaj następujące kroki.
 
 1. Otwórz aplikację Finanse i Działania ze strony usługi LCS, zaloguj się, a następnie przejdź do **Zarządzanie danymi \> Podwójny zapis**.
 2. Uruchom funkcję **synchronizacji początkowej** dla tabel, dla których chcesz synchronizować dane.

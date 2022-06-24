@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie elementu menu urządzenia przenośnego do wykonania pracy typu Zamówienie zakupu
-description: W tym temacie pokazano sposób konfigurowania elementu menu urządzenia przenośnego.
+description: W tym artykule pokazano sposób konfigurowania elementu menu urządzenia przenośnego.
 author: Mirzaab
 ms.date: 08/02/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d18b0ab1057dbccdd45a52a58f80ef9346e4459f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 09286e8e482780523b61006081205868be487755
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565184"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882294"
 ---
 # <a name="set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order"></a>Konfigurowanie elementu menu urządzenia przenośnego do wykonania pracy typu Zamówienie zakupu
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie pokazano sposób konfigurowania elementu menu urządzenia przenośnego. W tym przykładzie element menu służy do wykonywania pracy typu Zamówienie zakupu. Klasa pracy powiązana z elementem menu decyduje o tym, która praca jest prawidłowa. Zadania z przewodnika można wykonać przy użyciu danych firmy demonstracyjnej USMF. Ta procedura jest zwykle wykonywana przez kierownika magazynu.
+W tym artykule pokazano sposób konfigurowania elementu menu urządzenia przenośnego. W tym przykładzie element menu służy do wykonywania pracy typu Zamówienie zakupu. Klasa pracy powiązana z elementem menu decyduje o tym, która praca jest prawidłowa. Zadania z przewodnika można wykonać przy użyciu danych firmy demonstracyjnej USMF. Ta procedura jest zwykle wykonywana przez kierownika magazynu.
 
 
 ## <a name="create-a-mobile-device-menu-item"></a>Tworzenie elementu menu urządzenia przenośnego

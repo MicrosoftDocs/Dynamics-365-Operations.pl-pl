@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f3381c752e4f1f723162ad314c29ab477caf635a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 6934c1147de79c24eb66127d2e08ae8b627bc744
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675943"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849366"
 ---
 # <a name="purchase-requisition-workflow"></a>przepływ pracy zapotrzebowań zakupu
 
@@ -89,7 +89,7 @@ W tym przykładzie proces przepływu pracy dla wierszy zamówienia na zakup obej
 ## <a name="configuring-a-workflow-for-purchase-requisitions"></a>Konfigurowanie przepływu pracy dla zapotrzebowań na zakup
 Aby skierować zapotrzebowanie na zakup do przeglądu, należy skonfigurować procesy przepływu pracy zapotrzebowania na zakup. Definiowany proces przepływu pracy kontroluje interakcje między użytkownikiem, który zgłosił zapotrzebowanie na pozycje (zleceniodawca), a osobami sprawdzającą i zatwierdzającą w przepływie pracy. Kierowanie zapotrzebowania na zakup zależy od warunków, które są określone w konfiguracji przepływu pracy. Na przykład warunki te mogą określać, kiedy zapotrzebowanie na zakup ma być kierowane, użytkownika lub rolę, do której zapotrzebowanie na zakup ma być kierowane oraz działania, które użytkownik może podjąć.  
 
-W przykładach zawartych w tym temacie opisano możliwy sposób kierowania zamówienia na zakup w przepływie pracy jako pojedynczego dokumentu lub jako osobnych wierszy zapotrzebowania na zakup. Można także skonfigurować przepływ pracy dla zapotrzebowań na zakup w celu odzwierciedlenia przeglądu kontroli wewnętrznej zapotrzebowań na zakup zdefiniowanego dla danej organizacji.  
+W przykładach zawartych w tym artykule opisano możliwy sposób kierowania zamówienia na zakup w przepływie pracy jako pojedynczego dokumentu lub jako osobnych wierszy zapotrzebowania na zakup. Można także skonfigurować przepływ pracy dla zapotrzebowań na zakup w celu odzwierciedlenia przeglądu kontroli wewnętrznej zapotrzebowań na zakup zdefiniowanego dla danej organizacji.  
 
 Uczestnicy lub osoby sprawdzające, do których jest przypisane zadanie w przepływie pracy, mogą być członkami określonej grupy użytkowników, użytkownikami mającymi określone role zabezpieczeń, użytkownikami skojarzonymi z przesyłającym ofertę w hierarchii menedżerskiej, lub nazwanymi użytkownikami o określonych obowiązkach związanych z wydatkami.
 

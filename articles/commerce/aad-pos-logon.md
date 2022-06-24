@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie uwierzytelniania Azure Active Directory w celu logowania w punkcie sprzedaży
-description: W tym temacie opisano sposób konfigurowania Azure Active Directory jako metody uwierzytelniania w punkcie sprzedaży Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano sposób konfigurowania Azure Active Directory jako metody uwierzytelniania w punkcie sprzedaży Microsoft Dynamics 365 Commerce.
 author: boycezhu
 ms.date: 04/23/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 9dfb0389b0ca4b2cf75ccc70f35824674e618055
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.openlocfilehash: 47da2c78cef2bbee324fbc2202898fbabd927c4d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402158"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853935"
 ---
 # <a name="configure-azure-active-directory-authentication-for-pos-sign-in"></a>Konfigurowanie uwierzytelniania Azure Active Directory w celu logowania w punkcie sprzedaży
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano sposób konfigurowania Azure Active Directory (Azure AD) jako metody uwierzytelniania w punkcie sprzedaży Microsoft Dynamics 365 Commerce.
+W tym artykule opisano sposób konfigurowania Azure Active Directory (Azure AD) jako metody uwierzytelniania w punkcie sprzedaży Microsoft Dynamics 365 Commerce.
 
 Sprzedawcy detaliczni, którzy korzystają z rozwiązania Dynamics 365 Commerce oraz innych usług w chmurze firmy Microsoft, jak Microsoft Azure, Microsoft 365 i Microsoft Teams, na ogół chcą korzystać z Azure AD w celu centralizacji zarządzania poświadczeniami użytkowników w celu bezpiecznego i bezproblemowego logowania się między aplikacjami. Aby można było korzystać z uwierzytelniania Azure AD w punkcie sprzedaży Commerce, należy najpierw skonfigurować Azure AD jako metodę uwierzytelniania w centrali Commerce.
 

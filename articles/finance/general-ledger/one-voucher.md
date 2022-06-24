@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 9a0a9a3f23a3aec0077fd1a64c55fea567b72800
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: fa7a519b87bd5933b8b672f9f9b3e230fd7f2eb4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722500"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896413"
 ---
 # <a name="one-voucher"></a>Pojedynczy załącznik
 
@@ -37,7 +37,7 @@ Istniejąca funkcjonalność arkuszy finansowych (arkusza finansowego, arkusza �
     [![Jeden wiersz.](./media/same-line.png)](./media/same-line.png)
 
     > [!IMPORTANT]
-    > Definicja pojęcia „pojedynczy załącznik” **nie** obejmuje przypadków, gdy nazwy arkuszy skonfigurowano jako **Tylko jeden numer załącznika**, po czym użytkownik wprowadza załącznik zawierający tylko typy kont księgowych. W tym temacie określenie „pojedynczy załącznik” oznacza, że istnieje jeden załącznika zawierający więcej niż jednego dostawcę, odbiorcę, bank, środek trwały lub projekt.
+    > Definicja pojęcia „pojedynczy załącznik” **nie** obejmuje przypadków, gdy nazwy arkuszy skonfigurowano jako **Tylko jeden numer załącznika**, po czym użytkownik wprowadza załącznik zawierający tylko typy kont księgowych. W tym artykule określenie „pojedynczy załącznik” oznacza, że istnieje jeden załącznika zawierający więcej niż jednego dostawcę, odbiorcę, bank, środek trwały lub projekt.
 
 - Umożliwia wprowadzenie załącznika wielowierszowego, gdy nie istnieje żadne konto przeciwstawne.
 
@@ -63,16 +63,16 @@ Następnie generujesz raport **Wydatki według dostawców** w obszarze roboczym 
 
 Ta funkcja jest ostatecznie przestarzała z powodu problemów, które mogą wystąpić podczas korzystania z Pojedynczego załącznika. Jednak ponieważ istnieją luki funkcjonalne, które zależą od tej funkcji, wycofanie nie nastąpi od razu. Wycofanie odbędzie się według następującego harmonogramu:
 
-- **Wydanie z wiosny 2018 r.** — Ta funkcjonalność jest wyłączona za pomocą parametru **Zezwalaj na wiele transakcji w jednym załączniku** na karcie **Ogólne** na stronie **Parametry księgi głównej**. Można ją jednak ponownie włączyć, jeśli w organizacji występuje scenariusz, który należy do jednej z luk funkcjonalnych wymienionych w dalszej części tego tematu.
+- **Wydanie z wiosny 2018 r.** — Ta funkcjonalność jest wyłączona za pomocą parametru **Zezwalaj na wiele transakcji w jednym załączniku** na karcie **Ogólne** na stronie **Parametry księgi głównej**. Można ją jednak ponownie włączyć, jeśli w organizacji występuje scenariusz, który należy do jednej z luk funkcjonalnych wymienionych w dalszej części tego artykułu.
 
-    - Jeśli scenariusz biznesowy nie wymaga Pojedynczego załącznika, zaleca się wyłączenie tej funkcji. Jeśli użyjesz go, mimo że istnieje inne rozwiązanie, firma Microsoft nie usunie „błędów” w obszarach zidentyfikowanych w dalszej części tego tematu.
+    - Jeśli scenariusz biznesowy nie wymaga Pojedynczego załącznika, zaleca się wyłączenie tej funkcji. Jeśli użyjesz go, mimo że istnieje inne rozwiązanie, firma Microsoft nie usunie „błędów” w obszarach zidentyfikowanych w dalszej części tego artykułu.
     - Zalecamy zaprzestanie korzystania z Pojedynczego załącznika na integracje, chyba że potrzebujesz funkcjonalności dla jednej z udokumentowanych luk funkcjonalnych.
 
 - **Późniejsze wydania** – Niektóre z podanych wymagań biznesowych można zaspokoić tylko za pomocą funkcjonalności pojedynczego załącznika. Firma Microsoft musi zagwarantować, że po wycofaniu funkcjonalności wszystkie określone wymagania biznesowe będą spełniane w systemie. Dlatego nowe funkcje będą prawdopodobnie dodawane, aby wypełnić luki funkcjonalne. Firma Microsoft nie może zapewnić konkretnego rozwiązania, ponieważ każda luka w funkcjach jest inna i musi być oceniana na podstawie wymagań biznesowych. Niektóre luki funkcjonalne zostaną prawdopodobnie zastąpione funkcjami, które pomogą spełnić określone wymagania biznesowe. Jednak inne luki można wypełnić, kontynuując zezwalanie na zapis w dzienniku, tak jak w przypadku użycia Pojedynczego załącznika, ale ulepszając system, aby śledził więcej szczegółów w razie potrzeby.
 
 Po wypełnieniu wszystkich luk funkcjonalnych firma Microsoft komunikuje się z firmą, że ta funkcja będzie przestarzała. Jednak deprecja będzie obowiązywać przez przynajmniej rok po tym komunikacie. Firma Microsoft nie może podać oszacowania, kiedy funkcja Jednego załącznika będzie przestarzała, ale prawdopodobnie upłyną co najmniej dwa lata, zanim nastąpi wycofanie. Zasadą firmy Microsoft jest pozostawienie co najmniej 12 miesięcy między ogłoszeniem wycofanej funkcjonalności a faktycznym wycofaniem, tak aby klienci i niezależni dostawcy oprogramowania (ISV) mieli czas na reakcję na zmianę. Na przykład organizacja może być zmuszona do zaktualizowania swoich procesów biznesowych, jednostek i integracji.
 
-Wycofanie Pojedynczego załącznika to znacząca zmiana, o której będziemy szeroko informować. W ramach tej komunikacji firma Microsoft zaktualizuje ten temat, opublikuje wpis na blogu Microsoft Dynamics 365 Finance, zaktualizuje temat „Usunięte lub przestarzałe funkcje”, poinformuje o zmianie na odpowiednich konferencjach firmy Microsoft i tak dalej.
+Wycofanie Pojedynczego załącznika to znacząca zmiana, o której będziemy szeroko informować. W ramach tej komunikacji Microsoft zaktualizuje ten artykuł, opublikuje wpis na blogu Microsoft Dynamics 365 Finance, zaktualizuje artykuł „Usunięte lub przestarzałe funkcje”, poinformuje o zmianie na odpowiednich konferencjach Microsoft i tak dalej.
 
 ## <a name="why-use-one-voucher"></a>Dlaczego watro używać funkcjonalności pojedynczego załącznika?
 

@@ -1,6 +1,6 @@
 ---
-title: Deklaracja VAT dla Egiptu
-description: W tym temacie opisano sposób konfigurowania i generowania formularza zwrotu podatku VAT dla Egiptu.
+title: Deklaracja podatku VAT dla Egiptu
+description: W tym artykule opisano sposób konfigurowania i generowania formularza zwrotu podatku VAT dla Egiptu.
 author: sndray
 ms.date: 06/03/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sndray
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a67c6e00b94d49b3eb279416407f603923e53b2e
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: 1d5788b2328a49f4725a6c689e29a7e784032fae
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7403955"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870043"
 ---
 #  <a name="vat-declaration-for-egypt-eg-00002"></a>Deklaracja VAT dla Egiptu (EG-00002)
 
@@ -26,11 +26,11 @@ ms.locfileid: "7403955"
 
 [!include[banner](../includes/banner.md)]
 
-W tym temacie opisano sposób skonfigurowania i wygenerowania formularza zwrotu podatku VAT oraz ksiąg sprzedaży i zakupów dla firm w Egipcie.
+W tym artykule opisano sposób skonfigurowania i wygenerowania formularza zwrotu podatku VAT oraz ksiąg sprzedaży i zakupów dla firm w Egipcie.
 
 Formularz deklaracji VAT dla Egiptu jest oficjalnym dokumentem, który podsumowuje całkowitą należną kwotę podatku VAT, łączną kwotę podatku naliczonego VAT do odzyskania i związaną z tym kwotę podatku VAT. Ten formularz jest używany dla wszystkich typów podatników i należy go wypełnić ręcznie za pośrednictwem portalu urzędu skarbowego. Formularz zwrotu podatku VAT jest zazwyczaj nazywany składaniem deklaracji zwrotu podatku VAT.
 
-Formularz zwrotu podatku VAT w Dynamics 365 Finance zawiera następujące raporty:
+Formularz zwrotu podatku VAT w aplikacji Dynamics 365 Finance zawiera następujące raporty:
 
 - Formularz deklaracji VAT nr 10, który zawiera zestawienie kwot, korekt i kwoty VAT według pozycji w formularzu deklaracji VAT, zgodnie z opisem w przepisach.
 - Księga transakcji sprzedaży

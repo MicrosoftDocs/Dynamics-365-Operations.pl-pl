@@ -1,6 +1,6 @@
 ---
-title: Konfigurowanie miejsc docelowych ER zarządzania drukowaniem zależnych od rekordu
-description: W tym temacie wyjaśniono sposób konfigurowanie miejsc docelowych zarządzania drukowaniem zależnych od rekordu dla formatu raportowania elektronicznego (ER) skonfigurowanych do generowania dokumentów wychodzących.
+title: Konfigurowanie zależnych od rekordu miejsc docelowych raportowania elektronicznego zarządzania drukowaniem
+description: W tym artykule wyjaśniono sposób konfigurowania miejsc docelowych zarządzania drukowaniem zależnych od rekordu dla formatu raportowania elektronicznego (ER) skonfigurowanych do generowania dokumentów wychodzących.
 author: NickSelin
 ms.date: 08/03/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-08-01
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 4cd99b1d2c0dbbf48e7eee7e1233e3b078d14ba3
-ms.sourcegitcommit: 6109fc2fe5f407363bb6f240d64b7214657f5914
+ms.openlocfilehash: 2972dc6a0b373cbc63b811c01ef7a5538810edbb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "8603062"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872721"
 ---
-# <a name="configure-print-management-record-specific-er-destinations"></a>Konfigurowanie miejsc docelowych ER zarządzania drukowaniem zależnych od rekordu
+# <a name="configure-print-management-record-specific-er-destinations"></a>Konfigurowanie zależnych od rekordu miejsc docelowych raportowania elektronicznego zarządzania drukowaniem
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, w jaki sposób użytkownik występujący w roli Administrator systemu lub Pracownik ds. płatności rozrachunków z odbiorcami może wykonywać następujące zadania:
+W tym artykule wyjaśniono, w jaki sposób użytkownik występujący w roli Administrator systemu lub Pracownik ds. płatności rozrachunków z odbiorcami może wykonywać następujące zadania:
 
 - Konfigurowanie nazwanych miejsc docelowych [raportowania elektronicznego (ER)](general-electronic-reporting.md) rozwiązania ER, które generuje faktury niezależne.
 - Przypisywanie miejsca docelowego ER do jednego rekordu [zarządzania drukowaniem](document-reporting-services.md).

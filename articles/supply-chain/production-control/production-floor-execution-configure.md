@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie interfejsu wykonania hal produkcyjnych
-description: W tym temacie opisano sposób tworzenia jednej lub większej liczby konfiguracji dla interfejsu wykonywania pomieszczenia produkcyjnego. Po otwarciu interfejsu wykonania produkcji system automatycznie ładuje wybraną konfigurację i filtr zadania, które są właściwe dla przeglądarki i urządzenia. W konfiguracji ustawiane są zasady, które muszą być dostępne dla określonego użycia.
+description: W tym artykule opisano sposób tworzenia jednej lub większej liczby konfiguracji dla interfejsu wykonywania pomieszczenia produkcyjnego. Po otwarciu interfejsu wykonania produkcji system automatycznie ładuje wybraną konfigurację i filtr zadania, które są właściwe dla przeglądarki i urządzenia. W konfiguracji ustawiane są zasady, które muszą być dostępne dla określonego użycia.
 author: johanhoffmann
 ms.date: 10/05/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 083f5a30323cdc813116af7462563c3b8dd5e4f5
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 9eefde163473e11b01bfa0adf9b3694c830f1488
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644405"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899419"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurowanie interfejsu wykonania hal produkcyjnych
 
@@ -31,15 +31,15 @@ Po otwarciu interfejsu wykonania produkcji system automatycznie ładuje wybraną
 - W przypadku urządzenia w korytarzu w firmie pracownicy zarejestrują się w momencie wejścia do biura i logują się przed wyjściem z pracy.
 - Na urządzeniu w hali operatorzy maszyn rejestrują, kiedy rozpoczynają i kończą pracę. Rejestrują również przerwy i czynności pośrednie.
 
-W tym temacie opisano różne opcje konfigurowania interfejsu wykonywania produkcji dla każdego urządzenia, które jest w użyciu w witrynie.
+W tym artykule opisano różne opcje konfigurowania interfejsu wykonywania produkcji dla każdego urządzenia, które jest w użyciu w witrynie.
 
 ## <a name="turn-on-the-production-floor-execution-interface-and-its-related-optional-features"></a>Włączanie interfejsu wykonywania hal produkcyjnych i powiązanych opcjonalnych funkcji
 
-Sam interfejs wykonywania hal produkcyjnych, a kilka opcjonalnych ustawień opisanych w tym temacie, musi być włączony w systemie, aby można było z nich skorzystać. Strona [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) umożliwia włączenie dowolnej funkcji lub wszystkich funkcji opisanych w poniższych podsekcjach, zgodnie z wymaganiami.
+Sam interfejs wykonywania hal produkcyjnych, a kilka opcjonalnych ustawień opisanych w tym artykule, musi być włączony w systemie, aby można było z nich skorzystać. Strona [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) umożliwia włączenie dowolnej funkcji lub wszystkich funkcji opisanych w poniższych podsekcjach, zgodnie z wymaganiami.
 
 ### <a name="the-production-floor-execution-interface"></a>Interfejs wykonania hal produkcyjnych
 
-Jest to podstawowa funkcja opisana w tym temacie i jest niezbędna dla wszystkich innych funkcji wymienionych w tej sekcji. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.25, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Wykonanie hali produkcyjnej* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Jest to podstawowa funkcja opisana w tym artykule i jest niezbędna dla wszystkich innych funkcji wymienionych w tej sekcji. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.25, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Wykonanie hali produkcyjnej* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="generate-license-plates"></a>Generuj numery identyfikacyjne
 
@@ -146,7 +146,7 @@ Ta funkcja dodaje do strony **Konfiguracja wykonania hali produkcyjnej** ustawie
 - Włącz korekty zużycia materiałów w oknie dialogowym **Raport o postępie**. (Ta funkcjonalność wymaga również funkcji *Rejestruj zużycie materiału na interfejsie wykonawczym hali produkcyjnej (nie-WMS)*).
 - Włącz wyszukiwanie według ID projektu.
 
-Informacje o tym, jak korzystać z tych ustawień, znajdują się w dalszej części tego tematu.
+Informacje o tym, jak korzystać z tych ustawień, znajdują się w dalszej części tego artykułu.
 
 Aby używać tej funkcji, włącz następujące funkcje w module [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 

@@ -1,6 +1,6 @@
 ---
 title: Rejestrowanie wynajmów w walutach obcych
-description: W tym temacie wyjaśniono, jak rejestrować umowy wynajmu w walutach innych niż waluta rozliczeniowa lub waluta raportowania.
+description: W tym artykule wyjaśniono, jak rejestrować umowy wynajmu w walutach innych niż waluta rozliczeniowa lub waluta raportowania.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7da4ddb5939d4f950eb7f8c39a9c56edb2ec4db9
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 56c15e648d6aa515192a6f41ba06df6405ca79f2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727518"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878110"
 ---
 # <a name="record-leases-in-foreign-currencies"></a>Rejestrowanie wynajmów w walutach obcych
 
 [!include [banner](../includes/banner.md)]
 
-Moduł Wynajem składnika majątku uwzględnia umowy wynajmu będące w walutach innych niż rozliczeniowa lub waluta raportowania skonfigurowane na stronie **Ustawienia księgi**. Wszystkie umowy wynajmu powinny być wprowadzane w ich walutach transakcji. Innymi słowy należy je wprowadzić w walucie określonej w umowie wynajmu. W tym temacie wyjaśniono, jak rejestrować umowy wynajmu w walutach innych niż waluta rozliczeniowa lub waluta raportowania.
+Moduł Wynajem składnika majątku uwzględnia umowy wynajmu będące w walutach innych niż rozliczeniowa lub waluta raportowania skonfigurowane na stronie **Ustawienia księgi**. Wszystkie umowy wynajmu powinny być wprowadzane w ich walutach transakcji. Innymi słowy należy je wprowadzić w walucie określonej w umowie wynajmu. W tym artykule wyjaśniono, jak rejestrować umowy wynajmu w walutach innych niż waluta rozliczeniowa lub waluta raportowania.
 
 W przypadku wprowadzenia umowy wynajmu w walucie obcej składnik majątku z prawem do użytkowania (PDU) jest amortyzowany zarówno w walucie rozliczeniowej, jak i w walucie raportowania. Waluty te są konfigurowane na stronie **Ustawienia księgi**. To zachowanie jest również używane do środków trwałych. Podczas tworzenia wpisu wynajmu w walucie obcej należy wybrać walutę transakcji w polu **Waluta**.
 

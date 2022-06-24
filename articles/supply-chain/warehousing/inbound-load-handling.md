@@ -1,6 +1,6 @@
 ---
 title: Obsługa magazynów dla ładunków przychodzących dla zamówień zakupu
-description: W tym temacie opisano proces obsługi magazynu dla ładunków przychodzących zamówień zakupu.
+description: W tym artykule opisano proces obsługi magazynu dla ładunków przychodzących zamówień zakupu.
 author: Mirzaab
 ms.date: 03/21/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 464d49f4e096fdd4fe47f73efc253c97200f4de3
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 100b1972801f117560a5caf338a1ac640737ccdf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778066"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855940"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Obsługa magazynów dla ładunków przychodzących dla zamówień zakupu
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano proces obsługi magazynu dla ładunków przychodzących zamówień zakupu.
+W tym artykule opisano proces obsługi magazynu dla ładunków przychodzących zamówień zakupu.
 
 Dla każdego ładunku przychodzącego system powinien już zawierać powiązane zamówienie sprzedaży i może również zawierać powiązaną specyfikację ładunku i/lub plan transportu. Aby uzyskać więcej informacji na temat tworzenia ładunków przychodzących i zarządzania nimi, odwiedź temat [Proces biznesowy: planowanie transportu dla ładunków przychodzących](/dynamicsax-2012/appuser-itpro/business-process-planning-transportation-for-inbound-loads).
 
@@ -209,7 +209,7 @@ W poniższej tabeli zestawiono wyniki dla ustawienia **Zezwalaj na wiele odbior�
 | Tak | Bez aktualizacji | _Odebrano_, jeśli całkowita zarejestrowana ilość ładunku jest równa lub większa od ilości ładunku | |
 | Tak | Bez aktualizacji | _Wysłano_ lub _W toku_, jeśli całkowita zarejestrowana ilość ładunku jest mniejsza od ilości ładunku | |
 
-Po ustawieniu pola **Stan ładunku** na wartość _Odebrano_ nie można już księgować dokumentów przyjęcia produktów dla tego ładunku. Pracownik może jednak zarejestrować pozostałą ilość zamówienia w odniesieniu do przyjętego ładunku w następujących warunkach: (Aby uzyskać więcej informacji, zobacz sekcję [Przekroczenia odbioru ładunku](#load-over-receiving) we wcześniejszej części tego tematu.)
+Po ustawieniu pola **Stan ładunku** na wartość _Odebrano_ nie można już księgować dokumentów przyjęcia produktów dla tego ładunku. Pracownik może jednak zarejestrować pozostałą ilość zamówienia w odniesieniu do przyjętego ładunku w następujących warunkach: (Aby uzyskać więcej informacji, zobacz sekcję [Przekroczenia odbioru ładunku](#load-over-receiving) we wcześniejszej części tego artykułu.)
 
 - Wersja Supply Chain Management jest starsza niż wersja 10.0.11.
 - Funkcja _Przyjęcie nadwyżki ilości ładunku_ jest włączona, a pole **Odbiór ilości nadwyżki wiersza ładunku** w elemencie menu urządzenia przenośnego dla akcji odbiór towaru ładunku jest ustawiona na wartość _Zezwalaj_.

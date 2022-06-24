@@ -1,6 +1,6 @@
 ---
 title: Kwota zaokrąglenia do obliczenia amortyzacji
-description: W tym temacie omówiono pole Zaokrąglenie amortyzacji, które znajduje się na stronach konfiguracji ksiąg.
+description: W tym artykule omówiono pole Zaokrąglenie amortyzacji, które znajduje się na stronach konfiguracji ksiąg.
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 98d6a21bea4688d6f258a98eab174485ceee2cfc
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: a93842f7cca483df89188695c945edf77e118cef
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726733"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870112"
 ---
 # <a name="round-off-amount-for-depreciation-calculations"></a>Kwota zaokrąglenia do obliczenia amortyzacji
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie omówiono pole **Zaokrąglenie amortyzacji**, które znajduje się na stronach **konfiguracji ksiąg**.
+W tym artykule omówiono pole **Zaokrąglenie amortyzacji**, które znajduje się na stronach **konfiguracji ksiąg**.
 
 Kwoty zaokrąglenia amortyzacji są ustawiane dla każdej księgi. Kwoty zaokrąglenia amortyzacji są używane w profilu amortyzacji środka trwałego, który pokazuje przyszłą amortyzację i wartość środka trwałego, a także w propozycjach amortyzacji. Wprowadź najniższą kwotę amortyzacji dozwoloną dla danej księgi. 
 

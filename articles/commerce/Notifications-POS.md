@@ -1,6 +1,6 @@
 ---
 title: Pokazywanie powiadomień o zamówieniach w aplikacji POS
-description: W tym temacie opisano, w jaki sposób włączyć powiadomienia o zamówieniach w aplikacji POS i strukturze powiadomień.
+description: W tym artykule opisano, w jaki sposób włączyć powiadomienia o zamówieniach w aplikacji POS i strukturze powiadomień.
 author: ShalabhjainMSFT
 ms.date: 03/12/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7166afdb43c7e835170c5768a0767f2943222b19c00c7d0aaf067263845651f8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a9e646d6bf48461e78dc75c8a154f2fbf1443393
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714145"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853987"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Pokazywanie powiadomień o zamówieniach w aplikacji POS
 
@@ -65,10 +65,10 @@ Zarówno w przypadku powiadomień o realizacji zamówienia, jak i powiadomieniac
 
 ## <a name="enable-live-content-on-pos-buttons"></a>Włączanie przekazywania zawartości na żywo na przyciskach aplikacji POS
 
-Przyciski aplikacji POS mogą teraz pokazywać liczbę, aby ułatwić pracownikom identyfikowanie, które zadania wymagają ich natychmiastowej uwagi. Aby ta liczba była wyświetlana na przycisku aplikacji POS, należy dokonać konfiguracji powiadomień opisanej we wcześniejszej części tego tematu (tzn. trzeba włączyć powiadomienia dla operacji, ustawić interwał powiadamiania oraz zaktualizować grupę uprawnień pracownika wobec aplikacji POS). Ponadto należy otworzyć projektanta siatki przycisków, wyświetlić właściwości przycisku i zaznaczyć pole wyboru **Włącz zawartości na żywo**. W polu **Wyrównanie zawartości** można określić, gdzie liczba ma być wyświetlana: w prawym górnym rogu (**Do góry, do prawej**) czy na środku (**Środek**) przycisku.
+Przyciski aplikacji POS mogą teraz pokazywać liczbę, aby ułatwić pracownikom identyfikowanie, które zadania wymagają ich natychmiastowej uwagi. Aby ta liczba była wyświetlana na przycisku aplikacji POS, należy dokonać konfiguracji powiadomień opisanej we wcześniejszej części tego artykułu (tzn. trzeba włączyć powiadomienia dla operacji, ustawić interwał powiadamiania oraz zaktualizować grupę uprawnień pracownika wobec aplikacji POS). Ponadto należy otworzyć projektanta siatki przycisków, wyświetlić właściwości przycisku i zaznaczyć pole wyboru **Włącz zawartości na żywo**. W polu **Wyrównanie zawartości** można określić, gdzie liczba ma być wyświetlana: w prawym górnym rogu (**Do góry, do prawej**) czy na środku (**Środek**) przycisku.
 
 > [!NOTE]
-> Zawartości na żywo można włączyć dla operacji tylko wtedy, gdy na stronie **Operacje aplikacji POS** zaznaczono dla nich pole wyboru **Włącz powiadomienia**, jak opisano we wcześniejszej części tego tematu.
+> Zawartości na żywo można włączyć dla operacji tylko wtedy, gdy na stronie **Operacje aplikacji POS** zaznaczono dla nich pole wyboru **Włącz powiadomienia**, jak opisano we wcześniejszej części tego artykułu.
 
 Poniższa ilustracja przedstawia ustawienia przekazywania zawartości na żywo w konstruktorze siatki przycisków.
 

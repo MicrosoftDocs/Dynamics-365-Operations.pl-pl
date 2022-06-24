@@ -1,6 +1,6 @@
 ---
 title: Wielokanałowe zaawansowane opłaty automatyczne
-description: W tym temacie opisano możliwości zarządzania innymi opłatami za zamówienia dla zamówień w kanale Commerce przy użyciu zaawansowanych funkcji opłat automatycznych.
+description: W tym artykule opisano możliwości zarządzania innymi opłatami za zamówienia dla zamówień w kanale Commerce przy użyciu zaawansowanych funkcji opłat automatycznych.
 author: hhaines
 ms.date: 03/24/2022
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 69432e13424b08b75e8ce7c88eaf6be66db59e65
-ms.sourcegitcommit: 94ebdaae6dc996b205ac78ed546e38f91f4f46ed
+ms.openlocfilehash: 412f5befa255d12914444b57918f14ab51243bfa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "8489625"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851138"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Wielokanałowe zaawansowane opłaty automatyczne
 
 [!include [banner](includes/banner.md)]
 
-Ten temat zawiera informacje o konfiguracji i wdrażaniu funkcji zaawansowanych opłat automatycznych, które są dostępne w programie Dynamics 365 for Retail w wersji 10.0.
+Ten artykuł zawiera informacje o konfiguracji i wdrażaniu funkcji zaawansowanych opłat automatycznych, które są dostępne w programie Dynamics 365 for Retail w wersji 10.0.
 
 Po włączeniu funkcji zaawansowanych automatycznych opłat zamówienia utworzone w dowolnym obsługiwanym kanale Commerce (punkt sprzedaży (POS), biuro obsługi i w trybie online), można korzystać z [automatycznych opłat](/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) zdefiniowanych w aplikacji ERP dla opłat dotyczących zarówno poziomu nagłówka, jak i wiersza.
 

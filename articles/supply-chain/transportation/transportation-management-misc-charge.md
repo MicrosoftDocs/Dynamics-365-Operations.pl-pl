@@ -1,6 +1,6 @@
 ---
 title: Dodatkowe opłaty za zarządzanie transportem
-description: W tym temacie wyjaśniono, jak opłaty generowane przez transport muszą być skojarzone z kodem opłaty.
+description: W tym artykule wyjaśniono, jak opłaty generowane przez transport muszą być skojarzone z kodem opłaty.
 author: Weijiesa
 ms.date: 10/16/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-10-16
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e54c94baeba487ccd8fe26e58d3e891e5e3a1088
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8cc4c595d8b61cb9b6c81af4bf7f03faa1a12960
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672606"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849221"
 ---
 # <a name="transportation-management-miscellaneous-charges"></a>Dodatkowe opłaty za zarządzanie transportem
 

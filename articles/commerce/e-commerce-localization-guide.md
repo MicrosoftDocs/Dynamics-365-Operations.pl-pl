@@ -1,6 +1,6 @@
 ---
 title: Przewodnik po lokalizacji Dynamics 365 Commerce e-commerce
-description: W tym temacie opisano, jak zlokalizować witrynę e-commerce Microsoft Dynamics 365 Commerce na dodatkowe języki i skonfigurować ją tak, aby obsługiwała wiele kanałów.
+description: W tym artykule opisano, jak zlokalizować witrynę e-commerce Microsoft Dynamics 365 Commerce na dodatkowe języki i skonfigurować ją tak, aby obsługiwała wiele kanałów.
 author: bicyclingfool
 ms.date: 04/29/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 1e9d91036ceeb9161dc8ee903532b2cf3ca435e2
-ms.sourcegitcommit: 26c726bd0b00935e3d2c31fdc5a3b2ae03a8a2b0
+ms.openlocfilehash: 955a85340f6d35f1e203d74920d07b5dc6ff8654
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661530"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873391"
 ---
 # <a name="dynamics-365-commerce-e-commerce-localization-guide"></a>Przewodnik po lokalizacji Dynamics 365 Commerce e-commerce
 
 [!include [banner](includes/banner.md)]
 
-Ten temat opisuje, jak zlokalizować witrynę e-commerce Microsoft Dynamics 365 Commerce na dodatkowe języki i skonfigurować ją do obsługi wielu kanałów, a także omawia pojęcia i terminologię związaną z tym procesem.
+Ten artykuł opisuje, jak zlokalizować witrynę e-commerce Microsoft Dynamics 365 Commerce na dodatkowe języki i skonfigurować ją do obsługi wielu kanałów, a także omawia pojęcia i terminologię związaną z tym procesem.
 
 Możliwości e-commerce w Dynamics 365 Commerce zostały zaprojektowane tak, aby umożliwić doświadczenia online, które mogą być dostosowane do konkretnych krajów i języków, ale jednocześnie pozwalają na maksymalne ponowne wykorzystanie szablonów, stron, treści i mediów. Możesz też stworzyć podstawową witrynę, a następnie rozszerzać ją na nowe rynki, dodając z czasem obsługę kolejnych krajów i języków.
 
@@ -79,7 +79,7 @@ W takiej konfiguracji klienci i partnerzy zazwyczaj opracowują wszystkie zasoby
 ![Gotowa witryna e-commerce Dynamics 365 Commerce](media/loc-guide-1.png)
 
 > [!NOTE]
-> Możesz skonfigurować stronę demonstracyjną Fabrikam dla dodatkowego języka, tak aby tworzenie treści odbywało się w tym języku. Aby dowiedzieć się, jak dodać nowy język do witryny i kanału, zobacz sekcję [Konfiguracja dodatkowego języka dla witryny](#configure-an-additional-language-for-your-site) w dalszej części tego tematu.
+> Możesz skonfigurować stronę demonstracyjną Fabrikam dla dodatkowego języka, tak aby tworzenie treści odbywało się w tym języku. Aby dowiedzieć się, jak dodać nowy język do witryny i kanału, zobacz sekcję [Konfiguracja dodatkowego języka dla witryny](#configure-an-additional-language-for-your-site) w dalszej części tego artykułu.
 
 Jednak system zarządzania treścią (CMS) i model strony dla witryn e-commerce Dynamics 365 Commerce zostały zaprojektowane tak, aby umożliwić ekspansję na nowe rynki i lokalizacje. Dlatego za pośrednictwem jednej witryny e-commerce możesz zarządzać aktywami sklepu internetowego, który obejmuje wiele rynków i języków.
 
@@ -117,7 +117,7 @@ Aby dodać język do kanału w narzędziu budowania witryny, wykonaj poniższe k
 
 Kiedy wrócisz do widoku **Strony** w kreatorze witryn Commerce, nowy język będzie dostępny w oknie wyboru kanałów i lokalizacji w prawym górnym rogu. Możesz teraz tworzyć zlokalizowane wersje stron w swoim podstawowym języku.
 
-Proces lokalizowania zawartości twoich stron i fragmentów jest opisany w sekcji [Lokalizacja zawartości witryny e-commerce](#localize-e-commerce-site-content) w dalszej części tego tematu.
+Proces lokalizowania zawartości twoich stron i fragmentów jest opisany w sekcji [Lokalizacja zawartości witryny e-commerce](#localize-e-commerce-site-content) w dalszej części tego artykułu.
 
 ### <a name="configure-a-new-channel-for-your-site"></a>Skonfiguruj nowy kanał dla swojej witryny
 
@@ -156,7 +156,7 @@ Następujące elementy witryny e-commerce mogą zostać zlokalizowane w programi
 
 Wszystkie nowe strony, fragmenty i zasoby medialne są tworzone w kontekście kanału i języka, które są aktualnie wybrane w selektorze kanałów i lokalizacji. Ten język jest zwykle twoim językiem podstawowym, pod warunkiem, że nie skonfigurowałeś dodatkowych języków lub kanałów. Na stronach, na których skonfigurowano wiele kanałów i języków, język bazowy jest określany przez kanał i locale, które ustawiłeś jako domyślne na stronie **Kanały** w ustawieniach strony.
 
-Kroki związane z lokalizowaniem zawartości stron, fragmentów i zasobów medialnych są podobne. Wyjątki i różnice zostaną wskazane w kolejnych rozdziałach. Jednak kroki podejmowane w celu zlokalizowania zawartości modułu różnią się. Aby uzyskać więcej informacji, zobacz sekcję [Lokalizowanie modułów](#localize-modules) w dalszej części tego tematu.
+Kroki związane z lokalizowaniem zawartości stron, fragmentów i zasobów medialnych są podobne. Wyjątki i różnice zostaną wskazane w kolejnych rozdziałach. Jednak kroki podejmowane w celu zlokalizowania zawartości modułu różnią się. Aby uzyskać więcej informacji, zobacz sekcję [Lokalizowanie modułów](#localize-modules) w dalszej części tego artykułu.
 
 #### <a name="step-1-export-an-xliff-file"></a>Krok 1: Eksportowanie pliku XLIFF
 

@@ -1,6 +1,6 @@
 ---
 title: Zarządzaj kontenerami wysyłkowymi
-description: W tym temacie opisano, jak pracować z kontenerami wysyłkowymi. Kontenery transportowe służą do grupowania towarów, które są fizycznie zgrupowane razem. Są również stosowane w przypadkach, gdy koszty muszą być podzielone tylko na te towary, zwykle dlatego, że są one fizycznie razem.
+description: W tym artykule opisano, jak pracować z kontenerami wysyłkowymi. Kontenery transportowe służą do grupowania towarów, które są fizycznie zgrupowane razem. Są również stosowane w przypadkach, gdy koszty muszą być podzielone tylko na te towary, zwykle dlatego, że są one fizycznie razem.
 author: Weijiesa
 ms.date: 12/14/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ac88f8e3b8cf305a5bd247e7ed6b14b23ad85499
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 22f2512125679f160cb658923893d5f5aa739a2d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686777"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906161"
 ---
 # <a name="manage-shipping-containers"></a>Zarządzaj kontenerami wysyłkowymi
 
@@ -142,7 +142,7 @@ Aby otworzyć widok **Wiersze**, otworzyć kontener wysyłkowy, a następnie wyb
 
 ### <a name="information-on-the-shipping-container-fasttab"></a>Informacje na skróconej karcie kontenera wysyłkowego
 
-Skrócona karta **Kontenera wysyłkowego** w widoku **Wierszy** zawiera informacje o folio. Większość z tych informacji będzie też wyświetlana w widoku **Nagłówek**, zgodnie z opisem opisanym powyżej w tym temacie.
+Skrócona karta **Kontenera wysyłkowego** w widoku **Wierszy** zawiera informacje o folio. Większość z tych informacji będzie też wyświetlana w widoku **Nagłówek**, zgodnie z opisem opisanym powyżej w tym artykule.
 
 ### <a name="information-and-buttons-on-the-lines-fasttab"></a>Informacje i przyciski na skróconej karcie Wiersze
 

@@ -1,6 +1,6 @@
 ---
 title: Zatwierdzanie i potwierdzanie zamówień zakupu
-description: W tym temacie opisano stany, przez które przechodzi zamówienie zakupu po utworzeniu, oraz skutek włączenia funkcji zarządzanie zmianami w zamówieniach zakupu.
+description: W tym artykule opisano stany, przez które przechodzi zamówienie zakupu po utworzeniu, oraz skutek włączenia funkcji zarządzanie zmianami w zamówieniach zakupu.
 author: GalynaFedorova
 ms.date: 04/02/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d38a486c604dc761dcaf12b839d8b9b89b5e0414
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 936fddb73a639564a136002354a4d3dff7798e0b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677010"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907385"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Zatwierdzanie i potwierdzanie zamówień zakupu
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano stany, przez które przechodzi zamówienie zakupu po utworzeniu, oraz skutek włączenia funkcji zarządzanie zmianami w zamówieniach zakupu.
+W tym artykule opisano stany, przez które przechodzi zamówienie zakupu po utworzeniu, oraz skutek włączenia funkcji zarządzanie zmianami w zamówieniach zakupu.
 
 Po utworzeniu zamówienia zakupu może być konieczne przejście procesu zatwierdzania. Gdy dostawca wyrazi zgodę na zamówienie zakupu, otrzymuje ono stan **Potwierdzone**.
 

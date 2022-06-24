@@ -1,6 +1,6 @@
 ---
 title: Identyfikatory produktów
-description: Ten temat zawiera informacje o różnych typach identyfikatorów produktów i wyjaśnia, jak można dodawać identyfikatory produktów w danych produktów.
+description: Ten artykuł zawiera informacje o różnych typach identyfikatorów produktów i wyjaśnia, jak można dodawać identyfikatory produktów w danych produktów.
 author: t-benebo
 ms.date: 03/27/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 638b5c3b0c83f67f3d99331b6456efd1b8f5225a
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 3fc2d5c01209f15a9cb680e3bb569087f08c08d3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063348"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851718"
 ---
 # <a name="product-identifiers"></a>Identyfikatory produktów
 
@@ -29,7 +29,7 @@ ms.locfileid: "8063348"
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje o różnych typach identyfikatorów produktów i wyjaśnia, jak można dodawać identyfikatory produktów w danych produktów.
+Ten artykuł zawiera informacje o różnych typach identyfikatorów produktów i wyjaśnia, jak można dodawać identyfikatory produktów w danych produktów.
 
 Pracując z produktami na wydziale produkcji lub w magazynie w Microsoft Dynamics EPR lub Microsoft Dynamics CRM, trzeba mieć dobrą strategię identyfikowania tych produktów i wariantów produktów.
 
@@ -125,7 +125,7 @@ Niestety, nie istnieje standardowa funkcja umożliwiająca wyszukiwanie produkt�
 | Produkty wer. 2 | Numer produktu, alias produktu, nazwa produktu, opis produktu | Numer produktu, alias produktu, nazwa produktu, opis produktu | W zależności od ustawień jednostki oraz ustawień mechanizmu numerowania produktów numer produktu może być tworzony automatycznie podczas importu. |
 | Warianty produktu | Numer produktu, alias produktu, nazwa produktu, opis produktu | Numer produktu, alias produktu, nazwa produktu, opis produktu | W zależności od szablonu nazewnictwa produktów numer produktu może być tworzony automatycznie w czasie importu. Jednak można zaimportować dowolny unikatowy numer produktu, a ten numer produktu nie musi być zgodny ze strukturą szablonów nazewnictwa produktów. |
 | Tłumaczenia produktu | Nazwa produktu, opis produktu | Nazwa produktu, opis produktu | Ta jednostka zastępuje dowolny język. W przypadku zastąpienia nazwy lub opisu podstawowego języka osoby prawnej zmieniają się nazwa i opis samego produktu. |
-| Tworzenie zwolnionego produktu (wersja 2) | Numer towaru, numer produktu, alias towaru| Numer towaru, numer produktu, alias towaru, alias produktu, nazwa produktu | Ta jednostka może sprawiać problemy, jeśli podczas tworzenia nowych zwolnionych produktów są używane numeracje. Obie numeracje — **Numer towaru** i **Numer produktu** — wywierają wpływ. Jednak numeracja **Numer towaru** dotyczy konkretnej firmy, natomiast numeracja **Numer produktu** jest globalna. Z tego względu nie zalecamy korzystania z numeracji **Numer towaru** podczas wdrażania nowych zwolnionych produktów. Oczywiście gdy jednostka jest używana do zwalniania istniejącego produktu, numer produktu musi być nadany w jednostce. Aby uzyskać więcej informacji, zobacz rozdział „Numeracje produktów i towarów” w tym temacie. |
+| Tworzenie zwolnionego produktu (wersja 2) | Numer towaru, numer produktu, alias towaru| Numer towaru, numer produktu, alias towaru, alias produktu, nazwa produktu | Ta jednostka może sprawiać problemy, jeśli podczas tworzenia nowych zwolnionych produktów są używane numeracje. Obie numeracje — **Numer towaru** i **Numer produktu** — wywierają wpływ. Jednak numeracja **Numer towaru** dotyczy konkretnej firmy, natomiast numeracja **Numer produktu** jest globalna. Z tego względu nie zalecamy korzystania z numeracji **Numer towaru** podczas wdrażania nowych zwolnionych produktów. Oczywiście gdy jednostka jest używana do zwalniania istniejącego produktu, numer produktu musi być nadany w jednostce. Aby uzyskać więcej informacji, zobacz rozdział „Numeracje produktów i towarów” w tym artykule. |
 | Zwolnione warianty produktu | Numer towaru, wymiary produktu, numer produktu | Numer produktu, alias produktu, nazwa produktu, opis produktu, wymiary produktu | Podobnie jak jednostka **Warianty produktu**, ta jednostka może być stosowana do tworzenia nowych produktów, które są zgodne z szablonem nazewnictwa produktów lub używają własnych numerów produktu dla wariantów. |
 | Zewnętrzny opisy towaru dla odbiorców | Numer towaru u odbiorcy, nazwa towaru u odbiorcy, opis odbiorcy, konto odbiorcy | Numer towaru u odbiorcy, nazwa towaru u odbiorcy, opis odbiorcy, konto odbiorcy | Grupę odbiorców (na przykład zrzeszenie kupców) można zagregować w jedną grupę za pomocą jednostki **Grupy odbiorców — zewnętrzny opis pozycji**. |
 | Zewnętrzny opis pozycji dla dostawców | Numer towaru u dostawcy, nazwa towaru u dostawcy, opis dostawcy, konto dostawcy | Numer towaru u dostawcy, nazwa towaru u dostawcy, opis dostawcy, konto dostawcy | Grupę dostawców (na przykład zrzeszenie sprzedawców lub branżową organizację) można zagregować w jedną grupę za pomocą jednostki **Grupy dostawców — zewnętrzny opis pozycji**. |
@@ -184,7 +184,7 @@ Wykonaj następujące kroki, aby skonfigurować środowisko.
 
 Teraz można używać jednostek danych **Jednostka identyfikatora Common Data Service jednostki produktu**, **Kody identyfikujące jednostki Produkt** i **Zakres identyfikatora jednostki Produkt** do eksportowania identyfikatory do dowolnych systemów docelowych.
 
-## <a name="related-topic"></a>Powiązany temat
+## <a name="related-article"></a>Powiązany artykuł
 
 [Wyszukiwanie produktów i wariantów produktów podczas wprowadzania zamówień](search-products-product-variants.md)
 

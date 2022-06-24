@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie ksiąg
-description: Ten temat zawiera informacje dotyczące konfigurowania ksiąg poszczególnych osób prawnych. Zawiera on informacje o sposobach wybierania walut, kalendarzy obrachunkowych, planu kont oraz struktur kont, które powinny być używane z każdą z tych osób prawnych.
+description: Ten artykule zawiera informacje dotyczące konfigurowania ksiąg poszczególnych osób prawnych. Zawiera on informacje o sposobach wybierania walut, kalendarzy obrachunkowych, planu kont oraz struktur kont, które powinny być używane z każdą z tych osób prawnych.
 author: kweekley
 ms.date: 09/24/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-09
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 38c4364c47915cc0019cb6b3d471d3e60d413bf0
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: d15980b05cfac68f2e2441c86b4506c13b38b4d5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711556"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864347"
 ---
 # <a name="configure-ledgers"></a>Konfigurowanie ksiąg
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje dotyczące konfigurowania ksiąg poszczególnych osób prawnych. Zawiera on informacje o sposobach wybierania walut, kalendarzy obrachunkowych, planu kont oraz struktur kont, które powinny być używane z każdą z tych osób prawnych.
+Ten artykule zawiera informacje dotyczące konfigurowania ksiąg poszczególnych osób prawnych. Zawiera on informacje o sposobach wybierania walut, kalendarzy obrachunkowych, planu kont oraz struktur kont, które powinny być używane z każdą z tych osób prawnych.
 
 ## <a name="selecting-the-chart-of-accounts"></a>Wybieranie planu kont
 

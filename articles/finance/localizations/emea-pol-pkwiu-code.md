@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie i używanie kodów PKWiU dla Polski
-description: W tym temacie omówiono konfigurowanie kod PKWiU dla Polski.
+description: W tym artykule omówiono konfigurowanie kodu PKWiU dla Polski.
 author: ShylaThompson
 ms.date: 09/20/2018
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Poland
 ms.author: kfend
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 552470c4f55ed37277f9a93c828f3a186986d9468b63066a1994343e3c4e76de
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a38dd779086558b156d1144383b88fdbe30a6a61
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742137"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848439"
 ---
 # <a name="set-up-and-use-pkwiu-codes-for-poland"></a>Konfigurowanie i używanie kodów PKWiU dla Polski
 

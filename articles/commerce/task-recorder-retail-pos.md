@@ -1,6 +1,6 @@
 ---
 title: Rejestrator zadań i Pomoc dla aplikacji Retail Modern POS (MPOS) i Cloud POS
-description: W tym temacie opisano, jak korzystać z Rejestratora zadań w programach Retail Modern POS (MPOS) i Cloud POS.
+description: W tym artykule opisano, jak korzystać z Rejestratora zadań w programach Retail Modern POS (MPOS) i Cloud POS.
 author: mugunthanm
 ms.date: 06/19/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: aedf18ef8b3d7266f3e5c7acd676241f9ec8b900f061f5363cd8d581062e83ed
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f9f3e17a6c67dc1cc1d4ba423ce258f2ed1d1ec0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730762"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847607"
 ---
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Rejestrator zadań i Pomoc dla aplikacji Retail Modern POS (MPOS) i Cloud POS
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano, jak korzystać z Rejestratora zadań w programach Retail Modern POS (MPOS) i Cloud POS.
+W tym artykule opisano, jak korzystać z Rejestratora zadań w programach Retail Modern POS (MPOS) i Cloud POS.
 
 ## <a name="overview"></a>Omówienie
 
@@ -139,7 +139,7 @@ Aby wyświetlić własne niestandardowe nagrania zadań w okienku Pomocy program
 
 [![Przycisk Pomoc.](./media/help.jpg)](./media/help.jpg)
 
-Po kliknięciu pozycji Przewodnik po zadaniu w wynikach wyszukiwania można wyświetlić kroki jako tematy pomocy lub wyeksportować kroki do dokumentu programu Word.
+Po kliknięciu pozycji Przewodnik po zadaniu w wynikach wyszukiwania można wyświetlić kroki jako artykuły pomocy lub wyeksportować kroki do dokumentu programu Word.
 
 > [!NOTE]
 > Pomoc w programach Retail Modern POS and Cloud POS nie powoduje uruchamiania przewodników po zadaniach dopasowanych do otwartego formularza lub wykonywanej operacji. Należy wpisać nazwę procesu w polu wyszukiwania, a następnie kliknąć przycisk **Szukaj**.

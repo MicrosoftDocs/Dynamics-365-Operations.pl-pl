@@ -1,6 +1,6 @@
 ---
 title: Omówienie zapytań ofertowych (ZO)
-description: W tym temacie opisano zapytania ofertowe (ZO). Organizacje wystawiają zapytania ofertowe (ZO), kiedy chcą uzyskać od kilku dostawców konkurencyjne oferty na produkty i usługi, które muszą kupić.
+description: W tym artykule opisano zapytania ofertowe (ZO). Organizacje wystawiają zapytania ofertowe (ZO), kiedy chcą uzyskać od kilku dostawców konkurencyjne oferty na produkty i usługi, które muszą kupić.
 author: GalynaFedorova
 ms.date: 10/05/2020
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3de48c03ac73ee164dea0c329b2595db21c841cc
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 89abf82879ab08f2341ce5b14e6af1d5c42140b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671962"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895591"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Omówienie zapytań ofertowych (ZO)
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano zapytania ofertowe (ZO). Organizacje wystawiają zapytania ofertowe (ZO), kiedy chcą uzyskać od kilku dostawców konkurencyjne oferty na produkty i usługi, które muszą kupić. W ZO dostawcy są proszeni o podanie cen i terminów dostaw dla ilości towarów określonych przez użytkownika.
+W tym artykule opisano zapytania ofertowe (ZO). Organizacje wystawiają zapytania ofertowe (ZO), kiedy chcą uzyskać od kilku dostawców konkurencyjne oferty na produkty i usługi, które muszą kupić. W ZO dostawcy są proszeni o podanie cen i terminów dostaw dla ilości towarów określonych przez użytkownika.
 Można również poprosić dostawców, aby określili, czy są jakieś dodatkowe opłaty, takie jak koszty wysyłki, albo zniżki za duże zamówienia lub szybką zapłatę faktury.
 
 Proces ZO składa się z następujących zadań:
@@ -45,7 +45,7 @@ Sprawy ZO można tworzyć z zamówień planowanych lub zapotrzebowań na zakup a
 
 Po przygotowaniu sprawy ZO i dodaniu dostawców wybierz opcję **Wyślij** (**Wysyłanie i publikowanie** w przypadku podmiotów z sektora publicznego) w sprawie ZO. Dla każdego dostawcy, do którego wysłano ZO generowany jest arkusz ZO. Można skonfigurować opcje drukowania dla akcji wysyłania, aby wydrukować raport dla każdego dostawcy w celu archiwizowania, lub wysłać raporty na adresy e-mail dostawców. Ponadto arkusz ZO dla każdego dostawcy może służyć do generowania raportu, który można wysłać lub później ponownie wysłać do dostawcy. Można również skonfigurować akcję wysłania, aby wygenerować arkusz odpowiedzi, który mogą wypełniać dostawcy.
 
-W tym temacie opisano proces obsługi ZO, gdy nie jest używana współpraca z dostawcą. Jeśli system jest skonfigurowany do współpracy z dostawcami, dostawcy mogą wprowadzić oferty bezpośrednio w rozwiązaniu Supply Chain Management. Aby uzyskać więcej informacji, zobacz [Współpraca z odbiorcami przy użyciu modułu Współpraca z dostawcami](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) i [Współpraca z dostawcami zewnętrznymi przy użyciu modułu Współpraca z dostawcami](vendor-collaboration-work-external-vendors.md).
+W tym artykule opisano proces obsługi ZO, gdy nie jest używana współpraca z dostawcą. Jeśli system jest skonfigurowany do współpracy z dostawcami, dostawcy mogą wprowadzić oferty bezpośrednio w rozwiązaniu Supply Chain Management. Aby uzyskać więcej informacji, zobacz [Współpraca z odbiorcami przy użyciu modułu Współpraca z dostawcami](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) i [Współpraca z dostawcami zewnętrznymi przy użyciu modułu Współpraca z dostawcami](vendor-collaboration-work-external-vendors.md).
 
 Jeżeli po wysłaniu wymagana jest zmiana ZO, po zakończeniu można ponownie wysłać ZO do dostawców, korzystając z dwóch akcji zmian: Utwórz i Finalizuj.
 
@@ -59,7 +59,7 @@ Po wybraniu oferty lub określonych wierszy z oferty można zaakceptować wszyst
 
 Sprawa ZO ma dwa stany: najniższy i najwyższy. Stan można sprawdzić na stronie listy **Wszystkie zapytania ofertowe**. Najniższy stan jest najmniej zaawansowanym etapem wiersza sprawy ZO, a najwyższy stan jest najbardziej zaawansowanym etapem wiersza w sprawie ZO. Załóżmy na przykład, że sprawa ZO z trzema wierszami jest wysyłana do dwóch dostawców, więc istnieją dwa ZO, każde z trzema wierszami. Wszystkie wiersze mają status **Wysłane**. Następnie jest wprowadzana oferta od jednego z dostawców, a wiersze ZO uzyskują stan **Otrzymane**. Oznacza to, że z trzech wierszy w sprawie ZO wszystkie mają status **Wysłane** dla jednego ZO i **Otrzymane** dla drugiego ZO. Najniższy stan będzie miał zatem wartość **Wysłane**, a najwyższy **Otrzymane**.
 
-Te stany zostaną opisane bardziej szczegółowo w dalszej części tego tematu.
+Te stany zostaną opisane bardziej szczegółowo w dalszej części tego artykułu.
 
 ## <a name="setting-up-rfq-functionality"></a>Konfigurowanie funkcji ZO
 

@@ -1,6 +1,6 @@
 ---
 title: Nabywanie środków trwałych za pomocą zaopatrzenia
-description: W tym temacie opisano, jak skonfigurować integrację między modułami Środki trwałe i Rozrachunki z dostawcami, aby automatycznie były tworzone środki trwałe na podstawie zamówień zakupu lub faktur od dostawców albo automatycznie były księgowane transakcje nabycia i korekty wartości początkowej dla środków trwałych.
+description: W tym artykule opisano, jak skonfigurować integrację między modułami Środki trwałe i Rozrachunki z dostawcami, aby automatycznie były tworzone środki trwałe na podstawie zamówień zakupu lub faktur od dostawców albo automatycznie były księgowane transakcje nabycia i korekty wartości początkowej dla środków trwałych.
 author: moaamer
 ms.date: 03/05/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b654dbf97f8d91e0a3233803ee182b1383ad317d
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: ac25114fe8036a474d637e9ad9ede5e46b50d92e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712098"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891588"
 ---
 # <a name="acquire-assets-through-procurement"></a>Nabywanie środków trwałych za pomocą zaopatrzenia
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano, jak skonfigurować integrację między modułami Środki trwałe i Rozrachunki z dostawcami, aby automatycznie były tworzone środki trwałe na podstawie zamówień zakupu lub faktur od dostawców albo automatycznie były księgowane transakcje nabycia i korekty wartości początkowej dla środków trwałych. Jeden wiersz zakupu utworzy jeden składnik aktywów, niezależnie od ilości w wierszu zakupu. Jeśli zachodzi potrzeba utworzenia wielu środków trwałych, należy utworzyć wiele wierszy zakupu.
+W tym artykule opisano, jak skonfigurować integrację między modułami Środki trwałe i Rozrachunki z dostawcami, aby automatycznie były tworzone środki trwałe na podstawie zamówień zakupu lub faktur od dostawców albo automatycznie były księgowane transakcje nabycia i korekty wartości początkowej dla środków trwałych. Jeden wiersz zakupu utworzy jeden składnik aktywów, niezależnie od ilości w wierszu zakupu. Jeśli zachodzi potrzeba utworzenia wielu środków trwałych, należy utworzyć wiele wierszy zakupu.
 
  Poniżej przedstawiono metody do integracji Środków trwałych i Rozrachunków z dostawcami. W odniesieniu do wszystkich środków trwałych trzeba użyć tej samej metody:
 -   Środek trwały jest tworzony ręcznie zanim numer środka trwałego zostanie dodany do wiersza zamówienia zakupu lub faktury od dostawcy. Dla tego środka jest automatycznie księgowana transakcja nabycia po zaksięgowaniu faktury od dostawcy. To jest metoda domyślna.
@@ -38,7 +38,7 @@ Wybierz jedną z dwóch pierwszych metod, jeśli preferujesz ręczne tworzenie �
 
 Niezależnie od tego, czy środki trwałe są tworzone ręcznie, czy stosowane jest bardziej elastyczne podejście, druga decyzja, jaką trzeba podjąć, dotyczy tego, czy transakcja nabycia może zostać zaksięgowana tylko w module Środki trwałe, czy w momencie zaksięgowania faktury od dostawcy. Niektóre organizacje wolą, aby użytkownicy ręcznie tworzyli nabycia i transakcje nabycia w module Środki trwałe za pomocą ręcznych wpisów w arkuszu lub propozycji. 
 
-W tym temacie szczegółowo omówiono każdą z metod.
+W tym artykule szczegółowo omówiono każdą z metod.
 
 ## <a name="methods-for-manually-creating-fixed-assets"></a> Metody, w których środek trwały jest tworzony ręcznie
 W momencie zaksięgowania faktury od dostawcy, której wiersze zawierają numer środka trwałego, jeśli została zaznaczona opcja Zezwalaj na nabywanie środków trwałych z zakupów na stronie Parametry środków trwałych, nabycie jest księgowane automatycznie i stan środka trwałego zmienia się na Otwarty. 

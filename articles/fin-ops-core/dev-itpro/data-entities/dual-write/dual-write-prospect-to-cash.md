@@ -1,6 +1,6 @@
 ---
 title: Od prospekta do kasy w podwójnym zapisie
-description: Ten temat zawiera informacje dotyczące prospektów do kasy w ramach podwójnego zapisu.
+description: Ten artykuł zawiera informacje dotyczące prospektów do kasy w ramach podwójnego zapisu.
 author: RamaKrishnamoorthy
 ms.date: 01/07/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 7c53bcd1084d89b59d0f6b2674a85d7c3481a9bf
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: f0d5339190f7e2aff7b084fa73e559af28e10ee8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781798"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860117"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Od prospekta do kasy w podwójnym zapisie
 
@@ -29,7 +29,7 @@ W interfejsach aplikacji można uzyskać dostęp do Stanów przetwarzania i info
 Aby uzyskać informacje o integracji odbiorcy i kontaktów, zobacz temat [Zintegrowany wzorzec klienta](customer-mapping.md). Aby uzyskać informacje na temat integracji produktów, zobacz temat [Ujednolicone działanie produktu](product-mapping.md).
 
 > [!NOTE]
-> W przypadku usługi Dynamics 365 Sales prospekt i odbiorca odwołują się do rekordu w tabeli **Konta**, w której kolumna **RelationshipType** to **Prospekt** lub **Odbiorca**. Jeśli logika biznesowa zawiera proces kwalifikacji **konta**, w którym najpierw jest tworzony rekord **konta** i zakwalifikowany jako prospekt, a następnie jako odbiorca, rekord jest synchronizowany z aplikacją Finance and Operations tylko wtedy, gdy jest to odbiorca (`RelationshipType=Customer`). Jeśli chcesz, aby wiersz **Konto** był synchronizowany jako prospekt, musisz mieć niestandardową mapę, aby zintegrować dane prospektu.
+> W przypadku usługi Dynamics 365 Sales prospekt i odbiorca odwołują się do rekordu w tabeli **Konta**, w której kolumna **RelationshipType** to **Prospekt** lub **Odbiorca**. Jeśli logika biznesowa zawiera proces kwalifikacji **konta**, w którym najpierw jest tworzony rekord **konta** i zakwalifikowany jako prospekt, a następnie jako klient, rekord jest synchronizowany z aplikacją finansową i operacyjną tylko wtedy, gdy jest to klient (`RelationshipType=Customer`). Jeśli chcesz, aby wiersz **Konto** był synchronizowany jako prospekt, musisz mieć niestandardową mapę, aby zintegrować dane prospektu.
 
 ## <a name="prerequisites-and-mapping-setup"></a>Wymagania wstępne i ustawienia mapowania
 
@@ -111,7 +111,7 @@ Faktury sprzedaży są tworzone w Supply Chain Management i synchronizowane z pr
 
 Moduł Od prospektu do gotówki zawiera mapy tabeli podstawowej, które działają wspólnie podczas interakcji, jak pokazano w poniższej tabeli.
 
-| Aplikacje Finance and Operations | Aplikacje Customer Engagement | opis |
+| Aplikacje Finanse i Działania | Aplikacje Customer Engagement | Opis |
 |-----------------------------|-----------------------------------|-------------|
 [Wszystkie produkty](mapping-reference.md#138) | msdyn_globalproducts | |
 [Odbiorcy (wersja 3)](mapping-reference.md#101) | Konta | |
@@ -122,7 +122,7 @@ Moduł Od prospektu do gotówki zawiera mapy tabeli podstawowej, które działaj
 [Nagłówek oferty sprzedaży CDS](mapping-reference.md#215) | Cytaty | |
 [Wiersze oferty sprzedaży CDS](mapping-reference.md#214) | quotedetails | |
 [Zwolnione produkty (wersja 2)](mapping-reference.md#189) | msdyn_sharedproductdetails | |
-[Nagłówki faktur sprzedaży wer. 2](mapping-reference.md#118) | faktury | Tabela nagłówków faktur sprzedaży (wersja 2) w aplikacji Finance and Operations zawiera faktury dla zamówień sprzedaży i faktury niezależne. W przypadku podwójnego zapisu jest stosowany filtr usługi Dataverse, który odfiltruje wszystkie dokumenty faktur niezależnych. |
+[Nagłówki faktur sprzedaży wer. 2](mapping-reference.md#118) | faktury | Tabela nagłówków faktur sprzedaży (wersja 2) w aplikacji finansowej i operacyjnej zawiera faktury dla zamówień sprzedaży i faktury niezależne. W przypadku podwójnego zapisu jest stosowany filtr usługi Dataverse, który odfiltruje wszystkie dokumenty faktur niezależnych. |
 [Wiersze faktur sprzedaży wer. 2](mapping-reference.md#117) | invoicedetails | |
 [Kody źródeł zamówień sprzedaży](mapping-reference.md#186) | msdyn_salesorderorigins | |
 

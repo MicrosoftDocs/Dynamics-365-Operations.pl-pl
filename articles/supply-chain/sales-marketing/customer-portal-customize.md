@@ -1,6 +1,6 @@
 ---
 title: Dostosowywanie i korzystanie z Portalu klienta
-description: W tym temacie opisano sposób dostosowania Portalu klienta po dodaniu go do systemu.
+description: W tym artykule opisano sposób dostosowania Portalu klienta po dodaniu go do systemu.
 author: Henrikan
 ms.date: 04/22/2020
 ms.topic: article
@@ -12,19 +12,19 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 02ad0470b7886b2e9b259682a7f8c8150d656cfb
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 85ec4beda2efe62ff5076a5ed694efbc47c6d87f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063500"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878882"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>Dostosowywanie i korzystanie z Portalu klienta
 
 [!include [banner](../includes/banner.md)]
 
 
-W tym temacie opisano różne strony dostępne do użytku w Portalu klienta. Wyjaśnia, co robią strony i w jaki sposób można je dostosować.
+W tym artykule opisano różne strony dostępne do użytku w Portalu klienta. Wyjaśnia, co robią strony i w jaki sposób można je dostosować.
 
 W Portalu klienta jest dostępnych kilka stron sieci Web i akcji, które są dostępne do użytku od razu. Następująca mapa witryny umożliwia przegląd tych stron sieci Web i akcji oraz ról, które mogą wykonywać te akcje.
 
@@ -32,16 +32,16 @@ W Portalu klienta jest dostępnych kilka stron sieci Web i akcji, które są dos
 
 ## <a name="typical-customizations"></a>Standardowe dostosowania
 
-Poniższe tematy umożliwiają zapoznanie się z podstawowymi portalami Power Apps i sposobami dostosowywania portali:
+Poniższe artykuły umożliwiają zapoznanie się z podstawowymi portalami Power Apps i sposobami dostosowywania portali:
 
-- [Praca z szablonami](/powerapps/maker/portals/work-with-templates) — ten temat zawiera ogólne omówienie działania portali Power Apps oraz proste dostosowania portali.
-- [Zarządzanie zawartością portalu](/dynamics365/portals/manage-portal-content) — w tym temacie wyjaśniono, jak można zarządzać i dostosowywać zawartość obszaru w portalu.
-- [Edycja CSS](/powerapps/maker/portals/edit-css) — ten temat pomaga wprowadzać bardziej złożone dostosowania do interfejsu użytkownika (UI) portalu.
-- [Utwórz motyw dla swojego portalu](/dynamics365/portals/create-theme) – w tym temacie opisano sposób tworzenia motywu interfejsu użytkownika portalu.
-- [Tworzenie i uwidacznianie zawartości portalu w prosty sposób](/dynamics365/portals/create-expose-portal-content) — ten temat pomaga w zarządzaniu danymi i tabelami używanymi w portalu.
-- [Konfigurowanie kontaktu do użycia w portalu](/powerapps/maker/portals/configure/configure-contacts) — w tym temacie opisano sposób tworzenia i dostosowywania ról użytkowników oraz sposobu działania zabezpieczeń i uwierzytelniania w portalach Power Apps.
-- [Konfigurowanie notatek dla formularzy tabel i formularzy internetowych w portalach](/powerapps/maker/portals/configure-notes) — w tym temacie opisano sposób dodawania dokumentów i dodatkowego magazynu do portalu.
-- [Obsługa błędów w witrynie sieci Web portalu](/powerapps/maker/portals/admin/view-portal-error-log) — w tym temacie opisano sposób wyświetlania dzienników błędów portalu i przechowywania ich na koncie magazynu obiektów BLOB Microsoft Azure.
+- [Praca z szablonami](/powerapps/maker/portals/work-with-templates) — ten artykuł zawiera ogólne omówienie działania portali Power Apps oraz proste dostosowania portali.
+- [Zarządzanie zawartością portalu](/dynamics365/portals/manage-portal-content) — w tym artykule wyjaśniono, jak można zarządzać i dostosowywać zawartość obszaru w portalu.
+- [Edycja CSS](/powerapps/maker/portals/edit-css) — ten artykuł pomaga wprowadzać bardziej złożone dostosowania do interfejsu użytkownika (UI) portalu.
+- [Utwórz motyw dla swojego portalu](/dynamics365/portals/create-theme) – w tym artykule opisano sposób tworzenia motywu interfejsu użytkownika portalu.
+- [Tworzenie i uwidacznianie zawartości portalu w prosty sposób](/dynamics365/portals/create-expose-portal-content) — ten artykuł pomaga w zarządzaniu danymi i tabelami używanymi w portalu.
+- [Konfigurowanie kontaktu do użycia w portalu](/powerapps/maker/portals/configure/configure-contacts) — w tym artykule opisano sposób tworzenia i dostosowywania ról użytkowników oraz sposobu działania zabezpieczeń i uwierzytelniania w portalach Power Apps.
+- [Konfigurowanie notatek dla formularzy tabel i formularzy internetowych w portalach](/powerapps/maker/portals/configure-notes) — w tym artykule opisano sposób dodawania dokumentów i dodatkowego magazynu do portalu.
+- [Obsługa błędów w witrynie sieci Web portalu](/powerapps/maker/portals/admin/view-portal-error-log) — w tym artykule opisano sposób wyświetlania dzienników błędów portalu i przechowywania ich na koncie magazynu obiektów BLOB Microsoft Azure.
 
 ## <a name="customize-the-order-creation-process"></a>Dostosowywanie procesu tworzenia zamówień
 

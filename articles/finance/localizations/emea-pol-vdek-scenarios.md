@@ -1,6 +1,6 @@
 ---
 title: Szczegóły określonych scenariuszy biznesowych w raporcie JPK-V7M
-description: Ten temat wyjaśnia szczegóły konkretnych scenariuszy biznesowych w raporcie JPK-V7M w Polsce.
+description: Ten artykuł wyjaśnia szczegóły konkretnych scenariuszy biznesowych w raporcie JPK-V7M w Polsce.
 author: liza-golub
 ms.date: 07/19/2021
 ms.topic: article
@@ -11,18 +11,18 @@ audience: Application User
 ms.reviewer: kfend
 ms.search.region: Poland
 ms.author: elgolu
-ms.openlocfilehash: 7bd0cbe9ef85eda33eee7589f86b5d855429e8bda52e7edabc0f2bd31bc51261
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e493eeeb0d116e5ff59ef9f06841f48bf86c4907
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757954"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903008"
 ---
 # <a name="details-of-specific-business-scenarios-in-the-jpk-v7m-report"></a>Szczegóły określonych scenariuszy biznesowych w raporcie JPK-V7M
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat wyjaśnia szczegóły konkretnych scenariuszy biznesowych w raporcie JPK-V7M w Polsce.
+Ten artykuł wyjaśnia szczegóły konkretnych scenariuszy biznesowych w raporcie JPK-V7M w Polsce.
 
 ## <a name="reporting-of-overdue-customer-invoices"></a>Raportowanie zaległych faktur dla odbiorcy
 

@@ -1,6 +1,6 @@
 ---
 title: Planowanie tworzenia pracy podczas grupy czynności
-description: W tym temacie opisano sposób konfigurowania i używania metody przetwarzania grupy czynności planowania tworzenia pracy.
+description: W tym artykule opisano sposób konfigurowania i używania metody przetwarzania grupy czynności planowania tworzenia pracy.
 author: Mirzaab
 ms.date: 01/14/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c955e7275c0bdc12dc206dde1d7e390f16270148
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 8b4505d66c37134bc8f672b38d195f4f677df9bc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691139"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852078"
 ---
 # <a name="schedule-work-creation-during-wave"></a>Planowanie tworzenia pracy podczas grupy czynności
 
@@ -30,7 +30,7 @@ Gdy ta funkcja jest włączona, automatycznie zostanie utworzona planowana praca
 
 ## <a name="turn-on-the-scheduled-work-creation-features-in-feature-management"></a>Włączanie funkcji tworzenia zaplanowanej pracy w zarządzaniu funkcjami
 
-Aby korzystać z funkcji opisanych w tym temacie, należy je włączona dla systemu. Użyj obszaru roboczego [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) włącz następujące funkcje w kolejności:
+Aby korzystać z funkcji opisanych w tym artykule, należy je włączona dla systemu. Użyj obszaru roboczego [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) włącz następujące funkcje w kolejności:
 
 1. **Blokowanie pracy w całej organizacji** — Wymagane zarówno do ręcznej, jak i automatycznej konfiguracji tworzenia zaplanowanych prac. (W przypadku Supply Chain Management w wersji 10.0.21 ta funkcja jest obowiązkowa, więc jest domyślnie włączona i nie można jej ponownie wyłączyć).
 1. **Zaplanuj tworzenie pracy** — Wymagane zarówno do ręcznej, jak i automatycznej konfiguracji tworzenia zaplanowanych prac.

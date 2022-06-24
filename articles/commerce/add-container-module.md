@@ -1,6 +1,6 @@
 ---
 title: Moduł kontenera
-description: W tym temacie opisano moduły kontenera i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano moduły kontenera i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: aa4bf7523acee06e91f0ebb983dd8777dec4bac5
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: 4406b6ee998f3094e5a8a36d4f721839ffb427e6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780721"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867847"
 ---
 # <a name="container-module"></a>Moduł kontenera
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano moduły kontenera i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
+W tym artykule opisano moduły kontenera i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 
 Moduł kontenerowy to moduł, który obsługuje inne moduły w nim zawarte. Podstawowym celem modułu kontenera jest zdefiniowanie, za pomocą ustawionych dla niego właściwości, układu modułów, które zawiera. Na przykład moduły te mogą pojawiać się obok siebie w układzie dwukolumnowym, trzykolumnowym, czterokolumnowym lub sześciokolumnowym. Mogą być także ograniczone do szerokości kontenera lub mogą wypełniać ekran. Nagłówek można również dodać do każdego modułu kontenerów.
 

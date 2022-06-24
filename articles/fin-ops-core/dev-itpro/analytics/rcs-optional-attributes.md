@@ -1,6 +1,6 @@
 ---
 title: Importowanie plików w formacie XML z opcjonalnymi atrybutami
-description: Ten temat zawiera informacje dotyczące projektowania formatów ER, które określają atrybuty XML służące do analizy przychodzących dokumentów elektronicznych w formacie XML.
+description: Ten artykuł zawiera informacje dotyczące projektowania formatów ER, które określają atrybuty XML służące do analizy przychodzących dokumentów elektronicznych w formacie XML.
 author: NickSelin
 ms.date: 07/03/2019
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 81156cf13e003a67fde0a73bdcd69b2c997f23a33c464fad82132f7768f8a99f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f5b25b51a4f59bf9c308bcaeb140e2737597798e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757304"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873230"
 ---
 # <a name="import-files-in-xml-format-with-optional-attributes"></a>Importowanie plików w formacie XML z opcjonalnymi atrybutami
 
@@ -26,7 +26,7 @@ ms.locfileid: "6757304"
 
 Można zaprojektować formaty raportów elektronicznych ER w taki sposób, aby analizowały przychodzące dokumenty elektroniczne w formacie XML. Niektóre atrybuty elementów XML można określać w zaprojektowanym formacie ER jako opcjonalne. Pozwoli to na prawidłową obsługę przychodzących plików z takimi atrybutami XML lub bez nich. Następnie można użyć zawartości tych plików do aktualizacji danych aplikacji.
 
-Aby dowiedzieć się więcej o tej funkcji, należy wykonać kroki opisane w temacie, [(RCS) Importuj pliki w formacie XML z opcjonalnymi atrybutami](tasks/import-files-xml-format-optional-attributes.md), które są częścią procesu biznesowego 7.5.4.3 Nabycie/Opracowanie procesu biznesowego dotyczącego usług IT/komponentów rozwiązania (10677). Możesz pobrać ten przewodnik zadań i powiązane przykładowe pliki z [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684).
+Aby dowiedzieć się więcej o tej funkcji, należy wykonać kroki opisane w artykule, [(RCS) Importuj pliki w formacie XML z opcjonalnymi atrybutami](tasks/import-files-xml-format-optional-attributes.md), które są częścią procesu biznesowego 7.5.4.3 Nabycie/Opracowanie procesu biznesowego dotyczącego usług IT/komponentów rozwiązania (10677). Możesz pobrać ten przewodnik zadań i powiązane przykładowe pliki z [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684).
 
 
 | Opis zawartości       | Plik                                                         |
@@ -38,7 +38,7 @@ Aby dowiedzieć się więcej o tej funkcji, należy wykonać kroki opisane w tem
 W poniższych krokach wyjaśniono, jak użytkownik w roli administratora systemu lub programisty raportowania elektronicznego może zaprojektować konfigurację formatu ER do importowania plików w formacie XML zawierającym atrybuty opcjonalne. Aby wykonać te kroki, należy najpierw wykonać kroki w tej procedurze [Tworzenie dostawców konfiguracji i oznacz je jako aktywne](tasks/er-configuration-provider-mark-it-active-2016-11.md). Przed rozpoczęciem należy pobrać i zapisać lokalnie plik IncomingDocumentToLearnHowToHandleOptionalAttributes.XML z centrum pobierania Microsoft (https://go.microsoft.com/fwlink/?linkid=874684 ).
 
 1. Wybierz kolejno opcje **Administrowanie organizacją** > **Obszary robocze** > **Raportowanie elektroniczne**.
-2. Upewnij się, że dostawca konfiguracji dla przykładowej firmy Litware, Inc. jest dostępny i oznaczony jako **Aktywny** Jeśli ten dostawca konfiguracji nie jest widoczny, wykonaj kroki opisane w temacie [Utwórz dostawców konfiguracji i oznacz ich jako aktywnych](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. Upewnij się, że dostawca konfiguracji dla przykładowej firmy Litware, Inc. jest dostępny i oznaczony jako **Aktywny** Jeśli ten dostawca konfiguracji nie jest widoczny, wykonaj kroki opisane w artykule [Utwórz dostawców konfiguracji i oznacz ich jako aktywnych](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. Kliknij opcję **Konfiguracje raportowania**.
 
 ## <a name="create-a-new-data-model-configuration"></a>Tworzenie nowej konfiguracji modelu danych

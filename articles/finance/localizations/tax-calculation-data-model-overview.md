@@ -1,6 +1,6 @@
 ---
 title: Model danych obliczania podatku
-description: Ten temat zawiera informacje dotyczące modelu danych podatku oraz sposobu, w jaki wartości pól poszczególnych modeli danych są określane na podstawie kontekstu transakcji obliczania podatku.
+description: Ten artykuł zawiera informacje dotyczące modelu danych podatku oraz sposobu, w jaki wartości pól poszczególnych modeli danych są określane na podstawie kontekstu transakcji obliczania podatku.
 author: kailiang
 ms.date: 10/15/2021
 ms.topic: overview
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 759803767111c27cba76b68430e09a0d9dd6110f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: a711eb73c171cd099947b44e2376cad2455059f0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694264"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859703"
 ---
 # <a name="tax-calculation-data-model"></a>Model danych obliczania podatku
 
-Ten temat zawiera informacje dotyczące sposobu, w jaki wartości pól modelu danych podatku są określane w transakcjach obliczania podatku.
+Ten artykuł zawiera informacje dotyczące sposobu, w jaki wartości pól modelu danych podatku są określane w transakcjach obliczania podatku.
 
 *Model danych podatku* składa się z pól wymaganych do obliczeń podatku. Firma Microsoft dostarcza *model danych obliczania podatku*, który zawiera pola nagłówka i pola wiersza dokumentów transakcji w aplikacjach Finanse i Operacje. Pola zdefiniowane w modelu danych obliczania podatku to dostępne kolumny tabel reguł możliwości zastosowania w konfiguracji funkcji obliczania podatku.
 
@@ -99,7 +99,7 @@ Trzydzieści dwa modele danych można dołączyć jako pola w nagłówku transak
 | Wysyłka do prowincji/stanu          | <ul><li>**Zamówienie sprzedaży:**<ol><li>Nagłówek &gt; Adres dostawy &gt; Stan</li></ol></li><li>**Zamówienie zakupu:**<ol><li>Nagłówek &gt; Adres dostawy &gt; Stan</li></ol></li><li>**Zamówienie przeniesienia — wysyłka:**<ol><li>Nagłówek &gt; Do magazynu &gt; Adres podstawowy &gt; Stan</li><li>Nagłówek &gt; Do oddziału &gt; Adres podstawowy &gt; Stan</li></ol></li><li>**Zamówienie przeniesienia — przyjęcie:**<ol><li>Nagłówek &gt; Do magazynu &gt; Adres podstawowy &gt; Stan</li><li>Nagłówek &gt; Do oddziału &gt; Adres podstawowy &gt; Stan</li></ol></li><li>**Zapytanie ofertowe:**<ol><li>Nagłówek &gt; Adres dostawy &gt; Stan</li></ol></li><li>**Oferta sprzedaży:**<ol><li>Nagłówek &gt; Adres dostawy &gt; Stan</li></ol></li><li>**Faktura niezależna:**<ol><li>Nagłówek &gt; Konto odbiorcy &gt; Domyślny adres dostawy &gt; Stan</li><li>Nagłówek &gt; Konto odbiorcy &gt; Adres podstawowy &gt; Stan</li></ol></li><li>**Arkusz (klient)**<ol><li>Konto odbiorcy &gt; Domyślny adres dostawy &gt; Stan</li><li>Konto klienta &gt; Adres podstawowy &gt; Stan</li></ol></li><li>**Arkusz (dostawca):**<ol><li>Osoba prawna &gt; Domyślny adres dostawy &gt; Stan</li><li>Osoba prawna &gt; Adres podstawowy &gt; Stan</li></ol></li></ul> |
 | Wysyłka do kodu pocztowego                 | <ul><li>**Zamówienie sprzedaży:**<ol><li>Nagłówek &gt; Adres dostawy &gt; Kod pocztowy</li></ol></li><li>**Zamówienie zakupu:**<ol><li>Nagłówek &gt; Adres dostawy &gt; Kod pocztowy</li></ol></li><li>**Zamówienie przeniesienia — wysyłka:**<ol><li>Nagłówek &gt; Do magazynu &gt; Adres podstawowy &gt; Kod pocztowy</li><li>Nagłówek &gt; Do oddziału &gt; Adres podstawowy &gt; Kod pocztowy</li></ol></li><li>**Zamówienie przeniesienia — przyjęcie:**<ol><li>Nagłówek &gt; Do magazynu &gt; Adres podstawowy &gt; Kod pocztowy</li><li>Nagłówek &gt; Do oddziału &gt; Adres podstawowy &gt; Kod pocztowy</li></ol></li><li>**Zapytanie ofertowe:**<ol><li>Nagłówek &gt; Adres dostawy &gt; Kod pocztowy</li></ol></li><li>**Oferta sprzedaży:**<ol><li>Nagłówek &gt; Adres dostawy &gt; Kod pocztowy</li></ol></li><li>**Faktura niezależna:**<ol><li>Nagłówek &gt; Konto odbiorcy &gt; Domyślny adres dostawy &gt; Kod pocztowy</li><li>Nagłówek &gt; Konto odbiorcy &gt; Adres podstawowy &gt; Kod pocztowy</li></ol></li><li>**Arkusz (klient)**<ol><li>Konto odbiorcy &gt; Domyślny adres dostawy &gt; Kod pocztowy</li><li>Konto odbiorcy &gt; Adres podstawowy &gt; Kod pocztowy</li></ol></li><li>**Arkusz (dostawca):**<ol><li>Osoba prawna &gt; Domyślny adres dostawy &gt; Kod pocztowy</li><li>Osoba prawna &gt; Adres podstawowy &gt; Kod pocztowy</li></ol></li></ul> |
 | Witryna                             | <ul><li>**Zamówienie sprzedaży:** oddział</li><li>**Zamówienie zakupu:** oddział</li><li>**Zamówienie przeniesienia — wysyłka:** oddział z pola Z magazynu</li><li>**Zamówienie przeniesienia — przyjęcie:** oddział z pola Do magazynu</li><li>**Zapytanie ofertowe:** oddział</li><li>**Oferta sprzedaży:** oddział</li></ul> |
-| Kierunek podatku                    | <ul><li>**Zamówienie sprzedaży:** wyjście</li><li>**Zamówienie zakupu:** wejście</li><li>**Zamówienie przeniesienia — wysyłka:** wyjście</li><li>**Zamówienie przeniesienia — przyjęcie:** wejście</li><li>**Zapotrzebowania na zakup:** wejście</li><li>**Zapytanie ofertowe:** wejście</li><li>**Oferta sprzedaży:** wyjście</li><li>**Faktura niezależna:** Dane wyjściowe</li></ul> |
+| Kierunek podatku                    | <ul><li>**Zamówienie sprzedaży:** wyjście</li><li>**Zamówienie zakupu:** wejście</li><li>**Zamówienie przeniesienia — wysyłka:** wyjście</li><li>**Zamówienie przeniesienia — przyjęcie:** wejście</li><li>**Zapotrzebowania na zakup:** wejście</li><li>**Zapytanie ofertowe:** wejście</li><li>**Oferta sprzedaży:** wyjście</li><li>**Faktura niezależna:** Dane wyjściowe</li><li>**Arkusz:** dane wyjściowe</li></ul> |
 | Konto dostawcy                   | <ul><li>**Zamówienie zakupu:** konto dostawcy</li><li>**Arkusz (dostawca):** konto dostawcy</li></ul> |
 | Konto płatnika dostawcy           | <ul><li>**Zamówienie zakupu:** konto faktury</li><li>**Arkusz (dostawca):**<ol><li>Konto dostawcy &gt; Konto faktury</li><li>Konto dostawcy</li></ol></li></ul> |
 | Magazyn                        | <ul><li>**Zamówienie sprzedaży:** magazyn</li><li>**Zamówienie zakupu:** magazyn</li><li>**Zamówienie przeniesienia — wysyłka:** z magazynu</li><li>**Zamówienie przeniesienia — przyjęcie:** do magazynu</li><li>**Zapytanie ofertowe:** magazyn</li><li>**Oferta sprzedaży:** magazyn</li></ul> |

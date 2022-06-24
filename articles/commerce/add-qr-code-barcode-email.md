@@ -1,6 +1,6 @@
 ---
 title: Dodawanie kodu HTML do wiadomości e-mail transakcyjnych i wiadomości e-mail o przychodach
-description: W tym temacie opisano sposób wstawiania kodów PIN i kodów kreskowych reprezentujących identyfikatory zamówień do wiadomości e-mail o transakcjach i przyjęciach Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano sposób wstawiania kodów PIN i kodów kreskowych reprezentujących identyfikatory zamówień do wiadomości e-mail o transakcjach i przyjęciach Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 03/04/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2021-02-16
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 5f7b349700a4b3b43f818b30bb479e630048e8b8
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ffa0009c55b5322b209b19692952c2e0704f65c9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688972"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872891"
 ---
 # <a name="add-a-qr-code-or-bar-code-to-transactional-and-receipt-emails"></a>Dodawanie kodu HTML do wiadomości e-mail transakcyjnych i wiadomości e-mail o przychodach
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano sposób wstawiania kodów PIN i kodów kreskowych reprezentujących identyfikatory zamówień do wiadomości e-mail o transakcjach i przyjęciach Microsoft Dynamics 365 Commerce.
+W tym artykule opisano sposób wstawiania kodów PIN i kodów kreskowych reprezentujących identyfikatory zamówień do wiadomości e-mail o transakcjach i przyjęciach Microsoft Dynamics 365 Commerce.
 
 Możesz łatwo dołączyć kody QR i kody kreskowe do e-maili transakcyjnych, aby przyspieszyć proces wyszukiwania zamówień w środowisku sprzedaży detalicznej. Aby wstawić kody QR i kody kreskowe do wiadomości e-mail, użyj tagu HTML **\<img\>**, który żąda kodu QR lub obrazu kodu kreskowego z usługi generowania i renderowania. Firma Microsoft nie dostarcza tej usługi. Istnieje jednak wiele bezpłatnych lub niedrogich usług, które mogą obsługiwać kody QR lub kody kreskowe generowane dynamicznie na podstawie wartości przekazywanej w ciągu zapytania.
 

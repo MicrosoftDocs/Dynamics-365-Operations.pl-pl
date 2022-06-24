@@ -1,6 +1,6 @@
 ---
 title: Ustawianie wiadomości elektronicznych
-description: Ten temat zawiera informacje dotyczące konfigurowania funkcji wiadomości elektronicznych (EM).
+description: Ten artykuł zawiera informacje dotyczące konfigurowania funkcji wiadomości elektronicznych (EM).
 author: liza-golub
 ms.date: 11/18/2021
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: elgolu
 ms.search.validFrom: 2021-06-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 652d8684473d1c1505a80eb1d860c57a214b9488
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 6ac6e4fbc37165a3126de3b1f937a43c980410b4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734227"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874559"
 ---
 # <a name="set-up-electronic-messages"></a>Ustawianie wiadomości elektronicznych
 
@@ -66,7 +66,7 @@ W poniższej tabeli opisano pola znajdujące się na stronie **Stany wiadomości
 |---------------------|-------------|
 | Stan wiadomości      | Wprowadź unikatową nazwę stanu wiadomości. Stany wiadomości są używane do charakteryzowania stanu wiadomości elektronicznej w każdym momencie. Wprowadzona nazwa jest wyświetlana na stronie **wiadomości elektroniczne** i w dzienniku, który jest powiązany z elektronicznymi wiadomościami. |
 | Opis         | Wprowadź opis wybranego stanu wiadomości. |
-| Typ odpowiedzi       | Wybierz typ odpowiedzi dla wybranego stanu wiadomości. Niektóre akcje w przetwarzaniu mogą spowodować więcej niż jeden typ odpowiedzi. Na przykład akcja **usługa sieci Web** może spowodować typ odpowiedzi albo **pomyślnie wykonane** albo **błąd techniczny** w zależności od wyniku jej wykonania. W tym przypadku należy zdefiniować statusy komunikatów dla obu typów odpowiedzi. Zobacz sekcję [Typy akcji przetwarzania wiadomości](#action-types) w dalszej części tego tematu, aby uzyskać więcej informacji dotyczących typów akcji i związanych z nimi typów odpowiedzi. |
+| Typ odpowiedzi       | Wybierz typ odpowiedzi dla wybranego stanu wiadomości. Niektóre akcje w przetwarzaniu mogą spowodować więcej niż jeden typ odpowiedzi. Na przykład akcja **usługa sieci Web** może spowodować typ odpowiedzi albo **pomyślnie wykonane** albo **błąd techniczny** w zależności od wyniku jej wykonania. W tym przypadku należy zdefiniować statusy komunikatów dla obu typów odpowiedzi. Zobacz sekcję [Typy akcji przetwarzania wiadomości](#action-types) w dalszej części tego artykułu, aby uzyskać więcej informacji dotyczących typów akcji i związanych z nimi typów odpowiedzi. |
 | Stan elementu wiadomości | Czasami stan wiadomości elektronicznej musi mieć wpływ na stan elementów pokrewnych wiadomości. Wybierz stan elementu wiadomości w tym polu, aby skojarzyć go ze stanem wiadomości. |
 | Zezwalaj na usuwanie        | Zaznacz to pole, jeśli chcesz, aby użytkownicy mogli usuwać wiadomości elektroniczne z tym stanem na stronie **wiadomości elektroniczne**. |
 
@@ -240,7 +240,7 @@ W poniższych tabelach opisano pola na stronie **Akcje przetwarzania wiadomości
 
 | Pole                                     | opis |
 |-------------------------------------------|-------------|
-| Typ akcji                               | Umożliwia wybranie typu akcji. Aby uzyskać informacje o dostępnych opcjach, zobacz sekcję [Typy akcji przetwarzania wiadomości](#action-types) w dalszej części tematu. |
+| Typ akcji                               | Umożliwia wybranie typu akcji. Aby uzyskać informacje o dostępnych opcjach, zobacz sekcję [Typy akcji przetwarzania wiadomości](#action-types) w dalszej części artykułu. |
 | Mapowanie formatu                            | Wybierz format ER, który powinien zostać wywołany dla akcji. To pole jest dostępne tylko dla działań tupu **Eksport raportowania elektronicznego**, **Import raportowania elektronicznego**, i **Wiadomość dotycząca eksportu raportowania elektronicznego**. |
 | Mapowanie formatu w ścieżce URL               | Wybierz format ER, który powinien zostać wywołany dla akcji. Ten format służy do określania ścieżki adresu URL, który zostanie dodany do podstawowego adresu internetowego określonego dla wybranego serwera sieci web. To pole jest dostępne tylko dla działań typu **Usługa sieci Web**. |
 | Typ elementu wiadomości                         | Wybierz typ rekordów, dla których powinna być oceniana akcja. To pole jest dostępne dla działań typu **Poziom wykonywania elementu wiadomości**, **Eksport raportowania elektronicznego** i **Import raportowania elektronicznego**, **Usługa sieci Web** i innych typów. Jeśli to pole pozostanie puste, wszystkie typy elementów wiadomości zdefiniowanych dla przetwarzania wiadomości są sprawdzane. |

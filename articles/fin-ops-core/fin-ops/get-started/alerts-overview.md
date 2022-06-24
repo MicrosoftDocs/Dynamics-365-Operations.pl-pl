@@ -1,6 +1,6 @@
 ---
 title: Omówienie alertów (zawiera wideo)
-description: Ten temat zawiera ogólne informacje o alertach. Alerty pozwalają na bieżąco uzyskiwać informacje o zdarzeniach, które chcesz śledzić podczas dnia pracy.
+description: Ten artykuł zawiera ogólne informacje o alertach. Alerty pozwalają na bieżąco uzyskiwać informacje o zdarzeniach, które chcesz śledzić podczas dnia pracy.
 author: RichdiMSFT
 ms.date: 09/04/2019
 ms.topic: overview
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: c3332bdf7f2edb693c95a4d5a6f95906e14c0a42
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 4b63ac8a09efb9ab449b651d030bd14a24d5cc36
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984975"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850086"
 ---
 # <a name="alerts-overview"></a>Omówienie alertów
 

@@ -1,6 +1,6 @@
 ---
 title: Importowanie przychodzących wcześniejszych powiadomień o wysyłce za pomocą jednostki danych V3
-description: W tym temacie wyjaśniono sposób zarządzania importem przychodzących zaawansowanych zawiadomień o wysyłce (ASN) za pomocą elementu danych Przychodzące ASN.
+description: W tym artykule wyjaśniono sposób zarządzania importem przychodzących zaawansowanych zawiadomień o wysyłce (ASN) za pomocą elementu danych Przychodzące ASN.
 author: GalynaFedorova
 ms.date: 05/11/2022
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-04
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 44ec0230236451a413d483b3e9f3ddc58b49a0b0
-ms.sourcegitcommit: 90ffd763d18f97654b9dbc9e3f71c998e6094c6b
+ms.openlocfilehash: 0ac45e070d0473547c48da1380377de3d4bf60bd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740141"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907124"
 ---
 # <a name="import-inbound-asns-through-the-v3-data-entity"></a>Importowanie przychodzących wcześniejszych powiadomień o wysyłce za pomocą jednostki danych V3
 
@@ -26,7 +26,7 @@ Zaawansowane zawiadomienia o wysyłce (ASN) informują o dostawach od sprzedawc�
 
 ASN mogą pomóc pracownikom magazynu dowiedzieć się, co i kiedy jest dostarczane. W związku z tym mogą się przygotować. Ponadto pracownicy magazynu mogą używać numerów ASN, aby dopasować szczegóły przesyłki do powiązanego z nią, utworzonego wcześniej zamówienia zakupu.
 
-W tym temacie przedstawiono zbiór scenariuszy przedstawiających, za pomocą przykładów, sposób pracy z plikami ASN.
+W tym artykule przedstawiono zbiór scenariuszy przedstawiających, za pomocą przykładów, sposób pracy z plikami ASN.
 
 > [!IMPORTANT]
 > *Import przychodzący ASN* dotyczy tylko pozycji, które są włączone do zaawansowanego zarządzania magazynem (WMS). Zanim otrzymasz ASN, zamówienie zakupu musi być zarejestrowane w systemie w stosunku do sprzedawcy, który wysyła ten ASN.

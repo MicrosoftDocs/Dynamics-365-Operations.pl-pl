@@ -1,6 +1,6 @@
 ---
 title: Zamówienia magazynowe dla jednostek skalowania chmury i urządzenia brzegowego
-description: Ten temat zawiera informacje dotyczące możliwości zamówień magazynowych, które są używane jako część obciążenia jednostek skalowania magazynów.
+description: Ten artykuł zawiera informacje dotyczące możliwości zamówień magazynowych, które są używane jako część obciążenia jednostek skalowania magazynów.
 author: perlynne
 ms.date: 04/22/2021
 ms.topic: article
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: bd3c72f2c008b936ceda53a3fcdde79df1e6b1b7
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: db254216e6c34b81f83c87a8fda454d0aeb1cece
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471699"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893534"
 ---
 # <a name="warehouse-orders-for-cloud-and-edge-scale-units"></a>Zamówienia magazynowe dla jednostek skalowania chmury i urządzenia brzegowego
 
 [!include [banner](../includes/banner.md)]
 
 > [!WARNING]
-> Nie wszystkie funkcje biznesowe są w pełni obsługiwane w wersji zapoznawczej, gdy są używane obciążenia jednostek skalowania. Jeśli używasz jednostek skalowania, pamiętaj, aby użyć tylko tych procesów, które opisano w tym temacie jako obsługiwane.
+> Nie wszystkie funkcje biznesowe są w pełni obsługiwane w wersji zapoznawczej, gdy są używane obciążenia jednostek skalowania. Jeśli używasz jednostek skalowania, pamiętaj, aby użyć tylko tych procesów, które opisano w tym artykule jako obsługiwane.
 
 ## <a name="what-are-warehouse-orders"></a>Co to są zamówienia magazynowe?
 

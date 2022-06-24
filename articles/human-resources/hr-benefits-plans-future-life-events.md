@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie przyszłych zdarzeń zmiany sytuacji życiowej
-description: W tym temacie opisano sposób planowania przyszłych zmian sytuacji życiowej w programie Dynamics 365 Human Resources.
+description: W tym artykule opisano sposób planowania przyszłych zmian sytuacji życiowej w programie Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 08/23/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 441ccc478f78f76b80ac9138dc62592634f005bd
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 183d0f13a17ffac723fac6c4801bd187dd54e976
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693207"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888862"
 ---
 # <a name="configure-future-life-events"></a>Konfigurowanie przyszłych zdarzeń zmiany sytuacji życiowej
 

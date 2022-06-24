@@ -1,6 +1,6 @@
 ---
 title: Przetwarzanie towarów w transporcie
-description: W tym temacie opisano, jak pracować z zamówieniami towarów w drodze. Jeśli dla zamówienia lub podróży zostanie ustawione użycie przetwarzania towarów w drodze, towary mogą zostać zafakturowane przed ich otrzymaniem do magazynu w celu zużycia.
+description: W tym artykule opisano, jak pracować z zamówieniami towarów w drodze. Jeśli dla zamówienia lub podróży zostanie ustawione użycie przetwarzania towarów w drodze, towary mogą zostać zafakturowane przed ich otrzymaniem do magazynu w celu zużycia.
 author: Weijiesa
 ms.date: 01/13/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 8df07c7c94cf64b0e4cf1def794270e176241b5f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 47e5ef2ef99fcf23af73cfdb6ec57b92ad62f18c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694663"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854392"
 ---
 # <a name="goods-in-transit-processing"></a>Przetwarzanie towarów w transporcie
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie opisano, jak pracować z zamówieniami towarów w drodze. Ten typ zamówienia jest używany tylko przez moduł **Koszt z wyładunkiem**. Gdy zamówienie lub podróż są skonfigurowane do przetwarzania towarów w tranzycie, nie musisz czekać, aż towary znajdą się w magazynie, zanim będzie można je zafakturować. Natomiast towary są fakturowane, gdy opuszczają magazyn lub port pochodzenia dostawcy i koszty finansowe są uznawane w momencie rozpoczynania podróży. Ta funkcja umożliwia prawidłowe przenoszenie własności zapasów, ponieważ towary często stają się właściwością organizacji użytkownika, gdy opuszczają port wysyłki.
+W tym artykule opisano, jak pracować z zamówieniami towarów w drodze. Ten typ zamówienia jest używany tylko przez moduł **Koszt z wyładunkiem**. Gdy zamówienie lub podróż są skonfigurowane do przetwarzania towarów w tranzycie, nie musisz czekać, aż towary znajdą się w magazynie, zanim będzie można je zafakturować. Natomiast towary są fakturowane, gdy opuszczają magazyn lub port pochodzenia dostawcy i koszty finansowe są uznawane w momencie rozpoczynania podróży. Ta funkcja umożliwia prawidłowe przenoszenie własności zapasów, ponieważ towary często stają się właściwością organizacji użytkownika, gdy opuszczają port wysyłki.
 
 W przypadku korzystania z zamówień tranzytu towary zaktualizowane finansowo są odbierane w magazynie tymczasowym, który jest nazywany magazynem towarów w drodze. Towary pozostają wówczas w tym magazynie, dopóki nie zostaną odebrane w ostatecznym magazynie docelowym (to jest magazynie określonym w wierszu zakupu). Nie można ich usunąć ręcznie.
 

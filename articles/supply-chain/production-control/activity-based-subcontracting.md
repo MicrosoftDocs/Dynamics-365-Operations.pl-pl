@@ -1,6 +1,6 @@
 ---
 title: Podwykonawstwo działań
-description: W tym temacie opisano szczegółowo, jak używać działań podwykonawczych w przepływie produkcji dla produkcji oszczędnej.
+description: W tym artykule opisano szczegółowo, jak używać działań podwykonawczych w przepływie produkcji dla produkcji oszczędnej.
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1c2e1efceb800930d9f9e19a109da80d8cfebe2e
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: e53da46a27fd573ae7f7450fcf34ffd8ef43e3fe
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566799"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890749"
 ---
 # <a name="activity-based-subcontracting"></a>Podwykonawstwo działań
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano szczegółowo, jak używać działań podwykonawczych w przepływie produkcji dla produkcji oszczędnej.
+W tym artykule opisano szczegółowo, jak używać działań podwykonawczych w przepływie produkcji dla produkcji oszczędnej.
 
 W Microsoft Dynamics 365 Supply Chain Management istnieją dwa podejścia do podwykonawstwa: zlecenia produkcyjne i lean manufacturing. W ujęciu z perspektywy produkcji oszczędnej praca podwykonawcza jest modelowana jako usługa powiązana z działaniem w przepływie produkcji. Wprowadzono specjalny typ grupy kosztów o nazwie **Outsourcing bezpośredni**, a usługi podwykonawcze nie są już częścią listy składowej (BOM). Rachunek kosztów pracy podwykonawczej jest w pełni zintegrowany z rozwiązaniem wyceny dla produkcji oszczędnej.
 

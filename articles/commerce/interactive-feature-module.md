@@ -1,6 +1,6 @@
 ---
 title: Interaktywny moduł funkcyjny
-description: W tym temacie omówiono interaktywne moduły funkcyjne i opisano sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
+description: W tym artykule omówiono interaktywne moduły funkcyjne i opisano sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3ab325189812289390740e31fd673ee9892f9759
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: deee7c35cfc4293480fda74665429121b71bbfab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780746"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898526"
 ---
 # <a name="interactive-feature-module"></a>Interaktywny moduł funkcyjny
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie omówiono interaktywne moduły funkcyjne i opisano sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
+W tym artykule omówiono interaktywne moduły funkcyjne i opisano sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 
 Interaktywne moduły funkcyjne to moduły przypominające mozaikę, które mogą być wykorzystywane do marketingu wielu kategorii produktów lub marek produktów za pomocą kombinacji obrazów i tekstu. Na przykład, sprzedawca detaliczny może dodać interaktywny moduł funkcji do strony głównej witryny handlowej, aby promować najlepiej sprzedające się kategorie. Interaktywny moduł funkcji przypomina moduł listy kafelków, ale ma inny układ i inną funkcjonalność interakcji.
 

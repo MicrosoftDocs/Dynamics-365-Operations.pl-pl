@@ -1,26 +1,26 @@
 ---
 title: Kopiowanie witryny handlu elektronicznego
-description: W tym temacie opisano sposób kopiowania istniejącej witryny w portalu e-commerce w środowisku e-commerce lub między nimi w Konstruktorze witryn Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano sposób kopiowania istniejącej witryny w portalu e-commerce w środowisku e-commerce lub między nimi w Konstruktorze witryn Microsoft Dynamics 365 Commerce.
 author: psimolin
-ms.date: 03/03/2022
+ms.date: 06/03/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: a23f544cbd1e960cb704d2b9666b7db4c3894b5e
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: cb53a76b2ebe5b511bf5009727f20f20755e5720
+ms.sourcegitcommit: 13c7a1cc4c90417e3e88db59b7d2165b3c40a56c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462333"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "8935751"
 ---
 # <a name="copy-an-e-commerce-site"></a>Kopiowanie witryny handlu elektronicznego
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób kopiowania istniejącej witryny w portalu e-commerce w środowisku e-commerce lub między nimi w Konstruktorze witryn Microsoft Dynamics 365 Commerce.
+W tym artykule opisano sposób kopiowania istniejącej witryny w portalu e-commerce w środowisku e-commerce lub między nimi w Konstruktorze witryn Microsoft Dynamics 365 Commerce.
 
 Dynamics 365 Commerce umożliwia kopiowanie i kopiowanie witryn jako samodzielnych operacji w Konstruktorze witryn portalu Commerce. Witryny można kopiować w jednym środowisku e-commerce lub między dwoma środowiskami handlu elektronicznego. Użytkownik, który zainicjował operację kopiowania witryny, musi być administratorem dzierżawy w źródłowym i docelowym środowisku e-commerce.
 
@@ -40,23 +40,23 @@ Aby skopiować witrynę w środowisku e-commerce, wykonaj następujące kroki.
 1. Zaloguj się do Konstruktora witryn, aby uzyskać środowisko, w którym ma zostać wykonać operację kopiowania.
 1. Aby otworzyć widok listy witryn, wybierz Opcję **Przełączania witryn** w prawym górnym rogu, a następnie wybierz pozycję **Zarządzaj witrynami**.
 1. Znajdź witrynę, którą chcesz skopiować lub sklonować, i zaznacz ją, zaznaczając pole wyboru obok nazwy witryny.
-1. W okienku akcji wybierz opcję **Kopiuj witrynę**.
-1. W oknie dialogowym **Kopiuj witrynę** w polu **Nowa nazwa witryny** wprowadź nazwę witryny. Nowa nazwa witryny musi być unikatowa w środowisku e-commerce. Pola **Dzierżawa źródłowa** i **Witryna źródłowa** są automatycznie ustawiane na informacje dotyczące bieżącej dzierżawy i wybranej witryny.
+1. Na pasku poleceń wybierz opcję **Kopiuj witrynę**.
+1. W menu wysuwanym **Kopiuj witrynę** w polu **Nowa nazwa witryny** wprowadź nazwę witryny. Nowa nazwa witryny musi być unikatowa w środowisku e-commerce. Pola **Dzierżawa źródłowa** i **Witryna źródłowa** są automatycznie ustawiane na informacje dotyczące bieżącej dzierżawy i wybranej witryny.
 1. Wybierz **Utwórz kopię**.
 
 Po weryfikacji informacji powiadomienie wskazuje, że zostało utworzone nowe zadanie kopiowania witryny. Możesz monitorować postęp zadania w prawym [okienku strony **Zadania dzierżawcy**](#monitor-the-site-copy-operation). Po pomyślnym zakończeniu operacji kopiowania nowa witryna pojawi się na liście witryn w widoku listy witryn.
 
-Poniższa ilustracja przedstawia przykład okna dialogowego **Kopiuj witrynę** w narzędziu do tworzenia witryn.
+Poniższa ilustracja przedstawia przykład menu wysuwanego **Kopiuj witrynę** w narzędziu do tworzenia witryn.
 
-![Okno dialogowe Kopiuj witrynę w kreatorze witryn.](media/site-copy_1.png)
+![Menu wysuwane Kopiuj witrynę w kreatorze witryn.](media/site-copy_1.png)
 
 ## <a name="copy-a-site-between-two-e-commerce-environments"></a>Skopiuj witrynę między dwoma środowiskami e-commerce
 
 Aby skopiować witrynę między dwoma środowiskami handlu elektronicznego, wykonaj następujące kroki.
 
 1. Zaloguj się do kreatora witryn w docelowym środowisku e-commerce.
-1. W okienku akcji wybierz opcję **Kopiuj witrynę**.
-1. W oknie dialogowym **Kopiuj witrynę** w polu **Nowa nazwa witryny** wprowadź nazwę witryny. Nowa nazwa witryny musi być unikatowa w środowisku e-commerce.
+1. Na pasku poleceń wybierz opcję **Kopiuj witrynę**.
+1. W menu wysuwanym **Kopiuj witrynę** w polu **Nowa nazwa witryny** wprowadź nazwę witryny. Nowa nazwa witryny musi być unikatowa w środowisku e-commerce.
 1. W polu **Dzierżawa źródłowa** wybierz nazwę dzierżawy źródłowej.
 1. W polu **Witryna źródłowa** wybierz witrynę źródłową.
 1. Wybierz **Utwórz kopię**.
@@ -66,6 +66,32 @@ Aby skopiować witrynę między dwoma środowiskami handlu elektronicznego, wyko
 
 Po weryfikacji informacji powiadomienie wskazuje, że zostało utworzone nowe zadanie kopiowania witryny. Możesz monitorować postęp zadania w prawym [okienku strony **Zadania dzierżawcy**](#monitor-the-site-copy-operation). Po pomyślnym zakończeniu operacji kopiowania nowa witryna pojawi się na liście witryn w widoku listy witryn.
 
+## <a name="map-channels-during-the-site-copy-operation-optional"></a>Mapowanie kanałów podczas operacji kopiowania witryny (opcjonalne)
+
+W ramach operacji kopiowania witryny kanały źródłowe i ustawienia regionalne mogą być mapowane na docelowe kanały i ustawienia regionalne. Jeśli mapowanie kanałów jest wykonywane w ramach operacji kopiowania witryny, inicjalizacja witryny za pomocą procesu FRE i konfiguracja kanałów w ustawieniach witryny nie są wymagane. 
+
+Aby zmapować wszystkie kanały i lokalizacje "tak jak jest" (1 do 1) w programie do budowania witryn, wykonaj poniższe kroki.
+
+1. Aby otworzyć widok listy witryn, wybierz Opcję **Przełączania witryn** w prawym górnym rogu, a następnie wybierz pozycję **Zarządzaj witrynami**.
+1. Znajdź witrynę, którą chcesz skopiować lub sklonować, i zaznacz ją, zaznaczając pole wyboru obok nazwy witryny.
+1. Na pasku poleceń wybierz opcję **Kopiuj witrynę**.
+1. W menu wysuwanym **Kopiuj witrynę** wprowadź wartości dla **Nowa nazwa witryny**, **Dzierżawca źródłowy** oraz **Obiekt źródłowy** (jeśli nie jest już obecny).
+1. Wybierz **Dodaj kanał mapowania**.
+1. W menu wysuwowym **Konfiguruj kanały i ustawienia lokalne** witryny wybierz **kanał źródłowy**, a następnie wybierz kanał źródłowy.  
+1. Wybierz **kanał docelowy,** a następnie wybierz ten sam kanał co kanał źródłowy. 
+1. Wybierz opcję **Dodaj ustawienia regionalne**.
+1. Wybierz opcję **Źródłowe ustawienia regionalne**, a następnie wybierz źródłową.
+1. Wybierz **Docelowe ustawienia regionalne,** a następnie wybierz to samo ustawienie co ustawienie regionalne źródłowe. 
+1. W **przypadku ścieżki adresu** URL wprowadź unikatową ścieżkę URL, która nie jest obecnie używana w środowisku docelowym.
+1. Powtórz kroki od 8 do 11 dla wszystkich mapowanych ustawień regionalnych kanału.
+1. Wybierz opcję **Zastosuj**.
+1. Powtórz kroki 6-11 dla każdego kanału źródłowego.
+1. Kliknij przycisk **Zamknij**.
+1. Sprawdź poprawność konfiguracji, a następnie wybierz pozycję **Kopiuj witrynę**.
+
+> [!NOTE]
+> Wszystkie kanały źródłowe i ustawienia regionalne muszą być mapowane i można je zamapowane tylko raz.
+
 ## <a name="monitor-the-site-copy-operation"></a>Monitorowanie operacji kopiowania w lokacji
 
 Aby monitorować postęp operacji kopiowania witryny, wykonaj następujące kroki.
@@ -74,9 +100,9 @@ Aby monitorować postęp operacji kopiowania witryny, wykonaj następujące krok
 1. W okienku nawigacji po lewej stronie wybierz pozycję **Zadania dzierżawcy**.
 1. Na stronie **Zadania dzierżawcy** znajdź i wybierz zadanie kopiowania witryny na liście. Po prawej stronie zostanie wyświetlone okienko z informacjami o stanie i szczegółach wybranego zadania.
 
-Możesz anulować zadanie o stanie **W toku**. Wybierz zamówienie na liście wyników, a następnie wybierz opcję **Anuluj** w okienku.
+Możesz anulować zadanie o stanie **W toku**. Wybierz zamówienie na liście wyników, a następnie wybierz opcję **Anuluj** na pasku poleceń.
 
-Można ponowić próbę wykonania zadania o stanie **Niepowodzenie** lub **Zakończone z błędami**. Wybierz zamówienie na liście wyników, a następnie wybierz opcję **Spróbuj ponownie** w okienku.
+Można ponowić próbę wykonania zadania o stanie **Niepowodzenie** lub **Zakończone z błędami**. Wybierz zamówienie na liście wyników, a następnie wybierz opcję **Spróbuj ponownie** na pasku poleceń.
 
 > [!NOTE]
 > Przetwarzanie zasobów wideo może być kontynuowane po ukończeniu zadania kopiowania w witrynie.

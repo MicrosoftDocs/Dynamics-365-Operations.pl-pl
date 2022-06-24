@@ -1,6 +1,6 @@
 ---
 title: Ustawianie zespołów wysyłek
-description: W tym temacie opisano sposób tworzenia zespołu wysyłek.
+description: W tym artykule opisano sposób tworzenia zespołu wysyłek.
 author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 742cb79076662e9595b98bb7acf91ffed5e0ac82
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 2051ccdbe5786a347c1eba5bd36a0d6c77ad72a3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675607"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847854"
 ---
 # <a name="set-up-dispatch-teams"></a>Ustawianie zespołów wysyłek 
 
 [!include [banner](../includes/banner.md)]
 
 
-W tym temacie opisano sposób tworzenia zespołu wysyłek. Po utworzeniu zespołu wysyłki można przypisać do niego pracowników. Podczas tworzenia zlecenia serwisowego można powiązać członka zespołu wysyłki z działaniem w ramach zlecenia serwisowego.
+W tym artykule opisano sposób tworzenia zespołu wysyłek. Po utworzeniu zespołu wysyłki można przypisać do niego pracowników. Podczas tworzenia zlecenia serwisowego można powiązać członka zespołu wysyłki z działaniem w ramach zlecenia serwisowego.
 
 1.  Kliknij kolejno opcje **Zarządzanie serwisem** \> **Ustawienia** \> **Zespoły wysyłek**.
 

@@ -1,6 +1,6 @@
 ---
 title: Moduł wyboru sklepu
-description: W tym temacie opisano moduł wyboru sklepu i opisano, jak dodać go do stron witryny w Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano moduł wyboru sklepu i opisano, jak dodać go do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
 ms.date: 05/18/2022
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 76682f26f62fe4686f5102e3099f038a50005f5e
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: a91b50d2177483615cf45276cf342be381814717
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780663"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881690"
 ---
 # <a name="store-selector-module"></a>Moduł wyboru sklepu
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano moduł wyboru sklepu i opisano, jak dodać go do stron witryny w Microsoft Dynamics 365 Commerce.
+W tym artykule opisano moduł wyboru sklepu i opisano, jak dodać go do stron witryny w Microsoft Dynamics 365 Commerce.
 
 Za pomocą modułu wyboru sklepu można pobrać produkt z wybranego sklepu po zakupieniu online. W module Commerce 10.0.13 moduł wyboru zawiera także dodatkowe funkcje, które mogą zawierać stronę **Znajdź sklep**, która przedstawia sklepy w pobliżu.
 
@@ -132,7 +132,7 @@ W trybie **Odbioru w sklepie** moduł może być używany tylko na stronach PDP 
 - Aby uzyskać informacje o tym, jak dodać moduł wyboru sklepu do modułu pole zakupy, zajrzyj [Moduł pola zakupu](add-buy-box.md). 
 - Aby uzyskać informacje o tym, jak dodać moduł wyboru sklepu do modułu koszyka, zajrzyj [Moduł koszyka](add-cart-module.md)
 
-Aby skonfigurować moduł selektora sklepu, aby wyświetlał dostępne sklepy dla strony lokalizacji sklepów, jak na ilustracji, która pojawia się wcześniej w tym temacie, wykonaj następujące kroki.
+Aby skonfigurować moduł selektora sklepu, aby wyświetlał dostępne sklepy dla strony lokalizacji sklepów, jak na ilustracji, która pojawia się wcześniej w tym artykule, wykonaj następujące kroki.
 
 1. Przejdź do **Szablonu**, a następnie wybierz **Nowy**, aby utworzyć nowy szablon.
 1. W oknie dialogowym **Nowy szablon**, w obszarze **Nazwa szablonu** wprowadź **Szablon marketingowy**, a następnie wybierz **OK**.

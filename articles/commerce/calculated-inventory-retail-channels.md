@@ -1,6 +1,6 @@
 ---
 title: Obliczanie dostępności zapasów dla kanałów sprzedaży detalicznej
-description: W tym temacie opisano sposób, w jaki firma może wykorzystać Microsoft Dynamics 365 Commerce do wyświetlania szacowanej dostępności produktów do dyspozycji w kanałach online i w sklepach.
+description: W tym artykule opisano sposób, w jaki firma może wykorzystać Microsoft Dynamics 365 Commerce do wyświetlania szacowanej dostępności produktów do dyspozycji w kanałach online i w sklepach.
 author: hhainesms
 ms.date: 09/01/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 1b1e0ea264dd74f6583d3b7fd3ecce551c73fbae
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 952acf4cc26815822436bb7a5117775a5f12200c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674682"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884118"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Obliczanie dostępności zapasów dla kanałów sprzedaży detalicznej
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób, w jaki firma może wykorzystać Microsoft Dynamics 365 Commerce do wyświetlania szacowanej dostępności produktów do dyspozycji w kanałach online i w sklepach.
+W tym artykule opisano sposób, w jaki firma może wykorzystać Microsoft Dynamics 365 Commerce do wyświetlania szacowanej dostępności produktów do dyspozycji w kanałach online i w sklepach.
 
 ## <a name="accuracy-of-inventory-availability"></a>Dokładność dostępności zapasów
 

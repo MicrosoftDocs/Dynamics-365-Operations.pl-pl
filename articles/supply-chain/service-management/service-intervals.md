@@ -1,6 +1,6 @@
 ---
 title: Zakresy serwisów
-description: Ten temat zawiera omówienie sposobu pracy z interwałami serwisowymi. Interwał umowy serwisowej określa częstotliwość, z jaką są tworzone wiersze umowy serwisowej podczas automatycznego tworzenia zleceń serwisowych.
+description: Ten artykuł zawiera omówienie sposobu pracy z interwałami serwisowymi. Interwał umowy serwisowej określa częstotliwość, z jaką są tworzone wiersze umowy serwisowej podczas automatycznego tworzenia zleceń serwisowych.
 author: sorenva
 ms.date: 02/20/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df15340a82bf36f67baa7195e2e318a4216d2c56
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 62708258ac3dca9ac03b44efdc96e3bfd643a255
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675635"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887233"
 ---
 # <a name="service-intervals"></a>Zakresy serwisów
 
@@ -87,7 +87,7 @@ Ponieważ grupowanie w zleceniu serwisowym nie zostało określone (co umożliwi
 
 Zostały utworzone trzy wiersze zlecenia serwisowego w ramach czasowych określonych w oknie dialogowym **Tworzenie zleceń serwisowych**. Możesz przejrzeć wiersze zlecenia serwisowego na stronie **Umowy serwisowe** (**okienko akcji** \> karta **Dostarcz** przycisk \>**Widok**).
 
-## <a name="related-topics"></a>Powiązane tematy
+## <a name="related-articles"></a>Powiązane artykuły
 
 [Konfigurowanie ram czasowych serwisu](set-up-service-intervals.md)  
 

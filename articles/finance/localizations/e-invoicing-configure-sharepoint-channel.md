@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie kanału usługi SharePoint
-description: W tym temacie wyjaśniono, jak skonfigurować kanał Microsoft SharePoint do przetwarzania przychodzących faktur elektronicznych.
+description: W tym artykule wyjaśniono, jak skonfigurować kanał Microsoft SharePoint do przetwarzania przychodzących faktur elektronicznych.
 author: dkalyuzh
 ms.date: 02/09/2022
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: ea3e14ed00b0661d3923c1839135378a8a550499
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 89538adde4d14212fb0deccad05f828d146f16db
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371807"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910049"
 ---
 # <a name="configure-a-sharepoint-channel"></a>Konfigurowanie kanału usługi SharePoint
 

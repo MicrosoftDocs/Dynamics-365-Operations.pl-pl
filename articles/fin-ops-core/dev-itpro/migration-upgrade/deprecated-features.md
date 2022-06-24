@@ -1,6 +1,6 @@
 ---
 title: Usunięte lub wycofane funkcje w poprzednich wersjach
-description: W tym temacie opisano funkcje, które zostały usunięte lub które zostały zaplanowane do usunięcia z aplikacji Dynamics 365 for Finance and Operations i jej poprzednich wydań.
+description: W tym artykule opisano funkcje, które zostały usunięte lub które zostały zaplanowane do usunięcia z aplikacji Dynamics 365 for Finance and Operations i jej poprzednich wydań.
 author: sericks007
 ms.date: 02/16/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6dfe1cf9d3d67c6b65f64248d48a2e7420a47c93
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 2d8c79057c157f9f0244ea11ad5c3563dcdb21a5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063244"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866193"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Usunięte lub wycofane funkcje w poprzednich wersjach
 
@@ -28,9 +28,9 @@ ms.locfileid: "8063244"
 
 
 > [!IMPORTANT]
-> Ten temat nie jest już aktualizowany. Aby wyświetlić bieżącą listę funkcji, które zostały usunięte lub wycofane z aplikacji Finanse i Działania, wyszukaj zawartość **„usunięte lub przestarzałe funkcje”** odnoszącą się do używanej aplikacji.
+> Ten artykuł nie jest już aktualizowany. Aby wyświetlić bieżącą listę funkcji, które zostały usunięte lub wycofane z aplikacji Finanse i Działania, wyszukaj zawartość **„usunięte lub przestarzałe funkcje”** odnoszącą się do używanej aplikacji.
 
-W tym temacie opisano funkcje, które zostały usunięte lub wycofane z systemu Dynamics 365 for Finance and Operations i poprzednich wydań tego produktu.
+W tym artykule opisano funkcje, które zostały usunięte lub wycofane z systemu Dynamics 365 for Finance and Operations i poprzednich wydań tego produktu.
 
 - *Usunięta* funkcja nie jest już dostępna w produkcie.
 - *Przestarzała* funkcja nie jest aktywnie tworzona i może zostać usunięta w przyszłej aktualizacji.
@@ -889,7 +889,7 @@ Przepływ pracy zarządzania tworzeniem celów dla pracowników jest jednym z ki
 
 ### <a name="aif-axd-and-axbc-integrations"></a>Integracja z AIF, AxD i AxBC
 
-W narzędziach integracji aplikacji (AIF) może dochodzić do wymiany danych z zewnętrznymi systemami poprzez logikę biznesową powiązaną z usługami. System Dynamics AX zawiera usługi, które są oparte na dokumentach i programie .NET Business Connector (AxBC). Dokument jest tworzony przy użyciu języka XML. Kod XML zawiera informacje nagłówka dodawane w celu tworzenia *komunikatów*, które mogą być przesyłane do systemu Dynamics AX lub z niego wysyłane. Przykłady dokumentów obejmują zamówienia sprzedaży i zamówienia zakupu. Jednak niemal wszystkie podmioty, np. odbiorca, mogą być reprezentowane przez dokument. Usługi oparte na dokumentach używają menu klasy **Axd \<Document\>**.
+W narzędziach integracji aplikacji (AIF) może dochodzić do wymiany danych z zewnętrznymi systemami poprzez logikę biznesową powiązaną z usługami. Dynamics AX zawiera usługi, które są oparte na dokumentach i programie .NET Business Connector (AxBC). Dokument jest tworzony przy użyciu języka XML. Kod XML zawiera informacje nagłówka dodawane w celu tworzenia *komunikatów*, które mogą być przesyłane do systemu Dynamics AX lub z niego wysyłane. Przykłady dokumentów obejmują zamówienia sprzedaży i zamówienia zakupu. Jednak niemal wszystkie podmioty, np. odbiorca, mogą być reprezentowane przez dokument. Usługi oparte na dokumentach używają menu klasy **Axd \<Document\>**.
 
 |  &nbsp; | &nbsp; |
 |------------|--------------------|

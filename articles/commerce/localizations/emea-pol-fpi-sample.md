@@ -1,6 +1,6 @@
 ---
-title: Przykładowa integracja drukarki fiskalnej dla Polski
-description: W tym temacie zawarto ogólne informacje o przykładowej integracji fiskalnej dla Polski w Microsoft Dynamics 365 Commerce.
+title: Przykładowa integracja drukarki fiskalnej (Polska)
+description: W tym artykule zawarto ogólne informacje o przykładowej integracji fiskalnej dla Polski w Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-2-1
-ms.openlocfilehash: 43d9a54334d97a65a1f9a356daf54154f6c069b3
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: e71d7b342789e4cf2e7644a46bc847087063fc78
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8076843"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876956"
 ---
 # <a name="fiscal-printer-integration-sample-for-poland"></a>Przykładowa integracja drukarki fiskalnej (Polska)
 
 [!include[banner](../includes/banner.md)]
 
-W tym temacie zawarto ogólne informacje o przykładowej integracji fiskalnej dla Polski w Microsoft Dynamics 365 Commerce.
+W tym artykule zawarto ogólne informacje o przykładowej integracji fiskalnej dla Polski w Microsoft Dynamics 365 Commerce.
 
 Funkcja programu Dynamics 365 Commerce dla Polski obejmuje przykładową integrację punktu sprzedaży (POS) z drukarką fiskalną. Przykładowa integracja rozszerza [funkcję integracji fiskalnej](fiscal-integration-for-retail-channel.md) i obsługuje protokół POSNET THERMAL HD 2.02 dla drukarek fiskalnych z [Posnet Polska S.A.](https://www.posnet.com.pl) Przykład umożliwia komunikację z drukarką fiskalną połączoną przez port COM przy użyciu natywnego oprogramowania sterownika. Implementację i testy przeprowadzono przy użyciu emulatora oprogramowania dostarczonego przez Posnet dla drukarki fiskalnej Posnet Thermal HD FV EJ. Przykładowa integracja ma formę kodu źródłowego i jest częścią zestawu SDK modułu Retail.
 

@@ -1,6 +1,6 @@
 ---
 title: Omówienie witryny handlu elektronicznego
-description: Ten temat stanowi omówienie pomocy technicznej dotyczącej witryn handlu elektronicznego w usłudze Microsoft Dynamics 365 Commerce.
+description: Ten artykuł stanowi omówienie pomocy technicznej dotyczącej witryn handlu elektronicznego w usłudze Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 11/05/2020
 ms.topic: overview
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 90f0f01115b00f231af8d4ae11be1d18d379399b
-ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
+ms.openlocfilehash: 9b7e4d09eaa4f91478d27cbca5eaea48af86e676
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "8487775"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899128"
 ---
 # <a name="e-commerce-site-overview"></a>Omówienie witryny handlu elektronicznego
 
 [!include [banner](includes/banner.md)]
 
-Ten temat stanowi omówienie pomocy technicznej dotyczącej witryn handlu elektronicznego w usłudze Microsoft Dynamics 365 Commerce. W witrynie dostępne są informacje o sposobach inicjowania sklepów e-commerce online i zarządzania nimi w Dynamics 365 Commerce. Zawiera też linki do dalszych informacji o sklepach internetowych i sposobie konfigurowania witryny handlu elektronicznego. Mimo że ten temat opisuje wiele podstawowych informacji, nie obejmuje wszystkich danych, które są wymagane do konfiguracji witryny produkcyjnej handlu elektronicznego. W dokumentacji Dynamics 365 Commerce są dostępne informacje o bardziej zaawansowanych zagadnieniach.
+Ten artykuł stanowi omówienie pomocy technicznej dotyczącej witryn handlu elektronicznego w usłudze Microsoft Dynamics 365 Commerce. W witrynie dostępne są informacje o sposobach inicjowania sklepów e-commerce online i zarządzania nimi w Dynamics 365 Commerce. Zawiera też linki do dalszych informacji o sklepach internetowych i sposobie konfigurowania witryny handlu elektronicznego. Mimo że ten artykuł opisuje wiele podstawowych informacji, nie obejmuje wszystkich danych, które są wymagane do konfiguracji witryny produkcyjnej handlu elektronicznego. W dokumentacji Dynamics 365 Commerce są dostępne artykuły o bardziej zaawansowanych zagadnieniach.
 
 ## <a name="online-store-channel"></a>Kanał sklepu internetowego
 
@@ -74,7 +74,7 @@ Dynamics 365 Commerce korzysta z usługi Azure Active Directory (Azure AD) dla k
 
 ## <a name="overview-of-the-default-site-pages"></a>Omówienie domyślnych stron witryny
 
-Witryny **domyślna** i **fabrikam** zawierają wstępnie skonfigurowane szablony, fragmenty i strony, aby ułatwić rozpoczęcie pracy. Aby uzyskać więcej informacji, zobacz następujące tematy:
+Witryny **domyślna** i **fabrikam** zawierają wstępnie skonfigurowane szablony, fragmenty i strony, aby ułatwić rozpoczęcie pracy. Aby uzyskać więcej informacji, zobacz następujące artykuły:
 
 - [Omówienie strony głównej](quick-tour-home-page.md)
 - [Omówienie stron szczegółów produktów](quick-tour-pdp.md)
@@ -83,7 +83,7 @@ Witryny **domyślna** i **fabrikam** zawierają wstępnie skonfigurowane szablon
 
 ## <a name="manage-site-settings"></a>Zarządzanie ustawieniami witryny
 
-Aby uzyskać więcej informacji dotyczących zarządzania ustawieniami witryny, zobacz następujące tematy:
+Aby uzyskać więcej informacji dotyczących zarządzania ustawieniami witryny, zobacz następujące artykuły:
 
 - [Zarządzanie użytkownikami i rolami e-Commerce](manage-ecommerce-users-roles.md)
 - [Zagadnienia optymalizacji aparatu wyszukiwania (SEO) dla witryny](search-engine-optimization-considerations.md)
@@ -92,7 +92,7 @@ Aby uzyskać więcej informacji dotyczących zarządzania ustawieniami witryny, 
 
 ## <a name="manage-site-content"></a>Zarządzanie zawartością witryny
 
-Aby uzyskać więcej informacji dotyczących zarządzania zawartością witryny, zobacz następujące tematy:
+Aby uzyskać więcej informacji dotyczących zarządzania zawartością witryny, zobacz następujące artykuły:
 
 - [Słownik terminów dotyczących modelu strony](page-elements-overview.md)
 - [Dokumentowanie stanów i cyklów życia](document-states-overview.md)

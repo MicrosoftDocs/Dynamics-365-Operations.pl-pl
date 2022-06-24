@@ -1,6 +1,6 @@
 ---
 title: Obsługa podwójnej waluty dla podatku
-description: W tym temacie opisano sposób rozszerzania funkcji księgowania podwójnej waluty w domenie podatkowej oraz wpływu na potrzeby obliczania i księgowania podatku
+description: W tym artykule opisano sposób rozszerzania funkcji księgowania podwójnej waluty w domenie podatkowej oraz wpływu na potrzeby obliczania i księgowania podatku
 author: EricWang
 ms.date: 12/11/2020
 ms.topic: article
@@ -15,17 +15,17 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: fcd5a3afb442d9c85aba12b7782cf09f88f0e51a
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 13d70d964a83c2efba090244d549bdb38ad25af2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713052"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909048"
 ---
 # <a name="dual-currency-support-for-sales-tax"></a>Obsługa podwójnej waluty dla podatku
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak rozszerzyć rozliczanie w dwóch walutach dla podatków od sprzedaży oraz wpływ na obliczenia, księgowanie i rozliczenia podatku od sprzedaży.
+W tym artykule wyjaśniono, jak rozszerzyć rozliczanie w dwóch walutach dla podatków od sprzedaży oraz wpływ na obliczenia, księgowanie i rozliczenia podatku od sprzedaży.
 
 Funkcja podwójnej waluty w Dynamics 365 Finance została wprowadzona w wersji 8.1 (październik 2018). Zmienia sposób obliczania wpisów księgowych w walucie raportowania.
 
@@ -89,7 +89,7 @@ Ta funkcja jest stosowana tylko w przypadku nowych transakcji. W przypadku trans
 
 Aby zapobiec poprzedzającym scenariuszom, zalecamy zmianę tej wartości parametru w nowym (czystym) okresie rozliczania podatku, który nie zawiera żadnych nierozstrzygniętych transakcji podatkowych. Aby zmienić tę wartość w środku okresu rozliczania podatku, przed zmianą tej wartości parametru uruchom program „Rozlicz i zasięguj podatek” dla bieżącego okresu rozliczania podatku.
 
-Ta funkcja spowoduje dodanie wpisów księgowych, które objaśniają zyski i straty z wymian walut. Zapisy będą dokonywane na kontach zrealizowanej korekty walutowej w przypadku, gdy przeszacowanie będzie dokonywane przy rozliczeniu podatku od sprzedaży. Aby uzyskać więcej informacji, zobacz sekcję [Automatyczne rozliczanie podatku w walucie raportowania](#tax-settlement-auto-balance-in-reporting-currency) w dalszej części tego tematu.
+Ta funkcja spowoduje dodanie wpisów księgowych, które objaśniają zyski i straty z wymian walut. Zapisy będą dokonywane na kontach zrealizowanej korekty walutowej w przypadku, gdy przeszacowanie będzie dokonywane przy rozliczeniu podatku od sprzedaży. Aby uzyskać więcej informacji, zobacz sekcję [Automatyczne rozliczanie podatku w walucie raportowania](#tax-settlement-auto-balance-in-reporting-currency) w dalszej części tego artykułu.
 
 > [!NOTE]
 > W trakcie rozrachunku informacje wymiarów finansowych pobierane są z kont podatku obrotowego, które są kontami bilansowymi, i wprowadzane do rachunków zysków i strat z korektą walutową, które są rachunkami zysków i strat. Ponieważ ograniczenia wartości wymiarów finansowych różnią się pomiędzy kontami bilansowymi i kontami rachunku zysków i strat, może wystąpić błąd podczas procesu Rozliczania i księgowania podatku od sprzedaży. Aby uniknąć konieczności modyfikowania struktur kont, można włączyć funkcję „Uzupełnienie wymiarów finansowych do kont zrealizowanych korekt walutowych zysków/strat z tytułu rozliczenia podatku od sprzedaży”. Funkcja ta wymusi wyprowadzenie wymiarów finansowych na rachunki zysków i strat po korekcie walutowej. 

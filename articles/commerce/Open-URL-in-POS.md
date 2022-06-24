@@ -1,6 +1,6 @@
 ---
-title: Otwieranie adresu URL w aplikacji punktu sprzedaży
-description: Ten temat zawiera omówienie ulepszeń wprowadzonych w produkcie i funkcji wyszukiwania klientów w rozwiązaniu Dynamics 365 Commerce.
+title: Otwieranie adresu URL w punkcie sprzedaży
+description: Ten artykuł zawiera omówienie ulepszeń wprowadzonych w produkcie i funkcji wyszukiwania klientów w rozwiązaniu Dynamics 365 Commerce.
 author: AamirAllaq
 ms.date: 01/28/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 0e02a08e5afd15fd9622495fd77f4dc01b85786bcffc222b5c979c82a59a6aab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 529908df866c71ea84d90bbb5d46b23311ed74d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714121"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853969"
 ---
 # <a name="open-url-in-pos"></a>Otwieranie adresu URL w punkcie sprzedaży
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano, jak można skonfigurować przycisk w punkcie sprzedaży (POS) Dynamics 365 Commerce, aby otworzyć adres URL. Ta funkcja nie wymaga dostosowania kodu i może być skonfigurowana przez dowolną osobę, która nie ma roli dewelopera. 
+W tym artykule opisano, jak można skonfigurować przycisk w punkcie sprzedaży (POS) Dynamics 365 Commerce, aby otworzyć adres URL. Ta funkcja nie wymaga dostosowania kodu i może być skonfigurowana przez dowolną osobę, która nie ma roli dewelopera. 
 
 Ta funkcja umożliwia konfigurację przycisku w punkcie sprzedaży, otwieranie adresu URL przy użyciu projektanta siatki przycisków. Obecnie jest to obsługiwane w następujących konfiguracjach:
 

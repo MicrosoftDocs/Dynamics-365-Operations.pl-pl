@@ -1,6 +1,6 @@
 ---
-title: Katalogi Commerce dla B2B FAQ
-description: Ten temat zawiera odpowiedzi na często zadawane pytania dotyczące katalogów Microsoft Dynamics 365 Commerce.
+title: Katalogi rozwiązania Commerce dla B2B — często zadawane pytania
+description: Ten artykuł zawiera odpowiedzi na często zadawane pytania dotyczące katalogów Microsoft Dynamics 365 Commerce.
 author: ashishmsft
 ms.date: 05/18/2022
 ms.topic: article
@@ -9,19 +9,19 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: 5bdc7dfcb0e48aa85db2db4d178c5bf62ea0411b
-ms.sourcegitcommit: bca0cb730307948368a9aabe322cf963688ed8b1
+ms.openlocfilehash: 0cd11b4469e4dbd1205ace785fe857f6c6001480
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8782869"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849048"
 ---
-# <a name="commerce-catalogs-for-b2b-faq"></a>Katalogi Commerce dla B2B FAQ
+# <a name="commerce-catalogs-for-b2b-faq"></a>Katalogi rozwiązania Commerce dla B2B — często zadawane pytania
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-Ten temat zawiera odpowiedzi na najczęściej zadawane pytania dotyczące [katalogów business-to-business (B2B)](catalogs-b2b-sites.md) Microsoft Dynamics 365 Commerce.
+Ten artykuł zawiera odpowiedzi na najczęściej zadawane pytania dotyczące [katalogów business-to-business (B2B)](catalogs-b2b-sites.md) Microsoft Dynamics 365 Commerce.
 
 ## <a name="why-cant-i-configure-a-catalog-specific-navigation-hierarchy-or-see-an-option-to-associate-a-customer-hierarchy"></a>Dlaczego nie mogę skonfigurować hierarchii nawigacji specyficznej dla danego katalogu ani nie widzę opcji powiązania z hierarchią klientów?
 

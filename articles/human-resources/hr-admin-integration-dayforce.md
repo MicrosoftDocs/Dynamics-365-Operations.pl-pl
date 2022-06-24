@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie integracji z rozwiązaniem Dayforce
-description: W tym temacie opisano krok po kroku sposób konfigurowania integracji między programami Microsoft Dynamics 365 Human Resources i Ceridian Dayforce.
+description: W tym artykule opisano krok po kroku sposób konfigurowania integracji między programami Microsoft Dynamics 365 Human Resources i Ceridian Dayforce.
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a4e95a78364fcee2c03614e110f9b5983abfde37
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 5a5d296dd4c1b09065fc47673dd540d8c122c482
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691340"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896142"
 ---
 # <a name="configure-integration-with-dayforce"></a>Konfigurowanie integracji z rozwiązaniem Dayforce
 
@@ -28,7 +28,7 @@ ms.locfileid: "8691340"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Integracja między programami Microsoft Dynamics 365 Human Resources i Ceridian Dayforce opiera się na kilku krokach konfiguracji, które opisano w tym temacie. Aby można było przetwarzać sesję płatności, należy skonfigurować integrację w rozwiązaniach Human Resources i Dayforce.
+Integracja między programami Microsoft Dynamics 365 Human Resources i Ceridian Dayforce opiera się na kilku krokach konfiguracji, które opisano w tym artykule. Aby można było przetwarzać sesję płatności, należy skonfigurować integrację w rozwiązaniach Human Resources i Dayforce.
 
 Jeśli korzystasz z usługi takiej jak Dayforce do realizowania sesji płatności, należy włączyć integrację w aplikacji Human Resources. Integracja wymaga określonych danych z programu Human Resources. W związku z tym należy sprawdzić, czy dane mapowane do systemu Dayforce są skonfigurowano w aplikacji Human Resources w sposób zapewniający obsługę integracji. Integracja wykorzystuje następujące ogólne kategorie danych:
 
@@ -37,7 +37,7 @@ Jeśli korzystasz z usługi takiej jak Dayforce do realizowania sesji płatnośc
 - Dane listy płac, takie jak cykle kalkulacji płac, okresy kalkulacji płac i kody zarobków
 - Dane pracowników
 
-W tym temacie opisano czynności, które należy wykonać, aby uaktywnić integrację, oraz wyjaśniono typy danych i szczegóły konfiguracji wymagane przez integrację.
+W tym artykule opisano czynności, które należy wykonać, aby uaktywnić integrację, oraz wyjaśniono typy danych i szczegóły konfiguracji wymagane przez integrację.
 
 ## <a name="enable-the-integration"></a>Włączanie integracji
 

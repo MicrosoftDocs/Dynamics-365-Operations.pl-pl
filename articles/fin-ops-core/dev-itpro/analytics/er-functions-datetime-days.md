@@ -1,6 +1,6 @@
 ---
 title: DAYS, funkcja ER
-description: Ten temat zawiera ogólne informacje o używaniu funkcji DAYS w module Raportowanie elektroniczne (ER).
+description: Ten artykuł zawiera ogólne informacje o używaniu funkcji DAYS w module Raportowanie elektroniczne (ER).
 author: NickSelin
 ms.date: 12/04/2019
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 19e363e7bc8b8ad898244702ad6ba14bcf490f5ca2381b006a35dc0ed9309d49
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 41a324ca93497f8b297c8c944f622b7829f1ceff
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750607"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881235"
 ---
 # <a name="days-er-function"></a>DAYS, funkcja ER
 

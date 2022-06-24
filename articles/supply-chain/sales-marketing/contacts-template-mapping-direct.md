@@ -1,6 +1,6 @@
 ---
 title: Synchronizowanie kontaktów w rozwiązaniu Sales bezpośrednio z kontaktami lub odbiorcami w rozwiązaniu Supply Chain Management
-description: W tym temacie omówiono szablony i podstawowe zadania, które są używane do synchronizowania pozycji Kontakt (Kontakty) i Kontakt (Klienci) kont z Dynamics 365 Sales do rozwiązań Dynamics 365 Supply Chain Management.
+description: W tym artykule omówiono szablony i podstawowe zadania, które są używane do synchronizowania encji Kontakt (Contacts) i Kontakt (Customers) z Dynamics 365 Sales do Dynamics 365 Supply Chain Managements.
 author: Henrikan
 ms.date: 10/25/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 57a9c2a860e99855e841f0f4276ba2f92767c2b1
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 4ddb91c34816791d8eca80e4798eb46c1b496439
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062522"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857352"
 ---
 # <a name="synchronize-contacts-directly-from-sales-to-contacts-or-customers-in-supply-chain-management"></a>Synchronizowanie kontaktów w rozwiązaniu Sales bezpośrednio z kontaktami lub odbiorcami w rozwiązaniu Supply Chain Management
 
@@ -32,7 +32,7 @@ ms.locfileid: "8062522"
 > [!NOTE]
 > Zanim zaczniesz używać rozwiązania Prospekt na gotówkę, zapoznaj się z tematem [Integrowanie danych na platformie Microsoft Dataverse for Apps](/powerapps/administrator/data-integrator).
 
-W tym temacie omówiono szablony i podstawowe zadania, które są używane do synchronizowania tabel Kontakt (Kontakty) i Kontakt (Klienci) kont bezpośrednio z Dynamics 365 Sales do rozwiązań Dynamics 365 Supply Chain Management.
+W tym artykule omówiono szablony i podstawowe zadania, które są używane do synchronizowania tabel Kontakt (Kontakty) i Kontakt (Klienci) kont bezpośrednio z Dynamics 365 Sales do rozwiązań Dynamics 365 Supply Chain Management.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Przepływ danych w rozwiązaniu Prospekt na gotówkę
 
@@ -126,7 +126,7 @@ Na poniższych ilustracjach pokazano przykładowe mapowanie szablonu w integrato
 ![Mapowanie szablonu kontaktu do klienta w Integratorze danych.](./media/contacts-direct-template-mapping-data-integrator-2.png)
 
 
-## <a name="related-topics"></a>Powiązane tematy
+## <a name="related-articles"></a>Powiązane artykuły
 
 [Od prospektu do gotówki](prospect-to-cash.md)
 

@@ -1,6 +1,6 @@
 ---
 title: Szczegóły transakcji inwentaryzacyjnej
-description: Ten temat zawiera przegląd strony szczegółów transakcji, na stronie ze szczegółami wybranej transakcji magazynowej.
+description: Ten artykuł zawiera przegląd strony szczegółów transakcji, na stronie ze szczegółami wybranej transakcji magazynowej.
 author: rachel-profitt
 ms.date: 04/25/2022
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2022-04-25
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: fd1416f21ce15dc832dd41ea4110c93bf5bb41a2
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 55e29d5804f57cd86fb5ddac5d6c5576b7ea5f61
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735918"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859395"
 ---
 # <a name="inventory-transaction-details"></a>Szczegóły transakcji inwentaryzacyjnej
 
@@ -36,8 +36,8 @@ Strona **szczegółów transakcji** jest dzielona na kilka skróconych kart. W p
 
 | Skrócona karta | Opis |
 |---|---|
-| Ogólny | Na tej skróconej karcie są podane podstawowe informacje o wybranej transakcji magazynowej. Oprócz pól widocznych na **stronie Transakcje magazynowe**, zawiera ona również dodatkowe pola, które opisano dalej w tym temacie. |
-| Aktualizacje | Ta skrócona karta zawiera informacje związane z fizycznym, finansowym i rozliczeniowym aspektami wybranej transakcji magazynowej. W zależności od bieżącego stanu transakcji niektóre pola mogą być puste. Jednak te pola są ustawiane automatycznie podczas zaksięgowania transakcji. Oprócz pól widocznych na **stronie Transakcje magazynowe**, ta skrócona karta zawiera dodatkowe pola opisane w dalszej części tego tematu. |
+| Ogólny | Na tej skróconej karcie są podane podstawowe informacje o wybranej transakcji magazynowej. Oprócz pól widocznych na **stronie Transakcje magazynowe**, zawiera ona również dodatkowe pola, które opisano dalej w tym artykule. |
+| Aktualizacje | Ta skrócona karta zawiera informacje związane z fizycznym, finansowym i rozliczeniowym aspektami wybranej transakcji magazynowej. W zależności od bieżącego stanu transakcji niektóre pola mogą być puste. Jednak te pola są ustawiane automatycznie podczas zaksięgowania transakcji. Oprócz pól widocznych na **stronie Transakcje magazynowe**, ta skrócona karta zawiera dodatkowe pola opisane w dalszej części tego artykułu. |
 | Księgowania w księdze | Na tej skróconej karcie pokazano typ księgowania i konto księgowe, które są używane do fizycznej aktualizacji, aktualizacji finansowej, fizycznego przychodu, opłat fizycznych, przychodów finansowych i opłat finansowych związanych z wybraną transakcją magazynowa. |
 | Odwołania | Ta skrócona karta zawiera dodatkowe informacje o transakcji źródłowej, która utworzyła wybraną transakcję magazynowe. Te informacje mogą na przykład zawierać szczegóły z zamówienia zakupu lub sprzedaży. |
 | Informacje pokrewne | Na tej skróconej karcie są podane dodatkowe informacje o wybranej transakcji magazynowej. Te pola mogą nie być ustawione, jeśli nie są one dostępne przez niektóre funkcje, takie jak kategorie zaopatrzenia lub projekty. |

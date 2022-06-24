@@ -1,6 +1,6 @@
 ---
 title: Analiza Internetu rzeczy (IoT) — strona główna
-description: Ten temat zawiera linki do informacji dotyczących analizy IoT.
+description: Ten artykuł zawiera linki do informacji dotyczących analizy IoT.
 author: johanhoffmann
 ms.date: 12/09/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-25
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2386d71fde8196304fde846cbff4cd45d1edc834
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: b43681b036379a6f95103d4bb17cbde018724552
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674429"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877632"
 ---
 # <a name="iot-intelligence-home-page"></a>Analiza Internetu rzeczy (IoT) — strona główna
 

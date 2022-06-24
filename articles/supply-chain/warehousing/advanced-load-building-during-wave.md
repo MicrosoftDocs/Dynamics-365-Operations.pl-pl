@@ -1,6 +1,6 @@
 ---
 title: Zaawansowane tworzenie ładunku podczas grupy czynności
-description: Ten temat zawiera informacje dotyczące zaawansowanego tworzenia ładunku podczas grupy czynności, które automatycznie przypisuje wysyłki do istniejących grup czynności w trakcie ich wykonywania. Dzięki temu można tworzyć znaczące ładunki odpowiadające ciężarówkom bez konieczności używania pulpitu planowania wysyłki ładunku.
+description: Ten artykuł zawiera informacje dotyczące zaawansowanego tworzenia ładunku podczas grupy czynności, które automatycznie przypisuje wysyłki do istniejących grup czynności w trakcie ich wykonywania. Dzięki temu można tworzyć znaczące ładunki odpowiadające ciężarówkom bez konieczności używania pulpitu planowania wysyłki ładunku.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 0dafac981bcdec307de6dc202f557e7b8837ae2e
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 3a630a7f388e0bbb6fee96e4de753b2380d305c3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670525"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863774"
 ---
 # <a name="advanced-load-building-during-wave"></a>Zaawansowane tworzenie ładunku podczas grupy czynności
 
@@ -220,7 +220,7 @@ Można skonfigurować dowolną liczbę szablonów tworzenia ładunków. Jednak, 
 
 ## <a name="scenario"></a>Scenariusz
 
-W tym scenariuszu przedstawiono sposób, w jaki ustawienia opisane wcześniej w tym temacie wpływają na operacje magazynowe w trakcie przetwarzania zamówienia sprzedaży. W tym scenariuszu używane są dane demonstracyjne **USMF** wraz z innymi wartościami demonstracyjnymi, które są dostępne w tych instrukcjach konfiguracyjnych.
+W tym scenariuszu przedstawiono sposób, w jaki ustawienia opisane wcześniej w tym artykule wpływają na operacje magazynowe w trakcie przetwarzania zamówienia sprzedaży. W tym scenariuszu używane są dane demonstracyjne **USMF** wraz z innymi wartościami demonstracyjnymi, które są dostępne w tych instrukcjach konfiguracyjnych.
 
 ### <a name="create-sales-orders"></a>Tworzenie zamówień sprzedaży
 

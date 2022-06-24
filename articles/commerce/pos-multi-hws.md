@@ -1,6 +1,6 @@
 ---
 title: Dedykowane terminale płatności oraz monity o drukarkę i szuflady kasowe
-description: Ten temat zawiera informacje o możliwości uzyskania dedykowanego terminalu płatności i powiadamiania użytkownika o wybranie szuflady kasowej oraz drukarki paragonów.
+description: Ten artykuł zawiera informacje o możliwości uzyskania dedykowanego terminalu płatności i powiadamiania użytkownika o wybranie szuflady kasowej oraz drukarki paragonów.
 author: BrianShook
 ms.date: 05/20/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: b955e55271471ac43ff4c2b217c6448b30536e06
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 7c010448e43bbfb1f949508ce1b62bd07f3107e1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779777"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874928"
 ---
 # <a name="dedicated-payment-terminals-and-prompts-for-a-printer-and-cash-drawer"></a>Dedykowane terminale płatności oraz monity o drukarkę i szuflady kasowe
 
 [!include [banner](includes/banner.md)]
 
-Ten temat zawiera informacje o możliwości uzyskania dedykowanego terminalu płatności i powiadamiania użytkownika o wybranie szuflady kasowej oraz drukarki paragonów.
+Ten artykuł zawiera informacje o możliwości uzyskania dedykowanego terminalu płatności i powiadamiania użytkownika o wybranie szuflady kasowej oraz drukarki paragonów.
 
 ## <a name="overview"></a>Omówienie
 
@@ -46,7 +46,7 @@ Microsoft Dynamics 365 Commerce wspiera te trendy, włączając scenariusz, w kt
 
 ## <a name="supported-pos-clients-and-devices"></a>Obsługiwani klienci i urządzenia punktu sprzedaży
 
-Funkcja opisana w tym temacie jest obsługiwana przez Modern POS dla Windows i Modern POS dla klientów punktu sprzedaży korzystających z Android.
+Funkcja opisana w tym artykule jest obsługiwana przez Modern POS dla Windows i Modern POS dla klientów punktu sprzedaży korzystających z Android.
 
 Ta funkcja obsługuje terminale płatności obsługiwane w sieci i drukarki paragonów. Obsługę szuflady kasowej można uzyskać, łącząc szufladę kasową z drukarką z obsługą sieci za pośrednictwem portu d/k.
 

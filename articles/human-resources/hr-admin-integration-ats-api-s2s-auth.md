@@ -1,6 +1,6 @@
 ---
 title: Uwierzytelnianie serwer-serwer dla interfejsu API integracji ATS
-description: W tym temacie opisano sposób skonfigurowania uwierzytelniania serwer-serwer na rzecz integracji z interfejsem API integracji Dynamics 365 Human Resources systemu śledzenia kandydatów (ATS).
+description: W tym artykule opisano sposób skonfigurowania uwierzytelniania serwer-serwer na rzecz integracji z interfejsem API integracji Dynamics 365 Human Resources systemu śledzenia kandydatów (ATS).
 author: jaredha
 ms.date: 06/30/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-06-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 350fb5a00b85f28fa8aef2ca50cf1f277b8f635e
-ms.sourcegitcommit: e4cc43b06ef3f0f562849e2c960025cb244d6017
+ms.openlocfilehash: de3dc29c5366996276c02576eba27f7e831e4ccf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "8743549"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879374"
 ---
 # <a name="server-to-server-authentication-for-the-ats-integration-api"></a>Uwierzytelnianie serwer-serwer dla interfejsu API integracji ATS
 
@@ -27,7 +27,7 @@ ms.locfileid: "8743549"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-W tym temacie opisano sposób skonfigurowania uwierzytelniania serwer-serwer na rzecz integracji aplikacji z interfejsem API integracji Dynamics 365 Human Resources systemu śledzenia kandydatów (ATS). Istnieje kilka warstw zabezpieczeń, którymi należy zarządzać, aby jednostka usługi mogła uzyskać dostęp do wirtualnej tabeli Microsoft Dataverse i powiązanych danych. Użytkownik musi uzyskać dostęp do tabeli wirtualnej Dataverse w Microsoft Power Platform oraz dostęp do danych w Dynamics 365 Human Resources.
+W tym artykule opisano sposób skonfigurowania uwierzytelniania serwer-serwer na rzecz integracji aplikacji z interfejsem API integracji Dynamics 365 Human Resources systemu śledzenia kandydatów (ATS). Istnieje kilka warstw zabezpieczeń, którymi należy zarządzać, aby jednostka usługi mogła uzyskać dostęp do wirtualnej tabeli Microsoft Dataverse i powiązanych danych. Użytkownik musi uzyskać dostęp do tabeli wirtualnej Dataverse w Microsoft Power Platform oraz dostęp do danych w Dynamics 365 Human Resources.
 
 ## <a name="enable-access-to-dataverse-virtual-tables-in-power-platform"></a>Włącz dostęp do tabel wirtualnych Dataverse w Power Platform
 

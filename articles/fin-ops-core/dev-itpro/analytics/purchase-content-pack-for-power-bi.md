@@ -1,6 +1,6 @@
 ---
 title: Pakiet zawartości usługi Power BI Analiza wydatków zakupowych
-description: W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Power BI Analiza wydatków zakupowych.
+description: W tym artykule opisano, co się znajduje w pakiecie zawartości usługi Power BI Analiza wydatków zakupowych.
 author: FrankDahl
 ms.date: 04/24/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: global
 ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a40d4f39a7119def9ed0393d4ced2be1f7e801a5c1c3f984b002e5224299915a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 08937d36be27f7b21ab50473715cc155e4fd0c9e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716119"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892748"
 ---
 # <a name="purchase-spend-analysis-power-bi-content"></a>Pakiet zawartości usługi Power BI Analiza wydatków zakupowych
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano, co się znajduje w pakiecie zawartości **Analiza wydatków zakupowych** usługi Microsoft Power BI. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
+W tym artykule opisano, co się znajduje w pakiecie zawartości **Analiza wydatków zakupowych** usługi Microsoft Power BI. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
 
 ## <a name="overview"></a>Przegląd
 

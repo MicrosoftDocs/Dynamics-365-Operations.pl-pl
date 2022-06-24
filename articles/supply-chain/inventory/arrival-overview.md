@@ -1,6 +1,6 @@
 ---
 title: Przegląd przyjęć
-description: Ten temat zawiera informacje dotyczące funkcji przeglądu przyjęć. Strona Przegląd przyjęć jest częścią tej funkcji i zawiera przegląd wszystkich towarów, których przybycia oczekuje się jako towary przychodzące.
+description: Ten artykuł zawiera informacje dotyczące funkcji przeglądu przyjęć. Strona Przegląd przyjęć jest częścią tej funkcji i zawiera przegląd wszystkich towarów, których przybycia oczekuje się jako towary przychodzące.
 author: yufeihuang
 ms.date: 11/02/2017
 ms.topic: article
@@ -18,20 +18,20 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 1248156ba9081fe4afbffd480b45cf9326d14a6c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8118db9469c01c43b23c64ee383ac1d383a0ba7a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567446"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874080"
 ---
 # <a name="arrival-overview"></a>Przegląd przyjęć
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje dotyczące funkcji przeglądu przyjęć. Strona Przegląd przyjęć jest częścią tej funkcji i zawiera przegląd wszystkich towarów, których przybycia oczekuje się jako towary przychodzące.
+Ten artykuł zawiera informacje dotyczące funkcji przeglądu przyjęć. Strona Przegląd przyjęć jest częścią tej funkcji i zawiera przegląd wszystkich towarów, których przybycia oczekuje się jako towary przychodzące.
 
-Strona **Przegląd przyjęć** strona zawiera przegląd wszystkich oczekiwanych towarów przychodzących. Pokazuje również przybycia, które można inicjować w oparciu o przegląd. Ten temat koncentruje się na procesie przyjęcia.
+Strona **Przegląd przyjęć** strona zawiera przegląd wszystkich oczekiwanych towarów przychodzących. Pokazuje również przybycia, które można inicjować w oparciu o przegląd. Ten artykuł koncentruje się na procesie przyjęcia.
 
 ## <a name="business-scenario"></a>Scenariusz biznesowy
 Rozważmy następujący scenariusz w procesach przychodzących.

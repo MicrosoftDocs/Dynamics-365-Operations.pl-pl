@@ -1,6 +1,6 @@
 ---
 title: Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.6 (listopad 2019 r.)
-description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.6.
+description: W tym artykule opisano nowe oraz zmienione funkcje dostępne w Dynamics 365 Supply Chain Management 10.0.6.
 author: kamaybac
 ms.date: 10/28/2019
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 87bcda25b89135e052a5a883b816ea0bb430479a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8c97e4e5544c49d2e6a13b34061abfbf50e2932a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568910"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844446"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1006-november-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.6 (listopad 2019 r.)
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Supply Chain Management 10.0.6. Ta wersja ma numer kompilacji 10.0.234. W czasie, gdy ogólna Data dostępności jest w listopadzie, nowe funkcje są dostępne do wczesnego wydania w październiku. Aby uzyskać więcej informacji o 10.0.6, zobacz [Dodatkowe zasoby](whats-new-scm-10-0-6.md#additional-resources).
+W tym artykule opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Supply Chain Management 10.0.6. Ta wersja ma numer kompilacji 10.0.234. W czasie, gdy ogólna Data dostępności jest w listopadzie, nowe funkcje są dostępne do wczesnego wydania w październiku. Aby uzyskać więcej informacji o 10.0.6, zobacz [Dodatkowe zasoby](whats-new-scm-10-0-6.md#additional-resources).
 
 ## <a name="product-configuration-models-v2-data-entity"></a>Jednostka danych (wersja 2) modeli konfiguracji produktu
 
@@ -60,12 +60,12 @@ Zajrzyj do [Dynamics 365: plan wydania 2019 aktualizacja 2](/dynamics365-release
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Usunięte i przestarzałe funkcje Supply Chain Management
 
-W temacie [Usunięte lub przestarzałe funkcje w Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) opisano funkcje, które są wycofane lub zostały zaplanowane do usunięcia w Supply Chain Management.
+W artykule [Usunięte lub przestarzałe funkcje w Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) opisano funkcje, które są wycofane lub zostały zaplanowane do usunięcia w Supply Chain Management.
 
 - *Usunięta* funkcja nie jest już dostępna w produkcie.
 - *Przestarzała* funkcja nie jest aktywnie tworzona i może zostać usunięta w przyszłej aktualizacji.
 
-Zanim jakakolwiek funkcja zostanie usunięta z produktu, powiadomienie o zaniechaniu będzie anonsowane w sekcji na temat [usuniętych lub przestarzałych funkcji w Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 miesięcy przed usunięciem.
+Zanim jakakolwiek funkcja zostanie usunięta z produktu, powiadomienie o zaniechaniu będzie anonsowane w sekcji artykułu na temat [usuniętych lub przestarzałych funkcji w Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 miesięcy przed usunięciem.
 
 W przypadku zmian, które wpływają tylko na czas kompilacji, ale są zgodne z trybem piaskownicy i środowiskami produkcyjnymi, czas niezgodności będzie krótszy niż 12 miesięcy. Zazwyczaj są to aktualizacje funkcjonalne, które należy wykonać w kompilatorze.
 

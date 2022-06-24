@@ -1,6 +1,6 @@
 ---
 title: Wykrywanie porzuconych koszyków i wysyłanie powiadomień do klientów
-description: W tym temacie opisano, jak dostosować przykładową aplikację łącznika porzuconych koszyków Microsoft Dynamics 365 Commerce, aby wykrywać porzucone koszyki i wysyłać klientom powiadomienia e-mail z przypomnieniem.
+description: W tym artykule opisano, jak dostosować przykładową aplikację łącznika porzuconych koszyków Microsoft Dynamics 365 Commerce, aby wykrywać porzucone koszyki i wysyłać klientom powiadomienia e-mail z przypomnieniem.
 author: bicyclingfool
 ms.date: 02/25/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 1db4e988653aa55db2b18fb201edeafc4d16a1bc
-ms.sourcegitcommit: ab690bc897699ff8a4c489e749251fe0367050ca
+ms.openlocfilehash: 707640ca211e997533d0f5a0b4e6d52cb5be9db4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/26/2022
-ms.locfileid: "8489037"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899217"
 ---
 # <a name="detect-abandoned-carts-and-send-notifications-to-customers"></a>Wykrywanie porzuconych koszyków i wysyłanie powiadomień do klientów
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano, jak dostosować przykładową aplikację łącznika porzuconych koszyków Microsoft Dynamics 365 Commerce, aby wykrywać porzucone koszyki i wysyłać klientom powiadomienia e-mail z przypomnieniem.
+W tym artykule opisano, jak dostosować przykładową aplikację łącznika porzuconych koszyków Microsoft Dynamics 365 Commerce, aby wykrywać porzucone koszyki i wysyłać klientom powiadomienia e-mail z przypomnieniem.
 
 Możliwość odzyskania przychodu i zatrzymania odbiorców poprzez powiadomienia o porzuconych koszykach jest ważnymi możliwościami, które obsługują Dynamics 365 Commerce. Przez dostosowanie przykładowej aplikacji Commerce Porzucony łącznik koszyka sprzedawcy detaliczni mogą uzyskać dostęp do koszyków w programie Retail Server, które nie zostały zmodyfikowane w okresie czasu, który definiują sprzedawcy detaliczni. Koszyki te można następnie pobierać, rozszerzać przy użyciu danych produktów i klientów oraz przesyłać do zewnętrznego dostawcy marketingu poczty e-mail, który może generować powiadomienia pocztą e-mail i wysyłać do nich odbiorców.
 

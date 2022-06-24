@@ -1,6 +1,6 @@
 ---
 title: Tworzenie płatności dla dostawców za pomocą propozycji płatności
-description: Ten temat zawiera omówienie opcji propozycji płatności wraz z przykładami pokazującymi działanie propozycji płatności.
+description: Ten artykuł zawiera omówienie opcji propozycji płatności wraz z przykładami pokazującymi działanie propozycji płatności.
 author: abruer
 ms.date: 04/04/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 101cbcc77b2e1eab9fb4b6724fc5e3e8925a54c5
-ms.sourcegitcommit: 836695c0e95d366ba993f34eee30f57191f356d8
+ms.openlocfilehash: 64290ebd47295bea5bc4bf843f7a9d9528375ce7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8629474"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845382"
 ---
-# <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Tworzenie płatności od dostawców za pomocą propozycji płatności
+# <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Tworzenie płatności dla dostawców za pomocą propozycji płatności
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera omówienie opcji propozycji płatności wraz z przykładami pokazującymi działanie propozycji płatności. Propozycje płatności są często używane do tworzenia płatności dostawcy, ponieważ za pomocą zapytań można szybko wybrać faktury dostawcy do zapłaty na podstawie kryteriów takich jak termin i rabat gotówkowy. 
+Ten artykuł zawiera omówienie opcji propozycji płatności wraz z przykładami pokazującymi działanie propozycji płatności. Propozycje płatności są często używane do tworzenia płatności dostawcy, ponieważ za pomocą zapytań można szybko wybrać faktury dostawcy do zapłaty na podstawie kryteriów takich jak termin i rabat gotówkowy. 
 
 Organizacje często używają propozycji płatności do tworzenia płatności dla dostawców, ponieważ przy użyciu propozycji płatności można szybko wybrać faktury od dostawcy do zapłacenia na podstawie terminu, rabatu gotówkowego i innych kryteriów. 
 

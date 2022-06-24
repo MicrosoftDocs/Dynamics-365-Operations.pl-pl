@@ -1,6 +1,6 @@
 ---
 title: Rozwiązywanie problemów z ustawieniami prognozowania przepływów pieniężnych
-description: W tym temacie znajdują się odpowiedzi na pytania, które mogą się pojawić podczas konfigurowania prognozowania przepływów pieniężnych. Zawiera odpowiedzi na często zadawane pytania (FAQ) dotyczące konfiguracji przepływu środków pieniężnych, aktualizacji przepływów pieniężnych i przepływów pieniężnych Power BI.
+description: W tym artykule znajdują się odpowiedzi na pytania, które mogą się pojawić podczas konfigurowania prognozowania przepływów pieniężnych. Zawiera odpowiedzi na często zadawane pytania (FAQ) dotyczące konfiguracji przepływu środków pieniężnych, aktualizacji przepływów pieniężnych i przepływów pieniężnych Power BI.
 author: panolte
 ms.date: 03/23/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2020-12-30
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: e2b5a8df84ff5159a85526251a6367857afa1808
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 0e3438bc07fde28d5d9d2d5b3d83bbe70692c0bd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724578"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878078"
 ---
 # <a name="troubleshoot-cash-flow-forecasting-setup"></a>Rozwiązywanie problemów z ustawieniami prognozowania przepływów pieniężnych
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie znajdują się odpowiedzi na pytania, które mogą się pojawić podczas konfigurowania prognozowania przepływów pieniężnych. Zawiera odpowiedzi na często zadawane pytania (FAQ) dotyczące konfiguracji przepływu środków pieniężnych, aktualizacji przepływów pieniężnych i przepływów pieniężnych Power BI.
+W tym artykule znajdują się odpowiedzi na pytania, które mogą się pojawić podczas konfigurowania prognozowania przepływów pieniężnych. Zawiera odpowiedzi na często zadawane pytania (FAQ) dotyczące konfiguracji przepływu środków pieniężnych, aktualizacji przepływów pieniężnych i przepływów pieniężnych Power BI.
 
 ## <a name="why-is-cash-flow-shown-for-only-one-legal-entity"></a>Dlaczego przepływ pieniężny jest pokazywany tylko dla jednej firmy?
 

@@ -1,6 +1,6 @@
 ---
 title: Parametry magazynu dla przetwarzania grupy czynności
-description: W tym temacie opisano sposób konfigurowania parametrów magazynu dla przetwarzania grupy czynności. Można użyć przetwarzania grupy czynności do pogrupowania pracy pobierania dla wielu zamówień w jedną grupę czynności.
+description: W tym artykule opisano sposób konfigurowania parametrów magazynu dla przetwarzania grupy czynności. Można użyć przetwarzania grupy czynności do pogrupowania pracy pobierania dla wielu zamówień w jedną grupę czynności.
 author: Mirzaab
 ms.date: 03/08/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: c259ff6c5a2f1190afb82c2ab7ecdc99e2b05846
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 2a64cba837faf84f3e8470a9831d1641213a5cc4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695515"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909620"
 ---
 # <a name="warehouse-parameters-for-wave-processing"></a>Parametry magazynu dla przetwarzania grupy czynności
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób konfigurowania parametrów magazynu dla przetwarzania grupy czynności. Można użyć przetwarzania grupy czynności do pogrupowania pracy pobierania dla wielu zamówień w jedną grupę czynności.
+W tym artykule opisano sposób konfigurowania parametrów magazynu dla przetwarzania grupy czynności. Można użyć przetwarzania grupy czynności do pogrupowania pracy pobierania dla wielu zamówień w jedną grupę czynności.
 
 Aby użyć przetwarzania grupy czynności, na stronie **Parametry zarządzania magazynem** określ następujące elementy:
 

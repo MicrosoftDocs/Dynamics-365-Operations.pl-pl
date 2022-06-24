@@ -1,6 +1,6 @@
 ---
 title: Horyzonty czasowe zapotrzebowania
-description: W tym temacie opisano sposób skonfigurowania horyzontów czasowych zapotrzebowania w przypadku korzystania z optymalizacji planowania. Horyzont czasowy zapotrzebowania wskazuje horyzont i limit planowania.
+description: W tym artykule opisano sposób skonfigurowania horyzontów czasowych zapotrzebowania w przypadku korzystania z optymalizacji planowania. Horyzont czasowy zapotrzebowania wskazuje horyzont i limit planowania.
 author: t-benebo
 ms.date: 01/18/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2021-01-18
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 12deca22fd6ff3cb4556e0525ab831e1aea0ee33
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: ebd59e05d2ae227f24e7dae6fae3634aab026c5a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468924"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847941"
 ---
 # <a name="coverage-time-fences"></a>Horyzonty czasowe zapotrzebowania
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie opisano sposób skonfigurowania *horyzontów czasowych zapotrzebowania* w przypadku korzystania z optymalizacji planowania. Planiści mogą definiować horyzont planowania (horyzont czasowy zapotrzebowania w dniach) oraz wykluczyć podaż i popyt wykraczający poza ten horyzont. Dlatego też za pomocą horyzontów czasowych zapotrzebowania można zapobiec „hałasowi”, który jest spowodowany sugestiami podaży, których nie trzeba zaksięgować przez wiele miesięcy. Przykłady to prognozy na następny rok i zamówienia klientów, które są poza zwykłym czasem realizacji.
+W tym artykule opisano sposób skonfigurowania *horyzontów czasowych zapotrzebowania* w przypadku korzystania z optymalizacji planowania. Planiści mogą definiować horyzont planowania (horyzont czasowy zapotrzebowania w dniach) oraz wykluczyć podaż i popyt wykraczający poza ten horyzont. Dlatego też za pomocą horyzontów czasowych zapotrzebowania można zapobiec „hałasowi”, który jest spowodowany sugestiami podaży, których nie trzeba zaksięgować przez wiele miesięcy. Przykłady to prognozy na następny rok i zamówienia klientów, które są poza zwykłym czasem realizacji.
 
 Horyzont czasowy zapotrzebowania to liczba dni po dacie dzisiejszej (lub dokładniej: dacie uruchomienia planowania), w których podaż i popyt są wykluczone. Aby uniknąć opóźnień, należy upewnić się, że ten horyzont czasowy zapotrzebowania jest dłuższy niż łączny czas realizacji. Domyślna wartość systemowa to 100 dni.
 

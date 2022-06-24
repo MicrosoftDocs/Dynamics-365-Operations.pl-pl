@@ -1,6 +1,6 @@
 ---
 title: Szybko składaj zamówienia witryny B2B
-description: W tym temacie opisano możliwości Microsoft Dynamics 365 Commerce, które umożliwiają użytkownikom witryn typu business-to-business (B2B) szybkie składanie zamówień zbiorczych i powtarzanie zamówień.
+description: W tym artykule opisano możliwości Microsoft Dynamics 365 Commerce, które umożliwiają użytkownikom witryn typu business-to-business (B2B) szybkie składanie zamówień zbiorczych i powtarzanie zamówień.
 author: shajain
 ms.date: 02/16/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8ac4833b2ca05e90b4019ffdfc4b669c542b0cf6
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 0b13fb49c49b0a540b192f4dd0f3a847fb5dd8a7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686553"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881368"
 ---
 # <a name="place-b2b-website-orders-quickly"></a>Szybko składaj zamówienia witryny B2B
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie opisano możliwości Microsoft Dynamics 365 Commerce, które umożliwiają użytkownikom witryn typu business-to-business (B2B) szybkie składanie zamówień zbiorczych i powtarzanie zamówień.
+W tym artykule opisano możliwości Microsoft Dynamics 365 Commerce, które umożliwiają użytkownikom witryn typu business-to-business (B2B) szybkie składanie zamówień zbiorczych i powtarzanie zamówień.
 
 Dynamics 365 Commerce witryny sieci Web portalu B2B umożliwiają użytkownikom wykonywanie standardowych operacji, takich jak wyszukiwanie i przeglądanie nowych produktów, przeglądanie szczegółów produktu, dodawanie towarów do koszyka i wyeencjonowywanie ich. Jeśli jednak odbiorcy z przedsiębiorstwa B2C zwykle zamawiają towary w małych ilościach, klienci B2B zazwyczaj zamawiają towary w dużych ilościach i ponownie zamawiają je wielokrotnie. Ponieważ odbiorcy zwykle wiedzą dokładnie, jakie towary mają kupować, często pomijają fazę wykrywania produktów i przeszli bezpośrednio do zamówienia. Aby zaspokajać potrzeby tych odbiorców, witryny sieci Web commerce B2B e-commerce dostarczają różnych możliwości, które ułatwiają im szybkie składanie zamówień.
 
@@ -65,4 +65,4 @@ Na poniższej ilustracji pokazano przykład historii zamówień użytkownika ora
 
 ![Ponowne zamawianie z historii zamówień.](../media/Reorder.png)
 
-W tym temacie opisano tylko kilka sposobów, w jaki witryny Commerce B2B pomagają użytkownikom w szybkie znajdowanie, zamawianie i ponowne zamawianie produktów, które chcą. W celu dalszego upraszczania procesu przechwytywania zamówień zbiorczych należy tworzyć dodatkowe możliwości.
+W tym artykule opisano tylko kilka sposobów, w jaki witryny Commerce B2B pomagają użytkownikom w szybkie znajdowanie, zamawianie i ponowne zamawianie produktów, które chcą. W celu dalszego upraszczania procesu przechwytywania zamówień zbiorczych należy tworzyć dodatkowe możliwości.

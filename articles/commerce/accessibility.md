@@ -1,6 +1,6 @@
 ---
 title: Funkcje i możliwości dostępności
-description: Ten temat zawiera informacje na temat funkcji i możliwości ułatwień dostępu w usłudze Microsoft Dynamics 365 Commerce.
+description: Ten artykuł zawiera informacje na temat funkcji i możliwości ułatwień dostępu w usłudze Microsoft Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 04/14/2020
 ms.topic: article
@@ -14,24 +14,24 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 77c5b2e40c3dd16b95afe421d4515c45af0e81358940c29a14c03754c39a076e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8f4e73ebaf6dc3fc6eb97f69df8545c9ab9fa9df
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716283"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853909"
 ---
 # <a name="accessibility-features-and-capabilities"></a>Funkcje i możliwości dostępności
 
 [!include [banner](includes/banner.md)]
 
-Ten temat zawiera informacje na temat funkcji i możliwości ułatwień dostępu w usłudze Microsoft Dynamics 365 Commerce.
+Ten artykuł zawiera informacje na temat funkcji i możliwości ułatwień dostępu w usłudze Microsoft Dynamics 365 Commerce.
 
 Funkcje i możliwości ułatwień dostępu umożliwiają wszystkim użytkownikom dostęp do akcji i ich wykonywanie ich, dzięki czemu mogą osiągać założone cele. Ten szeroki zakres użytkowników może wymagać narzędzi wspomagających dla słuchu, wzroku, mobilności lub neuroróżnorodności.
 
 Różne funkcje aplikacji Dynamics 365 Commerce umożliwiają kompilowanie witryny tak, aby zawierała funkcje pomocnicze. Podczas projektowania witryny należy wziąć pod uwagę obszary funkcji ułatwień dostępu, które są wymienione w [centrum ułatwień dostępu Microsoft](https://www.microsoft.com/accessibility). 
 
-W tym temacie opisano niektóre dodatkowe obszary funkcji ułatwień dostępu, które należy wziąć pod uwagę podczas korzystania z aplikacji Dynamics 365 Commerce.
+W tym artykule opisano niektóre dodatkowe obszary funkcji ułatwień dostępu, które należy wziąć pod uwagę podczas korzystania z aplikacji Dynamics 365 Commerce.
 
 ## <a name="image-alt-text"></a>Tekst alternatywny obrazu
 

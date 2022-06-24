@@ -1,6 +1,6 @@
 ---
 title: Tworzenie dynamicznych stron handlu elektronicznego na podstawie parametrów adresu URL
-description: W tym temacie opisano, jak skonfigurować stronę handlu elektronicznego Microsoft Dynamics 365 Commerce, która może obsługiwać zawartość dynamiczną na podstawie parametrów adresu URL.
+description: W tym artykule opisano, jak skonfigurować stronę handlu elektronicznego Microsoft Dynamics 365 Commerce, która może obsługiwać zawartość dynamiczną na podstawie parametrów adresu URL.
 author: StuHarg
 ms.date: 05/27/2022
 ms.topic: article
@@ -9,19 +9,19 @@ ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
-ms.openlocfilehash: 3443dad9ead40b59da994c56e22fe2599f4bac82
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: e2b13403ffb316059476a03857c849b4f9f8cb9c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811038"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884670"
 ---
 # <a name="create-dynamic-e-commerce-pages-based-on-url-parameters"></a>Tworzenie dynamicznych stron handlu elektronicznego na podstawie parametrów adresu URL
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-W tym temacie opisano, jak skonfigurować stronę handlu elektronicznego Microsoft Dynamics 365 Commerce, która może obsługiwać zawartość dynamiczną na podstawie parametrów adresu URL.
+W tym artykule opisano, jak skonfigurować stronę handlu elektronicznego Microsoft Dynamics 365 Commerce, która może obsługiwać zawartość dynamiczną na podstawie parametrów adresu URL.
 
 Stronę w usługach handlu elektronicznego można skonfigurować tak, aby obsługiowała inną zawartość, w zależności od segmentu w ścieżce adresu URL. Dlatego strona jest znana jako strona dynamiczna. Segment jest używany jako parametr pobierania zawartości strony. Na przykład strona utworzona w programie budującym witrynę i nazwana **blog\_viewer** zostanie zmapowana do adresu URL `https://fabrikam.com/blog`. Następnie można użyć tej strony, aby wyświetlić inną zawartość, opartą na ostatnim segmencie ścieżki adresu URL. Na przykład ostatnim segmentem adresu URL `https://fabrikam.com/blog/article-1` jest **artykuł-1**.
 

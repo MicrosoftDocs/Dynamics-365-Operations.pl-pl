@@ -1,6 +1,6 @@
 ---
 title: Zarządzaj użytkownikami partnerów biznesowych w witrynach handlu elektronicznego B2B
-description: W tym temacie opisano, jak dodawać, usuwać i edytować użytkowników partnerów biznesowych w witrynach e-commerce Microsoft Dynamics 365 Commerce typu business-to-business (B2B) oraz w centrali Commerce.
+description: W tym artykule opisano, jak dodawać, usuwać i edytować użytkowników partnerów biznesowych w witrynach e-commerce Microsoft Dynamics 365 Commerce typu business-to-business (B2B) oraz w centrali Commerce headquarters.
 author: josaw1
 ms.date: 04/19/2022
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ef8ae583f18048fc6a36adf38ee7be0fb5b02fcd
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 4a3d1c7bf7e7ea545590315d9e185fa525b5d5e3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686331"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860302"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>Zarządzaj użytkownikami partnerów biznesowych w witrynach handlu elektronicznego B2B
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie opisano, jak dodawać, usuwać i edytować użytkowników partnerów biznesowych w witrynach e-commerce Microsoft Dynamics 365 Commerce typu business-to-business (B2B) oraz w centrali Commerce.
+W tym artykule opisano, jak dodawać, usuwać i edytować użytkowników partnerów biznesowych w witrynach e-commerce Microsoft Dynamics 365 Commerce typu business-to-business (B2B) oraz w centrali Commerce headquarters.
 
 > [!NOTE]
-> - Warunkiem [wstępnym tego dokumentu jest temat Zarządzanie partnerami biznesowymi b2B przy użyciu hierarchii](partners-customer-hierarchies.md) klientów.
+> - Warunkiem [wstępnym tego dokumentu jest artykuł Zarządzanie partnerami biznesowymi b2B przy użyciu hierarchii](partners-customer-hierarchies.md) klientów.
 > - Upewnij się, że zainicjowałeś encję Typy dokumentów w centrali Commerce, otwierając formularz **Typy dokumentów** w zakładce **Administracja organizacji \> Zarządzanie dokumentami \> Typy dokumentów**.
 
 Witryny handlu elektronicznego B2B wymagają od organizacji rejestracji, aby zostać partnerami biznesowymi. Po przesłaniu przez organizację danych rejestracyjnych do witryny handlu elektronicznego B2B żądanie rejestracji przechodzi proces kwalifikacji. Jeśli organizacja zostanie pomyślnie zakwalifikowana, zostaje przyjęta jako partner biznesowy.
@@ -121,7 +121,7 @@ Aby dołączyć partnerów biznesowych i użytkowników w centrali Commerce, wyk
 
 ## <a name="additional-information"></a>Informacje dodatkowe
 
-- Wszystkie zadania wymienione w tym temacie można skonfigurować do uruchamiania zgodnie z harmonogramem w formacie wsadowym. Oczekiwania jest takie, że partnerzy biznesowi konfigurują w razie potrzeby zadania wsadowe.
+- Wszystkie zadania wymienione w tym artykule można skonfigurować do uruchamiania zgodnie z harmonogramem w formacie wsadowym. Oczekiwania jest takie, że partnerzy biznesowi konfigurują w razie potrzeby zadania wsadowe.
 - Obecnie tylko jeden rekord użytkownika / klienta można wyznaczyć jako użytkownika administratora, a tę rolę można zmienić tylko w centrali Commerce. Nie ma wsparcia dla funkcji samoobsługi, które pozwalają partnerom biznesowym na wyznaczanie wielu administratorów lub zmianę administratorów w witrynach handlu elektronicznego B2B.
 - Chociaż można zdefiniować limity wydatków dla użytkowników, wymuszanie limitów wydatków podczas procesu wprowadzania zamówienia nie zostało jeszcze wdrożone.
 - Cała logika biznesowa i sprawdzanie poprawności działania użytkownika w witrynie handlu elektronicznego B2B są oparte na konfiguracji rekordu klienta, który jest mapowany na użytkownika w siedzibie firmy Commerce.

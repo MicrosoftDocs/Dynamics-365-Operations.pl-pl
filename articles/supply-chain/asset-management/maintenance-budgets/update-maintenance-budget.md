@@ -1,6 +1,6 @@
 ---
 title: Aktualizowanie budżetu konserwacji
-description: W tym temacie wyjaśniono, jak aktualizować budżet konserwacji w zarządzaniu składnikami majątku.
+description: W tym artykule wyjaśniono, jak aktualizować budżet konserwacji w zarządzaniu składnikami majątku.
 author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 87c054cb96d56e40e35ee44142396f59d61395263ff41232423f6c7911478b0d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a9333c9ad48c87159ed4071a8b4843fc0e55ceb5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724947"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860965"
 ---
 # <a name="update-maintenance-budgets"></a>Aktualizowanie budżetu konserwacji
 

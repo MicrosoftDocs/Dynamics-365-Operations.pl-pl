@@ -1,6 +1,6 @@
 ---
 title: Jak pracownicy korzystają z interfejsu wykonania hal produkcyjnych
-description: W tym temacie opisano sposób korzystania z interfejsu wykonywania pomieszczeń produkcyjnych z punktu widzenia pracownika.
+description: W tym artykule opisano sposób korzystania z interfejsu wykonywania pomieszczeń produkcyjnych z punktu widzenia pracownika.
 author: johanhoffmann
 ms.date: 01/24/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: f163b8feb906470f31a648bf09abf5647c5f1bab
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 9c0d87dfb4c432f9cff0f1172139dbcda6308275
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644998"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860675"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Jak pracownicy korzystają z interfejsu wykonania hal produkcyjnych
 
@@ -34,7 +34,7 @@ Po przygotowaniu urządzenia zostanie na nim wyświetlona strona logowania. Na t
 
 ![Strona logowania do interfejsu wykonania hali produkcyjnej.](media/pfei-sign-in-page.png "Strona logowania do interfejsu wykonania hali produkcyjnej")
 
-Pozostałe sekcje w tym temacie opisują sposób interakcji pracowników z interfejsem.
+Pozostałe sekcje w tym artykule opisują sposób interakcji pracowników z interfejsem.
 
 ## <a name="all-jobs-tab"></a>Karta wszystkie zadania
 

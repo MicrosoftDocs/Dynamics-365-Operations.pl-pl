@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie sklepów internetowych
-description: Ten artykuł zawiera łącza do tematów, które pomogą centralnie konfigurować i zarządzać sklepem internetowym.
+description: Ten artykuł zawiera łącza do artykułów, które pomogą centralnie konfigurować i zarządzać sklepem internetowym.
 author: kfend
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,24 +14,24 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 87607e2c42ee67d62a7ce2e87744e9d9143dcf81
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: c8a5b13189eb93d4df81a427a932b81ab8d830be
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734111"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861886"
 ---
 # <a name="configure-online-stores"></a>Konfigurowanie sklepów internetowych
 
 [!include [banner](../includes/banner.md)]
 
-Ten artykuł zawiera łącza do tematów, które pomogą centralnie konfigurować i zarządzać sklepem internetowym.
+Ten artykuł zawiera łącza do artykułów, które pomogą centralnie konfigurować i zarządzać sklepem internetowym.
 
-Tematy wymienione w tabeli poniżej pomagają skonfigurować składniki modułu Commerce oraz sklep internetowy na komputerze klienckim.
+Artykuły wymienione w tabeli poniżej pomagają skonfigurować składniki modułu Commerce oraz sklep internetowy na komputerze klienckim.
 
 ## <a name="configure-an-online-store"></a>Konfigurowanie sklepu internetowego
 
-| Zadanie                                                | Szczegóły                                                                                                                                                                                                                                                                                                                                                   | Tematy                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Zadanie                                                | Szczegóły                                                                                                                                                                                                                                                                                                                                                   | Artykuły                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Konfiguruj składniki.                        | Konfigurowanie informacji operacji handlu i zarządzanie nimi. Informacje te dotyczą sklepów, podatków, produktów, kart upominkowych, promocji i rabatów.                                                                                                                                                                                                          | [Konfigurowanie i obsługiwanie modułu Retail](/dynamicsax-2012/appuser-itpro/setting-up-and-maintaining-retail) (materiał w serwisie TechNet dla systemu Microsoft Dynamics AX 2012)                                                                                                                                                                                                                                                                                          |
 | Konfigurowanie hierarchii nawigacji w kanale.    | Tworzenie hierarchii kategorii nawigacji w kanale w celu ustanowienia struktury kategorii dla produktów, które oferujesz przez sklep internetowy. Definiujesz hierarchię kategorii, a następnie przypisujesz produkty, grupy atrybutów produktów i wartości atrybutów do kategorii. Następnie należy przypisać hierarchię kategorii do sklepu internetowego.                            | [Konfigurowanie hierarchii modułu detalicznego](/dynamicsax-2012/appuser-itpro/set-up-a-retail-hierarchy)</br> (Zawartość w witrynie TechNet dla AX 2012)</br> [Ustawianie atrybutów i typów atrybutów](/dynamicsax-2012/appuser-itpro/set-up-attributes-and-attribute-types) (zawartość w witrynie TechNet dla AX 2012)</br> [Ustawianie grup atrybutów sieci sprzedaży](/dynamicsax-2012/appuser-itpro/set-up-retail-attribute-groups) (zawartość w witrynie TechNet dla AX 2012) |
@@ -41,7 +41,7 @@ Tematy wymienione w tabeli poniżej pomagają skonfigurować składniki modułu 
 
 ## <a name="configure-online-store-products"></a>Konfigurowanie produktów sklepu internetowego
 
-| Zadanie                                 | Szczegóły                                                                                                                                           | Tematy                                                                                                                                                                                                                                                                            |
+| Zadanie                                 | Szczegóły                                                                                                                                           | Artykuły                                                                                                                                                                                                                                                                            |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Dodawanie asortymentów do sklepu internetowego | Dodawanie asortymentu zawierającego produkty oferowane w sklepie internetowym.                                                                  | [Konfigurowanie sklepu internetowego](/dynamicsax-2012/appuser-itpro/set-up-an-online-store) (materiał w serwisie TechNet dla systemu AX 2012)                                                                                                                                              |
 | Zarządzanie katalogami                     | Za pomocą katalogów produktów można identyfikować produkty, które chcesz oferować w swoich sklepach.                                                              | [Najważniejsze zadania: tworzenie katalogów produktów sieci sprzedaży](/dynamicsax-2012/appuser-itpro/key-tasks-create-retail-product-catalogs) (materiał w serwisie TechNet dla systemu AX 2012)                                                                                                                           |
@@ -52,7 +52,7 @@ Tematy wymienione w tabeli poniżej pomagają skonfigurować składniki modułu 
 
 ## <a name="set-up-data-exchange-between-commerce-and-the-online-store"></a>Konfigurowanie wymiany danych między Commerce a sklepem internetowym
 
-| Zadanie                                 | Szczegóły                                                                                                                               | Tematy                                                                                                                                                                                                                                                                                  |
+| Zadanie                                 | Szczegóły                                                                                                                               | Artykuły                                                                                                                                                                                                                                                                                  |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Konfigurowanie profil integracji kanałów | Profile umożliwiają składnikom komunikowanie się między sobą. Profile należy skonfigurować przed skonfigurowaniem ustawień wymiany danych. | [Konfigurowanie usługi Real-time Service](/dynamicsax-2012/appuser-itpro/set-up-a-real-time-service-profile) (zawartość w witrynie TechNet dla AX 2012)</br> [Konfigurowanie profilu kanału](/dynamicsax-2012/appuser-itpro/set-up-a-channel-profile) (zawartość w witrynie TechNet dla AX 2012) |
 

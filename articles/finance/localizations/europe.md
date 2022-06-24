@@ -1,6 +1,6 @@
 ---
 title: Europa — omówienie
-description: Ten temat zawiera łącza do zasobów dokumentacji Microsoft Dynamics 365 Finance dla Europy.
+description: Ten artykuł zawiera łącza do zasobów dokumentacji Microsoft Microsoft Dynamics 365 Finance dla Europy.
 author: kfend
 ms.date: 01/15/2022
 ms.topic: overview
@@ -12,18 +12,18 @@ ms.search.region: global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b7a3dd75f526a076b6fe696f71ec623e20abb24
-ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
+ms.openlocfilehash: 9a9fd88bde02d8ea4f6eeda5e8785366ec0d8e85
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8367892"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856526"
 ---
 # <a name="europe-overview"></a>Europa — omówienie
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje i łącza do zasobów, które mogą pomóc w konfiguracji dla firm z adresem podstawowym w Europie. 
+Ten artykuł zawiera informacje i linki do zasobów, które mogą pomóc w konfiguracji dla firm z adresem podstawowym w Europie. 
 
 - [Omówienie posiadaczy zaliczek](emea-advance-holders.md)
  - [Transakcje posiadacza zaliczki](emea-advance-holders-transactions.md)

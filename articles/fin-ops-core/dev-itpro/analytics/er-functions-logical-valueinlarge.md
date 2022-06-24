@@ -1,6 +1,6 @@
 ---
 title: Funkcja VALUEINLARGE ER
-description: Ten temat zawiera ogólne informacje o używaniu funkcji VALUEIN ER w module Raportowanie elektroniczne (ER).
+description: Ten artykuł zawiera ogólne informacje o używaniu funkcji VALUEIN ER w module Raportowanie elektroniczne (ER).
 author: NickSelin
 ms.date: 08/17/2020
 ms.prod: ''
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-08-01
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 57b2246631b31cce10d086da29e76b729059a64aa6a3c2d8cf864dd70085dbfd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 977c1cd7dac75781677461b288bc8e5e79d13e6f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725267"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888154"
 ---
 # <a name="valueinlarge-er-function"></a>Funkcja VALUEINLARGE ER
 
 [!include [banner](../includes/banner.md)]
 
-Funkcja `VALUEINLARGE` określa, czy podane dane wejściowe typu *Int64* lub *Integer* pasują do którejkolwiek wartości określonego elementu na podanej liście. Zwraca ona *wartość logiczną* **TRUE**, jeśli określone dane wejściowe pasują do wyniku uruchamiania określonego wyrażenia dla co najmniej jednego rekord z danej listy. W przeciwnym wypadku zwraca ona wartość *logiczną* **FALSE**. Aby zrozumieć różnicę związaną z funkcją `VALUEIN`, zapoznaj się z sekcją [Wskazówki użycia](#usage_note), znajdującą się w dalszej części tego tematu.
+Funkcja `VALUEINLARGE` określa, czy podane dane wejściowe typu *Int64* lub *Integer* pasują do którejkolwiek wartości określonego elementu na podanej liście. Zwraca ona *wartość logiczną* **TRUE**, jeśli określone dane wejściowe pasują do wyniku uruchamiania określonego wyrażenia dla co najmniej jednego rekord z danej listy. W przeciwnym wypadku zwraca ona wartość *logiczną* **FALSE**. Aby zrozumieć różnicę związaną z funkcją `VALUEIN`, zapoznaj się z sekcją [Wskazówki użycia](#usage_note), znajdującą się w dalszej części tego artykułu.
 
 ## <a name="syntax"></a>Składnia
 

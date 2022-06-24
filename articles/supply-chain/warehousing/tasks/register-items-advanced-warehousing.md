@@ -1,6 +1,6 @@
 ---
 title: Rejestrowanie pozycji dla włączonej pozycji zaawansowanego magazynowania za pomocą arkusza przyjęć towarów
-description: W tym temacie pokazano sposób rejestrowania towarów za pomocą arkusza przyjęcia towaru, gdy jest używany zaawansowany proces zarządzania magazynem.
+description: W tym artykule pokazano sposób rejestrowania towarów za pomocą arkusza przyjęcia towaru, gdy jest używany zaawansowany proces zarządzania magazynem.
 author: Mirzaab
 ms.date: 03/24/2021
 ms.topic: business-process
@@ -14,22 +14,22 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e753897d1e21ffebbcbfac48abab4b0549c3553f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ac4a681484f0cd843ccd73633040f0fa0be0475e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565262"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863629"
 ---
 # <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>Rejestrowanie pozycji dla włączonej pozycji zaawansowanego magazynowania za pomocą arkusza przyjęć towarów
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie pokazano sposób rejestrowania towarów za pomocą arkusza przyjęcia towaru, gdy jest używany zaawansowany proces zarządzania magazynem. Zazwyczaj wykonuje to pracownik przyjmujący.
+W tym artykule pokazano sposób rejestrowania towarów za pomocą arkusza przyjęcia towaru, gdy jest używany zaawansowany proces zarządzania magazynem. Zazwyczaj wykonuje to pracownik przyjmujący.
 
 ## <a name="enable-sample-data"></a>Włącz dane przykładowe
 
-Aby przejść przez ten scenariusz, używając przykładowych rekordów i wartości określonych w tym temacie, musisz używać systemu, w którym są zainstalowane standardowe dane demonstracyjne, i przed rozpoczęciem musisz wybrać firmy *USMF*.
+Aby przejść przez ten scenariusz, używając przykładowych rekordów i wartości określonych w tym artykule, musisz używać systemu, w którym są zainstalowane standardowe dane demonstracyjne, i przed rozpoczęciem musisz wybrać firmy *USMF*.
 
 Zamiast tego można przejść przez ten scenariusz, zastępując wartości z własnych danych, pod warunkiem że dostępne są następujące dane:
 

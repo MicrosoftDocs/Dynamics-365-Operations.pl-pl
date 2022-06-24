@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie środków trwałych
-description: W tym temacie omówiono konfigurację modułu Środki trwałe.
+description: W tym artykule omówiono konfigurację modułu Środki trwałe.
 author: moaamer
 ms.date: 06/08/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 164f19d4b346a51d4f5d43064cb33bf0c01378dd
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 3baa842dadddd0f763f803528d322b9561b3141e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726246"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910150"
 ---
 # <a name="set-up-fixed-assets"></a>Konfigurowanie środków trwałych
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie omówiono konfigurację modułu **Środki trwałe**. 
+W tym artykule omówiono konfigurację modułu **Środki trwałe**. 
 
 Parametry kontrolują ogólne zachowanie w module Środki trwałe. Grupy środków trwałych umożliwiają grupowanie składników aktywów oraz określanie domyślnych atrybutów dla każdego składnika aktywów przypisanego do grupy. Grupom środków trwałych są przypisywane księgi. Księgi śledzą wartości finansowe środków trwałych w czasie przy użyciu konfiguracji amortyzacji, która jest zdefiniowana w profilu amortyzacji.
 

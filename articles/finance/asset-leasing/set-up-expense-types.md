@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie typów wydatków
-description: W tym temacie wyjaśniono, jak konfigurować typy wydatków w module Wynajem składnika majątku.
+description: W tym artykule wyjaśniono, jak konfigurować typy wydatków w module Wynajem składnika majątku.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2019-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 349ba0f5fa040b7c9a957defe1140c4016d6fded
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 9978041059437d5d3556236c7ac02c00db93f933
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727687"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908046"
 ---
 # <a name="set-up-expense-types"></a>Konfigurowanie typów wydatków
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak konfigurować typy wydatków w module Wynajem składnika majątku. Koszty, które nie są reprezentowane w harmonogramie płatności, są nazywane *kosztami wydatków*. Przykładami tych kosztów są podatki od nieruchomości, wspólne koszty utrzymania obszaru oraz koszty ubezpieczenia.
+W tym artykule wyjaśniono, jak konfigurować typy wydatków w module Wynajem składnika majątku. Koszty, które nie są reprezentowane w harmonogramie płatności, są nazywane *kosztami wydatków*. Przykładami tych kosztów są podatki od nieruchomości, wspólne koszty utrzymania obszaru oraz koszty ubezpieczenia.
 
 ## <a name="add-an-administrative-expense-type"></a>Dodawanie typu wydatku administracyjnego
 

@@ -1,6 +1,6 @@
 ---
 title: Konfiguracja obejść dla kroków w elementach menu urządzeń mobilnych
-description: W tym temacie opisano sposób konfigurowania obejść dla pozycji menu, tak aby pracownicy mogli przerwać bieżące zadanie, wykonać inne zadanie, a następnie powrócić do pierwotnego zadania bez utraty jakichkolwiek informacji.
+description: W tym artykule opisano sposób konfigurowania obejść dla pozycji menu, tak aby pracownicy mogli przerwać bieżące zadanie, wykonać inne zadanie, a następnie powrócić do pierwotnego zadania bez utraty jakichkolwiek informacji.
 author: Mirzaab
 ms.date: 10/15/2021
 ms.topic: article
@@ -11,21 +11,21 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 874abbdf7c0938a7ad4cc66e23dd01d901a1f0d3
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 69090def1bba2f64ed21cca8b6d4629083aeb0c4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920355"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863600"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>Konfiguracja obejść dla kroków w elementach menu urządzeń mobilnych
 
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> Funkcje opisane w tym temacie dotyczą tylko nowej aplikacji mobilnej Warehouse Management. Nie wpływają one na starą aplikację magazynu, która jest obecnie przestarzała.
+> Funkcje opisane w tym artykule dotyczą tylko nowej aplikacji mobilnej Warehouse Management. Nie wpływają one na starą aplikację magazynu, która jest obecnie przestarzała.
 
-W tym temacie opisano sposób konfigurowania obejść dla pozycji menu, tak aby pracownicy mogli przerwać bieżące zadanie, wykonać inne zadanie, a następnie powrócić do pierwotnego zadania bez utraty jakichkolwiek informacji.
+W tym artykule opisano sposób konfigurowania obejść dla pozycji menu, tak aby pracownicy mogli przerwać bieżące zadanie, wykonać inne zadanie, a następnie powrócić do pierwotnego zadania bez utraty jakichkolwiek informacji.
 
 Obejście to osobna pozycja menu, którą można otworzyć z kroku zadania głównego. Po zakończeniu obejścia pracownik wraca do miejsca, w którym opuścił główne zadanie. Podczas konfiguracji należy określić pozycję menu, która ma pełnić funkcję obejścia. Wybierasz również, które wartości pól z zadania głównego mają być automatycznie przekazywane (kopiowane) do obejścia i tam wprowadzane. Dlatego musisz zrozumieć, w którym miejscu przepływu zadań chcesz, aby obejście było dostępne dla pracowników. Należy również upewnić się, że informacje, które muszą być skopiowane do obejścia, są dostępne dla tego kroku przepływu zadań.
 
@@ -46,7 +46,7 @@ Zanim będzie można skonfigurować obejścia dla kroków w pozycjach menu urzą
     - **Moduł:** *Zarządzanie magazynem*
     - **Nazwa funkcjonalności:** *Obejścia aplikacji do zarządzania magazynem*
 
-    Ta funkcja jest opisana w tym temacie.
+    Ta funkcja jest opisana w tym artykule.
 
 1. Zaktualizuj nazwy pól w aplikacji mobilnej Warehouse Management, przechodząc do **Zarządzanie magazynem \> Konfiguracja \> Urządzenie mobilne \> Nazwy pól aplikacji Warehouse** i wybierając **Utwórz konfigurację domyślną**. Aby uzyskać więcej informacji, zobacz temat [Konfigurowanie pól aplikacji mobilnej Warehouse Management](configure-app-field-names-priorities-warehouse.md).
 1. Powtórz poprzedni krok dla każdej osoby prawnej (firmy), w której korzystasz z aplikacji mobilnej Warehouse Management.
@@ -57,7 +57,7 @@ Aby skonfigurować obejście na podstawie wymuszenia określonego w menu, należ
 
 1. Utworzyć nadpisanie dla danego menu i kroku zgodnie z opisem w punkcie [Dostosowywanie tytułów kroków i instrukcji dla aplikacji mobilnej Warehouse Management](mobile-app-titles-instructions.md).
 1. Znajdź kombinację wartości **Identyfikator kroku** i **Nazwa opcji menu**, które chcesz edytować, i wybierz wartość w kolumnie **Identyfikator kroku**.
-1. Na stronie, która się pojawi, na skróconej karcie **Dostępne obejścia (pozycje menu)**, można określić pozycję menu, która powinna działać jako obejścia. Możesz także wybrać, które wartości pól z zadania głównego powinny być automatycznie kopiowane do i z obejścia. Przykłady pokazujące, jak korzystać z tych ustawień, można znaleźć w scenariuszach w dalszej części tego tematu.
+1. Na stronie, która się pojawi, na skróconej karcie **Dostępne obejścia (pozycje menu)**, można określić pozycję menu, która powinna działać jako obejścia. Możesz także wybrać, które wartości pól z zadania głównego powinny być automatycznie kopiowane do i z obejścia. Przykłady pokazujące, jak korzystać z tych ustawień, można znaleźć w scenariuszach w dalszej części tego artykułu.
 
 ## <a name="sample-scenario-1-sales-picking-where-a-location-inquiry-acts-as-a-detour"></a>Przykładowy scenariusz 1: Kompletacja sprzedaży, w której zapytanie o lokalizację pełni rolę obejścia
 

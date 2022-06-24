@@ -1,6 +1,6 @@
 ---
 title: Strefy kwarantanny niezgodności
-description: W tym temacie opisano sposób tworzenia i używania stref kwarantanny w niezgodnościach.
+description: W tym artykule opisano sposób tworzenia i używania stref kwarantanny w niezgodnościach.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 207950a2ff4057853488f75d0e302a049d228b76
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 2e556d2aa078a76ff4f81b6763535c38ce1cca0e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578471"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857729"
 ---
 # <a name="quarantine-zones-for-nonconformances"></a>Strefy kwarantanny niezgodności
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób tworzenia i używania stref kwarantanny w niezgodnościach.
+W tym artykule opisano sposób tworzenia i używania stref kwarantanny w niezgodnościach.
 
 Strona **Strefy kwarantanny** służy do definiowania stref, które można przypisać do niezgodności. Podczas tworzenia niezgodności można ustawić pola **Strefa kwarantanny** i **Typ kwarantanny** na karcie **Ogólne** na stronie **Niezgodności**. Pole **Strefa kwarantanny** zazwyczaj wskazuje obszar lub lokalizację, w której znajduje się towar. Pole **Typ kwarantanny** definiuje towar jako *Ograniczone użycie* lub *Nienadający się do użytku*.
 

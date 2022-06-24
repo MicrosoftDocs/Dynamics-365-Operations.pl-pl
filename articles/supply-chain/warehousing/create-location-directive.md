@@ -1,6 +1,6 @@
 ---
 title: Praca z dyrektywami lokalizacji
-description: W tym temacie opisano sposób pracy z dyrektywami lokalizacji. Dyrektywy lokalizacji to zdefiniowane przez użytkownika zasady pomagające w zidentyfikowaniu lokalizacji pobrania i odłożenia do celów przesunięcia magazynowego.
+description: W tym artykule opisano sposób pracy z dyrektywami lokalizacji. Dyrektywy lokalizacji to zdefiniowane przez użytkownika zasady pomagające w zidentyfikowaniu lokalizacji pobrania i odłożenia do celów przesunięcia magazynowego.
 author: Mirzaab
 ms.date: 11/13/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 84ff0a466c037db05aecaff14aa2e17990ce8799
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 7705ea132521353cd6af7245df90aafaf23af885
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103145"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903703"
 ---
 # <a name="work-with-location-directives"></a>Praca z dyrektywami lokalizacji
 
@@ -27,7 +27,7 @@ ms.locfileid: "8103145"
 Dyrektywy lokalizacji to zasady pomagające w zidentyfikowaniu lokalizacji pobrania i odłożenia do celów przesunięcia magazynowego. Na przykład w ramach transakcji zamówienia sprzedaży, dyrektywa lokalizacji określa, gdzie towary zostaną pobrane i gdzie zostaną umieszczone pobrane zapasy. Dyrektywy lokalizacji składają się z nagłówka i skojarzonych wierszy. Są one tworzone dla wybranych *typów zleceń produkcyjnych*.
 
 > [!NOTE]
-> Ten temat dotyczy funkcji w module **Zarządzanie magazynem**. Nie ma zastosowania do funkcji w module [Zarządzanie zapasami](../inventory/inventory-home-page.md).
+> Ten artykuł dotyczy funkcji w module **Zarządzanie magazynem**. Nie ma zastosowania do funkcji w module [Zarządzanie zapasami](../inventory/inventory-home-page.md).
 
 Funkcja dyrektyw lokalizacji umożliwia wykonywanie następujących zadań:
 
@@ -109,7 +109,7 @@ W poniższej tabeli wymieniono pola charakterystyczne dla poszczególnych typów
 
 Aby wyświetlić **Dyrektywy lokalizacji**, przejdź do **Zarządzanie magazynem \> Konfiguracja \> Dyrektywy lokalizacji**.
 
-W tym miejscu można wyświetlać, tworzyć i edytować dyrektywy lokalizacji za pomocą poleceń dostępnych w okienku akcji. Pozostałe sekcje tego tematu zawierają informacje dotyczące używania wszystkich pól dostępnych na stronie.
+W tym miejscu można wyświetlać, tworzyć i edytować dyrektywy lokalizacji za pomocą poleceń dostępnych w okienku akcji. Pozostałe sekcje tego artykułu zawierają informacje dotyczące używania wszystkich pól dostępnych na stronie.
 
 ## <a name="action-pane"></a>Okienko akcji
 
@@ -162,7 +162,7 @@ Pola w **dyrektywach lokalizacji** na skróconej karcie są charakterystyczne dl
 - **Stosowany kod dyspozycji** – Określ, czy kod dyspozycji dyrektywy lokalizacji musi pasować do kodu dyspozycji stosowanego podczas przyjęcia towaru, lub czy dyrektywę lokalizacji można wybrać na podstawie dowolnego kodu dyspozycji. Po wybraniu *dokładnego dopasowania* i pozostawieniu pola **kodu dyspozycji** pustego, do celów niniejszej dyrektywy lokalizacji uwzględniane będą tylko puste kody dyspozycji.
 
     > [!NOTE]
-    > To pole jest dostępne tylko dla wybranych typów zlecenia produkcyjnego, w których jest dozwolone uzupełnienie zapasów. Aby uzyskać pełną listę, należy zapoznać się z [polami w sekcji Typy zleceń roboczych](#fields-specific-types) wcześniej w tym temacie.
+    > To pole jest dostępne tylko dla wybranych typów zlecenia produkcyjnego, w których jest dozwolone uzupełnienie zapasów. Aby uzyskać pełną listę, należy zapoznać się z [polami w sekcji Typy zleceń roboczych](#fields-specific-types) wcześniej w tym artykule.
 
 - **Znajdź według** — umożliwia określenie, czy ilość putaway powinna być całkowitą ilością na numer identyfikacyjny, czy powinna być towarem towaru. To pole służy do zapewnienia, że cała zawartość numeru identyfikacyjnego jest umieszczana w jednej lokalizacji, a system nie sugeruje podzielenia zawartości na kilka lokalizacji dla systemu **ASN** (odbierającego numer identyfikacyjny), **odbierania mieszanych numerów identyfikacyjnych** oraz **procesów odbierania w klastrze**. (Proces odbierania w **Klastrze** wymaga włączenia funkcji [Odłóż klaster](putaway-clusters.md).) Zachowanie kwerendy dotyczącej dyrektywy lokalizacji, wierszy oraz akcji dotyczących dyrektywy lokalizacji zależy od wybranej wartości. **Wiersze** skróconej karcie są używane tylko wtedy, gdy pole **Znajdź według** jest ustawione na wartość *pozycja*.
 
@@ -254,7 +254,7 @@ Po utworzeniu dyrektywy lokalizacji, każdy kod dyrektywy można skojarzyć z ko
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 - Wideo: [Konfiguracja zarządzania magazynem — zaawansowana](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
-- Temat pomocy: [Kontrola pracy magazynu za pomocą szablonów pracy i dyrektyw lokalizacji](control-warehouse-location-directives.md)
+- Artykuł pomocy: [Kontrola pracy magazynu za pomocą szablonów pracy i dyrektyw lokalizacji](control-warehouse-location-directives.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

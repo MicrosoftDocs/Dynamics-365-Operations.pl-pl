@@ -1,6 +1,6 @@
 ---
 title: Włączanie drukowania etykiet numeru identyfikacyjnego
-description: Ten temat pokazuje, jak włączyć automatyczne drukowanie etykiety z numerem seryjnym kontenera wysyłkowego (SSCC) po pobraniu ostatniego towaru z magazynu w procesie pracy pobierania dla sprzedaży.
+description: Ten artykuł pokazuje, jak włączyć automatyczne drukowanie etykiety z numerem seryjnym kontenera wysyłkowego (SSCC) po pobraniu ostatniego towaru z magazynu w procesie pracy pobierania dla sprzedaży.
 author: perlynne
 ms.date: 07/19/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b3895961f1f682a3fd06800a83a497afaf2fa65
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: dec552cac505b3fdc24dd453dbf723fa1d009ced
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565121"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903674"
 ---
 # <a name="enable-license-plate-label-printing"></a>Włączanie drukowania etykiet numeru identyfikacyjnego
 
 [!include [banner](../../includes/banner.md)]
 
-Ten temat pokazuje, jak włączyć automatyczne drukowanie etykiety z numerem seryjnym kontenera wysyłkowego (SSCC) po pobraniu ostatniego towaru z magazynu w procesie pracy pobierania dla sprzedaży. Procedurę można wykonać przy użyciu danych firmy demonstracyjnej USMF. Jeśli wykonujesz procedurę przy użyciu własnych danych, trzeba mieć zdefiniowaną sekwencję numeracji dla numerów identyfikacyjnych. Przed rozpoczęciem tego zadania należy skonfigurować drukarkę etykiet. Wybierz kolejno opcje Administrowanie organizacją > Ustawienia > Drukarki sieciowe. W okienku akcji kliknij przycisk Opcje, a następnie kliknij przycisk Pobierz instalatora agenta rozsyłania dokumentów. Uruchom instalatora i przed rozpoczęciem procedury upewnij się, że działająca drukarka sieciowa ma ustawiony status Aktywna.
+Ten artykuł pokazuje, jak włączyć automatyczne drukowanie etykiety z numerem seryjnym kontenera wysyłkowego (SSCC) po pobraniu ostatniego towaru z magazynu w procesie pracy pobierania dla sprzedaży. Procedurę można wykonać przy użyciu danych firmy demonstracyjnej USMF. Jeśli wykonujesz procedurę przy użyciu własnych danych, trzeba mieć zdefiniowaną sekwencję numeracji dla numerów identyfikacyjnych. Przed rozpoczęciem tego zadania należy skonfigurować drukarkę etykiet. Wybierz kolejno opcje Administrowanie organizacją > Ustawienia > Drukarki sieciowe. W okienku akcji kliknij przycisk Opcje, a następnie kliknij przycisk Pobierz instalatora agenta rozsyłania dokumentów. Uruchom instalatora i przed rozpoczęciem procedury upewnij się, że działająca drukarka sieciowa ma ustawiony status Aktywna.
 
 
 ## <a name="set-up-the-gs1-company-prefix"></a>Konfigurowanie prefiksu GS1 firmy

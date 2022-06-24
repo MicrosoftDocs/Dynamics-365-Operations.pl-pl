@@ -1,7 +1,7 @@
 ---
 title: Kalendarze i planowanie główne
-description: Ten temat zawiera omówienie kalendarzy łańcucha dostaw i ich wpływu na planowanie główne.
-author: ChristianRytt
+description: Ten artykuł zawiera omówienie kalendarzy łańcucha dostaw i ich wpływu na planowanie główne.
+author: t-benebo
 ms.date: 08/19/2020
 ms.topic: article
 ms.prod: ''
@@ -14,18 +14,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f424a2a050f917be2f0823c35ee2a47b4dd5cd0a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 182c22a77e73573b4e27a81f80debf67242b95c3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568622"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890981"
 ---
 # <a name="calendars-and-master-planning"></a>Kalendarze i planowanie główne
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera omówienie kalendarzy łańcucha dostaw i ich wpływu na planowanie główne.  Opisano różne kalendarze używane w aparacie planowania głównego łącznie z ich wpływem na daty wysyłki i odbioru zamówień planowanych. Podano też zalecenia odnośnie do przypisywania, używania i aktualizacji kalendarzy.
+Ten artykuł zawiera omówienie kalendarzy łańcucha dostaw i ich wpływu na planowanie główne.  Opisano różne kalendarze używane w aparacie planowania głównego łącznie z ich wpływem na daty wysyłki i odbioru zamówień planowanych. Podano też zalecenia odnośnie do przypisywania, używania i aktualizacji kalendarzy.
 
 ## <a name="definition-of-a-calendar"></a>Definicja kalendarze
 

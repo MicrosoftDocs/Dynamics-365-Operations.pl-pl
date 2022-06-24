@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 46079daafc744421abcbdf0a3539428f2a39f13c
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: acfd9be044818ab0f40171c25a8fc9e760173aa8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920530"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867935"
 ---
 # <a name="product-dimensions"></a>Wymiary produktu
 
@@ -47,7 +47,7 @@ Wartości wymiaru produktu dla wymiarów rozmiaru, koloru i stylu można utworzy
 
 Wartości wymiaru produktu dla wymiaru konfiguracji są zwykle tworzone za pomocą konfiguratora produktów lub konfiguratora opartego na wymiarach. 
 
-Wersje produktów są zwykle tworzone dla określonych wersji w miarę rozwoju produktu podczas jego cyklu życia. Wersje produktów opisano szczegółowo w dalszej części tego tematu.
+Wersje produktów są zwykle tworzone dla określonych wersji w miarę rozwoju produktu podczas jego cyklu życia. Wersje produktów opisano szczegółowo w dalszej części tego artykułu.
 
 Wymiary produktu mogą być również tworzone i obsługiwane na stronie **Wymiary produktu**, która jest dostępna z następujących miejsc:
 

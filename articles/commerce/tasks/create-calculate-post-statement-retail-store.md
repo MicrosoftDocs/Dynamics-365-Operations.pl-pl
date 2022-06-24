@@ -1,6 +1,6 @@
 ---
 title: Tworzenie, obliczanie i księgowanie zestawień dla sklepu sieci sprzedaży
-description: Ten temat opisuje kolejne kroki ręcznego tworzenia, obliczania i księgowania zestawienia dla sklepu.
+description: Ten artykuł opisuje kolejne kroki ręcznego tworzenia, obliczania i księgowania zestawienia dla sklepu.
 author: jashanno
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0a3d82daed16c1b37d10653f04c1dc473cd5c5abc3a6443972da6e8ecf9820f1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 740857e6a902e21588855eef5e36cac68e560898
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719879"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873285"
 ---
 # <a name="create-calculate-and-post-statements-for-a-retail-store"></a>Tworzenie, obliczanie i księgowanie zestawień dla sklepu sieci sprzedaży
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat opisuje kolejne kroki ręcznego tworzenia, obliczania i księgowania zestawienia dla sklepu. Istnieją także zadania wsadowe, które można skonfigurować na potrzeby tych samych zadań. Kroki konfigurowania i wykonywania zadań wsadowych znajdują się w innych artykułach. Aby wykonać tę procedurę, muszą istnieć transakcji, które zostały wykonane w punkcie sprzedaży, a następnie pobrane do systemu Dynamics 365 Commerce. Nagranie wykorzystuje dane firmy demonstracyjnej USRT.
+Ten artykuł opisuje kolejne kroki ręcznego tworzenia, obliczania i księgowania zestawienia dla sklepu. Istnieją także zadania wsadowe, które można skonfigurować na potrzeby tych samych zadań. Kroki konfigurowania i wykonywania zadań wsadowych znajdują się w innych artykułach. Aby wykonać tę procedurę, muszą istnieć transakcji, które zostały wykonane w punkcie sprzedaży, a następnie pobrane do systemu Dynamics 365 Commerce. Nagranie wykorzystuje dane firmy demonstracyjnej USRT.
 
 1. Wybierz opcję **Finanse sklepu** na stronie głównej.
 2. Wybierz opcję **Nowe zestawienie**.

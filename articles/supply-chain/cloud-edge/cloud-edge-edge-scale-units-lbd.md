@@ -1,6 +1,6 @@
 ---
 title: Rozmieszczanie jednostek skalowania urządzenia brzegowego na niestandardowym sprzęcie przy użyciu danych LBD
-description: W tym temacie opisano sposób ustanawiania lokalnych jednostek skalowania na krawędzi przy użyciu niestandardowego sprzętu i wdrożenia opartego na lokalnych danych biznesowych (LBD).
+description: W tym artykule opisano sposób ustanawiania lokalnych jednostek skalowania na krawędzi przy użyciu niestandardowego sprzętu i wdrożenia opartego na lokalnych danych biznesowych (LBD).
 author: Mirzaab
 ms.date: 01/24/2022
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 540ac1f6d69d869256f49b8501e18966575903fa
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 794de8c0d77949789e4046418ac2b55dba1bee02
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674094"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882758"
 ---
 # <a name="deploy-edge-scale-units-on-custom-hardware-using-lbd"></a>Rozmieszczanie jednostek skalowania urządzenia brzegowego na niestandardowym sprzęcie przy użyciu danych LBD
 
@@ -27,7 +27,7 @@ Jednostki skalowania na krawędzi mają znaczenie w dystrybuowanej topologii hyb
 
 Jednostki skalowania na krawędzi można wdrożyć, tworząc lokalne dane biznesowe (LBD) [w środowisku lokalnym](../../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md), a następnie konfigurując je, aby działały jako jednostka skalowania w dystrybuowanej topologii hybrydowej na potrzeby aplikacji Supply Chain Management. Można to osiągnąć przez skojarzenie lokalnego środowiska LBD ze środowiskiem Supply Chain Management w chmurze, które zostało skonfigurowane do działania jako piasta.  
 
-W tym temacie opisano sposób skonfigurowania lokalnego środowiska LBD jako jednostki skalowania na krawędzi, a następnie skojarzenia go z piastą.
+W tym artykule opisano sposób skonfigurowania lokalnego środowiska LBD jako jednostki skalowania na krawędzi, a następnie skojarzenia go z piastą.
 
 ## <a name="infrastructure-considerations"></a>Uwagi dotyczące infrastruktury
 
@@ -44,21 +44,21 @@ Poniżej znajduje się omówienie kroków wdrożenia.
 
 1. **Skonfiguruj i rozmieść środowisko LBD z *pustą* bazą danych.**
 
-    Użyj usług LCS, aby rozmieścić środowisko LBD z najnowszą topologią i pustą bazą danych. Aby uzyskać więcej informacji, zobacz sekcję [Konfigurowanie i rozmieszczanie środowiska LBD z pustą bazą danych](#set-up-deploy) w dalszej części tego tematu. Musisz używać aplikacji Supply Chain Management w wersji 10.0.21 lub nowszą w środowiskach piasty i jednostek skalowania.
+    Użyj usług LCS, aby rozmieścić środowisko LBD z najnowszą topologią i pustą bazą danych. Aby uzyskać więcej informacji, zobacz sekcję [Konfigurowanie i rozmieszczanie środowiska LBD z pustą bazą danych](#set-up-deploy) w dalszej części tego artykułu. Musisz używać aplikacji Supply Chain Management w wersji 10.0.21 lub nowszą w środowiskach piasty i jednostek skalowania.
 
 1. **Przekaż pakiety docelowe do zasobów projektu LBD w usługach LCS.**
 
-    Przygotuj pakiety aplikacji, platformy i dostosowywania, których używasz w piaście i jednostce skalowania na krawędzi. Aby uzyskać więcej informacji, zobacz sekcję [Przekazywanie pakietów docelowych do zasobów projektu LBD w usługach LCS](#upload-packages) w dalszej części tego tematu.
+    Przygotuj pakiety aplikacji, platformy i dostosowywania, których używasz w piaście i jednostce skalowania na krawędzi. Aby uzyskać więcej informacji, zobacz sekcję [Przekazywanie pakietów docelowych do zasobów projektu LBD w usługach LCS](#upload-packages) w dalszej części tego artykułu.
 
 1. **Serwisuj środowisko LBD przy użyciu pakietów docelowych.**
 
-    Dzięki temu krokowi ta sama kompilacja i dostosowywania zostaną rozmieszczone w obrębie piasty i satelity. Aby uzyskać więcej informacji, zobacz sekcję [Serwisowanie środowiska LBD przy użyciu pakietów docelowych](#service-target-packages) w dalszej części tego tematu.
+    Dzięki temu krokowi ta sama kompilacja i dostosowywania zostaną rozmieszczone w obrębie piasty i satelity. Aby uzyskać więcej informacji, zobacz sekcję [Serwisowanie środowiska LBD przy użyciu pakietów docelowych](#service-target-packages) w dalszej części tego artykułu.
 
 1. **Ukończ konfigurację jednostki skalowania i przypisanie obciążenia.**
 
-    Aby uzyskać więcej informacji, zobacz sekcję [Przypisywanie jednostki skalowania na krawędzi LBD do piasty](#assign-edge-to-hub) w dalszej części tego tematu.
+    Aby uzyskać więcej informacji, zobacz sekcję [Przypisywanie jednostki skalowania na krawędzi LBD do piasty](#assign-edge-to-hub) w dalszej części tego artykułu.
 
-Pozostałe sekcje tego tematu zawierają szczegółowe informacje o wykonywaniu tych kroków.
+Pozostałe sekcje tego artykułu zawierają szczegółowe informacje o wykonywaniu tych kroków.
 
 ## <a name="set-up-and-deploy-an-lbd-environment-with-an-empty-database"></a><a name="set-up-deploy"></a>Konfigurowanie i rozmieszczanie środowiska LBD z pustą bazą danych
 
@@ -67,7 +67,7 @@ Ten krok powoduje utworzenie funkcjonalnego środowiska LBD. Jednak środowisko 
 1. Wykonaj instrukcje z tematu [Ustawianie i wdrażanie środowisk lokalnych z użyciem aktualizacji Platform update 41 i nowszych](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md). Musisz używać aplikacji Supply Chain Management w wersji 10.0.21 lub nowszą w środowiskach piasty i jednostek skalowania. Ponadto skrypty infrastruktury muszą być w wersji 2.12.0 lub nowszej. 
 
     > [!IMPORTANT]
-    > Przeczytaj pozostałą część tej sekcji **przed** ukończeniem kroków w tym temacie.
+    > Przeczytaj pozostałą część tej sekcji **przed** ukończeniem kroków w tym artykule.
 
 1. Przed opisaniem konfiguracji w pliku infrastructure\\ConfigTemplate.xml uruchom następujący skrypt:
 

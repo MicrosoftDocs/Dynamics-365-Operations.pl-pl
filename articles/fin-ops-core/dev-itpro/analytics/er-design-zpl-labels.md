@@ -1,6 +1,6 @@
 ---
-title: Zaprojektuj nowe rozwiązanie ER do drukowania etykiet ZPL
-description: W tym temacie wyjaśniono, jak zaprojektować nowe rozwiązanie do raportowania elektronicznego (ER) do drukowania etykiet w języku programowania Zebra (ZPL).
+title: Projektowanie nowego rozwiązania raportowania elektronicznego do drukowania etykiet ZPL
+description: W tym artykule wyjaśniono, jak zaprojektować nowe rozwiązanie do raportowania elektronicznego (ER) do drukowania etykiet w języku programowania Zebra (ZPL).
 author: NickSelin
 ms.date: 02/28/2022
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2022-02-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: c1bedf1184b45741102000fa68c8d662c7383301
-ms.sourcegitcommit: 2977e92a76211875421e608555311c363cfbdc25
+ms.openlocfilehash: f861fe63c6d7d00d0a9f84d33c0d1b1b23735b61
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2022
-ms.locfileid: "8612364"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845723"
 ---
-# <a name="design-a-new-er-solution-to-print-zpl-labels"></a>Zaprojektuj nowe rozwiązanie ER do drukowania etykiet ZPL
+# <a name="design-a-new-er-solution-to-print-zpl-labels"></a>Projektowanie nowego rozwiązania raportowania elektronicznego do drukowania etykiet ZPL
 
 [!include [banner](../includes/banner.md)]
 
 
-W tym temacie wyjaśniono, w jaki sposób użytkownik w roli Administrator systemu, Deweloper raportowania elektronicznego lub Konsultant funkcjonalny raportowania elektronicznego może konfigurować parametry struktury [Raportowanie elektroniczne (ER)](general-electronic-reporting.md), projektować wymagany raport ER [konfiguracje nowego rozwiązania raportowania elektronicznego](general-electronic-reporting.md#Configuration) w celu uzyskania dostępu do danych system zarządzania magazynem oraz generowanie niestandardowych etykiet lokalizacji magazynów w formacie Zebra Programming Language (ZPL) II. Kroki można wykonać na danych firmy **USRT**.
+W tym artykule wyjaśniono, w jaki sposób użytkownik w roli Administrator systemu, Deweloper raportowania elektronicznego lub Konsultant funkcjonalny raportowania elektronicznego może konfigurować parametry struktury [Raportowanie elektroniczne (ER)](general-electronic-reporting.md), projektować wymagany raport ER [konfiguracje nowego rozwiązania raportowania elektronicznego](general-electronic-reporting.md#Configuration) w celu uzyskania dostępu do danych system zarządzania magazynem oraz generowanie niestandardowych etykiet lokalizacji magazynów w formacie Zebra Programming Language (ZPL) II. Kroki można wykonać na danych firmy **USRT**.
 
 ## <a name="business-scenario"></a>Scenariusz biznesowy
 

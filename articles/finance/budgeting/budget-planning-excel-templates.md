@@ -1,6 +1,6 @@
 ---
 title: Szablony planowania budżetu dla programu Excel
-description: W tym temacie opisano sposób tworzenia szablonów programu Microsoft Excel, które mogą być używane w planach budżetu.
+description: W tym artykule opisano sposób tworzenia szablonów programu Microsoft Excel, które mogą być używane w planach budżetu.
 author: panolte
 ms.date: 01/12/2018
 ms.topic: article
@@ -15,24 +15,24 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 90691aec0ffad8d33a19a09e7bc521cd6d6a09a9
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 6bc190a48d0212e24c5bd72255ed6b6b3caf942c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711984"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872507"
 ---
 # <a name="budget-planning-templates-for-excel"></a>Szablony planowania budżetu dla programu Excel
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób tworzenia szablonów programu Microsoft Excel, które mogą być używane w planach budżetu.
+W tym artykule opisano sposób tworzenia szablonów programu Microsoft Excel, które mogą być używane w planach budżetu.
 
-W tym temacie pokazano, jak tworzyć szablony programu Excel przeznaczone dla planów budżetu, wykorzystując do tego standardowy zestaw danych demonstracyjnych i logowanie użytkownika będącego administratorem. Aby uzyskać więcej informacji na temat planowania budżetu, zobacz [Przegląd planowania budżetu.](budget-planning-overview-configuration.md) Można również przejść samouczek [Planowanie budżetu](budget-plan.md), który przekazuje podstawowe informacje o konfiguracjach modułu i zasadach użytkowania.
+W tym artykule pokazano, jak tworzyć szablony programu Excel przeznaczone dla planów budżetu, wykorzystując do tego standardowy zestaw danych demonstracyjnych i logowanie użytkownika będącego administratorem. Aby uzyskać więcej informacji na temat planowania budżetu, zobacz [Przegląd planowania budżetu.](budget-planning-overview-configuration.md) Można również przejść samouczek [Planowanie budżetu](budget-plan.md), który przekazuje podstawowe informacje o konfiguracjach modułu i zasadach użytkowania.
 
 ## <a name="generate-a-worksheet-using-budget-plan-document-layout"></a>Generowanie arkusza przy użyciu układu dokumentu planu budżetu
 
-Dokumenty planu budżetu można wyświetlać i edytować za pomocą jednego lub więcej układów. Z każdym układem może być skojarzony szablon dokumentu planu budżetu, który umożliwia wyświetlanie i edytowanie danych planu budżetu w arkuszu programu Excel. W tym temacie szablon dokumentu planu budżetu zostanie wygenerowany przy użyciu istniejącej konfiguracji układu. 
+Dokumenty planu budżetu można wyświetlać i edytować za pomocą jednego lub więcej układów. Z każdym układem może być skojarzony szablon dokumentu planu budżetu, który umożliwia wyświetlanie i edytowanie danych planu budżetu w arkuszu programu Excel. W tym artykule szablon dokumentu planu budżetu zostanie wygenerowany przy użyciu istniejącej konfiguracji układu. 
 
 1. Otwórz **listę planów budżetu** (**Budżetowanie** &gt; **Plany budżetu**). 
 2. Kliknij przycisk **Nowy**, aby utworzyć nowy dokument planu budżetu. 

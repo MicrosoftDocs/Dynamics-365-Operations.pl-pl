@@ -1,6 +1,6 @@
 ---
 title: Omówienie planowania budżetu
-description: W tym temacie opisano planowanie budżetu. Ten temat zawiera informacje na temat sposobu skonfigurowania planowania budżetu i procesów konfigurowania planowania budżetu.
+description: W tym artykule opisano planowanie budżetu. Ten temat zawiera informacje na temat sposobu skonfigurowania planowania budżetu i procesów konfigurowania planowania budżetu.
 author: panolte
 ms.date: 01/11/2018
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d69d3d1620616bd7a136645d6f28f638e8bcf199
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 1f1ecf830953362636c8b0369586d8b76499ebb3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711751"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853562"
 ---
 # <a name="budget-planning-overview"></a>Omówienie planowania budżetu
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano planowanie budżetu. Ten temat zawiera informacje na temat sposobu skonfigurowania planowania budżetu i procesów konfigurowania planowania budżetu.
+W tym artykule opisano planowanie budżetu. Ten temat zawiera informacje na temat sposobu skonfigurowania planowania budżetu i procesów konfigurowania planowania budżetu.
 
 ## <a name="overview-of-budget-planning"></a>Przegląd planowania budżetu
 
@@ -91,7 +91,7 @@ Przepływ pracy planowania budżetu składa się z uporządkowanego zestawu etap
 
 Tworzenie przepływu pracy planowania budżetu odbywa się w sekcji **Etapy przepływu pracy** na stronie **Konfiguracja planowania budżetu**. Na tej stronie można wybrać etapy i przepływ pracy budżetowanie, które będą używane, a także skonfigurować dodatkowe ustawienia.
 
-Dobrym rozwiązaniem jest utworzenie przepływu pracy planowania budżetu dla każdego poziomu hierarchii budżetowania. Następnie przypisuje się przepływ pracy budżetowanie, który zawiera elementy odpowiadające poszczególnym etapom w przepływie pracy planowania budżetu. W przykładowym schemacie pokazanym wcześniej w tym temacie jeden przepływ pracy planowania budżetu jest tworzony dla działów sprzedaży, a inny dla centrali. Przepływ pracy budżetowanie przesuwa plany budżetu przez kolejne etapy.
+Dobrym rozwiązaniem jest utworzenie przepływu pracy planowania budżetu dla każdego poziomu hierarchii budżetowania. Następnie przypisuje się przepływ pracy budżetowanie, który zawiera elementy odpowiadające poszczególnym etapom w przepływie pracy planowania budżetu. W przykładowym schemacie pokazanym wcześniej w tym artykule jeden przepływ pracy planowania budżetu jest tworzony dla działów sprzedaży, a inny dla centrali. Przepływ pracy budżetowanie przesuwa plany budżetu przez kolejne etapy.
 
 Przepływ pracy budżetowanie dla planowania budżetu tworzy się na stronie **Przepływy pracy Budżetowanie**. Ten proces przypomina proce tworzenia innych przepływów pracy. Na poniższe ilustracji pokazano przykład przepływu pracy dla centrali.
 
@@ -141,7 +141,7 @@ Alokacje etapu umożliwiają automatyczną alokację wierszy planu budżetu podc
 
 Podczas konfigurowania alokacji etapu należy skojarzyć przepływ pracy planowania budżetu i etap z harmonogramem alokacji. Przepływ pracy planowania budżetu należy skojarzyć z przepływem pracy budżetowania korzystającym z zadania automatycznie wykonywanego przepływu pracy **Alokacja etapu planowania budżetu**. Gdy przepływ pracy osiągnie określony etap, alokacja jest wykonywana automatycznie. To wykonywane automatycznie zadanie może służyć do tworzenia wierszy planu budżetu w nowym scenariuszu.
 
-W przykładowym schemacie, pokazanym wcześniej w tym temacie, alokacja służy do przenoszenia kwot z planu i scenariuszy budżetu na etapie „Podstawowy” w centrali do innego planu i scenariuszy budżetu na etapie „Szacowanie” w dziale sprzedaży. Poniższa ilustracja pokazuje odpowiednią sekcję przykładowego schematu.
+W przykładowym schemacie, pokazanym wcześniej w tym artykule, alokacja służy do przenoszenia kwot z planu i scenariuszy budżetu na etapie „Podstawowy” w centrali do innego planu i scenariuszy budżetu na etapie „Szacowanie” w dziale sprzedaży. Poniższa ilustracja pokazuje odpowiednią sekcję przykładowego schematu.
 
 [![Alokacja etapu.](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
 

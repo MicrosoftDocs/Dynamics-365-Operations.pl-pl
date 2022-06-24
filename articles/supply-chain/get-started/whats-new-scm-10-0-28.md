@@ -1,6 +1,6 @@
 ---
 title: Przegląd Dynamics 365 Supply Chain Management 10.0.28 (sierpień 2022)
-description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Supply Chain Management 10.0.28.
+description: W tym artykule opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Supply Chain Management 10.0.28.
 author: kamaybac
 ms.date: 05/27/2022
 ms.topic: article
@@ -10,19 +10,19 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-05-27
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 306ff9be80c7a7a947b9132e3c9b4b9ec799b265
-ms.sourcegitcommit: 611202adaa080250636efabb3b3b32b850d92d04
+ms.openlocfilehash: 2b129481399897337e960ec2d708d69a563b5435
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8813120"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902061"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10028-august-2022"></a>Przegląd Dynamics 365 Supply Chain Management 10.0.28 (sierpień 2022)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-W tym temacie wymieniono nowe oraz zmienione funkcje dostępne w programie Microsoft Dynamics 365 Supply Chain Management w wersji zapoznawczej 10.0.28. Ta wersja ma numer kompilacji 10.0.1264 i jest dostępna w następującym harmonogramie:
+W tym artykule wymieniono nowe oraz zmienione funkcje dostępne w programie Microsoft Dynamics 365 Supply Chain Management w wersji zapoznawczej 10.0.28. Ta wersja ma numer kompilacji 10.0.1264 i jest dostępna w następującym harmonogramie:
 
 - **Wersja podglądu:** maj 2022
 - **Ogólna dostępność wydania (samoaktualizacja):** lipiec 2022 r.
@@ -30,15 +30,14 @@ W tym temacie wymieniono nowe oraz zmienione funkcje dostępne w programie Micro
 
 ## <a name="features-included-in-this-release"></a>Funkcje zawarte w tym wydaniu
 
-To wydanie zawiera funkcje, które są podane w następującej tabeli. Możemy zaktualizować ten temat, aby uwzględnić cechy, które zostały dodane do kompilacji po opublikowaniu tego tematu.
+To wydanie zawiera funkcje, które są podane w następującej tabeli. Możemy zaktualizować ten artykuł, aby uwzględnić cechy, które zostały dodane do kompilacji po opublikowaniu tego artykułu.
 
 | Obszar funkcji | Funkcja | Więcej informacji | Włączone przez   |
 |---|---|---|---|
 | Zapasy i logistyka | [Podmioty integrujące koszty lądowe dla zewnętrznych spedytorów](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/landed-cost-integration-third-party-freight-forwarders) | [Przegląd podmiotów ponoszących koszty lądowe](../landed-cost/landed-cost-entities-overview.md) | Domyślnie włączone |
-| Planowanie | [Wsparcie optymalizacji planowania dla okresu trwałości](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-shelf-life) | Wkrótce <!-- KFM: Vendor is preparing this. Expected May 20. --> | Domyślnie włączone |
-
-<!-- KFM: Confirm status of this feature:
-| Planning | [Demand Driven Material Requirements Planning (DDMRP)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/demand-driven-material-requirements-planning-ddmrp) | Coming soon | Feature management:<br>*(Preview) DDMRP for Planning Optimization* | -->
+| Planowanie | [Planowanie zapotrzebowania materiałowego sterowane popytem (Demand Driven Material Requirements Planning - DDMRP)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/demand-driven-material-requirements-planning-ddmrp) | Wkrótce | Zarządzanie funkcjami:<br>*(Wersja zapoznawcza) DDMRP dla optymalizacji planowania* |
+| Planowanie | [Optymalizacja planowania Wsparcie dla zdolności do osiągnięcia celu (CTP)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-capable-to-promise-ctp) | Wkrótce | Zarządzanie funkcjami:<br>*(Wersja zapoznawcza) CTP dla optymalizacji planowania* |
+| Planowanie | [Wsparcie optymalizacji planowania dla okresu trwałości](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-shelf-life) | Wkrótce | Domyślnie włączone |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>Ulepszenia funkcji zawarte w tym wydaniu
 
@@ -56,9 +55,9 @@ Aby włączyć lub wyłączyć te funkcje, należy przejść do obszaru [zarząd
 
 ## <a name="new-and-updated-documentation-resources"></a>Nowe i zaktualizowane zasoby dokumentacji
 
-Niedawno dodano lub znacząco zaktualizowano następujące tematy Pomocy. Te tematy nie zawsze są związane z nowymi funkcjami dodanymi w tym wydaniu, jak wymieniono w poprzedniej sekcji. Mogą jednak ułatwić efektywniejsze korzystanie z istniejących funkcji..
+Niedawno dodano lub znacząco zaktualizowano następujące artykuły Pomocy. Te artykuły nie zawsze są związane z nowymi funkcjami dodanymi w tym wydaniu, jak wymieniono w poprzedniej sekcji. Mogą jednak ułatwić efektywniejsze korzystanie z istniejących funkcji..
 
-| Obszar funkcji | Nowe lub zaktualizowane tematy |
+| Obszar funkcji | Nowe lub zaktualizowane artykuły |
 |---|---|
 | Zarządzanie kosztami | [Odchylenia od ceny ewidencyjnej](../cost-management/fixed-receipt-price.md) |
 | Zarządzanie kosztami | [Najczęściej zadawane pytania dotyczące kalkulacji kosztów inwentaryzacji](../cost-management/inventory-costing-faq.md) |
@@ -69,7 +68,7 @@ Niedawno dodano lub znacząco zaktualizowano następujące tematy Pomocy. Te tem
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizacja Platform dla aplikacji Finanse i Działania
 
-Pakiet Microsoft Dynamics 365 Supply Chain Management 10.0.28 zawiera aktualizację platformy. Aby dowiedzieć się więcej, zobacz [aktualizacje platformy dla wersji 10.0.28 aplikacji finansowych i operacyjnych (czerwiec 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-28.md).<!-- KFM Confirm link -->
+Pakiet Microsoft Dynamics 365 Supply Chain Management 10.0.28 zawiera aktualizację platformy. Aby dowiedzieć się więcej, zobacz [aktualizacje platformy dla wersji 10.0.28 aplikacji finansowych i operacyjnych (czerwiec 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-28.md).
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
@@ -83,12 +82,12 @@ Zapoznaj się z tematem [Dynamics 365 i chmury branżowe: plan aktualizacji 1 we
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Usunięte i przestarzałe funkcje Supply Chain Management
 
-W temacie [Usunięte lub przestarzałe funkcje w Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) opisano funkcje, które są wycofane lub zostały zaplanowane do usunięcia w Supply Chain Management.
+W artykule [Usunięte lub przestarzałe funkcje w Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) opisano funkcje, które są wycofane lub zostały zaplanowane do usunięcia w Supply Chain Management.
 
 - *Usunięta* funkcja nie jest już dostępna w produkcie.
 - *Przestarzała* funkcja nie jest aktywnie tworzona i może zostać usunięta w przyszłej aktualizacji.
 
-Zanim jakakolwiek funkcja zostanie usunięta z produktu, powiadomienie o zaniechaniu będzie anonsowane w sekcji na temat [usuniętych lub przestarzałych funkcji w Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 miesięcy przed usunięciem.
+Zanim jakakolwiek funkcja zostanie usunięta z produktu, powiadomienie o zaniechaniu będzie anonsowane w sekcji artykułu na temat [usuniętych lub przestarzałych funkcji w Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 miesięcy przed usunięciem.
 
 W przypadku zmian, które wpływają tylko na czas kompilacji, ale są zgodne z trybem piaskownicy i środowiskami produkcyjnymi, czas niezgodności będzie krótszy niż 12 miesięcy. Zazwyczaj są to aktualizacje funkcjonalne, które należy wykonać w kompilatorze.
 

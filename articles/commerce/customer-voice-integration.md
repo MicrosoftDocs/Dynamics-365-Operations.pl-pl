@@ -1,6 +1,6 @@
 ---
-title: Włączanie Customer Voice na stronach e-commerce
-description: W tym temacie opisano, jak zintegrować Microsoft Dynamics 365 Customer Voice ze stronami witryny e-commerce Dynamics 365 Commerce.
+title: Integruj usługę Customer Voice ze stronami witryny handlu elektronicznego
+description: W tym artykule opisano, jak zintegrować Microsoft Dynamics 365 Customer Voice ze stronami witryny e-commerce Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 05/17/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
-ms.openlocfilehash: 272ec1a59ed45b2d2336dcfea16051d27011360f
-ms.sourcegitcommit: 48d094d083c1bd45c3d72f8b666926b48ec7ae35
+ms.openlocfilehash: c8c67ecf4950c92fc91c8d119e06e5e8afff0ddf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8767956"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850337"
 ---
-# <a name="integrate-customer-voice-into-e-commerce-site-pages"></a>Włączanie Customer Voice na stronach e-commerce
+# <a name="integrate-customer-voice-into-e-commerce-site-pages"></a>Integruj usługę Customer Voice ze stronami witryny handlu elektronicznego
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano, jak zintegrować Microsoft Dynamics 365 Customer Voice ze stronami witryny e-commerce Dynamics 365 Commerce.
+W tym artykule opisano, jak zintegrować Microsoft Dynamics 365 Customer Voice ze stronami witryny e-commerce Dynamics 365 Commerce.
 
 Możesz zintegrować [Customer Voice](https://dynamics.microsoft.com/customer-voice/overview/) ze swoją witryną e-commerce, aby zbierać, analizować i śledzić opinie klientów w czasie rzeczywistym. Aby rozpocząć korzystanie z integracji, musisz utworzyć konto i wybrać szablon projektu Customer Voice dla typu informacji zwrotnej, którą chcesz zbierać.
 
@@ -37,7 +37,7 @@ Aby wybrać szablon projektu Customer Voice, wykonaj poniższe kroki.
 1. Wybierz szablon projektu dla typu informacji zwrotnych, które chcesz gromadzić, a następnie wybierz przycisk **Dalej**.
 1. W zakładce **Wyślij**, w sekcji **Wybierz format osadzenia**, wybierz format osadzenia. Pole **Kod osadzony** pokazuje kod, który musi być osadzony w projektancie stron Commerce.
 
-Przykłady w tym temacie wykorzystują szablon projektu **Czasowe badanie opinii klientów** oraz format osadzenia **Przycisk**.
+Przykłady w tym artykule wykorzystują szablon projektu **Czasowe badanie opinii klientów** oraz format osadzenia **Przycisk**.
 
 Poniższy przykład przedstawia stronę szablonu projektu **Czasowa ankieta dla klientów**, na której wybrano opcję osadzenia w formacie **Przycisk**, a kod osadzenia dla tej opcji pojawia się w polu **Kod osadzony**. Aby osadzić dostarczony kod na stronach twojej witryny, należy wykonać trzy osobne czynności, opisane w kolejnych sekcjach.
 

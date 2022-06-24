@@ -1,6 +1,6 @@
 ---
 title: Zlecenia kontroli jakości
-description: W tym temacie opisano sposób ręcznego lub automatycznego tworzenia zleceń kontroli jakości oraz pracy z nimi w celu wykonywania inspekcji i rejestrowania wyników testu w systemie Microsoft Dynamics 365 Supply Chain Management.
+description: W tym artykule opisano sposób ręcznego lub automatycznego tworzenia zleceń kontroli jakości oraz pracy z nimi w celu wykonywania inspekcji i rejestrowania wyników testu w systemie Microsoft Dynamics 365 Supply Chain Management.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 69a4a61a599f1279ec7ad68ebb20c7b4b0f37005
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: eb7ab1de0fb4d93ed18f1862630c1af7af7f3095
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571864"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857787"
 ---
 # <a name="quality-orders"></a>Zlecenia kontroli jakości
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób ręcznego lub automatycznego tworzenia zleceń kontroli jakości oraz pracy z nimi w celu wykonywania inspekcji i rejestrowania wyników testu w systemie Microsoft Dynamics 365 Supply Chain Management.
+W tym artykule opisano sposób ręcznego lub automatycznego tworzenia zleceń kontroli jakości oraz pracy z nimi w celu wykonywania inspekcji i rejestrowania wyników testu w systemie Microsoft Dynamics 365 Supply Chain Management.
 
 ## <a name="automatically-created-quality-orders"></a>Zlecenia kontroli jakości tworzone automatycznie
 
@@ -39,7 +39,7 @@ Aby ręcznie utworzyć zlecenie kontroli jakości, należy wykonać następując
 
 1. Wybierz kolejno opcje **Zarządzanie zapasami \> Zadania okresowe \> Zarządzanie jakością \> Zlecenia kontroli jakości**.
 1. Wybierz pozycję **Nowy**.
-1. W oknie dialogowym **Zlecenia kontroli jakości** w polu **Typ odwołania** wybierz odwołanie do zapasów, z którym będzie związane zlecenie kontroli jakości. Aby uzyskać opis dostępnych do wyboru typów odwołania, zobacz sekcję [Typy odwołania zlecenia kontroli jakości](#ref-types) w dalszej części tego tematu.
+1. W oknie dialogowym **Zlecenia kontroli jakości** w polu **Typ odwołania** wybierz odwołanie do zapasów, z którym będzie związane zlecenie kontroli jakości. Aby uzyskać opis dostępnych do wyboru typów odwołania, zobacz sekcję [Typy odwołania zlecenia kontroli jakości](#ref-types) w dalszej części tego artykułu.
 
     > [!NOTE]
     > Zapasy powiązane z wybranym odwołaniem muszą być dostępne. Jeśli dla wybranej kombinacji typu odwołania, ilości i wymiarów magazynowych nie są dostępne żadne zapasy, zostanie wyświetlony komunikat o błędzie.
@@ -88,7 +88,7 @@ Strona zlecenia kontroli jakości umożliwia ręczne utworzenie nowego zlecenia 
 
 ### <a name="from-the-quality-orders-page"></a>Ze strony Zlecenia kontroli jakości
 
-Aby ręcznie utworzyć zlecenia kontroli jakości i wyświetlić wszystkie istniejące zlecenia kontroli jakości, należy przejść do **Zarządzanie zapasami \> Zadania okresowe \> Zarządzanie jakością \> Zlecenia kontroli jakości**. Pozostałe sekcje tego tematu zawierają więcej informacji na temat pracy ze stroną **Zlecenia kontroli jakości**.
+Aby ręcznie utworzyć zlecenia kontroli jakości i wyświetlić wszystkie istniejące zlecenia kontroli jakości, należy przejść do **Zarządzanie zapasami \> Zadania okresowe \> Zarządzanie jakością \> Zlecenia kontroli jakości**. Pozostałe sekcje tego artykułu zawierają więcej informacji na temat pracy ze stroną **Zlecenia kontroli jakości**.
 
 ### <a name="from-sales-orders"></a>Z zamówień sprzedaży
 

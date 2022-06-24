@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie zadań ręcznych w przepływie pracy
-description: W tym temacie wyjaśniono sposób konfigurowania właściwości zadania ręcznego.
+description: W tym artykule wyjaśniono sposób konfigurowania właściwości zadania ręcznego.
 author: ChrisGarty
 ms.date: 08/23/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 726abcf20789fb3a7a9a3adbebf17249042910d1
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 265f127f948aa7425c5eb523abe18986a942cfb0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066475"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889215"
 ---
 # <a name="configure-manual-tasks-in-a-workflow"></a>Konfigurowanie zadań ręcznych w przepływie pracy
 
@@ -28,7 +28,7 @@ ms.locfileid: "8066475"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-W tym temacie wyjaśniono sposób konfigurowania właściwości zadania ręcznego.
+W tym artykule wyjaśniono sposób konfigurowania właściwości zadania ręcznego.
 
 Aby skonfigurować zadanie ręczne, w edytorze przepływu pracy kliknij zadanie prawym przyciskiem myszy i wybierz polecenie **Właściwości**, a zostanie otwarta strona **Właściwości**. Następnie za pomocą procedur zamieszczonych niżej skonfiguruj właściwości zadania ręcznego.
 

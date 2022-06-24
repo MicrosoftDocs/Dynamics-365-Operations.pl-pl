@@ -1,6 +1,6 @@
 ---
 title: Operacja zapasów przychodzących w punkcie sprzedaży
-description: W tym temacie opisano możliwości przychodzących operacji magazynowych w punkcie sprzedaży (POS).
+description: W tym artykule opisano możliwości przychodzących operacji magazynowych w punkcie sprzedaży (POS).
 author: hhaines
 ms.date: 09/17/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 8848c10e9f8f931ee66414075d28b8910a02e5a000525a63bc38ab6851f11276
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fbabcaafee74b4d0a1ca8ef79de94376a7764aa3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741789"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858889"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Operacja zapasów przychodzących w punkcie sprzedaży
 
@@ -215,7 +215,7 @@ Po pomyślnym przesłaniu wersji roboczej do modułu Commerce Headquarter zostan
 
 Gdy dokument stanie **Wnioskowany**, jego stan jest widoczny na karcie **Aktywne**. Nie można go jednak odebrać przez magazyn lub sklep przychodzący. Po dostarczeniu przez magazyn wyjściowy części lub całości zamówienia przeniesienia, sklep lub magazyn przychodzący może księgować przychody w punkcie sprzedaży. Gdy strona wychodząca przetwarza zamówienia przeniesienia, jego stan jest aktualizowany na z **Wnioskowany** do **Wysłane** lub **Częściowo wysłane**. Gdy dokumenty są w stanie **Wysłane** lub **Częściowo wysłane**, magazyn lub magazyn przychodzący może zaksięgować przychody z nich przy użyciu procesu przyjęcia operacji przychodzącej.
 
-## <a name="related-topics"></a>Powiązane tematy
+## <a name="related-articles"></a>Powiązane artykuły
 
 [Operacja zapasów wychodzących w punkcie sprzedaży](pos-outbound-inventory-operation.md)
 

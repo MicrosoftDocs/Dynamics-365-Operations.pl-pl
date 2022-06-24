@@ -1,6 +1,6 @@
 ---
 title: Podstawowe informacje o kursie wymiany dla podatku VAT
-description: Ten temat zawiera informacje dotyczące kursów wymiany dla obliczeń podatku VAT dostępnych dla Czech, Węgier i Polski.
+description: Ten artykuł zawiera informacje dotyczące kursów wymiany dla obliczeń podatku VAT dostępnych dla Czech, Węgier i Polski.
 author: ShylaThompson
 ms.date: 07/08/2021
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Czech Republic, Hungary, Poland
 ms.author: mrolecki
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: b96c5e7c3dc32cb720f6174fb84d878a5c02f672
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: d8ca93f4e62e07730a32d7b08546c55e584e8b21
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982953"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865479"
 ---
 # <a name="vat-exchange-rate-overview"></a>Podstawowe informacje o kursie wymiany dla podatku VAT
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje dotyczące kursów wymiany dla obliczeń podatku VAT dostępnych dla Czech, Węgier i Polski. Kurs wymiany używany do obliczania podatku VAT może się różnić od kursu wymiany używanego w funkcjach księgowania w firmie. Po zaksięgowaniu dokumentu w walucie obcej wszelkie występujące różnice kursowe są księgowane na określonych kontach księgowych.
+Ten artykuł zawiera informacje dotyczące kursów wymiany dla obliczeń podatku VAT dostępnych dla Czech, Węgier i Polski. Kurs wymiany używany do obliczania podatku VAT może się różnić od kursu wymiany używanego w funkcjach księgowania w firmie. Po zaksięgowaniu dokumentu w walucie obcej wszelkie występujące różnice kursowe są księgowane na określonych kontach księgowych.
 
 Organizacja może wybrać kurs wymiany, który służy do obliczania podatku od towarów i usług (VAT) dla deklaracji VAT. Ten kurs wymiany może się różnić od kursu wymiany używanego w funkcjach księgowania w firmie. Funkcje księgowania obejmują m.in. przygotowywanie następujących dokumentów związanych z podatkami:
 

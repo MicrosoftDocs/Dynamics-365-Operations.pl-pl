@@ -1,6 +1,6 @@
 ---
 title: Realizacja zapasów bezpieczeństwa dla towarów
-description: W tym temacie opisano realizację zapasów bezpieczeństwa oraz sposób konfigurowania ilości zapasów bezpieczeństwa dla towarów.
+description: W tym artykule opisano realizację zapasów bezpieczeństwa oraz sposób konfigurowania ilości zapasów bezpieczeństwa dla towarów.
 author: t-benebo
 ms.date: 8/23/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: c539b804198ddc5d5dac52c958a851ee55116711
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 70461ad1de94c984cb41e6b1d46af9e310a928d6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672074"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887407"
 ---
 # <a name="safety-stock-fulfillment-for-items"></a>Realizacja zapasów bezpieczeństwa dla towarów
 
@@ -88,7 +88,7 @@ Jeżeli używane są **klucze minimum**, zaznacz pole wyboru **Okresy minimalne*
 Poniższy scenariusz pokazuje, jak działa ten parametr i jakie są różnice między jego wartościami.
 
 > [!NOTE]
-> Na wszystkich ilustracjach w tym temacie oś x-oznacza zapasy, oś y-oznacza dni, paski oznaczają poziom zapasów, strzałki oznaczają transakcje, takie jak wiersze zamówień sprzedaży, wiersze zamówień zakupu lub planowane zamówienia.
+> Na wszystkich ilustracjach w tym artykule oś x-oznacza zapasy, oś y-oznacza dni, paski oznaczają poziom zapasów, strzałki oznaczają transakcje, takie jak wiersze zamówień sprzedaży, wiersze zamówień zakupu lub planowane zamówienia.
 
 [![Wspólny scenariusz realizacji zapasów bezpieczeństwa.](media/Scenario1.png)](media/Scenario1.png)
 

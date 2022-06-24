@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: d5aa579394a0e3bd4c27cd44c9ff98951b3bfe1c
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 559ca80976955d6328cb4d6b2020d5662460cef9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103670"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863658"
 ---
 # <a name="putaway-clusters"></a>Grupy odłożenia
 
@@ -27,7 +27,7 @@ Grupy odłożenia umożliwiają w tym samym czasie pobieranie wielu numerów ide
 
 ## <a name="turn-the-cluster-putaway-feature-on-or-off"></a>Włącz lub wyłącz funkcję odkładania klastra
 
-Aby korzystać z funkcji opisanej w tym temacie, w systemie musi być włączona funkcja *Funkcja odkładania klastra*. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.25, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Funkcja odkładania klastra* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Aby korzystać z funkcji opisanej w tym artykule, w systemie musi być włączona funkcja *Funkcja odkładania klastra*. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.25, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Funkcja odkładania klastra* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="setup-for-the-example-scenario"></a>Konfiguracja scenariusza przykładowego
 

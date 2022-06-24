@@ -1,6 +1,6 @@
 ---
 title: Poprawa wydajności aparatu planowania
-description: Ten temat zawiera informacje o aparacie planowania oraz o sposobach zwiększania wydajności.
+description: Ten artykuł zawiera informacje o aparacie planowania oraz o sposobach zwiększania wydajności.
 author: t-benebo
 ms.date: 09/03/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 972e566153b7423398b2ad4a4e70b264f02c40cd
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: f5ece3672bba352e02808248c91366539423d682
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469014"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854305"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Poprawa wydajności aparatu planowania
 
@@ -29,7 +29,7 @@ ms.locfileid: "8469014"
 
 Aparat planowania zasobów jest używany podczas planowania marszrut dla planowanych i zwolnionych zleceń produkcyjnych. Aparat został pierwotnie wydany w ramach systemu Dynamics AX 2012, a od tego momentu wprowadzono kilka udoskonaleń.
 
-[Problem z planowaniem pracy w module produkcyjnym](https://en.wikipedia.org/wiki/Job_shop_scheduling) jest niezwykle skomplikowanym problemem kombinatorycznym, w którym czas rozwiązania wzrasta w sposób wykładniczy wraz z liczbą zmiennych decyzji. Często odbiorcy konfigurują marszruty produkcji i powiązane dane w sposób, który powoduje problem z planowaniem, którego nie można rozwiązać w rozsądnym czasie, nawet w przypadku najbardziej nowoczesnego sprzętu. Ten temat ułatwi zrozumienie aparatu planowania oraz sposobu, w jaki określone ustawienia mogą mieć wpływ na wydajność.
+[Problem z planowaniem pracy w module produkcyjnym](https://en.wikipedia.org/wiki/Job_shop_scheduling) jest niezwykle skomplikowanym problemem kombinatorycznym, w którym czas rozwiązania wzrasta w sposób wykładniczy wraz z liczbą zmiennych decyzji. Często odbiorcy konfigurują marszruty produkcji i powiązane dane w sposób, który powoduje problem z planowaniem, którego nie można rozwiązać w rozsądnym czasie, nawet w przypadku najbardziej nowoczesnego sprzętu. Ten artykuł ułatwi zrozumienie aparatu planowania oraz sposobu, w jaki określone ustawienia mogą mieć wpływ na wydajność.
 
 Jeśli chodzi o poprawę wydajności planowania, ogólne wskazówki zalecają zmniejszenie złożoności problemu, który musi zostać rozwiązany przez aparat. Poniżej przedstawiono niektóre z głównych czynników, które mogą mieć wpływ na wydajność:
 

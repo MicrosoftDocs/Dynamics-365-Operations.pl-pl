@@ -1,6 +1,6 @@
 ---
 title: Konfiguracja stron niestandardowych do logowań użytkowników
-description: W tym temacie opisano, jak budować niestandardowe strony w Microsoft Dynamics 365 Commerce, które obsługują niestandardowe logowanie dla użytkowników dzierżawców Azure Active Directory (Azure AD) dla klientów indywidualnych (B2C).
+description: W tym artykule opisano, jak budować niestandardowe strony w Microsoft Dynamics 365 Commerce, które obsługują niestandardowe logowanie dla użytkowników dzierżawców Azure Active Directory (Azure AD) dla klientów indywidualnych (B2C).
 author: brianshook
 ms.date: 03/17/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f4a3c7c3410a903ae7bc0bac27e861a0dbfa19fdd65761628549c403c4e5db16
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2c610866b896ef7648d2596e17b51d1935a78dee
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723270"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880347"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>Konfiguracja stron niestandardowych do logowań użytkowników
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano, jak budować niestandardowe strony w Microsoft Dynamics 365 Commerce, które obsługują niestandardowe logowanie dla użytkowników dzierżawców Azure Active Directory (Azure AD) dla klientów indywidualnych (B2C).
+W tym artykule opisano, jak budować niestandardowe strony w Microsoft Dynamics 365 Commerce, które obsługują niestandardowe logowanie dla użytkowników dzierżawców Azure Active Directory (Azure AD) dla klientów indywidualnych (B2C).
 
 Aby skorzystać ze stron niestandardowych, które są tworzone Dynamics 365 Commerce w celu obsługi przepływów logowania użytkowników, należy skonfigurować zasady Azure AD, które będą przywoływane w środowisku Commerce Environment. Można skonfigurować zasady B2C Azure AD „Rejestracja i logowanie”, „Edytowanie profili” i „Resetowanie hasła” za pomocą aplikacji B2C Azure AD. Do nazw dzierżawy i zasad B2C Azure AD można następnie odwoływać się podczas procesu udostępniania, który jest wykonywany dla środowiska Commerce przy użyciu usług Microsoft Dynamics Lifecycle Services (LCS).
 

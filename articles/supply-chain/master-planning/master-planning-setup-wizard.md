@@ -1,6 +1,6 @@
 ---
 title: Kreator konfiguracji planowania głównego (zawiera wideo)
-description: W tym temacie opisano sposób uruchamiania kreatora konfiguracji planowania głównego w celu skonfigurowania planowania głównego.
+description: W tym artykule opisano sposób uruchamiania kreatora konfiguracji planowania głównego w celu skonfigurowania planowania głównego.
 author: t-benebo
 ms.date: 10/21/2019
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: a5914f63de654acd076048240c6e37d5b67f4ffa
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 1c79e1df53dfabc33aeacb56096b113e62b765d5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8470213"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875341"
 ---
 # <a name="master-planning-setup-wizard"></a>Kreator konfiguracji planowania głównego
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera przewodnik **Kreatora konfiguracji planowania głównego**. Wyjaśnia, jak są obliczane są sugestie parametrów, i zawiera przykłady pokazujące, jak różne firmy konfigurują planowanie główne na podstawie ich potrzeb biznesowych.
+Ten artykuł zawiera przewodnik **Kreatora konfiguracji planowania głównego**. Wyjaśnia, jak są obliczane są sugestie parametrów, i zawiera przykłady pokazujące, jak różne firmy konfigurują planowanie główne na podstawie ich potrzeb biznesowych.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3YnSB]
 

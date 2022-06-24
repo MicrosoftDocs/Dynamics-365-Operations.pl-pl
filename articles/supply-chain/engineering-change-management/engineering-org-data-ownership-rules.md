@@ -1,6 +1,6 @@
 ---
 title: Reguły dotyczące firm inżynieryjnych i własności danych
-description: W tym temacie wyjaśniono, w jaki sposób można wykorzystać jedną lub więcej firm inżynierskich, aby zapewnić, że dane główne dla produktów są tworzone centralnie i obsługiwane. Firma inżynieryjna reprezentuje firmę, która jest właścicielem produktów technologicznych i posiada odpowiednie dane techniczne.
+description: W tym artykule wyjaśniono, w jaki sposób można wykorzystać jedną lub więcej firm inżynierskich, aby zapewnić, że dane główne dla produktów są tworzone centralnie i obsługiwane. Firma inżynieryjna reprezentuje firmę, która jest właścicielem produktów technologicznych i posiada odpowiednie dane techniczne.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 1a05ad1a9d24239e2659c1ffecc21e5e186b1e96
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 47662203669d5dd466990be397c9a4aaf1dd9932
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572920"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875547"
 ---
 # <a name="engineering-companies-and-data-ownership-rules"></a>Reguły dotyczące firm inżynieryjnych i własności danych
 

@@ -1,6 +1,6 @@
 ---
 title: Dostosowywanie tytułów kroków i instrukcji dla aplikacji mobilnej Warehouse Management
-description: W tym temacie opisano sposób tworzenia i pokazywania niestandardowych instrukcji wykonywania poszczególnych kroków przepływów zadania konfigurowanych dla aplikacji mobilnej Warehouse Management.
+description: W tym artykule opisano sposób tworzenia i pokazywania niestandardowych instrukcji wykonywania poszczególnych kroków przepływów zadania konfigurowanych dla aplikacji mobilnej Warehouse Management.
 author: Mirzaab
 ms.date: 08/11/2021
 ms.topic: article
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-11
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ffd433427b2c5011740a7ee54c93713689945df3
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 289a3735133919ae7dbad05c40ba9ccf0e8f57ca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902254"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895504"
 ---
 # <a name="customize-step-titles-and-instructions-for-the-warehouse-management-mobile-app"></a>Dostosowywanie tytułów kroków i instrukcji dla aplikacji mobilnej Warehouse Management
 
 > [!IMPORTANT]
-> Funkcje opisane w tym temacie dotyczą tylko nowej aplikacji mobilnej Warehouse Management. Nie wpływają one na starą aplikację magazynu, która jest obecnie przestarzała.
+> Funkcje opisane w tym artykule dotyczą tylko nowej aplikacji mobilnej Warehouse Management. Nie wpływają one na starą aplikację magazynu, która jest obecnie przestarzała.
 
-W tym temacie opisano sposób tworzenia i pokazywania niestandardowych instrukcji wykonywania poszczególnych kroków poszczególnych przepływów zadania konfigurowanych dla aplikacji mobilnej Warehouse Management. Gdy pracownicy magazynu otrzymują dobrze napisane instrukcje, mogą od razu zacząć korzystać z nowych przepływów bez konieczności wcześniejszego szkolenia. Ta funkcja zapewnia następujące korzyści:
+W tym artykule opisano sposób tworzenia i pokazywania niestandardowych instrukcji wykonywania poszczególnych kroków poszczególnych przepływów zadania konfigurowanych dla aplikacji mobilnej Warehouse Management. Gdy pracownicy magazynu otrzymują dobrze napisane instrukcje, mogą od razu zacząć korzystać z nowych przepływów bez konieczności wcześniejszego szkolenia. Ta funkcja zapewnia następujące korzyści:
 
 - **Szybsze wdrażanie pracowników za pomocą prostych instrukcji wykonywania każdego kroku zadania.** Każdy krok przepływu zawiera instrukcje umożliwiające pracownikom pierwszej linii zrozumienie zadania.
 - **Podawanie instrukcji zgodne z własnymi procesami.** Piszesz własne instrukcje, dostosowując je do swoich procesów biznesowych i magazynowych. Można na przykład dopasować terminologię do miejsca fizycznego i skrótów lokalnych.

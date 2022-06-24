@@ -1,6 +1,6 @@
 ---
 title: Prognoza zapasów
-description: W tym temacie opisano funkcje prognozowania dostaw i popytu, które można wykorzystać do tworzenia prognoz zapasów w systemie Microsoft Dynamics 365 Supply Chain Management.
+description: W tym artykule opisano funkcje prognozowania dostaw i popytu, które można wykorzystać do tworzenia prognoz zapasów w systemie Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.date: 06/08/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 1446928c2f5fe606d1d0732764a2a4460643afcf
-ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
+ms.openlocfilehash: 10e3b6ad079dbcbc3cce429a4d9d838e584b9c54
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "8548175"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844533"
 ---
 # <a name="inventory-forecasts"></a>Prognoza zapasów
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób wyświetlania i tworzenia prognoz zapasów. Można tworzyć i wyświetlać linie prognozy dostaw i popytu dla pozycji, grup pozycji, kluczy alokacji pozycji, kont klientów, grup klientów, kont sprzedawców i grup sprzedawców.
+W tym artykule opisano sposób wyświetlania i tworzenia prognoz zapasów. Można tworzyć i wyświetlać linie prognozy dostaw i popytu dla pozycji, grup pozycji, kluczy alokacji pozycji, kont klientów, grup klientów, kont sprzedawców i grup sprzedawców.
 
 Dla każdego wiersza prognozy można wybrać model prognozy, który jest używany. Następnie można określić pozycję lub grupę pozycji, a także ilość lub kwotę transakcji. Można także skonfigurować harmonogram alokowania ilości prognozy.
 
@@ -60,7 +60,7 @@ Jak pokazuje tabela w kroku 1, istnieją różne sposoby dostępu do stron, któ
     W zależności od tego wyboru zostanie wyświetlona strona **Prognoza dostaw** lub **Prognoza popytu**. Zawiera wszystkie istniejące wiersze prognozy dla rekordu wybranego przed otwarciem strony.
 
 1. W okienku akcja wybierz pozycję **Nowa**, aby dodać wiersz prognozy do siatki w górnej części strony.
-1. W nowym wierszu, w polu **Model** wybierz model prognozy, który ma być użyciu. Następnie wprowadź inne szczegóły w zależności od potrzeb, takie jak pozycja, grupa pozycji, konto lub grupa klienta lub sprzedawcy, ilość pozycji lub całkowita kwota transakcji. Aby uzyskać pełne szczegóły dotyczące pól dostępnych na stronach **Prognoza dostaw** i **Prognoza popytu**, zobacz dalsze sekcje tego tematu.
+1. W nowym wierszu, w polu **Model** wybierz model prognozy, który ma być użyciu. Następnie wprowadź inne szczegóły w zależności od potrzeb, takie jak pozycja, grupa pozycji, konto lub grupa klienta lub sprzedawcy, ilość pozycji lub całkowita kwota transakcji. Aby uzyskać pełne szczegóły dotyczące pól dostępnych na stronach **Prognoza dostaw** i **Prognoza popytu**, zobacz dalsze sekcje tego artykułu.
 1. Aby rozdzielić prognozę dla okresu, na karcie **Przegląd** zaznacz pozycję **Alokuj prognozę** na pasku narzędzi.
 1. Za pomocą siatki **Alokacja** można skonfigurować horyzont czasowy i odstępy w czasie przewidziane na dystrybucję prognozowanych ilości.
 
@@ -68,7 +68,7 @@ Jak pokazuje tabela w kroku 1, istnieją różne sposoby dostępu do stron, któ
 
 Prognoza dostaw umożliwia tworzenie planu dla towarów, które muszą zostać zakupione. Mówi on pracownikom działów zaopatrzenia, co mają zamówić.
 
-Można wprowadzić prognozę dostaw według pozycji, grupy pozycji, klucza przydziału pozycji, sprzedawcy i grupy sprzedawców. Informacje o wszystkich sposobach otwierania strony **Prognoza zaopatrzenia** dla różnych podmiotów i rekordów znajdują się w rozdziale [Wyświetlanie i ręczne wprowadzanie wierszy prognozy](#manual-entry) wcześniej w tym temacie.
+Można wprowadzić prognozę dostaw według pozycji, grupy pozycji, klucza przydziału pozycji, sprzedawcy i grupy sprzedawców. Informacje o wszystkich sposobach otwierania strony **Prognoza zaopatrzenia** dla różnych podmiotów i rekordów znajdują się w rozdziale [Wyświetlanie i ręczne wprowadzanie wierszy prognozy](#manual-entry) wcześniej w tym artykule.
 
 W górnej części strony **Prognoza dostaw** jest ustawiona siatka wierszy prognozy dostaw oraz zestaw kart, których można użyć do wyświetlania i ustawienia dodatkowych informacji o wybranym wierszu prognozy. W dolnej części strony jest siatka **Alokacja**.
 
@@ -94,9 +94,9 @@ W poniższej tabeli opisano komendy, które są dostępne bezpośrednio w pasku 
 
 | Polecenie | opis |
 |---|---|
-| Przydziel prognozę | Jeśli używasz metody alokacji, wygeneruj poszczególne wiersze harmonogramu dla prognozowanej transakcji. Ilość linii jest następnie rozdzielana według daty (zgodnie z wybranymi przedziałami czasowymi), ilości oraz kwoty dla całego horyzontu czasowego. (Zobacz sekcję [Alokacja zapasów](#allocate-forecast) w dalszej części tego tematu). |
-| Aktualizacja zbiorcza | Otwórz stronę **Edycja transakcji prognozowych**. (Zobacz sekcję [Transakcje prognozowane aktualizacji zbioru](#bulk-update) w dalszej części tego tematu). |
-| Prognoza zapasów | Umożliwia otwarcie widoku strony **Prognoza zapasów**, który jest filtrowany dla wybranej kombinacji towaru/modelu. (Zobacz sekcję [Prognoza zapasów](#inventory-forecast) w dalszej części tego tematu). |
+| Przydziel prognozę | Jeśli używasz metody alokacji, wygeneruj poszczególne wiersze harmonogramu dla prognozowanej transakcji. Ilość linii jest następnie rozdzielana według daty (zgodnie z wybranymi przedziałami czasowymi), ilości oraz kwoty dla całego horyzontu czasowego. (Zobacz sekcję [Alokacja zapasów](#allocate-forecast) w dalszej części tego artykułu). |
+| Aktualizacja zbiorcza | Otwórz stronę **Edycja transakcji prognozowych**. (Zobacz sekcję [Transakcje prognozowane aktualizacji zbioru](#bulk-update) w dalszej części tego artykułu). |
+| Prognoza zapasów | Umożliwia otwarcie widoku strony **Prognoza zapasów**, który jest filtrowany dla wybranej kombinacji towaru/modelu. (Zobacz sekcję [Prognoza zapasów](#inventory-forecast) w dalszej części tego artykułu). |
 | Utwórz zapotrzebowanie na towary | Otwiera okno dialogowe, w którym można utworzyć wymagania dotyczące pozycji oraz linie dziennika zamówień lub pozycji dla transakcji prognoz związanych z projektem. Chociaż polecenie to jest dostępne zarówno dla wierszy prognozy dostaw, jak i dla wierszy prognozy popytu, nie można go użyć na stronie **Prognoza dostaw**. |
 
 ### <a name="the-overview-tab-on-the-supply-forecast-page"></a>Zakładka Przegląd na stronie Prognoza dostaw
@@ -173,7 +173,7 @@ Jeśli korzystasz z klucza przydziału pozycji lub wprowadziłeś prognozę pozy
 
 Prognoza zapotrzebowania pozwala na wprowadzenie lub wygenerowanie zapotrzebowania dla klienta. Pomaga pracownikom działu sprzedaży i marketingu w informowaniu pracowników działu planowania głównego o przewidywanym popycie w nadchodzącym okresie prognozy.
 
-Możesz wprowadzić prognozę popytu według pozycji, grupy pozycji, klucza przydziału pozycji, klienta i grupy klientów. Informacje o wszystkich sposobach otwierania strony **Prognoza popytu** dla różnych podmiotów i rekordów znajdują się w rozdziale [Wyświetlanie i ręczne wprowadzanie wierszy prognozy](#manual-entry) wcześniej w tym temacie.
+Możesz wprowadzić prognozę popytu według pozycji, grupy pozycji, klucza przydziału pozycji, klienta i grupy klientów. Informacje o wszystkich sposobach otwierania strony **Prognoza popytu** dla różnych podmiotów i rekordów znajdują się w rozdziale [Wyświetlanie i ręczne wprowadzanie wierszy prognozy](#manual-entry) wcześniej w tym artykule.
 
 W górnej części strony **Prognoza popytu** jest ustawiona siatka wierszy prognozy popytu oraz zestaw kart, których można użyć do wyświetlania i ustawienia dodatkowych informacji o wybranym wierszu prognozy. W dolnej części strony jest siatka **Alokacja**.
 
@@ -201,9 +201,9 @@ W poniższej tabeli opisano komendy, które są dostępne bezpośrednio w pasku 
 
 | Polecenie | opis |
 |---|---|
-| Przydziel prognozę | Jeśli używasz metody alokacji, wygeneruj poszczególne wiersze harmonogramu dla prognozowanej transakcji. Ilość linii jest następnie rozdzielana według daty (zgodnie z wybranymi przedziałami czasowymi), ilości oraz kwoty dla całego horyzontu czasowego. (Zobacz sekcję [Alokacja zapasów](#allocate-forecast) w dalszej części tego tematu).|
-| Aktualizacja zbiorcza | Otwórz stronę **Edycja transakcji prognozowych**. (Zobacz sekcję [Transakcje prognozowane aktualizacji zbioru](#bulk-update) w dalszej części tego tematu). |
-| Prognoza zapasów | Umożliwia otwarcie widoku strony **Prognoza zapasów**, który jest filtrowany dla wybranej kombinacji towaru/modelu. (Zobacz sekcję [Prognoza zapasów](#inventory-forecast) w dalszej części tego tematu). |
+| Przydziel prognozę | Jeśli używasz metody alokacji, wygeneruj poszczególne wiersze harmonogramu dla prognozowanej transakcji. Ilość linii jest następnie rozdzielana według daty (zgodnie z wybranymi przedziałami czasowymi), ilości oraz kwoty dla całego horyzontu czasowego. (Zobacz sekcję [Alokacja zapasów](#allocate-forecast) w dalszej części tego artykułu).|
+| Aktualizacja zbiorcza | Otwórz stronę **Edycja transakcji prognozowych**. (Zobacz sekcję [Transakcje prognozowane aktualizacji zbioru](#bulk-update) w dalszej części tego artykułu). |
+| Prognoza zapasów | Umożliwia otwarcie widoku strony **Prognoza zapasów**, który jest filtrowany dla wybranej kombinacji towaru/modelu. (Zobacz sekcję [Prognoza zapasów](#inventory-forecast) w dalszej części tego artykułu). |
 | Utwórz zapotrzebowanie na towary | Otwiera okno dialogowe, w którym można utworzyć wymagania dotyczące pozycji oraz linie dziennika zamówień lub pozycji dla transakcji prognoz związanych z projektem. |
 
 ### <a name="the-overview-tab-on-the-demand-forecast-page"></a>Zakładka Przegląd na stronie Prognoza popytu
@@ -296,7 +296,7 @@ Na karcie **Wymiary zapasów** są podane wszystkie wartości wymiarów zapasów
 
 ### <a name="the-allocation-grid-on-the-demand-forecast-page"></a>Zakładka Siatka alokacji na stronie Prognoza popytu
 
-Jeśli korzystasz z klucza przydziału pozycji lub wprowadziłeś prognozę pozycji na jeden lub więcej przyszłych okresów, możesz przydzielić prognozę, wybierając **Alokuj prognozę** na pasku narzędzi na zakładce **Przegląd**. Ilość jest wtedy rozdzielana w sposób wskazany przez linie w siatce **Przydziel**. (Zobacz sekcję [Alokacja zapasów](#allocate-forecast) w dalszej części tego tematu).
+Jeśli korzystasz z klucza przydziału pozycji lub wprowadziłeś prognozę pozycji na jeden lub więcej przyszłych okresów, możesz przydzielić prognozę, wybierając **Alokuj prognozę** na pasku narzędzi na zakładce **Przegląd**. Ilość jest wtedy rozdzielana w sposób wskazany przez linie w siatce **Przydziel**. (Zobacz sekcję [Alokacja zapasów](#allocate-forecast) w dalszej części tego artykułu).
 
 ## <a name="inventory-forecast"></a><a name="inventory-forecast"></a>Prognoza zapasów
 

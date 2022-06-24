@@ -1,6 +1,6 @@
 ---
 title: Rejestracja nieobecności w module Czas i frekwencja
-description: W tym temacie opisano sposób obsługi nieobecności w module Czas i frekwencja.
+description: W tym artykule opisano sposób obsługi nieobecności w module Czas i frekwencja.
 author: johanhoffmann
 ms.date: 05/26/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 06adca12c172dffa241fe44a6b64bb30863bcb4a8f3867429ad10bc852efd7c3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9a613edbe42d1bfb1d2ee43ee1cb2f1e0ab49a05
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730233"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890778"
 ---
 # <a name="absence-registration-in-time-and-attendance"></a>Rejestracja nieobecności w module Czas i frekwencja
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano koncepcję nieobecności i wyjaśniono sposób obsługi nieobecności w module Czas i frekwencja.
+W tym artykule opisano koncepcję nieobecności i wyjaśniono sposób obsługi nieobecności w module Czas i frekwencja.
 
 ## <a name="absence-that-is-based-on-regular-work-hours"></a>Nieobecność w normalnych godzinach pracy
 

@@ -1,6 +1,6 @@
 ---
 title: Niepowodzenie księgowania arkusza z powodu niezbilansowania
-description: W tym temacie wyjaśniono, dlaczego obciążenia i uznania mogą nie zostać zbilansowane w transakcjach na załączniku, przez co nie mogą zostać zaksięgowane. Temat zawiera również procedurę naprawy tego problemu.
+description: W tym artykule wyjaśniono, dlaczego obciążenia i uznania mogą nie zostać zbilansowane w transakcjach na załączniku, przez co nie mogą zostać zaksięgowane. Artykuł zawiera również procedurę naprawy tego problemu.
 author: kweekley
 ms.date: 08/03/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-8-03
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 07408e608496dcc19562b866449b3b27f5f80edd
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: f5afded3d5c42f8dab465b668e4c1fcdaed8c215
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8719940"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861337"
 ---
 # <a name="journal-posting-failure-because-of-imbalance"></a>Niepowodzenie księgowania arkusza z powodu niezbilansowania
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, dlaczego obciążenia i uznania mogą nie zostać zbilansowane w transakcjach na załączniku, przez co nie mogą zostać zaksięgowane. Temat zawiera również procedurę naprawy tego problemu.
+W tym artykule wyjaśniono, dlaczego obciążenia i uznania mogą nie zostać zbilansowane w transakcjach na załączniku, przez co nie mogą zostać zaksięgowane. Artykuł zawiera również procedurę naprawy tego problemu.
 
 ## <a name="symptom"></a>Objaw
 

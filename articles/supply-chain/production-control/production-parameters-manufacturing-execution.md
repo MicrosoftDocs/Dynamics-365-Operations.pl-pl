@@ -1,6 +1,6 @@
 ---
 title: Parametry produkcji w module Wykonywanie produkcji
-description: Ten temat zawiera informacje o ustawieniach parametrów produkcji w module Wykonywanie produkcji.
+description: Ten artykuł zawiera informacje o ustawieniach parametrów produkcji w module Wykonywanie produkcji.
 author: johanhoffmann
 ms.date: 06/16/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ce0dadd353df756a468384e3bf8e68c0ad2033a7042b4986fce41aa0764afdbc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d74b6c82c573810da9cbfe14745f997f40d408fc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752737"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873674"
 ---
 # <a name="production-parameters-in-manufacturing-execution"></a>Parametry produkcji w module Wykonywanie produkcji
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje o ustawieniach parametrów produkcji w module Wykonywanie produkcji.
+Ten artykuł zawiera informacje o ustawieniach parametrów produkcji w module Wykonywanie produkcji.
 
 Moduł **Wykonywanie produkcji** jest przeznaczony głównie dla firm produkcyjnych. Może być używany do rejestrowania zużycia czasu i towarów w zadaniach produkcyjnych lub projektach. Przed rozpoczęciem używania modułu Wykonywanie produkcji do rejestrowania zadań należy skonfigurować różne parametry produkcji określające, jak i kiedy rejestracje są księgowane w trakcie procesu produkcji. Ustawienia parametrów produkcji wpływają na zarządzanie zapasami, zarządzanie produkcją i obliczanie kosztów.
 

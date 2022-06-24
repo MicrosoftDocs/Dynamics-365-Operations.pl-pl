@@ -1,6 +1,6 @@
 ---
 title: Zarządzanie zmianami w formułach i ich składnikach
-description: Ten temat opisuje jak wykonać zarządzanie formułą i zarządzać zmianami w danych podstawowych produkcji procesowej.
+description: Ten artykuł opisuje jak wykonać zarządzanie formułą i zarządzać zmianami w danych podstawowych produkcji procesowej.
 author: t-benebo
 ms.date: 05/19/2021
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-19
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 31953fd29c471e52bd63dbb02c20f5f224c3cae2
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 8105ebc7f3698a6baaa04b6548dac18a7bf81a47
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103051"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904080"
 ---
 # <a name="manage-changes-in-formulas-and-their-ingredients"></a>Zarządzanie zmianami w formułach i ich składnikach
 
@@ -29,7 +29,7 @@ Jeśli w Microsoft Dynamics 365 Supply Chain Management są używane funkcje pro
 
 ## <a name="turn-this-feature-on-or-off"></a>Włączanie lub wyłączanie tej funkcji
 
-Funkcje opisane w tym temacie wymagają włączania w *systemie zarówno zarządzania zmianami inżynieryjnymi*, jak i *Zarządzaj zmianami formuł i ich składników*. Aby uzyskać szczegółowe informacje dotyczące sposobu włączanie i wyłączanie tych funkcji, zobacz [omówienie zarządzania zmianami inżynieryjnymi](product-engineering-overview.md).
+Funkcje opisane w tym artykule wymagają włączania w *systemie zarówno zarządzania zmianami inżynieryjnymi*, jak i *Zarządzaj zmianami formuł i ich składników*. Aby uzyskać szczegółowe informacje dotyczące sposobu włączanie i wyłączanie tych funkcji, zobacz [omówienie zarządzania zmianami inżynieryjnymi](product-engineering-overview.md).
 
 ## <a name="feature-naming-conventions"></a>Konwencje nazewnictwa funkcji
 
@@ -46,7 +46,7 @@ Poniższa lista podsumowuje, w jaki sposób funkcje zarządzania zmianami inżyn
 - **Kontrola gotowości** – używanie sprawdzianów systemowych i wytycznych dotyczących użytkowników (kwestionariuszy i list kontrolnych) w celu zapewnienia, że wszystkie wymagane dane produktu są w pełni wprowadzone przed jego wydaniem. Aby uzyskać więcej informacji, zobacz temat [Gotowość produktu](product-readiness.md).
 - **Rozszerzone funkcje zwalniania produktów** – zwalnianie w pełni zdefiniowanych wersji produktu i jego formuły z organizacji (firmy) do innych firm. Można także zdecydować, czy przed zwolnieniem informacje o produkcie mają być przeglądane, czy edytowane. Aby uzyskać więcej informacji, zobacz [Zwalnianie struktur produktu](release-product-structure.md).
 
-Pamiętaj, że większość tematów połączonych z poprzednią listą zawiera przykłady oparte na BOM. Formuły działają jednak w podobny sposób. Oto kilka dodatkowych pojęć, które warto znać, gdy używa się zarządzania zmianą (lub tylko zarządzania zmianą formuły) do zarządzania formułami i zestawami BOM:
+Pamiętaj, że większość artykułów połączonych z poprzednią listą zawiera przykłady oparte na BOM. Formuły działają jednak w podobny sposób. Oto kilka dodatkowych pojęć, które warto znać, gdy używa się zarządzania zmianą (lub tylko zarządzania zmianą formuły) do zarządzania formułami i zestawami BOM:
 
 - Dla każdej [kategorii inżynieryjnej produktu](engineering-versions-product-category.md) można określić typ produkcji (BOM, formuła lub pozycja planowania). Możesz również określić, czy obsługa ilości efektywnej jest wymagana dla produktów, które korzystają z tej kategorii.
 - Produkty uboczne i współprodukty nie są produktami inżynieryjnymi. Dlatego nie są one wersjonowane. Jeśli trzeba je zmienić, po prostu utwórz nowy produkt. Takie podejście ułatwia obsługę.

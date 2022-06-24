@@ -1,6 +1,6 @@
 ---
 title: Użyj źródeł danych USER INPUT PARAMETER, aby określić parametry dla raportu
-description: Ten temat wyjaśnia, jak używać źródeł danych USER INPUT PARAMETER do określania parametrów dla raportów, które generujesz.
+description: Ten artykuł wyjaśnia, jak używać źródeł danych USER INPUT PARAMETER do określania parametrów dla raportów, które generujesz.
 author: NickSelin
 ms.date: 04/20/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Version 10.0.27
-ms.openlocfilehash: 4e431c9dd59080af17fa073547073037ba233288
-ms.sourcegitcommit: 6c1bf233748c4bc70fc5a1a9711758cdfd9e07dc
+ms.openlocfilehash: 62b7a8173416a1d36a2985823d186a7a0e6a7e60
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8782319"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872980"
 ---
 # <a name="use-user-input-parameter-data-sources-to-specify-parameters-for-a-report"></a>Użyj źródeł danych USER INPUT PARAMETER, aby określić parametry dla raportu
 
 [!include[banner](../includes/banner.md)]
 
-Kiedy projektujesz komponenty [Raportowanie elektroniczne](general-electronic-reporting.md) (ER) [mapowanie modelu](er-overview-components.md#model-mapping-component) i [format](er-overview-components.md#format-component) ER, możesz użyć źródeł danych typu *USER INPUT PARAMETER*, aby uzyskać wymagane wartości, które mogą być określone w polach wprowadzania danych w oknie dialogowym w czasie działania, zanim rozpocznie się wykonywanie formatu ER. Ten temat opisuje źródła danych *USER INPUT PARAMETER*, które są obecnie obsługiwane.
+Kiedy projektujesz komponenty [Raportowanie elektroniczne](general-electronic-reporting.md) (ER) [mapowanie modelu](er-overview-components.md#model-mapping-component) i [format](er-overview-components.md#format-component) ER, możesz użyć źródeł danych typu *USER INPUT PARAMETER*, aby uzyskać wymagane wartości, które mogą być określone w polach wprowadzania danych w oknie dialogowym w czasie działania, zanim rozpocznie się wykonywanie formatu ER. Ten artykuł opisuje źródła danych *USER INPUT PARAMETER*, które są obecnie obsługiwane.
 
 ## <a name="mandatory-properties"></a><a name="mandatory-properties"></a>Właściwości obowiązkowe
 

@@ -1,6 +1,6 @@
 ---
 title: Tworzenie grup umów serwisowych
-description: W tym temacie przedstawiono procedurę, która pokazuje, jak tworzyć grupy umów serwisowych.
+description: W tym artykule przedstawiono procedurę, która pokazuje, jak tworzyć grupy umów serwisowych.
 author: sorenva
 ms.date: 02/19/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b849de86f5c2cb89d584df607a4d7662606fa9d6
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 9d94dfe38a6aef765bb1089908827275c00b3dc9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677290"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889494"
 ---
 # <a name="create-service-agreement-groups"></a>Tworzenie grup umów serwisowych 
 
@@ -37,7 +37,7 @@ Grupy umów serwisowych są przydatne do sortowania i filtrowania umów serwisow
 > [!NOTE]
 > Jeśli grupa umów serwisowych jest zdefiniowana w polu **Grupa umów serwisowych** na stronie **Parametry modułu Zarządzanie serwisem**, program będzie sugerował tę grupę dla wszystkich nowo tworzonych umów serwisowych.
 
-## <a name="related-topics"></a>Powiązane tematy
+## <a name="related-articles"></a>Powiązane artykuły
 
 [Omówienie umowy serwisowej](service-agreement-groups.md)
 

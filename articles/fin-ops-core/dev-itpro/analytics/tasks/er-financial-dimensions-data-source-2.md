@@ -1,6 +1,6 @@
 ---
 title: ER Używanie wymiarów finansowych jako źródła danych (Część 2 — Mapowanie modelu)
-description: W tym temacie opisano sposób konfigurowania modelu raportowania elektronicznego w celu używania wymiarów finansowych jako źródła danych dla raportów ER. (część 2)
+description: W tym artykule opisano sposób konfigurowania modelu raportowania elektronicznego w celu używania wymiarów finansowych jako źródła danych dla raportów ER. (część 2)
 author: NickSelin
 ms.date: 05/27/2020
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bc7c6bc299dd0af83db3b09b06276a210ecfada5
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: d228ee9d393cab1c5c1592ca6570cdc91992c38c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605412"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878350"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-2---model-mapping"></a>ER Używanie wymiarów finansowych jako źródła danych (Część 2 — Mapowanie modelu)
 
@@ -94,7 +94,7 @@ Aby wykonać te kroki, należy najpierw wykonać kroki w procedurze „ER Używa
 25. W drzewie zaznacz element „LedgerJournal\<Relacje\LedgerJournalTrans\Konto.Wymiar(LedgerDimension.Wymiar)\Konto główne i wymiary”.
 26. W drzewie zaznacz element „Arkusz\Transakcja\Dane wymiarów”.
 27. Kliknij opcję Powiąż.
-!Strona konstruktora mapowania modelu, karta Mapowanie, Drzewo źródeł danych.](../media/er-financial-dimensions-guides-model-mapping3.png)
+!Strona projektanta mapowania modelu, karta Mapowanie, drzewo źrodeł danych.](../media/er-financial-dimensions-guides-model-mapping3.png)
 28. W drzewie zaznacz element „LedgerJournal\<Relacje\LedgerJournalTrans\Debet(AmountCurDebit)”.
 29. W drzewie zaznacz element „Arkusz\Transakcja\Debet”.
 30. Kliknij opcję Powiąż.

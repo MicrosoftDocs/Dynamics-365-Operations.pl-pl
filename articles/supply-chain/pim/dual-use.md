@@ -1,6 +1,6 @@
 ---
 title: Towary podwójnego zastosowania
-description: W tym temacie wyjaśniono, jak śledzić produkty zidentyfikowane jako towary podwójnego zastosowania, przechowywać numery certyfikatów dla każdego odpowiedniego produktu i kraju przeznaczenia, a także drukować ważne numery certyfikatów na odpowiednich fakturach, dokumentach dostawy i/lub zamówieniach sprzedaży.
+description: W tym artykule wyjaśniono, jak śledzić produkty zidentyfikowane jako towary podwójnego zastosowania, przechowywać numery certyfikatów dla każdego odpowiedniego produktu i kraju przeznaczenia, a także drukować ważne numery certyfikatów na odpowiednich fakturach, dokumentach dostawy i/lub zamówieniach sprzedaży.
 author: t-benebo
 ms.date: 07/15/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 787d0c4ebcf83d6bfec05943f2bb0ddc5961a93a
-ms.sourcegitcommit: e18ea2458ae042b7d83f5102ed40140d1067301a
+ms.openlocfilehash: 02b154b9ea849c6b905d76edb256c4106b254acd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8736041"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878911"
 ---
 # <a name="dual-use-goods"></a>Towary podwójnego zastosowania
 
@@ -42,7 +42,7 @@ Rozważmy następujący scenariusz:
 
 6. Zamówienie obejmuje produkt X-100, produkt jest wysyłany do Francji, a dla produktu istnieje certyfikat francuski. Jednak certyfikat wygasł. Dlatego wyświetlany jest następujący komunikat ostrzegawczy: „Certyfikaty podwójnego zastosowania dla co najmniej jednego towaru podwójnego zastosowania w tym zamówieniu sprzedaży są nieprawidłowe. Czy chcesz kontynuować, potwierdzająć tę informację?"
 
-W tym temacie wyjaśniono, jak skonfigurować wszystkie ustawienia wymagane do skonfigurowania towarów podwójnego zastosowania i obsługi tego scenariusza.
+W tym artykule wyjaśniono, jak skonfigurować wszystkie ustawienia wymagane do skonfigurowania towarów podwójnego zastosowania i obsługi tego scenariusza.
 
 ## <a name="define-dual-use-requirements-for-each-relevant-country"></a>Zdefiniuj wymagania dotyczące podwójnego zastosowania dla każdego z właściwych krajów
 

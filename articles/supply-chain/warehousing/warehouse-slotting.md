@@ -1,6 +1,6 @@
 ---
 title: Rozpisywanie na przedziały w magazynie
-description: Ten temat zawiera informacje o rozpisywaniu na przedziały w magazynie. Rozpisywanie na przedziały umożliwia konsolidowanie popytu według towarów i jednostki miary z zamówień o stanie Zamówione, Zarezerwowane lub Zwolnione. Ułatwia to kierownikom magazynów zaplanowanie lokalizacji pobrania przed zwolnieniem zamówień do magazynu i utworzenie pracy pobrania.
+description: Ten artykuł zawiera informacje o rozpisywaniu na przedziały w magazynie. Rozpisywanie na przedziały umożliwia konsolidowanie popytu według towarów i jednostki miary z zamówień o stanie Zamówione, Zarezerwowane lub Zwolnione. Ułatwia to kierownikom magazynów zaplanowanie lokalizacji pobrania przed zwolnieniem zamówień do magazynu i utworzenie pracy pobrania.
 author: Mirzaab
 ms.date: 11/13/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: e057992b15f0a1fa76a78ef78ea9aeea3c088be9
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: a5ce900d7698c7d8211ce1e8b7d529ab79a28915
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676307"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897263"
 ---
 # <a name="warehouse-slotting"></a>Rozpisywanie na przedziały w magazynie
 
@@ -156,7 +156,7 @@ Dla każdego tworzonego szablonu zamówienia sprzedaży należy wykonać poniżs
 
     - **Warstwa jednostki miary:** _EaBoxPl_
 
-        To pole określa liczbę jednostek miary popytu, która jest prawidłowa dla danego wiersza. (Aby uzyskać więcej informacji, zobacz sekcję [Konwersje jednostki miary dla wariantów produktów](#unit-tiers) w tym temacie).
+        To pole określa liczbę jednostek miary popytu, która jest prawidłowa dla danego wiersza. (Aby uzyskać więcej informacji, zobacz sekcję [Konwersje jednostki miary dla wariantów produktów](#unit-tiers) w tym artykule).
 
     - **Przypisz kryteria przedziału:** _Rozważona ilość_
 

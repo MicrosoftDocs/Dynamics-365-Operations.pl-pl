@@ -1,6 +1,6 @@
 ---
 title: Stany zarządzania transportem
-description: W tym temacie opisano sposób tworzenia stanu transportu i mapowania tego stanu na stan przewoźnika.
+description: W tym artykule opisano sposób tworzenia stanu transportu i mapowania tego stanu na stan przewoźnika.
 author: Weijiesa
 ms.date: 10/16/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-09-08
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 3e528c13b1df68dde5a73a7d7cae3973b99b6f5e
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 9b20570a87a9f8969ca6dcf898176fd40f88eeca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671626"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897381"
 ---
 # <a name="transportation-management-statuses"></a>Stany zarządzania transportem
 

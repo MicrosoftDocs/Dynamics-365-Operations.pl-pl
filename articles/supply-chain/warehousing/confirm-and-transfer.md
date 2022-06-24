@@ -1,6 +1,6 @@
 ---
 title: Potwierdź i przenieś
-description: W tym temacie objaśniono, jak korzystać z funkcji Potwierdź i przenieś, która pozwala na wysyłanie ładunku z magazynu przed ukończeniem pracy skojarzonej z tym ładunkiem.
+description: W tym artykule objaśniono, jak korzystać z funkcji Potwierdź i przenieś, która pozwala na wysyłanie ładunku z magazynu przed ukończeniem pracy skojarzonej z tym ładunkiem.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 0d34dd1b33467aa1ea3a723e1baaf7f06285c3fa
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 9257d8f9e6ed62ac0b19b0cdc8fd858e8b2f97a3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675495"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900572"
 ---
 # <a name="confirm-and-transfer"></a>Potwierdź i przenieś
 
@@ -55,11 +55,11 @@ Można dzielić tylko ładunki spełniające wszystkie następujące kryteria:
 
 ## <a name="turn-the-confirm-and-transfer-feature-on-or-off"></a>Włączanie lub wyłączanie funkcji potwierdzania i przenoszenia
 
-Aby korzystać z funkcji opisanej w tym temacie, w systemie musi być włączona funkcja *Potwierdź i przenieś*. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.25, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Potwierdź i przenieś* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Aby korzystać z funkcji opisanej w tym artykule, w systemie musi być włączona funkcja *Potwierdź i przenieś*. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.25, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Potwierdź i przenieś* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-confirm-and-transfer"></a>Konfiguracja funkcji Potwierdź i przenieś
 
-Aby można było skorzystać z funkcji *Potwierdź i przenieś*, należy ją włączyć we wszystkich odpowiednich szablonach ładunku. Ponadto, w zależności od wymagań użytkownika, można przygotować szablony pracy do obsługi tej funkcji. Jeśli użytkownik chce pracować w przykładowym scenariuszu przedstawionym w dalszej części tego tematu, należy skonfigurować system zgodnie z opisem w tej sekcji. (Ten scenariusz jest oparty na danych demonstracyjnych **USMF**).
+Aby można było skorzystać z funkcji *Potwierdź i przenieś*, należy ją włączyć we wszystkich odpowiednich szablonach ładunku. Ponadto, w zależności od wymagań użytkownika, można przygotować szablony pracy do obsługi tej funkcji. Jeśli użytkownik chce pracować w przykładowym scenariuszu przedstawionym w dalszej części tego artykułu, należy skonfigurować system zgodnie z opisem w tej sekcji. (Ten scenariusz jest oparty na danych demonstracyjnych **USMF**).
 
 ### <a name="prepare-your-load-templates"></a>Przygotowywanie szablonów ładunku
 
@@ -69,7 +69,7 @@ Aby można było skorzystać z funkcji *Potwierdź i przenieś*, należy ją wł
 
 ### <a name="prepare-your-work-templates"></a>Przygotowywanie szablonów pracy
 
-Ta konfiguracja nie jest wymagana we wszystkich sytuacjach. Pokazany tutaj przykład gwarantuje, że praca może zostać przerwana przez wysyłkę do obsługi przykładowego scenariusza przedstawionego w dalszej części tego tematu. Istnieją również inne sposoby osiągnięcia tego rezultatu.
+Ta konfiguracja nie jest wymagana we wszystkich sytuacjach. Pokazany tutaj przykład gwarantuje, że praca może zostać przerwana przez wysyłkę do obsługi przykładowego scenariusza przedstawionego w dalszej części tego artykułu. Istnieją również inne sposoby osiągnięcia tego rezultatu.
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Praca \> Szablony pracy**.
 1. W siatce w górnej części strony wybierz istniejący szablon pracy, w którym chcesz skonfigurować funkcję *Potwierdź i przenieś*. (Jeśli pracujesz z danymi demonstracyjnymi **USMF**, wybierz szablon pracy **51 pobranie do etapu**). Możesz również utworzyć nowy szablon pracy.

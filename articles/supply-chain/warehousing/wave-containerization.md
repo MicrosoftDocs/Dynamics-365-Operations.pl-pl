@@ -1,6 +1,6 @@
 ---
 title: Konteneryzacja
-description: W tym temacie opisano sposób zautomatyzowania kontenerów ładunków. Automatyczna konteneryzacja tworzy kontenery i pracę pobrania dla wysyłki podczas przetwarzania grupy czynności.
+description: W tym artykule opisano sposób zautomatyzowania kontenerów ładunków. Automatyczna konteneryzacja tworzy kontenery i pracę pobrania dla wysyłki podczas przetwarzania grupy czynności.
 author: Mirzaab
 ms.date: 03/08/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 2f738c0404a41ef862d4985a170a0eba991e4dd4
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 4bdd13d794f01c9971ee1bcbdf206bff6b526afa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686634"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880430"
 ---
 # <a name="containerization"></a>Konteneryzacja
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób zautomatyzowania kontenerów ładunków. Automatyczna konteneryzacja tworzy kontenery i pracę pobrania dla wysyłki podczas przetwarzania grupy czynności.
+W tym artykule opisano sposób zautomatyzowania kontenerów ładunków. Automatyczna konteneryzacja tworzy kontenery i pracę pobrania dla wysyłki podczas przetwarzania grupy czynności.
 
 Aby skonfigurować konteneryzację, należy utworzyć następujące elementy:
 

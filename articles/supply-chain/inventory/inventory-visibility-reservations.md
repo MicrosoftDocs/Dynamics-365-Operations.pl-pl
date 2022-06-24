@@ -1,6 +1,6 @@
 ---
-title: Rezerwacje dodatku Widoczność magazynu
-description: W tym temacie opisano sposób skonfigurowania funkcji rezerwacji w celu tworzenia rezerwacji, zużywania rezerwacji i/lub rezerwowania określonych ilości zapasów za pomocą dodatku Widoczność magazynu.
+title: Rezerwacje dodatku Inventory Visibility
+description: W tym artykule opisano sposób skonfigurowania funkcji rezerwacji w celu tworzenia rezerwacji, zużywania rezerwacji i/lub rezerwowania określonych ilości zapasów za pomocą dodatku Widoczność magazynu.
 author: yufeihuang
 ms.date: 08/02/2021
 ms.topic: article
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 5e6752539a6381e1f7271883102391374e04f3aa
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 3b74907709ab97ddf4cc829dba324df213ca229f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061711"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895736"
 ---
-# <a name="inventory-visibility-reservations"></a>Rezerwacje dodatku Widoczność magazynu
+# <a name="inventory-visibility-reservations"></a>Rezerwacje dodatku Inventory Visibility
 
 [!include [banner](../includes/banner.md)]
 
 
-W tym temacie opisano sposób skonfigurowania funkcji rezerwacji w celu tworzenia rezerwacji, zużywania rezerwacji i/lub rezerwowania określonych ilości zapasów za pomocą dodatku Widoczność magazynu.
+W tym artykule opisano sposób skonfigurowania funkcji rezerwacji w celu tworzenia rezerwacji, zużywania rezerwacji i/lub rezerwowania określonych ilości zapasów za pomocą dodatku Widoczność magazynu.
 
 Rezerwacje oznaczą ilość zapasów, która będzie używana w przyszłości. Podczas tworzenia rezerwacji system uniemożliwia innym zamówieniom rezerwowanie lub zużywanie zarezerwowanych towarów do czasu, aż rezerwacja zostanie zużyta lub anulowana. Rezerwacje są tworzone, zużywane i anulowane za pomocą wywołań interfejsu API w usłudze Widoczność magazynu.
 

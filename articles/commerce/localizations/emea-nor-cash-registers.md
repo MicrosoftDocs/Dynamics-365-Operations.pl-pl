@@ -1,6 +1,6 @@
 ---
 title: Funkcje kasy dla Norwegii
-description: Ten temat zawiera omówienie funkcjonalności kasy, która jest dostępna dla Norwegii w rozwiązaniu Microsoft Dynamics 365 Commerce, oraz wskazówki dotyczące konfigurowania jej.
+description: Ten artykuł zawiera omówienie funkcjonalności kasy, która jest dostępna dla Norwegii w rozwiązaniu Microsoft Dynamics 365 Commerce, oraz wskazówki dotyczące konfigurowania jej.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-10-31
-ms.openlocfilehash: bb87b3a7405ef3d8435748813fa66db74b8f0971
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: 778a947f03866518219e9c0fa44660d66f19f53a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944971"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906706"
 ---
 # <a name="cash-register-functionality-for-norway"></a>Funkcje kasy dla Norwegii
 
 [!include[banner](../includes/banner.md)]
 
-Ten temat zawiera omówienie funkcjonalności kasy, która jest dostępna dla Norwegii w rozwiązaniu Dynamics 365 Commerce. Zawiera również wskazówki dotyczące konfigurowania tej funkcjonalności. Ta funkcjonalność składa się z następujących części:
+Ten artykuł zawiera omówienie funkcjonalności kasy, która jest dostępna dla Norwegii w rozwiązaniu Dynamics 365 Commerce. Zawiera również wskazówki dotyczące konfigurowania tej funkcjonalności. Ta funkcjonalność składa się z następujących części:
 
 - Wspólne funkcje punktu sprzedaży dostępne dla odbiorców we wszystkich krajach lub regionach. Przykłady obejmują opcję, za pomocą której można uniemożliwić wydrukowanie kopii paragonu więcej niż jeden raz.
 - Funkcje specyficzne dla Norwegii, takie jak podpisy cyfrowe dla transakcji sprzedaży.

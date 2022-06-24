@@ -1,6 +1,6 @@
 ---
 title: Przeliczanie jednostki miary dla wariantów produktów
-description: W tym temacie wyjaśniono, jak skonfigurować konwersje jednostek miary dla wariantów produktu. Zawiera przykładową konfigurację.
+description: W tym artykule wyjaśniono, jak skonfigurować konwersje jednostek miary dla wariantów produktu. Zawiera przykładową konfigurację.
 author: t-benebo
 ms.date: 05/11/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: c02252abcaf82cb2aab928949827e25ef7cce8c2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a605e510ac8faa1f92e105c9fcc30222ef78e05e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579575"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869641"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Przeliczanie jednostki miary dla wariantów produktów
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak skonfigurować konwersje jednostek miary dla różnych wariantów produktu.
+W tym artykule wyjaśniono, jak skonfigurować konwersje jednostek miary dla różnych wariantów produktu.
 
 Zamiast tworzyć wiele pojedynczych produktów, które wymagają obsługi, można użyć wariantów produktu w celu utworzenia różnych wariantów jednego produktu. Na przykład wariantem produktu może być koszulka w danym rozmiarze i kolorze.
 

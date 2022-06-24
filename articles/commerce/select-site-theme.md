@@ -1,6 +1,6 @@
 ---
 title: Wybór motywu witryny
-description: W tym temacie opisano sposób ustawiania lub zmieniania motywu witryny w Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano sposób ustawiania lub zmieniania motywu witryny w Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 09/15/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a13400258a86087b6137b08ca724cbbfc1a90ad4
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: b038dc996c571d54dce3f2aec679f7af8af85074
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964788"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900393"
 ---
 # <a name="select-a-site-theme"></a>Wybór motywu witryny
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano sposób ustawiania lub zmieniania motywu witryny w Microsoft Dynamics 365 Commerce.
+W tym artykule opisano sposób ustawiania lub zmieniania motywu witryny w Microsoft Dynamics 365 Commerce.
 
 Układ i styl witryny (np. czcionki, rozmiary i kolory) są definiowane przez wybrany motyw i mają zastosowanie w odniesieniu do witryny. Motyw jest tworzony i wdrażany przez programistę w firmie użytkownika. Aby zapoznać się z omówieniem motywów, zajrzyj do [Omówienie funkcji motywowania](e-commerce-extensibility/theming.md). Aby uzyskać więcej informacji dotyczących sposobu tworzenia i wdrażania motywów, zobacz [Tworzenie nowego motywu](e-commerce-extensibility/create-theme.md).
 

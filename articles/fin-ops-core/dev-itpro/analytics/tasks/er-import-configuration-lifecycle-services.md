@@ -1,6 +1,6 @@
 ---
 title: Importowanie konfiguracji z usługi Lifecycle Services
-description: W tym temacie opisano sposób importowania nowej wersji konfiguracji raportowania elektronicznego z usług Microsoft Dynamics Lifecycle Services (LCS).
+description: W tym artykule opisano sposób importowania nowej wersji konfiguracji raportowania elektronicznego z usług Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
 ms.date: 06/17/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 05a8ad127df177c54e67ff1f2ddcd8b3a3f51ea12b6e11d087105bd74b6bdb3f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2aae59334828a5636f35051d50cf2ea392074b71
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712599"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886680"
 ---
 # <a name="import-a-configuration-from-lifecycle-services"></a>Importowanie konfiguracji z usługi Lifecycle Services
 
 [!include [banner](../../includes/banner.md)]
 
-Ten temat wyjaśnia, jak użytkownik w roli Administrator systemu lub Deweloper raportowania elektronicznego może zaimportować nową wersję konfiguracji [raportowania elektronicznego (ER)](../general-electronic-reporting.md#Configuration) z [biblioteki zasobów na poziomie projektu](../../lifecycle-services/asset-library.md) w Microsoft Dynamics Lifecycle Services (LCS).
+Ten artykuł wyjaśnia, jak użytkownik w roli Administrator systemu lub Deweloper raportowania elektronicznego może zaimportować nową wersję konfiguracji [raportowania elektronicznego (ER)](../general-electronic-reporting.md#Configuration) z [biblioteki zasobów na poziomie projektu](../../lifecycle-services/asset-library.md) w Microsoft Dynamics Lifecycle Services (LCS).
 
 > [!IMPORTANT]
 > [Zrezygnowano](../../../../finance/get-started/removed-deprecated-features-finance.md#features-removed-or-deprecated-in-the-finance-10017-release) z używania LCS jako repozytorium do przechowywania konfiguracji raportowania elektronicznego (ER). Więcej informacji: [Regulatory Configuration Service (RCS) — wycofanie pamięci w Lifecycle Services (LCS)](../../../../finance/localizations/rcs-lcs-repo-dep-faq.md).
@@ -41,7 +41,7 @@ W tym przykładzie wybierzesz żądaną wersję konfiguracji raportowania elektr
 
 <a name="accessconditions"></a>
 > [!NOTE]
-> Upewnij się, że bieżący użytkownik Dynamics 365 Finance jest członkiem projektu usługi LCS zawierającego [dostęp](../../lifecycle-services/asset-library.md#asset-library-support) do biblioteki elementów zawartości, do której użytkownik chce uzyskać dostęp na potrzeby importowania konfiguracji ER.
+> Upewnij się, że bieżący użytkownik aplikacji Dynamics 365 Finance jest członkiem projektu usługi LCS zawierającego bibliotekę elementów zawartości, do której użytkownik chce uzyskać [dostęp](../../lifecycle-services/asset-library.md#asset-library-support) na potrzeby importowania konfiguracji ER.
 >
 > Nie można uzyskać dostępu do projektu LCS z poziomu repozytorium ER, które reprezentuje domenę inną niż domena używana w Finance. Jeśli zostanie podjęta taka próba, zostanie wyświetlona pusta lista projektów LCS i nie będzie można importować konfiguracji ER z biblioteki elementów zawartości na poziomie projektu w usłudze LCS. Aby uzyskać dostęp do bibliotek elementów zawartości na poziomie projektu z repozytorium ER używanego do importowania konfiguracji ER, należy zalogować się do Finance przy użyciu poświadczeń użytkownika, który należy do dzierżawy (domeny), dla którego została zainicjowana bieżąca instancja Finance.
 
@@ -49,7 +49,7 @@ W tym przykładzie wybierzesz żądaną wersję konfiguracji raportowania elektr
 
 1. Na stronie **Konfiguracje** w drzewie konfiguracji wybierz pozycję **Przykładowy model konfiguracji**.
 
-    Utworzona pierwsza wersja konfiguracji przykładowego modelu danych została utworzona i opublikowana w usłudze LCS podczas procedury [Przekazywanie konfiguracji ER do usługi Lifecycle Services](er-upload-configuration-into-lifecycle-services.md). W tej procedurze usuniesz tę wersję konfiguracji raportowania elektronicznego. Następnie ta wersja zostanie zaimportowana z usługi LCS w dalszej części tego tematu.
+    Utworzona pierwsza wersja konfiguracji przykładowego modelu danych została utworzona i opublikowana w usłudze LCS podczas procedury [Przekazywanie konfiguracji ER do usługi Lifecycle Services](er-upload-configuration-into-lifecycle-services.md). W tej procedurze usuniesz tę wersję konfiguracji raportowania elektronicznego. Następnie ta wersja zostanie zaimportowana z usługi LCS w dalszej części tego artykułu.
 
 2. Na liście znajdź i zaznacz odpowiedni rekord.
 

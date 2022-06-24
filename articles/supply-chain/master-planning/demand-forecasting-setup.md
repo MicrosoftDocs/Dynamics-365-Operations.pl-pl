@@ -1,6 +1,6 @@
 ---
 title: Ustawianie prognozowania popytu
-description: W tym temacie opisano ustawienia zadania, które należy wykonać, by przygotować się do prognozowania popytu.
+description: W tym artykule opisano ustawienia zadania, które należy wykonać, by przygotować się do prognozowania popytu.
 author: t-benebo
 ms.date: 11/23/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c3b52b970a8040dcba5a1fc59d297dc9ce1a3c53
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 10a211e0e20f22dfbfdb4923841808750b6ed71b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8470017"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901010"
 ---
 # <a name="demand-forecasting-setup"></a>Ustawianie prognozowania popytu
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób konfigurowania prognozowania popytu.  
+W tym artykule opisano sposób konfigurowania prognozowania popytu.  
 
 ## <a name="item-allocation-keys"></a>Klucze alokacji produktów
 
@@ -245,7 +245,7 @@ Poniższa procedura służy do tworzenia nowego obszaru usługi Machine Learning
 1. Wykonaj kolejne czynności w kreatorze, korzystając z instrukcje wyświetlanych na ekranie. Podczas pracy należy pamiętać o następujących kwestiach:
 
     - Użyj ustawień domyślnych, chyba że inne punkty na tej liście zalecają inne ustawienia.
-    - Pamiętaj, aby wybrać region geograficzny, który pasuje do regionu, w którym jest wdrożona aplikacji Supply Chain Management. W przeciwnym razie niektóre dane mogą przejść przez granice regionów. Więcej informacji znajduje się w dalszej sekcji dotyczącej [klauzuli prywatności](#privacy) w tym temacie.
+    - Pamiętaj, aby wybrać region geograficzny, który pasuje do regionu, w którym jest wdrożona aplikacji Supply Chain Management. W przeciwnym razie niektóre dane mogą przejść przez granice regionów. Więcej informacji znajduje się w dalszej sekcji dotyczącej [klauzuli prywatności](#privacy) w tym artykule.
     - Użyj dedykowanych zasobów, takich jak grupy zasobów, konta magazynu, rejestry kontenerów, magazyny kluczy platformy Azure i zasobów sieciowych.
     - Na stronie **Ustawianie parametrów połączenia usługi Azure Machine Learning Service** w kreatorze musisz podać nazwę konta magazynu. Użyj konta dedykowanego do prognozowania popytu. Dane wejściowe i wyjściowe prognozowania popytu będą przechowywane na tym koncie magazynu.
 

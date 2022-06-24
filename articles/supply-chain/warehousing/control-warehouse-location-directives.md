@@ -1,6 +1,6 @@
 ---
 title: Kontrola pracy magazynu za pomocą szablonów pracy i dyrektyw lokalizacji
-description: W tym temacie opisano sposób używania szablonów pracy i dyrektyw lokalizacji do określania, jak i gdzie praca jest wykonywana w magazynie.
+description: W tym artykule opisano sposób używania szablonów pracy i dyrektyw lokalizacji do określania, jak i gdzie praca jest wykonywana w magazynie.
 author: perlynne
 ms.date: 10/20/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7e955fba12e963a443c0304f0a8a0e395c46909dd34de12cd51fa9788491786
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 65675d8a99d023176e3e66e92cd3d634750bdb0e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770151"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877429"
 ---
 # <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Kontrola pracy magazynu za pomocą szablonów pracy i dyrektyw lokalizacji
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób używania szablonów pracy i dyrektyw lokalizacji do określania, jak i gdzie praca jest wykonywana w magazynie.
+W tym artykule opisano sposób używania szablonów pracy i dyrektyw lokalizacji do określania, jak i gdzie praca jest wykonywana w magazynie.
 
 Instrukcje otrzymywane przez pracowników magazynu na urządzeniu przenośnym są określane w szablonach pracy konfigurowanych w Dynamics 365 Supply Chain Management w celu zdefiniowania różnych procesów i zadań magazynowych. Szablony pracy określają, jak wykonywana jest praca dla każdego procesu magazynowego. Połączenie dyrektywy lokalizacji z szablonem pracy pomaga zagwarantować, że praca ma miejsce w określonych obszarach fizycznych magazynów.
 
@@ -73,7 +73,7 @@ Dyrektywy lokalizacji określają, *gdzie* towary powinny być pobierane i *gdzi
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 - Wideo: [Konfiguracja zarządzania magazynem — zaawansowana](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
-- Temat pomocy: [Praca z dyrektywami lokalizacji](create-location-directive.md)
+- Artykuł pomocy: [Praca z dyrektywami lokalizacji](create-location-directive.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

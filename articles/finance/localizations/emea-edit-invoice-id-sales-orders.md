@@ -1,6 +1,6 @@
 ---
 title: Edytowanie identyfikator faktur w zamówieniach sprzedaży dla Europy Wschodniej
-description: Ten temat zawiera informacje o parametrach rozrachunków z odbiorcami, które wpływają na numery faktur w dokumentach dostawy i fakturach dla Czech, Estonii, Węgier, Litwy, Łotwy i Polski.
+description: Ten artykuł zawiera informacje o parametrach rozrachunków z odbiorcami, które wpływają na numery faktur w dokumentach dostawy i fakturach dla Czech, Estonii, Węgier, Litwy, Łotwy i Polski.
 author: ShylaThompson
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e5c84ee88ae96a64c56be8eb81685ba64dd9345e5e5a88e3479b255cb4d10131
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5c6bc70187680cdf0599c88fe36c25bea22ed0d8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757961"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880639"
 ---
 # <a name="edit-invoice-ids-on-sales-orders-for-eastern-europe"></a>Edytowanie identyfikator faktur w zamówieniach sprzedaży dla Europy Wschodniej
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje o parametrach rozrachunków z odbiorcami, które wpływają na numery faktur w dokumentach dostawy i fakturach dla Czech, Estonii, Węgier, Litwy, Łotwy i Polski.
+Ten artykuł zawiera informacje o parametrach rozrachunków z odbiorcami, które wpływają na numery faktur w dokumentach dostawy i fakturach dla Czech, Estonii, Węgier, Litwy, Łotwy i Polski.
 
 Firmom w Czechach, Estonii, na Węgrzech, Litwie, Łotwie i w Polsce opcja **Edytuj identyfikator faktury w zamówieniach sprzedaży** umożliwia ręczne wprowadzenie numerów dokumentów dostawy i faktur na tych dokumentach odbiorców. Następujące opcje są dostępne na stronie **Parametry modułu rozrachunków z odbiorcami**, na skróconej karcie **Faktura** dostępnej na karcie **Aktualizacje**.
 <table>

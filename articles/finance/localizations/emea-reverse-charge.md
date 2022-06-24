@@ -1,6 +1,6 @@
 ---
 title: Mechanizm opłaty zwrotnej dla schematu VAT/GST
-description: W tym temacie opisano, jak skonfigurować odwrócony podatek od towarów i usług (VAT) dla krajów europejskich i Arabii Saudyjskiej i Singapurze.
+description: W tym artykule opisano, jak skonfigurować odwrócony podatek od towarów i usług (VAT) dla krajów europejskich i Arabii Saudyjskiej i Singapurze.
 author: epodkolz
 ms.date: 10/05/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 326a74d0f962cf0455033b04950ded7ca26bfc77
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 4176f8e853b7d7c2acc1044cab33371202f10c4a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594723"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861266"
 ---
 # <a name="reverse-charge-mechanism-for-vatgst-scheme"></a>Mechanizm opłaty zwrotnej dla schematu VAT/GST
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano generalne podejście dotyczące konfigurowania funkcji opłaty zwrotnej dla krajów/regionów, które przyjmują schematy VAT lub GST.
+W tym artykule opisano generalne podejście dotyczące konfigurowania funkcji opłaty zwrotnej dla krajów/regionów, które przyjmują schematy VAT lub GST.
                                                                                  
 Dostęp w kraju/regionie do tych funkcji jest zarządzany przez następujące funkcje w obszarze roboczym **Zarządzanie funkcjami**.
 
@@ -33,7 +33,7 @@ Dostęp w kraju/regionie do tych funkcji jest zarządzany przez następujące fu
 | Opłata zwrotna dla dodatkowych krajów            | Bahrajn  </br>Kuwejt  </br>Oman  </br>Katar                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | Włącz mechanizm opłaty zwrotnej dla schematu podatku VAT/GST | Wszystkie pozostałe kraje/regiony, z wyjątkiem:  </br>Brazylia  </br>Indie  </br>Rosja                                                                                                                                                                                                                                                                                                                                                                                         |
  
- Więcej informacji zawiera sekcja [Włączanie mechanizmu opłaty zwrotnej dla systemu VAT/GST](#enable-reverse-charge) w dalszej części tego tematu.
+ Więcej informacji zawiera sekcja [Włączanie mechanizmu opłaty zwrotnej dla systemu VAT/GST](#enable-reverse-charge) w dalszej części tego artykułu.
 
 Podatek odwrócony to schemat podatkowy, w którym odpowiedzialność za rozliczenie i sprawozdawczość podatku VAT jest przenoszona ze sprzedawcy na nabywcę towarów i/lub usług. W związku z tym odbiorcy towarów i/lub usług raportują w swoich deklaracjach VAT zarówno należny podatek VAT (w roli sprzedawcy), jak i naliczony podatek VAT (w roli nabywcy).
 

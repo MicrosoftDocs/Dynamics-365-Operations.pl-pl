@@ -1,6 +1,6 @@
 ---
 title: Praca z pozycjami serializowanymi w punkcie sprzedaży
-description: W tym temacie opisano sposób zarządzania pozycjami spersonalizowanymi w aplikacji punktu sprzedaży.
+description: W tym artykule opisano sposób zarządzania pozycjami spersonalizowanymi w aplikacji punktu sprzedaży.
 author: boycezhu
 ms.date: 01/08/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 5725943fd249e1b5d66b08b829c2eb58b6aad3ee24db9ca83bbde9be906bbf82
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8a715a9d025f36656506daeb9e611bfacdafa102
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737585"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880036"
 ---
 # <a name="work-with-serialized-items-in-the-pos"></a>Praca z pozycjami serializowanymi w punkcie sprzedaży
 
 [!include [banner](includes/banner.md)]
 
-Wielu sprzedawców detalicznych sprzedaje produkty wymagające kontroli numerów seryjnych. Te produkty są nazywane *pozycjami serializowanymi*. Niektórzy sprzedawcy detaliczni mogą chcieć zachować numery seryjne w zapasach sklepowych lub magazynowych dla celów związanych ze śledzeniem. Inni sprzedawcy detaliczni mogą przechwytywać numery seryjne podczas procesu sprzedaży dla celów związanych z usługami i gwarancjami. W tym temacie opisano sposób zarządzania pozycjami spersonalizowanymi w aplikacji punktu sprzedaży Microsoft Dynamics 365 Commerce.
+Wielu sprzedawców detalicznych sprzedaje produkty wymagające kontroli numerów seryjnych. Te produkty są nazywane *pozycjami serializowanymi*. Niektórzy sprzedawcy detaliczni mogą chcieć zachować numery seryjne w zapasach sklepowych lub magazynowych dla celów związanych ze śledzeniem. Inni sprzedawcy detaliczni mogą przechwytywać numery seryjne podczas procesu sprzedaży dla celów związanych z usługami i gwarancjami. W tym artykule opisano sposób zarządzania pozycjami spersonalizowanymi w aplikacji punktu sprzedaży Microsoft Dynamics 365 Commerce.
 
 ## <a name="serial-number-configurations"></a>Konfiguracje numeru seryjnego
 
@@ -124,7 +124,7 @@ W przypadku towarów z numerami seryjnymi sprzedawanych do przyszłego odbioru l
 
 ### <a name="apply-serial-numbers-during-customer-order-fulfillment-or-pickup"></a>Zastosuj numery seryjne podczas realizacji lub odbioru zamówienia klienta
 
-Podczas wypełniania wierszy zamówień klientów dotyczących produktów z numerami seryjnymi za pomocą operacji **Realizacji zamówienia** w punkcie sprzedaży, POS wymusza przechwycenie numeru seryjnego przed ostateczną realizacją. W związku z tym, jeśli numer seryjny nie został podany podczas wstępnego rejestrowania zamówienia, musi zostać zarejestrowany podczas procesów kompletacji, pakowania lub wysyłki w punkcie sprzedaży. Walidacja jest wykonywana na każdym kroku, a użytkownik zostanie poproszony o podanie numeru seryjnego tylko wtedy, gdy go brakuje lub jest już nieaktualny. Na przykład, jeśli użytkownik pominie etapy pobierania lub pakowania i natychmiast zainicjuje wysyłkę, a numer seryjny nie został zarejestrowany dla linii, punkt sprzedaży będzie wymagał wprowadzenia numeru seryjnego przed zakończeniem ostatniego etapu faktury. Podczas wymuszania przechwytywania numeru seryjnego podczas operacji realizacji zamówień w punkcie sprzedaży nadal obowiązują wszystkie zasady wspomniane wcześniej w tym temacie. Tylko serializowane pozycje skonfigurowane jako **Aktywne** są przechodzić przez weryfikację zapasów o numerze seryjnym. Pozycje skonfigurowane jako **Aktywne w procesie sprzedaży** nie będą sprawdzane poprawność. Jeśli **Ujemne wartości magazynu fizycznego** są dozwolone dla **Aktywnych** produktów, będą przyjmowane numery seryjne, niezależnie od dostępności zapasów w magazynie. W przypadku towarów **Aktywnych** i **Aktywne w procesie sprzedaży**, jeśli skonfigurowano **Dozwolony jest pusty problem**, użytkownik może w razie potrzeby pozostawić puste numery seryjne podczas etapów pobrania, pakowania i wysyłki.
+Podczas wypełniania wierszy zamówień klientów dotyczących produktów z numerami seryjnymi za pomocą operacji **Realizacji zamówienia** w punkcie sprzedaży, POS wymusza przechwycenie numeru seryjnego przed ostateczną realizacją. W związku z tym, jeśli numer seryjny nie został podany podczas wstępnego rejestrowania zamówienia, musi zostać zarejestrowany podczas procesów kompletacji, pakowania lub wysyłki w punkcie sprzedaży. Walidacja jest wykonywana na każdym kroku, a użytkownik zostanie poproszony o podanie numeru seryjnego tylko wtedy, gdy go brakuje lub jest już nieaktualny. Na przykład, jeśli użytkownik pominie etapy pobierania lub pakowania i natychmiast zainicjuje wysyłkę, a numer seryjny nie został zarejestrowany dla linii, punkt sprzedaży będzie wymagał wprowadzenia numeru seryjnego przed zakończeniem ostatniego etapu faktury. Podczas wymuszania przechwytywania numeru seryjnego podczas operacji realizacji zamówień w punkcie sprzedaży nadal obowiązują wszystkie zasady wspomniane wcześniej w tym artykule. Tylko serializowane pozycje skonfigurowane jako **Aktywne** są przechodzić przez weryfikację zapasów o numerze seryjnym. Pozycje skonfigurowane jako **Aktywne w procesie sprzedaży** nie będą sprawdzane poprawność. Jeśli **Ujemne wartości magazynu fizycznego** są dozwolone dla **Aktywnych** produktów, będą przyjmowane numery seryjne, niezależnie od dostępności zapasów w magazynie. W przypadku towarów **Aktywnych** i **Aktywne w procesie sprzedaży**, jeśli skonfigurowano **Dozwolony jest pusty problem**, użytkownik może w razie potrzeby pozostawić puste numery seryjne podczas etapów pobrania, pakowania i wysyłki.
 
 Weryfikacje numerów seryjnych będą również miały miejsce, gdy użytkownik wykonuje operacje odbioru zamówień klientów w punkcie sprzedaży. Aplikacja POS nie pozwala na sfinalizowanie odbioru produktu z numerami seryjnymi, chyba że przejdzie weryfikację, jak wspomniano wcześniej. Weryfikacje są zawsze oparte na wymiarze śledzenia produktu i sprzedaży konfiguracji magazynowych. 
 

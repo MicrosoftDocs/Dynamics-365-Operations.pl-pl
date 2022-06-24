@@ -1,6 +1,6 @@
 ---
 title: Planowanie oparte na priorytecie
-description: W tym temacie opisano funkcję planowania opartej na priorytecie rozwiązania Microsoft Dynamics 365 Supply Chain Management.
+description: W tym artykule opisano funkcję planowania opartej na priorytecie rozwiązania Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.date: 10/15/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: bdca7ef99716cebee5c4eb41d1e51793b9468dd4
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 4997ba123f105f683daaa6b29fe8c5ee72cb47cb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468308"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873819"
 ---
 # <a name="priority-based-planning"></a>Planowanie oparte na priorytecie
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie opisano funkcję planowania opartej na priorytecie rozwiązania Microsoft Dynamics 365 Supply Chain Management. Ta funkcja dodaje obsługę planowania sterowanego popytem, który jest jednym z kroków planowania zapotrzebowania materiałowego sterowanego popytem (DDMRP). Planowanie oparte na priorytecie umożliwia optymalizację planowania generowania zamówień planowanych, które są sterowane według priorytetów planowania, a nie dat zapotrzebowania.
+W tym artykule opisano funkcję planowania opartej na priorytecie rozwiązania Microsoft Dynamics 365 Supply Chain Management. Ta funkcja dodaje obsługę planowania sterowanego popytem, który jest jednym z kroków planowania zapotrzebowania materiałowego sterowanego popytem (DDMRP). Planowanie oparte na priorytecie umożliwia optymalizację planowania generowania zamówień planowanych, które są sterowane według priorytetów planowania, a nie dat zapotrzebowania.
 
 Planowanie oparte na priorytecie umożliwia ustalanie priorytetów zamówień uzupełnienia, co zapewnia określanie priorytetów popytu pilnego nad mniej ważnym popytem. Na przykład zamówienie uzupełnienia zapasów będzie mieć priorytet nad standardowym zamówieniem uzupełnienia uzupełniającego. System może automatycznie dzielić większe zamówienia na osobne mniejsze zamówienia, w których wiersze zamówienia są grupowane według priorytetu. Następnie może najpierw przetworzyć wszystkie zamówienia o wysokim priorytecie.
 

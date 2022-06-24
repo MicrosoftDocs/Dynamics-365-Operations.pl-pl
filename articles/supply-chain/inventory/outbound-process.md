@@ -1,6 +1,6 @@
 ---
 title: Omówienie procesu wychodzącego
-description: Ten temat zawiera omówienie procesu wychodzącego w module Zarządzanie zapasami.
+description: Ten artykuł zawiera omówienie procesu wychodzącego w module Zarządzanie zapasami.
 author: yufeihuang
 ms.date: 07/25/2019
 ms.topic: overview
@@ -18,18 +18,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 85012ada693a98652325a142ba4649a9a826b22b
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 4e3c97862858e219d98b4ef9a81b52c6ab1623ab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982386"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852484"
 ---
 # <a name="outbound-process-overview"></a>Omówienie procesu wychodzącego
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera omówienie procesu wychodzącego w module Zarządzanie zapasami.
+Ten artykuł zawiera omówienie procesu wychodzącego w module Zarządzanie zapasami.
 
 ## <a name="output-orders"></a>Zamówienia wyjścia
 

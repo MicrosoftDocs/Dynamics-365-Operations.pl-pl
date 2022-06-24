@@ -1,6 +1,6 @@
 ---
 title: Archiwizuj transakcje magazynowe
-description: W tym temacie opisano sposób archiwizowania danych transakcji magazynowych w celu zwiększenia wydajności systemu.
+description: W tym artykule opisano sposób archiwizowania danych transakcji magazynowych w celu zwiększenia wydajności systemu.
 author: yufeihuang
 ms.date: 05/10/2022
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8b766d306f31fc531f33aa29e1f96048bbd90085
-ms.sourcegitcommit: e18ea2458ae042b7d83f5102ed40140d1067301a
+ms.openlocfilehash: c63cdee862e2e22649a3eb58ae37597741770e14
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8736069"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874109"
 ---
 # <a name="archive-inventory-transactions"></a>Archiwizuj transakcje magazynowe
 
 [!include [banner](../../includes/banner.md)]
 
-Z czasem tabela transakcji magazynowych (`InventTrans`) będzie nadal wzrastać i zużywać więcej miejsca w bazie danych. Z tego względu kwerendy wykonane dla tej tabeli będą stopniowo coraz wolniejsze. W tym temacie opisano, jak można używać funkcji *Archiwizuj transakcje magazynowe* do archiwizowania danych dotyczących transakcji magazynowych w celu zwiększenia wydajności systemu.
+Z czasem tabela transakcji magazynowych (`InventTrans`) będzie nadal wzrastać i zużywać więcej miejsca w bazie danych. Z tego względu kwerendy wykonane dla tej tabeli będą stopniowo coraz wolniejsze. W tym artykule opisano, jak można używać funkcji *Archiwizuj transakcje magazynowe* do archiwizowania danych dotyczących transakcji magazynowych w celu zwiększenia wydajności systemu.
 
 > [!NOTE]
 > W wybranym zamkniętym okresie finansowym można zarchiwizować tylko finansowo zaktualizowane transakcje magazynowe. Aby można było zarchiwizować, finansowo zaktualizowane wychodzące transakcje magazynowe muszą mieć stan wydania *Sprzedane*, a przychodzące transakcje magazynowe muszą mieć stan przyjęcia *Zakupione*.
@@ -35,7 +35,7 @@ Jeśli kombinacja `itemId` i `inventDimId` zawiera tylko jedną transakcję przy
 
 ## <a name="turn-on-the-feature-in-your-system"></a>Włączanie funkcji w systemie
 
-Jeśli Twój system nie zawiera jeszcze funkcji opisanych w tym temacie, przejdź do [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) i włącz funkcję *Archiwum transakcji magazynowych*. Należy pamiętać, że tej funkcji nie można wyłączyć po jej włączeniu.
+Jeśli Twój system nie zawiera jeszcze funkcji opisanych w tym artykule, przejdź do [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) i włącz funkcję *Archiwum transakcji magazynowych*. Należy pamiętać, że tej funkcji nie można wyłączyć po jej włączeniu.
 
 ## <a name="things-to-consider-before-you-archive-inventory-transactions"></a>Co należy wziąć pod uwagę przed zarchiwizować transakcje magazynowe
 

@@ -1,6 +1,6 @@
 ---
 title: Zastępowanie domyślnej zasady rezerwacji materiałów w produkcji
-description: W tym temacie opisano sposób ustawienia domyślnej reguły rezerwacji dla każdej grupy modeli towaru, dzięki czemu można automatycznie stosować różne reguły rezerwacji dla każdego towaru, który jest częścią formuły listy składowej (BOM) produkcji lub zamówienia partii.
+description: W tym artykule opisano sposób ustawienia domyślnej reguły rezerwacji dla każdej grupy modeli towaru, dzięki czemu można automatycznie stosować różne reguły rezerwacji dla każdego towaru, który jest częścią formuły listy składowej (BOM) produkcji lub zamówienia partii.
 author: johanhoffmann
 ms.date: 12/10/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-10
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 11fd2c08c8730d50553b1fc6493908940a022c05
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 381b7fa5046df8f2734e4b242058eb9a673388cf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689039"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907240"
 ---
 # <a name="override-the-default-reservation-principle-for-materials-in-production"></a>Zastępowanie domyślnej zasady rezerwacji materiałów w produkcji
 

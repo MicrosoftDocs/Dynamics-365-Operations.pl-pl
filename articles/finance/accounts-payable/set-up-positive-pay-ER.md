@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie i generowanie plików płatności dodatnich za pomocą raportowania elektronicznego
-description: W tym temacie wyjaśniono, jak skonfigurować płacę dodatnią za pomocą raportowania elektronicznego.
+description: W tym artykule wyjaśniono, jak skonfigurować płacę dodatnią za pomocą raportowania elektronicznego.
 author: panolte
 ms.date: 03/20/2022
 ms.topic: article
@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: bc2f17d62b429b599d5ac5f2a521819275d36b64
-ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
+ms.openlocfilehash: 491048c7274ba6bb52e0a4b7a6ea5cd0f5ff4741
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8770255"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878226"
 ---
 # <a name="set-up-positive-pay-files-by-using-electronic-reporting"></a>Konfigurowanie plików płatności dodatnich za pomocą raportowania elektronicznego
 
-Ten temat wyjaśnia, jak skonfigurować płacę dodatnią i wygenerować pliki z płacą dodatnią za pomocą raportowania elektronicznego.
+Ten artykuł wyjaśnia, jak skonfigurować płacę dodatnią i wygenerować pliki z płacą dodatnią za pomocą raportowania elektronicznego.
 
 > [!NOTE] 
 > Przed użyciem funkcji **Wygeneruj plik pozytywnej wypłaty bankowej** musisz najpierw odświeżyć listę podmiotów.

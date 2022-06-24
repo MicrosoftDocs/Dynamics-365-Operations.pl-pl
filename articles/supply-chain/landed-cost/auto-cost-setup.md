@@ -1,6 +1,6 @@
 ---
 title: Ustawienia kosztów automatycznych
-description: W tym temacie opisano sposób skonfigurowania reguł kosztów dla różnych poziomów podróży przychodzącej. Na podstawie tych reguł system oblicza koszty i automatycznie je dodaje. W związku z tym użytkownik nie musi ręcznie dodawać kosztów.
+description: W tym artykule opisano sposób skonfigurowania reguł kosztów dla różnych poziomów podróży przychodzącej. Na podstawie tych reguł system oblicza koszty i automatycznie je dodaje. W związku z tym użytkownik nie musi ręcznie dodawać kosztów.
 author: Weijiesa
 ms.date: 01/21/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-01-21
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ea788ea8d21c4cb6511188e937166bc3df3cd45a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 02c78789fc7531c267cee936fa30a395e6d0b62f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695340"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852397"
 ---
 # <a name="auto-costs-setup"></a>Ustawienia kosztów automatycznych
 
@@ -26,7 +26,7 @@ ms.locfileid: "8695340"
 
 Strona **Koszty automatyczne** umożliwia skonfigurowanie reguł kosztów dla różnych obszarów kosztów (takich jak podróży, kontenery wysyłki, folio, zamówienia zakupu, towary lub wiersze zamówienia przeniesienia). Na podstawie reguł i pól wybranych przez użytkowników podczas tworzenia rekordów dla jednego z obszarów kosztów system automatycznie obliczy koszty i doda je. W związku z tym użytkownik nie musi ręcznie dodawać kosztów.
 
-Aby pracować z kosztami automatycznymi, przejdź do **Koszt z wyładunkiem \> Konfiguracja wyceny \> Koszty automatyczne**. Następnie skonfiguruj automatyczne reguły kosztów zgodnie z opisem w dalszej części tego tematu.
+Aby pracować z kosztami automatycznymi, przejdź do **Koszt z wyładunkiem \> Konfiguracja wyceny \> Koszty automatyczne**. Następnie skonfiguruj automatyczne reguły kosztów zgodnie z opisem w dalszej części tego artykułu.
 
 ## <a name="work-with-cost-areas"></a>Pracuj z obszarami kosztów
 

@@ -1,6 +1,6 @@
 ---
 title: Planowanie w trybie mieszanym — łączenie sourcingu dyskretnego, procesowego i produkcji oszczędnej
-description: Ten temat zawiera informacje o mieszanym trybie planowania.
+description: Ten artykuł zawiera informacje o mieszanym trybie planowania.
 author: johanhoffmann
 ms.date: 11/03/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a199d5ac7633aba894ffbc17db015100ae93d895
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 186dcdca9d6db5ca16d84f084c66700ddfe8bb5d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566774"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857439"
 ---
 # <a name="mixed-mode-planning---combine-discrete-process-and-lean-sourcing"></a>Planowanie w trybie mieszanym — łączenie sourcingu dyskretnego, procesowego i produkcji oszczędnej
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje o mieszanym trybie planowania. W planowaniu w trybie mieszanym można modelować łańcuch dostaw na podstawie przepływu materiałów. Dynamics 365 Supply Chain Management zapewnia, że przepływ materiałów następuje zgodnie z modelami, bez względu na wybrane zasady dostawy (karty Kanban, zlecenia produkcyjne, zamówienia zakupu, szarże produkcyjne lub zamówienia przeniesienia). 
+Ten artykuł zawiera informacje o mieszanym trybie planowania. W planowaniu w trybie mieszanym można modelować łańcuch dostaw na podstawie przepływu materiałów. Dynamics 365 Supply Chain Management zapewnia, że przepływ materiałów następuje zgodnie z modelami, bez względu na wybrane zasady dostawy (karty Kanban, zlecenia produkcyjne, zamówienia zakupu, szarże produkcyjne lub zamówienia przeniesienia). 
 
 Można wybrać ogólną strategię dostarczania produktów, niezależnie od struktury produktów.  
 

@@ -1,6 +1,6 @@
 ---
-title: Konfiguracja kompensacji odbiorców oraz dostawców
-description: Ten temat zawiera informacje o sposobach wykonywania procesu kompensat na kontach dostawców i odbiorców dla firm, które mają podstawowy adres działalności na Węgrzech lub w Polsce.
+title: Konfiguracja kompensacji klientów oraz dostawców
+description: Ten artykuł zawiera informacje o sposobach wykonywania procesu kompensat na kontach dostawców i odbiorców dla firm, które mają podstawowy adres działalności na Węgrzech lub w Polsce.
 author: mrolecki
 ms.date: 05/19/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Hungary, Poland
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b0797ab7decbd559fb4356b3cf2b0acaab2019e672effdd82eca5f76ba6032d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8047ead7d1f67b06a646fc2349b9c55068c10e3b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712152"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886283"
 ---
-# <a name="set-up-customer-and-vendor-compensation"></a>Konfiguracja kompensacji odbiorców oraz dostawców
+# <a name="set-up-customer-and-vendor-compensation"></a>Konfiguracja kompensacji klientów oraz dostawców
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje, które pomogą wykonywać proces kompensat na kontach dostawców i odbiorców dla firm, które mają podstawowy adres działalności na Węgrzech lub w Polsce.
+Ten artykuł zawiera informacje, które pomogą wykonywać proces kompensat na kontach dostawców i odbiorców dla firm, które mają podstawowy adres działalności na Węgrzech lub w Polsce.
 
 Często użytkownicy w Europie Wschodniej muszą rozliczać kwoty należności i zobowiązań dla firmy, która jest zarejestrowana w systemie równocześnie jako odbiorca i dostawca. Ten proces rozliczania wykorzystuje prawną procedurę znaną jako *kompensata* lub *netowanie* (netting). 
 

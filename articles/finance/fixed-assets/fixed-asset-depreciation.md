@@ -1,6 +1,6 @@
 ---
 title: Amortyzacja środka trwałego
-description: Ten temat zawiera omówienie mechanizmu amortyzacji w funkcji środków trwałych.
+description: Ten artykuł zawiera omówienie mechanizmu amortyzacji w funkcji środków trwałych.
 author: moaamer
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2442830766ef1dccc109db5569bfbbbc8182f027
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: b4fedee481b4066c81671cf1fca3781c8c75aaeb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890987"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874531"
 ---
 # <a name="fixed-asset-depreciation"></a>Amortyzacja środka trwałego
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Ten temat zawiera omówienie mechanizmu amortyzacji w funkcji środków trwałych.
+Ten artykuł zawiera omówienie mechanizmu amortyzacji w funkcji środków trwałych.
 
 Amortyzacja jest okresową transakcją, która zwykle zmniejsza wartość środka trwałego w bilansie i jest naliczana jako wydatek na koncie wynikowym. Dlatego do uznawania okresowej amortyzacji w bilansie jest zazwyczaj używane konto główne. Konto przeciwstawne to konto w części wynikowej planu kont.
 

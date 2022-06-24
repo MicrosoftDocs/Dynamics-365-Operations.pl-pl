@@ -1,6 +1,6 @@
 ---
-title: Konfiguruj kartę zadań dla urządzeń
-description: W tym temacie opisano różne opcje konfigurowania urządzenia karty zadań.
+title: Konfigurowanie karty zadań dla urządzeń
+description: W tym artykule opisano różne opcje konfigurowania urządzenia karty zadań.
 author: johanhoffmann
 ms.date: 05/29/2020
 ms.topic: article
@@ -13,22 +13,22 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 4c7a9585d96a1e08790e0f3c972e704971f27dc0
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 0f42ad593f59f716fb6cb535d73654d3549ba00e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103445"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860733"
 ---
 # <a name="configure-job-card-for-devices"></a>Konfiguruj kartę zadań dla urządzeń
 
 [!include [banner](../includes/banner.md)]
 
-Urządzenie karty zadań jest używane przez pracowników warsztatowych do rejestrowania pracy codziennej, na przykład w przypadku rozpoczęcia zadań, raportowania informacji zwrotnych o zadaniach, rejestrowania działań pośrednich i raportowania nieobecności. Te rejestracje stanowią podstawę śledzenia postępu i kosztu zleceń produkcyjnych oraz obliczania podstawy wypłat dla pracowników. W tym temacie opisano różne opcje konfigurowania urządzeń karty zadań.
+Urządzenie karty zadań jest używane przez pracowników warsztatowych do rejestrowania pracy codziennej, na przykład w przypadku rozpoczęcia zadań, raportowania informacji zwrotnych o zadaniach, rejestrowania działań pośrednich i raportowania nieobecności. Te rejestracje stanowią podstawę śledzenia postępu i kosztu zleceń produkcyjnych oraz obliczania podstawy wypłat dla pracowników. W tym artykule opisano różne opcje konfigurowania urządzeń karty zadań.
 
 ## <a name="enable-new-features-in-feature-management"></a>Włącz nowe funkcje w zarządzaniu funkcjami
 
-Niektóre z ustawień opisanych w tym temacie muszą być włączone w systemie, zanim będą dostępne dla użytkownika. Strona [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) umożliwia włączenie w razie potrzeby wszelkich lub wszystkich wymienionych poniżej funkcji.
+Niektóre z ustawień opisanych w tym artykule muszą być włączone w systemie, zanim będą dostępne dla użytkownika. Strona [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) umożliwia włączenie w razie potrzeby wszelkich lub wszystkich wymienionych poniżej funkcji.
 
 ### <a name="generate-license-plate"></a>Generuj numer identyfikacyjny
 

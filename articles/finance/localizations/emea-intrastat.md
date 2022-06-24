@@ -1,6 +1,6 @@
 ---
 title: Omówienie systemu Intrastat
-description: Ten temat zawiera informacje o sprawozdawczości Intrastat o handlu towarami i — w niektórych przypadkach — usługami między krajami/regionami Unii Europejskiej (UE).
+description: Ten artykuł zawiera informacje o sprawozdawczości Intrastat o handlu towarami i — w niektórych przypadkach — usługami między krajami/regionami Unii Europejskiej (UE).
 author: EvgenyPopovMBS
 ms.date: 01/13/2021
 ms.topic: overview
@@ -16,18 +16,18 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 97c2b4068f3b8d38281e637ec80f04b19d19be61
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9360f97506ac7bdf67bb2f1b296f01b6ed49b39f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986041"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894784"
 ---
 # <a name="intrastat-overview"></a>Omówienie systemu Intrastat
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje o sprawozdawczości Intrastat o handlu towarami i — w niektórych przypadkach — usługami między krajami/regionami Unii Europejskiej (UE). W tym temacie omówiono również proces raportowania oraz opisano wymagane ustawienia i wymagania wstępne.
+Ten artykuł zawiera informacje o sprawozdawczości Intrastat o handlu towarami i — w niektórych przypadkach — usługami między krajami/regionami Unii Europejskiej (UE). W tym artykule omówiono również proces raportowania oraz opisano wymagane ustawienia i wymagania wstępne.
 
 Intrastat to system gromadzenia i generowania danych statystycznych na temat handlu towarami między krajami/regionami Unii Europejskiej (UE). Raport Intrastat jest wymagany w przypadku każdego produktu przekraczającego granicę innego kraju/regionu UE. W niektórych krajach/regionach obowiązek tworzenia raportów Intrastat dotyczy również usług. Na potrzeby raportów Intrastat mogą być gromadzone obowiązkowe i opcjonalne elementy. Wymagane są następujące elementy: identyfikator VAT podmiotu odpowiedzialnego za dostarczenie informacji, okres referencyjny, przepływ (przyjęcie lub wysyłka), ośmiocyfrowy kod towaru, kraj członkowski (kraj wysyłki i kraj docelowy), wartość towaru, ilość towaru (waga netto i jednostka dodatkowa) oraz charakter transakcji. Kraje/regiony mogą również gromadzić opcjonalne informacje w różnych warunkach. Do informacji opcjonalnych należą: kraj/region pochodzenia towaru, warunki dostawy, środek transportu, bardziej szczegółowy kod towaru niż 8-cyfrowy, kraj pochodzenia dla wysyłki i kraj pochodzenia dla odbioru, procedura statystyczna, wartość statystyczna, opis towaru oraz port/lotnisko załadunku/rozładunku.
 
@@ -152,7 +152,7 @@ Użyj strony **Parametry handlu zagranicznego**, aby skonfigurować parametry w 
 
 ### <a name="transaction-codes-and-miscellaneous-charges"></a><a name= "transaction-codes-and-miscellaneous-charges"></a>Kody transakcji i opłaty dodatkowe
 
-W tym temacie ojmuje się scenariusz, w którym firma w Niemczech musi kupować towary od firmy we Włoszech. Aby dokonać tego zakupu, niemiecka firma musi skonfigurować nowe kody transakcji i skonfigurować reguły obliczania dla kwoty faktury i kwoty statystycznej dla tych kodów transakcji. Ponadto, gdy firma tworzy fakturę, musi określić opłaty dodatkowe i ich wartości procentowe. Te wartości będą rozważane podczas obliczania wartości statystycznej.
+W tym artykule opisano scenariusz, w którym firma w Niemczech musi kupować towary od firmy we Włoszech. Aby dokonać tego zakupu, niemiecka firma musi skonfigurować nowe kody transakcji i skonfigurować reguły obliczania dla kwoty faktury i kwoty statystycznej dla tych kodów transakcji. Ponadto, gdy firma tworzy fakturę, musi określić opłaty dodatkowe i ich wartości procentowe. Te wartości będą rozważane podczas obliczania wartości statystycznej.
 
 W scenariuszu użyto firmy **DEMF**.
 
@@ -372,7 +372,7 @@ W tym przykładzie firma w Niemczech musi zakupić 10 jednostek towaru od firmy 
 9. W okienku akcji na karcie **Faktura** w grupie **Generuj** wybierz **Faktura**.
 10. W okienku akcji wybierz **Domyślne z**. W polu **Domyślna ilość dla wierszy** zaznacz wartość **Ilość zamówiona**. Następnie wybierz opcję **OK**.
 11. Na skróconej karcie **Nagłówek faktury od dostawcy**, w sekcji **Identyfikacja faktury**, w polu **Numer** wprowadź wartość **VE-0010**.
-12. W sekcji **Daty faktury**, w polu **Data faktury** wprowadź datę **5-10-2021** (5 października 2021.
+12. W sekcji **Daty faktury**, w polu **Data faktury** wprowadź datę **5-10-2021** (5 października 2021).
 13. W okienku akcji naciśnij przycisk **Zaksięguj**, aby zaksięgować fakturę
 
 #### <a name="transfer-the-vendor-invoice-to-the-intrastat-journal"></a>Przeniesienie faktury od dostawcy do arkusza Intrastat

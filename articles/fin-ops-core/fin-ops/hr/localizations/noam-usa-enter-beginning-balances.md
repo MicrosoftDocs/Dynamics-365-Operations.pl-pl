@@ -1,6 +1,6 @@
 ---
 title: Wprowadzanie sald początkowych listy płac
-description: W tym temacie opisano kroki wprowadzania sald początkowych dla kodów zarobków, potrąceń, świadczeń i podatków.
+description: W tym artykule opisano kroki wprowadzania sald początkowych dla kodów zarobków, potrąceń, świadczeń i podatków.
 author: andreabichsel
 ms.date: 11/20/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a5529e3268727dce022daebb853e50710e5bde84811014febe30e80afee9ed6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d14e7e0772c5b365818d3a8a230abe9f674a077e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721883"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850026"
 ---
 # <a name="enter-payroll-beginning-balances"></a>Wprowadzanie sald początkowych listy płac
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie opisano kroki wprowadzania sald początkowych dla kodów zarobków, potrąceń, świadczeń i podatków. Informacje te są przydatne dla partnerów, którzy chcą przenieść dane do nowej implementacji modułu Lista płac z innego systemu. W ramach przygotowania do wprowadzenia sald początkowych listy płac weryfikujemy następujące informacje:
+W tym artykule opisano kroki wprowadzania sald początkowych dla kodów zarobków, potrąceń, świadczeń i podatków. Informacje te są przydatne dla partnerów, którzy chcą przenieść dane do nowej implementacji modułu Lista płac z innego systemu. W ramach przygotowania do wprowadzenia sald początkowych listy płac weryfikujemy następujące informacje:
 
 - Rekordy pracowników etatowych są wprowadzone i dostępne w systemie
 - Następujące dane są skonfigurowane i przypisane do pracowników:

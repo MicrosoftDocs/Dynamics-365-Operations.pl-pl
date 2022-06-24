@@ -1,6 +1,6 @@
 ---
 title: Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management w wersji 10.0.23 (styczeń 2022 r.)
-description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Supply Chain Management 10.0.23.
+description: W tym artykule opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Supply Chain Management 10.0.23.
 author: kamaybac
 ms.date: 10/15/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 86e33296fd8631082e47bf6814d8e5e716d9fa1b
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: acffe97cf1844f16a70c716a7f2078b1e9a072d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691478"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849482"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10023-january-2022"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management w wersji 10.0.23 (styczeń 2022 r.)
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wymieniono nowe oraz zmienione funkcje dostępne w programie Microsoft Dynamics 365 Supply Chain Management w wersji 10.0.23. Ta wersja ma numer kompilacji 10.0.1037 i jest dostępna w następujący sposób:
+W tym artykule wymieniono nowe oraz zmienione funkcje dostępne w programie Microsoft Dynamics 365 Supply Chain Management w wersji 10.0.23. Ta wersja ma numer kompilacji 10.0.1037 i jest dostępna w następujący sposób:
 
 - **Wersja zapoznawcza wydania:** Październik 2021
 - **Ogólna dostępność wydania (Samoaktualizacja):** Grudzień 2021
@@ -29,7 +29,7 @@ W tym temacie wymieniono nowe oraz zmienione funkcje dostępne w programie Micro
 
 ## <a name="features-included-in-this-release"></a>Funkcje zawarte w tym wydaniu
 
-To wydanie zawiera funkcje, które są podane w następującej tabeli. Kolumna *Funkcja* zawiera łącza do [planu wersji](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features), w którym można zobaczyć oficjalne daty wydania poszczególnych funkcji. Kolumna *Więcej informacji* zawiera łącza do większej liczby szczegółów i dokumentacji pokrewnej. Aby określić sposób włączania funkcji, zobacz kolumnę *Włączane przez*. Aby uzyskać więcej informacji o zarządzaniu funkcjami, zapoznaj się z tematem [Zarządzanie funkcjami — omówienie](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Firma Microsoft może zaktualizować ten temat w taki sposób, aby zawierał funkcje wprowadzone do kompilacji po początkowym opublikowaniu tego tematu.
+To wydanie zawiera funkcje, które są podane w następującej tabeli. Kolumna *Funkcja* zawiera łącza do [planu wersji](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features), w którym można zobaczyć oficjalne daty wydania poszczególnych funkcji. Kolumna *Więcej informacji* zawiera łącza do większej liczby szczegółów i dokumentacji pokrewnej. Aby określić sposób włączania funkcji, zobacz kolumnę *Włączane przez*. Aby uzyskać więcej informacji o zarządzaniu funkcjami, zapoznaj się z tematem [Zarządzanie funkcjami — omówienie](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Firma Microsoft może zaktualizować ten artykuł w taki sposób, aby zawierał funkcje wprowadzone do kompilacji po początkowym opublikowaniu tego artykułu.
 
 | Obszar funkcji | Funkcja | Więcej informacji | Włączone przez   |
 |---|---|---|---|
@@ -63,9 +63,9 @@ Jeśli chcesz włączyć lub wyłączyć którąkolwiek z tych funkcji, musisz t
 
 ## <a name="new-and-updated-documentation-resources"></a>Nowe i zaktualizowane zasoby dokumentacji
 
-Niedawno dodano lub znacząco zaktualizowano następujące tematy pomocy. Te tematy nie zawsze są związane z nowymi funkcjami dodanymi w tym wydaniu, jak wymieniono w poprzedniej sekcji. Mogą jednak ułatwić efektywniejsze korzystanie z istniejących funkcji..
+Niedawno dodano lub znacząco zaktualizowano następujące artykuły pomocy. Te artykuły nie zawsze są związane z nowymi funkcjami dodanymi w tym wydaniu, jak wymieniono w poprzedniej sekcji. Mogą jednak ułatwić efektywniejsze korzystanie z istniejących funkcji..
 
-| Obszar funkcji | Nowe lub zaktualizowane tematy |
+| Obszar funkcji | Nowe lub zaktualizowane artykuły |
 |---|---|
 | Zarządzanie zmianami projektowymi | [Atrybuty inżynierii i wyszukiwanie atrybutów inżynierskich](../engineering-change-management/engineering-attributes-and-search.md) opisuje teraz jak działa dziedziczenie atrybutów inżynierskich. |
 | Planowanie główne | [Planowanie główne z prognozami zapotrzebowania](../master-planning/planning-optimization/demand-forecast.md) oraz [Klucze redukcji prognoz](../master-planning/reduction-keys.md) zawierają teraz więcej informacji na temat pracy z kluczami redukcji. |
@@ -74,9 +74,9 @@ Niedawno dodano lub znacząco zaktualizowano następujące tematy pomocy. Te tem
 | Planowanie główne | [Harmonogram dostaw](../master-planning/supply-schedule.md) |
 | Zarządzanie magazynem | [Globalne parametry urządzenia przenośnego](../warehousing/mobile-device-parameters.md) |
 | Zarządzanie magazynem | [Kotwiczenie](../warehousing/anchoring.md) |
-| Sprzedaż i marketing | Handel między przedsiębiorstwami jest teraz szczegółowo opisany, począwszy od [Konfiguracja handlu między przedsiębiorstwami](../sales-marketing/intercompany-trade-set-up.md) i powiązanych tematów. |
+| Sprzedaż i marketing | Handel między przedsiębiorstwami jest teraz szczegółowo opisany, począwszy od [Konfiguracja handlu między przedsiębiorstwami](../sales-marketing/intercompany-trade-set-up.md) i powiązanych artykułów. |
 | Sprzedaż i marketing | [Ulepszenia wydajności oczyszczania historii sprzedaży](../sales-marketing/sales-update-history-cleanup-performance-improvements.md) |
-| Zarządzanie zapasami | Dokumentacja dotycząca widoczności zapasów została rozszerzona i zaktualizowana, począwszy od [Przegląd dodatku Widoczność zapasów](../inventory/inventory-visibility.md) i powiązanych tematów. |
+| Zarządzanie zapasami | Dokumentacja dotycząca widoczności zapasów została rozszerzona i zaktualizowana, począwszy od [Przegląd dodatku Widoczność zapasów](../inventory/inventory-visibility.md) i powiązanych artykułów. |
 | Zarządzanie magazynem | [Konta użytkownika urządzenia przenośnego](../warehousing/mobile-device-work-users.md) |
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
@@ -97,12 +97,12 @@ Zapoznaj się z tematem [Dynamics 365 i chmury branżowe: plan aktualizacji 2 we
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Usunięte i przestarzałe funkcje Supply Chain Management
 
-W temacie [Usunięte lub przestarzałe funkcje w Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) opisano funkcje, które są wycofane lub zostały zaplanowane do usunięcia w Supply Chain Management.
+W artykule [Usunięte lub przestarzałe funkcje w Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) opisano funkcje, które są wycofane lub zostały zaplanowane do usunięcia w Supply Chain Management.
 
 - *Usunięta* funkcja nie jest już dostępna w produkcie.
 - *Przestarzała* funkcja nie jest aktywnie tworzona i może zostać usunięta w przyszłej aktualizacji.
 
-Zanim jakakolwiek funkcja zostanie usunięta z produktu, powiadomienie o zaniechaniu będzie anonsowane w sekcji na temat [usuniętych lub przestarzałych funkcji w Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 miesięcy przed usunięciem.
+Zanim jakakolwiek funkcja zostanie usunięta z produktu, powiadomienie o zaniechaniu będzie anonsowane w sekcji artykułu na temat [usuniętych lub przestarzałych funkcji w Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 miesięcy przed usunięciem.
 
 W przypadku zmian, które wpływają tylko na czas kompilacji, ale są zgodne z trybem piaskownicy i środowiskami produkcyjnymi, czas niezgodności będzie krótszy niż 12 miesięcy. Zazwyczaj są to aktualizacje funkcjonalne, które należy wykonać w kompilatorze.
 

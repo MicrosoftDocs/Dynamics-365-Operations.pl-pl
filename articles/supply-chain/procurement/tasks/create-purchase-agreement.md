@@ -1,6 +1,6 @@
 ---
 title: Tworzenie umowy zakupu
-description: Ten temat przeprowadzi Cię przez proces tworzenia umowy zakupu.
+description: Ten artykuł przeprowadzi Cię przez proces tworzenia umowy zakupu.
 author: GalynaFedorova
 ms.date: 07/18/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3456e1c6e2ec65329e0f2e984f99ced0994c240b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 108c3a47132b262ebe2e15f00d26191b75469959
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670140"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877574"
 ---
 # <a name="create-a-purchase-agreement"></a>Tworzenie umowy zakupu
 
 [!include [banner](../../includes/banner.md)]
 
-Ten temat przeprowadzi Cię przez proces tworzenia umowy zakupu. Zazwyczaj robi to kierownik ds. zakupów. Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych. Przed rozpoczęciem trzeba mieć skonfigurowaną klasyfikacji umów zakupu. Po utworzeniu umowy można jej używać podczas tworzenia zamówienia zakupu. Spowoduje to skopiowanie warunków umowy do nagłówka oraz do wszystkich wierszy w zamówieniu, których dotyczy umowa.
+Ten artykuł przeprowadzi Cię przez proces tworzenia umowy zakupu. Zazwyczaj robi to kierownik ds. zakupów. Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych. Przed rozpoczęciem trzeba mieć skonfigurowaną klasyfikacji umów zakupu. Po utworzeniu umowy można jej używać podczas tworzenia zamówienia zakupu. Spowoduje to skopiowanie warunków umowy do nagłówka oraz do wszystkich wierszy w zamówieniu, których dotyczy umowa.
 
 
 ## <a name="create-a-new-purchase-agreement"></a>Tworzenie nowej umowy zakupu

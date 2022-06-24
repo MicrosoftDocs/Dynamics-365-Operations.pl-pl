@@ -1,6 +1,6 @@
 ---
 title: Ustawienia projektu zlecenia pracy
-description: W tym temacie opisano ustawienia projektu zlecenia pracy w module Zarządzanie składnikami majątku.
+description: W tym artykule opisano ustawienia projektu zlecenia pracy w module Zarządzanie składnikami majątku.
 author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bb897ca0a7e9c45ee55244189bb1b487fbddf0714ad3ea0cac26eb7bac36a07f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 31d8f42eb5753ea2656d502d2670a6cf7683c0f2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754090"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874138"
 ---
 # <a name="work-order-project-setup"></a>Ustawienia projektu zlecenia pracy
 
@@ -80,7 +80,7 @@ Konfiguracja pozwala na pełną integrację z modułem **Zarządzanie projektami
 ![Strona Ustawienia projektu zleceń pracy, Dodaj zlecenie pracy.](media/18-setup-for-work-orders.png)
 
 > [!NOTE]
-> Podczas tworzenia wiersza zlecenia pracy, Zarządzanie składnikami majątku wyszukuje grupę projektów, która powinna być związana z projektem zadania zlecenia pracy. Wyszukiwanie jest oparte na konfiguracji opisanej w tym temacie. Każda grupa projektów ma powiązany Typ projektu. Grupy projektów, które mają typ **Czas i materiały** lub **Stała cena** są ważne tylko dla składników majątku związanych z kontem odbiorcy.
+> Podczas tworzenia wiersza zlecenia pracy, Zarządzanie składnikami majątku wyszukuje grupę projektów, która powinna być związana z projektem zadania zlecenia pracy. Wyszukiwanie jest oparte na konfiguracji opisanej w tym artykule. Każda grupa projektów ma powiązany Typ projektu. Grupy projektów, które mają typ **Czas i materiały** lub **Stała cena** są ważne tylko dla składników majątku związanych z kontem odbiorcy.
 >
 > W przypadku projektów nadrzędnych i grup projektów, gdy system wybiera dostępny projekt zlecenia pracy lub grupę projektów, wybór jest oparty na rekordach utworzonych za pomocą poprzedniej procedury. Zarządzanie składnikami majątku przechodzi między rekordami związanymi z projektem zlecenia pracy w celu sprawdzenia, czy jest możliwe jego dopasowanie. W pierwszej kolejności sprawdza zawsze kombinację najbardziej szczegółową. Innymi słowy, dla nadrzędnego projektu zlecenia pracy moduł Zarządzanie składnikami majątku najpierw sprawdza dopasowanie dla pola **Składnik majatku**. Jeśli nie znaleziono dopasowania, sprawdza dopasowanie dla pola **Typ składnika majątku**. Jeśli nie znaleziono dopasowania, sprawdza dopasowanie dla pola **Lokalizacja czynności konserwacyjnych** itd. Jak widać w układzie strony **Ustawienia projektu zlecenia pracy** to zachowanie oznacza, że aby znaleźć najbardziej konkretną kombinację, moduł Zarządzanie składnikami majątku sprawdza każdy rekord od prawej do lewej pod kątem dopasowania. Jeśli nie zostanie znaleziony żaden odpowiednik, używany jest rekord domyślny, w którym jest wybrany tylko identyfikator projektu. Proces wyszukiwania powiązanej grupy projektów jest podobny. Zarządzanie składnikami majątku najpierw sprawdza, czy istnieje możliwe dopasowanie do pola **Składnik majątku**, a następnie dla pola **Typ składnika majątku**, a następnie dla pola **Typ zlecenia pracy**. Jeśli nie zostanie znaleziony żaden odpowiednik, używany jest rekord domyślny, w którym jest wybrany tylko grupa projektu.
 

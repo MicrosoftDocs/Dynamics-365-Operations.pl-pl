@@ -1,6 +1,6 @@
 ---
 title: Standardowe zapisane widoki w aplikacji Supply Chain Management
-description: W tym temacie opisano standardowe zapisane widoki, które są dostępne, oraz sposób ich włączania.
+description: W tym artykule opisano standardowe zapisane widoki, które są dostępne, oraz sposób ich włączania.
 author: kamaybac
 ms.date: 02/03/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 0709574ea44fcf841321044da31781862fcf1420
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 92ff2dfc9cd8b742a7b086e540bd2c527833254d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103695"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887581"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Standardowe zapisane widoki w aplikacji Supply Chain Management
 
 [!include [banner](../../includes/banner.md)]
 
-Microsoft Dynamics 365 Supply Chain Management zawiera kilka zapisanych widoków, które można włączyć i używać. Niektóre z tych standardowych zapisanych widoków są optymalizowane i nazwane dla określonej roli lub zadania (na przykład „Kontrola jakości” lub „Przyjęcie”). Inne są optymalizowane, tak aby uwzględniały tylko pola i ustawienia, które zgodnie ze statystykami Microsoft dotyczącymi użytkowania są najczęściej używane przez klientów. Te zapisane widoki są zazwyczaj nazywane widokami *uproszczonymi*. W tym temacie opisano standardowe zapisane widoki, które są dostępne, oraz sposób ich włączania i dostosowywania.
+Microsoft Dynamics 365 Supply Chain Management zawiera kilka zapisanych widoków, które można włączyć i używać. Niektóre z tych standardowych zapisanych widoków są optymalizowane i nazwane dla określonej roli lub zadania (na przykład „Kontrola jakości” lub „Przyjęcie”). Inne są optymalizowane, tak aby uwzględniały tylko pola i ustawienia, które zgodnie ze statystykami Microsoft dotyczącymi użytkowania są najczęściej używane przez klientów. Te zapisane widoki są zazwyczaj nazywane widokami *uproszczonymi*. W tym artykule opisano standardowe zapisane widoki, które są dostępne, oraz sposób ich włączania i dostosowywania.
 
 Aby uzyskać pełne szczegóły dotyczące pracy z zapisanymi widokami, w tym standardowymi zapisanymi widokami, po ich włączeniu zobacz temat [Zapisane widoki](../../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/supply-chain/toc.json).
 
@@ -39,7 +39,7 @@ Aby uzyskać więcej informacji dotyczących dostosowywania zapisanych widoków 
 
 Aby korzystać z funkcji zapisanych widoków, niezależnie od tego, czy będziesz używać standardowych zapisanych widoków, należy włączyć funkcję *Zapisane widoki* w obszarze [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (od wersji 10.0.21 ta funkcja jest domyślnie włączona).
 
-Pozostałe sekcje tego tematu zawierają tabele opisujące standardowe zapisane widoki, które są obecnie dostępne dla poszczególnych odpowiednich modułów. Każda tabela zawiera nazwę każdego zapisanego widoku, stronę, na której można go znaleźć, oraz opis tego widoku. W każdej tabeli jest również przedstawiana nazwa funkcji, która zawiera zapisany widok. Aby wyświetlić standardowy zapisany widok w systemie, należy włączyć określoną funkcję w [zarządzaniu funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). W wersji 10.0.25 wszystkie wyświetlane widoki są domyślnie włączone.
+Pozostałe sekcje tego artykułu zawierają tabele opisujące standardowe zapisane widoki, które są obecnie dostępne dla poszczególnych odpowiednich modułów. Każda tabela zawiera nazwę każdego zapisanego widoku, stronę, na której można go znaleźć, oraz opis tego widoku. W każdej tabeli jest również przedstawiana nazwa funkcji, która zawiera zapisany widok. Aby wyświetlić standardowy zapisany widok w systemie, należy włączyć określoną funkcję w [zarządzaniu funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). W wersji 10.0.25 wszystkie wyświetlane widoki są domyślnie włączone.
 
 ## <a name="saved-views-for-the-inventory-management-module"></a>Zapisane widoki dla modułu Zarządzanie zapasami
 

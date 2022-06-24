@@ -1,6 +1,6 @@
 ---
 title: Marszruty i operacje
-description: Ten temat zawiera informacje o marszrutach i operacjach.
+description: Ten artykuł zawiera informacje o trasach i operacjach.
 author: johanhoffmann
 ms.date: 03/18/2019
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ab825227e7cd8848dbad58c58f5c6d7afc338f9c
-ms.sourcegitcommit: 7cbd53617af179a0de74aae30c149edc95e86684
+ms.openlocfilehash: 103c7007cd002c5953d096ff6001a93c4936b702
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "7891960"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856027"
 ---
 # <a name="routes-and-operations"></a>Marszruty i operacje
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje o marszrutach i operacjach. Marszruta definiuje proces wytwarzania produktu lub wariantu produktu. Opisuje każdy krok (operację) w procesie produkcji oraz kolejność, w jakiej te kroki należy wykonać. Dla każdego kroku marszruta definiuje również wymagane zasoby operacyjne, wymagane czasy przezbrajania i wykonywania oraz sposób obliczania kosztów.
+Ten artykuł zawiera informacje o trasach i operacjach. Marszruta definiuje proces wytwarzania produktu lub wariantu produktu. Opisuje każdy krok (operację) w procesie produkcji oraz kolejność, w jakiej te kroki należy wykonać. Dla każdego kroku marszruta definiuje również wymagane zasoby operacyjne, wymagane czasy przezbrajania i wykonywania oraz sposób obliczania kosztów.
 
 ## <a name="overview"></a>Przegląd
 

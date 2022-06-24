@@ -1,6 +1,6 @@
 ---
 title: Stan wniosku o rekrutację
-description: W tym temacie opisano opcję stanu wniosku o rekrutację ustawioną dla Dynamics 365 Human Resources.
+description: W tym artykule opisano zestaw opcji stanu wniosku o rekrutację dla Dynamics 365 Human Resources.
 author: jaredha
 ms.date: 02/05/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d845179077fc2e04dfb3bd05eaa70b0a2a016121
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 6a8cb8bc61786425c996b976a2914e7b650e3941
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067108"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859612"
 ---
 # <a name="recruiting-request-status"></a>Stan wniosku o rekrutację
 
@@ -27,7 +27,7 @@ ms.locfileid: "8067108"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-W tym temacie opisano opcję stanu wniosku o rekrutację ustawioną dla Dynamics 365 Human Resources.
+W tym artykule opisano zestaw opcji stanu wniosku o rekrutację dla Dynamics 365 Human Resources.
 
 Nazwa fizyczna: mshr_hcmrecruitingrequeststatus
 

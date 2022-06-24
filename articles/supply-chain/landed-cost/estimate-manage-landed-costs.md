@@ -1,6 +1,6 @@
 ---
 title: Szacowanie kosztów z wyładunkiem i zarządzanie nimi
-description: W systemie automatycznie są używane ustawienia kosztów, które określają szacowanie kosztów z wyładunkiem. W tym temacie opisano, jak można definiować różne scenariusze w celu zapewnienia dokładniejszego oszacowania.
+description: W systemie automatycznie są używane ustawienia kosztów, które określają szacowanie kosztów z wyładunkiem. W tym artykule opisano, jak można definiować różne scenariusze w celu zapewnienia dokładniejszego oszacowania.
 author: Weijiesa
 ms.date: 01/26/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-01-26
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 630fb9dc8e7954fcbc4f54941d81de1caa657676
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 2e7cdd7c7439a24ec75a59bcee1e8f42f37bb2cd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8696215"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854449"
 ---
 # <a name="estimate-and-manage-landed-costs"></a>Szacowanie kosztów z wyładunkiem i zarządzanie nimi
 
@@ -50,7 +50,7 @@ W poniższej tabeli przedstawiono pola dostępne w nagłówku dla każdego szabl
 
 Okno dialogowe **Szacowanie kosztów** pozwala wygenerować nowe szacowanie kosztów na podstawie wybranego szablonu kosztów, wybranego zestawu towarów i innych szczegółów wyjazdu. Te ustawienia są używane do określania szacowanych kosztów z wyładunkiem towarów. Te szacowane koszty są używane głównie do pracy z kosztami standardowymi. Dodając szacunkowe koszty wyładunku do standardowego kosztu towarów w zapasach, należy doświadczyć mniejszych transakcji odchylenia, gdy towary są dodawane do podróży, ponieważ koszt standardowy będzie odzwierciedlał szacunki tych kosztów wyładunku.
 
-Aby otworzyć okno dialogowe **Szacowanie kosztów**, przejdź do **Koszt z wyładunkiem \> Zadania okresowe \> Szacowanie kosztów**. Następnie ustaw pola, które są opisane w kolejnych podrozdziałach. Na koniec wybierz **OK**, aby utworzyć oszacowanie. Zostanie wyświetlona strona **Szacowanie kosztów** (**Koszt z wyładunkiem \> Zapytania \> Szacowanie kosztów**) i pokazuje nowe szacowanie opisane dalej w tym temacie.
+Aby otworzyć okno dialogowe **Szacowanie kosztów**, przejdź do **Koszt z wyładunkiem \> Zadania okresowe \> Szacowanie kosztów**. Następnie ustaw pola, które są opisane w kolejnych podrozdziałach. Na koniec wybierz **OK**, aby utworzyć oszacowanie. Zostanie wyświetlona strona **Szacowanie kosztów** (**Koszt z wyładunkiem \> Zapytania \> Szacowanie kosztów**) i pokazuje nowe szacowanie opisane dalej w tym artykule.
 
 ### <a name="settings-on-the-parameters-tab"></a>Ustawienia na karcie Parametry
 
@@ -91,7 +91,7 @@ Aby wyświetlić lub skorygować szczegóły objętości i/lub wagi towaru, zazn
 
 ## <a name="manage-estimated-costs"></a>Zarządzanie kosztami szacowanymi
 
-Aby wyświetlić i edytować utworzone oszacowania kosztów, przejdź do **Koszt z wyładunkiem \> Zapytania \> Szacowanie kosztów**. Na stronie **Szacowanie kosztów** w okienku listy po lewej stronie są widać wszystkie bieżące szacowane koszty. Możesz użyć przycisków w Okienku akcji, aby pracować z wybranymi szacunkami. Pamiętaj, że nie można utworzyć nowego szacowania kosztów na stronie **Szacowanie kosztów**. Zamiast tego należy użyć okna dialogowego **Szacowanie kosztów** (**Koszt z wyładunkiem \> Zadania okresowe \> Szacowanie kosztów**) w sposób opisany wcześniej w tym temacie.
+Aby wyświetlić i edytować utworzone oszacowania kosztów, przejdź do **Koszt z wyładunkiem \> Zapytania \> Szacowanie kosztów**. Na stronie **Szacowanie kosztów** w okienku listy po lewej stronie są widać wszystkie bieżące szacowane koszty. Możesz użyć przycisków w Okienku akcji, aby pracować z wybranymi szacunkami. Pamiętaj, że nie można utworzyć nowego szacowania kosztów na stronie **Szacowanie kosztów**. Zamiast tego należy użyć okna dialogowego **Szacowanie kosztów** (**Koszt z wyładunkiem \> Zadania okresowe \> Szacowanie kosztów**) w sposób opisany wcześniej w tym artykule.
 
 Na stronie **Szacowanie kosztów** pokazano sposób pochodnego kosztu szacowanego. Zawiera również szacowany z wyładunkiem dla każdego towaru. Szacowanie kosztów można zmodyfikować, zmieniając koszt i/lub walutę skojarzoną z różnymi towarami. Skojarzone koszty podróży można również modyfikować na poziomie podróży i na poziomie kontenera. Podczas korzystania z tej strony w celu zmodyfikowania kosztów wyświetlany jest monit o ponowne obliczanie szacowanych kosztów towarów w szacowaniu kosztów. Gdy jesteś gotowy, możesz użyć szacunków, aby zaktualizować koszt własny towarów w szablonie kosztów.
 

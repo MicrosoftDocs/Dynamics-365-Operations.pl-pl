@@ -1,6 +1,6 @@
 ---
 title: Konfiguracja księgowania międzyfirmowego
-description: W tym temacie wyjaśniono, jak skonfigurować księgowanie międzyfirmowe, co pozwoli używać arkuszy międzyfirmowych do alokacji księgi i arkuszy finansowych, takich jak arkusze dzienne, arkusze faktur od dostawców i arkusze płatności.
+description: W tym artykule wyjaśniono, jak skonfigurować księgowanie międzyfirmowe, co pozwoli używać arkuszy międzyfirmowych do alokacji księgi i arkuszy finansowych, takich jak arkusze dzienne, arkusze faktur od dostawców i arkusze płatności.
 author: kweekley
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9c9914d9fff3407d8d469fe2ed27a9bfd6b26a50
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 309c121c1ef4b3814d676cad6f3c2b6826b59843
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720373"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871225"
 ---
 # <a name="intercompany-accounting-setup"></a>Konfiguracja księgowania międzyfirmowego
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak skonfigurować księgowanie międzyfirmowe, co pozwoli używać arkuszy międzyfirmowych do alokacji księgi i arkuszy finansowych, takich jak arkusze dzienne, arkusze faktur od dostawców i arkusze płatności.
+W tym artykule wyjaśniono, jak skonfigurować księgowanie międzyfirmowe, co pozwoli używać arkuszy międzyfirmowych do alokacji księgi i arkuszy finansowych, takich jak arkusze dzienne, arkusze faktur od dostawców i arkusze płatności.
 
 Arkusze międzyfirmowe mogą być tworzone w różnych scenariuszach, np. dla arkuszy dziennych, arkuszy faktur od dostawców, alokacji księgi czy płatności scentralizowanych. Aby te scenariusze były dostępne, należy skonfigurować księgowanie międzyfirmowe.
 

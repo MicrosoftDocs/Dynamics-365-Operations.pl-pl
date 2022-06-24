@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie konsygnacji
-description: W tym temacie wyjaśniono sposób korzystania z procesów konsygnacji przychodzącej dla zapasów.
+description: W tym artykule wyjaśniono sposób korzystania z procesów konsygnacji przychodzącej dla zapasów.
 author: yufeihuang
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4a1b96d18048a1ae6e380374f32d2bfa2270ae24
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 66215811c8c48412fb137967107abca3774f5f0c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577727"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872044"
 ---
 # <a name="set-up-consignment"></a>Konfigurowanie konsygnacji
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono sposób korzystania z procesów konsygnacji przychodzącej dla zapasów.
+W tym artykule wyjaśniono sposób korzystania z procesów konsygnacji przychodzącej dla zapasów.
 
-Zapasy konsygnacyjne to zapasy, których właścicielem jest dostawca, ale są one przechowywane Twojej siedzibie. Gdy masz wszystko przygotowane do zużycia lub wykorzystania zapasów, przejmujesz ich własność. Ten temat zawiera informacje o tym, jak fizycznie przyjąć zapasy należące do dostawcy na stan bez tworzenia transakcji księgi głównej, jak uruchomić proces produkcji w sytuacji, gdy zapasy należące do dostawcy można fizycznie zarezerwować, i jak zmienić własność surowca w celu umożliwienia przetwarzania zużycia w ramach przetwarzania zlecenia produkcyjnego. Są tu także pewne informacje o tym, jak dostawcy mogą monitorować zużycie ich zapasów przy użyciu interfejsu współpracy z dostawcami.
+Zapasy konsygnacyjne to zapasy, których właścicielem jest dostawca, ale są one przechowywane Twojej siedzibie. Gdy masz wszystko przygotowane do zużycia lub wykorzystania zapasów, przejmujesz ich własność. Ten artykuł zawiera informacje o tym, jak fizycznie przyjąć zapasy należące do dostawcy na stan bez tworzenia transakcji księgi głównej, jak uruchomić proces produkcji w sytuacji, gdy zapasy należące do dostawcy można fizycznie zarezerwować, i jak zmienić własność surowca w celu umożliwienia przetwarzania zużycia w ramach przetwarzania zlecenia produkcyjnego. Są tu także pewne informacje o tym, jak dostawcy mogą monitorować zużycie ich zapasów przy użyciu interfejsu współpracy z dostawcami.
 
 ## <a name="overview-of-the-consignment-process"></a>Omówienie procesu konsygnacji
 

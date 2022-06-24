@@ -1,6 +1,6 @@
 ---
 title: Osadzone aplikacje kanwy z Power Apps
-description: W tym temacie opisano sposób osadzania aplikacji kanwy z Microsoft Power Apps na kliencie w celu rozszerzenia funkcjonalności produktu.
+description: W tym artykule opisano sposób osadzania aplikacji kanwy z Microsoft Power Apps na kliencie w celu rozszerzenia funkcjonalności produktu.
 author: jasongre
 ms.date: 09/13/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: c2f7b660d364be6e62d484e67908201027190a8a
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: fb81aa058e749df346ee87bbe83427b20b234b72
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065126"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898406"
 ---
 # <a name="embed-canvas-apps-from-power-apps"></a>Osadzone aplikacje kanwy z Power Apps
 
@@ -33,7 +33,7 @@ Aby uzyskać więcej informacji o osadzaniu aplikacji kanwy, obejrzyj krótki fi
 
 ## <a name="adding-an-embedded-canvas-app-from-power-apps-to-a-page"></a>Dodawanie osadzonej aplikacji kanwy Power Apps do strony
 
-Przed osadzeniem aplikacji kanwy z Power Apps w kliencie musisz znaleźć lub skompilować aplikację, która ma żądane wizualizacje lub funkcje. Ten temat nie zawiera szczegółowego opisu procesu kompilowania aplikacji. Jeśli jesteś nowym użytkownikiem Power Apps, zajrzyj do [dokumentacja Power Apps](/powerapps/).
+Przed osadzeniem aplikacji kanwy z Power Apps w kliencie musisz znaleźć lub skompilować aplikację, która ma żądane wizualizacje lub funkcje. Ten artykuł nie zawiera szczegółowego opisu procesu kompilowania aplikacji. Jeśli jesteś nowym użytkownikiem Power Apps, zajrzyj do [dokumentacja Power Apps](/powerapps/).
 
 Istnieją trzy sposoby osadzania aplikacji kanwy w aplikacji Finanse i Działania. Możesz użyć podejścia, które najlepiej pasuje do danego scenariusza. 
 
@@ -60,7 +60,7 @@ W następującej procedurze pokazano sposób osadzania aplikacji kanwy na istnie
 
     - Jeśli dostęp do aplikacji będzie uzyskiwany przy użyciu przycisku menu **Power Apps**, można również kliknąć przycisk menu **Power Apps** w standardowym okienku akcji, a następnie wybrać opcję **Dodaj aplikację**.
 
-3. Skonfiguruj osadzoną aplikację. Więcej informacji znajduje się w sekcji [Konfigurowanie aplikacji kanwy](#configuring-a-canvas-app) w tym temacie.
+3. Skonfiguruj osadzoną aplikację. Więcej informacji znajduje się w sekcji [Konfigurowanie aplikacji kanwy](#configuring-a-canvas-app) w tym artykule.
 4. Po potwierdzeniu poprawności konfiguracji wybierz pozycję **Wstaw**.
 
     - Jeśli funkcja **Zapisane widoki** jest wyłączona, wyświetlany jest monit o odświeżenie przeglądarki w celu wyświetlenia osadzonej aplikacji.
@@ -76,7 +76,7 @@ Aplikację kanwy można chcieć osadzić z pulpitu nawigacyjnego, jeśli nie jes
 1. Otwórz pulpit nawigacyjny.
 2. Wybierz i przytrzymaj stronę (lub kliknij ją prawym przyciskiem myszy), wybierz opcję **Personalizuj**, a następnie wybierz polecenie **Dodaj stronę**.
 3. W okienku **Dodawanie strony** wybierz opcję **Power Apps**.
-4. Skonfiguruj osadzoną aplikację. Więcej informacji znajduje się w sekcji [Konfigurowanie aplikacji kanwy](#configuring-a-canvas-app) w tym temacie.
+4. Skonfiguruj osadzoną aplikację. Więcej informacji znajduje się w sekcji [Konfigurowanie aplikacji kanwy](#configuring-a-canvas-app) w tym artykule.
 5. Wybierz przycisk **Zapisz**, aby dodać aplikację do pulpitu nawigacyjnego jako nowy kafelek.
 6. Wybierz nowy kafelek na pulpicie nawigacyjnym i potwierdź, że aplikacja kanwy jest wyświetlana zgodnie z oczekiwaniami.
 
@@ -86,7 +86,7 @@ Osadzając aplikację kanwy, należy ustawić następujące parametry:
 
 - **Nazwa** — umożliwia wprowadzenie tekstu, który ma być wyświetlany na przycisku lub karcie zawierającej osadzoną aplikację. Zazwyczaj w tym polu jest ponownie wpisywana nazwa aplikacji.
 - **Identyfikator aplikacji** — wskazuje unikatowy identyfikator globalny (GUID) aplikacji obszaru roboczego, która ma zostać osadzona. Aby pobrać tę wartość, odszukaj aplikację na stronie [make.powerapps.com](https://make.powerapps.com), a następnie odszukaj pole **Identyfikator aplikacji** w obszarze **Szczegóły**.
-- **Dane wejściowe dla aplikacji** — opcjonalnie można wybrać pole zawierające dane, które mają być przekazywane do aplikacji jako dane wejściowe. Informacje o tym, jak aplikacja może korzystać z danych przesyłanych z aplikacji Finanse i Działania, znajdziesz w rozdziale [Budowanie aplikacji wykorzystującej dane przesyłane z aplikacji Finanse i Działania](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps) w dalszej części tematu.
+- **Dane wejściowe dla aplikacji** — opcjonalnie można wybrać pole zawierające dane, które mają być przekazywane do aplikacji jako dane wejściowe. Informacje o tym, jak aplikacja może korzystać z danych przesyłanych z aplikacji finansowych i operacyjnych, znajdziesz w rozdziale [Budowanie aplikacji wykorzystującej dane przesyłane z aplikacji finansowych i operacyjnych](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps) w dalszej części artykułu.
 
     Począwszy od wersji 10.0.19 bieżąca firma będzie również przekazywana jako kontekst do aplikacji kanwy za pośrednictwem parametru URL **cmp**. To zachowanie nie będzie miało wpływu na docelową aplikację kanwy, dopóki ta aplikacja nie użyje tych informacji.
 
@@ -145,7 +145,7 @@ Wykonaj następujące czynności, aby edytować konfigurację osadzonej aplikacj
 
 Po osadzeniu aplikacji na stronie istnieją różne sposoby jej usunięcia w razie potrzeby:
 
-- Przejdź do okienka **Edytuj aplikację** przy użyciu instrukcji zawartych w sekcji [Edytowanie osadzonej aplikacji](#editing-an-embedded-app) wcześniej w tym temacie. Upewnij się, że w okienku są wyświetlane informacje dotyczące osadzonej aplikacji, którą chcesz usunąć, a następnie kliknij przycisk **Usuń**.
+- Przejdź do okienka **Edytuj aplikację** przy użyciu instrukcji zawartych w sekcji [Edytowanie osadzonej aplikacji](#editing-an-embedded-app) wcześniej w tym artykule. Upewnij się, że w okienku są wyświetlane informacje dotyczące osadzonej aplikacji, którą chcesz usunąć, a następnie kliknij przycisk **Usuń**.
 - Jeśli osadzona aplikacja została dodana z pulpitu nawigacyjnego, otwórz pulpit nawigacyjny, wybierz i przytrzymaj (lub kliknij prawym przyciskiem myszy) kafelek skojarzony z aplikacją kanwy, wybierz opcję **Personalizuj**, a następnie wybierz pozycję **Usuń stronę**. 
 - Ponieważ osadzona aplikacja jest zapisywana jako dane personalizacji, wyczyszczenie personalizacji strony spowoduje również usunięcie wszelkich osadzonych aplikacji znajdujących się na tej stronie. Należy zauważyć, że wyczyszczenie personalizacji strony jest trwałe i nie można go cofnąć. Aby usunąć personalizacje ze strony, kliknij przycisk **Opcje**, a następnie wybierz opcję **Personalizuj tę stronę** a następnie przycisk **Wyczyść**. Po odświeżeniu przeglądarki wszystkie poprzednie personalizacje tej strony zostaną usunięte. W temacie [Personalizuj środowiska użytkownika](personalize-user-experience.md) znajdziesz więcej informacji o optymalizowaniu stron za pomocą personalizacji.
 
@@ -153,7 +153,7 @@ Po osadzeniu aplikacji na stronie istnieją różne sposoby jej usunięcia w raz
 
 ### <a name="developer-modeling-a-canvas-app-on-a-form"></a>[Deweloper] Modelowanie aplikacji kanwy w formularzu
 
-Chociaż ten temat dotyczy osadzania aplikacji kanwy poprzez personalizację, deweloperzy mogą również dodać do formularza aplikację kanwy, korzystając ze środowiska projektowania Visual Studio. W tym celu dodaj po prostu formant powerAppsHostControl do formularza. Właściwości metadanych dostępne w formancie zapewniają te same możliwości, co funkcje personalizacji.
+Chociaż ten artykuł dotyczy osadzania aplikacji kanwy poprzez personalizację, deweloperzy mogą również dodać do formularza aplikację kanwy, korzystając ze środowiska projektowania Visual Studio. W tym celu dodaj po prostu formant powerAppsHostControl do formularza. Właściwości metadanych dostępne w formancie zapewniają te same możliwości, co funkcje personalizacji.
 
 ### <a name="developer-specifying-where-an-app-can-be-embedded"></a>[Deweloper] Określanie, gdzie można osadzić aplikację
 

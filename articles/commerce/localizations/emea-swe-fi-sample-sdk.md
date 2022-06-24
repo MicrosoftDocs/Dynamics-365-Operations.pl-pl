@@ -1,6 +1,6 @@
 ---
 title: Wskazówki dotyczące wdrażania przykładu integracji jednostki kontrolnej dla Szwecji (starsza wersja).
-description: Ten temat zawiera wskazówki dotyczące wdrażania przykładu integracji jednostki kontrolnej dla Szwecji z poziomu zestawu Retail SDK.
+description: Ten artykuł zawiera wskazówki dotyczące wdrażania przykładu integracji jednostki kontrolnej dla Szwecji z poziomu zestawu Retail SDK
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: b8d60f32d986dec6bb26d78ebdfe8cee3a6b688a
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 05a49de43282c449c7b99072d8ac3ac4a5f2a67f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077045"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870554"
 ---
 # <a name="deployment-guidelines-for-the-control-unit-integration-sample-for-sweden-legacy"></a>Wskazówki dotyczące wdrażania przykładu integracji jednostki kontrolnej dla Szwecji (starsza wersja).
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera wskazówki dotyczące wdrażania przykładu integracji jednostki kontrolnej dla Szwecji z poziomu zestawu Retail software development kit (SDK) na maszynie wirtualnej dewelopera w usłudze Microsoft Dynamics Lifecycle Services (LCS). Aby uzyskać więcej informacji dotyczących tego przykładu integracji fiskalnej, zobacz [Przykład integracji jednostki kontrolnej dla Szwecji](emea-swe-fi-sample.md). 
+Ten artykuł zawiera wskazówki dotyczące wdrażania przykładu integracji jednostki kontrolnej dla Szwecji z poziomu zestawu Retail software development kit (SDK) na maszynie wirtualnej dewelopera w usłudze Microsoft Dynamics Lifecycle Services (LCS). Aby uzyskać więcej informacji dotyczących tego przykładu integracji fiskalnej, zobacz [Przykład integracji jednostki kontrolnej dla Szwecji](emea-swe-fi-sample.md). 
 
-Przykład integracji fiskalnej dla Szwecji jest częścią zestawu Retail SDK. Aby uzyskać informacje dotyczące instalowania i używania zestawu SDK, zobacz [Omówienie zestawu Retail SDK (Software Development Kit)](../dev-itpro/retail-sdk/retail-sdk-overview.md). Ten przykład składa się z rozszerzeń kolekcji Commerce Runtime (CRT), stacji sprzętowej i punktu sprzedaży (POS). Aby uruchomić ten przykład, musisz zmodyfikować i skompilować projekty kolekcji CRT, stacji sprzętowej i punktu sprzedaży. Zalecamy, aby w celu wprowadzenia zmian opisanych w tym temacie używać niezmodyfikowanego zestawu Retail SDK. Zalecamy również korzystanie z systemu kontroli źródła, takiego jak usługa Azure DevOps, w sytuacji, gdy nie zmieniono jeszcze żadnego pliku.
+Przykład integracji fiskalnej dla Szwecji jest częścią zestawu Retail SDK. Aby uzyskać informacje dotyczące instalowania i używania zestawu SDK, zobacz [Omówienie zestawu Retail SDK (Software Development Kit)](../dev-itpro/retail-sdk/retail-sdk-overview.md). Ten przykład składa się z rozszerzeń kolekcji Commerce Runtime (CRT), stacji sprzętowej i punktu sprzedaży (POS). Aby uruchomić ten przykład, musisz zmodyfikować i skompilować projekty kolekcji CRT, stacji sprzętowej i punktu sprzedaży. Zalecamy, aby w celu wprowadzenia zmian opisanych w tym artykule używać niezmodyfikowanego zestawu Retail SDK. Zalecamy również korzystanie z systemu kontroli źródła, takiego jak usługa Azure DevOps, w sytuacji, gdy nie zmieniono jeszcze żadnego pliku.
 
 ## <a name="development-environment"></a>Środowiska programistyczne
 
@@ -257,7 +257,7 @@ Proces migracji powinien składać się z następujących kroków.
 1. Zaktualizuj składniki programu POS i Hardware station, wyłącz rozszerzenia, które są częściami wcześniejszego przykładu, i włącz rozszerzenia bieżącego przykładu.
 
     > [!NOTE]
-    > W zależności od typu środowiska można znaleźć bardziej techniczne szczegóły dotyczące procesu migracji w sekcji [środowiska developmentowego](#migration-in-a-development-environment) lub w sekcji [środowiska produkcyjnego](#migration-in-a-production-environment) tego tematu.
+    > W zależności od typu środowiska można znaleźć bardziej techniczne szczegóły dotyczące procesu migracji w sekcji [środowiska developmentowego](#migration-in-a-development-environment) lub w sekcji [środowiska produkcyjnego](#migration-in-a-production-environment) tego artykułu.
 
 ### <a name="migration-in-a-development-environment"></a>Migracja środowiska projektowego
 

@@ -1,6 +1,6 @@
 ---
 title: Dane zewnętrzne w prognozach przepływów pieniężnych
-description: W tym temacie opisano czynności konfiguracyjne, które należy wykonać, aby można było wprowadzać i importować dane zewnętrzne do prognoz przepływów pieniężnych.
+description: W tym artykule opisano czynności konfiguracyjne, które należy wykonać, aby można było wprowadzać i importować dane zewnętrzne do prognoz przepływów pieniężnych.
 author: RyanCCarlson2
 ms.date: 02/16/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-06-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: f7fac80b7ad0fde273fbd33aa5df146e569be46e
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: f0cb05770dc2fbd4e13af261b5f0a0e117a2f6d7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713734"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846981"
 ---
 # <a name="external-data-in-cash-flow-forecasts"></a>Dane zewnętrzne w prognozach przepływów pieniężnych
 
 [!include [banner](../includes/banner.md)]
 
-Dane zewnętrzne można wprowadzać lub importować do prognoz przepływów pieniężnych. W tym temacie opisano czynności konfiguracyjne właściwe dla korzystania z danych zewnętrznych, które umożliwiają uwzględnienie danych zewnętrznych w prognozie przepływów pieniężnych.
+Dane zewnętrzne można wprowadzać lub importować do prognoz przepływów pieniężnych. W tym artykule opisano czynności konfiguracyjne właściwe dla korzystania z danych zewnętrznych, które umożliwiają uwzględnienie danych zewnętrznych w prognozie przepływów pieniężnych.
 
 ## <a name="external-data-setup"></a>Ustawienia danych zewnętrznych
 

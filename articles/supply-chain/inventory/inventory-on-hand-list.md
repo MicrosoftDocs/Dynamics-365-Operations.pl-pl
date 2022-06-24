@@ -1,6 +1,6 @@
 ---
 title: Listy dostępnych zapasów
-description: W tym temacie opisano, jak używać strony Lista dostępnych do sprawdzenia szczegółów dostępnych zapasów. Pokazuje kilka sposobów, w jakie różne opcje filtrowania i sortowania współpracują ze sobą, oraz jak te opcje mogą czasami dawać nieoczekiwane rezultaty po ich połączeniu.
+description: W tym artykule opisano, jak używać strony Lista dostępnych do sprawdzenia szczegółów dostępnych zapasów. Pokazuje kilka sposobów, w jakie różne opcje filtrowania i sortowania współpracują ze sobą, oraz jak te opcje mogą czasami dawać nieoczekiwane rezultaty po ich połączeniu.
 author: yufeihuang
 ms.date: 07/07/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-07-07
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 9464240123ec2248e1b66f32dd3c9a2f974512b6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5747ae985e1791de8ddd93b678c2449a4a1802da
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573928"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879056"
 ---
 # <a name="inventory-on-hand-list"></a>Listy dostępnych zapasów
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano, jak używać strony **Lista dostępnych** do sprawdzenia szczegółów dostępnych zapasów. Pokazuje kilka sposobów, w jakie różne opcje filtrowania i sortowania współpracują ze sobą, oraz jak te opcje mogą czasami dawać nieoczekiwane rezultaty po ich połączeniu.
+W tym artykule opisano, jak używać strony **Lista dostępnych** do sprawdzenia szczegółów dostępnych zapasów. Pokazuje kilka sposobów, w jakie różne opcje filtrowania i sortowania współpracują ze sobą, oraz jak te opcje mogą czasami dawać nieoczekiwane rezultaty po ich połączeniu.
 
 ## <a name="query-your-on-hand-inventory"></a>Przeszukaj swoje dostępne zapasy
 
@@ -35,9 +35,9 @@ Strona **Lista dostępnych** jest aktualizowana automatycznie, gdy transakcje s�
 Skorzystaj z poniższych narzędzi, aby znaleźć zbiór produktów, których szukasz:
 
 - W okienku akcji wybierz opcję [**Wymiary**](#dimensions), aby otworzyć okno dialogowe, w którym można dodawać lub usuwać kolumny wyświetlane w siatce **Dostępnych**.
-- W [okienku **Filtruj**](#filters-pane) wprowadź wartości dla określonych pól, aby wyświetlić tylko rekordy pasujące do tych wartości. Należy zauważyć, że filtry zdefiniowane w tym miejscu są stosowane do tabel źródłowych, które mogą być później agregowane, zgodnie z wymiarami wybranymi do pokazania. Aby uzyskać informacje o tym, jak to zachowanie może mieć wpływ na wyniki, należy zapoznać się z [przykładami](#examples) przedstawionymi dalej w tym temacie.
+- W [okienku **Filtruj**](#filters-pane) wprowadź wartości dla określonych pól, aby wyświetlić tylko rekordy pasujące do tych wartości. Należy zauważyć, że filtry zdefiniowane w tym miejscu są stosowane do tabel źródłowych, które mogą być później agregowane, zgodnie z wymiarami wybranymi do pokazania. Aby uzyskać informacje o tym, jak to zachowanie może mieć wpływ na wyniki, należy zapoznać się z [przykładami](#examples) przedstawionymi dalej w tym artykule.
 - W okienku **Filtruj** wybierz opcję **Zastosuj**, aby wygenerować listę dopasowanych dostępnych zapasów w siatce **Dostępne**.
-- W siatce **Dostępne** wybierz dowolny nagłówek kolumny, który ma być sortowany lub przefiltrowany według wartości w tej kolumnie. Dodatkowe opcje filtrowania znajdują się w QuickFilter u góry siatki. Te filtry są stosowane do wyników, a nie do tabel źródłowych. Aby uzyskać informacje o tym, jak to zachowanie może mieć wpływ na wyniki, należy zapoznać się z [przykładami](#examples) przedstawionymi dalej w tym temacie.
+- W siatce **Dostępne** wybierz dowolny nagłówek kolumny, który ma być sortowany lub przefiltrowany według wartości w tej kolumnie. Dodatkowe opcje filtrowania znajdują się w QuickFilter u góry siatki. Te filtry są stosowane do wyników, a nie do tabel źródłowych. Aby uzyskać informacje o tym, jak to zachowanie może mieć wpływ na wyniki, należy zapoznać się z [przykładami](#examples) przedstawionymi dalej w tym artykule.
 
 Dla każdego dopasowanego towaru siatka **Dostępne** zawiera następujące kolumny informacji o zapasach.
 
@@ -64,7 +64,7 @@ Korzystając z okienka **Filtry**, można filtrować listę dostępnych zapasów
 > [!IMPORTANT]
 > Strona **Lista dostępnych zapasów** jest składana z tabeli szczegółowych dostępnych zapasów, która zawiera wszystkie dostępne wymiary. Jednak lista na tej stronie jest podsumowaniem. Dlatego można łączyć wiersze z tabeli źródłowej, sumując wartości zgodnie z podanymi wymiarami.
 >
-> Filtry zdefiniowane w okienku **Filtrów** mają zastosowanie do tabeli źródłowej, a nie do listy agregowanej. Takie zachowanie może czasami dawać nieoczekiwane wyniki. Aby uzyskać informacje o tym, jak to zachowanie może mieć wpływ na wyniki, należy zapoznać się z [przykładami](#examples) przedstawionymi dalej w tym temacie.
+> Filtry zdefiniowane w okienku **Filtrów** mają zastosowanie do tabeli źródłowej, a nie do listy agregowanej. Takie zachowanie może czasami dawać nieoczekiwane wyniki. Aby uzyskać informacje o tym, jak to zachowanie może mieć wpływ na wyniki, należy zapoznać się z [przykładami](#examples) przedstawionymi dalej w tym artykule.
 > 
 > Jednak [filtry dostarczone w siatce](#grid-filters) *są* stosowane do zagregowanej listy. Filtry te obejmują zarówno QuickFilter na górze siatki, jak i filtr dla każdego nagłówka kolumny.
 
@@ -75,7 +75,7 @@ Aby zmodyfikować zbiór filtrów dostępnych w okienku **Filtrów**, należy wy
 
 ## <a name="select-which-dimensions-to-show"></a><a name="dimensions"></a>Służy do wybierania wymiarów, które mają być pokazywane
 
-Wymiary informują więcej o każdym towarze z listy dostępne zapasy i zapewniają więcej sposobów sortowania i filtrowania listy. Wymiary wybrane do pokazania wpływają również na sposób agregowania wierszy na stronie **Listy dostępnych**. Z kolei ta agregacja może mieć wpływ na sposób łączenia wierszy z tabel źródłowych w wynikach. Aby uzyskać informacje o tym, jak to zachowanie może mieć wpływ na wyniki, należy zapoznać się z [przykładami](#examples) przedstawionymi dalej w tym temacie.
+Wymiary informują więcej o każdym towarze z listy dostępne zapasy i zapewniają więcej sposobów sortowania i filtrowania listy. Wymiary wybrane do pokazania wpływają również na sposób agregowania wierszy na stronie **Listy dostępnych**. Z kolei ta agregacja może mieć wpływ na sposób łączenia wierszy z tabel źródłowych w wynikach. Aby uzyskać informacje o tym, jak to zachowanie może mieć wpływ na wyniki, należy zapoznać się z [przykładami](#examples) przedstawionymi dalej w tym artykule.
 
 Aby dostosować wybór widocznych wymiarów magazynowych, należy wykonać następujące kroki.
 
@@ -89,7 +89,7 @@ Aby dostosować wybór widocznych wymiarów magazynowych, należy wykonać nast�
 
 ## <a name="filter-on-the-output-of-the-inventory-on-hand-list"></a><a name="grid-filters"></a>Filtr dla danych wyjściowych na liście dostępnych zapasów
 
-Możesz wybrać dowolny nagłówek kolumny w siatce **Dostępne**, aby sortować lub filtrować według wartości w tej kolumnie. Dodatkowe opcje filtrowania znajdują się w QuickFilter u góry siatki. Te filtry są stosowane do wyników, a nie do tabel źródłowych. Aby uzyskać informacje o tym, jak to zachowanie może mieć wpływ na wyniki, należy zapoznać się z [przykładami](#examples) przedstawionymi dalej w tym temacie.
+Możesz wybrać dowolny nagłówek kolumny w siatce **Dostępne**, aby sortować lub filtrować według wartości w tej kolumnie. Dodatkowe opcje filtrowania znajdują się w QuickFilter u góry siatki. Te filtry są stosowane do wyników, a nie do tabel źródłowych. Aby uzyskać informacje o tym, jak to zachowanie może mieć wpływ na wyniki, należy zapoznać się z [przykładami](#examples) przedstawionymi dalej w tym artykule.
 
 > [!NOTE]
 > Nie można filtrować i sortować według wszystkich kolumn. Większość kolumn ilości nie zawiera formantów sortowania i filtrowania, ponieważ są to pola obliczeniowe. Kolumna **W zamówieniu** jest wyjątkiem.

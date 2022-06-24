@@ -1,6 +1,6 @@
 ---
-title: Zasada rezerwacji wymiarów na poziomie magazynu elastycznego
-description: W tym temacie opisano zasady rezerwacji zapasów, które umożliwiają firmom sprzedaż produktów śledzonych partiami i uruchamianie ich zagadnień logistycznych w miarę operacji obsługujących WMS, rezerwując określone partie dla zamówień sprzedaży odbiorców, nawet jeśli hierarchia rezerwacji jest skojarzone z produktami nie zezwalają na rezerwację konkretnych partii.
+title: Elastyczne zasady rezerwacji wymiarów na poziomie magazynu
+description: W tym artykule opisano zasady rezerwacji zapasów, które umożliwiają firmom sprzedaż produktów śledzonych partiami i uruchamianie ich zagadnień logistycznych w miarę operacji obsługujących WMS, rezerwując określone partie dla zamówień sprzedaży odbiorców, nawet jeśli hierarchia rezerwacji jest skojarzone z produktami nie zezwalają na rezerwację konkretnych partii.
 author: perlynne
 ms.date: 07/31/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 0fe4b377ec80601f616f81f71222129256dfd448
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: fb42d4ccd2d8797a34f6351caf7dedbc1e957fd5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474947"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885820"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Elastyczne zasady rezerwacji wymiarów na poziomie magazynu
 
@@ -28,7 +28,7 @@ Jeśli hierarchia rezerwacji zapasów typu *Partia poniżej\[lokalizacja\]* jest
 
 W podobny sposób nie można zarezerwować określonych numerów identyfikacyjnych dla produktów w zamówieniach sprzedaży, gdy te produkty są skojarzone z domyślną hierarchią rezerwacji.
 
-W tym temacie opisano zasady rezerwacji zapasów, które pozwalają tym firmom zarezerwować określone partie lub numery identyfikacyjne, nawet jeśli produkty są skojarzone z hierarchią rezerwacji *Partia poniżej\[lokalizacja\]*.
+W tym artykule opisano zasady rezerwacji zapasów, które pozwalają tym firmom zarezerwować określone partie lub numery identyfikacyjne, nawet jeśli produkty są skojarzone z hierarchią rezerwacji *Partia poniżej\[lokalizacja\]*.
 
 ## <a name="inventory-reservation-hierarchy"></a>Hierarchie rezerwacji zapasów
 

@@ -1,6 +1,6 @@
 ---
 title: Materiały niebezpieczne w produktach, zamówieniach, wysyłkach i ładunkach
-description: W tym temacie opisano sposób ustawiania właściwości dot. niebezpiecznych materiałów dla wydawanych produktów, określania limitów magazynowych dotyczących towarów niebezpiecznych oraz sposobu uwzględniania materiałów niebezpiecznych w zamówieniu sprzedaży, wysyłce lub ładunku.
+description: W tym artykule opisano sposób ustawiania właściwości dot. niebezpiecznych materiałów dla wydawanych produktów, określania limitów magazynowych dotyczących towarów niebezpiecznych oraz sposobu uwzględniania materiałów niebezpiecznych w zamówieniu sprzedaży, wysyłce lub ładunku.
 author: t-benebo
 ms.date: 06/10/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 64d31cd86045ff28aa007666a3877271eecf0106
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: eaae3ce4916465cd57da65eaa217c40f9c3ea88a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570712"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860704"
 ---
 # <a name="hazardous-materials-in-products-orders-shipments-and-loads"></a>Materiały niebezpieczne w produktach, zamówieniach, wysyłkach i ładunkach
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób ustawiania właściwości dot. niebezpiecznych materiałów dla wydawanych produktów, określania limitów magazynowych dotyczących towarów niebezpiecznych oraz sposobu uwzględniania materiałów niebezpiecznych w zamówieniu sprzedaży, wysyłce lub ładunku.
+W tym artykule opisano sposób ustawiania właściwości dot. niebezpiecznych materiałów dla wydawanych produktów, określania limitów magazynowych dotyczących towarów niebezpiecznych oraz sposobu uwzględniania materiałów niebezpiecznych w zamówieniu sprzedaży, wysyłce lub ładunku.
 
 ## <a name="set-hazardous-material-specifications-for-products"></a>Określanie specyfikacji materiałów niebezpiecznych dla produktów
 
@@ -109,11 +109,11 @@ Oto klucz formuły:
 - *&lt;KonwersjaJednostki&gt;* jest współczynnikiem konwersji jednostki używanej dla ilości w wierszu ładunku i jednostki określonej dla produktu w polu **Jednostka** na skróconej karcie **Zarządzanie materiałami**.
 - *&lt;Mnożnik&gt;* to mnożnik określony dla produktu w polu **Mnożnik** na skróconej karcie **Zarządzania materiałami**.
 
-Ten wynik jest zgłaszany dla każdego wiersza ładunku zawierającego produkt, w którym te wartości są określone. Aby uzyskać więcej informacji, zajrzyj do tematu [Dostawy zawierające materiały niebezpieczne](#hazmat-shipments) oraz [Ładunki zawierające materiały niebezpieczne](#hazmat-loads), które znajdują się w dalszej części tego tematu.
+Ten wynik jest zgłaszany dla każdego wiersza ładunku zawierającego produkt, w którym te wartości są określone. Aby uzyskać więcej informacji, zajrzyj do tematu [Dostawy zawierające materiały niebezpieczne](#hazmat-shipments) oraz [Ładunki zawierające materiały niebezpieczne](#hazmat-loads), które znajdują się w dalszej części tego artykułu.
 
 #### <a name="how-the-hazardous-material-weight-is-calculated"></a>Sposób obliczania ciężaru materiały niebezpiecznego
 
-Ładowanie i wiersze ładowania zawierające produkty, w których opcja **Ograniczona ilość** na skróconej karcie **Zarządzania materiałami** jest ustawiona na wartość **Tak**, spowoduje wyświetlenie całkowitej wagi materiału niebezpiecznego, zgodnie z opisem w sekcjach [Dostawy zawierające materiały niebezpieczne](#hazmat-shipments) oraz [Ładunki zawierające materiały niebezpieczne](#hazmat-loads), które znajdują się w dalszej części tego tematu. Waga materiału niebezpiecznego jest obliczana za pomocą następującego wzoru:
+Ładowanie i wiersze ładowania zawierające produkty, w których opcja **Ograniczona ilość** na skróconej karcie **Zarządzania materiałami** jest ustawiona na wartość **Tak**, spowoduje wyświetlenie całkowitej wagi materiału niebezpiecznego, zgodnie z opisem w sekcjach [Dostawy zawierające materiały niebezpieczne](#hazmat-shipments) oraz [Ładunki zawierające materiały niebezpieczne](#hazmat-loads), które znajdują się w dalszej części tego artykułu. Waga materiału niebezpiecznego jest obliczana za pomocą następującego wzoru:
 
 Waga materiału niebezpiecznego = *&lt;IlośćLin&gt;* × *&lt;WagaProd&gt;* × *&lt;JednostkaKonwersji&gt;*
 

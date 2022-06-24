@@ -1,6 +1,6 @@
 ---
-title: Umożliwia konfigurowanie parametrów formatu ER dla firmy
-description: W tym temacie wyjaśniono, w jaki sposób można skonfigurować parametry formatu raportowania elektronicznego (ER) dla firmy.
+title: Konfiguracja parametrów formatu raportowania elektronicznego dla firmy
+description: W tym artykule wyjaśniono, w jaki sposób można skonfigurować parametry formatu raportowania elektronicznego (ER) dla firmy.
 author: NickSelin
 ms.date: 03/25/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: f72ce72e9cbd268efc6ab09dbec7009794d69613
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: dbcf968dde432da182b5bd2d6a7bcb9f83dad6fa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644507"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890220"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>Umożliwia konfigurowanie parametrów formatu ER dla firmy
 
@@ -30,7 +30,7 @@ ms.locfileid: "8644507"
 
 Aby wykonać te kroki, należy najpierw wykonać kroki w temacie [Skonfiguruj ER, aby używać parametrów określonych dla danej firmy](er-app-specific-parameters-configure-format.md).
 
-Aby wykonać przykłady opisane w tym temacie, trzeba mieć dostęp do rozwiązania Microsoft Dynamics 365 Finance dla jednej z następujących ról:
+Aby wykonać przykłady opisane w tym artykule, trzeba mieć dostęp do rozwiązania Microsoft Dynamics 365 Finance dla jednej z następujących ról:
 
 - Deweloper raportowania elektronicznego
 - Konsultant funkcjonalny raportowania elektronicznego
@@ -221,7 +221,7 @@ Parametry właściwe dla aplikacji w formacie ER są zależne od firmy. Aby pono
 
 Można również skorzystać z metody „eksport-import” w celu przetransferowania parametrów formatu ER specyficznych dla aplikacji, które zostały pierwotnie skonfigurowane w jednym wystąpieniu Finance, do innego wystąpienia Finance.
 
-Jeśli skonfigurujesz parametry specyficzne dla aplikacji dla jednej wersji formatu ER, a następnie zaimportujesz późniejszą wersję tego samego formatu do bieżącego wystąpienia aplikacji Finance, istniejące parametry specyficzne dla aplikacji nie będą stosowane do zaimportowanej wersji, chyba że użyjesz funkcji **Użyj parametrów specyficznych dla aplikacji z poprzednich wersji formatów raportowania elektronicznego**. Więcej informacji znajduje się w dalszej sekcji [Ponowne używanie istniejących parametrów](#reuse-existing-parameters) w tym temacie.
+Jeśli skonfigurujesz parametry specyficzne dla aplikacji dla jednej wersji formatu ER, a następnie zaimportujesz późniejszą wersję tego samego formatu do bieżącego wystąpienia aplikacji Finance, istniejące parametry specyficzne dla aplikacji nie będą stosowane do zaimportowanej wersji, chyba że użyjesz funkcji **Użyj parametrów specyficznych dla aplikacji z poprzednich wersji formatów raportowania elektronicznego**. Więcej informacji znajduje się w dalszej sekcji [Ponowne używanie istniejących parametrów](#reuse-existing-parameters) w tym artykule.
 
 Po wybraniu pliku do zaimportowania struktura parametrów specyficznych dla aplikacji w tym pliku jest porównywana ze strukturą odpowiednich źródeł danych typu **Wyszukiwanie** w formacie ER, który został wybrany do importu. Domyślnie jest wykonywany tylko wtedy, gdy struktura każdego parametru specyficznego dla aplikacji odpowiada strukturze odpowiedniego źródła danych w formacie ER wybranym do importu. Jeśli struktury nie są zgodne, komunikat ostrzegawczy poinformuje Cię o tym, że nie można wykonać importu. W przypadku wymuszenia importu istniejące parametry specyficzne dla aplikacji dla wybranego formatu ER zostaną oczyszczone i należy je skonfigurować od początku.
 

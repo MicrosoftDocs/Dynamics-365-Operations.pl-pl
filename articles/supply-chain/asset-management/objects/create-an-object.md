@@ -1,6 +1,6 @@
 ---
 title: Tworzenie składnika majątku
-description: W tym temacie opisano sposób tworzenia składnika majątku w Zarządzaniu składnikami majątku.
+description: W tym artykule opisano sposób tworzenia składnika majątku w Zarządzaniu składnikami majątku.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e9c2b81e97a7b08dfdb596fbf6822ac94c7358dccd0b92c0677467dbc0c2e26
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 90b41b57dfa6db8b5874bbc2d4bcac7b4c634f20
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721518"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860936"
 ---
 # <a name="create-an-asset"></a>Tworzenie składnika majątku
 
@@ -28,7 +28,7 @@ ms.locfileid: "6721518"
 
  
 
-W tym temacie opisano sposób tworzenia składnika majątku w Zarządzaniu składnikami majątku.
+W tym artykule opisano sposób tworzenia składnika majątku w Zarządzaniu składnikami majątku.
 
 1. Kliknij **Zarządzanie składnikami majątku** > **Wspólne** > **składniki majątku** > **Wszystkie składniki majątku** lub **Aktywne składniki majątku**.
 2. Kliknij przycisk **Nowe**.

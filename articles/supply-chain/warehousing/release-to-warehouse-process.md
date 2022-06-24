@@ -1,6 +1,6 @@
 ---
 title: Zwolnij do magazynu
-description: Ten temat zawiera szczegóły dotyczące procesu zwalniania do magazynu. Opisuje on encje tworzone podczas zwalniania zamówienia do magazynu oraz opcje, których można użyć do inicjowania procesu.
+description: Ten artykuł zawiera szczegóły dotyczące procesu zwalniania do magazynu. Opisuje on encje tworzone podczas zwalniania zamówienia do magazynu oraz opcje, których można użyć do inicjowania procesu.
 author: Mirzaab
 ms.date: 8/13/2021
 ms.topic: article
@@ -11,22 +11,22 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-13
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 8624db42e9d0f3d08ed3b582224ed7937d52f85d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c3280b2e39d7af5ca99cad703cad6ecc7b307bff
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678359"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893186"
 ---
 # <a name="release-to-warehouse"></a>Zwolnij do magazynu
 
 [!include [banner](../../includes/banner.md)]
 
-Ten temat zawiera szczegóły dotyczące procesu zwalniania do magazynu. Opisuje on encje tworzone podczas zwalniania zamówienia do magazynu oraz opcje, których można użyć do inicjowania procesu.
+Ten artykuł zawiera szczegóły dotyczące procesu zwalniania do magazynu. Opisuje on encje tworzone podczas zwalniania zamówienia do magazynu oraz opcje, których można użyć do inicjowania procesu.
 
 ## <a name="release-to-warehouse-overview"></a>Omówienie zwalniania do magazynu
 
-Zwalnianie do magazynu to proces tworzenia zapasów gotowych do przetwarzania wysyłki. Po zwolnieniu zamówienia do magazynu system utworzy wiersze ładunku i wysyłki. W przypadku skonfigurowania automatycznego przetwarzania grupy czynności są tworzone również ładunki i wymagana praca. Konfiguracja zaangażowanych encji zależy od ustawień systemowych. W tej sekcji tego tematu przeglądane są encje utworzone podczas procesu zwalniania do magazynu oraz ustawienia systemowe, które je definiują.
+Zwalnianie do magazynu to proces tworzenia zapasów gotowych do przetwarzania wysyłki. Po zwolnieniu zamówienia do magazynu system utworzy wiersze ładunku i wysyłki. W przypadku skonfigurowania automatycznego przetwarzania grupy czynności są tworzone również ładunki i wymagana praca. Konfiguracja zaangażowanych encji zależy od ustawień systemowych. W tej sekcji tego artykułu przeglądane są encje utworzone podczas procesu zwalniania do magazynu oraz ustawienia systemowe, które je definiują.
 
 *Wysyłka* jest grupą zamówień sprzedaży lub wierszy zamówienia przeniesienia dla tego samego klienta lub tego samego adresu dostawy.
 
@@ -67,7 +67,7 @@ Na zakończenie, gdy zamówienie jest zwalniane do magazynu, najbardziej zautoma
 
 W zależności od szablonów grupy czynności, szablonów pracy i ustawień dyrektyw lokalizacji niektóre kroki tego przepływu mogą zostać wykonane ręcznie. Ogólny przepływ jest jednak taki sam.
 
-Dostępnych jest kilka opcji zwalniania zamówienia do magazynu. Można wykonać operację ręcznie lub skonfigurować zadanie wsadowe. Pozostałe sekcje tego tematu zawierają szczegółowe informacje o sposobach wykonywania operacji zwalniania do magazynu.
+Dostępnych jest kilka opcji zwalniania zamówienia do magazynu. Można wykonać operację ręcznie lub skonfigurować zadanie wsadowe. Pozostałe sekcje tego artykułu zawierają szczegółowe informacje o sposobach wykonywania operacji zwalniania do magazynu.
 
 ## <a name="manual-release-to-the-warehouse-from-the-sales-orders-and-transfer-orders-pages"></a>Ręczne zwalnianie do magazynu ze stron Zamówienia sprzedaży i Zamówienia przeniesienia
 

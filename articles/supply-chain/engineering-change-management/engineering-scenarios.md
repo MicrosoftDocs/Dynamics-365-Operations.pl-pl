@@ -1,6 +1,6 @@
 ---
 title: Przewodnik po funkcji zarządzania zmianami projektowymi
-description: Ten temat zawiera Instruktaż kompleksowy pokazujący sposób pracy z zarządzaniem zmianami projektowymi.
+description: Ten artykuł zawiera Instruktaż kompleksowy pokazujący sposób pracy z zarządzaniem zmianami projektowymi.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 4c1c67559a8f2e9d0abb512f4231aea495d1957c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ec5535013af9ccb253744e061de738155ac9ad22
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574000"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889643"
 ---
 # <a name="engineering-change-management-feature-walkthrough"></a>Przewodnik po funkcji zarządzania zmianami projektowymi
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera Instruktaż kompleksowy pokazujący sposób pracy z zarządzaniem zmianami projektowymi. Przeprowadza przez każdy z najważniejszych scenariuszy:
+Ten artykuł zawiera Instruktaż kompleksowy pokazujący sposób pracy z zarządzaniem zmianami projektowymi. Przeprowadza przez każdy z najważniejszych scenariuszy:
 
 - Podstawowa konfiguracja funkcji
 - W jaki sposób firma projektowa tworzy nowy produkt projektowy
@@ -35,13 +35,13 @@ Ten temat zawiera Instruktaż kompleksowy pokazujący sposób pracy z zarządzan
 - Sposób planowania i implementowania żądanych zmian przez utworzenie projektowego zlecenia zmiany
 - Sposób zwolnienia produktu, który został zmieniony
 
-Wszystkie ćwiczenia przedstawione w tym temacie wykorzystują standardowe dane przykładowe dostarczane dla rozwiązania Microsoft Dynamics 365 Supply Chain Management. Ponadto każde ćwiczenie opiera się na poprzednim. Z tego względu zaleca się wykonanie ćwiczeń po kolei od początku do końca, zwłaszcza jeśli funkcja zarządzania zmianami projektowymi nigdy nie była wcześniej używana. Dzięki temu użytkownik uzyska pełne zrozumienie tej funkcji.
+Wszystkie ćwiczenia przedstawione w tym artykule wykorzystują standardowe dane przykładowe dostarczane dla rozwiązania Microsoft Dynamics 365 Supply Chain Management. Ponadto każde ćwiczenie opiera się na poprzednim. Z tego względu zaleca się wykonanie ćwiczeń po kolei od początku do końca, zwłaszcza jeśli funkcja zarządzania zmianami projektowymi nigdy nie była wcześniej używana. Dzięki temu użytkownik uzyska pełne zrozumienie tej funkcji.
 
 ## <a name="set-up-for-the-sample-scenario"></a>Konfiguracja scenariusza z przykładu
 
-Aby wykonać przykładowy scenariusz przedstawiony w tym temacie, należy najpierw przygotować funkcję, udostępniając dane demonstracyjne i dodając kilka rekordów niestandardowych.
+Aby wykonać przykładowy scenariusz przedstawiony w tym artykule, należy najpierw przygotować funkcję, udostępniając dane demonstracyjne i dodając kilka rekordów niestandardowych.
 
-Przed próbą wykonania dowolnego z tych ćwiczeń w pozostałej części tego tematu postępuj zgodnie z instrukcjami podanymi w poniższych podsekcjach. Te podsekcje przedstawiają również kilka ważnych stron ustawień, które będą używane podczas konfigurowania zarządzania zmianami projektowymi dla własnej organizacji.
+Przed próbą wykonania dowolnego z tych ćwiczeń w pozostałej części tego artykułu postępuj zgodnie z instrukcjami podanymi w poniższych podsekcjach. Te podsekcje przedstawiają również kilka ważnych stron ustawień, które będą używane podczas konfigurowania zarządzania zmianami projektowymi dla własnej organizacji.
 
 ### <a name="make-standard-demo-data-available"></a>Udostępnianie standardowych danych demonstracyjnych
 

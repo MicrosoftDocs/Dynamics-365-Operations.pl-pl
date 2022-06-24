@@ -1,6 +1,6 @@
 ---
 title: Ustawienia języka użytkownika i aplikacji POS
-description: W tym temacie opisano, jak zmienić ustawienia języka w programach Modern POS (MPOS) i Cloud POS.
+description: W tym artykule opisano, jak zmienić ustawienia języka w programach Modern POS (MPOS) i Cloud POS.
 author: jblucher
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 099d16f63e03ecbc8bf911fe4385b35fac7c67f763c17379cdc6b6229abdea16
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 15490885b5ce366edbab669893f3c3e36585f308
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774540"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863354"
 ---
 # <a name="point-of-sale-pos-application-and-user-language-settings"></a>Ustawienia języka użytkownika i aplikacji POS
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano, jak zmienić ustawienia języka w programach Modern POS (MPOS) i Cloud POS.
+W tym artykule opisano, jak zmienić ustawienia języka w programach Modern POS (MPOS) i Cloud POS.
 
 ## <a name="overview"></a>Omówienie
 Programy Modern POS (MPOS) i Cloud POS obsługują środowiska, w których ustawienia językowe i tłumaczenia mogą się różnić w zależności od sklepu i ustawień użytkownika. Na przykład sklep może znajdować się regionie, w którym głównym językiem odbiorców jest angielski, ale niektórzy pracownicy wolą korzystać z aplikacji w języku francuskim.

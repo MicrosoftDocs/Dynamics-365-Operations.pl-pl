@@ -1,6 +1,6 @@
 ---
 title: Wzbogacanie strony produktu
-description: W tym temacie opisano sposób wzbogacania strony produktu w Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano sposób wzbogacania strony produktu w Microsoft Dynamics 365 Commerce.
 author: psimolin
 ms.date: 04/14/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0c663498a65832c68b80ea7166da34914ceefb8c70d6a598f3fa648b199ef156
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad58f0324c91c7488e5eb823fa3d0e1758ec63fb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777603"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847633"
 ---
 # <a name="enrich-a-product-page"></a>Wzbogacanie strony produktu
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano sposób wzbogacania strony produktu w Microsoft Dynamics 365 Commerce.
+W tym artykule opisano sposób wzbogacania strony produktu w Microsoft Dynamics 365 Commerce.
 
 Domyślnie witryna używa strony ogólnej do wyświetlania danych produktu. Ta strona zawiera podstawowe informacje o produkcie i formantach, które są wymagane do jego sprzedaży. Można jednak uzupełnić informacje pochodzące z Commerce Scale Unit dodatkowymi obrazami lub tekstami dla określonego produktu. Ten proces jest znany jako wzbogacanie strony produktu.
 

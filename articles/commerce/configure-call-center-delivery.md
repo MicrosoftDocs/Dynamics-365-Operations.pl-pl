@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie metod dostawy i opłat w biurze obsługi
-description: W tym temacie opisano sposób konfigurowania metod dostawy i opłat za zlecenia z biura obsługi w Dynamics 365 Commerce.
+description: W tym artykule opisano sposób konfigurowania metod dostawy i opłat za zlecenia z biura obsługi w Dynamics 365 Commerce.
 author: josaw1
 ms.date: 04/26/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: bd763082969079de2d68e12483ec25871c332e4067f122c6a845d3acd477af62
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f445e9dabd0210951609170369eae63bcc30ce6b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748578"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888305"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurowanie metod dostawy i opłat w biurze obsługi
 
@@ -35,7 +35,7 @@ Commerce zawiera funkcje, które pozwalają użytkownikom ograniczać zakres met
 
 Zanim będzie można określić, które metody dostawy mogą być używane do zamówień w biurze obsługi, oraz zdefiniować powiązane reguły i opłaty, należy zdefiniować metody dostawy. Wybierz kolejno opcje **Sprzedaż i marketing \> Ustawienia \> Dystrybucja \> Metody dostawy**. Wybierz opcję **Nowy**, aby utworzyć nową metodę dostawy. Alternatywnie wybierz istniejącą metodę dostawy z listy, a następnie wybierz opcję **Edytuj**, aby wprowadzić zmiany.
 
-W polu **Metoda dostawy** można wprowadzić dowolną kombinację znaków alfanumerycznych zgodnie z wymaganiami firmy. Następnie można użyć pola **Opis**, aby zapewnić dodatkowy kontekst. Pola **Grupa opłat** i **Przyspieszone** są opcjonalne i zostały dokładniej wyjaśnione w dalszej części tego tematu.
+W polu **Metoda dostawy** można wprowadzić dowolną kombinację znaków alfanumerycznych zgodnie z wymaganiami firmy. Następnie można użyć pola **Opis**, aby zapewnić dodatkowy kontekst. Pola **Grupa opłat** i **Przyspieszone** są opcjonalne i zostały dokładniej wyjaśnione w dalszej części tego artykułu.
 
 Na skróconej karcie **Kanały Commerce** dodaj wszelkie kanały, w których powinna istnieć możliwość używania metody dostawy podczas tworzenia w nich transakcji sprzedaży.
 

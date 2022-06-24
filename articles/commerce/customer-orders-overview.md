@@ -1,6 +1,6 @@
 ---
 title: Zamówienia klientów w punktach sprzedaży (POS)
-description: Ten temat zawiera informacje dotyczące zamówień odbiorcy w punkcie sprzedaży (POS). Zamówienia odbiorców są również nazywane zamówieniami specjalnymi. Temat przedstawia powiązane parametry i przepływy transakcji.
+description: Ten artykuł zawiera informacje dotyczące zamówień odbiorcy w punkcie sprzedaży (POS). Zamówienia odbiorców są również nazywane zamówieniami specjalnymi. Artykuł przedstawia powiązane parametry i przepływy transakcji.
 author: josaw1
 ms.date: 08/02/2021
 ms.topic: overview
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 9ebdad47d761f775cf26666dc3e2736818fb4832
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 6051e0a18823b354dd9940aac70a086a0f317002
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982825"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850389"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Zamówienia klientów w punktach sprzedaży (POS)
 
 [!include [banner](includes/banner.md)]
 
-Ten temat zawiera informacje dotyczące tworzenia zamówień odbiorcy w punkcie sprzedaży (POS) i zarządzania nimi. Zamówienia odbiorców mogą być używane do przechwytywania sprzedaży, w których Shoppers mają zostać pobrane produkty w późniejszym terminie, pobierać produkty z innej lokalizacji lub mieć wysłane do nich towary. 
+Ten artykuł zawiera informacje dotyczące tworzenia zamówień odbiorcy w punkcie sprzedaży (POS) i zarządzania nimi. Zamówienia odbiorców mogą być używane do przechwytywania sprzedaży, w których Shoppers mają zostać pobrane produkty w późniejszym terminie, pobierać produkty z innej lokalizacji lub mieć wysłane do nich towary. 
 
 W świecie wielokanałowego handlu wielu sprzedawców udostępnia opcję składania zamówień przez odbiorców, inaczej zamówień specjalnych, które pomagają spełnić różne wymagania dotyczące produktów i realizacji dostaw. Poniżej przedstawiono niektóre typowe scenariusze:
 

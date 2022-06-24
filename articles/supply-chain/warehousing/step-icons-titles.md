@@ -1,6 +1,6 @@
 ---
 title: Przypisanie ikon i tytułów kroków dla aplikacji mobilnej Warehouse Management
-description: W tym temacie opisano sposób przypisywania ikon kroków i tytułów dla nowych lub dostosowanych przepływów zadań w aplikacji mobilnej Warehouse Management.
+description: W tym artykule opisano sposób przypisywania ikon kroków i tytułów dla nowych lub dostosowanych przepływów zadań w aplikacji mobilnej Warehouse Management.
 author: Mirzaab
 ms.date: 05/17/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-05-17
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a687c26cacc0dbdaf0091b2d26277864553ca1bf
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 361ace454f7125ec86bd99cffefc7d268f81d37f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103320"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890604"
 ---
 # <a name="assign-step-icons-and-titles-for-the-warehouse-management-mobile-app"></a>Przypisanie ikon i tytułów kroków dla aplikacji mobilnej Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób przypisywania ikon kroków i tytułów kroków dla nowych lub dostosowanych przepływów zadań w aplikacji mobilnej Warehouse Management.
+W tym artykule opisano sposób przypisywania ikon kroków i tytułów kroków dla nowych lub dostosowanych przepływów zadań w aplikacji mobilnej Warehouse Management.
 
 Na ilustracjach pokazano, jak ikony kroku i tytuły kroku pojawiają się w aplikacji mobilnej Warehouse Management.
 
@@ -29,7 +29,7 @@ Na ilustracjach pokazano, jak ikony kroku i tytuły kroku pojawiają się w apli
 
 ## <a name="turn-this-feature-on-or-off"></a>Włączanie lub wyłączanie tej funkcji
 
-Aby można było korzystać z funkcji opisanych w tym temacie, *w systemie muszą być włączone ustawienia użytkownika,* ikony i tytuły kroku nowej funkcji aplikacji magazynowej. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.25, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Ustawienia użytkownika, ikony i tytuły kroków dla nowej aplikacji magazynowej* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Aby można było korzystać z funkcji opisanych w tym artykule, *w systemie muszą być włączone ustawienia użytkownika,* ikony i tytuły kroku nowej funkcji aplikacji magazynowej. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.25, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Ustawienia użytkownika, ikony i tytuły kroków dla nowej aplikacji magazynowej* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="standard-step-ids-classes-and-icons"></a>Standardowe identyfikatory kroków, klasy i ikony
 
@@ -39,7 +39,7 @@ Każdy krok w przepływie zadań jest identyfikowany za pomocą identyfikatora k
 
 W poniższej tabeli wymieniono wszystkie dostępne identyfikatory kroków oraz odpowiadającą im klasę kroku. Jako identyfikator kroku jest używana nazwa formantu podstawowego pola wejściowego.
 
-Przykład pokazujący, jak są używane identyfikatory i klasy kroków, można znaleźć w implementacji metody `WHSMobileAppStepInfoBuilder.stepId()` w sekcji [Przykład: Przydzielanie ikon i tytułów kroków dla przepływu niestandardowego](#example) w dalszej części tego tematu.
+Przykład pokazujący, jak są używane identyfikatory i klasy kroków, można znaleźć w implementacji metody `WHSMobileAppStepInfoBuilder.stepId()` w sekcji [Przykład: Przydzielanie ikon i tytułów kroków dla przepływu niestandardowego](#example) w dalszej części tego artykułu.
 
 | Identyfikator kroku | Klasa kroku |
 |-|-|
@@ -373,7 +373,7 @@ final internal class WHSMobileAppStepContainerId extends WHSMobileAppStep
 
 Identyfikator ikony kroku jest przechowywany w klasie członka `defaultStepIcon`, a tytuł kroku jest przechowywany w klasie członka `defaultStepTitle`.
 
-Aby przypisać ikonę kroku, ustaw jeden z identyfikatorów `defaultStepIcon` na ikonę wymienioną w sekcji [Dostępne ikony kroków](#step-icons) wcześniej w tym temacie.
+Aby przypisać ikonę kroku, ustaw jeden z identyfikatorów `defaultStepIcon` na ikonę wymienioną w sekcji [Dostępne ikony kroków](#step-icons) wcześniej w tym artykule.
 
 ### <a name="use-a-standard-or-custom-step-icon-and-title-for-the-weight-input"></a>Użyj standardowej lub niestandardowej ikony kroku i tytułu dla wprowadzanej wagi
 
@@ -405,7 +405,7 @@ public class WHSMobileAppStepInfoBuilderWeighContainer extends WHSMobileAppStepI
 }
 ```
 
-Następnie należy utworzyć klasę kroku `NewWeight` dla tego kroku. Kod powinien przypominać kod dla przykładu `ContainerId` pokazanego wcześniej w tym temacie.
+Następnie należy utworzyć klasę kroku `NewWeight` dla tego kroku. Kod powinien przypominać kod dla przykładu `ContainerId` pokazanego wcześniej w tym artykule.
 
 #### <a name="override-the-stepinfo-method"></a>Zastąp metodę stepInfo()
 

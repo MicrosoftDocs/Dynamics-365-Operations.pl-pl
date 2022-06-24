@@ -1,6 +1,6 @@
 ---
 title: Planowanie główne dla zapotrzebowania oddziału, magazyn niewymagany
-description: W tym temacie opisano sposób planowania towaru, który ma wymiar zapotrzebowania „oddział”.
+description: W tym artykule opisano sposób planowania towaru, który ma wymiar zapotrzebowania „oddział”.
 author: t-benebo
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bed2d7d9ad7577c78e3cf14f4b759f1d073ac32f
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 327bb259cc108f1fad068c847441229dcaee7ff1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8470381"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859235"
 ---
 # <a name="master-planning-for-site-coverage-warehouse-not-mandatory"></a>Planowanie główne dla zapotrzebowania oddziału, magazyn niewymagany
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób planowania towaru, który ma wymiar zapotrzebowania „oddział”.
+W tym artykule opisano sposób planowania towaru, który ma wymiar zapotrzebowania „oddział”.
 
 Niniejszy scenariusz planowania głównego wymaga spełnienia następujących warunków:
 

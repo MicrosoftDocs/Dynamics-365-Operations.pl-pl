@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie i instalowanie samouczka narzędzia Regression Suite Automation Tool
-description: Ten temat zawiera Samouczek przedstawiający sposób konfigurowania i instalowania narzędzia Regression Suite Automation Tool (RSAT).
+description: Ten artykuł zawiera Samouczek przedstawiający sposób konfigurowania i instalowania narzędzia Regression Suite Automation Tool (RSAT).
 author: tonyafehr
 ms.date: 09/20/2019
 ms.topic: article
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-05-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 5dcdd14f54b9c0ad39794ff98ede29332c246513
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: ec4ae765aaac038e6c7eff11403fb21ebd27fc2c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781998"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858598"
 ---
 # <a name="set-up-and-install-regression-suite-automation-tool-tutorial"></a>Konfigurowanie i instalowanie samouczka narzędzia Regression Suite Automation Tool
 
-Ten temat jest samouczkiem, który pomaga w konfigurowaniu systemu i rozpoczynaniu pracy z narzędziem RSAT oraz innymi narzędziami związanymi z korzystaniem z niego.
+Ten artykuł jest samouczkiem, który pomaga w konfigurowaniu systemu i rozpoczynaniu pracy z narzędziem RSAT oraz innymi narzędziami związanymi z korzystaniem z niego.
 
 [!include [banner](../../includes/banner.md)]
 
@@ -111,7 +111,7 @@ W tym samouczku utworzysz bibliotekę przypadków testowych i zsynchronizujesz p
 
 ## <a name="configure-the-lcs-project"></a>Konfigurowanie projektu w usłudze LCS
 
-Potrzebujesz projektu w usłudze Lifecycle Services (LCS) na główną bibliotekę testów. Główna biblioteka przypadków testowych będzie zarządzana za pomocą narzędzia do modelowania procesów biznesowych usługi LCS (BPM). Narzędzie BPM służy do zarządzania bibliotekami testów i dystrybuowania ich w projektach usługi LCS. Na przykład partner firmy Microsoft lub niezależny dostawca oprogramowania (ISV) tworzyć biblioteki testów będzie publikował przypadki testowe w formie bibliotek narzędzia BPM. W narzędziu BPM przypadki testowe są zorganizowane według procesu biznesowego. Narzędzie BPM nie wyznacza kolejności wykonywania ani częstotliwości przebiegu testowego. Te szczegóły są określane w usłudze Azure DevOps w sposób opisany w dalszej części niniejszego tematu.  
+Potrzebujesz projektu w usłudze Lifecycle Services (LCS) na główną bibliotekę testów. Główna biblioteka przypadków testowych będzie zarządzana za pomocą narzędzia do modelowania procesów biznesowych usługi LCS (BPM). Narzędzie BPM służy do zarządzania bibliotekami testów i dystrybuowania ich w projektach usługi LCS. Na przykład partner firmy Microsoft lub niezależny dostawca oprogramowania (ISV) tworzyć biblioteki testów będzie publikował przypadki testowe w formie bibliotek narzędzia BPM. W narzędziu BPM przypadki testowe są zorganizowane według procesu biznesowego. Narzędzie BPM nie wyznacza kolejności wykonywania ani częstotliwości przebiegu testowego. Te szczegóły są określane w usłudze Azure DevOps w sposób opisany w dalszej części tego artykułu.  
 
 Jako projektu usługi LCS można użyć istniejącej implementacji klienta lub projektu partnera.
 

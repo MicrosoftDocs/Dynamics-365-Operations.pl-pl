@@ -1,6 +1,6 @@
 ---
-title: Konfigurowanie powiadomień pocztą e-mail
-description: W tym temacie opisano sposób notyfikacji przez e-mail w rozwiązaniu Microsoft Dynamics 365 Commerce.
+title: Konfigurowanie profilu powiadomienia e-mail
+description: W tym artykule opisano sposób notyfikacji przez e-mail w rozwiązaniu Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 02/11/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9f7adffd67e8198d16e4f7ed4fc4aadf59071b1d
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: 109adcc4e8b49c665bd14ecab2b7cc56cebd2291
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109638"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878493"
 ---
-# <a name="set-up-an-email-notification-profile"></a>Konfigurowanie profilu powiadomienia
+# <a name="set-up-an-email-notification-profile"></a>Konfigurowanie profilu powiadomienia e-mail
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano sposób notyfikacji przez e-mail w rozwiązaniu Microsoft Dynamics 365 Commerce.
+W tym artykule opisano sposób notyfikacji przez e-mail w rozwiązaniu Microsoft Dynamics 365 Commerce.
 
 Podczas tworzenia kanałów można skonfigurować profil powiadomienia pocztą e-mail. Profil powiadomień e-mailowych definiuje zdarzenia transakcji sprzedaży (takie jak utworzone zamówienie, zamówienie spakowane i zamówienie zafakturowane), dla których będziesz wysyłać powiadomienia do swoich klientów. 
 

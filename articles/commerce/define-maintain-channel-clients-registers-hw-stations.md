@@ -1,6 +1,6 @@
 ---
 title: Podłączanie urządzeń peryferyjnych do komputera z aplikacją POS
-description: Ten temat omawia sposób podłączania urządzeń peryferyjnych do komputera z wystąpieniem aplikacji Retail POS.
+description: Ten artykuł omawia sposób podłączania urządzeń peryferyjnych do komputera z wystąpieniem aplikacji Retail POS.
 author: BrianShook
 ms.date: 03/01/2022
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: f1c53c7215d3a5a182f345d5e040274ae06f9b12
-ms.sourcegitcommit: 116898def829c0f78bda8a117242aa308793465d
+ms.openlocfilehash: ffee75e1713c7c9d31b1d023cd055c2f1a3fc43d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8370958"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897115"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Podłączanie urządzeń peryferyjnych do komputera z aplikacją POS
 
 [!include [banner](includes/banner.md)]
 
-Ten temat omawia sposób podłączania urządzeń peryferyjnych do komputera z wystąpieniem aplikacji Retail POS.
+Ten artykuł omawia sposób podłączania urządzeń peryferyjnych do komputera z wystąpieniem aplikacji Retail POS.
 
 > [!NOTE]
 > Aby uzyskać szczegółowe instrukcje dotyczące instalacji, należy zapoznać się z tematem [konfigurowanie i instalowanie modułu Retail Hardware Station](retail-hardware-station-configuration-installation.md) i [Konfigurowanie, instalowanie i aktywacja Modern POS (MPOS)](retail-modern-pos-device-activation.md).
@@ -157,7 +157,7 @@ Profile paragonów są przypisywane do drukarek w profilach sprzętu. Służą d
 
 #### <a name="hardware-profiles"></a>Profile sprzętu
 
-Profile sprzętu omówiono jako składnik konfiguracji klienta we wcześniejszej części tego tematu. Profile sprzętu są przypisywane bezpośrednio do kasy w programie POS lub udostępnionej stacji sprzętowej i służą do określania typów urządzeń używanych przez określoną kasę w programie POS lub stację sprzętową. Profile sprzętu są również używane do określania ustawień usługi EFT służących do komunikacji z zestawem SDK obsługi płatności.
+Profile sprzętu omówiono jako składnik konfiguracji klienta we wcześniejszej części tego artykułu. Profile sprzętu są przypisywane bezpośrednio do kasy w programie POS lub udostępnionej stacji sprzętowej i służą do określania typów urządzeń używanych przez określoną kasę w programie POS lub stację sprzętową. Profile sprzętu są również używane do określania ustawień usługi EFT służących do komunikacji z zestawem SDK obsługi płatności.
 
 #### <a name="visual-profiles"></a>Profile graficzne
 

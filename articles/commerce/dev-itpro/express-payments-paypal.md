@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie płatności ekspresowych dla płatności PayPal
-description: W tym temacie opisano sposób konfigurowania płatności ekspresowych dla usługi PayPal w celu włączenia funkcji szybszego realizacji zamówienia w systemie Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano sposób konfigurowania płatności ekspresowych dla usługi PayPal w celu włączenia funkcji szybszego realizacji zamówienia w systemie Microsoft Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 05/11/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 5fff17959e7ed9299df169c68b2ed07f6b7c7d2c
-ms.sourcegitcommit: e4cc43b06ef3f0f562849e2c960025cb244d6017
+ms.openlocfilehash: b69b7384992fb86370ff6881824a7d2c9a77d2c4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "8743578"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905289"
 ---
 # <a name="configure-express-payments-for-paypal"></a>Konfigurowanie płatności ekspresowych dla płatności PayPal
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób konfigurowania płatności ekspresowych dla usługi PayPal w celu włączenia funkcji szybszego realizacji zamówienia w systemie Microsoft Dynamics 365 Commerce.
+W tym artykule opisano sposób konfigurowania płatności ekspresowych dla usługi PayPal w celu włączenia funkcji szybszego realizacji zamówienia w systemie Microsoft Dynamics 365 Commerce.
 
 ## <a name="key-terms"></a>Kluczowe terminy
 
@@ -28,7 +28,7 @@ W tym temacie opisano sposób konfigurowania płatności ekspresowych dla usług
 |---|---|
 | Portfel PayPal | Środowisko klienta i integracja, które są obsługiwane przez łącznik PayPal. Jest on również znany jako przycisk PayPal. |
 | Portfel | Typ płatności, który nie uwzględnia tradycyjnej charakterystyki płatności, taki jak zakres numeru identyfikacyjnego banku (BIN) i data ważności, który służy do rozróżniania typów kart kredytowych i debetowych. |
-| Płatność ekspresowa | Moduł Commerce, który obsługuje szybsze realizacji transakcji w przypadku korzystania z obsługiwanych metod płatności. W tym temacie zajmą się tematy dotyczące używania modułu płatności ekspresowych z usługą PayPal. |
+| Płatność ekspresowa | Moduł Commerce, który obsługuje szybsze realizacji transakcji w przypadku korzystania z obsługiwanych metod płatności. W tym artykule zajmą się tematy dotyczące używania modułu płatności ekspresowych z usługą PayPal. |
 
 Dynamics 365 Commerce oferuje dostęp do integracji out-of-box dla PayPal Wallet. Gdy Łącznik płatności Dynamics 365 dla PayPal jest skonfigurowany, przycisk PayPal pojawia się jako metoda płatności do wyboru podczas realizacji zamówienia online. Gdy użytkownicy wybierzą opcję PayPal, są skierowane do ukończenia płatności bezpośrednio przez system PayPal, a następnie są zwracani do sklepu internetowego w celu ukończenia zamówienia. Dokonanie płatności za pomocą koszyka PayPal umożliwia klientom wykorzystanie informacji o koncie płatniczym do wstępnego wypełnienia formularza płatności, dzięki czemu mogą szybciej zakończyć proces realizacji transakcji.
 

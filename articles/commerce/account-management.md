@@ -1,6 +1,6 @@
 ---
 title: Strony i moduły zarządzania kontem
-description: Ten temat obejmuje strony i moduły zarządzania kontami w Microsoft Dynamics 365 Commerce.
+description: Ten artykuł obejmuje strony i moduły zarządzania kontami w Microsoft Dynamics 365 Commerce.
 author: v-chgri
 ms.date: 03/17/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5b26f9f83ad368a7e0fbc0ffe1263a8fec86f99b8a66ee6c4a28d5e061efbc21
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c10288aa65d58d1442e742fa8f39b4e380c7b9e6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716257"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853883"
 ---
 # <a name="account-management-pages-and-modules"></a>Strony i moduły zarządzania kontem
 
 [!include [banner](includes/banner.md)]
 
-Ten temat obejmuje strony i moduły zarządzania kontami w Microsoft Dynamics 365 Commerce.
+Ten artykuł obejmuje strony i moduły zarządzania kontami w Microsoft Dynamics 365 Commerce.
 
 Zarządzanie kontami odnosi się do grupy stron służącej do zarządzania informacjami powiązanymi z kontem użytkownika w programie Dynamics 365 Commerce. Strony zarządzania kontami obejmują stronę docelową zarządzanie kontami, atrona profil użytkownika, atrona adres użytkownika, strona historia zamówień, strona szczegóły zamówienia, strona lojalnościowa i strona listy życzeń.
 

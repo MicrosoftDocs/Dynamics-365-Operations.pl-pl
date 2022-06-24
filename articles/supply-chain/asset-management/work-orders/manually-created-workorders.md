@@ -1,6 +1,6 @@
 ---
 title: Ręcznie utworzone zlecenia pracy
-description: W tym temacie opisano ręczne tworzenie zleceń pracy w module Zarządzanie składnikami majątku.
+description: W tym artykule opisano ręczne tworzenie zleceń pracy w module Zarządzanie składnikami majątku.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a755fa579d929056296c5512f976d15c4808c336b6688b891a4712051e15e9a1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eb29c5e7170011b95151d9aaf2a96a570563096d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750107"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902090"
 ---
 # <a name="manually-created-work-orders"></a>Ręcznie utworzone zlecenia pracy
 

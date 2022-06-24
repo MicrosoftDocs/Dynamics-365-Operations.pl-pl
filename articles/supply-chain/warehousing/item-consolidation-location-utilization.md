@@ -1,6 +1,6 @@
 ---
 title: Konsolidacja pozycji — wykorzystanie lokalizacji
-description: Ten temat zawiera informacje o funkcjach ułatwiających menedżerom magazynów wyświetlanie i filtrowanie objętościowe wykorzystania lokalizacji w magazynie. Menedżerowie mogą wybierać lokalizacje i tworzyć pracę przesunięcia zapasów bezpośrednio na stronie konsolidacji towaru w celu konsolidowania towarów, a w ten sposób lepiej korzystać z przestrzeni magazynowej.
+description: Ten artykuł zawiera informacje o funkcjach ułatwiających menedżerom magazynów wyświetlanie i filtrowanie objętościowe wykorzystania lokalizacji w magazynie. Menedżerowie mogą wybierać lokalizacje i tworzyć pracę przesunięcia zapasów bezpośrednio na stronie konsolidacji towaru w celu konsolidowania towarów, a w ten sposób lepiej korzystać z przestrzeni magazynowej.
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
@@ -13,22 +13,22 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: f858eae57b8b354076f5ed026a4b84ed680866b0
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 63fd8b209cb73843aae7324c805c5d0eb83b4ca4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578615"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849192"
 ---
 # <a name="item-consolidation---location-utilization"></a>Konsolidacja pozycji — wykorzystanie lokalizacji
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje o funkcjach ułatwiających menedżerom magazynów wyświetlanie i filtrowanie objętościowe wykorzystania lokalizacji w magazynie. Menedżerowie mogą wybierać lokalizacje i tworzyć pracę przesunięcia zapasów bezpośrednio na stronie **Konsolidacji towaru** w celu konsolidowania towarów, a w ten sposób lepiej korzystać z przestrzeni magazynowej.
+Ten artykuł zawiera informacje o funkcjach ułatwiających menedżerom magazynów wyświetlanie i filtrowanie objętościowe wykorzystania lokalizacji w magazynie. Menedżerowie mogą wybierać lokalizacje i tworzyć pracę przesunięcia zapasów bezpośrednio na stronie **Konsolidacji towaru** w celu konsolidowania towarów, a w ten sposób lepiej korzystać z przestrzeni magazynowej.
 
 ## <a name="turn-on-the-features"></a>Włączanie funkcji
 
-Aby można było skorzystać z funkcji opisanych w tym temacie, należy je włączyć w systemie. Administratorzy mogą skorzystać z obszaru roboczego [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć je, jeśli istnieje taka potrzeba. Włącz obie następujące funkcje w kolejności, w jakiej są wymienione w systemie. (Obie funkcje dotyczą modułu **Zarządzania magazynem**.)
+Aby można było skorzystać z funkcji opisanych w tym artykule, należy je włączyć w systemie. Administratorzy mogą skorzystać z obszaru roboczego [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć je, jeśli istnieje taka potrzeba. Włącz obie następujące funkcje w kolejności, w jakiej są wymienione w systemie. (Obie funkcje dotyczą modułu **Zarządzania magazynem**.)
 
 1. Stan lokalizacji w magazynie
 2. Wykorzystanie lokalizacji konsolidacji pozycji
@@ -51,7 +51,7 @@ Te pola umożliwiają kierownikom magazynu lepszy przegląd stanu lokalizacji w 
 
 ## <a name="set-up-item-consolidation-and-location-utilization"></a>Ustawianie konsolidacja pozycji i wykorzystanie lokalizacji
 
-W tej sekcji opisano sposób przygotowania systemu do użycia konsolidacji pozycji i wykorzystania lokalizacji. W procedurach są używane przykładowe wartości z standardowych danych demonstracyjnych. Jeśli planujesz pracę z przykładowym scenariuszem przedstawionym w dalszej części tego tematu, wybierz firmę **USMF** (zawierającą standardowe dane demonstracyjne) i utwórz każdy rekord opisany w tej sekcji. Jeśli nie planujesz pracy za pomocą scenariusza przykładowego, podane tu wartości można traktować jako przykłady typów konfiguracji, które należy wykonać w celu użycia tych funkcji.
+W tej sekcji opisano sposób przygotowania systemu do użycia konsolidacji pozycji i wykorzystania lokalizacji. W procedurach są używane przykładowe wartości z standardowych danych demonstracyjnych. Jeśli planujesz pracę z przykładowym scenariuszem przedstawionym w dalszej części tego artykułu, wybierz firmę **USMF** (zawierającą standardowe dane demonstracyjne) i utwórz każdy rekord opisany w tej sekcji. Jeśli nie planujesz pracy za pomocą scenariusza przykładowego, podane tu wartości można traktować jako przykłady typów konfiguracji, które należy wykonać w celu użycia tych funkcji.
 
 ### <a name="released-product"></a>Zwolniony produkt
 

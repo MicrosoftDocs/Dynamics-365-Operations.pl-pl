@@ -1,6 +1,6 @@
 ---
 title: Prognozy płatności odbiorcy
-description: W tym temacie opisano funkcjonalność prognoz płatności, która może pomóc w lepszym zrozumieniu typowych praktyk płatniczych odbiorcy. Ta funkcja może również pomóc w identyfikowaniu okoliczności, które powinny spowodować rozpoczęcie procesów windykacji wcześniej, niż normalnie rozważałaby organizacja.
+description: W tym artykule opisano funkcjonalność prognoz płatności, która może pomóc w lepszym zrozumieniu typowych praktyk płatniczych odbiorcy. Ta funkcja może również pomóc w identyfikowaniu okoliczności, które powinny spowodować rozpoczęcie procesów windykacji wcześniej, niż normalnie rozważałaby organizacja.
 author: ShivamPandey-msft
 ms.date: 11/03/2021
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: f3d6f328ff3fd4da6ad3e7d4f3f751d3be692736
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 5d16b42b4538a18ca3dd9d3bac25ed1af1441ace
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713198"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903168"
 ---
 # <a name="customer-payment-predictions"></a>Prognozy płatności odbiorcy
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano funkcjonalność prognoz płatności, która może pomóc w lepszym zrozumieniu typowych praktyk płatniczych odbiorcy. Ta funkcja może również pomóc w identyfikowaniu okoliczności, które powinny spowodować rozpoczęcie procesów windykacji wcześniej, niż normalnie rozważałaby organizacja.
+W tym artykule opisano funkcjonalność prognoz płatności, która może pomóc w lepszym zrozumieniu typowych praktyk płatniczych odbiorcy. Ta funkcja może również pomóc w identyfikowaniu okoliczności, które powinny spowodować rozpoczęcie procesów windykacji wcześniej, niż normalnie rozważałaby organizacja.
 
 ## <a name="overview"></a>Omówienie
 

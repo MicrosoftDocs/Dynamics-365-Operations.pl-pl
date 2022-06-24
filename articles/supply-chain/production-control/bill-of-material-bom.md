@@ -1,6 +1,6 @@
 ---
 title: Listy składowe (BOM) i formuły
-description: Ten temat zawiera informacje o listach składowych (BOM) i formułach, które są najważniejszymi elementami definicji produktów i wariantów produktów.
+description: Ten artykuł zawiera informacje o listach składowych (BOM) i formułach, które są najważniejszymi elementami definicji produktów i wariantów produktów.
 author: johanhoffmann
 ms.date: 11/03/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12a70720775d9903a875dd1759ea2372f1f3b122
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 57a30aba3b0a37d939d0747b2dd305a92c82ae23
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578015"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887291"
 ---
 # <a name="bills-of-materials-and-formulas"></a>Listy składowe (BOM) i formuły
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje o listach składowych (BOM) i formułach, które są najważniejszymi elementami definicji produktów i wariantów produktów. Listy BOM i formuły określają wymagane materiały lub składniki dla określonego produktu. Formuły określają również produkty towarzyszące i uboczne uzyskiwane w określonym kontekście produkcji. 
+Ten artykuł zawiera informacje o listach składowych (BOM) i formułach, które są najważniejszymi elementami definicji produktów i wariantów produktów. Listy BOM i formuły określają wymagane materiały lub składniki dla określonego produktu. Formuły określają również produkty towarzyszące i uboczne uzyskiwane w określonym kontekście produkcji. 
 
 ## <a name="bills-of-materials"></a>BOM
 

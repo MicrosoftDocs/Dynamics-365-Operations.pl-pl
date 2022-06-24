@@ -1,6 +1,6 @@
 ---
 title: Omówienie zarządzania dokumentami biznesowymi
-description: Ten temat zawiera informacje dotyczące sposobu korzystania z funkcji zarządzania dokumentami biznesowymi w ramach modułu raportowania elektronicznego.
+description: Ten artykuł zawiera informacje dotyczące sposobu korzystania z funkcji zarządzania dokumentami biznesowymi w ramach modułu raportowania elektronicznego.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: overview
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: faea9d4d9b3fc8f3f1474b6bb2a8dc31cdc22511
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9147a2e81329d5bf9103b6bfe067d166c1471835
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986258"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903625"
 ---
 # <a name="business-document-management-overview"></a>Omówienie zarządzania dokumentami biznesowymi
 
@@ -50,7 +50,7 @@ Kompletna lista raportów planowanych na dzień wydania w październiku 2020 zna
 
 Więcej raportów będzie dostępnych w przyszłych wersjach. Powiadomienia specjalne o dodatkowych raportach będą wysyłane oddzielnie. Aby się dowiedzieć, jak przejrzeć listę dostępnych obecnie raportów, zobacz poniżej sekcję [Lista konfiguracji ER wydanych w aplikacji Finance w celu obsługi konfigurowalnych dokumentów biznesowych](#list-of-configurations-cbd).
 
-Wykonaj przykład z tego tematu, aby dowiedzieć się więcej na temat tej funkcji.
+Wykonaj przykład z tego artykułu, aby dowiedzieć się więcej na temat tej funkcji.
 
 ## <a name="configure-er-parameters"></a>Konfigurowanie parametrów modułu ER
 
@@ -60,7 +60,7 @@ Ponieważ zarządzanie dokumentami biznesowymi jest tworzone na strukturze ER, n
 
 ## <a name="import-er-solutions"></a>Importowanie rozwiązań ER
 
-Przykładowe konfiguracje ER są używane w przykładzie tej procedury. Do bieżącego wystąpienia Dynamics 365 Finance należy zaimportować konfiguracje ER, które zawierają szablony dokumentów biznesowych, które można edytować za pomocą funkcji zarządzania dokumentami biznesowymi. Aby wykonać tę procedurę, należy pobrać i następnie lokalnie zapisać poniższe pliki.
+Przykładowe konfiguracje ER są używane w przykładzie tej procedury. Do bieżącego wystąpienia aplikacji Dynamics 365 Finance należy zaimportować konfiguracje ER, które zawierają szablony dokumentów biznesowych, które można edytować za pomocą funkcji zarządzania dokumentami biznesowymi. Aby wykonać tę procedurę, należy pobrać i następnie lokalnie zapisać poniższe pliki.
 
 **Przykładowe rozwiązanie fakturowania dla odbiorcy ER**
 
@@ -231,7 +231,7 @@ Użytkownicy biznesowi mogą uzyskiwać dostęp do szablonów dokumentów biznes
 - Użytkownicy przypisani do roli **Administratora systemu**.
 - Użytkownicy przypisani do dowolnej roli, która jest skonfigurowana do pełnienia obowiązków, **Zarządzaj szablonami dokumentów biznesowych** (nazwa drzewa obiektów aplikacji (AOT) **ERBDMaintainParameters**).
 
-Aby edytować szablony faktur niezależnych w obszarze roboczym zarządzanie dokumentami biznesowymi, należy wykonać poniższą procedurę. Przed wykonaniem tej procedury należy wykonać wszystkie opisane powyżej procedury przedstawione w tym temacie.
+Aby edytować szablony faktur niezależnych w obszarze roboczym zarządzanie dokumentami biznesowymi, należy wykonać poniższą procedurę. Przed wykonaniem tej procedury należy wykonać wszystkie opisane powyżej procedury przedstawione w tym artykule.
 
 1. Zaloguj się jako użytkownik z dostępem do strony obszaru roboczego zarządzania dokumentami biznesowymi.
 2. Otwórz obszaru roboczy zarządzania dokumentami biznesowymi.

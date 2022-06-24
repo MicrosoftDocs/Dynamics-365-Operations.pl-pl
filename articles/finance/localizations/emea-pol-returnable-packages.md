@@ -1,6 +1,6 @@
 ---
 title: Opakowania zwrotne dla Polski
-description: Ten temat zawiera opis sposobu konfigurowania i używania opakowań zwrotnych dla Polski.
+description: Ten artykuł zawiera opis sposobu konfigurowania i używania opakowań zwrotnych dla Polski.
 author: ShylaThompson
 ms.date: 04/10/2017
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Poland
 ms.author: ilyako
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 616ee84e132751bd60d5485f9df7077f4c6b11568c6293a14fcd2da6f172cdae
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 016a12e199e1e634bf6a4769181d57e0be97070f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723745"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864147"
 ---
 # <a name="returnable-packaging-for-poland"></a>Opakowania zwrotne dla Polski
 [!include [banner](../includes/banner.md)]

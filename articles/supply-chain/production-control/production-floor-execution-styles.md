@@ -1,6 +1,6 @@
 ---
 title: Dobór stylu interfejsu wykonania hal produkcyjnych
-description: W tym temacie opisano sposób konfigurowania formantów formularza, tak aby zostały do nich zastosowane domyślne style wykonania hal produkcyjnych.
+description: W tym artykule opisano sposób konfigurowania formantów formularza, tak aby zostały do nich zastosowane domyślne style wykonania hal produkcyjnych.
 author: johanhoffmann
 ms.date: 11/08/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-02-22
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: ef39dc6414f0afdadd4a4b5a41e1fb1fe60e4974
-ms.sourcegitcommit: bc9e75c38e192664cde226ed3a94df5a0b304369
+ms.openlocfilehash: ad6ecd591353fe8ddc1a5b9049d65491fb58e98a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7790897"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859148"
 ---
 # <a name="style-the-production-floor-execution-interface"></a>Dobór stylu interfejsu wykonania hal produkcyjnych
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób konfigurowania formantów formularza, tak aby zostały do nich zastosowane domyślne style wykonania hal produkcyjnych.
+W tym artykule opisano sposób konfigurowania formantów formularza, tak aby zostały do nich zastosowane domyślne style wykonania hal produkcyjnych.
 
 ## <a name="forms-and-dialogs"></a>Formularze i okna dialogowe
 
@@ -31,7 +31,7 @@ Style można stosować do formularza lub okna dialogowego tylko wtedy, gdy są s
 - Jeśli formularz ma przypominać istniejący formularz postępu raportu, nazwa formularza lub okna dialogowego musi rozpoczynać się od `JmgProductionFloorExecutionCustomInputDialog`.
 - Formularz lub okno dialogowe może zawierać część formularza szczegółów. Aby zastosować do niego style, nazwa części formularza szczegółów musi rozpoczynać się od `JmgProductionFloorExecutionCustomDetailsDialog`.
 - Jeśli formularz lub okno dialogowe powinno mieć widok prosty, nazwa widoku prostego musi rozpoczynać się od `JmgProductionFloorExecutionCustomDialog`. Przykładami formularzy z widokiem prostym są formularze startowe i formularz działań pośrednich.
-- Wszystkie formanty w oknie dialogowym muszą być skonfigurowane w sposób opisany w tym temacie.
+- Wszystkie formanty w oknie dialogowym muszą być skonfigurowane w sposób opisany w tym artykule.
 
 > [!IMPORTANT]
 > Funkcje wymienione w pierwszych dwóch punktach tej listy wymagają rozwiązania Supply Chain Management w wersji 10.0.19 lub nowszej.

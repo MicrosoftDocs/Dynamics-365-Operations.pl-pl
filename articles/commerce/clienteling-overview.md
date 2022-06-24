@@ -1,6 +1,6 @@
 ---
-title: Przegląd obsługi relacji z klientami
-description: Ten temat zawiera omówienie nowych możliwości relacji z klientami dostępnych w aplikacji sklepu.
+title: Omówienie obsługi relacji z klientami
+description: Ten artykuł zawiera omówienie nowych możliwości relacji z klientami dostępnych w aplikacji sklepu.
 author: bebeale
 ms.date: 02/01/2021
 ms.topic: overview
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: b1e1b7a67141ffec01d926b7f917ebd4e1f24741
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 3d60004367840208f239d69220b3c181109f83d8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984603"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885618"
 ---
 # <a name="clienteling-overview"></a>Omówienie obsługi relacji z klientami
 
@@ -81,7 +81,7 @@ Aby włączyć funkcję relacji z klientami w środowisku, należy wykonać nast
     - Umożliwia ustawienie kolejności wyświetlania dla tych atrybutów. Ta kolejność wyświetlania decyduje o tym, które atrybuty powinny być pokazywane w kartotece odbiorcy w książce klienta. Kolejność wyświetlania 1 jest traktowana jako większa niż wartość w kolejności wyświetlania równa 2. Dlatego atrybut, który ma kolejność wyświetlania równą 1, będzie wyświetlany przed atrybutem, który ma kolejność wyświetlania równą 2.
 
     > [!NOTE]
-    > Na tej samej stronie możesz udostępnić Customer Insights. Jednak do celów uwierzytelniania musi zostać utworzony identyfikator aplikacji Azure i klucz tajny. (Aby uzyskać informacje o wymaganiach, zapoznaj się z sekcją [Włączanie integracji odbiorcy w Customer Insights z Commerce](#turn-on-the-integration-of-customer-insights-with-commerce) w dalszej części tego tematu.) Jeśli funkcja Customer Insights jest włączona, a użytkownik wybierze jedną lub więcej miar, które powinny być wyświetlone w kartotece klienta, miary te będą najpierw wykazane. Następnie na podstawie kolejności wyświetlania będą pokazywane grupy atrybutów z księgi klienta. Jeśli na przykład zostaną wybrane dwie miary ze Customer Insights, to w kartotece odbiorcy zostaną wyświetlone te dwie miary i jeden atrybut księgowy klienta. (Wyświetlany atrybut księgi klienta będzie atrybutem o najwyższym porządku wyświetlania.)
+    > Na tej samej stronie możesz udostępnić Customer Insights. Jednak do celów uwierzytelniania musi zostać utworzony identyfikator aplikacji Azure i klucz tajny. (Aby uzyskać informacje o wymaganiach, zapoznaj się z sekcją [Włączanie integracji odbiorcy w Customer Insights z Commerce](#turn-on-the-integration-of-customer-insights-with-commerce) w dalszej części tego artykułu.) Jeśli funkcja Customer Insights jest włączona, a użytkownik wybierze jedną lub więcej miar, które powinny być wyświetlone w kartotece klienta, miary te będą najpierw wykazane. Następnie na podstawie kolejności wyświetlania będą pokazywane grupy atrybutów z księgi klienta. Jeśli na przykład zostaną wybrane dwie miary ze Customer Insights, to w kartotece odbiorcy zostaną wyświetlone te dwie miary i jeden atrybut księgowy klienta. (Wyświetlany atrybut księgi klienta będzie atrybutem o najwyższym porządku wyświetlania.)
 
 6. Na stronie **parametry Commerce** na karcie **Relacje z klientem**, w polu **Grupa atrybutów księgi klienta**, wybierz utworzoną właśnie grupę atrybutów.
 

@@ -1,6 +1,6 @@
 ---
 title: Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.8 (luty 2020 r.)
-description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.8.
+description: W tym artykule opisano nowe oraz zmienione funkcje dostępne w Dynamics 365 Supply Chain Management 10.0.8.
 author: kamaybac
 ms.date: 01/23/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-01-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: b8508301b3dfcb36d876de0f3195c247caefcfcd22e476461ab1e8721b37976d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ece7fcac013ddb5a23ffc1a01bbd7f4e64a2b7d8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773401"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907472"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1008-february-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.8 (luty 2020 r.)
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Supply Chain Management 10.0.8. Ta wersja ma numer kompilacji 10.0.319 i jest dostępna w następujący sposób:
+W tym artykule opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Supply Chain Management 10.0.8. Ta wersja ma numer kompilacji 10.0.319 i jest dostępna w następujący sposób:
 
 - **Wersja zapoznawcza:** grudzień 2019
 - **Dostępność ogólna (Samoaktualizacja):** styczeń 2020
@@ -33,7 +33,7 @@ W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsof
 
 ## <a name="features-included-in-this-release"></a>Funkcje zawarte w tym wydaniu
 
-To wydanie obejmuje następujące nowe funkcje. Tytuły funkcji łączą się z dodatkowymi informacjami w witrynie [plany wydań](/dynamics365/release-plans/). Dodatkowe łącza wskazują dodatkową dokumentację lub pliki wideo, które są obecnie dostępne dla tej funkcji. Niektóre z tych funkcji można również uwzględnić w poprzedniej wersji przyrostowej, ale nie zostały ogłoszone we wcześniejszej sekcji tematu *co nowego*, więc dodajemy je tutaj. Większość tych funkcji należy włączyć, korzystając z [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), zanim będzie można z nich korzystać.
+To wydanie obejmuje następujące nowe funkcje. Tytuły funkcji łączą się z dodatkowymi informacjami w witrynie [plany wydań](/dynamics365/release-plans/). Dodatkowe łącza wskazują dodatkową dokumentację lub pliki wideo, które są obecnie dostępne dla tej funkcji. Niektóre z tych funkcji można również uwzględnić w poprzedniej wersji przyrostowej, ale nie zostały ogłoszone we wcześniejszej sekcji artykułu *co nowego*, więc dodajemy je tutaj. Większość tych funkcji należy włączyć, korzystając z [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), zanim będzie można z nich korzystać.
 
 - [Dodatkowa strefa lokalizacji](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/additional-location-zone)
 
@@ -74,12 +74,12 @@ Zajrzyj do [Dynamics 365: plan wydania 2019 aktualizacja 2](/dynamics365-release
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Usunięte i przestarzałe funkcje Supply Chain Management
 
-W temacie [Usunięte lub przestarzałe funkcje w Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) opisano funkcje, które są wycofane lub zostały zaplanowane do usunięcia w Supply Chain Management.
+W artykule [Usunięte lub przestarzałe funkcje w Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) opisano funkcje, które są wycofane lub zostały zaplanowane do usunięcia w Supply Chain Management.
 
 - *Usunięta* funkcja nie jest już dostępna w produkcie.
 - *Przestarzała* funkcja nie jest aktywnie tworzona i może zostać usunięta w przyszłej aktualizacji.
 
-Zanim jakakolwiek funkcja zostanie usunięta z produktu, powiadomienie o zaniechaniu będzie anonsowane w sekcji na temat [usuniętych lub przestarzałych funkcji w Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 miesięcy przed usunięciem.
+Zanim jakakolwiek funkcja zostanie usunięta z produktu, powiadomienie o zaniechaniu będzie anonsowane w sekcji artykułu na temat [usuniętych lub przestarzałych funkcji w Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 miesięcy przed usunięciem.
 
 W przypadku zmian, które wpływają tylko na czas kompilacji, ale są zgodne z trybem piaskownicy i środowiskami produkcyjnymi, czas niezgodności będzie krótszy niż 12 miesięcy. Zazwyczaj są to aktualizacje funkcjonalne, które należy wykonać w kompilatorze.
 

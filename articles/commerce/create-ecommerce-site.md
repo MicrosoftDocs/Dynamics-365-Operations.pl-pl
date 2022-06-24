@@ -1,6 +1,6 @@
 ---
 title: Tworzenie witryny handlu elektronicznego
-description: W tym temacie opisano kroki i informacje wymagane do utworzenia nowej witryny e-Commerce w konstruktorze witryn Dynamics 365 Commerce.
+description: W tym artykule opisano kroki i informacje wymagane do utworzenia nowej witryny e-Commerce w konstruktorze witryn Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 03/10/2022
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 37734e2ceea3a50c70a2f7945329d4a9cf660cc6
-ms.sourcegitcommit: 9c19898e1f41495f804c7f07e2636b53a098c4c1
+ms.openlocfilehash: b4ac8d1b930c89bf330a2332c0b510dadb92e51f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "8402782"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855777"
 ---
 # <a name="create-an-e-commerce-site"></a>Tworzenie witryny handlu elektronicznego
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano kroki i informacje wymagane do utworzenia nowej witryny e-Commerce w konstruktorze witryn Dynamics 365 Commerce.
+W tym artykule opisano kroki i informacje wymagane do utworzenia nowej witryny e-Commerce w konstruktorze witryn Dynamics 365 Commerce.
 
 Po nadaniu licencji na funkcje Dynamics 365 Commerce, funkcja konstruktora witryn zostanie wdrożona wraz z witryną startową, którą można wykorzystać jako podstawę dla własnego oddziału. Jeśli jednak użytkownik chce rozpocząć od zera lub chce stworzyć drugą witrynę, musi utworzyć nową witrynę w środowisku tworzenia witryn. 
 

@@ -1,6 +1,6 @@
 ---
 title: Zwalnianie wierszy BOM i wierszy formuły do magazynu
-description: W tym temacie opisano proces zwalniania surowca dla wierszy BOM i formuły do magazynu.
+description: W tym artykule opisano proces zwalniania surowca dla wierszy BOM i formuły do magazynu.
 author: johanhoffmann
 ms.date: 10/30/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: c9956290ce8f90f04bc144d710ad35b5a0243e3898a8f3e75692b1a9da506149
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 53e3a943dbd6cf982101f42ed8f94b7e0f46597c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731230"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860617"
 ---
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Zwalnianie wierszy BOM i wierszy formuły do magazynu
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano proces zwalniania surowca dla wierszy listy składowej (BOM) i formuły do magazynu. Przy zwalnianiu wiersza BOM lub formuły do magazynu system najpierw określa, czy materiał jest już dostępny w lokalizacji wejściowej produkcji w zakładzie, gdzie materiał zostanie wykorzystany w procesie produkcji.
+W tym artykule opisano proces zwalniania surowca dla wierszy listy składowej (BOM) i formuły do magazynu. Przy zwalnianiu wiersza BOM lub formuły do magazynu system najpierw określa, czy materiał jest już dostępny w lokalizacji wejściowej produkcji w zakładzie, gdzie materiał zostanie wykorzystany w procesie produkcji.
 
 - Jeżeli materiał jest dostępny w lokalizacji wejściowej produkcji, jest pobierany z tej lokalizacji natychmiast po wydaniu sygnału zwolnienia materiału do magazynu.
 - Jeżeli materiał nie jest dostępny w lokalizacji wejściowej produkcji, zwolnienie materiału wskazuje, że musi on zostać przeniesiony z lokalizacji w magazynie do lokalizacji wejściowej produkcji. Materiał jest przenoszony za pomocą pracy magazynu do pobierania surowca. Dlatego należy skonfigurować procesy pobierania surowca w magazynie. Aby uzyskać więcej informacji, zobacz [Omówienie uzupełniania zapasów](../warehousing/replenishment.md) i [Kontrola pracy magazynu za pomocą szablonów pracy i dyrektyw lokalizacji](../warehousing/control-warehouse-location-directives.md).

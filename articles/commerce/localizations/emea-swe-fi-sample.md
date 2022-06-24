@@ -1,6 +1,6 @@
 ---
 title: Przykładowa integracja jednostki kontrolnej dla Szwecji
-description: W tym temacie zawarto ogólne informacje o przykładowej integracji fiskalnej dla Szwecji w Microsoft Dynamics 365 Commerce.
+description: W tym artykule zawarto ogólne informacje o przykładowej integracji fiskalnej dla Szwecji w Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-10-08
-ms.openlocfilehash: ace1bd5b1a06317b6753a34779ecfa96e519a63e
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 11ce0b146f2e64092b0d03dc7416660d76380cd0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077020"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885409"
 ---
 # <a name="control-unit-integration-sample-for-sweden"></a>Przykładowa integracja jednostki kontrolnej dla Szwecji
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie zawarto ogólne informacje o przykładowej integracji fiskalnej dla Szwecji w Microsoft Dynamics 365 Commerce.
+W tym artykule zawarto ogólne informacje o przykładowej integracji fiskalnej dla Szwecji w Microsoft Dynamics 365 Commerce.
 
 > [!NOTE]
 > Ta przykładowa funkcja integracji fiskalnej zastępuje wcześniejszą [próbkę integracji z programem POS z jednostkami kontrolnymi dla Szwecji](retail-sdk-control-unit-sample.md). Wcześniejszy przykład nie wykorzystuje [struktury integracji fiskalnej](./fiscal-integration-for-retail-channel.md) i utraci aktualność w późniejszych aktualizacjach. Aby uzyskać informacje dotyczące migrowania ze starszego przykładu do przykładu odpowiadającego wersji Dynamics 365 Commerce **10.0.22 i wcześniejszej**, patrz [Migrowanie z wcześniejszej przykładowej integracji](emea-swe-fi-sample-sdk.md#migrating-from-the-earlier-integration-sample).
@@ -83,7 +83,7 @@ Na stronie **Pola niestandardowe** dodaj następujące rekordy dla pól niestand
 
 Dla każdego wymaganego formatu paragonu zmień wartość pola **Zachowanie drukowania** na **Zawsze drukuj**.
 
-W projektancie formatów paragonów dodaj wymienione poniżej pola niestandardowe do sekcji **Stopka**. Pamiętaj, że nazwy pól muszą odpowiadać tekstom w języku zdefiniowanym w poprzedniej sekcji tego tematu.
+W projektancie formatów paragonów dodaj wymienione poniżej pola niestandardowe do sekcji **Stopka**. Pamiętaj, że nazwy pól muszą odpowiadać tekstom w języku zdefiniowanym w poprzedniej sekcji tego artykułu.
 
 - **Kod kontroli rejestru** – w tym polu jest drukowany kod kontroli.
 - **Urządzenie rejestrujące** – w tym polu jest drukowany numer produkcji jednostki kontrolnej.

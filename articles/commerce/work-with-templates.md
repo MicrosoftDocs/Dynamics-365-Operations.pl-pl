@@ -1,6 +1,6 @@
 ---
 title: Praca z szablonami
-description: W tym temacie opisano, jak pracować z szablonami w Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano, jak pracować z szablonami w Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 ms.date: 02/03/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ab6ccfac96249b39cb007d9a9fce10475f0c7149
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: c234ddb0cdc212bead4f722f7881fbf21d608675
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090801"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881586"
 ---
 # <a name="work-with-templates"></a>Praca z szablonami
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano, jak pracować z szablonami w Microsoft Dynamics 365 Commerce.
+W tym artykule opisano, jak pracować z szablonami w Microsoft Dynamics 365 Commerce.
 
 Zgodnie z tematem [Omówienie szablonów i układów](templates-layouts-overview.md), szablony definiują zbiór opcji dostępnych dla autorów podrzędnych. Szablony są przydatne dla zespołu tworzenia sieci Web w przedsiębiorstwie z kilku powodów, a strukturalne dobre szablony mogą pomóc we wszystkich następujących celach:
 

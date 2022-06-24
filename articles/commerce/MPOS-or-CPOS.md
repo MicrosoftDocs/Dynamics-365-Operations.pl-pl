@@ -1,6 +1,6 @@
 ---
-title: Wybierz pomiędzy Store Commerce a Cloud POS
-description: Ten temat wyjaśnia kluczowe różnice między Store Commerce i Cloud POS oraz opisuje różne czynniki, które detaliści wdrażający Dynamics 365 Commerce powinni rozważyć, aby pomóc sobie w dokonaniu najlepszego wyboru dla swoich wymagań.
+title: Wybierz między rozwiązaniem Store Commerce i Cloud POS
+description: Ten artykuł wyjaśnia kluczowe różnice między Store Commerce i Cloud POS oraz opisuje różne czynniki, które detaliści wdrażający Dynamics 365 Commerce powinni rozważyć, aby pomóc sobie w dokonaniu najlepszego wyboru dla swoich wymagań.
 author: jblucher
 ms.date: 04/21/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b62e1737bc9e3b9d9e25a7a88e693a9aece80776
-ms.sourcegitcommit: 836695c0e95d366ba993f34eee30f57191f356d8
+ms.openlocfilehash: 26f6e94b13b3058ac42c4c7b83dcf7179bae18e3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8629297"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854013"
 ---
-# <a name="choose-between-store-commerce-and-cloud-pos"></a>Wybierz pomiędzy Store Commerce a Cloud POS
+# <a name="choose-between-store-commerce-and-cloud-pos"></a>Wybierz między rozwiązaniem Store Commerce i Cloud POS
 
 [!include [banner](includes/banner.md)]
 
-Ten temat wyjaśnia kluczowe różnice między Store Commerce i Cloud POS oraz opisuje różne czynniki, które detaliści wdrażający Dynamics 365 Commerce powinni rozważyć, aby pomóc sobie w dokonaniu najlepszego wyboru dla swoich wymagań. Daje także osobom odpowiedzialnych za wdrożenie dodatkowe tło, wskazówki i wytyczne dotyczące czynników, które powinni wziąć pod uwagę podczas wdrażania Dynamics 365 Commerce. Zapoznanie się z tymi wytycznymi oraz przestrzeganie ich w procesie wdrożenia pozwoli uniknąć osobom odpowiedzialnym za wdrożenie problemów, które mogą wpłynąć na zadowolenie klienta lub wydajność.
+Ten artykuł wyjaśnia kluczowe różnice między Store Commerce i Cloud POS oraz opisuje różne czynniki, które detaliści wdrażający Dynamics 365 Commerce powinni rozważyć, aby pomóc sobie w dokonaniu najlepszego wyboru dla swoich wymagań. Daje także osobom odpowiedzialnych za wdrożenie dodatkowe tło, wskazówki i wytyczne dotyczące czynników, które powinni wziąć pod uwagę podczas wdrażania Dynamics 365 Commerce. Zapoznanie się z tymi wytycznymi oraz przestrzeganie ich w procesie wdrożenia pozwoli uniknąć osobom odpowiedzialnym za wdrożenie problemów, które mogą wpłynąć na zadowolenie klienta lub wydajność.
 
 ## <a name="insights"></a>Wgląd
 
@@ -44,7 +44,7 @@ Ten temat wyjaśnia kluczowe różnice między Store Commerce i Cloud POS oraz o
 We wszystkich przypadkach punkt sprzedaży (Store Commerce i CPOS) opiera się na tym samym podstawowym kodzie aplikacji. Jest to istotne z następujących powodów:
 
 - Interfejs użytkownika (UI) jest jednakowy, niezależnie od platformy czy wyglądu formularza.
-- Większość możliwości funkcjonalnych jest taka sama, niezależnie od platformy czy wyglądu formularza. Istnieją jednak pewne ważne różnice. Różnice te zostały wskazane w tym temacie.
+- Większość możliwości funkcjonalnych jest taka sama, niezależnie od platformy czy wyglądu formularza. Istnieją jednak pewne ważne różnice. Różnice te zostały wskazane w tym artykule.
 - W każdym sklepie warianty POS mogą być łączone i działać równolegle. Na przykład do obsługi głównych rejestrów sprzedawca detaliczny może używać Store Commerce zainstalowanego na komputerach z systemem Windows. Jednak sprzedawca może uzupełniać te rejestry za pomocą terminali działających w oparciu o przeglądarkę lub urządzeń przenośnych.
 - Można w prosty sposób korzystać z dostosowań i rozszerzeń między platformami i wyglądami formularzy. Główny kod aplikacji jest współdzielony, dlatego większość dostosowań można wdrażać jednorazowo zamiast wielokrotnie.
 

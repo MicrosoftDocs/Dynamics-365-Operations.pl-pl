@@ -1,6 +1,6 @@
 ---
 title: Płynny przełącznik offline dla operacji na kartach upominkowych i notach kredytowych
-description: Ten temat zawiera przegląd ulepszeń zapewniających płynny przełączenie w tryb offline dla konkretnych typów płatności.
+description: Ten artykuł zawiera przegląd ulepszeń zapewniających płynny przełączenie w tryb offline dla konkretnych typów płatności.
 author: BrianShook
 ms.date: 02/11/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 20120-02-28
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 59f1a0b213bd22906ba8b2c3e7da38a9818f6d4f
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: e0416a61bd5fd3b875b427ad8a6313d0e9936f0d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779499"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869168"
 ---
 # <a name="seamless-offline-switch-for-gift-card-and-credit-memo-operations"></a>Płynny przełącznik offline dla operacji na kartach upominkowych i notach kredytowych
 
 [!include [banner](../includes/banner.md)]
 
-Jeśli urządzenie punktu sprzedaży (POS) utraci połączenie z bazą danych kanału, większość operacji i transakcji punktu sprzedaży, które były w toku, może być kontynuowane po otrzymaniu ostrzeżenia o utracie łączności przez Kasjera. Jednak w niektórych przypadkach transakcje mają elementy, które są zależne od usługi w czasie rzeczywistym, a te elementy nie są obsługiwane, gdy punkt sprzedaży jest w trybie offline. W tym temacie opisano pewne funkcje pomagające zmniejszyć wpływ utraty łączności w tych scenariuszach.
+Jeśli urządzenie punktu sprzedaży (POS) utraci połączenie z bazą danych kanału, większość operacji i transakcji punktu sprzedaży, które były w toku, może być kontynuowane po otrzymaniu ostrzeżenia o utracie łączności przez Kasjera. Jednak w niektórych przypadkach transakcje mają elementy, które są zależne od usługi w czasie rzeczywistym, a te elementy nie są obsługiwane, gdy punkt sprzedaży jest w trybie offline. W tym artykule opisano pewne funkcje pomagające zmniejszyć wpływ utraty łączności w tych scenariuszach.
 
 ## <a name="completing-gift-card-transactions-in-offline-mode"></a>Zakończenie transakcji kartami upominkowymi w trybie offline
 
@@ -50,7 +50,7 @@ Aby włączyć funkcję do zawierania transakcji notami kredytowymi po przełąc
 
 Parametry rozwiązania Commerce są zazwyczaj buforowane. Po zaktualizowaniu tego parametru, harmonogram dystrybucji jest inicjowany w celu zsynchronizowania zmiany w kanale, wprowadzanie zmian może potrwać do 24 godzin. Aby zmiana zaczęła obowiązywać, należy zresetować usługi IIS.
 
-## <a name="related-topics"></a>Powiązane tematy
+## <a name="related-articles"></a>Powiązane artykuły
 
 - [Funkcjonalność offline punktu sprzedaży (POS)](../pos-offline-functionality.md)
 - [Operacje online i offline w punkcie sprzedaży (POS)](../pos-operations.md)

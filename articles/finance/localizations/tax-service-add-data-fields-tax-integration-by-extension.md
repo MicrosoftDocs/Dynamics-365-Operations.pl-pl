@@ -1,6 +1,6 @@
 ---
 title: Dodawanie pól danych w integracji podatków przy użyciu rozszerzeń
-description: W tym temacie opisano, jak używać rozszerzeń X++ w celu dodawania pól danych w integracji podatków.
+description: W tym artykule opisano, jak używać rozszerzeń X++ w celu dodawania pól danych w integracji podatków.
 author: qire
 ms.date: 04/27/2022
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 64c68ef6804297f86b5d9dc1933b0c16a0d42aae
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 184012dcc0b68e017bb28d8d73caa9e8415bdbfa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695396"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871057"
 ---
 # <a name="add-data-fields-in-the-tax-integration-by-using-extension"></a>Dodawanie pól danych w integracji podatków przy użyciu rozszerzeń
 
 [!include [banner](../includes/banner.md)]
 
 
-W tym temacie opisano, jak używać rozszerzeń X++ w celu dodawania pól danych w integracji podatków. Te pola mogą być rozszerzone na model danych podatkowych usługi podatkowej i używane do określania kodów podatków. Aby uzyskać więcej informacji, zobacz temat [Dodawanie pól danych w konfiguracjach podatków](tax-service-add-data-fields-tax-configurations.md).
+W tym artykule opisano, jak używać rozszerzeń X++ w celu dodawania pól danych w integracji podatków. Te pola mogą być rozszerzone na model danych podatkowych usługi podatkowej i używane do określania kodów podatków. Aby uzyskać więcej informacji, zobacz temat [Dodawanie pól danych w konfiguracjach podatków](tax-service-add-data-fields-tax-configurations.md).
 
 ## <a name="data-model"></a>Model danych
 
@@ -359,7 +359,7 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
 W tym kodzie `_destination` jest obiektem otoki, który jest używany do generowania żądania, a `_source` to obiekt `TaxIntegrationLineObject`.
 
 > [!NOTE]
-> Zdefiniuj nazwę pola, która jest używana w żądaniu jako **private const str**. Ciąg powinien być dokładnie taki sam, jak nazwa węzła (nie etykieta) dodana w temacie [Dodawanie pól danych w konfiguracjach podatkowych](tax-service-add-data-fields-tax-configurations.md).
+> Zdefiniuj nazwę pola, która jest używana w żądaniu jako **private const str**. Ciąg powinien być dokładnie taki sam, jak nazwa węzła (nie etykieta) dodana w artykule [Dodawanie pól danych w konfiguracjach podatkowych](tax-service-add-data-fields-tax-configurations.md).
 > 
 > Ustaw pole w metodzie **copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine**, używając **metody SetField**. Typem danych drugiego parametru musi być **ciąg**. Jeśli typ danych nie jest **ciąg**, przekonwertuj go na string.
 > Jeśli typem danych jest X++ **typ enum**, zalecamy użycie metody **enum2Symbol** do konwersji wartości wyliczenia na ciąg znaków. Wartość wyliczenia dodana w konfiguracji podatku powinna być dokładnie taka sama jak nazwa wyliczenia. Poniżej znajduje się lista różnic pomiędzy wartością wyliczenia, etykietą i nazwą.

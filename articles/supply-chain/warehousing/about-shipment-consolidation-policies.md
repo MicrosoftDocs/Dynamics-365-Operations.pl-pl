@@ -1,6 +1,6 @@
 ---
 title: Zasady konsolidacji wysyłki
-description: Ten temat zawiera omówienie funkcji, która zapewnia elastyczną konfigurację zasad konsolidacji wysyłki.
+description: Ten artykuł zawiera omówienie funkcji, która zapewnia elastyczną konfigurację zasad konsolidacji wysyłki.
 author: Mirzaab
 ms.date: 05/12/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 51235a21955ed4528233babd4c767112998f9d6b
-ms.sourcegitcommit: 4a973ac0e7af0176270a8070a96a52293567dfbf
+ms.openlocfilehash: 27f5d52dac2e428655f1b16908ff796ed9d02e82
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8747699"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903906"
 ---
 # <a name="shipment-consolidation-policies"></a>Zasady konsolidacji wysyłki
 

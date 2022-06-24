@@ -1,6 +1,6 @@
 ---
 title: Porady dotyczące dodatku Widoczność magazynu
-description: Ten temat zawiera kilka wskazówek, które należy rozważyć podczas konfigurowania i używania dodatku Widoczność zapasów.
+description: Ten artykuł zawiera kilka wskazówek, które należy rozważyć podczas konfigurowania i używania dodatku Widoczność zapasów.
 author: yufeihuang
 ms.date: 08/02/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 1f6ade36ac184a3c8bf790fc0d899ea01d90c8d2
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 9f571d353f99c91776424bc2fa3405f73b2bae0a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952422"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885965"
 ---
 # <a name="inventory-visibility-tips"></a>Porady dotyczące dodatku Widoczność magazynu
 
@@ -34,5 +34,6 @@ Oto kilka wskazówek, które należy rozważyć podczas konfigurowania i używan
 - Jeśli dodasz jedną lub więcej nowych miar do swojego środowiska Supply Chain Management, powinieneś dodać je również w Widoczności zapasów. Jednak wszystkie zmiany ilościowe dla nowych działań muszą pochodzić z waszego środowiska Supply Chain Management.
 - [Konfiguracja partycji](inventory-visibility-configuration.md#partition-configuration) składa się obecnie z dwóch wymiarów podstawowych (`SiteId` i `LocationId`) wskazujących sposób dystrybuowania danych. Operacje wykonywane na tej samej partycji mogą uzyskać wyższą wydajność przy niższym koszcie. Rozwiązanie domyślnie zawiera tę konfigurację partycji. Dlatego *nie trzeba obliczać jej ręcznie*. Nie dostosowuj domyślnej konfiguracji partycji. Usunięcie lub zmiana może spowodować nieoczekiwany błąd.
 - Wymiarów podstawowych określonych w konfiguracji partycji nie należy definiować w [konfiguracji hierarchii indeksu produktów](inventory-visibility-configuration.md#index-configuration).
+- Konfiguracja hierarchii indeksu [produktu](inventory-visibility-configuration.md#index-configuration) musi zawierać co najmniej jedną hierarchię indeksu (na przykład zawierającą wymiar podstawowy `Empty`), w przeciwnym razie zapytania zakończą się niepowodzeniem z błędem "Nie ustawiono hierarchii indeksu".
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

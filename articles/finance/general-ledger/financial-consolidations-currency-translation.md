@@ -1,6 +1,6 @@
 ---
 title: Omówienie konsolidacji finansowych i przeliczania walut
-description: W tym temacie opisano funkcje konsolidacji finansowych i przeliczania walut dostępne w księdze głównej.
+description: W tym artykule opisano funkcje konsolidacji finansowych i przeliczania walut dostępne w księdze głównej.
 author: jinniew
 ms.date: 10/07/2021
 ms.topic: overview
@@ -13,26 +13,26 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: f6f0094ac3307164e1c715a71e16b0766247e275
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 56e445dcf471fd20695824d5e47cd15f39c022ce
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713876"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846865"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Omówienie konsolidacji finansowych i przeliczania walut
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie omówiono podejście stosowane w Microsoft Dynamics 365 Finance i raportowaniu finansowym na potrzeby konsolidacji. Opisano scenariusze raportowania międzyfirmowego, agregacji, eliminacji i udziałów mniejszościowych. Wyjaśniono też sposób postępowania w sytuacjach specjalnych, takich jak scenariusze, gdzie firmy mają różne okresy obrachunkowe lub plany kont.
+W tym artykule omówiono podejście stosowane w Microsoft Dynamics 365 Finance i raportowaniu finansowym na potrzeby konsolidacji. Opisano scenariusze raportowania międzyfirmowego, agregacji, eliminacji i udziałów mniejszościowych. Wyjaśniono też sposób postępowania w sytuacjach specjalnych, takich jak scenariusze, gdzie firmy mają różne okresy obrachunkowe lub plany kont.
 
-Temat został napisany dla użytkowników i konsultantów funkcjonalnych. Założono w nim, że czytelnicy mają ogólną wiedzę o usługach Finance i Raportowanie finansowe. Nie omówiono podstawowego konfigurowania.
+Ten artykuł został napisany dla użytkowników i konsultantów funkcjonalnych. Założono w nim, że czytelnicy mają ogólną wiedzę o usługach Finance i Raportowanie finansowe. Nie omówiono podstawowego konfigurowania.
 
 > [!NOTE]
-> Określenie *firma* jest używane w rozwiązaniu Finance, natomiast określenie *firma* w programie Raportowanie finansowe. Występuje również w tym temacie. Jego znaczenie jest takie same w obu aplikacjach.
+> Określenie *firma* jest używane w rozwiązaniu Finance, natomiast określenie *firma* w programie Raportowanie finansowe. Występuje również w tym artykule. Jego znaczenie na potrzeby tego artykułu jest identyczne w obu aplikacjach.
 
 ## <a name="audience"></a>Odbiorcy
-Ten temat jest przeznaczony dla użytkowników z działów finansów i księgowości oraz konsultantów ds. aplikacji, którzy chcą używać oprogramowania Finance and Operations i Raportowanie finansowe do konsolidowania danych o wielu firmach i wielu walutach.
+Ten artykuł jest przeznaczony dla użytkowników z działów finansów i księgowości oraz konsultantów ds. aplikacji, którzy chcą używać oprogramowania finansowego i operacyjnego oraz Raportowanie finansowe do konsolidowania danych o wielu firmach i wielu walutach.
 
 ## <a name="approach"></a>Metoda
 Aplikacja Finance wykorzystuje odrębną firmę do przetwarzania konsolidacji. Umożliwia to konsolidację wewnątrz jednego wystąpienia, ale oferuje opcję wprowadzania danych z innych źródeł. Proces konsolidacji musi być uruchamiany za każdym razem, gdy zostaną wprowadzone zmiany w firmach źródłowych.

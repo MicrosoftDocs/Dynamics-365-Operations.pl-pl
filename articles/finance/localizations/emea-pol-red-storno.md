@@ -1,6 +1,6 @@
 ---
 title: Aktywowanie stornowania dla Polski
-description: Ten temat zawiera informacje o funkcji stornowania dla Polski.
+description: Ten artykuł zawiera informacje o funkcji stornowania dla Polski.
 author: ShylaThompson
 ms.date: 09/11/2018
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Poland
 ms.author: roschlom
 ms.dyn365.ops.version: AX 7.0.1
 ms.search.validFrom: 2016-05-31
-ms.openlocfilehash: 519e77c9f05f67aa654142ec308d7746bf7a6a3156296069f733f359c97002ac
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a93e15c1882318c96edc35c6e596d42df9aa5c2c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747058"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906250"
 ---
 # <a name="activate-storno-accounting-for-poland"></a>Aktywowanie stornowania dla Polski
 

@@ -1,6 +1,6 @@
 ---
 title: Lokalizacja wyjściowa produkcji
-description: W tym temacie opisano hierarchię używaną do identyfikowania lokalizacji wyjściowej produkcji.
+description: W tym artykule opisano hierarchię używaną do identyfikowania lokalizacji wyjściowej produkcji.
 author: johanhoffmann
 ms.date: 04/04/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f4c8086e9179ff51f62ce77620af96360c6123060372dfd1c0e06dad79998b75
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5bfabae39d3bcb8f7fdd71ac5c93fcdbaeb9d946
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720283"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893302"
 ---
 # <a name="production-output-location"></a>Lokalizacja wyjściowa produkcji
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano hierarchię używaną do identyfikowania lokalizacji wyjściowej produkcji.
+W tym artykule opisano hierarchię używaną do identyfikowania lokalizacji wyjściowej produkcji.
 
 Lokalizacja wyjściowa produkcji to lokalizacja, w której najpierw umieszcza się wyrób gotowy bezpośrednio po ukończeniu produkcji. Zazwyczaj znajduje się blisko miejsca wytwarzania. Lokalizacja wyjściowa produkcji jest wykorzystywana jako pośredni magazyn materiału, zanim zostanie on przeniesiony do obszaru wysyłki, miejsca składowania, lokalizacji wejściowej produkcji następnego procesu produkcji, itd. 
 

@@ -1,6 +1,6 @@
 ---
 title: Moduł mapy
-description: W tym temacie opisano moduły mapy i sposób ich konfiguracji w Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano moduły mapy i sposób ich konfiguracji w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 09/15/2020
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: bc5962d6bedba1f5abf423c396382e5c8a901c81797ae95132833e23c46cfd57
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 191d98d039dea6466eeee9a1db0835393be0a9ab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747400"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894443"
 ---
 # <a name="map-module"></a>Moduł mapy
 
 [!include [banner](includes/banner.md)]
 
 
-W tym temacie opisano moduły mapy i sposób ich konfiguracji w Microsoft Dynamics 365 Commerce.
+W tym artykule opisano moduły mapy i sposób ich konfiguracji w Microsoft Dynamics 365 Commerce.
 
 Moduł mapy pokazuje lokalizacje sklepów na interakcyjnej mapie, która jest renderowana przy użyciu [kontrolki sieci Web usługi Bing Maps V8](/bingmaps/v8-web-control/). Klucz interfejsu API map usługi Bing jest wymagany i należy go dodać do strony udostępnione parametry Commerce headquarters. Moduły mapy zapewniają różne widoki, takie jak drogi, z powietrza i widok z ulicy, które użytkownicy mogą wybrać, aby wyświetlić lokalizacje mapy. Pozwalają również na interakcje, takie jak powiększanie i wykorzystywanie lokalizacji użytkownika.
 

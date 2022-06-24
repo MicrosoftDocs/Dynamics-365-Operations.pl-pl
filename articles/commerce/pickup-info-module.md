@@ -1,6 +1,6 @@
 ---
 title: Moduł informacji o odbiorze
-description: W tym temacie omówiono moduł informacji o odbiorze i opisano, jak dodać go do stron realizacji transakcji w Microsoft Dynamics 365 Commerce.
+description: W tym artykule omówiono moduł informacji o odbiorze i opisano, jak dodać go do stron realizacji transakcji w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 11/06/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-09021
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 52015fb973642bfc6f45901e7c1a265f0ccfc415b1324bc62ef77a5fc72550bb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad877a0c018093fe97f0aa8ac213357c0520a1c9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764568"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892604"
 ---
 # <a name="pickup-information-module"></a>Moduł informacji o odbiorze
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie omówiono moduł informacji o odbiorze i opisano, jak dodać go do stron realizacji transakcji w Microsoft Dynamics 365 Commerce.
+W tym artykule omówiono moduł informacji o odbiorze i opisano, jak dodać go do stron realizacji transakcji w Microsoft Dynamics 365 Commerce.
 
 Moduł informacji o odbiorze może być używany w module realizacji transakcji do wyświetlania informacji o odbiorze zamówienia. Klienci mogą przeglądać dostępne daty odbioru i przedziały czasowe, a następnie wybrać odpowiedni czas na odebranie zamówienia. Na przykład klient może odebrać zamówienie o godzinie 15:00 21 marca ze sklepu w San Francisco.
 

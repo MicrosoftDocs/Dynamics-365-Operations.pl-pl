@@ -1,6 +1,6 @@
 ---
 title: Importowanie i eksportowanie klasyfikacji oraz przeglądów
-description: W tym temacie opisano sposób importowania i eksportowania ocen produktów oraz przeglądanych w tej sekcji Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano sposób importowania i eksportowania ocen produktów oraz przeglądanych w tej sekcji Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 01/12/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgri
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 3ae85f21f7a78d56621aed60527207badcee9c75
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: 97407f62d462c0ae370e9ea0d2799d3f30ecacfa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968528"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863408"
 ---
 # <a name="import-and-export-ratings-and-reviews"></a>Importowanie i eksportowanie klasyfikacji oraz przeglądów
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano sposób importowania i eksportowania ocen produktów oraz przeglądanych w tej sekcji Microsoft Dynamics 365 Commerce.
+W tym artykule opisano sposób importowania i eksportowania ocen produktów oraz przeglądanych w tej sekcji Microsoft Dynamics 365 Commerce.
 
 Dynamics 365 Commerce oferuje [oceny i recenzje](ratings-reviews-overview.md) jako rozwiązanie wielokanałowe. Po przełączeniu na rozwiązanie Dynamics 365 Commerce dotyczące oceny i oceny użytkownik może chcieć przenieść istniejące oceny i przeglądać dane na platformę Commerce. Na podstawie wymagań firmy można również eksportować oceny i przeglądać dane z usług Commerce. Łącznik Power Automate umożliwia importowanie ocen i recenzji do aplikacji Commerce oraz eksportowanie ich z aplikacji Commerce.
 

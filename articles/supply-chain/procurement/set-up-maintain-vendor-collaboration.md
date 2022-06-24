@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie i obsługa współpracy z dostawcami
-description: W tym temacie opisano sposób konfigurowania zasad współpracy z dostawcą w Dynamics 365 Supply Chain Management. Wyjaśniono również, jak konfigurować nowych użytkowników współpracujących z dostawcami i zarządzać rolami zabezpieczeń dla tych użytkowników.
+description: W tym artykule opisano sposób konfigurowania zasad współpracy z dostawcą w Dynamics 365 Supply Chain Management. Wyjaśniono również, jak konfigurować nowych użytkowników współpracujących z dostawcami i zarządzać rolami zabezpieczeń dla tych użytkowników.
 author: GalynaFedorova
 ms.date: 12/03/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4b59513d86426d3c1bfd759b9aabc331e58d5423
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8fe4731f8ff23f4abe25fce57a2325e1fca979c4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677570"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890836"
 ---
 # <a name="set-up-and-maintain-vendor-collaboration"></a>Konfigurowanie i obsługa współpracy z dostawcami
 
@@ -28,7 +28,7 @@ ms.locfileid: "8677570"
 
 Interfejs współpracy z dostawcami udostępnia użytkownikom zewnętrznym ograniczony zestaw informacji o zamówieniach zakupu, fakturach i zapasach konsygnacyjnych. Z tego interfejsu sprzedawca może również odpowiadać na zapytania ofertowe (RFQ) oraz przeglądać i edytować podstawowe informacje o firmie.
 
-W tym temacie opisano sposób konfigurowania zasad współpracy z dostawcą w Dynamics 365 Supply Chain Management. Wyjaśniono również, jak skonfigurować przepływ pracy w celu zapewnienia nowych użytkowników współpracujących z dostawcami oraz jak zarządzać rolami zabezpieczeń dla tych użytkowników.
+W tym artykule opisano sposób konfigurowania zasad współpracy z dostawcą w Dynamics 365 Supply Chain Management. Wyjaśniono również, jak skonfigurować przepływ pracy w celu zapewnienia nowych użytkowników współpracujących z dostawcami oraz jak zarządzać rolami zabezpieczeń dla tych użytkowników.
 
 > [!NOTE]
 > Informacje dotyczące konfiguracji ról zabezpieczeń dla współpracy z dostawcami dotyczą tylko bieżącej wersji rozwiązania Finance and Operations. W systemie Microsoft Dynamics AX 7.0 (luty 2016 r.) i aplikacji Microsoft Dynamics AX w wersji 7.0.1 (maj 2016 r.) do współpracy z dostawcami służy moduł **Portal dostawców**. Aby uzyskać informacje na temat uprawnień użytkowników portalu sprzedawcy w Microsoft Dynamics AX, patrz [Bezpieczeństwo użytkownika portalu sprzedawcy](configure-security-vendor-portal-users.md).
@@ -77,7 +77,7 @@ Rola **Dostawca (zewn.)** może być używana dla dostawców zewnętrznych, któ
 
 ## <a name="set-up-security-roles-that-are-used-when-prospective-vendors-are-onboarded"></a>Skonfiguruj role bezpieczeństwa, które są używane, gdy potencjalni sprzedawcy są wprowadzani na rynek
 
-Aby włączyć do systemu sprzedawców, którzy zostali zainicjowani poprzez wniosek rejestracyjny potencjalnego sprzedawcy, należy skonfigurować zewnętrzną rolę bezpieczeństwa. Rola ta zostanie przypisana nowym użytkownikom w procesie konfiguracji, który jest sterowany przez przepływ typu **Przepływ żądań użytkowników (platforma)**. Więcej informacji na ten temat można znaleźć w punkcie [Ustawianie przepływów pracy w celu przetwarzania żądań użytkowników współpracujących z dostawcami](#set-up-workflows-to-process-vendor-collaboration-user-requests) w dalszej części tego tematu.
+Aby włączyć do systemu sprzedawców, którzy zostali zainicjowani poprzez wniosek rejestracyjny potencjalnego sprzedawcy, należy skonfigurować zewnętrzną rolę bezpieczeństwa. Rola ta zostanie przypisana nowym użytkownikom w procesie konfiguracji, który jest sterowany przez przepływ typu **Przepływ żądań użytkowników (platforma)**. Więcej informacji na ten temat można znaleźć w punkcie [Ustawianie przepływów pracy w celu przetwarzania żądań użytkowników współpracujących z dostawcami](#set-up-workflows-to-process-vendor-collaboration-user-requests) w dalszej części tego artykułu.
 
 Aby uzyskać informacje na temat sposobu przyjmowania potencjalnych sprzedawców, patrz [Wprowadzanie sprzedawców](vendor-onboarding.md).
 

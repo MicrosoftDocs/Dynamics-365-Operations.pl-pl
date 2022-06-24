@@ -1,6 +1,6 @@
 ---
 title: Przykład integracji usługi rejestracji fiskalnej dla Republiki Czeskiej
-description: W tym temacie znajduje się omówienie przykładu integracji fiskalnej dla Republiki Czeskiej w rozwiązaniu Microsoft Dynamics 365 Commerce.
+description: W tym artykule znajduje się omówienie przykładu integracji fiskalnej dla Republiki Czeskiej w rozwiązaniu Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 ms.date: 03/04/2022
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-4-1
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 1c764de42f727bb72adbb8b015745599f428656e
-ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.openlocfilehash: d255b03242a4cb7a72cef1e8e6fab901ecf953e6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8613916"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910505"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-the-czech-republic"></a>Przykład integracji usługi rejestracji fiskalnej dla Republiki Czeskiej
 
 [!include[banner](../includes/banner.md)]
 
-W tym temacie znajduje się omówienie przykładu integracji fiskalnej dla Republiki Czeskiej w rozwiązaniu Microsoft Dynamics 365 Commerce.
+W tym artykule znajduje się omówienie przykładu integracji fiskalnej dla Republiki Czeskiej w rozwiązaniu Microsoft Dynamics 365 Commerce.
 
 Aby spełnić lokalne wymagania fiskalne dotyczące kas w Republice Czeskiej, funkcjonalność rozwiązania Dynamics 365 Commerce dla Republiki Czeskiej obejmuje przykład integracji punktu sprzedaży z zewnętrzną usługą rejestracji fiskalnej. Ten przykład rozszerza [funkcjonalność integracji fiskalnej](fiscal-integration-for-retail-channel.md). Jest on oparty na rozwiązaniu [EFR (Electronic Fiscal Register)](https://efsta.org/sicherheitsloesungen/) firmy [EFSTA](https://efsta.org/) i umożliwia komunikację z usługą EFR za pośrednictwem protokołu HTTPS. Usługa EFR gwarantuje elektroniczną rejestrację sprzedaży (EET, Elektronická evidence tržeb), czyli przekazywanie danych sprzedaży w trybie online do fiskalnej usługi sieci web używanej przez urzędy skarbowe.
 

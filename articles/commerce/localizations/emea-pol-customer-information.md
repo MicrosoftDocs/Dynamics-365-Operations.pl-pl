@@ -1,6 +1,6 @@
 ---
-title: Zarządzanie informacjami dotyczącymi klienta dla Polski
-description: W tym temacie opisano sposób obsługi informacji o klientach w programie Retail POS dla Polski.
+title: Zarządzanie informacjami dotyczącymi klienta (Polska)
+description: W tym artykule opisano sposób obsługi informacji o klientach w programie Retail POS dla Polski.
 author: sepism
 ms.date: 09/21/2021
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.industry: Retail
 ms.author: sepism
 ms.search.validFrom: 2019-11-11
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 5d24fc900780a10583e42bb72da7ae6ef1ed521a
-ms.sourcegitcommit: 47a3ad71210c7ac84d0c25e913c440b5ba205282
+ms.openlocfilehash: 23410d7ee6238362baeb112d98d04c239d7c270c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7512594"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890338"
 ---
-# <a name="customer-information-management-for-poland"></a>Zarządzanie informacjami dotyczącymi klienta dla Polski
+# <a name="customer-information-management-for-poland"></a>Zarządzanie informacjami dotyczącymi klienta (Polska)
 
 [!include [banner](../includes/banner.md)]
 
 
 ## <a name="introduction"></a>Wprowadzenie
 
-W tym temacie opisano sposób obsługi informacji o odbiorcy, takich jak numer podatku VAT, w Retail Point of Sale (POS) dla Polski.
+W tym artykule opisano sposób obsługi informacji o odbiorcy, takich jak numer podatku VAT, w Retail Point of Sale (POS) dla Polski.
 
 Numer VAT odbiorcy można określić podczas tworzenia lub edytowania głównego rekordu odbiorcy w punkcie sprzedaży. Można także określić numer VAT dla transakcji sprzedaży, kopiując go z odbiorcy transakcji lub wprowadzając go ręcznie. Informacje dotyczące odbiorcy mogą być następnie drukowane zarówno na stałych, jak i fiskalnych przychodach i mogą być używane do celów fakturowania.
 
@@ -87,7 +87,7 @@ W projektancie formatów paragonów dodaj pole niestandardowe do odpowiedniej se
 
 ### <a name="configure-channel-components"></a>Konfiguracja składników kanału.
 
-Aby udostępnić funkcje właściwe dla Polski, należy skonfigurować rozszerzenia dla składników kanału. Aby uzyskać więcej informacji, zobacz sekcję [Wskazówki dot. wdrożenia](#deployment-guidelines) w dalszej części tego tematu.
+Aby udostępnić funkcje właściwe dla Polski, należy skonfigurować rozszerzenia dla składników kanału. Aby uzyskać więcej informacji, zobacz sekcję [Wskazówki dot. wdrożenia](#deployment-guidelines) w dalszej części tego artykułu.
 
 ## <a name="example-scenarios"></a>Przykładowe scenariusze
 

@@ -1,6 +1,6 @@
 ---
 title: Zwroty sprzedaży
-description: Ten temat zawiera informacje o procesie zamówień zwrotu. Opisuje koncepcję zwrotów od odbiorców oraz ich wpływ na wycenę i ilości dostępnych zapasów.
+description: Ten artykuł zawiera informacje o procesie zamówień zwrotu. Opisuje koncepcję zwrotów od odbiorców oraz ich wpływ na wycenę i ilości dostępnych zapasów.
 author: Mirzaab
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 672f24a720f48c420916c197722eb2d9599744fa
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 9e8045ec39b9caf9bf0dc2b2d331419efb54e6d6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695571"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860414"
 ---
 # <a name="sales-returns"></a>Zwroty sprzedaży
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje o procesie zamówień zwrotu. Opisuje koncepcję zwrotów od odbiorców oraz ich wpływ na wycenę i ilości dostępnych zapasów.
+Ten artykuł zawiera informacje o procesie zamówień zwrotu. Opisuje koncepcję zwrotów od odbiorców oraz ich wpływ na wycenę i ilości dostępnych zapasów.
 
 Odbiorcy mogą zwracać towary z różnych powodów. Na przykład towar może być uszkodzony lub może nie spełniać oczekiwań odbiorcy. Proces zwrotu rozpoczyna się, gdy odbiorca wystawia wniosek o zwrot towaru. Po odebraniu wniosku od odbiorcy jest tworzone zamówienie zwrotu.
 
@@ -84,7 +84,7 @@ Po wypełnieniu nagłówka zwrotu można utworzyć wiersze zwrotu przy użyciu j
 -   Utworzenie wiersza zwrotu za pomocą funkcji **Znajdź zamówienie sprzedaży**. Zalecamy używanie tej funkcji podczas tworzenia zamówienia zwrotu. Funkcja **Znajdź zamówienie sprzedaży** ustanawia odwołanie od wiersza zwrotu do wiersza zafakturowanego zamówienia sprzedaży, a następnie pobiera szczegóły wiersza, takie jak numer towaru, ilość, cena, rabat i wartości kosztów, z wiersza sprzedaży. Odwołanie pomaga zagwarantować, że podczas zwracania produktu do firmy jest on wyceniany według tego samego kosztu jednostkowego, jak przy sprzedaży. Odwołanie sprawdza też, czy zamówienia zwrotu nie są tworzone dla ilości przekraczającej ilość sprzedaną na fakturze.
 
 >[!NOTE] 
->Wiersze zwrotu zawierające odwołania do zamówienia sprzedaży są obsługiwane jako korekty (cofnięcia) sprzedaży. Aby uzyskać więcej informacji, zobacz sekcję „Księgowanie w księdze" w dalszej części tego tematu.
+>Wiersze zwrotu zawierające odwołania do zamówienia sprzedaży są obsługiwane jako korekty (cofnięcia) sprzedaży. Aby uzyskać więcej informacji, zobacz sekcję „Księgowanie w księdze" w dalszej części tego artykułu.
 
 ### <a name="charges"></a>Opłaty
 
@@ -179,7 +179,7 @@ Zanim będzie można fizycznie przyjąć zwrócone towary do zapasów poprzez za
 
 [![Proces przybycia.](./media/salesreturn03.png)](./media/salesreturn03.png)  
 
-Proces ma kilka innych wariantów, które nie są omówione w tym temacie. Oto wybrane możliwe warianty:
+Proces ma kilka innych wariantów, które nie są omówione w tym artykule. Oto wybrane możliwe warianty:
 
 -   Nie używaj listy **Przegląd przyjęć**, aby utworzyć arkusz przybycia. Zamiast tego ręcznie utwórz arkusz przybycia. Zamówienia zwrotu będą miały odwołanie **Zamówienie sprzedaży**.
 -   Jeśli używasz modułu Zarządzanie magazynem, wygeneruj transporty palet. Podczas transportu palet wiersz zwrotu będzie miał stan **Dostarczone**.

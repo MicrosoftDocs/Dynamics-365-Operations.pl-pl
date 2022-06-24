@@ -1,6 +1,6 @@
 ---
 title: Raport warunków płatności w transakcjach handlowych (PL-00053)
-description: Ten temat zawiera informacje dotyczące raportu Warunki płatności oraz informacje dotyczące jego konfigurowania i generowania.
+description: Ten artykuł zawiera informacje dotyczące raportu Warunki płatności oraz informacje dotyczące jego konfigurowania i generowania.
 author: sndray
 ms.date: 05/06/2022
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Poland
 ms.author: sndray
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 78e6dbe564e008bcf402e4e11d07b876104e454f
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: e0bf422735962d8464b7aa236f8433a56d3ae85f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722199"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887836"
 ---
 # <a name="payment-terms-in-commercial-transactions-report"></a>Raport warunków płatności w transakcjach handlowych
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób skonfigurowania i wygenerowania raportu Warunki płatności wymaganego dla firm w Polsce. Do 31 stycznia każdego roku niektóre firmy muszą przesłać raport o warunkach płatności w transakcjach handlowych za ubiegły rok. Firmy przesyłają raport za pośrednictwem zgłoszenia urzędu skarbowego, wprowadzając dane, o które wnioskuje kreator. System wygeneruje raport.
+W tym artykule opisano sposób skonfigurowania i wygenerowania raportu Warunki płatności wymaganego dla firm w Polsce. Do 31 stycznia każdego roku niektóre firmy muszą przesłać raport o warunkach płatności w transakcjach handlowych za ubiegły rok. Firmy przesyłają raport za pośrednictwem zgłoszenia urzędu skarbowego, wprowadzając dane, o które wnioskuje kreator. System wygeneruje raport.
 
 Raportu można użyć do wygenerowania sumego raportu i szczegółowego raportu w celu ułatwienia ręcznego wprowadzania informacji do aplikacji urzędu skarbowego. Obecnie nie ma opcji automatycznej integracji z witryną urzędu skarbowego.
 

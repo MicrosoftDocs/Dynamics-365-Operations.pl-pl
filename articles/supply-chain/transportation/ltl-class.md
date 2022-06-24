@@ -1,6 +1,6 @@
 ---
 title: Klasy ładunków częściowych (LTL)
-description: W tym temacie objaśniono, czym są klasy ładunków częściowych (LTL) i jak je skonfigurować w systemie Microsoft Dynamics 365 Supply Chain Management.
+description: W tym artykule objaśniono, czym są klasy ładunków częściowych (LTL) i jak je skonfigurować w systemie Microsoft Dynamics 365 Supply Chain Management.
 author: Weijiesa
 ms.date: 04/05/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-04-05
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: a6e05ea7534ee081778a899d5956e6ca7cd104cb
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 9ab05e1bc5d0ae2c8b5d98dda32660d2436676e9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678074"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857207"
 ---
 # <a name="less-than-truckload-ltl-classes"></a>Klasy ładunków częściowych (LTL)
 
@@ -33,7 +33,7 @@ Ta funkcja pozwala wykonać następujące zadania w systemie:
 - Określanie wymagań dotyczących pakowania klas LTL na podstawie międzynarodowych standardów LTL. W ten sposób zapewniasz, że twoje produkty będą dobrze chronione i na pewno zostaną wysłane.
 - Dokładne szacowane kosztów wysyłki oparte na klasie frachtu LTL produktu.
 
-W tym temacie opisano, jak tworzyć klasy LTL w systemie Microsoft Dynamics 365 Supply Chain Management.
+W tym artykule opisano, jak tworzyć klasy LTL w systemie Microsoft Dynamics 365 Supply Chain Management.
 
 ## <a name="create-an-ltl-class"></a>Tworzenie klasy LTL
 

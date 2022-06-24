@@ -1,6 +1,6 @@
 ---
 title: Synchronizowanie zleceń pracy w rozwiązaniu Field Service z zamówieniami sprzedaży w rozwiązaniu Supply Chain Management
-description: W tym temacie omówiono szablony i podstawowe zadania, które są używane do synchronizowania zleceń pracy w aplikacji Field Service ze zleceniami pracy w Supply Chain Management.
+description: W tym artykule omówiono szablony i podstawowe zadania, które są używane do synchronizowania zleceń pracy w aplikacji Field Service ze zleceniami pracy w Supply Chain Management.
 author: Henrikan
 ms.date: 04/09/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: b7b311701aff12d58392fc036d0f1174678b7dc3
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: e64c9a954e8f5c4410f8ba370b40b7c6e76e8ae0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061316"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860530"
 ---
 # <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>Synchronizowanie zleceń pracy w rozwiązaniu Field Service z zamówieniami sprzedaży w rozwiązaniu Supply Chain Management
 
@@ -29,7 +29,7 @@ ms.locfileid: "8061316"
 
 
 
-W tym temacie omówiono szablony i podstawowe zadania, które są używane do synchronizowania zleceń w Dynamics 365 Field Service z zamówieniami sprzedaży w Dynamics 365 Supply Chain Management.
+W tym artykule omówiono szablony i podstawowe zadania, które są używane do synchronizowania zleceń w Dynamics 365 Field Service z zamówieniami sprzedaży w Dynamics 365 Supply Chain Management.
 
 [![Synchronizacja procesów biznesowych między rozwiązaniami Supply Chain Management i Field Service.](./media/field-service-integration.png)](./media/field-service-integration.png)
 
@@ -165,7 +165,7 @@ Aby w programie Supply Chain Management śledzić zamówienia sprzedaży pochodz
 
 Domyślnie mapowanie wybiera pochodzenie sprzedaży o typie pochodzenia **Integracja zlecenia** dla wszystkich zamówień sprzedaży tworzonych na podstawie zleceń pracy. To zachowanie może być przydatne, gdy pracujesz z zamówieniami sprzedaży w programie Supply Chain Management. Należy się upewnić, że zamówienia sprzedaży pochodzące ze zleceń pracy nie są synchronizowane z powrotem z programem Field Service jako zlecenia pracy.
 
-Aby uzyskać szczegółowe informacje o prawidłowym konfigurowaniu pochodzenia sprzedaży w aplikacji Supply Chain Management, zobacz rozdział „Warunki wstępne i ustawienia mapowania” w tym temacie.
+Aby uzyskać szczegółowe informacje o prawidłowym konfigurowaniu pochodzenia sprzedaży w aplikacji Supply Chain Management, zobacz rozdział „Warunki wstępne i ustawienia mapowania” w tym artykule.
 
 ### <a name="status"></a>Stan
 

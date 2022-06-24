@@ -1,6 +1,6 @@
 ---
 title: Planowanie lokalnego planu kont
-description: Ten temat zawiera informacje, które pomogą zaplanować plan kont, gdy są spełnione ustawowe/lokalne wymagania dotyczące organizacji.
+description: Ten artykuł zawiera informacje, które pomogą zaplanować plan kont, gdy są spełnione ustawowe/lokalne wymagania dotyczące organizacji.
 author: VeselinaE
 ms.date: 10/07/2021
 ms.topic: article
@@ -10,7 +10,7 @@ ms.search.form: DimensionConfigureAccountStructure, LedgerChartOfAccounts, Ledge
 ROBOTS: ''
 audience: Application User
 ms.devlang: ''
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.tgt_pltfrm: ''
 ms.custom: 14051
 ms.assetid: 10edb129-33f0-4cf9-b2a7-4b7ffa09b229
@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: veneva
 ms.search.validFrom: 10/07/2021
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e224a2e24b4ba293c953c6c883307038128e2f04
-ms.sourcegitcommit: ba10ba2cd4fb4267afb5aacae4f6a52aa2456e7e
+ms.openlocfilehash: 78379fd51cf24985fce83e2b6aa9a475af7df363
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "7798303"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946253"
 ---
 # <a name="plan-your-local-chart-of-accounts"></a>Planowanie lokalnego planu kont
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje, które pomogą zaplanować plan kont, gdy organizacja obejmuje firmy, które muszą spełniać wymagania określone w określonych lokalizacjach, w których prowadzą działalność. W tym temacie przedstawiono następujące terminy opisujące plan kont:
+Ten artykuł zawiera informacje, które pomogą zaplanować plan kont, gdy organizacja obejmuje firmy, które muszą spełniać wymagania określone w określonych lokalizacjach, w których prowadzą działalność. W tym artykule przedstawiono następujące terminy opisujące plan kont:
 
 - **Globalny** — plan kont, który jest używany globalnie przez organizację. W większości przypadków skonsolidujesz z tym planem kont.
 - **Lokalny** — plan kont, którego używają firmy w konkretnym kraju lub regionie.

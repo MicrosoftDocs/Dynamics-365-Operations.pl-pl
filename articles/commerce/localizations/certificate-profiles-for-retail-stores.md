@@ -1,6 +1,6 @@
 ---
 title: Profile certyfikatów zdefiniowane przez użytkownika dla sklepów detalicznych
-description: Ten temat zawiera omówienie sposobu używania certyfikatów w sklepach detalicznych.
+description: Ten artykuł zawiera omówienie sposobu używania certyfikatów w sklepach detalicznych.
 author: josaw
 ms.date: 10/09/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9cb82a6d6336bb69fe818fb33e04ad621382b383055b24a4e79eee5ddff217ac
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1b40c74efa56a6e18af907e000554b9ab269bb31
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719937"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873036"
 ---
 # <a name="user-defined-certificate-profiles-for-retail-stores"></a>Profile certyfikatów zdefiniowane przez użytkownika dla sklepów detalicznych
 
@@ -28,7 +28,7 @@ ms.locfileid: "6719937"
 
 ## <a name="overview"></a>Omówienie
 
-Ten temat zawiera omówienie funkcji profili certyfikatów dostępnych w programie Microsoft Dynamics 365 Commerce. Ta funkcja rozszerza funkcję [zarządzania wpisami tajnymi dla kanałów detalicznych](../dev-itpro/manage-secrets.md), dodając obsługę certyfikatów lokalnych.
+Ten artykuł zawiera omówienie funkcji profili certyfikatów dostępnych w programie Microsoft Dynamics 365 Commerce. Ta funkcja rozszerza funkcję [zarządzania wpisami tajnymi dla kanałów detalicznych](../dev-itpro/manage-secrets.md), dodając obsługę certyfikatów lokalnych.
 
 Gdy punkt sprzedaży (POS) działa w trybie offline, nie może uzyskać dostępu do certyfikatów przechowywanych w magazynie kluczy. Zamiast tego należy użyć certyfikatu lokalnego. Obsługiwane są następujące możliwości:
 

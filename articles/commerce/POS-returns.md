@@ -1,6 +1,6 @@
 ---
 title: Tworzenie zwrotów w POS
-description: W tym temacie opisano sposób inicjowania zwrotów dla transakcji cash-and-carry lub zamówień klientów w aplikacji Point of Sale (POS) Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano sposób inicjowania zwrotów dla transakcji cash-and-carry lub zamówień klientów w aplikacji Point of Sale (POS) Microsoft Dynamics 365 Commerce.
 author: hhainesms
 ms.date: 04/27/2022
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.20
-ms.openlocfilehash: c8e06c0d83e3bc2f5efea1e3a8124c700706aa2e
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.openlocfilehash: a49e9abd0143d480cc1cafb05be5e995fb3cebdd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8648995"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857005"
 ---
 # <a name="create-returns-in-pos"></a>Tworzenie zwrotów w POS
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano sposób inicjowania zwrotów dla transakcji cash-and-carry lub zamówień klientów w aplikacji Point of Sale (POS) Microsoft Dynamics 365 Commerce.
+W tym artykule opisano sposób inicjowania zwrotów dla transakcji cash-and-carry lub zamówień klientów w aplikacji Point of Sale (POS) Microsoft Dynamics 365 Commerce.
 
 > [!NOTE]
 > W wersji Commerce 10.0.20 i nowszych dostępna jest nowa funkcja, która nazywa się **Doświadczenie w przetwarzaniu zwrotów zunifikowanych w POS**. Funkcja ta zapewnia bardziej spójny i jednolity proces zwrotu w POS, niezależnie od typu transakcji (transakcja cash-and-carry lub zamówienie klienta) lub oryginalnego kanału, w którym zamówienie zostało utworzone. Zalecamy, aby wszystkie organizacje włączyły tę nową funkcję w celu poprawy ogólnej niezawodności przetwarzania zwrotów przez POS.

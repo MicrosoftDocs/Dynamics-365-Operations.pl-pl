@@ -1,6 +1,6 @@
 ---
 title: Zarządzanie użytkownikami portalu współpracy z dostawcami
-description: W tym temacie opisano sposoby wnioskowania o zainicjowanie obsługi nowych użytkowników i dodawania nowych osób kontaktowych w portalu współpracy z dostawcami.
+description: W tym artykule opisano sposoby wnioskowania o zainicjowanie obsługi nowych użytkowników i dodawania nowych osób kontaktowych w portalu współpracy z dostawcami.
 author: GalynaFedorova
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 515d995641f5bbe976643a38c26a46f7d8a115dd
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 823e92cadc36659264a70132ed1390c7bcf8bc5d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678835"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852310"
 ---
 # <a name="manage-vendor-collaboration-users"></a>Zarządzanie użytkownikami portalu współpracy z dostawcami
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposoby wnioskowania o zainicjowanie obsługi nowych użytkowników i dodawania nowych osób kontaktowych w portalu współpracy z dostawcami. 
+W tym artykule opisano sposoby wnioskowania o zainicjowanie obsługi nowych użytkowników i dodawania nowych osób kontaktowych w portalu współpracy z dostawcami. 
 
-Interfejs współpracy z dostawcami w Dynamics 365 Supply Chain Management udostępnia dostawcom zewnętrznym informacje o zamówieniach zakupu, fakturach i zapasach konsygnacyjnych. Można tworzyć nowe osoby kontaktowe w portalu współpracy z dostawcami i wnioskować o zainicjowanie obsługi nowych użytkowników, jeżeli pracujesz jako zewnętrzny dostawca z rolą zabezpieczeń **Administrator dostawcy (zewnętrzny)** lub podobnymi uprawnieniami. Te zadania można również wykonać podczas pracy jako pracownik działu zaopatrzenia. W tym temacie ta rola odnosi się do pracownika działu zaopatrzenia, który pracuje w firmie będącej właścicielem wystąpienia Supply Chain Management. Aby uzyskać więcej informacji na temat używania portalu współpracy z dostawcami przez zewnętrznego dostawcę, zobacz [Współpraca z odbiorcami przy użyciu modułu Współpraca z dostawcami](vendor-collaboration-work-customers-dynamics-365-operations.md).  
+Interfejs współpracy z dostawcami w Dynamics 365 Supply Chain Management udostępnia dostawcom zewnętrznym informacje o zamówieniach zakupu, fakturach i zapasach konsygnacyjnych. Można tworzyć nowe osoby kontaktowe w portalu współpracy z dostawcami i wnioskować o zainicjowanie obsługi nowych użytkowników, jeżeli pracujesz jako zewnętrzny dostawca z rolą zabezpieczeń **Administrator dostawcy (zewnętrzny)** lub podobnymi uprawnieniami. Te zadania można również wykonać podczas pracy jako pracownik działu zaopatrzenia. W tym artykule ta rola odnosi się do pracownika działu zaopatrzenia, który pracuje w firmie będącej właścicielem wystąpienia Supply Chain Management. Aby uzyskać więcej informacji na temat używania portalu współpracy z dostawcami przez zewnętrznego dostawcę, zobacz [Współpraca z odbiorcami przy użyciu modułu Współpraca z dostawcami](vendor-collaboration-work-customers-dynamics-365-operations.md).  
 
 Aby uzyskać więcej informacji na temat używania portalu współpracy z dostawcami przez pracownika działu zaopatrzenia, zobacz [Współpraca z zewnętrznymi dostawcami](vendor-collaboration-work-external-vendors.md).
 

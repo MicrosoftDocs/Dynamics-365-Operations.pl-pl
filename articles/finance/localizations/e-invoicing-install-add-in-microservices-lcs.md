@@ -1,6 +1,6 @@
 ---
-title: Zainstaluj dodatek dla mikrousług w Lifecycle Services
-description: W tym temacie wyjaśniono, jak zainstalować dodatek fakturowania elektronicznego w Microsoft Dynamics Lifecycle Services (LCS).
+title: Instalacja dodatku dla mikrousług w usłudze Lifecycle Services
+description: W tym artykule wyjaśniono, jak zainstalować dodatek fakturowania elektronicznego w Microsoft Dynamics Lifecycle Services (LCS).
 author: dkalyuzh
 ms.date: 02/11/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a575f3e26489607dc2143ba05c941240969a0feb
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 26f92262eff07ded3e894ee5513dd8dbaa6f94a4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371843"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849813"
 ---
 # <a name="install-the-add-in-for-microservices-in-lifecycle-services"></a>Zainstaluj dodatek dla mikrousług w Lifecycle Services
 

@@ -1,6 +1,6 @@
 ---
 title: Odroczone przetwarzanie ręcznego przesunięcia magazynowego
-description: W tym temacie opisano sposób użycia odroczonego przetwarzania ręcznego przesunięcia magazynowego w systemie Microsoft Dynamics 365 Supply Chain Management.
+description: W tym artykule opisano sposób użycia odroczonego przetwarzania ręcznego przesunięcia magazynowego w systemie Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
 ms.date: 04/27/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-27
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c2e7296d77332b665e5d618d39804216f4347ca2
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 5e5d0a93a4c628d4867161d082b0f0e177ddb95c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670476"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863745"
 ---
 # <a name="deferred-processing-of-manual-inventory-movement"></a>Odroczone przetwarzanie ręcznego przesunięcia magazynowego
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób użycia odroczonego przetwarzania ręcznego przesunięcia magazynowego w systemie Microsoft Dynamics 365 Supply Chain Management.
+W tym artykule opisano sposób użycia odroczonego przetwarzania ręcznego przesunięcia magazynowego w systemie Microsoft Dynamics 365 Supply Chain Management.
 
 Odroczone przetwarzania umożliwia pracownikom magazynu kontynuowanie innych prac podczas przetwarzania operacji odłożenia w tle. Odroczone przetwarzanie jest przydatne, kiedy na serwer zdarzają się nieplanowane wydłużenia czasu przetwarzania, a zwiększony czas przetwarzania może wpłynąć na produktywność pracownika. Typ pracy *Przesunięcie magazynowe* został dodany do zestawu typów pracy, które obsługuje ta funkcja.
 

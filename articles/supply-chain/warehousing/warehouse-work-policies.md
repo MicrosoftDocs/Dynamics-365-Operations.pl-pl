@@ -1,6 +1,6 @@
 ---
 title: Zasady pracy
-description: W tym temacie opisano sposób konfigurowania zasad pracy.
+description: W tym artykule opisano sposób konfigurowania zasad pracy.
 author: perlynne
 ms.date: 07/31/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 1d4ee3f1bffaf00c20758f6a3f399451d3122291
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 7637ef908ffa6e79f81e4ecfb8afac4e3e3fed26
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571168"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855856"
 ---
 # <a name="work-policies"></a>Zasady pracy
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak skonfigurować system i aplikację Warehouse Management, tak aby obsługiwała ona zasady pracy. Funkcji tej można używać do szybkiego rejestrowania zapasów bez tworzenia odkładów w przypadku przyjmowania zamówień zakupu lub przenoszenia lub podczas kończenia procesów produkcyjnych. Ten temat zawiera ogólne informacje. Aby uzyskać szczegółowe informacje związane z otrzymywaniem numeru identyfikacyjnego, zobacz [Odbieranie numerów identyfikacyjnych za pomocą aplikacji Warehouse Management](warehousing-mobile-device-app-license-plate-receiving.md).
+W tym artykule wyjaśniono, jak skonfigurować system i aplikację Warehouse Management, tak aby obsługiwała ona zasady pracy. Funkcji tej można używać do szybkiego rejestrowania zapasów bez tworzenia odkładów w przypadku przyjmowania zamówień zakupu lub przenoszenia lub podczas kończenia procesów produkcyjnych. Ten artykuł zawiera ogólne informacje. Aby uzyskać szczegółowe informacje związane z otrzymywaniem numeru identyfikacyjnego, zobacz [Odbieranie numerów identyfikacyjnych za pomocą aplikacji Warehouse Management](warehousing-mobile-device-app-license-plate-receiving.md).
 
 Zasady pracy kontrolują, czy praca magazynowa jest tworzona, gdy wyprodukowany towar jest raportowany jako gotowy, czy gdy towary są przyjmowane za pomocą aplikacji Warehouse Management. Poszczególne zasady pracy definiuje się, definiując warunki ich zastosowania: typy i procesy zlecenia produkcyjnego, lokalizacja magazynu oraz (opcjonalnie) produkty. Na przykład zamówienie zakupu dotyczące produktu *A0001* musi zostać odebrane w lokalizacji *RECV* w magazynie *24*. Później produkt jest zużywany w innym procesie w lokalizacji *RECV*. W takim przypadku można skonfigurować zasady pracy, aby zapobiec tworzeniu pracy odkładanej, gdy pracownik zgłasza produkt *A0001* otrzymany w lokalizacji *RECV*.
 
@@ -35,7 +35,7 @@ Zasady pracy kontrolują, czy praca magazynowa jest tworzona, gdy wyprodukowany 
 
 ## <a name="activate-the-features-in-your-system"></a>Aktywuj funkcje w systemie
 
-Aby wszystkie funkcje opisane w tym temacie były dostępne w systemie, włącz następujące dwie funkcje w [Zarządzaniu funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Aby wszystkie funkcje opisane w tym artykule były dostępne w systemie, włącz następujące dwie funkcje w [Zarządzaniu funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - Ulepszenia przyjmowania numeru identyfikacyjnego
 - Usprawnienia zasad pracy dla pracy przychodzącej

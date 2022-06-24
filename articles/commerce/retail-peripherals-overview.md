@@ -1,6 +1,6 @@
 ---
 title: Urządzenia peryferyjne
-description: W tym temacie wyjaśniono pojęcia, które są związane z urządzenia peryferyjnymi Commerce.
+description: W tym artykule wyjaśniono pojęcia, które są związane z urządzenia peryferyjnymi Commerce.
 author: BrianShook
 ms.date: 03/01/2022
 ms.topic: article
@@ -12,18 +12,18 @@ ms.custom:
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 76ce17777a2d13b46e5faed96dbde5e0d93782eb
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 641b45390477c8c5e6239709f7c91887a403fbaf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462248"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880088"
 ---
 # <a name="peripherals"></a>Urządzenia peryferyjne
 
 [!include[banner](includes/banner.md)]
 
-W tym temacie wyjaśniono pojęcia, które są związane z urządzeniami peryferyjnymi sklepu. Opisano różne sposoby podłączania urządzeń peryferyjnych do punktu sprzedaży (POS) oraz składniki, które są odpowiedzialne za zarządzanie połączeniem z punktem sprzedaży.
+W tym artykule wyjaśniono pojęcia, które są związane z urządzeniami peryferyjnymi sklepu. Opisano różne sposoby podłączania urządzeń peryferyjnych do punktu sprzedaży (POS) oraz składniki, które są odpowiedzialne za zarządzanie połączeniem z punktem sprzedaży.
 
 ## <a name="concepts"></a>Koncepcje
 
@@ -55,7 +55,7 @@ Modern POS for Android jest wersją programu Modern POS przeznaczoną dla system
 
 ### <a name="pos-peripherals"></a>Urządzenia peryferyjne punktu sprzedaży
 
-Urządzenia peryferyjne punktu sprzedaży to urządzenia, które wspierają funkcje punktu sprzedaży. Te urządzenia peryferyjne są zwykle podzielone na określone klasy. Aby uzyskać więcej informacji na temat tych klas, zobacz sekcję „Klasy urządzeń” w tym temacie.
+Urządzenia peryferyjne punktu sprzedaży to urządzenia, które wspierają funkcje punktu sprzedaży. Te urządzenia peryferyjne są zwykle podzielone na określone klasy. Aby uzyskać więcej informacji na temat tych klas, zobacz sekcję „Klasy urządzeń” w tym artykule.
 
 ### <a name="hardware-station"></a>Stacja sprzętowa
 

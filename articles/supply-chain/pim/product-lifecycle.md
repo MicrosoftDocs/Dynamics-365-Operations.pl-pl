@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: f71ce701adbe60b69b25e41810dda7adeec1d390
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 5d1ea1517c75393b1c8d7c95c8aa2405042b4532
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983801"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850649"
 ---
 # <a name="product-lifecycle-state-overview"></a>Omówienie stanów cyklu życia produktu
 
@@ -74,7 +74,7 @@ Stany cyklu życia produktu są obsługiwane przez jednostki danych, a stan cykl
 
 ## <a name="find-obsolete-products-and-products-variants"></a>Znajdowanie przestarzałych produktów i wariantów produktów
 
-Aby znaleźć przestarzałe zwolnione produkty lub warianty produktów można uruchomić symulację, a następnie zaktualizować ich stan cyklu życia produktu. Aby znaleźć przestarzałe produkty, zobacz [Znajdowanie wariantów przestarzałych produktów i przypisywanie stanu cyklu życia produktu](tasks/obsolete-product-variants.md). Ten temat przedstawia, jak znaleźć przestarzałe zwolnione produkty lub warianty produktów i skojarzyć stan cyklu życia produktu z przestarzałymi produktami. Pokazuje także, jak wyświetlić wyniki symulacji i ocenić, ile produktów i wariantów produktów będzie skojarzonych z nowym stanem cyklu życia produktu po uruchomieniu aktualizacji bez symulacji.  
+Aby znaleźć przestarzałe zwolnione produkty lub warianty produktów można uruchomić symulację, a następnie zaktualizować ich stan cyklu życia produktu. Aby znaleźć przestarzałe produkty, zobacz [Znajdowanie wariantów przestarzałych produktów i przypisywanie stanu cyklu życia produktu](tasks/obsolete-product-variants.md). Ten artykuł przedstawia, jak znaleźć przestarzałe zwolnione produkty lub warianty produktów i skojarzyć stan cyklu życia produktu z przestarzałymi produktami. Pokazuje także, jak wyświetlić wyniki symulacji i ocenić, ile produktów i wariantów produktów będzie skojarzonych z nowym stanem cyklu życia produktu po uruchomieniu aktualizacji bez symulacji.  
 
 Po uruchomieniu analizy w trybie symulacji produkty i warianty produktów określone jako przestarzałe są wyświetlane w określonej formie, w której można je łatwo przejrzeć. Analiza wyszukuje transakcje i określone dane główne w celu identyfikacji produktów, na które nie ma popytu w zmiennym okresie ani danych głównych, które mogą powodować popyt. Nowe zwolnione produkty w zmiennym okresie można wykluczyć z analizy. Gdy analiza zwróci oczekiwany wynik, użytkownik może uruchomić analizę i ustawić nowy stan cyklu życia produktu dla wszystkich produktów określonych w analizie jako przestarzałe.  
 
@@ -97,7 +97,7 @@ W celu wybrania i aktualizacji zwolnionych produktów i wariantów produktów na
 - Brak wierszy aktywnej lub przyszłej umowy sprzedaży lub zakupu dla produktu lub wariantu produktu.
 - Produkt lub wariant produktu nie jest używany w BOM skojarzonym w niewygasłej zatwierdzonej wersji BOM dla produktu lub wariantu aktywnego dla planowania.
 
-## <a name="related-topics"></a>Powiązane tematy
+## <a name="related-articles"></a>Powiązane artykuły
 
 - [Tworzenie nowego stanu cyklu życia produktu](tasks/new-product-lifecycle-state.md)
 - [Tworzenie domyślnego stanu cyklu życia produktu](tasks/default-product-lifecycle-state.md)

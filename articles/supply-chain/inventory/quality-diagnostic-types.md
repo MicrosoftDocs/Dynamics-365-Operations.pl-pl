@@ -1,6 +1,6 @@
 ---
 title: Typy diagnostyki niezgodności
-description: W tym temacie opisano sposób tworzenia i używania typów diagnostyki, które mogą być używane z niezgodnościami.
+description: W tym artykule opisano sposób tworzenia i używania typów diagnostyki, które mogą być używane z niezgodnościami.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: edaa3a8b5c6446f039f33589166d832dcd9d0b9a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 87b7a051f807c9faab3169d2672d47f663892225
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580943"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852455"
 ---
 # <a name="diagnostic-types-for-nonconformances"></a>Typy diagnostyki niezgodności
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób tworzenia i używania typów diagnostyki, które mogą być używane z niezgodnościami.
+W tym artykule opisano sposób tworzenia i używania typów diagnostyki, które mogą być używane z niezgodnościami.
 
 Strona **Typy diagnostyki** służy do definiowania klasyfikacji akcji diagnostycznych. Następnie podczas tworzenia korekty niezgodności należy wybrać diagnostykę. Korekta określa jakiego rodzaju działania diagnostyczne należy podjąć w przypadku zatwierdzonej niezgodności, a także osobę, która ma to działanie wykonać. Określa również żądaną datę ukończenia żądania planowaną datę ukończenia.
 

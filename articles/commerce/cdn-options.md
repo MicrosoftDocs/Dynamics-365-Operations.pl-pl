@@ -1,6 +1,6 @@
 ---
 title: Opcje implementacji sieci dostarczania zawartości
-description: W tym temacie przeglądane są różne opcje implementacji sieci dostarczania zawartości (CDN), które mogą być używane w środowiskach Microsoft Dynamics 365 Commerce. Te opcje obejmują natywne wystąpieni Azure Front Door dostarczone w ramach handlu oraz wystąpienia Azure Front Door należące do odbiorcy.
+description: W tym artykule przeglądane są różne opcje implementacji sieci dostarczania zawartości (CDN), które mogą być używane w środowiskach Microsoft Dynamics 365 Commerce. Te opcje obejmują natywne wystąpieni Azure Front Door dostarczone w ramach handlu oraz wystąpienia Azure Front Door należące do odbiorcy.
 author: BrianShook
 ms.date: 07/22/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 944123f3afe1c869c262da3997a73d8c60bbc366
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: a63751d42ab98610904191f1c09794b2311b0189
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692732"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884424"
 ---
 # <a name="content-delivery-network-implementation-options"></a>Opcje implementacji sieci dostarczania zawartości
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie przeglądane są różne opcje implementacji sieci dostarczania zawartości (CDN), które mogą być używane w środowiskach Microsoft Dynamics 365 Commerce. Te opcje obejmują natywne wystąpieni Azure Front Door dostarczone w ramach handlu oraz wystąpienia Azure Front Door należące do odbiorcy.
+W tym artykule przeglądane są różne opcje implementacji sieci dostarczania zawartości (CDN), które mogą być używane w środowiskach Microsoft Dynamics 365 Commerce. Te opcje obejmują natywne wystąpieni Azure Front Door dostarczone w ramach handlu oraz wystąpienia Azure Front Door należące do odbiorcy.
 
 Odbiorcy handlowi mają kilka opcji, jeśli są pod uwagę, która usługa CDN ma być używać w swoim środowisku Commerce. Usługa Commerce jest zwolniona z podstawową obsługą Azure Front Door, która obejmuje podstawowe wymagania dotyczące obsługi i niestandardowych domen. W przypadku firm, które chcą mieć większą kontrolę i bardziej szczegółowe funkcje zabezpieczeń, takie jak zapora aplikacji sieci Web (WAF), najlepszą opcją może być użycie należącego do klienta wystąpienia usługi Azure Front Door lub zewnętrznej usługi CDN.
 

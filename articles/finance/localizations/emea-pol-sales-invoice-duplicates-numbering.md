@@ -1,6 +1,6 @@
 ---
 title: Numerowanie duplikatów faktur sprzedaży dla Polski
-description: Firmom w Polsce funkcja numerowania duplikatów faktur sprzedaży pozwala identyfikować i śledzić powtarzające się faktury sprzedaży. Ten temat zawiera informacje o funkcji numerowania duplikatów faktur sprzedaży oraz wyjaśnienia, jak utworzyć duplikat faktury, usunąć duplikat faktury i wydrukować kopię duplikatu faktury.
+description: Firmom w Polsce funkcja numerowania duplikatów faktur sprzedaży pozwala identyfikować i śledzić powtarzające się faktury sprzedaży. Ten artykuł zawiera informacje o funkcji numerowania duplikatów faktur sprzedaży oraz wyjaśnienia, jak utworzyć duplikat faktury, usunąć duplikat faktury i wydrukować kopię duplikatu faktury.
 author: ShylaThompson
 ms.date: 06/20/2017
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Poland
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: dd79bd89ead910c4a006da2b3fe74634813a960d933d0c25afd453a047475913
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3bb88a51988ec19ec0496c8db825e5ba1e7cb2af
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713121"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874345"
 ---
 # <a name="duplicate-sales-invoice-numbering-for-poland"></a>Numerowanie duplikatów faktur sprzedaży dla Polski
 
 [!include [banner](../includes/banner.md)]
 
-Firmom w Polsce funkcja numerowania duplikatów faktur sprzedaży pozwala identyfikować i śledzić powtarzające się faktury sprzedaży. Ten temat zawiera informacje o funkcji numerowania duplikatów faktur sprzedaży oraz wyjaśnienia, jak utworzyć duplikat faktury, usunąć duplikat faktury i wydrukować kopię duplikatu faktury.
+Firmom w Polsce funkcja numerowania duplikatów faktur sprzedaży pozwala identyfikować i śledzić powtarzające się faktury sprzedaży. Ten artykuł zawiera informacje o funkcji numerowania duplikatów faktur sprzedaży oraz wyjaśnienia, jak utworzyć duplikat faktury, usunąć duplikat faktury i wydrukować kopię duplikatu faktury.
 
 Firmom w Polsce funkcja numerowania duplikatów faktur sprzedaży pozwala identyfikować duplikaty faktur sprzedaży, a także śledzić numery i daty duplikatów faktur oraz użytkowników, którzy utworzyli duplikaty faktur. Użytkownicy mogą również usuwać duplikaty faktur lub drukować ich kopie. Wydrukowana kopia wskazuje, że faktura jest duplikatem. Aby utworzyć duplikat faktury, na stronie **Arkusz faktur** zaznacz żądaną fakturę, a następnie kliknij przycisk **Duplikuj**. Na stronie **Duplikat** kliknij przycisk **Nowy**, a zostanie utworzony duplikat wybranej faktury. Po utworzeniu duplikatu faktury wypełnij poniższe pola.
 

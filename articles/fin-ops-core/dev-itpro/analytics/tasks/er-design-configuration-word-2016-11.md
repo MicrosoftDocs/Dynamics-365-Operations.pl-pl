@@ -1,6 +1,6 @@
 ---
 title: Ponowne używanie konfiguracji ER z szablonami programu Excel do generowania raportów w formacie programu Word
-description: W tym temacie opisano sposób konfigurowania formatów raportów zaprojektowanych do generowania raportów jako skoroszytów programu Excel, tak aby raporty były generowane jako dokumenty programu Word.
+description: W tym artykule opisano sposób konfigurowania formatów raportów zaprojektowanych do generowania raportów jako skoroszytów programu Excel, tak aby raporty były generowane jako dokumenty programu Word.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: de8286c7612cd588b28cf4667340374906962dde
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 1e0fe9ba55be435fb214c9d0885dd4ef942f5081
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324069"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910394"
 ---
 # <a name="reuse-er-configurations-with-excel-templates-to-generate-reports-in-word-format"></a>Ponowne używanie konfiguracji ER z szablonami programu Excel do generowania raportów w formacie programu Word
 
@@ -43,7 +43,7 @@ Te procedury mają być stosowane w przypadku funkcji dodanej w aplikacji Dynami
 
 ## <a name="select-the-existing-er-report-configuration"></a>Zaznaczenie istniejącej konfiguracji raportu ER
 
-1. W aplikacji Dynamics 365 Finance wybierz kolejno opcje **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
+1. W aplikacji Dynamics 365 Finance przejdź do obszaru **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
 2. Upewnij się, że dostawca konfiguracji **Litware, Inc.** jest oznaczony jako **Aktywny**. Jeśli nie, wykonaj kroki opisane w przewodniku zadania [Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych](er-configuration-provider-mark-it-active-2016-11.md).
 3. Wybierz **Raportowanie konfiguracji**. Ponownie wykorzystasz istniejącą konfigurację ER, który została pierwotnie zaprojektowana do generowania danych wyjściowych raportu w formacie OPENXML.
 4. Na stronie **Konfiguracje** w drzewie konfiguracji w okienku po lewej wybierz pozycję **Model płatności**, a potem wybierz **Przykładowy raport arkusza**.

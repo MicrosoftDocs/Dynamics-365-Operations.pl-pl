@@ -1,6 +1,6 @@
 ---
 title: Alokacja grupy czynności
-description: W tym temacie opisano sposób skonfigurowania kroku alokacji grupy czynności, w tym włączenia dla niego przetwarzania równoległego.
+description: W tym artykule opisano sposób skonfigurowania kroku alokacji grupy czynności, w tym włączenia dla niego przetwarzania równoległego.
 author: Mirzaab
 ms.date: 03/08/2021
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 08781b26a4e066a026d4efa14670f073b04ec185
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c6b89364afd57b9c4b4413d0319b86e725433594
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695543"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906959"
 ---
 # <a name="wave-allocation"></a>Alokacja grupy czynności
 
@@ -25,7 +25,7 @@ ms.locfileid: "8695543"
 
 Przetwarzanie grupy czynności może być czasochłonne, a większość czasu przetwarzania jest zużywana na etapie alokacji i w kroku tworzenia pracy.
 
-Teraz można uruchomić każdy z tych kroków równolegle, co może poprawić wydajność przetwarzania grupy czynności i umożliwić większą przepustowość grupy czynności w tym samym magazynie. W tym temacie opisano, jak skonfigurować metodę alokacji grupy czynności, która będzie uruchamiana równolegle. Aby uzyskać więcej informacji dotyczących tego, jak skonfigurować tworzenie pracy w celu uruchomienia równoległego, zobacz temat [Planowanie tworzenia pracy podczas grupy czynności](configure-wave-schedule-work-creation.md)c
+Teraz można uruchomić każdy z tych kroków równolegle, co może poprawić wydajność przetwarzania grupy czynności i umożliwić większą przepustowość grupy czynności w tym samym magazynie. W tym artykule opisano, jak skonfigurować metodę alokacji grupy czynności, która będzie uruchamiana równolegle. Aby uzyskać więcej informacji dotyczących tego, jak skonfigurować tworzenie pracy w celu uruchomienia równoległego, zobacz temat [Planowanie tworzenia pracy podczas grupy czynności](configure-wave-schedule-work-creation.md)c
 
 Wcześniej można było alokować tylko jedną grupy czynności w magazynie na raz. To ograniczenie zostało usunięte i zastąpione przez nowe ograniczenie, które blokuje tylko pozycję i wymiary powyżej lokalizacji w hierarchii rezerwacji. Wymiary powyżej lokalizacji zawsze zawierają wymiary produktu. Jeśli na przykład towar jest skonfigurowany przy użyciu opcji *Kolor*, wówczas warianty *czerwony*, *niebieski* i *żółty* mogą być przetwarzane równolegle.
 

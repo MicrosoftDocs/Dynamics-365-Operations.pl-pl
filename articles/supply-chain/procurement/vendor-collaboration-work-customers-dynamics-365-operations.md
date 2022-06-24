@@ -1,6 +1,6 @@
 ---
-title: Współpraca z odbiorcami przy użyciu modułu Współpraca z dostawcami
-description: W tym temacie opisano używanie portalu współpracy z dostawcami w do pracy z zamówieniami zakupu i monitorowania zapasów konsygnacyjnych.
+title: Współpraca dostawców z odbiorcami
+description: W tym artykule opisano używanie portalu współpracy z dostawcami w do pracy z zamówieniami zakupu i monitorowania zapasów konsygnacyjnych.
 author: GalynaFedorova
 ms.date: 09/15/2020
 ms.topic: article
@@ -15,23 +15,23 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 5690630d4dde947798c925af66c73122c2efad3d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4e5748f2368376ee03f280f1487d1de65250d3a4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8673782"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859177"
 ---
-# <a name="vendor-collaboration-with-customers"></a>Współpraca z odbiorcami przy użyciu modułu Współpraca z dostawcami
+# <a name="vendor-collaboration-with-customers"></a>Współpraca dostawców z odbiorcami
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano używanie portalu współpracy z dostawcami do zarządzania współpracą z odbiorcami w Microsoft Dynamics 365 Supply Chain Management. Dostawcy mogą ukończyć szereg procesów biznesowych z następujących obszarów roboczych:
+W tym artykule opisano używanie portalu współpracy z dostawcami do zarządzania współpracą z odbiorcami w Microsoft Dynamics 365 Supply Chain Management. Dostawcy mogą ukończyć szereg procesów biznesowych z następujących obszarów roboczych:
 
 - **Potwierdzenie zamówienia zakupu** — monitorowanie i odpowiadanie na zamówienia zakupu.
 - **Składanie ofert przez dostawców** — wyświetlanie zapytań ofertowych (ZO) i odpowiadanie na nie przez wprowadzanie ofert.
 - **Informacje o dostawcy** — wyświetlanie i aktualizowanie danych głównych dostawcy.
-- **Fakturowanie** — praca z fakturami. Ten temat nie dotyczy obszaru roboczego **Fakturowanie**. Aby uzyskać więcej informacji o tym obszarze roboczym, zobacz [Obszar roboczy fakturowania w portalu współpracy z dostawcami](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md).
+- **Fakturowanie** — praca z fakturami. Ten artykuł nie dotyczy obszaru roboczego **Fakturowanie**. Aby uzyskać więcej informacji o tym obszarze roboczym, zobacz [Obszar roboczy fakturowania w portalu współpracy z dostawcami](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md).
 
 Dostawcy mogą także monitorować informacje o zapasach konsygnacyjnych.
 
@@ -47,9 +47,9 @@ W obszarze roboczym **Potwierdzenie zamówienia zakupu** istnieją trzy listy:
 
 Do pracy z zamówieniami zakupu można użyć następujących stron:
 
-- **Zamówienia zakupu do przeglądu** — ta strona zawiera te same informacje, co lista **Zamówienia zakupu do przeglądu** w obszarze roboczym. Zobacz opis we wcześniejszej części tego tematu.
+- **Zamówienia zakupu do przeglądu** — ta strona zawiera te same informacje, co lista **Zamówienia zakupu do przeglądu** w obszarze roboczym. Zobacz opis we wcześniejszej części tego artykułu.
 - **Historia potwierdzeń zamówień zakupu przez dostawcę** — ta strona zawiera wszystkie zamówienia zakupu i wszystkie ich wersje, które zostały wysłane do dostawcy. Zawiera także wszystkie odpowiedzi otrzymane od dostawcy.
-- **Otwarte potwierdzone zamówienia zakupu** Ta strona zawiera te same informacje, co lista **Otwarte potwierdzone zamówienie zakupu** w obszarze roboczym. Zobacz opis we wcześniejszej części tego tematu.
+- **Otwarte potwierdzone zamówienia zakupu** Ta strona zawiera te same informacje, co lista **Otwarte potwierdzone zamówienie zakupu** w obszarze roboczym. Zobacz opis we wcześniejszej części tego artykułu.
 - **Wszystkie potwierdzone zamówienia zakupu** — ta strona zawiera wszystkie zamówienia zakupu, które zostały potwierdzone. Zamówienia zakupu pokazane na tej stronie obejmują zamówienia zakupu, dla których odebrano produkty lub usługi. Ta lista może służyć do monitorowania, za które zamówienia zakupu można wysłać faktury.
 
 ### <a name="responding-to-pos"></a>Odpowiadanie na zamówienia zakupu

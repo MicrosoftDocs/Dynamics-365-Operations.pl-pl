@@ -1,6 +1,6 @@
 ---
 title: Definiowanie metody płatności odbiorcy
-description: W tym temacie wyjaśniono, jak można utworzyć metodę płatności dla płatności odbiorcy.
+description: W tym artykule wyjaśniono, jak można utworzyć metodę płatności dla płatności odbiorcy.
 author: ShivamPandey-msft
 ms.date: 07/31/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f9e8974ea20497124e24e95b3761317daf126839
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: f3843ce596d054263b69ccc577f3885970fe49d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713904"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861510"
 ---
 # <a name="establish-customer-method-of-payment"></a>Definiowanie metody płatności odbiorcy
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak można utworzyć metodę płatności dla płatności odbiorcy. W zadaniu wykorzystano firmę demonstracyjną USMF.
+W tym artykule wyjaśniono, jak można utworzyć metodę płatności dla płatności odbiorcy. W zadaniu wykorzystano firmę demonstracyjną USMF.
 
 1. W okienku nawigacji przejdź do **Moduły > Rozrachunki z odbiorcami > Ustawienia płatności > Metody płatności**.
 2. Wybierz pozycję **Nowy**.

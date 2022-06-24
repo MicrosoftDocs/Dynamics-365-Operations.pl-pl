@@ -1,6 +1,6 @@
 ---
 title: Tworzenie i przetwarzanie niezgodności
-description: Ten temat opisuje jak przeprowadzić zarządzanie niezgodnościami na podstawie istniejącego zlecenia kontroli jakości.
+description: Ten artykuł opisuje jak przeprowadzić zarządzanie niezgodnościami na podstawie istniejącego zlecenia kontroli jakości.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 032f5b712c2be5312524129cd25e655e778f5f44
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: dd8a10e88ab4d1be24a11739dddd7619b3fa6bbc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580871"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901974"
 ---
 # <a name="create-and-process-nonconformances"></a>Tworzenie i przetwarzanie niezgodności
 
 [!include [banner](../../includes/banner.md)]
 
-Ten temat opisuje jak przeprowadzić zarządzanie niezgodnościami na podstawie istniejącego zlecenia kontroli jakości. Zazwyczaj zarządzanie niezgodnościami jest wykonywane przez pracownika ds. kontroli jakości. Warunkiem wstępnym jest dostęp do zlecenia kontroli jakości. (Aby uzyskać informacje o tworzeniu zlecenia kontroli jakości, zobacz temat [Sprawdzanie jakości towarów](inspect-quality-goods.md)).
+Ten artykuł opisuje jak przeprowadzić zarządzanie niezgodnościami na podstawie istniejącego zlecenia kontroli jakości. Zazwyczaj zarządzanie niezgodnościami jest wykonywane przez pracownika ds. kontroli jakości. Warunkiem wstępnym jest dostęp do zlecenia kontroli jakości. (Aby uzyskać informacje o tworzeniu zlecenia kontroli jakości, zobacz temat [Sprawdzanie jakości towarów](inspect-quality-goods.md)).
 
 Aby użytkownik był w stanie przetworzyć zatwierdzenie niezgodności, musi być do niego przypisany pracownik w polu **Osoba** na stronie **Użytkownicy**. Ponadto, aby użytkownik mógł używać notatek do dokumentu, w polu **Włącz obsługę dokumentów** w jego opcjach użytkownika musi być ustawiona wartość *Tak*.
 

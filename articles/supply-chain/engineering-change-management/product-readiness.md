@@ -1,6 +1,6 @@
 ---
 title: Gotowość produktu
-description: W tym temacie wyjaśniono, w jaki sposób można używać sprawdzania gotowości, aby upewnić się, że wymagane dane podstawowe dla produktu zostały uzupełnione przed użyciem w transakcjach.
+description: W tym artykule wyjaśniono, w jaki sposób można używać sprawdzania gotowości, aby upewnić się, że wymagane dane podstawowe dla produktu zostały uzupełnione przed użyciem w transakcjach.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f7ab6165e85cd2b1165292b74cd036f1233b22b4
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: a8e76d5fc786b6f4cac7cd0430399ca3ad13a7bc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103020"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856230"
 ---
 # <a name="product-readiness"></a>Gotowość produktu
 
@@ -61,7 +61,7 @@ Jeśli dla produktu jest tworzona nowa *wersja* inżynieryjna, system sprawdza, 
 - Wersja inżynierii jest ustawiona jako nieaktywna, aby zablokować używanie produktu.
 
 > [!NOTE]
-> Można również skonfigurować zasady sprawdzania gotowości dla produktów standardowych (nie inżynierskich). Aby uzyskać więcej informacji, zobacz sekcję [Testy gotowości dla standardowych produktów](#standard-products) w dalszej części tego tematu.
+> Można również skonfigurować zasady sprawdzania gotowości dla produktów standardowych (nie inżynierskich). Aby uzyskać więcej informacji, zobacz sekcję [Testy gotowości dla standardowych produktów](#standard-products) w dalszej części tego artykułu.
 
 ## <a name="view-readiness-checks"></a>Wyświetlanie kontroli gotowości
 
@@ -151,7 +151,7 @@ Dla każdego dodawanego wiersza należy określić następujące pola:
 | Firma | Jeśli pole **Wykonaj w** jest ustawione na wartość *Pojedyncza firma*, należy wybrać firmę. |
 | Typ właściciela | Wybierz, czy kontrole gotowości generowane przez wiersz powinny być przypisane do osoby czy zespołu. |
 | Właściciel | Wybierz osobę lub zespół, do którego mają być przypisane kontrole gotowości generowane przez wiersz. |
-| Kwestionariusz | Umożliwia wybranie kwestionariusza, który ma być używany dla listy kontrolnej. Lista kontrolna jest lokalną listą kontrolną w firmie, w której jest wykonywane sprawdzanie gotowości. System musi być w stanie ocenić, czy na liście kontrolnej jest poprawnie udzielona odpowiedź. Dlatego należy skonfigurować listę kontrolną, aby ocena była przeprowadzana na podstawie prawidłowych odpowiedzi. Aby uzyskać więcej informacji na temat tworzenia kwestionariuszy, zobacz temat [Używanie kwestionariuszy](/dynamicsax-2012/appuser-itpro/using-questionnaires) i tematy pokrewne. |
+| Kwestionariusz | Umożliwia wybranie kwestionariusza, który ma być używany dla listy kontrolnej. Lista kontrolna jest lokalną listą kontrolną w firmie, w której jest wykonywane sprawdzanie gotowości. System musi być w stanie ocenić, czy na liście kontrolnej jest poprawnie udzielona odpowiedź. Dlatego należy skonfigurować listę kontrolną, aby ocena była przeprowadzana na podstawie prawidłowych odpowiedzi. Aby uzyskać więcej informacji na temat tworzenia kwestionariuszy, zobacz artykuł [Używanie kwestionariuszy](/dynamicsax-2012/appuser-itpro/using-questionnaires) i tematy pokrewne. |
 | Automatyczne zatwierdzanie | Rekordy kontroli gotowości zawierają pole wyboru **Zatwierdzona** wskazujące stan zatwierdzenia. Zaznacz pole wyboru **Automatyczne zatwierdzanie** dla kontroli, które mają zostać zatwierdzone natychmiast po zakończeniu przez przypisanego do nich użytkownika. Wyczyść to pole wyboru, aby wymagać wyraźnego zatwierdzenia jako dodatkowego kroku. |
 | Wymagany | Zaznacz to pole wyboru w przypadku kontroli, które musi wykonać przypisany użytkownik. Obowiązkowych kontroli nie można pominąć. |
 
@@ -159,7 +159,7 @@ Dla każdego dodawanego wiersza należy określić następujące pola:
 
 ## <a name="assign-readiness-policies-to-standard-and-engineering-products"></a>Przypisywanie zasad gotowości do produktów standardowych i inżynieryjnych
 
-Podczas tworzenia nowego produktu na podstawie kategorii inżynieryjnej jest tworzony zarówno *zwolniony produkt*, jak i powiązany *wspólny produkt*. Sposób, w jaki zasady gotowości są rozwiązywane dla zwolnionego produktu, zależy od tego, czy funkcja *Kontrola gotowości produktu* jest włączona w Twoim systemie (zobacz sekcję [Kontrole gotowości produktów standardowych](#standard-products) w dalszej części tego tematu aby uzyskać szczegółowe informacje na temat tej funkcji oraz sposobu jej włączania i wyłączania).
+Podczas tworzenia nowego produktu na podstawie kategorii inżynieryjnej jest tworzony zarówno *zwolniony produkt*, jak i powiązany *wspólny produkt*. Sposób, w jaki zasady gotowości są rozwiązywane dla zwolnionego produktu, zależy od tego, czy funkcja *Kontrola gotowości produktu* jest włączona w Twoim systemie (zobacz sekcję [Kontrole gotowości produktów standardowych](#standard-products) w dalszej części tego artykułu aby uzyskać szczegółowe informacje na temat tej funkcji oraz sposobu jej włączania i wyłączania).
 
 - Gdy funkcja *sprawdzania gotowości produktu* jest *wyłączona* w systemie, zasady gotowości są ustawiane i wyświetlane tylko w rekordach [kategorii inżynieryjnych](engineering-versions-product-category.md). Aby dowiedzieć się, które zasady dotyczą zwolnionego produktu, system sprawdza pole **Zasady gotowości produktu** dla powiązanej kategorii inżynieryjnej. Możesz zmienić zasady gotowości dla istniejącego produktu poprzez edycję powiązanej kategorii inżynieryjnej (nie współdzielonego produktu).
 - Gdy funkcja *sprawdzania gotowości produktu* jest *włączona*, powoduje ona dodanie pola **Zasady gotowości produktu** do strony **Produkt** (na której są ustawione wspólne produkty) oraz do strony **Zwolniony produkt** (na której wartość jest tylko do odczytu i jest łączona z powiązanego produktu udostępnionego). System znajduje politykę gotowości dla wydanego produktu poprzez sprawdzenie powiązanego z nim produktu współdzielonego. Gdy do utworzenia nowego produktu inżynieryjnego jest używana kategoria inżynieryjna, system tworzy zarówno wspólny produkt, jak i zwolniony produkt i kopiuje wszystkie ustawienia **zasad gotowości produktu** dla kategorii inżynieryjnej do nowego produktu udostępnionego. Następnie można zmienić politykę gotowości dla istniejącego produktu poprzez edycję powiązanego produktu współdzielonego (nie kategorii inżynierii zwolnionej).
@@ -188,14 +188,14 @@ Funkcja wymaga włączania w *systemie zarówno zarządzania zmianami inżyniery
 
 ### <a name="create-readiness-policies-for-standard-products"></a>Tworzenie zasad gotowości dla standardowych produktów
 
-Zasady gotowości dla produktów standardowych tworzyć można tak samo jak w przypadku tworzenia produktów. Zobacz informacje we wcześniejszej części tego tematu.
+Zasady gotowości dla produktów standardowych tworzyć można tak samo jak w przypadku tworzenia produktów. Zobacz informacje we wcześniejszej części tego artykułu.
 
 ### <a name="assign-readiness-policies-to-standard-products"></a>Przypisanie zasad gotowości do produktów standardowych
 
-Aby przypisać zasady gotowości do standardowego produktu, otwórz powiązany produkt udostępniony i ustaw pole **Zasady gotowości produktu** na nazwę zasady, która ma mieć zastosowanie. Aby uzyskać więcej informacji, zobacz sekcję [Przypisywanie zasad gotowości do produktów standardowych i inżynieryjnych](#assign-policy) wcześniej w tym temacie.
+Aby przypisać zasady gotowości do standardowego produktu, otwórz powiązany produkt udostępniony i ustaw pole **Zasady gotowości produktu** na nazwę zasady, która ma mieć zastosowanie. Aby uzyskać więcej informacji, zobacz sekcję [Przypisywanie zasad gotowości do produktów standardowych i inżynieryjnych](#assign-policy) wcześniej w tym artykule.
 
 ### <a name="view-and-process-readiness-checks-on-standard-products"></a>Przeglądanie i przeprowadzanie kontroli gotowości produktów standardowych
 
-Gdy ta funkcja jest włączona, można przeglądać i przetwarzać kontrole gotowości dla produktów standardowych w taki sam sposób, jak dla produktów inżynieryjnych. Zobacz informacje we wcześniejszej części tego tematu.
+Gdy ta funkcja jest włączona, można przeglądać i przetwarzać kontrole gotowości dla produktów standardowych w taki sam sposób, jak dla produktów inżynieryjnych. Zobacz informacje we wcześniejszej części tego artykułu.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

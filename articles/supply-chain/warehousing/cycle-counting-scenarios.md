@@ -1,6 +1,6 @@
 ---
 title: Przykładowe scenariusze inwentaryzacji ciągłej
-description: Ten temat zawiera zbiór scenariuszy eksplorowania funkcji inwentaryzacji ciągłej rozwiązania Microsoft Dynamics 365 Supply Chain Management.
+description: Ten artykuł zawiera zbiór scenariuszy eksplorowania funkcji inwentaryzacji ciągłej rozwiązania Microsoft Dynamics 365 Supply Chain Management.
 author: GalynaFedorova
 ms.date: 06/08/2021
 ms.topic: article
@@ -11,24 +11,24 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 60be945035570634c572baaa37ae0d02e41dd0be
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 90a3f132a96081b56ab60f5b0ba5cc328b820879
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674709"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899332"
 ---
 # <a name="cycle-counting-example-scenarios"></a>Przykładowe scenariusze inwentaryzacji ciągłej
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera zbiór scenariuszy eksplorowania funkcji inwentaryzacji ciągłej rozwiązania Microsoft Dynamics 365 Supply Chain Management. Najpierw opisano wymagania istniejącego środowiska Supply Chain Management. Następnie wyjaśniono, jak skonfigurować inwentaryzację ciągłą i opisano wszystkie etapy inwentaryzacji ciągłej. Kiedy skończysz, powinieneś dobrze rozumieć liczenie cykli, w tym inwentaryzacja ciągła sterowana, inwentaryzacja ciągła w ciemno, inwentaryzacja ciągła w miejscu, progi inwentaryzacji ciągłej i plany inwentaryzacji ciągłej.
+Ten artykuł zawiera zbiór scenariuszy eksplorowania funkcji inwentaryzacji ciągłej rozwiązania Microsoft Dynamics 365 Supply Chain Management. Najpierw opisano wymagania istniejącego środowiska Supply Chain Management. Następnie wyjaśniono, jak skonfigurować inwentaryzację ciągłą i opisano wszystkie etapy inwentaryzacji ciągłej. Kiedy skończysz, powinieneś dobrze rozumieć liczenie cykli, w tym inwentaryzacja ciągła sterowana, inwentaryzacja ciągła w ciemno, inwentaryzacja ciągła w miejscu, progi inwentaryzacji ciągłej i plany inwentaryzacji ciągłej.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
 ### <a name="make-demo-data-available"></a>Udostępnianie danych pokazu
 
-Każdy scenariusz w tym temacie odwołuje się do wartości i rekordów, które są zawarte w standardowych danych demonstracyjnych, które są dostarczane dla Supply Chain Management. Aby użyć wartości określonych w tym miejscu podczas wykonywania ćwiczeń, upewnij się, że praca odbywa się w środowisku, w którym są zainstalowane dane demonstracyjne, i przed rozpoczęciem ustaw firmę (osobę prawną) na **USMF**.
+Każdy scenariusz w tym artykule odwołuje się do wartości i rekordów, które są zawarte w standardowych danych demonstracyjnych, które są dostarczane dla Supply Chain Management. Aby użyć wartości określonych w tym miejscu podczas wykonywania ćwiczeń, upewnij się, że praca odbywa się w środowisku, w którym są zainstalowane dane demonstracyjne, i przed rozpoczęciem ustaw firmę (osobę prawną) na **USMF**.
 
 ### <a name="turn-on-support-for-the-warehouse-management-mobile-app"></a>Włącz obsługę aplikacji mobilnej Warehouse Management
 
@@ -158,7 +158,7 @@ Aby utworzyć pracę inwentaryzacji ciągłej dla lokalizacji pozycji *01A02R2S2
 
 Po utworzeniu pracy inwentaryzacji ciągłej można wykonać tę pracę, zliczając towary w lokalizacji w magazynie, a następnie za pomocą urządzenia przenośnego wprowadzając wynik w Supply Chain Management. Wykonaj poniższe kroki, aby wykonać operację zliczania w aplikacji mobilnej Warehouse Management.
 
-1. Zalogować się do aplikacji mobilnej Warehouse Management jako użytkownik roboczy, który został skonfigurowany w sekcji [Przygotowanie danych demonstracyjnych dla scenariuszy](#prepare-demo-data) wcześniej w tym temacie. W przykładzie w tym temacie użytkownik ma nazwę *Julia Funderburk* i jest ustawiony dla magazynu *61*. (Dane demonstracyjne USMF powinny umożliwiać zalogowanie się jako ten użytkownik, wprowadzając *61* jako identyfikator użytkownika i *1* jako hasło).
+1. Zalogować się do aplikacji mobilnej Warehouse Management jako użytkownik roboczy, który został skonfigurowany w sekcji [Przygotowanie danych demonstracyjnych dla scenariuszy](#prepare-demo-data) wcześniej w tym artykule. W przykładzie w tym artykule użytkownik ma nazwę *Julia Funderburk* i jest ustawiony dla magazynu *61*. (Dane demonstracyjne USMF powinny umożliwiać zalogowanie się jako ten użytkownik, wprowadzając *61* jako identyfikator użytkownika i *1* jako hasło).
 1. W menu głównym wybierz opcję **Zapasy**.
 1. W menu **Zapasy** wybierz polecenie **inwentaryzacja ciągła sterowana**.
 1. Zaznacz pole **Ilość**, wprowadź wartość *9* za pomocą klawiatury numerycznej, a następnie zaznacz przycisk znacznik wyboru – **OK**.
@@ -227,7 +227,7 @@ Zanim zaczniesz inwentaryzację ciągłą w ciemno, musisz stworzyć jakąś pra
 
 Po utworzeniu pracy związanej z liczeniem cykli należy wykonać poniższe kroki, aby wykonać pracę w aplikacji mobilnej Warehouse Management.
 
-1. Zalogować się do aplikacji mobilnej Warehouse Management jako użytkownik roboczy, który został skonfigurowany w sekcji [Przygotowanie danych demonstracyjnych dla scenariuszy](#prepare-demo-data) wcześniej w tym temacie. W przykładzie w tym temacie użytkownik ma nazwę *Julia Funderburk* i jest ustawiony dla magazynu *61*. (Dane demonstracyjne USMF powinny umożliwiać zalogowanie się jako ten użytkownik, wprowadzając *61* jako identyfikator użytkownika i *1* jako hasło).
+1. Zalogować się do aplikacji mobilnej Warehouse Management jako użytkownik roboczy, który został skonfigurowany w sekcji [Przygotowanie danych demonstracyjnych dla scenariuszy](#prepare-demo-data) wcześniej w tym artykule. W przykładzie w tym artykule użytkownik ma nazwę *Julia Funderburk* i jest ustawiony dla magazynu *61*. (Dane demonstracyjne USMF powinny umożliwiać zalogowanie się jako ten użytkownik, wprowadzając *61* jako identyfikator użytkownika i *1* jako hasło).
 1. W menu głównym wybierz opcję **Zapasy**.
 1. W menu **Zapasy** wybierz polecenie **inwentaryzacja ciągła w ciemno**.
 1. Zaznacz pole **Identyfikator strefy**, wprowadź wartość *BULK06* i wybierz przycisk **OK** (przycisk wyboru).
@@ -259,7 +259,7 @@ W rekordzie zapasów jest dostępna ilość pozycji *L0101* w lokalizacji *01A02
 
 Wykonaj poniższe kroki, aby wykonać operację zliczania w aplikacji mobilnej Warehouse Management.
 
-1. Zalogować się do aplikacji mobilnej Warehouse Management jako użytkownik roboczy, który został skonfigurowany w sekcji [Przygotowanie danych demonstracyjnych dla scenariuszy](#prepare-demo-data) wcześniej w tym temacie. W przykładzie w tym temacie użytkownik ma nazwę *Julia Funderburk* i jest ustawiony dla magazynu *61*. (Dane demonstracyjne USMF powinny umożliwiać zalogowanie się jako ten użytkownik, wprowadzając *61* jako identyfikator użytkownika i *1* jako hasło).
+1. Zalogować się do aplikacji mobilnej Warehouse Management jako użytkownik roboczy, który został skonfigurowany w sekcji [Przygotowanie danych demonstracyjnych dla scenariuszy](#prepare-demo-data) wcześniej w tym artykule. W przykładzie w tym artykule użytkownik ma nazwę *Julia Funderburk* i jest ustawiony dla magazynu *61*. (Dane demonstracyjne USMF powinny umożliwiać zalogowanie się jako ten użytkownik, wprowadzając *61* jako identyfikator użytkownika i *1* jako hasło).
 1. W menu głównym wybierz opcję **Zapasy**.
 1. W menu **Zapasy** wybierz polecenie **inwentaryzacja punktowa**.
 1. Zaznacz pole **Lokalizacja**, wprowadź wartość *01A02R2S1B* i wybierz przycisk **OK** (przycisk wyboru).

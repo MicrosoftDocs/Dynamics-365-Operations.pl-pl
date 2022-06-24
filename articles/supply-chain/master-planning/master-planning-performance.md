@@ -1,7 +1,7 @@
 ---
 title: Zwiększanie wydajności planowania głównego
-description: W tym temacie objaśniono różne opcje, które mogą pomóc w poprawie wydajności planowania głównego lub rozwiązywaniu problemów.
-author: ChristianRytt
+description: W tym artykule objaśniono różne opcje, które mogą pomóc w poprawie wydajności planowania głównego lub rozwiązywaniu problemów.
+author: t-benebo
 ms.date: 12/18/2019
 ms.topic: article
 ms.prod: ''
@@ -16,20 +16,20 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: fcbc732fce4120268acd774cc4d42193ba95787d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b2c4b7e2197d312d22f9851121a9e6d4d4d03ba3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570928"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897611"
 ---
 # <a name="improve-master-planning-performance"></a>Zwiększanie wydajności planowania głównego
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie objaśniono różne opcje, które mogą pomóc w poprawie wydajności planowania głównego lub rozwiązywaniu problemów. Zawiera informacje o parametrach i ustawieniach oraz zalecane konfiguracje i akcje. Zawiera on także podsumowanie wszystkich ważnych parametrów, które należy wziąć pod uwagę w przypadku długotrwałych zadań planowania głównego.
+W tym artykule objaśniono różne opcje, które mogą pomóc w poprawie wydajności planowania głównego lub rozwiązywaniu problemów. Zawiera informacje o parametrach i ustawieniach oraz zalecane konfiguracje i akcje. Zawiera on także podsumowanie wszystkich ważnych parametrów, które należy wziąć pod uwagę w przypadku długotrwałych zadań planowania głównego.
 
-Ten temat jest przeznaczony dla administratorów systemu lub użytkowników systemów informatycznych, którzy mają możliwość rozwiązania problemu. Jest on również przeznaczony do planowania produkcji lub dostaw, ponieważ zawiera informacje o parametrach związanych z wymaganiami dotyczącymi planowania biznesowego. 
+Ten artykuł jest przeznaczony dla administratorów systemu lub użytkowników systemów informatycznych, którzy mają możliwość rozwiązania problemu. Jest on również przeznaczony do planowania produkcji lub dostaw, ponieważ zawiera informacje o parametrach związanych z wymaganiami dotyczącymi planowania biznesowego. 
 
 ## <a name="parameters-related-to-master-planning-performance"></a>Parametry związane z wydajnością planowania głównego
 
@@ -151,9 +151,9 @@ Przed uruchomieniem kroku zapotrzebowania następuje etap wstępnego zapotrzebow
 ## <a name="performance-checklist-summary"></a>Podsumowanie listy kontrolnej wydajności
 
 - **Liczba wątków** ustawiona na wartość większą niż **0** (zero).
-- **Liczba zadań w pakiecie zadania pomocnika** — jest ustawiona na wartość większą niż **0** (zero). (Należy skorzystać z formuł podanych we wcześniejszej części tego tematu)
+- **Liczba zadań w pakiecie zadania pomocnika** — jest ustawiona na wartość większą niż **0** (zero). (Należy skorzystać z formuł podanych we wcześniejszej części tego artykułu)
 - **Użycie pamięci podręcznej** — ustawione na wartość **maksimum**, chyba że w systemie brakuje pamięci.
-- **Liczba zamówień w pakiecie zadania określonego** — jest ustawiona na wartość większą niż **0** (zero). (Należy skorzystać z formuły podanej we wcześniejszej części tego tematu.)
+- **Liczba zamówień w pakiecie zadania określonego** — jest ustawiona na wartość większą niż **0** (zero). (Należy skorzystać z formuły podanej we wcześniejszej części tego artykułu.)
 - **Horyzonty czasowe** — dopasowuje do potrzeb biznesowych użytkownika.
 - **Akcje i prognozy** — wyłącza akcje i prognozę, jeśli nie są używane.
 - **Pojedyncza procedura ciężka w danym czasie** — nie uruchamia planowania głównego razem z żadną inną operacją ciężkiej procedury.

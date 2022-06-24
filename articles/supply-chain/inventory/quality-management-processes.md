@@ -1,6 +1,6 @@
 ---
 title: Omówienie zarządzania kontrolą jakości i niezgodnością
-description: W tym temacie omówione są funkcje zarządzania jakością i niezgodnościami w systemie Microsoft Dynamics 365 Supply Chain Management i wyjaśniono, w jaki sposób mogą one pomóc w poprawie jakości produktów w łańcuchu dostaw.
+description: W tym artykule omówione są funkcje zarządzania jakością i niezgodnościami w systemie Microsoft Dynamics 365 Supply Chain Management i wyjaśniono, w jaki sposób mogą one pomóc w poprawie jakości produktów w łańcuchu dostaw.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1bb4bcb7f554c22b4e1ab1b41867bd2d3dcca4d4
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 510dee78f6fed02e6511aedad00fcb1b15195470
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985527"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907501"
 ---
 # <a name="quality-and-nonconformance-management-overview"></a>Omówienie zarządzania kontrolą jakości i niezgodnością
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie omówione są funkcje zarządzania jakością i niezgodnościami w systemie Microsoft Dynamics 365 Supply Chain Management i wyjaśniono, w jaki sposób mogą one pomóc w poprawie jakości produktów w łańcuchu dostaw.
+W tym artykule omówione są funkcje zarządzania jakością i niezgodnościami w systemie Microsoft Dynamics 365 Supply Chain Management i wyjaśniono, w jaki sposób mogą one pomóc w poprawie jakości produktów w łańcuchu dostaw.
 
 Zapewnienie jakości polega na testowaniu produktu i zarządzaniu materiałami niespełniającymi norm. Procesy zarządzania jakością zapewniają wysoki poziom jakości produktu w łańcuchu dostaw. Procesy te umożliwiają także optymalizowanie procesów łańcucha dostaw i zwiększają zadowolenie klientów. Zarządzanie jakością pomaga przy zarządzaniu czasem przetwarzania, kiedy masz do czynienia z produktami niespełniającymi norm, bez względu na pochodzenie tych produktów. Zadania korekty można połączyć z wynikami diagnostyki. System można zaplanować zadania, aby naprawić problemy i w ten sposób zapobiec powtórzeniu tych problemów w przyszłości. Zarządzanie jakością umożliwia też śledzenie problemów (w tym problemów wewnętrznych) według typu problemu i pozwala na określenie rozwiązań jako krótkoterminowych lub długoterminowych. Statystyki kluczowych wskaźników wydajności (KPI) pokazują problemy z niezgodnością, które wystąpiły wcześniej, i rozwiązania, które zostały zastosowane do ich korekty. Korzystając z danych historycznych można sprawdzić skuteczność pomiarów jakości, które zostały wcześniej przeprowadzone, i określić odpowiednie rozwiązania na przyszłość.
 

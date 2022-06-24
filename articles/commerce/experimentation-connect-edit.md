@@ -1,56 +1,30 @@
 ---
 title: Łączenie eksperymentu i edytowanie odmian
-description: W tym temacie opisano sposób łączenia eksperymentów z usługą innej firmy z systemem Dynamics 365 Commerce i edytowania odmian eksperymentu.
+description: W tym artykule opisano sposób łączenia eksperymentów z usługą innej firmy z systemem Dynamics 365 Commerce i edytowania odmian eksperymentu.
 author: sushma-rao
-ms.date: 10/21/2020
+ms.date: 06/07/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
-ms.assetid: ''
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
-ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: d3b1a099e29073e82e2118f9e43441a9068a4d10f0ea9f79123b97d2b7d5c419
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dcdbd61976402ddd719ece184a86692fbc7c628d
+ms.sourcegitcommit: ddcb62bb5fbf26a1178c2bb1aec45a3d2362339e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773040"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "8942829"
 ---
 # <a name="connect-an-experiment-and-edit-variations"></a>Łączenie eksperymentu i edytowanie odmian
 
-W tym temacie opisano sposób łączenia doświadczenia w Commerce i wprowadzania zmian w odmianach, dzięki czemu są one zgodne z hipotezą. 
+W tym artykule opisano sposób łączenia doświadczenia w Commerce i wprowadzania zmian w odmianach, dzięki czemu są one zgodne z hipotezą. 
 
-Na poniższym diagramie przedstawiono wszystkie kroki związane z konfigurowaniem i przeprowadzaniem eksperymentu na stronie internetowej środowiska handlu elektronicznego w systemie Dynamics 365 Commerce. Dodatkowe kroki są zawarte w odrębnych tematach.
+Na poniższym diagramie przedstawiono wszystkie kroki związane z konfigurowaniem i przeprowadzaniem eksperymentu na stronie internetowej środowiska handlu elektronicznego w systemie Dynamics 365 Commerce. Dodatkowe kroki są zawarte w odrębnych artykułach.
 
 [ ![Proces użytkownika eksperymentu — łączenie i edycja.](./media/experimentation_connect_edit.svg) ](./media/experimentation_connect_edit.svg#lightbox)
 
 Po [skonfigurowaniu eksperymentu](experimentation-setup.md) w usłudze innej firmy nastąpi połączenie eksperymentu w Dynamics 365 Commerce i edycja odmian eksperymentów.
-
-## <a name="planning-considerations"></a>Uwagi dotyczące planowania
-
-Przed połączeniem eksperymentu w Commerce trzeba wprowadzić kilka decyzji, które wpływają na sposób zarządzania zawartością przez Commerce.
-
-### <a name="determine-the-scope-of-your-experiment"></a>Określanie zakresu eksperymentu
-Po połączeniu eksperymentu zostanie wyświetlony monit o zdefiniowanie zakresu eksperymentu. Eksperymenty są zdefiniowane jako zakres **częściowy** lub **cały**.
-- Wybierz opcję **częściowy**, jeśli chcesz przeprowadzić eksperyment na konkretnej części strony. Po wybraniu tej opcji należy określić, które moduły mają być uwzględniane w eksperymencie. Zmiany wprowadzane w częściach domyślnej strony lub fragmentu, które nie są związane z eksperymentem, są automatycznie synchronizowane w różnych odmianach.
-- Wybierz opcję **cały**, jeśli chcesz prowadzić eksperyment na całej stronie lub fragmencie. Zostaną utworzone oddzielne kopie domyślnej strony lub fragmentu. Nie trzeba wybierać modułów, które zostaną uwzględnione w eksperymencie, ponieważ cała powierzchnia edycji jest dostępna do zmiany. W razie potrzeby można dodawać, usuwać lub ponownie zamawiać moduły. Jeśli jednak zostaną wprowadzone jakiekolwiek zmiany do strony domyślnej lub fragmentu, z którym jest skojarzona eksperyment, zmiany te muszą być synchronizowane ręcznie we wszystkich odmianach.
-
-<!-- not to editors, we're adding an image here to illustrate the difference. it will help.) -->
-
-> [!NOTE]
-> Jeśli użytkownik skojarzy eksperyment ze stroną korzystającą z układu, może wybrać tylko **cały** zakres eksperymentu.
-
-### <a name="decide-if-you-want-to-schedule-when-your-experiment-is-published"></a>Określanie, czy chcesz zaplanować, kiedy eksperyment jest opublikowany
-Aby zaplanować, kiedy eksperyment zostanie opublikowany w działającej witrynie, upewnij się, że zawartość, którą chcesz skojarzyć z eksperymentem, jest dostępna w grupie publikowania *przed* połączeniem eksperymentu. 
-
-Aby uzyskać więcej informacji o grupach publikacji, zobacz temat [Praca z grupami publikacji](publish-groups.md).
-
 
 ## <a name="connect-your-experiment"></a>Łączenie eksperymentu
 Aby połączyć eksperyment, należy uruchomić kreatora **Łączenie eksperymentów**. Kreator przeprowadzi Cię przez kroki wymagane do połączenia eksperymentu. Po zakończeniu pracy kreatora eksperyment jest połączony, a zmiany są tworzone i gotowe do edycji.
@@ -60,31 +34,25 @@ Aby rozpocząć Podłączanie doświadczenia w konstruktorze witryn Commerce, na
 1. Aby uruchomić kreatora **Połącz eksperyment**, wybierz opcję **Eksperymenty** w lewym okienku nawigacji, a następnie wybierz opcję **Połącz**. Można również uzyskać dostęp do kreatora ze strony lub z edytora fragmentów, edytując go i wybierając na pasku poleceń **Połącz eksperyment**.
 
     > [!NOTE]
-    > Strona może być połączona tylko z jednym eksperymentem naraz. Aby połączyć stronę z innym eksperymentem, należy najpierw usunąć eksperyment, z którym jest obecnie połączona strona.
+    > - Strona może być połączona tylko z jednym eksperymentem naraz. Aby połączyć stronę z innym eksperymentem, należy najpierw usunąć eksperyment, z którym jest obecnie połączona strona.
+    > - Eksperymentować można tylko na stronach z niestandardowym układem. Jeśli strona zawiera wstępnie ustawiony układ, najpierw przekonwertuj go na układ niestandardowy. W tym celu należy przejść na stronę i wybrać polecenie **Konwertuj na niestandardowy układ** na pasku poleceń. Aby uzyskać więcej informacji o układach, zobacz [Ustawienia wstępne i układy niestandardowe](templates-layouts-overview.md#preset-and-custom-layouts). 
 
+1. Jeśli łączysz się z eksperymentem z karty **Eksperymenty** w lewym panelu nawigacyjnym, wybierz nazwę eksperymentu z wyświetlonej listy.
 1. Wybierz stronę lub fragment, na którym ma być uruchomiony eksperyment.
-1. Umożliwia ustawienie zakresu eksperymentów na **częściowy** lub **cały** w zależności od wyboru dokonanego w sekcji [Określ zakres doświadczenia](#determine-the-scope-of-your-experiment) powyżej.
-    > [!NOTE]
-    > Aby eksperymentować z pełną stroną lub fragmentem, należy włączyć flagę funkcji **Eksperymentowanie ze stronami lub fragmentami**. Aby uzyskać więcej informacji, zobacz temat [Eksperymentowanie w programie Dynamics 365 Commerce](experimentation-overview.md).
-    
 1. W ostatnim kroku kreatora wybierz opcję **Wygeneruj odmiany i zakończ kreatora**. Zostaną utworzone odmiany eksperymentu. 
 
+> [!NOTE]
+> Aby zaplanować, kiedy eksperyment zostanie opublikowany w działającej witrynie, upewnij się, że zawartość, którą chcesz skojarzyć z eksperymentem, jest dostępna w grupie publikowania *przed* połączeniem eksperymentu. Aby uzyskać więcej informacji o grupach publikacji, zobacz temat [Praca z grupami publikacji](publish-groups.md).
+
 ## <a name="edit-your-variations"></a>Edycja odmian
-Po zamknięciu kreatora zostaną utworzone odmiany. 
 
-Następnie dokonasz edycji odmian, aby odzwierciedlały opcje, które trzeba zweryfikować w hipotezie. Wybierz jedną z poniższych procedur, która odpowiada zakresowi wybranemu dla eksperymentu w powyższej sekcji [Określanie zakresu eksperymentu](#determine-the-scope-of-your-experiment).
-
-### <a name="edit-variations-for-experiments-with-partial-scope"></a>Edycja odmian eksperymentów z częściowym zakresem
-Wykonaj poniższe kroki, jeśli w kreatorze **łączenia eksperymentów** został zdefiniowany **częściowy** zakres eksperymentu.
+Po wyjściu z kreatora **Połącz eksperyment** tworzone są dla Ciebie warianty. Wykonaj poniższe kroki, aby edytować warianty tak, aby odzwierciedlały wybory, które należy zweryfikować w hipotezie eksperymentu.
 
 1. W widoku edytora za pomocą menu rozwijanego odmiany, znajdującego się pod paskiem poleceń, można edytować każdą odmianę w oparciu o hipotezę oryginalną. Można również określić kontrolę lub zmianę bazową, pozostawiając niezmienioną jedną z odmian.
 1. Wybierz moduł do eksperymentowania, wybierz wielokropek (...), a następnie wybierz opcję **Dodaj do eksperymentu**.
 
-### <a name="edit-variations-for-experiments-with-entire-scope"></a>Edycja odmian eksperymentów z całkowitym zakresem
-Jeśli zdefiniowano **całkowity** zakres eksperymentu w kreatorze **Łączenie eksperymentów**, to w widoku edytora należy skorzystać z menu rozwijanego odmiany poniżej paska poleceń, aby edytować poszczególne odmiany na podstawie hipotezy pierwotnej. 
-
 > [!NOTE]
-> W każdym przypadku można również określić kontrolę lub zmianę bazową, pozostawiając niezmienioną jedną z odmian.
+> Należy rozważyć ustanowienie zmiany kontrolnej lub podstawowej poprzez pozostawienie jednej ze zmian bez zmian.
 
 ## <a name="previous-step"></a>Poprzedni krok
 [Konfigurowanie eksperymentu](experimentation-setup.md) 

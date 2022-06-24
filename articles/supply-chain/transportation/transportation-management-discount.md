@@ -1,6 +1,6 @@
 ---
 title: Rabaty na zarządzanie transportem
-description: W tym temacie opisano opcje konfigurowania rabatów na opłaty za transport.
+description: W tym artykule opisano opcje konfigurowania rabatów na opłaty za transport.
 author: Weijiesa
 ms.date: 10/16/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-10-16
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f40794b29133195d371fa10b1e96d85fd19521dc
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 2c2032fd26d0c90e35219144385ac2e75a0a9525
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678018"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851399"
 ---
 # <a name="transportation-management-discounts"></a>Rabaty na zarządzanie transportem
 

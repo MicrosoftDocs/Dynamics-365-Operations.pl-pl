@@ -1,6 +1,6 @@
 ---
 title: Omówienie fakturowania elektronicznego
-description: Ten temat zawiera omówienie fakturowania elektronicznego w Microsoft Dynamics 365 Finance i Dynamics 365 Supply Chain Management.
+description: Ten artykuł zawiera omówienie fakturowania elektronicznego w Microsoft Dynamics 365 Finance i Dynamics 365 Supply Chain Management.
 author: gionoder
 ms.date: 01/21/2022
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 23a98706bc2ab0abc2c72e9f20d8e8fbff56b2b9
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 4ce5776216855fc664b9beba68036d41920ae602
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371461"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861304"
 ---
 # <a name="electronic-invoicing-overview"></a>Omówienie fakturowania elektronicznego
 

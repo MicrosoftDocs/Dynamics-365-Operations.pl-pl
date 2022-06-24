@@ -1,6 +1,6 @@
 ---
 title: Ustawienia użytkownika urządzenia przenośnego
-description: W tym temacie wyjaśniono, jak zarządzać ustawieniami użytkownika urządzenia przenośnego dla pracowników magazynu.
+description: W tym artykule wyjaśniono, jak zarządzać ustawieniami użytkownika urządzenia przenośnego dla pracowników magazynu.
 author: Mirzaab
 ms.date: 02/09/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4ea0fcfa7a165587567968f95549799859edaa60
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 15f9ce1768e1ed9dc6f7e84d245082b46a7f122c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103720"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882352"
 ---
 # <a name="mobile-device-user-settings"></a>Ustawienia użytkownika urządzenia przenośnego
 
@@ -41,7 +41,7 @@ Ta funkcja pomaga pracownikom szybciej rozpocząć, gdy zaczynają korzystać z 
 
 ## <a name="turn-the-mobile-device-user-settings-feature-on-or-off"></a>Włącz lub wyłącz funkcję ustawień użytkownika urządzenia mobilnego
 
-Aby można było korzystać z funkcji opisanych w tym temacie, *w systemie muszą być włączone ustawienia użytkownika,* ikony i tytuły kroku nowej funkcji aplikacji magazynowej. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.25, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Ustawienia użytkownika, ikony i tytuły kroków dla nowej aplikacji magazynowej* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Aby można było korzystać z funkcji opisanych w tym artykule, *w systemie muszą być włączone ustawienia użytkownika,* ikony i tytuły kroku nowej funkcji aplikacji magazynowej. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.25, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Ustawienia użytkownika, ikony i tytuły kroków dla nowej aplikacji magazynowej* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="create-and-manage-user-settings"></a>Umożliwia tworzenie ustawień użytkownika i zarządzanie nimi
 

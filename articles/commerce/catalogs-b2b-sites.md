@@ -1,6 +1,6 @@
 ---
-title: Tworzenie katalogów Commerce dla stron B2B
-description: W tym temacie opisano, jak tworzyć katalogi Commerce dla witryn business-to-business (B2B) Microsoft Dynamics 365 Commerce.
+title: Tworzenie katalogów rozwiązania Commerce dla witryn B2B
+description: W tym artykule opisano, jak tworzyć katalogi Commerce dla witryn business-to-business (B2B) Microsoft Dynamics 365 Commerce.
 author: ashishmsft
 ms.date: 05/18/2022
 ms.topic: article
@@ -9,22 +9,22 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: 7382062706c2de01c499ee05aeb0b45ff6fb37cb
-ms.sourcegitcommit: bca0cb730307948368a9aabe322cf963688ed8b1
+ms.openlocfilehash: 7d87b6c64a6038c4518eeec178f9e139ef6f5ae2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8782844"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848996"
 ---
-# <a name="create-commerce-catalogs-for-b2b-sites"></a>Tworzenie katalogów Commerce dla stron B2B
+# <a name="create-commerce-catalogs-for-b2b-sites"></a>Tworzenie katalogów rozwiązania Commerce dla witryn B2B
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-W tym temacie opisano, jak tworzyć produkty Commerce dla witryn business-to-business (B2B) Microsoft Dynamics 365 Commerce. Aby uzyskać odpowiedzi na najczęściej zadawane pytania dotyczące katalogów Commerce dla stron B2B, zobacz [Katalogi Commerce dla stron B2B FAQ](catalogs-b2b-sites-FAQ.md).
+W tym artykule opisano, jak tworzyć produkty Commerce dla witryn business-to-business (B2B) Microsoft Dynamics 365 Commerce. Aby uzyskać odpowiedzi na najczęściej zadawane pytania dotyczące katalogów Commerce dla stron B2B, zobacz [Katalogi Commerce dla stron B2B FAQ](catalogs-b2b-sites-FAQ.md).
 
 > [!NOTE]
-> Ten temat dotyczy Dynamics 365 Commerce w wersji 10.0.27 i późniejszych.
+> Ten artykuł dotyczy Dynamics 365 Commerce w wersji 10.0.27 i późniejszych.
 
 Możesz użyć katalogów Commerce, by zidentyfikować produkty, które chcesz oferować w swoich sklepach internetowych B2B. Kiedy tworzysz katalog, określasz sklepy internetowe, w których oferowane są produkty, dodajesz produkty, które chcesz w nim umieścić, a następnie wzbogacasz ofertę produktów, dodając szczegóły dotyczące merchandisingu. Możesz stworzyć wiele katalogów dla każdego sklepu internetowego B2B.
 

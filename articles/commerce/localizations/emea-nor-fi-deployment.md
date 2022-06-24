@@ -1,6 +1,6 @@
 ---
 title: Przewodniki wdrażania kas fiskalnych w Norwegii
-description: Ten temat zawiera wskazówki dotyczące włączania funkcji kasy fiskalnej w lokalizacji Microsoft Dynamics 365 Commerce Norwegii.
+description: Ten artykuł zawiera wskazówki dotyczące włączania funkcji kasy fiskalnej w lokalizacji Microsoft Dynamics 365 Commerce Norwegii.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: f0744b18ed59c692ae336c92e488d339ae158368
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 1f2226432237662e28b9e26017020ab81bb6026b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077147"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899074"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-norway"></a>Przewodniki wdrażania kas fiskalnych w Norwegii
 
 [!include[banner](../includes/banner.md)]
 
-Ten temat zawiera wskazówki dotyczące włączania funkcji kasy fiskalnej w lokalizacji Microsoft Dynamics 365 Commerce Norwegii. Lokalizacja składa się z kilku rozszerzeń składników. Te rozszerzenia umożliwiają wykonywanie takich akcji, jak drukowanie niestandardowych pól na paragonach, rejestrowanie dodatkowych zdarzeń inspekcji, transakcji sprzedaży i transakcji płatności w programie punkt sprzedaży (POS), cyfrowe podpisywanie transakcji sprzedaży i drukowanie raportów w formatach lokalnych. Aby uzyskać więcej informacji o lokalizacji dla Norwegii, zobacz temat [Funkcje kas fiskalnych dla Norwegii](./emea-nor-cash-registers.md). Aby uzyskać informacje dotyczące konfigurowania rozwiązania Commerce dla Norwegii, patrz [Konfiguracja rozwiązania Commerce dla Norwegii](./emea-nor-cash-registers.md#setting-up-commerce-for-norway).
+Ten artykuł zawiera wskazówki dotyczące włączania funkcji kasy fiskalnej w lokalizacji Microsoft Dynamics 365 Commerce Norwegii. Lokalizacja składa się z kilku rozszerzeń składników. Te rozszerzenia umożliwiają wykonywanie takich akcji, jak drukowanie niestandardowych pól na paragonach, rejestrowanie dodatkowych zdarzeń inspekcji, transakcji sprzedaży i transakcji płatności w programie punkt sprzedaży (POS), cyfrowe podpisywanie transakcji sprzedaży i drukowanie raportów w formatach lokalnych. Aby uzyskać więcej informacji o lokalizacji dla Norwegii, zobacz temat [Funkcje kas fiskalnych dla Norwegii](./emea-nor-cash-registers.md). Aby uzyskać informacje dotyczące konfigurowania rozwiązania Commerce dla Norwegii, patrz [Konfiguracja rozwiązania Commerce dla Norwegii](./emea-nor-cash-registers.md#setting-up-commerce-for-norway).
 
 > [!WARNING]
 > Z powodu ograniczeń [nowego niezależnego modelu pakowania i rozszerzenia](../dev-itpro/build-pipeline.md), nie można go obecnie używać w tej funkcji lokalizacji. Musisz użyć wersji przykładu podpisywania cyfrowego dla Norwegii w poprzedniej wersji zestawu Retail software development kit (SDK) na maszynie wirtualnej (VM) dewelopera w Microsoft Dynamics Lifecycle Services (LCS). Aby uzyskać więcej informacji, zobacz [Wskazówki dotyczące wdrażania kas fiskalnych dla Norwegii (starsza wersja)](./emea-nor-loc-deployment-guidelines.md).

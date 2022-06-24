@@ -1,6 +1,6 @@
 ---
 title: Obciążenia pracą dotyczące zarządzania magazynem dla jednostek skalowania chmury i urządzenia brzegowego
-description: Ten temat zawiera informacje o funkcji umożliwiającej skalowanie jednostek miar na uruchamianie wybranych procesów z poziomu obciążenia pracą w module Zarządzanie magazynem.
+description: Ten artykuł zawiera informacje o funkcji umożliwiającej skalowanie jednostek miar na uruchamianie wybranych procesów z poziomu obciążenia pracą w module Zarządzanie magazynem.
 author: perlynne
 ms.date: 09/03/2021
 ms.topic: article
@@ -16,19 +16,19 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 67f78441b0914d18c2a7853bab54c6b8817be3ac
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: f9839ad9a18eb543734c2ba43a56b568460a64c3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384493"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893505"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Obciążenia pracą dotyczące zarządzania magazynem dla jednostek skalowania chmury i urządzenia brzegowego
 
 [!include [banner](../includes/banner.md)]
 
 > [!WARNING]
-> Nie wszystkie funkcje zarządzania magazynem w firmie są w pełni obsługiwane w przypadku magazynów, w których jest uruchomione obciążenie pracą z jednostką skalowania. Należy pamiętać, aby użyć tylko tych procesów, które opisano w tym temacie jako obsługiwane.
+> Nie wszystkie funkcje zarządzania magazynem w firmie są w pełni obsługiwane w przypadku magazynów, w których jest uruchomione obciążenie pracą z jednostką skalowania. Należy pamiętać, aby użyć tylko tych procesów, które opisano w tym artykule jako obsługiwane.
 
 ## <a name="warehouse-execution-on-scale-units"></a>Wykonanie magazynowe w jednostkach skali
 
@@ -184,7 +184,7 @@ Obecnie żadne inne typy przetwarzania dokumentów źródłowych nie są obsług
 >
 > Aby skonfigurować aplikację mobilną Warehouse Management do pracy z chmurą lub jednostką brzegową, należy wykonać kilka dodatkowych kroków. - Aby uzyskać więcej informacji, zobacz [Skonfiguruj aplikację mobilną Warehouse Management dla jednostek działających w chmurze i na brzegu](cloud-edge-workload-setup-warehouse-app.md).
 >
-> W przypadku uruchamiania obciążenia pracą na jednostkę skali nie można uruchamiać nieobsługiwanych procesów dla określonego magazynu w centrali. Tabele podane dalej w tym temacie zawierają opis obsługiwanych możliwości.
+> W przypadku uruchamiania obciążenia pracą na jednostkę skali nie można uruchamiać nieobsługiwanych procesów dla określonego magazynu w centrali. Tabele podane dalej w tym artykule zawierają opis obsługiwanych możliwości.
 >
 > Wybrane typy pracy magazynowej można tworzyć zarówno w centrum, jak i na jednostkach skalowania, ale mogą być dostępne tylko przez centrum lub jednostkę skalowania (wdrożenie, które utworzyło dane).
 >

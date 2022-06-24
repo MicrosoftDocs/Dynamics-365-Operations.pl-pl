@@ -1,6 +1,6 @@
 ---
 title: Przekazywanie i obsługiwanie plików statycznych
-description: W tym temacie opisano sposób przekazywania pliku statycznego do kreatora witryn Microsoft Dynamics 365 Commerce oraz tworzenia niestandardowego adresu URL i nazwy pliku, które mogą być używane do żądania tego pliku.
+description: W tym artykule opisano sposób przekazywania pliku statycznego do kreatora witryn Microsoft Dynamics 365 Commerce oraz tworzenia niestandardowego adresu URL i nazwy pliku, które mogą być używane do żądania tego pliku.
 author: StuHarg
 ms.date: 11/16/2020
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 389d33189644241dcf98da0c7f3b841e82a4430ac459dc8027284cecc299b4b1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a1b14feba1466c3a5efc3b0ea66f20e9e818a8a5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714690"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885329"
 ---
 # <a name="upload-and-serve-static-files"></a>Przekazywanie i obsługiwanie plików statycznych
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano sposób przekazywania pliku statycznego do kreatora witryn Microsoft Dynamics 365 Commerce oraz tworzenia niestandardowego adresu URL i nazwy pliku, które mogą być używane do żądania tego pliku.
+W tym artykule opisano sposób przekazywania pliku statycznego do kreatora witryn Microsoft Dynamics 365 Commerce oraz tworzenia niestandardowego adresu URL i nazwy pliku, które mogą być używane do żądania tego pliku.
 
-Niektóre łączniki innych firm wymagają, aby plik był hostowany i obsługiwany przez witrynę handlu elektronicznego. Te łączniki oczekują, że plik będzie zwracany przez żądania do konkretnej ścieżki URL wywołania zwrotnego i nazwy pliku. W tym temacie opisano sposób przekazywania i obsługiwania pliku statycznego, który ma definiowany przez użytkownika adres URL i nazwę pliku w witrynie handlu elektronicznego Dynamics 365 Commerce.
+Niektóre łączniki innych firm wymagają, aby plik był hostowany i obsługiwany przez witrynę handlu elektronicznego. Te łączniki oczekują, że plik będzie zwracany przez żądania do konkretnej ścieżki URL wywołania zwrotnego i nazwy pliku. W tym artykule opisano sposób przekazywania i obsługiwania pliku statycznego, który ma definiowany przez użytkownika adres URL i nazwę pliku w witrynie handlu elektronicznego Dynamics 365 Commerce.
 
 ## <a name="create-a-site-url-that-returns-a-static-file"></a>Utwórz adres URL witryny, który zwraca plik statyczny
 
@@ -86,7 +86,7 @@ Po utworzeniu adresu URL nie można zmienić jego ścieżki. Jeśli trzeba zmien
 
 Aby zmienić ścieżkę adresu URL, wykonaj następujące kroki.
 
-1. Aby utworzyć nowy adres URL i zmapować go do istniejącego pliku lub innego zasobu, postępuj zgodnie z instrukcjami w sekcji [Tworzenie adresu URL witryny, który zwraca plik statyczny](#create-a-site-url-that-returns-a-static-file), dostępnej powyżej w tym temacie.
+1. Aby utworzyć nowy adres URL i zmapować go do istniejącego pliku lub innego zasobu, postępuj zgodnie z instrukcjami w sekcji [Tworzenie adresu URL witryny, który zwraca plik statyczny](#create-a-site-url-that-returns-a-static-file), dostępnej powyżej w tym artykule.
 1. Wybierz nowy adres URL i wybierz opcję **Publikuj** na pasku poleceń. Nowy adres URL zostanie opublikowany.
 1. Aby cofnąć publikowanie starego adresu URL, zaznacz go, a następnie wybierz opcję **Cofnij publikowanie** na pasku poleceń. W razie potrzeby można teraz usunąć stary adres URL.
 

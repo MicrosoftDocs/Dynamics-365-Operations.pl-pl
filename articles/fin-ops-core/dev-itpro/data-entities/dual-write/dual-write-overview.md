@@ -1,6 +1,6 @@
 ---
 title: Omówienie podwójnego zapisu
-description: Ten temat zawiera opis podwójnego zapisu, który zapewnia współpracę prawie w czasie rzeczywistym między aplikacjami Customer Engagement a aplikacjami Finanse i Operacje.
+description: Ten artykuł zawiera opis podwójnego zapisu, który zapewnia współpracę prawie w czasie rzeczywistym między aplikacjami Customer Engagement a aplikacjami finansowymi i operacyjnymi.
 author: RamaKrishnamoorthy
 ms.date: 02/06/2020
 ms.topic: overview
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: f39322a0c2ef50ef2bbeb256c80096e0687c4642
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 2ef4fb1a51bd92db440841eb2a9d9ebcce0e1b1d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061341"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872948"
 ---
 # <a name="dual-write-overview"></a>Omówienie podwójnego zapisu
 
@@ -73,7 +73,7 @@ Podwójny zapis tworzy mapowanie między pojęciami w aplikacjach Finanse i Oper
 
 Podwójny zapis dostarcza integrację danych między aplikacjami Microsoft Dynamics 365. To niezawodne środowisko łączy szkieletowo i umożliwia różnym aplikacjom biznesowym współdziałanie ze sobą. Oto najważniejsze powody, dla których należy zastosować metodę podwójnego odpisu:
 
-+ Funkcja podwójnego zapisu zapewnia ściśle powiązaną, działającą niemal w czasie rzeczywistym i dwukierunkową integrację między aplikacjami finansowymi i operacyjnymi oraz aplikacjami do obsługi klientów. Taka integracja stanowi Microsoft Dynamics 365 miejsce, gdzie można znaleźć wszystkie rozwiązania biznesowe. Klienci, którzy korzystają z Dynamics 365 Finance i Dynamics 365 Supply Chain Management, ale używają rozwiązań innych firm niż Microsoft do zarządzania relacjami z klientami (CRM), przenoszą się do Dynamics 365, aby skorzystać ze wsparcia podwójnego zapisu.
++ Funkcja podwójnego zapisu zapewnia ściśle powiązaną, działającą niemal w czasie rzeczywistym i dwukierunkową integrację między aplikacjami finansowymi i operacyjnymi oraz aplikacjami do obsługi klientów. Taka integracja stanowi Microsoft Dynamics 365 miejsce, gdzie można znaleźć wszystkie rozwiązania biznesowe. Klienci, którzy korzystają z aplikacji Dynamics 365 Finance i Dynamics 365 Supply Chain Management, ale używają rozwiązań innych firm niż Microsoft do zarządzania relacjami z klientami (CRM), przenoszą się do Dynamics 365, aby skorzystać ze wsparcia podwójnego zapisu.
 + Dane pochodzące od odbiorców, produktów, operacji, projektów i Internetu rzeczy (IoT) automatycznie przepływają do Dataverse w ramach podwójnego zapisu. To połączenie jest przydatne w przypadku firm, które interesują się tymi samymi rozszerzeniami Power Platform.
 + Infrastruktura podwójnego zapisywania jest zgodna z zasadą braku kodowania/małej ilości kodowania. Wymagane są minimalne nakłady pracy inżynieryjnej, aby rozszerzyć standardowe mapy od tabeli do tabeli i uwzględnić mapy niestandardowe.
 + Podwójne zapisywanie obsługuje tryb online i tryb offline. Firma Microsoft jest jedyną firmą, która oferuje obsługę trybów online i offline.

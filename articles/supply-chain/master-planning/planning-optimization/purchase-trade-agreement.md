@@ -1,6 +1,6 @@
 ---
 title: Planowanie główne za pomocą umów handlowych zakupu
-description: W tym temacie opisano sposób, w jaki Optymalizacja planowania może znaleźć dostawcę i/lub czas realizacji zamówienia planowanego na podstawie najlepszej ceny lub czasu realizacji, który znajduje się w umowach handlowych zakupu.
+description: W tym artykule opisano sposób, w jaki Optymalizacja planowania może znaleźć dostawcę i/lub czas realizacji zamówienia planowanego na podstawie najlepszej ceny lub czasu realizacji, który znajduje się w umowach handlowych zakupu.
 author: t-benebo
 ms.date: 06/29/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: cb790836042506ed6676ee7edbd8bba58191519b
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 29f0f44289e44b21cb304bd1f423d63f9f58f2db
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468421"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873761"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>Planowanie główne za pomocą umów handlowych zakupu
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie opisano sposób, w jaki Optymalizacja planowania może znaleźć dostawcę i/lub czas realizacji zamówienia planowanego na podstawie najlepszej ceny lub czasu realizacji, który znajduje się we wszystkich umowach handlowych zakupu, które zostały określone dla danego produktu.
+W tym artykule opisano sposób, w jaki Optymalizacja planowania może znaleźć dostawcę i/lub czas realizacji zamówienia planowanego na podstawie najlepszej ceny lub czasu realizacji, który znajduje się we wszystkich umowach handlowych zakupu, które zostały określone dla danego produktu.
 
 ## <a name="turn-on-the-purchase-trade-agreements-for-planning-optimization-feature"></a>Włącz funkcję Umów handlowych zakupu na potrzeby Optymalizacji planowania
 

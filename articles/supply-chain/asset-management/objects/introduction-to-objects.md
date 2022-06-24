@@ -1,6 +1,6 @@
 ---
 title: Wprowadzenie do składników majątku
-description: Ten temat stanowi przegląd składników majątku w module Zarządzanie składnikami majątku.
+description: Ten artykuł stanowi przegląd składników majątku w module Zarządzanie składnikami majątku.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 43a5646bc4a1301922781d8b083dfa709befe3dca0fad1074b5433c6e02f5c66
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ee61c43f93d68747a7095dc9317674a435553c8a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767515"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874196"
 ---
 # <a name="introduction-to-assets"></a>Wprowadzenie do składników majątku
 
@@ -30,9 +30,9 @@ ms.locfileid: "6767515"
 
  
 
-Ten temat stanowi przegląd składników majątku w module Zarządzanie składnikami majątku. *Składnik majątku* to dowolny typ urządzenia, np. maszyna lub jej część, wymagający konserwacji, serwisowania lub naprawy.
+Ten artykuł stanowi przegląd składników majątku w module Zarządzanie składnikami majątku. *Składnik majątku* to dowolny typ urządzenia, np. maszyna lub jej część, wymagający konserwacji, serwisowania lub naprawy.
 
-Składnik majątku jest automatycznie aktualizowany o powiązane z nim informacje. Na przykład powiązane informacje mogą dotyczyć nowych lub zaktualizowanych zleceń pracy. Składniki majątku można tworzyć za pomocą elementów menu **Wszystkie składniki majątku** lub **Oczekujące składniki majątku**. W tym temacie wyjaśniono, jak tworzyć zasoby za pomocą elementu menu **Wszystkie składniki majątku**. Aby uzyskać informacje dotyczące sposobu tworzenia składników majątku przy użyciu elementu menu **Oczekujące składniki majątku**, zobacz temat [Tworzenie składników majątku na zamówień zakupu](../objects/create-objects-based-on-purchase-orders.md).
+Składnik majątku jest automatycznie aktualizowany o powiązane z nim informacje. Na przykład powiązane informacje mogą dotyczyć nowych lub zaktualizowanych zleceń pracy. Składniki majątku można tworzyć za pomocą elementów menu **Wszystkie składniki majątku** lub **Oczekujące składniki majątku**. W tym artykule wyjaśniono, jak tworzyć zasoby za pomocą elementu menu **Wszystkie składniki majątku**. Aby uzyskać informacje dotyczące sposobu tworzenia składników majątku przy użyciu elementu menu **Oczekujące składniki majątku**, zobacz temat [Tworzenie składników majątku na zamówień zakupu](../objects/create-objects-based-on-purchase-orders.md).
 
 ## <a name="all-assets"></a>Wszystkie składniki aktywów
 

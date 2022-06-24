@@ -1,6 +1,6 @@
 ---
 title: Zgłaszanie jako gotowych z urządzenia karty zadania
-description: W tym temacie opisano sposób konfigurowania systemu w taki sposób, aby użytkownicy urządzenia obsługującego karty zadań mogli zgłaszać produkty gotowe ze zlecenia produkcyjnego do magazynu.
+description: W tym artykule opisano sposób konfigurowania systemu w taki sposób, aby użytkownicy urządzenia obsługującego karty zadań mogli zgłaszać produkty gotowe ze zlecenia produkcyjnego do magazynu.
 author: johanhoffmann
 ms.date: 07/31/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 67fa97c938f091c23a41ddd5aaf34a32c5a13c93
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 3d1a45ad00e59581f27f2e822ccb47430219c501
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102833"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857381"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Zgłaszanie jako gotowych z urządzenia karty zadania
 
 [!include [banner](../includes/banner.md)]
 
-Pracownicy korzystają z strony **Zgłaszanie postępu** na urządzeniu z kartami zadań w celu raportowania ilości ukończonych dla zadania produkcyjnego. W tym temacie opisano, jak skonfigurować różne opcje, które określają, w jaki sposób pracownicy mogą zgłaszać ukończenie za pomocą tej strony i co dzieje się dalej. Dostępne opcje:
+Pracownicy korzystają z strony **Zgłaszanie postępu** na urządzeniu z kartami zadań w celu raportowania ilości ukończonych dla zadania produkcyjnego. W tym artykule opisano, jak skonfigurować różne opcje, które określają, w jaki sposób pracownicy mogą zgłaszać ukończenie za pomocą tej strony i co dzieje się dalej. Dostępne opcje:
 
 - Umożliwia określenie, czy i jak ilości zgłoszone jako gotowe są dodawane do magazynu.
 - Umożliwia określenie, czy i w jaki sposób mają być generowane i stosowane numery partii podczas zgłaszania towarów gotowych.

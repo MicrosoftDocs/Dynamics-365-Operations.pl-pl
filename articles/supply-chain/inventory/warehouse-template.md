@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie magazynu przy użyciu szablonu konfiguracji magazynu
-description: W tym temacie wyjaśniono sposób konfigurowania magazynu przy użyciu szablonu konfiguracji magazynu.
+description: W tym artykule wyjaśniono sposób konfigurowania magazynu przy użyciu szablonu konfiguracji magazynu.
 author: yufeihuang
 ms.date: 11/16/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 6698d615826a1555426824bb76db654fde539360
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 737b6f2f645ff270e5a49d54ca7542df3c075f94
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571096"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856114"
 ---
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Konfigurowanie magazynu przy użyciu szablonu konfiguracji magazynu
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono sposób konfigurowania magazynu przy użyciu szablonu konfiguracji magazynu. Dostępnych jest kilka wstępnie zdefiniowanych szablonów konfiguracji, których można użyć. Aby uzyskać informacje na temat korzystania z tych szablonów, zobacz [Szablony danych konfiguracji](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md).
+W tym artykule wyjaśniono sposób konfigurowania magazynu przy użyciu szablonu konfiguracji magazynu. Dostępnych jest kilka wstępnie zdefiniowanych szablonów konfiguracji, których można użyć. Aby uzyskać informacje na temat korzystania z tych szablonów, zobacz [Szablony danych konfiguracji](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md).
 
 ## <a name="scenarios-where-configuration-templates-can-be-helpful"></a>Scenariusze, w których przydatne są szablony konfiguracji
 
@@ -38,7 +38,7 @@ Szablony konfiguracji przydają się w wielu scenariuszach. Oto kilka przykład�
 - Chcesz szybko przygotować demonstrację funkcji magazynu.
 - Chcesz, aby istniejące towary i magazyny używały funkcji w module Zarządzanie magazynem zamiast funkcji w module Zarządzanie zapasami.
 
-Ten temat dotyczy pierwszego z tych scenariuszy. Pokazuje, jak można użyć szablonu konfiguracji do skopiowania ustawień konfiguracji ze środowiska testowego do środowiska produkcyjnego.
+Ten artykuł dotyczy pierwszego z tych scenariuszy. Pokazuje, jak można użyć szablonu konfiguracji do skopiowania ustawień konfiguracji ze środowiska testowego do środowiska produkcyjnego.
 
 ## <a name="copy-a-configuration-setup-from-a-test-environment-to-a-production-environment"></a>Kopiowanie ustawień konfiguracji ze środowiska testowego do środowiska produkcyjnego
 
@@ -90,9 +90,9 @@ Można pobrać plik zip pakietu danych. Ten plik zawiera wszystkie dane w wybran
 
 Opcja **Wyświetl dziennik wykonywania** umożliwia uzyskanie szczegółowych informacji o każdej importowanej jednostce danych. Aby szybko pobrać dane docelowe, można użyć widoku danych pośrednich. Umożliwia to sprawdzenie wyglądu zaimportowanych danych na powiązanych stronach w aplikacji. Jeżeli używane są szablony danych domyślnych, sekwencja importu dla każdej jednostki danych działa we wstępnie zdefiniowany sposób, aby zapewnić, że najpierw zostaną zaimportowane wszystkie dane zależne. Jeżeli częścią projektu są niestandardowe jednostki danych, należy zdefiniować prawidłową sekwencję. Aby uzyskać więcej informacji, zobacz temat [Szablony danych konfiguracji](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md).
 
-Aby uzyskać więcej informacji na temat sposobu korzystania z szablonu magazynu do skopiowania konfiguracji magazynu z jednej firmy do nowej firmy w tym samym wystąpieniu, zobacz ten 3 minutowy film w serwisie YouTube o [sposobie użycia szablonu magazynu służy do kopiowania konfiguracji w Finance and Operations](https://www.youtube.com/watch?v=K2WIfFlqJYs).
+Aby uzyskać więcej informacji na temat sposobu korzystania z szablonu magazynu do skopiowania konfiguracji magazynu z jednej firmy do nowej firmy w tym samym wystąpieniu, zobacz ten 3 minutowy film w serwisie YouTube: [jak korzystać z szablonu magazynu do kopiowania konfiguracji dla rozwiązania Finance and Operations](https://www.youtube.com/watch?v=K2WIfFlqJYs).
 
-## <a name="related-topic"></a>Powiązany temat
+## <a name="related-article"></a>Powiązany artykuł
 
 [Szablony danych konfiguracji](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md)
 

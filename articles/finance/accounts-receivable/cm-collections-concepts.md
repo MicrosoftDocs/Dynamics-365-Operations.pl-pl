@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 508723752ec7ae5f48e52c728b6ef526ec49e4e2
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: f1e6932740c33ae418ac633623680eda6af7a592
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8723031"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858532"
 ---
 # <a name="collections-management-key-concepts"></a>Podstawowe pojęcia związane z zarządzaniem windykacjami
 
@@ -34,9 +34,9 @@ Przed rozpoczęciem konfigurowania lub pracy z windykacjami należy zapoznać si
 - W jednym kroku można tworzyć transakcje odpisu.
 - W jednym kroku można przetwarzać płatności przy niewystarczających funduszach.
 
-W tym temacie opisano poszczególne pojęcia.
+W tym artykule opisano poszczególne pojęcia.
 
-## <a name="customer-aging-snapshots"></a>Migawka wiekowania odbiorcy 
+## <a name="customer-aging-snapshots"></a>Migawka wiekowania odbiorcy
 
 Migawka wiekowania zawiera obliczone wiekowane salda dla odbiorcy w określonym punkcie w czasie. Informacje migawki wiekowania pojawiają się na stronie listy **Wiekowane salda** i na stronie **Windykacja**. Aby można było przejrzeć informacje na stronach listy windykacji (**Wiekowanie sald**, **Działania windykacji** i **Sprawy dotyczące windykacji**), należy utworzyć migawkę wiekowania.
 
@@ -86,7 +86,7 @@ Okienko akcji zawiera przyciski, które wyświetlają powiązane informacje dla 
 
 Można uchylić, przywróć lub wycofać pełne noty odsetkowe, opłaty i odsetki transakcji, które są częścią not odsetkowych. Można to zrobić na karcie **Windykacja** w okienku akcji na stronie listy **wszystkich odbiorców**, klikając **notę odsetkową**, **odsetki transakcji** lub **opłaty**.
 
-Te zmiany wpływają tylko na noty odsetkowe oraz odsetki i opłaty, których dotyczą. Aby uzyskać informacje dotyczące sposobu wypisywania wszystkich opłat, które jest należny od odbiorcy, zapoznaj się z sekcją [Tworzenie transakcji odpisu](#creating-write-off-transactions) w tym temacie.
+Te zmiany wpływają tylko na noty odsetkowe oraz odsetki i opłaty, których dotyczą. Aby uzyskać informacje dotyczące sposobu wypisywania wszystkich opłat, które jest należny od odbiorcy, zapoznaj się z sekcją [Tworzenie transakcji odpisu](#creating-write-off-transactions) w tym artykule.
 
 Aby uzyskać więcej informacji, zobacz Tworzenie kodu odsetek z zakresem i Przetwarzanie odsetek.
 

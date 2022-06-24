@@ -1,6 +1,6 @@
 ---
 title: Funkcja interwału łączenia
-description: Ten temat zawiera informacje pomocne w wyborze spośród miesięcznych, kwartalnych, półrocznych i rocznych interwałów łączenia.
+description: Ten artykuł zawiera informacje pomocne w wyborze spośród miesięcznych, kwartalnych, półrocznych i rocznych interwałów łączenia.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,24 +15,24 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: d1b8af3d5f8f6a6812fe309f57f682d0c5023d00
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 2de5f1e9d52de41388298031a03fbc487a1b1cde
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710450"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886432"
 ---
 # <a name="compounding-interval-functionality"></a>Funkcja interwału łączenia
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Ten temat zawiera informacje pomocne w wyborze spośród miesięcznych, kwartalnych, półrocznych i rocznych interwałów łączenia. Funkcja interwału łączenia służy do ustalania liczby okresów łączenia na rok w harmonogramie płatności wynajmu. Każdy z czterech przykładów w tym temacie przedstawia sposób, w jaki harmonogram płatności wynajmu będzie wyglądał z innym interwałem.
+Ten artykuł zawiera informacje pomocne w wyborze spośród miesięcznych, kwartalnych, półrocznych i rocznych interwałów łączenia. Funkcja interwału łączenia służy do ustalania liczby okresów łączenia na rok w harmonogramie płatności wynajmu. Każdy z czterech przykładów w tym artykule przedstawia sposób, w jaki harmonogram płatności wynajmu będzie wyglądał z innym interwałem.
 
 Nie można wybrać interwału łączenia, który jest rzadszy niż częstotliwość opłat z tytułu wynajmu. Na przykład kwartalny interwał łączenia nie może być używany z miesięczną częstotliwością opłat, a roczny okres łączenia nie może być używany z półroczną częstotliwością opłat. Wybranie interwału łączenia, który jest rzadszy niż częstotliwość opłat z tytułu wynajmu, skutkuje wyświetleniem komunikatu o błędzie.
 
 > [!NOTE]
-> We wszystkich czterech przykładach w tym temacie interwał łączenia jest zgodny z częstotliwością opłat.
+> We wszystkich czterech przykładach w tym artykule interwał łączenia jest zgodny z częstotliwością opłat.
 
 ## <a name="examples"></a>Przykłady
 

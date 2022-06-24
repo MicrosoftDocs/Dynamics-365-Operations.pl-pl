@@ -1,6 +1,6 @@
 ---
 title: Automatyczne stosowanie przedpłat do faktur od dostawcy
-description: W tym temacie opisano możliwości automatycznego stosowania przedpłat do faktur od dostawcy.
+description: W tym artykule opisano możliwości automatycznego stosowania przedpłat do faktur od dostawcy.
 author: sunfzam
 ms.date: 10/19/2021
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8583962c41a7ac5e27463f325ddc2ccd367331cc
-ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
+ms.openlocfilehash: 547573d187460a900df7f4927ac062bd9d456729
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2022
-ms.locfileid: "8358226"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900079"
 ---
 # <a name="automatically-apply-to-vendor-invoices"></a>Automatyczne stosowanie do faktur od dostawcy
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano możliwości automatycznego stosowania przedpłat do faktur od dostawcy. Przedpłatę można utworzyć dla zamówienia zakupu w ramach umowy zakupu. Po otrzymaniu faktury od dostawcy przedpłata może zostać użyta do rozliczenia rozrachunków z dostawcami z faktury od dostawcy. Nowa funkcja umożliwia systemowi automatyczne używanie numerów zamówień zakupu na fakturze od dostawcy do wyszukiwania odpowiednich przedpłat podczas importowania faktury od dostawcy.
+W tym artykule opisano możliwości automatycznego stosowania przedpłat do faktur od dostawcy. Przedpłatę można utworzyć dla zamówienia zakupu w ramach umowy zakupu. Po otrzymaniu faktury od dostawcy przedpłata może zostać użyta do rozliczenia rozrachunków z dostawcami z faktury od dostawcy. Nowa funkcja umożliwia systemowi automatyczne używanie numerów zamówień zakupu na fakturze od dostawcy do wyszukiwania odpowiednich przedpłat podczas importowania faktury od dostawcy.
 
 Jeśli zostaną znalezione przedpłaty i można je zastosować, wiersze zostaną dodane do istniejących wierszy faktury, aby zastosować przedpłaty. Wiersze przedpłaty nie są nigdy rozważane w trakcie procesu uzgadniania faktur.
 

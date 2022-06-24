@@ -1,6 +1,6 @@
 ---
-title: Konfigurowanie numeracji według magazynów
-description: W tym temacie omówiono konfigurowanie numeracji dokumentów przyjęcia produktów dla zakupu i dokumentów dostawy dla sprzedaży z podziałem na magazyny dla Polski.
+title: Konfigurowanie sekwencji identyfikatorów według magazynu
+description: W tym artykule omówiono konfigurowanie numeracji dokumentów przyjęcia produktów dla zakupu i dokumentów dostawy dla sprzedaży z podziałem na magazyny dla Polski.
 author: ShylaThompson
 ms.date: 09/11/2018
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Poland
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c688064654828b162699b66ef2e0f89d82fd601933b7e3dfe2f074b011900517
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c1e1b4a867f016425fab50a29fc703984f604f8c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779352"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908944"
 ---
-# <a name="set-up-number-sequences-by-warehouse"></a>Konfigurowanie numeracji według magazynów
+# <a name="set-up-number-sequences-by-warehouse"></a>Konfigurowanie sekwencji identyfikatorów według magazynu
 
 [!include[banner](../includes/banner.md)]
 
-W tym temacie omówiono konfigurowanie numeracji dokumentów przyjęcia produktów dla zakupu i dokumentów dostawy dla sprzedaży z podziałem na magazyny dla Polski.
+W tym artykule omówiono konfigurowanie numeracji dokumentów przyjęcia produktów dla zakupu i dokumentów dostawy dla sprzedaży z podziałem na magazyny dla Polski.
 
 ## <a name="set-up-a-number-sequence-for-purchase-product-receipts-by-warehouse"></a>Konfigurowanie sekwencji numerów dla dokumentów przyjęcia produktów zakupionych według magazynu
 

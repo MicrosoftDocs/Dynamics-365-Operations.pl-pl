@@ -1,6 +1,6 @@
 ---
 title: Instalowanie dodatku Analiza Internetu rzeczy (IoT) w usługach LCS
-description: W tym temacie objaśniono, jak zainstalować dodatek analizy Internetu rzeczy (IoT) w usługach Microsoft Dynamics Lifecycle Services (LCS).
+description: W tym artykule objaśniono, jak zainstalować dodatek analizy Internetu rzeczy (IoT) w usługach Microsoft Dynamics Lifecycle Services (LCS).
 author: johanhoffmann
 ms.date: 07/07/2020
 ms.topic: article
@@ -14,25 +14,25 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 12ffa71dc1c2badaffdc2e419a47d855635016f2
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 52fe4c4a79378aca5f1e64c8b3f4fa85199c9911
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679031"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887494"
 ---
 # <a name="install-the-iot-intelligence-add-in-in-lcs"></a>Instalowanie dodatku Analiza Internetu rzeczy (IoT) w usługach LCS
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie objaśniono, jak zainstalować dodatek analizy Internetu rzeczy (IoT) w usługach Microsoft Dynamics Lifecycle Services (LCS). Należy zauważyć, że dodatki nie mogą być instalowane w środowisku demonstracyjnym/próbnym. Aby można było zainstalować dodatek, trzeba [utworzyć zasoby platformy Azure](iot-azure-setup.md).
+W tym artykule objaśniono, jak zainstalować dodatek analizy Internetu rzeczy (IoT) w usługach Microsoft Dynamics Lifecycle Services (LCS). Należy zauważyć, że dodatki nie mogą być instalowane w środowisku demonstracyjnym/próbnym. Aby można było zainstalować dodatek, trzeba [utworzyć zasoby platformy Azure](iot-azure-setup.md).
 
 Analizę IoT można konfigurować bez pisania kodu. Oto podstawowe kroki.
 
 1. [Skonfiguruj zasoby platformy Azure](iot-azure-setup.md) — utwórz centrum IoT, pamięć podręczną Redis i magazyn kluczy, które będą dostępny z poziomu aplikacji Supply Chain Management.
 2. [Formaty schematu wiadomości dla usługi IoT Hub](iot-schema-format.md) — skonfiguruj urządzenia do wysyłania wiadomości do usługi IoT Hub oraz zdefiniuj format komunikatu JSON (JavaScript Object Notation).
 3. W zarządzaniu funkcjami włącz flagę funkcji analizy IoT.
-4. Zainstaluj dodatek analizy IoT w usłudze Microsoft Dynamics Lifecycle Services (LCS) – zainstaluj ten dodatek w usłudze LCS i skonfiguruj wpisy tajne platformy Azure (jak opisano w tym temacie).
+4. Zainstaluj dodatek analizy IoT w usłudze Microsoft Dynamics Lifecycle Services (LCS) – zainstaluj ten dodatek w usłudze LCS i skonfiguruj wpisy tajne platformy Azure (jak opisano w tym artykule).
 5. [Skonfiguruj metryki](iot-metrics-setup.md) — skonfiguruj metryki w aplikacji Supply Chain Management.
 6. [Skonfiguruj scenariusz](iot-scenario-setup.md) — skonfiguruj scenariusze w aplikacji Supply Chain Management.
 

@@ -1,6 +1,6 @@
 ---
 title: Wiekowanie pobierania z zapasów dla dyrektywy lokalizacji
-description: W tym temacie wyjaśniono, jak używać strategii dyrektywy lokalizacji „pierwsze na wejściu, pierwsze na wyjściu” (FIFO) i „ostatnie na wejściu, pierwsze na wyjściu” (LIFO) podczas pobierania.
+description: W tym artykule wyjaśniono, jak używać strategii dyrektywy lokalizacji „pierwsze na wejściu, pierwsze na wyjściu” (FIFO) i „ostatnie na wejściu, pierwsze na wyjściu” (LIFO) podczas pobierania.
 author: Mirzaab
 ms.date: 07/15/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 229dd0033e3eae4bdd33acca6736b7a9feec8c9b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 34ce119ca70596f0e40797c4b44a8fba4d5b7e0e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676279"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885704"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Wiekowanie pobierania z zapasów dla dyrektywy lokalizacji
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak używać strategii dyrektywy lokalizacji „pierwsze na wejściu, pierwsze na wyjściu” (FIFO) i „ostatnie na wejściu, pierwsze na wyjściu” (LIFO) podczas pobierania. Te strategie działają w połączeniu z datami wiekowania, które są rejestrowane dla lokalizacji w celu śledzenia, kiedy zapasy po raz pierwszy trafiły do magazynu. Funkcja *Wiekowanie pobierania z zapasów dla dyrektywy lokalizacji* używa daty w lokalizacji, aby ustalić wiekowanie. Funkcja *Stan lokalizacji w magazynie* aktualizuje datę w lokalizacji na podstawie daty ze numeru identyfikacyjnego.
+W tym artykule wyjaśniono, jak używać strategii dyrektywy lokalizacji „pierwsze na wejściu, pierwsze na wyjściu” (FIFO) i „ostatnie na wejściu, pierwsze na wyjściu” (LIFO) podczas pobierania. Te strategie działają w połączeniu z datami wiekowania, które są rejestrowane dla lokalizacji w celu śledzenia, kiedy zapasy po raz pierwszy trafiły do magazynu. Funkcja *Wiekowanie pobierania z zapasów dla dyrektywy lokalizacji* używa daty w lokalizacji, aby ustalić wiekowanie. Funkcja *Stan lokalizacji w magazynie* aktualizuje datę w lokalizacji na podstawie daty ze numeru identyfikacyjnego.
 
 Za pomocą strategii FIFO i LIFO można wysyłać zarówno towary śledzone wsadowo, jak i towary nieśledzone partiami, na podstawie daty wprowadzenia zapasów do magazynu. Ta możliwość może być szczególnie przydatna w przypadku nieśledzonych partii zapasów, gdy data wygaśnięcia nie jest dostępna do sortowania.
 

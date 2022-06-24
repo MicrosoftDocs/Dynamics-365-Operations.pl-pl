@@ -1,6 +1,6 @@
 ---
 title: Dodawanie języków do witryny
-description: W tym temacie opisano sposób dodawania obsługi dodatkowych języków do witryny Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano sposób dodawania obsługi dodatkowych języków do witryny Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 12/12/2019
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d118c90dc16be964bb22aa6f170fe2d2f009b3e9
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 69ee1d744ce26d5040d80e470b18d87bbddbda26
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964561"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871813"
 ---
 # <a name="add-languages-to-your-site"></a>Dodawanie języków do witryny
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano sposób dodawania obsługi dodatkowych języków do witryny Microsoft Dynamics 365 Commerce.
+W tym artykule opisano sposób dodawania obsługi dodatkowych języków do witryny Microsoft Dynamics 365 Commerce.
 
-Serwis www można zlokalizować w dowolnym języku, który jest obsługiwany przez Commerce. (W dalszej części tego tematu zostanie wyświetlona lista obsługiwanych języków.) Aby dodać język do witryny sieci Web, należy go najpierw dodać do sklepu internetowego powiązanego z witryną.
+Serwis www można zlokalizować w dowolnym języku, który jest obsługiwany przez Commerce. (W dalszej części tego artykułu zostanie wyświetlona lista obsługiwanych języków.) Aby dodać język do witryny sieci Web, należy go najpierw dodać do sklepu internetowego powiązanego z witryną.
 
 ## <a name="add-a-language-to-an-online-store"></a>Dodawanie języka do sklepu internetowego
 

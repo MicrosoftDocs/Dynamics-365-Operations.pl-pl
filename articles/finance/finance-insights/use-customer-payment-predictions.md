@@ -1,6 +1,6 @@
 ---
 title: Korzystanie z prognoz płatności odbiorcy
-description: Ten temat omawia wymagania wstępne i ogólne czynności, które są niezbędne do korzystania z wersji próbnej modułu Szczegółowe dane finansowe.
+description: Ten artykuł omawia wymagania wstępne i ogólne czynności, które są niezbędne do korzystania z wersji próbnej modułu Finance Insights.
 author: ShivamPandey-msft
 ms.date: 11/03/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: ecc864485dfc106df22b48e92a85f2c73d58e0e8
-ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
+ms.openlocfilehash: 330642624b55a6772ef149b70873021401a6bd83
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740632"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901410"
 ---
 # <a name="use-customer-payment-predictions"></a>Korzystanie z prognoz płatności odbiorcy
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób korzystania z funkcji Prognozy płatności odbiorcy. Przed użyciem tej funkcji upewnij się, że wykonano dla niej czynności konfiguracyjne. Aby uzyskać więcej informacji, zobacz [Włączanie prognoz płatności odbiorcy](enable-cust-paymnt-prediction.md).
+W tym artykule opisano sposób korzystania z funkcji Prognozy płatności odbiorcy. Przed użyciem tej funkcji upewnij się, że wykonano dla niej czynności konfiguracyjne. Aby uzyskać więcej informacji, zobacz [Włączanie prognoz płatności odbiorcy](enable-cust-paymnt-prediction.md).
 
 Przewidywania płatności od odbiorców można przeglądać w obszarze roboczym **Zarządzanie kredytami i windykacjami odbiorców** oraz na dwóch nowych stronach listy: **Przewidywania płatności transakcji** i **Prognozy płatności odbiorcy**.
 

@@ -1,6 +1,6 @@
 ---
 title: Tworzenie planów wynagrodzeń o zmiennej wysokości
-description: Ten temat zawiera opis składników, które muszą zostać skonfigurowane, zanim będzie można używać wynagrodzenia o zmiennej wysokości i rejestrować pracowników w systemie wynagrodzeń o zmiennej wysokości.
+description: Ten artykuł zawiera opis składników, które muszą zostać skonfigurowane, zanim będzie można używać wynagrodzenia o zmiennej wysokości i rejestrować pracowników w planie wynagrodzeń o zmiennej wysokości.
 author: twheeloc
 ms.date: 08/24/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 589990c48d115266b57589f905de20572e76a040
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 22788dff1ee29b6920426d8ff00d412c3d5564e0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688665"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853082"
 ---
 # <a name="create-variable-compensation-plans"></a>Tworzenie planów wynagrodzeń o zmiennej wysokości
 
@@ -28,7 +28,7 @@ ms.locfileid: "8688665"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Wynagrodzenie o zmiennej wysokości to nieregularne wynagrodzenie pracownika, takie jak premie lub akcje. W tym temacie wyjaśniono, jak skonfigurować składniki potrzebne do wynagrodzenia zmiennego i zarejestrować pracownika w planie wynagrodzenia zmiennego.
+Wynagrodzenie o zmiennej wysokości to nieregularne wynagrodzenie pracownika, takie jak premie lub akcje. W tym artykule wyjaśniono, jak skonfigurować składniki potrzebne do wynagrodzenia zmiennego i zarejestrować pracownika w planie wynagrodzenia zmiennego.
 
 Obliczanie kwot wynagrodzeń o zmiennej wysokości dla pracowników może być oparte na kilku czynnikach, takich jak wydajność pracownika, poziom wynagrodzeń i wydajność działu.
 

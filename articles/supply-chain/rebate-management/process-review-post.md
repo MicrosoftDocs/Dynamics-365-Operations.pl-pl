@@ -1,6 +1,6 @@
 ---
 title: Przetwarzanie, przegląd i księgowanie rabatów
-description: W tym temacie opisano, jak przetwarzać umowy zarządzania rabatami, obliczać ich rabaty, przeglądać generowane transakcje, księgować transakcje i przeglądać księgowania.
+description: W tym artykule opisano, jak przetwarzać umowy zarządzania rabatami, obliczać ich rabaty, przeglądać generowane transakcje, księgować transakcje i przeglądać księgowania.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 524aec8025378391057275f77e31191f88e4a98b
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: e63f02e5e93ec2ce8c321a20c2a0c5886edcbe42
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690282"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901945"
 ---
 # <a name="process-review-and-post-rebates"></a>Przetwarzanie, przegląd i księgowanie rabatów
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano, jak przetwarzać umowy zarządzania rabatami, obliczać ich rabaty, przeglądać generowane transakcje, księgować transakcje i przeglądać księgowania.
+W tym artykule opisano, jak przetwarzać umowy zarządzania rabatami, obliczać ich rabaty, przeglądać generowane transakcje, księgować transakcje i przeglądać księgowania.
 
 ## <a name="change-the-status-of-a-deal"></a>Zmiana stanu umowy
 
@@ -45,7 +45,7 @@ Przejdź do zadania **Zarządzanie rabatami \> Zadania okresowe \> Obliczanie ce
 
 Można utworzyć zamówienia sprzedaży lub zamówienia zakupu, które mają transakcje źródłowe przed lub po utworzeniu odpowiedniej umowy zarządzania rabatami.
 
-Każdy wiersz transakcji można skonfigurować w taki sposób, aby automatycznie tworzył rezerwę rabatową, księgując dostawę lub fakturę dla zamówienia sprzedaży lub zamówienia zakupu. Ustaw pole **Typ transakcji** dla wiersza transakcji na *Dostawa* lub *Faktura* i ustaw opcję **Przetwarzanie podczas księgowania** na *Tak*. Jeśli pole **Typ transakcji** jest ustawione na *Zamówienie*, przetwarzanie podczas księgowania jest wyłączone. W przypadku transakcji źródłowych, które zostały utworzone po aktywowaniu transakcji, nadal można przetworzyć rezerwę zgodnie z opisem w sekcji [Przetwarzanie umów zarządzania rabatami](#process-deals) w dalszej części tego tematu.
+Każdy wiersz transakcji można skonfigurować w taki sposób, aby automatycznie tworzył rezerwę rabatową, księgując dostawę lub fakturę dla zamówienia sprzedaży lub zamówienia zakupu. Ustaw pole **Typ transakcji** dla wiersza transakcji na *Dostawa* lub *Faktura* i ustaw opcję **Przetwarzanie podczas księgowania** na *Tak*. Jeśli pole **Typ transakcji** jest ustawione na *Zamówienie*, przetwarzanie podczas księgowania jest wyłączone. W przypadku transakcji źródłowych, które zostały utworzone po aktywowaniu transakcji, nadal można przetworzyć rezerwę zgodnie z opisem w sekcji [Przetwarzanie umów zarządzania rabatami](#process-deals) w dalszej części tego artykułu.
 
 ### <a name="enable-price-details"></a>Włączanie szczegółów ceny
 

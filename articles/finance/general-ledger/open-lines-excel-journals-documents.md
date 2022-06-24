@@ -1,6 +1,6 @@
 ---
 title: Publikowanie wierszy arkuszy i dokumentów z programu Excel
-description: W tym temacie wyjaśniono, jak wprowadzać i publikować wiersze arkuszy finansowych z programu Microsoft Excel. Znajdują się tu informacje dotyczące różnych szablonów, których można używać w zależności od typu wprowadzanych transakcji.
+description: W tym artykule wyjaśniono, jak wprowadzać i publikować wiersze arkuszy finansowych z programu Microsoft Excel. Znajdują się tu informacje dotyczące różnych szablonów, których można używać w zależności od typu wprowadzanych transakcji.
 author: kweekley
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0af478f9dba8dc17791e15017be2720c2aa21a2f
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: ccb3e7a420f7f048ba93b6fadf5491e312e7ce33
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727041"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872478"
 ---
 # <a name="publish-journal-lines-and-documents-from-excel"></a>Publikowanie wierszy arkuszy i dokumentów z programu Excel
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak wprowadzać i publikować wiersze arkuszy finansowych z programu Microsoft Excel. Znajdują się tu informacje dotyczące różnych szablonów, których można używać w zależności od typu wprowadzanych transakcji.
+W tym artykule wyjaśniono, jak wprowadzać i publikować wiersze arkuszy finansowych z programu Microsoft Excel. Znajdują się tu informacje dotyczące różnych szablonów, których można używać w zależności od typu wprowadzanych transakcji.
 
 Użytkownicy mogą wprowadzać i publikować wiersze arkuszy finansowych z programu Microsoft Excel. Gdy użytkownik utworzy arkusz, przycisk **Otwórz wiersze w programie Excel** powoduje wyświetlanie dostępnych szablonów. Szablony są przeznaczone do obsługi określonych scenariuszy, jednak nie każda kombinacja typu konta jest obsługiwana w arkuszu. W poniższej tabeli przedstawiono dostępne szablony i obsługiwane przez nie typy kont.
 

@@ -1,6 +1,6 @@
 ---
 title: Dodawanie logo
-description: W tym temacie opisano, jak dodać logo do witryny w Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano, jak dodać logo do witryny w Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 09/15/2020
 ms.topic: article
@@ -16,22 +16,22 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 583462755838e51b4c988b8da057dbeeee773e0b
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 624cd6f7000f5038b9996eb94caf79719d07f99f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964586"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871787"
 ---
 # <a name="add-a-logo"></a>Dodawanie logo
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano, jak dodać logo do witryny w Microsoft Dynamics 365 Commerce.
+W tym artykule opisano, jak dodać logo do witryny w Microsoft Dynamics 365 Commerce.
 
 Podczas kompilowania witryny jedną z pierwszych rzeczy, którą prawdopodobnie będzie zrobić, będzie dodanie logo firmy lub marki do nagłówka witryny. Biblioteka modułów online Dynamics 365 Commerce oferuje moduł, który ułatwia to zadanie.
 
-Możesz dodać logo bezpośrednio do szablonu, układu lub strony. W ten sposób można łatwo zmienić logo, które pojawia się na określonych stronach lub grupach stron. W tym temacie omówiono jednak najczęstszy scenariusz dodawania logo do fragmentu nagłówka, który można ponownie wykorzystać na wszystkich stronach witryny.
+Możesz dodać logo bezpośrednio do szablonu, układu lub strony. W ten sposób można łatwo zmienić logo, które pojawia się na określonych stronach lub grupach stron. W tym artykule omówiono jednak najczęstszy scenariusz dodawania logo do fragmentu nagłówka, który można ponownie wykorzystać na wszystkich stronach witryny.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 

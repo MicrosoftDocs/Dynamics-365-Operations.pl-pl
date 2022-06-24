@@ -1,6 +1,6 @@
 ---
 title: Wymiary finansowe
-description: W tym temacie opisano różne typy wymiarów finansowych oraz sposoby ich konfigurowania.
+description: W tym artykule opisano różne typy wymiarów finansowych oraz sposoby ich konfigurowania.
 author: aprilolson
 ms.date: 03/07/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 1360139a06909c1df922570f6e577d1d310b1c48
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 3ad92e006351adbf2494a1b32325d2d4a83b76a4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722333"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849997"
 ---
 # <a name="financial-dimensions"></a>Wymiary finansowe
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie omówiono różne typy wymiarów finansowych oraz sposoby ich konfigurowania.
+W tym artykule omówiono różne typy wymiarów finansowych oraz sposoby ich konfigurowania.
 
 Strona **Wymiary finansowe** umożliwia tworzenie wymiarów finansowych, które mogą być używane jako segmenty kont w planach kont. Istnieją dwa typy wymiarów finansowych: wymiary niestandardowe i wymiary oparte na jednostce. Niestandardowe wymiary są współużytkowane przez podmioty prawne i wartości są wprowadzane i obsługiwane przez użytkowników. W wymiarach opartych na jednostce wartości są zdefiniowane w innych miejscach w systemie, takich jak jednostki Odbiorcy lub Sklepy. Niektóre wymiary oparte na jednostce są współużytkowane przez podmioty prawne, podczas gdy inne są przypisane do określonej firmy.
 

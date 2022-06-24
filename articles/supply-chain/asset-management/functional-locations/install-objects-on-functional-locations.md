@@ -1,6 +1,6 @@
 ---
 title: Instalowanie składników majątku w lokalizacjach czynności konserwacyjnych
-description: W tym temacie opisano sposób instalowania składników majątku w lokalizacjach czynności konserwacyjnych modułu Zarządzanie składnikami majątku.
+description: W tym artykule opisano sposób instalowania składników majątku w lokalizacjach czynności konserwacyjnych modułu Zarządzanie składnikami majątku.
 author: johanhoffmann
 ms.date: 06/25/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc278564b02335b44a0b35d6a3a981125e6f456b08893be2b5886f0a55396d52
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8a35f2494c616c2e456f92409d012cc434a32bd8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775754"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894509"
 ---
 # <a name="install-assets-on-functional-locations"></a>Instalowanie składników majątku w lokalizacjach czynności konserwacyjnych
 
@@ -28,7 +28,7 @@ ms.locfileid: "6775754"
 
  
 
-Po utworzeniu struktur lokalizacji czynności konserwacyjnych następnym krokiem jest zainstalowanie składników majątku w odpowiednich lokalizacjach czynności konserwacyjnych. W tym temacie opisano sposób instalowania składników majątku w tych lokalizacjach czynności konserwacyjnych modułu Zarządzanie składnikami majątku. Aby uzyskać więcej informacji o tworzeniu składników majątku, zobacz temat [Wprowadzenie do składników majątku](../objects/introduction-to-objects.md).
+Po utworzeniu struktur lokalizacji czynności konserwacyjnych następnym krokiem jest zainstalowanie składników majątku w odpowiednich lokalizacjach czynności konserwacyjnych. W tym artykule opisano sposób instalowania składników majątku w tych lokalizacjach czynności konserwacyjnych modułu Zarządzanie składnikami majątku. Aby uzyskać więcej informacji o tworzeniu składników majątku, zobacz temat [Wprowadzenie do składników majątku](../objects/introduction-to-objects.md).
 
 Jeśli została utworzona struktura składników majątku, musi ona być zainstalowana w całości w lokalizacji czynności konserwacyjnych. Dlatego tylko nadrzędne składniki majątku (składniki majątku najwyższego poziomu, które nie mają nadrzędnych składników majątku) mogą być wybierane w lokalizacji czynności konserwacyjnych. Wszystkie powiązane podrzędne składniki majątku zostaną również zainstalowane w lokalizacji czynności konserwacyjnych. Podczas instalowania składników majątku w lokalizacji czynności konserwacyjnych wymiary finansowe lokalizacji czynności konserwacyjnych mogą być automatycznie przenoszone do tych wymiarów, w zależności od konfiguracji typu lokalizacji czynności konserwacyjnych wybranej dla lokalizacji czynności konserwacyjnych. Aby uzyskać więcej informacji na temat konfigurowania typów lokalizacji czynności konserwacyjnych, zobacz temat [Typy funkcjonalnej czynności konserwacyjnych](../setup-for-functional-locations/functional-location-types.md).
 

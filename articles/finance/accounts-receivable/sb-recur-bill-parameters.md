@@ -1,6 +1,6 @@
 ---
 title: Parametry rozliczania umowy cyklicznej
-description: Ten temat wyjaśnia, jak ustawić wartości domyślne dla harmonogramów rozliczeń tworzonych w Powtarzającym się rozliczaniu umów. Wyjaśnia również, jak tworzyć grupy grafików rozliczeniowych.
+description: Ten artykuł wyjaśnia, jak ustawić wartości domyślne dla harmonogramów rozliczeń tworzonych w cyklicznym rozliczaniu umów. Wyjaśnia również, jak tworzyć grupy grafików rozliczeniowych.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 19fe77ade0523aa7fd6382266457fd739df46d75
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: cb60253f3cbb8c991ef2e106abdb1c685bf22171
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8685839"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903342"
 ---
 # <a name="recurring-contract-billing-parameters"></a>Parametry rozliczania umowy cyklicznej
 
@@ -27,7 +27,7 @@ Użyj strony **Parametry cyklicznego rozliczania kontraktów**, aby ustawić dom
 
 ## <a name="general-tab"></a>Karta Ogólne
 
-1. Na stronie **Parametry rozliczania umów cyklicznych**, w zakładce **Ogólne**, w polu **Grupa harmonogramów rozliczania** wybierz grupę harmonogramów rozliczania. Informacje o tym, jak skonfigurować grupy harmonogramów rozliczeń, znajdziesz w sekcji [Grupy harmonogramów rozliczeń](#set-up-billing-schedule-groups) w dalszej części tego tematu.
+1. Na stronie **Parametry rozliczania umów cyklicznych**, w zakładce **Ogólne**, w polu **Grupa harmonogramów rozliczania** wybierz grupę harmonogramów rozliczania. Informacje o tym, jak skonfigurować grupy harmonogramów rozliczeń, znajdziesz w sekcji [Grupy harmonogramów rozliczeń](#set-up-billing-schedule-groups) w dalszej części tego artykułu.
 2. W polu **Typ zakończenia** wybierz, w jaki sposób będzie obliczana faktura końcowa, gdy harmonogram rozliczeniowy zostanie zakończony:
 
     - **Dostosuj harmonogram** – odetnij harmonogram rozliczeniowy w dniu zakończenia, zmień status harmonogramu na **Ostatnie rozliczenie** i dostosuj powiązany z nim harmonogram odroczeń, odwracając kwotę, która nie musi być już ujmowana. Jeśli data rozpoczęcia fakturowania jest późniejsza niż data zakończenia, pozostałe okresy fakturowania są usuwane.

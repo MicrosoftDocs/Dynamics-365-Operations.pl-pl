@@ -1,6 +1,6 @@
 ---
 title: Konfiguracja księgowania dla modułu Zarządzanie rabatami
-description: W tym temacie opisano sposób konfigurowania danych do profili księgowania. Profile księgowania służą do określania wpisów księgowania w wierszach obliczeń zarządzania rabatami.
+description: W tym artykule opisano sposób konfigurowania danych do profili księgowania. Profile księgowania służą do określania wpisów księgowania w wierszach obliczeń zarządzania rabatami.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 5ed28e99e36fafa4e1275421159420a3f3380c7c
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 7a519b7153b307bf7d8cc9093572ca2711432970
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690254"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873587"
 ---
 # <a name="rebate-management-posting-setup"></a>Konfiguracja księgowania dla modułu Zarządzanie rabatami
 
@@ -30,7 +30,7 @@ Ta funkcja działa między firmami. Można określić firmę, dla których będ�
 
 Aby skonfigurować profile księgowania zarządzania rabatami dla odbiorców i dostawców, przejdź do **Zarządzania rabatami \> Ustawienia księgowania zarządzania rabatami \> Profile księgowania zarządzania rabatami**. Strona **Profile księgowania zarządzania rabatami** zawiera okienko listy, w których są widać wszystkie istniejące profile. Możesz użyć przycisków w okienku akcji, aby dodać profile do listy lub je usunąć.
 
-Pozostałe sekcje tego tematu zawierają opis sposobu używania dostępnych pól podczas tworzenia lub edytowania profilu.
+Pozostałe sekcje tego artykułu zawierają opis sposobu używania dostępnych pól podczas tworzenia lub edytowania profilu.
 
 ## <a name="posting-profile-header"></a>Nagłówek profilu księgowania
 

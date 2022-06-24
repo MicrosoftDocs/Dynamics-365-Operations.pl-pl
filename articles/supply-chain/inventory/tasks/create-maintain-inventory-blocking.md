@@ -1,6 +1,6 @@
 ---
 title: Tworzenie i obsługa blokowania zapasów
-description: W tym temacie opisano sposób korzystania z funkcji blokowania zapasów, aby zapobiec rezerwowaniu fizycznie dostępnych zapasów przez inne dokumenty źródłowe.
+description: W tym artykule opisano sposób korzystania z funkcji blokowania zapasów, aby zapobiec rezerwowaniu fizycznie dostępnych zapasów przez inne dokumenty źródłowe.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bad7d4e5794dc543bd750912ef0d3e4460e611b1
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ba95b689bedfc76598dfa81548a074f4fb7c833a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572848"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859351"
 ---
 # <a name="create-and-maintain-an-inventory-blocking"></a>Tworzenie i obsługa blokowania zapasów
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie opisano sposób korzystania z funkcji blokowania zapasów, aby zapobiec rezerwowaniu fizycznie dostępnych zapasów przez inne dokumenty źródłowe. Przed rozpoczęciem procedury opisanych w tym temacie musisz mieć fizycznie dostępne zapasy towaru.
+W tym artykule opisano sposób korzystania z funkcji blokowania zapasów, aby zapobiec rezerwowaniu fizycznie dostępnych zapasów przez inne dokumenty źródłowe. Przed rozpoczęciem procedury opisanych w tym artykule musisz mieć fizycznie dostępne zapasy towaru.
 
 ## <a name="block-inventory"></a>Blokuj zapasy
 

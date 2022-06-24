@@ -1,6 +1,6 @@
 ---
 title: Zarządzanie podróżami
-description: W tym temacie opisano sposób pracy z podróżami. Podróż zazwyczaj przedstawia statek. Jednak w zależności od twoich praktyk i procedur może reprezentować dostawcę, zamówienie zakupu lub inny element, który ma sens dla Twojej organizacji.
+description: W tym artykule opisano sposób pracy z podróżami. Podróż zazwyczaj przedstawia statek. Jednak w zależności od twoich praktyk i procedur może reprezentować dostawcę, zamówienie zakupu lub inny element, który ma sens dla Twojej organizacji.
 author: Weijiesa
 ms.date: 12/14/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 7d85ef86351f5d6ac662bb72c88d464fba82f561
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 43f28a7e30dbbe15bb02d26483289f25515fcfca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8696174"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905871"
 ---
 # <a name="manage-voyages"></a>Zarządzanie podróżami
 
@@ -96,7 +96,7 @@ Aby otworzyć widok **Wiersze**, otworzyć podróż, a następnie wybrać kartę
 
 ### <a name="information-on-the-voyage-header-fasttab"></a>Informacje na skróconej karcie nagłówek podróży
 
-Skrócona karta **Nagłówka podróży** w widoku **Wierszy** podróży zawiera podstawowe informacje opisujące podróż. Wiele pól wyświetlanych na tej skróconej karcie również pojawia się w widoku **Nagłówek**, zgodnie z opisem dalej w tym temacie.
+Skrócona karta **Nagłówka podróży** w widoku **Wierszy** podróży zawiera podstawowe informacje opisujące podróż. Wiele pól wyświetlanych na tej skróconej karcie również pojawia się w widoku **Nagłówek**, zgodnie z opisem dalej w tym artykule.
 
 ### <a name="information-on-the-voyage-lines-fasttab"></a>Informacje na skróconej wiersza nagłówek podróży
 

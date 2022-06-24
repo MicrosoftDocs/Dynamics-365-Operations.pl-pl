@@ -1,6 +1,6 @@
 ---
-title: Katalog szkoleń dla deweloperów Dynamics 365 Finance
-description: Poznaj wszystkie opcje szkoleń dla deweloperów Dynamics 365 Finance.
+title: Katalog szkoleń dla deweloperów aplikacji Dynamics 365 Finance
+description: Znajdź wszystkie opcje szkoleń dla deweloperów aplikacji Dynamics 365 Finance.
 author: margoc
 ms.topic: article
 ms.date: 07/27/2020
@@ -12,14 +12,14 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 866db1307484fd35949e87d02ca17ef0555bb654
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 729fc6a1172d651a24cc0a3bff765b09263e3cd6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062268"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903107"
 ---
-# <a name="learning-catalog-for-dynamics-365-finance-developers"></a>Katalog szkoleń dla deweloperów Dynamics 365 Finance
+# <a name="learning-catalog-for-dynamics-365-finance-developers"></a>Katalog szkoleń dla deweloperów aplikacji Dynamics 365 Finance
 
 
 
@@ -32,7 +32,7 @@ Poniższy katalog jest zorganizowany od podstawowej bazy wiedzy do konkretnych d
 | Zawartość | Opis | Format | Długość |
 |---------|-------------|--------|--------|
 | [Rozpoczynanie pracy z aplikacjami Finanse i Działania](/learn/paths/get-started-finance-operations/) | Dowiedz się, jak z pomocą aplikacji Finanse i Działania w firmach można zarządzać globalnymi systemami finansowymi, operacyjnymi procesami biznesowymi i wydajnymi łańcuchami dostaw, aby umożliwić osobom wykonywanie szybkich, świadomych decyzji. Jako pierwszy etap kariery zawodowej pracy z Finanse i Działania, musisz zapoznać się z jego funkcjami, niezależnie od żądanej roli użytkownika. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 2.2 godzin |
-| [Rozpoczęcie korzystania z Dynamics 365 Finance](/learn/modules/get-started-financial-management-dyn365-finance/) | Dynamics 365 Finance upoważnia użytkowników biznesowych do dostosowywania się do szybko zmieniających się środowisk biznesowych. Zapewnia firmom wszystko, czego potrzebują do kontrolowania finansów i zarządzania funduszami, dzięki dokładnym informacjom do planowania i prognozowania finansowego, a także pomaga im być na bieżąco z narzędziami analitycznymi. Ponieważ finanse są podstawą każdej działalności, ważne jest zapoznanie się z możliwościami Dynamics 365 Finance. | Bezpłatny, samodzielnie realizowany moduł nauki online | 1 godzina |
+| [Rozpocznij pracę z Dynamics 365 Finance](/learn/modules/get-started-financial-management-dyn365-finance/) | Aplikacja Dynamics 365 Finance upoważnia użytkowników biznesowych do dostosowywania się do szybko zmieniających się środowisk biznesowych. Zapewnia firmom wszystko, czego potrzebują do kontrolowania finansów i zarządzania funduszami, dzięki dokładnym informacjom do planowania i prognozowania finansowego, a także pomaga im być na bieżąco z narzędziami analitycznymi. Ponieważ finanse są podstawą każdej działalności, ważne jest zapoznanie się z możliwościami aplikacji Dynamics 365 Finance. | Bezpłatny, samodzielnie realizowany moduł nauki online | 1 godzina |
 
 ## <a name="core-development-concepts"></a>Podstawowe koncepty deweloperskie<a name="core-development-concepts"></a>
 
@@ -47,7 +47,7 @@ Poniższy katalog jest zorganizowany od podstawowej bazy wiedzy do konkretnych d
 | [Finanse i Działania: rozszerzanie o Dynamics 365 for Finance and Operations z PowerApps (DYN558PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-extending-dynamics-365-with-powerapps-2-6-2019) | Poznanie prostoty Microsoft PowerApps i sposobu integracji z Dynamics 365 for Finance and Operations w celu cyfrowego przekształcania firm i zwiększania wydajności użytkowników. | Bezpłatna rejestracja konferencji w sieci Web | 43 minut |
 | [Finanse i Działania: Rozszerzenia (DYN518PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-extensibility-10-26-18) | Udostępniamy przegląd i aktualizację planów rozszerzeń rozwiązania Microsoft. Omówimy szczegółowo różne sposoby rozszerzenia rozwiązania, zagłębiając się w funkcje rozszerzalności metadanych, a także możliwość zwiększenia i rozszerzenia kodu, w tym za pomocą wydajnej funkcji Chain of Command. | Bezpłatna rejestracja konferencji w sieci Web | 50 minut |
 | [Visual Studio Konfiguruj (VIR782PAL) usługę Team Services (VSTS) ](https://community.dynamics.com/365/b/techtalks/posts/visual-studio-team-services-vsts-setup-january-17-2017) | Ta rozmowa techniczna poprowadzi przez niezbędne kroki w celu skonfigurowania wystąpienia usługi VSTS i projektu w celu połączenia z projektem implementacji usługi LCS na potrzeby konfiguracji środowiska Dev/Test. | Bezpłatna rejestracja konferencji w sieci Web | 41 minut |
-| [Integrator danych Dataverse (DYN451PAL2)](https://community.dynamics.com/365/b/techtalks/posts/cds-data-integrator-april-19-2018) | Prosimy o kontaktowanie się z nami w sprawie możliwości korzystania z integratora danych Dataverse. Omówiono opcje integracji między innymi aplikacjami Dynamics 365 Customer Engagement i Dynamics 365 Finance and Operations oraz integrację z innymi rozwiązaniami innych firm. | Bezpłatna rejestracja konferencji w sieci Web | 61 minut |
+| [Integrator danych Dataverse (DYN451PAL2)](https://community.dynamics.com/365/b/techtalks/posts/cds-data-integrator-april-19-2018) | Prosimy o kontaktowanie się z nami w sprawie możliwości korzystania z integratora danych Dataverse. Omówiono opcje integracji między innymi aplikacjami Dynamics 365 Customer Engagement Dynamics 365 Finance (aplikacjami finansowymi i operacyjnymi) oraz integrację z innymi rozwiązaniami innych firm. | Bezpłatna rejestracja konferencji w sieci Web | 61 minut |
 | [Integracja między Dynamics 365 for Sales i Dynamics 365 for Finance & Operations za pomocą Dataverse (DYN340PAL)](https://community.dynamics.com/365/b/techtalks/posts/integration-between-dynamics-365-for-sales-and-dynamics-365-for-finance-amp-operations-via-cds-september-25-2017) | W tym powiązaniu Tech poinformujemy scenariusz integracji znany jako Prospekt do kasy, z działaniami dotyczącymi sprzedaży i marketingu w Dynamics 365 for Sales i wykonania w Dynamics 365 for Finance and Operations. Ponadto zostanie zajrzeć do integratora danych i sposobu modyfikacji integracji. | Bezpłatna rejestracja konferencji w sieci Web | 54 minut |
 | [Zarządzanie danymi (DYN757PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/dynamics-365-finance-scm-data-management-february-14-2020) | Dołącz do naszej rozmowy o TechTalk na temat zarządzania danymi. Informacje o dostępnych opcjach i scenariuszach, dla których są one zalecane. Będziemy ponosić informacje o strukturze zarządzania danymi, szablonach, kopiowaniu bazy danych, udostępnianiu danych między firmami i ich wydajności. | Bezpłatna rejestracja konferencji w sieci Web | 58 minut |
 | [Narzędzia integracji Azure dla Dynamics 365 for Finance and Operations z usługą (DYN386PAL) ](https://community.dynamics.com/365/b/techtalks/posts/azure-integration-tools-for-dynamics-365-for-finance-and-operations-november-2-2017) | Te TechTalk będą obejmowały typy narzędzi, które mogą wziąć pod uwagę podczas integrowania systemu z systemem Dynamics 365 dla Finanse i Działania i kiedy wybierać narzędzie do integracji. Przeprowadzi to także kilka scenariuszy integracji, które są podłączane za pomocą usługi integracji systemu Azure. | Bezpłatna rejestracja konferencji w sieci Web | 63 minut |

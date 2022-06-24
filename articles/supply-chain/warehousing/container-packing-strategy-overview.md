@@ -1,6 +1,6 @@
 ---
 title: Strategie pakowania kontenerów
-description: W tym temacie opisano różnice między strategiami pakowania kontenerów i podano przykłady.
+description: W tym artykule opisano różnice między strategiami pakowania kontenerów i podano przykłady.
 author: GalynaFedorova
 ms.date: 06/11/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-11
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ab34cee7fd495ec26f6b20da2aa43895f49f677c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 46b4a007dafbd99e5f9b7231c07a148f8101d2a4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676391"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862374"
 ---
 # <a name="container-packing-strategies"></a>Strategie pakowania kontenerów
 
 [!include [banner](../includes/banner.md)]
 
-*Strategia pakowania kontenerów* to strategia, która umożliwia definiowanie alokacji towarów między kontenerami. W tym temacie wyjaśniono różnice pomiędzy strategiami *Pakowaniem do wszystkich otwartych pojemników* i *Pakowaniem tylko do bieżącego pojemnika*.
+*Strategia pakowania kontenerów* to strategia, która umożliwia definiowanie alokacji towarów między kontenerami. W tym artykule wyjaśniono różnice pomiędzy strategiami *Pakowaniem do wszystkich otwartych pojemników* i *Pakowaniem tylko do bieżącego pojemnika*.
 
 - **Zapakuj we wszystkie otwarte kontenery** — system musi sprawdzić wszystkie otwarte kontenery, które zostały już utworzone podczas cyklu konteneryzacji, aby upewnić się, że towar dopasuje się do jednego z nich. Podczas pakowania system sprawdza każdy towar w celu określenia, czy zmieści się w dowolnym z wcześniej utworzonych kontenerów. Jeśli przedmiot nie mieści się w istniejącym pojemniku, system tworzy nowy pojemnik i kontynuuje pracę aż do zakończenia pakowania całego zamówienia.
 

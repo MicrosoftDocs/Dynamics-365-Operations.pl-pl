@@ -1,6 +1,6 @@
 ---
 title: Pakiet zawartości Wynagrodzenia w usłudze Power BI
-description: W tym temacie opisano pakiet zawartość Wynagrodzenia dostępny dla usługi Power BI. Wyjaśniono w nim sposób uzyskiwania dostępu do raportów oraz przedstawiono informacje o używanym modelu danych.
+description: W tym artykule opisano pakiet zawartość Wynagrodzenia dostępny dla usługi Power BI. Wyjaśniono w nim sposób uzyskiwania dostępu do raportów oraz przedstawiono informacje o używanym modelu danych.
 author: jcart1106
 ms.date: 12/19/2017
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 549111dab1b6d3b66567801ae787a680a04b18e20e286e1a59d1ab388bf2a4f7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a8bc9be91a7538c3d50163832d5d4957724cd8fb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763603"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897196"
 ---
 # <a name="compensation-power-bi-content"></a>Pakiet zawartości Wynagrodzenia w usłudze Power BI
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano pakiet zawartość **Wynagrodzenia** dostępny dla usługi Microsoft Power BI. Wyjaśniono, jak uzyskać dostęp do raportów, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
+W tym artykule opisano zawartość pakietu **Wynagrodzenia** dostępnego dla usługi Microsoft Power BI. Wyjaśniono, jak uzyskać dostęp do raportów, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
 
 ## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
 Pakiet zawartości usługi Power BI zatytułowany **Wynagrodzenia** jest wyświetlany w obszarze roboczym **Zarządzanie wynagrodzeniami**, jeśli używasz jednego z następujących produktów:

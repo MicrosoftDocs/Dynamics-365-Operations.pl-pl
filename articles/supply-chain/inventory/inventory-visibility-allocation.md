@@ -1,8 +1,8 @@
 ---
-title: Widoczność zapasów Przydział zapasów
-description: Ten temat wyjaśnia, jak skonfigurować i używać funkcji alokacji zapasów, która pozwala odłożyć na bok dedykowane zapasy, aby zapewnić obsługę najbardziej dochodowych kanałów lub klientów.
+title: Alokacja zapasów dodatku Inventory Visibility
+description: Ten artykuł wyjaśnia, jak skonfigurować i używać funkcji alokacji zapasów, która pozwala odłożyć na bok dedykowane zapasy, aby zapewnić obsługę najbardziej dochodowych kanałów lub klientów.
 author: yufeihuang
-ms.date: 05/20/2022
+ms.date: 05/27/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-05-13
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 4293ead4ccfc9ba04e8b9da437134b4e97569026
-ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
+ms.openlocfilehash: ccc3a8c4b3d0649397b1d1f9139f7feebf39b02f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "8786953"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852513"
 ---
 # <a name="inventory-visibility-inventory-allocation"></a>Widoczność zapasów Przydział zapasów
 
@@ -98,7 +98,7 @@ Oto wstępnie wyliczone działania:
 
 ### <a name="add-other-physical-measures-to-the-available-to-allocate-calculated-measure"></a>Dodaj inne miary fizyczne do miary obliczanej jako dostępna do przydzielenia
 
-Aby korzystać z alokacji, musisz ustawić miarę dostępną do alokacji (`@iv`.`@available_to_allocate`). Na przykład masz źródło danych `fno` i miarę `onordered`, źródło danych `pos` i miarę `inbound` i chcesz dokonać alokacji na rękę dla sumy `fno.onordered` i `pos.inbound`. W tym przypadku `@iv.@available_to_allocate` powinno zawierać w formule `pos.inbound` i `fno.onordered`. Oto przykład:
+Aby korzystać z alokacji, musisz ustawić miarę dostępną do alokacji (`@iv.@available_to_allocate`). Na przykład masz źródło danych `fno` i miarę `onordered`, źródło danych `pos` i miarę `inbound` i chcesz dokonać alokacji na rękę dla sumy `fno.onordered` i `pos.inbound`. W tym przypadku `@iv.@available_to_allocate` powinno zawierać w formule `pos.inbound` i `fno.onordered`. Oto przykład:
 
 `@iv.@available_to_allocate` = `fno.onordered` + `pos.inbound` – `@iv.@allocated`
 
@@ -110,11 +110,12 @@ Nazwy grup ustawiasz na stronie **Konfiguracja aplikacji Power App Widoczność 
 
 Na przykład, jeśli użyjesz czterech nazw grup i ustawisz je na \[`channel`, `customerGroup`, `region`, `orderType`\], nazwy te będą ważne dla żądań związanych z alokacją, gdy wywołasz API aktualizacji konfiguracji.
 
-### <a name="allcoation-using-tips"></a>Wskazówki dotyczące używania alokacji
+### <a name="allocation-using-tips"></a>Wskazówki dotyczące używania alokacji
 
-- Dla każdego produktu funkcja przydziału powinna być używana na tym samym poziomie wymiaru, zgodnie z hierarchią indeksu produktu, którą ustawisz w [konfiguracji hierarchii indeksu produktu](inventory-visibility-configuration.md#index-configuration). Na przykład hierarchia indeksu to Miejsce, Lokalizacja, Kolor, Rozmiar. Jeśli przydzielisz pewną ilość dla jednego produktu na poziomie Miejsca, Lokalizacji, Koloru. Jeśli następnym razem użyjesz do alokacji poziomu Lokalizacja, Miejsce, Kolor, jeśli użyjesz poziomu Miejsce, Miejsce, Kolor, Rozmiar lub Miejsce, Miejsce, dane nie będą spójne.
+- Dla każdego produktu funkcja przydziału powinna być używana na tym samym *poziomie wymiaru*, zgodnie z hierarchią indeksu produktu, którą ustawisz w [konfiguracji hierarchii indeksu produktu](inventory-visibility-configuration.md#index-configuration). Przypuśćmy na przykład, że hierarchia indeksów ma wartość \[`Site`, `Location`, `Color`, `Size`\]. Jeśli przydzieliłeś pewną ilość dla jednego produktu na poziomie wymiaru \[`Site`, `Location`, `Color`\], następnym razem, gdy będziesz chciał przydzielić ten produkt, powinieneś również przydzielić go na tym samym poziomie \[`Site`, `Location`, `Color`\]. Jeśli używasz poziomu \[`Site`, `Location`, `Color`, `Size`\] lub \[`Site`, `Location`\] dane będą niespójne.
 - Zmiana nazwy grupy alokacji nie będzie miała wpływu na dane zapisane w usłudze.
 - Przydział powinien nastąpić, gdy produkt ma dodatnią ilość na ręku.
+- Aby alokować produkty z grupy wysokiego *poziomu alokacji* do podgrupy, należy użyć interfejsu API `Reallocate`. Na przykład masz hierarchię grup przydziału \[`channel`, `customerGroup`, `region`, `orderType`\] i chcesz przydzielić jakiś produkt z grupy przydziału \[Online, VIP\] do podrzędnej grupy przydziału \[Online, VIP, EU\], użyj interfejsu API `Reallocate`, aby przenieść ilość. Jeśli użyjesz interfejsu API `Allocate`, ilość zostanie przydzielona z wirtualnej wspólnej puli.
 
 ### <a name="using-the-allocation-api"></a><a name="using-allocation-api"></a>Używanie API alokacji
 
@@ -295,7 +296,7 @@ Teraz sprzedawane są trzy rowery i są one pobierane z puli przydziałów. Aby 
 
 Po tym wywołaniu ilość alokowana dla produktu zostanie zmniejszona o 3. Dodatkowo Widoczność zapasów wygeneruje zdarzenie zmiany stanu posiadania, gdy `pos.inbound` = *-3*. Alternatywnie możesz zachować wartość `pos.inbound` taką, jaka jest i po prostu skonsumować przydzieloną ilość. Jednak w tym przypadku musisz albo utworzyć inną miarę fizyczną, aby zachować zużyte ilości, albo użyć miary predefiniowanej `@iv.@consumed`.
 
-W tym żądaniu zauważ, że miara fizyczna, której używasz w treści żądania zużycia, powinna używać przeciwnego typu modyfikatora (dodawanie lub odejmowanie) niż typ modyfikatora używany dla miary obliczanej. Tak więc w tym tekście zużycia, `iv.inbound` ma wartość `Subtraction`, a nie `Addition`.
+W tym żądaniu należy zauważyć, że miara fizyczna użyta w treści żądania konsumpcji powinna mieć przeciwny typ modyfikatora (dodawanie lub odejmowanie) niż typ modyfikatora użyty w miarze obliczanej. Tak więc w tym tekście zużycia, `iv.inbound` ma wartość `Subtraction`, a nie `Addition`.
 
 Źródło danych `fno` nie może być użyte w ciele konsumpcyjnym, ponieważ zawsze twierdziliśmy, że widoczność zapasów nie może zmienić żadnych danych w źródle danych `fno`. Przepływ danych jest jednokierunkowy, co oznacza, że wszystkie zmiany ilościowe dla źródła danych `fno` muszą pochodzić z twojego środowiska Supply Chain Management.
 

@@ -1,6 +1,6 @@
 ---
 title: Omówienie materiałów niebezpiecznych
-description: Ten temat zawiera przegląd funkcji związanych z obsługą i dokumentami materiałów niebezpiecznych podczas zarządzania informacjami o produktach i zarządzania magazynem.
+description: Ten artykuł zawiera przegląd funkcji związanych z obsługą i dokumentami materiałów niebezpiecznych podczas zarządzania informacjami o produktach i zarządzania magazynem.
 author: t-benebo
 ms.date: 06/10/2020
 ms.topic: overview
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: cfea2cd6a2699bdf2a14de72a8bdeb3e8cd32a17
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: c2cae4cb65dd163e9fbf1d24cff5a0a040e3ce3a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986283"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905813"
 ---
 # <a name="hazardous-materials-overview"></a>Omówienie materiałów niebezpiecznych
 
@@ -50,7 +50,7 @@ W przypadku opracowania tych funkcji nastąpiły odwołania do następujących w
 
 Każdy zbiór rozporządzeń zawiera standardowe wykazy towarów niebezpiecznych i kodów referencyjnych. Z tego też powodu program Supply Chain Management zawiera tabelę odwołań dla wspólnych kodów z tych list. Każda lista ma również kilka unikatowych kodów, które można zdefiniować.
 
-Aby uzyskać więcej informacji na temat konfigurowania przepisów i wartości materiałów niebezpiecznych oraz sposobu przypisywania wartości do odpowiednich produktów, należy zapoznać się z następującymi tematami:
+Aby uzyskać więcej informacji na temat konfigurowania przepisów i wartości materiałów niebezpiecznych oraz sposobu przypisywania wartości do odpowiednich produktów, należy zapoznać się z następującymi artykułami:
 
 - [Ustawianie materiałów niebezpiecznych](hazmat-setup.md)
 - [Materiały niebezpieczne w produktach, zamówieniach, wysyłkach i ładunkach](hazmat-items.md)

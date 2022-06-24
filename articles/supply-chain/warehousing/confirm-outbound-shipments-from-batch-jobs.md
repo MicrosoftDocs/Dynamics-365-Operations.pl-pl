@@ -1,6 +1,6 @@
 ---
 title: Potwierdź wychodzące wysyłki z zadań wsadowych
-description: W tym temacie opisano sposób konfigurowania zadania wsadowego, które automatycznie potwierdza wysyłki wychodzących zamówień przeniesienia dla ładunków gotowych do wysyłki.
+description: W tym artykule opisano sposób konfigurowania zadania wsadowego, które automatycznie potwierdza wysyłki wychodzących zamówień przeniesienia dla ładunków gotowych do wysyłki.
 author: perlynne
 ms.date: 07/31/2020
 ms.topic: article
@@ -12,22 +12,22 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: f68dcfc0c1454ee5b095e186c52faa6c83bf8dc6
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 00749a69b17b0064290d7b41ccb2171386716302
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103922"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875109"
 ---
 # <a name="confirm-outbound-shipments-from-batch-jobs"></a>Potwierdź wychodzące wysyłki z zadań wsadowych
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób konfigurowania zadania wsadowego, które automatycznie potwierdza wysyłki wychodzących zamówień przeniesienia dla ładunków gotowych do wysyłki. Opisane tu zadanie wsadowe dotyczy tylko wysyłek zamówień przeniesienia, a nie zamówień sprzedaży.
+W tym artykule opisano sposób konfigurowania zadania wsadowego, które automatycznie potwierdza wysyłki wychodzących zamówień przeniesienia dla ładunków gotowych do wysyłki. Opisane tu zadanie wsadowe dotyczy tylko wysyłek zamówień przeniesienia, a nie zamówień sprzedaży.
 
 ## <a name="turn-the-confirm-outbound-shipments-from-batch-jobs-feature-on-or-off"></a>Włącz lub wyłącz funkcję Potwierdź przesyłki wychodzące z zadań wsadowych
 
-Aby korzystać z funkcji opisanej w tym temacie, w systemie musi być włączona funkcja *Potwierdź przesyłki wychodzące z zadań wsadowych*. Od wersji 10.0.21 Supply Chain Management version ta funkcja jest domyślnie włączona. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.25, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Potwierdź przesyłki wychodzące z zadań wsadowych* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Aby korzystać z funkcji opisanej w tym artykule, w systemie musi być włączona funkcja *Potwierdź przesyłki wychodzące z zadań wsadowych*. Od wersji 10.0.21 Supply Chain Management version ta funkcja jest domyślnie włączona. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.25, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Potwierdź przesyłki wychodzące z zadań wsadowych* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="process-outbound-shipments"></a>Przetwarzanie wysyłek wychodzących
 

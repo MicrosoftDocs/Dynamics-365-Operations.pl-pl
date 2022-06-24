@@ -1,6 +1,6 @@
 ---
-title: Konfigurowanie opcjonalnych funkcji środowiska oceny usługi Dynamics 365 Commerce
-description: W tym temacie opisano sposób konfigurowania funkcji opcjonalnych środowiska oceny Microsoft Dynamics 365 Commerce.
+title: Konfigurowanie opcjonalnych funkcji środowiska oceny rozwiązania Dynamics 365 Commerce
+description: W tym artykule opisano sposób konfigurowania funkcji opcjonalnych środowiska oceny Microsoft Dynamics 365 Commerce.
 author: psimolin
 ms.date: 07/16/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2f4e93b7ece7652b72ae2067be4de73f45a8261ada1b0bc731e2bd2147dcccc6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 39d4784e21c4fb42ca218d507616d49eff309ee1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728298"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861921"
 ---
 # <a name="configure-optional-features-for-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurowanie opcjonalnych funkcji środowiska oceny rozwiązania Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano sposób konfigurowania funkcji opcjonalnych środowiska oceny Microsoft Dynamics 365 Commerce.
+W tym artykule opisano sposób konfigurowania funkcji opcjonalnych środowiska oceny Microsoft Dynamics 365 Commerce.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -108,7 +108,7 @@ Możesz dostosować szablony wiadomości e-mail, tak aby były używane różne 
     - Zapakuj szablon zamówienia
     - Wybierz szablon zamówienia
 
-1. Szablony dostosowuje się za pomocą edytora tekstów lub HTML. Zobacz listę [obsługiwanych tokenów](#supported-tokens-in-the-email-template) w dalszej części tego tematu.
+1. Szablony dostosowuje się za pomocą edytora tekstów lub HTML. Zobacz listę [obsługiwanych tokenów](#supported-tokens-in-the-email-template) w dalszej części tego artykułu.
 1. Zaloguj się do aplikacji Commerce.
 1. Korzystając z menu po lewej stronie, przejdź do pozycji **Moduły \> Administrowanie organizacją \> Ustawienia \> Szablony wiadomości e-mail organizacji**.
 1. Aby wyświetlić wszystkie szablony, należy rozwinąć listę po lewej stronie.

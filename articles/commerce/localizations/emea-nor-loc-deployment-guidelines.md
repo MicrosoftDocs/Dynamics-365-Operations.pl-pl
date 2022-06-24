@@ -1,6 +1,6 @@
 ---
 title: Przewodniki wdrażania kas fiskalnych w Norwegii (starsze)
-description: Ten temat stanowi podręcznik wdrażania, który pokazuje sposób włączenia lokalizacji Microsoft Dynamics 365 Commerce dla Norwegii.
+description: Ten artykuł stanowi podręcznik wdrażania, który pokazuje sposób włączenia lokalizacji Microsoft Dynamics 365 Commerce dla Norwegii.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,25 +9,25 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2018-2-28
-ms.openlocfilehash: 019bac01abdc0b2e16718c08953b44fbccef83a3
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: 7a6450215f152779428d3b0fd83bf09761e2ad98
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944795"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894469"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-norway-legacy"></a>Przewodniki wdrażania kas fiskalnych w Norwegii (starsze)
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat stanowi podręcznik wdrażania, który pokazuje sposób włączenia lokalizacji Microsoft Dynamics 365 Commerce dla Norwegii. Lokalizacja składa się z kilku rozszerzeń składników rozwiązania Commerce. Te rozszerzenia umożliwiają wykonywanie takich akcji, jak drukowanie niestandardowych pól na paragonach, rejestrowanie dodatkowych zdarzeń inspekcji, transakcji sprzedaży i transakcji płatności w programie punkt sprzedaży (POS), cyfrowe podpisywanie transakcji sprzedaży i drukowanie raportów X i Z w formatach lokalnych. Aby uzyskać więcej informacji o lokalizacji dla Norwegii, zobacz temat [Funkcje kas fiskalnych dla Norwegii](./emea-nor-cash-registers.md).
+Ten artykuł stanowi podręcznik wdrażania, który pokazuje sposób włączenia lokalizacji Microsoft Dynamics 365 Commerce dla Norwegii. Lokalizacja składa się z kilku rozszerzeń składników rozwiązania Commerce. Te rozszerzenia umożliwiają wykonywanie takich akcji, jak drukowanie niestandardowych pól na paragonach, rejestrowanie dodatkowych zdarzeń inspekcji, transakcji sprzedaży i transakcji płatności w programie punkt sprzedaży (POS), cyfrowe podpisywanie transakcji sprzedaży i drukowanie raportów X i Z w formatach lokalnych. Aby uzyskać więcej informacji o lokalizacji dla Norwegii, zobacz temat [Funkcje kas fiskalnych dla Norwegii](./emea-nor-cash-registers.md).
 
 Ten przykład jest częścią zestawu Retail software development kit (SDK). Aby uzyskać informacje dotyczące zestawu SDK, zobacz [Omówienie zestawu Retail software development kit (SDK)](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
-Ten przykład składa się z rozszerzeń kolekcji Commerce runtime (CRT), usługi Retail Server i punktu sprzedaży. Aby uruchomić ten przykład, musisz zmodyfikować i skompilować projekty kolekcji CRT, usługi Retail Server i punktów sprzedaży. Zalecamy, aby w celu wprowadzenia zmian opisanych w tym temacie używać niezmodyfikowanego zestawu Retail SDK. Zalecamy również korzystanie z systemu kontroli źródła, takiego jak usługa Microsoft Visual Studio Online (VOS), w sytuacji, gdy nie zmieniono jeszcze żadnego pliku.
+Ten przykład składa się z rozszerzeń kolekcji Commerce runtime (CRT), usługi Retail Server i punktu sprzedaży. Aby uruchomić ten przykład, musisz zmodyfikować i skompilować projekty kolekcji CRT, usługi Retail Server i punktów sprzedaży. Zalecamy, aby w celu wprowadzenia zmian opisanych w tym artykule używać niezmodyfikowanego zestawu Retail SDK. Zalecamy również korzystanie z systemu kontroli źródła, takiego jak usługa Microsoft Visual Studio Online (VOS), w sytuacji, gdy nie zmieniono jeszcze żadnego pliku.
 
 > [!NOTE]
-> W usługach Commerce 10.0.8 i powyższych program Retail Server jest znany jako Commerce Scale Unit. Temat dotyczy wielu poprzednich wersji aplikacji, a więc program *Retail Server* jest stosowany w całej tej części.
+> W usługach Commerce 10.0.8 i powyższych program Retail Server jest znany jako Commerce Scale Unit. Artykuł dotyczy wielu poprzednich wersji aplikacji, a więc program *Retail Server* jest stosowany w całej tej części.
 >
 > Niektóre kroki procedury opisane w tej części różnią się w zależności od wersji aplikacji Commerce, która jest w użyciu. Aby uzyskać więcej informacji, zobacz [Nowości i zmiany w rozwiązaniu Dynamics 365 Retail](../get-started/whats-new.md).
 
@@ -1252,7 +1252,7 @@ Aby uzyskać więcej informacji, patrz [Funkcjonalność kas fiskalnych dla Norw
 
 Wykonaj następujące kroki, aby utworzyć możliwe do wdrożenia pakiety, które zawierają składniki Commerce i aby stosować te pakiety w środowisku produkcyjnym.
 
-1. Wykonaj kroki opisane w sekcji [Składniki rozszerzenia aplikacji Cloud POS](#cloud-pos-extension-components) lub [Składniki rozszerzenia aplikacji Modern POS](#modern-pos-extension-components) znajdujące się wcześniej w obrębie tej części.
+1. Wykonaj kroki opisane w sekcji [Składniki rozszerzenia aplikacji Cloud POS](#cloud-pos-extension-components) lub [Składniki rozszerzenia aplikacji Modern POS](#modern-pos-extension-components) znajdujące się wcześniej w tym artykule.
 2. Wprowadź następujące zmiany w pliku konfiguracji pakietu w folderze **RetailSdk\\aktywów**:
 
     1. W plikach konfiguracji **commerceruntime.ext.config** i **CommerceRuntime.MPOSOffline.Ext.config** dodaj następujące wiersze w sekcji **kompozycji**:

@@ -1,6 +1,6 @@
 ---
 title: Nawigacja z wyszukiwaniem
-description: W tym temacie wyjaśniono, jak za pomocą funkcji wyszukiwania nawigować między stronami.
+description: W tym artykule wyjaśniono, jak za pomocą funkcji wyszukiwania nawigować między stronami.
 author: aneesmsft
 ms.date: 08/11/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e689bef43930dbe364baefaa9f4d0231394ff4f
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: d45ad1d2a85efa561380912e82d38689fabbe119
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069991"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872686"
 ---
 # <a name="navigation-search"></a>Nawigacja z wyszukiwaniem
 
@@ -28,7 +28,7 @@ ms.locfileid: "8069991"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-W tym temacie wyjaśniono, jak za pomocą funkcji wyszukiwania nawigować między stronami.
+W tym artykule wyjaśniono, jak za pomocą funkcji wyszukiwania nawigować między stronami.
 
 Aplikacja zawiera szereg obszarów i stron ułatwiających wykonywanie różnych zadań. Aby szybko znaleźć strony z informacjami o odpowiednich zadaniach, użyj funkcji nawigacji z wyszukiwaniem.
 

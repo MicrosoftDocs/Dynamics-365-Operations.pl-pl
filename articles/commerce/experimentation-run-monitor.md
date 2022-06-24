@@ -1,6 +1,6 @@
 ---
 title: Uruchamianie i monitorowanie eksperymentu
-description: W tym temacie opisano sposób uruchamiania i monitorowania eksperymentów w usłudze innej firmy. Opisano w nim także sposób wprowadzania zmian w odmianach po rozpoczęciu eksperymentu.
+description: W tym artykule opisano sposób uruchamiania i monitorowania eksperymentów w usłudze innej firmy. Opisano w nim także sposób wprowadzania zmian w odmianach po rozpoczęciu eksperymentu.
 author: sushma-rao
 ms.date: 10/21/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: cd8864caec23f6aca30badba1a79da31301a0ddb92a74bb4a6fe027214d0f8d6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9f62c97b46fa00791de52b2804dad5edde7f625
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777579"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909590"
 ---
 # <a name="run-and-monitor-an-experiment"></a>Uruchamianie i monitorowanie eksperymentu
 
-W tym temacie opisano sposób uruchamiania i monitorowania eksperymentów w aplikacji innej firmy oraz zmiany odmian w razie potrzeby. Przed wykonaniem kroków opisanych w tym temacie najpierw należy [opublikować](experimentation-preview-publish.md) eksperyment w Commerce. 
+W tym artykule opisano sposób uruchamiania i monitorowania eksperymentów w aplikacji innej firmy oraz zmiany odmian w razie potrzeby. Przed wykonaniem kroków opisanych w tym artykule najpierw należy [opublikować](experimentation-preview-publish.md) eksperyment w Commerce. 
 
-Na poniższym diagramie przedstawiono wszystkie kroki związane z konfigurowaniem i przeprowadzaniem eksperymentu na stronie internetowej środowiska handlu elektronicznego w systemie Dynamics 365 Commerce. Dodatkowe kroki są zawarte w odrębnych tematach.
+Na poniższym diagramie przedstawiono wszystkie kroki związane z konfigurowaniem i przeprowadzaniem eksperymentu na stronie internetowej środowiska handlu elektronicznego w systemie Dynamics 365 Commerce. Dodatkowe kroki są zawarte w odrębnych artykułach.
 
 [ ![Proces użytkownika eksperymentu — uruchamianie i monitorowanie.](./media/experimentation_run_monitor.svg) ](./media/experimentation_run_monitor.svg#lightbox)
 

@@ -1,6 +1,6 @@
 ---
 title: Księgowanie odchylenia kosztów standardowych
-description: Ten temat zawiera informacje o tworzeniu profili delegowania dla standardowego kosztorysowania.
+description: Ten artykuł zawiera informacje o tworzeniu profili delegowania dla standardowego kosztorysowania.
 author: rachelprofitt
 ms.date: 04/25/2022
 ms.topic: overview
@@ -10,16 +10,16 @@ ms.search.form: InventPosting, InventItemGroup
 audience: Application User
 ms.search.region: Global
 ms.author: raprofit
-ms.openlocfilehash: bc4f1bd7c1bf7a8f214f20460b10d371d8f3c790
-ms.sourcegitcommit: 1ea145dc606e243c7f51d91a5c0dd9e385bbda4a
+ms.openlocfilehash: e7b2d04f32b75dbd1354b3ef74a41ea1b6469c8a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "8804614"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894885"
 ---
 # <a name="standard-cost-variance-posting"></a>Księgowanie odchylenia kosztów standardowych
 
-Kiedy używasz standardowego rachunku kosztów dla jednego lub więcej produktów w swojej organizacji, musisz skonfigurować [warunki wstępne dla standardowego rachunku kosztów](/supply-chain/cost-management/prerequisites-standard-costs.md). Ten temat wyjaśnia konta księgowe, które są wymagane w kroku 3 warunków wstępnych "Przydziel konta księgi głównej do księgowania pozycji, które są związane ze standardowymi odchyleniami kosztów".
+Kiedy używasz standardowego rachunku kosztów dla jednego lub więcej produktów w swojej organizacji, musisz skonfigurować [warunki wstępne dla standardowego rachunku kosztów](/supply-chain/cost-management/prerequisites-standard-costs.md). Ten artykuł wyjaśnia konta księgowe, które są wymagane w kroku 3 warunków wstępnych „Przydziel konta księgi głównej do księgowania pozycji, które są związane ze standardowymi odchyleniami kosztów”.
 
 Różne rodzaje odchylenia mogą wystąpić dla zamówień zakupu i produkcji. Przykłady odchylenia produkcji znajdziesz w części [Wspólne źródła odchylenia produkcji](/supply-chain/cost-management/common-sources-of-production-variances.md). Odchylenia cenowe w zamówieniu zakupu występują wtedy, gdy używasz kosztu standardowego dla zakupionej pozycji i występuje różnica między kosztem standardowym produktu a kwotą zafakturowaną na zamówieniu zakupu.
 

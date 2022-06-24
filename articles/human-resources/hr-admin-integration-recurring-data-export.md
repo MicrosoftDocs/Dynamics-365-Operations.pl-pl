@@ -1,6 +1,6 @@
 ---
 title: Tworzenie aplikacji do cyklicznego eksportowania danych
-description: W tym temacie opisano sposób tworzenia aplikacji logicznej Microsoft Azure, która eksportuje dane z programu Microsoft Dynamics 365 Human Resources w harmonogramie cyklicznym.
+description: W tym artykule opisano sposób tworzenia aplikacji logicznej Microsoft Azure, która eksportuje dane z programu Microsoft Dynamics 365 Human Resources w harmonogramie cyklicznym.
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c53adc56c19acae05904edcf4109a134566d30b7
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 9c840dbf4f717da3359640ee5c8231ccd129ebb2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688779"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875837"
 ---
 # <a name="create-a-recurring-data-export-app"></a>Tworzenie aplikacji do cyklicznego eksportowania danych
 
@@ -28,7 +28,7 @@ ms.locfileid: "8688779"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-W tym temacie opisano sposób tworzenia aplikacji logicznej Microsoft Azure, która eksportuje dane z programu Microsoft Dynamics 365 Human Resources w harmonogramie cyklicznym. Samouczek korzysta z pakietu usługi DMF zasobów ludzkich REST application programming interface (API), aby wyeksportować dane. Po wyeksportowaniu danych aplikacja logiczna zapisuje wyeksportowany pakiet danych w folderze rozwiązania Microsoft OneDrive for Business.
+W tym artykule opisano sposób tworzenia aplikacji logicznej Microsoft Azure, która eksportuje dane z programu Microsoft Dynamics 365 Human Resources w harmonogramie cyklicznym. Samouczek korzysta z pakietu usługi DMF zasobów ludzkich REST application programming interface (API), aby wyeksportować dane. Po wyeksportowaniu danych aplikacja logiczna zapisuje wyeksportowany pakiet danych w folderze rozwiązania Microsoft OneDrive for Business.
 
 ## <a name="business-scenario"></a>Scenariusz biznesowy
 

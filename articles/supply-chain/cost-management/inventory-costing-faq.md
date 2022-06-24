@@ -1,6 +1,6 @@
 ---
 title: Wycena zapasów – FAQ
-description: Ten temat zawiera odpowiedzi na często zadawane pytania dotyczące kosztorysowania zapasów w programie Microsoft Dynamics 365 Supply Chain Management.
+description: Ten artykuł zawiera odpowiedzi na często zadawane pytania dotyczące kosztorysowania zapasów w programie Microsoft Dynamics 365 Supply Chain Management.
 author: rachel-profitt
 ms.date: 05/03/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2022-05-03
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 45f65bd4a5cfb9bd0c4eb03ceb56eca452f6ec95
-ms.sourcegitcommit: cbe9493d479f96f271d94599ec1b85131b26169f
+ms.openlocfilehash: 467839b1d0ca6788a92ae60d46686374d0a58046
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8809292"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850852"
 ---
 # <a name="inventory-costing-faq"></a>Wycena zapasów – FAQ
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera odpowiedzi na często zadawane pytania dotyczące kosztorysowania zapasów w programie Microsoft Dynamics 365 Supply Chain Management.
+Ten artykuł zawiera odpowiedzi na często zadawane pytania dotyczące kosztorysowania zapasów w programie Microsoft Dynamics 365 Supply Chain Management.
 
 ## <a name="inventory-close-adjustments-and-recalculation"></a>Zamknięcie zapasów, korekty i przeliczenia
 
@@ -359,7 +359,7 @@ Zalecamy, byś często monitorował i korygował ujemne stany magazynowe, jeśli
 
 ### <a name="do-i-have-to-create-a-new-item-if-my-inventory-has-gone-negative-and-i-use-moving-average"></a>Czy muszę utworzyć nową pozycję, jeśli moje zapasy są ujemne, a używam średniej ruchomej?
 
-Nie Jeśli twoja organizacja pozwala na fizycznie ujemne stany magazynowe, a ty używasz średniej ruchomej jako modelu inwentaryzacji, system użyje sekwencji kosztów awaryjnych, która jest przypisana na stronie **Parametry inwentaryzacji i gospodarki magazynowej**, aby określić, w jaki sposób koszt zostanie przypisany do twoich wydań. Ogólnie rzecz biorąc, zalecamy, byś nie dopuścił do tego, by twoje zapasy były fizycznie ujemne. Aby uzyskać więcej informacji, zapoznaj się z pozostałymi pytaniami w [Negatywny poziom zapasów](#negative-inventory) we wcześniejszej części tego tematu.
+Nie Jeśli twoja organizacja pozwala na fizycznie ujemne stany magazynowe, a ty używasz średniej ruchomej jako modelu inwentaryzacji, system użyje sekwencji kosztów awaryjnych, która jest przypisana na stronie **Parametry inwentaryzacji i gospodarki magazynowej**, aby określić, w jaki sposób koszt zostanie przypisany do twoich wydań. Ogólnie rzecz biorąc, zalecamy, byś nie dopuścił do tego, by twoje zapasy były fizycznie ujemne. Aby uzyskać więcej informacji, zapoznaj się z pozostałymi pytaniami w [Negatywny poziom zapasów](#negative-inventory) we wcześniejszej części tego artykułu.
 
 ## <a name="not-stocked-products"></a>Produkty niedostępne w magazynie
 
@@ -433,7 +433,7 @@ Gdy istnieje różnica cen między zaksięgowaniem aktualizacji fizycznej i aktu
 
 ### <a name="when-i-use-moving-average-what-happens-if-there-is-an-issue-before-the-receipt"></a>Kiedy używam średniej ruchomej, co się stanie, jeśli problem pojawi się przed paragonem?
 
-Zazwyczaj problem może pojawić się przed przyjęciem, ponieważ zezwalasz na fizyczne zapasy ujemne dla grupy modelu artykułu lub ponieważ wydanie miało miejsce w przeszłości. Więcej informacji znajduje się w sekcji [Ujemny stan zapasów](#negative-inventory) we wcześniejszej części tego tematu.
+Zazwyczaj problem może pojawić się przed przyjęciem, ponieważ zezwalasz na fizyczne zapasy ujemne dla grupy modelu artykułu lub ponieważ wydanie miało miejsce w przeszłości. Więcej informacji znajduje się w sekcji [Ujemny stan zapasów](#negative-inventory) we wcześniejszej części tego artykułu.
 
 Jeśli dokonujesz wstecznych transakcji, zalecamy, byś dokładnie przeanalizował swój proces biznesowy i działania, by ustalić, czy istnieje sposób na uniknięcie tego scenariusza. Jeśli dokonasz wstecznej korekty transakcji dla pozycji, która wykorzystuje średnią ruchomą, system przypisze do transakcji bieżącą średnią ruchomą. Późniejsze wydania nie są korygowane. Więcej informacji na temat średniej ruchomej z transakcjami z datą wsteczną znajdziesz w dziale [Średnia ruchoma](moving-average.md).
 

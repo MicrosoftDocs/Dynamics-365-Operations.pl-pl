@@ -1,6 +1,6 @@
 ---
 title: Opłaty za operacje dotyczące niezgodności
-description: W tym temacie opisano sposób tworzenia opłat związanych z kontrolą jakości, które mogą być naliczane za operacje dotyczące niezgodności.
+description: W tym artykule opisano sposób tworzenia opłat związanych z kontrolą jakości, które mogą być naliczane za operacje dotyczące niezgodności.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac3306f3f9215ab03f408b8026f335dcf496515a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 29520afca07adee49846d1be987685a1ece8283c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580967"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850736"
 ---
 # <a name="charges-for-nonconformance-operations"></a>Opłaty za operacje dotyczące niezgodności
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób tworzenia opłat związanych z kontrolą jakości, które mogą być naliczane za operacje dotyczące niezgodności.
+W tym artykule opisano sposób tworzenia opłat związanych z kontrolą jakości, które mogą być naliczane za operacje dotyczące niezgodności.
 
 Strona **Opłaty związane z kontrolą jakości** służy do definiowania typów opłat, które można dodawać do operacji dotyczących niezgodności. Opłaty umożliwiają śledzenie szczegółów dotyczących obciążeń lub opłat, które są należne odbiorcy za niezgodne produkty lub należne od dostawcy za otrzymane niezgodne produkty. Opłat można również użyć do śledzenia kosztów, które są wymagane dla zewnętrznych dostawców lub usług w celu wykonania operacji.
 

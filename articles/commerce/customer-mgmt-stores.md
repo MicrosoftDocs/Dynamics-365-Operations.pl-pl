@@ -1,6 +1,6 @@
 ---
 title: Zarządzanie klientami w sklepach
-description: W tym temacie wyjaśniono, w jaki sposób detaliści mogą włączyć funkcje zarządzania klientami w punkcie sprzedaży (POS) w Microsoft Dynamics 365 Commerce.
+description: W tym artykule wyjaśniono, w jaki sposób detaliści mogą włączyć funkcje zarządzania klientami w punkcie sprzedaży (POS) w Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 12/10/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 5a352ba479ca5e635ef521b99f31bd26d5d837ac
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 805d0b5894b18e2fc34f481bdc32ada7a4b1aee0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687340"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863494"
 ---
 # <a name="customer-management-in-stores"></a>Zarządzanie klientami w sklepach
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie wyjaśniono, w jaki sposób detaliści mogą włączyć funkcje zarządzania klientami w punkcie sprzedaży (POS) w Microsoft Dynamics 365 Commerce.
+W tym artykule wyjaśniono, w jaki sposób detaliści mogą włączyć funkcje zarządzania klientami w punkcie sprzedaży (POS) w Microsoft Dynamics 365 Commerce.
 
 Bardzo ważne jest, aby skojarzyć ze sklepem możliwość tworzenia i edytowania rekordów odbiorcy w POS. W ten sposób mogą przechwytywać wszelkie aktualizacje informacji o odbiorcy, takie jak adres e-mail, numer telefonu i adres. Te informacje są pomocne w przypadku systemów przetwarzania od odbiorcy do odbiorcy, takich jak marketing, ponieważ ich efektywność zależy od dokładności danych klientów.
 

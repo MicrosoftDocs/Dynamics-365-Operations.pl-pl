@@ -1,6 +1,6 @@
 ---
 title: Kody przyczyn zliczania zapasów
-description: W tym temacie opisano sposób konfigurowania i stosowania kodów przyczyn dla zadań inwentaryzacji.
+description: W tym artykule opisano sposób konfigurowania i stosowania kodów przyczyn dla zadań inwentaryzacji.
 author: perlynne
 ms.date: 08/02/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 4c178ddf342b13a0ef8fee8b8b958554a9a31069
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 7d182f1d979543eeec700924d2bd180ee06be8ce
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500607"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857120"
 ---
 # <a name="reason-codes-for-inventory-counting"></a>Kody przyczyn zliczania zapasów
 
@@ -42,7 +42,7 @@ Przed skonfigurowaniem systemu zalecamy zdefiniowanie strategii pracy z kodami p
 
 ## <a name="turn-on-reason-code-features-in-your-system"></a>Włączanie funkcji kodów przyczyn w systemie
 
-Jeśli nie widzisz wszystkich funkcji opisanych w tym temacie w systemie, prawdopodobnie musisz włączyć funkcję *Księgowanie korekt dostępnych zapasów za pomocą konfigurowalnych kodów przyczyn połączonych z kontami przeciwstawnymi*. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
+Jeśli nie widzisz wszystkich funkcji opisanych w tym artykule w systemie, prawdopodobnie musisz włączyć funkcję *Księgowanie korekt dostępnych zapasów za pomocą konfigurowalnych kodów przyczyn połączonych z kontami przeciwstawnymi*. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
 
 - **Moduł:** *Zarządzanie magazynem*
 - **Nazwa funkcji:** *Księgowanie korekt dostępnych zapasów za pomocą konfigurowalnych kodów przyczyn połączonych z kontami przeciwstawnymi*
@@ -111,7 +111,7 @@ Aby skonfigurować kody przyczyn inwentaryzacji, wykonaj następujące kroki.
 
 ### <a name="set-up-counting-reason-code-groups"></a><a name="reason-groups"></a>Konfigurowanie grup kodów przyczyn inwentaryzacji
 
-*Grupy kodów przyczyn inwentaryzacji* mogą być używane jako część elementów menu *Korekta wewnętrzna* i *Korekta zewnętrzna* w aplikacji mobilnej Warehouse Management w celu ograniczenia listy kodów przyczyn inwentaryzacji. (Aby uzyskać więcej informacji na temat grup kodów przyczyn inwentaryzacji, zobacz sekcję [Konfigurowanie elementów menu na urządzeniu przenośnym dla korekty wewnętrznej i zewnętrznej](#setup-adjustment-in-out) w dalszej części tego tematu).
+*Grupy kodów przyczyn inwentaryzacji* mogą być używane jako część elementów menu *Korekta wewnętrzna* i *Korekta zewnętrzna* w aplikacji mobilnej Warehouse Management w celu ograniczenia listy kodów przyczyn inwentaryzacji. (Aby uzyskać więcej informacji na temat grup kodów przyczyn inwentaryzacji, zobacz sekcję [Konfigurowanie elementów menu na urządzeniu przenośnym dla korekty wewnętrznej i zewnętrznej](#setup-adjustment-in-out) w dalszej części tego artykułu).
 
 1. Przejdź do pozycji **Zarządzanie zapasami** \> **Konfiguracja** \> **Zapasy** \> **Grupy kodów przyczyn inwentaryzacji**.
 1. W okienku akcji wybierz opcję **Nowy**, aby dodać grupę.
@@ -174,7 +174,7 @@ Aby skonfigurować element menu urządzenia przenośnego dla korekty wewnętrzne
         - *Ukryj* — nie pokazuj kodu przyczyny.
 
     - **Edytuj kod przyczyny inwentaryzacji** — ustaw tę opcję na *Tak*, aby zezwolić pracownikowi na edytowanie kodu przyczyny wyświetlanego na urządzeniu przenośnym podczas inwentaryzacji. Ustaw je na *Nie*, aby uniemożliwić pracownikowi edycję kodu.
-    - **Grupa kodów przyczyn zliczania** — wybierz grupę kodów przyczyn, jeśli chcesz ograniczyć listę opcji, które są prezentowane pracownikom. Aby uzyskać informacje dotyczące konfigurowania grup kodów przyczyn, zobacz sekcję [Konfigurowanie grup kodów przyczyn inwentaryzacji](#reason-groups) wcześniej w tym temacie. 
+    - **Grupa kodów przyczyn zliczania** — wybierz grupę kodów przyczyn, jeśli chcesz ograniczyć listę opcji, które są prezentowane pracownikom. Aby uzyskać informacje dotyczące konfigurowania grup kodów przyczyn, zobacz sekcję [Konfigurowanie grup kodów przyczyn inwentaryzacji](#reason-groups) wcześniej w tym artykule. 
 
 > [!NOTE]
 > Po przypisaniu grupy kodu przyczyny inwentaryzacji do elementów menu *Korekta wewnętrzna* i *Korekta zewnętrzna*, gdy opcja **Użyj przewodnika po procesach** jest ustawiona na *Tak*, można uzyskać ograniczoną listę kodów przyczyn inwentaryzacji w ramach przetwarzania w aplikacji mobilnej Warehouse Management.

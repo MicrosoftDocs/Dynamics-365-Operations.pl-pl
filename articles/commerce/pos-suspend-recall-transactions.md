@@ -1,6 +1,6 @@
 ---
 title: Wstrzymywanie i wznawianie transakcji w punkcie sprzedaży (POS)
-description: W tym temacie opisano, jak użytkownicy mogą zawiesić transakcje w trakcie wykonywania i następnie wznowić je później lub na innej kasie przy użyciu Dynamics 365 Commerce.
+description: W tym artykule opisano, jak użytkownicy mogą zawiesić transakcje w trakcie wykonywania i następnie wznowić je później lub na innej kasie przy użyciu Dynamics 365 Commerce.
 author: jblucher
 ms.date: 11/27/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2efc88cfa7a8cede50969484d275c6fdbb2204dd2f29b3f8c7340d02cb61a79c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 761adb5e1dc1c9f6ecea42ae739fe44e1f87faeb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737561"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850204"
 ---
 # <a name="suspend-and-resume-a-transaction-in-the-point-of-sale-pos"></a>Wstrzymywanie i wznawianie transakcji w punkcie sprzedaży (POS)
 

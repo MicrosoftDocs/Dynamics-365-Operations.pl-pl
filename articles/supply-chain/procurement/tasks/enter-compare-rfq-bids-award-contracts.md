@@ -1,6 +1,6 @@
 ---
 title: Wprowadzanie i porównywanie ofert dla ZO oraz udzielanie zamówień
-description: W tym temacie pokazano sposób wprowadzania odpowiedzi na ZO, oceniania i porównywania ofert, a następnie zawierania umowy z jednym z dostawców.
+description: W tym artykule pokazano sposób wprowadzania odpowiedzi na ZO, oceniania i porównywania ofert, a następnie zawierania umowy z jednym z dostawców.
 author: GalynaFedorova
 ms.date: 07/09/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 50b403021c347498a9b489a34196e592a2041a11
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: d3ef754f2d5d58254a7c6f0e572115f8a2981ad9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677374"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893389"
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Wprowadzanie i porównywanie ofert dla ZO oraz udzielanie zamówień
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie pokazano sposób wprowadzania odpowiedzi na ZO, oceniania i porównywania ofert, a następnie zawierania umowy z jednym z dostawców. Procedurę można wykonać przy użyciu danych firmy demonstracyjnej **USMF**.
+W tym artykule pokazano sposób wprowadzania odpowiedzi na ZO, oceniania i porównywania ofert, a następnie zawierania umowy z jednym z dostawców. Procedurę można wykonać przy użyciu danych firmy demonstracyjnej **USMF**.
 
 Przed rozpoczęciem trzeba mieć ZO z dwoma wierszami, które zostało wysłane co najmniej do dwóch dostawców. Aby utworzyć to ZO, wykonaj procedurę [tworzenia zapytania ofertowego](create-request-quotation.md). Przed wykonaniem tej procedury należy skonfigurować kryteria punktowania.
 

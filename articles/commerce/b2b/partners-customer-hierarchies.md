@@ -1,6 +1,6 @@
 ---
 title: Zarządzanie partnerami biznesowymi B2B przy użyciu hierarchii klientów
-description: W tym temacie opisano, jak używać hierarchii klientów do zarządzania partnerami biznesowymi w witrynach e-commerce Microsoft Dynamics 365 Commerce typu business-to-business (B2B).
+description: W tym artykule opisano, jak używać hierarchii klientów do zarządzania partnerami biznesowymi w witrynach e-commerce Microsoft Dynamics 365 Commerce typu business-to-business (B2B).
 author: josaw1
 ms.date: 02/16/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 70acdf469be2fcddd9e2bf755e958c1b20ee2fcf
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ddd02045b5df3ce20160a4feaa23339475823d3d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686578"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864988"
 ---
 # <a name="manage-b2b-business-partners-using-customer-hierarchies"></a>Zarządzanie partnerami biznesowymi B2B przy użyciu hierarchii klientów
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie opisano, jak używać hierarchii klientów do zarządzania partnerami biznesowymi w witrynach e-commerce Microsoft Dynamics 365 Commerce typu business-to-business (B2B).
+W tym artykule opisano, jak używać hierarchii klientów do zarządzania partnerami biznesowymi w witrynach e-commerce Microsoft Dynamics 365 Commerce typu business-to-business (B2B).
 
 W centrali handlowej jednostka *hierarchia klientów* jest używana do reprezentowania organizacji partnerów biznesowych, które będą korzystać z Twojej witryny handlu elektronicznego B2B. Zanim zaczniesz używać hierarchii klientów do zarządzania partnerami biznesowymi, musisz włączyć funkcje handlu elektronicznego B2B w centrali handlowej, a następnie zdefiniować sekwencję numerów dla hierarchii klientów.
 

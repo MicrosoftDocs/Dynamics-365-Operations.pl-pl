@@ -1,6 +1,6 @@
 ---
 title: Dwuwalutowość
-description: Ten temat zawiera informacje o dwuwalutowości, gdzie waluta raportowania służy jako druga waluta rozliczeniowa w programie Microsoft Dynamics 365 Finance.
+description: Ten artykuł zawiera informacje o dwuwalutowości, gdzie waluta raportowania służy jako druga waluta rozliczeniowa w programie Microsoft Dynamics 365 Finance.
 author: kweekley
 ms.date: 04/17/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 04738d2fe88fef5c0e96a39febfec86fab3bee7d
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 8db8faefaec4afe208344492ec91375531cb9cd0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713593"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906363"
 ---
 # <a name="dual-currency"></a>Dwuwalutowość
 
@@ -36,7 +36,7 @@ Ponadto zmodyfikowano kilka modułów, tak aby śledziły, raportowały i wykorz
 - Środki trwałe 
 - Konsolidacje
 
-Po uaktualnieniu należy wykonać określone czynności w modułach Zarządzanie gotówką i bankami oraz Środki trwałe. W związku z tym należy uważnie przeczytać i zrozumieć odpowiednie sekcje tego tematu.
+Po uaktualnieniu należy wykonać określone czynności w modułach Zarządzanie gotówką i bankami oraz Środki trwałe. W związku z tym należy uważnie przeczytać i zrozumieć odpowiednie sekcje tego artykułu.
 
 ## <a name="posting-process"></a>Proces księgowania
 
@@ -93,7 +93,7 @@ Następujące dodatkowe zmiany wprowadzono w module **Księga główna**:
 - W księdze można zdefiniować osobny typ kursu wymiany dla waluty raportowania. Jeśli organizacja nie chce używać innego typu kursu wymiany, można nie wypełniać pola typu kursu wymiany dla waluty raportowania. Alternatywnie można wybrać ten sam typ kursu wymiany, jak używany dla waluty rozliczeniowej. Jeśli pole pozostanie puste, system będzie używał typu kursu wymiany waluty rozliczeniowej.
 - Nowy arkusz — arkusz korekt w walucie raportowania — umożliwia księgowanie korekt na kontach księgowych tylko w walucie raportowania. Ten arkusz umożliwia księgowanie tylko na kontach księgowych. Nie obsługuje transakcji międzyfirmowych, a waluta musi być walutą raportowania firmy, w której arkusz jest księgowany. Podczas księgowania arkusza kwoty w walutach transakcji i rozliczeniowej są równe 0 (zero), a kwota w walucie raportowania jest księgowana z wartością wprowadzaną w transakcji. Ponieważ zmienił się sposób używania waluty raportowania w modułach **Rozrachunki z dostawcami**, **Rozrachunki z odbiorcami** i **Środki trwałe**, ten arkusz może służyć do wprowadzania korekt po uaktualnieniu. Przykłady, które pokazują, jak można używać tego arkusza, znajdują się w sekcjach dotyczących tych modułów.
 - Proces alokacji okresów został zaktualizowany, tak że teraz przydziela kwoty w walutach transakcji, rozliczeniowej i raportowania. Wcześniej kwoty były przydzielane w walutach transakcji i rozliczeniowej, a następnie kwota w walucie rozliczeniowej była przeliczana na walutę raportowania. To zachowanie mogło powodować pozostawanie salda na koncie księgowym w walucie raportowania. Teraz gdy kwoty są obliczane i używane we wpisie księgowania, nie odbywa się przeliczanie.
-- Proces przeszacowania w walucie obcej już przeszacował kwoty w walucie raportowania. Jednak kwota w walucie raportowania jest teraz obliczana przy użyciu kwoty w walucie transakcji, jak opisano w sekcji [Proces księgowania](#posting-process) wcześniej w tym temacie.
+- Proces przeszacowania w walucie obcej już przeszacował kwoty w walucie raportowania. Jednak kwota w walucie raportowania jest teraz obliczana przy użyciu kwoty w walucie transakcji, jak opisano w sekcji [Proces księgowania](#posting-process) wcześniej w tym artykule.
 - Wiele raportów i zapytań w księdze głównej już zawierało walutę raportowania, ale niektóre nie. Jednym z przykładów jest strona listy **Bilans próbny**. Ta strona listy teraz zawiera kolumny zarówno dla waluty rozliczeniowej, jak i waluty raportowania. Należy zauważyć, że kolumny waluty raportowania są ukryte, jeśli waluta rozliczeniowa i waluta raportowania są takie same albo jeśli w księdze nie zdefiniowano waluty raportowania.
 
 ### <a name="financial-reporting"></a>Raportowanie finansowe

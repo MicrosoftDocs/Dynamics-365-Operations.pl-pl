@@ -1,6 +1,6 @@
 ---
 title: Zarządzanie cenami w sprzedaży detalicznej
-description: W tym temacie opisano pojęcia związane z tworzeniem i zarządzaniem cenami sprzedaży w Dynamics 365 Commerce.
+description: W tym artykule opisano pojęcia związane z tworzeniem i zarządzaniem cenami sprzedaży w Dynamics 365 Commerce.
 author: ShalabhjainMSFT
 ms.date: 07/28/2021
 ms.topic: article
@@ -14,29 +14,29 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f78a4f328d6962db373990ea60dc03cec35718dc719aa0b284b319db5bc059ab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 16c948e6e14309f4e340bf622fac42b14e6ee591
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759292"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887017"
 ---
-# <a name="retail-sales-price-management"></a>Zarządzanie cenami sprzedaży w aplikacji Retail
+# <a name="retail-sales-price-management"></a>Zarządzanie cenami w sprzedaży detalicznej
 
 [!include [banner](includes/banner.md)]
 
-Ten temat zawiera informacje o procesie tworzenia i zarządzania ceny sprzedaży w Dynamics 365 Commerce. Koncentruje się na pojęciach występujących w tym procesie oraz na wpływie różnych opcji konfiguracji na ceny sprzedaży.
+Ten artykuł zawiera informacje o procesie tworzenia i zarządzania ceny sprzedaży w Dynamics 365 Commerce. Koncentruje się na pojęciach występujących w tym procesie oraz na wpływie różnych opcji konfiguracji na ceny sprzedaży.
 
 ## <a name="terminology"></a>Terminologia
 
-W tym temacie są wykorzystywane następujące pojęcia:
+W tym artykule są wykorzystywane następujące pojęcia:
 
 | Okres | Definicja, zastosowanie i uwagi |
 |---|---|
-| Cena | Kwota za pojedynczą jednostkę, w jakiej produkt jest sprzedawany w aplikacji klienckiej punktu sprzedaży (POS) lub według zamówienia sprzedaży. W tym temacie termin *cena* zawsze dotyczy ceny sprzedaży, a nie ceny zapasów lub kosztu własnego. |
+| Cena | Kwota za pojedynczą jednostkę, w jakiej produkt jest sprzedawany w aplikacji klienckiej punktu sprzedaży (POS) lub według zamówienia sprzedaży. W tym artykule termin *cena* zawsze dotyczy ceny sprzedaży, a nie ceny zapasów lub kosztu własnego. |
 | Podstawa ceny | Cena ustawiona w polu **Cena** dla zwolnionego produktu. |
 | Cena w umowie handlowej | Cena ustawiona w produkcie lub wariancie za pomocą umowy handlowe dla typu **Cen (sprzedaż)**. |
-| Najlepsza cena | Jeżeli do produktu można zastosować więcej niż jedną cenę lub rabat, jest to najmniejsza kwota ceny i/lub największa kwota rabatu pozwalająca uzyskać najniższą możliwą kwotę netto, którą musi zapłacić klient. W tym temacie pojęcie najlepszej zawsze określa się jako „najlepszą cenę”. Ta najlepsza cena różni się od i nie powinna być mylona z wartością elementu stałotekstowego **Najlepsza cena** używaną w trybie współbieżności rabatu. |
+| Najlepsza cena | Jeżeli do produktu można zastosować więcej niż jedną cenę lub rabat, jest to najmniejsza kwota ceny i/lub największa kwota rabatu pozwalająca uzyskać najniższą możliwą kwotę netto, którą musi zapłacić klient. W tym artykule pojęcie najlepszej zawsze określa się jako „najlepszą cenę”. Ta najlepsza cena różni się od i nie powinna być mylona z wartością elementu stałotekstowego **Najlepsza cena** używaną w trybie współbieżności rabatu. |
 
 ## <a name="price-groups"></a>Grupy cenowe
 
@@ -97,7 +97,7 @@ Aby użyć priorytetu cen dla cen, należy przypisać priorytet cen do grupy cen
 
 Funkcja priorytetu cen została wprowadzona do obsługi scenariusza, gdzie sprzedawca detaliczny chce stosować wyższe ceny w określonej grupie sklepów. Na przykład sprzedawca detaliczny zdefiniował regionalne ceny dla wschodniego wybrzeża Stanów Zjednoczonych, ale chce wyższych cen dla niektórych produktów w sklepach w Nowym Jorku, ponieważ sprzedawanie produktów w tym mieście jest droższe i/lub lokalny rynek wytrzyma wyższą cenę.
 
-Jak opisano w rozdziale „Najlepsza cena” w tym temacie, aparat kalkulacji cen zazwyczaj wybiera niższą z dwóch cen. Z tego względu sprzedawca detaliczny zwykle ma blokadę na użycie wyższej z dwóch cen w sklepie, który należy jednocześnie do grup cenowych Wschodnie wybrzeże i Nowy Jork. Aby rozwiązać ten problem przed wprowadzeniem funkcji priorytetu cen, sprzedawca detaliczny musiał dwa razy definiować ceny wszystkich produktów — nie mógł ich przypisać do grup cenowych. Alternatywnie sprzedawca detaliczny musiał tworzyć dodatkowe grupy cenowe w celu odizolowania produktów, które miały ceny wyższe niż standardowe, niższe ceny.
+Jak opisano w rozdziale „Najlepsza cena” w tym artykule, aparat kalkulacji cen zazwyczaj wybiera niższą z dwóch cen. Z tego względu sprzedawca detaliczny zwykle ma blokadę na użycie wyższej z dwóch cen w sklepie, który należy jednocześnie do grup cenowych Wschodnie wybrzeże i Nowy Jork. Aby rozwiązać ten problem przed wprowadzeniem funkcji priorytetu cen, sprzedawca detaliczny musiał dwa razy definiować ceny wszystkich produktów — nie mógł ich przypisać do grup cenowych. Alternatywnie sprzedawca detaliczny musiał tworzyć dodatkowe grupy cenowe w celu odizolowania produktów, które miały ceny wyższe niż standardowe, niższe ceny.
 
 Natomiast funkcja priorytetu cen pozwala sprzedawcy detalicznemu utworzyć priorytet cen dla cen sklepowych wyższych niż określone w priorytecie cen dla cen regionalnych. Alternatywnie sprzedawca detaliczny może utworzyć priorytet cen tylko dla cen sklepowych, a ceny regionalne pozostawić z domyślnym priorytetem cen, który ma wartość 0 (zero). Obie konfiguracje pomagają zagwarantować, że ceny sklepowe zawsze będą używane przed cenami regionalnymi.
 
@@ -151,7 +151,7 @@ Za pomocą arkusza umów handlowych można tworzyć umowy handlowe na cenę sprz
 
 Umowa handlowa na cenę sprzedaży o zakresie **Tabela** jest przeznaczona dla pojedynczego odbiorcy ustawionego bezpośrednio w umowie handlowej. Ten scenariusz nie jest typowym scenariuszem od firmy do konsumenta (B2C). Jednak jeśli wystąpi, aparat kalkulacji cen używa do wyznaczania ceny umów handlowych o zakresie **Tabela**.
 
-Umowa handlowa na cenę sprzedaży o zakresie **Grupa** to typ najczęściej używany z funkcjami. Poza aplikacją Commerce umowy typu **Grupa** są stosowane do prostych grup odbiorców. Jednak w aplikacji Commerce koncepcja grupy odbiorców została rozszerzona i teraz jest bardziej ogólną grupą cenową. Grupę cenową można połączyć z kanałem, przynależnością, programem lojalnościowym lub katalogiem. Aby uzyskać szczegółowe informacje o grupach cenowych, zobacz rozdział „Grupy cenowe” wcześniej w tym temacie.
+Umowa handlowa na cenę sprzedaży o zakresie **Grupa** to typ najczęściej używany z funkcjami. Poza aplikacją Commerce umowy typu **Grupa** są stosowane do prostych grup odbiorców. Jednak w aplikacji Commerce koncepcja grupy odbiorców została rozszerzona i teraz jest bardziej ogólną grupą cenową. Grupę cenową można połączyć z kanałem, przynależnością, programem lojalnościowym lub katalogiem. Aby uzyskać szczegółowe informacje o grupach cenowych, zobacz rozdział „Grupy cenowe” wcześniej w tym artykule.
 
 > [!NOTE]
 > Cena z umowy handlowej jest zawsze używana przed ceną podstawową.

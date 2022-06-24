@@ -1,6 +1,6 @@
 ---
 title: Organizowanie pracowników za pomocą działów, funkcji i stanowisk
-description: W tym temacie opisano informacje koncepcyjne dotyczące działów, stanowisk i stanowisk, które są elementami organizacyjnymi utrzymywanymi w ramach Human resources.
+description: W tym artykule opisano informacje koncepcyjne dotyczące działów, stanowisk i stanowisk, które są elementami organizacyjnymi utrzymywanymi w ramach Human resources.
 author: twheeloc
 ms.date: 01/03/2022
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 717bf7dcbd9a7e19a6dc960648655fdbd3e2465a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 0cb4e745eb6531d90a02778ba85e6caf790f2d46
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694831"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874283"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Organizowanie pracowników za pomocą działów, funkcji i stanowisk
 
@@ -28,7 +28,7 @@ ms.locfileid: "8694831"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Działy, zadania i stanowiska to elementy organizacyjne zarządzane w module Zasoby ludzkie. W tym temacie opisano koncepcję tych elementów. 
+Działy, zadania i stanowiska to elementy organizacyjne zarządzane w module Zasoby ludzkie. W tym artykule opisano koncepcję tych elementów. 
 
 Poniższy przykład ilustruje koncepcje opisane w tym artykule.
 

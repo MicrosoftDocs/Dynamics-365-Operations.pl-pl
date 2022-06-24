@@ -1,6 +1,6 @@
 ---
 title: Omówienie umów serwisowych
-description: Ten temat zawiera omówienie sposobu działania umów serwisowych.
+description: Ten artykuł zawiera omówienie sposobu działania umów serwisowych.
 author: sorenva
 ms.date: 07/25/2019
 ms.topic: overview
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fc0be99cf492d672f9eaecff25c93b700e7ed230
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 5566f559da6340a82ca015fb5dee2dae7887202e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670840"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862461"
 ---
 # <a name="service-agreements-overview"></a>Omówienie umów serwisowych
 
@@ -35,7 +35,7 @@ W polu **Grupa umów serwisowych** strony **Parametry modułu Zarządzanie serwi
 - W firmie skonfigurowano trzy grupy umów: Złota, Srebrna i Brązowa.
 - Firma zatrudniła nowego kierownika serwisu. Kierownik serwisu jest odpowiedzialny za obsługę wszystkich klientów w grupie umów Złota. Rekordy umów w grupie umów Złota można przefiltrować w celu znalezienia wszystkich umów, dla których trzeba określić nowego kierownika serwisu jako osobę odpowiedzialną za te umowy.
 
-## <a name="related-topics"></a>Powiązane tematy
+## <a name="related-articles"></a>Powiązane artykuły
 
 [Tworzenie grup umów serwisowych](create-service-agreement-groups.md)
 

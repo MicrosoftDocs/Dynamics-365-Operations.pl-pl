@@ -1,6 +1,6 @@
 ---
 title: Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (16 września 2020 r.)
-description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Human Resources w dniu 16 września 2020 roku.
+description: W tym artykule opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Human Resources w dniu 16 września 2020 roku.
 author: jcart1106
 ms.date: 09/16/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-09-16
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 591a6f3f4aabdb164e4fde5e80259fb6872167d9
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ca98f4b3a1e702ed5f02bc6e09675a5861ec902a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694460"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862838"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-16-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (16 września 2020 r.)
 
@@ -27,7 +27,7 @@ ms.locfileid: "8694460"
 
 
 
-W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Dynamics 365 Human Resources. Zmiany dotyczą kompilacji o numerze 8.1.3557. Liczby w nawiasach obok niektórych funkcji odnoszą się do numerów pomocy technicznej Lifecycle Services (LCS).
+W tym artykule opisano nowe oraz zmienione funkcje dostępne w Dynamics 365 Human Resources. Zmiany dotyczą kompilacji o numerze 8.1.3557. Liczby w nawiasach obok niektórych funkcji odnoszą się do numerów pomocy technicznej Lifecycle Services (LCS).
 
 ## <a name="included-in-this-release"></a>Zawarte w tym wydaniu
 

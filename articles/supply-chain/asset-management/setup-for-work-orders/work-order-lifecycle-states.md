@@ -1,6 +1,6 @@
 ---
 title: Stany cyklu życia zlecenia pracy
-description: W tym temacie opisano cykle stanu zlecenia pracy w module Zarządzanie składnikami majątku.
+description: W tym artykule opisano cykle stanu zlecenia pracy w module Zarządzanie składnikami majątku.
 author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fa0980438ec629ef7ae6bf711d5ae87efca131e6ab86dfcaa1f17d953725147a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 67f857e4bfb828250e632e3ba46af9930cd908a1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768673"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860878"
 ---
 # <a name="work-order-lifecycle-states"></a>Stany cyklu życia zlecenia pracy
 
@@ -69,7 +69,7 @@ Poniższa tabela opisuje opcje w sekcjach **Zlecenie pracy** i **Harmonogram** n
 
     Na skróconej karcie **Szczegóły** pole **Modele cyklu życia** pokazuje liczbę modeli cyklu życia zleceń pracy, które używają tego stanu cyklu życia.
 
-8. Na skróconej karcie **Ogólne** w sekcji **Zlecenie pracy** wybierz funkcje, które powinny być dostępne dla tego stanu cyklu życia, ustawiając odpowiednie opcje na **tak**. Opis opcji znajduje się w tabeli w poprzedniej części tego tematu.
+8. Na skróconej karcie **Ogólne** w sekcji **Zlecenie pracy** wybierz funkcje, które powinny być dostępne dla tego stanu cyklu życia, ustawiając odpowiednie opcje na **tak**. Opis opcji znajduje się w tabeli w poprzedniej części tego artykułu.
 9. W sekcji **Projekt** w polu **etap** wybierz etap projektu, który powinien być związany z tym stanem cyklu życia.
 10. W sekcji **projekt** określ opcję **Zamknij działania** na wartość **tak**, jeśli działania związane z każdym zadaniem zlecenia pracy powinny zostać automatycznie zamknięte, jeśli zlecenie pracy jest w tym stanie cyklu życia.
 
@@ -77,7 +77,7 @@ Poniższa tabela opisuje opcje w sekcjach **Zlecenie pracy** i **Harmonogram** n
     > Aby znaleźć numer działania projektu, które jest powiązane z zadaniem zlecenia pracy, należy wybrać polecenie **Zarządzanie składnikami majątku** \> **Wspólne** \> **Zlecenia pracy** \> **Wszystkie zlecenia pracy**, **Aktywne zlecenia pracy** lub **Moje aktywne zlecenia pracy**. Otwórz zlecenie pracy, a następnie wybierz zadanie zlecenia pracy. Numer działania jest wyświetlany w polu **Numer działania** w sekcji **projekt** na karcie **ogólne** w formularzu skróconej karty **szczegóły wiersza**.
 
 11. W sekcji **Prognoza** Określ opcję **Kopiuj prognozę godzinową**, **Kopiuj wartość prognozy** i/lub **Kopiuj prognozę wydatków** do wartości **tak**, jeśli prognozy projektu zleceń pracy mają automatycznie kopiowane do arkuszy zleceń pracy, jeśli zlecenie pracy jest w danym stanie cyklu życia.
-12. W sekcji **harmonogram** Określ jedną z opcji równą **tak**, jeśli stan harmonogramu zadań zlecenia pracy ma zostać zaktualizowany, gdy stanem cyklu eksploatacji jest zlecenie pracy. Aby uzyskać opis opcji **gotowy**, **początkowy**, **końcowy** i **Usuń wiersze harmonogramu**, zajrzyj do tabeli wcześniej w tym temacie.
+12. W sekcji **harmonogram** Określ jedną z opcji równą **tak**, jeśli stan harmonogramu zadań zlecenia pracy ma zostać zaktualizowany, gdy stanem cyklu eksploatacji jest zlecenie pracy. Aby uzyskać opis opcji **gotowy**, **początkowy**, **końcowy** i **Usuń wiersze harmonogramu**, zajrzyj do tabeli wcześniej w tym artykule.
 
     > [!NOTE]
     > Aby znaleźć linie harmonogramu powiązane z zadaniem zlecenia pracy, należy wybrać polecenie **Zarządzanie składnikami majątku** \> **Wspólne** \> **Zlecenia pracy** \> **Wszystkie zlecenia pracy**, **Aktywne zlecenia pracy** lub **Moje aktywne zlecenia pracy**. Otwórz zlecenie pracy, zaznacz **zadanie zlecenia pracy** w skróconej karcie zadania zlecenia i informacje związane z widokiem w skróconej karcie **Szczegóły wiersza**. W polu **stan** na karcie **harmonogram** jest wyświetlany stan zadania dotyczącego zlecenia pracy. W **polu** stan można określić następujące wartości: **zaplanowane**, **gotowe**, **rozpoczęte**, **zatrzymane** i **zakończone.**

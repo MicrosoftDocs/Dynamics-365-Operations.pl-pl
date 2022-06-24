@@ -1,6 +1,6 @@
 ---
-title: Konfigurowanie metody płatności na konto odbiorcy dla witryn handlu elektronicznego B2B
-description: W tym temacie opisano sposób konfigurowania metody płatności konta odbiorcy w programie Microsoft Dynamics 365 Commerce. Opisano w nim także wpływ limitów kredytowych na rejestrowanie płatności a konta w witrynach e-commerce (B2B) firmy.
+title: Konfigurowanie form płatności na konto klienta dla witryn handlu elektronicznego B2B
+description: W tym artykule opisano sposób konfigurowania metody płatności konta odbiorcy w programie Microsoft Dynamics 365 Commerce. Opisano w nim także wpływ limitów kredytowych na rejestrowanie płatności a konta w witrynach e-commerce (B2B) firmy.
 author: josaw1
 ms.date: 04/19/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: a55a5d4c9dbf7909af5219843fc4310b6cdd4ed7
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 20af517b9a69f4fb490d4d93ada8bc4063e895dd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689644"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878654"
 ---
-# <a name="configure-the-customer-account-payment-method-for-b2b-e-commerce-sites"></a>Konfigurowanie metody płatności na konto odbiorcy dla witryn handlu elektronicznego B2B
+# <a name="configure-the-customer-account-payment-method-for-b2b-e-commerce-sites"></a>Konfigurowanie form płatności na konto klienta dla witryn handlu elektronicznego B2B
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie opisano sposób konfigurowania metody płatności konta odbiorcy w programie Microsoft Dynamics 365 Commerce. Opisano w nim także wpływ limitów kredytowych na rejestrowanie płatności a konta w witrynach e-commerce (B2B) firmy.
+W tym artykule opisano sposób konfigurowania metody płatności konta odbiorcy w programie Microsoft Dynamics 365 Commerce. Opisano w nim także wpływ limitów kredytowych na rejestrowanie płatności a konta w witrynach e-commerce (B2B) firmy.
 
 Sprzadawcy detaliczni mogą akceptować różne typy płatności w zamian za produkty i usługi, które sprzedają w kanale handlu elektronicznego. Każdy typ płatności akceptowany przez sprzedawcę detalicznego musi zostać skonfigurowany w Dynamics 365 Commerce na etapie konfiguracji systemu. W witrynach B2B handlu elektronicznego musi być obsługiwana metoda płatności konto odbiorcy (lub metoda płatności na konto). 
 

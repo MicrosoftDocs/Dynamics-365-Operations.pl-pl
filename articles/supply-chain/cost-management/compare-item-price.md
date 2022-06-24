@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: f88dd1c23153d325709e28b056f902b555f05376
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c9e2ccbe613a4aab40a4f519bbb82a9175d46e72
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675383"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846221"
 ---
 # <a name="compare-item-prices-storage-report"></a>Raport magazynowy porównania cen pozycji
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak uruchomić raport **magazynowy porównania cen pozycji** i udostępnić go cyfrowo jako stronę interaktywną w systemie Dynamics 365 Supply Chain Management lub w postaci wyeksportowanego dokumentu w dowolnym z kilku formatów.
+W tym artykule wyjaśniono, jak uruchomić raport **magazynowy porównania cen pozycji** i udostępnić go cyfrowo jako stronę interaktywną w systemie Dynamics 365 Supply Chain Management lub w postaci wyeksportowanego dokumentu w dowolnym z kilku formatów.
 
 Podczas wyświetlania raportu w przeglądarce kolumny i salda zagregowane są dynamicznie dostosowywane w zależności od skonfigurowanego układu. Można posortować wyniki, przefiltrować je, przejść do kolejnych danych i wykonać inne zadania.
 

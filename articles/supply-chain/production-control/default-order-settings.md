@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: dca0aba081321dff5ae061ebe4bddcae0e42bc54
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 106da56ed1de7d9e555cfdd63f19687d7e17599a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102771"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862577"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Domyślne ustawienia zamówienia dla wymiarów i wariantów produktu
 
@@ -38,7 +38,7 @@ Aby zdefiniować domyślne ustawienia zamówienia dla produktu, wykonaj następu
     - Na karcie **Plan** w grupie **Ustawienia zamówienia** wybierz opcję **Ustawienia domyślne zamówień**.
     - Na karcie **Zarządzaj zapasami** w grupie **Ustawienia zamówienia** wybierz opcję **Ustawienia domyślne zamówień**.
 
-1. Skonfiguruj ustawienia w sposób opisany w pozostałej części tego tematu.
+1. Skonfiguruj ustawienia w sposób opisany w pozostałej części tego artykułu.
 
 ## <a name="default-order-settings"></a>Ustawienia domyślne zamówień
 

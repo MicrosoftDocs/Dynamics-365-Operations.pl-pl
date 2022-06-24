@@ -1,6 +1,6 @@
 ---
 title: Typy składnika majątku
-description: W tym temacie wyjaśniono, jak tworzyć typy składników majątku w Zarządzaniu składnikami majątku. Opisano również elementy, które są związane z typami składników majątku.
+description: W tym artykule wyjaśniono, jak tworzyć typy składników majątku w Zarządzaniu składnikami majątku. Opisano również elementy, które są związane z typami składników majątku.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fc1a8d98e9a8853e2e72bfcc7415ddb9a0a3b7758504621d6fccff00a08a36be
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d3a51fdb55e9158e88e89549e3d0049e699c233e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730380"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887639"
 ---
-# <a name="asset-types"></a>Typy składników majątku
+# <a name="asset-types"></a>Typy składnika majątku
 
 [!include [banner](../../includes/banner.md)]
 
 
 
-W tym temacie wyjaśniono, jak utworzyć typy składników majątku. Opisano również elementy, które są związane z typami składników majątku. Typy składników majątku są używane jako kategorie ogólne dla składników majątku. Przykładami są maszyny CNC, aparatura pomiarowa i silniki samochodowe. Typy składników majątku są używane do zarządzania typami zadań konserwacyjnych (zadania konserwacyjne), stanami cyklu życia składników majątku, licznikami, atrybutami składników majątku, szablonem oceny warunków i modelami składników majątku, które można wybrać dla składnika majątku. Podczas tworzenia składnika majątku należy określić jego typ.
+W tym artykule wyjaśniono, jak utworzyć typy składników majątku. Opisano również elementy, które są związane z typami składników majątku. Typy składników majątku są używane jako kategorie ogólne dla składników majątku. Przykładami są maszyny CNC, aparatura pomiarowa i silniki samochodowe. Typy składników majątku są używane do zarządzania typami zadań konserwacyjnych (zadania konserwacyjne), stanami cyklu życia składników majątku, licznikami, atrybutami składników majątku, szablonem oceny warunków i modelami składników majątku, które można wybrać dla składnika majątku. Podczas tworzenia składnika majątku należy określić jego typ.
 
 Dla każdego typu składnika majątku można utworzyć odmiany ustawień typu. Na przykład jeśli masz typ składnika majątku o nazwie **Ciężarówki**, możesz utworzyć odmiany tego typu dla różnych producentów i modeli. Do każdego typu składnika majątku można dodać wymagane części zamienne i plany konserwacji.
 

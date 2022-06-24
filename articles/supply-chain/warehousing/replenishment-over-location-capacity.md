@@ -1,6 +1,6 @@
 ---
 title: Uzupełnianie zapasów ponad pojemność lokalizacji
-description: Ten temat zawiera informacje dotyczące funkcji uzupełniania zapasów pojemności lokalizacji. Ta funkcja umożliwia utworzenie wszystkich prac związanych z uzupełnianiem zapasów, które będą wymagane w danym dniu, i zarządza dostępnością tych prac, aby zapewnić, że w lokalizacji pobrania nie zabraknie zapasów ani nie przekroczą pojemności.
+description: Ten artykuł zawiera informacje dotyczące funkcji uzupełniania zapasów pojemności lokalizacji. Ta funkcja umożliwia utworzenie wszystkich prac związanych z uzupełnianiem zapasów, które będą wymagane w danym dniu, i zarządza dostępnością tych prac, aby zapewnić, że w lokalizacji pobrania nie zabraknie zapasów ani nie przekroczą pojemności.
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 0c3dedc47558e98f63fb5883e4731bf021b9602b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 72cda7608d55414ee62bc7dcc1e02e28f6212aff
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677934"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899245"
 ---
 # <a name="replenishment-over-location-capacity"></a>Uzupełnianie zapasów ponad pojemność lokalizacji
 
@@ -37,7 +37,7 @@ Aby ta funkcja była dostępna, włącz następujące funkcje w module [zarządz
 
 ## <a name="set-up-the-feature-for-the-example-scenario"></a>Skonfiguruj funkcję dla tego scenariusza przykładowego
 
-Ta sekcja zawiera wskazówki oraz przykład, w jaki sposób należy skonfigurować funkcję i przygotować przykładowe dane do scenariusza przykładowego, który opisano w dalszej części tego tematu.
+Ta sekcja zawiera wskazówki oraz przykład, w jaki sposób należy skonfigurować funkcję i przygotować przykładowe dane do scenariusza przykładowego, który opisano w dalszej części tego artykułu.
 
 ### <a name="enable-sample-data"></a>Włącz dane przykładowe
 
@@ -145,7 +145,7 @@ Szablony uzupełniania zapasów są zestawem reguł, które sterują tym, kiedy 
 
 ## <a name="example-scenario"></a>Przykładowy scenariusz
 
-Po wykonaniu wszystkich poprzednio opisanych przykładowych danych i ich skonfigurowania można korzystać z tego scenariusza, aby wypróbować funkcję *Uzupełnianie zapasów ponad pojemność lokalizacji*. Wartości przedstawione w tym scenariuszu zakładają, że pracujesz ze standardowymi danymi demonstracyjnymi, które zostały wybrane firmę **USMF**, oraz że zostały przygotowane przykładowe rekordy opisane wcześniej w tym temacie. Ten scenariusz służy także jako przykład, który pokazuje, w jaki sposób funkcja może być używana w ustawieniu produkcji.
+Po wykonaniu wszystkich poprzednio opisanych przykładowych danych i ich skonfigurowania można korzystać z tego scenariusza, aby wypróbować funkcję *Uzupełnianie zapasów ponad pojemność lokalizacji*. Wartości przedstawione w tym scenariuszu zakładają, że pracujesz ze standardowymi danymi demonstracyjnymi, które zostały wybrane firmę **USMF**, oraz że zostały przygotowane przykładowe rekordy opisane wcześniej w tym artykule. Ten scenariusz służy także jako przykład, który pokazuje, w jaki sposób funkcja może być używana w ustawieniu produkcji.
 
 ### <a name="create-replenishment-work"></a>Utwórz pracę uzupełniania zapasów
 

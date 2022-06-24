@@ -1,6 +1,6 @@
 ---
 title: Konserwatorzy i grupy konserwatorów
-description: W tym temacie wyjaśniono, jak działają konserwatorzy i grupy pracowników w module Zarządzanie składnikami majątku.
+description: W tym artykule wyjaśniono, jak działają konserwatorzy i grupy pracowników w module Zarządzanie składnikami majątku.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e976a28349a4bc7a371d23eb4df724e0ffd36a0553aec2deeb2ff07d0a63579
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3a24c880ee76af1490824aef07976b998d9225d0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750131"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860907"
 ---
 # <a name="maintenance-workers-and-worker-groups"></a>Konserwatorzy i grupy konserwatorów
 
@@ -28,7 +28,7 @@ ms.locfileid: "6750131"
 
  
 
-W tym temacie wyjaśniono, jak działają konserwatorzy i grupy pracowników w module Zarządzanie składnikami majątku. W module Zarządzanie składnikami majątku można łączyć konserwatorów z lokalizacjami czynności konserwacyjnych. (Aby uzyskać więcej informacji o lokalizacjach czynności konserwacyjnych, zobacz temat [Tworzenie lokalizacji czynności konserwacyjnych](../functional-locations/create-functional-locations.md)). Ta funkcja może być przydatna, jeśli na przykład planujesz zadanie konserwacji na komputerze znajdującym się w lokalizacji czynności konserwacyjnych 01, a chcesz przydzielić konserwatorów z tej samej lokalizacji do wykonania zadania.
+W tym artykule wyjaśniono, jak działają konserwatorzy i grupy pracowników w module Zarządzanie składnikami majątku. W module Zarządzanie składnikami majątku można łączyć konserwatorów z lokalizacjami czynności konserwacyjnych. (Aby uzyskać więcej informacji o lokalizacjach czynności konserwacyjnych, zobacz temat [Tworzenie lokalizacji czynności konserwacyjnych](../functional-locations/create-functional-locations.md)). Ta funkcja może być przydatna, jeśli na przykład planujesz zadanie konserwacji na komputerze znajdującym się w lokalizacji czynności konserwacyjnych 01, a chcesz przydzielić konserwatorów z tej samej lokalizacji do wykonania zadania.
 
 Można również tworzyć grupy konserwatorów i kojarzyć z nimi konserwatorów. Ta funkcja jest przydatna, gdy wykonujesz proste planowanie zlecenia pracy i chcesz zaplanować grupę konserwatorów na zleceniu pracy. Możesz użyć konserwatorów i grupy konserwatorów do konfigurowania preferowanych konserwatorów i odpowiedzialnych konserwatorów. 
 

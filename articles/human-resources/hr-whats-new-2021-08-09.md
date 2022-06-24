@@ -1,6 +1,6 @@
 ---
 title: Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources z dnia 9 sierpnia 2021 r.
-description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Human Resources w dniu 9 sierpnia 2021 roku.
+description: W tym artykule opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Human Resources w dniu 9 sierpnia 2021 roku.
 author: marcelbf
 ms.date: 08/09/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-08-09
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5c43ed654a07834ce31a1425762f29c53aa2a020
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ad1397084dd3eb210065fe6d8c20c5b8253cd206
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689278"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882874"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-august-9-2021"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources z dnia 9 sierpnia 2021 r.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-W tym temacie opisano nowe, zmienione i wkrótce dostępne funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Human Resources.
+W tym artykule opisano nowe, zmienione lub przyszłe funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Human Resources.
 
 Aby uzyskać więcej informacji na temat procesu aktualizacji i harmonogramu, należy zapoznać się z tematem [Aktualizacja procesu](hr-admin-setup-update-process.md).
 
@@ -40,9 +40,9 @@ Ta wersja zawiera następujące nowe funkcje i rozwiązania błędów. Zmiany do
 W tej wersji uwzględniono następujące poprawki błędów.
 
 > [!NOTE]
-> Naszym celem jest jak najszybsze uzyskanie tych informacji. Firma Microsoft może zaktualizować ten temat w taki sposób, aby zawierał poprawki powodujące błąd, które wprowadziły je do kompilacji po początkowym opublikowaniu tego tematu.
+> Naszym celem jest jak najszybsze uzyskanie tych informacji. Microsoft może zaktualizować ten artykuł w taki sposób, aby zawierał poprawki powodujące błąd, które wprowadziły je do kompilacji po początkowym opublikowaniu tego artykułu.
 
-| Numer problemu | Problem | opis |
+| Numer problemu | Problem | Opis |
 | --- | --- | --- |
 | 558385 | Osoba wyznaczona domyślnie nie jest wybierana, jeśli zostanie włączona opcja **Automatyczny wybór osób wyznaczonych** dla osób wyznaczonych domyślnie. | Ten problem został rozwiązany. Wiele osób wyznaczonych domyślnie jest automatycznie wybieranych w kwalifikujących się planach, jeśli jest włączona opcja **Automatyczny wybór osób wyznaczonych** na stronie **Udostępnione parametry rozwiązania Human Resources**. |
 | 589617 | Na stronie **Czas wolny** salda **Dostępne do zakupu** i **Dostępne do sprzedaży** są puste, jeśli dostęp jest ograniczony do określonej firmy. | Ten problem został rozwiązany. Na stronie **Czas wolny** salda **Dostępne do zakupu** i **Dostępne do sprzedaży** są wyświetlane poprawnie, jeśli użytkownik jest ograniczony do określonej firmy. |

@@ -1,6 +1,6 @@
 ---
 title: Przetwarzanie płatności zwrotów w biurach obsługi
-description: W tym temacie wyjaśniono, w jaki sposób zwroty płatności są generowane przez centra obsługi telefonicznej, gdy tworzone są zwroty lub gdy zamówienia lub wiersze zamówienia są anulowane.
+description: W tym artykule wyjaśniono, w jaki sposób zwroty płatności są generowane przez centra obsługi telefonicznej, gdy tworzone są zwroty lub gdy zamówienia lub wiersze zamówienia są anulowane.
 author: hhainesms
 ms.date: 01/05/2020
 ms.topic: article
@@ -12,16 +12,16 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8d5bcf3a0d36e323ee96c1f37829a95b60f529bc
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: 330674a31dc59e99ffedb82d0896c64214562eb3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944720"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880121"
 ---
 # <a name="refund-payment-processing-in-call-centers"></a>Przetwarzanie płatności zwrotów w biurach obsługi
 
-W tym temacie wyjaśniono, w jaki sposób zwroty płatności są generowane przez centra obsługi telefonicznej, gdy tworzone są zwroty lub gdy zamówienia lub wiersze zamówienia są anulowane.
+W tym artykule wyjaśniono, w jaki sposób zwroty płatności są generowane przez centra obsługi telefonicznej, gdy tworzone są zwroty lub gdy zamówienia lub wiersze zamówienia są anulowane.
 
 Użytkownik, który tworzy zamówienie zwrotu dla klienta jako użytkownika centrum obsługi w centrali Microsoft Dynamics 365 Commerce, używa strony **Zamówienie zwrotu** do utworzenia wstępnej autoryzacji materiałów zwrotu (RMA). Autoryzacja zwrotu definiuje produkty, które odbiorca chce zwrócić lub zmienić, i tworzy połączone zamówienie zwrotu sprzedaży o typie zamówienia **Zwrot zamówienia**. To połączone zwrócone zamówienie służy do śledzenia księgowania zwróconych zapasów oraz wszelkich zaksięgowanych faktur korygujących lub zwrotów płatności.
 
@@ -92,7 +92,7 @@ Ustawienie **Tak** dla opcji **Zastosuj kredyt** ma zastosowanie tylko w przypad
 
 ## <a name="payment-overrides-for-call-center-returns"></a>Zastąpienia płatności dla zwrotów z centrum obsługi
 
-Chociaż logika call center systematycznie określa metodę zwrotu pieniędzy w sposób opisany wcześniej w tym temacie, użytkownicy mogą czasami chcieć zastąpić te płatności. Na przykład użytkownik może edytować lub usunąć istniejące wiersze płatności zwrotu i zastosować nowe linie płatności. Zwroty obliczane przez system mogą być zmieniane tylko przez użytkowników, którzy mają odpowiednie uprawnienia zastępowania. Te uprawnienia można skonfigurować na stronie **Zastępowanie uprawnień** w sieci sprzedaży i handlu. Aby można było zastąpić płatność zwrotem, użytkownik musi być połączony z rolą zabezpieczeń, w której ustawiono opcję **Zezwalaj na alternatywną płatność** na **Tak** na stronie **Uprawnienia do zastępowania**.
+Chociaż logika call center systematycznie określa metodę zwrotu pieniędzy w sposób opisany wcześniej w tym artykule, użytkownicy mogą czasami chcieć zastąpić te płatności. Na przykład użytkownik może edytować lub usunąć istniejące wiersze płatności zwrotu i zastosować nowe linie płatności. Zwroty obliczane przez system mogą być zmieniane tylko przez użytkowników, którzy mają odpowiednie uprawnienia zastępowania. Te uprawnienia można skonfigurować na stronie **Zastępowanie uprawnień** w sieci sprzedaży i handlu. Aby można było zastąpić płatność zwrotem, użytkownik musi być połączony z rolą zabezpieczeń, w której ustawiono opcję **Zezwalaj na alternatywną płatność** na **Tak** na stronie **Uprawnienia do zastępowania**.
 
 ![Zezwalaj na alternatywną opcję płatności na stronie Zastępowanie uprawnień.](media/overridepermissions.png)
 

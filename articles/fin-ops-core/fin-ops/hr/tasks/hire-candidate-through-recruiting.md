@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4bae8c038d048d18096eab20150701fd0e47250a
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: b48fcfe46dbc8a512a2ff9523b62c3a99d1bcd28
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734668"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888101"
 ---
 # <a name="hiring-candidate-through-recruiting"></a>Zatrudnianie kandydata przez rekrutację
 
 [!include [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
-> Funkcje rekrutacji dostępne w tym temacie będą nazywane projektami rekrutacji i dotyczą kandydatów, zgłoszeń oraz projektów rekrutacji.  
+> Funkcje rekrutacji dostępne w tym artykule będą nazywane projektami rekrutacji i dotyczą kandydatów, zgłoszeń oraz projektów rekrutacji.  
 
 Ta procedura umożliwia osobie rekrutującej zatrudnienie kandydata, który przesłał zgłoszenie za pośrednictwem określonego projektu rekrutacji. W przypadku zatrudniania kandydata za pośrednictwem projektu rekrutacji zostanie utworzony nowy rekord pracownika, a w rekordzie kandydata zostanie ustawiony stan **Zatrudniony**. Do stworzenia tej procedury wykorzystano dane z firmy demonstracyjnej **USMF**.
 

@@ -1,6 +1,6 @@
 ---
 title: Mieszanie wymiarów produktów w lokalizacji
-description: Ten temat zawiera informacje dotyczące mieszania rozmiarów produktów w lokalizacji. Ta funkcja profilu lokalizacji pomaga poprawić zarządzanie lokalizacjami, gdy używane są różne warianty produktu lub produkty mają różne wymiary – np. w branży modowej. Dzięki temu można określić, czy konfiguracje, kolory, style i rozmiary mogą być mieszane dla określonego profilu lokalizacji, czy dozwolony jest np. tylko jeden z tych wymiarów lub jakieś połączenie możliwości, które można umieścić w tej samej lokalizacji.
+description: Ten artykuł zawiera informacje dotyczące mieszania rozmiarów produktów w lokalizacji. Ta funkcja profilu lokalizacji pomaga poprawić zarządzanie lokalizacjami, gdy używane są różne warianty produktu lub produkty mają różne wymiary – np. w branży modowej. Dzięki temu można określić, czy konfiguracje, kolory, style i rozmiary mogą być mieszane dla określonego profilu lokalizacji, czy dozwolony jest np. tylko jeden z tych wymiarów lub jakieś połączenie możliwości, które można umieścić w tej samej lokalizacji.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 031b92f827979c01dbf0208ba21ae827fb13920b
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 9daf6061d56ef004753114aaffa8eb580cea1186
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103495"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885733"
 ---
 # <a name="location-product-dimension-mixing"></a>Mieszanie wymiarów produktów w lokalizacji
 
@@ -28,7 +28,7 @@ Mieszanie wymiarów produktów w lokalizacji to funkcja profilu lokalizacji poma
 
 ## <a name="turn-the-location-product-dimension-mixing-feature-on-or-off"></a>Włącz lub wyłącz funkcję mieszania wymiarów produktu lokalizacji
 
-Aby korzystać z funkcji opisanej w tym temacie, w systemie musi być włączona funkcja *Lokalizacja mieszania wymiarów produktu*. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.25, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Lokalizacja mieszania wymiarów produktu* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Aby korzystać z funkcji opisanej w tym artykule, w systemie musi być włączona funkcja *Lokalizacja mieszania wymiarów produktu*. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.25, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Lokalizacja mieszania wymiarów produktu* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="setup"></a>Konfiguracja
 
@@ -44,7 +44,7 @@ Z każdą lokalizacją w magazynie musi być skojarzony profil lokalizacji opisu
     > [!NOTE]
     > Tę opcję można ustawiać na *Tak* tylko wtedy, gdy wartość opcji **Zezwalaj na towary mieszane** jest ustawiona na *Nie*.
 
-1. Na skróconej karcie **Zezwalaj na mieszanie wymiarów produktów** ustaw opcję **Rozmiar** na *Tak*. W scenariuszu opisanym w tym temacie mieszanie może być wykonane tylko dla produktów mających różne **Rozmiary**. Dostępne są także inne opcje.
+1. Na skróconej karcie **Zezwalaj na mieszanie wymiarów produktów** ustaw opcję **Rozmiar** na *Tak*. W scenariuszu opisanym w tym artykule mieszanie może być wykonane tylko dla produktów mających różne **Rozmiary**. Dostępne są także inne opcje.
 1. Wybierz opcję **Zapisz**.
 
 ### <a name="create-a-new-product-master-and-product-variants"></a>Stwórz nowy produkt główny i jego warianty

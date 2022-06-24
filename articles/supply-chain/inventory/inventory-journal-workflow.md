@@ -1,6 +1,6 @@
 ---
 title: Przepływy pracy zatwierdzania arkuszy magazynowych
-description: W tym temacie opisano sposób konfigurowania i używania przepływów pracy zatwierdzania arkusza zapasów dla różnych typów transakcji dotyczących zapasów fizycznych. Przepływy pracy arkusza magazynowego zapewniają, że tylko zatwierdzone arkusze magazynowe mogą być księgowane w transakcjach.
+description: W tym artykule opisano sposób konfigurowania i używania przepływów pracy zatwierdzania arkusza zapasów dla różnych typów transakcji dotyczących zapasów fizycznych. Przepływy pracy arkusza magazynowego zapewniają, że tylko zatwierdzone arkusze magazynowe mogą być księgowane w transakcjach.
 author: yufeihuang
 ms.date: 07/21/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: fd73c515c653de9160301e069fb25d995db40741
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: ebb12562a9f06f2efc3b5a373d7ad0f98bc3505e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778312"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873993"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Przepływy pracy zatwierdzania arkuszy magazynowych
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób konfigurowania i używania przepływów pracy zatwierdzania arkusza zapasów dla różnych typów transakcji dotyczących zapasów z natury, takich jak rozchody i przyjęcia, przesunięcia zapasów, listy materiałów (BOM) i uzgadnianie zapasów fizycznych. Przepływy pracy arkusza magazynowego zapewniają, że tylko zatwierdzone arkusze magazynowe mogą być księgowane w transakcjach.
+W tym artykule opisano sposób konfigurowania i używania przepływów pracy zatwierdzania arkusza zapasów dla różnych typów transakcji dotyczących zapasów z natury, takich jak rozchody i przyjęcia, przesunięcia zapasów, listy materiałów (BOM) i uzgadnianie zapasów fizycznych. Przepływy pracy arkusza magazynowego zapewniają, że tylko zatwierdzone arkusze magazynowe mogą być księgowane w transakcjach.
 
 > [!NOTE]
 > Przepływy pracy zatwierdzania arkuszy magazynowych dotyczą tylko transakcji zarejestrowanych przy użyciu modułu Zarządzanie zapasami. Nie działają z arkuszami magazynowymi wyzwalanymi w module zarządzania magazynem.

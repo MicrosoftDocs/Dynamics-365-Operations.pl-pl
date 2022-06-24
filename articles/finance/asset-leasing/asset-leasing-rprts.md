@@ -1,6 +1,6 @@
 ---
 title: Raporty dotyczące wynajmu składników majątku
-description: W tym temacie wyszczególniono i pokrótce opisano raporty dostępne dla wynajmu składnika majątku.
+description: W tym artykule wyszczególniono i pokrótce opisano raporty dostępne dla wynajmu składnika majątku.
 author: moaamer
 ms.date: 04/05/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: cb1c994fee6efff82dd1cba1e71c6af49b384208
-ms.sourcegitcommit: 722854cb0d302d01ce3d9580ac80dc7c23d19bf5
+ms.openlocfilehash: a6e6eb851b9b2dce7259a5355326dd594a940b8c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "8550047"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856720"
 ---
 # <a name="asset-leasing-reports"></a>Raporty dotyczące wynajmu składników majątku
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyszczególniono i pokrótce opisano raporty dostępne dla wynajmu składnika majątku. Większość raportów jest wyświetlana przez wykonanie tych kroków lub kroków bardzo podobnych, stosownie do uwag). 
+W tym artykule wyszczególniono i pokrótce opisano raporty dostępne dla wynajmu składnika majątku. Większość raportów jest wyświetlana przez wykonanie tych kroków lub kroków bardzo podobnych, stosownie do uwag). 
 
 - Aby wyświetlić raporty dotyczące wynajmu składników majątku, należy wybrać **Wynajem składników majątku > Zapytania i raporty > Raporty dotyczące wynajmu** i wybrać raport do wyświetlenia. W przypadku raportów wymagających innej ścieżki wyboru kroki umożliwiające otwarcie tego raportu są dołączone do opisu tego raportu. 
 - Po wybraniu raportu do drukowania zostanie otwarta strona parametrów umożliwiająca filtrowanie informacji zawartych w raporcie. Wprowadź kryteria filtrowania, a następnie kliknij przycisk **OK**, aby wygenerować raport. Wygenerowany raport będzie zawierał informacje, które spełniają kryteria określone w filtrach.

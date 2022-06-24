@@ -1,6 +1,6 @@
 ---
 title: Integrowanie aplikacji Dynamics 365 Supply Chain Management (zarządzanie składnikami majątku) z aplikacją Dynamics 365 Guides
-description: W tym temacie objaśniono sposób integrowania modułu zarządzania składnikami majątku w aplikacji Microsoft Dynamics 365 Supply Chain Management z aplikacją Dynamics 365 Guides. Pozwoli to na korzystanie z zalet przewodników po rzeczywistości mieszanej w codziennych przepływach pracy dotyczących usług i konserwacji.
+description: W tym artykule objaśniono sposób integrowania modułu zarządzania składnikami majątku w aplikacji Microsoft Dynamics 365 Supply Chain Management z aplikacją Dynamics 365 Guides. Pozwoli to na korzystanie z zalet przewodników po rzeczywistości mieszanej w codziennych przepływach pracy dotyczących usług i konserwacji.
 author: johanhoffmann
 ms.date: 04/28/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-28
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 4132992eb5f4b42d43d9ff72cada616fe0573c2f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d06978bcbd6205111384f5c7cefdf34fdbdbfbf5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568262"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875692"
 ---
 # <a name="integrate-dynamics-365-supply-chain-management-asset-management-with-dynamics-365-guides"></a>Integrowanie aplikacji Dynamics 365 Supply Chain Management (zarządzanie składnikami majątku) z aplikacją Dynamics 365 Guides
 
@@ -47,7 +47,7 @@ Aby skojarzyć przewodnik, należy skorzystać z wiersza listy kontrolnej konser
 
 Aby skojarzyć przewodnik z szablonem listy kontrolnej konserwowanego składnika majątku, wykonaj poniższe kroki.
 
-1. Utwórz przewodnik, korzystając z aplikacji Dynamics 365 Guides na komputer i urządzenie HoloLens. Aby uzyskać więcej informacji dotyczących sposobu tworzenia przewodnika, zobacz następujące tematy:
+1. Utwórz przewodnik, korzystając z aplikacji Dynamics 365 Guides na komputer i urządzenie HoloLens. Aby uzyskać więcej informacji dotyczących sposobu tworzenia przewodnika, zobacz następujące artykuły:
 
     - [Tworzenie przewodnika przy użyciu aplikacji komputerowej](/dynamics365/mixed-reality/guides/pc-app-overview)
     - [Umieszczanie hologramów przy użyciu aplikacji HoloLens](/dynamics365/mixed-reality/guides/hololens-app-overview)

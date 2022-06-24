@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: b265c0d5cb43e151386fe90e3a3dea414ec0aca6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5eb18ce29cbd1434b2a766c2ba5d78ed1be4e72b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579911"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851254"
 ---
 # <a name="wave-template-grouping"></a>Grupowanie szablonów grup czynności
 
@@ -41,7 +41,7 @@ Aby móc używać funkcji *Grupowania szablonów grupy czynności*, należy ją 
 Aby udostępnić grupowanie szablonów grupy czynności, należy wykonać poniższe kroki w celu skonfigurowania [szablonu grupy czynności](tasks/configure-wave-processing.md).
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Grupy czynności \> Szablony grupy czynności**.
-1. W lewym okienku wybierz szablon grupy czynności do ustawienia. Jeśli chcesz później przejść przez scenariusz w tym temacie korzystając z danych demonstracyjnych, wybierz szablon **62 Domyślna wysyłka**.
+1. W lewym okienku wybierz szablon grupy czynności do ustawienia. Jeśli chcesz później przejść przez scenariusz w tym artykule korzystając z danych demonstracyjnych, wybierz szablon **62 Domyślna wysyłka**.
 1. Wybierz opcję **Edytuj**, aby umieścić stronę w trybie edycji.
 1. Na skróconej karcie **Ogólne** ustaw następujące wartości:
 
@@ -84,7 +84,7 @@ Tego scenariusza można również używać jako wskazówek dotyczących danej fu
 
 W tym scenariuszu przedstawiono sposób użycia grupowania szablonów grupy czynności w celu automatycznego tworzenia wielu grup czynności na podstawie kryteriów grupowania zdefiniowanych w szablonie grupy czynności. W tym scenariuszu szablon grupy czynności jest konfigurowany w systemie w celu utworzenia jednej grupy czynności dla każdej usługi przewozowej.
 
-Przed rozpoczęciem Przygotuj szablon grupy czynności, tak jak opisano to sekcji [Konfigurowanie szablonu grupy czynności, aby korzystać z funkcji grupowania szablonów grup czynności](#set-up-template) wcześniej w tym temacie. Jeśli użytkownik będzie pracować z danymi demonstracyjnymi w tym scenariuszu, należy pamiętać o użyciu wartości danych demonstracyjnych, które są sugerowane w tej procedurze. Ta konfiguracja umożliwia grupowanie grup czynności zgodnie z usługą przewoźnika ustawioną dla każdego zamówienia sprzedaży.
+Przed rozpoczęciem Przygotuj szablon grupy czynności, tak jak opisano to sekcji [Konfigurowanie szablonu grupy czynności, aby korzystać z funkcji grupowania szablonów grup czynności](#set-up-template) wcześniej w tym artykule. Jeśli użytkownik będzie pracować z danymi demonstracyjnymi w tym scenariuszu, należy pamiętać o użyciu wartości danych demonstracyjnych, które są sugerowane w tej procedurze. Ta konfiguracja umożliwia grupowanie grup czynności zgodnie z usługą przewoźnika ustawioną dla każdego zamówienia sprzedaży.
 
 #### <a name="create-sales-order-1"></a>Utwórz zamówienie sprzedaży 1
 

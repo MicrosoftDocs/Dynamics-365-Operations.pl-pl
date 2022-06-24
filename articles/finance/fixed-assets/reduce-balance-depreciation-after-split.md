@@ -1,6 +1,6 @@
 ---
 title: Amortyzacja degresywna po podzieleniu
-description: W tym temacie opisano metodę używaną w module Środki trwałe do obliczania amortyzacji po podzieleniu składnika majątku przy użyciu metody amortyzacji degresywnej.
+description: W tym artykule opisano metodę używaną w module Środki trwałe do obliczania amortyzacji po podzieleniu składnika majątku przy użyciu metody amortyzacji degresywnej.
 author: moaamer
 ms.date: 11/17/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-17
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 35637ac1484121232c3571d1a26132a86d69e366
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 539967a9a73da91f6b49c1bb89f404267ae0a804
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726761"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883308"
 ---
 # <a name="reduce-balance-depreciation-after-a-split"></a>Amortyzacja degresywna po podzieleniu
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano metodę używaną w module Środki trwałe do obliczania amortyzacji po podzieleniu składnika majątku na inny składnik majątku przy użyciu metody amortyzacji degresywnej. Rok amortyzacji skonfigurowany w księdze składników majątku jest rokiem obrachunkowym. Aby uzyskać więcej informacji, zobacz [Amortyzacja degresywna](reduce-balance-depreciation.md) i [Rozbicie środka trwałego](tasks/split-fixed-asset.md).
+W tym artykule opisano metodę używaną w module Środki trwałe do obliczania amortyzacji po podzieleniu składnika majątku na inny składnik majątku przy użyciu metody amortyzacji degresywnej. Rok amortyzacji skonfigurowany w księdze składników majątku jest rokiem obrachunkowym. Aby uzyskać więcej informacji, zobacz [Amortyzacja degresywna](reduce-balance-depreciation.md) i [Rozbicie środka trwałego](tasks/split-fixed-asset.md).
 
 Jeśli środek trwały zostanie podzielony w okresie obrachunkowym późniejszym niż okres, w którym składnik majątku został nabyty, amortyzacja degresywna uwzględni wartość księgową netto (NBV) składnika majątku za poprzedni rok. Ponadto uwzględni transakcje korekty wartości początkowej i amortyzacji wygenerowane przez transakcję, która podzieliła składnik majątku. To zachowanie zakłada, że składnik majątku został nabyty w jednym roku obrachunkowym i podzielony w późniejszym roku obrachunkowym. Kwota, o którą należy zamortyzować pierwotny składnik majątku po podzieleniu, odzwierciedla NBV składnika sprzed podziału oraz transakcję korekty wartości początkowej i amortyzacji zaksięgowaną wskutek podziału.
 

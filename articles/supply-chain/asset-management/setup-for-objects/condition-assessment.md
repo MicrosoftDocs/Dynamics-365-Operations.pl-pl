@@ -1,6 +1,6 @@
 ---
 title: Ocena warunku
-description: W tym temacie wyjaśniono, jak utworzyć szablon oceny warunku i jak zarejestrować składnik majątku w Zarządzaniu składnikami majątku.
+description: W tym artykule wyjaśniono, jak utworzyć szablon oceny warunku i jak zarejestrować składnik majątku w Zarządzaniu składnikami majątku.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cced322dd2f213d8e6025d853edc8472618989b61de7139b28ba1c6bffd3ad2a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aa326a01bb63bd0b59c0df7a3c751a5242a3dd37
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736071"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872102"
 ---
 # <a name="condition-assessment"></a>Ocena warunku
 
@@ -28,7 +28,7 @@ ms.locfileid: "6736071"
 
  
 
-W tym temacie wyjaśniono, jak utworzyć szablon oceny warunku i jak zarejestrować składnik majątku w Zarządzaniu składnikami majątku. Ocena stanu jest wykonywana w regularnych odstępach czasu, a podstawowym celem jest tworzenie i utrzymywanie danych o stanie składników majątku. Z punktu widzenia konserwacji zapobiegawczej ważne jest monitorowanie kluczowych informacji, takich jak aktualny stan i pozostały okres eksploatacji. Ponadto, jeśli przeprowadzą Państwo ocenę stanu w regularnych odstępach czasu, będą Państwo mogli monitorować i porównywać warunki na maszynie w fabryce.
+W tym artykule wyjaśniono, jak utworzyć szablon oceny warunku i jak zarejestrować składnik majątku w Zarządzaniu składnikami majątku. Ocena stanu jest wykonywana w regularnych odstępach czasu, a podstawowym celem jest tworzenie i utrzymywanie danych o stanie składników majątku. Z punktu widzenia konserwacji zapobiegawczej ważne jest monitorowanie kluczowych informacji, takich jak aktualny stan i pozostały okres eksploatacji. Ponadto, jeśli przeprowadzą Państwo ocenę stanu w regularnych odstępach czasu, będą Państwo mogli monitorować i porównywać warunki na maszynie w fabryce.
 
 Ocena stanu może być wykorzystana do pomiaru i monitorowania wielu warunków na sprzęcie. Przykład: można zmierzyć drgania maszyny. Po zarejestrowaniu pomiarów drgań w zarządzaniu składnikami majątku, na różnego rodzaju sprzęcie można wyszukać najnowszą zarejestrowaną ocenę i wyświetlić pomiary drgań.
 

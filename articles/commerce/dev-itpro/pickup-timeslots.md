@@ -1,6 +1,6 @@
 ---
 title: Tworzenie i aktualizowanie przedziałów czasu na potrzeby odbiorów przez odbiorcę
-description: W tym temacie opisano sposób tworzenia, konfigurowania i aktualizowania przedziałów czasu odbioru klientów w centrali Commerce.
+description: W tym artykule opisano sposób tworzenia, konfigurowania i aktualizowania przedziałów czasu odbioru klientów w Commerce headquarters.
 author: anupamar-ms
 ms.date: 01/05/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.15 update
-ms.openlocfilehash: a9ee1356bfcaeee881c28cf0361b34b2c65acbc7a3b57347fa2581a8a935da42
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a135f592225e4b388b5c9fdaa5fe23e60baf0185
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713428"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882240"
 ---
 # <a name="create-and-update-time-slots-for-customer-pickup"></a>Tworzenie i aktualizowanie przedziałów czasu na potrzeby odbiorów przez odbiorcę
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie opisano sposób tworzenia, konfigurowania i aktualizowania przedziałów czasu odbioru klientów w centrali Commerce.
+W tym artykule opisano sposób tworzenia, konfigurowania i aktualizowania przedziałów czasu odbioru klientów w Commerce headquarters.
 
 Funkcja przedziału czasowego umożliwia sprzedawcom detalicznym zdefiniowanie przedziału czasowego dla towarów, dla których włączony jest tryb dostawy do klienta. Przedziały czasowe pozwalają detalistom określać dni i godziny, w których można odebrać zamówienia ze sklepu. Sprzedawcy detaliczni mogą również zdefiniować liczbę zamówień, które można odebrać w danym okresie. W ten sposób detaliści mogą ograniczyć liczbę zamówień, które można odebrać w danym dniu io określonej godzinie. Wynikiem tego jest lepsza jakość doświadczenia dla klientów.
 

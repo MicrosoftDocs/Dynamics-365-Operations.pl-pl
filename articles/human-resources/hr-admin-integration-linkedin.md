@@ -1,6 +1,6 @@
 ---
 title: Integracja z usługą LinkedIn Talent Hub
-description: W tym temacie opisano sposób konfigurowania pul integracji Microsoft Dynamics 365 Human Resources i LinkedIn Talent Hub.
+description: W tym artykule opisano sposób konfigurowania pul integracji Microsoft Dynamics 365 Human Resources i LinkedIn Talent Hub.
 author: jaredha
 ms.date: 10/20/2020
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d14a8cb1973e0ed55ef10ddb43415eba80eb5c1b
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: df4a0a4dec078392ba835318450f5983a6e95c97
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717119"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887756"
 ---
 # <a name="integrate-with-linkedin-talent-hub"></a>Integracja z usługą LinkedIn Talent Hub
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 > [!IMPORTANT]
-> Integracja między programem Dynamics 365 Human Resources i LinkedIn Talent Hub opisana w tym temacie była wycofana 31 grudnia 2021 r. Usługa integracji nie będzie już dostępna po tej dacie. Organizacje, które jeszcze nie używają usługi integracji, nie będą mogły zaimplementować usługi przed wycofaniem.
+> Integracja między programem Dynamics 365 Human Resources i LinkedIn Talent Hub opisana w tym artykule została wycofana 31 grudnia 2021 r. Usługa integracji nie będzie już dostępna po tej dacie. Organizacje, które jeszcze nie używają usługi integracji, nie będą mogły zaimplementować usługi przed wycofaniem.
 
 [LinkedIn Talent Hub](https://business.linkedin.com/talent-solutions/talent-hub) jest platformą systemu śledzenia kandydatów (ATS). Umożliwia on źródło, zarządzanie i zatrudnianie pracowników w jednym miejscu. Integrując Microsoft Dynamics 365 Human Resources z LinkedIn Talent Hub, można łatwo utworzyć rekordy pracowników w Human Resources dla kandydatów, którzy zostali zatrudnieni na stanowiskach.
 

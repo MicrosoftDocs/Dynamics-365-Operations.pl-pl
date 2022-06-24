@@ -1,6 +1,6 @@
 ---
 title: Porównanie funkcji w chmurze i lokalnych
-description: Ten temat przedstawia funkcje obsługiwane w chmurze i lokalnie.
+description: Ten artykuł przedstawia funkcje obsługiwane w chmurze i lokalnie.
 author: sericks007
 ms.date: 01/14/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 68082ad0ae264b76a852d8d12412af8c4ad917703441c41e67743d1b499a8d73
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4096089978032f150bf6d711711a948cf1d3232f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736229"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879783"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Porównanie funkcji w chmurze i lokalnych
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie przedstawiono porównanie funkcji dostępnych w chmurze i w środowisku lokalnym dla następujących aplikacji:
+W tym artykule przedstawiono porównanie funkcji dostępnych w chmurze i w środowisku lokalnym dla następujących aplikacji:
 
 - [Dynamics 365 Finance](cloud-prem-comparison.md#dynamics-365-finance)
 - [Dynamics 365 Supply Chain Management](cloud-prem-comparison.md#dynamics-365-supply-chain-management)
@@ -36,9 +36,9 @@ Uwzględniliśmy również informacje dotyczące [funkcji programowania i admini
 
 W poniższej tabeli wymieniono zakresy aplikacji. Obsługa w chmurze i lokalnie jest wymieniona dla funkcji jako całości. W przypadku gdy określone funkcje różnią się od ogólnego obszaru, są wymienione w osobnym w wierszu w kolumnie funkcja.
 
-## <a name="dynamics-365-finance"></a>Rozwiązanie Dynamics 365 Finance
+## <a name="dynamics-365-finance"></a>Dynamics 365 Finance
 
-| **Obszar**             | **Funkcja**                | **W chmurze** | **Lokalne** |
+| **Warstwowy**             | **Funkcja**                | **W chmurze** | **Lokalne** |
 |---------------------|-----------------------------|-----------|-----------------|
 | Zgodność i certyfikacje        |                                                                                           | Tak       | Tak             |
 |                                      | Certyfikacja SOC 1 Typ 1                                                                | Tak       | Nie              |

@@ -1,6 +1,6 @@
 ---
 title: Globalne parametry urządzenia przenośnego
-description: W tym temacie wyjaśniono, jak skonfigurować ustawienia urządzenia przenośnego na stronie Parametry zarządzania magazynem.
+description: W tym artykule wyjaśniono, jak skonfigurować ustawienia urządzenia przenośnego na stronie Parametry zarządzania magazynem.
 author: Mirzaab
 ms.date: 08/13/2021
 ms.topic: article
@@ -11,24 +11,24 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-13
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 0ae04c86ff1eafb649fcef7c34ace66bdc3e5cb8
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: e6e03414edd9243fcc4156195928455b30a7cee9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679173"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847767"
 ---
 # <a name="global-mobile-device-parameters"></a>Globalne parametry urządzenia przenośnego
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób konfiguracji globalnych parametrów zarządzania magazynem, które wpływają na sposób interakcji systemu z urządzeniami przenośnymi.
+W tym artykule opisano sposób konfiguracji globalnych parametrów zarządzania magazynem, które wpływają na sposób interakcji systemu z urządzeniami przenośnymi.
 
 Aby uzyskać więcej informacji o ustawianiu pracowników magazynu, zobacz temat [Zarządzanie pracownikiem magazynu](manage-warehouse-workers.md). Więcej informacji na temat obsługi tablic rejestracyjnych na urządzeniach mobilnych, zobacz [Odbieranie numerów identyfikacyjnych za pomocą aplikacji Warehouse Management](warehousing-mobile-device-app-license-plate-receiving.md). Aby uzyskać więcej informacji na temat procesów liczenia cykli, zobacz [Liczenie cykli](cycle-counting.md) i [Przykładowe scenariusze liczenia cykli](cycle-counting-scenarios.md).
 
 ## <a name="open-the-warehouse-management-parameters-page"></a>Otwórz stronę Parametry zarządzania magazynem
 
-Przejdź do strony **Parametry zarządzania magazynem** w obszarze **Zarządzanie magazynem \> Konfiguracja \> Parametry zarządzania magazynem**. Następnie możesz ustawić pola związane z pracą urządzenia mobilnego, jak opisano w następnej sekcji tego tematu.
+Przejdź do strony **Parametry zarządzania magazynem** w obszarze **Zarządzanie magazynem \> Konfiguracja \> Parametry zarządzania magazynem**. Następnie możesz ustawić pola związane z pracą urządzenia mobilnego, jak opisano w następnej sekcji tego artykułu.
 
 ## <a name="mobile-device-fasttab-on-the-general-tab"></a>Skrócona karta urządzenia przenośnego na karcie Ogólne
 

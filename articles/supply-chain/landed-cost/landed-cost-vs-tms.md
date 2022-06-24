@@ -1,6 +1,6 @@
 ---
 title: Koszt z wyładunkiem vs. Zarządzanie transportem
-description: Microsoft Dynamics 365 Supply Chain Management udostępnia dwa różne moduły do pracy z transportem, zarządzaniem transportem (TMS) i kosztem dostawy. W tym temacie podsumowano funkcje wspólne dla obu modułów i podkreślono różnice między nimi.
+description: Microsoft Dynamics 365 Supply Chain Management udostępnia dwa różne moduły do pracy z transportem, zarządzaniem transportem (TMS) i kosztem dostawy. W tym artykule podsumowano funkcje wspólne dla obu modułów i podkreślono różnice między nimi.
 author: Weijiesa
 ms.date: 12/04/2020
 ms.topic: article
@@ -12,20 +12,20 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-04
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 8c59d7d1887986d308cb591ece077cff9f4648a5
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 40489ff8d8683d19a5f726546cc4c43cc3e7a05d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690394"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905929"
 ---
 # <a name="landed-cost-vs-transportation-management"></a>Koszt z wyładunkiem vs. Zarządzanie transportem
 
 [!include [banner](../../includes/banner.md)]
 
-Microsoft Dynamics 365 Supply Chain Management udostępnia dwa różne moduły do pracy z transportem: **Zarządzaniem transportem** (TMS) i **Kosztem dostawy**. W tym temacie podsumowano funkcje wspólne dla obu modułów i podkreślono różnice między nimi. Informacji tych można użyć w celu decydowania, które moduły najlepiej pasują do procesów biznesowych. Może się okazać, że niektóre praktyki biznesowe działają lepiej w przypadku TMS, podczas gdy inne najlepiej sprawdzają się w przypadku kosztów z wyładunkiem. Następnie, w zależności od wymagań firmy, można wybrać opcję używania wyłącznie jednego modułu lub można połączyć te dwa moduły.
+Microsoft Dynamics 365 Supply Chain Management udostępnia dwa różne moduły do pracy z transportem: **Zarządzaniem transportem** (TMS) i **Kosztem dostawy**. W tym artykule podsumowano funkcje wspólne dla obu modułów i podkreślono różnice między nimi. Informacji tych można użyć w celu decydowania, które moduły najlepiej pasują do procesów biznesowych. Może się okazać, że niektóre praktyki biznesowe działają lepiej w przypadku TMS, podczas gdy inne najlepiej sprawdzają się w przypadku kosztów z wyładunkiem. Następnie, w zależności od wymagań firmy, można wybrać opcję używania wyłącznie jednego modułu lub można połączyć te dwa moduły.
 
-Ten temat nie jest kompleksowym przeglądem wszystkich funkcji obu modułów. Zamiast tego podkreśla dostępne funkcje związane z transportem towarów od dostawcy do magazynu firmy, gdzie można je zużyć.
+Ten artykuł nie jest kompleksowym przeglądem wszystkich funkcji obu modułów. Zamiast tego podkreśla dostępne funkcje związane z transportem towarów od dostawcy do magazynu firmy, gdzie można je zużyć.
 
 ## <a name="terminology-reference-data-and-reporting-differences"></a>Terminologia, dane referencyjne i różnice raportowania
 

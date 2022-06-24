@@ -1,6 +1,6 @@
 ---
 title: Profile oceny
-description: W tym temacie opisano sposób konfigurowania danych do profili stawek.
+description: W tym artykule opisano sposób konfigurowania danych do profili stawek.
 author: Weijiesa
 ms.date: 10/30/2020
 ms.topic: business-process
@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: weijiesa
 ms.search.validFrom: 2020-10-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2512b79c87a4640a2b31b7699e85d743b451a14c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 1f7408574187ddb099181bd2566c46c52307f603
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676447"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850487"
 ---
 # <a name="rating-profiles"></a>Profile oceny
 
@@ -56,7 +56,7 @@ Na stronie **Profile stawek** można przejrzeć wszystkie dostępne profile staw
 1. Przejdź do pozycji **Zarządzanie transportem \> Ustawienia \> Przewoźnicy \> Firmy przewozowe**.
 1. Wybierz przewoźnika z listy.
 1. Na skróconej karcie **Profile stawek** kliknij opcję **Nowy**, aby utworzyć profil oceny.
-1. Umożliwia ustawienie pól dla nowego profilu stawek. Te pola odpowiadają polom na stronie **Profile stawek** w sposób opisany w poprzedniej sekcji tego tematu.
+1. Umożliwia ustawienie pól dla nowego profilu stawek. Te pola odpowiadają polom na stronie **Profile stawek** w sposób opisany w poprzedniej sekcji tego artykułu.
 
 > [!NOTE]
 > Profile utworzone na stronie **Przewoźnicy** są również wyświetlane na stronie **Profile ocen**.

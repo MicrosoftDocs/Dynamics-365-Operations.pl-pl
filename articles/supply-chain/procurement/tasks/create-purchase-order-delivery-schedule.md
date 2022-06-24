@@ -1,6 +1,6 @@
 ---
 title: Tworzenie zamówienia zakupu z harmonogramem dostaw
-description: W tym temacie pokazano sposób tworzenia harmonogramu dostaw dla zamówienia zakupu.
+description: W tym artykule pokazano sposób tworzenia harmonogramu dostaw dla zamówienia zakupu.
 author: GalynaFedorova
 ms.date: 08/01/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1475115b5c1a475f9a56f0f3eb8bb47267d2b91
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: e13103f374be838a5ea0fb5e08c449b419905cab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677458"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875254"
 ---
 # <a name="create-a-purchase-order-with-a-delivery-schedule"></a>Tworzenie zamówienia zakupu z harmonogramem dostaw
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie pokazano sposób tworzenia harmonogramu dostaw dla zamówienia zakupu. Harmonogram dostaw jest używany w reakcji na żądanie dostarczenia ilości z zamówienia lub arkusza w kilku dostawach. Przykład zawarty w tym przewodniku można wykonać na danych firmy demonstracyjnej USMF. Zazwyczaj procedurę wykonuje pracownik działu zakupów.
+W tym artykule pokazano sposób tworzenia harmonogramu dostaw dla zamówienia zakupu. Harmonogram dostaw jest używany w reakcji na żądanie dostarczenia ilości z zamówienia lub arkusza w kilku dostawach. Przykład zawarty w tym przewodniku można wykonać na danych firmy demonstracyjnej USMF. Zazwyczaj procedurę wykonuje pracownik działu zakupów.
 
 ## <a name="create-a-delivery-schedule"></a>Tworzenie harmonogramu dostaw
 1. W okienku nawigacji wybierz kolejno **Moduły > Zaopatrzenie i sourcing > Zamówienia zakupu > Wszystkie zamówienia zakupu**.

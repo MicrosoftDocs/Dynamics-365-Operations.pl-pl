@@ -1,6 +1,6 @@
 ---
 title: Dodawanie nowych pól do szablonu dokumentu biznesowego w formularzu Microsoft Excel
-description: Ten temat zawiera informacje dotyczące sposobu dodawania nowych pól do szablonu w Microsoft Excel za pomocą funkcji zarządzania dokumentami biznesowymi systemu.
+description: Ten artykuł zawiera informacje dotyczące sposobu dodawania nowych pól do szablonu w Microsoft Excel za pomocą funkcji zarządzania dokumentami biznesowymi systemu.
 author: NickSelin
 ms.date: 11/15/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 57eebdc38fb3f74690b92c03fa60e10c7610db1fe413320a6d167f05b0658bf1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8395a87e88ebbd1942c87da0cecebe6d25bdf625
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767249"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869410"
 ---
 # <a name="add-new-fields-to-a-business-document-template-in-microsoft-excel"></a>Dodawanie nowych pól do szablonu dokumentu biznesowego w formularzu Microsoft Excel
 
@@ -28,14 +28,14 @@ ms.locfileid: "6767249"
 
 Nowe pola można dodawać do szablonu używanego do generowania dokumentów biznesowych w format Microsoft Excel. Pola te można dodawać jako symbole zastępcze używane do wypełniania wygenerowanych dokumentów informacjami wymaganymi z poziomu aplikacji. Dla każdego dodawanego pola można również określić powiązanie ze źródłami danych, aby określić, jakie dane aplikacji będą wprowadzane do pola w przypadku użycia szablonu do generowania dokumentów biznesowych.
 
-Wykonaj przykład z tego tematu, aby dowiedzieć się więcej na temat tej funkcji. W tym przykładzie przedstawiono sposób aktualizacji szablonu w celu wypełniania pól w wygenerowanych formularzach faktur niezależnych.
+Wykonaj przykład z tego artykułu, aby dowiedzieć się więcej na temat tej funkcji. W tym przykładzie przedstawiono sposób aktualizacji szablonu w celu wypełniania pól w wygenerowanych formularzach faktur niezależnych.
 
 ## <a name="configure-business-document-management-to-edit-templates"></a>konfigurowanie szablonów przy użyciu funkcji zarządzania dokumentami biznesowymi
 
 Ponieważ zarządzanie dokumentami biznesowymi (BDM) jest zbudowane na podstawie [Omówienie raportowania elektronicznego (ER)](general-electronic-reporting.md), należy skonfigurować wymagane parametry modułu er i BDM, aby można było rozpocząć pracę z BDM.
 
 1.  Zaloguj się do wystąpienia rozwiązania Microsoft Dynamics 365 Finance jako administrator systemu.
-2.  W temacie [Omówienie zarządzania dokumentami biznesowymi](er-business-document-management.md) należy wykonać następujące czynności:
+2.  W artykule [Omówienie zarządzania dokumentami biznesowymi](er-business-document-management.md) należy wykonać następujące czynności:
 
     1.  Konfigurowanie parametrów modułu ER.
     2.  Włącz BDM.
@@ -61,7 +61,7 @@ Aby uzyskać więcej informacji jak importować konfiguracji ER, zapoznaj się z
 
 3.  W siatce wybierz szablon **Darmowy tekst faktury (Excel)**.
 4.  W prawym okienku wybierz opcję **nowy szablon**, aby utworzyć nowy szablon oparty na wybranym szablonie.
-5.  W polu **tytuł** wprowadź **Darmowy tekst faktury (Excel) Contoso** jako tytuł nowego szablonu.
+5.  W polu **tytuł** wprowadź **Darmowy tekst faktury (Excel) contoso** jako tytuł nowego szablonu.
 6.  Wybierz **OK**, aby potwierdzić rozpoczęcie procesu edycji.
 
 Pojawia się strona Edytor szablonów BDM. Można wykorzystać Microsoft 365 do edytowania wybranego szablonu w trybie online w osadzonym formancie.

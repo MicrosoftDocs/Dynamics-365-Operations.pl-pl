@@ -1,6 +1,6 @@
 ---
 title: Integracja z systemami wykonywania produkcji innych firm
-description: W tym temacie wyjaśniono, jak zintegrować Microsoft Dynamics 365 Supply Chain Management z systemem realizacji produkcji (MES) innej firmy.
+description: W tym artykule wyjaśniono, jak zintegrować Microsoft Dynamics 365 Supply Chain Management z systemem realizacji produkcji (MES) innej firmy.
 author: johanhoffmann
 ms.date: 10/01/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: c7633ba32f9265aa0fd8f702552f48dbf675375d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 208ed2d6c8b411d12888966d9c175730e828eb44
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678695"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860646"
 ---
 # <a name="integrate-with-third-party-manufacturing-execution-systems"></a>Integracja z systemami wykonywania produkcji innych firm
 
@@ -238,7 +238,7 @@ W *zakończ zlecenie produkcyjne* wartość `_messageType` to `ProdProductionOrd
 
 ## <a name="other-production-information"></a>Inne informacje o produkcji
 
-Komunikaty obsługują akcje lub zdarzenia, które mają miejsce w sklepie. Są one przetwarzane przy użyciu struktury integracji MES opisanej w tym temacie. Projekt zakłada, że inne informacje referencyjne, które będą udostępniane MES (takie jak informacje związane z produktem, zestawienie materiałów lub trasa (wraz z konkretnymi czasami ustawienia i konfiguracji) użyte w określonym zleceniu produkcyjnym) zostaną pobrane z systemu przy użyciu [encji danych](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#data-entities) przez transfer plików lub OData.
+Komunikaty obsługują akcje lub zdarzenia, które mają miejsce w sklepie. Są one przetwarzane przy użyciu struktury integracji MES opisanej w tym artykule. Projekt zakłada, że inne informacje referencyjne, które będą udostępniane MES (takie jak informacje związane z produktem, zestawienie materiałów lub trasa (wraz z konkretnymi czasami ustawienia i konfiguracji) użyte w określonym zleceniu produkcyjnym) zostaną pobrane z systemu przy użyciu [encji danych](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#data-entities) przez transfer plików lub OData.
 
 ## <a name="receive-feedback-about-the-state-of-a-message"></a>Otrzymywanie informacji zwrotnych o stanie wiadomości
 
@@ -251,7 +251,7 @@ Po wysłaniu przez system MES wiadomości do Supply Chain Management może być 
 
 W takich przypadkach można skorzystać ze standardowej funkcji alertu w Supply Chain Management. Aby uzyskać informacje na temat działania standardowych alertów, zobacz następujące zasoby:
 
-- Temat Pomocy: [Omówienie alertów](../../fin-ops-core/fin-ops/get-started/alerts-overview.md)
+- Artykuł pomocy: [Omówienie alertów](../../fin-ops-core/fin-ops/get-started/alerts-overview.md)
 - Wideo: [Opcje reguł alertów w Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=cpzimwOjicM&ab_channel=MicrosoftDynamics365)
 
 Na przykład można skonfigurować następujące alerty w celu podania informacji zwrotnych o stanie wiadomości:

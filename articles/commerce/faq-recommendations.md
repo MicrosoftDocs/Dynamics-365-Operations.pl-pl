@@ -1,6 +1,6 @@
 ---
 title: Rekomendacje produktów — często zadawane pytania
-description: Ten temat zawiera informacje o procesach i narzędziach, których można wykorzystywać do rozwiązywania problemów związanych z zaleceniami dotyczącymi produktów lub ich wynikami.
+description: Ten artykuł zawiera informacje o procesach i narzędziach, których można wykorzystywać do rozwiązywania problemów związanych z zaleceniami dotyczącymi produktów lub ich wynikami.
 author: bebeale
 ms.date: 05/26/2020
 ms.topic: article
@@ -16,19 +16,19 @@ ms.search.industry: Retail, Core, Operations
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 88ad0efd8f678c3082c31b1c3162b8288e14fc9edb69e8756f1641461b808e07
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 77a5532ab1ae3b630bb335aa7cff6dc747184994
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733972"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900454"
 ---
 # <a name="product-recommendations-faq"></a>Rekomendacje produktów — często zadawane pytania
 
 
 [!include [banner](includes/banner.md)]
 
-Ten temat zawiera informacje o procesach i narzędziach, których można wykorzystywać do rozwiązywania problemów związanych z [rekomendacjami produktów](product-recommendations.md) lub ich wynikami.
+Ten artykuł zawiera informacje o procesach i narzędziach, których można wykorzystywać do rozwiązywania problemów związanych z [rekomendacjami produktów](product-recommendations.md) lub ich wynikami.
 
 ## <a name="best-practices"></a>Najlepsze praktyki
 Bardzo ważne jest wykorzystanie pojęcia produktów głównych i wariantów produktu. Rozsądne grupowanie wariantów dla nadrzędnego produktu głównego pomaga algorytmom list i usłudze w tworzeniu lepszych modeli. Ponadto usługa może obsługiwać tylko jedno wystąpienie produktu, a nie wszystkie ściśle powiązane warianty z listy. Jeśli wszystkie ściśle powiązane warianty są umieszczone na liście, mogą wystąpić błędne lub zduplikowane wyniki.

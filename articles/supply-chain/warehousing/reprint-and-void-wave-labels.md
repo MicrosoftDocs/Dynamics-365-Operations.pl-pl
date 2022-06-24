@@ -1,6 +1,6 @@
 ---
 title: ponowne drukowanie i unieważnienie etykiet grup czynności
-description: W tym temacie wyjaśniono sposób unieważnienia i ponownego drukowania istniejących etykiet grupy czynności.
+description: W tym artykule wyjaśniono sposób unieważnienia i ponownego drukowania istniejących etykiet grupy czynności.
 author: perlynne
 ms.date: 07/09/2020
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 052c6632d1c6c6b1f357d4066ca8b419698cae62
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f9f057d9985fb8431ec7c9ced23f2cd3c476570d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572344"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871841"
 ---
 # <a name="reprint-and-void-wave-labels"></a>ponowne drukowanie i unieważnienie etykiet grup czynności
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób zarządzania etykietami generowanymi przez przetwarzanie grup czynności. (Aby uzyskać szczegółowy opis i instrukcje dotyczące konfiguracji, należy zapoznać się z tematem [Konfiguruj drukowanie etykiet grupy czynności](../warehousing/configure-wave-label-printing.md).)
+W tym artykule opisano sposób zarządzania etykietami generowanymi przez przetwarzanie grup czynności. (Aby uzyskać szczegółowy opis i instrukcje dotyczące konfiguracji, należy zapoznać się z tematem [Konfiguruj drukowanie etykiet grupy czynności](../warehousing/configure-wave-label-printing.md).)
 
 Etykiety grupy czynności można ponownie wydrukować w dowolnym momencie. Na przykład może być konieczne wydrukowanie pojedynczej etykiety, jeśli istniejąca etykieta została utracona lub zniszczona. Alternatywnie pracownik magazynu lub przełożony musi mieć możliwość ponownego wydrukowania całej etykiety, jeśli liczba i/lub skład całej serii etykiet grupy czynności uległ zmianie (np. ze względu na niedobory w magazynie lub inne przyczyny). Często, nawet jeśli tylko liczba kartonów uległa zmianie, cały rzut musi zostać wydrukowany w celu zachowania dokładnej liczby w sekcji „Karton X z Y” każdej etykiety.
 
@@ -32,10 +32,10 @@ Funkcja ponownego drukowania etykiet grupy czynności obsługuje następujące f
 - Anuluj etykiety i jednocześnie je ponownie drukuj. (Na przykład, możliwość unieważnienia etykiet jest osadzana w krótkich scenariuszach pobierania.)
 - Czyszczenie historii etykiety grupy czynności.
 
-W tym temacie przedstawiono zbiór scenariuszy przedstawiających, za pomocą przykładów, sposób pracy z funkcją ponownego drukowania etykiet grupy czynności.
+W tym artykule przedstawiono zbiór scenariuszy przedstawiających, za pomocą przykładów, sposób pracy z funkcją ponownego drukowania etykiet grupy czynności.
 
 > [!IMPORTANT]
-> Aby pracować w scenariuszach przedstawionych w tym temacie, należy najpierw włączyć i skonfigurować odpowiednie funkcje drukowania grupy czynności, tak jak to opisano w temacie [Konfiguruj drukowanie etykiet grupy czynności](../warehousing/configure-wave-label-printing.md). Niektóre scenariusze w tym temacie wymagają również, aby najpierw przejść przez scenariusze w tym temacie, aby wygenerować wstępnie wymagane dane przykładowe.
+> Aby pracować w scenariuszach przedstawionych w tym artykule, należy najpierw włączyć i skonfigurować odpowiednie funkcje drukowania grupy czynności, tak jak to opisano w temacie [Konfiguruj drukowanie etykiet grupy czynności](../warehousing/configure-wave-label-printing.md). Niektóre scenariusze w tym artykule wymagają również, aby najpierw przejść przez scenariusze w tym artykule, aby wygenerować wstępnie wymagane dane przykładowe.
 
 ## <a name="scenario-1-reprint-labels-from-the-web-client"></a>Scenariusz 1: ponowne drukowanie etykiet od klienta sieci Web
 

@@ -1,6 +1,6 @@
 ---
 title: Tworzenie profilu lokalizacji
-description: W tym temacie opisano sposób tworzenia profilu lokalizacji w Dynamics 365 Supply Chain Management.
+description: W tym artykule opisano sposób tworzenia profilu lokalizacji w Dynamics 365 Supply Chain Management.
 author: Mirzaab
 ms.date: 07/29/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74141cdad6841a602c7fb061e897646fae072a73
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 98537f3ad45d66e348ecd489c60d95ef875e5c07
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580007"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875051"
 ---
 # <a name="create-a-location-profile"></a>Tworzenie profilu lokalizacji
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie opisano sposób tworzenia profilu lokalizacji w Dynamics 365 Supply Chain Management. Z każdą lokalizacją w magazynie musi być skojarzony profil lokalizacji opisujący jej właściwości, na przykład czy lokalizacji pozwala na mieszane towary. W tej procedurze utworzymy profil dla lokalizacji, która nie wymaga kontroli na podstawie numerów identyfikacyjnych. Włączymy obsługę mieszanych towarów i mieszanych stanów zapasów oraz pozwolimy na inwentaryzację ciągłą. Procedurę można wykonać przy użyciu danych firmy demonstracyjnej USMF.
+W tym artykule opisano sposób tworzenia profilu lokalizacji w Dynamics 365 Supply Chain Management. Z każdą lokalizacją w magazynie musi być skojarzony profil lokalizacji opisujący jej właściwości, na przykład czy lokalizacji pozwala na mieszane towary. W tej procedurze utworzymy profil dla lokalizacji, która nie wymaga kontroli na podstawie numerów identyfikacyjnych. Włączymy obsługę mieszanych towarów i mieszanych stanów zapasów oraz pozwolimy na inwentaryzację ciągłą. Procedurę można wykonać przy użyciu danych firmy demonstracyjnej USMF.
 
 
 1. W okienku nawigacji przejdź do **Moduły > Zarządzanie magazynem > Ustawienia > Magazyn > Profile lokalizacji**.

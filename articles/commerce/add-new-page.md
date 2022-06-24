@@ -1,6 +1,6 @@
 ---
 title: Dodawanie nowej strony witryny
-description: W tym temacie opisano, jak dodać nową stronę witryny w Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano, jak dodać nową stronę witryny w Microsoft Dynamics 365 Commerce.
 author: psimolin
 ms.date: 02/03/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e0c2a73ae9e85cb299e7cb6fc70562659cdfadc5
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: 76fc3f52746943d5cbf1cb31e677344a1d14bee3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090726"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871735"
 ---
 # <a name="add-a-new-site-page"></a>Dodawanie nowej strony witryny
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano, jak dodać nową stronę witryny w Microsoft Dynamics 365 Commerce.
+W tym artykule opisano, jak dodać nową stronę witryny w Microsoft Dynamics 365 Commerce.
 
 Po utworzeniu szablonów i fragmentów dla witryny następnym krokiem jest rozpoczęcie tworzenia stron, które ich używają. Aby rozpocząć, musisz wybrać szablon lub układ, nazwę strony oraz adres URL strony.
 

@@ -1,6 +1,6 @@
 ---
 title: Zmień pulę pracy w pracy
-description: W tym temacie wyjaśniono, jak można używać przycisku Zmień pulę prac dla elementów pracy, aby zmienić pulę pracy istniejącej pracy.
+description: W tym artykule wyjaśniono, jak można używać przycisku Zmień pulę prac dla elementów pracy, aby zmienić pulę pracy istniejącej pracy.
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: dc210de420705062ba52c674f3ddb8eb7944715a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 817b45e8f5af957801a0af04e50acf20ba16c26d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669860"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900630"
 ---
 # <a name="change-work-pool-on-work"></a>Zmień pulę pracy w pracy
 
@@ -34,14 +34,14 @@ Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie mo�
 
 ## <a name="set-up-the-change-work-pool-on-work-feature"></a>Ustaw funkcję Zmień pulę pracy dla pracy
 
-Aby można było korzystać z tej funkcji, muszą być skonfigurowane pule pracy. Można również skonfigurować szablony pracy, aby automatycznie przypisywać pulę. Jeśli użytkownik chce pracować w przykładowym scenariuszu przedstawionym w dalszej części tego tematu, należy skonfigurować system zgodnie z opisem w tej sekcji.
+Aby można było korzystać z tej funkcji, muszą być skonfigurowane pule pracy. Można również skonfigurować szablony pracy, aby automatycznie przypisywać pulę. Jeśli użytkownik chce pracować w przykładowym scenariuszu przedstawionym w dalszej części tego artykułu, należy skonfigurować system zgodnie z opisem w tej sekcji.
 
 ### <a name="set-up-work-pools"></a>Ustawianie pul pracy
 
 Pule pracy umożliwiają organizowanie elementów pracy według typów. Aby pracować z funkcją *Zmień pulę pracy dla pracy*, trzeba mieć co najmniej dwie dostępne pule pracy. Aby wyświetlić i dodać pule pracy, wykonaj następujące kroki.
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Praca \> Pule pracy**.
-1. Jeśli użytkownik pracuje z danymi demonstracyjnymi z firmy **USMF** i w dalszej części tego tematu może współpracować z przykładowym scenariuszem, należy dodać dwie pule pracy o następujących ustawieniach:
+1. Jeśli użytkownik pracuje z danymi demonstracyjnymi z firmy **USMF** i w dalszej części tego artykułu może współpracować z przykładowym scenariuszem, należy dodać dwie pule pracy o następujących ustawieniach:
 
     - Pula pracy 1:
 
@@ -57,7 +57,7 @@ Pule pracy umożliwiają organizowanie elementów pracy według typów. Aby prac
 
 ### <a name="set-up-work-templates"></a>Ustaw szablony pracy
 
-Dla każdego z szablonów pracy można określić domyślną pulę pracy, stosownie do potrzeb. Dla każdego odpowiedniego szablonu należy przypisać pulę pracy w kolumnie **Identyfikator puli pracy**. W takim przypadku wszystkie elementy pracy wygenerowane za pomocą danego szablonu automatycznie odziedziczą przypisaną pulę pracy. Jeśli użytkownik pracuje z danymi demonstracyjnymi z firmy **USMF** i w dalszej części tego tematu może współpracować z przykładowym scenariuszem, należy wykonać następujące kroki.
+Dla każdego z szablonów pracy można określić domyślną pulę pracy, stosownie do potrzeb. Dla każdego odpowiedniego szablonu należy przypisać pulę pracy w kolumnie **Identyfikator puli pracy**. W takim przypadku wszystkie elementy pracy wygenerowane za pomocą danego szablonu automatycznie odziedziczą przypisaną pulę pracy. Jeśli użytkownik pracuje z danymi demonstracyjnymi z firmy **USMF** i w dalszej części tego artykułu może współpracować z przykładowym scenariuszem, należy wykonać następujące kroki.
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Praca \> Szablony pracy**.
 1. W okienku akcji wybierz opcję **Edytuj**, aby umieścić stronę w trybie edycji.
@@ -70,7 +70,7 @@ Dla każdego z szablonów pracy można określić domyślną pulę pracy, stosow
 
 ## <a name="example-scenario"></a>Przykładowy scenariusz
 
-W tym scenariuszu przedstawiono sposób zmiany strumienia przetwarzania dla istniejącego elementu pracy przez zmianę jego puli pracy. Używa on danych demonstracyjnych z firmy **USMF** oraz ustawień, które zostały zasugerowane wcześniej w tym temacie.
+W tym scenariuszu przedstawiono sposób zmiany strumienia przetwarzania dla istniejącego elementu pracy przez zmianę jego puli pracy. Używa on danych demonstracyjnych z firmy **USMF** oraz ustawień, które zostały zasugerowane wcześniej w tym artykule.
 
 ### <a name="create-a-sales-order-and-release-it-to-the-warehouse"></a>Utwórz zamówienie sprzedaży i zwolnij je do magazynu
 

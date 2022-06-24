@@ -1,6 +1,6 @@
 ---
 title: Nie można skonfigurować grupy zabezpieczeń dla Konstruktora witryn portalu Commerce podczas początkowego wdrażania
-description: Ten temat zawiera wskazówki dotyczące rozwiązywania problemów, które mogą pomóc w przypadku, gdy grupa zabezpieczeń rozwiązania Microsoft Azure Active Directory (Azure AD) dla Konstruktora witryn Commerce nie pojawia się jako opcja podczas tworzenia składników usługi handlu elektronicznego w u usługach Microsoft Dynamics Lifecycle Services (LCS) podczas początkowego wdrażania nowej dzierżawy usług handlu elektronicznego.
+description: Ten artykuł zawiera wskazówki dotyczące rozwiązywania problemów, które mogą pomóc w przypadku, gdy grupa zabezpieczeń rozwiązania Microsoft Azure Active Directory (Azure AD) dla Konstruktora witryn Commerce nie pojawia się jako opcja podczas tworzenia składników usługi handlu elektronicznego w u usługach Microsoft Dynamics Lifecycle Services (LCS) podczas początkowego wdrażania nowej dzierżawy usług handlu elektronicznego.
 author: Reza-Assadi
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: f930cac61b747037b9fbecc7397a9b1b7db5dabd8a86b63a61c92ac7abe17516
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 797df828df16547eb3aef1f9865a663281fb9224
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765177"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899022"
 ---
 # <a name="cant-configure-a-security-group-for-commerce-site-builder-during-initial-deployment"></a>Nie można skonfigurować grupy zabezpieczeń dla Konstruktora witryn portalu Commerce podczas początkowego wdrażania
 
 [!include [banner](../../includes/banner.md)]
 
-Ten temat zawiera wskazówki dotyczące rozwiązywania problemów, które mogą pomóc w przypadku, gdy grupa zabezpieczeń rozwiązania Microsoft Azure Active Directory (Azure AD) dla Konstruktora witryn Commerce nie pojawia się jako opcja podczas tworzenia składników usługi handlu elektronicznego w u usługach Microsoft Dynamics Lifecycle Services (LCS) podczas początkowego wdrażania nowej dzierżawy usług handlu elektronicznego.
+Ten artykuł zawiera wskazówki dotyczące rozwiązywania problemów, które mogą pomóc w przypadku, gdy grupa zabezpieczeń rozwiązania Microsoft Azure Active Directory (Azure AD) dla Konstruktora witryn Commerce nie pojawia się jako opcja podczas tworzenia składników usługi handlu elektronicznego w u usługach Microsoft Dynamics Lifecycle Services (LCS) podczas początkowego wdrażania nowej dzierżawy usług handlu elektronicznego.
 
 ## <a name="description"></a>opis
 

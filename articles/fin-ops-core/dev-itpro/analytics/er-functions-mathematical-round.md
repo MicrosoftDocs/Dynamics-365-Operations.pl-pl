@@ -1,6 +1,6 @@
 ---
 title: ROUND, funkcja ER
-description: Ten temat zawiera ogólne informacje o używaniu funkcji ROUND w module Raportowanie elektroniczne (ER).
+description: Ten artykuł zawiera ogólne informacje o używaniu funkcji ROUND w module Raportowanie elektroniczne (ER).
 author: NickSelin
 ms.date: 10/21/2020
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b0c28ba2faebf117aa008106f8a77f79af8f4de3122df858825aa15a6dae3616
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5dce96077ab25f8e545bb99d4bed8fc5bba61e2a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744417"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905207"
 ---
 # <a name="round-er-function"></a>ROUND, funkcja ER
 

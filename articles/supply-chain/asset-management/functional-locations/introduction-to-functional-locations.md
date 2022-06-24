@@ -1,6 +1,6 @@
 ---
 title: Wprowadzenie do lokalizacji czynności konserwacyjnych
-description: Ten temat stanowi przegląd lokalizacji czynności konserwacyjnych w module Zarządzanie składnikami majątku.
+description: Ten artykuł stanowi przegląd lokalizacji czynności konserwacyjnych w module Zarządzanie składnikami majątku.
 author: johanhoffmann
 ms.date: 06/25/2019
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b0cb76a05f0f19d3e57d1f79751e8bc5870b3c331aa4d1c37ec8dfde0a3c6d5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4a1c8c4db9aee68584ab35949745132091a34a58
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767562"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882845"
 ---
 # <a name="introduction-to-functional-locations"></a>Wprowadzenie do lokalizacji czynności konserwacyjnych
 
@@ -30,7 +30,7 @@ ms.locfileid: "6767562"
 
  
 
-Ten temat stanowi przegląd lokalizacji czynności konserwacyjnych w module Zarządzanie składnikami majątku. Lokalizacje czynności konserwacyjnych to elementy struktury technicznej, takie jak jednostki funkcjonalne w systemie. Lokalizacje czynności konserwacyjnych są tworzone hierarchicznie, a na nich są instalowane składniki majątku. Konfiguracja funkcjonalnych czynności konserwacyjnych w firmie zależy od wymagań firmy.
+Ten artykuł stanowi przegląd lokalizacji czynności konserwacyjnych w module Zarządzanie składnikami majątku. Lokalizacje czynności konserwacyjnych to elementy struktury technicznej, takie jak jednostki funkcjonalne w systemie. Lokalizacje czynności konserwacyjnych są tworzone hierarchicznie, a na nich są instalowane składniki majątku. Konfiguracja funkcjonalnych czynności konserwacyjnych w firmie zależy od wymagań firmy.
 
 Oto kilka przykładów, w jaki sposób można korzystać z funkcjonalnych czynności konserwacyjnych :
 

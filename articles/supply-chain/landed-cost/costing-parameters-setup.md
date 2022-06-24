@@ -1,6 +1,6 @@
 ---
 title: Ustawienia wartości parametrów wyceny
-description: Po skonfigurowaniu modułu Koszty z wyładunkiem można zdefiniować zestaw wspólnych wartości, które będą dostępne po wybraniu określonych typów wartości parametrów wyceny w innych częściach aplikacji. W tym temacie wyjaśniono, jak skonfigurować te zestawy wartości.
+description: Po skonfigurowaniu modułu Koszty z wyładunkiem można zdefiniować zestaw wspólnych wartości, które będą dostępne po wybraniu określonych typów wartości parametrów wyceny w innych częściach aplikacji. W tym artykule wyjaśniono, jak skonfigurować te zestawy wartości.
 author: Weijiesa
 ms.date: 12/07/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ed20181201a2f3f84c3dc08549f4f107d46a50a2
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ca3633cd8a3fb053bda597b968003685aa2326ef
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689755"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852339"
 ---
 # <a name="costing-parameter-values-setup"></a>Ustawienia wartości parametrów wyceny
 
 [!include [banner](../../includes/banner.md)]
 
-Podczas konfiguracji modułu **Koszty z wyładunkiem** można zdefiniować kilka zestawów wspólnych wartości i pokrewnych ustawień dla wartości. Wartości te będą wówczas dostępne w przypadku wybrania określonych typów wartości parametrów wyceny w innych częściach aplikacji. W tym temacie wyjaśniono, jak skonfigurować te zestawy wartości.
+Podczas konfiguracji modułu **Koszty z wyładunkiem** można zdefiniować kilka zestawów wspólnych wartości i pokrewnych ustawień dla wartości. Wartości te będą wówczas dostępne w przypadku wybrania określonych typów wartości parametrów wyceny w innych częściach aplikacji. W tym artykule wyjaśniono, jak skonfigurować te zestawy wartości.
 
 ## <a name="set-up-cost-type-codes"></a>Ustawianie kodów typów kosztów
 
