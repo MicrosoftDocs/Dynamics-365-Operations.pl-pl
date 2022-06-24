@@ -1,6 +1,6 @@
 ---
 title: Daty wystawienia faktury przez sprzedawcę
-description: W tym temacie opisano daty, które są widoczne na fakturach dostawcy. Wyjaśnia również, jak skonfigurować system, aby automatycznie dostosowywał datę księgowania.
+description: W tym artykule opisano daty, które są widoczne na fakturach dostawcy. Wyjaśnia również, jak skonfigurować system, aby automatycznie dostosowywał datę księgowania.
 author: sunfzam
 ms.date: 2/09/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 064a125d448ebb3511db2d9b1f4228380805dc44
-ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
+ms.openlocfilehash: 943a84407d022c2c05bc534a35a2b5d44a94653e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8105471"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876420"
 ---
 # <a name="vendor-invoice-dates"></a>Daty wystawienia faktury przez sprzedawcę
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano daty, które są widoczne na fakturach dostawcy. Wyjaśnia również, jak skonfigurować system, aby automatycznie dostosowywał datę księgowania.
+W tym artykule opisano daty, które są widoczne na fakturach dostawcy. Wyjaśnia również, jak skonfigurować system, aby automatycznie dostosowywał datę księgowania.
 
 Na stronie **szczegółowa faktura oczekującego dostawcy** w nagłówku faktury znajdują się cztery daty: data otrzymania faktury, data faktury, data zaksięgowania oraz data wymagalności. Podczas tworzenia faktury sprzedawcy domyślnie wprowadzane są następujące daty:
 
@@ -37,7 +37,7 @@ Na stronie **szczegółowa faktura oczekującego dostawcy** w nagłówku faktury
 
 Zdarza się, że faktura dostawcy może być w stanie oczekiwania jeszcze przez długi czas po zamknięciu okresu. Kiedy jest on gotowy do zaksięgowania, nadal używana jest stara data zaksięgowania z poprzedniego okresu księgowania. Jednak ten okres został teraz zamknięty. W związku z tym pracownik działu zobowiązań (AP) musi ręcznie zmienić wszystkie daty księgowania na nowy okres księgowania dla wszystkich oczekujących faktur, które zostały wcześniej utworzone.
 
-Funkcja opisana w tym temacie umożliwia skonfigurowanie systemu w taki sposób, aby automatycznie dostosowywał datę księgowania zgodnie z wymaganiami biznesowymi.
+Funkcja opisana w tym artykule umożliwia skonfigurowanie systemu w taki sposób, aby automatycznie dostosowywał datę księgowania zgodnie z wymaganiami biznesowymi.
 
 ## <a name="parameter-for-automatically-adjusting-the-vendor-invoice-posting-date"></a>Parametr automatycznie korygujący datę księgowania faktury sprzedawcy
 

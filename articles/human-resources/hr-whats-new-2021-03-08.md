@@ -1,6 +1,6 @@
 ---
 title: Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources 8 marca 2021 r.
-description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Human Resources w dniu 8 marca 2021 roku.
+description: W tym artykule opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Human Resources w dniu 8 marca 2021 roku.
 author: marcelbf
 ms.date: 03/08/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7b1e616f9bc72ab1f30f69671c673241096f3276
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 9280e85f9701573717c4115b4d752ed11be4862e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687876"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868076"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-08-2021"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources 08 marca 2021 r.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-W tym temacie opisano nowe, zmienione i wkrótce dostępne funkcje dostępne w rozwiązaniu Dynamics 365 Human Resources.
+W tym artykule opisano nowe, zmienione lub przyszłe funkcje dostępne w aplikacji Dynamics 365 Human Resources.
 
 Aby uzyskać więcej informacji na temat procesu aktualizacji i harmonogramu, należy zapoznać się z tematem [Aktualizacja procesu](hr-admin-setup-update-process.md).
 
@@ -48,9 +48,9 @@ W tym wydaniu są zazwyczaj dostępne następujące funkcje.
 W tej wersji uwzględniono następujące poprawki błędów.
 
 > [!NOTE]
-> Naszym celem jest jak najszybsze uzyskanie tych informacji. Firma Microsoft może zaktualizować ten temat w taki sposób, aby zawierał poprawki powodujące błąd, które wprowadziły je do kompilacji po początkowym opublikowaniu tego tematu.
+> Naszym celem jest jak najszybsze uzyskanie tych informacji. Możemy zaktualizować ten artykuł w taki sposób, aby zawierał poprawki powodujące błąd, które wprowadziły je do kompilacji po początkowym opublikowaniu tego artykułu.
 
-| Numer problemu | Wystawienie |  opis |
+| Numer problemu | Problem |  Opis |
 | --- | --- | --- |
 | 486611 | Jeśli opcja **Wyłącz urlop we wszystkich kalendarzach** jest włączona, nieobecności są pokazywane w kalendarzu urlopów | Jeśli opcja **Wyłącz urlop we wszystkich kalendarzach** jest włączona, informacje o urlopie nie są już wyświetlane, gdy jest włączona funkcja usprawnień kalendarza urlopów i nieobecności.|
 | 508972 | Brak weryfikacji rejestracji dla jednostki Transakcja bankowa urlopu i nieobecności | W przypadku korzystania z jednostki Transakcja bankowa urlopu i nieobecności nie można już importować pracowników, którzy nie są zarejestrowani w planie. |

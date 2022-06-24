@@ -1,6 +1,6 @@
 ---
 title: Skonfiguruj grupy składników podatku u źródła dla typu podatku TDS
-description: W tym temacie wyjaśniono, jak skonfigurować grupy składników podatku u źródła, takie jak czynsz i wykonawca, dla typu podatku odliczanego u źródła (TDS).
+description: W tym artykule wyjaśniono, jak skonfigurować grupy składników podatku u źródła, takie jak czynsz i wykonawca, dla typu podatku odliczanego u źródła (TDS).
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: ad4ac16d2618a99ba8ea5c2da010eb8e96447775
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: e7b856be18618573408388fe0acbd702aeb4bcc3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726873"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896262"
 ---
 # <a name="set-up-withholding-tax-component-groups-for-the-tds-tax-type"></a>Skonfiguruj grupy składników podatku u źródła dla typu podatku TDS
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak skonfigurować grupy składników podatku u źródła, takie jak **czynsz** i **wykonawca**, dla typu podatku odliczanego u źródła (TDS).
+W tym artykule wyjaśniono, jak skonfigurować grupy składników podatku u źródła, takie jak **czynsz** i **wykonawca**, dla typu podatku odliczanego u źródła (TDS).
 
 1. Wybierz kolejno opcje **Podatek \> Konfiguracja \> Potrącona zaliczka na podatek \> Grupy potrąconych zaliczek na podatek**.
 

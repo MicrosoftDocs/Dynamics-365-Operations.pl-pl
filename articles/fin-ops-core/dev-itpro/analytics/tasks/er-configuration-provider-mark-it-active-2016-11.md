@@ -1,6 +1,6 @@
 ---
 title: Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych
-description: W tym temacie wyjaśniono, w jaki sposób użytkownik przypisany do roli Administratora systemu lub Dewelopera raportowania elektronicznego może utworzyć dostawcę konfiguracji.
+description: W tym artykule wyjaśniono, w jaki sposób użytkownik przypisany do roli Administratora systemu lub Dewelopera raportowania elektronicznego może utworzyć dostawcę konfiguracji.
 author: NickSelin
 ms.date: 07/02/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e5b429badcbcc0e9829d82785a6e1f1a2504f5ec9b9ac74d249032f272dea103
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 93c2e114c97290347b71e94d87ea5339688791cc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747254"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883604"
 ---
 # <a name="create-configuration-providers-and-mark-them-as-active"></a>Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie wyjaśniono, w jaki sposób użytkownik przypisany do roli Administratora Systemu lub Programisty Elektronicznego Raportowania może utworzyć dostawcę konfiguracji dla Elektronicznego Raportowania (ER). Każda konfiguracja ER będzie się odnosiła do dostawcy jako autora konfiguracji. W tym przykładzie utworzysz dostawcę konfiguracji dla przykładowej firmy Litware, Inc. Podane kroki można wykonać w dowolnej firmie, ponieważ dostawcy konfiguracji ER są współużytkowani przez wszystkie firmy.
+W tym artykule wyjaśniono, w jaki sposób użytkownik przypisany do roli Administratora Systemu lub Programisty Elektronicznego Raportowania może utworzyć dostawcę konfiguracji dla Elektronicznego Raportowania (ER). Każda konfiguracja ER będzie się odnosiła do dostawcy jako autora konfiguracji. W tym przykładzie utworzysz dostawcę konfiguracji dla przykładowej firmy Litware, Inc. Podane kroki można wykonać w dowolnej firmie, ponieważ dostawcy konfiguracji ER są współużytkowani przez wszystkie firmy.
 
 ## <a name="create-a-provider"></a>Tworzenie dostawcy
 1. Otwórz **okienko nawigacji** w górnym lewym rogu i wybierz **Administracja organizacji**.

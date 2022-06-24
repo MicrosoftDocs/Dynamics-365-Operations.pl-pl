@@ -1,6 +1,6 @@
 ---
 title: ER Tworzenie konfiguracji formatu (listopad 2016)
-description: W tym temacie wyjaśniono sposób tworzenia konfiguracji formatu raportowania elektronicznego (ER).
+description: W tym artykule wyjaśniono sposób tworzenia konfiguracji formatu raportowania elektronicznego (ER).
 author: NickSelin
 ms.date: 08/02/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5d59f0f7c914cc6d59ae441e6f6b8ff249a3e9c03c6ee4b4a75421d875f826a0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2617f33293c38b7f1aaa61fda7d8de06711c6727
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728220"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902662"
 ---
 # <a name="er-create-a-format-configuration-november-2016"></a>ER Tworzenie konfiguracji formatu (listopad 2016)
 
 [!include [banner](../../includes/banner.md)]
 
-W poniższych krokach wyjaśniono, jak użytkownik w roli Administrator systemu lub Deweloper raportowania elektronicznego może utworzyć konfigurację formatu dla raportowania elektronicznego (ER). Ta konfiguracja formatu określi format dokumentów elektronicznych, które będą używane do przetwarzania płatności. W tym przykładzie utworzysz konfigurację formatu dla przykładowej firmy Litware, Inc. W celu wykonania tych kroków należy najpierw wykonać procedurę „Mapowanie modelu na wybrane źródła danych”.
+W tym artykule wyjaśniono, jak użytkownik w roli Administrator systemu lub Deweloper raportowania elektronicznego może utworzyć konfigurację formatu dla raportowania elektronicznego (ER). Ta konfiguracja formatu określi format dokumentów elektronicznych, które będą używane do przetwarzania płatności. W tym przykładzie utworzysz konfigurację formatu dla przykładowej firmy Litware, Inc. W celu wykonania tych kroków należy najpierw wykonać procedurę „Mapowanie modelu na wybrane źródła danych”.
 
 
 ## <a name="create-a-new-format-configuration"></a>Utwórz nową konfigurację formatu.

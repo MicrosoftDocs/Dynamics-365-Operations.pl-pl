@@ -1,6 +1,6 @@
 ---
-title: Omówienie faktur od dostawców
-description: Ten temat zawiera ogólne informacje o fakturach od dostawców.
+title: Przegląd faktur od dostawcy
+description: Ten artykuł zawiera ogólne informacje o fakturach od dostawców.
 author: abruer
 ms.date: 02/25/2022
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b54a60ac3b1868ea7cc5ed88d5a31203b4bd29d3
-ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
+ms.openlocfilehash: b88390085d86956c38c0fc167395509d0c54f860
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2022
-ms.locfileid: "8358448"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894179"
 ---
 # <a name="vendor-invoices-overview"></a>Omówienie faktur od dostawców
 
@@ -30,7 +30,7 @@ ms.locfileid: "8358448"
 [!include [preview banner](../includes/preview-banner.md)]
 
 
-Ten temat zawiera ogólne informacje o fakturach od dostawców. Faktury dostawcy to wezwania do zapłaty za produkty i usługi. Faktury od dostawców mogą dotyczyć usług świadczonych w sposób ciągły albo bazować na zamówieniach zakupu za określone towary i usługi.
+Ten artykuł zawiera ogólne informacje o fakturach od dostawców. Faktury dostawcy to wezwania do zapłaty za produkty i usługi. Faktury od dostawców mogą dotyczyć usług świadczonych w sposób ciągły albo bazować na zamówieniach zakupu za określone towary i usługi.
 
 ## <a name="vendor-invoices"></a>Faktury dostawcy
 

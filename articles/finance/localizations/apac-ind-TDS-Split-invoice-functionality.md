@@ -1,6 +1,6 @@
 ---
 title: Funkcje dzielenia faktury
-description: W tym temacie opisano ustawienia i funkcje dzielenia faktur według adresu dostawy i numeru konta podatkowego (TAN).
+description: W tym artykule opisano ustawienia i funkcje dzielenia faktur według adresu dostawy i numeru konta podatkowego (TAN).
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: f1dac8d51c24009dcf0c4acbc49f06f32abf0dec
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 7bbeb94429c2c69b7b8ea3089390db676a021b80
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724677"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874440"
 ---
 # <a name="split-invoice-functionality"></a>Funkcje dzielenia faktury
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano ustawienia i funkcje dzielenia faktur według adresu dostawy i numeru konta podatkowego (TAN).
+W tym artykule opisano ustawienia i funkcje dzielenia faktur według adresu dostawy i numeru konta podatkowego (TAN).
 
 Na stronie **Parametry rozrachunków z dostawcami**, na karcie **Ogólne** zaznacz pole wyboru **Przyjęcie produktu** lub **Faktura**, aby zakwitować i podzielić przyjęcie produktu lub fakturę, która ma różne adresy dostawy i numer TAN na stronie **Zamówienie zakupu**. Zaksięgowana faktura zostanie następnie podzielona według adresu dostawy i TAN.
 

@@ -1,8 +1,8 @@
 ---
 title: Obsługuj sparametryzowane wywołania źródeł danych ER typu pola obliczeniowego
-description: Ten temat zawiera informacje dotyczące używania typu pola obliczeniowego dla źródeł danych ER.
+description: Ten artykuł zawiera informacje dotyczące używania typu pola obliczeniowego dla źródeł danych ER.
 author: NickSelin
-ms.date: 08/06/2020
+ms.date: 01/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fb09e1ccd4b2be08e43784330adf4092ca25f5a6
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 4a4933c429982d1371c7c9a9412789ae08e08f43
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6349167"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8934708"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Obsługuj sparametryzowane wywołania źródeł danych ER typu pola obliczeniowego
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak można zaprojektować źródło danych elektronicznego raportowania (ER) przy użyciu typu **pola obliczeniowego**. To źródło danych może zawierać wyrażenie właściciela, które po wykonaniu można kontrolować za pomocą wartości argumentów parametrów skonfigurowanych w powiązaniu, które wywołuje to źródło danych. Dzięki skonfigurowaniu sparametryzowanych wywołań takiego źródła danych można ponownie użyć jednego źródła danych w wielu powiązaniach, zmniejszając jednocześnie liczbę źródeł danych, które muszą być skonfigurowane w mapowaniach modelu ER lub w formatach ER. Upraszcza także skonfigurowany składnik ER, który zmniejsza koszty obsługi i koszty użytkowania innych odbiorców.
+W tym artykule wyjaśniono, jak można zaprojektować źródło danych elektronicznego raportowania (ER) przy użyciu typu **pola obliczeniowego**. To źródło danych może zawierać wyrażenie właściciela, które po wykonaniu można kontrolować za pomocą wartości argumentów parametrów skonfigurowanych w powiązaniu, które wywołuje to źródło danych. Dzięki skonfigurowaniu sparametryzowanych wywołań takiego źródła danych można ponownie użyć jednego źródła danych w wielu powiązaniach, zmniejszając jednocześnie liczbę źródeł danych, które muszą być skonfigurowane w mapowaniach modelu ER lub w formatach ER. Upraszcza także skonfigurowany składnik ER, który zmniejsza koszty obsługi i koszty użytkowania innych odbiorców.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
-Aby wykonać przykłady opisane w tym temacie, musisz mieć następujące uprawnienia dostępu:
+Aby wykonać przykłady opisane w tym artykule, musisz mieć następujące uprawnienia dostępu:
 
 - Dostęp do jednej z następujących ról:
 
@@ -36,7 +36,7 @@ Aby wykonać przykłady opisane w tym temacie, musisz mieć następujące uprawn
     - Konsultant funkcjonalny raportowania elektronicznego
     - Administrator systemu
 
-- Dostęp do wystąpienia Regulatory Configuration Services (RCS), które zostało zainicjowane dla tej samej dzierżawy co Finance and Operations dla jednej z następujących ról:
+- Dostęp do wystąpienia Regulatory Configuration Service (RCS), które zostało zainicjowane dla tej samej dzierżawy co Finance and Operations dla jednej z następujących ról:
 
     - Deweloper raportowania elektronicznego
     - Konsultant funkcjonalny raportowania elektronicznego
@@ -46,10 +46,10 @@ Musisz również pobrać i lokalnie zapisać następujące pliki.
 
 | **Zawartość**                           | **Nazwa pliku**                                        |
 |---------------------------------------|------------------------------------------------------|
-| Przykładowa konfiguracja modelu danych ER    | [Model do nauczenia sparametryzowanych calls.version.1.xml.](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)     |
-| Przykładowa konfiguracja metadanych ER      | [Dane do nauczenia sparametryzowanych calls.version.1.xml.](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
-| Przykładowa konfiguracja mapowania modelu ER | [Mapowanie do nauczenia sparametryzowanych calls.version.1.xml.](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Przykładowa konfiguracja formatu ER        | [Format do nauczenia sparametryzowanych calls.version.1.xml.](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
+| Przykładowa konfiguracja modelu danych ER    | [Model do nauczenia sparametryzowanych calls.version.1.xml.](https://download.microsoft.com/download/e/5/c/e5c0d3f9-1818-47c7-ae75-46efcbb1314f/Modeltolearnparameterizedcallsversion.1.xml)     |
+| Przykładowa konfiguracja metadanych ER      | [Dane do nauczenia sparametryzowanych calls.version.1.xml.](https://download.microsoft.com/download/8/3/a/83a910a5-bf65-4509-bec4-6737a81ecc45/Metadatatolearnparameterizedcalls.version.1.xml)  |
+| Przykładowa konfiguracja mapowania modelu ER | [Mapowanie do nauczenia sparametryzowanych calls.version.1.xml.](https://download.microsoft.com/download/b/f/d/bfd8cbd8-0370-44d1-a1b1-66d021c580ca/Mappingtolearnparameterizedcalls.version.1.1.xml) |
+| Przykładowa konfiguracja formatu ER        | [Format do nauczenia sparametryzowanych calls.version.1.xml.](https://download.microsoft.com/download/8/1/d/81deb6d8-a768-4fcf-bbbe-8f84d2dac3eb/Formattolearnparameterizedcalls.version.1.1.xml)  |
 
 ## <a name="sign-in-to-your-rcs-instance"></a>Zaloguj się do swojego wystąpienia RCS.
 W tej procedurze utworzysz wymagane konfiguracje ER dla przykładowej firmy Litware, Inc. Aby wykonać te kroki, najpierw trzeba wykonać kroki wymienione w procedurze [ER Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych](tasks/er-configuration-provider-mark-it-active-2016-11.md).
@@ -306,7 +306,7 @@ Jeśli sparametryzowane pole obliczeniowe zwraca rekord, należy obsługiwać po
 Można uruchomić wstępne i ulepszone formaty ER, aby upewnić się, że skonfigurowane pola obliczeniowe o sparametryzowanym działaniu będą działać prawidłowo.
 
 ### <a name="import-er-configurations"></a>Importowanie konfiguracji ER
-Przejrzane konfiguracje można importować ze RCS za pomocą repozytorium ER typu **RCS.** Jeśli wykonano już kroki opisane w temacie, należy [zaimportować konfiguracje raportowania elektronicznego z usług Regulatory Configuration Services (RCS)](rcs-download-configurations.md), a następnie skorzystać z skonfigurowanego repozytorium ER, aby zaimportować konfiguracje opisane wcześniej w tym temacie do środowiska. W innym razie należy wykonać następujące czynności:
+Przejrzane konfiguracje można importować ze RCS za pomocą repozytorium ER typu **RCS.** Jeśli wykonano już kroki opisane w artykule, należy [zaimportować konfiguracje raportowania elektronicznego z usług Regulatory Configuration Services (RCS)](rcs-download-configurations.md), a następnie skorzystać z skonfigurowanego repozytorium ER, aby zaimportować konfiguracje opisane wcześniej w tym artykule do środowiska. W innym razie należy wykonać następujące czynności:
 
 1. Wybierz firmę **DEMF** i na domyślnym pulpicie nawigacyjnym, wybierz opcję **Raportowanie elektroniczne**.
 2. Wybierz **Raportowanie konfiguracji**.

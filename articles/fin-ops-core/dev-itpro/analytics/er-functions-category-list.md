@@ -1,6 +1,6 @@
 ---
 title: Lista funkcji modułu ER w kategorii funkcji listy
-description: Ten temat zawiera ogólne informacje o funkcjach listy obsługiwanych w module Raportowanie elektroniczne (ER).
+description: Ten artykuł zawiera ogólne informacje o funkcjach listy obsługiwanych w module Raportowanie elektroniczne (ER).
 author: NickSelin
 ms.date: 04/01/2020
 ms.prod: ''
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f0d9f83a1750ff51d76716147f5d16e96c0fb415608256a5dcc7524a1f2bd2f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b39da482578636d94faaa3117bd40a579f3ae636
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734871"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869063"
 ---
 # <a name="list-of-er-functions-in-the-list-category"></a>Lista funkcji modułu ER w kategorii funkcji listy
 
 [!include [banner](../includes/banner.md)]
 
-Funkcje listy w module raportowania elektronicznego (ER) mogą być używane do wyodrębniania informacji z i wykonywania operacji na źródłach danych o typu danych *Lista rekordów* i *Kontener (rekordu)*. Ten temat zawiera podsumowanie tych funkcji.
+Funkcje listy w module raportowania elektronicznego (ER) mogą być używane do wyodrębniania informacji z i wykonywania operacji na źródłach danych o typu danych *Lista rekordów* i *Kontener (rekordu)*. Ten artykuł zawiera podsumowanie tych funkcji.
 
 ## <a name="list-of-supported-functions"></a>Lista obsługiwanych funkcji
 

@@ -1,6 +1,6 @@
 ---
-title: Nie udało się znaleźć pasującego wyniku
-description: Ten temat wyjaśnia, jak rozwiązać problem błędu Nie można znaleźć pasującego wyniku w usłudze Obliczanie podatków.
+title: Nie można znaleźć pasującego wyniku
+description: Ten artykuł wyjaśnia, jak rozwiązać problem błędu Nie można znaleźć pasującego wyniku w usłudze Obliczanie podatków.
 author: hangwan
 ms.date: 03/25/2022
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: hangwan
 ms.search.validFrom: 03/23/2022
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: c1a343b0b74645d40b0a2582749968cc0a56afd7
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: d3bbc76741fdd018d1b2987538b8de7f6d92ee53
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645411"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845152"
 ---
-# <a name="no-matching-result-could-be-found"></a>Nie udało się znaleźć pasującego wyniku
+# <a name="no-matching-result-could-be-found"></a>Nie można znaleźć pasującego wyniku
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat wyjaśnia, jakie kroki możesz podjąć, jeśli otrzymasz błąd Nie można znaleźć pasującego wyniku w usłudze Obliczanie podatków.
+Ten artykuł wyjaśnia, jakie kroki możesz podjąć, jeśli otrzymasz błąd Nie można znaleźć pasującego wyniku w usłudze Obliczanie podatków.
 
 ## <a name="symptom"></a>Objaw
 

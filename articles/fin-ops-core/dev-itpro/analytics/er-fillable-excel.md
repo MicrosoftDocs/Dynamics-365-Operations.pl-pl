@@ -1,6 +1,6 @@
 ---
 title: Projektowanie konfiguracji projektu w celu generowania dokumentów wychodzących w formacie programu Excel
-description: Ten temat zawiera informacje o tym, jak zaprojektować format modułu raportowania elektronicznego (ER) do wypełniania w szablonie programu Excel, a następnie generować dokumenty wychodzące w formacie programu Excel.
+description: Ten artykuł zawiera informacje o tym, jak zaprojektować format modułu raportowania elektronicznego (ER) do wypełniania w szablonie programu Excel, a następnie generować dokumenty wychodzące w formacie programu Excel.
 author: NickSelin
 ms.date: 05/09/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4a34f990c865aa8c82213a60c23d5a44ad75aee4
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 4660aaf438ee091eed30387d984746ac2c3b4bd7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811428"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854822"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Projektowanie konfiguracji projektu w celu generowania dokumentów wychodzących w formacie programu Excel
 
@@ -28,7 +28,7 @@ ms.locfileid: "8811428"
 
 Istnieje możliwość zaprojektowania konfiguracji formatu modułu [Raportowanie elektroniczne (ER)](general-electronic-reporting.md) ze składnikiem formatu ER, który można skonfigurować do generowania dokumentu wychodzącego w formacie skoroszytu programu Microsoft Excel. W tym celu muszą być używane określone składniki formatu ER.
 
-Aby dowiedzieć się więcej o tej funkcji, wykonaj kroki opisane w temacie [Projektowanie konfiguracji do generowania raportów w formacie OPENXML](tasks/er-design-reports-openxml-2016-11.md).
+Aby dowiedzieć się więcej o tej funkcji, wykonaj kroki opisane w artykule [Projektowanie konfiguracji do generowania raportów w formacie OPENXML](tasks/er-design-reports-openxml-2016-11.md).
 
 ## <a name="add-a-new-er-format"></a>Dodawanie nowego formatu ER
 
@@ -263,7 +263,7 @@ Dla jednego składnika **Arkusza** można dodać kilka składników **stopki**, 
 
 Pod dodanym składnikiem **Stopki** dodaj wymagane zagnieżdżone składniki ciągu **Text\\String**, **Text\\DateTime** lub innego typu. Skonfiguruj powiązania tych składników, aby określić sposób wypełnienia stopki strony.
 
-Można również użyć specjalnych [kodów formatowania](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers), aby poprawnie sformatować zawartość wygenerowanej stopki. Aby się dowiedzieć, jak korzystać z tego podejścia, wykonaj kroki opisane w [Przykładzie 1](#example-1), dalej w tym temacie.
+Można również użyć specjalnych [kodów formatowania](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers), aby poprawnie sformatować zawartość wygenerowanej stopki. Aby się dowiedzieć, jak korzystać z tego podejścia, wykonaj kroki opisane w [Przykładzie 1](#example-1), dalej w tym artykule.
 
 > [!NOTE]
 > Konfigurując formaty ER, należy wziąć pod uwagę limit programu Excel i [maksymalną liczbę znaków](https://support.microsoft.com/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3) dla jednego nagłówka lub stopki.

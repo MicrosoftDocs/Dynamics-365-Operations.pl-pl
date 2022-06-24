@@ -1,6 +1,6 @@
 ---
 title: Pusta lista funkcji podatku w parametrach obliczania podatku
-description: W tym temacie wyjaśniono, jak rozwiązać problem, gdy lista funkcji podatku na stronie Parametry obliczania podatku jest pusta.
+description: W tym artykule wyjaśniono, jak rozwiązać problem, gdy lista funkcji podatku na stronie Parametry obliczania podatku jest pusta.
 author: wangchen
 ms.date: 03/04/2022
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-10-26
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: ef8158c2ada18e7d132eebbedef559b3f80ab19f
-ms.sourcegitcommit: 2977e92a76211875421e608555311c363cfbdc25
+ms.openlocfilehash: 0d9286ec313a270da86181ff80ddfd690a757c9b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2022
-ms.locfileid: "8612297"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869960"
 ---
 # <a name="empty-tax-feature-list-in-tax-calculation-parameters"></a>Pusta lista funkcji podatku w parametrach obliczania podatku
 
@@ -46,7 +46,7 @@ Aby znaleźć identyfikator dzierżawy dla środowiska finansowego, wykonaj te s
 
 ## <a name="resolution"></a>Rozwiązanie
 
-Jeśli identyfikatory dwóch dzierżawców różnią się, występuje problem opisany w tym temacie. Jeśli są takie same, występuje niezwiązany problem. W takim przypadku zalecane jest skontaktowanie się z pomocą techniczną firmy Microsoft.
+Jeśli identyfikatory dwóch dzierżawców różnią się, występuje problem opisany w tym artykule. Jeśli są takie same, występuje niezwiązany problem. W takim przypadku zalecane jest skontaktowanie się z pomocą techniczną firmy Microsoft.
 
 ### <a name="solution-1"></a>Rozwiązanie 1
 

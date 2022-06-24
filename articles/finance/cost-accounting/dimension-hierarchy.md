@@ -1,6 +1,6 @@
 ---
 title: Hierarchia wymiarów
-description: Ten temat zawiera informacje o hierarchiach wymiarów. Hierarchie wymiarów służą do definiowania struktury raportowania, zasad kosztów i ustawień zabezpieczeń w module Rachunek kosztów.
+description: Ten artykuł zawiera informacje o hierarchiach wymiarów. Hierarchie wymiarów służą do definiowania struktury raportowania, zasad kosztów i ustawień zabezpieczeń w module Rachunek kosztów.
 author: AndersGirke
 ms.date: 06/16/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 852cfa536ed7e6985ce1f7de612b34e2a492ee07
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 60585690a2cf5962d4ad562c3a01b675a0588263
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735090"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848643"
 ---
 # <a name="dimension-hierarchy"></a>Hierarchia wymiarów
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje o hierarchiach wymiarów. Hierarchie wymiarów służą do definiowania struktury raportowania, zasad kosztów i ustawień zabezpieczeń w module Rachunek kosztów.  
+Ten artykuł zawiera informacje o hierarchiach wymiarów. Hierarchie wymiarów służą do definiowania struktury raportowania, zasad kosztów i ustawień zabezpieczeń w module Rachunek kosztów.  
 
 ## <a name="overview"></a>Przegląd
 

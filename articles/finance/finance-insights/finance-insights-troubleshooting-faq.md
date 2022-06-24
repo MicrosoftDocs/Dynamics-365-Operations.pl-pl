@@ -1,6 +1,6 @@
 ---
 title: Rozwiązywanie problemów z ustawieniami Finance insights
-description: W tym temacie wymieniono problemy, które mogą wystąpić, gdy są dostępne funkcje analizy Finance insights. Opisano w nim również sposób rozwiązania tych problemów.
+description: W tym artykule wymieniono problemy, które mogą wystąpić, gdy są dostępne funkcje analizy Finance insights. Opisano w nim również sposób rozwiązania tych problemów.
 author: panolte
 ms.date: 02/11/2022
 ms.topic: article
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 5669b414283013ae1de095de2201df066ab588dd
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 1ee354a1c3d9b45eb12eeb3a6a29f2a6d5e4c34c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725913"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846923"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Rozwiązywanie problemów z ustawieniami Finance insights
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wymieniono problemy, które mogą wystąpić, gdy są dostępne funkcje analizy Finance insights. Opisano w nim również sposób rozwiązania tych problemów.
+W tym artykule wymieniono problemy, które mogą wystąpić, gdy są dostępne funkcje analizy Finance insights. Opisano w nim również sposób rozwiązania tych problemów.
 
 ## <a name="symptom-why-cant-i-map-the-customer-payment-insights-data-integration-template-destination-column"></a>Symptom: Dlaczego nie mogę zmapować kolumny docelowej szablonu Integracja danych szczegółowych informacji o płatnościach klienta?
 
@@ -121,4 +121,4 @@ Funkcja **propozycji budżetu** wymaga co najmniej trzech lat budżetów lub dan
 
 ### <a name="resolution"></a>Rozwiązanie
 
-Środowisko osiągnęła limit maksymalnej liczby tabel usług Data Lake. Aby uzyskać więcej informacji dotyczących limitu, zobacz sekcję **Włącz zmiany danych** w pobliżu godzin rzeczywistych w tym temacie, [Omówienie eksportu do usługi Azure Data Lake](../../fin-ops-core/dev-itpro/data-entities/Azure-Data-Lake-GA-version-overview.md).
+Środowisko osiągnęła limit maksymalnej liczby tabel usług Data Lake. Aby uzyskać więcej informacji dotyczących limitu, zobacz sekcję **Włącz zmiany danych w czasie zbliżonym do rzeczywistego** w artykule [Omówienie eksportu do usługi Azure Data Lake](../../fin-ops-core/dev-itpro/data-entities/Azure-Data-Lake-GA-version-overview.md).

@@ -1,42 +1,42 @@
 ---
 title: Zatwierdzanie faktur na urządzeniach przenośnych
-description: Ten temat przedstawia praktyczne podejście do projektowania scenariuszy komórkowych na bazie procesu zatwierdzania faktur od dostawców na urządzeniach komórkowych.
+description: Ten artykuł przedstawia praktyczne podejście do projektowania scenariuszy komórkowych na bazie procesu zatwierdzania faktur od dostawców na urządzeniach komórkowych.
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User, IT Pro
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 262034
 ms.assetid: 9db38b3f-26b3-436e-8449-7ff243568a18
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 83d95ef6d9fcff060ac992b11ab5773af075fea5409e43430b4826dc097570c7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f635891e3d92fbd5978e10fe01eb67c0a28542c5
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737362"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946282"
 ---
 # <a name="mobile-invoice-approvals"></a>Zatwierdzanie faktur na urządzeniach przenośnych
 
 [!include [banner](../includes/banner.md)]
 
-Opcje mobilne pozwalają użytkownikom biznesowym na projektowanie środowiska mobilnego. W scenariuszach zaawansowanych platforma umożliwia również deweloperom rozszerzanie funkcjonalności zgodnie z potrzebami. Najbardziej skutecznym sposobem, aby poznać niektóre nowe koncepcje obsługi na telefonach komórkowych, jest przejście przez proces projektowania w kilku scenariuszach. Ten temat przedstawia praktyczne podejście do projektowania scenariuszy komórkowych na bazie procesu zatwierdzania faktur od dostawców na urządzeniach komórkowych. Ten temat powinien ułatwić projektowanie w innych wariantach scenariuszy i może być również wykorzystywany w innych scenariuszach, niezwiązanych z fakturami od dostawców.
+Opcje mobilne pozwalają użytkownikom biznesowym na projektowanie środowiska mobilnego. W scenariuszach zaawansowanych platforma umożliwia również deweloperom rozszerzanie funkcjonalności zgodnie z potrzebami. Najbardziej skutecznym sposobem, aby poznać niektóre nowe koncepcje obsługi na telefonach komórkowych, jest przejście przez proces projektowania w kilku scenariuszach. Ten artykuł przedstawia praktyczne podejście do projektowania scenariuszy komórkowych na bazie procesu zatwierdzania faktur od dostawców na urządzeniach komórkowych. Ten artykuł powinien ułatwić projektowanie w innych wariantach scenariuszy i może być również wykorzystywany w innych scenariuszach, niezwiązanych z fakturami od dostawców.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-| Wymaganie wstępne                                                                                            | opis                                                                                                                                                          |
-|---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Wymaganie wstępne                                                                                            | Opis                       |
+|---------------------------------------------------------------------------------------------------------|--------------------------------------------|
 | Podręcznik wprowadzający do platformy komórkowej                                                                                |[Platforma mobilna](../../fin-ops-core/dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
 | Dynamics 365 Finance                                                                              | Środowisko, w którym zainstalowano wersję 1611 oraz aktualizację nr 3 platformy (z listopada 2016 r.)                   |
 | Instalacja poprawki KB 3204341.                                                                              | Rejestrator zadań może błędnie nagrywać dwa polecenia Zamknij dla rozwijanych okien dialogowych; Poprawka jest dołączona do aktualizacji nr 3 platformy (aktualizacja z listopada 2016 r.). |
 | Instalacja poprawki KB 3207800.                                                                              | Ta poprawka umożliwia wyświetlanie załączników na klientach mobilnych. Poprawka jest dołączona do aktualizacji nr 3 platformy (aktualizacja z listopada 2016 r.).           |
 | Instalacja poprawki KB 3208224.                                                                              | Kod źródłowy aplikacji zatwierdzania faktur od dostawców na urządzeniach komórkowych; również w wersji 7.0.1 (z maja 2016 r.).                          |
-| Urządzenie z systemem Android, iOS lub Windows, na którym zainstalowano aplikację. | Wyszukaj aplikację w odpowiednim sklepie z aplikacjami.                                                                                                                     |
+| Urządzenie z systemem Android, iOS lub Windows, na którym zainstalowano aplikację. | Wyszukaj aplikację w odpowiednim sklepie z aplikacjami.                            |
 
 ## <a name="introduction"></a>Wprowadzenie
 Aby można było zatwierdzać faktury od dostawców na urządzeniach komórkowych, należy zainstalować trzy poprawki wymienione w sekcji „Wymagania wstępne”. Te poprawki nie udostępniają obszaru roboczego dla zatwierdzania faktur. Aby się dowiedzieć, czym jest obszar roboczy w kontekście pracy na urządzeniach komórkowych, przeczytaj podręcznik o platformie komórkowej wymieniony w sekcji „Wymagania wstępne”. Obszar roboczy zatwierdzania faktur musi być zaprojektowany. 
@@ -51,11 +51,11 @@ Każda organizacja inaczej przygotowuje i definiuje proces biznesowy faktur od d
     -   Czy faktury mają również zasady podziału księgowań w nagłówku faktury? Jeśli tak, czy te zasady podziału księgowań powinny być dostępne w urządzeniu?
 
     > [!NOTE]
-    > W tym temacie nie wyjaśniono, jak edytować zasady podziału księgowań, ponieważ ta funkcja aktualnie nie jest obsługiwana w scenariuszach mobilnych.
+    > W tym artykule nie wyjaśniono, jak edytować zasady podziału księgowań, ponieważ ta funkcja aktualnie nie jest obsługiwana w scenariuszach mobilnych.
 
 -   Czy użytkownicy będą chcieli widzieć załączniki do faktur na urządzeniu?
 
-Projekt komórkowego środowiska obsługi zatwierdzania faktur będzie się różnił w zależności od odpowiedzi na te pytania. Celem jest optymalizacja środowiska obsługi procesu biznesowego na urządzeniach komórkowych w organizacji. W pozostałej części tego tematu przyjrzymy się dwóm wariantom scenariusza, które są oparte na różnych odpowiedziach na powyższe pytania. 
+Projekt komórkowego środowiska obsługi zatwierdzania faktur będzie się różnił w zależności od odpowiedzi na te pytania. Celem jest optymalizacja środowiska obsługi procesu biznesowego na urządzeniach komórkowych w organizacji. W pozostałej części tego artykułu przyjrzymy się dwóm wariantom scenariusza, które są oparte na różnych odpowiedziach na powyższe pytania. 
 
 Jako ogólną wskazówkę należy pamiętać, aby podczas pracy w projektancie środowiska komórkowego „publikować” zmiany w celu uniknięcia utraty aktualizacji.
 

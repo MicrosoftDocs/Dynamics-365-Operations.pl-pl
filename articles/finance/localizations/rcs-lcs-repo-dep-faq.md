@@ -1,6 +1,6 @@
 ---
 title: Regulatory Configuration Service (RCS) – deprekacja pamięci w Lifecycle Services (LCS)
-description: Ten temat zawiera informacje o wycofaniu z użytku magazynu Microsoft Dynamics Lifecycle Services (LCS), które jest planowane w ramach wdrażania globalnego repozytorium Regulatory Configuration Service (RCS).
+description: Ten artykuł zawiera informacje o wycofaniu z użytku magazynu Microsoft Dynamics Lifecycle Services (LCS), które jest planowane w ramach wdrażania globalnego repozytorium Regulatory Configuration Service (RCS).
 author: JaneA07
 ms.date: 10/27/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.19
-ms.openlocfilehash: 8862f42f3ceaed7e1413c49cf9b91f0449fab67b
-ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
+ms.openlocfilehash: 4a35941d1521d26f95bacf29213fee42daeb42ab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "8547990"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849739"
 ---
 # <a name="regulatory-configuration-service-rcs--lifecycle-services-lcs-storage-deprecation"></a>Regulatory Configuration Service (RCS) — deprekacja pamięci w Lifecycle Services (LCS)
 
@@ -85,7 +85,7 @@ System RCS używa koncepcji *połączonej aplikacji*. Połączona aplikacja twor
 
 ### <a name="are-there-any-examples-that-show-the-setup-and-management"></a>Czy są jakieś przykłady, które pokazują konfigurację i zarządzanie?
 
-Nie ma żadnych przykładów, ale możesz wykonać kroki opisane wcześniej w tym temacie, aby migrować konfiguracje do repozytorium globalnego RCS.
+Nie ma żadnych przykładów, ale możesz wykonać kroki opisane wcześniej w tym artykule, aby migrować konfiguracje do repozytorium globalnego RCS.
 
 ### <a name="is-rcs-a-prerequisite-to-configure-electronic-reporting"></a>Czy program RCS jest warunkiem wstępnym do skonfigurowania raportowania elektronicznego?
 

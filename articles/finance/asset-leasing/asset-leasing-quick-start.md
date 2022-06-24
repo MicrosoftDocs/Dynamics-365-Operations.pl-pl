@@ -1,6 +1,6 @@
 ---
 title: Wynajem składnika majątku — rozpoczęcie
-description: W tym temacie opisano możliwości wynajmu składników majątku i kroki tworzenia wynajmu składników majątku i wyświetlania informacji dotyczących tych wynajmów.
+description: W tym artykule opisano możliwości wynajmu składników majątku i kroki tworzenia wynajmu składników majątku i wyświetlania informacji dotyczących tych wynajmów.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 991685f50a00e60026331bf573561be904c7f9ab
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: df4343031b3b116318f798f31adb4d1f6bed1db9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710337"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895146"
 ---
 # <a name="asset-leasing-get-started"></a>Wynajem składnika majątku — rozpoczęcie
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano możliwości wynajmu składników majątku i kroki tworzenia wynajmu składników majątku i wyświetlania informacji dotyczących tych wynajmów. W tym temacie opisano również terminologię używaną w interfejsie użytkownika i w dokumentacji. Wynajem składnika majątku jest zaawansowaną funkcją służącą do zarządzania, śledzenia i automatyzowania transakcji finansowych wynajmowanych składników majątku w Microsoft Dynamics 365 Finance. Wynajem składników majątku jest zgodny z międzynarodowymi standardami rachunkowości (MSSF 16) i standardami finansowymi (ASC 842). Wynajem składników aktywów wyszukuje i przetwarza informacje o dzierżawie oraz ułatwia generowanie wpisy w arkuszu w cyklu wynajmu od początkowego rozpoznania, miesięcznych wpisów w arkuszu, do utraty ważności zakończenia wynajmu. Wynajem składników majątku integruje się płynnie z innymi komponentami Dynamics 365 Finance, w tym Środkami trwałymi, Rozrachunki z dostawcami i Księga główna.
+W tym artykule opisano możliwości wynajmu składników majątku i kroki tworzenia wynajmu składników majątku i wyświetlania informacji dotyczących tych wynajmów. W tym artykule opisano również terminologię używaną w interfejsie użytkownika i w dokumentacji. Wynajem składnika majątku jest zaawansowaną funkcją służącą do zarządzania, śledzenia i automatyzowania transakcji finansowych wynajmowanych składników majątku w Microsoft Dynamics 365 Finance. Wynajem składników majątku jest zgodny z międzynarodowymi standardami rachunkowości (MSSF 16) i standardami finansowymi (ASC 842). Wynajem składników aktywów wyszukuje i przetwarza informacje o dzierżawie oraz ułatwia generowanie wpisy w arkuszu w cyklu wynajmu od początkowego rozpoznania, miesięcznych wpisów w arkuszu, do utraty ważności zakończenia wynajmu. Wynajem składników majątku integruje się płynnie z innymi komponentami Dynamics 365 Finance, w tym Środkami trwałymi, Rozrachunki z dostawcami i Księga główna.
 
 Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z obszaru roboczego **Zarządzanie funkcjami**, aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. W obszarze roboczym **Zarządzanie funkcjami** znajdź i wybierz funkcję o nazwie **Wynajem składnika majątku**, a następnie wybierz przycisk **Włącz teraz**.
 

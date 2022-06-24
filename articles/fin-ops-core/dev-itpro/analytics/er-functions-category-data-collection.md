@@ -1,6 +1,6 @@
 ---
 title: Lista funkcji modułu ER w kategorii kolekcji danych
-description: Ten temat zawiera ogólne informacje o funkcjach kolekcji danych obsługiwanych w module Raportowanie elektroniczne (ER).
+description: Ten artykuł zawiera ogólne informacje o funkcjach kolekcji danych obsługiwanych w module Raportowanie elektroniczne (ER).
 author: NickSelin
 ms.date: 12/04/2019
 ms.prod: ''
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2046931732f2d1c1ca040c1c84d4b182c2214f2f44a5a90fceda49298445b743
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a8d4f5068bedcf1f15ae5257e29004a4773ef84c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760081"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908569"
 ---
 # <a name="list-of-er-functions-in-the-data-collection-category"></a>Lista funkcji modułu ER w kategorii kolekcji danych
 
 [!include [banner](../includes/banner.md)]
 
-Funkcje kolekcji danych w module Raportowanie elektroniczne (ER) służą do zliczania i sumowania w uruchamianym formacie ER na podstawie danych wyjściowych, które zostały już wygenerowane w formacie **Tekst** lub **XML**. To podejście umożliwia poprawę wydajności uruchamianego formatu ER w celu wprowadzenia wartości sum bieżących w wygenerowanych dokumentach i dla innych celów. Ten temat zawiera podsumowanie tych funkcji.
+Funkcje kolekcji danych w module Raportowanie elektroniczne (ER) służą do zliczania i sumowania w uruchamianym formacie ER na podstawie danych wyjściowych, które zostały już wygenerowane w formacie **Tekst** lub **XML**. To podejście umożliwia poprawę wydajności uruchamianego formatu ER w celu wprowadzenia wartości sum bieżących w wygenerowanych dokumentach i dla innych celów. Ten artykuł zawiera podsumowanie tych funkcji.
 
 ## <a name="list-of-supported-functions"></a>Lista obsługiwanych funkcji
 

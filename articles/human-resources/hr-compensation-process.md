@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: e4aa910d92c2905d54d96f656e1d3d1c36388636
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 228c891e8c29cf4309856b90139d0b88805a9812
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693872"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886168"
 ---
 # <a name="process-compensation"></a>Przetwarzanie wynagrodzenia
 
@@ -27,7 +27,7 @@ ms.locfileid: "8693872"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Funkcjonalność przetwarzania wynagrodzeń pozwala obliczyć nowe kwoty podstawy wynagrodzenia dla pracowników w oparciu o korektę wyrównawczą, cele podwyżki uznaniowej i wydajność. Ten temat omawia podstawowy przepływ przetwarzania wynagrodzeń w systemach stałych wynagrodzeń bez uwzględniania wydajności pracownika.
+Funkcjonalność przetwarzania wynagrodzeń pozwala obliczyć nowe kwoty podstawy wynagrodzenia dla pracowników w oparciu o korektę wyrównawczą, cele podwyżki uznaniowej i wydajność. Ten artykuł omawia podstawowy przepływ przetwarzania wynagrodzeń w systemach stałych wynagrodzeń bez uwzględniania wydajności pracownika.
 
 ## <a name="plan-the-new-compensation-amounts-and-budgets"></a>Planowanie nowych kwot wynagrodzeń i budżetów
 Aby dać pracownikom podwyżkę uznaniową, należy skonfigurować budżet stałych podwyżek dla każdego z działów: **Zarządzanie wynagrodzeniami** > **Linki** > **Cele podwyżki uznaniowej**. (Alternatywnie można otworzyć stronę z poziomu działu: **Organizacja** > **Działy**). W tym oknie można dodatkowo określić, czy pracownicy w określonym związku zawodowym lub lokalizacji powinni otrzymać inny procent podwyżki. Pola **Budżet** i **Waluta** służą celom informacyjnym i mogą służyć do zanotowania kwoty waluty dla budżetu.
@@ -41,7 +41,7 @@ Zdarzenie procesowe **-Data stałego punktu odniesienia** jest używane tylko do
 
 Po zapisaniu parametrów zdarzenia procesowego można kliknąć przycisk **Ustawienia** i wskazać systemy wynagrodzeń, które mają zostać uwzględnione w tej sesji przetwarzania, oraz czynności związane ze stałym wynagrodzeniem, które mają zostać wykonane dla każdego systemu.
 
-Kliknij przycisk **Dodaj** na karcie **Plany**, aby dodać system wynagrodzeń do zdarzenia procesowego. Kolumny **Użyj innej dźwigni finansowej**, **Współczynnik dźwigni finansowej** i **Opis dźwigni finansowej** są używane tylko dla systemów wynagrodzeń o zmiennej wysokości i nie będą omówione w tym temacie.
+Kliknij przycisk **Dodaj** na karcie **Plany**, aby dodać system wynagrodzeń do zdarzenia procesowego. Kolumny **Użyj innej dźwigni finansowej**, **Współczynnik dźwigni finansowej** i **Opis dźwigni finansowej** są używane tylko dla systemów wynagrodzeń o zmiennej wysokości i nie będą omówione w tym artykule.
 
 Zapisz rekord i kliknij przycisk **Dodaj** na karcie **Akcje**, aby dodać akcje związane ze stałym wynagrodzeniem dla wybranego systemu wynagrodzeń. Użyj opcji **Włącz rekomendacje**, aby wprowadzić kwotę inną niż obliczona podwyżka podstawowa dla czynności. Aby obliczyć akcję opartą na wyniku poprzedniej akcji w celu połączenia wielu akcji wynagrodzenia, zaznacz opcję **Użyj poprzedniego wyniku**. Akcje związane ze stałym wynagrodzeniem to typy logiki wynagrodzeń, którym można nadać opisowe nazwy. W systemach typu **Kategoria** lub **Pasmo** można dodawać tylko akcje związane ze stałym wynagrodzeniem, które mają jeden z następujących typów:
 

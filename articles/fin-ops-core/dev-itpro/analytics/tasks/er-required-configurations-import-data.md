@@ -1,6 +1,6 @@
 ---
 title: ER Tworzenie wymaganych konfiguracji do importowania danych z pliku zewnętrznego
-description: W tym temacie opisano sposób projektowania konfiguracji raportowania elektronicznego w celu importowania danych do aplikacji Microsoft Dynamics 365 Finance z zewnętrznego pliku.
+description: W tym artykule opisano sposób projektowania konfiguracji raportowania elektronicznego w celu importowania danych do aplikacji Microsoft Dynamics 365 Finance z zewnętrznego pliku.
 author: NickSelin
 ms.date: 03/24/2021
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7eaa35baae8e030d8a8b7ce903554c4876c874b48cfd72d6ac278cf4c0e8a6e8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aa1dc55e8cdee7d61e5ababe92e8a9234788664f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720863"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865901"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>ER Tworzenie wymaganych konfiguracji do importowania danych z pliku zewnętrznego
 
@@ -241,7 +241,7 @@ Uruchom to mapowanie formatu w celach testowych. Użyj pobranego wcześniej plik
 19. Zamknij stronę.
 20. Kliknij przycisk Edytuj.
 
-    Jeśli została zainstalowana poprawka „KB 4012871 Obsługa mapowań modelu dla Niemiec w osobnych konfiguracjach z możliwością określenia różnych rodzajów warunków wstępnych na potrzeby wdrażania ich w różnych wersjach Dynamics 365 Finance” ([KB 4012871](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871)), wykonaj następny krok „Włączanie flagi „Domyślne dla mapowania modelu”” dla wprowadzonej konfiguracji formatu. W przeciwnym razie pomiń następny krok.  
+    Jeśli została zainstalowana poprawka „KB 4012871 Obsługa mapowań modelu dla Niemiec w osobnych konfiguracjach z możliwością określenia różnych rodzajów warunków wstępnych na potrzeby wdrażania ich w różnych wersjach aplikacji Dynamics 365 Finance” ([KB 4012871](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871)), wykonaj następny krok „Włączanie flagi „Domyślne dla mapowania modelu”” dla wprowadzonej konfiguracji formatu. W przeciwnym razie pomiń następny krok.  
 
 21. Wybierz opcję Tak w polu Domyślne dla mapowania modelu.
 22. W drzewie zaznacz element „Model płatności 1099”.

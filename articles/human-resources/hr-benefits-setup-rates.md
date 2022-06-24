@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2deb20646a532509c9e3a3e7a39f646bced2a3fb
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 039b4aa3f044cda29944bcd4f5c42fc35818c58b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693123"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868167"
 ---
 # <a name="configure-rates"></a>Konfigurowanie stawek
 
@@ -47,7 +47,7 @@ Stawki służą do określania, ile pracownicy i pracodawcy płacą za każde ś
    | **Weszła w życie** | Data wejścia w życie stawki. Domyślną wartością jest bieżąca data systemowa. Data ta nie powinna być wcześniejsza niż okres świadczenia. Dobrze jest ustawić tę datę jako datę planu świadczeń. |
    | **Data ważności** | Data zakończenia obowiązywania stawki. Wartość domyślna to 31.12.2154, czyli nigdy. |
    | **Użyj warstw** |  Użyj tego pola, jeśli masz logikę, której należy użyć do określenia stawki. Jeśli na przykład stawka musi wzrosnąć na podstawie wieku, wybierz tutaj wartość. Wybierz **Pojedyncza warstwa** dla jednowarstwowej stawki świadczenia lub **Podwójna warstwa** dla dwuwarstwowej stawki świadczenia. Przykładem podwójnej warstwy jest warstwa oparta na płci i wieku. Po wybraniu wartości wybierz opcję **Akcje**, a następnie wybierz **stawki warstw**. Jeśli stawkę ryczałt nie zmieni się, pozostaw to pole puste. |
-   | **Częstość płatności** | Określ, jak często stawka składki świadczenia powinna być wypłacana świadczeniodawcy. Stawki wprowadzane na stronie opisanej w dalszej części tego tematu będą oparte na określonej tutaj częstotliwości płatności. Na przykład po wprowadzeniu w tym polu wartości **Miesięcznie** i wprowadzeniu stawki pracownika **$100** zakłada się, że świadczenie będzie kosztowało pracownika $100 w miesiącu. Jednak pracownik może otrzymywać wypłatę dwa razy w miesiącu, na podstawie częstotliwości wypłaty świadczenia określonej w kartotece pracownika. W takim przypadku, gdy pracownik zaloguje się do modułu **Samoobsługa pracownika etatowego**, kwota, jaką zapłaci, wyniesie 50 USD, ponieważ stawka, którą pokazuje moduł **Samoobsługa pracownika etatowego**, jest oparta na częstotliwości płatności pracownika. |
+   | **Częstość płatności** | Określ, jak często stawka składki świadczenia powinna być wypłacana świadczeniodawcy. Stawki wprowadzane na stronie opisanej w dalszej części tego artykułu będą oparte na określonej tutaj częstotliwości płatności. Na przykład po wprowadzeniu w tym polu wartości **Miesięcznie** i wprowadzeniu stawki pracownika **$100** zakłada się, że świadczenie będzie kosztowało pracownika $100 w miesiącu. Jednak pracownik może otrzymywać wypłatę dwa razy w miesiącu, na podstawie częstotliwości wypłaty świadczenia określonej w kartotece pracownika. W takim przypadku, gdy pracownik zaloguje się do modułu **Samoobsługa pracownika etatowego**, kwota, jaką zapłaci, wyniesie 50 USD, ponieważ stawka, którą pokazuje moduł **Samoobsługa pracownika etatowego**, jest oparta na częstotliwości płatności pracownika. |
    | **Zaokrąglanie stawki częstotliwości płac** | Dostępne metody zaokrąglania kursu to: Standardowe, Obcięte, Normalne, W dół oraz Zaokrąglenie w górę. </br></br><ul><li>**Standard** — zawsze zaokrąglaj. Na przykład 10,611 zaokrągli się do 10,62. Zaokrągla się do -10,231 do -10,23. </li><li>**Obcięte** — zawsze zaokrąglaj w dół. Na przykład 10,619 zaokrągli się do 10,61. Zaokrągla się do -10,231 do -10,24. </li><li>**Normalne** — wartości dziesiętne kończące się lub większe niż 5 będą zaokrąglać w 0. Wartości dziesiętne kończące się w lub mniejsze niż 4 będą zaokrąglane w stronę zera. Na przykład 10,615 zaokrągli się do 10,62. Zaokrągla się do -10,235 do -10,24. Zaokrągla się do -10,614 do -10,61. Zaokrągla się do -10,234 do -10,23. </li><li>**W dół** — zaokrąglaj w stronę zera. Na przykład 10,619 zaokrągli się do 10,61. Zaokrągla się do -10,231 do -10,23. </li><li>**Zaokrąglanie w górę** — zaokrąglanie w górę od zera. Na przykład 10,619 zaokrągli się do 10,62. Zaokrągla się do -10,231 do -10,24. |
    | **Kwota pracownika etatowego osoby niepalącej** | Kwota, jakiej dostawca świadczeń żąda za niepalącego pracownika. Jest to kwota płacona dostawcy świadczeń przez pracodawcę i powinna być oparta na częstotliwości płatności określonej w konfiguracji stawki. |
    | **Kwota pracodawcy osoby niepalącej** | Kwota, jakiej dostawca świadczeń żąda za niepalącego pracownika. Jest to kwota płacona dostawcy świadczeń przez pracodawcę i powinna być oparta na częstotliwości płatności określonej w konfiguracji stawki. |

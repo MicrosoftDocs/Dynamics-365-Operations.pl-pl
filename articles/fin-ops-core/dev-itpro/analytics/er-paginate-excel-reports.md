@@ -1,6 +1,6 @@
 ---
 title: Projektowanie formatu ER do stronicowania wygenerowanych dokumentów w programie Excel
-description: W tym temacie opisano sposób projektowania formatu raportowania elektronicznego, który stronicuje wygenerowany dokument w programie Microsoft Excel.
+description: W tym artykule opisano sposób projektowania formatu raportowania elektronicznego, który stronicuje wygenerowany dokument w programie Microsoft Excel.
 author: NickSelin
 ms.date: 09/14/2021
 ms.topic: article
@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-08-01
 ms.dyn365.ops.version: Version 10.0.22
-ms.openlocfilehash: ce29225c4bce24adc2abefc3d3d6f20774852af4
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: e8edc8bba62f74b4f81d423cf75b5fb87c01e43f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488346"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909286"
 ---
 # <a name="design-an-er-format-to-paginate-generated-documents-in-excel"></a>Projektowanie formatu ER do stronicowania wygenerowanych dokumentów w programie Excel
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak użytkownik w roli administratora systemu lub konsultanta funkcjonalnego ds. raportowania elektronicznego może skonfigurować format [Raportowanie elektroniczne (ER)](general-electronic-reporting.md) w celu generowania dokumentów wychodzących w programie Microsoft Excel i zarządzania stronicowaniem dokumentów.
+W tym artykule wyjaśniono, jak użytkownik w roli administratora systemu lub konsultanta funkcjonalnego ds. raportowania elektronicznego może skonfigurować format [Raportowanie elektroniczne (ER)](general-electronic-reporting.md) w celu generowania dokumentów wychodzących w programie Microsoft Excel i zarządzania stronicowaniem dokumentów.
 
 W tym przykładzie zmodyfikujesz dostarczony przez firmę Microsoft format raportowania elektronicznego, który jest używany do drukowania raportu kontrolnego, gdy deklaracja Intrastat jest [generowana](../../../finance/localizations/tasks/eur-00002-eu-intrastat-declaration.md). Ten raport pozwala obserwować zgłoszone transakcje Intrastat. Twoje modyfikacje pozwolą Ci zarządzać stronicowaniem generowanych raportów kontrolnych.
 
-Zadania przedstawione w tym temacie można wykonać w kontekście firmy **DEMF**. Nie są wymagane umiejętności kodowania. Przed rozpoczęciem musisz pobrać i zapisać następujące pliki.
+Zadania przedstawione w tym artykule można wykonać w kontekście firmy **DEMF**. Nie są wymagane umiejętności kodowania. Przed rozpoczęciem musisz pobrać i zapisać następujące pliki.
 
 | opis       | Nazwa pliku |
 |-------------------|-----------| 
@@ -165,7 +165,7 @@ Następnie użyj niestandardowego formatu ER, aby wygenerować raport kontrolny 
 
 ### <a name="repeat-the-replacement-of-the-current-excel-template-in-the-custom-er-format"></a>Powtórz wymianę obecnego szablonu Excel w niestandardowym formacie ER
 
-1. Wykonaj kroki w sekcji [Zamień bieżący szablon programu Excel w niestandardowej sekcji formatu ER](#replace-template) tego tematu. W kroku 7 należy jednak wybrać plik **ERIntrastatReportDemo2.xlsx**.
+1. Wykonaj kroki w sekcji [Zamień bieżący szablon programu Excel w niestandardowej sekcji formatu ER](#replace-template) tego artykułu. W kroku 7 należy jednak wybrać plik **ERIntrastatReportDemo2.xlsx**.
 2. Na stronie **Projektant formatów** rozwiń **Intrastat**.
 3. Nazwij składniki formatu [zakresu](er-fillable-excel.md#range-component), które zostały dodane do edytowalnego formatu ER w celu zsynchronizowania struktury ze strukturą zastosowanego szablonu programu Excel:
 
@@ -406,7 +406,7 @@ Aby zmienić widoczność, zaktualizuj właściwość **Włączone** **nagłówk
 
 ## <a name="generate-an-intrastat-declaration-control-report-updated"></a>Wygeneruj raport kontrolny deklaracji Intrastat (aktualizowane)
 
-1. Upewnij się, że na stronie **Intrastat** masz 24 transakcje. Powtórz kroki w sekcji [Generowanie raportu kontroli deklaracji Intrastat](#generate-intrastat-control-report) w tym temacie, aby wygenerować i przejrzeć raport kontroli.
+1. Upewnij się, że na stronie **Intrastat** masz 24 transakcje. Powtórz kroki w sekcji [Generowanie raportu kontroli deklaracji Intrastat](#generate-intrastat-control-report) w tym artykule, aby wygenerować i przejrzeć raport kontroli.
 
     Wszystkie transakcje są prezentowane na pierwszej stronie. Sumy i liczniki strony są równe sumom i licznikom raportu. Zakres nagłówka strony jest ukryty na pierwszej stronie, ponieważ nagłówek raportu zawiera już tytuły kolumn. Nagłówek i stopka strony są ukryte na drugiej stronie, ponieważ ta strona nie zawiera żadnych transakcji.
 

@@ -1,6 +1,6 @@
 ---
 title: Rekrutowanie kandydatów
-description: Ten temat dotyczy sposobu rekrutacji kandydatów w Dynamics 365 Human Resources.
+description: Ten artykuł dotyczy sposobu rekrutacji kandydatów w Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ef2f2c82708fd48055faa7546e7e0c4da51e7b6c
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 743c78d3526db2707630229d4cf21531f9641dd6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733993"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879258"
 ---
 # <a name="recruit-job-candidates"></a>Rekrutowanie kandydatów
 
@@ -47,11 +47,12 @@ Jeśli chcesz przesyłać żądania rekrutacyjne w ramach rekrutacji HR, musisz 
 
 Po włączeniu funkcji wybierz tę funkcję, aby wykonać następujące czynności: 
 1. Przejdź do **Zasoby ludzkie** > **Konfiguracja** > **Parametry zasobów ludzkich**.
-2. Na karcie  **Rekrutacja** ustaw pole **Rekrutacja wyłączona** na **Nie**.
-3. Z listy rozwijanej **Doświadczenie w rekrutacji** wybierz pozycję **Rekrutacja do działu personalnego**.   
+2. Na karcie  **Rekrutacja** ustaw pole **Rekrutacja włączona** na **Tak**.
+3. Z listy rozwijanej **Doświadczenie w rekrutacji** wybierz pozycję **Rekrutacja do działu personalnego**.  
+4. Kliknij przycisk **Zapisz**. 
 
 > [!Note] 
-> Po wybraniu **Rekrutacja do działu personalnego** **projekty rekrutacji** (starsze) będą tylko do odczytu. 
+> Po wybraniu **Rekrutacja do działu personalnego** **projekty rekrutacji** (starsze) nie będą dostępne. 
 
 
 ## <a name="add-a-recruiting-request-location"></a>Dodawanie lokalizacji wniosku o rekrutację

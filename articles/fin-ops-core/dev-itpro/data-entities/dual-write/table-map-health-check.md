@@ -1,20 +1,20 @@
 ---
 title: Kody błędów dla kontroli stanu mapy tabeli
-description: Ten temat opisuje kody błędów dla sprawdzania stanu mapy tabeli.
-author: nhelgren
-ms.date: 10/04/2021
+description: Ten artykuł opisuje kody błędów dla kontroli kondycji mapy tabeli.
+author: RamaKrishnamoorthy
+ms.date: 05/31/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
-ms.author: nhelgren
+ms.author: ramasri
 ms.search.validFrom: 2021-10-04
-ms.openlocfilehash: 916f3cfca3bae7a073ce4e956a12080ee01c8d31
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 3ae78077fc716311c38620b14665af3983a44c2d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061285"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884091"
 ---
 # <a name="errors-codes-for-the-table-map-health-check"></a>Kody błędów dla kontroli stanu mapy tabeli
 
@@ -22,7 +22,7 @@ ms.locfileid: "8061285"
 
 
 
-Ten temat opisuje kody błędów dla sprawdzania stanu mapy tabeli.
+Ten artykuł opisuje kody błędów dla kontroli kondycji mapy tabeli.
 
 ## <a name="error-100"></a>Error 100
 
@@ -36,9 +36,9 @@ Komunikat o błędzie: „Nie znaleziono żadnych danych rejestracji zdarzeń bi
 
 ## <a name="error-500"></a>Error 500
 
-Komunikat o błędzie: „Nie znaleziono żadnych konfiguracji projektu dla \{nazwa projektu\}. Może to być spowodowane tym, że projekt nie jest włączony lub wszystkie mapowania pól są jednokierunkowe z zaangażowania klienta do Finanse i Działania”.
+Komunikat o błędzie: „Nie znaleziono żadnych konfiguracji projektu dla \{nazwa projektu\}. Może to być spowodowane tym, że projekt nie został włączony lub wszystkie mapowania pól są jednokierunkowe z zaangażowania klienta do Finanse i Działania”.
 
-Sprawdź mapowania dla mapy tabel. Jeśli są one jednokierunkowe z aplikacji customer engagement do aplikacjiFinanse i Działania , nie jest generowany ruch do synchronizacji na żywo z aplikacji Finanse i Działania do Dataverse.
+Sprawdź mapowania dla mapy tabel. Jeśli są one jednokierunkowe z aplikacji Customer Engagement do aplikacji finansowych i operacyjnych, nie jest generowany ruch do synchronizacji na żywo z aplikacji finansowych i operacyjnych do usługi Dataverse.
 
 ## <a name="error-900"></a>Error 900
 
@@ -79,5 +79,20 @@ select * from <EntityName> where <filter criteria for the records> on SQL.
 Komunikat o błędzie: „Tabela: \{datasourceTable.Key.subscribedTableName\} dla encji \{datasourceTable.Key.entityName\} jest śledzona dla encji \{origTableToEntityMaps.EntityName\}. Te same tabele śledzone dla wielu podmiotów mogą wpływać na wydajność systemu dla transakcji synchronizacji na żywo”.
 
 Jeśli ta sama tabela jest śledzona przez wiele podmiotów, każda zmiana w tabeli spowoduje ocenę podwójnego zapisu dla połączonych podmiotów. Pomimo, że klauzule filtrujące będą wysyłać tylko poprawne rekordy, ocena może spowodować problem z wydajnością, jeśli istnieją długo trwające zapytania lub niezoptymalizowane plany zapytań. Z biznesowego punktu widzenia tego problemu nie da się uniknąć. Jednakże, jeśli istnieje wiele przecinających się tabel w wielu encjach, powinieneś rozważyć uproszczenie encji lub sprawdzić optymalizacje dla zapytań encji.
+
+## <a name="error-1800"></a>Error 1800
+Komunikat o błędzie: „Źródło danych: element {} dla encji CustCustomerV3Entity zawiera wartość zakresu. Wartości zakresów w encji mogą wpływać na operacje typu upsert dla rekordów przychodzących z usługi Dataverse do aplikacji finansowych i operacyjnych. Przetestuj aktualizacje rekordów z usługi Dataverse do aplikacji finansowych i operacyjnych przy użyciu rekordów, które nie spełniają kryteriów filtrowania, aby zweryfikować ustawienia”.
+
+Jeśli istnieje zakres określony dla encji w aplikacjach finansowych i operacyjnych, synchronizacja danych przychodzących z usługi Dataverse do aplikacji finansowych i operacyjnych powinna być testowana pod kątem zachowania aktualizacji w rekordach, które nie spełniają kryteriów zakresu. Każdy rekord, który nie pasuje do zakresu, będzie traktowany przez encję jako operacja wstawiania. Jeśli w tabeli podstawowej istnieje rekord, wstawienie nie powiedzie się. Zaleca się przetestowanie tego przypadku użycia dla wszystkich scenariuszy przed wdrożeniem w środowisku produkcyjnym.
+
+## <a name="error-1900"></a>Error 1900
+Komunikat o błędzie: „Encja: ma następującą liczbę źródeł danych: {}, które nie są śledzone pod celu wychodzącego podwójnego zapisu. Może to wpływać na wydajność zapytań dotyczących synchronizacji na żywo. Zmień model encji w aplikacjach finansowych i operacyjnych, aby usunąć nieużywane źródła danych i tabele, lub zaimplementuj metodę getEntityRecordIdsImpactedByTableChange, aby zoptymalizować zapytania środowiska uruchomieniowego”.
+
+Jeśli istnieje wiele źródeł danych, które nie są używane do śledzenia w ramach rzeczywistej synchronizacji na żywo z aplikacji finansowych i operacyjnych, wydajność encji może wywierać wpływ na synchronizację na żywo. Aby zoptymalizować śledzone tabele, należy użyć metody getEntityRecordIdsImpactedByTableChange.
+
+## <a name="error-5000"></a>Error 5000
+Komunikat o błędzie:„ Synchroniczne dodatki plug-in zostały zarejestrowane dla zdarzeń zarządzania danymi dla kont encji. Mogą one wpływać na wydajność importu synchronizacji początkowej i synchronizacji na żywo do usługi Dataverse. Aby uzyskać najlepszą wydajność, zmień dodatki plug-in na przetwarzanie asynchroniczne. Lista zarejestrowanych dodatków plug-in {}”.
+
+Synchroniczne dodatki plug-in w wncji usługi Dataverse mogą wpływać na wydajność synchronizacji na żywo i synchronizacji początkowej, ponieważ zwiększają obciążenie transakcji pracą. Zaleca się wyłączenie dodatków plug-in lub przekształcenie ich w rozwiązania asynchroniczne, jeśli podczas synchronizacji początkowej lub synchronizacji na żywo dla określonej encji ładowanie odbywa się zbyt wolno.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

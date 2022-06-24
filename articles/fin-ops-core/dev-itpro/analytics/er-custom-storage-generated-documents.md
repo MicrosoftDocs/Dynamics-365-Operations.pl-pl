@@ -1,6 +1,6 @@
 ---
-title: Określanie lokalizacji niestandardowego magazynu wygenerowanych dokumentów
-description: W tym temacie wyjaśniono, jak rozszerzyć listę lokalizacji przechowywania dokumentów generowanych przez raportowanie elektroniczne.
+title: Określanie niestandardowej lokalizacji wygenerowanych dokumentów
+description: W tym artykule wyjaśniono, jak rozszerzyć listę lokalizacji przechowywania dokumentów generowanych przez raportowanie elektroniczne.
 author: NickSelin
 ms.date: 02/22/2019
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 61a1e46497d650e2c063a5fe7537d17cf7aa1828a5a4504bb781e84aeb88f04a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 70d9ccfac18b4cdf1ea19b3def87fc10ba9ddcb4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718508"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864754"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Określanie lokalizacji niestandardowego magazynu wygenerowanych dokumentów
 
 [!include[banner](../includes/banner.md)]
 
-Interfejs API raportowania elektronicznego pozwala rozszerzyć listę lokalizacji, w których można przechowywać dokumenty generowane przez funkcję raportowania elektronicznego. Ten temat zawiera przegląd głównych zadań, które należy wykonać, aby dodać niestandardowe miejsce przechowywania.
+Interfejs API raportowania elektronicznego pozwala rozszerzyć listę lokalizacji, w których można przechowywać dokumenty generowane przez funkcję raportowania elektronicznego. Ten artykuł zawiera przegląd głównych zadań, które należy wykonać, aby dodać niestandardowe miejsce przechowywania.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -118,7 +118,7 @@ Zdarzenie **AttachingFile()** jest wywoływane po przetworzeniu następujących 
 ## <a name="configure-an-er-destination"></a>Konfigurowanie miejsca docelowego raportowania elektronicznego
 
 1. Skonfiguruj zarchiwizowane miejsce docelowe dla jednego z wcześniej wspomnianych elementów raportowania elektronicznego (plik, folder, scalanie lub załącznik), który został utworzony lub zaimportowany. Aby uzyskać instrukcje, zobacz [Konfigurowanie miejsc docelowych dla raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11).
-2. Użyj wcześniej typu dokumentu dodanego wcześniej do skonfigurowanego miejsca docelowego. (Na przykład w tym temacie, typem dokumentu jest **FileX**.)
+2. Użyj wcześniej typu dokumentu dodanego wcześniej do skonfigurowanego miejsca docelowego. (Na przykład w tym artykule typem dokumentu jest **FileX**.)
 
 ![Okno dialogowe Ustawienia lokalizacji docelowej.](media/er-extend-file-storages-destination.png)
 

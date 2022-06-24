@@ -1,6 +1,6 @@
 ---
 title: Wynajem składnika majątku — strona główna
-description: Ten temat stanowi przegląd dokumentacji dotyczącej wynajmu składnika majątku i łączy do określonych tematów.
+description: Ten artykuł stanowi przegląd dokumentacji dotyczącej wynajmu składników aktywów i linków do określonych tematów.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -17,27 +17,27 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: c82c54b08a7d4c603d1246c598abacc51eb88839
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 014c34791f280ca1d3d9154cd0870a73cc43d26b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710393"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889157"
 ---
 # <a name="asset-leasing-home-page"></a>Wynajem składnika majątku — strona główna
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera listę tematów pomocy dostępnych dla wynajmu składnika majątku oraz łącza do określonych tematów. 
+Ten artykuł zawiera listę tematów pomocy dostępnych dla wynajmu składników aktywów oraz linki do określonych tematów. 
 
 Wynajem składnika majątku jest zaawansowaną funkcją służącą do zarządzania, śledzenia i automatyzowania transakcji finansowych wynajmowanych składników majątku w Microsoft Dynamics 365 Finance. Wynajem składników majątku jest zgodny z międzynarodowymi standardami rachunkowości (MSSF 16) i standardami finansowymi (ASC 842). Wynajem składników aktywów wyszukuje i przetwarza informacje o dzierżawie oraz ułatwia generowanie wpisy w arkuszu w cyklu wynajmu od początkowego rozpoznania, miesięcznych wpisów w arkuszu, do utraty ważności zakończenia wynajmu.
 
 Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z obszaru roboczego **Zarządzanie funkcjami**, aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. W obszarze roboczym **Zarządzanie funkcjami** znajdź i wybierz funkcję o nazwie **Wynajem składnika majątku**, a następnie wybierz przycisk **Włącz teraz**.
 
 ## <a name="asset-leasing-topics"></a>Tematy wynajmu składnika majątku
-Poniższy temat jest dostępny, aby ułatwić konfigurowanie i używanie wynajmu składnika majątku. 
+Poniższy artykuł jest dostępny, aby ułatwić konfigurowanie i używanie wynajmu składnika aktywów. 
 
- - [Rozpoczynanie wynajmu składnika majątku](asset-leasing-quick-start.md) — ten temat opisuje ogólne możliwości wynajmu składnika majątku oraz określa terminy używane w oprogramowaniu oraz w dokumentacji.
+ - [Rozpoczynanie wynajmu składnika aktywów](asset-leasing-quick-start.md) — ten artykuł opisuje ogólne możliwości wynajmu składnika aktywów oraz określa terminy używane w oprogramowaniu oraz w dokumentacji.
  
  ### <a name="set-up-asset-leasing"></a>Konfigurowanie wynajmu składnika majątku
  Ta grupa tematów ułatwia konfigurowanie wynajmu składnika majątku w sposób optymalny dla sytuacji biznesowej organizacji.  
@@ -77,7 +77,7 @@ Ta grupa tematów opisuje proces dodawania wynajmów, tworzenia faktur płatnoś
  - [Zarządzanie wynajmem za pośrednictwem struktury importu wynajmów](manage-leases-thru-imprt-framewrk.md)
  
 ### <a name="asset-leasing-reporting"></a>Raportowanie wynajmu składników majątku
-W tym temacie opisano raporty dostępne dla wynajmu składnika majątku. 
+W tym artykule opisano raporty dostępne dla wynajmu składnika aktywów. 
 
  - [Raporty dotyczące wynajmu składników majątku](asset-leasing-rprts.md)
  

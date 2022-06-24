@@ -1,6 +1,6 @@
 ---
 title: 150% amortyzacja degresywna
-description: Ten temat przedstawia omówienie metody amortyzacji 150 procent — amortyzacja degresywna.
+description: Ten artykuł przedstawia omówienie metody amortyzacji 150 procent — amortyzacja degresywna.
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 744461fe372cc1c048fe20599ff7b078d19c0f53
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: f3bccb9d64851901d43b55887bb66c9b1b4e5a70
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710982"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870228"
 ---
 # <a name="150-percent-reducing-balance-depreciation"></a>150% amortyzacja degresywna
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat przedstawia omówienie metody amortyzacji 150 procent — amortyzacja degresywna.
+Ten artykuł przedstawia omówienie metody amortyzacji 150 procent — amortyzacja degresywna.
 
 Po skonfigurowaniu profilu amortyzacji środków trwałych i wybraniu wartości **Degresywna 150%** w polu **Metoda** na stronie **Profile amortyzacji** amortyzacja środków trwałych, które są przypisane do tego profilu amortyzacji, ma taką samą wartość procentową dla każdego okresu amortyzacji. Wartość procentowa jest obliczana na podstawie okresu użytkowania środków. Na przykład, jeżeli okres użytkowania środków wynosi pięć lat, wartość procentowa zostanie obliczona jako 30% (150%/5). 
 
@@ -41,7 +41,7 @@ Domyślna wartość to **Kalendarzowy**. Wybór określa opcje dostępne w polu 
 
 W polu **Rok amortyzacji** możesz zachować wartość domyślną — **Kalendarzowy** . 
 
-Opcja **Kalendarzowy** aktualizuje podstawę amortyzacji w dniu 1 stycznia każdego roku. Podstawą amortyzacji jest zazwyczaj wartość księgową netto minus wartość likwidacji. W poniższych przykładach podstawa amortyzacji stanowi kolejny numer w pierwszym wyrażeniu w obliczeniach w kolumnie Obliczenia. 
+Opcja **Kalendarzowy** aktualizuje podstawę amortyzacji w dniu 1 stycznia każdego roku. Podstawą amortyzacji jest zazwyczaj wartość księgową netto minus wartość likwidacji. W poniższych przykładach w dalszej części tego artykułu podstawa amortyzacji stanowi kolejny numer w pierwszym wyrażeniu w obliczeniach w kolumnie Obliczenia. 
 
 W przypadku wybrania opcji **Kalendarzowy** jako rok amortyzacji, dostępne są następujące opcje są dostępne w polu **Częstotliwość okresu**:
 

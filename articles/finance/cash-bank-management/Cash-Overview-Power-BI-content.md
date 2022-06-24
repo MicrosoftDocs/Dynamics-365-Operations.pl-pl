@@ -1,6 +1,6 @@
 ---
-title: Pakiet zawartości Przegląd środków pieniężnych dla usługi Power BI
-description: W tym temacie opisano pakiet zawartość Przegląd środków pieniężnych dostępny dla usługi Power BI. Wyjaśniono, jak uzyskać dostęp do raportów oferowanych w pakiecie, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
+title: Przegląd środków pieniężnych — zawartość usługi Power BI
+description: W tym artykule opisano pakiet zawartość Przegląd środków pieniężnych dostępny dla usługi Power BI. Wyjaśniono, jak uzyskać dostęp do raportów oferowanych w pakiecie, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
 author: panolte
 ms.date: 07/16/2020
 ms.topic: overview
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: bb44dd8203b87ac5fb1f7977b865522faa6ebaeb
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 4f841ec5b17c2271010a95f45188832ee5917556
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710285"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910237"
 ---
 # <a name="cash-overview-power-bi-content"></a>Przegląd środków pieniężnych — zawartość usługi Power BI
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano pakiet zawartość **Przegląd środków pieniężnych** dostępny dla usługi Microsoft Power BI. Wyjaśniono, jak uzyskać dostęp do raportów oferowanych w pakiecie, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
+W tym artykule opisano zawartość pakietu **Przegląd środków pieniężnych** dostępny dla usługi Microsoft Power BI. Wyjaśniono, jak uzyskać dostęp do raportów oferowanych w pakiecie, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
 
 ## <a name="overview"></a>Przegląd
 

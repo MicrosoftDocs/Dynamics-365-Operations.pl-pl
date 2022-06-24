@@ -1,6 +1,6 @@
 ---
 title: Tworzenia kodów opłat
-description: W tym temacie opisano sposób konfigurowania kodów opłat zarówno dla rozrachunków z dostawcami, jak i rozrachunków z odbiorcami.
+description: W tym artykule opisano sposób konfigurowania kodów opłat zarówno dla rozrachunków z dostawcami, jak i rozrachunków z odbiorcami.
 author: rachel-profitt
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e8526fa0f3c6e3d1b545703f6e6ef72f558b57bd
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: d65952cb989672e4eac2dd6101ee9c7c9424daed
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735035"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866091"
 ---
 # <a name="create-charges-codes"></a>Tworzenia kodów opłat
 
-W tym temacie opisano sposób konfigurowania kodów opłat zarówno dla rozrachunków z dostawcami, jak i rozrachunków z odbiorcami. Jeśli organizacja wymaga, aby oprócz towarów w zamówieniu sprzedaży lub zamówieniu zakupu kwoty sprzedaży lub zakupu było śledzone, można do tego celu użyć kodów opłat. Na przykład opłaty frachtowe i ubezpieczenie są opłacane w zamówieniu zakupu i kwoty te są oddzielnie pozycjami w zamówieniu zakupu. W tym przypadku można określić, czy kwoty są księgowane na kontach wydatków czy dodawane do kosztu towarów.
+W tym artykule opisano sposób konfigurowania kodów opłat zarówno dla rozrachunków z dostawcami, jak i rozrachunków z odbiorcami. Jeśli organizacja wymaga, aby oprócz towarów w zamówieniu sprzedaży lub zamówieniu zakupu kwoty sprzedaży lub zakupu było śledzone, można do tego celu użyć kodów opłat. Na przykład opłaty frachtowe i ubezpieczenie są opłacane w zamówieniu zakupu i kwoty te są oddzielnie pozycjami w zamówieniu zakupu. W tym przypadku można określić, czy kwoty są księgowane na kontach wydatków czy dodawane do kosztu towarów.
 
 ## <a name="set-up-charges-codes-for-accounts-receivable"></a>Ustaw kody opłat dla rozrachunków z odbiorcami
 

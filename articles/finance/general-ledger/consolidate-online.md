@@ -1,6 +1,6 @@
 ---
 title: Konsolidacje finansowe online
-description: W tym temacie opisano funkcje konsolidacji finansowych online dostępne w księdze głównej.
+description: W tym artykule opisano funkcje konsolidacji finansowych online dostępne w księdze głównej.
 author: aprilolson
 ms.date: 07/09/2018
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: d5848960ec5e30c1356a93ca4cb6545cec9e39de
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: f6c489156ca869e02ba6387c3464cc1e1a248d9f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716727"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848557"
 ---
 # <a name="online-financial-consolidations"></a>Konsolidacje finansowe online
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano funkcje konsolidacji finansowych online dostępne w księdze głównej. Przed przeczytaniem tego tematu należy koniecznie przeczytać temat [Omówienie konsolidacji finansowych i przeliczania walut](financial-consolidations-currency-translation.md).
+W tym artykule opisano funkcje konsolidacji finansowych online dostępne w księdze głównej. Przed przeczytaniem tego artykułu należy koniecznie przeczytać artykuł [Omówienie konsolidacji finansowych i przeliczania walut](financial-consolidations-currency-translation.md).
 
 Po ukończeniu konfigurowania wprowadź informacje o konsolidacji na stronie **Konsolidacja [Online]**. Po zakończeniu można kliknąć przycisk **OK** lub **Zadanie wsadowe**, aby wykonać przetwarzanie konsolidacji.
 
@@ -90,7 +90,7 @@ Na karcie **Przeliczanie walut** zdefiniuj firmę, konto, typ kursu wymiany i ku
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-Aby uzyskać więcej informacji o konsolidacjach i przeliczaniu walut, zobacz temat nadrzędny tego tematu — [Omówienie konsolidacji finansowych i przeliczania walut](./financial-consolidations-currency-translation.md).
+Aby uzyskać więcej informacji o konsolidacjach i przeliczaniu walut, zobacz artykuł nadrzędny tego artykułu — [Omówienie konsolidacji finansowych i przeliczania walut](./financial-consolidations-currency-translation.md).
 
 Aby uzyskać informacje o scenariuszach, w których mogą być tworzone skonsolidowane sprawozdania finansowe, zobacz [Generowanie skonsolidowanych sprawozdań finansowych](./generating-consolidated-financial-statements.md).
 

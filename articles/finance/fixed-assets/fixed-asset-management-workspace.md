@@ -1,6 +1,6 @@
 ---
 title: Obszar roboczy Zarządzanie środkami trwałymi
-description: Ten temat zawiera informacje o obszarze roboczym Zarządzanie środkami trwałymi. Ten obszar roboczy pokazuje informacje związane z środkami trwałymi wprowadzonymi w systemie. Zawiera widoki podsumowania i analizy.
+description: Ten artykuł zawiera informacje o obszarze roboczym Zarządzanie środkami trwałymi. Ten obszar roboczy pokazuje informacje związane z środkami trwałymi wprowadzonymi w systemie. Zawiera widoki podsumowania i analizy.
 author: moaamer
 ms.date: 01/12/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 37f9f6be2fa3594b96313f4f72b96b52ca798c6a
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 95b45a91cd201a6d3a4817c315053e98a7693e05
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720063"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894063"
 ---
 # <a name="fixed-asset-management-workspace"></a>Obszar roboczy Zarządzanie środkami trwałymi
 

@@ -1,6 +1,6 @@
 ---
-title: Amortyzacja liniowa za okres użytkowania
-description: Ten temat zawiera omówienie metody amortyzacji Liniowy okres użytkowania.
+title: Amortyzację za liniowy okres użytkowania
+description: Ten artykuł zawiera omówienie metody amortyzacji Liniowy okres użytkowania.
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d39bfea3f222d83d3b3d47e4ba931521b8e1aed0
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 8766d38958ccb17142132fb78d04368f1b73af71
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726677"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896471"
 ---
-# <a name="straight-line-service-life-depreciation"></a>Amortyzacja liniowa za okres użytkowania
+# <a name="straight-line-service-life-depreciation"></a>Amortyzację za liniowy okres użytkowania
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera omówienie metody amortyzacji Liniowy okres użytkowania.
+Ten artykuł zawiera omówienie metody amortyzacji Liniowy okres użytkowania.
 
 Po skonfigurowaniu profilu amortyzacji środków trwałych i wybraniu opcji Liniowy okres użytkowania w polu Metoda na stronie Profile amortyzacji amortyzacja środków trwałych z przypisanym profilem amortyzacji są amortyzowane będzie obliczana na podstawie całkowitego okresu użytkowania środków. Jest to zwykle taka sama kwota w każdym okresie amortyzacji. 
 
@@ -41,7 +41,7 @@ Można wybrać Kalendarzowy lub Obrachunkowy w polu Rok amortyzacji na stronie P
 
 Jeśli zostanie wybrana opcja Kalendarz, przyjmowany jest rok od 1 stycznia do 31 grudnia, nawet jeżeli okresy w kalendarzu obrachunkowym są inne. 
 
-Opcja Kalendarz aktualizuje podstawę amortyzacji (zwykle wartość księgowa netto pomniejszona o wartość odzyskana) 1. stycznia każdego roku. W poniższych przykładach podstawa amortyzacji stanowi kolejny numer w pierwszym wyrażeniu w obliczeniach w kolumnie Obliczenia. 
+Opcja Kalendarz aktualizuje podstawę amortyzacji (zwykle wartość księgowa netto pomniejszona o wartość odzyskana) 1. stycznia każdego roku. W poniższych przykładach w dalszej części tego artykułu podstawa amortyzacji stanowi kolejny numer w pierwszym wyrażeniu w obliczeniach w kolumnie Obliczenia. 
 
 Po wybraniu opcji Kalendarz dostępne są następujące opcje w polu Częstotliwość okresu, które określa daty księgowania naliczenia amortyzacji oraz kwoty w całym roku kalendarzowym:
 - Roczne — księgowanie kwoty 31 grudnia.

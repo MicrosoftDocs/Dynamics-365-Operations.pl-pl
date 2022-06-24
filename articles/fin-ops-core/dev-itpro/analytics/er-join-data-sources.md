@@ -1,6 +1,6 @@
 ---
 title: Aby pobrać dane z wielu tabel aplikacji, należy zastosować SPRĘŻENIE źródeł danych w mapowaniach modeli ER
-description: W tym temacie wyjaśniono, jak można używać SPRĘŻENIA źródeł danych wielu firm w Raportowaniu elektronicznym (ER).
+description: W tym artykule wyjaśniono, jak można używać źródeł danych typu JOIN w Raportowaniu elektronicznym (ER).
 author: NickSelin
 ms.date: 04/26/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: Release 10.0.1
-ms.openlocfilehash: c9a06c048e98676e30a6652cad6634c2e13531d4ebc6d35f325f4c7153cd82ae
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0994c19ad79a3e73dc787ef8d82716db637f9ab0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723220"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845549"
 ---
 # <a name="use-join-data-sources-to-get-data-from-multiple-application-tables-in-electronic-reporting-er-model-mappings"></a>Aby pobrać dane z wielu tabel aplikacji, należy zastosować SPRĘŻENIE źródeł danych w mapowaniach modeli Raportowania elektronicznego (ER)
 
@@ -40,15 +40,15 @@ W skonfigurowanym źródle danych **sprężenia**, gdy wszystkie źródła danyc
 > [!NOTE]
 > Użycie funkcji **VALUEIN** w wyrażeniach ER określających warunki dołączania rekordów w źródłach danych typu sprzężenia nie jest jeszcze obsługiwane. Odwiedź stronę [Projektant formuł w module Raportowanie elektroniczne (ER)](general-electronic-reporting-formula-designer.md), aby uzyskać szczegółowe informacje na temat tej funkcji.
 
-Wykonaj przykład z tego tematu, aby dowiedzieć się więcej na temat tej funkcji.
+Wykonaj przykład z tego artykułu, aby dowiedzieć się więcej na temat tej funkcji.
 
 ## <a name="example-use-join-data-sources-in-er-model-mappings"></a>Przykład: używanie źródeł danych SPRZĘŻENIA w mapowaniach modelu ER
 
-Poniższe kroki wyjaśniają, jak administrator systemu lub projektant raportu elektronicznego może skonfigurować mapowanie modelu Raportowania elektronicznego (ER) w celu pobrania danych z wielu tabel aplikacji jednocześnie, używając źródeł danych typu **Sprzężenia** do poprawy wydajności dostępu do danych. Te kroki można wykonać dla dowolnej firmy należącej do Dynamics 365 Finance lub Regulatory Configuration Services (RCS).
+Poniższe kroki wyjaśniają, jak administrator systemu lub projektant raportu elektronicznego może skonfigurować mapowanie modelu Raportowania elektronicznego (ER) w celu pobrania danych z wielu tabel aplikacji jednocześnie, używając źródeł danych typu **Sprzężenia** do poprawy wydajności dostępu do danych. Te kroki można wykonać dla dowolnej firmy w aplikacji Dynamics 365 Finance lub Regulatory Configuration Services (RCS).
 
 ### <a name="prerequisites"></a>Wymagania wstępne
 
-Aby wykonać przykłady opisane w tym temacie, należy mieć dostęp do jednej z następujących czynności, w zależności od tego, jaka usługa jest używana do konkurowania następujących kroków:
+Aby wykonać przykłady opisane w tym artykule, należy mieć dostęp do jednej z następujących czynności, w zależności od tego, jaka usługa jest używana do konkurowania następujących kroków:
 
 **Dostęp do Finance w jednej z następujących ról:**
 
@@ -257,9 +257,9 @@ Przejrzyj ustawienia składnika mapowania modelu ER. Składnik jest skonfigurowa
 
 ## <a name="limitations"></a>Ograniczenia
 
-Jak widać z przykładu w tym temacie, źródło danych **SPRZĘŻENIE** można utworzyć na podstawie kilku źródeł danych, które opisują indywidualne zestawy danych rekordów, które muszą ostatecznie zostać sprzężone. Te źródła danych można skonfigurować przy użyciu wbudowanej funkcji ER [FILTER](er-functions-list-filter.md). Podczas konfigurowania źródła danych w taki sposób, aby było wywoływane poza źródłem danych **SPRZĘŻENIE**, można wykorzystać zakresy firm jako część warunku wyboru danych. Początkowa implementacja źródła danych **SPRZĘŻENIE** nie obsługuje źródeł danych tego typu. Na przykład w przypadku wywołania źródła danych opartego na funkcji [FILTER](er-functions-list-filter.md) w zakresie wykonania źródła danych **SPRZĘŻENIE**, jeśli wywołane źródło danych zawiera zakresy firm w ramach warunku wyboru danych, wystąpi wyjątek.
+Jak widać z przykładu w tym temacie, źródło danych typu **JOIN** można utworzyć na podstawie kilku źródeł danych, które opisują indywidualne zestawy danych rekordów, które muszą ostatecznie zostać sprzężone. Te źródła danych można skonfigurować przy użyciu wbudowanej funkcji ER [FILTER](er-functions-list-filter.md). Podczas konfigurowania źródła danych w taki sposób, aby było wywoływane poza źródłem danych **SPRZĘŻENIE**, można wykorzystać zakresy firm jako część warunku wyboru danych. Początkowa implementacja źródła danych **SPRZĘŻENIE** nie obsługuje źródeł danych tego typu. Na przykład w przypadku wywołania źródła danych opartego na funkcji [FILTER](er-functions-list-filter.md) w zakresie wykonania źródła danych **SPRZĘŻENIE**, jeśli wywołane źródło danych zawiera zakresy firm w ramach warunku wyboru danych, wystąpi wyjątek.
 
-W aplikacji Microsoft Dynamics 365 Finance w wersji 10.0.12 (sierpień 2020 r.) można stosować zakresy firm jako część warunku wyboru danych w źródłach danych opartych na funkcji [FILTER](er-functions-list-filter.md), które są wywoływane w zakresie wykonania źródła danych **SPRZĘŻENIE**. Z powodu ograniczeń konstruktora [zapytań](../dev-ref/xpp-library-objects.md#query-object-model) aplikacji zakresy firm są obsługiwane tylko dla pierwszego źródła danych dla źródła danych **SPRZĘŻENIE**.
+W aplikacji Microsoft Dynamics 365 Finance w wersji 10.0.12 (sierpień 2020 r.) można stosować zakresy firm jako część warunku wyboru danych w źródłach danych opartych na funkcji [FILTER](er-functions-list-filter.md), które są wywoływane w zakresie wykonania źródła danych **JOIN**. Z powodu ograniczeń konstruktora [zapytań](../dev-ref/xpp-library-objects.md#query-object-model) aplikacji zakresy firm są obsługiwane tylko dla pierwszego źródła danych dla źródła danych **SPRZĘŻENIE**.
 
 ### <a name="example"></a>Przykład
 

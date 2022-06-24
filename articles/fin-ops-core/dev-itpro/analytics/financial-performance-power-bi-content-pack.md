@@ -1,6 +1,6 @@
 ---
 title: Rozwiązanie PowerBI.com Wyniki finansowe
-description: W tym temacie opisano pakiet zawartość Wyniki finansowe dostępny dla rozwiązania PowerBI.com.
+description: W tym artykule opisano pakiet zawartość Wyniki finansowe dostępny dla rozwiązania PowerBI.com.
 author: kweekley
 ms.date: 05/09/2018
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1ca8338473b2efd91b6570e140ee1def3fa93df14dcf57273f601efb7f548d08
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fcbe41d113ee41734020546388851afb7fc27bbf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767810"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910423"
 ---
 # <a name="financial-performance-powerbicom-solution"></a>Rozwiązanie PowerBI.com Wyniki finansowe
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> To rozwiązanie PowerBI.com zostało zaniechane, jak to zostało udokumentowane w [Usunięte i przestarzałe funkcje w Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> To rozwiązanie PowerBI.com zostało zaniechane, jak to zostało udokumentowane w [Usuwanie lub przestarzałe funkcje w Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
-W tym temacie opisano pakiet zawartość **Wyniki finansowe** dostępny dla rozwiązania PowerBI.com. Omówiono dostępny pulpit nawigacyjny i raporty oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania rozwiązania.
+W tym artykule opisano zawartość pakietu **Wyniki finansowe** dostępnego dla rozwiązania PowerBI.com. Omówiono dostępny pulpit nawigacyjny i raporty oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania rozwiązania.
 
 ## <a name="main-account-setup"></a>Konfiguracja konta głównego
 Ponieważ organizacje chcą, aby kwoty zobowiązań i przychodów były wyświetlane jako kwoty dodatnie w raportach, ważne jest odpowiednie skonfigurowanie kont głównych. Aby kwoty na tych kontach głównych były wyświetlane jako dodatnie, typ konta głównego musi być ustawiony jako **Pasywa** lub **Przychód**. Gdy są używane te typy kont, sprawozdawczość za pośrednictwem usługi Power BI będzie powodowała odwracanie znaków i wyświetlanie kwot jako dodatnich.

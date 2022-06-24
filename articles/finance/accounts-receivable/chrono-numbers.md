@@ -1,6 +1,6 @@
 ---
 title: Chronologicznie numerowanie dokumentów i załączników
-description: W tym temacie wyjaśniono, jak skonfigurować i używać numerów chronologicznych dla odpowiednich dokumentów i powiązanych faktur obcych.
+description: W tym artykule wyjaśniono, jak skonfigurować i używać numerów chronologicznych dla odpowiednich dokumentów i powiązanych faktur obcych.
 author: ikond
 ms.date: 02/01/2021
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-15
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 0ce1afdbd31a78611e6b51dd93f7159d684c97cb
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 6baf307406982e8f72acc0d02f047dbc7c63a5ed
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692681"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876391"
 ---
 # <a name="numbering-documents-and-vouchers-chronologically"></a>Chronologicznie numerowanie dokumentów i załączników
 
 [!include [banner](../includes/banner.md)]
 
 
-W niektórych krajach istnieje prawny wymóg numeracji dokumentów i powiązanych załączników w porządku chronologicznym. Chronologia musi być obsługiwana według okresów. Wszystkie numery należące do poprzednich okresów muszą być mniejsze od numerów należących do późniejszych okresów. Aby spełnić to wymaganie, zaimplementowano funkcje numerowania chronologicznego. W tym temacie wyjaśniono, jak skonfigurować i używać numerów chronologicznych dla odpowiednich dokumentów i powiązanych faktur obcych.
+W niektórych krajach istnieje prawny wymóg numeracji dokumentów i powiązanych załączników w porządku chronologicznym. Chronologia musi być obsługiwana według okresów. Wszystkie numery należące do poprzednich okresów muszą być mniejsze od numerów należących do późniejszych okresów. Aby spełnić to wymaganie, zaimplementowano funkcje numerowania chronologicznego. W tym artykule wyjaśniono, jak skonfigurować i używać numerów chronologicznych dla odpowiednich dokumentów i powiązanych faktur obcych.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 

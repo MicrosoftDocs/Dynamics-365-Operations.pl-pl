@@ -1,6 +1,6 @@
 ---
 title: Pojęcie firmy w usługach Dataverse
-description: W tym temacie opisano integrację danych firmy między programami Finanse i Działania i Dataverse.
+description: W tym artykule opisano integrację danych firmy między aplikacjami finansowymi i operacyjnymi oraz usługą Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 08/04/2020
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 3657e41363ca6c1ce8eabfeaf3ba6da9b93f5e2a
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 11355031714b7e046f70bd5840297d66aa7d32e0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061033"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873186"
 ---
 # <a name="company-concept-in-dataverse"></a>Pojęcie firmy w usługach Dataverse
 
@@ -49,7 +49,7 @@ Z powodu tej konfiguracji każdy wiersz związany firmą USMF będą własności
 
 Jak pokazano na powyższej ilustracji, to mapowanie 1:1 między jednostką biznesową, firmą i zespołem jest tylko punktem początkowym. W tym przykładzie nowa jednostka biznesowa „Europa” jest tworzona ręcznie w Dataverse jako element nadrzędny zarówno dla DEMF, jak i ESMF. Ta nowa główna jednostka biznesowa nie ma związku z podwójnym zapisem. Jednak może służyć do zapewnienia członkom zespołu „EUR Sales” dostępu do danych konta zarówno w DEMF, jak i ESMF, ustawiając widoczność danych na **Nadrzędna/Podrzędna jednostka biznesowa** w skojarzonej roli zabezpieczeń.
 
-Ostatnim tematem do omówienia jest to, w jaki sposób podwójny zapis określa zespół właściciela, do którego ma przypisać wiersze. To zachowanie jest kontrolowane przez kolumnę **Domyślny zespół właściciela** w wierszu cdm\_Company. Kiedy w wierszu cdm\_Company jest włączony podwójny zapis, wtyczka automatycznie tworzy skojarzoną jednostkę biznesową i zespół właściciela (jeśli jeszcze nie istnieje) i ustawia kolumnę **Domyślny zespół właściciela**. Administrator może zmienić wartość tej kolumny na inną. Jednak administrator nie może wyczyścić kolumny, dopóki w tabeli jest włączony podwójny zapis.
+Ostatnim artykułem do omówienia jest to, w jaki sposób podwójny zapis określa zespół właściciela, do którego ma przypisać wiersze. To zachowanie jest kontrolowane przez kolumnę **Domyślny zespół właściciela** w wierszu cdm\_Company. Kiedy w wierszu cdm\_Company jest włączony podwójny zapis, wtyczka automatycznie tworzy skojarzoną jednostkę biznesową i zespół właściciela (jeśli jeszcze nie istnieje) i ustawia kolumnę **Domyślny zespół właściciela**. Administrator może zmienić wartość tej kolumny na inną. Jednak administrator nie może wyczyścić kolumny, dopóki w tabeli jest włączony podwójny zapis.
 
 > [!div class="mx-imgBorder"]
 ![Domyślna kolumna zespołu będącego właścicielem.](media/dual-write-default-owning-team.jpg)

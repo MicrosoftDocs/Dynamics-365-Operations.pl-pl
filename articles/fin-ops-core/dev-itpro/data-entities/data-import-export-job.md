@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74430aadc661a49e330960135ce7b0912079f79b
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 1407c6def22b9759723e49fb2fa6d4d68f180891
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644469"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860172"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Omówienie zadań importowania i eksportowania danych
 
@@ -29,7 +29,7 @@ ms.locfileid: "8644469"
 Obszar roboczy **Zarządzanie danymi** umożliwia tworzenie i zarządzanie danymi importu i eksportu zadań. Domyślne proces importowania i eksportowania danych tworzy tabelę przemieszczania dla każdej jednostki w docelowej bazie danych. Tabele tymczasowe umożliwiają sprawdzenie, czyszczenie lub konwersję danych przed ich przeniesieniem.
 
 > [!NOTE]
-> W tym temacie założono, że znasz koncepcję [jednostek danych](data-entities.md).
+> W tym artykule założono, że znasz koncepcję [jednostek danych](data-entities.md).
 
 ## <a name="data-importexport-process"></a>Proces importu/eksportu danych
 Poniżej przedstawiono kroki importowania lub eksportowania danych.
@@ -48,7 +48,7 @@ Poniżej przedstawiono kroki importowania lub eksportowania danych.
 5. Sprawdź, czy zadanie zostało wykonane zgodnie oczekiwaniami, przeglądając historię zadań.
 6. Wyczyść tabele przemieszczania.
 
-Pozostałe sekcje tego tematu zawierają szczegółowe informacje o każdym kroku procesu.
+Pozostałe sekcje tego artykułu zawierają szczegółowe informacje o każdym kroku procesu.
 
 > [!NOTE]
 > Aby odświeżyć formularz importu/eksportu danych i zobaczyć aktualny postęp, użyj ikony odświeżania formularza. Nie zalecamy odświeżania na poziomie przeglądarki, ponieważ spowoduje to przerwanie wszystkich zadań importu/eksportu, które nie są wykonywane wsadowo.

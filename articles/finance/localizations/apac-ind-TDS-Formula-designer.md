@@ -1,6 +1,6 @@
 ---
 title: Projektant formuł dla obliczeń TDS
-description: Ten temat zawiera przykład obliczania podatku potrąconego w źródle (TDS) na podstawie formuły zdefiniowanej dla każdego kodu podatku TDS w grupie TDS dołączonej do transakcji.
+description: Ten artykuł zawiera przykład obliczania podatku potrąconego w źródle (TDS) na podstawie formuły zdefiniowanej dla każdego kodu podatku TDS w grupie TDS dołączonej do transakcji.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: e60db55fd3bbcfb8dc34670b3bbbd39336b04efb
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 1196f7258c898a55f3f29ddce7457e6f527185d8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720091"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889869"
 ---
 # <a name="formula-designer-for-tds-calculations"></a>Projektant formuł dla obliczeń TDS
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie popisano przykład obliczania podatku potrąconego w źródle (TDS) na podstawie formuły zdefiniowanej dla każdego kodu podatku TDS. Kody podatków TDS są definiowane w grupie TDS dołączonej do transakcji. Przed zaprojektowanie formuł TDS należy wykonać podstawowe ustawienia wymagane dla identyfikatorów TDS, tak jak podano w poniższych krokach. 
+W tym artykule popisano przykład obliczania podatku potrąconego w źródle (TDS) na podstawie formuły zdefiniowanej dla każdego kodu podatku TDS. Kody podatków TDS są definiowane w grupie TDS dołączonej do transakcji. Przed zaprojektowanie formuł TDS należy wykonać podstawowe ustawienia wymagane dla identyfikatorów TDS, tak jak podano w poniższych krokach. 
 
 - Skonfiguruj grupy składników TDS za pomocą strony **Grupy potrąconych zaliczek na podatek**. 
 - Skonfiguruj składniki TDS i dołącz do składników TDS grupę składników TDS, korzystając ze strony **Składników potrąconej zaliczki na podatek**. 

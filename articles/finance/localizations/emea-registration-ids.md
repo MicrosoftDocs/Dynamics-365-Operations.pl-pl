@@ -1,6 +1,6 @@
 ---
 title: Identyfikatory rejestracji
-description: Ten temat zawiera informacje o konfigurowaniu i używaniu identyfikatorów rejestracyjnych.
+description: Ten artykuł zawiera informacje o konfigurowaniu i używaniu identyfikatorów rejestracyjnych.
 author: ShylaThompson
 ms.date: 11/08/2017
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 544e994a18811995afc64c052a3f97e622529162b8a14b17206c370026b78ac4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 379cf78ece388f738fad8121d5b0adb4434d7905
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782823"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883083"
 ---
 # <a name="registration-ids"></a>Identyfikatory rejestracji
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje o konfigurowaniu i używaniu identyfikatorów rejestracyjnych.
+Ten artykuł zawiera informacje o konfigurowaniu i używaniu identyfikatorów rejestracyjnych.
 
-Wiele krajów i regionów ma róże przepisy i wymagania dotyczące przechowywania numerów lub identyfikatorów rejestracyjnych. Ten temat zawiera omówienie wymaganych ustawień i przetwarzania obsługiwanych typów rejestracji dla podmiotów w różnych krajach/regionach Europy. Wszystkie kraje/regiony mają swoje wymagania dotyczące obsługi różnych funkcji specyficznych dla kraju związanych z numerami rejestracyjnymi nadawanymi przez różne krajowe urzędy. Przykładami numerów rejestracyjnych są numer w powszechnym elektronicznym systemie ewidencji ludności (PESEL), numer identyfikacji podatkowej (NIP) i europejski numer płatnika VAT (europejski identyfikator VAT). Ta funkcja oferuje jednolite środowisko dla wszystkich krajów we wszystkich regionach, uwzględniając specyficzne wymogi niektórych państw europejskich. W poniższych sekcjach opisano cały przepływ informacji używanych do konfigurowania i przetwarzania identyfikatorów rejestracyjnych.
+Wiele krajów i regionów ma róże przepisy i wymagania dotyczące przechowywania numerów lub identyfikatorów rejestracyjnych. Ten artykuł zawiera omówienie wymaganych ustawień i przetwarzania obsługiwanych typów rejestracji dla podmiotów w różnych krajach/regionach Europy. Wszystkie kraje/regiony mają swoje wymagania dotyczące obsługi różnych funkcji specyficznych dla kraju związanych z numerami rejestracyjnymi nadawanymi przez różne krajowe urzędy. Przykładami numerów rejestracyjnych są numer w powszechnym elektronicznym systemie ewidencji ludności (PESEL), numer identyfikacji podatkowej (NIP) i europejski numer płatnika VAT (europejski identyfikator VAT). Ta funkcja oferuje jednolite środowisko dla wszystkich krajów we wszystkich regionach, uwzględniając specyficzne wymogi niektórych państw europejskich. W poniższych sekcjach opisano cały przepływ informacji używanych do konfigurowania i przetwarzania identyfikatorów rejestracyjnych.
 
 ## <a name="registration-type-creation"></a>Tworzenie typu rejestracji
 Przed wprowadzeniem identyfikatora rejestracyjnego należy zdefiniować typy rejestracji dla różnych rodzajów numerów rejestracyjnych używanych przez podmioty. Przejdź do strony **Administrowanie organizacją** &gt; **Globalna książka adresowa** &gt; **Typy rejestracji** &gt; **Typy rejestracji**, na której można tworzyć i obsługiwać typy rejestracji dla dostawców, odbiorców, pracowników i firm w różnych krajach/regionach.
@@ -51,7 +51,7 @@ Kategoria rejestracji to identyfikator rejestracyjny kraju/regionu zatwierdzony 
 |-----------------------|----------------|
 | Typ rejestracji     | Typ rejestracji w określonym kraju/regionie.|
 | Ograniczone do         | Rodzaj ograniczenia stosowany do typu rejestracji podatkowej: Brak, Osoba, Organizacja.|
-| Kategoria rejestracji | Unikatowy identyfikator rejestracyjny dopuszczony do używania w kraju. Pełna lista obsługiwanych kategorii znajduje się w dalszej części tego tematu. |
+| Kategoria rejestracji | Unikatowy identyfikator rejestracyjny dopuszczony do używania w kraju. Pełna lista obsługiwanych kategorii znajduje się w dalszej części tego artykułu. |
 
 ## <a name="enter-registration-ids-for-global-address-book-records"></a>Wprowadzanie identyfikatorów rejestracyjnych dla rekordów globalnej książki adresowej
 
@@ -76,7 +76,7 @@ Globalna książka adresowa (GAB) zawiera skonsolidowane informacje adresowe odb
 Funkcja wyszukiwania rekordów stron na podstawie identyfikatorów rejestracyjnych jest dostępna w formularzach strony, firmy, dostawcy, odbiorcy i pracownika. Kliknij przycisk **Wyszukiwanie identyfikatorów rejestracji**, a zostanie otwarta strona **Kryteria wyszukiwania identyfikatorów rejestracji**. Określ kryteria wyszukiwania i kliknij przycisk **Znajdź**. System wyświetli wybrane rekordy z globalnej książki adresowej oraz odnośne typy rekordów stron.
 
 ## <a name="supported-registration-categories"></a>Obsługiwane kategorie rejestracji
-W poniższej tabeli wymieniono obsługiwane typy rejestracji. Dla użytkowników zaznajomionych z polami rozwiązania Microsoft Dynamics AX 2012 dotyczącymi identyfikatorów rejestracyjnych tabela mapuje również te pola na kategorie rejestracji w Dynamics 365 Finance.
+W poniższej tabeli wymieniono obsługiwane typy rejestracji. Dla użytkowników zaznajomionych z polami systemu Microsoft Dynamics AX 2012 dotyczącymi identyfikatorów rejestracyjnych tabela mapuje również te pola na kategorie rejestracji w aplikacji Dynamics 365 Finance.
 
 | Kategoria rejestracji w programie Finance         |Kraj/region  | Termin/pole w systemie Dynamics AX 2012|
 |---------------------------------------------------------------|---------------------|---------------------------------|

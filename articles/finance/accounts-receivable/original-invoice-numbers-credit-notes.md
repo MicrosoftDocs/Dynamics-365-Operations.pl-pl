@@ -1,6 +1,6 @@
 ---
 title: Odwołania do oryginalnych faktur w fakturach korygujących
-description: W tym temacie wyjaśniono, jak skonfigurować i wydrukować numery oryginalnych faktur w powiązanych fakturach korygujących.
+description: W tym artykule wyjaśniono, jak skonfigurować i wydrukować numery oryginalnych faktur w powiązanych fakturach korygujących.
 author: ilkond
 ms.date: 10/26/2021
 ms.topic: article
@@ -13,26 +13,26 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-19
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c1362bf41416202631dc4b966338e8166b26a67f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ebfeb43aaf137ef336b460f340fbda50f5918d08
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688354"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861539"
 ---
 # <a name="references-to-original-invoices-in-credit-notes"></a>Odwołania do oryginalnych faktur w fakturach korygujących
 
 [!include [banner](../includes/banner.md)]
 
 
-W niektórych krajach i regionach istnieje wymóg prawny, aby wydrukowane noty kredytowe zawierały odniesienia do oryginalnych faktur. W tym temacie wyjaśniono, jak skonfigurować i wydrukować numery oryginalnych faktur w powiązanych fakturach korygujących.
+W niektórych krajach i regionach istnieje wymóg prawny, aby wydrukowane noty kredytowe zawierały odniesienia do oryginalnych faktur. W tym artykule wyjaśniono, jak skonfigurować i wydrukować numery oryginalnych faktur w powiązanych fakturach korygujących.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
 - W obszarze roboczym **Zarządzanie funkcjami** włącz funkcję **Układ faktur kredytowych dla raportów faktur sprzedaży i projektów**. Aby uzyskać więcej informacji, zapoznaj się z tematem [Zarządzanie funkcjami — omówienie](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 - Formaty do drukowania wymaganych dokumentów muszą być skonfigurowane w zarządzaniu drukowaniem.
 
-Funkcje opisane w tym temacie dotyczą następujących dokumentów:
+Funkcje opisane w tym artykule dotyczą następujących dokumentów:
 
 **Rozrachunki z odbiorcami**
 

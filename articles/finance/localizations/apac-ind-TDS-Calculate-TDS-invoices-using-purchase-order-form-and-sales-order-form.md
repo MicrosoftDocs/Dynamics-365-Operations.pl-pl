@@ -1,6 +1,6 @@
 ---
 title: Obliczanie faktur TDS przy użyciu formularza zamówienia zakupu i formularza zamówienia sprzedaży
-description: W tym temacie wymieniono kroki obliczania podatku potrąconego w źródle (TDS) dla różnych typów faktur.
+description: W tym artykule wymieniono kroki obliczania podatku potrąconego w źródle (TDS) dla różnych typów faktur.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 6a7e670c38a1bce6b8f6771b4be49e56e3aa785a
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 72883741ee7eed6b0296736c80dd648c882ae53e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711956"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853293"
 ---
 # <a name="calculate-tds-invoices-using-purchase-order-form-and-sales-order-form"></a>Obliczanie faktur TDS przy użyciu formularza zamówienia zakupu i formularza zamówienia sprzedaży
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wymieniono kroki obliczania podatku potrąconego w źródle (TDS) na różnych typach faktur przy użyciu stron **Zamówienie zakupu**, **Arkusz zakupów**, **Zamówienie zbiorcze** i **Zamówienie sprzedaży**.
+W tym artykule wymieniono kroki obliczania podatku potrąconego w źródle (TDS) na różnych typach faktur przy użyciu stron **Zamówienie zakupu**, **Arkusz zakupów**, **Zamówienie zbiorcze** i **Zamówienie sprzedaży**.
 
 1. Strona ta umożliwia tworzenie zamówienia zakupu, arkusza zakupu, zbiorczego zamówienia zakupu lub zamówienia sprzedaży. Wprowadź wymagane informacje.
 

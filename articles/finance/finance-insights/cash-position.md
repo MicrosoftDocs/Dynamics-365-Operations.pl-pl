@@ -1,6 +1,6 @@
 ---
 title: Stan środków pieniężnych
-description: W tym temacie opisano sposób, w jaki funkcja prognozowania przepływów pieniężnych umożliwia prognozowanie stanu środków pieniężnych w określonym czasie. Opisano tu także opcje, które są dostępne do wyświetlania prognoz dla różnych okresów.
+description: W tym artykule opisano sposób, w jaki funkcja prognozowania przepływów pieniężnych umożliwia prognozowanie stanu środków pieniężnych w określonym czasie. Opisano tu także opcje, które są dostępne do wyświetlania prognoz dla różnych okresów.
 author: ShivamPandey-msft
 ms.date: 12/21/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 1c6d394cb192a88316beb2e8746b558eb8dd184b
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 7581142348d91b3a37cc75cf801e7bfc098cd604
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711667"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870257"
 ---
 # <a name="cash-position"></a>Stan środków pieniężnych
 

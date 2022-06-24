@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 98cb7c2f1f57dacf303e2e9bc7779ce3ede6733e
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c82114f6600345ee5e2eb9c1c0629ae6c8f0b9a7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695880"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877693"
 ---
 # <a name="restrict-editing-of-personal-information"></a>Ogranicz edytowanie informacji osobistych
 
@@ -29,7 +29,7 @@ ms.locfileid: "8695880"
 [!include [applies to](../includes/applies-to-hr.md)]
 [!include [preview feature](./includes/preview-feature.md)]
 
-W tym temacie opisano sposób ograniczenia możliwości edytowania szczegółów kontaktów przez pracowników w Dynamics 365 Human Resources. Możesz chcieć uniemożliwić pracownikom edytowanie niektórych danych kontaktowych, takich jak lokalizacja firmy lub adres e-mail.
+W tym artykule opisano sposób ograniczenia możliwości edytowania szczegółów kontaktów przez pracowników w Dynamics 365 Human Resources. Możesz chcieć uniemożliwić pracownikom edytowanie niektórych danych kontaktowych, takich jak lokalizacja firmy lub adres e-mail.
 
 > [!NOTE]
 > Aby można było korzystać z tej funkcji, należy najpierw włączyć funkcję **(Wersja zapoznawcza) Ogranicz pracownikom możliwość dodawania lub edytowania adresów i informacji kontaktowych w wybranych celach** w Zarządzaniu funkcjami. Aby uzyskać więcej informacji na temat włączania funkcji w wersji zapoznawczej, zobacz temat [Zarządzanie funkcjami](hr-admin-manage-features.md).<br><br>![Włącz funkcje w wersji Preview.](./media/hr-employee-self-service-restrict-enable.png)

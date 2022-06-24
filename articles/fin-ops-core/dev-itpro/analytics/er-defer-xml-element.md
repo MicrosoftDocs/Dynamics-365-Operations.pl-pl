@@ -1,6 +1,6 @@
 ---
-title: Odłóż wykonanie elementów sekwencji XML w formatach ER
-description: W tym temacie wyjaśniono, jak odroczyć wykonanie elementu XML w formacie modułu raportowanie elektroniczne (ER).
+title: Odłóż wykonanie elementów XML w formatach raportowania elektronicznego
+description: W tym artykule wyjaśniono, jak odroczyć wykonanie elementu XML w formacie modułu raportowanie elektroniczne (ER).
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: b804e840b98321ee9e509ea483b360ec42d12880
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 074b14cbb018a8e34b99124b8aaec3a5bdb30be2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323722"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861853"
 ---
 # <a name="defer-the-execution-of-xml-elements-in-er-formats"></a>Odłóż wykonanie elementów sekwencji XML w formatach ER
 
@@ -32,7 +32,7 @@ Za pomocą projektanta operacji w strukturze [elektronicznego modułu sprawozdaw
 
 Włączając opcję <a name="DeferredXmlElementExecution"></a>**Odroczone wykonanie** dla elementu XML w skonfigurowanym formacie, można odroczyć (przełożyć) wykonanie tego elementu. W takim przypadku element nie jest uruchamiany, dopóki nie zostaną uruchomione wszystkie pozostałe elementy jego obiektu nadrzędnego.
 
-Wykonaj przykład z tego tematu, aby dowiedzieć się więcej na temat tej funkcji.
+Wykonaj przykład z tego artykułu, aby dowiedzieć się więcej na temat tej funkcji.
 
 ## <a name="limitations"></a>Ograniczenia
 
@@ -46,7 +46,7 @@ Opcja **Odroczonego wykonania** nie jest obsługiwana dla elementów XML, które
 
 Poniższe kroki wyjaśniają, jak użytkownik w roli Administratora systemu lub konsultanta funkcjonalnego lub raportu elektronicznego [(rola)](../sysadmin/tasks/assign-users-security-roles.md) może skonfigurować format XML, który zawiera element sekwencji, w którym kolejność wykonywania różni się od kolejności w hierarchii formatu.
 
-Kroki można wykonać na danych przykładowej firmy **USMF** w Microsoft Dynamics 365 Finance.
+Kroki można wykonać na danych przykładowej firmy **USMF** w aplikacji Microsoft Dynamics 365 Finance.
 
 ### <a name="prerequisites"></a>Wymagania wstępne
 
@@ -55,7 +55,7 @@ Aby wykonać przykłady opisane w tym temacie, trzeba mieć dostęp do firmy **U
 - Konsultant funkcjonalny raportowania elektronicznego
 - Administrator systemu
 
-Jeśli nie zakończono jeszcze analizy przykładu, w sekcji [Wstrzymaj wykonywanie elementów sekwencji w formatach ER](er-defer-sequence-element.md#Example), pobierz następujące [konfiguracje](general-electronic-reporting.md#Configuration) przykładowego rozwiązania ER.
+Jeśli nie zakończono jeszcze analizy przykładu, w artykule [Wstrzymaj wykonywanie elementów sekwencji w formatach ER](er-defer-sequence-element.md#Example) pobierz następujące [konfiguracje](general-electronic-reporting.md#Configuration) przykładowego rozwiązania ER.
 
 | Opis zawartości            | Nazwa pliku |
 |--------------------------------|-----------|
@@ -95,7 +95,7 @@ Przed rozpoczęciem należy również pobrać i zapisać następującą konfigur
 ### <a name="activate-a-configuration-provider"></a>Aktywuj dostawcę konfiguracji
 
 1. Wybierz kolejno opcje **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
-2. Na stronie **Konfiguracje lokalizacji** w sekcji **Dostawcy konfiguracji** sprawdź, czy [dostawca konfiguracji](general-electronic-reporting.md#Provider) dla przykładowej firmy Litware, Inc.(`http://www.litware.com`) jest wymieniony na liście i czy jest oznaczony jako akywny. Jeśli tego dostawcy konfiguracji nie ma na liście lub jeśli nie jest on oznaczony jako aktywny, wykonaj kroki opisane w temacie [Tworzenia dostawcy konfiguracji i zaznaczanie go jako aktywny](./tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. Na stronie **Konfiguracje lokalizacji** w sekcji **Dostawcy konfiguracji** sprawdź, czy [dostawca konfiguracji](general-electronic-reporting.md#Provider) dla przykładowej firmy Litware, Inc.(`http://www.litware.com`) jest wymieniony na liście i czy jest oznaczony jako akywny. Jeśli tego dostawcy konfiguracji nie ma na liście lub jeśli nie jest on oznaczony jako aktywny, wykonaj kroki opisane w artykule [Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego](./tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
     ![Przykładowa firma Litware Inc. na stronie konfiguracje lokalizacji.](./media/ER-DeferredXml-ElectronicReportingWorkspace.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Włączanie propozycji budżetowych
-description: W tym temacie wyjaśniono, jak włączyć funkcję propozycji budżetu w Finance Insights.
+description: W tym artykule wyjaśniono, jak włączyć funkcję propozycji budżetu w Finance Insights.
 author: ShivamPandey-msft
 ms.date: 02/11/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: c2002dbd480fb520451daf9209423ce64b3239d8
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: f9bcf8042931e31de1cdd59df1820238d7826000
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713960"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899908"
 ---
 # <a name="enable-budget-proposal"></a>Włączanie propozycji budżetowych
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak włączyć funkcję propozycji budżetu w Finance Insights.
+W tym artykule wyjaśniono, jak włączyć funkcję propozycji budżetu w Finance Insights.
 
 1. Otwórz obszar roboczy **Zarządzanie funkcjami** i wykonaj następujące kroki:
 

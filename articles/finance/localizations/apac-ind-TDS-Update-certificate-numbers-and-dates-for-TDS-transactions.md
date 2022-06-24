@@ -1,6 +1,6 @@
 ---
 title: Zaktualizuj numery certyfikatów i daty transakcji TDS
-description: W tym temacie wyjaśniono, jak zaktualizować możliwe do odzyskania numery certyfikatów i daty, które zostały zarejestrowane dla kont dostawców, odbiorców i księgowych dla odliczenia podatku u źródła (TDS).
+description: W tym artykule wyjaśniono, jak zaktualizować możliwe do odzyskania numery certyfikatów i daty, które zostały zarejestrowane dla kont dostawców, odbiorców i księgowych dla odliczenia podatku u źródła (TDS).
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 7f8b5713e8ce3f9e9c89b8b3bc6ea84fe1f0fa54
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 147a27261a4a282550f0bacede78c9edd38b4fe6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724819"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904449"
 ---
 # <a name="update-certificate-numbers-and-dates-for-tds-transactions"></a>Zaktualizuj numery certyfikatów i daty transakcji TDS
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak zaktualizować możliwe do odzyskania numery certyfikatów i daty, które zostały zarejestrowane dla kont dostawców, odbiorców i księgowych dla odliczenia podatku u źródła (TDS). Certyfikaty dla transakcji TDS można wyświetlić na stronie **Certyfikaty, które można odzyskać**. Certyfikaty można aktualizować, korzystając ze strony **Aktualizacja certyfikatów**.
+W tym artykule wyjaśniono, jak zaktualizować możliwe do odzyskania numery certyfikatów i daty, które zostały zarejestrowane dla kont dostawców, odbiorców i księgowych dla odliczenia podatku u źródła (TDS). Certyfikaty dla transakcji TDS można wyświetlić na stronie **Certyfikaty, które można odzyskać**. Certyfikaty można aktualizować, korzystając ze strony **Aktualizacja certyfikatów**.
 
 Wykonaj poniższe czynności, aby zaktualizować numery certyfikatów i daty transakcji TDS.
 

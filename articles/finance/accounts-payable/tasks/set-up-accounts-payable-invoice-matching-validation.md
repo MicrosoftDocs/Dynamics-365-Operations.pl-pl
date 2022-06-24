@@ -1,6 +1,6 @@
 ---
-title: Konfigurowanie sprawdzania poprawności uzgadniania faktur rozrachunków z dostawcami
-description: Ten temat zawiera informacje o tym, jak skonfigurować weryfikację uzgadniania rozrachunków z dostawcami.
+title: Konfigurowanie weryfikacji uzgadniania faktur w module Rozrachunki z dostawcami
+description: Ten artykuł zawiera informacje o tym, jak skonfigurować weryfikację uzgadniania rozrachunków z dostawcami.
 author: abruer
 ms.date: 02/14/2022
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 602666df4cf015791398939a3067a2cae85a12eb
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: 86cc5cf688e3b66cf976fc7f507bd8f8df757612
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182562"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904967"
 ---
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a>Konfigurowanie sprawdzania poprawności uzgadniania faktur rozrachunków z dostawcami
 
@@ -44,7 +44,7 @@ Dostępne są cztery różne typy weryfikacji zgodności.
 5. Zaznacz lub wyczyść pole wyboru **Dopasuj sumy faktur**, aby uzgadniać rzeczywiste sumy faktur z oczekiwanymi sumami.
     * Określ, czy ikona jest wyświetlana, gdy rozbieżność dla uzgadniania faktur przekracza limity tolerancji. Można ustawić wyświetlanie ikony, gdy dodatnia rozbieżność przekracza limity tolerancji lub gdy dodatnia lub ujemna rozbieżność przekracza limity tolerancji.  
     * Przykładowo, tolerancja wynosi 5 procent, a łączna kwota faktury dla zamówienia zakupu to 100. W takim wypadku ikona uzgadniania cen zostanie wyświetlona, jeśli łączna kwota faktury na fakturze przekroczy 105,00. Wybranie opcji  **Jeśli większe lub mniejsze niż dopuszczalna rozbieżność** sprawi, że odpowiednia ikona zostanie również wyświetlona w przypadku kwoty faktury mniejszej niż 95,00.  
-6. W polu **Procent tolerancji sum faktury** wprowadź akceptowalne odchylenie procentowe. Ta wartość jest wartością domyślną dla firmy. Wartość ta może zostać zastąpiona przez określonych dostawców przy użyciu strony **Tolerancje sum faktury**. Aby uzyskać informacje dotyczące sposobu zastąpienia wartości procentowej tolerancji sum faktury dla określonego dostawcy, zapoznaj się z sekcją „Konfigurowanie tolerancji uzgodnienia sum faktur dla dostawców” w dalszej części tego tematu.
+6. W polu **Procent tolerancji sum faktury** wprowadź akceptowalne odchylenie procentowe. Ta wartość jest wartością domyślną dla firmy. Wartość ta może zostać zastąpiona przez określonych dostawców przy użyciu strony **Tolerancje sum faktury**. Aby uzyskać informacje dotyczące sposobu zastąpienia wartości procentowej tolerancji sum faktury dla określonego dostawcy, zapoznaj się z sekcją „Konfigurowanie tolerancji uzgodnienia sum faktur dla dostawców” w dalszej części tego artykułu.
 7. Ustaw **Uzgadnianie cen i ilości**.
 8. W polu **Zasady uzgadniania wierszy** wybierz wartość, która będzie używana jako domyślna zasada dla firmy, z którą pracujesz. Opcja **Niewymagane** oznacza, że nie będzie wymagana żadna weryfikacja zgodności cen poszczególnych wierszy faktury z cenami w zamówieniu zakupu ani ilości na fakturze z ilościami w dokumencie dostawy. Opcja **Uzgadnianie dwuelementowe** oznacza, że jest wymagana weryfikacja wierszy faktury, ale obejmuje tylko dokumenty zamówień zakupu i faktur od dostawcy. Dokument przyjęcia produktów nie jest brany pod uwagę przy sprawdzaniu poprawności uzgadniania. **Uzgadnianie trzyelementowe** oznacza, że cena jednostkowa netto na fakturze zostanie porównana ceną jednostkową netto w zamówienia zakupu, a ilość na dokumencie przyjęcia produktów zostanie porównana z ilością na fakturze.
 9. Aby zezwolić na stosowanie różnych poziomów uzgadniania do towaru, dostawcy, kombinacji dostawców i towarów lub wierszy zamówienia zakupu, należy wybrać wartość w polu **Zezwalaj na zastępowanie zasad uzgadniania**. Zasadę uzgadniania wierszy obowiązującą w firmie można zastąpić dla określonego dostawcy, towaru lub kombinacji dostawcy i towaru na stronie **Zasady uzgadniania**.

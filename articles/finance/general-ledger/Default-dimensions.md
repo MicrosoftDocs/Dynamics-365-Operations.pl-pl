@@ -1,6 +1,6 @@
 ---
 title: Wymiary finansowe i księgowanie
-description: Podczas planowania i konfigurowania planu kont należy wziąć pod uwagę, jak różne składniki będą współpracowały podczas księgowania dokumentu lub arkusza. Te składniki obejmują struktury kont, zaawansowane reguły oraz wymiary bilansowania i stałe. W tym temacie przestawiono poszczególne składniki i opisano sposób ich współdziałania.
+description: Podczas planowania i konfigurowania planu kont należy wziąć pod uwagę, jak różne składniki będą współpracowały podczas księgowania dokumentu lub arkusza. Te składniki obejmują struktury kont, zaawansowane reguły oraz wymiary bilansowania i stałe. W tym artykule przestawiono poszczególne składniki i opisano sposób ich współdziałania.
 author: aprilolson
 ms.date: 08/04/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a612f3b703349e1cffe300b75afd44e72ae63b2c
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: a165c4084a9f2075a54c99a7e4913a4e3c3dfe55
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722807"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910121"
 ---
 # <a name="financial-dimensions-and-posting"></a>Wymiary finansowe i księgowanie 
 
 [!include [banner](../includes/banner.md)]
 
-Podczas planowania i konfigurowania planu kont należy wziąć pod uwagę, jak różne składniki będą współpracowały podczas księgowania dokumentu lub arkusza. Te składniki obejmują struktury kont, zaawansowane reguły oraz wymiary bilansowania i stałe. W tym temacie przestawiono poszczególne składniki i opisano sposób ich współdziałania.
+Podczas planowania i konfigurowania planu kont należy wziąć pod uwagę, jak różne składniki będą współpracowały podczas księgowania dokumentu lub arkusza. Te składniki obejmują struktury kont, zaawansowane reguły oraz wymiary bilansowania i stałe. W tym artykule przestawiono poszczególne składniki i opisano sposób ich współdziałania.
 
 ## <a name="chart-of-accounts-and-financial-dimension-components"></a>Składniki planów kont i wymiarów finansowych
 
@@ -46,7 +46,7 @@ Opcjonalnie można zdefiniować wymiar finansowy bilansowania. Na stronie **Ksi�
 
 ### <a name="defaultfixed-financial-dimensions-on-the-main-account"></a>Domyślne/stałe wymiary finansowe konta głównego
 
-Domyślne wymiary pochodzą z różnych miejsc, takich jak rekordy główne (na przykład rekordy odbiorców lub dostawców), nagłówków dokumentów i konta głównego. Ten temat koncentruje się na wymiarach domyślnych konta głównego z podziałem na firmy. Można określić, czy konto główne ma wartość **Niestałe** czy **Stałe** dla każdego wymiaru finansowego używanego we wszystkich strukturach kont w księdze. Jeśli wymiar finansowy ma wartość **Niestałe**, używa wartości domyślnej, ale można ją zastąpić. To zachowanie dotyczy wszystkich wartości domyślnych w systemie, nawet tych, które pochodzą z rekordów głównych. Jeśli wymiar finansowy ma ustawioną wartość **Stałe**, jest ona stosowana zawsze, niezależnie od tego, czy pochodzi z innego miejsca jako wartość domyślna, czy też wprowadził ją użytkownik.
+Domyślne wymiary pochodzą z różnych miejsc, takich jak rekordy główne (na przykład rekordy odbiorców lub dostawców), nagłówków dokumentów i konta głównego. Ten artykuł koncentruje się na wymiarach domyślnych konta głównego z podziałem na firmy. Można określić, czy konto główne ma wartość **Niestałe** czy **Stałe** dla każdego wymiaru finansowego używanego we wszystkich strukturach kont w księdze. Jeśli wymiar finansowy ma wartość **Niestałe**, używa wartości domyślnej, ale można ją zastąpić. To zachowanie dotyczy wszystkich wartości domyślnych w systemie, nawet tych, które pochodzą z rekordów głównych. Jeśli wymiar finansowy ma ustawioną wartość **Stałe**, jest ona stosowana zawsze, niezależnie od tego, czy pochodzi z innego miejsca jako wartość domyślna, czy też wprowadził ją użytkownik.
 
 ## <a name="order-in-which-default-dimensions-are-applied-during-posting"></a>Kolejność stosowania wymiarów domyślnych podczas księgowania
 

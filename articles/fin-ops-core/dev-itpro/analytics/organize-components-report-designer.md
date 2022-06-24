@@ -1,6 +1,6 @@
 ---
-title: Organizowanie składników raportu w projektancie raportów
-description: W tym temacie wyjaśniono, jak organizować istniejące raporty, bloki konstrukcyjne i obiekty w projektancie raportów.
+title: Organizowanie składników raportu w programie Report Designer
+description: W tym artykule wyjaśniono, jak organizować istniejące raporty, bloki konstrukcyjne i obiekty w projektancie raportów.
 author: ShylaThompson
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6b30e7e480edb50bb9509e270806224755f98e38111cda0c1cae86a0f56eb193
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 29fdb6ac6b200956383386c42ccb7627314ea7a2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763531"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898719"
 ---
 # <a name="organize-report-components-in-report-designer"></a>Organizowanie składników raportu w projektancie raportów
 

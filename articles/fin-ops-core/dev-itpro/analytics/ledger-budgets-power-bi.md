@@ -1,6 +1,6 @@
 ---
 title: Pakiet zawartości Wartości rzeczywiste a budżet dostępny dla usługi Power BI
-description: W tym temacie opisano pakiet zawartość Wartości rzeczywiste a budżet dostępny dla usługi Power BI. Wyjaśniono w nim sposób uzyskiwania dostępu do raportów oraz przedstawiono informacje o modelu danych.
+description: W tym artykule opisano zawartość pakietu Wartości rzeczywiste a budżet dostępnego dla usługi Power BI. Wyjaśniono w nim sposób uzyskiwania dostępu do raportów oraz przedstawiono informacje o modelu danych.
 author: panolte
 ms.date: 12/18/2017
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 7a5628dc67c721bf616803d6a31047cee09d8a434d43c0175dd8639815b7c9a6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ff57d052b66103ad716ad8d55afb4fcb095d2c02
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737910"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847290"
 ---
 # <a name="actual-vs-budget-power-bi-content"></a>Pakiet zawartości Wartości rzeczywiste a budżet dostępny dla usługi Power BI
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano pakiet zawartości **Wartości rzeczywiste a budżet** dostępny dla usługi Microsoft Power BI. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
+W tym artykule opisano zawartość pakietu **Wartości rzeczywiste a budżet** dostępnego dla usługi Microsoft Power BI. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
 
 ## <a name="overview"></a>Przegląd
 

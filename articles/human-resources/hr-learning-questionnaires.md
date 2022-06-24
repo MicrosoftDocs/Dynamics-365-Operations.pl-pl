@@ -1,6 +1,6 @@
 ---
 title: Kwestionariusze
-description: Ten temat zawiera ogólne informacje o kwestionariuszach oraz łącza do bardziej szczegółowych informacji.
+description: Ten artykuł zawiera ogólne informacje o kwestionariuszach oraz łącza do bardziej szczegółowych informacji.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: efe0ac953e5c1cb04044256e799ecfc07cf3eebe
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: de38bcbfc89479d6b643ca5ee256c38c88fa7f69
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690758"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897901"
 ---
 # <a name="questionnaires"></a>Kwestionariusze
 
@@ -28,7 +28,7 @@ ms.locfileid: "8690758"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ten temat zawiera ogólne informacje o kwestionariuszach oraz łącza do bardziej szczegółowych informacji. Kwestionariusz to zestaw pytań, które służą do gromadzenia informacji do różnych celów. Użytkownik może projektować, tworzyć, dystrybuować i wypełniać kwestionariusze, a następnie analizować wyniki. 
+Ten artykuł zawiera ogólne informacje o kwestionariuszach oraz łącza do bardziej szczegółowych informacji. Kwestionariusz to zestaw pytań, które służą do gromadzenia informacji do różnych celów. Użytkownik może projektować, tworzyć, dystrybuować i wypełniać kwestionariusze, a następnie analizować wyniki. 
 
 Można dostosować kwestionariusz do określonych potrzeb użytkownika przy użyciu różnych funkcji, które są dostępne w usłudze Microsoft Dynamics 365 Finance. Kwestionariuszy można używać do:
 
@@ -40,11 +40,11 @@ Można dostosować kwestionariusz do określonych potrzeb użytkownika przy uży
 
 Poniższa tabela zawiera łącza do informacji o podstawowych zadaniach kwestionariusza. Kliknij poszczególne łącza, aby uzyskać więcej informacji.
 
-| Temat| Opis|
+| Artykuł | Opis|
 |------|------------|
-| [Projektowanie kwestionariusza](hr-learning-design-questionnaires.md) | Z tego tematu dowiesz się, jak zaprojektować kwestionariusz. Proces projektowania obejmuje konfigurowanie wymagań wstępnych, odpowiedzi i pytań, a następnie łączenie ich w kwestionariusz. |
-| [Dystrybuowanie i planowanie kwestionariuszy](hr-learning-distribute-questionnaires.md) | Ten temat zawiera informacje o sposobach dystrybuowania kwestionariusza do respondentów i ich wypełniania. |
-| [Wyświetlanie i ocenianie wyników kwestionariusza](hr-learning-evaluate-questionnaire-results.md) | Ten temat zawiera informacje o sposobach przeglądania i oceniania wyników z wypełnionych kwestionariuszy. |
+| [Projektowanie kwestionariusza](hr-learning-design-questionnaires.md) | Z tego artykułu dowiesz się, jak zaprojektować kwestionariusz. Proces projektowania obejmuje konfigurowanie wymagań wstępnych, odpowiedzi i pytań, a następnie łączenie ich w kwestionariusz. |
+| [Dystrybuowanie i planowanie kwestionariuszy](hr-learning-distribute-questionnaires.md) | Ten artykuł zawiera informacje o sposobach dystrybuowania kwestionariusza do respondentów i ich wypełniania. |
+| [Wyświetlanie i ocenianie wyników kwestionariusza](hr-learning-evaluate-questionnaire-results.md) | Ten artykuł zawiera informacje o sposobach przeglądania i oceniania wyników z wypełnionych kwestionariuszy. |
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

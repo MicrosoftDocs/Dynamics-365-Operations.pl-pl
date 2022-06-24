@@ -1,6 +1,6 @@
 ---
 title: Nowy interfejs użytkownika w stylu Microsoft Office dokumentu w zarządzaniu dokumentami biznesowymi (zawiera wideo)
-description: W tym temacie wyjaśniono, jak używać nowego interfejsu użytkownika w funkcji zarządzania dokumentami biznesowymi struktury raportowania elektronicznego (ER).
+description: W tym artykule wyjaśniono, jak używać nowego interfejsu użytkownika w funkcji zarządzania dokumentami biznesowymi struktury raportowania elektronicznego (ER).
 author: v-anamir
 ms.date: 01/05/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: v-anamir
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e33830e2147d92ad5ee53ad11da55a50613b8ef9
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: bcc464a17e27393c5904c59b8439de6ca000d57a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8074748"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892233"
 ---
 # <a name="microsoft-office-style-user-interface-in-business-document-management"></a>Nowy interfejs użytkownika w stylu Microsoft Office dokumentu w zarządzaniu dokumentami biznesowymi
 
@@ -28,11 +28,11 @@ ms.locfileid: "8074748"
 
 Zarządzanie dokumentami biznesowymi pozwala użytkownikom korzystać z usługi a Microsoft Office 365 lub odpowiedniej aplikacji komputerowej Microsoft Office. Edycja może obejmować zmiany projektu lub nowe wdrożenia albo użytkownicy mogą dodawać symbole zastępcze w celu dołączenia dodatkowych danych bez konieczności zmieniania kodu źródłowego. Aby uzyskać więcej informacji na temat pracy z zarządzaniem dokumentami biznesowymi, zapoznaj się z [Omówieniem zarządzania dokumentami biznesowymi](er-business-document-management.md).
 
-Nowy interfejs użytkownika (UI) jest wyraźniejszy i wygodniejszy do używania. Obszar **Dokumenty biznesowe** pokazuje tylko te szablony, które są własnością aktualnego [aktywnego](tasks/er-configuration-provider-mark-it-active-2016-11.md) [dostawcy](general-electronic-reporting.md#Provider) i znajdują się w aktualnej instancji Dynamics 365 Finance. W poprzednim interfejsie użytkownika na karcie **Szablon** zostały wyświetlone wszystkie szablony dostępne dla dowolnego dostawcy. Pokazał również wszystkie szablony, które zostały utworzone i edytowane przez dowolnego użytkownika, który pełnił tę samą rolę.
+Nowy interfejs użytkownika (UI) jest wyraźniejszy i wygodniejszy do używania. Obszar **Dokumenty biznesowe** pokazuje tylko te szablony, które są własnością aktualnego [aktywnego](tasks/er-configuration-provider-mark-it-active-2016-11.md) [dostawcy](general-electronic-reporting.md#Provider) i znajdują się w aktualnym wystąpieniu Dynamics 365 Finance. W poprzednim interfejsie użytkownika na karcie **Szablon** zostały wyświetlone wszystkie szablony dostępne dla dowolnego dostawcy. Pokazał również wszystkie szablony, które zostały utworzone i edytowane przez dowolnego użytkownika, który pełnił tę samą rolę.
 
 Możesz użyć przycisku **Nowy dokument** w obszarze roboczym **Zarządzanie dokumentami biznesowymi**, aby utworzyć i edytować szablon w formacie [sprawozdawczości elektronicznej (ER)](general-electronic-reporting.md) [konfiguracja](general-electronic-reporting.md#Configuration), który jest dostarczany przez innego dostawcę i znajduje się w bieżącej instancji Finance, lub aby przesłać nowy szablon z skoroszytu programu Excel. Dodatkowo w wersji 10.0.25 i nowszych możesz użyć przycisku **Nowy dokument**, aby utworzyć i edytować szablon w konfiguracji formatu ER, który jest przechowywany w [Globalnym repozytorium](general-electronic-reporting.md#Repository).
 
-W przykładach w tym temacie aktywnym dostawcą jest Contoso i używasz go do stworzenia szablonu opartego na szablonie dostarczonym przez Microsoft. Szablon można również utworzyć, przesyłając własny szablon w formacie programu Excel.
+W przykładach w tym artykule aktywnym dostawcą jest Contoso i używasz go do stworzenia szablonu opartego na szablonie dostarczonym przez Microsoft. Szablon można również utworzyć, przesyłając własny szablon w formacie programu Excel.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWAVQg]
 

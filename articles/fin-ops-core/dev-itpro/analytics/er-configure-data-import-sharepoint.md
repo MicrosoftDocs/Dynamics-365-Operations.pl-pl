@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie importu danych z programu SharePoint
-description: W tym temacie wyjaśniono, jak przeprowadzić import danych z programu Microsoft SharePoint.
+description: W tym artykule wyjaśniono, jak przeprowadzić import danych z programu Microsoft SharePoint.
 author: NickSelin
 ms.date: 01/05/2022
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 9ac328e660c7a8a3b4a4f34a650062a0fa974771
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 0163ece2f61735073567b32a45d3dc6df8be1864
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8074773"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864786"
 ---
 # <a name="configure-data-import-from-sharepoint"></a>Konfigurowanie importu danych z programu SharePoint
 
 [!include[banner](../includes/banner.md)]
 
-Aby importować dane z przesyłanego pliku przy użyciu narzędzi raportowania elektronicznego (RE), należy skonfigurować format ER, który obsługuje import i następnie uruchomić mapowanie modelu typu **Do miejsca docelowego**, który używa tego formatu jako źródła danych. Aby importować dane, należy przejść do pliku, który chcesz zaimportować. Plik przychodzący może zostać wybrany ręcznie przez użytkownika. Dzięki nowej funkcjonalności ER, która umożliwia importowanie danych z programu Microsoft SharePoint, można skonfigurować ten proces do pracy bez nadzoru. Konfiguracje ER służą do importowania danych z plików przechowywanych w folderach programu Microsoft SharePoint. W tym temacie wyjaśniono, jak ukończyć importowanie danych SharePoint. W przykładach użyto transakcji dostawcy jako danych biznesowych.
+Aby importować dane z przesyłanego pliku przy użyciu narzędzi raportowania elektronicznego (RE), należy skonfigurować format ER, który obsługuje import i następnie uruchomić mapowanie modelu typu **Do miejsca docelowego**, który używa tego formatu jako źródła danych. Aby importować dane, należy przejść do pliku, który chcesz zaimportować. Plik przychodzący może zostać wybrany ręcznie przez użytkownika. Dzięki nowej funkcjonalności ER, która umożliwia importowanie danych z programu Microsoft SharePoint, można skonfigurować ten proces do pracy bez nadzoru. Konfiguracje ER służą do importowania danych z plików przechowywanych w folderach programu Microsoft SharePoint. W tym artykule wyjaśniono, jak ukończyć importowanie danych SharePoint. W przykładach użyto transakcji dostawcy jako danych biznesowych.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
-Aby wykonać przykłady opisane w tym temacie, musisz mieć następujące uprawnienia dostępu:
+Aby wykonać przykłady opisane w tym artykule, musisz mieć następujące uprawnienia dostępu:
 
 - Dostęp do jednej z następujących ról:
 
@@ -192,7 +192,7 @@ Można również otworzyć stronę **stanów plików dla źródeł**, wybierają
 
 ## <a name=""></a><a name="limitations">Ograniczenia</a>
 
-W wersjach Dynamics 365 Finance wcześniejszych niż 10.0.25, interfejs użytkownika (UI)w strukturze modułu ER nie oferuje możliwości inicjowania nowego zadania wsadowego, które wykona mapowanie modelu w trybie nienadzorowanym w celu zaimportowania danych w trybie nienadzorowanym. Zamiast tego trzeba opracować nową logikę umożliwiającą wywoływanie skonfigurowanego mapowania modelu ER z interfejsu użytkownika aplikacji w celu importowania danych z przychodzących plików. Aby rozwinąć tę logikę, potrzebna jest pewna praca inżynierska. 
+W wersjach aplikacji Dynamics 365 Finance wcześniejszych niż 10.0.25, interfejs użytkownika (UI)w strukturze modułu ER nie oferuje możliwości inicjowania nowego zadania wsadowego, które wykona mapowanie modelu w trybie nienadzorowanym w celu zaimportowania danych w trybie nienadzorowanym. Zamiast tego trzeba opracować nową logikę umożliwiającą wywoływanie skonfigurowanego mapowania modelu ER z interfejsu użytkownika aplikacji w celu importowania danych z przychodzących plików. Aby rozwinąć tę logikę, potrzebna jest pewna praca inżynierska. 
 
 Aby dowiedzieć się więcej o odpowiednim interfejsie API modułu ER, zobacz sekcję [Kod źródłowy uruchamiania mapowania formatu w celu importowania danych](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import) w temacie [Zmiany w interfejsie API struktury ER w aktualizacji Application update 7.3](er-apis-app73.md). Przejrzyj kod w klasie `BankImport_RU` modelu `Application Suite`, aby zobaczyć, jak można zaimplementować niestandardową logikę. Klasa `BankImport_RU` rozszerza klasę `RunBaseBatch`. W szczególności przejrzyj metodę `runER()`, w której obiekt `ERIModelMappingDestinationRun` jest tworzony jako moduł uruchamiający mapowania modelu ER.
 

@@ -1,6 +1,6 @@
 ---
 title: Zarządzanie mapowaniem modelu modułu Raportowanie elektroniczne w oddzielnych konfiguracjach modułu Raportowanie elektroniczne
-description: W tym temacie opisano sposób zarządzania mapowaniami modelu raportowania elektronicznego (ER) w oddzielnych konfiguracjach ER.
+description: W tym artykule opisano sposób zarządzania mapowaniami modelu raportowania elektronicznego (ER) w oddzielnych konfiguracjach ER.
 author: NickSelin
 ms.date: 06/19/2017
 ms.topic: business-process
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf4896bec7aa68cc6616756ef07c4db95e20a5cf7ebde3102f482cd5abad1420
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bd39ba470a418ca6e4fe7e44b3ae22c8eaa12f9f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776055"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847261"
 ---
 # <a name="manage-er-model-mapping-in-separate-er-configurations"></a>Zarządzanie mapowaniem modelu ER w oddzielnych konfiguracjach ER
 

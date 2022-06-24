@@ -1,6 +1,6 @@
 ---
 title: Przeszacowanie w walucie dla rozrachunków z odbiorcami i rozrachunków z dostawcami
-description: Ten temat zawiera informacje o procesie przeszacowania w walucie obcej, który jest wykonywany, aby zaktualizować wartość otwartych transakcji w modułach Rozrachunki z odbiorcami i Rozrachunki z dostawcami.
+description: Ten artykuł zawiera informacje o procesie przeszacowania w walucie obcej, który jest wykonywany, aby zaktualizować wartość otwartych transakcji w modułach Rozrachunki z odbiorcami i Rozrachunki z dostawcami.
 author: kweekley
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf32a31df1d56740d803b97d65829b1b1d31eb17
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 33750e7bb2f1fc4158a5f2faba5eeae5a356db7c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713932"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906392"
 ---
 # <a name="currency-revaluation-for-accounts-payable-and-accounts-receivable"></a>Przeszacowanie w walucie dla rozrachunków z odbiorcami i rozrachunków z dostawcami
 
 [!include [banner](../includes/banner.md)]
 
-Wahania kursów wymiany powodują, że wartość teoretyczna (wartość księgowa) otwartych transakcji w walutach obcych zmienia się w czasie. Ten temat zawiera informacje o procesie przeszacowania w walucie obcej, który jest wykonywany, aby zaktualizować wartość otwartych transakcji w modułach Rozrachunki z odbiorcami i Rozrachunki z dostawcami. 
+Wahania kursów wymiany powodują, że wartość teoretyczna (wartość księgowa) otwartych transakcji w walutach obcych zmienia się w czasie. Ten artykuł zawiera informacje o procesie przeszacowania w walucie obcej, który jest wykonywany, aby zaktualizować wartość otwartych transakcji w modułach Rozrachunki z odbiorcami i Rozrachunki z dostawcami. 
 
 Wartość teoretyczna (wartość księgowa) otwartych transakcji w obcych walutach zmienia się w zależności od fluktuacji kursów wymiany. Aby zaktualizować wartość otwartych transakcji w module Rozrachunki z odbiorcami i Rozrachunki z dostawcami, uruchom proces przeszacowania w walucie obcej. Przeszacowanie w walucie obcej można wykonać zarówno dla rozrachunków z odbiorcami, jak i rozrachunków z dostawcami. Proces korzysta z nowego kursu wymiany do przeszacowywania otwartych kwot lub nierozliczonych kwot w określonym dniu. Różnica między kwotami zaksięgowanymi oryginalnie a kwotami przeszacowanymi spowoduje niezrealizowaną dodatnią lub ujemną różnicę kursową dla każdej otwartej transakcji. Księgi podrzędne rozrachunków z dostawcami i rozrachunków z odbiorcami są zaktualizowane tak, aby odzwierciedlały niezrealizowaną dodatnią lub ujemną różnicę kursową, a wpis zostaje zaksięgowany w księdze głównej.
 

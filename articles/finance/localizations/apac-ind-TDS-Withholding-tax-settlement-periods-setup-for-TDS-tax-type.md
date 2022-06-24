@@ -1,6 +1,6 @@
 ---
 title: Ustaw okresy rozliczenia podatku u źródła dla typu podatku TDS
-description: W tym temacie wyjaśniono, jak skonfigurować okresy rozliczeniowe dla okresów rozliczenia podatku odliczonego u źródła (TDS).
+description: W tym artykule wyjaśniono, jak skonfigurować okresy rozliczeniowe dla okresów rozliczenia podatku odliczonego u źródła (TDS).
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 3807d0588dad4963b9607b9b0feffeb5a9e9c9ef
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 855bda71f0967c53166cf0a7f5e7e465146f34a7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726845"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846563"
 ---
 # <a name="set-up-withholding-tax-settlement-periods-for-the-tds-tax-type"></a>Ustaw okresy rozliczenia podatku u źródła dla typu podatku TDS
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak skonfigurować okresy rozliczeniowe dla okresów rozliczenia podatku odliczonego u źródła (TDS).
+W tym artykule wyjaśniono, jak skonfigurować okresy rozliczeniowe dla okresów rozliczenia podatku odliczonego u źródła (TDS).
 
 1. Wybierz kolejno opcje **Podatek \> Podatki pośrednie \> Potrącona zaliczka na podatek \> Okresy rozliczenia podatku u źródła**.
 

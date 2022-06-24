@@ -1,6 +1,6 @@
 ---
 title: Likwidacja środka trwałego z wykorzystaniem faktury niezależnej
-description: W tym temacie wyjaśniono sposób nabywania środka trwałego przy użyciu propozycji nabycia zdefiniowanej w arkuszu środków trwałych.
+description: W tym artykule wyjaśniono sposób nabywania środka trwałego przy użyciu propozycji nabycia zdefiniowanej w arkuszu środków trwałych.
 author: moaamer
 ms.date: 08/19/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 711ab4b4798127ca54d7138b0aae02d71fe8bec3
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: bb930bd35aa86c6bc3b2e7a5577ff16e3feb151a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713574"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896442"
 ---
 # <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a>Likwidacja środka trwałego z wykorzystaniem faktury niezależnej
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie pokazano sposób likwidacji środka trwałego przy użyciu faktury niezależnej.
+W tym artykule pokazano sposób likwidacji środka trwałego przy użyciu faktury niezależnej.
 
 1. W okienku nawigacji otwórz **Moduły > Rozrachunki z odbiorcami > Faktury > Wszystkie faktury niezależne**.
 2. Wybierz pozycję **Nowy**.

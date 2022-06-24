@@ -1,6 +1,6 @@
 ---
-title: Wyświetlanie zaksięgowanych transakcji podatkowych
-description: W tym temacie opisano kilka sposobów wyświetlania zaksięgowanych transakcji podatkowych.
+title: Wyświetl zaksięgowane transakcje podatkowe
+description: W tym artykule opisano kilka sposobów wyświetlania zaksięgowanych transakcji podatkowych.
 author: twheeloc
 ms.date: 08/08/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5c140f0565005120f57ba1c22bbdac50b3d0d3d4
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 028ebe44a639b32e45e0dd0af57887abc9b2af6f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8566139"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883250"
 ---
-# <a name="view-posted-sales-tax-transactions"></a>Wyświetlanie zaksięgowanych transakcji podatkowych
+# <a name="view-posted-sales-tax-transactions"></a>Wyświetl zaksięgowane transakcje podatkowe
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie opisano kilka sposobów wyświetlania zaksięgowanych transakcji podatkowych. Zaksięgowane transakcje podatkowe można wyświetlać z różnych stron, w zależności od tego, co chcesz obejrzeć. W zadaniu wykorzystano firmę demonstracyjną USMF.
+W tym artykule opisano kilka sposobów wyświetlania zaksięgowanych transakcji podatkowych. Zaksięgowane transakcje podatkowe można wyświetlać z różnych stron, w zależności od tego, co chcesz obejrzeć. W zadaniu wykorzystano firmę demonstracyjną USMF.
 
 ## <a name="posted-sales-tax-page"></a>Strona zaksięgowany podatek
 

@@ -1,6 +1,6 @@
 ---
 title: Projektowanie konfiguracji ER w celu pomijania znaków BOM w generowanych plikach
-description: W tym temacie wyjaśniono, jak skonfigurować format raportowania elektronicznego (ER) w celu generowania raportów pomijających znaki typu znacznik kolejności bajtów (BOM).
+description: W tym artykule wyjaśniono, jak skonfigurować format raportowania elektronicznego (ER) w celu generowania raportów pomijających znaki typu znacznik kolejności bajtów (BOM).
 author: NickSelin
 ms.date: 01/04/2021
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b9265578deaff4100eb5987eb6090eaa12876044
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: d54ed105e4ff44ac2c48e2d1a4b8e12fbf6f9591
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323748"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847438"
 ---
 # <a name="design-er-configurations-to-suppress-bom-characters-in-generated-files"></a>Projektowanie konfiguracji ER w celu pomijania znaków BOM w generowanych plikach
 
@@ -38,7 +38,7 @@ Jeśli wybierzesz kodowanie **UTF-8**, **UTF-16** lub **UTF-32**, opcja **Pomiń
 
 ![Ustawianie opcji Pomiń znaki BOM na stronie Projektant formatów.](./media/er-suppress-bom-characters-image2.gif)
 
-Aby przejrzeć funkcje w czasie wykonywania, należy wykonać odpowiednią procedurę. Na przykład wykonaj kroki w temacie [Odraczanie wykonania elementów XML w formatach ER](er-defer-xml-element.md). Po ukończeniu kroków z sekcji [Modyfikowanie formatu, aby obliczenie było oparte na wygenerowanych danych wyjściowych](er-defer-xml-element.md#modify-the-format-so-that-the-calculation-is-based-on-generated-output) tego tematu należy wykonać następujące dodatkowe kroki.
+Aby przejrzeć funkcje w czasie wykonywania, należy wykonać odpowiednią procedurę. Na przykład wykonaj kroki w artykule [Odraczanie wykonania elementów XML w formatach ER](er-defer-xml-element.md). Po ukończeniu kroków z sekcji [Modyfikowanie formatu, aby obliczenie było oparte na wygenerowanych danych wyjściowych](er-defer-xml-element.md#modify-the-format-so-that-the-calculation-is-based-on-generated-output) tego artykułu należy wykonać następujące dodatkowe kroki.
 
 1. Określ kodowanie UTF:
 
@@ -48,12 +48,12 @@ Aby przejrzeć funkcje w czasie wykonywania, należy wykonać odpowiednią proce
 2. Wygeneruj plik XML, który zawiera znak BOM:
 
     1. Ustaw opcję **Pomiń znaki BOM** na **Nie**, aby w generowanych plikach XML uwzględnić znaki BOM.
-    2. Wykonaj kroki w sekcji [Odraczanie wykonania zbiorczego elementu XML, tak aby była używana obliczona suma](er-defer-xml-element.md#defer-the-execution-of-the-summary-xml-element-so-that-the-calculated-total-is-used) tematu [Odraczanie wykonania elementów XML w formatach ER](er-defer-xml-element.md) i zapisz wygenerowany plik jako **SampleXmlReport.xml**.
+    2. Wykonaj kroki w sekcji [Odraczanie wykonania zbiorczego elementu XML, tak aby była używana obliczona suma](er-defer-xml-element.md#defer-the-execution-of-the-summary-xml-element-so-that-the-calculated-total-is-used) artykułu [Odraczanie wykonania elementów XML w formatach ER](er-defer-xml-element.md) i zapisz wygenerowany plik jako **SampleXmlReport.xml**.
 
 3. Wygeneruj plik XML, który nie zawiera znaku BOM:
 
     1. Ustaw opcję **Pomiń znaki BOM** na **Tak**, aby w generowanych plikach XML pomijać znaki BOM.
-    2. Wykonaj kroki w sekcji [Odraczanie wykonania zbiorczego elementu XML, tak aby była używana obliczona suma](er-defer-xml-element.md#defer-the-execution-of-the-summary-xml-element-so-that-the-calculated-total-is-used) tematu [Odraczanie wykonania elementów XML w formatach ER](er-defer-xml-element.md) i zapisz wygenerowany plik jako **SampleXmlReport (1).xml**.
+    2. Wykonaj kroki w sekcji [Odraczanie wykonania zbiorczego elementu XML, tak aby była używana obliczona suma](er-defer-xml-element.md#defer-the-execution-of-the-summary-xml-element-so-that-the-calculated-total-is-used) artykułu [Odraczanie wykonania elementów XML w formatach ER](er-defer-xml-element.md) i zapisz wygenerowany plik jako **SampleXmlReport (1).xml**.
 
 4. W narzędziu do porównywania plików porównaj wygenerowane pliki.
 

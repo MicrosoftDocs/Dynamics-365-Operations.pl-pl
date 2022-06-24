@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bd832c32655aa52fec16852ec5550a34d06f00f4
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 14aaf40ce64c8f8ba6277fa0883318e08505a464
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8719951"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904565"
 ---
 # <a name="general-ledger-home-page"></a>Strona główna księgi głównej
 
@@ -56,12 +56,12 @@ Ponadto reguły muszą być aktualizowane okresowo, jeśli zmieniają się wymag
 
 Przejdź do [planów wydań Microsoft Dynamics 365](/dynamics365/release-plans/), aby zobaczyć, jakie nowe funkcje zostały zaplanowane. 
 
-#### <a name="financial-reporting"></a>Raporty finansowe
-Przejdź do tematu [Omówienie Financial reporting](../../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md), aby uzyskać informacje o raportach finansowych.
+#### <a name="financial-reporting"></a>Raportowanie finansowe
+Przejdź do artykułu [Omówienie funkcji Financial Reporting](../../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md), aby uzyskać informacje o raportach finansowych.
 
 #### <a name="blogs"></a>Blogi
 
-Opinie, wiadomości i inne informacje możesz znaleźć w blogu usługi [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)oraz blogu rozwiązania Financials usługi [Microsoft Dynamics 365 Finance and Operations](https://community.dynamics.com/365/financeandoperations/b/financials).
+Opinie, wiadomości i inne informacje możesz znaleźć w blogu usługi [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) oraz blogu finansowym usługi [Microsoft Dynamics 365 Finance and Operations](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 [Microsoft Dynamics Operations](https://community.dynamics.com/partner/b/operationspartnercommunityblog) zapewnia Microsoft Dynamics, jeden zasób, w którym mogą dowiedzieć się, co nowego, poza tym zyskuje na popularności w Dynamics 365.
 

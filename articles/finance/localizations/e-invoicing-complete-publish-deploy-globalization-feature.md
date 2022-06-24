@@ -1,6 +1,6 @@
 ---
 title: Zakończenie, publikacja i wdrożenie funkcji globalizacji
-description: Ten temat zawiera informacje o cyklu życia funkcji globalizacji.
+description: Ten artykuł zawiera informacje o cyklu życia funkcji globalizacji.
 author: dkalyuzh
 ms.date: 12/15/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 21e03660387c7e715bc0f4cb1dbcd3ec9ec6cee2
-ms.sourcegitcommit: 1843235766b6f8cf950a13a310e9f4f2f53c59a4
+ms.openlocfilehash: 469fd66a5eaa779ea28ecfe4a29dd34d3ef748f5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "8554569"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846534"
 ---
 # <a name="complete-publish-and-deploy-a-globalization-feature"></a>Zakończenie, publikacja i wdrożenie funkcji globalizacji
 

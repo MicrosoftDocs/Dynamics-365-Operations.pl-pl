@@ -1,6 +1,6 @@
 ---
-title: Włączenie trybu debugowania w usłudze Obliczanie podatków
-description: Ten temat wyjaśnia, jak włączyć tryb debugowania w usłudze Obliczanie podatków, aby zbadać problemy.
+title: Włączanie trybu debugowania w usłudze obliczania podatku
+description: Ten artykuł wyjaśnia, jak włączyć tryb debugowania w usłudze Obliczanie podatków, aby zbadać problemy.
 author: hangwan
 ms.date: 03/25/2022
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: hangwan
 ms.search.validFrom: 03/23/2022
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: 2f526a2341c7ef682209ed979fe686e31ad62a37
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 2bb381939ebe32cb51caf730cdd441557d83a4c0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645427"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887795"
 ---
-# <a name="enable-debug-mode-in-the-tax-calculation-service"></a>Włączenie trybu debugowania w usłudze Obliczanie podatków
+# <a name="enable-debug-mode-in-the-tax-calculation-service"></a>Włączanie trybu debugowania w usłudze obliczania podatku
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat wyjaśnia, jak włączyć tryb debugowania w usłudze Obliczanie podatków, aby zbadać problemy.
+Ten artykuł wyjaśnia, jak włączyć tryb debugowania w usłudze Obliczanie podatków, aby zbadać problemy.
 
 1. Dodaj **&debug=vs%2CconfirmExit&** do adresu URL serwera obiektów aplikacji (AOS), a następnie odśwież stronę.
 2. Gdy wybierzesz **Podatek od sprzedaży**, aby obliczyć podatek od sprzedaży, zostanie otwarty plik tekstowy o nazwie **TaxServiceTroubleshootingLog.txt**. Plik **TaxServiceTroubleshootingLog.txt** zawiera **TaxableDocument** oraz parametr obliczeniowy. Wyniki te są zwracane z serwisu podatkowego i zawierają informacje o wyjątkach, które służą do rozwiązywania problemów.

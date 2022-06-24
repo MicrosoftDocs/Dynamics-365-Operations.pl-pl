@@ -1,6 +1,6 @@
 ---
 title: Konfiguracja fakturowania elektronicznego
-description: W tym temacie omówiono proces konfigurowania i konfigurowania fakturowania elektronicznego.
+description: W tym artykule omówiono proces ustawiania i konfigurowania fakturowania elektronicznego.
 author: dkalyuzh
 ms.date: 02/28/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 42e617e26e7658fae9ee54cb8a4dee45314fddaa
-ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
+ms.openlocfilehash: 8e2aa89119530a0ba00a8561d94006285d67a71b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661700"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883127"
 ---
 # <a name="electronic-invoicing-setup"></a>Konfiguracja fakturowania elektronicznego
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie omówiono proces konfigurowania i konfigurowania fakturowania elektronicznego. Kroki konfiguracji należy wykonać w podanej kolejności. Jeśli krok jest obowiązkowy, ale go pominiesz, funkcja nie będzie działać poprawnie, a podczas kolejnych kroków lub podczas korzystania z funkcji wystąpi wiele błędów. 
+W tym artykule omówiono proces ustawiania i konfigurowania fakturowania elektronicznego. Kroki konfiguracji należy wykonać w podanej kolejności. Jeśli krok jest obowiązkowy, ale go pominiesz, funkcja nie będzie działać poprawnie, a podczas kolejnych kroków lub podczas korzystania z funkcji wystąpi wiele błędów. 
 
 Przed rozpoczęciem upewnij się, że wszystkie główne składniki są poprawnie skonfigurowane, że zarejestrowałeś się w usłudze Regulatory Configuration Service (RCS) i masz wystąpienie RCS oraz że dodatek fakturowania elektronicznego jest zainstalowany dla systemu Microsoft Dynamics 365 Finance lub środowisko Dynamics 365 Supply Chain Management. Aby uzyskać więcej informacji, zobacz [Zarejestruj się i zainstaluj Fakturowanie elektroniczne](e-invoicing-install-add-in-microservices-lcs.md).
 

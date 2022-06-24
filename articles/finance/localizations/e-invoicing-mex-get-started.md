@@ -1,6 +1,6 @@
 ---
 title: Rozpoczynanie pracy z fakturowaniem elektronicznym dla Meksyku
-description: Ten temat zawiera informacje, które pomogą w rozpoczęciu pracy z Faktury elektroniczne dla Meksyku.
+description: Ten artykuł zawiera informacje, które pomogą w rozpoczęciu pracy z Faktury elektroniczne dla Meksyku.
 author: gionoder
 ms.date: 12/01/2020
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6fc8a9eaf6c6e4c82719e7c1ebccd4272548e73f
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 540b6e6f9b4b669957cc3310e473ad59b9210594
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8566007"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855337"
 ---
 # <a name="get-started-with-electronic-invoicing-for-mexico"></a>Rozpoczynanie pracy z fakturowaniem elektronicznym dla Meksyku
 
@@ -31,11 +31,11 @@ ms.locfileid: "8566007"
 > [!IMPORTANT]
 > Faktury elektroniczne dla Meksyku może nie obsługiwać obecnie wszystkich funkcji dostępnych w dokumencie Comprobante Fiscal Digital por Internet (CFDI) i w powiązanej integracji, która jest wbudowana w Microsoft Dynamics 365 Finance lub Dynamics 365 Supply Chain Management.
 
-Ten temat zawiera informacje, które pomogą w rozpoczęciu pracy z Faktury elektroniczne dla Meksyku. Przeprowadza użytkownika przez kolejne etapy konfiguracji, które są zależne od kraju w usługach Regulatory Configuration Services (RCS) i Finance. Ponadto prowadzi użytkownika przez kroki, które należy wykonać w obszarze Finance, aby przesłać fakturę CFDI za pośrednictwem tej usługi, a także sposób przeglądu wyników przetwarzania i stanu faktur CFDI.
+Ten artykuł zawiera informacje, które pomogą w rozpoczęciu pracy z Faktury elektroniczne dla Meksyku. Przeprowadza użytkownika przez kolejne etapy konfiguracji, które są zależne od kraju w usługach Regulatory Configuration Services (RCS) i Finance. Ponadto prowadzi użytkownika przez kroki, które należy wykonać w obszarze Finance, aby przesłać fakturę CFDI za pośrednictwem tej usługi, a także sposób przeglądu wyników przetwarzania i stanu faktur CFDI.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Przed wykonaniem kroków opisanych w tym temacie należy wykonać kroki opisane w temacie [Rozpoczynanie pracy z administracją usługi Faktury elektroniczne](e-invoicing-get-started-service-administration.md) i [Rozpoczynanie pracy z fakturami elektronicznymi](e-invoicing-get-started.md).
+Przed wykonaniem kroków opisanych w tym artykule należy wykonać kroki opisane w temacie [Rozpoczynanie pracy z administracją usługi Faktury elektroniczne](e-invoicing-get-started-service-administration.md) i [Rozpoczynanie pracy z fakturami elektronicznymi](e-invoicing-get-started.md).
 
 ## <a name="set-up-the-cadena-xslt"></a>Konfigurowanie środowiska usług Cadena XSLT
 

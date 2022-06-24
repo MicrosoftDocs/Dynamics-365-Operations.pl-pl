@@ -1,6 +1,6 @@
 ---
 title: Nowe lub zaktualizowane przewodniki po zadaniach (listopad 2016 r.)
-description: Ten temat zawiera listę nowych lub zaktualizowanych przewodników po zadaniach, które zostały opublikowane w ujednoliconej bibliotece APQC firmy Microsoft (z listopada 2016 r. — wszystkie języki) dla programu Microsoft Dynamics 365 for Operations. Nie opublikowano nowej biblioteki ułatwiającej rozpoczęcie pracy.
+description: Ten artykuł zawiera listę nowych lub zaktualizowanych przewodników po zadaniach, które zostały opublikowane w ujednoliconej bibliotece APQC firmy Microsoft (z listopada 2016 r. — wszystkie języki) dla programu Microsoft Dynamics 365 for Operations. Nie opublikowano nowej biblioteki ułatwiającej rozpoczęcie pracy.
 author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3f36ceb535919991c1be0501daabd94e966723fa875cf8765439212d235e82a3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3836456f8d4ba8aba95e90563f8bdb27fc547e09
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728134"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886593"
 ---
 # <a name="new-or-updated-task-guides-november-2016"></a>Nowe lub zaktualizowane przewodniki po zadaniach (listopad 2016 r.)
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera listę nowych lub zaktualizowanych przewodników po zadaniach, które zostały opublikowane w ujednoliconej bibliotece APQC firmy Microsoft (z listopada 2016 r. — wszystkie języki) dla programu Microsoft Dynamics 365 for Operations. Nie opublikowano nowej biblioteki ułatwiającej rozpoczęcie pracy.
+Ten artykuł zawiera listę nowych lub zaktualizowanych przewodników po zadaniach, które zostały opublikowane w ujednoliconej bibliotece APQC firmy Microsoft (z listopada 2016 r.: wszystkie języki) dla programu Microsoft Dynamics 365 for Operations. Nie opublikowano nowej biblioteki ułatwiającej rozpoczęcie pracy.
 
-Ujednolicona biblioteka APQC (z listopada 2016 r. — wszystkie języki) zawiera przewodniki po zadaniach, które przewidziano jako pomoc dla programu Microsoft Dynamics 365 for Operations, aktualizacji nr 3 platformy Microsoft Dynamics 365 for Operations, aktualizacji nr 2 platformy Microsoft Dynamics AX, aktualizacji systemu Dynamics AX z maja 2016 r. oraz wydania systemu Microsoft Dynamics AX z lutego 2016 r. Aby uzyskać więcej informacji o tych wersjach, zobacz [Nowości i zmiany w rozwiązaniu Finance and Operations — strona główna](whats-new-changed.md). W tej bibliotece są dostępne przetłumaczone wersje przewodników po zadaniach. Aby uzyskać więcej informacji na temat sposobu łączenia systemu Pomocy z biblioteką przewodników po zadaniach, zobacz [System Pomocy](help-overview.md).
+Ujednolicona biblioteka APQC (z listopada 2016 r. — wszystkie języki) zawiera przewodniki po zadaniach, które przewidziano jako pomoc dla programu Microsoft Dynamics 365 for Operations, aktualizacji nr 3 platformy Microsoft Dynamics 365 for Operations, aktualizacji nr 2 platformy Microsoft Dynamics AX, aktualizacji systemu Dynamics AX z maja 2016 r. oraz wydania systemu Microsoft Dynamics AX z lutego 2016 r. Aby uzyskać więcej informacji o tych wersjach, zapoznaj się z [Nowości i zmiany w rozwiązaniu Finance and Operations — strona główna](whats-new-changed.md). W tej bibliotece są dostępne przetłumaczone wersje przewodników po zadaniach. Aby uzyskać więcej informacji na temat sposobu łączenia systemu Pomocy z biblioteką przewodników po zadaniach, zobacz [System Pomocy](help-overview.md).
 
 > [!NOTE]
 > Znak gwiazdki (\*) obok tytułu wiersza narzędzia do modelowania procesów biznesowych (BPM) wskazuje, że przewodnik po zadaniach dla tego procesu biznesowego został utworzony dla aktualizacji programu Dynamics 365 for Operations z listopada 2016 r. i nie jest obsługiwany we wcześniejszych wersjach systemu Microsoft Dynamics AX.

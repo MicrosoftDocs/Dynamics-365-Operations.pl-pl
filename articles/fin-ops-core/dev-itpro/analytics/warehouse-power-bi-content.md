@@ -1,6 +1,6 @@
 ---
 title: Pakiet zawartości usługi Power BI Wydajność magazynu
-description: W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Power BI Wydajność magazynu.
+description: W tym artykule opisano, co się znajduje w pakiecie zawartości usługi Power BI Wydajność magazynu.
 author: Mirzaab
 ms.date: 12/18/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: db56d1bd26f27987f00126ac1a6434cf36691fbf594cab3dd1260ed5251480a9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d43cef4970cdf180d0db39086220def56b08f280
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750557"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851930"
 ---
 # <a name="warehouse-performance-power-bi-content"></a>Pakiet zawartości usługi Power BI Wydajność magazynu
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Microsoft Power BI **Wydajność magazynu**. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
+W tym artykule opisano, co się znajduje w pakiecie zawartości **Wydajność magazynu** usługi Microsoft Power BI. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
 
 ## <a name="overview"></a>Przegląd
 

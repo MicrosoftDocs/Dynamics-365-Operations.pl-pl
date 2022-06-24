@@ -1,6 +1,6 @@
 ---
 title: Użyj jednej płatności do rozliczenia faktur obejmujących wiele okresów rabatowych
-description: W tym temacie przedstawiono sposób zapłaty wielu faktur, gdy każda faktura kwalifikuje się do rabatu gotówkowego. Scenariusze w tym artykule pokazują różnice w stosowanych rabatach gotówkowych zależnie od dnia uregulowania płatności.
+description: W tym artykule przedstawiono sposób zapłaty wielu faktur, gdy każda faktura kwalifikuje się do rabatu gotówkowego. Scenariusze w tym artykule pokazują różnice w stosowanych rabatach gotówkowych zależnie od dnia uregulowania płatności.
 author: ShivamPandey-msft
 ms.date: 10/26/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5187835da33d729e50aad9c813d8753d240fb81
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: e6035973abea9dacd4b6d4d8bf2fd3c7d6b10fb0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727630"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872652"
 ---
 # <a name="use-one-payment-to-settle-invoices-that-span-multiple-discount-periods"></a>Użyj jednej płatności do rozliczenia faktur obejmujących wiele okresów rabatowych
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie przedstawiono sposób zapłaty wielu faktur, gdy każda faktura kwalifikuje się do rabatu gotówkowego. Scenariusze w tym artykule pokazują różnice w stosowanych rabatach gotówkowych zależnie od dnia uregulowania płatności.
+W tym artykule przedstawiono sposób zapłaty wielu faktur, gdy każda faktura kwalifikuje się do rabatu gotówkowego. Scenariusze w tym artykule pokazują różnice w stosowanych rabatach gotówkowych zależnie od dnia uregulowania płatności.
 
 Firma Fabrikam sprzedaje towary odbiorcy 4032. Fabrikam oferuje rabat gotówkowy w wysokości 1%, jeśli faktura jest zapłacona w ciągu 14 dni. Fabrikam oferuje też rabaty gotówkowe za rozliczenia częściowe. Parametry rozliczenia znajdują się na stronie **Parametry modułu rozrachunków z odbiorcami**.
 

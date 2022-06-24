@@ -1,6 +1,6 @@
 ---
 title: Włącz odnośniki danych główne do konfiguracji obliczania podatku
-description: W tym temacie wyjaśniono, jak skonfigurować i włączyć funkcję wyszukiwania danych podstawowych obliczania podatku.
+description: W tym artykule wyjaśniono, jak skonfigurować i włączyć funkcję wyszukiwania danych podstawowych obliczania podatku.
 author: kai-cloud
 ms.date: 11/22/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 7640144b1687fc64e55f659d49cdb0817c17294a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: d9c234781e55fbf7f29eec14666c939d5d60e2fb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686719"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879417"
 ---
 # <a name="enable-master-data-lookup-for-tax-calculation-configuration"></a>Włącz odnośniki danych główne do konfiguracji obliczania podatku 
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak skonfigurować i włączyć funkcję wyszukiwania danych podstawowych obliczania podatku. Dostępna jest lista rozwijana, na podstawie których można wybrać wartości w konfiguracji obliczania podatku dla takich pól, jak **Osoba prawna**, **Konto dostawcy**, **Kod pozycji** czy **Termin dostawy**. Te wartości pochodzą ze połączonego środowiska Microsoft Dynamics 365 Finance, używając źródła danych Microsoft Dataverse.
+W tym artykule wyjaśniono, jak skonfigurować i włączyć funkcję wyszukiwania danych podstawowych obliczania podatku. Dostępna jest lista rozwijana, na podstawie których można wybrać wartości w konfiguracji obliczania podatku dla takich pól, jak **Osoba prawna**, **Konto dostawcy**, **Kod pozycji** czy **Termin dostawy**. Te wartości pochodzą ze połączonego środowiska Microsoft Dynamics 365 Finance, używając źródła danych Microsoft Dataverse.
 
 > [!NOTE] 
 > Funkcja wyszukiwania danych głównych obliczenia podatku jest opcjonalna. Możesz pominąć następujące kroki, jeśli włączysz funkcję **Obsługa źródeł danych w usłudze obliczania podatku Dataverse** w usłudze Regulatory Configuration Service (RCS). W takim przypadku lista rozwijana nie będzie jednak dostępna w konfiguracji obliczania podatku.

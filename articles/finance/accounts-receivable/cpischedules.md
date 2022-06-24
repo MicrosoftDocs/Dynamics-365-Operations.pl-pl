@@ -1,6 +1,6 @@
 ---
 title: Harmonogram indeksu ceny konsumenta
-description: W tym temacie wyjaśniono, jak tworzyć listę harmonogramów indeksu cen klientów (CPI) uzyskiwanych przez Internet w celu ustalenia opłaty eskalacji w fakturowaniu subskrypcji.
+description: W tym artykule wyjaśniono, jak tworzyć listę harmonogramów indeksu cen klientów (CPI) uzyskiwanych przez Internet w celu ustalenia opłaty eskalacji w fakturowaniu subskrypcji.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 54114fae25565ed1aae7056ef9be5a4a159291e9
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: f08b79ee00baab3713d9ccc24a7595b1de7a7768
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686527"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904881"
 ---
 # <a name="consumer-price-index-schedule"></a>Harmonogram indeksu ceny konsumenta
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób tworzenia, usuwania, przeglądania i przetwarzania harmonogramów indeksów cen klientów (CPI). Harmonogram CPI może być używany do określania cen towarów i usług konsumpcyjnych, które są dodawane jako linie harmonogramu rozliczeniowego. Harmonogram CPI można następnie wykorzystać z cenami eskalacyjnymi i rabatowymi w harmonogramie rozliczeniowym lub można go przetwarzać ręcznie w celu aktualizacji kwot rozliczeniowych w harmonogramach rozliczeniowych. Harmonogramy CPI można wprowadzać ręcznie lub importować je za pomocą elementu złożonego Harmonogram CPI.
+W tym artykule opisano sposób tworzenia, usuwania, przeglądania i przetwarzania harmonogramów indeksów cen klientów (CPI). Harmonogram CPI może być używany do określania cen towarów i usług konsumpcyjnych, które są dodawane jako linie harmonogramu rozliczeniowego. Harmonogram CPI można następnie wykorzystać z cenami eskalacyjnymi i rabatowymi w harmonogramie rozliczeniowym lub można go przetwarzać ręcznie w celu aktualizacji kwot rozliczeniowych w harmonogramach rozliczeniowych. Harmonogramy CPI można wprowadzać ręcznie lub importować je za pomocą elementu złożonego Harmonogram CPI.
 
 Aby dodać harmonogram CPI, wykonaj poniższe czynności.
 

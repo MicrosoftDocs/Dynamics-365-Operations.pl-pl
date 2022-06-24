@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie kodów podatków
-description: W tym temacie wyjaśniono sposób konfigurowania kodów podatków w usłudze obliczania podatku.
+description: W tym artykule wyjaśniono sposób konfigurowania kodów podatków w usłudze obliczania podatku.
 author: wangchen
 ms.date: 11/30/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-10-26
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: 8bdb194e7d8b704d1e58d3c25bf2e1f6bff1ba00
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: 1bc250716763ce9d8e25c8850c8a3676bf65fb0c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883873"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862936"
 ---
 # <a name="set-up-tax-codes"></a>Konfigurowanie kodów podatków
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono sposób konfigurowania kodów podatków w usłudze obliczania podatku. Przedstawia on konfigurację prostego scenariusza włączania kodu podatku oraz informacje o niektórych funkcjach zaawansowanych kodów podatków w przypadku złożonych scenariuszy.
+W tym artykule wyjaśniono sposób konfigurowania kodów podatków w usłudze obliczania podatków. Przedstawia on konfigurację prostego scenariusza włączania kodu podatku oraz informacje o niektórych funkcjach zaawansowanych kodów podatków w przypadku złożonych scenariuszy.
 
 > [!IMPORTANT]
 > Konfiguracja kodów podatków w usłudze obliczania podatku jest niezależna od osoby prawnej. Tę konfigurację można wykonać tylko jeden raz w usłudze RCS (Regulatory Configuration Service). Kody podatków są automatycznie synchronizowane z aplikacją Microsoft Dynamics 365 Finance po włączeniu usługi obliczania podatku dla wybranej osoby prawnej w aplikacji Finance.

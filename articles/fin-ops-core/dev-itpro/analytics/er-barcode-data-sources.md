@@ -1,6 +1,6 @@
 ---
 title: Używanie źródeł danych z kodem kreskowym do generowania obrazów kodów kreskowych
-description: W tym temacie objaśniono sposób używania źródeł danych z kodem kreskowym w celu generowania obrazów kodów kreskowych.
+description: W tym artykule objaśniono sposób używania źródeł danych z kodem kreskowym w celu generowania obrazów kodów kreskowych.
 author: NickSelin
 ms.date: 10/21/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Version 10.0.13
-ms.openlocfilehash: a5a396080d8b5dd4c2ed9a0eb15c1286e8799ebf
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: c8e755b664656a1a10672a990dc581969f6a7b80
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323959"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880320"
 ---
 # <a name="use-barcode-data-sources-to-generate-bar-code-images"></a>Używanie źródeł danych z kodem kreskowym do generowania obrazów kodów kreskowych
 
@@ -77,7 +77,7 @@ Konfigurując źródło danych **Kod kreskowy**, można zdefiniować konkretne p
 >
 > W przypadku powiązania źródła danych **Kod kreskowy** z elementem komórki w formacie, a element komórki reprezentuje kontrolka zawartości programu Word lub obraz programu Excel, źródło danych jest prezentowane w tym powiązaniu jako funkcja zawierająca jeden parametr typu **Ciąg**. Tego parametru należy używać do określania tekstu, który powinien zostać przekształcony w obraz kodu kreskowego i odczytywany podczas skanowania wygenerowanego kodu kreskowego.
 
-Aby uzyskać więcej informacji o tej funkcji, uzupełnij przykłady w tym temacie.
+Aby uzyskać więcej informacji o tej funkcji, uzupełnij przykłady w tym artykule.
 
 ## <a name="example-generate-a-payment-check-that-contains-a-bar-code-that-encodes-the-payable-amount"></a>Przykład: generowanie czeku płatności zawierającego kod kreskowy, który koduje kwotę zobowiązania
 
@@ -103,7 +103,7 @@ W tym przykładzie pokazano, jak użytkownik w roli **Administrator systemu** lu
 
 W tym przykładzie zostanie użyte dostarczone rozwiązanie ER, które zostało skonfigurowane do generowania czeków płatności. To rozwiązanie generuje czeki płatnicze, w których kwota zobowiązania jest zapisywana jako liczba i jako tekst. Zmodyfikujesz to rozwiązanie ER, aby czek zawierał również wygenerowany kod kreskowy, w którym kodowana jest należna kwota i można go odczytać za pomocą skanera kodów kreskowych.
 
-Kroki można wykonać na przykładzie firmy **USMF** w Microsoft Dynamics 365 Finance.
+Kroki można wykonać na przykładzie firmy **USMF** w aplikacji Microsoft Dynamics 365 Finance.
 
 ### <a name="complete-the-prerequisites"></a><a name="ExamplePrerequisites"></a>Wypełnij wstępnie wymagania
 
@@ -112,7 +112,7 @@ Aby wykonać przykłady opisane w tym temacie, trzeba mieć dostęp do firmy USM
 - Konsultant funkcjonalny raportowania elektronicznego
 - Administrator systemu
 
-Jeśli nie zakończono jeszcze analizy przykładu w temacie [Osadzanie obrazów i kształtów w generowanych dokumentach przez raportowanie elektroniczne](electronic-reporting-embed-images-shapes.md), pobierz następujące konfiguracje przykładowego rozwiązania ER.
+Jeśli nie zakończono jeszcze analizy przykładu w artykule [Osadzanie obrazów i kształtów w generowanych dokumentach przez raportowanie elektroniczne](electronic-reporting-embed-images-shapes.md), pobierz następujące konfiguracje przykładowego rozwiązania ER.
 
 | Opis zawartości         | Nazwa pliku                   |
 |-----------------------------|-----------------------------|
@@ -128,7 +128,7 @@ Ponadto Pobierz następujący plik programu Excel zawierający zmodyfikowany sza
 ### <a name="activate-a-configuration-provider"></a><a name="ExampleProvider"></a>Aktywuj dostawcę konfiguracji
 
 1. Wybierz kolejno opcje **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
-2. Na stronie **Konfiguracje lokalizacji** w sekcji **Dostawcy konfiguracji** sprawdź, czy [dostawca konfiguracji](general-electronic-reporting.md#Provider) dla przykładowej firmy **Litware, Inc.** jest wymieniony na liście i czy jest oznaczony jako akywny. Jeśli nie ma go na liście lub jeśli nie jest on oznaczony jako aktywny, wykonaj kroki opisane w temacie [Tworzenia dostawcy konfiguracji i zaznaczanie go jako aktywny](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. Na stronie **Konfiguracje lokalizacji** w sekcji **Dostawcy konfiguracji** sprawdź, czy [dostawca konfiguracji](general-electronic-reporting.md#Provider) dla przykładowej firmy **Litware, Inc.** jest wymieniony na liście i czy jest oznaczony jako akywny. Jeśli nie ma go na liście lub jeśli nie jest on oznaczony jako aktywny, wykonaj kroki opisane w artykule [Tworzenie dostawcy konfiguracji i zaznaczanie go jako aktywny](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 ![Ustawienie aktywnej przykładowej firmy na stronie konfiguracji lokalizacji.](./media/er-barcode-data-source-active-provider.png)
 
@@ -284,7 +284,7 @@ Wersja robocza wybranego formatu jest oznaczona jako dostępna do użycia w przy
 
 ### <a name="convert-the-generated-check-to-a-pdf"></a><a name="ExampleConvertToPDF"></a>Przekonwertuj wygenerowane wyniki kontroli na plik PDF
 
-Zgodnie z opisem w temacie [Generowanie drukowalnych formularzy FTI](er-generate-printable-fti-forms.md#finland) z możliwością drukowania można wykorzystać specjalną czcionkę do tworzenia kodów kreskowych w generowanym dokumencie. W takim przypadku dodatkowe przekształcenia wygenerowanego dokumentu mogą zależeć od dostępności tej czcionki w środowisku transformacji. Jeśli na przykład użytkownik spróbuje przekonwertować dokument na format PDF lub wyświetlić go w środowisku, w którym brakuje czcionki, kody kreskowe nie będą renderowane poprawnie.
+Zgodnie z opisem w artykule [Generowanie drukowalnych formularzy FTI](er-generate-printable-fti-forms.md#finland) z możliwością drukowania można wykorzystać specjalną czcionkę do tworzenia kodów kreskowych w generowanym dokumencie. W takim przypadku dodatkowe przekształcenia wygenerowanego dokumentu mogą zależeć od dostępności tej czcionki w środowisku transformacji. Jeśli na przykład użytkownik spróbuje przekonwertować dokument na format PDF lub wyświetlić go w środowisku, w którym brakuje czcionki, kody kreskowe nie będą renderowane poprawnie.
 
 Jeśli jednak do tworzenia kodów kreskowych jest używane źródło danych **Kod kreskowy**, renderowanie tych kodów kreskowych nie zależy od żadnej czcionki. Dzięki temu można łatwo przekonwertować dokumenty zawierające kody kreskowe na format PDF. Na poniższej ilustracji przedstawiono Podgląd wygenerowanego czeku płatności, który został [przekonwertowany](electronic-reporting-destinations.md#OutputConversionToPDF) na format PDF, na podstawie ustawienia skonfigurowanego [miejsca docelowego](electronic-reporting-destinations.md) ER.
 

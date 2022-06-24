@@ -1,6 +1,6 @@
 ---
 title: Skonfiguruj pomoc dla aplikacji Finanse i Działania
-description: Ten temat zawiera informacje dotyczące składników systemu pomocy dla niektórych aplikacji Microsoft Dynamics 365.
+description: Ten artykuł zawiera informacje dotyczące składników systemu pomocy dla niektórych aplikacji Microsoft Dynamics 365.
 author: margoc
 ms.date: 08/11/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bac06e258a96bb50bb6de7957e3e5ed07e966127
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b002b374e5da619460c496b8f0d7a70b7194afd0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071015"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900137"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Skonfiguruj pomoc dla aplikacji Finanse i Działania
 
@@ -29,7 +29,7 @@ ms.locfileid: "8071015"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-W tym temacie znajduje się omówienie składników systemu pomocy dla aplikacji Finanse i Działania, takich jak Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce i Dynamics 365 Human Resources. W tym temacie omówiono również sposób łączenia tych składników oraz przedstawiono podsumowanie procesu tworzenia pomocy niestandardowej.
+W tym artykule znajduje się omówienie składników systemu pomocy dla aplikacji finansowych i operacyjnych, takich jak Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce i Dynamics 365 Human Resources. W tym artykule omówiono również sposób łączenia tych składników oraz przedstawiono podsumowanie procesu tworzenia pomocy niestandardowej.
 
 ## <a name="help-architecture"></a>Architektura modułu Pomoc
 

@@ -13,17 +13,17 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a00e20569f05730296ef611938a94b73ebb7f6f5
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: d59b5a2c99813fee2e12e30e8694edf6da7391d9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735326"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909257"
 ---
 # <a name="enter-applicant-and-application-data-manually"></a>Wprowadzanie danych kandydata i aplikacji ręcznie
 
 > [!NOTE]
-> Funkcje rekrutacji dostępne w tym temacie będą nazywane projektami rekrutacji i dotyczą kandydatów, zgłoszeń oraz projektów rekrutacji.  
+> Funkcje rekrutacji dostępne w tym artykule będą nazywane projektami rekrutacji i dotyczą kandydatów, zgłoszeń oraz projektów rekrutacji.  
 
 
 W tej procedurze pokazano sposób ręcznego obsługiwania informacji dotyczących kandydatów i ich zgłoszeń. Można wprowadzać i obsługiwać informacje osobiste, daty i godziny rozmów kwalifikacyjnych, referencje, kompetencje oraz wnioski kandydatów o zakwaterowanie. Można także aktualizować stany podań o pracę kandydatów i tworzyć listy lub wiadomości e-mail do komunikacji z kandydatami. Po utworzeniu rekordu kandydata jest tworzony rekord tej osoby w globalnej książce adresowej. Do stworzenia tej procedury wykorzystano dane z firmy demonstracyjnej **USMF**.

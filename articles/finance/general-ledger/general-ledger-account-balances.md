@@ -1,6 +1,6 @@
 ---
 title: Salda głównego konta księgowego
-description: W tym temacie opisano dwa sposoby wyświetlania sald kont księgi głównej — ze strony listy Bilans próbny i za pomocą raportów finansowych.
+description: W tym artykule opisano dwa sposoby wyświetlania sald kont księgi głównej — ze strony listy Bilans próbny i za pomocą raportów finansowych.
 author: aprilolson
 ms.date: 01/11/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8470929b6805ddf9b85bd03e3043c2953d5fcfd1
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: f00f221765e757d8d4c82e1a0e4b8721e33dc321
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716445"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874501"
 ---
 # <a name="general-ledger-account-balances"></a>Salda głównego konta księgowego
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano dwa sposoby wyświetlania sald kont księgi głównej — ze strony listy Bilans próbny i za pomocą raportów finansowych. Omówiono także sposoby aktualizacji sald zestawów wymiarów.
+W tym artykule opisano dwa sposoby wyświetlania sald kont księgi głównej — ze strony listy Bilans próbny i za pomocą raportów finansowych. Omówiono także sposoby aktualizacji sald zestawów wymiarów.
 
 Użytkownik może wyświetlić salda w księdze głównej na wiele różnych sposobów. To najchętniej używanych należą:
 

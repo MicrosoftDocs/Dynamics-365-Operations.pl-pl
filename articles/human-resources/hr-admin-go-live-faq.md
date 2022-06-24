@@ -1,6 +1,6 @@
 ---
 title: Rozpoczynanie eksploatacji — często zadawane pytania
-description: Ten temat zawiera listę często zadawanych pytań dotyczących sposobu przychodzenia do projektu implementacji Dynamics 365 Human Resources.
+description: Ten artykuł zawiera listę często zadawanych pytań dotyczących sposobu przychodzenia do projektu implementacji Dynamics 365 Human Resources.
 author: rachel-profitt
 ms.date: 10/13/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e5b0f58c7ebf03466805d20806316f6f1c32e4a4
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: dfb2434b0d0573f2edab228fcca77ee653d751a5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695368"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853111"
 ---
 # <a name="go-live-faq"></a>Rozpoczynanie eksploatacji — często zadawane pytania 
 
@@ -30,7 +30,7 @@ ms.locfileid: "8695368"
 
 
 
-Ten temat zawiera listę często zadawanych pytań dotyczących sposobu przychodzenia do projektu implementacji Dynamics 365 Human Resources. 
+Ten artykuł zawiera listę często zadawanych pytań dotyczących sposobu przychodzenia do projektu implementacji Dynamics 365 Human Resources. 
 
 ## <a name="when-can-i-configure-and-request-my-production-environment"></a>Kiedy mogę skonfigurować i zażądać mojego środowiska produkcyjnego? 
 

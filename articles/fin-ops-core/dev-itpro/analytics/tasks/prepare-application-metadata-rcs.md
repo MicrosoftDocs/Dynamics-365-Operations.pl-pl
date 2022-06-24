@@ -1,6 +1,6 @@
 ---
 title: Przygotowywanie metadanych aplikacji używanych w RCS
-description: W tym temacie opisano sposób tworzenia nowej konfiguracji raportowania zawierającej metadane aplikacji.
+description: W tym artykule opisano sposób tworzenia nowej konfiguracji raportowania zawierającej metadane aplikacji.
 author: NickSelin
 ms.date: 06/28/2019
 ms.topic: business-process
@@ -13,17 +13,17 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 71a33a69796b31c456bfcc5abbb3b18bcb1064be65c1c58b36656a9cebfbf47d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6b5e7f69653381e16b4a8a8def56845a41bb14b0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750581"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868805"
 ---
 # <a name="prepare-application-metadata-to-be-used-in-rcs"></a>Przygotowywanie metadanych aplikacji używanych w RCS
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie opisano sposób, w jaki użytkownik w roli administratora systemu lub programisty raportowania elektronicznego może utworzyć nową konfigurację raportowania elektronicznego (ER) zawierającą metadane aplikacji w celu projektowania konfiguracji mapowania modeli ER w usłudze Regulatory configuration service (RCS). Ta konfiguracja będzie używana do projektowania konfiguracji mapowania przykładowego modelu ER w celu uzyskania dostępu do transakcji handlu zagranicznego.  W tym przykładzie utworzysz konfigurację dla przykładowej firmy Litware, Inc. Kroki te można wykonać w dowolnej firmie. Aby wykonać te kroki, należy najpierw wykonać kroki w procedurze [Tworzenie dostawców konfiguracji i oznacz je jako aktywne](er-configuration-provider-mark-it-active-2016-11.md).
+W tym temacie opisano sposób, w jaki użytkownik w roli administratora systemu lub programisty raportowania elektronicznego może utworzyć nową konfigurację raportowania elektronicznego (ER) zawierającą metadane aplikacji w celu projektowania konfiguracji mapowania modeli ER w usłudze Regulatory configuration service (RCS). Ta konfiguracja będzie używana do projektowania konfiguracji mapowania przykładowego modelu ER w celu uzyskania dostępu do transakcji handlu zagranicznego.  W tym przykładzie utworzysz konfigurację dla przykładowej firmy Litware, Inc. Kroki te można wykonać w dowolnej firmie. Aby wykonać te kroki, należy najpierw wykonać kroki w artykule [Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych](er-configuration-provider-mark-it-active-2016-11.md).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 1.    Wybierz kolejno opcje **Administrowanie organizacją** > **Obszary robocze** > **Raportowanie elektroniczne**. 

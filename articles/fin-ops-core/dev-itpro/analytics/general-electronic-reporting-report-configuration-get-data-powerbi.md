@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie w module Raportowanie elektroniczne (ER) ściągania danych do usługi Power BI
-description: W tym temacie wyjaśniono sposób wykorzystania konfiguracji raportowania elektronicznego (ER) do organizowania przesyłania danych do usług Power BI.
+description: W tym artykule wyjaśniono sposób wykorzystania konfiguracji raportowania elektronicznego (ER) do organizowania przesyłania danych do usług Power BI.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: article
@@ -14,31 +14,31 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: aa9a47c9ee7c76322fd2d9bfcf5fc61a50bf421321891b3c78a782be6a9f8e6a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e6903513dec4da20dbc4463fbae6a406fc06e1a6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740949"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896742"
 ---
 # <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Konfigurowanie w module Raportowanie elektroniczne (ER) ściągania danych do usługi Power BI
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono sposób wykorzystania konfiguracji raportowania elektronicznego (ER) do organizowania przesyłania danych do usług Power BI. Na potrzeby przykładu użyto transakcji Intrastat jako danych biznesowych, które muszą zostać przesłane. Funkcja wizualizacja mapy w programie Power BI wykorzystuje te dane transakcji Intrastat do przedstawienia widoku umożliwiającego analizę działań importowych/eksportowych firmy w raporcie programu Power BI.
+W tym artykule wyjaśniono sposób wykorzystania konfiguracji raportowania elektronicznego (ER) do organizowania przesyłania danych do usług Power BI. Na potrzeby przykładu w tym artykule użyto transakcji Intrastat jako danych biznesowych, które muszą zostać przesłane. Funkcja wizualizacja mapy w programie Power BI wykorzystuje te dane transakcji Intrastat do przedstawienia widoku umożliwiającego analizę działań importowych/eksportowych firmy w raporcie programu Power BI.
 
 ## <a name="overview"></a>Omówienie
 
-Microsoft Power BI to zbiór usług oprogramowania, aplikacji i łączników, które wspólnie wydobywają z zewnętrznych źródeł danych spójne, realistyczne wizualnie i interaktywne wnioski. Raportowanie elektroniczne (ER) pozwala użytkownikom łatwo konfigurować źródła danych i zaplanować transfer danych z aplikacji do Power BI. Dane są przesyłane jako pliki w formacie arkusza OpenXML (plik skoroszytu programu Microsoft Excel). Przesłane pliki są przechowywane na serwerze programu Microsoft SharePoint, który został skonfigurowany do tego celu. Przechowywane pliki są używane w programie Power BI do tworzenia raportów zawierających wizualizacje (tabele, wykresy, mapy i tak dalej). Raporty programu Power BI są udostępniane użytkownikom programu Power BI i można je otwierać w pulpitach nawigacyjnych programu Power BI i na stronach aplikacji. W tym temacie wyjaśniono następujące zadania:
+Microsoft Power BI to zbiór usług oprogramowania, aplikacji i łączników, które wspólnie wydobywają z zewnętrznych źródeł danych spójne, realistyczne wizualnie i interaktywne wnioski. Raportowanie elektroniczne (ER) pozwala użytkownikom łatwo konfigurować źródła danych i zaplanować transfer danych z aplikacji do Power BI. Dane są przesyłane jako pliki w formacie arkusza OpenXML (plik skoroszytu programu Microsoft Excel). Przesłane pliki są przechowywane na serwerze programu Microsoft SharePoint, który został skonfigurowany do tego celu. Przechowywane pliki są używane w programie Power BI do tworzenia raportów zawierających wizualizacje (tabele, wykresy, mapy i tak dalej). Raporty programu Power BI są udostępniane użytkownikom programu Power BI i można je otwierać w pulpitach nawigacyjnych programu Power BI i na stronach aplikacji. W tym artykule wyjaśniono następujące zadania:
 
-- Konfigurowanie rozwiązania Dynamics 365 Finance Microsoft.
+- Konfigurowanie aplikacji Microsoft Dynamics 365 Finance.
 - Przygotowywanie konfiguracji formatu ER do pobierania danych z aplikacji Finance.
 - Skonfigurowanie środowiska ER do przesyłania danych do programu Power BI.
 - Używanie przesłanych danych do tworzenia raportu programu Power BI.
 - Udostępnianie raportów programu Power BI w Finance.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
-Aby wykonać przykład opisany w tym temacie, musisz mieć następujące uprawnienia dostępu:
+Aby wykonać przykład opisany w tym artykule, musisz mieć następujące uprawnienia dostępu:
 
 - Dostęp do jednej z następujących ról:
 

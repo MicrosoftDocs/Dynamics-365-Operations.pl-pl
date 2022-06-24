@@ -1,6 +1,6 @@
 ---
 title: Środowiska usługi
-description: Ten temat zawiera informacje o środowiskach usług dla fakturowania elektronicznego i wyjaśnia, jak je skonfigurować.
+description: Ten artykuł zawiera informacje o środowiskach usług dla fakturowania elektronicznego i wyjaśnia, jak je skonfigurować.
 author: dkalyuzh
 ms.date: 02/28/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a8a135098f71e1413cd20ff8ad4003f090ae3407
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 8c743c5b2fbc7dcc3ae04fa4d7ca0e65de6c2507
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371795"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901255"
 ---
 # <a name="service-environments"></a>Środowiska usługi
 
@@ -37,7 +37,7 @@ Ten typ partycjonowania pomaga zapewnić, że procesy fakturowania elektroniczne
 
 Środowiska usług muszą być tworzone i utrzymywane w usłudze Regulatory Configuration Service (RCS). Następnie, gdy będą gotowe, muszą zostać opublikowane w usłudze Fakturowania Elektronicznego. Proces publikowania wysyła parametry środowiska usługi z wystąpienia usługi RCS do usługi fakturowania elektronicznego.
 
-Jeśli nie ukończysz procesu publikowania po utworzeniu nowego środowiska usługi lub dostosowaniu istniejącego środowiska usługi (na przykład przez dodanie lub usunięcie użytkowników lub kluczy tajnych Microsoft Azure Key Vault), zmiany nie będą obowiązywać. Tylko środowiska opublikowane są dostępne przez Dynamics 365 Finance lub Dynamics 365 Supply Chain Management.
+Jeśli nie ukończysz procesu publikowania po utworzeniu nowego środowiska usługi lub dostosowaniu istniejącego środowiska usługi (na przykład przez dodanie lub usunięcie użytkowników lub kluczy tajnych Microsoft Azure Key Vault), zmiany nie będą obowiązywać. Tylko środowiska opublikowane są dostępne w aplikacji Dynamics 365 Finance lub Dynamics 365 Supply Chain Management.
 
 ## <a name="service-environment-statuses"></a>Stany środowiska usługi
 

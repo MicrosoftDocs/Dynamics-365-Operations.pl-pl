@@ -1,6 +1,6 @@
 ---
 title: Bank — przeszacowanie w walucie obcej
-description: Ten temat zawiera omówienie procesu bankowego przeszacowania w walucie obcej. Zawiera informacje dotyczące programu instalacyjnego, procesu, obliczenia dla procesu i wycofywania transakcji przeszacowania.
+description: Ten artykuł zawiera omówienie procesu bankowego przeszacowania w walucie obcej. Zawiera informacje dotyczące programu instalacyjnego, procesu, obliczenia dla procesu i wycofywania transakcji przeszacowania.
 author: kweekley
 ms.date: 05/16/2019
 ms.topic: article
@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: a8ce792fdc0c6b441deaead32db04ee0246becc9
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: d68232af3e87cef2f86213211e6c87f7d654df33
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711211"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863109"
 ---
 # <a name="bank-foreign-currency-revaluation"></a>Bank — przeszacowanie w walucie obcej
 
 [!include [banner](../includes/banner.md)]
 
 
-Ten temat zawiera omówienie procesu bankowego przeszacowania w walucie obcej. Wyjaśnia, jak ustawić i uruchomić proces i zawiera informacje o obliczeniach dla procesu. Ponadto wyjaśniono, jak wycofać transakcje przeszacowania, gdy jest wymagane wycofanie.
+Ten artykuł zawiera omówienie procesu bankowego przeszacowania w walucie obcej. Wyjaśnia, jak ustawić i uruchomić proces i zawiera informacje o obliczeniach dla procesu. Ponadto wyjaśniono, jak wycofać transakcje przeszacowania, gdy jest wymagane wycofanie.
 
 Konwencje księgowe wymagają, aby podczas zamknięcia okresu salda kont banku w walutach obcych zostały przeszacowane przy użyciu różnych typów kursów wymiany (bieżących, historycznych, średnich itp.). Bankowe przeszacowanie w walucie obcej może służyć do przeszacowywania jednego lub więcej kont bankowych. Ta funkcja jest także dostępna globalnie. W związku z tym na jednej stronie można przeszacować rachunki bankowe wszystkich podmiotów prawnych, do których masz dostęp.
 

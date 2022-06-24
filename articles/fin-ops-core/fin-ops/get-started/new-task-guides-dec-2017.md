@@ -1,6 +1,6 @@
 ---
 title: Nowe lub zaktualizowane przewodniki po zadaniach (grudzień 2017 r.)
-description: Ten temat zawiera listę nowych lub zaktualizowanych przewodników po zadaniach, które zostały opublikowane w ujednoliconej bibliotece APQC firmy Microsoft (z grudnia 2016 r. — wszystkie języki) dla systemu Microsoft Dynamics 365 for Operations. Nie opublikowano nowej biblioteki ułatwiającej rozpoczęcie pracy.
+description: Ten artykuł zawiera listę nowych lub zaktualizowanych przewodników po zadaniach, które zostały opublikowane w ujednoliconej bibliotece APQC firmy Microsoft (z grudnia 2016 r. — wszystkie języki) dla systemu Microsoft Dynamics 365 for Operations. Nie opublikowano nowej biblioteki ułatwiającej rozpoczęcie pracy.
 author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 42bf8e4a1264b67ff11dad7417d16b6273e6feb36294596014faf562a4a0ef3c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5b111b686bc7fd06508878261e959a8dad92aacc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723062"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855557"
 ---
 # <a name="new-or-updated-task-guides-december-2017"></a>Nowe lub zaktualizowane przewodniki po zadaniach (grudzień 2017 r.)
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera listę nowych lub zaktualizowanych przewodników po zadaniach, które zostały opublikowane w ujednoliconej bibliotece APQC firmy Microsoft (z grudnia 2016 r. — wszystkie języki) dla systemu Microsoft Dynamics 365 for Operations.
+Ten artykuł zawiera listę nowych lub zaktualizowanych przewodników po zadaniach, które zostały opublikowane w ujednoliconej bibliotece APQC firmy Microsoft (z grudnia 2016 r. — wszystkie języki) dla systemu Microsoft Dynamics 365 for Operations.
 
 ## <a name="new-task-guides"></a>Nowe przewodniki po zadaniach
 

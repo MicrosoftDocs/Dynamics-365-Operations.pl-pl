@@ -1,6 +1,6 @@
 ---
 title: Plan świadczeń pracowników listy płac
-description: Ten temat zawiera szczegółowe informacje i przykładowe zapytanie dotyczące relacji jednostki korzyści pracownicze plany wynagrodzeń w Dynamics 365 Human Resources.
+description: Ten artykuł zawiera szczegółowe informacje i przykładowe zapytanie dotyczące relacji jednostki korzyści pracownicze plany wynagrodzeń w Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 07/28/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ade1c789716ea5f559a73c8551b7c1adf030b806
-ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
+ms.openlocfilehash: ef45855d9e60131ac065ae6e2769b71ae3f69537
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2022
-ms.locfileid: "8533804"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902293"
 ---
 # <a name="payroll-worker-benefit-plan"></a>Plan świadczeń pracowników listy płac
 
@@ -27,7 +27,7 @@ ms.locfileid: "8533804"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-W tym temacie opisano encję plan korzyści stałych dla Dynamics 365 Human Resources.
+W tym artykule opisano jednostkę planu korzyści stałych dla Dynamics 365 Human Resources.
 
 Nazwa fizyczna: mshr_payrollworkerbenefitplanentities.
 

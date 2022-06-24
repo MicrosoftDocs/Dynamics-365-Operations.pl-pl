@@ -1,6 +1,6 @@
 ---
 title: Reguły eliminacji
-description: Ten temat zawiera informacje o różnych regułach eliminacji i opcjach raportowania eliminacji.
+description: Ten artykuł zawiera informacje o różnych regułach eliminacji i opcjach raportowania eliminacji.
 author: aprilolson
 ms.date: 01/11/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e062e7541871d77803cbed475d715621b19537f1
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 3eb3ea117959dbc51eb5666aad60299210ff3ac5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722641"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864318"
 ---
 # <a name="elimination-rules"></a>Reguły eliminacji
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje o różnych regułach eliminacji i opcjach raportowania eliminacji.
+Ten artykuł zawiera informacje o różnych regułach eliminacji i opcjach raportowania eliminacji.
 
 Transakcje eliminacji są wymagane, gdy firma macierzysta współpracuje z przynajmniej jednym oddziałem firmy oraz korzysta ze skonsolidowanych raportów finansowych. Skonsolidowane sprawozdania finansowe muszą zawierać tylko transakcje między skonsolidowaną organizacją a innymi podmiotami spoza tej organizacji. Z tego względu transakcje między firmami, które znajdują się w tej samej organizacji, należy usunąć lub wyeliminować z księgi głównej, aby nie były wyświetlane w raportach finansowych. Istnieje wiele sposobów przygotowania raportu na temat eliminacji:
 
@@ -34,7 +34,7 @@ Transakcje eliminacji są wymagane, gdy firma macierzysta współpracuje z przyn
 -   Raporty finansowe mogą pokazywać konta i wymiary eliminacji w określonym wierszu lub kolumnie.
 -   Odrębna osoba prawna może służyć do księgowania transakcji ręcznej do śledzenia eliminacji.
 
-Temat poświęcony jest regułom eliminacji, które są przetwarzane w firmie konsolidacji i eliminacji. Można określić reguły eliminacji w celu utworzenia transakcji eliminacji w firmie określonej jako firma docelowa dla eliminacji. Ta firma docelowa jest znana jako firma z wpisami eliminacji. Arkusze eliminacji mogą być generowane albo podczas procesu konsolidacji, albo za pomocą propozycji arkusza eliminacji. Przed skonfigurowaniem reguł eliminacji należy zapoznać się z następującymi terminami:
+Artykuł jest poświęcony regułom eliminacji, które są przetwarzane w firmie konsolidacji i eliminacji. Można określić reguły eliminacji w celu utworzenia transakcji eliminacji w firmie określonej jako firma docelowa dla eliminacji. Ta firma docelowa jest znana jako firma z wpisami eliminacji. Arkusze eliminacji mogą być generowane albo podczas procesu konsolidacji, albo za pomocą propozycji arkusza eliminacji. Przed skonfigurowaniem reguł eliminacji należy zapoznać się z następującymi terminami:
 
 -   **Źródłowa firma** — Firma, w której zostały zaksięgowane kwoty, które są eliminowane.
 -   **Firma docelowa** — Firma, w której są księgowane reguły eliminacji.

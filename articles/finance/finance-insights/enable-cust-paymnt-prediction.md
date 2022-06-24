@@ -1,6 +1,6 @@
 ---
 title: Włączanie prognoz płatności odbiorcy
-description: W tym temacie wyjaśniono, jak włączyć i konfigurować funkcję prognozowania płatności odbiorcy w Finance Insights.
+description: W tym artykule wyjaśniono, jak włączyć i konfigurować funkcję prognozowania płatności odbiorcy w Finance Insights.
 author: ShivamPandey-msft
 ms.date: 02/11/2022
 ms.topic: article
@@ -15,21 +15,21 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: a52d38e8fb842c7fbc8adf60a6daaef6cdc9d5ec
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: f04ee9db5efe3595dea30d641c5097d6b90c0d77
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713368"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898215"
 ---
 # <a name="enable-customer-payment-predictions"></a>Włączanie prognoz płatności odbiorcy
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak włączyć i konfigurować funkcję prognozowania płatności odbiorcy w Finance Insights. Włączenie funkcji w obszarze roboczym **Zarządzanie funkcją** i wprowadzenie ustawień konfiguracji na stronie **Konfiguracja Finance insights**. Ten temat zawiera również informacje, które mogą pomóc w skutecznym użyciu tej funkcji.
+W tym artykule wyjaśniono, jak włączyć i konfigurować funkcję prognozowania płatności odbiorcy w Finance Insights. Włączenie funkcji w obszarze roboczym **Zarządzanie funkcją** i wprowadzenie ustawień konfiguracji na stronie **Konfiguracja Finance insights**. Ten artykuł zawiera również informacje, które mogą pomóc w skutecznym użyciu tej funkcji.
 
 > [!NOTE]
-> Przed wykonaniem poniższych kroków należy się upewnić, że wstępne kroki zostały wykonane w temacie [Konfiguracja dla modułu Finance insights](configure-for-fin-insites.md).
+> Przed wykonaniem poniższych kroków należy się upewnić, że wstępne kroki zostały wykonane w artykule [Konfiguracja dla modułu Finance insights](configure-for-fin-insites.md).
 
 1. Włącz funkcję Wgląd w płatności od odbiorców:
 

@@ -1,6 +1,6 @@
 ---
 title: Tworzenie grupy wynajmu
-description: W tym temacie opisano sposób konfigurowania grup wynajmu. Grupy wynajmu są wymagane do tworzenia nowych wynajmów.
+description: W tym artykule opisano sposób konfigurowania grup wynajmu. Grupy wynajmu są wymagane do tworzenia nowych wynajmów.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 49a905e9f27f01898628e88c7af781aed1f25ec7
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: cd1a6f61346233bf205657917c65fccd82167f7f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8714153"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895030"
 ---
 # <a name="create-a-lease-group"></a>Tworzenie grupy wynajmu
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób konfigurowania grup wynajmu. Grupy wynajmu są wymagane do tworzenia nowych wynajmów. Księgi wynajmu są skojarzone z każdą grupą wynajmu. Księgi wynajmu decydują o domyślnych księgach, które muszą zostać utworzone dla każdego wynajmu. Określone konta można przypisać do grupy wynajmu na stronie **Parametry księgowania wynajmu**.
+W tym artykule opisano sposób konfigurowania grup wynajmu. Grupy wynajmu są wymagane do tworzenia nowych wynajmów. Księgi wynajmu są skojarzone z każdą grupą wynajmu. Księgi wynajmu decydują o domyślnych księgach, które muszą zostać utworzone dla każdego wynajmu. Określone konta można przypisać do grupy wynajmu na stronie **Parametry księgowania wynajmu**.
 
 ## <a name="create-a-lease-book-and-add-a-lease-group"></a>Tworzenie książki wynajmu i dodawanie grupy wynajmu
 

@@ -1,6 +1,6 @@
 ---
 title: Zasady podziału księgowań
-description: Ten temat zawiera informacje o dystrybucjach księgowych i opisuje dostępne opcje przetwarzania.
+description: Ten artykuł zawiera informacje o dystrybucjach księgowych i opisuje dostępne opcje przetwarzania.
 author: sunfzam
 ms.date: 09/17/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c8178836318600fd6e702d097062d30b91e6c1a
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 6aa3dce4bfda7f3c9243387cd398f08e7b990b2f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735585"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894208"
 ---
 # <a name="accounting-distributions"></a>Zasady podziału księgowań
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje o zasadach podziału księgowań oraz opis opcji dostępnych do przetwarzania tych zasad. Zasady podziału księgowań są używane do przypisywania kwot pieniężnych z dokumentu źródłowego do określonych kont księgowych. 
+Ten artykuł zawiera informacje o zasadach podziału księgowań oraz opis opcji dostępnych do przetwarzania tych zasad. Zasady podziału księgowań są używane do przypisywania kwot pieniężnych z dokumentu źródłowego do określonych kont księgowych. 
 
 Zasady podziału księgowań są funkcją na poziomie programu, która jest używana i rozszerzona przez każdy dokument źródłowy, taki jak zamówienie zakupu, faktura od dostawcy, raport z wydatków i faktura niezależna. Domyślnie generowane są domyślne zasady podziału księgowań dla każdego wiersza dokumentu źródłowego i kwoty pieniężnej i jest włączony do modyfikacji warunkowo. 
 

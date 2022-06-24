@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d81d20045c7b06de01a023d1a34ee653dd696ff1
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: e92e6aeab949567e65a13ebdd92f0e5b306ccd30
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711328"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861713"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Nowości i zmiany w systemie Dynamics AX 7.0 (luty 2016)
 
@@ -320,7 +320,7 @@ Ta funkcja działa niezależnie od metod wyceny, które są przypisane do produk
 <td>Dostęp do pomocy dla procedur (przewodniki po zadaniach) i omówień różnych elementów systemu za pomocą przycisku <strong>Pomoc</strong>.</td>
 <td>System AX 2012 wskazuje tematy HTML, które są przechowywane na lokalnym serwerze sieciowym. Klienci i partnerzy można utworzyć swoją własną bibliotekę tematów pomocy.</td>
 <td>System pomocy w bieżącej wersji systemu Dynamics AX służy do wyświetlania przewodników po zadaniach zapisanych w Microsoft Dynamics Lifecycle Services (LCS) BPM. System pomocy wyświetla też tematy z witryny dokumentów firmy Microsoft. Aby uzyskać więcej informacji, zapoznaj się z <a href="help-overview.md" data-raw-source="[Help system](help-overview.md)">System Pomocy</a> i <a href="new-task-guides-available-february-2016.md" data-raw-source="[New task guides (February 2016)](new-task-guides-available-february-2016.md)">nowe przewodniki po zadaniach (luty 2016)</a>.</td>
-<td>Przewodniki po zadaniach oferują interaktywne prezentacje poszczególnych kroków w zadaniach i procesach biznesowych. Przewodniki po zadaniach udostępnione przez Microsoft można pobrać i dostosować. Temat przedstawia szybsze i bardziej elastyczne sposoby tworzenia, dostarczania i aktualizowania dokumentacji produktu. To pomaga zagwarantować, że użytkownik ma dostęp do najnowszych informacji technicznych.</td>
+<td>Przewodniki po zadaniach oferują interaktywne prezentacje poszczególnych kroków w zadaniach i procesach biznesowych. Przewodniki po zadaniach udostępnione przez Microsoft można pobrać i dostosować. Artykuł przedstawia szybsze i bardziej elastyczne sposoby tworzenia, dostarczania i aktualizowania dokumentacji produktu. To pomaga zagwarantować, że użytkownik ma dostęp do najnowszych informacji technicznych.</td>
 </tr>
 </tbody>
 </table>

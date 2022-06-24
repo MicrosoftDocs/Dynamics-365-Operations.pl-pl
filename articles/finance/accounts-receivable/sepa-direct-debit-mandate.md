@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1fec85e63b0c3c2875a153c55b1fd30a2c55d5fd
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 0bea974750a6ac62d8ddeea5d9d4457f4846cb79
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726108"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891646"
 ---
 # <a name="set-up-sepa-direct-debit-mandate"></a>Konfigurowanie polecenia zapłaty SEPA
 
 [!include [banner](../includes/banner.md)]
 
-Polecenie zapłaty SEPA służy do gromadzenia środków z konta bankowego odbiorcy przez wierzyciela pod warunkiem, że odbiorca udzielił na to pisemnej zgody wierzycielowi. Odbiorca podpisuje zgodę, która upoważnia wierzyciela do pobierania płatności i instruuje bank odbiorcy, że ma on dokonać wypłaty. Ten temat uporządkowano tak, aby przedstawiał proces konfigurowania zgód na polecenie zapłaty SEPA.
+Polecenie zapłaty SEPA służy do gromadzenia środków z konta bankowego odbiorcy przez wierzyciela pod warunkiem, że odbiorca udzielił na to pisemnej zgody wierzycielowi. Odbiorca podpisuje zgodę, która upoważnia wierzyciela do pobierania płatności i instruuje bank odbiorcy, że ma on dokonać wypłaty. Ten artykuł uporządkowano tak, aby przedstawiał proces konfigurowania zgód na polecenie zapłaty SEPA.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 W poniższej tabeli przedstawiono wymagania wstępne, które muszą istnieć przed rozpoczęciem.

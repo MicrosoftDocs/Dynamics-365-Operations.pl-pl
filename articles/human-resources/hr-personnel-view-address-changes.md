@@ -1,6 +1,6 @@
 ---
 title: Wyświetlanie zmian adresu i zarządzanie nimi
-description: W tym temacie wyjaśniono, w jaki sposób można przeglądać i zarządzać zmianami adresu w Dynamics 365 Human Resources.
+description: W tym artykule wyjaśniono, w jaki sposób można przeglądać i zarządzać zmianami adresu w Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-08-07
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 819f22c58da485980c38d35dcc6dda6aebacf423
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 744ab532fcc663f25ce376817779924bbef15432
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695852"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899593"
 ---
 # <a name="view-and-manage-address-changes"></a>Wyświetlanie zmian adresu i zarządzanie nimi
 
@@ -27,7 +27,7 @@ ms.locfileid: "8695852"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-W tym temacie wyjaśniono, w jaki sposób można wyświetlać zmiany adresu i zarządzać nimi na stronie **Edytuj dane szczegółów pracownika** (z obszaru roboczego **Samoobsługa pracownika etatowego**) lub szczegółów **Pracownika** w programie Dynamics 365 Human Resources.
+W tym artykule wyjaśniono, w jaki sposób można wyświetlać zmiany adresu i zarządzać nimi na stronie **Edytuj dane szczegółów pracownika** (z obszaru roboczego **Samoobsługa pracownika etatowego**) lub szczegółów **Pracownika** w programie Dynamics 365 Human Resources.
 
 Wiele organizacji chce, aby pracownicy mogli zarządzać własnymi szczegółami, korzystając z funkcji samoobsługi. Można zezwolić użytkownikom na aktualizowanie ich adresów w obszarze roboczym **samoobsługi pracownika etatowego**. Następnie można monitorować te zmiany w obszarze roboczym **zarządzanie kadrami**. Aby użyć tej funkcji, należy określić liczbę dni, które mają zostać wyświetlone, aby wyświetlić zmiany na stronie **Parametry modułu Human Resources**.
 

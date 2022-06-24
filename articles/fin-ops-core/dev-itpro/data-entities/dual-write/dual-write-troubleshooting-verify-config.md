@@ -1,6 +1,6 @@
 ---
 title: Sprawdzanie poprawności konfiguracji podwójnego zapisu w aplikacjach Finanse i Działania i usłudze Dataverse
-description: W tym temacie wyjaśniono, jak można określić, czy podwójne zapisywanie jest skonfigurowane w aplikacjach Finanse i Działania i w Dataverse.
+description: W tym artykule wyjaśniono, jak można określić, czy podwójny zapis zostały skonfigurowany w aplikacjach finansowych i operacyjnych oraz usłudze Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 3fa16a450032464e445ae166f0699fe0dc388071
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 7131e6c2c4ca4d9c6bb84ad74bf425faf28bd92c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062807"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884467"
 ---
 # <a name="verify-dual-write-configuration-in-finance-and-operations-apps-and-dataverse"></a>Sprawdzanie poprawności konfiguracji podwójnego zapisu w aplikacjach Finanse i Działania i usłudze Dataverse
 
@@ -24,7 +24,7 @@ ms.locfileid: "8062807"
 
 
 
-Ten temat zawiera informacje dotyczące rozwiązywania problemów dotyczących integracji podwójnego zapisu między aplikacjami Finanse i Działania i Dataverse. W tym temacie wyjaśniono, jak można określić, czy podwójne zapisywanie jest skonfigurowane w aplikacjach Finanse i Działania i w Dataverse.
+Ten artykuł zawiera informacje dotyczące rozwiązywania problemów dotyczących integracji podwójnego zapisu między aplikacjami finansowymi i operacyjnymi oraz usługą Dataverse. W tym temacie wyjaśniono, jak można określić, czy podwójne zapisywanie jest skonfigurowane w aplikacjach Finanse i Działania i w Dataverse.
 
 ## <a name="verify-that-dual-write-is-configured-in-a-finance-and-operations-app"></a>Sprawdzanie poprawności konfiguracji podwójnego zapisu w aplikacjach Finanse i Działania
 

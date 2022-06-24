@@ -1,6 +1,6 @@
 ---
 title: Intrastat — Francja
-description: Ten temat zawiera informacje dotyczące deklaracji Intrastat we Francji.
+description: Ten artykuł zawiera informacje dotyczące deklaracji Intrastat we Francji.
 author: anasyash
 ms.date: 07/9/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: 4d38576e1c6b40242d5c6313fb06f08e170b4466
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: e86d7c8f28b1b3df0066a588d380965c21dc98a7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7487907"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887861"
 ---
 # <a name="french-intrastat"></a>Intrastat — Francja
 
@@ -97,7 +97,7 @@ W tabeli jest również wskazywany poziom raportu tego pola. Pole może mieć **
     3. Na skróconej karcie **hierarchii kodów asortymentu** w polu **Hierarchia kategorii** wybierz pozycję **Intrastat**.
     4. Na skróconej karcie **Ogólne** w polu **Kod transakcji** wybierz kod używany do przeniesienia towarów.
     5. W polu **Nota kredytowa** wybierz kod używany do zwrotów towarów.
-    6. W polu **Poziom zobowiązania dla eksportu** wprowadź poziom szczegółowości raportu o eksporcie. Wybierany poziom wpływa na wiersze wyświetlane w raporcie. Aby uzyskać więcej informacji, zobacz tabele na początku tego tematu.
+    6. W polu **Poziom zobowiązania dla eksportu** wprowadź poziom szczegółowości raportu o eksporcie. Wybierany poziom wpływa na wiersze wyświetlane w raporcie. Aby uzyskać więcej informacji, zobacz tabele na początku tego artykułu.
 
 3. Przejdź do **Administrowanie organizacją** > **Organizacje** > **Firmy**, wybierz swoją firmę, a następnie wykonaj następujące kroki:
 

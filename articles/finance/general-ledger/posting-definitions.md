@@ -1,6 +1,6 @@
 ---
 title: Definicje księgowania
-description: Ten temat zawiera informacje o definicjach księgowania oraz o sposobach ich tworzenia i łączenia. Dla obsługiwanych typów księgowania i dokumentów można używać definicji księgowania zamiast profili księgowania do klasyfikacji kont głównych i wymiarów finansowych dla zapisów księgowych.
+description: Ten artykuł zawiera informacje o definicjach księgowania oraz o sposobach ich tworzenia i łączenia. Dla obsługiwanych typów księgowania i dokumentów można używać definicji księgowania zamiast profili księgowania do klasyfikacji kont głównych i wymiarów finansowych dla zapisów księgowych.
 author: kweekley
 ms.date: 09/03/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 056300768aa0bc5e1981e1d43de03fabba21a5fa
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: f60506e039623ae7a97f6b4e835f751da15ac0c1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722018"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898157"
 ---
 # <a name="posting-definitions"></a>Definicje księgowania
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje o definicjach księgowania oraz o sposobach ich tworzenia i łączenia.
+Ten artykuł zawiera informacje o definicjach księgowania oraz o sposobach ich tworzenia i łączenia.
 Dla obsługiwanych typów księgowania i dokumentów można używać definicji księgowania zamiast profili księgowania do klasyfikacji kont głównych i wymiarów finansowych dla zapisów księgowych. Obsługiwane dokumenty i typy księgowania można wyświetlić na stronie **Definicje księgowania transakcji**. 
 
 Aby rozpocząć korzystanie z definicji księgowania, należy wybrać opcję **Użyj definicji księgowania** na stronie **Parametry księgi głównej**. Nawet jeśli korzystasz z definicji księgowania, nadal musisz zdefiniować profile księgowania dla inicjowanych wpisów i nieobsługiwanych typów księgowania i dokumentów. 

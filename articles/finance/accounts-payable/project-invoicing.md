@@ -1,6 +1,6 @@
 ---
 title: Fakturowanie projektu
-description: Ten temat zawiera omówienie zasad fakturowania projektów rozliczanych według czasu i materiałów oraz projektów o stałej cenie. Znajdują się tu informacje dotyczące propozycji faktur (faktur wstępnych), kontroli faktur, fakturowania akonto, wystawiania faktur przed dostawców i faktur korygujących.
+description: Ten artykuł zawiera omówienie zasad fakturowania projektów rozliczanych według czasu i materiałów oraz projektów o stałej cenie. Znajdują się tu informacje dotyczące propozycji faktur (faktur wstępnych), kontroli faktur, fakturowania akonto, wystawiania faktur przed dostawców i faktur korygujących.
 author: TaylorVH
 ms.date: 07/10/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-07-06
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: bdb5c9162ab85632c8780a737df0998e4cd34f0c
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 4af44127d80c943ed9cebeac21d7e9c8372910f3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733856"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861684"
 ---
 # <a name="project-invoicing"></a>Fakturowanie projektu
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera omówienie zasad fakturowania projektów rozliczanych według czasu i materiałów oraz projektów o stałej cenie. Znajdują się tu informacje dotyczące propozycji faktur (faktur wstępnych), kontroli faktur, fakturowania akonto, wystawiania faktur przed dostawców i faktur korygujących.
+Ten artykuł zawiera omówienie zasad fakturowania projektów rozliczanych według czasu i materiałów oraz projektów o stałej cenie. Znajdują się tu informacje dotyczące propozycji faktur (faktur wstępnych), kontroli faktur, fakturowania akonto, wystawiania faktur przed dostawców i faktur korygujących.
 
 Typ projektu określa, która procedura fakturowania powinna zostać zastosowana. Tylko dwa typy projektów zewnętrznych, czas i materiały oraz o stałej cenie, mogą być fakturowane. Projekty typu czas i materiały oraz projekty o stałej cenie są zawsze dołączane do umowy dotyczącej projektu.
 

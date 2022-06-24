@@ -1,6 +1,6 @@
 ---
 title: Odinstaluj rozwiązania do aranżacji aplikacji z podwójnym zapisem
-description: W tym temacie opisano, jak odinstalować rozwiązania do aranżacji aplikacji z podwójnym zapisem.
+description: W tym artykule opisano, jak odinstalować rozwiązania do aranżacji aplikacji z podwójnym zapisem.
 author: RamaKrishnamoorthy
 ms.date: 03/16/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2022-01-21
-ms.openlocfilehash: 781b2cb19a563d5712fa65718c93bfdc242f0c4a
-ms.sourcegitcommit: abfaef124c8747827d6f297821f01f1f6fbca6b7
+ms.openlocfilehash: 676802ddabac69db4947cf806e9103f67cece3de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "8455326"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870382"
 ---
 # <a name="uninstall-dual-write-application-orchestration-solutions"></a>Odinstaluj rozwiązania do aranżacji aplikacji z podwójnym zapisem
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie opisano, jak odinstalować rozwiązania do aranżacji aplikacji z podwójnym zapisem.
+W tym artykule opisano, jak odinstalować rozwiązania do aranżacji aplikacji z podwójnym zapisem.
 
 Niektórzy klienci nieumyślnie instalują pakiet orkiestracji aplikacji do podwójnego zapisu, który instaluje wiele rozwiązań w swoim środowisku Microsoft Dataverse. Instalacja dodatkowych rozwiązań w pakiecie może spowodować nieoczekiwane i niepożądane problemy.
 

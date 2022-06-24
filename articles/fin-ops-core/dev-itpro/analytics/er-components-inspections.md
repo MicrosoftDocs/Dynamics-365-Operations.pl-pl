@@ -1,6 +1,6 @@
 ---
 title: Sprawdzanie skonfigurowanego składnika ER, aby zapobiec problemom w czasie wykonywania
-description: W tym temacie opisano sposób sprawdzania skonfigurowanych składników raportowania elektronicznego (ER) w celu zapobiegania problemom, które mogą wystąpić w czasie wykonywania.
+description: W tym artykule opisano sposób sprawdzania skonfigurowanych składników raportowania elektronicznego (ER) w celu zapobiegania problemom, które mogą wystąpić w czasie wykonywania.
 author: NickSelin
 ms.date: 01/03/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c63ffc6316d21d36bb2aad57194b8aa1c477607e
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: c30f1a0d6ca4a50645bada39abbbf2f58777abb8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8074798"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864844"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Sprawdzanie skonfigurowanego składnika ER, aby zapobiec problemom w czasie wykonywania
 
@@ -80,7 +80,7 @@ Moduł ER grupuje inspekcje sprawdzające spójność w następujące kategorie:
 
 ## <a name="list-of-inspections"></a>Lista inspekcji
 
-W poniższej tabeli znajduje się omówienie inspekcji dostępnych w module ER. Aby uzyskać więcej informacji dotyczących tych inspekcji, skorzystaj z łączy w pierwszej kolumnie, które powodują przejście do odpowiednich sekcji tego tematu. W tych sekcjach objaśniono typy składników, dla których są dostępne inspekcje w module ER, oraz sposób rekonfigurowania składników ER w celu lepszego zapobiegania problemom.
+W poniższej tabeli znajduje się omówienie inspekcji dostępnych w module ER. Aby uzyskać więcej informacji dotyczących tych inspekcji, skorzystaj z łączy w pierwszej kolumnie, które powodują przejście do odpowiednich sekcji tego artykułu. W tych sekcjach objaśniono typy składników, dla których są dostępne inspekcje w module ER, oraz sposób rekonfigurowania składników ER w celu lepszego zapobiegania problemom.
 
 <table>
 <thead>

@@ -1,6 +1,6 @@
 ---
 title: Wyniki modeli uczenia maszynowego
-description: W tym temacie omówiono matryce pomyłek, problemy z klasyfikacją i dokładność w modelach uczenia maszynowego. Celem jest zwiększenie zrozumienia dokładności w wynikach przewidywania uczenia maszynowego.
+description: W tym artykule omówiono matryce pomyłek, problemy z klasyfikacją i dokładność w modelach uczenia maszynowego. Celem jest zwiększenie zrozumienia dokładności w wynikach przewidywania uczenia maszynowego.
 author: ShivamPandey-msft
 ms.date: 07/16/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: c57a023995e0bb58d4fba0a4fd2f147d07e51348
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 23df5979231fbd6908b6f1e7c3aca5dd3e0e733d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725968"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910179"
 ---
 # <a name="results-of-machine-learning-models"></a>Wyniki modeli uczenia maszynowego
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie omówiono matryce pomyłek, problemy z klasyfikacją i dokładność w modelach uczenia maszynowego. Celem jest zwiększenie zrozumienia dokładności w wynikach przewidywania uczenia maszynowego. Docelowi odbiorcy to m.in. inżynierowie, analitycy i menedżerowie, którzy chcą zdobywać wiedzę i umiejętności w dziedzinie nauki o danych.
+W tym artykule omówiono matryce pomyłek, problemy z klasyfikacją i dokładność w modelach uczenia maszynowego. Celem jest zwiększenie zrozumienia dokładności w wynikach przewidywania uczenia maszynowego. Docelowi odbiorcy to m.in. inżynierowie, analitycy i menedżerowie, którzy chcą zdobywać wiedzę i umiejętności w dziedzinie nauki o danych.
 
 ## <a name="confusion-matrix"></a>Matryca pomyłek
 Po wytrenowaniu nadzorowanego problemu uczenia maszynowego na zestawie danych historycznych jest on testowany przy użyciu danych wstrzymanych z procesu trenowania. W ten sposób można porównywać przewidywania z wytrenowanego modelu z rzeczywistymi wartościami. Matryca pomyłek stanowi sposób oceniania skuteczności problemu z klasyfikacją, a także jego błędów (to znaczy, kiedy „myli się”).
@@ -73,16 +73,16 @@ Dokładność to ważne narzędzie komunikacji z ekspertami, którzy nie znają 
 
 W scenariuszu przewidywania płatności można określić cel dla modelu uczenia maszynowego, który zawiera współczynniki w różnych zachowaniach płatności. Celem tego modelu powinno być poprawienie naiwnego przypuszczenia przez zmniejszenie liczby nieprawidłowych odpowiedzi o co najmniej 50 procent. Inaczej mówiąc, należy określić docelową dokładność, która dzieli różnicę między dokładnością naiwnego przypuszczenia a 100 procent.
 
-Poniższa tabela podsumowuje tę zasadę dla matryc pomyłek w tym temacie.
+Poniższa tabela podsumowuje tę zasadę dla matryc pomyłek w tym artykule.
 
-| Model   | Naiwne przypuszczenie | Wartość docelowa | Dokładność modelu | Czy cel został osiągnięty?                                          |
+| Model   | Naiwne przypuszczenie | Cel | Dokładność modelu | Czy cel został osiągnięty?                                          |
 |---------|-------------|--------|----------------|-----------------------------------------------------------|
 | Model 1 | 0.50        | 0.75   | 0.73           | Prawie. Ten model znacznie poprawia przypuszczenie. |
 | Model 2 | 0.80        | 0.90   | 0.83           | Nr Wymagana jest poprawa.                              |
 
 ## <a name="classification-f1-accuracy"></a>Dokładność klasyfikacji F1
 
-Ostatnim rozważaniem w tym temacie jest bardziej zaawansowana miara skuteczności klasyfikacji uczenia maszynowego, określana jako dokładność F1.
+Ostatnim rozważaniem w tym artykule jest bardziej zaawansowana miara skuteczności klasyfikacji uczenia maszynowego, określana jako dokładność F1.
 
 Przed zdefiniowaniem dokładności F1 należy wprowadzić dwie dodatkowe metryki: precyzję i trafność. Precyzja wskazuje, ile z łącznej liczby przewidywań określonych jako dodatnie jest prawidłowo przypisanych. Ta metryka jest również określana jako dodatnia wartość predykcyjna. Trafność to łączna liczba rzeczywistych pozytywnych przypadków, które zostały prawidłowo przewidziane. Ta metryka jest również określana jako czułość.
 
@@ -97,7 +97,7 @@ Miara F1 łączy precyzję i trafność. Wynik jest średnią harmoniczną dwóc
 
 - F1 = 2 × (precyzja × trafność) ÷ (precyzja + trafność)
 
-Przyjrzyjmy się konkretnemu przykładowi. Wcześniej w tym temacie mieliśmy przykład modelu, który przewiduje, czy zwierzę jest psem czy kotem. W tym miejscu ilustracja jest powtórzona.
+Przyjrzyjmy się konkretnemu przykładowi. Wcześniej w tym artykule mieliśmy przykład modelu, który przewiduje, czy zwierzę jest psem czy kotem. W tym miejscu ilustracja jest powtórzona.
 
 [![Przykład przewidywania gatunków (powtórzone).](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
 
@@ -111,7 +111,7 @@ Jak widać, wartość F1 jest pomiędzy wartościami precyzji i trafności.
 
 Chociaż dokładność F1 nie jest łatwa w zrozumieniu, dodaje niuans do prostej liczby dokładności. Może również być przydatna w przypadku niezrównoważonych zestawów danych, jak w następnej dyskusji.
 
-Sekcja [Dokładność modelu](#model-accuracy) w tym temacie porównuje następujące dwie matryce pomyłek. Nawet jeśli pierwszy model miał niższą dokładność, uznano, że jest bardziej przydatny, ponieważ wykazał się lepszą poprawą domyślnego przypuszczenia płatności na czas.
+Sekcja [Dokładność modelu](#model-accuracy) w tym artykule porównuje następujące dwie matryce pomyłek. Nawet jeśli pierwszy model miał niższą dokładność, uznano, że jest bardziej przydatny, ponieważ wykazał się lepszą poprawą domyślnego przypuszczenia płatności na czas.
 
 ![Przykład porównania przewidywania płatności z rzeczywistością.](media/payment-prediction-matrix.png)
 

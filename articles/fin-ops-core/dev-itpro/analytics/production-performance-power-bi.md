@@ -1,6 +1,6 @@
 ---
 title: Pakiet zawartości usługi Power BI Wydajność produkcji
-description: W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Power BI Wydajność produkcji.
+description: W tym artykule opisano, co się znajduje w pakiecie zawartości Wydajność produkcji w usłudze Power BI.
 author: AndersGirke
 ms.date: 12/19/2017
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 940e49b43ec1dba0917c67ad6ef4562351d175bcb1c0be7f98d00e73371e5346
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cf0d2bdc37efb66f7aee40f237413a2ef5d9f9f0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761423"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881469"
 ---
 # <a name="production-performance-power-bi-content"></a>Pakiet zawartości usługi Power BI Wydajność produkcji
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano, co się znajduje w pakiecie zawartości **Wydajność produkcji** usługi Microsoft Power BI. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
+W tym artykule opisano, co się znajduje w pakiecie zawartości **Wydajność produkcji** w usłudze Microsoft Power BI. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
 
 ## <a name="overview"></a>Przegląd
 
@@ -63,7 +63,7 @@ Następujące dane są używane dla stron raportów w pakiecie zawartości **Wyd
 
 Następująca tabela pokazuje najważniejsze zagregowane miary używane jako podstawa w pakiecie zawartości usługi Power BI.
 
-| Jednostka                   | Najważniejsze zagregowane miary  | Źródło danych dla aplikacji rozwiązania Finance and Operations | Pole              |
+| Jednostka                   | Najważniejsze zagregowane miary  | Źródło danych aplikacji Finance and Operations | Pole              |
 |--------------------------|-----------------------------|----------------------------------------|--------------------|
 | CostCalculation          | CostAmount                  | ProdCalcTransExpanded                  | CostAmount         |
 | CostCalculation          | CostMarkup                  | ProdCalcTransExpanded                  | CostMarkup         |

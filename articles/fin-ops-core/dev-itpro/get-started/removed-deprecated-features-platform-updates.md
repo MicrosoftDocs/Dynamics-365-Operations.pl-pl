@@ -1,6 +1,6 @@
 ---
 title: Usunięte lub wycofane funkcje Platform
-description: W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia aktualizacji platformy z aplikacji finansowych i operacyjnych.
+description: W tym artykule opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia aktualizacji platformy z aplikacji finansowych i operacyjnych.
 author: sericks007
 ms.date: 05/24/2022
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 3de9b9ea0bd20d1346a7cdfd2f919f50374b164c
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 51165db8d15f0a57fd9bc1649dc6e3ca72875236
+ms.sourcegitcommit: 1fa1ac1fa25e977e98bc02ed5d9d39bd3a7a28d7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811254"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "8945812"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Usunięte lub wycofane funkcje Platform
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia aktualizacji platformy z aplikacji finansowych i operacyjnych.
+W tym artykule opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia aktualizacji platformy z aplikacji finansowych i operacyjnych.
 
 - *Usunięta* funkcja nie jest już dostępna w produkcie.
 - *Przestarzała* funkcja nie jest aktywnie tworzona i może zostać usunięta w przyszłej aktualizacji.
@@ -40,7 +40,7 @@ Szczegółowe informacje o obiektów w aplikacji Finanse i Działania można zna
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Pozbywamy się aplikacji mobilnej i platformy finansów i operacji (Dynamics 365), aby skonsolidować je z jedną platformą mobilną, którą jest Power Apps. |
-| **Zamieniona przez inną funkcję?**   | Tak, dzięki integracji z Power Platform można zbudować mobilne doświadczenia z danymi z aplikacji finansów i operacji. Więcej szczegółów znajdziesz w [Budowanie doświadczeń mobilnych](../power-platform/build-mobile-experiences.md). |
+| **Zamieniona przez inną funkcję?**   | Tak, dzięki integracji z Power Platform można zbudować mobilne doświadczenia z danymi z aplikacji finansów i operacji. Zobacz [wpis w blogu](https://cloudblogs.microsoft.com/dynamics365/it/2022/06/03/finance-and-operations-dynamics-365-mobile-app-to-be-deprecated/) oraz artykuł [Tworzenie doświadczeń mobilnych](../power-platform/build-mobile-experiences.md) w celu uzyskania dalszych informacji. |
 | **Powiązane obszary produktów**         | Aplikacje Finanse i Działania |
 | **Opcja wdrażania**              | Wszystko |
 | **Stan**                         | Wycofane. Data zakończenia wsparcia przewidziana jest na październik 2024 roku. |

@@ -1,6 +1,6 @@
 ---
 title: Prawa dostępu dla kontrolerów obiektów kosztów
-description: Ten temat zawiera informacje o uprawnieniach dostępu kontrolerów obiektu kosztów.
+description: Ten artykuł zawiera informacje o uprawnieniach dostępu kontrolerów obiektu kosztów.
 author: AndersGirke
 ms.date: 06/24/2017
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 13d562a4f42644b822c9548d1ea87d44a396b2c2
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: c40be758c5e5d1d1fb025630ed8321ae46251892
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733886"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903197"
 ---
 # <a name="access-rights-for-cost-object-controllers"></a>Prawa dostępu dla kontrolerów obiektów kosztów
 
@@ -35,10 +35,10 @@ Istnieją cztery unikatowe role w module Rachunek kosztów.
 |-------------------------|--------------|
 | Menedżer rachunku kosztów | Działanie     |
 | Księgowy kosztów         | Operations   |
-| Księgowy rachunku kosztów   | Operations   |
+| Pracownik księgowy kosztów   | Działania operacyjne   |
 | Kontroler obiektów kosztów  | Członkowie zespołu |
 
-W tym temacie wyjaśniono, jak przypisać rolę **Kontroler obiektów kosztów** do menedżera.
+W tym artykule wyjaśniono, jak przypisać rolę **Kontroler obiektów kosztów** do menedżera.
 
 Gdy rola **Kontroler obiektów kosztów** jest przypisana do menedżera, menedżer może wykonywać następujące zadania:
 
@@ -95,7 +95,7 @@ Ustawienia hierarchii list dostępu umożliwiają kontrolowanie danych, które s
 
 > [!IMPORTANT]
 > - Aby hierarchia list dostępu mogła wpływać na dane w programie Power BI, należy w tym programie sparować hierarchię list dostępu i zabezpieczenia na poziomie wiersza w programie Power BI. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zabezpieczeń pakietu zawartości Rachunek kosztów](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
-> - W tym temacie przedstawiono warunki wstępne, które muszą być spełnione, aby można było używać obszaru roboczego **Kontrola kosztów**.
+> - W tym artykule przedstawiono warunki wstępne, które muszą być spełnione, aby można było używać obszaru roboczego **Kontrola kosztów**.
 
 Dodatkowe zasoby
 

@@ -1,6 +1,6 @@
 ---
 title: Wniosek urlopowy
-description: Ten temat zawiera szczegółowe informacje i przykładowe zapytanie dla encji wniosku urlopowego w Dynamics 365 Human Resources.
+description: Ten artykuł zawiera szczegółowe informacje i przykładowe zapytanie dla jednostki wniosku urlopowego w Dynamics 365 Human Resources.
 author: marcelbf
 ms.date: 06/25/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-06-25
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0f14c143a59553786fe85284c128cec80905810b
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 47a652d9b7dec15124fc8b62d3c7d0402f88e093
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067686"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899680"
 ---
 # <a name="leave-request"></a>Wniosek urlopowy
 
@@ -27,9 +27,9 @@ ms.locfileid: "8067686"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-W tym temacie opisano jednostkę Wniosku o urlop dla Dynamics 365 Human Resources.
+W tym artykule opisano jednostkę wniosku urlopowego dla aplikacji Dynamics 365 Human Resources.
 
-### <a name="description"></a>opis
+### <a name="description"></a>Opis
 
 Ta jednostka zawiera informacje dotyczące wniosku urlopowego.
 

@@ -1,6 +1,6 @@
 ---
 title: Kompresuj duże dokumenty generowane w ramach raportowania elektronicznego
-description: W tym temacie opisano sposób kompresowania dużych dokumentów generowanych przez format modułu raportowanie elektroniczne (ER).
+description: W tym artykule opisano sposób kompresowania dużych dokumentów generowanych przez format modułu raportowanie elektroniczne (ER).
 author: NickSelin
 ms.date: 09/11/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 7ef8f730f2e207a8fd28c2bf5167d14f57d6c607314bfc48d4358a59d3ef5c43
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9a4995879717e715f8ebadb6a80e00949df7545c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718606"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864815"
 ---
 # <a name="compress-large-documents-that-are-generated-in-electronic-reporting"></a>Kompresuj duże dokumenty generowane w ramach raportowania elektronicznego 
 
@@ -33,7 +33,7 @@ Podczas konfigurowania rozwiązania można dostosować format ER w Projektancie 
 > [!NOTE]
 > Kompresja plików zajmuje dodatkowy procent wykorzystania procesora.
 
-Aby uzyskać więcej informacji o tym podejściu, uzupełnij przykład w tym temacie.
+Aby uzyskać więcej informacji o tym podejściu, uzupełnij przykład w tym artykule.
 
 ## <a name="example-compress-an-outbound-document"></a>Przykład: kompresowanie dokumentu wychodzącego
 
@@ -41,7 +41,7 @@ W tym przykładzie przedstawiono sposób, w jaki użytkownik przypisany do roli 
 
 ### <a name="prerequisites"></a>Wymagania wstępne
 
-Przed wykonaniem procedur opisanych w tym temacie należy wykonać następujące kroki.
+Przed wykonaniem procedur opisanych w tym artykule należy wykonać następujące kroki.
 
 1. [Aktywuj dostawcę konfiguracji](er-defer-xml-element.md#activate-a-configuration-provider).
 2. [Importuj przykładowe konfiguracje ER](er-defer-xml-element.md#import-the-sample-er-configurations).

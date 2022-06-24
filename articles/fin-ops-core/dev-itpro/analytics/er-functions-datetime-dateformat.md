@@ -1,6 +1,6 @@
 ---
 title: DATEFORMAT, funkcja ER
-description: Ten temat zawiera ogólne informacje o używaniu funkcji DATEFORMAT w module Raportowanie elektroniczne (ER).
+description: Ten artykuł zawiera ogólne informacje o używaniu funkcji DATEFORMAT w module Raportowanie elektroniczne (ER).
 author: NickSelin
 ms.date: 09/08/2021
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4a6c113f5f8147cbeaab103e86a44d4c66272c13
-ms.sourcegitcommit: e7eeca05d738e9e46d6185d1ba349836ebafc1a4
+ms.openlocfilehash: e48797def54150d259dd5e0a9a4206722c168bf4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "7485499"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852670"
 ---
 # <a name="dateformat-er-function"></a>DATEFORMAT, funkcja ER
 

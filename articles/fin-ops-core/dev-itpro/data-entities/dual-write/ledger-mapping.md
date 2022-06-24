@@ -1,6 +1,6 @@
 ---
 title: Zintegrowana księga
-description: W tym temacie opisano integrację danych księgi między aplikacją Finanse i Działania i innymi aplikacjami Dynamics 365 przy użyciu usługi Dataverse.
+description: W tym artykule opisano integrację danych księgi między aplikacjami finansowymi i operacyjnymi oraz innymi aplikacjami Dynamics 365 przy użyciu usługi Dataverse.
 author: tonyafehr
 ms.date: 09/06/2019
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: tfehr
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 0deb4198acb59b90bf06e4050889d028df2223e3
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: e83d66f3f8c8927b9baaf99838a4e242e7e011dc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063654"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847197"
 ---
 # <a name="integrated-ledger"></a>Zintegrowana księga
 
@@ -22,7 +22,7 @@ ms.locfileid: "8063654"
 
 
 
-W aplikacji biznesowej dane księgi określają podstawowe ustawienia dotyczące sposobu prowadzenia działalności firmy. Na przykład dane księgi opisują następujący rok obrachunkowy:, waluty transakcyjne oraz konta, z których korzysta firma. W tym temacie opisano integrację tych podstawowych danych finansowych.
+W aplikacji biznesowej dane księgi określają podstawowe ustawienia dotyczące sposobu prowadzenia działalności firmy. Na przykład dane księgi opisują następujący rok obrachunkowy:, waluty transakcyjne oraz konta, z których korzysta firma. W tym artykule opisano integrację tych podstawowych danych finansowych.
 
 ## <a name="templates"></a>Szablony
 

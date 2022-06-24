@@ -1,6 +1,6 @@
 ---
 title: Pojedynczy załącznik - FAQ
-description: W tym temacie znajdują się odpowiedzi na często zadawane pytania dotyczące funkcji pojedynczego załącznika. Pojedynczy załącznik dla arkuszy finansowych (arkusza finansowego, arkusza środków trwałych, arkusza płatności dla dostawców itd.) umożliwia wprowadzenie wielu transakcji księgi podrzędnej w kontekście jednego załącznika.
+description: W tym artykule znajdują się odpowiedzi na często zadawane pytania dotyczące funkcji pojedynczego załącznika. Pojedynczy załącznik dla arkuszy finansowych (arkusza finansowego, arkusza środków trwałych, arkusza płatności dla dostawców itd.) umożliwia wprowadzenie wielu transakcji księgi podrzędnej w kontekście jednego załącznika.
 author: kweekley
 ms.date: 11/05/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: beab87ad569a6009fb4a42fd19681b64dcb0bb1e
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: e7eedfd4b2914000e8fd85d977b071f44545a058
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8723114"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859806"
 ---
 # <a name="one-voucher-faq"></a>Pojedynczy załącznik - FAQ
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie znajdują się odpowiedzi na często zadawane pytania dotyczące funkcji pojedynczego załącznika. Jeden załącznik dla arkuszy finansowych umożliwia wprowadzanie wielu transakcji księgowych w kontekście jednego załącznika. Arkusze, które można uwzględnić w tym załączniku, mogą być między innymi arkuszami ogólnymi, arkuszami środków trwałych i arkuszami płatności dostawców.
+W tym artykule znajdują się odpowiedzi na często zadawane pytania dotyczące funkcji pojedynczego załącznika. Jeden załącznik dla arkuszy finansowych umożliwia wprowadzanie wielu transakcji księgowych w kontekście jednego załącznika. Arkusze, które można uwzględnić w tym załączniku, mogą być między innymi arkuszami ogólnymi, arkuszami środków trwałych i arkuszami płatności dostawców.
 
 ## <a name="when-will-the-one-voucher-functionality-be-deprecated"></a>Kiedy funkcja jednego załącznika będzie przestarzała?
 

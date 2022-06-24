@@ -1,6 +1,6 @@
 ---
 title: Uaktualnianie do modelu globalnej książki adresowej i strony
-description: W tym temacie opisano sposób uaktualniania danych o dwóch zapisach do strony globalna książka adresowa modelu.
+description: W tym artykule opisano sposób uaktualniania danych o dwóch zapisach do strony globalna książka adresowa modelu.
 author: RamaKrishnamoorthy
 ms.date: 03/10/2022
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 22b31b46b247ca5f2d6b8b93f58c090b03a2b38c
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 10c5d9eb3f98887be976c2331f4d34530628702c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688383"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895284"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Uaktualnianie do modelu globalnej książki adresowej i strony
 
@@ -40,7 +40,7 @@ Po zakończeniu procesu generowane są następujące pliki z wartościami rozdzi
 | ImportFONewPostalAddress.csv | Ten plik pomaga w tworzeniu nowych rekordów **Adres pocztowy** w aplikacji Finanse i Operacje. |
 | ImportFONewElectronicAddress.csv | Ten plik pomaga w tworzeniu nowych rekordów **Adres elektroniczny** w aplikacji Finanse i Operacje. |
 
-Ten temat wyjaśnia instrukcje dotyczące używania szablonów Data Factory i uaktualniania danych. Jeśli nie masz żadnych dostosowań, możesz użyć szablonów w takiej postaci, w jakiej są. Jeśli jednakże masz dostosowania dla danych **Konta**, **Kontaktu** i **Dostawcy**, musisz zmodyfikować szablony, tak jak opisano w tym temacie.
+Ten artykuł wyjaśnia instrukcje dotyczące używania szablonów Data Factory i uaktualniania danych. Jeśli nie masz żadnych dostosowań, możesz użyć szablonów w takiej postaci, w jakiej są. Jeśli jednak masz dostosowania dla danych **Konta**, **Kontaktu** i **Dostawcy**, musisz zmodyfikować szablony, tak jak opisano w tym artykule.
 
 > [!IMPORTANT]
 > Jeśli będą uruchamiane szablony adresów pocztowych i adresów poczty elektronicznej stron, istnieją specjalne instrukcje. Najpierw należy uruchomić szablon strony, następnie szablon adresu pocztowego strony, a na końcu szablon adresu poczty elektronicznej strony. Każdy szablon jest przeznaczony do importowania w osobnej fabryki danych.

@@ -1,6 +1,6 @@
 ---
 title: Dlaczego nie mogę cofnąć tej transakcji?
-description: W tym temacie opisano różne powody, dla których nie można cofnąć transakcji. Zawiera również listę rozwiązań tego problemu.
+description: W tym artykule opisano różne powody, dla których nie można cofnąć transakcji. Zawiera również listę rozwiązań tego problemu.
 author: kweekley
 ms.date: 07/21/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-07-21
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: e18caf1dbdf8191713c17b1793f5da44cf2f182b
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 9a8b26584b1a9b82440583db693cd14daa580e22
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724537"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876190"
 ---
 # <a name="why-cant-i-reverse-this-transaction"></a>Dlaczego nie mogę cofnąć tej transakcji?
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano różne powody, dla których nie można cofnąć transakcji. Zawiera również listę rozwiązań tego problemu.
+W tym artykule opisano różne powody, dla których nie można cofnąć transakcji. Zawiera również listę rozwiązań tego problemu.
 
 ## <a name="symptom"></a>Objaw
 
@@ -35,14 +35,14 @@ Organizacje mogą napotkać sytuacje, w których muszą wycofać zaksięgowaną 
 
 ## <a name="resolution"></a>Rozwiązanie
 
-Transakcje muszą spełniać określone kryteria, zanim będą mogły zostać wycofane. Pozostałe sekcje tego tematu zapewniają sprawdzanie poprawności dla każdego modułu. Chociaż ten temat koncentruje się na transakcjach w Microsoft Dynamics 365 Finance, niektóre pojęcia i sprawdzanie poprawności można zastosować do innych aplikacji, takich jak Dynamics 365 Supply Chain Management.
+Transakcje muszą spełniać określone kryteria, zanim będą mogły zostać wycofane. Pozostałe sekcje tego artykułu zapewniają walidację dla każdego modułu. Chociaż ten artykuł koncentruje się na transakcjach w Microsoft Dynamics 365 Finance, niektóre pojęcia i walidację można zastosować do innych aplikacji, takich jak Dynamics 365 Supply Chain Management.
 
 Ponadto miejsce, w którym transakcja jest wycofywana może mieć wpływ na to, czy można ją wycofać. Na przykład płatność dostawcy, która jest księgowana jako czek, może zostać wycofana tylko z sekcji **Czek** na stronie transakcji dla kont bankowych. Nie można wycofać ze strony **Transakcje voucherów** w księdze głównej.
 
 Jeśli funkcja **Masowego wycofania wielu dokumentów** (znana również jako masowego wycofania) jest włączona w obszarze roboczym **Zarządzanie funkcjami**, wpływa ona na liczbę transakcji, które można cofnąć i gdzie można je cofnąć. Ta funkcja zapewnia dwie korzyści po włączeniu:
 
 - W przypadku niektórych typów transakcji można wybrać i wycofać więcej niż jedną transakcję naraz z arkusza, w którym została zaksięgowana, lub ze strony **Transakcje załączników**. Jednak poszczególne transakcje muszą być odwracalne, zanim funkcja została włączona. Przed wprowadzeniem tej funkcji transakcje musiały być cofane po jednym na raz.
-- *Niektóre* transakcje księgi podrzędnej można wycofać z poziomu arkusza (dziennika głównego) lub strony **Transakcje załącznika**. Nie trzeba ich odwracać ze strony księgi podrzędnej. Na przykład arkusz faktury od dostawcy można wcześniej wycofać tylko ze strony **Transakcje dostawcy**. Jednak teraz można go odwrócić również ze strony Księga główna, z arkusza lub strony **Transakcje załącznika**. Każda sekcja tego tematu wyjaśnia typy transakcji, które nie mają zastosowania do tej korzyści.
+- *Niektóre* transakcje księgi podrzędnej można wycofać z poziomu arkusza (dziennika głównego) lub strony **Transakcje załącznika**. Nie trzeba ich odwracać ze strony księgi podrzędnej. Na przykład arkusz faktury od dostawcy można wcześniej wycofać tylko ze strony **Transakcje dostawcy**. Jednak teraz można go odwrócić również ze strony Księga główna, z arkusza lub strony **Transakcje załącznika**. Każda sekcja tego artykułu wyjaśnia typy transakcji, które nie mają zastosowania do tej korzyści.
 
 Funkcja wycofywania masowego **nie** umożliwia wycofywania większej liczby typów transakcji. Jeśli nie można wcześniej cofnąć typu transakcji, po włączeniu funkcji nadal nie można go cofnąć. Na przykład faktury od dostawcy zamówienia zakupu nie można cofnąć, niezależnie od tego, czy funkcja wycofywania masy jest włączona.
 
@@ -189,7 +189,7 @@ Nie można cofnąć następujących typów transakcji:
 
 Kilka typów transakcji aktualizuje księgi pomocnicze należności. Przykłady obejmują faktury dla odbiorców z zamówień sprzedaży, faktury dla odbiorców, które są wprowadzane za pośrednictwem dziennika głównego, faktury niezależne, płatności odbiorcy i odpisy.
 
-Jeśli funkcja wycofywania masy jest wyłączona, transakcje można wycofać indywidualnie ze strony **Transakcje klienta** dla faktur lub strony **Konta bankowe** dla depozytów. Aby uzyskać informacje na temat wycofywania płatności, zobacz sekcję [Zarządzanie gotówką i bankami](cant-reverse-transctns.md#cash-and-bank-management) w dalszej części tego tematu.
+Jeśli funkcja wycofywania masy jest wyłączona, transakcje można wycofać indywidualnie ze strony **Transakcje klienta** dla faktur lub strony **Konta bankowe** dla depozytów. Aby uzyskać informacje na temat wycofywania płatności, zobacz sekcję [Zarządzanie gotówką i bankami](cant-reverse-transctns.md#cash-and-bank-management) w dalszej części tego artykułu.
 
 Jeśli funkcja masowego odwracania jest włączona, jedna lub więcej transakcji z tytuły należności może być również odwrócona ze strony **Transakcje bonowe** oraz z dziennika, z którego transakcje zostały zaksięgowane. Jednak depozyty nadal mogą być wycofywane tylko z konta bankowego, a faktury niezależne mogą być wycofywane tylko ze strony źródłowej (jeśli funkcja umożliwiająca korekty jest włączona). Ponadto transakcje klienta można wycofać ze strony księgi **Transakcje dla \<main account\>**. Można je jednak wycofać ze strony **Transakcje załącznika**.
 

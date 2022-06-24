@@ -1,6 +1,6 @@
 ---
 title: Zarządzanie wynajmami za pośrednictwem struktury importu wynajmów
-description: W tym temacie objaśniono sposób używania struktury importu wynajmów do jednoczesnego korygowania wielu umów wynajmu.
+description: W tym artykule objaśniono sposób używania struktury importu wynajmów do jednoczesnego korygowania wielu umów wynajmu.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e3443225b5c7cb6d8f758248e538c2a427a89265
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 8cf81ccf61e62ac49e6cb90d13ca5fe50147cc76
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8723175"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894972"
 ---
 # <a name="manage-leases-through-the-lease-import-framework"></a>Zarządzanie wynajmami za pośrednictwem struktury importu wynajmów
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie objaśniono sposób używania struktury importu wynajmów do korygowania wielu umów wynajmu w jednym kroku. Dzięki tej funkcji można zaoszczędzić czas i również zapewnić dokładniejsze korekty, zmniejszając ryzyko wystąpienia błędu człowieka. Ponadto ta funkcja może łączyć rozwiązanie Microsoft Dynamics 365 Finance z zewnętrznymi jednostkami danych w celu sprawnego przekazywania danych.
+W tym artykule objaśniono sposób używania struktury importu wynajmów do korygowania wielu umów wynajmu w jednym kroku. Dzięki tej funkcji można zaoszczędzić czas i również zapewnić dokładniejsze korekty, zmniejszając ryzyko wystąpienia błędu człowieka. Ponadto ta funkcja może łączyć rozwiązanie Microsoft Dynamics 365 Finance z zewnętrznymi jednostkami danych w celu sprawnego przekazywania danych.
 
 Poniższe jednostki danych mogą być używane do integrowania modułu Wynajem składnika majątku z zewnętrznymi systemami:
 

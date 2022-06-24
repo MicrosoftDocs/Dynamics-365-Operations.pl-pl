@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie i uruchamianie przetwarzania do wywołania prostego formatu eksportowania ER to wygenerować raportu programu Excel
-description: W tym temacie przedstawiono przykład, który pokazuje, jak skonfigurować i używać wiadomości elektronicznych.
+description: W tym artykule przedstawiono przykład, który pokazuje, jak skonfigurować i używać wiadomości elektronicznych.
 author: liza-golub
 ms.date: 07/06/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: elgolu
 ms.search.validFrom: 2021-06-24
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: c2735df09ecf029503ae96a88a523ea40197da8f
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 9894aabde854189e6fc1b6bb62051747f190e3ec
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735007"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904594"
 ---
 # <a name="set-up-and-run-processing-to-call-a-simple-exporting-er-format-to-generate-an-excel-report"></a>Konfigurowanie i uruchamianie przetwarzania do wywołania prostego formatu eksportowania ER to wygenerować raportu programu Excel
 

@@ -1,6 +1,6 @@
 ---
 title: Zaliczka na podatek w transakcjach sprzedaży
-description: W tym temacie wymieniono kroki uniknięcia obliczania potrąconej zaliczki na podatek dla wybranych odbiorców. W przypadku odbiorców, którzy określą potrąconą zaliczkę na podatek w płatnościach na rzecz użytkownika, można przypisać domyślną grupę potrąconej zaliczki na podatek.
+description: W tym artykule wymieniono kroki uniknięcia obliczania potrąconej zaliczki na podatek dla wybranych odbiorców. W przypadku odbiorców, którzy określą potrąconą zaliczkę na podatek w płatnościach na rzecz użytkownika, można przypisać domyślną grupę potrąconej zaliczki na podatek.
 author: kailiang
 ms.date: 01/12/2021
 ms.topic: article
@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2020-01-12
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: 72d659004a1f61b63d6a782ba6b45bb99030bae9
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 75a7fc62c1d493007f3aa88a723465828c557df7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727434"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910092"
 ---
 # <a name="withholding-tax-in-sales-transactions"></a>Zaliczka na podatek w transakcjach sprzedaży
 
-W tym temacie wymieniono kroki uniknięcia obliczania potrąconej zaliczki na podatek dla wybranych odbiorców. W przypadku odbiorców, którzy określą potrąconą zaliczkę na podatek w płatnościach na rzecz użytkownika, można przypisać **Domyślną grupę potrąconej zaliczki na podatek** na stronie **Klienci**. 
+W tym artykule wymieniono kroki uniknięcia obliczania potrąconej zaliczki na podatek dla wybranych odbiorców. W przypadku odbiorców, którzy określą potrąconą zaliczkę na podatek w płatnościach na rzecz użytkownika, można przypisać **Domyślną grupę potrąconej zaliczki na podatek** na stronie **Klienci**. 
 
 1. Przejdź do **Okienko nawigacji > Moduły > Rozrachunki z odbiorcami > Odbiorcy > Wszyscy odbiorcy**.
 

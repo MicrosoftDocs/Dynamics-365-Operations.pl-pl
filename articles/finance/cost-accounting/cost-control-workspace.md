@@ -1,6 +1,6 @@
 ---
 title: Obszar roboczy kontroli kosztów
-description: Ten temat zawiera informacje dotyczące obszaru roboczego Kontrola kosztów. Ten obszar roboczy jest centralnym miejscem, w którym menedżerowie odpowiedzialni za kontrolę obiektu kosztów lub zbioru obiektów kosztów w granicach wymiaru lub między wymiarami mają dostęp do raportów.
+description: Ten artykuł zawiera informacje dotyczące obszaru roboczego Kontrola kosztów. Ten obszar roboczy jest centralnym miejscem, w którym menedżerowie odpowiedzialni za kontrolę obiektu kosztów lub zbioru obiektów kosztów w granicach wymiaru lub między wymiarami mają dostęp do raportów.
 author: AndersGirke
 ms.date: 06/16/2017
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 36e94ff2cd499a827c631d6836a6c976af53dfa1
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: f53d5d4daea076cc63308a83292f8f8c1ee1d022
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734612"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853504"
 ---
 # <a name="cost-control-workspace"></a>Obszar roboczy kontroli kosztów 
 

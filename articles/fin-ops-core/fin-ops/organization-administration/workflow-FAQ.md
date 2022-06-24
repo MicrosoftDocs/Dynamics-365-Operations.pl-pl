@@ -1,6 +1,6 @@
 ---
-title: 'Przepływ pracy: często zadawane pytania'
-description: W tym temacie znajdują się odpowiedzi na często zadawane pytania dotyczące systemu przepływu pracy.
+title: Przepływ pracy — często zadawane pytania
+description: W tym artykule znajdują się odpowiedzi na często zadawane pytania dotyczące systemu przepływu pracy.
 author: ChrisGarty
 ms.date: 03/01/2022
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0e9e2000684081035f35ea55e1c773a4f6976d74
-ms.sourcegitcommit: 967b93bb42413b5b38b817f924015468312a93a0
+ms.openlocfilehash: a72fd141bb1178a3a83385c512d1a655064d5b00
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8370887"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896587"
 ---
 # <a name="workflow-faq"></a>Przepływ pracy — często zadawane pytania
 
@@ -26,7 +26,7 @@ ms.locfileid: "8370887"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-W tym temacie znajdują się odpowiedzi na często zadawane pytania dotyczące systemu przepływu pracy.
+W tym artykule znajdują się odpowiedzi na często zadawane pytania dotyczące systemu przepływu pracy.
 
 ## <a name="why-are-multiple-notifications-received-when-a-work-item-is-rejected"></a>Dlaczego otrzymuję wiele powiadomień, gdy element pracy został odrzucony?
 Gdy element pracy został odrzucony, zostaje zakończony jako odrzucony. Inny element pracy zostanie utworzony i przypisany do inicjatora. Oznacza to, że inicjator otrzyma powiadomienie o odrzuconym elemencie pracy, a osobne powiadomienie zostanie wysłane do użytkownika przypisanego nowego elementu pracy „Zażądano zmiany”. 

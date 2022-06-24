@@ -1,6 +1,6 @@
 ---
 title: Deklaracja potrąconej zaliczki na podatek dla Egiptu
-description: W tym temacie wyjaśniono, jak skonfigurować i wygenerować deklaracje podatku u źródła dla Egiptu.
+description: W tym artykule wyjaśniono, jak skonfigurować i wygenerować deklaracje potrąconych zaliczek na podatek dla Egiptu.
 author: sndray
 ms.date: 03/08/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sndray
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8d78af13e0b3879afd0b6dae7b1a9ece651c3fd2
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: 505eb8a907ec8cc74b897695ddd90eee3abb0ed6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7403898"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907695"
 ---
 #  <a name="withholding-tax-declaration-for-egypt-eg-00005"></a>Deklaracja potrąconej zaliczki na podatek dla Egiptu (EG-00005)
 
@@ -26,11 +26,11 @@ ms.locfileid: "7403898"
 [!include[banner](../includes/preview-banner.md)]
 
 ## <a name="overview"></a>Omówienie
-W tym temacie wyjaśniono, jak skonfigurować i wygenerować deklarację podatku u źródła oraz formularze 41 i 11 deklaracji podatku u źródła dla osób prawnych w Egipcie 
+W tym artykule wyjaśniono, jak skonfigurować i wygenerować deklarację potrąconej zaliczki na podatek oraz formularze 41 i 11 deklaracji potrąconej zaliczki na podatek dla osób prawnych w Egipcie 
 
 Wszystkie jednostki Te muszą przygotować formularz 41, który podsumowuje wszystkie podatki zatrzymane od lokalnych dostawców i usługodawców. Oprócz formularza 41 należy wygenerować formularz 11, aby wyszczególnić wszystkie zatrzymane podatki od dostawców zagranicznych. 
 
-Raport **Deklaracji potrąconej zaliczki na podatek** w Dynamics 365 Finance zawiera następujące raporty:
+Raport **Deklaracja potrąconej zaliczki na podatek** w aplikacji Dynamics 365 Finance zawiera następujące raporty:
 
 - Formularz deklaracji Nie. 41
 - Formularz deklaracji Nie. 11
@@ -58,7 +58,7 @@ Aby uzyskać więcej informacji dotyczących importowania konfiguracji raportowa
 
 Wdrażanie formularzy deklaracji WHT dla Egiptu opiera się na konfiguracjach elektronicznego raportowania (ER). Aby uzyskać więcej informacji o możliwościach i pojęciach dotyczących raportowania konfigurowalnego, zobacz temat [Raportowanie elektroniczne](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
-W przypadku środowisk produkcyjnych i testów akceptacyjnych użytkownika (UAT) postępuj zgodnie z instrukcjami w temacie [Pobieranie konfiguracji raportowania elektronicznego z usługi Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+W przypadku środowisk produkcyjnych i testów akceptacyjnych użytkownika (UAT) postępuj zgodnie z instrukcjami w artykule [Pobieranie konfiguracji raportowania elektronicznego z usługi Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 Aby wygenerować deklaracje potrącenia podatku w egipskiej osobie prawnej, musisz przesłać następujące konfiguracje:
 

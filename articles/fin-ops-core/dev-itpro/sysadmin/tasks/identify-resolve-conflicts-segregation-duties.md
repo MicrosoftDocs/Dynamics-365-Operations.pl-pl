@@ -1,6 +1,6 @@
 ---
 title: Identyfikowanie i rozwiązywanie konfliktów w podziale obowiązków
-description: Ten temat wyjaśnia, jak identyfikować i rozwiązywać konflikty w podziale obowiązków.
+description: Ten artykuł wyjaśnia, jak identyfikować i rozwiązywać konflikty w podziale obowiązków.
 author: peakerbl
 ms.date: 01/04/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0638699c0e569bbe67024a87d6c55729642557cb085ee899aa98aa0022b12840
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd36db5df2b6871d410bb1feaae825909ec9b3ff
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748319"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883485"
 ---
 # <a name="identify-and-resolve-conflicts-in-segregation-of-duties"></a>Identyfikowanie i rozwiązywanie konfliktów w podziale obowiązków
 
 [!include [banner](../../includes/banner.md)]
 
-Ten temat wyjaśnia, jak identyfikować i rozwiązywać konflikty w podziale obowiązków. Można ustawić reguły rozdzielania obowiązków, które mają być wykonywane przez różnych użytkowników. Ta koncepcja jest nazywana podziałem obowiązków. Gdy definicja roli zabezpieczeń lub przypisanie ról użytkownika naruszają reguły, jest rejestrowany konflikt. Wszystkie konflikty muszą być rozwiązane przez administratora. Aby zidentyfikować i rozwiązać konflikty, wykonaj procedurę opisaną poniżej.
+Ten artykuł wyjaśnia, jak identyfikować i rozwiązywać konflikty w podziale obowiązków. Można ustawić reguły rozdzielania obowiązków, które mają być wykonywane przez różnych użytkowników. Ta koncepcja jest nazywana podziałem obowiązków. Gdy definicja roli zabezpieczeń lub przypisanie ról użytkownika naruszają reguły, jest rejestrowany konflikt. Wszystkie konflikty muszą być rozwiązane przez administratora. Aby zidentyfikować i rozwiązać konflikty, wykonaj procedurę opisaną poniżej.
 
 Po dodaniu reguły sprawdź, czy wszystkie istniejące role są zgodne. 
 

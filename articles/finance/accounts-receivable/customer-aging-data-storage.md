@@ -1,6 +1,6 @@
 ---
 title: Przestrzeń dyskowa danych wiekowania odbiorcy
-description: W tym temacie opisano proces używania magazynu zewnętrznego do danych wiekowania odbiorcy. Proces przechowywania danych wiekowania odbiorcy można uruchomić, aby udostępnić dane wyjściowe dla eksportu do zewnętrznego systemu.
+description: W tym artykule opisano proces używania magazynu zewnętrznego do danych wiekowania odbiorcy. Proces przechowywania danych wiekowania odbiorcy można uruchomić, aby udostępnić dane wyjściowe dla eksportu do zewnętrznego systemu.
 author: JodiChristiansen
 ms.date: 10/27/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1af4b4cbf503369565ee64ad8889ee9e59a92b3f
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: d7a66485cc9a538f5c3999009b6dbe295d7a5b9f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735529"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894150"
 ---
 # <a name="customer-aging-data-storage"></a>Przestrzeń dyskowa danych wiekowania odbiorcy
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano proces używania magazynu zewnętrznego do danych wiekowania odbiorcy. W rozwiązaniu Microsoft Dynamics 365 Finance proces przechowywania **danych wiekowania odbiorcy** można uruchomić, aby udostępnić dane wyjściowe dla eksportu do zewnętrznego systemu. Po uruchomieniu procesu te same opcje raportu wiekowania, które są dostępne w systemie, są dostępne dla systemów zewnętrznych. Szczegóły są zawsze uwzględniane w eksportowanych danych.
+W tym artykule opisano proces używania magazynu zewnętrznego do danych wiekowania odbiorcy. W rozwiązaniu Microsoft Dynamics 365 Finance proces przechowywania **danych wiekowania odbiorcy** można uruchomić, aby udostępnić dane wyjściowe dla eksportu do zewnętrznego systemu. Po uruchomieniu procesu te same opcje raportu wiekowania, które są dostępne w systemie, są dostępne dla systemów zewnętrznych. Szczegóły są zawsze uwzględniane w eksportowanych danych.
 
 Pomocne może być udostępnić dane wiekowania odbiorcy do zewnętrznego systemu do przechowywania w przypadkach, gdy dane wyjściowe zawierają wielu odbiorców i/lub wiele transakcji. Jeśli istniejący raport **Wiekowania odbiorcy** wygasa z powodu zbyt dużej ilości danych do wydrukowania, ta funkcja stanowi alternatywę dla uzyskania tych samych danych.
 

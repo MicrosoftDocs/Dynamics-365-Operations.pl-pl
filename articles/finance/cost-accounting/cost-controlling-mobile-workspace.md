@@ -1,6 +1,6 @@
 ---
 title: Mobilny obszar roboczy Kontrola kosztów
-description: Ten temat zawiera informacje dotyczące komórkowego obszaru roboczego Kontrola kosztów. Ten obszar roboczy umożliwia menedżerom centrów kosztów podgląd na działanie tych centrów zawsze i wszędzie.
+description: Ten artykuł zawiera informacje dotyczące mobilnego obszaru roboczego Kontrola kosztów. Ten obszar roboczy umożliwia menedżerom centrów kosztów podgląd na działanie tych centrów zawsze i wszędzie.
 author: AndersGirke
 ms.date: 05/24/2022
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: global
 ms.author: aevengir
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 75d8abaeec85b46f0fd0e430040bc7e3a8fd3042
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 9e7d220639f5f3af26e892461928c646746963bb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811332"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874675"
 ---
 # <a name="cost-controlling-mobile-workspace"></a>Mobilny obszar roboczy Kontrola kosztów
 
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
-Ten temat zawiera informacje dotyczące komórkowego obszaru roboczego **Kontrola kosztów**. Ten obszar roboczy umożliwia menedżerom centrów kosztów podgląd na działanie tych centrów zawsze i wszędzie.
+Ten artykuł zawiera informacje dotyczące mobilnego obszaru roboczego **Kontrola kosztów**. Ten obszar roboczy umożliwia menedżerom centrów kosztów podgląd na działanie tych centrów zawsze i wszędzie.
 
 Ten mobilny obszar roboczy jest przeznaczony do używania w mobilnych aplikacjach finansowych i operacyjnych (Dynamics 365).
 

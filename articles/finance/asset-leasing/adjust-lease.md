@@ -1,6 +1,6 @@
 ---
 title: Korygowanie wynajmów
-description: W temacie wyjaśniono sposób korygowania wynajmu. Korekta może być wymagana w przypadku zmodyfikowania warunków wynajmu, wydłużenia wynajmu lub zmiany innych okoliczności.
+description: W artykule wyjaśniono sposób korygowania wynajmu. Korekta może być wymagana w przypadku zmodyfikowania warunków wynajmu, wydłużenia wynajmu lub zmiany innych okoliczności.
 author: moaamer
 ms.date: 03/18/2022
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 89ec876c9bd967107635eb2955209a4dcb95cde5
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 48d1a261a43d6e3a68dfc0aae6f06c0d7d6b82db
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712182"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898335"
 ---
 # <a name="adjust-leases"></a>Korygowanie wynajmów
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-W temacie wyjaśniono sposób korygowania wynajmu. Korekta może być wymagana w przypadku zmodyfikowania warunków wynajmu, wydłużenia wynajmu lub zmiany innych okoliczności. Wynajem składników majątku jest zgodny z przepisami Accounting Standards Codification Topic 842 (ASC 842) i International Financial Reporting Standard 16 (IFRS 16) dotyczącymi korekt wynajmów. ASC 842-20-15-1 definiuje modyfikację wynajmu jako dowolną zmianę postanowień umowy, która powoduje zmianę zakresu wynajmu lub uwag do niego. Akapit 39 IFRS 16 wskazuje, że najemca musi zmienić wartość zobowiązania z tytułu wynajmu, tak aby odzwierciedlała ona zmiany w opłatach z tytułu wynajmu.
+W artykule wyjaśniono sposób korygowania wynajmu. Korekta może być wymagana w przypadku zmodyfikowania warunków wynajmu, wydłużenia wynajmu lub zmiany innych okoliczności. Wynajem składników majątku jest zgodny z przepisami Accounting Standards Codification Topic 842 (ASC 842) i International Financial Reporting Standard 16 (IFRS 16) dotyczącymi korekt wynajmów. ASC 842-20-15-1 definiuje modyfikację wynajmu jako dowolną zmianę postanowień umowy, która powoduje zmianę zakresu wynajmu lub uwag do niego. Akapit 39 IFRS 16 wskazuje, że najemca musi zmienić wartość zobowiązania z tytułu wynajmu, tak aby odzwierciedlała ona zmiany w opłatach z tytułu wynajmu.
 
 W przypadku organizacji, które stosują się do ASC 842 lub IFRS 16, wynajem jest zmieniany w celu odzwierciedlenia zmiany bieżącej wartości przyszłych opłat z tytułu wynajmu (PVFMLP). Jeśli PVFMLP wzrośnie, utworzony wpis w arkuszu dla różnicy między nowym PVFMLP a poprzednim PVFMLP będzie debetowy w składniku majątku konta z PDU i kredytowy w zobowiązaniu z tytułu wynajmu. Jeśli PVFMLP zmniejszy się, wpis w arkuszu dla tej różnicy będzie debetowy w zobowiązaniu z tytułu wynajmu konta oraz kredytowy w składniku majątku kota z PDU.
 

@@ -1,6 +1,6 @@
 ---
 title: Definiowanie mapowań modeli raportowanie elektronicznego i wybieranie dla nich źródeł danych
-description: W tym temacie wyjaśniono, jak użytkownik w roli Administrator systemu lub Deweloper raportowania elektronicznego może wybrać źródła danych modelu danych raportowania elektronicznego.
+description: W tym artykule wyjaśniono, jak użytkownik w roli Administrator systemu lub Deweloper raportowania elektronicznego może wybrać źródła danych modelu danych raportowania elektronicznego.
 author: NickSelin
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 69fb025b273aca6a0cf7733732f2849686eaa470ded6804a10b793cff9837562
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 40fe0c8453aa9e22bb170bad24993c64f8a3ee78
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717552"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883546"
 ---
 # <a name="define-er-model-mappings-and-select-data-sources-for-them"></a>Definiowanie mapowań modeli raportowanie elektronicznego i wybieranie dla nich źródeł danych
 

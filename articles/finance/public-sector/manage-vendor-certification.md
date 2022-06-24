@@ -1,6 +1,6 @@
 ---
 title: Obsługa certyfikacji dostawcy
-description: W tym temacie opisano kroki, których dostawcy mogą używać do obsługi certyfikacji za pomocą obszaru współpracy z dostawcami.
+description: W tym artykule opisano kroki, których dostawcy mogą używać do obsługi certyfikacji za pomocą obszaru współpracy z dostawcami.
 author: v-kiarnd
 ms.date: 04/27/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: b1b2cdd4389afd8997b60fe8e7a9b6851cbde199
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 37990292748c363f44d306bda0263dd117808eb1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735703"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891445"
 ---
 # <a name="maintain-vendor-certification"></a>Obsługa certyfikacji dostawcy
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano kroki, których dostawcy mogą używać do obsługi certyfikacji za pomocą **obszaru współpracy z dostawcami**. Przykładami mogą być certyfikaty Woman Business Enterprise (WBE) lub Leadership in Energy and Environment Design (LEED). Dostawcy muszą wprowadzać informacje o certyfikacjach w obszarze roboczym **Informacje o dostawcy**. W tym miejscu dostawcy będą wybierać opcję **Więcej szczegółów**, a następnie **Certyfikaty**.
+W tym artykule opisano kroki, których dostawcy mogą używać do obsługi certyfikacji za pomocą **obszaru współpracy z dostawcami**. Przykładami mogą być certyfikaty Woman Business Enterprise (WBE) lub Leadership in Energy and Environment Design (LEED). Dostawcy muszą wprowadzać informacje o certyfikacjach w obszarze roboczym **Informacje o dostawcy**. W tym miejscu dostawcy będą wybierać opcję **Więcej szczegółów**, a następnie **Certyfikaty**.
 
 ## <a name="turn-on-the-vendor-certification-feature"></a>Włączanie funkcji certyfikacji dostawcy
 

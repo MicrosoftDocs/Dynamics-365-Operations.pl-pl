@@ -1,6 +1,6 @@
 ---
 title: SESSIONNOW, funkcja ER
-description: Ten temat zawiera ogólne informacje o używaniu funkcji SESSIONNOW w module Raportowanie elektroniczne (ER).
+description: Ten artykuł zawiera ogólne informacje o używaniu funkcji SESSIONNOW w module Raportowanie elektroniczne (ER).
 author: NickSelin
 ms.date: 12/04/2019
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fc532a96c7e52e6a12877ae88d1a6183829a1282d43c7df52dd90e536a7e3d75
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 586d49a1fbbbcab7b0cd41c31daf0f50598754c2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734823"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884207"
 ---
 # <a name="sessionnow-er-function"></a>SESSIONNOW, funkcja ER
 

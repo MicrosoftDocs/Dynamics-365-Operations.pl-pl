@@ -1,6 +1,6 @@
 ---
 title: Tworzenie środka trwałego
-description: W tym temacie opisano sposób tworzenia nowego rekordu środka trwałego na stronie listy środków trwałych.
+description: W tym artykule opisano sposób tworzenia nowego rekordu środka trwałego na stronie listy środków trwałych.
 author: moaamer
 ms.date: 07/01/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a9394c0c7a5e2d9b417cbaee9f4e67f36ae124fb
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 00c72081d20015737aa027cee9474a54e498cef4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8714293"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868497"
 ---
 # <a name="create-a-fixed-asset"></a>Tworzenie środka trwałego
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie opisano sposób tworzenia nowego rekordu środka trwałego na stronie listy **Środków trwałych**.
+W tym artykule opisano sposób tworzenia nowego rekordu środka trwałego na stronie listy **środków trwałych**.
 
 System przypisuje numer środka trwałego na podstawie sekwencji numerów przypisanej do grupy środków trwałych. Jeśli do importowania środków trwałych za pomocą dodatku Microsoft Excel używany jest szablon środków trwałych lub zostanie użyte inne zadanie importowania, system automatycznie utworzy rekordy środków trwałych i zwiększy numer środka trwałego.
 

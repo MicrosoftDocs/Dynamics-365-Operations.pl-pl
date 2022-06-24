@@ -1,6 +1,6 @@
 ---
 title: Obsługa i odnowienia
-description: W tym temacie wyjaśniono, jak tworzyć harmonogram fakturowania towarów, a także tworzyć procedury obsługi i odnowienia zamówień sprzedaży.
+description: W tym artykule wyjaśniono, jak tworzyć harmonogram fakturowania towarów, a także tworzyć procedury obsługi i odnowienia zamówień sprzedaży.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 7de74f2b12e8e7201663ba78d936131b301b1ff9
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: b40e0136883d909755480a3ce101627297bd9ffb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8685778"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896529"
 ---
 # <a name="support-and-renewals"></a>Obsługa i odnowienia 
 
-W tym temacie opisano sposób wprowadzania pozycji pomocy technicznej lub odnowienia towarów podczas wprowadzania zamówień sprzedaży. Te elementy są używane do obliczania kwoty opłaty dla oryginalnej umowy pomocy technicznej i/lub kwoty odnowienia używanej podczas tworzenia harmonogramu fakturowania w ramach fakturowania subskrypcji. Na przykład firma sprzedaje serwer odbiorcy i oferuje subskrypcję kopii zapasowej danych dla pierwszego roku, a użytkownik ma możliwość odnowienia tej subskrypcji co roku. Element *pomocy technicznej jest* subskrypcją pierwszego roku, *a element odnowienia* jest odnowieniem dla każdego sukcesywnego roku.
+W tym artykule opisano sposób wprowadzania pozycji pomocy technicznej lub odnowienia towarów podczas wprowadzania zamówień sprzedaży. Te elementy są używane do obliczania kwoty opłaty dla oryginalnej umowy pomocy technicznej i/lub kwoty odnowienia używanej podczas tworzenia harmonogramu fakturowania w ramach fakturowania subskrypcji. Na przykład firma sprzedaje serwer odbiorcy i oferuje subskrypcję kopii zapasowej danych dla pierwszego roku, a użytkownik ma możliwość odnowienia tej subskrypcji co roku. Element *pomocy technicznej jest* subskrypcją pierwszego roku, *a element odnowienia* jest odnowieniem dla każdego sukcesywnego roku.
 
 Możesz wprowadzić informacje dotyczące umowy pomocy technicznej, umowy przedłużenia lub obu tych umów. Po wprowadzeniu informacji umowy pomocy technicznej do zamówienia sprzedaży jest dodawany tylko element pomocy technicznej. Podczas wprowadzania informacji o umowie przedłużenia element odnowienia jest używany do tworzenia harmonogramu fakturowania.
 

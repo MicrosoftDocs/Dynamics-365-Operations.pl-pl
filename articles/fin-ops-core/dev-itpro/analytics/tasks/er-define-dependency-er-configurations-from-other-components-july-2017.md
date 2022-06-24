@@ -1,6 +1,6 @@
 ---
 title: Definiowanie zależności konfiguracji raportowania elektronicznego od innych składników
-description: W tym temacie opisano sposób projektowania konfiguracji raportowania elektronicznego (ER) i określenia jej zależności od innych składników oprogramowania.
+description: W tym artykule opisano sposób projektowania konfiguracji raportowania elektronicznego (ER) i określenia jej zależności od innych składników oprogramowania.
 author: NickSelin
 ms.date: 07/23/2021
 ms.topic: business-process
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2901092938dae5ae14480716eeeb2b0386848332e91ad388ce5d34437f8492ba
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 525e9be1655bdf0c0328ec53509ab1966abd7bde
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717601"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883576"
 ---
 # <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Definiowanie zależności konfiguracji raportowania elektronicznego od innych składników
 
@@ -25,7 +25,7 @@ ms.locfileid: "6717601"
 
 W celu wykonania tych kroków należy najpierw wykonać kroki w przewodniku po zadaniu ER Zarządzanie konfiguracjami mapowania modelu oraz mieć dostęp do usługi Microsoft Dynamics Lifecycle Services (LCS).
 
-Ta procedura przedstawia sposób projektowania konfiguracji raportowania elektronicznego (ER) i określania jej zależności od innych składników oprogramowania, tak aby mieć pewność, że konfiguracja jest prawidłowo pobierana dla określonej wersją program Finance and Operations. W tym przykładzie utworzysz wymagane konfiguracje ER dla przykładowej firmy Litware, Inc. 
+Ta procedura przedstawia sposób projektowania konfiguracji raportowania elektronicznego (ER) i określania jej zależności od innych składników oprogramowania, tak aby mieć pewność, że konfiguracja jest prawidłowo pobierana dla określonej wersji Finance and Operations. W tym przykładzie utworzysz wymagane konfiguracje ER dla przykładowej firmy Litware, Inc. 
 
 Ta procedura jest przeznaczona dla użytkowników z przypisaną rola Administrator systemu lub Deweloper raportowania elektronicznego. Te kroki można wykonać w dowolnej firmie, ponieważ konfiguracje ER są współużytkowane przez wszystkie firmy. 
 
@@ -46,7 +46,7 @@ Ta procedura jest przeznaczona dla użytkowników z przypisaną rola Administrat
 7. Zaznacz pozycję Microsoft Dynamics 365 for Operations (1611).
 8. W polu Wersja wpisz wartość „(7.1.1541.3036,8)”.
     * (7.1.1541.3036,8)  
-    * Wprowadzane zależności będą oceniane podczas pobierania tej konfiguracji z repozytorium modułu Raportowanie elektroniczne. Ta wersja konfiguracji będzie pobierana z repozytorium ER, gdy wersja 1 konfiguracji „Przykładowy model danych” już znajduje się na miejscu albo zostanie pobrana z wyprzedzeniem. Jeśli jest pobierana z wyprzedzeniem, musi zostać wykonana w usłudze Finance and Operations w wersji 7.1.1541.3036 lub nowszej, ale wersji głównej nie nowszej niż 8.   
+    * Wprowadzane zależności będą oceniane podczas pobierania tej konfiguracji z repozytorium modułu Raportowanie elektroniczne. Ta wersja konfiguracji będzie pobierana z repozytorium ER, gdy wersja 1 konfiguracji „Przykładowy model danych” już znajduje się na miejscu albo zostanie pobrana z wyprzedzeniem. Jeśli jest pobierana z wyprzedzeniem, musi zostać wykonana w aplikacjach finansowych i operacyjnych w wersji 7.1.1541.3036 lub nowszej, ale wersji głównej nie nowszej niż 8.   
 9. Kliknij przycisk Zapisz.
 10. Zamknij stronę.
 11. Kliknij przycisk Zmień stan.
@@ -136,7 +136,7 @@ Usuniemy utworzone konfiguracje z systemu i pobierzemy je ponownie z repozytoriu
 25. Wybierz kolejno opcje Administrowanie organizacją > Raportowanie elektroniczne > Konfiguracje.
 26. W drzewie rozwiń węzeł „Przykładowy model danych”.
     * Należy zauważyć, że konfiguracja mapowania modelu „Przykładowe mapowanie” została pobrana wraz z wybraną konfiguracją modelu danych. Oba pliki są pobierane razem, ponieważ model „Przykładowe mapowanie” został zdefiniowany jako implementujący wybrany model danych i ma zastosowanie do aplikacji. Konfiguracja „Przykładowe mapowanie (alternatywne)” nie została pobrana, ponieważ nie jest spełniony warunek dla wymaganej wersji aplikacji.   
-    * Gdy się zalogujesz do programu Finance and Operations, zarejestrujesz tego samego dostawcę, przejdziesz do tego samego projektu usługi LCS i pobierzesz tę samą konfigurację modelu danych, zostanie pobrana konfiguracja „Przykładowe mapowanie (alternatywne)”, natomiast konfiguracja „Przykładowe mapowanie” zostanie pominięta.  
+    * Gdy się zalogujesz do aplikacji finansowych i operacyjnych, zarejestrujesz tego samego dostawcę, przejdziesz do tego samego projektu usługi LCS i pobierzesz tę samą konfigurację modelu danych, zostanie pobrana konfiguracja „Przykładowe mapowanie (alternatywne)”, natomiast konfiguracja „Przykładowe mapowanie” zostanie pominięta.  
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

@@ -1,6 +1,6 @@
 ---
 title: Włączanie prognozowania przepływów pieniężnych
-description: W tym temacie wyjaśniono, jak włączyć funkcję prognozowania przepływów pieniężnych w Finance Insights.
+description: W tym artykule wyjaśniono, jak włączyć funkcję prognozowania przepływów pieniężnych w Finance Insights.
 author: ShivamPandey-msft
 ms.date: 02/11/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 8dba56af53090d5d78632da4d414143b136f8a8d
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 253e3ea9c1c44573b37503f167b4cb3860683c10
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713762"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859883"
 ---
 # <a name="enable-cash-flow-forecasting"></a>Włączanie prognozowania przepływów pieniężnych
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak włączyć funkcję prognozowania przepływów pieniężnych w Finance Insights.
+W tym artykule wyjaśniono, jak włączyć funkcję prognozowania przepływów pieniężnych w Finance insights.
 
 > [!NOTE]
 > Aby skorzystać z prognoz płatności w przepływie pieniężnym, należy skonfigurować funkcję przewidywania płatności odbiorcy w sposób opisany w temacie [Włączanie prognoz płatności odbiorcy](enable-cust-paymnt-prediction.md).

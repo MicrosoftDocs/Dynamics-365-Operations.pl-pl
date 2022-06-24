@@ -1,6 +1,6 @@
 ---
-title: Importowanie danych oddziałów z plików
-description: W tym temacie wyjaśniono, jak przygotować dane z systemów zewnętrznych, aby można je było zaimportować do Microsoft Dynamics 365 Finance.
+title: Importowanie danych przedstawicielstw z plików
+description: W tym artykule wyjaśniono, jak przygotować dane z systemów zewnętrznych, aby można je było zaimportować do Microsoft Dynamics 365 Finance.
 author: jinniew
 ms.date: 10/09/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 045ecd6dfb95ccf38773293d44834531668ac1ff
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 6886e2ee79ee9e4ccc067dc4f661c1eea646cfa6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733827"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846778"
 ---
 # <a name="import-subsidiary-data-from-files"></a>Importowanie danych przedstawicielstw z plików
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak przygotować dane z systemów zewnętrznych, aby można je było zaimportować do Microsoft Dynamics 365 Finance. Strona **Konsoliduj ze importem** (**Konsolidacje \> Konsoliduj z importem**) umożliwia przygotowanie przeniesienia danych oddziałów z systemów zewnętrznych.
+W tym artykule wyjaśniono, jak przygotować dane z systemów zewnętrznych, aby można je było zaimportować do Microsoft Dynamics 365 Finance. Strona **Konsoliduj ze importem** (**Konsolidacje \> Konsoliduj z importem**) umożliwia przygotowanie przeniesienia danych oddziałów z systemów zewnętrznych.
 
 1. Utwórz osoba prawna zależną na potrzeby konsolidacji. Aby uzyskać informacje na temat tworzenia firm, zapoznaj się z tematem [Tworzenie firmy](../../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md). Aby uzyskać więcej informacji, zobacz temat [Przygotowanie firmy do użycia w procesie konsolidacji](prepare-company-for-consolidation.md) i [Konfigurowanie firmy zależnej do konsolidacji](set-up-subsidiary-company-for-consolidation.md).
 

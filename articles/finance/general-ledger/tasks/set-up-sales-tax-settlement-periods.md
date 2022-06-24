@@ -1,6 +1,6 @@
 ---
-title: Konfigurowanie okresów rozliczania podatku
-description: W tym temacie wyjaśniono, jak skonfigurować okresy rozliczeniowe podatku od sprzedaży w Dynamics 365 Finance.
+title: Ustawianie okresów rozliczania podatku
+description: W tym artykule wyjaśniono, jak skonfigurować okresy rozliczeniowe podatku od sprzedaży w Dynamics 365 Finance.
 author: twheeloc
 ms.date: 08/05/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 197b85fb88f966b0a13fc061e2e780dd84e74acb
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 3f8514494b5d3534fc236def817df0d58fe80d70
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735822"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846691"
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a>Ustawianie okresów rozliczania podatku
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie wyjaśniono sposób konfigurowania okresów rozliczenia podatku. Okresy rozliczania podatków zawierają informacje o interwałach okresu, za które należy zgłosić i zapłacić podatki. Proces rozliczania można wykonać dla okresu rozliczeniowego za określony zakres dat. Rozliczenie obejmie wszystkie kody podatków skojarzone z okresem rozliczeniowym. W zależności od ustawień odnośnego urzędu skarbowego zobowiązania podatkowe zostaną zaksięgowana na koncie dostawcy lub Księgi głównej.
+W tym artykule wyjaśniono sposób konfigurowania okresów rozliczenia podatku. Okresy rozliczania podatków zawierają informacje o interwałach okresu, za które należy zgłosić i zapłacić podatki. Proces rozliczania można wykonać dla okresu rozliczeniowego za określony zakres dat. Rozliczenie obejmie wszystkie kody podatków skojarzone z okresem rozliczeniowym. W zależności od ustawień odnośnego urzędu skarbowego zobowiązania podatkowe zostaną zaksięgowana na koncie dostawcy lub Księgi głównej.
 
 W zadaniu wykorzystano firmę demonstracyjną USMF.
 

@@ -1,6 +1,6 @@
 ---
 title: Rozpoczynanie pracy z obliczaniem podatku
-description: W tym temacie wyjaśniono, jak skonfigurować obliczanie podatku.
+description: W tym artykule wyjaśniono, jak skonfigurować obliczanie podatku.
 author: wangchen
 ms.date: 03/25/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 0ab9c0cf974114c4fa9b673e5601e138acef534d
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c2293102057ac055f0958c1c6b1de2a19cb331d5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8685919"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855291"
 ---
 # <a name="get-started-with-tax-calculation"></a>Rozpoczynanie pracy z obliczaniem podatku
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje dotyczące sposobu rozpoczęcia pracy z obliczaniem podatku. Ta sekcja przeprowadzi użytkownika przez etapy projektowania na wysokim poziomie i konfiguracji Microsoft Dynamics Lifecycle Services (usługi LCS), Regulatory Configuration Service (RCS) Dynamics 365 Finance i Dynamics 365 Supply Chain Management. 
+Ten artykuł zawiera informacje dotyczące sposobu rozpoczęcia pracy z obliczaniem podatku. Sekcje w tym artykule przeprowadzą użytkownika przez etapy projektowania na wysokim poziomie i konfiguracji Microsoft Dynamics Lifecycle Services (usługi LCS), Regulatory Configuration Service (RCS) Dynamics 365 Finance i Dynamics 365 Supply Chain Management. 
 
 Ta konfiguracja składa się z następujących trzech kroków.
 
@@ -77,11 +77,11 @@ Po wykonaniu tych kroków następujące ustawienia zostaną automatycznie zsynch
 - Grupy podatków
 - Grupy podatków dla pozycji
 
-Pozostałe sekcje w tym temacie przedstawiają bardziej szczegółowe kroki konfiguracji.
+Pozostałe sekcje w tym artykule przedstawiają bardziej szczegółowe kroki konfiguracji.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Zanim będziesz mógł wykonać pozostałe procedury w tym temacie, muszą być spełnione następujące warunki wstępne:<!--TO HERE-->
+Zanim będziesz mógł wykonać pozostałe procedury w tym artykule, muszą być spełnione następujące warunki wstępne:<!--TO HERE-->
 
 - Musisz mieć dostęp do swojego konta usługi LCS i mieć wdrożony projekt usługi LCS ze środowiskiem warstwy 2 (lub wyższej), w którym jest uruchomiona wersja Dynamics 365 10.0.21 lub nowsza.
 - Musisz utworzyć środowisko RCS dla swojej organizacji i mieć dostęp do swojego konta. Aby uzyskać więcej informacji dotyczących sposobu tworzenia środowiska RCS, zobacz temat [Omówienie usługi Regulatory Configuration Service](rcs-overview.md).
@@ -212,7 +212,7 @@ Kroki w tej sekcji nie są powiązane z określoną firmą. Tę procedurę nale�
     | Sprzedaż            | BEL       | FRA     | BEL_EU       |
     
     > [!NOTE]
-    > Jeśli domyślna grupa podatków w wierszach dokumentów podlegających opodatkowaniu jest poprawna, pozostaw macierz pustą. Więcej informacji znajduje się w dalszej sekcji [Projektowanie w czasie rzeczywistym](#runtime) w tym temacie.
+    > Jeśli domyślna grupa podatków w wierszach dokumentów podlegających opodatkowaniu jest poprawna, pozostaw macierz pustą. Więcej informacji znajduje się w dalszej sekcji [Projektowanie w czasie rzeczywistym](#runtime) w tym artykule.
 
 22. Na karcie **Zastosowanie grupy podatków dla pozycji** zaznacz kolumny wymagane do ustalenia poprawnej grupy podatków dla pozycji, a następnie wybierz opcję **Dodaj**. Wprowadź lub wybierz wartości dla każdej kolumny. Pole **Grupa podatków dla pozycji** będzie wynikiem tej matrycy. Jeśli ta karta nie jest skonfigurowana, zostanie użyta grupa podatków dla pozycji z wiersza transakcji.
 
@@ -224,7 +224,7 @@ Kroki w tej sekcji nie są powiązane z określoną firmą. Tę procedurę nale�
     | D0003     | Zredukowane        |
 
     > [!NOTE]
-    > Jeśli domyślna grupa podatków pozycji w wierszach dokumentów podlegających opodatkowaniu jest poprawna, pozostaw macierz pustą. Więcej informacji znajduje się w dalszej sekcji [Projektowanie w czasie rzeczywistym](#runtime) w tym temacie.
+    > Jeśli domyślna grupa podatków pozycji w wierszach dokumentów podlegających opodatkowaniu jest poprawna, pozostaw macierz pustą. Więcej informacji znajduje się w dalszej sekcji [Projektowanie w czasie rzeczywistym](#runtime) w tym artykule.
 
     Aby uzyskać więcej informacji na temat określania kodów podatków w obliczaniu podatku, zobacz temat [Logika określania grupy podatków i grupy podatków dla pozycji](global-sales-tax-group-determination.md).
 
@@ -243,7 +243,7 @@ Konfigurację w tej sekcji konfiguruje firma. Należy je skonfigurować dla każ
 2. Na karcie **Ogólne** ustaw następujące pola:
 
     - **Włącz usługę obliczanie podatku** — to pole wyboru należy zaznaczyć, aby włączyć obliczanie podatku dla firmy. Jeśli nie włączono dla bieżącej firmy, firma będzie nadal używać istniejącego aparatu podatków do ustalania i obliczania podatku.
-    - **Ustawienia funkcji** – wybierz opublikowaną konfigurację i wersję funkcji podatkowej dla firmy. Aby uzyskać więcej informacji dotyczących sposobu skonfigurowania i ukończenia opublikowanej funkcji podatkowej, zobacz poprzednią sekcję tego tematu.
+    - **Ustawienia funkcji** – wybierz opublikowaną konfigurację i wersję funkcji podatkowej dla firmy. Aby uzyskać więcej informacji dotyczących sposobu skonfigurowania i ukończenia opublikowanej funkcji podatkowej, zobacz poprzednią sekcję tego artykułu.
     - **Proces biznesowy** — wybierz procesy biznesowe, które mają być włączane.
 
 3. Na karcie **Obliczania** zdefiniuj oczekiwaną regułę zaokrąglania dla firmy. Aby uzyskać więcej informacji o logice zaokrąglania, zobacz temat [Reguły zaokrąglania obliczania podatku](https://go.microsoft.com/fwlink/?linkid=2166988).

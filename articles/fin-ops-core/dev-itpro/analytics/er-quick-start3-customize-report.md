@@ -1,6 +1,6 @@
 ---
 title: Umożliwia dostosowanie konfiguracji raportowania elektronicznego w celu wygenerowania dokumentu elektronicznego
-description: W tym temacie wyjaśniono, jak dostosować konfiguracje raportowania elektronicznego (ER) dostarczone przez firmę Microsoft, które są używane do generowania niestandardowego dokumentu elektronicznego.
+description: W tym artykule wyjaśniono, jak dostosować konfiguracje raportowania elektronicznego (ER) dostarczone przez firmę Microsoft, które są używane do generowania niestandardowego dokumentu elektronicznego.
 author: NickSelin
 ms.date: 10/21/2020
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a7353d7d8149ff1316fbc0adc55b7e1050f443a8
-ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
+ms.openlocfilehash: 30ef9a0fa9b61b1e2016f85407ec0ec8fb70a6c6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661666"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854706"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>Umożliwia dostosowanie konfiguracji raportowania elektronicznego w celu wygenerowania dokumentu elektronicznego
 
@@ -32,9 +32,9 @@ ms.locfileid: "8661666"
 
 ## <a name="overview"></a>Omówienie
 
-Na przykład w tym temacie należy określić federalny kod identyfikacji podatkowej jako nowy atrybut niestandardowy każdego klienta, któremu wystawiamy fakturę elektroniczną. Dlatego należy dostosować strukturę aktualnie używanej faktury, dodając nową pozycję, którą należy wypełnić kodem podatkowym w każdej generowanej e-fakturze.
+Na przykład w tym artykule należy określić federalny kod identyfikacji podatkowej jako nowy atrybut niestandardowy każdego klienta, któremu wystawiamy fakturę elektroniczną. Dlatego należy dostosować strukturę aktualnie używanej faktury, dodając nową pozycję, którą należy wypełnić kodem podatkowym w każdej generowanej e-fakturze.
 
-Procedury opisane w tym temacie wyjaśniają, w jaki sposób użytkownik pełniący rolę administratora systemu, dewelopera raportowania elektronicznego lub konsultanta funkcjonalnego raportowania elektronicznego może wykonywać następujące zadania w instancji Finance:
+Procedury opisane w tym artykule wyjaśniają, w jaki sposób użytkownik pełniący rolę administratora systemu, dewelopera raportowania elektronicznego lub konsultanta funkcjonalnego raportowania elektronicznego może wykonywać następujące zadania w instancji Finance:
 
 - [Skonfiguruj minimalny zestaw parametrów funkcji ER wymaganych do rozpoczęcia korzystania z struktury ER](#ConfigureER).
 - [Zaimportuj początkowe wersje standardowych konfiguracji ER, które są udostępniane w celu generowania faktur elektronicznych](#ImportERConfigurations1).

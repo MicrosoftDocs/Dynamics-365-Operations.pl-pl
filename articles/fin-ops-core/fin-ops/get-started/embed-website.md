@@ -1,6 +1,6 @@
 ---
 title: Osadzanie aplikacji innych firm
-description: W tym temacie opisano sposób osadzania aplikacji innych firm w celu rozszerzenia funkcjonalności produktu.
+description: W tym artykule opisano sposób osadzania aplikacji innych firm w celu rozszerzenia funkcjonalności produktu.
 author: jasongre
 ms.date: 09/13/2021
 ms.topic: article
@@ -13,20 +13,20 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 89f101bcf33080f6a73664fe7c3fe6719de04a4e
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 3c07befc7150ff0a121fd3aaa0b5233df9f431e5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488241"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868616"
 ---
 # <a name="embed-third-party-apps"></a>Osadzanie aplikacji innych firm
 
 [!include [banner](../includes/banner.md)]
 
-Wielu odbiorców używa wielu aplikacji do prowadzenia działalności gospodarczej. Niektóre z tych aplikacji to aplikacje sieci web innych firm, które działają w połączeniu z aplikacjami Finance and Operations. Aby zapewnić bezproblemowe korzystanie z aplikacji, można za pomocą funkcji **Aplikacje dla całej strony** osadzać aplikacje innych firm bezpośrednio w aplikacjach Finance and Operations (pod warunkiem że aplikacje innych firm pozwalają na osadzanie ich w tej aplikacji). Dzięki temu użytkownicy będą mieli dostęp do wymaganych przez nich witryn internetowych i aplikacji bez konieczności przełączania kart lub okien.
+Wielu odbiorców używa wielu aplikacji do prowadzenia działalności gospodarczej. Niektóre z tych aplikacji to aplikacje sieci web innych firm, które działają w połączeniu z aplikacjami finansowymi i operacyjnymi. Aby zapewnić bezproblemowe korzystanie z aplikacji, można za pomocą funkcji **Aplikacje dla całej strony** osadzać aplikacje innych firm bezpośrednio w aplikacjach finansowych i operacyjnych (pod warunkiem że aplikacje innych firm pozwalają na osadzanie ich w tej aplikacji). Dzięki temu użytkownicy będą mieli dostęp do wymaganych przez nich witryn internetowych i aplikacji bez konieczności przełączania kart lub okien.
 
-Aby można było osadzać aplikacje innych firm w produkcie, należy włączyć funkcję **Aplikacje dla całej strony** w module Zarządzanie funkcjami. Następnie można użyć jednej z poniższych metod, aby osadzić aplikację lub witrynę internetową innej firmy. Te metody są analogiczne do metod używanych do osadzania aplikacji kanwy z Microsoft Power Apps w aplikacjach Finance and Operations.
+Aby można było osadzać aplikacje innych firm w produkcie, należy włączyć funkcję **Aplikacje dla całej strony** w module Zarządzanie funkcjami. Następnie można użyć jednej z poniższych metod, aby osadzić aplikację lub witrynę internetową innej firmy. Te metody są analogiczne do metod używanych do osadzania aplikacji kanwy z usługi Microsoft Power Apps w aplikacjach finansowych i operacyjnych.
 
 - Osadź aplikację lub witrynę internetową na istniejącej stronie jako nową kartę (karta przestawna, karta skrócona, blok albo sekcja obszaru roboczego).
 - Utwórz nowe, środowisko na pełnej stronie dla aplikacji lub witryny internetowej z pulpitu nawigacyjnego.
@@ -53,14 +53,14 @@ Tej procedury należy użyć w celu uzupełnienia istniejącej strony w systemie
     > - Aplikacja lub witryna internetowa musi być skonfigurowana tak, aby zezwalała na osadzenie jej.
 
 6. Wybierz przycisk **Zapisz**, aby osadzić aplikację na stronie. Aplikacja jest dodawana jako ostatnia karta lub sekcja w grupie.
-7. Potwierdź, że aplikacja jest wyświetlana zgodnie z oczekiwaniami. Jeśli aplikacja nie jest renderowana, zobacz sekcję [Rozwiązywanie problemów](#troubleshooting) w dalszej części tego tematu.
+7. Potwierdź, że aplikacja jest wyświetlana zgodnie z oczekiwaniami. Jeśli aplikacja nie jest renderowana, zobacz sekcję [Rozwiązywanie problemów](#troubleshooting) w dalszej części tego artykułu.
 8. Otwórz selektor widoku i wybierz opcję **Zapisz** (jeśli aplikacja ma być skojarzona z bieżącym widokiem) lub **Zapisz jako** (aby zapisać aplikację w innym widoku).
 
     Jeśli strona nie ma selektora widoku (na przykład, jeśli strona jest oknem dialogowym lub obszarem roboczym), możesz pominąć ten krok.
 
 ## <a name="embed-a-website-as-a-full-page-experience-from-the-dashboard"></a>Osadzanie witryny internetowej jako środowisko na pełnej stronie z pulpitu nawigacyjnego
 
-Tej procedury należy użyć, jeśli aplikacja, którą chcesz osadzić, nie jest powiązana z istniejącą stroną lub chcesz mieć środowisko na pełnej stronie dla aplikacji w obrębie aplikacji Finance and Operations.
+Tej procedury należy użyć, jeśli aplikacja, którą chcesz osadzić, nie jest powiązana z istniejącą stroną lub chcesz mieć środowisko na pełnej stronie dla aplikacji w obrębie aplikacji finansowych i operacyjnych.
 
 1. Otwórz pulpit nawigacyjny.
 2. Wybierz i przytrzymaj (lub kliknij prawym przyciskiem myszy) na pulpicie nawigacyjnym, wybierz opcję **Personalizuj**, a następnie wybierz polecenie **Dodaj stronę**.
@@ -75,7 +75,7 @@ Tej procedury należy użyć, jeśli aplikacja, którą chcesz osadzić, nie jes
     > - Aplikacja lub witryna internetowa musi być skonfigurowana tak, aby zezwalała na osadzenie jej.
 
 5. Wybierz przycisk **Zapisz**, aby dodać aplikację do pulpitu nawigacyjnego jako nowy kafelek.
-6. Wybierz nowy kafelek na pulpicie nawigacyjnym i potwierdź, że aplikacja jest wyświetlana zgodnie z oczekiwaniami. Jeśli aplikacja nie jest renderowana, zobacz sekcję [Rozwiązywanie problemów](#troubleshooting) w dalszej części tego tematu.
+6. Wybierz nowy kafelek na pulpicie nawigacyjnym i potwierdź, że aplikacja jest wyświetlana zgodnie z oczekiwaniami. Jeśli aplikacja nie jest renderowana, zobacz sekcję [Rozwiązywanie problemów](#troubleshooting) w dalszej części tego artykułu.
 
 ## <a name="sharing-embedded-apps"></a>Udostępnianie osadzonych aplikacji
 
@@ -89,7 +89,7 @@ Po osadzeniu aplikacji za pomocą jednej z metod opisanych w poprzednich sekcjac
 
 ## <a name="viewing-embedded-apps"></a>Wyświetlanie osadzonych aplikacji
 
-Aby wyświetlić osadzoną aplikację na stronie w aplikacji Finance and Operations, otwórz stronę z osadzoną aplikacją. Pamiętaj, że na niektórych stronach dostęp do aplikacji osadzonych można uzyskać za pomocą przycisku **Power Apps** w standardowym okienku akcji. Alternatywnie mogą być wyświetlane bezpośrednio na stronie w postaci nowej karty lub karty skróconej, lub bloku, lub nowej sekcji w obszarze roboczym.
+Aby wyświetlić osadzoną aplikację na stronie w aplikacjach finansowych i operacyjnych, otwórz stronę z osadzoną aplikacją. Pamiętaj, że na niektórych stronach dostęp do aplikacji osadzonych można uzyskać za pomocą przycisku **Power Apps** w standardowym okienku akcji. Alternatywnie mogą być wyświetlane bezpośrednio na stronie w postaci nowej karty lub karty skróconej, lub bloku, lub nowej sekcji w obszarze roboczym.
 
 ## <a name="editing-or-removing-embedded-apps"></a>Edytowanie lub usuwanie aplikacji osadzonych
 
@@ -126,6 +126,6 @@ Jeśli witryna sieci web nie jest renderowana prawidłowo po jej osadzeniu w apl
 
 ### <a name="developer-modeling-a-website-on-a-form"></a>[Deweloper] Modelowanie witryny internetowej w formularzu
 
-Chociaż ten temat jest skoncentrowany na osadzaniu aplikacji lub witryn internetowych innych firm za pomocą personalizacji, deweloperzy mogą również osadzać je w formularzu, korzystając ze środowiska deweloperskiego Visual Studio. Należy tylko dodać do formularza formant **WebsiteHostControl**. Właściwości metadanych dostępne dla formantu zapewniają te same możliwości, co funkcje personalizacji.
+Chociaż ten artykuł jest skoncentrowany na osadzaniu aplikacji lub witryn internetowych innych firm za pomocą personalizacji, deweloperzy mogą również osadzać je w formularzu, korzystając ze środowiska deweloperskiego Visual Studio. Należy tylko dodać do formularza formant **WebsiteHostControl**. Właściwości metadanych dostępne dla formantu zapewniają te same możliwości, co funkcje personalizacji.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c1ef722eabc3c3bc740f9ff5d959cfa005862a9b
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 28caacaafa5ef20a3d8e1ce93851c48bd4af89a0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735731"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848202"
 ---
 # <a name="performance-management"></a>Zarządzanie wydajnością
 
@@ -79,7 +79,7 @@ Twój dziennik wyników będzie zawierał,<!--note from editor: Suggested.--> kt
 
 Jeśli chcesz do celu dołączyć dokument, taki jak świadectwo ukończenia, można to zrobić w sekcji **Załączniki** na stronie **Cele dotyczące wydajności**. Jest dostępna przeglądarka dokumentów, dzięki czemu można szybko wyświetlić zawartość dowolnego dołączonego dokumentu. 
 
-Na podstawie celu można utworzyć szablon, a następnie używać go do tworzenia nowych celów. Gdy tworzysz szablon z celu, jest zachowywany opis, tematy i docelowe miary. Natomiast wszystkie rzeczywiste miary, daty ukończenia i komentarze do tematów są usuwane.
+Na podstawie celu można utworzyć szablon, a następnie używać go do tworzenia nowych celów. Gdy tworzysz szablon z celu, jest zachowywany opis, tematy i docelowe miary. Natomiast wszystkie rzeczywiste miary, daty ukończenia i komentarze do artykułów są usuwane.
 
 ## <a name="performance-reviews"></a>Przeglądy wydajności
 

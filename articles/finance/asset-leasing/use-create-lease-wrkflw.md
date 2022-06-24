@@ -1,6 +1,6 @@
 ---
 title: Używanie przepływów pracy zatwierdzeń wynajmów
-description: W tym temacie opisano sposób używania przepływów pracy do zatwierdzania umów wynajmu składników majątku oraz do śledzenia stanu i historii przepływów pracy.
+description: W tym artykule opisano sposób używania przepływów pracy do zatwierdzania umów wynajmu składników majątku oraz do śledzenia stanu i historii przepływów pracy.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 0b35dfa599895cb39cdd6a0a95fdcdcc54c45044
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 4205b83919f0b3c30a4b5d8e3290af230f538f39
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724933"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906450"
 ---
 # <a name="use-lease-approval-workflows"></a>Używanie przepływów pracy zatwierdzeń wynajmów
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób używania przepływów pracy do zatwierdzania umów wynajmu składników majątku oraz do śledzenia stanu i historii przepływów pracy. Przepływy pracy wprowadzają spójność do zarządzania zatwierdzeniami umów wynajmu, wyznaczając standardowy zbiór kroków zatwierdzania i przypisując określonych użytkowników, którzy zatwierdzają każdy etap procesu. Osoba zatwierdzająca może zatwierdzić wynajem, odrzucić go, poprosić o jego modyfikację lub przypisać innemu użytkownikowi do zatwierdzenia. Przepływy pracy mogą również zwiększyć przejrzystość procesu zatwierdzania, umożliwiając śledzenie stanu i historii. Ponadto można wyświetlić scentralizowaną listę roboczą zawierającą zadania i zatwierdzenia przypisane do określonych osób zatwierdzających.
+W tym artykule opisano sposób używania przepływów pracy do zatwierdzania umów wynajmu składników majątku oraz do śledzenia stanu i historii przepływów pracy. Przepływy pracy wprowadzają spójność do zarządzania zatwierdzeniami umów wynajmu, wyznaczając standardowy zbiór kroków zatwierdzania i przypisując określonych użytkowników, którzy zatwierdzają każdy etap procesu. Osoba zatwierdzająca może zatwierdzić wynajem, odrzucić go, poprosić o jego modyfikację lub przypisać innemu użytkownikowi do zatwierdzenia. Przepływy pracy mogą również zwiększyć przejrzystość procesu zatwierdzania, umożliwiając śledzenie stanu i historii. Ponadto można wyświetlić scentralizowaną listę roboczą zawierającą zadania i zatwierdzenia przypisane do określonych osób zatwierdzających.
 
 Przed użyciem tej procedury upewnij się, że utworzono co najmniej przepływ pracy zatwierdzania wynajmu. Jeśli nie istnieje przepływ pracy, utwórz go. Aby uzyskać więcej informacji o ustawianiu przepływu pracy, zobacz [Konfigurowanie przepływów pracy zatwierdzeń wynajmów](set-up-lease-wrkflw.md).
 

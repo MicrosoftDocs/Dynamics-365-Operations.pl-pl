@@ -1,6 +1,6 @@
 ---
 title: Podstawy alokacji
-description: Ten temat zawiera informacje dotyczące podstaw alokacji. Podstawy alokacji są kluczowymi składnikami w rachunku kosztów i zwykle służą do alokowania kosztów ogólnych.
+description: Ten artykuł zawiera informacje dotyczące podstaw alokacji. Podstawy alokacji są kluczowymi składnikami w rachunku kosztów i zwykle służą do alokowania kosztów ogólnych.
 author: AndersGirke
 ms.date: 05/24/2017
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bb50fe7d258bdd56529bc5d0ef55dae309d3edec
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 138a1a101610fc0f18ef3d8d2d3d336e5a48a1da
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733799"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894092"
 ---
 # <a name="allocation-bases"></a>Podstawy alokacji 
 
@@ -174,7 +174,7 @@ Moduł Rachunek kosztów obsługuje kolekcję miar statystycznych przy użyciu n
 - Narzędzie importu/eksportu Zarządzanie danymi
 - Miary statystyczne
 
-Aby można było pobrać miary statystyczne z systemu, jest wymagany szablon dostawcy miar statystycznych. Więcej informacji zawiera temat Szablon dostawcy miar statystycznych. (Łącze zostanie dodane po zredagowaniu tematu).
+Aby można było pobrać miary statystyczne z systemu, jest wymagany szablon dostawcy miar statystycznych. Więcej informacji zawiera temat Szablon dostawcy miar statystycznych. (Link zostanie dodany po zredagowaniu artykułu).
 
 **Szablony dostawców miar statystycznych**
 

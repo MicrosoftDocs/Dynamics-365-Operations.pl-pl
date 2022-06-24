@@ -1,6 +1,6 @@
 ---
 title: Zapisz możliwe do odzyskania numery certyfikatów TDS
-description: W tym temacie wyjaśniono, jak używać strony Certyfikaty podlegające zwrotowi do rejestracji numerów certyfikatów i dat dla certyfikatów potrącanych z podatku w źródle (TDS), które są odbierane dla określonego dostawcy, odbiorcy lub księgi.
+description: W tym artykule wyjaśniono, jak używać strony Certyfikaty podlegające zwrotowi do rejestracji numerów certyfikatów i dat dla certyfikatów potrącanych z podatku w źródle (TDS), które są odbierane dla określonego dostawcy, odbiorcy lub księgi.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 5d62f560fe58a5fb7bd158bed9bcb111d75c7f00
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 513412e292167795fad9d80b68e6e5e14dbd13c5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726498"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853264"
 ---
 # <a name="record-tds-recoverable-certificate-numbers"></a>Zapisz możliwe do odzyskania numery certyfikatów TDS
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak używać strony **Certyfikaty podlegające zwrotowi** do rejestracji numerów certyfikatów i dat dla certyfikatów potrącanych z podatku w źródle (TDS), które są odbierane dla określonego dostawcy, odbiorcy lub księgi. Aby zaktualizować numery i daty certyfikatów TDS zarejestrowane dla transakcji TDS na tej stronie, użyj strony **Aktualizuj certyfikat** (**Księga główna \> Okres \> Potrącona zaliczka na podatek \> Aktualizuj certyfikaty**). Po zakończeniu aktualizowania numerów certyfikatów TDS należy je zamknąć.
+W tym artykule wyjaśniono, jak używać strony **Certyfikaty podlegające zwrotowi** do rejestracji numerów certyfikatów i dat dla certyfikatów potrącanych z podatku w źródle (TDS), które są odbierane dla określonego dostawcy, odbiorcy lub księgi. Aby zaktualizować numery i daty certyfikatów TDS zarejestrowane dla transakcji TDS na tej stronie, użyj strony **Aktualizuj certyfikat** (**Księga główna \> Okres \> Potrącona zaliczka na podatek \> Aktualizuj certyfikaty**). Po zakończeniu aktualizowania numerów certyfikatów TDS należy je zamknąć.
 
 Aby zarejestrować numery i daty certyfikatów TDS, należy wykonać następujące kroki.
 

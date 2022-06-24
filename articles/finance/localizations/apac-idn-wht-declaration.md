@@ -1,6 +1,6 @@
 ---
 title: Raport potrąconych zaliczek na podatek dla Indonezji
-description: W tym temacie wyjaśniono, jak skonfigurować i wygenerować raport potrąconych zaliczek na podatek dla Indonezji.
+description: W tym artykule wyjaśniono, jak skonfigurować i wygenerować raport potrąconych zaliczek na podatek dla Indonezji.
 author: sndray
 ms.date: 12/15/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: sndray
 ms.search.validFrom: 2021-12-02
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 6cf2f9240ea747054578c52343af34b15c250f38
-ms.sourcegitcommit: f51e74ee9162fe2b63c6ce236e514840795acfe1
+ms.openlocfilehash: 8acd9442ff4f0b7c19e3b4fcf211acce002e43d5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7943663"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883189"
 ---
 # <a name="withholding-tax-report-for-indonesia-id-00005"></a>Raport potrąconych zaliczek na podatek dla Indonezji (ID-00005)
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak skonfigurować i wygenerować plik potrąconych zaliczek na podatek (PPH), którego osoby prawne w Indonezji używają w celu raportowania transakcji potrącenia zaliczek w aplikacji e-Bupot.
+W tym artykule wyjaśniono, jak skonfigurować i wygenerować plik potrąconych zaliczek na podatek (PPH), którego osoby prawne w Indonezji używają w celu raportowania transakcji potrącenia zaliczek w aplikacji e-Bupot.
 
 Urząd skarbowy Indonezji (DGT) ustala, że podlegający opodatkowaniu przedsiębiorcy (PKP), którzy są zarejestrowani w KPP Pratama jako osoby potrącające zaliczki lub pobierające podatek dochodowy (PPH) na podstawie Artykułu 23 i/lub Artykułu 26, muszą raportować elektronicznie zwrot podatku dochodowego na podstawie Artykułów 23 i 26 za pomocą aplikacji e-Bupot. 
 

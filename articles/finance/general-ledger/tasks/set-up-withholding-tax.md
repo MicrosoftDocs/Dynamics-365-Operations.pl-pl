@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie potrąconych zaliczek na podatek
-description: W tym temacie wyjaśniono sposób konfigurowania potrąconej zaliczki na podatek.
+description: W tym artykule wyjaśniono sposób konfigurowania potrąconej zaliczki na podatek.
 author: twheeloc
 ms.date: 07/11/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c3c4992c7ab02793db3650df5624143d0ec090d0
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 0cc080df587904568796a9d6794987326be3ad26
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565592"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907959"
 ---
 # <a name="set-up-withholding-tax"></a>Konfigurowanie potrąconych zaliczek na podatek
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie wyjaśniono sposób konfigurowania potrąconej zaliczki na podatek. *Potrącona zaliczka na podatek* to podatek nałożony na dostawców, który nie powoduje utworzenia transakcji podatkowej. Potrącona zaliczka na podatek obliczana dla płatności dostawców jest zobowiązaniem. Z tego względu tylko konta bilansowe lub konta pasywów są odpowiednimi miejscami do księgowania potrąconych zaliczek na podatek. W tym przewodniku po zadaniach przedstawiono sposób konfigurowania zaliczek na podatek.
+W tym artykule wyjaśniono sposób konfigurowania potrąconej zaliczki na podatek. *Potrącona zaliczka na podatek* to podatek nałożony na dostawców, który nie powoduje utworzenia transakcji podatkowej. Potrącona zaliczka na podatek obliczana dla płatności dostawców jest zobowiązaniem. Z tego względu tylko konta bilansowe lub konta pasywów są odpowiednimi miejscami do księgowania potrąconych zaliczek na podatek. W tym przewodniku po zadaniach przedstawiono sposób konfigurowania zaliczek na podatek.
 
 1. Otwórz **Okienko nawigacji > Moduły > Podatek > Podatki pośrednie > Potrącona zaliczka na podatek > Kody potrąconych zaliczek na podatek**.
 2. Wybierz pozycję **Nowy**.

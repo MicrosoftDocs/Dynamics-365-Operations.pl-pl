@@ -1,6 +1,6 @@
 ---
 title: Generowanie skonsolidowanych sprawozdań finansowych
-description: W tym temacie opisano różne scenariusze, w których mogą być generowane skonsolidowane sprawozdania finansowe.
+description: W tym artykule opisano różne scenariusze, w których mogą być generowane skonsolidowane sprawozdania finansowe.
 author: aprilolson
 ms.date: 07/09/2018
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 092123d6f5f74d2ff160f2ebffdc2c049ccc3f65
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: c6a132b742414a3dab635634c7bb5ba0dbea527d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716532"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846807"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Generowanie skonsolidowanych sprawozdań finansowych
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano różne scenariusze, w których mogą być generowane skonsolidowane sprawozdania finansowe.
+W tym artykule opisano różne scenariusze, w których mogą być generowane skonsolidowane sprawozdania finansowe.
 
 ## <a name="single-level-and-multilevel-consolidations-across-legal-entities"></a>Konsolidacje jednopoziomowe i wielopoziomowe w różnych firmach
 Najprostszą metodą konsolidowania za pomocą aplikacji Raportowanie finansowe jest używanie drzew raportowania do agregowania danych ze wszystkich firm, które mają ten sam plan kont i okresy obrachunkowe. Poniżej przedstawiono ogólne czynności w ramach konsolidowania przy użyciu drzewa raportowania.
@@ -153,7 +153,7 @@ Poniższa ilustracja pokazuje opcje w definicji raportu pozwalające wybrać, cz
 ![Numer okresu definicji raportu o opcjach.](./media/options-report-definition-period-number.png "Numer okresu definicji raportu o opcjach")
 
 ## <a name="business-unit-consolidations"></a>Konsolidacje jednostek biznesowych
-W tym temacie dotąd skupialiśmy się na używaniu definicji drzewa raportowania i hierarchii organizacyjnych w aplikacji Raportowanie finansowe na potrzeby konsolidacji. Drzewa raportowania można także używać do tworzenia raportów konsolidacyjnych jednostek biznesowych, takich jak raporty o sprzedaży lub działalności na całym świecie. Raporty te są typowym wymaganiem. Aby je utworzyć, zaznacz firmę i wymiar dla każdej jednostki, dla której chcesz dokonać konsolidacji. Na przykład na poniższej ilustracji akumulacja dla jednostek biznesowych odbywa się przez powtarzanie każdej firmy w kolumnie **Firma** (kolumna A) oraz identyfikowanie grupy wartości wymiaru Dział dla każdej firmy w kolumnie **Wymiary** (kolumna D).
+W tym artykule dotąd skupialiśmy się na używaniu definicji drzewa raportowania i hierarchii organizacyjnych w aplikacji Raportowanie finansowe na potrzeby konsolidacji. Drzewa raportowania można także używać do tworzenia raportów konsolidacyjnych jednostek biznesowych, takich jak raporty o sprzedaży lub działalności na całym świecie. Raporty te są typowym wymaganiem. Aby je utworzyć, zaznacz firmę i wymiar dla każdej jednostki, dla której chcesz dokonać konsolidacji. Na przykład na poniższej ilustracji akumulacja dla jednostek biznesowych odbywa się przez powtarzanie każdej firmy w kolumnie **Firma** (kolumna A) oraz identyfikowanie grupy wartości wymiaru Dział dla każdej firmy w kolumnie **Wymiary** (kolumna D).
 
 ![Raporty konsolidacyjne jednostek biznesowych.](./media/business-unit-consolidation-reports.png "Raporty konsolidacyjne jednostek biznesowych")
 
@@ -218,7 +218,7 @@ Aby uzyskać prawidłowo przeliczone kwoty podczas używania walut, aplikacja Ra
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-Aby uzyskać więcej informacji o konsolidacjach i przeliczaniu walut, zobacz temat nadrzędny tego tematu — [Omówienie konsolidacji finansowych i przeliczania walut](./financial-consolidations-currency-translation.md).
+Aby uzyskać więcej informacji o konsolidacjach i przeliczaniu walut, zobacz artykuł nadrzędny tego artykułu — [Omówienie konsolidacji finansowych i przeliczania walut](./financial-consolidations-currency-translation.md).
 
 Aby uzyskać więcej informacji na temat sposobu wprowadzania szczegółowych informacji o konsolidacji w trybie online, zobacz [Konsolidacje finansowe online](./consolidate-online.md).
 

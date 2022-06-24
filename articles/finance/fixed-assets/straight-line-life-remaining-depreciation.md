@@ -1,6 +1,6 @@
 ---
-title: Amortyzacja liniowa za pozostały okres użytkowania
-description: Ten temat zawiera omówienie metody amortyzacji pozostały okres użytkowania.
+title: Amortyzacja za pozostały liniowy okres użytkowania
+description: Ten artykuł zawiera omówienie metody amortyzacji Liniowy pozostały okres użytkowania.
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 92941bc679835d38ba47464452315498a70ce2ee
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 185e1c101ffb6dfbd47348952d6dfc47ab137ffa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726705"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853446"
 ---
-# <a name="straight-line-life-remaining-depreciation"></a>Amortyzacja liniowa za pozostały okres użytkowania
+# <a name="straight-line-life-remaining-depreciation"></a>Amortyzacja za pozostały liniowy okres użytkowania
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera omówienie metody amortyzacji pozostały okres użytkowania.
+Ten artykuł zawiera omówienie metody amortyzacji Liniowy pozostały okres użytkowania.
 
 Po skonfigurowaniu profilu amortyzacji środków trwałych i wybraniu opcji **Liniowy pozostały okresu użytkowania** w polu **Metoda** na stronie **Profile amortyzacji amortyzacja środków trwałych**, które są przypisane do tego profilu amortyzacji, będzie obliczana na podstawie pozostałego okresu użytkowania środków. Kwota amortyzacji jest generalnie taka sama w każdym okresie amortyzacji. Aby skonfigurować pozostały liniowy okres użytkowania, trzeba również wybrać opcje w polach **Rok amortyzacji** i **Częstotliwość okresu** na stronie **Profile amortyzacji**. Opcje dostępne w polu **Częstotliwość okresu** różnią się w zależności od wartości wybranej w polu **Rok amortyzacji**.
 
@@ -35,7 +35,7 @@ Można wybrać **Kalendarzowy** lub **Obrachunkowy** w polu **Rok amortyzacji** 
 
 ### <a name="calendar"></a>Kalendarz
 
-W przypadku wybrania opcji **Kalendarz** w polu **_Rok amortyzacji_*_ przyjmowany jest rok od 1 stycznia do 31 grudnia, nawet jeśli kalendarz obrachunkowy został zdefiniowany inaczej. Opcja _* Kalendarz** powoduje aktualizację podstawy amortyzacji 1 stycznia każdego roku. Podstawą amortyzacji jest zazwyczaj wartość księgową netto minus wartość odzyskana. W poniższym przykładzie podstawa amortyzacji stanowi kolejny numer w pierwszym wyrażeniu w obliczeniach w kolumnie Obliczenia. W przypadku wybrania opcji **Kalendarzowy** jako rok amortyzacji, dostępne są następujące opcje są dostępne w polu **Częstotliwość okresu**:
+W przypadku wybrania opcji **Kalendarz** w polu **_Rok amortyzacji_*_ przyjmowany jest rok od 1 stycznia do 31 grudnia, nawet jeśli kalendarz obrachunkowy został zdefiniowany inaczej. Opcja _* Kalendarz** powoduje aktualizację podstawy amortyzacji 1 stycznia każdego roku. Podstawą amortyzacji jest zazwyczaj wartość księgową netto minus wartość odzyskana. W poniższym przykładzie w dalszej części tego artykułu podstawa amortyzacji stanowi kolejny numer w pierwszym wyrażeniu w obliczeniach w kolumnie Obliczenia. W przypadku wybrania opcji **Kalendarzowy** jako rok amortyzacji, dostępne są następujące opcje są dostępne w polu **Częstotliwość okresu**:
 
 - **Roczne** — księgowanie kwoty 31 grudnia.
 - **Miesięczne** — służy do księgowania miesięcznej kwoty pod koniec każdego miesiąca kalendarzowego.

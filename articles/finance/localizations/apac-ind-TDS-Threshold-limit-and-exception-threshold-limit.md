@@ -1,6 +1,6 @@
 ---
 title: Limit progowy i limit progowy wyjątków
-description: W tym temacie opisano progi i limity wyjątków dotyczące potrącanych podatków w źródle (TDS).
+description: W tym artykule opisano progi i limity wyjątków dotyczące potrącanych podatków w źródle (TDS).
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 7fa7d871fdf25f29b003a68cacd9fc0d487dce5b
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: aceebad08b5454b64059e7ef374b9634bad35c37
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726024"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877944"
 ---
 # <a name="threshold-limit-and-exception-threshold-limit"></a>Limit progowy i limit progowy wyjątków
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano progi i limity wyjątków dotyczące potrącanych podatków w źródle (TDS). IdentyfikatorY TDS faktur i płatności są zawsze obliczane z uwzględnieniem limitu progowego i limitu progu wyjątku zdefiniowanego dla składników podatku TDS na stronie **Składniki potrąconej zaliczki na podatek**. Składniki podatku TDS są dołączane do kodów podatku TDS, które są zawarte w grupach podatków TDS. Grupy podatków TDS są dołączane do dostawców i odbiorców w celu obliczania TDS na poziomie faktury lub na poziomie płatności.
+W tym artykule opisano progi i limity wyjątków dotyczące potrącanych podatków w źródle (TDS). IdentyfikatorY TDS faktur i płatności są zawsze obliczane z uwzględnieniem limitu progowego i limitu progu wyjątku zdefiniowanego dla składników podatku TDS na stronie **Składniki potrąconej zaliczki na podatek**. Składniki podatku TDS są dołączane do kodów podatku TDS, które są zawarte w grupach podatków TDS. Grupy podatków TDS są dołączane do dostawców i odbiorców w celu obliczania TDS na poziomie faktury lub na poziomie płatności.
 
 Identyfikator TDS jest obliczany, jeśli kwota transakcji lub skumulowanych transakcji zaksięgowanych z określoną grupą TDS dla dostawcy przekracza limit progowy określony na stronie **Składniki potrąconej zaliczki na podatek**. Identyfikator TDS zostanie obliczony dopiero po przekroczeniu określonego limitu progowego skumulowanej kwoty transakcji.
 

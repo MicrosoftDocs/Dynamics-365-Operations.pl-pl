@@ -1,6 +1,6 @@
 ---
 title: Generowanie drukowalnych formularzy FTI
-description: W tym temacie opisano, jak za pomocą struktury raportowania elektronicznego (ER) generować drukowalne formularze faktur niezależnych (FTI) jako dokumenty pakietu Microsoft Office.
+description: W tym artykule opisano, jak za pomocą struktury raportowania elektronicznego (ER) generować drukowalne formularze faktur niezależnych (FTI) jako dokumenty pakietu Microsoft Office.
 author: NickSelin
 ms.date: 07/24/2018
 ms.topic: article
@@ -14,25 +14,25 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: be5e3ef0f6ecb3d8f911b5be5f8bc9102d201fd299425e847a2df233d9b4edf4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d4efbb46bbba2b139bbcf9b07c480a7e8669fd7d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758223"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868837"
 ---
 # <a name="generate-printable-fti-forms"></a>Generowanie drukowalnych formularzy FTI
 
 [!include[banner](../includes/banner.md)]
 
-Struktura raportowania elektronicznego (ER) umożliwia generowanie drukowalnych formularzy faktur niezależnych (FTI) jako dokumentów pakietu Microsoft Office. Ten temat zawiera informacje dotyczące sposobu tworzenia własnych konfiguracji oraz szczegółowe informacje o dostępnych szablonach konfiguracji.
+Struktura raportowania elektronicznego (ER) umożliwia generowanie drukowalnych formularzy faktur niezależnych (FTI) jako dokumentów pakietu Microsoft Office. Ten artykuł zawiera informacje dotyczące sposobu tworzenia własnych konfiguracji oraz szczegółowe informacje o dostępnych szablonach konfiguracji.
 
 ## <a name="overview"></a>Przegląd
 
 Oprócz istniejącej wcześniej możliwości tworzenia drukowalnych formularzy faktur niezależnych za pomocą usługi Microsoft SQL Server Reporting Services (SSRS) teraz można używać struktury raportowania elektronicznego. Drukowalnymi formularzami faktur niezależnych można zarządzać w programach Microsoft Office Excel i Word. Można także modyfikować układ, przepływ danych i formatowanie w celu spełnienia określonych wymagań bez wprowadzania zmian w kodzie źródłowym.
 
 > [!NOTE]
-> Jeśli chcesz zacząć od przeglądu istniejących konfiguracji raportowania elektronicznego dla tego przykładu rozwiązania do tworzenia drukowalnych formularzy faktur niezależnych, możesz przejść bezpośrednio do punktu **Pobieranie przykładowych konfiguracji ER w celu generowania drukowalnych formularzy FTI** poniżej w tym temacie.
+> Jeśli chcesz zacząć od przeglądu istniejących konfiguracji raportowania elektronicznego dla tego przykładu rozwiązania do tworzenia drukowalnych formularzy faktur niezależnych, możesz przejść bezpośrednio do punktu **Pobieranie przykładowych konfiguracji ER w celu generowania drukowalnych formularzy FTI** poniżej w tym artykule.
 
 ## <a name="create-customized-configurations-for-fti-printable-forms"></a>Tworzenie spersonalizowanych konfiguracji dla drukowalnych formularzy faktur niezależnych
 W ramach niestandardowego rozwiązania do generowania drukowalnych formularzy faktur niezależnych należy utworzyć zestaw konfiguracji raportowania elektronicznego.

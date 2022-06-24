@@ -1,6 +1,6 @@
 ---
 title: Język formuł raportowania elektronicznego
-description: Ten temat zawiera ogólne informacje o używaniu języka formuł w module Raportowanie elektroniczne (ER).
+description: Ten artykuł zawiera ogólne informacje o używaniu języka formuł w module Raportowanie elektroniczne (ER).
 author: NickSelin
 ms.date: 05/04/2020
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0ef0b9e411fabca1427b985eb51640bfd2a0d59318a456cb5b1ecdea1445fab5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 86dcbee30ec4c260f7c035f92e343e4b2389f8db
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750631"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905236"
 ---
 # <a name="electronic-reporting-formula-language"></a>Język formuł raportowania elektronicznego
 

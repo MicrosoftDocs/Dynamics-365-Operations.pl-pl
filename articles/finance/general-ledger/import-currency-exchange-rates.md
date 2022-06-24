@@ -1,6 +1,6 @@
 ---
 title: Importowanie kursów wymiany walut
-description: Ten temat zawiera informacje o wymaganiach dotyczących importowania kursów referencyjnych dla walut obcych opublikowanych za pomocą bankowych kursów wymiany.
+description: Ten artykuł zawiera informacje o wymaganiach dotyczących importowania kursów referencyjnych dla walut obcych opublikowanych za pomocą bankowych kursów wymiany.
 author: EvgenyPopovMBS
 ms.date: 03/17/2020
 ms.topic: article
@@ -15,23 +15,23 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: f96622132be3c8a404f3f4e9c34f3ac5085a4fdc007ecb627d06a95d7c80932b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 27f9b06646d9ce948a6b4528c38c5df9784b24b2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727331"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894943"
 ---
 # <a name="import-currency-exchange-rates"></a>Importowanie kursów wymiany walut
 
 [!include [banner](../includes/banner.md)]
 
-Jeżeli firma otrzymała faktury w walutach obcych, jest konieczne przeliczenie tych walut na walutę lokalną. Oznacza to, że są potrzebne aktualne kursy wymiany różnych walut. Ten temat zawiera omówienie wymaganych ustawień i przetwarzania wymaganych do importowania referencyjnych kursów wymiany publikowanych w Internecie przez dostawców kursów wymiany, takich jak Europejski Bank Centralny i Bank Centralny Rosji.
+Jeżeli firma otrzymała faktury w walutach obcych, jest konieczne przeliczenie tych walut na walutę lokalną. Oznacza to, że są potrzebne aktualne kursy wymiany różnych walut. Ten artykuł zawiera omówienie wymaganych ustawień i przetwarzania wymaganych do importowania referencyjnych kursów wymiany publikowanych w Internecie przez dostawców kursów wymiany, takich jak Europejski Bank Centralny i Bank Centralny Rosji.
 
 W poniższych sekcjach opisano przepływ informacji używanych do konfigurowania i przetwarzania importu kursów wymiany walut.
 
 ## <a name="configure-an-exchange-rate-provider"></a>Konfigurowanie dostawcy kursów wymiany
-Aby można było importować kursy wymiany walut, należy skonfigurować informacje wymagane przez dostawców oferujących kursy wymiany. Użyj strony **Konfigurowanie bankowych kursów wymiany**, aby wybrać dostawców kursu wymiany walut. Niektórzy dostawcy kursów wymiany są zawarci w danych demonstracyjnych w programie Dynamics 365 Finance. Poniższa tabela zawiera opisy formantów wspominanych na tej stronie.
+Aby można było importować kursy wymiany walut, należy skonfigurować informacje wymagane przez dostawców oferujących kursy wymiany. Użyj strony **Konfigurowanie bankowych kursów wymiany**, aby wybrać dostawców kursu wymiany walut. Niektórzy dostawcy kursów wymiany są zawarci w danych pokazowych w aplikacji Dynamics 365 Finance. Poniższa tabela zawiera opisy formantów wspominanych na tej stronie.
 
 | Pole | opis                   |
 |-----------|-----------------------------------|

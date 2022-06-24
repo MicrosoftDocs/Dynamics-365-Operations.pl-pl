@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie i generowanie plików płatności dodatnich
-description: W tym temacie wyjaśniono, jak konfigurować płatności dodatnie i generować pliki płatności dodatnich.
+description: W tym artykule wyjaśniono, jak konfigurować płatności dodatnie i generować pliki płatności dodatnich.
 author: panolte
 ms.date: 03/06/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: eb5a9595ea1a93a9b15348eb1b291d744f660d40
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 6b3cff1029b02aaabef2ea9795ab9912f20f1129
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727770"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871428"
 ---
 # <a name="set-up-and-generate-positive-pay-files"></a>Konfigurowanie i generowanie plików płatności dodatnich
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak konfigurować płatności dodatnie i generować pliki płatności dodatnich. 
+W tym artykule wyjaśniono, jak konfigurować płatności dodatnie i generować pliki płatności dodatnich. 
 
 Konfigurowanie płatności dodatnich w celu generowania elektronicznej listy czeków dostarczanych do banku. Gdy czek zostanie przekazany do banku, bank porównuje go z listą czeków. Jeśli czek pasuje do czeku na liście, wówczas bank rozlicza czek. Jeśli czek nie pasuje do czeku na liście, bank wstrzymuje czek w celu sprawdzenia.
 

@@ -1,6 +1,6 @@
 ---
 title: Importowanie załączników za pomocą jednostki Arkusz finansowy
-description: Ten temat zawiera porady dotyczące importowania danych do arkusza finansowego przy użyciu jednostki Arkusz finansowy.
+description: Ten artykuł zawiera porady dotyczące importowania danych do arkusza finansowego przy użyciu jednostki Arkusz finansowy.
 author: rcarlson
 ms.date: 04/20/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42bc804393d050e5ff722c46c9ce50ece54c5a0b
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 056bb860e3133bb8389410e29d20f32447799399
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065077"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867619"
 ---
 # <a name="importing-vouchers-by-using-the-general-journal-entity"></a>Importowanie załączników za pomocą jednostki Arkusz finansowy
 
@@ -28,7 +28,7 @@ ms.locfileid: "8065077"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Ten temat zawiera porady dotyczące importowania danych do arkusza finansowego przy użyciu jednostki Arkusz finansowy.
+Ten artykuł zawiera porady dotyczące importowania danych do arkusza finansowego przy użyciu jednostki Arkusz finansowy.
 
 Jednostka Arkusz finansowy umożliwia importowanie tylko załączników, które mają typ konta lub konta przeciwstawnego **Księga**, **Odbiorca**, **Dostawca** lub **Bank**. Załącznik można wprowadzić w jednym wierszu, używając obu pól **Konto** i **Konto przeciwstawne**, lub w wielu wierszach, gdzie jest używane tylko pole **Konto** pole (a pole **Konto przeciwstawne** pozostaje puste w każdym wierszu). Jednostki Arkusz finansowy nie obsługuje każdego typu konta. Zamiast tego istnieją inne jednostki dla scenariuszy, w których są potrzebne inne kombinacje typów kont. Na przykład aby zaimportować transakcję projektu, należy użyć jednostki Arkusz wydatków w ramach projektu. Każda jednostka jest przeznaczona do obsługi konkretnych scenariuszy. Oznacza to, że w tych scenariuszach mogą być dostępne dodatkowe pola. Dodatkowe pola mogą być jednak niedostępne w jednostkach dla różnych scenariuszy.
 

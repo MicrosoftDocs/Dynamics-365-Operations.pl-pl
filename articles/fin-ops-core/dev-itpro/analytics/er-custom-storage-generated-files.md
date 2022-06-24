@@ -1,6 +1,6 @@
 ---
 title: Określanie niestandardowych lokalizacji przechowywania wygenerowanych dokumentów
-description: W tym temacie wyjaśniono, jak rozszerzyć listę lokalizacji przechowywania dokumentów generowanych przez formaty modułu Raportowanie elektroniczne (ER).
+description: W tym artykule wyjaśniono, jak rozszerzyć listę lokalizacji przechowywania dokumentów generowanych przez formaty modułu Raportowanie elektroniczne (ER).
 author: NickSelin
 ms.date: 10/29/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 337e760f28161721d886c7bbec09b5ff8dbfad45
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 103a7e51fc6042e19b1db3b3d6b00436df15fd89
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594916"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898864"
 ---
 # <a name="specify-custom-storage-locations-for-generated-documents"></a>Określanie niestandardowych lokalizacji przechowywania wygenerowanych dokumentów
 
 [!include[banner](../includes/banner.md)]
 
-Interfejs API raportowania elektronicznego pozwala rozszerzyć listę lokalizacji, w których można przechowywać dokumenty generowane przez funkcję raportowania elektronicznego. W tym temacie opisano sposób dodawania niestandardowej lokalizacji przechowywania dla generowanych dokumentów poprzez oddelegowanie zadania tworzenia miejsc docelowych modułu ER do fabryki domyślnego miejsca docelowego, a następnie zaimplementowanie niestandardowej klasy mającej własną logikę lokalizacji docelowej.
+Interfejs API raportowania elektronicznego pozwala rozszerzyć listę lokalizacji, w których można przechowywać dokumenty generowane przez funkcję raportowania elektronicznego. W tym artykule opisano sposób dodawania niestandardowej lokalizacji przechowywania dla generowanych dokumentów poprzez oddelegowanie zadania tworzenia miejsc docelowych modułu ER do fabryki domyślnego miejsca docelowego, a następnie zaimplementowanie niestandardowej klasy mającej własną logikę lokalizacji docelowej.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -35,7 +35,7 @@ Wdróż topologię, która obsługuje ciągłą kompilację. Więcej informacji 
 
 Ponadto musisz także mieć dostęp do środowiska programowania dla tej topologii.
 
-Wszystkie zadania przedstawione w tym temacie można wykonać w kontekście firmy **USMF**.
+Wszystkie zadania przedstawione w tym artykule można wykonać w kontekście firmy **USMF**.
 
 ## <a name="import-the-fixed-asset-roll-forward-er-format"></a>Importowanie formatu ER Przesunięcie środków trwałych do przodu
 

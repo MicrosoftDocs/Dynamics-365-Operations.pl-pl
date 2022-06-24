@@ -1,6 +1,6 @@
 ---
 title: Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources 22 października 2020 r.
-description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Human Resources w dniu 22 października 2020 roku.
+description: W tym artykule opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Human Resources w dniu 22 października 2020 roku.
 author: jcart1106
 ms.date: 10/22/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b36354b14faf59aacb4a619dfb6f243335e6a297
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: d58c8d5eab86779a764cee5a3ee8ca17ade471de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063525"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862809"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-22-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources 22 października 2020 r.
 
@@ -27,7 +27,7 @@ ms.locfileid: "8063525"
 
 
 
-W tym temacie opisano nowe, zmienione i wkrótce dostępne funkcje dostępne w rozwiązaniu Dynamics 365 Human Resources. Aby uzyskać więcej informacji na temat procesu aktualizacji i harmonogramu, należy zapoznać się z tematem [Aktualizacja procesu](hr-admin-setup-update-process.md).
+W tym artykule opisano nowe, zmienione lub przyszłe funkcje dostępne w aplikacji Dynamics 365 Human Resources. Aby uzyskać więcej informacji na temat procesu aktualizacji i harmonogramu, należy zapoznać się z tematem [Aktualizacja procesu](hr-admin-setup-update-process.md).
 
 Aby uzyskać więcej informacji o nowych funkcjach i oczekiwanych ogólnych datach dostępności, zapoznaj się z [omówieniem Dynamics 365 Human Resources 2020 wydanie 2](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
@@ -50,9 +50,9 @@ W tym wydaniu są zazwyczaj dostępne następujące funkcje.
 W tej wersji uwzględniono następujące poprawki błędów.
 
 > [!NOTE]
-> Naszym celem jest jak najszybsze uzyskanie tych informacji. Firma Microsoft może zaktualizować ten temat w taki sposób, aby zawierał poprawki powodujące błąd, które wprowadziły je do kompilacji po początkowym opublikowaniu tego tematu.
+> Naszym celem jest jak najszybsze uzyskanie tych informacji. Możemy zaktualizować ten artykuł w taki sposób, aby zawierał poprawki powodujące błąd, które wprowadziły je do kompilacji po początkowym opublikowaniu tego artykułu.
 
-| Numer problemu| Wystawienie  | opis|
+| Numer problemu| Problem  | Opis|
 | --- | --- | --- |
 | 437922 | Importowanie godzin FMLA przy użyciu jednostki DMF powoduje błąd tylko do odczytu. | Użycie jednostki godziny FMLA do importowania godzin skojarzonych z sprawą FMLA nie powiodło się. Dodałeś logikę, aby upewnić się, że importowane godziny nie przekraczają godzin pozostałych dla sprawy. |
 | 512019 | Nieprawidłowa kwota **ostatniej przeniesionej na następny okres**. | Na stronie **Czas wolny** zmień wartość **Na dzień** na pierwszy dzień następnego okresu obrachunkowego, na którym wyświetlona jest nieprawidłowa ilość **ostatniego przeniesienia na następny okres** dla typu **Urlopu rocznego**. Teraz wyświetlana jest poprawna kwota. |

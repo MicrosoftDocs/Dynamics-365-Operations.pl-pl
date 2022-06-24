@@ -1,6 +1,6 @@
 ---
 title: Liczba ksiąg na arkusz
-description: W tym temacie opisano relacje między arkuszami i księgami składników majątku występujące podczas tworzenia propozycji nabycia lub amortyzacji środka trwałego za pomocą zadania wsadowego. Można zdefiniować maksymalną liczbę ksiąg, które są uwzględniane w każdym nabyciu i amortyzacji.
+description: W tym artykule opisano relacje między arkuszami i księgami składników majątku występujące podczas tworzenia propozycji nabycia lub amortyzacji środka trwałego za pomocą zadania wsadowego. Można zdefiniować maksymalną liczbę ksiąg, które są uwzględniane w każdym nabyciu i amortyzacji.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-19
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1e37d40c30d784eea5ba097447f2b2e69920830a
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 2dbd50963cf13f00e09b82e884cd8ebc0b67d424
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722388"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883337"
 ---
 # <a name="number-of-books-per-journal"></a>Liczba ksiąg na arkusz
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano relacje między arkuszami i księgami składników majątku występujące podczas tworzenia propozycji nabycia lub amortyzacji środka trwałego za pomocą zadania wsadowego. Można zdefiniować maksymalną liczbę ksiąg, które są uwzględniane w każdym nabyciu i amortyzacji, używając pól znajdujących się w sekcji **Liczba ksiąg na arkusz** na karcie **Ogólne** na stronie **Parametry środków trwałych** (**Środki trwałe \> Ustawienia \> Parametry środków trwałych**). Te pola umożliwiają rozdzielenie wszystkich używanych ksiąg składników majątku z podziałem na arkusze nabycia i arkusze amortyzacji.
+W tym artykule opisano relacje między arkuszami i księgami składników majątku występujące podczas tworzenia propozycji nabycia lub amortyzacji środka trwałego za pomocą zadania wsadowego. Można zdefiniować maksymalną liczbę ksiąg, które są uwzględniane w każdym nabyciu i amortyzacji, używając pól znajdujących się w sekcji **Liczba ksiąg na arkusz** na karcie **Ogólne** na stronie **Parametry środków trwałych** (**Środki trwałe \> Ustawienia \> Parametry środków trwałych**). Te pola umożliwiają rozdzielenie wszystkich używanych ksiąg składników majątku z podziałem na arkusze nabycia i arkusze amortyzacji.
 
 W przypadku propozycji nabycia wartość domyślna wynosi co najmniej 10 000 ksiąg. W przypadku propozycji amortyzacji wartość domyślna wynosi co najmniej 2000 ksiąg.
 

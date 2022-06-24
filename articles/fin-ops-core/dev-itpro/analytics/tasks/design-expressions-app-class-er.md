@@ -1,6 +1,6 @@
 ---
 title: Projektowanie wyrażeń ER do wywoływania metod klas aplikacji
-description: Ten temat zawiera informacje, jak ponownie użyć istniejącej logiki aplikacji w konfiguracjach elektronicznego raportowania poprzez wywołanie wymaganych metod klas aplikacji w wyrażeniach ER.
+description: Ten artykuł zawiera informacje, jak ponownie użyć istniejącej logiki aplikacji w konfiguracjach elektronicznego raportowania poprzez wywołanie wymaganych metod klas aplikacji w wyrażeniach ER.
 author: NickSelin
 ms.date: 11/02/2021
 ms.topic: business-process
@@ -12,30 +12,30 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 81fae8d3603677afd7dd4b09b9073805f73582b4
-ms.sourcegitcommit: e6b4844a71fbb9faa826852196197c65c5a0396f
+ms.openlocfilehash: 0fb0a9725d882fdc330d7adbb49bd3dcadf7805f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7751713"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883633"
 ---
 # <a name="design-er-expressions-to-call-application-class-methods"></a>Projektowanie wyrażeń ER do wywoływania metod klas aplikacji
 
 [!include [banner](../../includes/banner.md)]
 
-Ten przewodnik zawiera informacje, jak ponownie użyć istniejącej logiki aplikacji w konfiguracjach [elektronicznego raportowania (RE)](../general-electronic-reporting.md) poprzez wywołanie wymaganych metod klas aplikacji w wyrażeniach ER. Wartości argumentów dla wywołania klas mogą być dynamicznie definiowane w czasie wykonywania. Na przykład w celu zapewnienia poprawności wartości mogą być oparte na informacjach z dokumentu analizy.
+Ten artykuł zawiera informacje, jak ponownie użyć istniejącej logiki aplikacji w konfiguracjach [elektronicznego raportowania (RE)](../general-electronic-reporting.md) przez wywołanie wymaganych metod klas aplikacji w wyrażeniach ER. Wartości argumentów dla wywołania klas mogą być dynamicznie definiowane w czasie wykonywania. Na przykład w celu zapewnienia poprawności wartości mogą być oparte na informacjach z dokumentu analizy.
 
-Na przykład w tym temacie zaprojektujesz proces, który analizuje przychodzące wyciągi bankowe pod kątem aktualizacji danych aplikacji. Przychodzące wyciągi bankowe będą odbierane w formacie tekstowym (txt) zawierających kody IBAN (International Bank Account Number). W ramach procesu importu wyciągów bankowych należy zweryfikować poprawność kodu IBAN za pomocą dostępnej już logiki.
+Na przykład w tym artykule zaprojektujesz proces, który analizuje przychodzące wyciągi bankowe pod kątem aktualizacji danych aplikacji. Przychodzące wyciągi bankowe będą odbierane w formacie tekstowym (txt) zawierających kody IBAN (International Bank Account Number). W ramach procesu importu wyciągów bankowych należy zweryfikować poprawność kodu IBAN za pomocą dostępnej już logiki.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Procedury opisane w tym temacie są przeznaczone dla użytkowników, którym przypisano rolę **Administrator systemu** lub **Programista raportowania elektronicznego**.
+Procedury opisane w tym artykule są przeznaczone dla użytkowników, którym przypisano rolę **Administrator systemu** lub **Programista raportowania elektronicznego**.
 
 Procedury można wykonać przy użyciu dowolnego zestawu danych.
 
 Aby je ukończyć, musisz pobrać i zapisać następujący plik: [SampleIncomingMessage.txt](https://download.microsoft.com/download/8/0/a/80adbc89-f23c-46d9-9241-e0f19125c04b/SampleIncomingMessage.txt).
 
-W tym przykładzie utworzysz wymagane konfiguracje ER dla przykładowej firmy Litware, Inc. Dlatego przed wykonaniem procedur opisanych w tym temacie należy wykonać następujące kroki.
+W tym artykule utworzysz wymagane konfiguracje ER dla przykładowej firmy Litware, Inc. Dlatego przed wykonaniem procedur opisanych w tym artykule należy wykonać następujące kroki.
 
 1. Wybierz kolejno opcje **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
 2. Na stronie **Konfiguracje lokalizacji** sprawdź, czy dostawca konfiguracji dla przykładowej firmy **Litware, Inc.** jest dostępny i oznaczony jako aktywny. Jeśli ten dostawca konfiguracji nie jest widoczny, należy najpierw wykonać procedurę [Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego](er-configuration-provider-mark-it-active-2016-11.md).

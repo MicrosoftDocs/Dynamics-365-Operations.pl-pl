@@ -1,6 +1,6 @@
 ---
 title: Importuj dane z ręcznie wybranych plików w trybie wsadowym
-description: Ten temat wyjaśnia, jak importować dane z ręcznie wybranych plików w trybie wsadowym.
+description: Ten artykuł wyjaśnia, jak importować dane z ręcznie wybranych plików w trybie wsadowym.
 author: NickSelin
 ms.date: 01/07/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2022-01-01
 ms.dyn365.ops.version: Release 10.0.25
-ms.openlocfilehash: 8615b5a0623fd696c64f4ec03e481a2bcb16c0ac
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 2dec838439876fd8e57ea4a7078d97267e5ea1a2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075626"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890191"
 ---
 # <a name="import-data-from-manually-selected-files-in-batch-mode"></a>Importuj dane z ręcznie wybranych plików w trybie wsadowym
 
@@ -31,11 +31,11 @@ Aby użyć struktury [Raportowania elektronicznego (ER)](general-electronic-repo
 
 Nowa możliwość ER, która wspiera import danych w trybie wsadowym, pozwala na skonfigurowanie tego procesu jako nienadzorowanego. Możesz użyć konfiguracji ER do wykonania importu danych poprzez zaplanowanie nowego zadania wsadowego z interfejsu użytkownika (UI) ER.
 
-Ten temat wyjaśnia, jak dokończyć import danych z ręcznie wybranego pliku w trybie wsadowym. W przykładach użyto transakcji dostawcy jako danych biznesowych. Kroki z tych przykładów mogą być wykonane w firmie **USMF**. Nie są wymagane umiejętności kodowania.
+Ten artykuł wyjaśnia, jak dokończyć import danych z ręcznie wybranego pliku w trybie wsadowym. W przykładach użyto transakcji dostawcy jako danych biznesowych. Kroki z tych przykładów mogą być wykonane w firmie **USMF**. Nie są wymagane umiejętności kodowania.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Aby wykonać przykłady opisane w tym temacie, musisz mieć następujące uprawnienia dostępu:
+Aby wykonać przykłady opisane w tym artykule, musisz mieć następujące uprawnienia dostępu:
 
 - Jedna z poniższych ról:
 

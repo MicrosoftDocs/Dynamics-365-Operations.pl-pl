@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie weksli
-description: W tym temacie opisano kroki konfigurowania weksli.
+description: W tym artykule opisano kroki konfigurowania weksli.
 author: ShivamPandey-msft
 ms.date: 09/17/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6a9d04500ffe5b93c7a95c5cac9b4270e208dde9
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 91821b10afe7cdbabd0a58b61219ce29d686c5c9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726817"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874733"
 ---
 # <a name="set-up-bills-of-exchange"></a>Konfigurowanie weksli
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano kroki konfigurowania weksli.
+W tym artykule opisano kroki konfigurowania weksli.
 
 Weksel jest pisemnym lub elektronicznym oświadczeniem odbiorcy, które określa, że inna strona, zwykle bank, powinna zapłacić firmie określoną kwotę. Gdy używasz weksla jako płatności za fakturę zamówienia sprzedaży lub fakturę niezależną, uznajesz konto klienta. Taki kredyt jest zabezpieczony wekslem do czasu, gdy klient zapłaci za weksel bankowi. Z reguły faktura jest rozliczana wekslem w terminie płatności. Gdy otrzymasz powiadomienie z banku, że weksel został uznany, można zamknąć weksel. Weksel można wystawiać przez swój bank w dowolnym z następujących momentów:
 

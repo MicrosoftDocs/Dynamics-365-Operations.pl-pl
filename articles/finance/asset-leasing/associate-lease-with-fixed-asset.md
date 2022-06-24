@@ -1,6 +1,6 @@
 ---
 title: Kojarzenie środków trwałych z wynajmami
-description: W tym temacie opisano sposób kojarzenia istniejącego środka trwałego z nowym wynajmem.
+description: W tym artykule opisano sposób kojarzenia istniejącego środka trwałego z nowym wynajmem.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: a0ae7a850ceb13cb41ee5adc406e71105cdad4fe
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 5cc341008d25da544ec35d5660b5ff0b38f2287b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712154"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895117"
 ---
 # <a name="associate-fixed-assets-with-leases"></a>Kojarzenie środków trwałych z wynajmami
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-W tym temacie opisano sposób kojarzenia istniejącego środka trwałego z nowym wynajmem. Po skojarzeniu środka trwałego z wynajmem wartość środka trwałego (ROU) w momencie początkowego uznania będzie kosztem nabycia środka trwałego.
+W tym artykule opisano sposób kojarzenia istniejącego środka trwałego z nowym wynajmem. Po skojarzeniu środka trwałego z wynajmem wartość środka trwałego (ROU) w momencie początkowego uznania będzie kosztem nabycia środka trwałego.
 
 Aby można było skojarzyć środek trwały z wynajmem, należy utworzyć rekord dla środka trwałego w module Środki trwałe. Następnie na stronie **Podsumowanie wynajmu** należy utworzyć wynajem i powiązać środek trwały z tym wynajmem.
 

@@ -1,6 +1,6 @@
 ---
 title: Udostępnianie konfiguracji ER w oprogramowaniu RCS/repozytorium globalnym organizacjom zewnętrznym
-description: W tym temacie objaśniono sposób udostępniania konfiguracji Raportowania elektronicznego (ER) w usługach Microsoft Regulatory Configuration Services (RCS)/repozytorium globalnym bezpośrednio organizacjom zewnętrznym.
+description: W tym artykule objaśniono sposób udostępniania konfiguracji Raportowania elektronicznego (ER) w usługach Microsoft Regulatory Configuration Services (RCS)/repozytorium globalnym bezpośrednio organizacjom zewnętrznym.
 author: JaneA07
 ms.date: 05/04/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: ee7feef83ffa458e7cbd238d37a0f343d1a202f48002da67823df024bb609d02
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 976a86aee75581d1afa764bea049b6c0eaecf9f3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719180"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888931"
 ---
 # <a name="share-electronic-reporting-er-configurations-in-regulatory-configuration-services-rcs-global-repository-with-external-organizations"></a>Udostępnianie konfiguracji Raportowania elektronicznego (ER) w repozytorium globalnym usług Microsoft Regulatory Configuration Services (RCS)organizacjom zewnętrznym
 
@@ -36,7 +36,7 @@ Poniższe procedury opisują sposób, w jaki użytkownik RCS może udostępniać
 
 Należy również upewnić się, że dla firmy aprowizowano środowisko RCS.
 
-1. W aplikacji Finance and Operations przejdź do obszaru **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
+1. W module Finanse i Operacje przejdź do opcji **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
 2. Jeśli w firmie nie aprowizowano środowiska RCS, wybierz pozycję zewnętrzną **Regulatory services — Konfiguracja** i postępować zgodnie z instrukcjami w celu aprowizowania środowiska RCS.
 
 Jeśli już aprowizowano środowisko RCS, należy skorzystać z adresu URL strony, aby uzyskać do niego dostęp, wybierając opcję logowania.
@@ -67,7 +67,7 @@ Po utworzeniu konfiguracji w ramach dostawcy konfiguracji można udostępnić j�
 
     ![Okno dialogowe udostępniania wersji konfiguracji organizacji zewnętrznej.](media/1_RCS_Repo_for_Share_with_form.JPG)
 
-Konfiguracja jest udostępniana organizacji zewnętrznej i jest dostępna dla tej organizacji w repozytorium globalnym. Z tego miejsca można ją zaimportować do wystąpienia usług RCS organizacji lub do jej wystąpień aplikacji Finance and Operations.
+Konfiguracja jest udostępniana organizacji zewnętrznej i jest dostępna dla tej organizacji w repozytorium globalnym. Z tego miejsca można ją zaimportować do wystąpienia usług RCS organizacji lub do jej wystąpień aplikacji finansowych i operacyjnych.
 
 6. Aby cofnąć udostępnianie konfiguracji poprzednio udostępnionej organizacji zewnętrznej, wybierz konfigurację i kliknij pozycję **Anuluj udostępnianie**, a następnie wybierz przycisk **OK**
 

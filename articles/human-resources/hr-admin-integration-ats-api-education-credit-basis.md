@@ -1,6 +1,6 @@
 ---
 title: Podstawa kredytu dla wykształcenia
-description: W tym temacie opisano opcję Podstawę kredytową dla edukacji ustawioną dla Dynamics 365 Human Resources.
+description: W tym artykule opisano opcję Podstawa kredytu dla wykształcenia ustawioną dla Dynamics 365 Human Resources.
 author: jaredha
 ms.date: 02/05/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 65a0be8753a101b23707c4d0e086cf6c5ad57944
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: ff934f2393f1ec8b46790e23ad675bcf4a4233ad
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067886"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891416"
 ---
 # <a name="education-credit-basis"></a>Podstawa kredytu dla wykształcenia
 
@@ -27,7 +27,7 @@ ms.locfileid: "8067886"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-W tym temacie opisano opcję Podstawę kredytową dla edukacji ustawioną dla Dynamics 365 Human Resources.
+W tym artykule opisano opcję Podstawa kredytu dla wykształcenia ustawioną dla Dynamics 365 Human Resources.
 
 Nazwa fizyczna: mshr_hcmeducationcreditbasis
 

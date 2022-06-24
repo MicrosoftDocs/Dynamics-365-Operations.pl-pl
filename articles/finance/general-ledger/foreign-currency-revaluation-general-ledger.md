@@ -1,6 +1,6 @@
 ---
 title: Przeszacowanie w walucie obcej dla księgi głównej
-description: 'W tym temacie omówiono następujące aspekty procesu przeszacowania w walucie obcej dla księgi głównej: konfiguracja, uruchamianie procesu, wykonywanie obliczeń dla procesu oraz wycofywanie transakcji przeszacowania, jeśli okaże się to konieczne.'
+description: 'W tym artykule omówiono następujące aspekty procesu przeszacowania w walucie obcej dla księgi głównej: konfiguracja, uruchamianie procesu, wykonywanie obliczeń dla procesu oraz wycofywanie transakcji przeszacowania, jeśli okaże się to konieczne.'
 author: kweekley
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e4a138a26a23c804f5fd358d335b04aee3897dce
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 1e90780ca2a33725130b261fcaf4cb08d30f3270
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720346"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904536"
 ---
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Przeszacowanie w walucie obcej dla księgi głównej
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie omówiono następujące aspekty procesu przeszacowania w walucie obcej dla księgi głównej: konfiguracja, uruchamianie procesu, wykonywanie obliczeń dla procesu oraz wycofywanie transakcji przeszacowania, jeśli okaże się to konieczne. 
+W tym artykule omówiono następujące aspekty procesu przeszacowania w walucie obcej dla księgi głównej: konfiguracja, uruchamianie procesu, wykonywanie obliczeń dla procesu oraz wycofywanie transakcji przeszacowania, jeśli okaże się to konieczne. 
 
 Konwencje księgowe wymagają, aby podczas zamknięcia okresu salda kont księgi głównej w walutach obcych zostały przeszacowane przy użyciu różnych typów kursów wymiany (bieżących, historycznych, średnich itp.). Na przykład jedna konwencja księgowa wymaga, aby aktywa i pasywa zostały przeszacowane według bieżącego kursu wymiany, środki trwałe według historycznego kursu wymiany, a konta wynikowe według średniej miesięcznej. Funkcja przeszacowania w walucie obcej dostępna w księdze głównej może służyć do przeszacowywania wartości bilansu i rachunku zysków i strat (kont wynikowych). 
 

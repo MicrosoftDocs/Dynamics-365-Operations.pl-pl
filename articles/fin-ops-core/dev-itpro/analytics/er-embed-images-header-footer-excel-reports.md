@@ -1,6 +1,6 @@
 ---
 title: Zaprojektuj format ER, aby wygenerować raport w formacie Excel z osadzonymi obrazami w nagłówkach lub stopkach stron
-description: W tym temacie wyjaśniono, jak używać raportowania elektronicznego (ER) do generowania dokumentów biznesowych zawierających obrazy i kształty osadzone w nagłówkach lub stopkach stron.
+description: W tym artykule wyjaśniono, jak używać raportowania elektronicznego (ER) do generowania dokumentów biznesowych zawierających obrazy i kształty osadzone w nagłówkach lub stopkach stron.
 author: NickSelin
 ms.date: 08/11/2021
 ms.topic: article
@@ -15,25 +15,25 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 3f3f77a9e6104a31995c9ee398504982fe43ac9e
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 1cfde60459e440c851edb97276321216b1654e40
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323793"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854851"
 ---
 # <a name="design-an-er-format-to-generate-a-report-in-excel-format-with-embedded-images-in-page-headers-or-footers"></a>Zaprojektuj format ER, aby wygenerować raport w formacie Excel z osadzonymi obrazami w nagłówkach lub stopkach stron
 
 [!include[banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, w jaki sposób użytkownik w roli administratora systemu lub konsultanta funkcjonalnego ds. raportowania elektronicznego może wykonywać następujące zadania:
+W tym artykule wyjaśniono, w jaki sposób użytkownik w roli administratora systemu lub konsultanta funkcjonalnego ds. raportowania elektronicznego może wykonywać następujące zadania:
 
 - Konfigurowanie parametrów modułu [Raportowanie elektroniczne (ER)](general-electronic-reporting.md).
 - Importuj [konfiguracje](general-electronic-reporting.md#Configuration) ER, które są [dostarczane](general-electronic-reporting.md#Provider) przez firmę Microsoft i używane do generowania  [faktur niezależnych](../../../finance/accounts-receivable/create-free-text-invoice-new.md), na podstawie [szablonu](er-fillable-excel.md#excel-file-component) w formacie Microsoft Excel.
 - Utwórz [niestandardową (pochodny)](general-electronic-reporting.md#building-a-format-selecting-another-format-as-a-base-customization) wersję standardowej konfiguracji formatu modułu ER, która jest oferowana przez Microsoft.
 - Zmodyfikuj niestandardową konfigurację formatu ER, tak aby generował raport faktury elektronicznej, który ma logo firmy w stopce.
 
-Zadania przedstawione w tym temacie można wykonać w kontekście firmy **USMF**. Nie są wymagane umiejętności kodowania. Przed rozpoczęciem musisz pobrać i zapisać następujące pliki.
+Zadania przedstawione w tym artykule można wykonać w kontekście firmy **USMF**. Nie są wymagane umiejętności kodowania. Przed rozpoczęciem musisz pobrać i zapisać następujące pliki.
 
 | opis        | Nazwa pliku |
 |--------------------|-----------|
@@ -132,7 +132,7 @@ Dalsze informacje o dostawcach konfiguracji ER znajdują się w temacie [Tworzen
 
 ### <a name="import-the-standard-er-configurations"></a><a id="ImportERFormat"></a>Importowanie standardowych konfiguracji ER
 
-Aby dodać standardowe konfiguracje obiektu ER do bieżącego wystąpienia rozwiązania Dynamics 365 Finance, należy zaimportować je z [repozytorium](general-electronic-reporting.md#Repository) ER, które zostało skonfigurowane dla tego wystąpienia.
+Aby dodać standardowe konfiguracje modułu ER do bieżącego wystąpienia aplikacji Dynamics 365 Finance, należy zaimportować je z [repozytorium](general-electronic-reporting.md#Repository) ER, które zostało skonfigurowane dla tego wystąpienia.
 
 1. Wybierz kolejno opcje **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
 2. Na stronie **Konfiguracje lokalizacji** w sekcji **Dostawcy konfiguracji** wybierz kafelek **Microsoft**, a następnie wybierz pozycję **Repozytoria**, aby wyświetlić listę repozytoriów dla dostawcy rozwiązania: **Microsoft**.

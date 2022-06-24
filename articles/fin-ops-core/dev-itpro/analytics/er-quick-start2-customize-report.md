@@ -1,6 +1,6 @@
 ---
 title: Dostosowanie formatu ER w celu wygenerowania niestandardowego dokumentu elektronicznego
-description: W tym temacie opisano sposób korygowania formatu modułu raportowanie elektronicznego (ER) dostarczonego przez Microsoft, aby wygenerować niestandardowy dokument elektroniczny.
+description: W tym artykule opisano sposób korygowania formatu modułu raportowanie elektronicznego (ER) dostarczonego przez Microsoft, aby wygenerować niestandardowy dokument elektroniczny.
 author: NickSelin
 ms.date: 06/22/2020
 ms.topic: article
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 14976aab474b6571c2a25907f04fd4d7ae053e74
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 492964d3cea0e474a50d6d83231f33d9508b9d9d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323824"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886799"
 ---
 # <a name="adjust-an-er-format-to-generate-a-custom-electronic-document"></a>Dostosowanie formatu ER w celu wygenerowania niestandardowego dokumentu elektronicznego
 
 [!include[banner](../includes/banner.md)]
 
-W procedurach opisanych w tym temacie opisano, jak użytkownik o roli Administratora systemu lub konsultanta funkcjonalnego dla funkcji raportowania elektronicznego może wykonywać następujące zadania:
+W procedurach opisanych w tym artykule opisano, jak użytkownik o roli Administratora systemu lub konsultanta funkcjonalnego dla funkcji raportowania elektronicznego może wykonywać następujące zadania:
 
 - Konfigurowanie parametrów modułu [Raportowanie elektroniczne (ER)](general-electronic-reporting.md).
 - Importowanie konfiguracji systemu, które są dostarczane przez Microsoft i używane do generowania pliku płatności podczas przetwarzania [płatności dostawcy](../../../finance/cash-bank-management/tasks/vendor-payment-overview.md).
@@ -135,7 +135,7 @@ Dalsze informacje o dostawcach konfiguracji ER znajdują się w temacie [Tworzen
 
 ### <a name="import-the-standard-er-configurations"></a><a id="ImportERFormat1"></a>Importowanie standardowych konfiguracji ER
 
-Aby dodać standardowe konfiguracje obiektu ER do bieżącego wystąpienia rozwiązania Microsoft Dynamics 365 Finance, należy zaimportować je z [repozytorium](general-electronic-reporting.md#Repository) ER, które zostało skonfigurowane dla tego wystąpienia.
+Aby dodać standardowe konfiguracje modułu ER do bieżącego wystąpienia aplikacji Microsoft Dynamics 365 Finance, należy zaimportować je z [repozytorium](general-electronic-reporting.md#Repository) ER, które zostało skonfigurowane dla tego wystąpienia.
 
 1. Wybierz kolejno opcje **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
 2. Na stronie **Konfiguracje lokalizacji** w sekcji **Dostawcy konfiguracji** wybierz kafelek **Microsoft**, a następnie wybierz pozycję **Repozytoria**, aby wyświetlić listę repozytoriów dla dostawcy rozwiązania: Microsoft.

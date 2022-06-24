@@ -1,6 +1,6 @@
 ---
 title: Księgowanie zleceń produkcyjnych
-description: Ten temat zawiera informacje o różnych typach księgowania zleceń produkcyjnych.
+description: Ten artykuł zawiera informacje o różnych typach księgowania zleceń produkcyjnych.
 author: rachelprofitt
 ms.date: 04/25/2022
 ms.topic: overview
@@ -10,16 +10,16 @@ ms.search.form: InventPosting, InventItemGroup, ProdGroup, WrkCtrTable, WrkCtrRe
 audience: Application User
 ms.search.region: Global
 ms.author: raprofit
-ms.openlocfilehash: cd1b6c49e59f9480fd831ad5ff143033ca09792c
-ms.sourcegitcommit: 5b55f2913e736d12e40c227bf3ce3a9abec815bd
+ms.openlocfilehash: d41725325a82b24c1e5aa6bd2c1a5322f3078ace
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "8803020"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879632"
 ---
 # <a name="production-postings"></a>Postowanie produkcji
 
-Ten temat zawiera informacje o różnych typach księgowania w procesie zlecenia produkcyjnego.
+Ten artykuł zawiera informacje o różnych typach księgowania w procesie zlecenia produkcyjnego.
 
 
 ## <a name="material-consumption"></a>Zużycie materiału

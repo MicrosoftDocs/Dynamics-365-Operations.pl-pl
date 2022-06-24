@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie miejsc docelowych raportowania elektronicznego zależnych od akcji
-description: Ten temat objaśnia konfigurowanie miejsc docelowych zależnych od akcji dla formatu raportowania elektronicznego (ER) skonfigurowanych do generowania dokumentów wychodzących.
+description: Ten artykuł objaśnia konfigurowanie miejsc docelowych zależnych od akcji dla formatu raportowania elektronicznego (ER) skonfigurowanych do generowania dokumentów wychodzących.
 author: NickSelin
 ms.date: 02/09/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e0c836d4a0be47b753d74dc9d6d40ea7d9197176
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: b7dfd92fd9e256298c13dcbde4b6da3f07d250d8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323986"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876842"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>Konfigurowanie miejsc docelowych raportowania elektronicznego zależnych od akcji
 
@@ -28,7 +28,7 @@ ms.locfileid: "8323986"
 
 Możesz skonfigurować [miejsca docelowe](electronic-reporting-destinations.md) dla każdej konfiguracji formatu składników wyjściowych (folderów lub plików) [raportowania elektronicznego](general-electronic-reporting.md) (ER) używanych do [generowania](general-electronic-reporting.md#Configuration) dokumentów wychodzących. Użytkownicy, którzy uruchamiają format ER tego typu i mają odpowiednie prawa dostępu, mogą również zmieniać skonfigurowane ustawienia miejsc docelowych w czasie wykonywania.
 
-W wersji rozwiązania Microsoft Dynamics 365 Finance **10.0.17 i nowszej** format ER można uruchomić, [aprowizując ](er-apis-app10-0-17.md) kod akcji, który użytkownik wykonuje, uruchamiając ten format ER. Na przykład w module **Rozrachunki z odbiorcami** w ustawieniach zarządzania drukowaniem można wybrać format ER generujący określony dokument biznesowy, na przykład fakturę niezależną. Następnie można wybrać **Widok**, aby wyświetlić podgląd faktury, lub przycisk **Drukuj**, aby wysłać ją do drukarki. Jeśli akcja użytkownika jest przekazywana w czasie wykonywania dla uruchomionego formatu ER, można skonfigurować różne miejsca docelowe ER dla różnych akcji użytkowników. W tym temacie opisano sposób konfigurowania miejsc docelowych ER dla tego typu formatu ER.
+W wersji rozwiązania Microsoft Dynamics 365 Finance **10.0.17 i nowszej** format ER można uruchomić, [aprowizując ](er-apis-app10-0-17.md) kod akcji, który użytkownik wykonuje, uruchamiając ten format ER. Na przykład w module **Rozrachunki z odbiorcami** w ustawieniach zarządzania drukowaniem można wybrać format ER generujący określony dokument biznesowy, na przykład fakturę niezależną. Następnie można wybrać **Widok**, aby wyświetlić podgląd faktury, lub przycisk **Drukuj**, aby wysłać ją do drukarki. Jeśli akcja użytkownika jest przekazywana w czasie wykonywania dla uruchomionego formatu ER, można skonfigurować różne miejsca docelowe ER dla różnych akcji użytkowników. W tym artykule opisano sposób konfigurowania miejsc docelowych ER dla tego typu formatu ER.
 
 ## <a name="make-action-dependent-er-destinations-available"></a>Udostępnianie miejsc docelowych raportowania elektronicznego zależnych od akcji
 
@@ -82,7 +82,7 @@ Na poniższej ilustracji pokazano, jak można używać alternatywnego sposobu ko
 
 W przypadku uruchomienia formatu ER przez użytkownika mającego odpowiednie [uprawnienia](electronic-reporting-destinations.md#security-considerations) do zmieniania skonfigurowanych ustawień miejsc docelowych w czasie wykonywania wyświetlane jest okno dialogowe z opcją zmiany skonfigurowanych ustawień miejsc docelowych. To okno dialogowe jest opcjonalne, a jego wygląd zależy od sposobu zaimplementowania wywołania struktury ER służącego do uruchamiania formatu ER. Jeśli to okno dialogowe zostanie wyświetlone, miejsca docelowe ER w tym oknie będą włączone zgodnie z podaną akcją użytkownika.
 
-Na poniższej ilustracji przedstawiono przykład okna dialogowego **Miejsca docelowe formatu raportowania elektronicznego**, które jest wyświetlane po [zaksięgowaniu](../../../finance/accounts-receivable/create-free-text-invoice-new.md) faktury niezależnej i uruchomieniu formatu ER **Faktura niezależna (Excel)** w celu wygenerowania tego dokumentu, jeśli dla tego formatu aprowizowano akcję **Drukarka** i skonfigurowano miejsca docelowe ER, tak jak pokazano wcześniej w tym temacie.
+Na poniższej ilustracji przedstawiono przykład okna dialogowego **Miejsca docelowe formatu raportowania elektronicznego**, które jest wyświetlane po [zaksięgowaniu](../../../finance/accounts-receivable/create-free-text-invoice-new.md) faktury niezależnej i uruchomieniu formatu ER **Faktura niezależna (Excel)** w celu wygenerowania tego dokumentu, jeśli dla tego formatu aprowizowano akcję **Drukarka** i skonfigurowano miejsca docelowe ER, tak jak pokazano wcześniej w tym artykule.
 
 ![Okno dialogowe z opcją zmiany początkowych skonfigurowanych miejsc docelowych ER dla uruchomionego formatu ER.](./media/er-destination-action-dependent-02.gif)
 

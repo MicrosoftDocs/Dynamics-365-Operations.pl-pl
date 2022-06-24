@@ -1,6 +1,6 @@
 ---
 title: Konwencje wynajmu składnika majątku
-description: Ten temat opisuje konwencje wynajmowanych składników majątku.
+description: Ten artykuł opisuje konwencje wynajmowanych składników majątku.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2021-1-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 5e0aabce46e47079b754b8ac674b205cf00b5e26
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: f2f0e21b20a969c0847ce3a6eb167287c1d7ee3e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711038"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898277"
 ---
 # <a name="asset-leasing-conventions"></a>Konwencje wynajmu składnika majątku
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Ten temat opisuje konwencje wynajmowanych składników majątku. Konwencje wynajmu są używane do określania daty rozpoczęcia księgi wynajmu. Jeśli konwencja wynajmu ma wartość **Brak**, data rozpoczęcia jest taka sama jak data rozpoczęcia wynajmu (to jest wartość pola **Data rozpoczęcia wynajmu**). Jeśli umowa leasingu jest ustawiona na **Pełny miesiąc**, datą rozpoczęcia jest pierwszy dzień miesiąca, w którym przypada data rozpoczęcia leasingu.
+Ten artykuł opisuje konwencje wynajmowanych składników majątku. Konwencje wynajmu są używane do określania daty rozpoczęcia księgi wynajmu. Jeśli konwencja wynajmu ma wartość **Brak**, data rozpoczęcia jest taka sama jak data rozpoczęcia wynajmu (to jest wartość pola **Data rozpoczęcia wynajmu**). Jeśli umowa leasingu jest ustawiona na **Pełny miesiąc**, datą rozpoczęcia jest pierwszy dzień miesiąca, w którym przypada data rozpoczęcia leasingu.
 
 Data rozpoczęcia określa datę rozpoczęcia okresu umorzenia zobowiązań i harmonogramów amortyzacji środków trwałych. Wydatki na odsetki i wydatki amortyzacyjne są księgowane w dniu zakończenia okresu odpowiednich harmonogramów. Początkowy wpis arkusza rozpoznawania i korekty jest księgowany w dniu rozpoczęcia.
 

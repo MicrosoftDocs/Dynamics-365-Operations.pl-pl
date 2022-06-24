@@ -1,6 +1,6 @@
 ---
 title: Drukowanie informacji podatkowych na dokumentach polecenia przelewu
-description: W tym temacie wyjaśniono, w jaki sposób informacje podatkowe określane przez usługę obliczania podatku mogą być drukowane na dokumentach polecenia przelewu.
+description: W tym artykule wyjaśniono, w jaki sposób informacje podatkowe określane przez usługę obliczania podatku mogą być drukowane na dokumentach polecenia przelewu.
 author: Kai-Cloud
 ms.date: 10/15/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-10-12
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: e74336270ab46fc19adb4c797745c9582028391a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ca7a610162c539a0ecd74cf9e663f08ea80a7e44
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687479"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855210"
 ---
 # <a name="print-tax-information-on-transfer-order-documents"></a>Drukowanie informacji podatkowych na dokumentach polecenia przelewu
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie opisano sposób drukowania informacji podatkowych na dokumentach polecenia przelewu. Możesz wydrukować dokument faktury pro-forma polecenia przelewu dla przesunięć magazynowych, które są uznawane za wewnątrzwspólnotową dostawę i wewnątrzwspólnotowe nabycie zgodnie z przepisami Unii Europejskiej (UE) dotyczącymi podatku od wartości dodanej (VAT). 
+W tym artykule opisano sposób drukowania informacji podatkowych na dokumentach polecenia przelewu. Możesz wydrukować dokument faktury pro-forma polecenia przelewu dla przesunięć magazynowych, które są uznawane za wewnątrzwspólnotową dostawę i wewnątrzwspólnotowe nabycie zgodnie z przepisami Unii Europejskiej (UE) dotyczącymi podatku od wartości dodanej (VAT). 
 
 Do dokumentów polecenia przelewu dodawane są następujące dane istotne z podatkowego punktu widzenia:
 

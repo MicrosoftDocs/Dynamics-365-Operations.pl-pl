@@ -1,6 +1,6 @@
 ---
 title: Elementy interfejsu użytkownika
-description: W tym temacie opisano elementy interfejsu użytkownika w aplikacji.
+description: W tym artykule opisano elementy interfejsu użytkownika w aplikacji.
 author: tlefor
 ms.date: 08/09/2019
 ms.topic: article
@@ -12,19 +12,19 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 60e85841ec940ed65d73dc052848168be70301d6
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 60f5abfe009b45adc5ae5f064f1b5c367f2844f3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069330"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906508"
 ---
 # <a name="user-interface-elements"></a>Elementy interfejsu użytkownika
 
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-W tym temacie opisano elementy interfejsu użytkownika używane w aplikacji. Aby użytkownicy mogli nawigować po interfejsie, należy znać nazwy i funkcje elementów tworzących interfejs.
+W tym artykule opisano elementy interfejsu użytkownika używane w aplikacji. Aby użytkownicy mogli nawigować po interfejsie, należy znać nazwy i funkcje elementów tworzących interfejs.
 
 ## <a name="overview"></a>Przegląd
 

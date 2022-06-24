@@ -1,6 +1,6 @@
 ---
 title: Importowanie zaktualizowanych wersji konfiguracji programu ER
-description: W tym temacie opisano sposób importowania zaktualizowanych wersji konfiguracji raportowania elektronicznego (ER) z globalnego repozytorium usługi Configuration service.
+description: W tym artykule opisano sposób importowania zaktualizowanych wersji konfiguracji raportowania elektronicznego (ER) z globalnego repozytorium usługi Configuration service.
 author: NickSelin
 ms.date: 06/09/2020
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 712bccbd48775cadc069ef5e8a04f9aae3c9f223137bcd394ff1815a720393b5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 69eaa3e2ecfbd1e92f23725d97d7fa9f0abe1cea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734895"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847554"
 ---
 # <a name="import-updated-versions-of-er-configurations"></a>Importowanie zaktualizowanych wersji konfiguracji programu ER
 
 [!include [banner](../includes/banner.md)]
 
-[Repozytoria](general-electronic-reporting.md#Repository) raportowania elektronicznego (ER) są używane do udostępniania [konfiguracji ER](general-electronic-reporting.md#Configuration). Można [importować](download-electronic-reporting-configuration-lcs.md) konfiguracjeER z różnych repozytoriów do danego wystąpienia rozwiązania Microsoft Dynamics 365 Finance. Podczas importowania konfiguracji ER [dostawcy konfiguracji](general-electronic-reporting.md#Provider) mogą publikować nowe [wersje](general-electronic-reporting.md#component-versioning) repozytoriów, tak aby można je było udostępniać.
+[Repozytoria](general-electronic-reporting.md#Repository) raportowania elektronicznego (ER) są używane do udostępniania [konfiguracji ER](general-electronic-reporting.md#Configuration). Można [importować](download-electronic-reporting-configuration-lcs.md) konfiguracje ER z różnych repozytoriów do danego wystąpienia rozwiązania Microsoft Dynamics 365 Finance. Podczas importowania konfiguracji ER [dostawcy konfiguracji](general-electronic-reporting.md#Provider) mogą publikować nowe [wersje](general-electronic-reporting.md#component-versioning) repozytoriów, tak aby można je było udostępniać.
 
-W tym temacie opisano sposób importowania zaktualizowanych wersji konfiguracji ER z globalnego repozytorium usługi Configuration service. Aby uzyskać więcej informacji, należy zapoznać się z tematem [Microsoft Dynamics 365 for Finance and Operations - Regulatory Services, Configuration service](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
+W tym artykule opisano sposób importowania zaktualizowanych wersji konfiguracji ER z globalnego repozytorium usługi Configuration service. Aby uzyskać więcej informacji, należy zapoznać się z tematem [Microsoft Dynamics 365 for Finance and Operations - Regulatory Services, Configuration service](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
 
 ## <a name="review-the-available-updated-versions"></a>Przejrzyj dostępne zaktualizowane wersje
 

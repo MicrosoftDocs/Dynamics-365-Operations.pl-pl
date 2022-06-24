@@ -1,6 +1,6 @@
 ---
-title: Inicjowanie obsługi administracyjnej rozwiązania Human Resources
-description: W tym temacie wyjaśniono proces inicjacji nowego środowiska produkcyjnego dla oprogramowania Microsoft Dynamics 365 Human Resources.
+title: Ustanowienie rozwiązania Human Resources
+description: W tym artykule wyjaśniono proces aprowizacji nowego środowiska produkcyjnego dla oprogramowania Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 01/07/2022
 ms.topic: article
@@ -14,26 +14,26 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 79747d0c5c4265315d1757352dfecef09c469dd8
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 341b14d493c85a1e94666fa7e07b80704645e5f1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710871"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858251"
 ---
-# <a name="provision-human-resources"></a>Inicjowanie obsługi administracyjnej rozwiązania Human Resources
+# <a name="provision-human-resources"></a>Ustanowienie rozwiązania Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
-W tym temacie wyjaśniono proces inicjacji nowego środowiska produkcyjnego dla oprogramowania Microsoft Dynamics 365 Human Resources. 
+W tym artykule wyjaśniono proces aprowizacji nowego środowiska produkcyjnego dla oprogramowania Microsoft Dynamics 365 Human Resources. 
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
 Zanim będzie można aprowizować nowe środowisko produkcyjne, muszą zostać spełnione następujące wymagania wstępne:
 
-- Użytkownik dokonał zakupu aplikacji Human Resources u dostawcy rozwiązań chmurowych (CSP) lub w ramach umowy na architekturę przedsiębiorstwa (EA). Jeśli masz już licencję na oprogramowanie Microsoft Dynamics 365 uwzględniającą plan rozwiązania Human Resources, a nie jesteś w stanie wykonać kroków opisanych w tym temacie, skontaktuj się z pomocą techniczną.
+- Użytkownik dokonał zakupu aplikacji Human Resources u dostawcy rozwiązań chmurowych (CSP) lub w ramach umowy na architekturę przedsiębiorstwa (EA). Jeśli masz już licencję na oprogramowanie Microsoft Dynamics 365 uwzględniającą plan rozwiązania Human Resources, a nie jesteś w stanie wykonać kroków opisanych w tym artykule, skontaktuj się z pomocą techniczną.
 
 - Administrator globalny musi się zarejestrować w usłudze [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) i utworzyć nowy projekt programu Human Resources. 
 

@@ -1,6 +1,6 @@
 ---
 title: Skonfiguruj informacje o grupie TDS, PAN i TAN dla dostawców i klientów
-description: W tym temacie wyjaśniono, jak skonfigurować informacje o grupie potrącanej z podatku w źródle (TDS), trwały numer konta (PAN) i numerze konta podatkowego (TAN) dla dostawców i odbiorców.
+description: W tym artykule wyjaśniono, jak skonfigurować informacje o grupie potrącanej z podatku w źródle (TDS), trwały numer konta (PAN) i numerze konta podatkowego (TAN) dla dostawców i odbiorców.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 83ec532e95bde553c3a339e2ca103ebaacdb52ae
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 1a29f59e380360b6f828dcddbe84cad229b42d17
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726957"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859774"
 ---
 # <a name="tds-group-pan-and-tan-information-setup-for-vendors-and-customers"></a>Skonfiguruj informacje o grupie TDS, PAN i TAN dla dostawców i klientów
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak skonfigurować informacje o grupie potrącanej z podatku w źródle (TDS), trwały numer konta (PAN) i numerze konta podatkowego (TAN) dla dostawców i odbiorców.
+W tym artykule wyjaśniono, jak skonfigurować informacje o grupie potrącanej z podatku w źródle (TDS), trwały numer konta (PAN) i numerze konta podatkowego (TAN) dla dostawców i odbiorców.
 
 1. Przejdź do **Rozrachunki z dostawcami \> Dostawcy \> Wszyscy dostawcy** lub **Rozrachunki z odbiorcami \> Odbiorcy \> Wszyscy odbiorcy**.
 

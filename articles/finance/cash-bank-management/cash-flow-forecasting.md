@@ -1,6 +1,6 @@
 ---
 title: Prognozowanie przepływów pieniężnych
-description: Ten temat zawiera omówienie procesu prognozowania przepływów pieniężnych. Wyjaśniono również, jak prognozowanie przepływów pieniężnych jest zintegrowane z innych modułami w systemie.
+description: Ten artykuł zawiera omówienie procesu prognozowania przepływów pieniężnych. Wyjaśniono również, jak prognozowanie przepływów pieniężnych jest zintegrowane z innych modułami w systemie.
 author: panolte
 ms.date: 02/16/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4979a57c966f25dba62a944a4e44086e5f6aed28
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: c811afb0129b25a257bdc3519c511d70ecb44714
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712545"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904680"
 ---
 # <a name="cash-flow-forecasting"></a>Prognozowanie przepływów pieniężnych
 
@@ -110,7 +110,7 @@ Aby uzyskać więcej informacji, zobacz [Dane zewnętrzne w prognozach przepływ
 
 W wersji 10.0.17 nowa funkcja umożliwia integrację z funkcjami zarządzania projektami i ich księgowania oraz prognozowania przepływów pieniężnych. W obszarze roboczym **Zarządzanie funkcjami** włącz funkcję **Prognoza dla projektu przepływów pieniężnych**, aby uwzględnić prognozowane koszty i przychody w prognozie przepływów pieniężnych. Na karcie **Zarządzanie projektami i ich księgowanie** na stronie **Ustawienia prognozy przepływów pieniężnych** wybierz typy projektów i typy transakcji, które powinny być uwzględnione w prognozie przepływów pieniężnych. Następnie wybierz model prognozy projektu. Podmodel typu redukcji działa najlepiej. Konta płynności wprowadzone w ustawieniach rozrachunków z odbiorcami są używane jako domyślne konta płynności. Dlatego nie trzeba wprowadzać domyślnych kont płynności podczas ustawienia prognozy przepływów pieniężnych. Można również użyć modelu budżetu, ale tylko jeden typ można wybrać na stronie **Ustawień prognozy przepływów pieniężnych** dla zarządzania projektami i ich księgowania. Model prognozy oferuje najbardziej elastyczny sposób zarządzania projektami i ich księgowania lub działania w ramach Project Operations.
 
-Po włączeniu funkcji prognozy przepływów pieniężnych można wyświetlać prognozę przepływów pieniężnych dla każdego projektu na stronie **Wszystkie projekty**. W okienku akcji na karcie **Plan** kliknij w grupie **Prognoza** wybierz opcję **Prognoza przepływów pieniężnych**. W obszarach roboczych **Przegląd gotówki** (zobacz sekcję [Raportowanie](#reporting) w dalszej części tego tematu) typ transakcji prognozy projektu pokazuje przychody (przychód prognozy projektu) i przychody (koszty prognoz projektu). Kwoty można uwzględniać tylko wtedy, gdy pole **Etap projektu** w obszarze roboczym **Przegląd gotówki** ma wartość **W trakcie**.
+Po włączeniu funkcji prognozy przepływów pieniężnych można wyświetlać prognozę przepływów pieniężnych dla każdego projektu na stronie **Wszystkie projekty**. W okienku akcji na karcie **Plan** kliknij w grupie **Prognoza** wybierz opcję **Prognoza przepływów pieniężnych**. W obszarach roboczych **Przegląd gotówki** (zobacz sekcję [Raportowanie](#reporting) w dalszej części tego artykułu) typ transakcji prognozy projektu pokazuje przychody (przychód prognozy projektu) i przychody (koszty prognoz projektu). Kwoty można uwzględniać tylko wtedy, gdy pole **Etap projektu** w obszarze roboczym **Przegląd gotówki** ma wartość **W trakcie**.
 
 Transakcje projektu są nadal uwzględniane w prognozie przepływów pieniężnych na kilka sposobów, niezależnie od tego, czy funkcja **Prognozy przepływów pieniężnych** jest włączona. Zaksięgowane faktury projektu są uwzględniane w prognozie jako część otwartych transakcji odbiorcy. Zamówienia sprzedaży i zamówienia zakupu inicjowane przez projekt są uwzględniane w prognozie jako otwarte zamówienia po ich wprowadzeniu w systemie. Można także przenieść prognozy projektu do modelu budżetu księgi. Następnie ten model budżetu księgi zostanie uwzględniony w prognozie przepływów pieniężnych jako część wpisów do rejestru budżetu. Jeśli funkcja **Prognozy projektu przepływów pieniężnych** jest włączona, nie należy przenosić prognoz projektu do modelu budżetu księgi, ponieważ ta akcja spowoduje zliczanie prognoz projektów dwa razy.
 

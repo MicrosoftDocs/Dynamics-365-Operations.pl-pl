@@ -1,6 +1,6 @@
 ---
 title: Umożliwia dołączanie kodów podatków TDS do grup podatków TDS i definiowanie formuły obliczania TDS
-description: W tym temacie wyjaśniono, jak skonfigurować grupy podatków Potrącone w źródle (TDS) i dołączyć kody podatków TDS do grup podatków TDS. Aby obliczyć TDS dla grupy podatków TDS, należy zdefiniować formułę dla dołączonych do niej kodów podatków TDS.
+description: W tym artykule wyjaśniono, jak skonfigurować grupy podatków Potrącone w źródle (TDS) i dołączyć kody podatków TDS do grup podatków TDS. Aby obliczyć TDS dla grupy podatków TDS, należy zdefiniować formułę dla dołączonych do niej kodów podatków TDS.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: f1326f95c297887213ecfb572a2437867d964925
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 3607e44bdcf7a32b156e6b4639ef907aa923cadc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711244"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853322"
 ---
 # <a name="attach-tds-tax-codes-to-tds-tax-groups-and-define-the-formula-for-calculating-tds"></a>Umożliwia dołączanie kodów podatków TDS do grup podatków TDS i definiowanie formuły obliczania TDS
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak skonfigurować grupy podatków Potrącone w źródle (TDS) i dołączyć kody podatków TDS do grup podatków TDS. Aby obliczyć TDS dla grupy podatków TDS, należy zdefiniować formułę dla dołączonych do niej kodów podatków TDS.
+W tym artykule wyjaśniono, jak skonfigurować grupy podatków Potrącone w źródle (TDS) i dołączyć kody podatków TDS do grup podatków TDS. Aby obliczyć TDS dla grupy podatków TDS, należy zdefiniować formułę dla dołączonych do niej kodów podatków TDS.
 
 Aby skonfigurować grupę podatków TDS, dołączyć kody podatków TDS i zdefiniować formułę obliczania tych identyfikatorów.
 

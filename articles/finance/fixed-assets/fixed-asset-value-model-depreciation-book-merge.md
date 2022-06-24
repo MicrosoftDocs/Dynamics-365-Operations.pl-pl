@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e9d937211c049b2ec4ac06ac6eddce7fd9bcb5b0
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: f4f06b7916fb2eeed802b2dce95edfce448dcd97
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720007"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880853"
 ---
 # <a name="fixed-asset-value-model-and-depreciation-book-merge"></a>Scalanie modelu ewidencji i księgi amortyzacji środków trwałych
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano funkcje bieżącej księgi w obszarze Środki trwałe. Ta funkcjonalność opiera się na funkcjonalności modelu ewidencji, która była dostępna we wcześniejszych wersjach, ale także zawiera wszystkie funkcje dostępne wcześniej tylko w księgach amortyzacji.
+W tym artykule opisano funkcje bieżącej księgi w obszarze Środki trwałe. Ta funkcjonalność opiera się na funkcjonalności modelu ewidencji, która była dostępna we wcześniejszych wersjach, ale także zawiera wszystkie funkcje dostępne wcześniej tylko w księgach amortyzacji.
 
-Funkcja księgi umożliwia używanie jednego zestawu stron, zapytań i raportów dla wszystkich procesów środków trwałych w organizacji. Tabele w tym temacie opisują wcześniejsze funkcje ksiąg amortyzacji i modeli ewidencji oraz aktualną funkcjonalność ksiąg.
+Funkcja księgi umożliwia używanie jednego zestawu stron, zapytań i raportów dla wszystkich procesów środków trwałych w organizacji. Tabele w tym artykule opisują wcześniejsze funkcje ksiąg amortyzacji i modeli ewidencji oraz aktualną funkcjonalność ksiąg.
 
 ## <a name="setup"></a>Konfiguracja
 Domyślnie zapisy ksiąg są księgowane do księgi głównej (KG) i księgi podrzędnej środków trwałych. Księgi mają nową funkcję **Księguj w księdze głównej**, która pozwala wyłączyć księgowanie w księdze głównej i księgować tylko w księdze podrzędnej środków trwałych. Ta funkcja jest podobna do wcześniejszego zachowania funkcji księgowania stosowanego w księgach amortyzacji. Konfiguracja arkuszy ma nową warstwę księgowania o nazwie Brak. Tę warstwę księgowania dodano specjalnie dla transakcji na środkach trwałych. Aby zaksięgować transakcje dla ksiąg, które nie księgują w księdze głównej, należy użyć arkusza, w którym została ustawiona warstwa księgowania **Brak**.

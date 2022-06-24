@@ -1,6 +1,6 @@
 ---
 title: Fakturowanie elektroniczne dla Egiptu
-description: Ten temat zawiera informacje, które pomogą w rozpoczęciu pracy z Faktury elektroniczne dla Egiptu w rozwiązaniach Microsoft Dynamics 365 Finance i Dynamics 365 Supply Chain Management.
+description: Ten artykuł zawiera informacje, które pomogą w rozpoczęciu pracy z Faktury elektroniczne dla Egiptu w rozwiązaniach Microsoft Dynamics 365 Finance i Dynamics 365 Supply Chain Management.
 author: gionoder
 ms.date: 02/09/2022
 ms.topic: article
@@ -17,22 +17,22 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: e21c4ce4d676c3194665672a078dc1e3d0492799
-ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
+ms.openlocfilehash: c2a46ef938c5dee62c0d0acd1648584df344c81a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661730"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904420"
 ---
 # <a name="electronic-invoicing-for-egypt"></a>Fakturowanie elektroniczne dla Egiptu
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje, które pomogą w rozpoczęciu pracy z Faktury elektroniczne dla Egiptu. Ten artykuł przeprowadzi Cię przez kolejne kroki konfiguracji, które są zależne od kraju/regionu, w usługach Regulatory Configuration Service (RCS). Te kroki uzupełniają kroki opisane w artykule [Set up Electronic invoicing](e-invoicing-set-up-overview.md).
+Ten artykuł zawiera informacje, które pomogą w rozpoczęciu pracy z Faktury elektroniczne dla Egiptu. Ten artykuł przeprowadzi Cię przez kolejne kroki konfiguracji, które są zależne od kraju/regionu, w usługach Regulatory Configuration Service (RCS). Te kroki uzupełniają kroki opisane w artykule [Set up Electronic invoicing](e-invoicing-set-up-overview.md).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Przed rozpoczęciem procedur opisanych w tym temacie należy spełnić następujące wymagania wstępne:
+Przed rozpoczęciem procedur opisanych w tym artykule należy spełnić następujące wymagania wstępne:
 
 - Zapoznaj się z omówieniem fakturowania elektronicznego w sposób opisany [w temacie Fakturowanie elektroniczne](e-invoicing-service-overview.md).
 - Zarejestruj się w RCS i skonfiguruj fakturowanie elektroniczne. Aby uzyskać więcej informacji, zobacz następujące tematy:

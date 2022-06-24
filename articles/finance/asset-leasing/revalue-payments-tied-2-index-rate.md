@@ -1,6 +1,6 @@
 ---
 title: Zmiana wartości opłat z tytułu wynajmu powiązanych ze stawką indeksowaną
-description: W tym temacie opisano korektę dokonywaną w zobowiązaniu z tytułu wynajmu składnika majątku z prawem do użytkowania (PDU), gdy zmienne opłaty z tytułu wynajmu zmieniają się z powodu zmiany stawki indeksowanej.
+description: W tym artykule opisano korektę dokonywaną w zobowiązaniu z tytułu wynajmu składnika majątku z prawem do użytkowania (PDU), gdy zmienne opłaty z tytułu wynajmu zmieniają się z powodu zmiany stawki indeksowanej.
 author: moaamer
 ms.date: 01/11/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 5abd1f5d265c6e8b53903e6df5c52a06b3468880
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: 8dc2325e9f0651bea0d70d9f66e5d88b741009f8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968063"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903255"
 ---
 # <a name="revalue-lease-payments-that-are-linked-to-an-index-rate"></a>Zmiana wartości opłat z tytułu wynajmu powiązanych ze stawką indeksowaną
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano korektę dokonywaną w zobowiązaniu z tytułu wynajmu składnika majątku z prawem do użytkowania (PDU), gdy zmienne opłaty z tytułu wynajmu zmieniają się z powodu zmiany stawki indeksowanej. Zobowiązanie z tytułu wynajmu i składniki majątku z prawem do użytkowania zostaną skorygowane w celu uwzględnienia nowych kwot płatności. Zgodnie z zasadami Accounting Standards Codification Topic 842 (ASC 842), które są standardem przyjętym w ogólnie przyjętych zasadach rachunkowości w Stanach Zjednoczonych (US GAAP), tylko opłaty zmienne rosną lub spadają wskutek zmiany stawki indeksowanej, chyba że istnieją dodatkowe zmiany w przepływach pieniężnych. Te dodatkowe zmiany mogą wynikać na przykład ze zmiany warunków wynajmu spowodowanych zmianą stóp procentowych. Aby uzyskać więcej informacji, zapoznaj się ze standardem ASC 842-10-55-225 oraz punktem 42(b) Międzynarodowego Standardu Sprawozdawczości Finansowej nr 16 (MSSF 16).
+W tym artykule opisano korektę dokonywaną w zobowiązaniu z tytułu wynajmu składnika majątku z prawem do użytkowania (PDU), gdy zmienne opłaty z tytułu wynajmu zmieniają się z powodu zmiany stawki indeksowanej. Zobowiązanie z tytułu wynajmu i składniki majątku z prawem do użytkowania zostaną skorygowane w celu uwzględnienia nowych kwot płatności. Zgodnie z zasadami Accounting Standards Codification Topic 842 (ASC 842), które są standardem przyjętym w ogólnie przyjętych zasadach rachunkowości w Stanach Zjednoczonych (US GAAP), tylko opłaty zmienne rosną lub spadają wskutek zmiany stawki indeksowanej, chyba że istnieją dodatkowe zmiany w przepływach pieniężnych. Te dodatkowe zmiany mogą wynikać na przykład ze zmiany warunków wynajmu spowodowanych zmianą stóp procentowych. Aby uzyskać więcej informacji, zapoznaj się ze standardem ASC 842-10-55-225 oraz punktem 42(b) Międzynarodowego Standardu Sprawozdawczości Finansowej nr 16 (MSSF 16).
 
 ## <a name="adjust-lease-payments"></a>Korygowanie opłat z tytułu wynajmu
 

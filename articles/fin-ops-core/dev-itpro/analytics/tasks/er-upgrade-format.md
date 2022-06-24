@@ -1,6 +1,6 @@
 ---
 title: ER Uaktualnianie formatu poprzez przyjęcie jego nowej wersji bazowej
-description: W tym temacie opisano sposób obsługi konfiguracji formatu raportowania elektronicznego (ER).
+description: W tym artykule opisano sposób obsługi konfiguracji formatu raportowania elektronicznego (ER).
 author: NickSelin
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bfcb85d964234063fd3c6a8e5ea29f7b222e966124b48e46b72b04f457c91e6c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5dbf8ab2ea875e902709215e249871474b17230f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720815"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883517"
 ---
 # <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>ER Uaktualnianie formatu poprzez przyjęcie jego nowej wersji bazowej
 
@@ -119,7 +119,7 @@ Zmień stan żądanej konfiguracji formatu z Wersja robocza na Zakończono, aby 
     Należy zauważyć, że utworzona konfiguracja została zapisana jako ukończona wersja 1.1.1. Oznacza to, że jest to wersja 1 niestandardowego formatu BACS (niestandardowego fikcyjnego brytyjskiego), która bazuje na wersji 1 formatu BACS (fikcyjnego brytyjskiego), który z kolei jest oparty na wersji 1 modelu danych Płatności (modelu uproszczonego).  
 
 ## <a name="test-the-customized-format-to-generate-payment-files"></a>Testowanie niestandardowego formatu generowania plików płatności
-W równoległej sesji Finance and Operations wykonaj procedurę „Używanie utworzonego formatu do generowania elektronicznych dokumentów płatności”. W parametrach metody płatności elektronicznych wybierz format BACS (niestandardowy fikcyjny brytyjski). Upewnij się, że utworzony plik płatności zawiera ostatnio wprowadzony węzeł XML przedstawiający kod IBAN zgodnie wymogami regionalnymi.  
+W równoległej sesji aplikacji finansowych i operacyjnych wykonaj procedurę „Używanie utworzonego formatu do generowania elektronicznych dokumentów płatności”. W parametrach metody płatności elektronicznych wybierz format BACS (niestandardowy fikcyjny brytyjski). Upewnij się, że utworzony plik płatności zawiera ostatnio wprowadzony węzeł XML przedstawiający kod IBAN zgodnie wymogami regionalnymi.  
 
 ## <a name="update-the-existing-country-specific-configuration"></a>Aktualizowanie istniejącej konfiguracji specyficznej dla kraju
 Firma Litware, Inc. musi zaktualizować konfigurację BACS (niestandardową fikcyjną brytyjską) i dostosować ją do nowych wymagań krajowych dotyczących zarządzania formatem dokumentów elektronicznych. Później zmiany te zostaną zawarte w nowej wersji tej konfiguracji, który będzie oferowana subskrybentom usług, w tym firmie Proseware, Inc.  
@@ -239,7 +239,7 @@ W tym celu firma Proseware, Inc. musi zmienić wersję konfiguracji stanowiącą
     Należy zauważyć, że utworzona konfiguracji została zapisana jako ukończona wersja 1.2.2: wersja 2 bazowego formatu BACS (niestandardowego fikcyjnego brytyjskiego), która bazuje na wersji 2 formatu BACS (fikcyjnego brytyjskiego), który z kolei jest oparty na wersji 1 modelu danych Płatności (modelu uproszczonego).  
 
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>Testowanie niestandardowego formatu generowania plików płatności
-W równoległej sesji Finance and Operations wykonaj procedurę „Używanie utworzonego formatu do generowania elektronicznych dokumentów płatności”. W parametrach metody płatności elektronicznych wybierz utworzony format „BACS (niestandardowy, fikcyjny, brytyjski)”. Upewnij się, że utworzony plik płatności zawiera ostatnio wprowadzony przez firmę Proseware, Inc. węzeł XML przedstawiający kod konta IBAN zgodnie wymogami regionalnymi. Plik powinien również zawierać ostatnio wprowadzony przez firmę Litware, Inc. węzeł XML przedstawiający kod banku SWIFT zgodnie wymogami krajowymi.  
+W równoległej sesji aplikacji finansowych i operacyjnych wykonaj procedurę „Używanie utworzonego formatu do generowania elektronicznych dokumentów płatności”. W parametrach metody płatności elektronicznych wybierz utworzony format „BACS (niestandardowy, fikcyjny, brytyjski)”. Upewnij się, że utworzony plik płatności zawiera ostatnio wprowadzony przez firmę Proseware, Inc. węzeł XML przedstawiający kod konta IBAN zgodnie wymogami regionalnymi. Plik powinien również zawierać ostatnio wprowadzony przez firmę Litware, Inc. węzeł XML przedstawiający kod banku SWIFT zgodnie wymogami krajowymi.  
 
 
 

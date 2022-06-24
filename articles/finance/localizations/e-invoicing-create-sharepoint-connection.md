@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie połączenia usługi SharePoint
-description: W tym temacie wyjaśniono sposób konfigurowania połączenia, aby fakturowanie elektroniczne było dostępne w witrynie Microsoft SharePoint.
+description: W tym artykule wyjaśniono sposób konfigurowania połączenia, aby fakturowanie elektroniczne było dostępne w witrynie Microsoft SharePoint.
 author: dkalyuzh
 ms.date: 12/15/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6b9fffc1f3525e69792517dd1c6ebdcfbe5a74d2
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: fb4258190b9480c1302060dd7b75145f80bb7f18
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371602"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856588"
 ---
 # <a name="configure-a-sharepoint-connection"></a>Konfigurowanie połączenia usługi SharePoint
 

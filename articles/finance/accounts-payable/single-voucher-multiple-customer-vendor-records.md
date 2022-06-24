@@ -1,6 +1,6 @@
 ---
 title: Jeden załącznik z wieloma rekordami odbiorców lub dostawców
-description: Ten temat zawiera omówienie tego, co się dzieje podczas księgowania jednego załącznika z wieloma rekordami odbiorców lub dostawców. Ta funkcja nie będzie już dostępna w kolejnych wersjach Microsoft Dynamics 365 Finance, w związku z tym nie zalecamy używania tej metody księgowania ze względu na jej wpływ księgowy na przetwarzanie rozliczeń.
+description: Ten artykuł zawiera omówienie tego, co się dzieje podczas księgowania jednego załącznika z wieloma rekordami odbiorców lub dostawców. Ta funkcja nie będzie już dostępna w kolejnych wersjach programu Microsoft Dynamics 365 Finance, w związku z tym nie zalecamy używania tej metody księgowania ze względu na jej wpływ księgowy na przetwarzanie rozliczeń.
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8677eba2c38c6273555e1189c0153272a8ff9e005655f3846c0d7605b872ff94
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bb94d582020484d8f37eb139c037fb108894c9ee
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737048"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889099"
 ---
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>Jeden załącznik z wieloma rekordami odbiorców lub dostawców
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera omówienie tego, co się dzieje podczas księgowania jednego załącznika z wieloma rekordami odbiorców lub dostawców. Ta funkcja nie będzie już dostępna w kolejnych wersjach, w związku z tym nie zalecamy używania tej metody księgowania ze względu na jej wpływ księgowy na przetwarzanie rozliczeń. 
+Ten artykuł zawiera omówienie tego, co się dzieje podczas księgowania jednego załącznika z wieloma rekordami odbiorców lub dostawców. Ta funkcja nie będzie już dostępna w kolejnych wersjach, w związku z tym nie zalecamy używania tej metody księgowania ze względu na jej wpływ księgowy na przetwarzanie rozliczeń. 
 
 Do typowych przykładów używania jednego załącznika do wielu odbiorców lub dostawców należą m.in. przeniesienia sald między odbiorcami oraz kompensowanie sald między odbiorcami i dostawcami w tej samej organizacji. 
 
@@ -35,7 +35,7 @@ Załącznik zawierający więcej niż jednego odbiorcę lub dostawcę można wpr
 -   Za pomocą załącznika wielowierszowego, gdy nie ma przeciwstawnego konta księgowego, z więcej niż jednym odbiorcą lub dostawcą.
 -   Wprowadzanie załącznika z kombinacją konta i konta przeciwstawnego dostawca/dostawca, odbiorca/odbiorca, dostawca/odbiorca lub odbiorca/dostawca.
 
-W tym temacie opisano sposób przetwarzania rozliczenia podczas księgowania jednego załącznika z wieloma rekordami odbiorców lub dostawców. Ponadto temat zawiera obejścia pomagające zrozumieć, jak unikać używania jednego załącznika z wieloma odbiorcami lub dostawcami. W szczególności podano przykłady ilustrujące dwa typowe scenariusze rozliczania, na które ma wpływ stosowanie jednego załącznika z wieloma odbiorcami lub dostawcami:
+W tym artykule opisano sposób przetwarzania rozliczenia podczas księgowania jednego załącznika z wieloma rekordami odbiorców lub dostawców. Ponadto artykuł zawiera obejścia pomagające zrozumieć, jak unikać używania jednego załącznika z wieloma odbiorcami lub dostawcami. W szczególności podano przykłady ilustrujące dwa typowe scenariusze rozliczania, na które ma wpływ stosowanie jednego załącznika z wieloma odbiorcami lub dostawcami:
 
 -   Księgowanie rabatów gotówkowych
 -   Księgowanie przeszacowania

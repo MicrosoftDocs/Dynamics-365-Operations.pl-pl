@@ -1,6 +1,6 @@
 ---
 title: Intrastat — Niemcy
-description: Ten temat zawiera informacje dotyczące deklaracji Intrastat w Niemczech.
+description: Ten artykuł zawiera informacje dotyczące deklaracji Intrastat w Niemczech.
 author: anasyash
 ms.date: 09/09/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: 50c412fdfd7118843d285cbb70e8e44847c9d4a5
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 9516a4516488282820659da141fe3ad33fbe3a9d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7487932"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848472"
 ---
 # <a name="german-intrastat"></a>Intrastat — Niemcy
 

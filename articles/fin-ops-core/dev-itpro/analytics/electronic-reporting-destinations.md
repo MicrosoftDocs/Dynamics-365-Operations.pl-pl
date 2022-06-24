@@ -1,6 +1,6 @@
 ---
 title: Miejsca docelowe raportowania elektronicznego (ER)
-description: Ten temat zawiera informacje dotyczące zarządzania miejscami docelowymi raportowania elektronicznego, typów obsługiwanych miejsc docelowych oraz względów bezpieczeństwa.
+description: Ten artykuł zawiera informacje dotyczące zarządzania miejscami docelowymi raportowania elektronicznego, typów obsługiwanych miejsc docelowych oraz względów bezpieczeństwa.
 author: nselin
 ms.date: 05/18/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: e3154cb62531bf956365b420b454c98ead7f7335
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: bc8ef4a5299e6daba79702fadd37284f752a54a7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780468"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851085"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Miejsca docelowe raportowania elektronicznego (ER)
 
 [!include [banner](../includes/banner.md)]
 
-Można skonfigurować miejsce docelowe dla każdej konfiguracji formatu raportowania elektronicznego (ER) i jej składnika wyjściowego (folderu lub pliku). Użytkownicy mający odpowiednie prawa dostępu mogą także modyfikować ustawienia miejsca docelowego w czasie wykonywania. Ten temat wyjaśnia problematykę zarządzania miejscami docelowymi w ER, obsługiwane typy miejsc docelowych oraz zagadnienia dotyczące zabezpieczeń.
+Można skonfigurować miejsce docelowe dla każdej konfiguracji formatu raportowania elektronicznego (ER) i jej składnika wyjściowego (folderu lub pliku). Użytkownicy mający odpowiednie prawa dostępu mogą także modyfikować ustawienia miejsca docelowego w czasie wykonywania. Ten artykuł wyjaśnia problematykę zarządzania miejscami docelowymi w ER, obsługiwane typy miejsc docelowych oraz zagadnienia dotyczące zabezpieczeń.
 
 Konfiguracje formatów w module raportowania elektronicznego (ER) zwykle zawierają co najmniej jeden składnik wyjściowy: plik. Przeważnie konfiguracje zawierają wiele składników wyjściowych w postaci plików różnego typu (na przykład XML, TXT, XLSX, DOC lub PDF), które są zgrupowane w jednym folderze lub wielu folderach. Funkcje zarządzania miejscami docelowymi raportowania elektronicznego pozwalają wstępnie skonfigurować, co się dzieje po uruchomieniu każdego składnika. Domyślnie podczas sesji konfiguracji jest wyświetlane okno dialogowe, które pozwala Ci zapisać lub otworzyć plik. Takie samo zachowanie występuje również podczas importowania konfiguracji ER, gdy nie ustawiono dla niej żadnych konkretnych miejsc docelowych. Po utworzeniu miejsca docelowego dla głównego składnika wyjściowego miejsce to zastępuje domyślne zachowanie, a folder lub plik jest wysyłany zgodnie z ustawieniami tego miejsca docelowego.
 

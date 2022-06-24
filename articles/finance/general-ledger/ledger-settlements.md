@@ -1,6 +1,6 @@
 ---
 title: Rozliczenia księgi
-description: W tym temacie wyjaśniono, jak na stronie Rozliczenia księgi rozliczać transakcji księgi i wycofywać rozliczenia.
+description: W tym artykule wyjaśniono, jak na stronie Rozliczenia księgi rozliczać transakcji księgi i wycofywać rozliczenia.
 author: kweekley
 ms.date: 01/31/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-11-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: e98b012210338e7f18cb874eefbc8a023aa4428b
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 39fd6c6677565a4b1e9a9bf6f43a4c630cb5e07b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075331"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902495"
 ---
 # <a name="ledger-settlements"></a>Rozliczenia księgi
 
@@ -32,7 +32,7 @@ Rozliczone transakcje mogą być wyłączone z zapytań i raportów. W ten spos�
 > Moduły Accounts payable (AP) i Accounts receivable (AR) również posiadają funkcję rozliczania faktur i płatności. Kiedy następuje rozliczenie w księgach pomocniczych AR i AP, odpowiadające im wpisy w księdze nie są automatycznie rozliczane.
 
 ## <a name="ledger-settlement-features"></a>Cechy rozliczenia księgi
-W Microsoft Dynamics 365 Finance w wersji 10.0.21 opcja **Włącz zaawansowane rozliczanie księgi** została usunięta ze strony **Parametry księgi głównej**. Zaawansowane rozliczanie księgi głównej jest teraz zawsze włączone.
+W aplikacji Microsoft Dynamics 365 Finance w wersji 10.0.21 opcja **Włącz zaawansowane rozliczanie księgi** została usunięta ze strony **Parametry księgi głównej**. Zaawansowane rozliczanie księgi głównej jest teraz zawsze włączone.
 W wersji finansów 10.0.25 wprowadzono funkcję **Świadomość między rozliczeniem księgi a zamknięciem na koniec roku**. Ta funkcja zmienia fundamentalną funkcjonalność zarówno rozliczenia księgi głównej, jak i zamknięcia rocznego księgi głównej. Zanim włączysz tę funkcję w przestrzeni roboczej **Zarządzanie funkcjami**, zobacz: [Świadomość między rozliczeniem księgi a zamknięciem roku](awareness-between-ledger-settlement-year-end-close.md).
 
 ## <a name="set-up-ledger-settlement"></a>Tworzenie rozliczenia księgi głównej

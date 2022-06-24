@@ -1,6 +1,6 @@
 ---
 title: Obszar roboczy Automatyzacja faktur od dostawców
-description: W tym temacie wyjaśniono, jak skonfigurować obszar roboczy, który jest powiązany z fakturami od dostawcy, oraz wyświetlić informacje dostępne w Microsoft Power BI.
+description: W tym artykule wyjaśniono, jak skonfigurować obszar roboczy, który jest powiązany z fakturami od dostawcy, oraz wyświetlić informacje dostępne w Microsoft Power BI.
 author: abruer
 ms.date: 02/14/2022
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2020-09-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f28cc5f63df2f0d8a4c8cae407f7166aa4fa03db
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: 2b74731a3283badad941e567e85f8a1644f6ad18
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182586"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865809"
 ---
 # <a name="vendor-invoice-automation-workspace"></a>Obszar roboczy Automatyzacja faktur od dostawców
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-W tym temacie wyjaśniono, jak skonfigurować obszar roboczy, który jest powiązany z fakturami od dostawcy, oraz wyświetlić informacje dostępne w Microsoft Power BI. Informacje dotyczące faktury od dostawcy w tym obszarze roboczym są filtrowane dla określonych użytkowników i są wyświetlane w postaci graficznej.
+W tym artykule wyjaśniono, jak skonfigurować obszar roboczy, który jest powiązany z fakturami od dostawcy, oraz wyświetlić informacje dostępne w Microsoft Power BI. Informacje dotyczące faktury od dostawcy w tym obszarze roboczym są filtrowane dla określonych użytkowników i są wyświetlane w postaci graficznej.
 
 ## <a name="overview"></a>Omówienie
 
