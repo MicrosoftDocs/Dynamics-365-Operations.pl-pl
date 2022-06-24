@@ -1,6 +1,6 @@
 ---
 title: Mapowanie kanałów na witryny handlu elektronicznego
-description: W tym temacie opisano niektóre bardziej typowe scenariusze mapowania kanału w Microsoft Dynamics 365 Commerce, które można ekstrapolowane w przypadku większości innych wymagań biznesowych.
+description: W tym artykule opisano niektóre bardziej typowe scenariusze mapowania kanału w Microsoft Dynamics 365 Commerce, które można ekstrapolowane w przypadku większości innych wymagań biznesowych.
 author: samjarawan
 ms.date: 05/11/2022
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8ce272d63b4a37f99661333a02434708205ea19a
-ms.sourcegitcommit: e4cc43b06ef3f0f562849e2c960025cb244d6017
+ms.openlocfilehash: 94c43df26e8d6e55a5b6d459b65066d5873e1063
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "8743583"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902770"
 ---
 # <a name="map-channels-to-e-commerce-sites"></a>Mapowanie kanałów na witryny handlu elektronicznego
 
-W tym temacie opisano niektóre bardziej typowe scenariusze mapowania kanału w Microsoft Dynamics 365 Commerce, które można ekstrapolowane w przypadku większości innych wymagań biznesowych.
+W tym artykule opisano niektóre bardziej typowe scenariusze mapowania kanału w Microsoft Dynamics 365 Commerce, które można ekstrapolowane w przypadku większości innych wymagań biznesowych.
 
 Dynamics 365 Commerce obsługuje wiele scenariuszy biznesowych do mapowania [kanałów online](#channels) ze skonfigurowanym zestawem produktów, [cen i rabatów na doświadczenia w witrynach e-commerce](#e-commerce-sites) dla odbiorców.
 
-W tym temacie omówiono następujące scenariusze:
+W tym artykule omówiono następujące scenariusze:
 
 - **Kanał w jednym języku z jedną witryną w portalu e-commerce.** Na przykład ten scenariusz może dotyczyć jednej witryny marki, która jest skonfigurowana dla rynku amerykańskiego w Języku angielskim.
 - **Kanał wielojęzyczny z jedną zlokalizowaną witryną.** Na przykład ten scenariusz może obejmować witrynę jednej marki skonfigurowaną dla Kanady z obsługą języka francuskiego i angielskiego. W tym scenariuszu użytkownicy, którzy wybierają różne języki, mają takie samo środowisko witryny, ale są zlokalizowane w wybranym języku każdego użytkownika.
@@ -63,7 +63,7 @@ Poniższy przykład ilustruje konfigurację kanałów w centrali Commerce headqu
 
 ![Wartości firmy, waluty i języka sklepu internetowego Adventure Works są wyróżnione w programie Commerce Headquarters.](media/channel-mapping-3.png)
 
-Pojedynczy kanał online może być mapowany na pojedynczą witrynę e-commerce w Konstruktorze witryn. Aby uzyskać informacje dotyczące sposobu tworzenia nowej witryny i mapowania jej na kanał, zobacz temat [Mapowanie kanału na witrynę w sekcji Konstruktora witryn tego tematu](#map-a-channel-to-a-site-in-site-builder).
+Pojedynczy kanał online może być mapowany na pojedynczą witrynę e-commerce w Konstruktorze witryn. Aby uzyskać informacje dotyczące sposobu tworzenia nowej witryny i mapowania jej na kanał, zobacz temat [Mapowanie kanału na witrynę w sekcji Konstruktora witryn tego artykułu](#map-a-channel-to-a-site-in-site-builder).
 
 ### <a name="multi-language-channel-that-has-a-single-localized-site-experience"></a>Kanał wielojęzyczny z jedną zlokalizowaną witryną
 
@@ -73,7 +73,7 @@ Ograniczeniem tego scenariusza jest to, że jeden kanał można skonfigurować t
 
 Każdy język w kanale można skonfigurować przy użyciu własnej nazwy domeny. Na przykład, domena `www.adventure-works.ca` może być skonfigurowana dla kanadyjskiej wersji angielskiej, a domena `www.adventure-works-fr.ca` może być skonfigurowana dla kanadyjskiej wersji francuskiej. Można również skonfigurować różne języki w kanale w jednej domenie, a następnie używać innej ścieżki dla każdego języka. Na przykład, domena `www.adventure-works.ca` może być skonfigurowana dla kanadyjskiej wersji angielskiej, a następnie ścieżka `www.adventure-works.ca/fr` może być użyta dla kanadyjskiej wersji francuskiej. [Wykrywanie geograficznej](geo-detection-redirection.md) można również włączyć, aby automatycznie przekierowyywać użytkownika do właściwej witryny, zgodnie z jego lokalizacją.
 
-Aby uzyskać informacje dotyczące sposobu włączania ręcznego przełączania odbiorców między językami, zobacz [sekcję Dodawanie i konfigurowanie modułu skonsutora](#add-and-configure-the-site-picker-module) witryny w tym temacie. Aby uzyskać informacje dotyczące dostosowywania zlokalizowanych stron i fragmentów, [zobacz temat Zarządzanie zawartością witryny, która ma wiele kanałów i sekcji języków](#manage-site-content-that-has-multiple-channels-and-languages).
+Aby uzyskać informacje dotyczące sposobu włączania ręcznego przełączania odbiorców między językami, zobacz [sekcję Dodawanie i konfigurowanie modułu skonsutora](#add-and-configure-the-site-picker-module) witryny w tym artykule. Aby uzyskać informacje dotyczące dostosowywania zlokalizowanych stron i fragmentów, [zobacz temat Zarządzanie zawartością witryny, która ma wiele kanałów i sekcji języków](#manage-site-content-that-has-multiple-channels-and-languages).
 
 ### <a name="multi-language-channel-that-has-a-different-site-experience-per-language"></a>Kanał wielojęzyczny, w którym witryna różni się w zależności od języka
 
@@ -87,7 +87,7 @@ Witryna pod marką może wymagać obsługi wielu kanałów online w poszczególn
 
 W tym scenariuszu każdy rynek może być skonfigurowany z własnymi nazwami domen. Na przykład domena `www.adventure-works.com` może być skonfigurowana na rynek amerykański, a domena `www.adventure-works.de` może być skonfigurowana na rynek niemiecki. Każdy rynek można również skonfigurować tak, aby wykorzystywał inną ścieżkę. Na przykład domena `www.adventure-works.com` może być skonfigurowana na rynek amerykański, a następnie ścieżkę `www.adventure-works.com/de` można użyć dla rynku niemieckiego. [Wykrywanie geograficznej](geo-detection-redirection.md) można również włączyć, aby automatycznie przekierowywać użytkowników do właściwej witryny w zależności od regionu.
 
-Witryna może również zawierać listę rozwijaną, która umożliwia użytkownikom ręczne przełączanie na określony rynek. Aby uzyskać więcej informacji, zobacz sekcję [Dodaj i skonfiguruj moduł selektora witryn](#add-and-configure-the-site-picker-module) w następnej części tego tematu.
+Witryna może również zawierać listę rozwijaną, która umożliwia użytkownikom ręczne przełączanie na określony rynek. Aby uzyskać więcej informacji, zobacz sekcję [Dodaj i skonfiguruj moduł selektora witryn](#add-and-configure-the-site-picker-module) w następnej części tego artykułu.
 
 Aby uzyskać informacje dotyczące konfigurowania wielu kanałów w jednej witrynie, zobacz sekcję [Konfigurowanie wielu kanałów w sekcji witryny handlu elektronicznego](#configure-multiple-channels-on-an-e-commerce-site).
 
@@ -180,7 +180,7 @@ Zamiast ręcznie tworzyć poszczególne strony i fragmenty, można eksportować 
 
 Witryna mająca wiele kanałów i/lub języków przechowuje unikatowy wariant każdej strony i fragmentu dla każdej kombinacji kanału i języka. Takie zachowanie umożliwia tworzenie wariantów stron zawierających zlokalizowane dane, ale również daje elastyczność zmiany wyglądu i działania strony dla określonego wariantu.
 
-Aby uzyskać informacje dotyczące sposobu pracy z wariantami stron, zobacz temat Implementowanie [wariantów strony dla każdej sekcji](#implement-page-variants-for-each-language) językowej tego tematu.
+Aby uzyskać informacje dotyczące sposobu pracy z wariantami stron, zobacz temat Implementowanie [wariantów strony dla każdej sekcji](#implement-page-variants-for-each-language) językowej tego artykułu.
 
 ## <a name="configure-multiple-channels-on-an-e-commerce-site"></a>Konfigurowanie wielu kanałów w witrynie e-commerce
 

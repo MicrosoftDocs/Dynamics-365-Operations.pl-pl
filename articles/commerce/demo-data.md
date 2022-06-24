@@ -1,6 +1,6 @@
 ---
 title: Układy ekranu danych demonstracyjnych w aplikacjach Modern POS (MPOS) i Cloud POS
-description: Ten temat zawiera informacje o układach ekranu zawartych w zestawie danych demonstracyjnych dla doświadczeń punktu sprzedaży w rozwiązaniu Dynamics 365 Commerce.
+description: Ten artykuł zawiera informacje o układach ekranu zawartych w zestawie danych demonstracyjnych dla doświadczeń punktu sprzedaży w rozwiązaniu Dynamics 365 Commerce.
 author: josaw1
 ms.date: 10/05/2017
 ms.topic: article
@@ -16,22 +16,22 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: c141325580d698cccc7d186496a0902913961d47764b93fa73c64c3eddf6e791
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eb7a288b61e8b467dd8ad6a8f7dc42b7fca0d943
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761669"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897232"
 ---
 # <a name="demo-data-screen-layouts-in-modern-pos-mpos-and-cloud-pos"></a>Układy ekranu danych demonstracyjnych w aplikacjach Modern POS (MPOS) i Cloud POS
 
 [!include [banner](includes/banner.md)]
 
-Ten temat zawiera informacje o układach ekranu zawartych w zestawie danych demonstracyjnych dla doświadczeń punktu sprzedaży w rozwiązaniu Dynamics 365 Commerce.
+Ten artykuł zawiera informacje o układach ekranu zawartych w zestawie danych demonstracyjnych dla doświadczeń punktu sprzedaży w rozwiązaniu Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Omówienie
 
-Przykładowe układy ekranu zawarte w danych demonstracyjnych Commerce obejmują zawartość zoptymalizowaną dla różnych segmentów sprzedaży detalicznej, ról pracowników sklepu i urządzeń. Jeden układ może zawierać kilka rozmiarów układu i kombinacji siatek przycisków, aby zapewnić możliwość obsługi, gdy pracownicy sklepu zmienią urządzenia i stacje. W tym temacie omówiono różnice między tymi układami, operacja, jakie udostępniają i ogólne zapewniane doświadczenia.
+Przykładowe układy ekranu zawarte w danych demonstracyjnych Commerce obejmują zawartość zoptymalizowaną dla różnych segmentów sprzedaży detalicznej, ról pracowników sklepu i urządzeń. Jeden układ może zawierać kilka rozmiarów układu i kombinacji siatek przycisków, aby zapewnić możliwość obsługi, gdy pracownicy sklepu zmienią urządzenia i stacje. W tym artykule omówiono różnice między tymi układami, operacja, jakie udostępniają i ogólne zapewniane doświadczenia.
 
 ![Układy danych demonstracyjnych działające między urządzeniami.](../commerce/media/demo-screen-layouts-fig-1-1.png)
 
@@ -52,8 +52,8 @@ Identyfikatory układu ekranu mogą mieć maksymalnie 10 znaków. Identyfikator 
 | List | Firma         |
 |--------|-----------------|
 | A      | Adventure Works |
-| P      | Fabrikam        |
-| C      | Contoso         |
+| F      | Fabrikam        |
+| F      | Contoso         |
 
 ### <a name="layout-version"></a>Wersja układu
 
@@ -123,7 +123,7 @@ Każda firma fikcyjna odnosi się do innego segmentu sprzedaży detalicznej i za
 | Contoso         | Boston   | Elektronika    | Czerwony    | Ciemny  |
 
 > [!NOTE]
-> Adventure Works i Fabrikam to dwie marki flagowe. Contoso jest dostępna, ale nie dostarczono wszystkich układów.
+> Adventure Works i Fabrikam to dwie marki flagowe. Firma Contoso jest dostępna, ale nie dostarczono wszystkich układów.
 
 Poniższe ilustracje przedstawiają przykłady strony powitalnej i strony transakcji dla trzech fikcyjnych firm.
 

@@ -1,6 +1,6 @@
 ---
-title: Konfigurowanie zasad faktur od dostawców
-description: W tym temacie opisano sposób konfigurowania zasad płatności dla faktur od dostawcy.
+title: Ustawianie zasad faktur od dostawców
+description: W tym artykule opisano sposób konfigurowania zasad płatności dla faktur od dostawcy.
 author: ShivamPandey-msft
 ms.date: 02/11/2022
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1f9707c7b283f42729126efa57e890e0df65ca8b
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: 049b38b6feba5f4369d79b89b4c81a8195dd7758
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109763"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904738"
 ---
-# <a name="set-up-vendor-invoice-policies"></a>Konfigurowanie zasad faktur od dostawców
+# <a name="set-up-vendor-invoice-policies"></a>Ustawianie zasad faktur od dostawców
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie opisano sposób konfigurowania zasad płatności dla faktur od dostawcy. Zasady dotyczące faktur od dostawców są uruchamiane podczas księgowania **faktur od dostawców** przy użyciu strony Faktura od dostawcy oraz po otwarciu strony **naruszeń zasad** faktur od dostawców. Można także skonfigurować przepływ pracy faktur od dostawcy, aby uruchamiał zasady dotyczące faktur od dostawców podczas każdego przesłania faktur do przepływu. 
+W tym artykule opisano sposób konfigurowania zasad płatności dla faktur od dostawcy. Zasady dotyczące faktur od dostawców są uruchamiane podczas księgowania **faktur od dostawców** przy użyciu strony Faktura od dostawcy oraz po otwarciu strony **naruszeń zasad** faktur od dostawców. Można także skonfigurować przepływ pracy faktur od dostawcy, aby uruchamiał zasady dotyczące faktur od dostawców podczas każdego przesłania faktur do przepływu. 
 
 - Zasady faktur od dostawców nie dotyczą faktur, które zostały utworzone w rejestrze faktur lub arkuszu faktur.  
 - Funkcja sprawdzania poprawności uzgadniania faktur nie używa zasad dotyczących faktur od dostawców, ale jest konfigurowana na stronie **Parametry modułu rozrachunków z dostawcami**.  

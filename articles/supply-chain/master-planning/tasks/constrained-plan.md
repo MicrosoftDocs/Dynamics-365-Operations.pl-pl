@@ -1,6 +1,6 @@
 ---
 title: Generowanie planu z ograniczeniami
-description: W tym temacie pokazano, jak utworzyć plan, który bierze pod uwagę ograniczenia dotyczące materiałów i wydajności.
+description: W tym artykule pokazano, jak utworzyć plan, który bierze pod uwagę ograniczenia dotyczące materiałów i wydajności.
 author: t-benebo
 ms.date: 08/02/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f8372f4e35b34ff66ef55c0961b867a1aff7a5e6
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 65884d556724cd6132fe328e95a5bec78885c174
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468952"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904022"
 ---
 # <a name="generate-a-constrained-plan"></a>Generowanie planu z ograniczeniami
 
 [!include [banner](../../includes/banner.md)]
 
-W tym temacie pokazano, jak utworzyć plan, który bierze pod uwagę ograniczenia dotyczące materiałów i wydajności. Plan gwarantuje, że produkcja nie rozpocznie się przed zapewnieniem dostępności materiałów i wyeliminowaniem ryzyka nadrezerwacji. 
+W tym artykule pokazano, jak utworzyć plan, który bierze pod uwagę ograniczenia dotyczące materiałów i wydajności. Plan gwarantuje, że produkcja nie rozpocznie się przed zapewnieniem dostępności materiałów i wyeliminowaniem ryzyka nadrezerwacji. 
 
 Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. Ta procedura jest przeznaczona dla planisty produkcji.
 

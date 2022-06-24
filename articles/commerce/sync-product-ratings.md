@@ -1,6 +1,6 @@
 ---
 title: Synchronizacja ocen produktów w rozwiązaniu Dynamics 365 Commerce
-description: W tym temacie opisano sposób synchronizowania ocen produktów w Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano sposób synchronizowania ocen produktów w Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 02/06/2020
 ms.topic: article
@@ -15,22 +15,22 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3ceac78e6dbc6f83ed4968f76672367e79bdd968
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: ac94a8b4505aba509f0a71ed36d32adac864aedf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7967957"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909342"
 ---
 # <a name="sync-product-ratings-in-dynamics-365-commerce"></a>Synchronizacja ocen produktów w rozwiązaniu Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano sposób synchronizowania ocen produktów w Microsoft Dynamics 365 Commerce.
+W tym artykule opisano sposób synchronizowania ocen produktów w Microsoft Dynamics 365 Commerce.
 
 W celu użycia ocen produktów w wielu kanałach, na przykład w punkt sprzedaży (POS) i w biurach obsługi, oceny produktów z usługi ocen i recenzji muszą zostać zaimportowane do bazy danych kanału Commerce. Po udostępnieniu ocen produktów w wielu kanałach mogą one pomóc klientom w pośredniej interakcji ze sprzedawcą.
 
-W tym temacie opisano następujące zadania:
+W tym artykule opisano następujące zadania:
 
 1. Skonfiguruj **zadanie synchronizacji klasyfikacji produktów** jako zadanie wsadowe, aby synchronizować oceny produktów z poziomu **usługi klasyfikacji i przeglądów**.
 1. Sprawdź, czy zadanie wsadowe synchronizacji oceny produktu zakończyło się pomyślnie.

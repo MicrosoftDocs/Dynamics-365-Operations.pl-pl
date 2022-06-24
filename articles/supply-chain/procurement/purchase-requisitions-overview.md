@@ -1,6 +1,6 @@
 ---
 title: Omówienie zapotrzebowania na zakup
-description: W tym temacie opisano przepływ pracy zapotrzebowania na zakup oraz różne stany, jakie może przyjmować zapotrzebowanie na zakup.
+description: W tym artykule opisano przepływ pracy zapotrzebowania na zakup oraz różne stany, jakie może przyjmować zapotrzebowanie na zakup.
 author: GalynaFedorova
 ms.date: 11/02/2017
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e6524229800233d1bfdf54a11afc122990eed9d3
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: a7430e18779dc2c37f74e6d25c95836f4fbc435d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671176"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905755"
 ---
 # <a name="purchase-requisition-overview"></a>Omówienie zapotrzebowania na zakup
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano przepływ pracy zapotrzebowania na zakup oraz różne stany, jakie może przyjmować zapotrzebowanie na zakup.
+W tym artykule opisano przepływ pracy zapotrzebowania na zakup oraz różne stany, jakie może przyjmować zapotrzebowanie na zakup.
 
 W zależności od konfiguracji organizacji, możesz tworzyć zapotrzebowania na zakup dla produktów, których używa organizacja. Zapotrzebowanie na zakup to wewnętrzny dokument, który upoważnia dział zakupów do nabycia towarów lub usług.  
 

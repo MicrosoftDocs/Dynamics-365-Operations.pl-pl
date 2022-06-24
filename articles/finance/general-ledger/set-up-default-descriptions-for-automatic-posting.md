@@ -1,6 +1,6 @@
 ---
 title: Ustawianie opisów domyślnych dla automatycznego księgowania
-description: W tym temacie opisano sposób ustawiania domyślnego tekstu, który opisuje wpisów, które są księgowane automatycznie w księdze głównej. Można skonfigurować domyślny tekst opisu, używając tekstu dowolnego kształtu lub wybrać sztywno określone zmienne.
+description: W tym artykule opisano sposób ustawiania domyślnego tekstu, który opisuje wpisów, które są księgowane automatycznie w księdze głównej. Można skonfigurować domyślny tekst opisu, używając tekstu dowolnego kształtu lub wybrać sztywno określone zmienne.
 author: aprilolson
 ms.date: 07/23/2019
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.region: global
 ms.author: aolson
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 772c754e9980e693daf7542de273cbe278ca7038
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 71982a7d5b1bb08d3e238646ea0b15f17260bdcc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722444"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904507"
 ---
 # <a name="set-up-default-descriptions-for-automatic-posting"></a>Ustawianie opisów domyślnych dla automatycznego księgowania
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób ustawiania domyślnego tekstu, który opisuje wpisów, które są księgowane automatycznie w księdze głównej. Można skonfigurować domyślny tekst opisu, używając tekstu dowolnego kształtu lub wybrać sztywno określone zmienne.
+W tym artykule opisano sposób ustawiania domyślnego tekstu, który opisuje wpisów, które są księgowane automatycznie w księdze głównej. Można skonfigurować domyślny tekst opisu, używając tekstu dowolnego kształtu lub wybrać sztywno określone zmienne.
 
 > [!NOTE]
-> W przypadku niektórych typów transakcji w niektórych krajach lub regionach, możesz również uwzględnić tekst z pól, które są związane z tymi rodzajami transakcji. Aby zapoznać się z listą typów transakcji oraz krajami i regionami, zobacz sekcję [Opcjonalnie: Dodaj inny tekst do opisów domyślnych](#optional-add-other-text-to-default-descriptions) w dalszej części tego tematu.
+> W przypadku niektórych typów transakcji w niektórych krajach lub regionach, możesz również uwzględnić tekst z pól, które są związane z tymi rodzajami transakcji. Aby zapoznać się z listą typów transakcji oraz krajami i regionami, zobacz sekcję [Opcjonalnie: Dodaj inny tekst do opisów domyślnych](#optional-add-other-text-to-default-descriptions) w dalszej części tego artykułu.
 
 ## <a name="set-up-default-descriptions"></a>Ustawianie opisów domyślnych
 
@@ -78,7 +78,7 @@ Ta opcja jest dostępna dla następujących krajów i regionów:
 
 ### <a name="add-text-to-default-descriptions"></a>Dodaj tekst do opisów domyślnych
 
-Po wykonaniu kroków w procedurze [Ustawianie opisów domyślnych](#set-up-default-descriptions) , opisanej we wcześniejszej sekcji tego tematu, należy wykonać następujące kroki, aby dodać inny tekst do opisu domyślnego.
+Po wykonaniu kroków w procedurze [Ustawianie opisów domyślnych](#set-up-default-descriptions) , opisanej we wcześniejszej sekcji tego artykułu, należy wykonać następujące kroki, aby dodać inny tekst do opisu domyślnego.
 
 1. Na skróconej karcie **Parametry** wybierz pozycję **Dodaj**.
 2. W polu **Tabela odwołań** zaznacz tabelę bazy danych, z której chcesz dodać do opisu dane parametru.

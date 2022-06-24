@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie parametrów dla automatyzacji procesów windykacji
-description: W tym temacie opisano parametry wpływające na procesy zautomatyzowanej windykacji i przedstawiono wskazówki dotyczące ich konfigurowania w taki sposób, aby proces automatyczny odzwierciedlał zamiary i oczekiwania użytkownika.
+description: W tym artykule opisano parametry wpływające na procesy zautomatyzowanej windykacji i przedstawiono wskazówki dotyczące ich konfigurowania w taki sposób, aby proces automatyczny odzwierciedlał zamiary i oczekiwania użytkownika.
 author: JodiChristiansen
 ms.date: 08/05/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-26
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: e7a7e048a371fc90456368206b91c29c4b1264d5
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: c5d0f801c47ef2d98d8ba410dc593bd7640839c1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734404"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900050"
 ---
 # <a name="configure-parameters-for-collection-process-automation"></a>Konfigurowanie parametrów dla automatyzacji procesów windykacji
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano parametry wpływające na procesy zautomatyzowanej windykacji i przedstawiono wskazówki dotyczące ich konfigurowania w taki sposób, aby proces automatyczny odzwierciedlał zamiary i oczekiwania użytkownika. Aby uzyskać informacje dotyczące automatyzowania procesów windykacji, zobacz temat [Automatyzacja procesów windykacji](collections-process-automate.md).
+W tym artykule opisano parametry wpływające na procesy zautomatyzowanej windykacji i przedstawiono wskazówki dotyczące ich konfigurowania w taki sposób, aby proces automatyczny odzwierciedlał zamiary i oczekiwania użytkownika. Aby uzyskać informacje dotyczące automatyzowania procesów windykacji, zobacz temat [Automatyzacja procesów windykacji](collections-process-automate.md).
 
 ## <a name="general"></a>Ogólny
 Służy do wprowadzania liczby w **Procencie odbiorców na zadanie wsadowe** w celu określenia liczby zadań wsadowych na proces automatyzacji. Ustaw opcję **Automatyczne wysyłanie ponagleń** na **Tak**, dzięki czemu typ akcji ponaglenia spowoduje wysłanie ponaglenia podczas automatyzacji. Ustaw opcję **Utwórz działania dla automatyzacji** na wartość **Tak**, aby utworzyć i zamknąć działania dla typów akcji bez działań, aby wyświetlić wszystkie kroki wykonane automatycznie dla konta. Zdefiniuj liczbę dni przechowywania historii windykacji w części **Dni przechowywania historii automatyzacji procesów windykacji**. Gdy faktura osiągnie ostatni krok procesu windykacji, nie będzie ona używana do tworzenia przyszłych typów akcji automatyzacji procesów, jeśli ustawienie **Wyklucz fakturę po aktywacji ostatniego kroku procesu** ma wartość **Tak**. Następna najstarsza faktura określa następny krok automatyzacji procesu, aby zapewnić kontynuację akcji automatyzacji procesów windykacji. 

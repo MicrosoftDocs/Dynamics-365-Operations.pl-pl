@@ -1,6 +1,6 @@
 ---
 title: Stany cyklu życia składnika majątku
-description: W tym temacie wyjaśniono stany cyklu życia składników majątku i modele cyklu życia w zarządzaniu składnikami majątku.
+description: W tym artykule wyjaśniono stany cyklu życia składników majątku i modele cyklu życia w zarządzaniu składnikami majątku.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 55139c6458e569b15518f0f11f1c12c3a26cae2f26c6a2046a7ebdc1277cb144
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 43b1ff9438437e6c1ff33bab9a7ba0361029cb6d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722470"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901068"
 ---
 # <a name="asset-lifecycle-states"></a>Stany cyklu życia składnika majątku
 
@@ -28,7 +28,7 @@ ms.locfileid: "6722470"
 
  
 
-W tym temacie wyjaśniono stany cyklu życia składników majątku i modele cyklu życia w zarządzaniu składnikami majątku. Stany cyklu życia składnika majątku są używane do definiowania, czy składnik majątku jest aktywny czy nieaktywny. Można na przykład skonfigurować stany cyklu życia składnika majątku, takie jak **Utworzone**, **Aktywne** i **Zakończone**.
+W tym artykule wyjaśniono stany cyklu życia składników majątku i modele cyklu życia w zarządzaniu składnikami majątku. Stany cyklu życia składnika majątku są używane do definiowania, czy składnik majątku jest aktywny czy nieaktywny. Można na przykład skonfigurować stany cyklu życia składnika majątku, takie jak **Utworzone**, **Aktywne** i **Zakończone**.
 
 > [!NOTE]
 > - Stany cyklu życia żądania są połączone ze stanami cyklu życia składnika majątku. Dlatego kiedy żądanie zostanie zmienione na nowy stan cyklu życia żądania, składnik majątku, dołączony do żądania jest zmieniany na nowy stan cyklu życia składnika majątku. Na przykład, jeśli stan cyklu życia żądania zostanie zmieniony na **Przychodzący**, stan cyklu życia dołączonego składnika majątku zostanie zmieniony na stan cyklu życia wybranego w polu **stan cyklu życia przychodzącego** na skróconej karcie **Stan cyklu życia składnika majątku** na stronie **Modele stanu cyklu życia składnika majątku**. 

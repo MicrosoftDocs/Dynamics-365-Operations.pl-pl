@@ -1,6 +1,6 @@
 ---
 title: Filtrowanie zamówień międzyfirmowych w celu uniknięcia synchronizacji rekordów Orders i OrderLines
-description: W tym temacie wyjaśniono sposób filtrowania zamówień międzyfirmowych w celu uniknięcia synchronizowania jednostek Orders i OrderLines.
+description: W tym artykule wyjaśniono sposób filtrowania zamówień międzyfirmowych w celu uniknięcia synchronizowania jednostek Orders i OrderLines.
 author: negudava
 ms.date: 11/09/2020
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: negudava
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 8575f38ca23ef245947a41c35846983604662ef2
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 47d5cc358165d9a870892e0d026948d65343e5f7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782560"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910359"
 ---
 # <a name="filter-intercompany-orders-to-avoid-syncing-orders-and-orderlines"></a>Filtrowanie zamówień międzyfirmowych w celu uniknięcia synchronizacji rekordów Orders i OrderLines
 

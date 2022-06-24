@@ -1,6 +1,6 @@
 ---
 title: Rejestracja w celu uruchomienia produkcji
-description: W tym temacie opisano podstawowe pojęcia i terminy, które należy znać, aby prawidłowo skonfigurować moduł Wykonywanie produkcji i go używać.
+description: W tym artykule opisano podstawowe pojęcia i terminy, które należy znać, aby prawidłowo skonfigurować moduł Wykonywanie produkcji i go używać.
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c843bc87c7b9c0676211c8f3363ec3e05ee97d20b3eedc940b9ffaee2d3211fa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c43a9d847045f2c029f232d6317268d91ee0129a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718907"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907211"
 ---
 # <a name="registration-for-manufacturing-execution"></a>Rejestracja w celu uruchomienia produkcji
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano podstawowe pojęcia i terminy, które należy znać, aby prawidłowo skonfigurować moduł Wykonywanie produkcji i go używać. 
+W tym artykule opisano podstawowe pojęcia i terminy, które należy znać, aby prawidłowo skonfigurować moduł Wykonywanie produkcji i go używać. 
 
 Uruchomienie produkcji jest przeznaczone głównie do użycia przez firmy produkcyjne. Pracownicy mogą rejestrować czas i zużycie towarów dla zadań produkcji przy użyciu strony **Rejestracja zadania**. Wszystkie rejestracje są zatwierdzane i później przekazywane do odpowiednich modułów. Ciągłe zatwierdzanie i przenoszenie rejestracji pozwala menedżerom łatwo śledzić koszty rzeczywiste w zleceniach produkcyjnych.
 

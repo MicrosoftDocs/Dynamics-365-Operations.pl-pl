@@ -12,12 +12,12 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: a61e501d843e220259f9e26aac4309e6902d7a22
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: a9ff9cb71b08d94e45e82c2b8f81550c9f8aba64
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669665"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897756"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-administrators"></a>Katalog szkoleń dla administratorów Dynamics 365 Supply Chain Management
 
@@ -42,7 +42,7 @@ Poniższy katalog jest zorganizowany od podstawowej bazy wiedzy do konkretnych d
 | [Dokonaj migracji danych i rozpocząć eksploatację z aplikacjami Finanse i Działania](/learn/paths/migrate-data-go-live-finance-operations/) | Jako konsultant funkcjonalny musisz zrozumieć informacje na temat przygotowywania danych odbiorców do migracji, pracy z zarządzaniem danymi i wykonywania testów akceptacji, aby aktywować z aplikacjami Finanse i Działania. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 4 godzin |
 | [Praca z analizami i raportowaniem w module Finance and Operations](/learn/modules/work-with-analytics-reporting-in-dynamics-365-finance-ops/) | Liderzy biznesowi mogą podejmować ważne decyzje w firmie, jeśli mają dokładne wgląd w podstawowe dane finansowe i operacyjne. W przypadku braku widoczności danych liderzy biznesowi są wzywani do wykonania zadania niemal niemożliwego do wykonania. Korzystając z funkcji analizy i raportowania aplikacji finansowych i operacyjnych, można upoważnić każdego użytkownika biznesowego, w zależności od ich uprawnień zabezpieczeń, aby uzyskać szczegółowe informacje potrzebne do dokonania ważnych wyborów. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 1.5 godzin |
 | [Zarządzanie projektem implementacji dla aplikacji Finance and Operations](/learn/paths/implement-finance-operations/) | Poznaj najważniejsze elementy i najważniejsze wskazówki dotyczące zarządzania pomyślnym projektem implementacji Finance and Operations. Od pierwszego kroku planowania i projektowania metodologii projektu, korzystania z usług FastTrack Services, strategii rozwoju, zarządzania danymi itp. najlepszym sposobem utrzymania i monitorowania operacji po rozpoczęciu eksploatacji. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 11.5 godzin |
-| [Administrowanie systemem — strona główna](/dynamics365/unified-operations/dev-itpro/sysadmin/system-administration-home-page) | Ten temat wskazuje zawartość dla administratorów systemów Microsoft Dynamics 365 for Finance and Operations. Ta zawartość ułatwi im skonfigurowanie systemu w celu płynnej i efektywnej pracy w organizacji. | Dokumentacja | |
+| [Administrowanie systemem — strona główna](/dynamics365/unified-operations/dev-itpro/sysadmin/system-administration-home-page) | Ten artykuł wskazuje zawartość dla administratorów systemów Microsoft Dynamics 365 for Finance and Operations. Ta zawartość ułatwi im skonfigurowanie systemu w celu płynnej i efektywnej pracy w organizacji. | Dokumentacja | |
 | [Wprowadzenie do rozwiązania Dynamics 365 Finance and Operations: Onboarding (DYN542PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-onboarding-to-dynamics-365-1-10-19) | FastTrack oferuje usługę wdrażania do każdego Dynamics 365 for Finance and Operations projektu. W tym TechTalk wyjaśnimy proces wdrażania, przechodzenie przez zawartość sesji wdrażania i pokażemy, jak wydajnie i wygodnie można wdrażać pracowników w najbliższej przyszłości. Ta sesja jest szczególnie odpowiednia dla każdego, kto współpracuje z klientami na wczesnym etapie projektu, między zamknięciem umowy licencyjnej i zainicjowaniem projektu implementacji. | Bezpłatna rejestracja konferencji w sieci Web | 62 minut |
 | [Wdrażanie lokalnie (lokalne dane biznesowe) (DYN382PAL2)](https://community.dynamics.com/365/b/techtalks/posts/on-premises-local-business-data-deployment-october-19-2017) | Dołącz do jednej z naszych rozmów na temat technologii dotyczącej opcji wdrożenia lokalnego Dynamics 365 for Finance and Operations (Enterprise Edition). W tej sesji przyjrzymy się architekturze rozwiązań w zakresie wdrożenia lokalnego, aspektom zarządzania cyklem życia aplikacji, wymaganiom systemowym i sposobom inicjowania projektu usługi Life Cycle Services. | Bezpłatna rejestracja konferencji w sieci Web | 48 minut |
 | [Kopiowanie do firmy (DYN383PAL) ](https://community.dynamics.com/365/b/techtalks/posts/copy-into-legal-entity-october-24-2017) | W tej sesji zostanie omówiona nowa funkcja w strukturze zarządzania danymi, która jest kopiowana do firmy. Najpierw zapoznajemy nowe funkcje dodane do struktury zarządzania danymi w platformie 8 dla obszaru roboczego, szablonów i projektów danych, a następnie zapoznaj się z dodatkową funkcjonalnością dodaną do kopii w firmie. | Bezpłatna rejestracja konferencji w sieci Web | 54 minut |

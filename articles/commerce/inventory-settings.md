@@ -1,6 +1,6 @@
 ---
 title: Zastosuj ustawienia zapasów
-description: W tym temacie opisano ustawienia zapasów oraz sposób ich stosowania w Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano ustawienia zapasów oraz sposób ich stosowania w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 10/15/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4ba3e67cf9c72b9a9606528c02f9e57d19a74c1f
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: df1d1283a7692336906550169bc77104a9118779
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647591"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909564"
 ---
 # <a name="apply-inventory-settings"></a>Zastosuj ustawienia zapasów
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano ustawienia zapasów oraz sposób ich stosowania w Microsoft Dynamics 365 Commerce.
+W tym artykule opisano ustawienia zapasów oraz sposób ich stosowania w Microsoft Dynamics 365 Commerce.
 
 Ustawienia zapasów określają, czy zapasy powinny być sprawdzane przed dodaniem produktów do koszyka. Definiują również komunikaty promocyjne dotyczące zapasów, takie jak „w magazynie” i „zostało tylko parę sztuk”. Te ustawienia gwarantują, że produkt nie może zostać zakupiony, jeśli nie jest w stanie zapasów.
 

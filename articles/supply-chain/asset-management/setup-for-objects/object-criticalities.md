@@ -1,6 +1,6 @@
 ---
 title: Typy krytyczności składnika majątku
-description: W tym temacie objaśniono typy krytyczności składników majątku w module Zarządzanie składnikami majątku.
+description: W tym artykule objaśniono typy krytyczności składników majątku w module Zarządzanie składnikami majątku.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9edf55c22375a66fda04ae7ff76d7a0a191140e5ffb3a377b9ac1a7ba604a8d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cfde9a9bc681c0d758491fc5c361b5b046e20d9d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776927"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899506"
 ---
 # <a name="asset-criticality-types"></a>Typy krytyczności składnika majątku
 
@@ -28,7 +28,7 @@ ms.locfileid: "6776927"
 
  
 
-W tym temacie objaśniono typy krytyczności składników majątku w module Zarządzanie składnikami majątku. Krytyczność składników majątku jest związana ze składnikami majątku i jest przenoszona do zleceń pracy. Nie można jej zmienić w zleceniu pracy. Krytyczność składników majątku jest używana do obliczania krytyczności zlecenia pracy podczas planowania zlecenia pracy. Innymi słowy, służy do obliczania stopnia, w jakim zadanie konserwacji składnika majątku wpływa na harmonogram produkcji i produktywność w firmie. Aby uzyskać więcej informacji na temat konfiguracji, która jest powiązana z obliczaniem oceny wyników dla planowania zlecenia pracy, zobacz temat [Parametry modułu Zarządzania składnikami majątku](../setup-for-objects/enterprise-asset-management-parameters.md).
+W tym artykule objaśniono typy krytyczności składników majątku w module Zarządzanie składnikami majątku. Krytyczność składników majątku jest związana ze składnikami majątku i jest przenoszona do zleceń pracy. Nie można jej zmienić w zleceniu pracy. Krytyczność składników majątku jest używana do obliczania krytyczności zlecenia pracy podczas planowania zlecenia pracy. Innymi słowy, służy do obliczania stopnia, w jakim zadanie konserwacji składnika majątku wpływa na harmonogram produkcji i produktywność w firmie. Aby uzyskać więcej informacji na temat konfiguracji, która jest powiązana z obliczaniem oceny wyników dla planowania zlecenia pracy, zobacz temat [Parametry modułu Zarządzania składnikami majątku](../setup-for-objects/enterprise-asset-management-parameters.md).
 
 Aby skonfigurować krytyczność, należy najpierw utworzyć typy krytyczności, które powinny być używane w ustawieniach składnika majątku. Następnie należy skonfigurować krytyczność składnika majątku.
 

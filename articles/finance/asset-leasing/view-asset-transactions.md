@@ -1,6 +1,6 @@
 ---
 title: Wyświetlanie zobowiązania, składnika majątku i transakcji wydatków
-description: W tym temacie opisano sposób wyświetlania transakcji dla wynajętego składnika majątku. Transakcje te obejmują transakcje zobowiązań z tytułu wynajmu i transakcje wydatków wykonawczych, które zostały zaksięgowane.
+description: W tym artykule opisano sposób wyświetlania transakcji dla wynajętego składnika majątku. Transakcje te obejmują transakcje zobowiązań z tytułu wynajmu i transakcje wydatków wykonawczych, które zostały zaksięgowane.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: be11250a85d160aa71ab76af9cfdb0258fd7bf11
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 552b5a6044950c4dd7547a5239c1b3f7d355dbce
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727490"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906421"
 ---
 # <a name="view-liability-asset-and-expense-transactions"></a>Wyświetlanie zobowiązania, składnika majątku i transakcji wydatków
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób wyświetlania transakcji dla wynajętego składnika majątku. Transakcje te obejmują transakcje zobowiązań z tytułu wynajmu i transakcje wydatków wykonawczych, które zostały zaksięgowane. Wartości bilansowe zobowiązania i składnika majątku z prawem do użytkowania (PDU) są wykorzystywane w kilku raportach. Służą one również do obliczania wartości korekt.
+W tym artykule opisano sposób wyświetlania transakcji dla wynajętego składnika majątku. Transakcje te obejmują transakcje zobowiązań z tytułu wynajmu i transakcje wydatków wykonawczych, które zostały zaksięgowane. Wartości bilansowe zobowiązania i składnika majątku z prawem do użytkowania (PDU) są wykorzystywane w kilku raportach. Służą one również do obliczania wartości korekt.
 
 ## <a name="liability-transactions"></a>Transakcje zobowiązań
 

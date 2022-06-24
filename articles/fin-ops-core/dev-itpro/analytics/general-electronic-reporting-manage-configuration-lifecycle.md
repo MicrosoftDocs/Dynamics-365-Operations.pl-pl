@@ -1,6 +1,6 @@
 ---
-title: Zarządzanie cyklem życia konfiguracji modułu Raportowanie elektroniczne (ER)
-description: W tym temacie opisano sposób zarządzania cyklem życia konfiguracji aparatu raportowania elektronicznego (ER) w Dynamics 365 Finance.
+title: Zarządzanie cyklem życia konfiguracji raportowania elektronicznego (ER)
+description: W tym artykule opisano sposób zarządzania cyklem życia konfiguracji aparatu raportowania elektronicznego (ER) w aplikacji Dynamics 365 Finance.
 author: NickSelin
 ms.date: 07/23/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b8b61082cf17707c952b6e07613769a671c349bb8fa92c21e3fe8524ef62dcb2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0220fa03283119471b3d1f78a23a04ed4036264e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767786"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906805"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Zarządzanie cyklem życia konfiguracji raportowania elektronicznego (ER)
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób zarządzania cyklem życia konfiguracji aparatu raportowania elektronicznego (ER) w Dynamics 365 Finance.
+W tym artykule opisano sposób zarządzania cyklem życia konfiguracji aparatu raportowania elektronicznego (ER) w aplikacji Dynamics 365 Finance.
 
 ## <a name="overview"></a>Omówienie
 
@@ -73,7 +73,7 @@ Następujące role i pokrewne działania są powiązane z cyklem życia konfigur
 | Pracownik ds. płatności rozrachunków z dostawcami            | Używanie artefaktów ER w określonym procesie biznesowym.                | Na przykład rola **Pracownik ds. płatności rozrachunków z dostawcami** umożliwiająca generowanie komunikatów płatności elektronicznych do przetwarzania faktur na podstawie formatu ER skonfigurowanego dla określonej metody płatności. |
 
 ## <a name="er-configuration-development-lifecycle"></a>Cykl życia tworzenia konfiguracji ER
-Zalecamy projektować konfiguracje raportowania elektronicznego w środowisku programistycznym jako odrębnym wystąpieniu systemu Finance and Operations z następujących przyczyn:
+Zalecamy projektować konfiguracje raportowania elektronicznego w środowisku programistycznym jako odrębnym wystąpieniu programu Finance and Operations z następujących przyczyn:
 
 - Użytkownicy posiadający rolę **Deweloper raportowania elektronicznego** lub **Konsultant funkcjonalny raportowania elektronicznego** mogą edytować konfiguracje i uruchamiać je do celów testowych. Ten scenariusz może powodować wywoływanie metod klas i tabel mogących uszkadzać dane firmy i spowalniać działanie wystąpienia.
 - Wywołania metod klas i tabel jako źródeł danych ER konfiguracji ER nie są ograniczone przez punkty wejścia ani logowanie do zasobów firmy. Dlatego poufne dane firmy mogą być dostępne dla użytkowników posiadających rolę **Deweloper raportowania elektronicznego** lub **Konsultant funkcjonalny raportowania elektronicznego**.

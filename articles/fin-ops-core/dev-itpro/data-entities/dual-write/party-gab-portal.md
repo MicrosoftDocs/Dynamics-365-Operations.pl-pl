@@ -1,6 +1,6 @@
 ---
 title: Korzystanie z portali usługi Microsoft Power Apps z modelem danych strony
-description: W tym temacie opisano zmiany ról sieci web portali Microsoft Power Apps z powodu modelu danych stron w trybie podwójnego zapisu.
+description: W tym artykule opisano zmiany ról sieci web portali Microsoft Power Apps z powodu modelu danych stron w trybie podwójnego zapisu.
 author: RamaKrishnamoorthy
 ms.date: 03/22/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-22
-ms.openlocfilehash: 8242a74b8b2251a8489b772f5c4746b113fe2987
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: c2e9d0f47ef90167bf84bb5b20e6a7ad2d58ffd2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060927"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898954"
 ---
 # <a name="using-microsoft-power-apps-portals-with-the-party-data-model"></a>Korzystanie z portali usługi Microsoft Power Apps z modelem danych strony
 
@@ -24,7 +24,7 @@ ms.locfileid: "8060927"
 
 Wersja rozwiązania Dual-write Application Orchestration 2.0.999.0 a następnie zawiera zmiany modelu danych w tabelach Party i globalna książka adresowa Danych i Kontakt. Zmiany umożliwiają obsługę relacji typu „wiele do wielu”, które obsługują zaawansowane scenariusze biznesowe. Te zmiany nie są obsługiwane przez role sieci web portalu, w tym portal dla klientów, które są wysyłane poza polem lub istniały w środowisku przed zainstalowaniem podwójnego zapisu. Aby role sieci web działały zgodnie z oczekiwaniami, trzeba utworzyć nowe role sieci web przy użyciu nowego modelu danych. 
 
-Podsumowując, sposób interakcji tabel uległ zmianie, ale uprawnienia tabel w portalu klientów nie zostały zmienione. W tym temacie opisano sposób tworzenia nowych ról sieci web, które działają z nowym zaawansowanym modelem danych.
+Podsumowując, sposób interakcji tabel uległ zmianie, ale uprawnienia tabel w portalu klientów nie zostały zmienione. W tym artykule opisano sposób tworzenia nowych ról sieci web, które działają z nowym zaawansowanym modelem danych.
 
 Ten schemat przedstawia relację tabeli **bez** strony globalna książka adresowa modelu danych:
 

@@ -1,6 +1,6 @@
 ---
 title: Kody kreskowe GS1
-description: W tym temacie opisano sposób konfigurowania kodów kreskowych GS1 i kodów QR, tak aby w magazynie mogły być skanowane etykiety.
+description: W tym artykule opisano sposób konfigurowania kodów kreskowych GS1 i kodów QR, tak aby w magazynie mogły być skanowane etykiety.
 author: Mirzaab
 ms.date: 03/21/2022
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: ea928bc8a020035adb36ae2e7873c656e8c3985d
-ms.sourcegitcommit: 1050e58e621d9a0454895ed07c286936f8c03320
+ms.openlocfilehash: 67c54f344ff7091f4a25198fdafa745c6c84d5d0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8625286"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907153"
 ---
 # <a name="gs1-bar-codes"></a>Kody kreskowe GS1
 
@@ -34,7 +34,7 @@ Jeśli nie podano inaczej, termin *kod kreskowy* w odniesieniu zarówno do linio
 
 ## <a name="the-gs1-bar-code-format"></a>Format kodu słupkowego GS1
 
-Specyfikacje ogólne GS1 określają symbole, które mogą być używane dla kodów kreskowych GS1, oraz sposób zakodowania danych w kodzie kreskowym. Ta sekcja zawiera krótkie wprowadzenie do tego tematu. Aby uzyskać szczegółowe informacje, zobacz ogólne [specyfikacje GS1](https://www.gs1.org/docs/barcodes/GS1_General_Specifications.pdf), które są publikowane przez GS1. Dokument specyfikacji GS1 jest regularnie aktualizowany, a zawarte w nim informacje są na bieżąco aktualizowane za pomocą wersji 22.0 specyfikacji ogólnych GS1.
+Specyfikacje ogólne GS1 określają symbole, które mogą być używane dla kodów kreskowych GS1, oraz sposób zakodowania danych w kodzie kreskowym. Ta sekcja zawiera krótkie wprowadzenie do tego artykułu. Aby uzyskać szczegółowe informacje, zobacz ogólne [specyfikacje GS1](https://www.gs1.org/docs/barcodes/GS1_General_Specifications.pdf), które są publikowane przez GS1. Dokument specyfikacji GS1 jest regularnie aktualizowany, a zawarte w nim informacje są na bieżąco aktualizowane za pomocą wersji 22.0 specyfikacji ogólnych GS1.
 
 Kody kreskowe GS1 używają następujących symboli:
 

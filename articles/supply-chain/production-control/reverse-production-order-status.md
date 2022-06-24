@@ -1,6 +1,6 @@
 ---
 title: Wycofywanie stanu zlecenia produkcyjnego
-description: W tym temacie opisano sposób wycofania stanu zlecenia produkcyjnego.
+description: W tym artykule opisano sposób wycofania stanu zlecenia produkcyjnego.
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0dd17bc48bfb6c78e1baca4faf78d6bc5b3ce426c5f0530174eccd95536a5859
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1d50cbcb4031d5c9f2c814883afd1fb38777d2ba
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760425"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903964"
 ---
 # <a name="reverse-the-production-order-status"></a>Wycofywanie stanu zlecenia produkcyjnego
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób wycofania stanu zlecenia produkcyjnego. 
+W tym artykule opisano sposób wycofania stanu zlecenia produkcyjnego. 
 
 Wycofanie stanu zlecenia produkcyjnego powoduje cofnięcie zamówienia i wszelkich operacji związanych z marszrutami do poprzedniego etapu cyklu produkcyjnego. Na przykład zlecenie produkcyjne ma stan **zaplanowane**, i zmieniasz stan z powrotem na **Utworzone**. W tym przypadku system musi najpierw zmienić stan na **Oszacowane** znajdujący się bezpośrednio przed stanem **Zaplanowane**. Następnie można zmienić stan na żądany stan — **Utworzone**. **Uwaga:** Zlecenie ze stanem **Zgłoszenie wyrobów gotowych** można cofnąć do wcześniejszego stanu. Jednakże należy ponownie uruchomić Szacowanie i Planowanie operacji, planowanie zadań lub oba typów planowania, aby zaktualizować informacje o zleceniu. Ten krok jest konieczny, ponieważ trzeba również zresetować rezerwacje zużycia pozostałych towarów oraz zużycia zasobów operacyjnych. W pozostałej części tego artykułu wyjaśniono, co się dzieje, gdy wycofujesz stan zlecenia produkcyjnego, korzystając z następujących sposobów:
 

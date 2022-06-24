@@ -1,6 +1,6 @@
 ---
 title: Obliczanie TDS dla płatności i skryptów dłużnych
-description: Ten temat zawiera informacje referencyjne dotyczące różnych transakcji płatności, według których jest obliczany podatek potrącony w źródle (TDS).
+description: Ten artykuł zawiera informacje referencyjne dotyczące różnych transakcji płatności, według których jest obliczany podatek potrącony w źródle (TDS).
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 7f38a8c4b0416abb10bfdaf95c3379e964e9a41e
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: f5e9447924a17b96b7a4a5cdd1ef1547145d6ea1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726470"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906326"
 ---
 # <a name="tds-calculation-on-payments-and-promissory-notes"></a>Obliczanie TDS dla płatności i skryptów dłużnych
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje referencyjne dotyczące różnych transakcji płatności, według których jest obliczany podatek potrącony w źródle (TDS).
+Ten artykuł zawiera informacje referencyjne dotyczące różnych transakcji płatności, według których jest obliczany podatek potrącony w źródle (TDS).
 
 | Numer seryjny | Typ transakcji | Kwota transakcji | Nazwa i ścieżka pliku | Typ konta i typ konta przeciwstawnego |
 |---------------|------------------|--------------------|--------------------|--------------------------------------|

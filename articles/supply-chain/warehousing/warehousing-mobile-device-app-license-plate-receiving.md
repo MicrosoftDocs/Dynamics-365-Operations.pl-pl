@@ -1,6 +1,6 @@
 ---
-title: Numer identyfikacyjny odbierany za pomocą aplikacji mobilnej Zarządzanie magazynem
-description: W tym temacie opisano sposób konfigurowania aplikacji mobilnej Warehouse Management w celu obsługi procesu odbierania numerów identyfikacyjnych przy użyciu numeru identyfikacyjnego do otrzymywania zapasu fizycznego.
+title: Numer identyfikacyjny odbierany za pomocą aplikacji mobilnej Warehouse Management
+description: W tym artykule opisano sposób konfigurowania aplikacji mobilnej Warehouse Management w celu obsługi procesu odbierania numerów identyfikacyjnych przy użyciu numeru identyfikacyjnego do otrzymywania zapasu fizycznego.
 author: perlynne
 ms.date: 04/29/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 6663188334c70035906f924c7850a0dc5002f306
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: fe083f16bd47b3f7bdfd366ae4b0fe4a02f49185
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103070"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907008"
 ---
-# <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Numer identyfikacyjny odbierany za pomocą aplikacji mobilnej Zarządzanie magazynem
+# <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Numer identyfikacyjny odbierany za pomocą aplikacji mobilnej Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób konfigurowania aplikacji mobilnej Warehouse Management w celu obsługi procesu odbierania numerów identyfikacyjnych przy użyciu numeru identyfikacyjnego do otrzymywania zapasu fizycznego.
+W tym artykule opisano sposób konfigurowania aplikacji mobilnej Warehouse Management w celu obsługi procesu odbierania numerów identyfikacyjnych przy użyciu numeru identyfikacyjnego do otrzymywania zapasu fizycznego.
 
 Ta funkcja służy do szybkiego rejestrowania przyjęcia przychodzącego zapasu, który jest powiązany z zawiadomieniem o zaliczce na poczet wysyłki (ASN). System automatycznie tworzy ASN, gdy procesy zarządzania magazynem służą do wysłania zamówienia przeniesienia. W procesie zamówienia zakupu można ręcznie zarejestrować ASN lub można go zaimportować automatycznie za pomocą procesu przychodzącej jednostki danych ASN.
 

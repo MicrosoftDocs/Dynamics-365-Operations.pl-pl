@@ -1,6 +1,6 @@
 ---
 title: Kotwiczenie
-description: W tym temacie wyjaśniono, jak włączyć i używać kotwiczenia.
+description: W tym artykule wyjaśniono, jak włączyć i używać kotwiczenia.
 author: GalynaFedorova
 ms.date: 07/29/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-07-29
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 26a7bf60912ff1e8a23305e9331d520fe8d65727
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8a0fa849f07f0cc0a41a663fc97b5aba927700b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676503"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903819"
 ---
 # <a name="anchoring"></a>Kotwiczenie
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera szczegóły dotyczące procesu kotwiczenia. Opisuje on wymaganą konfigurację oraz logikę uruchamiania, gdy pracownik magazynu zmienia lokalizację pośrednią lub lokalizację załadunku.
+Ten artykuł zawiera szczegóły dotyczące procesu kotwiczenia. Opisuje on wymaganą konfigurację oraz logikę uruchamiania, gdy pracownik magazynu zmienia lokalizację pośrednią lub lokalizację załadunku.
 
 Funkcja kotwiczenia umożliwia zastąpienie lokalizacji pośredniej lub załadunku. Wszystkie otwarte zostaną następnie skierowane do nowej lokalizacji pośredniej lub załadunku, która została określona przez użytkownika.
 
@@ -36,11 +36,11 @@ Aby skonfigurować kotwiczenie dla elementów menu urządzenia przenośnego, nal
 > [!IMPORTANT]
 > Lokalizacja kolejnych odłożeń otwartych zostanie zmieniona tylko w wierszach pracy generowanych z tego samego wiersza szablonu pracy. Innymi słowy, system zakotwiczy wiersze odłożenia, które pochodzą z tego samego wiersza szablonu pracy.
 
-Ten temat zawiera scenariusz, który pokazuje, jak działa kotwiczenie. W tym scenariuszu utworzysz zestaw zamówień sprzedaży i zwolnisz je do magazynu. Następnie zastąpisz sugerowaną lokalizację pośrednią i sprawdzisz, czy cała pozostała praca odłożenia jest kierowana do nowej lokalizacji.
+Ten artykuł zawiera scenariusz, który pokazuje, jak działa kotwiczenie. W tym scenariuszu utworzysz zestaw zamówień sprzedaży i zwolnisz je do magazynu. Następnie zastąpisz sugerowaną lokalizację pośrednią i sprawdzisz, czy cała pozostała praca odłożenia jest kierowana do nowej lokalizacji.
 
 ## <a name="scenario-prerequisite-make-demo-data-available"></a>Warunek wstępny scenariusza: udostępnij dane pokazu
 
-Każdy scenariusz w tym temacie zawiera odwołania do wartości i rekordów uwzględnionych w standardowych danych pokazu dostępnych dla rozwiązania Microsoft Dynamics 365 Supply Chain Management. Aby użyć wartości określonych w tym miejscu podczas wykonywania ćwiczeń, upewnij się, że praca odbywa się w środowisku, w którym są zainstalowane dane demonstracyjne, i przed rozpoczęciem ustaw firmę na *USMF*.
+Każdy scenariusz w tym artykule zawiera odwołania do wartości i rekordów uwzględnionych w standardowych danych pokazu dostępnych dla rozwiązania Microsoft Dynamics 365 Supply Chain Management. Aby użyć wartości określonych w tym miejscu podczas wykonywania ćwiczeń, upewnij się, że praca odbywa się w środowisku, w którym są zainstalowane dane demonstracyjne, i przed rozpoczęciem ustaw firmę na *USMF*.
 
 ## <a name="scenario-setup"></a>Ustawienia scenariusza
 

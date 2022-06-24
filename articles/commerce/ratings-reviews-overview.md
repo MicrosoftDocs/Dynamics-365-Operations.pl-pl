@@ -1,6 +1,6 @@
 ---
 title: Omówienie ocen i recenzji
-description: W tym temacie opisano oceny i recenzje w rozwiązaniu Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano oceny i recenzje w rozwiązaniu Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 10/01/2019
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: eb68652e0d3ecd8d75f2bc0fe9c243749d7de284
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9fff5100dd1bebdd19fb7306980e98ca84027acd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982259"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898917"
 ---
 # <a name="ratings-and-reviews-overview"></a>Omówienie ocen i recenzji
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano oceny i recenzje w rozwiązaniu Microsoft Dynamics 365 Commerce.
+W tym artykule opisano oceny i recenzje w rozwiązaniu Microsoft Dynamics 365 Commerce.
 
 Oceny i Recenzje to kluczowe znaczenie dla odbiorców w e-Commerce, którzy chcą wiedzieć, jak inni odbiorcy mogą postrzegać produkt. Mogą oni również pomagać klientom podejmować decyzje dotyczące zakupu. W Dynamics 365 Commerce oceny i recenzje umożliwiają detalistom przechwycenie ocen produktów i recenzji od klientów. Detaliści mogą następnie wyświetlać średnie oceny i przeglądać informacje w całej witrynie internetowej w e-Commerce.
 

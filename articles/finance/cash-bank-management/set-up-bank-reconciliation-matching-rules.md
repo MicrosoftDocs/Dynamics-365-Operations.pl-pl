@@ -1,6 +1,6 @@
 ---
-title: Konfigurowanie reguł uzgadniania kont bankowych
-description: W tym temacie objaśniono metody konfigurowania reguł uzgadniania wyciągów bankowych i zestawów tych reguł, aby ułatwić uzgadnianie konta bankowego. Reguły uzgadniania wyciągów bankowych są zbiorem kryteriów, które są używane do filtrowania wierszy wyciągu bankowego i dokumentów bankowych podczas procesu uzgadniania.
+title: Konfigurowanie reguł uzgodnienia konta bankowego
+description: W tym artykule objaśniono metody konfigurowania reguł uzgadniania wyciągów bankowych i zestawów tych reguł, aby ułatwić uzgadnianie konta bankowego. Reguły uzgadniania wyciągów bankowych są zbiorem kryteriów, które są używane do filtrowania wierszy wyciągu bankowego i dokumentów bankowych podczas procesu uzgadniania.
 author: panolte
 ms.date: 08/24/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 218b07908fe88937d3f495ded356fe4a3606110b
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: baea7ea7ec98c905e9ae896a8cf1e4ac54fb4a9d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727350"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899937"
 ---
-# <a name="set-up-bank-reconciliation-matching-rules"></a>Konfigurowanie reguł uzgadniania kont bankowych
+# <a name="set-up-bank-reconciliation-matching-rules"></a>Konfigurowanie reguł uzgodnienia konta bankowego
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie objaśniono metody konfigurowania reguł uzgadniania wyciągów bankowych i zestawów tych reguł, aby ułatwić uzgadnianie konta bankowego. Reguły uzgadniania wyciągów bankowych są zbiorem kryteriów, które są używane do filtrowania wierszy wyciągu bankowego i dokumentów bankowych podczas procesu uzgadniania.
+W tym artykule objaśniono metody konfigurowania reguł uzgadniania wyciągów bankowych i zestawów tych reguł, aby ułatwić uzgadnianie konta bankowego. Reguły uzgadniania wyciągów bankowych są zbiorem kryteriów, które są używane do filtrowania wierszy wyciągu bankowego i dokumentów bankowych podczas procesu uzgadniania.
 
 Można skonfigurować reguły uzgadniania wyciągów bankowych i zestawy tych reguł, aby ułatwić uzgadnianie konta bankowego. Reguły uzgadniania wyciągów to zestaw kryteriów, które są używane do filtrowania podczas procesu uzgadniania wierszy wyciągu bankowego z wierszami transakcji bankowych w Dynamics 365 Finance. Użyj strony **reguł uzgadniania wyciągów** w celu ustawienia reguł uzgadniania. Można skonfigurować więcej niż jedną regułę uzgadniania, a następnie utworzyć zestaw reguł uzgadniania na stronie **Zestaw reguł uzgadniania wyciągów bankowych**. 
 

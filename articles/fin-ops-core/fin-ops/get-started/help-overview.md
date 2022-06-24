@@ -1,6 +1,6 @@
 ---
 title: System pomocy (zawiera film)
-description: Ten temat zawiera omówienie systemu pomocy dla aplikacji Finanse i Operacje.
+description: Ten artykuł zawiera omówienie systemu pomocy dla aplikacji finansowych i operacyjnych.
 author: edupont04
 ms.date: 07/20/2021
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd34addc2ffa5e437691cb1e3e8b33246053ccc7
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 924af44a6f0b1430859f0f6354ef55ff67a1b677
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070508"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898377"
 ---
 # <a name="help-system"></a>System pomocy
 
@@ -70,7 +70,7 @@ Alternatywnie możesz zasubskrybować kanał RSS według aplikacji:
 
 ### <a name="leave-us-feedback"></a>Zostaw nam opinię
 
-Jeśli masz opinię lub pytania dotyczące tematu, pozostaw komentarz na dole strony.
+Jeśli masz opinię lub pytania dotyczące artykułu, pozostaw komentarz na dole strony.
 
 1. Wybierz pozycję **Opinia** w celu przejścia do komentarzy w dolnej części strony. Następnie wybierz pozycję **Opinia o produkcie** lub **Zaloguj się, aby dodać opinię o dokumentacji**.
 
@@ -83,7 +83,7 @@ Jeśli masz opinię lub pytania dotyczące tematu, pozostaw komentarz na dole st
 
 ## <a name="contribute-to-the-documentation"></a>Udział w dokumentacji
 
-Użytkownik może tworzyć i edytować dokumentacje. Aby rozpocząć, wybierz przycisk **Edytuj** (symbol ołówka) w temacie. Poniższe wideo przedstawia sposób, w jaki można uczestniczyć w naszej dokumentacji systemu.
+Użytkownik może tworzyć i edytować dokumentacje. Aby rozpocząć, wybierz przycisk **Edytuj** (symbol ołówka) w artykule. Poniższe wideo przedstawia sposób, w jaki można uczestniczyć w naszej dokumentacji systemu.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36liB]
 
@@ -98,7 +98,7 @@ Aby uzyskać więcej informacji, zapoznaj się z [podręcznikiem dla współauto
 
 Przewodniki po zadaniach oferują interaktywne prezentacje poszczególnych kroków w zadaniach i procesach biznesowych. Przewodnik można otworzyć (i odtworzyć) z okienka **pomocy**. Po wybraniu przewodnika zadania okienko **pomocy** pokaże dokładne instrukcje wykonania zadania. Dostępne są przetłumaczone przewodniki zadań.
 
-Firma Microsoft wydała bibliotekę przewodników zadań dla wersji produktu w wersji aplikacji Dynamics 365 for Finance and Operations z grudnia 2017 r. Sekcja [Uzyskiwanie dostępu do przewodników zadań z okienka pomocy](#accessing-task-guides-from-the-help-pane) w tym temacie zawiera opis sposobu znajdowania odpowiednich przewodników zadań dla produktu.
+Firma Microsoft wydała bibliotekę przewodników zadań dla wersji produktu w wersji aplikacji Dynamics 365 for Finance and Operations z grudnia 2017 r. Sekcja [Uzyskiwanie dostępu do przewodników zadań z okienka pomocy](#accessing-task-guides-from-the-help-pane) w tym artykule zawiera opis sposobu znajdowania odpowiednich przewodników zadań dla produktu.
 
 ![Przewodnik po zadaniu w widoku do czytania.](./media/task-guide-ops.png)
 
@@ -121,7 +121,7 @@ Aby uzyskać dostęp do zawartości pomocy, wybierz przycisk **Pomoc** (**?**), 
 
 ### <a name="accessing-help-topics-from-the-help-pane"></a>Uzyskiwanie dostępu do tematów pomocy z okienka Pomoc
 
-Z okienka **Pomoc** można uzyskać dostęp do tematów mających zastosowanie do klienta. Gdy po raz pierwszy otworzysz okienko **Pomoc**, na karcie **Pomoc** będą wyświetlane tematy mające zastosowanie do strony, na której obecnie się znajdujesz. Jeśli nie zostaną znalezione żadne tematy, możesz wprowadzić słowa kluczowe, aby zawęzić wyszukiwanie. Po wybraniu tematu w okienku **Pomoc** zostanie on otwarty na nowej karcie w przeglądarce.
+Z okienka **Pomoc** można uzyskać dostęp do tematów mających zastosowanie do klienta. Gdy po raz pierwszy otworzysz okienko **Pomoc**, na karcie **Pomoc** będą wyświetlane tematy mające zastosowanie do strony, na której obecnie się znajdujesz. Jeśli nie zostaną znalezione żadne tematy, możesz wprowadzić słowa kluczowe, aby zawęzić wyszukiwanie. Po wybraniu artykułu w okienku **Pomoc** zostanie on otwarty na nowej karcie w przeglądarce.
 
 > [!IMPORTANT]
 > Ta sekcja nie ma zastosowania do Dynamics 365 Human Resources. System pomocy aplikacji Human Resources jest automatycznie łączony z przewodnikami zadań dla tego produktu. Co więcej, nie można tworzyć niestandardowych przewodników zadań dla aplikacji Human Resources.

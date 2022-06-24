@@ -1,6 +1,6 @@
 ---
 title: Raportowanie JPK-V7M
-description: W tym temacie wyjaśniono, jak uruchomić deklarację VAT z rejestrami (znanymi również jako JPK-V7M, VDEK) w Polsce.
+description: W tym artykule wyjaśniono, jak uruchomić deklarację VAT z rejestrami (znanymi również jako JPK-V7M, VDEK) w Polsce.
 author: liza-golub
 ms.date: 03/21/2022
 ms.topic: article
@@ -11,12 +11,12 @@ audience: Application User
 ms.reviewer: kfend
 ms.search.region: Poland
 ms.author: elgolu
-ms.openlocfilehash: d7b8f860599345a8801a5d82f4a35f937c3ba9f1
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: ae3b7d4d6de1ca58b9bab7f0a84bbf93ba443106
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462750"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903011"
 ---
 # <a name="jpk-v7m-reporting"></a>Raportowanie JPK-V7M
 
@@ -35,7 +35,7 @@ Pakiet PL JPK_V7M EM setup.zip zawiera ustawienia przetwarzania JPK-V7M, które 
 
 ## <a name="initial-assumptions-for-the-jpk-v7m-report"></a>Wstępne założenia dotyczące raportu JPK-V7M
 
-Implementacja raportu JPK-V7M oparta jest na tym samym przykładzie w temacie [Przygotowywanie do raportowania JPK-V7M](emea-pol-vdek-setup.md) dla raportu JPK_VAT. Aby uzyskać więcej informacji, zobacz temat [Wygeneruj ewidencję zakupów i sprzedaży VAT JPK](emea-pol-standard-audit-file-saf.md#generate-a-saf-vat-sales-and-purchase-register).
+Implementacja raportu JPK-V7M oparta jest na tym samym przykładzie w artykule [Przygotowywanie do raportowania JPK-V7M](emea-pol-vdek-setup.md) dla raportu JPK_VAT. Aby uzyskać więcej informacji, zobacz temat [Wygeneruj ewidencję zakupów i sprzedaży VAT JPK](emea-pol-standard-audit-file-saf.md#generate-a-saf-vat-sales-and-purchase-register).
 
 W poniższej tabeli pokazano przykład kodów raportowania podatków i ich mapowanie przy użyciu elementów **K_\*** raportu JPK-V7M.
 

@@ -1,6 +1,6 @@
 ---
 title: Tworzenie szablonów wiadomości e-mail na potrzeby zdarzeń transakcyjnych
-description: W tym temacie opisano sposób tworzenia, przekazywania i konfigurowania szablonów wiadomości e-mail na potrzeby zdarzeń transakcyjnych w rozwiązaniu Microsoft Dynamics 365 Commerce.
+description: W tym artykule opisano sposób tworzenia, przekazywania i konfigurowania szablonów wiadomości e-mail na potrzeby zdarzeń transakcyjnych w rozwiązaniu Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 12/10/2021
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 08e247bac577dc0bb8a4635d61f0082793380da9
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 9a4d67d901608e210b4060a655ce39f0ea707a52
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722526"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910557"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Tworzenie szablonów wiadomości e-mail na potrzeby zdarzeń transakcyjnych
 
 [!include [banner](includes/banner.md)]
 
 
-W tym temacie opisano sposób tworzenia, przekazywania i konfigurowania szablonów wiadomości e-mail na potrzeby zdarzeń transakcyjnych w rozwiązaniu Microsoft Dynamics 365 Commerce.
+W tym artykule opisano sposób tworzenia, przekazywania i konfigurowania szablonów wiadomości e-mail na potrzeby zdarzeń transakcyjnych w rozwiązaniu Microsoft Dynamics 365 Commerce.
 
-Aplikacja Dynamics 365 Commerce oferuje gotowe rozwiązanie służące do wysyłania wiadomości e-mail powiadamiających klientów o zdarzeniach transakcyjnych. Na przykład wiadomości e-mail mogą być wysyłane po złożeniu zamówienia albo przygotowania go do odbioru lub wysłania tego zamówienia. W tym temacie opisano kroki tworzenia, przekazywania i konfigurowania szablonów wiadomości e-mail używanych do wysyłania transakcyjnych wiadomości e-mail.
+Aplikacja Dynamics 365 Commerce oferuje gotowe rozwiązanie służące do wysyłania wiadomości e-mail powiadamiających klientów o zdarzeniach transakcyjnych. Na przykład wiadomości e-mail mogą być wysyłane po złożeniu zamówienia albo przygotowania go do odbioru lub wysłania tego zamówienia. W tym artykule opisano kroki tworzenia, przekazywania i konfigurowania szablonów wiadomości e-mail używanych do wysyłania transakcyjnych wiadomości e-mail.
 
 ## <a name="notification-types"></a>Typy powiadomień
 

@@ -1,6 +1,6 @@
 ---
 title: Nowości lub zmiany w aplikacji mobilnej Warehouse Management
-description: W tym temacie wymieniono nowe i zmienione funkcje dla każdej wydanej wersji aplikacji mobilnej Warehouse Management dla firmy Microsoft Dynamics 365 Supply Chain Management.
+description: W tym artykule wymieniono nowe i zmienione funkcje dla każdej wydanej wersji aplikacji mobilnej Warehouse Management dla firmy Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
 ms.date: 04/25/2022
 ms.topic: article
@@ -10,18 +10,33 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: c79b18d24c8b9cb90a570496882fdfe91dc6ba51
-ms.sourcegitcommit: a4dc7d170f1504631127c3e92af0c6b03468d375
+ms.openlocfilehash: 34ac023bc5ee44987f6a36a1636cd343576e5d90
+ms.sourcegitcommit: b666289f5113d0a3fa2220fe337d5aacf07cbd92
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/02/2022
-ms.locfileid: "8661833"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "8945731"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Nowości lub zmiany w aplikacji mobilnej Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wymieniono nowe funkcje, poprawki, ulepszenia i znane problemy dla każdej wydanej wersji aplikacji mobilnej Warehouse Management w Microsoft Dynamics 365 Supply Chain Management.
+W tym artykule wymieniono nowe funkcje, poprawki, ulepszenia i znane problemy dla każdej wydanej wersji aplikacji mobilnej Warehouse Management w Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20240"></a>Wersja 2.0.24.0
+
+Ta wersja wprowadza następujące nowe funkcje, poprawki i ulepszenia:
+
+- Poprawione strony skanera umożliwiające włączenie opcji skanowania na stronach **Szczegółów**.
+- Poprawione poprawianie danych, na przykład ekran dotykowy/tap.
+- Poprawione problemy z wydajnością dla Android.
+- Stała umieszczenia wielu nagłówków, aby umożliwić wyświetlanie większej liczby kart na stronie **Informacje**.
+- Poprawiono przewijanie, dzięki czemu jest włączona mniejsza odległość do przewijania stronicowania.
+- Dodano długie naciśnięcie, aby wyświetlić dodatkowy tekst na stronie **Informacje**.
+- Stałe brakujące informacje o identyfikatorze urządzenia dla Android.
+- Większa stabilności.
+- Zoptymalizowano układ logowania.
+- Dodano tę stronę, która pozwala zamknąć strony okna podręcznego na klawiaturze numerycznej, stronie **szczegółów** i stronach wejściowych.
 
 ## <a name="version-20220"></a>Wersja 2.0.22.0
 

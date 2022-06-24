@@ -1,6 +1,6 @@
 ---
-title: Instalowanie i łączenie aplikacji mobilnej Zarządzanie magazynem
-description: W tym temacie opisano sposób instalowania aplikacji mobilnej Zarządzanie magazynem na każdym urządzeniu przenośnym i konfigurowania jej w celu nawiązania połączenia ze środowiskiem aplikacji Microsoft Dynamics 365 Supply Chain Management.
+title: Instalowanie i łączenie aplikacji mobilnej Warehouse Management
+description: W tym artykule opisano sposób instalowania aplikacji mobilnej Zarządzanie magazynem na każdym urządzeniu przenośnym i konfigurowania jej w celu nawiązania połączenia ze środowiskiem aplikacji Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
 ms.date: 02/03/2021
 ms.topic: article
@@ -16,21 +16,21 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 812dd30e0e444bc310fc81edd16958e0c0747885
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 9bd208ba78d28046782d03221b0f23471f56b574
+ms.sourcegitcommit: 3f544f8671821be915b289a614e4e440bd38994f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103420"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "8941774"
 ---
-# <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Instalowanie i łączenie aplikacji mobilnej Zarządzanie magazynem
+# <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Instalowanie i łączenie aplikacji mobilnej Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> W tym temacie opisano, jak skonfigurować nową aplikację mobilną Zarządzanie magazynem. Jeśli chcesz, aby uzyskać informacje dotyczące konfigurowania starej aplikacji magazynowej (obecnie przestarzała), zobacz temat [Instalowanie i łączenie aplikacji magazynu](../../supply-chain/warehousing/install-configure-warehousing-app.md).
+> W tym artykule opisano, jak skonfigurować nową aplikację mobilną Zarządzanie magazynem. Jeśli chcesz, aby uzyskać informacje dotyczące konfigurowania starej aplikacji magazynowej (obecnie przestarzała), zobacz temat [Instalowanie i łączenie aplikacji magazynu](../../supply-chain/warehousing/install-configure-warehousing-app.md).
 
-W tym temacie opisano sposób pobierania i instalowania aplikacji mobilnej Zarządzanie magazynem na każdym urządzeniu przenośnym i konfigurowania jej w celu nawiązania połączenia ze środowiskiem aplikacji Supply Chain Management. Poszczególne urządzenia można konfigurować ręcznie lub można importować ustawienia połączenia za pośrednictwem pliku lub przez skanowanie kodu QR.
+W tym artykule opisano sposób pobierania i instalowania aplikacji mobilnej Zarządzanie magazynem na każdym urządzeniu przenośnym i konfigurowania jej w celu nawiązania połączenia ze środowiskiem aplikacji Supply Chain Management. Poszczególne urządzenia można konfigurować ręcznie lub można importować ustawienia połączenia za pośrednictwem pliku lub przez skanowanie kodu QR.
 
 ## <a name="system-requirements"></a>Wymagania systemowe
 
@@ -39,7 +39,7 @@ Aplikacja mobilna Zarządzanie magazynem jest dostępna w systemach operacyjnych
 - Windows 10 (Uniwersalna platforma systemu Windows \[UWP\]), aktualizacja 1809 z października 2018 r. (kompilacja 10.0.17763) lub nowsza wersja
 - Android 4.4 lub nowsza wersja
 
-## <a name="turn-warehouse-management-mobile-app-features-or-or-off-in-supply-chain-management"></a>Włączanie lub wyłączanie funkcji aplikacji mobilnej Warehouse Management lub Supply Chain Management
+## <a name="turn-warehouse-management-mobile-app-features-on-or-off-in-supply-chain-management"></a>Włączanie lub wyłączanie funkcji aplikacji mobilnej Warehouse Management w Supply Chain Management
 
 Aby korzystać z aplikacji mobilnej Warehouse Management, *w systemie muszą być włączone ustawienia użytkownika,* ikony i tytuły kroku nowej funkcji aplikacji magazynowej. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.25, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Ustawienia użytkownika, ikony i tytuły kroków dla nowej aplikacji magazynowej* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
@@ -87,11 +87,11 @@ Aby umożliwić aplikacji mobilnej Zarządzanie magazynem interakcję z konkretn
 
     ![Kreator rejestrowania aplikacji.](media/app-connect-azure-register-wizard.png "Kreator rejestrowania aplikacji")
 
-1. Zostanie otwarta nowa rejestracja aplikacji. Zanotuj wartość pola **Identyfikator aplikacji (klienta)**, ponieważ będzie ona potrzebna później. W dalszej części tego tematu ten identyfikator będzie określany jako *identyfikator klienta*.
+1. Zostanie otwarta nowa rejestracja aplikacji. Zanotuj wartość pola **Identyfikator aplikacji (klienta)**, ponieważ będzie ona potrzebna później. W dalszej części tego artykułu ten identyfikator będzie określany jako *identyfikator klienta*.
 
     ![Identyfikator aplikacji (klienta).](media/app-connect-azure-app-id.png "Identyfikator aplikacji (klienta)")
 
-1. Na liście **Zarządzaj** wybierz pozycję **Certyfikat i wpisy tajne**. Następnie wybierz jeden z poniższych przycisków, w zależności od tego, w jaki sposób chcesz skonfigurować aplikację do uwierzytelniania. (Aby uzyskać więcej informacji, zapoznaj się z sekcją [Uwierzytelnianie przy użyciu certyfikatu lub wpisu tajnego klienta](#authenticate) w dalszej części tego tematu).
+1. Na liście **Zarządzaj** wybierz pozycję **Certyfikat i wpisy tajne**. Następnie wybierz jeden z poniższych przycisków, w zależności od tego, w jaki sposób chcesz skonfigurować aplikację do uwierzytelniania. (Aby uzyskać więcej informacji, zapoznaj się z sekcją [Uwierzytelnianie przy użyciu certyfikatu lub wpisu tajnego klienta](#authenticate) w dalszej części tego artykułu).
 
     - **Przekaż certyfikat** — umożliwia przekazywanie certyfikatu, który ma być używany jako wpis tajny. Zalecamy stosowanie tego podejścia, ponieważ jest ono bezpieczniejsze i można je również automatyzować w większym stopniu. Jeśli uruchamiasz aplikację mobilną Zarządzanie magazynem na urządzeniach z systemem Windows, zanotuj wartość pola **Odcisk palca** pokazaną po przekazaniu certyfikatu. Ta wartość będzie potrzebna podczas konfigurowania certyfikatu na urządzeniach z systemem Windows.
     - **Nowy wpis tajny klienta** — umożliwia utworzenie klucza przez wprowadzenie opisu i czasu trwania dla klucza w sekcji **Hasła**, a następnie wybranie pozycji **Dodaj**. Utwórz kopię klucza i zapisz go w bezpiecznym miejscu.
@@ -101,7 +101,7 @@ Aby umożliwić aplikacji mobilnej Zarządzanie magazynem interakcję z konkretn
 Aby uzyskać więcej informacji na temat konfigurowania aplikacji usług internetowych w usłudze Azure AD, zapoznaj się z następującymi zasobami:
 
 - Aby uzyskać instrukcje dotyczące konfigurowania aplikacji usług internetowych w usłudze Azure AD przy użyciu programu Windows PowerShell, zapoznaj się z tematem [Instrukcje: używanie Azure PowerShell do tworzenia jednostki usługi przy użyciu certyfikatu](/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
-- Aby uzyskać kompletne informacje dotyczące ręcznego tworzenia aplikacji usługi internetowej w usłudze Azure AD, zapoznaj się z następującymi tematami:
+- Aby uzyskać kompletne informacje dotyczące ręcznego tworzenia aplikacji usługi internetowej w usłudze Azure AD, zapoznaj się z następującymi artykułami:
 
     - [Przewodnik Szybki start: Rejestrowanie aplikacji na platformie tożsamości firmy Microsoft](/azure/active-directory/develop/quickstart-register-app)
     - [Instrukcje: korzystanie z portalu do tworzenia aplikacji usługi Azure AD i nazwy głównej usługi, która może uzyskiwać dostęp do zasobów](/azure/active-directory/develop/howto-create-service-principal-portal)
@@ -129,13 +129,13 @@ Aby aplikacja Supply Chain Management mogła korzystać z aplikacji Azure AD, wy
     ![Aplikacje usługi Azure Active Directory.](media/app-connect-aad-apps.png "Aplikacje usługi Azure Active Directory")
 
 > [!TIP]
-> Jednym ze sposobów użycia tych ustawień jest utworzenie identyfikatora klienta na platformie Azure dla każdego urządzenia fizycznego, a następnie dodanie każdego identyfikatora klienta do strony **aplikacji usługi Azure Active Directory**. W przypadku utraty urządzenia będzie można łatwo usunąć ich dostęp do aplikacji Supply Chain Management przez usunięcie identyfikatora klienta z tej strony. (Ta metoda działa, ponieważ poświadczenia połączenia zapisane na każdym urządzeniu określają również identyfikator klienta, zgodnie z opisem w dalszej części tego tematu).
+> Jednym ze sposobów użycia tych ustawień jest utworzenie identyfikatora klienta na platformie Azure dla każdego urządzenia fizycznego, a następnie dodanie każdego identyfikatora klienta do strony **aplikacji usługi Azure Active Directory**. W przypadku utraty urządzenia będzie można łatwo usunąć ich dostęp do aplikacji Supply Chain Management przez usunięcie identyfikatora klienta z tej strony. (Ta metoda działa, ponieważ poświadczenia połączenia zapisane na każdym urządzeniu określają również identyfikator klienta, zgodnie z opisem w dalszej części tego artykułu).
 >
 > Ponadto domyślny język, format liczby i ustawienia stref czasowych dla każdego identyfikatora klienta są określone przez preferencje ustawione dla zmapowanej w tym miejscu wartości **identyfikatora użytkownika**. Z tego względu można użyć tych preferencji, aby ustalić domyślne ustawienia dla każdego urządzenia lub kolekcji urządzeń, na podstawie identyfikatora klienta. Jednak te ustawienia domyślne zostaną zastąpione, jeśli są także zdefiniowane dla *konta użytkownika aplikacji magazynu*, którego pracownik używa do zalogowania się na urządzeniu. (Aby uzyskać więcej informacji zobacz temat [Konta użytkownika urządzenia przenośnego](mobile-device-work-users.md)).
 
 ## <a name="authenticate-by-using-a-certificate-or-client-secret"></a><a name="authenticate"></a>Uwierzytelnianie przy użyciu certyfikatu lub wpisu tajnego klienta
 
-Uwierzytelnianie za pomocą usługi Azure AD zapewnia bezpieczny sposób połączenia urządzenia przenośnego z aplikacją Supply Chain Management. Uwierzytelnianie można przeprowadzić przy użyciu wpisu tajnego klienta lub certyfikatu. Jeśli zaimportujesz ustawienia połączenia, zalecamy użycie certyfikatu zamiast wpisu tajnego klienta. Ponieważ wpis tajny klienta musi być zawsze przechowywany w bezpieczny sposób, nie można go importować z pliku ustawień połączenia ani z kodu QR, jak opisano w dalszej części tego tematu.
+Uwierzytelnianie za pomocą usługi Azure AD zapewnia bezpieczny sposób połączenia urządzenia przenośnego z aplikacją Supply Chain Management. Uwierzytelnianie można przeprowadzić przy użyciu wpisu tajnego klienta lub certyfikatu. Jeśli zaimportujesz ustawienia połączenia, zalecamy użycie certyfikatu zamiast wpisu tajnego klienta. Ponieważ wpis tajny klienta musi być zawsze przechowywany w bezpieczny sposób, nie można go importować z pliku ustawień połączenia ani z kodu QR, jak opisano w dalszej części tego artykułu.
 
 Certyfikaty mogą być używane jako wpisy tajne w celu udowodnienia tożsamości aplikacji w przypadku żądania tokenu. Publiczna część certyfikatu jest przekazywana do rejestracji aplikacji w witrynie Azure Portal, podczas gdy pełny certyfikat musi zostać wdrożony na każdym urządzeniu, na którym zainstalowano aplikację mobilną Zarządzanie magazynem. Organizacja jest odpowiedzialna za zarządzanie certyfikatem w kategorii wymiany itd. Można używać certyfikatów z podpisem własnym, ale zawsze należy używać certyfikatów bez możliwości eksportowania.
 
@@ -266,7 +266,7 @@ Jeśli nie masz pliku lub kodu QR, aplikację w urządzeniu można ręcznie skon
 
 1. Podaj poniższe informacje:
 
-    - **Użyj klucza tajnego klienta** — tę opcję należy ustawić na _Tak_, aby do uwierzytelniania za pomocą programu Supply Chain Management był używany klucz tajny klienta. Wartość _Nie_ będzie używana do uwierzytelniania za pomocą certyfikatu. (Aby uzyskać więcej informacji, zobacz sekcję [Tworzenie aplikacji usługi internetowej w usłudze Azure Active Directory](#create-service) wcześniej w tym temacie).
+    - **Użyj klucza tajnego klienta** — tę opcję należy ustawić na _Tak_, aby do uwierzytelniania za pomocą programu Supply Chain Management był używany klucz tajny klienta. Wartość _Nie_ będzie używana do uwierzytelniania za pomocą certyfikatu. (Aby uzyskać więcej informacji, zobacz sekcję [Tworzenie aplikacji usługi internetowej w usłudze Azure Active Directory](#create-service) wcześniej w tym artykule).
     - **Nazwa połączenia** — wprowadź nazwę nowego połączenia. Ta nazwa będzie wyświetlana w polu **Wybierz połączenie** przy następnym otwarciu ustawień połączenia. Wprowadzana nazwa musi być unikatowa. (Mówiąc inaczej, musi się ona różnić od wszystkich innych nazw połączeń przechowywanych na urządzeniu, jeśli są na nim przechowywane inne nazwy połączeń).
     - **Identyfikator klienta usługi Active Directory** — podaj identyfikator klienta zanotowany podczas konfigurowania ustawień usługi Azure AD w sekcji [Tworzenie aplikacji usługi internetowej w usłudze Azure Active Directory](#create-service).
     - **Klucz tajny klienta usługi Active Directory** — to pole jest dostępne tylko wtedy, gdy opcja **Użyj klucza tajnego klienta** została ustawiona na wartość _Tak_. Wprowadź klucz tajny klienta zanotowany podczas konfigurowania ustawień usługi Azure AD w sekcji [Tworzenie aplikacji usługi internetowej w usłudze Azure Active Directory](#create-service).

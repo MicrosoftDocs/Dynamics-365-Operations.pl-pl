@@ -1,6 +1,6 @@
 ---
 title: Planowanie czyszczenia danych historii sprzedaży
-description: W tym temacie opisano, w jaki sposób można poprawić wydajność systemu, planując okresowe wykonywanie zadania czyszczenia historii aktualizacji sprzedaży w regularnych odstępach czasu.
+description: W tym artykule opisano, w jaki sposób można poprawić wydajność systemu, planując okresowe wykonywanie zadania czyszczenia historii aktualizacji sprzedaży w regularnych odstępach czasu.
 author: myvakalo
 ms.date: 03/21/2022
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: myvakalo
 ms.search.validFrom: 2021-09-29
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 6c6c1e08d45f2a7d1e1267010b286111bad01a6c
-ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
+ms.openlocfilehash: 1b2c9436fbb5020065f8f6ec30eedeca342d8aa9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8570402"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900833"
 ---
 # <a name="schedule-sales-history-data-cleanup"></a>Planowanie czyszczenia danych historii sprzedaży
 
@@ -28,7 +28,7 @@ W przypadku korzystania z zadania okresowego *Czyszczenie historii aktualizacji 
 
 ## <a name="turn-on-the-sales-history-cleanup-features"></a>Włącz funkcje oczyszczania historii sprzedaży
 
-Aby skonfigurować i używać zadania okresowego *Czyszczenie historii aktualizacji sprzedaży* wraz ze wszystkimi funkcjami opisanymi w tym temacie, należy włączyć funkcje *Poprawa wydajności czyszczenia historii sprzedaży* oraz *Czyszczenie historii aktualizacji sprzedaży na podstawie wieku* w Zarządzaniu funkcjami, jak opisano w poniższych podrozdziałach.
+Aby skonfigurować i używać zadania okresowego *Czyszczenie historii aktualizacji sprzedaży* wraz ze wszystkimi funkcjami opisanymi w tym artykule, należy włączyć funkcje *Poprawa wydajności czyszczenia historii sprzedaży* oraz *Czyszczenie historii aktualizacji sprzedaży na podstawie wieku* w Zarządzaniu funkcjami, jak opisano w poniższych podrozdziałach.
 
 ### <a name="sales-history-cleanup-performance-improvements"></a>Ulepszenia wydajności oczyszczania historii sprzedaży
 

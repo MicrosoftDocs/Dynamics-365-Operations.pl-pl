@@ -1,6 +1,6 @@
 ---
 title: Automatyzacja procesu windykacji
-description: W tym temacie opisano proces konfigurowania strategii procesu windykacji, która umożliwia automatyczne identyfikowanie faktur odbiorców wymagających przypomnienia w formie wiadomości e-mail, operacji windykacyjnej lub ponagleń wysyłanych do odbiorcy.
+description: W tym artykule opisano proces konfigurowania strategii procesu windykacji, która umożliwia automatyczne identyfikowanie faktur odbiorców wymagających przypomnienia w formie wiadomości e-mail, operacji windykacyjnej lub ponagleń wysyłanych do odbiorcy.
 author: JodiChristiansen
 ms.date: 03/12/2021
 ms.topic: article
@@ -8,23 +8,23 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-26
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 59db852024faf457db7ac145b67619b31555aaf2
-ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
+ms.openlocfilehash: 9ec749db197b4d04ee2e99ac7a16f4f2120c6707
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "7486876"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946186"
 ---
 # <a name="collections-process-automation"></a>Automatyzacja procesu windykacji
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano proces konfigurowania strategii procesu windykacji, która umożliwia automatyczne identyfikowanie faktur odbiorców wymagających przypomnienia w formie wiadomości e-mail, operacji windykacyjnej (np. rozmowy telefonicznej) lub ponagleń wysyłanych do odbiorcy. 
+W tym artykule opisano proces konfigurowania strategii procesu windykacji, która umożliwia automatyczne identyfikowanie faktur odbiorców wymagających przypomnienia w formie wiadomości e-mail, operacji windykacyjnej (np. rozmowy telefonicznej) lub ponagleń wysyłanych do odbiorcy. 
 
 Organizacje często poświęcają znaczne ilości czasu na przeszukiwanie starych faktur, kont odbiorców oraz faktur bieżących, aby określić, z kim należy się kontaktować w sprawie nieopłaconej faktury lub salda konta. Proces ten zabiera wiele czasu, co zmniejsza możliwości pracownika, jeśli chodzi o komunikowanie się z klientami w celu zapłaty zaległych obciążeń lub rozwiązywanie sporów związanych z fakturowaniem. Automatyzacja procesu windykacji pozwala na skonfigurowanie w procesu gromadzenia danych podejścia opartego na strategii. Ułatwia to stosowanie działań windykacyjnych przez udostępnienie dostosowanych przypomnień pocztą e-mail lub zaprogramowanych procesów służących do wysyłania ponagleń. 
 

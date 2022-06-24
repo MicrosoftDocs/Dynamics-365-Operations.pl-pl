@@ -1,6 +1,6 @@
 ---
 title: Opracowywanie struktury wynagrodzeń
-description: W tym temacie wyjaśniono, jak utworzyć plan stałego wynagrodzenia i zarejestrować pracowników w planie za pomocą reguł uprawnień.
+description: W tym artykule wyjaśniono, jak utworzyć plan stałego wynagrodzenia i zarejestrować pracowników w planie za pomocą reguł uprawnień.
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: business-process
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f069d4e982a9c02070c2010b894b2ec7a9c7f6ab
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 86953e6d54843f17d0d6090a9def8bc256624f21
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693095"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902984"
 ---
 # <a name="develop-a-compensation-structure"></a>Opracowywanie struktury wynagrodzeń
 
@@ -26,7 +26,7 @@ ms.locfileid: "8693095"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-W tym temacie opisano tworzenie planu stałego wynagrodzenia i rejestrowanie pracowników w planie za pomocą reguł uprawnień. W tym temacie wykorzystano dane demonstracyjne USMF i dotyczy menedżerów wynagrodzeń i świadczeń.
+W tym artykule opisano tworzenie planu stałego wynagrodzenia i rejestrowanie pracowników w planie za pomocą reguł uprawnień. W tym artykule używane są dane demonstracyjne USMF i dotyczą menedżerów wynagrodzeń i świadczeń.
 
 ## <a name="create-a-fixed-compensation-plan"></a>Tworzenie systemu stałych wynagrodzeń
 

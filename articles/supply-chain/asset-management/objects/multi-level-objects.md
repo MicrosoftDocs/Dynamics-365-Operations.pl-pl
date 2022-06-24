@@ -1,6 +1,6 @@
 ---
 title: Wielopoziomowe składniki majątku
-description: W tym temacie wyjaśniono, jak tworzyć i usuwać wielopoziomowe składniki majątku.
+description: W tym artykule wyjaśniono, jak tworzyć i usuwać wielopoziomowe składniki majątku.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f43c7c97f8b05a1bf76b2f2c869e6868689f388d06337064f04af839f2403357
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 34ab83c9f9673c39006b3985ebaac9e17a45da82
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769618"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908780"
 ---
 # <a name="multi-level-assets"></a>Wielopoziomowe składniki majątku
 
@@ -28,7 +28,7 @@ ms.locfileid: "6769618"
 
  
 
-W tym temacie wyjaśniono, jak tworzyć i usuwać wielopoziomowe składniki majątku. Składniki majątku i powiązane z nimi składniki podrzędne można tworzyć w hierarchicznej strukturze drzewa. W ten sposób można wyświetlać relacje i zależności między zasobami. Zadania konserwacji mogą być powiązane ze wszystkimi poziomami struktury drzewa. Statystyki mogą być również tworzone dla indywidualnego poziomu lub jako suma wszystkich poziomów podrzędnych składników majątku.
+W tym artykule wyjaśniono, jak tworzyć i usuwać wielopoziomowe składniki majątku. Składniki majątku i powiązane z nimi składniki podrzędne można tworzyć w hierarchicznej strukturze drzewa. W ten sposób można wyświetlać relacje i zależności między zasobami. Zadania konserwacji mogą być powiązane ze wszystkimi poziomami struktury drzewa. Statystyki mogą być również tworzone dla indywidualnego poziomu lub jako suma wszystkich poziomów podrzędnych składników majątku.
 
 Na stronie listy **Wszystkie składniki majątku** (**Zarządzanie składnikami majątku** \> **Wspólne** \> **Składniki majątku** \> **Wszystkie składniki**) kolumna **Składnik majątku** zawiera listę składników majątku w porządku hierarchicznym. Kolumna **Nadrzędny** pokazuje pokrewny składnik nadrzędny. Ponadto jeśli składnik majątku i składnik podrzędny zostały utworzone , sekcja **Drzewo składników majątku** w okienku **Powiązane informacje** pokazuje składniki majątku w strukturze drzewa.
 

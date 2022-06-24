@@ -1,6 +1,6 @@
 ---
 title: Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources w z 21 stycznia 2021 r.
-description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Human Resources w dniu 21 stycznia 2021 roku.
+description: W tym artykule opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Human Resources w dniu 21 stycznia 2021 roku.
 author: marcelbf
 ms.date: 01/21/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-01-21
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: be50596cd64839ba82b847b2fabb0f46dc749a3f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 9f1f660b7993804901f5fc9d3b608c141882bff5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686863"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901097"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-january-21-2021"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources w z 21 stycznia 2021 r.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-W tym temacie opisano nowe, zmienione i wkrótce dostępne funkcje dostępne w rozwiązaniu Dynamics 365 Human Resources.
+W tym artykule opisano nowe, zmienione lub przyszłe funkcje dostępne w aplikacji Dynamics 365 Human Resources.
 
 Aby uzyskać więcej informacji na temat procesu aktualizacji i harmonogramu, należy zapoznać się z tematem [Aktualizacja procesu](hr-admin-setup-update-process.md).
 
@@ -53,9 +53,9 @@ W tym wydaniu są zazwyczaj dostępne następujące funkcje.
 W tej wersji uwzględniono następujące poprawki błędów.
 
 > [!NOTE]
-> Naszym celem jest jak najszybsze uzyskanie tych informacji. Firma Microsoft może zaktualizować ten temat w taki sposób, aby zawierał poprawki powodujące błąd, które wprowadziły je do kompilacji po początkowym opublikowaniu tego tematu.
+> Naszym celem jest jak najszybsze uzyskanie tych informacji. Możemy zaktualizować ten artykuł w taki sposób, aby zawierał poprawki powodujące błąd, które wprowadziły je do kompilacji po początkowym opublikowaniu tego artykułu.
 
-| Numer problemu | Wystawienie |  opis |
+| Numer problemu | Problem |  Opis |
 | --- | --- | --- |
 | 533079 | Błąd nawigacji „Formularz został wywołany niepoprawnie” podczas próby wyszukiwania odliczeń. | Stały błąd podczas wyświetlania potrąceń świadczeń z wyświetlaniem **W dniu**. |
 | 543641 | Kod pocztowy nie jest wypełniany w raportach elektronicznych.  | Naprawiono błąd wewnętrzny w kodzie pocztowym, który nie pojawiał się w raportach elektronicznych ACA do zarządzania świadczeniami, gdy kod zakresu to M do Q. |

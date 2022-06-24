@@ -1,6 +1,6 @@
 ---
 title: Współpraca z dostawcami zewnętrznymi przy użyciu modułu Współpraca z dostawcami
-description: W tym temacie wyjaśniono, jak pracownicy działu zakupów mogą współpracować z zewnętrznymi dostawcami w celu wymiany informacji o zamówieniach zakupu i zapasach konsygnacyjnych.
+description: W tym artykule wyjaśniono, jak pracownicy działu zakupów mogą współpracować z zewnętrznymi dostawcami w celu wymiany informacji o zamówieniach zakupu i zapasach konsygnacyjnych.
 author: GalynaFedorova
 ms.date: 11/02/2017
 ms.topic: article
@@ -15,23 +15,23 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 05a2ecc82306c013912b3ee824d63d7d39c4258f
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4ae943592c18dd0383aafbce59617cc983dc979b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676895"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907298"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Współpraca z dostawcami zewnętrznymi przy użyciu modułu Współpraca z dostawcami
 
 [!include [banner](../includes/banner.md)]
 
-Moduł **Współpraca z dostawcami** jest przeznaczony dla dostawców, którzy nie ma mają systemów elektronicznej wymiany danych (EDI) zintegrowanych z Microsoft Dynamics 365 Supply Chain Management. Umożliwia dostawcom pracę z zamówieniami zakupu (PO), fakturami, zapasami konsygnacyjnymi i zapytaniami ofertowymi (RFQ), a także uzyskanie dostępu do części danych głównych dostawcy. W tym temacie wyjaśniono możliwości współpracy z zewnętrznymi dostawcami, którzy używają interfejsu współpracy z dostawcami do wykonywania operacji na zamówieniach zakupu, zapytaniach ofertowych i zapasach konsygnacyjnych. Wyjaśniono także sposoby konfigurowania określonych dostawców do używania portalu współpracy z dostawcami oraz sposoby definiowania informacji wyświetlanych wszystkim dostawcom podczas odpowiadania na zamówienie zakupu.
+Moduł **Współpraca z dostawcami** jest przeznaczony dla dostawców, którzy nie ma mają systemów elektronicznej wymiany danych (EDI) zintegrowanych z Microsoft Dynamics 365 Supply Chain Management. Umożliwia dostawcom pracę z zamówieniami zakupu (PO), fakturami, zapasami konsygnacyjnymi i zapytaniami ofertowymi (RFQ), a także uzyskanie dostępu do części danych głównych dostawcy. W tym artykule wyjaśniono możliwości współpracy z zewnętrznymi dostawcami, którzy używają interfejsu współpracy z dostawcami do wykonywania operacji na zamówieniach zakupu, zapytaniach ofertowych i zapasach konsygnacyjnych. Wyjaśniono także sposoby konfigurowania określonych dostawców do używania portalu współpracy z dostawcami oraz sposoby definiowania informacji wyświetlanych wszystkim dostawcom podczas odpowiadania na zamówienie zakupu.
 
 Aby uzyskać więcej informacji o tym, co zewnętrzni dostawcy mogą robić w interfejsie współpracy z dostawcami, zobacz [Współpraca dostawców z odbiorcami](vendor-collaboration-work-customers-dynamics-365-operations.md).
 
 > [!NOTE]
-> Informacje na temat współpracy z dostawcą w tym temacie dotyczą tylko aktualnej wersji rozwiązania Supply Chain Management. W systemie Microsoft Dynamics AX 7.0 (luty 2016 r.) i aplikacji Microsoft Dynamics AX w wersji 7.0.1 (maj 2016 r.) do współpracy z dostawcami służy moduł **Portal dostawców**. Informacje o module **Portal dostawców** zawiera temat [Współpraca z dostawcami za pomocą portalu dostawców](collaborate-vendors-vendor-portal.md).
+> Informacje na temat współpracy z dostawcą w tym artykule dotyczą tylko aktualnej wersji rozwiązania Supply Chain Management. W systemie Microsoft Dynamics AX 7.0 (luty 2016 r.) i aplikacji Microsoft Dynamics AX w wersji 7.0.1 (maj 2016 r.) do współpracy z dostawcami służy moduł **Portal dostawców**. Informacje o module **Portal dostawców** zawiera temat [Współpraca z dostawcami za pomocą portalu dostawców](collaborate-vendors-vendor-portal.md).
 
 Aby uzyskać więcej informacji o tym, jak dostawcy mogą wykorzystywać portal współpracy z dostawcami w procesach fakturowania, zobacz [Obszar roboczy fakturowania w portalu współpracy z dostawcami](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md). Aby uzyskać więcej informacji o inicjowaniu obsługi nowych użytkowników portalu współpracy z dostawcami, zobacz [Zarządzanie użytkownikami portalu współpracy z dostawcami](manage-vendor-collaboration-users.md).
 
@@ -112,7 +112,7 @@ Zamówienie zakupu wysłane do dostawcy i mające stan <strong>W trakcie analizy
 <li>Zastąpienie towaru.</li>
 </ul>
 Dostawca nie może zmienić informacji o cenach ani opłat. Dostawca może jednak sugerować te zmiany za pomocą uwag.</td>
-<td>Odpowiedź dostawcy zostanie zarejestrowana jako <strong>Zaakceptowano ze zmianami</strong>, a zamówienie zakupu będzie nadal miało stan <strong>W trakcie analizy zewnętrznej</strong>. Stany pokazują typy zmian zasugerowanych przez dostawcę. Aby uzyskać informacje na temat automatycznego wprowadzania zmian, patrz sekcja &quot;Aktualizowanie zamówienia zakupu o zmiany sugerowane przez dostawcę&quot; w dalszej części tego tematu. </td>
+<td>Odpowiedź dostawcy zostanie zarejestrowana jako <strong>Zaakceptowano ze zmianami</strong>, a zamówienie zakupu będzie nadal miało stan <strong>W trakcie analizy zewnętrznej</strong>. Stany pokazują typy zmian zasugerowanych przez dostawcę. Aby uzyskać informacje na temat automatycznego wprowadzania zmian, patrz sekcja &quot;Aktualizowanie zamówienia zakupu o zmiany sugerowane przez dostawcę&quot; w dalszej części tego artykułu. </td>
 </tr>
 </tbody>
 </table>

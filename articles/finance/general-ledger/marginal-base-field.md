@@ -1,6 +1,6 @@
 ---
 title: Stawki podatku na podstawie pól Podstawa limitu i Metoda obliczania
-description: W tym temacie wyjaśniono, jak wartości w polach Podstawa limitu i Metoda obliczania ustalają stawki podatków w transakcji sprzedaży i zakupu.
+description: W tym artykule wyjaśniono, jak wartości w polach Podstawa limitu i Metoda obliczania ustalają stawki podatków w transakcji sprzedaży i zakupu.
 author: kailiang
 ms.date: 10/26/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 32d334b0c5dcce1e5211fb0580872731d38fb87b
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 00cdc470397cedfd951e4c3a05a32f048775a4b9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724877"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903139"
 ---
 # <a name="sales-tax-rates-based-on-the-marginal-base-and-calculation-methods"></a>Stawki podatku na podstawie pól Podstawa limitu i Metoda obliczania
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak wartości w polach Podstawa limitu i Metoda obliczania ustalają stawki podatków w transakcji sprzedaży i zakupu.
+W tym artykule wyjaśniono, jak wartości w polach Podstawa limitu i Metoda obliczania ustalają stawki podatków w transakcji sprzedaży i zakupu.
 
 Podstawa limitu na karcie skróconej Obliczenia na stronie Podatek określają, która kwota służy do pobierania odpowiedniej stawki podatkowej z kursów na stronie Wartości kodu podatku. Typ kwoty w polu Podstawa limitu w połączeniu z metodą w polu Metoda obliczania określa logikę znajdowania odpowiednich stawek podatku dla transakcji. 
 

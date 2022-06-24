@@ -1,6 +1,6 @@
 ---
 title: CURCREDREF, funkcja ER
-description: Ten temat zawiera ogólne informacje o używaniu funkcji CURCREDREF w module Raportowanie elektroniczne (ER).
+description: Ten artykuł zawiera ogólne informacje o używaniu funkcji CURCREDREF w module Raportowanie elektroniczne (ER).
 author: NickSelin
 ms.date: 12/17/2019
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c90385c3bf64adfe80fa054e1eb78a6aa368c04eb1758a2e453669bb3d4b7214
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 28651a4c238fd56625700ccb6a2a9d73aa23e8d7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727516"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901601"
 ---
 # <a name="curcredref-er-function"></a>CURCREDREF, funkcja ER
 

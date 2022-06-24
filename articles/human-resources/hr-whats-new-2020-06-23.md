@@ -1,6 +1,6 @@
 ---
 title: Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (25 czerwiec 2020)
-description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Human Resources w dniu 23 czerwca 2020 roku.
+description: W tym artykule opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Human Resources w dniu 23 czerwca 2020 roku.
 author: andreabichsel
 ms.date: 06/25/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-06-25
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a1a5be61325a919762d690f2483c37b9eec020d3
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 7fe8b685a2b492fe5ad23b410f6a99d81991e98a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689839"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904109"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-june-23-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (23 czerwiec 2020)
 
@@ -27,7 +27,7 @@ ms.locfileid: "8689839"
 
 
 
-W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Dynamics 365 Human Resources. Zmiany dotyczą kompilacji o numerze 8.1.3347. Liczby w nawiasach w niektórych nagłówkach odnoszą się do numerów pomocy w LCS w charakterze informacyjnym.
+W tym artykule opisano nowe oraz zmienione funkcje dostępne w Dynamics 365 Human Resources. Zmiany dotyczą kompilacji o numerze 8.1.3347. Liczby w nawiasach w niektórych nagłówkach odnoszą się do numerów pomocy w LCS w charakterze informacyjnym.
 
 ## <a name="when-an-enrollment-is-expired-for-a-terminated-employee-the-leave-type-balance-and-amount-are-all-cleared-in-the-leave-enrollment-form-444867"></a>Po wygaśnięciu rejestracji pracownika, który zakończył pracę, typ urlopu, saldo i kwota są usuwane z formularza Rejestracja urlopu (444867)
 

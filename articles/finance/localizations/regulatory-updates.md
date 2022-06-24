@@ -1,6 +1,6 @@
 ---
-title: Aktualizacje wymagane przepisami prawa
-description: Ten temat zawiera listę planowanych i udostępnionych aktualizacji wymaganych przepisami prawa dla Microsoft Dynamics 365 Finance.
+title: Aktualizacje wymogów prawnych
+description: Ten artykuł zawiera listę planowanych i udostępnionych aktualizacji wymaganych przepisami prawa dla Microsoft Dynamics 365 Finance.
 author: VStamberg
 ms.date: 04/18/2022
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: vastrup
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 4e9a74f814e6ae93fd5c12b05c4fbd00ad503fca
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 04cc8b4272bcedc7db27b0d76eccdc6375641933
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711922"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904289"
 ---
 # <a name="regulatory-updates"></a>Aktualizacje wymogów prawnych
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano aktualizacji wymaganych przepisami prawa dla wersji w lokalizacjach obsługiwanych i wypuszczonych przez program Dynamics 365 Finance. Harmonogram dostarczania może się zmienić i planowane funkcje mogą być inne lub mogą nie zostać udostępnione. Aby uzyskać więcej informacji, zobacz [zasady Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2007332). 
+W tym artykule opisano aktualizacje wymagane przepisami prawa, które są planowane i wydawane w obsługiwanych lokalizacjach aplikacji Dynamics 365 Finance. Harmonogram dostarczania może się zmienić i planowane funkcje mogą być inne lub mogą nie zostać udostępnione. Aby uzyskać więcej informacji, zobacz [zasady Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2007332). 
 
 Aktualizacje wymagane przepisami prawa to funkcje implementowane w celu zachowania zgodności z nowymi lub zmienionymi przepisami w danym kraju. Aby dowiedzieć się o innych planowanych lub udostępnionych funkcjach specyficznych dla kraju, należy zapoznać się z [plany wydawcze Dynamics 365 i Power Platform](/business-applications-release-notes/index).
 

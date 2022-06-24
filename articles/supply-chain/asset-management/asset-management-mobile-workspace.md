@@ -1,6 +1,6 @@
 ---
 title: Używanie mobilnego obszaru roboczego zarządzania składnikami majątku
-description: Ten temat zawiera informacje o mobilnym obszarze roboczym zarządzanie składnikami majątku.
+description: Ten artykuł zawiera informacje o mobilnym obszarze roboczym Zarządzanie składnikami majątku.
 author: johanhoffmann
 ms.date: 05/24/2022
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: johanho
 ms.dyn365.ops.version: 10.0.5
 ms.search.validFrom: 2019-08-31
-ms.openlocfilehash: 8b874237721d9252e7102c2611414a2cc74026c3
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: d7e68cbe1132547fea5c72458a93b1a449a67c86
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811512"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902148"
 ---
 # <a name="use-the-asset-management-mobile-workspace"></a>Używanie mobilnego obszaru roboczego zarządzania składnikami majątku
 
 [!include [banner](../../includes/banner.md)]
 [!include [mobile app deprecated](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
-Ten temat zawiera informacje o mobilnym obszarze roboczym **Zarządzanie składnikami majątku**. Ten obszar roboczy umożliwia użytkownikom wyświetlanie i tworzenie żądań konserwacji i zleceń pracy. Użytkownicy mogą również wyświetlać przypisane zadania dotyczące zleceń pracy w widoku kalendarza lub listy. Można również wyświetlać i wyszukiwać zasoby i lokalizacje czynności konserwacyjnych.
+Ten artykuł zawiera informacje o mobilnym obszarze roboczym **Zarządzanie składnikami majątku**. Ten obszar roboczy umożliwia użytkownikom wyświetlanie i tworzenie żądań konserwacji i zleceń pracy. Użytkownicy mogą również wyświetlać przypisane zadania dotyczące zleceń pracy w widoku kalendarza lub listy. Można również wyświetlać i wyszukiwać zasoby i lokalizacje czynności konserwacyjnych.
 
 ## <a name="overview"></a>Przegląd
 

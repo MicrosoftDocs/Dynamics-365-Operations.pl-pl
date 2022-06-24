@@ -1,6 +1,6 @@
 ---
 title: Używanie przepływów pracy do zarządzania informacjami pracowników etatowych
-description: W tym temacie wyjaśniono, jak używać przepływów pracy do zarządzania informacjami o pracownikach.
+description: W tym artykule wyjaśniono, jak używać przepływów pracy do zarządzania informacjami o pracownikach.
 author: twheeloc
 ms.date: 11/03/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7c416a82976bc39464006325f02f1af4d2f32ea4
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 2fcbacc3cb891043560fabf28487bfeb12d1b77b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691534"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908809"
 ---
 # <a name="use-workflows-to-manage-employee-information"></a>Używanie przepływów pracy do zarządzania informacjami pracowników etatowych
 
@@ -27,7 +27,7 @@ ms.locfileid: "8691534"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-W tym temacie wyjaśniono, jak za pomocą funkcji przepływów pracy dostępnych w module Zasoby ludzkie zarządzać informacjami o pracownikach. Można na przykład skojarzyć przepływ pracy ze stanowiskiem oraz skonfigurować przepływ pracy zatwierdzania, który jest uruchamiany, gdy pracownicy zmodyfikuje swój rekord.
+W tym artykule wyjaśniono, jak za pomocą funkcji przepływów pracy dostępnych w module Zasoby ludzkie zarządzać informacjami o pracownikach. Można na przykład skojarzyć przepływ pracy ze stanowiskiem oraz skonfigurować przepływ pracy zatwierdzania, który jest uruchamiany, gdy pracownicy zmodyfikuje swój rekord.
 
 Funkcjonalność przepływów pracy zawarta w module Zasoby ludzkie oferuje wiele przepływów pracy do zarządzania działaniami dotyczącymi zasobów ludzkich. Ponadto są dostępne liczne opcje umożliwiające modyfikowanie konkretnych przepływów pracy i ich kojarzenie z hierarchią raportowania. Dostępne są przepływy pracy pomagające zarządzać zmianami w kilku typach informacji o pracownikach. Przepływ pracy można skojarzyć ze stanowiskiem. Następnie jeśli pracownicy zmodyfikują swoje rekordy pracowników, będzie uruchamiany przepływ pracy, który wymaga zatwierdzenia, zanim nowe informacje zostaną zapisane. Przepływy pracy są wstępnie zdefiniowane dla następujących typów informacji, aby ułatwić efektywne zarządzanie zmianami i zachować rzetelność danych pracowników:
 

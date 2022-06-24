@@ -1,6 +1,6 @@
 ---
 title: Nowości i zmiany w programie Dynamics 365 for Operations w wersji 1611 (listopad 2016)
-description: W tym temacie opisano nowe oraz zmienione funkcje dostępne w programie Dynamics 365 for Operations w wersji 1611.
+description: W tym artykule opisano nowe oraz zmienione funkcje dostępne w aplikacji Dynamics 365 for Operations w wersji 1611.
 author: sericks007
 ms.date: 10/15/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 43a53d5940b2595abb305a08e6f52661bee8ca62
-ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
+ms.openlocfilehash: a6e9454baa33e37fe62db2b7bd39ff00891ff855
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "8548088"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905032"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Nowości i zmiany w programie Dynamics 365 for Operations w wersji 1611 (listopad 2016)
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano nowe oraz zmienione funkcje dostępne w programie Dynamics 365 for Operations w wersji 1611.
+W tym artykule opisano nowe oraz zmienione funkcje dostępne w aplikacji Dynamics 365 for Operations w wersji 1611.
 
 ## <a name="cost-accounting"></a>Rachunek kosztów
 

@@ -1,6 +1,6 @@
 ---
-title: Konfigurowanie indywidualnych sekwencji numerów
-description: Ten temat wyjaśnia, jak konfiguruje się indywidualne sekwencje numerów.
+title: Konfigurowanie indywidualnych sekwencji identyfikatorów
+description: Ten artykuł wyjaśnia, jak konfiguruje się indywidualne sekwencje numerów.
 author: SunilGarg
 ms.date: 08/16/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b95a639c593c0f126a9aa1dd50434838d09ef746
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 7be72d348957c5c6494958276b2baa9c67d63c58
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777920"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904996"
 ---
-# <a name="set-up-number-sequences-on-an-individual-basis"></a>Konfigurowanie indywidualnych sekwencji numerów
+# <a name="set-up-number-sequences-on-an-individual-basis"></a>Konfigurowanie indywidualnych sekwencji identyfikatorów
 
 [!include [banner](../../includes/banner.md)]
 
-Ten temat wyjaśnia, jak konfiguruje się indywidualne sekwencje numerów. Sekwencje numeracji są używane do generowania czytelnych, unikatowych identyfikatorów dla rekordów danych głównych i rekordów transakcji, które ich wymagają. Rekord transakcji lub danych głównych, który wymaga identyfikatora, odnosi się do odwołania. Aby można było tworzyć nowe rekordy dla odwołania, należy ustawić sekwencję numerów i skojarzyć je z odwołaniem. Można skonfigurować wszystkie wymagane sekwencje identyfikatorów w tym samym czasie przy użyciu kreatora **Ustawienie sekwencji identyfikatorów** albo skonfigurować lub zmodyfikować indywidualne sekwencje identyfikatorów za pomocą strony **Sekwencje identyfikatorów**.
+Ten artykuł wyjaśnia, jak konfiguruje się indywidualne sekwencje numerów. Sekwencje numeracji są używane do generowania czytelnych, unikatowych identyfikatorów dla rekordów danych głównych i rekordów transakcji, które ich wymagają. Rekord transakcji lub danych głównych, który wymaga identyfikatora, odnosi się do odwołania. Aby można było tworzyć nowe rekordy dla odwołania, należy ustawić sekwencję numerów i skojarzyć je z odwołaniem. Można skonfigurować wszystkie wymagane sekwencje identyfikatorów w tym samym czasie przy użyciu kreatora **Ustawienie sekwencji identyfikatorów** albo skonfigurować lub zmodyfikować indywidualne sekwencje identyfikatorów za pomocą strony **Sekwencje identyfikatorów**.
 
 1. Otwórz **Okienko nawigacji > Moduły > Administrowanie organizacją > Sekwencje numerów > Sekwencje numerów**.
 2. Wybierz opcję **Sekwencja numerów**.

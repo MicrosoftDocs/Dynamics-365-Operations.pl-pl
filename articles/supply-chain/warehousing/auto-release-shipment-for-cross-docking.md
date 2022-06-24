@@ -1,6 +1,6 @@
 ---
 title: Automatyczne zwalnianie wysyłki do przeładunku kompletacyjnego
-description: W tym temacie opisano strategię przeładunku kompletacyjnego, która umożliwia automatyczne zwalnianie zamówienia zapotrzebowania do magazynu, gdy zlecenie produkcyjne dostarczające ilość z zapotrzebowania jest zgłaszane jako gotowe, dzięki czemu ilość jest przenoszona bezpośrednio z lokalizacji wyjściowej produkcji do lokalizacji załadunkowej.
+description: W tym artykule opisano strategię przeładunku kompletacyjnego, która umożliwia automatyczne zwalnianie zamówienia zapotrzebowania do magazynu, gdy zlecenie produkcyjne dostarczające ilość z zapotrzebowania jest zgłaszane jako gotowe, dzięki czemu ilość jest przenoszona bezpośrednio z lokalizacji wyjściowej produkcji do lokalizacji załadunkowej.
 author: Mirzaab
 ms.date: 10/15/2019
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 1315bda1fd284eb326d4f08bf36bfea59074fde3
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 34283422bafaeabef9ac454957b60db84eb5a9c7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577943"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903790"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>Automatyczne zwalnianie wysyłki do przeładunku kompletacyjnego
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano strategię przeładunku kompletacyjnego, która umożliwia automatyczne zwalnianie zamówienia zapotrzebowania do magazynu, gdy zlecenie produkcyjne dostarczające ilość zapotrzebowania jest zgłaszane jako gotowe. W ten sposób ilość wymagana do realizacji zamówienia zapotrzebowania jest przenoszona bezpośrednio z lokalizacji wyjściowej produkcji do lokalizacji załadunkowej.
+W tym artykule opisano strategię przeładunku kompletacyjnego, która umożliwia automatyczne zwalnianie zamówienia zapotrzebowania do magazynu, gdy zlecenie produkcyjne dostarczające ilość zapotrzebowania jest zgłaszane jako gotowe. W ten sposób ilość wymagana do realizacji zamówienia zapotrzebowania jest przenoszona bezpośrednio z lokalizacji wyjściowej produkcji do lokalizacji załadunkowej.
 
 Przeładunek kompletacyjny to przepływ obsługi magazynu, w którym ilość wymagana do zrealizowania zamówienia wychodzącego jest kierowana do doku załadunkowego zamówienia lub obszaru tymczasowego z lokalizacji, w której zostało odebrane zamówienie przychodzące. (Zamówienie przychodzące może być zamówieniem zakupu, zleceniem przeniesienia lub zleceniem produkcyjnym). Zaawansowana funkcja przeładunku kompletacyjnego obsługuje wszystkie zamówienia podaży i zapotrzebowania oraz wymaga, aby popyt wychodzący został zwolniony przed zidentyfikowaniem możliwości przeładunku kompletacyjnego, a funkcja automatycznego zwalniania wysyłki ma następujące cechy:
 

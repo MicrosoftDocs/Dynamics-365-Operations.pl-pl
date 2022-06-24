@@ -1,6 +1,6 @@
 ---
 title: Noty korygujące
-description: Ten temat zawiera informacje dotyczące not korygujących. Nota korygująca jest dokumentem wymaganym lokalnymi przepisami w Polsce. Służy do poprawiania błędów na fakturze od dostawcy.
+description: Ten artykuł zawiera informacje o notach korygujących. Nota korygująca jest dokumentem wymaganym lokalnymi przepisami w Polsce. Służy do poprawiania błędów na fakturze od dostawcy.
 author: ShylaThompson
 ms.date: 06/20/2017
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Poland
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d79738cfa1730808570ce135abe23de9cf776626247ce591bc023ea12cec98bf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 987c7c49f546572e6ddb230f1c60244d913303b0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721705"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904298"
 ---
 # <a name="correction-notes"></a>Noty korygujące
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje dotyczące not korygujących. Nota korygująca jest dokumentem wymaganym lokalnymi przepisami w Polsce. Służy do poprawiania błędów na fakturze od dostawcy. 
+Ten artykuł zawiera informacje o notach korygujących. Nota korygująca jest dokumentem wymaganym lokalnymi przepisami w Polsce. Służy do poprawiania błędów na fakturze od dostawcy. 
 
 Jeśli dostawca wystawia firmie dokument sprzedaży, ale błędnie wpisze adres firmy lub numer identyfikacyjny podatku od wartości dodanej (VAT), lokalne przepisy w Polsce wymagają, aby firma wystawiła dostawcy notę korygującą. Nota korygująca zawiera zarówno oryginalny tekst, jak i poprawiony tekst. Noty korygujące można tworzyć, księgować i drukować z arkusza not korygujących. Następujące pola są dostępne w arkuszu not korygujących.
 
