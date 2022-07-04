@@ -18,8 +18,6 @@
                   href: get-started/whats-new-commerce-10-0-27.md
                 - name: Rozwiązanie Commerce 10.0.26 (maj 2022)
                   href: get-started/whats-new-commerce-10-0-26.md
-                - name: Rozwiązanie Commerce 10.0.25 (kwiecień 2022)
-                  href: get-started/whats-new-commerce-10-0-25.md
             - name: Usunięte lub wycofane funkcje
               items:
                 - name: Usunięte lub wycofane funkcje — strona główna
@@ -70,20 +68,16 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/commerce/toc.json
                 - name: Tworzenie i automatyzowanie testów akceptacji użytkownika
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/commerce/toc.json
-            - name: Konfigurowanie środowiska oceny rozwiązania Dynamics 365 Commerce
+            - name: Konfigurowanie środowiska piaskownicy usługi Dynamics 365 Commerce
               items:
-                - name: Omówienie środowiska oceny rozwiązania Dynamics 365 Commerce
-                  href: cpe-overview.md
-                - name: Ustanowienie środowiska oceny rozwiązania Dynamics 365 Commerce
+                - name: Ustanowienie środowiska piaskownicy usługi Dynamics 365 Commerce
                   href: provisioning-guide.md
-                - name: Konfigurowanie środowiska oceny rozwiązania Dynamics 365 Commerce
+                - name: Konfigurowanie środowiska piaskownicy usługi Dynamics 365 Commerce
                   href: cpe-post-provisioning.md
-                - name: Konfigurowanie BOPIS w środowisku oceny rozwiązania Dynamics 365 Commerce
+                - name: Konfigurowanie BOPIS w środowisku piaskownicy usługi Dynamics 365 Commerce
                   href: cpe-bopis.md
-                - name: Konfigurowanie opcjonalnych funkcji środowiska oceny rozwiązania Dynamics 365 Commerce
+                - name: Konfigurowanie opcjonalnych funkcji środowiska piaskownicy usługi Dynamics 365 Commerce
                   href: cpe-optional-features.md
-                - name: Często zadawane pytania dotyczące środowiska oceny rozwiązania Dynamics 365 Commerce
-                  href: cpe-faq.md
             - name: Uwagi dotyczące wdrażania
               items:
                 - name: Opcje wdrażania
@@ -440,6 +434,8 @@
                           href: pos-healthcheck.md
                         - name: Obsługa urządzeń peryferyjnych w sieci
                           href: dev-itpro/network-peripherals.md
+                        - name: Zgodność z urządzeniami peryferyjnymi
+                          href: Compatible-peripherals.md
                     - name: Układy ekranu
                       items:
                         - name: Układy ekranu danych demonstracyjnych w aplikacji MPOS/CPOS
@@ -1402,6 +1398,8 @@
               items:
                 - name: Przykład integracji usługi rejestracji fiskalnej (Austria)
                   href: localizations/emea-aut-fi-sample.md
+                - name: Przewodniki wdrażania kas (Austria)
+                  href: localizations/emea-aut-deployment.md
                 - name: Wytyczne dotyczące wdrażania przykładowej integracji fiskalnej dla Austrii (starsze)
                   href: localizations/emea-aut-fi-sample-sdk.md
             - name: Brazylia
@@ -2896,6 +2894,8 @@
                       href: dev-itpro/cloud-dev-box.md
                     - name: Potok kompilacji zestawu SDK do Retail
                       href: dev-itpro/retail-sdk/sdk-build-pipeline.md
+                    - name: Konfigurowanie agenta kompilacji usługi Visual Studio 2017 pod kątem tworzenia elementów MPOS
+                      href: dev-itpro/retail-sdk/mpos-build-agent.md
                     - name: Uruchamianie próbek punktu sprzedaży
                       href: dev-itpro/pos-run-samples.md
                 - name: Odwołanie

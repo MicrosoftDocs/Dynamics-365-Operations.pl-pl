@@ -18,8 +18,6 @@
                   href: get-started/whats-new-changed-10-0-27.md
                 - name: Rozwiązanie Finance 10.0.26 (maj)
                   href: get-started/whats-new-changed-10-0-26.md
-                - name: Rozwiązanie Finance 10.0.25 (kwiecień)
-                  href: get-started/whats-new-changed-10-0-25.md
             - name: Usunięte lub wycofane funkcje
               items:
                 - name: Usunięte lub wycofane funkcje — strona główna
@@ -462,6 +460,8 @@
                   items:
                     - name: Konfigurowanie odroczeń przychodów i wydatków
                       href: accounts-receivable/sb-deferrals.md
+                    - name: Sposób księgowania odroczenia
+                      href: accounts-receivable/Deferral-posting-methods.md
                     - name: Tworzenie harmonogramów odroczeń
                       href: accounts-receivable/sb-deferrals-schedules.md
                     - name: Domyślne transakcje odroczeń
@@ -1214,6 +1214,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
             - name: Składniki raportu finansowego
               href: ../fin-ops-core/dev-itpro/analytics/financial-report-components.md?toc=/dynamics365/finance/toc.json
+            - name: Wyświetlanie i projektowanie raportów finansowych
+              href: ../fin-ops-core/dev-itpro/analytics/design-financial-reports.md
             - name: Możliwości waluty w ramach raportowania finansowego
               href: general-ledger/financial-reporting-currency-capability.md
             - name: Obliczanie zatrzymanych dochodów w raportowaniu finansowym
@@ -1978,6 +1980,8 @@
                   href: localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
                 - name: Ustawianie numerów kont bankowych dla Brazylii
                   href: localizations/latam-bra-bank-account-number-setup-brazil-localization.md
+                - name: Zamówienia przeniesienia
+                  href: localizations/latam-bra-about-transfer-orders.md
                 - name: Podatki
                   items:
                     - name: Omówienie podatków — Brazylia
@@ -2116,6 +2120,8 @@
                   href: localizations/emea-cze-intra-community-VAT.md
                 - name: Zamknięcie roku
                   href: localizations/emea-cze-hun-year-end.md
+                - name: Lista sprzedaży do UE
+                  href: localizations/emea-cze-eu-sales-list.md
             - name: Dania
               items:
                 - name: Dania — omówienie
@@ -2130,8 +2136,8 @@
                   href: localizations/tasks/create-post-project-invoice-public-sector-customer.md
                 - name: Lista sprzedaży do UE
                   href: localizations/emea-dnk-eu-sales-list.md
-                - name: Importowanie konfiguracji fakturowania elektronicznego OIOUBL
-                  href: localizations/tasks/import-oioubl-electronic-invoicing-configurations.md
+                - name: Faktury elektroniczne dla odbiorcy w Danii
+                  href: localizations/emea-dnk-e-invoices.md
                 - name: Księgowanie faktury niezależnej z dokumentem płatności
                   href: localizations/tasks/post-free-text-invoice-payment-slip.md
                 - name: Księgowanie faktury projektu z dokumentem płatności
@@ -2220,6 +2226,8 @@
                       href: localizations/emea-ISO20022-file-formats.md
                     - name: Importowanie konfiguracji polecenia zapłaty ISO20022
                       href: localizations/tasks/import-iso20022-direct-debit-configuration.md
+                    - name: Wymagania wstępne dotyczące formatu przelewu ISO 20022
+                      href: localizations/emea-fra-ISO20022-international.md
                     - name: Importowanie konfiguracji polecenia przelewu ISO20022
                       href: localizations/tasks/import-iso20022-credit-transfer-configuration.md
                     - name: Konfigurowanie kont bankowych firmy dla poleceń przelewu ISO20022
@@ -2462,11 +2470,13 @@
                   href: localizations/emea-hun-intrastat.md
                 - name: Odroczone obliczenia podatku
                   href: localizations/emea-hun-deferred-vat.md
+                - name: Lista sprzedaży do UE
+                  href: localizations/emea-hun-eu-sales-list.md
             - name: Islandia
               items:
                 - name: Islandia — omówienie
                   href: localizations/iceland.md
-                - name: Tworzenie konta odbiorcy i dołączanie kategorii deklaracji na fakturze
+                - name: Tworzenie konta dostawcy i dołączanie kategorii deklaracji na fakturze
                   href: localizations/tasks/create-vendor-account-attach-invoice-declaration-category.md
                 - name: Konfigurowanie deklaracji faktury od dostawcy
                   href: localizations/tasks/set-up-invoice-declaration-vendors.md
@@ -2766,6 +2776,8 @@
                                   href: localizations/apac-ind-TDS-TDS-ledger-accounts-setup.md
                                 - name: Konfigurowanie numerów rejestracji TDS firm
                                   href: localizations/apac-ind-TDS-TDS-registration-numbers-setup-for-legal-entities.md
+                                - name: Ustawianie grup składników potrąconej zaliczki na podatek dla typu podatku TDS
+                                  href: localizations/apac-ind-TDS-Withholding-tax-component-groups-setup-for-TDS-tax-type.md
                                 - name: Ustawianie urzędów skarbowych dla potrąconej zaliczki na podatek dla typu podatku TDS
                                   href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
                                 - name: Ustawianie składników podatkowych dla typu podatku TDS
@@ -2968,6 +2980,8 @@
                   href: localizations/tasks/configure-depreciation-profile-posting.md
                 - name: Konfigurowanie kont głównych do księgowania zobowiązań do wycofania środków trwałych i obsługi stawek rabatu
                   href: localizations/tasks/configure-main-accounts-asset-retirement.md
+                - name: Raport podatkowy zużycia
+                  href: localizations/apac-jpn-consumption-tax-report.md
                 - name: Faktury skonsolidowane
                   href: localizations/apac-jpn-consolidate-invoices.md
                 - name: Tworzenie środka trwałego z dodatkową amortyzacją
@@ -3416,6 +3430,8 @@
                           href: localizations/rus-register-acquisition.md
                         - name: Nabywanie środków trwałych i włączanie ich do działalności operacyjnej
                           href: localizations/rus-fixed-asset-acquisition.md
+                        - name: Pojazdy i nieruchomości jako środki trwałe
+                          href: localizations/rus-vehicles-realty.md
                         - name: Obliczanie amortyzacji
                           href: localizations/rus-depreciation-calculation.md
                         - name: Częściowy demontaż środka trwałego (likwidacja)
@@ -3442,8 +3458,10 @@
                           href: localizations/rus-fa-inquiries-reports.md
                     - name: Nie są cennymi środkami trwałymi i odzieżą roboczą
                       items:
-                        - name: Środki trwałe o niskiej wartości (NVFAs) (Rosja)
+                        - name: Środki trwałe o niskiej wartości (NVFA) (Rosja)
                           href: localizations/rus-not-valuable-assets.md
+                        - name: 'Formularze podstawowe NVFA, odzieży roboczej i narzędzi (Rosja)'
+                          href: localizations/rus-nvfa.md
                         - name: Księgowanie odzieży roboczej/narzędzi (Rosja)
                           href: localizations/rus-working-clothes-instruments-accounting.md
                     - name: Integracja środków trwałych za pomocą modułu zarządzania składnikami majątku
@@ -3520,6 +3538,8 @@
                       href: localizations/rus-land-tax-declaration.md
                     - name: Deklaracja podatku dochodowego
                       href: localizations/rus-profit-tax-declaration.md
+                    - name: 'Raport na temat operacji dotyczących towarów, które można śledzić'
+                      href: localizations/rus-traceable-goods-operation-report.md
                 - name: Administrowanie organizacją
                   items:
                     - name: Informacje dotyczące identyfikacji podatkowej związane z adresem

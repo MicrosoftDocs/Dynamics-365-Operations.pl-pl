@@ -18,8 +18,6 @@
                   href: get-started/whats-new-scm-10-0-27.md
                 - name: Rozwiązanie Supply Chain Management 10.0.26 (maj 2022)
                   href: get-started/whats-new-scm-10-0-26.md
-                - name: Rozwiązanie Supply Chain Management 10.0.25 (kwiecień 2022)
-                  href: get-started/whats-new-scm-10-0-25.md
             - name: Usunięte lub wycofane funkcje
               items:
                 - name: Usunięte lub wycofane funkcje — strona główna
@@ -619,8 +617,6 @@
                   href: asset-management/asset-management-mobile-workspace.md
             - name: Integrowanie zarządzania składnikami majątku z aplikacją Dynamics 365 Guides
               href: asset-management/asset-management-guides-integration.md
-        - name: Zarządzanie danymi
-          items:
             - name: Jednostki docelowe
               href: asset-management/data-management/target-entities.md
         - name: Rachunek kosztów
@@ -775,6 +771,10 @@
                   href: cost-management/physical-financial-updates.md
                 - name: Uwzględnienie wartości fizycznej
                   href: cost-management/include-physical-value.md
+                - name: Odchylenia od ceny ewidencyjnej
+                  href: cost-management/fixed-receipt-price.md
+                - name: Księgowanie do reguły księgowania konta opłat
+                  href: cost-management/post-to-charge-account-accounting-principle.md
                 - name: Obiekty kosztów
                   href: cost-management/cost-object.md
                 - name: Wyświetlanie salda obiektu kosztu
@@ -1651,6 +1651,8 @@
                   href: inventory/tasks/check-availability-stock.md
                 - name: Listy dostępnych zapasów
                   href: inventory/inventory-on-hand-list.md
+                - name: Szczegóły transakcji inwentaryzacyjnej
+                  href: inventory/inventory-transactions-details.md
                 - name: Inicjowanie poziomów zapasów w magazynie
                   href: inventory/tasks/initialize-stock-levels-warehouse.md
                 - name: Przenoszenie zapasów fizycznych w magazynie
@@ -2111,6 +2113,8 @@
               href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/supply-chain/toc.json
         - name: Zaopatrzenie i sourcing
           items:
+            - name: Zaopatrzenie i sourcing — strona główna
+              href: procurement/procurement-sourcing.md
             - name: Omówienie zaopatrzenia i sourcingu
               href: procurement/procurement-sourcing-overview.md
             - name: Przepływ pracy dla zaopatrzenia i sourcingu
@@ -2167,6 +2171,8 @@
                   href: procurement/purchase-order-creation.md
                 - name: Tworzenie zamówienia zakupu
                   href: procurement/tasks/create-purchase-order.md
+                - name: Tworzenie zamówienia zakupu regulowanego budżetem
+                  href: cost-management/tasks/create-purchase-order-governed-by-budget.md
                 - name: Tworzenie zamówienia zakupu z harmonogramem dostaw
                   href: procurement/tasks/create-purchase-order-delivery-schedule.md
                 - name: Tworzenie zamówienia zakupu dla dostawcy jednorazowego
@@ -2383,6 +2389,8 @@
                       href: pim/tasks/create-dimension-based-configurations.md
                 - name: Tworzenie konfiguracji opartej na ograniczeniach
                   items:
+                    - name: Omówienie modeli konfiguracji produktu
+                      href: pim/product-configuration-models.md
                     - name: Konfiguracja modelu konfiguracji produktu
                       href: pim/set-up-maintain-product-configuration-model.md
                     - name: Obliczenia na potrzeby modelu konfiguracji produktu
@@ -2929,10 +2937,12 @@
                   href: sales-marketing/customer-portal-overview.md
                 - name: 'Instalowanie, konfigurowanie i aktualizowanie portalu klientów'
                   href: sales-marketing/customer-portal-setup.md
-                - name: Tworzenie użytkowników portalu klientów i zarządzanie nimi
+                - name: Tworzenie i zarządzanie użytkownikami portalu klientów
                   href: sales-marketing/customer-portal-user-admin.md
-                - name: Dostosowywanie modułu portalu klientów i korzystanie z niego
+                - name: Dostosowywanie i korzystanie z portalu klientów
                   href: sales-marketing/customer-portal-customize.md
+            - name: Limity kredytu dla odbiorców
+              href: sales-marketing/credit-limits-customers.md
             - name: Odpis handlowy
               href: sales-marketing/trade-allowance.md
             - name: Tworzenie nowej umowy handlowej
@@ -2951,6 +2961,8 @@
                       href: service-management/service-agreement-groups.md
                     - name: Tworzenie umów serwisowych
                       href: service-management/create-service-agreements.md
+                    - name: Tworzenie grup umów serwisowych
+                      href: service-management/create-service-agreement-groups.md
                     - name: Interwały serwisu
                       href: service-management/service-intervals.md
                     - name: Konfigurowanie interwałów serwisu
@@ -2972,7 +2984,7 @@
                     - name: Omówienie przedmiotów serwisu
                       href: service-management/service-objects.md
                     - name: Tworzenie przedmiotów serwisu
-                      href: service-management/create-service-task-relations.md
+                      href: service-management/create-service-objects.md
                     - name: Dołączanie pozycji magazynowych do przedmiotów serwisu
                       href: service-management/attach-inventory-items-service-objects.md
                     - name: Grupy przedmiotów serwisu
@@ -3117,7 +3129,9 @@
                           href: service-management/create-item-requirements-service-orders.md
                         - name: Zapotrzebowanie na towary w zleceniu serwisowym
                           href: service-management/service-order-item-requirements.md
-                        - name: Przegląd procesu subskrypcji
+                        - name: Dodawanie adresu do zlecenia serwisowego
+                          href: service-management/add-address-service-order.md
+                        - name: Przegląd przepływu pracy subskrypcji
                           href: service-management/subscription-workflow-overview.md
                         - name: Łączenie zleceń serwisowych
                           href: service-management/combine-service-orders.md
@@ -3139,6 +3153,8 @@
                           href: service-management/set-up-preferred-technician.md
                         - name: Ustawianie zespołów wysyłek
                           href: service-management/set-up-dispatch-teams.md
+                        - name: Przeglądanie zespołów wysyłek
+                          href: service-management/view-dispatch-teams.md
                         - name: Określanie priorytetów zleceń serwisowych
                           href: service-management/prioritize-service-orders.md
                         - name: Wyświetlanie stanu zleceń serwisowych
@@ -3257,8 +3273,6 @@
                   href: landed-cost/landed-cost-enable.md
                 - name: Parametry kosztu z wyładunkiem
                   href: landed-cost/landed-cost-parameters.md
-                - name: Parametry zaopatrzenia i sourcingu kosztu z wyładunkiem
-                  href: landed-cost/landed-cost-procurement-parameters.md
                 - name: Ustawienia stanu podróży
                   href: landed-cost/voyage-status-setup.md
                 - name: Konfiguracja kontenera wysyłkowego
@@ -3269,12 +3283,16 @@
                   href: landed-cost/multi-leg-journey-setup.md
                 - name: Konfiguracja informacji o wysyłce
                   href: landed-cost/shipping-information-setup.md
+                - name: Konfiguracja kosztów automatycznych
+                  href: landed-cost/auto-cost-setup.md
                 - name: Ustawienia wartości parametrów wyceny
                   href: landed-cost/costing-parameters-setup.md
+                - name: Parametry zaopatrzenia i sourcingu kosztu z wyładunkiem
+                  href: landed-cost/landed-cost-procurement-parameters.md
+                - name: Ustawienia dostawcy dodane dla kosztu z wyładunkiem
+                  href: landed-cost/vendors-landed-cost-settings.md
                 - name: Domyślne opisy dla księgi głównej
                   href: landed-cost/defult-descriptions.md
-            - name: Ustawienia dostawcy dodane dla kosztu z wyładunkiem
-              href: landed-cost/vendors-landed-cost-settings.md
             - name: 'Praca z podróżą, kontenerami i folio'
               items:
                 - name: Zarządzanie podróżą
@@ -3643,396 +3661,6 @@
               href: transportation/create-new-transportation-management-engine.md?toc=/dynamics365/supply-chain/toc.json
             - name: Rozszerzanie jednostek danych dostępnych zapasów
               href: inventory/extend-on-hand-entities.md
-        - name: Rozwiązywanie problemów
-          items:
-            - name: Zarządzanie kosztami
-              items:
-                - name: Rozbieżności w raportach wiekowania zapasów
-                  href: troubleshooting/costing/aging-report-discrepancies.md
-                - name: Ostrzeżenia lub błędy dotyczące zmiany stanu okresu księgi bez zamykania magazynu
-                  href: troubleshooting/costing/change-ledger-period-without-closing.md
-                - name: Przerwy funkcjonalne między raportami wartości zapasów/wiekowania i ich wersji magazynowej
-                  href: troubleshooting/costing/function-gaps-storage-reports.md
-                - name: 'Konflikt aktualizacji występuje, gdy metodą inwentaryzacji zapasów jest koszt standardowy lub średnia ruchoma'
-                  href: troubleshooting/costing/update-conflict-standard-moving.md
-                - name: Brak ustawień pól podczas kopiowania grup modeli towaru do innej firmy
-                  href: troubleshooting/costing/copying-item-model-groups.md
-                - name: Raport „Koszty pośrednie w procesie” zawiera usunięte zlecenia produkcyjne
-                  href: troubleshooting/costing/indirect-costs-in-pr.md
-                - name: Naliczanie zakupów zaksięgowane z kwotą zerową dla dokumentu przyjęcia produktów o zerowej wartości
-                  href: troubleshooting/costing/posting-to-purchase.md
-                - name: Fizycznie przyjęte zamówienia zakupu nie są widoczne w raporcie zamknięcia magazynu
-                  href: troubleshooting/costing/purchase-orders-rece.md
-                - name: Brak wartości Data początkowa na karcie Aktywne ceny na stronie Cena towaru
-                  href: troubleshooting/costing/there-is-no-from-dat.md
-            - name: Zarządzanie zapasami
-              items:
-                - name: Nie można znaleźć okna dialogowego „Przepływ pracy” dla arkuszy magazynowych
-                  href: troubleshooting/inventory/cant-find-workflow-dropdown.md
-                - name: Nigdy nie ukończono przepływu pracy arkusza magazynowego i nie można go przetworzyć
-                  href: troubleshooting/inventory/cant-post-inventory-journal.md
-                - name: 'Arkusz magazynowy jest zablokowany, a zadanie partii przepływu pracy nie działa'
-                  href: troubleshooting/inventory/inventory-journal-locked-workflow.md
-                - name: Jednostka i ilość jednostek nie działają poprawnie w arkuszu magazynowym
-                  href: troubleshooting/inventory/journal-unit-quantity-incorrect.md
-                - name: 'Warunki przepływu pracy arkusza magazynowego mają zastosowanie na poziomie arkusza, a nie na poziomie wiersza'
-                  href: troubleshooting/inventory/journal-workflow-conditions.md
-                - name: Okienko filtru na stronie listy dostępnych zadań nie działa zgodnie z oczekiwaniami
-                  href: troubleshooting/inventory/on-hand-filter-unexpected.md
-                - name: Maksymalna liczba miejsc dziesiętnych dla jednostki magazynowej wynosi 0
-                  href: troubleshooting/inventory/sku-max-decimals-zero.md
-                - name: Wiele transakcji magazynowych dla numerów partii bez opcji „Przy fizycznej aktualizacji”
-                  href: troubleshooting/inventory/multiple-inventory-t.md
-                - name: Wycofywanie zgłoszenia jako gotowe powoduje wystąpienie nieoczekiwanej otwartej transakcji
-                  href: troubleshooting/inventory/reverse-report-as-fi.md
-                - name: W raporcie listy pobrania nie są wyświetlane nowe notatki dołączone do arkusza
-                  href: troubleshooting/inventory/unable-to-print-the.md
-                - name: Ilość z rozpoczętego zlecenia kwarantanny nie zostaje uaktualniona w momencie podziału zamówienia
-                  href: troubleshooting/inventory/quantity-on-a-start.md
-                - name: Pole „Data ostatniego testowania” nie jest aktualizowane podczas tworzenia wielu zleceń kontroli jakości
-                  href: troubleshooting/inventory/the-field-last-test.md
-                - name: W przypadku podziału ilości efektywnej zostaje zastosowana ilość minimalna zamiast ilości nominalnej
-                  href: troubleshooting/inventory/while-splitting-the.md
-            - name: Planowanie główne
-              items:
-                - name: System nie może znaleźć planowanego zamówienia w przypadku obsługi wielu zamówień
-                  href: troubleshooting/planning/planned-order-not-exist.md
-                - name: Rozłożenie BOM zachowuje się inaczej w przypadku ustalonych i szacowanych zleceń produkcyjnych
-                  href: troubleshooting/planning/bom-explosion-works-differently.md
-                - name: Wartość opóźnienia nie jest aktualizowana podczas ponownego planowania zamówienia planowanego
-                  href: troubleshooting/planning/delay-value-not-updated.md
-                - name: Aktualizacja zamówień planowanych zajmuje dużo czasu
-                  href: troubleshooting/planning/planned-order-long-update.md
-                - name: Planowane zamówienia są generowane dla zapasów wraz ze zleceniami produkcyjnymi
-                  href: troubleshooting/planning/planned-orders-in-stock-items.md
-                - name: Podczas planowania produkcji nie są rozważane marginesy bezpieczeństwa
-                  href: troubleshooting/planning/prod-schedule-safety-margins.md
-                - name: Planowanie główne planuje więcej niż dostępne zdolności produkcyjne
-                  href: troubleshooting/planning/respect-capacity-limitations.md
-                - name: Brak wystarczających zdolności produkcyjnych
-                  href: troubleshooting/planning/not-enough-capacity-error.md
-                - name: Wystąpił błąd podczas uruchamiania wbudowanego aparatu planowania głównego
-                  href: troubleshooting/planning/deprecated-master-planning-error.md
-                - name: Pozycja nie może mieć BOM ani formuły
-                  href: troubleshooting/planning/item-cannot-have-bom-formula.md
-                - name: Parametry dla planu głównego nie istnieją
-                  href: troubleshooting/planning/no-parameters-for-master-plan.md
-                - name: 'Aby można było zaakceptować planowane zlecenie produkcyjne, należy je najpierw zaplanować'
-                  href: troubleshooting/planning/planned-order-must-be-scheduled.md
-                - name: Produkt jest wstrzymany dla transakcji
-                  href: troubleshooting/planning/product-is-on-hold.md
-                - name: Numer wybranej formuły nie jest zatwierdzony dla zamówienia partii.
-                  href: troubleshooting/planning/selected-formula-not-approved.md
-                - name: Kod dostawcy nie jest autoryzowany dla określonego produktu i daty
-                  href: troubleshooting/planning/vendor-code-not-authorized.md
-                - name: Dostawca nie jest określony podczas akceptowania zamówień planowanych
-                  href: troubleshooting/planning/vendor-not-specified.md
-                - name: Ustalone zamówienia stanowiące bezpośrednią pochodną są przetwarzane w ramach przepływu pracy W trakcie przeglądu
-                  href: troubleshooting/planning/firmed-directly-deri.md
-                - name: Nie można filtrować towarów z planowania głównego według ich powiązanych wartości grup zapotrzebowania
-                  href: troubleshooting/planning/master-planning-batc.md
-                - name: Planowanie główne generuje planowane zamówienia na produkty fantomowe
-                  href: troubleshooting/planning/planned-orders-are-g.md
-                - name: 'Planowane zamówienie zakupu utworzone, gdy zakup istnieje w dniach z ujemnym stanem magazynu'
-                  href: troubleshooting/planning/planning-optimisatio.md
-                - name: Nie można zaktualizować prognozowanego kosztu jednostkowego podczas importowania rekordów prognozy popytu
-                  href: troubleshooting/planning/unable-to-upload-the.md
-                - name: Nie można usunąć wymiaru prognozy popytu magazynu z wierszy prognozy
-                  href: troubleshooting/planning/warehouse-removal-fr.md
-                - name: 'Wyświetlany jest monit o zapisanie ustawień zapotrzebowania na towar, nawet jeśli nie zostały wprowadzone żadne zmiany'
-                  href: troubleshooting/planning/when-importing-to-th.md
-            - name: Zaopatrzenie
-              items:
-                - name: Rozbieżności danych wiersza zamówienia zakupu
-                  href: troubleshooting/procurement/purchase-order-line-data-issues.md
-                - name: Co najmniej jedne zasady podziału księgowań są nadmiernie lub niedostatecznie rozdzielone
-                  href: troubleshooting/procurement/accounting-over-under-distributed.md
-                - name: Akcję zamówienia zakupu można ukończyć tylko dla w pełni rozdzielonych numerów wiersza
-                  href: troubleshooting/procurement/action-requires-full-distribution.md
-                - name: Nie można zmienić daty obowiązywania dla zatwierdzonego dostawcy
-                  href: troubleshooting/procurement/approved-vendor-effective-date.md
-                - name: Anulowane zamówienia zakupu są wyświetlane na liście w wersji roboczej w obszarze roboczym
-                  href: troubleshooting/procurement/canceled-po-in-draft-list.md
-                - name: Transakcje można księgować na zawieszonym koncie księgowym
-                  href: troubleshooting/procurement/canceled-receipts-posted.md
-                - name: Anulowanie reszty dostawy powoduje przeniesienie zamówienia zakupu do stanu Potwierdzone
-                  href: troubleshooting/procurement/change-management-canceled-remainder.md
-                - name: Nie można skonsolidować wielu dokumentów przyjęcia produktów w jednym zamówieniu zakupu
-                  href: troubleshooting/procurement/consolidate-multiple-receipts.md
-                - name: Domyślna grupa podatków i rabat gotówkowy nie są wypełniane na podstawie konta faktury
-                  href: troubleshooting/procurement/default-tax-group-and-discount.md
-                - name: Nazwa dostawy nie jest synchronizowana po zmianie adresu dostawy zamówienia zakupu
-                  href: troubleshooting/procurement/delivery-name-isnt-synced.md
-                - name: Podczas księgowania faktury od dostawcy wystąpił wyjątek
-                  href: troubleshooting/procurement/invocation-target-exception.md
-                - name: Zaimportowane zamówienia zakupu wskazują niepoprawne numery wiersza
-                  href: troubleshooting/procurement/line-number-increments.md
-                - name: Maksymalny limit umowy zakupu nie obowiązuje dla zapotrzebowania na zakup
-                  href: troubleshooting/procurement/max-limit-on-requisition.md
-                - name: Błąd „Nie ustawiono odwołania do obiektu” występuje podczas potwierdzania zamówienia zakupu
-                  href: troubleshooting/procurement/object-reference-not-set.md
-                - name: Zasady podziału księgowań są nadmiernie lub niedostatecznie rozdzielone
-                  href: troubleshooting/procurement/over-under-distribution.md
-                - name: Nie można dodać pola Jednostka cenowa do strony Umowa zakupu
-                  href: troubleshooting/procurement/personalize-purchase-agreement-price.md
-                - name: Zamówienia zakupu nie odzwierciedlają ustawień języka osoby prawnej
-                  href: troubleshooting/procurement/po-language.md
-                - name: Przyjęcie zamówienia zakupu nie obejmuje wszystkich opłat
-                  href: troubleshooting/procurement/po-receipt-missing-charges.md
-                - name: Ceny jednostkowe w zamówieniach zakupu nie są obliczane na podstawie konwersji jednostek
-                  href: troubleshooting/procurement/po-unit-prices-not-calculated.md
-                - name: Ustawienie Księgowanie obciążenia konta w księdze nie jest włączone
-                  href: troubleshooting/procurement/post-setting-turned-off.md
-                - name: Błąd podczas ponownego przesyłania zamówienia zakupu do przepływu pracy po wykonaniu zmiany
-                  href: troubleshooting/procurement/resubmit-po-after-change.md
-                - name: Problemy z konwersją waluty umowy handlowej
-                  href: troubleshooting/procurement/trade-agreement-currencies.md
-                - name: Warunki umowy handlowej nie są stosowane w importowanych wierszach zamówienia
-                  href: troubleshooting/procurement/trade-agreement-not-applied.md
-                - name: Umowy handlowe można tworzyć na podstawie odrzuconych zapytań ofertowych
-                  href: troubleshooting/procurement/trade-agreements-from-rejected-rfq.md
-                - name: Rabat dostawcy nie jest kumulowany na podstawie faktur
-                  href: troubleshooting/procurement/vendor-rebate-not-cumulated.md
-                - name: 'Numer załącznika dokumentu przyjęcia produktów jest zużywany nawet wtedy, gdy nie generuje załącznika'
-                  href: troubleshooting/procurement/voucher-number-consumed.md
-                - name: Nie można zafakturować zamówienia sprzedaży widocznego dla odbiorcy
-                  href: troubleshooting/procurement/not-able-to-invoice-.md
-                - name: Nie można dodać wiersza do zapotrzebowania na zakup po zgłoszeniu żądania zmiany
-                  href: troubleshooting/procurement/purchase-requisition.md
-            - name: Zarządzanie informacjami o produktach
-              items:
-                - name: Nie można usunąć zwolnionego produktu
-                  href: troubleshooting/products/cant-delete-released-prod.md
-                - name: Liczby całkowite niepoprawnie zaokrąglone podczas obliczania modeli konfiguracji produktu
-                  href: troubleshooting/products/integers-incorrectly-rounded.md
-                - name: 'Tekst pozycji jest zastępowany, gdy produkt jest konfigurowany w wierszu zamówienia sprzedaży'
-                  href: troubleshooting/products/text-overwritten-configured-item.md
-                - name: Nie można zastosować szablonu do utworzenia zwolnionego produktu
-                  href: troubleshooting/products/apply-template-in-re.md
-                - name: 'Nie można zaimportować pozycji, używając jednostki Wydane produkty V2'
-                  href: troubleshooting/products/cannot-import-with-r.md
-                - name: W zamówieniach zakupu nie są wyświetlane przetłumaczone teksty dotyczące produktów
-                  href: troubleshooting/products/when-the-customer-ad.md
-            - name: Kontrola produkcji
-              items:
-                - name: Błąd obliczania wyceny wstecznej podczas zamykania magazynu
-                  href: troubleshooting/production/backflush-costing-calculation-error.md
-                - name: Nie można zakończyć zlecenia produkcyjnego z powodu błędu wartości consumptionCost BOM
-                  href: troubleshooting/production/bom-consumption-cost-error.md
-                - name: Nie można wstawić listy składowej (BOM) i marszruty podczas tworzenia nowego zlecenia produkcyjnego
-                  href: troubleshooting/production/cant-insert-bom-route-number.md
-                - name: Poprzednie zadania w toku są kończone podczas zgłaszania ilości częściowej dla ostatniego zadania
-                  href: troubleshooting/production/in-progress-jobs-ended.md
-                - name: Nie można w pełni zarezerwować RM towaru podczas zwalniania zlecenia produkcyjnego
-                  href: troubleshooting/production/item-rm-not-reserved.md
-                - name: Aktualizacja zgłoszenia jako gotowego nie powiedzie się z błędem brakującej ilości
-                  href: troubleshooting/production/missing-report-finished-quantity.md
-                - name: Błąd podczas księgowania arkusza zgłoszonych wyrobów gotowych
-                  href: troubleshooting/production/posting-report-as-.md
-                - name: Błąd podczas zmiany stanu zlecenia produkcyjnego ze Zgłoszone jako gotowe na Zakończone
-                  href: troubleshooting/production/production-order-status-error.md
-                - name: Zlecenia produkcyjne nie są wyświetlane na stronie Zaznaczanie
-                  href: troubleshooting/production/production-orders-marking-page.md
-                - name: Nazwa zasobu nie została zaktualizowana po zmianie nazwiska pracownika w książce adresowej
-                  href: troubleshooting/production/resource-name-not-updated.md
-                - name: Błąd łącznej ilości towaru przy próbie zakończenia zlecenia produkcyjnego
-                  href: troubleshooting/production/total-good-quantity-order-error.md
-                - name: Nie można śledzić numerów seryjnych wyrobów gotowych w stosunku do towarów zużytych
-                  href: troubleshooting/production/trace-finished-goods-consumed-goods.md
-                - name: 'Nie można zarezerwować lub zwolnić pracy, ponieważ procesy są obecnie używane'
-                  href: troubleshooting/production/warehouse-management-processes-used.md
-                - name: Ustawienia reguły usuwania w wierszach BOM nie są zachowane
-                  href: troubleshooting/production/flushing-principle-n.md
-                - name: Numer partii zostaje wyczyszczony po wybraniu nowego identyfikatora partii
-                  href: troubleshooting/production/when-customer-is-try.md
-                - name: Opcja Wybierz później nie jest uwzględniana podczas resetowania zleceń produkcyjnych za pomocą zadania wsadowego
-                  href: troubleshooting/production/late-selection-is-no.md
-                - name: 'Użytkownicy mogą cofnąć pobranie wierszy materiałów dla produktów, które zostały zgłoszone jako gotowe'
-                  href: troubleshooting/production/raw-material-lines-a.md
-                - name: Błąd podczas księgowania arkusza zgłoszonych wyrobów gotowych
-                  href: troubleshooting/production/posting-report-as-.md
-                - name: Magazyn w arkuszu listy pobrań nie jest aktualizowany w wierszu BOM
-                  href: troubleshooting/production/the-warehouse-in-pic.md
-            - name: Zarządzanie rabatami
-              items:
-                - name: Kumulacja rabatów dla klienta przy użyciu grup rabatowych dla towarów kończy się niepowodzeniem
-                  href: troubleshooting/rebates/cumulating-customer-.md
-            - name: Sprzedaż i marketing
-              items:
-                - name: Zadanie oczyszczania historii aktualizacji sprzedaży nie powiodło się lub istnieją problemy z wydajnością
-                  href: troubleshooting/sales/sales-update-history-cleanup-job-performance-issues.md
-                - name: Element pakietu nie jest obsługiwany w procesie międzyfirmowym
-                  href: troubleshooting/sales/bundle-item-intercompany-process.md
-                - name: Nie można anulować międzyfirmowego zamówienia zakupu połączonego z zamówieniem sprzedaży
-                  href: troubleshooting/sales/cancel-intercompany-purchase-order.md
-                - name: Rezerwacji nie można usunąć podczas anulowania zamówienia
-                  href: troubleshooting/sales/cancel-order-reservations-not-removed.md
-                - name: 'Jeśli istnieją dwie umowy handlowe dotyczące pokrywających się dat, zawsze wybierana jest ta sama umowa'
-                  href: troubleshooting/sales/same-trade-agreement-selected.md
-                - name: Nie można zmienić ilości sprzedaży usługi w wierszu oferty sprzedaży
-                  href: troubleshooting/sales/service-item-sales-quantity.md
-                - name: 'Informacje podatkowe nie są aktualizowane, jeśli lokalizacja w nagłówku zamówienia sprzedaży została zmieniona'
-                  href: troubleshooting/sales/tax-information-not-updated.md
-                - name: Nie można zmniejszyć ilości podczas anulowania zamówienia sprzedaży
-                  href: troubleshooting/sales/quantity-cannot-be-reduced.md
-                - name: 'Administratorzy systemu nie mogą wyczyścić wstrzymań zamówień, ponieważ nie mają niezbędnych uprawnień'
-                  href: troubleshooting/sales/system-administrator.md
-            - name: Zarządzanie transportem
-              items:
-                - name: Można dodać tylko konto główne jako konto kredytowe na potrzeby uzgodnień
-                  href: troubleshooting/transportation/reconciliation-reaso.md
-            - name: Zarządzanie magazynem
-              items:
-                - name: Warehouse mobile app
-                  items:
-                    - name: Nieoczekiwana różnica między danymi żądania a danymi sesji podczas testowania
-                      href: troubleshooting/warehousing/request-session-data-difference.md
-                    - name: Nie znaleziono kotwicy zaufania dla ścieżki certyfikacji podczas konfigurowania połączenia z aplikacją
-                      href: troubleshooting/warehousing/certification-path-app-connection-error.md
-                    - name: Nie znaleziono kotwicy zaufania dla ścieżki certyfikacji podczas aktualizacji i migracji do WMS
-                      href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
-                - name: Nie można zaksięgować dokumentu dostawy dla zatrzymanego wiersza zamówienia sprzedaży
-                  href: troubleshooting/warehousing/unable-to-post-packi.md
-                - name: Występują problemy z przetwarzaniem po zainstalowaniu obciążenia magazynu jednostki skalowania
-                  href: troubleshooting/warehousing/Scale-unit-warehouse-workload-installation-issues.md
-                - name: Monit o automatyczną rezerwację dla numeru partii jest wyświetlany nawet w przypadku dostępnych zapasów
-                  href: troubleshooting/warehousing/auto-reservation-prompt-shown.md
-                - name: Nie można odblokować pracy pobrania z powodu niezakończonej pracy uzupełniania zapasów
-                  href: troubleshooting/warehousing/blocked-unfinished-replenishment-work.md
-                - name: Nie można anulować dokumentu dostawy po zaksięgowaniu go z zamówienia sprzedaży
-                  href: troubleshooting/warehousing/cancel-posted-packing-slip.md
-                - name: 'Nie można przenieść numeru identyfikacyjnego, jeśli numer seryjny ma dozwolony pusty rozchód i pusty przychód'
-                  href: troubleshooting/warehousing/cant-move-license-plate.md
-                - name: Nie można przenieść zapasów do lokalizacji kontrolowanej za pomocą numeru identyfikacyjnego
-                  href: troubleshooting/warehousing/cant-reduce-picked-quantities.md
-                - name: Nie można odnaleźć profilu grupy
-                  href: troubleshooting/warehousing/cluster-profile-not-found-error.md
-                - name: Nie można przetworzyć korekty dokumentu dostawy
-                  href: troubleshooting/warehousing/delivery-note-correction.md
-                - name: Błąd podczas potwierdzania wysyłki po utworzeniu zamówienia przeniesienia dla pozycji seryjnej
-                  href: troubleshooting/warehousing/dimension-location-left-blank.md
-                - name: Nie można przetworzyć dostawy bezpośredniej dla magazynu z obsługą WMS
-                  href: troubleshooting/warehousing/direct-delivery-wms-enabled-warehouse.md
-                - name: Typy zapasów są mieszane podczas używania profilu zarządzania na rampie
-                  href: troubleshooting/warehousing/dock-management-inventory-mixing.md
-                - name: Opcja wielu SKU nie ocenia wielu akcji dyrektyw lokalizacji
-                  href: troubleshooting/warehousing/evaluate-multiple-location-directive-actions.md
-                - name: Praca pobrania nie jest generowana natychmiast po zwolnieniu ładunku wychodzącego
-                  href: troubleshooting/warehousing/generate-work-immediately-load-release.md
-                - name: Nieprawidłowy błąd numeru identyfikacyjnego podczas skanowania numeru identyfikacyjnego w aplikacji mobilnej
-                  href: troubleshooting/warehousing/invalid-license-plate.md
-                - name: Właściciel zapasów jest niedozwolony podczas przetwarzania przeniesień w aplikacji magazynu
-                  href: troubleshooting/warehousing/inventory-owner-not-allowed.md
-                - name: System nie może zaktualizować ilości zapasów z powodu niewystarczającej liczby transakcji
-                  href: troubleshooting/warehousing/inventory-quantity-insufficient-transactions.md
-                - name: Nie można wybrać zmiany stanu zapasów w kolumnie Typ pracy
-                  href: troubleshooting/warehousing/inventory-status-change-work-type.md
-                - name: Błąd nieprawidłowego numeru identyfikacyjnego lub lokalizacji podczas skanowania numeru identyfikacyjnego w aplikacji mobilnej
-                  href: troubleshooting/warehousing/license-plate-location-invalid.md
-                - name: Ilość na numerze identyfikacyjnym jest nieprawidłowy podczas rejestrowania zamówień przychodzących
-                  href: troubleshooting/warehousing/license-plate-quantity-not-valid.md
-                - name: Błąd specyfikacji numeru identyfikacyjnego podczas potwierdzania wysyłki dla zamówienia przeniesienia
-                  href: troubleshooting/warehousing/license-plate-specified-location.md
-                - name: Jeden z wierszy jest już w ładunku
-                  href: troubleshooting/warehousing/line-already-on-load.md
-                - name: Błąd wagi ładunku i aktualizacja anulowane podczas przetwarzania pracy między lokalizacjami
-                  href: troubleshooting/warehousing/load-weight-positive-numbers.md
-                - name: Odbieranie mieszanego numeru identyfikacyjnego nie działa dla kodu dyspozycji z wyjątkiem kredytu
-                  href: troubleshooting/warehousing/mixed-license-plate-receiving.md
-                - name: Roli administratora można użyć tylko w celu uzyskania dostępu do emulatora aplikacji urządzenia przenośnego
-                  href: troubleshooting/warehousing/mobile-app-emulator-administrator.md
-                - name: Problemy związane z przejściem z magazynowania podstawowego do magazynowania zaawansowanego
-                  href: troubleshooting/warehousing/move-basic-to-advanced-warehousing.md
-                - name: Nie znaleziono wystarczającej ilości pracy dla grupy podczas używania pobierania grupy kierowanej przez system
-                  href: troubleshooting/warehousing/not-enough-work-for-cluster.md
-                - name: Stan zamówienia pozostaje Częściowo zwolniony nawet po zafakturowaniu zamówienia sprzedaży
-                  href: troubleshooting/warehousing/order-status-partially-released.md
-                - name: 'Nie można korzystać z aplikacji mobilnej Warehouse Management, aby przeprowadzić pobieranie częściowe'
-                  href: troubleshooting/warehousing/partial-picking-warehouse-app.md
-                - name: Zmiana włączania stanu zapasów dla pracy częściowej ilości
-                  href: troubleshooting/warehousing/partial-quantity-inventory-status.md
-                - name: Drukowanie dokumentu dostawy lub zawartości opakowania według magazynu lub lokalizacji
-                  href: troubleshooting/warehousing/print-documents-by-warehouse.md
-                - name: 'Ilość jest nieprawidłowa, jeśli w jednej lokalizacji jest praca pobierania z wieloma numerami identyfikacyjnymi'
-                  href: troubleshooting/warehousing/quantity-invalid-multiple-license-plates.md
-                - name: Ilość jest nieprawidłowa podczas przeprowadzania pobierania podziału w wielu partiach
-                  href: troubleshooting/warehousing/quantity-invalid-split-pick.md
-                - name: Nie można ponownie zwolnić częściowo wysłanego ładunku do magazynu
-                  href: troubleshooting/warehousing/rerelease-partially-shipped-load.md
-                - name: 'System nie może dokonać rezerwacji, ponieważ w magazynie jest dostępnych 0,00'
-                  href: troubleshooting/warehousing/reservations-0-inventory-available.md
-                - name: Nie można utworzyć wiersza ładunku dla zamówienia sprzedaży zwrotu z powodu nieprawidłowych wymiarów magazynowych
-                  href: troubleshooting/warehousing/return-order-invalid-dimensions.md
-                - name: Nie można zwolnić zamówienia sprzedaży z operacjami magazynu wychodzącego
-                  href: troubleshooting/warehousing/sales-order-not-released.md
-                - name: 'Wysyłka ładunku została potwierdzona, ale nie zaksięgowano żadnych wierszy'
-                  href: troubleshooting/warehousing/shipment-confirmed-no-posting.md
-                - name: W szablonach rozpisywania nie są uwzględniane dostępne zapasy dla pozycji powyżej partii
-                  href: troubleshooting/warehousing/slotting-templates-inventory-batch-above.md
-                - name: Nie można zwolnić ładunku dla ilości częściowej z hierarchią rezerwacji powyżej partii
-                  href: troubleshooting/warehousing/specify-dimensions-above-location.md
-                - name: Niepotwierdzone zamówienia zakupu są potwierdzane po uruchomieniu aktualizacji dokumentów przyjęcia produktów
-                  href: troubleshooting/warehousing/unconfirmed-purchase-orders-confirmed.md
-                - name: Nie można usunąć rezerwacji zapasów w wierszu zamówienia sprzedaży
-                  href: troubleshooting/warehousing/unreserve-inventory-sales-line.md
-                - name: 'Nie można potwierdzić wysyłki, ponieważ klient jest wstrzymany'
-                  href: troubleshooting/warehousing/customer-is-on-hold.md
-                - name: 'Nie można potwierdzić wysyłki, ponieważ wiersze ładunku mają ilość zerową'
-                  href: troubleshooting/warehousing/load-line-quantity-is-zero.md
-                - name: 'Nie można zaktualizować wiersza ładunku, ponieważ zwolniona ilość byłaby ujemna'
-                  href: troubleshooting/warehousing/released-qty-cannot-be-negative.md
-                - name: Anulowane przyjęcia produktów nie aktualizują stanu transakcji na zarejestrowane
-                  href: troubleshooting/warehousing/canceled-product-receipts.md
-                - name: Zaokrąglenie dziesiętne ilości aktualizowanej fizycznie jest niepoprawne
-                  href: troubleshooting/warehousing/decimal-rounding-of-quantity.md
-                - name: Pozostała ilość w jednostkach musi być różna od zera
-                  href: troubleshooting/warehousing/physical-remaining-q.md
-                - name: Ilość pobrania nie jest wystarczająca podczas generowania dokumentu dostawy
-                  href: troubleshooting/warehousing/picked-quantity-is-n.md
-                - name: Ilość przekracza procent nadwyżki w dostawie podczas generowania dokumentu dostawy
-                  href: troubleshooting/warehousing/quantity-exceeds-over-pack-slip.md
-                - name: 'Ilość, która próbujesz zaktualizować, przekracza ilość otrzymaną/dostarczoną'
-                  href: troubleshooting/warehousing/quantity-exceeds-rec-del.md
-                - name: Ilość przekracza procent niedoboru w dostawie podczas generowania dokumentu dostawy
-                  href: troubleshooting/warehousing/quantity-exceeds-under-pack-slip.md
-                - name: Przy wybieraniu lokalizacji podczas rejestracji listy pobrania występuje błąd
-                  href: troubleshooting/warehousing/error-cannot-update.md
-                - name: Stacja pakowania nie wyświetla informacji o produktach
-                  href: troubleshooting/warehousing/packing-station-not-.md
-                - name: 'Profil lokalizacji nie zezwala na ujemny stan magazynowy, ale ujemne ilości dostępnych zapasów są dozwolone'
-                  href: troubleshooting/warehousing/location-profile-set.md
-                - name: Na jednym paragonie jest drukowana tylko jedna etykieta dla wielu nagłówków pracy
-                  href: troubleshooting/warehousing/when-receipting-prod.md
-                - name: Nie można potwierdzić wysyłki z powodu problemu z kalendarzem
-                  href: troubleshooting/warehousing/load-has-active-appo.md
-                - name: Nie można potwierdzić wysyłki z powodu niekompletnej lub brakującej pracy
-                  href: troubleshooting/warehousing/open-or-no-work-exis.md
-                - name: 'Nie można potwierdzić wysyłki, ponieważ nie zostały jeszcze pobrane towary'
-                  href: troubleshooting/warehousing/picked-quantity-is-not-on-final.md
-                - name: 'Nie można potwierdzić wysyłki, ponieważ ilość jest zerowa'
-                  href: troubleshooting/warehousing/picked-quantity-is-zero.md
-                - name: 'Nie można potwierdzić wysyłki, ponieważ ilość przekracza procent nadmiaru dostawy'
-                  href: troubleshooting/warehousing/quantity-exceeds-ove.md
-                - name: 'Nie można potwierdzić wysyłki, ponieważ ilość przekracza procent niedoboru dostawy'
-                  href: troubleshooting/warehousing/quantity-exceeds-und.md
-                - name: Ostatnim zamkniętym wierszem pracy musi być odłożenie
-                  href: troubleshooting/warehousing/the-last-closed-work.md
-                - name: Pola wagi w wierszach ładunku nie pasują do pól wagi ładunku
-                  href: troubleshooting/warehousing/the-weight-fields-on.md
-                - name: Grupa czynności nie kwalifikuje się do oczyszczania
-                  href: troubleshooting/warehousing/wave-is-not-eligible.md
-                - name: Waga musi być dodatnia
-                  href: troubleshooting/warehousing/weight-must-be-posit.md
-                - name: 'Nie można anulować pracy, ponieważ jest zablokowana'
-                  href: troubleshooting/warehousing/work-cannot-be-canceled-blocked.md
-                - name: Nie można anulować pracy z powodu stanu
-                  href: troubleshooting/warehousing/work-cannot-be-canceled-status.md
-                - name: Praca nie jest zablokowana
-                  href: troubleshooting/warehousing/work-is-not-blocked.md
-                - name: Praca pozostaje zablokowana
-                  href: troubleshooting/warehousing/work-remains-blocked.md
-                - name: Nie można anulować pracy dotyczącej użytkownika
-                  href: troubleshooting/warehousing/you-cannot-cancel-wo.md
     - name: Rozwój i administracja aplikacjami finansowymi i operacyjnymi
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Finance

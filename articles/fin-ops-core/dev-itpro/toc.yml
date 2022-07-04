@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-27.md
                 - name: Aktualizacje platformy dla wersji 10.0.26 (maj 2022)
                   href: get-started/whats-new-platform-updates-10-0-26.md
-                - name: Aktualizacje platformy dla wersji 10.0.25 (kwiecień 2022)
-                  href: get-started/whats-new-platform-updates-10-0-25.md
             - name: Usunięte lub wycofane funkcje
               items:
                 - name: Usunięte lub wycofane funkcje — strona główna
@@ -376,11 +374,11 @@
                       href: deployment/on-premises-overview.md
                     - name: Planowanie i przygotowanie na lokalne wdrożenia
                       href: deployment/plan-onprem-deployment.md
-                    - name: Obsługiwane oprogramowanie usługi Microsoft Dynamics 365 Finance + Operations (on-premises)
+                    - name: Obsługiwane oprogramowanie lokalne
                       href: deployment/onprem-compatibility.md
                     - name: Wymagania dotyczące zapotrzebowania na sprzęt
                       href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
-                    - name: Uwierzytelnianie w usłudze Dynamics 365 Finance + Operations (on-premises)
+                    - name: Uwierzytelnianie w środowiskach lokalnych
                       href: deployment/authentication-onprem.md
                 - name: Konfigurowanie i wdrażanie środowisk lokalnych
                   items:
@@ -408,9 +406,9 @@
                       href: deployment/onprem-SSRSHA.md
                     - name: Konfigurowanie serwerów proxy dla środowisk lokalnych
                       href: deployment/onprem-reverseproxy.md
-                    - name: Konfigurowanie aplikacji Magazynowanie dla wdrożeń lokalnych
+                    - name: Konfigurowanie aplikacji Warehousing dla wdrożeń lokalnych
                       href: deployment/warehousing-for-on-premise-deployments.md
-                    - name: Włącz program RSAT w środowiskach Finance + Operations (on-premises)
+                    - name: Włączanie narzędzia RSAT w środowiskach lokalnych
                       href: deployment/onprem-rsat-configuration.md
                     - name: Instalowanie urządzeń drukarek sieciowych w środowiskach lokalnych
                       href: analytics/install-network-printer-onprem.md
@@ -428,9 +426,9 @@
                       href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: Używanie tego samego wystąpienia komponentu AD FS dla wielu środowisk
                       href: deployment/onprem-reuseadfs.md
-                    - name: Uaktualnianie systemu Windows Server w środowiskach usługi Microsoft Dynamics 365 Finance + Operations (on-premises)
+                    - name: Uaktualnianie rozwiązania Windows Server w środowiskach lokalnych
                       href: deployment/onprem-upgrade-os.md
-                    - name: Uaktualnianie wystąpienia programu SQL Server w środowiskach Microsoft Dynamics 365 Finance + Operations (on-premises)
+                    - name: Uaktualnianie lub zastąpienie wystąpienia programu SQL Server dla środowisk lokalnych
                       href: deployment/onprem-upgrade-sqlserver.md
                 - name: Agent lokalny
                   items:
@@ -980,8 +978,10 @@
               items:
                 - name: Omówienie menedżera konfiguracji
                   href: lifecycle-services/configuration-manager-lcs.md
-                - name: Konfiguracja menedżera konfiguracji
+                - name: Konfigurowanie menedżera konfiguracji
                   href: lifecycle-services/set-up-configuration-manager-lcs.md
+                - name: Kopiowanie konfiguracji
+                  href: lifecycle-services/copy-configuration-lcs.md
             - name: Konfigurowanie usługi uaktualniania kodu
               href: lifecycle-services/configure-execute-code-upgrade.md
             - name: Tworzenie i aktualizowanie metodologii
@@ -1050,9 +1050,11 @@
                   href: lifecycle-services/dts-devops-extension.md
                 - name: Samouczek rozszerzenia Azure DevOps (publiczna wersja zapoznawcza)
                   href: lifecycle-services/dts-ado-tutorial.md
-                - name: Rozszerzenie usługi Dynamics 365 Translation Service Visual Studio Code (publiczna wersja zapoznawcza)
+                - name: Rozszerzenie programu Visual Studio (prywatna wersja zapoznawcza)
+                  href: lifecycle-services/dts-visual-studio.md
+                - name: Rozszerzenie programu Visual Studio Code (publiczna wersja zapoznawcza)
                   href: lifecycle-services/dts-vscode-doc.md
-        - name: Integracja usługi Microsoft Power Platform
+        - name: Integracja z usługą Microsoft Power Platform
           items:
             - name: Omówienie
               href: power-platform/overview.md
@@ -1602,6 +1604,8 @@
               href: sysadmin/implement-b2b.md
             - name: Konserwacja danych
               href: sysadmin/DataMaintenancePortal.md
+            - name: Zarządzanie dostępem do drukarek sieciowych w różnych firmach
+              href: sysadmin/sys-admin-tools-network-printer.md
             - name: Zabezpieczenia
               items:
                 - name: Zabezpieczenia oparte na rolach
