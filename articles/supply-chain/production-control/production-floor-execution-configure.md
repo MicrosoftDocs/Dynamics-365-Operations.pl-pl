@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9eefde163473e11b01bfa0adf9b3694c830f1488
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 14a49d1d6c956b37ff9b2bec387615dc75d060e1
+ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8899419"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "9022573"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurowanie interfejsu wykonania hal produkcyjnych
 
@@ -113,9 +113,6 @@ Aby używać tej funkcji, włącz następujące funkcje w module [Zarządzanie f
 
 ### <a name="enable-the-my-day-dialog"></a>Włącz okno dialogowe „Mój dzień”
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
-
 Okno dialogowe **Mój dzień** zapewnia pracownikom przegląd ich codziennych rejestracji i aktualnych sald płatnego czasu pracy, płatnych nadgodzin, nieobecności i płatnej nieobecności.
 
 Aby używać tej funkcji, włącz następujące funkcje w module [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
@@ -124,9 +121,6 @@ Aby używać tej funkcji, włącz następujące funkcje w module [Zarządzanie f
 
 ### <a name="enable-teams"></a>Włączanie zespołów
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
-
 Kiedy kilku pracowników jest przydzielonych do tego samego zadania produkcyjnego, mogą oni tworzyć zespół. Drużyna może wyznaczyć jednego pracownika jako pilota. Pozostali pracownicy automatycznie stają się asystentami tego pilota. W powstałej w ten sposób drużynie tylko pilot musi zarejestrować status pracy. Ewidencja czasu pracy dotyczy wszystkich członków zespołu.
 
 Aby używać tej funkcji, włącz następujące funkcje w module [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
@@ -134,9 +128,6 @@ Aby używać tej funkcji, włącz następujące funkcje w module [Zarządzanie f
 - *Zespoły produkcyjne w interfejsie wykonania hal produkcyjnych*
 
 ### <a name="enable-additional-configuration-in-the-production-floor-execution-interface"></a>Włączenie dodatkowej konfiguracji w interfejsie wykonawczym hali produkcyjnej
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
 
 Ta funkcja dodaje do strony **Konfiguracja wykonania hali produkcyjnej** ustawienia dla następujących funkcji:
 

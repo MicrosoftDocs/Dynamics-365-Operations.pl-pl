@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 57bbb8eb638b990914dc00f9700ff0c1925c48852862b02e09f3f26415d3e347
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 14751fb0e0632ca986d6eddf55c93d44fbd68276
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745509"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015472"
 ---
 # <a name="create-an-item-replacement-order"></a>Tworzenie zamówienia wymiany towaru 
 
@@ -31,7 +31,7 @@ Zamówienia zwrotu towaru tworzy się zazwyczaj po odebraniu i sprawdzeniu zwró
 
 ## <a name="create-a-replacement-order-after-you-receive-an-item-that-is-returned"></a>Utwórz zamówienie wymiany po otrzymaniu towary, który jest zwracany.
 
-1.  Kliknij kolejno opcje **Sprzedaż i marketing** \> **Wspólne** \> **Zamówienia zwrotu** \> **Wszystkie zamówienia zwrotu**.
+1.  Kliknij kolejno opcje **Sprzedaż i marketing** \> **Zwroty sprzedaży** \> **Wszystkie zamówienia zwrotu**.
 
 2.  Utwórz nowe zamówienie zwrotu lub wybierz zwrócony towar z listy, aby otworzyć formularz **Zamówienie zwrotu — numer autoryzacji zwrotu: %1, %2**.
 
@@ -45,7 +45,7 @@ Zamówienia zwrotu towaru tworzy się zazwyczaj po odebraniu i sprawdzeniu zwró
 
 ## <a name="create-a-replacement-order-before-you-receive-an-item-that-will-be-returned"></a>Utwórz zamówienie wymiany, zanim pojawi się towar, który powinien być zwrócony
 
-1.  Kliknij kolejno opcje **Sprzedaż i marketing** \> **Wspólne** \> **Zamówienia zwrotu** \> **Wszystkie zamówienia zwrotu**.
+1.  Kliknij kolejno opcje **Sprzedaż i marketing** \> **Zwroty sprzedaży** \> **Wszystkie zamówienia zwrotu**.
 
 2.  Utwórz nowe zamówienie zwrotu lub wybierz zwrócony towar z listy, aby otworzyć formularz **Zamówienie zwrotu — numer autoryzacji zwrotu: %1, %2**.
 

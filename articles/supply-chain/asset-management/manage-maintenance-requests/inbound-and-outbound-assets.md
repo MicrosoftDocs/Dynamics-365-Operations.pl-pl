@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e0c382efda81067ad4c0cd977e5cfbf37b4e3fc6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fd7482cfe943347840e9fb070151d66fbe5ef9ca
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8908722"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016544"
 ---
 # <a name="inbound-and-outbound-assets"></a>Przychodzące i wychodzące składniki majątku
 
@@ -37,7 +37,7 @@ Konfiguracja modułu Zarządzanie składnikami majątku określa, czy można pra
 
 ## <a name="register-assets-as-inbound"></a>Rejestrowanie składników majątku jako przychodzących
 
-1. Wybierz **Zarządzanie składnikami majątku** \> **Wspólne** \> **Żądania konserwacji** \> **Aktywne żądania konserwacji**.
+1. Wybierz **Zarządzanie składnikami majątku** \> **Żądania konserwacji** \> **Aktywne żądania konserwacji**.
 2. Wybierz żądanie konserwacji.
 3. Wybierz **Aktualizuj stan żądania konserwacji**.
 4. Wybierz **Przychodzące** (lub inny stan cyklu życia utworzony dla przychodzących składników majątku), a następnie wybierz przycisk **OK**.
@@ -46,7 +46,7 @@ Konfiguracja modułu Zarządzanie składnikami majątku określa, czy można pra
 
 ## <a name="register-inbound-assets-as-received"></a>Rejestrowanie przychodzących składników majątku jako odebranych
 
-1. Wybierz **Zarządzanie składnikami majątku** \> **Wspólne** \> **Przychodzące/wychodzące** \> **Zasoby przychodzące**.
+1. Wybierz **Zarządzanie składnikami majątku** \> **Przychodzące/wychodzące** \> **Zasoby przychodzące**.
 2. Wybierz składnik majątku lub żądanie konserwacji.
 3. Wybierz opcję **Odbierz składniki majątku**.
 4. W polu **Odebrane** wpisz datę i godzinę. Następnie wybierz opcję **OK**. Rekord zostanie usunięty ze strony listy **Przychodzące składniki majątku**.
@@ -57,14 +57,14 @@ Konfiguracja modułu Zarządzanie składnikami majątku określa, czy można pra
 
 Po ukończeniu zadania konserwacji lub naprawy można zarejestrować zasób jako zwrócony.
 
-1. Wybierz **Zarządzanie składnikami majątku** \> **Wspólne** \> **Żądania konserwacji** \> **Aktywne żądania konserwacji**.
+1. Wybierz **Zarządzanie składnikami majątku** \> **Żądania konserwacji** \> **Aktywne żądania konserwacji**.
 2. Wybierz żądanie konserwacji.
 3. Wybierz **Aktualizuj stan żądania konserwacji**.
 4. Wybierz **Wychodzące** (lub inny stan cyklu życia utworzony dla zasobów wychodzących), a następnie wybierz przycisk **OK**.
 
 ## <a name="register-outbound-assets-as-delivered"></a>Rejestrowanie zasobów wychodzących jako dostarczonych
 
-1. Wybierz **Zarządzanie składnikami majątku** \> **Wspólne** \> **Przychodzące/wychodzące** \> **Zasoby wychodzące**.
+1. Wybierz **Zarządzanie składnikami majątku** \> **Przychodzące/wychodzące** \> **Zasoby wychodzące**.
 2. Wybierz składnik majątku lub żądanie konserwacji.
 3. Wybierz opcję **Dostarcz zasoby**.
 4. W polu **Dostarczone** wpisz datę i godzinę. Następnie wybierz opcję **OK**. Rekord zostanie usunięty ze strony listy **Zasoby wychodzące**.

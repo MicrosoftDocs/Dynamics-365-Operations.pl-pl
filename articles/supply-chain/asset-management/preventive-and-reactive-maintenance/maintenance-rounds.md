@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: dfb75d69f20c68a40242bb1c0c25ca77f85e0c14
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 519431d84652e45dcd45aefbbaaa2a0e2afe6349
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8852879"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016515"
 ---
 # <a name="maintenance-rounds"></a>Serie czynności konserwacyjnych
 
@@ -87,7 +87,7 @@ Poniższa ilustracja przedstawia i przykład cyklu eksploatacji zawierającego t
 
 Po skonfigurowaniu serii czynności konserwacyjnych należy uruchomić zadanie harmonogramu w celu zaplanowania wszystkich zadań związanych z serią czynności konserwacyjnych.
 
-1. Kliknij **Zarządzanie składnikami majątku** > **Okresowe** > **Konserwacja zapobiegawcza** > **Planowanie serii czynności konserwacyjnych** lub **Zarządzanie składnikami majątku** > **Wspólne** > **Harmonogram konserwacji** > **Wszystkie harmonogramy konserwacji** lub **Otwieranie wierszy harmonogramu konserwacji** lub **Otwieranie puli harmonogramów konserwacji** > na liście wybierz harmonogram konserwacji > przycisk **Serie czynności konserwacyjnych**.
+1. Kliknij **Zarządzanie składnikami majątku** > **Okresowe** > **Konserwacja zapobiegawcza** > **Planowanie serii czynności konserwacyjnych** lub **Zarządzanie składnikami majątku** > **Harmonogram konserwacji** > **Wszystkie harmonogramy konserwacji** lub **Otwieranie wierszy harmonogramu konserwacji** lub **Otwieranie puli harmonogramów konserwacji** > na liście wybierz harmonogram konserwacji > przycisk **Serie czynności konserwacyjnych**.
 
 2. W polu **okres** wybierz typ okresu, który ma być używany dla zadania planowania.
 
@@ -102,7 +102,7 @@ Po skonfigurowaniu serii czynności konserwacyjnych należy uruchomić zadanie h
 
 6. Kliknij przycisk **OK**.
 
-7. Teraz widzisz serie czynności konserwacyjnych w **Zarządzanie składnikami majątku** > **Wspólne** > **harmonogram konserwacji** > **Wszystkie harmonogramy konserwacji** lub **Otwieranie wierszy harmonogramu konserwacji**. Jeśli zaplanowane seria czynności konserwacyjnych jest połączone z pulą zleceń roboczych, wiersze harmonogramu konserwacji można również wyświetlać w **Otwieranie puli harmonogramów konserwacji**. Wiersze harmonogramu konserwacji utworzone z serii mają typ odwołania „serie czynności konserwacyjnych”.
+7. Teraz widzisz serie czynności konserwacyjnych w **Zarządzanie składnikami majątku** > **Harmonogram konserwacji** > **Wszystkie harmonogramy konserwacji** lub **Otwieranie wierszy harmonogramu konserwacji**. Jeśli zaplanowane seria czynności konserwacyjnych jest połączone z pulą zleceń roboczych, wiersze harmonogramu konserwacji można również wyświetlać w **Otwieranie puli harmonogramów konserwacji**. Wiersze harmonogramu konserwacji utworzone z serii mają typ odwołania „serie czynności konserwacyjnych”.
 
 W dwóch poniższych ilustracjach przedstawiono zadanie planowania w oknie dialogowym **Planowanie serii czynności konserwacyjnych** oraz wiersze harmonogramu konserwacji utworzone we **Wszystkich harmonogramach konserwacji** na podstawie tego zadania harmonogramu.
 

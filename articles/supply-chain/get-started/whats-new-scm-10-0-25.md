@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 1fa2ec6e21026552a4f14a67188db0720d3feae5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: af344d3771583a99851c070e3735258ac964b5d7
+ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850794"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8954504"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10025-april-2022"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.25 (kwiecień 2022)
 
@@ -155,7 +155,7 @@ Tabela zawiera również listę funkcji, które były wcześniej w publicznej we
 | Zarządzanie magazynem | [Odroczone przetwarzanie operacji ręcznego przenoszenia zapasów](../warehousing/deferred-processing-manual-inventory-movement.md) | Wymagana |
 | Zarządzanie magazynem | Nie zezwalaj na tworzenie ładunków, które nie spełniają wymagań szablonu kompilowania ładunku grupy czynności | Wymagana |
 | Zarządzanie magazynem | [Rozszerzone układy etykiet numerów identyfikacyjnych](../warehousing/document-routing-layout-for-license-plates.md) | Wymagana |
-| Zarządzanie magazynem | [Ocenianie wszystkich akcji dla dyrektyw lokalizacji wielu jednostek SKU](../troubleshooting/warehousing/evaluate-multiple-location-directive-actions.md) | Wymagana |
+| Zarządzanie magazynem | [Ocenianie wszystkich akcji dla dyrektyw lokalizacji wielu jednostek SKU](/troubleshoot/dynamics-365/supply-chain/warehousing/evaluate-multiple-location-directive-actions) | Wymagana |
 | Zarządzanie magazynem | Ukryj pole Wartość całkowita na stronach „Wszystkie ładunki” i „Szczegóły ładunku” | Wymagana |
 | Zarządzanie magazynem | Konfiguracja kompilacji etykiet numerów identyfikacyjnych | Wymagana |
 | Zarządzanie magazynem | Ręczna korekta wiersza obciążenia pracą dla administratora lub podobnych zaufanych użytkowników | Wymagana |

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f969e3de9586c0c47214201b34a16f8afad5ca90
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 1764d97d4492e7b982a5d2c9f7e7f1c15380be1d
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678270"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014859"
 ---
 # <a name="create-service-orders-manually"></a>Ręczne tworzenie zleceń serwisowych    
 
@@ -34,7 +34,7 @@ Zlecenia serwisowe można tworzyć ręcznie na podstawie umowy serwisowej lub za
 
 ## <a name="create-a-service-order-manually-from-a-service-agreement"></a>Tworzenie zlecenia serwisowego ręcznie na podstawie umowy serwisowej
 
-1.  Wybierz **Zarządzanie serwisem** \> **Wspólne** \> **Umowy serwisowe** \> **Umowy serwisowe**.
+1.  Wybierz **Zarządzanie serwisem** \> **Umowy serwisowe** \> **Umowy serwisowe**.
 
 2.  Wybierz umowę serwisową lub utwórz nową umowę.
 
@@ -42,7 +42,7 @@ Zlecenia serwisowe można tworzyć ręcznie na podstawie umowy serwisowej lub za
 
 ## <a name="create-a-service-order-manually-in-the-service-orders-form"></a>Tworzenie zlecenia serwisowego ręcznie w formularzu Zlecenia serwisowe
 
-1.  Wybierz **Zarządzanie serwisem** \> **Wspólne** \> **Zlecenia serwisowe** \> **Zlecenia serwisowe**.
+1.  Wybierz **Zarządzanie serwisem** \> **Zlecenia serwisowe** \> **Zlecenia serwisowe**.
 
 2.  Wybierz pozycję **Nowy**, aby utworzyć nowe zamówienie usługi.
 
@@ -53,7 +53,7 @@ Zlecenia serwisowe można tworzyć ręcznie na podstawie umowy serwisowej lub za
 
 ## <a name="create-a-service-order-from-a-project"></a>Tworzenie zlecenia serwisowego na podstawie projektu
 
-1.  Przejdź do **Zarządzanie projektami i ich księgowanie** \> **Wspólne** \> **Projekty** \> **Wszystkie projekty**.
+1.  Wybierz kolejno opcje **Zarządzanie projektami i ich księgowanie** \> **Projekty** \> **Wszystkie projekty**.
 
 2.  W formularzu **Projekty** w **okienku akcji** wybierz kartę **Zarządzaj** \> wybierz kolejno opcje **Serwis** \> **Zlecenia serwisowe**.
 
@@ -66,7 +66,7 @@ Zlecenia serwisowe można tworzyć ręcznie na podstawie umowy serwisowej lub za
 
 Zlecenie serwisowe można utworzyć na podstawie formularza **Zamówienia sprzedaży**, używając kreatora **Utwórz nowe zlecenie serwisowe na podstawie zamówienia sprzedaży**.
 
-1.  Przejdź do **Sprzedaż i marketing** \> **Wspólne** \> **Zamówienia sprzedaży** \> **Wszystkie zamówienia sprzedaży**.
+1.  Przejdź kolejno do pozycji **Sprzedaż i marketing** \> **Zamówienia sprzedaży** \> **Wszystkie zamówienia sprzedaży**.
 
 2.  Otwórz odnośne zamówienie sprzedaży.
 

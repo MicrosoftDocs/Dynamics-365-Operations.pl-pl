@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 723eae906260d152a8729f91c75cd9860eca84c5
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4f2b4213574a2d84089ab20ab1a584e1ab894ad9
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669496"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016370"
 ---
 # <a name="manage-template-boms-on-object-relations"></a>Zarządzanie szablonami BOM w relacjach przedmiotów 
 
@@ -29,7 +29,7 @@ ms.locfileid: "8669496"
 
 ## <a name="attach-a-template-bom-to-a-service-object"></a>Dołączanie szablonu BOM do przedmiotu serwisu
 
-1.  Kliknij kolejno opcje **Zarządzanie serwisem** \> **Wspólne** \> **Umowy serwisowe** \> **Umowy serwisowe**.
+1.  Kliknij kolejno opcje **Zarządzanie serwisem** \> **Umowy serwisowe** \> **Umowy serwisowe**.
 
 2.  Kliknij dwukrotnie umowę serwisową, w której chcesz dołączyć szablon BOM do relacji przedmiotu.
 
@@ -43,7 +43,7 @@ ms.locfileid: "8669496"
 
 ## <a name="delete-a-service-bom-from-a-service-object"></a>Usuwanie BOM serwisu z przedmiotu serwisu
 
-1.  Kliknij kolejno opcje **Zarządzanie serwisem** \> **Wspólne** \> **Umowy serwisowe** \> **Umowy serwisowe**.
+1.  Kliknij kolejno opcje **Zarządzanie serwisem** \> **Umowy serwisowe** \> **Umowy serwisowe**.
 
 2.  Kliknij dwukrotnie umowę serwisową, w której chcesz usunąć BOM serwisu z relacji przedmiotu.
 
@@ -55,7 +55,7 @@ ms.locfileid: "8669496"
 
 ## <a name="move-the-service-bom-history-from-one-service-agreement-to-another"></a>Przenoszenie historii BOM serwisu z jednej umowy serwisowej do drugiej
 
-1.  Kliknij kolejno opcje **Zarządzanie serwisem** \> **Wspólne** \> **Umowy serwisowe** \> **Umowy serwisowe**.
+1.  Kliknij kolejno opcje **Zarządzanie serwisem** \> **Umowy serwisowe** \> **Umowy serwisowe**.
 
 2.  Kliknij dwukrotnie umowę serwisową, z której chcesz przenieść BOM serwisu.
 

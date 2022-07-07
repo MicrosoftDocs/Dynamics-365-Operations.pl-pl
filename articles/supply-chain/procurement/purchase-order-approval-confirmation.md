@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 936fddb73a639564a136002354a4d3dff7798e0b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: af33dbd38b1eb70e79392860e48c6943a4192f78
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907385"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016457"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Zatwierdzanie i potwierdzanie zamówień zakupu
 
@@ -50,7 +50,7 @@ Po włączeniu zarządzania zmianami zamówienia zakupu przechodzą przez sześ�
 ## <a name="confirming-purchase-orders"></a>Potwierdzanie zamówienia zakupu
 Zamówienia zakupu, które mają stan zatwierdzenia **Zatwierdzone**, mogą przejść przez dodatkowe czynności, zanim zostaną potwierdzone. Na przykład może być konieczne wysłanie zapytania dotyczącego zakupu do dostawcy w celu uzyskiwanie informacji o cenach, rabatach lub datach dostaw. W takim przypadku można ustawić zamówieniu zakupu stan **W trakcie analizy zewnętrznej**, używając do tego akcji **Zapytanie dotyczące zakupu**.
 
-Dostawcy, którym skonfigurowano używanie portalu dostawców, mogą przeglądać zamówienia w portalu oraz je zatwierdzać lub odrzucać. Podczas tego procesu weryfikowania zamówienie zakupu ma stan **W trakcie analizy zewnętrznej**. Portal dostawców można skonfigurować tak, aby potwierdzenie od dostawcy automatycznie potwierdzało zamówienie w programie Supply Chain Management. Alternatywnie można ręcznie potwierdzić zamówienie zakupu po otrzymaniu potwierdzenia od dostawcy. Jeśli dostawca odrzuci zamówienie zakupu, odrzucenie jest odbierane razem z przyczynę odrzucenia i sugestiami zmian. W takim przypadku zamówienie zakupu pozostaje w stanie **W trakcie analizy zewnętrznej**.
+Dostawcy, którym skonfigurowano używanie modułu współpracy dostawców, mogą przeglądać zamówienia w portalu oraz je zatwierdzać lub odrzucać. Podczas tego procesu weryfikowania zamówienie zakupu ma stan **W trakcie analizy zewnętrznej**. Moduł współpracy dostawców można skonfigurować tak, aby potwierdzenie od dostawcy automatycznie potwierdzało zamówienie w programie Supply Chain Management. Alternatywnie można ręcznie potwierdzić zamówienie zakupu po otrzymaniu potwierdzenia od dostawcy. Jeśli dostawca odrzuci zamówienie zakupu, odrzucenie jest odbierane razem z przyczynę odrzucenia i sugestiami zmian. W takim przypadku zamówienie zakupu pozostaje w stanie **W trakcie analizy zewnętrznej**.
 
 Istnieje także możliwość wygenerowania potwierdzenia pro forma dla zamówienia, zanim zostanie przetworzone faktyczne potwierdzenie. Ta opcja tylko tworzy raport, który można udostępnić dostawcy. Nie tworzy żadnych informacji w arkuszu.
 

@@ -2,63 +2,55 @@
 title: Tworzenie zamówienia zakupu regulowanego budżetem
 description: Ta procedura służy do tworzenia zamówienia zakupu sprawdzanego pod kątem dostępnego budżetu.
 author: JennySong-SH
-ms.date: 06/20/2017
+ms.date: 06/15/2020
 ms.topic: business-process
-ms.prod: ''
-ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e8458fc1f47f929ac612acfb3a2d75a79c8fb7d6
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: aa9777ad3aa487dfb558879335f93f347b8ac749
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671374"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016196"
 ---
 # <a name="create-a-purchase-order-governed-by-budget"></a>Tworzenie zamówienia zakupu regulowanego budżetem
 
 [!include [banner](../../includes/banner.md)]
 
-Ta procedura służy do tworzenia zamówienia zakupu sprawdzanego pod kątem dostępnego budżetu. Nagranie wykorzystuje dane firmy demonstracyjnej USMF.
-
+Ta procedura służy do tworzenia zamówienia zakupu sprawdzanego pod kątem dostępnego budżetu.
 
 ## <a name="review-the-budget-control-configuration"></a>Przeglądanie konfiguracji kontroli budżetu
-1. Wybierz kolejno opcje Budżetowanie > Ustawienia > Kontrola budżetu > Konfiguracja kontroli budżetu.
-2. Kliknij kartę Dostępne środki budżetowe.
-3. Kliknij kartę Dokumenty i arkusze.
-4. Kliknij kartę Definiowanie reguł kontroli budżetu.
-5. Kliknij kartę Zdefiniuj grupy budżetu.
-6. Zamknij stronę.
 
-## <a name="create-the-purchase-order-header"></a>Tworzenie nagłówka zamówienia zakupu
-1. Wybierz kolejno opcje Zaopatrzenie i sourcing > Zamówienia zakupu > Wszystkie zamówienia zakupu.
-2. Kliknij przycisk Nowy.
-3. W polu Konto dostawcy wprowadź lub wybierz wartość.
-4. Rozwiń sekcję Ogólne.
-5. W polu Data księgowania ustaw datę „2016-01-01”.
-6. Kliknij przycisk OK.
+1. Wybierz kolejno opcje **Budżetowanie > Ustawienia > Kontrola budżetu > Konfiguracja kontroli budżetu**.
+1. Wybierz kartę **Dostępne środki budżetowe**.
+1. Wybierz kartę **Dokumenty i arkusze**.
+1. Wybierz kartę **Definiowanie reguł kontroli budżetu**.
+1. Wybierz kartę **Zdefiniuj grupy budżetu**.
+1. Zamknij stronę.
 
-## <a name="add-a-purchase-order-line"></a>Dodawanie wiersza zamówienia zakupu
-1. W polu Kategoria zaopatrzenia wprowadź lub wybierz wartość.
-2. Ustaw ilość na 2.
-3. W polu Jednostka wprowadź lub wybierz wartość.
-4. Ustaw cenę jednostkowa na „10000”.
-5. Kliknij opcję Finanse.
-6. Kliknij opcję Rozdziel kwoty.
-7. W polu Konto księgowe wpisz wartość „601300-001-023--”.
-8. Zamknij stronę.
+## <a name="create-a-purchase-order"></a>Tworzenie zamówienia zakupu
+
+1. Wybierz kolejno opcje **Zaopatrzenie i sourcing > Zamówienia zakupu > Wszystkie zamówienia zakupu**.
+1. Wybierz pozycję **Nowy**.
+1. W polu **Konto dostawcy** wprowadź lub wybierz wartość.
+1. Rozwiń skróconą kartę **Ogólne**.
+1. W polu **Data księgowania** i ustaw datę.
+1. Wybierz przycisk **OK**, aby zamknąć okno dialogowe i otworzyć nowe zamówienie zakupu.
+1. Na skróconej karcie **Wiersze zamówienia zakupu** wybierz pozycję **Dodaj wiersz** na pasku narzędzi, aby dodać nowy wiersz, a następnie w razie potrzeby wypełnij wiersz, aby dodać towar do zamówienia.
+1. Na pasku narzędzie skróconej karty **Wiersze zamówienia zakupu** wybierz **Finanse \> Dystrybuuj kwoty**.
+1. W polu **Konto księgi** określ konto.
+1. Zamknij stronę.
 
 ## <a name="perform-budget-checking"></a>Wykonaj kontrolę budżetu
-1. Kliknij opcję Finanse.
-2. Kliknij opcję Wykonaj kontrolę budżetu.
-3. Kliknij opcję Finanse.
-4. Kliknij opcję Błędy lub ostrzeżenia dotyczące sprawdzania budżetu.
-5. Kliknij przycisk Zamknij.
 
-
+1. Kontynuuj pracę z zamówieniem zakupu, do którego właśnie dodano wiersz.
+1. Na pasku narzędzie skróconej karty **Wiersze zamówienia zakupu** wybierz **Finanse \> Przeprowadź sprawdzenie budżetu**.
+1. Na pasku narzędzie skróconej karty **Wiersze zamówienia zakupu** wybierz **Finanse \> Błędy i ostrzeżenia sprawdzania budżetu**.
+1. Otworzy się okno dialogowe **Błędy i ostrzeżenia sprawdzania budżetu**. Sprawdź wyniki sprawdzenia, a następnie wybierz przycisk **Zamknij**, aby zamknąć okno dialogowe.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

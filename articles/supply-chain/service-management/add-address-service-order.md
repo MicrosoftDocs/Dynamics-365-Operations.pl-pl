@@ -2,30 +2,25 @@
 title: Dodawanie adresu do zlecenia serwisowego
 description: W tym artykule opisano sposób dodawania adresu odbiorcy do zlecenia serwisowego.
 author: sorenva
-ms.date: 05/02/2018
+ms.date: 06/15/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce58ff7bbb491fd2d250b8986d02fca04bd5fad1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c485c50bab7c2e945aa0f0fc0601008dcebd3328
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8844743"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015733"
 ---
-# <a name="add-an-address-to-a-service-order"></a>Dodawanie adresu do zlecenia serwisowego    
+# <a name="add-an-address-to-a-service-order"></a>Dodawanie adresu do zlecenia serwisowego
 
 [!include [banner](../includes/banner.md)]
-
 
 W tym artykule opisano sposób dodawania adresu odbiorcy do zlecenia serwisowego. Podczas tworzenia zlecenia serwisowego informacje adresowe są przenoszone z projektu, do którego jest dołączone zlecenie serwisowe. Jednak można wybrać alternatywną lokalizację z adresów, które zostały już wprowadzone w Microsoft Dynamics AX dla odbiorców, dostawców, oddziałów, magazynów, zleceń serwisowych i projektów.
 
@@ -35,43 +30,36 @@ Można również utworzyć nowy adres. Domyślnie nowy adres zostanie przeniesio
 
 Aby dodać adres do zlecenia serwisowego, wykonaj następujące czynności:
 
-1.  Kliknij kolejno opcje **Zarządzanie serwisem** \> **Wspólne** \> **Zlecenia serwisowe** \> **Zlecenia serwisowe**.
+1. Przejdź do **Zarządzanie serwisem** \> **Zlecenia serwisowe** \> **Zlecenia serwisowe**.
 
-2.  Otwórz zlecenie serwisowe, dla którego chcesz utworzyć adres.
+1. Otwórz zlecenie serwisowe, dla którego chcesz utworzyć adres.
 
-3.  W **okienku akcji** kliknij przycisk **Edytuj**, a następnie kliknij opcję **Widok nagłówka**.
+1. Otwórz kartę **Nagłówek**.
 
-4.  Na skróconej karcie **Adres** kliknij przycisk **Dodaj adres**.
+1. Rozwiń skróconą kartę **Adres**, a następnie wybierz pozycję **Dodaj adres** na pasku narzędzi Skrócona karta.
 
-5.  W formularzu **Nowy adres** wprowadź niepowtarzalną nazwę dla adresu i wypełnij pozostałe pola. 
-    
+1. W oknie dialogowym **Nowy adres** wprowadź niepowtarzalną nazwę dla adresu i wypełnij pozostałe pola. 
 
     > [!WARNING]
-    > <P>Jeśli wprowadzisz taką samą nazwę jak istniejący adres, informacje wprowadzone w pozostałych polach zastąpią informacje istniejącego adresu.</P>
+    > Jeśli wprowadzisz taką samą nazwę jak istniejący adres, informacje wprowadzone w pozostałych polach zastąpią informacje istniejącego adresu.
 
-
-6.  Kliknij **OK**, aby skopiować nowy adres do zlecenia serwisowego.
+1. Wybierz **OK**, aby skopiować nowy adres do zlecenia serwisowego.
 
 ## <a name="specify-an-alternative-address-on-a-service-order"></a>Określanie adresu alternatywnego dotyczącego zlecenia serwisowego
 
 Aby dodać inny adres do zlecenia serwisowego, wykonaj następujące czynności:
 
-1.  Kliknij kolejno opcje **Zarządzanie serwisem** \> **Wspólne** \> **Zlecenia serwisowe** \> **Zlecenia serwisowe**.
+1. Przejdź do **Zarządzanie serwisem** \> **Zlecenia serwisowe** \> **Zlecenia serwisowe**.
 
-2.  Otwórz zlecenie serwisowe, dla którego chcesz wprowadzić inny adres.
+1. Otwórz zlecenie serwisowe, dla którego chcesz wprowadzić inny adres.
 
-3.  W **okienku akcji** kliknij przycisk **Edytuj**, a następnie kliknij opcję **Widok nagłówka**.
+1. Otwórz kartę **Nagłówek**.
 
-4.  Na skróconej karcie **Adres** kliknij przycisk **Inny adres**.
+1. Rozwiń skróconą kartę **Adres**, a następnie wybierz pozycję **Inny adres** na pasku narzędzi Skrócona karta.
 
-5.  W formularzu **Wybór adresu** w polu **Typ rekordu** zaznacz **Zlecenia serwisowe**.
+1. W oknie dialogowym **Wybór adresu** wybierz **Zlecenia serwisowe** z listy rozwijanej nad siatką.
 
-6.  Wybierz adres i kliknij **OK**, aby skopiować go do zlecenia serwisowego.
-
-
-  
-
-
+1. Wybierz adres i wybierz **OK**, aby skopiować go do zlecenia serwisowego.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

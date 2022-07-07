@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e59271771a5f332ad8470b0b8f8f54b52a25543d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4c9495bbc8e5f7cb603c027a125887feba1f0e2d
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671682"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017211"
 ---
 # <a name="set-up-a-preferred-technician"></a>Konfigurowanie preferowanego technika 
 
@@ -31,13 +31,13 @@ Można wybrać dowolnego pracownika jako preferowanego technika dla umowy serwis
 
 ## <a name="assign-employee-to-a-dispatch-team"></a>Przypisywanie pracownika do zespołu wysyłki
 
-1.  Kliknij kolejno opcje **Zasoby ludzkie** \> **Wspólne** \> **Pracownicy** \> **Pracownicy**. Kliknij dwukrotnie pracownika, aby otworzyć stronę szczegółów pracowników. W **okienku akcji** kliknij przycisk kolejno opcje **Ustawienia** \> **Zespół wysyłki**, aby otworzyć formularz **Pracownicy wysyłki**.
+1.  Kliknij kolejno opcje **Zasoby ludzkie** \> **Pracownicy** \> **Pracownicy**. Kliknij dwukrotnie pracownika, aby otworzyć stronę szczegółów pracowników. W **okienku akcji** kliknij przycisk kolejno opcje **Ustawienia** \> **Zespół wysyłki**, aby otworzyć formularz **Pracownicy wysyłki**.
 
 2.  W polu **Zespół wysyłki** wybierz zespół, do którego ma być przypisany pracownik.
 
 ## <a name="assign-a-preferred-technician-to-a-service-agreement"></a>Przypisywanie preferowanego technika do umowy serwisowej
 
-1.  Kliknij kolejno opcje **Zarządzanie serwisem** \> **Wspólne** \> **Umowy serwisowe** \> **Umowy serwisowe**. Kliknij dwukrotnie umowę serwisową, aby otworzyć formularz szczegółów.
+1.  Kliknij kolejno opcje **Zarządzanie serwisem** \> **Umowy serwisowe** \> **Umowy serwisowe**. Kliknij dwukrotnie umowę serwisową, aby otworzyć formularz szczegółów.
 
 2.  Na karcie **Ogólne** wybierz pole **Preferowany technik**, a następnie wybierz członka odpowiedniego zespołu wysyłki jako preferowanego serwisanta dla umowy serwisowej.
 

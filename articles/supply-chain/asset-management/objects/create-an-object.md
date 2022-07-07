@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 90b41b57dfa6db8b5874bbc2d4bcac7b4c634f20
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5ab715be3bfdc380f5736fadd901af3ed78d7035
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860936"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016312"
 ---
 # <a name="create-an-asset"></a>Tworzenie składnika majątku
 
@@ -30,7 +30,7 @@ ms.locfileid: "8860936"
 
 W tym artykule opisano sposób tworzenia składnika majątku w Zarządzaniu składnikami majątku.
 
-1. Kliknij **Zarządzanie składnikami majątku** > **Wspólne** > **składniki majątku** > **Wszystkie składniki majątku** lub **Aktywne składniki majątku**.
+1. Kliknij **Zarządzanie składnikami majątku** > **Składniki majątku** > **Wszystkie składniki majątku** lub **Aktywne składniki majątku**.
 2. Kliknij przycisk **Nowe**.
 3. W oknie dialogowym **Tworzenie składników majątku** wstaw dane dotyczące **Składnika majątku** (identyfikator składnika majątku) oraz nazwę składnika majątku. Wybierz datę i godzinę składnika majątku w polu **Data wprowadzenia**. Od tej daty można instalować składnik majątku w lokalizacji czynności konserwacyjnych, a także przenosić i zastępować składnik majątku w strukturze składników majątku.
 4. W polu **Typ składnika majątku** wybierz typ składnika majątku (pole obowiązkowe). W razie potrzeby wybierz pozycję **Producent składnika majątku** i **Model składnika majątku** dla danego zasobu. Jeśli tylko jeden produkt został skonfigurowany, ten produkt jest automatycznie wybierany w polu **Producent składnika majątku**. Opcje dostępne w polach **Producent składnika majątku** i **Model składnika majątku** zależą od konfiguracji w artykule [Producenci i modele składnika majątku](../setup-for-objects/product-and-model.md)

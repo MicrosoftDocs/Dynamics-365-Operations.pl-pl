@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3347db6395b7da396c42f84881060f476346d2e9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 60bf4ab6944bd982e022ead6431adae417ddfb43
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851283"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014627"
 ---
 # <a name="wave-creation-and-processing"></a>Tworzenie i przetwarzanie grupy czynności
 
@@ -60,9 +60,9 @@ Aby ręcznie utworzyć grupę czynności, należy wykonać następujące czynno�
 1. Upewnij się, że odpowiednie [szablony grupy czynności](wave-templates.md) nie są ustawione w taki sposób, aby automatycznie tworzyły grupy czynności dla magazynu i typów zamówień, w których ma to być wykonywane ręcznie.
 1. W zależności od typu grupy czynności do utworzenia, kliknij jedną z następujących opcji:
 
-    - Przejdź do **Zarządzanie magazynem** \> **Wspólne** \> **Grupy czynności** \> **Grupy czynności wysyłki** \> **Wszystkie grupy czynności**. Na okienku akcji wybierz opcję **Grupa czynności**.
-    - Przejdź do **Zarządzanie magazynem** \> **Wspólne** \> **Grupy czynności** \> **Grupy czynności wysyłki** \> **Wszystkie grupy czynności**. Na okienku akcji wybierz opcję **Grupa czynności**.
-    - Przejdź do **Zarządzanie magazynem** \> **Wspólne** \> **Grupy czynności** \> **Grupy czynności wysyłki** \> **Wszystkie grupy czynności**. Na okienku akcji wybierz opcję **Grupa czynności**.
+    - Przejdź do **Zarządzanie magazynem** \> **Wychodzące grupy czynności** \> **Grupy czynności wysyłki** \> **Wszystkie grupy czynności**. Na okienku akcji wybierz opcję **Grupa czynności**.
+    - Przejdź do **Zarządzanie magazynem** \> **Grupy czynności** \> **Grupy czynności wysyłki** \> **Wszystkie grupy czynności**. Na okienku akcji wybierz opcję **Grupa czynności**.
+    - Przejdź do **Zarządzanie magazynem** \> **Grupy czynności** \> **Grupy czynności wysyłki** \> **Wszystkie grupy czynności**. Na okienku akcji wybierz opcję **Grupa czynności**.
 
 1. W polu **Opis** wprowadź krótki opis grupy czynności. Powinien wskazywać, co jest przetwarzane w grupie czynności.
 
@@ -87,9 +87,9 @@ Po utworzeniu grupy czynności, która nie została jeszcze zwolniona, można r�
 
 1. W zależności od typu grupy czynności, dla której chcesz dodać wiersze, wykonaj jedną z następujących czynności:
 
-    - Przejdź do **Zarządzanie magazynem** \> **Wspólne** \> **Grupy czynności** \> **Grupy czynności wysyłki** \> **Wszystkie grupy czynności**. Na okienku akcji wybierz opcję **Grupa czynności**.
-    - Przejdź do **Zarządzanie magazynem** \> **Wspólne** \> **Grupy czynności** \> **Grupy czynności wysyłki** \> **Wszystkie grupy czynności**. Na okienku akcji wybierz opcję **Grupa czynności**.
-    - Przejdź do **Zarządzanie magazynem** \> **Wspólne** \> **Grupy czynności** \> **Grupy czynności wysyłki** \> **Wszystkie grupy czynności**. Na okienku akcji wybierz opcję **Grupa czynności**.
+    - Przejdź do **Zarządzanie magazynem** \> **Wychodzące grupy czynności** \> **Grupy czynności wysyłki** \> **Wszystkie grupy czynności**. Na okienku akcji wybierz opcję **Grupa czynności**.
+    - Przejdź do **Zarządzanie magazynem** \> **Grupy czynności** \> **Grupy czynności wysyłki** \> **Wszystkie grupy czynności**. Na okienku akcji wybierz opcję **Grupa czynności**.
+    - Przejdź do **Zarządzanie magazynem** \> **Grupy czynności** \> **Grupy czynności wysyłki** \> **Wszystkie grupy czynności**. Na okienku akcji wybierz opcję **Grupa czynności**.
 
 1. Wybierz grupę czynności. W okienku akcji kliknij jedną z następujących opcji:
 
@@ -121,9 +121,9 @@ Aby ręcznie przetworzyć grupy czynności z wymaganą zawartością, wykonaj na
 
 1. W zależności od typu grupy czynności do przetworzenia wykonaj jedną z następujących czynności:
 
-    - Przejdź do **Zarządzanie magazynem** \> **Wspólne** \> **Grupy czynności** \> **Grupy czynności wysyłki** \> **Wszystkie grupy czynności**. Na okienku akcji wybierz opcję **Grupa czynności**.
-    - Przejdź do **Zarządzanie magazynem** \> **Wspólne** \> **Grupy czynności** \> **Grupy czynności wysyłki** \> **Wszystkie grupy czynności**. Na okienku akcji wybierz opcję **Grupa czynności**.
-    - Przejdź do **Zarządzanie magazynem** \> **Wspólne** \> **Wychodzące grupy czynności** \> **Grupy czynności wysyłki** \> **Wszystkie grupy czynności**. Na okienku akcji wybierz opcję **Grupa czynności**.
+    - Wybierz **Zarządzanie magazynem** \> **Wychodzące grupy czynności** \> **Grupy czynności wysyłki** \> **Wszystkie grupy czynności**. Na okienku akcji wybierz opcję **Grupa czynności**.
+    - Wybierz **Zarządzanie magazynem** \> **Grupy czynności** \> **Grupy czynności wysyłki** \> **Wszystkie grupy czynności**. Na okienku akcji wybierz opcję **Grupa czynności**.
+    - Wybierz **Zarządzanie magazynem** \> **Wychodzące grupy czynności** \> **Grupy czynności wysyłki** \> **Wszystkie grupy czynności**. Na okienku akcji wybierz opcję **Grupa czynności**.
 
 1. Wybierz grupę czynności do przetworzenia. W okienku akcji wybierz pozycję **Przetwarzanie**.
 
@@ -141,9 +141,9 @@ Aby ręcznie zwolnić grupę czynności, należy wykonać następujące czynnoś
 
 1. W zależności od typu grupy czynności do przetworzenia wykonaj jedną z następujących czynności:
 
-      - Przejdź do **Zarządzanie magazynem** \> **Wspólne** \> **Grupy czynności** \> **Grupy czynności wysyłki** \> **Wszystkie grupy czynności**. Na okienku akcji wybierz opcję **Grupa czynności**.
-      - Przejdź do **Zarządzanie magazynem** \> **Wspólne** \> **Grupy czynności** \> **Grupy czynności wysyłki** \> **Wszystkie grupy czynności**. Na okienku akcji wybierz opcję **Grupa czynności**.
-      - Przejdź do **Zarządzanie magazynem** \> **Wspólne** \> **Wychodzące grupy czynności** \> **Grupy czynności wysyłki** \> **Wszystkie grupy czynności**. Na okienku akcji wybierz opcję **Grupa czynności**.
+      - Wybierz **Zarządzanie magazynem** \> **Wychodzące grupy czynności** \> **Grupy czynności wysyłki** \> **Wszystkie grupy czynności**. Na okienku akcji wybierz opcję **Grupa czynności**.
+      - Wybierz **Zarządzanie magazynem** \> **Grupy czynności** \> **Grupy czynności wysyłki** \> **Wszystkie grupy czynności**. Na okienku akcji wybierz opcję **Grupa czynności**.
+      - Wybierz **Zarządzanie magazynem** \> **Wychodzące grupy czynności** \> **Grupy czynności wysyłki** \> **Wszystkie grupy czynności**. Na okienku akcji wybierz opcję **Grupa czynności**.
 
 1. Wybierz grupę czynności do zwolnienia. Na okienku akcji wybierz opcję **Zwolnij grupę czynności**.
 
@@ -179,9 +179,9 @@ W razie potrzeby można anulować grupę czynności, która została przetworzon
 
 1. W zależności od typu grupy czynności do anulownaia wykonaj jedną z następujących czynności:
 
-      - Przejdź do **Zarządzanie magazynem** \> **Wspólne** \> **Grupy czynności** \> **Grupy czynności wysyłki** \> **Wszystkie grupy czynności**.
-      - Przejdź do **Zarządzanie magazynem** \> **Wspólne** \> **Grupy czynności** \> **Grupy czynności wysyłki** \> **Wszystkie grupy czynności**.
-      - Przejdź do **Zarządzanie magazynem** \> **Wspólne** \> **Grupy czynności** \> **Grupy czynności wysyłki** \> **Wszystkie grupy czynności**.
+      - Przejdź do **Zarządzanie magazynem** \> **Wychodzące grupy czynności** \> **Grupy czynności wysyłki** \> **Wszystkie grupy czynności**.
+      - Przejdź do **Zarządzanie magazynem** \> **Grupy czynności** \> **Grupy czynności wysyłki** \> **Wszystkie grupy czynności**.
+      - Przejdź do **Zarządzanie magazynem** \> **Grupy czynności** \> **Grupy czynności wysyłki** \> **Wszystkie grupy czynności**.
 
 1. Wybierz grupę czynności do anulowania. W okienku akcji na karcie **Praca** wybierz opcję **Anuluj**.
 

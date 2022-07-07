@@ -1,8 +1,8 @@
 ---
-title: Konfigurowanie opcjonalnych funkcji środowiska oceny rozwiązania Dynamics 365 Commerce
-description: W tym artykule opisano sposób konfigurowania funkcji opcjonalnych środowiska oceny Microsoft Dynamics 365 Commerce.
+title: Konfiguruj funkcje opcjonalne środowiska piaskownicy usługi Dynamics 365 Commerce
+description: W tym artykule opisano sposób konfigurowania funkcji opcjonalnych środowiska piaskownicy Microsoft Dynamics 365 Commerce.
 author: psimolin
-ms.date: 07/16/2020
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,24 +14,24 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 39d4784e21c4fb42ca218d507616d49eff309ee1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 201628eb0c3e81d5fee0df9e53d93f5b1839adfb
+ms.sourcegitcommit: 252cb41c3029b623354698463f7b44a29fd9f184
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861921"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9013245"
 ---
-# <a name="configure-optional-features-for-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurowanie opcjonalnych funkcji środowiska oceny rozwiązania Dynamics 365 Commerce
+# <a name="configure-optional-features-for-a-dynamics-365-commerce-sandbox-environment"></a>Konfiguruj funkcje opcjonalne środowiska piaskownicy usługi Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-W tym artykule opisano sposób konfigurowania funkcji opcjonalnych środowiska oceny Microsoft Dynamics 365 Commerce.
+W tym artykule opisano sposób konfigurowania funkcji opcjonalnych środowiska piaskownicy Microsoft Dynamics 365 Commerce.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Jeśli chcesz ocenić funkcje transakcyjnej poczty e-mail, muszą być spełnione następujące wymagania wstępne:
+Jeśli chcesz przetestować funkcje transakcyjnej poczty e-mail, muszą być spełnione następujące wymagania wstępne:
 
-- Jest dostępny serwer poczty e-mail (serwer Simple Mail Transfer Protocol \[SMTP\]), który może być używany z poziomu subskrypcji platformy Microsoft Azure, w której jest inicjowane środowisko oceny.
+- Jest dostępny serwer poczty e-mail (serwer Simple Mail Transfer Protocol \[SMTP\]), który może być używany z poziomu subskrypcji platformy Microsoft Azure, w której jest inicjowane środowisko piaskownicy.
 - Masz dostęp do w pełni kwalifikowanej nazwy (FQDN)/adresu IP serwera, numeru portu SMTP oraz szczegółów uwierzytelniania.
 
 ## <a name="configure-the-image-back-end"></a>Konfigurowanie zaplecza obrazu
@@ -39,10 +39,10 @@ Jeśli chcesz ocenić funkcje transakcyjnej poczty e-mail, muszą być spełnion
 ### <a name="find-your-media-base-url"></a>Znajdowanie podstawowego adresu URL multimediów
 
 > [!NOTE]
-> Aby można było wykonać tę procedurę, należy wykonać kroki opisane w części [Konfigurowanie witryny w usłudze Commerce](cpe-post-provisioning.md#set-up-your-site-in-commerce).
+> Aby można było wykonać tę procedurę, należy wykonać kroki opisane w części [Konfigurowanie witryny w usłudze Commerce](cpe-post-provisioning.md#set-up-your-e-commerce-sites).
 
 1. Zaloguj się do konstruktora witryny Commerce przy użyciu adresu URL zanotowanego podczas inicjowania usługi handlu elektronicznego w trakcie aprowizacji (zobacz [Inicjowanie usługi handlu elektronicznego](provisioning-guide.md#initialize-e-commerce)).
-1. Otwórz witrynę **Fabrikam** .
+1. Otwórz witrynę **Fabrikam**, **Adventure Works** lub **Adventure Works Business**, z którą chcesz pracować.
 1. W menu po lewej stronie wybierz pozycję **Biblioteka multimediów**.
 1. Wybierz dowolny składnik majątku dla pojedynczego obrazu.
 1. W inspektorze właściwości po prawej stronie znajdź właściwość **Publiczny adres URL**. Wartość to adres URL. Oto przykład:
@@ -98,9 +98,9 @@ Dla każdego zdarzenia transakcyjnego, w ramach którego chcesz wysyłać wiadom
 
 ## <a name="customize-email-templates"></a>Dostosowywanie szablonów wiadomości e-mail
 
-Możesz dostosować szablony wiadomości e-mail, tak aby były używane różne obrazy. Możesz również zaktualizować linki w szablonach, tak aby przenosiły Cię do środowiska oceny. W poniższej procedurze opisano sposób pobierania szablonów domyślnych, dostosowywania ich i aktualizowania szablonów w systemie.
+Możesz dostosować szablony wiadomości e-mail, tak aby były używane różne obrazy. Możesz również zaktualizować linki w szablonach, tak aby przenosiły Cię do środowiska piaskownicy. W poniższej procedurze opisano sposób pobierania szablonów domyślnych, dostosowywania ich i aktualizowania szablonów w systemie.
 
-1. W przeglądarce internetowej pobierz [plik zip domyślnych szablonów wiadomości e-mail oceny aplikacji Microsoft Dynamics 365 Commerce](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) na komputer lokalny. Ten plik zawiera następujące dokumenty HTML:
+1. W przeglądarce internetowej pobierz [plik zip domyślnych szablonów wiadomości e-mail demonstracyjny aplikacji Microsoft Dynamics 365 Commerce](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) na komputer lokalny. Ten plik zawiera następujące dokumenty HTML:
 
     - Szablon potwierdzenia zamówienia
     - Wystaw szablon karty upominkowej
@@ -167,15 +167,11 @@ Dla każdego produktu w zamówieniu następujące tokeny są wypełniane wartoś
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Omówienie środowiska oceny usługi Dynamics 365 Commerce](cpe-overview.md)
+[Ustanowienie środowiska piaskownicy usługi Dynamics 365 Commerce](provisioning-guide.md)
 
-[Ustanowienie środowiska oceny Dynamics 365 Commerce](provisioning-guide.md)
+[Konfiguruj środowisko piaskownicy usługi Dynamics 365 Commerce](cpe-post-provisioning.md)
 
-[Konfigurowanie środowiska oceny usługi Dynamics 365 Commerce](cpe-post-provisioning.md)
-
-[Konfigurowanie BOPIS w środowisku oceny Dynamics 365 Commerce](cpe-bopis.md)
-
-[Środowiska oceny usługi Dynamics 365 Commerce — często zadawane pytania](cpe-faq.md)
+[Konfigurowanie BOPIS w środowisku piaskownicy Dynamics 365 Commerce](cpe-bopis.md)
 
 [Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 9c0d87dfb4c432f9cff0f1172139dbcda6308275
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2ee316a3e6a6baef7aa8b5d46b04a2d1bb07a641
+ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860675"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "9022531"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Jak pracownicy korzystają z interfejsu wykonania hal produkcyjnych
 
@@ -263,9 +263,6 @@ Pracownik rejestruje przerwę, wybierając opcję **Przerwa**, a następnie wybi
 
 ## <a name="view-the-my-day-dialog"></a>Wyświetl okno dialogowe „Mój dzień”
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
-
 Okno dialogowe **Mój dzień** umożliwia pracownikom przegląd ich rejestracji i sald. Dialog jest podzielony na trzy następujące części:
 
 - Sekcja główna zawiera listę rejestracji, których aktualny pracownik dokonał w wybranym dniu. Otwiera się on, pokazując rejestracje na bieżący dzień, a także umożliwia wybór daty, dzięki czemu pracownik może zobaczyć inne dni.
@@ -275,9 +272,6 @@ Okno dialogowe **Mój dzień** umożliwia pracownikom przegląd ich rejestracji 
 Administratorzy mogą dodać tę funkcję do interfejsu, umieszczając przycisk **Mój dzień** na pasku narzędzi dla każdej odpowiedniej zakładki, jak opisano w [Projektowanie interfejsu wykonawczego hali produkcyjnej](production-floor-execution-tabs.md).
 
 ## <a name="working-in-teams"></a>Praca w zespołach
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
 
 Kiedy kilku pracowników jest przydzielonych do tego samego zadania produkcyjnego, mogą oni tworzyć zespół. Drużyna może wyznaczyć jednego pracownika jako pilota. Pozostali pracownicy automatycznie stają się asystentami tego pilota. W powstałej w ten sposób drużynie tylko pilot musi zarejestrować status pracy. Ewidencja czasu pracy dotyczy wszystkich członków zespołu.
 

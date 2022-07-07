@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 593f6a8e28c789a378515ddc8e4163c331442e8b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4424ebbf64ccdcb9bffc840520952ac915606209
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890952"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015502"
 ---
 # <a name="calculations-for-product-configuration-models-faq"></a>Obliczenia dla modeli produktu w konfiguracji — często zadawane pytania
 
@@ -73,7 +73,7 @@ Można zastąpić wartość, która jest obliczana dla atrybutu docelowego, o il
 ## <a name="how-do-i-set-a-target-attribute-as-hidden-or-read-only"></a>Jak ustawić atrybut docelowy jako ukryty lub tylko do odczytu?
 Aby ustawić atrybut jako ukryty lub tylko do odczytu, należy wykonać następujące czynności:
 
-1.  Kliknij kolejno opcje **Zarządzanie informacjami o produktach** &gt; **Wspólne** &gt; **Modele konfiguracji produktu**.
+1.  Kliknij kolejno opcje **Zarządzanie informacjami o produktach** &gt; **Produkty** &gt; **Modele konfiguracji produktu**.
 2.  Wybierz model konfiguracji produktu, a następnie w okienku akcji, kliknij przycisk **Edytuj**.
 3.  Na stronie **Szczegóły modelu konfiguracji produktu opartej na ograniczeniu** wybierz atrybut, który będzie używany jako docelowy.
 4.  Na skróconej karcie **Atrybuty** wybierz **Ukryty** lub **Tylko do odczytu**.
@@ -96,7 +96,7 @@ Ten komunikat jest wyświetlany, gdy obliczenie zawiera błąd lub istnieje sprz
 ## <a name="why-do-i-receive-an-error-message-even-though-i-successfully-validated-my-product-model"></a>Dlaczego pojawia się błąd, nawet jeśli pomyślnie zweryfikowano dany model produktu?
 Sprawdzanie poprawności nie zawiera obliczeń. Należy przetestować model konfiguracji produktu w celu znalezienia błędów w obliczeniach. Poniższe kroki zawierają informacje dotyczące sposobu testowania modelu konfiguracji produktu:
 
-1.  Kliknij kolejno opcje **Zarządzanie informacjami o produktach** &gt; **Wspólne** &gt; **Modele konfiguracji produktu**.
+1.  Kliknij kolejno opcje **Zarządzanie informacjami o produktach** &gt; **Produkty** &gt; **Modele konfiguracji produktu**.
 2.  Wybierz model konfiguracji produktu, a następnie w okienku akcji, w grupie **Uruchom** kliknij **Test**.
 
 

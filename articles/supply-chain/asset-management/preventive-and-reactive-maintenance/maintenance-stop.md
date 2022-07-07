@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 75e30c8b2d74cc2f1ca538b64e5fc801f9ca130a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 42e8ba4e19333cb25464203a2583175ef082ad98
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897698"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016486"
 ---
 # <a name="maintenance-downtime-activities"></a>Działania w ramach przerwy konserwacyjnej
 
@@ -38,14 +38,14 @@ Po wybraniu składników majątku w rejestracji czasu przestoju, wszystkie otwar
 
 ## <a name="maintenance-downtime-activities"></a>Działania w ramach przerwy konserwacyjnej
 
-Kliknij **Zarządzanie składnikami majątku** > **Wspólne** > **Działania w ramach przerwy konserwacyjnej** > **Wszystkie działania w ramach przerwy konserwacyjnej**, aby otworzyć listę wszystkich działań związanych z przestojami serwisowych i zobaczyć niektóre informacje dotyczące działań. Kliknij łącze w kolumnie **Działania w ramach przerwy konserwacyjnej**, aby otworzyć widok szczegółów. Na poniższej ilustracji pokazano przykład strony listy **Działania w ramach przerwy konserwacyjnej**.
+Kliknij **Zarządzanie składnikami majątku** > **Działania w ramach przerwy konserwacyjnej** > **Wszystkie działania w ramach przerwy konserwacyjnej**, aby otworzyć listę wszystkich działań związanych z przestojami serwisowych i zobaczyć niektóre informacje dotyczące działań. Kliknij łącze w kolumnie **Działania w ramach przerwy konserwacyjnej**, aby otworzyć widok szczegółów. Na poniższej ilustracji pokazano przykład strony listy **Działania w ramach przerwy konserwacyjnej**.
 
 ![Rysunek 1.](media/19-preventive-maintenance.png)
 
 
 ## <a name="create-a-maintenance-downtime-activity"></a>Tworzenie działania w ramach przerwy konserwacyjnej
 
-1. Kliknij **Zarządzanie składnikami majątku** > **Wspólne** > **Działania w ramach przerwy konserwacyjnej** > **Wszystkie działania w ramach przerwy konserwacyjnej** lub **Aktywne działania w ramach przerwy konserwacyjnej**.
+1. Kliknij **Zarządzanie składnikami majątku** > **Działania w ramach przerwy konserwacyjnej** > **Wszystkie działania w ramach przerwy konserwacyjnej** lub **Aktywne działania w ramach przerwy konserwacyjnej**.
 
 2. Kliknij przycisk **Nowy**.
 

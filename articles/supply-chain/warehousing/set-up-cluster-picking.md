@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3094649da2ce9a700a4d1cde236609013f4b9744
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0ec3de073def2ff63af3c04b5696cbcec4f09948
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8862316"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014771"
 ---
 # <a name="set-up-cluster-picking"></a>Konfiguruj pobieranie dla grupy
 
@@ -74,9 +74,14 @@ W przypadku stosowania pobierania dla grupy bardzo ważne jest potwierdzanie tow
 
 ### <a name="set-up-item-verification-with-cluster-picking"></a>Konfigurowanie weryfikowania towarów w trakcie pobierania dla grupy
 
-1. Na urządzeniu przenośnym w menu otwórz formularz ustawień potwierdzenia pracy: **Zarządzanie magazynem** \> **Zarządzanie magazynem** \> **Ustawienia** \> **Urządzenie przenośne** \> **Elementy menu urządzenia przenośnego**.
+1. Wybierz kolejno opcje **Zarządzanie magazynem** > **Ustawienia** > **Urządzenie przenośne** > **Elementy menu urządzenia przenośnego**.
+1. W okienku z listą wybierz element menu, który chcesz skonfigurować.
+1. W okienku akcji wybierz **Ustawienia potwierdzenia pracy**.
+1. Wykonaj jedną z następujących akcji:
+    - Jeśli istnieje już wiersz dla **Typu pracy**, który chcesz skonfigurować, zaznacz go, a następnie wybierz pozycję **Edytuj** w okienku akcji.
+    - Jeśli odpowiedni wiersz nie istnieje, wybierz przycisk **Nowy** w okienku akcji, a następnie ustaw odpowiedni **Typ pracy**.
+1. Zaznacz pole wyboru **Potwierdzenie produktu** dla nowego lub wybranego wiersza. Umożliwia to pracownikom weryfikowanie każdego artykułu w zapasach, używając urządzenia przenośnego.
 
-1. Na urządzeniu przenośnym w menu otwórz pozycję **Konfiguracja potwierdzenia pracy**. Opcja **Potwierdzenie produktu** umożliwia weryfikowanie każdego artykułu w zapasach z urządzenia przenośnego podczas skanowania.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

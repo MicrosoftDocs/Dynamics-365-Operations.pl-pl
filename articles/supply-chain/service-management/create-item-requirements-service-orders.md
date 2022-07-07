@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5c2c90ff76121b436d0fec532268cd3383de0eab
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f21cda0abb334432d22cc7e0ccfdab724253d91e
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888420"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016957"
 ---
 # <a name="create-item-requirements-for-service-orders"></a>Tworzenie zapotrzebowań na towary na podstawie zleceń serwisowych
 
@@ -34,14 +34,14 @@ Zapotrzebowania na towary dla zlecenia serwisowego są przetwarzane za pomocą p
 
 ## <a name="create-an-item-requirement-for-a-service-order"></a>Tworzenie zapotrzebowania na towary dla zlecenia serwisowego
 
-1. Przejdź do **Zarządzanie serwisem** \> **Wspólne** \> **Zlecenia serwisowe** \> **Zlecenia serwisowe**.
+1. Przejdź do **Zarządzanie serwisem** \> **Zlecenia serwisowe** \> **Zlecenia serwisowe**.
 1. Wybierz zlecenie serwisowe, dla którego chcesz utworzyć zapotrzebowanie na towar.
 1. W **okienku akcji** na karcie **Wysyłka** wybierz opcję **Zapotrzebowanie na towary**.
 1. W formularzu **Zapotrzebowanie na towary** wprowadź informacje dla wymaganego towaru. Aby uzyskać więcej informacji o konkretnych polach, zobacz [Zapotrzebowanie na towary (formularz)](https://technet.microsoft.com/library/aa552021\(v=ax.60\)).
 
 ## <a name="create-an-item-requirement-for-a-service-agreement"></a>Tworzenie zapotrzebowania na towary do umowy serwisowej
 
-1. Przejdź do **Zarządzanie serwisem** \> **Wspólne** \> **Umowy serwisowe** \> **Umowy serwisowe**.
+1. Przejdź do **Zarządzanie serwisem** \> **Umowy serwisowe** \> **Umowy serwisowe**.
 1. Otwórz umowę serwisową, dla której chcesz utworzyć zapotrzebowanie na towar.
 1. Na skróconej karcie **Wiersze** wybierz **Dodaj**, aby utworzyć nowy wiersz.
 1. W polu **Typ transakcji** wybierz opcję **Towar**.

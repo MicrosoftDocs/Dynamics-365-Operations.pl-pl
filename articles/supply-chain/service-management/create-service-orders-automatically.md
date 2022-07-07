@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1bd2d0e8463e12004022caeb464d70881aa895ce
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: db9d337166f05f80cfdb9d4b82533117daa871e9
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670085"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014728"
 ---
 # <a name="create-service-orders-automatically"></a>Automatyczne tworzenie zleceń serwisowych    
 
@@ -35,7 +35,7 @@ Podczas tworzenia zleceń serwisowych ręcznie lub automatycznie z poziomu wiers
 
 ## <a name="create-service-orders-automatically-for-a-service-agreement"></a>Automatyczne tworzenie zleceń serwisowych dla umowy serwisowej
 
-1.  Kliknij kolejno opcje **Zarządzanie serwisem** \> **Wspólne** \> **Umowy serwisowe** \> **Umowy serwisowe**.
+1.  Kliknij kolejno opcje **Zarządzanie serwisem** \> **Umowy serwisowe** \> **Umowy serwisowe**.
 
 2.  Wybierz umowę serwisową.
 

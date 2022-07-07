@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f3a9ee0a96e6a9097608b4c7cd1f65085e95b8ca
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 30c672286c16a4353556a507019960edb93f8b1b
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897727"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016602"
 ---
 # <a name="manual-update-of-asset-counters"></a>Ręczna aktualizacja liczników zasobów
 
@@ -34,7 +34,7 @@ Typ licznika wybrany dla licznika może być skonfigurowany do dziedziczenia war
 
 Na stronie **Wszystkie składniki majątku** można tworzyć godziny lub rejestracje liczników ilości dla składnika w oparciu o odczyty w składniku.
 
-1. Wybierz **Zarządzanie składnikami majątku** > **Wspólne** > **Składniki majątku** > **Wszystkie składniki majątku**.
+1. Wybierz **Zarządzanie składnikami majątku** > **Składniki majątku** > **Wszystkie składniki majątku**.
 
 2. Wybierz środek trwały, a następnie w okienku akcji na karcie **Składnik majątku** w grupie **Zapobiegawcze** wybierz pozycję **Liczniki**. Na stronie **Liczniki składników majątku** zostanie wyświetlona lista wszystkich poprzednich rejestracji liczników, które zostały wykonane dla wybranego składnika.
 

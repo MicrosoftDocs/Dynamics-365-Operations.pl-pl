@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a6e9454baa33e37fe62db2b7bd39ff00891ff855
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5be880a6d178743f4a2d3339609604d993f7e5d5
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905032"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016428"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Nowości i zmiany w programie Dynamics 365 for Operations w wersji 1611 (listopad 2016)
 
@@ -818,7 +818,7 @@ Obecnie moduł Retail Modern POS jest dostępny tylko jako aplikacja systemu Win
 | Korygowanie zapasów należących do dostawcy za pomocą arkusza inwentaryzacji. | Ważne jest, aby ilość dostępnych zapasów zapisana w systemie była taka sama, jak fizycznie istniejące zapasy. Zapasy należące do dostawcy można korygować w górę i w dół przy użyciu procesów inwentaryzacji, takich jak procesy korekty ilości i procesy arkusza inwentaryzacji. |
 | Uzyskiwanie dodatkowych informacji o obsłudze konsygnacji w programie Dynamics 365 for Operations | Aby uzyskać więcej informacji o obsłudze procesów konsygnacji, zobacz tematy [Konsygnacja](../../../supply-chain/inventory/consignment.md), [Konfigurowanie konsygnacji](/d365F-O/fin-ops-core/fin-ops/get-started/consignment), [Tworzenie zamówienia uzupełnienia zapasów konsygnacyjnych (przewodnik po zadaniu)](../../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md) i [Zmiana własności zapasów konsygnacyjnych w oparciu o zapotrzebowanie produkcyjne](../../../supply-chain/inventory/tasks/change-ownership-consignment.md). |
 
-### <a name="vendor-collaboration-previously-known-as-the-vendor-portal"></a>Portal współpracy z dostawcami (znany wcześniej jako portal dostawców)
+### <a name="vendor-collaboration"></a>Portal współpracy z dostawcami
 
 | Co można zrobić | Dlaczego to jest ważne |
 |-----------------|-----------------------|

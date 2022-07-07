@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7905dcd4c29872ec2601359baefa78545140397c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 210db3259a6c64a508119b30598a34dbda2d2dd2
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857903"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015006"
 ---
 # <a name="add-fault-to-work-order"></a>Dodawanie błędu do zlecenia pracy
 
@@ -30,7 +30,7 @@ ms.locfileid: "8857903"
 
 Do zlecenia pracy można dodawać usterki, które zostały skonfigurowane w projektancie usterek. Co najmniej jeden rekord usterki musi być połączony z typami składników majątku, które są używane dla składnika majątku wybranego w tym zleceniu pracy. Aby uzyskać więcej informacji o konfiguracji, zobacz temat [Zarządzanie usterkami](../setup-for-work-orders/fault-management.md).
 
-1. Wybierz pozycję **Zarządzanie składnikami majątku** > **Wspólne** > **Zlecenia pracy** > **Wszystkie zlecenia pracy** lub **Aktywne zlecenia pracy**.
+1. Wybierz pozycję **Zarządzanie składnikami majątku** > **Zlecenia pracy** > **Wszystkie zlecenia pracy** lub **Aktywne zlecenia pracy**.
 
 2. Wybierz zlecenie pracy, w którym chcesz przeprowadzić rejestrację usterek, a następnie w okienku akcji, na karcie **Zlecenie pracy**, w grupie **Składnik majątku** wybierz pozycję **Usterka składnika majątku**.
 
@@ -64,7 +64,7 @@ Na stronie listy **Usterki składnika majątku** można uzyskać przegląd wszys
 
 Na stronie z listą **Wszystkie składniki majątku** można wydrukować raport usterek składników majątku, który przedstawia wszystkie rejestracje usterek oraz graficzne omówienie statystyk dotyczących usterek.
 
-1. Wybierz **Zarządzanie składnikami majątku** > **Wspólne** > **Składniki majątku** > **Wszystkie składniki majątku**.
+1. Wybierz **Zarządzanie składnikami majątku** > **Składniki majątku** > **Wszystkie składniki majątku**.
 
 2. Wybierz składnik majątku, dla którego ma zostać wydrukowany raport usterek.
 

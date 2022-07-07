@@ -2,7 +2,7 @@
 title: Omówienie raportowania finansowego
 description: W tym artykule opisano, jak uzyskać dostęp do modułu sprawozdawczości finansowej w Microsoft Dynamics 365 Finance i jak korzystać z funkcji raportowania finansowego.
 author: aprilolson
-ms.date: 03/31/2022
+ms.date: 06/20/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b09adc738ac36625436e5cc3197e79603fff9b8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f2c31e8b8b8022e5dfdb1f8dc4836d3d95174078
+ms.sourcegitcommit: d9d111d7420ca8f1071689afe38a1ccf4b8051f4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853417"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "9033668"
 ---
 # <a name="get-started-with-financial-reporting"></a>Rozpoczynanie pracy z raportowaniem finansowym 
 
@@ -30,14 +30,17 @@ ms.locfileid: "8853417"
 
 W tym artykule opisano, jak uzyskać dostęp do modułu Financial Reporting i jak korzystać z funkcji raportowania finansowego. Zawiera też opis domyślnych raportów finansowych, które są zawarte w programie.
 
+## <a name="enable-financial-reporting"></a>Włączanie raportowania finansowego
+Aby można było używać usługi raportowania finansowego w organizacji, administrator usługi Lifecycle Services (LCS) musi włączyć tę usługę w portalu usługi LCS dla organizacji. Jeśli raportowanie finansowe nie zostało uaktywnione dla tego środowiska, skontaktuj się z administratorem usługi LCS, aby włączyć tę usługę. 
+
 ## <a name="accessing-financial-reporting"></a>Uzyskiwanie dostępu do raportowania finansowego
 
 Menu **Raportowanie finansowe** można znaleźć w następujących lokalizacjach:
 
-- **Księga główna** &gt; **Zapytania i raporty**
-- **Budżetowanie** &gt; **Zapytania i raporty** &gt; **Budżetowanie podstawowe**
-- **Budżetowanie** &gt; **Zapytania i raporty** &gt; **Planowanie budżetu**
-- **Budżetowanie** &gt; **Zapytania i raporty** &gt; **Kontrola budżetu**
+- **Księga główna** > **Zapytania i raporty**
+- **Budżetowanie** > **Zapytania i raporty** > **Budżetowanie podstawowe**
+- **Budżetowanie** > **Zapytania i raporty** > **Planowanie budżetu**
+- **Budżetowanie** > **Zapytania i raporty** > **Kontrola budżetu**
 - Konsolidacje
 
 Aby tworzyć i generować raporty finansowe firmy, należy ustawić następujące informacje o tej firmie:

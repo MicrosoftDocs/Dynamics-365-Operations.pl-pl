@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4ae943592c18dd0383aafbce59617cc983dc979b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 25561802996514f6f60fc9400c22dc61a30ef1c8
+ms.sourcegitcommit: bad64015da0c96a6b5d81e389708281406021d4f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907298"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "9023796"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Współpraca z dostawcami zewnętrznymi przy użyciu modułu Współpraca z dostawcami
 
@@ -29,9 +29,6 @@ ms.locfileid: "8907298"
 Moduł **Współpraca z dostawcami** jest przeznaczony dla dostawców, którzy nie ma mają systemów elektronicznej wymiany danych (EDI) zintegrowanych z Microsoft Dynamics 365 Supply Chain Management. Umożliwia dostawcom pracę z zamówieniami zakupu (PO), fakturami, zapasami konsygnacyjnymi i zapytaniami ofertowymi (RFQ), a także uzyskanie dostępu do części danych głównych dostawcy. W tym artykule wyjaśniono możliwości współpracy z zewnętrznymi dostawcami, którzy używają interfejsu współpracy z dostawcami do wykonywania operacji na zamówieniach zakupu, zapytaniach ofertowych i zapasach konsygnacyjnych. Wyjaśniono także sposoby konfigurowania określonych dostawców do używania portalu współpracy z dostawcami oraz sposoby definiowania informacji wyświetlanych wszystkim dostawcom podczas odpowiadania na zamówienie zakupu.
 
 Aby uzyskać więcej informacji o tym, co zewnętrzni dostawcy mogą robić w interfejsie współpracy z dostawcami, zobacz [Współpraca dostawców z odbiorcami](vendor-collaboration-work-customers-dynamics-365-operations.md).
-
-> [!NOTE]
-> Informacje na temat współpracy z dostawcą w tym artykule dotyczą tylko aktualnej wersji rozwiązania Supply Chain Management. W systemie Microsoft Dynamics AX 7.0 (luty 2016 r.) i aplikacji Microsoft Dynamics AX w wersji 7.0.1 (maj 2016 r.) do współpracy z dostawcami służy moduł **Portal dostawców**. Informacje o module **Portal dostawców** zawiera temat [Współpraca z dostawcami za pomocą portalu dostawców](collaborate-vendors-vendor-portal.md).
 
 Aby uzyskać więcej informacji o tym, jak dostawcy mogą wykorzystywać portal współpracy z dostawcami w procesach fakturowania, zobacz [Obszar roboczy fakturowania w portalu współpracy z dostawcami](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md). Aby uzyskać więcej informacji o inicjowaniu obsługi nowych użytkowników portalu współpracy z dostawcami, zobacz [Zarządzanie użytkownikami portalu współpracy z dostawcami](manage-vendor-collaboration-users.md).
 
@@ -57,8 +54,25 @@ Administrator konfiguruje ustawienia ogólne współpracy z dostawcą, takie jak
 
 Zanim będzie można tworzyć konta użytkowników u zewnętrznego dostawcy, należy skonfigurować konto dostawcy, aby umożliwić mu używanie portalu współpracy z dostawcami. Na stronie **Dostawcy** na karcie **Ogólne** ustaw pole **Aktywacja współpracy**. Dostępne są następujące opcje:
 
-- **Aktywna (zamówienie zakupu zostało automatycznie potwierdzone)** — zamówienia zakupu są automatycznie potwierdzane, gdy dostawca akceptuje je bez zmian.
+- **Aktywna (zamówienie zakupu zostało automatycznie potwierdzone)** — zamówienia zakupu są automatycznie potwierdzane, gdy dostawca akceptuje je bez zmian. W przypadku użycia tej opcji należy zaplanować zadanie wsadowe *Potwierdź zaakceptowane zamówienia zakupu z portalu współpracy z dostawcami*, które jest odpowiedzialne za przetwarzanie potwierdzeń. Instrukcje znajdziesz w następnej sekcji.
 - **Aktywna (zamówienie zakupu nie zostało automatycznie potwierdzone)** — zamówienia zakupu muszą zostać ręcznie potwierdzone przez Twoją organizację po ich zaakceptowaniu przez dostawcę.
+
+### <a name="scheduling-the-auto-confirmation-batch-job"></a>Planowanie zadania wsadowego automatycznego potwierdzenia
+
+W przypadku użycia opcji **Aktywne (zamówienie zakupu zostało automatycznie potwierdzone)** dla co najmniej jednego dostawcy (zgodnie z opisem w poprzedniej sekcji), należy zaplanować zadanie wsadowe *Potwierdź zaakceptowane zamówienia zakupu z portalu współpracy z dostawcami*, które jest odpowiedzialne za przetwarzanie i potwierdzanie zamówień zakupu. W przeciwnym razie automatyczne potwierdzenia nie zostaną przeprowadzone. Aby utworzyć zadanie wsadowe, należy zaplanować to zadanie.
+
+1. Przejdź do listy **Zaopatrzenie i sourcing \> Zamówienia zakupu \> Potwierdzenie zamówienia zakupu \> Potwierdź zaakceptowane zamówienia zakupu z portalu współpracy z dostawcami**.
+1. W oknie dialogowym **Potwierdź zaakceptowane zamówienia zakupu z portalu współpracy z dostawcami**, na skróconej karcie **Uruchom w tle** wybierz pozycję **Cykl**.
+1. W oknie dialogowym **Definiowanie cyklu** zdefiniuj harmonogram, na podstawie którego zadanie ma zostać uruchomione. Podczas wybierania harmonogramu należy rozważyć następujące kwestie:
+
+    - Jeśli w systemie przetwarzana jest duża ilość danych i jest uruchamianych wiele zadań wsadowych, problemem może być wydajność. W takim przypadku zadanie prawdopodobnie nie powinno być uruchamiane częściej niż co 10 minut (w zależności od innych wymagań). Jeśli wydajność nie jest problemem, w razie potrzeby można ją uruchamiać nawet co 1–2 minuty.
+    - Jeśli dostawcy nie mogą szybko dostarczyć towarów (w uzgodnionym przez nich dniu), cykl powinien być powtarzany (co 10–30 minut itd.). W ten sposób pracownicy magazynu będą mogli odbierać towary zgodnie z potwierdzonym zamówieniem zakupu po potwierdzeniu.
+    - Jeśli dostawcy mają długi czas realizacji (ponad 24 godziny), można skonfigurować to zadanie tylko raz na dzień.
+
+1. Wybierz przycisk **OK**, aby zastosować harmonogram i powrócić do okna dialogowego **Potwierdź zaakceptowane zamówienia zakupu z portalu współpracy z dostawcami**.
+1. W razie potrzeby ustaw dodatkowe opcje w tle. To okno dialogowe zawiera typowe opcje konfigurowania zadań wsadowych w Supply Chain Management.
+
+Aby uzyskać więcej informacji na temat zadań wsadowych, zobacz [Omówienie przetwarzania wsadowego](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
 
 ### <a name="specifying-whether-the-vendor-should-see-price-information"></a>Określanie czy dostawca ma widzieć informacje o cenie
 

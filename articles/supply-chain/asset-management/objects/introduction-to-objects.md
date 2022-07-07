@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee61c43f93d68747a7095dc9317674a435553c8a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d8498d6099112cea2c57a6387e7596adb5bcd84e
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874196"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016022"
 ---
 # <a name="introduction-to-assets"></a>Wprowadzenie do składników majątku
 
@@ -34,9 +34,9 @@ Ten artykuł stanowi przegląd składników majątku w module Zarządzanie skła
 
 Składnik majątku jest automatycznie aktualizowany o powiązane z nim informacje. Na przykład powiązane informacje mogą dotyczyć nowych lub zaktualizowanych zleceń pracy. Składniki majątku można tworzyć za pomocą elementów menu **Wszystkie składniki majątku** lub **Oczekujące składniki majątku**. W tym artykule wyjaśniono, jak tworzyć zasoby za pomocą elementu menu **Wszystkie składniki majątku**. Aby uzyskać informacje dotyczące sposobu tworzenia składników majątku przy użyciu elementu menu **Oczekujące składniki majątku**, zobacz temat [Tworzenie składników majątku na zamówień zakupu](../objects/create-objects-based-on-purchase-orders.md).
 
-## <a name="all-assets"></a>Wszystkie składniki aktywów
+## <a name="all-assets"></a>Wszystkie składniki majątku
 
-Wybierz kolejno **Zarządzanie składnikami majątku** \> **Wspólne** \> **Składniki majątku** \> **Wszystkie składniki majątku**. Na stronie listy **Wszystkie składniki majątku** są wyświetlane wszystkie składniki majątku i niektóre powiązane z nimi informacje. Aby wyświetlić tylko aktywne zasoby, wybierz **Aktywne składniki majątku**. Aby wyświetlić tylko składniki majątku, które są zainstalowane w lokalizacjach czynności konserwacyjnych powiązanych z konserwatorem, wybierz pozycję **Moje aktywne składniki majątku**. (Tę relację ustawia się na stronie **Pracownicy**. Aby dowiedzieć się więcej, zobacz temat [Konserwatorzy i grupy pracowników](../setup-for-objects/workers-and-worker-groups.md)).
+Wybierz kolejno **Zarządzanie składnikami majątku** \> **Składniki majątku** \> **Wszystkie składniki majątku**. Na stronie listy **Wszystkie składniki majątku** są wyświetlane wszystkie składniki majątku i niektóre powiązane z nimi informacje. Aby wyświetlić tylko aktywne zasoby, wybierz **Aktywne składniki majątku**. Aby wyświetlić tylko składniki majątku, które są zainstalowane w lokalizacjach czynności konserwacyjnych powiązanych z konserwatorem, wybierz pozycję **Moje aktywne składniki majątku**. (Tę relację ustawia się na stronie **Pracownicy**. Aby dowiedzieć się więcej, zobacz temat [Konserwatorzy i grupy pracowników](../setup-for-objects/workers-and-worker-groups.md)).
 
 W widoku siatki **Wszystkie składniki majątku** wybierz łącze w kolumnie **Składnik majątku**, aby wyświetlić szczegóły wybranego rekordu. Aby edytować rekord, wybierz przycisk **Edytuj**. W widoku szczegółów są wyświetlane szczegółowe informacje związane ze składnikiem majątku. Okienko **Informacje pokrewne** po prawej stronie zawiera dodatkowe informacje związane ze składnikiem majątku. Rozwiń okienko, aby wyświetlić informacje pokrewne dla wybranego składnika majątku.
 

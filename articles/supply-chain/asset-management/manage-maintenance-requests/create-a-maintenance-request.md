@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c3def1b8ebd75da44588732d9f54a1cc03c999c6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 92f3a2bc3d2a4d5d1c3be0c6dda2674dc3e7d0bb
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8891242"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016834"
 ---
 # <a name="create-maintenance-requests"></a>Utwórz żądania konserwacji
 
@@ -32,9 +32,9 @@ ms.locfileid: "8891242"
 
 **Przykład:** gdy konserwator robi naprawę, odkrywa, że inny składnik majątku w tej samej lokalizacji musi być serwisowany. Konserwator nie ma jednak czasu ani wymaganych części zamiennych do wykonania naprawy. W związku z tym tworzy żądanie konserwacji składnika majątku i wprowadza krótki opis problemu.
 
-Sekcja **Aktywne żądania konserwacji** w okienku **Powiązane informacje** po prawej stronie strony **Wszystkie składniki majątku** lub **Aktywne składniki majątku** (**Zarządzanie składnikami majątku** \> **Wspólne** \> **Składniki majątku** \> **Wszystkie składniki majątku** lub **Aktywne składniki majątku**) zawiera aktywne żądania konserwacji, które są dołączone do wybranego składnika majątku.
+Sekcja **Aktywne żądania konserwacji** w okienku **Powiązane informacje** po prawej stronie strony **Wszystkie składniki majątku** lub **Aktywne składniki majątku** (**Zarządzanie składnikami majątku** \> **Składniki majątku** \> **Wszystkie składniki majątku** lub **Aktywne składniki majątku**) zawiera aktywne żądania konserwacji, które są dołączone do wybranego składnika majątku.
 
-1. Wybierz **Zarządzanie składnikami majątku** \> **Wspólne** \> **Żądania konserwacji** \> **Wszystkie żądania konserwacji** lub **Aktywne żądania konserwacji**.
+1. Wybierz **Zarządzanie składnikami majątku** \> **Żądania konserwacji** \> **Wszystkie żądania konserwacji** lub **Aktywne żądania konserwacji**.
 2. Wybierz pozycję **Nowy**.
 3. W oknie dialogowym **Tworzenie żądania** w polu **Typ żądania konserwacji** wybierz typ żądania konserwacji. Sugerowany jest domyślny typ.
 4. W polu **opis** wprowadź nazwę lub tytuł, który krótko opisuje żądanie konserwacji.

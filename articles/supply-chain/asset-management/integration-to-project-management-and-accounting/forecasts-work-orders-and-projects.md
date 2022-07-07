@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 80f0380d50a0c050242846c0c3e70bc1a0bd6bf5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: df1e1fe352add8361309df54b2178ec27752466d
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8880459"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016805"
 ---
 # <a name="forecasts-work-orders-and-projects"></a>Prognozy, zlecenia pracy i projekty
 
@@ -60,7 +60,7 @@ Na przykład na poniższej ilustracji, ze względu na sposób skonfigurowania ty
 
 ![Rysunek 1.](media/01-integration-to-pma.png)
 
-Cel identyfikatora projektu w zadaniu zlecenia produkcyjnego oraz związany z nim numer działania to śledzenie kosztów związanych z zadaniem zlecenia, a następnie wybranie środka trwałego w module **Zarządzanie projektami i ich księgowanie** (Aby wyświetlić identyfikator projektu i numer działania, należy wybrać **Zarządzanie składnikami majątku** > **Wspólne** > **Zlecenia pracy** > **Wszystkie zlecenia pracy**, a następnie wybrać zlecenie pracy. W przypadku skróconej karcie **szczegółów wiersza** w polu **identyfikator projektu** wyświetlany jest identyfikator projektu, a w polu **numer działania** wyświetlany jest numer działania.) Aby uzyskać więcej informacji na temat kontroli kosztów w module Zarządzanie składnikami majątku przejrzyj [Kontrola kosztów i dat](../controlling-and-reporting/cost-and-date-control.md).
+Cel identyfikatora projektu w zadaniu zlecenia produkcyjnego oraz związany z nim numer działania to śledzenie kosztów związanych z zadaniem zlecenia, a następnie wybranie środka trwałego w module **Zarządzanie projektami i ich księgowanie** (Aby wyświetlić identyfikator projektu i numer działania, należy wybrać **Zarządzanie składnikami majątku** > **Zlecenia pracy** > **Wszystkie zlecenia pracy**, a następnie wybrać zlecenie pracy. W przypadku skróconej karcie **szczegółów wiersza** w polu **identyfikator projektu** wyświetlany jest identyfikator projektu, a w polu **numer działania** wyświetlany jest numer działania.) Aby uzyskać więcej informacji na temat kontroli kosztów w module Zarządzanie składnikami majątku przejrzyj [Kontrola kosztów i dat](../controlling-and-reporting/cost-and-date-control.md).
 
 Na poniższym rysunku widać graficzny przegląd projektów zleceń i powiązanych z nimi działań projektu.
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d74b6c82c573810da9cbfe14745f997f40d408fc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8d9c756d8aaf2e7b2f6593e78fbb645dafee4552
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873674"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016167"
 ---
 # <a name="production-parameters-in-manufacturing-execution"></a>Parametry produkcji w module Wykonywanie produkcji
 
@@ -63,7 +63,7 @@ Na stronie **Parametry produkcji** automatyczne zużywanie BOM ustawia się w tr
 
 Dla każdego etapu w polu **Automatyczne zużycie BOM** można wybrać jedną z trzech metod pobierania towarów do zlecenia produkcyjnego:
 
-- **Reguła rozliczania** — ta opcja jest używana w połączeniu z opcją zdefiniowaną dla BOM w module **Produkcja**. Kliknij kolejno opcje **Kontrola produkcji** &gt; **Wspólne** &gt; **Zlecenia produkcyjne** &gt; **Wszystkie zlecenia produkcyjne**. Na stronie **Wszystkie zlecenia produkcyjne** zaznacz zlecenie produkcyjne na liście, a następnie w okienku akcji kliknij opcję **BOM**. Na stronie **BOM** na karcie **Ustawienia** w polu **Reguła rozliczania** wybierz jedną z następujących opcji:
+- **Reguła rozliczania** — ta opcja jest używana w połączeniu z opcją zdefiniowaną dla BOM w module **Produkcja**. Kliknij opcje **Kontrola produkcji** &gt; **Zlecenia produkcyjne** &gt; **Wszystkie zlecenia produkcyjne**. Na stronie **Wszystkie zlecenia produkcyjne** zaznacz zlecenie produkcyjne na liście, a następnie w okienku akcji kliknij opcję **BOM**. Na stronie **BOM** na karcie **Ustawienia** w polu **Reguła rozliczania** wybierz jedną z następujących opcji:
 
   - **Rozpoczęcie**
   - **Zakończenie**

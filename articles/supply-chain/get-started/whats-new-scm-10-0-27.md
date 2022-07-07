@@ -1,5 +1,5 @@
 ---
-title: Wersja zapoznawcza Dynamics 365 Supply Chain Management w wersji 10.0.27 (lipiec 2022)
+title: Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.27 (lipiec 2022)
 description: W tym artykule opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Supply Chain Management 10.0.27.
 author: kamaybac
 ms.date: 04/22/2022
@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: a91f2cdae0fed75f07d6cae86d24aeedfca80e94
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a50fcbe313901beab610400d8c59dd375f1af93e
+ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8844504"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "9022629"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10027-july-2022"></a>Wersja zapoznawcza Dynamics 365 Supply Chain Management w wersji 10.0.27 (lipiec 2022)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10027-july-2022"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.27 (lipiec 2022)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-W tym artykule wymieniono nowe oraz zmienione funkcje dostępne w programie Microsoft Dynamics 365 Supply Chain Management w wersji zapoznawczej 10.0.27. Ta wersja ma numer kompilacji 10.0.1227 i jest dostępna w następującym harmonogramie:
+W tym artykule wymieniono nowe oraz zmienione funkcje dostępne w programie Microsoft Dynamics 365 Supply Chain Management w wersji 10.0.27. Ta wersja ma numer kompilacji 10.0.1227 i jest dostępna w następującym harmonogramie:
 
 - **Wersja zapoznawcza wydania:** kwiecień 2022
 - **Ogólna dostępność wydania (samoaktualizacja):** czerwiec 2022 r.

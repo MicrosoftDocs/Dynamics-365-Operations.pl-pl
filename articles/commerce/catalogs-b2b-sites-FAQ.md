@@ -9,17 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: 0cd11b4469e4dbd1205ace785fe857f6c6001480
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: af69c3d27142a961049470dd1292ffbc3d8387a9
+ms.sourcegitcommit: 6616b969afd6beb11a79d8e740560bf00016ea7f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849048"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "9027375"
 ---
 # <a name="commerce-catalogs-for-b2b-faq"></a>Katalogi rozwiązania Commerce dla B2B — często zadawane pytania
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Ten artykuł zawiera odpowiedzi na najczęściej zadawane pytania dotyczące [katalogów business-to-business (B2B)](catalogs-b2b-sites.md) Microsoft Dynamics 365 Commerce.
 

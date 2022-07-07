@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: eb29c5e7170011b95151d9aaf2a96a570563096d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5d2cc1f5b8eccb51b6bea8655fdee243c1a2df55
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902090"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015035"
 ---
 # <a name="manually-created-work-orders"></a>Ręcznie utworzone zlecenia pracy
 
@@ -34,7 +34,7 @@ Można także ręcznie tworzyć zlecenia pracy na dwa sposoby:
 
 ## <a name="create-work-order"></a>Utwórz zlecenie pracy
 
-1. Wybierz pozycję **Zarządzanie składnikami majątku** > **Wspólne** > **Zlecenia pracy** > **Wszystkie zlecenia pracy** lub **Aktywne zlecenia pracy**.
+1. Wybierz pozycję **Zarządzanie składnikami majątku** > **Zlecenia pracy** > **Wszystkie zlecenia pracy** lub **Aktywne zlecenia pracy**.
 
 2. Wybierz pozycję **Nowy**.
 
@@ -82,7 +82,7 @@ Należy uwzględnić następujące informacje:
 
 Można utworzyć nowe zlecenie pracy odnoszące się do istniejącego zlecenia pracy. Jest to przydatne, jeśli użytkownik, na przykład, chce pracować z głównymi i pomocniczymi zleceniami pracy. Nowe zlecenie produkcyjne jest oparte na zadaniu zlecenia produkcyjnego z istniejącego zlecenia produkcyjnego.
 
-1. Wybierz pozycję **Zarządzanie składnikami majątku** > **Wspólne** > **Zlecenia pracy** > **Wszystkie zlecenia pracy** lub **Aktywne zlecenia pracy**.
+1. Wybierz pozycję **Zarządzanie składnikami majątku** > **Zlecenia pracy** > **Wszystkie zlecenia pracy** lub **Aktywne zlecenia pracy**.
 
 2. Wybierz zlecenie pracy, dla którego chcesz stworzyć powiązane zlecenie pracy.
 
@@ -120,7 +120,7 @@ Na poniższej ilustracji pokazano przykład okna dialogowego **Utwórz powiązan
 
 Istnieje możliwość szybkiego utworzenia nowego zlecenia pracy na podstawie istniejącego zlecenia pracy. Ta metoda pracy z zleceniami pracy różni się od tworzenia zleceń pracy na podstawie [planów konserwacji](../preventive-and-reactive-maintenance/maintenance-plans.md). Jest to przydatne na przykład wtedy, gdy zlecenie pracy zawiera wiele zadań zlecenia pracy z różnymi zadaniami dotyczącymi różnych składników majątku, które powinny zostać wykonane w regularnych odstępach czasu.
 
-1. Wybierz pozycję **Zarządzanie składnikami majątku** > **Wspólne** > **Zlecenia pracy** > **Wszystkie zlecenia pracy** lub **Aktywne zlecenia pracy**.
+1. Wybierz pozycję **Zarządzanie składnikami majątku** > **Zlecenia pracy** > **Wszystkie zlecenia pracy** lub **Aktywne zlecenia pracy**.
 
 2. Umożliwia wybranie zlecenia pracy, z którego ma zostać skopiowana zawartość.
 
@@ -142,7 +142,7 @@ Na poniższej ilustracji przedstawiono przykład okna dialogowego **Kopiuj zlece
 
 ## <a name="create-a-work-order-based-on-a-maintenance-request"></a>Tworzenie zlecenia pracy oparte na żądaniu konserwacji
 
-1. Wybierz **Zarządzanie składnikami majątku** > **Wspólne** > **Żądania konserwacji** > **Wszystkie żądania konserwacji** lub **Aktywne żądania konserwacji**.
+1. Wybierz **Zarządzanie składnikami majątku** > **Żądania konserwacji** > **Wszystkie żądania konserwacji** lub **Aktywne żądania konserwacji**.
 
 2. Wybierz żądanie konserwacyji, dla którego chcesz utworzyć zlecenie pracy i kliknij pozycję **Edytuj**.
 

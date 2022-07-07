@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d519240c0e9e68542e1e10a51eaa2050d011cb4a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c0aac9bf0f312052160b29be606ba587f2de0184
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675719"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014674"
 ---
 # <a name="modify-a-service-bom"></a>Modyfikowanie BOM serwisu 
 
@@ -31,7 +31,7 @@ Istnieje możliwość rejestrowania historii elementu w usłudze BOM. Za każdym
 
 ## <a name="update-a-service-bom-element"></a>Aktualizacja elementu BOM serwisu
 
-1.  Kliknij kolejno opcje **Zarządzanie serwisem** \> **Wspólne** \> **Umowy serwisowe** \> **Umowy serwisowe**.
+1.  Kliknij kolejno opcje **Zarządzanie serwisem** \> **Umowy serwisowe** \> **Umowy serwisowe**.
 
 2.  Kliknij przycisk **Edytuj**, a zostanie otwarty formularz szczegółów **Umowy serwisowe**.
 
@@ -52,7 +52,7 @@ Istnieje możliwość rejestrowania historii elementu w usłudze BOM. Za każdym
 
 ## <a name="delete-a-service-bom-line"></a>Usuwanie wiersza BOM serwisu
 
-1.  Kliknij kolejno opcje **Zarządzanie serwisem** \> **Wspólne** \> **Umowy serwisowe** \> **Umowy serwisowe**.
+1.  Kliknij kolejno opcje **Zarządzanie serwisem** \> **Umowy serwisowe** \> **Umowy serwisowe**.
 
 2.  Kliknij przycisk **Edytuj**, a zostanie otwarty formularz szczegółów **Umowy serwisowe**.
 

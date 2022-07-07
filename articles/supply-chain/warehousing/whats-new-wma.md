@@ -10,18 +10,30 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 34ac023bc5ee44987f6a36a1636cd343576e5d90
-ms.sourcegitcommit: b666289f5113d0a3fa2220fe337d5aacf07cbd92
+ms.openlocfilehash: ac750ede78bb4547f90b57426cc9cb10d2a282b3
+ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "8945731"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8954671"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Nowości lub zmiany w aplikacji mobilnej Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 W tym artykule wymieniono nowe funkcje, poprawki, ulepszenia i znane problemy dla każdej wydanej wersji aplikacji mobilnej Warehouse Management w Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20250"></a>Wersja 2.0.25.0
+
+Ta wersja wprowadza następujące nowe funkcje, poprawki i ulepszenia:
+
+- Zwiększona wydajność.
+- Większa stabilności.
+- Poprawiono stronę **Zapytania**, aby obsługiwać dłuższe teksty w nagłówkach podrzędnych.
+- Wprowadzono możliwość natychmiastowego anulowania przepływu za pomocą jednego dotknięcia lub kliknięcia (jeśli **Anuluj** jest jedyną akcją dostępną w obszarze **Więcej akcji**).
+- Rozwiązano problem, przez który można było niekiedy utracić fokus między formantami wpisów na stronie **Edycja** połączenia i stronach niestandardowych.
+- Rozwiązano problem, przez który przyciski czasami mogły przestać odpowiadać i pozostawały wyświetlane jako wybrane podczas przewijania.
+- Rozwiązano problem, przez który czasami można było użyć niewłaściwego układu na stronie głównej.
 
 ## <a name="version-20240"></a>Wersja 2.0.24.0
 

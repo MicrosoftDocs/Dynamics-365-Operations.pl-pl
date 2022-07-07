@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c1b04c7cca70ec8b25d40cde86be370bce224388
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8ea84259eb8f12becdcf008ed9222a44b2626a0d
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856259"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016225"
 ---
 # <a name="automatic-update-of-asset-counters"></a>Automatyczna aktualizacja liczników zasobów
 
@@ -53,7 +53,7 @@ Jak wspomniano powyżej, liczniki automatyczne mogą być aktualizowane na podst
 
 5. Kliknij przycisk **OK**. 
 
-Po zakończeniu aktualizacji licznika składników majątku można przejrzeć rejestracje liczników powiązane z danym składnikiem majątku na stronie **Liczniki składników majątku**. Wybierz pozycję **Zarządzanie składnikami majątku** > **Wspólne** > **Składniki majątku** > **Wszystkie składniki majątku**, wybierz składnik majątku, a następnie w okienku akcji na karcie **Składnik majątku**, w grupie **Zapobiegawcze** wybierz pozycję **Liczniki**.
+Po zakończeniu aktualizacji licznika składników majątku można przejrzeć rejestracje liczników powiązane z danym składnikiem majątku na stronie **Liczniki składników majątku**. Wybierz pozycję **Zarządzanie składnikami majątku** > **Składniki majątku** > **Wszystkie składniki majątku**, wybierz składnik majątku, a następnie w okienku akcji na karcie **Składnik majątku**, w grupie **Zapobiegawcze** wybierz pozycję **Liczniki**.
 
 Na stronie **Zagregowana wartość składnika majątku** można uzyskać przegląd najnowszej rejestracji przeprowadzonej dla wszystkich typów licznika we wszystkich składnikach majątku. Wybierz pozycję **Zarządzanie składnikami majątku** > **Zapytania** > **Składniki majątku** > **Zagregowana wartość składnika majątku**. Ta strona przypomina stronę **Liczniki składników majątku**, ale nie można dodawać ani edytować rejestracji. Służy ona tylko do przeglądu.
 

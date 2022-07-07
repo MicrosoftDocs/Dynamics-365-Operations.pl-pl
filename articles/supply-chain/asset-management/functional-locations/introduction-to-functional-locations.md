@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4a1c8c4db9aee68584ab35949745132091a34a58
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a94b366dc725db3af01c156ae517a241213f7d52
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882845"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016051"
 ---
 # <a name="introduction-to-functional-locations"></a>Wprowadzenie do lokalizacji czynności konserwacyjnych
 
@@ -59,7 +59,7 @@ Po utworzeniu hierarchii lokalizacji czynności konserwacyjnych następnym kroki
 
 ## <a name="all-functional-locations"></a>Wszystkie lokalizacje czynności konserwacyjnych
 
-Wybierz kolejno opcje **Zarządzanie składnikami majątku** \> **Wspólne** \> **Lokalizacje czynności konserwacyjnych** \> **Wszystkie lokalizacje czynności konserwacyjnych**, aby otworzyć stronę listy **Wszystkie lokalizacje czynności konserwacyjnych**. Ta strona pokazuje wszystkie lokalizacje funkcjonalne i niektóre informacje związane z poszczególnymi lokalizacjami. Aby wyświetlić tylko aktywne lokalizacje funkcjonalne, wybierz **Aktywne lokalizacja czynności konserwacyjnych**. Aby wyświetlić tylko lokalizacje czynności konserwacyjnych, które są powiązane z pracownikiem, wybierz pozycję **Moje aktywne lokalizacje czynności konserwacyjnych**. (Tę relację ustawia się na stronie **Pracownicy**. Aby dowiedzieć się więcej, zobacz temat [Konserwatorzy i grupy pracowników](../setup-for-objects/workers-and-worker-groups.md)).
+Wybierz kolejno opcje **Zarządzanie składnikami majątku** \> **Lokalizacje czynności konserwacyjnych** \> **Wszystkie lokalizacje czynności konserwacyjnych**, aby otworzyć stronę listy **Wszystkie lokalizacje czynności konserwacyjnych**. Ta strona pokazuje wszystkie lokalizacje funkcjonalne i niektóre informacje związane z poszczególnymi lokalizacjami. Aby wyświetlić tylko aktywne lokalizacje funkcjonalne, wybierz **Aktywne lokalizacja czynności konserwacyjnych**. Aby wyświetlić tylko lokalizacje czynności konserwacyjnych, które są powiązane z pracownikiem, wybierz pozycję **Moje aktywne lokalizacje czynności konserwacyjnych**. (Tę relację ustawia się na stronie **Pracownicy**. Aby dowiedzieć się więcej, zobacz temat [Konserwatorzy i grupy pracowników](../setup-for-objects/workers-and-worker-groups.md)).
 
 Na stronie listy **Wszystkie lokalizacje czynności konserwacyjnych** wybierz łącze w kolumnie **Lokalizacja czynności konserwacyjnych**, aby wyświetlić szczegóły wybranego rekordu. Aby edytować lokalizację czynności konserwacyjnych, wybierz przycisk **Edytuj**. W widoku szczegółów są wyświetlane szczegółowe informacje związane z lokalizacją. Po prawej stronie jest również okienko **Informacje pokrewne**. W tym okienku przedstawiono hierarchię lokalizacji czynności konserwacyjnych. Można rozwinąć i zwinąć okienko **Informacje pokrewne**.
 

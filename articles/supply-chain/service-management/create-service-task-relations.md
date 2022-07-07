@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 80980d83248612037999c665b6058c4d0bbf6a7c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 51ea26a0f6519d26f5207a7b6c8afbcdfa358be9
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678242"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015267"
 ---
 # <a name="create-service-task-relations"></a>Tworzenie relacji zadania serwisowego    
 
@@ -30,7 +30,7 @@ Zadanie serwisowe można skojarzyć z umowami serwisowymi lub zleceniami serwiso
 
 ## <a name="create-a-relation-with-a-service-agreement"></a>Tworzenie relacji z umową serwisową
 
-1.  Przejdź do **Zarządzanie serwisem** \> **Wspólne** \> **Umowy serwisowe** \> **Umowy serwisowe**.
+1.  Przejdź do **Zarządzanie serwisem** \> **Umowy serwisowe** \> **Umowy serwisowe**.
 
 2.  Wybierz istniejącą umowę serwisową lub utwórz nową.
 
@@ -48,7 +48,7 @@ Relacja zadań serwisowych utworzona dla umowy serwisowej jest dostępna z pozio
 
 ## <a name="create-a-relation-with-a-service-order"></a>Tworzenie relacji ze zleceniem serwisowym
 
-1.  Przejdź do **Zarządzanie serwisem** \> **Wspólne** \> **Zlecenia serwisowe** \> **Zlecenia serwisowe**.
+1.  Przejdź do **Zarządzanie serwisem** \> **Zlecenia serwisowe** \> **Zlecenia serwisowe**.
 
 2.  Wybierz istniejące zlecenie serwisowe lub utwórz nowe.
 

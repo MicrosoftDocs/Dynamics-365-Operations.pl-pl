@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 503150e7cfc580821c5ed8d4c4c9b56998f6ff13
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f7c36fe230db38bfdbfd70fec7bdfd0a313d5a15
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869728"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015849"
 ---
 # <a name="create-functional-locations"></a>Tworzenie lokalizacji czynności konserwacyjnych
 
@@ -41,7 +41,7 @@ Aby móc pracować z lokalizacjami czynności konserwacyjnych, zacznij od utworz
 
 Podczas korzystania z lokalizacji czynności konserwacyjnych, rozpocznij od utworzenia jednej lokalizacji domyślnej, która będzie używana podczas tworzenia nowych składników majątku. Ta lokalizacja czynności konserwacyjnych jest tą, która została wybrana pod linkiem **Zarządzanie składnikami majątku** > **Ustawienia** > **Parametry zarządzania składnikami majątku** > **Składniki majątku** > pole **Domyślna lokalizacja czynności konserwacyjnych**. Domyślna lokalizacja czynności konserwacyjnych może być użyta podczas tworzenia nowych składników majątku i jeśli nie ustawiono struktury czynności konserwacyjnych dla tych składników majątku.
 
-1. Wybierz **Zarządzanie składnikami majątku** > **Wspólne** > **Lokalizacje czynności konserwacyjnych** > **Wszystkie lokalizacje czynności konserwacyjnych**.  
+1. Wybierz **Zarządzanie składnikami majątku** > **Lokalizacje czynności konserwacyjnych** > **Wszystkie lokalizacje czynności konserwacyjnych**.  
 2. W polu **Wszystkie lokalizacje czynności konserwacyjnych** wybierz **Nowe**.
 3. Wstaw identyfikator w polu **Lokalizacja czynności konserwacyjnych** np. „0000” lub „Domyślne”, aby wskazać, że jest to specjalna lokalizacja czynności konserwacyjnych.
 4. Wstaw nazwę domyślnej lokalizacji czynności konserwacyjnych w polu **Nazwa**.
@@ -53,7 +53,7 @@ Podczas korzystania z lokalizacji czynności konserwacyjnych, rozpocznij od utwo
 
 Poniższa procedura opisuje sposób tworzenia lokalizacji czynności konserwacyjnych wymaganych do zarządzania konserwacją w firmie.
 
-1. Wybierz **Zarządzanie składnikami majątku** > **Wspólne** > **Lokalizacje czynności konserwacyjnych** > **Wszystkie lokalizacje czynności konserwacyjnych**. Można utworzyć lokalizację czynności konserwacyjnych z widoku siatki lub widoku szczegółów.
+1. Wybierz **Zarządzanie składnikami majątku** > **Lokalizacje czynności konserwacyjnych** > **Wszystkie lokalizacje czynności konserwacyjnych**. Można utworzyć lokalizację czynności konserwacyjnych z widoku siatki lub widoku szczegółów.
 2. Wybierz przycisk **Nowa**.
 3. Wstaw identyfikator w polu **Lokalizacja czynności konserwacyjnych**.
 4. Wstaw nazwę lokalizacji czynności konserwacyjnych w polu **Nazwa**.

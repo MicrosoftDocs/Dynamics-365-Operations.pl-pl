@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 015499463f1eab4aaa3f3658b3204229382e73cb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6e41a28ec922924b0ef86858a881280fd44bfe63
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893650"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014960"
 ---
 # <a name="procurement"></a>Zaopatrzenie
 
@@ -28,7 +28,7 @@ ms.locfileid: "8893650"
 
 W module Zarządzanie składnikami majątku można uzyskać przegląd zapotrzebowań zakupu i zamówień zakupu związanych ze zleceniami pracy. Istnieje również możliwość utworzenia zamówienia zakupu lub zapotrzebowania zakupu na podstawie zlecenia pracy.
 
-Na stronie listy **Zapotrzebowanie na zakup zlecenia pracy** (**Zarządzanie składnikami majątku** > **Wspólne** > **Zaopatrzenie** > **Zapotrzebowanie na zakup zlecenia pracy**) jest wyświetlenia lista zapotrzebowań zakupu związanych z zleceniami pracy w puli zleceń pracy. Po wybraniu zadania zlecenia produkcyjnego na tej stronie można użyć przycisków w grupie **Pokaz** na karcie okienka akcji **Zapotrzebowanie na zakup zlecenia pracy**, aby wykonać różne akcje:
+Na stronie listy **Zapotrzebowanie na zakup zlecenia pracy** (**Zarządzanie składnikami majątku** > **Zaopatrzenie** > **Zapotrzebowanie na zakup zlecenia pracy**) jest wyświetlenia lista zapotrzebowań zakupu związanych z zleceniami pracy w puli zleceń pracy. Po wybraniu zadania zlecenia produkcyjnego na tej stronie można użyć przycisków w grupie **Pokaz** na karcie okienka akcji **Zapotrzebowanie na zakup zlecenia pracy**, aby wykonać różne akcje:
 
 - Aby otworzyć powiązane zapotrzebowanie zakupu, wybierz **Zapotrzebowanie na zakup**. 
 - Aby otworzyć powiązane zlecenie, zaznacz opcję **Zlecenie pracy**
@@ -39,7 +39,7 @@ Na poniższej ilustracji przedstawiono przykład strony listy **Zapotrzebowanie 
 ![Rysunek 1.](media/08-work-orders.png)
 
 
-Na stronie listy **Zapotrzebowanie na zakup zlecenia pracy** (**Zarządzanie składnikami majątku** > **Wspólne** > **Zaopatrzenie** > **Zakup zlecenia pracy**) jest wyświetlenia lista zamówień zakupu związanych ze zleceniami pracy. Po wybraniu zadania zlecenia produkcyjnego na tej stronie można użyć przycisków w grupie **Pokaz** na karcie okienka akcji **Zakup zlecenia pracy**, aby wykonać różne akcje:
+Na stronie listy **Zapotrzebowanie na zakup zlecenia pracy** (**Zarządzanie składnikami majątku** > **Zaopatrzenie** > **Zakup zlecenia pracy**) jest wyświetlenia lista zamówień zakupu związanych ze zleceniami pracy. Po wybraniu zadania zlecenia produkcyjnego na tej stronie można użyć przycisków w grupie **Pokaz** na karcie okienka akcji **Zakup zlecenia pracy**, aby wykonać różne akcje:
 
 - Aby otworzyć powiązane zamówienie zakupu, zaznacz opcję **Zamówienie zakupu** 
 - Aby otworzyć powiązane zlecenie, zaznacz opcję **Zlecenie pracy**
@@ -69,7 +69,7 @@ W przypadku zapotrzebowania zakupu Data używana do obliczenia możliwego opóź
 
 Na stronie listy **Wszystkie zlecenia pracy** można wybrać zadanie zlecenia pracy i utworzyć powiązane zamówienie zakupu lub zapotrzebowanie na zakup. W ten sposób można zapewnić istnienie relacji projektu między zamówieniem zakupu lub zapotrzebowaniem na zakup a zleceniem pracy.
 
-1. Wybierz pozycję **Zarządzanie składnikami majątku** > **Wspólne** > **Zlecenia pracy** > **Wszystkie zlecenia pracy** lub **Aktywne zlecenia pracy**.
+1. Wybierz pozycję **Zarządzanie składnikami majątku** > **Zlecenia pracy** > **Wszystkie zlecenia pracy** lub **Aktywne zlecenia pracy**.
 
 2. Wybierz zlecenie pracy, dla którego chcesz utworzyć zamówienie zakupu, a następnie wybierz **Edytuj**.
 

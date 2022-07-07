@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 01c8276d77f7655659cab13f3c520d7c171e3cfd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0c44e503900bd157d7f0159cdf2b2d0c1fb3393f
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879229"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015791"
 ---
 # <a name="functional-location-types"></a>Typy lokalizacji czynności konserwacyjnych
 
@@ -57,7 +57,7 @@ Tworzony jest typ lokalizacji czynności konserwacyjnych, który ma być używan
 7. Pole **Typ składnika majątku** jest używane, jeśli chcesz automatycznie utworzyć *jeden* składnik majątku dla lokalizacji czynności konserwacyjnych o tym samym identyfikatorze i nazwie co tworzona lokalizacja czynności konserwacyjnych. Może to być na przykład istotne w przypadku utworzenia statycznej lokalizacji czynności konserwacyjnych, takiej jak budynek lub proces. W takim przypadku wybierz typ składnika majątku, który ma być używany dla automatycznie utworzonego składnika majątku. Pamiętaj, że jeśli dokonujesz wyboru w tym polu, przełącznik **Wiele składników majątku** musi być ustawiony na „Nie”.
 8. Na skróconej karcie **Typy składników majątku** wybierz typy składników majątku, które powinny być powiązane z typem lokalizacji czynności konserwacyjnych. Wybierz **Dodaj wiersz** i wybierz typy składnika majątku. Jeśli w tym miejscu zostaną dodane typy składnika majątku, tylko składniki majątku z tymi typami mogą być instalowane w lokalizacji czynności konserwacyjnych przy użyciu tego typu lokalizacji czynności konserwacyjnych. Jeśli nie wybrano żadnych typów składnika majątku na skróconej karcie **Typy składników majątku**, można zainstalować wszystkie typy składnika majątku.
 9. Na skróconej karcie **Plany konserwacji** wybierz plany konserwacji, które powinny być automatycznie skonfigurowane w nowych lokalizacjach czynności konserwacyjnych przy użyciu tego typu lokalizacji czynności konserwacyjnych. Wybierz **Dodaj wiersz** i wybierz plany konserwacji. Jeśli dodasz w tym miejscu plany konserwacji, tylko te plany mogą być używane w lokalizacji czynności konserwacyjnych przy użyciu tego typu lokalizacji czynności konserwacyjnych.
-10. Na skróconej karcie **Wymagania atrybutu składnika majątku** skonfiguruj atrybuty składnika majątku, które powinny być automatycznie skonfigurowane w nowych lokalizacjach czynności konserwacyjnych przy użyciu tego typu lokalizacji czynności konserwacyjnych. Wybierz **Dodaj wiersz** i wybierz atrybut. Te wymagania atrybutu funkcjonują jako wytyczne. Nie są one sprawdzane pod kątem atrybutów ustawionych na składniku majątku (**Zarządzanie składnikami majątku** > **Wspólne** > **Składniki majątku** > **Wszystkie składniki majątku** > wybierz składnik majątku na stronie listy > karta **Ogólne** > przycisk **Atrybuty**). Wymagania dotyczące atrybutów są wyświetlane podczas instalowania składników majątku w lokalizacjach czynności konserwacyjnych.
+10. Na skróconej karcie **Wymagania atrybutu składnika majątku** skonfiguruj atrybuty składnika majątku, które powinny być automatycznie skonfigurowane w nowych lokalizacjach czynności konserwacyjnych przy użyciu tego typu lokalizacji czynności konserwacyjnych. Wybierz **Dodaj wiersz** i wybierz atrybut. Te wymagania atrybutu funkcjonują jako wytyczne. Nie są one sprawdzane pod kątem atrybutów ustawionych na składniku majątku (**Zarządzanie składnikami majątku** > **Składniki majątku** > **Wszystkie składniki majątku** > wybierz składnik majątku na stronie listy > karta **Ogólne** > przycisk **Atrybuty**). Wymagania dotyczące atrybutów są wyświetlane podczas instalowania składników majątku w lokalizacjach czynności konserwacyjnych.
 11. Na skróconej karcie **Dozwolone typy** wybierz typy lokalizacji czynności konserwacyjnych, które powinny być dozwolone dla typów podrzędnych lokalizacji czynności konserwacyjnych związanych z nadrzędnym typem lokalizacji czynności konserwacyjnych, który korzysta z wybranego typu lokalizacji czynności konserwacyjnych.
 12. Na skróconej karcie **Atrybuty** wybierz atrybuty lokalizacji czynności konserwacyjnych, które powinny być automatycznie skonfigurowane w lokalizacjach czynności konserwacyjnych przy użyciu tego typu lokalizacji czynności konserwacyjnych. Wybierz **Dodaj wiersz** i wybierz atrybut.
 

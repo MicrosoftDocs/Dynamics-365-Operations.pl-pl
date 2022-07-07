@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f6f12b0dd1facc753bfcde820eea26a4052caf67
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 376cda6bbe1800611e6f24c347b9035469a30a14
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882410"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015180"
 ---
 # <a name="service-order-item-requirements"></a>Zapotrzebowanie na towary w zleceniu serwisowym
 
@@ -36,7 +36,7 @@ Po utworzeniu zapotrzebowania na towary dla zlecenia serwisowego można je przej
 
 ## <a name="view-an-item-requirement-from-a-service-order"></a>Przeglądanie zapotrzebowania na towary dla zlecenia serwisowego
 
-1. Przejdź do **Zarządzanie serwisem** \> **Wspólne** \> **Zlecenia serwisowe** \> **Zlecenia serwisowe**.
+1. Przejdź do **Zarządzanie serwisem** \> **Zlecenia serwisowe** \> **Zlecenia serwisowe**.
 1. Wybierz **Wysyłka**, a następnie opcję **Zapotrzebowanie na towary**, a zostanie otwarty formularz **Zapotrzebowanie na towary**.
 1. Wybierz kartę **Projekt**, a następnie sprawdź pole **Zlecenie serwisowe**, aby obejrzeć zlecenia serwisowe dla zapotrzebowania na towary.
 
@@ -44,13 +44,13 @@ Po utworzeniu zapotrzebowania na towary dla zlecenia serwisowego można je przej
 
 Jeśli dla zlecenia serwisowego jest utworzone zapotrzebowanie na towary, to takiego zlecenia nie można usunąć. Należy najpierw usunąć zapotrzebowanie na towary i dopiero potem usunąć zlecenie serwisowe.
 
-1. Przejdź do **Zarządzanie serwisem** \> **Wspólne** \> **Zlecenia serwisowe** \> **Zlecenia serwisowe**.
+1. Przejdź do **Zarządzanie serwisem** \> **Zlecenia serwisowe** \> **Zlecenia serwisowe**.
 1. Wybierz **Wysyłka**, a następnie opcję **Zapotrzebowanie na towary**, a zostanie otwarty formularz **Zapotrzebowanie na towary**. Ten formularz zawiera listę zapotrzebowań na towary utworzonych dla określonego zlecenia serwisowego.
 1. Wybierz odpowiednie zapotrzebowanie na towar do usunięcia, a następnie wybierz przycisk **Usuń**.
 
 – lub –
 
-1. Przejdź do **Zarządzanie projektami i ich księgowanie** \> **Wspólne** \> **Projekty** \> **Wszystkie projekty**.
+1. Wybierz kolejno opcje **Zarządzanie projektami i ich księgowanie** \> **Projekty** \> **Wszystkie projekty**.
 1. Otwórz projekt, w którego skład wchodzi zlecenie serwisowe, dla którego utworzono zapotrzebowanie na towary.
 1. W formularzu **Projekty** w okienku po prawej stronie wybierz przycisk **Zapotrzebowanie na towary**. Formularz **Zapotrzebowanie na towary** będzie zawierał spis wszystkich zapotrzebowań na towary powiązanych z wybranym projektem.
 1. Wybierz odpowiednie zapotrzebowanie na towar do usunięcia, a następnie wybierz przycisk **Usuń**.

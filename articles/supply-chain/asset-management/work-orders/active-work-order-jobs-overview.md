@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a3e48ceec2e95f796b6e7662af42e6bc1c3f01b7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 80072381c59b6cc0e0ea512a50900f8754a413a0
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895881"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017008"
 ---
 # <a name="active-work-order-maintenance-jobs-overview"></a>Omówienie zadań konserwacji aktywnych zleceń pracy
 
@@ -29,7 +29,7 @@ ms.locfileid: "8895881"
 
 Na stronie listy **Zadania konserwacji aktywnych zleceń pracy** można uzyskać przegląd zleceń pracy z uwzględnieniem liczby zleceń pracy utworzonych dla konkretnych składników majątku, typów składników majątków, producentów, modeli, typów zadań konserwacyjnych itp. Wybranie zadania zlecenia pracy i kliknięcie przycisku **Edytuj** może spowodować otwarcie powiązanego zlecenia pracy. Wybierając zadanie zlecenia pracy, a następnie wybierając jeden z przycisków na karcie **Zadanie konserwacji zlecenia pracy** w okienku akcji, można wyświetlić dane dotyczące zlecenia pracy, z którym jest powiązane zadanie zlecenia pracy.
 
-Aby otworzyć stronę listy, wybierz pozycję **Zarządzanie składnikami majątku** > **Wspólne** > **Zlecenia pracy** > **Zadania konserwacji aktywnych zleceń pracy**. Strona zawiera listę wszystkich aktywnych zleceń pracy oraz niektóre informacje związane ze zleceniem pracy lub zadaniem zlecenia pracy.
+Aby otworzyć stronę listy, wybierz pozycję **Zarządzanie składnikami majątku** > **Zlecenia pracy** > **Zadania konserwacji aktywnych zleceń pracy**. Strona zawiera listę wszystkich aktywnych zleceń pracy oraz niektóre informacje związane ze zleceniem pracy lub zadaniem zlecenia pracy.
 
 Podany w kolumnie **%** numer przedstawia ukończenie zlecenia pracy jako wartość procentową. Realizacja jest oparta na dwóch obliczeniach: zaksięgowanych godzin w porównaniu z godzinami prognozowanymi oraz liczbie ukończonych list kontrolnych konserwacji.
 

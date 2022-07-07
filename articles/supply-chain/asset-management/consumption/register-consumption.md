@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bf78d53e8e2d7bee24a0a7789ca1a96cdd8f1415
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 588da2a217a56d2bc25f85c9a10c6589f90b16a1
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886052"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015093"
 ---
 # <a name="register-consumption"></a>Rejestracja zużycia
 
@@ -35,7 +35,7 @@ W niektórych przypadkach istnieje możliwość dodawania lub usuwania wierszy p
 >[!NOTE]
 >Istnieje możliwość skonfigurowania automatycznego księgowania arkuszy w stanie cyklu życia zamówienia pracy. Więcej informacji [Stany cyklu życia zlecenia pracy](../setup-for-work-orders/work-order-lifecycle-states.md).
 
-1. Kliknij **Zarządzanie składnikami majątku** > **Wspólne** > **Zlecenia pracy** > **Wszystkie zlecenia pracy** lub **Aktywne zlecenia pracy**.
+1. Kliknij **Zarządzanie składnikami majątku** > **Zlecenia pracy** > **Wszystkie zlecenia pracy** lub **Aktywne zlecenia pracy**.
 
 2. Wybierz zlecenie pracy z listy i kliknij przycisk **Arkusze**.
 
@@ -61,7 +61,7 @@ Poniższy zrzut ekranu przedstawia przykład rejestracji godzin i towarów w zle
 
 Jeśli zlecenie produkcyjne zawiera kilka zadań zlecenia, można zarejestrować godziny pracy za pomocą funkcji **Podziel godziny**, co oznacza, że jeden wiersz rejestracji może być dystrybuowany równomiernie w każdym zleceniu produkcyjnym.
 
-1. Kliknij **Zarządzanie składnikami majątku** > **Wspólne** > **Zlecenia pracy** > **Wszystkie zlecenia pracy** lub **Aktywne zlecenia pracy**.
+1. Kliknij **Zarządzanie składnikami majątku** > **Zlecenia pracy** > **Wszystkie zlecenia pracy** lub **Aktywne zlecenia pracy**.
 
 2. Wybierz zlecenie pracy z listy i kliknij przycisk **Arkusze**.
 

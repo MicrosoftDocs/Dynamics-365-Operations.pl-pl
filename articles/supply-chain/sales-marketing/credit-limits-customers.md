@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f7f15c0f15302c271fac7199b21b7bcd3dcfe88a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b4a98b90491093f55ce6974b9b11ff326c0c2f5c
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903877"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015329"
 ---
 # <a name="credit-limits-for-customers"></a>Limity kredytu dla odbiorców
 
@@ -117,7 +117,7 @@ Użyj formularza **Parametry modułu rozrachunków z odbiorcami**, aby określi�
 
 Użyj formularza **Odbiorcy**, aby określić kwotę limitu kredytu dla określonego odbiorcy. Użytkownik musi być członkiem roli zabezpieczeń, do której przypisano obowiązek Obsługa danych głównych odbiorcy (CustCustomersMaintain), aby wprowadzić zmiany w tym formularzu.
 
-1.  Kliknij kolejno opcję **Rozrachunki z odbiorcami** \> **Wspólny** \> **Odbiorcy** \> **Wszyscy odbiorcy**. Kliknij dwukrotnie konto odbiorcy.
+1.  Kliknij kolejno opcje **Rozrachunki z odbiorcami** \> **Odbiorcy** \> **Wszyscy odbiorcy**. Kliknij dwukrotnie konto odbiorcy.
 
 2.  W formularzu **Odbiorcy**, w okienku akcji, kliknij opcję **Edytuj**.
 
@@ -132,7 +132,7 @@ Użyj formularza **Odbiorcy**, aby określić kwotę limitu kredytu dla określo
 
 Czasami konieczne może być ręczne sprawdzenie limitu kredytu odbiorcy. Limit kredytu odbiorcy można na przykład sprawdzić ręcznie przed rozpoczęciem wprowadzania zamówienia sprzedaży. W celu ręcznego sprawdzenia limitów kredytu można użyć formularza **Zamówienie sprzedaży**. Użytkownik musi być członkiem roli zabezpieczeń, do której przypisano obowiązek Obsługa zamówienia sprzedaży (SalesOrderMaintain), aby wprowadzić zmiany w tym formularzu.
 
-1.  Kliknij kolejno opcje **Sprzedaż i marketing** \> **Wspólne** \> **Zamówienia sprzedaży** \> **Wszystkie zamówienia sprzedaży**. Kliknij dwukrotnie na zamówienie sprzedaży.
+1.  Kliknij kolejno **Sprzedaż i marketing** \> **Zamówienia sprzedaży** \> **Wszystkie zamówienia sprzedaży**. Kliknij dwukrotnie na zamówienie sprzedaży.
 
 2.  W formularzu **Zamówienie sprzedaży**, w okienku akcji, na karcie **Zarządzaj** kliknij opcję **Sprawdzanie limitu kredytu**.
 

@@ -2,7 +2,7 @@
 title: Pliki wideo
 description: Ta strona zawiera listę filmów instruktażowych i technicznych przygotowanych przez Microsoft, które dotyczą aplikacji Finance and Operations i są dostępne na YouTube i w innych witrynach.
 author: sericks007
-ms.date: 09/15/2021
+ms.date: 06/13/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,27 +14,27 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 3fe44a9a7fcef2f22dff3be00ddfadd5b8c59574
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 76fe61c13490afbd7b5dcd39f3c631cbab43bb9e
+ms.sourcegitcommit: 0686b56b4699ffefd2c208d0fe496d5860296520
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7487998"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8958146"
 ---
-# <a name="videos"></a>Filmy wideo 
+# <a name="videos"></a>Pliki wideo 
 
 [!include [banner](../includes/banner.md)]
 
-Na [kanale rozwiązania Microsoft Dynamics 365 na YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) znajdziesz przygotowane przez Microsoft filmy, które pokazują szeroką gamę zastosowań biznesowych produktów Dynamics 365. W tej sekcji znajduje się lista filmów instruktażowych o aplikacjach Finance and Operations, które są zamieszczone w kanale.
+Na [kanale rozwiązania Microsoft Dynamics 365 na YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) znajdziesz przygotowane przez Microsoft filmy, które pokazują szeroką gamę zastosowań biznesowych produktów Dynamics 365. W tej sekcji znajduje się lista filmów instruktażowych o oprogramowaniu aplikacji Finance and Operations, które są zamieszczone w kanale.
 
 > [!Note]
 > Niektóre z wymienionych plików wideo zostały opublikowane w ramach poprzedniej nazwy produktu, ale nadal istnieją.
 
-## <a name="videos-for-finance-and-operations-development-and-administration"></a>Filmy dotyczące programowanie aplikacji Finance and Operations i administrowania nimi
+## <a name="videos-for-finance-and-operations-development-and-administration"></a>Filmiki wideo na potrzeby rozwiązania Finance and Operations i administrowania nim
 
 ### <a name="data-integration"></a>Integracja danych
 
-- [Synchronizowanie zlecenia pracy między aplikacjami Dynamics 365 for Field Service i Finance and Operations](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
+- [Synchronizowanie zlecenia pracy między rozwiązaniami Dynamics 365 for Field Service i aplikacjami Finance and Operations](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
 
 ### <a name="data-management"></a>Zarządzanie danymi
 
@@ -42,7 +42,6 @@ Na [kanale rozwiązania Microsoft Dynamics 365 na YouTube](https://www.youtube.c
 
 ### <a name="development"></a>Programowanie
 
-- [Jak rozwiązywać konflikty w Visual Studio](https://youtu.be/4rxO0zUN2zU)
 - [Doradca optymalizacji](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Konfigurowanie odgałęzień i kompilacji](https://www.youtube.com/watch?v=qXLd-NMx9OY)
 - [Konfigurowanie komputera deweloperskiego](https://www.youtube.com/watch?v=cqp9MetfiyM)
@@ -51,7 +50,7 @@ Na [kanale rozwiązania Microsoft Dynamics 365 na YouTube](https://www.youtube.c
 ### <a name="intelligence"></a>Analizy
 
 - [Jak edytować osadzony raport w analitycznym obszarze roboczym](https://youtu.be/_8WlwmSggcQ)
-- [Jak osadzić raporty PowerBI.com w aplikacjach Finance and Operations](https://youtu.be/gGWuNJDoi-M)
+- [Sposób osadzania raportów PowerBI.com w module Finance and Operations operacyjne](https://youtu.be/gGWuNJDoi-M)
 - [Używanie własnej bazy danych (BYOD) w aplikacjach Finance and Operations](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
 - [Jak w rozwiązaniu Dynamics 365 używać pakietu zawartości usługi Power BI Zarządzanie kosztami](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 
@@ -81,7 +80,7 @@ Na [kanale rozwiązania Microsoft Dynamics 365 na YouTube](https://www.youtube.c
 - [Udoskonalone środowisko programu Excel w narzędziu Regression Suite Automation Tool (RSAT) 2,0](https://youtu.be/fcEkSIVQ1Bg)
 
 
-## <a name="videos-for-dynamics-365-finance"></a>Klipy wideo dla Dynamics 365 Finance
+## <a name="videos-for-dynamics-365-finance"></a>Filmy wideo dla Dynamics 365 Finance
 
 ### <a name="business-document-management"></a>Zarządzanie dokumentem biznesowym
 - [Utwórz nowy dokument biznesowy za pomocą funkcji Zarządzanie dokumentami biznesowymi](https://www.youtube.com/watch?v=gAIYl-mM_pw)

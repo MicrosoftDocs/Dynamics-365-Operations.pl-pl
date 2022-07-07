@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2d0552c38ddc31ad6322e9e2e0f2c2c722c045f4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 25e9b00533fb183b27c1bbe616cf6f414b44b5e7
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870908"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016109"
 ---
 # <a name="calculate-item-forecast"></a>Oblicz prognozę pozycji
 
@@ -36,7 +36,7 @@ Podobnie jak w przypadku obliczeń obciążenia zdolności produkcyjnych, które
 
 Jest to przydatne w przypadku, gdy użytkownik chce uzyskać przegląd oczekiwanego zużycia towarów (części zamiennych oraz innych towarów wymaganych do ukończenia zleceń pracy) w określonym okresie. Obliczanie prognozy pozycji można wykonać dla wszystkich składników majątku lub wybranych składników majątku. Można również dokonać obliczeń dotyczących działania dotyczącego przestojów związanych z konserwacją(**Wszystkie działania w ramach przerwy konserwacyjnej** lub **Aktywne działania w ramach przerwy konserwacyjnej**) lub pulą zleceń pracy (**Wszystkie pule zleceń pracy** lub **Aktywne pule zleceń pracy**).
 
-1. Kliknij **Zarządzanie składnikami majątku** > **Zapytania** > **Prognoza dla pozycji** lub **Zarządzanie składnikami majątku** > **Wspólne** > **Pule zleceń pracy** > **Wszystkie pule zleceń pracy** / **Aktywne pule zleceń pracy** > na liście wybierz pulę zleceń pracy > przycisk **Prognoza dla pozycji** lub **Zarządzanie składnikami majątku** > **Wspólne** > **Działania w ramach przerwy konserwacyjnej** > **Wszystkie działania w ramach przerwy konserwacyjnej** / **Aktywne działania w ramach przerwy konserwacyjnej** > wybierz czynność w ramach przerwy konserwacyjnej z listy > przycisk **Prognoza dla pozycji**.
+1. Kliknij **Zarządzanie składnikami majątku** > **Zapytania** > **Prognoza dla pozycji** lub **Zarządzanie składnikami majątku** > **Pule zleceń pracy** > **Wszystkie pule zleceń pracy** / **Aktywne pule zleceń pracy** > na liście wybierz pulę zleceń pracy > przycisk **Prognoza dla pozycji** lub **Zarządzanie składnikami majątku** > **Działania w ramach przerwy konserwacyjnej** > **Wszystkie działania w ramach przerwy konserwacyjnej** / **Aktywne działania w ramach przerwy konserwacyjnej** > wybierz czynność w ramach przerwy konserwacyjnej z listy > przycisk **Prognoza dla pozycji**.
 
 2. W oknie dialogowym **Oblicz prognozę dla pozycji** wybierz okres, w którym zostaną wykonane obliczenia w polach **Data/godzina rozpoczęcia** i **Data/godzina zakończenia**.
 

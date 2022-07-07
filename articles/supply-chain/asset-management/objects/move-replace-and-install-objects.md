@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e1454f41bb0b43e22c5278463f63aa4178696eef
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0a6b5a2904d21782ae422d06eaaf03c5d5e51ab9
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872132"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015587"
 ---
 # <a name="move-replace-and-install-assets"></a>Przenoszenie, zamiana i instalowanie składników majątku
 
@@ -44,7 +44,7 @@ Użyj funkcji **Przenieś składnik majątku**, aby przenieść składnik mająt
 > [!NOTE]
 > Nie należy używać tej funkcji, jeśli aktywa są naprawiane lub tymczasowo wymieniane. Zamiast tego należy użyć funkcji **Zastąp składnik majątku**, która jest opisany w dalszej części tego artykułu.
 
-1. Wybierz **Zarządzanie składnikami majątku** \> **Wspólne** \> **Składniki majątku** \> **Wszystkie składniki majątku** lub **Aktywne składniki majątku**.
+1. Wybierz **Zarządzanie składnikami majątku** \> **Składniki majątku** \> **Wszystkie składniki majątku** lub **Aktywne składniki majątku**.
 2. Na liście zaznacz grupę składników majątku do przeniesienia. Jeśli składnik majątku ma składniki podrzędne, możesz również przenieść te składniki majątku.
 3. Wybierz **Przenieś składnik majątku**.
 4. Aby przenieść składnik majątku w taki sposób, żeby stał się częścią struktury składników majątku, wybierz nowy składnik majątku nadrzędny w polu **Nadrzędny składnik majątku**. Jeśli przenosisz podrzędny składnik majątku i chcesz uczynić go autonomicznym składnikiem majątku, który nie relacji z żadną strukturą, zostaw pole **Nadrzędny składnik majątku** puste.
@@ -58,7 +58,7 @@ Użyj funkcji **Zamień składnik majątku** w odniesieniu do naprawiania, odnaw
 > [!NOTE]
 > Jeśli warsztat jest powiązany z działem produkcyjnym, można utworzyć lokalizacje czynności konserwacyjnych, takie jak **Naprawy**, **Złomowanie** i **Magazyn** do obsługi naprawy i zamiany składników majątku.
 
-1. Wybierz **Zarządzanie składnikami majątku** \> **Wspólne** \> **Składniki majątku** \> **Wszystkie składniki majątku** lub **Aktywne składniki majątku**.
+1. Wybierz **Zarządzanie składnikami majątku** \> **Składniki majątku** \> **Wszystkie składniki majątku** lub **Aktywne składniki majątku**.
 2. Na liście zaznacz podrzędny składnik majątku, który chcesz zamienić. Jeśli składnik majątku ma składniki podrzędne, możesz również zamienić te składniki majątku.
 3. Wybierz **Zamień składnik majątku**.
 
@@ -79,7 +79,7 @@ Użyj funkcji **Zainstaluj składnik majątku**, aby zainstalować strukturę sk
 > [!NOTE]
 > Zawsze wybieraj nadrzędny składnik majątku. Nadrzędny składnik majątku i powiązane składniki podrzędne zostaną przeniesione do wybranej lokalizacji czynności konserwacyjnych.
 
-1. Wybierz **Zarządzanie składnikami majątku** \> **Wspólne** \> **Składniki majątku** \> **Wszystkie składniki majątku** lub **Aktywne składniki majątku**.
+1. Wybierz **Zarządzanie składnikami majątku** \> **Składniki majątku** \> **Wszystkie składniki majątku** lub **Aktywne składniki majątku**.
 2. Na liście wybierz nadrzędny składnik majątku do zainstalowania w innej lokalizacji czynności konserwacyjnych.
 3. Wybierz opcję **Zainstaluj składnik majątku**.
 

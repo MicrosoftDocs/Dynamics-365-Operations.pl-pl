@@ -2,7 +2,7 @@
 title: Raportowanie listy sprzedaży do UE
 description: Ten artykuł zawiera informacje o raportowaniu listy sprzedaży do państw Unii Europejskiej (UE).
 author: EvgenyPopovMBS
-ms.date: 02/17/2022
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af49817667999dd02a96a7a9bd5bb966be652d35
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: 8dfd3fafdfc011973b169516cd4e2d239751e96d
+ms.sourcegitcommit: f5b156f2e5ca99ad05b3d6e4a5d118631fd3064e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323480"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9012504"
 ---
 # <a name="eu-sales-list-reporting"></a>Raportowanie listy sprzedaży do UE
 
@@ -150,7 +150,7 @@ Transakcje następujących typów można uznać za transakcje handlu wewnątrzws
 -   Faktury projektu
 -   Faktury dostawcy
 
-Transakcja jest uznawana za transakcję handlu wewnątrzwspólnotowego, jeśli adres dostawy transakcji jest w państwie członkowskim UE. Dla tych krajów/regionów musi istnieć rekord na karcie **Parametry kraju/regionu** na stronie **Parametry handlu zagranicznego**, a **Typ kraju/regionu** powinien mieć wartość **UE**. Transakcje handlu wewnątrzwspólnotowego są oznaczane w polu **Kod listy**. Za pomocą tego pola, można także oddzielić ogólne transakcje handlu wewnątrzwspólnotowego od transakcji handlu trójstronnego. Można zbierać informacje o transakcjach handlu wewnątrzwspólnotowego na stronie **Lista sprzedaży do UE** (kliknij kolejno opcje **Podatek** &gt; **Deklaracje** &gt; **Handel zagraniczny** &gt; **Lista sprzedaży do UE**) za pomocą funkcji **Przenieś**. Ta funkcja pozwala na uwzględnianie transakcji zawierających kwoty o różnych typów raportowania (tzn., towary lub usługi) według grup podatku dla towarów określonych w wierszach transakcji. Można także zastosować inne filtry do określania transakcji, które mają być uwzględniane. Funkcja **Przenieś** tworzy rekord na stronie **Lista sprzedaży do UE** dla każdej uwzględnionej transakcji handlu wewnątrzwspólnotowego i umożliwia określenie numeru konta kontrahenta, kraju/regionu, numeru identyfikacji podatkowej, numeru faktury oraz daty i sumy wierszy według typu raportowania. Kopiuje ona także wartość **Kod listy** z transakcji. Kod listy transakcji można ręcznie zmienić na stronie **Lista sprzedaży do UE**. Funkcja **Przenieś** tworzy rekordy, w których wartość **Stan raportowania** jest ustawiona na **Uwzględnione**. Można sprawdzić poprawność informacji, które są gromadzone na stronie **Lista sprzedaży do UE** za pomocą **Sprawdzanie poprawności**.
+Transakcja jest uznawana za transakcję handlu wewnątrzwspólnotowego, jeśli adres dostawy transakcji jest w państwie członkowskim UE. Dla tych krajów/regionów musi istnieć rekord na karcie **Parametry kraju/regionu** na stronie **Parametry handlu zagranicznego**, a **Typ kraju/regionu** powinien mieć wartość **UE**. Transakcje handlu wewnątrzwspólnotowego są oznaczane w polu **Kod listy**. Za pomocą tego pola, można także oddzielić ogólne transakcje handlu wewnątrzwspólnotowego od transakcji handlu trójstronnego. Można zbierać informacje o transakcjach handlu wewnątrzwspólnotowego na stronie **Lista sprzedaży do UE** (kliknij kolejno opcje **Podatek** &gt; **Deklaracje** &gt; **Handel zagraniczny** &gt; **Lista sprzedaży do UE**) za pomocą funkcji **Przenieś**. Ta funkcja pozwala na uwzględnianie transakcji zawierających kwoty o różnych typów raportowania (tzn., towary lub usługi) według grup podatku dla towarów określonych w wierszach transakcji. Można także zastosować inne filtry do określania transakcji, które mają być uwzględniane. Funkcja **Przenieś** tworzy rekord na stronie **Lista sprzedaży do UE** dla każdej uwzględnionej transakcji handlu wewnątrzwspólnotowego i umożliwia określenie numeru konta kontrahenta, kraju/regionu, numeru identyfikacji podatkowej, numeru faktury oraz daty i sumy wierszy według typu raportowania. Kopiuje ona także wartość **Kod listy** z transakcji. Kod listy transakcji można ręcznie zmienić na stronie **Lista sprzedaży do UE**. Funkcja **Przenieś** tworzy rekordy, w których wartość **Stan raportowania** jest ustawiona na **Uwzględnione**. Można sprawdzić poprawność informacji, które są gromadzone na stronie **Lista sprzedaży do UE** za pomocą **Sprawdzanie poprawności**. Funkcja **Suma** umożliwia uzyskiwanie szczegółowych informacji o fakturze (dla kierunku sprzedaży).
 
 ### <a name="generating-the-eu-sales-list-report"></a>Generowanie raportu ESL.
 
@@ -160,8 +160,26 @@ Można wygenerować raport **Lista sprzedaży do UE** za pomocą funkcji **Rapor
 
 Po zakończeniu procesu generowania raportów w danym okresie (na przykład, kiedy urząd skarbowy zaakceptował raport **Lista sprzedaży do UE**), można oznaczyć rekordy ESL znajdujące się w raporcie dla danego okresu, ustawiając **Stan raportowania** na **Zamknięty**. Aby ustawić ten stan, użyj funkcji **Zaznacz jako zamknięty** na stronie **Lista sprzedaży do UE**. W przypadku cofnięcia zamknięcia okresu można oznaczyć rekordy ESL, ustawiając **Stan raportowania** na **Uwzględniony**. Następnie można ponownie umieszczać te rekordy w raporcie **Lista sprzedaży do UE**. Aby ustawić ten stan, użyj funkcji **Zaznacz jako** **zgłoszony** na stronie **Lista sprzedaży do UE**.
 
+## <a name="list-of-country-specific-topics"></a>Lista tematów specyficznych dla kraju
 
-
+| Kraj          | Łącze      |
+|------------------|-----------|
+| Austria          | [Lista sprzedaży do krajów UE dla Austrii](emea-aut-eu-sales-list.md)| 
+| Belgia          |[Lista sprzedaży do UE dla Belgii](emea-bel-eu-sales-list.md)|
+| Republika Czeska          |[Lista sprzedaży do krajów UE dla Republiki Czeskiej](emea-cze-eu-sales-list.md)|
+| Dania          |[Lista sprzedaży do krajów UE dla Danii](emea-dnk-eu-sales-list.md)|
+| Estonia          |[Lista sprzedaży do krajów UE dla Estonii](emea-est-eu-sales-list.md)|
+| Finlandia          |[Lista sprzedaży do krajów UE dla Finlandii](emea-fin-eu-sales-list.md)|
+| Francja          |[Lista sprzedaży do krajów UE dla Francji](emea-fra-eu-sales-list.md)|
+| Niemcy          |[Lista sprzedaży do krajów UE dla Niemiec](emea-deu-eu-sales-list.md)|
+| Węgry          |[Lista sprzedaży do krajów UE dla Węgier](emea-hun-eu-sales-list.md)|
+| Łotwa          |[Lista sprzedaży do krajów UE dla Łotwy](emea-lva-eu-sales-list.md)|
+| Litwa          |[Lista sprzedaży do krajów UE dla Litwy](emea-ltu-eu-sales-list.md)|
+| Holandia          |[Lista sprzedaży do krajów UE dla Holandii](emea-nl-eu-sales-list.md)|
+| Polska          |[Lista sprzedaży dla Polski](emea-pol-eu-sales-list.md)|
+| Hiszpania          |[Lista sprzedaży do krajów UE dla Hiszpanii (Raport 349)](emea-esp-sales-list.md)|
+| Szwecja          |[Lista sprzedaży dla Szwecji](emea-swe-eu-sales-list.md)|
+| Zjednoczone Królestwo (Irlandia Północna)          |[Lista sprzedaży do UE dla Zjednoczonego Królestwa (Irlandia Północna)](emea-uk-eu-sales-list.md)|
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

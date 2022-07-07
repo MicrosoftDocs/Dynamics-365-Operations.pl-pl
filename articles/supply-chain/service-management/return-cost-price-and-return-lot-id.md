@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14442853152764fce7e5a8a275532ed553da16dc
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4c1d236918eddf3203a544a6b047f8ccac777971
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677094"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017252"
 ---
 # <a name="return-cost-price-and-return-lot-id"></a>Koszt własny dla zwrotu i identyfikator partii zwrotu        
 
@@ -38,7 +38,7 @@ Aby do zwrotów od odbiorcy zastosować koszt inny niż bieżący, należy uży�
 
 Domyślnie podczas dodawania towarów do zamówienia zwrotu towary są zwracane do zapasów według bieżącego kosztu własnego. Aby określić inny koszt własny zwrotu, wykonaj następujące kroki:
 
-1.  Kliknij kolejno opcje **Sprzedaż i marketing** \> **Wspólne** \> **Zamówienia zwrotu** \> **Wszystkie zamówienia zwrotu**.
+1.  Kliknij kolejno opcje **Sprzedaż i marketing** \> **Zwroty sprzedaży** \> **Wszystkie zamówienia zwrotu**.
 
 2.  W **okienku akcji** w grupie **Nowy** kliknij opcję **Zamówienie zwrotu**.
 
@@ -54,7 +54,7 @@ Domyślnie podczas dodawania towarów do zamówienia zwrotu towary są zwracane 
 
 Jest to preferowana metoda tworzenia wierszy zwrotu. Aby użyć kosztu produktów z chwili, gdy produkty były sprzedawane odbiorcy, utwórz zamówienie zwrotu i wskaż wiersz sprzedaży do zwrotu.
 
-1.  Kliknij kolejno opcje **Sprzedaż i marketing** \> **Wspólne** \> **Zamówienia zwrotu** \> **Wszystkie zamówienia zwrotu**.
+1.  Kliknij kolejno opcje **Sprzedaż i marketing** \> **Zwroty sprzedaży** \> **Wszystkie zamówienia zwrotu**.
 
 2.  W **okienku akcji** w grupie **Nowy** kliknij opcję **Zamówienie zwrotu**.
 

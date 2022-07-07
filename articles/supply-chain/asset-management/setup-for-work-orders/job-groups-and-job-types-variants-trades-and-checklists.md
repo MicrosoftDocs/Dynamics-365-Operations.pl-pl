@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6b4d0bf82dc0dfe12991b4a48fd68a029a2ff2f3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2d4385fdd3e94d48a65baf195efa1d687fbf95c3
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887610"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016776"
 ---
 # <a name="maintenance-job-types-categories-variants-trades-and-checklists"></a>Rodzaje prac konserwacyjnych, kategorie, warianty, wymiany i listy kontrolne
 
@@ -243,7 +243,7 @@ Istnieje możliwość skonfigurowania zadania wsadowego w celu zaktualizowania t
 
 Po utworzeniu wymaganych kombinacji domyślnych dla zadania konserwacji można skorzystać z strony **wszystkie składniki majątku**, aby uzyskać przegląd informacji o bieżącym typie zadania konserwacji, które jest związane z określonym środkiem trwałym. Przegląd zawiera wszystkie kombinacje domyślne typu zadania obsługi, które mogą być używane w przypadku typu środka trwałego wybranego dla środka trwałego Te kombinacje obejmują kombinacje, które mają różne warianty typu zadania obsługi oraz zawód zadań konserwacyjnych.
 
-1. Wybierz **Zarządzanie składnikami majątku** \> **Wspólne** \> **Składniki majątku** \> **Wszystkie składniki majątku** lub **Aktywne składniki majątku**.
+1. Wybierz **Zarządzanie składnikami majątku** \> **Składniki majątku** \> **Wszystkie składniki majątku** lub **Aktywne składniki majątku**.
 2. Z listy wybierz składnik aktywów, aby wyświetlić przegląd kombinacji typów zadań konserwacyjnych dla.
 3. W okienku akcji, na karcie **ogólne**, w grupie **informacje pokrewne** wybierz **typy zadań konserwacji**.
 

@@ -16,12 +16,12 @@ ms.search.industry: Product information
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a2798e25d1f6c293aa71a6c143ded5293f241060
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 079e6de00d1a946d998648378d5ca24c1fd26218
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850562"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015414"
 ---
 # <a name="product-related-translations-faq"></a>Tłumaczenia informacji dotyczących produktów — często zadawane pytania
 
@@ -43,20 +43,20 @@ Tłumaczenia informacji dotyczących produktu można wyświetlić w każdym zewn
 
 ## <a name="how-do-i-create-translations-for-product-related-information"></a>Jak utworzyć tłumaczenia informacji dotyczących produktów?
 Aby utworzyć tłumaczenia dla produktu, wykonaj następujące kroki:
-1.  Kliknij kolejno opcje **Zarządzanie informacjami o produktach** &gt; **Wspólne** &gt; **Zwolnione produkty**.
+1.  Kliknij kolejno opcje **Zarządzanie informacjami o produktach** &gt; **Produkty** &gt; **Zwolnione produkty**.
 2.  Wybierz produkt, a następnie w okienku akcji w grupie **Języki** kliknij opcję **Tłumaczenia**.
 3.  Na stronie **Tłumaczenie tekstu** w polu **Język** wybierz język. Aby dodać więcej języków, rozwiń pole **Język**, a następnie kliknij przycisk **OK**.
 4.  W grupie **Przetłumaczony tekst** wprowadź tłumaczenia w polach **Opis** i **Nazwa produktu**.
 
 Aby utworzyć tłumaczenia dla atrybutów produktu, wykonaj następujące kroki:
-1.  Kliknij kolejno opcje **Zarządzanie informacjami o produktach** &gt; **Wspólne** &gt; **Zwolnione produkty**.
+1.  Kliknij kolejno opcje **Zarządzanie informacjami o produktach** &gt; **Produkty** &gt; **Zwolnione produkty**.
 2.  Na stronie **Ustawienia** kliknij kolejno opcje **Atrybuty** i **Atrybuty**.
 3.  Na stronie **Atrybuty** kliknij przycisk **Przetłumacz**.
 4.  Na stronie **Tłumaczenie tekstu** w polu **Język** wybierz język. Aby dodać więcej języków, rozwiń pole **Język**, a następnie kliknij przycisk **OK**.
 5.  W grupie **Przetłumaczony tekst** wprowadź tłumaczenia w polach **Opis**, **Przyjazna nazwa** i **Tekst pomocy**.
 
 Aby utworzyć tłumaczenia dla wartości wymiaru produktu, wykonaj następujące kroki:
-1.  Kliknij kolejno opcje **Zarządzanie informacjami o produktach** &gt; **Wspólne** &gt; **Zwolnione produkty**.
+1.  Kliknij kolejno opcje **Zarządzanie informacjami o produktach** &gt; **Produkty** &gt; **Zwolnione produkty**.
 2.  Wybierz produkt i kliknij opcję **Wymiary produktu**.
 3.  Wybierz jedno z łączy dla wymiarów produktu: **Konfiguracje**, **Rozmiary**, **Kolory** lub **Styl**.
 4.  Wybierz wartość wymiaru, a następnie kliknij przycisk **Przetłumacz**.

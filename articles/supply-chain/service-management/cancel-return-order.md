@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e09419f802b696179901c394b2b95c9208a12b26
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8f0469d7a3ada0dc30977978a7e9c616e8cf9781
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678298"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017413"
 ---
 # <a name="cancel-a-return-order"></a>Anulowanie zamówienia zwrotu 
 
@@ -34,11 +34,11 @@ Aby zapisać rekord planowanego zwrotu, zamiast usuwać zamówienie zwrotu, moż
 > <P>Można anulować tylko zamówienia zwrotu o stanie <STRONG>Utworzono</STRONG>. Zamówienia zwrotu o stanie <STRONG>Otwarte</STRONG> lub <STRONG>Zamknięte</STRONG> nie mogą być anulowane.</P>
 
 
-1.  Kliknij kolejno opcje **Sprzedaż i marketing** \> **Wspólne** \> **Zamówienia zwrotu** \> **Wszystkie zamówienia zwrotu**.
+1.  Kliknij kolejno opcje **Sprzedaż i marketing** \> **Zwroty sprzedaży** \> **Wszystkie zamówienia zwrotu**.
     
-    – lub –
+    – lub –
     
-    Kliknij kolejno opcje **Sprzedaż i marketing** \> **Wspólne** \> **Zamówienia zwrotu** \> **Utworzone zamówienia zwrotu**.
+    Kliknij kolejno opcje **Sprzedaż i marketing** \> **Zwroty sprzedaży** \> **Utworzone zamówienia zwrotu**.
 
 2.  Zaznacz zamówienie zwrotu, które chcesz anulować.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: dcee5fd729de6e96d57462879f7851756f287dc9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5eb911ec4ba9655c4ecaea3bf9a4f8736fa036c2
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902839"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016718"
 ---
 # <a name="introduction-to-work-orders"></a>Wprowadzenie do zleceń pracy
 
@@ -47,15 +47,15 @@ Zlecenia pracy można tworzyć przy użyciu następujących sposobów:
 
 ## <a name="all-work-orders"></a>Wszystkie zlecenia pracy
 
-Wybierz pozycję **Zarządzanie składnikami majątku** > **Wspólne** > **Zlecenia pracy** > **Wszystkie zlecenia pracy**, aby otworzyć stronę listy **Wszystkie zlecenia pracy**. Ta strona zawiera wszystkie zlecenia pracy i niektóre informacje związane z każdym z nich.
+Wybierz pozycję **Zarządzanie składnikami majątku** > **Zlecenia pracy** > **Wszystkie zlecenia pracy**, aby otworzyć stronę listy **Wszystkie zlecenia pracy**. Ta strona zawiera wszystkie zlecenia pracy i niektóre informacje związane z każdym z nich.
 
 Na poniższej ilustracji przedstawiono przykład strony listy **Wszystkie zlecenia pracy**.
 
 ![Rysunek 1.](media/01-work-orders.png)
 
-Aby wyświetlić listę tylko aktywnych zleceń pracy, wybierz pozycję **Zarządzanie składnikami majątku** > **Wspólne** > **Zlecenia pracy** > **Aktywne zlecenia pracy**. 
+Aby wyświetlić listę tylko aktywnych zleceń pracy, wybierz pozycję **Zarządzanie składnikami majątku** > **Zlecenia pracy** > **Aktywne zlecenia pracy**. 
 
-Aby wyświetlić listę zadań zlecenia pracy zawierających składniki majątku zainstalowane w lokalizacjach czynności konserwacyjnych, z którymi powiązano Cię jako pracownika, wybierz pozycję **Zarządzanie składnikami majątku** > **Wspólne** > **Zlecenia pracy** > **Moje zadania konserwacji zleceń pracy dla lokalizacji czynności konserwacyjnych**. (Relacja między pracownikami i lokalizacjami czynności konserwacyjnych jest konfigurowana na stronie **Pracownicy**. Aby dowiedzieć się więcej, zobacz temat [Konserwatorzy i grupy pracowników](../setup-for-objects/workers-and-worker-groups.md)).
+Aby wyświetlić listę zadań zlecenia pracy zawierających składniki majątku zainstalowane w lokalizacjach czynności konserwacyjnych, z którymi powiązano użytkownika jako pracownika, wybierz pozycję **Zarządzanie składnikami majątku** > **Zlecenia pracy** > **Moje zadania konserwacji zleceń pracy dla lokalizacji czynności konserwacyjnych**. (Relacja między pracownikami i lokalizacjami czynności konserwacyjnych jest konfigurowana na stronie **Pracownicy**. Aby dowiedzieć się więcej, zobacz temat [Konserwatorzy i grupy pracowników](../setup-for-objects/workers-and-worker-groups.md)).
 
 Poniżej przedstawiono kilka sposobów używania strony **Wszystkie zlecenia pracy**:
 

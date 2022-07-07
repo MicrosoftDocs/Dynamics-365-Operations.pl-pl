@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34ab83c9f9673c39006b3985ebaac9e17a45da82
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5b13db8b8b12aaef2e067f9a55eb8754333eb16b
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8908780"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017153"
 ---
 # <a name="multi-level-assets"></a>Wielopoziomowe składniki majątku
 
@@ -30,7 +30,7 @@ ms.locfileid: "8908780"
 
 W tym artykule wyjaśniono, jak tworzyć i usuwać wielopoziomowe składniki majątku. Składniki majątku i powiązane z nimi składniki podrzędne można tworzyć w hierarchicznej strukturze drzewa. W ten sposób można wyświetlać relacje i zależności między zasobami. Zadania konserwacji mogą być powiązane ze wszystkimi poziomami struktury drzewa. Statystyki mogą być również tworzone dla indywidualnego poziomu lub jako suma wszystkich poziomów podrzędnych składników majątku.
 
-Na stronie listy **Wszystkie składniki majątku** (**Zarządzanie składnikami majątku** \> **Wspólne** \> **Składniki majątku** \> **Wszystkie składniki**) kolumna **Składnik majątku** zawiera listę składników majątku w porządku hierarchicznym. Kolumna **Nadrzędny** pokazuje pokrewny składnik nadrzędny. Ponadto jeśli składnik majątku i składnik podrzędny zostały utworzone , sekcja **Drzewo składników majątku** w okienku **Powiązane informacje** pokazuje składniki majątku w strukturze drzewa.
+Na stronie listy **Wszystkie składniki majątku** (**Zarządzanie składnikami majątku** \> **Składniki majątku** \> **Wszystkie składniki**) kolumna **Składnik majątku** zawiera listę składników majątku w porządku hierarchicznym. Kolumna **Nadrzędny** pokazuje pokrewny składnik nadrzędny. Ponadto jeśli składnik majątku i składnik podrzędny zostały utworzone , sekcja **Drzewo składników majątku** w okienku **Powiązane informacje** pokazuje składniki majątku w strukturze drzewa.
 
 Aby uzyskać więcej informacji o tworzeniu składnika majątku, zobacz temat [Tworzenie składnika majątku](../objects/create-an-object.md). Aby utworzyć podrzędny składnik majątku, wybierz nadrzędny składnik majątku w polu **Nadrzędny** na skróconej karcie **Ogólne.**
 
@@ -38,7 +38,7 @@ Aby uzyskać więcej informacji o tworzeniu składnika majątku, zobacz temat [T
 
 Jeśli firma ma kilka podobnych struktur składników majątku, można użyć funkcji Kopiuj w module Zarządzanie składnikami majątku, aby szybko je utworzyć.
 
-1. Wybierz kolejno **Zarządzanie składnikami majątku** \> **Wspólne** \> **Składniki majątku** \> **Wszystkie składniki majątku**.
+1. Wybierz kolejno **Zarządzanie składnikami majątku** \> **Składniki majątku** \> **Wszystkie składniki majątku**.
 2. Na stronie listy **Wszystkie składniki majątku** wybierz składnik majątku do skopiowania. Jeśli na przykład chcesz skopiować całą strukturę składników majątku, w tym podrzędne składniki majątku, wybierz nadrzędny składnik majątku.
 3. Wybierz **Kopiuj składnik majątku**. W sekcji **Kopiuj z** pole **Składnik majątku** jest ustawione na składnik majątku wybrany na stronie listy.
 4. W sekcji **Kopiuj do** w polu **Składnik majątku** wprowadź nazwę nowego składnika majątku.

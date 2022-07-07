@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8fe4731f8ff23f4abe25fce57a2325e1fca979c4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 19fafb21e879d7436678bdb3c29d1a3d7e2330d7
+ms.sourcegitcommit: bad64015da0c96a6b5d81e389708281406021d4f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890836"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "9023768"
 ---
 # <a name="set-up-and-maintain-vendor-collaboration"></a>Konfigurowanie i obsługa współpracy z dostawcami
 
@@ -29,9 +29,6 @@ ms.locfileid: "8890836"
 Interfejs współpracy z dostawcami udostępnia użytkownikom zewnętrznym ograniczony zestaw informacji o zamówieniach zakupu, fakturach i zapasach konsygnacyjnych. Z tego interfejsu sprzedawca może również odpowiadać na zapytania ofertowe (RFQ) oraz przeglądać i edytować podstawowe informacje o firmie.
 
 W tym artykule opisano sposób konfigurowania zasad współpracy z dostawcą w Dynamics 365 Supply Chain Management. Wyjaśniono również, jak skonfigurować przepływ pracy w celu zapewnienia nowych użytkowników współpracujących z dostawcami oraz jak zarządzać rolami zabezpieczeń dla tych użytkowników.
-
-> [!NOTE]
-> Informacje dotyczące konfiguracji ról zabezpieczeń dla współpracy z dostawcami dotyczą tylko bieżącej wersji rozwiązania Finance and Operations. W systemie Microsoft Dynamics AX 7.0 (luty 2016 r.) i aplikacji Microsoft Dynamics AX w wersji 7.0.1 (maj 2016 r.) do współpracy z dostawcami służy moduł **Portal dostawców**. Aby uzyskać informacje na temat uprawnień użytkowników portalu sprzedawcy w Microsoft Dynamics AX, patrz [Bezpieczeństwo użytkownika portalu sprzedawcy](configure-security-vendor-portal-users.md).
 
 ## <a name="set-up-vendor-collaboration-security-roles"></a>Konfigurowanie ról zabezpieczeń współpracy z dostawcami
 
@@ -118,7 +115,7 @@ Aby skonfigurować to rozgałęzienie, należy utworzyć nowy przepływ pracy ty
 2. Przydziel zadanie osobie, która jest odpowiedzialna za zgłaszanie zapotrzebowania na nowe konta użytkowników Microsoft Azure Active Directory (Azure AD) w portalu Azure. W tym kroku należy użyć predefiniowanego zadania **Wyślij zaproszenie użytkownika Azure B2B**. Użytkownicy B2B mogą być automatycznie eksportowani do Azure AD. Użyj predefiniowanej **Konfiguracji Azure AD użytkownika B2B**. Aby uzyskać więcej informacji, zobacz [Eksport użytkowników B2B do Azure AD](../../fin-ops-core/dev-itpro/sysadmin/implement-b2b.md).
 3. Przypisz zadanie zatwierdzenia do osoby, która przesyła dane do Azure. Jeśli konto nie zostanie pomyślnie utworzone, osoba ta odrzuca zadanie i kończy przepływ pracy. To zadanie zatwierdzania można pominąć, jeśli włączono krok, który automatycznie eksportuje nowe konta użytkowników do Azure za pomocą interfejsu programowania aplikacji B2B (API).
 4. Dodaj zautomatyzowane zadanie, które zapisuje nowego użytkownika. W tym kroku należy użyć predefiniowanego zadania **Zautomatyzowane udostępnianie użytkownika**.
-5. Dodaj zadanie, które powiadomi nowego użytkownika. Możesz wysłać nowemu użytkownikowi powitalną wiadomość e-mail, która zawiera adres URL do Supply Chain Management. Ta wiadomość e-mail może wykorzystywać szablon utworzony na stronie **Wiadomości e-mail**, a następnie wybrany na stronie **Parametry przepływu pracy użytkownika**. Szablon może zawierać tag **%portalURL%**. Kiedy zostanie wygenerowana wiadomość powitalna, ten znacznik, który zostanie zastąpiony przez adres URL lokatora Supply Chain Management.
+5. Dodaj zadanie, które powiadomi nowego użytkownika. Możesz wysłać nowemu użytkownikowi powitalną wiadomość e-mail, która zawiera adres URL do Supply Chain Management. Ta wiadomość e-mail może wykorzystywać szablon utworzony na stronie **Wiadomości e-mail**, a następnie wybrany na stronie **Parametry przepływu pracy użytkownika**. Szablon może zawierać tag **%portalURL%**. Kiedy zostanie wygenerowana wiadomość powitalna, ten znacznik zostanie zastąpiony przez adres URL lokatora Supply Chain Management.
 
     > [!NOTE]
     > Ten przepływ pracy może być wykorzystany w wielu scenariuszach, w których użytkownik jest wprowadzany do systemu. Na przykład, można go użyć, gdy potencjalni sprzedawcy lub osoby kontaktowe wymagają konta współpracy ze sprzedawcami. Dlatego powinieneś sformułować e-mail jako ogólne stwierdzenie, które może być wykorzystane do wielu celów.
@@ -138,13 +135,7 @@ Należy utworzyć przepływ typu **Inaktywacja platformy przepływu żądań uż
 
 ## <a name="enable-vendor-collaboration-for-a-specific-vendor"></a>Umożliwienie współpracy z dostawcami dla określonego dostawcy
 
-Przed utworzeniem konta użytkownika dla osoby, która będzie korzystać ze współpracy z dostawcami, należy skonfigurować dostawcę w taki sposób, aby mógł on korzystać ze współpracy z dostawcami. Na stronie **Dostawcy** na karcie **Ogólne** ustaw pole **Aktywacja współpracy**. Dostępne są następujące opcje:
-
-- **Aktywne (zamówienie jest automatycznie potwierdzane)** – zamówienia są automatycznie potwierdzane, jeśli sprzedawca zaakceptuje je bez żądania zmian.
-- **Aktywna (zamówienie zakupu nie zostało automatycznie potwierdzone)** — Twoja organizacja musi ręcznie potwierdzać zamówienia zakupu po ich zaakceptowaniu przez sprzedawcę.
-
-> [!NOTE]
-> Specjaliści ds. zakupów w Twojej firmie również mogą wykonać to zadanie.
+Przed utworzeniem konta użytkownika dla osoby, która będzie korzystać ze współpracy z dostawcami, należy skonfigurować dostawcę w taki sposób, aby mógł on korzystać ze współpracy z dostawcami. Aby uzyskać więcej szczegółów, jak to zrobić, zobacz [Współpraca z dostawcami zewnętrznymi przy użyciu modułu Współpraca z dostawcami](vendor-collaboration-work-external-vendors.md).
 
 ## <a name="troubleshoot-the-provisioning-of-new-vendor-collaboration-users"></a>Rozwiązywanie problemów związanych z konfigurowaniem nowych użytkowników współpracy z dostawcami
 

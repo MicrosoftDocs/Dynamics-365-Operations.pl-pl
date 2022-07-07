@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1e2c79a621cf4bd1212c006e1c8967d85bd716b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 750776412ce9d87389a635ef108a34cffe12b68b
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870819"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015820"
 ---
 # <a name="asset-management-parameters"></a>Parametry zarządzania składnikami majątku
 
@@ -37,7 +37,7 @@ Karta **Składniki majątku** zawiera następujące ustawienia:
 
 - **Domyślną lokalizacją czynności konserwacyjnych** jest standardowa lokalizacja czynności konserwacyjnych, która jest automatycznie wybierana w składnikach majątku podczas tworzenia nowych składników majątku.  
 - W polu **Standardowy kalendarz** wybierz kalendarz, który ma być używany do obliczania wskaźników KPI składnika majątku, jeśli składnik majątku nie jest zaznaczony.  
-- W polu **Widok** wybierz widok standardowy, który jest wyświetlany po otwarciu **Widok składnika majątku** (**Zarządzanie składnikami majątku** > **Wspólne** > **Składniki majątku** > **Widok składników majątku**).
+- W polu **Widok** wybierz widok standardowy, który jest wyświetlany po otwarciu **Widok składnika majątku** (**Zarządzanie składnikami majątku** > **Składniki majątku** > **Widok składników majątku**).
 - **Domyślny typ żądania** to standardowy typ żądania konserwacji, który jest wybierany automatycznie podczas tworzenia nowego żądania.  
 - Prognozy dotyczące typów zadań są przechowywane w projekcie wybranym w polu **Projekt prognozy**. Dla każdego typu zadania nowe działanie jest tworzone automatycznie w projekcie prognozy. Prognozy dotyczące typu zadania są następnie zapisywane w projekcie prognozy.  
 - W polu **Model** wybierz model prognozy używany dla typu zadania i prognoz zleceń pracy.

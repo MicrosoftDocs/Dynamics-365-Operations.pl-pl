@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8a35f2494c616c2e456f92409d012cc434a32bd8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3ae571f4ad7210b31d212b0472610b36dc5c488b
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894509"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016080"
 ---
 # <a name="install-assets-on-functional-locations"></a>Instalowanie składników majątku w lokalizacjach czynności konserwacyjnych
 
@@ -40,7 +40,7 @@ Po zainstalowaniu składników majątku w lokalizacji czynności konserwacyjnych
 
 ## <a name="install-an-asset-structure-on-a-functional-location"></a>Zainstaluj strukturę składnika majątku w lokalizacji czynności konserwacyjnych
 
-1. Wybierz kolejno opcje **Zarządzanie składnikami majątku** \> **Wspólne** \> **Lokalizacje czynności konserwacyjnych** \> **Wszystkie lokalizacje czynności konserwacyjnych** lub **Aktywne lokalizacje czynności konserwacyjnych**.
+1. Wybierz kolejno opcje **Zarządzanie składnikami majątku** \> **Lokalizacje czynności konserwacyjnych** \> **Wszystkie lokalizacje czynności konserwacyjnych** lub **Aktywne lokalizacje czynności konserwacyjnych**.
 2. Wybierz lokalizację czynności konserwacyjnych, w której ma zostać zainstalowany składnik majątku.
 3. Wybierz opcję **Zainstaluj składnik majątku**.
 
