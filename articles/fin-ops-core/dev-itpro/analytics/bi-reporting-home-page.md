@@ -7,21 +7,21 @@ ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 audience: Application User, IT Pro
-ms.reviewer: kfend
-ms.custom:
-- "27681"
-- intro-internal
-ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4be3c576cd0fac1239113efcdd7e97810b193a88
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom:
+- "27681"
+- intro-internal
+ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
+ms.openlocfilehash: 119292dccc2f2d7131f0fa39aa35a8253b948d40
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906641"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206484"
 ---
 # <a name="reporting-and-analytics-with-power-bi-home-page"></a>Raportowanie i analizy wykonywane przy użyciu usługi Power BI — strona główna
 
@@ -32,7 +32,7 @@ Ten artykuł odsyła do zasobów zawierających informacje na temat dostępnych 
 ## <a name="get-started"></a>Rozpocznij
 - [Dostęp do informacji i raportowanie](information-access-reporting.md)
 - [Informacje dotyczące technologii: opcje raportowania](https://www.youtube.com/watch?v=NzZONjKs5xA) (film)
-- [Finance and Operations: Power BI Blog o Analityce i Raportowaniu](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (blog)
+- [Aplikacje finansowe i operacyjne: blog o analityce i raportowaniu Power BI](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (blog)
 
 ## <a name="analytical-workspaces"></a>Analityczne obszary robocze
 Obszary robocze mogą wykorzystywać bogate infografiki i wizualizacje obsługiwane przez Microsoft Power BI. Te infografiki i wizualizacje obejmują wiele formantów dostarczanych przez firmy zewnętrzne. Dlatego materiały w obszarach roboczych są bardzo wzrokowe i interaktywne.

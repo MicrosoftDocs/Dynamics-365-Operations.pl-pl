@@ -2,7 +2,7 @@
   items:
     - name: Rozwój i administracja aplikacji finansowych i operacyjnych
       items:
-        - name: Dokumentacja aplikacji Finance and Operations
+        - name: Dokumentacja aplikacji finansowych i operacyjnych
           href: ../fin-ops/index.md
         - name: Rozwój i administracja aplikacji finansowych i operacyjnych
           href: index.md
@@ -18,8 +18,6 @@
                   href: get-started/whats-new-platform-updates-10-0-28.md
                 - name: Aktualizacje platformy dla wersji 10.0.27 (lipiec 2022)
                   href: get-started/whats-new-platform-updates-10-0-27.md
-                - name: Aktualizacje platformy dla wersji 10.0.26 (maj 2022)
-                  href: get-started/whats-new-platform-updates-10-0-26.md
             - name: Usunięte lub wycofane funkcje
               items:
                 - name: Usunięte lub wycofane funkcje — strona główna
@@ -82,7 +80,7 @@
                   href: data-entities/service-protection-monitoring.md
                 - name: Maksymalizowanie przepływności interfejsu API
                   href: data-entities/service-protection-maximizing-api-throughput.md
-            - name: Łącznik rozwiązania Finance and Operations
+            - name: Łącznik finansowy i operacyjny
               href: data-entities/fin-ops-connector.md
             - name: Programowanie na potrzeby integracji
               items:
@@ -106,39 +104,39 @@
                       items:
                         - name: Od prospektu do gotówki
                           href: ../../supply-chain/sales-marketing/prospect-to-cash.md
-                        - name: Synchronizowanie kont klientów bezpośrednio z rozwiązania Sales do klientów w rozwiązaniu Finance and Operations
+                        - name: Synchronizowanie kont klientów bezpośrednio z rozwiązania Sales do klientów w aplikacjach finansowych i operacyjnych
                           href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
-                        - name: Synchronizowanie produktów w rozwiązaniu Finance and Operations bezpośrednio z produktami w rozwiązaniu Sales
+                        - name: Synchronizowanie produktów w aplikacjach finansowych i operacyjnych bezpośrednio z produktami w rozwiązaniu Sales
                           href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
-                        - name: Synchronizowanie kontaktów w rozwiązaniu Sales bezpośrednio z kontaktami lub odbiorcami w rozwiązaniu Finance and Operations
+                        - name: Synchronizowanie kontaktów w rozwiązaniu Sales bezpośrednio z kontaktami lub klientami w aplikacjach finansowych i operacyjnych
                           href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
-                        - name: Synchronizowanie nagłówków i wierszy ofert sprzedaży bezpośrednio z rozwiązania Sales do rozwiązania Finance and Operations
+                        - name: Synchronizowanie nagłówków i wierszy ofert sprzedaży bezpośrednio z rozwiązania Sales do aplikacji finansowych i operacyjnych
                           href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
-                        - name: Synchronizacja zamówień sprzedaży bezpośrednio między rozwiązaniem Sales a rozwiązaniem Finance and Operations
+                        - name: Synchronizacja zamówień sprzedaży bezpośrednio między rozwiązaniem Sales a aplikacjami finansowymi i operacyjnymi
                           href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
-                        - name: Synchronizowanie nagłówków i wierszy faktur sprzedaży w rozwiązaniu Finance and Operations bezpośrednio z elementami w rozwiązaniu Sales
+                        - name: Synchronizowanie nagłówków i wierszy faktur sprzedaży z aplikacji finansowych i operacyjnych bezpośrednio z elementami w rozwiązaniu Sales
                           href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
                     - name: Konfigurowanie integracji z rozwiązaniem Field Service
                       items:
                         - name: Omówienie konfigurowania integracji z rozwiązaniem Field Service
                           href: ../../supply-chain/sales-marketing/field-service.md
-                        - name: Synchronizowanie produktów w rozwiązaniu Finance and Operations z produktami w rozwiązaniu Field Service
+                        - name: Synchronizowanie produktów w aplikacjach finansowych i operacyjnych z produktami w rozwiązaniu Field Service
                           href: ../../supply-chain/sales-marketing/field-service-product.md
-                        - name: Synchronizowanie zleceń pracy w rozwiązaniu Field Service z zamówieniami sprzedaży w rozwiązaniu Finance and Operations
+                        - name: Synchronizowanie zleceń pracy w rozwiązaniu Field Service z zamówieniami sprzedaży w aplikacjach finansowych i operacyjnych
                           href: ../../supply-chain/sales-marketing/field-service-work-order.md
-                        - name: Synchronizowanie faktur dotyczących umowy w rozwiązaniu Field Service z fakturami niezależnymi w rozwiązaniu Finance and Operations
+                        - name: Synchronizowanie faktur dotyczących umowy w rozwiązaniu Field Service z fakturami niezależnymi w aplikacjach finansowych i operacyjnych
                           href: ../../supply-chain/sales-marketing/field-service-invoice.md
-                        - name: Synchronizowanie przesunięć magazynowych i korekt z rozwiązania Field Service do rozwiązania Finance and Operations
+                        - name: Synchronizowanie przeniesień magazynowych i korekt z rozwiązania Field Service do aplikacji finansowych i operacyjnych
                           href: ../../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
-                        - name: Synchronizowanie informacji na poziomie zapasów z rozwiązania Finance and Operations do rozwiązania Field Service
+                        - name: Synchronizowanie informacji na poziomie zapasów z aplikacji finansowych i operacyjnych do rozwiązania Field Service
                           href: ../../supply-chain/sales-marketing/synchronize-inventory-level-info.md
-                        - name: Synchronizowanie produktów z jednostką magazynową z rozwiązania Finance and Operations do rozwiązania Field Service
+                        - name: Synchronizowanie produktów z jednostką magazynową z aplikacji finansowych i operacyjnych do rozwiązania Field Service
                           href: ../../supply-chain/sales-marketing/synchronize-products-inv-unit.md
-                        - name: Synchronizowanie listy projektów z rozwiązania Finance and Operations do rozwiązania Field Service
+                        - name: Synchronizowanie listy projektów z aplikacji finansowych i operacyjnych do rozwiązania Field Service
                           href: ../../supply-chain/sales-marketing/synchronize-project-list.md
-                        - name: Synchronizowanie magazynów z rozwiązania Finance and Operations do rozwiązania Field Service
+                        - name: Synchronizowanie magazynów z aplikacji finansowych i operacyjnych do rozwiązania Field Service
                           href: ../../supply-chain/sales-marketing/synchronize-warehouse.md
-                        - name: Synchronizowanie zleceń z projektem z rozwiązania Field Service do Finance and Operations
+                        - name: Synchronizowanie zleceń pracy z projektem z rozwiązania Field Service do aplikacji finansowych i operacyjnych
                           href: ../../supply-chain/sales-marketing/synchronize-work-orders.md
                     - name: Konfigurowanie integracji z rozwiązaniem Project Service Automation
                       items:
@@ -348,9 +346,9 @@
                   href: deployment/arm-onboarding.md
                 - name: Zakończenie procesu dołączania usługi Azure Resource Manager dla projektów usługi LCS instytucji rządowych USA
                   href: deployment/arm-onbarding-us-goverment.md
-                - name: Azure ExpressRoute i Finance and Operations
+                - name: Azure ExpressRoute oraz aplikacje finansowe i operacyjne
                   href: deployment/expressroute.md
-                - name: Architektura rozwiązania Finance and Operations
+                - name: Architektura finansowa i operacyjna
                   href: ../fin-ops/imp-lifecycle/architecture-overview.md
                 - name: Stosowanie aktualizacji do środowisk w chmurze
                   href: deployment/apply-deployable-package-system.md
@@ -584,7 +582,7 @@
                   href: dev-tools/metadata-search-visual-studio.md
                 - name: Modele i pakiety
                   href: dev-tools/models.md
-                - name: Typ projektu rozwiązania Finance and Operations
+                - name: Typ projektu finansowego i operacyjnego
                   href: dev-tools/projects.md
                 - name: Narzędzia dodatków do Visual Studio
                   href: dev-tools/developer-tools-add-ins.md
@@ -1050,7 +1048,7 @@
                   href: lifecycle-services/dts-devops-extension.md
                 - name: Samouczek rozszerzenia Azure DevOps (publiczna wersja zapoznawcza)
                   href: lifecycle-services/dts-ado-tutorial.md
-                - name: Rozszerzenie programu Visual Studio (prywatna wersja zapoznawcza)
+                - name: Rozszerzenie Visual Studio (publiczna wersja zapoznawcza)
                   href: lifecycle-services/dts-visual-studio.md
                 - name: Rozszerzenie programu Visual Studio Code (publiczna wersja zapoznawcza)
                   href: lifecycle-services/dts-vscode-doc.md
@@ -1200,13 +1198,13 @@
                           href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
                         - name: Rozwiązywanie problemów z podwójnym zapisem w aplikacjach finansowych i operacyjnych
                           href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
-                        - name: Rozwiązywanie problemów ze stroną i problemy z globalną książką adresową
+                        - name: Rozwiązywanie problemów ze stroną i globalną książką adresową
                           href: data-entities/dual-write/dual-write-troubleshooting-party-gab.md
                         - name: Rozwiązywanie problemów związanych ze świadomością rozwiązania
                           href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
                         - name: Rozwiązywanie problemów wynikłych z aktualizacji aplikacji finansowych i operacyjnych
                           href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
-                        - name: Sprawdzanie poprawności konfiguracji podwójnego zapisu w aplikacjach finansowych i operacyjnych i usłudze Dataverse
+                        - name: Sprawdzanie poprawności konfiguracji podwójnego zapisu w aplikacjach finansowych i operacyjnych oraz usłudze Dataverse
                           href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
                         - name: Kody błędów dla kontroli kondycji mapy tabel
                           href: data-entities/dual-write/table-map-health-check.md
@@ -1224,9 +1222,9 @@
                   href: power-platform/admin-reference.md
                 - name: Włączanie jednostek wirtualnych usługi Dataverse
                   href: power-platform/enable-virtual-entities.md
-                - name: Portale Power Apps z rozwiązaniem Finance and Operations
+                - name: Portale Power Apps z aplikacjami finansowymi i operacyjnymi
                   href: power-platform/power-portal-reference.md
-                - name: Jednostki wirtualne rozwiązania Finance and Operations — często zadawane pytania
+                - name: Finansowe i operacyjne jednostki wirtualne — często zadawane pytania
                   href: power-platform/faq.md
             - name: Zdarzenia biznesowe
               items:
@@ -1570,15 +1568,15 @@
                   href: lcs-solutions/regulatory-watch-communication.md
                 - name: Rozdzielność modeli lokalizacji
                   href: lcs-solutions/separate-localization-models.md
-                - name: Przesyłanie alertów dotyczący wymogów prawnych
+                - name: Przesyłanie alertów dotyczących wymogów prawnych
                   href: lcs-solutions/submit-localization-alerts.md
         - name: Pomoc techniczna
           items:
-            - name: Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Finance and Operations i usługi Lifecycle Services
+            - name: Uzyskiwanie pomocy technicznej dotyczącej aplikacji finansowych i operacyjnych oraz usługi Lifecycle Services
               href: lifecycle-services/lcs-support.md
-            - name: Omówienie pomocy technicznej systemu Dynamics 365
+            - name: Omówienie pomocy technicznej usługi Dynamics 365
               href: /power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
-            - name: Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Finance and Operations obsługiwanego przez firmę 21Vianet w Chinach
+            - name: Uzyskiwanie pomocy technicznej dotyczącej aplikacji finansowych i operacyjnych obsługiwanych przez firmę 21Vianet w Chinach
               href: lifecycle-services/21vianet-support.md
             - name: Konfigurowanie pomocy technicznej dotyczącej aplikacji finansowych i operacyjnych
               href: lifecycle-services/support-experience.md
@@ -1698,7 +1696,7 @@
               href: migration-upgrade/upgrade-home-page.md
             - name: Uaktualnienie z systemu AX 2012
               items:
-                - name: Uaktualnianie z systemu AX 2012 do rozwiązania Finance and Operations
+                - name: Uaktualnianie z systemu AX 2012 do aplikacji finansowych i operacyjnych
                   href: migration-upgrade/upgrade-overview-2012.md
                 - name: Uaktualnianie systemu AX 2012 — planowanie przy użyciu narzędzia Analizator możliwości uaktualnienia
                   href: migration-upgrade/upgrade-analyzer-tool.md
@@ -1758,7 +1756,7 @@
                       href: migration-upgrade/compress-tables-ax-2012.md
             - name: Migracja danych z systemu AX 2009
               items:
-                - name: Migracja danych z systemu AX 2009 do rozwiązania Finance and Operations
+                - name: Migracja danych z systemu AX 2009 do aplikacji finansowych i operacyjnych
                   href: migration-upgrade/data-migration-tool.md
                 - name: Migracja systemu AX 2009 — instalowanie narzędzia migracji danych
                   href: migration-upgrade/install-dmt.md

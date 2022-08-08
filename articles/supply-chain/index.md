@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 189239ad6142af200e41cfe9cfcdbb56be65b0b7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dbf77b57f7a107918c3b8a03290e208ed1c4803b
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879084"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066066"
 ---
 # <a name="supply-chain-management-home-page"></a>Supply Chain Management — strona główna
 
@@ -56,16 +56,16 @@ Aby dowiedzieć się o rozwiązaniu Dynamics 365 Finance, przejdź na [Finance �
 
 ## <a name="videos"></a>Filmy
 
-Ten krótki film wideo podsumowuje nowe funkcje zarządzania łańcuchami dostaw dodane do Microsoft Dynamics 365 for Finance and Operations w wersji 8.0 (kwiecień 2018).
+Ten krótki film wideo podsumowuje nowe funkcje zarządzania łańcuchami dostaw dodane do Microsoft Dynamics 365 Finance w wersji 8.0 (kwiecień 2018).
 
-- [Synchronizowanie zlecenia pracy między rozwiązaniami Field Service i Finance and Operations](https://youtu.be/hAB4TDVMjxU)
+- [Synchronizowanie zlecenia pracy między rozwiązaniami Field Service oraz aplikacjami finansowymi i operacyjnymi](https://youtu.be/hAB4TDVMjxU)
 
-Te krótkie filmy wideo podsumowują nowe funkcje zarządzania łańcuchami dostaw dodane do rozwiązań Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (grudzień 2017).
+Te krótkie filmy wideo podsumowują nowe funkcje zarządzania łańcuchami dostaw dodane do rozwiązań Microsoft Dynamics 365 Finance, Enterprise edition 7.3 (grudzień 2017).
 
 - [Doradca optymalizacji](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Używanie szablonu magazynu w celu kopiowania konfiguracji](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
-Te krótkie filmy wideo podsumowuje nowe funkcje zarządzania łańcuchami dostaw dodane do Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (lipiec 2017).
+Te krótkie filmy wideo podsumowuje nowe funkcje zarządzania łańcuchami dostaw dodane do Microsoft Dynamics 365 Finance, Enterprise edition (lipiec 2017).
 
 - [Rozpoczęcie korzystania z modułu Rachunek kosztów](https://youtu.be/1pUDtJQZ8FU)
 - [Obszar roboczy kontroli kosztów na urządzeniach przenośnych](https://youtu.be/imsuTg8rUVk)
@@ -73,7 +73,7 @@ Te krótkie filmy wideo podsumowuje nowe funkcje zarządzania łańcuchami dosta
 - [Zatwierdzanie zamówień zakupu na urządzeniu przenośnym](https://youtu.be/gZ-gOlJe7H8)
 - [Planowanie wizualne za pomocą wykresu Gantta w zleceniach produkcyjnych i zamówieniach partii](https://youtu.be/BtbuShkGj4I)
 
-Poniższe nagrania konferencji technicznych omawiają funkcje zarządzania łańcuchem dostaw z poprzednich wersji rozwiązania Finance and Operations. Ta funkcja jest teraz częścią systemu Dynamics 365 Supply Chain Management; nadal obowiązują te same pojęcia, a procedury są w bieżącej wersji podobne.
+Poniższe nagrania konferencji technicznych omawiają funkcje zarządzania łańcuchem dostaw z poprzednich wersji aplikacji finansowych i operacyjnych. Ta funkcja jest teraz częścią systemu Dynamics 365 Supply Chain Management; nadal obowiązują te same pojęcia, a procedury są w bieżącej wersji podobne.
 
 - **Zarządzanie kosztami:**
   - [Omówienie zarządzania kosztami](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
@@ -106,3 +106,4 @@ W przypadku kursów i szkoleń w trybie online, sprawdź dodatek [Dynamics 365 S
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

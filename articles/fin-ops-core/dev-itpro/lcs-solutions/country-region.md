@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4935d54a911701fda4740e3a1116c139730ceb08
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: abfba49c1b5e410cdc47db9965ffee26fbaebb9e
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866545"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067691"
 ---
 # <a name="globalization-resources"></a>Zasoby globalizacji
 
@@ -63,10 +63,10 @@ Wymienione poniżej zasoby zawierają informacje o planowanych i nowych funkcjac
 W dokumencie [Plany wydań Dynamics 365](/business-applications-release-notes/) znajdują się opisy nowych i ulepszonych możliwości, które mają zostać wprowadzone w aplikacjach biznesowych oraz platformach aplikacji usługi Dynamics 365. 
 
 #### <a name="finance-and-operations-apps-whats-new"></a>Co nowego w aplikacjach finansowych i operacyjnych
-[Nowości i zmiany w rozwiązaniu Finance and Operations — strona główna](../../fin-ops/get-started/whats-new-changed.md) zawiera listę funkcji wchodzących w skład poszczególnych wydań aplikacji finansowych i operacyjnych.
+[Nowości i zmiany w aplikacjach finansowych i operacyjnych — strona główna](../../fin-ops/get-started/whats-new-changed.md) zawiera listę funkcji wchodzących w skład poszczególnych wydań aplikacji finansowych i operacyjnych.
 
 ### <a name="electronic-reporting"></a>Raportowanie elektroniczne
-Narzędzie Raportowanie elektroniczne umożliwia konfigurowanie formatów dokumentów elektronicznych zgodnie z wymogami prawnymi obowiązującymi w różnych krajach/regionach. Raportowanie elektroniczne umożliwia zarządzanie tymi formatami podczas ich całego cyklu życia. Aby uzyskać więcej informacji, zobacz następujące tematy:
+Narzędzie Raportowanie elektroniczne (ER) umożliwia konfigurowanie formatów dokumentów elektronicznych zgodnie z wymogami prawnymi obowiązującymi w różnych krajach/regionach. Raportowanie elektroniczne umożliwia zarządzanie tymi formatami podczas ich całego cyklu życia. Aby uzyskać więcej informacji, zobacz następujące tematy:
 -   [Omówienie raportowania elektronicznego (ER)](../analytics/general-electronic-reporting.md)
 -   [Zarządzanie cyklem życia konfiguracji raportowania elektronicznego (ER)](../analytics/general-electronic-reporting-manage-configuration-lifecycle.md)
 -   [Tworzenie konfiguracji raportowania elektronicznego (ER)](../analytics/electronic-reporting-configuration.md)
@@ -133,3 +133,4 @@ Aby uzyskać więcej informacji, zobacz [System Pomocy](../../fin-ops/get-starte
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

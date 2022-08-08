@@ -1,5 +1,5 @@
 ---
-title: Dokumentacja aplikacji Finance and Operations
+title: Dokumentacja aplikacji finansowych i operacyjnych
 description: Dokumentacja dla aplikacji finansowych i operacyjnych.
 author: tonyafehr
 ms.date: 04/13/2021
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6f646b3216c73e14b550dc438c500a569bb799c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8f9776038530438ba8d8046b735d95b2a5701594
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865840"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067471"
 ---
-# <a name="finance-and-operations-application-documentation"></a>Dokumentacja aplikacji Finance and Operations
+# <a name="finance-and-operations-application-documentation"></a>Dokumentacja aplikacji finansowych i operacyjnych
 
 [!include [banner](includes/banner.md)]
 
@@ -41,7 +41,7 @@ Wiele z tych informacji dotyczy również produktów pokrewnych: Dynamics 365 Co
 <h3><a href="get-started/before-you-buy.md">Zanim kupisz</a></h3>
 <p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Rejestracja w celu uzyskania subskrypcji w wersji zapoznawczej</a></p>
  <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Wybieranie opcji wdrożenia</a></p>
- <p><a href="get-started/purchase-on-premises.md">Zakup rozwiązania Finance and Operations (on-premises)</a></p>
+ <p><a href="get-started/purchase-on-premises.md">Zakup aplikacji finansowych i operacyjnych (lokalnie)</a></p>
 
 <h3><a href="imp-lifecycle/implementation-lifecycle.md">Cykl życia implementacji</a></h3>
 <p><a href="/dynamics365/fasttrack/">FastTrack for Dynamics 365</a></p>
@@ -143,3 +143,4 @@ Wiele z tych informacji dotyczy również produktów pokrewnych: Dynamics 365 Co
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

@@ -1,7 +1,7 @@
 ---
 title: Zarządzanie gotówką i bankami — strona główna
 description: Moduł Zarządzanie gotówką i bankami służy do obsługi kont bankowych firmy i instrumentów finansowych skojarzonych z tym kontami bankowymi.
-author: kfend
+author: angelad116
 ms.date: 10/26/2017
 ms.topic: index-page
 ms.prod: ''
@@ -14,15 +14,15 @@ ms.custom:
 - intro-internal
 ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
 ms.search.region: Global
-ms.author: kfend
+ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf423c61f4a7ac8648a09c25e30b47ce1b0e3300
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: e49c9f514e79552dda2e7a6e10c7d84fa2560c2e
+ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710733"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "9151978"
 ---
 # <a name="cash-and-bank-management-home-page"></a>Zarządzanie gotówką i bankami — strona główna
 
@@ -89,7 +89,7 @@ Przejdź do [planów wydań Microsoft Dynamics 365](/dynamics365/release-plans/)
 
 #### <a name="blogs"></a>Blogi
 
-Opinie, wiadomości i inne informacje możesz znaleźć w blogu usługi [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) oraz blogu finansowym usługi [Microsoft Dynamics 365 Finance and Operations](https://community.dynamics.com/365/financeandoperations/b/financials).
+Opinie, wiadomości i inne informacje możesz znaleźć w blogu usługi [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) oraz [blogu finansowym aplikacji finansowych i operacyjnych usługi Microsoft Dynamics 365](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 [Blog społeczności partnerów Microsoft Dynamics Operations](https://community.dynamics.com/partner/b/operationspartnercommunityblog) zapewnia Microsoft Dynamics, jeden zasób, w którym mogą dowiedzieć się, co nowego, poza tym zyskuje na popularności w systemie Dynamics 365.
 
@@ -102,3 +102,4 @@ Obejrzyj filmy instruktażowe w [kanale YouTube rozwiązania Microsoft Dynamics 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
