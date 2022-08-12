@@ -18,12 +18,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3dceb8e6300d19eb9253e88debbaaef0b6987420
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 075e74845eb8e0363cdb706f1f3af0dc9cfddfaa
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893099"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069191"
 ---
 # <a name="replenishment-overview"></a>Omówienie uzupełniania zapasów
 
@@ -70,8 +70,8 @@ Zamiast sumować popyt na końcu procesu alokacji i uzupełniać zapasy na podst
 
 |      Wymaganie wstępne       |                                                                                                                                opis                                                                                                                                 |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|          Pozycja           |                                                                                                        Dla danego towaru musi być możliwa obsługa zarządzania magazynem.                                                                                                        |
-|        Magazyn        | Musi być możliwe zarządzanie danym magazynem. Aby włączyć magazyn dla procesów zarządzania magazynem, na stronie <strong>Magazyny</strong> wybierz magazyn, a następnie zaznacz opcję <strong>Użyj procesów zarządzania magazynami</strong>. |
+|          Pozycja           |                                                                                                        Dla danego towaru musi być możliwa obsługa zarządzania magazynem (WMS).                                                                                                        |
+|        Magazyn        | Musi być możliwe zarządzanie danym magazynem (WMS). Aby włączyć magazyn dla procesów zarządzania magazynem (WMS), na stronie <strong>Magazyny</strong> wybierz magazyn, a następnie zaznacz opcję <strong>Użyj procesów zarządzania magazynami</strong>. |
 | Szablony uzupełniania zapasów |                                                                   Musi być skonfigurowany co najmniej jeden szablon uzupełnienia według minimalnej/maksymalnej ilości, uzupełniania popytu grupy czynności lub uzupełniania zapasów popytu ładunku.                                                                   |
 |        Lokalizacje        |                                                                                                       Lokalizacje muszą być utworzone i połączone z profilem lokalizacji.                                                                                                       |
 |    Profile lokalizacji    |                                                                                                        Profile lokalizacji są wymagane w celu utworzenia lokalizacji.                                                                                                        |

@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 40398a481d23b8abed59556a3c6d70e783756017
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ea07b40c0a1a7eae7cd167f46796556b1e0ecc46
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857236"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103603"
 ---
 # <a name="prospect-to-cash"></a>Od prospekta do gotówki
 
@@ -43,13 +43,13 @@ W bieżącej wersji rozwiązania Prospekt na gotówkę udostępniono następują
 ## <a name="system-requirements-for-supply-chain-management"></a>Wymagania systemowe dotyczące Supply Chain Management
 Integracja w procesie Prospekt na gotówkę jest obsługiwana w następujących wersjach:
 
-### <a name="microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-73-december-2017"></a>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (grudzień 2017 r.)
+### <a name="microsoft-dynamics-365-finance-and-operations-enterprise-edition-73-december-2017"></a>Microsoft Dynamics 365, aplikacje finansowe i operacyjne, Enterprise edition 7.3 (grudzień 2017)
 
-- Dynamics 365 for Finance and Operations, Enterprise edition (grudzień 2017) — kompilacja aplikacji 7.3.11971.56116 z aktualizacją platformy 12 (7.0.4709.41129)
+- Dynamics 365 Finance and Operations Enterprise Edition (grudzień 2017) — kompilacja aplikacji 7.3.11971.56116 z aktualizacją platformy 12 (7.0.4709.41129)
 
-### <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Dynamics 365 for Finance and Operations, Enterprise edition (lipiec 2017 r.)
+### <a name="dynamics-365-finance-enterprise-edition-july-2017"></a>Dynamics 365 Finance, Enterprise Edition (lipiec 2017)
 
-- Dynamics 365 for Finance and Operations, Enterprise edition (lipiec 2017 r.) — z aktualizacją platformy 8 (kompilacji aplikacji 7.2.11792.56024 z platformą w wersji 7.0.4565.16212).
+- Dynamics 365 Finance and Operations, Enterprise Edition (lipiec 2017) — z aktualizacją platformy 8 (aplikacja w wersji 7.2.11792.56024 z platformą w wersji 7.0.4565.16212).
 - Poniżej znajduje się lista wymaganych poprawek:
 
   - **[KB4045570](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4045570&bugId=3851320&qc=ac1145034fd04ab71ccc4d14aa012f245176712c9af7c36bb77a118726d46160)** — ta poprawka umożliwia synchronizację zamówienia sprzedaży między modułem Sales a modułem Supply Chain Management za pomocą funkcji integracji danych. Zapewnia również kilka innych ulepszeń.
@@ -59,9 +59,9 @@ Integracja w procesie Prospekt na gotówkę jest obsługiwana w następujących 
     > [!NOTE]
     > Należy zainstalować tylko poprawkę KB4045570, ponieważ instalacja obejmuje zmiany z innych poprawek. 
 
-### <a name="dynamics-365-for-finance-and-operations-version-1611-november-2016"></a>Dynamics 365 for Finance and Operations w wersji 1611 (listopad 2016 r.)
+### <a name="dynamics-365-finance-and-operations-version-1611-november-2016"></a>Dynamics 365 Finance and Operations w wersji 1611 (listopad 2016)
 
-- Dynamics 365 for Finance and Operations w wersji 1611 (listopad 2016 r.) z aktualizacją platformy 8 lub nowszą
+- Dynamics 365 , aplikacje finansowe i operacyjne w wersji 1611 (listopad 2016) z aktualizacją platformy 8 lub nowszą
 
 - Poniżej znajduje się lista wymaganych poprawek:
 

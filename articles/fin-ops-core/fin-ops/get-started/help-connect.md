@@ -1,5 +1,5 @@
 ---
-title: Skonfiguruj pomoc dla aplikacji Finanse i Działania
+title: Skonfiguruj pomoc dla aplikacji finansowych i operacyjnych
 description: Ten artykuł zawiera informacje dotyczące składników systemu pomocy dla niektórych aplikacji Microsoft Dynamics 365.
 author: margoc
 ms.date: 08/11/2021
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b002b374e5da619460c496b8f0d7a70b7194afd0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 35f5d73075d118079ccb0616fbd1c5e1a8e00424
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900137"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123633"
 ---
-# <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Skonfiguruj pomoc dla aplikacji Finanse i Działania
+# <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Skonfiguruj pomoc dla aplikacji finansowych i operacyjnych
 
 [!include [banner](../includes/banner.md)]
 
@@ -33,7 +33,7 @@ W tym artykule znajduje się omówienie składników systemu pomocy dla aplikacj
 
 ## <a name="help-architecture"></a>Architektura modułu Pomoc
 
-Aplikacje Finanse i Działania oferują omówienia koncepcyjne i inne tematy opublikowane w witrynie [Dokumentacja Microsoft Dynamics 365](/dynamics365/). Następnie można uzyskać dostęp do tej zawartości za pomocą okienka **Pomoc** w danym produkcie. Poniższa ilustracja pokazuje części Pomocy systemu.
+Aplikacje finansowe i operacyjne oferują omówienia koncepcyjne i inne tematy opublikowane w witrynie [Dokumentacja Microsoft Dynamics 365](/dynamics365/). Następnie można uzyskać dostęp do tej zawartości za pomocą okienka **Pomoc** w danym produkcie. Poniższa ilustracja pokazuje części Pomocy systemu.
 
 [![Architektura modułu Pomoc.](./media/help-architecture.png)](./media/help-architecture.png)
 
@@ -63,7 +63,7 @@ Aby skonfigurować przewodniki zadań dla rozwiązania, wykonaj poniższe kroki 
 2. Wybierz biblioteki BPM (w ramach wybranego projektu), z których będą pobierane nagrania zadań.
 3. Ustaw kolejność wyświetlania bibliotek BPM. Kolejność wyświetlania to porządek, w jakim nagrania zadań z bibliotek będą pojawiać się w okienku **Pomoc**.
 
-Po wykonaniu tych kroków można utworzyć okienko **Pomoc** i kliknąć kartę **Przewodniki zadań**. Zobaczysz przewodniki zadań mające zastosowanie do strony aktualnie wyświetlonej w aplikacjach Finanse i Działania. Jeśli nie zostaną znalezione żadne przewodniki po zadaniach, możesz wprowadzić słowa kluczowe, aby doprecyzować wyszukiwanie.
+Po wykonaniu tych kroków można utworzyć okienko **Pomoc** i kliknąć kartę **Przewodniki zadań**. Zobaczysz przewodniki zadań mające zastosowanie do strony aktualnie wyświetlonej w aplikacjach finansowych i operacyjnych. Jeśli nie zostaną znalezione żadne przewodniki po zadaniach, możesz wprowadzić słowa kluczowe, aby doprecyzować wyszukiwanie.
 
 ### <a name="showing-translated-task-guides"></a>Wyświetlanie przetłumaczonych przewodników po zadaniach
 
@@ -87,7 +87,7 @@ Jeśli jesteś partnerem i podwyższasz status biblioteki do biblioteki firmowej
 
 ### <a name="connect-a-custom-help-site"></a>Łączenie z niestandardową witryną pomocy
 
-Aplikacje Finanse i Działania są rzadko używane w gotowej postaci. Zamiast tego rozwiązanie jest dostosowywane i rozszerzane w celu dopasowania do potrzeb organizacji. Można również dostosowywać i rozszerzać środowisko pomocy. Można na przykład dodać niestandardową pomoc do okienka **Pomoc** w produkcie.
+Aplikacje finansowe i operacyjne są rzadko używane w gotowej postaci. Zamiast tego rozwiązanie jest dostosowywane i rozszerzane w celu dopasowania do potrzeb organizacji. Można również dostosowywać i rozszerzać środowisko pomocy. Można na przykład dodać niestandardową pomoc do okienka **Pomoc** w produkcie.
 
 Firma Microsoft udostępniła zestaw narzędzi ułatwiających wdrażanie i łączenie pomocy niestandardowej z okienkiem **Pomoc**. Aby uzyskać informacje o tym, jak można skonfigurować niestandardowe rozwiązanie pomocy połączone z okienkiem **Pomoc**, zapoznaj się z [omówieniem pomocy niestandardowej](../../dev-itpro/help/custom-help-overview.md).
 
@@ -103,3 +103,4 @@ Aby współpracować z firmą Microsoft w zakresie tworzenia do narzędzi i proc
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

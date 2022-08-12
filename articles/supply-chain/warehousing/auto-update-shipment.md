@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2963589562e2d646670183e9db35df33255e8894
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e5816a7cddf509260511368b74655a9fd5bfc485
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903761"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067890"
 ---
 # <a name="shipment-auto-updates"></a>Automatyczne aktualizacje wysyłki
 
@@ -30,7 +30,7 @@ Funkcja automatycznej aktualizacji wysyłki automatycznie aktualizuje ilości (z
 
 Gdy funkcja automatycznego aktualizowania wysyłki nie jest używana, tylko ilość zmniejsza się automatycznie do momentu utworzenia pracy magazynu. Użytkownicy muszą ręcznie zaktualizować lub usunąć wiersze, a następnie muszą ponownie zwolnić wiersze, jeśli ilości zamówienia zostaną zwiększone lub zostaną dodane nowe wiersze zamówienia. Dzięki zastosowaniu funkcji automatycznej aktualizacji wysyłki firmy mogą bezproblemowo dostarczać aktualizacje do magazynu bez konieczności obawiania się, że związane z nimi wysyłki i ładunki nie odzwierciedlają aktualizacji wierszy zamówienia.
 
-Funkcja automatycznej aktualizacji wysyłki dotyczy zarówno wierszy zamówienia sprzedaży, jak i wierszy zamówienia przeniesienia i jest włączona dla określonego magazynu. W związku z tym firmy mogą w miarę potrzeb stosować różne zasady automatycznej aktualizacji wysyłek dla magazynów. Domyślnie zasada automatycznej aktualizacji wysyłki dla zmniejszenia ilości jest stosowana dla wszystkich magazynów korzystających z procesów zarządzania magazynem. Jeśli jest używane to domyślne ustawienie zasad, tylko ilość zmniejsza się automatycznie do wysyłki i ładunku, dopóki nie zostanie utworzona praca magazynowa. To zachowanie przypomina zachowanie użyte przed wprowadzeniem funkcji automatycznej aktualizacji wysyłki.
+Funkcja automatycznej aktualizacji wysyłki dotyczy zarówno wierszy zamówienia sprzedaży, jak i wierszy zamówienia przeniesienia i jest włączona dla określonego magazynu. W związku z tym firmy mogą w miarę potrzeb stosować różne zasady automatycznej aktualizacji wysyłek dla magazynów. Domyślnie zasada automatycznej aktualizacji wysyłki dla zmniejszenia ilości jest stosowana dla wszystkich magazynów korzystających z procesów zarządzania magazynem (WMS). Jeśli jest używane to domyślne ustawienie zasad, tylko ilość zmniejsza się automatycznie do wysyłki i ładunku, dopóki nie zostanie utworzona praca magazynowa. To zachowanie przypomina zachowanie użyte przed wprowadzeniem funkcji automatycznej aktualizacji wysyłki.
 
 ## <a name="main-elements-of-the-functionality"></a>Główne elementy funkcjonalności
 

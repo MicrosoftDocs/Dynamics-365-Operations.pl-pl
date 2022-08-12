@@ -1,6 +1,6 @@
 ---
-title: Nowości i zmiany w aplikacjach Finanse i Działania — strona główna
-description: Ta strona wskazuje tematy, które mogą pomóc dowiedzieć się o nowych funkcjach w najnowszych wersjach aplikacji rozwiązania Finanse i Działania.
+title: Nowości i zmiany w aplikacjach finansowych i operacyjnych — strona główna
+description: Ta strona wskazuje tematy, które mogą pomóc dowiedzieć się o nowych funkcjach w najnowszych wersjach aplikacji finansowych i operacyjnych.
 author: josaw1
 ms.date: 02/14/2020
 ms.topic: article
@@ -17,21 +17,21 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 2430e75897a8ddc78a6b1b9288b23458aa44108a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0dc3b9b39fb5cb3aaae1247f0229d802410ea5f8
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8908235"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9125125"
 ---
-# <a name="whats-new-or-changed-in-finance-and-operations-apps-home-page"></a>Nowości i zmiany w aplikacjach Finanse i Działania — strona główna
+# <a name="whats-new-or-changed-in-finance-and-operations-apps-home-page"></a>Nowości i zmiany w aplikacjach finansowych i operacyjnych — strona główna
 
 [!include [banner](../includes/banner.md)]
 
 
 ## <a name="application-releases"></a>Wydania aplikacji
 
-Aby zobaczyć, co nowego lub zmieniła się w każdej wersji aplikacji Finanse i Działania, należy zapoznać się z następującymi tematami:
+Aby zobaczyć, co nowego lub zmieniła się w każdej wersji aplikacji finansowych i operacyjnych, należy zapoznać się z następującymi tematami:
 
 - **Finance:** [Nowości i zmiany w aplikacji Dynamics 365 Finance](../../../finance/get-started/whats-new-home-page.md)
 - **Zasoby ludzkie (scalona infrastruktura):** [Co nowego lub co zmieniono w firmie Microsoft Dynamics 365 Human Resources](../../../human-resources/get-started/hr-whats-new-changed-10-0-26.md)  
@@ -60,3 +60,4 @@ Aby zobaczyć, co nowego lub zmieniła się w każdej wersji Lifecycle Services,
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

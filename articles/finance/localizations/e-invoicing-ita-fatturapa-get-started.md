@@ -2,7 +2,7 @@
 title: Konfigurowanie bezpośredniej integracji funkcji Włoska faktura FatturaPA z usługą SDI
 description: Ten artykuł zawiera informacje ułatwiające rozpoczynanie pracy z fakturowaniem elektronicznym dla Włoch i skonfigurowanie bezpośredniej integracji funkcji Włoska faktura FatturaPA z systemem Exchange (usługa SDI).
 author: abaryshnikov
-ms.date: 01/15/2022
+ms.date: 07/27/2022
 ms.topic: article
 audience: Application User, Developer
 ms.reviewer: kfend
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: abaryshnikov
 ms.search.validFrom: 2021-10-18
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 510cf05e7bbc925478f9a1a4ea2ea27fe397c570
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 363b7b5e3d5abbb990fea8f8ad4d0c1bebf80102
+ms.sourcegitcommit: 6d9fcb52d723ac5022a3002e0ced8e7b56e9bc2a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853200"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9203178"
 ---
 # <a name="set-up-direct-integration-of-italian-fatturapa-with-sdi"></a>Konfigurowanie bezpośredniej integracji funkcji Włoska faktura FatturaPA z usługą SDI
 
@@ -69,10 +69,13 @@ Ta sekcja stanowi uzupełnienie sekcji [Specyficzna dla kraju konfiguracja aplik
     - Dla akcji **Podpisz dokument** w polu **Nazwa certyfikatu** określ wartość Certyfikat podpisu cyfrowego.
     - Dla akcji **Prześlij** ustaw wartości pól **Adres URL** i **Certyfikaty**. Wartość pola **Certyfikaty** to łańcuch certyfikatów, z których pierwszy to certyfikat głównego urzędu certyfikacji (caentrate.cer), a drugi to certyfikat klientów.
 
-4. Wybierz pozycję **Weryfikuj**, aby upewnić się, że wszystkie wymagane pola zostały ustawione.
-5. Zapisz zmiany i zamknij stronę.
-6. Na karcie **Ustawienia** wybierz pozycję **Faktury projektu**, a następnie wybierz pozycję **Edytuj**.
-7. Powtórz kroki od 3 do 5 w odniesieniu do faktur projektu.
+4. W sekcji **Zasady stosowania** przejrzyj klauzule i sprawdź lub ustaw wymagane pola:
+    - Przejrzyj klauzulę **LegalEntityID** i zaktualizuj przy użyciu poprawnej wartości firmy.
+
+5. Wybierz pozycję **Weryfikuj**, aby upewnić się, że wszystkie wymagane pola zostały ustawione.
+6. Zapisz zmiany i zamknij stronę.
+7. Na karcie **Ustawienia** wybierz pozycję **Faktury projektu**, a następnie wybierz pozycję **Edytuj**.
+8. Powtórz kroki od 3 do 6 w odniesieniu do faktur projektu.
 
 ### <a name="configure-the-processing-pipeline-for-import"></a>Konfigurowanie potoku przetwarzania na potrzeby importu
 

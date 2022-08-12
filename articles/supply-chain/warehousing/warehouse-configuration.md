@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28e026b01bbc2b2534556ce6018eec66fc5517d6
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 7643a333c269a7e1976563ff0f10b89c1fb91674
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983011"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065196"
 ---
 # <a name="warehouse-configuration-overview"></a>Omówienie konfiguracji magazynu
 
@@ -31,10 +31,10 @@ ms.locfileid: "7983011"
 W tym artykule wyjaśniono sposób konfigurowania magazynu. Artykuł zawiera informacje o włączaniu układu magazynu i procesów magazynowych.
 
 > [!NOTE]
-> Ten artykuł dotyczy funkcji zaawansowanego **zarządzania magazynem** w module Zarządzanie magazynem. Nie ma zastosowania do funkcji w module **Zarządzanie zapasami**.
+> Ten artykuł dotyczy funkcji w module **Zarządzanie magazynem**. Nie ma zastosowania do funkcji w module **Zarządzanie zapasami**.
 
 ## <a name="warehouse-layout"></a>Układ magazynu
-System zarządzania magazynem w Supply Chain Management zapewnia elastyczne metody definiowania układu magazynu do zaspokojenia zmieniających się potrzeb, dzięki czemu można uzyskać optymalną wydajność magazynu.
+Procesy zarządzania magazynem (WMS) w Supply Chain Management zapewnia elastyczne metody definiowania układu magazynu do zaspokojenia zmieniających się potrzeb, dzięki czemu można uzyskać optymalną wydajność magazynu.
 
 -   Istnieje możliwość ustalenia obszarów magazynowych o wysokim priorytecie i niskim priorytecie dla optymalnego umieszczenia towarów.
 -   Magazyn można podzielić na strefy, aby spełniał różne wymagania przechowywania, takie jak wymagania w zakresie temperatury lub różnych współczynników obrotu dla towarów.
@@ -42,7 +42,7 @@ System zarządzania magazynem w Supply Chain Management zapewnia elastyczne meto
 -   Lokalizacje można grupować przy użyciu ustawień ograniczenia fizycznych możliwości.
 -   Można kontrolować sposób przechowywania i pobierania towarów na podstawie reguł zdefiniowanych w kwerendzie.
 
-Aby użyć zarządzania magazynem w Supply Chain Management, należy utworzyć magazyn i uaktywnić bardziej zaawansowane lub wyspecjalizowane działania związane z obsługą magazynu. Na stronie **Magazyny** wybierz opcję **Użyj procesów zarządzania magazynami**.
+Aby używać WMS w Supply Chain Management, musisz utworzyć magazyn i włączyć go do systemu WMS. Na stronie **Magazyny** wybierz opcję **Użyj procesów zarządzania magazynami**.
 
 ### <a name="zone-groups-zones-location-types-and-locations"></a>Grupy stref, strefy, typy lokalizacji i lokalizacje
 

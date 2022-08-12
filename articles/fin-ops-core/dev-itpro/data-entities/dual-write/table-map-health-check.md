@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-10-04
-ms.openlocfilehash: 3ae78077fc716311c38620b14665af3983a44c2d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 16c79a788b66830b77b2cdfb33fd2416c530f7d2
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884091"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111575"
 ---
 # <a name="errors-codes-for-the-table-map-health-check"></a>Kody błędów dla kontroli stanu mapy tabeli
 
@@ -26,37 +26,37 @@ Ten artykuł opisuje kody błędów dla kontroli kondycji mapy tabeli.
 
 ## <a name="error-100"></a>Error 100
 
-Komunikat o błędzie: „Minimalna wymagana wersja platformy Finanse i Działania w celu uruchomienia rekomendacji Finanse i Działania to PU 43”.
+Komunikat o błędzie: „Minimalna wymagana wersja aplikacji finansowych i operacyjnych w celu uruchomienia rekomendacji aplikacji finansowych i operacyjnych to PU 43”.
 
-Funkcja ta wymaga aktualizacji platformy dla wersji 10.0.19 lub nowszej aplikacji Finanse i Działania.
+Funkcja ta wymaga aktualizacji platformy dla wersji 10.0.19 lub nowszej aplikacji finansowych i operacyjnych.
 
 ## <a name="error-400"></a>Error 400
 
-Komunikat o błędzie: „Nie znaleziono żadnych danych rejestracji zdarzeń biznesowych dla encji \{Finanse i Działania UniqueEntityName\}, co oznacza, że mapa nie jest uruchomiona albo całe mapowanie pól jest jednokierunkowe”.
+Komunikat o błędzie: „Nie znaleziono żadnych danych rejestracji zdarzeń biznesowych dla encji \{ aplikacje finansowe i operacyjne UniqueEntityName\}, co oznacza, że mapa nie jest uruchomiona albo całe mapowanie pól jest jednokierunkowe”.
 
 ## <a name="error-500"></a>Error 500
 
-Komunikat o błędzie: „Nie znaleziono żadnych konfiguracji projektu dla \{nazwa projektu\}. Może to być spowodowane tym, że projekt nie został włączony lub wszystkie mapowania pól są jednokierunkowe z zaangażowania klienta do Finanse i Działania”.
+Komunikat o błędzie: „Nie znaleziono żadnych konfiguracji projektu dla \{nazwa projektu\}. Może to być spowodowane tym, że projekt nie został włączony lub wszystkie mapowania pól są jednokierunkowe z zaangażowania klienta do aplikacji finansowych i operacyjnych”.
 
 Sprawdź mapowania dla mapy tabel. Jeśli są one jednokierunkowe z aplikacji Customer Engagement do aplikacji finansowych i operacyjnych, nie jest generowany ruch do synchronizacji na żywo z aplikacji finansowych i operacyjnych do usługi Dataverse.
 
 ## <a name="error-900"></a>Error 900
 
-Komunikat o błędzie: „Nieprawidłowy format filtra źródła filtru \{sourceFilter\} dla encji \{Finanse i Działania UniqueEntityName\}”.
+Komunikat o błędzie: „Nieprawidłowy format filtra źródła filtru \{sourceFilter\} dla encji \{ aplikacji finansowych i operacyjnych UniqueEntityName\}”.
 
-Filtr źródłowy, który jest określony na mapie tabeli dla aplikacji Finanse i Działania nie jest poprawny składniowo. Aby sprawdzić poprawność kryteriów filtrowania, patrz [Rozwiązywanie problemów z synchronizacją na żywo](dual-write-troubleshooting-live-sync.md#live-synchronization-issues-that-are-caused-by-incorrect-query-filter-syntax-on-the-dual-write-maps).
+Filtr źródłowy, który jest określony na mapie tabeli dla aplikacji finansowych i operacyjnych nie jest poprawny składniowo. Aby sprawdzić poprawność kryteriów filtrowania, patrz [Rozwiązywanie problemów z synchronizacją na żywo](dual-write-troubleshooting-live-sync.md#live-synchronization-issues-that-are-caused-by-incorrect-query-filter-syntax-on-the-dual-write-maps).
 
 ## <a name="error-1000"></a>Error 1000
 
-Komunikat o błędzie: „Zapytanie Entity \{Finanse i Działania UniqueEntityName\} używana do synchronizacji na żywo w trybie podwójnego zapisu to \{Finanse i Działania EntityFilterQueryString\}. Rekordy, które spełniają kryteria zapytania zostaną pobrane do synchronizacji na żywo”.
+Komunikat o błędzie: „Zapytanie encji\{ aplikacji finansowych i operacyjnych UniqueEntityName\} używana do synchronizacji na żywo w trybie podwójnego zapisu to \{aplikacje finansowe i operacyjne EntityFilterQueryString\}. Rekordy, które spełniają kryteria zapytania zostaną pobrane do synchronizacji na żywo”.
 
 Zapytanie o encję, które zostało zwrócone jest zapytaniem zwrotnym SQL dla encji. Sprawdź, czy nie występują wewnętrzne złączenia lub filtry w zapytaniu, które określają dane biznesowe, które są pobierane do synchronizacji na żywo. Złączenia wewnętrzne i filtry są obowiązkowymi warunkami, które muszą być spełnione dla każdego rekordu, który jest pobierany do synchronizacji w trybie podwójnego zapisu.
 
 ## <a name="error-1300"></a>Error 1300
 
-Komunikat o błędzie: „Pola wirtualne \{s.EntityFieldName\} dla encji \{Finanse i Działania EntityMetadata.EntityProperties.LogicalEntityName\} nie mogą być śledzone dla podwójnego zapisu”.
+Komunikat o błędzie: „Pola wirtualne \{s.EntityFieldName\} dla encji \{ aplikacje finansowe i operacyjne EntityMetadata.EntityProperties.LogicalEntityName\} nie mogą być śledzone dla podwójnego zapisu”.
 
-Pola wirtualne z tabel Finanse i Działania nie są włączone do śledzenia. Synchronizacja na żywo może synchronizować dane, ale nie będzie w stanie wychwycić zmian, które są dokonywane na kolumnach.
+Pola wirtualne z tabel aplikacji finansowych i operacyjnych nie są włączone do śledzenia. Synchronizacja na żywo może synchronizować dane, ale nie będzie w stanie wychwycić zmian, które są dokonywane na kolumnach.
 
 ## <a name="error-1500"></a>Error 1500
 
@@ -66,9 +66,9 @@ Komunikat o błędzie: „Powinno być co najmniej jedno pole zmapowane do pola 
 
 ## <a name="error-1600"></a>Error 1600
 
-Komunikat o błędzie: „Źródło danych: \{datasource.DataSourceName\} dla encji \{Finanse i Działania EntityMetadata.EntityProperties.LogicalEntityName\} ma zakres. Tylko rekordy spełniające warunki zakresu są odbierane dla wychodzących”.
+Komunikat o błędzie: „Źródło danych: \{datasource.DataSourceName\} dla encji \{aplikacji finansowych i operacyjnych EntityMetadata.EntityProperties.LogicalEntityName\} ma zakres. Tylko rekordy spełniające warunki zakresu są odbierane dla wychodzących”.
 
-Encje w aplikacjach Finanse i Działania mogą mieć źródła danych, w których są włączone zakresy filtrów. Zakresy te określają rekordy, które są pobierane w ramach synchronizacji na żywo. Jeśli niektóre rekordy są pomijane w aplikacji Finanse i Działania w Dataverse, należy sprawdzić, czy rekordy spełniają kryteria zakresu na podmiocie. Prostym sposobem na wykonanie tego sprawdzenia jest wykonanie zapytania SQL przypominającego poniższy przykład.
+Encje w aplikacjach finansowych i operacyjnych mogą mieć źródła danych, w których są włączone zakresy filtrów. Zakresy te określają rekordy, które są pobierane w ramach synchronizacji na żywo. Jeśli niektóre rekordy są pomijane w aplikacjach finansowych i operacyjnych w Dataverse, należy sprawdzić, czy rekordy spełniają kryteria zakresu na podmiocie. Prostym sposobem na wykonanie tego sprawdzenia jest wykonanie zapytania SQL przypominającego poniższy przykład.
 
 ```sql
 select * from <EntityName> where <filter criteria for the records> on SQL.
@@ -96,3 +96,4 @@ Komunikat o błędzie:„ Synchroniczne dodatki plug-in zostały zarejestrowane 
 Synchroniczne dodatki plug-in w wncji usługi Dataverse mogą wpływać na wydajność synchronizacji na żywo i synchronizacji początkowej, ponieważ zwiększają obciążenie transakcji pracą. Zaleca się wyłączenie dodatków plug-in lub przekształcenie ich w rozwiązania asynchroniczne, jeśli podczas synchronizacji początkowej lub synchronizacji na żywo dla określonej encji ładowanie odbywa się zbyt wolno.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

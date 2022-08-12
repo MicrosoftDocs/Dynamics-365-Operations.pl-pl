@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 10c5d9eb3f98887be976c2331f4d34530628702c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 02ab3675db0d78efa1e4e43188d79bb1e763a713
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895284"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111827"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Uaktualnianie do modelu globalnej książki adresowej i strony
 
@@ -24,7 +24,7 @@ ms.locfileid: "8895284"
 
 [Szablony Microsoft Azure Data Factory](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema) pomaga zaktualizować następujące istniejące tabele danych **Konto**, **Kontakt** i **Dostawca** za pomocą podwójnego zapisu dla strony i modelu globalnej książki adresowej.
 
-Dostępne są następujące trzy szablony Data Factory. Pomagają uzgadniać dane zarówno z aplikacji Finanse i Operacje, jak i aplikacji do obsługi klienta.
+Dostępne są następujące trzy szablony Data Factory. Pomagają uzgadniać dane zarówno z aplikacji finansowych i operacyjnych, jak i aplikacji do obsługi klienta.
 
 - **[Szablon strony](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/arm_template.json) (Uaktualnij dane do schematu strony-GAB podwójnego zapisu/arm_template.json)** — ten szablon pomaga uaktualnić dane **Strony** i **Kontaktu** skojarzone z danymi **Konta**, **Kontaktu** i **Dostawcy**.
 - **[Szablon adresu pocztowego strony](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/Upgrade%20to%20Party%20Postal%20Address%20-%20GAB/arm_template.json) (Uaktualnij dane do schematu podwójnego zapisu strony-GAB/Uaktualnij do adresu pocztowego strony — GAB/arm_template.json)** — ten szablon ułatwia uaktualnienie adresów pocztowych skojarzonych z danymi **Konta**, **Kontaktu** i **Dostawcy**.
@@ -34,11 +34,11 @@ Po zakończeniu procesu generowane są następujące pliki z wartościami rozdzi
 
 | Nazwa pliku | Cel |
 |---|---|
-| FONewParty.csv | Ten plik pomaga tworzyć nowe rekordy **Jednostka** w aplikacji Finanse i Operacje. |
-| ImportFONewPostalAddressLocation.csv | Ten plik pomaga w tworzeniu nowych rekordów **Lokalizacji adresu pocztowego** w aplikacji Finanse i Operacje. |
-| ImportFONewPartyPostalAddress.csv | Ten plik pomaga w tworzeniu nowych rekordów **Lokalizacji adresu pocztowego** w aplikacji Finanse i Operacje. |
-| ImportFONewPostalAddress.csv | Ten plik pomaga w tworzeniu nowych rekordów **Adres pocztowy** w aplikacji Finanse i Operacje. |
-| ImportFONewElectronicAddress.csv | Ten plik pomaga w tworzeniu nowych rekordów **Adres elektroniczny** w aplikacji Finanse i Operacje. |
+| FONewParty.csv | Ten plik pomaga tworzyć nowe rekordy **Jednostka** w aplikacjach finansowych i operacyjnych. |
+| ImportFONewPostalAddressLocation.csv | Ten plik pomaga w tworzeniu nowych rekordów **Lokalizacji adresu pocztowego** w aplikacjach finansowych i operacyjnych. |
+| ImportFONewPartyPostalAddress.csv | Ten plik pomaga w tworzeniu nowych rekordów **Lokalizacji adresu pocztowego** w aplikacjach finansowych i operacyjnych. |
+| ImportFONewPostalAddress.csv | Ten plik pomaga w tworzeniu nowych rekordów **Adres pocztowy** w aplikacjach finansowych i operacyjnych. |
+| ImportFONewElectronicAddress.csv | Ten plik pomaga w tworzeniu nowych rekordów **Adres elektroniczny** w aplikacjach finansowych i operacyjnych. |
 
 Ten artykuł wyjaśnia instrukcje dotyczące używania szablonów Data Factory i uaktualniania danych. Jeśli nie masz żadnych dostosowań, możesz użyć szablonów w takiej postaci, w jakiej są. Jeśli jednak masz dostosowania dla danych **Konta**, **Kontaktu** i **Dostawcy**, musisz zmodyfikować szablony, tak jak opisano w tym artykule.
 
@@ -61,7 +61,7 @@ Uaktualnienie wymaga następującego przygotowania:
 + **Klucze integracji:** tabele **konto (Klient)**, **Kontakt** i **Dostawca** w aplikacjach zaangażowania klienta są dostępne za pomocą gotowych kluczy integracji. Jeśli użytkownik dostosuje klucze integracji, należy dostosować szablon.
 + **Numer strony:** Wszystkie rekordy **Konto (Klient)**, **Kontakt** i **Dostawca**, które zostaną zaktualizowane, mają numer strony. Rekordy, które nie mają numeru strony, zostaną zignorowane. Aby uaktualnić te rekordy, dodaj do nich numer strony przed rozpoczęciem procesu uaktualniania.
 + **Okres przestoju systemu:** Podczas procesu uaktualniania konieczne będzie przełączenie środowisk Finanse i Działania oraz zaangażowania klienta do trybu offline.
-+ **Migawka**: tworzenie migawki aplikacji Finanse i Operacje i aplikacji obsługi klienta. W razie konieczności użyj migawki, aby przywrócić poprzedni stan.
++ **Migawka**: tworzenie migawki aplikacji finansowych i operacyjnych i aplikacji obsługi klienta. W razie konieczności użyj migawki, aby przywrócić poprzedni stan.
 
 ## <a name="deployment"></a>Wdrażanie
 
@@ -120,7 +120,7 @@ W tej sekcji opisano ustawienia wymagane przed uruchomieniem szablonów adresów
 
 ### <a name="setup-to-run-the-party-postal-address-template"></a>Konfiguracja uruchamiania szablonu adresu pocztowego strony
 
-1. Zaloguj się do aplikacji zaangażowania klienta i przejdź do **Ustawienia** \> **Personalizacja ustawień**. Następnie na karcie **Ogólne** skonfiguruj ustawienie strefy czasowej dla konta administratora systemu. Aby można było zaktualizować daty „ważny od” i „ważny do” adresów pocztowych w aplikacjach Finanse i Operacje, strefa czasowa musi być w uniwersalnym czasie koordynowanym (UTC).
+1. Zaloguj się do aplikacji zaangażowania klienta i przejdź do **Ustawienia** \> **Personalizacja ustawień**. Następnie na karcie **Ogólne** skonfiguruj ustawienie strefy czasowej dla konta administratora systemu. Aby można było zaktualizować daty „ważny od” i „ważny do” adresów pocztowych w aplikacjach finansowych i operacyjnych, strefa czasowa musi być w uniwersalnym czasie koordynowanym (UTC).
 
     ![Ustawienie strefy czasowej dla konta administratora systemu.](media/ADF-1.png)
 
@@ -128,7 +128,7 @@ W tej sekcji opisano ustawienia wymagane przed uruchomieniem szablonów adresów
 
     | Identyfikator | Nazwa | Typ | Wartość |
     |---|---|---|---|
-    | 1 | PostalAddressIdPrefix | ciąg | Ten parametr dołącza numer seryjny do nowo utworzonych adresów pocztowych jako prefiks. Pamiętaj, aby podać ciąg, który nie koliduje z adresami pocztowymi w aplikacjach Finanse i Operacje i aplikacjach zaangażowania klienta. Na przykład użyj **ADF-PAD-**. |
+    | 1 | PostalAddressIdPrefix | ciąg | Ten parametr dołącza numer seryjny do nowo utworzonych adresów pocztowych jako prefiks. Pamiętaj, aby podać ciąg, który nie koliduje z adresami pocztowymi w aplikacjach finansowych i operacyjnych i aplikacjach zaangażowania klienta. Na przykład użyj **ADF-PAD-**. |
 
     ![Parametr globalny PostalAddressIdPrefix utworzony na karcie Zarządzaj.](media/ADF-2.png)
 
@@ -142,8 +142,8 @@ W tej sekcji opisano ustawienia wymagane przed uruchomieniem szablonów adresów
 
     | Identyfikator | Nazwa | Typ | Wartość |
     |---|---|---|---|
-    | 1 | IsFOSource | bool | Ten parametr określa, które główne adresy systemowe są zastępowane w razie konfliktów. Jeśli ta wartość jest **Prawda**, adresy podstawowe w aplikacjach Finanse i Operacje zastąpią adresy podstawowe w aplikacjach zaangażowania klienta. Jeśli ta wartość jest **Fałsz**, adresy podstawowe w aplikacjach zaangażowania klienta zastąpią adresy podstawowe w aplikacjach Finanse i Operacje. |
-    | 2 | ElectronicAddressIdPrefix | ciąg | Ten parametr dołącza numer seryjny do nowo utworzonych adresów poczty elektronicznej jako prefiks. Pamiętaj, aby podać ciąg, który nie koliduje z adresami elektronicznymi w aplikacjach Finanse i Operacje i aplikacjach zaangażowania klienta. Na przykład użyj **ADF-EAD-**. |
+    | 1 | IsFOSource | bool | Ten parametr określa, które główne adresy systemowe są zastępowane w razie konfliktów. Jeśli ta wartość jest **Prawda**, adresy podstawowe w aplikacjach finansowych i operacyjnych zastąpią adresy podstawowe w aplikacjach zaangażowania klienta. Jeśli ta wartość jest **Fałsz**, adresy podstawowe w aplikacjach zaangażowania klienta zastąpią adresy podstawowe w aplikacjach finansowych i operacyjnych. |
+    | 2 | ElectronicAddressIdPrefix | ciąg | Ten parametr dołącza numer seryjny do nowo utworzonych adresów poczty elektronicznej jako prefiks. Pamiętaj, aby podać ciąg, który nie koliduje z adresami elektronicznymi w aplikacjach finansowych i operacyjnych i aplikacjach zaangażowania klienta. Na przykład użyj **ADF-EAD-**. |
 
     ![Parametry globalne IsFOSource i ElectronicAddressIdPrefix utworzone na karcie Zarządzaj.](media/ADF-4.png)
 
@@ -167,7 +167,7 @@ W tej sekcji opisano ustawienia wymagane przed uruchomieniem szablonów adresów
 
 2. Upewnij się, że mapy zostały usunięte z tabeli **msdy_dualwriteruntimeconfig** w danych Dataverse.
 3. Zainstaluj [Rozwiązania z podwójnym zapisem i globalna książka adresowa](https://aka.ms/dual-write-gab) z AppSource.
-4. W aplikacji Finanse i Operacje uruchom dla nich **wstępną synchronizację**, jeśli poniższe tabele zawierają dane.
+4. W aplikacjach finansowych i operacyjnych uruchom dla nich **wstępną synchronizację**, jeśli poniższe tabele zawierają dane.
 
     + Zwroty grzecznościowe
     + Typy osób
@@ -267,10 +267,10 @@ W tej sekcji opisano ustawienia wymagane przed uruchomieniem szablonów adresów
     > [!NOTE]
     > Jeśli masz dostosowania dla **Konta**, **Kontaktu** i **Dostawcy**, musisz zmodyfikować szablon.
 
-8. Zaimportuj nowe rekordy **Strony** do aplikacji Finanse i Operacje.
+8. Zaimportuj nowe rekordy **Strony** do aplikacji finansowych i operacyjnych.
 
     1. Pobierz plik **FONewParty.csv** z magazynu obiektów blob Azure Blob Storage. Ścieżką jest **partybootstrapping/output/FONewParty.csv**.
-    2. Skonwertuj plik **FONewParty.csv** na plik programu Excel i zaimportuj go do aplikacji Finanse i Operacje. Alternatywnie, jeśli import CSV jest odpowiedni dla użytkownika, można zaimportować plik CSV bezpośrednio. Zakończenie tego kroku może potrwać kilka godzin w zależności od objętości danych. Aby uzyskać więcej informacji, zapoznaj się z [Omówieniem importowania i eksportowania danych](../data-import-export-job.md).
+    2. Skonwertuj plik **FONewParty.csv** na plik programu Excel i zaimportuj go do w aplikacjach finansowych i operacyjnych. Alternatywnie, jeśli import CSV jest odpowiedni dla użytkownika, można zaimportować plik CSV bezpośrednio. Zakończenie tego kroku może potrwać kilka godzin w zależności od objętości danych. Aby uzyskać więcej informacji, zapoznaj się z [Omówieniem importowania i eksportowania danych](../data-import-export-job.md).
 
     ![Importowanie rekordów strony Dataverse.](media/data-factory-import-party.png)
 
@@ -281,7 +281,7 @@ W tej sekcji opisano ustawienia wymagane przed uruchomieniem szablonów adresów
 
     ![Uruchamianie szablonów adresów pocztowych i adresów poczty elektronicznej stron.](media/ADF-7.png)
 
-10. Aby zaktualizować aplikację Finanse i Operacje przy użyciu tych danych, należy przekonwertować pliki CSV na skoroszyt programu Excel i [zaimportować je do aplikacji Finanse i Operacje](../data-import-export-job.md). Alternatywnie, jeśli import CSV jest odpowiedni dla użytkownika, można zaimportować pliki CSV bezpośrednio. Zakończenie tego kroku może potrwać kilka godzin w zależności od objętości danych.
+10. Aby zaktualizować aplikacje finansowe i operacyjne przy użyciu tych danych, należy przekonwertować pliki CSV na skoroszyt programu Excel i [zaimportować je do aplikacjach finansowych i operacyjnych](../data-import-export-job.md). Alternatywnie, jeśli import CSV jest odpowiedni dla użytkownika, można zaimportować pliki CSV bezpośrednio. Zakończenie tego kroku może potrwać kilka godzin w zależności od objętości danych.
 
     ![Pomyślne zaimportowanie.](media/ADF-8.png)
 
@@ -364,9 +364,9 @@ W tej sekcji możesz przejść przez kolejne kroki w każdym szablonie Data Fact
 ### <a name="steps-in-the-party-template"></a>Kroki w szablonie strony
 
 1. Kroki od 1 do 6 identyfikują firmy, dla których włączono obsługę podwójnego zapisu i tworzy dla nich klauzulę filtru.
-2. Kroki od 7–1 do 7–9 pobierają dane z aplikacji Finanse i Operacje i aplikacji zaangażowania klienta, a następnie etap, w których dane są uaktualnianie.
-3. Kroki od 8 do 9 porównują numer strony dla rekordów **Konto**, **Kontakt** i **Dostawca** między aplikacją Finanse i Operacje a aplikacją zaangażowania klienta. Wszelkie rekordy, które nie mają numeru strony, zostaną pominięte.
-4. Krok 10 generuje dwa pliki csv dla rekordów stron, które muszą zostać utworzone w aplikacji zaangażowania klienta i aplikacji Finanse i Operacje.
+2. Kroki od 7–1 do 7–9 pobierają dane z aplikacjach finansowych i operacyjnych i aplikacji zaangażowania klienta, a następnie etap, w których dane są uaktualnianie.
+3. Kroki od 8 do 9 porównują numer strony dla rekordów **Konto**, **Kontakt** i **Dostawca** między aplikacjami finansowymi i operacyjnymi, a aplikacją zaangażowania klienta. Wszelkie rekordy, które nie mają numeru strony, zostaną pominięte.
+4. Krok 10 generuje dwa pliki csv dla rekordów stron, które muszą zostać utworzone w aplikacji zaangażowania klienta i w aplikacjach finansowych i operacyjnych
 
     - **FOCDSParty.csv** — ten plik zawiera wszystkie rekordy stron w obu systemach, niezależnie od tego, czy w firmie włączono obsługę podwójnego zapisu.
     - **FONewParty.csv** — ten plik zawiera podzestaw rekordów stron, na które zwraca uwagę Dataverse (na przykład konta typu **Prospekt**).
@@ -382,12 +382,12 @@ W tej sekcji możesz przejść przez kolejne kroki w każdym szablonie Data Fact
 
 ### <a name="steps-in-the-party-postal-address-template"></a>Kroki w szablonie adresu pocztowego strony
 
-1. Kroki od 1–1 do 1–10 pobierają dane z aplikacji Finanse i Operacje i aplikacji zaangażowania klienta, a następnie etap, w których dane są uaktualnianie.
-2. Krok 2 usuwa normalizację danych adresu pocztowego w aplikacji Finanse i Operacje, przyłączając adres pocztowy i adres pocztowy strony.
+1. Kroki od 1–1 do 1–10 pobierają dane z aplikacjach finansowych i operacyjnych i aplikacji zaangażowania klienta, a następnie etap, w których dane są uaktualnianie.
+2. Krok 2 usuwa normalizację danych adresu pocztowego w aplikacjach finansowych i operacyjnych, przyłączając adres pocztowy i adres pocztowy strony.
 3. Krok 3 usuwa duplikowanie i scala dane konta, kontaktów i adresów dostawców z aplikacji zaangażowania klientów.
-4. Krok 4 powoduje utworzenie plików csv dla aplikacji Finanse i Operacje w celu utworzenia nowych danych adresowych opartych na adresach kont, kontaktów i dostawców.
-5. Krok 5–1 tworzy pliki csv dla aplikacji zaangażowania klienta, aby tworzyć wszystkie dane adresowe na podstawie aplikacji Finanse i Operacje i aplikacji zaangażowania klienta.
-6. Krok 5–2 konwertuje pliki .csv do formatu importu aplikacji Finanse i Operacje w celu ręcznego importowania.
+4. Krok 4 powoduje utworzenie plików csv dla aplikacji finansowych i operacyjnych w celu utworzenia nowych danych adresowych opartych na adresach kont, kontaktów i dostawców.
+5. Krok 5–1 tworzy pliki csv dla aplikacji zaangażowania klienta, aby tworzyć wszystkie dane adresowe na podstawie aplikacji finansowych i operacyjnych i aplikacji zaangażowania klienta.
+6. Krok 5–2 konwertuje pliki .csv do formatu importu aplikacji finansowych i operacyjnych w celu ręcznego importowania.
 
     - ImportFONewPostalAddressLocation.csv
     - ImportFONewPartyPostalAddress.csv
@@ -401,13 +401,13 @@ W tej sekcji możesz przejść przez kolejne kroki w każdym szablonie Data Fact
 
 ### <a name="steps-in-the-party-electronic-address-template"></a>Kroki w szablonie adresu poczty elektronicznej strony
 
-1. Kroki od 1–1 do 1–5 pobierają dane z aplikacji Finanse i Operacje i aplikacji zaangażowania klienta, a następnie etap, w których dane są uaktualnianie.
+1. Kroki od 1–1 do 1–5 pobierają dane z aplikacjach finansowych i operacyjnych i aplikacji zaangażowania klienta, a następnie etap, w których dane są uaktualnianie.
 2. Krok 2 konsoliduje adresy poczty elektronicznej w aplikacji zaangażowania klienta z jednostek Konto, Osoba kontaktowa i Dostawca.
-3. Krok 3 scala podstawowe dane adresu poczty elektronicznej z aplikacji zaangażowania klienta i aplikacji Finanse i Operacje.
+3. Krok 3 scala podstawowe dane adresu poczty elektronicznej z aplikacji zaangażowania klienta i aplikacji finansowych i operacyjnych.
 4. Krok 4 powoduje utworzenie plików csv.
 
-    - Utwórz nowe dane adresu poczty elektronicznej dla aplikacji Finanse i Operacje na podstawie adresów kont, kontaktów i dostawców.
-    - Utwórz nowe dane adresu poczty elektronicznej w aplikacji zaangażowania klienta, oparte na adresie poczty elektronicznej, koncie, adresie kontaktowym i adresie dostawcy w aplikacji Finanse i Operacje.
+    - Utwórz nowe dane adresu poczty elektronicznej dla aplikacjach finansowych i operacyjnych na podstawie adresów kont, kontaktów i dostawców.
+    - Utwórz nowe dane adresu poczty elektronicznej w aplikacji zaangażowania klienta, oparte na adresie poczty elektronicznej, koncie, adresie kontaktowym i adresie dostawcy w aplikacjach finansowych i operacyjnych.
 
 5. Krok 5–1 umożliwia import adresów poczty elektronicznej do aplikacji zaangażowania klienta.
 6. Krok 5–2 powoduje utworzenie plików .csv w celu zaktualizowania adresów podstawowych dla kont i kontaktów w aplikacji zaangażowania klienta.
@@ -425,3 +425,4 @@ W tej sekcji możesz przejść przez kolejne kroki w każdym szablonie Data Fact
 ## <a name="learn-more-about-the-template"></a>Dowiedz się więcej o szablonie
 
 Więcej informacji dotyczących tego szablonu można znaleźć w sekcji [Pliku Readme —Komentarze do Azure Data Factory](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/readme.md).
+
