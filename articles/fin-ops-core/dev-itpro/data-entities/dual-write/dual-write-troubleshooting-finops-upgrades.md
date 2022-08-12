@@ -1,6 +1,6 @@
 ---
-title: Rozwiązywanie problemów wynikłych z aktualizacji aplikacji Finanse i Działania
-description: Ten artykuł zawiera informacje dotyczące rozwiązywania problemów, które mogą pomóc w rozwiązaniu problemów związanycz uaktualnianiem aplikacji Finanse i Działania.
+title: Rozwiązywanie problemów wynikłych z aktualizacji aplikacji finansowych i operacyjnych
+description: Ten artykuł zawiera informacje dotyczące rozwiązywania problemów, które mogą pomóc w rozwiązaniu problemów związanych uaktualnianiem aplikacji finansowych i operacyjnych.
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
@@ -9,14 +9,14 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 954268b03be2be90f67dc9b7756f33215856864a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b75034cbc8ca7a24472cfec1ad93d3dfef4a8fdc
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882150"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111149"
 ---
-# <a name="troubleshoot-issues-from-upgrades-of-finance-and-operations-apps"></a>Rozwiązywanie problemów wynikłych z aktualizacji aplikacji Finanse i Działania
+# <a name="troubleshoot-issues-from-upgrades-of-finance-and-operations-apps"></a>Rozwiązywanie problemów wynikłych z aktualizacji aplikacji finansowych i operacyjnych
 
 [!include [banner](../../includes/banner.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "8882150"
 
 
 
-Ten artykuł zawiera informacje dotyczące rozwiązywania problemów dotyczących integracji podwójnego zapisu między aplikacjami finansowymi i operacyjnymi oraz usługą Dataverse. A dokładniej, ten temat zawiera informacje dotyczące rozwiązywania problemów, które mogą pomóc w rozwiązaniu problemów związanycz uaktualnianiem aplikacji Finanse i Działania.
+Ten artykuł zawiera informacje dotyczące rozwiązywania problemów dotyczących integracji podwójnego zapisu między aplikacjami finansowymi i operacyjnymi oraz usługą Dataverse. A dokładniej, ten temat zawiera informacje dotyczące rozwiązywania problemów, które mogą pomóc w rozwiązaniu problemów związanych uaktualnianiem aplikacji finansowych i operacyjnych.
 
 > [!IMPORTANT]
 > Niektóre problemy z tego artykułu mogą wymagać roli administratora systemu lub poświadczeń administratora klienta usługi Microsoft Azure Active Directory (Azure AD). W sekcji dotyczącej każdego zagadnienia wyjaśniono, czy określona rola lub poświadczenia są wymagane.
@@ -33,7 +33,7 @@ Ten artykuł zawiera informacje dotyczące rozwiązywania problemów dotyczącyc
 
 **Wymagana rola w celu rozwiązania problemu:** administrator systemu
 
-Podczas próby użycia tabeli **DualWriteProjectConfiguration** w celu zaktualizowania aplikacji Finanse i Działania w ramach aktualizacji platformy 30 może zostać wyświetlony komunikat o błędzie podobny do następującego przykładu.
+Podczas próby użycia tabeli **DualWriteProjectConfiguration** w celu zaktualizowania aplikacji finansowych i operacyjnych w ramach aktualizacji platformy 30 może zostać wyświetlony komunikat o błędzie podobny do następującego przykładu.
 
 ```console
 Infolog diagnostic message: 'Cannot select a row in Dual write project sync (DualWriteProjectConfiguration). The SQL database has issued an error.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Object Server Database Synchronizer: ' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: '[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ISDELETE'.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'SELECT T1.PROJECTNAME,T1.EXTERNALENTITYNAME,T1.INTERNALENTITYNAME,T1.EXTERNALENVIRONMENTURL,T1.STATUS,T1.ENABLEBATCHLOOKUP,T1.PARTITIONMAP,T1.QUERYFILTEREXPRESSION,T1.INTEGRATIONKEY,T1.ISDELETE,T1.ISDEBUGMODE,T1.RECVERSION,T1.PARTITION,T1.RECID FROM DUALWRITEPROJECTCONFIGURATION T1 WHERE (PARTITION=5637144576)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'session 1043 (Admin)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.' on category 'Error'.
@@ -43,7 +43,7 @@ Microsoft.Dynamics.AX.Framework.Database.TableSyncException: Custom action threw
 
 Aby naprawić problem, należy wykonać następujące czynności.
 
-1. Zaloguj się do maszyny wirtualnej (VM) aplikacji Finanse i Działania.
+1. Zaloguj się do maszyny wirtualnej (VM) aplikacji finansowych i operacyjnych.
 2. Otwórz Visual Studio jako administrator, a następnie otwórz drzewo obiektów aplikacji (AOT).
 3. Wyszukaj **DualWriteProjectConfiguration**.
 4. W drzewie obiektów aplikacji kliknij prawym przyciskiem myszy **DualWriteProjectConfiguration**, a następnie wybierz polecenie **Dodaj do nowego projektu**. Wybierz **OK**, aby utworzyć nowy projekt, w którym są używane opcje domyślne.
@@ -65,10 +65,10 @@ Na stronie **Podwójny zapis** może zostać wyświetlony komunikat o błędzie 
 
 Aby rozwiązać ten problem, najpierw postępuj zgodnie z tymi krokami, aby upewnić się, że kolumny znajdują się w tabeli.
 
-1. Zaloguj się do VM aplikacji Finanse i Działania.
+1. Zaloguj się do VM aplikacji finansowych i operacyjnych.
 2. Przejdź do **Obszary robocze \> Zarządzanie danymi**, wybierz kafelek **Parametry struktury**, a następnie na karcie **Ustawienia tabeli** wybierz opcję **Odśwież listę tabel**, aby odświeżyć tabele.
-3. Przejdź do **Obszary robocze \> Zarządzanie danymi**,wybierz kartę **Tabele danych** i upewnij się, że tabela jest uwzględniona na liście. Jeśli tabela nie jest wymieniona na liście, zaloguj się do maszyny wirtualnej aplikacji Finanse i Działania i upewnij się, że tabela jest dostępna.
-4. Otwórz stronę **Mapowania tabeli** ze strony **Podwójny zapis** w aplikacji Finanse i Działania.
+3. Przejdź do **Obszary robocze \> Zarządzanie danymi**,wybierz kartę **Tabele danych** i upewnij się, że tabela jest uwzględniona na liście. Jeśli tabela nie jest wymieniona na liście, zaloguj się do maszyny wirtualnej aplikacji finansowych i operacyjnych i upewnij się, że tabela jest dostępna.
+4. Otwórz stronę **Mapowania tabeli** ze strony **Podwójny zapis** w aplikacji finansowych i operacyjnych.
 5. Wybierz opcję **Odśwież listę tabel**, aby automatycznie wypełnić kolumny w mapowaniach tabeli.
 
 Jeśli ten błąd nadal nie jest naprawiony, wykonaj następujące kroki.
@@ -76,10 +76,10 @@ Jeśli ten błąd nadal nie jest naprawiony, wykonaj następujące kroki.
 > [!IMPORTANT]
 > Te kroki prowadzą użytkownika przez proces usuwania tabeli, a następnie dodawania jej ponownie. Aby uniknąć problemów, należy wykonać dokładnie te kroki.
 
-1. W aplikacji Finanse i Działania przejdź do **Obszary robocze \> Zarządzanie danymi** i wybierz kafelek **Tabele danych**.
+1. W aplikacjach finansowych i operacyjnych przejdź do **Obszary robocze \> Zarządzanie danymi** i wybierz kafelek **Tabele danych**.
 2. Znajdź tabelę, w której brakuje atrybutu. Kliknij przycisk **Modyfikuj mapowanie** obiektów docelowych na pasku narzędzi.
 3. W okienku **Mapuj dane tymczasowe do celu** kliknij opcję **Generuj mapowanie**.
-4. Otwórz stronę **Mapowania tabeli** ze strony **Podwójny zapis** w aplikacji Finanse i Działania.
+4. Otwórz stronę **Mapowania tabeli** ze strony **Podwójny zapis** w aplikacji finansowych i operacyjnych.
 5. Jeśli atrybut nie został automatycznie wypełniony na mapie, dodaj go ręcznie, klikając przycisk **Dodaj atrybut**, a następnie klikając przycisk **Zapisz**. 
 6. Wybierz mapę i kliknij przycisk **Uruchom**.
 

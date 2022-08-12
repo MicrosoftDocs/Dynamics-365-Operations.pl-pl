@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 3d1a45ad00e59581f27f2e822ccb47430219c501
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 38372f08db0258de8b5e653b4757c9fda96c8d70
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857381"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070478"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Zgłaszanie jako gotowych z urządzenia karty zadania
 
@@ -50,7 +50,7 @@ Aby uzyskać więcej informacji na temat pracy ze stroną **Ustawienia domyślne
 
 ## <a name="report-batch-controlled-items-as-finished"></a>Zgłaszanie towarów kontrolowanych za pomocą partii jako gotowe
 
-Urządzenie karty zadań obsługuje trzy scenariusze tworzenia raportów dotyczących partii towarów. Te scenariusze dotyczą zarówno towarów włączonych dla zaawansowanych procesów magazynowych, jak i dla towarów, które nie są włączone dla zaawansowanych procesów magazynowych.
+Urządzenie karty zadań obsługuje trzy scenariusze tworzenia raportów dotyczących partii towarów. Te scenariusze dotyczą zarówno towarów włączonych dla procesów magazynowych (WMS), jak i dla towarów, które nie są włączone dla zaawansowanych procesów magazynowych WMS.
 
 - **Numery partii przypisane ręcznie** - Pracownicy wprowadzający niestandardowy numer partii. Ten numer partii może pochodzić ze źródła zewnętrznego, które nie jest znane dla systemu.
 - **Wstępnie zdefiniowane numery partii** - Pracownik umożliwia wybranie numeru partii na liście numerów partii, które system automatycznie generuje przed zwolnieniem zlecenia produkcyjnego na urządzeniu karty zadań.
@@ -129,7 +129,7 @@ W przypadku użycia tego scenariusza pole **Numeru partii**, które znajduje si�
 
 ## <a name="report-serial-controlled-items-as-finished"></a>Zgłaszanie towarów kontrolowanych za pomocą serii jako gotowe
 
-Urządzenie karty pracy obsługuje trzy scenariusze raportowania towarów kontrolowanych seryjnie. Te scenariusze dotyczą zarówno towarów włączonych dla zaawansowanych procesów magazynowych, jak i dla towarów, które nie są włączone dla zaawansowanych procesów magazynowych.
+Urządzenie karty pracy obsługuje trzy scenariusze raportowania towarów kontrolowanych seryjnie. Te scenariusze dotyczą zarówno towarów włączonych dla procesów magazynowych (WMS), jak i dla towarów, które nie są włączone dla zaawansowanych procesów magazynowych WMS.
 
 - **Numery seryjne przypisane ręcznie** - Pracownicy wprowadzający niestandardowy numer seryjny. Ten numer seryjny może pochodzić ze źródła zewnętrznego, które nie jest znane dla systemu.
 - **Wstępnie zdefiniowane numery seryjne** - Pracownik umożliwia wybranie numeru sertyjnego na liście numerów seryjnych, które system automatycznie generuje przed zwolnieniem zlecenia produkcyjnego na urządzeniu karty zadań.
@@ -212,7 +212,7 @@ W przypadku użycia tego scenariusza pole **Numer seryjny**, które znajduje si�
 
 ## <a name="report-as-finished-to-a-license-plate"></a>Zgłaszanie wyrobów jako gotowych do numeru identyfikacyjnego
 
-W przypadku zaawansowanych procesów magazynowych może być używany wymiar numer identyfikacyjny w celu śledzenia zapasów w lokalizacjach magazynów, które zostały skonfigurowane w tym celu. W takim przypadku numer identyfikacyjny jest wymagany, gdy pracownik zgłasza ilości jako gotowe.
+W przypadku procesów magazynowych (WMS) może być używany wymiar numer identyfikacyjny w celu śledzenia zapasów w lokalizacjach magazynów, które zostały skonfigurowane w tym celu. W takim przypadku numer identyfikacyjny jest wymagany, gdy pracownik zgłasza ilości jako gotowe.
 
 ### <a name="enable-license-plate-reporting-and-label-printing"></a>Włączanie zgłaszania i drukowania etykiet numeru identyfikacyjnego
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-04-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e46c5721853ebfe3b9d5955ca5f4e7a4ead570c1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fffe9c042c71dc220179bb6d1ba7fd59d5e53cc0
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846308"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069542"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-19-2021"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources 19 kwietnia 2021
 
@@ -77,7 +77,7 @@ Następujące nowe funkcje są dostępne w wersji zapoznawczej. Aby uzyskać inf
 | Funkcja | Szczegóły |
 | --- | --- |
 | Umiejętności wprowadzone przez menedżera dla swoich pracowników mogą być automatycznie zatwierdzane w przepływie pracy | Wkrótce. |
-| Aktualizacja Platform Update 10.0.18 (42) | Aktualizacja platformy z 10.0.18 ma się rozpocząć w następnym wydaniu serwisowym w dniu 17 maja 2021. Aby uzyskać więcej informacji, zobacz temat [Aktualizacje platformy dla wersji 10.0.18 aplikacji Finanse i Działania (maj 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18). |
+| Aktualizacja Platform Update 10.0.18 (42) | Aktualizacja platformy z 10.0.18 ma się rozpocząć w następnym wydaniu serwisowym w dniu 17 maja 2021. Aby uzyskać więcej informacji, zobacz temat [Aktualizacje platformy dla wersji 10.0.18 aplikacji finansowych i operacyjnych(maj 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18). |
 | Obsługa pól niestandardowych w regułach uprawnień zarządzania świadczeniami  | [Obsługa pól niestandardowych na potrzeby przetwarzania uprawnień](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-eligibility-processing) |
 
 Aby uzyskać pełną listę zaplanowanych funkcji i ich zaplanowanych wersji, zajrzyj do [omówienia Dynamics 365 Human Resources 2021 wydanie 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
@@ -90,3 +90,4 @@ Aby uzyskać pełną listę zaplanowanych funkcji i ich zaplanowanych wersji, za
 [Zarządzanie funkcjami](hr-admin-manage-features.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

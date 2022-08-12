@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 9d27331b940a95168810c2f1ec4ae240a9df93a8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1211f7da15686f1c55a4c942f04c73d671e0ba6b
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8896713"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111435"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Rozwiązywanie problemów z synchronizacją na żywo
 
@@ -29,7 +29,7 @@ Ten artykuł zawiera informacje dotyczące rozwiązywania problemów dotyczącyc
 
 ## <a name="live-synchronization-shows-an-error-when-you-create-a-row"></a>Synchronizacja na żywo pokazuje błąd podczas tworzenia wiersza
 
-Może pojawić się następujący komunikat o błędzie podczas tworzenia wiersza w aplikacji Finanse i Działania:
+Może pojawić się następujący komunikat o błędzie podczas tworzenia wiersza w aplikacjach finansowych i operacyjnych:
 
 *\[{\\„błąd\\”:{\\„kod\\”:\\„0x 80072560\\”,\\„komunikat\\”:\\„użytkownik nie jest członkiem organizacji.\\”}}\], Serwer zdalny zwrócił błąd: (403) zabroniony”}}”.*
 
@@ -39,27 +39,27 @@ Aby rozwiązać ten problem, należy wykonać kroki opisane w [Wymagania systemo
 
 **Wymagana rola w celu rozwiązania problemu:** administrator systemu
 
-Może pojawić się następujący komunikat o błędzie podczas próby zapisania danych tabeli w aplikacji Finanse i Działania:
+Może pojawić się następujący komunikat o błędzie podczas próby zapisania danych tabeli w aplikacjach finansowych i operacyjnych:
 
 *Nie można zapisać zmian w bazie danych. Jednostka pracy nie może zatwierdzić transakcji. Nie można zapisać danych do jednostki uoms. Zapis do UnitOfMeasureEntity nie powiódł się. Komunikatu o błędzie nie można zsynchronizować z jednostką uoms.*
 
-Aby rozwiązać ten problem, należy upewnić się, że istnieją dane referencyjne wymagań wstępnych w aplikacji Finanse i Działania i Dataverse. Jeśli na przykład rekord klienta należy do konkretnej grupy klientów, należy upewnić się, że rekord grupy klientów istnieje w usłudze Dataverse.
+Aby rozwiązać ten problem, należy upewnić się, że istnieją dane referencyjne wymagań wstępnych w aplikacjach finansowych i operacyjnych i Dataverse. Jeśli na przykład rekord klienta należy do konkretnej grupy klientów, należy upewnić się, że rekord grupy klientów istnieje w usłudze Dataverse.
 
 Jeśli istnieją dane w obu miejscach i potwierdzono, że ten błąd nie jest związany z danymi, wykonaj następujące kroki.
 
-1. Otwórz encję **DualWriteProjectConfigurationEntity** przy użyciu dodatku programu Excel. Aby użyć tego dodatku, włącz tryb projektowania w dodatku programu Excel Finanse i Działania i dodaj do arkusza encję **DualWriteProjectConfigurationEntity**. Więcej informacji można znaleźć w temacie [Wyświetlanie i aktualizowanie danych jednostki przy użyciu programu Excel](../../office-integration/use-excel-add-in.md).
+1. Otwórz encję **DualWriteProjectConfigurationEntity** przy użyciu dodatku programu Excel. Aby użyć tego dodatku, włącz tryb projektowania w dodatku programu Excel aplikacji finansowych i operacyjnych i dodaj do arkusza encję **DualWriteProjectConfigurationEntity**. Więcej informacji można znaleźć w temacie [Wyświetlanie i aktualizowanie danych jednostki przy użyciu programu Excel](../../office-integration/use-excel-add-in.md).
 2. Wybierz i usuń rekordy, które mają problemy w mapie i projekcie podwójnego zapisu. Dla każdego mapowania podwójnego zapisu będą dostępne dwa rekordy.
 3. Opublikuj zmiany przy użyciu dodatku programu Excel. Ten krok jest ważny, ponieważ powoduje usunięcie rekordów z encji i tabel źródłowych.
 
-## <a name="handle-read-or-write-privilege-errors-when-you-create-data-in-a-finance-and-operations-app"></a>Obsługa błędów uprawnień do odczytu lub odczytu podczas tworzenia danych w aplikacji Finanse i Działania
+## <a name="handle-read-or-write-privilege-errors-when-you-create-data-in-a-finance-and-operations-app"></a>Obsługa błędów uprawnień do odczytu lub odczytu podczas tworzenia danych w aplikacjach finansowych i operacyjnych
 
-Może pojawić się komunikat o błędzie „Nieprawidłowe żądanie” podczas tworzenia danych w aplikacji Finanse i Działania.
+Może pojawić się komunikat o błędzie „Nieprawidłowe żądanie” podczas tworzenia danych w aplikacjach finansowych i operacyjnych.
 
 ![Przykład komunikatu o błędzie złego żądania.](media/error_record_id_source.png)
 
 Aby rozwiązać ten problem, należy włączyć brakujące uprawnienie, przypisując poprawną rolę zabezpieczeń zespołowi zamapowanej jednostki biznesowej usługi Dynamics 365 Customer Service lub Dynamics 365 Sales.
 
-1. W aplikacji Finanse i Działania znajdź jednostkę biznesową, która jest zamapowana w zestawie połączenia integracji danych.
+1. W aplikacjach finansowych i operacyjnych znajdź jednostkę biznesową, która jest zamapowana w zestawie połączenia integracji danych.
 
     ![Mapowanie organizacji.](media/mapped_business_unit.png)
 
@@ -77,7 +77,7 @@ Aby rozwiązać ten problem, należy włączyć brakujące uprawnienie, przypisu
 
 **Wymagana rola w celu rozwiązania problemu:** administrator systemu
 
-Może pojawić się następujący komunikat o błędzie podczas tworzenia danych w aplikacji Finanse i Działania:
+Może pojawić się następujący komunikat o błędzie podczas tworzenia danych w aplikacjach finansowych i operacyjnych:
 
 *{„EntityName”: „CustCustomerV3Entity”, „executionStatus”: 2, „fieldResponses”:\[\], „recordResponses”:\[{„ErrorMessage”: „**nie można wygenerować ładunku dla jednostki CustCustomerV3Entity**”, „logDateTime”: „2019-08-27T 18:51:52.5843124Z”, „verboseError”: „Tworzenie ładunku nie powiodło się z powodu błędu nieprawidłowy identyfikator URI: identyfikator URI jest pusty”}\], „isErrorCountUpdated”: prawda}*
 
@@ -85,19 +85,19 @@ Oto jak wygląda komunikat o błędzie w aplikacji angażującej klienta:
 
 > Wystąpił nieoczekiwany błąd w kodzie ISV. (Błąd = ClientError) Nieoczekiwany wyjątek od wtyczki (Execute): Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PostCommitPlugin: System.Exception: nie można przetworzyć konta jednostki — (Próba połączenia nie powiodła się, ponieważ połączona strona nie odpowiedziała prawidłowo po upływie określonego czasu lub ustanowienie połączenia nie powiodło się, ponieważ połączony host nie odpowiedział.
 
-Ten błąd występuje, gdy środowisko Dataverse jest niepoprawnie resetowane podczas próby utworzenia danych w aplikacji Finanse i Działania.
+Ten błąd występuje, gdy środowisko Dataverse jest niepoprawnie resetowane podczas próby utworzenia danych w aplikacjach finansowych i operacyjnych.
 
 > [!IMPORTANT]
 > Jeśli środowiska zostały ponownie połączone, musisz zatrzymać wszystkie mapy encji przed kontynuowaniem kroków ograniczenia ryzyka.
 
-Aby rozwiązać ten problem, musisz wykonać kroki w usłudze Dataverse i aplikacji Finanse i Działania.
+Aby rozwiązać ten problem, musisz wykonać kroki w usłudze Dataverse i w aplikacjach finansowych i operacyjnych.
 
-1. W aplikacji Finanse i Działania wykonaj następujące kroki:
+1. W aplikacjach finansowych i operacyjnych wykonaj następujące kroki:
 
-    1. Otwórz encję **DualWriteProjectConfigurationEntity** przy użyciu dodatku programu Excel. Aby użyć tego dodatku, włącz tryb projektowania w dodatku programu Excel Finanse i Działania i dodaj do arkusza encję **DualWriteProjectConfigurationEntity**. Więcej informacji można znaleźć w temacie [Wyświetlanie i aktualizowanie danych jednostki przy użyciu programu Excel](../../office-integration/use-excel-add-in.md).
+    1. Otwórz encję **DualWriteProjectConfigurationEntity** przy użyciu dodatku programu Excel. Aby użyć tego dodatku, włącz tryb projektowania w dodatku programu Excel aplikacji finansowych i operacyjnych i dodaj do arkusza encję **DualWriteProjectConfigurationEntity**. Więcej informacji można znaleźć w temacie [Wyświetlanie i aktualizowanie danych jednostki przy użyciu programu Excel](../../office-integration/use-excel-add-in.md).
     2. Wybierz i usuń rekordy, które mają problemy w mapie i projekcie podwójnego zapisu. Dla każdego mapowania podwójnego zapisu będą dostępne dwa rekordy.
     3. Opublikuj zmiany przy użyciu dodatku programu Excel. Ten krok jest ważny, ponieważ powoduje usunięcie rekordów z encji i tabel źródłowych.
-    4. Aby zapobiec błędom po ponownym połączeniu środowisk Finanse i Działania lub Dataverse, należy upewnić się, że nie pozostają żadne konfiguracje podwójnego zapisu.
+    4. Aby zapobiec błędom po ponownym połączeniu środowisk aplikacji finansowych i operacyjnych lub Dataverse, należy upewnić się, że nie pozostają żadne konfiguracje podwójnego zapisu.
 
 2. W usłudze Dataverse wykonaj następujące kroki:
 
@@ -108,12 +108,12 @@ Aby rozwiązać ten problem, musisz wykonać kroki w usłudze Dataverse i aplika
     5. Wybierz opcję **Wyniki**, aby wyświetlić konfiguracje.
     6. Usuń wszystkie wystąpienia.
 
-3. W aplikacji Finanse i Działania wykonaj następujące kroki:
+3. W aplikacjach finansowych i operacyjnych wykonaj następujące kroki:
 
-    1. Otwórz encję **DualWriteProjectConfigurationEntity** przy użyciu dodatku programu Excel. Aby użyć tego dodatku, włącz tryb projektowania w dodatku programu Excel Finanse i Działania i dodaj do arkusza encję **DualWriteProjectConfigurationEntity**. Więcej informacji można znaleźć w temacie [Wyświetlanie i aktualizowanie danych jednostki przy użyciu programu Excel](../../office-integration/use-excel-add-in.md).
+    1. Otwórz encję **DualWriteProjectConfigurationEntity** przy użyciu dodatku programu Excel. Aby użyć tego dodatku, włącz tryb projektowania w dodatku programu Excel aplikacji finansowych i operacyjnych i dodaj do arkusza encję **DualWriteProjectConfigurationEntity**. Więcej informacji można znaleźć w temacie [Wyświetlanie i aktualizowanie danych jednostki przy użyciu programu Excel](../../office-integration/use-excel-add-in.md).
     2. Wybierz i usuń rekordy, które mają problemy w mapie i projekcie podwójnego zapisu. Dla każdego mapowania podwójnego zapisu będą dostępne dwa rekordy.
     3. Opublikuj zmiany przy użyciu dodatku programu Excel. Ten krok jest ważny, ponieważ powoduje usunięcie rekordów z encji i tabel źródłowych.
-    4. Aby zapobiec błędom po ponownym połączeniu środowisk Finanse i Działania lub Dataverse, należy upewnić się, że nie pozostają żadne konfiguracje podwójnego zapisu.
+    4. Aby zapobiec błędom po ponownym połączeniu środowisk aplikacji finansowych i operacyjnych lub Dataverse, należy upewnić się, że nie pozostają żadne konfiguracje podwójnego zapisu.
 
 ## <a name="live-synchronization-error-after-you-do-a-full-database-copy"></a>Błąd synchronizacji na żywo po zakończeniu wykonywania pełnej kopii bazy danych
 
@@ -189,9 +189,9 @@ while(qRun.next())
 }
 ```
 
-## <a name="data-from-finance-and-operations-apps-isnt-synced-to-dataverse"></a>Dane z aplikacji Finanse i Działania nie są synchronizowane do Dataverse
+## <a name="data-from-finance-and-operations-apps-isnt-synced-to-dataverse"></a>Dane z aplikacji finansowych i operacyjnych nie są synchronizowane do Dataverse
 
-Podczas synchronizacji na żywo może wystąpić problem, gdy tylko część danych jest synchronizowana z aplikacji Finanse i Działania do usługi Dataverse lub dane w ogóle nie są synchronizowane.
+Podczas synchronizacji na żywo może wystąpić problem, gdy tylko część danych jest synchronizowana z aplikacji finansowych i operacyjnych do usługi Dataverse lub dane w ogóle nie są synchronizowane.
 
 > [!NOTE]
 > Ten problem należy rozwiązać podczas developmentu.
@@ -200,13 +200,13 @@ Przed rozpoczęciem rozwiązania problemu przejrzyj następujące wymagania wst�
 
 + Upewnij się, że niestandardowe zmiany zostały zapisane w zakresie jednej transakcji.
 + Zdarzenia biznesowe i struktura podwójnego zapisu nie obsługują operacji `doinsert()`, `doUpdate()` ani `recordset()` lub rekordów z oznaczonym elementem `skipBusinessEvents(true)`. Jeśli kod znajduje się wewnątrz tych funkcji, podwójny zapis nie będzie wyzwalany.
-+ Zdarzenia biznesowe muszą być zarejestrowane dla źródła danych, które jest mapowane. Niektóre źródła danych mogą używać sprzężenia zewnętrznego i mogą być oznaczone jako tylko do odczytu w aplikacjach Finanse i Działania. Te źródła danych nie są śledzone.
++ Zdarzenia biznesowe muszą być zarejestrowane dla źródła danych, które jest mapowane. Niektóre źródła danych mogą używać sprzężenia zewnętrznego i mogą być oznaczone jako tylko do odczytu w aplikacjach finansowych i operacyjnych. Te źródła danych nie są śledzone.
 + Zmiany będą wyzwalane tylko wtedy, gdy modyfikacje są w mapowanych polach. Niezamapowane modyfikacje pól nie będą wyzwalać podwójnego zapisu.
 + Upewnij się, że oceny filtru zapewniają prawidłowy wynik.
 
 ### <a name="troubleshooting-steps"></a>Kroki rozwiązywania problemów
 
-1. Przejrzyj mapowania pól na stronie administrowania podwójnym zapisem. Jeśli pole nie jest mapowane z aplikacji Finanse i Działania do usługi Dataverse, nie będzie śledzone. Na przykład na poniższej ilustracji pole **Opis** jest śledzone z usługi Dataverse, ale nie z aplikacji Finanse i Działania. Zmiany tego pola w aplikacjach Finanse i Działania nie będą śledzone.
+1. Przejrzyj mapowania pól na stronie administrowania podwójnym zapisem. Jeśli pole nie jest mapowane w aplikacjach finansowych i operacyjnych do usługi Dataverse, nie będzie śledzone. Na przykład na poniższej ilustracji pole **Opis** jest śledzone z usługi Dataverse, ale nie w aplikacjach finansowych i operacyjnych. Zmiany tego pola w aplikacjach finansowych i operacyjnych nie będą śledzone.
 
     ![Śledzone pole.](media/live-sync-troubleshooting-1.png)
 
@@ -220,9 +220,9 @@ Przed rozpoczęciem rozwiązania problemu przejrzyj następujące wymagania wst�
 
 ### <a name="sample-scenario"></a>Przykładowy scenariusz
 
-W aplikacjach Finanse i Działania istnieje aktualizacja adres rekordu kontaktu, ale zmiana adresu nie jest synchronizowana z usługą Dataverse. Ten scenariusz występuje, ponieważ żaden rekord w tabeli **BusinessEventsDefinition** nie zawiera kombinacji tej tabeli i encji. W szczególności tabela **LogisticsPostalAddress** nie jest bezpośrednim źródłem danych dla encji **smmContactpersonCDSV2Entity**. Źródłem danych encji **smmContactpersonCDSV2Entity** jest encja **smmContactPersonV2Entity**, a z kolei źródłem danych encji **smmContactPersonV2Entity** jest encja **LogisticsPostalAddressBaseEntity**. Tabela **LogisticsPostalAddress** jest źródłem danych dla encji **logisticsPostalAddressBaseEntity**.
+W aplikacjach finansowych i operacyjnych istnieje aktualizacja adres rekordu kontaktu, ale zmiana adresu nie jest synchronizowana z usługą Dataverse. Ten scenariusz występuje, ponieważ żaden rekord w tabeli **BusinessEventsDefinition** nie zawiera kombinacji tej tabeli i encji. W szczególności tabela **LogisticsPostalAddress** nie jest bezpośrednim źródłem danych dla encji **smmContactpersonCDSV2Entity**. Źródłem danych encji **smmContactpersonCDSV2Entity** jest encja **smmContactPersonV2Entity**, a z kolei źródłem danych encji **smmContactPersonV2Entity** jest encja **LogisticsPostalAddressBaseEntity**. Tabela **LogisticsPostalAddress** jest źródłem danych dla encji **logisticsPostalAddressBaseEntity**.
 
-Podobna sytuacja może wystąpić w pewnych niestandardowych wzorcach, takich jak przypadki, w których tabela modyfikowana w aplikacjach Finanse i Działania nie jest w oczywisty sposób połączona z zawierającą ją encją. Na przykład dane adresu podstawowego są obliczane w encji **smmContactPersonCDSV2Entity**. Struktura podwójnego zapisu próbuje ustalić, w jaki sposób zmiana w tabeli podstawowej jest mapowana z powrotem na encje. Zwykle to podejście jest wystarczające. Jednak w niektórych przypadkach połączenie jest tak złożone, że należy je dokładnie zdefiniować. Musisz się upewnić, że identyfikator powiązanej tabeli **RecId** jest bezpośrednio dostępny w encji. Następnie dodaj statyczną metodę w celu monitorowania tabeli pod kątem zmian.
+Podobna sytuacja może wystąpić w pewnych niestandardowych wzorcach, takich jak przypadki, w których tabela modyfikowana w aplikacjach finansowych i operacyjnych nie jest w oczywisty sposób połączona z zawierającą ją encją. Na przykład dane adresu podstawowego są obliczane w encji **smmContactPersonCDSV2Entity**. Struktura podwójnego zapisu próbuje ustalić, w jaki sposób zmiana w tabeli podstawowej jest mapowana z powrotem na encje. Zwykle to podejście jest wystarczające. Jednak w niektórych przypadkach połączenie jest tak złożone, że należy je dokładnie zdefiniować. Musisz się upewnić, że identyfikator powiązanej tabeli **RecId** jest bezpośrednio dostępny w encji. Następnie dodaj statyczną metodę w celu monitorowania tabeli pod kątem zmian.
 
 Aby zapoznać się z przykładem, zapoznaj się z metodą **smmContactPersonCDSV2Entity::getEntityDataSourceToFieldMapping()**. Encje **CustCustomerV3entity** i **VendVendorV2Entity** zostały zmodyfikowane, aby obsłużyć tę sytuację.
 
@@ -250,19 +250,19 @@ Aby naprawić problem, należy wykonać następujące czynności.
 5. Zatrzymaj wszystkie mapy podwójnego zapisu utworzone w encji **smmContactPersonCDSV2Entity**.
 6. Uruchom mapę. Powinna pojawić się nowa tabela (**LogisticsPostalAddress** w tym przykładzie), która była śledzona za pomocą kolumny **RefTableName** dla wiersza, w którym wartość **refentityname** jest równa **smmContactPersonCDSV2Entity** w tabeli **BusinessEventsDefinition**.
 
-## <a name="error-when-you-create-a-record-where-multiple-records-are-sent-from-a-finance-and-operations-app-to-dataverse-in-the-same-batch"></a>Błąd podczas tworzenia rekordu, w którym wiele rekordów jest wysyłanych z aplikacji Finanse i Działania do usługi Dataverse w tej samej partii
+## <a name="error-when-you-create-a-record-where-multiple-records-are-sent-from-a-finance-and-operations-app-to-dataverse-in-the-same-batch"></a>Błąd podczas tworzenia rekordu, w którym wiele rekordów jest wysyłanych z w aplikacjach finansowych i operacyjnych do usługi Dataverse w tej samej partii
 
-W przypadku każdej transakcji aplikacja Finanse i Działania tworzy dane w partii i wysyła je jako partię do usługi Dataverse. Jeśli w ramach tej samej transakcji utworzone zostaną dwa rekordy i odwołują się one do siebie, może zostać wyświetlony komunikat o błędzie przypominający następujący przykład w aplikacji Finanse i Działania:
+W przypadku każdej transakcji w aplikacjach finansowych i operacyjnych tworzy dane w partii i wysyła je jako partię do usługi Dataverse. Jeśli w ramach tej samej transakcji utworzone zostaną dwa rekordy i odwołują się one do siebie, może zostać wyświetlony komunikat o błędzie przypominający następujący przykład w aplikacjach finansowych i operacyjnych:
 
 *Nie można zapisać danych do encji aaa_fundingsources. Nie można odszukać danych ebecsfs_contracts z wartościami {PC00...}. Nie można odszukać danych aaa_fundingsources z wartościami {PC00...}. Zapisy w aaa_fundingsources nie powiodły się; komunikat o błędzie: Sserwer zdalny zwrócił błąd: (400) Nieprawidłowe żądanie.*
 
-Aby rozwiązać ten problem, utwórz w aplikacji Finanse i Działania relacje encji, aby wskazać, że te dwie encje są ze sobą powiązane oraz że powiązane rekordy są obsługiwane w tej samej transakcji.
+Aby rozwiązać ten problem, utwórz w aplikacjach finansowych i operacyjnych relacje encji, aby wskazać, że te dwie encje są ze sobą powiązane oraz że powiązane rekordy są obsługiwane w tej samej transakcji.
 
 ## <a name="enable-verbose-logging-of-error-messages"></a>Włącz pełne rejestrowanie komunikatów o błędach
 
-W aplikacji Finanse i Działania mogą wystąpić błędy związane ze środowiskiem usługi Dataverse. Komunikat o błędzie może nie zawierać pełnego tekstu wiadomości lub innych odpowiednich danych. Aby uzyskać więcej informacji, można włączyć pełne rejestrowanie, ustawiając flagę **IsDebugMode** dostępną w encji **DualWriteProjectConfigurationEntity** we wszystkich konfiguracjach projektów w aplikacjach Finanse i Działania.
+W aplikacjach finansowych i operacyjnych mogą wystąpić błędy związane ze środowiskiem usługi Dataverse. Komunikat o błędzie może nie zawierać pełnego tekstu wiadomości lub innych odpowiednich danych. Aby uzyskać więcej informacji, można włączyć pełne rejestrowanie, ustawiając flagę **IsDebugMode** dostępną w encji **DualWriteProjectConfigurationEntity** we wszystkich konfiguracjach projektów w aplikacjach finansowych i operacyjnych.
 
-1. Otwórz encję **DualWriteProjectConfigurationEntity** przy użyciu dodatku programu Excel. Aby użyć tego dodatku, włącz tryb projektowania w dodatku programu Excel Finanse i Działania i dodaj do arkusza encję **DualWriteProjectConfigurationEntity**. Więcej informacji można znaleźć w temacie [Wyświetlanie i aktualizowanie danych jednostki przy użyciu programu Excel](../../office-integration/use-excel-add-in.md).
+1. Otwórz encję **DualWriteProjectConfigurationEntity** przy użyciu dodatku programu Excel. Aby użyć tego dodatku, włącz tryb projektowania w dodatku programu Excel aplikacji finansowych i operacyjnych i dodaj do arkusza encję **DualWriteProjectConfigurationEntity**. Więcej informacji można znaleźć w temacie [Wyświetlanie i aktualizowanie danych jednostki przy użyciu programu Excel](../../office-integration/use-excel-add-in.md).
 2. Ustaw flagę **IsDebugMode** na **Tak** dla projektu.
 3. Uruchom scenariusz.
 4. Pełne dzienniki są dostępne w tabeli **DualWriteErrorLog**. Aby szukać danych za pomocą przeglądarki tabel, użyj następującego adresu URL: `https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog`.
@@ -270,7 +270,7 @@ W aplikacji Finanse i Działania mogą wystąpić błędy związane ze środowis
 
 ## <a name="error-when-you-add-an-address-for-a-customer-or-contact"></a>Błąd podczas dodawania adresu klienta lub kontaktu
 
-Podczas próby dodania adresu klienta lub kontaktu w aplikacjach Finanse i Działania lub usłudze Dataverse może pojawić się następujący komunikat o błędzie:
+Podczas próby dodania adresu klienta lub kontaktu w aplikacjach finansowych i operacyjnych lub usłudze Dataverse może pojawić się następujący komunikat o błędzie:
 
 *Nie można zapisać danych do encji msdyn_partypostaladdresses. Zapisy w encji DirPartyPostalAddressLocationCDSEntity nie powiodły się; komunikat o błędzie: Żądanie komunikatu o błędzie nie powiodło się. Kod stanu: BadRequest i kod błędu CDS: 0x80040265, odpowiedź — komunikat: Wystąpił błąd w dodatku plug-in. Rekord z wartościami atrybutów Identyfikator lokalizacji już istnieje. Klucz identyfikatora lokalizacji klucza encji wymaga, aby ten zestaw atrybutów zawierał unikatowe wartości. Wybierz unikatowe wartości i spróbuj ponownie.*
 
@@ -290,7 +290,7 @@ Może pojawić się następujący komunikat o błędzie podczas próby dodania k
 
 *„RecordError0”:„Zapis nie powiódł się dla encji Klienci (wersja 3) z nieznanym wyjątkiem — nie znaleziono rekordu jednostki dla typu strony „Organizacja”}.*
 
-Po utworzeniu klienta w usłudze Dataverse jest generowany nowy numer strony. Komunikat o błędzie jest wyświetlany, gdy rekord klienta oraz strona są synchronizowane z aplikacjami Finanse i Działania, ale istnieje już rekord klienta o innym numerze strony.
+Po utworzeniu klienta w usłudze Dataverse jest generowany nowy numer strony. Komunikat o błędzie jest wyświetlany, gdy rekord klienta oraz strona są synchronizowane z aplikacjami finansowymi i operacyjnymi, ale istnieje już rekord klienta o innym numerze strony.
 
 Aby rozwiązać ten problem, znajdź klienta za pomocą wyszukiwania strony. Jeśli klient nie istnieje, utwórz nowy rekord klienta. Jeśli klient nie istnieje, użyj istniejącej strony, aby utworzyć nowy rekord klienta.
 
@@ -300,7 +300,7 @@ Podczas próby dodania nowego klienta, dostawcy lub kontaktu w usłudze Datavers
 
 *Nie można zaktualizować typu strony z „DirOrganization” na „DirPerson”. W zamian należy usunąć istniejącą stronę, a następnie wstawić ją z nowym typem.*
 
-W usłudze Dataverse istnieje sekwencja numerów tabeli **msdyn_party**. Podczas tworzenia konta w usłudze Dataverse jest tworzona nowa strona (na przykład **Strona-001** typu **Organizacja**). Te dane są wysyłane do aplikacji Finanse i Działania. Jeśli środowisko Dataverse zostanie zresetowane lub środowisko Finanse i Działania zostanie połączone z innym środowiskiem Dataverse, a następnie zostanie utworzony nowy rekord osoby kontaktowej w usłudze Dataverse, zostanie utworzona nowa wartość strony, która zaczyna się od **Strona-001**. Tym razem utworzony rekord strony to **Strona-001** typu **Osoba**. Po zsynchronizowaniu tych danych aplikacje Finanse i Działania będą wyświetlać poprzedni komunikat o błędzie, ponieważ rekord strony **Strona-001** typu **Organizacja** już istnieje.
+W usłudze Dataverse istnieje sekwencja numerów tabeli **msdyn_party**. Podczas tworzenia konta w usłudze Dataverse jest tworzona nowa strona (na przykład **Strona-001** typu **Organizacja**). Te dane są wysyłane do aplikacji finansowych i operacyjnych. Jeśli środowisko Dataverse zostanie zresetowane lub środowisko w aplikacjach finansowych i operacyjnych zostanie połączone z innym środowiskiem Dataverse, a następnie zostanie utworzony nowy rekord osoby kontaktowej w usłudze Dataverse, zostanie utworzona nowa wartość strony, która zaczyna się od **Strona-001**. Tym razem utworzony rekord strony to **Strona-001** typu **Osoba**. Po zsynchronizowaniu tych danych w aplikacjach finansowych i operacyjnych będą wyświetlać poprzedni komunikat o błędzie, ponieważ rekord strony **Strona-001** typu **Organizacja** już istnieje.
 
 Aby rozwiązać ten problem, zmień automatyczną sekwencję numerów dla pola **msdyn_partynumber** tabeli **msdyn_party** w usłudze Dataverse na inną automatyczną sekwencję numerów.
 
@@ -355,3 +355,4 @@ Po zaktualizowaniu metod wykonaj poniższe kroki.
 3. Uruchom mapy. W encjach **smmContactPersonCDSV2Entity** i **CustCustomerV3Entity** powinno być mniej rekordów, a tabela **BusinessEventsDefinition** i wydajność mogą się nieznacznie poprawić.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

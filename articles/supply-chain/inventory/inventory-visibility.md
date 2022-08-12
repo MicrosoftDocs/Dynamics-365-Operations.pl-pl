@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 782545ea38a209eb4430607f5bca96e4e930efdc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 274f9b368a6074725d1938de5f2172d2810a5985
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897640"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066649"
 ---
 # <a name="inventory-visibility-add-in-overview"></a>Dodatek Widoczność magazynu — omówienie
 
@@ -61,9 +61,9 @@ Wgląd w najbliższe przyszłą prognozowane zapasy (w tym informacje dotyczące
 
 Funkcja ATP jest łatwe do przyjęcia w codziennych procesach realizacji zamówień. Funkcja ATP, podobnie jak inna oferta widoczności zapasów, jest dostępna *na całym świecie i w czasie rzeczywistym*. Dlatego można skonfigurować wiele formuł obliczania ATP, tak aby zawierały kwerendy dotyczące pełnej dostępności zapasów, które obejmują wszystkie kanały biznesowe i źródła danych. Aby uzyskać więcej informacji, zobacz [Widoczność zapasów — harmonogramy i zmiany dostępnych zapasów oraz dostępność zapasów](inventory-visibility-available-to-promise.md).
 
-### <a name="compatibility-with-advanced-warehouse-management-items"></a>Zgodność z zaawansowanymi pozycjami zarządzania magazynem
+### <a name="compatibility-with-warehouse-management-processes-wms-items"></a>Zgodność z zaawansowanymi procesami zarządzania magazynem (WMS)
 
-Firma Microsoft zamierza zintegrować ją z zaawansowanym zarządzaniem magazynem (WHS), dzięki czemu pracownicy WHS mogą również korzystać z zalet usługi widoczności zapasów. Zgodnie z wydaniem 2022 grupy czynności 1 (wersja publiczna w marcu) usługa magazynowa obsługuje kwerendy dostępnych zapasów dla pozycji WHS i ATP. Funkcja rezerwacji programowej i alokacji będzie obsługiwana dla odbiorców WHS w następnej grupy czynności. Więcej informacji zawiera temat [Obsługa widoczności inwentarza dla pozycji WHS](inventory-visibility-whs-support.md).
+Firma Microsoft zamierza zintegrować ją z procesami zarządzania magazynem (WMS), dzięki czemu pracownicy WMS mogą również korzystać z zalet usługi widoczności zapasów. Zgodnie z wydaniem 2022 grupy czynności 1 (wersja publiczna w marcu) usługa magazynowa obsługuje kwerendy dostępnych zapasów dla pozycji WMS i ATP. Funkcja rezerwacji programowej i alokacji będzie obsługiwana dla odbiorców WMS w następnej grupy czynności. Więcej informacji zawiera temat [Obsługa widoczności inwentarza dla pozycji WMS](inventory-visibility-whs-support.md).
 
 ## <a name="licensing"></a>Licencjonowanie
 

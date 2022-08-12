@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 1218497bbb112c9a9ebeaa4cabdcb9314c604a7f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 14369b02f1d7553be5c732f3bdf768825267998b
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8845421"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9125159"
 ---
 # <a name="saved-views"></a>Zapisane widoki
 
@@ -215,7 +215,7 @@ Aby zapoznać się z listą znanych problemów z zapisanymi widokami, zobacz [Tw
 ### <a name="how-do-i-enable-saved-views-in-my-environment"></a>Jak włączyć zapisane widoki w środowisku?
 
 > [!NOTE]
-> Funkcja **zapisanych widoków** wymaga włączenia systemu personalizacji w Finanse i Działania. Jeśli personalizacja jest wyłączona dla całego środowiska, widoki zostaną wyłączone nawet po wykonaniu poniższych kroków. 
+> Funkcja **zapisanych widoków** wymaga włączenia systemu personalizacji w aplikacjach finansowych i operacyjnych. Jeśli personalizacja jest wyłączona dla całego środowiska, widoki zostaną wyłączone nawet po wykonaniu poniższych kroków. 
 
 Funkcję **Zapisane widoki** można włączać i wyłączać za pomocą zarządzania funkcjami w dowolnym środowisku. Po włączeniu zapisane widoki zostaną włączone we wszystkich kolejnych sesjach użytkowników.
 
@@ -255,3 +255,4 @@ Jeśli publikujesz widok dla określonej firmy, ale bez publikowania widoku jako
 - **Wersja 10.0.21 lub nowsza:** jeśli jest włączona funkcja **Usprawniona obsługa zapisanych widoków dla firmy**, w selektorze widoku będzie zawsze pokazywany tylko widok dla określonych firm. To zachowanie występuje, ponieważ funkcja umożliwia łączenie widoków (w tym widoków osobistych) z określonymi firmami.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

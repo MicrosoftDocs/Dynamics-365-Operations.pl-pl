@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 953a3bfec70235524067a47b8764f6dbb40d3c7b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 357ce65792ceef37abda523e7693069f1bc1ab43
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849308"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065563"
 ---
 # <a name="flushing-principles"></a>Reguły rozliczania
 
@@ -50,9 +50,9 @@ Reguły rozliczania są konfigurowane w hierarchii wartości domyślnych. Hierar
 ## <a name="description-of-the-flushing-principles"></a>Opis reguł rozliczania
 
 ### <a name="manual"></a>Ręcznie
-Reguła rozliczania Ręcznie wskazuje, że rejestracja zużycia materiałów jest operacją ręczną. Ta reguła ma zastosowanie, jeśli na przykład chcesz śledzić czas, a na potrzeby śledzenia trzeba uwzględniać ilość zużytych materiałów z numerów partii lub numerów seryjnych. Ręczne zużycie jest rejestrowane w arkuszu listy pobrania produkcji. Dla towarów z włączoną funkcją zaawansowanych procesów magazynowych można stosować przepływ ręczny.
+Reguła rozliczania Ręcznie wskazuje, że rejestracja zużycia materiałów jest operacją ręczną. Ta reguła ma zastosowanie, jeśli na przykład chcesz śledzić czas, a na potrzeby śledzenia trzeba uwzględniać ilość zużytych materiałów z numerów partii lub numerów seryjnych. Ręczne zużycie jest rejestrowane w arkuszu listy pobrania produkcji. Dla towarów z włączoną funkcją procesów magazynowych (WMS) można stosować przepływ ręczny.
 
-### <a name="start"></a>Rozpocznij
+### <a name="start"></a>Uruchom
 Reguła rozliczania Rozpoczęcie wskazuje, że materiał będzie automatycznie zużywany po rozpoczęciu zlecenia produkcyjnego. Zużywana ilość materiału jest proporcjonalna do ilości, z którą rozpoczęto proces. Jeśli reguła rozliczania Rozpoczęcie jest używana razem z systemem wykonywania produkcji, może również służyć do rozliczania materiałów podczas uruchamiania operacji lub zadania przetwarzania. Ta reguła ma zastosowanie, jeśli na przykład odchylenie zużycia jest nieznaczne, materiały mają niską wartość, nie jest wymagane śledzenie lub operacje są krótkotrwałe. 
 
 ### <a name="finish"></a>Zakończenie

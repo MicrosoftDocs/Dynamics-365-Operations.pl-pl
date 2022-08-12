@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 042042bb19b32d3c96b4e0c8521a8b1d65e7ab22
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1b16eab5c107a3176f0890372d397947698e71de
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890464"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111733"
 ---
 # <a name="integrated-customer-master"></a>Zintegrowane dane główne odbiorcy
 
@@ -30,9 +30,9 @@ Dane klientów mogą być przekazywane w więcej niż jednej aplikacji Dynamics 
 
 ![Przepływ danych klienta.](media/dual-write-customer-data-flow.png)
 
-Klienci mogą być szeroko klasyfikowani według dwóch typów: klienci komercyjni/organizacyjni oraz konsumenci/użytkownicy końcowi. Te dwa typy klientów są przechowywane i przetwarzane w różny sposób w programach Finanse i Działania i Dataverse.
+Klienci mogą być szeroko klasyfikowani według dwóch typów: klienci komercyjni/organizacyjni oraz konsumenci/użytkownicy końcowi. Te dwa typy klientów są przechowywane i przetwarzane w różny sposób w aplikacjach finansowych i operacyjnych i Dataverse.
 
-W programie Finanse i Działania zarówno klienci komercyjni/organizacyjni, jak i konsumenci/użytkownicy końcowi są ustawieni jako dane główne w jednej tabeli o nazwie **CustTable** (CustCustomerV3Entity) i są klasyfikowani na podstawie atrybutu **Typ**. (Jeśli **Typ** jest ustawiony na **Organizacja**, klient jest klientem komercyjnym/organizacyjnym, a jeśli **Typ** jest ustawiony na **Osoba**, klient jest konsumentem/użytkownikiem końcowym). Informacje o podstawowej osobie kontaktowej są obsługiwane przez tabelę SMMContactPersonEntity.
+W aplikacjach finansowych i operacyjnych zarówno klienci komercyjni/organizacyjni, jak i konsumenci/użytkownicy końcowi są ustawieni jako dane główne w jednej tabeli o nazwie **CustTable** (CustCustomerV3Entity) i są klasyfikowani na podstawie atrybutu **Typ**. (Jeśli **Typ** jest ustawiony na **Organizacja**, klient jest klientem komercyjnym/organizacyjnym, a jeśli **Typ** jest ustawiony na **Osoba**, klient jest konsumentem/użytkownikiem końcowym). Informacje o podstawowej osobie kontaktowej są obsługiwane przez tabelę SMMContactPersonEntity.
 
 W programie Dataverse klienci komercyjnych/organizacyjnych są zapisywani jako dane główne w tabeli Konto i są identyfikowani jako klienci, gdy atrybut **RelationshipType** jest ustawiony na **Klient**. Zarówno konsumenci/użytkownicy końcowi, jak i osoby kontaktowe są reprezentowane przez tabelę Kontakt. Aby zapewnić wyraźne oddzielenie konsumenta/użytkownika końcowego i osoby kontaktowej, tabela **kontaktów** ma flagę logiczną o nazwie **Sellable**. Gdy **Sellable** ma wartość **True**, kontakt jest konsumentem/użytkownikiem końcowym, a oferty i zamówienia mogą być tworzone dla tego kontaktu. Gdy **Sellable** ma wartość **False**, kontakt jest tylko podstawową osobą kontaktowa klienta.
 
@@ -42,7 +42,7 @@ Gdy kontakt non-sellable uczestniczy w ofercie lub procesie zamówienia, flaga *
 
 Dane klienta obejmują wszystkie informacje o kliencie, takie jak grupa odbiorców, adresy, dane kontaktowe, profil płatności, profil faktury i stan lojalności. Kolekcja mapy tabeli działa razem podczas interakcji z danymi klienta, jak pokazano w poniższej tabeli.
 
-Aplikacje Finanse i Działania | Aplikacje Customer Engagement         | opis
+Aplikacje finansowe i operacyjne | Aplikacje Customer Engagement         | opis
 ----------------------------|---------------------------------|------------
 [CDS Contacts wer. 2](mapping-reference.md#115) | kontakty | Ten szablon synchronizuje wszystkie podstawowe, pomocnicze i wyższe informacje kontaktowe dla odbiorców i dostawców.
 [Grupy odbiorców](mapping-reference.md#126) | msdyn_customergroups | Ten szablon powoduje zsynchronizowanie informacji o grupie klientów.
@@ -57,3 +57,4 @@ Aplikacje Finanse i Działania | Aplikacje Customer Engagement         | opis
 [Warunki płatności](mapping-reference.md#161) | msdyn_paymentterms | Ten szablon synchronizuje dane referencyjne warunki płatności dla odbiorców i dostawców.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

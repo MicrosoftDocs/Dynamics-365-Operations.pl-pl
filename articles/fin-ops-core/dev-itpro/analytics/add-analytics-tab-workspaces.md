@@ -7,24 +7,24 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application user, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: fba78f091a9e1ba209489b0e324027c4885a198d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b06821f02e6a80f2e15db7d0dd95ef6c9a30d5bc
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884557"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206425"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Dodawanie analizy do obszarów roboczych za pomocą Power BI Embedded
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Ta funkcja jest obsługiwana w Finance and Operations (w wersji 7.2 i nowszych).
+> Ta funkcja jest obsługiwana w aplikacjach finansowych i operacyjnych (w wersji 7.2 i nowszych).
 
 ## <a name="introduction"></a>Wprowadzenie
 W tym artykule przedstawiono sposób osadzenia raportu Microsoft Power BI na karcie **analityki** w obszarze roboczym. W przedstawionym tutaj przykładzie rozszerzymy obszar roboczy **Zarządzanie rezerwacjami** w aplikacji Zarządzanie flotą w celu osadzenia analitycznego obszaru roboczego na karcie **Analizy**.

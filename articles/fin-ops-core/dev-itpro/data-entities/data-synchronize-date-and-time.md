@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c76eadc5839785ba1624ee3894ef1d0872369aa9
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: b8faa7b73349c48d3a02b685546b47c4969c6027
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7403848"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109441"
 ---
 # <a name="synchronize-date-and-time-in-import-jobs"></a>Synchronizowanie daty i godziny w zadaniach importu
 
@@ -27,7 +27,7 @@ Bardzo ważne jest ustawienie strefy czasowej dla zadania importu na uniwersalny
 
 Te dwie konwersje powodują zmianę dat między aplikacjami. Na przykład podwójna konwersja może spowodować, że data rozpoczęcia dla pracownika może być różna w aplikacjach Dynamics 365 Human Resources i Dynamics 365 Finance z powodu różnic w strefach czasowych. Ustawienie zadania importowania na czas UTC rozwiązało ten problem.
 
-1. W Dynamics 365 Finance and Operations wybierz pozycję **Zarządzanie danymi**.
+1. W aplikacjach finansowych i operacyjnych usługi Dynamics 365 wybierz pozycję **Zarządzanie danymi**.
 
 2. Wybierz opcję **Importuj projekty**, a następnie wybierz projekt.
 
@@ -41,3 +41,4 @@ Te dwie konwersje powodują zmianę dat między aplikacjami. Na przykład podwó
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

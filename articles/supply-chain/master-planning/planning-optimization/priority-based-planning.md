@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 4997ba123f105f683daaa6b29fe8c5ee72cb47cb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8f46a4d4e087a99c00ab7b4eabc74f60043cbf21
+ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873819"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "9186492"
 ---
 # <a name="priority-based-planning"></a>Planowanie oparte na priorytecie
 
 [!include [banner](../../includes/banner.md)]
 
-W tym artykule opisano funkcję planowania opartej na priorytecie rozwiązania Microsoft Dynamics 365 Supply Chain Management. Ta funkcja dodaje obsługę planowania sterowanego popytem, który jest jednym z kroków planowania zapotrzebowania materiałowego sterowanego popytem (DDMRP). Planowanie oparte na priorytecie umożliwia optymalizację planowania generowania zamówień planowanych, które są sterowane według priorytetów planowania, a nie dat zapotrzebowania.
+W tym artykule opisano funkcję planowania opartej na priorytecie rozwiązania Microsoft Dynamics 365 Supply Chain Management. Ta funkcja dodaje obsługę planowania sterowanego popytem, który jest jednym z kroków [planowania zapotrzebowania materiałowego sterowanego popytem (DDMRP)](ddmrp-overview.md). Planowanie oparte na priorytecie umożliwia optymalizację planowania generowania zamówień planowanych, które są sterowane według priorytetów planowania, a nie dat zapotrzebowania.
 
 Planowanie oparte na priorytecie umożliwia ustalanie priorytetów zamówień uzupełnienia, co zapewnia określanie priorytetów popytu pilnego nad mniej ważnym popytem. Na przykład zamówienie uzupełnienia zapasów będzie mieć priorytet nad standardowym zamówieniem uzupełnienia uzupełniającego. System może automatycznie dzielić większe zamówienia na osobne mniejsze zamówienia, w których wiersze zamówienia są grupowane według priorytetu. Następnie może najpierw przetworzyć wszystkie zamówienia o wysokim priorytecie.
 

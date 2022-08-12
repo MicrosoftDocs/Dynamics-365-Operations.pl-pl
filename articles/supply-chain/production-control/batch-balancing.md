@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 50392e8aa0deb568a57e1df59ced70625a4f8a78
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 939066fbf4ab7b316283d406c321f1a7936c187f
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856056"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066555"
 ---
 # <a name="batch-balancing"></a>Bilansowanie partii
 
@@ -165,22 +165,22 @@ W podprocesie Równoważenie składników partii ilość substancji, jaka ma zos
 
 ### <a name="confirm-and-release-the-formula"></a>Potwierdzenie i zwolnienie formuły
 
-Po obliczeniu ilości substancji można potwierdzić i zwolnić formułę. Proces zwalniania różni się w zależności od tego, czy produkty mogą podlegać procesom zarządzania magazynem:
+Po obliczeniu ilości substancji można potwierdzić i zwolnić formułę. Proces zwalniania różni się w zależności od tego, czy produkty mogą podlegać procesom zarządzania magazynem (WMS):
 
-- Jeśli w ustawieniach produktu włączono obsługę procesów zarządzania magazynem, wiersz formuły jest zwalniany do magazynu zgodnie z zasadami tych procesów. Wiersz formuły jest zwalniany w ilościach odpowiadających zbilansowanym ilościom oraz dla konkretnych partii wybranych dla substancji aktywnych.
+- Jeśli w ustawieniach produktu włączono obsługę procesów zarządzania magazynem (WMS), wiersz formuły jest zwalniany do magazynu zgodnie z zasadami tych procesów. Wiersz formuły jest zwalniany w ilościach odpowiadających zbilansowanym ilościom oraz dla konkretnych partii wybranych dla substancji aktywnych.
 
     > [!NOTE]
     > Wiersze formuły mogą być zwalniane do magazynu tylko w ramach procesu równoważenia partii. Mimo że istnieją inne opcje zwalniania materiałów produkcyjnych do magazynu, nie można ich używać dla wierszy formuł.
 
-- Jeśli w produkcie nie włączono obsługi procesów zarządzania magazynem, dla produktu jest tworzona lista pobrania produkcji podczas potwierdzania i zwalniania formuły.
+- Jeśli w produkcie nie włączono obsługi procesów zarządzania magazynem (WMS), dla produktu jest tworzona lista pobrania produkcji podczas potwierdzania i zwalniania formuły.
 
-W jednej formule można połączyć produkty, w których włączono i nie włączono obsługi procesów zarządzania magazynem. Jeśli w jednej formule znajdują się dwa rodzaje produktów, produkty z włączoną obsługą procesów zarządzania magazynem są zwalniane do magazynu. Dla produktów, które nie mają włączonej obsługi procesów zarządzania magazynem, jest tworzona lista pobrania podczas potwierdzania i zwalniania formuły.
+W jednej formule można połączyć produkty, w których włączono i nie włączono obsługi procesów zarządzania magazynem. Jeśli w jednej formule znajdują się dwa rodzaje produktów, produkty z włączoną obsługą procesów WMS są zwalniane do magazynu. Dla produktów, które nie mają włączonej obsługi procesów WMS, jest tworzona lista pobrania podczas potwierdzania i zwalniania formuły.
 
 ### <a name="batch-orders-that-arent-applicable-for-batch-balancing"></a>Szarże produkcyjne, do których nie można stosować równoważenia partii
 
 Istnieją dwa wyjątki od reguły mówiącej o tym, że równoważenie partii można stosować do szarż produkcyjnych, jeśli formuła zawiera co najmniej jeden wiersz formuły, w którym **typ substancji** to *Aktywna*.
 
-1. Jeżeli formuła zawiera substancję aktywną dla produktu, w którym włączono obsługę procesów zarządzania magazynem, ale numer partii jest poniżej lokalizacji w hierarchii rezerwacji, do szarży produkcyjnej nie można zastosować równoważenia partii.
+1. Jeżeli formuła zawiera substancję aktywną dla produktu, w którym włączono obsługę procesów WMS, ale numer partii jest poniżej lokalizacji w hierarchii rezerwacji, do szarży produkcyjnej nie można zastosować równoważenia partii.
 1. Jeśli jednostka miary formuły różni się od jednostki miary zapasów substancji aktywnej, zamówienie partii nie ma zastosowania do równoważenia partii.
 
 Szarża produkcyjna, do której nie można zastosować równoważenia partii, przechodzi przez zwykły cykl przetwarzania szarż produkcyjnych.

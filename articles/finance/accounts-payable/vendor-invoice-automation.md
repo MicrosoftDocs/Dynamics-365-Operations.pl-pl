@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e7d8e55fc1293e2b33b15f3862498363a6b23f1f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0449a13989bad45cf0456a2678e5724036d2af3d
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8883424"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070703"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>Automatyzacja faktur dla zeskanowanych dokumentów
 
@@ -86,7 +86,7 @@ Faktury importowane za pośrednictwem pakietów danych mogą być skojarzone z f
 
 ## <a name="exception-processing"></a>Przetwarzanie wyjątków
 
-W scenariuszach, gdzie faktury od dostawców wchodzą do programu Finance and Operations wskutek integracji, musi istnieć prosty sposób, w jaki członek zespołu rozrachunków z dostawcami może przetwarzać wyjątki lub niepomyślnie rozliczone faktury oraz tworzyć faktury oczekujące z niepomyślnie rozliczonych faktur. Taka funkcjonalność przetwarzania wyjątków faktur od dostawców jest obecnie częścią programu Finance and Operations.
+W scenariuszach, gdzie faktury od dostawców wchodzą do aplikacji finansowych i operacyjnych wskutek integracji, musi istnieć prosty sposób, w jaki członek zespołu rozrachunków z dostawcami może przetwarzać wyjątki lub niepomyślnie rozliczone faktury oraz tworzyć faktury oczekujące z niepomyślnie rozliczonych faktur. Taka funkcjonalność przetwarzania wyjątków faktur od dostawców jest obecnie częścią aplikacji finansowych i operacyjnych.
 
 ### <a name="vendor-invoices-that-failed-to-import-list-page"></a>Faktura od dostawcy, dla których nie można zaimportować strony listy
 
@@ -225,3 +225,4 @@ Domyślnie jeśli rola użytkownika zawiera prawa do edycji na każdej stronie, 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

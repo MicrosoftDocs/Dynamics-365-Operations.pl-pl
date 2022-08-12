@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 5ebb14dad723fad5b17b4dfca153bf153e77bbd4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2e2759ff15dd8d146c642fc0da90d1a38fe855d1
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882092"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111209"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Rozwiązywanie problemów podczas konfiguracji początkowej
 
@@ -27,15 +27,15 @@ Ten artykuł zawiera informacje dotyczące rozwiązywania problemów dotyczącyc
 > [!IMPORTANT]
 > Niektóre problemy z tego artykułu mogą wymagać roli administratora systemu lub poświadczeń administratora klienta usługi Microsoft Azure Active Directory (Azure AD). W sekcji dotyczącej każdego zagadnienia wyjaśniono, czy określona rola lub poświadczenia są wymagane.
 
-## <a name="you-cant-link-a-finance-and-operations-app-to-dataverse"></a>Nie można połączyć aplikacji Finanse i Działania z Dataverse
+## <a name="you-cant-link-a-finance-and-operations-app-to-dataverse"></a>Nie można połączyć aplikacje finansowe i operacyjne z Dataverse
 
-**Wymagana rola w celu konfiguracji podwójnego zapisu:** administrator systemu w aplikacjach Finanse i Działania i Dataverse.
+**Wymagana rola w celu konfiguracji podwójnego zapisu:** administrator systemu w aplikacjach finansowych i operacyjnych i Dataverse.
 
 Błędy na stronie **Łącze konfiguracji do Dataverse** są zazwyczaj spowodowane niekompletnymi problemami z ustawieniami lub uprawnieniami. Upewnij się, że cała kontrola kondycji jest przekazana na stronie **Łącze konfiguracji do Dataverse**, jak to pokazano na poniższej ilustracji. Nie można połączyć się z podwójnym zapisywaniem, dopóki nie przejdzie cała kontrola kondycji.
 
 ![Pomyślne sprawdzenie kondycji.](media/health_check.png)
 
-Aby połączyć środowiska Finanse i Działania i Dataverse, trzeba mieć poświadczenia administratora dzierżawy Azure AD. Po połączeniu środowiska użytkownicy mogą się logować przy użyciu swoich poświadczeń konta i aktualizować istniejące mapowanie tabeli.
+Aby połączyć środowiska aplikacji finansowych i operacyjnych i Dataverse, trzeba mieć poświadczenia administratora dzierżawy Azure AD. Po połączeniu środowiska użytkownicy mogą się logować przy użyciu swoich poświadczeń konta i aktualizować istniejące mapowanie tabeli.
 
 ## <a name="find-the-limit-on-the-number-of-legal-tables-or-companies-that-can-be-linked-for-dual-write"></a>Umożliwia znalezienie limitu liczby tabel prawnych lub firm, które mogą być połączone w celu wykonania podwójnego odpisu
 
@@ -55,7 +55,7 @@ Funkcja podwójnego zapisu nie obsługuje wielu firm o tej samej nazwie. Na przy
 
 Aby odblokować odbiorcę, usuń duplikaty rekordów z tabeli **cdm_company** w Dataverse. Ponadto, jeśli tabela **cdm_company** ma rekordy bez nazwy, usuń lub popraw te rekordy.
 
-## <a name="error-when-opening-the-dual-write-page-in-finance-and-operations-apps"></a>Błąd podczas otwierania strony podwójnego zapisu w aplikacjach Finanse i Działania
+## <a name="error-when-opening-the-dual-write-page-in-finance-and-operations-apps"></a>Błąd podczas otwierania strony podwójnego zapisu w aplikacjach finansowych i operacyjnych
 
 Podczas próby połączenia środowiska Dataverse na potrzeby podwójnego zapisu może pojawić się następujący komunikat o błędzie:
 
@@ -70,22 +70,23 @@ Ten błąd występuje, gdy krok zgody aplikacji nie jest ukończony. Można spra
     `https://login.microsoftonline.com/common/oauth2/authorize?client_id=33976c19-1db5-4c02-810e-c243db79efde&response_type=code&prompt=admin_consent`
 
 + Naciśnij przycisk **Akceptuj**, aby wyrazić zgodę. Udzielasz zgody na zainstalowanie aplikacji (z `id=33976c19-1db5-4c02-810e-c243db79efde`) w swojej dzierżawie.
-+ Ta aplikacja jest wymagana przez Dataverse do komunikowania się z aplikacjami Finanse i Działania.
++ Ta aplikacja jest wymagana przez Dataverse do komunikowania się z aplikacjami finansowymi i operacyjnymi.
 
     ![Rozwiązywanie problemów z konfiguracją początkowe synchronizacji.](media/Initial-sync-setup-troubleshooting-1.png)
 
 > [!NOTE]
 > Jeśli to nie działa, uruchom adres URL w trybie prywatnym programu Microsoft Edge lub trybie incognito programu Chrome.
 
-## <a name="finance-and-operations-environment-is-not-discoverable"></a>Nie można wykryć środowiska Finanse i Działania
+## <a name="finance-and-operations-environment-is-not-discoverable"></a>Nie można wykryć środowiska aplikacji finansowych i operacyjnych
 
 Może zostać wyświetlony następujący komunikat o błędzie:
 
-*Środowisko aplikacji Finanse i Działania \*\*\*.cloudax.dynamics.com nie jest wykrywalne*.
+*Środowisko aplikacji finansowych i operacyjnych \*\*\*.cloudax.dynamics.com nie jest wykrywalne*.
 
 Istnieją dwie przyczyny, które mogą powodować, że środowisko nie będzie wykrywalne:
 
-+ Zalogowany użytkownik nie znajduje się w tej samej dzierżawie co wystąpienie Finanse i Działania.
-+ Istnieje kilka starszych wystąpień Finanse i Działania, które były hostowane przez firmę Microsoft i miały problem z wykrywaniem. Aby usunąć ten problem, zaktualizuj wystąpienie Finanse i Działania. Po każdej aktualizacji środowisko staje się wykrywalne.
++ Zalogowany użytkownik nie znajduje się w tej samej dzierżawie co wystąpienie aplikacji finansowych i operacyjnych.
++ Istnieje kilka starszych wystąpień aplikacji finansowych i operacyjnych, które były hostowane przez firmę Microsoft i miały problem z wykrywaniem. Aby usunąć ten problem, zaktualizuj wystąpienie aplikacji finansowych i operacyjnych. Po każdej aktualizacji środowisko staje się wykrywalne.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

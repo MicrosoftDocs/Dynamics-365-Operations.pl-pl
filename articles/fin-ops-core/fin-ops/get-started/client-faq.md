@@ -1,6 +1,6 @@
 ---
 title: Klient — często zadawane pytania
-description: Ten artykuł zawiera odpowiedzi na często zadawane pytania dotyczące klienta rozwiązania Finanse i Działania.
+description: Ten artykuł zawiera odpowiedzi na często zadawane pytania dotyczące klienta aplikacji finansowych i operacyjnych
 author: jasongre
 ms.date: 09/11/2019
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e64fb2453f17760b17ca2a7d3f593ac34cde0cc9
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: ca763f388bfc59951febf93f314d3df7e12c50cf
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071040"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124437"
 ---
 # <a name="client-faq"></a>Klient — często zadawane pytania
 
@@ -28,7 +28,7 @@ ms.locfileid: "8071040"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Ten artykuł zawiera odpowiedzi na często zadawane pytania dotyczące klienta rozwiązania Finanse i Działania.
+Ten artykuł zawiera odpowiedzi na często zadawane pytania dotyczące klienta aplikacji finansowych i operacyjnych
 
 ## <a name="why-arent-symbols-loaded"></a>Dlaczego symbole nie są ładowane?
 

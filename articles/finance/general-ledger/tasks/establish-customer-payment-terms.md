@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 16d861294a80ddb44c78760b329e544bc4665130
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 6069d28d84ab1705fd62a33cea7e0b923f0e0705
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716979"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065717"
 ---
 # <a name="establish-customer-payment-terms"></a>Definiowanie warunków płatności dla odbiorcy
 
@@ -35,11 +35,11 @@ Ta procedura określa konfigurację rabatu gotówkowego i terminu płatności. W
 7. Kliknij przycisk **Zapisz**.
 8. Zamknij stronę.
 9. Wybierz kolejno **Okienko nawigacji > Moduły > Rozrachunki z dostawcami > Ustawienia płatności > Warunki płatności**.
-10. Kliknij przycisk **Nowy**. Warunki płatności służą do definiowania sposobu obliczania terminów płatności. Konfigurację daty rabatu gotówkowego wprowadza się na osobnej stronie. 
+10. Kliknij przycisk **Nowy**. **Warunki płatności** służą do definiowania sposobu obliczania terminów płatności. Konfigurację daty rabatu gotówkowego wprowadza się na osobnej stronie. 
 11. W polu **Warunki płatności** wprowadź identyfikator.
 12. W polu **Opis wprowadź** opis.
-13. Wybierz **metodę płatności** taką jak COD, netto, bieżącego miesiąca itp. Metoda płatności służy do definiowania początku, w jaki sposób będą obliczane kwoty należne. Na przykład opcja Netto jest używana, jeśli termin płatności jest zawsze określoną liczbą miesięcy lub dni po dacie faktury. Opcja Płatne przy odbiorze może być używana, gdy płatność jest wymagana po otrzymaniu faktury, tzn. nie oblicza się terminu płatności. W tym przewodniku po zadaniach wybierz opcję „Bieżący miesiąc”.  
-14. Wybierz opcję **Dzień płatności**, jeśli w obliczeniach jest brany pod uwagę określony dzień tygodnia lub data. W zależności od warunków płatności można wprowadzić ilość w miesiącach lub dniach. Alternatywnie można użyć opcji **Harmonogram płatności** lub **Dzień płatności**, aby „dodać” dni na końcu metody płatności. Jeśli terminem płatności zawsze będzie 10. dzień następnego miesiąca, w opcji **Dzień płatności** zaznacz wartość 10. 
+13. Wybierz **metodę płatności** taką jak **COD**, **netto**, **bieżącego miesiąca** itp. **Metoda płatności** służy do definiowania początku, w jaki sposób będą obliczane kwoty należne. Na przykład opcja **Netto** jest używana, jeśli termin płatności jest zawsze określoną liczbą miesięcy lub dni po dacie faktury. Opcja **COD** może być używana, gdy płatność jest wymagana po otrzymaniu faktury, tzn. nie oblicza się terminu płatności. W tym przewodniku po zadaniach wybierz opcję **Bieżący miesiąc**.  
+14. Wybierz opcję **Dzień płatności**, jeśli w obliczeniach jest brany pod uwagę określony dzień tygodnia lub data. W zależności od warunków płatności można wprowadzić ilość w miesiącach lub dniach. Alternatywnie można użyć opcji **Harmonogram płatności** lub **Dzień płatności**, aby „dodać” dni na końcu **metody płatności**. Jeśli terminem płatności zawsze będzie 10. dzień następnego miesiąca, w opcji **Dzień płatności** zaznacz wartość 10. Jeśli używasz **kalendarza płatności**, możesz określić, w jaki sposób będzie określana data wymagalności, gdy obliczona data wypada w dniu wolnym od pracy. Początkowy termin płatności jest obliczany w dniach kalendarzowych. Jeśli wyliczona data przypada na dzień niepracujący, możesz zmienić wyliczony termin na następny dzień roboczy lub wcześniejszy dzień roboczy.
 15. Kliknij przycisk **Zapisz**.
 16. Zamknij stronę.
 17. Wybierz kolejno opcje **Rozrachunki z odbiorcami > Ustawienia płatności > Rabaty gotówkowe**.
@@ -50,7 +50,7 @@ Ta procedura określa konfigurację rabatu gotówkowego i terminu płatności. W
 22. W polu **Dni** wpisz liczbę dni używanych do obliczania daty rabatu gotówkowego. Jeśli jest wybrana zasada **Netto**, w celu obliczenia daty rabatu gotówkowego liczba dni zostanie dodana do daty faktury.  
 23. W polu **Procent rabatu** wprowadź wartość procentową rabatu gotówkowego.
 24. W polu **konto główne rabatów odbiorcy** wprowadź konto główne, na którym będzie księgowany rabat gotówkowy dla faktur odbiorców.
-25. W polu **Konta przeciwstawne rabatów** zaznacz opcję. W przypadku wybrania opcji „Konta w wierszach faktury” rabat gotówkowy będzie księgowany na tym samym koncie głównym środków trwałych/wydatków z wierszy faktury od dostawcy. Jeśli wybierzesz opcję „Użyj konta głównego dla faktur od dostawcy”, rabat gotówkowy będzie księgowany na koncie głównym zdefiniowanym w ustawieniu „Konto główne dla faktur od dostawcy”. W tym przykładzie wybierz opcję „Użyj konta głównego dla faktur od dostawcy”. 
+25. W polu **Konta przeciwstawne rabatów** zaznacz opcję. W przypadku wybrania opcji „Konta w wierszach faktury” rabat gotówkowy będzie księgowany na tym samym koncie głównym środków trwałych/wydatków z wierszy faktury od dostawcy. Jeśli wybierzesz opcję **Użyj konta głównego dla faktur od dostawcy**, rabat gotówkowy będzie księgowany na koncie głównym zdefiniowanym w ustawieniu **Konto główne dla faktur od dostawcy**. W tym przykładzie wybierz opcję **Użyj konta głównego dla faktur od dostawcy**. 
 26. W polu **konto główne rabatów dostawcy** wprowadź konto główne, na którym będzie księgowany rabat gotówkowy dla faktur dostawcy.
 27. Kliknij przycisk **Zapisz**.
 

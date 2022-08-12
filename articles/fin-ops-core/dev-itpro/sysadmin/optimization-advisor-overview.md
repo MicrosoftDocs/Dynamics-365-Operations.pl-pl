@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: sericks
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 1dd66e27098b4125b03c4fe6b52825afe2ff34cf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fb71453c37572c4956d98d4309d3526a7fbc1124
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865869"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109049"
 ---
 # <a name="optimization-advisor-overview"></a>Doradca optymalizacji — omówienie
 
@@ -28,7 +28,7 @@ ms.locfileid: "8865869"
 
 W tym artykule opisano, jak za pomocą Doradcy optymalizacji uzyskać optymalną konfigurację aplikacji finansowych i operacyjnych.
 
-## <a name="overview"></a>Przegląd
+## <a name="overview"></a>Omówienie
 
 Niepoprawna konfiguracja i instalacja modułu mogą negatywnie wpływać na dostępność funkcji aplikacji, wydajność systemu oraz przebieg procesów biznesowych. Również jakość danych biznesowych (na przykład poprawność, kompletność i czystość danych) wpływają na wydajność systemu, zdolność podejmowania decyzji w organizacji, wydajność pracy itd.
 
@@ -44,7 +44,7 @@ Do możliwości optymalizacji stosuje się standardowe zasady zabezpieczeń. Na 
 
 Podczas wykonywania operacji na niektórych możliwościach optymalizacji system oblicza wpływ możliwości pod względem skrócenia czasu wykonywania procesów biznesowych. Niestety, ta funkcja nie jest dostępna dla wszystkich możliwości optymalizacji.
 
-Aby dowiedzieć się więcej o Konsultancie optymalizacji, obejrzyj krótki film [Doradca optymalizacji w Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=MRsAzgFCUSQ).
+Aby dowiedzieć się więcej o Konsultancie optymalizacji, obejrzyj krótki film [Doradca optymalizacji w Dynamics 365 Finance](https://www.youtube.com/watch?v=MRsAzgFCUSQ).
 
 ## <a name="optimization-rules"></a>Reguły optymalizacji
 
@@ -90,7 +90,7 @@ Aby zdezaktywować weryfikację przestrzegania określonych reguł, wybierz moż
 
 [Tworzenie reguł dla Doradcy optymalizacji](./create-rules-optimization-advisor.md)
 
-[Doradca optymalizacji w Dynamics 365 for Finance and Operations (film)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
+[Doradca optymalizacji w Dynamics 365 Finance (wideo)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

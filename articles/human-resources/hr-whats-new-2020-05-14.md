@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-05-14
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 308dd4fc75ab656359e80b518cec00fc74d42ea6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5a139134fe5122e29b7087bca5ff2ee998fd4669
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8852964"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070151"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-14-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (14 maja 2020 r.)
 
@@ -31,7 +31,7 @@ W tym artykule opisano nowe oraz zmienione funkcje dostępne w Dynamics 365 Huma
 
 ## <a name="platform-changes"></a>Zmiany w platformie
 
-Zmiany w platformie są uwzględniane w wydaniu z danego tygodnia. Aby uzyskać więcej informacji, zobacz temat [Aktualizacje platformy dla wersji 10.0.10 aplikacji Finanse i Działania (maj 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md). Ta wersja zawiera poprawki usterek i zmiany w zapisanych widokach.
+Zmiany w platformie są uwzględniane w wydaniu z danego tygodnia. Aby uzyskać więcej informacji, zobacz temat [Aktualizacje platformy dla wersji 10.0.10 aplikacji finansowych i operacyjnych(maj 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md). Ta wersja zawiera poprawki usterek i zmiany w zapisanych widokach.
  
 ## <a name="ensure-dataverse-picklists-are-consistent-with-leave-enums-436343"></a>Upewnij się, że listy wyboru usługi Dataverse są spójne z wyliczeniami nieobecności (436343)
 

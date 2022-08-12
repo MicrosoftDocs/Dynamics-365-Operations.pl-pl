@@ -1,5 +1,5 @@
 ---
-title: Uzyskiwanie pomocy technicznej dotyczącej aplikacji Finanse i Działania lub usługi Lifecycle Services (LCS)
+title: Uzyskiwanie pomocy technicznej dotyczącej aplikacji finansowych i operacyjnych lub usługi Lifecycle Services (LCS)
 description: W tym artykule opisano, jak uzyskać pomoc dotyczącą aplikacji finansowych i operacyjnych lub usług Microsoft Dynamics Lifecycle Services (LCS).
 author: EricMoos
 ms.date: 08/02/2021
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 278a62c0393be503352db39dddeca1095e7e4a5a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f36709ddc2a64c31fe3c2d63fbe073fd9bc159bb
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866439"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103412"
 ---
-# <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Uzyskiwanie pomocy technicznej dotyczącej aplikacji Finanse i Działania lub usługi Lifecycle Services (LCS)
+# <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Uzyskiwanie pomocy technicznej dotyczącej aplikacji finansowych i operacyjnych lub usługi Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
 
@@ -51,7 +51,7 @@ W tym artykule opisano, jak uzyskać pomoc dotyczącą aplikacji finansowych i o
 <td>W <a href="https://lcs.dynamics.com/">LCS</a> za pomocą narzędzia <strong>Wyszukiwanie problemów</strong> można szybko wyszukać artykuły bazy wiedzy Microsoft Knowledge Base (KB), poprawki i obejścia zgłoszonych problemów wykrytych w programie. Możesz zobaczyć, które zgłoszone problemy są w trakcie naprawiania dla określonego obszaru funkcjonalnego, a które już zostały naprawione. Aby uzyskać więcej informacji, zobacz <a href="issue-search-lcs.md">Wyszukiwanie problemów (Lifecycle Services, LCS)</a>.</td>
 </tr>
 <tr>
-<td>Uzyskaj pomoc techniczną w ramach aplikacji Finanse i Działania.</td>
+<td>Uzyskaj pomoc techniczną w ramach aplikacji finansowych i operacyjnych.</td>
 <td>Wybierz przycisk <strong>Pomoc</strong> (<strong>?</strong>) znajdujący się w prawym górnym rogu aplikacji, a następnie wybierz opcję <strong>Pomoc techniczna</strong>. Problemy są raportowane na karcie <strong>Aktywnych problemów</strong> w LCS. Administratorzy mogą określić, czy powinni świadczyć pomoc techniczną w firmie, czy też wysłać problemy do rozwiązania Microsoft.</td>
 </tr>
 <tr>
@@ -72,3 +72,4 @@ W tym artykule opisano, jak uzyskać pomoc dotyczącą aplikacji finansowych i o
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

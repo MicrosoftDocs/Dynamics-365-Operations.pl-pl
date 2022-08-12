@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 976a86aee75581d1afa764bea049b6c0eaecf9f3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f789fd86904c1e625be8fc5be3bfe456fe0659b4
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888931"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068757"
 ---
 # <a name="share-electronic-reporting-er-configurations-in-regulatory-configuration-services-rcs-global-repository-with-external-organizations"></a>Udostępnianie konfiguracji Raportowania elektronicznego (ER) w repozytorium globalnym usług Microsoft Regulatory Configuration Services (RCS)organizacjom zewnętrznym
 
@@ -36,7 +36,7 @@ Poniższe procedury opisują sposób, w jaki użytkownik RCS może udostępniać
 
 Należy również upewnić się, że dla firmy aprowizowano środowisko RCS.
 
-1. W module Finanse i Operacje przejdź do opcji **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
+1. W module aplikacji finansowych i operacyjnych przejdź do opcji **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
 2. Jeśli w firmie nie aprowizowano środowiska RCS, wybierz pozycję zewnętrzną **Regulatory services — Konfiguracja** i postępować zgodnie z instrukcjami w celu aprowizowania środowiska RCS.
 
 Jeśli już aprowizowano środowisko RCS, należy skorzystać z adresu URL strony, aby uzyskać do niego dostęp, wybierając opcję logowania.

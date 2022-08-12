@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 172f49c13c183eb4df986dc3e30ff3955bc1a605
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 838e3affd4e782bea463638e28da3943329671d4
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860994"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111865"
 ---
 # <a name="target-entities"></a>Jednostki docelowe
 
@@ -30,7 +30,7 @@ ms.locfileid: "8860994"
 
 W obszarze roboczym **Zarządzanie danymi** można uzyskać przegląd jednostek docelowych, powiązanych typów jednostek i tabel przemieszczania związanych z modułem **Zarządzanie składnikami majątku**. 
 
-1. Kliknij przycisk **Finance and Operations** w lewym górnym rogu ekranu, a następnie kliknij pozycję **Zarządzanie danymi**.
+1. Kliknij przycisk **aplikacji finansowych i operacyjnych** w lewym górnym rogu ekranu, a następnie kliknij pozycję **Zarządzanie danymi**.
 
 2. W sekcji **Import/eksport** kliknij pozycję **Jednostki danych**. 
 

@@ -11,18 +11,16 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: cbe6bff6fab96900b8bd4e112a8858363fff86d1
-ms.sourcegitcommit: 9870b773a2ea8f5675651199fdbc63ca7a1b4453
+ms.openlocfilehash: 463a66002ec7a6536c9ff829f9ea2c3734138eae
+ms.sourcegitcommit: 6221a25f81aa83ab335de7cb6b6c3014dbec0116
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9013563"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "9177157"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Wprowadzenie do Globalnego księgowania zapasów
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!--KFM: Preview until 4/30/2022 -->
 
 Globalne księgowanie zapasów pozwala na prowadzenie wielu kont inwentaryzacyjnych w utworzonych Globalnych księgach zapasów. Poszczególne księgi Globalnych ksiąg zapasów są kojarzone z *konwencją*. Konwencja jest zbiorem następujących rodzajów zasad (polityki) rachunkowości:
 
@@ -69,28 +67,34 @@ Aby można było włączyć funkcję dodatku, należy ją zintegrować z Microso
 
 Aby uzyskać więcej informacji, zobacz temat [Włączanie po wdrożeniu środowiska](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md#enable-after-deploy).
 
-## <a name="install-the-add-in"></a><a name="install"></a>Instalacja aplikacji dodatkowych
+## <a name="install-or-update-the-add-in-and-solution"></a><a name="install"></a>Zainstaluj lub zaktualizuj dodatek i rozwiązanie
 
-Wykonaj poniższe kroki, aby zainstalować dodatek, który umożliwi korzystanie z programu Globalne księgowanie zapasów.
+Użyj poniższej procedury, aby zainstalować lub zaktualizować dodatek i rozwiązanie Global Inventory Accounting. Część procedury, którą powinieneś wykonać, zależy od tego, czy instalujesz po raz pierwszy, czy też chcesz zaktualizować rozwiązanie dla istniejącej instalacji.
+
+- Jeśli nigdy wcześniej nie instalowałeś dodatku, wykonaj pełną procedurę instalacji zarówno dodatku, jak i rozwiązania.
+- Jeśli używasz już Globalnej księgi zapasów, ale musisz zaktualizować rozwiązanie w[ centrum administracyjnym Power Platform](https://admin.powerplatform.microsoft.com), wykonaj tylko krok 6 i pomiń wszystkie pozostałe kroki.
+
+Aby zainstalować lub zaktualizować dodatek i rozwiązanie:
 
 1. Zaloguj się w [LCS](https://lcs.dynamics.com/Logon/Index).
 1. Otwórz środowisko usługi LCS, w którym chcesz dodać usługę.
 1. Przejdź do **Pełne szczegóły**.
 1. Przejdź do **Integracji Power Platform** i wybierz pozycję **Ustawienia**.
 1. W oknie dialogowym **Ustawienia środowiska Power platform** zaznacz pole wyboru, a następnie wybierz opcję **Ustawienia**. Zwykle konfiguracja trwa od 60 do 90 minut.
-1. Po zakończeniu konfigurowania środowiska Microsoft Power Platform zaloguj się do [centrum administracyjnego platformy Power Platform](https://admin.powerplatform.microsoft.com), a następnie zainstaluj dodatek Globalne księgowanie zapasów, wykonując następujące kroki:
-   1. Wybierz środowisko, w którym chcesz zainstalować dodatek.
+1. Po zakończeniu konfigurowania środowiska Microsoft Power Platform zaloguj się do [centrum administracyjnego platformy Power Platform](https://admin.powerplatform.microsoft.com), a następnie zainstaluj lub zaktualizuj dodatek Globalne księgowanie zapasów, wykonując następujące kroki:
+   1. Wybierz środowisko, w którym chcesz zainstalować lub zaktualizować rozwiązanie.
    1. Wybierz **Aplikacje Dynamics 365**.
    1. Wybierz **Zainstaluj aplikację**.
    1. Wybierz pozycję **Księgowanie magazynu globalnego usługi Dynamics 365**.
    1. Wybierz przycisk **Dalej**, aby zainstalować.
-1. Wróć do środowiska LCS. Na skróconej karcie **Dodatki środowiska** wybierz opcję **Zainstaluj nowy dodatek**.
+1. Po zakończeniu instalacji rozwiązania wróć do środowiska LCS. Na skróconej karcie **Dodatki środowiska** wybierz opcję **Zainstaluj nowy dodatek**.
 1. Wybierz **Globalne księgowanie zapasów**.
 1. Postępuj zgodnie z instrukcją instalacji i zaakceptuj warunki.
 1. Wybierz **Zainstaluj**.
 1. Na skróconej karcie **Dodatki środowiska** należy sprawdzić, czy jest instalowana usługa Globalnego księgowania zapasów. Po kilku minutach stan powinien ulec zmianie z *Instalowane* na *Zainstalowane*. (Aby zobaczyć tę zmianę, konieczne może być odświeżenie strony.) W tym momencie Globalnego księgowania zapasów jest gotowa do użycia.
 
 Jeśli domyślnym językiem instalacji Dataverse nie jest język angielski, należy wykonać następujące kroki:
+
 1. Przejdź do **Ustawienia zaawansowane \> Administracja \> Języki**.
 1. Wybierz *Język angielski* (*LanguageCode=1033*) i wybierz opcję **Zastosuj**.
 

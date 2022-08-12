@@ -1,7 +1,7 @@
 ---
 title: Rozwiązywanie problemów z importowaniem pliku wyciągu bankowego
 description: W tym artykule wyjaśniono, jak rozwiązać problemy spowodowane niewielkimi różnicami w pliku wyciągu bankowego.
-author: panolte
+author: angelad116
 ms.date: 03/29/2021
 ms.topic: article
 ms.prod: ''
@@ -12,19 +12,22 @@ ms.reviewer: kfend
 ms.custom: 141273
 ms.assetid: 3ee2f32b-02aa-420b-8990-e6aa5fc6bda3
 ms.search.region: global
-ms.author: panolte
+ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 422b2df6c4de3a948b0e62bfb70f99b12e04a8f9
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 44658ea48b9f7dae76c34c5f3d8828c9e8c4ac32
+ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711181"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "9151769"
 ---
 # <a name="bank-statement-file-import-troubleshooting"></a>Rozwiązywanie problemów z importowaniem pliku wyciągu bankowego
 
 [!include [banner](../includes/banner.md)]
+
+>[!NOTE]
+>Ta funkcja zostanie wycofana we wrześniu 2022 roku, nowi użytkownicy powinni korzystać z raportów elektronicznych.
 
 Ważne jest, aby plik wyciągu bankowego z banku pracował do układu obsługiwanego przez Microsoft Dynamics 365 Finance. Ze względu na ścisłe normy dotyczące wyciągów bankowych większość integracji będzie działać poprawnie. Jednak czasami pliku wyciągu nie można zaimportować lub ma on nieprawidłowe wyniki. Zazwyczaj te problemy są powodowane przez małe różnice w pliku wyciągu bankowego. W tym artykule wyjaśniono, jak skorygować te różnice i rozwiązać problemy.
 
@@ -39,7 +42,7 @@ Po próbie zaimportowania pliku wyciągu bankowego przejdź do historii zadania 
 Porównaj definicję układu pliku bankowego z definicją importu w programie Finance i zapisz wszelkie różnice w polach i elementach. Porównaj plik wyciągu bankowego z powiązanym przykładowym plikiem programu Finance. W plikach ISO20022 wszelkie różnice powinny być dobrze widoczne.
 
 ## <a name="time-zone-differences-on-imported-bank-statements"></a>Różnice stref czasowych dla zaimportowanych wyciągów bankowych
-Wartości daty i godziny w pliku importu mogą się różnić od wartości daty i godziny wyświetlanej w module Finance and Operations. Aby uniknąć tej rozbieżności, należy wprowadzić preferencję dotyczącą strefy czasowej na stronie **Konfigurowanie źródeł danych**. Aby uzyskać więcej informacji, zapoznaj się z tematem [Konfigurowanie zaawansowanego procesu importu uzgodnień bankowych](set-up-advanced-bank-reconciliation-import-process.md).
+Wartości daty i godziny w pliku importu mogą się różnić od wartości daty i godziny wyświetlanej w aplikacjach finansowych i operacyjnych. Aby uniknąć tej rozbieżności, należy wprowadzić preferencję dotyczącą strefy czasowej na stronie **Konfigurowanie źródeł danych**. Aby uzyskać więcej informacji, zapoznaj się z tematem [Konfigurowanie zaawansowanego procesu importu uzgodnień bankowych](set-up-advanced-bank-reconciliation-import-process.md).
 
 ## <a name="transformations"></a>Przekształcenia
 Zazwyczaj zmiany należy dokonać w jednym z trzech przekształceń. Każde przekształcenie jest zapisywane dla określonego standardu.
@@ -109,3 +112,4 @@ W tabeli poniżej przedstawiono przykłady definicji układów technicznych plik
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

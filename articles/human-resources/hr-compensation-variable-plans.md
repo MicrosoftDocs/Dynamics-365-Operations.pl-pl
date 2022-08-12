@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 22788dff1ee29b6920426d8ff00d412c3d5564e0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f2f51a095a23b651dca645b14e652519f20037e2
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853082"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070567"
 ---
 # <a name="create-variable-compensation-plans"></a>Tworzenie planów wynagrodzeń o zmiennej wysokości
 
@@ -42,7 +42,11 @@ Obliczanie kwot wynagrodzeń o zmiennej wysokości dla pracowników może być o
 Opcjonalnie firma może skonfigurować **Reguł wypłat**. **Reguły wypłat** opisują sposób alokacji nagród o zmiennej wysokości w czasie. Na przykład reguła wypłat może zawierać informację, że pracownik będzie otrzymywać 25 procent nagrody co roku przez następne 4 lata. Reguły wypłat mają wyłącznie charakter informacyjny.
 
 ## <a name="variable-compensation-plans"></a>Systemy wynagrodzeń o zmiennej wysokości
-**Plan wynagrodzeń o zmiennej wysokości** zawiera reguły, metody obliczania i domyślne wartości do obliczania wynagrodzenia o zmiennej wysokości dla zarejestrowanych pracowników. Po utworzeniu systemu wynagrodzeń o zmiennej wysokości należy ustawić typ wynagrodzenia o zmiennej wysokości. Typ wynagrodzenia o zmiennej wysokości określa, czy system oblicza kwotę w walucie, czy liczbę jednostek jako nagrody. Należy także ustawić metodę obliczania:
+**Plan wynagrodzeń o zmiennej wysokości** zawiera reguły, metody obliczania i domyślne wartości do obliczania wynagrodzenia o zmiennej wysokości dla zarejestrowanych pracowników. Po utworzeniu systemu wynagrodzeń o zmiennej wysokości należy ustawić typ wynagrodzenia o zmiennej wysokości. Typ wynagrodzenia o zmiennej wysokości określa, czy system oblicza kwotę w walucie, czy liczbę jednostek jako nagrody. 
+
+Parametr **Zmniejsz dostęp do wybranych ról** ogranicza dostęp do planu wynagrodzeń do wybranych ról zabezpieczeń, które zostały przypisane do tego planu w Human Resources. Na przykład, gdy tworzysz plany wynagrodzeń dla kadry kierowniczej i nie powinny być one widoczne dla wszystkich ról związanych z HR, możesz użyć tego parametru, aby ograniczyć dostęp do tych planów wynagrodzeń. 
+
+Należy także ustawić metodę obliczania:
 
 -   **Punkt w czasie** — Obliczenia nagrody o zmiennej wysokości opiera się na stałym wynagrodzeniu, które miał pracownik w danym dniu. Data ta jest określona w zdarzeniu procesu podczas przetwarzania nowych kwot wynagrodzenia.
 -   **Złożona** — Kwota nagrody jest obliczana dla każdej stawki płacy unikatowy stałego wynagrodzenia, które miał pracownik między datą początkową cyklu a datą końcową zdarzenia procesu. Stawki są następnie dodawane w celu ustalenia końcowej nagrody. Na przykład podczas cyklu pracownik został przeniesiony do na inne stanowisko z inną płacą. W takim przypadku nagroda o zmiennej wysokości jest korygowana na podstawie czasu obowiązywania każdej stawki płacy danego pracownika.

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4a4933c429982d1371c7c9a9412789ae08e08f43
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5a4eb70144957ecdbeba4246fb8c7cd6a20cb08c
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8934708"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108338"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Obsługuj sparametryzowane wywołania źródeł danych ER typu pola obliczeniowego
 
@@ -36,7 +36,7 @@ Aby wykonać przykłady opisane w tym artykule, musisz mieć następujące upraw
     - Konsultant funkcjonalny raportowania elektronicznego
     - Administrator systemu
 
-- Dostęp do wystąpienia Regulatory Configuration Service (RCS), które zostało zainicjowane dla tej samej dzierżawy co Finance and Operations dla jednej z następujących ról:
+- Dostęp do wystąpienia Regulatory Configuration Services (RCS), które zostało zainicjowane dla tej samej dzierżawy co aplikacje finansowe i operacyjne dla jednej z następujących ról:
 
     - Deweloper raportowania elektronicznego
     - Konsultant funkcjonalny raportowania elektronicznego
@@ -84,7 +84,7 @@ W tej procedurze utworzysz wymagane konfiguracje ER dla przykładowej firmy Litw
             - Suma wartości podatku.
             - Minimalna wartość zastosowanej stawki podatkowej.
 
-    Mapowanie modelu w tej konfiguracji implementuje podstawowy model danych dla dowolnego formatu ER utworzonego dla tego modelu i wykonywany w Finance and Operations. W wyniku tego zawartość źródeł danych **podatków** i **Gr** jest udostępniana dla formatów ER, takich jak abstrakcyjne źródła danych.
+    Mapowanie modelu w tej konfiguracji implementuje podstawowy model danych dla dowolnego formatu ER utworzonego dla tego modelu i wykonywany w aplikacjach finansowych i operacyjnych. W wyniku tego zawartość źródeł danych **podatków** i **Gr** jest udostępniana dla formatów ER, takich jak abstrakcyjne źródła danych.
 
     ![Strona projektanta mapowania modelu pokazująca źródła danych podatkowych i Gr.](media/er-calculated-field-type-01.png)
 
@@ -343,3 +343,4 @@ Przejrzane konfiguracje można importować ze RCS za pomocą repozytorium ER typ
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

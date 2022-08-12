@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 28ebf1b4fb966fd6801e75e7b3a6c8741114938d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4f379b3cdb6830f989199afde7d751842047df79
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863687"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070298"
 ---
 # <a name="planned-cross-docking"></a>Planowany przeładunek kompletacyjny
 
@@ -118,7 +118,7 @@ Planowany przeładunek kompletacyjny jest implementowany jako metoda księgowani
     - **Źródło dostawy:** *Zamówienie zakupu*
 
 > [!NOTE]
-> Za pomocą specjalnego zapytania można kontrolować sposób używania określonego szablonu przeładunku kompletacyjnego. Zapytanie dla szablonów przeładunku kompletującego ma tylko tabelę *InventTable* (pozycje) i wewnętrznie sprzężoną tabelę *WHSInventTable* (pozycje WHS). Jeśli chcesz dodać inne tabele do zapytania, możesz do nich dołączyć, używając tylko *sprzężeń typu istnieje* lub *sprzężeń typu nie istnieje*. Podczas filtrowania w tabelach połączonych rekord z tabeli głównej jest pobierany dla każdego pasującego rekordu w tabeli połączonej. Jeśli typ sprzężenia to *sprzężenie istnieje*, wyszukiwanie kończy się po znalezieniu pierwszego dopasowania. Na przykład jeśli tabela wiersza zamówienia sprzedaży zostanie przyłączona do tabeli zapasów, system sprawdza poprawność i zwraca towary, dla których co najmniej jeden wiersz zamówienia sprzedaży ma zdefiniowany warunek. Zasadniczo dane są pobierane z tabeli nadrzędnej (pozycje), a nie z tabeli podrzędnej (wiersz zamówienia sprzedaży). W związku z tym filtrowanie według dokumentów źródłowych, takich jak wiersze zamówienia sprzedaży lub klientów, nie może być przeprowadzone od razu po zainstalowaniu produktu.
+> Za pomocą specjalnego zapytania można kontrolować sposób używania określonego szablonu przeładunku kompletacyjnego. Zapytanie dla szablonów przeładunku kompletującego ma tylko tabelę *InventTable* (pozycje) i wewnętrznie sprzężoną tabelę *WHSInventTable* (pozycje WMS). Jeśli chcesz dodać inne tabele do zapytania, możesz do nich dołączyć, używając tylko *sprzężeń typu istnieje* lub *sprzężeń typu nie istnieje*. Podczas filtrowania w tabelach połączonych rekord z tabeli głównej jest pobierany dla każdego pasującego rekordu w tabeli połączonej. Jeśli typ sprzężenia to *sprzężenie istnieje*, wyszukiwanie kończy się po znalezieniu pierwszego dopasowania. Na przykład jeśli tabela wiersza zamówienia sprzedaży zostanie przyłączona do tabeli zapasów, system sprawdza poprawność i zwraca towary, dla których co najmniej jeden wiersz zamówienia sprzedaży ma zdefiniowany warunek. Zasadniczo dane są pobierane z tabeli nadrzędnej (pozycje), a nie z tabeli podrzędnej (wiersz zamówienia sprzedaży). W związku z tym filtrowanie według dokumentów źródłowych, takich jak wiersze zamówienia sprzedaży lub klientów, nie może być przeprowadzone od razu po zainstalowaniu produktu.
 
 ### <a name="create-a-work-class"></a>Tworzenie klasy roboczej
 

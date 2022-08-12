@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: vastrup
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 04cc8b4272bcedc7db27b0d76eccdc6375641933
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 129e4e1d44018da206d0e797dcfd389c9e6adeba
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8904289"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206205"
 ---
 # <a name="regulatory-updates"></a>Aktualizacje wymogów prawnych
 
@@ -37,29 +37,22 @@ Aktualizacje dotyczące środków ustawowych, które zostały wydane w ramach co
 
 Aby uzyskać informacje o najnowszych planach w zakresie aktualizacji wymaganych przepisami prawa, zapoznaj się z poniższą tabelą.   
 
-|Kraj|Data zwolnienia|Wersja wydania|Aktualizacje wymagane przepisami prawa|
+|Kraj|Data zwolnienia|Wersja wydania
+  |Aktualizacje wymagane przepisami prawa|
 |--------------------|---------------|-------|-------| 
-|      Brazylia         |   2021 grudnia         | 10.0.25         |    Funkcja fiskalna SPED układ 2022  |
-|      Brazylia         |   2022 marca    | 10.0.25HF, 10.0.26HF, 10.0.27        |    Kolekcja ICMS-DIFAL w operacjach dotyczy podatników nie opodatkowania (nr uzupełniający 190/22)  |
-|      Brazylia         |   2022 marca         | 10.0.26HF         |    Sped Fiscal – nowe pola w rekordzie C500 (34-40) dla przychodzących dokumentów fiskalnych  |
+|      Brazylia         |   2022 marca    | 10.0.27        |    Kolekcja ICMS-DIFAL w operacjach dotyczy podatników nie opodatkowania (nr uzupełniający 190/22)  |
 |      Brazylia         |   2022 marca         | 10.0.27         |    NF-e NT2021.004 v1.00 – aktualizacja układu i zasad walidacji  |
 |      Brazylia         |   2022 marca         | 10.0.27         |    NF-e NT2021.004 v1.00 – aktualizacja układu i zasad walidacji – Retail  |
-|      Dania         |   2022 stycznia  | 10.0.25HF         |    Podgląd deklaracji podatku VAT w programie Excel |
-|      Finlandia         |   2022 stycznia  | 10.0.26         |    Deklaracja VAT w TXT i podgląd w Excelu |
-|      Francja   |   Listopad 2021 | 10.0.25         |    Francuski eksport archiwizacji danych (FEC) — załącznik „Brakujące numery uzasadnienia” |
-|      Włochy         |   2022 lutego | 10.0.25HF, 10.0.26| Unique Certification – 2022 w Dynamics 365 Finance  |
-|      Litwa|   2022 lutego | 10.0.25HF, 10.0.26HF, 10.0.27 | i.SAF zmienia się od 2022-01-01 w Dynamics 365 Finance  |
-|      Malezja|   2022 lutego |10.0.26HF | Deklaracja podatkowa SST-02. Zmiany w pudełkach  |
-|      Meksyk         |   2022 stycznia      | 10.0.26      |   MX – CFDI wersja 4.0 (anulowanie)  |
-|      Meksyk         |   2022 marca      | 10.0.25, 10.0.26, 10.0.26      |   Formaty CFDI wersja 4.0 (faktury i płatności)  |
+|      Brazylia         |   2022 kwietnia         | 10.0.27HF, 10.0.28         |    SPED ECF - LAYOUT 8  |
+|      Europa Wschodnia         |   Lipiec 2022         | 10.0.27HF, 10.0.28HF, 10.0.29         |    Zestawienie księgi głównej według konta głównego  |
+|      Litwa|   2022 lutego | 10.0.27 | i.SAF zmienia się od 2022-01-01 w Dynamics 365 Finance  |
+|      Meksyk         |   2022 marca      | 10.0.27      |   Formaty CFDI wersja 4.0 (faktury i płatności)  |
 |      Meksyk         |   2022 lutego      | 10.0.27      |   Od 1 stycznia 2022 roku wchodzi w życie wersja 4.0 CFDI, z okresem współistnienia pomiędzy wersją 3.3 a wersją 4.0, który trwa od 1 stycznia do 30 czerwca 2022 roku.  |
-|      Meksyk         |   2022 marca      | 10.0.25, 10.0.26, 10.0.27      |   Formaty CFDI wersja 4.0 (potrącenia)  |
-|      Polska          |   2022 kwietnia     | 10.0.25HF, 10.0.26HF, 10.0.27HF     |   JPK_FA wersja 4 od 1 kwietnia 2022 rokuJPK_V7M – nowa wersja schematu od stycznia 2022 roku |
-|      Rosja          |   2022 stycznia     | 10.0.25    |   Włącz docelową funkcję raportowania elektronicznego (ER) do przechowywania rosyjskich dokumentów księgowych (dokumentów podstawowych i raportów księgowych)|
-|      Rosja          |   2021 grudnia     | 10.0.25    |   Integracja Moduł środków trwałych (Rosja) z modułem zarządzania aktywami|
-|      Rosja          |   Marzec – kwiecień 2022 r.     | 10.0.25, 10.0.26    |  Nowy format faktury transportowej (Dekret Rządu N 2116 30.11.2021)|
-|      Hiszpania      |   2022 marca| 10.0.25HF, 10.0.26HF, 10.0.27 | Deklaracja VAT Model 303 zmiany 1 stycznia 2022 r. w Dynamics 365 Finance|
-
+|      Meksyk         |   2022 marca      | 10.0.27      |   Formaty CFDI wersja 4.0 (potrącenia)  |
+|      Polska          |   2022 kwietnia     | 10.0.27HF, 10.0.28     |   JPK_FA wersja 4 od 1 kwietnia 2022 rokuJPK_V7M – nowa wersja schematu od stycznia 2022 roku |
+|      Rosja          |   2022 czerwca     | 10.0.27    |  Raport o działaniach z wykorzystaniem produktów identyfikowalnych (w zakresie odpisywania zakupionych towarów identyfikowalnych, takich jak monitory, lodówki i meble biurowe na własny użytek)|
+|      Singapur      |   Lipiec 2022| 10.0.27HF, 10.0.28HF, 10.0.29 | Plik audytu IRAS — IAF w formacie TXT|
+|      Hiszpania      |   2022 marca| 10.0.27 | Deklaracja VAT Model 303 zmiany 1 stycznia 2022 r. w Dynamics 365 Finance|
 
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby

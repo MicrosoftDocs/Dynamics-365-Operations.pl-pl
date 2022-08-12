@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 51165db8d15f0a57fd9bc1649dc6e3ca72875236
-ms.sourcegitcommit: 1fa1ac1fa25e977e98bc02ed5d9d39bd3a7a28d7
+ms.openlocfilehash: 16c77d719171e8e5cfef71178f8917d462f6d84b
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "8945812"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069931"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Usunięte lub wycofane funkcje Platform
 
@@ -30,7 +30,7 @@ W tym artykule opisano funkcje, które zostały usunięte lub są przeznaczone d
 
 Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych funkcji we własnym planowaniu. 
 
-Szczegółowe informacje o obiektów w aplikacji Finanse i Działania można znaleźć w [raportach z wykazami parametrów technicznych](/dynamics/s-e/global/axtechrefrep_61). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach aplikacji Finanse i Działania.
+Szczegółowe informacje o obiektów w aplikacji finansowych i operacyjnych można znaleźć w [raportach z wykazami parametrów technicznych](/dynamics/s-e/global/axtechrefrep_61). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach aplikacji finansowych i operacyjnych.
 
 
 ## <a name="feature-deprecation-effective-june-2022"></a>Wycofanie funkcji z użytku w czerwcu 2022 r.
@@ -41,7 +41,7 @@ Szczegółowe informacje o obiektów w aplikacji Finanse i Działania można zna
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Pozbywamy się aplikacji mobilnej i platformy finansów i operacji (Dynamics 365), aby skonsolidować je z jedną platformą mobilną, którą jest Power Apps. |
 | **Zamieniona przez inną funkcję?**   | Tak, dzięki integracji z Power Platform można zbudować mobilne doświadczenia z danymi z aplikacji finansów i operacji. Zobacz [wpis w blogu](https://cloudblogs.microsoft.com/dynamics365/it/2022/06/03/finance-and-operations-dynamics-365-mobile-app-to-be-deprecated/) oraz artykuł [Tworzenie doświadczeń mobilnych](../power-platform/build-mobile-experiences.md) w celu uzyskania dalszych informacji. |
-| **Powiązane obszary produktów**         | Aplikacje Finanse i Działania |
+| **Powiązane obszary produktów**         | Aplikacje finansowe i operacyjne |
 | **Opcja wdrażania**              | Wszystko |
 | **Stan**                         | Wycofane. Data zakończenia wsparcia przewidziana jest na październik 2024 roku. |
 
@@ -67,7 +67,7 @@ Szczegółowe informacje o obiektów w aplikacji Finanse i Działania można zna
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Usuwamy obsługę adresów URL XML, ponieważ została ona uznana za potencjalną lukę w zabezpieczeniach. Oznacza to, że zewnętrzne zasoby związane z plikami XML nie będą już rozwiązywane.  |
 | **Zamieniona przez inną funkcję?**   | Nie |
-| **Powiązane obszary produktów**         | Aplikacje Finanse i Działania |
+| **Powiązane obszary produktów**         | Aplikacje finansowe i operacyjne |
 | **Opcja wdrażania**              | Wszystko |
 | **Stan**                         | Wycofane. |
 
@@ -79,7 +79,7 @@ Szczegółowe informacje o obiektów w aplikacji Finanse i Działania można zna
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Obsługa skryptów XSLT w zarządzaniu danymi jest przestarzała, aby poprawić bezpieczeństwo i ochronę danych w aplikacjach finansowych i operacyjnych.  |
 | **Zamieniona przez inną funkcję?**   | Nie Klienci i ISV powinni rozważyć ponowne zaimplementowanie swoich rozwiązań w oparciu o język X++, zamiast skryptów XSLT. |
-| **Powiązane obszary produktów**         | Aplikacje Finanse i Działania |
+| **Powiązane obszary produktów**         | Aplikacje finansowe i operacyjne |
 | **Opcja wdrażania**              | Wszystko |
 | **Stan**                         | Przestarzałe <br><br>**Wyjątek:** odbiorcy, którzy obecnie używać skryptów XLST. Mogą one nadal korzystać z tej wersji do czasu zaktualizowania jej do wersji 10.0.30 lub nowszej. W przypadku wcześniejszych wersji wyjątek ten wygaśnie 31 stycznia 2023 roku. Odbiorcy z tym wyjątkiem odebrali powiadomienie w centrum komunikatów dostępnym w centrum administratora Microsoft 365. |
 
@@ -196,7 +196,7 @@ Szczegółowe informacje o obiektów w aplikacji Finanse i Działania można zna
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Ta funkcja została usunięta w celu zmniejszenia kosztów ogólnych działania, monitorowania i obsługi zarządzania indeksami przez odbiorców. |
 | **Zamieniona przez inną funkcję?**   | W przyszłości zarządzanie indeksami będzie wykonywane przez usługi Microsoft. Będzie to się odbywać w sposób ciągły bez wpływu na obciążenia użytkowników. |
-| **Powiązane obszary produktów**         | Aplikacje Finanse i Działania|
+| **Powiązane obszary produktów**         | Aplikacje finansowe i operacyjne|
 | **Opcja wdrażania**              | Wdrożenie w chmurze — dotyczy środowisk produkcyjnych zarządzanych przez Microsoft oraz piaskownicy od warstwy 2 do warstwy 5. |
 | **Stan**                         | Ta funkcja została usunięta. |
 
@@ -398,3 +398,4 @@ Aby dowiedzieć się więcej o funkcjach, które zostały usunięte lub wycofane
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

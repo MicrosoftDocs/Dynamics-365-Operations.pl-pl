@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 8db8faefaec4afe208344492ec91375531cb9cd0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 19337b2651830d79543361d525bf24c4f794e825
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906363"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065755"
 ---
 # <a name="dual-currency"></a>Dwuwalutowość
 
 [!include [banner](../includes/banner.md)]
 
-Funkcjonalność wprowadzona w programie Microsoft Dynamics 365 for Finance and Operations w wersji 8.1 (w październiku 2018 r.) umożliwia zmianę przeznaczenia waluty raportowania i używanie jej jako drugiej waluty rozliczeniowej. Ta funkcja jest nazywana *dwuwalutowością*. Zmian ustawień dwuwalutowości nie można wyłączyć za pomocą klucza konfiguracji lub parametru. Ponieważ waluta raportowania jest używana jako druga waluta rozliczeniowa, zmieniono sposób obliczana waluty raportowania w logice księgowania.
+Funkcjonalność wprowadzona w programie Microsoft Dynamics 365 Finance w wersji 8.1 (w październiku 2018 r.) umożliwia zmianę przeznaczenia waluty raportowania i używanie jej jako drugiej waluty rozliczeniowej. Ta funkcja jest nazywana *dwuwalutowością*. Zmian ustawień dwuwalutowości nie można wyłączyć za pomocą klucza konfiguracji lub parametru. Ponieważ waluta raportowania jest używana jako druga waluta rozliczeniowa, zmieniono sposób obliczana waluty raportowania w logice księgowania.
 
 Ponadto zmodyfikowano kilka modułów, tak aby śledziły, raportowały i wykorzystywały walutę raportowania w różnych procesach. Dotyczy to następujących modułów:
 
@@ -209,3 +209,4 @@ W przypadku konsolidacji w księdze głównej dodano nową opcję w celu konsoli
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

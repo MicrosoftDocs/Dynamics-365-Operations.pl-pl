@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 5cccba580d23c3a0e9aed62f76a305926a58585f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a002bae22044ea10be30340a87a191305f6c6b92
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879812"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111979"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Konfigurowanie podwójnego zapisu z usług Lifecycle Services
 
@@ -28,8 +28,8 @@ W tym artykule opisano sposób włączenia połączenia podwójnego zapisu z us�
 
 Klienci muszą przeprowadzić integrację z Power Platform w sposób opisany w poniższych tematach:
 
-- Jeśli nie używasz jeszcze Microsoft Power Platform, a chcesz rozszerzyć swoje środowiska rozwiązania Finance and Operations o możliwości platformy, zobacz [Integracja z Power Platform — włącz podczas wdrażania środowiska](../../power-platform/enable-power-platform-integration.md#enable-during-deploy).
-- Jeśli masz już środowiska Dataverse i Power Platform i chcesz je połączyć ze środowiskami rozwiązania Finance and Operations, zobacz [Integracja z Power Platform — włącz po wdrożeniu środowiska](../../power-platform/enable-power-platform-integration.md#enable-after-deploy).
+- Jeśli nie używasz jeszcze Microsoft Power Platform, a chcesz rozszerzyć swoje środowiska aplikacji finansowych i operacyjnych o możliwości platformy, zobacz [Integracja z Power Platform — włącz podczas wdrażania środowiska](../../power-platform/enable-power-platform-integration.md#enable-during-deploy).
+- Jeśli masz już środowiska Dataverse i Power Platform i chcesz je połączyć ze środowiskami aplikacji finansowych i operacyjnych, zobacz [Integracja z Power Platform — włącz po wdrożeniu środowiska](../../power-platform/enable-power-platform-integration.md#enable-after-deploy).
 
 ## <a name="set-up-dual-write-for-new-or-existing-dataverse-environments"></a>Skonfiguruj podwójny zapis dla nowych lub istniejących środowisk Dataverse
 
@@ -53,7 +53,7 @@ Aby skonfigurować podwójny zapis ze strony **Szczegóły środowiska** usługi
 
     :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Łącze do środowiska Power Platform.":::
 
-8. Po zakończeniu łączenia jest wyświetlane hiperłącze. Użyj łącza, aby zalogować się do obszaru administracji podwójnego zapisu w środowisku Finanse i Działania. Istnieje możliwość skonfigurowania mapowań encji.
+8. Po zakończeniu łączenia jest wyświetlane hiperłącze. Użyj łącza, aby zalogować się do obszaru administracji podwójnego zapisu w środowisku aplikacji finansowych i operacyjnych. Istnieje możliwość skonfigurowania mapowań encji.
 
 ## <a name="linking-mismatch"></a>Niezgodność łączenia
 
@@ -71,3 +71,4 @@ Jeśli otrzymasz to ostrzeżenie, wypróbuj jedno z poniższych rozwiązań:
 W przeszłości dostępna była opcja ręcznego zgłoszenia do supportu, ale było to zanim pojawiła się opcja 1 powyżej.  Microsoft nie obsługuje już ręcznych próśb o relinkowanie za pośrednictwem biletów pomocy.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

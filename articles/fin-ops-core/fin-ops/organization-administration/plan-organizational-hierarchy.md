@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef906c0d60639da763f2a9c1e1adf508b0849b8978dff17cd0e7b3936fc4779e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5bb0b306cca715cad64d62fff843987a8e98eb99
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771879"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108773"
 ---
 # <a name="plan-your-organizational-hierarchy"></a>Planowanie hierarchii organizacyjnej
 
@@ -42,7 +42,7 @@ Podczas planowania hierarchii należy również wziąć pod uwagę relację mię
 
 Musi istnieć co najmniej jedna firma, która będzie reprezentować przedsiębiorstwo. Firma może zawierać umowy i wymaga się od niej przygotowywania zestawień finansowych na temat wydajności.
 
-Firmy mogą służyć dla transakcji biznesowych lub konsolidacji. Oznacza to, że firma w Finance and Operations nie musi koniecznie reprezentować rzeczywistej firmy. Na przykład firma, która uczestniczy w transakcjach, może być właścicielem oddziałów firmy. W tym scenariuszu firma jest wymagana dla transakcji, a wirtualna firma jest wymagana do konsolidacji wyników i sald oddziałów firmy.
+Firmy mogą służyć dla transakcji biznesowych lub konsolidacji. Oznacza to, że firma zdefiniowana w aplikacjach finansowych i operacyjnych nie musi koniecznie reprezentować rzeczywistej firmy. Na przykład firma, która uczestniczy w transakcjach, może być właścicielem oddziałów firmy. W tym scenariuszu firma jest wymagana dla transakcji, a wirtualna firma jest wymagana do konsolidacji wyników i sald oddziałów firmy.
 
 Wewnętrzne organizacje biznesowe, takie jak biura regionalne, mogą być reprezentowane jako dodatkowe firmy lub jednostki operacyjne głównej firmy. Jednostka operacyjna nie musi być prawnie zdefiniowaną organizacją. Jednostki operacyjne służą do kontrolowania zasobów ekonomicznych i procesów operacyjnych w firmie. Na przykład działy i centra kosztów są jednostkami operacyjnymi.
 
@@ -171,7 +171,7 @@ Dla krajów/regionów, które są obsługiwane, można utworzyć większość ra
 
 #### <a name="if-the-organization-is-modeled-as-an-operating-unit"></a>Jeśli organizacja jest modelowana jako jednostka operacyjna
 
-Raporty ustawowe muszą zostać utworzone przy użyciu innej aplikacji. Należy upewnić się, że dane są przechwytywane w Finance and Operations do obsługi wymagań dotyczących każdej jednostki operacyjnej, które różnią się od wymagań centrali.
+Raporty ustawowe muszą zostać utworzone przy użyciu innej aplikacji. Należy upewnić się, że dane są przechwytywane w aplikacjach finansowych i operacyjnych na potrzeby obsługi wymagań dotyczących każdej jednostki operacyjnej, które różnią się od wymagań centrali.
 
 ### <a name="currency"></a>Waluta
 
@@ -242,3 +242,4 @@ Podczas implementowania hierarchii organizacyjnej należy wziąć pod uwagę nas
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

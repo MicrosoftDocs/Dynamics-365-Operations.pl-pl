@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-04
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c4b0d991d320d5a679d0ed60880c56a6cb849e2d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dc46c9fea94c3d86f9511c2bea4ea64455c936f9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907095"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068368"
 ---
 # <a name="material-handling-equipment-interface-mhax"></a>Interfejs urządzeń do obsługi materiałów (MHAX)
 
 [!include [banner](../../includes/banner.md)]
 
-Interfejs *urządzeń do obsługi materiałów* (MHAX) umożliwia połączenie zewnętrznych systemów obsługi fizycznego materiału (MH) z magazynem zarządzanym przez zaawansowane zarządzanie magazynem (WMS) w Microsoft Dynamics 365 Supply Chain Management. Interfejs między systemami WMS i MH składa się z dwóch kolejek: jednej dla zdarzeń wychodzących (WMS do MH) i jednej dla zdarzeń przychodzących (MH do WMS). System WMS generuje zdarzenia wychodzące na podstawie linii roboczych, które są tworzone podczas różnych procesów tworzenia i wykonywania pracy. Następnie system MH regularnie odpytuje system WMS o nowe zdarzenia i przetwarza odpowiedzi. Po zakończeniu obsługi zdarzeń zgodnie z instrukcją pracy system MH wysyła zdarzenia przychodzące, takie jak kompletacja linii roboczych i krótka kompletacja.
+Interfejs *urządzeń do obsługi materiałów* (MHAX) umożliwia połączenie zewnętrznych systemów obsługi fizycznego materiału (MH) z magazynem zarządzanym przez procesy zarządzania magazynem (WMS) w Microsoft Dynamics 365 Supply Chain Management. Interfejs między systemami WMS i MH składa się z dwóch kolejek: jednej dla zdarzeń wychodzących (WMS do MH) i jednej dla zdarzeń przychodzących (MH do WMS). System WMS generuje zdarzenia wychodzące na podstawie linii roboczych, które są tworzone podczas różnych procesów tworzenia i wykonywania pracy. Następnie system MH regularnie odpytuje system WMS o nowe zdarzenia i przetwarza odpowiedzi. Po zakończeniu obsługi zdarzeń zgodnie z instrukcją pracy system MH wysyła zdarzenia przychodzące, takie jak kompletacja linii roboczych i krótka kompletacja.
 
 Na poniższej ilustracji przedstawiono różne elementy i kolejność, w jakiej występują procesy podczas korzystania z integracji MHAX.
 

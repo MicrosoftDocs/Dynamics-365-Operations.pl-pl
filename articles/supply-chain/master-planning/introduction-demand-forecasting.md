@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e1648808667c8bb9487e7a47b87d8e73cf442d82
-ms.sourcegitcommit: d98ecbd9457197ec8f8e281f9c2f24dcce7b8269
+ms.openlocfilehash: 5c764cc186b5c8742ccfd90b5928f6625f3360c8
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "8960200"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065622"
 ---
 # <a name="demand-forecasting-overview"></a>Podstawowe informacje o prognozowaniu popytu
 
@@ -56,7 +56,7 @@ Trzy najważniejsze motywy w prognozowaniu popytu:
 - **Modułowość** — prognozowania popytu jest modułowe i łatwe do skonfigurowania. Funkcję tę można włączać i wyłączać poprzez zmianę klucza konfiguracji w oknie **Handel** &gt; **Prognoza zapasów** &gt; **Prognozowanie popytu**.
 - **Ponowne użycie Microsoft Stack** – Machine Learning, obecnie część pakietu analitycznego Microsoft Cortana, umożliwia szybkie i łatwe tworzenie eksperymentów analiz predykcyjnych, takich jak eksperymenty szacowania popytu, przy użyciu języków programowania algorytmów R lub Python oraz prostego w obsłudze interfejsu typu przeciągnij i upuść.
   - Można pobrać eksperymenty prognozowania popytu, zmienić je odpowiednio do wymagań biznesowych, publikować jako usługi sieci web na Azure i używać ich do generowania prognoz popytu. Eksperymenty są dostępne do pobrania w ramach zakupionej subskrypcji programu Supply Chain Management dla planisty produkcji jako użytkownika na poziomie organizacji.
-  - Można pobrać dowolne z obecnie dostępnych eksperymentów przewidywania popytu z [Galerii narzędzi analitycznych Cortana](https://gallery.cortanaanalytics.com/). Eksperymenty prognozowania popytu są automatycznie integrowane z programem Supply Chain Management, natomiast klienci i partnerzy muszą ręcznie integrować eksperymenty pobierane z [Galerii narzędzi analitycznych Cortana](https://gallery.cortanaanalytics.com/). Z tego względu eksperymenty z [Galerii narzędzi analitycznych Cortana](https://gallery.cortanaanalytics.com/) nie są tak samo proste w użytkowaniu, jak eksperymenty w programie Finance and Operations. Konieczne jest zmodyfikowanie kodu eksperymentów, aby mogły korzystać z interfejsu API programu Finance and Operations.
+  - Można pobrać dowolne z obecnie dostępnych eksperymentów przewidywania popytu z [Galerii narzędzi analitycznych Cortana](https://gallery.cortanaanalytics.com/). Eksperymenty prognozowania popytu są automatycznie integrowane z programem Supply Chain Management, natomiast klienci i partnerzy muszą ręcznie integrować eksperymenty pobierane z [Galerii narzędzi analitycznych Cortana](https://gallery.cortanaanalytics.com/). Z tego względu eksperymenty z [Galerii narzędzi analitycznych Cortana](https://gallery.cortanaanalytics.com/) nie są tak samo proste w użytkowaniu, jak eksperymenty w aplikacjach finansowych i operacyjnych. Konieczne jest zmodyfikowanie kodu eksperymentów, aby mogły korzystać z interfejsu API aplikacji finansowych i operacyjnych.
   - Można utworzyć własne eksperymenty w programie Microsoft Azure Machine Learning Studio (wersja klasyczna), opublikować je jako usługi na platformie Azure i używać do generowania prognoz popytu.
   - Jeśli nie jest wymagana wysoka wydajność lub nie potrzeba przetwarzać bardzo dużych ilości danych, można korzystać z bezpłatnej wersji oprogramowania do uczenia maszynowego. Zalecamy rozpoczęcie pracy od wersji bezpłatnej, zwłaszcza w fazie testowania i implementacji. Jeśli konieczna jest większa wydajność i dodatkowa pamięć, można korzystać z wersji standardowej oprogramowania do uczenia maszynowego. Ta wersja wymaga subskrypcji usługi Azure i wiąże się z dodatkowymi kosztami. Aby uzyskać szczegółowe informacje o cenach oprogramowania do uczenia maszynowego, zobacz [Ceny studio uczenia maszynowego](https://aka.ms/machine-learning-price-info).
 - **Zmniejszenie prognozy w dowolnym punkcie oddzielania** — prognoza popytu dla tej funkcji, która pozwala prognozować zarówno popyt zależny, jak i niezależny w dowolnym punkcie oddzielania.
@@ -101,3 +101,4 @@ Należy zauważyć, że jednostka miary prognozy popytu nie musi mieć żadnych 
 - [Seminarium internetowe: Prognozowanie popytu z serią Azure Machine Learning](https://aka.ms/DemandForecastingwithAzureMachineLearningSeries)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

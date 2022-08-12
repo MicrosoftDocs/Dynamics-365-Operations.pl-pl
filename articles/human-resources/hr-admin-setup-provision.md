@@ -14,18 +14,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9d13372d8cc1f1f0f1407ea69bee4f98ae5065c2
-ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.openlocfilehash: 6fc44b52e2f7662fc6be609562cec903a8755d1b
+ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9015354"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "9178512"
 ---
 # <a name="provision-human-resources"></a>Ustanowienie rozwiązania Human Resources
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+_**Zastosowanie:** Ustanowienie rozwiązania Human Resources w samodzielnym wystąpieniu infrastruktury_ 
 
-
+> [!NOTE]
+> Od czerwca 2022 roku środowiska zasobów ludzkich mogą być wdrażane tylko na infrastrukturze aplikacji finansowych i operacyjnych. Więcej informacji: [Ustanowienie rozwiązania Human Resources w infrastrukturze związanej z finansami i operacjami](hr-admin-setup-provision-fo.md).
 
 W tym artykule wyjaśniono proces aprowizacji nowego środowiska produkcyjnego dla oprogramowania Microsoft Dynamics 365 Human Resources. 
 
@@ -40,7 +41,7 @@ Zanim będzie można aprowizować nowe środowisko produkcyjne, muszą zostać s
 ## <a name="provision-a-human-resources-trial-environment"></a>Inicjowanie obsługi środowiska próbnego Human Resources
 
 >[!NOTE]
-> Począwszy od kwietnia 2022 roku środowiska próbne zasobów ludzkich nie będą dostępne w samodzielnym aplikacji. Potencjalni klienci, którzy są zainteresowani oceną możliwości zasobów ludzkich w aplikacjach finansowych i operacyjnych, mogą to zrobić, korzystając z bezpłatnej 30-dniowej wersji próbnej oraz danych demonstracyjnych. Dynamics 365 Finance będzie obejmował funkcje kadrowe wprowadzone do infrastruktury finansowej poprzez połączenie samodzielnej aplikacji. Więcej informacji na ten temat można znaleźć w części [Łączenie ofert HR zapewnia klientom wspólne możliwości](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers) Więcej informacji na temat testów Dynamics 365 Finance można znaleźć w [przewodniku krok po kroku](../fin-ops-core/fin-ops/get-started/before-you-buy.md). 
+> Począwszy od kwietnia 2022 roku środowiska próbne zasobów ludzkich nie będą dostępne w samodzielnym aplikacji. Potencjalni klienci, którzy są zainteresowani oceną możliwości zasobów ludzkich w aplikacjach finansowych i operacyjnych, mogą to zrobić, korzystając z bezpłatnej 30-dniowej wersji próbnej oraz danych demonstracyjnych. Dynamics 365 Finance będzie obejmował funkcje kadrowe wprowadzone do infrastruktury finansowej poprzez połączenie samodzielnej aplikacji. Aby uzyskać więcej informacji, zobacz [Połączenie ofert HR daje klientom wspólne możliwości](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers). Więcej informacji na temat prób Dynamics 365 Finance można znaleźć w [przewodniku](../fin-ops-core/fin-ops/get-started/before-you-buy.md) krok po kroku. 
 
 
 Przed rozpoczęciem inicjowania obsługi pierwszej piaskownicy lub środowiska produkcyjnego można zaimprowizować [środowisko próbne Human Resources](https://go.microsoft.com/fwlink/p/?LinkId=2115962) w celu weryfikacji funkcji Human Resources. Środowiska próbne zawierają fikcyjne dane, których można używać do eksplorowania programu w bezpieczny sposób. Chociaż właścicielem środowiska próbnego jest użytkownik, który je utworzył, można do niego zaprosić innych użytkowników za pośrednictwem interfejsu administratora systemu środowiska Human Resources. 
@@ -56,14 +57,14 @@ Podczas tworzenia środowiska wersji próbnej Human Resources, jest również tw
 
 ## <a name="plan-human-resources-environments"></a>Planuj środowiska zasobów ludzkich
 
-Zanim utworzysz swoje pierwsze środowisko kadrowe, powinieneś dokładnie zaplanować jego potrzeby w swoim projekcie. Podstawowa subskrypcja działu kadr obejmuje dwa środowiska: środowisko produkcyjne i środowisko sandbox. W zależności od złożoności projektu może być konieczne zakupienie dodatkowych środowisk piaskownicy w celu obsługi działań projektowych. 
+Zanim utworzysz swoje pierwsze środowisko kadrowe, powinieneś dokładnie zaplanować jego potrzeby w swoim projekcie. Podstawowa subskrypcja działu kadr obejmuje dwa środowiska: środowisko produkcyjne i środowisko sandbox. W zależności od złożoności projektu może zaistnieć potrzeba zakupu dodatkowych środowisk piaskownicy w celu wsparcia działań projektowych. 
 
 Uwagi dotyczące dodatkowych środowisk:
 
-- **Migracja danych**: Konieczne może być rozważenie dodatkowego środowiska do działań związanych z migracją danych, aby umożliwić używanie środowiska piaskownicy do celów testowych w całym projekcie. Dodatkowe środowisko umożliwia kontynuowanie działań migracji danych podczas jednoczesnego testowania i konfigurowania działań w innym środowisku.
-- **Integracja**: W celu skonfigurowania i testowania integracji należy wziąć pod uwagę dodatkowe środowisko. Może to obejmować natywne integracje, takie jak integracje Ceridian Dayforce lub LinkedIn Talent Hub, lub niestandardowe integracje, takie jak te dotyczące płac, systemów śledzenia kandydatów lub systemów świadczeń i dostawców.
+- **Migracja danych**: Działania związane z migracją danych, które pozwolą na wykorzystanie środowiska piaskownicy do celów testowych w trakcie trwania projektu. Dodatkowe środowisko umożliwia kontynuowanie działań migracji danych podczas jednoczesnego testowania i konfigurowania działań w innym środowisku.
+- **Integracja**: Konfiguruj i testuj integracje, które mogą obejmować integracje natywne, takie jak Ceridian Dayforce, lub integracje niestandardowe.
 - **Szkolenie**: Możesz potrzebować osobnego środowiska, które jest skonfigurowane z zestawem danych szkoleniowych, aby przeszkolić pracowników w zakresie korzystania z nowego systemu. 
-- **Projekt wieloetapowy**: Możesz potrzebować dodatkowego środowiska do obsługi konfiguracji, migracji danych, testowania lub innych działań w fazie projektu, która jest planowana po początkowym uruchomieniu projektu.
+- **Projekt wieloetapowy**: Wspieranie konfiguracji, migracji danych, testowania lub innych działań w fazie projektu, która jest planowana po pierwszym uruchomieniu projektu.
 
  > [!IMPORTANT]
  > W kwestii środowiska zalecenia są następujące:
@@ -140,7 +141,7 @@ Przy ustalaniu, w którym środowisku usługi Power Apps wdrożyć moduł Human 
    
     - **Nieobsługiwane regiony geograficzne** — środowisko musi znajdować się w obsługiwanym regionie geograficznym. Aby uzyskać więcej informacji, zobacz [Obsługiwane regiony geograficzne](hr-admin-setup-provision.md#supported-geographies).
 
-6. Możliwości podwójnego zapisu do integracji danych zasobów ludzkich ze środowiskiem Power Apps mogą być używane tylko wtedy, gdy dla środowiska wybrano opcję **Włącz aplikacje Dynamics 365**. Zobacz [Podwójny zapis](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md), aby uzyskać więcej informacji, zobacz temat Strona główna podwójnego zapisu.
+6. Możliwości podwójnego zapisu do integracji danych zasobów ludzkich ze środowiskiem Power Apps mogą być używane tylko wtedy, gdy dla środowiska wybrano opcję **Włącz aplikacje Dynamics 365**. Aby uzyskać więcej informacji dotyczących konfiguracji, zobacz [Strona główna – Podwójny zapis](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md).
 
     > [!NOTE]
     > Opcja **Włącz aplikacje Dynamics 365** musi być zaznaczona podczas tworzenia środowiska Power Apps. Jeśli opcja nie jest zaznaczona w momencie aprowizacji, nie będzie można używać podwójnego zapisu do integrowania danych między Dynamics 365 Human Resources a środowiskiem Power Apps ani instalować aplikacji Dynamics 365, takich jak Dynamics 365 Sales i Field Service na środowisko. Ta opcja jest nieodwracalna. 
@@ -175,3 +176,4 @@ Domyślnie dostęp do środowiska ma globalny administrator, który je utworzył
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

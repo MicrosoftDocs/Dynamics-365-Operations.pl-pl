@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: weijiesa
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6d973d1cdb530a031ca8a5caf621f9bebced4842
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 25484efd7be026bfc3a209fb52822b87d6b76cc2
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873500"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065503"
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Konfigurowanie dyrektywy lokalizacji dla odłożenia zamówienia zakupu
 
 [!include [banner](../../includes/banner.md)]
 
-W tym artykule wyjaśniono sposób konfigurowania prostej dyrektywy lokalizacji. W pokazanym przykładzie jest tworzona dyrektywa lokalizacji, która będzie używana do określenia, gdzie mają zostać odłożone towary przyjęte na podstawie zamówienia zakupu. Ten przewodnik po zadaniach można odtworzyć przy użyciu danych firmy demonstracyjnych USMF. Warunki wstępne: Należy utworzyć kod dyspozycji. W tej procedurze stosujemy kod dyspozycji o nazwie Ponowne etykietowanie. Jeśli tworzysz dyrektywę lokalizacji z własnymi danymi, musisz skonfigurować funkcje zaawansowanego zarządzania magazynem dla magazynu i towarów. Ta procedura jest przeznaczona dla kierownika magazynu.
+W tym artykule wyjaśniono sposób konfigurowania prostej dyrektywy lokalizacji. W pokazanym przykładzie jest tworzona dyrektywa lokalizacji, która będzie używana do określenia, gdzie mają zostać odłożone towary przyjęte na podstawie zamówienia zakupu. Ten przewodnik po zadaniach można odtworzyć przy użyciu danych firmy demonstracyjnych USMF. Warunki wstępne: Należy utworzyć kod dyspozycji. W tej procedurze stosujemy kod dyspozycji o nazwie Ponowne etykietowanie. Jeśli tworzysz dyrektywę lokalizacji z własnymi danymi, musisz skonfigurować funkcje zarządzania magazynem (WMS) dla magazynu i towarów. Ta procedura jest przeznaczona dla kierownika magazynu.
 
 1. W okienku nawigacji przejdź do **Moduły > Zarządzanie magazynem > Ustawienia > Magazyn > Dyrektywy lokalizacji**.
 2. W polu **Typ zlecenia pracy** zaznacz opcję **Zamówienia zakupu**.

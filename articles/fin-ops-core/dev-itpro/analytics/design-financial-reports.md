@@ -6,21 +6,22 @@ ms.date: 10/02/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: FinancialReportingSetup
 audience: Application User
-ms.reviewer: kfend
-ms.custom: 10814
-ms.assetid: cd5f6483-c09b-4c2d-9336-d22eb6ab6e4f
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c13169ab05dd506f75b2c9d28f05fcf4471f5a7c8f0a563c974bc38949993295
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.custom:
+- "10814"
+ms.assetid: cd5f6483-c09b-4c2d-9336-d22eb6ab6e4f
+ms.search.form: FinancialReportingSetup
+ms.openlocfilehash: 77756b9f32268b091361e1e69be05a11eac19846
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724450"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9205673"
 ---
 # <a name="view-and-design-financial-reports"></a>Wyświetlanie i projektowanie raportów finansowych
 
@@ -151,7 +152,7 @@ W tym ćwiczeniu zmodyfikujemy istniejący raport domyślny. Dodasz hierarchię 
 4. Wybierz kolejno opcje **Plik** &gt; **Zapisz jako** i nazwij raport **Skonsolidowany bilans i rachunek wyników obok siebie**.
 5. Zmień rok podstawowy na 2012.
 6. Kliknij strzałkę rozwijaną typu drzewa i wybierz **Hierarchie organizacyjne**.
-7. Kliknij strzałkę rozwijaną typu drzewa i wybierz **Contoso Holdings**.
+7. Kliknij strzałkę rozwijaną typu drzewa i wybierz **Holdingi Contoso**.
 8. Zapisz zmiany i wygeneruj raport. Po wyświetleniu monitu wybierz wszystkie jednostki raportowania. Po otarciu wygenerowanego raportu możesz sprawdzić jego zawartość.
 9. Wybierz **Opcje raportowania**.
 10. Wybierz **Dodaj filtr wymiaru** i wybierz polecenie **Dział**.
@@ -194,7 +195,7 @@ W tym ćwiczeniu utworzymy nowy raport. Raport jest rachunkiem wyników działu 
 
 [Wyświetlanie raportów finansowych](../../../finance/general-ledger/view-financial-reports.md)
 
-[Blog rozwiązania Dynamics 365 Finance](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog)
+[Blog Dynamics 365 Finance](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

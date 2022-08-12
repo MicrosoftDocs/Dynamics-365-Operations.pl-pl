@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: d73a8d3cf8a7899f16db87148456671dea773636
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 973fdcd81a83b6b70e8fa941c4f0c9d24b5cb559
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868767"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066462"
 ---
 # <a name="mobile-app-home-page"></a>Aplikacja mobilna — strona główna
 
@@ -132,8 +132,8 @@ Poniższa tabela zawiera łącza do zasobów, które mogą pomóc we wdrażaniu 
 <td>Użytkownik</td>
 <td>Pobieranie i instalowanie aplikacji mobilnej.</td>
 <td>
-<a href="https://go.microsoft.com/fwlink/?linkid=850662">Aplikacja Finance and Operations dla Android</a><BR/>
-<a href="https://go.microsoft.com/fwlink/?linkid=850663">Aplikacja Finance and Operations dla iOS</a><BR/>
+<a href="https://go.microsoft.com/fwlink/?linkid=850662">Aplikacje finansowe i operacyjne dla Android</a><BR/>
+<a href="https://go.microsoft.com/fwlink/?linkid=850663">Aplikacje finansowe i operacyjne dla iOS</a><BR/>
 (system Windows Phone nie jest obsługiwany)
 </td>
 </tr>
@@ -152,3 +152,4 @@ Poniższa tabela zawiera łącza do zasobów, które mogą pomóc we wdrażaniu 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

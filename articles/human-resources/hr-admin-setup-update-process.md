@@ -14,18 +14,22 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1b9ab27b443e5ec675ea03e13aa7be4ea84bfb45
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 25889f9d4a7ffb4f155b7b7c12ec3b21a44a4710
+ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722249"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "9178452"
 ---
 # <a name="update-process"></a>Aktualizowanie procesu
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+_**Zastosowanie:** Ustanowienie rozwiązania Human Resources w samodzielnym wystąpieniu infrastruktury_ 
 
+> [!NOTE]
+> Od lipca 2022 roku nie można tworzyć nowych środowisk Human Resources na samodzielnej infrastrukturze Human Resources, ani nowych projektów Lifecycle Services (LCS) Microsoft Dynamics. Klienci mogą wdrażać środowiska zasobów ludzkich na infrastrukturze finansowej i operacyjnej. Więcej informacji: [Ustanowienie rozwiązania Human Resources w infrastrukturze związanej z finansami i operacjami](/hr-admin-setup-provision-fo.md).
 
+> [!IMPORTANT]
+> Proces aktualizacji i wprowadzania poprawek w infrastrukturze aplikacji finansowych i operacyjnych różni się od samodzielnego procesu aktualizacji i wprowadzania poprawek w zasobach ludzkich. Więcej informacji o procesie aktualizacji znajdziesz w [Proces przechodzenia do najnowszej aktualizacji finansów i operacji](../fin-ops-core/dev-itpro/migration-upgrade/upgrade-latest-update.md). Aby uzyskać więcej informacji o poprawkach, zobacz [Pobieranie aktualizacji z portalu Lifecycle Services (LCS)](/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs.md). 
 
 Microsoft Dynamics 365 Human Resources to rozwiązanie typu oprogramowanie jako usługa (SaaS), które zapewnia ciągłe aktualizacje usług bez interwencji użytkownika. Te aktualizacje zawierają modyfikacje aplikacji i platformy, które często wprowadzają krytyczne udoskonalenia usługi, w tym aktualizacje wymagane przepisami prawa.
 
@@ -37,16 +41,14 @@ Aktualizacje są publikowane regularnie dla wszystkich środowisk. Program Human
 
 Aktualizacje modułu Human Resources są stosowane do wszystkich środowisk automatycznie. Dla modułu Human Resources są publikowane dwa typy wydań:
 
-- **Aktualizacje usług**: Aktualizacje pojawiają się co dwa tygodnie, zawierają poprawki błędów i nowe funkcje. Aktualizacje usług obejmują także odpowiednie aktualizacje platformy, kiedy są one publikowane. Aby uzyskać więcej informacji o wersjach platformy, zobacz [Nowości i zmiany w aktualizacjach platformy](../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md). Aktualizacje co dwa tygodnie zawierają wdrożenia globalne w różnych regionach. Aby uzyskać więcej informacji o aktualizacjach co dwa tygodnie, zobacz [Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources](hr-admin-whats-new.md).
-
-    Wszystkie obsługiwane centra danych są aktualizowane co dwa tygodnie, o ile nie zaznaczono inaczej. Stany Zjednoczone, Australia, Europa, Wielka Brytania, Azja i Kanada są objęte aktualizacjami co dwa tygodnie. 
+- **Aktualizacje usług**: Aktualizacje pojawiają się co dwa tygodnie, zawierają poprawki błędów i nowe funkcje. Aktualizacje usług obejmują także odpowiednie aktualizacje platformy, kiedy są one publikowane. Aby uzyskać więcej informacji o wersjach platformy, zobacz [Nowości i zmiany w aktualizacjach platformy](../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md). Aktualizacje zawierają wdrożenia globalne w różnych regionach. Aby uzyskać więcej informacji o aktualizacjach, zobacz [Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources](hr-admin-whats-new.md).
 
 - **Aktualizacje rozwiązania Dataverse**: te aktualizacje odbywają się w przybliżeniu co sześć tygodni, jeśli jest to konieczne. Obejmują nowe jednostki i zmiany istniejących jednostek w usłudze Dataverse. Te aktualizacje są publikowane w tych samych regionach, jak aktualizacje co dwa tygodnie, a ich zreplikowanie do wszystkich centrów danych może potrwać do sześciu tygodni. Aktualizacje rozwiązania mogą być zbieżne z aktualizacjami usług co dwa tygodnie, ale nie muszą.
 
 > [!NOTE]
 > Aktualizacje rozwiązania są dostępne we wszystkich centrach danych po opublikowaniu. Jeśli nie chcesz czekać na automatyczne zreplikowanie aktualizacji, możesz ręcznie zastosować te aktualizacje w dowolnym środowisku w dowolnym centrum danych.
 
-W razie potrzeby dla modułu Human Resources są również dostarczane następujące typy rozwiązań błędów:
+W razie potrzeby dla modułu Human Resources są dostarczane następujące typy rozwiązań błędów:
 
 - **Poprawka**: poprawki błędów, które mogą towarzyszyć wydaniom aktualizacji usług co dwa tygodnie albo być publikowane niezależnie
 
@@ -83,11 +85,11 @@ W lokalizacjach wymienionych poniżej można dowiedzieć się, co szykujemy w mo
 
 Funkcje w wersji zapoznawczej można weryfikować w środowisku piaskownicy przed ich włączeniem w środowisku produkcyjnym. Aby uzyskać więcej informacji o włączaniu funkcji, zobacz [Zarządzanie funkcjami — omówienie](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-Wszystkie nowe funkcje pozostają w podglądzie przez co najmniej 30 dni, a zazwyczaj 30-60 dni. Najważniejsze funkcje są zazwyczaj dostępne w październiku i kwietniu każdego roku po okresie podglądu. Po wyświetleniu nowych możliwości w obszarze roboczym zarządzanie funkcjami można je włączyć. Niektóre funkcje mogą być domyślnie włączone.
+Wszystkie nowe funkcje pozostają w podglądzie przez co najmniej 30 dni, a zazwyczaj 30-60 dni. Najważniejsze funkcje są zazwyczaj dostępne w październiku i kwietniu każdego roku po okresie podglądu. Po wyświetleniu nowych możliwości w obszarze roboczym **zarządzanie funkcjami** można je włączyć. Niektóre funkcje mogą być domyślnie włączone.
 
 Czasami funkcja jest domyślnie włączona i nie można jej wyłączyć (na przykład w obszarze roboczym zarządzanie funkcjami).
 
-Gdy funkcja jest ogólnie dostępna, może być włączana lub wyłączana w środowiskach produkcyjnych. Przestrzeń robocza Zarządzanie funkcjami wskazuje, kiedy funkcja podglądu stanie się obowiązkowa. Ta data zazwyczaj jest równa 1 października lub 1 kwietnia w celu dostosowania ich do półrocznych planów zwolnień. Nie można wyłączać obowiązkowych funkcji. Dopóki ta funkcja nie stanie się obowiązkowa, można ją włączać i wyłączać we wszystkich środowiskach.
+Gdy funkcja jest ogólnie dostępna, może być włączana lub wyłączana w środowiskach produkcyjnych. Przestrzeń robocza **Zarządzanie funkcjami** wskazuje, kiedy funkcja podglądu stanie się obowiązkowa. Ta data zazwyczaj jest równa 1 października lub 1 kwietnia w celu dostosowania ich do półrocznych planów zwolnień. Nie można wyłączać obowiązkowych funkcji. Dopóki ta funkcja nie stanie się obowiązkowa, można ją włączać i wyłączać we wszystkich środowiskach.
 
 Zdecydowanie zalecamy sprawdzenie działania funkcji w wersji zapoznawczej w środowisku piaskownicy lub w próbnym. Najlepiej utworzyć kopię bieżącego środowiska produkcyjnego lub bazy danych w środowisku piaskownicy, co pozwoli kompleksowo sprawdzić działanie nowych funkcji z danymi firmy.
 

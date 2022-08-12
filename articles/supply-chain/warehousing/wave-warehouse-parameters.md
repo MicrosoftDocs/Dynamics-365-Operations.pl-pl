@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 2a64cba837faf84f3e8470a9831d1641213a5cc4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e02cd80a3b7692f496fc70e50b812fae358103bc
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8909620"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067860"
 ---
 # <a name="warehouse-parameters-for-wave-processing"></a>Parametry magazynu dla przetwarzania grupy czynności
 
@@ -52,7 +52,7 @@ W celu ustawienia parametrów dla przetwarzania grupy czynności, należy wykona
 > [!NOTE]
 > W szablonie grup czynności, który jest używany do przetwarzania grupy czynności można określić ustawienia, które automatyzują przetwarzanie grupy czynności. W przypadku ustawienia harmonogramu dla zadania wsadowego, należy dostosować czas z ustawieniami automatyzacji w szablonie grupy czynności. Aby uzyskać więcej informacji, zobacz temat [Tworzenie szablonu grupy czynności](wave-templates.md).
 >
-> Jeśli używasz *Zarządzanie transportem* i *Zaawansowane zarządzanie magazynem*, możesz określić, czy skonsolidować ładunki podczas przetwarzania grupy czynności. Na przykład jest to przydatne przy jednoczesnym wysyłaniu kilku małych ładunków. Aby skonsolidować ładunki podczas przetwarzania grupy czynności, na karcie **Ładunki** zaznacz pole wyboru **Konsoliduj ładunki podczas przetwarzania grupy czynności**.</P>
+> Jeśli używasz *Zarządzanie transportem* i *Zaawansowane zarządzanie magazynem (WMS)*, możesz określić, czy skonsolidować ładunki podczas przetwarzania grupy czynności. Na przykład jest to przydatne przy jednoczesnym wysyłaniu kilku małych ładunków. Aby skonsolidować ładunki podczas przetwarzania grupy czynności, na karcie **Ładunki** zaznacz pole wyboru **Konsoliduj ładunki podczas przetwarzania grupy czynności**.</P>
 
 ## <a name="set-up-full-or-partial-reservation-for-production-waves"></a>Konfigurowanie rezerwacji pełnej lub częściowej dla grup czynności produkcji
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 9c2f658fbf7fd4db38d572ff80e9d500b5548e0a
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: fc3cf3b5d28a4e512f921db6ba090dd5731391cc
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713284"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123991"
 ---
 # <a name="before-you-buy"></a>Zanim kupisz
 
@@ -26,7 +26,7 @@ ms.locfileid: "8713284"
 
 Pierwszy raz w Dynamics 365 Finance, Dynamics 365 Supply Chain Management lub Dynamics 365 Commerce? Zebraliśmy wskazówki krok po kroku, czy nadal oceniasz, czy jesteś gotowy na zakup.
 
-## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>Krok 1: Wypróbowanie programu Finance and Operations bezpłatnie przez 30 dni
+## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>Krok pierwszy: Wypróbuj finanse i operacje za darmo przez 30 dni
 
 Możesz wypróbować 365 for Finance, Dynamics 365 Supply Chain Management lub Dynamics 365 Commerce przez 30 dni poprzez prostą rejestrację pocztą e-mail. Wersja próbna aplikacji finansowych i operacyjnych zawiera przewodniki po zadaniach Rozpoczęcie pracy, które oferują instrukcje krok po kroku umożliwiające obejrzenie konkretnych scenariuszy w działaniu. Produkt umożliwia poznanie i przećwiczenie scenariuszy, ale nie można go dostosowywać. Dołączone są dane demonstracyjne, które ułatwiają korzystanie z produktu i zwiększają użyteczność całego procesu. 3 dni przed wygaśnięciem wersji próbnej zostanie wysłana wiadomość e-mail z przypomnieniem. Szczegółowe informacje znajdziesz w temacie [Rejestracja w celu uzyskania subskrypcji w wersji zapoznawczej](../../dev-itpro/dev-tools/sign-up-preview-subscription.md#subscribe).
 
@@ -62,7 +62,7 @@ Dostawca rozwiązań chmurowych Microsoft może ściśle współpracować z klie
 
 ### <a name="buy-through-a-dynamics-partner-on-premises"></a>Zakup u partnera w zakresie oprogramowania Dynamics (wdrożenia lokalne)
 
-Aby kupić program Finance and Operations do wdrożenia lokalnego, należy współpracować z partnerem. Aby uzyskać więcej informacji, [Zakup rozwiązania Finance + Operations (lokalne)](purchase-on-premises.md).
+Aby kupić rozwiązanie Finance + Operations (on-premises), należy współpracować z partnerem. Aby uzyskać więcej informacji, [Zakup rozwiązania Finance + Operations (lokalne)](purchase-on-premises.md).
 
 ### <a name="buy-through-volume-licensing-cloud-or-on-premises"></a>Zakup u partnera i korzystanie z licencjonowania zbiorowego (wdrożenia chmurowe lub lokalne)
 
@@ -94,3 +94,4 @@ Jeśli jesteś klientem, który uaktualniania z systemu Microsoft Dynamics AX 20
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

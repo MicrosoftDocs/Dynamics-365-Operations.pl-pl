@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-22
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ee92ed2c0e2a59adaebe20ed3d426ac03c056dac
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ef4e6bf2ae59adb05c7d4aacc3f5675a5adcafc9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870850"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070062"
 ---
 # <a name="set-up-the-asset-management-mobile-workspace"></a>Konfigurowanie mobilnego obszaru roboczego zarządzania składnikami majątku
 
 [!include [banner](../includes/banner.md)]
 
-W tym artykule opisano sposób konfigurowania rozwiązania Microsoft Dynamics 365 Supply Chain Management i aplikacji mobilnej Finance and Operations (Dynamics 365) w celu uruchomienia mobilnego obszaru roboczego **Zarządzanie składnikami majątku**, za pomocą których pracownicy mogą wykonywać zadania zarządzania składnikami majątku.
+W tym artykule opisano sposób konfigurowania rozwiązania Microsoft Dynamics 365 Supply Chain Management i aplikacji mobilnej finansów i operacji (Dynamics 365) w celu uruchomienia mobilnego obszaru roboczego **Zarządzanie składnikami majątku**, za pomocą których pracownicy mogą wykonywać zadania zarządzania składnikami majątku.
 
 ## <a name="set-up-maintenance-worker-users-in-supply-chain-management"></a>Konfigurowanie użytkowników konserwatorów w aplikacji Supply Chain Management
 
@@ -41,7 +41,7 @@ Dla każdego użytkownika, który wymaga dostępu do mobilnego obszaru roboczego
 
 ## <a name="publish-the-asset-management-mobile-workspace"></a>Publikowanie w mobilnym obszarze roboczym zarządzania składnikami majątku
 
-Aby udostępnić funkcje zarządzania składnikami majątku w aplikacji mobilnej Finance and Operations (Dynamics 365), musisz opublikować mobilny obszar roboczy **Zarządzanie składnikami majątku**.
+Aby udostępnić funkcje zarządzania składnikami majątku w aplikacji mobilnej finansów i operacji (Dynamics 365), musisz opublikować mobilny obszar roboczy **Zarządzanie składnikami majątku**.
 
 1. W aplikacji Supply Chain Management wybierz przycisk **Ustawienia** (symbol koła zębatego w prawym górnym rogu), a następnie wybierz w menu pozycję **Aplikacja mobilna**.
 1. W oknie dialogowym **Zarządzaj aplikacją mobilną** znajdź kafelek **Zarządzanie składnikami majątku**. Jeśli zawiera on tekst „W metadanych — nie opublikowano”, obszar roboczy nie został jeszcze opublikowany. Jeśli zawiera on tekst „W metadanych — opublikowano”, obszar roboczy został już opublikowany, dlatego możesz pominąć pozostałą część tej procedury.
@@ -50,14 +50,14 @@ Aby udostępnić funkcje zarządzania składnikami majątku w aplikacji mobilnej
 
 1. Wybierz kafelek **Zarządzanie składnikami majątku**, a następnie wybierz pozycję **Publikuj** na pasku narzędzi. Po kilku sekundach powinien zostać wyświetlony komunikat o pomyślnym opublikowaniu obszaru roboczego. Ponadto tekst na kafelku powinien się zmienić na „W metadanych — opublikowano”.
 
-## <a name="install-and-set-up-the-finance-and-operations-dynamics-365-mobile-app"></a>Zainstaluj i skonfiguruj aplikację mobilną Finance and Operations (Dynamics 365)
+## <a name="install-and-set-up-the-finance-and-operations-dynamics-365-mobile-app"></a>Zainstaluj i skonfiguruj aplikację mobilną finansów i operacji (Dynamics 365)
 
-1. Przejdź do jednego z następujących sklepów z aplikacjami, aby zainstalować **aplikacja Microsoft Finance and Operations (Dynamics 365)** na urządzeniu przenośnym:
+1. Przejdź do jednego z następujących sklepów z aplikacjami, aby zainstalować **aplikacja Microsoft finansów i operacji (Dynamics 365)** na urządzeniu przenośnym:
 
     - [Dla urządzeń z systemem Android firmy Google](https://go.microsoft.com/fwlink/?linkid=850662)
     - [Dla urządzeń z systemem IOS firmy Apple](https://go.microsoft.com/fwlink/?linkid=850663)
 
-1. Otwórz aplikację Finance and Operations (Dynamics 365). Powinna zostać wyświetlana strona logowania. W polu **Zaloguj się** wprowadź adres URL aplikacji Supply Chain Management lub wybierz ostatni adres URL z listy **Ostatnie środowiska**, a następnie naciśnij pozycję **Połącz**.
+1. Otwórz aplikację finansów i operacji (Dynamics 365). Powinna zostać wyświetlana strona logowania. W polu **Zaloguj się** wprowadź adres URL aplikacji Supply Chain Management lub wybierz ostatni adres URL z listy **Ostatnie środowiska**, a następnie naciśnij pozycję **Połącz**.
 
     ![Strona logowania.](media/mobile-app-sign-in.png "Strona logowania")
 
@@ -80,7 +80,7 @@ Aby udostępnić funkcje zarządzania składnikami majątku w aplikacji mobilnej
 
 Aby uzyskać więcej informacji dotyczących pracy z mobilnym obszarem roboczym **Zarządzanie składnikami majątku**, zobacz temat [Korzystanie z mobilnego obszaru roboczego zarządzanie składnikami majątku](asset-management-mobile-workspace.md).
 
-Aby uzyskać więcej informacji o aplikacji mobilnej Finance and Operations (Dynamics 365), zobacz [stronę główną aplikacji mobilnej](../../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md).
+Aby uzyskać więcej informacji o aplikacji mobilnej finansów i operacji (Dynamics 365), zobacz [stronę główną aplikacji mobilnej](../../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

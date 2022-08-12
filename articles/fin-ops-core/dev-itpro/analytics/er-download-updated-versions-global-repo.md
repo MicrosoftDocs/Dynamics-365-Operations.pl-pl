@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 69eaa3e2ecfbd1e92f23725d97d7fa9f0abe1cea
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0dac106a592a6a70aae6b245bce74d21c98cad10
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847554"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108448"
 ---
 # <a name="import-updated-versions-of-er-configurations"></a>Importowanie zaktualizowanych wersji konfiguracji programu ER
 
@@ -28,7 +28,7 @@ ms.locfileid: "8847554"
 
 [Repozytoria](general-electronic-reporting.md#Repository) raportowania elektronicznego (ER) są używane do udostępniania [konfiguracji ER](general-electronic-reporting.md#Configuration). Można [importować](download-electronic-reporting-configuration-lcs.md) konfiguracje ER z różnych repozytoriów do danego wystąpienia rozwiązania Microsoft Dynamics 365 Finance. Podczas importowania konfiguracji ER [dostawcy konfiguracji](general-electronic-reporting.md#Provider) mogą publikować nowe [wersje](general-electronic-reporting.md#component-versioning) repozytoriów, tak aby można je było udostępniać.
 
-W tym artykule opisano sposób importowania zaktualizowanych wersji konfiguracji ER z globalnego repozytorium usługi Configuration service. Aby uzyskać więcej informacji, należy zapoznać się z tematem [Microsoft Dynamics 365 for Finance and Operations - Regulatory Services, Configuration service](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
+W tym artykule opisano sposób importowania zaktualizowanych wersji konfiguracji ER z globalnego repozytorium usługi Configuration service. Aby uzyskać więcej informacji, należy zapoznać się z tematem [Microsoft Dynamics 365 Finance - Regulatory Services, Configuration service](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
 
 ## <a name="review-the-available-updated-versions"></a>Przejrzyj dostępne zaktualizowane wersje
 

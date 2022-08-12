@@ -1,5 +1,5 @@
 ---
-title: Sprawdzanie poprawności konfiguracji podwójnego zapisu w aplikacjach Finanse i Działania i usłudze Dataverse
+title: Sprawdzanie poprawności konfiguracji podwójnego zapisu w aplikacjach finansowych i operacyjnych oraz usłudze Dataverse
 description: W tym artykule wyjaśniono, jak można określić, czy podwójny zapis zostały skonfigurowany w aplikacjach finansowych i operacyjnych oraz usłudze Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
@@ -9,14 +9,14 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 7131e6c2c4ca4d9c6bb84ad74bf425faf28bd92c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d5191f5dd9c3a286abac622aede07d04fb72a8f7
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884467"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111401"
 ---
-# <a name="verify-dual-write-configuration-in-finance-and-operations-apps-and-dataverse"></a>Sprawdzanie poprawności konfiguracji podwójnego zapisu w aplikacjach Finanse i Działania i usłudze Dataverse
+# <a name="verify-dual-write-configuration-in-finance-and-operations-apps-and-dataverse"></a>Sprawdzanie poprawności konfiguracji podwójnego zapisu w aplikacjach finansowych i operacyjnych oraz usłudze Dataverse
 
 [!include [banner](../../includes/banner.md)]
 
@@ -24,21 +24,21 @@ ms.locfileid: "8884467"
 
 
 
-Ten artykuł zawiera informacje dotyczące rozwiązywania problemów dotyczących integracji podwójnego zapisu między aplikacjami finansowymi i operacyjnymi oraz usługą Dataverse. W tym temacie wyjaśniono, jak można określić, czy podwójne zapisywanie jest skonfigurowane w aplikacjach Finanse i Działania i w Dataverse.
+Ten artykuł zawiera informacje dotyczące rozwiązywania problemów dotyczących integracji podwójnego zapisu między aplikacjami finansowymi i operacyjnymi oraz usługą Dataverse. W tym temacie wyjaśniono, jak można określić, czy podwójne zapisywanie jest skonfigurowane w aplikacjach finansowych i operacyjnych i w Dataverse.
 
-## <a name="verify-that-dual-write-is-configured-in-a-finance-and-operations-app"></a>Sprawdzanie poprawności konfiguracji podwójnego zapisu w aplikacjach Finanse i Działania
+## <a name="verify-that-dual-write-is-configured-in-a-finance-and-operations-app"></a>Sprawdzanie poprawności konfiguracji podwójnego zapisu w aplikacjach finansowych i operacyjnych
 
 Aby określić, czy błędy widoczne podczas próby zapisania wierszy do aktualizacji pochodzą z podwójnego zapisu, należy najpierw sprawdzić, czy skonfigurowano podwójny zapis.
 
-+ Jeśli masz uprawnienia administratora w aplikacji Finanse i Działania, przejdź do obszaru **Obszary robocze \> Zarządzanie danymi** i wybierz kafelek **Podwójnego zapisu**. Jeśli są widoczne szczegóły połączonych środowisk i lista uruchomionych map tabeli, skonfigurowano podwójny zapis.
++ Jeśli masz uprawnienia administratora w aplikacjach finansowych i operacyjnych, przejdź do obszaru **Obszary robocze \> Zarządzanie danymi** i wybierz kafelek **Podwójnego zapisu**. Jeśli są widoczne szczegóły połączonych środowisk i lista uruchomionych map tabeli, skonfigurowano podwójny zapis.
 
-    ![Sprawdzanie połączenia aplikacji Finanse i Działania, gdy użytkownik nie ma uprawnienia administratora.](media/verify_fin_ops_1.png)
+    ![Sprawdzanie połączenia aplikacji finansowych i operacyjnych, gdy użytkownik nie ma uprawnienia administratora.](media/verify_fin_ops_1.png)
 
-+ Jeśli nie masz uprawnień administratora, zostanie wyświetlony komunikat o błędzie, *Nie można zapisać danych do jednostki nazwa jednostki.\<entity name\>*. W przykładzie na poniższej ilustracji nie można utworzyć wiersza odbiorcy w aplikacji Finanse i Działania, ponieważ skonfigurowano podwójny zapis, ale dane dotyczące grupy odbiorców i warunków płatności nie istnieją w Dataverse.
++ Jeśli nie masz uprawnień administratora, zostanie wyświetlony komunikat o błędzie, *Nie można zapisać danych do jednostki nazwa jednostki.\<entity name\>*. W przykładzie na poniższej ilustracji nie można utworzyć wiersza odbiorcy w aplikacjach finansowych i operacyjnych, ponieważ skonfigurowano podwójny zapis, ale dane dotyczące grupy odbiorców i warunków płatności nie istnieją w Dataverse.
 
-    ![Sprawdzanie połączenia aplikacji Finanse i Działania, gdy użytkownik nie ma uprawnienia administratora.](media/verify_fin_ops_2.png)
+    ![Sprawdzanie połączenia aplikacji finansowych i operacyjnych, gdy użytkownik nie ma uprawnienia administratora.](media/verify_fin_ops_2.png)
 
-Aby uzyskać informacje dotyczące rozwiązywania problemów podczas tworzenia danych w aplikacjach Finanse i Działania, należy zapoznać się z [Rozwiązywanie problemów z synchronizacją na żywo](dual-write-troubleshooting-live-sync.md).
+Aby uzyskać informacje dotyczące rozwiązywania problemów podczas tworzenia danych w aplikacjach finansowych i operacyjnych, należy zapoznać się z [Rozwiązywanie problemów z synchronizacją na żywo](dual-write-troubleshooting-live-sync.md).
 
 ## <a name="verify-that-dual-write-is-configured-in-dataverse"></a>Sprawdź, czy w Dataverse jest skonfigurowany tryb podwójnego zapisu
 

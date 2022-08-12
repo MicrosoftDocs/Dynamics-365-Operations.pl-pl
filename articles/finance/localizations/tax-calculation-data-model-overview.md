@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a711eb73c171cd099947b44e2376cad2455059f0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 79296a452e146bb17b197e9ca40db016664df6f9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8859703"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068857"
 ---
 # <a name="tax-calculation-data-model"></a>Model danych obliczania podatku
 
 Ten artykuł zawiera informacje dotyczące sposobu, w jaki wartości pól modelu danych podatku są określane w transakcjach obliczania podatku.
 
-*Model danych podatku* składa się z pól wymaganych do obliczeń podatku. Firma Microsoft dostarcza *model danych obliczania podatku*, który zawiera pola nagłówka i pola wiersza dokumentów transakcji w aplikacjach Finanse i Operacje. Pola zdefiniowane w modelu danych obliczania podatku to dostępne kolumny tabel reguł możliwości zastosowania w konfiguracji funkcji obliczania podatku.
+*Model danych podatku* składa się z pól wymaganych do obliczeń podatku. Firma Microsoft dostarcza *model danych obliczania podatku*, który zawiera pola nagłówka i pola wiersza dokumentów transakcji w aplikacjach finansowych i operacyjnych. Pola zdefiniowane w modelu danych obliczania podatku to dostępne kolumny tabel reguł możliwości zastosowania w konfiguracji funkcji obliczania podatku.
 
 > [!NOTE] 
 > Niektóre węzły zdefiniowane w modelu danych, takie jak **Identyfikator rekordu** i **Identyfikator tabeli**, są przeznaczone do celów technicznych. Nie są one dostępne jako kolumny w konfiguracji funkcji obliczania podatku.
@@ -54,7 +54,7 @@ Można także wyświetlić model danych obliczania podatku oraz dostępne kolumn
 
     [![Zarządzaj kolumnami.](./media/tax-calculation-model-mapping-3.png)](./media/tax-calculation-model-mapping-3.png)
 
-Model danych obliczania podatku jest zintegrowany z aplikacjami Finanse i Operacje. Podczas każdej transakcji związanej z obliczaniem podatku wartości pól zdefiniowanych w tabelach reguł możliwości stosowania są zbierane i wysyłane do usługi obliczania podatku w celu obliczenia. W wersji 40.46 dostępnych jest 57 wstępnie zdefiniowanych modeli danych następujących typów transakcji: zamówienia zakupu, zamówienia sprzedaży, zamówienia przeniesienia, zapotrzebowania na zakup, zapytania ofertowe i oferty sprzedaży.
+Model danych obliczania podatku jest zintegrowany z aplikacjami finansowymi i operacyjnymi. Podczas każdej transakcji związanej z obliczaniem podatku wartości pól zdefiniowanych w tabelach reguł możliwości stosowania są zbierane i wysyłane do usługi obliczania podatku w celu obliczenia. W wersji 40.46 dostępnych jest 57 wstępnie zdefiniowanych modeli danych następujących typów transakcji: zamówienia zakupu, zamówienia sprzedaży, zamówienia przeniesienia, zapotrzebowania na zakup, zapytania ofertowe i oferty sprzedaży.
 
 ## <a name="version-updates-and-restrictions"></a>Aktualizacje i ograniczenia wersji
 
@@ -134,3 +134,4 @@ Wiersz transakcji zawiera 26 modeli danych jako pola. Podobnie jak w przypadku p
 | Jednostka                          | <ul><li>**Zamówienie sprzedaży:** jednostka</li><li>**Zamówienie zakupu:** jednostka</li><li>**Zamówienie przeniesienia — wysyłka:** jednostka</li><li>**Zamówienie przeniesienia — przyjęcie:** jednostka</li><li>**Zapotrzebowania na zakup:** jednostka</li><li>**Zapytanie ofertowe:** jednostka</li><li>**Oferta sprzedaży:** jednostka</li></ul> |
 | Numer wariantu                | <ul><li>**Zamówienie sprzedaży:** numer wariantu</li><li>**Zamówienie zakupu:** numer wariantu</li><li>**Oferta sprzedaży:** numer wariantu</li></ul> |
 | Magazyn                     | <ul><li>**Zamówienie sprzedaży:**<ol><li>Wiersz &gt; Magazyn</li><li>Produkt &gt; Magazyn</li></ol></li><li>**Zamówienie zakupu:**<ol><li>Wiersz &gt; Magazyn</li><li>Produkt &gt; Magazyn</li></ol></li><li>**Zamówienie przeniesienia — wysyłka:** z magazynu</li><li>**Zamówienie przeniesienia — przyjęcie:** do magazynu</li><li>**Zapotrzebowanie na zakup:** wiersz &gt; Magazyn</li><li>**Zapytanie ofertowe:** wiersz &gt; Magazyn</li><li>**Oferta sprzedaży:**<ol><li>Wiersz &gt; Magazyn</li><li>Produkt &gt; Magazyn</li></ol></li></ul> |
+

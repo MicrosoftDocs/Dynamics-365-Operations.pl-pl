@@ -1,6 +1,6 @@
 ---
 title: Przegląd budżetu
-description: Prawie każda firma, która używa funkcji finansowych w Microsoft Dynamics 365 Finance, będzie musiała mieć możliwość tworzenia raportów porównujących kwoty budżetowe z rzeczywistymi. Ten artykuł wyjaśnia minimalną konfigurację niezbędną do tworzenia budżetów w programie Finance and Operations lub ich wczytywania z innych programów.
+description: Prawie każda firma, która używa funkcji finansowych w Microsoft Dynamics 365 Finance, będzie musiała mieć możliwość tworzenia raportów porównujących kwoty budżetowe z rzeczywistymi. Ten artykuł wyjaśnia minimalną konfigurację niezbędną do tworzenia budżetów w aplikacjach finansowych i operacyjnych lub ich wczytywania z innych programów.
 author: panolte
 ms.date: 04/29/2021
 ms.topic: overview
@@ -17,20 +17,20 @@ ms.search.region: global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 48fcfec7126b4835b7d05e431bbc6ad7b9176bbe
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 380afc399a050215bb2d7b1e5ddb20088226f654
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710421"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068969"
 ---
-# <a name="budgeting-overview"></a>Omówienie budżetu
+# <a name="budgeting-overview"></a>Omówienie budżetu 
 
 [!include [banner](../includes/banner.md)]
 
-Prawie każda firma, która używa funkcji finansowych w Microsoft Dynamics 365 Finance, będzie musiała mieć możliwość tworzenia raportów porównujących kwoty budżetowe z rzeczywistymi. Ten artykuł wyjaśnia minimalną konfigurację niezbędną do tworzenia budżetów w programie Finance and Operations lub ich wczytywania z innych programów.
+Prawie każda firma, która używa funkcji finansowych w Microsoft Dynamics 365 Finance, będzie musiała mieć możliwość tworzenia raportów porównujących kwoty budżetowe z rzeczywistymi. Ten artykuł wyjaśnia minimalną konfigurację niezbędną do tworzenia budżetów w aplikacjach finansowych i operacyjnych lub ich wczytywania z innych programów.
 
-## <a name="overview"></a>Przegląd
+## <a name="overview"></a>Omówienie
 
 Zatwierdzony budżet dla firmy jest przechowywany w dokumencie pod nazwą *wpisu do rejestru budżetu*. Wiersze dokumentu wpisu rejestru budżetu są nazywane zapisami *konta budżetu* i zawierają informacje o wymiarach finansowych, datach i kwotach zatwierdzonego budżetu. Dokument z wpisami rejestru budżetu jest zintegrowany z podstawowymi raportami finansowymi oraz stronami zapytań, na których porównywane są rzeczywiste kwoty w księgach z kwotami ustalonymi w budżecie. 
 
@@ -89,3 +89,4 @@ Firma, która korzysta z funkcji planowania budżetu może tworzyć i używać *
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

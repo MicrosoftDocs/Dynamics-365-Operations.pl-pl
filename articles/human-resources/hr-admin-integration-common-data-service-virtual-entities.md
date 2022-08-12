@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0154faec8a9f3e968ea1b665e2a815cc9ec02379
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 45155dba5063981eb3aeeed4dda1d79a57b7c8af
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8899738"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067107"
 ---
 # <a name="configure-dataverse-virtual-tables"></a>Konfigurowanie tabel wirtualnych usługi Dataverse
 
@@ -121,10 +121,10 @@ Następnym krokiem jest skonfigurowanie źródła danych tabeli wirtualnej w śr
 
 4. W oknie **Centrum kondycji rozwiązania** wybierz ikonę **Wyszukiwanie zaawansowane** w prawym górnym rogu strony aplikacji.
 
-5. Na stronie **Wyszukiwanie zaawansowane**, z listy rozwijanej **Wyszukaj** wybierz pozycję **Konfiguracje wirtualnego źródła danych Finanse i Działania**.
+5. Na stronie **Wyszukiwanie zaawansowane**, z listy rozwijanej **Wyszukaj** wybierz pozycję **Konfiguracje wirtualnego źródła danych aplikacji finansowych i operacyjnych**.
 
    > [!NOTE]
-   > Instalacja aplikacji tabel wirtualnych z poprzedniego kroku konfiguracji może potrwać kilka minut. Jeśli na liście nie opcji **Konfiguracje wirtualnego źródła danych Finanse i Działania**, zaczekaj minutę i odśwież listę.
+   > Instalacja aplikacji tabel wirtualnych z poprzedniego kroku konfiguracji może potrwać kilka minut. Jeśli na liście nie opcji **Konfiguracje wirtualnego źródła danych aplikacji finansowych i operacyjnych**, zaczekaj minutę i odśwież listę.
 
 6. Wybierz opcję **Wyniki**.
 
@@ -218,3 +218,4 @@ W okienku slideout wyświetlane są najnowsze wyniki wykonania procesu. Można p
 [Omówienie tworzenia aplikacji w Power Apps](/powerapps/maker/)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

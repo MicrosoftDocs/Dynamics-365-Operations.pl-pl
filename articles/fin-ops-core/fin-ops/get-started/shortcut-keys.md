@@ -1,8 +1,8 @@
 ---
 title: Skróty klawiaturowe
-description: W tym artykule przedstawiono omówienie kombinacji klawiszy skrótów, które mogą być używane podczas pracy z aplikacjami Finanse i Działania.
+description: W tym artykule przedstawiono omówienie kombinacji klawiszy skrótów, które mogą być używane podczas pracy z aplikacjami finansowymi i operacyjnymi.
 author: jasongre
-ms.date: 03/03/2022
+ms.date: 07/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f0f833e3a6d45329fd8a69af658f392df32e4db
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 67e1904807dfe5122de3d3ead97c2e2c11ed213d
+ms.sourcegitcommit: bd2d6a86a7fd4b4f6f86656998f7a8844f949e42
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866125"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "9140448"
 ---
 # <a name="keyboard-shortcuts"></a>Skróty klawiaturowe
 
@@ -197,6 +197,7 @@ Użytkownicy mogą zapoznawać się z aktualnie dostępnymi skrótami bezpośred
 | Zamknij listę nawigacji w formularzu Szczegóły (z wyróżnieniem na liście nawigacji) | Esc                        |
 | Przejdź do zawartości strony głównej (gdy fokus jest w innym okienku)                    | Alt+M, M                    |
 | Przejdź do okienka pola informacji (może obejmować jego otwarcie)                       | Alt+M, B lub Ctrl+F2         |
+| Przechodzenie do następnego objaśnienia funkcji                                              | Alt+M,C                    |
 
 > [!NOTE]
 > Funkcja **Usprawnienie działania tabulatorów w formularzach pełnostronicowych**, wprowadzona w wersji 10.0.26, pozwala użytkownikom przechodzić przez wszystkie regiony strony bez konieczności poruszania się między regionami za pomocą myszy lub dedykowanego skrótu klawiaturowego. Nadal możesz używać istniejących skrótów klawiaturowych (takich jak skróty klawiszowe Alt+M), aby szybko przechodzić między regionami na stronie.
@@ -269,3 +270,4 @@ W części Zarządzanie fokusem opisano sposób obsługi fokusu użytkownika w a
 [Skróty klawiaturowe dla analizy brakujących kont](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

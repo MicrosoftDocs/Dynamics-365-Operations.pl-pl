@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f032f95377fdc6f8ec7fbbfa7aadab8fc448be5d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: fb0fbfcceece2883c32a266bcbe659211b0b56ce
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577775"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069735"
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a>Konfigurowanie procesu uzupełnienia minimalnej i maksymalnej ilości
 
 [!include [banner](../../includes/banner.md)]
 
-W tej procedurze pokazano sposób konfigurowania nowego procesu uzupełniania zapasów, który wykorzystuje strategię minimalnej/maksymalnej ilości uzupełniania. Jeśli ilość zapasów spadnie poniżej minimalnego poziomu, zostanie utworzona praca uzupełnienia lokalizacji. W procedurze pokazano również, jak używać stałych lokalizacji pobrania, aby pozwolić na uzupełnianie zapasów nawet gdy ilość zapasów spadnie poniżej minimalnego poziomu, oraz jak włączyć regularne wykonywanie procesu uzupełniania przy użyciu zadania wsadowego. Te zadania zazwyczaj wykonuje kierownik magazynu. Tę procedurę można wykonać na danych firmy demonstracyjnych USMF przy użyciu przykładowych wartości znajdujących się poniżej albo na faktycznych danych swojej firmy. Jeśli korzystasz z własnych danych, upewnij się, że masz magazyn, w którym włączono obsługę procesów zarządzania magazynem.
+W tej procedurze pokazano sposób konfigurowania nowego procesu uzupełniania zapasów, który wykorzystuje strategię minimalnej/maksymalnej ilości uzupełniania. Jeśli ilość zapasów spadnie poniżej minimalnego poziomu, zostanie utworzona praca uzupełnienia lokalizacji. W procedurze pokazano również, jak używać stałych lokalizacji pobrania, aby pozwolić na uzupełnianie zapasów nawet gdy ilość zapasów spadnie poniżej minimalnego poziomu, oraz jak włączyć regularne wykonywanie procesu uzupełniania przy użyciu zadania wsadowego. Te zadania zazwyczaj wykonuje kierownik magazynu. Tę procedurę można wykonać na danych firmy demonstracyjnych USMF przy użyciu przykładowych wartości znajdujących się poniżej albo na faktycznych danych swojej firmy. Jeśli korzystasz z własnych danych, upewnij się, że masz magazyn, w którym włączono obsługę procesów zarządzania magazynem (WMS).
 
 
 ## <a name="create-a-fixed-picking-location"></a>Tworzenie stałej lokalizacji pobrania

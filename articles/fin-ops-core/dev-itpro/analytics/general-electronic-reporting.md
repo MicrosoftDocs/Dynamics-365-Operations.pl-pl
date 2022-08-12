@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 65f7a642d3b2c2ddfca1e2d92570b49ef2f8c2b4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1f3853e0c1da0a5abb3f92171370cc4aeabbd829
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869265"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109589"
 ---
 # <a name="electronic-reporting-er-overview"></a>Omówienie raportowania elektronicznego (ER)
 
@@ -66,7 +66,7 @@ ER obecnie obsługuje arkusze w formatach TEKST, XML, JSON, PDF, Microsoft Word,
 
 Aparat GER ma następujące cechy:
 
-- Stanowi jedno wspólne narzędzie do raportowania elektronicznego w różnych domenach oraz zastępuje ponad 20 różnych innych aparatów obsługujących różne formy raportowania elektronicznego dla Finance and Operations.
+- Stanowi jedno wspólne narzędzie do raportowania elektronicznego w różnych domenach oraz zastępuje ponad 20 różnych innych aparatów obsługujących różne formy raportowania elektronicznego dla aplikacji finansowych i operacyjnych.
 - Izoluje format raportu od bieżącej implementacji. Innymi słowy format można stosować do różnych wersji.
 - Obsługuje tworzenie niestandardowego formatu opartego na oryginalnym formacie. Zawiera również funkcje automatycznego uaktualniania dostosowanego formatu po dokonaniu zmian w oryginalnym formacie spowodowanych koniecznością przetłumaczenia/dostosowania.
 - Staje się podstawowym standardowym narzędziem do obsługi wymagań tłumaczeniowych w raportach elektronicznych — dla oprogramowania zarówno firmy Microsoft, jak i jej partnerów.
@@ -126,7 +126,7 @@ Konfiguracja ER jest udostępniana firmom w aplikacji.
 
 #### <a name="provider"></a><a name="Provider"></a>Dostawca
 
-Dostawca ER określa stronę (podmiotu) używaną do wskazania autora (właściciela) konfiguracji ER. Aplikacja ER pozwala zarządzać listą dostawców konfiguracji. Konfiguracje formatu publikowane dla dokumentów elektronicznych w ramach rozwiązania Finance and Operations są oznaczone jako należące do dostawcy konfiguracji **Microsoft**.
+Dostawca ER określa stronę (podmiotu) używaną do wskazania autora (właściciela) konfiguracji ER. Aplikacja ER pozwala zarządzać listą dostawców konfiguracji. Konfiguracje formatu publikowane dla dokumentów elektronicznych w ramach aplikacji finansowych i operacyjnych są oznaczone jako należące do dostawcy konfiguracji **Microsoft**.
 
 Aby uzyskać informacje o rejestrowaniu nowego dostawcy ER, odtwórz przewodnik po zadaniu **ER Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego** (część procesu biznesowego **7.5.4.3 Nabywanie/opracowywanie składników usług/rozwiązań informatycznych (10677)**).
 
@@ -143,7 +143,7 @@ Konfiguracje ER są przechowywane w repozytorium ER. Obecnie obsługiwane są na
 
 Repozytorium **Biblioteka udostępnionych elementów LCS** zapewnia dostęp do listy konfiguracji w bibliotece aktywów wspólnych w Lifecycle Services (LCS). Tego rodzaju repozytorium ER może być rejestrowane tylko dla dostawcy firmy Microsoft. Z biblioteki aktywów wspólnych LCS można importować najnowsze wersje konfiguracji ER do bieżącego wystąpienia.
 
-Repozytorium **Projekt usługi LCS** zapewnia dostęp do listy konfiguracji określonego projektu LCS (biblioteki zasobów projektu usługi LCS) wybranego podczas rejestracji repozytorium. Narzędzie ER umożliwia przekazywanie udostępnionych konfiguracji z bieżącego wystąpienia do konkretnego repozytorium **Projekt usługi LCS**. Można także importować konfiguracje z repozytorium **Projekt usługi LCS** do bieżącego wystąpienia aplikacji Finanse i Operacje.
+Repozytorium **Projekt usługi LCS** zapewnia dostęp do listy konfiguracji określonego projektu LCS (biblioteki zasobów projektu usługi LCS) wybranego podczas rejestracji repozytorium. Narzędzie ER umożliwia przekazywanie udostępnionych konfiguracji z bieżącego wystąpienia do konkretnego repozytorium **Projekt usługi LCS**. Można także importować konfiguracje z repozytorium **Projekt usługi LCS** do bieżącego wystąpienia aplikacji finansowych i operacyjnych.
 
 Repozytorium **systemu plików** udostępnia listę konfiguracji, które znajdują się w postaci plików xml w określonym folderze lokalnego systemu plików komputera, na którym działa usługa AOS. Wymagany folder jest wybierany w procesie rejestracji repozytorium. Można także importować konfiguracje z repozytorium **System plików** do bieżącego wystąpienia. 
 
@@ -270,3 +270,4 @@ Lista konfiguracji raportowania elektronicznego dla aplikacji Finanse jest aktua
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

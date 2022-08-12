@@ -1,6 +1,6 @@
 ---
 title: Usuwanie wystąpienie
-description: Ten artykuł przeprowadzi użytkownika przez proces usuwania środowiska testowego lub produkcyjnego dla oprogramowania Microsoft Dynamics 365 Human Resources.
+description: W tym artykule wyjaśniono przebieg procesu usuwania wersji testowej lub środowiska produkcyjnego dla oprogramowania Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 08/11/2021
 ms.topic: article
@@ -14,16 +14,22 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4256938be70f301d3d7b7663f10addb19725b048
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0ce676c93e133cc04ad9c49417ed2ca0d6791e93
+ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8859641"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "9178481"
 ---
 # <a name="remove-an-instance"></a>Usuwanie wystąpienie
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+_**Zastosowanie:** Ustanowienie rozwiązania Human Resources w samodzielnym wystąpieniu infrastruktury_ 
+
+> [!NOTE]
+> Od lipca 2022 roku nie można tworzyć nowych środowisk Human Resources na samodzielnej infrastrukturze Human Resources, ani nowych projektów Lifecycle Services (LCS) Microsoft Dynamics. Klienci mogą wdrażać środowiska zasobów ludzkich na infrastrukturze finansowej i operacyjnej. Więcej informacji: [Ustanowienie rozwiązania Human Resources w infrastrukturze związanej z finansami i operacjami](/hr-admin-setup-provision-fo.md).
+
+> [!IMPORTANT]
+> Infrastruktura aplikacji finansowych i operacyjnych obsługuje usuwanie środowiska. Aby uzyskać więcej informacji na temat usuwania środowiska, zobacz [Usuwanie środowiska](../fin-ops-core/dev-itpro/deployment/deployenvironment-newinfrastructure.md#delete-an-environment).
 
 W tym artykule wyjaśniono przebieg procesu usuwania wersji testowej lub środowiska produkcyjnego dla oprogramowania Microsoft Dynamics 365 Human Resources.
 
@@ -42,7 +48,10 @@ Istniejące środowisko testowe zostanie usunięte. Po usunięciu środowiska mo
 
 Temat ten opiera się na założeniu, że użytkownik dokonał zakupu aplikacji Human Resources u dostawcy rozwiązań chmurowych (CSP) lub w ramach umowy na architekturę przedsiębiorstwa (EA). 
 
-Ponieważ środowisko aplikacji Human Resources jest „zawarte” w jednym środowisku usługi Power Apps, dostępne są dwie opcje do rozważenia. Pierwsza opcja polega na usunięciu całego środowiska usługi Power Apps, a druga na usunięciu tylko modułu Human Resources. Pierwsza opcja jest preferowana, jeżeli środowisko usługi Power Apps utworzono specjalnie do obsługi aplikacji Human Resources i dopiero rozpoczęto wdrażanie lub nie ma żadnych wiążących integracji. Drugą opcję należy zastosować, jeśli istnieje ustabilizowane środowisko usługi Power Apps wypełnione sformatowanymi danymi wykorzystywanymi w usługach Power Apps i Power Automate.
+Ponieważ jedno środowisko zasobów ludzkich jest zawarte w jednym środowisku Power Apps, przy usuwaniu środowiska należy rozważyć dwie opcje: 
+- **Usuń całe środowisko Power Apps.** Ta opcja jest preferowana, gdy środowisko Power Apps zostało utworzone w celu dostarczenia zasobów ludzkich, wdrażanie dopiero się rozpoczęło lub nie masz żadnych ustalonych integracji.  
+- **Usuń tylko zasoby ludzkie.** Ta opcja jest odpowiednia, gdy istnieje środowisko Power Apps, które jest wypełnione danymi używanymi w Microsoft Power Apps i Power Automate.
+
 
 > [!Important]
 > Przed usunięciem środowiska usługi Power Apps upewnij się, że nie jest ono używane do integrowania sformatowanych danych poza zakresem Human Resources. Należy również zwrócić uwagę, że nie można usuwać domyślnych środowisk usługi Power Apps. 
@@ -73,7 +82,7 @@ Aby usunąć środowisko Human Resources z istniejącego środowiska usługi Pow
 
 ## <a name="recover-a-soft-deleted-environment"></a>Odzyskiwanie wstępnie usuniętego środowiska
 
-W przypadku usunięcia środowiska Power Apps, z którym jest połączone środowisko Human Resources, stan środowiska Human Resources w usługach w ramach Lifecycle Services zostanie **Delikatnie usunięty**. W takim przypadku użytkownicy nie mogą łączyć się z Human Resources.
+W przypadku usunięcia środowiska Power Apps, z którym jest połączone środowisko Human Resources, stan środowiska Human Resources w usługach w ramach LCS zostanie **Delikatnie usunięty**. W takim przypadku użytkownicy nie mogą łączyć się z Human Resources.
 
 Aby przywrócić środowisko:
 

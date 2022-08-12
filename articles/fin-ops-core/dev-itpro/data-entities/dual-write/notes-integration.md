@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 8e1444aa311bb2dc74705a3791e58c3187ecd8ea
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 19a1fd53f19575a16ee8d8b7391c30f0cacf26a8
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876723"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111465"
 ---
 # <a name="note-integration"></a>Integracja z notatkami
 
@@ -30,7 +30,7 @@ Informacje o odbiorcy można sklasyfikować w następujący sposób:
 + **Informacje przydatne dla użytkownika Dynamics 365** – Na przykład klient, który kupuje urządzenie Surface, wprowadza specjalne instrukcje, które wskazują, że urządzenie powinno zostać zapakowane na prezent przed dostawą. Te instrukcje to informacje umożliwiające wykonanie czynności, które powinien obsługiwać pracownik firmy Contoso odpowiedzialny za pakowanie.
 + **Informacje niepodlegające działaniu** – Na przykład klient odwiedza sklep Contoso i podczas rozmowy ze współpracownikiem wyraża zainteresowanie grami i akcesoriami do gier *Halo*. Pracownik sklepu odnotowuje te informacje. Następnie aparat rekomendacji produktów używa go do sporządzania rekomendacji dla odbiorcy.
 
-Na ogół informacje dotyczące akcji są przechwytywane jako *działania* w aplikacjach Finanse i Działania i aplikacjach dotyczącychrelacji z klientami. Na ogół informacje nie podlegające akcjom są przechwytywane jako *notatki* w aplikacjach Finanse i Działania i jako *adnotacje* w aplikacjach dotyczących relacji z klientami.
+Na ogół informacje dotyczące akcji są przechwytywane jako *działania* w aplikacjach finansowych i operacyjnych i aplikacjach dotyczących relacji z klientami. Na ogół informacje nie podlegające akcjom są przechwytywane jako *notatki* w aplikacjach finansowych i operacyjnych i jako *adnotacje* w aplikacjach dotyczących relacji z klientami.
 
 > [!TIP]
 > Chociaż notatki są przeznaczone dla informacji niepodlegających działaniu, aplikacje nie uniemożliwiają ich używania do przechowywania i obsługi informacji, które można wykonać, jeśli chcesz ich używać w ten sposób.
@@ -39,7 +39,7 @@ Firma Microsoft obecnie udostępnia funkcje integracji notatek. (Funkcjonalnoś�
 
 ## <a name="create-a-note-in-a-customer-engagement-app"></a>Utwórz notatkę w aplikacji angażującej klientów
 
-Aby utworzyć notatkę w aplikacji angażującej klientów, a następnie zsynchronizować ją z aplikacją Finanse i Działania, wykonaj następujące kroki.
+Aby utworzyć notatkę w aplikacji angażującej klientów, a następnie zsynchronizować ją z aplikacjami finansowymi i operacyjnymi, wykonaj następujące kroki.
 
 1. W aplikacji dotyczącej relacji z klientami otwórz rekord konta odbiorcy.
 2. W okienku **Osi czasu** wybierz znak plus (**+**), a następnie wybierz pozycję **Notatka**, aby utworzyć notatkę.
@@ -54,7 +54,7 @@ Aby utworzyć notatkę w aplikacji angażującej klientów, a następnie zsynchr
 
     ![Nowa notatka na osi czasu dla odbiorcy.](media/notes-ce-3.png)
 
-4. Zaloguj się do aplikacji Finanse i Działania i otwórz ten sam rekord odbiorcy. Zwróć uwagę, że przycisk **Załączniki** (symbol spinacza) w prawym górnym rogu wskazuje, że rekord ma załącznik.
+4. Zaloguj się do aplikacji finansowych i operacyjnych i otwórz ten sam rekord odbiorcy. Zwróć uwagę, że przycisk **Załączniki** (symbol spinacza) w prawym górnym rogu wskazuje, że rekord ma załącznik.
 
     ![Powiadomienie o załączniku.](media/notes-ce-4.png)
 
@@ -62,17 +62,17 @@ Aby utworzyć notatkę w aplikacji angażującej klientów, a następnie zsynchr
 
     ![Notatka z aplikacji angażującej klienta.](media/notes-ce-5.png)
 
-Wszelkie aktualizacje notatki są synchronizowane między aplikacją Finanse i Działania a aplikacją do obsługi klienta.
+Wszelkie aktualizacje notatki są synchronizowane między aplikacjami finansowymi i operacyjnymi a aplikacją do obsługi klienta.
 
-## <a name="create-a-note-in-a-finance-and-operations-app"></a>Utwórz notatkę w aplikacji Finanse i Działania
+## <a name="create-a-note-in-a-finance-and-operations-app"></a>Utwórz notatkę w aplikacjach finansowych i operacyjnych
 
-Możesz również utworzyć notatkę w aplikacji Finanse i Działania, która zostanie zsynchronizowana z aplikacją do obsługi klienta.
+Możesz również utworzyć notatkę w aplikacjach finansowych i operacyjnych, która zostanie zsynchronizowana z aplikacją do obsługi klienta.
 
-Aby utworzyć notatkę w aplikacji Finanse i Działania, a następnie zsynchronizować ją z aplikacją do obsługi klienta, wykonaj poniższe kroki.
+Aby utworzyć notatkę w aplikacji angażującej klientów, a następnie zsynchronizować ją z aplikacjami finansowymi i operacyjnymi, wykonaj następujące kroki.
 
-1. W aplikacji Finanse i Działania, na stronie **Załączniki** wybierz **Nowa** \> **Notatka**.
+1. W aplikacjach finansowych i operacyjnych, na stronie **Załączniki** wybierz **Nowa** \> **Notatka**.
 
-    ![Tworzenie notatki w aplikacji Finanse i Działania.](media/notes-fo-1.png)
+    ![Tworzenie notatki w aplikacjach finansowych i operacyjnych.](media/notes-fo-1.png)
 
 2. Wprowadź tytuł i krótki zestaw instrukcji, a następnie wybierz polecenie **Zapisz**.
 
@@ -84,17 +84,17 @@ Aby utworzyć notatkę w aplikacji Finanse i Działania, a następnie zsynchroni
 
 Notatkę można sklasyfikować jako wewnętrzną lub zewnętrzną.
 
-- W aplikacji Finanse i Działania, na stronie **Załączniki** otwórz notatkę, a następnie w polu **Ograniczenie** wybierz pozycję **Wewnętrzna** lub **Zewnętrzna**.
+- W aplikacjach finansowych i operacyjnych, na stronie **Załączniki** otwórz notatkę, a następnie w polu **Ograniczenie** wybierz pozycję **Wewnętrzna** lub **Zewnętrzna**.
 
     ![Pole ograniczenia.](media/notes-fo-4.png)
 
 Można również utworzyć adres URL.
 
-1. W aplikacji Finanse i Działania, na stronie **Załączniki** wybierz **Nowa** \> **URL**.
+1. W aplikacjach finansowych i operacyjnych, na stronie **Załączniki** wybierz **Nowa** \> **URL**.
 2. Wprowadź tytuł i adres URL.
 3. W polu **Ograniczenie** wybierz opcję **Wewnętrzna** lub **Zewnętrzna**.
 
-    ![Tworzenie URL w aplikacji Finanse i Działania.](media/notes-fo-5.png)
+    ![Tworzenie URL w aplikacjach finansowych i operacyjnych.](media/notes-fo-5.png)
 
 4. Wybierz opcję **Zapisz**.
 
@@ -109,7 +109,7 @@ Można również utworzyć adres URL.
 
 Integracja notatek obejmuje zbiór map tabel, które współpracują podczas interakcji danych, jak pokazano w poniższej tabeli.
 
-| Aplikacje Finanse i Działania | Aplikacja Customer Engagement | Opis |
+| Aplikacje finansowe i operacyjne | Aplikacja Customer Engagement | Opis |
 |----------------------------|-------------------------|-------------|
 | [Załączniki odbiorcy](mapping-reference.md#230) | Adnotacje | Firmy, które używają zwykłego tekstu i adresów URL do przechwytywania informacji specyficznych dla klienta (zarówno dla organizacji, jak i osób). |
 | [Załączniki dokumentów dostawców](mapping-reference.md#231) | Adnotacje | Firmy, które używają zwykłego tekstu i adresów URL do przechwytywania informacji specyficznych dla dostawcy (zarówno dla organizacji, jak i osób). |
@@ -121,3 +121,4 @@ Integracja notatek obejmuje zbiór map tabel, które współpracują podczas int
 Po zainstalowaniu rozwiązania notatek nie można go odinstalować. 
 
 Aby uzyskać więcej informacji, zobacz [Odniesienie do mapowania z podwójnym zapisem](mapping-reference.md).
+

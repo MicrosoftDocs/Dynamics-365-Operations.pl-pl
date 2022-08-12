@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 2ef4fb1a51bd92db440841eb2a9d9ebcce0e1b1d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 599cfdab8232cab28c59c5098094c4afd351df77
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872948"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112403"
 ---
 # <a name="dual-write-overview"></a>Omówienie podwójnego zapisu
 
@@ -26,9 +26,9 @@ ms.locfileid: "8872948"
 
 ## <a name="what-is-dual-write"></a>Co to jest podwójny zapis?
 
-Podwójny zapis to gotowa infrastruktura umożliwiająca współpracę w czasie rzeczywistym między aplikacjami oferującymi spersonalizowaną obsługę klienta a aplikacjami Finanse i Operacje. Gdy dane dotyczące odbiorców, produktów, osób i operacji przepływają poza granice aplikacji, wszystkie działy w organizacji zyskują możliwości.
+Podwójny zapis to gotowa infrastruktura umożliwiająca współpracę w czasie rzeczywistym między aplikacjami oferującymi spersonalizowaną obsługę klienta a aplikacjami finansowymi i operacyjnymi. Gdy dane dotyczące odbiorców, produktów, osób i operacji przepływają poza granice aplikacji, wszystkie działy w organizacji zyskują możliwości.
 
-Funkcja podwójnego zapisu zapewnia ściśle powiązaną, dwukierunkową integrację między aplikacjami Finanse i Operacje i Dataverse. Każda zmiana danych w aplikacjach Finanse i Operacje powoduje zapis do Dataverse, a zmiana danych w Dataverse powoduje zapis w aplikacjach Finanse i Operacje. Ten zautomatyzowany przepływ danych umożliwia korzystanie ze zintegrowanego środowiska użytkownika w aplikacjach.
+Funkcja podwójnego zapisu zapewnia ściśle powiązaną, dwukierunkową integrację między aplikacjami finansowymi i operacyjnymi Dataverse. Każda zmiana danych w aplikacjach Finanse i Operacje powoduje zapis do Dataverse, a zmiana danych w Dataverse powoduje zapis w aplikacjach finansowych i operacyjnych. Ten zautomatyzowany przepływ danych umożliwia korzystanie ze zintegrowanego środowiska użytkownika w aplikacjach.
 
 ![Relacja danych między aplikacjami.](media/dual-write-overview.jpg)
 
@@ -51,7 +51,7 @@ Infrastruktura podwójnego zapisu jest rozszerzalna i niezawodna i obejmuje nast
 
 ### <a name="application"></a>Zgłoszenie
 
-Podwójny zapis tworzy mapowanie między pojęciami w aplikacjach Finanse i Operacje i koncepcjami w aplikacjach służących do oferowania spersonalizowanej obsługi klienta. Ta integracja obsługuje następujące scenariusze:
+Podwójny zapis tworzy mapowanie między pojęciami w aplikacjach finansowych i operacyjnych koncepcjami w aplikacjach służących do oferowania spersonalizowanej obsługi klienta. Ta integracja obsługuje następujące scenariusze:
 
 + Zintegrowane dane główne odbiorcy
 + Dostęp do kart lojalnościowych odbiorcy i punktów lojalnościowych
@@ -80,15 +80,15 @@ Podwójny zapis dostarcza integrację danych między aplikacjami Microsoft Dynam
 
 ## <a name="what-does-dual-write-mean-for-developers-and-architects-of-customer-engagement-apps"></a><a id="developer-architect"></a>Co oznacza podwójny zapis dla programistów i architektów aplikacji do personalizowania obsługi klienta?
 
-Podwójny odpis automatyzuje przepływ danych między aplikacjami Finanse i Operacje i aplikacjami służącymi do personalizowania obsługi klienta. Podwójny zapis składa się z dwóch rozwiązań AppSource, które są zainstalowane w Dataverse. W rozwiązaniach jest rozszerzany schemat tabeli, wtyczki i przepływy pracy w ramach Dataverse, dzięki czemu można je skalować do rozmiarów ERP. W przypadku pomyślnej implementacji deweloperzy i architekci aplikacji do personalizowania obsługi klienta muszą zrozumieć te zmiany i współpracować z ich odpowiednikami w aplikacjach Finanse i Operacje.
+Podwójny odpis automatyzuje przepływ danych między aplikacjami finansowymi i operacyjnymi i aplikacjami służącymi do personalizowania obsługi klienta. Podwójny zapis składa się z dwóch rozwiązań AppSource, które są zainstalowane w Dataverse. W rozwiązaniach jest rozszerzany schemat tabeli, wtyczki i przepływy pracy w ramach Dataverse, dzięki czemu można je skalować do rozmiarów ERP. W przypadku pomyślnej implementacji deweloperzy i architekci aplikacji do personalizowania obsługi klienta muszą zrozumieć te zmiany i współpracować z ich odpowiednikami w aplikacjach finansowych i operacyjnych.
 
-Aby utworzyć równość z odpowiednikami aplikacji Finanse i Operacje, system podwójnego zapisu tworzy istotne zmiany w schemacie Dataverse. W przypadku zrozumienia planu można uniknąć przepracowania projektu i dodatkowej pracy w przyszłości.
+Aby utworzyć równość z odpowiednikami aplikacjach finansowych i operacyjnych, system podwójnego zapisu tworzy istotne zmiany w schemacie Dataverse. W przypadku zrozumienia planu można uniknąć przepracowania projektu i dodatkowej pracy w przyszłości.
 
-+ Po zainstalowaniu pakietu podwójnego zapisu AppSource, w ramach Dataverse będą istniały nowe koncepcje, takie jak firma i strona. Te pojęcia pomagają aplikacjom utworzonym w Dataverse, takim jak m.in. Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Customer Service oraz Dynamics 365 Field Service, wchodzić w płynną interakcję z aplikacjami Finanse i Operacje.
++ Po zainstalowaniu pakietu podwójnego zapisu AppSource, w ramach Dataverse będą istniały nowe koncepcje, takie jak firma i strona. Te pojęcia pomagają aplikacjom utworzonym w Dataverse, takim jak m.in. Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Customer Service oraz Dynamics 365 Field Service, wchodzić w płynną interakcję z aplikacjami finansowymi i operacyjnymi.
 
 + Działania i uwagi są zunifikowane i rozwinięte, co pozwala na obsługę zarówno C1 (użytkowników systemu), jak i C2 (odbiorców systemu).
 
-+ Aby zapobiec utracie danych podczas przesyłania walut między aplikacjami Finanse i Operacje i Dataverse, można rozszerzyć liczbę miejsc dziesiętnych w typie danych Waluta dla aplikacji służących do spersonalizowanej obsługi klienta. Funkcja automatycznie tłumaczy istniejące wiersze na nowy stan rozszerzony na warstwie metadanych. W trakcie tego procesu wartość waluty jest tłumaczona na dane dziesiętne, a nie dane pieniężne, a wartość waluty obsługuje do 10 miejsc po przecinku. Ta funkcja jest opcjonalna. Organizacje, które nie potrzebują korzystać z więcej niż 4 miejsc po przecinku, nie muszą jej używać. Aby uzyskać więcej informacji, przejrzyj [migrację danych typu Waluta w systemie podwójnego zapisu](currrency-decimal-places.md).
++ Aby zapobiec utracie danych podczas przesyłania walut między aplikacjami finansowymi i operacyjnymi i Dataverse, można rozszerzyć liczbę miejsc dziesiętnych w typie danych Waluta dla aplikacji służących do spersonalizowanej obsługi klienta. Funkcja automatycznie tłumaczy istniejące wiersze na nowy stan rozszerzony na warstwie metadanych. W trakcie tego procesu wartość waluty jest tłumaczona na dane dziesiętne, a nie dane pieniężne, a wartość waluty obsługuje do 10 miejsc po przecinku. Ta funkcja jest opcjonalna. Organizacje, które nie potrzebują korzystać z więcej niż 4 miejsc po przecinku, nie muszą jej używać. Aby uzyskać więcej informacji, przejrzyj [migrację danych typu Waluta w systemie podwójnego zapisu](currrency-decimal-places.md).
 
 + [Efektywność danych](../../dev-tools/date-effectivity.md) zostanie dodana do Dataverse. Będzie obsługiwać przeszłe, obecne i przyszłe dane w tej samej tabeli.
 
@@ -99,3 +99,4 @@ Aby uzyskać więcej informacji o nadchodzących zmianach, zapoznaj się z [nowo
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f150c87b6d4e6575bc61a8f36bdf344ebba9c571
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4f57e995dfcc04de8384d15f238c45290b3c3cbd
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879287"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067625"
 ---
 # <a name="integration-with-finance-faq"></a>Integracja z często zadawanymi pytaniami Finance
 
@@ -88,7 +88,7 @@ Nie jest wymagana specjalna konfiguracja do obsługi wyjątków. Integrator dany
 
 ## <a name="can-i-set-up-bi-directional-integration"></a>Czy mogę skonfigurować dwukierunkową integrację?
 
-Nie. Integracja jest obecnie jednokierunkowa (z rozwiązania Human Resources do rozwiązania Finanse i Działania). Dostępny jest jednak domyślny szablon do wysyłania danych z rozwiązania Human Resources do rozwiązania Finance.
+Nie. Integracja jest obecnie jednokierunkowa (z rozwiązania Human Resources do aplikacji finansowych i operacyjnych). Dostępny jest jednak domyślny szablon do wysyłania danych z rozwiązania Human Resources do rozwiązania Finance.
 
 ## <a name="can-i-allow-record-deletion-as-part-of-my-integration"></a>Czy można zezwolić na usunięcie rekordu w ramach integracji?
 
@@ -118,7 +118,7 @@ Przyczyny tego błędu mogą być następujące:
 
 - Przeniesienie danych spowodowało zduplikowanie wyodrębnienia rekordów w lokalizacji źródłowej (Dataverse).
 
-- Przeniesienie danych zawiera wartości null dla pól, które są wymagane w Finanse i Działania. Sprawdź dane, które są w Dataverse i czy spełniają wymagania dotyczące Finanse i Działania.
+- Przeniesienie danych zawiera wartości null dla pól, które są wymagane w aplikacjach finansowych i operacyjnych. Sprawdź dane, które są w Dataverse i czy spełniają wymagania dotyczące Finanse i Działania.
 
 ## <a name="if-there-are-execution-errors-and-the-employee-id-didnt-sync-how-do-i-find-the-history-job-which-has-the-failed-employee-record"></a>Jeśli występują błędy wykonania i identyfikator pracownika nie został zsynchronizowany, jak znaleźć zadanie historii, które zawiera rekord pracownika, dla którego wystąpił błąd?
 
@@ -150,7 +150,7 @@ Jeśli jednostka jest obsługiwana, a dane są dostępne w Dataverse, sprawdź, 
 
 ## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-what-should-i-do"></a>Po zaimportowaniu adresów pracowników do Finance są one nieprawidłowe. Co należy zrobić?
 
-Sekwencja numerów dla **Identyfikatora lokalizacji** korzysta z takiego samego wzorca zarówno w Human Resources jaki i w Finance. Sekwencja numerów musi być unikatowa po obu stronach, żeby nie było żadnych konfliktów adresów podczas integrowania danych z Dataverse do Finanse i Działania.
+Sekwencja numerów dla **Identyfikatora lokalizacji** korzysta z takiego samego wzorca zarówno w Human Resources jaki i w Finance. Sekwencja numerów musi być unikatowa po obu stronach, żeby nie było żadnych konfliktów adresów podczas integrowania danych z Dataverse do aplikacji finansowych i operacyjnych.
 
 Podczas wprowadzania środowiska Human Resources należy sprawdzić, czy sekwencja numerów nie jest taka sama w Human Resources i Finanse i Działania. Sprawdź, czy wszystkie sekwencje numerów nie są identyczne tam gdzie dane mogą być obsługiwane przez oba systemy.
 
@@ -184,3 +184,4 @@ Odśwież jednostki danych w Finance, przechodząc do **Zarządzanie danymi \> P
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9a6b9cf8327f65371f8362a5729bb32746d900cd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ed83450592d85205743c9ff1aefd0e66e5d2b90c
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885994"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111997"
 ---
 # <a name="work-orders-and-fixed-assets"></a>Środki trwałe i zlecenia pracy
 
 [!include [banner](../../includes/banner.md)]
 
 
-W module Zarządzanie składnikami majątku, składniki majątku mogą być powiązane ze środkami trwałymi oraz można tworzyć zlecenia pracy dla tych składników. W przypadku korzystania z tej funkcji można zapoznać się z ogólnym przeglądem środków trwałych, powiązanych projektów inwestycyjnych oraz kosztami zarejestrowanymi w projektach inwestycyjnych w modułach **Zarządzanie projektami i ich księgowanie** oraz **Środki trwałe** w Microsoft Dynamics 365 for Finance and Operations.
+W module Zarządzanie składnikami majątku, składniki majątku mogą być powiązane ze środkami trwałymi oraz można tworzyć zlecenia pracy dla tych składników. W przypadku korzystania z tej funkcji można zapoznać się z ogólnym przeglądem środków trwałych, powiązanych projektów inwestycyjnych oraz kosztami zarejestrowanymi w projektach inwestycyjnych w module **Zarządzanie projektami i ich księgowanie** oraz w module **Środki trwałe** w aplikacjach finansowych i operacyjnych.
 
 >[!NOTE]
 >Pole **Numer środka trwałego** jest wypełniane tylko w projekcie zadania zlecenia pracy, jeśli w projekcie zadania zlecenia pracy jako typ projektu wybrano typ **Inwestycja**.

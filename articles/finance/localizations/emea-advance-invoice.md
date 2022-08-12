@@ -2,7 +2,7 @@
 title: Faktury zaliczkowe dla Europy Wschodniej
 description: Ten artykuł zawiera informacje dotyczące faktur zaliczkowych dla Europy Wschodniej. Faktura zaliczkowa jest dokumentem, który można utworzyć dla odbiorcy lub dostawcy. Podaje ona kwotę, która ma zostać opłacona z góry z tytułu zamówienia sprzedaży.
 author: EvgenyPopovMBS
-ms.date: 05/25/2022
+ms.date: 07/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: epopov
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: c722d8215c2b65e24008042c9a4d65bb419ad46a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bcf8424b311b595a114d3429fa7a3252e47e643d
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886291"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135930"
 ---
 # <a name="advance-invoices-for-eastern-europe"></a>Faktury zaliczkowe dla Europy Wschodniej
 
@@ -38,6 +38,26 @@ Funkcjonalność faktur zaliczkowych umożliwia wykonywanie następujących zada
 - Łączenie przedpłat otrzymywanych od odbiorców z fakturami zaliczkowymi (przed lub po zaksięgowaniu przedpłaty).
 - Zmiana księgowania podatku VAT w zaksięgowanych przedpłatach (czyli konwertowanie przedpłaty na płatność lub płatności na przedpłatę albo zmiana daty księgowania, stawka podatku lub kwoty).
 - *Dotyczy tylko Republiki Czeskiej*: tworzenie dokumentu podatkowego w celu dostarczenia należnego podatku VAT.
+
+Ten artykuł zawiera następujące sekcje:
+
+- [Faktury zaliczkowe dla Polski](#advance-invoices-for-poland)
+- [Konfigurowanie modułu rozrachunków z odbiorcami dla faktur zaliczkowych](#set-up-accounts-receivable-for-advance-invoices)
+- [Tworzenie faktury płatności zaliczkowej dla odbiorcy](#create-a-customer-advance-invoice)
+- [VAT na fakturach zaliczkowych](#vat-on-advance-invoices)
+- [Łączenie faktury zaliczkowej z zamówieniem sprzedaży lub fakturą niezależną](#link-an-advance-invoice-to-a-sales-order-or-a-free-text-invoice)
+- [Utwórz faktury zaliczkowej dla odbiorcy na podstawie zamówienia sprzedaży](#create-a-customer-advance-invoice-from-a-sales-order)
+- [Tworzenie faktury płatności zaliczkowej odbiorcy na podstawie faktury niezależnej](#create-a-customer-advance-invoice-from-a-free-text-invoice)
+- [Drukowanie faktury zaliczkowej](#print-an-advance-invoice)
+- [Tworzenie propozycji płatności na podstawie faktury zaliczkowej](#create-a-payment-proposal-from-an-advance-invoice)
+- [Połącz przedpłaty z fakturą zaliczkową](#link-a-prepayment-to-an-advance-invoice)
+- [Łączenie faktury zaliczkowej z przedpłatą](#link-an-advance-invoice-to-a-prepayment)
+- [Faktury korygujące do faktury zaliczkowej](#advance-invoice-credit-notes)
+- [Dokumenty podatkowe — Republika Czeska](#tax-documents-for-the-czech-republic)
+- [Konfigurowanie modułu rozrachunków z dostawcami dla faktur zaliczkowych](#set-up-accounts-payable-for-advance-invoices)
+- [Tworzenie faktury zaliczkowej dla dostawcy](#create-a-vendor-advance-invoice)
+- [Użyj funkcji obsługi faktur zaliczkowych i przedpłat](#use-the-advance-invoice-and-prepayment-handling-functionality)
+- [Odwrócenie kwot podatku od sprzedaży dla Republiki Czeskiej](#reversing-sales-tax-amounts-for-czech-republic)
 
 ## <a name="advance-invoices-for-poland"></a>Faktury zaliczkowe dla Polski
 
@@ -243,5 +263,33 @@ Aby połączyć fakturę zaliczkową z zamówieniem zakupu, wykonaj następując
     | Procent | Określ procent przedpłaty dla zamówienia zakupu. |
     | Aktualizacja zakupu | Wybierz opcję. Kwota faktury zaliczkowej będzie obliczana na podstawie kwoty zamówienia zakupu dla danych pozycji. |
     | Profil księgowania z użyciem załącznika arkusza zaliczki | Określ profil księgowania przedpłaty. |
+
+## <a name="use-the-advance-invoice-and-prepayment-handling-functionality"></a>Użyj funkcji obsługi faktur zaliczkowych i przedpłat
+
+W procesie biznesowym możesz użyć funkcji **Faktura zaliczkowa** i **Obsługa zaliczek**. Oto przykład:
+
+1. Użytkownik przesyła klientowi fakturę zaliczkową z VAT w celu dokonania przedpłaty. Faktura zaliczkowa nie jest zaksięgowana w księdze.
+2. Użytkownik tworzy i księguje przedpłaty bez podatku VAT.
+3. Użytkownik tworzy obsługę przedpłaty i wiąże ją z fakturą zaliczkową. Następnie użytkownik księguje obsługę przedpłat i tworzy dokument podatku. System księguje podatek VAT w księdze i wiąże go z przedpłatą.
+
+> [!NOTE]
+> Wyczyść wartość w polu **Profil księgowania** na skróconej karcie **Faktura zaliczkowa** na karcie **Uaktualnianie** w zakładce **Parametry należności**. Podczas tworzenia faktury zaliczkowej ustaw opcję **Księguj podatek** na wartość **Tak**.
+
+Aby utworzyć obsługę przedpłaty i powiązać ją z fakturą zaliczkową, wykonaj następujące kroki.
+
+1. Przejdź do **Konta należności** \> **Klienci**, znajdź i otwórz rekord klienta.
+2. Na panelu akcji wybierz **Klient** \> **Transakcje**, zaznacz transakcję przedpłaty, a następnie wybierz **Obsługa przedpłat**.
+3. Dla opcji **Przekształcenie w płatność** ustaw wartość **Nie**.
+4. Wybierz **Faktura zaliczkowa**, aby połączyć obsługę przedpłat z fakturą zaliczkową. System automatycznie tworzy linie VAT na podstawie faktury zaliczkowej.
+5. Zamieść informację o obsłudze przedpłaty. System automatycznie tworzy transakcje dotyczące podatku od sprzedaży w związku z przedpłatą.
+
+## <a name="reversing-sales-tax-amounts-for-czech-republic"></a>Odwrócenie kwot podatku od sprzedaży dla Republiki Czeskiej
+
+Aby ręcznie zdefiniować odwracanie kwot podatku od sprzedaży na podstawie obsługi przedpłaty, włącz funkcję **(Czechy) Włącz ręczne wprowadzanie kwot podatku od sprzedaży**. Aby uzyskać więcej informacji o włączaniu funkcji, zobacz [Zarządzanie funkcjami — omówienie](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+> [!NOTE]
+> Ta funkcja jest dostępna tylko dla Rozrachunków z dostawcami.
+
+Kiedy zaznaczasz transakcję fakturową do rozliczenia z płatnością, możesz zaktualizować kwoty podatku od sprzedaży do odwrócenia na karcie **Odwróć kwoty podatku od sprzedaży** w zakładce **Rozlicz transakcję**. W razie potrzeby możesz zaktualizować kwoty podatku w polu **Kwota podatku do rozliczenia**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

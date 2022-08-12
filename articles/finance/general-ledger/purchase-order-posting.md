@@ -10,12 +10,12 @@ ms.search.form: InventPosting, InventTrans
 audience: Application User
 ms.search.region: Global
 ms.author: raprofit
-ms.openlocfilehash: 0793c58b07d2c0a133e1a5bc0607483f22206b95
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 38a9e2740232b18255109ba867fcdddd5b890774
+ms.sourcegitcommit: 9310c943ac76896663e5604209034da9f8d6139c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849939"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "9151041"
 ---
 # <a name="purchase-order-posting"></a>Księgowanie zamówienia zakupu
 
@@ -93,10 +93,10 @@ Poniższa tabela pokazuje przykłady domyślnych typów księgowań wraz z przyk
 
 | Typ księgowania | Przykład konta głównego | Przykład nazwy konta głównego | Typ konta | Uznanie/kredyt? | Konto rozliczeniowe | P/F | Śledzenie | Opis |
 |--------------|---------------------|-------------------------|----------------|----------------|--------------------|----|----------|-----------|
-| Koszt odebranych kupionych materiałów | 140100</br>140101 | Zapasy materiałów</br>Materiały wysłane bez faktury | Element zawartości | Uznanie | Tak | P | Koszt zafakturowanych kupionych materiałów | Używane, gdy księgowany jest rachunek za produkt z zamówienia zakupu. Kompensatą dla konta są wydatki na zakup, które nie zostały zafakturowane. Kwota na tym koncie jest odwracana po zaksięgowaniu faktury za zamówienie zakupu. |
+| Koszt odebranych kupionych materiałów | 140100</br>140101 | Zapasy materiałów</br>Materiały wysłane bez faktury | Element zawartości | Uznanie | Tak | P | Koszt zafakturowanych kupionych materiałów | Używane, gdy księgowany jest odbiór produktu z zamówienia zakupu, a kompensatą dla tego konta jest Wydatek na zakup, niezafakturowany. Kwota na tym koncie jest odwracana po zaksięgowaniu faktury za zamówienie zakupu. |
 | Wydatki na zakupy, niezafakturowane | 600180 | Potwierdzenia odbioru materiałów | Wydatek | Uznanie | Tak | P | |Używane, gdy księgowany jest rachunek za produkt z zamówienia zakupu. Do odbioru tworzone są dwa vouchery, aby śledzić odchylenia w cenie zakupu, gdy stosowany jest koszt standardowy. Kompensata na koncie pierwszego kuponu to rozliczenie międzyokresowe zakupów. Kompensata na drugim kuponie jest sumą kont odchylenia kosztu zakupionych materiałów i ceny zakupu. Kwoty zaksięgowane na tym koncie są odwracane po zaksięgowaniu faktury za zamówienie zakupu. |
 | Koszt zafakturowanych kupionych materiałów | 140100 | Zapasy materiałów | Element zawartości | Uznanie | Nie | P  |Koszt odebranych kupionych materiałów | Używane, gdy faktura z zamówienia zakupu jest księgowana. Kompensatą dla tego konta są wydatki na zakup produktów. To konto reprezentuje zapasy w bilansie. Używane konto jest zazwyczaj tym samym kontem, które jest używane w przypadku Koszt jednostek dostarczonych i Koszt jednostek zafakturowanych dla zamówień sprzedaży. |
-| Koszty zakupu produktów | 600180 | Odbiór materiałów | Wydatek | Środki | Nie | P  | |Używane, gdy faktura z zamówienia zakupu jest księgowana. Kompensatą dla tego konta jest Koszt zakupionych materiałów. To konto reprezentuje zapasy w bilansie. |
+| Koszty zakupu produktów | 600180 | Odbiór materiałów | Wydatek | Środki | Tak | P  | |Używane, gdy faktura z zamówienia zakupu jest księgowana. Do faktury tworzone są dwie faktury, aby śledzić różnice w cenie zakupu, gdy stosowany jest koszt standardowy. Kompensatą dla tego konta jest konto Wydatki na zakup, niezafakturowane, które jest używane przy księgowaniu wpływu i odwracane podczas księgowania faktury. Reprezentuje koszty związane z zapasami zakupionymi w momencie wystawienia faktury, które nie są odzwierciedlone na koncie zapasów w bilansie. Jest to księgowanie zysków i strat w związku z różnicami w cenach zakupu, które najczęściej występują w zakupach standardowych.|
 | Zysk ze stałej ceny zakupu (Zakup, zysk ze stałej ceny odbioru*) | 510310 | Odchylenie cen zakupu | Wydatek | Środki | Nie | P | Ujemne odchylenia od ceny ewidencyjnej | Używane, gdy faktura za zamówienie zakupu jest zaksięgowana i występuje różnica między ceną na fakturze a domyślnym kosztem pozycji. To konto jest używane, gdy różnica jest większa. Kompensatą dla tego konta jest kompensata stałej ceny wpływów. |
 | Stała strata w cenie odbioru (Zakup, stała strata w cenie odbioru*) | 510310 | Odchylenie cen zakupu | Wydatek | Uznanie | Nie | P | Dodatnie odchylenia od ceny ewidencyjnej | Używane, gdy faktura za zamówienie zakupu jest zaksięgowana i występuje różnica między ceną na fakturze a domyślnym kosztem pozycji. To konto jest używane, gdy różnica jest mniejsza. Kompensatą dla tego konta jest kompensata stałej ceny wpływów. |
 | Kompensacja stałej ceny odbioru (Zakup, kompensacja stałej ceny odbioru*) | 140900 | Odchylenie magazynu | Element zawartości | Obie | Nie | P  | |Używane, gdy faktura za zamówienie zakupu jest zaksięgowana i występuje różnica między ceną na fakturze a domyślnym kosztem pozycji. Konto to stanowi kompensatę dla rachunków zysków i strat z tytułu Ustalonej ceny wpływów. |

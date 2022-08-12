@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8d9c756d8aaf2e7b2f6593e78fbb645dafee4552
-ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.openlocfilehash: 6d440a0d0d95fe93ed633fa588e1c3a193757d9d
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9016167"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070388"
 ---
 # <a name="production-parameters-in-manufacturing-execution"></a>Parametry produkcji w module Wykonywanie produkcji
 
@@ -71,7 +71,7 @@ Dla każdego etapu w polu **Automatyczne zużycie BOM** można wybrać jedną z 
   - Puste (nie jest wybrana żadna opcja)
   - **Dostępne w lokalizacji**
 
-    W module Wykonywanie produkcji jeśli opcja **Reguła rozliczania** zostanie wybrana w polu **Automatyczne zużycie BOM** na karcie **Rozpoczęcie**, wszystkie materiały, które w BOM mają ustawioną opcję **Rozpoczęcie**, będą odejmowane z zapasów z chwilą rozpoczęcia operacji. Opcja **Dostępne w lokalizacji** jest używana do produktów, które są włączone dla zaawansowanych procesów magazynowych. Jeśli wybierzesz tę zasadę rozliczania, materiał jest rozliczany po zakończeniu pracy magazynowej pobrania surowca. Materiał jest także rozliczany, gdy wiersz BOM używający tej zasady rozliczania jest zwalniany do magazynu, a materiał jest dostępny w lokalizacji wejściowej produkcji.
+    W module Wykonywanie produkcji jeśli opcja **Reguła rozliczania** zostanie wybrana w polu **Automatyczne zużycie BOM** na karcie **Rozpoczęcie**, wszystkie materiały, które w BOM mają ustawioną opcję **Rozpoczęcie**, będą odejmowane z zapasów z chwilą rozpoczęcia operacji. Opcja **Dostępne w lokalizacji** jest używana do produktów, które są włączone dla procesów magazynowych (WMS). Jeśli wybierzesz tę zasadę rozliczania, materiał jest rozliczany po zakończeniu pracy magazynowej pobrania surowca. Materiał jest także rozliczany, gdy wiersz BOM używający tej zasady rozliczania jest zwalniany do magazynu, a materiał jest dostępny w lokalizacji wejściowej produkcji.
 
     > [!NOTE]
     > Jeżeli pole **Reguła rozliczania** jest ustawione na karcie **Początek** w module Uruchomienie produkcji, należy wybrać tę samą zasadę na karcie **Operacje** lub **Zgłoś jako gotowe**. To wymaganie pomaga zagwarantować, że materiały zostaną odjęte z zapasów na listach BOM, które używają opcji **Zakończenie** jako reguły rozliczania w zamówieniu produkcji. Jeśli ta sama reguła rozliczania nie jest zaznaczona na karcie **Operacje** lub **Zgłoszenie wyrobów gotowych**, materiały mogą być odejmowane z zapasów dwa razy.

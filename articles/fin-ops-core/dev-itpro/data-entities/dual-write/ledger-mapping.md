@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: tfehr
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: e83d66f3f8c8927b9baaf99838a4e242e7e011dc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e5598295a25e31b33cd8b4d7ce3250a982ab4e87
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847197"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112249"
 ---
 # <a name="integrated-ledger"></a>Zintegrowana księga
 
@@ -28,7 +28,7 @@ W aplikacji biznesowej dane księgi określają podstawowe ustawienia dotyczące
 
 Dane księgi zawierają kolekcję podstawowych mapowań tabel finansowych, które działają razem podczas interakcji z danymi, jak pokazano w poniższej tabeli.
 
-Aplikacje Finanse i Działania | Aplikacje Customer Engagement     | opis
+Aplikacje finansowe i operacyjne | Aplikacje Customer Engagement     | opis
 ---------------------------------|----------------------------------|------------
 [Kursy wymiany w usłudze CDS](mapping-reference.md#123) | msdyn_currencyexchangerates |
 [Plan kont](mapping-reference.md#121) | msdyn_chartofaccountses |
@@ -45,3 +45,4 @@ Aplikacje Finanse i Działania | Aplikacje Customer Engagement     | opis
 [Kategorie kont głównych](mapping-reference.md#151) | msdyn_mainaccountcategories |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

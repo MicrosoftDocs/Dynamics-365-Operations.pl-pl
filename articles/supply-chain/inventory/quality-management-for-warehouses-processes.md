@@ -1,6 +1,6 @@
 ---
 title: Zarządzanie jakością dla procesów magazynowych
-description: Ten artykuł zawiera informacje o procesie zarządzania jakością dla funkcji procesów magazynu. Ta funkcja rozszerza możliwości zarządzania jakością i umożliwia użytkownikom integrowanie kontroli przez pobieranie próbek towarów z procesem przyjmowania do magazynu przy użyciu zaawansowanego zarządzania magazynem.
+description: Ten artykuł zawiera informacje o procesie zarządzania jakością dla funkcji procesów magazynu. Ta funkcja rozszerza możliwości zarządzania jakością i umożliwia użytkownikom integrowanie kontroli przez pobieranie próbek towarów z procesem przyjmowania do magazynu przy użyciu zaawansowanego zarządzania magazynem (WMS).
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 7f806b58c5e956e4f26158e8ea5c90a559296655
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 13c9bf522ededb5896c5f8462bfe123e9a9edb2c
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857845"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069251"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Zarządzanie jakością dla procesów magazynowych
 
 [!include [banner](../includes/banner.md)]
 
-Funkcja _Zarządzanie jakością dla procesów magazynowych_ umożliwia użytkownikom integrowanie kontroli przez pobieranie próbek towarów z procesem przyjmowania do magazynu przy użyciu zaawansowanego zarządzania magazynem. Pracę magazynową można automatycznie wygenerować, aby przenieść zapasy do lokalizacji kontroli jakości na podstawie wartości procentowej lub stałej ilości albo na podstawie każdego *n*-tego numeru identyfikacyjnego. Po zakończeniu zlecenia kontroli jakości można automatycznie wygenerować pracę, aby przenieść zapasy do kolejnej lokalizacji w procesie, w zależności od wyników kontroli jakości.
+Funkcja _Zarządzanie jakością dla procesów magazynowych_ umożliwia użytkownikom integrowanie kontroli przez pobieranie próbek towarów z procesem przyjmowania do magazynu przy użyciu procesów WMS. Pracę magazynową można automatycznie wygenerować, aby przenieść zapasy do lokalizacji kontroli jakości na podstawie wartości procentowej lub stałej ilości albo na podstawie każdego *n*-tego numeru identyfikacyjnego. Po zakończeniu zlecenia kontroli jakości można automatycznie wygenerować pracę, aby przenieść zapasy do kolejnej lokalizacji w procesie, w zależności od wyników kontroli jakości.
 
 Funkcja _Zarządzanie jakością dla procesów magazynowych_ rozszerza możliwości podstawowej funkcji zarządzania jakością. Zapewnia ona możliwość tworzenia zleceń kontroli jakości dla zapasów wysyłanych do lokalizacji kontroli jakości, mimo że zlecenia kontroli jakości nie zawsze są wymagane. Dzięki temu można uzyskać uproszczony proces kontroli jakości oparty na pracy magazynowej.
 
@@ -77,7 +77,7 @@ Aby można było zastosować funkcję _Zarządzanie jakością dla procesów mag
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Magazyn \> Magazyny**.
 1. Wybierz magazyn, aby włączyć zarządzanie jakością.
-1. W skróconej karcie **Magazyn** należy w ustawieniu opcji **Włącz zlecenie kontroli jakości dla procesów magazynowych** wybrać wartość _Tak_. (Należy pamiętać, że ta opcja może być ustawiona jako _Tak_ tylko dla magazynów korzystających z procesów zarządzania magazynem.)
+1. W skróconej karcie **Magazyn** należy w ustawieniu opcji **Włącz zlecenie kontroli jakości dla procesów magazynowych** wybrać wartość _Tak_. (Należy pamiętać, że ta opcja może być ustawiona jako _Tak_ tylko dla magazynów korzystających z procesów (WMS)).
 
 Jeśli opcja **Włącz zlecenie kontroli jakości dla procesów magazynowych** jest ustawiona na wartość _Tak_, ustawienie skojarzenia jakości określa, czy funkcja _Zarządzania jakością dla procesów magazynowych_ jest rzeczywiście stosowana dla wybranego magazynu. Można zmieniać ustawienie opcji na wartość _Nie_ w każdej chwili. W takim przypadku funkcja nie będzie już stosowana do magazynu, niezależnie od konfiguracji skojarzenia jakości.
 
@@ -97,7 +97,7 @@ Ponadto poszczególne [rekordy skojarzenia jakości](enable-quality-management.m
     - **Wszystko** – Wyłączanie funkcji _Zarządzanie jakością dla procesów magazynowych_. Tę wartość należy wybrać dla wszystkich typów odwołań z wyjątkiem opcji *Zakup* i *Produkcja*.
 
 > [!NOTE]
-> Funkcja _Zarządzania jakością dla procesów magazynowych_ działa tylko wtedy, gdy towar w wierszu dokumentu źródłowego korzysta z zaawansowanych procesów zarządzania magazynem, a opcja **Włącz zlecenie kontroli jakości dla procesów magazynowych** jest ustawiona na wartość _Tak_ dla magazynu w wierszu dokumentu źródłowego.
+> Funkcja _Zarządzania jakością dla procesów magazynowych_ działa tylko wtedy, gdy towar w wierszu dokumentu źródłowego korzysta z zaawansowanych procesów zarządzania magazynem (WMS), a opcja **Włącz zlecenie kontroli jakości dla procesów magazynowych** jest ustawiona na wartość _Tak_ dla magazynu w wierszu dokumentu źródłowego.
 
 Po zarejestrowaniu każdego towaru (lub zgłoszenia go jako gotowy) system określa, które skojarzenia jakości mają być stosowane.
 

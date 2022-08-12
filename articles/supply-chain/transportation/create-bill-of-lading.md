@@ -1,6 +1,6 @@
 ---
 title: Tworzenie listu przewozowego
-description: W tym artykule opisano sposób tworzenia listu przewozowego podczas korzystania z procesów zarządzania magazynem.
+description: W tym artykule opisano sposób tworzenia listu przewozowego podczas korzystania z procesów zarządzania magazynem (WMS).
 author: Weijiesa
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34e84fee13dcff574f1700ba2b8f577f4c401cbc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 68a703475191255ff6ceaee25ef8e2bdf33ba0c2
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885791"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069705"
 ---
 # <a name="create-a-bill-of-lading"></a>Tworzenie listu przewozowego
 
 [!include [banner](../includes/banner.md)]
 
-W tym artykule opisano sposób tworzenia listu przewozowego podczas korzystania z procesów zarządzania magazynem.  
+W tym artykule opisano sposób tworzenia listu przewozowego podczas korzystania z procesów zarządzania magazynem (WMS).  
 
 List przewozowy jest to dokumentem prawnym między firmą wysyłającą towary a przewoźnikiem. Dokument towarzyszy wysyłanym towarom i służy jako potwierdzenie dostawcy, gdy towary są dostarczane do miejsca docelowego. Jeśli używasz zarządzania magazynem, istnieją dwa sposoby generowania listu przewozowego:
 

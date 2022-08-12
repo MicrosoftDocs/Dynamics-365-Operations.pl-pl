@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 3eadc447d8c0c443fa9d3eab220300e3eedf051d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3465866df0d766b2300eb4fd1989c034cedbbb22
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888651"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123817"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.20 (sierpień 2021 r.)
 
@@ -71,7 +71,7 @@ Niedawno dodano lub znacząco zaktualizowano następujące artykuły pomocy. Nie
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizacja Platform dla aplikacji Finanse i Działania
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizacja Platform dla aplikacji finansowych i operacyjnych
 
 Pakiet Microsoft Dynamics 365 Supply Chain Management 10.0.20 zawiera aktualizację platformy. Aby dowiedzieć się więcej, zobacz [aktualizacje platformy dla wersji 10.0.20 aplikacji finansowych i operacyjnych (lipiec 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20.md).
 
@@ -98,3 +98,4 @@ W przypadku zmian, które wpływają tylko na czas kompilacji, ale są zgodne z 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

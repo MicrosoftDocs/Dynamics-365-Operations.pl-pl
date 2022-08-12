@@ -14,17 +14,22 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d0da71c87364eacf60b9a82a200996292b863b6a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 935c2e6cb45df193e6cbf70634f3561154c6fe38
+ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692430"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "9178542"
 ---
 # <a name="copy-an-instance"></a>Kopiowanie wystąpienia
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+_**Zastosowanie:** Ustanowienie rozwiązania Human Resources w samodzielnym wystąpieniu infrastruktury_ 
 
+> [!NOTE]
+> Od czerwca 2022 roku środowiska zasobów ludzkich mogą być wdrażane tylko na infrastrukturze aplikacji finansowych i operacyjnych. Więcej informacji: [Ustanowienie rozwiązania Human Resources w infrastrukturze związanej z finansami i operacjami](hr-admin-setup-provision-fo.md).
+
+> [!IMPORTANT]
+> Infrastruktura finansowa i operacyjna nie obsługuje funkcji instancji kopiowania. Możesz wdrażać nowe środowiska i używać ruchów bazy danych do tworzenia kopii. Aby uzyskać więcej informacji na temat samoobsługowych stanowisk, zobacz [Przegląd samoobsługowych stanowisk](../fin-ops-core/dev-itpro/deployment/infrastructure-stack.md). Więcej informacji na temat ruchów baz danych w infrastrukturze finansowej i operacyjnej można znaleźć na stronie głównej [Operacje ruchów baz danych](../fin-ops-core/dev-itpro/database/dbmovement-operations.md).
 
 Można skorzystać z usługi cyklu pomocy technicznej Microsoft Dynamics Lifecycle Services (usługi LCS), aby skopiować bazę danych firmy Microsoft Dynamics 365 Human Resources do środowiska piaskownicy (sandbox). Jeśli masz inne środowisko piaskownicy, możesz również skopiować bazę danych z tego środowiska do docelowego środowiska piaskownicy.
 
@@ -50,7 +55,7 @@ Podczas kopiowania bazy danych Human Resources zachodzą następujące zdarzenia
 
 - Dokumenty w magazynie obiektów BLOB Microsoft Azure nie są kopiowane z jednego środowiska do drugiego. Z tego też powodu żadne dołączone dokumenty i szablony nie zostaną skopiowane i pozostaną w środowisku źródłowym.
 
-- Wszyscy użytkownicy z wyjątkiem tych z rolą zabezpieczeń „Administrator systemu” i innymi wewnętrznymi kontami użytkowników usługi nie będą dostępne. Administrator może usunąć lub ukryć dane, zanim użytkownicy ponownie uzyskają dostęp do systemu.
+- Wszyscy użytkownicy z wyjątkiem tych z rolą zabezpieczeń „Administrator systemu” i innymi wewnętrznymi kontami użytkowników usługi nie będą dostępne. Administrator może usunąć dane, zanim inni użytkownicy zostaną ponownie wpuszczeni do systemu.
 
 - Użytkownik (rola zabezpieczeń Administrator systemu) musi wprowadzić wymagane zmiany konfiguracji, takie jak ponowne podłączenie punktów końcowych integracji do określonych usług lub adresów URL.
 
@@ -67,7 +72,7 @@ Aby wykonać to zadanie, najpierw należy skopiować instancję, a następnie za
 
 3. Wybierz instancję do skopiowania, a następnie wybierz **Kopiuj**.
 
-4. W okienku zadań **Kopiuj instancję** wybierz instancję, która ma zostać zastąpiona, a następnie wybierz **Kopiuj**. Poczekaj na zaktualizowanie wartości pola **Stan kopiowania** na **Zakończone**.
+4. W okienku zadań **Kopiuj instancję** wybierz instancję, która ma zostać zastąpiona, a następnie wybierz **Kopiuj**. Poczekaj na zaktualizowanie pola **Stan kopiowania** na **Zakończone**.
 
    ![[Wybierz instancję do zastąpienia.](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
@@ -76,6 +81,8 @@ Aby wykonać to zadanie, najpierw należy skopiować instancję, a następnie za
    ![[Wybierz Power Platform.](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
 6. Wybierz środowisko Power Apps do skopiowania, a następnie wybierz **Kopiuj**.
+
+Więcej informacji o kopiowaniu środowisk Power Apps znajdziesz w rozdziale [Kopiowanie środowiska](/power-platform/admin/copy-environment#copy-an-environment-1).
 
 7. Po zakończeniu procesu kopiowania zaloguj się do instancji docelowej i włącz integrację Dataverse. Aby uzyskać więcej informacji i instrukcji, zobacz [Konfigurowanie integracji Dataverse dla przestrzeni roboczych](./hr-admin-integration-common-data-service.md).
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 304cf3f6c913586e08e0a3771ebfe40bc5d2b102
-ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
+ms.openlocfilehash: 21d7d045c812c54d6776394ad9a0b025b55df8e1
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8464917"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109121"
 ---
 # <a name="financial-analysis"></a>Analiza finansowa
 
@@ -40,7 +40,7 @@ Obszar roboczy **Analiza finansowa** koncentruje się na możliwości wyświetla
 
 - [Dodawanie lub edytowanie wizualizacji Power BI na pulpicie nawigacyjnym](/powerapps/user/add-powerbi-dashboards)
 
-## <a name="dynamics-365-finance-setup"></a>Konfiguracja systemu Dynamics 365 Finance
+## <a name="dynamics-365-finance-setup"></a>Konfiguracja Dynamics 365 Finance
 **Księga główna**
 
 Typ konta głównego i kategorie kont głównych służą do wypełniania odpowiednich domyślnych kont głównych w sprawozdaniu finansowym **Bilans** oraz różnych sprawozdaniach finansowych **Rachunek zysków i strat** w obszarze roboczym **Analiza finansowa**.
@@ -78,7 +78,7 @@ Obecnie dane w osadzonych raportach usługi Power BI nie mogą się ograniczać 
 | Obowiązek                                    | Role | opis |
 |-----------------------------------------|-------|------------|
 | Wyświetlanie analiz finansowych bieżącej firmy | <ul><li>Księgowy</li><li>Menedżer ds. księgowania</li><li>Kierownik ds. księgowania</li><li>Audytor</li><li>Menedżer budżetu</li><li>Dyrektor naczelny</li><li>Dyrektor finansowy</li><li>Kontroler finansowy</li></ul> | Ten obowiązek umożliwia dostęp do obszaru roboczego Analiza finansowa. Domyślnie jako filtr jest używana aktywna firma. Nie można dodać innych firm. |
-| Wyświetlanie analiz finansowych bieżącej firmy   | W rozwiązaniu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition wer. 7.3 ten obowiązek nie jest przypisany do roli. W następnej wersji ten obowiązek będzie przypisany do roli Dyrektor finansowy. | Ten obowiązek umożliwia dostęp do menu obszaru roboczego Przegląd dla dyrektora finansowego. Domyślnie jako filtr jest używana aktywna firma. Można jednak dodać wszystkie firmy, niezależnie od tego, czy użytkownik ma dostęp do innych firm. |
+| Wyświetlanie analiz finansowych bieżącej firmy   | W rozwiązaniu Microsoft Dynamics 365 Finance Enterprise Edition wer. 7.3 ten obowiązek nie jest przypisany do roli. W następnej wersji ten obowiązek będzie przypisany do roli Dyrektor finansowy. | Ten obowiązek umożliwia dostęp do menu obszaru roboczego Przegląd dla dyrektora finansowego. Domyślnie jako filtr jest używana aktywna firma. Można jednak dodać wszystkie firmy, niezależnie od tego, czy użytkownik ma dostęp do innych firm. |
 
 
 ## <a name="financial-reporting-vs-financial-analysis"></a>Raporty finansowe a Analiza finansowa
@@ -96,7 +96,7 @@ Poniższy wykres porównawczy pomoże zidentyfikować różnice między oboma op
 | **Obsługa hierarchii raportowania/hierarchii organizacyjnej**   | Tak                                                               | Nie |
 | **Sprawozdawczość z danych księgi podrzędnej**                             | Tak Ograniczenie do jednego dostawcy i odbiorcy                              | Tak Dostawca, odbiorca, grupy dostawców/odbiorców, adresy dostawców/odbiorców itd. |
 | **Waluta raportowania**                                   | Tak Waluta rozliczeniowa i przeliczanie na walutę raportowania       | Nie Tylko waluta raportowania |
-| **Zabezpieczenia**                                             | Tak Zgodność z zabezpieczeniami raportowania w module Finance i drzewa raportowania | Ograniczone Wyświetlanie raportów dla wszystkich firm (niezależnie od poziomu zabezpieczeń ustawionego w programie Finance and Operations) lub tylko dla aktywnej firmy |
+| **Zabezpieczenia**                                             | Tak Zgodność z zabezpieczeniami raportowania w module Finance i drzewa raportowania | Ograniczone Wyświetlanie raportów dla wszystkich firm (niezależnie od poziomu zabezpieczeń ustawionego w ramach aplikacji finansowych i operacyjnych) lub tylko dla aktywnej firmy |
 | **Obsługa różnych planów kont i lat obrachunkowych** | Tak                                                               | Nie |
 | **Sprawozdawczość z danych zewnętrznych**                              | Nie                                                                | Nie |
 | **Obsługa konsolidacji**                               | Tak                                                               | Ograniczone Można generować raporty obejmujące wiele firm, ale tylko w walucie rozliczeniowej |
@@ -244,3 +244,4 @@ Informacje zawarte w poniższych materiałach nie są wymagane, aby można było
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

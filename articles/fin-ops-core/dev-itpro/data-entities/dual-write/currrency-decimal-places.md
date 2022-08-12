@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: 809906c3926b200e7beac84e780314aec1f8c2ca
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 85b3a45c054144e414aebb28b3d8080ab295f52f
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8855595"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112283"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Migracja typu danych Waluta dla podwójnego zapisu
 
@@ -29,7 +29,7 @@ Proces zmiany liczby miejsc dziesiętnych składa się z dwóch kroków:
 1. Zażądaj migracji z rozwiązania Microsoft.
 2. Zmienianie liczby miejsc po przecinku w Dataverse.
 
-Aplikacja Finanse i Działania i Dataverse muszą obsługiwać tę samą liczbę miejsc dziesiętnych w wartościach walutowych. W przeciwnym razie utrata danych może wystąpić, gdy informacje te zostaną zsynchronizowane między aplikacjami. Proces migracji zmienia konfigurację sposobu przechowywania wartości walut i kursów wymiany, ale nie powoduje zmiany żadnych danych. Po zakończeniu migracji liczba miejsc dziesiętnych dla kodów walut i cen może zostać zwiększona, a dane wprowadzane przez użytkowników i widok mogą mieć większą dokładność dziesiętną.
+Aplikacje finansowe i operacyjne i Dataverse muszą obsługiwać tę samą liczbę miejsc dziesiętnych w wartościach walutowych. W przeciwnym razie utrata danych może wystąpić, gdy informacje te zostaną zsynchronizowane między aplikacjami. Proces migracji zmienia konfigurację sposobu przechowywania wartości walut i kursów wymiany, ale nie powoduje zmiany żadnych danych. Po zakończeniu migracji liczba miejsc dziesiętnych dla kodów walut i cen może zostać zwiększona, a dane wprowadzane przez użytkowników i widok mogą mieć większą dokładność dziesiętną.
 
 Migracja jest opcjonalna. Jeśli można korzystać z pomocy technicznej dla większej liczby miejsc dziesiętnych, zaleca się, aby wziąć pod uwagę migrację. Organizacje niewymagające wartości, które mają więcej niż cztery miejsca dziesiętne, nie muszą migrować.
 
@@ -37,7 +37,7 @@ Migracja jest opcjonalna. Jeśli można korzystać z pomocy technicznej dla wię
 
 Przechowywanie w istniejących kolumnach waluty w Dataverse nie obsługuje więcej niż czterech miejsc dziesiętnych. Dlatego podczas procesu migracji wartości walut są kopiowane do nowych kolumn wewnętrznych w bazie danych. Ten proces jest wykonywany w sposób ciągły, dopóki nie zostaną zmigrowane wszystkie dane. Wewnętrznie na zakończenie migracji nowe typy magazynów zastępują stare typy magazynów, ale wartości danych nie są zmieniane. Następnie kolumny waluty mogą obsługiwać maksymalnie 10 miejsc dziesiętnych. W trakcie procesu migracji Dataverse może nadal korzystać z systemu bez zakłóceń.
 
-W tym samym czasie kursy wymiany są modyfikowane w taki sposób, aby obsługiwały maksymalnie 12 miejsc dziesiętnych zamiast bieżącego limitu wynoszący 10. Ta zmiana jest wymagana w celu zapewnienia, że liczba miejsc dziesiętnych jest taka sama w obu wersjach aplikacji Finanse i Działania i Dataverse.
+W tym samym czasie kursy wymiany są modyfikowane w taki sposób, aby obsługiwały maksymalnie 12 miejsc dziesiętnych zamiast bieżącego limitu wynoszący 10. Ta zmiana jest wymagana w celu zapewnienia, że liczba miejsc dziesiętnych jest taka sama w obu wersjach aplikacji finansowych i operacyjnych i Dataverse.
 
 Migracja nie powoduje zmiany żadnych danych. Po przekonwertowaniu kolumn waluta i kurs wymiany administratorzy mogą skonfigurować system do 10 miejsc dziesiętnych dla kolumn walut, określając liczbę miejsc dziesiętnych dla każdej waluty transakcji i ceny.
 
@@ -100,3 +100,4 @@ Aby uzyskać oczekiwane zachowanie dokładności dziesiętnej waluty domyślnej 
 |          | Maksymalna dokładność dziesiętna widoczna w interfejsie użytkownika bazy danych i wynikach zapytań wykonywanych w bazie danych | 10 cyfr. Jednak tylko 4 cyfry są cyframi znaczącymi, a poza tymi czterema cyframi znajdują się same zera. Umożliwia to prostszą i szybszą migrację organizacji, gdy jest to wymagane. | 10 cyfr      | 10 cyfr     |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

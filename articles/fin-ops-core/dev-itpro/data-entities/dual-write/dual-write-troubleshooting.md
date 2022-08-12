@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 620f6f999859eff0ccd8aeb1cff12ddd56fa9926
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2f263e331d23ce0ddf60a4abc2467513aa342445
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853663"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112373"
 ---
 # <a name="general-troubleshooting"></a>Rozwiązywanie ogólnych problemów
 
@@ -55,28 +55,28 @@ Aby zobaczyć dziennik śledzenia, należy wykonać następujące kroki.
 
 Można skopiować zawartość dzienników śledzenia i wkleić je do innej aplikacji, np. notatnika lub innego narzędzia, aby przejrzeć dzienniki lub pliki tekstowe, aby łatwiej wyświetlić całą zawartość. 
 
-## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Włącz tryb debugowania w celu rozwiązywania problemów z synchronizacją na żywo w aplikacjach Finanse i Działania
+## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Włącz tryb debugowania w celu rozwiązywania problemów z synchronizacją na żywo w aplikacjach finansowych i operacyjnych
 
 **Wymagana rola w celu wyświetlania problemów:** administrator systemu
 
-Błędy podwójnego zapisywania, które pochodzą z Dataverse, mogą pojawić się w aplikacji Finanse i Działania. Aby włączyć pełne rejestrowanie błędów, wykonując następujące kroki:
+Błędy podwójnego zapisywania, które pochodzą z Dataverse, mogą pojawić się w aplikacjach finansowych i operacyjnych. Aby włączyć pełne rejestrowanie błędów, wykonując następujące kroki:
 
-1. W przypadku wszystkich konfiguracji projektu w aplikacjach Finanse i Działania istnieje flaga **IsDebugMode** w tabeli **DualWriteProjectConfiguration**.
-2. Otwórz tabelę **DualWriteProjectConfiguration** przy użyciu dodatku programu Excel. Aby użyć tego dodatku, włącz tryb projektowania w dodatku programu Excel Finanse i Działania i dodaj do arkusza konfigurację **DualWriteProjectConfiguration**. Więcej informacji można znaleźć w temacie [Wyświetlanie i aktualizowanie danych jednostki przy użyciu programu Excel](../../office-integration/use-excel-add-in.md).
+1. W przypadku wszystkich konfiguracji projektu w aplikacjach finansowych i operacyjnych istnieje flaga **IsDebugMode** w tabeli **DualWriteProjectConfiguration**.
+2. Otwórz tabelę **DualWriteProjectConfiguration** przy użyciu dodatku programu Excel. Aby użyć tego dodatku, włącz tryb projektowania w dodatku w aplikacjach finansowych i operacyjnych dla Excela i dodaj do arkusza konfigurację **DualWriteProjectConfiguration**. Więcej informacji można znaleźć w temacie [Wyświetlanie i aktualizowanie danych jednostki przy użyciu programu Excel](../../office-integration/use-excel-add-in.md).
 3. Ustaw wartość **IsDebugMode** na **Tak** w projekcie.
 4. Uruchom scenariusz, który generuje błędy.
 5. Pełne dzienniki są przechowywane w tabeli **DualWriteErrorLog**.
 6. W celu wyszukiwania danych w eksploratorze tabel użyj następującego łącza: `https://999aos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog`, zastępując wartość `999` stosownie do potrzeb.
 7. Zaktualizuj ponownie po [KB 4595434](https://fix.lcs.dynamics.com/Issue/Details?kb=4595434&bugId=527820&dbType=3&qc=98e5dc124ac125c57ad633d885ac612aea3ddb8f4abf9d71ab3aa354f2e06cbe), który jest dostępny dla aktualizacji platformy 37 i nowszych. Jeśli ta poprawka jest zainstalowana, tryb debugowania zarejestruje więcej dzienników.  
 
-## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Sprawdź błędy synchronizacji na maszynie wirtualnej dla aplikacji Finanse i Działania
+## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Sprawdź błędy synchronizacji na maszynie wirtualnej dla aplikacji finansowych i operacyjnych
 
 **Wymagana rola w celu wyświetlania problemów:** Administrator systemu
 
 1. Zaloguj się do Microsoft Dynamics LifeCycle Services (LCS).
 2. Otwórz projekt LCS, który wybrano do wykonania podwójnego zapisu.
 3. Wybierz kafelek **Środowiska hostowane w chmurze**.
-4. Użyj pulpitu zdalnego i zaloguj się do maszyny wirtualnej (VM) aplikacji Finanse i Działania. Należy skorzystać z konta lokalnego podanego w usługi LCS.
+4. Użyj pulpitu zdalnego i zaloguj się do maszyny wirtualnej (VM) aplikacji finansowych i operacyjnych. Należy skorzystać z konta lokalnego podanego w usługi LCS.
 5. Otwórz Podgląd zdarzeń.
 6. Wybierz do **Dzienniki aplikacji i usług \> Microsoft \> Dynamics \> AX-DualWriteSync \> Operacyjny**.
 7. Przejrzyj listę ostatnio używanych błędów.
@@ -109,11 +109,11 @@ Druga opcja:
 1.  Przejdź do ustawień -> uprawnienia do witryny -> pliki cookie i dane witryny.
 2.  Wyłącz opcję Zablokuj pliki cookie innych firm.  
 
-## <a name="unlink-and-link-another-dataverse-environment-from-a-finance-and-operations-app"></a>Jak odłączyć i połączyć inne środowisko Dataverse z programu Finanse i Działania
+## <a name="unlink-and-link-another-dataverse-environment-from-a-finance-and-operations-app"></a>Jak odłączyć i połączyć inne środowisko Dataverse z aplikacji finansowych i operacyjnych
 
-**Wymagana rola do rozłączenia środowiska:** administrator systemu dla każdej aplikacji Finanse i Działania lub Dataverse.
+**Wymagana rola do rozłączenia środowiska:** administrator systemu dla każdej aplikacji finansowej i operacyjnej lub Dataverse.
 
-1. Zaloguj się do aplikacji Finanse i Działania.
+1. Zaloguj się do aplikacji finansowych i operacyjnych.
 2. Przejdź do **Obszary robocze \> Zarządzanie danymi** i wybierz opcję **Podwójny zapis**.
 3. Zaznacz wszystkie uruchomione mapowania i wybierz **Zatrzymaj**.
 4. Wybierz **Odłącz środowisko**.
@@ -174,3 +174,4 @@ Aby rozwiązać niektóre problemy, zespół pomocy technicznej może chcieć pr
 4. Naciśnij przycisk **Zapisz**, aby wyeksportować wyniki do HAR.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

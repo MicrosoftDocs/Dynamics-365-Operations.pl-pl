@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-29-11
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0c9efae1061e96c0c42d5ca6a100bb36889ce56b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9640f460ed7b0b1a0cfdffb7c318bf833f8627fc
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8859674"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065302"
 ---
 # <a name="create-links-from-human-resources-to-another-finance-environment"></a>Tworzenie łączy z rozwiązania Human Resources do innego środowiska Finance
 
@@ -53,7 +53,7 @@ Każde tworzone łącze będzie miało zdefiniowane następujące informacje:
 
    Aby znaleźć wymagany element menu:
    1. Przejdź do środowiska Finance i otwórz stronę będącą celem nawigacji. 
-   2. Skopiuj element menu z adresu URL. Na przykład jeśli chcesz, aby łącze prowadziło do listy pracowników etatowych w aplikacji Finance and Operations, wprowadź wartość widoczną po elemencie „&mi” w adresie URL. 
+   2. Skopiuj element menu z adresu URL. Na przykład jeśli chcesz, aby łącze prowadziło do listy pracowników etatowych w aplikacji finansowych i operacyjnych, wprowadź wartość widoczną po elemencie „&mi” w adresie URL. 
    3. Elementem menu powodującym przejście do strony z listą pracowników w tym przykładzie jest HcmWorkerListPage_Employees.
 
  - **Łącze do źródła danych**: wybierz źródło danych, do którego odwołuje się łącze. Dostępne są najczęściej używane źródła, takie jak **Pracownik** i **Stanowisko**.
@@ -63,4 +63,5 @@ Każde tworzone łącze będzie miało zdefiniowane następujące informacje:
 Administratorzy systemu będą widzieć nowo utworzone łącza na wskazanych stronach nawet wtedy, gdy opcja **Włącz to łącze** jest ustawiona na **Nie**. Ten mechanizm może służyć do testowania łączy przed ich udostępnieniem innym pracownikom. Posiadacze wszystkich pozostałych ról będą widzieć skonfigurowane łącza tylko wtedy, gdy opcja **Włącz to łącze** jest ustawiona na **Tak**. Pracownicy mający dostęp do stron, w których łącza są wyświetlane, będą mogli używać tych łączy.
 
 Użytkownicy muszą mieć również uprawnienia zabezpieczeń w środowisku pomocniczym, które mają dostęp do stron w tym środowisku. Jeśli tak nie jest, po kliknięciu łącza pojawi się okno dialogowe mówiące o zabezpieczeniach.
+
 

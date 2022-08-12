@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 2bdb2ca0067ea430b249ac619a38c8bcec75f2f7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: cd5d2cf112a9d2ccdf6226ee79f0ff488d51066b
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895823"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066679"
 ---
 # <a name="configure-inventory-visibility"></a>Konfiguracja dodatku Inventory Visibility
 
@@ -55,7 +55,7 @@ Dodatek Widoczność magazynu powoduje dodanie kilku nowych funkcji do instalacj
 | *OnHandMostSpecificBackgroundService* | Ta funkcja zapewnia podsumowanie zapasów produktów wraz ze wszystkimi wymiarami. Dane podsumowania zapasów będą okresowo synchronizowane z aplikacją Widoczność magazynu. Aby uzyskać więcej informacji, zobacz [Podsumowanie inwentaryzacji](inventory-visibility-power-platform.md#inventory-summary). |
 | *OnhandChangeSchedule* | Ta opcjonalna funkcja umożliwia korzystanie z funkcji harmonogramu zmian w stanie gotowości do pracy oraz dostępności do przyrzeczenia (ATP). Aby uzyskać więcej informacji, zobacz [Widoczność zapasów — harmonogram i zmiany dostępnych zapasów oraz dostępność zapasów](inventory-visibility-available-to-promise.md). |
 | *Alokacja* | Dzięki tej opcjonalnej funkcji funkcja Widoczność magazynu umożliwia ochronę zapasów (ringfencing) i kontrolę nad nadmierną sprzedażą. Więcej informacji zawiera temat [Alokacja zapasów dodatku Widoczność magazynu](inventory-visibility-allocation.md). |
-| *Włącz pozycje magazynowe w Widoczności magazynu* | Ta opcjonalna funkcja umożliwia widoczności zapasów obsługę pozycji, które są włączone do zaawansowanych procesów magazynowych (pozycje WHS). Więcej informacji zawiera temat [Obsługa widoczności inwentarza dla pozycji WHS](inventory-visibility-whs-support.md). |
+| *Włącz pozycje magazynowe w Widoczności magazynu* | Ta opcjonalna funkcja umożliwia widoczności zapasów obsługę pozycji, które są włączone do procesów magazynowych (pozycje WMS). Więcej informacji zawiera temat [Obsługa widoczności inwentarza dla pozycji WMS](inventory-visibility-whs-support.md). |
 
 ## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Znajdowanie punktu końcowego usługi
 
@@ -809,3 +809,4 @@ Domyślna hierarchia rezerwacji jest przedstawiona w następującej tabeli.
 | `ExtendedDimension8` | 33 |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

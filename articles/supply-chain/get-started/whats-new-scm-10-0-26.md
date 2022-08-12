@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: d47f3f377a7de87b9c24a18e4542e5a48235d270
-ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
+ms.openlocfilehash: 8be79f259505c084a8680c453ec15a4cef1a890f
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954531"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124507"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10026-may-2022"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.26 (Maj 2022 r.)
 
@@ -33,7 +33,7 @@ To wydanie zawiera funkcje, które są podane w następującej tabeli. Firma Mic
 
 | Obszar funkcji | Funkcja | Więcej informacji | Włączone przez   |
 |---|---|---|---|
-| Zapasy i logistyka | [Wyszukiwanie dostępnych zapasów w celu obsługi zaawansowanych pozycji zarządzania magazynem](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-support-advanced-warehouse-management) | [Obsługa dodatku Inventory Visibility dla pozycji WHS](../inventory/inventory-visibility-whs-support.md) | Zarządzanie funkcjami:<br>*Włącz pozycje magazynowe w Widoczności magazynu* |
+| Zapasy i logistyka | [Wyszukiwanie dostępnych zapasów w celu obsługi zaawansowanych pozycji zarządzania magazynem](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-support-advanced-warehouse-management) | [Obsługa dodatku Inventory Visibility dla pozycji WMS](../inventory/inventory-visibility-whs-support.md) | Zarządzanie funkcjami:<br>*Włącz pozycje magazynowe w Widoczności magazynu* |
 | Zapasy i logistyka | [Dostępne zapasy dla dodatku Widoczność zapasów](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/available-to-promise-inventory-visibility-add-in) | [Widoczność dostępnych zapasów — harmonogramy zmian i dostępność zapasów](../inventory/inventory-visibility-available-to-promise.md) | Włączone przez konfigurację usługi |
 | Produkcja | [Pozycje wagi wychwytu dla interfejsu wykonawczego hali produkcyjnej](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/catch-weight-items-production-floor-execution-interface) | [Jak pracownicy korzystają z interfejsu wykonania hal produkcyjnych](../production-control/production-floor-execution-use.md) | Zarządzanie funkcjami:<br>*(Wersja zapoznawcza) Raport pozycji ilości efektywnej z interfejsu wykonania hal produkcyjnych* |
 | Produkcja | Moja karta zadań w interfejsie wykonania hal produkcyjnych <!-- KFM: Add link to release plan when available --> | [Jak pracownicy korzystają z interfejsu wykonania hal produkcyjnych](../production-control/production-floor-execution-use.md) | Zarządzanie funkcjami:<br>*Moja karta zadań w interfejsie wykonania hal produkcyjnych* |
@@ -47,9 +47,9 @@ Aby włączyć lub wyłączyć te funkcje, należy przejść do obszaru [zarząd
 | Moduł | Nazwa funkcji w zarządzaniu funkcjami | Więcej informacji |
 |---|---|---|
 | Zaopatrzenie i sourcing | Księguj zarejestrowane ilości produktów magazynowanych i reszty produktów niemagazynowanych dla dokumentów dostawy i faktur od dostawcy | Ta funkcja zmienia sposób, w jaki ilości produktów nie magazynowanych (takich jak usługi) są księgowane podczas przetwarzania faktur dostawcy i wysyłek przychodzących zgodnie z zamówieniami zakupu. Ta funkcja modyfikuje zachowanie opcji *Zarejestrowane ilości i ilości usług do księgowania przychodów i faktur dostawców*, zmieniając ją tak, aby była zgodne z zachowaniem opcji *Zarejestrowana ilość i produkty nie magazynowane* już dostarczone podczas księgowania ilości dla dokumentów dostawy sprzedaży.<br><br>W przypadku zaksięgowania dokumentu przyjęcia produktów lub faktury od dostawcy za pomocą opcji *Zarejestrowane ilości i ilości usług* system księguje zarejestrowaną ilość produktów magazynowanych i księguje pozostałą ilość produktów niematurowanych (w tym zarówno usług, jak i usług). Bez tej funkcji system nadal księguje zarejestrowaną ilość produktów magazynowanych (w tym usługi skonfigurowane jako towary magazynowe), ale zawsze księguje pełną zamówione ilości produktów usług nie magazynowanych (i ignoruje produkty nie magazynowane, które nie są typu *Usługa*). |
-| Zaopatrzenie i sourcing | Synchronizuj wymiary śledzenia w międzyfirmowych wierszach sprzedaży i zamówienia zakupu | Ta funkcja umożliwia kontrolowanie, czy wymiary śledzenia numerów seryjnych i numerów partii są synchronizowane w wierszach międzyfirmowego zamówienia sprzedaży i zakupu. Dodaje nowe ustawienia do kart **Zasady zamówień zakupu** i **Zasady zamówień sprzedaży** na stronie konfiguracji **Międzyfirmowe** dla klientów i dostawców. Ponadto uaktualnia nazwy kilku powiązanych z nim ustawień w pobliżu.<br><br>Jeśli korzystasz z zaawansowanego zarządzania magazynem (WMS), pamiętaj, że ta funkcja synchronizuje numery partii i seryjne tylko wtedy, gdy te wymiary znajdują się powyżej lokalizacji w hierarchii rezerwacji miejsca docelowego. |
+| Zaopatrzenie i sourcing | Synchronizuj wymiary śledzenia w międzyfirmowych wierszach sprzedaży i zamówienia zakupu | Ta funkcja umożliwia kontrolowanie, czy wymiary śledzenia numerów seryjnych i numerów partii są synchronizowane w wierszach międzyfirmowego zamówienia sprzedaży i zakupu. Dodaje nowe ustawienia do kart **Zasady zamówień zakupu** i **Zasady zamówień sprzedaży** na stronie konfiguracji **Międzyfirmowe** dla klientów i dostawców. Ponadto uaktualnia nazwy kilku powiązanych z nim ustawień w pobliżu.<br><br>Jeśli korzystasz z procesów zarządzania magazynem (WMS), pamiętaj, że ta funkcja synchronizuje numery partii i seryjne tylko wtedy, gdy te wymiary znajdują się powyżej lokalizacji w hierarchii rezerwacji miejsca docelowego. |
 | Zarządzanie informacjami o produktach | Wyczyść wartości atrybutów produktów | Ta funkcja dodaje okresowe zadanie o nazwie **Wyczyść wartości atrybutów produktów** czyszczące rekordy wartości atrybutów produktów, które nie są już skojarzone z żadnym produktem za pośrednictwem kategorii produktów. |
-| Zarządzanie zapasami i magazynem | (Rosja) Zapobieganie rozbieżnościom podczas wystawiania deklaracji GTD dla zamówień zakupu, które zawierają pozycje z obsługą funkcji WMS | Ta funkcja jest dostępna tylko w języku rosyjskim. Zapobiega to rozbieżnościom, które występują podczas wystawiania rosyjskich numerów deklaracji celnych (GTD) dla zamówień zakupu importu, które zawierają towary włączone dla zaawansowanego magazynowania (WMS). Proces wydawania GTD zmienia niektóre wartości wymiarów magazynowych w powiązanych transakcjach magazynowych na fakturach zawartych w arkuszu niestandardowym, co prowadzi do rozbieżności między rekordami pracy dla zamówienia zakupu a transakcjami magazynowymi dla zakupu. Gdy ta funkcja jest włączona, proces wydawania GTD generuje pracę korekty, która eliminuje takie rozbieżności. |
+| Zarządzanie zapasami i magazynem | (Rosja) Zapobieganie rozbieżnościom podczas wystawiania deklaracji GTD dla zamówień zakupu, które zawierają pozycje z obsługą funkcji WMS | Ta funkcja jest dostępna tylko w języku rosyjskim. Zapobiega to rozbieżnościom, które występują podczas wystawiania rosyjskich numerów deklaracji celnych (GTD) dla zamówień zakupu importu, które zawierają towary włączone dla procesów zarządzania magazynem (WMS). Proces wydawania GTD zmienia niektóre wartości wymiarów magazynowych w powiązanych transakcjach magazynowych na fakturach zawartych w arkuszu niestandardowym, co prowadzi do rozbieżności między rekordami pracy dla zamówienia zakupu a transakcjami magazynowymi dla zakupu. Gdy ta funkcja jest włączona, proces wydawania GTD generuje pracę korekty, która eliminuje takie rozbieżności. |
 | Zarządzanie magazynem | Ulepszone analizowanie kodów kreskowych GS1 | Ta funkcja dodaje rozszerzoną analizę danych symbolu GS1. Nowy program parserowy implementuje algorytm specyfikacji ogólnej GS1 na celu analizowanie symboli GS1 i zapewnia silniejszą weryfikację danych. Aby uzyskać więcej informacji, zobacz [Skanowanie kodów kreskowych GS1](../warehousing/gs1-barcodes.md). |
 | Zarządzanie magazynem | Nowe strony pulpitu planowania wysyłki ładunku | Dodaje dwie nowe strony pulpitu planowania wysyłki ładunku: **Pulpit planowania wysyłki ładunku przychodzącego** i **Pulpit planowania wysyłki ładunku wychodzącego**. |
 | Zarządzanie magazynem | Aplikacja zarządzania magazynem — pusta deklaracja GTD | Ta funkcja jest dostępna tylko w języku rosyjskim. Dzięki tej aplikacji pracownicy korzystający z aplikacji mobilnej Warehouse Management w razie potrzeby pozostawią puste numery rosyjskich deklaracji celnych (GTD). Jeśli wymiar śledzenia GTD jest tak ustawiony, że zezwala na puste wartości, system akceptuje puste wartości GTD dla operacji magazynowych pod warunkiem, że są dostępne zapasy. |
@@ -64,9 +64,9 @@ Niedawno dodano lub znacząco zaktualizowano następujące artykuły pomocy. Te 
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizacja Platform dla aplikacji Finanse i Działania
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizacja Platform dla aplikacji finansowych i operacyjnych
 
-Pakiet Microsoft Dynamics 365 Supply Chain Management 10.0.26 zawiera aktualizację platformy. Aby dowiedzieć się więcej, zobacz [aktualizacje platformy dla wersji 10.0.26 aplikacji Finanse i Działania (maj 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-26.md).
+Pakiet Microsoft Dynamics 365 Supply Chain Management 10.0.26 zawiera aktualizację platformy. Aby dowiedzieć się więcej, zobacz [aktualizacje platformy dla wersji 10.0.26 aplikacji finansowych i operacyjnych (maj 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-26.md).
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
@@ -90,3 +90,4 @@ Zanim jakakolwiek funkcja zostanie usunięta z produktu, powiadomienie o zaniech
 W przypadku zmian, które wpływają tylko na czas kompilacji, ale są zgodne z trybem piaskownicy i środowiskami produkcyjnymi, czas niezgodności będzie krótszy niż 12 miesięcy. Zazwyczaj są to aktualizacje funkcjonalne, które należy wykonać w kompilatorze.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

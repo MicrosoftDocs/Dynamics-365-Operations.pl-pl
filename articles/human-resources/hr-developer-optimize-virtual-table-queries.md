@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-04-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f75176781620cd6f845c002876eba6e34d5793e7
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 1f379cd7783cc984666582d2c680a1db013627ce
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692234"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070181"
 ---
 # <a name="optimize-dataverse-virtual-table-queries"></a>Optymalizowanie zapytań tabeli wirtualnej usługi Dataverse
 
@@ -49,12 +49,12 @@ Jedną z przyczyn niskiej wydajności tabel wirtualnych Dataverse dla Human Reso
 Przykład, w którym można zobaczyć ten wpływ jest w kwerendach dotyczących jednostki Pracownik (**mshr_hcmworkerentity**) lub Pracownik podstawowy (**mshr_hcmworkerbaseentity**). Manifest problemu z wydajnością może być wyświetlony na kilka sposobów:
 
 - **Wolno wykonywanie kwerendy**: Wykonywanie zapytania względem tabeli wirtualnej może spowodować zwrócenie oczekiwanych wyników, ale jego wykonanie może potrwać dłużej niż oczekiwano.
-- **Limit czasu kwerendy**: Zapytanie może przekroczyć limit czasu i zwrócić następujący błąd: „Uzyskano token w celu wywołania Finanse i Działania, ale Finanse i Działania zwrócił błąd typu InternalServerError”.
+- **Limit czasu kwerendy**: Zapytanie może przekroczyć limit czasu i zwrócić następujący błąd: „Uzyskano token w celu wywołania aplikacji finansowych i operacyjnych, ale aplikacje finansowe i operacyjne zwróciły błąd typu InternalServerError”.
 - **Nieoczekiwany błąd**: Zapytanie może zwrócić błąd typu 400 z następującym komunikatem: „Wystąpił nieoczekiwany błąd”.
 
   ![Typ błędu 400 w HcmWorkerBaseEntity.](./media/HcmWorkerBaseEntityErrorType400.png)
 
-- **Ograniczenie wydajności**: Zapytanie może nadużywać zasobów serwera i podlegać ograniczeniom. W tym przypadku kwerenda zwraca następujący błąd: „Uzyskano token w celu wywołania Finanse i Działania, ale Finanse i Działania zwrócił błąd typu 429”. Aby uzyskać więcej informacji dotyczących ograniczania wydajności w Human Resources, zobacz [Ograniczenie wydajności — często zadawane pytania](./hr-admin-integration-throttling-faq.md).
+- **Ograniczenie wydajności**: Zapytanie może nadużywać zasobów serwera i podlegać ograniczeniom. W tym przypadku kwerenda zwraca następujący błąd: „Uzyskano token w celu wywołania aplikacji finansowych i operacyjnych, ale aplikacji finansowe i operacyjne zwróciły błąd typu 429”. Aby uzyskać więcej informacji dotyczących ograniczania wydajności w Human Resources, zobacz [Ograniczenie wydajności — często zadawane pytania](./hr-admin-integration-throttling-faq.md).
 
   ![Typ błędu 429 w HcmWorkerBaseEntity.](./media/HcmWorkerBaseEntityErrorType429.png)
 
@@ -161,3 +161,4 @@ Aby uzyskać więcej informacji na temat stronicowania, zobacz temat [Określ li
 - [Dławienie — często zadawane pytania](./hr-admin-integration-throttling-faq.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

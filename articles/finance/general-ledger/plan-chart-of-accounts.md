@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e797117199ff57cb4d3beae187ae7649579d33b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 10906d7b30628dfe69907cfa69ae1022fde33243
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853356"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070643"
 ---
 # <a name="plan-your-chart-of-accounts"></a>Planowanie planu kont
 
@@ -43,7 +43,7 @@ Oto kilka czynników, które należy uwzględnić podczas planowania struktury p
 Plan kont tworzy się na stronie **Plan kont**. Konta główne można tworzyć na stronie **Plan kont** lub na stronie **Konta główne**. Na kontach głównych nie należy używać żadnych znaków specjalnych, które są używane jako separatory planów kont. W przeciwnym razie może wystąpić niestabilność lub zawsze trzeba będzie używać wyszukiwań albo okna dialogowego podczas wprowadzania kombinacji kont i wymiarów. Aby uzyskać więcej informacji, zobacz [Tworzenie konta głównego](tasks/create-main-account.md).
 
 > [!NOTE]
-> W programie Dynamics 365 for Finance and Operations w wersji 8.0 (z kwietnia 2018 r.) można zmodyfikować separator planu kont ze strony **Parametry księgi głównej**.
+> W programie Dynamics 365 Finance w wersji 8.0 (z kwietnia 2018 r.) można zmodyfikować separator planu kont ze strony **Parametry księgi głównej**.
 
 Dobrze jest połączyć konta główne z kategoriami konta głównego, by móc korzystać z domyślnych raportów finansowych bez konieczności wprowadzania żadnych zmian. Dzięki temu tworzenie i obsługa raportów staje się łatwiejsza.
 
@@ -60,3 +60,4 @@ Aby uzyskać więcej informacji, zobacz następujące tematy:
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

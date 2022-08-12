@@ -10,18 +10,16 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 27470f302b91fa3fa22f47438fa0f936beb7e7d0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e7f919b28f6d0c8cd830ecfab4608be50b684c8e
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846193"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135466"
 ---
 # <a name="global-inventory-accounting-home-page"></a>Globalne księgowanie zapasów — strona główna
 
 [!INCLUDE [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!--KFM: Preview until 4/30/2022 -->
 
 Organizacje międzynarodowe znajdują się pod rosnącą presją władz, aby przestrzegać lokalnych i globalnych standardów rachunkowości. Wycena zapasów odgrywa istotną rolę w zapewnieniu zgodności z przepisami. Dodatek Globalne księgowanie zapasów do Microsoft Dynamics 365 Supply Chain Management jest kompleksowym rozwiązaniem, które umożliwia organizacjom (szczególnie międzynarodowym) używanie wielu ksiąg wycen do księgowania zapasów. W związku z tym organizacje te mogą jednocześnie spełniać wymogi wielu standardów rachunkowości i wewnętrznej rachunkowości zarządczej.
 

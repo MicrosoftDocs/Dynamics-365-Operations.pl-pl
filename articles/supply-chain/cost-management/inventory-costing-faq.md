@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2022-05-03
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 467839b1d0ca6788a92ae60d46686374d0a58046
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5a1d86e7e9cca159d0a820680714a08dc73c0688
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850852"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068402"
 ---
 # <a name="inventory-costing-faq"></a>Wycena zapasów – FAQ
 
@@ -112,11 +112,11 @@ Nie, nie można włączyć opcji **Magazyn finansowy** dla wymiaru **Lokalizacja
 
 ### <a name="should-i-enable-the-use-warehouse-management-processes-option-for-the-storage-dimension-group"></a>Czy powinienem włączyć opcję Użyj procesów zarządzania magazynem dla grupy wymiarów magazynowych?
 
-Jeśli uważasz, że w przyszłości możesz chcieć korzystać z zaawansowanych funkcji zarządzania magazynem, powinieneś włączyć opcję **Używaj procesów zarządzania magazynem**. Po zapisaniu grupy wymiarów magazynowych nie można już zmienić dla niej ustawienia opcji **Używaj procesów zarządzania magazynem**. Jeśli zdecydujesz się na używanie procesów zarządzania magazynem później, będziesz musiał stworzyć nowy magazyn, w którym opcja ta będzie włączona. Nie istnieje żaden zautomatyzowany proces, którego możesz użyć, aby przenieść wszystkie zapasy z jednego magazynu do drugiego lub skopiować związane z nimi konfiguracje do nowego magazynu.
+Jeśli uważasz, że w przyszłości możesz chcieć korzystać z zaawansowanych funkcji zarządzania magazynem WMS, powinieneś włączyć opcję **Używaj procesów zarządzania magazynem**. Po zapisaniu grupy wymiarów magazynowych nie można już zmienić dla niej ustawienia opcji **Używaj procesów zarządzania magazynem**. Jeśli zdecydujesz się na używanie procesów zarządzania magazynem później, będziesz musiał stworzyć nowy magazyn, w którym opcja ta będzie włączona. Nie istnieje żaden zautomatyzowany proces, którego możesz użyć, aby przenieść wszystkie zapasy z jednego magazynu do drugiego lub skopiować związane z nimi konfiguracje do nowego magazynu.
 
-### <a name="can-i-enable-the-use-warehouse-management-processes-for-the-storage-dimension-group-even-if-im-not-planning-to-use-advanced-warehousing"></a>Czy mogę włączyć opcję Używaj procesów zarządzania magazynem dla grupy wymiarów magazynowych, nawet jeśli nie zamierzam używać zaawansowanego magazynowania?
+### <a name="can-i-enable-the-use-warehouse-management-processes-for-the-storage-dimension-group-even-if-im-not-planning-to-use-warehouse-management-processes-wms"></a>Czy mogę włączyć opcję Używaj procesów zarządzania magazynem dla grupy wymiarów magazynowych, nawet jeśli nie zamierzam używać procesów WMS?
 
-Tak, nawet jeśli nie planujesz korzystać z zaawansowanych funkcji zarządzania magazynem, możesz włączyć opcję **Używaj procesów zarządzania magazynem** dla grupy wymiarów magazynowych. Aby tworzyć i przetwarzać transakcje, musisz wykonać minimalną konfigurację, taką jak hierarchie rezerwacji i grupy sekwencji jednostek. Jednak ustawienia dla zaawansowanego magazynowania są zazwyczaj ignorowane podczas ręcznego przetwarzania list pobrań, listów przewozowych i potwierdzeń odbioru produktów (np. na stronach zamówień sprzedaży i zamówień zakupu).
+Tak, nawet jeśli nie planujesz korzystać z zaawansowanych funkcji zarządzania magazynem WMS, możesz włączyć opcję **Używaj procesów zarządzania magazynem** dla grupy wymiarów magazynowych. Aby tworzyć i przetwarzać transakcje, musisz wykonać minimalną konfigurację, taką jak hierarchie rezerwacji i grupy sekwencji jednostek. Jednak ustawienia dla procesów WMS są zazwyczaj ignorowane podczas ręcznego przetwarzania list pobrań, listów przewozowych i potwierdzeń odbioru produktów (np. na stronach zamówień sprzedaży i zamówień zakupu).
 
 ### <a name="when-should-i-enable-the-physical-inventory-option-for-a-storage-or-tracking-dimension-group"></a>Kiedy należy włączyć opcję Spis fizycznych zapasów dla grupy wymiarów przechowywania lub śledzenia?
 

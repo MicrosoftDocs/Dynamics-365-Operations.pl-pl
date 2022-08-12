@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 525e9be1655bdf0c0328ec53509ab1966abd7bde
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: aceb883e9182090a336c4c91aa0022a79495ce40
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8883576"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111703"
 ---
 # <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Definiowanie zależności konfiguracji raportowania elektronicznego od innych składników
 
@@ -25,7 +25,7 @@ ms.locfileid: "8883576"
 
 W celu wykonania tych kroków należy najpierw wykonać kroki w przewodniku po zadaniu ER Zarządzanie konfiguracjami mapowania modelu oraz mieć dostęp do usługi Microsoft Dynamics Lifecycle Services (LCS).
 
-Ta procedura przedstawia sposób projektowania konfiguracji raportowania elektronicznego (ER) i określania jej zależności od innych składników oprogramowania, tak aby mieć pewność, że konfiguracja jest prawidłowo pobierana dla określonej wersji Finance and Operations. W tym przykładzie utworzysz wymagane konfiguracje ER dla przykładowej firmy Litware, Inc. 
+Ta procedura przedstawia sposób projektowania konfiguracji raportowania elektronicznego (ER) i określania jej zależności od innych składników oprogramowania, tak aby mieć pewność, że konfiguracja jest prawidłowo pobierana dla określonej wersji aplikacji finansowych i operacyjnych. W tym przykładzie utworzysz wymagane konfiguracje ER dla przykładowej firmy Litware, Inc. 
 
 Ta procedura jest przeznaczona dla użytkowników z przypisaną rola Administrator systemu lub Deweloper raportowania elektronicznego. Te kroki można wykonać w dowolnej firmie, ponieważ konfiguracje ER są współużytkowane przez wszystkie firmy. 
 
@@ -59,7 +59,7 @@ Ta procedura jest przeznaczona dla użytkowników z przypisaną rola Administrat
 18. Wybierz Microsoft Dynamics AX 7.0 RTW.
 19. W polu Wersja wpisz wartość „(7.0.1265.3015,7.1)”.
     * [7.0.1265.3015,7.1)  
-    * Zależności będą oceniane podczas pobierania konfiguracji z repozytorium modułu Raportowanie elektroniczne. Ta wersja konfiguracji będzie pobierana z repozytorium ER, gdy wersja 1 konfiguracji „Przykładowy model danych” już znajduje się na miejscu albo zostanie pobrana z wyprzedzeniem. Jeśli jest pobierana z wyprzedzeniem, musi zostać wykonana w Microsoft Dynamics 365 for Finance and Operations Enterprise Edition w wersji 7.0.1265.3015 lub nowszej, ale wersji pomocniczej nie nowszej niż 1.   
+    * Zależności będą oceniane podczas pobierania konfiguracji z repozytorium modułu Raportowanie elektroniczne. Ta wersja konfiguracji będzie pobierana z repozytorium ER, gdy wersja 1 konfiguracji „Przykładowy model danych” już znajduje się na miejscu albo zostanie pobrana z wyprzedzeniem. Jeśli jest pobierana z wyprzedzeniem, musi zostać wykonana w Microsoft Dynamics 365 Finance, Enterprise Edition w wersji 7.0.1265.3015 lub nowszej, ale wersji pomocniczej nie nowszej niż 1.   
 20. Kliknij przycisk Zapisz.
 21. Zamknij stronę.
 22. Kliknij przycisk Zmień stan.
@@ -143,3 +143,4 @@ Usuniemy utworzone konfiguracje z systemu i pobierzemy je ponownie z repozytoriu
 [Zarządzanie cyklem życia konfiguracji raportowania elektronicznego (ER)](../general-electronic-reporting-manage-configuration-lifecycle.md)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

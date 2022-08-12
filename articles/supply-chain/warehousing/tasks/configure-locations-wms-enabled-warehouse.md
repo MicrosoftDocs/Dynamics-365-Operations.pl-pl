@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie lokalizacji w magazynie z obsługą WMS
-description: W tym przewodniku pokazano, jak skonfigurować lokalizację dla nowego magazynu obsługującego WMS (magazynu, który używa zaawansowanych procesów zarządzania magazynem).
+description: W tym przewodniku pokazano, jak skonfigurować lokalizację dla nowego magazynu obsługującego WMS (magazynu, który używa zaawansowanych procesów zarządzania magazynem (WMS)).
 author: perlynne
 ms.date: 06/26/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b5273a388b30a41b75bd76c92fa4b9ff05c8f8d6
-ms.sourcegitcommit: db80edbe0c32e3a5f22aae6154781f3ff8a2ab2a
+ms.openlocfilehash: 45195698b48d6a22697f99044a8ae49beaf7156e
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "7599355"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067282"
 ---
 # <a name="configure-locations-in-a-wms-enabled-warehouse"></a>Konfigurowanie lokalizacji w magazynie z obsługą WMS
 
 [!include [banner](../../includes/banner.md)]
 
-W tym przewodniku pokazano, jak skonfigurować lokalizację dla nowego magazynu obsługującego WMS (magazynu, który używa zaawansowanych procesów zarządzania magazynem). Ten proces jest zwykle wykonywany przez kierownika magazynu. Można wykonać zadania z tego przewodnika przy użyciu danych firmy demonstracyjnej USMF lub własnych danych. Warunkiem wstępnym jest posiadanie co najmniej jednego skonfigurowanego oddziału.
+W tym przewodniku pokazano, jak skonfigurować lokalizację dla nowego magazynu obsługującego WMS (magazynu, który używa zaawansowanych procesów zarządzania magazynem (WMS)). Ten proces jest zwykle wykonywany przez kierownika magazynu. Można wykonać zadania z tego przewodnika przy użyciu danych firmy demonstracyjnej USMF lub własnych danych. Warunkiem wstępnym jest posiadanie co najmniej jednego skonfigurowanego oddziału.
 
 
 ## <a name="create-a-new-warehouse"></a>Tworzenie nowego magazynu
@@ -35,7 +35,7 @@ W tym przewodniku pokazano, jak skonfigurować lokalizację dla nowego magazynu 
 4. W polu **Nazwa** wpisz wartość.
 5. W polu **Witryna** wybierz lub wpisz istniejącą wartość witryny.
 6. Rozwiń sekcję **Magazyn**.
-7. W opcji **Użyj procesów zarządzania magazynami** zaznacz wartość Tak. To ustawienie pozwala uruchomiać zaawansowane procesy magazynowe przy użyciu pracy magazynowej i urządzeń przenośnych.
+7. W opcji **Użyj procesów zarządzania magazynami** zaznacz wartość Tak. To ustawienie pozwala uruchomiać procesy zarządzania magazynem (WMS) przy użyciu pracy magazynowej i urządzeń przenośnych.
 8. Zamknij stronę.
 
 ## <a name="define-a-location-format"></a>Definiowanie formatu lokalizacji
@@ -68,7 +68,7 @@ W tym przewodniku pokazano, jak skonfigurować lokalizację dla nowego magazynu 
 5. Zamknij stronę.
 
 ## <a name="define-location-profile"></a>Definiowanie profilu lokalizacji
-1. Przejdź do **Okienko nawigacji > Moduły > Zarządzanie magazynem > Ustawienia > Magazyn > Profile lokalizacji**. Zdefiniowanie profili lokalizacji jest bardzo ważne. W tym miejscu można kontrolować pojemność zgrupowanych lokalizacji oraz zasady dotyczących tego, które zapasy i jak są przechowywane. Profile lokalizacji mogą służyć jako opcje filtrowania do kontrolowania różnych procesów zarządzania magazynem. Jako minimum należy utworzyć profil lokalizacji użytkownika w celu umożliwienia procesów zarządzania magazynem.
+1. Przejdź do **Okienko nawigacji > Moduły > Zarządzanie magazynem > Ustawienia > Magazyn > Profile lokalizacji**. Zdefiniowanie profili lokalizacji jest bardzo ważne. W tym miejscu można kontrolować pojemność zgrupowanych lokalizacji oraz zasady dotyczących tego, które zapasy i jak są przechowywane. Profile lokalizacji mogą służyć jako opcje filtrowania do kontrolowania różnych procesów zarządzania magazynem. Jako minimum należy utworzyć profil lokalizacji użytkownika w celu włączenia WMS.
 2. Kliknij przycisk **Nowy**.
 3. W polu **Identyfikator profilu lokalizacji** wpisz wartość.
 4. W polu **Nazwa** wpisz wartość.

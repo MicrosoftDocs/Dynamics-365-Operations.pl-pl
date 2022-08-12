@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 100b1972801f117560a5caf338a1ac640737ccdf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 43102cb867243a872a5d1df777d8c4102a48e235
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8855940"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070328"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Obsługa magazynów dla ładunków przychodzących dla zamówień zakupu
 
@@ -56,7 +56,7 @@ Na poniższej ilustracji przedstawiono typowy przepływ obsługi ładunków przy
 
 ## <a name="register-item-quantities-that-arrive-on-an-inbound-load"></a><a name="register-item-quantities-arriving"></a>Rejestrowanie ilości towarów przychodzących w ładunku przychodzącym
 
-Microsoft Dynamics 365 Supply Chain Management obsługuje kilka podejść operacyjnych do rejestrowania przybycia zamówionych produktów. System można więc skonfigurować w taki sposób, aby odpowiadał określonym wymaganiom biznesowym. W tej sekcji opisano sposób rejestrowania przychodzących ilości towarów przy użyciu urządzenia przenośnego, gdy w systemie jest włączona funkcja zaawansowanego zarządzania magazynem. Istnieje jednak alternatywny przepływ oparty na korzystaniu z arkusza przyjęcia towaru zamiast urządzenia przenośnego. Aby uzyskać więcej informacji o tym przepływie, zobacz [Rejestrowanie pozycji dla zaawansowanego magazynowania za pomocą arkusza przyjęć towarów](tasks/register-items-advanced-warehousing.md).
+Microsoft Dynamics 365 Supply Chain Management obsługuje kilka podejść operacyjnych do rejestrowania przybycia zamówionych produktów. System można więc skonfigurować w taki sposób, aby odpowiadał określonym wymaganiom biznesowym. W tej sekcji opisano sposób rejestrowania przychodzących ilości towarów przy użyciu urządzenia przenośnego, gdy w systemie jest włączona funkcja zarządzania magazynem (WMS). Istnieje jednak alternatywny przepływ oparty na korzystaniu z arkusza przyjęcia towaru zamiast urządzenia przenośnego. Aby uzyskać więcej informacji o tym przepływie, zobacz [Rejestrowanie pozycji dla procesów zarządzania magazynem za pomocą arkusza przyjęć towarów](tasks/register-items-advanced-warehousing.md).
 
 Gdy ładunek przychodzący po raz pierwszy dociera do magazynu, pracownicy magazynowi muszą rejestrować ilości towarów, które są uwzględnione w wysyłce. Zazwyczaj korzystają ze skanerów podręcznych. Ten przepływ pracy jest dostępny tylko wtedy, gdy w systemie istnieją następujące elementy:
 

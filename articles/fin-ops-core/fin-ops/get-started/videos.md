@@ -1,6 +1,6 @@
 ---
 title: Pliki wideo
-description: Ta strona zawiera listę filmów instruktażowych i technicznych przygotowanych przez Microsoft, które dotyczą aplikacji Finance and Operations i są dostępne na YouTube i w innych witrynach.
+description: Ta strona zawiera listę filmów instruktażowych i technicznych przygotowanych przez Microsoft, które dotyczą aplikacji finansowych i operacyjnych i są dostępne na YouTube i w innych witrynach.
 author: sericks007
 ms.date: 06/13/2022
 ms.topic: article
@@ -14,27 +14,27 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 76fe61c13490afbd7b5dcd39f3c631cbab43bb9e
-ms.sourcegitcommit: 0686b56b4699ffefd2c208d0fe496d5860296520
+ms.openlocfilehash: a21a9122badc308940c0182061a18051bfcc0abd
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8958146"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124963"
 ---
 # <a name="videos"></a>Pliki wideo 
 
 [!include [banner](../includes/banner.md)]
 
-Na [kanale rozwiązania Microsoft Dynamics 365 na YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) znajdziesz przygotowane przez Microsoft filmy, które pokazują szeroką gamę zastosowań biznesowych produktów Dynamics 365. W tej sekcji znajduje się lista filmów instruktażowych o oprogramowaniu aplikacji Finance and Operations, które są zamieszczone w kanale.
+Na [kanale rozwiązania Microsoft Dynamics 365 na YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) znajdziesz przygotowane przez Microsoft filmy, które pokazują szeroką gamę zastosowań biznesowych produktów Dynamics 365. W tej sekcji znajduje się lista filmów instruktażowych o oprogramowaniu aplikacji finansowych i operacyjnych, które są zamieszczone w kanale.
 
 > [!Note]
 > Niektóre z wymienionych plików wideo zostały opublikowane w ramach poprzedniej nazwy produktu, ale nadal istnieją.
 
-## <a name="videos-for-finance-and-operations-development-and-administration"></a>Filmiki wideo na potrzeby rozwiązania Finance and Operations i administrowania nim
+## <a name="videos-for-finance-and-operations-development-and-administration"></a>Filmiki wideo na potrzeby aplikacji finansowych i operacyjnych i administrowania nimi
 
 ### <a name="data-integration"></a>Integracja danych
 
-- [Synchronizowanie zlecenia pracy między rozwiązaniami Dynamics 365 for Field Service i aplikacjami Finance and Operations](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
+- [Synchronizowanie zlecenia pracy między rozwiązaniami Dynamics 365 for Field Service i aplikacjami finansowymi i operacyjnymi](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
 
 ### <a name="data-management"></a>Zarządzanie danymi
 
@@ -50,8 +50,8 @@ Na [kanale rozwiązania Microsoft Dynamics 365 na YouTube](https://www.youtube.c
 ### <a name="intelligence"></a>Analizy
 
 - [Jak edytować osadzony raport w analitycznym obszarze roboczym](https://youtu.be/_8WlwmSggcQ)
-- [Sposób osadzania raportów PowerBI.com w module Finance and Operations operacyjne](https://youtu.be/gGWuNJDoi-M)
-- [Używanie własnej bazy danych (BYOD) w aplikacjach Finance and Operations](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
+- [Sposób osadzania raportów PowerBI.com w module aplikacji finansowych i operacyjnych](https://youtu.be/gGWuNJDoi-M)
+- [Używanie własnej bazy danych (BYOD) w aplikacjach finansowych i operacyjnych](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
 - [Jak w rozwiązaniu Dynamics 365 używać pakietu zawartości usługi Power BI Zarządzanie kosztami](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 
 ### <a name="lifecycle-services-lcs"></a>Usługa Lifecycle Services (LCS)
@@ -169,3 +169,4 @@ Na [kanale rozwiązania Microsoft Dynamics 365 na YouTube](https://www.youtube.c
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

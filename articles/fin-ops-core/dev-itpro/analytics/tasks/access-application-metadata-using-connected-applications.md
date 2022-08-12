@@ -13,21 +13,21 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 330683da986a551a9694833655122768d30499b1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b24d865bff0e81f79e7edde360fd5115d8637b42
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906776"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111269"
 ---
 # <a name="access-application-metadata-by-using-connected-applications"></a>Uzyskaj dostęp do metadanych aplikacji za pomocą połączonych aplikacji
 
 [!include [banner](../../includes/banner.md)]
 
-W następujących krokach wyjaśnimy, w jaki sposób użytkownik usługi Regulatory configuration service (RCS) w roli Administratora Systemu lub Dewelopera elektronicznego raportowania może zaprojektować nowe mapowanie modelu Elektronicznego raportowania (ER) przy użyciu metadanych w aplikacji Finance and Operations. Metadane aplikacji będą dostępne online za pomocą aplikacji połączonej z RCS. Przykładowe mapowanie modelu ER zostanie skonfigurowane do dostępu do transakcji handlu zagranicznego. Aby wykonać te kroki, w RCS należy najpierw wykonać kroki w artykule [Tworzenie dostawców konfiguracji i oznacz je jako aktywne](er-configuration-provider-mark-it-active-2016-11.md). Jeśli nie wykonano wszystkich podanych kroków w artykule [Dostęp do metadanych aplikacji przy użyciu konfiguracji ER](access-application-metadata-er-configuration.md), pobierz [Przykłady elektronicznego raportowania](https://download.microsoft.com/download/0/4/e/04e13839-e423-442b-a6c2-dd35b1045c2d/Dynamics%20365%20for%20Finance%20and%20Operations%208.1%20Electronic%20reporting%20task%20guides.zip) i zapisz następujące konfiguracje ER: Handel zagraniczny metadane.xml; Model handlu zagranicznego.xml; Mapowanie handlu zagranicznego.xml, a następnie wykonaj kroki procedury.
+W następujących krokach wyjaśnimy, w jaki sposób użytkownik usługi Regulatory configuration service (RCS) w roli Administratora Systemu lub Dewelopera elektronicznego raportowania może zaprojektować nowe mapowanie modelu Elektronicznego raportowania (ER) przy użyciu metadanych w aplikacji finansowych i operacyjnych. Metadane aplikacji będą dostępne online za pomocą aplikacji połączonej z RCS. Przykładowe mapowanie modelu ER zostanie skonfigurowane do dostępu do transakcji handlu zagranicznego. Aby wykonać te kroki, w RCS należy najpierw wykonać kroki w artykule [Tworzenie dostawców konfiguracji i oznacz je jako aktywne](er-configuration-provider-mark-it-active-2016-11.md). Jeśli nie wykonano wszystkich podanych kroków w artykule [Dostęp do metadanych aplikacji przy użyciu konfiguracji ER](access-application-metadata-er-configuration.md), pobierz [Przykłady elektronicznego raportowania](https://download.microsoft.com/download/0/4/e/04e13839-e423-442b-a6c2-dd35b1045c2d/Dynamics%20365%20for%20Finance%20and%20Operations%208.1%20Electronic%20reporting%20task%20guides.zip) i zapisz następujące konfiguracje ER: Handel zagraniczny metadane.xml; Model handlu zagranicznego.xml; Mapowanie handlu zagranicznego.xml, a następnie wykonaj kroki procedury.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
-1. Otwórz **Wszystkie miejsca prac** > **Electroniczne Raportowanie**. 
+1. Otwórz **Wszystkie miejsca prac** > **Elektroniczne Raportowanie**. 
 2. Upewnij się, że dostawca konfiguracji dla przykładowej firmy Litware, Inc. jest dostępny i oznaczony jako **Aktywny** Jeśli ten dostawca konfiguracji nie jest widoczny, wykonaj procedurę [Utwórz dostawców konfiguracji i oznacz ich jako aktywnych](er-configuration-provider-mark-it-active-2016-11.md). 
 
 ## <a name="get-required-er-configurations"></a>Uzyskaj wymagane konfiguracje ER
@@ -49,7 +49,7 @@ W następujących krokach wyjaśnimy, w jaki sposób użytkownik usługi Regulat
 ## <a name="register-a-connected-application"></a>Zarejestruj połączoną aplikację
 1. Zamknij stronę. 
 2. Zamknij stronę. 
-3. Otwórz **Wszystkie miejsca prac** > **Electroniczne Raportowanie**. 
+3. Otwórz **Wszystkie miejsca prac** > **Elektroniczne Raportowanie**. 
 4. Kliknij **Połączone aplikacje**. 
 5. Upewnij się, że skonfigurowana aplikacja jest oparta na Azure i dostępna dla bieżącego użytkownika RCS. Wymagane jest również, aby bieżący użytkownik RCS miał dostęp do wybranej aplikacji i został zarejestrowany jako jej użytkownik z rolą dającą mu uprawnienia dostępu do metadanych aplikacji. 
 6. Kliknij przycisk **Nowy**. 
@@ -114,3 +114,4 @@ Gdy trzeba ocenić ten model mapowania przy użyciu metadanych innej wersji apli
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

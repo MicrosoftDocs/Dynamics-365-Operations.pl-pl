@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: fe083f16bd47b3f7bdfd366ae4b0fe4a02f49185
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 657c29ec6ddfb2be918424e06eaf219f51a30a02
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907008"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069071"
 ---
 # <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Numer identyfikacyjny odbierany za pomocą aplikacji mobilnej Warehouse Management
 
@@ -26,7 +26,7 @@ ms.locfileid: "8907008"
 
 W tym artykule opisano sposób konfigurowania aplikacji mobilnej Warehouse Management w celu obsługi procesu odbierania numerów identyfikacyjnych przy użyciu numeru identyfikacyjnego do otrzymywania zapasu fizycznego.
 
-Ta funkcja służy do szybkiego rejestrowania przyjęcia przychodzącego zapasu, który jest powiązany z zawiadomieniem o zaliczce na poczet wysyłki (ASN). System automatycznie tworzy ASN, gdy procesy zarządzania magazynem służą do wysłania zamówienia przeniesienia. W procesie zamówienia zakupu można ręcznie zarejestrować ASN lub można go zaimportować automatycznie za pomocą procesu przychodzącej jednostki danych ASN.
+Ta funkcja służy do szybkiego rejestrowania przyjęcia przychodzącego zapasu, który jest powiązany z zawiadomieniem o zaliczce na poczet wysyłki (ASN). System automatycznie tworzy ASN, gdy procesy zarządzania magazynem (WMS) służą do wysłania zamówienia przeniesienia. W procesie zamówienia zakupu można ręcznie zarejestrować ASN lub można go zaimportować automatycznie za pomocą procesu przychodzącej jednostki danych ASN.
 
 Dane ASN są połączone z ładowaniem i wysyłkami za pośrednictwem *struktur pakowania*, w których palety (nadrzędne numery identyfikacyjne) mogą zawierać sprawy (zagnieżdżone numery identyfikacyjne).
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: be6ef12f34e85b90c24c43c6e55ad169c271810a
-ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.openlocfilehash: 4e3da8ab9a739c8455d2c1d2720f94f91a42927d
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9016631"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111609"
 ---
 # <a name="maintenance-forecasts"></a>Prognozy konserwacji
 
@@ -107,7 +107,7 @@ Na poniższej ilustracji pokazano przykład strony listy **Prognoza konserwacji 
 
 ## <a name="automatic-update-of-work-order-forecasts"></a>Automatyczna aktualizacja prognoz zleceń pracy
 
-W module Zarządzanie składnikami majątku można automatycznie aktualizować zmiany prognoz zleceń, aby odzwierciedlały zmainy w kosztach godzinowych, kosztach towarów i wydatków, które zostały zaktualizowane w innych modułach w Microsoft Dynamics 365 for Finance and Operations. Pomaga to upewnić się, że ostatnie koszty własne są zawsze używane w prognozach zleceń pracy. Możliwe jest również tworzenie podobnych aktualizacji dla [prognoz typu zadania konserwacji](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).
+W module Zarządzanie składnikami majątku można automatycznie aktualizować zmiany prognoz zleceń, aby odzwierciedlały zmainy w kosztach godzinowych, kosztach towarów i wydatków, które zostały zaktualizowane w innych modułach. Pomaga to upewnić się, że ostatnie koszty własne są zawsze używane w prognozach zleceń pracy. Możliwe jest również tworzenie podobnych aktualizacji dla [prognoz typu zadania konserwacji](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).
 
 1. Wybierz **Zarządzanie składnikami majątku** > **Okresowe** > **Prognoza** > **Aktualizacja prognozy zlecenia pracy**.
 

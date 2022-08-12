@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: d098aa77b4eb87118692c18ecd1b09a5de2c53d6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7d8d59def24fd138b4cf1d36e286b786e13b096e
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890414"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124037"
 ---
 # <a name="upgrade-budget-planning"></a>Uaktualnienie funkcjonalności planowania budżetu
 
@@ -30,7 +30,7 @@ Istnieją znaczne różnice funkcjonalności planowania budżetu między program
 W programie Finance funkcjonalność planowania budżetu ma wiele ulepszeń, które nie były dostępne w Dynamics AX 2012. W tym artykule opisano zmiany, które muszą wprowadzić użytkownicy dokonujący uaktualnienia. Wskazano także nowe funkcje, które należy wziąć pod uwagę w procesie uaktualniania. Ze względu na zakres zmian nie będzie można otworzyć żadnych istniejących planów budżetu, dopóki nie zostaną wprowadzone zmiany opisane w tym artykule. Raporty powinny jednak działać bez konieczności wprowadzania dodatkowych zmian.
 
 ## <a name="overview-of-changes"></a>Omówienie zmian
-Wprowadzono wiele istotnych zmian w module Budżetowanie w programie Finance and Operations. Te zmiany służą temu, aby planowanie budżetu było łatwiejsze do skonfigurowania i pozwalało bardziej wykorzystywać już istniejące elementy, co powinno ograniczyć ilość czynności konfiguracyjnych i konserwacyjnych wykonywanych co roku. Następujące obszary systemu AX 2012 nie istnieją już w programie Finance:
+Wprowadzono wiele istotnych zmian w module Budżetowanie w aplikacjach finansowych i operacyjnych. Te zmiany służą temu, aby planowanie budżetu było łatwiejsze do skonfigurowania i pozwalało bardziej wykorzystywać już istniejące elementy, co powinno ograniczyć ilość czynności konfiguracyjnych i konserwacyjnych wykonywanych co roku. Następujące obszary systemu AX 2012 nie istnieją już w programie Finance:
 
 -   Szablony planu budżetu (Konfiguracja planowania budżetu)
 -   Foldery planu budżetu (Konfiguracja planowania budżetu)
@@ -47,7 +47,7 @@ Kolumny są nową koncepcją, która zastępuje sekcje szablonu programu Excel, 
 
 ### <a name="layouts"></a>Układy
 
-Układy są nową koncepcją zastępującą szablon programu Excel. Układy zawierają kolumny określające, które dane budżetowe lub rzeczywiste i okresy mają być pokazywane. Układy są również współużytkowane przez aplikację kliencką i dodatek programu Excel. Z tego względu obsługa przez użytkownika podczas wprowadzania lub wyświetlania danych w aplikacji klienckiej Finance and Operations jest lepsza niż obsługa w systemie AX 2012. Przy wprowadzaniu danych w aplikacji klienckiej Finance nie ma już ograniczenia do wyświetlania i wprowadzania w jednym scenariuszu w widoku transakcji. Zamiast tego widok porównania pozwala łatwo wyświetlać i wprowadzać kwoty dla wielu okresów i kont w tym samym czasie. Układy można również zdefiniować tak, aby pozwalały wprowadzać i wyświetlać waluty, komentarze i inne dane opcjonalne. Układy pozwalają również określić, które wymiary księgowe i opisy wymiarów mają być wyświetlane. Układy zawierają również ograniczenia scenariuszy określające, które kolumny w szablonie mogą być edytowane i które kolumny powinny być dostępne w programie Excel. Po zdefiniowaniu układu jest dla niego generowany szablon. Ten szablon z kolei tworzy odpowiedni szablon programu Excel. Następnie można edytować szablon programu Excel, aby umieścić w nim więcej formuł i formatowania, a następnie przekazać go ponownie. Układy są następnie przypisywane do każdej reguły etapu na stronie **Proces planowania budżetu**. W efekcie układy zastępują szablony, które były przypisywane i używane w podobny sposób.
+Układy są nową koncepcją zastępującą szablon programu Excel. Układy zawierają kolumny określające, które dane budżetowe lub rzeczywiste i okresy mają być pokazywane. Układy są również współużytkowane przez aplikację kliencką i dodatek programu Excel. Z tego względu obsługa przez użytkownika podczas wprowadzania lub wyświetlania danych w aplikacji klienckie aplikacji finansowych i operacyjnych jest lepsza niż obsługa w systemie AX 2012. Przy wprowadzaniu danych w aplikacji klienckiej Finance nie ma już ograniczenia do wyświetlania i wprowadzania w jednym scenariuszu w widoku transakcji. Zamiast tego widok porównania pozwala łatwo wyświetlać i wprowadzać kwoty dla wielu okresów i kont w tym samym czasie. Układy można również zdefiniować tak, aby pozwalały wprowadzać i wyświetlać waluty, komentarze i inne dane opcjonalne. Układy pozwalają również określić, które wymiary księgowe i opisy wymiarów mają być wyświetlane. Układy zawierają również ograniczenia scenariuszy określające, które kolumny w szablonie mogą być edytowane i które kolumny powinny być dostępne w programie Excel. Po zdefiniowaniu układu jest dla niego generowany szablon. Ten szablon z kolei tworzy odpowiedni szablon programu Excel. Następnie można edytować szablon programu Excel, aby umieścić w nim więcej formuł i formatowania, a następnie przekazać go ponownie. Układy są następnie przypisywane do każdej reguły etapu na stronie **Proces planowania budżetu**. W efekcie układy zastępują szablony, które były przypisywane i używane w podobny sposób.
 
 ### <a name="budget-planning-processes"></a>Procesy planowania budżetu
 
@@ -69,7 +69,7 @@ Aby pomóc użytkownikom dobrać sposób konfigurowania uaktualnionego systemu, 
    -   Scenariusze planu budżetu: Wartości rzeczywiste, Podstawa, Żądanie budżetu, Budżet zatwierdzony
    -   Wiersze planu budżetu dla wszystkich scenariuszy w roku 2017, a wartości rzeczywiste dla lat 2017 i 2016
 
-   W programie Finance and Operations zostaną utworzone następujące kolumny:
+   W aplikacjach finansowych i operacyjnych zostaną utworzone następujące kolumny:
 
    | Nazwa kolumny    | Scenariusz planu budżetu | Okres kolumny | Przesunięcie roku |
    |----------------|----------------------|--------------------|-------------|

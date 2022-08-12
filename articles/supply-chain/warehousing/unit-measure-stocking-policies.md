@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0de12620bca54c7e43713138d7a152c2bd6edff3453f81cf779f9b875cf77eb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ca1c18a293d66ab78f41cac857461249826ce4c9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714843"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069131"
 ---
 # <a name="unit-of-measure-and-stocking-policies"></a>Jednostka miary i zasady składowania
 
@@ -28,7 +28,7 @@ ms.locfileid: "6714843"
 
 W tym artykule opisano, jak domyślne jednostki, sekwencje jednostek i konwersje jednostek są używane w procesach magazynowych.
 
-Grupy sekwencji jednostek definiują kolejność jednostek, które mogą być używane w operacjach magazynowych. Tworzy się je na stronie **Grupy sekwencji jednostek**. Kolejność pokazuje relacje różnych jednostek. Można na przykład zapisać palety zawierające opakowania z pojedynczymi sztukami towaru. W takim przypadku trzeba podać trzy różne jednostki i logiczną kolejność warstw. Grupy sekwencji jednostek umożliwiają definiowanie zasad dla grupowania numerów identyfikacyjnych i domyślnych jednostek, które mają być używane dla różnych procesów magazynowych. Ten artykuł dotyczy zarówno zaawansowanych rozwiązań magazynowych dostępnych w module Zarządzanie magazynem i bardziej podstawowe rozwiązanie magazynowe, które jest dostępne w module Zarządzanie zapasami.
+Grupy sekwencji jednostek definiują kolejność jednostek, które mogą być używane w operacjach magazynowych. Tworzy się je na stronie **Grupy sekwencji jednostek**. Kolejność pokazuje relacje różnych jednostek. Można na przykład zapisać palety zawierające opakowania z pojedynczymi sztukami towaru. W takim przypadku trzeba podać trzy różne jednostki i logiczną kolejność warstw. Grupy sekwencji jednostek umożliwiają definiowanie zasad dla grupowania numerów identyfikacyjnych i domyślnych jednostek, które mają być używane dla różnych procesów magazynowych. Ten artykuł dotyczy zarówno procesów zarządzania magazynem (WMS) dostępnych w module Zarządzanie magazynem i bardziej podstawowe rozwiązanie magazynowe, które jest dostępne w module Zarządzanie zapasami.
 
 ## <a name="unit-sequence-groups-for-released-products"></a>Grupy sekwencji jednostek dla zwolnionych produktów
 Jeśli chcesz użyć zwolnionych produktów w procesach roboczych magazynu, grupa sekwencji jednostek musi być do nich przypisana. Przy sprawdzaniu poprawności produktu, który jest skojarzony z grupą wymiarów magazynowania i opcja **Użyj procesów zarządzania magazynami** ma wartość **Tak**, zostanie wyświetlony komunikat o błędzie, jeśli identyfikator grupy sekwencji jednostek nie jest zdefiniowany dla produktu. Jeśli używana grupa sekwencji jednostek zawiera wiele wierszy (i z tego względu wiele jednostek), trzeba skonfigurować konwersję jednostek między jednostkami. Te ustawienia wprowadza się na stronie **Konwersje jednostek**. Najmniejsza jednostka grupy sekwencji kojarzona ze zwolnionym produktem musi odpowiadać jednostce magazynowej określonej dla odpowiadającego produktu. Jednostka magazynowa jest jednostką, która jest używana w podstawowych obliczeniach dostępnych zapasów. Można także skonfigurować konwersje jednostki miary dla wariantów produktów głównych za pomocą opcji **Włącz konwersje jednostek miary**.

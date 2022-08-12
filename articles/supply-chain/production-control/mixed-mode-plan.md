@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 186dcdca9d6db5ca16d84f084c66700ddfe8bb5d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 335bdc9690b3111f4a04adc7e82d62de36ff4caf
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857439"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065997"
 ---
 # <a name="mixed-mode-planning---combine-discrete-process-and-lean-sourcing"></a>Planowanie w trybie mieszanym — łączenie sourcingu dyskretnego, procesowego i produkcji oszczędnej
 
@@ -33,7 +33,7 @@ Można wybrać ogólną strategię dostarczania produktów, niezależnie od stru
 
 Na przykład możesz mieć formant Kanban w montażu, w którym materiały są pozyskiwane z obszaru montażowego według zleceń produkcyjnych, kart Kanban, przeniesień, zamówień partii lub dowolnej kombinacji elementów odpowiadającej charakterystyce łańcucha dostaw, i zachować pełną widoczność całego procesu zaopatrzenia. To ułatwia optymalizację procesów w łańcuch dostaw i zapewnia lepszą jego widoczność.  
 
-Szczegółowość zasad zaopatrzenia, które są używane w planowaniu głównym, zależy od wymiarów magazynowych włączonych jako wymiary zapotrzebowania. Aby włączyć planowanie główne do kontrolowania uzupełniania zapasów i dostaw w różnego rodzaju lokalizacjach (np. oddzielając przestrzeń produkcyjną dla różnych jednostek produkcyjnych lub oddzielając różne typy magazynów materiałów i gotowych wyrobów), najlepiej jest włączyć jako wymiary zapotrzebowania opcje Oddział i Magazyn. Magazyn może też być pomijany jako wymiar zapotrzebowania. W takim przypadku podczas korzystania z zarządzania magazynem wszystkie przeniesienia wewnątrz magazynu są kontrolowane przez pracę magazynu, a wszystkie przeniesienia między magazynami mogą być kontrolowane przez karty Kanban wypłat.
+Szczegółowość zasad zaopatrzenia, które są używane w planowaniu głównym, zależy od wymiarów magazynowych włączonych jako wymiary zapotrzebowania. Aby włączyć planowanie główne do kontrolowania uzupełniania zapasów i dostaw w różnego rodzaju lokalizacjach (np. oddzielając przestrzeń produkcyjną dla różnych jednostek produkcyjnych lub oddzielając różne typy magazynów materiałów i gotowych wyrobów), najlepiej jest włączyć jako wymiary zapotrzebowania opcje Oddział i Magazyn. Magazyn może też być pomijany jako wymiar zapotrzebowania. W takim przypadku podczas korzystania z procesów zarządzania magazynem (WMS) wszystkie przeniesienia wewnątrz magazynu są kontrolowane przez pracę magazynu, a wszystkie przeniesienia między magazynami mogą być kontrolowane przez karty Kanban wypłat.
 
 ## <a name="supply-policies"></a>Zasady dostaw
 Mieszany tryb planowania kontroluje sposób dostarczania produktów i, na podstawie podaży, określa, jak są wydawane zapotrzebowania pochodne (zużycie towarów z listą składową \[BOM\]). Na podstawie typu zamówienia system automatycznie pozyskuje materiałów według wymagań.  

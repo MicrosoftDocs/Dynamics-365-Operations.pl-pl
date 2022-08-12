@@ -1,22 +1,22 @@
 ---
 title: Inicjowanie Commerce Scale Unit (chmura)
 description: Ten artykuł wyjaśnia, jak zainicjować Commerce Scale Unit (cloud) w Microsoft Dynamics 365 Commerce.
-author: AamirAllaq
-ms.date: 06/03/2022
+author: jashanno
+ms.date: 07/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: aamiral
+ms.author: jashanno
 ms.search.validFrom: 2018-4-30
-ms.openlocfilehash: 969dd220a7b73a676b9cf5ac26223ebd9b3f2296
-ms.sourcegitcommit: ddcb62bb5fbf26a1178c2bb1aec45a3d2362339e
+ms.openlocfilehash: 93fbf2893fecc7b731f946797907bce4f8448309
+ms.sourcegitcommit: 8032d6275e6d9994ef9759ee16e743b483f7689e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "8942860"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "9183372"
 ---
 # <a name="initialize-commerce-scale-unit-cloud"></a>Inicjowanie Commerce Scale Unit (chmura)
 
@@ -51,30 +51,30 @@ Commerce Scale Unit jest dostępne do wdrożenia w następujących regionach.
 
 | Lokalizacja globalna | Region              | Dostępność        | Komentarze                  |
 |-----------------|---------------------|---------------------|---------------------------|
-| AMERYKI        | Wschodnie stany USA             | Ogólnie dostępne |                           |
-| AMERYKI        | Wschodnie stany USA 2           | Ogólnie dostępne |                           |
-| AMERYKI        | Północno-środkowe stany USA    | Ograniczone zdolności produkcyjne    |                           |
-| AMERYKI        | Południowo-środkowe stany USA    | Ograniczone zdolności produkcyjne    |                           |
-| AMERYKI        | Środkowe stany USA          | Ogólnie dostępne |                           |
-| AMERYKI        | Zachodnie stany USA             | Ogólnie dostępne |                           |
-| AMERYKI        | Zachodnie stany USA 2           | Ogólnie dostępne |                           |
-| AMERYKI        | Kanada środkowa      | Ograniczone zdolności produkcyjne    |                           |
-| AMERYKI        | Kanada wschodnia         | Ograniczone zdolności produkcyjne    |                           |
-| AMERYKI        | Zachodnie stany USA     | Ograniczone zdolności produkcyjne    |                           |
-| APAC            | Australia Wschodnia      | Ogólnie dostępne |                           |
-| APAC            | Azja Południowo-Wschodnia      | Ograniczone zdolności produkcyjne | Wdrożenia niedozwolone    |
-| APAC            | Japonia Wschodnia          | Ogólnie dostępne |                           |
-| APAC            | Japonia Zachodnia          | Ogólnie dostępne |                           |
-| APAC            | Australia Południowo-Wschodnia | Ogólnie dostępne |                           |
-| APAC            | Azja Wschodnia           | Ograniczone zdolności produkcyjne    |                           |
-| APAC            | Indie południowe         | Ograniczone zdolności produkcyjne | Wdrożenia niedozwolone    |
-| APAC            | Indie środkowe       | Ograniczone zdolności produkcyjne    | Wymaga procesu zatwierdzania |
-| Europa, Bliski Wschód i Afryka (EMEA)            | Europa Zachodnia         | Ogólnie dostępne |                           |
-| Europa, Bliski Wschód i Afryka (EMEA)            | Europa Północna        | Ogólnie dostępne |                           |
-| Europa, Bliski Wschód i Afryka (EMEA)            | Południowe Zjednoczone Królestwo            | Ograniczone zdolności produkcyjne    |                           |
-| Europa, Bliski Wschód i Afryka (EMEA)            | Zachodnie Zjednoczone Królestwo             | Ograniczone zdolności produkcyjne    |                           |
-| Szwajcaria     | Szwajcaria Północna   | Ograniczone zdolności produkcyjne    | Wymaga procesu zatwierdzania |
-| Zjednoczone Emiraty Arabskie             | Północne Zjednoczone Emiraty Arabskie           | Ograniczone zdolności produkcyjne    | Wymaga procesu zatwierdzania |
+| AMERYKI        | Wschodnie stany USA             | Ogólnie dostępne |  Brak komentarzy                         |
+| AMERYKI        | Wschodnie stany USA 2           | Ogólnie dostępne |  Brak komentarzy                          |
+| AMERYKI        | Północno-środkowe stany USA    | Ograniczone zdolności produkcyjne    |  Brak komentarzy                            |
+| AMERYKI        | Południowo-środkowe stany USA    | Ograniczone zdolności produkcyjne    |  Brak komentarzy                            |
+| AMERYKI        | Środkowe stany USA          | Ogólnie dostępne |  Brak komentarzy                            |
+| AMERYKI        | Zachodnie stany USA             | Ogólnie dostępne |  Brak komentarzy                            |
+| AMERYKI        | Zachodnie stany USA 2           | Ogólnie dostępne |  Brak komentarzy                            |
+| AMERYKI        | Kanada środkowa      | Ograniczone zdolności produkcyjne    |  Brak komentarzy                            |
+| AMERYKI        | Kanada wschodnia         | Ograniczone zdolności produkcyjne    |   Brak komentarzy                           |
+| AMERYKI        | Zachodnie stany USA     | Ograniczone zdolności produkcyjne    |   Brak komentarzy                           |
+| APAC            | Australia Wschodnia      | Ogólnie dostępne |   Brak komentarzy                           |
+| APAC            | Azja Południowo-Wschodnia      | Ograniczone zdolności produkcyjne | Wdrożenia niedozwolone.    |
+| APAC            | Japonia Wschodnia          | Ogólnie dostępne |  Brak komentarzy                            |
+| APAC            | Japonia Zachodnia          | Ogólnie dostępne |   Brak komentarzy                           |
+| APAC            | Australia Południowo-Wschodnia | Ogólnie dostępne |   Brak komentarzy                           |
+| APAC            | Azja Wschodnia           | Ograniczone zdolności produkcyjne    |   Brak komentarzy                           |
+| APAC            | Indie południowe         | Ograniczone zdolności produkcyjne | Wdrożenia niedozwolone.    |
+| APAC            | Indie środkowe       | Ograniczone zdolności produkcyjne    | Wymaga procesu zatwierdzania. |
+| Europa, Bliski Wschód i Afryka (EMEA)            | Europa Zachodnia         | Ograniczone zdolności produkcyjne    | Obecnie nie jest dostępny w LCS. |
+| Europa, Bliski Wschód i Afryka (EMEA)            | Europa Północna        | Ograniczone zdolności produkcyjne    | Obecnie nie jest dostępny w LCS. |
+| Europa, Bliski Wschód i Afryka (EMEA)            | Południowe Zjednoczone Królestwo            | Ogólnie dostępne |    Brak komentarzy                          |
+| Europa, Bliski Wschód i Afryka (EMEA)            | Zachodnie Zjednoczone Królestwo             | Ogólnie dostępne |    Brak komentarzy                          |
+| Szwajcaria     | Szwajcaria Północna   | Ograniczone zdolności produkcyjne    | Wymaga procesu zatwierdzania. |
+| Zjednoczone Emiraty Arabskie             | Północne Zjednoczone Emiraty Arabskie           | Ograniczone zdolności produkcyjne    | Wymaga procesu zatwierdzania. |
 
 Możliwości rozmieszczenia w regionach o ograniczonych możliwościach są bardzo ograniczone. Prośby o rozmieszczenie są rozpatrywane indywidualnie dla każdego przypadku. Jeśli masz istotną potrzebę biznesową do wdrożenia w regionach o ograniczonej pojemności, możesz złożyć wniosek o wsparcie, aby zostać dodanym do listy oczekujących. Obszary z ograniczeniami zdolności produkcyjnych obecnie nie zezwalają na wdrożenie jednostki Commerce Scale Unit. 
 

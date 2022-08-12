@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-19
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 2db4c2606936222fcd1a97cf2814fbfbc41df113
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d4f54c06a07b3cdd0b8fe2cc52614189ff31ba7f
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8891039"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135608"
 ---
 # <a name="fix-the-not-enough-capacity-could-be-found-scheduling-engine-error"></a>Usuwanie błędu aparatu planowania „Nie znaleziono wystarczających zdolności produkcyjnych”
 
@@ -111,5 +111,41 @@ Aby przejrzeć dostępne zdolności produkcyjne grupy zasobów, wykonaj następu
 Podczas planowania operacji planowanie główne będzie planować zdolności produkcyjne zgodnie z kalendarzem głównej grupy zasobów. Księguje operację pomocniczą w tym samym czasie co operację główną i nie uwzględnia kalendarzy ani zdolności produkcyjnych operacji pomocniczej. Może to spowodować zaplanowanie zlecenia produkcyjnego w zamkniętym kalendarzu lub w czasie, gdy operacja pomocnicza nie jest dostępna (zamknięte w kalendarzu, brak zdolności produkcyjnych).
 
 Podczas planowania zadań podczas planowania zamówienia planowanie główne uwzględnia zdolności produkcyjne i kalendarz operacji głównej i pomocniczej. Aby można było zaplanować zamówienie, kalendarze zasobów obu operacji muszą być otwarte i mieć dostępne zdolności produkcyjne.
+
+## <a name="maximum-job-lead-time-is-too-short"></a>Maksymalny czas realizacji zadania jest zbyt krótki
+
+Silnik planowania nie będzie mógł zaplanować zamówienia, jeśli **Maksymalny czas realizacji zadania** ustawiony dla twojej witryny jest mniejszy niż czas realizacji określony dla elementu w domyślnych ustawieniach zamówienia lub ustawieniach zasięgu.
+
+Aby wyświetlić lub edytować ustawienie **Maksymalny czas realizacji zadania** dla swojej witryny, przejdź do **Kontrola produkcji \> Ustawienia \> Parametry kontroli produkcji** i otwórz zakładkę **Ogólne**.
+
+Aby wyświetlić lub edytować domyślne ustawienia zamówienia dla przedmiotu, wykonaj poniższe kroki:
+
+1. Przejdź do **Zarządzanie informacjami o produktach\> Produkty \> Zwolnione produkty**.
+1. Na liście znajdź i zaznacz odpowiedni produkt.
+1. Na pasku akcji otwórz zakładkę **Zarządzanie zapasami** i wybierz **Domyślne ustawienia zamówień**.
+1. Rozwiń kartę **Zapasy** i przejrzyj lub edytuj ustawienie **Czas realizacji zapasów**.
+
+Aby wyświetlić lub edytować ustawienia objęcia dla przedmiotu, wykonaj poniższe kroki:
+
+1. Przejdź do **Zarządzanie informacjami o produktach\> Produkty \> Zwolnione produkty**.
+1. Na liście znajdź i zaznacz odpowiedni produkt.
+1. W okienku akcji otwórz kartę **Plan** i wybierz pozycję **Objęcie przedmiotu**.
+1. Otwórz zakładkę **Czas realizacji** i przejrzyj lub edytuj wartość **Czas produkcji**, jeśli to konieczne.
+
+## <a name="excessive-quantity-of-required-resources"></a>Nadmierna ilość wymaganych zasobów
+
+Podczas planowania silnik próbuje dopasować wymaganą ilość zasobów ustaloną dla operacji na trasie do odpowiednich zasobów zgodnie z wymaganiami dotyczącymi zasobów operacji. Ustawienie zbyt dużej ilości zasobów może spowodować, że trasa będzie niewykonalna, co spowoduje błąd planowania.
+
+Użyj poniższej procedury, aby sprawdzić zarówno określoną ilość, jak i odpowiednie zasoby dla wybranego produktu, trasy i operacji trasy:
+
+1. Przejdź do **Zarządzanie informacjami o produktach\> Produkty \> Zwolnione produkty**.
+1. Na siatce znajdź i zaznacz odpowiedni produkt.
+1. W okienku akcji otwórz kartę **Konstruuj** i wybierz opcję **Trasa**.
+1. Na siatce znajdź i zaznacz odpowiednią trasę.
+1. Otwórz kartę **Przegląd** u dołu strony.
+1. Wybierz operację z listy wybranych operacji na trasie.
+1. Wybierz **Odpowiednie zasoby**, aby otworzyć okno dialogowe, w którym można wyświetlić zasoby właściwe dla wybranej operacji trasy.
+1. Otwórz zakładkę **Obciążenie zasobów**. W polu **ilość** znajduje się ilość zasobów wymaganych dla wybranej operacji na trasie. W razie potrzeby przeglądaj je i/lub edytuj.
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

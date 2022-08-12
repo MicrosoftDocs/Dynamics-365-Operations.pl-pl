@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 520c8b32099024e9a9619a6ecdcd3ba7b97c7ecf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 89175763357f4309c4eb7874d0068586c5d9e726
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856926"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123957"
 ---
 # <a name="advanced-filtering-and-query-syntax"></a>Filtrowanie zaawansowane i składnia zapytań
 
@@ -122,9 +122,9 @@ W tym artykule opisano opcje filtrowania i zapytań dostępne podczas używania 
 <td>Dwa kolejne podwójne cudzysłowy (<strong>""</strong>) spowodują wyszukanie wierszy bez wartości dla bieżącej kolumny.</td>
 </tr>
 <tr>
-<td>(<span class="code">Kwerenda Finanse i Działania</span>) (kwerenda Finanse i Działania w nawiasie)</td>
+<td>(<span class="code">Kwerenda aplikacji finansowych i operacyjnych</span>) (kwerenda aplikacji finansowych i operacyjnych w nawiasie)</td>
 <td>Zgodne ze wskazaną kwerendą.</td>
-<td>Umożliwia wpisanie kwerendy w postaci instrukcji SQL między nawiasami za pomocą języka kwerendy rozwiązania Finanse i Działania.</td>
+<td>Umożliwia wpisanie kwerendy w postaci instrukcji SQL między nawiasami za pomocą języka kwerendy aplikacji finansowych i operacyjnych.</td>
   <td><strong><span class="code">((AccountNum LIKE "US *") && (DirPartyTable.Name LIKE "Cont*"))</span></strong><br><br> 
        przykładem składni warunku filtru dla pola z głównego źródła danych, a także pola z innego źródła danych (na stronie wszyscy odbiorcy)</td>
 </tr>

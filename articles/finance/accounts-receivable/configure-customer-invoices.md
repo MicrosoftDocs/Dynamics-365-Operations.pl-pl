@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 93d25a260cfc94e898ef50c618b2cbc640c963bc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 04c26eec8be61d60908bef67c75958287e7e1a01
+ms.sourcegitcommit: 85141b21ac90f3db1b378c21f9c7f3d8f74e182f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876333"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "9129521"
 ---
 # <a name="create-a-customer-invoice"></a>Tworzenie faktury dla odbiorcy
 
@@ -90,6 +90,14 @@ Podział faktur dla odbiorcy dla zamówienia sprzedaży według witryny lub adre
 
 ## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price-and-no-cost"></a>Księgowanie na koncie przychodów dla wierszy zamówienia sprzedaży, które nie mają ceny ani kosztu
 Będziesz mieć możliwość zaktualizowania konta **Przychody** w **Księdze głównej** dla wierszy zamówienia sprzedaży, które nie mają ceny ani kosztu. Aby skonfigurować lub wyświetlić te informacje, przejdź do parametru **Zaksięguj do przychodów dla wierszy faktury za zamówienie sprzedaży o cenie i koszcie zerowym** na karcie **Księga i podatek** na stronie **Parametry modułu rozrachunków z odbiorcami**. (**Rozrachunki z dostawcami > Ustawienia > Parametry modułu rozrachunków z odbiorcami**). Wybierz przycisk **Tak**, aby zaktualizować **konto przychodów** dla wierszy faktury zamówienia sprzedaży, które nie mają ceny ani kosztu. Jeśli ta opcja jest zaznaczona, załącznik będzie zawierał 0,00 wpisów dla typów księgowania **Saldo klienta** i **Przychód**. Konto przychodów jest definiowane na stronie **Parametr księgowania zapasów**, na karcie Definicja konta **zamówienia sprzedaży**. Jeśli ta opcja nie jest zaznaczona, wiersze bez informacji o cenach lub kosztach nie będą księgować na koncie **Przychód**. W zamian załącznik będzie zawierał wpis o wartości 0,00 dla typu księgowania **Saldo klienta**.
+
+## <a name="line-creation-sequence-number-information"></a>Informacje o numerze sekwencji tworzenia linii
+Podczas księgowania linii faktur klientów będziesz miał możliwość utworzenia kolejnych numerów sekwencji tworzenia linii. Numery sekwencji tworzenia linii są przydzielane podczas procesu księgowania. Dopuszczając niesekwencyjne numerowanie, możesz poprawić wydajność księgowania faktur od klientów. Numery sekwencji tworzenia wierszy mogą być używane przez integracje innych firm, które oczekują sekwencyjnego porządkowania. Skonsultuj z działem IT wszelkie rozszerzenia, które mogą być zintegrowane z numerami sekwencji tworzenia linii.
+
+Aby skonfigurować lub wyświetlić tę informację, na stronie **Parametry należności**, na zakładce **Uaktualnienia** ustaw opcję **Przypisuj kolejne numery linii podczas księgowania linii faktur klientów**:
+
+- Ustaw opcję na **Nie**, aby używać niesekwencyjnej numeracji dla numerów sekwencji tworzenia linii.
+- Ustaw opcję na **Tak**, aby używać numeracji sekwencyjnej. Musisz ustawić tę opcję na **Tak** dla osób prawnych, które mają główny adres we Włoszech. Musisz także ustawić ją na **Tak**, jeśli lot **CustInvoiceTransRandLineCreationSeqNumFlight** jest wyłączony.
 
 ## <a name="additional-settings-that-change-the-posting-behavior"></a>Dodatkowe ustawienia, które zmieniają działanie procesu księgowania
 Następujące pola zmieniają działanie procesu księgowania.

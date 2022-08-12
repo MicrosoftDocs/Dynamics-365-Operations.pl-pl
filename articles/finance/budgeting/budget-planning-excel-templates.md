@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6bc190a48d0212e24c5bd72255ed6b6b3caf942c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8996ad5d03327b9273be7860a3905dc25efa7e90
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872507"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070673"
 ---
 # <a name="budget-planning-templates-for-excel"></a>Szablony planowania budżetu dla programu Excel
 
@@ -79,7 +79,7 @@ Wybrana grupa pól pokazuje kolumny dostępne w szablonie. Kliknij przycisk **Fo
 [![Dodawanie i wstawianie kolumny.](./media/bpt12-1024x565.png)](./media/bpt12.png)
 
 > [!NOTE] 
-> Aby zdefiniować formułę (wzór), utwórz ją w arkuszu kalkulacyjnym, a następnie skopiuj do okna **Projekt**. Tabela powiązana z programem Finance and Operations zazwyczaj nosi nazwę „AXTable1”. Na przykład aby podsumować kolumny Wniosek K1: Wniosek K4 w arkuszu kalkulacyjnym, formuła ma postać = AxTable1\[Wniosek K1\]+AxTable1\[Wniosek K2\]+AxTable1\[Wniosek K3\]+AxTable1\[Wniosek K4\].
+> Aby zdefiniować formułę (wzór), utwórz ją w arkuszu kalkulacyjnym, a następnie skopiuj do okna **Projekt**. Tabela powiązana z aplikacjami finansowymi i operacyjnymi zazwyczaj nosi nazwę „AXTable1”. Na przykład aby podsumować kolumny Wniosek K1: Wniosek K4 w arkuszu kalkulacyjnym, formuła ma postać = AxTable1\[Wniosek K1\]+AxTable1\[Wniosek K2\]+AxTable1\[Wniosek K3\]+AxTable1\[Wniosek K4\].
 
 Powtórz te kroki, aby wstawić kolumnę **Korekta**. Dla tej kolumny użyj formuły = AxTable1\[Wniosek razem\]\*$I$1. Spowoduje to pobranie wartości z komórki I1 i pomnożenie jej przez wartości z kolumny **Wniosek razem** w celu obliczania kwot korekt.
 
@@ -129,3 +129,4 @@ Można również tworzyć i używać tabel i wykresów przestawnych w celu dodat
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

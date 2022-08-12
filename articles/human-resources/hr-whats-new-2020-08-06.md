@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-08-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 89fb22b97582e50cbb1d9929ece20786ab0d6267
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 07aeecaeb6605ab48c0ae9c41c95939fbc706a02
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902897"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070121"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-august-06-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (06 sierpnia 2020 r.)
 
@@ -31,7 +31,7 @@ W tym artykule opisano nowe oraz zmienione funkcje dostępne w Dynamics 365 Huma
 
 ## <a name="platform-update-1001236-is-now-available"></a>Aktualizacja platformy 10.0.12(36) jest teraz dostępna
 
-Aby uzyskać więcej informacji, zobacz temat [Aktualizacje platformy dla wersji 10.0.12 aplikacji Finanse i Działania (sierpień 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md).
+Aby uzyskać więcej informacji, zobacz temat [Aktualizacje platformy dla wersji 10.0.12 aplikacji finansowych i operacyjnych (sierpień 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md).
 
 ## <a name="data-management-framework-dmf-entities-for-benefits-management"></a>Jednostki struktury zarządzania danymi (DMF) do zarządzania świadczeniami
  

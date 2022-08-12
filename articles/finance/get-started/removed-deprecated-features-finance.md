@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 0278b57ccfa2da9dba6b5ea77821fdc47ad2d078
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ee084e84c052366bdf34fe1a1e697a32e456914b
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846662"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068931"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Usunięte lub przestarzałe funkcje w rozwiązaniu Dynamics 365 Finance
 
@@ -31,7 +31,7 @@ W tym artykule opisano funkcje, które zostały usunięte lub są przeznaczone d
 Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych funkcji we własnym planowaniu. 
 
 > [!NOTE]
-> Szczegółowe informacje o obiektów w aplikacji Finanse i Działania można znaleźć w [raportach z wykazami parametrów technicznych](/dynamics/s-e/global/axtechrefrep_61). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach aplikacji Finanse i Działania.
+> Szczegółowe informacje o obiektów w aplikacji finansowych i operacyjnych można znaleźć w [raportach z wykazami parametrów technicznych](/dynamics/s-e/global/axtechrefrep_61). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach aplikacji finansowych i operacyjnych.
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10026-release"></a>Usunięte lub przestarzałe funkcje w wydaniu rozwiązania Finance 10.0.26
 
@@ -218,3 +218,4 @@ Aby dowiedzieć się więcej o funkcjach, które zostały usunięte lub wycofane
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

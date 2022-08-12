@@ -9,17 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
-ms.openlocfilehash: e2b13403ffb316059476a03857c849b4f9f8cb9c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 83e20d9fc655a474a11521ec61d0b64d30603181
+ms.sourcegitcommit: c271b2edc4bf777f7194b09139ccbd174a359c75
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884670"
+ms.lasthandoff: 07/16/2022
+ms.locfileid: "9169138"
 ---
 # <a name="create-dynamic-e-commerce-pages-based-on-url-parameters"></a>Tworzenie dynamicznych stron handlu elektronicznego na podstawie parametrów adresu URL
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 W tym artykule opisano, jak skonfigurować stronę handlu elektronicznego Microsoft Dynamics 365 Commerce, która może obsługiwać zawartość dynamiczną na podstawie parametrów adresu URL.
 

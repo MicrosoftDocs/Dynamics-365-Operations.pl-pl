@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 886781764b44ca76b327ad49f25f11f6c370a706
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4ea6901f8d9632b021c35b9ee899385e688fc77e
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851959"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108865"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Śledzenie wykonywania formatów ER w celu rozwiązywania problemów z wydajnością
 
@@ -98,7 +98,7 @@ Załóżmy, że rozpoczęto projektowanie nowego rozwiązania ER w celu wygenero
 
 Załóżmy, że zakończono projektowanie pierwszej wersji rozwiązania ER. Chcesz teraz przetestować je w swoim wystąpieniu oraz przeanalizować wydajność wykonywania.
 
-### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>Importowanie konfiguracji ER z RCS do Finance and Operations
+### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>Importowanie konfiguracji ER z RCS do aplikacji finansowych i operacyjnych
 
 1. Zaloguj się do swojego wystąpienia aplikacji.
 2. W tym samouczku zaimportujesz konfiguracje z wystąpienia RCS (w którym projektujesz składniki ER) do swojego wystąpienia (w którym je testujesz i ostatecznie ich używasz). Upewnij się zatem, że zostały przygotowane wszystkie wymagane artefakty. Szczegółowe instrukcje zawiera procedura [Importowanie konfiguracji raportowania elektronicznego (RE) z usługi Regulatory Configuration Services (RCS)](rcs-download-configurations.md).
@@ -363,7 +363,7 @@ Przeglądarka sieci Web zaproponuje pobranie pliku zip. Ten plik zawiera ślad w
 
 ## <a name="use-external-tools-to-review-an-execution-trace-that-includes-database-queries"></a>Narzędzia zewnętrzne umożliwiają przejrzenie śledzenie wykonywania obejmującego kwerendy bazy danych
 
-Ze względu na udoskonalenia, które zostały wprowadzone w ramach systemu, śledzenie wydajności generowane w formacie PerfView zawiera więcej szczegółów dotyczących wykonywania operacji na formacie ER. W Microsoft Dynamics 365 for Finance and Operations wersji 10.0.4 (lipiec 2019) ten ślad może również zawierać szczegóły wykonanych kwerend SQL w bazie danych aplikacji.
+Ze względu na udoskonalenia, które zostały wprowadzone w ramach systemu, śledzenie wydajności generowane w formacie PerfView zawiera więcej szczegółów dotyczących wykonywania operacji na formacie ER. W Microsoft Dynamics 365 Finance wersji 10.0.4 (lipiec 2019) ten ślad może również zawierać szczegóły wykonanych kwerend SQL w bazie danych aplikacji.
 
 ### <a name="configure-user-parameters"></a>Konfigurowanie parametrów użytkownika
 
@@ -392,3 +392,4 @@ Przeglądarka sieci Web zaproponuje pobranie pliku zip. Ten plik zawiera ślad w
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

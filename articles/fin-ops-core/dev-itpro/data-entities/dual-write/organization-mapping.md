@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: a4edaf5b9c50e9d8781ff703328ac786d71ee782
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2f900637855bee3e21916652a373c683e6bf1392
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884740"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112027"
 ---
 # <a name="organization-hierarchy-in-dataverse"></a>Hierarchia organizacyjna w usłudze Dataverse
 
@@ -28,17 +28,17 @@ Mimo że w usłudze Dataverse nie występuje pojęcie hierarchii organizacyjnej,
 
 ## <a name="data-flow"></a>Przepływ danych
 
-Ekosystem biznesowy składający się z aplikacji Finanse i Działania i usługi Dataverse będzie nadal posiadał hierarchię organizacyjną. Ta hierarchia organizacji jest zbudowana na aplikacjach Finanse i Działania, ale jest dostępna w usłudze Dataverse do celów informacyjnych i rozszerzania środowiska. Poniższa ilustracja przedstawia informacje o hierarchii organizacyjnej, które są dostępne w usłudze Dataverse w postaci jednokierunkowego przepływu danych z aplikacji Finanse i Działania do usługi Dataverse.
+Ekosystem biznesowy składający się z aplikacji finansowych i operacyjnych i usługi Dataverse będzie nadal posiadał hierarchię organizacyjną. Ta hierarchia organizacji jest zbudowana na aplikacjach finansowych i operacyjnych, ale jest dostępna w usłudze Dataverse do celów informacyjnych i rozszerzania środowiska. Poniższa ilustracja przedstawia informacje o hierarchii organizacyjnej, które są dostępne w usłudze Dataverse w postaci jednokierunkowego przepływu danych z aplikacji finansowych i operacyjnych do usługi Dataverse.
 
 ![Obraz architektury.](media/dual-write-data-flow.png)
 
-Mapy tabeli hierarchii organizacyjnej są dostępne dla jednokierunkowego synchronizowania danych z aplikacji Finanse i Działania do usługi Dataverse.
+Mapy tabeli hierarchii organizacyjnej są dostępne dla jednokierunkowego synchronizowania danych z aplikacji aplikacjach finansowych i operacyjnych do usługi Dataverse.
 
 ## <a name="templates"></a>Szablony
 
 Organizacja to grupa osób, które pracują razem, aby przeprowadzić proces biznesowy lub osiągnąć cel. Hierarchie organizacyjne reprezentują relacje między organizacjami, które tworzą firmę. Można zdefiniować następujące typy organizacji wewnętrznych: podmioty prawne (zwykle dla uproszczenia określane jako firmy), jednostki operacyjne i zespoły. Jak pokazano w poniższej tabeli, tworzona jest kolekcja map tabel w celu synchronizowania informacji o firmach, jednostkach operacyjnych i powiązanej hierarchii organizacji.
 
-Aplikacje Finanse i Działania | Aplikacje Customer Engagement     | Opis
+Aplikacje finansowe i operacyjne | Aplikacje Customer Engagement     | Opis
 -----------------------|--------------------------------|---
 [Osoby prawne](mapping-reference.md#102) | cdm_companies | 
 [Osoby prawne](mapping-reference.md#142) | msdyn_internalorganizations |
@@ -52,3 +52,4 @@ Aplikacje Finanse i Działania | Aplikacje Customer Engagement     | Opis
 Informacje o organizacji wewnętrznej Dataverse pochodzą z dwóch tabel, **Jednostki operacyjnej** i **Firm**.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

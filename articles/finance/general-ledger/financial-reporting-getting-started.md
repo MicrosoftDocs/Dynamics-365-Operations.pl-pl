@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2c31e8b8b8022e5dfdb1f8dc4836d3d95174078
-ms.sourcegitcommit: d9d111d7420ca8f1071689afe38a1ccf4b8051f4
+ms.openlocfilehash: 9d0c2e821ee504cd62a536674ef91ee89a25c0a9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "9033668"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066426"
 ---
 # <a name="get-started-with-financial-reporting"></a>Rozpoczynanie pracy z raportowaniem finansowym 
 
@@ -151,7 +151,7 @@ Można utworzyć dowolną liczbę drzew raportowania, aby wyświetlić dane firm
 
 ## <a name="update-the-financial-reporting-version-through-slipstreaming"></a>Aktualizacja wersji Financial Reporting za pośrednictwem dokumentów dostawy
 
-Aplikacje Finanse i Operacje są aktualizowane co miesiąc. Jednak Financial Reporting niekoniecznie jest aktualizowana w tym tempie. Ponadto klienci mają więcej opcji dotyczących implementowania aktualizacji aplikacji Finanse i Operacje. Aktualizacje Financial Reporting są instalowane automatycznie. Financial Reporting ma wyznaczoną wersję, która jest zużywana w środowisku klienta podczas implementowania aktualizacji usługi, rozpoczynania przestoju lub działania środowiska klienta w trybie konserwacji. Ten proces jest nazywany *slipstreaming* lub *true-up*, ponieważ wszystkie implementacje klientów mają tę samą wersję Financial Reporting.
+Aplikacje finansowe i operacyjne są aktualizowane co miesiąc. Jednak Financial Reporting niekoniecznie jest aktualizowana w tym tempie. Ponadto klienci mają więcej opcji dotyczących implementowania aktualizacji aplikacji finansowych i operacyjnych są aktualizowane co miesiąc. Aktualizacje Financial Reporting są instalowane automatycznie. Financial Reporting ma wyznaczoną wersję, która jest zużywana w środowisku klienta podczas implementowania aktualizacji usługi, rozpoczynania przestoju lub działania środowiska klienta w trybie konserwacji. Ten proces jest nazywany *slipstreaming* lub *true-up*, ponieważ wszystkie implementacje klientów mają tę samą wersję Financial Reporting.
 
 Zmiany, które są wydane w każdej wersji, można znaleźć w poszczególnych [Nowości i zmiany w Dynamics 365 Finance](../../finance/get-started/whats-new-home-page.md). Aktualizacje platformy i poprawki błędów można znaleźć w sekcji „Zasoby dodatkowe” na dole strony dla każdego wydania.
 
@@ -254,3 +254,4 @@ Problem: Pojawia się błąd „Nie można połączyć się z serwerem Financial
 - [Definicje drzewa raportowania w raportach finansowych](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

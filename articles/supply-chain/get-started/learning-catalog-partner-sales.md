@@ -12,12 +12,12 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: d5a7ce80f02729de450e558f57464248d69910ef
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d7caaf0097022eddd33319c6bd4a066da61de23b
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8901039"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123569"
 ---
 # <a name="learning-catalog-for-microsoft-partner-sales-and-marketing-roles-for-dynamics-365-supply-chain-management"></a>Katalog szkoleń dla ról Sprzedażowych i Marketingowych partnerów Microsoft dla Dynamics 365 Supply Chain Management
 
@@ -31,7 +31,7 @@ Poniższy katalog jest zorganizowany od podstawowej bazy wiedzy do konkretnych d
 |---------|-------------|--------|--------|
 | [Zapoznaj się z biznesową wartością Microsoft Dynamics 365 i Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Czy chcesz poznać aplikacje biznesowe? Być może nie wiadomo, gdzie zacząć z Microsoft Dynamics 365 i aplikacjami Power Platform? Dowiedz się, jak możliwości aplikacji biznesowych umożliwiają przekształcanie firmy. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 7 godzin |
 | [Dynamics 365 i Power Platform Fundamentals](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Czy chcesz poznać aplikacje biznesowe? Rozpocznij od tej ścieżki nauki, aby zobaczyć, jak są używane aplikacje Dynamics 365. Informacje o pojęciach chmur, Power Platform oraz sposobach rozpoczynania pracy z aplikacjami Dynamics 365. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 5.5 godzin |
-| [Rozpoczynanie pracy z aplikacjami Finanse i Działania](/learn/paths/get-started-finance-operations/) | Dowiedz się, jak z pomocą aplikacji Finanse i Działania w firmach można zarządzać globalnymi systemami finansowymi, operacyjnymi procesami biznesowymi i wydajnymi łańcuchami dostaw, aby umożliwić osobom wykonywanie szybkich, świadomych decyzji. Jako pierwszy etap kariery zawodowej pracy z Finanse i Działania, musisz zapoznać się z jego funkcjami, niezależnie od żądanej roli użytkownika. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 2 godzin |
+| [Rozpoczynanie pracy z aplikacjami finansowymi i operacyjnymi](/learn/paths/get-started-finance-operations/) | Dowiedz się, jak za pomocą aplikacji finansowych i operacyjnych w firmach można zarządzać globalnymi systemami finansowymi, operacyjnymi procesami biznesowymi i wydajnymi łańcuchami dostaw, aby umożliwić osobom wykonywanie szybkich, świadomych decyzji. Jako pierwszy etap pracy z aplikacjami finansowymi i operacyjnymi musisz zapoznać się z jego funkcjami, w zależności od żądanej roli użytkownika. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 2 godzin |
 | [Kurs MB-900T01-A: Dynamics 365 Fundamentals](https://www.microsoft.com/learning/course.aspx?cid=MB-900T01) | Ten kurs umożliwia zapoznanie się z informacjami o funkcjonalności systemu Dynamics 365 i wartości biznesowej. Kurs obejmie aplikacje Dynamics 365, Power Platform, koncepcje chmury, model zabezpieczeń i uwagi dotyczące licencjonowania. | Prowadzone przez instruktora szkolenie osobiste lub online; koszty różnią się w zależności od regionu i partnera | 1 dzień |
 
 ## <a name="exam"></a>Egzamin<a name="exam"></a>
@@ -41,3 +41,4 @@ Poniższy katalog jest zorganizowany od podstawowej bazy wiedzy do konkretnych d
 | [Dynamics 365 Fundamentals](/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Udowodni, że rozumiesz Microsoft Dynamics 365; Power Platform; pojęcia chmury; opcje licencjonowania; opcje wdrożenia i wydania. | Egzamin; koszty różnią się w zależności od regionu |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

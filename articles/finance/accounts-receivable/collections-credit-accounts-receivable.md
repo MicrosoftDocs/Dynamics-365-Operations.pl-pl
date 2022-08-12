@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 03d1304c39628323c6d6e15181263a73ba965930
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 00e536241710fc8a75158472688757320abf4247
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710365"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067217"
 ---
 # <a name="collections-in-accounts-receivable"></a>Windykacje w module Rozrachunki z odbiorcami
 
@@ -65,7 +65,7 @@ Następujące strony listy pomagają organizować informacje o windykacji.
 
 > [!NOTE]
 > Aby wyświetlić informacje na stronach listy windykacji, należy utworzyć migawkę wiekowania. Informacje są wyświetlane tylko dla odbiorców, dla których została utworzona migawka wiekowania. Rekordy widoczne na stronie listy można dodatkowo filtrować w następujący sposób:
-> <li>Domyślnie użytkownik programu Finance and Operations ma dostęp do wszystkich odbiorców, którzy mają migawki wiekowania.</li>
+> <li>Domyślnie użytkownik aplikacji finansowych i operacyjnych ma dostęp do wszystkich odbiorców, którzy mają migawki wiekowania.</li>
 > <li>Jeśli istnieje pula klientów, użytkownik musi być ustawiony jako agent ds. windykacji, aby korzystać z pul do filtrowania informacji na stronach listy windykacji. Informacje są ograniczone do klientów, którzy znajdują się w wybranej puli klientów.</li>
 > <li>Jeśli użytkownik jest skonfigurowany jako agent ds., tylko pule, które są wybrane dla tego agenta, są dostępne na stronie listy. W przypadku włączenia dla danego agenta opcji Zezwalaj agentowi na przeglądanie wszystkich pul klientów na stronie Agent ds. windykacji, będzie miał dostęp do wszystkich pul.</li>
 
@@ -110,3 +110,4 @@ Klikając płatności przy niewystarczających funduszach na stronie kolekcje mo
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

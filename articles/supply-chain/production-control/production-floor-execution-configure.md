@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 14a49d1d6c956b37ff9b2bec387615dc75d060e1
-ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
+ms.openlocfilehash: f740b68128b90fc7c9ce2f74edc4f3c06f03debd
+ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "9022573"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9167770"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurowanie interfejsu wykonania hal produkcyjnych
 
@@ -92,9 +92,9 @@ Od wersji 10.0.25 Supply Chain Management version ta funkcja jest domyślnie wł
 
 Ta funkcja umożliwia pracownikom używanie interfejsu wykonywania produkcji do rejestrowania zużycia materiałów, numerów partii i numerów seryjnych. Niektórzy producenci, szczególnie ci w przemyśle przetwórczym, muszą wyraźnie rejestrować ilość zużywanego materiału dla każdej partii lub zlecenia produkcyjnego. Na przykład pracownicy mogą używać wagi do zważenia ilości zużytego materiału podczas pracy. Aby zapewnić pełną identyfikowalność materiałów, organizacje te muszą również rejestrować numery partii, które zostały zużyte do wytworzenia każdego produktu.
 
-Istnieją dwie wersje tej funkcji. Ta funkcja obsługuje tylko pozycje, dla których *nie* włączono obsługi zaawansowanych procesów magazynowych (WMS). Inne obsługują pozycje, dla których *włączono* używanie usług WMS. Aby skorzystać z tej funkcji, włącz jedną lub obie z następujących funkcji w [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (w tej kolejności), w zależności od tego, czy masz elementy, które są włączone dla WMS:
+Istnieją dwie wersje tej funkcji. Ta funkcja obsługuje tylko pozycje, dla których *nie* włączono obsługi procesów magazynowych (WMS). Inne obsługują pozycje, dla których *włączono* używanie usług WMS. Aby skorzystać z tej funkcji, włącz jedną lub obie z następujących funkcji w [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (w tej kolejności), w zależności od tego, czy masz elementy, które są włączone dla WMS:
 
-- *(Wersja zapoznawcza) Rejestrowanie zużycia materiału w interfejsie wykonania hal produkcyjnych (inne niż WMS)*
+- *Rejestrowanie zużycia materiału w interfejsie wykonania hal produkcyjnych (inne niż WMS)*
 - *(Wersja zapoznawcza) Rejestrowanie zużycia materiału w interfejsie wykonania hal produkcyjnych (z obsługą WMS)*
 
 > [!IMPORTANT]

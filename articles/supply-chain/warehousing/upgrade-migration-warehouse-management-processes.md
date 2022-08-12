@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d85f4e5c44db511970b3e22490341228fa0d1abd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7a88c5a615ec860890578873eaee736fabbeaf08
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857091"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065819"
 ---
 # <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-supply-chain-management"></a>Uaktualnienie zarządzania magazynem z Microsoft Dynamics AX 2012 do Supply Chain Management 
 
@@ -37,11 +37,11 @@ Podczas uaktualniania wszystkie produkty skojarzone z grupą wymiarów magazynow
 Po uaktualnieniu można użyć różnych opcji dostępnych w formularzu **Zmiana grupy wymiarów magazynowania dla towarów** i odblokować produkty, które zostały zablokowane podczas uaktualniania, a następnie wykonać transakcje na tych produktach.
 
 ### <a name="enabling-items-in-supply-chain-management"></a>Włączanie pozycji w Supply Chain Management 
-Ta zmiana jest wymagana, ponieważ w rozwiązaniu Supply Chain Management elementem procesu zarządzania magazynem jest śledzenie towarów. W tych procesach wszystkie magazyny i ich lokalizacje muszą być skojarzone z profilem lokalizacji. Jeśli chcesz używać procesów zarządzania magazynem, należy dokonać następujących konfiguracji:
--   W istniejących magazynach musi zostać włączone używanie procesów zarządzania magazynem. 
--   Istniejące zwolnione produkty muszą zostać skojarzone z grupą wymiarów magazynowania, która używa procesów zarządzania magazynem. 
+Ta zmiana jest wymagana, ponieważ w rozwiązaniu Supply Chain Management elementem procesu zarządzania magazynem jest śledzenie towarów (WMS). W tych procesach wszystkie magazyny i ich lokalizacje muszą być skojarzone z profilem lokalizacji. Jeśli chcesz używać procesów WMS, należy dokonać następujących konfiguracji:
+-   W istniejących magazynach musi zostać włączone używanie procesów WMS 
+-   Istniejące zwolnione produkty muszą zostać skojarzone z grupą wymiarów magazynowania, która używa procesów WMS 
 
-Jeśli źródłowe grupy wymiarów magazynowania używają wymiaru zapasów Identyfikator palety, lokalizacje istniejących dostępnych zapasów, które używały wymiaru zapasów Identyfikator palety, muszą być skojarzone z profilem lokalizacji, w którym zaznaczono parametr **Użyj opcji śledzenia numeru identyfikacyjnego**. Jeśli istniejący magazyn nie powinien być włączony do używania procesów zarządzania magazynem, można zmienić grupy wymiarów magazynowania istniejących dostępnych zapasów na grupy, które obsługują tylko wymiary zapasów Oddział, Magazyn i Lokalizacja. 
+Jeśli źródłowe grupy wymiarów magazynowania używają wymiaru zapasów Identyfikator palety, lokalizacje istniejących dostępnych zapasów, które używały wymiaru zapasów Identyfikator palety, muszą być skojarzone z profilem lokalizacji, w którym zaznaczono parametr **Użyj opcji śledzenia numeru identyfikacyjnego**. Jeśli istniejący magazyn nie powinien być włączony do używania procesów WMS, można zmienić grupy wymiarów magazynowania istniejących dostępnych zapasów na grupy, które obsługują tylko wymiary zapasów Oddział, Magazyn i Lokalizacja. 
 
 > [!NOTE] 
 >  Grupę wymiarów magazynowania dla towarów można zmienić nawet wtedy, gdy istnieją otwarte transakcje magazynowe.
@@ -56,12 +56,12 @@ Aby towar mógł być używany w procesie zarządzania magazynem, musi być skoj
 Aby odblokować produkty, które zostały zablokowane podczas uaktualniania, należy wybrać nową grupę wymiarów magazynowania dla tych produktów. Warto zauważyć, że grupę wymiarów magazynowania można zmienić nawet wtedy, gdy istnieją otwarte transakcje magazynowe. Aby używać towarów, które zostały zablokowane podczas uaktualniania, masz dwie opcje:
 
 -   Zmiana grupy wymiarów magazynowania dla towaru na grupę wymiarów magazynowania, która używa tylko wymiarów zapasów Oddział, Magazyn i Lokalizacja. Wskutek tej zmiany wymiar zapasów Identyfikator palety przestaje być używany.
--   Zmiana grupy wymiarów magazynowania dla towaru na grupę wymiarów magazynowania, która używa procesów zarządzania magazynem. Wskutek tej zmiany zacznie być używany wymiar zapasów Numer identyfikacyjny.
+-   Zmiana grupy wymiarów magazynowania dla towaru na grupę wymiarów magazynowania, która używa procesów WMS. Wskutek tej zmiany zacznie być używany wymiar zapasów Numer identyfikacyjny.
 
-## <a name="configure-warehouse-management-processes"></a>Konfigurowanie procesów zarządzania magazynami
+## <a name="configure-wms"></a>Skonfiguruj serwer WMS
 Aby można było używać zwolnionych produktów w module **Zarządzanie magazynem**, produkty muszą używać grupy wymiarów magazynowania, w których zaznaczono parametr **Użyj procesów zarządzania magazynami**.
 
-### <a name="enable-warehouses-to-use-warehouse-management-processes"></a>Włączanie używania procesów zarządzania magazynem w magazynach
+### <a name="enable-warehouses-to-use-wms"></a>Umożliwić magazynowi korzystanie z systemu WMS
 
 1.  Utwórz co najmniej jeden nowy profil lokalizacji.
 2.  Kliknij kolejno opcje **Zarządzanie magazynem** &gt; **Ustawienia** &gt; **Włącz procesy zarządzania magazynem** &gt; **Włącz konfigurowanie magazynu**.
@@ -70,7 +70,7 @@ Aby można było używać zwolnionych produktów w module **Zarządzanie magazyn
 5.  Sprawdź poprawność zmian. W ramach procesu sprawdzania poprawności następują różne weryfikacje integralności danych. Jako część większego procesu uaktualniania może wystąpić konieczność rozwiązania zaistniałych problemów w implementacji źródłowej. W takim przypadku będzie potrzebne dodatkowe uaktualnienie danych.
 6.  Wprowadź zmiany.
 
-### <a name="change-the-storage-dimension-group-for-items-so-that-it-uses-warehouse-management-processes"></a>Zmiana grupy wymiarów magazynowania dla towarów, tak aby używała procesów zarządzania magazynem
+### <a name="change-the-storage-dimension-group-for-items-so-that-it-uses-wms"></a>Zmiana grupy wymiarów magazynowania dla towarów, tak aby używała procesów WMS
 
 1.  Utwórz nową wartość **Stan zapasów** i przypisz ją jako wartość **Domyślny identyfikator stanu zapasów** w oknie ustawień **Parametry zarządzania magazynem**.
 2.  Utwórz nową grupę wymiarów magazynowania, w której zaznaczono parametr **Użyj procesów zarządzania magazynami**.

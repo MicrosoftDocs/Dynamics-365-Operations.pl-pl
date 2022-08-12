@@ -10,12 +10,12 @@ ms.custom: separate-solution
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: 504939f1f98c18005c092cabc1d040b420402c93
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 28c321ee2815b2886c07bfb0996870e536458145
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874820"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111669"
 ---
 # <a name="separated-dual-write-application-orchestration-package"></a>Osobny pakiet Aranżacja aplikacji Podwójny zapis
 
@@ -26,14 +26,14 @@ ms.locfileid: "8874820"
 Poprzednio pakiet Aranżacja aplikacji Podwójny zapis był jednym pakietem, który zawierał następujące rozwiązania:
 
 - Dynamics 365 Notes
-- Dynamics 365 Finance and Operations Common Anchor
-- Mapy encji podwójnego zapisu rozwiązania Dynamics 365 Finance and Operations
+- Aplikacje finansowe i operacyjne Dynamics 365 – Common Anchor
+- Mapy encji podwójnego zapisu aplikacji finansowych i operacyjnych Dynamics 365
 - Aplikacja Dynamics 365 — Zarządzanie składnikami majątku
 - Dynamics 365 — Zarządzanie składnikami majątku
 - Funkcje wspólne modułu HCM
 - Dynamics 365 Supply Chain Extended
 - Dynamics 365 Finance Extended
-- Dynamics 365 Finance and Operations Common
+- Aplikacje finansowe i operacyjne Dynamics 365 – Common
 - Dynamics 365 Company
 - Kursy wymiany walut
 - Field Service Common
@@ -58,7 +58,7 @@ Pakiet Podstawowe funkcje aplikacji Podwójny zapis umożliwia użytkownikom ins
 
 W tym pakiecie są dostępne następujące mapy.
 
-| Aplikacje Finanse i Działania     | Aplikacje Customer Engagement                    |
+| Aplikacje finansowe i operacyjne     | Aplikacje Customer Engagement                    |
 |---------------------------------|---------------------------------------------|
 | Jednostka operacyjna                  | msdyn_internalorganizations                 |
 | Hierarchia organizacyjna          | msdyn_internalorganizationhierarchies       |
@@ -89,7 +89,7 @@ Pakiet Human Resources — Podwójny zapis zawiera rozwiązania i mapy wymagane 
 
 W tym pakiecie są dostępne następujące mapy.
 
-| Aplikacje Finanse i Działania | Aplikacje Customer Engagement         |
+| Aplikacje finansowe i operacyjne | Aplikacje Customer Engagement         |
 |-----------------------------|----------------------------------|
 | Pochodzenie etniczne              | cdm_ethnicorigins                |
 | Wynagrodzenie — funkcja stanowiska   | cdm_jobfunctions                 |
@@ -119,7 +119,7 @@ Pakiet Supply Chain — Podwójny zapis zawiera rozwiązania i mapy wymagane do 
 
 W tym pakiecie są dostępne następujące mapy.
 
-| Aplikacje Finanse i Działania                 | Aplikacje Customer Engagement                      |
+| Aplikacje finansowe i operacyjne                 | Aplikacje Customer Engagement                      |
 |---------------------------------------------|-----------------------------------------------|
 | Jednostki                                       | uoms                                          |
 | Nagłówki zamówień sprzedaży CDS                     | salesorders                                   |
@@ -197,7 +197,7 @@ Pakiet Finance — Podwójny zapis zawiera rozwiązania i mapy wymagane do synch
 
 W tym pakiecie są dostępne następujące mapy.
 
-| Aplikacje Finanse i Działania             | Aplikacje Customer Engagement        |
+| Aplikacje finansowe i operacyjne             | Aplikacje Customer Engagement        |
 |-----------------------------------------|---------------------------------|
 | Grupy potrąconych zaliczek na podatek                  | msdyn_withholdingtaxgroups      |
 | Kontakty w usłudze CDS w wersji 2 (odbiorca)              | kontakty                        |
@@ -247,7 +247,7 @@ Pakiet Notes — Podwójny zapis zawiera rozwiązania i mapy wymagane do synchro
 
 W tym pakiecie są dostępne następujące mapy.
 
-| Finanse i Działania                     | Customer Engagement |
+| Aplikacje finansowe i operacyjne                     | Customer Engagement |
 |--------------------------------------------|---------------------|
 | Załączniki dokumentu nagłówka zamówienia sprzedaży    | adnotacje         |
 | Załączniki odbiorcy                       | adnotacje         |
@@ -274,7 +274,7 @@ Pakiet Zarządzanie składnikami majątku — Podwójny zapis zawiera rozwiązan
 
 W tym pakiecie są dostępne następujące mapy.
 
-| Aplikacje Finanse i Działania                           | Aplikacje Customer Engagement                |
+| Aplikacje finansowe i operacyjne                           | Aplikacje Customer Engagement                |
 |-------------------------------------------------------|-----------------------------------------|
 | Gwarancja zarządzania składnikami majątku                             | msdyn_warranties                        |
 | Modele zarządzania składnikami majątku                               | msdyn_models                            |
@@ -314,7 +314,7 @@ Pakiet dwu write party i globalna książka adresowa zawiera następujące rozwi
 
 W tym pakiecie są dostępne następujące mapy.
 
-| Aplikacje Finanse i Działania | Aplikacje Customer Engagement | 
+| Aplikacje finansowe i operacyjne | Aplikacje Customer Engagement | 
 |-----------------------------|--------------------------|
 | Strony usługi CDS | msdyn_parties | 
 | Lokalizacje adresu pocztowego usługi CDS | msdyn_postaladdresscollections | 
@@ -344,3 +344,4 @@ Rozwiązania typu dwu-write party i globalna książka adresowa zależą od nast
 - Pakiet Podstawowe funkcje aplikacji Podwójny zapis
 - Pakiet Finance — Podwójny zapis
 - Pakiet Supply Chain — Podwójny zapis
+

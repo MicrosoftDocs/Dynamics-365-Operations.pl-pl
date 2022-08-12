@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 79aee04527eea5b673555f9c7de893a400a5c617
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2c542684642e4f6eda0f862623889a68f85b2b20
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887813"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068887"
 ---
 # <a name="choose-a-data-integration-technology"></a>Wybieranie technologii integracji danych
 
@@ -70,7 +70,7 @@ Tabele usługi Dataverse i powiązane interfejsy API są najlepszą opcją uzysk
 
 ### <a name="dmfdixf-entities"></a>Jednostki struktury DMF/DIXF
 
-Human Resources, zbudowane głównie na tej samej platformie co aplikacje Finanse i Działania, stanowią [Data Management Framework (DMF)](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json). DMF jest również znane jako Struktura importu i eksportu danych (usługa DIXF). Human Resources dostarczają zestawy jednostek danych, które można wykorzystywać do importowania i eksportowania danych Human Resources. Mimo iż preferowanym interfejsem integracji danych modułu Human Resources są tabele usługi Dataverse, jednostki struktury DMF nadal są przydatne w pewnych okolicznościach, np.:
+Human Resources, zbudowane głównie na tej samej platformie co aplikacje finansowe i operacyjne, stanowią [Struktura zarządzania danymi (DMF)](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json). DMF jest również znane jako Struktura importu i eksportu danych (usługa DIXF). Human Resources dostarczają zestawy jednostek danych, które można wykorzystywać do importowania i eksportowania danych Human Resources. Mimo iż preferowanym interfejsem integracji danych modułu Human Resources są tabele usługi Dataverse, jednostki struktury DMF nadal są przydatne w pewnych okolicznościach, np.:
 
 - Tabele usługi Dataverse nie są jeszcze dostępne.
 
@@ -113,7 +113,7 @@ Funkcja BYOD nadaje się do rozwiązań sprawozdawczych, integracji danych, zest
 
 ### <a name="odata-enabled-entities"></a>Jednostki obsługujące protokół OData
 
-Większość jednostek struktury DMF jest również dostępnych za pośrednictwem usługi danych modułu Human Resources (protokołu OData). Dokumentacja dostarczona dla [usługi OData Finanse i Działania](/dynamics365/unified-operations/dev-itpro/data-entities/odata) jest stosowana do Human Resources, z wyjątkiem tworzenia własnych jednostek do udostępnienia przez protokół OData.
+Większość jednostek struktury DMF jest również dostępnych za pośrednictwem usługi danych modułu Human Resources (protokołu OData). Dokumentacja dostarczona dla [usługi OData aplikacji finansowych i operacyjnych](/dynamics365/unified-operations/dev-itpro/data-entities/odata) jest stosowana do Human Resources, z wyjątkiem tworzenia własnych jednostek do udostępnienia przez protokół OData.
 
 Co prawda preferowanym rozwiązaniem jest usługa Dataverse oraz implementacja protokołu OData w usłudze Dataverse (realizowana za pomocą [internetowego interfejsu API systemu Dynamics 365](/previous-versions/dynamicscrm-2016/developers-guide/mt593051(v=crm.8))), a nie usługa danych w module Human Resources, ale obecnie jednostki danych usługi modułu Human Resources zapewniają bardziej kompletny zakres pokrycia danych modułu Human Resources.
 
@@ -153,3 +153,4 @@ Przy tak dużej liczbie dostępnych technologii integracji zdecydowanie się na 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

@@ -2,7 +2,7 @@
 title: Konfigurowanie struktury konta
 description: Ten artykuł zawiera informacje dotyczące struktury kont i wymiarów finansowych.
 author: aprilolson
-ms.date: 06/03/2019
+ms.date: 07/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f0a3febf8d269caec847ad879f60ac042e5fec9e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0f816f0fc894b902c444a3113abfd48d4146d485
+ms.sourcegitcommit: e59990780830ac8e3382fea5df851abe86fbf496
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907988"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "9141287"
 ---
 # <a name="configure-account-structures"></a>Skonfiguruj strukturę konta
 
@@ -91,6 +91,8 @@ Aby kontynuować dodawanie dodatkowych kryteriów, kliknij przycisk **Duplikuj s
 Podczas konfigurowania struktur kont zaleca się przestrzeganie pewnych najlepszych praktyk. Jednak jest to tylko wskazówka, a całościowa dyskusja powinna uwzględniać kwestie sytuacji firmy, planu rozwoju i planu konserwacji.
 
 - Utwórz konto główne najpierw lub umieść je jak najbliżej z przodu struktury konta, tak aby podczas dokonywania zapisów na koncie użytkownicy byli najlepiej kierowani przez kolejne etapy.
+  
+  - Sprawdź, czy rozwiązania innych firm, których zamierzasz używać, obsługują konto główne na pierwszej pozycji.
 
 - W jak największym stopniu wykorzystuj istniejące struktury kont, aby uprościć zarządzanie we wszystkich firmach.
 

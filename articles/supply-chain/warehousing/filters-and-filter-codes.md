@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: f3d6cd373699d374c019f0db7befaffc169f4f6c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7d6524cb9109263ad62d221ec98e546b962b89ee
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850446"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067537"
 ---
 # <a name="configure-product-filters-for-warehouse-transactions"></a>Konfigurowanie filtrów produktów dla transakcji magazynowych
 
@@ -95,7 +95,7 @@ Aby skonfigurować kody filtrów dla grup towarów, należy wykonać następują
     Na przykład w przypadku zaznaczenia pól wyboru **Użyj kodu filtru 1** i **Użyj kodu filtru 2**, kody filtru 1 i 2 pozycji muszą odpowiadać konfiguracji grupy filtru dla grupy pozycji, aby można było wybrać grupę filtrów. Po utworzeniu nowego towaru wybrana grupa filtrów będzie domyślną grupą filtrów w polach **Grupa 1** i **Grupa 2** na skróconej karcie **Magazyn** na stronie **Szczegóły zwolnionego produktu**.
 
 > [!IMPORTANT]
-> Kody filtrów produktów są włączone tylko dla pozycji, które korzystają z zaawansowanego zarządzania magazynem.
+> Kody filtrów produktów są włączone tylko dla pozycji, które korzystają z zarządzania magazynem (WMS).
 
 ## <a name="specify-filter-codes-for-released-products"></a>Określanie kodów filtrów dla zwolnionych produktów
 
@@ -158,7 +158,7 @@ Aby skonfigurować kody filtrów dostawcy, należy wykonać następujące czynno
 1. W polach od **Kod 1** do **Kod 10** wybierz kody filtrów, które mają być stosowane jako kryteria ograniczania pozycji dostępnych dla dostawców w wybranej grupie towarów. Należy dokonać wyboru dla każdego kodu filtru ustawionego dla grupy pozycji.
 
 > [!NOTE]
-> Ustawienia filtrów produktów dostawcy dotyczą zwolnionych produktów, dla których są włączone procesy zarządzania magazynem w skojarzonej grupie wymiarów magazynowania. Kody filtrów służą do określania, czy system zezwala użytkownikom na zakup danego towaru od danego dostawcy podczas tworzenia wierszy zamówienia zakupu. Aplikacja Microsoft Dynamics 365 Supply Chain Management oferuje dwie metody obsługi zatwierdzeń dostawców. Jeśli istnieje co najmniej jeden zwolniony produkt, w którym w polu **Metoda sprawdzania zatwierdzonych dostawców** jest ustawiona wartość *Tylko ostrzeżenie* lub *Niedozwolone*, dla tych pozycji można włączyć obie metody zatwierdzania przez dostawcę. Ta sytuacja może spowodować problemy dla użytkowników podczas tworzenia wierszy zamówienia zakupu.
+> Ustawienia filtrów produktów dostawcy dotyczą zwolnionych produktów, dla których są włączone zarządzania magazynem (WMS) w skojarzonej grupie wymiarów magazynowania. Kody filtrów służą do określania, czy system zezwala użytkownikom na zakup danego towaru od danego dostawcy podczas tworzenia wierszy zamówienia zakupu. Aplikacja Microsoft Dynamics 365 Supply Chain Management oferuje dwie metody obsługi zatwierdzeń dostawców. Jeśli istnieje co najmniej jeden zwolniony produkt, w którym w polu **Metoda sprawdzania zatwierdzonych dostawców** jest ustawiona wartość *Tylko ostrzeżenie* lub *Niedozwolone*, dla tych pozycji można włączyć obie metody zatwierdzania przez dostawcę. Ta sytuacja może spowodować problemy dla użytkowników podczas tworzenia wierszy zamówienia zakupu.
 
 ## <a name="see-also"></a>Informacje dodatkowe
 

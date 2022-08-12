@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 44b56a59c3b6bb123151988c403382d7c57efd29
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d3bb636ed3b807b6017e70ab2051a414cd69af40
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8845033"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123907"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10012-august-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.12 (sierpień 2020 r.)
 
@@ -55,9 +55,9 @@ To wydanie obejmuje następujące nowe funkcje. Tytuły funkcji łączą się z 
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizacja Platform dla aplikacji Finanse i Działania
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizacja Platform dla aplikacji finansowych i operacyjnych
 
-Pakiet Microsoft Dynamics 365 Supply Chain Management 10.0.12 zawiera aktualizację platformy. Aby dowiedzieć się więcej, zobacz [aktualizacje platformy dla wersji 10.0.12 aplikacji Finanse i Działania (sierpień 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md).
+Pakiet Microsoft Dynamics 365 Supply Chain Management 10.0.12 zawiera aktualizację platformy. Aby dowiedzieć się więcej, zobacz [aktualizacje platformy dla wersji 10.0.12 aplikacji finansowych i operacyjnych (sierpień 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md).
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 

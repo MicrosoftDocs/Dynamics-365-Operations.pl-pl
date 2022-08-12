@@ -11,18 +11,16 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-05-27
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 171b383e1549babd76fd18e4932436a66aa62cc1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f0371cf9862afaf3bc43a44def725c420e9aaf56
+ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873935"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9166752"
 ---
 # <a name="vendor-invoice-entities"></a>Podmioty wystawiające faktury
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!-- KFM: Preview until GA with 10.0.28 -->
 
 Moduł **Koszty stałe** umożliwia skonfigurowanie kodów rodzajów kosztów dla kosztów wewnętrznych lub kosztów pochodzących z zewnątrz. Jeśli koszt jest zewnętrzny w stosunku do firmy, oczekuje się faktury od dostawcy usługi. Taka faktura jest przetwarzana jako arkusz faktur, który może być powiązany z podróżą, a wartość faktury może być rozłożona na jeden lub więcej kosztów podróży.
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a6a00bdae34e2aebcc4a015626eb044d90cd2887
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: db15c52ddde08bcc9d390c51efc676c20aac0a7e
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864405"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067442"
 ---
 # <a name="budgeting-home-page"></a>Budżetowanie — strona główna
 
@@ -38,7 +38,7 @@ Cykl planowania zasobów dla firmy zwykle obejmuje działania dotyczące planowa
 
 Procesy długoterminowego planowania strategicznego oraz planowania budżetu rocznego są obsługiwane za pomocą dokumentu planu budżetu. Dokumenty planu budżetu są ściśle zintegrowane z programem Microsoft Excel. Użytkownicy mogą konfigurować nieograniczoną liczbę scenariuszy pieniężnych i ilościowych oraz definiować hierarchie organizacyjne budżetowania do obsługi metod budżetowania od góry do dołu i od dołu do góry. Po określeniu i zatwierdzeniu budżetu w aplikacji należy przekonwertować plan budżetu na wpis do rejestru budżetu. Wpisy do rejestru budżetu zawierają narzędzia do obsługi budżetu i przechowywania kwot, które można śledzić za pomocą kodów budżetu. Wpisy do rejestru budżetu umożliwiają poprawianie pierwotnych budżetów, wykonywanie przeniesień i przenoszenie na następny okres kwot budżetu z poprzedniego roku. Na podstawie przyjętego budżetu firma może włączyć kontrolę budżetu. Poziom kontroli zależy od kultury organizacyjnej oraz poziomu dojrzałości organizacji. Organizacje o mniejszej dojrzałości mogą pozostawiać budżet „taki, jaki jest” i w sytuacji, gdy budżet nie spełnia oczekiwań, działać reaktywnie, a nie proaktywnie. Inne organizacje mogą włączyć zasady kontroli budżetu, które uniemożliwiają użytkownikom kupowanie, jeśli w budżecie nie ma dostępnych środków.
 
-Organizacje bardzo dojrzałe mogą wykształcić kulturę organizacyjną, w której pracownicy etatowi znają cele organizacyjne i realizują je za pomocą zasad, takich jak „Należy rozważyć spotkania online zamiast podróży”. Aplikacja zawiera strukturę kontroli budżetu umożliwiającą kierownictwu firmy wybranie modelu twardej kontroli (który uniemożliwia księgowanie powyżej wysokości budżetu) lub miękkiej kontroli (w którym użytkownicy są ostrzegani o ryzyku przekroczenia budżetu, ale mogą sami podejmować decyzje dotyczące dalszego postępowania). Można również stosować prognozy kroczące. Prognoza krocząca polega na regularnym porównywaniu budżetu z wartościami rzeczywistymi i jest używana do definiowania skuteczności wykonywania budżetu przez firmę. Prognoza krocząca służy także do identyfikowania trendów. W rozwiązaniu Finance and Operations prognozy kroczące są obsługiwane za pomocą dokumentu planu budżetu jako działania planowania początkowego. Prognozy kroczące mogą być wykonywane równolegle z planowaniem dla nachodzącego cyklu budżetu.
+Organizacje bardzo dojrzałe mogą wykształcić kulturę organizacyjną, w której pracownicy etatowi znają cele organizacyjne i realizują je za pomocą zasad, takich jak „Należy rozważyć spotkania online zamiast podróży”. Aplikacja zawiera strukturę kontroli budżetu umożliwiającą kierownictwu firmy wybranie modelu twardej kontroli (który uniemożliwia księgowanie powyżej wysokości budżetu) lub miękkiej kontroli (w którym użytkownicy są ostrzegani o ryzyku przekroczenia budżetu, ale mogą sami podejmować decyzje dotyczące dalszego postępowania). Można również stosować prognozy kroczące. Prognoza krocząca polega na regularnym porównywaniu budżetu z wartościami rzeczywistymi i jest używana do definiowania skuteczności wykonywania budżetu przez firmę. Prognoza krocząca służy także do identyfikowania trendów. W aplikacjach finansowych i operacyjnych prognozy kroczące są obsługiwane za pomocą dokumentu planu budżetu jako działania planowania początkowego. Prognozy kroczące mogą być wykonywane równolegle z planowaniem dla nachodzącego cyklu budżetu.
 
 -   [Omówienie budżetowania](basic-budgeting-overview-configuration.md)
 -   [Omówienie kontroli budżetu](budget-control-overview-configuration.md)
@@ -72,3 +72,4 @@ Na przykład można określić, kto wykonuje budżetowanie, co jest ujęte w bud
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

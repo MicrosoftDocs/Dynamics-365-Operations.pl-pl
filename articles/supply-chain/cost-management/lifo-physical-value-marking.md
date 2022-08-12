@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45316c40cce988c0758e70af627b0123ec1f7873
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c1acc103291c5d648ac7e179a598348cd9cc2a93
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670448"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135578"
 ---
 # <a name="lifo-with-physical-value-and-marking"></a>LIFO z wartością fizyczną i oznaczeniami
 
@@ -128,7 +128,7 @@ Na ilustracji przedstawiono następujące transakcje:
 - 6a. Fizyczny rozchód magazynowy w ilości 1 po koszcie własnym 23,00 USD (średnia ruchoma zaksięgowanych finansowo transakcji)
 - 7\. Wykonywane jest zamknięcie magazynu. W oparciu o zasadę oznaczania, która wykorzystuje metodę LIFO, oznaczone transakcje są rozliczane między sobą. W tym przykładzie, 3b jest rozliczane z 2b, a korekta o 6,00 USD jest księgowana na 3b, aby wartość wynosiła 22,00 USD. W tym przykładzie nie są dokonywane żadne dodatkowe rozliczenia, ponieważ zamknięcie tworzy rozliczenia tylko dla transakcji zaktualizowanych finansowo.
 
-Nowa średnia ruchoma kosztów własnych odzwierciedla średnią wynikającą z fizycznie i finansowo zaktualizowanych transakcji na poziomie 27,50 USD.
+Nowa średnia ruchoma kosztów własnych odzwierciedla średnią wynikającą z fizycznie i finansowo zaktualizowanych transakcji na poziomie 17,50 USD.
 
 Poniższa ilustracja pokazuje wpływ modelu magazynowego LIFO na tę serię transakcji, jeśli używane są oznaczenia między przychodem i rozchodem.
 

@@ -6,21 +6,22 @@ ms.date: 12/19/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: HcmWorkforceWorkspace
 audience: Application User, IT Pro
-ms.reviewer: kfend
-ms.custom: 264084
-ms.assetid: 8e700583-3a7d-4f5f-9ac8-58c4feed1a02
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e45e4fb58bd535b66b7ad0dad8c4efa37e4336b7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom:
+- "264084"
+ms.assetid: 8e700583-3a7d-4f5f-9ac8-58c4feed1a02
+ms.search.form: HcmWorkforceWorkspace
+ms.openlocfilehash: 156657e5f9876bd051f317f0bbcd8664807dd7d3
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884496"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206628"
 ---
 # <a name="workforce-metrics-power-bi-content"></a>Pakiet zawartości usługi Power BI Metryki pracowników
 
@@ -58,7 +59,7 @@ Wykresy i kafelki w tych raportach można filtrować oraz przypinać do pulpitu 
 Uważaj, aby pobrać pakiet zawartości usługi Power BI **Metryki pracowników** mający zastosowanie do używanej wersji systemu Microsoft Dynamics 365.
 
 > [!NOTE]
-> Pliki .pbix dostępne w usłudze Lifecycle Services dotyczą tylko aplikacji Finance and Operations.
+> Pliki .pbix dostępne w usłudze Lifecycle Services dotyczą tylko aplikacji finansowych i operacyjnych.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Opis modelu danych i jednostek
 W poniższej tabeli przedstawiono jednostki, na których bazuje pakiet.

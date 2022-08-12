@@ -1,5 +1,5 @@
 ---
-title: Przegląd Dynamics 365 Supply Chain Management 10.0.28 (sierpień 2022)
+title: Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.28 (sierpień 2022 r.)
 description: W tym artykule opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Supply Chain Management 10.0.28.
 author: kamaybac
 ms.date: 05/27/2022
@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-05-27
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 2b129481399897337e960ec2d708d69a563b5435
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7e17127ff6ef6c52034b8aa5e0c8404772363ca9
+ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902061"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "9186528"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10028-august-2022"></a>Przegląd Dynamics 365 Supply Chain Management 10.0.28 (sierpień 2022)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10028-august-2022"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.28 (sierpień 2022 r.)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-W tym artykule wymieniono nowe oraz zmienione funkcje dostępne w programie Microsoft Dynamics 365 Supply Chain Management w wersji zapoznawczej 10.0.28. Ta wersja ma numer kompilacji 10.0.1264 i jest dostępna w następującym harmonogramie:
+W tym artykule wymieniono nowe oraz zmienione funkcje dostępne w programie Microsoft Dynamics 365 Supply Chain Management w wersji 10.0.28. Ta wersja ma numer kompilacji 10.0.1264 i jest dostępna w następującym harmonogramie:
 
 - **Wersja podglądu:** maj 2022
 - **Ogólna dostępność wydania (samoaktualizacja):** lipiec 2022 r.
@@ -35,7 +34,7 @@ To wydanie zawiera funkcje, które są podane w następującej tabeli. Możemy z
 | Obszar funkcji | Funkcja | Więcej informacji | Włączone przez   |
 |---|---|---|---|
 | Zapasy i logistyka | [Podmioty integrujące koszty lądowe dla zewnętrznych spedytorów](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/landed-cost-integration-third-party-freight-forwarders) | [Przegląd podmiotów ponoszących koszty lądowe](../landed-cost/landed-cost-entities-overview.md) | Domyślnie włączone |
-| Planowanie | [Planowanie zapotrzebowania materiałowego sterowane popytem (Demand Driven Material Requirements Planning - DDMRP)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/demand-driven-material-requirements-planning-ddmrp) | Wkrótce | Zarządzanie funkcjami:<br>*(Wersja zapoznawcza) DDMRP dla optymalizacji planowania* |
+| Planowanie | [Planowanie zapotrzebowania materiałowego sterowane popytem (Demand Driven Material Requirements Planning - DDMRP)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/demand-driven-material-requirements-planning-ddmrp) | [Planowanie zapotrzebowania materiałowego sterowane popytem – omówienie](../master-planning/planning-optimization/ddmrp-overview.md) | Zarządzanie funkcjami:<br>*(Wersja zapoznawcza) DDMRP dla optymalizacji planowania* |
 | Planowanie | [Optymalizacja planowania Wsparcie dla zdolności do osiągnięcia celu (CTP)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-capable-to-promise-ctp) | Wkrótce | Zarządzanie funkcjami:<br>*(Wersja zapoznawcza) CTP dla optymalizacji planowania* |
 | Planowanie | [Wsparcie optymalizacji planowania dla okresu trwałości](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-shelf-life) | Wkrótce | Domyślnie włączone |
 
@@ -66,7 +65,7 @@ Niedawno dodano lub znacząco zaktualizowano następujące artykuły Pomocy. Te 
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizacja Platform dla aplikacji Finanse i Działania
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizacja Platform dla aplikacji finansowych i operacyjnych
 
 Pakiet Microsoft Dynamics 365 Supply Chain Management 10.0.28 zawiera aktualizację platformy. Aby dowiedzieć się więcej, zobacz [aktualizacje platformy dla wersji 10.0.28 aplikacji finansowych i operacyjnych (czerwiec 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-28.md).
 
@@ -92,3 +91,4 @@ Zanim jakakolwiek funkcja zostanie usunięta z produktu, powiadomienie o zaniech
 W przypadku zmian, które wpływają tylko na czas kompilacji, ale są zgodne z trybem piaskownicy i środowiskami produkcyjnymi, czas niezgodności będzie krótszy niż 12 miesięcy. Zazwyczaj są to aktualizacje funkcjonalne, które należy wykonać w kompilatorze.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

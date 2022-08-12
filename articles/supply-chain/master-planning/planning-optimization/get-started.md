@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: b9595aece264f55c706ebc84010b927fae56b512
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e853c8a482b8fd0b92c9861fe022c056915ab405
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900978"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112203"
 ---
 # <a name="get-started-with-planning-optimization"></a>Rozpoczęcie optymalizacji planowania
 
@@ -40,7 +40,7 @@ Przed włączeniem optymalizacji planowania zdecydowanie zaleca się dokonanie o
 
 ## <a name="availability"></a>Dostępność
 
-Optymalizacja planowania jest obecnie dostępna w następujących regionach geograficznych platformy Azure: Stany Zjednoczone, Kanada, Europa, Zjednoczone Królestwo, Australia, Azja i Pacyfik, Brazylia, Japonia i Indie. W przypadku próby zainstalowania dodatku z innego regionu geograficznego usługi LCS wyświetlą komunikat informujący, że ten region geograficzny nie jest obsługiwany. Aby uzyskać więcej informacji o lokalizacjach geograficznych systemu Azure i pokrewnych regionach, zobacz [lokalizacje geograficznej systemu Azure](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
+Optymalizacja planowania jest obecnie dostępna w następujących regionach geograficznych platformy Azure: Stany Zjednoczone, Kanada, Europa, Francja, Zjednoczone Królestwo, Australia, Azja i Pacyfik, Brazylia, Japonia i Indie. W przypadku próby zainstalowania dodatku z innego regionu geograficznego usługi LCS wyświetlą komunikat informujący, że ten region geograficzny nie jest obsługiwany. Aby uzyskać więcej informacji o lokalizacjach geograficznych systemu Azure i pokrewnych regionach, zobacz [lokalizacje geograficznej systemu Azure](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
 
 Pamiętaj, że optymalizacja planowania nie obsługuje wdrożeń lokalnych aplikacji Dynamics 365 Supply Chain Management.
 
@@ -135,3 +135,4 @@ Jeśli Optymalizacja planowania jest włączona, planowanie główne jest wykony
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

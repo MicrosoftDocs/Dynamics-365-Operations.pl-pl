@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 11355031714b7e046f70bd5840297d66aa7d32e0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ad0075e2b92ebeb9fba879bcae503100dc7adb47
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873186"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9205945"
 ---
 # <a name="company-concept-in-dataverse"></a>Pojęcie firmy w usługach Dataverse
 
@@ -23,15 +23,17 @@ ms.locfileid: "8873186"
 
 
 
-W Finanse i Działania koncepcja *firmy* jest zarówno konstrukcją prawną, jak i konstrukcją biznesową. Jest to również granicą bezpieczeństwa i widoczności danych. Użytkownicy zawsze pracują w kontekście pojedynczej firmy, a większość danych jest rozłożona według firmy.
+W aplikacjach finansowych i operacyjnych koncepcja *firmy* jest zarówno konstrukcją prawną, jak i konstrukcją biznesową. Jest to również granicą bezpieczeństwa i widoczności danych. Użytkownicy zawsze pracują w kontekście pojedynczej firmy, a większość danych jest rozłożona według firmy.
 
 Dataverse nie ma równoważnej koncepcji. Najbliższa koncepcja jest *jednostką biznesową*, która jest przede wszystkim granicą bezpieczeństwa i widoczności danych użytkownika. Koncepcja ta nie ma takich samych konsekwencji prawnych lub biznesowych, co koncepcja firmy.
 
 Ponieważ jednostka biznesowa i firma nie są równoważnymi pojęciami, nie można wymusić mapowania 1:1 między nimi co celu integracji Dataverse. Jednak ponieważ użytkownicy muszą domyślnie być w stanie widzieć te same wiersze w aplikacji i Dataverse, firma Microsoft wprowadziła nową tabelę w Dataverse o nazwie cdm\_Company. Ta tabela jest odpowiednikiem tabeli firmy w aplikacji. Aby zagwarantować, że widoczność wierszy jest równoważna między aplikacją i Dataverse od razu po zainstalowaniu, zaleca się następujące ustawienia dla danych Dataverse:
 
-+ Dla każdego wiersza firmy w programie Finanse i Działania, który jest włączony dla podwójnego zapisu tworzony jest skojarzony wiersz cdm\_Company.
++ Dla każdego wiersza firmy w aplikacjach finansowych i operacyjnych, który jest włączony dla podwójnego zapisu tworzony jest skojarzony wiersz cdm\_Company.
+
 + Gdy wiersz cdm\_Company jest tworzony i włączony dla podwójnego zapisu, tworzona jest domyślna jednostka biznesowa o tej samej nazwie. Mimo że domyślny zespół jest tworzony automatycznie dla tej jednostki biznesowej, jednostka biznesowa nie jest używana.
-+ Tworzony jest oddzielny zespół właściciela o takiej samej nazwie. Jest również związany z jednostką biznesową.
++ Zostanie utworzony osobny zespół właścicieli o tej samej nazwie z przyrostkiem Dual Write. Jest również związany z jednostką biznesową.
+
 + Domyślnie właścicielem dowolnego wiersza utworzonego i zapisywanym podwójnie w Dataverse jest zestaw do zespołu „DW Owner” połączony ze skojarzoną jednostką biznesową.
 
 Ilustracja poniżej zawiera przykład tej konfiguracji danych w Dataverse.
@@ -43,7 +45,7 @@ Z powodu tej konfiguracji każdy wiersz związany firmą USMF będą własności
 + Rola „Menedżer sprzedaży” jest przypisana do członków zespołu „USMF Sales”.
 + Użytkownicy z rolą „Menedżer sprzedaży” mają dostęp do wszystkich wierszy konta należących do tej samej jednostki biznesowej, do której należą ci użytkownicy.
 + Zespół „USMF Sales” jest powiązany z jednostką biznesową USMF, o której wspomniano wcześniej.
-+ W związku z tym członkowie zespołu „USMF Sales” mogą zobaczyć dowolne konto, które jest własnością użytkownika „USMF DW”, i które pochodzi z tabeli Firma USMF w Finanse i Działania.
++ W związku z tym członkowie zespołu „USMF Sales” mogą zobaczyć dowolne konto, które jest własnością użytkownika „USMF DW”, i które pochodzi z tabeli Firma USMF w aplikacjach finansowych i operacyjnych.
 
 ![Jak mogą być używane zespoły.](media/dual-write-company-2.png)
 

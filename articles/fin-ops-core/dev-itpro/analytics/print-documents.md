@@ -7,21 +7,21 @@ ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro, Application User
-ms.reviewer: kfend
-ms.custom:
-- "69161"
-- intro-internal
-ms.assetid: 7815bddd-c4f4-4bc3-a29b-315458065374
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b9105ef39e411ac33043f1941d4e1dd32b758e5
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.custom:
+- "69161"
+- intro-internal
+ms.assetid: 7815bddd-c4f4-4bc3-a29b-315458065374
+ms.openlocfilehash: d8d40f7cb94e17370f04b0c97365600f68eb5090
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984915"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206734"
 ---
 # <a name="document-printing-overview"></a>Omówienie drukowania dokumentu
 
@@ -54,7 +54,7 @@ Ponieważ stosowane rozwiązanie różni się w zależności od scenariusza, apl
 - **Scenariusz 2** korzysta z aplikacji klienckich i usługi Microsoft 365.
 - **Scenariusz 3** wymaga obsługi ze strony aplikacji klienckich oraz usług hostowanych na platformie Microsoft Azure.
 
-Oprócz platformy wdrożonej w ramach subskrypcji usługi Azure odbiorcy mogą korzystać z aplikacji rozwiązania Finance and Operations, które są zintegrowane z platformą Azure i pochodzą od jej producenta, co ułatwia korzystanie z urządzeń w domenie do drukowania dokumentów.
+Oprócz platformy wdrożonej w ramach subskrypcji usługi Azure odbiorcy mogą korzystać z aplikacji finansowych i operacyjnych, które są zintegrowane z platformą Azure i pochodzą od jej producenta, co ułatwia korzystanie z urządzeń w domenie do drukowania dokumentów.
 
 ## <a name="service-overview"></a>Ogólne informacje o usługach
 Kiedy dokumenty generowane przez hostowane aplikacje oczekują na wydrukowanie na urządzeniu sieciowym, są przechowywane w magazynie obiektów blob usługi Azure. [Instalowanie Agenta rozsyłania dokumentów w celu obsługi druku przez sieć](install-document-routing-agent.md) używa uwierzytelniania Azure do ustanawiania bezpiecznego kanału do usług platformy Azure.

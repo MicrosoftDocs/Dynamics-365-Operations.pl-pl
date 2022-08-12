@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 8e8e6adc2c72b6e3ab567723ac01055ea8d7292e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b3cfdb98f9f0f05e046784cc77c85cd4a045868c
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868735"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069386"
 ---
 # <a name="company-directory-mobile-workspace"></a>Mobilny obszar roboczy Firmowa książka adresowa
 
@@ -26,9 +26,9 @@ ms.locfileid: "8868735"
 
 Ten artykuł zawiera informacje o komórkowym obszarze roboczym **Firmowa książka adresowa**. Ten obszar roboczy umożliwia użytkownikom wyświetlanie danych i kontaktowanie się z innymi pracownikami w organizacji.
 
-Ten mobilny obszar roboczy może być używany w aplikacji mobilnej Finance and Operations.
+Ten mobilny obszar roboczy może być używany w mobilnych aplikacjach finansowych i operacyjnych.
 
-## <a name="overview"></a>Przegląd
+## <a name="overview"></a>Omówienie
 Mobilny obszar roboczy **Firmowa książka adresowa** pozwala użytkownikom wykonywać następujące zadania:
 
 - Wyświetlanie listy pracowników w organizacji.
@@ -50,12 +50,12 @@ Aby można było używać tego mobilnego obszaru roboczego, muszą być spełnio
 <tbody>
 <tr class="odd">
 <td>W organizacji musi być wdrożony jeden z następujących produktów:
-<ul><li>Aplikacja Finance and Operations</li>
+<ul><li>Aplikacja finansowa i operacyjna</li>
 <li>Microsoft Dynamics 365 Human Resources</li>
 </ul>
 </td>
 <td>Administrator systemu</td>
-<td>Jeśli w organizacji jeszcze wdrożono aplikacji Finance and Operations, zobacz <a href="../deployment/deploy-demo-environment.md">Wdrażanie środowiska demonstracyjnego</a>. Jeśli w organizacji jeszcze nie wdrożono Human Resources, administrator systemu ma dostęp do wersji próbnej z <a href="https://dynamics.microsoft.com/human-resources/overview/">witryny internetowej Human Resources</a>.
+<td>Jeśli w organizacji jeszcze wdrożono aplikacji finansowych i operacyjnych, zobacz <a href="../deployment/deploy-demo-environment.md">Wdrażanie środowiska demonstracyjnego</a>. Jeśli w organizacji jeszcze nie wdrożono Human Resources, administrator systemu ma dostęp do wersji próbnej z <a href="https://dynamics.microsoft.com/human-resources/overview/">witryny internetowej Human Resources</a>.
 </td>
 </tr>
 <tr class="even">
@@ -67,7 +67,7 @@ Aby można było używać tego mobilnego obszaru roboczego, muszą być spełnio
 </table>
 
 ## <a name="download-and-install-the-mobile-app"></a>Pobieranie i instalowanie aplikacji mobilnej
-Pobieranie i instalowanie aplikacji mobilnej Finance and Operations:
+Pobieranie i instalowanie mobilnych aplikacji finansowych i operacyjnych:
 
 -   [Telefony Android](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Telefony iPhone](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -91,3 +91,4 @@ Pobieranie i instalowanie aplikacji mobilnej Finance and Operations:
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

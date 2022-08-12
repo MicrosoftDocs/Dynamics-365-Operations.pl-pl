@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 2ee316a3e6a6baef7aa8b5d46b04a2d1bb07a641
-ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
+ms.openlocfilehash: 0d857ef31e0fed2a0d7550197209fac9251d8812
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "9022531"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069795"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Jak pracownicy korzystają z interfejsu wykonania hal produkcyjnych
 
@@ -217,7 +217,7 @@ Pracownicy mogą dostosowywać zużycie materiału dla elementów wagi połowu. 
 
 W oknie dialogowym **Koryguj materiał** pracownik może dokonać i dostosować rezerwację materiału, wybierając **Zarezerwuj materiał**. W oknie dialogowym **Rezerwacja materiału** wyświetlane są fizycznie dostępne zapasy towaru dla poszczególnych wymiarów przechowywania i śledzenia.
 
-Jeśli materiał jest włączony w zaawansowane procesy magazynowe, lista pokazuje tylko fizycznie dostępne zapasy dla miejsca wejścia do produkcji dla danego materiału. Miejsce wejścia do produkcji jest zdefiniowane w zasobie, w którym zaplanowane jest zadanie produkcyjne. Jeśli numer pozycji jest kontrolowany przez numer partii lub numer seryjny, pokaże się pełna lista fizycznie dostępnych numerów partii i numerów seryjnych. Aby określić ilość do rezerwacji, pracownik może wybrać opcję **Rezerwuj materiał**. Aby usunąć istniejącą rezerwację, pracownik może wybrać opcję **Usuń rezerwację**.
+Jeśli materiał jest włączony w procesy magazynowe (WMS), lista pokazuje tylko fizycznie dostępne zapasy dla miejsca wejścia do produkcji dla danego materiału. Miejsce wejścia do produkcji jest zdefiniowane w zasobie, w którym zaplanowane jest zadanie produkcyjne. Jeśli numer pozycji jest kontrolowany przez numer partii lub numer seryjny, pokaże się pełna lista fizycznie dostępnych numerów partii i numerów seryjnych. Aby określić ilość do rezerwacji, pracownik może wybrać opcję **Rezerwuj materiał**. Aby usunąć istniejącą rezerwację, pracownik może wybrać opcję **Usuń rezerwację**.
 
 Aby uzyskać więcej informacji dotyczących konfigurowania lokalizacji wejściowej produkcji, zobacz następujący wpis w blogu: [Konfigurowanie lokalizacji wejściowej produkcji](/archive/blogs/axmfg/deliver-picked-materials-to-the-locations-where-the-materials-are-consumed-by-operations-in-production).
 

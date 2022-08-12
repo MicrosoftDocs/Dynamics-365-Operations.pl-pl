@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2021-11-09
-ms.openlocfilehash: 90e64fec512307af209ace128d5897475de7aee5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 41789d574cc7348dbf8a18db97da9c428da09602
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867281"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103947"
 ---
 # <a name="dynamics-365-finance-supply-chain-management-and-commerce-in-us-government-community-cloud-gcc"></a>Rozwiązania Dynamics 365 Finance i Supply Chain Management, i Commerce w amerykańskiej chmurze Government Community Cloud (GCC)
 
@@ -38,9 +38,9 @@ Po zakończeniu początkowego dołączania postępuj zgodnie z instrukcjami [Do�
 
 ## <a name="environment-deployment"></a>Wdrażanie środowiska
 
-Po zakończeniu dołączania projektu możesz przejrzeć dodatkowe możliwości usługi LCS opisane w usługach [Lifecycle Services (LCS) dla odbiorców aplikacji Finanse i Działania](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md). Następnie przejdź do wdrożenia środowiska.
+Po zakończeniu dołączania projektu możesz przejrzeć dodatkowe możliwości usługi LCS opisane w usługach [Lifecycle Services (LCS) dla odbiorców aplikacji finansowych i operacyjnych](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md). Następnie przejdź do wdrożenia środowiska.
 
-- Aby wdrożyć środowiska zarządzane przez firmę Microsoft za pomocą usługi LCS, postępuj zgodnie z instrukcjami w [Lifecycle Services (LCS) dla odbiorców aplikacji Finanse i Działania](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md#new-deployment-experience).
+- Aby wdrożyć środowiska zarządzane przez firmę Microsoft za pomocą usługi LCS, postępuj zgodnie z instrukcjami w [Lifecycle Services (LCS) dla odbiorców aplikacji finansowych i operacyjnych](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md#new-deployment-experience).
 - Dla środowisk hostowanych w chmurze zobacz temat [Wdrażanie środowisk programistycznych i uzyskiwanie do nich dostępu](../../../fin-ops-core/dev-itpro/dev-tools/access-instances.md). Musisz także zakończyć proces dołączania Menedżera zasobów dla łączników, jak opisano w temacie [Zakończenie procesu dołączania usługi Azure Resource Manager dla projektów usługi Lifecycle Services instytucji rządowych USA](arm-onbarding-us-goverment.md).
 
 > [!NOTE]
@@ -84,3 +84,4 @@ Tak. Jeśli jednak partner używa tożsamości spoza GCC, bilet pomocy techniczn
 - [Omówienie wdrażania w chmurze](../../../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

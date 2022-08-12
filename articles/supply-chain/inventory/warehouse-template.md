@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 737b6f2f645ff270e5a49d54ca7542df3c075f94
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dafd51a46b19f3709963ffc12b3c8c77b6c809ac
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856114"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070448"
 ---
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Konfigurowanie magazynu przy użyciu szablonu konfiguracji magazynu
 
@@ -90,7 +90,7 @@ Można pobrać plik zip pakietu danych. Ten plik zawiera wszystkie dane w wybran
 
 Opcja **Wyświetl dziennik wykonywania** umożliwia uzyskanie szczegółowych informacji o każdej importowanej jednostce danych. Aby szybko pobrać dane docelowe, można użyć widoku danych pośrednich. Umożliwia to sprawdzenie wyglądu zaimportowanych danych na powiązanych stronach w aplikacji. Jeżeli używane są szablony danych domyślnych, sekwencja importu dla każdej jednostki danych działa we wstępnie zdefiniowany sposób, aby zapewnić, że najpierw zostaną zaimportowane wszystkie dane zależne. Jeżeli częścią projektu są niestandardowe jednostki danych, należy zdefiniować prawidłową sekwencję. Aby uzyskać więcej informacji, zobacz temat [Szablony danych konfiguracji](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md).
 
-Aby uzyskać więcej informacji na temat sposobu korzystania z szablonu magazynu do skopiowania konfiguracji magazynu z jednej firmy do nowej firmy w tym samym wystąpieniu, zobacz ten 3 minutowy film w serwisie YouTube: [jak korzystać z szablonu magazynu do kopiowania konfiguracji dla rozwiązania Finance and Operations](https://www.youtube.com/watch?v=K2WIfFlqJYs).
+Aby uzyskać więcej informacji na temat sposobu korzystania z szablonu magazynu do skopiowania konfiguracji magazynu z jednej firmy do nowej firmy w tym samym wystąpieniu, zobacz ten 3 minutowy film w serwisie YouTube: [jak korzystać z szablonu magazynu do kopiowania konfiguracji dla aplikacji finansowych i operacyjnych](https://www.youtube.com/watch?v=K2WIfFlqJYs).
 
 ## <a name="related-article"></a>Powiązany artykuł
 

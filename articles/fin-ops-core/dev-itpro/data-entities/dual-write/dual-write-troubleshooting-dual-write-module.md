@@ -1,6 +1,6 @@
 ---
-title: Rozwiązywanie problemów z podwójnym zapisem w aplikacjach Finanse i Działania
-description: Ten artykuł zawiera informacje dotyczące rozwiązywania problemów, które mogą pomóc w rozwiązaniu problemów związanych z modułem podwójnego zapisu w aplikacjach Finanse i Działania.
+title: Rozwiązywanie problemów z podwójnym zapisem w aplikacjach finansowych i operacyjnych
+description: Ten artykuł zawiera informacje dotyczące rozwiązywania problemów, które mogą pomóc w rozwiązaniu problemów związanych z modułem podwójnego zapisu w aplikacjach finansowych i operacyjnych.
 author: RamaKrishnamoorthy
 ms.date: 04/18/2022
 ms.topic: article
@@ -9,25 +9,25 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 36f7969eb0bdbc64ade14a5bb97b4b708486d226
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2743b99538b332af7cc6ad8d951eede562c14235
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864580"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111179"
 ---
-# <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Rozwiązywanie problemów z podwójnym zapisem w aplikacjach Finanse i Działania
+# <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Rozwiązywanie problemów z podwójnym zapisem w aplikacjach finansowych i operacyjnych
 
 [!include [banner](../../includes/banner.md)]
 
 
 
-Ten artykuł zawiera informacje dotyczące rozwiązywania problemów dotyczących integracji podwójnego zapisu między aplikacjami finansowymi i operacyjnymi oraz usługą Dataverse. Ten temat zawiera informacje dotyczące rozwiązywania problemów, które mogą pomóc w rozwiązaniu problemów związanych z modułem **podwójnego zapisu** w aplikacjach Finanse i Działania.
+Ten artykuł zawiera informacje dotyczące rozwiązywania problemów dotyczących integracji podwójnego zapisu między aplikacjami finansowymi i operacyjnymi oraz usługą Dataverse. Ten temat zawiera informacje dotyczące rozwiązywania problemów, które mogą pomóc w rozwiązaniu problemów związanych z modułem **podwójnego zapisu** w aplikacjach finansowych i operacyjnych.
 
 > [!IMPORTANT]
 > Niektóre problemy z tego artykułu mogą wymagać roli administratora systemu lub poświadczeń administratora klienta usługi Microsoft Azure Active Directory (Azure AD). W sekcji dotyczącej każdego zagadnienia wyjaśniono, czy określona rola lub poświadczenia są wymagane.
 
-## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>Nie możesz załadować modułu podwójnego zapisu w aplikacji Finanse i Działania
+## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>Nie możesz załadować modułu podwójnego zapisu w aplikacjach finansowych i operacyjnych
 
 Jeśli nie można otworzyć strony **podwójnego zapisywania**, wybierając opcję **podwójnego zapisywania** w obszarze roboczym **zarządzanie danymi**, prawdopodobnie usługa integracji danych jest niemożliwa. Utwórz bilet pomocy technicznej, aby zażądać ponownego uruchomienia usługi integracji danych.
 
@@ -49,7 +49,7 @@ Aby rozwiązać ten problem, zaloguj się przy użyciu okna prywatnego w Microso
 
 ## <a name="error-when-you-link-the-environment-for-dual-write-or-add-a-new-table-mapping"></a>Błąd podczas łączenia środowiska w celu wykonania podwójnego zapisywania lub dodania nowego mapowania tabeli
 
-**Wymagana rola, aby rozwiązać problem:** administrator systemu w aplikacjach Finanse i Działania oraz Dataverse.
+**Wymagana rola, aby rozwiązać problem:** administrator systemu w aplikacjach finansowych i operacyjnych oraz Dataverse.
 
 Podczas łączenia lub tworzenia map może wystąpić następujący błąd:
 
@@ -59,7 +59,7 @@ Session ID: \<your session id\>
 Root activity ID: \<your root activity\> id
 ```
 
-Ten błąd może wystąpić, jeśli użytkownik nie ma wystarczających uprawnień, aby połączyć podwójny zapis lub utworzyć mapy. Ten błąd może również wystąpić, jeśli środowisko Dataverse zostało zresetowane bez odłączenia podwójnego zapisu. Każdy użytkownik z rolą administratora systemu w aplikacjach Finanse i Działania i Dataverse może łączyć środowiska. Tylko użytkownik instalujący połączenie podwójnego zapisu może dodawać nowe mapowania tabeli. Po zakończeniu instalacji każdy użytkownik z rolą administratora systemu może monitorować stan i edytować mapowania.
+Ten błąd może wystąpić, jeśli użytkownik nie ma wystarczających uprawnień, aby połączyć podwójny zapis lub utworzyć mapy. Ten błąd może również wystąpić, jeśli środowisko Dataverse zostało zresetowane bez odłączenia podwójnego zapisu. Każdy użytkownik z rolą administratora systemu w aplikacjach finansowych i operacyjnych i Dataverse może łączyć środowiska. Tylko użytkownik instalujący połączenie podwójnego zapisu może dodawać nowe mapowania tabeli. Po zakończeniu instalacji każdy użytkownik z rolą administratora systemu może monitorować stan i edytować mapowania.
 
 ## <a name="error-when-you-stop-the-table-mapping"></a>Błąd podczas zatrzymania mapowania tabeli
 
@@ -77,7 +77,7 @@ Włączenie przetwarzania równoległego może skrócić czas potrzebny na zaimp
 
 Aby włączyć przetwarzanie równoległe w aplikacjach finansowych i operacyjnych, należy wykonać następujące czynności.
 
-1. Zaloguj się do swojego środowiska finansów i operacji.
+1. Zaloguj się do swojego środowiskach aplikacji finansowych i operacyjnych.
 2. Kliknij kolejno **Zarządzanie danymi > Ustawienia ramowe**.
 3. Wybierz **pozycję Ustawienia jednostki** i wybierz **opcję Konfiguruj parametry wykonywania jednostki**.
 4. Dodaj parametry przetwarzania równoległego:
@@ -97,7 +97,7 @@ Podczas próby przeprowadzenia wstępnej synchronizacji danych może zostać wy�
 Podczas próby ustawienia tego stanu mapowania na **Uruchomione** może zostać wyświetlony ten komunikat o błędzie. Poprawka jest zależna od przyczyny błędu:
 
 + Jeśli mapowanie ma zależne mapowania, należy pamiętać, aby włączyć mapowania zależne tego mapowania tabeli.
-+ Być może w mapowaniu brakuje kolumn źródłowych lub docelowych. Jeśli w aplikacji Finanse i Działania nie ma kolumny, należy wykonać kroki w sekcji [Problem związany z brakiem kolumn tabeli na mapach](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). Jeśli w usłudze Dataverse brakuje pola, w mapowaniu należy kliknąć przycisk **Odśwież tabele**, tak aby kolumny były automatycznie wstawiane ponownie do mapowania.
++ Być może w mapowaniu brakuje kolumn źródłowych lub docelowych. Jeśli w aplikacjach finansowych i operacyjnych nie ma kolumny, należy wykonać kroki w sekcji [Problem związany z brakiem kolumn tabeli na mapach](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). Jeśli w usłudze Dataverse brakuje pola, w mapowaniu należy kliknąć przycisk **Odśwież tabele**, tak aby kolumny były automatycznie wstawiane ponownie do mapowania.
 
 ### <a name="version-mismatch-error-and-upgrading-dual-write-solutions"></a>Błąd niezgodności wersji i uaktualnienie rozwiązań podwójnego zapisu
 
@@ -112,3 +112,4 @@ Podczas próby wykonania mapowania tabeli mogą pojawić się następujące komu
 Aby rozwiązać te problemy, należy zaktualizować rozwiązania podwójnego zapisu w Dataverse. Pamiętaj, aby uaktualnić do najnowszego rozwiązania, które pasuje do wymaganej wersji rozwiązania.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 281ee90b7cae2d24d37d0684ad9975118560bb3e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b611abb2d68d93178d0c26ba40b22f1b8d26b191
+ms.sourcegitcommit: 6d9fcb52d723ac5022a3002e0ced8e7b56e9bc2a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869989"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9203118"
 ---
 # <a name="tax-feature-support-for-transfer-orders"></a>Obsługa funkcji podatków dla zamówień przeniesienia
 
@@ -111,7 +111,10 @@ Aby skonfigurować podatek związany z zamówieniem przeniesienia, należy wykon
 6. Zdefiniuj możliwości zastosowania grupy podatkowej elementu.
 
     1. Wybierz opcję **Zarządzaj kolumnami**, a następnie wybierz kolumny, które mają być używane do tworzenia tabeli możliwości zastosowania.
-    2. Dodaj Reguły zastosowania. Nie pozostawiaj pustego pola **Grupa podatkowa elementu**.
+    2. Dodaj Reguły zastosowania.
+        
+       > [!NOTE]
+       > Jeśli domyślna grupa podatku od sprzedaży w liniach dokumentu podlegającego opodatkowaniu jest już prawidłowa, pozostaw tę matrycę pustą. 
         
         Dodaj nową regułę wysyłki zamówienia przeniesienia i paragonu.
         1. Na stronie **Reguły stosowalności** wybierz **Dodaj**.

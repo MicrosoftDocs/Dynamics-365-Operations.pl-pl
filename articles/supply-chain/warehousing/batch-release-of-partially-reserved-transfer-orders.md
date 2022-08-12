@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 591c93eef61992507188323909f37e3f33550a7d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e0b21c0000f6bf1cbbb318c898a519e51ca7e9b8
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888391"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068643"
 ---
 # <a name="batch-release-of-partially-reserved-transfer-orders"></a>Wsadowe zwalnianie częściowo zarezerwowanych zamówień przeniesienia
 
@@ -28,7 +28,7 @@ ms.locfileid: "8888391"
 Funkcja zwalniania wsadowego częściowo zarezerwowanych zamówień przeniesienia umożliwia częściowe zwolnienie zamówień przeniesienia do magazynu za pomocą zadania wsadowego.
 Ponieważ masz możliwość zwolnienia częściowej ilości, nie musisz czekać ze zwolnieniem zamówienia, aż cała ilość z zamówienia będzie dostępne w magazynie.
 
-Zwalnianie zamówień do magazynu to zaawansowany proces zarządzania magazynem. Ten proces obejmuje działania, takie jak pobieranie, pakowanie i wysyłka, które pracownik magazynu może wykonać, używając urządzenia przenośnego.
+Zwalnianie zamówień do magazynu to proces zarządzania magazynem (WMS). Ten proces obejmuje działania, takie jak pobieranie, pakowanie i wysyłka, które pracownik magazynu może wykonać, używając urządzenia przenośnego.
 
 ## <a name="where-it-applies"></a>Zastosowanie
 

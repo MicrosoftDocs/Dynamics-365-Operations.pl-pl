@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 949fa0df58bc3338c8bc84ecbd4f2ad17117dd12
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7c7dd90fea79ae83d238ed51b9ec1fc42e9e36b2
+ms.sourcegitcommit: f2501d93ffc1c7bf4e0daa78e63bc37528ef2358
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865274"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "9171524"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Supply Chain Management
 
@@ -31,7 +31,7 @@ Ten artykuł zostanie zaktualizowany, jeśli w systemie Dynamics 365 Supply Chai
 Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych funkcji we własnym planowaniu.
 
 > [!NOTE]
-> Szczegółowe informacje o obiektów w aplikacji Finanse i Działania można znaleźć w [raportach z wykazami parametrów technicznych](/dynamics/s-e/). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach aplikacji Finanse i Działania.
+> Szczegółowe informacje o obiektów w aplikacji finansowych i operacyjnych można znaleźć w [raportach z wykazami parametrów technicznych](/dynamics/s-e/). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach aplikacji finansowych i operacyjnych.
 
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10019-release"></a>Usunięte lub przestarzałe funkcje w wydaniu rozwiązania Supply Chain Management 10.0.19
@@ -48,11 +48,11 @@ Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych fun
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10018-release"></a>Usunięte lub przestarzałe funkcje w wydaniu rozwiązania Supply Chain Management 10.0.18
 
-### <a name="dynamics-365-for-finance-and-operations---warehousing-the-warehouse-app"></a>Dynamics 365 for Finance and Operations — Magazynowanie (aplikacja magazynowa)
+### <a name="supply-chain-management--warehousing-the-warehouse-app"></a><a name="wma"></a>Supply Chain Management- magazynowanie (aplikacja magazynowa)
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Przyczyna wycofania/usunięcia** | Z dniem 2021 kwietnia rozwiązanie *Dynamics 365 for Finance and Operations — Magazynowanie* (aplikacja magazynu) jest przestarzałe i nie będzie obsługiwane po kwietniu 2022 roku. Zostanie ona zastąpiona przez *aplikację mobilną Warehouse Management*, która została wydana w wersji 10.0.17 Supply Chain Management. Nowa aplikacja jest pełną wymianą, ale korzysta z tej samej struktury źródłowej, co ułatwia migrację. W razie potrzeby obie aplikacje mogą być używane side-by-side, aby pomagać użytkownikom stopniowo dostosowywać się do potrzeb nowej aplikacji.<br><br>Jeśli chcesz uzyskać informacje dotyczące konfigurowania aplikacji Warehouse Management, zobacz temat [aplikacji mobilnej Warehouse Management](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) i [Instalowanie i łączenie aplikacji mobilnej Zarządzanie magazynem](../warehousing/install-configure-warehouse-management-app.md). |
+| **Przyczyna wycofania/usunięcia** | Z dniem 2021 kwietnia rozwiązanie *Supply Chain Management — Magazynowanie* (aplikacja magazynu) jest przestarzałe i nie będzie obsługiwane po kwietniu 2022 roku. Zostanie ona zastąpiona przez *aplikację mobilną Warehouse Management*, która została wydana w wersji 10.0.17 Supply Chain Management. Nowa aplikacja jest pełną wymianą, ale korzysta z tej samej struktury źródłowej, co ułatwia migrację. W razie potrzeby obie aplikacje mogą być używane side-by-side, aby pomagać użytkownikom stopniowo dostosowywać się do potrzeb nowej aplikacji.<br><br>Jeśli chcesz uzyskać informacje dotyczące konfigurowania aplikacji Warehouse Management, zobacz temat [aplikacji mobilnej Warehouse Management](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) i [Instalowanie i łączenie aplikacji mobilnej Zarządzanie magazynem](../warehousing/install-configure-warehouse-management-app.md). |
 | **Zamieniona przez inną funkcję?**   | Tak, zastąpiono nową aplikacją mobilną Warehouse Management. |
 | **Powiązane obszary produktów**         | Supply Chain Management — aplikacja magazynowa |
 | **Opcja wdrażania**              | Wdrożenie w chmurze i lokalne |
@@ -98,3 +98,4 @@ Aby dowiedzieć się więcej o funkcjach, które zostały usunięte lub wycofane
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

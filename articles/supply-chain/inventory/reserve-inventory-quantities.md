@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0c407b45f3df91d569c2bf043ff9f83b640837bb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e0c0e283189998473469164398fa6f43c8e8825e
+ms.sourcegitcommit: 3a882de1f1c27654a8e92ebc1999c75678cc9a53
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8899448"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9201875"
 ---
 # <a name="reserve-inventory-quantities"></a>Rezerwowanie ilości zapasów
 
@@ -75,7 +75,7 @@ Zamówienie sprzedaży, które powinno być automatycznie zarezerwowane i dostar
 
 Na stronie **Parametry modułu Zarządzanie zapasami i magazynem** są dwie opcje związane z rezerwacjami:
 -   Opcja **Rezerwacja zamówionych pozycji** na karcie **Ogólne** umożliwia rezerwowanie przyjęć towarów, które zostały zamówione na podstawie wydań towarów w modułach Rozrachunki z odbiorcami, Zarządzanie projektami i ich księgowanie oraz Kontrola produkcji. Jeśli ta opcja jest wyczyszczona, można rezerwować tylko te towary, które zostały fizycznie przyjęte. Jeśli dla określonego towaru ustawiono opcję akceptowania ujemnego poziomu zapasów, to pole nie ma znaczenia.
--   Opcja **Rezerwuj pozycje automatycznie** na karcie **Transport** określa domyślne ustawienie, jeśli towary są automatycznie rezerwowane dla zamówień przeniesienia. Ustawienie domyślne można zastąpić w poszczególnych zamówieniach przeniesienia.
+-   Opcja **Rezerwuj pozycje automatycznie** na karcie **Transfer** określa domyślne ustawienie, jeśli towary są automatycznie rezerwowane dla zamówień przeniesienia. Ustawienie domyślne można zastąpić w poszczególnych zamówieniach przeniesienia.
 
 ### <a name="inventory-reservation-policies-on-the-production-parameters-page"></a>Zasady rezerwacji zapasów na stronie Parametry produkcji
 

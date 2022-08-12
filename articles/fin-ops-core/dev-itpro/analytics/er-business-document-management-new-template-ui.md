@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: v-anamir
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bcc464a17e27393c5904c59b8439de6ca000d57a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 208cfc91f11d4893785538ce4874e85a5725e993
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892233"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109269"
 ---
 # <a name="microsoft-office-style-user-interface-in-business-document-management"></a>Nowy interfejs użytkownika w stylu Microsoft Office dokumentu w zarządzaniu dokumentami biznesowymi
 
@@ -36,7 +36,7 @@ W przykładach w tym artykule aktywnym dostawcą jest Contoso i używasz go do s
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWAVQg]
 
-Film [Utwórz nowy dokument biznesowy za pomocą funkcji Zarządzanie dokumentami biznesowymi](https://youtu.be/gAIYl-mM_pw) (pokazany powyżej) jest dołączony do [Listy odtwarzania Finanse i Działania](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) dostępnej na stronie YouTube.
+Film [Utwórz nowy dokument biznesowy za pomocą funkcji Zarządzanie dokumentami biznesowymi](https://youtu.be/gAIYl-mM_pw) (pokazany powyżej) jest dołączony do [Listy odtwarzania aplikacji finansowych i operacyjnych](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) dostępnej na stronie YouTube.
 
 ## <a name="make-the-new-document-ui-in-business-document-management-available"></a>Udostępnij interfejs użytkownika nowego dokumentu w zarządzaniu dokumentami biznesowymi
 
@@ -145,3 +145,4 @@ Ten przykład pokazuje, jak możesz użyć przycisku **Nowy dokument** w obszarz
 7. Wybierz **OK**, aby potwierdzić rozpoczęcie procesu edycji.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

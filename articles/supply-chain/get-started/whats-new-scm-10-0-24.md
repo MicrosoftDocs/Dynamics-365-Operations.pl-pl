@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 94e465616338b0c905ccf6b8244324c18c7a59e8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f8864ac22153908492b5e7c30a03617e6dc9d05a
+ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849453"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9166884"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10024-february-2022"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.24 (luty 2022 r.)
 
@@ -46,7 +46,7 @@ Aby włączyć lub wyłączyć te funkcje, należy przejść do obszaru [zarząd
 | Moduł | Nazwa funkcji w zarządzaniu funkcjami | Więcej informacji |
 |---|---|---|
 | Kontrola produkcji | Sprawdzanie dostępności materiałów na żądanie dla zleceń produkcyjnych | Ta funkcja przyspiesza otwieranie strony **Zlecenia produkcyjne do zwolnienia** dostępnej w obszarze roboczym **Zarządzanie halą produkcyjną**. Bez tej funkcji system automatycznie sprawdza, czy materiały są dostępne dla wszystkich wymienionych zleceń produkcyjnych po otwarciu strony, co może potrwać znacznie dłużej w przypadku dużej liczby zleceń. Gdy ta funkcja jest włączona, w systemie jest wyświetlany przycisk paska narzędzi, który umożliwia inicjowanie sprawdzania materiałów tylko w razie potrzeby i tylko dla wybranych zamówień. |
-| Kontrola produkcji | (Wersja zapoznawcza) Rejestrowanie zużycia materiału w interfejsie wykonania hal produkcyjnych (inne niż WMS) | Ta funkcja umożliwia pracownikom używanie interfejsu wykonywania produkcji do rejestrowania zużycia materiałów, numerów partii i numerów seryjnych. Ta funkcja obsługuje tylko pozycje, dla których nie włączono obsługi zaawansowanych procesów magazynowych (WMS). Obsługa pozycji z obsługą usług WMS jest zaplanowana w przyszłym wydaniu.<p>Niektórzy producenci, w szczególności branże zajmujące się przetwarzaniem, muszą jawnie rejestrować ilość zużytych materiałów dla poszczególnych partii lub zlecenia produkcyjnego. Na przykład pracownicy mogą używać wagi do zważenia ilości zużytego materiału podczas pracy. Aby zapewnić pełne śledzenie materiałów, organizacje te muszą także zarejestrować numery partii zużyte podczas produkcji każdego produktu. |
+| Kontrola produkcji | Rejestrowanie zużycia materiału w interfejsie wykonania hal produkcyjnych (inne niż WMS) | Ta funkcja umożliwia pracownikom używanie interfejsu wykonywania produkcji do rejestrowania zużycia materiałów, numerów partii i numerów seryjnych. Ta funkcja obsługuje tylko pozycje, dla których nie włączono obsługi procesów magazynowych (WMS). Obsługa pozycji z obsługą usług WMS jest zaplanowana w przyszłym wydaniu.<p>Niektórzy producenci, w szczególności branże zajmujące się przetwarzaniem, muszą jawnie rejestrować ilość zużytych materiałów dla poszczególnych partii lub zlecenia produkcyjnego. Na przykład pracownicy mogą używać wagi do zważenia ilości zużytego materiału podczas pracy. Aby zapewnić pełne śledzenie materiałów, organizacje te muszą także zarejestrować numery partii zużyte podczas produkcji każdego produktu. |
 | Kontrola produkcji | Zgłaszanie pozycji jako gotowych w obciążeniach zarządzania magazynem dla jednostek skalowania chmury i urządzenia brzegowego | Ta funkcja pozwala pracownikom używać aplikacji mobilnej Warehouse Management do zgłaszania zamówień produkcyjnych lub zamówień partii jako zakończonych, gdy aplikacja jest uruchamiana z obciążeniem pracą zarządzania magazynem w jednostce skalowania chmurze lub na urządzeniu brzegowym. Aby uzyskać więcej informacji, zobacz [Zgłoś jako gotowe i odłóż na jednostce skalowania](../cloud-edge/cloud-edge-workload-manufacturing.md#RAF)wagi. |
 | Zarządzanie magazynem | Nowe strony pulpitu planowania wysyłki ładunku | Włącza dwie nowe strony pulpitu planowania wysyłki ładunku: **Pulpit planowania wysyłki ładunku przychodzącego** i **Pulpit planowania wysyłki ładunku wychodzącego**. |
 
@@ -68,9 +68,9 @@ Niedawno dodano lub znacząco zaktualizowano następujące artykuły pomocy. Te 
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizacja Platform dla aplikacji Finanse i Działania
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizacja Platform dla aplikacji finansowych i operacyjnych
 
-Pakiet Microsoft Dynamics 365 Supply Chain Management 10.0.24 zawiera aktualizację platformy. Aby dowiedzieć się więcej, zobacz [aktualizacje platformy dla wersji 10.0.24 aplikacji Finanse i Działania (luty 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
+Pakiet Microsoft Dynamics 365 Supply Chain Management 10.0.24 zawiera aktualizację platformy. Aby dowiedzieć się więcej, zobacz [aktualizacje platformy dla wersji 10.0.24 aplikacji finansowych i operacyjnych (luty 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
@@ -94,3 +94,4 @@ Zanim jakakolwiek funkcja zostanie usunięta z produktu, powiadomienie o zaniech
 W przypadku zmian, które wpływają tylko na czas kompilacji, ale są zgodne z trybem piaskownicy i środowiskami produkcyjnymi, czas niezgodności będzie krótszy niż 12 miesięcy. Zazwyczaj są to aktualizacje funkcjonalne, które należy wykonać w kompilatorze.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

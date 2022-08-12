@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0144be929045b385c58dd29f6241330fc1092f0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3478e8c712c7bcbfb8ace9e7b43f0d8d3cf4ac8a
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8862490"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069161"
 ---
 # <a name="ship-sales-orders-without-warehousing"></a>Wysyłanie towarów z zamówień sprzedaży bez przekazywania do magazynu
 
 [!include [banner](../../includes/banner.md)]
 
-W tym artykule zilustrowano sposób aktualizacji zamówienia sprzedaży, gdy produkty są wysyłane do odbiorcy. Przewodnik ma zastosowanie do przepływu realizacji, który nie jest skonfigurowany dla zarządzania magazynem (podstawowego ani zaawansowanego), a zatem nie wymaga, aby przed wysyłką zostało zarejestrowane pobranie produktu. Można wykonać tę procedurę przy użyciu danych własnych lub firmy demonstracyjnej USMF. W obu przypadkach przed rozpoczęciem tego zadania utwórz zamówienie sprzedaży na produkty magazynowe z ilością większą od 1. Aby uniknąć błędu księgowania, należy sprawdzić, czy ilość dostępnych zapasów produktu w oddziale i magazynie wybranych w zamówieniu pokrywa ilość zamówienia.
+W tym artykule zilustrowano sposób aktualizacji zamówienia sprzedaży, gdy produkty są wysyłane do odbiorcy. Przewodnik ma zastosowanie do przepływu realizacji, który nie jest skonfigurowany dla procesów zarządzania magazynem (WMS), a zatem nie wymaga, aby przed wysyłką zostało zarejestrowane pobranie produktu. Można wykonać tę procedurę przy użyciu danych własnych lub firmy demonstracyjnej USMF. W obu przypadkach przed rozpoczęciem tego zadania utwórz zamówienie sprzedaży na produkty magazynowe z ilością większą od 1. Aby uniknąć błędu księgowania, należy sprawdzić, czy ilość dostępnych zapasów produktu w oddziale i magazynie wybranych w zamówieniu pokrywa ilość zamówienia.
 
 ## <a name="post-packing-slip-for-an-order"></a>Księgowanie dokumentu dostawy dla zamówienia
 1. W okienku nawigacji przejdź do **Moduły > Sprzedaż i marketing >Wszystkie zamówienia sprzedaży**.

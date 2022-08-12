@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 4b63ac8a09efb9ab449b651d030bd14a24d5cc36
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b81eb8e0be4c7d7357a6b8b7b5f0ac025b9ab8ca
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850086"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124267"
 ---
 # <a name="alerts-overview"></a>Omówienie alertów
 
@@ -77,13 +77,13 @@ Reguła alertu ma pięć składników:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3DWZ3]
 
-Film wideo [Sposób używania alertów do monitorowania filtrowanych danych](https://youtu.be/ZYKMcv6kl9s) (pokazany powyżej) znajduje się [na liście odtwarzania Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) dostępnej na platformie YouTube.
+Film wideo [Sposób używania alertów do monitorowania filtrowanych danych](https://youtu.be/ZYKMcv6kl9s) (pokazany powyżej) znajduje się [na liście odtwarzania aplikacji finansowych i operacyjnych](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) dostępnej na platformie YouTube.
 
 ### <a name="alert-rule-options"></a>Opcje reguł alertów
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3E4PV]
 
-Film wideo [Opcje reguł alertów](https://youtu.be/cpzimwOjicM) (widoczny powyżej) jest zawarty na [liście odtwarzania Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) dostępnej na platformie YouTube.
+Film wideo [Opcje reguł alertów](https://youtu.be/cpzimwOjicM) (widoczny powyżej) jest zawarty na [liście odtwarzania aplikacji finansowych i operacyjnych](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) dostępnej na platformie YouTube.
 
 
 

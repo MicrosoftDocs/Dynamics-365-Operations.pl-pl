@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-12-16
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: ff01e2ff8ec105603bb91e0b555301f36e8985b4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: aad48fbd3ee2f28f39f6061b5e922f5c4f47c8f6
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867337"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103529"
 ---
 # <a name="run-custom-x-scripts-with-zero-downtime"></a>Uruchamiaj własne skrypty X++ z zerowym czasem przestoju
 
@@ -120,7 +120,7 @@ Poniższa lista opisuje kilka najlepszych praktyk skutecznego pisania, wdrażani
 
 Użyj poniższej procedury, aby załadować i uruchomić skrypt.
 
-1. W aplikacji Finanse i Działania przejdź do zakładki **Administracja systemu \> Zadania okresowe \> Baza danych \> Skrypty własne**.
+1. W aplikacjach finansowych i operacyjnych przejdź do zakładki **Administracja systemu \> Zadania okresowe \> Baza danych \> Skrypty własne**.
 1. Wybierz pozycję **Przekaż**.
 1. Wybierz pakiet instalacyjny, który utworzyłeś tak, jak opisano wcześniej w tym artykule. Zostanie wyświetlony monit o określenie celu skryptu.
 1. Skrypt musi być teraz zatwierdzony przez innego użytkownika niż ten, który go załadował. Zatwierdzający musi wykonać poniższe kroki:
@@ -149,6 +149,7 @@ Twój wybór w ostatnim kroku definiuje ostateczny stan skryptu. Możesz powtarz
 
 ## <a name="upload-and-run-a-deployable-package-through-lcs"></a>Prześlij i uruchom pakiet instalacyjny przez LCS
 
-Zamiast wdrożenia pakietu przez interfejs użytkownika twojej aplikacji Finanse i Działania, jak opisano w poprzedniej sekcji, możesz wgrać go do LCS i użyć normalnej procedury, aby go wdrożyć. Więcej informacji: [Instalowanie wdrażalnych pakietów z wiersza polecenia](../deployment/install-deployable-package.md).
+Zamiast wdrożenia pakietu przez interfejs użytkownika Twoich aplikacji finansowych i operacyjnych, jak opisano w poprzedniej sekcji, możesz wgrać go do LCS i użyć normalnej procedury, aby go wdrożyć. Więcej informacji: [Instalowanie wdrażalnych pakietów z wiersza polecenia](../deployment/install-deployable-package.md).
 
 Chociaż to podejście ma mniej ograniczeń, to zapewnia mniejszą ochronę przed błędami. Dodatkowo, ponieważ wymaga to restartu wszystkich serwerów, spowoduje to pewne przestoje.
+

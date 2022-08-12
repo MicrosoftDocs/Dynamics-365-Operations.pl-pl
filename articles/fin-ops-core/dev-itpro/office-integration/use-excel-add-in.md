@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8a05c34454e27244bb08bfff84f2ada6ff498f23
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 388be651164af622dbabd7b2c7b3437233454bea
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8862163"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108610"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Wyświetlanie i aktualizowanie danych jednostki przy użyciu programu Excel 
 
@@ -31,7 +31,7 @@ ms.locfileid: "8862163"
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 
-W tym artykule wyjaśniono, jak otwierać dane jednostek w programie Microsoft Excel, a następnie wyświetlać, aktualizować i edytować te dane przy użyciu dodatku programu Excel dla usługi Microsoft Dynamics. Aby otworzyć dane jednostki, można zacząć z poziomu programu Excel lub aplikacjach Finanse i Działania.
+W tym artykule wyjaśniono, jak otwierać dane jednostek w programie Microsoft Excel, a następnie wyświetlać, aktualizować i edytować te dane przy użyciu dodatku programu Excel dla usługi Microsoft Dynamics. Aby otworzyć dane jednostki, można zacząć z poziomu programu Excel lub aplikacjach finansowych i operacyjnych.
 
 Otwierając dane jednostek w programie Excel, można łatwo i szybko wyświetlić i edytować te dane przy użyciu dodatku dla programu Excel. Ten dodatek wymaga programu Microsoft Excel 2016 lub nowszego.
 
@@ -40,15 +40,15 @@ Otwierając dane jednostek w programie Excel, można łatwo i szybko wyświetli�
 
 Aby dowiedzieć się więcej na temat sposobu używania dodatku programu Excel, obejrzyj film [Tworzenie szablonu programu Excel dla wzorców nagłówków i wierszy](https://youtu.be/RTicLb-6dbI).
 
-## <a name="open-entity-data-in-excel-when-you-start-from-a-finance-and-operations-app"></a>Otwieranie danych jednostki w programie Excel przy rozpoczynaniu z aplikacji Finanse i Działania
-1. Na stronie w aplikacji Finanse i Działania wybierz opcję **Otwórz w pakiecie Microsoft Office**.
+## <a name="open-entity-data-in-excel-when-you-start-from-a-finance-and-operations-app"></a>Otwieranie danych jednostki w programie Excel przy rozpoczynaniu z aplikacji finansowych i operacyjnych
+1. Na stronie w aplikacji finansowych i operacyjnych wybierz opcję **Otwórz w pakiecie Microsoft Office**.
 
     Jeśli główne źródło danych (tabela) na stronie jest takie same, jak główne źródło danych którychkolwiek jednostek, dla strony zostaną wygenerowane domyślnie opcje **Otwórz w programie Excel**. Opcje **Otwórz w programie Excel** można znaleźć na często używanych stronach, takich jak **Wszyscy dostawcy** i **Wszyscy odbiorcy**.
  
 2. Wybierz opcję **Otwórz w programie Excel**, a następnie otwórz wygenerowany skoroszyt. Ten skoroszyt zawiera informacje o powiązaniu jednostki, wskaźnik do środowiska oraz wskaźnik do dodatku programu Excel.
 3. W programie Excel wybierz opcję **Włącz edytowanie**, co umożliwi uruchamianie dodatku programu Excel. Dodatek programu Excel jest uruchamiany w okienku z prawej strony okna programu Excel.
 4. Jeśli uruchamiasz dodatek programu Excel po raz pierwszy, wybierz opcję **Ufaj temu dodatkowi**.
-5. Jeśli zostanie wyświetlony monit o zalogowanie, wybierz opcję **Zaloguj**, a następnie zaloguj się przy użyciu tych samych poświadczeń, jak używane do logowania w aplikacji Finanse i Działania. Jeżeli jest to możliwe, dodatek programu Excel użyje poprzedniego kontekstu logowania z przeglądarki i automatycznie Cię zaloguje. (Aby uzyskać informacje o przeglądarce używanej na podstawie systemu operacyjnego, zobacz temat [Przeglądarki używane przez dodatki pakietu Office](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins). Aby upewnić się, że logowanie się powiodło, należy sprawdzić nazwę użytkownika w prawym górnym rogu dodatku programu Excel. 
+5. Jeśli zostanie wyświetlony monit o zalogowanie, wybierz opcję **Zaloguj**, a następnie zaloguj się przy użyciu tych samych poświadczeń, jak używane do logowania w aplikacjach finansowych i operacyjnych. Jeżeli jest to możliwe, dodatek programu Excel użyje poprzedniego kontekstu logowania z przeglądarki i automatycznie Cię zaloguje. (Aby uzyskać informacje o przeglądarce używanej na podstawie systemu operacyjnego, zobacz temat [Przeglądarki używane przez dodatki pakietu Office](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins). Aby upewnić się, że logowanie się powiodło, należy sprawdzić nazwę użytkownika w prawym górnym rogu dodatku programu Excel. 
 
 Dodatek programu Excel automatycznie odczytuje dane wybranej jednostki. Należy zauważyć, że nie będzie żadnych danych w skoroszycie, dopóki dodatek programu Excel ich nie wczyta.
 
@@ -57,7 +57,7 @@ Dodatek programu Excel automatycznie odczytuje dane wybranej jednostki. Należy 
 2. W Sklepie Office wyszukaj według słowa kluczowego **Dynamics**, a następnie wybierz opcję **Dodaj** obok pozycji **Dodatek pakietu Office dla usługi Microsoft Dynamics** (dodatek programu Excel).
 3. Jeśli uruchamiasz dodatek programu Excel po raz pierwszy, wybierz opcję **Ufaj temu dodatkowi**, co umożliwi uruchamianie dodatku. Dodatek programu Excel jest uruchamiany w okienku z prawej strony okna programu Excel.
 4. Wybierz opcję **Dodaj informacje dotyczące serwera**, co spowoduje otwarcie okienka **Opcje**.
-5. W przeglądarce skopiuj adres URL docelowego wystąpienia aplikacji Finanse i Działania, wklej go w polu **Adres URL serwera**, a następnie usuń wszystko po nazwie hosta. Powstały adres URL powinien zawierać tylko nazwę hosta.
+5. W przeglądarce skopiuj adres URL docelowego wystąpienia aplikacji finansowych i operacyjnych, wklej go w polu **Adres URL serwera**, a następnie usuń wszystko po nazwie hosta. Powstały adres URL powinien zawierać tylko nazwę hosta.
 
     Jeżeli na przykład adres URL to `https://xxx.dynamics.com/?cmp=usmf&amp;mi=CustTableListPage`, usuń wszystko oprócz `https://xxx.dynamics.com`.
 
@@ -76,7 +76,7 @@ Dodatek programu Excel automatycznie odczytuje dane wybranej jednostki. Należy 
 Gdy dodatek programu Excel wczyta dane jednostki do skoroszytu, można w dowolnym momencie aktualizować te dane, wybierając opcję **Odśwież** w dodatku programu Excel.
 
 ## <a name="edit-entity-data-in-excel"></a>Edytowanie danych jednostki w programie Excel
-Można zmienić dane jednostki w żądany sposób, a następnie opublikować je ponownie w aplikacjach Finanse i Działania, wybierając opcję **Opublikuj** w dodatku programu Excel. Aby zmodyfikować rekord, zaznacz komórkę w arkuszu, a następnie zmień wartość komórki. Aby dodać nowy rekord, wykonaj jedną z następujących czynności:
+Można zmienić dane jednostki w żądany sposób, a następnie opublikować je ponownie w aplikacjach finansowych i operacyjnych, wybierając opcję **Opublikuj** w dodatku programu Excel. Aby zmodyfikować rekord, zaznacz komórkę w arkuszu, a następnie zmień wartość komórki. Aby dodać nowy rekord, wykonaj jedną z następujących czynności:
 
 - Kliknij w dowolnym miejscu tabeli źródeł danych, a następnie wybierz opcję **Nowy** w dodatku programu Excel.
 - Kliknij gdziekolwiek w ostatnim wierszu tabeli źródeł danych, a następnie naciskaj klawisz Tab, aż kursor znajdzie się poza ostatnią kolumną tego wiersza i zostanie utworzony nowy wiersz.
@@ -146,3 +146,4 @@ Istnieje kilka problemów, które można rozwiązać poprzez wykonanie kilku pro
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

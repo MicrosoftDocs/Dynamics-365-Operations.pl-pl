@@ -1,7 +1,7 @@
 ---
 title: Omówienie rozliczeń w płatnościach scentralizowanych
 description: W tym artykule opisano rozliczanie scentralizowanych płatności w Microsoft Dynamics 365 Finance.
-author: abruer
+author: angelad116
 ms.date: 08/02/2018
 ms.topic: overview
 ms.prod: ''
@@ -14,15 +14,15 @@ ms.custom:
 - intro-internal
 ms.assetid: 610f6858-0f37-4d0f-8c68-bab5a971ef4a
 ms.search.region: Global
-ms.author: abruer
+ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5d5610b2a2fd62331c41ea9e1f25888128404f80
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ef71520df5cdae192355e512238d03c1f21b901f
+ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8899879"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "9151184"
 ---
 # <a name="settlement-overview-for-centralized-payments"></a>Omówienie rozliczeń w płatnościach scentralizowanych
 

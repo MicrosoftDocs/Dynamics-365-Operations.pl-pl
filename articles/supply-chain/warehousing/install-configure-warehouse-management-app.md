@@ -16,19 +16,16 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 9bd208ba78d28046782d03221b0f23471f56b574
-ms.sourcegitcommit: 3f544f8671821be915b289a614e4e440bd38994f
+ms.openlocfilehash: ec2a9f5ca6d6735e675defda6782738da7814c01
+ms.sourcegitcommit: f2501d93ffc1c7bf4e0daa78e63bc37528ef2358
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "8941774"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "9171464"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Instalowanie i łączenie aplikacji mobilnej Warehouse Management
 
 [!include [banner](../includes/banner.md)]
-
-> [!NOTE]
-> W tym artykule opisano, jak skonfigurować nową aplikację mobilną Zarządzanie magazynem. Jeśli chcesz, aby uzyskać informacje dotyczące konfigurowania starej aplikacji magazynowej (obecnie przestarzała), zobacz temat [Instalowanie i łączenie aplikacji magazynu](../../supply-chain/warehousing/install-configure-warehousing-app.md).
 
 W tym artykule opisano sposób pobierania i instalowania aplikacji mobilnej Zarządzanie magazynem na każdym urządzeniu przenośnym i konfigurowania jej w celu nawiązania połączenia ze środowiskiem aplikacji Supply Chain Management. Poszczególne urządzenia można konfigurować ręcznie lub można importować ustawienia połączenia za pośrednictwem pliku lub przez skanowanie kodu QR.
 

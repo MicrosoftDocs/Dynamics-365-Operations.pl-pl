@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-07-12
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 259004773c4e5a7d8865d563da9bcfea3a116632
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d7fb922a35504b69aa8cc3d92cb981e8fb060290
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870966"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067595"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-july-12-2021"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources 12 lipca 2021
 
@@ -80,7 +80,7 @@ Następujące nowe funkcje są dostępne w wersji zapoznawczej. Aby uzyskać inf
 
 | Funkcja | Szczegóły |
 | --- | --- |
-| Aktualizacja Platform Update 10.0.20 (44) | Aktualizacja platformy z 10.0.20 ma się rozpocząć w następnym wydaniu serwisowym w dniu 26 lipca 2021. Aby uzyskać więcej informacji, zobacz temat [Aktualizacje platformy dla wersji 10.0.20 aplikacji Finanse i Działania (sierpień 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20). |
+| Aktualizacja Platform Update 10.0.20 (44) | Aktualizacja platformy z 10.0.20 ma się rozpocząć w następnym wydaniu serwisowym w dniu 26 lipca 2021. Aby uzyskać więcej informacji, zobacz temat [Aktualizacje platformy dla wersji 10.0.20 aplikacji finansowych i operacyjnych (sierpień 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20). |
 
 Aby uzyskać pełną listę zaplanowanych funkcji i ich zaplanowanych wersji, zajrzyj do [omówienia Dynamics 365 Human Resources 2021 wydanie 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
 
@@ -92,3 +92,4 @@ Aby uzyskać pełną listę zaplanowanych funkcji i ich zaplanowanych wersji, za
 [Zarządzanie funkcjami](hr-admin-manage-features.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

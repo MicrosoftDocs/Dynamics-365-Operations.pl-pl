@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: fb81aa058e749df346ee87bbe83427b20b234b72
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d7dc45e56c5fa616c288ebb4b919f039b7358794
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898406"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123663"
 ---
 # <a name="embed-canvas-apps-from-power-apps"></a>Osadzone aplikacje kanwy z Power Apps
 
@@ -27,7 +27,7 @@ ms.locfileid: "8898406"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Usługa Microsoft Power Apps to usługa, która umożliwia deweloperom i użytkownikom nietechnicznym tworzenie niestandardowych aplikacji biznesowych dla urządzeń przenośnych, tabletów i sieci Web bez pisania kodu. Aplikacje Finanse i Działania wspierają integrację z Power Apps. Aplikacje kanwy, które tworzysz Ty, Twoja organizacja lub szerszy ekosystem, można osadzać w aplikacjach Finanse i Działania, aby zwiększyć funkcjonalność produktu. Na przykład można utworzyć aplikację kanwy Power Apps celem uzupełnienia aplikacji Finanse i Działania o informacje pobrane z innego systemu.
+Usługa Microsoft Power Apps to usługa, która umożliwia deweloperom i użytkownikom nietechnicznym tworzenie niestandardowych aplikacji biznesowych dla urządzeń przenośnych, tabletów i sieci Web bez pisania kodu. Aplikacje finansowe i operacyjne wspierają integrację z Power Apps. Aplikacje kanwy, które tworzysz Ty, Twoja organizacja lub szerszy ekosystem, można osadzać w aplikacjach finansowych i operacyjnych, aby zwiększyć funkcjonalność produktu. Na przykład można utworzyć aplikację kanwy Power Apps celem uzupełnienia aplikacji finansowych i operacyjnych o informacje pobrane z innego systemu.
 
 Aby uzyskać więcej informacji o osadzaniu aplikacji kanwy, obejrzyj krótki film [Jak osadzać aplikacje kanwy](https://www.youtube.com/watch?v=x3qyA1bH-NY).
 
@@ -35,7 +35,7 @@ Aby uzyskać więcej informacji o osadzaniu aplikacji kanwy, obejrzyj krótki fi
 
 Przed osadzeniem aplikacji kanwy z Power Apps w kliencie musisz znaleźć lub skompilować aplikację, która ma żądane wizualizacje lub funkcje. Ten artykuł nie zawiera szczegółowego opisu procesu kompilowania aplikacji. Jeśli jesteś nowym użytkownikiem Power Apps, zajrzyj do [dokumentacja Power Apps](/powerapps/).
 
-Istnieją trzy sposoby osadzania aplikacji kanwy w aplikacji Finanse i Działania. Możesz użyć podejścia, które najlepiej pasuje do danego scenariusza. 
+Istnieją trzy sposoby osadzania aplikacji kanwy w aplikacji finansowych i operacyjnych. Możesz użyć podejścia, które najlepiej pasuje do danego scenariusza. 
 
 - Osadzanie aplikacji kanwy w przycisku **Power Apps** w standardowym okienku akcji strony. Aplikacje dodawane w ten sposób są wyświetlane jako elementy w przycisku menu **Power Apps**, a aplikacje otwierane są w okienkach bocznych. 
 - Osadzanie aplikacji kanwy bezpośrednio na istniejącej stronie jako nowej karty (karta przestawna, karta skrócona, blok albo sekcja obszaru roboczego).
@@ -68,7 +68,7 @@ W następującej procedurze pokazano sposób osadzania aplikacji kanwy na istnie
 
 ### <a name="embedding-a-canvas-app-as-a-full-page-experience-from-the-dashboard"></a>Osadzanie aplikacji kanwy jako środowiska na pełnej stronie z pulpitu nawigacyjnego
 
-Aplikację kanwy można chcieć osadzić z pulpitu nawigacyjnego, jeśli nie jest ona powiązana z istniejącą stroną lub chcesz, aby była ona wyświetlana jako środowisko na pełnej stronie w obrębie aplikacji Finanse i Działania.
+Aplikację kanwy można chcieć osadzić z pulpitu nawigacyjnego, jeśli nie jest ona powiązana z istniejącą stroną lub chcesz, aby była ona wyświetlana jako środowisko na pełnej stronie w obrębie aplikacji finansowych i operacyjnych.
 
 > [!NOTE]
 > Jest to możliwe pod warunkiem włączenia funkcji **Aplikacje dla całej strony** w zarządzaniu funkcjami. 
@@ -107,15 +107,15 @@ Po osadzeniu aplikacji kanwy na stronie i potwierdzeniu, że działa ona poprawn
     - Jeśli funkcja **Zapisane widoki** jest wyłączona, administrator systemu może przekazać personalizację, która zawiera aplikację kanwy, odpowiedniemu zestawowi użytkowników, korzystając ze strony **Personalizacja**. Można również wyeksportować personalizacje strony i wysłać je do jednego lub kilku użytkowników. Każdy z tych użytkowników może następnie zaimportować personalizację. Pasek narzędzi personalizacji zawiera przyciski umożliwiające eksportowanie i importowanie personalizacji.
 
 > [!NOTE]
-> Jeśli aplikacja kanwy została udostępniona użytkownikom zewnętrznym, użytkownicy ci nie mogą skorzystać z aplikacji osadzonej w aplikacjach Finanse i Działania. Użytkownicy mogą jednak uzyskać dostęp do aplikacji bezpośrednio w Power Apps. Użytkownicy zewnętrzni to goście i użytkownicy, którzy nie należą do katalogu Microsoft 365 Azure, gdzie aplikacja Finanse i Działania jest wdrożona.
+> Jeśli aplikacja kanwy została udostępniona użytkownikom zewnętrznym, użytkownicy ci nie mogą skorzystać z aplikacji osadzonej w aplikacjach finansowych i operacyjnych. Użytkownicy mogą jednak uzyskać dostęp do aplikacji bezpośrednio w Power Apps. Użytkownicy zewnętrzni to goście i użytkownicy, którzy nie należą do katalogu Microsoft 365 Azure, gdzie aplikacja finansowa i operacyjna jest wdrożona.
 
 Temat [Personalizowanie środowiska użytkownika](personalize-user-experience.md) zawiera więcej informacji o funkcjach personalizacji w produkcie oraz o sposobach ich używania.
 
-## <a name="building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps"></a>Budowanie aplikacji kanwy, która korzysta z danych wysyłanych z aplikacji Finanse i Działania
+## <a name="building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps"></a>Budowanie aplikacji kanwy, która korzysta z danych wysyłanych z aplikacji finansowych i operacyjnych
 
-Podczas tworzenia aplikacji kanwy, która zostanie osadzona w aplikacji Finanse i Działania, ważną częścią procesu jest użycie danych wejściowych z tej aplikacji Finanse i Działania. Ze środowiska programistycznego Power Apps można uzyskać dostęp do danych wejściowych przekazywanych z poziomu aplikacji Finanse i Działania za pomocą zmiennej **Param("EntityId")**. Ponadto, Począwszy od wersji 10.0.19 bieżąca osoba prawna będzie również przekazywana do aplikacji kanwy za pośrednictwem zmiennej **Param(cmp)**. 
+Podczas tworzenia aplikacji kanwy, która zostanie osadzona w aplikacjach finansowych i operacyjnych, ważną częścią procesu jest użycie danych wejściowych z tej aplikacji finansowej i operacyjnej. Ze środowiska programistycznego Power Apps można uzyskać dostęp do danych wejściowych przekazywanych z poziomu aplikacji finansowych i operacyjnych za pomocą zmiennej **Param("EntityId")**. Ponadto, Począwszy od wersji 10.0.19 bieżąca osoba prawna będzie również przekazywana do aplikacji kanwy za pośrednictwem zmiennej **Param(cmp)**. 
 
-Na przykład w funkcji OnStart wewnątrz aplikacji można ustawić dane wejściowe z aplikacji Finanse i Działania w następujący sposób:
+Na przykład w funkcji OnStart wewnątrz aplikacji można ustawić dane wejściowe z aplikacji finansowych i operacyjnych w następujący sposób:
 
 ``` Power Apps
 If(!IsBlank(Param("EntityId")), Set(FinOpsInput, Param("EntityId")), Set(FinOpsInput, ""));
@@ -125,7 +125,7 @@ If(!IsBlank(Param("cmp")), Set(FinOpsLegalEntity, Param("cmp")), Set(FinOpsLegal
 
 ## <a name="viewing-a-canvas-app"></a>Wyświetlanie aplikacji kanwy
 
-Aby wyświetlić osadzoną aplikację kanwy na stronie Finanse i Działania, po prostu przejdź do strony z osadzoną aplikacją. Pamiętaj, że dostęp do aplikacji można uzyskać za pomocą przycisku **Power Apps** w standardowym okienku akcji. Alternatywnie mogą być wyświetlane bezpośrednio na stronie w postaci nowej karty lub karty skróconej, lub bloku, lub nowej sekcji w obszarze roboczym. Podczas pierwszej próby załadowania aplikacji na stronie przez użytkowników zostanie wyświetlony monit o zalogowanie się. Ten krok gwarantuje, że użytkownicy mają odpowiednie uprawnienia do korzystania z aplikacji.
+Aby wyświetlić osadzoną aplikację kanwy na stronie aplikacji finansowych i operacyjnych, po prostu przejdź do strony z osadzoną aplikacją. Pamiętaj, że dostęp do aplikacji można uzyskać za pomocą przycisku **Power Apps** w standardowym okienku akcji. Alternatywnie mogą być wyświetlane bezpośrednio na stronie w postaci nowej karty lub karty skróconej, lub bloku, lub nowej sekcji w obszarze roboczym. Podczas pierwszej próby załadowania aplikacji na stronie przez użytkowników zostanie wyświetlony monit o zalogowanie się. Ten krok gwarantuje, że użytkownicy mają odpowiednie uprawnienia do korzystania z aplikacji.
 
 ## <a name="editing-an-embedded-app"></a>Edytowanie osadzonej aplikacji
 
@@ -184,3 +184,4 @@ public final class ClassTest_Extension
 ```
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

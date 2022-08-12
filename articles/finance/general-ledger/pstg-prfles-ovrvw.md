@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e7ef3be13e82ff3722fc81247b5cd581b0b571b0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 91078352b6376ee99e7d9ce4546ed200cb80a25a
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876132"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135852"
 ---
-# <a name="posting-profiles-overview"></a>Omówienie publikowania profili
+# <a name="posting-profiles-overview"></a>Omówienie profili księgowania
 
-W aplikacjach Finanse i Operacje termin *Profile księgowania* służy do opisywania konfiguracji sterujących konwersją kont księgi podrzędnej na konta główne, dzięki czemu można ich używać w transakcjach księgowanych w księdze głównej. Na przykład kontrolują one sposób konwersji odbiorcy na konto główne rozrachunków z odbiorcami podczas zaksięgowania faktury.
+W aplikacjach finansowych i operacyjnych termin *Profile księgowania* służy do opisywania konfiguracji sterujących konwersją kont księgi podrzędnej na konta główne, dzięki czemu można ich używać w transakcjach księgowanych w księdze głównej. Na przykład kontrolują one sposób konwersji odbiorcy na konto główne rozrachunków z odbiorcami podczas zaksięgowania faktury.
 
 Niektóre moduły i funkcje zawierają stronę, która zawiera słowo „Profil księgowania” w nazwie (na przykład **Profil księgowania odbiorcy** lub **Profil księgowania dostawcy**). Ponadto w niektórych modułach jest dostępnych wiele opcji konfigurowania księgowania w księdze dla transakcji generowanych z księgi podrzędnej. Na przykład w module **Kontrola produkcji** można skonfigurować księgowanie według grupy produkcji, zasobu lub grupy zasobów.
 
@@ -34,7 +34,7 @@ Przed skonfigurowaniem profilów księgowania, definicji księgowania lub kont d
 
 ## <a name="posting-types"></a>Typy księgowania
 
-W aplikacjach Finanse i Operacje typ księgowania służy do definiowania ogólnej kategorii debetu lub kredytu. Ta kategoria jest niezależna od konta głównego w księdze głównej. Istnieją typy księgowania dla każdego debetu lub kredytu w księdze głównej.
+W aplikacjach finansowych i operacyjnych typ księgowania służy do definiowania ogólnej kategorii debetu lub kredytu. Ta kategoria jest niezależna od konta głównego w księdze głównej. Istnieją typy księgowania dla każdego debetu lub kredytu w księdze głównej.
 
 Jeden załącznik może mieć jeden lub więcej typów księgowania. Na przykład transakcja księgowana za pośrednictwem arkusza księgi głównej, dla której ustawieniem konta i konta przeciwstawnego jest **Księga**, będzie mieć typ księgowania **Arkusz księgi** zarówno dla księgowania debetowego, jak i kredytowego. Natomiast faktura od dostawcy będzie mieć wiele typów księgowania. Te typy księgowania będą zawierać jeden wiersz dla salda dostawcy i dodatkowe wiersze dla zapisu przeciwstawne, takie jak **arkusz księgi**.
 
@@ -111,13 +111,14 @@ Wiele modułów w Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dy
 - Księgowanie zarządzania wydatkami (wkrótce)
 - [Profil księgowania środków trwałych](../fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md)
 - Księgowanie księgowania międzyfirmowego (wkrótce)
-- Profil księgowania zapasów (wkrótce)
+- [Księgowanie zapasów](inventory-posting.md)
 - [Księgowość dot. kosztów z wyładunkiem](../../supply-chain/landed-cost/costing-parameters-setup.md)
 - [Omówienie definicji księgowania](posting-definitions.md)
-- Księgowanie kontroli produkcji (wkrótce)
+- [Księgowanie produkcji](production-posting.md)
 - Zarządzanie projektami i księgowanie księgowe (wkrótce)
 - Księgowanie zarządzania usługami (wkrótce)
 - Księgowanie podatku (wkrótce)
 - Księgowanie w czasie i frekwencji (wkrótce)
 - Księgowanie zarządzania transportem (wkrótce)
 - Profile publikowania zarządzania rabatami (wkrótce)
+

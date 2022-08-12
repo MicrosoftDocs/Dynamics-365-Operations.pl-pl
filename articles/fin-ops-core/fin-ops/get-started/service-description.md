@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 756895ab0ccdbd2bc42f0a750ad9895ee7b284a4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9e5160cc3961703475ffb8dc4a4daf2ae872aaba
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847168"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124935"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Opis usługi dla aplikacji finansowych i operacyjnych
 
@@ -32,7 +32,7 @@ Wraz z [analizą biznesową](/power-bi/fundamentals/power-bi-service-overview), 
 
 - Wbudowane [funkcje personalizacji](personalize-user-experience.md)
 - Narzędzia [Microsoft Power Platform](../../dev-itpro/power-platform/overview.md)
-- Oparte na [Visual Studio](https://visualstudio.microsoft.com) [SDK aplikacji finansowych i operacyjnych](../../dev-itpro/dev-tools/developer-home-page.md) oraz [automatyzacja kompilacji Azure DevOps](../../dev-itpro/dev-tools/developer-home-page.md#build-automation-using-azure).
+- Oparte na [Visual Studio](https://visualstudio.microsoft.com) [SDK aplikacji finansowych i operacyjnych](../../dev-itpro/dev-tools/developer-home-page.md) oraz [automatyzacja kompilacji Azure DevOps](../../dev-itpro/dev-tools/developer-home-page.md#build-automation-using-azure)
 - Rozwiązania niezależnych dostawców oprogramowania (ISV) od [AppSource](https://appsource.microsoft.com/partners)
 
 Klienci sami wybierają podejście do rozwiązania według swoich wymagań. Razem z partnerem wdrożeniowym definiują, opracowują i testują swoje rozwiązanie przy użyciu narzędzi i najlepszych praktyk dostępnych w usługach [Microsoft Dynamics Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/lcs.md). Istnieją cztery typowe scenariusze:
@@ -428,3 +428,4 @@ Ramy, które systematycznie prowadzą wdrożenie przez serię ocen na krytycznyc
 ### <a name="user"></a>Użytkownik
 
 Osoba, która używa środowisk aplikacji finansowych i operacyjnych i jest skojarzona z dzierżawą klienta.
+

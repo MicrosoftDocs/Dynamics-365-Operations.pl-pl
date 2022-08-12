@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: b73e0cc31fd0e5a22ee330f623b9125de9237e29
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 87bab110d99bd756038b9f556aa15ed9fd02fb97
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867420"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103981"
 ---
 # <a name="on-premises-deployment-home-page"></a>Wdrożenie lokalne – strona główna
 
@@ -52,8 +52,8 @@ Można wdrożyć Dynamics 365 Finance + Operations (on-premises). Po wybraniu ty
 - [Konfigurowanie zarządzania dokumentami](../../fin-ops/organization-administration/configure-document-management.md)
 - [Importowanie konfiguracji raportowania elektronicznego (ER)](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Generowanie, publikowanie i drukowanie dokumentów we wdrożeniach lokalnych](../analytics/printing-capabilities-on-premises.md)
-- [Konfigurowanie zwrotnych serwerów proxy dla środowisk lokalnych](onprem-reverseproxy.md)
-- [Konfigurowanie pomocy technicznej dotyczącej rozwiązania aplikacji Finance and Operations](../lifecycle-services/support-experience.md)
+- [Konfigurowanie serwerów proxy dla środowisk lokalnych](onprem-reverseproxy.md)
+- [Konfigurowanie pomocy technicznej dotyczącej aplikacji finansowych i operacyjnych](../lifecycle-services/support-experience.md)
 - [Łączność internetowa klienta](../user-interface/client-disconnected.md)
 - [Stosowanie aktualizacji do wdrożeń lokalnych](apply-updates-on-premises.md)
 - [Ponowne wdrażanie środowisk lokalnych](redeploy-on-prem.md)
@@ -73,9 +73,10 @@ Można wdrożyć Dynamics 365 Finance + Operations (on-premises). Po wybraniu ty
 - [Skrypty służące do rozwiązywania problemów w środowiskach lokalnych](onprem-tsg-implementations.md)
 - [Wymiana certyfikatów](certificate-rotation-on-prem.md)
 - [Diagnostyka we wdrożeniach lokalnych](on-premises-diagnostics.md)
-- [Usuwanie lub przestarzałe funkcje w Finance and Operations](../migration-upgrade/deprecated-features.md)
+- [Usuwanie lub przestarzałe funkcje w aplikacjach finansowych i operacyjnych](../migration-upgrade/deprecated-features.md)
 - [Zasady dotyczące cyklu życia oprogramowania i wydania wersji lokalnych](../migration-upgrade/on-prem-version-update-policy.md)
  
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

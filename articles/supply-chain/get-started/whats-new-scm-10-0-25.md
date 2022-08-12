@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: af344d3771583a99851c070e3735258ac964b5d7
-ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
+ms.openlocfilehash: c54534ae32aa037f36a16600a058bca6d433002c
+ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954504"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9167740"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10025-april-2022"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.25 (kwiecień 2022)
 
@@ -36,8 +36,7 @@ To wydanie zawiera funkcje, które są podane w następującej tabeli. Firma Mic
 | Zapasy&nbsp;i&nbsp;logistyka | [Rozszerzenie materiałów niebezpiecznych](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/hazardous-materials-enhancements) | Wkrótce | Zarządzanie funkcjami:<br>*Rozszerzenie materiałów niebezpiecznych* |
 | Zapasy&nbsp;i&nbsp;logistyka | [Praca pakowania dla stacji pakowania](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/packing-work-packing-stations) | Wkrótce | Zarządzanie funkcjami:<br>*Praca pakowania dla stacji pakowania* |
 | Zapasy&nbsp;i&nbsp;logistyka | [Skanowanie kodów kreskowych w magazynie przy użyciu standardów formatu GS1](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [Kody kreskowe GS1 i kody QR](../warehousing/gs1-barcodes.md) | Zarządzanie funkcjami:<br>*Zeskanuj kody kreskowe GS1* |
-| Produkcja | [Rejestrowanie zużycia materiału i rezerwacji w interfejsie wykonania hal produkcyjnych (inne niż WMS)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [Jak pracownicy korzystają z interfejsu wykonania hal produkcyjnych](../production-control/production-floor-execution-use.md) | Zarządzanie funkcjami:<br>*(Wersja zapoznawcza) Rejestrowanie zużycia materiału w interfejsie wykonania hal produkcyjnych (inne niż WMS)*<br><br>I/lub:<br><br>Zarządzanie funkcjami:<br>*(Wersja zapoznawcza) Rejestrowanie zużycia materiału w interfejsie wykonania hal produkcyjnych (z obsługą WMS)* |
-| Produkcja | [Rejestrowanie zużycia materiałów w jednostkach skalowania](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/register-material-consumption-scale-units) | [Obciążenia pracą dotyczące uruchomienia produkcji dla jednostek skalowania chmury i urządzenia brzegowego](../cloud-edge/cloud-edge-workload-manufacturing.md) | Zarządzanie funkcjami:<br>*Zarejestruj zużycie materiałów w aplikacji mobilnej dla jednostki skalowania* |
+| Produkcja | [Rejestrowanie zużycia materiału i rezerwacji w interfejsie wykonania hal produkcyjnych (inne niż WMS)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [Jak pracownicy korzystają z interfejsu wykonania hal produkcyjnych](../production-control/production-floor-execution-use.md) | Zarządzanie funkcjami:<br>*Rejestrowanie zużycia materiału w interfejsie wykonania hal produkcyjnych (inne niż WMS)*<br><br>I/lub:<br><br>Zarządzanie funkcjami:<br>*(Wersja zapoznawcza) Rejestrowanie zużycia materiału w interfejsie wykonania hal produkcyjnych (z obsługą WMS)* |
 | Planowanie | [Obsługa kalendarza scentralizowanego optymalizacji planowania](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-centralized-calendar-maintenance) | [Kalendarze i planowanie główne](../master-planning/supply-chain-calendars-master-planning.md) | Domyślnie włączone |
 | Planowanie | [Optymalizacja planowania – propozycje optymalizacji istniejących dostaw](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-suggestions-optimize-existing-supply) | [Komunikaty akcji](../master-planning/action-messages.md) | Domyślnie włączone |
 | Planowanie | Uproszczone zamówienia planowane | [Uproszczone zamówienia planowane](../master-planning/planning-optimization/planned-orders-simplified.md ) | Zarządzanie funkcjami:<br>*Uproszczone zamówienia planowane* |
@@ -183,9 +182,9 @@ Tabela zawiera również listę funkcji, które były wcześniej w publicznej we
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizacja Platform dla aplikacji Finanse i Działania
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizacja Platform dla aplikacji finansowych i operacyjnych
 
-Pakiet Microsoft Dynamics 365 Supply Chain Management 10.0.25 zawiera aktualizację platformy. Aby dowiedzieć się więcej, zobacz [aktualizacje platformy dla wersji 10.0.25 aplikacji Finanse i Działania (kwiecień 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-25.md).
+Pakiet Microsoft Dynamics 365 Supply Chain Management 10.0.25 zawiera aktualizację platformy. Aby dowiedzieć się więcej, zobacz [aktualizacje platformy dla wersji 10.0.25 aplikacji finansowych i operacyjnych (kwiecień 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-25.md).
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
@@ -209,3 +208,4 @@ Zanim jakakolwiek funkcja zostanie usunięta z produktu, powiadomienie o zaniech
 W przypadku zmian, które wpływają tylko na czas kompilacji, ale są zgodne z trybem piaskownicy i środowiskami produkcyjnymi, czas niezgodności będzie krótszy niż 12 miesięcy. Zazwyczaj są to aktualizacje funkcjonalne, które należy wykonać w kompilatorze.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

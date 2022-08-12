@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 394bb19000076eace6377e07bb3a939c8345da8a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a2c32ef546a5bc74e090591c0ac9d51529299041
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905323"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112211"
 ---
 # <a name="integrated-vendor-master"></a>Zintegrowane dane główne dostawcy
 
@@ -37,13 +37,13 @@ Jeśli chcesz dalej przechowywać dane dostawcy w tabeli **Konto/kontakt**, moż
 ![Rozszerzony przepływ danych dostawcy.](media/dual-write-vendor-detail.jpg)
 
 > [!TIP]
-> Jeśli korzystasz z portali Power Apps dla dostawców samoobsługowych, informacje o dostawcy mogą przepływać bezpośrednio do aplikacji Finanse i Działania.
+> Jeśli korzystasz z portali Power Apps dla dostawców samoobsługowych, informacje o dostawcy mogą przepływać bezpośrednio do aplikacji finansowych i operacyjnych.
 
 ## <a name="templates"></a>Szablony
 
 Dane dostawcy obejmują wszystkie informacje o dostawcy, takie jak grupa dostawców, adresy, dane kontaktowe, profil płatności oraz profil faktury. Kolekcja mapowań tabel działa razem podczas interakcji z danymi dostawcy, jak pokazano w poniższej tabeli.
 
-Aplikacje Finanse i Działania | Aplikacje Customer Engagement     | opis
+Aplikacje finansowe i operacyjne | Aplikacje Customer Engagement     | opis
 ----------------------------|-----------------------------|------------
 [CDS Contacts wer. 2](mapping-reference.md#115) | kontakty | Ten szablon synchronizuje wszystkie podstawowe, pomocnicze i wyższe informacje kontaktowe dla odbiorców i dostawców.
 [Afiksy nazwy](mapping-reference.md#155) | msdyn_nameaffixes | Ten szablon synchronizuje dane referencyjne afiksów nazw dla odbiorców i dostawców.
@@ -52,8 +52,9 @@ Aplikacje Finanse i Działania | Aplikacje Customer Engagement     | opis
 [Wiersze harmonogramu płatności](mapping-reference.md#159) | msdyn_paymentschedulelines | Synchronizuje dane referencyjne wierszy harmonogramu płatności, zarówno dla klientów, jak i dostawców.
 [Harmonogram płatności](mapping-reference.md#160) | msdyn_paymentschedules | Ten szablon synchronizuje dane referencyjne harmonogramu dla odbiorców i dostawców.
 [Warunki płatności](mapping-reference.md#161) | msdyn_paymentterms | Ten szablon synchronizuje dane referencyjne warunki płatności dla odbiorców i dostawców.
-[Dostawcy wersja 2](mapping-reference.md#202) | msdyn_vendors | Firmy, które korzystają z niestandardowego rozwiązania dla dostawców, mogą skorzystać z koncepcji dostawcy gotowego (out-of-box), która jest wprowadzana w Dataverse wraz z integracją z aplikacjami Finanse i Działania.
+[Dostawcy wersja 2](mapping-reference.md#202) | msdyn_vendors | Firmy, które korzystają z niestandardowego rozwiązania dla dostawców, mogą skorzystać z koncepcji dostawcy gotowego (out-of-box), która jest wprowadzana w Dataverse wraz z integracją z aplikacjami finansowymi i operacyjnymi.
 [Grupy dostawców](mapping-reference.md#200) | msdyn_vendorgroups | Ten szablon powoduje zsynchronizowanie informacji o grupie dostawców.
 [Metoda płatności dostawcy](mapping-reference.md#201) | msdyn_vendorpaymentmethods | Ten szablon powoduje zsynchronizowanie informacji o metodzie płatności.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

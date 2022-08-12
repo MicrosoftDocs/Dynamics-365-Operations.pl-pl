@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d8c79057c157f9f0244ea11ad5c3563dcdb21a5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ea9355b040c6431f5ddcccc4aaa0de73e21ad299
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866193"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124567"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Usunięte lub wycofane funkcje w poprzednich wersjach
 
@@ -271,7 +271,7 @@ Pomoc w tworzeniu zamówień sprzedaży w oparciu o projekt, gdzie umowa dotycz�
 ## <a name="finance-and-operations-813-with-platform-update-23"></a>Aktualizacja Platform update 23 rozwiązania Finanse i Działania 8.1.3
 
 ### <a name="sql-server-reporting-services-reportviewer-control"></a>Formant SQL Server Reporting Services ReportViewer
-Klienci mogą używać akcji **eksportowania** wbudowanych w formant SQL Server Reporting Services (SSRS) ReportViewer w celu pobierania dokumentów wytwarzanych przez aplikacje Finanse i Działania. Ta prezentacja raportu oparta na języku HTML oferuje podgląd dokumentu niedzielonego na strony.
+Klienci mogą używać akcji **eksportowania** wbudowanych w formant SQL Server Reporting Services (SSRS) ReportViewer w celu pobierania dokumentów wytwarzanych przez Aplikacje finansowe i operacyjne. Ta prezentacja raportu oparta na języku HTML oferuje podgląd dokumentu niedzielonego na strony.
 
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
@@ -1417,3 +1417,4 @@ Aplikacja na tablety z systemem Windows 8 zawierała funkcje wprowadzania i zatw
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: tfehr
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 8864a9567d57739aa72fa1859f5cfce6df33e8f7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 29d8b2079b5d1cd70f14e096780f83a4a38d4b63
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864551"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111545"
 ---
 # <a name="integrated-tax"></a>Zintegrowany podatek
 
@@ -28,7 +28,7 @@ Dane ustawień podatku określają ustawienia zarówno podatków pośrednich (VA
 
 Dane podatku zawierają kolekcję mapowań tabel działających razem podczas interakcji z danymi, jak pokazano w poniższej tabeli.
 
-| Aplikacje Finanse i Działania | Aplikacje Customer Engagement | Opis |
+| Aplikacje finansowe i operacyjne | Aplikacje Customer Engagement | Opis |
 |-----------------------------|-----------------------------------|-------------|
 [Grupa podatków dla pozycji](mapping-reference.md#196) | msdyn_taxitemgroups | |
 [Urzędy skarbowe](mapping-reference.md#193) | msdyn_taxauthorities | |
@@ -39,3 +39,4 @@ Dane podatku zawierają kolekcję mapowań tabel działających razem podczas in
 [Grupy potrąconych zaliczek na podatek](mapping-reference.md#211) | msdyn_withholdingtaxgroups | |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+
