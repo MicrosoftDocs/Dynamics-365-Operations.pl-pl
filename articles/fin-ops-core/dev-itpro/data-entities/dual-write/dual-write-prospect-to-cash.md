@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: f0d5339190f7e2aff7b084fa73e559af28e10ee8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f44574abddb71e1a994ae60960e8c9c79242aff0
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860117"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112121"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Od prospekta do kasy w podwójnym zapisie
 
@@ -111,7 +111,7 @@ Faktury sprzedaży są tworzone w Supply Chain Management i synchronizowane z pr
 
 Moduł Od prospektu do gotówki zawiera mapy tabeli podstawowej, które działają wspólnie podczas interakcji, jak pokazano w poniższej tabeli.
 
-| Aplikacje Finanse i Działania | Aplikacje Customer Engagement | Opis |
+| Aplikacje finansowe i operacyjne | Aplikacje Customer Engagement | Opis |
 |-----------------------------|-----------------------------------|-------------|
 [Wszystkie produkty](mapping-reference.md#138) | msdyn_globalproducts | |
 [Odbiorcy (wersja 3)](mapping-reference.md#101) | Konta | |
@@ -135,3 +135,4 @@ Więcej informacji o cennikach, zobacz temat [Ujednolicone działanie produktu](
 - Wymiary finansowe muszą być ustawione dla danych głównych, na przykład dla odbiorcy lub dostawcy. Gdy odbiorca jest dodawany do oferty lub zamówienia sprzedaży, wymiary finansowe skojarzone z rekordem odbiorcy automatycznie przepływają do zamówienia. Obecnie podwójny zapis nie uwzględnia danych wymiarów finansowych dla danych głównych.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1407c6def22b9759723e49fb2fa6d4d68f180891
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 18a15928eef4d7158f778729506d691dd587e013
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860172"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109471"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Omówienie zadań importowania i eksportowania danych
 
@@ -209,7 +209,7 @@ Podczas planowania procesu oczyszczania, należy określić następujące parame
 ## <a name="job-history-clean-up-and-archival"></a>Czyszczenie i archiwizacja historii zadań 
 Funkcja oczyszczania i archiwizacji historii zadań zastępuje poprzednie wersje funkcji oczyszczania. Ta sekcja wyjaśnia te nowe możliwości.
 
-Jedną z głównych zmian funkcji oczyszczania jest użycie w systemie zadania wsadowego do oczyszczenia historii. Użycie zadania wsadowego w systemie umożliwia aplikacjom Finanse i Operacje automatyczne planowanie i uruchamianie zadania przetwarzania wsadowego zaraz po gotowości systemu. Nie jest już konieczne ręczne planowanie zadania wsadowego. W tym domyślnym trybie wykonywania zadanie wsadowe będzie wykonywane co godzinę, zaczynając o północy, i zachowa historię wykonania z ostatnich 7 dni. Oczyszczana historia jest archiwizowana do przyszłego pobierania. Począwszy od wersji 10.0.20, ta funkcja jest zawsze w użyciu.
+Jedną z głównych zmian funkcji oczyszczania jest użycie w systemie zadania wsadowego do oczyszczenia historii. Użycie zadania wsadowego w systemie umożliwia aplikacjom finansowym i operacyjnym automatyczne planowanie i uruchamianie zadania przetwarzania wsadowego zaraz po gotowości systemu. Nie jest już konieczne ręczne planowanie zadania wsadowego. W tym domyślnym trybie wykonywania zadanie wsadowe będzie wykonywane co godzinę, zaczynając o północy, i zachowa historię wykonania z ostatnich 7 dni. Oczyszczana historia jest archiwizowana do przyszłego pobierania. Począwszy od wersji 10.0.20, ta funkcja jest zawsze w użyciu.
 
 Druga zmiana w procesie oczyszczania to archiwizacja oczyszczonej historii wykonania. Zadanie oczyszczania spowoduje zarchiwizowanie usuniętych rekordów w Blob Storage, którego usługa DIXF używa do regularnych integracji. Zarchiwizowany plik będzie w formacie pakietu DIXF i będzie dostępny przez 7 dni w obiekcie blob, w trakcie których można go będzie pobrać. Domyślną trwałość 7 dni zarchiwizowanego pliku można zmienić na maksymalnie 90 dni w parametrach.
 
@@ -235,3 +235,4 @@ Aby pobrać zarchiwizowaną historię wykonania, przejdź do obszaru roboczego z
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

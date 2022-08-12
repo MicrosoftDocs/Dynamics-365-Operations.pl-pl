@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: efbf9072c3bbcb20f38e144f9a15d8178d96d708
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ef392fd744a68c54bc0438152b3487233ac5c7f3
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905581"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070358"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurowanie urządzeń przenośnych do pracy magazynowej
 
@@ -123,13 +123,13 @@ Możesz skonfigurować element menu, który tworzy pracę dla innego pracownika 
 <td>Przyjmowanie pozycji z zamówienia przeniesienia</td>
 <td>Zarejestruj przyjęcie ilości towaru, a następnie utwórz pracę odłożenia dla innego pracownika.
 
-<strong>Uwaga:</strong> Użyj tej opcji tylko wtedy, gdy towary zostały wysłane z magazynu, który nie jest włączony dla procesów zarządzania magazynem.</td>
+<strong>Uwaga:</strong> Użyj tej opcji tylko wtedy, gdy towary zostały wysłane z magazynu, który nie jest włączony dla procesów zarządzania magazynem (WMS).</td>
 </tr>
 <tr>
 <td>Przyjmowanie i odkładanie pozycji z zamówienia przeniesienia</td>
 <td>Zarejestruj przyjęcie ilości towaru i odłóż towary. Ten sam pracownik wykonuje oba działania.
 
-<strong>Uwaga:</strong> Użyj tej opcji tylko wtedy, gdy towary zostały wysłane z magazynu, który nie jest włączony dla procesów zarządzania magazynem.</td>
+<strong>Uwaga:</strong> Użyj tej opcji tylko wtedy, gdy towary zostały wysłane z magazynu, który nie jest włączony dla procesów zarządzania magazynem (WMS).</td>
 </tr>
 <tr>
 <td>Przyjmowanie wiersza z zamówienia przeniesienia</td>

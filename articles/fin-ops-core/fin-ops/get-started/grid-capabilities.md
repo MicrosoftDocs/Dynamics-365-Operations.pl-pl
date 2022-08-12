@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 5259e1d7d6c95074337164d8427d7f035e00dbd9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 07791afb2de670a5b9b910e441395c2949460394
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890066"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124719"
 ---
 # <a name="grid-capabilities"></a>Możliwości siatki
 
@@ -35,10 +35,10 @@ Nowa kontrolka siatki zapewnia kilka przydatnych i zaawansowanych funkcji, któr
 - Rozszerzalne kolumny
 
 ## <a name="calculating-totals"></a>Obliczanie sum
-W aplikacjach Finanse i Operacje użytkownicy mają możliwość wyświetlania sum na dole kolumn liczbowych w siatkach. Sumy te są wyświetlane w sekcji stopki u dołu siatki. 
+W aplikacjach finansowych i operacyjnych użytkownicy mają możliwość wyświetlania sum na dole kolumn liczbowych w siatkach. Sumy te są wyświetlane w sekcji stopki u dołu siatki. 
 
 ### <a name="showing-the-grid-footer"></a>Pokazywanie stopki siatki
-W dolnej części każdej siatki tabelarycznej w aplikacjach Finanse i Operacje znajduje się obszar stopki. Stopka może zawierać cenne informacje związane z danymi wyświetlanymi w siatce. Oto kilka przykładów takich informacji:
+W dolnej części każdej siatki tabelarycznej w aplikacjach finansowych i operacyjnych znajduje się obszar stopki. Stopka może zawierać cenne informacje związane z danymi wyświetlanymi w siatce. Oto kilka przykładów takich informacji:
 
 - Liczba zaznaczonych wierszy w tabeli (gdy zaznaczysz więcej niż jeden rekord)
 - Sumy końcowe u dołu skonfigurowanych kolumn liczbowych
@@ -86,7 +86,7 @@ Aby można było obsłużyć to nowe zachowanie, nowa kolumna dla stanu wiersza 
 Gdy użytkownicy wprowadzają dane przed miejscem przetwarzania serwera, mogą oczekiwać na wprowadzenie kilku degradacji w środowisku wprowadzania danych, takich jak brak wyszukiwań, sprawdzanie poprawności na poziomie kontroli i wprowadzanie wartości domyślnych. Użytkownicy, którzy potrzebują listy rozwijanej do znalezienia wartości, są zachęcani do czekania, aż serwer dogoni bieżący wiersz. Sprawdzanie poprawności na poziomie kontroli i wprowadzanie wartości domyślnych będą również występować, gdy serwer przetwarza ten wiersz.
 
 ### <a name="pasting-from-excel"></a>Wklejanie z programu Excel
-Użytkownicy zawsze mogli eksportować dane z siatek w aplikacjach Finanse i Operacje do programu Microsoft Excel za pomocą mechanizmu **Eksport do programu Excel**. Jednak możliwość wprowadzania danych przed systemem umożliwia nowej siatce obsługę kopiowania tabel z programu Excel i wklejanie ich bezpośrednio do siatek w aplikacjach Finanse i Operacje. Komórka siatki, z której jest inicjowana operacja wklejenia określa miejsce, w którym rozpocznie się wklejanie skopiowanej tabeli. Zawartość siatki jest zastępowana zawartością skopiowanej tabeli, z wyjątkiem dwóch przypadków:
+Użytkownicy zawsze mogli eksportować dane z siatek w aplikacjach finansowych i operacyjnych do programu Microsoft Excel za pomocą mechanizmu **Eksport do programu Excel**. Jednak możliwość wprowadzania danych przed systemem umożliwia nowej siatce obsługę kopiowania tabel z programu Excel i wklejanie ich bezpośrednio do siatek w aplikacjach finansowych i operacyjnych. Komórka siatki, z której jest inicjowana operacja wklejenia określa miejsce, w którym rozpocznie się wklejanie skopiowanej tabeli. Zawartość siatki jest zastępowana zawartością skopiowanej tabeli, z wyjątkiem dwóch przypadków:
 
 - Jeśli liczba kolumn w kopiowanej tabeli przekracza liczbę kolumn pozostających w siatce, rozpoczynając od lokalizacji wklejania, użytkownik zostanie poinformowany, że dodatkowe kolumny zostały zignorowane. 
 - Jeśli liczba wierszy w kopiowanej tabeli przekracza liczbę wierszy w siatce, począwszy od lokalizacji wklejania, istniejące komórki zostaną zastąpione przez wklejoną zawartość, a wszystkie dodatkowe wiersze ze skopiowanej tabeli zostaną wstawione jako nowe wiersze u dołu siatki. 
@@ -97,7 +97,7 @@ Jako środek zwiększający produktywność, użytkownicy mogą wprowadzać form
 Aby system rozpoznawał wartość jako wyrażenie, należy uruchomić wartość ze znakiem równości (**=**). Więcej informacji na temat obsługiwanych operatorów i składni zawiera sekcja [obsługiwane symbole matematyczne](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
 ## <a name="grouping-tabular-data"></a>Grupowanie danych tabelarycznych
-Użytkownicy biznesowi często muszą przeprowadzać analizę danych ad hoc. Chociaż można to zrobić przez wyeksportowanie danych do Microsoft Excel i za pomocą tabel przestawnych, możliwość **Grupowania (wersja zapoznawcza) w siatkach** tabelarycznych, zależna od nowej funkcji kontroli siatki, umożliwia użytkownikom organizowanie swoich danych tabelarycznych w interesujący sposób w aplikacjach Finanse i Operacje. Ponieważ ta funkcja rozszerza funkcję **Sum**, **Grupowanie** umożliwia również uzyskanie istotnych informacji na temat danych przez zapewnienie sum częściowych na poziomie grupy.
+Użytkownicy biznesowi często muszą przeprowadzać analizę danych ad hoc. Chociaż można to zrobić przez wyeksportowanie danych do Microsoft Excel i za pomocą tabel przestawnych, możliwość **Grupowania (wersja zapoznawcza) w siatkach** tabelarycznych, zależna od nowej funkcji kontroli siatki, umożliwia użytkownikom organizowanie swoich danych tabelarycznych w interesujący sposób aplikacjach finansowych i operacyjnych. Ponieważ ta funkcja rozszerza funkcję **Sum**, **Grupowanie** umożliwia również uzyskanie istotnych informacji na temat danych przez zapewnienie sum częściowych na poziomie grupy.
 
 Aby skorzystać z tej funkcji, kliknij prawym przyciskiem myszy kolumnę, według której chcesz grupować, a następnie wybierz polecenie **Grupuj według tej kolumny**. Ta akcja spowoduje posortowanie danych według wybranej kolumny, dodanie nowej kolumny **Grupy według** do początku do siatki, a następnie wstawienie „wierszy nagłówka” na początku każdej grupy. Te wiersze nagłówka zawierają następujące informacje o każdej grupie:
 
@@ -168,7 +168,7 @@ Jeśli użytkownik zrezygnował z używania nowej siatki przez pojedynczą stron
 ## <a name="developer-opting-individual-grids-out-of-the-typing-ahead-of-the-system-capability"></a>[Deweloper] Wyłączanie poszczególnych kratek z możliwości systemu Pisanie przed systemem
 Pojawiły się pewne scenariusze, które nie nadają się do współpracy z *Pisanie przed systemem*. (Na przykład, jakiś kod, który jest wyzwalany, gdy wiersz jest weryfikowany powoduje, że badanie źródła danych jest wyzwalane, a badanie może wtedy uszkodzić niezaangażowane edycje istniejących wierszy). Jeśli Twoja organizacja odkryje taki scenariusz, dostępne jest API, które pozwala programiście na wyłączenie asynchronicznego sprawdzania poprawności wierszy w poszczególnych siatkach i przywrócenie dotychczasowego zachowania.
 
-Kiedy asynchroniczna walidacja wierszy jest wyłączona w siatce, użytkownicy nie mogą utworzyć nowego wiersza lub przejść do innego istniejącego wiersza w siatce, gdy występują problemy z walidacją w bieżącym wierszu. Efektem ubocznym tego działania jest to, że tabele nie mogą być wklejane z Excela do siatek Finanse i Działania.
+Kiedy asynchroniczna walidacja wierszy jest wyłączona w siatce, użytkownicy nie mogą utworzyć nowego wiersza lub przejść do innego istniejącego wiersza w siatce, gdy występują problemy z walidacją w bieżącym wierszu. Efektem ubocznym tego działania jest to, że tabele nie mogą być wklejane z Excela do siatek aplikacjach finansowych i operacyjnych.
 
 Aby wyłączyć indywidualną siatkę z asynchronicznego sprawdzania poprawności wierszy, dodaj następujące wywołanie po `super()` w metodzie `run()` formularza.
 
@@ -200,3 +200,4 @@ Ta sekcja zawiera listę znanych problemów związanych z nową kontrolą siatki
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

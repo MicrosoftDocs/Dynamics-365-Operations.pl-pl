@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 924af44a6f0b1430859f0f6354ef55ff67a1b677
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 57c17cab920c531b3eb125260064d01dd8662576
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898377"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124203"
 ---
 # <a name="help-system"></a>System pomocy
 
@@ -53,7 +53,7 @@ Zawartość witryny docs.microsoft.com można znaleźć przy użyciu dowolnej wy
 
 ## <a name="get-notified-about-changes-through-an-rss-feed"></a>Otrzymywanie powiadomień o zmianach za pomocą kanału informacyjnego RSS
 
-Aby zasubskrybować kanał RSS wszystkich aktualizacji zawartości witryny docs.microsoft.com w aplikacjach Finanse i Operacje, użyj następującego łącza:
+Aby zasubskrybować kanał RSS wszystkich aktualizacji zawartości witryny docs.microsoft.com w aplikacjach finansowych i operacyjnych, użyj następującego łącza:
 
 [Źródło danych RSS](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
 
@@ -98,7 +98,7 @@ Aby uzyskać więcej informacji, zapoznaj się z [podręcznikiem dla współauto
 
 Przewodniki po zadaniach oferują interaktywne prezentacje poszczególnych kroków w zadaniach i procesach biznesowych. Przewodnik można otworzyć (i odtworzyć) z okienka **pomocy**. Po wybraniu przewodnika zadania okienko **pomocy** pokaże dokładne instrukcje wykonania zadania. Dostępne są przetłumaczone przewodniki zadań.
 
-Firma Microsoft wydała bibliotekę przewodników zadań dla wersji produktu w wersji aplikacji Dynamics 365 for Finance and Operations z grudnia 2017 r. Sekcja [Uzyskiwanie dostępu do przewodników zadań z okienka pomocy](#accessing-task-guides-from-the-help-pane) w tym artykule zawiera opis sposobu znajdowania odpowiednich przewodników zadań dla produktu.
+Firma Microsoft wydała bibliotekę przewodników zadań dla wersji produktu w wersji aplikacji finansowych i operacyjnych Dynamics 365 z grudnia 2017 r. Sekcja [Uzyskiwanie dostępu do przewodników zadań z okienka pomocy](#accessing-task-guides-from-the-help-pane) w tym artykule zawiera opis sposobu znajdowania odpowiednich przewodników zadań dla produktu.
 
 ![Przewodnik po zadaniu w widoku do czytania.](./media/task-guide-ops.png)
 
@@ -182,3 +182,4 @@ W poniższej tabeli wymieniono nasze witryny internetowe. Witryny z gwiazdką (\
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

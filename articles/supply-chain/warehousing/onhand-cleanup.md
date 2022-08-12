@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 7f054f4f479affe8ca2e041c77bd6fd11d51378e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a82a3b26f2bf7cb546383da047d18c2997569ca5
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900514"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065158"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Zadanie czyszczenia wpisów dostępnych zapasów do zarządzania magazynem
 
@@ -26,11 +26,11 @@ ms.locfileid: "8900514"
 
 Na wydajność zapytań używanych do obliczania dostępnych zapasów ma wpływ liczba rekordów w zaangażowanych tabelach. Jednym ze sposobów zwiększenia wydajności jest zmniejszenie liczby rekordów, które musi uwzględnić baza danych.
 
-W tym artykule opisano zadanie czyszczenia wpisów dostępnych zapasów, które usuwa niepotrzebne rekordy z tabel InventSum i WHSInventReserve. Te tabele służą do przechowywania informacji o dostępnych zapasach dla towarów, które są włączone dla przetwarzania zarządzania magazynem. (Te elementy są określane mianem pozycji WHS.) Usunięcie tych rekordów może znacząco poprawić wydajność obliczeń dostępnych zapasów.
+W tym artykule opisano zadanie czyszczenia wpisów dostępnych zapasów, które usuwa niepotrzebne rekordy z tabel `InventSum` i `WHSInventReserve`. Te tabele służą do przechowywania informacji o dostępnych zapasach dla towarów, które są włączone dla przetwarzania zarządzania magazynem. (Te elementy są określane mianem pozycji WMS.) Usunięcie tych rekordów może znacząco poprawić wydajność obliczeń dostępnych zapasów.
 
 ## <a name="what-the-cleanup-job-does"></a>Co robi zadanie oczyszczania
 
-Zadanie oczyszczania wpisów dostępnych zapasów usuwa wszystkie rekordy z tabel WHSInventReserve i InventSum, w których wszystkie wartości pól są równe *0* (zero). Te rekordy można usunąć, ponieważ nie przyczyniły się do informacji o dostępnych zapasach. Zadanie usuwa tylko rekordy znajdujące się poniżej poziomu **Lokalizacji**.
+Zadanie oczyszczania wpisów dostępnych zapasów usuwa wszystkie rekordy z tabel `WHSInventReserve` i `InventSum`, w których wszystkie wartości pól są równe *0* (zero). Te rekordy można usunąć, ponieważ nie przyczyniły się do informacji o dostępnych zapasach. Zadanie usuwa tylko rekordy znajdujące się poniżej poziomu **Lokalizacji**.
 
 Jeśli jest dozwolone ujemne zapasy fizyczne, zadanie oczyszczania może nie być w stanie usunąć wszystkich odpowiednich wpisów. Powodem tego ograniczenia jest to, że zadanie musi pozwalać na specjalny scenariusz, w którym numer identyfikacyjny ma wiele numerów seryjnych, a jeden z tych numerów seryjnych staje się ujemny. Na przykład system będzie miał wartość zero na poziomie numeru identyfikacyjnego, gdy numer seryjny jest przypisany do + 1 komputerów PC o numerze seryjnym 1 i -1 sztuk o numerze fabrycznym 2. W przypadku tego specjalnego scenariusza zadanie wykonuje w pierwszej kolejności usunięcie o szerokości, z którego najpierw będzie próbował usunąć dane z niższych poziomów.
 

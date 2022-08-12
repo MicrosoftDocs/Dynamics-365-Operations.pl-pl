@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: d0f0e44cfafec722f6eed3d18ba8be4739be30c1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 881c3c4aa655a5ad30adffce108ba2fc3e6691c5
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900688"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070418"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Przetwarzanie ilości efektywnej produktu przy użyciu funkcji zarządzania magazynem
 
@@ -82,7 +82,7 @@ Jeśli rzeczywista waga jest rejestrowana w punkcie pakowania w ramach procesów
 > [!NOTE]
 > Ponieważ opcja **Opakowanie** powoduje aktualizację zapasów przy użyciu średniej pobranej wagi, może to wywołać niezgodność, która może spowodować korektę zysków/strat w ilości efektywnej i/lub różnicę między ilością dostępnych zapasów a wagą znaczników ilości efektywnej.
 
-Dla wewnętrznych procesów zarządzania magazynem, takich jak liczenie i korekty, można zdefiniować, czy waga ma być rejestrowana. Jeśli nie jest rejestrowana, będzie używana waga nominalna. Inne opcje umożliwiają przechwytywanie wagi na jednostkę ilości efektywnej i za ilość zliczaną.
+Dla wewnętrznych procesów, takich jak liczenie i korekty, można zdefiniować, czy waga ma być rejestrowana. Jeśli nie jest rejestrowana, będzie używana waga nominalna. Inne opcje umożliwiają przechwytywanie wagi na jednostkę ilości efektywnej i za ilość zliczaną.
 
 Można również zdefiniować sposób rejestrowania wagi. W jednym z dwóch głównych przepływów znaczniki ilości efektywnej są śledzone i służą do rejestrowania wagi. W drugim przepływie znaczniki wagi efektywnej nie są śledzone.
 
@@ -183,7 +183,7 @@ Nie wszystkie przepływy prac obsługują przetwarzanie ilości efektywnej produ
 ### <a name="other-restrictions-and-behaviors-for-catch-weight-product-processing-with-warehouse-management"></a>Inne ograniczenia i zachowania dla przetwarzania produktów w ilości efektywnej w kontekście zarządzania magazynem
 
 - Podczas procesów pobierania, gdy użytkownik nie otrzymuje monitu o określenie wymiarów śledzenia, przypisanie wagi odbywa się a podstawie średniej wagi. To zachowanie występuje, kiedy np. kombinacja wymiarów śledzenia jest używana w tej samej lokalizacji i po wykonaniu odbioru przez użytkownika w lokalizacji pozostaje tylko jedna wartość wymiaru śledzenia.
-- Jeśli zapasy są rezerwowane dla produktu w ilości efektywnej skonfigurowanego dla procesów zarządzania magazynem, rezerwacja odbywa się na podstawie zdefiniowanej wagi minimalnej, nawet jeśli ta ilość jest ostatnią obsługiwaną ilością stanu zapasów. To zachowanie różni się od zachowania dla towarów, które nie są skonfigurowane dla procesów zarządzania magazynem. Istnieje jeden wyjątek między tymi ograniczeniami. W przypadku pobierania produkcji, gdy jest pobierana Ostatnia obsługiwana ilość towaru w ilości efektywnej, która jest kontrolowana numerem seryjnym, używana jest rzeczywista waga.
+- Jeśli zapasy są rezerwowane dla produktu w ilości efektywnej skonfigurowanego dla procesów zarządzania magazynem (WMS), rezerwacja odbywa się na podstawie zdefiniowanej wagi minimalnej, nawet jeśli ta ilość jest ostatnią obsługiwaną ilością stanu zapasów. To zachowanie różni się od zachowania dla towarów, które nie są skonfigurowane dla procesów WMS. Istnieje jeden wyjątek między tymi ograniczeniami. W przypadku pobierania produkcji, gdy jest pobierana Ostatnia obsługiwana ilość towaru w ilości efektywnej, która jest kontrolowana numerem seryjnym, używana jest rzeczywista waga.
 - Nie należy używać rzeczywistej wagi w ramach obliczeń zdolności produkcyjnych (progów grupy czynności, maksymalnej liczby podziałów pracy, maksymalnej liczby kontenerów, możliwości obciążenia pracą lokalizacji itd.) Zamiast tego procesy opierają się na wadze bezpośredniej obsługi towarów zdefiniowanej dla produktu.
 - Ogólnie funkcja Commerce nie jest obsługiwana dla produktów w ilości efektywnej.
 - W przypadku produktów w ilości efektywnej stanu zapasów nie można zaktualizować z pola **Zmiana stanu magazynu**.
