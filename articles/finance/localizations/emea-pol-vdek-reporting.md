@@ -1,22 +1,22 @@
 ---
 title: Raportowanie JPK-V7M
 description: W tym artykule wyjaśniono, jak uruchomić deklarację VAT z rejestrami (znanymi również jako JPK-V7M, VDEK) w Polsce.
-author: liza-golub
+author: AdamTrukawka
 ms.date: 03/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Poland
-ms.author: elgolu
-ms.openlocfilehash: ae3b7d4d6de1ca58b9bab7f0a84bbf93ba443106
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.author: atrukawk
+ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
+ms.openlocfilehash: 6270e0092eb445094f5a637beca640109fbccdab
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903011"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9274578"
 ---
 # <a name="jpk-v7m-reporting"></a>Raportowanie JPK-V7M
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: ec5535013af9ccb253744e061de738155ac9ad22
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e66cda6e529a70d40e599718332152bac95b061e
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889643"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220036"
 ---
 # <a name="engineering-change-management-feature-walkthrough"></a>Przewodnik po funkcji zarządzania zmianami projektowymi
 
@@ -45,7 +45,7 @@ Przed próbą wykonania dowolnego z tych ćwiczeń w pozostałej części tego a
 
 ### <a name="make-standard-demo-data-available"></a>Udostępnianie standardowych danych demonstracyjnych
 
-Pracuj w systemie, w którym [zainstalowano standardowe dane demonstracyjne](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md). Standardowe dane demonstracyjne dodają dane dla kilku demonstracyjnych osób prawnych (firm i organizacji). Podczas pracy nad ćwiczeniami można używać narzędzia do wyboru firmy z prawej strony paska nawigacyjnego, aby przełączać między jedną firmą (*DEMF*) skonfigurowaną jako *organizację projektową* i inną firmą (*USMF*) skonfigurowaną jako *organizację operacyjną*.
+Pracuj w systemie, w którym zainstalowano standardowe [dane demonstracyjne](../../fin-ops-core/fin-ops/get-started/demo-data.md). Standardowe dane demonstracyjne dodają dane dla kilku demonstracyjnych osób prawnych (firm i organizacji). Podczas pracy nad ćwiczeniami można używać narzędzia do wyboru firmy z prawej strony paska nawigacyjnego, aby przełączać między jedną firmą (*DEMF*) skonfigurowaną jako *organizację projektową* i inną firmą (*USMF*) skonfigurowaną jako *organizację operacyjną*.
 
 ### <a name="set-up-an-engineering-organization"></a>Konfigurowanie organizacji projektowej
 

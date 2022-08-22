@@ -1,26 +1,26 @@
 ---
 title: Opakowania zwrotne dla Polski
 description: Ten artykuł zawiera opis sposobu konfigurowania i używania opakowań zwrotnych dla Polski.
-author: ShylaThompson
+author: mrolecki
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: PlCustPackageHolder, PlCustPackageReturn, PlInventPackageTable, PlInventPackageTrans
 audience: Application User
 ms.reviewer: kfend
+ms.search.region: Poland
+ms.author: mrolecki
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
 ms.custom: 273043
 ms.assetid: decdb3af-9fc3-4aff-add1-bbb9d2eadc27
-ms.search.region: Poland
-ms.author: ilyako
-ms.dyn365.ops.version: Version 1611
-ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 016a12e199e1e634bf6a4769181d57e0be97070f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form: PlCustPackageHolder, PlCustPackageReturn, PlInventPackageTable, PlInventPackageTrans
+ms.openlocfilehash: 7799ed52deffa5c56e0c7a5f9b12a54624114836
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864147"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9288586"
 ---
 # <a name="returnable-packaging-for-poland"></a>Opakowania zwrotne dla Polski
 [!include [banner](../includes/banner.md)]

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 3a630a7f388e0bbb6fee96e4de753b2380d305c3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 76aee3a736efa9ed7431d4e5127cd0abaccd659f
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863774"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218857"
 ---
 # <a name="advanced-load-building-during-wave"></a>Zaawansowane tworzenie ładunku podczas grupy czynności
 
@@ -50,7 +50,7 @@ Aby można było korzystać z funkcji zaawansowanego tworzenia ładunku podczas 
 
 ### <a name="make-sample-data-available"></a>Udostępnianie danych pokazowych
 
-Aby pracować z tym scenariuszem pokazowym przy użyciu określonych przykładowych rekordów i wartości tutaj określonych, należy użyć systemu, w którym są zainstalowane standardowe [dane demonstracyjne](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md). Dodatkowo należy również wybrać firmę **USMF** przed rozpoczęciem.
+Aby pracować z tym scenariuszem pokazowym przy użyciu określonych przykładowych rekordów i wartości tutaj określonych, należy użyć systemu, w którym są zainstalowane standardowe [dane demonstracyjne](../../fin-ops-core/fin-ops/get-started/demo-data.md). Dodatkowo należy również wybrać firmę **USMF** przed rozpoczęciem.
 
 Tego scenariusza pokazowego można również używać jako wskazówek dotyczących tej funkcji podczas pracy w produkcji. Jednak w takim przypadku trzeba podstawiać własne wartości i w niektórych przypadkach może brakować pewnych typów wymaganych rekordów, które są dostępne w standardowych danych demonstracyjnych.
 

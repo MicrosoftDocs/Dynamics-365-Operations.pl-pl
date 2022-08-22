@@ -1,26 +1,26 @@
 ---
 title: Konfigurowanie kanału poczty e-mail
 description: W tym artykule wyjaśniono, jak skonfigurować kanał poczty e-mail w celu odbierania faktur elektronicznych.
-author: dkalyuzh
+author: gionoder
 ms.date: 02/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
-ms.author: dkalyuzh
+ms.author: gionoder
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9227b032ffe896ad6a67962e5047fd797a883ae1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.form: ''
+ms.openlocfilehash: 19339cbcc59e93289609690363b0dd9195a66f6e
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902393"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9279879"
 ---
 # <a name="configure-an-email-channel"></a>Konfigurowanie kanału poczty e-mail
 

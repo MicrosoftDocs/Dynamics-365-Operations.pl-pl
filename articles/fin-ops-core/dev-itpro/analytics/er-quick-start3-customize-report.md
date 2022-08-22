@@ -1,28 +1,26 @@
 ---
 title: Umożliwia dostosowanie konfiguracji raportowania elektronicznego w celu wygenerowania dokumentu elektronicznego
 description: W tym artykule wyjaśniono, jak dostosować konfiguracje raportowania elektronicznego (ER) dostarczone przez firmę Microsoft, które są używane do generowania niestandardowego dokumentu elektronicznego.
-author: NickSelin
+author: kfend
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom:
-- "220314"
-- intro-internal
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 30ef9a0fa9b61b1e2016f85407ec0ec8fb70a6c6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220314,  ""intro-internal
+ms.assetid: ''
+ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
+ms.openlocfilehash: cd3200bea07d622632dc5781638ec825c21233e4
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854706"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9278955"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>Umożliwia dostosowanie konfiguracji raportowania elektronicznego w celu wygenerowania dokumentu elektronicznego
 
@@ -310,7 +308,7 @@ Użytkownik należący do roli konsultanta funkcjonalnego do raportowania elektr
 5. W polu **Nazwa** wpisz **Model faktury (Litware)**.
 6. Wybierz **Stwórz konfiguracji**, aby dodać nową konfigurację ER.
 
-Teraz można za jego użyciu edytować wersję 50.1 konfiguracji ER **Modelu faktury (Llitware)** w wersji **Roboczej** [stanu](general-electronic-reporting.md#component-versioning).
+Teraz można za jego użyciu edytować wersję 50.1 konfiguracji ER **Modelu faktury (Llitware)** w wersji **Roboczej** stanu.
 
 ![Wersja 50.1 edytowalnej konfiguracji ER na stronie konfiguracje.](./media/er-quick-start3-added-custom-model.png)
 
@@ -337,7 +335,7 @@ Musisz zmodyfikować niestandardowy model danych, dodając nowe pole, aby podać
 
 #### <a name="complete-a-custom-data-model-configuration"></a>Wykonaj konfigurację niestandardowego modelu danych
 
-Musisz [ukończyć](general-electronic-reporting.md#component-versioning) pracę z wersją 50.1 konfiguracji niestandardowego modelu danych ER, aby udostępnić ją w taki sposób, aby można było dodać inne niestandardowe konfiguracje ER.
+Musisz ukończyć pracę z wersją 50.1 konfiguracji niestandardowego modelu danych ER, aby udostępnić ją w taki sposób, aby można było dodać inne niestandardowe konfiguracje ER.
 
 1. Otwórz **Administracja organizacji** \> **Elektroniczne raportowanie** \> **Konfiguracje**.
 2. Na stronie **Konfiguracje** w drzewie konfiguracji w panelu po lewej wybierz pozycję **Model faktury**, a potem wybierz **Model faktury (Litware)**.
@@ -394,7 +392,7 @@ Należy zmodyfikować Mapowanie niestandardowego modelu i określić, jak niesta
 
 #### <a name="complete-a-custom-model-mapping-configuration"></a>Wykonaj niestandardową konfigurację mapowania modelu
 
-Musisz [ukończyć](general-electronic-reporting.md#component-versioning) pracę z wersją 50.19.1 niestandardowej konfiguracji mapowania modelu ER, aby była dostępna do użytku.
+Musisz ukończyć pracę z wersją 50.19.1 niestandardowej konfiguracji mapowania modelu ER, aby była dostępna do użytku.
 
 1. Otwórz **Administracja organizacji** \> **Elektroniczne raportowanie** \> **Konfiguracje**.
 2. Na stronie **Konfiguracje** w drzewie konfiguracji w panelu po lewej wybierz pozycję **Model faktur sprzedaży** \> **Mapowanie faktury dla odbiorcy**, a potem wybierz **Mapowanie modelu faktur (Litware)**.
@@ -428,7 +426,7 @@ Użytkownik należący do roli konsultanta funkcjonalnego do raportowania elektr
 
 ![Dodanie niestandardowej konfiguracji formatu na stronie Konfiguracje.](./media/er-quick-start3-adding-custom-format.png)
 
-Możesz teraz użyć projektanta operacji ER Operations do edycji wersji 11.2.2.1 **Faktura sprzedaży PEPPOL (Llitware)** w wersji **Roboczej** [stanu](general-electronic-reporting.md#component-versioning).
+Możesz teraz użyć projektanta operacji ER Operations do edycji wersji 11.2.2.1 **Faktura sprzedaży PEPPOL (Llitware)** w wersji **Roboczej** stanu.
 
 ![Wersja 11.2.2.1 edytowalnej konfiguracji ER na stronie konfiguracje.](./media/er-quick-start3-added-custom-format.png)
 
@@ -463,7 +461,7 @@ Należy zmodyfikować format niestandardowy, dodając nowy element formatu, któ
 
 #### <a name="complete-a-custom-format-configuration"></a>Wykonaj konfigurację formatu niestandardowego
 
-Musisz [ukończyć](general-electronic-reporting.md#component-versioning) pracę z wersją 11.2.2.1 niestandardowej konfiguracji formatu ER, aby była dostępna do użytku.
+Musisz ukończyć pracę z wersją 11.2.2.1 niestandardowej konfiguracji formatu ER, aby była dostępna do użytku.
 
 1. Otwórz **Administracja organizacji** \> **Elektroniczne raportowanie** \> **Konfiguracje**.
 2. Na stronie **Konfiguracje** w drzewie konfiguracji w panelu po lewej wybierz pozycję **Model faktur sprzedaży** \> **Faktura sprzedaży UBL** \> **Faktura sprzedaży PEPPOL**, a potem wybierz **Faktura sprzedaży PEPPOL (Litware)**.
@@ -650,7 +648,7 @@ Stan wersji 32.6.7.2 został zmieniony z **Wersji roboczej** na **Zakończone**,
 3. W okienku akcji, w grupie **Dokumenty**, wybierz opcję **Wyślij** \> **Oryginał**.
 
     > [!NOTE] 
-    > Ponieważ w systemie istnieje kilka wersji konfiguracji formatu ER **Faktura sprzedaży PEPPOL (Litware)** i żadna wersja nie ma [daty wejścia w życie](general-electronic-reporting.md#component-date-effectivity), najnowsza wersja jest używana do generowania e-faktury.
+    > Ponieważ w systemie istnieje kilka wersji konfiguracji formatu ER **Faktura sprzedaży PEPPOL (Litware)** i żadna wersja nie ma daty wejścia w życie, najnowsza wersja jest używana do generowania e-faktury.
 
 4. Zamknij stronę **Faktura niezależna**.
 

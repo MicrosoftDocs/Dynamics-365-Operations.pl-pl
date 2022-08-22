@@ -2,7 +2,7 @@
 title: Zmiana porządku sortowania dla podmiotów merchandisingowych
 description: W tym artykule objaśniono koncepcje związane z kontrolowaniem kolejności wyświetlania dla różnych jednostek związanych z merchandisingiem w Dynamics 365 Commerce.
 author: josaw1
-ms.date: 08/05/2019
+ms.date: 08/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,27 +15,27 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4e7a7bd42b0ef72ae6bc3f52a8857602b6282907
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 80586597f4f60476b341e4cf1cfd90f3681e15c0
+ms.sourcegitcommit: 52e31b1ef2b3ed8675de931d06090cd57e057fc2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847661"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9265844"
 ---
 # <a name="change-the-sort-order-for-merchandising-entities"></a>Zmiana porządku sortowania dla podmiotów merchandisingowych
 
 
 [!Include [banner](includes/banner.md)]
 
-Detaliści uważają znajdowanie produktów za podstawowe narzędzie do wykrywania produktów na potrzeby interakcji z klientami we wszystkich kanałach. Klienci mogą łatwo odkrywać produkty, korzystając z różnych funkcji. Na przykład mogą przeglądać kategorie, wyszukiwać i filtrować.
+Detaliści uważają znajdowanie produktów za podstawowe narzędzie do wykrywania produktów na potrzeby interakcji z klientami we wszystkich kanałach. Istnieje kilka funkcji, które mogą ułatwić klientom znajdowanie produktów. Na przykład klienci mogą przeglądać kategorie, wyszukiwać i filtrować.
 
 W tym artykule objaśniono koncepcje związane z kontrolowaniem kolejności wyświetlania dla różnych jednostek związanych z merchandisingiem. Omówiono również sposób zmieniania kolejności sortowania.
 
-## <a name="overview"></a>Przegląd
+## <a name="overview"></a>Omówienie
 
-Obsługa sortowania różnych jednostek dotyczących merchandisingu została ulepszona. Ta obsługa jest teraz lepiej wyrównana z istniejącymi scenariuszami klientów, które wcześniej wymagały rozszerzeń od partnerów implementacji.
+W handlu sortowanie różnych jednostek związanych z merchadisingiem jest zgodne z istniejącymi scenariuszami klientów i nie wymaga już rozszerzeń ze strony partnerów wdrożeniowych.
 
-W wersjach Retail starszych niż wersja 10.0.5 kolejność sortowania kategorii w hierarchii nawigacji była alfabetyczna. Nowa funkcja niestandardowej kolejności sortowania umożliwia menedżerom ds. merchadisingu konfigurowanie kolejności sortowania różnych jednostek związanych z merchandisingiem dla wszystkich klientów końcowych. Do tych klientów należą: Centrala (HQ) i biura obsługi.
+W wersji Commerce 10.0.5 i wcześniejszych kolejność sortowania kategorii w hierarchii nawigacji była alfabetyczna. Obecna funkcja niestandardowego porządku sortowania umożliwia menedżerom ds. sprzedaży konfigurowanie kolejności sortowania dla różnych jednostek związanych z merchandisingiem we wszystkich klientach końcowych. Do tych klientów należą: Centrala (HQ) i biura obsługi.
 
 ## <a name="configure-the-display-order-for-categories-in-the-product-hierarchy"></a>Skonfiguruj kolejność wyświetlania dla kategorii w hierarchii produktów
 
@@ -67,7 +67,7 @@ Aby można było wykonać tę procedurę, w środowisku muszą być zainstalowan
 6. W polu **Kolejność wyświetlania** wpisz liczbę.
 7. W drzewie wybierz **Moda \> Moda damska \> Bluzki**.
 
-    Analogicznie, można określić kolejność sortowania dla podkategorii.
+Analogicznie, można określić kolejność sortowania dla podkategorii.
 
 8. W drzewie wybierz **Moda \> Moda męska \> Koszule codzienne**.
 9. W polu **Kolejność wyświetlania** wpisz liczbę.
@@ -84,7 +84,7 @@ Kolejność wyświetlania dla hierarchii nawigacji kanału jest odzwierciedlona 
 ![Punkt sprzedaży z niestandardowymi kategoriami posortowanymi.](./media/POSChannelCategoriesCustomSorted.png)
 
 > [!NOTE]
-> Domyślnie ta funkcja niestandardowego sortowania jest wyłączona. Aby dowiedzieć się, jak włączyć tę funkcję i inne funkcje, zobacz [Zarządzanie funkcjami](/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).
-
+> Domyślnie funkcja **Włącz kolejność wyświetlania jednostek merchandisingowych** jest wyłączona. Użyj [funkcji zarządzania,](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) aby włączyć tę funkcję. Po włączeniu funkcji uruchom zadanie CDX **Konfiguracja globalna -1110** z harmonogramu dystrybucji.
+> Jeśli kolejność kategorii w punkcie sprzedaży nie została zaktualizowana, ponownie aktywuj urządzenie. Informacje o kategorii są pobierane po aktywacji urządzenia, więc może być konieczne ponowne pobranie informacji o kategorii ze zaktualizowanymi kolejnościami wyświetlania. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

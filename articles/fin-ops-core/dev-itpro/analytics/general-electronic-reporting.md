@@ -1,28 +1,26 @@
 ---
 title: Omówienie raportowania elektronicznego (ER)
 description: Ten artykuł zawiera omówienie narzędzia Raportowanie elektroniczne. Opisano w nim najważniejsze pojęcia, obsługiwane scenariusze i formaty, które są częścią rozwiązania.
-author: NickSelin
+author: kfend
 ms.date: 11/02/2021
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom:
-- "58941"
-- intro-internal
-ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1f3853e0c1da0a5abb3f92171370cc4aeabbd829
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.custom: 58941,  ""intro-internal
+ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
+ms.search.form: ERWorkspace
+ms.openlocfilehash: e94846dd565abb6de2c1f07532d285e28307e9a2
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9109589"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9269700"
 ---
 # <a name="electronic-reporting-er-overview"></a>Omówienie raportowania elektronicznego (ER)
 
@@ -78,7 +76,7 @@ Aparat GER ma następujące cechy:
 
 [![Główny przepływ danych ER.](./media/ger-main-data-flow.jpg)](./media/ger-main-data-flow.jpg)
 
-### <a name="components"></a>Składniki
+### <a name="component"></a>Składnik
 
 ER obsługuje następujące typy składników:
 
@@ -89,32 +87,7 @@ ER obsługuje następujące typy składników:
 
 Aby uzyskać więcej informacji, zobacz [Składniki raportowania elektronicznego](er-overview-components.md).
 
-
-#### <a name="component-versioning"></a>Przechowywanie wersji składnika
-
-Dla składników ER jest obsługiwane przechowywanie wersji. Poniższy przepływ pracy służy do zarządzania zmianami w składnikach ER:
-
-1. Wersja tworzona pierwotnie jest oznaczona jako **Wersja robocza**. Ta wersja może być edytowana i jest dostępna do testów.
-2. Wersję **Wersja robocza** można przekonwertować na wersję **Ukończona**. Ta wersja może być używana w lokalnych procesach raportowania.
-3. Wersję **Ukończona** można przekonwertować na wersję **Udostępniona**. Ta wersja jest publikowana w usłudze LCS i może być używana w globalnych procesach sprawozdawczości.
-4. Wersję **Udostępniona** można przekonwertować na wersję **Wycofana**. Tę wersję można następnie usunąć.
-
-Wersje ze stanem **Ukończona** lub **Udostępniona** są dostępne dla innych procesów wymiany danych. Na składniku mającym te stany można wykonywać następujące operacje:
-
-- Składnik może być serializowany w formacie XML i eksportowany jako plik w formacie XML.
-- Składnik może być reserializowany z pliku XML i importowany do aplikacji jako nowa wersja składnika raportowania elektronicznego.
-
-#### <a name="component-date-effectivity"></a>Daty obowiązywania składnika
-
-Wersje składników ER mają daty obowiązywania. Dla składnika ER można zdefiniować datę **Obowiązuje od**, aby określić datę, od której ten składnik zaczyna działać dla procesów raportowania. Data sesji aplikacji pozwala określić, czy składnik może być uruchamiany. Gdy dla danej daty jest dostępnych kilka wersji, najnowsza wersja jest używana w procesach raportowania.
-
-#### <a name="component-access"></a>Dostęp do składnika
-
-Dostęp do składników formatu aplikacji ER zależy od ustawienia kodu ISO kraju/regionu. Gdy to ustawienie jest puste dla wybranej wersji konfiguracji formatu, dostęp do składnika formatu można uzyskać podczas wykonywania z każdej firmy. Gdy to zawiera kody ISO kraju/regionu, składnik formatu jest dostępny tylko z tych firm, których adres główny został zdefiniowany dla jednego z kodów ISO kraju/regionu istniejących w składniku formatu.
-
-Różne wersje składnika formatu danych mogą mieć różne ustawienia kodów ISO kraju/regionu.
-
-#### <a name="configuration"></a><a name="Configuration"></a>Konfiguracja
+### <a name="configuration"></a><a name="Configuration"></a>Konfiguracja
 
 Konfiguracja narzędzia ER jest otoką konkretnego składnika ER. Składnik ten może być typu Model danych lub Format. Konfiguracja może zawierać różne wersje składnika ER. Każda konfiguracja jest oznaczona jako należąca do określonego dostawcy konfiguracji. Wersja **Wersja robocza** składnika konfiguracji może być edytowana, gdy właściciel konfiguracji został wybrany jako aktywny dostawca w ustawieniach ER w aplikacji.
 
@@ -124,13 +97,13 @@ Tworzona konfiguracja formatu zawiera składnik Format. Składnik Model danych o
 
 Konfiguracja ER jest udostępniana firmom w aplikacji.
 
-#### <a name="provider"></a><a name="Provider"></a>Dostawca
+### <a name="provider"></a><a name="Provider"></a>Dostawca
 
 Dostawca ER określa stronę (podmiotu) używaną do wskazania autora (właściciela) konfiguracji ER. Aplikacja ER pozwala zarządzać listą dostawców konfiguracji. Konfiguracje formatu publikowane dla dokumentów elektronicznych w ramach aplikacji finansowych i operacyjnych są oznaczone jako należące do dostawcy konfiguracji **Microsoft**.
 
 Aby uzyskać informacje o rejestrowaniu nowego dostawcy ER, odtwórz przewodnik po zadaniu **ER Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego** (część procesu biznesowego **7.5.4.3 Nabywanie/opracowywanie składników usług/rozwiązań informatycznych (10677)**).
 
-#### <a name="repository"></a><a name="Repository"></a>Repozytorium
+### <a name="repository"></a><a name="Repository"></a>Repozytorium
 
 Konfiguracje ER są przechowywane w repozytorium ER. Obecnie obsługiwane są następujące typy repozytoriów ER: 
 
@@ -145,7 +118,7 @@ Repozytorium **Biblioteka udostępnionych elementów LCS** zapewnia dostęp do l
 
 Repozytorium **Projekt usługi LCS** zapewnia dostęp do listy konfiguracji określonego projektu LCS (biblioteki zasobów projektu usługi LCS) wybranego podczas rejestracji repozytorium. Narzędzie ER umożliwia przekazywanie udostępnionych konfiguracji z bieżącego wystąpienia do konkretnego repozytorium **Projekt usługi LCS**. Można także importować konfiguracje z repozytorium **Projekt usługi LCS** do bieżącego wystąpienia aplikacji finansowych i operacyjnych.
 
-Repozytorium **systemu plików** udostępnia listę konfiguracji, które znajdują się w postaci plików xml w określonym folderze lokalnego systemu plików komputera, na którym działa usługa AOS. Wymagany folder jest wybierany w procesie rejestracji repozytorium. Można także importować konfiguracje z repozytorium **System plików** do bieżącego wystąpienia. 
+Repozytorium **systemu plików** udostępnia listę konfiguracji, które znajdują się w postaci plików XML w określonym folderze lokalnego systemu plików komputera, na którym działa usługa AOS. Wymagany folder jest wybierany w procesie rejestracji repozytorium. Można także importować konfiguracje z repozytorium **System plików** do bieżącego wystąpienia. 
 
 Należy zauważyć, że ten typ repozytorium jest dostępny w następujących środowiskach:
 
@@ -265,6 +238,7 @@ Lista konfiguracji raportowania elektronicznego dla aplikacji Finanse jest aktua
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
+- [Składniki raportowania elektronicznego](er-overview-components.md)
 - [Tworzenie konfiguracji raportowania elektronicznego (ER)](electronic-reporting-configuration.md)
 - [Zarządzanie cyklem życia konfiguracji modułu Raportowanie elektroniczne (ER)](general-electronic-reporting-manage-configuration-lifecycle.md)
 

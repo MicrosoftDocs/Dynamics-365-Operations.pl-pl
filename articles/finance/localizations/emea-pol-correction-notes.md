@@ -1,24 +1,24 @@
 ---
 title: Noty korygujące
 description: Ten artykuł zawiera informacje o notach korygujących. Nota korygująca jest dokumentem wymaganym lokalnymi przepisami w Polsce. Służy do poprawiania błędów na fakturze od dostawcy.
-author: ShylaThompson
+author: AdamTrukawka
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 263404
 ms.search.region: Poland
-ms.author: kfend
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 987c7c49f546572e6ddb230f1c60244d913303b0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 263404
+ms.openlocfilehash: fae6233bc28f0b5b242021a8a166b992651a7129
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8904298"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9267674"
 ---
 # <a name="correction-notes"></a>Noty korygujące
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-27
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 5e5d0a93a4c628d4867161d082b0f0e177ddb95c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4a8dd322446843af41214e8daa0822939d0468f0
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863745"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219817"
 ---
 # <a name="deferred-processing-of-manual-inventory-movement"></a>Odroczone przetwarzanie ręcznego przesunięcia magazynowego
 
@@ -33,7 +33,7 @@ Przetwarzanie w tle jest możliwe za pomocą [funkcji Przetwarzanie zdarzeń apl
 Aby ta funkcja była dostępna, włącz następujące funkcje w module [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md): Musisz je włączyć w następującej kolejności:
 
 1. *Blokowanie pracy na poziomie organizacji*<br>(W przypadku Supply Chain Management w wersji 10.0.21 ta funkcja jest obowiązkowa, więc jest domyślnie włączona i nie można jej ponownie wyłączyć).
-1. *Przetwarzanie zdarzeń aplikacji magazynowej*<br>(Od wersji 10.0.25 Supply Chain Management version ta funkcja jest domyślnie włączona)
+1. *Przetwarzanie zdarzeń aplikacji magazynowej*<br>(Od wersji 10.0.25 Supply Chain Management version ta funkcja jest domyślnie włączona. Od wersji 10.0.29 Supply Chain Management version ta funkcja jest wymagana. W związku z tym jest domyślnie włączona i nie można jej ponownie wyłączyć.)
 1. *Odroczone operacje odłożenia*
 1. *Odroczone przetwarzanie operacji ręcznego przenoszenia zapasów*<br>(W przypadku Supply Chain Management w wersji 10.0.25 ta funkcja jest obowiązkowa, więc jest domyślnie włączona i nie można jej ponownie wyłączyć).
 

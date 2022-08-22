@@ -7,18 +7,18 @@ ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: v-chgri
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8a3ab869eb9ddc0e73061bd2363cf9b3962da1e3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.assetid: ''
+ms.openlocfilehash: ed80ff42ea5c6e6a904ea2855953d006f66aad37
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850363"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9273674"
 ---
 # <a name="cloud-powered-search-overview"></a>Omówienie wyszukiwania w chmurze
 
@@ -64,11 +64,14 @@ Na poniższej ilustracji pokazano przykład, na którym jest używana funkcja au
 
 ## <a name="sort"></a>Sortuj
 
-Ulepszone sortowanie w Commerce umożliwia odbiorcom sortowanie, wyszukiwanie i przeglądanie wyników wyszukiwania oraz modyfikowanie ich według kryteriów, takich jak cena, nazwa produktu i numer produktu. Wyniki mogą również posłużyć do sortowania produktów w zależności od tego, czy produkt jest nowością, bestsellerem czy został niedawno dodany.
+Funkcja sortowania umożliwia klientom sortowanie, wyszukiwanie i przeglądanie wyników kategorii oraz doprecyzowanie ich według kryteriów, takich jak cena, nazwa produktu i numer produktu. Włączenie funkcji [rekomendacji produktów](product-recommendations.md) w twoim środowisku umożliwia również klientom sortowanie wyników na podstawie zaawansowanych kryteriów sortowania, takich jak nowe, najpowiedniejsze i trendy.
+
 
 > [!NOTE]
 > Te możliwości wyszukiwania z wykorzystaniem chmury są dostępne począwszy od wersji 10.0.8. Upewnij się, że istnieje wpis dla „ProductSearch.UseAzureSearch” ustawiony na wartość „prawda” w **Parametry handlu > Parametry konfiguracji**. 
 ![Parametry konfiguracji dla wyszukiwania z wykorzystaniem chmury.](./media/CloudPoweredSearchConfigurationParameters.png)
+>Zaawansowane opcje sortowania, takie jak nowe, bestsellery i trendy, są dostępne w wersji Commerce SSK 9.35+ i Dynamics 365 Commerce 10.0.20.  
+
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: d6ad25ec49a329c16b0290278fb614293a507eae
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b7c2c07f3e3eb76ff20e37e8d5d485dc08232c7a
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887697"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220431"
 ---
 # <a name="bill-for-maintenance-on-customer-owned-assets"></a>Rozliczanie konserwacji składników majątku należących do klienta
 
@@ -49,7 +49,7 @@ Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorz
 
 Aby się dowiedzieć, jak działa ta funkcja, należy przejść do poniższego przykładowego scenariusza.
 
-Aby pracować z tym scenariuszem przy użyciu określonych przykładowych rekordów i wartości tutaj określonych, należy użyć systemu, w którym są zainstalowane standardowe [dane demonstracyjne](../../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md). Należy wybrać firmę **USMF** przed rozpoczęciem.
+Aby pracować z tym scenariuszem przy użyciu określonych przykładowych rekordów i wartości tutaj określonych, należy użyć systemu, w którym są zainstalowane standardowe [dane demonstracyjne](../../../fin-ops-core/fin-ops/get-started/demo-data.md). Należy wybrać firmę **USMF** przed rozpoczęciem.
 
 Tego scenariusza można również używać jako wskazówek dotyczących danej funkcji podczas pracy w produkcji. Jednak w takim przypadku trzeba podstawiać własne wartości i w niektórych przypadkach może brakować pewnych typów wymaganych rekordów, które są dostępne w standardowych danych demonstracyjnych.
 

@@ -1,24 +1,24 @@
 ---
 title: Zarządzanie wieloma mapowaniami pochodnymi dla pojedynczego poziomu głównego modelu
 description: W tym artykule wyjaśniono, jak zarządzać kilkoma mapowaniami pochodnymi skonfigurowanymi dla pojedynczego poziomu głównego modelu.
-author: NickSelin
+author: kfend
 ms.date: 01/04/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERSolutionTable, ERModelMappingTable
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 960f5962ec1ea216e35feb0c282856bed95d079a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form: ERSolutionTable, ERModelMappingTable
+ms.openlocfilehash: 868d47ccfebb9a9753d93344c72b10ae4353b0e6
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892487"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9277517"
 ---
 # <a name="manage-several-derived-mappings-for-a-single-model-root"></a>Zarządzanie wieloma mapowaniami pochodnymi dla pojedynczego poziomu głównego modelu
 
@@ -106,7 +106,7 @@ W tej sekcji opisano sposób [dostosowywania](er-quick-start3-customize-report.m
 3. W oknie dialogowym listy rozwijanej **Tworzenie konfiguracji** w polu **Nowy** wybierz opcję **Pochodne od nazwy: mapowanie modelu faktury, Microsoft**.
 4. W polu **Nazwa** wpisz **Mapowanie modelu faktury, Litware**.
 5. Wybierz **Utwórz konfigurację**.
-6. [Oznacz](er-quick-start2-customize-report.md#MarkFormatRunnable) [wersję roboczą](general-electronic-reporting.md#component-versioning) pochodnego mapowania jako dostępną w czasie wykonywania:
+6. [Oznacz](er-quick-start2-customize-report.md#MarkFormatRunnable) [wersję roboczą](general-electronic-reporting.md) pochodnego mapowania jako dostępną w czasie wykonywania:
 
     1. W okienku akcji na karcie **Konfiguracje** w grupie **Ustawienia zaawansowane** wybierz opcję **Parametry użytkownika**.
     2. W oknie dialogowym **Parametry użytkownika** określ opcję **Ustawienia uruchamiania** na **Tak**, a następnie wybierz **OK**.

@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f5ece3672bba352e02808248c91366539423d682
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ddc22bdd223eff513ff571501c599712ac78a7da
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854305"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219916"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Poprawa wydajności aparatu planowania
 
@@ -294,7 +294,9 @@ Alternatywą dla stosowania równoległych operacji jest modelowanie par jako za
 
 ### <a name="route-with-quantity-of-resources-higher-than-1"></a>Marszruta zawierająca więcej niż 1 zasób
 
-W przypadku ustawienia ilości zasobów potrzebnych do wykonania operacji na więcej niż jeden w praktyce jest to tak samo, co użycie operacji podstawowych/drugorzędnych, ponieważ do aparatu jest wysyłanych wiele zadań równoległych. Jednak w tym przypadku nie jest dostępna opcja stosowania konkretnych przydziałów zasobów, ponieważ ilość wyższa niż jeden wymaga, aby dla danej operacji był dostępny więcej niż jeden zasób.
+Jeśli ilość zasobów potrzebnych dla operacji jest większa niż jeden, wynik jest faktycznie taki sam, jak przy użyciu operacji podstawowych/dodatkowych, ponieważ do aparatu zostanie wysłanych wiele zadań równoległych. Jednak w tym przypadku nie jest możliwe użycie określonych przydziałów zasobów, ponieważ ilość wyższa niż jeden wymaga więcej niż jednego zasobu, który ma zastosowanie do operacji.
+
+Operacja drugorzędna, w której ilość ładowania zasobów jest większa niż jeden, oznacza, że określona ilość zasobów drugorzędnych jest potrzebna dla każdego zasobu operacji podstawowej. Na przykład, jeśli ilość zasobów dla operacji podstawowej jest ustawiona na dwa, a ilość zasobów dla operacji drugorzędnej jest ustawiona na trzy, to dla operacji drugorzędnej potrzeba łącznie sześciu zasobów.
 
 ### <a name="excessive-use-of-finite-capacity"></a>Nadmierne używanie ograniczonych zdolności produkcyjnych
 

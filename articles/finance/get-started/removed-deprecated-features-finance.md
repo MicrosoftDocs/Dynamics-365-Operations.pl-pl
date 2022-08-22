@@ -2,7 +2,7 @@
 title: Usunięte lub przestarzałe funkcje w rozwiązaniu Dynamics 365 Finance
 description: W tym artykule opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia z aplikacji Dynamics 365 Finance.
 author: kfend
-ms.date: 03/21/2022
+ms.date: 06/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ee084e84c052366bdf34fe1a1e697a32e456914b
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 4f2a1984d39713daa84f15422d7e0680b7f6c601
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068931"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219577"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Usunięte lub przestarzałe funkcje w rozwiązaniu Dynamics 365 Finance
 
@@ -32,6 +32,20 @@ Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych fun
 
 > [!NOTE]
 > Szczegółowe informacje o obiektów w aplikacji finansowych i operacyjnych można znaleźć w [raportach z wykazami parametrów technicznych](/dynamics/s-e/global/axtechrefrep_61). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach aplikacji finansowych i operacyjnych.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10029-release"></a>Usunięte lub przestarzałe funkcje w wydaniu rozwiązania Finance 10.0.29
+
+### <a name="stock-transfer-orders-that-have-tax-on-the-transfer-price"></a>Zamówienia przeniesienia zapasów, które mają podatek od ceny przeniesienia
+
+[Zamówienia przeniesienia zapasów, które mają podatek od ceny przeniesienia](../../finance/localizations/apac-ind-gst-stock-transfer-transactions.md)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Przyczyna wycofania/usunięcia** | Zastąpiono poprawioną funkcjonalnością, [zamówienia przeniesienia zapasów dla Indii](../../finance/localizations/apac-ind-stock-transfer.md)|
+| **Zamieniona przez inną funkcję?**   | Tak |
+| **Powiązane obszary produktów** | Zgłoszenie |
+| **Opcja wdrażania** | Wszystko |
+| **Stan** | Wycofane: po kwietniu 2023 roku funkcje **Zlecenia przeniesienia zapasów, które mają podatek od ceny transferowej** nie otrzymają wsparcia z poprawkami błędów i poprawkami bezpieczeństwa. Odbiorcy zostaną proszeni o korzystanie z poprawionej funkcjonalności [Zamówienia przeniesienia zapasów dla Indii](../../finance/localizations/apac-ind-stock-transfer.md). Po październiku 2023 r. nie będzie już dostępna funkcja **Zleceń przeniesienia zapasów, które mają podatek od ceny przelewu**, a klienci zostaną poproszeni o przejście do ulepszonej funkcji. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10026-release"></a>Usunięte lub przestarzałe funkcje w wydaniu rozwiązania Finance 10.0.26
 

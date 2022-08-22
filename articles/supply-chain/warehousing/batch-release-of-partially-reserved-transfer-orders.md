@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e0b21c0000f6bf1cbbb318c898a519e51ca7e9b8
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 741377a43e2bfe702b213647cc6460a3d6ad93fb
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068643"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218691"
 ---
 # <a name="batch-release-of-partially-reserved-transfer-orders"></a>Wsadowe zwalnianie częściowo zarezerwowanych zamówień przeniesienia
 
@@ -42,25 +42,22 @@ Przed częściowym zwolnieniem zamówienia do magazynu w partii należy zwolnić
 
 Zasady realizacji dla zamówień przeniesienia i zamówień sprzedaży są określone na poziomie firmy. W zależności od konfiguracji zasad realizacji, zwolnienie zamówień w partii zostanie zaakceptowane lub odrzucone. Zamówienia zostaną następnie odpowiednio przetworzone.
 
--   Aby utworzyć zasady realizacji dla zamówień przeniesienia i zamówień sprzedaży, kliknij kolejno opcje **Zarządzanie magazynem** \> **Konfiguracja** \> **Zwolnij do magazynu** \> **Zasady realizacji**, a następnie utwórz zasady realizacji, wprowadzając nazwę i opis.
-
--   Aby określić współczynnik realizacji, typ wartości i komunikat wyświetlany po naruszeniu zasad realizacji, kliknij kolejno opcję **Zarządzanie magazynem** \> **Konfiguracja** \> **Zwolnij do magazynu** \> **Zasady realizacji**, a następnie ustaw pola **Współczynnik realizacji**, **Typ wartości** i **Komunikat dotyczący naruszenia współczynnika realizacji**.
+- Aby utworzyć zasady realizacji dla zamówień przeniesienia i zamówień sprzedaży, kliknij kolejno opcje **Zarządzanie magazynem \> Konfiguracja \> Zwolnij do magazynu \> Zasady realizacji**, a następnie utwórz zasady realizacji, wprowadzając nazwę i opis.
+- Aby określić współczynnik realizacji, typ wartości i komunikat wyświetlany po naruszeniu zasad realizacji, kliknij kolejno opcję **Zarządzanie magazynem \> Konfiguracja \> Zwolnij do magazynu \> Zasady realizacji**, a następnie ustaw pola **Współczynnik realizacji**, **Typ wartości** i **Komunikat dotyczący naruszenia współczynnika realizacji**.
 
 ### <a name="set-the-fulfillment-policies-for-transfer-orders-and-sales-orders"></a>Ustawianie zasad realizacji dla zamówień przeniesienia i zamówień sprzedaży
 
--   Aby ustawić zasady realizacji dla zamówień przeniesienia kliknij kolejno opcje **Zarządzanie magazynem** \> **Konfiguracja** \> **Parametry modułu Zarządzanie zapasami i magazynem** \> **Zamówienia przeniesienia** \> **Zarządzanie magazynem**, a następnie wybierz zasady realizacji zamówienia przeniesienia.
+- Aby ustawić zasady realizacji dla zamówień przeniesienia kliknij kolejno opcje **Zarządzanie magazynem \> Konfiguracja \> Parametry modułu Zarządzanie zapasami i magazynem**,a następnie kartę **Zamówienia przeniesienia** w **Zarządzanie magazynem**, a następnie wybierz zasady realizacji zamówienia przeniesienia.
+- Aby ustawić zasady realizacji zamówień sprzedaży dla zamówień sprzedaży, kliknij kolejno opcję **Rozrachunki z odbiorcami \> Konfiguracja \> Parametry modułu rozrachunków z odbiorcami** w **Zarządzanie magazynem**, a następnie wybierz zasady realizacji zamówienia sprzedaży.
 
--   Aby ustawić zasady realizacji zamówień sprzedaży dla zamówień sprzedaży, kliknij kolejno opcję **Rozrachunki z odbiorcami** \> **Konfiguracja** \> **Parametry modułu rozrachunków z odbiorcami** \> **Zarządzanie z magazynem**, a następnie wybierz zasady realizacji zamówienia sprzedaży.
-
-## <a name="allow-release-in-a-batch-and-specify-the-quantity-that-should-be-release-in-a-batch"></a>Zezwalanie na zwolnienie partii i określanie ilości, która ma zostać zwolniona w partii
+## <a name="allow-release-in-a-batch-and-specify-the-quantity-that-should-be-released-in-a-batch"></a>Zezwalanie na zwolnienie partii i określanie ilości, która ma zostać zwolniona w partii
 
 Zadanie wsadowe służy do zwalniania zamówień do magazynu w partii. Parametry odróżniające zamówienia uruchamiane w zadaniu wsadowym są ustawiane na poziomie zadania.
 
 Parametr **Ilość** określa, czy w partii ma być zwolniona cała ilość czy ilość fizycznie dostępna. Parametr **Zezwalaj na częściowe zwalnianie zamówień** określa, czy zamówienia w partii mają być akceptowane czy odrzucane, jeżeli zostały częściowo zwolnione wcześniej.
 
--   Aby ustawić parametry **Ilość** i **Zezwalaj na częściowe zwalnianie zamówień** dla zamówień przeniesienia, kliknij kolejno opcje **Zarządzanie magazynem** \> **Zwolnij do magazynu** \> **Automatyczne zwalnianie zamówień przeniesienia**.
-
--   Aby ustawić parametry **Ilość** i **Zezwalaj na częściowe zwalnianie zamówień** dla zamówień sprzedaży, kliknij kolejno opcje **Zarządzanie magazynem** \> **Zwolnij do magazynu** \> **Automatyczne zwalnianie zamówień sprzedaży**.
+- Aby ustawić parametry **Ilość** i **Zezwalaj na częściowe zwalnianie zamówień dla zamówień przeniesienia**, kliknij kolejno opcje **Zarządzanie magazynem \> Zwolnij do magazynu \> Automatyczne zwalnianie zamówień przeniesienia**.
+- Aby ustawić parametry **Ilość** i **Zezwalaj na częściowe zwalnianie zamówień dla zamówień sprzedaży**, kliknij kolejno opcje **Zarządzanie magazynem \> Zwolnij do magazynu \> Automatyczne zwalnianie zamówień sprzedaży**.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

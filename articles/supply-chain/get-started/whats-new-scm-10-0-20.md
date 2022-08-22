@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 3465866df0d766b2300eb4fd1989c034cedbbb22
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: d99a7a7d0261ba0afd19efbb237dff329527723d
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9123817"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219163"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.20 (sierpień 2021 r.)
 
@@ -49,7 +49,7 @@ W poniższej tabeli wymieniono rozszerzenia funkcji zawarte w tym wydaniu. Każd
 | Moduł | Nazwa&nbsp;funkcji w&nbsp;zarządzaniu&nbsp;funkcjami | Więcej informacji |
 |---|---|---|
 | Planowanie główne | Równoległe autoryzowanie skorygowanej prognozy popytu | Ta funkcja umożliwia równoległe autoryzowanie skorygowanej prognozy popytu ze strony **Skorygowana prognoza popytu**. Celem tej funkcji jest zwiększenie wydajności podczas autoryzacji dużej liczby prognoz. Podczas autoryzowania użytkownik może określić **liczbę wątków** w oknie dialogowym autoryzowania. |
-| Planowanie główne | (Wersja zapoznawcza) Akceptowanie i konsolidacja, które mogą być przeprowadzane w partiach, dla planowanych zamówień partii masowych i paczkowanych | Ta funkcja umożliwia używanie zadań w partiach do tworzenia i konsolidowania planowanych zamówień masowych i paczkowanych. |
+| Planowanie główne | Akceptowanie i konsolidacja, które mogą być przeprowadzane w partiach, dla planowanych zamówień partii masowych i paczkowanych | Ta funkcja umożliwia używanie zadań w partiach do tworzenia i konsolidowania planowanych zamówień masowych i paczkowanych. |
 | Kontrola produkcji | Kopiuj ogólne trasy | Ta funkcja rozszerza funkcję kopiowania trasy, umożliwiając użytkownikom kopiowanie tras, które nie są specyficzne dla danego elementu. Umożliwia to systemowi aktualizację wszystkich istotnych informacji (takich jak miejsce, grupa trasowania, wymagania dotyczące zasobów i różne czasy) po użyciu funkcji kopiowania trasy w celu nadpisania trasy, która nie jest jeszcze przypisana do elementu. |
 | Kontrola produkcji | Aktualizuj powiązane zapotrzebowania na zasoby w przypadku zmiany operacji marszruty | Ta funkcja umożliwia systemowi aktualizowanie powiązanych zapotrzebowań na zasoby, gdy użytkownik zmieni operację istniejącego etapu marszruty. |
 | Zarządzanie informacjami o produktach | Wstępne przetwarzanie raportu BOM, aby zapobiec przekroczeniu limitu czasu | Ta funkcja powoduje wstępne przetworzenie raportu BOM. Pozwoli to uniknąć problemów z upłynięciem limitu czasu w przypadku dużego obciążenia danymi dla raportu. |

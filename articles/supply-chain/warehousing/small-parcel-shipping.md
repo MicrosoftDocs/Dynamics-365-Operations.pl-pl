@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-08
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 7bafd4a5118de5ca6025c6bd74fe436aa6abd1c8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6ccc9c795e2da121acf9c0809aef99a5f9d5889e
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8855911"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219727"
 ---
 # <a name="small-parcel-shipping"></a>Wysyłka małych paczek
 
@@ -81,7 +81,7 @@ W tym przykładowym scenariuszu pokazano, jak skonfigurować funkcję SPS i uży
 
 ### <a name="make-demo-data-available"></a>Udostępnianie danych pokazu
 
-Aby pracować z tym scenariuszem przy użyciu określonych pokazowych rekordów i wartości tutaj określonych, należy użyć systemu, w którym są zainstalowane standardowe [dane demonstracyjne](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md). Dodatkowo należy również wybrać firmę **USMF** przed rozpoczęciem.
+Aby pracować z tym scenariuszem przy użyciu określonych pokazowych rekordów i wartości tutaj określonych, należy użyć systemu, w którym są zainstalowane standardowe [dane demonstracyjne](../../fin-ops-core/fin-ops/get-started/demo-data.md). Dodatkowo należy również wybrać firmę **USMF** przed rozpoczęciem.
 
 ### <a name="set-up-the-scenario"></a>Konfiguracja scenariusza
 

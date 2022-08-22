@@ -1,27 +1,27 @@
 ---
 title: Proporcjonalne dzielenie opłat z nagłówka między pasujące wiersze sprzedaży
 description: W tym artykule opisano dodatkowe funkcje obliczania i stosowania opłat automatycznych dla zamówień kanału Commerce przy użyciu funkcji zaawansowanych opłat automatycznych.
-author: hhaines
+author: hhainesms
 ms.date: 03/30/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 6b41aa7b012b161626a98fc4aa2d37134552a57a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.industry: Retail
+ms.search.form: ''
+ms.openlocfilehash: 85e75b533e95d149de1cde50c0ef122f58890bbe
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886939"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9279040"
 ---
 # <a name="prorate-header-charges-to-matching-sales-lines"></a>Proporcjonalne dzielenie opłat z nagłówka między pasujące wiersze sprzedaży
 

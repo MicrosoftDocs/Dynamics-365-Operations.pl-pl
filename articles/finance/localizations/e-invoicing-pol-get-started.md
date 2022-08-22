@@ -1,26 +1,26 @@
 ---
 title: Fakturowanie elektroniczne dla Polski
 description: Ten artykuł zawiera informacje, które pomogą w rozpoczęciu pracy z Faktury elektroniczne dla Polski w rozwiązaniach Microsoft Dynamics 365 Finance i Dynamics 365 Supply Chain Management.
-author: ilkond
+author: mrolecki
 ms.date: 05/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 574537
-ms.assetid: ''
 ms.search.region: Poland
-ms.author: janeaug
+ms.author: gionoder
 ms.search.validFrom: 2022-07-15
 ms.dyn365.ops.version: AX 10.0.28
-ms.openlocfilehash: ff7a7650187f120b9dbcba1e24aa67130773db04
-ms.sourcegitcommit: ccaeb71c49cd15be472a3fb1c55fc655e133dc29
+ms.custom: 574537
+ms.assetid: ''
+ms.search.form: ''
+ms.openlocfilehash: d1b9c2aa21b0de0e7b563c2379778e96a50a98d5
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "9127995"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9269486"
 ---
 # <a name="get-started-with-electronic-invoicing-for-poland"></a>Zacznij korzystać z elektronicznego fakturowania w Polsce
 

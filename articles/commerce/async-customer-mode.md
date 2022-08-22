@@ -2,23 +2,24 @@
 title: Asynchroniczny tryb tworzenia klientów
 description: W tym artykule opisano asynchroniczny tryb tworzenia klientów w aplikacji Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 12/10/2021
+ms.date: 08/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-12-17
-ms.openlocfilehash: 4ca63fe06a804035e976a3432454078c1cca0020
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1ac1bc842d5d12ece8951ffed18157e6f9b50d14
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8880147"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9228731"
 ---
 # <a name="asynchronous-customer-creation-mode"></a>Asynchroniczny tryb tworzenia klientów
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 W tym artykule opisano asynchroniczny tryb tworzenia klientów w aplikacji Microsoft Dynamics 365 Commerce.
 
@@ -27,24 +28,35 @@ W aplikacji Commerce istnieją dwa tryby tworzenia klientów: synchroniczny i as
 Jeśli dla opcji **Utwórz odbiorcy w trybie asynchronicznym** jest ustawiona wartość **Tak** w profilu funkcji sklepu (**Retail i Commerce \> Ustawienia kanału \> Ustawienia sklepu online \> Profile funkcji**), wywołania usługi Real-time Service nie są używane do tworzenia rekordów klientów w bazie danych kanału Asynchroniczny tryb tworzenia klientów nie ma wpływu na wydajność centrali w programie Commerce Headquarters. Tymczasowy unikatowy identyfikator GUID jest przypisywany do każdego nowego asynchronicznego rekordu klienta i używany jako identyfikator konta klienta. Ten identyfikator GUID nie jest widoczny dla użytkowników w punkcie sprzedaży. Zamiast tego ci użytkownicy zobaczą identyfikator konta odbiorcy **Oczekująca synchronizacja**.
 
 > [!IMPORTANT]
-> Zawsze gdy POS działa w trybie offline, system automatycznie tworzy klientów asynchronicznie, nawet gdy tryb asynchronicznego tworzenia klientów jest wyłączony. Dlatego, niezależnie od wyboru między synchronicznym i asynchronicznym tworzeniem klienta, administratorzy centrali Commerce muszą utworzyć i zaplanować cykliczne zadanie wsadowe dla **zadania P**, czyli **Synchronizowanie odbiorców i partnerów biznesowych z zadania w trybie asynchronicznym** (nazywanego wcześniej zadaniem **synchronizacji klientów i partnerów biznesowych w trybie asynchronicznym**) oraz zadania **1010**, tak aby odbiorcy asynchroniczni byli konwertowani do odbiorców asynchronicznych w centrali Commerce.
+> Zawsze gdy POS działa w trybie offline, system automatycznie tworzy klientów asynchronicznie, nawet gdy tryb asynchronicznego tworzenia klientów jest wyłączony. Dlatego niezależnie od wyboru między synchronizacją a asynchronicznym tworzeniem klientów, administratorzy Commerce headquarters muszą tworzyć i planować cykliczne zadanie wsadowe dla **zadania P**, zadania **Synchronizowanie klientów i partnerów biznesowych z trybu asynchronicznego** oraz zadanie **1010**, aby dowolni odbiorcy asynchroniczni byli konwertowani na odbiorców synchronicznych w centrali Commerce.
 
 ## <a name="async-customer-limitations"></a>Ograniczenia dotyczące odbiorcy usługi Async
 
 Funkcje klientów asynchronicznych mają obecnie następujące ograniczenia:
 
-- Nie można edytować rekordów odbiorcy asynchronicznego, jeśli odbiorca nie zostanie utworzony w programie Commerce Headquarters i nowy identyfikator konta odbiorcy zostanie zsynchronizowany z powrotem z kanałem.
 - Nie można wystawiać kart lojalnościowych dla odbiorców asynchronicznych, chyba że nowy identyfikator konta odbiorcy zostanie zsynchronizowany z powrotem z kanałem.
 
 ## <a name="async-customer-enhancements"></a>Ulepszenia dotyczące klientów asynchronicznych
 
-W wersji Commerce 10.0.24 można włączyć funkcję **włączania rozszerzonego asynchronicznego tworzenia klientów** w obszarze roboczym **Zarządzanie funkcjami**. Ta funkcja eliminuje lukę między trybami tworzenia asynchronicznego i synchronicznego klientów w punkcie sprzedaży i handlu elektronicznym na następujące sposoby:
+Aby pomóc organizacjom korzystać z trybu tworzenia klientów asynchronicznych do zarządzania klientami i ograniczyć komunikację w czasie rzeczywistym z Commerce headquarters, wprowadzono następujące ulepszenia, aby zapewnić parzystość między trybami synchronizacji i asynchronicznym w kanałach. 
 
-- Przynależności można skojarzyć z klientami asynchronicznym.
-- Tytuły można dodawać do klientów asynchronicznych.
-- Można przechwycić pomocnicze adresy e-mail i numery telefonów dla klientów asynchronicznych.
+| Udoskonalenie funkcji | Wersja Commerce | Szczegóły funkcji |
+|---|---|---|
+| Poprawa wydajności, gdy informacje o kliencie są pobierane z bazy danych kanału | 10.0.20 i nowsze wersje | Aby zwiększyć wydajność, jednostka odbiorcy jest dzielona na mniejsze jednostki. Następnie z bazy danych kanału są pobierane tylko wymagane informacje. |
+| Możliwość asynchronicznego tworzenia adresu podczas realizacji zamówienia | 10.0.22 i nowsze wersje | <p>Przełącznik funkcji: **Włączanie tworzenia asynchronicznego dla adresów odbiorcy**</p><p>Szczegóły funkcji:</p><ul><li>Możliwość dodawania adresów bez tworzenia wywołań usługi Real-time Service w Commerce headquarters</li><li>Możliwość jednoznacznej identyfikacji adresów w bazie danych kanału bez użycia identyfikatora rekordu (wartość **RecId**)</li><li>Sygnatura czasowa śledzenia przy tworzeniu adresu</li><li>Synchronizacja adresów w programie Commerce Headquarters</li></ul><p>Ta funkcja wpływa zarówno na odbiorców synchronizacji, jak i odbiorców asynchronicznych. Aby oprócz asynchronicznego tworzenia adresów edytować adresy asynchronicznie, należy włączyć funkcję **Edytowanie odbiorców w trybie asynchronicznym**.</p> |
+| Włącz parzystość między tworzeniem synchronicznym i asynchronicznym odbiorcy. | 10.0.24 i nowsze wersje | <p>Włączanie funkcji: **Włącz rozszerzone tworzenie odbiorcy asynchronicznego.**</p><p>Szczegóły funkcji: możliwość przechwytywania dodatkowych informacji, takich jak tytuł, przynależności od klienta domyślnego i dodatkowe informacje kontaktowe (numer telefonu i adres e-mail), podczas gdy tworzysz klientów asynchronicznie</p> |
+| Komunikaty o błędach wyświetlane w interfejsie użytkownika | 10.0.28 i nowsze wersje | Te ulepszenia pomagają ulepszyć przyjazne dla użytkownika komunikaty o błędach, jeśli użytkownik nie może natychmiast edytować informacji podczas trwania synchronizacji. Ulepszenia te można włączyć za pomocą funkcji **Zezwalaj na niemodyfikowalne niektóre elementy interfejsu użytkownika** przez **Ustawienia witryny \> Rozszerzenia** w Konstruktorze witryn Commerce. |
+| Możliwość asynchronicznej edycji informacji o odbiorcy | 10.0.29 i nowsze wersje | <p>Włączanie funkcji: **Włącz edytowanie odbiorców w trybie asynchronicznym**</p><p>Szczegóły funkcji: możliwość asynchronicznej edycji danych odbiorcy</p><p>Aby uzyskać odpowiedzi na typowe pytania dotyczące problemów związanych z asynchronicznym edytowaniem informacji o odbiorcy, zobacz [Często zadawane pytania dotyczące trybu asynchronicznego tworzenia odbiorcy](async-customer-mode-faq.md).</p> |
 
-W wersji Commerce 10.0.22 można włączyć funkcję **włączania asynchronicznego tworzenia dla adresów klientów** w obszarze roboczym **Zarządzanie funkcjami**. Ta funkcja umożliwia asynchroniczne zapisywanie nowo utworzonych adresów klientów synchronicznych i asynchronicznych.
+### <a name="feature-switch-hierarchy"></a>Hierarchia przełącznika funkcji
+
+Ze względu na hierarchię przełączników funkcji przed włączeniem funkcji **Włącz edytowanie odbiorców w trybie asynchronicznym**, należy włączyć następujące funkcje: 
+
+- **Usprawnienia wydajności zamówień klientów i transakcji klientów** — ta funkcja jest obowiązkowa od czasu wydania 10.0.28 systemu Commerce. 
+- **Włącz rozszerzone tworzenie odbiorcy asynchronicznego**
+- **Włączanie tworzenia asynchronicznego dla adresów odbiorcy**
+
+Aby uzyskać odpowiedzi na typowe pytania rozwiązywania problemów, zobacz [Często zadawane pytania dotyczące trybu asynchronicznego tworzenia klientów](async-customer-mode-faq.md). 
 
 Po włączeniu wspomnianych wcześniej funkcji musisz zaplanować cykliczne zadanie wsadowe dla **zadania P**, zadania **Synchronizuj odbiorców i partnerów biznesowych z zadania w trybie asynchronicznym** oraz zadania **1010**, aby dowolni odbiorcy asynchroniczni byli konwertowani na odbiorców synchronizacji w centrali Commerce Headquarters.
 

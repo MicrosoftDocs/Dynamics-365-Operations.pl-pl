@@ -4,19 +4,19 @@ description: W tym artykule opisano sposób konfigurowania obejść dla pozycji 
 author: Mirzaab
 ms.date: 10/15/2021
 ms.topic: article
-ms.search.form: ''
+ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 69090def1bba2f64ed21cca8b6d4629083aeb0c4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8106dd600e8eadbaafcaa4cbc27ec179899318f7
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863600"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219013"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>Konfiguracja obejść dla kroków w elementach menu urządzeń mobilnych
 
@@ -34,20 +34,8 @@ Obejście to osobna pozycja menu, którą można otworzyć z kroku zadania głó
 Zanim będzie można skonfigurować obejścia dla kroków w pozycjach menu urządzenia mobilnego, należy wykonać poniższą procedurę, aby włączyć wymagane funkcje i wygenerować wymagane nazwy pól w aplikacji mobilnej Warehouse Management.
 
 1. Wybierz kolejno opcje **Administrator systemu \> Obszary robocze \> Zarządzanie funkcjami**.
-1. W [**obszarze roboczym Zarządzanie funkcjami**](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) włącz funkcję, która jest wymieniona w następujący sposób:
-
-    - **Moduł:** *Zarządzanie magazynem*
-    - **Nazwa funkcji:** *instrukcje kroków aplikacji magazynu*
-
-    Aby uzyskać więcej informacji na temat funkcji *Instrukcje krok po kroku aplikacji Warehouse*, patrz [Dostosowywanie tytułów i instrukcji krok po kroku dla aplikacji mobilnej Warehouse Management](mobile-app-titles-instructions.md). Ta funkcja jest warunkiem koniecznym dla funkcji *Obejścia aplikacji zarządzania magazynem*.
-
-1. Włącz funkcję, która jest wymieniona w następujący sposób:
-
-    - **Moduł:** *Zarządzanie magazynem*
-    - **Nazwa funkcjonalności:** *Obejścia aplikacji do zarządzania magazynem*
-
-    Ta funkcja jest opisana w tym artykule.
-
+1. Upewnij się, że funkcja *Instrukcje kroku aplikacji magazynowej* jest włączona w Twoim systemie. Od wersji 10.0.29 Supply Chain Management version ta funkcja jest domyślnie włączona. Aby uzyskać więcej informacji na temat funkcji *Instrukcje krok po kroku aplikacji Warehouse*, patrz [Dostosowywanie tytułów i instrukcji krok po kroku dla aplikacji mobilnej Warehouse Management](mobile-app-titles-instructions.md). Ta funkcja jest warunkiem koniecznym dla funkcji *Obejścia aplikacji zarządzania magazynem*.
+1. Włącz funkcję *Obejścia: Aplikacja do zarządzania magazynem*. Ta funkcja jest opisana w tym artykule.
 1. Zaktualizuj nazwy pól w aplikacji mobilnej Warehouse Management, przechodząc do **Zarządzanie magazynem \> Konfiguracja \> Urządzenie mobilne \> Nazwy pól aplikacji Warehouse** i wybierając **Utwórz konfigurację domyślną**. Aby uzyskać więcej informacji, zobacz temat [Konfigurowanie pól aplikacji mobilnej Warehouse Management](configure-app-field-names-priorities-warehouse.md).
 1. Powtórz poprzedni krok dla każdej osoby prawnej (firmy), w której korzystasz z aplikacji mobilnej Warehouse Management.
 
@@ -65,7 +53,7 @@ Ten scenariusz pokazuje, jak skonfigurować zapytanie o lokalizację jako obejś
 
 ### <a name="enable-sample-data"></a>Włącz dane przykładowe
 
-Aby użyć określonych przykładowych rekordów i wartości do pracy z tym scenariuszem, musisz używać systemu, w którym zainstalowane są standardowe dane demo. Należy również wybrać firmę **USMF** przed rozpoczęciem.
+Aby użyć określonych przykładowych rekordów i wartości do pracy z tym scenariuszem, musisz używać systemu, w którym zainstalowane są standardowe [dane demo](../../fin-ops-core/fin-ops/get-started/demo-data.md). Należy również wybrać firmę **USMF** przed rozpoczęciem.
 
 ### <a name="create-a-menu-specific-override-and-configure-the-detour-for-scenario-1"></a>Utwórz specyficzne dla menu nadpisanie i skonfiguruj obejście dla scenariusza 1
 
@@ -118,7 +106,7 @@ W zależności od potrzeb zapytanie o lokalizację można zastąpić zapytaniem 
 
 ### <a name="enable-sample-data"></a>Włącz dane przykładowe
 
-Aby użyć określonych przykładowych rekordów i wartości do pracy z tym scenariuszem, musisz używać systemu, w którym zainstalowane są standardowe dane demo. Należy również wybrać firmę **USMF** przed rozpoczęciem.
+Aby użyć określonych przykładowych rekordów i wartości do pracy z tym scenariuszem, musisz używać systemu, w którym zainstalowane są standardowe [dane demo](../../fin-ops-core/fin-ops/get-started/demo-data.md). Należy również wybrać firmę **USMF** przed rozpoczęciem.
 
 ### <a name="create-a-menu-specific-override-and-configure-the-detour-for-scenario-2"></a>Utwórz specyficzne dla menu nadpisanie i skonfiguruj obejście dla scenariusza 2
 

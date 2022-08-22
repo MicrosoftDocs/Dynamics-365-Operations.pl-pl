@@ -1,26 +1,26 @@
 ---
 title: Zaprojektuj format ER, aby wygenerować raport w formacie Excel z osadzonymi obrazami w nagłówkach lub stopkach stron
 description: W tym artykule wyjaśniono, jak używać raportowania elektronicznego (ER) do generowania dokumentów biznesowych zawierających obrazy i kształty osadzone w nagłówkach lub stopkach stron.
-author: NickSelin
+author: kfend
 ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: EROperationDesigner, ERParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 1cfde60459e440c851edb97276321216b1654e40
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.form: EROperationDesigner, ERParameters
+ms.openlocfilehash: 5b46d92094bb3f2dab67a5cb2f0e1a34b05d52f0
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854851"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281821"
 ---
 # <a name="design-an-er-format-to-generate-a-report-in-excel-format-with-embedded-images-in-page-headers-or-footers"></a>Zaprojektuj format ER, aby wygenerować raport w formacie Excel z osadzonymi obrazami w nagłówkach lub stopkach stron
 
@@ -196,7 +196,7 @@ W takim przypadku jako przedstawiciel Litware, Inc. musisz utworzyć (wyprowadzi
 
 ![Tworzenie konfiguracji dla niestandardowego formatu płatności w rozwijanym oknie dialogowym Utwórz konfigurację.](./media/er-embed-images-header-footer-excel-reports-add-derived-format.png)
 
-Zostanie 240.112.1 wersja formatu ER **niestandardowej faktury niezależnej (Excel)**. Ta wersja ma [stan](general-electronic-reporting.md#component-versioning) **Wersji roboczej** i można ją edytować. Bieżąca zawartość niestandardowego formatu ER jest zgodna z zawartością formatu dostarczonego przez Microsoft.
+Zostanie 240.112.1 wersja formatu ER **niestandardowej faktury niezależnej (Excel)**. Ta wersja ma stan **Wersji roboczej** i można ją edytować. Bieżąca zawartość niestandardowego formatu ER jest zgodna z zawartością formatu dostarczonego przez Microsoft.
 
 ![Nowa wersja konfiguracji formatu ER utworzona na stronie Konfiguracje.](./media/er-embed-images-header-footer-excel-reports-derived-format-configuration1.png)
 
@@ -244,7 +244,7 @@ Skonfiguruj niestandardowy format, aby obraz logo firmy był umieszczany w stopc
 
 ### <a name="mark-the-custom-format-as-runnable"></a><a id="MarkFormatRunnable"></a>Oznaczanie formatu niestandardowego jako wykonywalnego
 
-Teraz, gdy została utworzona pierwsza wersja formatu niestandardowego i ma ona stan **Wersja robocza**, można uruchomić format w celach testowych. Aby uruchomić raport, należy przetworzyć płatność dostawcy, używając metody płatności, która odwołuje się do niestandardowego formatu encji (ER). Domyślnie, podczas wywoływania formatu ER w aplikacji, jedynie wersje, które mają stan **Zakończono** lub **Udostępniono**, są [używane](general-electronic-reporting.md#component-versioning). To zachowanie pomaga zapobiegać używaniu formatów ER, w których znajdują się nieukończone projekty. Jednak w przypadku uruchamiania testów można wymusić na aplikacji używanie wersji formatu ER, która ma stan **Wersja robocza**. W ten sposób można dostosować bieżącą wersję formatu, jeśli są wymagane jakiekolwiek modyfikacje. Aby uzyskać więcej informacji, zobacz [Zastosowanie](electronic-reporting-destinations.md#applicability).
+Teraz, gdy została utworzona pierwsza wersja formatu niestandardowego i ma ona stan **Wersja robocza**, można uruchomić format w celach testowych. Aby uruchomić raport, należy przetworzyć płatność dostawcy, używając metody płatności, która odwołuje się do niestandardowego formatu encji (ER). Domyślnie, podczas wywoływania formatu ER w aplikacji, jedynie wersje, które mają stan **Zakończono** lub **Udostępniono**, są używane. To zachowanie pomaga zapobiegać używaniu formatów ER, w których znajdują się nieukończone projekty. Jednak w przypadku uruchamiania testów można wymusić na aplikacji używanie wersji formatu ER, która ma stan **Wersja robocza**. W ten sposób można dostosować bieżącą wersję formatu, jeśli są wymagane jakiekolwiek modyfikacje. Aby uzyskać więcej informacji, zobacz [Zastosowanie](electronic-reporting-destinations.md#applicability).
 
 Aby można było skorzystać z wersji roboczej formatu ER, należy odpowiednio go oznaczyć.
 

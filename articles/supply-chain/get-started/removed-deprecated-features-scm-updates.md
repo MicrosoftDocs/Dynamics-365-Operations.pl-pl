@@ -2,7 +2,7 @@
 title: Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Supply Chain Management
 description: W tym artykule opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia w Dynamics 365 Supply Chain Management.
 author: kamaybac
-ms.date: 04/27/2021
+ms.date: 06/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7c7dd90fea79ae83d238ed51b9ec1fc42e9e36b2
-ms.sourcegitcommit: f2501d93ffc1c7bf4e0daa78e63bc37528ef2358
+ms.openlocfilehash: f70d05f5663d8249b2435ad353421c278692a9ac
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/18/2022
-ms.locfileid: "9171524"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218812"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Supply Chain Management
 
@@ -33,6 +33,17 @@ Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych fun
 > [!NOTE]
 > Szczegółowe informacje o obiektów w aplikacji finansowych i operacyjnych można znaleźć w [raportach z wykazami parametrów technicznych](/dynamics/s-e/). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach aplikacji finansowych i operacyjnych.
 
+## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10029-release"></a>Usunięte lub przestarzałe funkcje w wydaniu rozwiązania Supply Chain Management 10.0.29
+
+### <a name="stock-transfer-orders-that-have-tax-on-the-transfer-price"></a>Zamówienia przeniesienia zapasów, które mają podatek od ceny przeniesienia
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Przyczyna wycofania/usunięcia** | Zamówienia [przeniesienia zapasów, które mają podatek w funkcji ceny](../../finance/localizations/apac-ind-gst-stock-transfer-transactions.md) przeniesienia, są zastępowane [przez funkcję Zamówienia przeniesienia zapasów dla Indii](../../finance/localizations/apac-ind-stock-transfer.md). |
+| **Zamieniona przez inną funkcję?**   | Tak, zamówienia [przeniesienia zapasów, które mają podatek w funkcji ceny](../../finance/localizations/apac-ind-gst-stock-transfer-transactions.md) przeniesienia, są zastępowane [przez funkcję Zamówienia przeniesienia zapasów dla Indii](../../finance/localizations/apac-ind-stock-transfer.md). |
+| **Powiązane obszary produktów** | Supply Chain Management - zapasy |
+| **Opcja wdrażania** | Wdrożenie w chmurze i lokalne |
+| **Stan** | <p>Są wycofane. Zlecenia przelewu *Zlecenia przeniesienia zapasów, które mają podatek od ceny transferowej* nie otrzymają wsparcia z poprawkami błędów i poprawkami bezpieczeństwa.</p><p>Po kwietniu 2023 roku odbiorcy zostaną proszeni o korzystanie z poprawionej funkcjonalności *Zamówienia przeniesienia zapasów dla Indii* domyślnie. Po październiku 2023 r. nie będzie już dostępna funkcja *Zleceń przeniesienia zapasów, które mają podatek od ceny przelewu*, a klienci zostaną poproszeni o przejście do ulepszonej funkcji *Zamówienia przeniesienia zapasów dla Indii*.</p><p>Aby uzyskać więcej informacji, zobacz [Zamówienia przeniesienia zapasów dla Indii](../../finance/localizations/apac-ind-stock-transfer.md).</p> |
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10019-release"></a>Usunięte lub przestarzałe funkcje w wydaniu rozwiązania Supply Chain Management 10.0.19
 

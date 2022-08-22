@@ -1,32 +1,32 @@
 ---
 title: Zarządzanie cyklem życia konfiguracji raportowania elektronicznego (ER)
 description: W tym artykule opisano sposób zarządzania cyklem życia konfiguracji aparatu raportowania elektronicznego (ER) w aplikacji Dynamics 365 Finance.
-author: NickSelin
+author: kfend
 ms.date: 07/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERDataModelDesigner, ERMappedFormatDesigner, ERModelMappingDesigner, ERModelMappingTable, ERSolutionImport, ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 58801
-ms.assetid: 35ad19ea-185d-4fce-b9cb-f94584b14f75
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d6a64908a167c09089a95f1d3faa825dcc63f064
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.custom: 58801
+ms.assetid: 35ad19ea-185d-4fce-b9cb-f94584b14f75
+ms.search.form: ERDataModelDesigner, ERMappedFormatDesigner, ERModelMappingDesigner, ERModelMappingTable, ERSolutionImport, ERSolutionTable, ERVendorTable, ERWorkspace
+ms.openlocfilehash: fe23d4cb2b293af466df2236b153974f95f636f8
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9109091"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271592"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Zarządzanie cyklem życia konfiguracji raportowania elektronicznego (ER)
 
 [!include [banner](../includes/banner.md)]
 
-W tym artykule opisano sposób zarządzania cyklem życia konfiguracji aparatu raportowania elektronicznego (ER) w aplikacji Dynamics 365 Finance.
+W tym artykule opisano sposób zarządzania cyklem życia konfiguracji aparatu [raportowania elektronicznego](general-electronic-reporting.md) (ER) [w aplikacji](general-electronic-reporting.md#Configuration) Dynamics 365 Finance.
 
 ## <a name="overview"></a>Omówienie
 
@@ -105,6 +105,41 @@ W niektórych przypadkach użytkownik może wymagać, aby system ignorował skon
 
     > [!NOTE]
     > Ten parametr jest właściwy dla użytkownika i właściwy dla firmy.
+
+## <a name="dependencies-on-other-components"></a>Zależności od innych składników
+
+Konfiguracje ER można skonfigurować jako [zależne](er-download-configurations-global-repo.md#import-filtered-configurations) od innych konfiguracji. Na przykład można [importować](er-download-configurations-global-repo.md) konfigurację ER [modelu danych](er-overview-components.md#data-model-component) z globalnego repozytorium do Twoje [Microsoft Regulatory Configuration Services (RCS)](../../../finance/localizations/rcs-overview.md) lub Dynamics 365 Finance, a następnie utwórz nowy [format](er-overview-components.md#format-component) konfiguracja, która jest [pochodną](er-quick-start2-customize-report.md#DeriveProvidedFormat) z zaimportowanej konfiguracji modelu danych ER. Pochodna konfiguracja formatu ER będzie zależna od konfiguracji podstawowego modelu danych ER.
+
+![Pochodna konfiguracja formatu ER na stronie Konfiguracje.](./media/ger-configuration-lifecycle-img1.png)
+
+Po zakończeniu projektowania formatu możesz zmienić stan początkowe [wersji](general-electronic-reporting.md#component-versioning) konfiguracji formatu raportowania elektronicznego z **Wersja robocza** na **Zakończono**. Można następnie udostępnić ukończoną wersję konfiguracji formatu ER, [publikując](../../../finance/localizations/rcs-global-repo-upload.md) ją w repozytorium globalnym. Następnie można uzyskać dostęp do repozytorium globalnego z dowolnego wystąpienia usługi RCS lub chmury Finance. Następnie można zaimportować dowolną wersję konfiguracji ER, która ma zastosowanie do aplikacji z repozytorium globalnym do tej aplikacji.
+
+![Opublikowana konfiguracja formatu ER na stronie repozytorium konfiguracji.](./media/ger-configuration-lifecycle-img2.png)
+
+Na podstawie zależności konfiguracji po wybraniu konfiguracji formatu raportowania elektronicznego w repozytorium globalnym w celu zaimportowania go do nowo wdrożonego wystąpienia RCS lub Finance podstawowa konfiguracja modelu danych raportowania elektronicznego jest automatycznie znajdowana w repozytorium globalnym i importowana wraz z wybranym formatem raportowania elektronicznego konfiguracja jako konfiguracja podstawowa.
+
+Można także wyeksportować wersję konfiguracji formatu ER z bieżącego wystąpienia serwera RCS lub Finance i zapisać ją lokalnie jako plik XML.
+
+![Eksportowanie wersji konfiguracji formatu ER jako XML na stronie Konfiguracja.](./media/ger-configuration-lifecycle-img3.png)
+
+W wersjach Finanse **przed wersją 10.0.29** podczas próby zaimportowania wersji konfiguracji formatu ER z tego pliku XML lub z dowolnego repozytorium innego niż repozytorium globalne do nowo wdrożonego wystąpienia pliku RCS lub finansowego, które nie zawiera jeszcze żadnych konfiguracji ER, zostanie wygenerowany następujący wyjątek, aby poinformować, że nie można uzyskać konfiguracji podstawowej:
+
+> Pozostały nierozpoznane odwołania<br>
+Nie można ustanowić odwołania obiektu „\<imported configuration name\>” do obiektu „Base” (\<globally unique identifier of the missed base configuration\>,\<version of the missed base configuration\>)
+
+![Importowanie wersji konfiguracji formatu ER na stronie repozytorium konfiguracji.](./media/ger-configuration-lifecycle-img4.gif)
+
+W wersji **10.0.29** i późniejszej przy próbie importu tej samej konfiguracji, jeśli nie można odnaleźć konfiguracji podstawowej w bieżącym wystąpieniu aplikacji lub w repozytorium źródłowym, które jest aktualnie stosowane (jeśli ma zastosowanie), narzędzia ER będą automatycznie próbowały znaleźć nazwę brakującej konfiguracji podstawowej w pamięci podręcznej repozytorium globalnego. Następnie w tekście zgłaszanego wyjątku zostanie przedstawiana nazwa i unikatowy identyfikator globalnie unikatowy (GUID) brakującej konfiguracji podstawowej.
+
+> Pozostały nierozpoznane odwołania<br>
+Nie można ustanowić odwołania obiektu „\<imported configuration name\>” do obiektu „Base” (\<name of the missed base configuration\> \<globally unique identifier of the missed base configuration\>,\<version of the missed base configuration\>)
+
+![Wyjątek na stronie Repozytorium konfiguracji, gdy nie można odnaleźć konfiguracji podstawowej.](./media/ger-configuration-lifecycle-img5.png)
+
+Podaną nazwę można użyć w celu znalezienia konfiguracji podstawowej, a następnie jej ręcznego zaimportowania.
+
+> [!NOTE]
+> Ta nowa opcja działa tylko wtedy, gdy co najmniej jeden użytkownik jest już zalogowany do repozytorium globalnym za pomocą strony [repozytoriów konfiguracji](er-download-configurations-global-repo.md#open-configurations-repository) lub jednego z pól [wyszukiwania](er-extended-format-lookup.md) repozytorium globalnego w bieżącym wystąpieniu finansów i gdy zawartość repozytorium globalnego została buforowana.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

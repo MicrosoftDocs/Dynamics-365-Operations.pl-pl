@@ -1,24 +1,24 @@
 ---
 title: ER Mapowanie modelu danych na wybrane źródła danych
 description: W tym artykule opisano sposób mapowania modelu danych raportowania elektronicznego (ER) na wybrane źródła danych Microsoft Dynamics 365 Finance.
-author: NickSelin
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 584462bde25b208e0084b4639fbe16153f251795
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner
+ms.openlocfilehash: 7d4dcc9b4e4e1128c8d1abee93b2f7affe711643
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854645"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9290193"
 ---
 # <a name="er-map-data-model-to-selected-data-sources"></a>ER Mapowanie modelu danych na wybrane źródła danych
 

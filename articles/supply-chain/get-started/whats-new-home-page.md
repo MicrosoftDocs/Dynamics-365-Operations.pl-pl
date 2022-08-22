@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 9426693e864f6b78f436890cc2aa970bfe0d410c
-ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
+ms.openlocfilehash: f4f170f6d6008157a13b3183056087e29501adc4
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "9166718"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220401"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management"></a>Nowości i zmiany w programie Dynamics 365 Supply Chain Management
 
@@ -31,6 +31,7 @@ Aby zobaczyć, co nowego lub zmieniła się w każdej wersji aplikacji Dynamics 
 
 | Wersja | Numer utworzenia | Dostępność automatycznej aktualizacji | Dowiedz się więcej |
 |---|---|---|---|
+| 10.0.29 | 10.0.1326 | 2022 października | [Wersja zapoznawcza aplikacji Dynamics 365 Supply Chain Management 10.0.29](whats-new-scm-10-0-29.md) |
 | 10.0.28 | 10.0.1264 | Lipiec 2022 | [Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.28](whats-new-scm-10-0-28.md) |
 | 10.0.27 | 10.0.1227 | Lipiec 2022 | [Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.27](whats-new-scm-10-0-27.md) |
 | 10.0.26 | 10.0.1192 | 2022 maja | [Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.26](whats-new-scm-10-0-26.md) |

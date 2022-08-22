@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 8dfa7d8e3bdbfd74c6f95d8b79ac1b0698f73bd6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 88ea680b5b3e237d117b087978d703a7f6f09465
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849134"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219697"
 ---
 # <a name="system-directed-work-sequencing"></a>Harmonogram prac sterowany przez system
 
@@ -44,7 +44,7 @@ Aby można było korzystać z funkcji harmonogramu pracy kierowanej przez system
 
 ### <a name="make-demo-data-available"></a>Udostępnianie danych pokazu
 
-Aby przejść przez ten scenariusz przy użyciu określonych przykładowych rekordów i wartości zaprezentowanych w tym artykule, należy korzystać z systemu, w którym są zainstalowane standardowe dane demonstracyjne. Ponadto należy wybrać firmę **USMF**. Scenariusz korzysta z magazynu *51* znajdującego się w danych demonstracyjnych.
+Aby przejść przez ten scenariusz przy użyciu określonych przykładowych rekordów i wartości zaprezentowanych w tym artykule, należy korzystać z systemu, w którym są zainstalowane standardowe [dane demonstracyjne](../../fin-ops-core/fin-ops/get-started/demo-data.md). Ponadto należy wybrać firmę **USMF**. Scenariusz korzysta z magazynu *51* znajdującego się w danych demonstracyjnych.
 
 > [!IMPORTANT]
 > Przed zwolnieniem zleceń do magazynu należy upewnić się, że lokalizacje pobrania mają wystarczającą ilość zapasów dla wszystkich pozycji na wszystkich zamówieniach.

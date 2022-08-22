@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eeb14a3b0a61f34819bdd8d524e65ac214a81c35
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b881f9c6f872061864d4254ce880d981ca71c479
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857584"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219043"
 ---
 # <a name="inspect-the-quality-of-goods"></a>Sprawdzanie jakości towarów
 
@@ -27,7 +27,7 @@ ms.locfileid: "8857584"
 
 W tym artykule opisano sposób przetwarzania zleceń kontroli jakości. Kontrole jakości są zazwyczaj wykonywane przez pracownika ds. kontroli jakości.
 
-Jeśli są zainstalowane standardowe dane demonstracyjne, możesz użyć ich do wykonania procedur standardowych w tym artykule. Aby użyć danych demonstracyjnych, należy wybrać firmę *USMF* przed rozpoczęciem. Następnie musisz potwierdzić zamówienie zakupu *000016* i zatwierdzić dokument przyjęcia produktów. Zlecenie kontroli jakości zostanie wygenerowane automatycznie.
+Jeśli są zainstalowane standardowe [dane demonstracyjne](../../../fin-ops-core/fin-ops/get-started/demo-data.md), możesz użyć ich do wykonania procedur standardowych w tym artykule. Aby użyć danych demonstracyjnych, należy wybrać firmę *USMF* przed rozpoczęciem. Następnie musisz potwierdzić zamówienie zakupu *000016* i zatwierdzić dokument przyjęcia produktów. Zlecenie kontroli jakości zostanie wygenerowane automatycznie.
 
 ## <a name="step-1-select-a-quality-order"></a>Krok 1: Wybieranie zlecenia kontroli jakości
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f008c273a3088353c33ae8c4b0b3cbc6b274fbcf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 261d71e955e4cb1a4a461d59725c631248e10b17
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8901155"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9227906"
 ---
 # <a name="benefits-management-overview"></a>Omówienie zarządzania świadczeniami
 
@@ -147,6 +147,16 @@ Aby móc przetwarzać zdarzenia z życia, musisz przeprowadzić otwartą rejestr
 - [Przetwarzanie zdarzeń zmiany sytuacji życiowej](hr-benefits-process-life-events.md)
 - [Przetwarzanie zmian zdarzeń zmiany sytuacji życiowej](hr-benefits-process-life-event-changes.md)
 - [Przetwarzanie uprawnień zdarzeń zmiany sytuacji życiowej](hr-benefits-process-life-event-eligibility.md)
+
+Po zakończeniu przetwarzania zdarzeń życia, dopóki okres rejestracji zdarzenia life event jest otwarty, pracownicy mogą wprowadzać zmiany w opcjach planu, których dotyczą zdarzenia life event. Administratorzy mogą wprowadzać zmiany w imieniu pracowników. Po zakończeniu okresu rejestracji, gdy żadne niepotwierdzone typy planów nie są powiązane z transakcją zdarzenia życiowego, transakcja zostaje zamknięta.
+
+Wszystkie plany, na które ma wpływ wydarzenie życiowe, muszą zostać wybrane lub uchylone, a następnie potwierdzone. Jeśli plan nie zostanie wybrany, nie zostanie zniesiony, a zatem nie zostanie potwierdzony, transakcja zdarzenia życiowego nie zostanie zamknięta.
+
+W razie potrzeby administratorzy mogą ręcznie zamknąć transakcję zdarzenia life event, zaznaczając ją, a następnie wybierając **przycisk Zamknij**. Jeśli istnieją niepotwierdzone plany, które administrator chce zamknąć, może uniemożliwić modyfikacje tych planów.
+
+Nie można usunąć zamkniętych zdarzeń cyklu życia.
+
+W razie potrzeby administratorzy mogą ponownie otworzyć transakcję zdarzenia life event, zaznaczając ją, a następnie wybierając **Otwórz ponownie**.
 
 ## <a name="rate-updates-optional"></a>Aktualizacje stawek (opcjonalnie)
 

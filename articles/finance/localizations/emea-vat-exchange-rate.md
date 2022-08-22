@@ -1,28 +1,26 @@
 ---
 title: Podstawowe informacje o kursie wymiany dla podatku VAT
 description: Ten artykuł zawiera informacje dotyczące kursów wymiany dla obliczeń podatku VAT dostępnych dla Czech, Węgier i Polski.
-author: ShylaThompson
+author: mrolecki
 ms.date: 07/08/2021
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ExchangeRateCurrencyPairCalculationRules, LedgerParameters, SalesTaxExchangeRateType, TaxTmpWorkTrans
 audience: Application User
 ms.reviewer: kfend
-ms.custom:
-- "272703"
-- intro-internal
-ms.assetid: 2d1fad67-8234-49cc-b009-0f3cc29f5886
 ms.search.region: Czech Republic, Hungary, Poland
 ms.author: mrolecki
-ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: d8ca93f4e62e07730a32d7b08546c55e584e8b21
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.dyn365.ops.version: Version 1611
+ms.custom: 272703,  ""intro-internal
+ms.assetid: 2d1fad67-8234-49cc-b009-0f3cc29f5886
+ms.search.form: ExchangeRateCurrencyPairCalculationRules, LedgerParameters, SalesTaxExchangeRateType, TaxTmpWorkTrans
+ms.openlocfilehash: b132eb08bbdba8c940d2e359c9f01beb1f4a376a
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865479"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9269342"
 ---
 # <a name="vat-exchange-rate-overview"></a>Podstawowe informacje o kursie wymiany dla podatku VAT
 

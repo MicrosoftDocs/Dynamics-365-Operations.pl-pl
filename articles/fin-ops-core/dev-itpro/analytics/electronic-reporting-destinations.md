@@ -1,26 +1,26 @@
 ---
 title: Miejsca docelowe raportowania elektronicznego (ER)
 description: Ten artykuł zawiera informacje dotyczące zarządzania miejscami docelowymi raportowania elektronicznego, typów obsługiwanych miejsc docelowych oraz względów bezpieczeństwa.
-author: nselin
+author: kfend
 ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: DocuType, ERSolutionTable
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 97423
-ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 ms.search.region: Global
-ms.author: mrolecki
+ms.author: filatovm
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: bc8ef4a5299e6daba79702fadd37284f752a54a7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 97423
+ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
+ms.search.form: DocuType, ERSolutionTable
+ms.openlocfilehash: 1718b9e32c1e9f34d38479b74d59af6233f82a8c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851085"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281976"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Miejsca docelowe raportowania elektronicznego (ER)
 
@@ -118,7 +118,7 @@ Konfigurując miejsca docelowe plików dla wybranego formatu, należy skonfiguro
 
 [![Łącze do konfiguracji.](./media/ER_Destinations-ConfigurationLink.png)](./media/ER_Destinations-ConfigurationLink.png)
 
-Jednocześnie może istnieć wiele [wersji](general-electronic-reporting.md#component-versioning) formatu zaimportowanych do bieżącego Finance. Można je wyświetlić w przypadku wybrania łącza **Konfiguracja** oferowanego po zaznaczeniu pola **Odwołanie**.
+Jednocześnie może istnieć wiele wersji formatu zaimportowanych do bieżącego Finance. Można je wyświetlić w przypadku wybrania łącza **Konfiguracja** oferowanego po zaznaczeniu pola **Odwołanie**.
 
 [![Wersje konfiguracji.](./media/ER_Destinations-ConfigurationVersions.png)](./media/ER_Destinations-ConfigurationVersions.png)
 
@@ -180,6 +180,16 @@ Wygenerowany dokument PDF jest ograniczony do maksymalnej długości wynoszącej
 Od Finance w **wersji 10.0.9** w dokumencie PDF wytwarzanym z formatu wyjściowego programu Excel jest obsługiwana tylko pozioma orientacja strony. Począwszy od aplikacji Finance w **wersji 10.0.10 lub nowszych** można określić [orientację strony](#SelectPdfPageOrientation) w dokumencie PDF, który jest tworzony na podstawie danych wyjściowych programu Excel podczas konfigurowania miejsca docelowego ER.
 
 Tylko typowe czcionki systemowe systemu operacyjnego Windows są używane do konwertowania danych wyjściowych, które nie zawierają czcionek osadzonych.
+
+### <a name="resources"></a>Zasoby
+
+Zanim wersja finansowa 10.0.29, konwersja w formacie PDF będzie mogła być wykonywana tylko poza bieżącym wystąpieniem finansów. Wygenerowany plik został wysłany z finansów do usługi konwersji, a następnie usługa zwróciła przekonwertowany dokument. Jednak w wersji **10.0.29 i nowszych** oprócz funkcji **Konwertuj dokumenty wychodzące z formatów Microsoft Office na PDF** możesz włączyć **Wykorzystaj zasoby aplikacji do wykonywania dokumentów CBD konwersja z formatu Word do formatu PDF**. Ta funkcja umożliwia lokalne konwertowanie wygenerowanych dokumentów programu Word na format PDF za pomocą zasobów serwera aplikacji w bieżącym wystąpieniu finansów. 
+
+Oto zalety lokalnej konwersji PDF, gdy włączona jest funkcja **Wykorzystaj zasoby aplikacji do konwersji dokumentów CBD z formatu Word do formatu PDF**:
+
+- Wygenerowany dokument PDF jest [ograniczony](#limitations) do maksymalnej długości wynoszącej liczbę stron.
+- Konwertowany dokument programu Word może zawierać wiele [formantów zawartości](https://fix.lcs.dynamics.com/Issue/Details?bugId=647877&dbType=3).
+- Łączność internetową nie jest wymagana we wdrożeniach lokalnych.
 
 ### <a name="use-the-pdf-conversion-option"></a>Użyj opcji konwersji na PDF
 

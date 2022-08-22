@@ -1,26 +1,26 @@
 ---
 title: Sprawdzanie skonfigurowanego składnika ER, aby zapobiec problemom w czasie wykonywania
 description: W tym artykule opisano sposób sprawdzania skonfigurowanych składników raportowania elektronicznego (ER) w celu zapobiegania problemom, które mogą wystąpić w czasie wykonywania.
-author: NickSelin
+author: kfend
 ms.date: 01/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 220314
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c30f1a0d6ca4a50645bada39abbbf2f58777abb8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220314
+ms.assetid: ''
+ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
+ms.openlocfilehash: 53835bbceaa89793d890d8bc18921497c686e969
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864844"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9277859"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Sprawdzanie skonfigurowanego składnika ER, aby zapobiec problemom w czasie wykonywania
 
@@ -30,8 +30,8 @@ Każdy skonfigurowany składnik w postaci [formatu](er-overview-components.md#fo
 
 Domyślnie sprawdzanie poprawności jest stosowane automatycznie w następujących przypadkach dla konfiguracji ER, która zawiera wspomniane wcześniej składniki ER:
 
-- [Importujesz](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) nową [wersję](general-electronic-reporting.md#component-versioning) konfiguracji ER do wystąpienia rozwiązania Microsoft Dynamics 365 Finance.
-- Zmieniasz [stan](general-electronic-reporting.md#component-versioning) edytowalnej konfiguracji ER z **Wersja robocza** na **Ukończono**.
+- [Importujesz](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) nową wersję konfiguracji ER do wystąpienia rozwiązania Microsoft Dynamics 365 Finance.
+- Zmieniasz stan edytowalnej konfiguracji ER z **Wersja robocza** na **Ukończono**.
 - Zmieniasz [podstawę](general-electronic-reporting.md#upgrading-a-format-selecting-a-new-version-of-base-format-rebase) edytowalnej konfiguracji ER poprzez zastosowanie nowej wersji bazowej.
 
 To sprawdzenie poprawności można uruchomić jawnie. Wybierz jedną z następujących trzech opcji i wykonaj podane kroki:
@@ -770,7 +770,7 @@ Zmodyfikuj skonfigurowany format, usuwając powiązanie dla elementu formatu **Z
 
 ## <a name="not-linked-template"></a><a id="i12"></a>Niepołączony szablon
 
-Podczas [ręcznego](er-fillable-excel.md#manual-entry) konfigurowania składnika formatu ER, aby używał szablonu do generowania dokumentu wychodzącego, należy ręcznie dodać element **Excel\\Plik**, dodać wymagany szablon jako załącznik edytowalnego składnika, a następnie wybrać ten załącznik w dodanym elemencie **Excel\\Plik**. W ten sposób wskażesz, że dodany element będzie wypełniał wybrany szablon w czasie wykonywania. Podczas konfigurowania wersji składnika formatu o [stanie](general-electronic-reporting.md#component-versioning) **Wersja robocza** można dodać kilka szablonów do edytowalnego składnika, a następnie wybierać każdy szablon w składniku **Excel\\Plik** w celu uruchamiania formatu ER. W ten sposób można zobaczyć, jak są wypełniane różne szablony w czasie wykonywania. Jeśli masz szablony, które nie są wybierane w żadnych elementach **Excel\\Plik**, projektant formatu w module ER ostrzeżenie, że te szablony zostaną usunięte z wersji edytowalnego składnika formatu ER po zmianie jego stanu z **Wersja robocza** na **Ukończono**.
+Podczas [ręcznego](er-fillable-excel.md#manual-entry) konfigurowania składnika formatu ER, aby używał szablonu do generowania dokumentu wychodzącego, należy ręcznie dodać element **Excel\\Plik**, dodać wymagany szablon jako załącznik edytowalnego składnika, a następnie wybrać ten załącznik w dodanym elemencie **Excel\\Plik**. W ten sposób wskażesz, że dodany element będzie wypełniał wybrany szablon w czasie wykonywania. Podczas konfigurowania wersji składnika formatu o stanie **Wersja robocza** można dodać kilka szablonów do edytowalnego składnika, a następnie wybierać każdy szablon w składniku **Excel\\Plik** w celu uruchamiania formatu ER. W ten sposób można zobaczyć, jak są wypełniane różne szablony w czasie wykonywania. Jeśli masz szablony, które nie są wybierane w żadnych elementach **Excel\\Plik**, projektant formatu w module ER ostrzeżenie, że te szablony zostaną usunięte z wersji edytowalnego składnika formatu ER po zmianie jego stanu z **Wersja robocza** na **Ukończono**.
 
 Poniższe kroki pokazują, jak może dojść do tego problemu.
 

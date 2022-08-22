@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 8b75907d01a029da1ed6a8224f8a7c0ca0230550
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: fc4348f8207f4f6c8a0b694bc3e57beb29449a15
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068679"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219481"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Wiekowanie pobierania z zapasów dla dyrektywy lokalizacji
 
@@ -34,8 +34,8 @@ Gdy zapasy są najpierw odbierane lub tworzone w magazynie, system aktualizuje o
 
 Aby ta funkcja była dostępna, włącz następujące funkcje w module [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) w kolejności:
 
-1. Stan lokalizacji w magazynie
-1. Wiekowanie pobierania z zapasów dla dyrektywy lokalizacji
+1. *Stan lokalizacji w magazynie* (na podstawie wersji 10.0.29 ta funkcja jest domyślnie włączona. Aby uzyskać więcej informacji, zajrzyj do [Stan lokalizacji w magazynie](warehouse-location-status.md)).
+1. *Wiekowanie pobierania z zapasów dla dyrektywy lokalizacji*
 
 ## <a name="feature-requirements"></a>Wymagania dotyczące funkcji
 
@@ -50,7 +50,7 @@ Ta sekcja zawiera przykłady dotyczące konfigurowania strategii FIFO i LIFO ora
 
 ### <a name="make-sample-data-available"></a>Udostępnianie danych pokazowych
 
-Aby pracować z tymi scenariuszami przy użyciu określonych przykładowych rekordów i wartości tutaj określonych, należy użyć systemu, w którym są zainstalowane standardowe [dane demonstracyjne](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md). Dodatkowo należy również wybrać firmę **USMF** przed rozpoczęciem.
+Aby pracować z tymi scenariuszami przy użyciu określonych przykładowych rekordów i wartości tutaj określonych, należy użyć systemu, w którym są zainstalowane standardowe [dane demonstracyjne](../../fin-ops-core/fin-ops/get-started/demo-data.md). Dodatkowo należy również wybrać firmę **USMF** przed rozpoczęciem.
 
 Tych scenariuszy można również używać jako wskazówek dotyczących korzystania z danej funkcji podczas pracy w produkcji. Jednak w takim przypadku należy podstawić własne wartości dla każdego ustawienia opisanego w tym polu.
 

@@ -1,7 +1,7 @@
 ---
 title: Modyfikowanie modeli i mapowań w celu generowania dokumentów zawierających dane aplikacji
 description: W tym artykule opisano sposób projektowania konfiguracji raportowania elektronicznego (ER) do generowania dokumentu elektronicznego i aktualizowania danych aplikacji. (część 2 — generowanie dokumentów).
-author: NickSelin
+author: kfend
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
@@ -9,15 +9,15 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 797057112e9476389655b870fd729acd33d57e43
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8e94a78b9ee9821b65430b2fed179fd9f15617c1
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8908305"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9290523"
 ---
 # <a name="modify-models-and-mappings-to-generate-documents-that-have-application-data"></a>Modyfikowanie modeli i mapowań w celu generowania dokumentów zawierających dane aplikacji
 

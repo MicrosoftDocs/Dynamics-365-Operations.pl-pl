@@ -1,20 +1,20 @@
 ---
 title: Deklaracja podatku VAT (Niemcy)
 description: W tym artykule opisano sposób konfigurowania i generowania deklaracji podatku od towarów i usług (VAT) dla Niemiec w oficjalnym formacie XML.
-author: anasyash
+author: AdamTrukawka
 ms.date: 03/10/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: ''
-ms.openlocfilehash: ff52963c03ec2eb662eb0c20ef2a960e3b999167
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8ee288a1ec7ae950bdff9da7d373e29daef74d3c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879540"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9269413"
 ---
 # <a name="vat-declaration-germany"></a>Deklaracja podatku VAT (Niemcy)
 

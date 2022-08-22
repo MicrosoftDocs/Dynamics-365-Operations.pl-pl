@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 274063
 ms.search.region: Poland
-ms.author: roschlom
-ms.dyn365.ops.version: AX 7.0.1
+ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
-ms.openlocfilehash: 5ab3555c22dae02e41cc62adc2786aea8e93d93b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.dyn365.ops.version: AX 7.0.1
+ms.custom: 274063
+ms.openlocfilehash: 66e1050da05c4470dc7950c3fd9804a6a3eb62a0
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8875927"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9286994"
 ---
 # <a name="sales-tax-reports-for-poland"></a>Sprawozdania podatkowe dla Polski
 [!include [banner](../includes/banner.md)]

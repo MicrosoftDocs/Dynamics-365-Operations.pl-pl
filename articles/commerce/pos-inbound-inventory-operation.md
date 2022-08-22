@@ -1,27 +1,27 @@
 ---
 title: Operacja zapasów przychodzących w punkcie sprzedaży
 description: W tym artykule opisano możliwości przychodzących operacji magazynowych w punkcie sprzedaży (POS).
-author: hhaines
+author: hhainesms
 ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: fbabcaafee74b4d0a1ca8ef79de94376a7764aa3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.industry: Retail
+ms.search.form: ''
+ms.openlocfilehash: 3099f03ba2da8a367953ad0d25ee884e41ff9deb
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8858889"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9288360"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Operacja zapasów przychodzących w punkcie sprzedaży
 
@@ -155,15 +155,13 @@ Jeśli jest to wymagane, można wybrać opcję **Przyjmij wszystko** na pasku ap
 
 ### <a name="receipt-of-unplanned-items-on-purchase-orders"></a>Przyjęcie nieplanowanych towarów na zamówieniach zakupu
 
-W wersji Commerce 10.0.14 lub nowszej użytkownicy mogą uzyskać produkt, który nie znajdował się na pierwotnym zamówieniu zakupu. Aby włączyć tę funkcję, należy włączyć opcję **Dodawania wierszy do zamówienia zakupu podczas otrzymywania w punkcie sprzedaży**.  
-
-Ta funkcja działa tylko dla przyjęcia zamówienia zakupu. Nie można przyjmować towarów w ramach zamówień przeniesienia, jeśli towary nie zostały wcześniej zamówione i wysłane z magazynu wychodzącego.
+W wersji Commerce 10.0.14 lub nowszej użytkownicy mogą uzyskać produkt, który nie znajdował się na pierwotnym zamówieniu zakupu. Ta funkcja działa tylko dla przyjęcia zamówienia zakupu. Nie można przyjmować towarów w ramach zamówień przeniesienia, jeśli towary nie zostały wcześniej zamówione i wysłane z magazynu wychodzącego.
 
 Użytkownicy nie mogą dodawać nowych produktów do zamówienia zakupu podczas odbierania w punkcie sprzedaży, jeśli [zarządzanie zmianami przepływu pracy](../supply-chain/procurement/purchase-order-approval-confirmation.md) jest uruchomione w Commerce Headquarter (HQ). Aby umożliwić zarządzanie zmianami, wszystkie zmiany w zamówieniu zakupu należy najpierw zatwierdzić przed zezwoleniem na odebranie. Ponieważ ten proces umożliwia odbiorcy dodawanie nowych wierszy do zamówienia zakupu, odbieranie nie powiedzie się, jeśli jest włączony przepływ pracy zarządzania zmianami. Jeśli funkcja zarządzania zmianami jest włączona dla wszystkich zamówień zakupu lub dla dostawcy połączonego z zamówieniem zakupu, które w tym momencie odbierane w punkcie sprzedaży, użytkownik nie może dodawać nowych produktów do zamówienia zakupu podczas przyjmowania w punkcie sprzedaży.
 
 Funkcja umożliwiająca dodawanie wierszy nie może być używana jako obejście do przyjmowania dodatkowych ilości produktów już znajdujących się w zamówieniu zakupu. Nadmierne odbieranie jest zarządzane przy użyciu standardowych ustawień [nadwyżki w odbiorze](#over-receiving-validations) dla wiersza produktu w zamówieniu zakupu.
 
-Jeśli jest włączona funkcja **Dodawania wierszy do zamówienia zakupu podczas otrzymywania w punkcie sprzedaży**, a użytkownik odbiera w punkcie w ramach **Operacji przychodzącej**, w przypadku skanowania kodu kreskowego lub numeru produktu, który nie został rozpoznany jako towar w bieżącym zamówieniu zakupu, ale jest rozpoznawany jako prawidłowy towar, użytkownik otrzymuje komunikat dotyczący dodawania towaru do zamówienia zakupu. Jeśli użytkownik doda towar do zamówienia zakupu, ilość wprowadzona w polu **Przyjęcie** jest uważana za zamówioną ilość dla wiersza zamówienia zakupu.
+Jeśli użytkownik odbiera w punkcie w ramach **Operacji przychodzącej**, w przypadku skanowania kodu kreskowego lub numeru produktu, który nie został rozpoznany jako towar w bieżącym zamówieniu zakupu, ale jest rozpoznawany jako prawidłowy towar, użytkownik otrzymuje komunikat dotyczący dodawania towaru do zamówienia zakupu. Jeśli użytkownik doda towar do zamówienia zakupu, ilość wprowadzona w polu **Przyjęcie** jest uważana za zamówioną ilość dla wiersza zamówienia zakupu.
 
 Gdy przyjęcie zamówienia zakupu zostało zakończone i przesłane do HQ w celu przetworzenia, dodane wiersze są tworzone w dokumencie głównym zamówienia zakupu. W wierszu zamówienia zakupu w HQ w pojawi się flaga **Dodane w POS**, w zakładce **Ogólne** w wierszu zamówienia zakupu. Flaga **Dodana przez POS** wskazuje, że wiersz zamówienia zakupu został dodany przez proces odbierania w punkcie sprzedaży i nie był wierszem, który był na zamówieniu zakupu przed jego przyjęciem.
 

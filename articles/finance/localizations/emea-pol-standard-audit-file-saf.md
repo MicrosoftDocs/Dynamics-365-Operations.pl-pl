@@ -1,26 +1,26 @@
 ---
 title: Standardowy plik audytu (SAF) dla Polski
 description: Użytkownicy w firmach w Polsce mogą generować standardowe plik audytu dla podatku (SAF-T) w formacie XML. Ten artykuł zawiera informacje dotyczące formatów dla Polski.
-author: LizaGolub
+author: AdamTrukawka
 ms.date: 05/19/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
 audience: Application User
 ms.reviewer: kfend
+ms.search.region: Poland
+ms.author: atrukawk
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
 ms.custom: 274193
 ms.assetid: b85c4019-f682-45bf-9a0d-c7549a2f1274
-ms.search.region: Poland
-ms.author: kfend
-ms.dyn365.ops.version: Version 1611
-ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 9c68a5750b8e7b886c5b00f341d9a3e038b76fe5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
+ms.openlocfilehash: 24595e35a06f33cc7e5a485962f593b7b6f6819e
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903014"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9274584"
 ---
 # <a name="standard-audit-file-saf-for-poland"></a>Standardowy plik audytu (SAF) dla Polski
 

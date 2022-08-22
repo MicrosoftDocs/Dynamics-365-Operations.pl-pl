@@ -1,28 +1,26 @@
 ---
 title: Dostosowanie formatu ER w celu wygenerowania niestandardowego dokumentu elektronicznego
 description: W tym artykule opisano sposób korygowania formatu modułu raportowanie elektronicznego (ER) dostarczonego przez Microsoft, aby wygenerować niestandardowy dokument elektroniczny.
-author: NickSelin
+author: kfend
 ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom:
-- "220314"
-- intro-internal
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 492964d3cea0e474a50d6d83231f33d9508b9d9d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220314,  ""intro-internal
+ms.assetid: ''
+ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
+ms.openlocfilehash: 8b0bcdbd011c4c04e2693a3dcb8033c3cbe2adc7
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886799"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9283567"
 ---
 # <a name="adjust-an-er-format-to-generate-a-custom-electronic-document"></a>Dostosowanie formatu ER w celu wygenerowania niestandardowego dokumentu elektronicznego
 
@@ -271,7 +269,7 @@ W tym przypadku, jako przedstawiciel Litware, Inc., należy utworzyć (uzyskać)
 
 6. Wybierz **Utwórz konfigurację**.
 
-Utworzono konfigurację tematu ER **BACS (niestandardowy brytyjski)** w wersji 1.1.1. Ta wersja ma [stan](general-electronic-reporting.md#component-versioning) **Wersji roboczej** i można ją edytować. Bieżąca zawartość niestandardowego formatu ER jest zgodna z zawartością formatu dostarczonego przez Microsoft.
+Utworzono konfigurację tematu ER **BACS (niestandardowy brytyjski)** w wersji 1.1.1. Ta wersja ma stan **Wersji roboczej** i można ją edytować. Bieżąca zawartość niestandardowego formatu ER jest zgodna z zawartością formatu dostarczonego przez Microsoft.
 
 ![Strona konfiguracji z konfiguracją formatu raportowania elektronicznego BACS (niestandardowy brytyjski) w wersji 1.1.1.](./media/er-quick-start2-derived-format-configuration1.png)
 
@@ -324,7 +322,7 @@ Musisz skonfigurować format niestandardowy, aby spełniał wymagania specyficzn
 
 ### <a name="mark-a-custom-format-as-runnable"></a><a id="MarkFormatRunnable"></a>Oznaczanie formatu niestandardowego jako wykonywalnego
 
-Teraz, gdy została utworzona pierwsza wersja formatu niestandardowego i ma ona stan **Wersja robocza**, można ją uruchomić w celach testowych. Aby uruchomić raport, należy przetworzyć płatność dostawcy, używając metody płatności, która odwołuje się do niestandardowego formatu encji (ER). Domyślnie, podczas wywoływania formatu ER w aplikacji, jedynie wersje, które mają stan **Zakończono** lub **Udostępniono**, są [używane](general-electronic-reporting.md#component-versioning). To zachowanie pomaga zapobiegać używaniu formatów ER, w których znajdują się nieukończone projekty. Jednak w przypadku uruchamiania testów można wymusić na aplikacji używanie wersji formatu ER, która ma stan **Wersja robocza**. W ten sposób można dostosować bieżącą wersję formatu, jeśli są wymagane jakiekolwiek modyfikacje. Aby uzyskać więcej informacji, zobacz [Zastosowanie](electronic-reporting-destinations.md#applicability).
+Teraz, gdy została utworzona pierwsza wersja formatu niestandardowego i ma ona stan **Wersja robocza**, można ją uruchomić w celach testowych. Aby uruchomić raport, należy przetworzyć płatność dostawcy, używając metody płatności, która odwołuje się do niestandardowego formatu encji (ER). Domyślnie, podczas wywoływania formatu ER w aplikacji, jedynie wersje, które mają stan **Zakończono** lub **Udostępniono**, są używane. To zachowanie pomaga zapobiegać używaniu formatów ER, w których znajdują się nieukończone projekty. Jednak w przypadku uruchamiania testów można wymusić na aplikacji używanie wersji formatu ER, która ma stan **Wersja robocza**. W ten sposób można dostosować bieżącą wersję formatu, jeśli są wymagane jakiekolwiek modyfikacje. Aby uzyskać więcej informacji, zobacz [Zastosowanie](electronic-reporting-destinations.md#applicability).
 
 Aby można było skorzystać z wersji roboczej formatu ER, należy odpowiednio go oznaczyć.
 

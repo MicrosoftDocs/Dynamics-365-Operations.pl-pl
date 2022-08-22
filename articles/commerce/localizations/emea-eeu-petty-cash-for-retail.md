@@ -1,7 +1,7 @@
 ---
 title: Zarządzanie gotówką podręczną w aplikacji Commerce dla Europy Wschodniej
 description: W tym artykule opisano sposób konfigurowania i używania funkcji zarządzania środkami pieniężnymi w aplikacji Commerce dla Europy Wschodniej.
-author: epopov
+author: EvgenyPopovMBS
 ms.date: 10/03/2018
 ms.topic: article
 ms.prod: ''
@@ -9,16 +9,16 @@ ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
-ms.search.industry: Retail
-ms.author: epopov
+ms.author: josaw
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 160435e77395c4526ac6f1a3afab70fc0a62dc7c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.industry: Retail
+ms.openlocfilehash: 4607366b9f844c21b982b6e475a345de2fe99ed1
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894482"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9278018"
 ---
 # <a name="petty-cash-management-for-commerce-for-eastern-europe"></a>Zarządzanie gotówką podręczną w aplikacji Commerce dla Europy Wschodniej
 

@@ -1,23 +1,23 @@
 ---
 title: Katalog szkoleń dla Dynamics 365 Commerce
 description: Poznaj wszystkie opcje szkoleń dla Dynamics 365 Commerce.
-author: margoc
-ms.topic: article
+author: josaw1
 ms.date: 07/23/2020
-ms.author: margoc
+ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: josaw
 ms.search.region: Global
+ms.author: josaw
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 325adeb1e5ea64433d8b2fd6cc54819194771cfb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 282f9ca85ad4197cd9818fc0f1cd2fceb61621b9
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8883945"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9269951"
 ---
 # <a name="dynamics-365-commerce-learning-catalog"></a>Katalog szkoleń Dynamics 365 Commerce 
 

@@ -1,26 +1,26 @@
 ---
 title: Obsługa parametrów wywołań modeli danych ER
 description: W tym artykule opisano sposób implementacji parametrów wywołań modeli danych raportowania elektronicznego (ER).
-author: NickSelin
+author: kfend
 ms.date: 03/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERModelMappingDesigner, EROperationDesigner, ERExpressionDesignerFormula, ERDataModelDesigner
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2020-10-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 65ac81e9aa25b286640fd526e71b55de3b0695ca
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.form: ERModelMappingDesigner, EROperationDesigner, ERExpressionDesignerFormula, ERDataModelDesigner
+ms.openlocfilehash: 5be189c19d963991ec012de189bbf7b721b88fef
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884265"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9275997"
 ---
 # <a name="support-parameterized-calls-of-er-data-models"></a>Obsługa parametrów wywołań modeli danych ER
 
@@ -278,7 +278,7 @@ Modyfikacje można wprowadzić, gdy działający format gromadzi w pamięci unik
 
 1. Otwórz **Administracja organizacji** \> **Elektroniczne raportowanie** \> **Konfiguracje**.
 2. Na stronie **Konfiguracje** w drzewie konfiguracji w panelu po lewej wybierz pozycję **Przykładowy model audytu**.
-3. Na skróconej karcie **wersje** wybierz wersję **2** ze stanem **[Wersja robocza](general-electronic-reporting.md#component-versioning)**.
+3. Na skróconej karcie **wersje** wybierz wersję **2** ze stanem **Wersja robocza**.
 4. Wybierz **składniki konfiguracji** skróconej karcie.
 5. Wybierz **Projektant**, aby otworzyć model danych do edycji.
 6. Na stronie **Model** danych upewnij się, że pole `Root` jest zaznaczone, a następnie wybierz pozycję **Nowy**.

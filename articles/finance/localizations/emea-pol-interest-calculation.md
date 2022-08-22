@@ -1,7 +1,7 @@
 ---
 title: Odsetki podatkowe i rynkowe w Polsce
 description: W tym artykule omówiono proces konfigurowania i obliczania odsetek od podatku dla Polski.
-author: ShylaThompson
+author: AdamTrukawka
 ms.date: 05/18/2018
 ms.topic: article
 ms.prod: ''
@@ -9,15 +9,15 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Poland
-ms.author: roschlom
+ms.author: atrukawk
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 540f64cf15433af632457ce57c5f2572fc32da4b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0df9a48df3556f32c4024b18521bc6ddcd858944
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879497"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9272110"
 ---
 # <a name="tax-interest-and-free-hand-interest-for-poland"></a>Odsetki podatkowe i rynkowe w Polsce
 

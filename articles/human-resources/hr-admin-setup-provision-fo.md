@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 15060d8bdd598476081c22d7280319da3db0cb31
-ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
+ms.openlocfilehash: 2fd8176d16178ecc4ba667e5937f2cec2e0af2c3
+ms.sourcegitcommit: bd3b55e1af28e592c97b540de1e87cd8ba9c35a8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "9178421"
+ms.lasthandoff: 08/03/2022
+ms.locfileid: "9221603"
 ---
 # <a name="provision-human-resources-in-the-finance-and-operations-infrastructure"></a>Ustanowienie rozwiązania Human Resources w infrastrukturze związanej z finansami i operacjami
 
@@ -52,8 +52,8 @@ Oto kilka uwag dotyczących dodatkowych środowisk opcjonalnych:
 - **Integracja** – Konfiguracja i testowanie integracji, które mogą obejmować integracje natywne lub niestandardowe, takie jak integracje z listą płac, systemami śledzenia kandydatów czy systemami i dostawcami świadczeń.
 - **Szkolenie** - Możesz potrzebować osobnego środowiska skonfigurowanego z zestawem danych szkoleniowych, aby móc przeszkolić swoich pracowników w zakresie obsługi nowego systemu. 
 - **Projekt wieloetapowy** - Dodatkowe środowisko może być potrzebne do obsługi konfiguracji, migracji danych, testowania lub innych działań w fazie projektu, która jest planowana po pierwszym uruchomieniu projektu.
-- **Rozwój** — W infrastrukturze finansowej i operacyjnej możesz teraz rozszerzać rozwiązanie i tworzyć własne modyfikacje. Każdy programista musi używać swojego własnego środowiska programistycznego. Aby uzyskać więcej informacji, zobacz [Rozmieszczanie i dostęp do środowisk programistycznych](/fin-ops-core/dev-itpro/dev-tools/access-instances).
-- **ZŁOTA** — W przypadku nowych wdrożeń częstą praktyką jest korzystanie z oddzielnego środowiska GOLD, które jest utrzymywane w stanie nieskazitelnym na potrzeby konfiguracji i migracji danych. To środowisko może być wykorzystywane w trakcie całego wdrożenia do odświeżania innych środowisk. Zostanie ono wykorzystane do stworzenia nowego środowiska produkcyjnego, które będzie miało podstawową konfigurację i migrację danych. Nie możesz wdrożyć środowiska produkcyjnego w infrastrukturze finansowej i operacyjnej, dopóki nie zakończysz procesu gotowości do działania. Aby uzyskać więcej informacji, zobacz [Przygotuj się do startu](/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live).
+- **Rozwój** — W infrastrukturze finansowej i operacyjnej możesz teraz rozszerzać rozwiązanie i tworzyć własne modyfikacje. Każdy programista musi używać swojego własnego środowiska programistycznego. Aby uzyskać więcej informacji, zobacz [Rozmieszczanie i dostęp do środowisk programistycznych](../fin-ops-core/dev-itpro/dev-tools/access-instances.md).
+- **ZŁOTA** — W przypadku nowych wdrożeń częstą praktyką jest korzystanie z oddzielnego środowiska GOLD, które jest utrzymywane w stanie nieskazitelnym na potrzeby konfiguracji i migracji danych. To środowisko może być wykorzystywane w trakcie całego wdrożenia do odświeżania innych środowisk. Zostanie ono wykorzystane do stworzenia nowego środowiska produkcyjnego, które będzie miało podstawową konfigurację i migrację danych. Nie możesz wdrożyć środowiska produkcyjnego w infrastrukturze finansowej i operacyjnej, dopóki nie zakończysz procesu gotowości do działania. Aby uzyskać więcej informacji, zobacz [Przygotuj się do startu](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md).
 
 <!--NOTE: Need to come back and verify Tier-1 can be used and if a customer cannot purchase tier 3-5 need specific documentation about this.-->
 
@@ -66,24 +66,24 @@ Oto kilka uwag dotyczących dodatkowych środowisk opcjonalnych:
 
 ## <a name="create-an-lcs-project"></a>Tworzenie projektu LCS
 
-Aby zarządzać swoimi środowiskami oprogramowania Human Resources za pomocą usługi LCS, należy najpierw utworzyć projekt LCS. Jeśli migrujesz środowisko zasobów ludzkich do infrastruktury finansów i operacji, musisz stworzyć nowy projekt LCS dla aplikacji finansowych i operacyjnych. Aby uzyskać więcej informacji, zajrzyj do [Migracja środowiska HR](hr-admin-migrate-overview). Jeśli masz już projekt LCS dla innych aplikacji finansowych i operacyjnych, możesz włączyć funkcje zasobów ludzkich w przestrzeni roboczej **Zarządzanie funkcjami**. Aby uzyskać więcej informacji, zapoznaj się z tematem [Zarządzanie funkcjami — omówienie](/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+Aby zarządzać swoimi środowiskami oprogramowania Human Resources za pomocą usługi LCS, należy najpierw utworzyć projekt LCS. Jeśli migrujesz środowisko zasobów ludzkich do infrastruktury finansów i operacji, musisz stworzyć nowy projekt LCS dla aplikacji finansowych i operacyjnych. Jeśli masz już projekt LCS dla innych aplikacji finansowych i operacyjnych, możesz włączyć funkcje zasobów ludzkich w przestrzeni roboczej **Zarządzanie funkcjami**. Aby uzyskać więcej informacji, zapoznaj się z tematem [Zarządzanie funkcjami — omówienie](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-Kiedy nowy klient rejestruje się w programie HR, subskrypcja obejmuje obszar roboczy projektu wdrożenia. Po aktywacji usługi przez klienta administrator lokatora musi zalogować się na stronie <https://lcs.dynamics.com> przy użyciu konta lokatora. Przestrzeń robocza projektu jest automatycznie tworzona dla organizacji. Więcej informacji uzyskasz w [Usługi Lifecycle Services (LCS) dla klientów aplikacji finansowych i operacyjnych](/fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs).
+Kiedy nowy klient rejestruje się w programie HR, subskrypcja obejmuje obszar roboczy projektu wdrożenia. Po aktywacji usługi przez klienta administrator lokatora musi zalogować się na stronie <https://lcs.dynamics.com> przy użyciu konta lokatora. Przestrzeń robocza projektu jest automatycznie tworzona dla organizacji. Więcej informacji uzyskasz w [Usługi Lifecycle Services (LCS) dla klientów aplikacji finansowych i operacyjnych](../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md).
 
 > [!NOTE]
 > Aby zapewnić udane tworzenie rezerw, konto używane do tworzenia rezerw w środowisku Human Resources musi być przypisane do roli **Administratora systemu** lub **Dostawcy systemu** w środowisku Power Apps, które jest powiązane ze środowiskiem Human Resources. Aby uzyskać więcej informacji na temat przypisywania ról zabezpieczeń użytkownikom w Microsoft Power Platform, zobacz temat [Konfigurowanie zabezpieczeń użytkownika do zasobów](/power-platform/admin/database-security).
 
-Zanim zaczniesz wdrażać środowiska, musisz zakończyć proces wdrażania projektu LCS. Aby uzyskać więcej informacji, zobacz [Wprowadzanie do projektu](/fin-ops-core/dev-itpro/lifecycle-services/project-onboarding). Więcej informacji o tym, jak korzystać z LCS, można znaleźć w [Przewodniku użytkownika Lifecycle Services (LCS)](/fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide).
+Zanim zaczniesz wdrażać środowiska, musisz zakończyć proces wdrażania projektu LCS. Aby uzyskać więcej informacji, zobacz [Wprowadzanie do projektu](../fin-ops-core/dev-itpro/lifecycle-services/project-onboarding.md). Więcej informacji o tym, jak korzystać z LCS, można znaleźć w [Przewodniku użytkownika Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide.md).
 
 ## <a name="deploy-human-resources-environments"></a>Wdrożenie środowisk HR
 
 Wdrażanie aplikacji finansowych i operacyjnych, w tym HR, w chmurze wymaga zrozumienia środowiska i subskrypcji, w której są wdrażane, tego, kto może wykonywać poszczególne zadania, oraz tego, jakimi danymi i dostosowaniami trzeba zarządzać. Zalecamy, aby podczas wdrażania nowych środowisk używać konta serwisowego zamiast użytkownika nazwanego. Więcej informacji o tym, jak wdrażać środowiska w infrastrukturze finansowej i operacyjnej, można znaleźć w sekcji [Przegląd wdrażania chmury](/fin-ops-core/dev-itpro/deployment/cloud-deployment-overview).
 
-Aby wdrożyć środowisko produkcyjne HR na infrastrukturze finansowo-operacyjnej, musisz wykonać proces gotowości do działania. Aby uzyskać więcej informacji, zobacz [Przygotuj się do startu](/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live). Proces ten obejmuje estymator subskrypcji w LCS. Aby uzyskać więcej informacji, zobacz [Estymator subskrypcji](/fin-ops-core/dev-itpro/lifecycle-services/subscription-estimator).
+Aby wdrożyć środowisko produkcyjne HR na infrastrukturze finansowo-operacyjnej, musisz wykonać proces gotowości do działania. Aby uzyskać więcej informacji, zobacz [Przygotuj się do startu](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md). Proces ten obejmuje estymator subskrypcji w LCS. Aby uzyskać więcej informacji, zobacz [Estymator subskrypcji](../fin-ops-core/dev-itpro/lifecycle-services/subscription-estimator.md).
 
 ## <a name="integrate-microsoft-power-platform-with-human-resources"></a>Integracja z rozwiązania Human Resources do rozwiązania Microsoft Power Platform
 
-Microsoft Power Platform zapewnia pakiet możliwości dla aplikacji Dynamics 365 za pośrednictwem centrum administracyjnego Power Platform. Korzystanie z danych Human Resources można zintegrować i rozszerzać za pomocą Microsoft Power Platform. Aby uzyskać informacje na temat integracji działu kadr z Microsoft Power Platform, zobacz [Integracja Microsoft Power Platform z aplikacjami finansowymi i operacyjnymi](/fin-ops-core/dev-itpro/power-platform/overview).
+Microsoft Power Platform zapewnia pakiet możliwości dla aplikacji Dynamics 365 za pośrednictwem centrum administracyjnego Power Platform. Korzystanie z danych Human Resources można zintegrować i rozszerzać za pomocą Microsoft Power Platform. Aby uzyskać informacje na temat integracji działu kadr z Microsoft Power Platform, zobacz [Integracja Microsoft Power Platform z aplikacjami finansowymi i operacyjnymi](../fin-ops-core/dev-itpro/power-platform/overview.md).
 
 ## <a name="supported-geographies"></a>Obsługiwane regiony geograficzne
 
@@ -96,8 +96,8 @@ Domyślnie dostęp do środowiska ma globalny administrator, który je utworzył
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 Możesz dowiedzieć się więcej o tym, jak używać i zarządzać projektami w LCS w infrastrukturze aplikacji finansowych i operacyjnych, korzystając z następujących zasobów:
 
-- [Zasoby usługi Lifecycle Services](/fin-ops-core/dev-itpro/lifecycle-services/lcs.md)
-- [Przewodnik użytkownika usługi Lifecycle Services (LCS)](/fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide.md)
+- [Zasoby usługi Lifecycle Services](../fin-ops-core/dev-itpro/lifecycle-services/lcs.md)
+- [Przewodnik użytkownika usługi Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide.md)
 - [Omówienie wdrożenia samoobsługowego](../fin-ops-core/dev-itpro/deployment/infrastructure-stack.md)
 - [Strona główna: Operacje przenoszenia bazy danych](../fin-ops-core/dev-itpro/database/dbmovement-operations.md)
 

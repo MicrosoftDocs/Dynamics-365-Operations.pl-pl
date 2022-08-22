@@ -1,115 +1,188 @@
 ---
-title: Wskazówki dotyczące wdrażania przykładu integracji jednostki kontrolnej dla Szwecji (starsza wersja).
-description: Ten artykuł zawiera wskazówki dotyczące wdrażania przykładu integracji jednostki kontrolnej dla Szwecji z poziomu zestawu Retail SDK
-author: EvgenyPopovMBS
-ms.date: 12/20/2021
-ms.topic: article
-audience: Application User, Developer, IT Pro
-ms.reviewer: v-chgriffin
-ms.search.region: Global
-ms.author: epopov
-ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 05a49de43282c449c7b99072d8ac3ac4a5f2a67f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a20971ac9a44c409363bbce6cd8b8343f16d800f
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870554"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9274213"
 ---
 # <a name="deployment-guidelines-for-the-control-unit-integration-sample-for-sweden-legacy"></a>Wskazówki dotyczące wdrażania przykładu integracji jednostki kontrolnej dla Szwecji (starsza wersja).
+---
 
-[!include [banner](../includes/banner.md)]
+tytuł: Wskazówki dotyczące wdrażania przykładu integracji jednostki kontrolnej dla Szwecji (starsza wersja) [!include [banner](../includes/banner.md)]
+opis: Ten artykuł zawiera wskazówki dotyczące wdrażania przykładu integracji jednostki kontrolnej dla Szwecji z poziomu zestawu Retail SDK
 
-Ten artykuł zawiera wskazówki dotyczące wdrażania przykładu integracji jednostki kontrolnej dla Szwecji z poziomu zestawu Retail software development kit (SDK) na maszynie wirtualnej dewelopera w usłudze Microsoft Dynamics Lifecycle Services (LCS). Aby uzyskać więcej informacji dotyczących tego przykładu integracji fiskalnej, zobacz [Przykład integracji jednostki kontrolnej dla Szwecji](emea-swe-fi-sample.md). 
+autor: EvgenyPopovMBS Ten artykuł zawiera wskazówki dotyczące wdrażania przykładu integracji jednostki kontrolnej dla Szwecji z poziomu zestawu Retail software development kit (SDK) na maszynie wirtualnej dewelopera w usłudze Microsoft Dynamics Lifecycle Services (LCS). Aby uzyskać więcej informacji dotyczących tego przykładu integracji fiskalnej, zobacz [Przykład integracji jednostki kontrolnej dla Szwecji](emea-swe-fi-sample.md). ms.data: 2021-12-20
 
-Przykład integracji fiskalnej dla Szwecji jest częścią zestawu Retail SDK. Aby uzyskać informacje dotyczące instalowania i używania zestawu SDK, zobacz [Omówienie zestawu Retail SDK (Software Development Kit)](../dev-itpro/retail-sdk/retail-sdk-overview.md). Ten przykład składa się z rozszerzeń kolekcji Commerce Runtime (CRT), stacji sprzętowej i punktu sprzedaży (POS). Aby uruchomić ten przykład, musisz zmodyfikować i skompilować projekty kolekcji CRT, stacji sprzętowej i punktu sprzedaży. Zalecamy, aby w celu wprowadzenia zmian opisanych w tym artykule używać niezmodyfikowanego zestawu Retail SDK. Zalecamy również korzystanie z systemu kontroli źródła, takiego jak usługa Azure DevOps, w sytuacji, gdy nie zmieniono jeszcze żadnego pliku.
+ms.topic: artykuł Przykład integracji fiskalnej dla Szwecji jest częścią zestawu Retail SDK. Aby uzyskać informacje dotyczące instalowania i używania zestawu SDK, zobacz [Omówienie zestawu Retail SDK (Software Development Kit)](../dev-itpro/retail-sdk/retail-sdk-overview.md). Ten przykład składa się z rozszerzeń kolekcji Commerce Runtime (CRT), stacji sprzętowej i punktu sprzedaży (POS). Aby uruchomić ten przykład, musisz zmodyfikować i skompilować projekty kolekcji CRT, stacji sprzętowej i punktu sprzedaży. Zalecamy, aby w celu wprowadzenia zmian opisanych w tym artykule używać niezmodyfikowanego zestawu Retail SDK. Zalecamy również korzystanie z systemu kontroli źródła, takiego jak usługa Azure DevOps, w sytuacji, gdy nie zmieniono jeszcze żadnego pliku.
+informacje: użytkownik aplikacji, deweloper, IT Pro
 
-## <a name="development-environment"></a>Środowiska programistyczne
+ms.reviewer: v-chgriffin
+## <a name="development-environment"></a>Środowisko projektowe
+ms.search.region: globalny
 
-Wykonaj poniższe kroki, aby skonfigurować środowisko projektowe, co umożliwi testowanie i rozszerzanie przykładu.
+ms.author: josaw Wykonaj poniższe kroki, aby skonfigurować środowisko projektowe, co umożliwi testowanie i rozszerzanie przykładu.
+ms.search.validFrom: 2019-03-01
 
 ### <a name="enable-crt-extensions"></a>Włączanie rozszerzeń CRT
+---
+
 
 Składniki rozszerzenia kolekcji CRT znajdują się w przykładach kolekcji CRT. Aby wykonać poniższe procedury, otwórz rozwiązanie **CommerceRuntimeSamples.sln** w folderze **RetailSdk\\SampleExtensions\\CommerceRuntime**.
+2. Włącz bieżący przykład rozszerzenia stacji sprzętowej, dodając następujący wiersz do sekcji **composition** w pliku konfiguracji **HardwareStation.Extension.config**.
+
 
 #### <a name="documentprovidercleancashsample-component"></a>Składnik DocumentProvider.CleanCashSample
-
-1. Znajdź projekt **Runtime.Extensions.DocumentProvider.CleanCashSample** i skompiluj go.
-2. W folderze **Runtime.Extensions.DocumentProvider.CleanCashSample\\bin\\Debug** znajdź plik zestawu **Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample.dll**.
-3. Skopiuj plik zestawu do folderu rozszerzeń kolekcji CRT:
-
-    - **Commerce Scale Unit:** skopiuj plik do folderu **\\bin\\ext** w lokalizacji witryny rozwiązania Commerce Scale Unit w Internetowych usługach informacyjnych (IIS).
-    - **Lokalna kolekcja CRT w aplikacji Modern POS:** skopiuj plik do folderu **\\ext** w lokalizacji brokera klienta lokalnej kolekcji CRT.
-
-4. Znajdź plik konfiguracji rozszerzenia dla kolekcji CRT:
-
-    - **Commerce Scale Unit:** plik nosi nazwę **commerceruntime.ext.config** i znajduje się w folderze **bin\\ext** w lokalizacji witryny rozwiązania Commerce Scale Unit w usługach IIS.
-    - **Lokalne wystąpienie CRT na Modern POS:** plik nosi nazwę **CommerceRuntime.MPOSOffline.Ext.config** i znajduje się w lokalizacji brokera lokalnego klienta CRT.
-
-5. Zarejestruj zmianę kolekcji CRT w pliku konfiguracji rozszerzenia.
-
     ``` xml
+
+    <add source="assembly" value="Contoso.Commerce.HardwareStation.CleanCashSample" />
+1. Znajdź projekt **Runtime.Extensions.DocumentProvider.CleanCashSample** i skompiluj go.
+    ```
+2. In the **Runtime.Extensions.DocumentProvider.CleanCashSample\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample.dll** assembly file.
+
+3. Copy the assembly file to the CRT extensions folder:
+3. Make the following changes in the **Customization.settings** package customization configuration file under the **BuildTools** folder:
+
+
+    - **Commerce Scale Unit:** Copy the file to the **\\bin\\ext** folder under the Internet Information Services (IIS) Commerce Scale Unit site location.
+    - Remove the following line to exclude the earlier Hardware station extension from deployable packages.
+    - **Local CRT on Modern POS:** Copy the file to the **\\ext** folder under the local CRT client broker location.
+
+
+        ``` xml
+4. Find the extension configuration file for CRT:
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample.dll" />
+
+        ```
+    - **Commerce Scale Unit:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Commerce Scale Unit site location.
+
+    - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
+    - Add the following lines to include the current sample Hardware station extension in deployable packages.
+
+
+5. Register the CRT change in the extension configuration file.
+        ``` xml
+
+        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.CleanCashSample.dll" />
+    ``` xml
+        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Interop.CleanCash_1_1.dll" />
     <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample" />
+        ```
     ```
 
+
+#### <a name="update-modern-pos"></a>Aktualizacja Modern POS
 #### <a name="extension-configuration-file"></a>Plik konfiguracji rozszerzenia
 
+
+1. Otwórz rozwiązanie **CloudPOS.sln** w **RetailSdk\\POS**.
 1. Znajdź plik konfiguracji rozszerzenia dla kolekcji CRT:
+2. Wyłącz wcześniejsze rozszerzenie POS:
+
 
     - **Commerce Scale Unit:** plik nosi nazwę **commerceruntime.ext.config** i znajduje się w folderze **bin\\ext** w lokalizacji witryny rozwiązania Commerce Scale Unit w usługach IIS.
+    - W pliku **tsconfig.json** dodaj folder **FiscalRegisterSample** do listy wykluczania.
     - **Lokalne wystąpienie CRT na Modern POS:** plik nosi nazwę **CommerceRuntime.MPOSOffline.Ext.config** i znajduje się w lokalizacji brokera lokalnego klienta CRT.
+    - Usuń poniższe wiersze z pliku **extensions.json** w folderze **RetailSDK\\POS\\Extensions**.
+
 
 2. Zarejestruj zmianę kolekcji CRT w pliku konfiguracji rozszerzenia.
+        ``` json
 
+        {
     ``` xml
+            "baseUrl": "FiscalRegisterSample"
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsSweden" />
+        }
     ```
+        ```
+
 
 ### <a name="enable-hardware-station-extensions"></a>Włączanie rozszerzeń stacji sprzętowej
+3. Włącz bieżące rozszerzenie programu POS, dodając następujące wiersze w pliku **extensions.json** w folderze **RetailSDK\\POS\\Extensions**.
+
 
 Składniki rozszerzenia stacji sprzętowej wchodzą w skład przykładów stacji sprzętowej. Aby wykonać poniższe procedury, otwórz rozwiązania **HardwareStationSamples.sln** w folderze **RetailSdk\\SampleExtensions\\HardwareStation**.
+    ``` json
 
+    {
 #### <a name="cleancash-component"></a>Składnik CleanCash
+        "extensionPackages": [
 
+            {
 1. Znajdź projekt **HardwareStation.Extension.CleanCashSample** i skompiluj go.
+                „baseUrl”: „Microsoft/AuditEvent.SE”
 2. W folderze **Extension.CleanCashSample\\bin\\Debug** znajdź zestaw plików **Contoso.Commerce.HardwareStation.CleanCashSample.dll** i **Interop.CleanCash\_1\_1.dll**.
-3. Skopiuj pliki zestawów do folderu rozszerzeń stacji sprzętowej:
+            }
+3. Skopiuj pliki zestawów do folderu rozszerzeń stacji sprzętowej:      ]
 
+    }
     - **Udostępniona stacja sprzętowa:** skopiuj pliki do folderu **bin** w lokalizacji witryny stacji sprzętowej w usługach IIS.
-    - **Dedykowana stacja sprzętowa w aplikacji Modern POS:** skopiuj pliki do lokalizacji brokera klienta aplikacji Modern POS.
+    ```
+    - **Dedicated hardware station on Modern POS:** Copy the files to the Modern POS client broker location.
 
-4. Znajdź plik konfiguracji rozszerzenia dla rozszerzeń stacji sprzętowej. Ten plik nosi nazwę **HardwareStation.Extension.config**.
 
-    - **Udostępniona stacja sprzętowa:** plik znajduje się w lokalizacji witryny stacji sprzętowej w IIS.
-    - **Dedykowana stacja sprzętowa w aplikacji Modern POS:** plik znajduje się w lokalizacji brokera klienta aplikacji Modern POS.
+#### Update Cloud POS
+4. Find the extension configuration file for the Hardware station's extensions. The file is named **HardwareStation.Extension.config**.
 
-5. Dodaj poniższy wiersz do sekcji **composition** pliku konfiguracji.
+
+1. Open the **ModernPOS.sln** solution under **RetailSdk\\POS**.
+    - **Shared hardware station:** The file is under the IIS Hardware station site location.
+2. Disable the earlier POS extension:
+    - **Dedicated hardware station on Modern POS:** The file is under the Modern POS client broker location.
+
+
+    - In the **tsconfig.json** file, add the **FiscalRegisterSample** folder to the exclude list.
+5. Add the following line to the **composition** section of the configuration file.
+    - Remove the following lines from the **extensions.json** file under the **RetailSDK\\POS\\Extensions** folder.
+
 
     ``` xml
+        ``` json
     <add source="assembly" value="Contoso.Commerce.HardwareStation.CleanCashSample" />
+        {
     ```
+            "baseUrl": "FiscalRegisterSample"
 
+        }
 ### <a name="enable-modern-pos-extension-components"></a>Włączanie składników rozszerzenia Modern POS
+        ```
+
 
 1. Otwórz rozwiązanie **ModernPOS.sln** w **RetailSdk\\POS**, i upewnij się, że można je skompilować bez błędów. Ponadto upewnij się, że program Modern POS firmy Visual Studio można uruchomić za pomocą polecenia **Uruchom**.
+3. Włącz bieżące rozszerzenie programu POS, dodając następujące wiersze w pliku **extensions.json** w folderze **RetailSDK\\POS\\Extensions**.
+
 
     > [!NOTE]
-    > Nie można dostosowywać Modern POS. Należy włączyć funkcję Kontroli konta użytkownika (UAC) i w razie potrzeby odinstalować uprzednio zainstalowane wersje programu Modern POS.
-
-2. Włącz możliwość ładowania rozszerzeń poprzez dodanie następujących wierszy do pliku **extensions.json**.
-
     ``` json
+    > Modern POS must not be customized. You must enable User Account Control (UAC), and you must uninstall previously installed instances of Modern POS as required.
     {
+
         "extensionPackages": [
+2. Enable the extensions that must be loaded by adding the following lines in the **extensions.json** file.
             {
+
                 "baseUrl": "Microsoft/AuditEvent.SE"
+    ``` json
             }
+    {
         ]
+        "extensionPackages": [
     }
+            {
+    ```
+                "baseUrl": "Microsoft/AuditEvent.SE"
+
+            }
+#### <a name="create-deployable-packages"></a>Tworzenie pakietów możliwych do wdrożenia
+        ]
+
+    }
+Uruchom **msbulid** dla całego zestawu Retail SDK, aby utworzyć pakiety do wdrożenia. Zastosuj pakiety za pośrednictwem usługi LCS lub ręcznie. Aby uzyskać więcej informacji, zobacz [Pakiety Retail SDK](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
     ```
 
     > [!NOTE]
-    > Aby uzyskać więcej informacji oraz przykładów, które pokazują sposób dołączania folderów kodu źródłowego i włączania ładowania rozszerzeń, zobacz instrukcje w pliku readme.md w projekcie **Pos.Extensions**.
+    > For more information, and for samples that show how to include source code folders and enable extensions to be loaded, see the instructions in the readme.md file in the **Pos.Extensions** project.
 
 3. Skompiluj ponownie rozwiązanie.
 4. Uruchom program Modern POS w debugerze i sprawdź funkcjonalność.
@@ -438,80 +511,3 @@ Proces migracji powinien składać się z następujących kroków.
     <add source="assembly" value="Contoso.Commerce.HardwareStation.FiscalRegisterSample" />
     ```
     ---
-
-2. Włącz bieżący przykład rozszerzenia stacji sprzętowej, dodając następujący wiersz do sekcji **composition** w pliku konfiguracji **HardwareStation.Extension.config**.
-
-    ``` xml
-    <add source="assembly" value="Contoso.Commerce.HardwareStation.CleanCashSample" />
-    ```
-
-3. Wprowadź poniższe zmiany w pliku konfiguracji dostosowań pakietu **Customization.settings** w folderze **BuildTools**:
-
-    - Usuń poniższy wiersz, aby wyłączyć wcześniejsze rozszerzenie stacji sprzętowej w pakietach, które można wdrożyć.
-
-        ``` xml
-        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample.dll" />
-        ```
-
-    - Dodaj poniższe wiersze, aby dołączyć bieżące rozszerzenie stacji sprzętowej w pakietach, które można wdrożyć.
-
-        ``` xml
-        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.CleanCashSample.dll" />
-        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Interop.CleanCash_1_1.dll" />
-        ```
-
-#### <a name="update-modern-pos"></a>Aktualizacja Modern POS
-
-1. Otwórz rozwiązanie **CloudPOS.sln** w **RetailSdk\\POS**.
-2. Wyłącz wcześniejsze rozszerzenie POS:
-
-    - W pliku **tsconfig.json** dodaj folder **FiscalRegisterSample** do listy wykluczania.
-    - Usuń poniższe wiersze z pliku **extensions.json** w folderze **RetailSDK\\POS\\Extensions**.
-
-        ``` json
-        {
-            "baseUrl": "FiscalRegisterSample"
-        }
-        ```
-
-3. Włącz bieżące rozszerzenie programu POS, dodając następujące wiersze w pliku **extensions.json** w folderze **RetailSDK\\POS\\Extensions**.
-
-    ``` json
-    {
-        "extensionPackages": [
-            {
-                "baseUrl": "Microsoft/AuditEvent.SE"
-            }
-        ]
-    }
-    ```
-
-#### <a name="update-cloud-pos"></a>Aktualizacja Cloud POS
-
-1. Otwórz rozwiązanie **ModernPOS.sln** w **RetailSdk\\POS**.
-2. Wyłącz wcześniejsze rozszerzenie POS:
-
-    - W pliku **tsconfig.json** dodaj folder **FiscalRegisterSample** do listy wykluczania.
-    - Usuń poniższe wiersze z pliku **extensions.json** w folderze **RetailSDK\\POS\\Extensions**.
-
-        ``` json
-        {
-            "baseUrl": "FiscalRegisterSample"
-        }
-        ```
-
-3. Włącz bieżące rozszerzenie programu POS, dodając następujące wiersze w pliku **extensions.json** w folderze **RetailSDK\\POS\\Extensions**.
-
-    ``` json
-    {
-        "extensionPackages": [
-            {
-                "baseUrl": "Microsoft/AuditEvent.SE"
-            }
-        ]
-    }
-    ```
-
-#### <a name="create-deployable-packages"></a>Tworzenie pakietów możliwych do wdrożenia
-
-Uruchom **msbulid** dla całego zestawu Retail SDK, aby utworzyć pakiety do wdrożenia. Zastosuj pakiety za pośrednictwem usługi LCS lub ręcznie. Aby uzyskać więcej informacji, zobacz [Pakiety Retail SDK](../dev-itpro/retail-sdk/retail-sdk-packaging.md).

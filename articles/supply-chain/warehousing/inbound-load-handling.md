@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 43102cb867243a872a5d1df777d8c4102a48e235
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: c48d240b346acacf2988fbaac69308ee655dced6
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9070328"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219511"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Obsługa magazynów dla ładunków przychodzących dla zamówień zakupu
 
@@ -279,7 +279,7 @@ Te scenariusze wymagają funkcji _Księgowanie wielu odbiorów produktów na ła
 
 #### <a name="enable-sample-data"></a>Włącz dane przykładowe
 
-Aby pracować z tymi scenariuszami przy użyciu określonych przykładowych rekordów i wartości, należy użyć systemu, w którym są zainstalowane standardowe dane demonstracyjne. Należy również wybrać firmę **USMF** przed rozpoczęciem.
+Aby pracować z tymi scenariuszami przy użyciu określonych przykładowych rekordów i wartości, należy użyć systemu, w którym są zainstalowane standardowe [dane demonstracyjne](../../fin-ops-core/fin-ops/get-started/demo-data.md). Należy również wybrać firmę **USMF** przed rozpoczęciem.
 
 #### <a name="add-a-menu-item-for-receiving-load-items-when-a-mobile-device-is-used"></a>Dodaj element menu na potrzeby odbierania elementów ładunku, gdy jest używane urządzenie przenośne
 

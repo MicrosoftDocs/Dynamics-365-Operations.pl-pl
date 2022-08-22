@@ -1,24 +1,24 @@
 ---
 title: Podziel zrealizowaną różnicę kursów kwoty na różnicę wartości netto faktury i kwoty VAT
 description: W tym artykule opisano, jak podzielić zrealizowaną różnicę kursów kwoty na różnicę wartości netto faktury i kwoty podatku od towarów i usług (VAT).
-author: anasyash
+author: AdamTrukawka
 ms.date: 04/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 414136
 ms.search.region: Poland
-ms.author: anasyash
-ms.dyn365.ops.version: ''
+ms.author: atrukawk
 ms.search.validFrom: 2020-04-01
-ms.openlocfilehash: 3068f288b48ce2efb35e1072e014614bad0882d4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.dyn365.ops.version: ''
+ms.custom: 414136
+ms.openlocfilehash: 1bd7f2128152247b4bc64af196ccc88423729713
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8896231"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9269345"
 ---
 # <a name="split-the-realized-exchange-difference-amount-into-the-difference-of-the-invoice-net-value-and-the-vat-amount"></a>Podziel zrealizowaną różnicę kursów kwoty na różnicę wartości netto faktury i kwoty VAT
 

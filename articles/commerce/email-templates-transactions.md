@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9a4d67d901608e210b4060a655ce39f0ea707a52
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.openlocfilehash: cc3ad01c60324d751ee52d83d93fe59593775a00
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8910557"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9279576"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Tworzenie szablonów wiadomości e-mail na potrzeby zdarzeń transakcyjnych
 
@@ -117,7 +117,29 @@ Typ powiadomienia o *anulowaniu zamówienia* jest wyzwalany, gdy zamówienie zos
 
 ### <a name="customer-created"></a>Odbiorca utworzony
 
-Typ powiadomienia o *odbiorcy utworzonym* jest wyzwalany podczas tworzenia nowej encji klienta w programie Commerce Headquarters.
+Typ powiadomienia o *odbiorcy utworzonym* jest wyzwalany podczas tworzenia nowej encji klienta w programie Commerce Headquarters. 
+
+Aby włączyć powiadomienia utworzone przez klienta, w Commerce headquarters na stronie **Retail i Commerce \> Ustawienia centrali \> Parametry \> Parametry Commerce \> Ogólny**. Z listy rozwijanej **Profil powiadomień pocztą e-mail** wybierz profil powiadomienia pocztą e-mail zawierający typ powiadomienia utworzony przez klienta. 
+
+Domyślnie zdarzenia utworzone przez klientów są przesyłane do centrali za pomocą zadania wsadowego **Synchronizuj klientów i żądania kanałów**. Jeśli chcesz użyć wywołania usługi Real-time Service, aby wysłać te zdarzenia, ustaw identyfikator wiadomości e-mail utworzonego szablonu odbiorcy na **newCust**. Nie jest to jednak zalecane, ponieważ wywołania usług w czasie rzeczywistym są wywołaniami typu „uruchom i zapomnij” i nie mają logiki powrotu ani ponawiania prób, którą zapewniają zadania wsadowe.
+
+> [!NOTE] 
+> Gdy włączysz powiadomienia utworzone przez klienta, klienci utworzeni we wszystkich kanałach w ramach podmiotu prawnego otrzymają wiadomość e-mail utworzoną przez klienta. Obecnie powiadomienia tworzone przez klientów nie mogą być ograniczone do jednego kanału.  
+
+Po wywołaniu za pośrednictwem zadania wsadowego utworzony przez klienta typ powiadomienia obsługuje następujący symbol zastępczy.
+
+| Nazwa symbolu zastępczego | Opis                                                      |
+| ---------------- | ------------------------------------------------------------ |
+| customername     | Imię i nazwisko odbiorcy, który utworzył konto. |
+
+Po wywołaniu za pośrednictwem połączenia serwisowego w czasie rzeczywistym typ powiadomienia utworzonego przez klienta obsługuje następujące symbole zastępcze.
+
+| Nazwa symbolu zastępczego | Opis                                                      |
+| ---------------- | ------------------------------------------------------------ |
+| Nazwisko             | Imię i nazwisko odbiorcy, który utworzył konto. |
+| Adres e-mail            | Adres e-mail klienta, który utworzył konto.    |
+| Telefon            | Numer telefonu klienta, który utworzył konto.      |
+| Adres URL              | Adres URL podany przez klienta podczas tworzenia konta. |
 
 ### <a name="b2b-prospect-approved"></a>Prospekt B2B został zatwierdzony
 

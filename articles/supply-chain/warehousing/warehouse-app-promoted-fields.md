@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 5f5f24f47d0a2376be714f9208cd383cf3aacc07
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8ecca2d00b8753a405faa8d4c67c3cbb1eef6907
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857062"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218983"
 ---
 # <a name="configure-promoted-fields-for-steps-in-the-warehouse-management-mobile-app"></a>Konfiguracja promowanych pól dla kroków w aplikacji mobilnej Warehouse Management
 
@@ -32,13 +32,7 @@ W tym artykule opisano sposób promowania i wyróżniania określonych informacj
 Zanim będzie można ustawić pola promowane, należy wykonać poniższą procedurę, aby włączyć wymagane funkcje i wygenerować wymagane nazwy pól w aplikacji mobilnej Warehouse Management.
 
 1. Wybierz kolejno opcje **Administrator systemu \> Obszary robocze \> Zarządzanie funkcjami**.
-1. W [**obszarze roboczym Zarządzanie funkcjami**](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) włącz funkcję, która jest wymieniona w następujący sposób:
-
-    - **Moduł:** *Zarządzanie magazynem*
-    - **Nazwa funkcji:** *instrukcje kroków aplikacji magazynu*
-
-    Aby uzyskać więcej informacji na temat funkcji *Instrukcje krok po kroku aplikacji Warehouse*, patrz [Dostosowywanie tytułów i instrukcji krok po kroku dla aplikacji mobilnej Warehouse Management](mobile-app-titles-instructions.md). Ta funkcja jest warunkiem koniecznym dla funkcji *Promowane pola aplikacji Warehouse*.
-
+1. Upewnij się, że funkcja *Instrukcje kroku aplikacji magazynowej* jest włączona w Twoim systemie. Od wersji 10.0.29 Supply Chain Management version ta funkcja jest domyślnie włączona. Aby uzyskać więcej informacji na temat funkcji *Instrukcje krok po kroku aplikacji Warehouse*, patrz [Dostosowywanie tytułów i instrukcji krok po kroku dla aplikacji mobilnej Warehouse Management](mobile-app-titles-instructions.md). Ta funkcja jest warunkiem koniecznym dla funkcji *Promowane pola aplikacji Warehouse*.
 1. Włącz funkcję, która jest wymieniona w następujący sposób:
 
     - **Moduł:** *Zarządzanie magazynem*
@@ -67,7 +61,7 @@ Użyj poniższej procedury, aby skonfigurować promowane pola.
 
 ### <a name="enable-sample-data"></a>Włącz dane przykładowe
 
-Aby użyć określonych przykładowych rekordów i wartości do pracy z tym scenariuszem, musisz używać systemu, w którym zainstalowane są standardowe dane demo. Należy również wybrać firmę **USMF** przed rozpoczęciem.
+Aby użyć określonych przykładowych rekordów i wartości do pracy z tym scenariuszem, musisz używać systemu, w którym zainstalowane są standardowe [dane demo](../../fin-ops-core/fin-ops/get-started/demo-data.md). Należy również wybrać firmę **USMF** przed rozpoczęciem.
 
 ### <a name="configure-sales-picking-with-promoted-steps-on-the-license-plate-step"></a>Konfiguracja kompletacji sprzedaży z promowanymi krokami na etapie tablicy rejestracyjnej
 

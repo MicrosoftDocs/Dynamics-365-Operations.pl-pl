@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 8be79f259505c084a8680c453ec15a4cef1a890f
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: b44b044bf10115a7fcaf347a3b6f1759c2a68cb6
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124507"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219073"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10026-may-2022"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.26 (Maj 2022 r.)
 
@@ -35,7 +35,7 @@ To wydanie zawiera funkcje, które są podane w następującej tabeli. Firma Mic
 |---|---|---|---|
 | Zapasy i logistyka | [Wyszukiwanie dostępnych zapasów w celu obsługi zaawansowanych pozycji zarządzania magazynem](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-support-advanced-warehouse-management) | [Obsługa dodatku Inventory Visibility dla pozycji WMS](../inventory/inventory-visibility-whs-support.md) | Zarządzanie funkcjami:<br>*Włącz pozycje magazynowe w Widoczności magazynu* |
 | Zapasy i logistyka | [Dostępne zapasy dla dodatku Widoczność zapasów](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/available-to-promise-inventory-visibility-add-in) | [Widoczność dostępnych zapasów — harmonogramy zmian i dostępność zapasów](../inventory/inventory-visibility-available-to-promise.md) | Włączone przez konfigurację usługi |
-| Produkcja | [Pozycje wagi wychwytu dla interfejsu wykonawczego hali produkcyjnej](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/catch-weight-items-production-floor-execution-interface) | [Jak pracownicy korzystają z interfejsu wykonania hal produkcyjnych](../production-control/production-floor-execution-use.md) | Zarządzanie funkcjami:<br>*(Wersja zapoznawcza) Raport pozycji ilości efektywnej z interfejsu wykonania hal produkcyjnych* |
+| Produkcja | [Pozycje wagi wychwytu dla interfejsu wykonawczego hali produkcyjnej](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/catch-weight-items-production-floor-execution-interface) | [Jak pracownicy korzystają z interfejsu wykonania hal produkcyjnych](../production-control/production-floor-execution-use.md) | Zarządzanie funkcjami:<br>*Raport pozycji ilości efektywnej z interfejsu wykonania hal produkcyjnych* |
 | Produkcja | Moja karta zadań w interfejsie wykonania hal produkcyjnych <!-- KFM: Add link to release plan when available --> | [Jak pracownicy korzystają z interfejsu wykonania hal produkcyjnych](../production-control/production-floor-execution-use.md) | Zarządzanie funkcjami:<br>*Moja karta zadań w interfejsie wykonania hal produkcyjnych* |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>Ulepszenia funkcji zawarte w tym wydaniu

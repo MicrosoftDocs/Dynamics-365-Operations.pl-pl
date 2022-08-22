@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 2f1902ba76db59b61b0437eb3cd68ee94018b7c5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 55c83cdbc144f194fe80e8281a35ec7ff43d551e
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8844476"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219946"
 ---
 # <a name="inventory-marking-with-planning-optimization"></a>Oznaczanie zapasów przy użyciu modułu Optymalizacja planowania
 
@@ -43,9 +43,15 @@ Oznaczanie transakcji rozpoczyna się od uwzględnienia stosownych oznaczeń, re
 
 Podczas akceptowania zamówienia planowanego w oknie dialogowym **Akceptacja** wyświetla się pole **Aktualizacja oznaczenia**, które służy do konfiguracji opcji oznaczania zamówień tworzonych w trakcie akceptowania. Należy wybrać jedną z następujących opcji:
 
-- **Nie** — zapasy nie są oznaczane.
-- **Standardowa** — oznaczanie zapasów jest aktualizowane zgodnie z oznaczaniem transakcji. Zamówienie zapotrzebowania (popytu) jest oznaczane na podstawie zamówienia realizacji (podaży). Jeśli w zamówieniu realizacji pozostanie pewna ilość, zamówienie nie zostanie oznaczone, a dane referencyjne będą puste. Na przykład jeśli zamówienie sprzedaży 100 ea otrzyma oznaczenie transakcji łączące je z zamówieniem zakupu 150 ea, informacje referencyjne zostaną przypisane wyłącznie do zamówienia sprzedaży.
-- **Rozszerzona** — zarówno zamówienie zapotrzebowania (popyt), jak i zamówienie realizacji (podaż) są oznaczane niezależnie od tego, czy w zamówieniu realizacji pozostaje jakaś ilość. Na przykład jeśli zamówienie sprzedaży 100 ea otrzyma oznaczenie transakcji łączące je z zamówieniem zakupu 150 ea, informacje referencyjne zostaną przypisane zarówno do zamówienia sprzedaży, jak i do zamówienia zakupu.
+- *Nie* — zapasy nie są oznaczane.
+- *Standardowa* — oznaczanie zapasów jest aktualizowane zgodnie z oznaczaniem transakcji. Zamówienie zapotrzebowania (popytu) jest oznaczane na podstawie zamówienia realizacji (podaży). Jeśli w zamówieniu realizacji pozostanie pewna ilość, zamówienie nie zostanie oznaczone, a dane referencyjne będą puste. Na przykład jeśli zamówienie sprzedaży 100 ea otrzyma oznaczenie transakcji łączące je z zamówieniem zakupu 150 ea, informacje referencyjne zostaną przypisane wyłącznie do zamówienia sprzedaży.
+- *Rozszerzona* — zarówno zamówienie zapotrzebowania (popyt), jak i zamówienie realizacji (podaż) są oznaczane niezależnie od tego, czy w zamówieniu realizacji pozostaje jakaś ilość. Na przykład jeśli zamówienie sprzedaży 100 ea otrzyma oznaczenie transakcji łączące je z zamówieniem zakupu 150 ea, informacje referencyjne zostaną przypisane zarówno do zamówienia sprzedaży, jak i do zamówienia zakupu.
+- *Standardowy poziom* — używane jest oznaczanie jednopoziomowe. Oznaczanie jednopoziomowe oznacza tylko towar główny, a nie jego składniki BOM. Po ujednaniu można zachować elastyczne przypisanie składników do zleceń produkcyjnych. Oznaczanie jednopoziomowe umożliwia zoptymalizowanie pracy systemu pod kątem ostatnich zmian popytu. W *standardowym oznaczaniu* jednopoziomowym zamówienia zapotrzebowania są oznaczane na ich zamówieniach realizacji, ale zamówienia realizacji nie są zaznaczane, jeśli mają pozostałą ilość.
+- *Rozszerzony o jeden poziom* — używane jest oznaczanie jednopoziomowe. W *rozszerzonym* oznaczaniu jednopoziomowym zamówienia zapotrzebowania są oznaczane względem ich zamówień realizacji, a zamówienia realizacji są zawsze oznaczane, niezależnie od tego, czy pozostała jakaś ilość.
 
+Aby ustawić dla systemu domyślną opcję zaznaczania, przejdź do ustawień **Planowanie główne \> Konfiguracja \> Parametry planowania głównego**. Następnie na karcie **Aktualizacja standardowa** ustaw pole **Aktualizuj** oznaczenie jako preferowaną opcję.
+
+> [!NOTE]
+> Opcje *Standard jednopoziomowy* i *Rozszerzony o jeden poziom* są dostępne tylko wtedy, gdy *Automatyzacja dostaw na zamówienie* jest włączona w systemie. Aby uzyskać więcej informacji dotyczących tej funkcji i sposobu jej włączania, zobacz temat Automatyzacja [dostaw m.in. do produkcji na zamówienie](../make-to-order-supply-automation.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

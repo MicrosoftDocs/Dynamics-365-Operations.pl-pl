@@ -1,24 +1,24 @@
 ---
 title: Omówienie obliczania podatku
 description: W tym artykule wyjaśniono ogólny zakres i funkcje obliczania podatku.
-author: wangchen
+author: EricWangChen
 ms.date: 03/02/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
-ms.search.form: TaxIntegrationTaxServiceParameters
 audience: Application user
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 817d7db5952f96fa741671166d88fffddaac84e9
-ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
+ms.search.form: TaxIntegrationTaxServiceParameters
+ms.openlocfilehash: c6dabb9d2aae6f1fc759c40f870c66304d7f7c8d
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "9166848"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270674"
 ---
 # <a name="tax-calculation-overview"></a>Omówienie obliczania podatku
 
@@ -54,10 +54,15 @@ Obliczanie podatku jest wdrożone w następujących lokalizacjach geograficznych
 
 - Azja Pacyfik
 - Australia
+- Brazylia
 - Kanada
 - Europa
+- Francja
+- Indie
 - Japonia
+- Republika Południowej Afryki
 - Szwajcaria
+- Zjednoczone Emiraty Arabskie
 - Zjednoczone Królestwo
 - Stany Zjednoczone
 
@@ -149,11 +154,15 @@ W wersji 10.0.28 są obsługiwane następujące transakcje:
 - Arkusz płatności dostawców
 - Arkusz płatności odbiorcy
 
+W wersji 10.0.29 są obsługiwane następujące transakcje: 
+
+- Arkusz okresowy
+
 ## <a name="supported-countriesregions"></a>Obsługiwane kraje/regiony
 
-Obliczanie podatku może zostać włączone zależnie od firmy. 
+Obliczanie podatku może być uruchomione przy użyciu obsługiwanych funkcji lokalizacji w następujących krajach/regionach dla podstawowego adresu firmy: 
 
-W wersji 10.0.21 są obsługiwane następujące kraje/regiony adresu podstawowego firmy:
+Obsługiwane w wersji 10.0.21:
 
 - Austria
 - Belgia
@@ -173,10 +182,10 @@ W wersji 10.0.21 są obsługiwane następujące kraje/regiony adresu podstawoweg
 - Polska
 - Szwecja
 - Szwajcaria
-- Wielka Brytania
+- Zjednoczone Królestwo
 - Stany Zjednoczone
 
-W wersji 10.0.22 są obsługiwane następujące kraje/regiony adresu podstawowego firmy:
+Obsługiwane w wersji 10.0.22:
 
 - Australia
 - Bahrajn
@@ -188,25 +197,27 @@ W wersji 10.0.22 są obsługiwane następujące kraje/regiony adresu podstawoweg
 - Oman
 - Katar
 - Arabia Saudyjska
-- RPA
+- Republika Południowej Afryki
 - Zjednoczone Emiraty Arabskie
 
-W wersji 10.0.23 są obsługiwane następujące kraje/regiony adresu podstawowego firmy:
+Obsługiwane w wersji 10.0.23:
 
 - Tajlandia
 - Japonia
 - Malezja
 - Singapur
 
-W wersji 10.0.24 są obsługiwane następujące kraje/regiony adresu podstawowego firmy:
+Obsługiwane w wersji 10.0.24:
 
 - Meksyk
 
-W wersji 10.0.26 są obsługiwane następujące kraje/regiony adresu podstawowego firmy:
+Obsługiwane w wersji 10.0.26:
 
 - Chiny
 - Republika Czeska
 - Hiszpania
+
+W przypadku dowolnego kraju/regionu, który nie jest zlokalizowany przez firmę Microsoft, można włączyć obliczanie podatku i uruchomić je z innymi funkcjami globalnymi.
 
 ## <a name="related-resources"></a>Powiązane zasoby
 

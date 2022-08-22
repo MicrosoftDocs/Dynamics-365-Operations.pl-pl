@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 63fd8b209cb73843aae7324c805c5d0eb83b4ca4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7c78954659c125c919ed0debbd81023a3da02db3
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849192"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219451"
 ---
 # <a name="item-consolidation---location-utilization"></a>Konsolidacja pozycji — wykorzystanie lokalizacji
 
@@ -30,8 +30,8 @@ Ten artykuł zawiera informacje o funkcjach ułatwiających menedżerom magazyn�
 
 Aby można było skorzystać z funkcji opisanych w tym artykule, należy je włączyć w systemie. Administratorzy mogą skorzystać z obszaru roboczego [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć je, jeśli istnieje taka potrzeba. Włącz obie następujące funkcje w kolejności, w jakiej są wymienione w systemie. (Obie funkcje dotyczą modułu **Zarządzania magazynem**.)
 
-1. Stan lokalizacji w magazynie
-2. Wykorzystanie lokalizacji konsolidacji pozycji
+1. *Stan lokalizacji w magazynie* (na podstawie wersji 10.0.29 ta funkcja jest domyślnie włączona. Aby uzyskać więcej informacji, zajrzyj do [Stan lokalizacji w magazynie](warehouse-location-status.md)).
+2. *Wykorzystanie lokalizacji konsolidacji pozycji*
 
 ## <a name="warehouse-location-status"></a>Stan lokalizacji w magazynie
 

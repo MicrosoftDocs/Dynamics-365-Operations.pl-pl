@@ -1,25 +1,25 @@
 ---
 title: Termin wystawienia faktury
 description: W tym artykule omówiono konfigurowanie parametrów obliczania terminów wystawiania faktur dla odbiorcy i faktur od dostawcy w Unii Europejskiej (UE).
-author: ShylaThompson
+author: EvgenyPopovMBS
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: CustParameters, LedgerInvoiceIssueDueDateSetup_W
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 10923
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Iceland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
-ms.author: mrolecki
+ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a99f5dcd6296a0e001a5ab2a283501c93f8751a471594f0248fe61e09378bb23
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.custom: 10923
+ms.search.form: CustParameters, LedgerInvoiceIssueDueDateSetup_W
+ms.openlocfilehash: 1eb58bc18c76a92124170c4bd9e118d66bcb9c1f
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744282"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9292289"
 ---
 # <a name="invoice-issue-deadline"></a>Termin wystawienia faktury
 

@@ -1,26 +1,26 @@
 ---
 title: Operacje online i offline w punkcie sprzedaży (POS)
 description: Ten artykuł zawiera szczegółowe informacje dotyczące operacji punktu sprzedaży (POS) w Dynamics 365 Commerce. Określa, gdzie w aplikacji można wywołać operacje oraz czy są dostępne w trybie offline..
-author: jblucher
+author: josaw1
 ms.date: 05/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: Retail
-ms.author: jeffbl
+ms.author: josaw
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 3948fff15108568df514406ad443d4f538653e62
-ms.sourcegitcommit: 1af2b01aea6b5a4d88ee3fae6faa0eaf1976c5dd
+ms.custom: ''
+ms.assetid: ''
+ms.search.industry: Retail
+ms.openlocfilehash: 39f827d759f37daf056ff2df6284dda3db113c7f
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "9146493"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9272857"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Operacje online i offline w punkcie sprzedaży (POS)
 

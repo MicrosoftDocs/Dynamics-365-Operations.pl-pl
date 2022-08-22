@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 109adcc4e8b49c665bd14ecab2b7cc56cebd2291
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.openlocfilehash: db6c46d471e3b54982132df3e4819236833cf4a8
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878493"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9292143"
 ---
 # <a name="set-up-an-email-notification-profile"></a>Konfigurowanie profilu powiadomienia e-mail
 
@@ -31,17 +31,9 @@ Podczas tworzenia kanałów można skonfigurować profil powiadomienia pocztą e
 
 Aby uzyskać więcej informacji o sposobie konfigurowania poczty e-mail, zobacz [Konfigurowanie i wysyłanie wiadomości e-mail](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
 
-## <a name="create-an-email-notification-profile"></a>Tworzenie powiadomień pocztą e-mail
 
-Aby utworzyć profil powiadomień e-mail, wykonaj następujące kroki.
 
-1. W okienku nawigacji kliknij kolejno opcje **Moduły \> Handel detaliczny i inny \> Ustawienia Headquarters \> Profil powiadomienia pocztą e-mail w Commerce**.
-1. W okienku akcji kliknij **Nowy**.
-1. W polu **Profil powiadomień e-mai** wprowadź nazwę identyfikującą profil.
-1. W polu **Opis** wprowadź odpowiedni opis.
-1. Umożliwia ustawienie **Aktywnego** przełącznika na **Tak**.
-
-### <a name="create-an-email-template"></a>Tworzenie szablonu wiadomości e-mail
+## <a name="create-an-email-template"></a>Tworzenie szablonu wiadomości e-mail
 
 Aby można było włączyć typ powiadomienia pocztą e-mail, należy utworzyć szablon wiadomości e-mail organizacji w programie Commerce Headquarters dla każdego typu powiadomienia, które chcesz obsługiwać. Ten szablon definiuje temat wiadomości e-mail, nadawcę, domyślny język i treść wiadomości e-mail dla każdego obsługiwanego języka.
 
@@ -63,14 +55,24 @@ Na poniższym obrazie przedstawiono przykładowe ustawienia szablonów wiadomoś
 
 Aby uzyskać informacje na temat tworzenia szablonów wiadomości e-mail, należy zapoznać się z tematem [Tworzenie szablonów wiadomości e-mail dla zdarzeń transakcyjnych](email-templates-transactions.md). 
 
-### <a name="create-an-email-event"></a>Tworzenie wydarzenia e-mail
+## <a name="create-an-email-notification-profile"></a>Tworzenie powiadomień pocztą e-mail
+
+Aby utworzyć profil powiadomień e-mail w headquarters, wykonaj następujące kroki.
+
+1. W okienku nawigacji kliknij kolejno opcje **Moduły \> Handel detaliczny i inny \> Ustawienia Headquarters \> Profil powiadomienia pocztą e-mail w Commerce**.
+1. W okienku akcji wybierz opcję **Nowy**.
+1. W polu **Profil powiadomień e-mai** wprowadź nazwę identyfikującą profil.
+1. W polu **Opis** wprowadź odpowiedni opis.
+1. Umożliwia ustawienie **Aktywnego** przełącznika na **Tak**.
+
+## <a name="add-a-notification-type"></a>Dodaj typ powiadomień
 
 Aby utworzyć wydarzenie e-mail, należy wykonać poniższe kroki.
 
 1. W okienku nawigacji kliknij kolejno opcje **Moduły \> Handel detaliczny i inny \> Ustawienia Headquarters \> Profil powiadomienia pocztą e-mail w Commerce**.
-1. Na liście znajdź i zaznacz odpowiedni rekord. 
-1. Wybierz szablon wiadomości e-mail z listy rozwijanej **Identyfikator e-mail**.
+1. W obszarze **Ustawienia powiadomień pocztą e-mail dla sieci sprzedaży** wybierz pozycję **Nowy**.
 1. Wybierz odpowiedni typ **Powiadomienia e-mail** z listy rozwijanej.
+1. Wybierz szablon wiadomości e-mail utworzony powyżej z listy **rozwijanej Identyfikator wiadomości e-mail**.
 1. Zaznacz pole wyboru **Aktywne**.
 1. Na okienku akcji wybierz opcję **Zapisz**.
 
@@ -78,14 +80,12 @@ Na poniższym obrazie przedstawiono przykładowe ustawienia powiadomień e-mail 
 
 ![Ustawienia powiadomień wydarzeń.](media/email-notification-profile.png)
 
-> [!NOTE]
-> Typ powiadomienia utworzony przez klienta wymaga dostosowania do jego potrzeb, zanim powiadomienie będzie mogło zostać wysłane.
 
-### <a name="schedule-a-recurring-email-notification-process-job"></a>Planowanie cyklicznego zadania przetwarzania powiadomień pocztą e-mail
+## <a name="schedule-a-recurring-email-notification-process-job"></a>Planowanie cyklicznego zadania przetwarzania powiadomień pocztą e-mail
 
 Aby wysłać powiadomienia pocztą e-mail, musisz mieć uruchomione **zadanie przetwarzania powiadomień pocztą e-mail** dla zamówienia sieci sprzedaży.
 
-Aby skonfigurować zadanie **przetwarzania powiadomień pocztą e-mail** dla zamówienia sieci sprzedaży w programie Commerce Headquarters, jeśli jeszcze tego nie zrobiono, wykonaj następujące kroki.
+Aby skonfigurować w centrali zadanie wsadowe wysyłania transakcyjnych wiadomości e-mail, należy wykonać następujące kroki.
 
 1. Umożliwia przejście do modułu **Retail i Commerce \> Retail i Commerce — składniki IT \> E-mail i powiadomienia \> Wyślij powiadomienie e-mail**.
 1. W oknie **dialogowym Przetwarzania powiadomień pocztą e-mail** dla zamówienia sieci sprzedaży wybierz opcję **Powtarzaj**.
@@ -94,9 +94,9 @@ Aby skonfigurować zadanie **przetwarzania powiadomień pocztą e-mail** dla zam
 1. Wybierz **OK**, aby wrócić do okna dialogowego **Przetwarzaj powiadomienia e-mail o zamówieniach detalicznych**.
 1. Naciśnij przycisk **OK**, aby zakończyć konfigurację zadania.
 
-### <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Następne kroki
 
-Aby można było wysyłać wiadomości, należy skonfigurować usługę poczty wychodzącej i skonfigurować zadanie wsadowe. Aby uzyskać więcej informacji, zobacz temat [Konfigurowanie i wysyłanie wiadomości e-mail](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
+Aby można było wysyłać wiadomości, należy skonfigurować usługę poczty wychodzącej. Aby uzyskać więcej informacji, zobacz temat [Konfigurowanie i wysyłanie wiadomości e-mail](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

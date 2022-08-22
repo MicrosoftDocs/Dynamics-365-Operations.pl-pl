@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 02ab3675db0d78efa1e4e43188d79bb1e763a713
-ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
+ms.openlocfilehash: 7141f9c7ae4e27013bd655ce78892fc44c181315
+ms.sourcegitcommit: e14648b01549bdc17998ffdef6cde273d4e78560
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "9111827"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "9242991"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Uaktualnianie do modelu globalnej książki adresowej i strony
 
@@ -274,7 +274,7 @@ W tej sekcji opisano ustawienia wymagane przed uruchomieniem szablonów adresów
 
     ![Importowanie rekordów strony Dataverse.](media/data-factory-import-party.png)
 
-9. W fabryce danych uruchom szablony adresu pocztowego strony i adresu poczty elektronicznej strony, jeden po drugim.
+9. W fabryce danych uruchom kolejno szablony Adres elektroniczny Strony, a następnie adresy pocztowe Strony.
 
     + Szablon adresu pocztowego strony jest odpowiednio uwzględniany w wszystkich rekordach adresów pocztowych w aplikacji zaangażowania klienta i kojarzy je z odpowiednimi rekordami **Konto**, **Kontakt** i **Dostawca**. Ponadto są generowane trzy pliki .csv: ImportFONewPostalAddressLocation.csv, ImportFONewPartyPostalAddress.csv i ImportFONewPostalAddress.csv.
     + Szablon adresu poczty elektronicznej strony jest odpowiednio uwzględniany w wszystkich rekordach adresów poczty elektronicznej w aplikacji zaangażowania klienta i kojarzy je z odpowiednimi rekordami **Konto**, **Kontakt** i **Dostawca**. Zostanie również wygenerowany jeden plik csv: ImportFONewElectronicAddress.csv.

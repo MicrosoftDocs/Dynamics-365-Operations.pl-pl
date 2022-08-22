@@ -2,7 +2,7 @@
 title: Zapisane widoki
 description: W tym artykule opisano sposób korzystania z funkcji zapisanych widoków.
 author: jasongre
-ms.date: 04/25/2022
+ms.date: 07/26/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,17 +13,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 14369b02f1d7553be5c732f3bdf768825267998b
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: 6faf71ec5d14584034f9107c33ccce1cd1d393c7
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9125159"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220341"
 ---
 # <a name="saved-views"></a>Zapisane widoki
 
 [!include [banner](../includes/banner.md)]
-
+[!include [preview banner](../includes/preview-banner.md)]
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
@@ -35,7 +35,7 @@ Tradycyjna personalizacja pozwala użytkownikom mieć tylko jeden zestaw persona
 
 - Widoki umożliwiają użytkownikom posiadanie więcej niż jednego nazwanego zestawu personalizacji na formularz i ich szybkie przełączanie stosownie do potrzeb. Umożliwia to użytkownikowi tworzenie wielu zoptymalizowanych widoków strony, z których każdy jest dostosowany do potrzeb wykonywania określonego zadania biznesowego. 
 - Widoki utworzone dla określonych typów stron mogą również zawierać filtry dodane przez użytkownika lub kryteria sortowania, które umożliwiają użytkownikom szybkie odtworzenie często filtrowanych zestawów danych. Więcej szczegółów znajduje się w sekcji [Jakie strony obsługują widoki](saved-views.md#what-pages-support-views). 
-- Widoki mogą być publikowane dla użytkowników w określonych rolach zabezpieczeń i określonych firmach. Dlatego każdy użytkownik, który ma określoną rolę i dostęp w określonej firmie, może uzyskać dostęp do tego widoku i korzystać z niego, nawet jeśli ten użytkownik nie ma uprawnień do personalizacji. Ta możliwość publikowania pozwala organizacjom na definiowanie firmowych, standardowych widoków zoptymalizowanych pod kątem ich działalności. Więcej informacji zawiera sekcja [Zarządzanie personalizacjami na poziomie organizacyjnym za pomocą widoków](saved-views.md#managing-personalizations-at-an-organizational-level-with-views).
+- Widoki mogą być publikowane dla użytkowników w określonych rolach zabezpieczeń i określonych firmach. Dlatego każdy użytkownik, który ma określoną rolę i dostęp w określonej firmie, może uzyskać dostęp do tego widoku i korzystać z niego, nawet jeśli ten użytkownik ma uprawnienia do personalizacji. Ta możliwość publikowania pozwala organizacjom na definiowanie firmowych, standardowych widoków zoptymalizowanych pod kątem ich działalności. Więcej informacji zawiera sekcja [Zarządzanie personalizacjami na poziomie organizacyjnym za pomocą widoków](saved-views.md#managing-personalizations-at-an-organizational-level-with-views).
 - W przeciwieństwie do tradycyjnej personalizacji widoki nie są automatycznie zapisywane, gdy użytkownik wykonuje jawne personalizacje lub filtruje listę. Jawne zapisy są wymagane, aby zapewnić użytkownikom elastyczność tworzenia widoku przed lub po wprowadzeniu zmian skojarzonych z tym widokiem. To wymaganie zapewnia również, że definicje widoków nie zostaną przypadkowo zmienione przez filtry lub personalizacje, które nie są przeznaczone do długotrwałego użytku. Elementy, które system automatycznie zapisuje jako część typowego wykorzystania strony (na przykład szerokości kolumn lub stan rozwiniętych lub zwiniętych sekcji), zostaną zapisane dla każdego widoku.
 - Widoki można dodawać do obszarów roboczych jako kafelki, listy lub łącza. Dlatego filtrowany zbiór danych może być układany w obszarze roboczym, a użytkownicy mogą kojarzyć zbiór personalizacji, które są odpowiednie dla tego zbioru danych z kafelkiem lub łączem.
 
@@ -46,7 +46,12 @@ Po udostępnieniu widoków dla środowiska w górnej części każdej strony obs
 Istnieją dwa warianty wielkości selektora widoków: 
 
 - **Duże selektory widoków** - strony z dobrze widoczną listą będą miały duży selektor widoków z kilku powodów. Co najważniejsze, większy selektor widoku wskazuje strony, na których widok może zawierać filtry i sortowanie zdefiniowane przez użytkownika. Ponieważ filtry i sortowanie są zawarte w widokach, większy rozmiar selektora jest również uzasadniony, ponieważ nazwy widoków będą często najlepszym opisem danych wyświetlanych na ekranie, a oczekuje się, że użytkownicy będą częściej przełączać się między widokami na tych typach stron. Grupowanie w siatce może być także zapisane w widokach na stronie z dużymi selektorami widoków. 
+    
+    [![Selektor widoku obsługujący modyfikacje kwerend w widoku.](./media/views-largeViewSelector.png)](./media/views-largeViewSelector.png)
+
 - **Małe selektory widoków** - Wszystkie inne strony pełnoekranowe (z wyjątkiem obszarów roboczych i pulpitu nawigacyjnego) mają mniejszy selektor widoku, który pojawia się obok podpisu strony. Widoki na tych stronach obejmują tylko personalizacje, a nie filtry zdefiniowane przez użytkownika. Na tych stronach podpis lub tytuł rekordu często są najważniejszymi informacjami w górnej części strony. Mniejszy rozmiar selektora widoku odzwierciedla również niższą częstotliwość przełączania widoku, której oczekuje się na tych stronach. 
+    
+    [![Mały selektor widoku, który nie obsługuje modyfikacji zapytań w widoku.](./media/views-smallViewSelector.png)](./media/views-smallViewSelector.png)
  
 Wybór nazwy widoku powoduje otwarcie selektora widoku i wyświetlenie listy dostępnych widoków tej strony.
 
@@ -64,6 +69,8 @@ Aby przełączyć się do innego widoku, najpierw należy otworzyć selektor wid
 W przeciwieństwie do tradycyjnej personalizacji widoki nie są automatycznie zapisywane, gdy użytkownik personalizuje stronę lub gdy użytkownik stosuje filtr do listy lub ją sortuje. Do zapisania tych zmian w widoku wymagana jest jawna akcja. Ten wymóg zapewnia użytkownikom elastyczność tworzenia widoku przed lub po wprowadzeniu zmian skojarzonych z tym widokiem. Ponadto gwarantuje, że definicje widoków nie zostaną przypadkowo zmienione przez filtry jednorazowe lub personalizacje. Zwróć uwagę, że typowe elementy wykorzystania strony (na przykład szerokości kolumn lub stan rozwinięty lub zwinięty sekcji) są automatycznie zapisywane w bieżącym widoku, nawet w przypadku zablokowanych widoków.
 
 Aby upewnić się, że aktualny stan widoku jest znany, gdy zaczynasz zmieniać widok przez personalizację lub filtrowanie, obok nazwy bieżącego widoku pojawi się gwiazdka (\*). Ten symbol wskazuje, że oglądana jest niezapisany, zmodyfikowana wersja tego widoku.
+
+[![Niezapisane zmiany w widoku.](./media/views-unsavedChanges.png)](./media/views-unsavedChanges.png)
 
 Jeśli chcesz zapisać te zmiany, wykonaj następujące kroki.
 
@@ -225,7 +232,7 @@ Po włączeniu widoków wszelkie istniejące personalizacje użytkownika i formu
 
 ### <a name="what-pages-support-views"></a>Jakie strony obsługują widoki? 
 
-Widoki są dostępne dla większości, ale nie wszystkich stron. Dokładnie rzecz biorąc, widoki są obecnie dostępne na wszystkich stronach pełnoekranowych, z wyjątkiem pulpitów nawigacyjnych i obszarów roboczych. Strony niepełnoekranowe, zawierające okna dialogowe, okna dialogowe rozwijane, wyszukiwania, rozszerzone podglądy, obecnie nie obsługują widoków. Obsługa widoków na dodatkowych stronach, jak obszary robocze i okna dialogowe, być może zostanie dodana w przyszłej aktualizacji.
+Widoki są dostępne dla większości, ale nie wszystkich stron. Dokładnie rzecz biorąc, widoki są obecnie dostępne na wszystkich stronach pełnoekranowych, z wyjątkiem pulpitów nawigacyjnych. Wyświetlanie obsługi obszarów roboczych jest dostępne za pośrednictwem obsługi **zapisanych widoków dla obszarów roboczych**. Większość stron niepełnoekranowych, które zawierają rozwijane okna dialogowe, odnośniki i ulepszone podglądy, obecnie nie obsługuje widoków. Obsługa wyświetlania okien dialogowych jest dostępna za pośrednictwem funkcji **Obsługa zapisanych widoków dla okien dialogowych**.
 
 ### <a name="who-is-allowed-to-publish-views"></a>Kto ma prawo do publikowania widoków?
 

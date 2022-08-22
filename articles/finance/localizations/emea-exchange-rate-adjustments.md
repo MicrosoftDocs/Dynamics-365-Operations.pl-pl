@@ -1,25 +1,25 @@
 ---
 title: Korekty kursów wymiany
 description: Ten artykuł zawiera informacje o funkcji korekty kursu wymiany przeznaczonej dla użytkowników w firmach w Estonii, na Węgrzech, w Czechach, na Łotwie, na Litwie, w Polsce i w Rosji.
-author: ShylaThompson
+author: AdamTrukawka
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: LedgerParameters
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 272683
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
-ms.author: kfend
-ms.dyn365.ops.version: Version 1611
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: cf9e047872269b8fca56c702bd9599c759b0acd6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.dyn365.ops.version: Version 1611
+ms.custom: 272683
+ms.search.form: LedgerParameters
+ms.openlocfilehash: 776f518b35b0ff59cacef81c4c5b83fa2278956e
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889796"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9268559"
 ---
 # <a name="exchange-rate-adjustments"></a>Korekty kursów wymiany
 

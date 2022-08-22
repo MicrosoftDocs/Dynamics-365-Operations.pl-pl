@@ -1,24 +1,24 @@
 ---
 title: Deklaracja podatku VAT dla Egiptu
 description: W tym artykule opisano sposób konfigurowania i generowania formularza zwrotu podatku VAT dla Egiptu.
-author: sndray
+author: AdamTrukawka
 ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: ''
 ms.search.region: Global
-ms.author: sndray
+ms.author: atrukawk
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 1d5788b2328a49f4725a6c689e29a7e784032fae
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.scope: ''
+ms.openlocfilehash: c035c52d7d577a01f5903461548c0cb33f05045f
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870043"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9287830"
 ---
 #  <a name="vat-declaration-for-egypt-eg-00002"></a>Deklaracja VAT dla Egiptu (EG-00002)
 

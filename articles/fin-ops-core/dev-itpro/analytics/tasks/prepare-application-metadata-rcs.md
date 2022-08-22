@@ -1,24 +1,24 @@
 ---
 title: Przygotowywanie metadanych aplikacji używanych w RCS
 description: W tym artykule opisano sposób tworzenia nowej konfiguracji raportowania zawierającej metadane aplikacji.
-author: NickSelin
+author: kfend
 ms.date: 06/28/2019
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6b5e7f69653381e16b4a8a8def56845a41bb14b0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form: ''
+ms.openlocfilehash: a9ccbb120be43eaf7a8ae8b5bf8eaafb4850b199
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868805"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9289983"
 ---
 # <a name="prepare-application-metadata-to-be-used-in-rcs"></a>Przygotowywanie metadanych aplikacji używanych w RCS
 [!include [banner](../../includes/banner.md)]

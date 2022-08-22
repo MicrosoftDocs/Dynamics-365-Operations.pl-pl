@@ -7,18 +7,18 @@ ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: v-chgri
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5e61db026649df8fe331d107bfbda8246fb9d5f9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.assetid: ''
+ms.openlocfilehash: 1f2e4eb8825dd690f926f7f0bdfc39f1eb5fb83c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8881859"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9276381"
 ---
 # <a name="default-category-landing-page-and-search-results-page-overview"></a>Domyślna strona docelowa kategorii i strona wyników wyszukiwania – omówienie
 
@@ -46,6 +46,12 @@ Następujące składniki są istotne dla danej kategorii:
     - Nazwa produktu – \[Z-A\]
     - Ocena – od najniższej do najwyższej
     - Ocena – od najwyższej do najniższej
+
+- **Zaawansowane opcje sortowania** są używane przez odwiedzających witrynę do sortowania produktów za pomocą inteligentnych kryteriów. Po włączeniu [Rekomendacje produktów](product-recommendations.md) dostępne są następujące opcje sortowania. Aby uzyskać więcej informacji, zobacz artykuł [Typy rekomendacji produktów](product-recommendations.md#types-of-product-recommendations).
+
+    - Nowa
+    - Najlepiej sprzedawane
+    - Popularne
 
 - **Podział na strony** umożliwia osobom odwiedzającym witrynę przechodzenie z jednej strony skategoryzowanych wyników produktów na inną stronę.
 - **Licznik całkowity** podaje całkowitą liczbę produktów zdefiniowanych w kategorii.
@@ -78,7 +84,7 @@ Następujące składniki są istotne dla strony wyników wyszukiwania
 
 - **Kafelki umieszczenia produktu** pokazują produkty dla wyszukiwania użytkownika. Domyślnie te kafelki są sortowane według punktacji Relevancy wyszukiwanej w chmurze dla wyszukiwania użytkownika.
 - **Elementy uściślające i podsumowanie wyborów** są filtrami, które dostarczają liczników i służą do poprawiania pozycji. Menedżer ds. merchandisingu konfiguruje je jako część konfiguracji metadanych związanych z „kategoriami kanału i atrybutami produktu”.
-- **Opcje sortowania** są używane przez odwiedzających witrynę sieci Web do sortowania produktów. Domyślnie dostępne są następujące opcje sortowania:
+- **Standardowe opcje sortowania** są używane przez odwiedzających witrynę sieci Web do sortowania produktów. Domyślnie dostępne są następujące opcje sortowania:
 
     - Cena – od najniższej do najwyższej
     - Cena – od najwyższej do najniższej
@@ -86,7 +92,16 @@ Następujące składniki są istotne dla strony wyników wyszukiwania
     - Nazwa produktu – \[Z-A\]
     - Ocena – od najniższej do najwyższej
     - Ocena – od najwyższej do najniższej
-    - Domyślnie
+    - Domyślnie 
+    
+    > [!NOTE]
+    > Jeśli dla produktów w hierarchii nawigacji zdefiniowano wartości **Kolejność wyświetlania**, sortowanie domyślnie na stronie kategorii uwzględnia wartości zdefiniowane w **Kolejność wyświetlania**. W przeciwnym razie sortowanie zostanie wykonane według **numeru produktu**)
+    
+- **Zaawansowane opcje sortowania** są używane przez odwiedzających witrynę do sortowania produktów za pomocą inteligentnych kryteriów. Po włączeniu [Rekomendacje produktów](product-recommendations.md) dostępne są następujące opcje sortowania. Aby uzyskać więcej informacji, zobacz artykuł [Typy rekomendacji produktów](product-recommendations.md#types-of-product-recommendations).
+
+    - Nowa
+    - Najlepiej sprzedawane
+    - Popularne
 
 - **Podział na strony** umożliwia osobom odwiedzającym witrynę przechodzenie z jednej strony skategoryzowanych wyników produktów na inną stronę.
 - **Licznik całkowity** podaje całkowitą liczbę produktów zdefiniowanych w kategorii i wyników pasujących do kryteriów wyszukiwania.
@@ -94,6 +109,8 @@ Następujące składniki są istotne dla strony wyników wyszukiwania
 >[!NOTE]
 >Te możliwości wyszukiwania z wykorzystaniem chmury są dostępne począwszy od wersji 10.0.8. Upewnij się, że w menu **Parametry Commerce > Konfigurowanie parametrów** istnieje wpis o wartości „true” dla parametru „ProductSearch.UseAzureSearch”. 
 ![Parametry konfiguracji dla wyszukiwania z wykorzystaniem chmury.](./media/CloudPoweredSearchConfigurationParameters.png)
+
+>Ponadto, aby używać zaawansowanych opcji sortowania, takich jak nowe, najpowiedniejsze i najmodnujące, należy włączyć [Rekomendacje produktów](product-recommendations.md) w swoim środowisku. Zaawansowane opcje sortowania są dostępne wraz z zestawami Commerce SDK w wersji 9.35+ i Commerce w wersji 10.0.20.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

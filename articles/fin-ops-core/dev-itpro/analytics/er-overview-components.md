@@ -1,26 +1,26 @@
 ---
 title: Składniki raportowania elektronicznego
 description: W tym artykule opisano składniki raportowania elektronicznego.
-author: nselin
+author: kfend
 ms.date: 09/28/2021
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 58941
-ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
-ms.topic: overview
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c2b8b197fdea0cd49fc5161a12b8f547cc1a27bf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 58941
+ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
+ms.search.form: ERWorkspace
+ms.openlocfilehash: 4851374ca4943a84d35f063e0ee65b537ec3b6cd
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892458"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9285040"
 ---
 # <a name="electronic-reporting-components"></a>Składniki raportowania elektronicznego
 
@@ -123,15 +123,37 @@ Wersje ze stanem **Ukończona** lub **Udostępniona** są dostępne dla innych p
 - Składnik może być serializowany w formacie XML i eksportowany jako plik w formacie XML.
 - Składnik może być reserializowany z pliku XML i importowany do aplikacji jako nowa wersja składnika raportowania elektronicznego.
 
+Aby uzyskać więcej informacji, zobacz [importowanie nowej konfiguracji modelu danych](er-quick-start1-new-solution.md#ImportDataModel) i [eksportowanie zakończonej wersji formatu pochodnego](er-calculated-field-type.md#export-completed-version-of-a-derived-format).
+
+### <a name="draft-versions-at-runtime"></a>Wersje robocze w czasie wykonywania
+
+W osobistych parametrach użytkownika dla struktury ER możesz włączyć opcję, która pozwala określić, czy wersja robocza konfiguracji ER musi być używana w czasie wykonywania. Aby uzyskać informacje dotyczące sposobu udostępnienia opcji **Uruchom** w wersji roboczej dla konfiguracji wersji roboczej, zobacz temat [Oznaczanie formatu niestandardowego jako uruchamianego](er-quick-start2-customize-report.md#MarkFormatRunnable).
+
+> [!NOTE]
+> Parametry użytkownika ER są właściwe dla firmy i właściwe dla użytkownika.
+
+### <a name="draft-format-versions-at-runtime"></a>Wersja robocza formatu w czasie wykonywania
+
+Domyślnie po uruchomieniu rozwiązania ER wersje robocze jego składników formatu są ignorowane. Zamiast tego zostanie użyta tylko wersja odpowiednią o stanie innym niż **Wersja robocza**. Czasami można wymusić używanie w czasie wykonywania wersji roboczej konfiguracji formatu ER. Na przykład po wprowadzeniu niezbędnych zmian w wersji roboczej można użyć tej wersji roboczej do uruchomienia testu. W ten sposób możesz zweryfikować poprawność swoich zmian. Aby rozpocząć korzystanie z wersji roboczej formatu, musisz [ustawić](er-quick-start2-customize-report.md#MarkFormatRunnable) opcję **Uruchom wersję roboczą** odpowiedniej konfiguracji ER na **Tak**.
+
+### <a name="draft-model-mapping-versions-at-runtime"></a>Wersje robocze mapowania modelu w czasie wykonywania
+
+Domyślnie po uruchomieniu rozwiązania ER są zawsze używane wersje robocze jego składników mapowania modelu. Czasami możesz chcieć zmusić ER do ignorowania wersji roboczej konfiguracji mapowania modelu ER w czasie wykonywania. W **wersji 10.0.29 i nowszych** możesz włączyć opcję **Zawsze bierz pod uwagę opcję „Uruchom wersję roboczą” dla funkcji mapowania modelu ER**, aby kontrolować wersję mapowania modelu używaną w czasie wykonywania. Gdy ta funkcja jest włączona, występuje następujące zachowanie:
+
+- Gdy opcja **Uruchom wersję roboczą** jest ustawiona na **Nie** w przypadku konfiguracji mapowania modelu, w czasie wykonywania jest używana najwyższa wersja poza wersja robocza tej konfiguracji. Wystąpił wyjątek, jeśli konfiguracja nie jest dostępna w bieżącym wystąpieniu Finance.
+- Gdy opcja **Uruchom wersję roboczą** jest ustawiona na **Tak** dla konfiguracji mapowania modelu, wersja robocza tej konfiguracji jest używana w czasie wykonywania.
+
 ## <a name="component-date-effectivity"></a>Daty obowiązywania składnika
 
-Wersje składników ER mają daty obowiązywania. Można ustawić datę wejścia w życie dla składnika ER, aby określić datę, od której składnik zacznie obowiązywać w procesach raportowania. Data sesji aplikacji pozwala określić, czy składnik może być uruchamiany. Gdy dla danej daty jest dostępnych kilka wersji, najnowsza wersja jest używana w procesach raportowania.
+Wersje składników formatu ER mają daty obowiązywania. Można ustawić datę wejścia w życie dla składnika Formatu ER, aby określić datę, od której składnik zacznie obowiązywać w procesach raportowania. Data sesji aplikacji pozwala określić, czy składnik może być uruchamiany. Gdy dla danej daty jest dostępnych kilka wersji, najnowsza wersja jest używana w procesach raportowania.
 
 ## <a name="component-access"></a>Dostęp do składnika
 
-Dostęp do składników formatu ER zależy od ustawienia kodu kraju/regionu Międzynarodowej Organizacji Normalizacyjnej (ISO). Gdy to ustawienie jest puste dla wybranej wersji konfiguracji formatu, dostęp do składnika formatu można uzyskać podczas wykonywania z każdej firmy. Gdy to zawiera kody ISO kraju/regionu, składnik formatu jest dostępny tylko z tych firm, których adres główny został zdefiniowany dla jednego z kodów ISO kraju/regionu istniejących w składniku formatu.
+Dostęp do formatu ER i składników mapowania modelu w czasie wykonywania zależy od ustawienia kodu kraju/regionu Międzynarodowej Organizacji Normalizacyjnej (ISO). Jeśli to ustawienie jest puste dla wybranej wersji konfiguracji mapowania formatu lub modelu, dostęp do składnika mapowania formatu lub modelu można uzyskać z dowolnej firmy w czasie wykonywania. Jeśli ustawienie zawiera kody krajów/regionów ISO, składnik mapowania formatu lub modelu jest dostępny tylko od firm, których adres podstawowy jest zdefiniowany dla jednego z kodów krajów/regionów ISO składnika formatu.
 
-Różne wersje składnika formatu danych mogą mieć różne ustawienia kodów ISO kraju/regionu.
+Różne wersje formatu lub komponentu mapowania modelu mogą mieć różne ustawienia kodów ISO krajów/regionów.
+
+Aby uzyskać więcej informacji, zobacz [Konfigurowanie mapowań modelu raportowania elektronicznego w zależności od kraju](er-country-dependent-model-mapping.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 

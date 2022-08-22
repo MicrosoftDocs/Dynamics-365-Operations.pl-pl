@@ -1,22 +1,22 @@
 ---
 title: Szczegóły określonych scenariuszy biznesowych w raporcie JPK-V7M
 description: Ten artykuł wyjaśnia szczegóły konkretnych scenariuszy biznesowych w raporcie JPK-V7M w Polsce.
-author: liza-golub
+author: AdamTrukawka
 ms.date: 07/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Poland
-ms.author: elgolu
-ms.openlocfilehash: e493eeeb0d116e5ff59ef9f06841f48bf86c4907
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.author: atrukawk
+ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
+ms.openlocfilehash: 1625d0c04a5138249a37e7d36cd31dd89f37f95d
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903008"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9274575"
 ---
 # <a name="details-of-specific-business-scenarios-in-the-jpk-v7m-report"></a>Szczegóły określonych scenariuszy biznesowych w raporcie JPK-V7M
 

@@ -10,28 +10,35 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 4bd6042f9dd33ba15773b251911e965cb870c5aa
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e1c9a9b618184303efe2bd10975e46423cca9ccc
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865129"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219976"
 ---
 # <a name="delay-tolerance-negative-days"></a>Tolerancja opóźnienia (dni z ujemnym opóźnieniem)
 
 [!include [banner](../../includes/banner.md)]
 
-Funkcja tolerancji opóźnienia umożliwia optymalizacji planowania uwzględnienie wartości **Ujemne dni** , która jest ustawiona dla grup pokrycia. Służy do przedłużenia okresu tolerancji opóźnienia stosowanego podczas planowania głównego. Pozwoli to uniknąć tworzenia nowych zamówień dostaw, jeśli istniejąca podaż będzie w stanie pokryć popyt w krótkim czasie. Celem tej funkcji jest określenie, czy tworzenie nowego zamówienia podażowego dla danego popytu ma sens.
+Funkcja tolerancji opóźnienia umożliwia optymalizacji planowania uwzględnienie wartości **Ujemne dni**, która jest ustawiona dla grup pokrycia, zapotrzebowania na towary lub planów głównych. Służy do przedłużenia okresu tolerancji opóźnienia stosowanego podczas planowania głównego. Pozwoli to uniknąć tworzenia nowych zamówień dostaw, jeśli istniejąca podaż będzie w stanie pokryć popyt w krótkim czasie. Celem tej funkcji jest określenie, czy tworzenie nowego zamówienia podażowego dla danego popytu ma sens.
 
 ## <a name="turn-on-the-feature-in-your-system"></a>Włączanie funkcji w systemie
 
-Aby udostępnić funkcję w systemie, przejdź do modułu [Zarządzanie funkcjami](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) i włącz funkcję *Ujemne dni w optymalizacji planowania*.
+Aby udostępnić funkcję w systemie, przejdź do modułu [Zarządzanie funkcjami](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) i włącz następujące funkcje:
+
+- *Dni z ujemną wartością optymalizacji planowania* — ta funkcja włącza ustawienia dotyczące ujemnych liczby dni dla grup zapotrzebowania i zapotrzebowania na towar.
+- *Automatyzacja dostaw produkcji na zamówienie* — ta funkcja umożliwia ustawienia ujemnych dni dla planów główne. (Aby uzyskać więcej informacji, zobacz temat [Automatyzacja dostaw produktów na zamówienie](../make-to-order-supply-automation.md).)
 
 ## <a name="delay-tolerance-in-planning-optimization"></a>Tolerancja opóźnienia w optymalizacji planowania
 
 Tolerancja opóźnienia reprezentuje liczbę dni poza czasem realizacji, którą jesteś skłonny odczekać przed zamówieniem nowego uzupełnienia, gdy istniejąca dostawa jest już zaplanowana. Tolerancja opóźnień jest określana przy użyciu dni kalendarzowych, a nie dni roboczych.
 
-W planowaniu głównym, podczas obliczania przez system tolerancji opóźnienia, jest ono rozważane przy ustawieniu **Liczby dni z ujemnym czasem**. **Liczbę dni z ujemnym stanem** można określić albo na stronie **Zapotrzebowanie na towar**, albo na stronie **Grupy zapotrzebowania**.
+W planowaniu głównym, podczas obliczania przez system tolerancji opóźnienia, jest ono rozważane przy ustawieniu **Liczby dni z ujemnym czasem**. Możesz ustawić wartość **Dni ujemne** na stronie **Grupy pokrycia**, **Pokrycie pozycji** lub **Plany główne**. Jeśli na więcej niż jednym poziomie są przypisywane dni z ujemnym poziomem, do decydowania, które ustawienie ma być stosowane, system stosuje następującą hierarchię:
+
+- Jeśli na stronie **Plany główne** włączono dni ujemne, to ustawienie zastępuje wszystkie inne ustawienia dni ujemnych po uruchomieniu planu.
+- Jeśli na stronie **Zapotrzebowania na towar** skonfigurowano ujemne liczby dni, ustawienie to zastępuje ustawienie grupy zapotrzebowania.
+- Ujemne liczby dni skonfigurowane na stronie **Grupy zapotrzebowania** obowiązują tylko wtedy, gdy dla odpowiedniego towaru lub planu nie skonfigurowano dni z ujemnym dniem.
 
 System łączy obliczenia tolerancji opóźnienia z *najbliższą datą uzupełnienia*, która jest równa dzisiejszej dacie plus czas realizacji. Tolerancja opóźnienia jest obliczana przy użyciu następującej formuły, w której wartość *max()* to większa z dwóch wartości:
 

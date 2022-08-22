@@ -1,24 +1,26 @@
 ---
 title: Projektowanie nowej konfiguracji ER w celu generowania raportów w formacie programu Word
 description: W tym artykule wyjaśniono, jak użytkownicy mogą skonfigurować nowy format raportowania elektronicznego (ER), aby generować raporty jako dokumenty programu Microsoft Word.
-author: NickSelin
+author: kfend
 ms.date: 12/17/2020
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner,  LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: caf87659ca4ceb7b25aa43e09893d2a0ef014884
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form:
+- ERWorkspace, ERSolutionTable, EROperationDesigner
+- LedgerJournalTable, LedgerJournalTransVendPaym
+ms.openlocfilehash: b56b328aa2a2b53dc177a02a4d453e5dbcb8340c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893020"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9273347"
 ---
 # <a name="design-a-new-er-configuration-to-generate-reports-in-word-format"></a>Projektowanie nowej konfiguracji ER w celu generowania raportów w formacie programu Word
 
@@ -35,7 +37,7 @@ Aby użyć dokumentu programu Word jako szablonu raportów w formacie programu W
 
 ![Tworzenie konfiguracji formatu na stronie Konfiguracje.](./media/er-design-configuration-word-image2.gif)
 
-Składnik formatu ER rozwiązania musi zawierać element formatu **Excel\\Plik**, a ten element formatu musi być połączony z dokumentem programu Word, który będzie używany jako szablon do generowania raportów w czasie wykonywania. Aby skonfigurować składnik formatu ER, należy otworzyć [wersję roboczą](general-electronic-reporting.md#component-versioning) utworzonej konfiguracji ER w projektancie formatów ER. Następnie dodaj element **Excel\\Plik**, dołącz szablon programu Word do edytowalnego formatu ER i połącz ten szablon z dodanym elementem **Excel\\Plik**.
+Składnik formatu ER rozwiązania musi zawierać element formatu **Excel\\Plik**, a ten element formatu musi być połączony z dokumentem programu Word, który będzie używany jako szablon do generowania raportów w czasie wykonywania. Aby skonfigurować składnik formatu ER, należy otworzyć wersję roboczą utworzonej konfiguracji ER w projektancie formatów ER. Następnie dodaj element **Excel\\Plik**, dołącz szablon programu Word do edytowalnego formatu ER i połącz ten szablon z dodanym elementem **Excel\\Plik**.
 
 > [!NOTE]
 > Podczas ręcznego dołączania szablonu należy użyć [typu dokumentu](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types), który został poprzednio [skonfigurowany](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) w obszarze parametrów ER w celu przechowywania szablonów formatów ER.

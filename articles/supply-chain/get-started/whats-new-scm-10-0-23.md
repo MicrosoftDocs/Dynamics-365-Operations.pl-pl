@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: ded645ebaea1230b68525c247ee91e3893211774
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: 1b45cc2ba26f60ab444edca6c513c581e8332a2a
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124537"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219133"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10023-january-2022"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management w wersji 10.0.23 (styczeń 2022 r.)
 
@@ -55,7 +55,7 @@ Jeśli chcesz włączyć lub wyłączyć którąkolwiek z tych funkcji, musisz t
 | Zarządzanie zapasami i magazynem | (Rosja) W zarządzaniu zapasami używaj tłumaczeń na język lokalny w specyficznych dla kraju lub regionu formularzach podstawowych | Dla rosyjskich lokalizacji Supply Chain Management funkcja ta umożliwia używanie rosyjskich tłumaczeń nazw produktów/pozycji i jednostek miary na następujących wydrukach zapasów specyficznych dla Rosji:Lista zliczania (INV-3), Lista zliczania (INV-5), Lista zliczania (INV-6). |
 | Planowanie główne | Usługa Azure Machine Learning Service do prognozowania popytu | Ta funkcja umożliwia usłudze Azure Machine Learning Service generowanie prognoz popytu na podstawie danych historycznych. Aby uzyskać więcej informacji, zobacz [Konfigurowanie prognozowania popytu](../master-planning/demand-forecasting-setup.md). |
 | Zaopatrzenie i sourcing | Wyczyść historię aktualizacji zamówień zakupu | Ta funkcja pozwala na wyczyszczenie tymczasowych zapisów historycznych związanych z aktualizacjami zamówień zakupu. Dodaje nowy przycisk o nazwie **Wyczyść historię aktualizacji zakupu** do panelu akcji na stronie **Wszystkie zamówienia zakupu**. Ten funkcjonalność jest włączona domyślnie. |
-| Kontrola produkcji | (Wersja zapoznawcza) Automatyczne pobieranie materiałów z obsługą magazynu dla automatycznie księgowanych list pobrania | Funkcja ta pozwala na automatyczne wybieranie i rozwiązywanie wymiarów inwentaryzacji dla automatycznie wysyłanych, pochodnych i wstecznie przepłukiwanych dzienników listy kompletacji. |
+| Kontrola produkcji | Automatyczne pobieranie materiałów z obsługą magazynu dla automatycznie księgowanych list pobrania | Funkcja ta pozwala na automatyczne wybieranie i rozwiązywanie wymiarów inwentaryzacji dla automatycznie wysyłanych, pochodnych i wstecznie przepłukiwanych dzienników listy kompletacji. |
 | Kontrola produkcji | Weryfikacja ważności surowców w stosunku do planowanej daty zużycia | Ta funkcja zmienia sposób walidacji dat ważności partii podczas rezerwowania partii surowca do wykorzystania podczas produkcji. Gdy ta funkcja jest włączona, data ważności partii jest sprawdzana względem planowanej daty zużycia (daty surowca), ustalonej w linii BOM produkcji lub linii formuły zamówienia partii. Gdy ta funkcja jest wyłączona, data ważności partii jest weryfikowana względem planowanej daty dostawy zlecenia produkcyjnego lub partyjnego (jak poprzednio). |
 | Sprzedaż i marketing | Oczyszczanie historii aktualizacji sprzedaży na podstawie wieku | Ta funkcja umożliwia ustawienie maksymalnego wieku rekordów, które mają być zachować podczas uruchamiania zadania okresowego **czyszczenia historii aktualizacji sprzedaży**. Starsze rekordy zostaną usunięte. Jest to przydatne w przypadku okresowego uruchamiania zadania, ponieważ wiek jest zawsze obliczany w odniesieniu do daty uruchomienia zadania. Bez tej funkcji można ustawić tylko określoną datę dla najstarszych rekordów do zachowania. Aby uzyskać więcej informacji, zobacz [Zaplanuj czyszczenie danych historii sprzedaży](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
 | Sprzedaż i marketing | Popraw wydajność raportu „100 najlepszych” odbiorców | Ta funkcja poprawia wydajność raportu **Top 100** klientów poprzez uruchamianie raportu zawsze dla wszystkich klientów (co jest jego przeznaczeniem), a nie poprzez umożliwienie zapytań niestandardowych. Gdy ta funkcja jest włączona, wszystkie ustawienia **Rekordy powinny zawierać** są wyłączone w oknie dialogowym raportu **Top 100**. |

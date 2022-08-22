@@ -1,22 +1,22 @@
 ---
 title: Przygotowanie do raportowania JPK-V7M
 description: Ten artykuł zawiera informacje o tym, jak skonfigurować deklarację VAT z rejestrami (znanymi również jako JPK-V7M, VDEK) w Polsce.
-author: liza-golub
+author: AdamTrukawka
 ms.date: 10/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Poland
-ms.author: elgolu
-ms.openlocfilehash: 7dc0067c1c0d70067bf744c4063a8fbd56d4bcef
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.author: atrukawk
+ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
+ms.openlocfilehash: 1b263209f69dc41405993fb5ed866d0b2cbb6113
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903005"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9274572"
 ---
 # <a name="prepare-for-jpk-v7m-reporting"></a>Przygotowanie do raportowania JPK-V7M
 
@@ -178,7 +178,7 @@ W przypadku tego pola wyszukiwania dostępne są następujące główne źródł
 
 To pole wyszukiwania definiuje warunki oparte na głównych źródłach danych bieżącej firmy. Warunki te dają w wyniku marker **1** dla odpowiadającego mu elementu z listy oznaczeń, które są związane z dostawami i świadczeniem usług (**GTU_\**_ znaczniki) pod tagiem _*\<SprzedazWiersz\>**. Można zaznaczyć więcej niż jedno oznaczenie dla tego samego rekordu należnego podatku VAT. Dlatego, jeśli firma musi zgłosić odmienne oznaczenia, muszą być dostępne odrębne warunki w danych głównych firmy.
 
-Oznaczenia **GTU_\**nie są wymagane w przypadku dokumentów typu ** WEW** (wewnętrzny dokument) i **RO** (wewnętrzny dokument podsumowujący) (tag **\<TypDokumentu\>** pod tagiem **\<SprzedazWiersz\>**).
+Oznaczenia **GTU_\**_ nie są wymagane w przypadku dokumentów typu _* WEW** (wewnętrzny dokument) i **RO** (wewnętrzny dokument podsumowujący) (tag **\<TypDokumentu\>** pod tagiem **\<SprzedazWiersz\>**).
 
 W poniższej tabeli przedstawiono wyniki wyszukiwania (oznaczenia) dla **ServiceDeliverySelector**.
 
@@ -384,11 +384,15 @@ Podczas przetwarzania JPK-V7M używana jest klasa wykonywalna **EMGenerateJPKVDE
 1. Przejdź do **Podatek** \> **Ustawienia** \> **Obsługa wiadomości elektronicznych** \> **Ustawienia klasy wykonywalnej**.
 2. Wybierz klasę wykonywalną **Wygenerowanie JPK_V7M** (która ma wywoływać **EMGenerateJPKVDEKReportController_PL**), a następnie, w okienku akcji, wybierz **Parametry**. W oknie dialogowym **Generuj polski raport JPK_VDEK** naciśnij **OK**.
 
-W oknie dialogowym klasy wykonywalnej grupa parametrów **Oznaczenie sprzedaży właściwe dla sprzedaży detalicznej** jest używana w scenariuszach właściwych dla sprzedaży detalicznej. Aby uzyskać więcej informacji dotyczących sposobu raportowania typów dokumentów **RO** i **FP** dla operacji handlu detalicznego, zapoznaj się z sekcją [Raportowanie typów dokumentów RO i FP dla operacji handlu detalicznego](emea-pol-vdek-scenarios.md#report-ro-and-fp-document-types-for-retail-operations) w dalszej części tego tematu.
+W oknie dialogowym klasy wykonywalnej grupa parametrów **Oznaczenie sprzedaży właściwe dla sprzedaży detalicznej** jest używana w scenariuszach właściwych dla sprzedaży detalicznej. Aby uzyskać więcej informacji dotyczących sposobu raportowania typów dokumentów **RO** i **FP** dla operacji handlu detalicznego, zapoznaj się z sekcją [Raportowanie typów dokumentów RO i FP dla operacji handlu detalicznego](emea-pol-vdek-scenarios.md#report-ro-and-fp-document-types-for-retail-operations) w dalszej części tego tematu. **Grupa parametrów znakowania** sprzedaży specyficzna dla sieci sprzedaży jest dostępna tylko w firmach, które mają podstawowy adres w Polsce.
 
-Okno dialogowe dla klasy wykonywalnej zawiera parametr **Uwzględnij kody daty raportu VAT**. Ten parametr służy do zbierania transakcji VAT w raporcie na podstawie reguł, które definiujesz w kodach daty raportu VAT. Ten parametr nie ma wpływu na transakcje specyficzne dla sieci sprzedaży, które będą zgłaszane jako typ dokumentu **FP**. Aby uzyskać więcej informacji o funkcji kodów daty raportu VAT, zobacz temat [Ustawianie kodów daty raportu VAT](/dynamicsax-2012/appuser-itpro/pol-set-up-vat-report-date-codes).
+Okno dialogowe dla klasy wykonywalnej zawiera parametr **Uwzględnij kody daty raportu VAT**. Ten parametr służy do zbierania transakcji VAT w raporcie na podstawie reguł, które definiujesz w kodach daty raportu VAT. Ten parametr nie ma wpływu na transakcje specyficzne dla sieci sprzedaży, które będą zgłaszane jako typ dokumentu **FP**. Aby uzyskać więcej informacji o funkcji kodów daty raportu VAT, zobacz temat [Ustawianie kodów daty raportu VAT](/dynamicsax-2012/appuser-itpro/pol-set-up-vat-report-date-codes). Parametr **Rozważ kody dat raportu podatku VAT** jest dostępny tylko w firmach, których adres podstawowy znajduje się w Polsce.
+
+Okno dialogowe dla klasy wykonywalnej zawiera parametr **Okres rozliczeniowy**. Użyj tego parametru z funkcją [**Wiele numerów rejestracyjnych VAT**](emea-multiple-vat-registration-numbers.md) do zbierania transakcji VAT w określonych okresach rozliczenia podatku od sprzedaży. Parametr **Okres rozliczenia** jest dostępny w wersji finanse 10.0.29.
 
 KB5007691 („Polska: Jednolity Plik Kontrolny VDEK (JPK-V7M, VDEK), zmiany ze stycznia 2022 w aplikacji Dynamics 365 Finance”) wprowadza parametr **Wersja schematu**. Ten parametr umożliwia określenie, że dodatkowe pole zawiera wersję schematu JPK-V7M, która ma zostać zgłoszona. Wybierz opcję **Wersja schematu** jako wartość tego pola.
+
+Okno dialogowe dla klasy wykonywalnej zawiera parametr **Raportuj w walucie rozliczeniowej**. Domyślnie kwoty w raporcie są reprezentowane w walucie kodu podatku. Użyj tego parametru, aby raportować kwoty w JPK-V7M w walucie rozliczeniowej. Parametr **Raport w walucie rozliczeniowej** jest dostępny w wersji finansów 10.0.29.
 
 ## <a name="set-up-security-roles-for-electronic-message-processing"></a><a id="security-roles-vdek"></a>Konfigurowanie ról zabezpieczeń na potrzeby przetwarzania wiadomości elektronicznych
 

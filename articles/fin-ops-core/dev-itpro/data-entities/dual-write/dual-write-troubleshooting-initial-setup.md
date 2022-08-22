@@ -5,22 +5,20 @@ author: RamaKrishnamoorthy
 ms.date: 08/10/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 2e2759ff15dd8d146c642fc0da90d1a38fe855d1
-ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
+ms.openlocfilehash: d33fc6f4895b53f16cc6957a3a2fc6b1abe90a2f
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "9111209"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9289523"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Rozwiązywanie problemów podczas konfiguracji początkowej
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 Ten artykuł zawiera informacje dotyczące rozwiązywania problemów dotyczących integracji podwójnego zapisu między aplikacjami finansowymi i operacyjnymi oraz usługą Dataverse. A dokładniej, ten temat zawiera informacje ułatwiające rozwiązywanie problemów, które mogą wystąpić podczas integracji podwójnego zapisu.
 
@@ -87,6 +85,19 @@ Istnieją dwie przyczyny, które mogą powodować, że środowisko nie będzie w
 
 + Zalogowany użytkownik nie znajduje się w tej samej dzierżawie co wystąpienie aplikacji finansowych i operacyjnych.
 + Istnieje kilka starszych wystąpień aplikacji finansowych i operacyjnych, które były hostowane przez firmę Microsoft i miały problem z wykrywaniem. Aby usunąć ten problem, zaktualizuj wystąpienie aplikacji finansowych i operacyjnych. Po każdej aktualizacji środowisko staje się wykrywalne.
+
+## <a name="403-forbidden-error-while-connections-are-being-created"></a>Błąd 403 (Zabronione) podczas tworzenia połączeń
+
+W ramach procesu łączenia podwójnego zapisu dwa połączenia Power Apps (znane również jako połączenia *Apihub*) są tworzone w imieniu użytkownika w połączonym środowisku Dataverse. Jeśli klient nie ma licencji na środowisko Power Apps, tworzenie połączeń ApiHub nie powiedzie się i zostanie wyświetlony błąd 403 (Zabronione). Oto przykład tabeli pełnego komunikatu o błędzie:
+
+> NMSG=\[ie można skonfigurować środowiska podwójnego zapisu. Error Details:Kod stanu odpowiedzi nie wskazuje powodzenia: 403 (Zakazane). - Kod statusu odpowiedzi nie wskazuje na sukces: 403 (Forbidden).\] STACKTRACE=\[   at Microsoft.Dynamics.Integrator.ProjectManagementService.DualWrite.DualWriteConnectionSetProcessor.\<CreateDualWriteConnectionSetAsync\>d\_\_29.MoveNext() in X:\\bt\\1158727\\repo\\src\\ProjectManagementService\\DualWrite\\DualWriteConnectionSetProcessor.cs:line 297 --- End of stack trace from previous location where exception was thrown --- at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw() at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) at Microsoft.Dynamics.Integrator.ProjectManagementService.Controllers.DualWriteEnvironmentManagementController.\<SetupDualWriteEnvironmentAsync\>d\_\_34.MoveNext() in X:\\bt\\1158727\\repo\\src\\ProjectManagementService\\Controllers\\DualWriteEnvironmentManagementController.cs:line 265\]
+
+Ten błąd występuje z powodu braku Power Apps licencji. Przypisz odpowiednią licencję (na przykład plan Power Apps Wersji próbnej 2) do użytkownika, aby użytkownik miał uprawnienia do tworzenia połączeń. Aby zweryfikować licencję, klient może przejść [do witryny Moje konto](https://portal.office.com/account/?ref=MeControl#subscriptions), aby wyświetlić licencje aktualnie przypisane do użytkownika.
+
+Aby uzyskać więcej informacji o planach Power Apps, zobacz następujące artykuły:
+
+- [Przypisz licencje użytkownikom](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide)
+- [Zakup Power Apps dla organizacji](/power-platform/admin/signup-for-powerapps-admin)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
 

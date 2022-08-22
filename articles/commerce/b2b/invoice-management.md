@@ -1,25 +1,25 @@
 ---
 title: Zarządzanie fakturami dla witryn sieci Web b2B e-commerce
 description: W tym artykule opisano możliwości zarządzania fakturami Microsoft Dynamics 365 Commerce w witrynach sieci web handlu elektronicznego (B2B).
-author: shajain
+author: ShalabhjainMSFT
 ms.date: 02/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: RetailOperations
 audience: Application User, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: fa6b81187481a6b7f47ea02291e5a581052d6c7b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.industry: retail
+ms.search.form: RetailOperations
+ms.openlocfilehash: c1f3533eb711bf87fe226f5c61678b6939f35e13
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854933"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9274436"
 ---
 # <a name="invoice-management-for-b2b-e-commerce-websites"></a>Zarządzanie fakturami dla witryn sieci Web b2B e-commerce
 

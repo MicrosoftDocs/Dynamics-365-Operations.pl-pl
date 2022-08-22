@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 6d04ca43895935329b711f2658360c41f611975e
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 2b3c408f5a5e4ce85a235ac83c15b648e43b5e10
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9065473"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220066"
 ---
 # <a name="warehouse-location-status"></a>Stan lokalizacji w magazynie
 
@@ -42,10 +42,7 @@ Poniższe cztery pola na stronie **Lokalizacje** śledzą informacje o bieżący
 
 ## <a name="turn-on-the-warehouse-location-status-feature"></a>Włącz funkcję stanu dodatkowej strefy lokalizacji w magazynie
 
-Aby móc używać funkcji *Status lokalizacji magazynu*, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
-
-- **Moduł:** *Zarządzanie magazynem*
-- **Nazwa funkcji:** *Stan strefy lokalizacji w magazynie*
+Aby używać tej funkcji, należy ją włączyć w systemie. Od wersji 10.0.29 Supply Chain Management version ta funkcja jest domyślnie włączona. Administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Stan lokalizacji w magazynie* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-warehouse-location-status"></a>Ustawianie stanu lokalizacji w magazynie
 
@@ -55,7 +52,7 @@ Przed rozpoczęciem pracy nad scenariuszem należy aktywować przykładowe dane 
 
 #### <a name="use-the-usmf-legal-entity"></a>Użyj firmy USMF
 
-Aby pracować z tymi przykładowymi scenariuszami przy użyciu określonych przykładowych rekordów i wartości tutaj określonych, należy użyć systemu, w którym są zainstalowane standardowe [dane demonstracyjne](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md). Dodatkowo należy również wybrać firmę **USMF** przed rozpoczęciem.
+Aby pracować z tymi przykładowymi scenariuszami przy użyciu określonych przykładowych rekordów i wartości tutaj określonych, należy użyć systemu, w którym są zainstalowane standardowe [dane demonstracyjne](../../fin-ops-core/fin-ops/get-started/demo-data.md). Dodatkowo należy również wybrać firmę **USMF** przed rozpoczęciem.
 
 #### <a name="set-up-location-profiles"></a>Ustaw profile lokalizacji
 

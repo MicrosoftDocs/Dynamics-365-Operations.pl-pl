@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a420a0a366e454df14d5fe994691829bc7950306
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 901683f2176189ce2f4186b4f9b3b5c64ec9f2b1
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895204"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9227784"
 ---
 # <a name="prepayment-invoices-vs-prepayments"></a>Faktury zaliczkowe a zaliczki
 
@@ -78,6 +78,8 @@ Przedpłatę można usunąć z zamówienia zakupu, chyba że wcześniej rozliczo
 Aby zarejestrować fakturę zaliczkową dostawcy, przejdź na stronę **Faktura od dostawcy**, zaznaczając opcję **Faktura zaliczkowa** na stronie **Zamówienia zakupu** (**Rozrachunki z dostawcami \> Wspólne \> Zamówienia zakupu \> Wszystkie zamówienia zakupu \> karta Faktury \> Faktura przedpłaty**). Wprowadź informacje dotyczące faktury przedpłaty, w tym numer faktury. Nie można zmienić ilości dla faktury zaliczkowej. Jeśli dostawca zafakturował częściową kwotę wartości przedpłaty zdefiniowanej w zamówieniu zakupu, można zaktualizować cenę jednostkową, tak aby odzwierciedlała wartość częściową.
 
 Po zaksięgowaniu faktury przedpłaty saldo dostawcy i konto przedpłaty zostaną zaktualizowane. Zostanie także zaktualizowana wartość **Zastosowania przedpłaty** w definicji przedpłaty zawartej w zamówieniu zakupu. Domyślne wpisy wymiaru finansowego dla zaksięgowanego załącznika przedpłaty będą pochodziły z informacji nagłówka zamówienia zakupu.
+
+Jeśli funkcja **Zablokuj wymiary finansowe w wierszach faktury na fakturze zaliczkowej od dostawcy** na stronie **Zarządzanie funkcjami** jest włączona, nie można zaktualizować wymiarów w nagłówku lub wierszach przedpłaty. 
 
 ## <a name="post-and-settle-payments-for-the-prepayment-invoice"></a>Księgowanie i rozliczanie płatności dla faktury zaliczkowej
 Następnie faktura zaliczkowa zostanie zapłacona ze strony **Arkusza płatności**. Aby uzyskać dostęp do arkuszy płatności, kliknij **Rozrachunki z dostawcami \> Arkusze \> Płatności \> Arkusz płatności**. Po zaksięgowaniu rozliczenia płatności na fakturze zaliczkowej zostanie zaktualizowana **Pozostała wartość zastosowania przedpłaty** zamówienia zakupu.

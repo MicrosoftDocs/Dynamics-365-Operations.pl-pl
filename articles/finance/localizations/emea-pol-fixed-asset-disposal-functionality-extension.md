@@ -1,25 +1,25 @@
 ---
 title: Likwidacja środków trwałych dla Polski
 description: Ten artykuł zawiera informacje o funkcjonalności likwidacji środków trwałych dla użytkowników w firmach w Polsce.
-author: ShylaThompson
+author: AdamTrukawka
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: AssetParameters, AssetPosting, CustFreeInvoice, LedgerJournalTable
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 266964
 ms.search.region: Poland
-ms.author: kfend
+ms.author: atrukawk
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 5be0a6933eefd7850d3df7ce9b32244f729071f0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 266964
+ms.search.form: AssetParameters, AssetPosting, CustFreeInvoice, LedgerJournalTable
+ms.openlocfilehash: 196dcddde9c0190f1ba8106984be5a52e711e998
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888940"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9291559"
 ---
 # <a name="fixed-assets-disposal-for-poland"></a>Likwidacja środków trwałych dla Polski
 

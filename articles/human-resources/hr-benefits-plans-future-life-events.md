@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 183d0f13a17ffac723fac6c4801bd187dd54e976
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2cb3ca03e0d9d7e5423a405f1eb0372e1c19588d
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888862"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9227994"
 ---
 # <a name="configure-future-life-events"></a>Konfigurowanie przyszłych zdarzeń zmiany sytuacji życiowej
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 W module Dynamics 365 Human Resources można zaplanować przyszłe zmiany sytuacji życiowej.
 
@@ -45,5 +46,6 @@ W module Dynamics 365 Human Resources można zaplanować przyszłe zmiany sytuac
 
 4. Wybierz opcję **Zapisz**. 
 
+Możesz usunąć przyszłe wydarzenia z życia. Jeśli przetworzone przyszłe zdarzenie life zostanie usunięte, zostanie również usunięty przyszły rekord. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

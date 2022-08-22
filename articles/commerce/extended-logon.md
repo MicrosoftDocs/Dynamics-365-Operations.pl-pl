@@ -1,27 +1,27 @@
 ---
 title: Umożliwia konfigurowanie i korzystanie z funkcji logowania rozszerzonego
 description: W tym artykule opisano, jak skonfigurować i używać funkcji rozszerzonego logowania w aplikacji punktu sprzedaży (POS) Microsoft Dynamics 365 Commerce.
-author: boycez
+author: boycezhu
 ms.date: 03/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
-ms.custom: 92353
-ms.assetid: 7473e237-fbc8-41d5-8ba0-920242747488
 ms.search.region: global
-ms.search.industry: Retail
 ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e27e8d94adccc46559089928b0481442306567ef
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 92353
+ms.assetid: 7473e237-fbc8-41d5-8ba0-920242747488
+ms.search.industry: Retail
+ms.search.form: RetailFunctionalityProfile
+ms.openlocfilehash: e2fc39b1b7fb34f49c061dcc324c28cf5a89277c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884318"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9283703"
 ---
 # <a name="set-up-and-use-the-extended-logon-capability"></a>Umożliwia konfigurowanie i korzystanie z funkcji logowania rozszerzonego
 

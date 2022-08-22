@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 85e40a0768174dcdc5d0fa2647b24cddccf01bdf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8ebea86e5ea63ab4f5a844cd3d0936c0d65bbe2b
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905494"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220251"
 ---
 # <a name="set-different-dimensions-for-packing-and-storage"></a>Ustawianie różnych wymiarów pakowania i przechowywania
 
@@ -50,7 +50,7 @@ Przed uruchomieniem przykładowego scenariusza należy przygotować system w spo
 
 #### <a name="enable-demo-data"></a>Włączanie danych pokazowych
 
-Aby pracować z tym scenariuszem przy użyciu określonych pokazowych rekordów i wartości tutaj określonych, należy użyć systemu, w którym są zainstalowane standardowe [dane pokazowe](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md). Dodatkowo należy również wybrać firmę *USMF* przed rozpoczęciem.
+Aby pracować z tym scenariuszem przy użyciu określonych pokazowych rekordów i wartości tutaj określonych, należy użyć systemu, w którym są zainstalowane standardowe [dane pokazowe](../../fin-ops-core/fin-ops/get-started/demo-data.md). Dodatkowo należy również wybrać firmę *USMF* przed rozpoczęciem.
 
 #### <a name="add-a-new-physical-dimension-to-a-product"></a>Dodawanie nowego wymiaru fizycznego do produktu
 

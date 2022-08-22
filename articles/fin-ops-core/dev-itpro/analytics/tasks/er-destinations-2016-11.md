@@ -1,24 +1,24 @@
 ---
 title: ER Konfigurowanie miejsc docelowych
 description: Ta procedura przedstawia sposób konfigurowania i używania różnych miejsc docelowych dla składników wyjściowych raportowania elektronicznego (ER), takich jak folder lub plik.
-author: NickSelin
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERFormatDestinationTable, SysLookupPicklist, ERFormatDestinationSettings, ERFormatDestinationEmailSettings, ERExpressionDesignerFormula, SRSPrintDestinationTokens
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f1e679b52b28ff1ca117c5224fc7e2825feb26e5e5aea1c8b5bc3a88d1eaf235
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.search.form: ERFormatDestinationTable, SysLookupPicklist, ERFormatDestinationSettings, ERFormatDestinationEmailSettings, ERExpressionDesignerFormula, SRSPrintDestinationTokens
+ms.openlocfilehash: 3c8d03e9783013183fbe76cb36014fa9e1e1cbed
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743270"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9291063"
 ---
 # <a name="er-configure-destinations"></a>ER Konfigurowanie miejsc docelowych
 
@@ -26,7 +26,7 @@ ms.locfileid: "6743270"
 
 Ta procedura przedstawia sposób konfigurowania i używania różnych miejsc docelowych dla składników wyjściowych raportowania elektronicznego (ER), takich jak folder lub plik. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej DEMF. Niemcy to kraj\region podstawowego adresu firmy, jednak w tej procedurze można użyć dowolnej firmy. 
 
-Formatem używanym w tym przykładzie jest Polecenie przelewu ISO20022, ale można użyć dowolnego innego formatu, który został już zaimportowany. Należy zauważyć, że ta procedura jest przykładem konfiguracji z jednym plikiem i jednym miejscem docelowym. Więcej informacji na temat zarządzania miejscami docelowymi raportowania elektronicznego można znaleźć na stronach Pomocy systemu Dynamics 365 Finance.
+Formatem używanym w tym przykładzie jest Polecenie przelewu ISO20022, ale można użyć dowolnego innego formatu, który został już zaimportowany. Należy zauważyć, że ta procedura jest przykładem konfiguracji z jednym plikiem i jednym miejscem docelowym. Więcej informacji na temat zarządzania miejscami docelowymi raportowania elektronicznego można znaleźć na stronach wiki Pomocy Dynamics 365 Finance.
 
 1. Wybierz kolejno opcje Administrowanie organizacją > Raportowanie elektroniczne > Aplikacja docelowa raportowania elektronicznego.
 2. Kliknij przycisk Nowy, aby utworzyć nowy zbiór miejsc docelowych dla formatu.

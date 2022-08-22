@@ -1,24 +1,24 @@
 ---
 title: EUR-00015 Rejestrowanie identyfikatora VAT dostawcy
 description: W tej procedurze pokazano sposób dodawania identyfikatorów rejestracji VAT i numeru zwolnienia podatkowego do konta dostawcy.
-author: v-oskinaolga
+author: AdamTrukawka
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: VendTable, LogisticsPostalAddress, RegNumTaxIdLookup
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
-ms.author: v-oskinaolga
+ms.author: atrukawk
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 798003c1b2c396bbafc1c9d2145861f5761ae735
-ms.sourcegitcommit: 3927a1268db840b4b3cc2b16eceea49cf084ad18
+ms.search.form: VendTable, LogisticsPostalAddress, RegNumTaxIdLookup
+ms.openlocfilehash: ce5d2a11e1576b772a91bc58d1d7ad330e8c7481
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "8555457"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9273756"
 ---
 # <a name="eur-00015-registration-of-vendor-vat-id"></a>EUR-00015 Rejestrowanie identyfikatora VAT dostawcy
 

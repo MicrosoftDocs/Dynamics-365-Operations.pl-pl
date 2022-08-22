@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 833d6cc131b3fb45d273b60ecf6778b2be31fc8a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 87be947c829641ba809e6850ccf41ea6d142161d
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687115"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9228969"
 ---
 # <a name="plan-type-overview"></a>Przegląd typu planu
 
@@ -27,6 +27,8 @@ ms.locfileid: "8687115"
 [!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+[!include [banner](../includes/preview-banner.md)]
 
 Typ planu to nadrzędna grupa konkretnych typów świadczeń. Każdy typ planu ma kod typu planu, który określa reguły typu planu. Na przykład typ planu **Podstawowe ubezpieczenie na życie** może mieć kod typu planu **Ubezpieczenie na życie**, ponieważ jest to rodzaj planu ubezpieczenia na życie i musi być zgodny z regułami określonymi w typie planu o kodzie **Ubezpieczenie na życie**. Innym typem planu może być **Dodatkowe ubezpieczenie na życie**. Ten typ planu będzie również kod typu planu **Ubezpieczenie na życie**.
 
@@ -67,12 +69,12 @@ Typ planu może określać opcje objęcia świadczeniami. Opcje objęcia świadc
    | --- | --- |
    | **Typ planu** | Typ planu, dla którego mają zostać skonfigurowane opcje zmiany sytuacji życiowej. |
    | **Identyfikator typu zdarzenia zmiany sytuacji życiowej** | Identyfikator typu zmiany sytuacji życiowej. |
-   | **Zezwól na anulowanie** | Określa, czy pracownik etatowy może zrezygnować z planu świadczeń w trakcie zmiany sytuacji życiowej. |
    | **Zmień opcję objęcia świadczeniem** | Określa, czy pracownik etatowy może zmienić opcje objęcia świadczeniami w trakcie zmiany sytuacji życiowej. |
    | **Zmień na nowy plan** | Określa, czy pracownik etatowy może zmienić plany w trakcie zmiany sytuacji życiowej. |
-   | **Automatycznie anuluj plan** | Określa, czy plan ma zostać automatycznie anulowany podczas zmiany sytuacji życiowej. |
    | **Automatycznie ponownie otwórz sprawdzanie uprawnień** | Określa, w trakcie zdarzenia zmiany sytuacji życiowej sprawdzanie uprawnień do rejestracji świadczeń ma być automatycznie ponownie otwarte. |
-   | **Okno raportowania** | Określa w dniach okno raportowania dotyczące zdarzenia zmiany sytuacji życiowej. **Uwaga**: Jeśli nie wprowadzisz ilości, system przyjmie, że okno raportowania ma wartość zero, i nie przetworzy zmiany sytuacji życiowej. |
+   | **Okres rejestracji zdarzenia zmiany sytuacji życiowej** | Określa w dniach okno raportowania dotyczące zdarzenia zmiany sytuacji życiowej. **Uwaga**: Jeśli nie wprowadzisz ilości, system przyjmie, że okno raportowania ma wartość zero, i nie przetworzy zmiany sytuacji życiowej. |
+   | **Edytowalne tylko przez administratorów** | Określa, czy administratorzy mogą anulować lub edytować plan podczas wydarzenia z życia. W obszarze roboczym **Samoobsługa pracownicza** pracownik nie może wprowadzać żadnych zmian. |
+   | **Automatycznie anuluj plan** | Określa, czy plan powinien być automatycznie anulowany podczas wydarzenia z życia. Po przetworzeniu zmian zdarzenia życia opcja **Automatycznie anuluj plan** zachowuje wybór planu. Zostaną usunięte tylko stany **Potwierdzone** lub **Wyewidencjonowane**. Plan pozostaje wybrany. W związku z tym pracownicy, którzy nie dokonają wyboru planu w okresie rejestracji zdarzenia życia, nie przegrają wyboru planu. 
 
 5. Wybierz opcję **Zapisz**. 
 

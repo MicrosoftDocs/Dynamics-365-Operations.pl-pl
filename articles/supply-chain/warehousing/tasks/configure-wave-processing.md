@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a9fc2b9f31bc9e2f73b53a900bc9b0924410768
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9a8c088f8726573e4b1fcad1944676547391a9bf
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860356"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219637"
 ---
 # <a name="configure-wave-processing-example"></a>Konfigurowanie przetwarzania grupy czynności — przykład
 
@@ -29,7 +29,7 @@ W tym artykule opisano sposób konfigurowania kryteriów, które określają, ja
 
 ## <a name="enable-sample-data"></a>Włącz dane przykładowe
 
-Aby pracować z tym scenariuszem przy użyciu określonych przykładowych rekordów i wartości tutaj określonych, należy użyć systemu, w którym są zainstalowane standardowe dane demonstracyjne. Należy również wybrać firmę **USMF** przed rozpoczęciem.
+Aby pracować z tym scenariuszem przy użyciu określonych przykładowych rekordów i wartości tutaj określonych, należy użyć systemu, w którym są zainstalowane standardowe [dane demonstracyjne](../../../fin-ops-core/fin-ops/get-started/demo-data.md). Należy również wybrać firmę **USMF** przed rozpoczęciem.
 
 ## <a name="example-scenario-configure-wave-processing"></a>Przykładowy scenariusz: skonfiguruj przetwarzanie fal
 

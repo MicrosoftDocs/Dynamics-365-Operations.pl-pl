@@ -1,25 +1,25 @@
 ---
 title: Amortyzacja środków trwałych dla Polski
 description: Ten artykuł zawiera informacje o amortyzowaniu środków trwałych dla firm w Polsce.
-author: ShylaThompson
+author: AdamTrukawka
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: AssetBook, AssetDepreciationGroup_W, AssetParameters, AssetPosting
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 264274
 ms.search.region: Poland
-ms.author: kfend
+ms.author: atrukawk
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 4027006dd66f150692053715b7faf39e4d5212c3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 264274
+ms.search.form: AssetBook, AssetDepreciationGroup_W, AssetParameters, AssetPosting
+ms.openlocfilehash: 54120f19b9c78e935c4a10d3d2687a43a5ed1a93
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893952"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9274581"
 ---
 # <a name="fixed-assets-depreciation-for-poland"></a>Amortyzacja środków trwałych dla Polski
 

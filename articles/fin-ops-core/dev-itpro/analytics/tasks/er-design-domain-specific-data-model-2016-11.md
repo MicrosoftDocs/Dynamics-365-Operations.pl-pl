@@ -1,24 +1,24 @@
 ---
 title: ER Projektowanie modelu danych dla konkretnej domeny
 description: W tym artykule opisano sposób utworzenia nowej konfiguracji raportowania elektronicznego (ER) zawierającej model danych na potrzeby dokumentów elektronicznych płatności.
-author: NickSelin
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, ERDataModelDesigner, ERDataModelContentsItemCreationDialog, ERDataContainerDescriptorReferenceSwitchDialog
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c923ed6ec817d1f4ae6cd956c06b2156a6a61311
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, ERDataModelDesigner, ERDataModelContentsItemCreationDialog, ERDataContainerDescriptorReferenceSwitchDialog
+ms.openlocfilehash: 6116ee7bc65aa72f655aa3e5d1467560792bd024
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8908450"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9291123"
 ---
 # <a name="er-design-domain-specific-data-model"></a>ER Projektowanie modelu danych dla konkretnej domeny
 

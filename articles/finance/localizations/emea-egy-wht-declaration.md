@@ -1,24 +1,24 @@
 ---
 title: Deklaracja potrąconej zaliczki na podatek dla Egiptu
 description: W tym artykule wyjaśniono, jak skonfigurować i wygenerować deklaracje potrąconych zaliczek na podatek dla Egiptu.
-author: sndray
+author: AdamTrukawka
 ms.date: 03/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: ''
 ms.search.region: Global
-ms.author: sndray
+ms.author: atrukawk
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 505eb8a907ec8cc74b897695ddd90eee3abb0ed6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.scope: ''
+ms.openlocfilehash: 83def72f1ff0423d1c2d217847082fa9bf1c3bca
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907695"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9269383"
 ---
 #  <a name="withholding-tax-declaration-for-egypt-eg-00005"></a>Deklaracja potrąconej zaliczki na podatek dla Egiptu (EG-00005)
 

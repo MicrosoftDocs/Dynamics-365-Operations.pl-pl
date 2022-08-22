@@ -1,26 +1,26 @@
 ---
 title: Osadzanie obrazów i kształtów w generowanych dokumentach przez raportowanie elektroniczne
 description: W tym artykule wyjaśniono, jak używać narzędzia do raportowania elektronicznego do generowania dokumentów biznesowych z osadzonymi obrazami i kształtami.
-author: NickSelin
+author: kfend
 ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: EROperationDesigner, ERParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 27621
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: fe0e6d6def50670566f44cfb5cd6bb4abe5faf15
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 27621
+ms.assetid: ''
+ms.search.form: EROperationDesigner, ERParameters
+ms.openlocfilehash: 0bb652f245db93424aeadcaadf2ad393945e616b
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851056"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9280997"
 ---
 # <a name="embed-images-and-shapes-in-documents-that-you-generate-by-using-er"></a>Osadzanie obrazów i kształtów w generowanych dokumentach przez raportowanie elektroniczne
 

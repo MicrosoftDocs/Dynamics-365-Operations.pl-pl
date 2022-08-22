@@ -1,7 +1,7 @@
 ---
 title: Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Commerce
 description: W tym artykule opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia z Dynamics 365 Commerce.
-author: josaw
+author: josaw1
 ms.date: 07/11/2022
 ms.topic: article
 ms.prod: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: a59d62ad846eed659fa4e70390ebafc40127df0f
-ms.sourcegitcommit: ef56b5d0ed26e373add5dec63168e08ade40573e
+ms.openlocfilehash: 541e21999884a2d51b27009d72a2f8bc9084557f
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "9138594"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9287631"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Commerce
 

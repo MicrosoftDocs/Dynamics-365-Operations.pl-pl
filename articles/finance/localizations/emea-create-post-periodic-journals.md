@@ -1,25 +1,25 @@
 ---
 title: Okresy podziału w arkuszach okresowych
 description: Ten artykuł zawiera informacje o funkcji okresów podziału w arkuszach okresowych i arkuszach cyklicznych dla firm w Czechach, Estonii, na Węgrzech, na Łotwie, na Litwie, w Polsce i w Rosji.
-author: ShylaThompson
+author: mrolecki
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: LedgerJournalTable
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 261354
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
-ms.author: kfend
+ms.author: mrolecki
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 113b936aab15e9c8f28fc63f745780a76f6f3ab7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 261354
+ms.search.form: LedgerJournalTable
+ms.openlocfilehash: 2446edd0f569efbe2f6304ecbb46d5a4265ff95e
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8848486"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9287043"
 ---
 # <a name="split-periods-in-periodic-journals"></a>Okresy podziału w arkuszach okresowych
 

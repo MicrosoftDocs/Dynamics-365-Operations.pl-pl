@@ -1,26 +1,26 @@
 ---
 title: Dodawanie nowych pól do szablonu dokumentu biznesowego w formularzu Microsoft Excel
 description: Ten artykuł zawiera informacje dotyczące sposobu dodawania nowych pól do szablonu w Microsoft Excel za pomocą funkcji zarządzania dokumentami biznesowymi systemu.
-author: NickSelin
+author: kfend
 ms.date: 11/15/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERBDWorkspace, ERBDParameters, ERBDTemplateEditor
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 8395a87e88ebbd1942c87da0cecebe6d25bdf625
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.form: ERBDWorkspace, ERBDParameters, ERBDTemplateEditor
+ms.openlocfilehash: c2d76997b2bb3f53c8341e4b747ba37631b3857d
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869410"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9285554"
 ---
 # <a name="add-new-fields-to-a-business-document-template-in-microsoft-excel"></a>Dodawanie nowych pól do szablonu dokumentu biznesowego w formularzu Microsoft Excel
 
