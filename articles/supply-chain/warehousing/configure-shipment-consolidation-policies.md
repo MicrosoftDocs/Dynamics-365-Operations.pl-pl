@@ -2,7 +2,7 @@
 title: Konfigurowanie zasad konsolidacji wysyłki
 description: W tym artykule opisano sposób konfigurowania domyślnych i niestandardowych zasad konsolidacji wysyłki.
 author: Mirzaab
-ms.date: 05/12/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: bec96131326b3162b3d1a138b896e85982ad3aa5
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 4583d523811cb41518a0a4dae0d67398d64cab44
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219541"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336501"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Konfigurowanie zasad konsolidacji wysyłki
 
@@ -33,10 +33,7 @@ W scenariuszach przedstawionych w tym artykule pokazano sposób konfigurowania d
 > [!IMPORTANT]
 > W [pierwszym scenariuszu](#scenario-1) opisanym w tym artykule najpierw skonfigurujesz magazyn, dzięki czemu będzie używana wcześniejsza funkcja konsolidacji wysyłki. Następnie udostępnisz zasady konsolidacji wysyłki. W ten sposób sprawdzisz, jak działa scenariusz uaktualniania. Jeśli planujesz używanie środowiska danych demonstracyjnych do przechodzenia przez pierwszy scenariusz, nie włączaj tej funkcji przed wykonaniem tego scenariusza.
 
-Aby można było skorzystać z funkcji *zasad konsolidacji wysyłki*, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
-
-- **Moduł:** *Zarządzanie magazynem*
-- **Nazwa funkcji:** *Konsoliduj wysyłkę*
+Aby można było skorzystać z funkcji *zasad konsolidacji wysyłki*, należy ją włączyć dla systemu. Od wersji 10.0.29 Supply Chain Management funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.29, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Zasady konsolidacji wysyłki* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="make-demo-data-available"></a>Udostępnianie danych pokazu
 

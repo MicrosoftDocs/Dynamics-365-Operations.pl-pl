@@ -2,7 +2,7 @@
 title: Domeny w rozwiązaniu Dynamics 365 Commerce
 description: W tym artykule opisano sposób obsługiwania domen w rozwiązaniach Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 05/10/2022
+ms.date: 08/19/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
 ms.search.industry: retail
 ms.search.form: ''
-ms.openlocfilehash: 9bd925b7bf27748b3c17946de72a76bc0d0200d7
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 08d6d52175bb7a77259cbd38b15f466deeab0846
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9288457"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336711"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domeny w rozwiązaniu Dynamics 365 Commerce
 
@@ -109,6 +109,10 @@ Punkt końcowy `<e-commerce tenant name>.dynamics365commerce.ms` nie obsługuje 
 Aby skonfigurować domeny niestandardowe przy użyciu usługi front door service lub sieci CDN, dostępne są dwie opcje:
 
 - Skonfiguruj usługę front door service, taką jak np. Azure Front Door, aby obsługiwać ruch przód-tył i łączyć się ze środowiskiem Commerce. Pozwala to na większą kontrolę nad zarządzaniem domenami i certyfikatami oraz bardziej szczegółowe zasady zabezpieczeń.
+
+> [!NOTE]
+> Jeśli używasz zewnętrznej usługi CDN lub usługi Front Door, upewnij się, że żądanie jest wysyłane na platformę Commerce z nazwą hosta podaną przez Commerce, ale z nagłówkiem X-Forwarded-Host (XFH) \<custom-domain\>. Na przykład, jeśli punktem końcowym usługi Commerce jest `xyz.dynamics365commerce.ms`, a domeną niestandardową jest `www.fabrikam.com`, nagłówkiem hosta przekazywanego żądania powinno być `xyz.dynamics365commerce.ms`, a nagłówkiem XFH `www.fabrikam.com`.
+
 - Należy skorzystać z dostarczonej przez Commerce instancji Azure Front Door. Wymaga to koordynacji działania z zespołem Dynamics 365 Commerce w zakresie weryfikacji domeny i uzyskiwania certyfikatów SSL dla domeny produkcji.
 
 Aby uzyskać informacje o tym, jak skonfigurować usługę CDN bezpośrednio, należy zapoznać się z tematem [Dodawanie obsługi sieci dostarczania zawartości (CDN)](add-cdn-support.md).
@@ -141,14 +145,18 @@ Dla domen istniejących/aktywnych:
 
 ## <a name="apex-domains"></a>Domeny Apex
 
-Wystąpienie Azure Front Door dostarczone wraz z Commerce nie obsługuje domen Apex (domen głównych, które nie zawierają poddomen). Domeny Apex wymagają adresu IP do rozwiązania, a wystąpienie Azure Front Door istnieje tylko wraz z wirtualnymi punktami końcowymi. Aby skorzystać z domeny Apex, dostępne są dwie opcje:
+Wystąpienie Azure Front Door dostarczone wraz z Commerce nie obsługuje domen Apex (domen głównych, które nie zawierają poddomen). Domeny Apex wymagają adresu IP do rozwiązania, a wystąpienie Azure Front Door istnieje tylko wraz z wirtualnymi punktami końcowymi. Aby skorzystać z domeny Apex, dostępne są następujące opcje:
 
 - **Opcja 1** — aby przekierować domenę Apex do domeny „www”, należy skorzystać z dostawcy DNS. Na przykład fabrikam.com przekierowuje do `www.fabrikam.com`, gdzie `www.fabrikam.com` to rekord CNAME wskazujący na hostowane przez Commerce wystąpienie Azure Front Door.
 
-- **Opcja 2** — skonfigurowanie swojego wystąpienia sieci CDN/front-door samemu w taki sposób, aby obsługiwać domenę Apex.
+- **Opcja 2** — Jeśli dostawca DNS obsługuje rekordy aliasów, można wskazać domenę do punktu końcowego Front Door. Zapewnia to odzwierciedlenie zmiany IP przez punkt końcowy Front Door.
+  
+- **Opcja 3** — Jeśli dostawca DNS nie obsługuje rekordów aliasów, musisz skonfigurować własne wystąpienie CDN lub Front Door, aby obsługiwać domenę apex.
 
 > [!NOTE]
 > Jeśli korzystasz z Azure Front Door, musisz również skonfigurować usługę DNS w tej samej subskrypcji. Domena Apex obsługiwana przez usługę Azure DNS może wskazywać na Azure Front Door jako na rekord aliasu. Jest to tylko obejście problemu, ponieważ domeny Apex muszą zawsze wskazywać adres IP.
+  
+Wszelkie pytania dotyczące domen Apex należy kierować do [Pomocy technicznej firmy Microsoft](https://support.microsoft.com/).
 
   ## <a name="additional-resources"></a>Dodatkowe zasoby
 

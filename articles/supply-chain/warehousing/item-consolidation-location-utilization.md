@@ -2,7 +2,7 @@
 title: Konsolidacja pozycji — wykorzystanie lokalizacji
 description: Ten artykuł zawiera informacje o funkcjach ułatwiających menedżerom magazynów wyświetlanie i filtrowanie objętościowe wykorzystania lokalizacji w magazynie. Menedżerowie mogą wybierać lokalizacje i tworzyć pracę przesunięcia zapasów bezpośrednio na stronie konsolidacji towaru w celu konsolidowania towarów, a w ten sposób lepiej korzystać z przestrzeni magazynowej.
 author: Mirzaab
-ms.date: 07/16/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 7c78954659c125c919ed0debbd81023a3da02db3
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: d0e52769de3f200e2bb3060b3d9cb19dc0847b69
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219451"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336432"
 ---
 # <a name="item-consolidation---location-utilization"></a>Konsolidacja pozycji — wykorzystanie lokalizacji
 
@@ -30,8 +30,8 @@ Ten artykuł zawiera informacje o funkcjach ułatwiających menedżerom magazyn�
 
 Aby można było skorzystać z funkcji opisanych w tym artykule, należy je włączyć w systemie. Administratorzy mogą skorzystać z obszaru roboczego [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć je, jeśli istnieje taka potrzeba. Włącz obie następujące funkcje w kolejności, w jakiej są wymienione w systemie. (Obie funkcje dotyczą modułu **Zarządzania magazynem**.)
 
-1. *Stan lokalizacji w magazynie* (na podstawie wersji 10.0.29 ta funkcja jest domyślnie włączona. Aby uzyskać więcej informacji, zajrzyj do [Stan lokalizacji w magazynie](warehouse-location-status.md)).
-2. *Wykorzystanie lokalizacji konsolidacji pozycji*
+1. *Stan lokalizacji w magazynie*<br>(Od wersji 10.0.29 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Aby uzyskać więcej informacji, zajrzyj do [Stan lokalizacji w magazynie](warehouse-location-status.md)).
+2. *Wykorzystanie lokalizacji konsolidacji pozycji*<br>(Od wersji 10.0.29 Supply Chain Management version ta funkcja jest domyślnie włączona)
 
 ## <a name="warehouse-location-status"></a>Stan lokalizacji w magazynie
 

@@ -2,7 +2,7 @@
 title: Raport magazynowy porównania cen pozycji
 description: Sposób generowania raportu magazynowego porównania cen pozycji, a następnie przeglądania i/lub eksportowania wyniku.
 author: JennySong-SH
-ms.date: 01/30/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: c9e2ccbe613a4aab40a4f519bbb82a9175d46e72
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c6373679299b68413d75236ca8cc18ceba03e091
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846221"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334994"
 ---
 # <a name="compare-item-prices-storage-report"></a>Raport magazynowy porównania cen pozycji
 
@@ -35,12 +35,9 @@ Wyniki raportu są przechowywane w jednostce danych **Porównaj ceny towaru**, k
 
 Raport **porównania cen magazynowych dla towaru** jest przydatny w przypadkach, gdy dane wyjściowe zawierają wiele wierszy. Na przykład produkcja będzie zawierać wiele wierszy, jeśli w wersji ceny znajduje się więcej niż 40 000 towarów oczekujących cenę pozycji.
 
-## <a name="enable-compare-item-prices-storage"></a>Włącz magazynowe porównanie cen pozycji
+## <a name="turn-the-compare-item-prices-storage-feature-on-or-off"></a>Włącz lub wyłącz funkcję przechowywania Porównania cen pozycji
 
-Aby móc używać tej funkcji, musisz ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją w razie potrzeby. W tym miejscu funkcja jest wyświetlana jako:
-
-- **Moduł** — zarządzanie kosztami
-- **Nazwa funkcji** — magazynowe porównanie cen pozycji
+Aby używać tej funkcji, należy ją włączyć dla systemu. Od wersji 10.0.29 Supply Chain Management funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.29, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Porównaj magazyn cen pozycji* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="generate-a-compare-item-prices-storage-report"></a>Generowanie raportu magazynowego porównania cen pozycji
 

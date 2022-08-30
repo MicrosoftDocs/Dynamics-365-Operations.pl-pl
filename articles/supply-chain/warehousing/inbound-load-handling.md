@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: c48d240b346acacf2988fbaac69308ee655dced6
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 38d5ba96690dd855556a7f69591ef5b9ee5f9d7b
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219511"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335684"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Obsługa magazynów dla ładunków przychodzących dla zamówień zakupu
 
@@ -259,7 +259,7 @@ Dla firm korzystających z ładunków do planowania i zarządzania transportem i
 
 ### <a name="prepare-your-system-to-run-the-sample-scenarios"></a>Przygotuj system do uruchomienia przykładowych scenariuszy
 
-Aby pracować z przykładowymi scenariuszami opisanymi w tej sekcji, należy najpierw upewnić się, że wszystkie wymagane funkcje są włączone w systemie. Wymagane dane demonstracyjne muszą być również dostępne w systemie.
+Aby pracować z przykładowymi scenariuszami opisanymi w tej sekcji, należy najpierw upewnić się, że wszystkie wymagane funkcje są włączone dla systemu. Wymagane dane demonstracyjne muszą być również dostępne w systemie.
 
 #### <a name="turn-on-the-required-features"></a>Włącz wymagane funkcje
 

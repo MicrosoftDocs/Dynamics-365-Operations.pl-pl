@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: af7f4b09fd624aeda2ff002292e11cf84fd02991
-ms.sourcegitcommit: e4b6521337dfff3515f70086b0125d4c23308c71
+ms.openlocfilehash: 633daba553b1544c2caa788f4cec1da4c1da6960
+ms.sourcegitcommit: 7af116c60f3a94671a7a80c04097d70180754930
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "9262337"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "9347297"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analiza dopasowań optymalizacji planowania
 
@@ -77,10 +77,10 @@ W poniższej tabeli przedstawiono różne wyniki, które mogą być widoczne po 
 | Horyzont czasowy zamrożenia | Rekordy zapotrzebowania na towary z ustawionym horyzontem czasowym zamrożenia: *\#* | Ta funkcja jest oczekiwana. Obecnie podczas włączania optymalizacji planowania konfiguracja horyzontu czasowego zamrożenia nie jest brany pod uwagę, niezależnie od tego ustawienia. | 2022 Zwolnij grupę czynności 2 |
 | Horyzont czasowy zamrożenia | Plany główne z ustawionym horyzontem czasowym zamrożenia: *\#* | Ta funkcja jest oczekiwana. Obecnie podczas włączania optymalizacji planowania konfiguracja horyzontu czasowego zamrożenia nie jest brany pod uwagę, niezależnie od tego ustawienia. | 2022 Zwolnij grupę czynności 2 |
 | Międzyfirmowe | Plany główne uwzględniające planowany popyt od dostawcy do odbiorcy: *\#* | Ta funkcja jest teraz obsługiwana. Aby uzyskać dodatkowe informacje, zobacz temat [Planowanie międzyfirmowe](Intercompany-planning.md) | Obsługiwana |
-| Kanban | Rekordy zapotrzebowania na towary z planowanym typem zamówienia Kanban: *\#* | Ta funkcja jest oczekiwana. Obecnie zapotrzebowanie na towary, dla którego ustawiono wartość Kanban, będzie ignorowane, gdy jest włączona Optymalizacja planowania. Typ zamówienia planowanego Kanban utworzy ostrzeżenie podczas planowania głównego, a planowane zamówienia zakupu zostaną utworzone w celu pokrycia pokrewnego popytu. | 2023 lub nowsza wersja |
-| Kanban | Towary z domyślnym typem zamówienia Kanban: *\#* | Obecnie domyślny typ zamówienia, dla którego ustawiono wartość Kanban, będzie ignorowane, gdy jest włączona Optymalizacja planowania. Typ zamówienia domyślnego Kanban utworzy ostrzeżenie podczas planowania głównego, a planowane zamówienia zakupu zostaną utworzone w celu pokrycia pokrewnego popytu. | 2023 lub nowsza wersja |
+| Kanban | Rekordy zapotrzebowania na towary z planowanym typem zamówienia Kanban: *\#* | Ta funkcja jest oczekiwana. Obecnie zapotrzebowanie na towary, dla którego ustawiono wartość Kanban, będzie ignorowane, gdy jest włączona Optymalizacja planowania. Typ zamówienia planowanego Kanban utworzy ostrzeżenie podczas planowania głównego, a planowane zamówienia zakupu zostaną utworzone w celu pokrycia pokrewnego popytu. | Przyszłe grupy czynności |
+| Kanban | Towary z domyślnym typem zamówienia Kanban: *\#* | Obecnie domyślny typ zamówienia, dla którego ustawiono wartość Kanban, będzie ignorowane, gdy jest włączona Optymalizacja planowania. Typ zamówienia domyślnego Kanban utworzy ostrzeżenie podczas planowania głównego, a planowane zamówienia zakupu zostaną utworzone w celu pokrycia pokrewnego popytu. | Przyszłe grupy czynności |
 | Stan cyklu życia produktu | Stany cyklu życia produktu nieaktywne dla planowania: *\#* | Ta funkcja jest teraz obsługiwana. Aby uzyskać dodatkowe informacje, zobacz temat [Wykluczanie produktów z określonymi stanami cyklu życia produktu](product-lifecycle-state.md) | Obsługiwana |
-| Produkcyjne | Wiersze BOM z zaokrągleniem lub wieloma wariantami konfiguracji: *\#* | Ta funkcja jest oczekiwana. Obecnie zaokrąglanie i wielokrotność konfiguracji są ignorowane w wierszach BOM, gdy jest włączona Optymalizacja planowania, niezależnie od tego ustawienia. | 2023 lub nowsza wersja |
+| Produkcyjne | Wiersze BOM z zaokrągleniem lub wieloma wariantami konfiguracji: *\#* | Ta funkcja jest oczekiwana. Obecnie zaokrąglanie i wielokrotność konfiguracji są ignorowane w wierszach BOM, gdy jest włączona Optymalizacja planowania, niezależnie od tego ustawienia. | Przyszłe grupy czynności|
 | Produkcyjne | Wiersze BOM/wiersze formuł z miarą formuły: *\#* | Ta funkcja jest oczekiwana. Obecnie formuła z miarą jest ignorowana w wierszach BOM i formuły, gdy jest włączona Optymalizacja planowania, niezależnie od tego ustawienia. | 2022 Zwolnij grupę czynności 2 |
 | Produkcyjne | Wiersze BOM/wiersze formuł z podstawianiem pozycji (grupy planowania): *\#* | Ta funkcja jest oczekiwana. Obecnie podstawianie pozycji (grupy planowania) jest ignorowana w wierszach BOM i formuły, gdy jest włączona Optymalizacja planowania, niezależnie od tego ustawienia. | 2022 Zwolnij grupę czynności 2 |
 | Produkcyjne | Wiersze BOM/wiersze formuł z ilością ujemną: *\#* | Ta funkcja jest oczekiwana. Wiersze BOM i formuły, które mają ilość ujemną, zostaną uwzględnione z ilością 0 (zero), a w przypadku włączenia Optymalizacji planowania zostanie wygenerowane ostrzeżenie. Zaktualizuj dane podstawowe, aby uniknąć ostrzeżeń. | 2022 Zwolnij grupę czynności 2 |
@@ -93,11 +93,11 @@ W poniższej tabeli przedstawiono różne wyniki, które mogą być widoczne po 
 | Produkcyjne | Wersje formuły zawierające produkty towarzyszące/uboczne: *\#* | Ta funkcja jest oczekiwana. Obecnie produkty towarzyszące i uboczne skojarzone z wersją formuły są ignorowane, gdy jest włączona Optymalizacja planowania. | 2022 Zwolnij grupę czynności 2 |
 | Produkcyjne | Wersje formuły z uzyskiem: *\#* | Ta funkcja jest oczekiwana. Obecnie uzysk skojarzony z wersją formuły jest ignorowany, gdy jest włączona Optymalizacja planowania. | 2022 Zwolnij grupę czynności 2 |
 | Produkcyjne | Plany uwzględniające sekwencjonowanie: *\#* | Ta funkcja jest oczekiwana. Obecnie gdy jest włączona Optymalizacja planowania, harmonogram nie jest brany pod uwagę, niezależnie od tego ustawienia. | 2022 Zwolnij grupę czynności 2 |
-| Produkcyjne | Zwolnione, nierozpoczęte zlecenia produkcyjne, których rozpoczęcie jest planowane na dzisiaj: *\#* | Ta funkcja jest oczekiwana. Obecnie, jeśli zlecenie produkcyjne jest opóźnione, planowanie główne zakłada, że zostanie zakończone dzisiaj. Ma to zastosowanie w przypadku zwolnionych zleceń produkcyjnych, w przypadku których data dostawy przypada w przeszłości, ale nie została jeszcze zakończona. | 2023 lub nowsza wersja |
+| Produkcyjne | Zwolnione, nierozpoczęte zlecenia produkcyjne, których rozpoczęcie jest planowane na dzisiaj: *\#* | Ta funkcja jest oczekiwana. Obecnie, jeśli zlecenie produkcyjne jest opóźnione, planowanie główne zakłada, że zostanie zakończone dzisiaj. Ma to zastosowanie w przypadku zwolnionych zleceń produkcyjnych, w przypadku których data dostawy przypada w przeszłości, ale nie została jeszcze zakończona. | Przyszłe grupy czynności |
 | Produkcyjne | Zaplanowane zasoby z ograniczonymi zdolnościami produkcyjnymi: *\#* | Ta funkcja jest oczekiwana. Obecnie są ignorowane zasoby zaplanowane z ograniczonymi zdolnościami produkcyjnymi, gdy jest włączona Optymalizacja planowania. Planowanie jest wykonywane na podstawie domyślnego czasu realizacji produktu. | 2022 Zwolnij grupę czynności 2 |
 | Produkcyjne | Marszruty używane podczas planowania: *\#* | Ta funkcja jest obsługiwana. | Obsługiwana |
-| Produkcyjne | Rezerwacja wiersza sprzedaży z użyciem rozłożenia: *\#* | Rezerwacja wiersza sprzedaży wykorzystująca rozłożenie nie jest obsługiwana, jeśli jest włączona Optymalizacja planowania. | 2023 lub nowsza wersja |
-| Produkcyjne | Planowanie z rozłożeniem zleceń produkcyjnych: *\#* | Planowanie wykorzystujące rozłożenie zleceń produkcyjnych nie jest obsługiwane, jeśli jest włączona Optymalizacja planowania. Zlecenia produkcyjne można planować pojedynczo. | 2023 lub nowsza wersja |
+| Produkcyjne | Rezerwacja wiersza sprzedaży z użyciem rozłożenia: *\#* | Rezerwacja wiersza sprzedaży wykorzystująca rozłożenie nie jest obsługiwana, jeśli jest włączona Optymalizacja planowania. | Przyszłe grupy czynności |
+| Produkcyjne | Planowanie z rozłożeniem zleceń produkcyjnych: *\#* | Planowanie wykorzystujące rozłożenie zleceń produkcyjnych nie jest obsługiwane, jeśli jest włączona Optymalizacja planowania. Zlecenia produkcyjne można planować pojedynczo. | Przyszłe grupy czynności |
 | Zapytania ofertowe | Plany główne z włączoną opcją zapytań ofertowych: *\#* | Ta funkcja jest oczekiwana. Obecnie zapytania ofertowe (ZO) nie są traktowane jako popyt, gdy jest włączona Optymalizacja planowania. Zostaną one zignorowane niezależnie od tego ustawienia. | 2022 Zwolnij grupę czynności 2 |
 | Zapotrzebowania | Plany główne z włączoną opcją zapotrzebowań: *\#* | Ta funkcja jest teraz obsługiwana. Aby dowiedzieć się więcej, zobacz temat [Zapotrzebowania na zakup](purchase-requisitions.md) | Obsługiwana |
 | Marginesy bezpieczeństwa | Grupy zapotrzebowania z marginesem bezpieczeństwa: *\#* | Ta funkcja jest teraz obsługiwana. Aby uzyskać dodatkowe informacje, zobacz temat [Marginesy bezpieczeństwa](safety-margins.md) | Obsługiwana |

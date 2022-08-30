@@ -2,7 +2,7 @@
 title: Wysyłka małych paczek
 description: Ten artykuł zawiera informacje dotyczące funkcji Wysyłka małych paczek (SPS). Ta funkcja umożliwia aplikacji Microsoft Dynamics 365 Supply Chain Management przesyłanie do przewoźnika szczegółów dotyczących spakowanego kontenera, a następnie odbieranie od niego etykiety wysyłkowej, stawki kosztów i numeru śledzenia.
 author: Mirzaab
-ms.date: 01/08/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-08
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 6ccc9c795e2da121acf9c0809aef99a5f9d5889e
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: b2adde2b81ed881a3c81193a2220fbe569069c7c
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219727"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336164"
 ---
 # <a name="small-parcel-shipping"></a>Wysyłka małych paczek
 
@@ -34,12 +34,9 @@ Zwrócona stawka kosztów wysyłki jest dodawana do skojarzonego zamówienia spr
 
 Aby można było rozpocząć korzystanie z funkcji SPS, należy włączyć funkcję SPS w zarządzaniu funkcjami, dodać aparat stawki oraz skonfigurować moduły **Zarządzanie transportem** i **Zarządzanie magazynem** do obsługi tej funkcji.
 
-### <a name="turn-on-the-sps-feature"></a>Włączanie funkcji SPS
+### <a name="turn-the-sps-feature-on-or-off"></a>Włączanie lub wyłączanie funkcji SPS
 
-Aby móc używać funkcji SPS, należy ją włączyć w systemie. Administratorzy mogą skorzystać z obszaru roboczego [Zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. Ta funkcja jest wymieniona w następujący sposób:
-
-- **Moduł**: *Zarządzanie transportem*
-- **Nazwa funkcji:** *Wysyłka małych paczek*
+Aby używać tej funkcji, należy ją włączyć dla systemu. Od wersji 10.0.29 Supply Chain Management funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.29, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Wysyłka małych paczek* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="deploy-and-set-up-rate-engines"></a>Wdrażanie i konfigurowanie aparatów stawki
 

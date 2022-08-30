@@ -2,7 +2,7 @@
 title: Planowany przeładunek kompletacyjny
 description: W tym artykule opisano zaawansowane planowane przeładunki kompletacyjne, w którym ilość zapasów wymagana dla zamówienia jest skierowana bezpośrednio z paragonu lub tworzenia do właściwego doku załadunkowego lub obszaru tymczasowego. Wszystkie pozostałe zapasy ze źródła przychodzącego są kierowane do poprawnego miejsca przechowywania za pośrednictwem zwykłego procesu umieszczenia.
 author: Mirzaab
-ms.date: 07/01/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 4f379b3cdb6830f989199afde7d751842047df79
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: b530cc1403458775fd330e826a32417d3b03bf25
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9070298"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334574"
 ---
 # <a name="planned-cross-docking"></a>Planowany przeładunek kompletacyjny
 
@@ -37,10 +37,10 @@ W momencie przyjęcia zamówienia przychodzącego konfiguracja przeładunku komp
 
 ## <a name="turn-on-the-planned-cross-docking-features"></a>Włącz funkcje planowanego przeładunku kompletacyjnego
 
-Jeśli Twój system nie zawiera jeszcze funkcji opisanych w tym artykule, przejdź do [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) i włącz następujące funkcje w następującej kolejności:
+W przypadku uruchamiania Supply Chain Management w wersji 10.0.28 lub wcześniejszej może być konieczne włączenie planowanego przeładunku kompletacyjnego przed jego użyciem. Przejdź do [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) i włącz następujące funkcje w kolejności:
 
-1. *Planowany przeładunek kompletacyjny*
-1. *Szablony przeładunku kompletacyjnego z dyrektywami lokalizacji*
+1. *Planowany przeładunek kompletacyjny*<br>(Od wersji 10.0.29 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć).
+1. *Szablony przeładunku kompletacyjnego z dyrektywami lokalizacji*<br>(Od wersji 10.0.29 Supply Chain Management version ta funkcja jest domyślnie włączona)
     > [!NOTE]
     > Ta funkcja umożliwia ustawienie pola **Kod dyrektywy** w szablonie przeładunku kompletacyjny, podobnie jak w przypadku tworzenia szablonów uzupełnienia. Włączenie tej funkcji zapobiega dodaniu kodu dyrektywy w wierszach szablonu pracy przeładunku kompletacyjnego dla wiersza końcowego *Odłożenie*. Zapewnia to, że ostateczną lokalizację odkładania można określić podczas tworzenia pracy przed rozważeniem szablonów pracy.
 
@@ -92,7 +92,7 @@ Planowany przeładunek kompletacyjny jest implementowany jako metoda księgowani
 
     - Pole **Kod dyrektywy:** należy pozostawić puste
 
-        Ta opcja jest włączona przez funkcję *Szablony przeładunku kompletarnego z dyrektywami lokalizacji*. System korzysta z dyrektyw lokalizacji, aby pomóc w określeniu najlepszej lokalizacji do przeniesienia zapasów kompletacyjnych. Możesz to skonfigurować, przypisując kod dyrektywy do każdego odpowiedniego szablonu przeładunku kompletacyjnego. Jeśli kod dyrektywy jest ustawiony, kiedy praca musi zostać wygenerowana, system przeszuka dyrektywy lokalizacji według kodu dyrektywy. W ten sposób można ograniczyć dyrektywy lokalizacji, które są używane dla określonego szablonu przeładunku kompletacyjnego.
+        Ta opcja jest włączona przez funkcję *Szablony przeładunku kompletacyjnego z funkcją dyrektyw* (domyślnie funkcja jest włączona w rozwiązaniu Supply Chain Management od wersji 10.0.29). System korzysta z dyrektyw lokalizacji, aby pomóc w określeniu najlepszej lokalizacji do przeniesienia zapasów kompletacyjnych. Możesz to skonfigurować, przypisując kod dyrektywy do każdego odpowiedniego szablonu przeładunku kompletacyjnego. Jeśli kod dyrektywy jest ustawiony, kiedy praca musi zostać wygenerowana, system przeszuka dyrektywy lokalizacji według kodu dyrektywy. W ten sposób można ograniczyć dyrektywy lokalizacji, które są używane dla określonego szablonu przeładunku kompletacyjnego.
 
     - **Sprawdzanie poprawności – okno czasowe:** *Tak*
 

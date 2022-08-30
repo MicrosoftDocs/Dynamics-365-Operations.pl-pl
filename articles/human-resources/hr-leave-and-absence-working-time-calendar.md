@@ -14,18 +14,15 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 35fcb7c4068ff2f68970d9c0127491e4a63dab4c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dac3ad583be9e4cbd6eacbc6d228819bd298628b
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861081"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9323582"
 ---
 # <a name="create-a-working-time-calendar"></a>Tworzenie kalendarza czasu pracy
 
-
-> [!Important]
-> Funkcjonalność opisana w tym artykule jest obecnie dostępna dla klientów samodzielnej wersji Dynamics 365 Human Resources. Część lub całość tej funkcjonalności będzie dostępna w ramach przyszłego wydania infrastruktury Finance po wydaniu wersji Finance 10.0.26.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -49,7 +46,7 @@ Skonfiguruj co najmniej jeden kalendarz czasu pracy, który pokazuje dni i godzi
 
 3. W obszarze **Opcje generowania** wybierz dni robocze w organizacji i wprowadź czas pracy. 
    - Aby dodać święto lub dzień zamknięcia zakładu, kliknij przycisk **Dodaj** obok pozycji **Święta i dni wolne od pracy**.
-   - Aby dodać czas wolny od pracy, np. obiady lub przerwy, w obszarze **CZAS WOLNY OD PRACY** kliknij przycisk **Dodaj**, a następnie wprowadź nazwę i przedział czasu.
+   - Aby dodać czas wolny od pracy, np. obiady lub przerwy, w obszarze **Czas wolny od pracy** kliknij przycisk **Dodaj**, a następnie wprowadź nazwę i przedział czasu.
 
 4. Na karcie **Dni** wybierz opcję **Generuj**, aby wygenerować dni w kalendarzu. Wprowadź zakres dat w kalendarzu, a następnie wybierz opcję **Generuj dni**.
 
@@ -67,7 +64,7 @@ Skonfiguruj co najmniej jeden kalendarz czasu pracy, który pokazuje dni i godzi
 
 Czas wolny od pracy można dodawać lub zmieniać niezależnie od kalendarza czasu pracy.
 
-1. Na stronie **Administrowanie organizacją** wybierz opcję **NON-WORK TIME**.
+1. Na stronie **Administrowanie organizacją** wybierz opcję **Czas wolny od pracy**.
 
 2. Kliknij opcję **Nowy**, a następnie wprowadź nazwę i przedział czasu dla czasu wolnego od pracy.
 

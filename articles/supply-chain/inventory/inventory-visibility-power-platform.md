@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: db158e3b6ae76f69149db04096f99d3dc4251146
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a360b8beaad2bf6916c22765131e37f90e40282b
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895765"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306182"
 ---
 # <a name="use-the-inventory-visibility-app"></a>Używanie aplikacji Inventory Visibility
 
@@ -70,10 +70,24 @@ Aby zaksięgować żądanie rezerwacji, musisz wprowadzić wartość w treści �
 
 ## <a name="inventory-summary"></a><a name="inventory-summary"></a>Podsumowanie zapasów
 
-**Podsumowanie zapasów** jest dostosowanym widokiem encji *Suma dostępnych zapasów*. Zawiera podsumowanie zapasów dla produktów wraz ze wszystkimi wymiarami. Dane podsumowujące stan zapasów są okresowo synchronizowane z narzędziem Widoczność magazynu co 15 minut. Aby wyświetlić dane na karcie **Podsumowanie zapasów**, należy włączyć funkcję *OnHandMostSpecificBackgroundService* na karcie **Zarządzanie funkcjami** i wybrać **Uaktualnij konfigurację**.
+Strona **Podsumowanie zapasów** zapewnia podsumowanie zapasów produktów wraz ze wszystkimi wymiarami. Jest dostosowanym widokiem encji *Łącznie dostępnych zapasów*. Podsumowanie zapasów będzie okresowo synchronizowane z Widocznością magazynu.
+
+### <a name="enable-the-inventory-summary-and-set-the-synchronization-frequency"></a>Włącz podsumowanie zapasów i ustaw częstotliwość synchronizacji
+
+Aby włączyć stronę **Podsumowanie zapasów** i ustawić częstotliwość synchronizacji, wykonaj poniższe kroki:
+
+1. Otwórz stronę **Konfiguracja**.
+1. Otwórz kartę **Zarządzanie funkcjami i ustawienia**.
+1. Ustaw przełącznik dla funkcji **OnHandMostSpecificBackgroundService** na wartość *Tak*.
+1. Gdy ta funkcja jest włączona, sekcja **Konfiguracja usługi** staje się dostępna i zawiera wiersz do konfigurowania usługi **OnHandMostSpecificBackgroundService**. To ustawienie umożliwia wybranie częstotliwości synchronizacji danych zbiorczych zapasów. Przyciski **W górę** i **W dół** w kolumnie **Wartość** umożliwiają zmianę czasu między synchronizacjami (czas do 5 minut). Następnie kliknij przycisk **Zapisz**.
+1. Wybierz opcję **Aktualizuj konfigurację**, aby zapisać wszystkie zmiany.
+
+![Ustawienie OnHandMostSpecificBackgroundService](media/inventory-visibility-ohms-freq.PNG "Ustawienie OnHandMostSpecificBackgroundService")
 
 > [!NOTE]
 > Funkcja *OnHandMostSpecificBackgroundService* śledzi tylko zmiany w dostępnych towarach, które wystąpiły po włączeniu tej funkcji. Dane produktów, które nie zostały zmienione od czasu włączeniu tej funkcji, nie będą synchronizowane z pamięci podręcznej usługi magazynowej do środowiska Dataverse. Jeśli strona **Podsumowanie zapasów** nie pokazuje wszystkich oczekiwanych informacji o stanie zapasów, przejdź do menu **Zarządzanie zapasami > Zadania okresowe > Integracja widoczności zapasów**, wyłącz zadanie wsadowe i włącz je ponownie. W ciągu najbliższych 15 minut wszystkie dane zostaną zsynchronizowane z jednostką *Łącznie dostępnych zapasów*. Jeśli chcesz korzystać z tej funkcji, zalecamy jej włączenie przed utworzeniem jakichkolwiek zmian w stanie inwentaryzacji oraz włączenie zadania wsadowego **Integracja widoczności zapasów**.
+
+### <a name="work-with-the-inventory-summary"></a>Pracuj z podsumowaniem zapasów
 
 Korzystając z **filtru zaawansowanego** z Dataverse, można utworzyć osobisty widok, który pokazuje ważne dla użytkownika wiersze. Zaawansowane opcje filtrowania pozwalają na tworzenie szerokiego zakresu widoków, od prostych do złożonych. Umożliwiają one również dodawanie grupowanych i zagnieżdżonych warunków do filtrów. Aby dowiedzieć się więcej o używaniu **filtru zaawansowanego**, zobacz temat [Edytowanie lub tworzenie widoków osobistych przy użyciu zaawansowanych filtrów siatki](/powerapps/user/grid-filters-advanced).
 

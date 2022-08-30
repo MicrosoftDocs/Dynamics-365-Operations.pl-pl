@@ -2,7 +2,7 @@
 title: Ponowne obliczanie kwot netto wiersza podczas importowania zamówień sprzedaży, ofert i zwrotów
 description: W tym artykule opisano, czy i w jaki sposób system ponownie oblicza kwoty netto, gdy są importowane zamówienia sprzedaży, oferty i zwroty. Wyjaśniono w nim również, jak można kontrolować zachowanie w różnych wersjach rozwiązania Microsoft Dynamics 365 Supply Chain Management.
 author: Henrikan
-ms.date: 06/08/2022
+ms.date: 08/05/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2022-06-08
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: ce34a6be7bc3d14e23bdd8769aa71dc035b983b3
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 08b30044a93e46c9c83848b60d69c595bc774570
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220625"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335564"
 ---
 # <a name="recalculate-line-net-amounts-when-importing-sales-orders-quotations-and-returns"></a>Ponowne obliczanie kwot netto wiersza podczas importowania zamówień sprzedaży, ofert i zwrotów
 
@@ -36,7 +36,7 @@ W tych określonych scenariuszach zasada oceny umowy handlowej stanowi ogranicze
 
 ## <a name="control-calculations-of-line-net-amounts-in-versions-10029-and-later"></a>Obliczenia kontrolne kwot netto wiersza w wersjach 10.0.29 i nowszych
 
-W Supply Chain Management 10.0.29 wprowadzono funkcję o nazwie *Oblicz kwotę netto wiersza przy imporcie*. Ta funkcja dodaje opcję o nazwie Oblicz **kwotę netto** wiersza na stronie **parametry rozrachunków z odbiorcami**. Ta opcja umożliwia wybór między nowymi i starszych zachowaniami podczas obliczania kwot netto wiersza przy imporcie.
+W Supply Chain Management w wersji 10.0.29 wprowadzono funkcję o nazwie *Oblicz kwotę netto wiersza przy imporcie*. Ta funkcja dodaje opcję o nazwie Oblicz **kwotę netto** wiersza na stronie **parametry rozrachunków z odbiorcami**. Ta opcja umożliwia wybór między nowymi i starszych zachowaniami podczas obliczania kwot netto wiersza przy imporcie.
 
 ### <a name="turn-the-calculate-line-net-amount-on-import-feature-on-or-off"></a>Włączanie lub wyłączanie funkcji Obliczania kwoty netto wiersza przy imporcie
 

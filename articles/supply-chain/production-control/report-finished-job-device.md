@@ -2,7 +2,7 @@
 title: Zgłaszanie jako gotowych z urządzenia karty zadania
 description: W tym artykule opisano sposób konfigurowania systemu w taki sposób, aby użytkownicy urządzenia obsługującego karty zadań mogli zgłaszać produkty gotowe ze zlecenia produkcyjnego do magazynu.
 author: johanhoffmann
-ms.date: 07/31/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 38372f08db0258de8b5e653b4757c9fda96c8d70
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 56d19a966d93202668c34ffaaef561d72b7669ff
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9070478"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334634"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Zgłaszanie jako gotowych z urządzenia karty zadania
 
@@ -56,13 +56,12 @@ Urządzenie karty zadań obsługuje trzy scenariusze tworzenia raportów dotycz�
 - **Wstępnie zdefiniowane numery partii** - Pracownik umożliwia wybranie numeru partii na liście numerów partii, które system automatycznie generuje przed zwolnieniem zlecenia produkcyjnego na urządzeniu karty zadań.
 - **Trwałe numery partii** - Pracownicy nie wprowadzają ani nie wybierają numeru partii. Zamiast tego system automatycznie przypisuje numer partii do zlecenia produkcyjnego przed jego zwolnieniem.
 
-
 ### <a name="enable-the-feature-on-your-system"></a>Włączanie funkcji w systemie
 
-Aby umożliwić urządzeniom kart produkcyjnych akceptowanie numeru partii podczas zgłaszania wyrobów gotowych, należy skorzystać z [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) w celu włączenia następujących funkcji (w podanej kolejności):
+Aby umożliwić urządzeniom kart produkcyjnych akceptowanie numeru partii podczas zgłaszania wyrobów gotowych, należy skorzystać z [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) w celu włączenia następujących funkcji:
 
-1. Udoskonalone środowisko użytkownika okna dialogowego zgłaszania postępu w menu Urządzenie karty zadań
-1. Włącz, aby wprowadzić numery seryjne i partii podczas zgłaszania jako gotowych z urządzenia karty zadań
+- *Udoskonalone środowisko użytkownika okna dialogowego zgłaszania postępu w menu Urządzenie karty zadań*
+- *Włącz, aby wprowadzić numery seryjne i partii podczas zgłaszania jako gotowych z urządzenia karty zadań*<br>(Od wersji 10.0.29 Supply Chain Management version ta funkcja jest domyślnie włączona).
 
 ### <a name="configure-products-that-require-batch-number-reporting"></a>Konfigurowanie produktów wymagających raportowania numerów partii
 
@@ -137,10 +136,10 @@ Urządzenie karty pracy obsługuje trzy scenariusze raportowania towarów kontro
 
 ### <a name="enable-the-feature-on-your-system"></a>Włączanie funkcji w systemie
 
-Aby umożliwić urządzeniom kart produkcyjnych akceptowanie numeru seryjnego podczas zgłaszania wyrobów gotowych, należy skorzystać z [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) w celu włączenia następujących funkcji (w podanej kolejności):
+Aby umożliwić urządzeniom kart produkcyjnych akceptowanie numeru seryjnego podczas zgłaszania wyrobów gotowych, należy skorzystać z [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) w celu włączenia następujących funkcji:
 
-1. Udoskonalone środowisko użytkownika okna dialogowego zgłaszania postępu w menu Urządzenie karty zadań
-1. Włącz, aby wprowadzić numery seryjne i partii podczas zgłaszania jako gotowych z urządzenia karty zadań
+- *Udoskonalone środowisko użytkownika okna dialogowego zgłaszania postępu w menu Urządzenie karty zadań*
+- *Włącz, aby wprowadzić numery seryjne i partii podczas zgłaszania jako gotowych z urządzenia karty zadań*<br>(Od wersji 10.0.29 Supply Chain Management version ta funkcja jest domyślnie włączona).
 
 ### <a name="configure-products-that-require-serial-number-reporting"></a>Konfigurowanie produktów wymagających raportowania numerów seryjnych
 

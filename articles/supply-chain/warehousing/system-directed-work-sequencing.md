@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 88ea680b5b3e237d117b087978d703a7f6f09465
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 1dab8d8bdace046f0f061713600fd1eab69e7c12
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219697"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335474"
 ---
 # <a name="system-directed-work-sequencing"></a>Harmonogram prac sterowany przez system
 
@@ -35,7 +35,7 @@ Ta funkcja pozwala na dalszą optymalizację procesów pobierania magazynowego, 
 
 ## <a name="turn-on-the-organization-wide-system-directed-work-sequencing-feature"></a>Należy włączyć funkcję harmonogramu prac sterowanego przez system obowiązującego dla całej organizacji
 
-Aby można było korzystać z funkcji harmonogramu pracy kierowanej przez system, funkcja ta musi być włączona w systemie. Administratorzy mogą skorzystać z obszaru roboczego [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. Ta funkcja jest wymieniona w następujący sposób:
+Aby można było korzystać z funkcji harmonogramu pracy kierowanej przez system, funkcja ta musi być włączona dla systemu. Administratorzy mogą skorzystać z obszaru roboczego [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. Ta funkcja jest wymieniona w następujący sposób:
 
 - **Moduł:** *Zarządzanie magazynem*
 - **Nazwa funkcji:** *Harmonogram prac sterowany przez system obowiązujący dla całej organizacji*

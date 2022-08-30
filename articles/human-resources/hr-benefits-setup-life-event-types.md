@@ -14,19 +14,14 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 64e536bad996e9a1948dad18437ec6f98ad27033
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: df523dd4da11e24c7b601c8f34aef24ad6cb3b18
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691730"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337017"
 ---
 # <a name="configure-life-event-types"></a>Konfigurowanie typów zdarzeń zmiany sytuacji życiowej
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dynamics 365 Human Resources używa **typów zmiany sytuacji życiowej** do zdefiniowania zdarzeń, które uzasadniają aktualizowanie rejestracji pracowników na świadczenia, jak na przykład zawarcie związku małżeńskiego czy narodziny dziecka. Każdy identyfikator typu zmiany sytuacji życiowej może być skojarzony tylko z jednym typem zmiany sytuacji życiowej. Jeśli na przykład utworzysz **identyfikator zmiany sytuacji życiowej** o nazwie **Zmiana adresu**, który jest skojarzony z typem zmiany sytuacji życiowej **Adres pracownika etatowego**, nie można utworzyć kolejnego identyfikatora o nazwie **Zmiana adresu pracownika etatowego** i skojarzyć go z typem zmiany sytuacji życiowej **Zmiana adresu pracownika etatowego**. Jeśli typ zdarzenia zmiany sytuacji życiowej nie jest skojarzony z typem planu, typ zdarzenia zmiany sytuacji życiowej nie wywoła zmiany sytuacji życiowej. Aby uzyskać więcej informacji, zobacz [Tworzenie typów planów](hr-benefits-setup-plan-types.md).
 

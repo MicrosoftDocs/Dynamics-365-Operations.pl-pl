@@ -1,7 +1,7 @@
 ---
 title: Ocenianie rentowności odbiorców i produktów
 description: W tym artykule wyjaśniono, jak za pomocą funkcji analizy w pamięci i w czasie rzeczywistym uzyskać dostęp, eksplorować i wyciągać wnioski o rentowności odbiorców i produktów z danych Dynamics 365 Commerce.
-author: ''
+author: ashishmsft
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -16,12 +16,12 @@ ms.custom: 52902
 ms.assetid: 1a77d04b-2985-4bee-9138-c216fe0483de
 ms.search.industry: Retail
 ms.search.form: SysOperationsTemplateForm, RetailStoreManagementWorkspace
-ms.openlocfilehash: 0fd3c6f37fadb0d2186817fa3cd040b5b5f30afa
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 7b0d603977fc0927c87442c548c541298793d257
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9276954"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336706"
 ---
 # <a name="assess-customer-and-product-profitability"></a>Ocenianie rentowności odbiorców i produktów
 

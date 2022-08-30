@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 34f74c2a889b3a659831897897e2086b277256e0
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: e1c1c274054ed1c14c9b3fc0595baa029bf3124d
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219787"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336374"
 ---
 # <a name="gs1-bar-codes"></a>Kody kreskowe GS1
 
@@ -108,7 +108,7 @@ Po analizie danych z kodu słupkowego zostaną one wczytyne do formantów przep�
 
 ## <a name="turn-on-the-gs1-feature"></a>Włączanie funkcji GS1
 
-Aby używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
+Aby używać tej funkcji, należy ją włączyć dla systemu. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
 
 - **Moduł:** *Zarządzanie magazynem*
 - **Nazwa funkcji:** *skanowanie kodów kreskowych GS1*
@@ -134,7 +134,7 @@ Procedura konfigurowania globalnych opcji GS1 jest następująca.
 
     - **Znak FNC1**, **znak Datamatrix** i **znak kodu QR** — umożliwia określanie znaków, które powinny być interpretowane jako prefiks dla każdego typu kodu kreskowygo GS1.
     - **Separator grupy** — umożliwia określenie znaku, który zastępuje znak separatora grupy ASCII.
-    - **Maksymalna długość identyfikatora** — umożliwia określenie maksymalnej dozwolonej liczby znaków identyfikatora aplikacji. To pole nie jest wymagane, jeśli w *systemie jest włączona funkcja Enhanced GS1 Parser*.
+    - **Maksymalna długość identyfikatora** — umożliwia określenie maksymalnej dozwolonej liczby znaków identyfikatora aplikacji. To pole nie jest wymagane, jeśli dla systemu jest włączona funkcja *Poprawiona analiza GS1*.
 
 > [!NOTE]
 > Prefiksy informują system, że kod kreskowy jest zakodowany zgodnie ze standardem GS1. Mogą być używane maksymalnie trzy prefiksy (**Znak FNC1**, **Znak Datamatrix** i **Znak kodu QR**) równocześnie i do różnych celów.

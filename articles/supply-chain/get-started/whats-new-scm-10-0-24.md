@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: f8864ac22153908492b5e7c30a03617e6dc9d05a
-ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
+ms.openlocfilehash: 9b4b538e6d50013626739e19fee2a050b630bf7f
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "9166884"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334814"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10024-february-2022"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.24 (luty 2022 r.)
 
@@ -48,7 +48,7 @@ Aby włączyć lub wyłączyć te funkcje, należy przejść do obszaru [zarząd
 | Kontrola produkcji | Sprawdzanie dostępności materiałów na żądanie dla zleceń produkcyjnych | Ta funkcja przyspiesza otwieranie strony **Zlecenia produkcyjne do zwolnienia** dostępnej w obszarze roboczym **Zarządzanie halą produkcyjną**. Bez tej funkcji system automatycznie sprawdza, czy materiały są dostępne dla wszystkich wymienionych zleceń produkcyjnych po otwarciu strony, co może potrwać znacznie dłużej w przypadku dużej liczby zleceń. Gdy ta funkcja jest włączona, w systemie jest wyświetlany przycisk paska narzędzi, który umożliwia inicjowanie sprawdzania materiałów tylko w razie potrzeby i tylko dla wybranych zamówień. |
 | Kontrola produkcji | Rejestrowanie zużycia materiału w interfejsie wykonania hal produkcyjnych (inne niż WMS) | Ta funkcja umożliwia pracownikom używanie interfejsu wykonywania produkcji do rejestrowania zużycia materiałów, numerów partii i numerów seryjnych. Ta funkcja obsługuje tylko pozycje, dla których nie włączono obsługi procesów magazynowych (WMS). Obsługa pozycji z obsługą usług WMS jest zaplanowana w przyszłym wydaniu.<p>Niektórzy producenci, w szczególności branże zajmujące się przetwarzaniem, muszą jawnie rejestrować ilość zużytych materiałów dla poszczególnych partii lub zlecenia produkcyjnego. Na przykład pracownicy mogą używać wagi do zważenia ilości zużytego materiału podczas pracy. Aby zapewnić pełne śledzenie materiałów, organizacje te muszą także zarejestrować numery partii zużyte podczas produkcji każdego produktu. |
 | Kontrola produkcji | Zgłaszanie pozycji jako gotowych w obciążeniach zarządzania magazynem dla jednostek skalowania chmury i urządzenia brzegowego | Ta funkcja pozwala pracownikom używać aplikacji mobilnej Warehouse Management do zgłaszania zamówień produkcyjnych lub zamówień partii jako zakończonych, gdy aplikacja jest uruchamiana z obciążeniem pracą zarządzania magazynem w jednostce skalowania chmurze lub na urządzeniu brzegowym. Aby uzyskać więcej informacji, zobacz [Zgłoś jako gotowe i odłóż na jednostce skalowania](../cloud-edge/cloud-edge-workload-manufacturing.md#RAF)wagi. |
-| Zarządzanie magazynem | Nowe strony pulpitu planowania wysyłki ładunku | Włącza dwie nowe strony pulpitu planowania wysyłki ładunku: **Pulpit planowania wysyłki ładunku przychodzącego** i **Pulpit planowania wysyłki ładunku wychodzącego**. |
+| Zarządzanie magazynem | Nowe strony pulpitu planowania wysyłki ładunku | Dodaje dwie nowe strony pulpitu planowania wysyłki ładunku: **Pulpit planowania wysyłki ładunku przychodzącego** i **Pulpit planowania wysyłki ładunku wychodzącego**. |
 
 ## <a name="new-and-updated-documentation-resources"></a>Nowe i zaktualizowane zasoby dokumentacji
 

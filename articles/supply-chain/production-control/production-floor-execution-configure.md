@@ -2,7 +2,7 @@
 title: Konfigurowanie interfejsu wykonania hal produkcyjnych
 description: W tym artykule opisano sposób tworzenia jednej lub większej liczby konfiguracji dla interfejsu wykonywania pomieszczenia produkcyjnego. Po otwarciu interfejsu wykonania produkcji system automatycznie ładuje wybraną konfigurację i filtr zadania, które są właściwe dla przeglądarki i urządzenia. W konfiguracji ustawiane są zasady, które muszą być dostępne dla określonego użycia.
 author: johanhoffmann
-ms.date: 10/05/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 2a77924e6133158d538a3eb8365def92c9354b0e
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: ae574e25c5ef0c1736ec13e2ee3fcc11b323721f
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220371"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336194"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurowanie interfejsu wykonania hal produkcyjnych
 
@@ -35,7 +35,7 @@ W tym artykule opisano różne opcje konfigurowania interfejsu wykonywania produ
 
 ## <a name="turn-on-the-production-floor-execution-interface-and-its-related-optional-features"></a>Włączanie interfejsu wykonywania hal produkcyjnych i powiązanych opcjonalnych funkcji
 
-Sam interfejs wykonywania hal produkcyjnych, a kilka opcjonalnych ustawień opisanych w tym artykule, musi być włączony w systemie, aby można było z nich skorzystać. Strona [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) umożliwia włączenie dowolnej funkcji lub wszystkich funkcji opisanych w poniższych podsekcjach, zgodnie z wymaganiami.
+Sam interfejs wykonywania hal produkcyjnych, a kilka opcjonalnych ustawień opisanych w tym artykule, musi być włączony dla systemu, aby można było z nich skorzystać. Strona [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) umożliwia włączenie dowolnej funkcji lub wszystkich funkcji opisanych w poniższych podsekcjach, zgodnie z wymaganiami.
 
 ### <a name="the-production-floor-execution-interface"></a>Interfejs wykonania hal produkcyjnych
 
@@ -63,29 +63,32 @@ Od wersji 10.0.21 Supply Chain Management version ta funkcja jest domyślnie wł
 
 ### <a name="asset-management-functionality-for-the-production-floor-execution-interface"></a>Funkcje zarządzania zasobami dla interfejsu wykonania hali produkcyjnej
 
-Ta funkcja dodaje kartę Zarządzanie składnikami majątku do interfejsu wykonywania produkcji. Pracownicy mogą użyć tej karty, aby wybrać składnik majątku połączony z zasobem maszynowym, który jest w obrębie wybranego filtru listy zadań. Dla wybranego składnika majątku dla urządzenia pracownik może wyświetlić stan i kondycję składnika majątku z wartości liczników dla maksymalnie czterech wybranych liczników. Jeżeli chcesz skorzystać z tej funkcji, włącz następujące funkcje w [Zarządzaniu funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Ta funkcja dodaje kartę Zarządzanie składnikami majątku do interfejsu wykonywania produkcji. Pracownicy mogą użyć tej karty, aby wybrać składnik majątku połączony z zasobem maszynowym, który jest w obrębie wybranego filtru listy zadań. Dla wybranego składnika majątku dla urządzenia pracownik może wyświetlić stan i kondycję składnika majątku z wartości liczników dla maksymalnie czterech wybranych liczników.
 
-- *Funkcje zarządzania zasobami dla interfejsu wykonania hali produkcyjnej*<br>(Od wersji 10.0.25 Supply Chain Management version ta funkcja jest domyślnie włączona).
+Od wersji 10.0.25 Supply Chain Management version ta funkcja jest domyślnie włączona. Od wersji 10.0.29 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.29, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Funkcje zarządzania zasobami dla interfejsu wykonania hali produkcyjnej* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-### <a name="enable-job-search"></a>Włącz wyszukiwanie zadań
+### <a name="job-search"></a>Wyszukaj zadania
 
-Ta funkcja umożliwia dodanie pola wyszukiwania do listy zadań. Pracownicy mogą znaleźć konkretną pracę, wpisując jej ID lub znaleźć wszystkie prace dla konkretnego zlecenia, wpisując ID zlecenia. Pracownicy mogą wprowadzać identyfikator za pomocą klawiatury lub skanując kod kreskowy. Jeżeli chcesz z niej skorzystać, włącz następujące funkcje w [Zarządzaniu funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Ta funkcja umożliwia dodanie pola wyszukiwania do listy zadań. Pracownicy mogą znaleźć konkretną pracę, wpisując jej ID lub znaleźć wszystkie prace dla konkretnego zlecenia, wpisując ID zlecenia. Pracownicy mogą wprowadzać identyfikator za pomocą klawiatury lub skanując kod kreskowy.
 
-- *Wyszukiwanie zadań dla interfejsu wykonania hal produkcyjnych*<br>(Od wersji 10.0.25 Supply Chain Management version ta funkcja jest domyślnie włączona).
+Od wersji 10.0.25 Supply Chain Management version ta funkcja jest domyślnie włączona. Od wersji 10.0.29 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.29, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Funkcje zarządzania zasobami dla interfejsu wykonania hali produkcyjnej* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-### <a name="enable-reporting-on-co-products-and-by-products"></a>Włącz raportowanie dotyczące produktów towarzyszących i produktów ubocznych
+### <a name="report-on-co-products-and-by-products"></a>Raportowanie produktów towarzyszących i produktów ubocznych
 
-Ta funkcja umożliwia pracownikom raportowanie postępu w realizacji zamówień partii za pomocą interfejsu wykonywania hali produkcyjnej. Raportowanie to obejmuje raportowanie produktów towarzyszących i ubocznych. Aby używać tej funkcji, włącz następujące funkcje w module [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Ta funkcja umożliwia pracownikom raportowanie postępu w realizacji zamówień partii za pomocą interfejsu wykonywania hali produkcyjnej. Raportowanie to obejmuje raportowanie produktów towarzyszących i ubocznych.
 
-- *Raport dotyczący produktów towarzyszących i ubocznych z interfejsu wykonania hal produkcyjnych*
+Aby używać tej funkcji, należy ją włączyć dla systemu. Od wersji 10.0.29 Supply Chain Management funkcja jest domyślnie włączona. Administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując *Raport dotyczący produktów towarzyszących i ubocznych z interfejsu wykonania hal produkcyjnych* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-### <a name="enable-the-display-of-full-serial-batch-and-license-plate-numbers"></a>Włącz wyświetlanie pełnego numeru seryjnego, partii i numeru identyfikacyjnego
+### <a name="display-full-serial-batch-and-license-plate-numbers"></a>Wyświetlanie pełnego numeru seryjnego, partii i numeru identyfikacyjnego
 
 Ta funkcja zapewnia lepsze środowisko wyświetlania list numerów seryjnych, partii i numerów identyfikacyjnych w interfejsie wykonywania dla hali produkcyjnej. Wyświetlanie zmienia się z widoku karty z ograniczoną liczbą znaków do widoku listy, który zapewnia wystarczająco dużo miejsca, aby wyświetlić pełne wartości. Lista umożliwia również wyszukiwanie określonych liczb.
 
+Aby używać tej funkcji, należy ją włączyć dla systemu. Od wersji 10.0.25 Supply Chain Management funkcja jest domyślnie włączona. Od wersji 10.0.29 Supply Chain Management funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli uruchomiona jest wersja starsza niż 10.0.29, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując *Pokaż pełne numery seryjne, partii i tablic rejestracyjnych w interfejsie wykonawczym hali produkcyjnej* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+
 Od wersji 10.0.25 Supply Chain Management version ta funkcja jest domyślnie włączona. Administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując *Pokaż pełne numery seryjne, partii i tablic rejestracyjnych w interfejsie wykonawczym hali produkcyjnej* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-### <a name="enable-registering-of-material-consumption"></a>Włącz rejestrację zużycia materiałów
+### <a name="register-material-consumption"></a>Rejestruj zużycie materiałów
 
 Ta funkcja umożliwia pracownikom używanie interfejsu wykonywania produkcji do rejestrowania zużycia materiałów, numerów partii i numerów seryjnych. Niektórzy producenci, szczególnie ci w przemyśle przetwórczym, muszą wyraźnie rejestrować ilość zużywanego materiału dla każdej partii lub zlecenia produkcyjnego. Na przykład pracownicy mogą używać wagi do zważenia ilości zużytego materiału podczas pracy. Aby zapewnić pełną identyfikowalność materiałów, organizacje te muszą również rejestrować numery partii, które zostały zużyte do wytworzenia każdego produktu.
 
@@ -97,7 +100,7 @@ Istnieją dwie wersje tej funkcji. Ta funkcja obsługuje tylko pozycje, dla któ
 > [!IMPORTANT]
 > Można korzystać z funkcji innych niż WMS. Jednak w przypadku korzystania z programu WMS należy włączyć obie funkcje.
 
-### <a name="enable-reporting-on-catch-weight-items"></a>Włącz raportowanie pozycji wagi połowu
+### <a name="report-on-catch-weight-items"></a>Zgłaszanie pozycji wagi połowu
 
 Pracownicy mogą korzystać z interfejsu wykonywania hali produkcyjnej, aby zgłaszać postępy w zamówieniach partii dla pozycji wagi połowu. Zamówienia wsadowe są tworzone na podstawie formuł, które można zdefiniować w taki sposób, aby pozycje wagi połowu były pozycjami formuły, produktami towarzyszącymi i produktami ubocznymi. Formułę można także zdefiniować tak, aby zawierała wiersze formuły dotyczące składników, które zostały określone dla wagi catch. Pozycje w ilości catch używają dwóch jednostek miary do śledzenia zapasów: ilości catch i ilości magazynowej. Na przykład w branży spożywczej mięso pudełek można zdefiniować jako towar w ilości catch, gdzie ilość catch jest używana do śledzenia liczby pudełek, a ilość magazynowa jest używana do śledzenia wagi pudełek.
 
@@ -105,15 +108,13 @@ Aby używać tej funkcji, włącz następujące funkcje w module [Zarządzanie f
 
 - *Raport pozycji ilości efektywnej z interfejsu wykonania hal produkcyjnych*
 
-### <a name="enable-the-my-day-dialog"></a>Włącz okno dialogowe „Mój dzień”
+### <a name="the-my-day-dialog"></a>Okno dialogowe „Mój dzień”
 
 Okno dialogowe **Mój dzień** zapewnia pracownikom przegląd ich codziennych rejestracji i aktualnych sald płatnego czasu pracy, płatnych nadgodzin, nieobecności i płatnej nieobecności.
 
-Aby używać tej funkcji, włącz następujące funkcje w module [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Aby używać tej funkcji, należy ją włączyć dla systemu. Od wersji 10.0.29 Supply Chain Management funkcja jest domyślnie włączona. Administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując *Widok „Mój dzień” dla interfejsu wykonania hal produkcyjnych* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-- *Widok „Mój dzień” dla interfejsu wykonania hal produkcyjnych*
-
-### <a name="enable-teams"></a>Włączanie zespołów
+### <a name="teams"></a>Zespoły
 
 Kiedy kilku pracowników jest przydzielonych do tego samego zadania produkcyjnego, mogą oni tworzyć zespół. Drużyna może wyznaczyć jednego pracownika jako pilota. Pozostali pracownicy automatycznie stają się asystentami tego pilota. W powstałej w ten sposób drużynie tylko pilot musi zarejestrować status pracy. Ewidencja czasu pracy dotyczy wszystkich członków zespołu.
 
@@ -121,7 +122,7 @@ Aby używać tej funkcji, włącz następujące funkcje w module [Zarządzanie f
 
 - *Zespoły produkcyjne w interfejsie wykonania hal produkcyjnych*
 
-### <a name="enable-additional-configuration-in-the-production-floor-execution-interface"></a>Włączenie dodatkowej konfiguracji w interfejsie wykonawczym hali produkcyjnej
+### <a name="additional-configuration-in-the-production-floor-execution-interface"></a>Dodatkowa konfiguracja w interfejsie wykonania hal produkcyjnych
 
 Ta funkcja dodaje do strony **Konfiguracja wykonania hali produkcyjnej** ustawienia dla następujących funkcji:
 
@@ -136,7 +137,6 @@ Informacje o tym, jak korzystać z tych ustawień, znajdują się w dalszej czę
 Aby używać tej funkcji, włącz następujące funkcje w module [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - *Dodatkowa konfiguracja w interfejsie wykonania hal produkcyjnych*
-
 
 ## <a name="work-with-production-floor-execution-configurations"></a>Praca z konfiguracjami wykonania hali produkcyjnej
 

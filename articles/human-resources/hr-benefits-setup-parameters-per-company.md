@@ -14,19 +14,15 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e9516977002280e17ee82bf7581d8d7c5060de2a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2f3f8625a8ebbe6812d2f051649ff2a608ed4b54
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8904225"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9323907"
 ---
 # <a name="configure-benefits-management-parameters-per-company"></a>Konfigurowanie parametrów zarządzania świadczeniami w firmie
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dla każdej organizacji oferującej świadczenia należy skonfigurować ustawienia wiadomości e-mail z potwierdzeniem świadczeń.
 

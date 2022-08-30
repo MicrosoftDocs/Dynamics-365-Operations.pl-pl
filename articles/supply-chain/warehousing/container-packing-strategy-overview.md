@@ -2,7 +2,7 @@
 title: Strategie pakowania kontenerów
 description: W tym artykule opisano różnice między strategiami pakowania kontenerów i podano przykłady.
 author: GalynaFedorova
-ms.date: 06/11/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak, WHSContainerStructure, WHSContainerTable
 audience: Application User
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-11
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 46b4a007dafbd99e5f9b7231c07a148f8101d2a4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5a9a0066abaa76294faebcb15d5091ba36e8a60d
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8862374"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335774"
 ---
 # <a name="container-packing-strategies"></a>Strategie pakowania kontenerów
 
@@ -77,7 +77,7 @@ Ten scenariusz pokazuje, jak można zmniejszyć liczbę pojemników, które są 
 
 #### <a name="turn-on-the-consolidate-shipments-feature-in-your-system"></a>Włącz funkcję Konsoliduj wysyłki w systemie
 
-W tym scenariuszu jest używana funkcja *Konsoliduj wysyłki*. Jeśli ta funkcja nie jest jeszcze dostępna w systemie, należy ją włączyć za pomocą [Zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+W tym scenariuszu jest używana funkcja *Konsoliduj wysyłki*. Od wersji 10.0.29 Supply Chain Management funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.29, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Konsoliduj wysyłki* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 #### <a name="make-demo-data-available"></a>Udostępnianie danych pokazu
 

@@ -2,7 +2,7 @@
 title: Powiadomienia dotyczące wykonania grupy czynności
 description: W tym artykule opisano powiadomienia o wykonywaniu grupy czynności i wyjaśniono, jak je skonfigurować.
 author: Mirzaab
-ms.date: 04/03/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 5c8fa259e51f024d19c1f2f7e84ed7edd0ddb7e1
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: a6a554965c11eea3b4fa53fe4dbc4bac04624026
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9069037"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336584"
 ---
 # <a name="wave-execution-notifications"></a>Powiadomienia dotyczące wykonania grupy czynności
 
@@ -32,7 +32,7 @@ Zdarzenia biznesowe mają miejsce podczas uruchamiania procesów biznesowych. Pr
 
 ## <a name="turn-the-wave-execution-notifications-feature-on-or-off"></a>Włącz lub wyłącz funkcję powiadomień o wykonaniu Wave
 
-Od wersji 10.0.25 Supply Chain Management version ta funkcja jest domyślnie włączona. Administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Powiadomienia o wykonaniu fali* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Aby używać tej funkcji, należy ją włączyć dla systemu. Od wersji 10.0.25 Supply Chain Management funkcja jest domyślnie włączona. Od wersji 10.0.29 Supply Chain Management funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.29, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Powiadomienia dotyczące wykonania grupy czynności* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="scenario-send-wave-batch-execution-notifications-to-the-action-center"></a>Scenariusz: wysyłanie powiadomień o przetwarzaniu wsadowym grupy czynności do centrum akcji
 

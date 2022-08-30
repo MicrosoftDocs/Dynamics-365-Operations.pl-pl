@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: acfd9be044818ab0f40171c25a8fc9e760173aa8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a8deb71713619b4be6c875223ab3b1f08499dfb2
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867935"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335144"
 ---
 # <a name="product-dimensions"></a>Wymiary produktu
 
@@ -108,7 +108,7 @@ Podczas testowania rozwiązań w celu zapewnienia zgodności z wymiarem wersji n
 
 #### <a name="turn-on-the-version-dimension"></a>Włącz wymiar wersji
 
-Aby móc używać wymiaru wersji, należy ją włączyć w systemie. To zadanie wymaga uprawnień administratora.
+Aby móc używać wymiaru wersji, należy ją włączyć dla systemu. To zadanie wymaga uprawnień administratora.
 
 1. Wybierz kolejno opcje **Administrator systemu \> Obszary robocze \> Zarządzanie funkcjami**.
 1. Włącz funkcję o nazwie *Wersja wymiarowa produktu*. (Aby uzyskać więcej informacji, zapoznaj się z tematem [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)

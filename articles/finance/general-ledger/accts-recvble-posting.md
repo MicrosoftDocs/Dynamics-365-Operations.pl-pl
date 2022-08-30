@@ -15,18 +15,20 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 492bbd31cae08a93cd68e5ce120d02a62141241b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0d679595a1f702c4e3ade138a87c817d245fcf79
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874582"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9324338"
 ---
 # <a name="accounts-receivable-posting"></a>Księgowanie należności
 
 [!include [banner](../includes/banner.md)]
 
 Podstawowym profilem księgowania dla modułu **Należności** jest profil księgowania klienta. Ten profil księgowania określa konto podsumowujące używane podczas księgowania sald klienta w księdze głównej. Konto podsumowujące jest kontem głównym. Takie konto jest również nazywane kontem handlowym Należności.
+
+Raport **Uzgadnianie odbiorcy z księgą** może być używany po zaksięgowaniu, aby ułatwić uzgadnianie sald kont odbiorcy i księgowych. Raport korzysta z informacji z konta podsumowującego dla profilu księgowania odbiorcy. Nie używa konta podsumowującego z księgowania utworzonego dla dokumentu. Jeśli po zaksięgowaniu transakcji zostaną wprowadzone zmiany profilu księgowania odbiorcy lub grupy klientów przypisanej do odbiorcy, raport może zawierać różnice między kontem odbiorcy a saldem konta księgowego. Aby wyświetlić tylko wiersze z różnicami oraz wszystkie wiersze, dla których konta odbiorcy i konta księgowe są zerowe, należy wybrać parametr **Tylko różnice** podczas drukowania raportu.
 
 Aby uzyskać więcej informacji, zobacz [Profile księgowania odbiorców](../accounts-receivable/customer-posting-profiles.md).
 

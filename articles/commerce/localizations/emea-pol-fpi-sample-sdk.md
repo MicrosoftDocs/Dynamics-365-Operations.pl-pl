@@ -2,25 +2,29 @@
 title: Wskazówki dotyczące wdrażania przykładu integracji drukarki fiskalnej dla Polski (starsza wersja)
 description: Ten artykuł zawiera wskazówki dotyczące wdrażania przykładu integracji drukarki fiskalnej dla Polski z poziomu Retail Software Development Kit (SDK) rozwiązania Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 08/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-03-01
-ms.openlocfilehash: 883f09f73e3b372d6896b6702e54e2e664cff4d7
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 178301e6d8e5f87376ed893e4bf5f966260cad62
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9286534"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336722"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-printer-integration-sample-for-poland-legacy"></a>Wskazówki dotyczące wdrażania przykładu integracji drukarki fiskalnej dla Polski (starsza wersja)
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
-Ten artykuł zawiera wskazówki dotyczące wdrażania przykładu integracji drukarki fiskalnej dla Polski z poziomu Retail Software Development Kit (SDK) rozwiązania Microsoft Dynamics 365 Commerce na maszynie wirtualnej dewelopera w usłudze Microsoft Dynamics Lifecycle Services (LCS). Aby uzyskać więcej informacji dotyczących tego przykładu integracji fiskalnej, zobacz [Przykład integracji drukarki fiskalnej dla Polski](emea-pol-fpi-sample.md). 
+> [!IMPORTANT]
+> Należy postępować zgodnie z wytycznymi z tego artykułu, tylko jeśli używasz wersji Microsoft Dynamics 365 Commerce 10.0.28 lub wcześniejszej. Od wersji Commerce 10.0.19 przykład integracji drukarki fiskalnej dla Polski jest dostępny w zestawie SDK do Commerce. Aby uzyskać więcej informacji, zajrzyj do [Konfiguracja składników kanału](./emea-pol-fpi-sample.md#configure-channel-components).
+
+Ten artykuł zawiera wskazówki dotyczące wdrażania przykładu integracji drukarki fiskalnej dla Polski z poziomu zestawu Software Development Kit (SDK) do Retail Dynamics 365 Commerce na maszynie wirtualnej dewelopera w usłudze Microsoft Dynamics Lifecycle Services (LCS). Aby uzyskać więcej informacji dotyczących tego przykładu integracji fiskalnej, zobacz [Przykład integracji drukarki fiskalnej dla Polski](emea-pol-fpi-sample.md). 
 
 Przykład integracji fiskalnej dla Polski jest częścią zestawu Retail SDK. Aby uzyskać informacje dotyczące instalowania i używania zestawu SDK, zobacz [Omówienie zestawu Retail SDK (Software Development Kit)](../dev-itpro/retail-sdk/retail-sdk-overview.md). Ten przykład składa się z rozszerzeń kolekcji Commerce Runtime (CRT) i stacji sprzętowej. Aby uruchomić ten przykład, musisz zmodyfikować i skompilować projekty kolekcji CRT i stacji sprzętowej. Zalecamy, aby w celu wprowadzenia zmian opisanych w tym artykule używać niezmodyfikowanego zestawu Retail SDK. Zalecamy również korzystanie z systemu kontroli źródła, takiego jak usługa Azure DevOps, w sytuacji, gdy nie zmieniono jeszcze żadnego pliku.
 

@@ -2,7 +2,7 @@
 title: Wychodzące wizualizacje obciążenia pracą
 description: Ten artykuł zawiera informacje o wychodzących wizualizacjach obciążenia pracą. Ta funkcja umożliwia kierownikom i kierownikom magazynów tworzenie niestandardowych wykresów obciążenia, które można wykorzystać do monitorowania postępu bieżącej pracy i jej pozostałej ilości. Kierownicy magazynów mogą tworzyć wiele widoków i konfigurować automatyczne odświeżanie, gdy tego potrzebują.
 author: Mirzaab
-ms.date: 08/28/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-08-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 0e5a2cd2aa458217ff212d45c0dd13c9d0623bd0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 78d0d81095bb52a314936dd7590a5690d94ecb15
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851341"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334424"
 ---
 # <a name="outbound-workload-visualization"></a>Wychodzące wizualizacje obciążenia pracą
 
@@ -29,7 +29,7 @@ Ta funkcja może służyć do śledzenia postępu pracy pobierania. Ta funkcja j
 
 ## <a name="turn-the-outbound-workload-visualization-feature-on-or-off"></a>Włącz lub wyłącz funkcję wizualizacji obciążenia wychodzącego
 
-Od wersji 10.0.25 Supply Chain Management version ta funkcja jest domyślnie włączona. Administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *wizualizacji wychodzącego obciążenia pracą* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Aby używać tej funkcji, należy ją włączyć dla systemu. Od wersji 10.0.25 Supply Chain Management funkcja jest domyślnie włączona. Od wersji 10.0.29 Supply Chain Management funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.29, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Wychodzące wizualizacje obciążenia pracą* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-outbound-workload-visualizations"></a>Skonfiguruj wizualizacje wychodzących obciążeń
 

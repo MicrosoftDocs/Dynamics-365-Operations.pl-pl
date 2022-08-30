@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 9f571d353f99c91776424bc2fa3405f73b2bae0a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3bdd161815a15d5c39b3c0afc176a288c8d9055a
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885965"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306094"
 ---
 # <a name="inventory-visibility-tips"></a>Porady dotyczące dodatku Widoczność magazynu
 
@@ -35,5 +35,8 @@ Oto kilka wskazówek, które należy rozważyć podczas konfigurowania i używan
 - [Konfiguracja partycji](inventory-visibility-configuration.md#partition-configuration) składa się obecnie z dwóch wymiarów podstawowych (`SiteId` i `LocationId`) wskazujących sposób dystrybuowania danych. Operacje wykonywane na tej samej partycji mogą uzyskać wyższą wydajność przy niższym koszcie. Rozwiązanie domyślnie zawiera tę konfigurację partycji. Dlatego *nie trzeba obliczać jej ręcznie*. Nie dostosowuj domyślnej konfiguracji partycji. Usunięcie lub zmiana może spowodować nieoczekiwany błąd.
 - Wymiarów podstawowych określonych w konfiguracji partycji nie należy definiować w [konfiguracji hierarchii indeksu produktów](inventory-visibility-configuration.md#index-configuration).
 - Konfiguracja hierarchii indeksu [produktu](inventory-visibility-configuration.md#index-configuration) musi zawierać co najmniej jedną hierarchię indeksu (na przykład zawierającą wymiar podstawowy `Empty`), w przeciwnym razie zapytania zakończą się niepowodzeniem z błędem "Nie ustawiono hierarchii indeksu".
+- Źródło danych `@iv` jest wstępnie zdefiniowanym źródłem danych, a miary fizyczne zdefiniowane w `@iv` za pomocą prefiksu `@` są miarami wstępnie zdefiniowanymi. Te miary są wstępnie zdefiniowaną konfiguracją funkcji alokacji, więc nie należy ich zmieniać ani usuwać albo prawdopodobnie wystąpią nieoczekiwane błędy podczas korzystania z funkcji alokacji.
+- Do wstępnie zdefiniowanej miary obliczanej można dodawać nowe miary fizyczne `@iv.@available_to_allocate`, ale nie można zmieniać ich nazwy.
+- Jeśli użytkownik przywraca bazę danych Supply Chain Management, przywrócona baza danych może zawierać dane, które nie są spójne z danymi poprzednio zsynchronizowanymi przez widoczność zapasów do Dataverse. Ta niespójność danych może spowodować błędy systemowe i inne problemy. Dlatego przed przywróceniem bazy danych Supply Chain Management ważne jest, aby przed przywróceniem bazy wyczyścić wszystkie dane związane z widocznością zapasów z Dataverse. Więcej szczegółów znajdziesz w [Wyczyść dane widoczności zapasów przed przywróceniem bazy danych Dataverse Supply Chain Management](inventory-visibility-setup.md#restore-environment-database).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

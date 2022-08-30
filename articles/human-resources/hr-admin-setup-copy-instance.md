@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 935c2e6cb45df193e6cbf70634f3561154c6fe38
-ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
+ms.openlocfilehash: 20a2ffb44f9b99800146e3365e6f0d6df8e9a75e
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "9178542"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9324269"
 ---
 # <a name="copy-an-instance"></a>Kopiowanie wystąpienia
 
@@ -47,13 +47,14 @@ Aby skopiować wystąpienie, należy pamiętać o następujących wskazówkach:
 
 ## <a name="effects-of-copying-a-human-resources-database"></a>Efekty kopiowania bazy danych Human Resources
 
+> [!Note]
+> Począwszy od sierpnia 2022 roku dokumenty w magazynie obiektów Blob Microsoft Azure są uwzględniane podczas kopiowania środowiska produkcyjnego do środowiska piaskownicy. Wszelkie dołączone dokumenty i szablony zostaną skopiowane ze środowiska źródłowego do docelowego.
+
 Podczas kopiowania bazy danych Human Resources zachodzą następujące zdarzenia:
 
 - Proces kopiowania kasuje istniejącą bazę danych w środowisku docelowym. Po zakończeniu procesu kopiowania nie można odzyskać istniejącej bazy danych.
 
 - Środowisko docelowe nie będzie dostępne do czasu zakończenia procesu kopiowania.
-
-- Dokumenty w magazynie obiektów BLOB Microsoft Azure nie są kopiowane z jednego środowiska do drugiego. Z tego też powodu żadne dołączone dokumenty i szablony nie zostaną skopiowane i pozostaną w środowisku źródłowym.
 
 - Wszyscy użytkownicy z wyjątkiem tych z rolą zabezpieczeń „Administrator systemu” i innymi wewnętrznymi kontami użytkowników usługi nie będą dostępne. Administrator może usunąć dane, zanim inni użytkownicy zostaną ponownie wpuszczeni do systemu.
 

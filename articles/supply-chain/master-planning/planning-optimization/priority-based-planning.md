@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8f46a4d4e087a99c00ab7b4eabc74f60043cbf21
-ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
+ms.openlocfilehash: e17e45f1d4e9f7c62317eac6f3ea1be84017b562
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "9186492"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335294"
 ---
 # <a name="priority-based-planning"></a>Planowanie oparte na priorytecie
 
@@ -30,7 +30,7 @@ Aby uzyskać szybki przegląd tej funkcji, zobacz następujący film: [Obsługa 
 
 ## <a name="turn-on-priority-based-planning-in-your-system"></a>Włączanie planowania opartego na priorytecie w systemie
 
-Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
+Aby używać tej funkcji, należy ją włączyć dla systemu. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
 
 - **Moduł:** *Planowanie główne*
 - **Nazwa funkcji:** *Obsługa MRP opartego na priorytecie dla optymalizacji planowania*

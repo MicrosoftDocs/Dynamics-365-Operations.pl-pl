@@ -2,29 +2,30 @@
 title: Przykładowa integracja drukarki fiskalnej dla Włoch
 description: W tym artykule zawarto ogólne informacje o przykładowej integracji fiskalnej dla Włoch w rozwiązaniu Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 08/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-11-01
-ms.openlocfilehash: e63f8d68b8b79143771c0b1c757cb78659183b67
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: dff555a58c31b4e3daedd56b617dd44c4a87e601
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9280276"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336743"
 ---
 # <a name="fiscal-printer-integration-sample-for-italy"></a>Przykładowa integracja drukarki fiskalnej dla Włoch
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 W tym artykule zawarto ogólne informacje o przykładowej integracji fiskalnej dla Włoch w rozwiązaniu Microsoft Dynamics 365 Commerce.
 
-Funkcjonalność rozwiązania Commerce dla Włoch obejmuje przykładową integrację punktu sprzedaży (POS) z drukarką fiskalną. Ten przykład rozszerza [funkcjonalność integracji fiskalnej](fiscal-integration-for-retail-channel.md), dzięki czemu działa ona z drukarkami [Epson FP-90III Series](https://www.epson.it/products/sd/pos-printer/epson-fp-90iii-series) firmy Epson i umożliwia komunikację z drukarką fiskalną w trybie serwera sieci web za pośrednictwem usługi siecie web EpsonFPMate używającej interfejsu API Fiscal ePOS-Print. Przykład obsługuje tylko tryb Registratore Telematico (RT). Przykładowa integracja ma formę kodu źródłowego i jest częścią zestawu SDK modułu Retail.
+Funkcjonalność rozwiązania Commerce dla Włoch obejmuje przykładową integrację punktu sprzedaży (POS) z drukarką fiskalną. Ten przykład rozszerza [funkcjonalność integracji fiskalnej](fiscal-integration-for-retail-channel.md), dzięki czemu działa ona z drukarkami [Epson FP-90III Series](https://www.epson.it/products/sd/pos-printer/epson-fp-90iii-series) firmy Epson i umożliwia komunikację z drukarką fiskalną w trybie serwera sieci web za pośrednictwem usługi siecie web EpsonFPMate używającej interfejsu API Fiscal ePOS-Print. Przykład obsługuje tylko tryb Registratore Telematico (RT). Przykładowa integracja ma formę kodu źródłowego i jest częścią zestawu SDK modułu Commerce.
 
-Firma Microsoft nie udostępnia żadnego sprzętu, oprogramowania ani dokumentacji firmy Epson. Aby dowiedzieć się, jak uzyskać drukarkę fiskalną i jak ją obsługiwać, skontaktuj się z firmą [Epson Italia S.p.A](https://www.epson.it).
+Firma Microsoft nie udostępnia żadnego sprzętu, oprogramowania ani dokumentacji firmy Epson. Aby dowiedzieć się, jak uzyskać drukarkę fiskalną i jak ją obsługiwać, skontaktuj się z firmą [Epson Italia S.p.A](https://www.epson.it)
 
 ## <a name="scenarios"></a>Scenariusze
 
@@ -99,12 +100,10 @@ Przykładowa integracji drukarki fiskalnej implementuje następujące reguły, k
 
 ## <a name="set-up-fiscal-integration-for-italy"></a>Konfigurowanie integracji fiskalnej dla Włoch
 
-Przykład integracji drukarki fiskalnej dla Włoch jest oparty na [funkcjonalności integracji fiskalnej](fiscal-integration-for-retail-channel.md) i stanowi część zestawu Retail SDK. Przykład znajduje się w folderze **src\\FiscalIntegration\\EpsonFP90IIISample** repozytorium [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) (na przykład [przykład w folderze release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/EpsonFP90IIISample)). Przykład [składa się](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) z dostawcy dokumentów fiskalnych, który stanowi rozszerzenie kolekcji Commerce Runtime (CRT), oraz łącznika fiskalnego, który stanowi rozszerzenie stacji sprzętowej rozwiązania Commerce. Aby uzyskać więcej informacji dotyczących sposobu używania zestawu Retail SDK, zobacz [Architektura zestawu Retail SDK](../dev-itpro/retail-sdk/retail-sdk-overview.md) oraz [Konfigurowanie potoku kompilacji dla zestawu SDK do niezależnego pakowania](../dev-itpro/build-pipeline.md).
+Przykład integracji drukarki fiskalnej dla Włoch jest oparty na [funkcjonalności integracji fiskalnej](fiscal-integration-for-retail-channel.md) i stanowi część zestawu SDK do Commerce. Próbka znajduje się w folderze **src\\FiscalIntegration\\EpsonFP90IIISample** w repozytorium [Rozwiązania Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/). [Próbka](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) składa się z dostawcy dokumentów fiskalnych, który stanowi rozszerzenie kolekcji Commerce Runtime (CRT), oraz łącznika fiskalnego, który stanowi rozszerzenie stacji sprzętowej rozwiązania Commerce. Aby uzyskać więcej informacji dotyczących sposobu używania zestawu SDK do Commerce, zobacz [Pobieranie próbek i pakietów referencyjnych zestawu SDK do Retail z GitHub i NuGet](../dev-itpro/retail-sdk/sdk-github.md) i [Konfigurowanie potoku kompilacji dla zestawu SDK do niezależnego pakowania](../dev-itpro/build-pipeline.md).
 
-> [!WARNING]
-> Z powodu ograniczeń [nowego modelu niezależnego pakowania i rozszerzeń](../dev-itpro/build-pipeline.md), nie można go obecnie używać na potrzeby tego przykładu integracji fiskalnej. Musisz użyć poprzedniej wersji zestawu Retail SDK na maszynie wirtualnej dewelopera w usłudze Microsoft Dynamics Lifecycle Services (LCS). Aby uzyskać więcej informacji, zobacz [Wskazówki dotyczące wdrażania przykładu integracji drukarki fiskalnej dla Włoch (starsza wersja)](emea-ita-fpi-sample-sdk.md).
->
-> Wprowadzenie obsługi nowego modelu niezależnego pakowania i rozszerzenia dla przykładów integracji fiskalnej jest planowane w przyszłych wersjach.
+> [!NOTE]
+> Przykład integracji drukarki fiskalnej dla Włoch jest dostępny w zestawie SDK do Commerce w wersji 10.0.29. W wersji Commerce 10.0.28 lub wcześniejszej musisz użyć poprzedniej wersji zestawu SDK do Retail na maszynie wirtualnej dewelopera w usłudze Microsoft Dynamics Lifecycle Services (LCS). Aby uzyskać więcej informacji, zobacz [Wskazówki dotyczące wdrażania przykładu integracji drukarki fiskalnej dla Włoch (starsza wersja)](emea-ita-fpi-sample-sdk.md).
 
 Wykonaj kroki konfiguracji integracji fiskalnej w sposób opisany w [Konfiguracja integracji fiskalnej dla kanałów Commerce](setting-up-fiscal-integration-for-retail-channel.md).
 
@@ -123,18 +122,16 @@ Aby włączyć proces rejestracji, wykonaj następujące kroki w celu skonfiguro
 1. Pobierz pliki konfiguracji dla dostawcy dokumentów fiskalnych i łącznika fiskalnego:
 
     1. Otwórz repozytorium [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/).
-    1. Wybierz poprawną wersję odgałęzienia wydania zgodnie ze swoją wersją zestawu SDK / aplikacji (na przykład **[release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33)**).
+    1. Wybierz poprawną wersję odgałęzienia wydania zgodnie ze swoją wersją zestawu SDK / aplikacji.
     1. Otwórz folder **src \> FiscalIntegration \> EpsonFP90IIISample**.
-    1. Pobierz plik konfiguracji dostawcy dokumentów fiskalnych z lokalizacji **CommerceRuntime \> DocumentProvider.EpsonFP90IIISample \> Configuration \> DocumentProviderEpsonFP90IIISample.xml** (na przykład [plik w folderze release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/EpsonFP90IIISample/CommerceRuntime/DocumentProvider.EpsonFP90IIISample/Configuration/DocumentProviderEpsonFP90IIISample.xml)).
-    1. Pobierz plik konfiguracji łącznika fiskalnego z lokalizacji **HardwareStation \> EpsonFP90IIIFiscalDeviceSample \> Configuration \> ConnectorEpsonFP90IIISample.xml** (na przykład [plik w folderze release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/EpsonFP90IIISample/HardwareStation/EpsonFP90IIIFiscalDeviceSample/Configuration/ConnectorEpsonFP90IIISample.xml).
+    1. Pobierz plik konfiguracji dostawcy dokumentów fiskalnych z lokalizacji **CommerceRuntime \> DocumentProvider.EpsonFP90IIISample \> Configuration \> DocumentProviderEpsonFP90IIISample.xml**.
+    1. Pobierz plik konfiguracji łącznika fiskalnego z lokalizacji **HardwareStation \> EpsonFP90IIIFiscalDeviceSample \> Configuration \> ConnectorEpsonFP90IIISample.xml**.
 
-    > [!WARNING]
-    > Z powodu ograniczeń [nowego modelu niezależnego pakowania i rozszerzeń](../dev-itpro/build-pipeline.md), nie można go obecnie używać na potrzeby tego przykładu integracji fiskalnej. Musisz użyć poprzedniej wersji zestawu Retail SDK na maszynie wirtualnej dewelopera w usłudze LCS. Pliki konfiguracji dla tego przykładu integracji fiskalnej znajdują się w wymienionych poniżej folderach zestawu Retail SDK na maszynie wirtualnej dewelopera w usłudze LCS:
+    > [!NOTE]
+    > Dla wersji Commerce 10.0.28 lub wcześniejszej musisz użyć poprzedniej wersji zestawu SDK do Retail na maszynie wirtualnej dewelopera w usłudze LCS. Pliki konfiguracji dla tego przykładu integracji fiskalnej znajdują się w wymienionych poniżej folderach zestawu Retail SDK na maszynie wirtualnej dewelopera w usłudze LCS:
     >
     > - **Plik konfiguracji dostawcy dokumentów fiskalnych:** RetailSdk\\SampleExtensions\\CommerceRuntime\\Extension.DocumentProvider.EpsonFP90IIISample\\Configuration\\DocumentProviderEpsonFP90IIISample.xml
     > - **Plik konfiguracji łącznika fiskalnego:** RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EpsonFP90IIIFiscalDeviceSample\\Configuration\\ConnectorEpsonFP90IIISample.xml
-    > 
-    > Wprowadzenie obsługi nowego modelu niezależnego pakowania i rozszerzenia dla przykładów integracji fiskalnej jest planowane w przyszłych wersjach.
 
 1. Kliknij kolejno opcje **Retail i Commerce \> Ustawienia centrali \> Parametry \> Wspólne parametry handlu**. Na karcie **Ogólne** ustaw dla opcji **Włącz integrację fiskalną** wartość **Tak**.
 1. Wybierz kolejno pozycje **Handel detaliczny i inny \> Ustawienia kanału \> Integracja fiskalna \> Dostawcy dokumentów fiskalnych** i załaduj pobrany wcześniej plik konfiguracji dostawcy dokumentów fiskalnych.
@@ -256,16 +253,15 @@ Wymienione poniżej ustawienia wchodzą w skład konfiguracji łącznika fiskaln
 
 ### <a name="configure-channel-components"></a>Konfiguracja składników kanału.
 
-> [!WARNING]
-> Z powodu ograniczeń [nowego modelu niezależnego pakowania i rozszerzeń](../dev-itpro/build-pipeline.md), nie można go obecnie używać na potrzeby tego przykładu integracji fiskalnej. Musisz użyć poprzedniej wersji zestawu Retail SDK na maszynie wirtualnej dewelopera w usłudze LCS. Aby uzyskać więcej informacji, zobacz [Wskazówki dotyczące wdrażania przykładu integracji drukarki fiskalnej dla Włoch (starsza wersja)](emea-ita-fpi-sample-sdk.md).
->
-> Wprowadzenie obsługi nowego modelu niezależnego pakowania i rozszerzenia dla przykładów integracji fiskalnej jest planowane w przyszłych wersjach.
+> [!NOTE]
+> - Przykład integracji drukarki fiskalnej dla Włoch jest dostępny w zestawie SDK do Commerce w wersji 10.0.29. W wersji Commerce 10.0.28 lub wcześniejszej musisz użyć poprzedniej wersji zestawu SDK do Retail na maszynie wirtualnej dewelopera w usłudze LCS. Aby uzyskać więcej informacji, zobacz [Wskazówki dotyczące wdrażania przykładu integracji drukarki fiskalnej dla Włoch (starsza wersja)](emea-ita-fpi-sample-sdk.md).
+> - Przykłady Commerce wdrożone w środowisku nie są automatycznie aktualizowane po zastosowaniu aktualizacji usług lub jakości do składników usług Commerce. Wymagane próbki należy zaktualizować ręcznie.
 
 #### <a name="set-up-the-development-environment"></a>Konfigurowanie środowiska projektowego
 
 Aby skonfigurować środowisko projektowe w celu testowania i rozszerzania przykładu, wykonaj poniższe kroki.
 
-1. Sklonuj lub pobierz repozytorium [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions). Wybierz poprawną wersję odgałęzienia wydania zgodnie ze swoją wersją zestawu SDK / aplikacji. Aby uzyskać więcej informacji, zobacz [Pobieranie przykładów i pakietów referencyjnych zestawu Retail SDK z witryn GitHub i NuGet](../dev-itpro/retail-sdk/sdk-github.md).
+1. Sklonuj lub pobierz repozytorium [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions). Wybierz poprawną wersję odgałęzienia wydania zgodnie ze swoją wersją zestawu SDK / aplikacji. Aby uzyskać więcej informacji, zobacz [Pobieranie przykładów i pakietów referencyjnych zestawu SDK do Commerce z witryn GitHub i NuGet](../dev-itpro/retail-sdk/sdk-github.md).
 1. Otwórz rozwiązanie integracji drukarki fiskalnej w lokalizacji **Dynamics365Commerce.Solutions\\FiscalIntegration\\EpsonFP90IIISample\\EpsonFP90IIISample.sln** i skompiluj je.
 1. Zainstaluj rozszerzenia kolekcji CRT:
 
@@ -303,10 +299,10 @@ Wykonaj kroki opisane w artykule [Konfigurowanie potoku kompilacji dla przykład
 
 ## <a name="design-of-extensions"></a>Projekt rozszerzenia
 
-Przykład integracji drukarki fiskalnej dla Włoch jest oparty na [funkcjonalności integracji fiskalnej](fiscal-integration-for-retail-channel.md) i stanowi część zestawu Retail SDK. Przykład znajduje się w folderze **src\\FiscalIntegration\\EpsonFP90IIISample** repozytorium [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) (na przykład [przykład w folderze release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/EpsonFP90IIISample)). Przykład [składa się](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) z dostawcy dokumentów fiskalnych, który stanowi rozszerzenie kolekcji CRT, oraz łącznika fiskalnego, który stanowi rozszerzenie stacji sprzętowej rozwiązania Commerce. Aby uzyskać więcej informacji dotyczących sposobu używania zestawu Retail SDK, zobacz [Architektura zestawu Retail SDK](../dev-itpro/retail-sdk/retail-sdk-overview.md) oraz [Konfigurowanie potoku kompilacji dla zestawu SDK do niezależnego pakowania](../dev-itpro/build-pipeline.md).
+Przykład integracji drukarki fiskalnej dla Włoch jest oparty na [funkcjonalności integracji fiskalnej](fiscal-integration-for-retail-channel.md) i stanowi część zestawu SDK do Commerce. Próbka znajduje się w folderze **src\\FiscalIntegration\\EpsonFP90IIISample** w repozytorium [Rozwiązania Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/). [Przykład](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) składa się z dostawcy dokumentów fiskalnych, który stanowi rozszerzenie kolekcji CRT, oraz łącznika fiskalnego, który stanowi rozszerzenie stacji sprzętowej rozwiązania Commerce. Aby uzyskać więcej informacji dotyczących sposobu używania zestawu SDK do Commerce, zobacz [Pobieranie próbek i pakietów referencyjnych zestawu SDK do Retail z GitHub i NuGet](../dev-itpro/retail-sdk/sdk-github.md) i [Konfigurowanie potoku kompilacji dla zestawu SDK do niezależnego pakowania](../dev-itpro/build-pipeline.md).
 
-> [!WARNING]
-> Z powodu ograniczeń [nowego modelu niezależnego pakowania i rozszerzeń](../dev-itpro/build-pipeline.md), nie można go obecnie używać na potrzeby tego przykładu integracji fiskalnej. Musisz użyć poprzedniej wersji zestawu Retail SDK na maszynie wirtualnej dewelopera w usłudze LCS. Aby uzyskać więcej informacji, zobacz [Wskazówki dotyczące wdrażania przykładu integracji drukarki fiskalnej dla Włoch (starsza wersja)](emea-ita-fpi-sample-sdk.md). Wprowadzenie obsługi nowego modelu niezależnego pakowania i rozszerzenia dla przykładów integracji fiskalnej jest planowane w przyszłych wersjach.
+> [!NOTE]
+> Przykład integracji drukarki fiskalnej dla Włoch jest dostępny w zestawie SDK do Commerce w wersji 10.0.29. W wersji Commerce 10.0.28 lub wcześniejszej musisz użyć poprzedniej wersji zestawu SDK do Retail na maszynie wirtualnej dewelopera w usłudze LCS. Aby uzyskać więcej informacji, zobacz [Wskazówki dotyczące wdrażania przykładu integracji drukarki fiskalnej dla Włoch (starsza wersja)](emea-ita-fpi-sample-sdk.md).
 
 ### <a name="commerce-runtime-extension-design"></a>Projekt rozszerzenia środowiska uruchomieniowego Commerce
 

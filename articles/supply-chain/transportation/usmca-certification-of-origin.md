@@ -2,7 +2,7 @@
 title: Certyfikacja pochodzenia USMCA
 description: Ta funkcja umożliwia wydrukowanie dokumentów świadectwa pochodzenia wymaganych przez umowę Stany Zjednoczone-Meksyk-Kanada (USMCA).
 author: Weijiesa
-ms.date: 10/23/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-10-23
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 2a87e1aa27085f1b4821d27cece782dffbcd2096
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: edf235351fc7cbffc6bf80c7e05c53159c1e8a7f
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851370"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336554"
 ---
 # <a name="usmca-certification-of-origin"></a>Certyfikacja pochodzenia USMCA
 
@@ -33,12 +33,9 @@ Dokument jest dostępny tylko wtedy, gdy krajem w podstawowym adresie osoby praw
 
 W zależności od opcji drukowania dokumentu dokument może być wstępnie wypełniony danymi z systemu. Istnieje możliwość zmiany lub dodania danych do drukowanego dokumentu przez wyeksportowanie wydrukowanego dokumentu do formatu edytowalnego, np. Microsoft Word. Po zakończeniu eksportu można zastosować wszelkie wymagane zmiany przed dokonaniem danej deklaracji.
 
-## <a name="turn-on-the-usmca-feature"></a>Włączanie funkcji USMCA
+## <a name="turn-the-usmca-feature-on-or-off"></a>Włączanie lub wyłączanie funkcji USMCA
 
-Aby móc używać funkcji USMCA, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
-
-- **Moduł**: *Zarządzanie transportem*
-- **Nazwa funkcji:** *Certyfikat USMCA dokumentu pochodzenia*
+Aby używać tej funkcji, należy ją włączyć dla systemu. Od wersji 10.0.29 Supply Chain Management funkcja jest domyślnie włączona. Administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Dokument certyfikatu pochodzenia USMCA* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="document-content"></a>Zawartość dokumentu
 

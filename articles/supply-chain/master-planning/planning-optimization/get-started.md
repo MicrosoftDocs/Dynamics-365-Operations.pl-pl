@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: e853c8a482b8fd0b92c9861fe022c056915ab405
-ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
+ms.openlocfilehash: 629a84135434ad79f8397649ee9a4a62e49751d9
+ms.sourcegitcommit: 14a27b776befbc6793390f97e8fb0279c0ea18c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "9112203"
+ms.lasthandoff: 08/15/2022
+ms.locfileid: "9295938"
 ---
 # <a name="get-started-with-planning-optimization"></a>Rozpoczęcie optymalizacji planowania
 
@@ -29,7 +29,7 @@ ms.locfileid: "9112203"
 
 Zgodnie ze [wcześniejszą informacją](../../get-started/removed-deprecated-features-scm-updates.md#use-of-built-in-supply-chain-management-master-planning-engine-for-distribution-scenarios), optymalizacja planowania zastąpi istniejący wbudowany aparat planowania głównego.
 
-Jeśli obecnie jest używany wbudowany aparat planowania głównego, należy teraz rozpocząć planowanie migracji do optymalizacji planowania. Ważne jest natychmiastowe rozpoczęcie procesu migracji, ponieważ wymuszenie wycofania może mieć wpływ na operacje. Aby uniknąć wymuszania wycofania w ostatniej chwili, zdecydowanie zachęcamy do ukończenia migracji przed 1 grudnia 2020. 
+Jeśli obecnie jest używany wbudowany aparat planowania głównego, należy teraz rozpocząć planowanie migracji do optymalizacji planowania. Ważne jest, aby rozpocząć od razu, ponieważ operacje mogą w inny sposób wpłynąć na operacje w przypadku wymuszenia wycofania (chociaż wymuszanie nie jest obecnie zaplanowane). Stanowczo zachęcamy do ukończenia migracji, gdy tylko optymalizacja planowania będzie zawierała wymagane funkcje, dzięki czemu można zacząć korzystać z wielu ulepszeń wydajności i innych nowych możliwości nowej usługi.
 
 Funkcja optymalizacji planowania nie obsługuje obecnie wszystkich funkcji dostępnych w aparacie planowania wbudowanym w rozwiązanie Supply Chain Management. Dlatego ważne jest, aby ocenić, czy aktualnie dostępna w optymalizacji planowania funkcja ma spełniać wymagania użytkownika. Funkcja optymalizacji planowania nie jest obecnie włączona domyślnie w usługach Dynamics Lifecycle Services (LCS), więc użytkownik ma możliwość wykonania oceny przed jej włączeniem.
 

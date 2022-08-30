@@ -2,7 +2,7 @@
 title: Elastyczne zasady rezerwacji wymiarów na poziomie magazynu
 description: W tym artykule opisano zasady rezerwacji zapasów, które umożliwiają firmom sprzedaż produktów śledzonych partiami i uruchamianie ich zagadnień logistycznych w miarę operacji obsługujących WMS, rezerwując określone partie dla zamówień sprzedaży odbiorców, nawet jeśli hierarchia rezerwacji jest skojarzone z produktami nie zezwalają na rezerwację konkretnych partii.
 author: perlynne
-ms.date: 07/31/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: d515fb46dcc2d135412d140b98f0578cae89c409
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 64855460ddf015f936fe695fc68938067f31b0cc
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9065907"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335714"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Elastyczne zasady rezerwacji wymiarów na poziomie magazynu
 
@@ -196,12 +196,12 @@ W tym scenariuszu firma korzysta z zarządzania magazynem i przetwarzania pracy 
 - Numer identyfikacyjny może zostać zarejestrowana i zarezerwowana, gdy zamówienie jest przyjmowane przez procesor sprzedaży i nie może być odebrane przez inne żądania. To zachowanie pomaga zagwarantować, że zaplanowany numer identyfikacyjny jest wysyłany do odbiorcy.
 - Jeśli numer identyfikacyjny nie jest już przypisany do wiersza zamówienia sprzedaży, to po zakończeniu rejestracji i rezerwacji zamówienia sprzedaży personel magazynu może wybrać numer identyfikacyjny.
 
-### <a name="turn-on-flexible-license-plate-reservation"></a>Włączanie Elastycznej rezerwacji numeru identyfikacyjnego
+### <a name="turn-flexible-license-plate-reservation-on-or-off"></a>Włączanie lub wyłączanie Elastycznej rezerwacji numeru identyfikacyjnego
 
-Zanim będzie można skorzystać z elastycznej rezerwacji numerów rejestracyjnych, w systemie muszą być włączone dwie funkcje. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć je, jeśli istnieje taka potrzeba. Należy włączyć te funkcje w następującej kolejności:
+Zanim będzie można skorzystać z elastycznej rezerwacji numerów rejestracyjnych, dla systemu muszą być włączone dwie funkcje. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć je, jeśli istnieje taka potrzeba. Należy włączyć te funkcje w następującej kolejności:
 
-1. **Nazwa funkcji:** *Elastyczna rezerwacja wymiarów na poziomie magazynu*
-1. **Nazwa funkcji:** *Elastyczna rezerwacja numerów identyfikacyjnych*
+1. *Elastyczna rezerwacja wymiaru na poziomie magazynu*<br>(Od wersji 10.0.29 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć).
+1. *Zamówienie elastyczne — rezerwacja zatwierdzonego numeru identyfikacyjnego*<br>(Od wersji 10.0.29 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć).
 
 ### <a name="reserve-a-specific-license-plate-on-the-sales-order"></a>Rezerwacja określonego numeru identyfikacyjnego w zamówieniu sprzedaży
 

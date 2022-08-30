@@ -2,7 +2,7 @@
 title: Poziom obliczania kosztu
 description: W tym artykule opisano poziom BOM o nazwie poziom obliczania kosztu. Ten poziom BOM wyklucza produkcję i zamówienia partii z obliczeń.
 author: JennySong-SH
-ms.date: 04/23/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,18 +12,24 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2020-04-23
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 647ef4b13b864cfdbb7905fe7a0d340e85f6c1e6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e63a868696e36c1d4f5d19ea87bdf4d682c39f8c
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850881"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334964"
 ---
 # <a name="cost-calculation-level"></a>Poziom obliczania kosztu
 
 [!include [banner](../includes/banner.md)]
 
 Poziom BOM o nazwie **Poziom obliczania kosztu** wyklucza zlecenia produkcyjne i zamówienia partii z jego obliczeń. Ten poziom jest używany w systemie podczas uruchamiania obliczeń kosztów w wersjach ceny. W procesach takich jak ponowne obliczanie i zamykanie zapasów system używa zamiast tego **Poziom wyceny** poziom BOM.
+
+## <a name="turn-the-cost-calculation-level-feature-on-or-off"></a>Włącz lub wyłącz funkcję Poziomu obliczania kosztu
+
+Aby używać tej funkcji, należy ją włączyć dla systemu. Od wersji 10.0.29 Supply Chain Management funkcja jest domyślnie włączona. Administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Poziom obliczania kosztu* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+## <a name="example-scenario"></a>Przykładowy scenariusz
 
 Poniższy prosty scenariusz pokazuje różnice między poziomem BOM **Poziom obliczania kosztu** a poziomem BOM **Poziom wyceny**.
 

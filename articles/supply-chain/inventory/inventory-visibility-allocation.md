@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-05-13
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: ccc3a8c4b3d0649397b1d1f9139f7feebf39b02f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f79497a24a5b4dd501bb0d13d9eaca7e98672533
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8852513"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306123"
 ---
 # <a name="inventory-visibility-inventory-allocation"></a>Widoczność zapasów Przydział zapasów
 
@@ -63,12 +63,11 @@ Funkcja przydziału zapasów składa się z następujących elementów:
 - Predefiniowane, związane z przydziałem źródło danych, miary fizyczne i miary obliczone.
 - Dostosowywane grupy alokacji, które mogą mieć maksymalnie osiem poziomów.
 - Zestaw interfejsów programowania aplikacji alokacyjnych (API):
-
-    - allocate
-    - reallocate
-    - unallocate
-    - consume
-    - query
+  - allocate
+  - reallocate
+  - unallocate
+  - consume
+  - query
 
 Proces konfigurowania funkcji alokacji składa się z dwóch kroków:
 
@@ -84,23 +83,26 @@ Po włączeniu funkcji alokacji i wywołaniu interfejsu API aktualizacji konfigu
 Oto początkowe działania fizyczne:
 
 - `@iv`
-
-    - `@allocated`
-    - `@cumulative_allocated`
-    - `@consumed`
-    - `@cumulative_consumed`
+  - `@allocated`
+  - `@cumulative_allocated`
+  - `@consumed`
+  - `@cumulative_consumed`
 
 Oto wstępnie wyliczone działania:
 
 - `@iv`
-
-    - `@iv.@available_to_allocate` = `??` – `??` – `@iv.@allocated`
+  - `@iv.@available_to_allocate` = `??` – `??` – `@iv.@allocated`
 
 ### <a name="add-other-physical-measures-to-the-available-to-allocate-calculated-measure"></a>Dodaj inne miary fizyczne do miary obliczanej jako dostępna do przydzielenia
 
 Aby korzystać z alokacji, musisz ustawić miarę dostępną do alokacji (`@iv.@available_to_allocate`). Na przykład masz źródło danych `fno` i miarę `onordered`, źródło danych `pos` i miarę `inbound` i chcesz dokonać alokacji na rękę dla sumy `fno.onordered` i `pos.inbound`. W tym przypadku `@iv.@available_to_allocate` powinno zawierać w formule `pos.inbound` i `fno.onordered`. Oto przykład:
 
 `@iv.@available_to_allocate` = `fno.onordered` + `pos.inbound` – `@iv.@allocated`
+
+> [!NOTE]
+> Źródło danych `@iv` jest wstępnie zdefiniowanym źródłem danych, a miary fizyczne zdefiniowane w `@iv` za pomocą prefiksu `@` są miarami wstępnie zdefiniowanymi. Te miary są wstępnie zdefiniowaną konfiguracją funkcji alokacji, więc nie należy ich zmieniać ani usuwać albo prawdopodobnie wystąpią nieoczekiwane błędy podczas korzystania z funkcji alokacji.
+>
+> Do wstępnie zdefiniowanej miary obliczanej można dodawać nowe miary fizyczne `@iv.@available_to_allocate`, ale nie można zmieniać ich nazwy.
 
 ### <a name="change-the-allocation-group-name"></a>Zmień nazwę grupy alokacji
 
@@ -136,7 +138,7 @@ Wywołaj API `Allocate`, aby przydzielić produkt, który ma określone wymiary.
     "id": "string",
     "productId": "string",
     "dimensionDataSource": "string",
-    "targetGroups": {
+    "groups": {
         "groupA": "string",
         "groupB": "string",
         "groupC": "string"
@@ -157,7 +159,7 @@ Na przykład chcesz przydzielić 10 sztuk produktu *Rower*, miejsce *1*, lokaliz
 {
     "id": "???",
     "productId": "Bike",
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "US"
@@ -192,7 +194,7 @@ Użyj API `Reallocate`, aby przenieść część alokowanej ilości do innej kom
         "groupB": "string",
         "groupC": "string"
     },
-    "targetGroups": {
+    "groups": {
         "groupD": "string",
         "groupE": "string",
         "groupF": "string"
@@ -218,7 +220,7 @@ Na przykład możesz przenieść dwa rowery o wymiarach \[site=1, location=11, c
         "customerGroup": "VIP",
         "region": "US"
     },
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "EU"
@@ -242,7 +244,7 @@ Użyj API `Consume`, aby zamieścić informację o ilości konsumpcji w stosunku
     "id": "string",
     "productId": "string",
     "dimensionDataSource": "string",
-    "targetGroups": {
+    "groups": {
         "groupA": "string",
         "groupB": "string",
         "groupC": "string"
@@ -280,7 +282,7 @@ Teraz sprzedawane są trzy rowery i są one pobierane z puli przydziałów. Aby 
         "locationId": "11",
         "colorId": "red"
     },
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "US"
@@ -326,7 +328,7 @@ Jeśli chcesz skonsumować ilość 3 i bezpośrednio zarezerwować tę ilość, 
         "locationId": "11",
         "colorId": "red"
     },
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "US"

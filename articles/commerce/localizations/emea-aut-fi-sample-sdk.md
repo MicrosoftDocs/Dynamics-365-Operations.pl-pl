@@ -2,25 +2,29 @@
 title: Wskazówki dotyczące wdrażania przykładu integracji usługi rejestracji fiskalnej dla Austrii (starsza wersja)
 description: Ten artykuł zawiera wskazówki dotyczące wdrażania przykładu integracji fiskalnej dla Austrii z poziomu zestawu Software Development Kit (SDK) rozwiązania Microsoft Dynamics 365 Commerce Retail.
 author: EvgenyPopovMBS
-ms.date: 03/04/2022
+ms.date: 08/17/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-03-01
-ms.openlocfilehash: 203904f60888464a473cb2997652db497fba6f57
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: f5f12dbd638c8228dbc63c1fae8f3dfffc7bfe9c
+ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9276110"
+ms.lasthandoff: 08/18/2022
+ms.locfileid: "9313782"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-austria-legacy"></a>Wskazówki dotyczące wdrażania przykładu integracji usługi rejestracji fiskalnej dla Austrii (starsza wersja)
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
-Ten artykuł zawiera wskazówki dotyczące wdrażania przykładu integracji usługi rejestracji fiskalnej dla Austrii z poziomu zestawu Software Development Kit (SDK) rozwiązania Microsoft Dynamics 365 Commerce Retail na maszynie wirtualnej dewelopera w usłudze Microsoft Dynamics Lifecycle Services (LCS). Aby uzyskać więcej informacji dotyczących tego przykładu integracji fiskalnej, zobacz [Przykład integracji usługi rejestracji fiskalnej dla Austrii](emea-aut-fi-sample.md). 
+> [!IMPORTANT]
+> Musisz postępować zgodnie z wytycznymi z tego artykułu, tylko jeśli używasz wersji Microsoft Dynamics 365 Commerce 10.0.28 lub wcześniejszej. Od wersji Commerce 10.0.29 przykładowa integracja usługi rejestracji obrachunkowej dla Austrii jest dostępna w zestawie SDK do Commerce w wersji 10.0.29. Aby uzyskać więcej informacji, zajrzyj do [Konfiguracja składników kanału](./emea-aut-fi-sample.md#configure-channel-components).
+
+Ten artykuł zawiera wskazówki dotyczące wdrażania przykładu integracji usługi rejestracji fiskalnej dla Austrii z poziomu zestawu Software Development Kit (SDK) rozwiązania Dynamics 365 Commerce Retail na maszynie wirtualnej dewelopera w usłudze Microsoft Dynamics Lifecycle Services (LCS). Aby uzyskać więcej informacji dotyczących tego przykładu integracji fiskalnej, zobacz [Przykład integracji usługi rejestracji fiskalnej dla Austrii](emea-aut-fi-sample.md). 
 
 Przykład integracji fiskalnej dla Austrii jest częścią zestawu Retail SDK. Aby uzyskać informacje dotyczące instalowania i używania zestawu SDK, zobacz [Omówienie zestawu Retail SDK (Software Development Kit)](../dev-itpro/retail-sdk/retail-sdk-overview.md). Przykład integracji fiskalnej składa się z rozszerzeń kolekcji Commerce Runtime (CRT), stacji sprzętowej i punktu sprzedaży. Aby uruchomić ten przykład, musisz zmodyfikować i skompilować projekty kolekcji CRT, stacji sprzętowej i punktu sprzedaży. Zalecamy, aby w celu wprowadzenia zmian opisanych w tym artykule używać niezmodyfikowanego zestawu Retail SDK. Zalecamy również korzystanie z systemu kontroli źródła, takiego jak usługa Azure DevOps, w sytuacji, gdy nie zmieniono jeszcze żadnego pliku.
 

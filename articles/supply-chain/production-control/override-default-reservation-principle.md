@@ -2,7 +2,7 @@
 title: Zastępowanie domyślnej zasady rezerwacji materiałów w produkcji
 description: W tym artykule opisano sposób ustawienia domyślnej reguły rezerwacji dla każdej grupy modeli towaru, dzięki czemu można automatycznie stosować różne reguły rezerwacji dla każdego towaru, który jest częścią formuły listy składowej (BOM) produkcji lub zamówienia partii.
 author: johanhoffmann
-ms.date: 12/10/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-10
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 381b7fa5046df8f2734e4b242058eb9a673388cf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 87f10efd7eebdc034af3f7c9081d2674a6190b38
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907240"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334604"
 ---
 # <a name="override-the-default-reservation-principle-for-materials-in-production"></a>Zastępowanie domyślnej zasady rezerwacji materiałów w produkcji
 
@@ -32,7 +32,7 @@ Jeśli na przykład dla tych produktów są tworzone surowce lub składniki wyma
 
 ## <a name="turn-the-override-default-production-reservation-feature-on-or-off"></a>Włącz lub wyłącz funkcję Zastąp domyślną rezerwację produkcji
 
-Od wersji 10.0.25 Supply Chain Management version ta funkcja jest domyślnie włączona. Administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Zastąp domyślną rezerwację produkcji* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Aby używać tej funkcji, należy ją włączyć dla systemu. Od wersji 10.0.25 Supply Chain Management funkcja jest domyślnie włączona. Od wersji 10.0.29 Supply Chain Management funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.29, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Zastąp domyślną rezerwację produkcji* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="assign-a-production-reservation-policy-to-an-item-model-group"></a>Przypisywanie zasad rezerwacji produkcji do grupy modeli pozycji
 

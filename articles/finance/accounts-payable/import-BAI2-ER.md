@@ -1,7 +1,7 @@
 ---
 title: Konfigurowanie zaawansowanego importowania uzgodnienia konta bankowego za pomocą raportowania elektronicznego
 description: W tym artykule omówiono sposób korzystania z raportowania elektronicznego w celu skonfigurowania zaawansowanego procesu importu uzgodnień bankowych.
-author: panolte
+author: angelad116
 ms.date: 03/30/2022
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: 2ac8811a5c10490d90f782472d3c198474c7edc0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 46a50f4b00125656fc185ad569b94eeef00dc3c3
+ms.sourcegitcommit: 649f1db26da8f20602f11180fc565b7c59eaf545
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889128"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337576"
 ---
 # <a name="set-up-advanced-bank-reconciliation-import-by-using-electronic-reporting"></a>Konfigurowanie zaawansowanego importowania uzgodnienia konta bankowego za pomocą raportowania elektronicznego
 

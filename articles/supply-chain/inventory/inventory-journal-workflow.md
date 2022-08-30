@@ -2,7 +2,7 @@
 title: Przepływy pracy zatwierdzania arkuszy magazynowych
 description: W tym artykule opisano sposób konfigurowania i używania przepływów pracy zatwierdzania arkusza zapasów dla różnych typów transakcji dotyczących zapasów fizycznych. Przepływy pracy arkusza magazynowego zapewniają, że tylko zatwierdzone arkusze magazynowe mogą być księgowane w transakcjach.
 author: yufeihuang
-ms.date: 07/21/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: ebb12562a9f06f2efc3b5a373d7ad0f98bc3505e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3a97eaeae24850282c39196a61e3baa29307aa93
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873993"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334664"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Przepływy pracy zatwierdzania arkuszy magazynowych
 
@@ -29,12 +29,9 @@ W tym artykule opisano sposób konfigurowania i używania przepływów pracy zat
 > [!NOTE]
 > Przepływy pracy zatwierdzania arkuszy magazynowych dotyczą tylko transakcji zarejestrowanych przy użyciu modułu Zarządzanie zapasami. Nie działają z arkuszami magazynowymi wyzwalanymi w module zarządzania magazynem.
 
-## <a name="turn-on-the-inventory-journal-approval-workflows-feature"></a>Włączanie funkcji przepływów pracy zatwierdzania arkuszy magazynowych
+## <a name="turn-the-inventory-journal-approval-workflows-feature-on-or-off"></a>Włączanie lub wyłączanie funkcji przepływów pracy zatwierdzania arkuszy magazynowych
 
-Od wersji 10.0.21 Supply Chain Management version ta funkcja jest domyślnie włączona. Administratorzy mogą skorzystać ze strony [Zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją lub wyłączyć w razie potrzeby. W tym miejscu funkcja jest wyświetlana jako:
-
-- **Moduł:** *Zarządzanie zapasami i magazynem*
-- **Nazwa funkcji:** *Przepływ pracy zatwierdzania arkusza magazynowego*
+Aby używać tej funkcji, należy ją włączyć dla systemu. Od wersji 10.0.21 Supply Chain Management funkcja jest domyślnie włączona. Od wersji 10.0.29 Supply Chain Management funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.29, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Przepływ pracy zatwierdzania arkusza magazynowego* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="create-your-inventory-journal-approval-workflows"></a>Utwórz przepływy pracy zatwierdzania arkusza zapasów
 

@@ -2,7 +2,7 @@
 title: Integracja z systemami wykonywania produkcji innych firm
 description: W tym artykule wyjaśniono, jak zintegrować Microsoft Dynamics 365 Supply Chain Management z systemem realizacji produkcji (MES) innej firmy.
 author: johanhoffmann
-ms.date: 10/01/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 46f6db3dd9942131b379216e6fffe5551d6c8fc3
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 8629ef2581a114609d14999a3c1fc48b49c988e0
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068040"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336224"
 ---
 # <a name="integrate-with-third-party-manufacturing-execution-systems"></a>Integracja z systemami wykonywania produkcji innych firm
 
@@ -45,9 +45,7 @@ Zanim będziesz mógł korzystać z tej funkcji, administrator musi ją włączy
     1. Na stronie **Konfiguracja licencji** zaznacz pole wyboru **Czas i obecność**.
     1. Wyłącz tryb konserwacji, jak to opisano w sekcji [Tryb konserwacji](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md)
 1. Wybierz kolejno opcje **Administrator systemu \> Obszary robocze \> Zarządzanie funkcjami**.
-1. Włącz funkcję, która jest wymieniona w następujący sposób (zobacz też [Zarządzanie cechami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)):
-    - **Moduł:** *Kontrola produkcji*
-    - **Nazwa funkcji:** *integracja systemu w systemie realizacji produkcji*
+1. Obszar roboczy [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) umożliwia włączenie funkcji integracji systemu *Wykonania produkcji*. (Od wersji 10.0.29 Supply Chain Management version ta funkcja jest domyślnie włączona).
 
 ## <a name="processes-available-for-mes-integration"></a>Procesy dostępne dla integracji MES
 

@@ -2,7 +2,7 @@
 title: Planowanie czyszczenia danych historii sprzedaży
 description: W tym artykule opisano, w jaki sposób można poprawić wydajność systemu, planując okresowe wykonywanie zadania czyszczenia historii aktualizacji sprzedaży w regularnych odstępach czasu.
 author: myvakalo
-ms.date: 03/21/2022
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: myvakalo
 ms.search.validFrom: 2021-09-29
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 1b2c9436fbb5020065f8f6ec30eedeca342d8aa9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e9a4dd5372afa8a0452449d1cb9121107e6e1610
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900833"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335512"
 ---
 # <a name="schedule-sales-history-data-cleanup"></a>Planowanie czyszczenia danych historii sprzedaży
 
@@ -42,7 +42,7 @@ Ta funkcja usprawnia istniejące zadanie oczyszczania w następujący sposób:
 
 Po włączeniu tej funkcji zadanie wsadowe **Oczyszczania historii aktualizacji sprzedaży** (**Sprzedaż i marketing \> Zadania okresowe \> Czyszczenie \> Oczyszczanie historii aktualizacji sprzedaży**) będzie uruchamiane tak jak poprzednio, ale z lepszą wydajnością i przez maksymalnie 2 godziny. Oznacza to, że może być konieczne uruchomienie go kilka razy w celu oczyszczenia wszystkich danych w określonym horyzoncie czasowym przechowywania.
 
-Aby używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
+Aby używać tej funkcji, należy ją włączyć dla systemu. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
 
 - **Moduł:** *Sprzedaż i marketing*
 - **Nazwa funkcji:** *Ulepszenie wydajności oczyszczania historii sprzedaży*
@@ -51,10 +51,7 @@ Aby używać tej funkcji, należy ją włączyć w systemie. Administratorzy mog
 
 Funkcja *Oczyszczanie historii aktualizacji sprzedaży na podstawie wieku* umożliwia określenie maksymalnego wieku rekordów, które mają być zachowywane podczas wykonywania okresowego zadania *oczyszczania historii aktualizacji sprzedaży*. Starsze rekordy zostaną usunięte. Ta funkcja jest przydatna, gdy zadanie ma być wykonywane okresowo, ponieważ wiek jest zawsze obliczany względem daty wykonania zadania. Jeśli nie korzystasz z tej funkcji, możesz ustawić tylko określoną datę przechowywania najstarszych rekordów.
 
-Aby używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
-
-- **Moduł:** *Sprzedaż i marketing*
-- **Nazwa funkcji:** *Wyczyść historię sprzedaży i zaktualizuj ją na podstawie wieku*
+Aby używać tej funkcji, należy ją włączyć dla systemu. Od wersji 10.0.29 Supply Chain Management funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.29, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Oczyszczanie historii aktualizacji sprzedaży na podstawie wieku* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-and-schedule-the-sales-history-cleanup-periodic-task"></a>Konfigurowanie i planowanie zadania okresowego czyszczenia historii sprzedaży
 

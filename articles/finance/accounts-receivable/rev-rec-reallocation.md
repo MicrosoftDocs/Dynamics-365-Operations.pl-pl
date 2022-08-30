@@ -1,24 +1,24 @@
 ---
 title: Zmiana alokacji rozpoznawania przychodów
 description: Ten artykuł zawiera informacje dotyczące zmiany alokacji, która umożliwia organizacjom ponowne obliczanie cen przychodów w przypadku zmiany warunków umownych dotyczących sprzedaży. Temat zawiera łącza do innych tematów opisujących sposób rozpoznawania przychodu w wielu scenariuszach.
-author: kweekley
+author: bking
 ms.date: 09/09/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: kweekley
+ms.author: bking
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: a79288fd69a2e7780ff03952b05b99db2ed88e41
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6c7e2149058ebbff85cbc2ac86dac3231fbcc41d
+ms.sourcegitcommit: 1909d18a74cef85aad020a6a7473281e451f58c7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903428"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "9348162"
 ---
 # <a name="revenue-recognition-reallocation"></a>Zmiana alokacji rozpoznawania przychodów
 

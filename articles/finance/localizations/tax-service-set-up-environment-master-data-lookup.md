@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3642bb88d5b0570014513b64eef5fdab6d1ee9d3
-ms.sourcegitcommit: 5b721f6fc1ba4350b5bd0eae457f71d80246db42
+ms.openlocfilehash: 2f9d882340171173e5e503f8b5e3aa856e8544b0
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "9181133"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306212"
 ---
 # <a name="enable-master-data-lookup-for-tax-calculation-configuration"></a>Włącz odnośniki danych główne do konfiguracji obliczania podatku 
 
@@ -108,7 +108,7 @@ Dataverse używa aplikacji Azure AD, którą utworzyłeś, aby nazwać aplikacje
     - **Dostawca** — ustaw w tym polu wartość **NonAAD**.
     - **E-mail** – Wprowadź **dataintegration** lub inną wartość. (Wartość nie musi być prawidłowym kontem e-mail).
 
-3. Przydziel użytkownikowi rolę bezpieczeństwa **Aplikacja jednostki wirtualnej CDS**.
+3. Przydziel użytkownikowi rolę bezpieczeństwa **Aplikacja jednostki wirtualnej Dataverse**.
 4. Usuń wszystkie inne role, w tym **Użytkownika systemu**.
 5. Wybierz kolejno opcje **Administrowanie systemem** \> **Ustawienia** \>**Aplikacje Azure Active Directory**, aby zarejestrować Dataverse. 
 6. Dodaj rząd, a następnie w polu **Identyfikator klienta** wprowadź wartość **Identyfikatora aplikacji (klienta)**, którą wcześniej zanotowałeś.
@@ -199,17 +199,11 @@ Aby uzyskać więcej informacji, zobacz [Włączanie wirtualnych encji Microsoft
 
 ## <a name="set-up-the-connected-application-for-tax-calculation"></a><a name='set-up'></a>Skonfiguruj połączoną aplikację do obliczenia podatku
 
-1. W systemie RCS otwórz przestrzeń roboczą **Zarządzanie funkcjami** i włącz następujące funkcje:
-
-    - Obsługa elektronicznych źródeł danych raportowania Dataverse
-    - Obsługa źródeł danych usługi podatkowej Dataverse
-    - Funkcje globalizacji
-
-2. Przejdź do **Raportu elektronicznego**, a następnie w sekcji **Powiązane linki** wybierz **Podłączone aplikacje**.
+1. Przejdź do **Raportu elektronicznego**, a następnie w sekcji **Powiązane linki** wybierz **Podłączone aplikacje**.
 
     [![Połączone aplikacje.](./media/tcs-dataverse-master-data-lookup-12.png)](./media/tcs-dataverse-master-data-lookup-12.png)
 
-3. Wybierz pozycję **Nowy**, aby dodać rekord, i wprowadź następujące informacje.
+2. Wybierz pozycję **Nowy**, aby dodać rekord, i wprowadź następujące informacje.
 
     - **Nazwa** — wprowadź nazwę.
     - **Typ** – Wybierz typ **Dataverse**.
@@ -217,12 +211,18 @@ Aby uzyskać więcej informacji, zobacz [Włączanie wirtualnych encji Microsoft
     - **Dzierżawa** — wprowadź dzierżawę.
     - **URL niestandardowy** – Wprowadź swój adres URL Dataverse i dołącz do niego **/api/data/v9.1**.
 
-4. Wybierz **Sprawdź połączenie**, a następnie w wyświetlonym oknie dialogowym wybierz **Kliknij tutaj, aby połączyć się z wybraną aplikacją zdalną**.
+3. Wybierz **Sprawdź połączenie**, a następnie w oknie dialogowym wybierz **Kliknij tutaj, aby połączyć się z wybraną aplikacją zdalną**.
 
     [![Test połączenia.](./media/tcs-dataverse-master-data-lookup-13.png)](./media/tcs-dataverse-master-data-lookup-13.png)
-5. Upewnij się, że otrzymujesz komunikat „Sukces” informujący o pomyślnym nawiązaniu połączenia.
+4. Upewnij się, że otrzymujesz komunikat „Sukces” informujący o pomyślnym nawiązaniu połączenia.
 
     [![Komunikat o powodzeniu.](./media/tcs-dataverse-master-data-lookup-14.png)](./media/tcs-dataverse-master-data-lookup-14.png)
+    
+5. W systemie RCS otwórz przestrzeń roboczą **Zarządzanie funkcjami** i włącz następujące funkcje:
+
+    - Funkcje globalizacji
+    - Obsługa elektronicznych źródeł danych raportowania Dataverse
+    - Obsługa źródeł danych usługi podatkowej Dataverse
 
 ## <a name="import-and-set-up-the-dataverse-model-mapping-configuration"></a><a name='import'></a>Zaimportuj i skonfiguruj plik mapowania modelu danych Dataverse
 

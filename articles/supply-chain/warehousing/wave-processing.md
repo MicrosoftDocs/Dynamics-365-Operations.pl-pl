@@ -2,7 +2,7 @@
 title: Tworzenie i przetwarzanie grupy czynności
 description: W tym artykule opisano, jak utworzyć, przetwarzać i zwolnić grupę czynności w celu utworzeniu pobrania dla ładunku, wysyłki, zlecenia produkcyjnego lub zamówienia Kanban.
 author: Mirzaab
-ms.date: 03/08/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 60bf4ab6944bd982e022ead6431adae417ddfb43
-ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.openlocfilehash: 0466019990773ee93e063a255c15a7d64eecdf78
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9014627"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336014"
 ---
 # <a name="wave-creation-and-processing"></a>Tworzenie i przetwarzanie grupy czynności
 
@@ -191,7 +191,7 @@ Strona **Szczegóły zadania wsadowego grupy czynności** zawiera informacje o s
 
 ### <a name="turn-the-wave-batch-job-details-page-on-or-off"></a>Włącz lub wyłącz stronę szczegółów zadania wsadowego Wave
 
-Od wersji 10.0.25 rozwiązania Supply Chain Management strona **Szczegóły zadania wsadowego Wave** jest domyślnie włączona. Administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Szczegóły zadania wsadowego Wave* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Aby używać tej funkcji, należy ją włączyć dla systemu. Od wersji 10.0.25 Supply Chain Management funkcja jest domyślnie włączona. Od wersji 10.0.29 Supply Chain Management funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.29, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Szczegóły zadania wsadowego grupy czynności* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="use-the-wave-batch-job-details-page"></a>Korzystanie ze strony szczegółów zadania wsadowego grupy czynności
 

@@ -2,7 +2,7 @@
 title: Planowanie z nieskończoną zdolnością produkcyjną
 description: Ten artykuł zawiera informacje na temat planowania nieograniczonej wydajności na potrzeby optymalizacji planowania. Opisano w nim także bieżące ograniczenia funkcji.
 author: t-benebo
-ms.date: 09/21/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: RouteInventProd
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 3646a7ca1f9a3a87a2f130783dc4961a61335f1d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c6e0190899abb544b559bb5f26ba974155989c3a
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873877"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335324"
 ---
 # <a name="scheduling-with-infinite-capacity"></a>Planowanie z nieskończoną zdolnością produkcyjną
 
@@ -24,12 +24,9 @@ ms.locfileid: "8873877"
 
 Funkcja *Nieskończone planowanie pojemności na potrzeby optymalizacji planowania* wprowadza planowanie oparte na informacjach o trasie. Umożliwia planowanie zadań w oparciu o szeroki zakres konfiguracji tras. Planowanie optymalizacji planowania obejmuje często używane ustawienia marszruty, w tym sekwencję operacji marszruty lub wymagania dotyczące zasobów operacji marszruty.
 
-## <a name="turn-on-the-infinite-capacity-scheduling-feature"></a>Włącz funkcję nieskończonego planowania zdolności produkcyjnych
+## <a name="turn-the-infinite-capacity-scheduling-feature-on-or-off"></a>Włącz lub wyłącz funkcję nieskończonego planowania zdolności produkcyjnych
 
-Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
-
-- **Moduł:** *Planowanie główne*
-- **Nazwa funkcji**: *Planowanie nieskończonej zdolności produkcyjnej dla optymalizacji planowania*
+Aby używać tej funkcji, należy ją włączyć dla systemu. Od wersji 10.0.29 Supply Chain Management funkcja jest domyślnie włączona. Administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Planowanie nieskończonych zdolności produkcyjnych dla optymalizacji planowania* w obszarze roboczym [Zarządzanie funkcjami](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 Aby uzyskać więcej informacji o tej funkcji, zobacz temat [Planowanie z wyborem zasobu na podstawie funkcji](capability-based-scheduling.md).
 

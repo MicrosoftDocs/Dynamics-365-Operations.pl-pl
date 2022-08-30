@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 4f6f3f2db6efcc4d4d6ae3d278751a230fca9a64
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 91a18b6deade6d67fce6b90308671910a4196104
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068605"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335744"
 ---
 # <a name="cycle-counting-example-scenarios"></a>Przykładowe scenariusze inwentaryzacji ciągłej
 
@@ -32,7 +32,7 @@ Każdy scenariusz w tym artykule odwołuje się do wartości i rekordów, które
 
 ### <a name="turn-on-support-for-the-warehouse-management-mobile-app"></a>Włącz obsługę aplikacji mobilnej Warehouse Management
 
-Aby korzystać z aplikacji mobilnej Warehouse Management, *w systemie muszą być włączone ustawienia użytkownika,* ikony i tytuły kroku nowej funkcji aplikacji magazynowej. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.25, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Ustawienia użytkownika, ikony i tytuły kroków dla nowej aplikacji magazynowej* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Aby korzystać z aplikacji mobilnej Warehouse Management, dla systemu muszą być włączone *ustawienia użytkownika, ikony i tytuły kroku nowej funkcji aplikacji magazynowej*. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.25, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Ustawienia użytkownika, ikony i tytuły kroków dla nowej aplikacji magazynowej* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="prepare-demo-data-for-the-scenarios"></a><a name= "prepare-demo-data"></a>Przygotuj dane demonstracyjne do scenariuszy
 

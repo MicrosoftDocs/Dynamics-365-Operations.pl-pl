@@ -2,7 +2,7 @@
 title: Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Commerce
 description: W tym artykule opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia z Dynamics 365 Commerce.
 author: josaw1
-ms.date: 07/11/2022
+ms.date: 08/23/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 541e21999884a2d51b27009d72a2f8bc9084557f
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 59ffcc00d67f6538980dec8965f894eb51f7230d
+ms.sourcegitcommit: 649f1db26da8f20602f11180fc565b7c59eaf545
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287631"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337604"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Commerce
 
@@ -33,32 +33,49 @@ Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych fun
 > [!NOTE]
 > Szczegółowe informacje o obiektów w aplikacji finansowych i operacyjnych można znaleźć w [raportach z wykazami parametrów technicznych](/dynamics/s-e/). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach aplikacji finansowych i operacyjnych.
 
+## <a name="features-removed-or-deprecated-in-the-commerce-10029-release"></a>Usunięte lub przestarzałe funkcje w wydaniu rozwiązania Commerce 10.0.29
+
+### <a name="commerce-parameters-setting---allow-price-adjustments-to-increase-product-price"></a>Ustawienia parametru Commerce — Zezwalanie na korekty cen zwiększające cenę produktu
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | To ustawienie było konieczne, aby kontrolować, czy funkcja korekty ceny umożliwia zwiększenie ceny produktu. Gdy ten parametr jest wyłączony, organizacje używające funkcji korekty ceny mogą ustawiać tylko cenę jednostkową produktu niższą niż cena podstawowa i cena sprzedaży w umowie handlowej. To ustawienie jest przestarzałe, ponieważ funkcja korekty ceny została zaktualizowana w celu obsługi korekt dwukierunkowych (zwiększenia lub zmniejszenia) poza polem. |
+| **Zamieniona przez inną funkcję?**   | Nr |
+| **Powiązane obszary produktów**         | Ceny i rabaty |
+| **Opcja wdrażania**              | Wszystko |
+| **Stan**                         | Wycofane: To ustawienie jest domyślnie włączone od wersji Commerce 10.0.29 i zostanie usunięte w październiku 2023. |
+
+### <a name="commerce-parameters-setting---enable-price-report-for-retail-store"></a>Ustawienie parametrów Commerce — Włącz raport cen dla sklepu detalicznego
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | To ustawienie było możliwe do kontrolowania, czy funkcja raportu cen jest dostępna do użycia w formularzu konfiguracji sklepu. To ustawienie jest przestarzałe, ponieważ formularz konfiguracji sklepu został zaktualizowany, aby funkcja raportu cen była zawsze dostarczana jako funkcja standardowa. |
+| **Zamieniona przez inną funkcję?**   | Nr |
+| **Powiązane obszary produktów**         | Ceny i rabaty |
+| **Opcja wdrażania**              | Wszystko |
+| **Stan**                         | Wycofane: to ustawienie zostanie usunięte w październiku 2023 roku. |
+
+### <a name="commerce-parameters-setting---use-todays-date-to-calculate-prices"></a>Ustawienie parametrów Commerce — do obliczania cen użyj daty dzisiejszej
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Standardowy aparat cenowy Supply Chain Management (SCM) obsługuje obliczanie cen na podstawie żądanej daty wysyłki i żądanej daty przyjęcia wraz z bieżącą datą. Aparat wyceny Commerce obsługuje wyłącznie kalkulację cen na podstawie daty dzisiejszej. W przypadku klientów korzystających z funkcji SCM i Commerce zalecamy korzystanie z tego ustawienia i zalecaliśmy klientom ustawienie **Tak**, aby te dwa aparaty cen działały razem. To ustawienie jest przestarzałe, ponieważ nie zmienia zachowania obliczeń i jest nadmiarowe. |
+| **Zamieniona przez inną funkcję?**   | Nr |
+| **Powiązane obszary produktów**         | Ceny i rabaty |
+| **Opcja wdrażania**              | Wszystko |
+| **Stan**                         | Wycofane: To ustawienie jest domyślnie włączone od wersji Commerce 10.0.29 i zostanie usunięte w październiku 2023. |
+
 ## <a name="feature-deprecation-effective-july-2022"></a>Wycofanie funkcji z użytku w lipcu 2022 r.
 
 ### <a name="commerce-analytics-preview"></a>Analizy rozwiązania Commerce (wersja zapoznawcza)
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Przyczyna wycofania/usunięcia** | Zespół Dynamics 365 Commerce przeanalizował użycie i wykorzystanie funkcji Commernce analytics (wersja zapoznawcza) i podjęto decyzję o zaprzestaniu wprowadzania tej funkcji do ogólnej dostępności.   |
+| **Przyczyna wycofania/usunięcia** | Zespół Dynamics 365 Commerce przeanalizował użycie i wykorzystanie funkcji Commerce analytics (wersja zapoznawcza) i podjęto decyzję o zaprzestaniu wprowadzania tej funkcji do ogólnej dostępności.   |
 | **Zamieniona przez inną funkcję?**   | W chwili obecnej Commerce analytics (wersja zapoznawcza) nie zostanie zastąpiony przez inną funkcję lub rozwiązanie. Eksport surowych transakcji i danych podstawowych z aplikacji finansowych i operacyjnych do Azure Data Lake jest nadal dostępny, jak wyjaśniono w [Eksport do Data Lake w aplikacjach finansowych i operacyjnych](../../fin-ops-core/dev-itpro/data-entities/finance-data-azure-data-lake.md). Partnerzy i klienci mogą wykorzystywać ten strumień danych do tworzenia dowolnych raportów analitycznych dostosowanych do ich potrzeb biznesowych.
 | **Powiązane obszary produktów**         | Analizy rozwiązania Commerce (wersja zapoznawcza) |
 | **Opcja wdrażania**              | Wszystko |
 | **Stan**                         | Zamierzamy wyłączyć tę funkcję do 30 sierpnia 2022 roku.  Od tego dnia nie będą odświeżane obecne raporty Power BI dostarczane przez Commerce analytics (wersja zapoznawcza).     |
-
-
-## <a name="features-removed-or-deprecated-in-the-commerce-10025-release"></a>Usunięte lub przestarzałe funkcje w wydaniu rozwiązania Commerce 10.0.25
-
-### <a name="modern-point-of-sale-mpos"></a>Modern Point of Sale (MPOS)
-
-Aplikacja Modern Point of Sale (MPOS) zostanie wycofana z użycia w wersji 10.0.25 Commerce i zastąpiona aplikacją Store Commerce.
-
-| &nbsp;  | &nbsp; |
-|------------|--------------------|
-| **Przyczyna wycofania/usunięcia** | Aplikacje sklepowe są podstawą oferty wielokanałowej Dynamics 365 Commerce. Nieustannie wprowadzamy innowacje, aby zapewnić nowoczesne i inteligentne doświadczenia w sklepach, a w celu dalszego unowocześniania naszych rozwiązań wprowadzamy nowe zestawy zmian, które znacząco poprawią operacje IT i doświadczenia użytkowników z naszymi istniejącymi aplikacjami sklepowymi na Windows. Nowa aplikacja Store Commerce jest unowocześnieniem technologicznym istniejącego systemu MPOS. Zapewnia on lepszą wydajność, niezawodność i długotrwałe wsparcie na platformie Windows oraz eliminuje konieczność ponownego pakowania aplikacji przy każdej aktualizacji. |
-| **Zamieniona przez inną funkcję?**   |  [Store Commerce](../dev-itpro/store-commerce.md) |
-| **Powiązane obszary produktów**         | Modern Point of Sale |
-| **Opcja wdrażania**              | Wszystko |
-| **Stan**                         | Wycofany: Od wersji 10.0.25 wydania Commerce instalator MPOS dostarczany przez maszyny wirtualne (VM) LCS zostanie usunięty w październiku 2023 roku. |
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10021-release"></a>Usunięte lub przestarzałe funkcje w wydaniu rozwiązania Commerce 10.0.21
 
@@ -130,7 +147,7 @@ Opracowywania rozszerzenia POS przy użyciu ModernPos.sln, CloudPos.sln, POS.Ext
 | **Przyczyna wycofania/usunięcia** | Począwszy od tego wydania, w formularzu **Parametry harmonogramu Commerce** w centrali usługi Dynamics 365, pole **Interwał generowania pełnego zestawu danych** w dniach będzie przestarzałe. Począwszy od tej wersji, pole zostanie wizualnie usunięte, aby nie można było edytować wartości. Pozostanie to jako wartość **0**. |
 | **Zamieniona przez inną funkcję?**   | Nie |
 | **Powiązane obszary produktów**         | Dynamics 365 Commerce |
-| **Opcja wdrażania**              | Wszyscy|
+| **Opcja wdrażania**              | Wszystko|
 | **Stan**                         | Wycofane. Nie należy używać tego pola ani zmieniać jego wartości.|
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10015-release"></a>Usunięte lub przestarzałe funkcje w wydaniu rozwiązania Commerce 10.0.15

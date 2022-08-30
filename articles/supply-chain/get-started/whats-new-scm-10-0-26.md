@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: b44b044bf10115a7fcaf347a3b6f1759c2a68cb6
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: dd98b22a2dfcd8cad62bdef2d31ac2880b3422f8
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219073"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334724"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10026-may-2022"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.26 (Maj 2022 r.)
 
@@ -51,7 +51,6 @@ Aby włączyć lub wyłączyć te funkcje, należy przejść do obszaru [zarząd
 | Zarządzanie informacjami o produktach | Wyczyść wartości atrybutów produktów | Ta funkcja dodaje okresowe zadanie o nazwie **Wyczyść wartości atrybutów produktów** czyszczące rekordy wartości atrybutów produktów, które nie są już skojarzone z żadnym produktem za pośrednictwem kategorii produktów. |
 | Zarządzanie zapasami i magazynem | (Rosja) Zapobieganie rozbieżnościom podczas wystawiania deklaracji GTD dla zamówień zakupu, które zawierają pozycje z obsługą funkcji WMS | Ta funkcja jest dostępna tylko w języku rosyjskim. Zapobiega to rozbieżnościom, które występują podczas wystawiania rosyjskich numerów deklaracji celnych (GTD) dla zamówień zakupu importu, które zawierają towary włączone dla procesów zarządzania magazynem (WMS). Proces wydawania GTD zmienia niektóre wartości wymiarów magazynowych w powiązanych transakcjach magazynowych na fakturach zawartych w arkuszu niestandardowym, co prowadzi do rozbieżności między rekordami pracy dla zamówienia zakupu a transakcjami magazynowymi dla zakupu. Gdy ta funkcja jest włączona, proces wydawania GTD generuje pracę korekty, która eliminuje takie rozbieżności. |
 | Zarządzanie magazynem | Ulepszone analizowanie kodów kreskowych GS1 | Ta funkcja dodaje rozszerzoną analizę danych symbolu GS1. Nowy program parserowy implementuje algorytm specyfikacji ogólnej GS1 na celu analizowanie symboli GS1 i zapewnia silniejszą weryfikację danych. Aby uzyskać więcej informacji, zobacz [Skanowanie kodów kreskowych GS1](../warehousing/gs1-barcodes.md). |
-| Zarządzanie magazynem | Nowe strony pulpitu planowania wysyłki ładunku | Dodaje dwie nowe strony pulpitu planowania wysyłki ładunku: **Pulpit planowania wysyłki ładunku przychodzącego** i **Pulpit planowania wysyłki ładunku wychodzącego**. |
 | Zarządzanie magazynem | Aplikacja zarządzania magazynem — pusta deklaracja GTD | Ta funkcja jest dostępna tylko w języku rosyjskim. Dzięki tej aplikacji pracownicy korzystający z aplikacji mobilnej Warehouse Management w razie potrzeby pozostawią puste numery rosyjskich deklaracji celnych (GTD). Jeśli wymiar śledzenia GTD jest tak ustawiony, że zezwala na puste wartości, system akceptuje puste wartości GTD dla operacji magazynowych pod warunkiem, że są dostępne zapasy. |
 
 ## <a name="new-and-updated-documentation-resources"></a>Nowe i zaktualizowane zasoby dokumentacji

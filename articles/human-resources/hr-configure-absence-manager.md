@@ -14,17 +14,15 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 40f9607fb6fc16b96373141d8d2610538e3fdec7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b752b722bf63958fc35b10a4612f7f02e2e8e717
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886110"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337040"
 ---
 # <a name="configure-the-absence-manager-role"></a>Konfigurowanie roli menedżera nieobecności
 
->[!Important]
->Funkcjonalność opisana w tym artykule jest obecnie dostępna dla klientów samodzielnej wersji Dynamics 365 Human Resources. Część lub całość tej funkcjonalności będzie dostępna w ramach przyszłego wydania infrastruktury Finance po wydaniu wersji Finance 10.0.26.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -37,7 +35,6 @@ W niektórych organizacjach menedżerowie osób mogą nie zarządzać urlopem dl
 ## <a name="turn-on-the-feature"></a>Włączanie funkcji
 
 1. W obszarze roboczym **Administrator systemu** wybierz **Zarządzanie funkcjami**.
-
 2. Na karcie **Zarządzanie funkcjami** włącz funkcję **nieobecności, aby zarządzać funkcją urlopów**.
 
 ## <a name="define-a-custom-hierarchy"></a>Zdefiniuj niestandardową hierarchię
@@ -45,37 +42,26 @@ W niektórych organizacjach menedżerowie osób mogą nie zarządzać urlopem dl
 Funkcja menedżera nieobecności korzysta z niestandardowej hierarchii, którą należy skonfigurować.
 
 1. W obszarze roboczym **Administrowanie organizacją** wybierz **Typy hierarchii stanowisk**.
-
 2. Utwórz typ hierarchii stanowisk o nazwie **Urlop**.
-
 3. W obszarze roboczym **Urlop i nieobecność** w obszarze **Łącza** wybierz **Parametry urlopu i nieobecności**.
-
 4. Na karcie **Ogólne** z listy rozwijanej **Hierarchia nieobecności** wybierz utworzony wcześniej typ hierarchii **Urlop** . To powiązanie hierarchii urlopów musi zostać zakończone dla każdej firmy, w której będzie używana funkcja menedżera nieobecności.
 
 Po zdefiniowaniu typu hierarchii do stanowiska musi zostać przypisany raport hierarchii stanowisk.
 
 1. W obszarze roboczym **Administrowanie organizacją** wybierz **Wszystkie stanowiska**.
-
 2. Wybierz stanowisko, do których ma być dodawania hierarchia urlopów.
-
 3. Na karcie **Relacje** wybierz pozycję **Dodaj**.
-
 4. W polu **Nazwa hierarchiię** zaznacz opcję **Urlop**.
-
 5. W polu **Przełożony stanowiska** wybierz stanowisko. Nazwa pracownika jest wypełniana automatycznie po wybraniu stanowiska.
 
 ## <a name="assign-the-absence-manager-role-to-a-user"></a>Przypisz użytkownikowi rolę menedżera nieobecności
 
 Rola menedżera nieobecności musi być przypisana pracownikom, aby umożliwić im zatwierdzanie lub odrzucanie wniosków urlopowych.
 
-1. W obszarze roboczym **Administrator systemu** wybierz pozycję **Łącza**.
-
+1. W obszarze roboczym **Administracja systemem** wybierz pozycję **Łącza**.
 2. W sekcji **Użytkownicy** zaznacz łącze **Użytkownicy**.
-
 3. Z listy użytkowników wybierz użytkownika, któremu chcesz przypisać rolę Menedżer nieobecności.
-
 4. Na karcie **Role użytkownika** wybierz opcję **Przypisz role**.
-
 5. Z listy wybierz rolę **Menedżer nieobecności**. Następnie wybierz opcję **OK**.
 
     > [!IMPORTANT]
@@ -84,7 +70,6 @@ Rola menedżera nieobecności musi być przypisana pracownikom, aby umożliwić 
 6. Po utworzeniu hierarchii opuszczania możesz ją wyświetlić, wykonując następujące kroki:
 
     1. W obszarze roboczym **Administrowanie organizacją** wybierz **Hierarchia stanowisk**.
-    
     2. W polu **Typ hierarchii** zaznacz opcję **Urlop**.
 
 ## <a name="absence-manager-workspace"></a>Obszar roboczy menedżera nieobecności
@@ -115,9 +100,7 @@ Menedżerowie nieobecności mogą zatwierdzać lub odrzucać wnioski o urlop dla
 > Aby uzyskać informacje na temat tworzenia przepływu pracy z wnioskiem urlopowym, zobacz temat [Tworzenie przepływu pracy wniosku o urlop](hr-leave-and-absence-workflow.md).
 
 1. W obszarze roboczym **Samoobsługa pracowników** wybierz kartę **Menedżer urlopów**.
-
 2. Na karcie **Prośby o czas wolny** wybierz czas wolny od żądań, na których chcesz podjąć działania. W tym widoku listy można wybrać wiele rekordów.
-
 3. Użyj przycisków akcji w górnej części siatki, aby zatwierdzić, odmówić lub delegować żądanie wolnego czasu. 
 
 Alternatywnie użytkownik może również użyć kafelka **Prośby o czas wolny** po lewej stronie, aby przejść do listy wszystkich elementów pracy żądania czasu wolnego. 
@@ -130,9 +113,7 @@ Użytkownicy pełniący rolę menedżera nieobecności mogą przeglądać prośb
 > Administrator systemu musi skonfigurować opcje widoku kalendarza menedżera nieobecności. Na stronie **Parametry urlopu i nieobecności**, na karcie **Kalendarz** są dostępne opcje ukrywania lub pokazywania urodzin, nieobecności bez szczegółów, urlopów i oczekujących wniosków urlopowych. Istnieje również możliwość filtrowania opcji widoku kalendarza według typu pracownika.
 
 1. W obszarze roboczym **Samoobsługa pracownika** wybierz opcję **Menedżer urlopów**, a następnie **Kalendarz menedżera nieobecności**.
-
 2. W polu **Data** wpisz żądane daty.
-
 3. W razie potrzeby zaktualizuj opcje widoku.
 
 Kalendarz menedżera nieobecności zawiera wszystkie rekordy pracowników, którzy podlegają menedżerowi nieobecności w hierarchii urlopów.

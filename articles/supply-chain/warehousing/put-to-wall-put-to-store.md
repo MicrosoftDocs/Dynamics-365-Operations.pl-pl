@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: e020bd3973b8b56dd1e6f3e5bdc8cba32600f7f8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: af6dcb6d822ab14b0b4b881ca32626ea6eae4c28
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8909651"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334515"
 ---
 # <a name="put-to-wall---put-to-store"></a>Umieść na ścianie - odłożenie do sklepu
 
@@ -32,7 +32,7 @@ Ta funkcja magazynowania jest również nazywana innymi nazwami, takimi jak otwa
 
 ## <a name="turn-on-the-outbound-sorting-feature"></a>Włącz funkcję sortowania wychodzącego
 
-Zanim będzie możliwe użycie funkcji przekazanie *Umieść na ścianie - odłożenie do sklepu*, funkcja *Sortowanie towarów wychodzących* musi być włączona w systemie. Administratorzy mogą skorzystać z obszaru roboczego [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. Ta funkcja jest wymieniona w następujący sposób:
+Zanim będzie możliwe użycie funkcji przekazanie *Umieść na ścianie - odłożenie do sklepu*, funkcja *Sortowanie towarów wychodzących* musi być włączona dla systemu. Administratorzy mogą skorzystać z obszaru roboczego [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. Ta funkcja jest wymieniona w następujący sposób:
 
 - **Moduł:** *Zarządzanie magazynem*
 - **Nazwa funkcji:** *Sortowanie wychodzące*

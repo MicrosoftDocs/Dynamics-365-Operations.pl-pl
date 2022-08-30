@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ec2a9f5ca6d6735e675defda6782738da7814c01
-ms.sourcegitcommit: f2501d93ffc1c7bf4e0daa78e63bc37528ef2358
+ms.openlocfilehash: d6131d205e650c0de88b85434629ed9537c2a0b1
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/18/2022
-ms.locfileid: "9171464"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335654"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Instalowanie i łączenie aplikacji mobilnej Warehouse Management
 
@@ -38,7 +38,7 @@ Aplikacja mobilna Zarządzanie magazynem jest dostępna w systemach operacyjnych
 
 ## <a name="turn-warehouse-management-mobile-app-features-on-or-off-in-supply-chain-management"></a>Włączanie lub wyłączanie funkcji aplikacji mobilnej Warehouse Management w Supply Chain Management
 
-Aby korzystać z aplikacji mobilnej Warehouse Management, *w systemie muszą być włączone ustawienia użytkownika,* ikony i tytuły kroku nowej funkcji aplikacji magazynowej. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.25, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Ustawienia użytkownika, ikony i tytuły kroków dla nowej aplikacji magazynowej* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Aby korzystać z aplikacji mobilnej Warehouse Management, dla systemu muszą być włączone *ustawienia użytkownika, ikony i tytuły kroku nowej funkcji aplikacji magazynowej*. Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.25, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Ustawienia użytkownika, ikony i tytuły kroków dla nowej aplikacji magazynowej* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="get-the-warehouse-management-mobile-app"></a>Pobieranie aplikacji mobilnej Zarządzanie magazynem
 

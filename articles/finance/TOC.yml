@@ -12,6 +12,8 @@
               items:
                 - name: Nowości i zmiany w rozwiązaniu Finance — strona główna
                   href: get-started/whats-new-home-page.md
+                - name: Rozwiązanie Finance 10.0.29 (październik)
+                  href: get-started/whats-new-changed-10-0-29.md
                 - name: Rozwiązanie Finance 10.0.28 (sierpień)
                   href: get-started/whats-new-changed-10-0-28.md
                 - name: Rozwiązanie Finance 10.0.27 (lipiec)
@@ -62,6 +64,8 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?context=/dynamics365/context/finance
                 - name: Odbieranie powiadomień o aktualizacjach usług
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/finance
+                - name: Aktywne aktualizacje jakości
+                  href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/finance
                 - name: Automatyzacja zadań danych
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/finance
                 - name: Dostarczanie rozwiązań niezależnych dostawców oprogramowania przy użyciu One Version
@@ -1114,6 +1118,8 @@
                       href: general-ledger/tasks/process-ledger-allocation-journal.md
                     - name: Wyświetlanie wpisów w arkuszu lub transakcji
                       href: general-ledger/tasks/view-journal-entries-or-transactions.md
+                    - name: Zezwalaj na edycje danych wewnętrznych w załącznikach księgi głównej
+                      href: general-ledger/allow-edits-internal-data-gl-vouchers.md
                     - name: Wyświetlanie powiązanego załącznika międzyfirmowego z arkusza
                       href: general-ledger/tasks/view-related-intercompany-voucher-journal.md
                     - name: Publikowanie wierszy arkuszy oraz dokumentów z programu Excel
@@ -1568,14 +1574,20 @@
                           href: localizations/e-invoicing-bra-get-started.md?context=/dynamics365/context/finance
                         - name: Rozpoczynanie pracy z fakturowaniem elektronicznym dla Egiptu
                           href: localizations/e-invoicing-eg-get-started.md?context=/dynamics365/context/finance
+                        - name: Rozpoczynanie pracy z fakturowaniem elektronicznym dla Francji
+                          href: localizations/e-invoicing-fr-get-started.md?context=/dynamics365/context/finance
                         - name: Rozpoczynanie pracy z fakturowaniem elektronicznym dla Meksyku
                           href: localizations/e-invoicing-mex-get-started.md?context=/dynamics365/context/finance
+                        - name: Rozpoczynanie pracy z fakturowaniem elektronicznym dla Polski
+                          href: localizations/e-invoicing-pol-get-started.md?context=/dynamics365/context/finance
                         - name: Rozpoczynanie pracy z fakturowaniem elektronicznym dla Arabii Saudyjskiej
-                          href: localizations/e-invoicing-sa-get-started.md
+                          href: localizations/e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
+                        - name: Dołączanie fakturowania elektronicznego w Arabii Saudyjskiej
+                          href: localizations/e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
                         - name: Konfigurowanie bezpośredniej integracji włoskiej funkcji FatturaPA z SDI
-                          href: localizations/e-invoicing-ita-fatturapa-get-started.md
+                          href: localizations/e-invoicing-ita-fatturapa-get-started.md?context=/dynamics365/context/finance
                         - name: Używanie usługi fakturowania elektronicznego do importowania faktur od dostawców
-                          href: localizations/e-invoicing-get-started-import-vendor-invoices.md
+                          href: localizations/e-invoicing-get-started-import-vendor-invoices.md?context=/dynamics365/context/finance
                     - name: Fakturowanie elektroniczne — często zadawane pytania
                       href: localizations/e-invoicing-faq.md?context=/dynamics365/context/finance
                 - name: Obliczanie podatku
@@ -1648,6 +1660,10 @@
                           items:
                             - name: Deklaracja podatku VAT
                               href: localizations/emea-nor-vat-declaration.md
+                        - name: Polska — raportowanie
+                          items:
+                            - name: Deklaracja podatku VAT
+                              href: localizations/emea-pol-vat-declaration.md
                         - name: Hiszpania — raportowanie
                           items:
                             - name: 'Natychmiastowe dostarczenie informacji na temat podatku VAT (Suministro Inmediato de Información del IVA, SII)'
@@ -1714,6 +1730,8 @@
                       href: general-ledger/sales-tax-calculation-on-general-journal.md
                     - name: Obliczanie i korygowanie podatku na fakturze od dostawcy
                       href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+                    - name: Dostosowanie podatku za pomocą arkuszy finansowych
+                      href: general-ledger/adjust-sales-tax-via-general-journals.md
                     - name: Włączanie opóźnionego obliczania podatku w arkuszu
                       href: general-ledger/enable-delayed-tax-calculation.md
                     - name: Tworzenie płatności podatku
@@ -1770,6 +1788,8 @@
                           href: general-ledger/global-withholding-tax-overview.md
                         - name: Konfigurowanie globalnych potrąconych zaliczek na podatek
                           href: general-ledger/set-up-global-withholding-tax.md
+                        - name: Włączanie konfiguracji globalnej typu kursu wymiany waluty potrąconej zaliczki na podatek typ i typu daty
+                          href: general-ledger/global-withholding-tax-currency-exchange-rate-date-type-setup.md
                         - name: Potrącona zaliczka na podatek w transakcjach zakupu
                           href: general-ledger/withholding-tax-in-purchase-transactions.md
                         - name: Potrącona zaliczka na podatek w transakcjach sprzedaży
@@ -1948,6 +1968,8 @@
                       href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
                     - name: Przenoszenie plików NF-e XML jako załączników
                       href: localizations/latam-bra-nf-e-move-xml-as-attachment.md
+                    - name: NT2021.004 — układ i aktualizacje sprawdzania poprawności w elektronicznym dokumencie fiskalnym (NF-e)
+                      href: localizations/latam-bra-nfe-nt2021.004.md
                     - name: NT2020.005 — układ i aktualizacje sprawdzania poprawności w elektronicznym dokumencie fiskalnym (NF-e)
                       href: localizations/latam-bra-nfe-nt2020.005.md
                     - name: NT2020.006 — cyfrowa platforma sprzedaży pośredniej dla NF-e
@@ -2552,9 +2574,11 @@
                       href: localizations/apac-ind-news-letter-10-0-00.md
                 - name: Dziennik inspekcji i edycja dzienników dla oprogramowania księgowego
                   href: localizations/apac-ind-audit-trail-edit-logs-accounting-software.md
+                - name: Faktury elektroniczne w Indiach
+                  href: localizations/apac-ind-e-invoices.md
                 - name: Podatki pośrednie
                   items:
-                    - name: Podatek GST (Indie)
+                    - name: Podatek GST — Indie
                       items:
                         - name: Omówienie podatku GST w Indiach
                           href: localizations/apac-ind-gst.md
@@ -3548,6 +3572,10 @@
                           href: localizations/rus-set-up-inventory-profile.md
                         - name: Używanie profilu zapasów w dokumentach i kwerendach
                           href: localizations/rus-use-inventory-profile-documents-queries.md
+                    - name: Odprawa celna
+                      items:
+                        - name: Praca z odprawą celną
+                          href: localizations/rus-work-with-customs-clearance.md
                 - name: Raportowanie
                   items:
                     - name: Raportowanie finansowe
@@ -3576,6 +3604,8 @@
                       href: localizations/rus-company-divisions.md
                     - name: Formaty adresów rosyjskich i import z FIAS
                       href: localizations/rus-russian-address-format-and-import-from-FIAS.md
+                    - name: Importowanie z stanowego rejestru adresów (GAR)
+                      href: localizations/rus-russian-address-format-import-gar.md
                 - name: Odroczenia
                   items:
                     - name: Konfigurowanie odroczeń
@@ -4069,6 +4099,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?context=/dynamics365/context/finance
                         - name: OrderBy
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?context=/dynamics365/context/finance
+                        - name: Repeat
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-repeat.md?context=/dynamics365/context/finance
                         - name: Reverse
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?context=/dynamics365/context/finance
                         - name: Split

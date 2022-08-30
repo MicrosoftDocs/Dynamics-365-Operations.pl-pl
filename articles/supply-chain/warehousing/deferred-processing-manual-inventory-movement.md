@@ -2,7 +2,7 @@
 title: Odroczone przetwarzanie ręcznego przesunięcia magazynowego
 description: W tym artykule opisano sposób użycia odroczonego przetwarzania ręcznego przesunięcia magazynowego w systemie Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 04/27/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSWorkProcessingPolicy, WHSWorkDeferredPutProcessingTask
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-27
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4a8dd322446843af41214e8daa0822939d0468f0
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 9acacaddbde22d05d85ab9e11cd1d6de62337a6a
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219817"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336404"
 ---
 # <a name="deferred-processing-of-manual-inventory-movement"></a>Odroczone przetwarzanie ręcznego przesunięcia magazynowego
 
@@ -32,10 +32,10 @@ Przetwarzanie w tle jest możliwe za pomocą [funkcji Przetwarzanie zdarzeń apl
 
 Aby ta funkcja była dostępna, włącz następujące funkcje w module [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md): Musisz je włączyć w następującej kolejności:
 
-1. *Blokowanie pracy na poziomie organizacji*<br>(W przypadku Supply Chain Management w wersji 10.0.21 ta funkcja jest obowiązkowa, więc jest domyślnie włączona i nie można jej ponownie wyłączyć).
-1. *Przetwarzanie zdarzeń aplikacji magazynowej*<br>(Od wersji 10.0.25 Supply Chain Management version ta funkcja jest domyślnie włączona. Od wersji 10.0.29 Supply Chain Management version ta funkcja jest wymagana. W związku z tym jest domyślnie włączona i nie można jej ponownie wyłączyć.)
-1. *Odroczone operacje odłożenia*
-1. *Odroczone przetwarzanie operacji ręcznego przenoszenia zapasów*<br>(W przypadku Supply Chain Management w wersji 10.0.25 ta funkcja jest obowiązkowa, więc jest domyślnie włączona i nie można jej ponownie wyłączyć).
+1. *Blokowanie pracy na poziomie organizacji*<br>(Od wersji 10.0.21 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć).
+1. *Przetwarzanie zdarzeń aplikacji magazynowej*<br>(Od wersji 10.0.25 Supply Chain Management version ta funkcja jest domyślnie włączona. Od wersji 10.0.29 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć).
+1. *Odroczone operacje odłożenia*<br>(Od wersji 10.0.29 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć).
+1. *Odroczone przetwarzanie operacji ręcznego przenoszenia zapasów*<br>(Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć).
 
 ## <a name="configure-the-work-processing-policies"></a>Konfigurowanie zasad przetwarzania pracy
 

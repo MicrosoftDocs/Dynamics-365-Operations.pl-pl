@@ -14,17 +14,14 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 59fe5ece00500f7dafab282c00d572575706f790
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 982e5afe6442e038774d59419a7edc0a9ec5444c
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894593"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9323967"
 ---
 # <a name="configure-leave-and-absence-types"></a>Konfigurowanie typów urlopów i nieobecności
-
-> [!Important]
-> Funkcjonalność opisana w tym artykule jest obecnie dostępna dla klientów samodzielnej wersji Dynamics 365 Human Resources. Część lub całość tej funkcjonalności będzie dostępna w ramach przyszłego wydania infrastruktury Finance po wydaniu wersji Finance 10.0.26.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -41,31 +38,21 @@ Typy urlopów w module Dynamics 365 Human Resources określają różne rodzaje 
 
 ## <a name="add-a-leave-type"></a>Dodawanie typu urlopu
 
-1. Na stronie **Urlopy i nieobecności** wybierz kartę **Łącza**.
-
+1. W obszarze roboczym **Urlopy i nieobecności** wybierz kartę **Łącza**.
 2. W obszarze **Konfiguracja** wybierz opcję **Typy urlopów i nieobecności**.
-
 3. Wybierz pozycję **Nowy**.
-
 4. Nadaj nazwę typowi urlopu w polu **Typ**, wybierz przepływ pracy w polu **Identyfikator przepływu pracy** i wprowadź opis w polu **Opis**.
-
 5. W obszarze **Ogólne** z listy rozwijanej **Kategoria** wybierz opcję **Brak**, **Zaplanowano** lub **Nie zaplanowano**.
-
 6. Wybierz kod zarobków z listy rozwijanej **Kod zarobków**.
-
 7. W obszarze **Wymagany kod przyczyny** określ, czy ma być wymagany kod przyczyny. Jeśli kody przyczyn mają być wymagane, może być konieczne ich dodanie. W obszarze **Kody przyczyn** kliknij przycisk **Dodaj**, wybierz kod przyczyny, a następnie obok niego zaznacz pole wyboru **Włączone**.
-
 8. W obszarze **Ogranicz dostęp do wybranych ról** określ, czy chcesz ograniczyć dostęp. Następnie wybierz role zabezpieczeń w obszarze **Role zabezpieczeń dla tego typu urlopów**. Role zabezpieczeń definiuje się w przepływie pracy wybranym w ustawieniu **Identyfikator przepływu pracy** wcześniej w tej procedurze.
-
 9. W obszarze **Kolor kalendarza** określ, jaki kolor ma być wyświetlany w kalendarzach urlopów i nieobecności dla tego typu urlopu. 
-
 10. W obszarze **Relacje zawieszenia** określ, czy chcesz, aby ten typ urlopu miał zawieszać inny typ urlopu, czy był zawieszony przez inny typ urlopu. Gdy zostanie złożony wniosek o urlop dla typu urlopu zawieszonego, automatycznie zostanie utworzone zawieszenie urlopu dla typu urlopu zawieszonego. 
-
-10. Wybierz opcję **Zapisz**.
+11. Wybierz opcję **Zapisz**.
 
 ## <a name="configure-leave-type-rules"></a>Konfiguruj reguły typu urlopu
 
-1. Ustaw opcje zaokrąglania dla typu urlopu. Dostępne opcje to **Brak**, **W górę**, **W dół** i **Do najbliższej**. Można również określić dokładność zaokrąglania dla typu urlopu.
+1. Ustaw opcje zaokrąglania dla typu **Urlopy i nieobecności**. Dostępne opcje to **Brak**, **W górę**, **W dół** i **Do najbliższej**. Można również określić dokładność zaokrąglania dla typu urlopu.
 
 2. Ustaw dla typu urlopu wartość w polu **Korekta świąt**. Po wybraniu tej opcji liczba dni świątecznych przypadających na dzień roboczy zostanie użyta do określenia sposobu naliczania czasu wolnego dla typu urlopu. Jeśli na przykład Boże Narodzenie przypada w poniedziałek, moduł Human Resources odejmie jeden dzień od typu urlopu podczas przetwarzania naliczeń.
 

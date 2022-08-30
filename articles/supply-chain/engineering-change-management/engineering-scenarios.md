@@ -2,7 +2,7 @@
 title: Przewodnik po funkcji zarządzania zmianami projektowymi
 description: Ten artykuł zawiera Instruktaż kompleksowy pokazujący sposób pracy z zarządzaniem zmianami projektowymi.
 author: t-benebo
-ms.date: 09/28/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: e66cda6e529a70d40e599718332152bac95b061e
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 65ff30632a54b0b7cadbfe663698d466d41abe47
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220036"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334904"
 ---
 # <a name="engineering-change-management-feature-walkthrough"></a>Przewodnik po funkcji zarządzania zmianami projektowymi
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ce81ed2ed79bfe5c7fff9724e14af150817af11f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 42c2c287e2a813f8bb07ce0c7f21f4224a217946
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895707"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306063"
 ---
 # <a name="install-and-set-up-inventory-visibility"></a>Instalowanie i konfigurowanie dodatku Inventory Visibility
 
@@ -88,20 +88,6 @@ Po zarejestrowaniu aplikacji i dodaniu klucza tajnego klienta do Azure AD wykona
 >
 > 1. Po zakończeniu instalacji wróć na stronę usługi LCS i spróbuj ponownie zainstalować dodatek **Widoczność magazynu**.
 
-## <a name="uninstall-the-inventory-visibility-add-in"></a><a name="uninstall-add-in"></a>Odinstalowywanie dodatku Widoczność magazynu
-
-Aby odinstalować dodatek Widoczność magazynu, wybierz opcję **Odinstaluj** na stronie usługi LCS. Proces odinstalowywania powoduje zakończenie pracy dodatku Widoczność magazynu oraz wyrejestrowanie dodatku z usługi LCS i usunięcie wszelkich tymczasowych danych przechowywanych w pamięci podręcznej danych dodatku Widoczność magazynu. Jednak podstawowe dane zapasów przechowywane w subskrypcji Dataverse nie są usuwane.
-
-Aby odinstalować dane magazynu przechowywane w subskrypcji Dataverse, otwórz [Power Apps](https://make.powerapps.com), wybierz pozycję **Środowisko** na pasku nawigacyjnym i wybierz środowisko Dataverse, które jest połączone ze środowiskiem usługi LCS. Następnie przejdź do obszaru **Rozwiązania** i usuń następujące pięć rozwiązań w tej kolejności:
-
-1. Zakotwiczone rozwiązanie aplikacji Widoczność magazynu w rozwiązaniach Dynamics 365
-1. Rozwiązanie aplikacji Widoczność magazynu Dynamics 365 FNO SCM
-1. Konfiguracja usługi zapasów
-1. Autonomiczna aplikacja Widoczność magazynu
-1. Rozwiązanie podstawowe Widoczność magazynu Dynamics 365 FNO SCM
-
-Po usunięciu tych rozwiązań usuwane są także dane przechowywane w tabelach.
-
 ## <a name="set-up-inventory-visibility-in-supply-chain-management"></a><a name="setup-dynamics-scm"></a>Konfigurowanie widoczności zapasów w aplikacji Supply Chain Management
 
 ### <a name="deploy-the-inventory-visibility-integration-package"></a><a name="deploy-inventory-visibility-package"></a>Wdróż pakiet integracyjny Widoczność magazynu
@@ -135,10 +121,45 @@ Po zainstalowaniu tego dodatku należy przygotować system Supply Chain Manageme
 
 1. Jeśli włączono opcjonalną funkcje *Integracja dodatku Widoczność magazynu z przesunięciem rezerwacji*, otwórz kartę **Przesunięcie rezerwacji** i dokonaj następujących ustawień:
     - **Włącz przesunięcie rezerwacji** — aby włączyć tę funkcję, ustaw wartość *Tak*.
-    - **Modyfikator przesunięcia rezerwacji** — wybierz stan transakcji magazynowej, który będzie powodować przesunięcie rezerwacji w dodatku Widoczność magazynu. To ustawienie określa etap przetwarzania zamówienia, który wyzwala przesunięcia. Etap jest śledzony według stanu transakcji magazynowej zamówienia. Wybierz jedną z następujących opcji:
+    - **Modyfikator przesunięcia rezerwacji** — wybierz stan transakcji magazynowej, który będzie powodować przesunięcie rezerwacji w dodatku Widoczność magazynu. To ustawienie określa etap przetwarzania zamówienia, który wyzwala przesunięcia. Etap jest śledzony według stanu transakcji magazynowej zamówienia. Umożliwia wybranie jednej z poniższych opcji:
         - *Na zamówienie* — w przypadku stanu *W transakcji* po utworzeniu zamówienia będzie wysyłane żądanie przeciwstawne. Ilość przesunięcia będzie ilością z utworzonego zamówienia.
         - *Rezerwa* — w przypadku stanu *Zarezerwuj zamówioną transakcję* zamówienie wysyła żądanie przeciwstawne, gdy zostanie zarezerwowane, skompletowane, zaksięgowane z listą wysyłkową lub zafakturowane. Żądanie zostanie wyzwolone tylko raz, podczas pierwszego kroku w momencie wystąpienia wymienionego procesu. Ilość przesunięcia to ilość, w której stan transakcji magazynowej zmienił się z *Zamówione* na *Zamówione zarezerwowane* (lub późniejszy) w odpowiednim wierszu zamówienia.
 
 1. Przejdź do **Zarządzanie zapasami \> Okresowe \> Integracja widoczności magazynu** i włącz zadanie. Wszystkie zdarzenia zmiany zapasów z Supply Chain Management zostaną teraz zaksięgowane w widoczności magazynu.
+
+## <a name="uninstall-the-inventory-visibility-add-in"></a><a name="uninstall-add-in"></a>Odinstalowywanie dodatku Widoczność magazynu
+
+Aby odinstalować dodatek Widoczność magazynu, trzeba:
+
+1. Zaloguj się do modułu Supply Chain Management.
+1. Przejdź do **Zarządzanie zapasami \> Okresowe \> Integracja widoczności magazynu** i wyłącz zadanie.
+1. Przejdź do usługi LCS i otwórz stronę środowiska, z którego chcesz odinstalować ten dodatek (zobacz też [Instalowanie dodatku Widoczność zapasów](#install-add-in)).
+1. Wybierz **Odinstaluj**.
+1. Proces odinstalowywania powoduje teraz zakończenie pracy dodatku Widoczność magazynu oraz wyrejestrowanie dodatku z usługi LCS i usunięcie wszelkich tymczasowych danych przechowywanych w pamięci podręcznej danych dodatku Widoczność magazynu. Jednak podstawowe dane zapasów, które zostały zsynchronizowane w subskrypcji Dataverse, pozostają. Aby usunąć te dane, wykonaj resztę procedury.
+1. Otwórz [Power Apps](https://make.powerapps.com).
+1. Wybierz **środowisko** na pasku nawigacji
+1. Wybierz środowisko Dataverse, które jest połączone ze środowiskiem usługi LCS.
+1. Przejdź do obszaru **Rozwiązania** i usuń następujące rozwiązania w następującej kolejności:
+    1. Rozwiązanie kotwicy dla aplikacji Inventory Visibility w rozwiązaniach systemu Dynamics 365
+    1. Rozwiązanie aplikacji Widoczność magazynu Dynamics 365 FNO SCM
+    1. Konfiguracja usługi zapasów
+    1. Autonomiczna aplikacja Widoczność magazynu
+    1. Rozwiązanie podstawowe Widoczność magazynu Dynamics 365 FNO SCM
+
+    Po usunięciu tych rozwiązań usuwane są także dane przechowywane w tabelach.
+
+> [!NOTE]
+> Jeśli baza danych Supply Chain Management zostanie przywrócona po odinstalowaniu dodatku Widoczność zapasów, a następnie użytkownik chce ponownie zainstalować ten dodatek, przed ponownym zainstalowaniem tego dodatku należy upewnić się, że stare dane widoczności zapasów przechowywane w subskrypcji Dataverse (jak opisano w poprzedniej procedurze) zostały usunięte. Pozwoli to uniknąć problemów z niespójnościami danych, które mogłyby wystąpić.
+
+## <a name="clean-inventory-visibility-data-from-dataverse-before-restoring-the-supply-chain-management-database"></a><a name="restore-environment-database"></a>Wyczyść dane widoczności zapasów przed przywróceniem bazy danych Dataverse Supply Chain Management
+
+Jeśli użytkownik używa widoczności zapasów, a następnie przywraca bazę danych Supply Chain Management, przywrócona baza danych może zawierać dane, które nie są spójne z danymi poprzednio zsynchronizowanymi przez widoczność zapasów do Dataverse. Ta niespójność danych może spowodować błędy systemowe i inne problemy. Dlatego przed przywróceniem bazy danych Supply Chain Management ważne jest, aby przed przywróceniem bazy wyczyścić wszystkie dane dotyczące widoczności zapasów z Dataverse.
+
+Aby przywrócić bazę danych Supply Chain Management, należy skorzystać z następującej procedury:
+
+1. Odinstaluj dodatek Widoczność zapasów i usuń wszystkie powiązane dane w Dataverse, jak opisano w [Odinstaluj dodatek Widoczność zapasów](#uninstall-add-in)
+1. Przywróć bazę danych Supply Chain Management, na przykład w sposób opisany w części [Przywracanie punktu w czasie bazy danych (PITR)](../../fin-ops-core/dev-itpro/database/database-point-in-time-restore.md) lub [przywracanie bazy danych produkcji na raz do środowiska piaskownicy](../../fin-ops-core/dev-itpro/database/database-pitr-prod-sandbox.md).
+1. Aby nadal korzystać z tej funkcji, zainstaluj ponownie i skonfiguruj dodatek Widoczność zapasów w sposób opisany w te sposób: [Zainstaluj dodatek widoczność zapasów](#install-add-in) oraz [skonfiguruj integrację z widocznością zapasów](#setup-inventory-visibility-integration)
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Konfiguracja promowanych pól dla kroków w aplikacji mobilnej Warehouse Management
 description: W tym artykule opisano sposób promowania i wyróżniania określonych informacji dla dowolnego kroku w przepływach zadań w aplikacji mobilnej Warehouse Management.
 author: Mirzaab
-ms.date: 10/15/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8ecca2d00b8753a405faa8d4c67c3cbb1eef6907
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 3451b1aec525cd0738af558b183f8676d20294a0
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9218983"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336074"
 ---
 # <a name="configure-promoted-fields-for-steps-in-the-warehouse-management-mobile-app"></a>Konfiguracja promowanych pól dla kroków w aplikacji mobilnej Warehouse Management
 
@@ -29,19 +29,12 @@ W tym artykule opisano sposób promowania i wyróżniania określonych informacj
 
 ## <a name="enable-promoted-fields-in-your-system"></a>Włącz promowane pola w swoim systemie
 
-Zanim będzie można ustawić pola promowane, należy wykonać poniższą procedurę, aby włączyć wymagane funkcje i wygenerować wymagane nazwy pól w aplikacji mobilnej Warehouse Management.
+Jeśli uruchomiona jest wersja Supply Chain Management 10.0.28 lub wcześniejsza, to zanim będzie można ustawić pola promowane, należy wykonać poniższą procedurę, aby włączyć wymagane funkcje i wygenerować wymagane nazwy pól w aplikacji mobilnej Warehouse Management. Jeśli używasz Supply Chain Management w wersji 10.0.29 lub nowszej, funkcje są obowiązkowe i nie można ich wyłączyć, więc można pominąć tę procedurę.
 
-1. Wybierz kolejno opcje **Administrator systemu \> Obszary robocze \> Zarządzanie funkcjami**.
-1. Upewnij się, że funkcja *Instrukcje kroku aplikacji magazynowej* jest włączona w Twoim systemie. Od wersji 10.0.29 Supply Chain Management version ta funkcja jest domyślnie włączona. Aby uzyskać więcej informacji na temat funkcji *Instrukcje krok po kroku aplikacji Warehouse*, patrz [Dostosowywanie tytułów i instrukcji krok po kroku dla aplikacji mobilnej Warehouse Management](mobile-app-titles-instructions.md). Ta funkcja jest warunkiem koniecznym dla funkcji *Promowane pola aplikacji Warehouse*.
-1. Włącz funkcję, która jest wymieniona w następujący sposób:
-
-    - **Moduł:** *Zarządzanie magazynem*
-    - **Nazwa funkcji** *Pola promowane w aplikacji magazynowej*
-
-    Ta funkcja jest opisana w tym artykule.
-
-1. Zaktualizuj nazwy pól w aplikacji mobilnej Warehouse Management, przechodząc do **Zarządzanie magazynem \> Konfiguracja \> Urządzenie mobilne \> Nazwy pól aplikacji Warehouse** i wybierając **Utwórz konfigurację domyślną**. Aby uzyskać więcej informacji, zobacz temat [Konfigurowanie pól aplikacji mobilnej Warehouse Management](configure-app-field-names-priorities-warehouse.md).
-1. Powtórz poprzedni krok dla każdej osoby prawnej (firmy), w której korzystasz z aplikacji mobilnej Warehouse Management.
+1. Wybierz kolejno opcje **Administrator systemu \> Obszary robocze \> Zarządzanie funkcjami**. (Zobacz [Zarządzanie funkcjami — omówienie](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby uzyskać więcej informacji o włączaniu funkcji).
+1. Upewnij się, że funkcja *Instrukcje kroku aplikacji magazynowej* jest włączona w Twoim systemie. Ta funkcja jest warunkiem koniecznym dla funkcji *Promowane pola aplikacji Warehouse*. Od wersji 10.0.29 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Aby uzyskać więcej informacji na temat funkcji *Instrukcje krok po kroku aplikacji Warehouse*, patrz [Dostosowywanie tytułów i instrukcji krok po kroku dla aplikacji mobilnej Warehouse Management](mobile-app-titles-instructions.md).
+1. Upewnij się, że funkcja *Promowane pola aplikacji magazynowej* jest włączona w systemie. To jest główna funkcja opisana w tym artykule. Od wersji 10.0.29 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć.
+1. Zaktualizuj nazwy pól w aplikacji mobilnej Warehouse Management, przechodząc do **Zarządzanie magazynem \> Konfiguracja \> Urządzenie mobilne \> Nazwy pól aplikacji Warehouse** i wybierając **Utwórz konfigurację domyślną**. Powtórz poprzedni krok dla każdej osoby prawnej (firmy), w której korzystasz z aplikacji mobilnej Warehouse Management. Aby uzyskać więcej informacji, zobacz temat [Konfigurowanie pól aplikacji mobilnej Warehouse Management](configure-app-field-names-priorities-warehouse.md).
 
 ## <a name="configure-promoted-fields-from-a-menu-specific-override"></a>Konfiguracja promowanych pól z poziomu nadpisania specyficznego dla menu
 

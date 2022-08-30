@@ -2,7 +2,7 @@
 title: Planowanie główne za pomocą umów handlowych zakupu
 description: W tym artykule opisano sposób, w jaki Optymalizacja planowania może znaleźć dostawcę i/lub czas realizacji zamówienia planowanego na podstawie najlepszej ceny lub czasu realizacji, który znajduje się w umowach handlowych zakupu.
 author: t-benebo
-ms.date: 06/29/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 29f0f44289e44b21cb304bd1f423d63f9f58f2db
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3797ee584cdb059a97670d532cf7e1a1163cc7ff
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873761"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335234"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>Planowanie główne za pomocą umów handlowych zakupu
 
@@ -29,12 +29,9 @@ ms.locfileid: "8873761"
 
 W tym artykule opisano sposób, w jaki Optymalizacja planowania może znaleźć dostawcę i/lub czas realizacji zamówienia planowanego na podstawie najlepszej ceny lub czasu realizacji, który znajduje się we wszystkich umowach handlowych zakupu, które zostały określone dla danego produktu.
 
-## <a name="turn-on-the-purchase-trade-agreements-for-planning-optimization-feature"></a>Włącz funkcję Umów handlowych zakupu na potrzeby Optymalizacji planowania
+## <a name="turn-the-purchase-trade-agreements-for-planning-optimization-feature-on-or-off"></a>Włącz lub wyłącz funkcję Umów handlowych zakupu na potrzeby Optymalizacji planowania
 
-Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z obszaru roboczego [Zarządzanie funkcjami](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. Ta funkcja jest wymieniona w następujący sposób:
-
-- **Moduł:** *Planowanie główne*
-- **Nazwa funkcji:** *Umowy handlowe zakupu na potrzeby Optymalizacji planowania*
+Aby używać tej funkcji, należy ją włączyć dla systemu. Od wersji 10.0.29 Supply Chain Management funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.29, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Umowy handlowe dotyczące zakupu na potrzeby optymalizacji planowania* w obszarze roboczym [Zarządzanie funkcjami](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="prepare-your-system-to-evaluate-purchase-trade-agreements-during-master-planning"></a>Przygotowanie systemu do oceny umów handlowych zakupu podczas planowania głównego
 

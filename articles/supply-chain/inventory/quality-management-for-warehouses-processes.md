@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 13c9bf522ededb5896c5f8462bfe123e9a9edb2c
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: b4d0b09ea4bee58799a659217e2236fe74102949
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9069251"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335444"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Zarządzanie jakością dla procesów magazynowych
 
@@ -29,7 +29,7 @@ Funkcja _Zarządzanie jakością dla procesów magazynowych_ rozszerza możliwo�
 
 ## <a name="turn-on-the-quality-management-for-warehouse-processes-feature"></a>Włączanie funkcji Zarządzanie jakością dla procesów magazynowych
 
-Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
+Aby używać tej funkcji, należy ją włączyć dla systemu. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
 
 - **Moduł:** *Zarządzanie magazynem*
 - **Nazwa funkcji:** *Zarządzanie jakością dla procesów magazynowych*

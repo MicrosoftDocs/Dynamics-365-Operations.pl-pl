@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: cd5d2cf112a9d2ccdf6226ee79f0ff488d51066b
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 576d8d5d0cad09aed40f1ceb9ce5682816c0f666
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9066679"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306327"
 ---
 # <a name="configure-inventory-visibility"></a>Konfiguracja dodatku Inventory Visibility
 
@@ -52,7 +52,7 @@ Dodatek Widoczność magazynu powoduje dodanie kilku nowych funkcji do instalacj
 | Nazwa Zarządzanie funkcjami | Opis |
 |---|---|
 | *OnHandReservation* | Ta funkcja umożliwia tworzenie rezerwacji, rezerwacje zużycia i/lub anulowanie rezerwacji określonych ilości zapasów za pomocą funkcji Widoczność zapasów. Więcej informacji zawiera temat [Rezerwacje dodatku Widoczność magazynu](inventory-visibility-reservations.md). |
-| *OnHandMostSpecificBackgroundService* | Ta funkcja zapewnia podsumowanie zapasów produktów wraz ze wszystkimi wymiarami. Dane podsumowania zapasów będą okresowo synchronizowane z aplikacją Widoczność magazynu. Aby uzyskać więcej informacji, zobacz [Podsumowanie inwentaryzacji](inventory-visibility-power-platform.md#inventory-summary). |
+| *OnHandMostSpecificBackgroundService* | Ta funkcja zapewnia podsumowanie zapasów produktów wraz ze wszystkimi wymiarami. Dane podsumowania zapasów będą okresowo synchronizowane z aplikacją Widoczność magazynu. Domyślna częstotliwość synchronizacji jest ustawiana co 15 minut i może być ustawiana tak wysoko, jak co 5 minut. Aby uzyskać więcej informacji, zobacz [Podsumowanie inwentaryzacji](inventory-visibility-power-platform.md#inventory-summary). |
 | *OnhandChangeSchedule* | Ta opcjonalna funkcja umożliwia korzystanie z funkcji harmonogramu zmian w stanie gotowości do pracy oraz dostępności do przyrzeczenia (ATP). Aby uzyskać więcej informacji, zobacz [Widoczność zapasów — harmonogram i zmiany dostępnych zapasów oraz dostępność zapasów](inventory-visibility-available-to-promise.md). |
 | *Alokacja* | Dzięki tej opcjonalnej funkcji funkcja Widoczność magazynu umożliwia ochronę zapasów (ringfencing) i kontrolę nad nadmierną sprzedażą. Więcej informacji zawiera temat [Alokacja zapasów dodatku Widoczność magazynu](inventory-visibility-allocation.md). |
 | *Włącz pozycje magazynowe w Widoczności magazynu* | Ta opcjonalna funkcja umożliwia widoczności zapasów obsługę pozycji, które są włączone do procesów magazynowych (pozycje WMS). Więcej informacji zawiera temat [Obsługa widoczności inwentarza dla pozycji WMS](inventory-visibility-whs-support.md). |

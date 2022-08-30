@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 4f2a1984d39713daa84f15422d7e0680b7f6c601
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 1b5282bc1fb4834d001cd2513664996a2f4cf4f0
+ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219577"
+ms.lasthandoff: 08/18/2022
+ms.locfileid: "9313892"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Usunięte lub przestarzałe funkcje w rozwiązaniu Dynamics 365 Finance
 
@@ -46,6 +46,17 @@ Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych fun
 | **Powiązane obszary produktów** | Zgłoszenie |
 | **Opcja wdrażania** | Wszystko |
 | **Stan** | Wycofane: po kwietniu 2023 roku funkcje **Zlecenia przeniesienia zapasów, które mają podatek od ceny transferowej** nie otrzymają wsparcia z poprawkami błędów i poprawkami bezpieczeństwa. Odbiorcy zostaną proszeni o korzystanie z poprawionej funkcjonalności [Zamówienia przeniesienia zapasów dla Indii](../../finance/localizations/apac-ind-stock-transfer.md). Po październiku 2023 r. nie będzie już dostępna funkcja **Zleceń przeniesienia zapasów, które mają podatek od ceny przelewu**, a klienci zostaną poproszeni o przejście do ulepszonej funkcji. |
+
+### <a name="bank-statement-import-and-export-of-positive-pay-file"></a>Import wyciągu bankowego i eksport pliku płatności dodatnich
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Przyczyna wycofania/usunięcia** |Zastąpiono poprawioną funkcjonalnością, zaimportowano wyciągi bankowe i wyeksportowano pliki płatności dodatnich.| 
+| **Zamieniona przez inną funkcję?**   | Tak |
+| **Powiązane obszary produktów**         | Zgłoszenie |
+| **Opcja wdrażania**              | Wszystko |
+| **Stan**                         | Wycofana: funkcjonalność XSLT importowania i eksportowania plików nie będzie już obsługiwać poprawek błędów i poprawek zabezpieczeń. Odbiorcy zostaną proszeni o korzystanie z poprawionych funkcji: [Konfigurowanie plików płatności dodatnich za pomocą raportowania elektronicznego](../../finance/accounts-payable/set-up-positive-pay-er.md) i [Konfigurowanie zaawansowanego importowania uzgodnienia konta bankowego za pomocą raportowania elektronicznego](../../finance/accounts-payable/import-bai2-er.md). Od września 2022 roku funkcja XSLT nie będzie już dostępna, a klienci zostaną poproszeni o przejście do poprawionej funkcjonalności.|
+
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10026-release"></a>Usunięte lub przestarzałe funkcje w wydaniu rozwiązania Finance 10.0.26
 

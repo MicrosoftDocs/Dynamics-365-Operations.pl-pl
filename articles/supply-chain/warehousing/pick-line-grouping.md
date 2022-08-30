@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-12-31
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: f9e6cbf0f520f0f30c01cefba03689e9c119f2cb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 00a4e07ac38a83cd4569006f3b6e2bdd59ed1a42
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890633"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334544"
 ---
 # <a name="pick-line-grouping"></a>Grupowanie wierszy pobrania
 
@@ -30,7 +30,7 @@ Grupowanie wierszy pobrania sprawia, że wiele wierszy pracy, które mają ten s
 
 ## <a name="turn-on-the-pick-line-grouping-feature"></a>Włącz funkcję grupowania wierszy pobrania
 
-Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z obszaru roboczego [Zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. Ta funkcja jest wymieniona w następujący sposób:
+Aby używać tej funkcji, należy ją włączyć dla systemu. Administratorzy mogą skorzystać z obszaru roboczego [Zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. Ta funkcja jest wymieniona w następujący sposób:
 
 - **Moduł:** *Zarządzanie magazynem*
 - **Nazwa funkcji:** *Grupowanie wiersza pobrania*

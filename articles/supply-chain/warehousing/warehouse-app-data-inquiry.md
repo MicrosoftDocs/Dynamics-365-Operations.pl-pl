@@ -2,7 +2,7 @@
 title: Przeszukuj dane za pomocą objazdów aplikacji mobilnej Warehouse Management
 description: W tym artykule opisano, jak skonfigurować elementy menu urządzenia mobilnego z zapytaniem o dane i używać ich jako części objazdów.
 author: perlynne
-ms.date: 08/01/2022
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: c3ea53379badb3cb2ed71b7f102956d71c3f047a
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: cc013e962b4da803764f16e451b1d433666e75c2
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220571"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336614"
 ---
 # <a name="query-data-using-warehouse-management-mobile-app-detours"></a>Przeszukuj dane za pomocą objazdów aplikacji mobilnej Warehouse Management
 
@@ -35,19 +35,19 @@ Na przykład w przepływie przyjmowania zamówienia zakupu numer zamówienia zak
 Aby można było używać funkcji opisanych w tym artykule, należy wykonać następującą procedurę, aby włączyć wymagane funkcje.
 
 1. Wybierz kolejno opcje **Administrator systemu \> Obszary robocze \> Zarządzanie funkcjami**. (Aby uzyskać więcej informacji na temat korzystania z obszaru roboczego **Zarządzanie funkcjami**, zobacz [Omówienie zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
-1. Włącz funkcję, która jest wymieniona w następujący sposób:
+1. Jeśli używasz 10.0.28 lub wcześniejszej wersji Supply Chain Management, włącz funkcję, która jest wymieniona w następujący sposób:
 
     - **Moduł:** *Zarządzanie magazynem*
     - **Nazwa funkcji:** *instrukcje kroków aplikacji magazynu*
 
-    Ta funkcja jest warunkiem koniecznym dla funkcji *Przepływ zapytań o dane w aplikacji Warehouse management*. Aby uzyskać więcej informacji na temat funkcji *Instrukcje krok po kroku aplikacji Warehouse*, patrz [Dostosowywanie tytułów i instrukcji krok po kroku dla aplikacji mobilnej Warehouse Management](mobile-app-titles-instructions.md).
+    Ta funkcja jest warunkiem koniecznym dla funkcji *Przepływ zapytań o dane w aplikacji Warehouse management*. Od wersji 10.0.29 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Aby uzyskać więcej informacji na temat funkcji *Instrukcje krok po kroku aplikacji Warehouse*, patrz [Dostosowywanie tytułów i instrukcji krok po kroku dla aplikacji mobilnej Warehouse Management](mobile-app-titles-instructions.md).
 
 1. Włącz funkcję, która jest wymieniona w następujący sposób:
 
     - **Moduł:** *Zarządzanie magazynem*
     - **Nazwa funkcjonalności:** *Obejścia aplikacji do zarządzania magazynem*
 
-    Ta funkcja jest warunkiem koniecznym dla funkcji *Przepływ zapytań o dane w aplikacji Warehouse management*. Aby uzyskać więcej informacji na temat funkcji *Objazdy aplikacji do Warehouse management*, zobacz [Konfigurowanie objazdów dla kroków w elementach menu urządzenia mobilnego](warehouse-app-detours.md).
+    Ta funkcja jest warunkiem koniecznym dla funkcji *Przepływ zapytań o dane w aplikacji Warehouse management*. Od wersji 10.0.29 Supply Chain Management version funkcja jest domyślnie włączona. Aby uzyskać więcej informacji na temat funkcji *Objazdy aplikacji do Warehouse management*, zobacz [Konfigurowanie objazdów dla kroków w elementach menu urządzenia mobilnego](warehouse-app-detours.md).
 
 1. Jeśli funkcja *Objazdy aplikacji do zarządzania magazynem* nie była jeszcze włączona, zaktualizuj nazwy pól w aplikacji mobilnej Warehouse Management, przechodząc do **Zarządzanie magazynem \> Konfiguracja \> Urządzenie mobilne \> Nazwy pól aplikacji Warehouse** i wybierając **Utwórz konfigurację domyślną**. Powtórz poprzedni krok dla każdej osoby prawnej (firmy), w której korzystasz z aplikacji mobilnej Warehouse Management. Aby uzyskać więcej informacji, zobacz temat [Konfigurowanie pól aplikacji mobilnej Warehouse Management](configure-app-field-names-priorities-warehouse.md).
 1. Włącz funkcję, która jest wymieniona w następujący sposób:

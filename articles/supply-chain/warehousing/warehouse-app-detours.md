@@ -2,7 +2,7 @@
 title: Konfiguracja obejść dla kroków w elementach menu urządzeń mobilnych
 description: W tym artykule opisano sposób konfigurowania obejść dla pozycji menu, tak aby pracownicy mogli przerwać bieżące zadanie, wykonać inne zadanie, a następnie powrócić do pierwotnego zadania bez utraty jakichkolwiek informacji.
 author: Mirzaab
-ms.date: 10/15/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8106dd600e8eadbaafcaa4cbc27ec179899318f7
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 50f899cd7f28a4b7fd23db5f049de02896e8d8e9
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219013"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336134"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>Konfiguracja obejść dla kroków w elementach menu urządzeń mobilnych
 
@@ -35,9 +35,8 @@ Zanim będzie można skonfigurować obejścia dla kroków w pozycjach menu urzą
 
 1. Wybierz kolejno opcje **Administrator systemu \> Obszary robocze \> Zarządzanie funkcjami**.
 1. Upewnij się, że funkcja *Instrukcje kroku aplikacji magazynowej* jest włączona w Twoim systemie. Od wersji 10.0.29 Supply Chain Management version ta funkcja jest domyślnie włączona. Aby uzyskać więcej informacji na temat funkcji *Instrukcje krok po kroku aplikacji Warehouse*, patrz [Dostosowywanie tytułów i instrukcji krok po kroku dla aplikacji mobilnej Warehouse Management](mobile-app-titles-instructions.md). Ta funkcja jest warunkiem koniecznym dla funkcji *Obejścia aplikacji zarządzania magazynem*.
-1. Włącz funkcję *Obejścia: Aplikacja do zarządzania magazynem*. Ta funkcja jest opisana w tym artykule.
-1. Zaktualizuj nazwy pól w aplikacji mobilnej Warehouse Management, przechodząc do **Zarządzanie magazynem \> Konfiguracja \> Urządzenie mobilne \> Nazwy pól aplikacji Warehouse** i wybierając **Utwórz konfigurację domyślną**. Aby uzyskać więcej informacji, zobacz temat [Konfigurowanie pól aplikacji mobilnej Warehouse Management](configure-app-field-names-priorities-warehouse.md).
-1. Powtórz poprzedni krok dla każdej osoby prawnej (firmy), w której korzystasz z aplikacji mobilnej Warehouse Management.
+1. Włącz funkcję *Obejścia: Aplikacja do zarządzania magazynem*. Ta funkcja jest opisana w tym artykule. Od wersji 10.0.29 Supply Chain Management version funkcja jest domyślnie włączona.
+1. Jeśli funkcja *Objazdy aplikacji do zarządzania magazynem* nie była jeszcze włączona, zaktualizuj nazwy pól w aplikacji mobilnej Warehouse Management, przechodząc do **Zarządzanie magazynem \> Konfiguracja \> Urządzenie mobilne \> Nazwy pól aplikacji Warehouse** i wybierając **Utwórz konfigurację domyślną**. Powtórz poprzedni krok dla każdej osoby prawnej (firmy), w której korzystasz z aplikacji mobilnej Warehouse Management. Aby uzyskać więcej informacji, zobacz temat [Konfigurowanie pól aplikacji mobilnej Warehouse Management](configure-app-field-names-priorities-warehouse.md).
 
 ## <a name="configure-a-detour-from-a-menu-specific-override"></a>Konfiguracja obejścia na podstawie wymuszenia określonego w menu
 

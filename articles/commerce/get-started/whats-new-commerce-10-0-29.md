@@ -2,7 +2,7 @@
 title: Wersja zapoznawcza aplikacji Dynamics 365 Commerce 10.0.29 (październik 2022 r.)
 description: W tym artykule opisano nowe oraz zmienione funkcje dostępne w Microsoft Dynamics 365 Commerce 10.0.29.
 author: josaw1
-ms.date: 08/02/2022
+ms.date: 08/17/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: c1f85fcd8f79106a3af93489d3bef608b9840bf3
-ms.sourcegitcommit: 91f58a9863f4e8f30ac787c2a9771c1ff6a05f72
+ms.openlocfilehash: 1e05f53f9ecb0a1994828172f6999a0bd5c208bc
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2022
-ms.locfileid: "9224246"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306240"
 ---
 # <a name="preview-of-dynamics-365-commerce-10029-october-2022"></a>Wersja zapoznawcza aplikacji Dynamics 365 Commerce 10.0.29 (październik 2022 r.)
 
@@ -38,6 +38,7 @@ To wydanie zawiera funkcje, które są podane w następującej tabeli. Możemy z
 | Customer Service | [Włączanie obsługi klienta za pomocą usługi Dynamics 365 Obsługa wielokanałowa dla Customer Service](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/chat-dynamics-365-commerce-omnichannel-customer-service) | Najwyższej klasy obsługa klienta jest kluczem do zapewnienia konsumentom spersonalizowanych i zachwycających doświadczeń handlowych. Obecnie istnieje wiele punktów kontaktowych commerce, takich jak sklepy fizyczne, kanały online i kanały społecznościowy. Klienci oczekują spersonalizowanej obsługi we wszystkich tych punktach kontaktowych. Ta funkcja pomaga zwiększyć konwersje koszyków na sprzedaż, zwiększyć spersonalizowaną relację z klientami i usprawnić obsługę klienta, integrując z usługami Dynamics 365 Obsługa wielokanałowa dla Customer Service. | Włączone przez administratorów/administratorów |
 | Handel elektroniczny | Obsługa porównania produktów w handlu elektronicznym | Umożliwia użytkownikom porównywanie produktów z różnych kategorii, dzięki czemu mogą sami podjąć właściwą decyzję o zakupie. Ta funkcja jest dostępna zarówno dla witryn B2C (business-to-consumer), jak i B2B. | Konstruktor witryn. | 
 | Karty upominkowe | Obsługa tabel kart upominkowych sieci sprzedaży do udostępniania danych między firmami | Centrala systemu Dynamics obsługuje funkcję udostępniania danych między firmami dla określonych tabel w architekturze systemu Dynamics. W tej funkcji Dynamics 365 Commerce dodaje obsługę udostępniania danych między firmami dla tabel kart podarunkowych sieci sprzedaży. Dlatego karta upominkowa w jednej firmie może teraz mieć zduplikowane dane w środowisku dla innej firmy. Zmiany wprowadzone w tabeli karty upominkowej firmy inicjatora zostaną udostępnione w tabeli zduplikowanych firmowych kart upominkowych. | Deweloperzy |
+| Globalizacja | [Włączanie funkcji lokalizacji w Commerce dla nowego zestawu SDK do Commerce](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/enable-commerce-localization-features-new-commerce-sdk) | Nowa funkcja umożliwia włączanie funkcji lokalizacji Commerce z centrali Commerce headquarters przy użyciu struktury lub parametrów zarządzania funkcjami. Przykłady integracji fiskalnej są teraz dołączone do nowego zestawu SDK do Commerce i obsługują niezależne opakowania. Ta funkcja umożliwia także przyjmowanie aplikacji Store Commerce przez globalnych odbiorców Commerce.<p><p>Ta wersja zawiera funkcje lokalizacji Commerce oraz przykłady integracji obrachunkowej dla [Austrii](../localizations/emea-aut-fi-sample.md), [Republiki Czeskiej](../localizations/emea-cze-fi-sample.md), [Francji](../localizations/emea-fra-cash-registers.md), [Niemiec](../localizations/emea-deu-fi-sample.md), [Włoch](../localizations/emea-ita-fpi-sample.md), [Norwegii](../localizations/emea-nor-cash-registers.md) i [Polski](../localizations/emea-pol-fpi-sample.md). | Włączone przez administratorów/administratorów |
 | Wydajność | Usuń zależność rts dla scenariuszy „edycji odbiorcy” | Wysoka dostępność i wysoka wydajność to domyślne oczekiwania wobec kanałów w punkt sprzedaży (POS) i kanałów w handlu e-commerce. Aby spełnić te oczekiwania, podczas edytowania informacji o odbiorcy kanały Dynamics 365 Commerce nie muszą już liczyć się z komunikacją w czasie rzeczywistym z Commerce headquarters. Możliwość asynchronicznej edycji informacji o odbiorcy w przypadku odbiorców asynchronicznych i niesynchronicznie może pomóc w redukowania wywołań w czasie rzeczywistym w Commerce headquarters. | Włączone przez administratorów/administratorów |
 
 ## <a name="feature-state-changes-in-this-release"></a>Zmiany w stanie funkcji w tym wydaniu

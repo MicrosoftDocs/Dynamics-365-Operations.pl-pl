@@ -2,7 +2,7 @@
 title: Tolerancja opóźnienia (dni z ujemnym opóźnieniem)
 description: Ten artykuł zawiera informacje na temat obliczania tolerancji opóźnienia i jej wpływu na tworzenie planowanych zleceń w optymalizacji planowania.
 author: t-benebo
-ms.date: 07/30/2021
+ms.date: 08/09/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: e1c9a9b618184303efe2bd10975e46423cca9ccc
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: fa4d2d1506546cacf5f9a7ec936f17601c5727d2
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219976"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335384"
 ---
 # <a name="delay-tolerance-negative-days"></a>Tolerancja opóźnienia (dni z ujemnym opóźnieniem)
 
@@ -23,11 +23,11 @@ ms.locfileid: "9219976"
 
 Funkcja tolerancji opóźnienia umożliwia optymalizacji planowania uwzględnienie wartości **Ujemne dni**, która jest ustawiona dla grup pokrycia, zapotrzebowania na towary lub planów głównych. Służy do przedłużenia okresu tolerancji opóźnienia stosowanego podczas planowania głównego. Pozwoli to uniknąć tworzenia nowych zamówień dostaw, jeśli istniejąca podaż będzie w stanie pokryć popyt w krótkim czasie. Celem tej funkcji jest określenie, czy tworzenie nowego zamówienia podażowego dla danego popytu ma sens.
 
-## <a name="turn-on-the-feature-in-your-system"></a>Włączanie funkcji w systemie
+## <a name="turn-delay-tolerance-features-on-or-off"></a>Wyłącz lub wyłącz funkcje tolerancji opóźnienia
 
 Aby udostępnić funkcję w systemie, przejdź do modułu [Zarządzanie funkcjami](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) i włącz następujące funkcje:
 
-- *Dni z ujemną wartością optymalizacji planowania* — ta funkcja włącza ustawienia dotyczące ujemnych liczby dni dla grup zapotrzebowania i zapotrzebowania na towar.
+- *Dni z ujemną wartością optymalizacji planowania* — ta funkcja włącza ustawienia dotyczące ujemnych liczby dni dla grup zapotrzebowania i zapotrzebowania na towar. Od wersji 10.0.29 Supply Chain Management funkcja jest obowiązkowa i nie można jej wyłączyć.
 - *Automatyzacja dostaw produkcji na zamówienie* — ta funkcja umożliwia ustawienia ujemnych dni dla planów główne. (Aby uzyskać więcej informacji, zobacz temat [Automatyzacja dostaw produktów na zamówienie](../make-to-order-supply-automation.md).)
 
 ## <a name="delay-tolerance-in-planning-optimization"></a>Tolerancja opóźnienia w optymalizacji planowania

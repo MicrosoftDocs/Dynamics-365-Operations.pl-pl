@@ -2,7 +2,7 @@
 title: Tworzenie zamówień przeniesienia z aplikacji magazynu
 description: W tym artykule opisano sposób tworzenia i przetwarzania zamówień przeniesienia z funkcji aplikacji Warehouse Management
 author: perlynne
-ms.date: 09/02/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: b9edc2d94aa1f4850d2e7fe2b4bdd1b092be944f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 45cbf7aca431c19e58de75355579304baef3cf7d
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8877458"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336464"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Tworzenie zamówień przeniesienia z aplikacji magazynu
 
@@ -26,14 +26,14 @@ ms.locfileid: "8877458"
 
 Ta funkcja umożliwia pracownikom magazynu tworzenie i przetwarzanie zamówień przeniesienia bezpośrednio z poziomu aplikacji Warehouse Management. Pracownik rozpoczyna od wybrania magazynu docelowego i może skanować jeden lub więcej numerów identyfikacyjnych za pomocą aplikacji, aby dodać je do zamówienia przeniesienia. Gdy pracownik magazynu wybierze **Zakończ zamówienie**, zadanie wsadowe utworzy wymagane zamówienie przeniesienia i wiersze zamówienia na podstawie dostępnych zapasów zarejestrowanych dla tych numerów identyfikacyjnych.
 
-## <a name="turn-this-feature-on-or-off"></a><a name="enable-create-transfer-order-from-warehouse-app"></a>Włączanie lub wyłączanie tej funkcji
+## <a name="turn-on-this-feature-and-its-prerequisites"></a><a name="enable-create-transfer-order-from-warehouse-app"></a>Włączanie tej funkcji i jej wymagań wstępnych
 
 Aby móc używać tej funkcji, musi zostać włączona w systemie razem z warunkami wstępnymi. Administratorzy mogą skorzystać ze strony [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją w razie potrzeby.
 
 1. Włącz następujące dwie funkcje (w kolejności) w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). W rozwiązaniu Supply Chain Management w wersji 10.0.25 obie te funkcje są domyślnie włączone.
-    1. *Przetwarzanie zdarzeń aplikacji magazynowej*
-    1. *Tworzenie i przetwarzanie zamówień przeniesienia z aplikacji magazynowej*
-1. Aby zautomatyzować przetwarzanie wydań wychodzących, należy również włączyć funkcję [Potwierdź wychodzące wysyłki z zadań wsadowych](confirm-outbound-shipments-from-batch-jobs.md).
+    1. *Przetwarzanie zdarzeń aplikacji magazynowej*<br>(Od wersji 10.0.29 Supply Chain Management funkcja jest obowiązkowa i nie można jej wyłączyć).
+    1. *Tworzenie i przetwarzanie zamówień przeniesienia z aplikacji magazynowej*<br>(Od wersji 10.0.29 Supply Chain Management funkcja jest obowiązkowa i nie można jej wyłączyć).
+1. Aby zautomatyzować przetwarzanie wydań wychodzących, należy również włączyć funkcję [*Potwierdź wychodzące wysyłki z zadań wsadowych*](confirm-outbound-shipments-from-batch-jobs.md). (Od wersji 10.0.21 Supply Chain Management version ta funkcja jest domyślnie włączona. (Od wersji 10.0.25 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć).
 
 ## <a name="set-up-a-mobile-device-menu-item-to-create-transfer-orders"></a><a name="setup-warehouse-app-menu"></a>Konfigurowanie elementu menu urządzenia przenośnego do tworzenia zamówień przeniesienia
 
@@ -307,11 +307,11 @@ Nie, do zamówienia przeniesienia ze zdarzeniem aplikacji magazynowej **Zakończ
 
 #### <a name="how-can-i-find-existing-transfer-orders-to-be-used-via-the-select-transfer-order-button-in-the-warehouse-management-mobile-app-if-the-order-has-not-yet-been-created-in-the-backend-system"></a>Jak można znaleźć istniejące zamówienia przeniesienia, które mają być używane za pośrednictwem przycisku „Wybierz zamówienie przeniesienia” w aplikacji Warehouse Management, jeśli zamówienie nie zostało jeszcze utworzone w systemie wewnętrznej bazy danych?
 
-Obecnie nie można wyszukiwać zamówień przeniesienia w aplikacji, ale można znaleźć numery zamówień przeniesienia na stronie **Zdarzenia aplikacji magazynowej**. Aby uzyskać więcej informacji, zobacz temat [Informacje o zdarzeniach aplikacji magazynowej](#inquire-the-warehouse-app-events).
+Korzystając z funkcji [zapytań o dane](warehouse-app-data-inquiry.md), można umożliwić pracownikom wyszukiwania numerów zamówień przeniesienia w aplikacji mobilnej Zarządzanie magazynem. Można na przykład utworzyć [przekierowanie](warehouse-app-detours.md) elementu menu urządzenia przenośnego, które wysyła zapytanie dla danych wyświetlanych na stronie **Zdarzeń aplikacji Magazyn** klienta sieci web (`WHSMobileDeviceQueueMessageCollection`) jako część kroku *Wybierz zamówienie — MobileDeviceQueueMessageCollectionIdentifierId*. Numer zamówienia przeniesienia pasuje do wartości wyświetlanej w polu **Identyfikator**. Zobacz także [Uzyskiwanie informacji o zdarzeniach aplikacji magazynowej](#inquire-the-warehouse-app-events).
 
 #### <a name="can-i-manually-select-the-transfer-order-number-to-be-used-from-the-warehouse-management-mobile-app"></a>Czy można ręcznie wybrać numer zamówienia przeniesienia, który ma być używany w aplikacji Warehouse Management?
 
-Obsługiwane są tylko automatycznie generowane numery zamówień przeniesienia za pośrednictwem sekwencji numerów.
+Obsługiwane są tylko automatycznie generowane numery zamówień przeniesienia za pośrednictwem sekwencji numerów. Zobacz również odpowiedź na poprzednie pytanie dotyczące sposobu skonfigurowania przycisku **Wybierz zamówienie przeniesienia**. Aby uzyskać więcej informacji na temat wyszukiwania numerów zamówień przeniesienia, zobacz temat [Informacje o zdarzeniach aplikacji magazynowej](#inquire-the-warehouse-app-events).
 
 ### <a name="background-processing"></a>Przetwarzanie w tle
 

@@ -10,9 +10,11 @@
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
             - name: Nowości i zmiany w rozwiązaniu Human Resources
               items:
-                - name: Human Resources 10.0.28 (scalona infrastruktura)
+                - name: Rozwiązanie Human Resources 10.0.29 (scalona infrastruktura)
+                  href: ./get-started/whats-new-changed-10-0-29.md
+                - name: Rozwiązanie Human Resources 10.0.28 (scalona infrastruktura)
                   href: ./get-started/whats-new-changed-10.0.28.md
-                - name: Human Resources 10.0.27 (scalona infrastruktura)
+                - name: Rozwiązanie Human Resources 10.0.27 (scalona infrastruktura)
                   href: ./get-started/hr-whats-new-changed-10-0-27.md
                 - name: Human Resources 10.0.26 (scalona infrastruktura)
                   href: ./get-started/hr-whats-new-changed-10-0-26.md
@@ -604,6 +606,10 @@
                   href: hr-benefits-setup-parameters-per-company.md
                 - name: Konfigurowanie parametrów zarządzania świadczeniami i samoobsługi pracownika etatowego dla wszystkich firm
                   href: hr-benefits-setup-parameters.md
+                - name: Konfigurowanie praw administratora dla zdarzeń zmiany sytuacji życiowe
+                  href: admin-life-events.md
+                - name: Konfigurowanie powiadomień pocztą e-mail dotyczących świadczeń
+                  href: hr-email-notifications.md
                 - name: Konfigurowanie reguł i opcji uprawnień
                   href: hr-benefits-setup-eligibility-rules.md
                 - name: Konfigurowanie opcji uprawnień do kontaktu osobistego

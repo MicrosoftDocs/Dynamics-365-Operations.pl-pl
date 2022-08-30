@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: b7c2c07f3e3eb76ff20e37e8d5d485dc08232c7a
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: c0d067ec4f2110b1c146ef0229b90e309578eaa7
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220431"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335084"
 ---
 # <a name="bill-for-maintenance-on-customer-owned-assets"></a>Rozliczanie konserwacji składników majątku należących do klienta
 
@@ -40,7 +40,7 @@ Ponadto ta funkcja udostępnia następujące funkcje:
 
 ## <a name="turn-on-the-customer-billing-feature"></a>Włącz funkcję rozliczania klientów
 
-Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
+Aby używać tej funkcji, należy ją włączyć dla systemu. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
 
 - **Moduł:** *Zarządzanie projektami i ich księgowanie*
 - **Nazwa funkcji:** *Rozliczanie zlecenia pracy*

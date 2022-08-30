@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: a82a3b26f2bf7cb546383da047d18c2997569ca5
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: df20f00a639d237bf8446f24a2ad4cbbfcf36615
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9065158"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334394"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Zadanie czyszczenia wpisów dostępnych zapasów do zarządzania magazynem
 
@@ -39,7 +39,7 @@ Jeśli jest dozwolone ujemne zapasy fizyczne, zadanie oczyszczania może nie by�
 Zadanie czyszczenia wpisów dostępnych zapasów jest dostępne w **Zarządzanie zapasami \> Zadania okresowe \> Wyczyść \> Oczyszczenie wpisów dostępnych zapasów do zarządzania magazynem**. Standardowe ustawienia zadania służą do sterowania zakresem i harmonogramem uruchamiania zadania. Ponadto zaoferowano następujące ustawienia:
 
 - **Usuń, jeśli nie zaktualizowano przez tę liczbę dni** — wprowadź minimalną liczbę dni oczekiwania zadania przed usunięciem wpisu zapasów, który został porzucony do zerowej ilości. To ustawienie umożliwia zredukowanie ryzyka usuwania nieużywanych wpisów dostępnych zapasów. Jeśli chcesz, aby Oczyszczanie było wykonywane jak najszybciej, wprowadź *0* (zero) lub pozostaw to pole puste.
-- **Maksymalny czas wykonywania (godziny)** — umożliwia wprowadzenie maksymalnego czasu wykonywania zadania oczyszczania (w godzinach). Jeśli zadanie nie zostanie ukończone przed upływem tego czasu, zapisze pracę, którą wykonał do tej pory, a następnie się zamknie. Ta możliwość jest szczególnie przydatna w przypadku implementacji z dużym użyciem zapasów. W takich przypadkach należy zaplanować zadanie, aby było uruchamiane w godzinach, gdy obciążenie systemu jest możliwie jak najbardziej jasne. Jeśli zadanie wsadowe ma kontynuować działanie, dopóki nie zostanie zakończone, należy wprowadzić wartość *0* (zero) lub pozostawić to pole puste. To ustawienie jest dostępne tylko wtedy, gdy funkcja pokrewna została [włączona w systemie](#max-execution-time).
+- **Maksymalny czas wykonywania (godziny)** — umożliwia wprowadzenie maksymalnego czasu wykonywania zadania oczyszczania (w godzinach). Jeśli zadanie nie zostanie ukończone przed upływem tego czasu, zapisze pracę, którą wykonał do tej pory, a następnie się zamknie. Ta możliwość jest szczególnie przydatna w przypadku implementacji z dużym użyciem zapasów. W takich przypadkach należy zaplanować zadanie, aby było uruchamiane w godzinach, gdy obciążenie systemu jest możliwie jak najbardziej jasne. Jeśli zadanie wsadowe ma kontynuować działanie, dopóki nie zostanie zakończone, należy wprowadzić wartość *0* (zero) lub pozostawić to pole puste. To ustawienie jest dostępne tylko wtedy, gdy funkcja pokrewna została [włączona dla systemu](#max-execution-time).
 
 Chociaż można uruchamiać zadanie w zwykłych godzinach pracy, zaleca się, aby był on uruchamiany poza godzinami pracy. Dzięki temu można zapobiec konfliktom, które mogą wystąpić, jeśli użytkownik pracuje z rekordem, który jest również czyszczony.
 

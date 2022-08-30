@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 62530c8ffc8be8d3bae562708872ba8eb00fa9cd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0b0102bde3548ccf976234e1938114289b80fbba
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847796"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335848"
 ---
 # <a name="configure-number-sequences-for-warehouse-flows"></a>Konfigurowanie sekwencji identyfikatorów dla przepływów magazynowych
 
@@ -39,7 +39,7 @@ Ta funkcja zwiększa efektywność etykietowania kartonów oraz dostosowuje nowe
 
 ## <a name="turn-on-the-number-sequence-extensions-feature"></a>Włącz funkcję rozszerzeń sekwencji identyfikatorów
 
-Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z obszaru roboczego [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. Ta funkcja jest wymieniona w następujący sposób:
+Aby móc używać tej funkcji, należy ją włączyć dla systemu. Administratorzy mogą skorzystać z obszaru roboczego [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. Ta funkcja jest wymieniona w następujący sposób:
 
 - **Moduł:** *Zarządzanie magazynem*
 - **Nazwa funkcji:** *Rozszerzenia sekwencji identyfikatorów*

@@ -2,7 +2,7 @@
 title: Marginesy bezpieczeństwa
 description: W tym artykule opisano, jak marginesy bezpieczeństwa mogą być używane z dodatkiem Optymalizacja planowania dla rozwiązania Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
-ms.date: 09/14/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: c792c33edea9a7f4e2973383b1fcce5b4e8ec998
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 247b48afab68651cff0ce84c8268a1df35a15c02
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854247"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335204"
 ---
 # <a name="safety-margins"></a>Marginesy bezpieczeństwa
 
@@ -79,12 +79,9 @@ Zwróć uwagę, że w przypadku zastosowania zapasu czasu dla rozchodu daty zapo
 
 ## <a name="set-up-safety-margins"></a>Konfiguracja marginesów bezpieczeństwa
 
-### <a name="turn-on-safety-margins-in-feature-management"></a>Włącz marginesy bezpieczeństwa w module Zarządzanie funkcjami
+### <a name="turn-safety-margins-on-or-off"></a>Włączanie lub wyłączanie marż bezpieczeństwa
 
-Aby móc używać tej funkcji razem z optymalizacją planowania, należy ją włączyć w systemie. Administratorzy mogą skorzystać z obszaru roboczego [Zarządzanie funkcjami](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. Ta funkcja jest wymieniona w następujący sposób:
-
-- **Moduł:** _Planowanie główne_
-- **Nazwa funkcji:** _Marginesy bezpieczeństwa w optymalizacji planowania_
+Aby używać tej funkcji, należy ją włączyć dla systemu. Od wersji 10.0.29 Supply Chain Management funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.29, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Marże dla optymalizacji planowania* w obszarze roboczym [Zarządzanie funkcjami](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="define-safety-margins"></a>Określenie marginesów bezpieczeństwa
 

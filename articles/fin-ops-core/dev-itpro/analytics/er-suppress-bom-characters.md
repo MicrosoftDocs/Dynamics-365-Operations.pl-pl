@@ -13,18 +13,18 @@ ms.author: filatovm
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: EROperationDesigner
-ms.openlocfilehash: fa66edef7e39c72d4859a21a1474096f7bc1c1dd
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: a2ea132b51f2f451fbe81a9c7869bea84bf4017a
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9278805"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9324028"
 ---
 # <a name="design-er-configurations-to-suppress-bom-characters-in-generated-files"></a>Projektowanie konfiguracji ER w celu pomijania znaków BOM w generowanych plikach
 
 [!include [banner](../includes/banner.md)]
 
-Możesz w module [Raportowanie elektronicznej (ER)](general-electronic-reporting.md) zaprojektować [rozwiązanie](er-quick-start1-new-solution.md) do generowania dokumentów wychodzących. Aby wygenerować dokumenty jako pliki tekstowe lub XML, rozwiązanie musi zawierać [konfigurację](general-electronic-reporting.md#Configuration) ER zawierającą składnik formatu ER. Aby określić [kodowanie znaków](/windows/win32/intl/character-sets) reprezentujące zestaw znaków w generowanych plikach, format ER musi zawierać element formatu pliku **Wspólne\\Plik**. Aby skonfigurować składnik formatu ER, należy otworzyć [wersję roboczą](general-electronic-reporting.md#component-versioning) utworzonej konfiguracji ER w projektancie formatów ER i dodać element **Wspólne\\Plik**. W polu **Kodowanie** określ kodowanie plików wychodzących generowanych w czasie wykonywania za pomocą tego składnika.
+Możesz w module [Raportowanie elektronicznej (ER)](general-electronic-reporting.md) zaprojektować [rozwiązanie](er-quick-start1-new-solution.md) do generowania dokumentów wychodzących. Aby wygenerować dokumenty jako pliki tekstowe lub XML, rozwiązanie musi zawierać [konfigurację](general-electronic-reporting.md#Configuration) ER zawierającą składnik formatu ER. Aby określić [kodowanie znaków](/windows/win32/intl/character-sets) reprezentujące zestaw znaków w generowanych plikach, format ER musi zawierać element formatu pliku **Wspólne\\Plik**. Aby skonfigurować składnik formatu ER, należy otworzyć wersję roboczą utworzonej konfiguracji ER w projektancie formatów ER i dodać element **Wspólne\\Plik**. W polu **Kodowanie** określ kodowanie plików wychodzących generowanych w czasie wykonywania za pomocą tego składnika.
 
 > [!NOTE]
 > Jeśli format zawiera niepoprawną nazwę kodowania, podczas zapisywania zmian ustawień formatu zgłaszany jest błąd.

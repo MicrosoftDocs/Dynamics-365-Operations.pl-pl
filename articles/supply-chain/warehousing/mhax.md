@@ -2,7 +2,7 @@
 title: Interfejs urządzeń do obsługi materiałów (MHAX)
 description: W tym artykule opisano, jak skonfigurować interfejs sprzętu do obsługi materiałów (MHAX), aby można było połączyć się z zewnętrznymi fizycznymi systemami obsługi materiałów (MH).
 author: Mirzaab
-ms.date: 03/04/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-04
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: dc46c9fea94c3d86f9511c2bea4ea64455c936f9
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 1056c7aee3ea96ddcb012704be40bef6c363f323
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068368"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334364"
 ---
 # <a name="material-handling-equipment-interface-mhax"></a>Interfejs urządzeń do obsługi materiałów (MHAX)
 
@@ -41,12 +41,13 @@ Oto wyjaśnienie interakcji widocznych na poprzedniej ilustracji:
 
 Aby można było używać funkcji MHAX, należy włączyć zarówno funkcję, jak i klucz konfiguracji.
 
-1. Wybierz kolejno opcje **Administrator systemu \> Obszary robocze \> Zarządzanie funkcjami**.
-2. W obszarze roboczym **[Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** włącz funkcję o nazwie *Interfejs urządzeń do obsługi materiałów*.
-3. Ustaw system w trybie konserwacji, jak to opisano w sekcji [Tryb konserwacji](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
-4. Wybierz kolejno opcje **Administrowanie systemem \> Ustawienia \> Konfiguracja licencji**.
-5. Rozwiń **Handel \> Zarządzanie magazynem i transportem**, a następnie zaznacz pole wyboru **Interfejs urządzeń do obsługi materiałów**.
-6. Wyłącz tryb konserwacji, jak to opisano w sekcji [Tryb konserwacji](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+1. Jeśli używasz Supply Chain Management w wersji 10.0.18 lub wcześniejszej, wykonaj następujące kroki:
+    1. Wybierz kolejno opcje **Administrator systemu \> Obszary robocze \> Zarządzanie funkcjami**.
+    1. W obszarze roboczym **[Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** włącz funkcję o nazwie *Interfejs urządzeń do obsługi materiałów*. (Od wersji 10.0.29 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć).
+1. Ustaw system w trybie konserwacji, jak to opisano w sekcji [Tryb konserwacji](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+1. Wybierz kolejno opcje **Administrowanie systemem \> Ustawienia \> Konfiguracja licencji**.
+1. Rozwiń **Handel \> Zarządzanie magazynem i transportem**, a następnie zaznacz pole wyboru **Interfejs urządzeń do obsługi materiałów**.
+1. Wyłącz tryb konserwacji, jak to opisano w sekcji [Tryb konserwacji](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 
 ## <a name="set-mhax-parameters"></a>Ustawianie parametrów MHAX
 

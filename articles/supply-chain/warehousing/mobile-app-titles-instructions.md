@@ -2,7 +2,7 @@
 title: Dostosowywanie tytułów kroków i instrukcji dla aplikacji mobilnej Warehouse Management
 description: W tym artykule opisano sposób tworzenia i pokazywania niestandardowych instrukcji wykonywania poszczególnych kroków przepływów zadania konfigurowanych dla aplikacji mobilnej Warehouse Management.
 author: Mirzaab
-ms.date: 08/11/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSMobileAppFlowStepListPage
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-11
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 40b2115126aae28a41feaec4d3aabd73595107cd
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: faa9bfa320823664603153601c56654170e7e23a
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220158"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334485"
 ---
 # <a name="customize-step-titles-and-instructions-for-the-warehouse-management-mobile-app"></a>Dostosowywanie tytułów kroków i instrukcji dla aplikacji mobilnej Warehouse Management
 
@@ -28,9 +28,9 @@ W tym artykule opisano sposób tworzenia i pokazywania niestandardowych instrukc
 - **Szybsze wdrażanie pracowników za pomocą prostych instrukcji wykonywania każdego kroku zadania.** Każdy krok przepływu zawiera instrukcje umożliwiające pracownikom pierwszej linii zrozumienie zadania.
 - **Podawanie instrukcji zgodne z własnymi procesami.** Piszesz własne instrukcje, dostosowując je do swoich procesów biznesowych i magazynowych. Można na przykład dopasować terminologię do miejsca fizycznego i skrótów lokalnych.
 
-## <a name="turn-on-the-warehouse-app-step-instructions-feature"></a>Włączanie funkcji instrukcji kroków aplikacji magazynu
+## <a name="turn-the-warehouse-app-step-instructions-feature-on-or-off"></a>Włączanie lub wyłączanie funkcji instrukcji kroków aplikacji magazynu
 
-Aby używać tej funkcji, należy ją włączyć w systemie. Od wersji 10.0.29 Supply Chain Management version ta funkcja jest domyślnie włączona. Administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Instrukcje kroku aplikacji magazynowej Warehouse* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Aby używać tej funkcji, należy ją włączyć dla systemu. Od wersji 10.0.29 Supply Chain Management ta funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.29, to administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Instrukcje kroku aplikacji magazynowej* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="step-titles-and-step-instructions-in-the-app"></a>Tytuły kroków i instrukcje dotyczące kroków w aplikacji
 

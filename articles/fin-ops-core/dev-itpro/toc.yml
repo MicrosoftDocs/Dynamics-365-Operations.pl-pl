@@ -14,9 +14,11 @@
               items:
                 - name: Nowości i zmiany w aktualizacjach platformy — strona główna
                   href: get-started/whats-new-home-page.md
-                - name: Aktualizacje platformy dla wersji 10.0.28 (sierpień 2022)
+                - name: Aktualizacja platformy 10.0.29 (październik 2022)
+                  href: get-started/whats-new-platform-updates-10-0-29.md
+                - name: Aktualizacja platformy 10.0.28 (sierpień 2022)
                   href: get-started/whats-new-platform-updates-10-0-28.md
-                - name: Aktualizacje platformy dla wersji 10.0.27 (lipiec 2022)
+                - name: Aktualizacja platformy 10.0.27 (lipiec 2022)
                   href: get-started/whats-new-platform-updates-10-0-27.md
             - name: Usunięte lub wycofane funkcje
               items:
@@ -1090,6 +1092,8 @@
                           href: data-entities/dual-write/link-your-environment.md
                         - name: Włączenie mapowania jednostek dla podwójnego zapisu
                           href: data-entities/dual-write/enable-entity-map.md
+                    - name: Włączanie pięciominutowego okna przekroczenia limitu czasu sesji dla sesji podwójnego zapisu
+                      href: data-entities/dual-write/5-minute-mode.md
                     - name: Osobny pakiet orkiestracji aplikacji podwójnego zapisu
                       href: data-entities/dual-write/separated-solutions.md
                     - name: Migracja typu danych Waluta na potrzeby podwójnego zapisu

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 5b3bf0d94e6975f543361481b73c845ef9c56d05
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: aeadca6f3c31d5d8c1ef9d334b0e531896ac99b1
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885675"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336314"
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-provide-a-pick-line-overview"></a>Skonfiguruj element menu urządzenia przenośnego w celu dostarczenia przeglądu wiersza pobrania
 
@@ -30,7 +30,7 @@ Administratorzy mogą oddzielnie konfigurować poszczególne elementy menu, aby 
 
 ## <a name="turn-on-the-work-pick-line-overview-feature"></a>Włącz funkcję Przegląd wiersza wyboru pracy
 
-Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
+Aby używać tej funkcji, należy ją włączyć dla systemu. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
 
 - **Moduł:** _Zarządzanie magazynem_
 - **Nazwa funkcji:** _Przegląd wiersza wyboru pracy_
