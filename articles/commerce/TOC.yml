@@ -466,6 +466,8 @@
                           items:
                             - name: Obsługa zewnętrznych kart upominkowych
                               href: dev-itpro/gift-card.md
+                            - name: Udostępnianie danych między firmami dla kart upominkowych
+                              href: dev-itpro/data-sharing-gift-cards.md
                     - name: RSAT
                       items:
                         - name: Rejestrator testowy i narzędzie Regression Suite Automation Tool dla aplikacji Cloud POS
