@@ -2,7 +2,7 @@
 title: Miejsca docelowe raportowania elektronicznego (ER)
 description: Ten artykuł zawiera informacje dotyczące zarządzania miejscami docelowymi raportowania elektronicznego, typów obsługiwanych miejsc docelowych oraz względów bezpieczeństwa.
 author: kfend
-ms.date: 05/18/2022
+ms.date: 08/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.1
 ms.custom: 97423
 ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 ms.search.form: DocuType, ERSolutionTable
-ms.openlocfilehash: 1718b9e32c1e9f34d38479b74d59af6233f82a8c
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: b1bf6289e80769dfe8858f307cbb9b217b42dbb4
+ms.sourcegitcommit: f2edc193003564c5bee1747f9c2b800feee342bd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9281976"
+ms.lasthandoff: 08/29/2022
+ms.locfileid: "9360987"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Miejsca docelowe raportowania elektronicznego (ER)
 
@@ -247,6 +247,52 @@ Na skróconej karcie **Ogólne**, w polu **Wyślij folder jako**, wybierz jedną
 ### <a name="limitations"></a>Ograniczenia
 
 Jeśli ustawisz pole **Wyślij folder jako** na **Oddziel pliki** dla komponentu **Folder**, który zawiera inne zagnieżdżone komponenty **Folder**, ustawienie to nie jest stosowane rekursywnie do zagnieżdżonych komponentów **Folder**.
+
+## <a name="change-page-layout-properties-of-a-template"></a><a name="change-page-layout-properties-of-a-template"></a> Zmień właściwości układu strony szablonu
+
+Można skonfigurować docelowe raportowanie elektroniczne dla składnika raportowania elektronicznego, który został zaprojektowany do użycia szablonu w formacie programu Microsoft Office (Excel lub Word) do generowania raportu. Jeśli nie jesteś właścicielem tego formatu i musisz zmienić właściwości układu strony szablonu formatu, w wersjach rozwiązania Finance wcześniejszych niż 10.0.29 musisz utworzyć format pochodny i zmodyfikować właściwości szablonu. Następnie należy zarządzać konfiguracją formatu pochodnego. Jednak w wersji 10.0.29 i nowszej można zmieniać właściwości układu strony szablonu w czasie wykonywania, aby uniknąć tworzenia i obsługi konfiguracji pochodnego formatu. W tym celu należy skonfigurować żądane właściwości jako część ustawień skonfigurowanego docelowego raportowania elektronicznego. Po uruchomieniu formatu raportowania elektronicznego i uruchomieniu docelowego raportowania elektronicznego, który jest skofingurowany do użycia z właściwościami układu strony wartości właściwości układu strony wykonanego miejsca docelowego są stosowane do szablonu, który jest używany, zastępując właściwości oryginalnego szablonu. Dla składnika tego samego formatu można skonfigurować różne lokalizacje docelowe, konfigurując różne właściwości układu strony dla używanego szablonu.
+
+W lokalizacji docelowej raportowania elektronicznego można skonfigurować następujące właściwości dla składnika formatu, który jest przeznaczony do użycia w formatach programów Excel lub Word:
+
+- Orientacja strony
+    - Pionowo
+    - Pozioma
+- Rozmiar papieru
+    - A3
+    - A4
+    - A5
+    - B4
+    - B5
+    - Executive
+    - Informacje prawne
+    - Litera
+    - Statement
+    - Tabloid
+- Marginesy strony
+    - U góry
+        - Nagłówek
+    - U dołu
+        - Stopka
+    - Lewo
+    - Prawo
+
+> [!NOTE]
+> Orientacja strony szablonu skonfigurowanego w ten sposób musi być wyrównana z [orientacją strony dla konwersji w formacie PDF](#select-a-page-orientation-for-pdf-conversion), jeśli jest skonfigurowana konwersja do formatu PDF.
+
+Musisz wybrać jednostkę długości do ustawienia marginesów strony:
+
+- Cale
+- Centymetry
+- Milimetry
+
+![Konfigurowanie właściwości układu strony na stronie docelowego raportowania elektronicznego.](./media/er_destinations-set-page-layout-properties.png)
+
+> [!TIP]
+> Gdy wartość marginesu jest w centymetrach i określana z wieloma miejscami dziesiętnymi, jest ona zaokrąglana w czasie wykonywania do najbliższej wartości z dokładnością do 1 miejsca dziesiętnego.
+>
+> Gdy wartość marginesu jest w milimetrach i określana z miejscami dziesiętnymi, jest ona zaokrąglana w czasie wykonywania dla programu Excel do najbliższej wartości liczby całkowitej bez wartości dziesiętnej.
+>
+> Gdy wartość marginesu jest w milimetrach i określana z wieloma miejscami dziesiętnymi, jest ona zaokrąglana w czasie wykonywania dla programu Word do najbliższej wartości z dokładnością do jednego miejsca dziesiętnego.
 
 ## <a name="security-considerations"></a>Zagadnienia dotyczące zabezpieczeń
 

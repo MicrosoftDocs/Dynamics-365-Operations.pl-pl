@@ -2,7 +2,7 @@
 title: Omówienie zadań importowania i eksportowania danych
 description: Obszar roboczy Zarządzanie danymi umożliwia tworzenie zadań importu i eksportu danych oraz zarządzanie nimi.
 author: peakerbl
-ms.date: 04/25/2022
+ms.date: 08/26/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 18a15928eef4d7158f778729506d691dd587e013
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.openlocfilehash: a03f8fd0fa05a1400c69a2da8867dee135ad06a1
+ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9109471"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "9357612"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Omówienie zadań importowania i eksportowania danych
 
@@ -76,6 +76,19 @@ Podczas wybieranie jednostki należy wybrać format eksportowanych lub importowa
 
 > [!NOTE]
 > W przypadku formatów plików opartych na XML-u pamiętaj, by używać tylko dozwolonych znaków. Więcej szczegółów na temat ważnych znaków znajdziesz w [dozwolone znaki w XML 1.0](https://www.w3.org/TR/2006/REC-xml-20060816/Overview.html#charsets/). XML 1.0 nie dopuszcza żadnych znaków sterujących z wyjątkiem tabulatorów, powrotów karetki i podawania wierszy. Przykładami niedozwolonych znaków są nawiasy kwadratowe, nawiasy klamrowe i ukośniki. 
+
+Zamiast określonej strony kodowej do importowania lub eksportowania danych należy użyć standardu Unicode. Pomaga to zapewnić najbardziej spójne wyniki i wyeliminować zadania zarządzania danymi, ponieważ zawierają znaki Unicode. Zdefiniowane w systemie formaty danych źródłowych, które używają standardu Unicode, mają w nazwie źródła standard **Unicode**. Format Unicode jest stosowany przez wybranie strony kodowej ANSI kodowania Unicode jako **Strony kodowej** na karcie **Ustawienia regionalne**. Wybierz jedną z następujących stron kodów dla Unicode:
+
+| Strona kodowa | Nazwa wyświetlana                |
+|-----------|-----------------------------|
+| 1200      | Unicode                     |
+| 12000     | Unicode (UTF-32)            |
+| 12001     | Unicode (UTF-32 Big-Endian) |
+| 1201      | Unicode (Big-Endian)        |
+| 65000     | Unicode (UTF-7)             |
+| 65001     | Unicode (UTF-8)             |
+
+Aby uzyskać więcej szczegółów dotyczących stron kodów, zobacz [Identyfikatory stron kodów](/windows/win32/intl/code-page-identifiers/).
 
 ### <a name="sequence-the-entities"></a>Określanie kolejności jednostek
 Kolejność jednostek można określić w szablonie danych albo w zadaniach importu lub eksportu. Po uruchomieniu zadania, które zawiera więcej niż jedną jednostkę należy się upewnić, że kolejność jednostek danych jest prawidłowa. Kolejność jednostek określa się głównie po to, aby obsłużyły zależności funkcjonalne między jednostkami. Jeżeli jednostki nie mają żadnych zależności funkcjonalnych, można zaplanować ich import lub eksport równoległy. 

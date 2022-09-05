@@ -2,7 +2,7 @@
 title: Skróty klawiaturowe
 description: W tym artykule przedstawiono omówienie kombinacji klawiszy skrótów, które mogą być używane podczas pracy z aplikacjami finansowymi i operacyjnymi.
 author: jasongre
-ms.date: 07/12/2022
+ms.date: 08/26/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 67e1904807dfe5122de3d3ead97c2e2c11ed213d
-ms.sourcegitcommit: bd2d6a86a7fd4b4f6f86656998f7a8844f949e42
+ms.openlocfilehash: 04abaeada458e05df3de045d9c7a715040b7bfa4
+ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "9140448"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "9357599"
 ---
 # <a name="keyboard-shortcuts"></a>Skróty klawiaturowe
 
@@ -135,10 +135,10 @@ Użytkownicy mogą zapoznawać się z aktualnie dostępnymi skrótami bezpośred
 | Przewijanie poziome                                                                                                   | Shift + koło myszy             |
 | Przejdź do następnej/poprzedniej kolumny                                                                                       | Tab / Shift+Tab                 |
 | Przejdź do następnego/poprzedniego wiersza                                                                                          | Strzałka w dół / strzałka w górę           |
-| Przejdź do następnego/poprzedniego wiersza bez zaznaczania<blockquote>[!NOTE] Ten skrót dotyczy tylko scenariuszy wyboru wielu elementów.</blockquote> | Ctrl+strzałka w górę / Ctrl+strzałka w dół |
-| Wybierz/wyczyść bieżący wiersz<blockquote>[!NOTE] Ten skrót dotyczy tylko scenariuszy wyboru wielu elementów.</blockquote>                    | Ctrl+Spacja / Ctrl+kliknięcie         |
-| Dodaj następny/poprzedni wiersz do wybranego zestawu<blockquote>[!NOTE] Ten skrót dotyczy tylko scenariuszy wyboru wielu elementów.</blockquote>   | Shift+Spacja                     |
-| Dodaj zakres wierszy do wybranego zestawu<blockquote>[!NOTE] Ten skrót dotyczy tylko scenariuszy wyboru wielu elementów.</blockquote>         | Shift+kliknięcie                     |
+| Przejdź do następnego/poprzedniego wiersza bez zaznaczania<br><br>**Uwaga:** ten skrót dotyczy tylko scenariuszy wyboru wielu elementów. | Ctrl+strzałka w górę / Ctrl+strzałka w dół |
+| Wybierz/wyczyść bieżący wiersz<br><br>**Uwaga:** ten skrót dotyczy tylko scenariuszy wyboru wielu elementów.                   | Ctrl+Spacja / Ctrl+kliknięcie         |
+| Dodaj następny/poprzedni wiersz do wybranego zestawu<br><br>**Uwaga:** ten skrót dotyczy tylko scenariuszy wyboru wielu elementów.  | Shift+Spacja                     |
+| Dodaj zakres wierszy do wybranego zestawu<br><br>**Uwaga:** ten skrót dotyczy tylko scenariuszy wyboru wielu elementów.         | Shift+kliknięcie                     |
 | Przejdź do następnej/poprzedniej strony danych                                                                                   | Page up / Page down             |
 | Utwórz nowy wiersz u dołu siatki                                                                             | Strzałka w dół (od ostatniego wiersza)  |
 | Przejdź do pierwszego rekordu                                                                                               | CTRL+Home                       |
@@ -148,7 +148,7 @@ Użytkownicy mogą zapoznawać się z aktualnie dostępnymi skrótami bezpośred
 | Przejdź do następnego zaznaczonego wiersza                                                                                            | Alt+Shift+M, L                  |
 | Przejdź do poprzedniego zaznaczonego wiersza                                                                                        | Alt+Shift+M, P                  |
 | Przejdź do ostatniego zaznaczonego wiersza                                                                                           | Alt+Shift+M, N                  |
-| Wykonaj akcję domyślną w tabeli<blockquote>[!NOTE] Ten skrót jest włączony, gdy fokus znajduje się w komórce zawierającej hiperłącze, a wszystkie komórki w tej kolumnie zawierają hiperłącza.</blockquote> | Enter                           |
+| Wykonaj akcję domyślną w tabeli<br><br>**Uwaga:** ten skrót jest włączony, gdy fokus znajduje się w komórce zawierającej hiperłącze, a wszystkie komórki w tej kolumnie zawierają hiperłącza. | Enter                           |
 | Przełączanie fokusa między wybranym wierszem a wierszem nagłówka                                                               | Alt+Shift+H                     |
 | Powiększenie/pomniejszenie bieżącej kolumny (z fokusem w wierszu nagłówka)                                                  | Strzałka w prawo / Strzałka w lewo        |
 | Przenieś bieżącą kolumnę do następnego/poprzedniego położenia (z fokusem w wierszu nagłówka)                                   | Ctrl+Shift+strzałka w prawo / Ctrl+Shift+strzałka w lewo |
