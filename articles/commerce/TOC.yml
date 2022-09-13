@@ -12,6 +12,8 @@
               items:
                 - name: Nowości i zmiany w rozwiązaniu Commerce — strona główna
                   href: get-started/whats-new-home-page.md
+                - name: Rozwiązanie Commerce 10.0.30 (listopad 2022)
+                  href: get-started/whats-new-commerce-10-0-30.md
                 - name: Rozwiązanie Commerce 10.0.29 (październik 2022)
                   href: get-started/whats-new-commerce-10-0-29.md
                 - name: Rozwiązanie Commerce 10.0.28 (lipiec 2022)
@@ -702,18 +704,16 @@
                   href: optimal-combination-overlapping-discounts.md
                 - name: Definiowanie rabatów specyficznych dla kanału
                   href: define-channel-specific-discounts.md
-                - name: Opcje blokowania rabatów na produkty detaliczne
-                  href: prevent-discounts.md
                 - name: Rabaty oparte na metodzie płatności
                   href: tender_based_discounts.md
                 - name: Rabat wysyłki
                   href: shipping-discount.md
                 - name: Konfigurowanie upominków za pomocą promocji zakupu
                   href: gift-with-purchase.md
-                - name: Ustawianie kuponów
-                  href: retail-coupons.md
-                - name: Wyświetlanie rabatów w punkcie sprzedaży
-                  href: discounts-pos.md
+                - name: Kupony
+                  href: coupons.md
+                - name: Ustawienia cen
+                  href: price-settings.md
                 - name: Raporty cen
                   href: price-report.md
                 - name: Tworzenie umów handlowych specyficznych dla kanału
@@ -800,6 +800,8 @@
                       href: calculated-inventory-retail-channels.md
                     - name: Operacja wyszukiwania zapasów w punkcie sprzedaży
                       href: pos-inventory-lookup-operation.md
+                    - name: Lista produktów z pełnymi informacjami dotyczącymi zapasów
+                      href: inventory-aware-product-listing.md
                 - name: Zamówienia zakupu
                   items:
                     - name: Omówienie zamówień zakupu

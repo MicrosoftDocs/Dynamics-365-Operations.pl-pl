@@ -12,6 +12,8 @@
               items:
                 - name: Nowości i zmiany w rozwiązaniu Finance — strona główna
                   href: get-started/whats-new-home-page.md
+                - name: Rozwiązanie Finance 10.0.30 (listopad)
+                  href: get-started/whats-new-changed-10-0-30.md
                 - name: Rozwiązanie Finance 10.0.29 (październik)
                   href: get-started/whats-new-changed-10-0-29.md
                 - name: Rozwiązanie Finance 10.0.28 (sierpień)
@@ -1138,6 +1140,8 @@
                       href: general-ledger/subledger-transfer.md
                     - name: Eksplorator źródeł księgowania
                       href: accounts-payable/accounting-source-explorer.md
+                    - name: Dokumenty oczekujące na księgowanie
+                      href: general-ledger/documents-pending-accounting.md
             - name: Raporty i zapytania
               items:
                 - name: Wyświetlanie wpisów w arkuszu i transakcji

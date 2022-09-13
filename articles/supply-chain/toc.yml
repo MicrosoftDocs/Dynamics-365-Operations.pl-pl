@@ -3413,8 +3413,6 @@
                       href: warehousing/packing-work.md
                     - name: Konfigurowanie zmiany alokacji pozycji na potrzeby pobierania w niedomiarze
                       href: warehousing/tasks/set-up-short-picking-item-reallocation.md
-                    - name: Anulowanie obsługi wyjątków dotyczących pracy magazynowej
-                      href: warehousing/cancel-warehouse-work.md
                     - name: Harmonogram prac sterowany przez system
                       href: warehousing/system-directed-work-sequencing.md
                     - name: Grupowanie wierszy pobrania
@@ -3431,6 +3429,10 @@
                       href: warehousing/put-to-wall-put-to-store.md
                     - name: Wychodzące wizualizacje obciążenia pracą
                       href: warehousing/outbound-workload-visualization.md
+                    - name: Ręczna obsługa wyjątków pobierania wierszy sprzedaży i przeniesienia
+                      href: warehousing/manual-order-line-picking-exception-handling.md
+                    - name: Anulowanie obsługi wyjątków dotyczących pracy magazynowej
+                      href: warehousing/cancel-warehouse-work.md
                 - name: Uzupełnianie zapasów
                   items:
                     - name: Omówienie uzupełniania zapasów
