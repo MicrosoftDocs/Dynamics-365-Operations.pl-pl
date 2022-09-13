@@ -2,7 +2,7 @@
 title: Moduł wyników wyszukiwania
 description: W tym artykule omówiono moduły wyników wyszukiwania i opisano, jak dodać je do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 05/18/2022
+ms.date: 08/31/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
 ms.search.industry: ''
 ms.search.form: ''
-ms.openlocfilehash: d10e9ed78dfc90833ff3c09021f863f6ef0b80d9
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: eeb7cd0769fcb866a3d7dcc03e8e87daf24b2c5d
+ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9286818"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9405301"
 ---
 # <a name="search-results-module"></a>Moduł wyników wyszukiwania
 
@@ -86,48 +86,16 @@ Aby dodać moduł wyników wyszukiwania do strony kategorii w module budowania w
 1. W sekcji **Przegląd i zakończenie** przejrzyj konfigurację strony. Jeśli chcesz edytować informacje na stronie, wybierz pozycję **Wstecz**. Jeśli informacje na stronie są poprawne, wybierz pozycję **Utwórz stronę**.
 1. Wybierz **Zakończ edycję**, aby zaewidencjonować stronę, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
 
-## <a name="enable-inventory-awareness-for-the-search-results-module"></a>Włącz świadomość zapasów dla modułu wyników wyszukiwania
+## <a name="inventory-aware-search-results-module"></a>Moduł wyników wyszukiwania informacji o zapasach
 
-Klienci zazwyczaj oczekują, że witryna e-commerce będzie świadoma zapasów podczas przeglądania, tak aby mogli zdecydować, co zrobić, jeśli nie ma zapasów dla danego produktu. Moduł wyników wyszukiwania można skonfigurować tak, by uwzględniał dane dotyczące zapasów i zapewniał następujące doświadczenia:
+Moduł wyników wyszukiwania można skonfigurować tak, by uwzględniał dane dotyczące zapasów i zapewniał następujące doświadczenia:
 
-- Pokaż etykietę dostępności zapasów razem z produktem.
+- Wyświetl etykiety na poziomie zapasów wraz z produktami.
 - Ukryj produkty, których nie ma w magazynie, z listy produktów.
-- Pokaż produkty, których nie ma w magazynie, na końcu listy produktów.
-- Filtruj produkty w wynikach wyszukiwania według poziomu zapasów.
+- Wyświetl produkty, których nie ma w magazynie, na końcu listy produktów.
+- Obsługa filtrowania produktów opartych na zapasach.
 
-Aby włączyć te doświadczenia, musisz najpierw włączyć cechę **Zwiększone wykrywanie produktów w handlu elektronicznym, aby były one świadome zapasów** w przestrzeni roboczej **Zarządzanie cechami**.
-
-> [!NOTE]
-> Funkcja **Usprawnienie wykrywania produktów w e-Commerce, tak aby były świadome stanów magazynowych** jest dostępna od wersji 10.0.20 Commerce i nowszych.
-
-Wyszukiwanie produktów uwzględniające zapasy wykorzystuje atrybuty produktów do uzyskania informacji o dostępności zapasów. Warunkiem działania tej funkcji jest utworzenie dedykowanych atrybutów produktów, wprowadzenie dla nich danych magazynowych oraz dodanie ich do kanału online. 
-
-Aby utworzyć dedykowane atrybuty produktów, które będą obsługiwać moduł wyników wyszukiwania uwzględniający zapasy, wykonaj poniższe kroki.
-
-1. W Commerce przejdź do **Handel detaliczny i inny \> IT: Handel detaliczny i inny \> Harmonogram integracji**.
-1. Wybierz i otwórz **Wypełnij atrybuty produktu poziomem zapasów**.
-1. W oknie dialogowym wprowadź następujące informacje:
-
-    1. W polu **Nazwa atrybutu produktu i typu** podaj nazwę dedykowanego atrybutu produktu, który będzie tworzony do przechwytywania dostępności stanów magazynowych.
-    1. W polu **Dostępność zapasów na podstawie** należy wybrać typ ilości, na podstawie której ma być obliczany poziom zapasów (np. **Dostępność fizyczna**). 
-
-1. Uruchom zadanie w tle. Ponieważ w środowisku wielokanałowym zapasy produktów ciągle się zmieniają, zdecydowanie zalecamy zaplanowanie tego zadania jako procesu wsadowego.
-
-> [!NOTE]
-> Aby zapewnić spójne obliczanie poziomu zapasów na wszystkich stronach i modułach witryny e-commerce, pamiętaj, aby wybrać ten sam typ ilości zarówno dla ustawienia **Dostępność zapasów na podstawie** w centrali Commerce, jak i **Poziom zapasów na podstawie** w module kreator witryn Commerce. Aby uzyskać więcej informacji na temat ustawień inwentarza w programie do budowania witryn, zobacz temat [Zastosuj ustawienia inwentarza](inventory-settings.md).
-
-Aby skonfigurować atrybuty produktu dla kanału internetowego, wykonaj poniższe kroki. 
-
-1. W centrali wybierz kolejno opcje **Retail i Commerce \> Ustawienia kanału \> Kategorie kanału sprzedaży i atrybuty produktów**.
-1. Wybierz kanał internetowy, dla którego chcesz włączyć moduł wyników wyszukiwania uwzględniający stan inwentarza.
-1. Wybierz i otwórz powiązaną grupę atrybutów, a następnie dodaj do niej nowo utworzony atrybut produktu.
-1. W przypadku wersji Commerce sprzed wydania 10.0.27 wybierz **Ustaw metadane atrybutu**, zaznacz nowo dodany atrybut produktu, a następnie włącz opcje **Pokaż atrybut na kanale**, **Odtwarzanie**, **Możliwość dopracowania** oraz **Możliwość wyszukiwania**.
-1. Przejdź do **Retail i Commerce \> Retail i Commerce IT \> Harmonogram dystrybucji** i uruchom zadanie **1150 (Katalog)**. Jeśli zaplanujesz zadanie **Uzupełnij atrybuty produktu o poziom zapasów** jako proces wsadowy, zalecamy, abyś również zaplanował zadanie 1150 jako proces wsadowy, który będzie wykonywany z tą samą częstotliwością.
-
-> [!NOTE]
-> W przypadku produktów, które są widoczne w module wyników wyszukiwania, poziom zapasów jest widoczny na poziomie produktu głównego, a nie na poziomie poszczególnych wariantów. Dostępne są tylko dwie możliwe wartości: „Dostępne” i „Poza magazynem”. Rzeczywista etykieta dla wartości jest pobierana z [profilu poziomu inwentaryzacji](inventory-buffers-levels.md). Produkt główny jest uważany za wyczerpany tylko wtedy, gdy wszystkie jego warianty są wyczerpane.
-
-Po wykonaniu wszystkich poprzednich kroków konfiguracyjnych, na stronach z wynikami wyszukiwania pojawią się elementy uściślające z filtrem opartym na stanie magazynowym, a moduł wyników wyszukiwania będzie pobierał dane o stanie magazynowym zza kulis. Następnie możesz skonfigurować ustawienia **Ustawienia zapasów dla stron list produktów** w kreatorze witryn Commerce, aby kontrolować sposób w jaki moduł wyników wyszukiwania pokazuje produkty niedostępne w magazynie. Aby uzyskać więcej informacji, zobacz [Zastosuj ustawienia zapasów](inventory-settings.md).
+Aby włączyć te doświadczenia, musisz najpierw włączyć cechę **Rozszerzone wykrywanie produktu handlu elektronicznego w celu otrzymania informacji o zapasach**, a następnie skonfiguruj pewne wstępnie wymagane ustawienia w centrali Commerce headquarters. Aby uzyskać więcej informacji, zobacz [Lity produktów z informacjami o zapasach](inventory-aware-product-listing.md).
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

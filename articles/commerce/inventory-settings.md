@@ -2,7 +2,7 @@
 title: Zastosuj ustawienia zapasów
 description: W tym artykule opisano ustawienia zapasów oraz sposób ich stosowania w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 10/15/2021
+ms.date: 08/31/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.industry: ''
-ms.openlocfilehash: bc55715b7c74f3b572459dd1aa7d409b7175535b
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 49310a44f8b9c636734e04d4eed9445384b55791
+ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287600"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9405328"
 ---
 # <a name="apply-inventory-settings"></a>Zastosuj ustawienia zapasów
 
@@ -51,12 +51,12 @@ W module Commerce ustawienia zapasów są definiowane w **Ustawienia witryny \> 
     > [!IMPORTANT] 
     > Ustawienie **Poziom zapasów dla wielu magazynów** jest dostępne w Commerce od wersji 10.0.19. W przypadku aktualizacji ze starszej wersji Commerce należy ręcznie zaktualizować plik appsettings.json. Aby uzyskać instrukcje, zobacz [Aktualizacje zestawu SDK i biblioteki modułów](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
-- **Ustawienia zapasów dla stron listy produktów** — to ustawienie definiuje sposób, w jaki produkty są poza magazynem pokazywane na listach produktów renderowanych w modułach wyników gromadzenia produktów i wyników wyszukiwania. Dostępne wartości to **Wyświetlanie w kolejności z innymi produktami**, **Ukrywanie się niedostępnych produktów na liście** i **Wyświetlanie niedostępnych produktów na końcu listy**. Aby można było korzystać z tego ustawienia, najpierw należy skonfigurować wymagane ustawienia w programie Commerce Headquarters. Aby uzyskać więcej informacji, zobacz temat [Włączanie świadomości zapasów dla modułu wyników wyszukiwania](search-result-module.md#enable-inventory-awareness-for-the-search-results-module).
+- **Ustawienia zapasów dla stron listy produktów** — to ustawienie definiuje sposób, w jaki produkty są poza magazynem pokazywane na listach produktów renderowanych w modułach wyników gromadzenia produktów i wyników wyszukiwania. Dostępne wartości to **Wyświetlanie w kolejności z innymi produktami**, **Ukrywanie się niedostępnych produktów na liście** i **Wyświetlanie niedostępnych produktów na końcu listy**. Aby można było korzystać z tego ustawienia, najpierw należy skonfigurować wymagane ustawienia w programie Commerce Headquarters. Aby uzyskać więcej informacji, zobacz [Lity produktów z informacjami o zapasach](inventory-aware-product-listing.md).
 
     > [!IMPORTANT] 
     > Ustawienie **Ustawienia zapasów dla stron listy produktów** jest dostępne w Commerce od wersji 10.0.20. W przypadku aktualizacji ze starszej wersji Commerce należy ręcznie zaktualizować plik appsettings.json. Aby uzyskać instrukcje, zobacz [Aktualizacje zestawu SDK i biblioteki modułów](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
-- **Zakresy zapasów** — to ustawienie definiuje zakresy zapasów, które są wyświetlane w wiadomościach w modułach witryny. Ma to zastosowanie tylko wtedy, gdy wybrano wartość **Razem Dostępne** lub **Dostępne Fizycznie** dla poziomu **Poziom zapasów w oparciu o ustawienie**. Dostępne wartości to **Wszystkie**, **Mała ilość i wyprzedane** oraz **Wyprzedane**.
+- **Zakresy zapasów** — to ustawienie definiuje komunikaty zakresów zapasów, które są wyświetlane w modułach witryny. Ma to zastosowanie tylko wtedy, gdy wybrano wartość **Razem Dostępne** lub **Dostępne Fizycznie** dla poziomu **Poziom zapasów w oparciu o ustawienie**. Dostępne wartości to **Wszystkie**, **Mała ilość i wyprzedane** oraz **Wyprzedane**.
 
     - Po wybraniu opcji **Wszystkie** zostaną wyświetlone komunikaty dotyczące wszystkich zakresów magazynowych (komunikat dostępny) do wykroczenia zapasów (komunikat „wyprzedane”).
     - Po wybraniu opcji **Mała ilość i wyprzedane** zostaną wyświetlone komunikaty dotyczące wszystkich zakresów magazynowych poza zakresem dostępnym (komunikat „Dostępny”).

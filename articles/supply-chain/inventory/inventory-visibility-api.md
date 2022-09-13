@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 23f4c52b6d1d8c1af927a2c21455d6e24b24408a
-ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
+ms.openlocfilehash: 14812fc201ba1038a78ea3317686dbe189ffa687
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "9357649"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9423603"
 ---
 # <a name="inventory-visibility-public-apis"></a>Publiczne interfejsy API dodatku Widoczność magazynu
 
@@ -41,6 +41,8 @@ W poniższej tabeli przedstawiono obecnie dostępne interfejsy API:
 | /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Księguj | [Ustawianie/zastępowanie dostępnych ilości](#set-onhand-quantities) |
 | /api/environment/{environmentId}/onhand/reserve | Księguj | [Tworzenie jednego zdarzenia rezerwacji](#create-one-reservation-event) |
 | /api/environment/{environmentId}/onhand/reserve/bulk | Księguj | [Tworzenie wielu zdarzeń rezerwacji](#create-multiple-reservation-events) |
+| /api/environment/{environmentId}/onhand/unreserve | Księguj | [Wycofanie jednego zdarzenia rezerwacji](#reverse-one-reservation-event) |
+| /api/environment/{environmentId}/onhand/unreserve/bulk | Księguj | [Wycofanie wielu zdarzeń rezerwacji](#reverse-multiple-reservation-events) |
 | /api/environment/{environmentId}/onhand/changeschedule | Księguj | [Utwórz jedną zaplanowaną zmianę od ręki](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/changeschedule/bulk | Księguj | [Utwórz wiele zaplanowanych zmian od ręki](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/indexquery | Księguj | [Zapytanie przy użyciu metody POST](#query-with-post-method) |
@@ -56,7 +58,7 @@ W poniższej tabeli przedstawiono obecnie dostępne interfejsy API:
 > 
 > API zbiorcze może zwrócić maksymalnie 512 rekordów dla każdego żądania.
 
-Firma Microsoft dostarcza kolekcję gotowych do użycia żądań *Postman*. Kolekcję można zaimportować do oprogramowania *Postman*, korzystając z następującego udostępnionego łącza: <https://www.getpostman.com/collections/ad8a1322f953f88d9a55>
+Firma Microsoft dostarcza kolekcję gotowych do użycia żądań *Postman*. Kolekcję można zaimportować do oprogramowania *Postman*, korzystając z następującego udostępnionego łącza: <https://www.getpostman.com/collections/95a57891aff1c5f2a7c2>
 
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>Znajdowanie punktu końcowego zgodnie ze środowiskiem Lifecycle Services.
 
@@ -168,9 +170,9 @@ Istnieją dwa interfejsy API do tworzenia zdarzeń zmiany dostępnych zapasów:
 
 W poniższej tabeli podsumowano znaczenie poszczególnych pól w treści JSON.
 
-| Identyfikator pola | opis |
+| Identyfikator pola | Opis |
 |---|---|
-| `id` | Unikatowy identyfikator określonego zdarzenia zmiany. Ten identyfikator służy do zapewnienia, że jeśli komunikacja z usługą nie powiedzie się w trakcie księgowania, to samo zdarzenie wysłane ponownie nie zostanie zliczone dwukrotnie w systemie. |
+| `id` | Unikatowy identyfikator określonego zdarzenia zmiany. Jeśli komunikacja z usługą nie powiedzie się w trakcie księgowania, ten identyfikator służy do zapewnienia, że to samo zdarzenie nie zostanie zliczone dwukrotnie w systemie. |
 | `organizationId` | Identyfikator organizacji połączonej ze zdarzeniem. Wartość jest mapowana na identyfikator organizacji lub obszaru danych w Supply Chain Management. |
 | `productId` | Identyfikator produktu. |
 | `quantities` | Ilość, o którą musi zostać zmieniona dostępna ilość. Jeśli na przykład na półce zostanie dołożonych 10 nowych książek, ta wartość będzie wynosić `quantities:{ shelf:{ received: 10 }}`. Jeśli trzy książki zostaną usunięte z półki lub sprzedane, ta wartość będzie wynosić `quantities:{ shelf:{ sold: 3 }}`. |
@@ -178,7 +180,7 @@ W poniższej tabeli podsumowano znaczenie poszczególnych pól w treści JSON.
 | `dimensions` | Dynamiczna para klucz-wartość. Te wartości są mapowane na niektóre wymiary w Supply Chain Management. Można jednak dodać również wymiary niestandardowe (na przykład _Źródło_), aby wskazać, czy zdarzenie pochodzi z Supply Chain Management, czy z systemu zewnętrznego. |
 
 > [!NOTE]
-> Parametry `SiteId` i `LocationId` konstruują [konfigurację partycji](inventory-visibility-configuration.md#partition-configuration). Należy je zatem określić w wymiarach podczas tworzenia zdarzeń zmiany dostępnego czasu, określania lub zastępowania ilości w dostępnej ilości albo tworzenia zdarzeń rezerwacji.
+> Parametry `siteId` i `locationId` konstruują [konfigurację partycji](inventory-visibility-configuration.md#partition-configuration). Należy je zatem określić w wymiarach podczas tworzenia zdarzeń zmiany dostępnego czasu, określania lub zastępowania ilości w dostępnej ilości albo tworzenia zdarzeń rezerwacji.
 
 ### <a name="create-one-on-hand-change-event"></a><a name="create-one-onhand-change-event"></a>Tworzenie jednego zdarzenia zmiany dostępnych zapasów
 
@@ -216,14 +218,14 @@ W poniższym przykładzie pokazano zawartość przykładowej treści. W tym przy
 ```json
 {
     "id": "123456",
-    "organizationId": "usmf",
+    "organizationId": "SCM_IV",
     "productId": "T-shirt",
     "dimensionDataSource": "pos",
     "dimensions": {
-        "SiteId": "1",
-        "LocationId": "11",
-        "PosMachineId": "0001",
-        "ColorId": "Red"
+        "siteId": "iv_postman_site",
+        "locationId": "iv_postman_location",
+        "posMachineId": "0001",
+        "colorId": "red"
     },
     "quantities": {
         "pos": {
@@ -238,12 +240,12 @@ W poniższym przykładzie pokazano zawartość przykładowej treści bez `dimens
 ```json
 {
     "id": "123456",
-    "organizationId": "usmf",
-    "productId": "T-shirt",
+    "organizationId": "SCM_IV",
+    "productId": "iv_postman_product",
     "dimensions": {
-        "SiteId": "1",
-        "LocationId": "11",
-        "ColorId": "Red"
+        "siteId": "iv_postman_site",
+        "locationId": "iv_postman_location",
+        "colorId": "red"
     },
     "quantities": {
         "pos": {
@@ -293,13 +295,13 @@ W poniższym przykładzie pokazano zawartość przykładowej treści.
 [
     {
         "id": "123456",
-        "organizationId": "usmf",
-        "productId": "T-shirt",
+        "organizationId": "SCM_IV",
+        "productId": "iv_postman_product_1",
         "dimensionDataSource": "pos",
         "dimensions": {
-            "PosSiteId": "1",
-            "PosLocationId": "11",
-            "PosMachineId&quot;: &quot;0001"
+            "posSiteId": "posSite1",
+            "posLocationId": "posLocation1",
+            "posMachineId&quot;: &quot;0001"
         },
         "quantities": {
             "pos": { "inbound": 1 }
@@ -307,12 +309,12 @@ W poniższym przykładzie pokazano zawartość przykładowej treści.
     },
     {
         "id": "654321",
-        "organizationId": "usmf",
-        "productId": "Pants",
+        "organizationId": "SCM_IV",
+        "productId": "iv_postman_product_2",
         "dimensions": {
-            "SiteId": "1",
-            "LocationId": "11",
-            "ColorId&quot;: &quot;black"
+            "siteId": "iv_postman_site",
+            "locationId": "iv_postman_location",
+            "colorId&quot;: &quot;black"
         },
         "quantities": {
             "pos": { "outbound": 3 }
@@ -362,13 +364,13 @@ W poniższym przykładzie pokazano zawartość przykładowej treści. Zachowanie
 [
     {
         "id": "123456",
-        "organizationId": "usmf",
+        "organizationId": "SCM_IV",
         "productId": "T-shirt",
         "dimensionDataSource": "pos",
         "dimensions": {
-             "PosSiteId": "1",
-            "PosLocationId": "11",
-            "PosMachineId": "0001"
+            "posSiteId": "iv_postman_site",
+            "posLocationId": "iv_postman_location",
+            "posMachineId": "0001"
         },
         "quantities": {
             "pos": {
@@ -381,7 +383,7 @@ W poniższym przykładzie pokazano zawartość przykładowej treści. Zachowanie
 
 ## <a name="create-reservation-events"></a>Tworzenie zdarzeń rezerwacji
 
-Aby korzystać z interfejsu API *rezerwacji*, należy otworzyć funkcję rezerwacji i dokończyć konfigurację rezerwacji. Aby uzyskać więcej informacji, należy zapoznać się z tematem [Konfiguracja rezerwacji (opcjonalna)](inventory-visibility-configuration.md#reservation-configuration).
+Aby korzystać z interfejsu API *rezerwacji*, należy włączyć funkcję rezerwacji i dokończyć konfigurację rezerwacji. Aby uzyskać więcej informacji, należy zapoznać się z tematem [Konfiguracja rezerwacji (opcjonalna)](inventory-visibility-configuration.md#reservation-configuration).
 
 ### <a name="create-one-reservation-event"></a><a name="create-one-reservation-event"></a>Tworzenie jednego zdarzenia rezerwacji
 
@@ -389,7 +391,7 @@ Rezerwacji można dokonać w różnych ustawieniach źródła danych. Aby skonfi
 
 Po wywołaniu interfejsu API rezerwacji można kontrolować walidacje rezerwacji, określając parametr logiczny `ifCheckAvailForReserv` w treści żądania. Wartość `True` oznacza, że walidacja jest wymagana, podczas gdy wartość `False` oznacza, że walidacja nie jest wymagana. Wartością domyślną jest `True`.
 
-Aby anulować rezerwację lub cofnąć rezerwację określonych ilości magazynowych, ustaw ilość na wartość ujemną i ustaw parametr `ifCheckAvailForReserv` na `False`, aby pominąć weryfikację.
+Aby wycofać rezerwację lub cofnąć rezerwację określonych ilości magazynowych, ustaw ilość na wartość ujemną i ustaw parametr `ifCheckAvailForReserv` na `False`, aby pominąć weryfikację. Istnieje również dedykowany interfejs API cofania rezerwacji do wykonania tej samej czynności. Różnica polega tylko na sposobu wywoływania tych dwóch interfejsów API. Wycofanie określonego zdarzenia rezerwacji przy użyciu `reservationId` z interfejsem API *wycofaj rezerwację* jest łatwiejsze. Aby uzyskać więcej informacji, zobacz sekcję [_Wycofanie rezerwacji jednego zdarzenia rezerwacji_](#reverse-reservation-events).
 
 ```txt
 Path:
@@ -427,24 +429,36 @@ W poniższym przykładzie pokazano zawartość przykładowej treści.
 ```json
 {
     "id": "reserve-0",
-    "organizationId": "usmf",
-    "productId": "T-shirt",
+    "organizationId": "SCM_IV",
+    "productId": "iv_postman_product",
     "quantity": 1,
     "quantityDataSource": "iv",
-    "modifier": "softreservordered",
+    "modifier": "softReservOrdered",
     "ifCheckAvailForReserv": true,
     "dimensions": {
-        "SiteId": "1",
-        "LocationId": "11",
-        "ColorId": "Red",
-        "SizeId&quot;: &quot;Small"
+        "siteId": "iv_postman_site",
+        "locationId": "iv_postman_location",
+        "colorId": "red",
+        "sizeId&quot;: &quot;small"
     }
 }
 ```
 
+W poniższym przykładzie pokazano odpowiedź pomyślną.
+
+```json
+{
+    "reservationId": "RESERVATION_ID",
+    "id": "ohre~id-822-232959-524",
+    "processingStatus": "success",
+    "message": "",
+    "statusCode": 200
+}
+``` 
+
 ### <a name="create-multiple-reservation-events"></a><a name="create-multiple-reservation-events"></a>Tworzenie wielu zdarzeń rezerwacji
 
-Ten interfejs API jest wersją masową [interfejsu API jednego zdarzenia](#create-one-reservation-event).
+Ten interfejs API jest wersją masową [interfejsu API jednego zdarzenia](#create-reservation-events).
 
 ```txt
 Path:
@@ -480,9 +494,107 @@ Body:
     ]
 ```
 
+## <a name="reverse-reservation-events"></a>Zdarzenie wycofania rezerwacji
+
+Interfejs API *Wycofaj rezerwację* służy jako operacja dla zdarzeń [*Rezerwacja*](#create-reservation-events). Umożliwia wycofanie zdarzenia rezerwacji określone przez `reservationId` lub zmniejszenie ilości rezerwacji.
+
+### <a name="reverse-one-reservation-event"></a><a name="reverse-one-reservation-event"></a>Wycofanie jednego zdarzenia rezerwacji
+
+Podczas tworzenia rezerwacji, identyfikator `reservationId` zostanie uwzględniony w treści odpowiedzi. Musisz podać taki sam `reservationId`, aby anulować rezerwację, i uwzględnić ten sam `organizationId` i `dimensions` użyte w wywołaniu interfejsu API rezerwacji. Na koniec należy określić wartość `OffsetQty` reprezentującą liczbę towarów, które mają zostać zwolnione z poprzedniej rezerwacji. Rezerwację można w całości lub częściowo wycofać w zależności od podanej wartości `OffsetQty`. Jeśli na przykład zarezerwowano *100* jednostek towaru, można określić `OffsetQty: 10`, aby cofnąć rezerwację *10* z początkowo zarezerwowanej ilości.
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/unreserve
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        id: string,
+        organizationId: string,
+        reservationId: string,
+        dimensions: {
+            [key:string]: string,
+        },
+        OffsetQty: number
+    }
+```
+
+Poniższy kod pokazuje przykład treści zawartości.
+
+```json
+{
+    "id": "unreserve-0",
+    "organizationId": "SCM_IV",
+    "reservationId": "RESERVATION_ID",
+    "dimensions": {
+        "siteid":"iv_postman_site",
+        "locationid":"iv_postman_location",
+        "ColorId": "red",
+        "SizeId&quot;: &quot;small"
+    },
+    "OffsetQty": 1
+}
+```
+
+Poniższy kod pokazuje przykład pomyślnej treści odpowiedzi.
+
+```json
+{
+    "reservationId": "RESERVATION_ID",
+    "totalInvalidOffsetQtyByReservId": 0,
+    "id": "ohoe~id-823-11744-883",
+    "processingStatus": "success",
+    "message": "",
+    "statusCode": 200
+}
+```
+
+> [!NOTE]
+> W treści odpowiedzi, jeśli `OffsetQty` jest mniejsze lub równe ilości rezerwacji, stan `processingStatus` będzie „*powodzenie*” i `totalInvalidOffsetQtyByReservId` będzie *0*.
+>
+> Jeśli `OffsetQty` jest większe niż zarezerwowana kwota, stan `processingStatus` będzie „*partialSuccess*” i `totalInvalidOffsetQtyByReservId` będzie różnicą między `OffsetQty` a zarezerwowaną kwotą.
+>
+>Na przykład, jeśli rezerwacja ma ilość *10* i `OffsetQty` ma wartość *12*, `totalInvalidOffsetQtyByReservId` będzie *2*.
+
+### <a name="reverse-multiple-reservation-events"></a><a name="reverse-multiple-reservation-events"></a>Wycofanie wielu zdarzeń rezerwacji
+
+Ten interfejs API jest wersją masową [interfejsu API jednego zdarzenia](#reverse-one-reservation-event).
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/unreserve/bulk
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    [      
+        {
+            id: string,
+            organizationId: string,
+            reservationId: string,
+            dimensions: {
+                [key:string]: string,
+            },
+            OffsetQty: number
+        }
+        ...
+    ]
+```
+
 ## <a name="query-on-hand"></a>Zapytanie o dostępne zapasy
 
-Użyj interfejsu API _zapytania o dostępne zapasy_ do pobierania bieżących danych o dostępnych zapasach produktów. Interfejs API aktualnie obsługuje wykonywanie zapytań o maksymalnie 100 pojedynczych towarów według wartości `ProductID`. W każdym zapytaniu można określić również kilka wartości `SiteID` i `LocationID`. Maksymalny limit jest zdefiniowany jako `NumOf(SiteID) * NumOf(LocationID) <= 100`.
+Użyj interfejsu API *zapytania o dostępne zapasy* do pobierania bieżących danych o dostępnych zapasach produktów. Interfejs API aktualnie obsługuje wykonywanie zapytań o maksymalnie 5000 pojedynczych towarów według wartości `productID`. W każdym zapytaniu można określić również kilka wartości `siteID` i `locationID`. Maksymalny limit jest określony przez następujące równanie:
+
+*NumOf(SiteID) \* NumOf(LocationID) <= 100*.
 
 ### <a name="query-by-using-the-post-method"></a><a name="query-with-post-method"></a>Zapytanie przy użyciu metody POST
 
@@ -517,7 +629,7 @@ W treści tego żądania `dimensionDataSource` to wciąż opcjonalny parametr. J
 - Element `productId` może zawierać jedną lub więcej wartości. Jeśli jest to pusta tablica, zostaną zwrócone wszystkie produkty.
 - `siteId` i `locationId` są używane w dodatku Widoczność zapasów podczas partycjonowania. Można określić więcej niż jedną wartość `siteId` i `locationId` w żądaniu *kwerendy o dane na dane zamówienie*. W bieżącym wydaniu należy określić obie wartości `siteId` i `locationId`.
 
-Parametr `groupByValues` powinny być zgodne z konfiguracją na potrzeby indeksowania. Więcej informacji można znaleźć w temacie [Konfiguracja hierarchii indeksów produktów](./inventory-visibility-configuration.md#index-configuration).
+Sugerujemy, by użyć parametru `groupByValues` powinny dla zgodności z konfiguracją na potrzeby indeksowania. Więcej informacji można znaleźć w temacie [Konfiguracja hierarchii indeksów produktów](./inventory-visibility-configuration.md#index-configuration).
 
 Parametr `returnNegative` określa, czy wyniki zawierają wartości ujemne.
 
@@ -530,13 +642,13 @@ W poniższym przykładzie pokazano zawartość przykładowej treści.
 {
     "dimensionDataSource": "pos",
     "filters": {
-        "organizationId": ["usmf"],
-        "productId": ["T-shirt"],
-        "siteId": ["1"],
-        "LocationId": ["11"],
-        "ColorId": ["Red"]
+        "organizationId": ["SCM_IV"],
+        "productId": ["iv_postman_product"],
+        "siteId": ["iv_postman_site"],
+        "locationId": ["iv_postman_location"],
+        "colorId": ["red"]
     },
-    "groupByValues": ["ColorId", "SizeId"],
+    "groupByValues": ["colorId", "sizeId"],
     "returnNegative": true
 }
 ```
@@ -546,12 +658,12 @@ Poniższe przykłady pokazują sposób wykonywania zapytań dla wszystkich produ
 ```json
 {
     "filters": {
-        "organizationId": ["usmf"],
+        "organizationId": ["SCM_IV"],
         "productId": [],
-        "siteId": ["1"],
-        "LocationId": ["11"],
+        "siteId": ["iv_postman_site"],
+        "locationId": ["iv_postman_location"],
     },
-    "groupByValues": ["ColorId", "SizeId"],
+    "groupByValues": ["colorId", "sizeId"],
     "returnNegative": true
 }
 ```
@@ -577,7 +689,7 @@ Query(Url Parameters):
 Oto przykładowy adres URL GET. To żądanie GET jest dokładnie takie samo, jak przykładowe księgowanie przedstawione wcześniej.
 
 ```txt
-/api/environment/{environmentId}/onhand?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
+/api/environment/{environmentId}/onhand?organizationId=SCM_IV&productId=iv_postman_product&siteId=iv_postman_site&locationId=iv_postman_location&colorId=red&groupBy=colorId,sizeId&returnNegative=true
 ```
 
 ## <a name="available-to-promise"></a>Dostępność zapasów

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 576d8d5d0cad09aed40f1ceb9ce5682816c0f666
-ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
+ms.openlocfilehash: 8d8fe042d7c56b86a5a7c92cc24480f573a2ea8a
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "9306327"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9423577"
 ---
 # <a name="configure-inventory-visibility"></a>Konfiguracja dodatku Inventory Visibility
 
@@ -303,13 +303,13 @@ Rozwiązanie domyślnie zawiera tę konfigurację partycji. Dlatego *nie trzeba 
 
 Przez większość czasu zapytanie o dostępne zapasy nie będzie zwracane tylko na najwyższym poziomie „suma” Zamiast tego można także chcieć zobaczyć wyniki zagregowane na podstawie wymiarów magazynowych.
 
-Dodatek Widoczność magazynu jest o tyle elastyczny, że umożliwia konfigurowanie _indeksów_. Indeksy te są oparte na wymiarze lub kombinacji wymiarów. Indeks składa się z *numeru zestawu*, *wymiaru* i *hierarchii*, zgodnie z następującą tabelą.
+Dodatek Widoczność magazynu jest o tyle elastyczny, że umożliwia konfigurowanie _indeksów_ w celu poprawy wydajności zapytań. Indeksy te są oparte na wymiarze lub kombinacji wymiarów. Indeks składa się z *numeru zestawu*, *wymiaru* i *hierarchii*, zgodnie z następującą tabelą.
 
 | Imię i nazwisko | opis |
 |---|---|
 | Numer zestawu | Wymiary należące do tego samego zestawu (indeksu) zostaną pogrupowane i zostanie im przydzielony ten sam numer zestawu. |
 | Wymiar | Wymiary podstawowe, na których agregowany jest wynik zapytania. |
-| Hierarchia | Hierarchia służy do definiowania obsługiwanych kombinacji wymiarów, które mogą być używane w zapytaniach. Przykładowo, można skonfigurować zestaw wymiarów z sekwencją hierarchii `(ColorId, SizeId, StyleId)`. W takim przypadku system obsługuje zapytania na kombinacjach czterech wymiarów. Pierwsza kombinacja jest pusta, druga to `(ColorId)`, trzecia to `(ColorId, SizeId)`, a czwarta `(ColorId, SizeId, StyleId)`. Inne kombinacje nie są obsługiwane. Więcej informacji można znaleźć w następujących przykładach. |
+| Hierarchia | Hierarchia umożliwia zwiększenie wydajności określonych kombinacji wymiarów w przypadku korzystania z parametrów zapytania filtru i grupowania według. Na przykład po skonfigurowaniu zestawu wymiarów z sekwencją hierarchii `(ColorId, SizeId, StyleId)` system może szybciej przetwarzać zapytania powiązane z czterema kombinacjami wymiarów. Pierwsza kombinacja jest pusta, druga to `(ColorId)`, trzecia to `(ColorId, SizeId)`, a czwarta `(ColorId, SizeId, StyleId)`. Inne kombinacje nie będą przyspieszone. Filtry nie są ograniczane według zamówienia, ale muszą znajdować się wewnątrz tych wymiarów, aby zwiększyć ich wydajność. Więcej informacji można znaleźć w następujących przykładach. |
 
 Procedura konfigurowania indeksu hierarchii produktów jest następująca.
 
@@ -319,14 +319,13 @@ Procedura konfigurowania indeksu hierarchii produktów jest następująca.
 1. Domyślnie jest dostarczana lista indeksów. Aby zmodyfikować istniejący indeks, wybierz pozycję **Edytuj** lub **Dodaj** w sekcji odpowiedniego indeksu. Aby utworzyć nowy zestaw indeksów, wybierz pozycję **Nowy zestaw indeksów**. Dla każdego wiersza w każdym zestawie indeksów w polu **Wymiar** wybierz wymiar z listy wymiarów podstawowych. Wartości w następujących polach są generowane automatycznie:
 
     - **Numer zestawu** — wymiary należące do tej samej grupy (indeksu) zostaną pogrupowane i zostanie im przydzielony ten sam numer zestawu.
-    - **Hierarchia** — hierarchia służy do definiowania obsługiwanych kombinacji wymiarów, które mogą być używane w zapytaniach w grupie wymiarów (indeksie). Jeśli na przykład zostanie skonfigurowana grupa wymiarów z sekwencją hierarchii *Styl*, *Kolor* i *Rozmiar*, system obsługuje wynik trzech grup zapytań. Pierwsza grupa to sam styl. Druga grupa to kombinacja stylu i koloru. A trzecia grupa to kombinacja stylu, koloru i rozmiaru. Inne kombinacje nie są obsługiwane.
+    - **Hierarchia** — zwiększa wydajność określonych kombinacji wymiarów w przypadku korzystania z parametrów zapytania filtru i grupowania według.
 
 > [!TIP]
 > Poniżej podano kilka wskazówek, które należy pamiętać podczas konfigurowania hierarchii indeksów:
 >
 > - W konfiguracjach indeksów nie należy określać wymiarów podstawowych, które są definiowane w konfiguracji partycji. Jeśli wymiar podstawowy zostanie ponownie zdefiniowany w konfiguracji indeksu, zapytanie według tego indeksu nie będzie możliwe.
 > - Jeśli potrzebne jest tylko zapytanie o stany magazynowe zagregowane według wszystkich kombinacji wymiarów, należy utworzyć pojedynczy indeks zawierający wymiar podstawowy `Empty`.
-> - Musisz mieć co najmniej jedną hierarchię indeksu (na przykład zawierającą wymiar podstawowy `Empty`), w przeciwnym razie zapytania zakończą się niepowodzeniem z błędem "Nie ustawiono hierarchii indeksu".
 
 ### <a name="example"></a>Przykład
 

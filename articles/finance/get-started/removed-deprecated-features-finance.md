@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 1b5282bc1fb4834d001cd2513664996a2f4cf4f0
-ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
+ms.openlocfilehash: 83fa9d0a08d4d9ec171aeee685d39bba46e5687d
+ms.sourcegitcommit: 6fd44fc6e9a7bad197cab58c36ec25a555724cf1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/18/2022
-ms.locfileid: "9313892"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9410458"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Usunięte lub przestarzałe funkcje w rozwiązaniu Dynamics 365 Finance
 
@@ -32,6 +32,20 @@ Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych fun
 
 > [!NOTE]
 > Szczegółowe informacje o obiektów w aplikacji finansowych i operacyjnych można znaleźć w [raportach z wykazami parametrów technicznych](/dynamics/s-e/global/axtechrefrep_61). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach aplikacji finansowych i operacyjnych.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10030-release"></a>Usunięte lub przestarzałe funkcje w wydaniu rozwiązania Finance 10.0.30
+
+### <a name="revenue-recognition"></a>Rozpoznawanie przychodu
+
+[Rozpoznawanie przychodu](../../finance/accounts-receivable/revenue-recognition-overview.md)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Przyczyna wycofania/usunięcia** |Zastąpiono poprawioną funkcjonalnością, [Rozliczanie subskrypcji](../../finance/accounts-receivable/subscription-billing-summary.md)
+| **Zamieniona przez inną funkcję?**   | Tak |
+| **Powiązane obszary produktów** | Zgłoszenie |
+| **Opcja wdrażania** | Wszystko |
+| **Stan** | Wycofane: od kwietnia 2023 roku funkcja Rozpoznawania przychodów w programie Dynamics 365 Finance nie będzie już otrzymywać pomocy technicznej dotyczącej poprawek błędów. Odbiorcy zostaną proszeni o korzystanie z poprawionej funkcjonalności [Rozliczanie subskrypcji](../../finance/accounts-receivable/subscription-billing-summary.md). W październiku 2023 roku funkcja Rozpoznawania przychodów nie będzie już dostępna. Odbiorcy zostaną proszeni o przeniesienie się do poprawionej funkcjonalności Rozliczanie subskrypcji.|
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10029-release"></a>Usunięte lub przestarzałe funkcje w wydaniu rozwiązania Finance 10.0.29
 

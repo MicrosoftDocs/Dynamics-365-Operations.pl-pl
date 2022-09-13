@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 45a35eb32cb9e51d9f63f6687808fb511f894887
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5e8b4ab74bf973a131499799efa66e9c7fe9d5be
+ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873732"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9403725"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>Proces wydania i historia wydań optymalizacji planowania
 
@@ -33,6 +33,7 @@ Ponieważ powiadomienia nie są wyświetlane, gdy optymalizacja planowania jest 
 
 | Zmiany | Szczegóły zarządzania funkcjami | Daty zwolnienia |
 |---|---|---|
+| <p>Ogólne usprawnienia wydajności, jakości i stabilności. | Nie jest wymagane zarządzanie funkcjami. | 29 sierpnia — 3 września 2022 |
 | <p>Ogólne usprawnienia wydajności, jakości i stabilności.<p>[Obsługa kalendarza scentralizowanego optymalizacji planowania](../supply-chain-calendars-master-planning.md)<p>[Optymalizacja planowania – propozycje optymalizacji istniejących dostaw](../action-messages.md)<p>[Wsparcie optymalizacji planowania dla podwykonawstwa](../../production-control/manage-subcontract-work-production.md) | Nie jest wymagane zarządzanie funkcjami. | 7-11 marca 2022 r. |
 | <p>Dodano obsługę priorytetów planowania dla zleceń produkcyjnych. | Dostępne od wersji 10.0.25 jako część funkcji o nazwie *Wsparcie MRP oparte na priorytetach dla optymalizacji planowania*. | 12–18 listopada 2021 r. |
 | <p>Ogólne usprawnienia wydajności, jakości i stabilności. | Nie jest wymagane zarządzanie funkcjami. | 12–18 listopada 2021 r. |

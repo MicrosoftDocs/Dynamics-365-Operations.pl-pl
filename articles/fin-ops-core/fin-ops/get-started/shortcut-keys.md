@@ -2,7 +2,7 @@
 title: Skróty klawiaturowe
 description: W tym artykule przedstawiono omówienie kombinacji klawiszy skrótów, które mogą być używane podczas pracy z aplikacjami finansowymi i operacyjnymi.
 author: jasongre
-ms.date: 08/26/2022
+ms.date: 08/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 04abaeada458e05df3de045d9c7a715040b7bfa4
-ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
+ms.openlocfilehash: a5bf22228749a725baa66ee3094f670c60f0f39a
+ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "9357599"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9405446"
 ---
 # <a name="keyboard-shortcuts"></a>Skróty klawiaturowe
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
@@ -87,10 +88,12 @@ Użytkownicy mogą zapoznawać się z aktualnie dostępnymi skrótami bezpośred
 | Otwórz okienko filtru (lub przełącz wyróżnienie między okienkiem Filtr i formularzem głównym, jeśli okienku Filtr jest już otwarte) | Alt+M, F lub Ctrl+F3       |
 | Zamknij okienko Filtr (z wyróżnieniem na okienku Filtr)                                                               | Esc                      |
 | Otwórz filtrowanie/sortowanie zaawansowane                                                                                        | Ctrl+Shift+F3            |
+| Zastosuj szybki filtr (gdy fokusem jest w szybki filtr)                                                              | Enter                    |
+| Zastosuj filtr siatki (jeśli fokus jest w polu filtru nagłówka kolumny)                                             | Enter                    |
 
 ## <a name="form-shortcuts"></a>Skróty formularza
 
-| Funkcja                                    | Klawisze             |
+| Funkcja                                    | Naciśnij klawisz             |
 |-----------------------------------------------|-------------------|
 | Utwórz nowy rekord                           | Alt+N             |
 | Usuwanie rekordu                               | Alt+Del lub Alt+F9 |
@@ -157,12 +160,13 @@ Użytkownicy mogą zapoznawać się z aktualnie dostępnymi skrótami bezpośred
 
 ## <a name="input-control-shortcuts"></a>Skróty wpisywania danych
 
-| Funkcja                                                                   | Naciśnij klawisz                          |
+| Funkcja                                                                   | Naciśnij klawisz                         |
 |------------------------------------------------------------------------------|-------------------------------|
 | Otwórz hiperłącze                                                           | Ctrl+Enter                    |
+| Otwórz hiperłącze (jeśli fokus dotyczy kontrolki tylko do odczytu)<br><br>**Uwaga:** ten skrót ma zastosowanie tylko wtedy, gdy włączono funkcję **Standaryzuj interakcję klawiatury dla pola kombinacji i formantów wyszukiwania**                   | Enter    |
 | Wpisz datę sesji w polu daty                                       | D                             |
 | Wpisz bieżącą datę w polu daty                                       | N                             |
-| Otwórz wyszukiwanie, pole kombi, wybór daty, okno dialogowe przerywania                         | Alt+strzałka w dół                |
+| Otwórz wyszukiwanie, pole kombi, wybór daty, okno dialogowe przerywania                         | Alt+strzałka w dół<br><br>Wprowadź (gdy włączono funkcję **Standaryzuj interakcję klawiatury dla pola kombinacji i formantów wyszukiwania**)                |
 | Zamknij wyszukiwanie, pole kombi, wybór daty, okno dialogowego przerywania                        | Esc                           |
 | Przenieś wyróżnienie do wyszukiwania (jeśli wyszukiwanie jest otwarte)                   | Alt+strzałka w dół                |
 | Otwórz rozszerzony podgląd formantu                                          | Alt+strzałka w górę                  |

@@ -1,23 +1,23 @@
 ---
 title: Katalog szkoleń dla administratorów aplikacji Dynamics 365 Finance
 description: Znajdź wszystkie opcje szkoleń dla administratorów aplikacji Dynamics 365 Finance.
-author: margoc
+author: cstorega
 ms.topic: article
 ms.date: 07/23/2020
-ms.author: margoc
+ms.author: cstorega
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 811ff0eb9d13c34a5fa21014415981574833d256
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 7772de29030475c45a86f305e74a7048508887ba
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9065258"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9424597"
 ---
 # <a name="learning-catalog-for-dynamics-365-finance-administrators"></a>Katalog szkoleń — administratorzy aplikacji Dynamics 365 Finance
 
@@ -62,20 +62,17 @@ Poniższy katalog jest zorganizowany od podstawowej bazy wiedzy do konkretnych d
 | Zawartość | Opis  | Format | Długość    |
 |---------|--------------|--------|-----------|
 | [Uaktualnianie z systemu Dynamics AX 2012 do aplikacji finansowych i operacyjnych](/learn/paths/upgrade-ax-2012-finance-operations/) | Poznaj najważniejsze elementy i najlepsze wskazówki dotyczące pomyślnego uaktualnienia rozwiązania Dynamics AX 2012 do aplikacji finansowych i operacyjnych. Od pierwszych kroków odkrywania kluczowych różnic architektonicznych, rozpoczęcia procesu aktualizacji oraz narzędzi do aktualizacji kodu i danych, po najlepsze sposoby przeprojektowania integracji, analiz i raportowania w oparciu o najnowsze możliwości. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 7 godzin |
-| [aplikacje finansowe i operacyjne: Uaktualnianie z 7.x do 8+ (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | Prosimy o wzięcie udziału w następnym TechTalk, podczas którego będziemy pokryć proces uaktualnienia z 7.X do 8.X. Będziemy omawiać różne scenariusze i kroki wykonywane w celu uaktualnienia kodu i uaktualnienia danych. Obejmą również scenariusze żądań rozszerzalności oraz sposób ich podniesienia w miarę potrzeby. | Bezpłatna rejestracja konferencji w sieci Web | 61 minut |
-| [Jak uaktualnić do wersji 7.2 (lipiec 2017) z wersji 7.0 (RTW)/7.1 (wydanie 1611) (DYN338PAL2)](https://community.dynamics.com/365/b/techtalks/posts/how-to-upgrade-to-7-2-july-2017-from-7-0-rtw-7-1-release-1611-august-3-2017) | W tej sesji wyjaśnimy, jak uaktualnić z aplikacji finansowych i operacyjnych Dynamics 365 v 7.0 (RTW) i v 7.1 (1611) do v 7.2 (lipiec 2017). Oferujemy jasne rozróżnienie między klientami a projektami trwającymi (dotychczas niedostępne). | Bezpłatna rejestracja konferencji w sieci Web | 58 minut |
-| [AX2012 do Dynamics 365 for Operations Uaktualnianie (VIR817PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/ax2012-to-dynamics-365-for-operations-upgrade-april-20-2017) | Ta rozmowa techniczna zawiera przegląd informacji na temat uaktualniania kodu i danych z systemu Dynamics AX 2012 do Dynamics 365 for Operations. | Bezpłatna rejestracja konferencji w sieci Web | 45 minut |
+| [Aktualizacja AX2012 do aplikacji finansowych i operacyjnych — 3 września 2020 r.](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/tax2012-to-finance-and-operations-apps-upgrade-september-3-2020) | Ta rozmowa techniczna zawiera przegląd informacji na temat uaktualniania kodu i danych z systemu Dynamics AX 2012 do aplikacji finansowych i operacyjnych. | Tech Talk (zarejestrowany Webinar) | 66 minut |
 | [Narzędzia migracji AX2009](https://community.dynamics.com/365/b/techtalks/posts/ax2009-migration-tool-may-11-2017) | Ta sesja obejmie dostępne narzędzia ułatwiające Migrowanie z AX2009 do D365 dla Operations. | Bezpłatna rejestracja konferencji w sieci Web | 55 minut |
 
 ## <a name="servicing"></a>Obsługa<a name="servicing"></a>
 
 | Zawartość  | Opis   | Format  | Długość    |
 |----------|---------------|---------|-----------|
-| [Aplikacje finansowe i operacyjne: Zarządzanie funkcjami (DYN641PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-feature-management-may-17-2019) | Rozmowa o technologii jest doświadczeniem funkcji zarządzania funkcjami. Udostępnia obszar roboczy, w którym można wyświetlać, włączać, wyłączać i planować funkcje, które zostały dostarczone w każdym wydaniu. Domyślnie nowe funkcje są wyłączone. Można użyć obszaru roboczego, aby włączyć je i wyświetlić dokumentację dla nich. Uczestnictwo w tym spotkaniu w celu sprawdzenia, co jest dostarczane w 10.0.3 i naszych planów dotyczących przyszłych wydań. | Bezpłatna rejestracja konferencji w sieci Web | 47 minut |
+| [Aplikacji finansowe i operacyjne: Zarządzanie funkcjami (DYN641PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-feature-management-may-17-2019) | Rozmowa o technologii jest doświadczeniem funkcji zarządzania funkcjami. Udostępnia obszar roboczy, w którym można wyświetlać, włączać, wyłączać i planować funkcje, które zostały dostarczone w każdym wydaniu. Domyślnie nowe funkcje są wyłączone. Można użyć obszaru roboczego, aby włączyć je i wyświetlić dokumentację dla nich. Uczestnictwo w tym spotkaniu w celu sprawdzenia, co jest dostarczane w 10.0.3 i naszych planów dotyczących przyszłych wydań. | Bezpłatna rejestracja konferencji w sieci Web | 47 minut |
 | [Aplikacje finansowe i operacyjne — obsługa, obsługa i obsługa produkcji (DYN651PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-servicing-supporting-and-maintaining-production-june-27-2019) | Informacje techniczne na temat efektywnej pomocy technicznej, obsługiwania i obsługiwania środowiska produkcyjnego Dynamics 365 Finance. | Bezpłatna rejestracja konferencji w sieci Web | 53 minut |
-| [Finanse i Działania: zarządzane ciągłe aktualizacje firmy Microsoft (DYN610PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | Kadencja aktualizacji ciągłej dla aplikacji finansowych i operacyjnych została rozpoczęta! Dołącz do nas w tej godzinie, aby omówić ciągłe aktualizacje zarządzane przez firmę Microsoft, doświadczenie użytkownika dostępne w usłudze Lifecycle Services oraz przyszłe aktualizacje. | Bezpłatna rejestracja konferencji w sieci Web | 61 minut |
-| [Ciągłe aktualizacje zarządzane przez firmę Microsoft: co nowego (DYN543PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-what-39-s-new-12-13-18) | W tej godzinie wyjaśnimy, co nowego od początkowych ogłoszeń dotyczących ciągłej aktualizacji zarządzanych przez firmę Microsoft. Będziemy omówić kadencję aktualizacji, w jaki sposób odpowiedział na cenną opinię na temat tego procesu, a także zapoznać się z zbliżającym się doświadczeniem użytkownika usługi Lifecycle Services, za pomocą którego można zarządzać aktualizacjami. | Bezpłatna rejestracja konferencji w sieci Web | 56 minut |
-| [Ciągłe aktualizacje zarządzane przez firmę Microsoft (DYN474PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-september-5-2018) | Będziemy omówić plany rozwiązania Microsoft w zakresie aktualizacji systemu do najnowszej wersji. Będziemy ponosić osie czasu, Cadence dla głównych i drobnych aktualizacji, planowane procedury, implikacje oraz co należy zrobić w celu uzyskania optymalnych wyników. | Bezpłatna rejestracja konferencji w sieci Web | 62 minut |
+| [Aplikacje finansowe i operacyjne: zarządzane ciągłe aktualizacje firmy Microsoft (DYN610PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | Kadencja aktualizacji ciągłej dla aplikacji finansowych i operacyjnych została rozpoczęta! Dołącz do nas w tej godzinie, aby omówić ciągłe aktualizacje zarządzane przez firmę Microsoft, doświadczenie użytkownika dostępne w usłudze Lifecycle Services oraz przyszłe aktualizacje. | Bezpłatna rejestracja konferencji w sieci Web | 61 minut |
+| [Aplikacje finansowe i operacyjne: zarządzane ciągłe aktualizacje firmy Microsoft — 2 kwietnia 2019 r.](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | Kadencja aktualizacji ciągłej dla Finanse i Działania została rozpoczęta! Dołącz do nas w tej godzinie, aby omówić ciągłe aktualizacje zarządzane przez firmę Microsoft, doświadczenie użytkownika dostępne w usłudze Lifecycle Services oraz przyszłe aktualizacje. | Tech Talk (zarejestrowany Webinar) | 61 minut |
 | [Monitorowanie, doradca optymalizacji & krytyczne poprawki (DYN456PAL2)](https://community.dynamics.com/365/b/techtalks/posts/monitoring-optimization-advisor-amp-critical-kbs-july-13-2018) | Będziemy omawiać możliwości monitorowania i monitory rozwiązania Microsoft dla Ciebie w środowisku produkcyjnym, Doradca optymalizacji i sposób jego rozszerzania, „krytyczne aktualizacje X++” usługi LCS i najważniejsze wskazówki dotyczące „raportu dotyczącego awarii produkcji” opcja usługi LCS. | Bezpłatna rejestracja konferencji w sieci Web | 40 minut |
 
 ## <a name="testing"></a>Testowanie<a name="testing"></a>
@@ -87,4 +84,3 @@ Poniższy katalog jest zorganizowany od podstawowej bazy wiedzy do konkretnych d
 | [Aplikacje finansowe i operacyjne: rozwiązywanie problemów testu wydajności dla systemu Dynamics 365 (DYN541PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-performance-troubleshooting-tools-for-dynamics-365-12-14-18) | W tej komunikacji technicznej zaprezentujemy różne narzędzia, których można używać do rozwiązywania problemów z wydajnością Microsoft Dynamics 365 Finance. Ta sesja zawiera kilka prezentacji opartych na scenariuszach i wstępnych wskazówek dotyczących sposobów podejścia do typowych problemów z wydajnością. | Bezpłatna rejestracja konferencji w sieci Web | 64 minut |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

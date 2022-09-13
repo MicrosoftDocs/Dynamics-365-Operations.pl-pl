@@ -1,27 +1,25 @@
 ---
 title: Katalog szkoleń dla deweloperów aplikacji Dynamics 365 Finance
 description: Znajdź wszystkie opcje szkoleń dla deweloperów aplikacji Dynamics 365 Finance.
-author: margoc
+author: cstorega
 ms.topic: article
 ms.date: 07/27/2020
-ms.author: margoc
+ms.author: cstorega
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 02b639ddaf7c12e1a6c83bad1c05f8f85fb548dc
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 5fe354d94f7cef15b944828e0e07ce4b50f7eb42
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068537"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9424586"
 ---
 # <a name="learning-catalog-for-dynamics-365-finance-developers"></a>Katalog szkoleń dla deweloperów aplikacji Dynamics 365 Finance
-
-
 
 Czy musisz napisać kod, aby zintegrować go z innymi źródłami danych, rozszerzyć podstawową funkcjonalność systemu lub skompilować złożoną aplikację?
 
@@ -44,8 +42,7 @@ Poniższy katalog jest zorganizowany od podstawowej bazy wiedzy do konkretnych d
 | [Łączenie się z aplikacjami finansowymi i operacyjnymi](/learn/paths/connect-finance-operations/) | Funkcje integracji i dostępu do danych w aplikacjach finansowych i operacyjnych są ważnymi możliwościami. Deweloperzy, którzy dowiedzieli się jak budować i rozszerzać kod w aplikacjach finansowych i operacyjnych, mogą zwiększyć wiedzę na temat integracji danych oraz sposobu, w jaki połączenia z danymi mogą mieć pozytywny wpływ na użytkowników. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 5.75 godzin |
 | [Dokonaj migracji danych i rozpocząć eksploatację z aplikacjami finansowymi i operacyjnymi](/learn/paths/migrate-data-go-live-finance-operations/) | Jako konsultant funkcjonalny musisz zrozumieć informacje na temat przygotowywania danych odbiorców do migracji, pracy z zarządzaniem danymi i wykonywania testów akceptacji, aby aktywować z aplikacjami finansowymi i operacyjnymi. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 4 godzin |
 | [Finanse i Działania: Programowanie ALM (DYN766PAL)](https://community.dynamics.com/365/b/techtalks/posts/dynamics-365-finance-and-operations---development-alm-february-19-2020) | Ten TechTalk omawia pojęcia związane z zarządzaniem usług Lifecycle aplikacji deweloperskich, narzędzi i najlepszych praktyk, które zalecamy. Omawiamy, w jaki sposób usługi Lifecycle Services, Visual Studio i Azure DevOps współpracują ze sobą, aby umożliwić ukierunkowane na proces biznesowy ciągłe dostarczanie bazy kodu rozwiązania i obsługę środowisk. | Bezpłatna rejestracja konferencji w sieci Web | 52 minut |
-| [finanse i operacje: rozszerzenie systemu Dynamics 365 Finance z PowerApps (DYN558PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-extending-dynamics-365-with-powerapps-2-6-2019) | Poznanie prostoty Microsoft PowerApps i sposobu integracji z Dynamics 365 Finance w celu cyfrowego przekształcania firm i zwiększania wydajności użytkowników. | Bezpłatna rejestracja konferencji w sieci Web | 43 minut |
-| [Aplikacje finansowe i operacyjne: Rozszerzenia (DYN518PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-extensibility-10-26-18) | Udostępniamy przegląd i aktualizację planów rozszerzeń rozwiązania Microsoft. Omówimy szczegółowo różne sposoby rozszerzenia rozwiązania, zagłębiając się w funkcje rozszerzalności metadanych, a także możliwość zwiększenia i rozszerzenia kodu, w tym za pomocą wydajnej funkcji Chain of Command. | Bezpłatna rejestracja konferencji w sieci Web | 50 minut |
+| [Finanse i Działania: Rozszerzenia (DYN518PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-extensibility-10-26-18) | Udostępniamy przegląd i aktualizację planów rozszerzeń rozwiązania Microsoft. Omówimy szczegółowo różne sposoby rozszerzenia rozwiązania, zagłębiając się w funkcje rozszerzalności metadanych, a także możliwość zwiększenia i rozszerzenia kodu, w tym za pomocą wydajnej funkcji Chain of Command. | Bezpłatna rejestracja konferencji w sieci Web | 50 minut |
 | [Visual Studio Konfiguruj (VIR782PAL) usługę Team Services (VSTS) ](https://community.dynamics.com/365/b/techtalks/posts/visual-studio-team-services-vsts-setup-january-17-2017) | Ta rozmowa techniczna poprowadzi przez niezbędne kroki w celu skonfigurowania wystąpienia usługi VSTS i projektu w celu połączenia z projektem implementacji usługi LCS na potrzeby konfiguracji środowiska Dev/Test. | Bezpłatna rejestracja konferencji w sieci Web | 41 minut |
 | [Integrator danych Dataverse (DYN451PAL2)](https://community.dynamics.com/365/b/techtalks/posts/cds-data-integrator-april-19-2018) | Prosimy o kontaktowanie się z nami w sprawie możliwości korzystania z integratora danych Dataverse. Omówiono opcje integracji między innymi aplikacjami Dynamics 365 Customer Engagement Dynamics 365 Finance (aplikacjami finansowymi i operacyjnymi) oraz integrację z innymi rozwiązaniami innych firm. | Bezpłatna rejestracja konferencji w sieci Web | 61 minut |
 | [Integracja między Dynamics 365 for Sales i Dynamics 365 for Finance & Operations za pomocą Dataverse (DYN340PAL)](https://community.dynamics.com/365/b/techtalks/posts/integration-between-dynamics-365-for-sales-and-dynamics-365-for-finance-amp-operations-via-cds-september-25-2017) | W tym powiązaniu TechTalk poinformujemy scenariusz integracji znany jako Prospekt do kasy, z działaniami dotyczącymi sprzedaży i marketingu w Dynamics 365 for Sales i wykonania w Dynamics 365 Finance. Ponadto zostanie zajrzeć do integratora danych i sposobu modyfikacji integracji. | Bezpłatna rejestracja konferencji w sieci Web | 54 minut |
@@ -55,24 +52,22 @@ Poniższy katalog jest zorganizowany od podstawowej bazy wiedzy do konkretnych d
 | [Kopiowanie do firmy (DYN383PAL) ](https://community.dynamics.com/365/b/techtalks/posts/copy-into-legal-entity-october-24-2017) | W tej sesji zostanie omówiona nowa funkcja w strukturze zarządzania danymi, która jest kopiowana do firmy. Najpierw zapoznajemy nowe funkcje dodane do struktury zarządzania danymi w platformie 8 dla obszaru roboczego, szablonów i projektów danych, a następnie zapoznaj się z funkcjonalnością dodaną do kopii w firmie. | Bezpłatna rejestracja konferencji w sieci Web | 54 minut |
 | [Jak rozszerzyć lub utworzyć nowe analityczne obszary robocze (DYN321PAL) ](https://community.dynamics.com/365/b/techtalks/posts/how-to-extend-or-build-new-analytical-workspaces-september-18-2017) | Ten TechTalk zawiera informacje na temat rozszerzania i tworzenia nowych analitycznych obszarów roboczych. | Bezpłatna rejestracja konferencji w sieci Web | 59 minut |
 | [Struktura mobilna (VIR824PAL) ](https://community.dynamics.com/365/b/techtalks/posts/mobile-framework-april-11-2017) | Ta rozmowa techniczna prowadzi do możliwości programu ruchomego w zakresie tworzenia aplikacji w Dynamics 365 for Operations. Ponadto w sesji będą zademonstrowane ostatnio zbudowane aplikacje. | Bezpłatna rejestracja konferencji w sieci Web | 58 minut |
+| [Kurs MB-500T00: Microsoft Dynamics 365: deweloper aplikacji finansowych i operacyjnych](/training/courses/mb-500t00) | W tym kursie omówiono zadania niezbędne do wypełnienia roli dewelopera w aplikacjach finansowych i operacyjnych systemu Dynamics 365. Deweloper Dynamics 365 for Finance and Operations (FO) to kluczowy zasób techniczny, który implementuje i rozszerza aplikację, aby spełnić wymagania firmy. | Prowadzone przez instruktora szkolenie, koszty różnią się w zależności od regionu i partnera | 5 dni |
 
 ## <a name="servicing"></a>Obsługa<a name="servicing"></a>
 
 | Zawartość | Opis | Format | Długość |
 |---------|-------------|--------|--------|
 | [Aplikacje finansowe i operacyjne — obsługa, obsługa i obsługa produkcji (DYN651PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-servicing-supporting-and-maintaining-production-june-27-2019) | Informacje techniczne na temat efektywnej pomocy technicznej, obsługiwania i obsługiwania środowiska produkcyjnego Dynamics 365 Finance. | Bezpłatna rejestracja konferencji w sieci Web | 53 minut |
-| [Aplikacje finansowe i operacyjne: Zarządzanie funkcjami (DYN641PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | Rozmowa o technologii jest doświadczeniem funkcji zarządzania funkcjami. Udostępnia obszar roboczy, w którym można wyświetlać, włączać, wyłączać i planować funkcje, które zostały dostarczone w każdym wydaniu. Domyślnie nowe funkcje są wyłączone. Można użyć obszaru roboczego, aby włączyć je i wyświetlić dokumentację dla nich. Uczestnictwo w tym spotkaniu w celu sprawdzenia, co jest dostarczane w 10.0.3 i naszych planów dotyczących przyszłych wydań. | Bezpłatna rejestracja konferencji w sieci Web | 47 minut |
+| [Aplikacji finansowe i operacyjne: Zarządzanie funkcjami (DYN641PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | Rozmowa o technologii jest doświadczeniem funkcji zarządzania funkcjami. Udostępnia obszar roboczy, w którym można wyświetlać, włączać, wyłączać i planować funkcje, które zostały dostarczone w każdym wydaniu. Domyślnie nowe funkcje są wyłączone. Można użyć obszaru roboczego, aby włączyć je i wyświetlić dokumentację dla nich. Uczestnictwo w tym spotkaniu w celu sprawdzenia, co jest dostarczane w 10.0.3 i naszych planów dotyczących przyszłych wydań. | Bezpłatna rejestracja konferencji w sieci Web | 47 minut |
 | [Finanse i Działania: zarządzane ciągłe aktualizacje firmy Microsoft (DYN610PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | Kadencja aktualizacji ciągłej dla aplikacji finansowych i operacyjnych została rozpoczęta! Dołącz do nas, aby omówić ciągłe aktualizacje zarządzane przez firmę Microsoft, doświadczenie użytkownika dostępne w usłudze Lifecycle Services oraz przyszłe aktualizacje. | Bezpłatna rejestracja konferencji w sieci Web | 61 minut |
-| [Ciągłe aktualizacje zarządzane przez firmę Microsoft: co nowego (DYN543PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-what-39-s-new-12-13-18) | W tej godzinie wyjaśnimy, co nowego od początkowych ogłoszeń dotyczących ciągłej aktualizacji zarządzanych przez firmę Microsoft. Będziemy omówić kadencję aktualizacji, w jaki sposób odpowiedział na cenną opinię na temat tego procesu, a także zapoznać się z zbliżającym się doświadczeniem użytkownika usługi Lifecycle Services, za pomocą którego można zarządzać aktualizacjami. | Bezpłatna rejestracja konferencji w sieci Web | 56 minut |
-| [Ciągłe aktualizacje zarządzane przez firmę Microsoft (DYN474PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-september-5-2018) | Będziemy omówić plany rozwiązania Microsoft w zakresie aktualizacji systemu do najnowszej wersji. Będziemy ponosić osie czasu, Cadence dla głównych i drobnych aktualizacji, planowane procedury, implikacje oraz co należy zrobić w celu uzyskania optymalnych wyników. | Bezpłatna rejestracja konferencji w sieci Web | 62 minut |
 
 ## <a name="migration-and-upgrade"></a>Uaktualnianie i migracja<a name="migration-and-upgrade"></a>
 
 | Zawartość | Opis | Format | Długość |
 |---------|-------------|--------|--------|
 | [Uaktualnianie z systemu Dynamics AX 2012 do aplikacji finansowych i operacyjnych](/learn/paths/upgrade-ax-2012-finance-operations/) | Poznaj najważniejsze elementy i najlepsze wskazówki dotyczące pomyślnego uaktualnienia rozwiązania Dynamics AX 2012 do aplikacji finansowych i operacyjnych. Od pierwszych kroków odkrywania kluczowych różnic architektonicznych, rozpoczęcia procesu aktualizacji oraz narzędzi do aktualizacji kodu i danych, po najlepsze sposoby przeprojektowania integracji, analiz i raportowania w oparciu o najnowsze możliwości. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 7 godzin |
-| [Aplikacje finansowe i operacyjne: Uaktualnianie z 7.x do 8+ (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | Prosimy o wzięcie udziału w następnym TechTalk, podczas którego będziemy pokryć proces uaktualnienia z 7.X do 8.X. Będziemy omawiać różne scenariusze i kroki wykonywane w celu uaktualnienia kodu i uaktualnienia danych. Obejmą również scenariusze żądań rozszerzalności oraz sposób ich podniesienia w miarę potrzeby. Część 1 z 2. | Bezpłatna rejestracja konferencji w sieci Web | 61 minut |
-| [Aktualizacja AX2012 do aplikacji finansowych i operacyjnych (VIR817PAL2)](https://community.dynamics.com/365/b/techtalks/posts/ax2012-to-dynamics-365-for-operations-upgrade-april-20-2017) | Ta rozmowa techniczna zawiera przegląd informacji na temat uaktualniania kodu i danych z systemu Dynamics AX 2012 do Dynamics 365 for Operations. | Bezpłatna rejestracja konferencji w sieci Web | 45 minut |
+| [Aktualizacja AX2012 do aplikacji finansowych i operacyjnych — 3 września 2020 r.](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/tax2012-to-finance-and-operations-apps-upgrade-september-3-2020) | Ta rozmowa techniczna zawiera przegląd informacji na temat uaktualniania kodu i danych z systemu Dynamics AX 2012 do aplikacji finansowych i operacyjnych. | Tech Talk (zarejestrowany Webinar) | 66 minut |
 | [Narzędzia migracyjne AX2009 do aplikacji finansowych i operacyjnych (VIR809PAL)](https://community.dynamics.com/365/b/techtalks/posts/ax2009-to-dynamics-365-for-operations-migration-tools-march-2-2017) | Ta sesja obejmie dostępne narzędzia ułatwiające Migrowanie z AX2009 do D365 dla aplikacji finansowych i operacyjnych. | Bezpłatna rejestracja konferencji w sieci Web | 55 minut |
 
 ## <a name="testing"></a>Testowanie<a name="testing"></a>
@@ -95,4 +90,3 @@ Poniższy katalog jest zorganizowany od podstawowej bazy wiedzy do konkretnych d
 |[Egzamin MB-500: Microsoft Dynamics 365, aplikacje finansowe i operacyjne — programista](/learn/certifications/exams/mb-500) | Ten egzamin mierzy Twoją zdolność do wykonywania następujących zadań technicznych: planowania architektury i projektowania rozwiązań; stosować narzędzia programistyczne; projektować i rozwijać elementy AOT; opracowywać i testować kod; wdrożyć raportowanie; integrować i zarządzać rozwiązaniami dotyczącymi danych; wdrażaj zabezpieczenia i optymalizuj wydajność. | Egzamin, koszty różnią się w zależności od regionu |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

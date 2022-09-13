@@ -1,23 +1,23 @@
 ---
 title: Katalog szkoleń dla menedżerów projektów wdrożeniowych współpracujących z aplikacją Dynamics 365 Finance
 description: Znajdź wszystkie opcje szkoleń dla osób pracujących jako menedżerowi projektów wdrożeniowych z aplikacją Dynamics 365 Finance.
-author: margoc
+author: cstorega
 ms.topic: article
 ms.date: 07/27/2020
-ms.author: margoc
+ms.author: cstorega
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9b4c0a108c581eafee45fa3ab31d532d3acc7ed2
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 9f75a7f6fad3fb8a204c579083b9ffaca46e7592
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9067659"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9424551"
 ---
 # <a name="learning-catalog-for-implementation-project-managers-working-with-dynamics-365-finance"></a>Katalog szkoleń dla menedżerów projektów wdrożeniowych współpracujących z aplikacją Dynamics 365 Finance
 
@@ -25,11 +25,10 @@ Czy odpowiadasz za to, aby implementacja w Twojej firmie przebiegła sprawnie?
 
 Poniższy katalog jest zorganizowany od podstawowej bazy wiedzy do konkretnych domen oraz od najbardziej do najbardziej zaawansowanego. Jeśli zawartość istnieje w wielu formatach, poinformujemy Cię, aby można było wybrać format szkoleń najlepiej odpowiadający Twoim potrzebom.
 
-## <a name="get-started"></a>Rozpoczynanie pracy<a name="get-started"></a>
+## <a name="get-started"></a>Rozpocznij<a name="get-started"></a>
 
-| Zawartość | opis  | Format  | Długość    |
+| Zawartość | Opis  | Format  | Długość    |
 |-------------|-----------------|-------------|------------|
-| [Zapoznaj się z biznesową wartością Microsoft Dynamics 365 i Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Czy chcesz poznać aplikacje biznesowe? Być może nie wiadomo, gdzie zacząć z Microsoft Dynamics 365 i aplikacjami Power Platform? Dowiedz się, jak możliwości aplikacji biznesowych umożliwiają przekształcanie firmy. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 7 godzin |
 | [Dynamics 365 i Power Platform Fundamentals](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Czy chcesz poznać aplikacje biznesowe? Rozpocznij od tej ścieżki nauki, aby zobaczyć, jak są używane aplikacje Dynamics 365. Informacje o pojęciach chmur, Power Platform oraz sposobach rozpoczynania pracy z aplikacjami Dynamics 365. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 5.5 godzin |
 | [Rozpoczynanie pracy z aplikacjami finansowymi i operacyjnymi](/learn/paths/get-started-finance-operations/) | Dowiedz się, jak za pomocą aplikacji finansowych i operacyjnych w firmach można zarządzać globalnymi systemami finansowymi, operacyjnymi procesami biznesowymi i wydajnymi łańcuchami dostaw, aby umożliwić osobom wykonywanie szybkich, świadomych decyzji. Jako pierwszy etap pracy z aplikacjami finansowymi i operacyjnymi musisz zapoznać się z jego funkcjami, w zależności od żądanej roli użytkownika. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 2 godzin |
 | [Zanim kupisz](/dynamics365/unified-operations/fin-and-ops/get-started/before-you-buy) | Przeczytaj wytyczne krok po kroku, z których można korzystać niezależnie od tego, czy dopiero oceniasz przydatność aplikacji finansowych i operacyjnych, czy też wiążąco chcesz dokonać zakupu. | Dokumentacja | |
@@ -58,13 +57,8 @@ Poniższy katalog jest zorganizowany od podstawowej bazy wiedzy do konkretnych d
 | [Konfiguracja w aplikacjach finansowych i operacyjnych: Regression Suite Automation Tool -- Tło i Ustawienia (DYN646PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-regression-suite-automation-tool-background-amp-setup-may-28-2019) | Jest to pierwsza z dwóch części w przypadku testowania Regression Suite Automation Testing (RSAT). W tej sesji będziemy ponosić informacje, jak zapewnić konieczność korzystania z ciągłej aktualizacji przy użyciu zautomatyzowanego testowania za pomocą narzędzia RSAT. Informacje i zalecenia dotyczące tworzenia nagrań zadań i wykonywania testów za pomocą narzędzi RSAT będą uwzględniane wraz z krokiem krok po kroku instalacji i konfiguracji. | Tech Talk (zarejestrowany Webinar) | 70 minut |
 | [Aplikacje finansowe i operacyjne: Regression Suite Automation Tool — pokaz cyklu życia testu (DYN647PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-regression-suite-automation-tool-testing-lifecycle-demo-may-29-2019) | Jest to druga z dwóch części w przypadku testowania Regression Suite Automation Testing (RSAT). Ta sesja obejmuje pokaz całego cyklu tworzenia i zapisywania zapisów zadań z aplikacji finansowych i operacyjnych w bibliotece narzędzia BPM w usługi LCS, synchronizowanie biblioteki narzędzia BPM w celu utworzenia przypadków testowych w Azure DevOps, grupowania przypadków testowych z pakietami testów oraz ładowania i wykonywanie zestawów testów w pakietach RSAT. | Tech Talk (zarejestrowany Webinar) | 70 minut |
 | [Sposoby testowania wydajności (DYN449PAL2)](https://community.dynamics.com/365/b/techtalks/posts/performance-testing-approach-april-30-2018) | Skontaktuj się z nami, aby uzyskać informacje o sposobach postępowania z testowaniem wydajności. Informacje o podstawowych, najważniejszych wskazówkach dotyczących testowania, dostępnych narzędzi i technik wykonywania testów i mierzenia wydajności oraz sposobach używania wyników do optymalizacji. | Tech Talk (zarejestrowany Webinar) | 45 minut |
-| [Jak uaktualnić do wersji 7.2 (lipiec 2017) z wersji 7.0 (RTW)/7.1 (wydanie 1611) (DYN338PAL2)](https://community.dynamics.com/365/b/techtalks/posts/how-to-upgrade-to-7-2-july-2017-from-7-0-rtw-7-1-release-1611-august-3-2017) | W tej sesji wyjaśnimy, jak uaktualnić z aplikacji finansowych i operacyjnych Dynamics 365 v 7.0 (RTW) i v 7.1 (1611) do v 7.2 (lipiec 2017). Oferujemy jasne rozróżnienie między klientami a projektami trwającymi (dotychczas niedostępne). | Tech Talk (zarejestrowany Webinar) | 58 minut |
-| [Aplikacje finansowe i operacyjne: Uaktualnianie z 7.x do 8+ (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | Prosimy o wzięcie udziału w następnym TechTalk, podczas którego będziemy pokryć proces uaktualnienia z 7.X do 8.X. Będziemy omawiać różne scenariusze i kroki wykonywane w celu uaktualnienia kodu i uaktualnienia danych. Obejmą również scenariusze żądań rozszerzalności oraz sposób ich podniesienia w miarę potrzeby. Część 1 z 2. | Tech Talk (zarejestrowany Webinar) | 61 minut |
-| [Aktualizacja AX2012 do aplikacji finansowych i operacyjnych (VIR817PAL2)](https://community.dynamics.com/365/b/techtalks/posts/ax2012-to-dynamics-365-for-operations-upgrade-april-20-2017) | Ta rozmowa techniczna zawiera przegląd informacji na temat uaktualniania kodu i danych z systemu Dynamics AX 2012 do Dynamics 365 for Operations. | Tech Talk (zarejestrowany Webinar) | 45 minut |
+| [Aktualizacja AX2012 do aplikacji finansowych i operacyjnych — 3 września 2020 r.](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/tax2012-to-finance-and-operations-apps-upgrade-september-3-2020) | Ta rozmowa techniczna zawiera przegląd informacji na temat uaktualniania kodu i danych z systemu Dynamics AX 2012 do aplikacji finansowych i operacyjnych. | Tech Talk (zarejestrowany Webinar) | 66 minut |
 | [Opcje analizy i sprawozdawczości, drukowanie i Agent rozsyłania dokumentów](https://community.dynamics.com/365/b/techtalks/posts/analytics-amp-reporting-options-printing-and-the-document-routing-agent-february-8-2018)| Dołącz do naszej rozmowy o technologii na dwa powiązane tematy. W pierwszej kolejności będziemy omawiać analizy i wzorce rozwiązań oraz narzędzia dla Dynamics 365 Finance w wersji Enterprise Edition. Po drugie omówiono scenariusze drukowania i Document Routing Agent. | Tech Talk (zarejestrowany Webinar) | 45 minut |
-| [Kurs MB — 300T01-A: podstawowe wspólne funkcje systemu aplikacji finansowych i operacyjnych Dynamics 365 Finance](https://www.microsoft.com/learning/course.aspx?cid=MB-300T01) | Ten kurs omawia podstawowe wspólne funkcje Microsoft Dynamics 365 Finance. | Prowadzone przez instruktora szkolenie osobiste lub online, koszty różnią się w zależności od regionu i partnera | 1 dzień |
-| [Kurs MB — 300T02-A: podstawowa konfiguracja Dynamics 365 Finance](https://www.microsoft.com/learning/course.aspx?cid=MB-300T02) | Ten kurs opisuje podstawowe zadania konfiguracyjne Microsoft Dynamics 365 Finance. | Prowadzone przez instruktora szkolenie osobiste lub online, koszty różnią się w zależności od regionu i partnera | 1 dzień |
-| [Kurs MB — 300T03-A: migracja danych i przygotowanie do użycia Dynamics 365 Finance](https://www.microsoft.com/learning/course.aspx?cid=MB-300T03) | Ten kurs omawia migrację danych i przygotowanie do aktywacji Microsoft Dynamics 365 Finance. | Prowadzone przez instruktora szkolenie osobiste lub online, koszty różnią się w zależności od regionu i partnera | 1 dzień |
 | [Strona główna cyklu życia implementacji](/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/implementation-lifecycle) | W tych tematach opisano programy, narzędzia i procesy dostępne w cyklu implementacji projektu Microsoft Dynamics 365 Finance. | Dokumentacja | |
 
 ## <a name="financial-management"></a>Zarządzanie finansami<a name="financial-management"></a>
@@ -81,13 +75,10 @@ Poniższy katalog jest zorganizowany od podstawowej bazy wiedzy do konkretnych d
 | [Konfigurowanie aplikacji Dynamics 365 Finance dla sektora publicznego](/learn/modules/configure-public-sector-dyn365-finance/) | Aplikacja Dynamics 365 Finance obsługuje procesy biznesowe, które są wspólne dla sektora publicznego i prywatnego, takie jak budżetowanie zakupów, rozrachunki z dostawcami i rozrachunki z odbiorcami. Funkcje modułu Sektor publiczny pomagają organizacjom obsługującym instytucje sektora publicznego spełniać wymagania dotyczące reguł, regulacji prawnych i raportowania. | Bezpłatny, samodzielnie dostępny online moduł | 1 godzina |
 | [Raportowanie finansowe (DYN305PAL)](https://community.dynamics.com/365/b/techtalks/posts/financial-reporting-april-25-2017) | Ta rozmowa techniczna zawiera omówienie ustawień raportowania finansowego i list raportów w Dynamics 365 for Operations. W sesji będzie również wyzerowana w środowisku UAT oraz Rozwiązywanie problemów i wyszukiwanie poprawek przy użyciu usługi LCS. | Bezpłatna rejestracja konferencji w sieci Web | 57 minut |
 | [Aplikacje finansowe i operacyjne: podatek cyfrowy w Wielkiej Brytanii-deklaracja VAT w systemie Dynamics 365 For Finance And Operations (DYN599PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-uk-digital-tax-vat-declaration-in-dynamics-365) | Podczas tej sesji będziemy rozmawiać o nowym procesie przesyłania wprowadzonym przez HMRC w Wielkiej Brytanii dla deklaracji VAT. Wyjaśnimy, jak skonfigurować deklarację VAT i skonfigurować obsługę wiadomości elektronicznych w Dynamics 365 Finance. W środowisku piaskownicy zostanie wykazany proces przesyłania do aplikacji HMRC. Ta sesja jest szczególnie odpowiednia dla konsultantów, którzy implementują funkcję i zapewniają użytkownikom szkolenia. | Bezpłatna rejestracja konferencji w sieci Web | 63 minut |
-| [Kurs MB — 310T01-A: Konfigurowanie i używanie podstawowych składników modułu Zarządzanie finansami w Dynamics 365 Finance](https://www.microsoft.com/learning/course.aspx?cid=MB-310T01) | Po skonfigurowaniu i wprowadzeniu informacji o nabyciu środków trwałych możesz zarządzać nimi, amortyzując je i ustalając próg kapitalizacji. Sposób zarządzania środkami trwałymi musi być zgodny zarówno z międzynarodowymi standardami księgowania, jak i z obowiązującym w danym kraju lub regionie prawodawstwem dotyczącym księgowania. | Prowadzone przez instruktora szkolenie osobiste lub online, koszty różnią się w zależności od regionu i partnera | 2 dni |
-| [Kurs MB — 310T02 — A: Konfigurowanie i używanie rozrachunków z dostawcami, należności i windykacji w aplikacjach finansowych i operacyjnych](https://www.microsoft.com/learning/course.aspx?cid=MB-310T02) | Moduł Rachunek kosztów pozwala zbierać dane z różnych źródeł, takich jak księga główna, księgi podrzędne, budżety i zasoby informacji statystycznych. Następnie można analizować, sumować i oceniać dane kosztów, dzięki czemu kierownictwo może podejmować najlepsze decyzje w kwestii aktualizacji cen, budżetów, kontroli kosztów i tak dalej. | Prowadzone przez instruktora szkolenie osobiste lub online, koszty różnią się w zależności od regionu i partnera | 1 dzień |
-| [Kurs MB — 310T03-A: Konfigurowanie i korzystanie z budżetowania, środków trwałych i dodatkowych funkcji w aplikacjach finansowych i operacyjnych](https://www.microsoft.com/learning/course.aspx?cid=MB-310T03) | Można wykonać procedury zamykania dla okresu lub roku. Procesy zamknięcia przygotowują system do nowego okresu. Informacje o sposobach przygotowywania, konfigurowania i wykonywania okresowych procesów w Dynamics 365 Finance. | Prowadzone przez instruktora szkolenie osobiste lub online, koszty różnią się w zależności od regionu i partnera | 1 dzień |
 
 ## <a name="exams"></a>Egzaminy<a name="exams"></a>
 
-| Zawartość | opis | Format |
+| Zawartość | Opis | Format |
 |---|---|---|
 | [Egzamin MB-300: Microsoft Dynamics 365 Unified Operations Core](/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Ten egzamin mierzy swoją zdolność do wykonywania następujących zadań technicznych: należy stosować typowe funkcje i narzędzia wdrożeniowe; konfigurowanie zabezpieczeń, procesów i opcji; przeprowadzanie migracji danych; i sprawdzić poprawność rozwiązania i jego obsługę. | Egzamin, koszty różnią się w zależności od regionu |
 | [Egzamin MB — 310: Microsoft Dynamics 365 Finance, finanse](/learn/certifications/exams/mb-310?wt.mc_id=learningredirect_certs-web-wwl) | Cykl życia rozpoczyna się od utworzenia zlecenia produkcyjnego, zamówienia partii lub kanban. | Egzamin, koszty różnią się w zależności od regionu |

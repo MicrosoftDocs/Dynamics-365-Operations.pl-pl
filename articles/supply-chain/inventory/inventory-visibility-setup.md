@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 42c2c287e2a813f8bb07ce0c7f21f4224a217946
-ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
+ms.openlocfilehash: eb17f24b90933dac0f875bb0ef2d5039a240b197
+ms.sourcegitcommit: 1ca4ad100f868d518f3634dca445c9878962108e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "9306063"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "9388549"
 ---
 # <a name="install-and-set-up-inventory-visibility"></a>Instalowanie i konfigurowanie dodatku Inventory Visibility
 
@@ -56,7 +56,9 @@ Po zarejestrowaniu aplikacji i dodaniu klucza tajnego klienta do Azure AD wykona
 1. Przewijaj stronę środowiska w dół do momentu, aż znajdziesz sekcję **Dodatki środowiska** w sekcji **Integracja Power Platform**. Tam znajdziesz nazwę środowiska Dataverse. Potwierdź, że nazwa środowiska Dataverse jest nazwą, której chcesz używać dla widoczności zapasów.
 
     > [!NOTE]
-    > Obecnie są obsługiwane tylko środowiska Dataverse utworzone za pomocą usługi LCS. Jeśli środowisko Dataverse zostało utworzone w inny sposób (na przykład za pomocą centrum administracyjnego Power Apps) i jest połączone ze środowiskiem Supply Chain Management, należy najpierw skontaktować się z zespołem ds. produktu Widoczność magazynu pod adresem [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com), aby rozwiązać ten problem z mapowaniem. Następnie można zainstalować dodatek Widoczność magazynu.
+    > Obecnie są obsługiwane tylko środowiska Dataverse utworzone za pomocą usługi LCS. Jeśli środowisko Dataverse zostało utworzone w inny sposób (na przykład za pomocą centrum administracyjnego PowerApps) i jest połączone ze środowiskiem Supply Chain Management, należy najpierw naprawić problem mapowania, zanim zostanie zainstalowany dodatek Widoczność magazynu.
+    >
+    > Możliwe, że twoje środowisko podwójnego zapisu jest połączone z instancją Dataverse, a LCS nie jest ustawiony na integrację z Power Platform. Ten błąd w łączeniu może spowodować nieoczekiwane zachowanie. Zalecamy, by szczegóły środowiska LCS pasowały do tego, co jest podłączone w podwójnym zapisie, więc to samo połączenie może być używane przez zdarzenia biznesowe, tabele wirtualne i dodatki. Zobacz [Niezgodne połączenie](../../fin-ops-core/dev-itpro/data-entities/dual-write/lcs-setup.md#linking-mismatch), aby uzyskać informacje na temat naprawiania problemów z mapowaniem. Po rozwiązanie problemu z mapowaniem można kontynuować instalację widoczności magazynu.
 
 1. W sekcji **Dodatki środowiska** wybierz opcję **Zainstaluj nowy dodatek**.
 
@@ -140,11 +142,11 @@ Aby odinstalować dodatek Widoczność magazynu, trzeba:
 1. Wybierz **środowisko** na pasku nawigacji
 1. Wybierz środowisko Dataverse, które jest połączone ze środowiskiem usługi LCS.
 1. Przejdź do obszaru **Rozwiązania** i usuń następujące rozwiązania w następującej kolejności:
-    1. Rozwiązanie kotwicy dla aplikacji Inventory Visibility w rozwiązaniach systemu Dynamics 365
-    1. Rozwiązanie aplikacji Widoczność magazynu Dynamics 365 FNO SCM
-    1. Konfiguracja usługi zapasów
-    1. Autonomiczna aplikacja Widoczność magazynu
-    1. Rozwiązanie podstawowe Widoczność magazynu Dynamics 365 FNO SCM
+    1. Dynamics 365 Inventory Visibility — kotwica
+    1. Dynamics 365 Inventory Visibility — aplikacja
+    1. Dynamics 365 Inventory Visibility — formanty
+    1. Dynamics 365 Inventory Visibility — wtyczki
+    1. Dynamics 365 Inventory Visibility — podstawa
 
     Po usunięciu tych rozwiązań usuwane są także dane przechowywane w tabelach.
 

@@ -4,22 +4,17 @@ description: W tym artykule opisano sposób obsługiwania domen w rozwiązaniach
 author: BrianShook
 ms.date: 08/19/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: BrShoo
-ms.search.validFrom: ''
-ms.dyn365.ops.version: Release 10.0.12
-ms.search.industry: retail
-ms.search.form: ''
-ms.openlocfilehash: 08d6d52175bb7a77259cbd38b15f466deeab0846
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.search.validFrom: 2017-06-20
+ms.openlocfilehash: fd2fdc82fe62e56e18f54138e07b663a18802d66
+ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336711"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9405504"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domeny w rozwiązaniu Dynamics 365 Commerce
 
@@ -110,10 +105,10 @@ Aby skonfigurować domeny niestandardowe przy użyciu usługi front door service
 
 - Skonfiguruj usługę front door service, taką jak np. Azure Front Door, aby obsługiwać ruch przód-tył i łączyć się ze środowiskiem Commerce. Pozwala to na większą kontrolę nad zarządzaniem domenami i certyfikatami oraz bardziej szczegółowe zasady zabezpieczeń.
 
+- Należy skorzystać z dostarczonej przez Commerce instancji Azure Front Door. Wymaga to koordynacji działania z zespołem Dynamics 365 Commerce w zakresie weryfikacji domeny i uzyskiwania certyfikatów SSL dla domeny produkcji.
+
 > [!NOTE]
 > Jeśli używasz zewnętrznej usługi CDN lub usługi Front Door, upewnij się, że żądanie jest wysyłane na platformę Commerce z nazwą hosta podaną przez Commerce, ale z nagłówkiem X-Forwarded-Host (XFH) \<custom-domain\>. Na przykład, jeśli punktem końcowym usługi Commerce jest `xyz.dynamics365commerce.ms`, a domeną niestandardową jest `www.fabrikam.com`, nagłówkiem hosta przekazywanego żądania powinno być `xyz.dynamics365commerce.ms`, a nagłówkiem XFH `www.fabrikam.com`.
-
-- Należy skorzystać z dostarczonej przez Commerce instancji Azure Front Door. Wymaga to koordynacji działania z zespołem Dynamics 365 Commerce w zakresie weryfikacji domeny i uzyskiwania certyfikatów SSL dla domeny produkcji.
 
 Aby uzyskać informacje o tym, jak skonfigurować usługę CDN bezpośrednio, należy zapoznać się z tematem [Dodawanie obsługi sieci dostarczania zawartości (CDN)](add-cdn-support.md).
 

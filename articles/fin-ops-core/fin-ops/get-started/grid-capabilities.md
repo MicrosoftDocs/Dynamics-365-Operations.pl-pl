@@ -2,7 +2,7 @@
 title: Możliwości siatki
 description: W tym artykule opisano kilka zaawansowanych funkcji formantu siatki. Musisz włączyć nową funkcje siatki, aby można było uzyskać dostęp do tych możliwości.
 author: jasongre
-ms.date: 08/09/2022
+ms.date: 08/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: a8968a1263dfafd67b07b4beb78c51493e95756e
-ms.sourcegitcommit: 47534a943f87a9931066e28f5d59323776e6ac65
+ms.openlocfilehash: 096f441d39dde0f322ed117ab35a6a4641a38a93
+ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "9258956"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9405473"
 ---
 # <a name="grid-capabilities"></a>Możliwości siatki
 
@@ -178,20 +178,22 @@ Funkcja **Kontrolka nowej siatki** jest dostępna bezpośrednio w module Zarząd
 
 Ta funkcja rozpoczęła się domyślnie w wersji 10.0.21. Ma on zostać obowiązkowy w październiku 2022 roku.
 
-## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Deweloper] Rezygnacja z używania nowej siatki dla poszczególnych stron 
+## <a name="developer-topics"></a>Tematy dewelopera
+
+### <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Deweloper] Rezygnacja z używania nowej siatki dla poszczególnych stron 
 Jeśli Twoja organizacja odkryje stronę, na której występują pewne problemy z wykorzystaniem nowej siatki, dostępny jest interfejs API, który umożliwia indywidualnemu formularzowi korzystanie ze starszej kontroli sieci, jednocześnie zezwalając reszcie systemu na korzystanie z nowej kontroli sieci. Aby wycofać pojedynczą stronę z nowej siatki, należy dodać następujący wpis wywołania `super()` w metodzie `run()` dla formularza.
 
 ```this.forceLegacyGrid();```
 
 Ten interfejs API zostanie ostatecznie wycofany, aby umożliwić usunięcie starszego formantu siatki. Jednak pozostanie on dostępny przez przynajmniej 12 miesięcy po jego zakończeniu. Jeśli jakiekolwiek problemy wymagają użycia tego interfejsu API, należy zgłosić je do rozwiązania Microsoft.
 
-### <a name="forcing-a-page-to-use-the-new-grid-after-previously-opting-out-the-grid"></a>Wymuszanie strony do korzystania z nowej siatki po wcześniejszym zrezygnowaniu z siatki
+#### <a name="forcing-a-page-to-use-the-new-grid-after-previously-opting-out-the-grid"></a>Wymuszanie strony do korzystania z nowej siatki po wcześniejszym zrezygnowaniu z siatki
 Jeśli użytkownik zrezygnował z używania nowej siatki przez pojedynczą stronę, można później ponownie włączyć nową siatkę po rozwiązaniu podstawowych problemów. Aby to zrobić, wystarczy usunąć połączenie do `forceLegacyGrid()`. Zmiana zostanie wniesienie w życie dopiero po wystąpieniu jednej z następujących sytuacji:
 
 - **Ponowne wdrożenie środowiska**: Gdy środowisko jest aktualizowane i ponownie rozmieszczane, tabela, która przechowuje strony, które zrezygnowały z nowej siatki (FormControlReactGridState) jest automatycznie czyszczona.
 - **Ręczne czyszczenie tabeli**: W przypadku scenariuszy rozwoju należy użyć języka SQL, aby wyczyścić tabelę FormControlReactGridState, a następnie ponownie uruchomić system AOS. Ta kombinacja akcji spowoduje zresetowanie buforowania stron, które zrezygnowały z nowej siatki.
 
-## <a name="developer-opting-individual-grids-out-of-the-typing-ahead-of-the-system-capability"></a>[Deweloper] Wyłączanie poszczególnych kratek z możliwości systemu Pisanie przed systemem
+### <a name="developer-opting-individual-grids-out-of-the-typing-ahead-of-the-system-capability"></a>[Deweloper] Wyłączanie poszczególnych kratek z możliwości systemu Pisanie przed systemem
 Pojawiły się pewne scenariusze, które nie nadają się do współpracy z *Pisanie przed systemem*. (Na przykład, jakiś kod, który jest wyzwalany, gdy wiersz jest weryfikowany powoduje, że badanie źródła danych jest wyzwalane, a badanie może wtedy uszkodzić niezaangażowane edycje istniejących wierszy). Jeśli Twoja organizacja odkryje taki scenariusz, dostępne jest API, które pozwala programiście na wyłączenie asynchronicznego sprawdzania poprawności wierszy w poszczególnych siatkach i przywrócenie dotychczasowego zachowania.
 
 Kiedy asynchroniczna walidacja wierszy jest wyłączona w siatce, użytkownicy nie mogą utworzyć nowego wiersza lub przejść do innego istniejącego wiersza w siatce, gdy występują problemy z walidacją w bieżącym wierszu. Efektem ubocznym tego działania jest to, że tabele nie mogą być wklejane z Excela do siatek aplikacjach finansowych i operacyjnych.
@@ -204,13 +206,18 @@ Aby wyłączyć indywidualną siatkę z asynchronicznego sprawdzania poprawnośc
 > - To wezwanie powinno być przywoływane tylko w wyjątkowych przypadkach i nie powinno być normą dla wszystkich krat.
 > - Nie zalecamy przełączania tego API w czasie działania po załadowaniu formularza.
 
-## <a name="developer-size-to-available-width-columns"></a>[Deweloper] Kolumny od rozmiaru do dostępnej szerokości
+### <a name="developer-size-to-available-width-columns"></a>[Deweloper] Kolumny od rozmiaru do dostępnej szerokości
 Jeśli projektant ustawi właściwość **WidthMode** na **SizeToAvailable** dla kolumn w nowej siatce, te kolumny mają początkowo taką samą szerokość, jaką miałyby w przypadku ustawienia właściwości na **SizeToContent**. Jednak rozciągają się one na użycie dowolnej dodatkowej szerokości w siatce. Jeśli właściwość jest ustawiona jako **SizeToAvailable** dla wielu kolumn, wszystkie te kolumny mają dowolną dodatkową szerokość w siatce. Jeśli jednak użytkownik ręcznie zmieni rozmiar jednej z tych kolumn, kolumna stanie się statyczna. Pozostanie on o tej samej szerokości i nie będzie już rozciągany, aby uzyskać dodatkową szerokość siatki.
 
-## <a name="developer-specifying-the-column-that-receives-the-initial-focus-when-new-rows-are-created-by-using-the-down-arrow-key"></a>[Deweloper] Określanie kolumny, która otrzymuje początkowy fokus podczas tworzenia nowych wierszy za pomocą klawisza strzałki w dół
+### <a name="developer-specifying-the-column-that-receives-the-initial-focus-when-new-rows-are-created-by-using-the-down-arrow-key"></a>[Deweloper] Określanie kolumny, która otrzymuje początkowy fokus podczas tworzenia nowych wierszy za pomocą klawisza strzałki w dół
 Jak omówiono w [różnicach podczas wprowadzania danych przed sekcją systemową](#differences-when-entering-data-ahead-of-the-system), jeśli jest włączona funkcja „Wpisanie z wyprzedzeniem” i użytkownik tworzy nowy wiersz za pomocą klawisza **strzałki w dół**, domyślnym zachowaniem jest umieść fokus w pierwszej kolumnie nowego wiersza. To doświadczenie może różnić się od możliwości w starszej siatce lub po wybraniu **przycisku Nowy**.
 
 Użytkownicy i organizacje mogą tworzyć zapisane widoki, które są zoptymalizowane pod kątem wprowadzania danych. (Można na przykład zmienić kolejność kolumn, tak aby pierwsza kolumna rozpoczynała wprowadzanie danych) Ponadto na wersji 10.0.29 organizacje mogą dostosować to zachowanie za **pomocą metody selectedControlOnCreate()**. Ta metoda pozwala programiście określić kolumnę, która powinna otrzymać początkowy fokus podczas tworzenia nowego wiersza za pomocą klawisza **strzałki w dół**. Jako dane wejściowe ten interfejs API przyjmuje identyfikator formantu odpowiadający kolumnie, która powinna otrzymać zespół początkowy.
+
+### <a name="developer-handling-grids-with-non-react-extensible-controls"></a>[Deweloper] Obsługa siatek za pomocą formantów innych niż React
+Jeśli siatka jest wczytywana, system napotka rozszerzalny formant, który nie jest oparty na React, system wymusi renderowanie w starszej siatce. Gdy użytkownik po raz pierwszy napotka tę sytuację, zostanie wyświetlony komunikat oznaczający, że trzeba odświeżyć stronę. Następnie ta strona będzie automatycznie ładować starszą siatkę bez żadnych dodatkowych powiadomień dla użytkowników do czasu następnej aktualizacji systemu. 
+
+Aby rozwiązać tę sytuację na stałe, autor rozszerzalnych formantów może utworzyć wersję React formantu do użycia w siatce.  Po określeniu klasy X++ dla formantu można użyć atrybutu **FormReactControlAttribute**, aby określić lokalizację pakietu React do załadowania dla tego formantu. Przykładem jest klasa `SegmentedEntryControl`.  
 
 ## <a name="known-issues"></a>Znane problemy
 Ta sekcja zawiera listę znanych problemów związanych z nową kontrolą siatki.
@@ -218,9 +225,12 @@ Ta sekcja zawiera listę znanych problemów związanych z nową kontrolą siatki
 ### <a name="open-issues"></a>Otwarte problemy
 - Po włączeniu funkcji **Kontrolka nowej siatki** niektóre strony będą nadal korzystać z istniejącej kontrolki siatki. Ma to miejsce w następujących sytuacjach:
  
-    - Na stronie, która jest renderowana w wielu kolumnach, istnieje lista kart.
-    - Na stronie istnieje lista zgrupowanych kart.
-    - Kolumna siatkowa z niereagującą, rozszerzalną kontrolą.
+    - [Rozwiązane] Na stronie, która jest renderowana w wielu kolumnach, istnieje lista kart.
+        - Ten typ listy kart jest obsługiwany przez **Nowy formant siatki** od wersji 10.0.30. W tym celu można usunąć dowolne użycia właściwości forceLegacyGrid(). 
+    - [Rozwiązane] Na stronie istnieje lista zgrupowanych kart.
+        - Pogrupowane listy kart są obsługiwana przez **Nowy formant siatki** od wersji 10.0.30. W tym celu można usunąć dowolne użycia właściwości forceLegacyGrid(). 
+    - [Rozwiązane] Kolumna siatkowa z niereagującą, rozszerzalną kontrolą.
+        - Formanty rozszerzalne mogą dostarczać wersję React swoich formantów, które zostaną załadowane po umieszczeniu w siatce i dostosowaniu definicji formantu do załadowania tego formantu, gdy jest używany w siatce. Aby uzyskać więcej informacji, zajrzyj do odpowiedniej sekcji dla deweloperów. 
 
     Gdy użytkownik po raz pierwszy napotka jedną z tych sytuacji, zostanie wyświetlony komunikat o odświeżeniu strony. Po wyświetleniu tego komunikatu strona będzie nadal wykorzystywać istniejącą siatkę dla wszystkich użytkowników, aż do następnej aktualizacji wersji produktu. Lepsza obsługa tych scenariuszy, dzięki czemu może być wykorzystywana nowa siatka, będzie brana pod uwagę podczas przyszłej aktualizacji.
 

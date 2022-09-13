@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 89036920cc8738e2948ec1a78aafc4b35fff87fa
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: d6aa5a0cb49e5871a50a2ac5ac2c29cc09e232fc
+ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219103"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9403711"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10025-april-2022"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.25 (kwiecień 2022)
 
@@ -161,7 +161,7 @@ Tabela zawiera również listę funkcji, które były wcześniej w publicznej we
 | Zarządzanie magazynem | [Stanowisko obiektu o numerze identyfikacyjnym w lokalizacji](../warehousing/location-license-plate-positioning.md) | Wymagana |
 | Zarządzanie magazynem | [Mieszanie wymiarów produktów w lokalizacji](../warehousing/location-product-dimension-mixing.md) | Wymagana |
 | Zarządzanie magazynem | Umożliwia edytowanie pola stanu zapasów dla przeniesienia magazynowego urządzeń przenośnych | Wymagana |
-| Zarządzanie magazynem | Ręczna usługa pobierania wierszy sprzedaży dla administratora lub podobnych zaufanych użytkowników | Wymagana |
+| Zarządzanie magazynem | [Ręczna usługa pobierania wierszy sprzedaży dla administratora lub podobnych zaufanych użytkowników](../warehousing/manual-order-line-picking-exception-handling.md) | Wymagana |
 | Zarządzanie magazynem | [Zapobiegaj używaniu numerów identyfikacyjnych wysłanych zamówień przeniesienia w magazynach innych niż magazyn docelowy](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md) | Wymagana |
 | Zarządzanie magazynem | Monituj o rozwiązanie niejednoznacznych nazw typu „Lokalizacja/numer identyfikacyjny” | Wymagana |
 | Zarządzanie magazynem | [Kontrola jakości](../warehousing/quality-check.md) | Wymagana |

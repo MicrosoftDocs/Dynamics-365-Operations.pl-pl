@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-05-27
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 5cca06517fbdcbdae6e54c106b113a83851240c8
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: bbbd524020690b84fce34facaaa3047853fb2641
+ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9334784"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9403724"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10028-august-2022"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.28 (sierpień 2022 r.)
 
@@ -50,7 +50,7 @@ Aby włączyć lub wyłączyć te funkcje, należy przejść do obszaru [zarząd
 | Zarządzanie zapasami i magazynem | (Indie) W przypadku reguł ceny przeniesienia ignoruj lokalizację, gdy ustawienie „Z kodu magazynu” ma wartość „Wszystko” | <p>Ta cecha dotyczy tylko lokalizacji Indie. Dzięki temu proces ustalania cen transferowych dla pozycji w transferach magazynowych jest bardziej intuicyjny.</p><p>Ceny transferowe ustalasz, konfigurując dla każdej pozycji reguły cen transferowych. Jednym ze sposobów na taką konfigurację jest dołączenie linii reguły, w której pole **Kod magazynu** jest ustawione na *Wszystkie*. To ustawienie wskazuje, że cena transferowa określona przez linię powinna obowiązywać niezależnie od magazynu, z którego pobierany jest dany artykuł. Gdy ta funkcja jest włączona, reguły cen transferowych, w których pole **Kod magazynu** jest ustawione na *Wszystkie*, będą ignorować ustawienie **Lokalizacja**. Dlatego reguła ta będzie obowiązywać niezależnie od lokalizacji podanej w poleceniu przelewu. Takie zachowanie jest prawdopodobnie oczekiwane, ponieważ lokalizacja znajduje się poniżej magazynu w hierarchii wymiarów magazynowych.</p><p>Bez tej funkcji system zastosuje reguły tego typu tylko wtedy, gdy lokalizacja na zleceniu transferu dokładnie odpowiada lokalizacji ustawionej dla tej reguły. (Jeśli w regule zostanie ustawiona pusta lokalizacja, system zastosuje tę regułę tylko do zleceń transferu, które również mają pustą wartość dla lokalizacji).</p> |
 | Zarządzanie zapasami i magazynem | Czyszczenie danych raportu dostępnych zapasów | Ta funkcja pozwala na oczyszczenie danych używanych do tworzenia raportów *Przechowywanie raportów o stanie zapasów*. |
 | Kontrola produkcji | Przypisanie działań projektu do umowy serwisowej i wierszy zlecenia serwisowego | Ta funkcja dodaje pole o nazwie **Działanie projektu** do linii umów serwisowych i zleceń serwisowych, abyś mógł ustawić dla nich działanie projektu. Funkcja ta pomoże uniknąć błędów blokowania, kiedy zamieszczasz arkusze projektów zarządzania usługami, które wymagają ustawienia aktywności projektowej.  |
-| Zarządzanie magazynem | Ręczna usługa pobierania wierszy przeniesienia dla administratora lub podobnych zaufanych użytkowników | Ta funkcja pozwala administratorom na ręczne wybieranie transakcji inwentaryzacyjnych, które są powiązane z liniami transferowymi. W skład tych linii wchodzą linie, które zostały już wydane do magazynu. Administratorzy powinni wykonywać tę kompletację tylko w wyjątkowych przypadkach, np. gdy system jest w stanie uszkodzonym. |
+| Zarządzanie magazynem | Ręczna usługa pobierania wierszy przeniesienia dla administratora lub podobnych zaufanych użytkowników | Ta funkcja pozwala administratorom na ręczne wybieranie transakcji inwentaryzacyjnych, które są powiązane z liniami transferowymi. W skład tych linii wchodzą linie, które zostały już wydane do magazynu. Administratorzy powinni wykonywać tę kompletację tylko w wyjątkowych przypadkach, np. gdy system jest w stanie uszkodzonym. Aby uzyskać więcej informacji, zobacz [Ręczna obsługa wyjątków pobieranie wierszy sprzedaży i przeniesienia](../warehousing/manual-order-line-picking-exception-handling.md). |
 
 ## <a name="new-and-updated-documentation-resources"></a>Nowe i zaktualizowane zasoby dokumentacji
 

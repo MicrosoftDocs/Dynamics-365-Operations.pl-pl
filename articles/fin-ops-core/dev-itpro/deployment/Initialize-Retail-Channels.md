@@ -11,12 +11,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2018-04-30
-ms.openlocfilehash: 25ca054df6422370b1e61dff7965189ad90d7fcc
-ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
+ms.openlocfilehash: a4a36d773e0790747c017dca35492af5caf410ab
+ms.sourcegitcommit: 61be5f43c9678e9f12b4a90410876b4a179ac585
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "9357666"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9427084"
 ---
 # <a name="initialize-commerce-scale-unit-cloud"></a>Inicjowanie Commerce Scale Unit (chmura)
 
@@ -73,8 +73,6 @@ Commerce Scale Unit jest dostępne do wdrożenia w następujących regionach.
 | Europa, Bliski Wschód i Afryka (EMEA)            | Europa Północna        | Ogólnie dostępne    |  Brak komentarzy |
 | Europa, Bliski Wschód i Afryka (EMEA)            | Południowe Zjednoczone Królestwo            | Ogólnie dostępne |    Brak komentarzy                          |
 | Europa, Bliski Wschód i Afryka (EMEA)            | Zachodnie Zjednoczone Królestwo             | Ogólnie dostępne |    Brak komentarzy                          |
-| Szwajcaria     | Szwajcaria Północna   | Ograniczone zdolności produkcyjne    | Wymaga procesu zatwierdzania. |
-| Zjednoczone Emiraty Arabskie             | Północne Zjednoczone Emiraty Arabskie           | Ograniczone zdolności produkcyjne    | Wymaga procesu zatwierdzania. |
 
 Możliwości rozmieszczenia w regionach o ograniczonych możliwościach są bardzo ograniczone. Prośby o rozmieszczenie są rozpatrywane indywidualnie dla każdego przypadku. Jeśli masz istotną potrzebę biznesową do wdrożenia w regionach o ograniczonej pojemności, możesz złożyć wniosek o wsparcie, aby zostać dodanym do listy oczekujących. Obszary z ograniczeniami zdolności produkcyjnych obecnie nie zezwalają na wdrożenie jednostki Commerce Scale Unit. 
 

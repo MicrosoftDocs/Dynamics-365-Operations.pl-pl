@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: c0015b65f1ff00cfce19139cb8aaa248512d070b
-ms.sourcegitcommit: 3d2c0a39c4f987e9ac71df2f2fa6df0f64f10b2b
+ms.openlocfilehash: 1a1d152a01e0ebe6a20e2e6b31f12ed7b8deb024
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9114944"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9423967"
 ---
 # <a name="process-automation"></a>Automatyzacja procesu
 
@@ -30,7 +30,9 @@ Funkcja Automatyzacji procesów umożliwia proste planowanie procesów, które b
 
 Strona Administracji centralnej dla wszystkich automatyzacji procesów znajduje się w module administrowania systemem w menu **Ustawienia**. Na tej stronie będzie wyświetlona lista wszystkich zautomatyzowanych procesów (seria) skonfigurowanych w systemie. Umożliwi to również dodawanie nowych automatyzacji procesów bezpośrednio z poziomu tej strony. Po skonfigurowaniu serii można zarządzać każdą z serii z tej listy. Można wybrać opcję edycji całej serii, usunąć ją, wyświetlić wszystkie wystąpienia w widoku listy lub wyłączyć serię, jeśli chcesz wstrzymać pracę według harmonogramu przez pewien czas. 
 
-Żadne procesy wyłączone w module Zarządzanie funkcjami nie będą widoczne, gdy funkcja jest wyłączona. Ponadto aparat planowania automatyzacji procesów nie będzie planować wystąpień ani procesów wykonywanych w tle dla wyłączonej funkcji. Ponowne włączenie tej funkcji spowoduje natychmiastowe uruchomienie wszystkich zaplanowanych w przeszłości wystąpień lub procesów w tle. Działanie aparatu planowania automatyzacji procesów zależy od systemowego zadania wsadowego **Sondowanie automatyzacji procesów**. Zadania nie należy w żadnym momencie zmieniać ani modyfikować. Jeśli to zadanie nie działa lub jest w stanie błędu, wybierz **Inicjalizacja automatyzacji procesu**, aby zresetować zadanie. To zresetowanie zapewnia, że wszystkie nowe automatyzacje wprowadzone w nowszej wersji aplikacji zostaną zainicjowane. 
+Na tej stronie można użyć karty **Procesy tła**, aby administrować dowolnymi procesami tła uruchomionymi w środowisku. Wybierz pozycję **Edytuj**, aby zaplanować zmiany w dowolnym procesie tła. Te zmiany mogą uwzględniać czas trwania procesu, który powoduje „przerwanie” lub wstrzymanie działania przez określony czas każdego dnia. Wybierz pozycję **Wyświetl ostatnie wyniki**, aby wyświetlić wyniki wykonywania dla każdego procesu w tle.
+
+Żadne procesy wyłączone w module Zarządzanie funkcjami nie będą widoczne, gdy funkcja jest wyłączona. Ponadto aparat planowania automatyzacji procesów nie będzie planować wystąpień ani procesów wykonywanych w tle dla wyłączonej funkcji. Ponowne włączenie tej funkcji spowoduje natychmiastowe uruchomienie wszystkich zaplanowanych w przeszłości wystąpień lub procesów w tle. Działanie aparatu planowania automatyzacji procesów zależy od systemowego zadania wsadowego **Sondowanie automatyzacji procesów**. Zadania nie należy w żadnym momencie zmieniać ani modyfikować. Jeśli to zadanie wsadowe nie jest uruchomione lub ma stan błędu, wybierz opcję **Zainicjuj automatyzację procesu**, aby zresetować zadanie wsadowe. Takie zresetowanie zapewnia zainicjowanie wszystkich nowych automatyzacji zwolnionych w nowszej wersji aplikacji. 
 
 ## <a name="calendar-view"></a>Widok kalendarza
 

@@ -1,23 +1,23 @@
 ---
 title: Katalog szkoleń dla użytkowników aplikacji Dynamics 365 Finance
 description: Znajdź wszystkie opcje szkoleń dla użytkowników aplikacji Dynamics 365 Finance.
-author: margoc
+author: cstorega
 ms.topic: article
 ms.date: 07/27/2020
-ms.author: margoc
+ms.author: cstorega
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: c883a425610d9b04812ba77c666b0b220184d5af
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 99a672e4fd0bfe270f0cd1bfa421b7bd6feca9e1
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9069293"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9424568"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-finance"></a>Katalog szkoleń dla użytkowników aplikacji Dynamics 365 Finance
 
@@ -25,11 +25,10 @@ Czy po prostu dostajesz nową aplikację do użycia?
 
 Poniższy katalog jest zorganizowany od podstawowej bazy wiedzy do konkretnych domen oraz od najbardziej do najbardziej zaawansowanego. Jeśli zawartość istnieje w wielu formatach, poinformujemy Cię, aby można było wybrać format szkoleń najlepiej odpowiadający Twoim potrzebom.
 
-## <a name="get-started"></a>Rozpoczynanie pracy<a name="get-started"></a>
+## <a name="get-started"></a>Rozpocznij<a name="get-started"></a>
 
-| Zawartość | opis | Format | Długość |
+| Zawartość | Opis | Format | Długość |
 |---------|-------------|--------|--------|
-| [Zapoznaj się z biznesową wartością Microsoft Dynamics 365 i Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Czy chcesz poznać aplikacje biznesowe? Być może nie wiadomo, gdzie zacząć z Microsoft Dynamics 365 i aplikacjami Power Platform? Dowiedz się, jak możliwości aplikacji biznesowych umożliwiają przekształcanie firmy. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 8 godzin |
 | [Dynamics 365 i Power Platform Fundamentals](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Czy chcesz poznać aplikacje biznesowe? Rozpocznij od tej ścieżki nauki, aby zobaczyć, jak są używane aplikacje Dynamics 365. Informacje o pojęciach chmur, Power Platform oraz sposobach rozpoczynania pracy z aplikacjami Dynamics 365. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 5.5 godzin   |
 | [Rozpoczynanie pracy z aplikacjami finansowymi i operacyjnymi](/learn/paths/get-started-finance-operations/) | Dowiedz się, jak za pomocą aplikacji finansowych i operacyjnych w firmach można zarządzać globalnymi systemami finansowymi, operacyjnymi procesami biznesowymi i wydajnymi łańcuchami dostaw, aby umożliwić osobom wykonywanie szybkich, świadomych decyzji.   Jako pierwszy etap pracy z aplikacjami finansowymi i operacyjnymi musisz zapoznać się z jego funkcjami, w zależności od żądanej roli użytkownika. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 2 godzin |
 | [Rozpoczęcie korzystania z Dynamics 365 Intelligent Order Management](/learn/modules/get-started-intelligent-order-management/) | Dzięki Dynamics 365 Intelligent Order Management odbiorcy mogą zarządzać aranżacją zamówień aż do ich realizacji. Te funkcje umożliwiają organizacjom aranżację przepływów zamówień na różnych platformach i aplikacjach. | Bezpłatny, samodzielnie realizowany moduł nauki online | 30 minut |
