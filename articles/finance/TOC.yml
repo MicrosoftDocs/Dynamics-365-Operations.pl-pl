@@ -3574,10 +3574,12 @@
                           href: localizations/rus-inventory-profile-overview.md
                         - name: Konfigurowanie profilu zapasów
                           href: localizations/rus-set-up-inventory-profile.md
-                        - name: Używanie profilu zapasów w dokumentach i kwerendach
+                        - name: Używanie profilu zapasów w dokumentach i zapytaniach
                           href: localizations/rus-use-inventory-profile-documents-queries.md
                     - name: Odprawa celna
                       items:
+                        - name: Konfigurowanie odpraw celnych
+                          href: localizations/rus-set-up-customs-clearance.md
                         - name: Praca z odprawą celną
                           href: localizations/rus-work-with-customs-clearance.md
                 - name: Raportowanie
@@ -4642,7 +4644,7 @@
                 - name: Kontrola kosztów
                   href: cost-accounting/cost-controlling-mobile-workspace.md?context=/dynamics365/context/finance
                 - name: Zarządzanie wydatkami
-                  href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=%2fdynamics365%2ffinance%2ftoc.json
+                  href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=/dynamics365/finance/toc.json
                 - name: Dostępne zapasy
                   href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md?context=/dynamics365/context/finance
                 - name: Zatwierdzenia faktur
@@ -4650,11 +4652,11 @@
                 - name: Mój zespół
                   href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?context=/dynamics365/context/finance
                 - name: Przegląd aplikacji mobilnych do obsługi Project
-                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=%2fdynamics365%2ffinance%2ftoc.json
+                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=/dynamics365/finance/toc.json
                 - name: Wpis czasu projektu
-                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=%2fdynamics365%2ffinance%2ftoc.json
+                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=/dynamics365/finance/toc.json
                 - name: Project Timesheet
-                  href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=%2fdynamics365%2ffinance%2ftoc.json
+                  href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=/dynamics365/finance/toc.json
                 - name: Zatwierdzenie zamówienia zakupu
                   href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?context=/dynamics365/context/finance
                 - name: Zamówienia sprzedaży

@@ -10,6 +10,8 @@
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
             - name: Nowości i zmiany w rozwiązaniu Human Resources
               items:
+                - name: Rozwiązanie Human Resources 10.0.30 (scalona infrastruktura)
+                  href: ./get-started/whats-new-changed-10-0-30.md
                 - name: Rozwiązanie Human Resources 10.0.29 (scalona infrastruktura)
                   href: ./get-started/whats-new-changed-10-0-29.md
                 - name: Rozwiązanie Human Resources 10.0.28 (scalona infrastruktura)
@@ -478,6 +480,8 @@
               href: hr-personnel-modify-reporting-relationships-position.md
             - name: Usprawniony wpis pracownika etatowego
               href: stream-employee-entry.md
+            - name: Personalizowanie formantu nagłówka
+              href: hr-worker-header-control.md
             - name: Wprowadzanie informacji o pracowniku
               href: hr-personnel-enter-worker-information.md
             - name: Pracownicy bez zatrudnienia
