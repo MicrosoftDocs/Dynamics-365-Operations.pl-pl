@@ -15,12 +15,12 @@ ms.dyn365.ops.version: Version 7.0.0
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.form: EROperationDesigner, ERParameters
-ms.openlocfilehash: 2feadf8e196936220cf557989cae40b742447d99
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: ff44226b7deb15bc673d121d62cad44309b5d78b
+ms.sourcegitcommit: a1d14836b40cfc556f045c6a0d2b4cc71064a6af
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9280933"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "9476835"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Projektowanie konfiguracji projektu w celu generowania dokumentów wychodzących w formacie programu Excel
 
@@ -186,6 +186,9 @@ Jeśli składnik **Komórka** został skonfigurowany do wprowadzania wartości w
 
 > [!NOTE]
 > Każdy obraz i kształt programu Excel jest traktowany jako zakotwiczony do lewego górnego rogu do konkretnej komórki lub zakresu w programie Excel. Aby replikować obraz lub kształt programu Excel, należy skonfigurować komórkę lub zakres, do którego zostały one zakotwiczone, jako zreplikowaną komórkę lub zakres.
+
+> [!TIP]
+> Jeśli użytkownika planuje użyć obrazu z niestandardowym skalowaniem i współczynnikiem proporcji podczas uruchamiania, zalecamy ustawienie opcji **Zachowaj skalowanie obrazów** nadrzędnego [składnika pliku Excel](#excel-file-component) na **Tam**, by zastosować skalowanie i współczynnik proporcji jako symbol zastępnyczh tego obrazu w używanym szablonie Excel.
 
 Aby dowiedzieć się więcej na temat osadzania obrazów i kształtów, zobacz temat [Osadzanie obrazów i kształtów w generowanych dokumentach przez raportowanie elektroniczne](electronic-reporting-embed-images-shapes.md).
 

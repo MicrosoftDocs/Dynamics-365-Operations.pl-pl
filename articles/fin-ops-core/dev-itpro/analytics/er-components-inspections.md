@@ -2,7 +2,7 @@
 title: Sprawdzanie skonfigurowanego składnika ER, aby zapobiec problemom w czasie wykonywania
 description: W tym artykule opisano sposób sprawdzania skonfigurowanych składników raportowania elektronicznego (ER) w celu zapobiegania problemom, które mogą wystąpić w czasie wykonywania.
 author: kfend
-ms.date: 01/03/2022
+ms.date: 09/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: Version 7.0.0
 ms.custom: 220314
 ms.assetid: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
-ms.openlocfilehash: 53835bbceaa89793d890d8bc18921497c686e969
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 1ca59d6c26dbcf065adb952409da30002d951f62
+ms.sourcegitcommit: a1d14836b40cfc556f045c6a0d2b4cc71064a6af
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9277859"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "9476862"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Sprawdzanie skonfigurowanego składnika ER, aby zapobiec problemom w czasie wykonywania
 
@@ -243,6 +243,15 @@ W poniższej tabeli znajduje się omówienie inspekcji dostępnych w module ER. 
 <td>
 <p>Wyrażenie listy funkcji ORDERBY nie jest odpytywalne.</p>
 <p><b>Błąd czasu wykonywania:</b> Sortowanie nie jest obsługiwane. Aby uzyskać więcej szczegółowych informacji na ten temat, sprawdź poprawność konfiguracji.</p>
+</td>
+</tr>
+<tr>
+<td><a href='#i19'>Przestarzały artefakt aplikacji</a></td>
+<td>Integralność danych</td>
+<td>Ostrzeżenie</td>
+<td>
+<p>Element &lt;ścieżka&gt; jest oznaczony jako przestarzały.<br>lub<br>Element &lt;ścieżka&gt; jest oznaczony jako przestarzały z wiadomością &lt;tekst wiadomości&gt;.</p>
+<p><b>Przykład błędu środowiska uruchomieniowego:</b> Nie znaleziono klasy „&lt;ścieżka&gt;”.</p>
 </td>
 </tr>
 </tbody>
@@ -942,6 +951,36 @@ Zamiast dodawać zagnieżdżone pole typu **Pole obliczeniowe** do źródła dan
 #### <a name="option-2"></a>Opcja 2
 
 Zmień wyrażenie w źródle danych **FilteredVendors** z `ORDERBY("Query", Vendor, Vendor.AccountNum)` na `ORDERBY("InMemory", Vendor, Vendor.AccountNum)`. Nie zalecamy zmiany wyrażenia dla tabeli zawierającej dużą ilość danych (tabela transakcji), ponieważ zostaną pobrane wszystkie rekordy, a porządkowanie wymaganych rekordów zostanie dokonany w pamięci. Z tego względu ta metoda może spowodować pogorszenie wydajności.
+
+## <a name="obsolete-application-artifact"></a><a id="i19"></a>Przestarzały artefakt aplikacji
+
+Podczas projektowania składnika mapowania modelu raportowania elektronicznego lub składnika formatu raportowania elektronicznego można skonfigurować wyrażenie raportowania elektronicznego w celu wywołania artefaktu aplikacji w aplikacji raportowania elektronicznego, np. tabeli bazy danych, sposobu klasy itp. W wersji rozwiązania Finance 10.0.30 i nowszej można wymusić na raportowaniu elektronicznym ostrzeganie, by określony artefakt aplikacji został oznaczony w kodzie źródłowym jako przestarzały. To ostrzeżenie może być przydatne, ponieważ zazwyczaj przestarzałe artefakty są ostatecznie usuwane z kodu źródłowego. Poinformowanie o stanie artefaktu może uniemożliwić użycie przestarzałego artefaktu w edytowalnym składniku raportowania elektronicznego przed usunięciem go z kodu źródłowego. Zapobiegnie to błędom wywoływania nieistniejących artefaktów aplikacji ze składnika raportowania elektronicznego w czasie wykonywania.
+
+Włącz funkcję **Sprawdź poprawność przestarzałych elementów źródeł danych raportowania elektronicznego** w obszarze roboczym **Zarządzanie funkcjami**, aby rozpocząć ocenianie przestarzałych atrybutów artefaktów aplikacji podczas inspekcji edytowalnego składnika raportowania elektronicznego. Przestarzały atrybut jest obecnie sprawdzany dla następujących typów artefaktów aplikacji:
+
+- Tabela bazy danych
+    - Pole tabeli
+    - Sposób tabeli
+- Klasa aplikacji
+    - Sposób klasy
+
+> [!NOTE]
+> Ostrzeżenie zostanie wyświetlane podczas inspekcji edytowalnego składnika raportowania elektronicznego dla źródła danych, które odwołuje się do przestarzałego artefaktu tylko wtedy, gdy to źródło danych jest używane w co najmniej jednym powiązaniu tego składnika raportowania elektronicznego.
+
+> [!TIP]
+> Gdy klasa [SysObsoleteAttribute](../dev-ref/xpp-attribute-classes.md#sysobsoleteattribute) jest używana do powiadamiania kompilatora w celu wydawania komunikatów ostrzegawczych zamiast błędów, ostrzeżenie o inspekcji przedstawia określone w ostrzeżeniu kodu źródłowego podczas projektowania na skróconej karcie **Szczegóły** na stronie **Projektant mapowania modelu** lub **Projektant formatów**.
+
+Na poniższej ilustracji przedstawiono ostrzeżenie dotyczące weryfikacji, które występuje, gdy przestarzałe pole `DEL_Email` tabeli aplikacji `CompanyInfo` jest powiązane z polem modelu danych przy użyciu skonfigurowanego źródła danych `company`.
+
+![Przeglądanie ostrzeżenie o weryfikacji na karcie Szczegóły na stronie projektanta mapowania modelu.](./media/er-components-inspections-19a.png)
+
+### <a name="automatic-resolution"></a>Automatyczne rozwiązywanie
+
+Nie jest dostępna żadna opcja automatycznego rozwiązywania tego problemu.
+
+### <a name="manual-resolution"></a>Ręczne rozwiązywanie
+
+Zmodyfikuj skonfigurowane mapowanie modelu lub format, usuwając wszystkie powiązania do źródła danych, które odwołuje się do przestarzałego artefaktu aplikacji.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

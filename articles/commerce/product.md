@@ -2,7 +2,7 @@
 title: Dodawanie rekomendacji produktu w punkcie sprzedaży
 description: W tym artykule opisano sposób korzystania z rekomendacji dotyczących produktów na urządzeniu punktu sprzedaży (POS).
 author: bebeale
-ms.date: 05/26/2020
+ms.date: 09/08/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 442ae540b04588afd9aeb37a92c6ceb92c05a9ba
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 170e2bf18aefc79a796620818c7100ff8e6e689a
+ms.sourcegitcommit: f88273627ba105ede27f28fe67ccec2d7f78261c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872806"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9460064"
 ---
 # <a name="add-product-recommendations-on-pos"></a>Dodawanie rekomendacji produktu w punkcie sprzedaży
 
@@ -37,7 +37,7 @@ Rekomendacje produktów działają w opisanych niżej scenariuszach w punkcie sp
 
 1. Na stronie **Szczegóły produktu**:
 
-    - Jeśli pracownik sklepu otworzy stronę **Szczegóły produktu** podczas oglądania wcześniejszych transakcji w różnych kanałach, usługa rekomendacji proponuje dodatkowe towary, które inni odbiorcy często kupowali razem z analizowanym produktem.
+    - Jeśli pracownik sklepu otworzy stronę **Szczegóły produktu** podczas oglądania wcześniejszych transakcji w różnych kanałach, usługa rekomendacji proponuje dodatkowe towary, które inni odbiorcy często kupowali razem z analizowanym produktem. W zależności od dodatków tej usługi sprzedawcy detaliczni mogą wyświetlać rekomendacje **Kupuj podobnie wyglądające rzeczy** i **Kupuj podobnie opisane rzeczy**, a także spersonalizowane rekomendacje dla użytkowników, którzy mają poprzednią historię zakupów.
 
     [![Rekomendacje na stronie Szczegóły produktu.](./media/proddetails.png)](./media/proddetails.png)
 
@@ -50,21 +50,17 @@ Rekomendacje produktów działają w opisanych niżej scenariuszach w punkcie sp
 
     [![Rekomendacje na stronie Transakcja.](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
-## <a name="configure-commerce-to-enable-pos-recommendations"></a>Konfigurowanie Commerce do obsługi rekomendacji POS
+## <a name="configure-commerce-to-enable-pos-recommendations"></a>Konfigurowanie Commerce do obsługi rekomendacji POS 
 
-Aby skonfigurować rekomendacje produktu, wykonaj następujące czynności:
+Aby skonfigurować rekomendacje produktów, potwierdź, że proces inicjowania obsługi rekomendacji produktów Commerce został ukończony, zgodnie z krokiem [Włączanie rekomendacji produktów](../commerce/enable-product-recommendations.md). Domyślnie rekomendacje są wyświetlane zarówno na stronie **Szczegóły produktu**, jak i na stronie **Szczegółów dotyczące odbiorcy** po ukończeniu kroków inicjowania obsługi i pomyślnym przygotowanie danych. 
 
-1. Upewnij się, że usługa została zaktualizowana do **kompilacji 10.0.6.**
-2. Postępuj zgodnie z instrukcjami dotyczącymi sposobu [włączania rekomendacji produktu](../commerce/enable-product-recommendations.md) w firmie.
-3. Opcjonalnie: Aby wyświetlać rekomendacje na ekranie transakcji, przejdź do okna **Układ ekranu**, wybierz układ ekranu, uruchom narzędzie **Projektant układu ekranu**, a następnie upuść formant **rekomendacji** w żądanym miejscu.
-4. Przejdź do okna **Parametry sprzedaży**, wybierz opcję **Uczenie maszynowe** i w ustawieniu **Włącz rekomendacje w punkcie sprzedaży** wybierz wartość **Tak**.
-5. Aby rekomendacje były wyświetlane w punkcie sprzedaży, uruchom zadanie konfiguracji globalnej **1110**. Aby pokazywać zmiany wprowadzone w projektancie układu ekranu punktu sprzedaży, uruchom zadanie konfiguracji kanału **1070**.
+## <a name="add-recommendations-to-the-transaction-screen"></a>Dodawanie rekomendacji do ekranu transakcji
 
-## <a name="troubleshoot-issues-where-you-have-product-recommendations-already-enabled"></a>Rozwiązywanie problemów, jeśli już włączono funkcję Rekomendacje produktów
+1. Aby dodać rekomendacje na ekranie transakcji, wykonaj kroki w temacie [Dodawanie rekomendacji do ekranu transakcji](add-recommendations-control-pos-screen.md).
+1. Aby odzwierciedlić zmiany dokonane w konstruktorze układu ekranu punktu sprzedaży, uruchom zadanie konfiguracji kanału **1070** w programie Commerce Headquarters.
 
-- Wybierz kolejno opcje **Parametry sprzedaży** \> **Listy rekomendacji** \> **Wyłącz rekomendacje produktów** i uruchom **Żądanie konfiguracji globalnej \[9999\]**. 
-- Jeśli za pomocą **Projektanta układu ekranu** dodano **kontrolkę rekomendacji** do ekranu transakcji, usuń również ją.
-- Jeśli masz dodatkowe pytania, zapoznaj się z [Rekomendacje produktów - Często zadawane pytania](../commerce/faq-recommendations.md).
+> [!NOTE] 
+> Aby włączyć rekomendacje dotyczące aplikacji w punkcie sprzedaży za pomocą pliku RecoMock z wartościami rozdzielanymi przecinkami (CSV), przed skonfigurowaniem menedżera układów należy wdrożyć ten plik CSV w bibliotece elementów zawartości usługi Microsoft Dynamics Lifecycle Services (LCS). W przypadku korzystania z pliku CSV RecoMock nie trzeba włączać rekomendacji. Plik CSV jest dostępny tylko dla celów demonstracyjnych. Jest zalecane dla klientów lub architektów rozwiązań, którzy chcą naśladować wygląd list propozycji dla celów demonstracyjnych bez konieczności zakupu dodatku jednostka magazynowa (SKU)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

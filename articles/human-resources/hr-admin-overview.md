@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ec214ef4ebb6ecb72c1684c515df25d3c2403c14
-ms.sourcegitcommit: 6616b969afd6beb11a79d8e740560bf00016ea7f
+ms.openlocfilehash: 1784b3c57bf1e6145085482d9068fad39ababc17
+ms.sourcegitcommit: ec15857b753ebedd86503170efd54c8007b87231
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "9027147"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9475646"
 ---
 # <a name="administration-overview"></a>Omówienie administracji
 
@@ -46,10 +46,10 @@ Ten artykuł zawiera listę tematów pomocy oraz innych zasobów dotyczących ko
   - [Konfigurowanie integracji z rozwiązaniem Dayforce](hr-admin-integration-dayforce.md)
   - [Tworzenie aplikacji do cyklicznego eksportowania danych](hr-admin-integration-recurring-data-export.md)
   - Integracja z pakietem Office
-    - [Integracja z pakietem Office — samouczek](../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [Aktualizowanie danych jednostki w programie Excel](../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [Tworzenie funkcji otwierania w programie Excel](../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [Rozwiązywanie problemów z integracją z pakietem Office](../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Integracja z pakietem Office — samouczek](../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Aktualizowanie danych jednostki w programie Excel](../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Tworzenie funkcji otwierania w programie Excel](../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Rozwiązywanie problemów z integracją z pakietem Office](../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
 
 - [Zarządzanie funkcjami](hr-admin-manage-features.md)
 
@@ -100,9 +100,9 @@ Ten artykuł zawiera listę tematów pomocy oraz innych zasobów dotyczących ko
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 ### <a name="elearning-courses"></a>Kursy eLearning
-W przypadku kursów i szkoleń w trybie online, sprawdź dodatek [Dynamics 365 Human Resources w Microsoft Learn](/learn/browse/?products=dynamics-human-resources&resource_type=learning%20path).
+W przypadku kursów i szkoleń w trybie online, sprawdź [Dynamics 365 Human Resources](/learn/browse/?products=dynamics-human-resources&resource_type=learning%20path).
 
-### <a name="videos"></a>Filmy
+### <a name="videos"></a>Pliki wideo
 
 Obejrzyj filmy instruktażowe w [kanale YouTube rozwiązania Microsoft Dynamics 365](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 

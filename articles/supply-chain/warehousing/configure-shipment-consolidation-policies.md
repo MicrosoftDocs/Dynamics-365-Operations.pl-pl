@@ -2,7 +2,7 @@
 title: Konfigurowanie zasad konsolidacji wysyłki
 description: W tym artykule opisano sposób konfigurowania domyślnych i niestandardowych zasad konsolidacji wysyłki.
 author: Mirzaab
-ms.date: 08/09/2022
+ms.date: 09/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 4583d523811cb41518a0a4dae0d67398d64cab44
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 0312d425d2ebc5311e894030423a916b90f1881a
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336501"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9427990"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Konfigurowanie zasad konsolidacji wysyłki
 
@@ -28,75 +28,49 @@ Proces konsolidacji wysyłki, który korzysta z zasad konsolidacji wysyłki umo�
 
 W scenariuszach przedstawionych w tym artykule pokazano sposób konfigurowania domyślnych i niestandardowych zasad konsolidacji wysyłki.
 
-## <a name="turn-on-the-shipment-consolidation-policies-feature"></a>Włączanie funkcji konfigurowania zasad konsolidacji wysyłki
+> [!WARNING]
+> W przypadku uaktualnienia rozwiązania Microsoft Dynamics 365 Supply Chain Management, w którym jest już w użyciu starsza funkcja konsolidacji wysyłki, konsolidacja może przestać działać zgodnie z oczekiwaniami, chyba że użytkownik postąpi zgodnie z poniższymi poradami.
+>
+> W instalacjach Supply Chain Management, dla których jest wyłączona funkcja *Zasad konsolidacji wysyłek*, można włączyć konsolidację wysyłek, używając ustawienia **Konsoliduj wysyłkę przy zwalnianiu do magazynu** dla poszczególnych magazynów. Ta funkcja jest obowiązkowa od wersji 10.0.29. Po włączeniu ustawienie **Konsoliduj wysyłkę podczas zwalniania do magazynu** zostanie ukryte, a funkcja zostanie zastąpiona *zasadami konsolidacji wysyłki* opisanymi w tym artykule. Każda zasada ustala reguły konsolidacji i zawiera zapytanie mające na celu kontrolę zastosowania zasad. Po pierwszym włączeniu tej funkcji na stronie **Zasady konsolidacji wysyłki** nie zostaną zdefiniowane żadne zasady konsolidacji wysyłek. Jeśli nie zdefiniowano żadnych zasad, system będzie używać starszego działania. Dlatego każdy istniejący magazyn będzie nadal przestrzegał ustawień **Wysyłki skonsolidowanej podczas zwalniania do magazynu**, nawet jeśli to ustawienie jest teraz ukryte. Jednak po utworzeniu co najmniej jednej zasady ustawienie **Konsolidacja wysyłek przy zwalnianiu do magazynu** nie ma już żadnego skutku, a funkcje konsolidacji są całkowicie kontrolowane przez zasady.
+>
+> Po zdefiniowaniu co najmniej jednej zasady konsolidacji wysyłki system będzie sprawdzać zasady konsolidacji za każdym razem, gdy zamówienie jest zwalniane do magazynu. System przetwarza zasady przy użyciu klasyfikacji zdefiniowanej przez wartości **Sekwencji zasad** poszczególnych zasad. Zastosowanie ma pierwsza zasada, w której zapytanie pasuje do nowego zamówienia. Jeśli żadne zapytanie nie pasuje do zamówienia, każdy wiersz zamówienia generuje osobną wysyłkę z pojedynczym wierszem ładunku. Dlatego, jak wyjścia awaryjnego, zalecamy utworzenie domyślnej zasady, która będzie stosowana dla wszystkich magazynów i grup według numeru zamówienia. Nadaj tej zasady najwyższą wartość **Sekwencji zasad**, aby była ona przetwarzana jako ostatnia.
+>
+> Aby odtworzyć starsze zachowanie, należy utworzyć zasady, które nie grupują się według numeru zamówienia i mają kryteria zapytania, które zawiera wszystkie odpowiednie magazyny.
 
-> [!IMPORTANT]
-> W [pierwszym scenariuszu](#scenario-1) opisanym w tym artykule najpierw skonfigurujesz magazyn, dzięki czemu będzie używana wcześniejsza funkcja konsolidacji wysyłki. Następnie udostępnisz zasady konsolidacji wysyłki. W ten sposób sprawdzisz, jak działa scenariusz uaktualniania. Jeśli planujesz używanie środowiska danych demonstracyjnych do przechodzenia przez pierwszy scenariusz, nie włączaj tej funkcji przed wykonaniem tego scenariusza.
+## <a name="turn-on-the-shipment-consolidation-policies-feature"></a>Włączanie funkcji konfigurowania zasad konsolidacji wysyłki
 
 Aby można było skorzystać z funkcji *zasad konsolidacji wysyłki*, należy ją włączyć dla systemu. Od wersji 10.0.29 Supply Chain Management funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli używasz wersji starszej niż 10.0.29, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując funkcję *Zasady konsolidacji wysyłki* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-## <a name="make-demo-data-available"></a>Udostępnianie danych pokazu
+## <a name="set-up-your-initial-consolidation-policies"></a><a name="initial-policies"></a>Ustanowienie wstępnych zasad konsolidacji
 
-Każdy scenariusz w tym artykule zawiera odwołania do wartości i rekordów uwzględnionych w standardowych danych demonstracyjnych dostępnych dla rozwiązania Microsoft Dynamics 365 Supply Chain Management. Aby użyć wartości określonych w tym miejscu podczas wykonywania ćwiczeń, upewnij się, że praca odbywa się w środowisku, w którym są zainstalowane dane demonstracyjne, i przed rozpoczęciem ustaw firmę na **USMF**.
-
-## <a name="scenario-1-configure-default-shipment-consolidation-policies"></a><a name="scenario-1"></a>Scenariusz 1. Konfigurowanie domyślnych zasad konsolidacji wysyłki
-
-Istnieją dwie sytuacje, w których należy skonfigurować minimalną liczbę domyślnych zasad po włączeniu funkcji *zasad funkcji konsolidacji wysyłki*:
-
-- Uaktualniasz środowisko, które już zawiera dane.
-- Konfigurujesz zupełnie nowe środowisko.
-
-### <a name="upgrade-an-environment-where-warehouses-are-already-configured-for-cross-order-consolidation"></a>Uaktualnianie środowiska, w którym magazyny zostały już skonfigurowane do konsolidacji krzyżowej zamówień
-
-Podczas uruchamiania tej procedury funkcja *zasad konsolidacji wysyłki* powinna być wyłączona, aby symulować środowisko, w którym jest już używana podstawowa funkcja konsolidacji krzyżowej zamówień. Następnie użyjesz zarządzania funkcjami do włączenia tej funkcji, aby dowiedzieć się, jak skonfigurować zasady konsolidacji wysyłki po uaktualnieniu.
-
-Wykonaj poniższe kroki, aby skonfigurować domyślne zasady konsolidacji wysyłki w środowisku, w którym już skonfigurowano magazyny do konsolidacji krzyżowej zamówień.
-
-1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Magazyn \> Magazyny**.
-1. Na liście znajdź i otwórz żądany rekord magazynu (na przykład magazyn *24* w danych demonstracyjnych **USMF**).
-1. W okienku akcji wybierz pozycję **Edytuj**.
-1. Na skróconej karcie **Magazyn** ustaw opcję **Konsolidowanie wysyłki podczas zwalniania do magazynu** na wartość *Tak*.
-1. Powtórz kroki od 2 do 4 dla wszystkich innych magazynów, dla których jest wymagana konsolidacja.
-1. Zamknij stronę.
-1. Przejdź do pozycji **Zarządzanie magazynem \> Ustawienia \> Zwolnij do magazynu \> Zasady konsolidacji wysyłki**. Aby nowa pozycja menu **Zasady konsolidacji wysyłki** była wyświetlana po włączeniu tej funkcji, być może trzeba będzie odświeżyć przeglądarkę.
-1. W okienku akcji wybierz pozycję **Utwórz konfigurację domyślną**, aby utworzyć następujące zasady:
-
-    - Zasady **CrossOrder** dla typu zasad *Zamówienia sprzedaży* (pod warunkiem, że istnieje co najmniej jeden magazyn skonfigurowany do korzystania z wcześniejszej funkcji konsolidacji)
-    - Zasady **domyślne** dla typu zasad *Zamówienia sprzedaży*
-    - Zasady **domyślne** dla typu zasad *Wydanie przeniesienia*
-    - Zasady **CrossOrder** dla typu zasad *Wydanie przeniesienia* (pod warunkiem, że istnieje co najmniej jeden magazyn skonfigurowany do korzystania z wcześniejszej funkcji konsolidacji)
-
-    > [!NOTE]
-    > - Obie zasady **CrossOrder** uwzględniają ten sam zestaw pól, co w przypadku wcześniejszej logiki, z wyjątkiem pola numeru zamówienia. (To pole służy do konsolidowania wierszy w wysyłkach na podstawie czynników, takich jak magazyn, metoda transportu dostawy i adres).
-    > - Obie zasady **domyślne** uwzględniają ten sam zestaw pól, co w przypadku wcześniejszej logiki, z uwzględnieniem pola numeru zamówienia. (To pole służy do konsolidowania wierszy w wysyłkach na podstawie czynników, takich jak numer zamówienia, magazyn, metoda transportu dostawy i adres).
-
-1. Wybierz zasady **CrossOrder** dla typu zasad *Zamówienia sprzedaży*, a następnie w okienku akcji wybierz pozycję **Edytuj zapytanie**.
-1. Zwróć uwagę, że w oknie dialogowym są wymienione magazyny, dla których opcja **Konsolidowanie wysyłki podczas zwalniania do magazynu** została ustawiona na wartość *Tak*. Z tego powodu są one uwzględniane w zapytaniu.
-
-### <a name="create-default-policies-for-a-new-environment"></a>Tworzenie zasad domyślnych dla nowego środowiska
-
-Aby skonfigurować domyślne zasady konsolidacji wysyłki w całkiem nowym środowisku, wykonaj poniższe kroki.
+Jeśli pracujesz z nowym systemem lub systemem, w którym po raz pierwszy włączona została funkcja *Zasady konsolidacji wysyłek*, wykonaj następujące kroki, aby skonfigurować początkowe zasady konsolidacji wysyłek.
 
 1. Przejdź do pozycji **Zarządzanie magazynem \> Ustawienia \> Zwolnij do magazynu \> Zasady konsolidacji wysyłki**.
 1. W okienku akcji wybierz pozycję **Utwórz konfigurację domyślną**, aby utworzyć następujące zasady:
 
-    - Zasady **domyślne** dla typu zasad *Zamówienia sprzedaży*
-    - Zasady **domyślne** dla typu zasad *Wydanie przeniesienia*
+    - Zasady określone jako *domyślne* dla typu zasad *Zamówienia sprzedaży*.
+    - Zasady określone jako *domyślne* dla typu zasad *Wydanie przeniesienia*.
+    - Zasady określone jako *CrossOrder* dla typu zasad *Wydanie przeniesienia*. (Ta zasada jest tworzona tylko wtedy, gdy istnieje co najmniej jeden magazyn ze starszej wersji ustawienia **Konsoliduj wysyłkę podczas zwalniania** do magazynu zostało włączone.)
+    - Zasady określone jako *CrossOrder* dla typu zasad *Zamówienia sprzedaży*. (Ta zasada jest tworzona tylko wtedy, gdy istnieje co najmniej jeden magazyn ze starszej wersji ustawienia **Konsoliduj wysyłkę podczas zwalniania** do magazynu zostało włączone.)
 
     > [!NOTE]
-    > Obie zasady **domyślne** uwzględniają ten sam zestaw pól, co w przypadku wcześniejszej logiki, z uwzględnieniem pola numeru zamówienia. (To pole służy do konsolidowania wierszy w wysyłkach na podstawie czynników, takich jak numer zamówienia, magazyn, metoda transportu dostawy i adres).
+    > - Obie zasady *CrossOrder* uwzględniają ten sam zestaw pól, co w przypadku wcześniejszej logiki. Jednakże uwzględniają one także pole numeru zamówienia. (To pole służy do konsolidowania wierszy w wysyłkach na podstawie czynników, takich jak magazyn, metoda transportu dostawy i adres).
+    > - Obie zasady *Domyślnie* uwzględniają ten sam zestaw pól, co w przypadku wcześniejszej logiki. Jednakże uwzględniają one także pole numeru zamówienia. (To pole służy do konsolidowania wierszy w wysyłkach na podstawie czynników, takich jak numer zamówienia, magazyn, metoda transportu dostawy i adres).
 
-## <a name="scenario-2-configure-custom-shipment-consolidation-policies"></a>Scenariusz 2. Konfigurowanie niestandardowych zasad konsolidacji wysyłki
+1. Jeśli system wygenerował zasady *CrossOrder* dla typu zasad *Zamówienia sprzedaży*, wybierz je, a następnie w okienku akcji wybierz pozycję **Edytuj zapytanie**. W edytorze zapytań można sprawdzić, dla których magazynów poprzednio włączono ustawienie **Konsoliduj wysyłkę podczas zwalniania do magazynu**. W związku z tym te zasady odtworzą poprzednie ustawienia tych magazynów.
+1. Dostosuj w razie potrzeby nowe zasady domyślne, dodając lub usuwając pola i/lub edytując zapytania. Można także dodać dowolną liczbę nowych potrzebnych zasad. Aby uzyskać przykłady dostosowywania i konfigurowania zasad, zobacz przykładowy scenariusz w dalszej części tego artykułu.
 
-W tym scenariuszu przedstawiono sposób konfigurowania niestandardowych zasad konsolidacji wysyłki. Zasady niestandardowe mogą obsługiwać złożone wymagania biznesowe, w przypadku których konsolidacja wysyłki zależy od kilku warunków. Dla wszystkich przykładowych zasad w dalszej części tego scenariusza uwzględniono dodatkowy krótki opis. Te przykładowe zasady należy skonfigurować w kolejności, która zapewnia ocenę zapytań z użyciem metody w stylu piramidy. (Mówiąc inaczej, zasady mające najwięcej warunków powinny być oceniane jako mające najwyższy priorytet).
+## <a name="scenario-configure-custom-shipment-consolidation-policies"></a>Scenariusz: konfigurowanie niestandardowych zasad konsolidacji wysyłki
 
-### <a name="turn-on-the-feature-and-prepare-master-data-for-this-scenario"></a>Włączanie funkcji i przygotowywanie danych głównych dla tego scenariusza
+W tym scenariuszu pokazano przykład, w jaki sposób skonfigurować niestandardowe zasady konsolidacji wysyłki, a następnie przetestować je przy użyciu danych demonstracyjnych. Zasady niestandardowe mogą obsługiwać złożone wymagania biznesowe, w przypadku których konsolidacja wysyłki zależy od kilku warunków. Dla wszystkich przykładowych zasad w dalszej części tego scenariusza uwzględniono dodatkowy krótki opis. Te przykładowe zasady należy skonfigurować w kolejności, która zapewnia ocenę zapytań z użyciem metody w stylu piramidy. (Mówiąc inaczej, zasady mające najwięcej warunków powinny być oceniane jako mające najwyższy priorytet).
 
-Aby można było przejść przez ćwiczenia w tym scenariuszu, musisz włączyć funkcję i przygotować dane główne wymagane do filtrowania, co opisano w poniższych podsekcjach. (Te wymagania wstępne dotyczą również scenariuszy wymienionych w temacie [Przykładowe scenariusze korzystania z zasad konsolidacji wysyłki](#example-scenarios).)
+### <a name="make-demo-data-available"></a>Udostępnianie danych pokazu
 
-#### <a name="turn-on-the-feature-and-create-the-default-policies"></a>Włączanie funkcji i tworzenie zasad domyślnych
+Ten scenariusz odnosi się do wartości i rekordów, które są zawarte w standardowych [danych demonstracyjnych](../../fin-ops-core/fin-ops/get-started/demo-data.md), które są dostarczane dla rozwiązania Supply Chain Management. Aby użyć wartości określonych w tym miejscu podczas wykonywania ćwiczeń, upewnij się, że praca odbywa się w środowisku, w którym są zainstalowane dane demonstracyjne, i przed rozpoczęciem ustaw firmę na *USMF*.
 
-Użyj zarządzania funkcji, aby włączyć tę funkcję, jeśli nie została jeszcze włączona, i utwórz domyślne zasady konsolidacji opisane w [scenariuszu 1](#scenario-1).
+### <a name="prepare-master-data-for-this-scenario"></a>Przygotuj dane główne dla tego scenariusza
+
+Aby można było przejść przez ćwiczenia w tym scenariuszu, musisz przygotować dane główne wymagane do filtrowania, co opisano w poniższych podsekcjach. (Te wymagania wstępne dotyczą również scenariuszy wymienionych w sekcji [Przykładowe scenariusze korzystania z zasad konsolidacji wysyłki](#example-scenarios).)
 
 #### <a name="create-two-new-product-filter-codes"></a>Tworzenie dwóch nowych kodów filtrów produktów
 
@@ -300,7 +274,7 @@ W tym przykładzie utworzysz zasady *Magazyny zezwalające na konsolidację*, kt
 - Konsolidacja z otwartymi wysyłkami jest wyłączona.
 - Konsolidacja jest wykonywana w ramach różnych zamówień przy użyciu pól wybranych przez domyślne zasady CrossOrder (w celu zreplikowania poprzedniego pola wyboru **Konsolidowanie wysyłki podczas zwalniania do magazynu**).
 
-Zazwyczaj ten przypadek biznesowy można obsługiwać przy użyciu zasad domyślnych utworzonych w [scenariuszu 1](#scenario-1). Można jednak również ręcznie utworzyć podobne zasady, wykonując poniższe kroki.
+Zazwyczaj ten przypadek biznesowy można obsługiwać przy użyciu zasad domyślnych utworzonych w [Ustanowienie wstępnych zasad konsolidacji](#initial-policies). Można jednak również ręcznie utworzyć podobne zasady, wykonując poniższe kroki.
 
 1. Przejdź do pozycji **Zarządzanie magazynem \> Ustawienia \> Zwolnij do magazynu \> Zasady konsolidacji wysyłki**.
 1. Ustaw pole **Typ zasad** na *Zamówienia sprzedaży*.
@@ -345,7 +319,7 @@ Poniższe scenariusze ilustrują sposób korzystania z zasad konsolidacji wysył
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-- [Zasady konsolidacji wysyłki](about-shipment-consolidation-policies.md)
+- [Omówienie zasad konsolidacji wysyłki](about-shipment-consolidation-policies.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

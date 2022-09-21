@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
-ms.openlocfilehash: 3620fa886fd4b609a0f1f08b2338ab725065efe7
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 283c882300ece460c18ffebe572238e7629f8dee
+ms.sourcegitcommit: a1d14836b40cfc556f045c6a0d2b4cc71064a6af
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287937"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "9476817"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Projektant formuł w module Raportowanie elektroniczne (ER)
 
@@ -137,7 +137,29 @@ Poniższa ilustracja pokazuje wyrażenia tego typu. (Wersja 11.12.11 formatu kon
 > 
 > Na podstawie tej konfiguracji wygenerowana wiadomość dla każdej płatności dłużnika, element XML **Ustrd**, będzie zawierać tekst uwag do płatności lub, jeśli taki tekst jest pusty, rozdzielaną przecinkami listę numerów faktur używanych do rozliczenia płatności.
 
-## <a name="validation-of-configured-formulas"></a><a name="TestFormula"></a>Weryfikacja skonfigurowanych formuł
+## <a name="assistance-in-formulas-writing"></a>Pomoc przy zapisie formuł
+
+### <a name="data-sources-navigator"></a>Nawigator po źródłach danych
+
+Można edytować formułę reprezentującą element strukturalnego źródła danych. Po skonfigurowaniu parametrów raportowania elektronicznego w celu przedstawienia ścieżki do elementu strukturalnego źródła danych jako [ścieżki względnej](relative-path-data-bindings-er-models-format.md), znak „at” (@) jest [widoczny](er-formula-language.md#relative-path) w formule, a nie w pozostałej części bezwzględnej struktury drzewa, która jest używana. Ta pozostała część ścieżki bezwzględnej jest wskazywana jako element nadrzędny edytowalnego elementu. W wersji Finance **10.0.30 i nowszej**,na stronie **Projektant formuł**, w okienku **Źródła danych** można zaznaczyć opcję **Przejdź do @** w celu umieść kursor w drzewie źródeł danych w elemencie, który jest nadrzędnym elementem edytowalnym. Struktura wszystkich zwiniętych elementów rosnących będzie w razie potrzeby automatycznie i rekurencyjnie rozszerzona. To rozszerzenie pomaga szybko wizualizować podstawowy element edytowalizowalnego elementu, przestrzegać elementów równorzędnych edytowalnego elementu w drzewie źródeł danych i w razie potrzeby używać każdego z nich w edytowalnej formule.
+
+![Za pomocą opcji „Przejdź do @” umieść kursor w drzewie źródeł danych w elemencie, który jest elementem nadrzędnym edytowalnego na stronie Projektant formuł.](./media/er_formula-designer-data-sources-navigator.gif)
+
+### <a name="data-sources-picker"></a>Selektor źródeł danych
+
+Na stronie **Projektant formuł**, w okienku **Źródła danych** po lewej stronie wybierz element źródła danych, który chcesz wprowadzić do edytowalnej formuły. Następnie wybierz **Dodaj źródło danych**. Zauważ, że wybrany element jest dodawany do tekstu formuły, który można edytować.
+
+> [!TIP]
+> Jeśli w domyślnym edytorze formuły zostanie wybrana opcja **Dodaj źródło danych**, wybrany element jest zawsze dodawany do końca tekstu formuły. Po wybraniu tej samej opcji w [edytorze formuły zaawansowanej](er-advanced-formula-editor.md) wybrany element zostanie wstawiony do tekstu formuły w bieżącym miejscu kursora.
+
+### <a name="built-in-functions-picker"></a>Selektor funkcji wbudowanych
+
+Na stronie **Projektant formuł**, w okienku **Funkcje** po prawej stronie wybierz wbudowaną funkcję raportowania elektronicznego, którą chcesz wprowadzić do edytowalnej formuły. Następnie wybierz opcję **Dodaj funkcję**. Zauważ, że wybrana funkcja jest dodawana do tekstu formuły, który można edytować.
+
+> [!TIP]
+> Jeśli w domyślnym edytorze formuły zostanie wybrana opcja **Dodaj funkcję**, wybrana funkcja jest zawsze dodawana do końca tekstu formuły. Po wybraniu tej samej opcji w [edytorze formuły zaawansowanej](er-advanced-formula-editor.md) wybrana funkcja zostanie wstawiony do tekstu formuły w bieżącym miejscu kursora.
+
+### <a name="validation-of-configured-formulas"></a><a name="TestFormula"></a>Weryfikacja skonfigurowanych formuł
 
 Na stronie **Projektant formuł** wybierz pozycję **Testuj**, aby sprawdzić, jak działa skonfigurowana formuła.
 

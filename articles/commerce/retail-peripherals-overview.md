@@ -2,7 +2,7 @@
 title: Urządzenia peryferyjne
 description: W tym artykule wyjaśniono pojęcia, które są związane z urządzenia peryferyjnymi Commerce.
 author: BrianShook
-ms.date: 03/01/2022
+ms.date: 09/08/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: josaw
@@ -12,12 +12,12 @@ ms.custom:
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 641b45390477c8c5e6239709f7c91887a403fbaf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b3113626b18ad7f074c808d7631d13b09071bef2
+ms.sourcegitcommit: f88273627ba105ede27f28fe67ccec2d7f78261c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8880088"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9460002"
 ---
 # <a name="peripherals"></a>Urządzenia peryferyjne
 
@@ -141,6 +141,9 @@ W przypadku urządzeń peryferyjnych POS wiele urządzeń USB może zostać pod�
 Aplikacja Modern POS obsługuje czytniki MSR i skanery zgodne ze standardem UWP. Dlatego też, gdy Modern POS jest gotowy na wejście z jednego z tych urządzeń i gdy podłączone jest urządzenie należące do jednej z klas urządzeń, można użyć tego urządzenia. Na przykład jeśli skaner kodów kreskowych UWP plug and play jest podłączony do komputera z systemem Windows 10, a dla programu Modern POS skonfigurowanie logowanie przy użyciu kodów kreskowych, skaner kodów kreskowych stanie się aktywny na ekranie logowania. Nie jest wymagana żadna dodatkowa konfiguracja.
 
 Do systemu Windows dodawane są kolejne klasy urządzeń peryferyjnych POS, takie jak klasy dla szuflad kasowych i drukarek paragonów. Obsługa tych nowych klas urządzeń wkrótce zostanie dodana w programie Modern POS.
+
+> [!NOTE] 
+> Niektóre urządzenia USB mogą przestać odpowiadać lub pracować prawidłowo podczas zarządzania nimi za pomocą funkcji zarządzania zasobami selektywnymi platformy Windows 10 o nazwie [Selektywne wstrzymanie USB](/windows-hardware/drivers/usbcon/usb-selective-suspend). Jeśli urządzenie peryferyjne USB przestanie odpowiadać, może być konieczne wyłączenie funkcji selektywnego zawieszania dla tego urządzenia. Aby uzyskać więcej informacji, zobacz [Włączanie selektywnego zawieszania](/windows-hardware/drivers/usbcon/usb-selective-suspend#enabling-selective-suspend). 
 
 ### <a name="keyboard-wedge"></a>Czytnik podłączany do klawiatury
 

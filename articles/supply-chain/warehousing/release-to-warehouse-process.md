@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-13
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: c3280b2e39d7af5ca99cad703cad6ecc7b307bff
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: caa38c4ed1c7fb8cf1ead3ba6534f8405a5ff57f
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893186"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9428044"
 ---
 # <a name="release-to-warehouse"></a>Zwolnij do magazynu
 
@@ -34,7 +34,7 @@ Zwalnianie do magazynu to proces tworzenia zapasów gotowych do przetwarzania wy
 
 *Praca* magazynowa to dowolna operacja magazynowa wykonywana przez pracownika magazynu. Zwykle operacje pracy w magazynie składają się z co najmniej dwóch kolejnych działań: pracownik magazynu odbiera dostępny towar w lokalizacji, a następnie odkłada go w innej lokalizacji.
 
-Po zwolnieniu zamówień do magazynu system utworzy *wiersze ładunku* i grupuje je w wysyłki. Proces konsolidacji wysyłki umożliwia automatyczną konsolidację wysyłek podczas procesu zwalniania do magazynu. Aby uzyskać więcej informacji, zobacz [Zasady konsolidacji wysyłek](about-shipment-consolidation-policies.md).
+Po zwolnieniu zamówień do magazynu system utworzy *wiersze ładunku* i grupuje je w wysyłki. Proces konsolidacji wysyłki umożliwia automatyczną konsolidację wysyłek podczas procesu zwalniania do magazynu. Aby uzyskać więcej informacji, zobacz [Omówienie zasad konsolidacji wysyłki](about-shipment-consolidation-policies.md).
 
 Do tworzenia pracy pobierania i ładunków do wysyłki system używa *grupy czynności*. *Szablon grupy czynności* musi być dostępny dla typu grupy czynności, którą chcesz utworzyć, oraz dla magazynu wiersza zamówienia. Szablony grupy czynności typu *Wysyłka* są używane do wysyłania towarów dla zamówień sprzedaży i zamówień przeniesienia.
 

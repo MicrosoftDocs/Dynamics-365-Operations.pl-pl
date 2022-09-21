@@ -1,5 +1,5 @@
 ---
-title: Zasady konsolidacji wysyłki
+title: Omówienie zasad konsolidacji wysyłki
 description: Ten artykuł zawiera omówienie funkcji, która zapewnia elastyczną konfigurację zasad konsolidacji wysyłki.
 author: Mirzaab
 ms.date: 05/12/2020
@@ -13,14 +13,14 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 27f5d52dac2e428655f1b16908ff796ed9d02e82
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7113fc635a7c01e4b9cc44898daa3d2617058b6b
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903906"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9427936"
 ---
-# <a name="shipment-consolidation-policies"></a>Zasady konsolidacji wysyłki
+# <a name="shipment-consolidation-policies-overview"></a>Omówienie zasad konsolidacji wysyłki
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ Przed wprowadzeniem zasad konsolidacji wysyłki funkcja konsolidacji istniała j
 
 Zapytania służą do identyfikowania zasad konsolidacji wysyłek, które są stosowane, a następnie edytowalny zestaw pól określa sposób grupowania wierszy ładunku na poziomie wysyłki. (Ten wzorzec przypomina wzorzec stosowany przez szablony grupy czynności). Ponadto opcja **Konsoliduj z istniejącymi wysyłkami** została dodana do wszystkich zasad. Jeśli ta opcja jest włączona, procedura *zwalniania do magazynu* wyszukuje wysyłki do konsolidacji, wyszukując je wśród istniejących wysyłek, które zostały utworzone na podstawie tych samych zasad konsolidacji. W takim przypadku system wybierze istniejącą wysyłkę lub ładunek, zamiast tworzyć nowy. System będzie jednak konsolidować tylko z istniejącymi wysyłkami, które mają stan *Otwarte*; wysyłki należące do wydania z użyciem grupy czynności o stanie *Zwolnione* lub wyższym nie będą traktowane jako cele konsolidacji.
 
-Po udostępnieniu zasad konsolidacji wysyłek ustawienie **Konsolidowanie wysyłki podczas zwalniania do magazynu**, które było poprzednio dostępne na stronie konfiguracji **Magazyny**. Aby ułatwić przejście do nowej funkcji konsolidacji wysyłki, funkcja na stronie **Zasady konsolidacji wysyłki** tworzy zasady domyślne, która automatycznie uwzględniają stare ustawienie dla istniejących magazynów. Po utworzeniu zasad domyślnych ustawienie **Konsolidowanie wysyłki podczas zwalniania do magazynu** na stronie konfiguracji **Magazyny** nie będzie już brane pod uwagę.
+Po udostępnieniu *Zasad konsolidacji wysyłek* ustawienie **Konsolidowanie wysyłki podczas zwalniania do magazynu**, które było poprzednio dostępne na stronie konfiguracji **Magazyny**. Aby ułatwić przejście do nowej funkcji konsolidacji wysyłki, funkcja na stronie **Zasady konsolidacji wysyłki** umożliwia tworzenie zasad domyślnych, które automatycznie uwzględniają stare ustawienie dla istniejących magazynów. Po utworzeniu zasad domyślnych ustawienie **Konsolidowanie wysyłki podczas zwalniania do magazynu** na stronie konfiguracji **Magazyny** nie będzie już brane pod uwagę. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zasad konsolidacji wysyłki](configure-shipment-consolidation-policies.md).
 
 Za pomocą strony **zwalniania do magazynu** można ręcznie zastępować odpowiednie zasady konsolidacji w taki sam sposób jak w przypadku zastępowania zasad realizacji.
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: d24542a126d64621525f62e694bbc7174b474810
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 05f094b82b3d9bf9c095bc43f404aa7159bcafba
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897350"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9427912"
 ---
 # <a name="consolidate-shipments-manually-by-using-the-consolidate-shipments-page"></a>Ręczne konsolidowanie wysyłek przy użyciu strony konsolidacji wysyłek
 
@@ -93,7 +93,7 @@ Wykonaj poniższe kroki, aby zwolnić każde zamówienie sprzedaży utworzone dl
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-- [Zasady konsolidacji wysyłki](about-shipment-consolidation-policies.md)
+- [Omówienie zasad konsolidacji wysyłki](about-shipment-consolidation-policies.md)
 - [Konfigurowanie zasad konsolidacji wysyłki](configure-shipment-consolidation-policies.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

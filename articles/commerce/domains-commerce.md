@@ -2,19 +2,19 @@
 title: Domeny w rozwiązaniu Dynamics 365 Commerce
 description: W tym artykule opisano sposób obsługiwania domen w rozwiązaniach Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 08/19/2022
+ms.date: 09/09/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: BrShoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: fd2fdc82fe62e56e18f54138e07b663a18802d66
-ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
+ms.openlocfilehash: 132aec92d2b3d2765dd6bd261fb4182f8aae679a
+ms.sourcegitcommit: dbb997f252377b8884674edd95e66caf8d817816
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9405504"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "9465201"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domeny w rozwiązaniu Dynamics 365 Commerce
 
@@ -144,9 +144,9 @@ Wystąpienie Azure Front Door dostarczone wraz z Commerce nie obsługuje domen A
 
 - **Opcja 1** — aby przekierować domenę Apex do domeny „www”, należy skorzystać z dostawcy DNS. Na przykład fabrikam.com przekierowuje do `www.fabrikam.com`, gdzie `www.fabrikam.com` to rekord CNAME wskazujący na hostowane przez Commerce wystąpienie Azure Front Door.
 
-- **Opcja 2** — Jeśli dostawca DNS obsługuje rekordy aliasów, można wskazać domenę do punktu końcowego Front Door. Zapewnia to odzwierciedlenie zmiany IP przez punkt końcowy Front Door.
+- **Opcja 2** — jeśli dostawca DNS obsługuje rekordy ALIAS, można wskazać domenę w punkcie końcowym Azure Front Door, co zapewnia, że zmiana IP przez punkt końcowy jest odzwierciedlona. Musisz hostować wystąpienie Azure Front Door samodzielnie.
   
-- **Opcja 3** — Jeśli dostawca DNS nie obsługuje rekordów aliasów, musisz skonfigurować własne wystąpienie CDN lub Front Door, aby obsługiwać domenę apex.
+- **Opcja 3** — jeśli dostawca DNS nie obsługuje rekordów ALIAS, musisz zmienić dostawcę DNS na Azure DNS i hostować zarówno usługę Azure DNS, jak i wystąpienie Azure Front Door samodzielnie.
 
 > [!NOTE]
 > Jeśli korzystasz z Azure Front Door, musisz również skonfigurować usługę DNS w tej samej subskrypcji. Domena Apex obsługiwana przez usługę Azure DNS może wskazywać na Azure Front Door jako na rekord aliasu. Jest to tylko obejście problemu, ponieważ domeny Apex muszą zawsze wskazywać adres IP.

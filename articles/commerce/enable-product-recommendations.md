@@ -2,7 +2,7 @@
 title: Włącz rekomendacje produktów
 description: W tym artykule wyjaśniono, jak udostępnić rekomendacje produktów oparte na sztucznym uczeniu maszynowym (AI-ML) dostępne dla klientów Microsoft Dynamics 365 Commerce.
 author: bebeale
-ms.date: 08/31/2021
+ms.date: 09/08/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3dceec9e8e994a81b43cd5d1bd13970f2d246f40
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fc1b43fa70e6652d38b1141e2d93cf323f70a756
+ms.sourcegitcommit: f88273627ba105ede27f28fe67ccec2d7f78261c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892078"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9460029"
 ---
 # <a name="enable-product-recommendations"></a>Włącz rekomendacje produktów
 
@@ -36,8 +36,15 @@ W tym artykule wyjaśniono, jak udostępnić rekomendacje produktów oparte na s
 1. Potwierdź, że konfiguracja tożsamości Azure AD zawiera wpis do Rekomendacji. Poniżej znajduje się więcej informacji dotyczących wykonywania tej akcji.
 1. Upewnij się, że dzienne odświeżanie magazynu encji do usługi Azure Data Lake Storage Gen2 zostało zaplanowane. Aby uzyskać więcej informacji, zobacz [Upewnij się, że odświeżanie magazynu jednostek zostało zautomatyzowane. ](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 1. Włącz miary RetailSale dla magazynu encji. Aby uzyskać więcej informacji o konfigurowanie tego procesu, zobacz [Praca z pomiarami](/dynamics365/ai/customer-insights/pm-measures).
+1. Upewnij się, że w środowisku skonfigurowano regiony obsługi i przygotowania w obecnie obsługiwanych regionach, jak następuje:
+
+    - **Obsługiwane regiony przygotowania:** UE/US/CA/AU.
+    - **Obsługiwane regiony obsługi:** US/CA/AU. Jeśli region obsługi nie pasuje do jednego z istniejących obsługiwanych regionów, usługa rekomendacji wybierze najbliższy obsługiwany region.
 
 Po ukończeniu poszczególnych kroków można włączyć rekomendacje.
+
+> [!NOTE]
+> Istnieje znany problem, w którym rekomendacje nie pojawiają się po ukończeniu poniższych kroków. Ten problem jest spowodowany problemami z przepływem danych w środowisku. Jeśli w środowisku nie są wyświetlane wyniki rekomendacji, skonfiguruj alternatywne dane dla usługi rekomendacji, wykonując następujące kroki w celu [Skonfigurowania alternatywnego przepływu danych dla propozycji](set-up-alternate-data-flow.md). Aby wykonać te kroki, musisz mieć uprawnienia administratora systemu Azure. Jeśli będziesz potrzebować pomocy, skontaktuj się z przedstawicielem FastTrack.
 
 ## <a name="azure-ad-identity-configuration"></a>Identyfikator konfiguracji Azure AD
 
@@ -94,9 +101,11 @@ Aby uzyskać informacje o spersonalizowanych rekomendacjach, zobacz [Włączanie
 
 [Włączanie Azure Data Lake Storage w środowisku Dynamics 365 Commerce](enable-adls-environment.md)
 
+[Konfigurowanie alternatywnego przepływu danych dla rekomendacji](set-up-alternate-data-flow.md)
+
 [Włączanie rekomendacji spersonalizowanych](personalized-recommendations.md)
 
-[Włącz rekomendacje „Kup podobne”](shop-similar-looks.md)
+[Włączanie rekomendacji dotyczących „kupowania podobnie wyglądających produktów”](shop-similar-looks.md)
 
 [Rezygnowanie z rekomendacji spersonalizowanych](personalization-gdpr.md)
 
@@ -111,6 +120,7 @@ Aby uzyskać informacje o spersonalizowanych rekomendacjach, zobacz [Włączanie
 [Tworzenie rekomendacji z danymi demonstracyjnymi](product-recommendations-demo-data.md)
 
 [Rekomendacje produktów — często zadawane pytania](faq-recommendations.md)
+
 
 
 

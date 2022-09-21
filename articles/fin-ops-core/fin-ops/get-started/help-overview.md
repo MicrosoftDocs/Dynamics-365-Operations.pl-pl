@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 16381,  ""intro-internal
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.form: SystemParameters
-ms.openlocfilehash: f9095db85e38598ac03b4c77c3fa3be9f450ec02
-ms.sourcegitcommit: 78d41eeef0a8a8e94ed502bd89778414231a31ae
+ms.openlocfilehash: 19e1659a5fb91c7cb8916b1a8b6238038df29287
+ms.sourcegitcommit: 9c637bcf4e2eb8f711290a861492f038feaf1568
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "9305234"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9462365"
 ---
 # <a name="help-system"></a>System pomocy
 
@@ -40,18 +40,18 @@ We wszystkich tych aplikacjach pomoc specyficzna dla produktu jest dostępna z p
 
 ![Okienko pomocy.](./media/help-pane-ops-help.png)
 
-## <a name="help-on-docsmicrosoftcom"></a>Pomoc w witrynie docs.microsoft.com
+## <a name="help-on-microsoft-docs"></a>Pomoc w dokumentacji Microsoft Docs
 
-Witryna docs.microsoft.com ([docs.microsoft.com/dynamics365/](/dynamics365/)) to domyślne źródło dokumentacji produktu dla wymienionych wcześniej aplikacji. Witryna ta oferuje następujące funkcje:
+Witryna ([Dokumentacja Microsoft Dynamics 365](/dynamics365/)) w Microsoft Docs to domyślne źródło dokumentacji produktu dla wymienionych wcześniej aplikacji. Witryna ta oferuje następujące funkcje:
 
 - **Dostęp do najaktualniejszych treści** — dzięki witrynie Microsoft szybciej i elastyczniej tworzy, dostarcza i aktualizuje dokumentację produktu. Dzięki temu masz łatwy dostęp do najnowszych informacji technicznych.
 - **Zawartość pisana przez ekspertów** — zawartość witryny jest otwarta i pozwala na współtworzenie przez członków społeczności wewnątrz firmy Microsoft i poza nią.
 
-Zawartość witryny docs.microsoft.com można znaleźć przy użyciu dowolnej wyszukiwarki. W celu uzyskania najlepszych wyników zalecamy korzystanie z przeszukiwania witryny, takiego jak **site:docs.microsoft.com dynamics 365 „szukany termin”**.
+Zawartość Microsoft Docs można znaleźć przy użyciu dowolnej wyszukiwarki. W celu uzyskania najlepszych wyników zalecamy korzystanie z przeszukiwania witryny, takiego jak **site:docs.microsoft.com dynamics 365 „szukany termin”**.
 
 ## <a name="get-notified-about-changes-through-an-rss-feed"></a>Otrzymywanie powiadomień o zmianach za pomocą kanału informacyjnego RSS
 
-Aby zasubskrybować kanał RSS wszystkich aktualizacji zawartości witryny docs.microsoft.com w aplikacjach finansowych i operacyjnych, użyj następującego łącza:
+Aby zasubskrybować kanał RSS wszystkich aktualizacji zawartości dokumentacji technicznej Microsoft Docs w aplikacjach finansowych i operacyjnych, użyj następującego łącza:
 
 [Źródło danych RSS](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
 
@@ -87,7 +87,7 @@ Użytkownik może tworzyć i edytować dokumentacje. Aby rozpocząć, wybierz pr
 
 Wideo [Jak należy przyczyniać się do dokumentacji Microsoft Dynamics 365](https://youtu.be/m5djioozRbg) (pokazany powyżej), jest zawarty w kanale YouTube Microsoft Dynamics 365 w systemie.
 
-Aby uzyskać więcej informacji, zapoznaj się z [podręcznikiem dla współautorów witryny Docs](/contribute) opublikowanego przez zespół, który stworzył witrynę docs.microsoft.com.
+Aby uzyskać więcej informacji, zapoznaj się z [podręcznikiem dla współautorów witryny Microsoft Docs](/contribute) opublikowanego przez zespół, który stworzył witrynę Microsoft Docs.
 
 > [!NOTE]
 > Obecnie akceptujemy współtworzenie tylko treści w języku angielskim.
@@ -166,13 +166,13 @@ Można utworzyć pomoc dla użytkowników, tworząc niestandardowe przewodniki z
 
 W poniższej tabeli wymieniono nasze witryny internetowe. Witryny z gwiazdką (\*) obok nazwy wymagają logowania przy użyciu konta, które jest skojarzone z planem usługi.
 
-| Oddział | opis |
+| Witryna | Opis |
 |------|-------------|
-| [Docs.microsoft.com](/dynamics365/) | Ta strona hostuje dokumentację wszystkich produktów dla rozwiązania Dynamics 365 lub łączy się z nią. |
+| [Dokumentacja rozwiązania Microsoft Dynamics 365](/dynamics365/) | Ta strona hostuje dokumentację wszystkich produktów dla rozwiązania Dynamics 365 lub łączy się z nią. |
 | [Microsoft Learn](/learn/) | Jest to bezpłatna witryna programu Microsoft eLearning. |
 | [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/)\* | Ta witryna oferuje obszar roboczy współpracy oparty na chmurze, w którym klienci i ich partnerzy mogą całościowo zarządzać projektami — od przedsprzedaży po wdrożenie i bieżącą eksploatację. Jest ona przydatna we wszystkich fazach implementacji. |
 | [Blog pomocy technicznej](https://aka.ms/AXSupportBlog) | Ta witryna zawiera porady i wskazówki publikowane przez zespół pomocy technicznej. |
-| [Docs.microsoft.com/poprzednie wersje](/previous-versions/dynamics/) | Ta strona hostuje zawartość z poprzednich wydań. |
+| [Poprzednie wersje](/previous-versions/dynamics/) | Ta strona hostuje zawartość z poprzednich wydań. |
 | [Społeczność użytkowników produktów Dynamics](https://community.dynamics.com/) | Ta witryna hostuje blogi, fora i wideo. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | Ta witryna zawiera informacje na temat oceny i sprzedaży. |
 
@@ -180,4 +180,3 @@ W poniższej tabeli wymieniono nasze witryny internetowe. Witryny z gwiazdką (\
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

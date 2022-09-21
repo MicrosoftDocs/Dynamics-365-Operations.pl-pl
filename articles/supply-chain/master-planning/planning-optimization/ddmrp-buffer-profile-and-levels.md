@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: dd72332abefd31fd391ff66931a5abae0efb08de
-ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
+ms.openlocfilehash: 57ee6206da926d0dbf62f562197538bfcdd41148
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "9186696"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9428152"
 ---
 # <a name="buffer-profile-and-levels"></a>Profil i poziomy buforu
 
@@ -77,6 +77,14 @@ Na poprzedniej ilustracji, jeśli dziś jest poranek 11 czerwca, to ADU za trzy 
 
 - **ADU (przeszłe)** = (29 + 11 + 23) ÷ 3 = 21
 
+Przy obliczaniu średniego dziennego zużycia (przeszłego) są brane pod uwagę następujące transakcje:
+
+- Transakcje zmniejszające ilość towaru (w tabeli `inventtrans`, w której ilość jest mniejsza od zera)
+- Transakcje o stanie *Zamówione*, *Zamówione zarezerwowane*, *Fizycznie zarezerwowane*, *Pobrane*, *Odjęte* lub *Sprzedane*
+- Transakcje z datą w wybranym okresie wstecz (średni dzienny okres użytkowania w przeszłości)
+- Transakcje inne niż praca magazynowa, kwarantanna, oferty sprzedaży lub zestawienia (`WHSWork`, `WHSQuarantine`, `SalesQuotation` lub `Statement`)
+- Transakcje inne niż arkusze przeniesienia, które znajdują się w tym samym wymiarze zapotrzebowania
+
 ### <a name="average-daily-usage-forward"></a>Średnie dzienne użycie (w przód)
 
 W przypadku nowego produktu możesz nie mieć żadnych danych dotyczących jego użytkowania w przeszłości. W związku z tym możesz zastosować przewidywaną liczbę jednostek ADU w przyszłości (na przykład na podstawie prognozowanego zapotrzebowania). Poniższa ilustracja pokazuje, jak działa to podejście, gdy obliczenia dotyczą trzech dni w przyszłości (łącznie z dniem dzisiejszym).
@@ -86,6 +94,11 @@ W przypadku nowego produktu możesz nie mieć żadnych danych dotyczących jego 
 Na poprzedniej ilustracji, jeśli dziś jest poranek 11 czerwca, to ADU za trzy kolejne dni (11, 12 i 13 czerwca) wynosi 21.66.
 
 - **ADU (przyszłe)** = (18 + 18 + 29) ÷ 3 = 21.66
+
+Przy obliczaniu średniego dziennego zużycia (przyszłego) są brane pod uwagę następujące transakcje:
+
+- Transakcje prognozowe dla pozycji, w której prognoza jest wybrana w planie głównym
+- Transakcje z datą w wybranym okresie w przód (średni dzienny okres użytkowania w przyszłości)
 
 ### <a name="average-daily-usage-blended"></a>Średnie dzienne użycie (mieszane)
 

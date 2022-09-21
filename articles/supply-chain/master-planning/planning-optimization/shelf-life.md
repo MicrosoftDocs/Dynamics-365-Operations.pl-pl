@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-08-10
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 95c905cbcc3c057dbccf2b7d6e894b1e99ddfba5
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 68a1ba2bfe90aaf0462917c405d483fa12bf8126
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9337162"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9428229"
 ---
 # <a name="master-planning-for-products-with-limited-shelf-life"></a>Planowanie główne dla produktów o ograniczonym okresie trwałości
 
@@ -298,8 +298,6 @@ Poniższa ilustracja przedstawia oś czasu w tym przykładzie.
 ![Przykład 4: proste FEFO, okres, czas realizacji zależy od ilości.](media/fefo-example-4.png "Przykład 4: proste FEFO, okres, czas realizacji zależy od ilości")
 
 ## <a name="example-5-simple-fefo-requirement-10-negative-days"></a>Przykład 5: proste FEFO, zapotrzebowanie, 10 ujemnych dni
-
-<!-- KFM: This is more of a negative days example than a shelf life example. We should point out more explicitly how shelf life affects this situation (or maybe otherwise remove this example). -->
 
 W tym przykładzie pokazano, jak działa okres trwałości, gdy dla towaru jest dodawana dużą liczna dni ujemnych. Liczba w dniach ujemnych reprezentuje liczbę dni, po upływie których użytkownik chce zamówić nowe uzupełnienie zapasów w przypadku ujemnego stanu zapasów tego towaru. System nie utworzy dostaw, dopóki nie zostanie przekroczona liczba dni z ujemnym poziomem zapasów.
 

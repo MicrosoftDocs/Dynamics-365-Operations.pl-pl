@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: afe438767efa3082c49cc56f58c8bab9206e46e0
-ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
+ms.openlocfilehash: ad5f843e3bafa54a961908d9ebe5ab64e619e1bc
+ms.sourcegitcommit: ec15857b753ebedd86503170efd54c8007b87231
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2022
-ms.locfileid: "9228577"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9475557"
 ---
 # <a name="human-resources-home-page"></a>Zasoby ludzkie — strona główna
 
@@ -40,7 +40,7 @@ Wybierz obszar funkcji, aby dowiedzieć się więcej na jego temat.
 - [Zarządzanie wynagrodzeniami](hr-compensation-overview.md)
 - [Rozwój pracowników etatowych](hr-develop-performance-management-overview.md)
 - [Szkolenia](hr-learning-courses.md)
-- [System przepływu pracy]( ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json)
+- [System przepływu pracy](../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json)
 
 Human Resources łączy dane osób z danymi operacyjnymi, aby ułatwić Optymalizowanie kosztów siły roboczej i opiekę nad pracownikami.
 
@@ -51,9 +51,10 @@ Aby uzyskać informacje dotyczące programu Dynamics 365 Finance, zobacz stronę
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 ### <a name="elearning-courses"></a>Kursy eLearning
-W przypadku kursów i szkoleń w trybie online, sprawdź dodatek [Dynamics 365 Human Resources w Microsoft Learn](/learn/browse/?products=dynamics-human-resources&expanded=dynamics-365).
 
-### <a name="videos"></a>Filmy
+W przypadku kursów i szkoleń w trybie online, sprawdź [Dynamics 365 Human Resources](/learn/browse/?products=dynamics-human-resources&expanded=dynamics-365).
+
+### <a name="videos"></a>Pliki wideo
 
 Obejrzyj filmy instruktażowe w [kanale YouTube rozwiązania Microsoft Dynamics 365](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 02b154b9ea849c6b905d76edb256c4106b254acd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5147a837be91aab519c373e624acc036f9293641
+ms.sourcegitcommit: 555de844b8ba02fe095c28a2d447fc7c441ae549
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878911"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9460556"
 ---
 # <a name="dual-use-goods"></a>Towary podwójnego zastosowania
 
@@ -85,7 +85,14 @@ Aby zidentyfikować produkt jako towar podwójnego zastosowania i zastosować do
 1. Na skróconej karcie **Handel zagraniczny** ustaw opcję **Produkty podwójnego zastosowania** na **Tak**, aby określić, że bieżący produkt jest stosowany w postaci podwójnego zastosowania.
 1. W polu **Kod podwójnego zastosowania** określ kod, który ma zastosowanie do bieżącego produktu. (Kod ten został zdefiniowany na stronie **Kategorie podwójnego zastosowania**.)
 
-Ta konfiguracja jest sprawdzana podczas tworzenia zamówienia sprzedaży.
+> [!NOTE]
+>
+> W momencie wygenerowania potwierdzenia sprzedaży system wykonuje następujące testy podwójnego zastosowania:
+>
+> 1. Czy zamówienie obejmuje produkty podwójnego zastosowania?
+> 1. Jeśli tak, czy kraj docelowy wymaga certyfikatów podwójnego zastosowania?
+> 1. Jeśli tak, czy istnieje ważny certyfikat dla każdego towaru podwójnego zastosowania dla kraju docelowego i czy te certyfikaty są ważne dla potwierdzonych dat wysyłki?
+> 1. Jeśli odpowiedzi na pytania 1 i 2 mają wartość „Tak”, a odpowiedź na pytanie 3 ma wartość „Nie”, system wyświetla ostrzeżenie informujące użytkownika, że brakuje certyfikatów podwójnego użycia dla co najmniej jednego towaru podwójnego użycia w zamówieniu sprzedaży. Użytkownik powinien prawdopodobnie uzyskać wymagane certyfikaty i spróbować ponownie, ale może zamiast tego nadpisać ostrzeżenie i w razie potrzeby kontynuować potwierdzanie sprzedaży.
 
 ## <a name="set-up-dual-use-certificates"></a>Konfigurowanie certyfikatów podwójnego zastosowania
 

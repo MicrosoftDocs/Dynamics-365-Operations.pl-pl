@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: dd98b22a2dfcd8cad62bdef2d31ac2880b3422f8
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: db8799aba8095c8144d878c96590e8d90276726b
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9334724"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9428208"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10026-may-2022"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.26 (Maj 2022 r.)
 
@@ -36,7 +36,7 @@ To wydanie zawiera funkcje, które są podane w następującej tabeli. Firma Mic
 | Zapasy i logistyka | [Wyszukiwanie dostępnych zapasów w celu obsługi zaawansowanych pozycji zarządzania magazynem](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-support-advanced-warehouse-management) | [Obsługa dodatku Inventory Visibility dla pozycji WMS](../inventory/inventory-visibility-whs-support.md) | Zarządzanie funkcjami:<br>*Włącz pozycje magazynowe w Widoczności magazynu* |
 | Zapasy i logistyka | [Dostępne zapasy dla dodatku Widoczność zapasów](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/available-to-promise-inventory-visibility-add-in) | [Widoczność dostępnych zapasów — harmonogramy zmian i dostępność zapasów](../inventory/inventory-visibility-available-to-promise.md) | Włączone przez konfigurację usługi |
 | Produkcja | [Pozycje wagi wychwytu dla interfejsu wykonawczego hali produkcyjnej](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/catch-weight-items-production-floor-execution-interface) | [Jak pracownicy korzystają z interfejsu wykonania hal produkcyjnych](../production-control/production-floor-execution-use.md) | Zarządzanie funkcjami:<br>*Raport pozycji ilości efektywnej z interfejsu wykonania hal produkcyjnych* |
-| Produkcja | Moja karta zadań w interfejsie wykonania hal produkcyjnych <!-- KFM: Add link to release plan when available --> | [Jak pracownicy korzystają z interfejsu wykonania hal produkcyjnych](../production-control/production-floor-execution-use.md) | Zarządzanie funkcjami:<br>*Moja karta zadań w interfejsie wykonania hal produkcyjnych* |
+| Produkcja | Moja karta zadań w interfejsie wykonania hal produkcyjnych | [Jak pracownicy korzystają z interfejsu wykonania hal produkcyjnych](../production-control/production-floor-execution-use.md) | Zarządzanie funkcjami:<br>*Moja karta zadań w interfejsie wykonania hal produkcyjnych* |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>Ulepszenia funkcji zawarte w tym wydaniu
 

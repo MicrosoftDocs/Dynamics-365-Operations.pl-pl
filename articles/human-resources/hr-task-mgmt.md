@@ -2,7 +2,7 @@
 title: Zarządzanie zadaniami
 description: W tym artykule wyjaśniono funkcje zarządzania zadaniami, które są dostępne w Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 12/20/2021
+ms.date: 09/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,14 +12,14 @@ ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2021-29-11
+ms.search.validFrom: 2022-06-09
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c567f6d74e6ff87a72ff3b8663ca3a291dff3abb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 29b547ff4f55b572ab774e7e70949ec8cb53ef42
+ms.sourcegitcommit: 167f73a834629752c6b79c312d744e52df7f0927
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897872"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9445902"
 ---
 # <a name="task-management"></a>Zarządzanie zadaniami
 
@@ -69,7 +69,13 @@ Na wszystkich trzech zakładkach asystenci i menedżerowie HR mogą wykonywać n
 
 Możesz tworzyć zadania pojedynczo, a następnie wykorzystywać je w wielu listach kontrolnych. Aby utworzyć zadanie, na stronie **Ustawienia onboardingu**, w zakładce **Zadania** wybierz **Nowe**.
 
+Utworzone zadanie można przypisać do wielu list kontrolnych, wybierając zadanie, a następnie wybierając polecenie **Zastosuj do list kontrolnych** w menu.
+
 Alternatywnie możesz dodawać zadania bezpośrednio do listy kontrolnej. Aby dodać zadanie do listy kontrolnej, na stronie **Konfiguracja onboardingu**, w zakładce **Lista kontrolna**, albo stwórz nową listę kontrolną, do której dodasz zadanie, albo dodaj zadanie do istniejącej listy kontrolnej.
+
+Aby edytować zadanie w bibliotece, wybierz polecenie **Edytuj** w menu Biblioteka zadań. Jeśli zadanie jest skojarzone z listami kontrolnymi, zostaną one wyświetlone na stronie **Edytuj zadanie**. Jeśli chcesz, aby zadania z dowolnej listy kontrolnej były aktualizowane przy użyciu edycji, wybierz te listy kontrolne w sekcji **Zastosuj do list kontrolnych**.
+
+Aby usunąć zadania z biblioteki, wybierz opcję **Usuń**. Jeśli zadanie jest skojarzone z listą kontrolną, ta akcja nie spowoduje usunięcia zadania z tej listy kontrolnej. Zadanie musi zostać usunięte z listy kontrolnej w osobnej akcji.
 
 > [!NOTE]
 > Jeśli dodasz zadanie bezpośrednio do listy kontrolnej, nie będziesz mógł go użyć ponownie w innych listach kontrolnych.
@@ -96,8 +102,8 @@ Poniższa tabela opisuje pola, które są dostępne, gdy tworzysz zadanie za pom
 - **URL** – Jeśli wybierzesz tę opcję, wpisz adres URL strony internetowej, na którą chcesz, aby weszła osoba, która jest przypisana do tego zadania. Podana strona może być stroną, która nie jest częścią aplikacji Dynamics 365.
 - **Szczegóły dotyczące pracownika** – w przypadku wybrania tej opcji wybierz jedną z następujących opcji:
 
-    - **Akcje samoobsługi pracowników** – Ta opcja pokazuje listę stron, które są dostępne w **samoobsłudze pracowników**. Użyj go, jeśli zadanie, które zostało przydzielone włączanemu pracownikowi, musi zostać wykonane w **Samoobsłudze pracownika**. Na przykład, jeśli chcesz, aby pracownik wprowadził swoje osobiste dane kontaktowe, wybierz **Akcje samoobsługi pracowników**, a następnie wybierz **Dane osobowe i Informacje osobiste**.
-    - **Akcje zarządzania pracownikiem** – Ta opcja pokazuje listę stron, które są związane z rekordem pracownika, ale nie są dostępne dla niego. Na przykład, jeśli chcesz, aby właściciel zadania wprowadził informacje specyficzne dla przyjmowanego pracownika, takie jak informacje o wynagrodzeniu, wybierz **Akcje zarządzania pracownikami**, a następnie wybierz **Wynagrodzenie i Stałe wynagrodzenie**.
+    - **Akcje samoobsługi pracowników** – Ta opcja pokazuje listę stron, które są dostępne w **samoobsłudze pracowników**. Użyj go, jeśli zadanie, które zostało przydzielone włączanemu pracownikowi, musi zostać wykonane w **Samoobsłudze pracownika**. Na przykład, jeśli chcesz, aby pracownik wprowadził swoje osobiste dane kontaktowe, wybierz **Akcje samoobsługi pracowników**, a następnie wybierz **Dane osobowe i Informacje osobiste&gt;**.
+    - **Akcje zarządzania pracownikiem** – Ta opcja pokazuje listę stron, które są związane z rekordem pracownika, ale nie są dostępne dla niego. Na przykład, jeśli chcesz, aby właściciel zadania wprowadził informacje specyficzne dla przyjmowanego pracownika, takie jak informacje o wynagrodzeniu, wybierz **Akcje zarządzania pracownikami**, a następnie wybierz **Wynagrodzenie&gt;Stałe wynagrodzenie**.
 
 ### <a name="assignment-types"></a>Typy przypisań
 
@@ -133,7 +139,15 @@ Złożone zadania mogą wymagać wielu kroków lub osoba, która je wykonuje, mo
 
 ## <a name="setting-up-checklists"></a>Tworzenie list kontrolnych
 
-Lista kontrolna to grupa zadań. Możesz stworzyć tyle list kontrolnych, ile potrzebujesz, i możesz przypisać te same zadania do wielu list kontrolnych. Kiedy tworzysz listę kontrolną, określasz jej właściciela i kalendarz.
+Lista kontrolna to grupa zadań. Możesz stworzyć tyle list kontrolnych, ile potrzebujesz, i możesz przypisać te same zadania do wielu list kontrolnych.
+
+Aby utworzyć nowe zadanie z listy kontrolnej, wybierz pozycję **Nowe** na pasku menu **Zadania**. Podczas tworzenia nowego zadania można zaznaczyć opcję dodania go do biblioteki zadań, dzięki czemu będzie można je udostępnić na wielu listach kontrolnych. Zadanie można dodać do biblioteki tylko wtedy , gdy w opcji **Zastosuj zadanie do biblioteki** jest ustawiona wartość **Tak**. W przypadku dodania zadania do biblioteki zadań można je jednocześnie dodać do innych list kontrolnych, wybierając te listy kontrolne w sekcji **Zastosuj do list kontrolnych**. Jeśli zadanie nie zostanie dodanie do biblioteki, będzie ono istnieć tylko na liście kontrolnej, w których zostało utworzone.
+
+Aby z listy kontrolnej edytować zadanie, wybierz pozycję **Edytuj**. Jeśli zadanie jest skojarzone z listami kontrolnymi, zostaną one wyświetlone na stronie **Edytuj zadanie**. Jeśli chcesz, aby zadania z innych list kontrolnych były aktualizowane przy użyciu edycji, wybierz te listy kontrolne w sekcji **Zastosuj do list kontrolnych**.
+
+Aby usunąć zadania z listy kontrolnej, wybierz pozycję **Usuń**. Ta akcja usuwa zadania tylko z listy kontrolnej. Nie są one usuwane z biblioteki zadań. Aby usunąć zadanie z biblioteki, przejdź na stronę biblioteki zadań i wybierz pozycję **Usuń**.
+
+Kiedy tworzysz listę kontrolną, określasz jej właściciela i kalendarz.
 
 Jeśli pole **Typ przydziału** dla zadania jest ustawione na **Posada**, **Menadżer** lub **Grupa**, ale nie można określić konkretnej osoby na podstawie typu przydziału, zadanie zostanie przypisane do właściciela listy kontrolnej. Oto kilka przykładów sytuacji, w których zadania będą przypisane do właściciela listy kontrolnej:
 

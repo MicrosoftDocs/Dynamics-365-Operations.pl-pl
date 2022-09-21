@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: cc013e962b4da803764f16e451b1d433666e75c2
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 39677ebfb9babeb7246ece4d27ab1813435ca12e
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336614"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9427856"
 ---
 # <a name="query-data-using-warehouse-management-mobile-app-detours"></a>Przeszukuj dane za pomocą objazdów aplikacji mobilnej Warehouse Management
 
@@ -268,6 +268,6 @@ Aby przetestować konfigurację nowej aplikacji mobilnej, należy wykonać nast�
     ![Przyjęcie na zakup przy użyciu wyszukiwania zamówienia zakupu według dostawcy, przykład 2.](media/wma-purchase-receive-lookup-po-vendor-detours.png "Przyjęcie na zakup przy użyciu wyszukiwania zamówienia zakupu według dostawcy, przykład 2")
 
 > [!TIP]
-> Zamiast uruchamiać przepływ odbierania, wykonując wyszukiwanie z pozycji menu **Odbiór zakupu**, możesz zacząć od przepływu zapytania (**Główne \> Zapytanie \> Wyszukaj PO według dostawcy**) i wywołaj objazd, aby uruchomić żądany przepływ, wybierając jedną z kart z listy. Aby skorzystać z tego podejścia, możesz zdefiniować objazd na stronie **Kroki dotyczące urządzenia mobilnego** dla kroku, który ma wartość **Identyfikator kroku** *GenericDataInquiryList*. Ponieważ ten przepływ jest przepływem objazdowym, nie możesz wywołać z niego kolejnych objazdów. Dlatego po przejściu na przykład do ekranu wprowadzania numeru pozycji wyszukiwanie nie będzie na nim dostępne, ponieważ system obecnie obsługuje tylko jeden poziom objazdów.
+> Zamiast uruchamiać przepływ odbierania, wykonując wyszukiwanie z pozycji menu **Odbiór zakupu**, możesz zacząć od przepływu zapytania (**Główne \> Zapytanie \> Wyszukaj PO według dostawcy**) i wywołaj objazd, aby uruchomić żądany przepływ, wybierając jedną z kart z listy. Aby skorzystać z tego podejścia, możesz zdefiniować objazd na stronie **Kroki dotyczące urządzenia mobilnego** dla kroku, który ma wartość **Identyfikator kroku** *GenericDataInquiryList*. Pod warunkiem, że w systemie jest włączona funkcja [*Wielopoziomowe przekierowanie dla aplikacji mobilnej Warehouse Management*](warehouse-app-detours.md), w razie potrzeby można również dodać dodatkowy objazd (ta funkcja dodaje obsługę do dwóch poziomów objazdu i może być dostosowywana do obsługi dodatkowych poziomów).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

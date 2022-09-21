@@ -2,7 +2,7 @@
 title: Omówienie obliczania podatku
 description: W tym artykule wyjaśniono ogólny zakres i funkcje obliczania podatku.
 author: EricWangChen
-ms.date: 03/02/2022
+ms.date: 09/08/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
 ms.search.form: TaxIntegrationTaxServiceParameters
-ms.openlocfilehash: 2765b922bcc58837c32973b7ca96e0d63eb8b9d6
-ms.sourcegitcommit: 14a27b776befbc6793390f97e8fb0279c0ea18c1
+ms.openlocfilehash: a193db82b2b079c1e10fbfb6bfde7aa43b18bc4a
+ms.sourcegitcommit: dbb997f252377b8884674edd95e66caf8d817816
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/15/2022
-ms.locfileid: "9296002"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "9465174"
 ---
 # <a name="tax-calculation-overview"></a>Omówienie obliczania podatku
 
@@ -74,18 +74,10 @@ Zaleca się zaimportowanie i skonfigurowanie konfiguracji obliczania podatku z w
 
 | Wersja aplikacji Finance lub Supply Chain Management | Wersja konfiguracji podatku               |
 | --------------- | --------------------------------------- |
-| 10.0.18         | Konfiguracja podatku — Europa 30.12.82     |
-| 10.0.19         | Konfiguracja obliczania podatku 36.38.193 |
-| 10.0.20         | Konfiguracja obliczania podatku 40.43.208 |
-| 10.0.21         | Konfiguracja obliczania podatku 40.48.215 |
-| 10.0.22         | Konfiguracja obliczania podatku 40.48.215 |
-| 10.0.23         | Konfiguracja obliczania podatku 40.50.221 |
-| 10.0.24         | Konfiguracja obliczania podatku 40.50.225 |
-| 10.0.25         | Konfiguracja obliczania podatku 40.50.225 |
-| 10.0.26         | Konfiguracja obliczania podatku 40.54.234 |
-| 10.0.27         | Konfiguracja obliczania podatku 40.54.234 |
-| 10.0.28         | Konfiguracja obliczania podatku 40.54.234 |
+| 10.0.30         | Konfiguracja obliczania podatku 40.55.239 |
 | 10.0.29         | Konfiguracja obliczania podatku 40.55.236 |
+| 10.0.28         | Konfiguracja obliczania podatku 40.54.234 |
+| 10.0.27         | Konfiguracja obliczania podatku 40.54.234 |
 
 
 ## <a name="data-flow"></a>Przepływ danych
@@ -104,120 +96,27 @@ Poniżej znajduje się konspekt procesu przepływu danych obliczania podatku.
 
 Obliczanie podatku może być włączone przez transakcje. 
 
-W wersji 10.0.21 są obsługiwane następujące transakcje: 
+W poniższej tabeli wymieniono transakcje obsługiwane w odpowiedniej wersji.
 
-- Sprzedaż
-
-    - Oferta sprzedaży
-    - Zamówienie sprzedaży
-    - Potwierdzenie
-    - Lista pobrania
-    - Dokument dostawy
-    - Faktura sprzedaży
-    - Faktura kredytowa
-    - Zwróć zamówienie
-    - Nagłówek Opłaty dodatkowe
-    - Pozostały koszt dotyczący danej pozycji
-
-- Zakup
-
-    - Zamówienie zakupu
-    - Potwierdzenie
-    - Lista przychodu
-    - Dokument przyjęcia produktów
-    - Faktura zakupu
-    - Nagłówek Opłaty dodatkowe
-    - Pozostały koszt dotyczący danej pozycji
-    - Faktura kredytowa
-    - Zwróć zamówienie
-    - Zapotrzebowanie na zakup
-    - Różne obciążenia wiersza zapotrzebowania na zakup
-    - Zapytanie ofertowe
-    - Różne opłaty od nagłówka zapytania ofertowego
-    - Różne opłaty od wiersza zapytania ofertowego
-
-- Zapasy
-
-    - Przeniesienie zamówienia - wysyłka
-    - Zamówienie przeniesienia - odbiór
-
-W wersji 10.0.23 są obsługiwane następujące transakcje: 
-
-- Faktura niezależna
-
-W wersji 10.0.26 są obsługiwane następujące transakcje: 
-
-- Arkusze finansowe
-- Arkusz faktur od dostawców
-
-W wersji 10.0.28 są obsługiwane następujące transakcje: 
-
-- Arkusz płatności dostawców
-- Arkusz płatności odbiorcy
-
-W wersji 10.0.29 są obsługiwane następujące transakcje: 
-
-
-- Arkusze okresowe
+| Wersja | Transakcje |
+|---------|--------------|
+| 10.0.29 | Arkusze okresowe |
+| 10.0.28 | Arkusz płatności dostawców<br> Arkusz płatności odbiorcy | 
+| 10.0.26 | Arkusze finansowe<br> Arkusz faktur od dostawców |
+| 10.0.23 | Faktura niezależna |
+| 10.0.21| Sprzedaż<br><ul><li>Oferta sprzedaży</li><li>Zamówienie sprzedaży</li><li>Potwierdzenie</li><li>Lista pobrania</li><li>Dokument dostawy</li><li>Faktura sprzedaży</li><li>Faktura kredytowa</li><li>Zwróć zamówienie</li><li>Nagłówek Opłaty dodatkowe</li><li>Pozostały koszt dotyczący danej pozycji</li></ul>Zakup<br><ul><li>Zamówienie zakupu</li><li>Potwierdzenie</li><li>Lista przychodu</li><li>Dokument przyjęcia produktów</li><li>Faktura zakupu</li><li>Nagłówek Opłaty dodatkowe</li><li>Pozostały koszt dotyczący danej pozycji</li><li>Faktura kredytowa</li><li>Zwróć zamówienie</li><li>Zapotrzebowanie na zakup</li><li>Różne obciążenia wiersza zapotrzebowania na zakup</li><li>Zapytanie ofertowe</li><li>Różne opłaty od nagłówka zapytania ofertowego</li><li>Różne opłaty od wiersza zapytania ofertowego</li></ul>Zapasy<ul><li>Przeniesienie zamówienia - wysyłka</li><li>Zamówienie przeniesienia - odbiór</li></ul>|
 
 ## <a name="supported-countriesregions"></a>Obsługiwane kraje/regiony
 
-Obliczanie podatku może być uruchomione przy użyciu obsługiwanych funkcji lokalizacji w następujących krajach/regionach dla podstawowego adresu firmy: 
+Obliczanie podatku może być uruchomione z obsługiwanymi funkcjami lokalizacji. W poniższej tabeli znajdują się kraje/regiony dla adresu podstawowego osoby prawnej.
 
-Obsługiwane w wersji 10.0.21:
-
-- Austria
-- Belgia
-- Dania
-- Estonia
-- Finlandia
-- Francja
-- Niemcy
-- Węgry
-- Islandia
-- Irlandia
-- Włochy
-- Łotwa
-- Litwa
-- Holandia
-- Norwegia
-- Polska
-- Szwecja
-- Szwajcaria
-- Zjednoczone Królestwo
-- Stany Zjednoczone
-
-Obsługiwane w wersji 10.0.22:
-
-- Australia
-- Bahrajn
-- Kanada
-- Egipt
-- SRA Hongkong
-- Kuwejt
-- Nowa Zelandia
-- Oman
-- Katar
-- Arabia Saudyjska
-- Republika Południowej Afryki
-- Zjednoczone Emiraty Arabskie
-
-Obsługiwane w wersji 10.0.23:
-
-- Tajlandia
-- Japonia
-- Malezja
-- Singapur
-
-Obsługiwane w wersji 10.0.24:
-
-- Meksyk
-
-Obsługiwane w wersji 10.0.26:
-
-- Chiny
-- Republika Czeska
-- Hiszpania
+| Wersja | Kraj/region |
+|---------|----------------|
+| 10.0.26 | - Chiny <br>- Republika Czeska<br>- Hiszpania |
+| 10.0.24 | Meksyk |
+| 10.0.23 | - Tajlandia <br>- Japonia <br>- Malezja <br>- Singapur |
+| 10.0.22 | - Australia<br>- Bahrajn <br>- Kanada<br>- Egipt <br>- SRA Hongkong <br>- Kuwejt <br>- Nowa Zelandia <br>- Oman <br>- Katar <br>- Arabia Saudyjska <br>- Republika Południowej Afryki <br>- Zjednoczone Emiraty Arabskie |
+| 10.0.21 | - Austria <br>- Belgia <br>- Dania <br>- Estonia <br>- Finlandia <br>- Francja <br>- Niemcy <br>- Węgry <br>- Islandia <br>- Irlandia <br>- Włochy <br>- Łotwa <br>- Litwa <br>- Holandia <br>- Norwegia <br>- Polska <br>- Szwecja <br>- Szwajcaria <br>- Zjednoczone Królestwo <br>- Stany Zjednoczone |
 
 W przypadku dowolnego kraju/regionu, który nie jest zlokalizowany przez firmę Microsoft, można włączyć obliczanie podatku i uruchomić je z innymi funkcjami globalnymi.
 

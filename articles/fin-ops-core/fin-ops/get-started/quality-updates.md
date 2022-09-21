@@ -2,7 +2,7 @@
 title: Aktywne aktualizacje jakości
 description: Ten artykuł zawiera informacje dotyczące aktywnego dostarczania aktualizacji jakości.
 author: rashmansur
-ms.date: 08/23/2022
+ms.date: 09/12/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 9d81cb15e9a127e7bea7ad9b5e0f50a1ee543f71
-ms.sourcegitcommit: 78e85ad49634cd31459fdb7325cb273352bf1501
+ms.openlocfilehash: 985800aad3711a1b28613f0f82585b4d592cdf58
+ms.sourcegitcommit: de989037d83393bea013cd58c061159765305b4f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9338145"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9473613"
 ---
 # <a name="proactive-quality-updates"></a>Aktywne aktualizacje jakości
 
@@ -58,12 +58,67 @@ Zestaw zmian procesów jest implementowany przed aktywacją wdrożenia aktywnej 
 - **Zwiększona obserwacja zmian** — obecnie istnieje już dodatkowy krok procesu zatwierdzania zmian uwzględnianych w aktualizacji jakości. Ograniczenie w dodatkowym kroku zostanie zwiększone, aby zmniejszyć ryzyko cofnięć. Zmiany powodujące niezgodność nie są dozwolone w aktualizacjach jakości, a zwiększona obserwacja zmian pomaga zapewnić, że osiągamy ten cel.
 - **Widoczność** — powiadomimy za pośrednictwem poczty e-mail i usługi Lifecycle Services (LCS) o zbliżających się aktywnych aktualizacjach jakości. Ponadto zespoły pomocy technicznej i informacje dotyczące zdarzeń mają wgląd w możliwości aktywnego wdrażania aktualizacji jakości.
 - **Powrót do poprzedniej wersji** – dystrybucja testowa zostanie użyta do grupowania wszystkich zmian w aktywnej aktualizacji jakości. Jeśli po aktywnym wdrożeniu konieczny jest powrót do poprzedniej wersji, można tego dokonać za pomocą dystrybucji testowej.
-- **Wyznaczenie synchronizacji piaskownicy** — poniżej 20% odbiorców ma obecnie wiele piaskownic i jedna piaskownica jest wdrożona tam, gdzie wersja odpowiada wersji produkcyjnej, co pomaga w rozwiązywaniu problemów. W najbliższej przyszłości wprowadzimy możliwość określania środowiska piaskownicy, w którym klienci nie powinni otrzymywać wdrożenia aktywnej aktualizacji jakości wraz z innymi piaskownicami, ale powinni je otrzymać później, wraz ze środowiskiem produkcyjnym. Jeśli klient używa piaskownicy do testowania nowszej wersji niż w wersji produkcyjnej, ta piaskownica będzie otrzymywać aktualizacje jakości w nowszej wersji.
-- 
-## <a name="when-will-proactive-quality-updates-start"></a>Kiedy rozpoczną się aktywne aktualizacje jakości?
+- **Wyznaczenie synchronizacji piaskownicy** — poniżej 20% odbiorców ma obecnie wiele piaskownic i jedna piaskownica jest wdrożona tam, gdzie wersja odpowiada wersji produkcyjnej, co pomaga w rozwiązywaniu problemów. Jeśli klient używa piaskownicy do testowania nowszej wersji niż w wersji produkcyjnej, ta piaskownica będzie otrzymywać aktualizacje jakości w nowszej wersji.
+
+## <a name="what-is-the-rollout-roadmap-for-quality-updates"></a>Co to jest rozszerzenie planowania dla aktualizacji jakości?
 
 Dystrybucję aktywnych aktualizacji jakości dla środowisk piaskownicy można rozpocząć pod koniec września lub października 2022 dla odbiorców w chmurze publicznej Azure. Środowiska w wersji próbnej również rozpoczną otrzymywanie wdrożenia aktywnej aktualizacji w tym czasie. We wrześniu do każdego klienta zostanie wysłane powiadomienie, aby poinformować go o oczekiwanym harmonogramie dla swojego środowiska. Wyjątki w procesie aktywnej aktualizacji dystrybucji będą dozwolone tylko dla odbiorców podlegających regulacjom z FDA. Nadal pracujemy nad zarządzaniem środowiskami regulowanymi oraz ich odbiorców w chmurze rządowej.
 
 W ciągu następnych sześciu miesięcy będziemy stopniowo zwiększać wartość procentową środowisk piaskownicy, które otrzymują aktywne aktualizacje, dopóki nie zostaną uwzględnione wszystkie wskazane środowiska i nie rozpoczniemy aktualizowania środowisk produkcyjnych. Przez cały okres będziemy monitorować, aby zagwarantować, że proces wdrażania będzie bezproblemowy i że możemy ponownie osiągnąć cel, który nie przerwie obciążeń.
 
 Ponieważ odbiorcy będą regularnie obierać mniejsze obciążenia, oczekujemy, że bieżący proces będzie prostszy. Dostosujemy częstotliwość wdrażania aktualizacji, ponieważ wykazujemy możliwość uruchamiania procesu bez przerwy. Ten proces działa już efektywnie w naszej platformie Dataverse i aplikacjach oraz dostarcza przewidywanych usprawnień jakości usług. Planujemy podjęcie tego samego kroku w przypadku aplikacji finansowych i operacyjnych.
+
+## <a name="when-will-quality-updates-start-for-production-environments"></a>Kiedy rozpocznie się aktualizacja jakości w środowiskach produkcyjnych?
+W tej chwili aktualizacje jakości są przeznaczone tylko do środowisk piaskownicy. Aktualizacje środowisk produkcyjnych rozpoczną się od listopada 2022 roku.
+
+## <a name="what-is-the-schedule-for-sandbox-quality-updates"></a>Co to jest harmonogram dla aktualizacji jakości piaskownicy?
+Aby uzyskać informacje dotyczące godzin bezczynności w poszczególnych regionach, zobacz [Co to jest harmonogram aktywnych aktualizacji jakości?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#what-is-the-schedule-for-proactive-quality-updates).
+
+## <a name="how-are-the-dark-hours-handled-for-customers-that-have-one-finance-and-operations-apps-instance-but-are-active-in-multiple-time-zones"></a>W jaki sposób godziny bezczynności są obsługiwane dla odbiorców, którzy mają jedno wystąpienie aplikacji finansowych i operacyjnych, ale są aktywni w różnych strefach czasowych? 
+Poza godzinami bezczynności nie ma żadnych specjalnych harmonogramów, w których istnieje wystąpienie aplikacji finansowych i operacyjnych, ponieważ planujemy wydać aktualizacje jakości w sposób minimalnie wpływający na działalność za pomocą [nZDT](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#what-does-near-zero-downtime-maintenance-mean).
+
+## <a name="how-will-microsoft-ensure-the-quality-of-these-updates"></a>W jaki sposób firma Microsoft zapewni jakość tych aktualizacji?
+Firma Microsoft stara się, by proces zwalniania potoku był wystarczająco wydajny, aby dostarczać małe ładunki, aby zachować niski koszt walidacji. Każda poprawka w aktualizacji jakości jest przetwarzana zgodnie z surowym i bezpiecznym procesem wdrażania, który pomaga poprawić jakość i niezawodność, zmniejszając w ten sposób wpływ na klientów. Wdrażanie będzie się odbywało w etapach najpierw w środowiskach piaskownicy, a następnie w produkcji. Wdrożenia etapowe umożliwiają odpowiednie monitorowanie, aby ustalić, czy dalsze wdrożenie jest bezpieczne. Zatrzymamy wdrażanie w przypadku wykrycia problemów z każdą grupą wdrożonych klientów i zapewnimy, że każdy etap wprowadzania będzie miał wystarczający czas na rozwiązanie problemów. W przypadku każdej nadchodzącej aktualizacji jakości zapewnimy wzgląd w harmonogram poprzez aktualizacje dokumentacji publicznej i wiadomości e-mail, dzięki czemu klienci mogą planować z wyprzedzeniem.
+
+## <a name="can-customers-delay-reschedule-or-pause-a-quality-update"></a>Czy odbiorcy mogą opóźniać, ponownie zaplanować lub wstrzymać aktualizację jakości?
+Nie. Głównym celem aktualizacji jakości jest zapewnienie podstawowych zabezpieczeń, prywatności, niezawodności, dostępności i wydajności oraz ciągle usprawnianie dla naszych klientów. Opóźnienie lub wstrzymanie aktualizacji, zabezpieczeń, dostępności i niezawodności będzie stanowiło zagrożenie.
+
+## <a name="how-can-one-know-the-set-of-changes-that-went-into-a-quality-update-payload"></a>W jaki sposób można poznać zestaw zmian, które weszły w ładunek aktualizacji jakości?
+Można zapoznać się z artykułami baz wiedzy w kompilacji aktualizacji jakości na stronie **Szczegóły środowiska** w rozwiązaniu LCS, nawigując do sekcji **Aktualizacja jakości**. 
+
+## <a name="what-is-the-process-if-a-critical-issue-is-found-after-a-quality-update"></a>Co dzieje się w przypadku, gdy po aktualizacji jakości zostanie znaleziony problem krytyczny?
+Problem krytyczny lub wycofanie to co najmniej jedno ze zdarzeń, które zwykle powodują, że wielu odbiorców doświadcza zdegradowanego doświadczenia w jednej lub większej liczbie usług. Te problemy mogą powodować nieplanowany przestój, w tym brak dostępności, obniżenie wydajności i problemy związane z zarządzaniem usługą. Jeśli takie problemy mają poważny wpływ na klienta, do czasu omówienia i rozwiązania problemu zostanie zatrzymane wprowadzanie aktualizacji jakości. Zazwyczaj następna aktualizacja jakości będzie wymagała poprawki, aby wznowić wprowadzanie.
+
+Jeśli dotyczy tylko jednego środowiska klienta, skontaktuj się z pomocą techniczną firmy Microsoft, aby utworzyć bilet. Na podstawie uzasadnienia zatrzymamy wprowadzanie aktualizacji jakości dla wszystkich innych środowisk w tym projekcie do czasu usunięcia problemu.
+
+## <a name="can-customers-still-manually-apply-hotfix-updates-from-lcs"></a>Czy odbiorcy mogą nadal ręcznie stosować aktualizacje poprawek z usługi LCS?
+Tak. Aby zapewnić trwającą parzystość z tym, jak poprawki działają, nadal można stosować aktualizacje poprawek do środowisk klientów w usługach LCS. Jednak przed wdrożeniem aktualizacji ważne jest, aby pamiętać, że poprawki wdrożone w ramach aktualizacji jakości przejść przez standardową aktualizację SDP. Zmniejsza to ryzyko związane z dostępem do materiałów o większej jakości. Zaleca się wybranie aktualizacji jakości poprzez ręczne stosowanie poprawek w celu zwiększenia niezawodności.
+
+## <a name="can-customers-self-install-a-quality-update-build-by-themselves-ahead-of-the-schedule"></a>Czy klienci mogą samodzielnie wcześniej instalować kompilację aktualizacji jakości?
+Tak. Aktualizację jakości można zainstalować proaktywnie. Firma Microsoft pominie aktualizację, jeśli bieżąca wersja kompilacji środowiska jest równa lub wyższa od bieżącej aktualizacji jakości.
+
+## <a name="if-an-environment-has-an-upcoming-scheduled-monthly-service-update-within-a-week-will-it-still-receive-quality-updates"></a>Jeśli w środowisku w ciągu tygodnia zaplanowana jest planowana miesięczna aktualizacja usługi, czy nadal otrzyma ono aktualizacje jakości?
+- Aktualizacje jakości nie są stosowane, jeśli w ciągu tygodnia zaplanowano aktualizację usługi, która ma zostać zaplanowana.
+- Jeśli środowisko piaskownicy ma taką samą lub nowszą wersję kompilacji niż zbliżającą się aktualizacja jakości, zostanie pominięta.
+- Jeśli środowisko produkcyjne ma taką samą lub nowszą wersję kompilacji niż zbliżającą się aktualizacja jakości, zostanie pominięta.
+- Jeśli piaskownica ma tę samą lub nowszą wersję kompilacji z powodu aktualizacji jakości lub ręcznej aktualizacji do produkcji, produkcja nadal będzie tworzyć zaplanowaną wersję miesięcznej aktualizacji usługi. Jeśli nie chcesz, aby zaplanowane środowisko produkcyjne było aktualizowane do wersji aktualizacji usługi, możesz wstrzymać aktualizację usługi z poziomu usługi LCS. 
+- Zaleca się korzystanie z najnowszej kompilacji aktualizacji jakości w celu przetestowania zmian nachodzącej aktualizacji usługi w celu lepszej stabilności i wyników.
+
+## <a name="can-an-environment-be-brought-back-to-its-previous-state-if-there-are-issues-after-a-quality-update-is-applied"></a>Czy środowisko może zostać przywrócone do poprzedniego stanu, jeśli po zastosowaniu aktualizacji jakości wystąpią problemy?
+Po zastosowaniu aktualizacji jakości nie ma możliwości wycofywania w żadnych okolicznościach. Dostępne są tylko opcje poprawiania, aby zminimalizować problemy.
+
+## <a name="what-about-fda-regulation-and-gpx"></a>Co to są przepisy FDA i GPX?
+Plan dla odbiorców podlegających weryfikacji i przepisom FDA jest nadal rozwijany. Należy oczekiwać wkrótce większej liczby aktualizacji w tym miejscu. Na razie wszyscy tego typu odbiorcy są zwolnieni z aktualizacji jakości.
+
+## <a name="what-versions-of-service-updates-are-supported-for-these-quality-updates"></a>Które wersje aktualizacji usług są obsługiwane w przypadku tych aktualizacji jakości?
+Odbiorcy w wersjach niższych N-2 nie otrzymają aktualizacji jakości. 
+
+## <a name="finance-and-operations-apps-deployments-with-retail-components-typically-require-additional-work-in-addition-to-having-to-redeploy-mpos-how-will-these-quality-updates-impact-the-retailsdk"></a>Wdrożenia aplikacji finansowych i operacyjnych ze składnikami detalicznymi z reguły wymagają dodatkowej pracy oprócz ponownego rozmieszczenia wdrożenia MPOS. Jak te aktualizacje jakości będą miały wpływ na RetailSDK? 
+Charakter poprawek nie zmienia się w ładunku aktualizacji jakości, więc nie przewidujemy w tej chwili żadnego dodatkowego wpływu, w szczególności związanego ze składnikami detalicznymi.
+
+## <a name="is-there-any-impact-to-cloud-hosted-environments-che-"></a>Czy ma wpływ na środowiska hostowane w chmurze (CHE)? ? 
+Nie.
+
+## <a name="are-there-any-integration-issues-with-microsoft-dataverse"></a>Czy występują problemy z integracją z programem Microsoft Dataverse? 
+Nie.
+

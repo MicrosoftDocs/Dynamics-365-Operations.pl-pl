@@ -9,17 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: Poland
 ms.author: josaw
 ms.search.validFrom: 2019-11-11
-ms.openlocfilehash: 9ef28979bfbfced73798546ee97057fdd01f8c41
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 204bb9dc1f12e6f58f122fef388304655cb44478
+ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9337478"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9473974"
 ---
 # <a name="customer-information-management-for-poland"></a>Zarządzanie informacjami dotyczącymi klienta (Polska)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 ## <a name="introduction"></a>Wprowadzenie
 

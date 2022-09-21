@@ -9,17 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2018-10-31
-ms.openlocfilehash: 3c28297e62e5b2880a7a39381702d5a1448c91ac
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: b11145c0c12f973b437ebf87921a5686d217d327
+ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336727"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9473829"
 ---
 # <a name="tender-based-discount"></a>Rabat oparty na formie płatności
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Ten artykuł opisuje funkcję rabatu opartego na formie płatności, która umożliwia detalistom konfigurowanie rabatów dla konkretnych typów form płatności w Microsoft Dynamics 365 Commerce.
 
