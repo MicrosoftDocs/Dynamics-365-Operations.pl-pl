@@ -18,8 +18,6 @@
                   href: get-started/whats-new-changed-10-0-29.md
                 - name: Rozwiązanie Finance 10.0.28 (sierpień)
                   href: get-started/whats-new-changed-10-0-28.md
-                - name: Rozwiązanie Finance 10.0.27 (lipiec)
-                  href: get-started/whats-new-changed-10-0-27.md
             - name: Usunięte lub wycofane funkcje
               items:
                 - name: Usunięte lub wycofane funkcje — strona główna
@@ -1450,8 +1448,10 @@
               href: public-sector/tasks/add-certification-type-vendor-public-sector.md
             - name: Obliczanie kanadyjskiego ujednoliconego podatku od sprzedaży
               href: public-sector/Calculating-Canadian-Harmonized-sales-tax.md
-        - name: Globalizacja
+        - name: Globalization Studio
           items:
+            - name: Globalization Studio — omówienie
+              href: localizations/globalization-studio-overview.md?context=/dynamics365/context/finance
             - name: Zasoby globalizacji
               href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?context=/dynamics365/context/finance
             - name: Usługi globalizacji
@@ -1734,6 +1734,8 @@
                       href: general-ledger/sales-tax-calculation-on-general-journal.md
                     - name: Obliczanie i korygowanie podatku na fakturze od dostawcy
                       href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+                    - name: Rozwiązywanie różnic w podatkach
+                      href: general-ledger/resolve-sales-tax-differences-purchase-orders-invoices.md
                     - name: Dostosowanie podatku za pomocą arkuszy finansowych
                       href: general-ledger/adjust-sales-tax-via-general-journals.md
                     - name: Włączanie opóźnionego obliczania podatku w arkuszu
@@ -2514,6 +2516,8 @@
                   href: localizations/emea-cze-hun-year-end.md
                 - name: System fakturowania online
                   href: localizations/emea-hun-online-invoicing.md
+                - name: Deklaracja podatku VAT (Węgry)
+                  Href: localizations/emea-hun-vat-declaration-hungary.md
                 - name: Raporty podatków dla Węgier
                   href: localizations/emea-hun-sales-tax-reports.md
                 - name: Intrastat — Węgry
