@@ -12,12 +12,12 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 4c3289d034346fa21e31000fa4a2b4961a2d5304
-ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
+ms.openlocfilehash: 46a2b36b61f7a2d10564109963942c384f9163c2
+ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9423672"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9539059"
 ---
 # <a name="learning-catalog-for-business-decision-makers-considering-dynamics-365-supply-chain-management"></a>Katalog szkoleń dla decydentów biznesowych uwzględniając Dynamics 365 Supply Chain Management
 
@@ -29,16 +29,16 @@ Poniższy katalog jest zorganizowany od podstawowej bazy wiedzy do konkretnych d
 
 | Zawartość | Opis | Format | Długość |
 |---------|-------------|--------|--------|
-| [Dynamics 365 i Power Platform Fundamentals](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Czy chcesz poznać aplikacje biznesowe? Rozpocznij od tej ścieżki nauki, aby zobaczyć, jak są używane aplikacje Dynamics 365. Informacje o pojęciach chmur, Power Platform oraz sposobach rozpoczynania pracy z aplikacjami Dynamics 365. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 5.5 godzin |
-| [Rozpoczynanie pracy z aplikacjami finansowymi i operacyjnymi](/learn/paths/get-started-finance-operations/) | Dowiedz się, jak za pomocą aplikacji finansowych i operacyjnych w firmach można zarządzać globalnymi systemami finansowymi, operacyjnymi procesami biznesowymi i wydajnymi łańcuchami dostaw, aby umożliwić osobom wykonywanie szybkich, świadomych decyzji. Jako pierwszy etap pracy z aplikacjami finansowymi i operacyjnymi musisz zapoznać się z jego funkcjami, w zależności od żądanej roli użytkownika. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 2 godzin |
+| [Dynamics 365 i Power Platform Fundamentals](/training/paths/dyn-power-plat-bus-app-fundamentals/) | Czy chcesz poznać aplikacje biznesowe? Rozpocznij od tej ścieżki nauki, aby zobaczyć, jak są używane aplikacje Dynamics 365. Informacje o pojęciach chmur, Power Platform oraz sposobach rozpoczynania pracy z aplikacjami Dynamics 365. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 5.5 godzin |
+| [Rozpoczynanie pracy z aplikacjami finansowymi i operacyjnymi](/training/paths/get-started-finance-operations/) | Dowiedz się, jak za pomocą aplikacji finansowych i operacyjnych w firmach można zarządzać globalnymi systemami finansowymi, operacyjnymi procesami biznesowymi i wydajnymi łańcuchami dostaw, aby umożliwić osobom wykonywanie szybkich, świadomych decyzji. Jako pierwszy etap pracy z aplikacjami finansowymi i operacyjnymi musisz zapoznać się z jego funkcjami, w zależności od żądanej roli użytkownika. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 2 godzin |
 | [Kurs MB-900T01-A: Dynamics 365 Fundamentals](https://www.microsoft.com/learning/course.aspx?cid=MB-900T01) | Ten kurs umożliwia zapoznanie się z informacjami o funkcjonalności systemu Dynamics 365 i wartości biznesowej. Kurs obejmie aplikacje Dynamics 365, Power Platform, koncepcje chmury, model zabezpieczeń i uwagi dotyczące licencjonowania. | Prowadzone przez instruktora szkolenie osobiste lub online, koszty różnią się w zależności od regionu i partnera | 1 dzień |
-| [Rozpoczęcie pracy z zarządzaniem składnikami majątku dla Dynamics 365 Supply Chain Management](/learn/modules/get-started-asset-management/index) | Zarządzanie składnikami majątku to moduł do zarządzania zasobami i zadaniami konserwacyjnymi w Dynamics 365 Supply Chain Management. Zarządzanie składnikami majątku umożliwia efektywne zarządzanie i wykonywanie zadań związanych z zarządzaniem i serwisowaniem wielu typów urządzeń w firmie, na przykład maszyn, urządzeń produkcyjnych i pojazdów. Zarządzanie składnikami majątku wspiera rozwiązania w wielu branżach. | Bezpłatny, samodzielnie realizowany moduł nauki online | 1 godzina |
-| [Rozpoczynanie pracy z dodatkiem Zarządzanie zmianami inżynieryjnymi dla systemu Dynamics 365 Supply Chain Management](/learn/modules/get-started-engineering-change-management/) | System Dynamics 365 Supply Chain Management umożliwia pracownikom i organizacjom uzyskanie ujednoliconego widoku magazynu, magazynu, produkcji, usług i logistyki dzięki analizie predykcyjnej, która przekształca dane w szczegółowe informacje, aby wspomagać podejmowanie decyzji strategicznych. | Bezpłatny, samodzielnie realizowany moduł nauki online | 2 godzin |
+| [Rozpoczęcie pracy z zarządzaniem składnikami majątku dla Dynamics 365 Supply Chain Management](/training/modules/get-started-asset-management/index) | Zarządzanie składnikami majątku to moduł do zarządzania zasobami i zadaniami konserwacyjnymi w Dynamics 365 Supply Chain Management. Zarządzanie składnikami majątku umożliwia efektywne zarządzanie i wykonywanie zadań związanych z zarządzaniem i serwisowaniem wielu typów urządzeń w firmie, na przykład maszyn, urządzeń produkcyjnych i pojazdów. Zarządzanie składnikami majątku wspiera rozwiązania w wielu branżach. | Bezpłatny, samodzielnie realizowany moduł nauki online | 1 godzina |
+| [Rozpoczynanie pracy z dodatkiem Zarządzanie zmianami inżynieryjnymi dla systemu Dynamics 365 Supply Chain Management](/training/modules/get-started-engineering-change-management/) | System Dynamics 365 Supply Chain Management umożliwia pracownikom i organizacjom uzyskanie ujednoliconego widoku magazynu, magazynu, produkcji, usług i logistyki dzięki analizie predykcyjnej, która przekształca dane w szczegółowe informacje, aby wspomagać podejmowanie decyzji strategicznych. | Bezpłatny, samodzielnie realizowany moduł nauki online | 2 godzin |
 
 ## <a name="exam"></a>Egzamin<a name="exam"></a>
 
 | Zawartość | opis | Format |
 |---------|-------------|--------|
-| [Dynamics 365 Fundamentals](/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Udowodni, że rozumiesz Microsoft Dynamics 365, Power Platform, pojęcia chmury, opcje licencjonowania, opcje wdrożenia i wydania. | Egzamin, koszty różnią się w zależności od regionu |
+| [Dynamics 365 Fundamentals](/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Udowodni, że rozumiesz Microsoft Dynamics 365, Power Platform, pojęcia chmury, opcje licencjonowania, opcje wdrożenia i wydania. | Egzamin, koszty różnią się w zależności od regionu |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

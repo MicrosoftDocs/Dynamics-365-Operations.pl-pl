@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 316650de19d3275f2c60c79c10d6ac8a8c79e1aa
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: 5a87fb4ac2d01ef3b188b63dfc98bcfac2daf033
+ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9427882"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "9520758"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10029-october-2022"></a>Wersja zapoznawcza aplikacji Dynamics 365 Supply Chain Management 10.0.29 (październik 2022 r.)
 
@@ -35,7 +35,7 @@ To wydanie zawiera funkcje, które są podane w następującej tabeli. Możemy z
 | Obszar funkcji | Funkcja | Więcej informacji | Włączone przez   |
 |---|---|---|---|
 | Zapasy i logistyka | [Alokuj i rezerwuj elementy WMS w Widoczności zapasów](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/allocate-reserve-whs-items-inventory-visibility) | Wkrótce | Domyślnie włączone |
-| Zapasy i logistyka | [Wstępnie załaduj ujednolicone listy dostępnych zapasów](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/query-inventory-visibility-summary-entity) | Wkrótce | Domyślnie włączone |
+| Zapasy i logistyka | [Wstępnie załaduj ujednolicone listy dostępnych zapasów](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/query-inventory-visibility-summary-entity) | [Używanie aplikacji Inventory Visibility](../inventory/inventory-visibility-power-platform.md) | Włączone przez konfigurację usługi |
 | Automatyzacja dostaw produktów na zamówienie | [Automatyzacja dostaw produktów na zamówienie](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/make-to-order-supply-automation) | [Automatyzacja dostaw produktów na zamówienie](../master-planning/make-to-order-supply-automation.md) | Zarządzanie funkcjami:<br>*Automatyzacja dostaw produktów na zamówienie* |
 | Planowanie | [Wyświetl i zastosuj szczegółowe dane do DDMRP](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/view-apply-detailed-insights-ddmrp) | [Planowanie zapotrzebowania materiałowego sterowane popytem – omówienie](../master-planning/planning-optimization/ddmrp-overview.md) | Zarządzanie funkcjami:<br>*(Wersja zapoznawcza) DDMRP dla optymalizacji planowania* |
 | Kontrola produkcji | [Przed zaksięgowaniem w arkuszach udostępnij fizycznie towary gotowe](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/make-finished-goods-physically-before-posting) | [Przed zaksięgowaniem w arkuszach udostępnij fizycznie towary gotowe](../production-control/deferred-posting.md) | Zarządzanie funkcjami:<br>*(Wersja zapoznawcza) Przed zaksięgowaniem w arkuszach udostępnij fizycznie towary gotowe* |

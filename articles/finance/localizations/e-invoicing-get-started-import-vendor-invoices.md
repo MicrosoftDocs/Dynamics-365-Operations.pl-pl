@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 10.0.12
 ms.custom: 97423,  ""intro-internal
 ms.assetid: ''
 ms.search.form: ''
-ms.openlocfilehash: c98f33345b37a72c4099f01e37c82e27002ac687
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 0195dc528f2fe6bf62efbf03f8706ea90f4a4fc4
+ms.sourcegitcommit: a5a4c45bb265758c6e5c3483c8552503b1799a89
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9283154"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "9524753"
 ---
 # <a name="use-the-electronic-invoicing-service-to-import-vendor-invoices"></a>Używanie usługi fakturowania elektronicznego do importowania faktur od dostawców
 
@@ -107,7 +107,8 @@ Aby skonfigurować różne typy importowania faktur od dostawców, wykonaj kroki
 2. Wybierz opcję **Model kontekstu faktury dla odbiorcy**, a następnie wybierz pozycję **Utwórz konfigurację** > **Na podstawie nazwy: Model kontekstu faktury dla odbiorcy, Microsoft**, aby utworzyć konfigurację pochodną.
 3. W obszarze wersji **próbnej** wybierz pozycję **Projektant**, a w drzewie **modelu danych** wybierz pozycję **Mapuj model na źródła danych**.
 4. W drzewie **definicji** wybierz pozycję **DataChannel**, a następnie wybierz pozycję **Projektant**.
-5. W drzewie **Źródła danych** rozwiń kontener **$Context\_Channel**. W polu **Wartość** wybierz pozycję **Edytuj** i wprowadź nazwę kanału danych. Jest to nazwa kanału podana w konfiguracji kanału danych dla funkcji Fakturowanie elektroniczne w RCS. 
+5. W drzewie **Źródła danych** rozwiń kontener **$Context\_Channel**. 
+6. W polu **Wartość** wybierz pozycję **Edytuj** > **Edytuj formułę** i wprowadź nazwę kanału danych. Jest to nazwa kanału podana w konfiguracji kanału danych dla funkcji Fakturowanie elektroniczne w RCS. 
 7. Wybierz przycisk **Zapisz** i zamknij stronę.
 8. Zamknij stronę.
 9. Wybierz konfigurację pochodną utworzoną właśnie w **modelu kontekstu faktury dla odbiorcy**, a następnie na skróconej karcie **Wersje** wybierz pozycję **Zmień stan** > **Zakończone**.

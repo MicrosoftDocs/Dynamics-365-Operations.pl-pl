@@ -2,7 +2,7 @@
 title: Aktualizowanie procesu
 description: Microsoft Dynamics 365 Human Resources to rozwiązanie typu oprogramowanie jako usługa (SaaS), które zapewnia ciągłe aktualizacje dla zmian w aplikacji i platformie.
 author: twheeloc
-ms.date: 09/01/2020
+ms.date: 09/01/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 25889f9d4a7ffb4f155b7b7c12ec3b21a44a4710
-ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
+ms.openlocfilehash: 71815866ef9674f317b7f08ecf2a65b465ddfff3
+ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "9178452"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "9520818"
 ---
 # <a name="update-process"></a>Aktualizowanie procesu
 
 _**Zastosowanie:** Ustanowienie rozwiązania Human Resources w samodzielnym wystąpieniu infrastruktury_ 
 
 > [!NOTE]
-> Od lipca 2022 roku nie można tworzyć nowych środowisk Human Resources na samodzielnej infrastrukturze Human Resources, ani nowych projektów Lifecycle Services (LCS) Microsoft Dynamics. Klienci mogą wdrażać środowiska zasobów ludzkich na infrastrukturze finansowej i operacyjnej. Więcej informacji: [Ustanowienie rozwiązania Human Resources w infrastrukturze związanej z finansami i operacjami](/hr-admin-setup-provision-fo.md).
+> Od lipca 2022 roku nie można tworzyć nowych środowisk Human Resources na samodzielnej infrastrukturze Human Resources, ani nowych projektów Lifecycle Services (LCS) Microsoft Dynamics. Klienci mogą wdrażać środowiska zasobów ludzkich na infrastrukturze finansowej i operacyjnej. Więcej informacji: [Ustanowienie rozwiązania Human Resources w infrastrukturze związanej z finansami i operacjami](hr-admin-setup-provision-fo.md).
 
 > [!IMPORTANT]
 > Proces aktualizacji i wprowadzania poprawek w infrastrukturze aplikacji finansowych i operacyjnych różni się od samodzielnego procesu aktualizacji i wprowadzania poprawek w zasobach ludzkich. Więcej informacji o procesie aktualizacji znajdziesz w [Proces przechodzenia do najnowszej aktualizacji finansów i operacji](../fin-ops-core/dev-itpro/migration-upgrade/upgrade-latest-update.md). Aby uzyskać więcej informacji o poprawkach, zobacz [Pobieranie aktualizacji z portalu Lifecycle Services (LCS)](/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs.md). 
