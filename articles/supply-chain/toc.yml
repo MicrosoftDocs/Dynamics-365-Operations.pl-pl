@@ -1803,6 +1803,8 @@
                   href: master-planning/planning-optimization/shelf-life.md
                 - name: Planowanie z nieskończoną zdolnością produkcyjną
                   href: master-planning/planning-optimization/infinite-capacity-planning.md
+                - name: Ograniczone planowanie wydajności i planowanie
+                  href: master-planning/planning-optimization/finite-capacity.md
                 - name: Planowanie z wyborem zasobu na podstawie pojemności
                   href: master-planning/planning-optimization/capability-based-scheduling.md
                 - name: Planowanie oparte na priorytecie
