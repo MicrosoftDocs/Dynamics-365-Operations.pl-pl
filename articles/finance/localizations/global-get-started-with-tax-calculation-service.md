@@ -14,12 +14,12 @@ ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
 ms.custom: intro-internal
 ms.search.form: TaxIntegrationTaxServiceParameters
-ms.openlocfilehash: 0f005352970ec3dadb178dfafeaf4f7e36f8c18d
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 2b9af7a8bef9d479c4f2ec59ef533403a74251b1
+ms.sourcegitcommit: adadbc6e355e2ad68a1f6af26a1be1f89dc8eec6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9279819"
+ms.lasthandoff: 09/22/2022
+ms.locfileid: "9573313"
 ---
 # <a name="get-started-with-tax-calculation"></a>Rozpoczynanie pracy z obliczaniem podatku
 
@@ -186,9 +186,9 @@ Kroki w tej sekcji nie są powiązane z określoną firmą. Tę procedurę nale�
 
     | Grupa podatków    | Kody podatków           |
     | ------------ | ------------------- |
-    | DEU_Domestic | DEU_VAT19; DEU_VAT7 |
+    | DEU_Dom | DEU_VAT19; DEU_VAT7 |
     | DEU_EU       | DEU_Exempt          |
-    | BEL_Domestic | BEL_VAT21; BEL_VAT6 |
+    | BEL_Dom | BEL_VAT21; BEL_VAT6 |
     | BEL_EU       | BEL_Exempt          |
 
 20. Na karcie **Grupa podatków dla pozycji** zaznacz kolumnę **Grupa podatków dla pozycji**, dodaj ją do matrycy jako warunek wejściowy, a następnie dodaj wiersze w celu obsługi danych głównych grupy podatków dla pozycji.
@@ -204,11 +204,11 @@ Kroki w tej sekcji nie są powiązane z określoną firmą. Tę procedurę nale�
 
     Oto przykład.
 
-    | Proces biznesowy | Przysłane z | Wysłać do | Grupa podatków    |
+    | Proces biznesowy | Przysłane z | Wysyłka do | Grupa podatków    |
     | ---------------- | --------- | ------- | ------------ |
-    | Sprzedaż            | DEU       | DEU     | DEU_Domestic |
+    | Sprzedaż            | DEU       | DEU     | DEU_Dom |
     | Sprzedaż            | DEU       | FRA     | DEU_EU       |
-    | Sprzedaż            | BEL       | BEL     | BEL_Domestic |
+    | Sprzedaż            | BEL       | BEL     | BEL_Dom |
     | Sprzedaż            | BEL       | FRA     | BEL_EU       |
     
     > [!NOTE]

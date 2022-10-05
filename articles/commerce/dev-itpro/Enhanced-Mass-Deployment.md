@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2021-04-30
-ms.openlocfilehash: 66a711aff90221e594f4b2a0df3735eac93d0c9b
-ms.sourcegitcommit: 09d4805aea6d148de47c8ca38d8244bbce9786ce
+ms.openlocfilehash: 426473c14cdf9e171810aafd97dbb1afd5988b2f
+ms.sourcegitcommit: 24673493d14f2045a08fe7240689bee34e099cb5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "9387027"
+ms.lasthandoff: 09/24/2022
+ms.locfileid: "9589097"
 ---
 # <a name="mass-deployment-of-sealed-commerce-self-service-components"></a>Masowe wdrażanie zapieczętowanych składników samoobsługi rozwiązania Commerce
 
@@ -47,7 +47,7 @@ W poniższej tabeli przedstawiono ograniczniki, których można użyć w wykonan
 | -EnvironmentId | Identyfikator środowiska. |
 | -HardwareStationAppInsightsInstrumentationKey | Klucz instrumentacji aplikacji Hardware Station AppInsights. |
 | Zainstaluj | Parametr określający, czy powinien być zainstalowany składnik dostarczany przez tego instalatora. Ten parametr jest wymagany do wykonania instalacji i nie zawiera wiodącego znaku łącznika. |
-| -InstallOffline | W przypadku programu Modern POS ten parametr określa także, że baza danych w trybie offline powinna być także zainstalowana i skonfigurowana. Użyj również parametru **-SQLServerName**. W przeciwnym razie Instalator spróbuje znaleźć domyślne wystąpienie spełniające wymagania wstępne. |
+| -InstallOffline | W przypadku programu Modern POS ten parametr określa także, że baza danych w trybie offline powinna być także zainstalowana i skonfigurowana. Użyj również parametru **-SQLServerName**. W przeciwnym razie Instalator spróbuje znaleźć domyślne wystąpienie spełniające wymagania wstępne. W przypadku korzystania z uwierzytelniania Azure Active Directory (Azure AD) program POS offline nie działa, ponieważ zawsze jest wymagana łączność online. |
 | -Port | Port, który powinien być skojarzony z katalogiem wirtualnym programu Retail Server i używany przez ten katalog. Jeśli żaden port nie zostanie ustawiony, zostanie użyty port domyślny 443. |
 | -Rejestr | Identyfikator rejestru wyświetlany na stronie **Rejestry** w programie Headquarters. |
 | -RetailServerAadClientId | Identyfikator Azure AD klienta, którego usługi Retail Server powinny używać podczas komunikacji z programem Headquarters. |

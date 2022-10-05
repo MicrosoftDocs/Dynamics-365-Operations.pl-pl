@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: f9c85c4fbcc3c66d6cc4c65431b76c31cbb7aebf
-ms.sourcegitcommit: 20ce54cb40290dd116ab8b157c0a02d6757c13f5
+ms.openlocfilehash: 7e32b3ed6ed96de7193cc496e0630969137cd0c1
+ms.sourcegitcommit: 15b331f39d6e3ef811b9c2bf055a4f5b4572bae2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "9542360"
+ms.lasthandoff: 09/26/2022
+ms.locfileid: "9591858"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analiza dopasowań optymalizacji planowania
 
@@ -94,7 +94,7 @@ W poniższej tabeli przedstawiono różne wyniki, które mogą być widoczne po 
 | Produkcyjne | Wersje formuły z uzyskiem: *\#* | Ta funkcja jest oczekiwana. Obecnie uzysk skojarzony z wersją formuły jest ignorowany, gdy jest włączona Optymalizacja planowania. | 2022 Zwolnij grupę czynności 2 |
 | Produkcyjne | Plany uwzględniające sekwencjonowanie: *\#* | Ta funkcja jest oczekiwana. Obecnie gdy jest włączona Optymalizacja planowania, harmonogram nie jest brany pod uwagę, niezależnie od tego ustawienia. | 2022 Zwolnij grupę czynności 2 |
 | Produkcyjne | Zwolnione, nierozpoczęte zlecenia produkcyjne, których rozpoczęcie jest planowane na dzisiaj: *\#* | Ta funkcja jest oczekiwana. Obecnie, jeśli zlecenie produkcyjne jest opóźnione, planowanie główne zakłada, że zostanie zakończone dzisiaj. Ma to zastosowanie w przypadku zwolnionych zleceń produkcyjnych, w przypadku których data dostawy przypada w przeszłości, ale nie została jeszcze zakończona. | Przyszłe grupy czynności |
-| Produkcyjne | Zaplanowane zasoby z ograniczonymi zdolnościami produkcyjnymi: *\#* | Ta funkcja jest oczekiwana. Obecnie są ignorowane zasoby zaplanowane z ograniczonymi zdolnościami produkcyjnymi, gdy jest włączona Optymalizacja planowania. Planowanie jest wykonywane na podstawie domyślnego czasu realizacji produktu. | 2022 Zwolnij grupę czynności 2 |
+| Produkcyjne | Zaplanowane zasoby z ograniczonymi zdolnościami produkcyjnymi: *\#* | Ta funkcja jest teraz obsługiwana.| Obsługiwana |
 | Produkcyjne | Marszruty używane podczas planowania: *\#* | Ta funkcja jest obsługiwana. | Obsługiwana |
 | Produkcyjne | Rezerwacja wiersza sprzedaży z użyciem rozłożenia: *\#* | Rezerwacja wiersza sprzedaży wykorzystująca rozłożenie nie jest obsługiwana, jeśli jest włączona Optymalizacja planowania. | Przyszłe grupy czynności |
 | Produkcyjne | Planowanie z rozłożeniem zleceń produkcyjnych: *\#* | Planowanie wykorzystujące rozłożenie zleceń produkcyjnych nie jest obsługiwane, jeśli jest włączona Optymalizacja planowania. Zlecenia produkcyjne można planować pojedynczo. | Przyszłe grupy czynności |

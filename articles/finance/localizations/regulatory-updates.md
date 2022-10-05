@@ -2,7 +2,7 @@
 title: Aktualizacje wymogów prawnych
 description: Ten artykuł zawiera listę planowanych i udostępnionych aktualizacji wymaganych przepisami prawa dla Microsoft Dynamics 365 Finance.
 author: VStamberg
-ms.date: 04/18/2022
+ms.date: 09/26/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: vastrup
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 129e4e1d44018da206d0e797dcfd389c9e6adeba
-ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
+ms.openlocfilehash: fdfc10ea5bf330c3a739f8dfe86c56f16ca2c69e
+ms.sourcegitcommit: 2290799408b7567a97601bc4158f814d5bfd844c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9206205"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "9596243"
 ---
 # <a name="regulatory-updates"></a>Aktualizacje wymogów prawnych
 
@@ -37,22 +37,16 @@ Aktualizacje dotyczące środków ustawowych, które zostały wydane w ramach co
 
 Aby uzyskać informacje o najnowszych planach w zakresie aktualizacji wymaganych przepisami prawa, zapoznaj się z poniższą tabelą.   
 
-|Kraj|Data zwolnienia|Wersja wydania
-  |Aktualizacje wymagane przepisami prawa|
+|Kraj|Data zwolnienia|Wersja wydania|Aktualizacje wymagane przepisami prawa|
 |--------------------|---------------|-------|-------| 
-|      Brazylia         |   2022 marca    | 10.0.27        |    Kolekcja ICMS-DIFAL w operacjach dotyczy podatników nie opodatkowania (nr uzupełniający 190/22)  |
-|      Brazylia         |   2022 marca         | 10.0.27         |    NF-e NT2021.004 v1.00 – aktualizacja układu i zasad walidacji  |
-|      Brazylia         |   2022 marca         | 10.0.27         |    NF-e NT2021.004 v1.00 – aktualizacja układu i zasad walidacji – Retail  |
-|      Brazylia         |   2022 kwietnia         | 10.0.27HF, 10.0.28         |    SPED ECF - LAYOUT 8  |
-|      Europa Wschodnia         |   Lipiec 2022         | 10.0.27HF, 10.0.28HF, 10.0.29         |    Zestawienie księgi głównej według konta głównego  |
-|      Litwa|   2022 lutego | 10.0.27 | i.SAF zmienia się od 2022-01-01 w Dynamics 365 Finance  |
-|      Meksyk         |   2022 marca      | 10.0.27      |   Formaty CFDI wersja 4.0 (faktury i płatności)  |
-|      Meksyk         |   2022 lutego      | 10.0.27      |   Od 1 stycznia 2022 roku wchodzi w życie wersja 4.0 CFDI, z okresem współistnienia pomiędzy wersją 3.3 a wersją 4.0, który trwa od 1 stycznia do 30 czerwca 2022 roku.  |
-|      Meksyk         |   2022 marca      | 10.0.27      |   Formaty CFDI wersja 4.0 (potrącenia)  |
-|      Polska          |   2022 kwietnia     | 10.0.27HF, 10.0.28     |   JPK_FA wersja 4 od 1 kwietnia 2022 rokuJPK_V7M – nowa wersja schematu od stycznia 2022 roku |
-|      Rosja          |   2022 czerwca     | 10.0.27    |  Raport o działaniach z wykorzystaniem produktów identyfikowalnych (w zakresie odpisywania zakupionych towarów identyfikowalnych, takich jak monitory, lodówki i meble biurowe na własny użytek)|
-|      Singapur      |   Lipiec 2022| 10.0.27HF, 10.0.28HF, 10.0.29 | Plik audytu IRAS — IAF w formacie TXT|
-|      Hiszpania      |   2022 marca| 10.0.27 | Deklaracja VAT Model 303 zmiany 1 stycznia 2022 r. w Dynamics 365 Finance|
+|      Brazylia         |   2022 kwietnia         | 10.0.28         |    SPED ECF - LAYOUT 8  |
+|      Brazylia         |   2022 czerwca         | 10.0.30HF         |    EFD ICMS IPI - wersja 3.0.9  |
+|      Brazylia         |   Sierpień 2022         | 10.0.30         |    NF-e NT2021.004 v1.31 – aktualizacja układu i zasad walidacji  |
+|      Europa Wschodnia         |   Lipiec 2022         | 10.0.28HF, 10.0.29         |    Zestawienie księgi głównej według konta głównego  |
+|      Węgry         |   Lipiec 2022         | 10.0.30         |    Deklaracja VAT w XML (2065A) i podgląd w Excelu. Dodatek faktur zakupu w pliku XML (2065M)  |
+|      Polska          |   2022 kwietnia     | 10.0.28     |   JPK_FA 4 począwszy od 1 kwietnia 2022 roku |
+|      Rosja          |   2022 czerwca     | 10.0.29    |  Importuj dane adresowe z Państwowego Rejestru Adresowego (GAR)|
+|      Singapur      |   Lipiec 2022| 10.0.28HF, 10.0.29 | Plik audytu IRAS — IAF w formacie TXT|
 
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby

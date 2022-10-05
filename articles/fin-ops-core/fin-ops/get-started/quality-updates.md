@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 985800aad3711a1b28613f0f82585b4d592cdf58
-ms.sourcegitcommit: de989037d83393bea013cd58c061159765305b4f
+ms.openlocfilehash: c2d26b7c5e110d05806c064e15a3ad2af34d0fbd
+ms.sourcegitcommit: fde2867524b6a851628185cbdeee60a6ad918d08
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9473613"
+ms.lasthandoff: 09/26/2022
+ms.locfileid: "9592054"
 ---
 # <a name="proactive-quality-updates"></a>Aktywne aktualizacje jakości
 
@@ -57,7 +57,7 @@ Zestaw zmian procesów jest implementowany przed aktywacją wdrożenia aktywnej 
 - **Schemat** — narzędzie zapewnia, że kompilacje aktualizacji jakości obejmują tylko zmiany schematów, które można zastosować w trybie online usługi. To podejście pomoże zachować możliwość stosowania aktualizacji przy użyciu przestoju najbliższego zera.
 - **Zwiększona obserwacja zmian** — obecnie istnieje już dodatkowy krok procesu zatwierdzania zmian uwzględnianych w aktualizacji jakości. Ograniczenie w dodatkowym kroku zostanie zwiększone, aby zmniejszyć ryzyko cofnięć. Zmiany powodujące niezgodność nie są dozwolone w aktualizacjach jakości, a zwiększona obserwacja zmian pomaga zapewnić, że osiągamy ten cel.
 - **Widoczność** — powiadomimy za pośrednictwem poczty e-mail i usługi Lifecycle Services (LCS) o zbliżających się aktywnych aktualizacjach jakości. Ponadto zespoły pomocy technicznej i informacje dotyczące zdarzeń mają wgląd w możliwości aktywnego wdrażania aktualizacji jakości.
-- **Powrót do poprzedniej wersji** – dystrybucja testowa zostanie użyta do grupowania wszystkich zmian w aktywnej aktualizacji jakości. Jeśli po aktywnym wdrożeniu konieczny jest powrót do poprzedniej wersji, można tego dokonać za pomocą dystrybucji testowej.
+- **Zabezpieczenie awarii za pomocą dystrybucji testowej** – Funkcja obowiązuje w celu zmiany kodu w razie zastosowania w poprawce aktualizacji jakości lub do użycia istniejących dystrybucji testowych funkcji właściwych dla tej poprawki. Jeśli po proaktywnym wdrożeniu wymagane jest wycofanie lub wyłączenie zmiany, można to zrobić za pośrednictwem systemu lotów, aby uniknąć dalszych awarii.
 - **Wyznaczenie synchronizacji piaskownicy** — poniżej 20% odbiorców ma obecnie wiele piaskownic i jedna piaskownica jest wdrożona tam, gdzie wersja odpowiada wersji produkcyjnej, co pomaga w rozwiązywaniu problemów. Jeśli klient używa piaskownicy do testowania nowszej wersji niż w wersji produkcyjnej, ta piaskownica będzie otrzymywać aktualizacje jakości w nowszej wersji.
 
 ## <a name="what-is-the-rollout-roadmap-for-quality-updates"></a>Co to jest rozszerzenie planowania dla aktualizacji jakości?
@@ -69,7 +69,7 @@ W ciągu następnych sześciu miesięcy będziemy stopniowo zwiększać wartoś�
 Ponieważ odbiorcy będą regularnie obierać mniejsze obciążenia, oczekujemy, że bieżący proces będzie prostszy. Dostosujemy częstotliwość wdrażania aktualizacji, ponieważ wykazujemy możliwość uruchamiania procesu bez przerwy. Ten proces działa już efektywnie w naszej platformie Dataverse i aplikacjach oraz dostarcza przewidywanych usprawnień jakości usług. Planujemy podjęcie tego samego kroku w przypadku aplikacji finansowych i operacyjnych.
 
 ## <a name="when-will-quality-updates-start-for-production-environments"></a>Kiedy rozpocznie się aktualizacja jakości w środowiskach produkcyjnych?
-W tej chwili aktualizacje jakości są przeznaczone tylko do środowisk piaskownicy. Aktualizacje środowisk produkcyjnych rozpoczną się od listopada 2022 roku.
+W tej chwili aktualizacje jakości są przeznaczone tylko do środowisk piaskownicy. Zaktualizujemy tę przestrzeń o datę rozpoczęcia dla środowisk produkcyjnych, gdy będziemy mieć bardziej konkretne dane i metryki, od proaktywnych aktualizacji dla piaskownic po ocenę gotowości do produkcji.
 
 ## <a name="what-is-the-schedule-for-sandbox-quality-updates"></a>Co to jest harmonogram dla aktualizacji jakości piaskownicy?
 Aby uzyskać informacje dotyczące godzin bezczynności w poszczególnych regionach, zobacz [Co to jest harmonogram aktywnych aktualizacji jakości?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#what-is-the-schedule-for-proactive-quality-updates).

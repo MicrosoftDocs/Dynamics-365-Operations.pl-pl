@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6aa3dce4bfda7f3c9243387cd398f08e7b990b2f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0d5930ca2ce2bb1ae534f7e2b434836c3a4adeba
+ms.sourcegitcommit: cf27cf277b37666c838043e0695d39d52be5dcdd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894208"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "9588961"
 ---
 # <a name="accounting-distributions"></a>Zasady podziału księgowań
 
@@ -51,7 +51,7 @@ Ogólne funkcje zasad podziału księgowań oferują następujące opcje przetwa
     -   Można wyświetlić bieżący stan księgowania dokumentu w menu **Odwołanie**. Stan dotyczy całego dokumentu i wskazuje, czy dokument jest w toku, czy też został zakończony.
 -   **Wyświetl dystrybucje** – Wyświetlanie zasad podziału księgowań dla wszystkich wierszy i kwot pieniężnych w dokumencie. Nie można zmodyfikować zasad podziału księgowań w tym widoku.
 
-W wersji 10.0.13 dodano funkcję sprawdzającą poprawność tabeli zasad podziału księgowań, aby upewnić się, że nowe pola są poprawnie skonfigurowane. Ta funkcja nazywa się **Włącz dodatkową weryfikację poprawności danych dla dokumentów za pomocą struktury księgowej dokumentów źródłowych**. Aby korzystać z tej funkcji, należy ją włączyć za pomocą obszaru roboczego **Zarządzanie funkcjami**. Aby włączyć tę funkcję, wyszukaj nazwę funkcji w polu **Wyszukiwania** na stronie **Zarządzanie funkcjami**, a następnie wybierz pozycję **Włącz teraz**.
+W wersji 10.0.13 dodano funkcję sprawdzającą poprawność tabeli zasad podziału księgowań, aby upewnić się, że nowe pola są poprawnie skonfigurowane. Ta funkcja nazywa się **Włącz dodatkową weryfikację poprawności danych dla dokumentów za pomocą struktury księgowej dokumentów źródłowych**. Ta funkcja będzie domyślnie włączona w wersji 10.0.29. 
 
 Aby uzyskać więcej informacji, zobacz [Zasady podziału księgowań i zapisów w arkuszu księgi podrzędnej dla faktur od dostawcy](accounting-distributions-subledger-journal-entries-vendor-invoices.md).
 
