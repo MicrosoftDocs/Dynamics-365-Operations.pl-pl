@@ -2,19 +2,19 @@
 title: Przykład integracji usługi rejestracji fiskalnej dla Republiki Czeskiej
 description: W tym artykule znajduje się omówienie przykładu integracji fiskalnej dla Republiki Czeskiej w rozwiązaniu Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 08/17/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-04-01
-ms.openlocfilehash: 3838792c0a420fb88ea9daab0a67c2e644c80681
-ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
+ms.openlocfilehash: de26b038009d8bf3518c67389c96aade19a0b65b
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/18/2022
-ms.locfileid: "9313756"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631296"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-the-czech-republic"></a>Przykład integracji usługi rejestracji fiskalnej dla Republiki Czeskiej
 
@@ -48,7 +48,7 @@ Przykład integracji usługi rejestracji fiskalnej dla Republiki Czeskiej umożl
 - Obsługa błędów, takich jak poniższe opcje.
 
     - Ponowienie próby rejestracji fiskalnej, o ile ponowienie próby jest możliwe, np. jeśli usługa rejestracji fiskalnej jest niedostępna, nie jest gotowa albo nie odpowiada.
-    - Odroczenie rejestracji fiskalnej.
+    - Odrocz rejestrację fiskalną.
     - Pominięcie rejestracji fiskalnej lub oznaczenie transakcji jako zarejestrowanej i wprowadzenie kodów informacji oznaczających przyczynę błędu oraz dodatkowe informacje.
     - Sprawdzanie dostępności usługi rejestracji fiskalnej przed otwarciem nowej transakcji sprzedaży lub sfinalizowaniem transakcji sprzedaży.
 
@@ -188,7 +188,7 @@ Wykonaj kroki konfiguracji integracji fiskalnej w sposób opisany w [Konfigurowa
 
 1. [Konfigurowanie procesu rejestracji fiskalnej](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Zwróć też uwagę na ustawienia dla procesu rejestracji fiskalnej [specyficzne dla tego przykładu integracji usługi rejestracji fiskalnej](#set-up-the-registration-process).
 1. [Określanie ustawienia ustawień obsługi błędów](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
-1. [Włączanie ręcznego wykonywania odroczonej rejestracji fiskalnej](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+1. [Włączanie ręcznego wykonywania odroczonej rejestracji fiskalnej](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
 1. [Konfiguracja składników kanału](#configure-channel-components).
 
 ### <a name="set-up-the-registration-process"></a>Konfigurowanie procesu rejestracji

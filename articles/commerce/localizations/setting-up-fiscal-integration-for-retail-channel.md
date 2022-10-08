@@ -2,19 +2,19 @@
 title: Konfigurowanie integracji fiskalnej dla kanałów Commerce
 description: W tym artykule zawarto wskazówki dotyczące konfigurowania funkcji integracji fiskalnej dla kanałów Commerce.
 author: EvgenyPopovMBS
-ms.date: 04/28/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 9fd801395f2ba04c703734a1de7998d6a53b6462
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 28097341c7b39660b834eb81786c3f56045e1496
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9276140"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631431"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>Konfigurowanie integracji fiskalnej dla kanałów Commerce
 
@@ -30,9 +30,10 @@ Aby włączyć funkcje związane z integracją fiskalną dla kanałów Commerce,
 1. Znajdź i włącz następujące funkcje:
 
     - **Bezpośrednia integracja fiskalna z kas POS** – Ta funkcja rozszerza ramy integracji fiskalnej, dodając możliwość tworzenia łączników fiskalnych, które będą uruchamiane w punktach sprzedaży (POS). Ten typ łącznika komunikuje się z urządzeniem fiskalnym lub usługą, która udostępnia interfejs programowania aplikacji (API) HTTP i nie wymaga dedykowanej maszyny fizycznej w sklepie. Na przykład, ta funkcjonalność umożliwia integrację fiskalną dla urządzeń mobilnych bez konieczności posiadania wspólnej stacji sprzętowej.
-    - **Nadpisywanie profili technicznych integracji fiskalnej** – ta funkcja umożliwia rozszerzenie konfiguracji integracji fiskalnej i dodaje możliwość sprawdzania parametrów połączenia na stronie ustawień kasy. Gdy ta funkcja jest włączona, możesz zmienić parametry profilu technicznego.
+    - **Nadpisywanie profili technicznych integracji fiskalnej** – ta funkcja umożliwia rozszerzenie konfiguracji integracji fiskalnej i dodaje możliwość zastępowania parametrów profilu technicznego. Można na przykład określić ciągi połączenia urządzenia fiskalnego na poziomie rejestru w punkcie sprzedaży. Ta funkcja umożliwia także sprawdzanie parametrów połączenia na stronie **Ustawienia** kasy punktu sprzedaży. 
     - **Stan rejestracji fiskalnej w rejestrach POS** – kiedy ta funkcja jest włączona, możesz wyłączyć proces rejestracji fiskalnej dla określonych kas. Jeśli rejestracja fiskalna jest wyłączona dla danego rejestru POS, nie można na nim dokonywać transakcji sprzedaży.
-    - **Kopia zapasowa lokalnego magazynu integracji fiskalnej** – ta funkcja rozszerza możliwości obsługi błędów w ramach integracji fiskalnej. Umożliwia również automatyczne tworzenie kopii zapasowych danych rejestracji fiskalnej w przypadku utraty danych, dzięki czemu dane w pamięci lokalnej są przywracane podczas aktywacji urządzenia.
+    - **Kopia zapasowa magazynu lokalnego integracji fiskalnej** — ta funkcja rozszerza możliwości obsługi błędów w strukturze integracji fiskalnej, włączając automatyczną kopię zapasową danych rejestracji fiskalnej, by dane przechowywane lokalnie mogły być przywrócone podczas aktywacji urządzenia.
+    - **Odroczona rejestracja dokumentów** — ta funkcja rozszerza możliwości obsługi błędów struktury integracji obrachunkowej, umożliwiając opcję odroczenia rejestracji fiskalnej w przypadku awarii rejestracji fiskalnej i użycie opcji kopii zapasowej rejestracji fiskalnej lub zakończenie rejestracji fiskalnej później, w sposób inny niż za pomocą struktury integracji fiskalnej.
 
 ## <a name="set-up-commerce-parameters"></a>Ustawianie parametrów Commerce
 
@@ -286,7 +287,7 @@ Aby włączyć raporty fiskalne X / końcowe raporty sprzedaży z POS, należy d
     1. Dodaj nowy przycisk i ustaw właściwość przycisku **Drukuj obrachunkowy końcowy raport sprzedaży**.
     1. Na stronie **Harmonogram dystrybucji** uruchom zadanie **1090**, aby przenieść zmiany do bazy danych kanału.
 
-## <a name="enable-manual-execution-of-postponed-fiscal-registration"></a>Włączanie ręcznego wykonywania odroczonej rejestracji fiskalnej
+## <a name="enable-manual-execution-of-deferred-fiscal-registration"></a>Włączanie ręcznego wykonywania odroczonej rejestracji fiskalnej
 
 Aby włączyć ręczne wykonywanie odroczonej rejestracji fiskalnej, należy dodać nowy przycisk do układu punktu sprzedaży.
 
@@ -295,7 +296,6 @@ Aby włączyć ręczne wykonywanie odroczonej rejestracji fiskalnej, należy dod
     1. Wybierz układ do zaktualizowania.
     1. Dodaj nowy przycisk i ustaw właściwość przycisku **Zakończ proces rejestracji fiskalnej**.
     1. Na stronie **Harmonogram dystrybucji** uruchom zadanie **1090**, aby przenieść zmiany do bazy danych kanału.
-
 
 ## <a name="view-connection-parameters-and-other-information-in-pos"></a>Wyświetlanie parametrów połączenia i innych informacji w POS
 

@@ -2,19 +2,19 @@
 title: Moduły porównywania produktów
 description: W tym artykule opisano moduły porównywania produktów i sposób ich implementacji, aby klienci mogli porównywać produkty w witrynach e-commerce Microsoft Dynamics 365 Commerce.
 author: ashishmsft
-ms.date: 08/09/2022
+ms.date: 10/03/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: 6fd851ce6b32d0772c3fe23c4d7bd4dae2616fdc
-ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
+ms.openlocfilehash: 9ff45f3fbcc86b21f336d580582adef586417de4
+ms.sourcegitcommit: 66b954827826706ea2ba00c2afd5d694ad92148d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9474134"
+ms.lasthandoff: 10/03/2022
+ms.locfileid: "9618393"
 ---
 # <a name="product-comparison-modules"></a>Moduły porównywania produktów
 
@@ -91,6 +91,19 @@ Aby dodać przycisk porównywania produktów do kafelków produktów na stronach
 1. W okienku właściwości po prawej stronie skonfiguruj właściwości modułu **Przycisk porównywania produktów**.
 1. Wybierz **Zapisz**, a następnie wybierz opcję **Podgląd**, aby wyświetlić podgląd strony.
 1. Wybierz **Zakończ edycję**, aby zaewidencjonować stronę, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
+
+## <a name="add-a-product-comparison-preview-panel-module-to-pages-on-your-website"></a>Dodawanie modułu panelu podglądu porównania produktów do stron w witrynie sieci web
+
+Moduł panelu podglądu porównania produktów umożliwia klientom przeglądanie produktów, które dodają lub usuwają z porównania. Panel podglądu zawiera również opcje przechodzenia bezpośrednio do strony porównania lub czyszczenia całej listy produktów. 
+
+Zaleca się włączenie panelu podglądu na wszystkich stronach, na których jest włączony **przycisk Porównanie produktów**. Moduł można dodać do **przycisku Porównanie produktów** jako gniazdo lub można go użyć jako autonomiczny moduł, który można skonfigurować na dowolnej stronie, nawet jeśli nie ma funkcji dodawania lub usuwania produktów do porównania. 
+
+Moduł panelu podglądu porównania produktów do strony trzeba dodać ręcznie. Należy dodać tylko jeden moduł panelu podglądu na stronie. W przypadku dodania wielu wystąpień modułu do strony, pierwszy moduł zostanie wyrenderowany, a reszta zostanie zignorowana.
+
+![Panel podglądu porównania produktów](./media/product-comparison-preview-panel-2.png)
+
+Jeśli określisz limit porównania produktów, możesz włączyć symbole zastępcze na panelu podglądu, które wskazują, ile produktów można dodać do porównania. Symbole zastępcze są zastępowane produktami dodawanymi do porównania. Aby skonfigurować limit porównania produktów i włączyć szare symbole zastępcze, przejdź do **Ustawienia strony > Rozszerzenia** i wprowadź zmiany w sekcji **Porównanie produktów**. Konfiguracja zostanie zastosowana do wszystkich podglądów dla wszystkich stron. 
+
 
 ## <a name="specify-the-maximum-number-of-products-to-show-in-the-comparison-tray"></a>Określ maksymalną liczbę produktów do pokazania w pasku porównawczym
 

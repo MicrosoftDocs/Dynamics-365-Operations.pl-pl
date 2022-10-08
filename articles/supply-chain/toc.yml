@@ -1749,18 +1749,8 @@
               href: sensor-data-intelligence/sdi-scenario-production-delays.md
         - name: Analiza Internetu rzeczy (IoT)
           items:
-            - name: Analiza Internetu rzeczy (IoT) — strona główna
+            - name: Analiza Internetu rzeczy zostanie teraz zastąpiona dodatkiem Sensor Data Intelligence
               href: iot/iot-intelligence-home-page.md
-            - name: Ustawianie zasobów rozwiązania Azure
-              href: iot/iot-azure-setup.md
-            - name: Formaty schematów wiadomości dla centrum IoT Hub
-              href: iot/iot-schema-format.md
-            - name: Ustawianie metryk
-              href: iot/iot-metrics-setup.md
-            - name: Ustawienia scenariusza
-              href: iot/iot-scenario-setup.md
-            - name: Monitorowanie i zarządzanie
-              href: iot/iot-management.md
         - name: Planowanie główne
           items:
             - name: Planowanie główne — strona główna

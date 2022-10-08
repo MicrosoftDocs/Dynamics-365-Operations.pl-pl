@@ -14,12 +14,12 @@ ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Retail 10.0.9 update
 ms.custom: ''
 ms.search.industry: Retail
-ms.openlocfilehash: b93852bfb7c6f5a9f2f83f30a1f76da3f9559c7e
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: d01ad490301dd2f4103b8bd3f702db12b93a45a8
+ms.sourcegitcommit: bd7b1ffe90b25eb4c68d6aaebd063bf33e09d9cd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9286845"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "9627504"
 ---
 # <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a>Tworzenie i aktualizowanie zasad zwrotów i refundacji dla kanału
 
@@ -36,12 +36,8 @@ Zakres zasad obecnie ogranicza się do ustawiania ofert płatności, które mog�
 
 ## <a name="enable-return-policy"></a>Włącz zasady zwrotów
 
-Aby włączyć funkcję zasad zwrotów kanału w centrali handlowej, wykonaj następujące kroki.
+Domyślnie ta opcja jest włączona. Można go znaleźć w obszarze roboczym **Zarządzanie funkcjami**, wyszukując na liście nazw funkcji opcję **Włącz zasady dotyczące zwrotów kanałów**.
 
-1. Otwórz obszar roboczy **Zarządzanie funkcjami** w Dynamics 365 Commerce.
-1. Wyszukaj funkcję **Włącz zasady zwrotów kanału** na liście nazw funkcji.
-1. Wybierz **Włącz teraz**.
-1. Na stronie **Harmonogram dystrybucji** uruchom zadanie **1110** (Konfiguracja globalna) w celu dystrybucji zmiany funkcji.
 
 ## <a name="configure-return-policy"></a>Konfiguruj zasady zwrotów
 

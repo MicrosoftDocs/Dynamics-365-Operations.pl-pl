@@ -2,19 +2,19 @@
 title: Omówienie integracji fiskalnej dla kanałów aplikacji Commerce
 description: Ten artykuł zawiera omówienie funkcji integracji fiskalnej dostępnych w programie Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 03/04/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 0a56df2a463153c6c3986ce84907e25ea7d965b8
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 1812405db3c1e58eaf7cd1df3896f786e7bf026f
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9286507"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631248"
 ---
 # <a name="fiscal-integration-overview-for-commerce-channels"></a>Omówienie integracji fiskalnej dla kanałów aplikacji Commerce
 
@@ -96,15 +96,19 @@ Konfiguracja ta jest stosowana, gdy w sieci lokalnej sklepu znajduje się fizycz
 Schemat integracji fiskalnej zapewnia następujące opcje obsługi błędów podczas rejestracji fiskalnej:
 
 - **Ponów próbę** — operator może użyć tej opcji do szybkiego naprawienia awarii i ponownego uruchomienia rejestracji fiskalnej. Na przykład ta opcja może być używana, kiedy urządzenie fiskalne nie jest podłączone, w drukarce fiskalnej nie ma papieru lub papier się w niej zakleszczy.
-- **Anuluj** — ta opcja pozwala operatorowi odłożyć w czasie rejestrację fiskalną bieżącej transakcji lub zdarzenia w przypadku niepowodzenia. Po odroczeniu rejestracji operator może kontynuować pracę w POS i może zakończyć każdą inną operację, dla której rejestracja fiskalna nie jest wymagana. Gdy wystąpi dowolne zdarzeniem, które wymaga rejestracji fiskalnej w POS (np. otwarcie nowej transakcji), automatycznie wyświetli się okno dialogowe z informacją, że poprzednia transakcja nie została prawidłowo zarejestrowana, i dostępnymi opcjami obsługi błędu.
-- **Pomiń** — operator może użyć tej opcji, gdy rejestrację fiskalną można pominąć w określonych warunkach i można kontynuować wykonywanie zwykłych operacji w POS. Na przykład ta opcja może zostać użyta gdy transakcja sprzedaży, dla której rejestracja fiskalna nie powiodła się, może zostać zarejestrowana w specjalnym arkuszu papierowym.
-- **Oznacz jako zarejestrowaną** — operator może użyć tej opcji, gdy transakcja faktycznie została zarejestrowana za pomocą urządzenia fiskalnego (na przykład paragon fiskalny został wydrukowany), ale wystąpił błąd podczas zapisywania odpowiedzi fiskalnej w bazie danych kanału.
-- **Odrocz** – operatorzy mogą używać tej opcji w przypadku, gdy transakcja nie została zarejestrowana, ponieważ usługa rejestracji jest niedostępny. 
+- **Anuluj** — ta opcja pozwala operatorowi odroczyć w czasie rejestrację fiskalną bieżącej transakcji lub zdarzenia w przypadku niepowodzenia. Po odroczeniu rejestracji operator może kontynuować pracę w POS i może zakończyć każdą inną operację, dla której rejestracja fiskalna nie jest wymagana. Gdy wystąpi dowolne zdarzeniem, które wymaga rejestracji fiskalnej w POS (np. otwarcie nowej transakcji), automatycznie wyświetli się okno dialogowe z informacją, że poprzednia transakcja nie została prawidłowo zarejestrowana, i dostępnymi opcjami obsługi błędu.
+- **Pomiń** — operator może użyć tej opcji, jeśli nie jest możliwe zakończenie rejestracji podatkowej bieżącej transakcji lub zdarzenia, na przykład w przypadku awarii drukarki fiskalnej **oraz** rejestracja fiskalna może zostać pominięta w określonych warunkach. Na przykład ta opcja może zostać użyta gdy transakcja sprzedaży, dla której rejestracja fiskalna nie powiodła się, może zostać zarejestrowana w specjalnym arkuszu papierowym. Po pominięciu rejestracji fiskalnej można kontynuować zwykłe operacje w punkcie sprzedaży. 
+- **Oznacz jako zarejestrowaną** — operator może użyć tej opcji, gdy bieżąca transakcja lub zdarzenie faktycznie zostały zarejestrowane za pomocą urządzenia fiskalnego, na przykład paragon fiskalny został wydrukowany, ale wystąpił błąd podczas zapisywania odpowiedzi fiskalnej w bazie danych kanału. Po oznaczeniu bieżącej transakcji lub zdarzenia jako zarejestrowanego w punkcie sprzedaży można kontynuować zwykłe operacje.
+- **Odrocz** – operator może używać tej opcji w przypadku, gdy transakcja nie została zarejestrowana, ponieważ usługa lub urządzenie rejestracji jest niedostępne **oraz** ma zastosowanie jedna z poniższych opcji:
+    - Istnieje opcja tworzenia kopii zapasowej rejestracji fiskalnej i można kontynuować proces rejestracji fiskalnej dla bieżącej transakcji. Na przykład lokalne [urządzenie fiskalne](./latam-bra-cf-e-sat.md#scenario-4-make-a-cash-and-carry-sale-of-goods-by-using-sat-as-contingency-mode) może być kopią zapasową usługi rejestracji podatkowej w trybie online, gdy ta usługa jest dostępna.
+    - Rejestrację fiskalną można zakończyć później, ale nie za pomocą struktury integracji fiskalnej. Na przykład odroczone transakcje można później zarejestrować jako transakcje fiskalne w partii za pomocą [oddzielnej funkcji](./latam-bra-nfce.md#scenario-3-make-a-cash-and-carry-sale-of-goods-in-offline-contingency-mode).
+    
+    Po odroczeniu bieżącej transakcji lub zdarzenia w punkcie sprzedaży można kontynuować zwykłe operacje.
 
-> [!NOTE]
-> Opcje **Pomiń** i **Oznacz jako zarejestrowaną** i **Odrocz** muszą być aktywowane w procesie rejestracji fiskalnej obrachunkowej, zanim zostaną użyte. Ponadto operatorzy muszą mieć odpowiednie uprawnienia.
+> [!WARNING]
+> Opcje **Pomiń**, **Oznacz jako zarejestrowane** i **Odrocz** powinny być traktowane jako opcje alarmowe i używane tylko w przypadkach wyjątkowych. Przed włączeniem tej opcji należy omówić te opcje obsługi błędów z doradcą prawnym lub doradcą podatkowym i przed ich włączeniem kierować się zdrowym rozsądkiem. Opcje muszą być aktywowane w procesie rejestracji fiskalnej obrachunkowej, zanim zostaną użyte. Aby operatorzy nie mogli używać ich regularnie, trzeba przyznać im odpowiednie uprawnienia.
 
-Opcje **Pomiń**, **Oznacz jako zarejestrowaną** i **Odrocz** pozwalają na rejestrowanie określonych informacji przez kody informacyjne dotyczących awarii, np. przyczyny awarii lub uzasadnienia pominięcia rejestracji fiskalnej lub oznaczenia transakcji jako zarejestrowanej. Aby uzyskać więcej informacji o sposobie konfigurowania parametrów obsługi błędów, zobacz [Konfigurowanie obsługi błędów](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+[Transakcja podatkowa](#storing-fiscal-response-in-fiscal-transaction) jest tworzona po wybraniu opcji **Pomiń**, **Oznacz jako zarejestrowane** lub **Odrocz**, ale transakcja podatkowa nie zawiera odpowiedzi fiskalnej. Umożliwi to zarejestrowanie zdarzenia awarii rejestracji fiskalnej. Te opcje pozwalają także na rejestrowanie określonych informacji przez kody informacyjne dotyczących awarii, np. przyczyny awarii lub uzasadnienia pominięcia rejestracji fiskalnej lub oznaczenia transakcji jako zarejestrowanej. Aby uzyskać więcej informacji o sposobie konfigurowania parametrów obsługi błędów, zobacz [Konfigurowanie obsługi błędów](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
 ### <a name="optional-fiscal-registration"></a>Opcjonalna rejestracja fiskalna
 
@@ -112,11 +116,7 @@ Rejestracja fiskalna może być obowiązkowa dla niektórych operacji i opcjonal
 
 ### <a name="manually-rerun-fiscal-registration"></a>Ręczne ponowne uruchomienie rejestracji fiskalnej
 
-Jeśli rejestracja fiskalna transakcji lub zdarzenia zostały odroczone po awarii (np. operator wybrał opcję **Anuluj** w polu dialogowym obsługi błędu), można ręcznie ponownie uruchomić rejestrację fiskalną przez wywołanie odpowiedniej operacji. Aby dowiedzieć się więcej, zobacz [Włączanie ręcznego wykonywania odroczonej rejestracji fiskalnej](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
-
-### <a name="postpone-option"></a>Opcja odroczenia
-
-Opcja **Odrocz** umożliwia kontynuowanie procesu rejestracji podatkowej w przypadku niepowodzenia bieżącego kroku. Można jej użyć, gdy istnieje możliwość wykonania kopii zapasowej rejestracji fiskalnej.
+Jeśli rejestracja fiskalna transakcji lub zdarzenia zostały odroczone po awarii (np. operator wybrał opcję **Anuluj** w polu dialogowym obsługi błędu), można ręcznie ponownie uruchomić rejestrację fiskalną przez wywołanie odpowiedniej operacji. Aby dowiedzieć się więcej, zobacz [Włączanie ręcznego wykonywania odroczonej rejestracji fiskalnej](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
 
 ### <a name="fiscal-registration-health-check"></a>Sprawdzanie kondycji rejestracji fiskalnej
 
@@ -138,7 +138,7 @@ Jeśli sprawdzanie kondycji nie powiedzie się, przy punkcie sprzedaży zostanie
 
 ## <a name="storing-fiscal-response-in-fiscal-transaction"></a>Zapisywanie odpowiedzi fiskalnej w transakcji fiskalnej
 
-Po pomyślnym zakończeniu rejestracji fiskalnej transakcji lub zdarzenia transakcja fiskalna jest tworzona w bazie danych kanału z łączem do oryginalnej transakcji lub oryginalnego zdarzenia. Podobnie w przypadku wybrania opcji **Pomiń** lub **Oznaczanie jako zarejestrowaną** dla nieudanej rejestracji fiskalnej ta informacja jest zapisywana w transakcji fiskalnej. Transakcja fiskalna zawiera odpowiedź fiskalną z urządzenia fiskalnego lub usługi fiskalnej Jeśli proces rejestracji fiskalnej składa się z kilku kroków, transakcja fiskalna jest tworzona dla każdego kroku procesu, który spowodował powodzenie lub niepowodzenie rejestracji.
+Po pomyślnym zakończeniu rejestracji fiskalnej transakcji lub zdarzenia transakcja fiskalna jest tworzona w bazie danych kanału z łączem do oryginalnej transakcji lub oryginalnego zdarzenia. Podobnie w przypadku wybrania opcji **Pomiń**, **Oznacz jako zarejestrowane** lub **Odrocz** dla nieudanej rejestracji fiskalnej ta informacja jest zapisywana w transakcji fiskalnej. Transakcja fiskalna zawiera odpowiedź fiskalną z urządzenia fiskalnego lub usługi fiskalnej Jeśli proces rejestracji fiskalnej składa się z kilku kroków, transakcja fiskalna jest tworzona dla każdego kroku procesu, który spowodował powodzenie lub niepowodzenie rejestracji.
 
 Transakcje fiskalne są przenoszone do Siedziby z pomocą zadania *P-job* wraz z transakcjami sieci sprzedaży. Na skróconej karcie **Transakcje fiskalne** na stronie **Transakcje sklepu** można wyświetlić transakcje fiskalne, które są połączone z transakcjami sieci sprzedaży.
 

@@ -2,19 +2,19 @@
 title: Przykładowa integracja drukarki fiskalnej dla Włoch
 description: W tym artykule zawarto ogólne informacje o przykładowej integracji fiskalnej dla Włoch w rozwiązaniu Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 08/18/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-11-01
-ms.openlocfilehash: dff555a58c31b4e3daedd56b617dd44c4a87e601
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 6ad97e87e4114a8f2250d0ba4880b7a466b3689e
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336743"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631404"
 ---
 # <a name="fiscal-printer-integration-sample-for-italy"></a>Przykładowa integracja drukarki fiskalnej dla Włoch
 
@@ -67,7 +67,7 @@ Przykład integracji drukarki fiskalnej dla Włoch umożliwia realizację nastę
 - Obsługa błędów, np. następujących opcji:
 
     - Ponowienie próby rejestracji fiskalnej, o ile ponowienie próby jest możliwe, np. jeśli drukarka fiskalna nie jest podłączona, jest niegotowa lub nie odpowiada albo jeśli w drukarce nie ma papieru lub doszło do zakleszczenia papieru.
-    - Odroczenie rejestracji fiskalnej.
+    - Odrocz rejestrację fiskalną.
     - Pominięcie rejestracji fiskalnej lub oznaczenie transakcji jako zarejestrowanej i wprowadzenie kodów informacji oznaczających przyczynę błędu oraz dodatkowe informacje.
     - Sprawdź dostępność drukarki fiskalnej przed otwarciem nowej transakcji sprzedaży lub zakończeniem transakcji sprzedaży.
 
@@ -111,7 +111,7 @@ Wykonaj kroki konfiguracji integracji fiskalnej w sposób opisany w [Konfiguracj
 1. [Konfigurowanie tekstów fiskalnych dotyczących rabatów](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-texts-for-discounts).
 1. [Określanie ustawienia ustawień obsługi błędów](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 1. [Konfigurowanie raportów fiskalnych X / końcowych raportów sprzedaży z POS](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
-1. [Włączanie ręcznego wykonywania odroczonej rejestracji fiskalnej](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+1. [Włączanie ręcznego wykonywania odroczonej rejestracji fiskalnej](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
 1. [Konfigurowanie funkcjonalności służącej do zarządzania informacjami klientów w punkcie sprzedaży](emea-ita-customer-information.md#setup).
 1. [Konfigurowanie składników kanału](#configure-channel-components).
 

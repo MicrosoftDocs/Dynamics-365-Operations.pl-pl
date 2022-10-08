@@ -2,19 +2,19 @@
 title: Przykładowa integracja drukarki fiskalnej (Polska)
 description: W tym artykule zawarto ogólne informacje o przykładowej integracji fiskalnej dla Polski w Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 08/18/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-02-01.
-ms.openlocfilehash: d4e99854f5e3ab9a6ae802f4f6bcde7918f72e6d
-ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
+ms.openlocfilehash: 2f27e5fdcd2b26a0a1651f21436cb4caad501cf8
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9473789"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631379"
 ---
 # <a name="fiscal-printer-integration-sample-for-poland"></a>Przykładowa integracja drukarki fiskalnej (Polska)
 
@@ -64,7 +64,7 @@ Poniższe scenariusze są objęte próbką integracją drukarki fiskalnej dla Po
 - Obsługa błędów, np. następujących opcji:
 
     - Ponowienie próby rejestracji fiskalnej, jeśli ponownie jest możliwe, np. jeśli drukarka fiskalna nie jest podłączona, jest niegodowa lub nie odpowiada, w drukarce nie ma papieru lub występuje zakleszczenie papieru.
-    - Odroczenie rejestracji fiskalnej.
+    - Odrocz rejestrację fiskalną.
     - Pominięcie rejestracji fiskalnej lub oznaczenie transakcji jako zarejestrowanej i wprowadzenie kodów informacji oznaczających przyczynę błędu oraz dodatkowe informacje.
     - Sprawdź dostępność drukarki fiskalnej przed otwarciem nowej transakcji sprzedaży lub zakończeniem transakcji sprzedaży.
 
@@ -107,7 +107,7 @@ Wykonaj kroki konfiguracji integracji fiskalnej w sposób opisany w [Konfiguracj
 1. [Konfigurowanie procesu rejestracji fiskalnej](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Należy zwrócić także uwagę na ustawienia dla procesu rejestracji fiskalnej [specyficzne dla tej drukarki fiskalnej w przykładzie integracji](#set-up-the-registration-process).
 1. [Określanie ustawienia ustawień obsługi błędów](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 1. [Konfigurowanie raportów fiskalnych X / końcowych raportów sprzedaży z POS](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
-1. [Włączanie ręcznego wykonywania odroczonej rejestracji fiskalnej](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+1. [Włączanie ręcznego wykonywania odroczonej rejestracji fiskalnej](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
 1. [Konfiguracja składników kanału](#configure-channel-components).
 
 ### <a name="set-up-the-registration-process"></a>Konfigurowanie procesu rejestracji
