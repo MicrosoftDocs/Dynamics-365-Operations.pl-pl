@@ -2,7 +2,7 @@
 title: Tworzenie planu świadczeń
 description: W tym artykule przedstawiono sposób konfigurowania planów świadczeń w aplikacji Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/23/2021
+ms.date: 09/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5c8d4488f1782d80484a8b91f4ae7303fea0e464
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 001318be00efcda1e7ee07513e240059d3c5e135
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9337035"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9643945"
 ---
 # <a name="create-a-benefit-plan"></a>Tworzenie planów świadczeń
 
@@ -42,8 +42,9 @@ W tym artykule przedstawiono sposób konfigurowania planów świadczeń w aplika
    | **Program** | Określa program, do którego można opcjonalnie przypisać plan. |
    | **Pakiet** | Określa pakiet, do którego można opcjonalnie przypisać plan. |
    | **Główna** | Określa, czy plan jest planem głównym w pakiecie, do którego jest przypisany. |
+   | **Wymagana** | Wskazuje, że plan musi zostać wybrany, aby można było wyewidencjonować dowolny inny plan w pakiecie. Można określić więcej niż jeden plan jako **Wymagany**. W takim przypadku wszystkie plany oznaczone jako **Wymagane** muszą zostać wybrane, aby wyewidencjonować jakiekolwiek plany z pakietu.|
    | **Data i godzina wejścia w życie** | Data i godzina, do której plan zaczyna obowiązywać. Domyślną wartością jest bieżąca data systemu. |
-   | **Data i godzina ważności** | Data i godzina, kiedy plan przestaje obowiązywać. Wartość domyślna to 31.12.2154, czyli nigdy. |
+   | **Data i godzina ważności** | Data i godzina, kiedy plan przestaje obowiązywać. Wartość domyślna to 31.12.2154, czyli nigdy.  |
 
 4. Na karcie **Konfiguracja** określ wartości następujących pól, w zależności od typu tworzonego planu:
 

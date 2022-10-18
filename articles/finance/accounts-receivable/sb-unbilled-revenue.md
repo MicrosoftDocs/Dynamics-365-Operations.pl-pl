@@ -2,7 +2,7 @@
 title: Nierozliczony przychód
 description: Ten artykuł wyjaśnia, jak skonfigurować pozycje i konta, aby korzystać z funkcji nierozliczonych przychodów w rozliczaniu subskrypcji.
 author: JodiChristiansen
-ms.date: 11/04/2021
+ms.date: 10/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: b3fe58fc06df3f61433c8457b337ae895283e12b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: adf6f06ee454f368fa194315a87cfdec9e5e13da
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879690"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9644176"
 ---
 # <a name="unbilled-revenue"></a>Nierozliczony przychód
 
@@ -123,15 +123,15 @@ Rozkłady są przeliczane na podstawie wybranego typu alokacji (**Procent**, **P
 
 Harmonogram rozliczeń jest wprowadzany na trzy lata, a faktury są rozliczane co roku przez okres trzech lat. Cała kwota kontraktu jest zapisywana na koncie niefakturowanych przychodów, z którego co roku tworzone są faktury. Kontem przeciwstawnym jest konto przychodów lub konto przychodów przyszłych okresów.
 
-Zwróć uwagę, że rozliczenia z góry i przychody nierozliczone nie działają razem, ponieważ w księdze głównej mogą pojawić się problemy z uzgodnieniem. Na przykład na stronie **Ustawianie grupy elementów** grupa elementów A jest ustawiona tak, że pole **Liczba górnych wierszy** jest ustawione na **2**. Na stronie **Harmonogramy rozliczeń** dodano trzy elementy. Wszystkie trzy pozycje należą do grupy pozycji A. Kiedy tworzony jest pierwszy wpis w arkuszu dla funkcji przychodów niefakturowanych, kwota dla wszystkich trzech pozycji jest przetwarzana na konto niefakturowane. Kiedy tworzona jest faktura dla harmonogramu rozliczeń, uwzględniane są tylko kwoty dla dwóch pierwszych pozycji. Dlatego kwota na fakturze nie zgadza się z kwotą, która została zaksięgowana na koncie nierozliczonych przychodów, a w księdze głównej pojawiają się problemy z uzgodnieniem.
+Rozliczenia z góry i przychody nierozliczone nie działają razem, ponieważ w księdze głównej mogą pojawić się problemy z uzgodnieniem. Na przykład na stronie **Ustawianie grupy elementów** grupa elementów A jest ustawiona tak, że pole **Liczba górnych wierszy** jest ustawione na **2**. Na stronie **Harmonogramy rozliczeń** dodano trzy elementy. Wszystkie trzy pozycje należą do grupy pozycji A. Kiedy tworzony jest pierwszy wpis w arkuszu dla funkcji przychodów niefakturowanych, kwota dla wszystkich trzech pozycji jest przetwarzana na konto niefakturowane. Kiedy tworzona jest faktura dla harmonogramu rozliczeń, uwzględniane są tylko kwoty dla dwóch pierwszych pozycji. Dlatego kwota na fakturze nie zgadza się z kwotą, która została zaksięgowana na koncie nierozliczonych przychodów, a w księdze głównej pojawiają się problemy z uzgodnieniem.
 
 Jeśli chcesz używać nierozliczonych przychodów, pozostaw stronę **Ustawienia grupy artykułów** pustą lub ustaw wszystkie grupy artykułów tak, by pole **Liczba górnych linii** było ustawione na **0** (zero). Jeśli chcesz korzystać z rozliczenia górnego, nie są dostępne żadne akcje związane z nierozliczonymi przychodami.
 
 ### <a name="examples"></a>Przykłady
 
-Od wersji 10.0.27, gdy używane są przychody nierozliczone, pojawia się nowe konto. Podczas początkowego procesu **tworzenia wpisu w arkuszu** uznanie jest dokonywane na nowym koncie offsetowym dochodów nieobjętych fakturowaniem. To konto jest używane zamiast konta przychodów, ponieważ ta sama wartość musi zostać odwrócona, gdy harmonogram rozliczeń jest fakturowany. Jeśli wystąpią różnice w kursach walut lub zaokrąglenia, kwoty, które zostaną obliczone podczas procesu **Generowania faktury**, mogą być inne. Takie postępowanie zapewnia, że suma netto kont wynosi 0 (zero).
+Od wersji 10.0.29 do parametrów rozliczania umowy cyklicznej jest dodawany nowy parametr. Jeśli ustawiono wartość Tak, parametr **Użyj nierozliczonych kont przeciwstawnych** włącza dwa nowe konta w **Ustawieniach nierozliczonych przychodów**. Stają się dostępne Konta przeciwstawne nierozliczonego przychodu i Konta przeciwstawne nierozliczonego rabatu i najlepiej używać ich w przypadku tworzenia harmonogramów rozliczania w walucie innej niż waluta rozliczeniowa. Używanie kont przeciwstawnych zapewnia, że konta nierozliczonych przychodów i nierozliczonych rabatów zostały wycofane przy użyciu tych samych kursów wymiany co ich początkowe wpisy. Początkowy proces **Utwórz wpis w arkuszu** jest taki sam, jak w przypadku debetu dla nierozliczonego przychodu i kredytu do przychodu. W przypadku korzystania z rabatu początkowy wpis w arkuszu jest taki sam, jak w przypadku debetu do rabatu i kredytu dla nierozliczonego rabatu. 
 
-Ten przykład pokazuje, jak wykorzystać nierozliczone przychody, aby całą kwotę kontraktu ująć w bilansie jako niezafakturowane przychody. Drugą stroną tego wpisu jest kompensata przychodów niefakturowanych. Kiedy wystawiasz klientowi fakturę, przychody nierozliczone i kompensata przychodów nierozliczonych zostają odwrócone. Ujęcie przychodów nastąpi albo w momencie wystawienia faktury, albo zgodnie z ustalonym harmonogramem odroczenia.
+Ten przykład pokazuje, jak wykorzystać nierozliczone przychody, aby całą kwotę kontraktu ująć w bilansie jako niezafakturowane przychody. Drugą stroną tego wpisu jest przychód lub odroczony przychód. Kiedy wystawiasz klientowi fakturę, przychody nierozliczone są odwrócone. Ujęcie przychodów nastąpi albo w momencie wystawienia faktury, albo zgodnie z ustalonym harmonogramem odroczenia.
 
 #### <a name="assumptions"></a>Założenia
 
@@ -151,47 +151,38 @@ Ten przykład pokazuje, jak wykorzystać nierozliczone przychody, aby całą kwo
 
     | Pozycja | Data początkowa | Data końcowa | Ilość | Częstotliwość rozliczania | Element odroczony | Nierozliczony przychód | Opis |
     |---|---|---|---|---|---|---|---|
-    | Licencja | 01 stycznia, CY | 31 grudnia CY+2 | 100,00 $ | Co rok | Nie | Tak | Każdego roku klient otrzyma fakturę na kwotę 100,00 dolarów. Suma 300,00 dolarów zostanie zaksięgowana z góry jako niefakturowany przychód w bilansie oraz jako przychód w rachunku zysków i strat. Każda faktura zmniejsza kwotę niezafakturowaną. |
-    | Konserwacja | 01 stycznia, CY | 31 grudnia CY+2 | 30,00 $ | Co rok | Tak | Tak | Każdego roku klient otrzyma fakturę na kwotę 30,00 dolarów. Suma 90,00 dolarów zostanie z góry zaksięgowana w bilansie jako nierozliczone przychody i przychody przyszłych okresów. Każda faktura zmniejsza kwotę niezafakturowaną. Odroczony przychód będzie rozpoznawany co miesiąc przez 36 miesięcy. |
+    | Licencja | 01 stycznia 2022 r. | 31 grudnia 2024 r. | 100,00 $ | Co rok | Nr | Tak | Każdego roku klient otrzyma fakturę na kwotę 100,00 dolarów. Suma 300,00 dolarów zostanie zaksięgowana z góry jako niefakturowany przychód w bilansie oraz jako przychód w rachunku zysków i strat. Każda faktura zmniejsza kwotę niezafakturowaną. |
+    | Konserwacja | 01 stycznia 2022 r. | 31 grudnia 2024 r. | 30,00 $ | Co rok | Tak | Tak | Każdego roku klient otrzyma fakturę na kwotę 30,00 dolarów. Suma 90,00 dolarów zostanie z góry zaksięgowana w bilansie jako nierozliczone przychody i przychody przyszłych okresów. Każda faktura zmniejsza kwotę niezafakturowaną. Odroczony przychód będzie rozpoznawany co miesiąc przez 36 miesięcy. |
 
 6. Na stronie **Wszystkie harmonogramy rozliczeń** użyj procesu **Utwórz wpis w arkuszu**, aby zaksięgować wartość kontraktu w bilansie jako nierozliczony przychód.
 
 Tworzone są dwa wpisy do dziennika, po jednym dla każdej linii w harmonogramie rozliczeń.
 
-| Konto nierozliczonego przychodu | Konto przeciwstawne nierozliczonych przychodów | Kwota debetu | Kwota kredytu |
-|---|---|---|---|
-| Konto nierozliczonego przychodu | | 300,00 $ | |
-| | Konto przeciwstawne nierozliczonych przychodów | | 300,00 $ |
+| Konto | Kwota debetu | Kwota kredytu |
+|---|---|---|
+| Konto nierozliczonego przychodu | 300,00 $ | |
+| Konto przychodów | | 300,00 $ |
 
-| Konto nierozliczonego przychodu | Odroczony przychód | Kwota debetu | Kwota kredytu |
-|---|---|---|---|
-| Konto nierozliczonego przychodu | | 90,00 $ | |
-| |Odroczone przychody z tytułu konserwacji | | 90,00 $ |
+| Konto | Kwota debetu | Kwota kredytu |
+|---|---|---|
+| Konto nierozliczonego przychodu | 90,00 $ | |
+| Odroczony przychód | | 90,00 $ |
 
-Pierwszy wpis w arkuszu jest księgowany na konto kompensaty przychodów niefakturowanych, a drugi na konto przychodów przyszłych okresów. Jeśli linia rozliczeniowa ma zarówno przychody niefakturowane, jak i przychody odroczone, używane jest konto przychodów odroczonych, a nie kompensata przychodów nierozliczonych. Umowa wymaga, by faktura dla klienta była tworzona na początku każdego roku. Aby utworzyć fakturę, użyj procesu **Generuj fakturę**. Podczas tworzenia faktury tworzone są następujące wpisy do dziennika.
+Umowa wymaga, by faktura dla klienta była tworzona na początku każdego roku. Aby utworzyć fakturę, użyj procesu **Generuj fakturę**. Po utworzeniu faktury, jest fakturowany następujący załącznik faktury.
 
-| Konto główne | Konto nierozliczonego przychodu | Kwota debetu | Kwota kredytu |
-|---|---|---|---|
-| Potrącenie dochodów nierozliczonych | | 100,00 $ | |
-| | Konto nierozliczonego przychodu | | 100,00 $ |
-| Rozrachunki z odbiorcami | | 100,00 $ | |
-| | Konto przychodów | | 100,00 $ |
+| Konto| Kwota debetu | Kwota kredytu |
+|---|---|---|
+| Konto nierozliczonego przychodu | | 130,00 USD |
+| Rozrachunki z odbiorcami | 130,00 USD | |
 
-| Konto główne | Konto nierozliczonego przychodu | Kwota debetu | Kwota kredytu |
-|---|---|---|---|
-| Rachunek dochodów z tytułu odroczonego utrzymania | | 30,00 $ | |
-| | Konto nierozliczonego przychodu | | 30,00 $ |
-| Rozrachunki z odbiorcami | | 30,00 $ | |
-| | Rachunek dochodów z tytułu odroczonego utrzymania | | 30,00 $ |
+Ten sam wpis w arkuszu zostanie utworzony na podstawie faktur, które zostaną zaksięgowane na początku kolejnych dwóch lat. W trakcie procesu **Generuj fakturę** konto Przychody nierozliczone jest zmniejszane każdego roku. Konto przeciwstawne nierozliczone przychody służy do równoważenia konta przychodów nierozliczonych, gdy są używane różne kursy wymiany. 
 
-Ten sam wpis w arkuszu zostanie utworzony na podstawie faktur, które zostaną zaksięgowane na początku kolejnych dwóch lat. Kwota netto na koncie przychodów przyszłych okresów wyniesie 0 (zero), ponieważ nie ma żadnych zaokrągleń ani różnic kursowych. Przychody przyszłych okresów muszą zostać wycofane dokładnie w takiej postaci, w jakiej zostały zaksięgowane podczas procesu **Utwórz wpis w arkuszu**. Ponieważ przychód jest nadal odroczony i zostanie rozpoznany później, uznanie konta rozliczeń międzyokresowych przychodów następuje ponownie.
+W ostatnim kroku co miesiąc tworzony jest wpis w arkuszu ujmujący przychody z tytułu odroczonego przychodu z opłaty eksploatacyjnej. Wpis w arkuszu można utworzyć za pomocą strony **Opracowanie rozpoznania**. Alternatywnie można ją utworzyć, wybierając opcję **Rozpoznaj** dla linii na stronach **Rozkład odroczeń**.
 
-W ostatnim kroku co miesiąc tworzony jest wpis w arkuszu ujmujący przychody z tytułu odroczonej opłaty eksploatacyjnej. Wpis w arkuszu można utworzyć za pomocą strony **Opracowanie rozpoznania**. Alternatywnie można ją utworzyć, wybierając opcję **Rozpoznaj** dla linii na stronach **Rozkład odroczeń**.
-
-| Konto odroczonego przychodu | Konto przychodów | Kwota debetu | Kwota kredytu |
-|---|---|---|---|
-| Przychody z tytułu odroczonego utrzymania | | 2,50 $ | |
-| | Przychody z tytułu utrzymania | | 2,50 $ |
+| Konto główne | Kwota debetu | Kwota kredytu |
+|---|---|---|
+| Odroczony przychód | 2,50 $ | |
+| Przychód | | 2,50 $ |
 
 Ten wpis w arkuszu zostanie utworzony za każdym razem, gdy proces uznawania zostanie uruchomiony dla tej pozycji rozliczeń międzyokresowych (w sumie 36 razy).
 
@@ -269,18 +260,18 @@ Ponieważ obie pozycje korzystają z niefakturowanych przychodów i alokacji prz
 
 Poniższa tabela przedstawia początkowy wpis w arkuszu dotyczący pozycji i faktury.
 
-| Konto nierozliczonego przychodu | Konto odroczonego przychodu | Kwota debetu | Kwota kredytu |
-|---|---|---|---|
-| **Pozycja 1000 wpis w arkuszu** | | | |
-| Obciążenie konta nierozliczonych przychodów (401250) | | 1465,26 $ | |
-| | Uznanie rachunku dochodów odroczonych (250600) | | 1465,26 $ |
-| **Pozycja 0021 wpis w arkuszu** | | | |
-| Obciążenie konta nierozliczonych przychodów (401250) | | 274,74 $ | |
-| | Uznanie rachunku dochodów odroczonych (250600) | | 274,74 $ |
-| **Faktura VAT** | | | |
-| | Uznanie rachunku dochodów niefakturowanych | | 1465,26 $ |
-| | Uznanie rachunku dochodów niefakturowanych | | 274,74 $ |
-| Obciążenie konta AR (130100) | | 1488,16 $ | |
+| Konto główne | Kwota debetu | Kwota kredytu |
+|---|---|---|
+| **Pozycja 1000 wpis w arkuszu** | | | 
+| Konto nierozliczonego przychodu (401250) | 1465,26 $ | |
+| Konto odroczonego przychodu (250600) | | 1465,26 $ |
+| **Pozycja 0021 wpis w arkuszu** | | | 
+| Konto nierozliczonego przychodu (401250) | 274,74 $ | |
+| Konto odroczonego przychodu (250600) | | 274,74 $ |
+| **Faktura VAT** | | |
+| Konto nierozliczonego przychodu | | 1465,26 $ |
+| Konto nierozliczonego przychodu | | 274,74 $ |
+| Konto rzeczywistości rozszerzonej (130100) | 1488,16 $ | |
 
 #### <a name="changes-to-the-billing-schedule-line-billing-detail-line-or-revenue-allocation"></a>Zmiany w linii harmonogramu rozliczeń, linii szczegółów rozliczeń lub alokacji dochodu
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: ff3944b987314a688a5829b05f8627479e3e79ed
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: fcd16d09b4293046c457b602857ef8950e8259c6
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9428408"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9644065"
 ---
 # <a name="the-asset-maintenance-scenario"></a>Scenariusz konserwacji składnika majątku
 
@@ -24,6 +24,12 @@ ms.locfileid: "9428408"
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 Scenariusz *konserwacji składnika majątku* umożliwia tworzenie rekordów liczników przy użyciu danych czujnika. Rekordy liczników śledzą użycie zasobu maszyny i są używane jako dane wejściowe do generowania harmonogramu konserwacji składnika majątku.
+
+## <a name="video-instructions"></a>Instrukcje wideo
+
+Poniższy film pokazuje, jak konfigurować i wypróbować scenariusz konserwowanego składnika majątku, używając standardowych [danych demonstracyjnych](../../fin-ops-core/fin-ops/get-started/demo-data.md). Pozostałe sekcje tego artykułu zawierają te same instrukcje w formacie tekstowym.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE58aRW]
 
 ## <a name="prepare-demo-data-for-the-asset-maintenance-scenario"></a>Przygotuj dane demonstracyjne do scenariuszy konserwacji składnika majątku
 

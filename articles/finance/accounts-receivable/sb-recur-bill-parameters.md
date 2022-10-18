@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: cb60253f3cbb8c991ef2e106abdb1c685bf22171
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 64d6e21c2d8c588a64f0f4cf8b7a0bafc853bcab
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903342"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9644011"
 ---
 # <a name="recurring-contract-billing-parameters"></a>Parametry rozliczania umowy cyklicznej
 
@@ -46,7 +46,8 @@ Użyj strony **Parametry cyklicznego rozliczania kontraktów**, aby ustawić dom
 8. W polu **Typ transakcji fakturowej** wybierz domyślny typ transakcji fakturowej dla nowych harmonogramów rozliczeń.
 9. Ustaw opcję **Zrównaj odroczenia z rozliczeniami** na **Tak**, aby wyrównać odpowiedni harmonogram odroczeń tak, by używał tych samych dat, co harmonogram rozliczeń. Ustaw na **Nie**, aby mieć różne daty.
 10. Jeśli korzystasz z funkcji podziału przychodu, ustaw opcję **Automatycznie twórz podział przychodu** na **Tak**, gdy pozycje są dodawane do harmonogramu rozliczeń. Pole wyboru **Podział przychodu** zostanie automatycznie zaznaczone w linii harmonogramu rozliczeń, jeśli dana pozycja jest ustawiona jako pozycja z podziałem przychodu. Ustaw tę opcję na **Nie**, jeśli chcesz ręcznie zaznaczyć pole wyboru **Podział dochodu**.
-11. Ustaw pola do tworzenia zamówień sprzedaży:
+11. Ustaw opcję **Podział odbiorcy** na wartość **Tak,** aby zezwolić na harmonogram rozliczania do rozliczania różnych odbiorców. Jeśli ustawiono wartość **Tak**, opcja **Podział odbiorcy** jest dostępna w nagłówku harmonogramu rozliczania i wierszu harmonogramu rozliczania. 
+12. Ustaw pola do tworzenia zamówień sprzedaży:
 
     - Faktury mogą być konsolidowane według okresu, klienta lub pozycji. Można ustawić dowolną kombinację wartości **Tak** i **Nie**. Faktury mogą być również dzielone według grup pozycji.
     - Dla faktur dostępne są następujące opcje księgowania:
@@ -92,6 +93,9 @@ Użyj strony **Parametry cyklicznego rozliczania kontraktów**, aby ustawić dom
     - **Wystaw kredyt** – Utwórz notę kredytową po zakończeniu harmonogramu rozliczeń lub wiersza harmonogramu rozliczeń.
     - **Korekta kredytu** – Umożliwia utworzenie korekty kredytu dla harmonogramu fakturowania po zakończeniu wiersza. Korekta kredytu pojawi się w przyszłym okresie fakturowania dla harmonogramu fakturowania. Korekta kredytu będzie aktualizować kwotę faktury za kolejny okres rozliczeniowy, aż do momentu, gdy kredyt zostanie zastosowany w harmonogramie rozliczeń.
     - **Bez kredytu** – Nie twórz korekty kredytowej ani noty kredytowej, gdy harmonogram rozliczeń lub wiersz harmonogramu rozliczeń zostanie zakończony. Ta opcja jest dostępna tylko wtedy, gdy do zakończenia harmonogramu rozliczeniowego użyto opcji **Bez korekty**.
+18. Gdy opcja **Jednorazowe można wypowiedzieć ze zwrotem** jest ustawiona na **Nie** i harmonogram rozliczania z częstotliwością rozliczania **Jednorazowo**, stan wiersza harmonogramu rozliczania zmienia się na **Przerwane** po zafakturowania harmonogramu rozliczania. Nie można przerwać tego harmonogramu rozliczania i nie można wystosować żadnego kredytu. Gdy opcja **Jednorazowe można wypowiedzieć ze zwrotem** jest ustawiona na **Tak** i wiersz harmonogramu rozliczania z częstotliwością rozliczania **Jednorazowo** będzie mieć stan **Aktywne** po zafakturowania harmonogramu rozliczania. Wiersz harmonogramu rozliczania można przerwać i przetworzyć zwrot. 
+19. W opcji **Dzienne naliczanie proporcjonalne** domyślnie zostanie ustawiona strona przerwania masowego oraz nagłówki harmonogramu rozliczania i okna dialogowe przerwania wiersza. Można ją zmienić podczas procesu przerwania. Jeśli zostanie ustawiona wartość **Tak**, kwota zwrotu będzie obliczana przy użyciu stawki dziennej. Jeśli zostanie ustawiona wartość **Nie**, kredyt zostanie dokonany na podstawie daty przerwania i częstotliwości rozliczania. Jeśli na przykład przy użyciu funkcji Częstotliwość miesięczna i kwota rozliczenia była 100 USD na miesiąc, kwota po stronie kredytowej jest zwiększana o 100 USD. Jeśli częstotliwość rozliczania ma wartość Jednokrotnie, kwota kredytu to 0,00 USD. Aby uzyskać zwrot dla częstotliwości rozliczania jednorazowego, musisz ustawić opcję Dzienne naliczanie proporcjonalne na wartość Tak. 
+20. Ustaw wartość **Tak** dla opcji **Utwórz odroczenie dla kredytu**, aby utworzyć nowy harmonogram odroczeń w przypadku kredytowania istniejącego harmonogramu odroczeń. Zostaw ustawioną opcję **Nie,** aby utworzyć kredyt w istniejącym harmonogramie odroczeń.
 
 ## <a name="sequence-number-tab"></a>Zakładka numeru sekwencji
 

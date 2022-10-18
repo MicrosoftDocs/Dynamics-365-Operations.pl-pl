@@ -2,7 +2,7 @@
 title: Konfigurowanie reguł i opcji uprawnień
 description: W tym artykule opisano sposób określenia reguł i opcji dotyczących uprawnień w obszarze roboczym Zarządzanie świadczeniami w programie Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/24/2021
+ms.date: 09/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5540a2c39b3f9f53600e5edd5c63c99cec1fb000
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 916a9955327aef67ac768d4505bdb343862058a1
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9337022"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9644092"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Konfigurowanie reguł i opcji uprawnień 
 
@@ -175,6 +175,7 @@ Pakiety to zestawy powiązanych planów świadczeń. Pakietów świadczeń możn
    | **Pakiet** | Unikatowy identyfikator pakietu. |
    | **Opis** | Opis pakietu. |
    | **Główna** | Wskazuje, czy jeden z planów w pakiecie musi być oznaczony jako plan główny. Aby administrator świadczeń mógł potwierdzić wybór świadczeń przez pracownika, należy w czasie otwartej rejestracji wybrać plan główny jako część pakietu. |
+   | **Wymagana**| Wskazuje, że plan musi zostać wybrany, aby można było wyewidencjonować dowolny inny plan w pakiecie. Można określić więcej niż jeden plan jako **Wymagany**. W takim przypadku wszystkie plany oznaczone jako **Wymagane** muszą zostać wybrane, aby wyewidencjonować jakiekolwiek plany z pakietu.|
    | **Data i godzina wejścia w życie** | Data i godzina aktywacji pakietu. |
    | **Obowiązuje do** | Data wygaśnięcia pakietu. Domyślnie to 31.12.2154, czyli nigdy. |
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a03f8fd0fa05a1400c69a2da8867dee135ad06a1
-ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
+ms.openlocfilehash: dfd06c30ae09a175862810a0c85399358a65fdb0
+ms.sourcegitcommit: 43a0fb019bc67c00c39c2778343ba89924c3322c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "9357612"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9671466"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Omówienie zadań importowania i eksportowania danych
 
@@ -65,9 +65,12 @@ Do zadania importu lub eksportu można dodać określone jednostki lub wybrać s
 ### <a name="set-the-data-format-for-the-job"></a>Ustawianie formatu danych zadania
 Podczas wybieranie jednostki należy wybrać format eksportowanych lub importowanych danych. Formaty można określić, używając kafelka **Ustawienia źródeł danych**. Format danych źródłowych jest kombinacją elementów **Typ**, **Format pliku**, **Separator wiersza** i **Separator kolumny**. Istnieją również inne atrybuty, ale to są główne, które należy znać. Poniższa tabela zawiera listę prawidłowych kombinacji.
 
+> [!NOTE]
+> Format pliku programu Excel nie jest obecnie dostępny w obszarze roboczym Zarządzanie danymi dla amerykańskiej chmury Government Community Cloud (GCC).
+
 | Format pliku            | Separator wiersza/kolumny                       | Styl XML                 |
 |------------------------|--------------------------------------------|---------------------------|
-| Excel                  | Excel                                      | \-Nie dotyczy-                     |
+| Plik programu Excel                  | Plik programu Excel                                      | \-Nie dotyczy-                     |
 | Plik XML                    | \-Nie dotyczy-                                      | Element XML Atrybut XML |
 | Ograniczone, stała szerokość | Przecinek, średnik, tabulator, pionowa kreska, dwukropek | \-Nie dotyczy-                     |
 
