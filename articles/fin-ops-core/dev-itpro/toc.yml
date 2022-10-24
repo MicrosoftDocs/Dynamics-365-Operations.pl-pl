@@ -14,6 +14,8 @@
               items:
                 - name: Nowości i zmiany w aktualizacjach platformy — strona główna
                   href: get-started/whats-new-home-page.md
+                - name: Aktualizacje platformy dla wersji 10.0.31 (luty 2023)
+                  href: get-started/whats-new-platform-updates-10-0-31.md
                 - name: Aktualizacja platformy 10.0.30 (listopad 2022)
                   href: get-started/whats-new-platform-updates-10-0-30.md
                 - name: Aktualizacja platformy 10.0.29 (październik 2022)
@@ -182,6 +184,8 @@
                   href: data-entities/configuration-data-templates.md
                 - name: Śledzenie zmian w jednostce
                   href: data-entities/entity-change-track.md
+                - name: Zezwalanie na śledzenie zmian wersji wiersza dla jednostki
+                  href: data-entities/rowversion-change-track.md
                 - name: Znajdowanie informacji dotyczących standardowych jednostek danych
                   href: data-entities/data-entities-report.md
                 - name: Szablony danych z wieloma arkuszami
@@ -1228,7 +1232,9 @@
                   href: power-platform/admin-reference.md
                 - name: Włączanie jednostek wirtualnych usługi Dataverse
                   href: power-platform/enable-virtual-entities.md
-                - name: Portale Power Apps z aplikacjami finansowymi i operacyjnymi
+                - name: Śledzenie zmian dla tabel wirtualnych w usłudze Dataverse
+                  href: power-platform/track-changes-fin-ops-virtual-table.md
+                - name: Portale usługi Power Apps z aplikacjami finansowymi i operacyjnymi
                   href: power-platform/power-portal-reference.md
                 - name: Finansowe i operacyjne jednostki wirtualne — często zadawane pytania
                   href: power-platform/faq.md

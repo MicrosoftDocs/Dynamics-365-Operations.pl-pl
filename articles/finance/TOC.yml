@@ -12,6 +12,8 @@
               items:
                 - name: Nowości i zmiany w rozwiązaniu Finance — strona główna
                   href: get-started/whats-new-home-page.md
+                - name: Rozwiązanie Finance 10.0.31 (styczeń)
+                  href: get-started/whats-new-changed-10-0-31.md
                 - name: Rozwiązanie Finance 10.0.30 (listopad)
                   href: get-started/whats-new-changed-10-0-30.md
                 - name: Rozwiązanie Finance 10.0.29 (październik)
@@ -232,6 +234,26 @@
                   href: accounts-payable/accounts-payable-invoice-matching.md
                 - name: Konfigurowanie weryfikacji uzgadniania faktur w module Rozrachunki z dostawcami
                   href: accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
+            - name: Rozwiązanie Invoice Capture
+              items:
+                - name: Omówienie rozwiązania Invoice Capture
+                  href: accounts-payable/invoice-capture-overview.md
+                - name: Instalacja rozwiązania Invoice Capture
+                  href: accounts-payable/install-invoice-capture.md
+                - name: Konfiguracja rozwiązania Invoice Capture
+                  href: accounts-payable/config-invoice-capture.md
+                - name: Grupy konfiguracji rozwiązania Invoice Capture
+                  href: accounts-payable/invoice-capture-config-group.md
+                - name: Reguły mapowania rozwiązania Invoice Capture
+                  href: accounts-payable/invoice-capture-mapping-rules.md
+                - name: Obszar roboczy rozwiązania Invoice Capture
+                  href: accounts-payable/invoice-capture-workspace.md
+                - name: Ustawienia zaawansowane rozwiązania Invoice Capture
+                  href: accounts-payable/invoice-capture-advanced-settings.md
+                - name: Pulpit nawigacyjny rozwiązania Invoice Capture
+                  href: accounts-payable/invoice-capture-dashboard.md
+                - name: Otrzymane pliki rozwiązania Invoice Capture
+                  href: accounts-payable/invoice-capture-rec-files.md
             - name: Automatyzacja faktur od dostawców
               items:
                 - name: Omówienie zautomatyzowanych procesów fakturowania od dostawców
@@ -422,9 +444,9 @@
               items:
                 - name: Omówienie rozliczania subskrypcji
                   href: accounts-receivable/subscription-billing-summary.md
-                - name: Rozliczanie umowy cyklicznej
+                - name: Rozliczanie kontraktu cyklicznego
                   items:
-                    - name: Konfigurowanie rozliczania umowy cyklicznej
+                    - name: Konfigurowanie rozliczania kontraktu cyklicznego
                       href: accounts-receivable/sb-recur-bill-parameters.md
                     - name: Tworzenie harmonogramów rozliczania
                       href: accounts-receivable/sb-billing-schedules.md
