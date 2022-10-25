@@ -2,20 +2,20 @@
 title: Proces wydania i historia wydań optymalizacji planowania
 description: Ten artykuł zawiera informacje o procesie wydania i historii wydań dla optymalizacji planowania.
 author: t-benebo
-ms.date: 09/21/2021
+ms.date: 10/14/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-28
-ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: da97490cb065365a0502aa82c63205d5c34da9eb
-ms.sourcegitcommit: 15b331f39d6e3ef811b9c2bf055a4f5b4572bae2
+ms.dyn365.ops.version: 10.0.31
+ms.openlocfilehash: e2437214b4a2a850f121bb86272bf7dc3d313507
+ms.sourcegitcommit: b3579ac62e1ea15664a114abcc2409cad76d4f19
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2022
-ms.locfileid: "9591885"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "9682568"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>Proces wydania i historia wydań optymalizacji planowania
 
@@ -31,22 +31,21 @@ Podczas gdy optymalizacja planowania jest aktualizowana, planowanie główne mo�
 
 Ponieważ powiadomienia nie są wyświetlane, gdy optymalizacja planowania jest aktualizowana w środowisku, można przejrzeć informacje o wersji w poniższej tabeli, aby określić, kiedy zmiany zostały wydane i jakie funkcje wprowadziły. W tej tabeli przedstawiono zmiany, które zostały wydane dla optymalizacji planowania, podano, czy te zmiany są skojarzone z funkcją z zarządzania funkcjami oraz podano datę wydania.
 
-<!-- KFM: Add this? [Use batch disposition codes to mark batches as available or unavailable](../../inventory/batch-disposition-codes.md) --> 
-
 | Zmiany | Szczegóły zarządzania funkcjami | Daty zwolnienia |
 |---|---|---|
-| <p> Obsługa planowania zasobów o ograniczonej pojemności. <p>Ogólne usprawnienia wydajności, jakości i stabilności. | Nie jest wymagane zarządzanie funkcjami. | 19-23 września 2022 |
-| <p>Ogólne usprawnienia wydajności, jakości i stabilności. | Nie jest wymagane zarządzanie funkcjami. | 29 sierpnia — 3 września 2022 |
-| <p>Ogólne usprawnienia wydajności, jakości i stabilności.<p>[Obsługa kalendarza scentralizowanego optymalizacji planowania](../supply-chain-calendars-master-planning.md)<p>[Optymalizacja planowania – propozycje optymalizacji istniejących dostaw](../action-messages.md)<p>[Wsparcie optymalizacji planowania dla podwykonawstwa](../../production-control/manage-subcontract-work-production.md) | Nie jest wymagane zarządzanie funkcjami. | 7-11 marca 2022 r. |
-| <p>Dodano obsługę priorytetów planowania dla zleceń produkcyjnych. | Dostępne od wersji 10.0.25 jako część funkcji o nazwie *Wsparcie MRP oparte na priorytetach dla optymalizacji planowania*. | 12–18 listopada 2021 r. |
-| <p>Ogólne usprawnienia wydajności, jakości i stabilności. | Nie jest wymagane zarządzanie funkcjami. | 12–18 listopada 2021 r. |
-| <p>Dodano obsługę formuł obliczania czasu procesu, marszrutę produkcji z nakładaniem i numer operacji produkcyjnej w transakcjach zapotrzebowania.</p><p>Rozszerzone komunikaty o błędach w planowaniu produkcji związane z limitem czasu, nie można odnaleźć zdolności produkcyjnych i marszrutą cykliczną.</p><p>Poprawiona spójność podczas obliczania dat przyjęcia i wydania zarówno dla zamówień planowanych, jak i zamówień potwierdzonych.</p><p>Ogólne usprawnienia wydajności, jakości i stabilności. | Nazwa funkcji: *Planowanie nieskończonej pojemności dla optymalizacji planowania* | 22-27 października 2021 |
-| <p>Dodano obsługę uwzględnienia procentu odpadków w obliczeniach czasu przetwarzania.</p><p>Dodano obsługę numeru operacji i użycia materiałów podczas planowania. | Nazwa funkcji: *Planowanie nieskończonej pojemności dla optymalizacji planowania* | 5-7 października 2021 |
-| <p>Dodano obsługę typów zadań marszruty produkcji: **Kolejka przed**, **Kolejka po** i **Czas transportu**.</p><p>Ogólne usprawnienia wydajności, jakości i stabilności. | Nazwa funkcji: *Planowanie nieskończonej pojemności dla optymalizacji planowania* | 25-30 września 2021 |
-| <p>Dodano obsługę planów główne z **metodą planowania** ustawioną na *planowanie operacji*.</p><p>Na stronie **Grupy marszrut** wartości pól wyboru **Aktywacja**, **Czas pracy** i **Zdolności produkcyjne** są zwracane w przypadku wierszy o typie **Marszruta/zadanie** o typie *Konfiguracja* lub *Proces*. </p><p>Ogólne usprawnienia wydajności, jakości i stabilności. | <p>Planowanie operacji jest dostępne w zarządzaniu funkcjami od wersji 10.0.20.</p><p>Nazwa funkcji: *Planowanie nieskończonej pojemności dla optymalizacji planowania*</p>  | 9–17 września 2021 r. |
-| Ogólne usprawnienia wydajności, jakości i stabilności. | Nie jest wymagane zarządzanie funkcjami. | 25–30 sierpnia 2021 r. |
-| <p>Dodano pole **Czas realizacji** do zamówień planowanych.</p><p>Ogólne usprawnienia wydajności, jakości i stabilności.</p> | Nie jest wymagane zarządzanie funkcjami. | 12–17 sierpnia 2021 r. |
-| <p>Dodano wymagania dotyczące typu zasobu dla planowania nieskończonej pojemności.</p><p>Zwiększono wydajność zasobów i wydajność kalendarza w celu planowania nieskończonej pojemności.</p><p>Aby uzyskać więcej informacji, zobacz [Planowanie z nieskończoną pojemnością](infinite-capacity-planning.md). | <p>Dostępne w zarządzaniu funkcjami w wersji 10.0.20.</p><p>Nazwa funkcji: *Planowanie nieskończonej pojemności dla optymalizacji planowania*</p> | 6–12 lipca 2021 r. |
-| Ogólna poprawa jakości. | Nie jest wymagane zarządzanie funkcjami. | 6–12 lipca 2021 r. |
+| <p>[Kody dyspozycji partii](../../inventory/batch-disposition-codes.md)</p><p>Uwzględnianie parametrów dostępnych zapasów i transakcji magazynowych w planach głównych</p><p>Ogólne usprawnienia wydajności, jakości i stabilności</p> | Zarządzanie funkcjami nie jest wymagane | 10-14 października 2022 |
+| <p>[Planowanie zasobów z ograniczonymi zdolnościami produkcyjnymi](finite-capacity.md)</p><p>Ogólne usprawnienia wydajności, jakości i stabilności</p> | Zarządzanie funkcjami nie jest wymagane | 19-23 września 2022 |
+| Ogólne usprawnienia wydajności, jakości i stabilności | Zarządzanie funkcjami nie jest wymagane | 29 sierpnia — 3 września 2022 |
+| <p>[Obsługa kalendarza scentralizowanego](../supply-chain-calendars-master-planning.md)</p><p>[Propozycje optymalizacji istniejących dostaw](../action-messages.md)</p><p>[Pomoc techniczna dotycząca podwykonawstwa](../../production-control/manage-subcontract-work-production.md)</p><p>Ogólne usprawnienia wydajności, jakości i stabilności</p> | Zarządzanie funkcjami nie jest wymagane | 7-11 marca 2022 r. |
+| Pomoc techniczna dotycząca priorytetów planowania dla zleceń produkcyjnych | Dostępne od wersji 10.0.25 jako część funkcji o nazwie *Wsparcie MRP oparte na priorytetach dla optymalizacji planowania*. | 12–18 listopada 2021 r. |
+| Ogólne usprawnienia wydajności, jakości i stabilności | Zarządzanie funkcjami nie jest wymagane | 12–18 listopada 2021 r. |
+| <p>Obsługa formuł obliczania czasu procesu, marszrutę produkcji z nakładaniem i numer operacji produkcyjnej w transakcjach zapotrzebowania</p><p>Rozszerzone komunikaty o błędach w planowaniu produkcji związane z limitem czasu, nie można odnaleźć zdolności produkcyjnych i marszrutą cykliczną</p><p>Poprawiona spójność podczas obliczania dat przyjęcia i wydania zarówno dla zamówień planowanych, jak i zamówień potwierdzonych</p><p>Ogólne usprawnienia wydajności, jakości i stabilności</p> | Nazwa funkcji: *Planowanie nieskończonej pojemności dla optymalizacji planowania* | 22-27 października 2021 |
+| <p>Obsługa uwzględniania procentu odpadków w obliczeniach czasu przetwarzania</p><p>Obsługa numeru operacji i użycia materiałów podczas planowania</p> | Nazwa funkcji: *Planowanie nieskończonej pojemności dla optymalizacji planowania* | 5-7 października 2021 |
+| <p>Obsługa typów zadań marszruty produkcji: **Kolejka przed**, **Kolejka po** i **Czas transportu**</p><p>Ogólne usprawnienia wydajności, jakości i stabilności</p> | Nazwa funkcji: *Planowanie nieskończonej pojemności dla optymalizacji planowania* | 25-30 września 2021 |
+| <p>Obsługa planów głównych z **metodą planowania** ustawioną na *Planowanie operacji*</p><p>Na stronie **Grupy marszrut** wartości pól wyboru **Aktywacja**, **Czas pracy** i **Zdolności produkcyjne** są zwracane w przypadku wierszy o typie **Marszruta/zadanie** o typie *Konfiguracja* lub *Proces* </p><p>Ogólne usprawnienia wydajności, jakości i stabilności</p> | <p>Planowanie operacji jest dostępne w zarządzaniu funkcjami od wersji 10.0.20</p><p>Nazwa funkcji: *Planowanie nieskończonej pojemności dla optymalizacji planowania*</p> | 9–17 września 2021 r. |
+| Ogólne usprawnienia wydajności, jakości i stabilności | Zarządzanie funkcjami nie jest wymagane | 25–30 sierpnia 2021 r. |
+| <p>Dodano pole **Czas realizacji** do zamówień planowanych.</p><p>Ogólne usprawnienia wydajności, jakości i stabilności.</p> | Zarządzanie funkcjami nie jest wymagane | 12–17 sierpnia 2021 r. |
+| <p>Dodano wymagania dotyczące typu zasobu dla planowania nieograniczonych zdolności produkcyjnych</p><p>Zwiększono wydajność zasobów i wydajność kalendarza w celu planowania nieograniczonych zdolności produkcyjnych</p><p>Aby uzyskać więcej informacji, zobacz [Planowanie z nieskończoną zdolnością produkcyjną](infinite-capacity-planning.md)</p> | <p>Dostępne w zarządzaniu funkcjami w wersji 10.0.20</p><p>Nazwa funkcji: *Planowanie nieskończonej pojemności dla optymalizacji planowania*</p> | 6–12 lipca 2021 r. |
+| Ogólna poprawa jakości | Zarządzanie funkcjami nie jest wymagane | 6–12 lipca 2021 r. |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

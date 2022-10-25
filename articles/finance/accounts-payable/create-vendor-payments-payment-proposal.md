@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 64290ebd47295bea5bc4bf843f7a9d9528375ce7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b868db915385a8433845e810cf169f1bf1686e3d
+ms.sourcegitcommit: dca54dd3afc7c94795d89c63050b105df2c48e3f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8845382"
+ms.lasthandoff: 10/15/2022
+ms.locfileid: "9682886"
 ---
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Tworzenie płatności dla dostawców za pomocą propozycji płatności
 
@@ -111,7 +111,7 @@ Funkcja kontroli wymiarów umożliwia kontrolowanie grupowania wierszy generowan
 -   Pole **Kontrola wymiarów** jest uaktywnione bez dalszego definiowania wymiarów. Propozycja płatności zostanie utworzona bez brania wymiarów pod uwagę. Utworzona transakcja nie dziedziczy żadnych wymiarów z zastosowanego zapisu.
 -   Pole **Kontrola wymiarów** jest uaktywnione i włączono dodatkowe wymiary. Teraz można zdefiniować sposób kopiowania wymiarów do arkusza. Na przykład: • Zaznacz pole wyboru **BusinessUnit**, aby utworzyć propozycję płatności według jednostki biznesowej dla metody płatności, • Zaznacz pole wyboru **CostCenter**, aby utworzyć propozycję płatności według centrum kosztu do metody płatności
 
-> [[!NOTE]
+>[!NOTE]
 > W przypadku wybrania kilku wymiarów w trzeciej opcji propozycja płatności zostanie utworzona z uwzględnieniem połączenia tych wymiarów.
 
 #### <a name="bank-account-selection"></a>Wybór konta bankowego

@@ -2,19 +2,19 @@
 title: Asynchroniczny tryb tworzenia klientów
 description: W tym artykule opisano asynchroniczny tryb tworzenia klientów w aplikacji Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 08/04/2022
+ms.date: 10/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-12-17
-ms.openlocfilehash: 95102936871e15f8e525abca736fa75927569b34
-ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
+ms.openlocfilehash: b2926339021991f87dd3eadef94da3b500c954cf
+ms.sourcegitcommit: 40c80a617b903c2b26e44b41147e0021c5cb680d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9473714"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690297"
 ---
 # <a name="asynchronous-customer-creation-mode"></a>Asynchroniczny tryb tworzenia klientów
 
@@ -46,6 +46,7 @@ Aby pomóc organizacjom korzystać z trybu tworzenia klientów asynchronicznych 
 | Włącz parzystość między tworzeniem synchronicznym i asynchronicznym odbiorcy. | 10.0.24 i nowsze wersje | <p>Włączanie funkcji: **Włącz rozszerzone tworzenie odbiorcy asynchronicznego.**</p><p>Szczegóły funkcji: możliwość przechwytywania dodatkowych informacji, takich jak tytuł, przynależności od klienta domyślnego i dodatkowe informacje kontaktowe (numer telefonu i adres e-mail), podczas gdy tworzysz klientów asynchronicznie</p> |
 | Komunikaty o błędach wyświetlane w interfejsie użytkownika | 10.0.28 i nowsze wersje | Te ulepszenia pomagają ulepszyć przyjazne dla użytkownika komunikaty o błędach, jeśli użytkownik nie może natychmiast edytować informacji podczas trwania synchronizacji. Ulepszenia te można włączyć za pomocą funkcji **Zezwalaj na niemodyfikowalne niektóre elementy interfejsu użytkownika** przez **Ustawienia witryny \> Rozszerzenia** w Konstruktorze witryn Commerce. |
 | Możliwość asynchronicznej edycji informacji o odbiorcy | 10.0.29 i nowsze wersje | <p>Włączanie funkcji: **Włącz edytowanie odbiorców w trybie asynchronicznym**</p><p>Szczegóły funkcji: możliwość asynchronicznej edycji danych odbiorcy</p><p>Aby uzyskać odpowiedzi na typowe pytania dotyczące problemów związanych z asynchronicznym edytowaniem informacji o odbiorcy, zobacz [Często zadawane pytania dotyczące trybu asynchronicznego tworzenia odbiorcy](async-customer-mode-faq.md).</p> |
+| Możliwość prowadzenia inspekcji synchronizacji operacji zarządzania klientami | 10.0.31 i nowsze wersje | To udoskonalenie umożliwia użytkownikom inspekcję synchronizacji operacji zarządzania klientami w programie Commerce Headquarters. Ponadto umożliwia ono użytkownikom wprowadzanie zmian i synchronizowanie danych w razie potrzeby. |
 
 ### <a name="feature-switch-hierarchy"></a>Hierarchia przełącznika funkcji
 

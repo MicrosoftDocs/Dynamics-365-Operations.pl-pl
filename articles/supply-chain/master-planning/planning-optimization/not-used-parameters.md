@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-29
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 6c7469692aac24a5ae554973325a128c787363ba
-ms.sourcegitcommit: 20ce54cb40290dd116ab8b157c0a02d6757c13f5
+ms.openlocfilehash: db8a8e929bf75c4d1dac0c1b0a7cbc848ff291a9
+ms.sourcegitcommit: b3579ac62e1ea15664a114abcc2409cad76d4f19
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "9542301"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "9682676"
 ---
 # <a name="parameters-not-used-by-planning-optimization"></a>Parametry nie są używane przez optymalizację planowania
 
@@ -111,10 +111,8 @@ Optymalizacja planowania nie korzysta z następujących parametrów ani opcji na
 
 - Skrócona karta **Ogólne**:
 
-  - **Dołączanie dostępnych zapasów** – Oczekujące wsparcie *zużycie dostępnych zapasów*.
   - **Nadpisanie dostępnych zapasów** – Oczekujące wsparcie *zużycie dostępnych zapasów*.
   - **Zużycie dostępnych zapasów** – Oczekujące wsparcie *zużycie dostępnych zapasów*.
-  - **Dołączanie transakcji zapasów** – Oczekujące wsparcie *zużycie dostępnych zapasów*.
   - **Uwzględnij oferty sprzedaży** – oczekiwanie na obsługę *ofert sprzedaży*.
   - **Uwzględnij zapytania ofertowe** — Oczekujące *Prośba o wycenę*.
   - **Użyj dat okresu trwałości** – Oczekiwanie na obsługę *okresów trwałości*.
@@ -190,4 +188,3 @@ Optymalizacja planowania nie korzysta z następujących parametrów ani opcji na
 
   - **Do dyspozycji** — oczekiwana obsługa *Kody dyspozycji partii*.
  
-<!-- KFM: Now available? [Use batch disposition codes to mark batches as available or unavailable](../../inventory/batch-disposition-codes.md) --> 

@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.form: LedgerTransVoucher, LedgerJournalTable
-ms.openlocfilehash: 7e3a22f43bcc312fe60b77db2fc3bc94d15950c5
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 8912409ec0d2016ea4af12843319febda98663c5
+ms.sourcegitcommit: e700528679a821237e644b3e21058c36ae1323c3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9284860"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "9680392"
 ---
 # <a name="reverse-journal-posting"></a>Wycofywanie księgowania arkusza
 
@@ -37,7 +37,7 @@ Aby można było skorzystać z dowolnej z funkcji opisanych w tym artykule, nale
 Wiersze arkusza można odwracać pojedynczo. W przypadku księgowania wstecznego arkusza można również wycofywać cały arkusz finansowy. Wycofywanie arkusza: 
 
 - Przefiltruj według zaksięgowanych arkuszy i otwórz widok **Wiersze** w arkuszu.
-- Wybierz menu **Wycofaj** w górnej części strony.
+- Wybierz menu **Wycofaj cały arkusz** w górnej części strony.
 - Zostanie wyświetlona łączna liczba załączników i wierszy załączników oraz łączna kwota wycofywanych wierszy.
 - Wybierz opcję **Tak**, aby zastosować istniejące daty transakcji lub **Nie**, aby wprowadzić nową datę. W niektórych przypadkach okres oryginalnej transakcji może zostać zamknięty i konieczne jest wprowadzenie nowej daty transakcji dla wycofania.
 - Jeśli wybrano opcję **Nie**, wprowadź datę transakcji dla wycofania. 

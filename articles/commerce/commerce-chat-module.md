@@ -2,19 +2,19 @@
 title: Moduł Czat rozwiązania Commerce z Obsługą wielokanałową dla Customer Service
 description: W tym artykule opisano moduł czatu rozwiązania Commerce z Obsługą wielokanałową dla Customer Service w Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 08/23/2022
+ms.date: 10/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2022-07-20
-ms.openlocfilehash: b8eaed3eb015e96b1db6fa2297c341ea9d3ff8ad
-ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
+ms.openlocfilehash: 99e8b9d66a04390ab70fd1deff9f95fe28bdfae3
+ms.sourcegitcommit: 40c80a617b903c2b26e44b41147e0021c5cb680d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9473817"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690324"
 ---
 # <a name="commerce-chat-with-omnichannel-for-customer-service-module"></a>Moduł Czat rozwiązania Commerce z Obsługą wielokanałową dla Customer Service
 
@@ -82,6 +82,9 @@ Aby dodać moduł czatu do fragmentu nagłówka witryny w narzędziu do tworzeni
 1. W oknie dialogowym **Wybieranie moduły** wybierz utworzony wcześniej fragment czatu, a następnie kliknij przycisk **OK**.
 1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować fragment, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
 
+> [!NOTE]
+> Aby uzyskać pełną listę parametrów konfiguracji, zobacz [Parametry czatu proaktywnego w module czatu rozwiązania Commerce](chat-proactive-chat-parameters.md).
+
 ## <a name="add-commerce-headquarters-as-an-application-tab-for-omnichannel-for-customer-service"></a>Dodawanie centrali Commerce headquarters jako karty aplikacji dla Obsługi wielokanałowej dla Customer Service
 
 Możesz dodać kartę aplikacji dla centrali Commerce headquarters w Obsłudze wielokanałowej dla Customer Service. Następnie prawdziwi przedstawiciele mogą używać interfejsu użytkownika dla interfejsu agenta Obsługi wielokanałowej dla Customer Service, aby w prosty sposób uzyskać dostęp do modułu Dynamics 365 Commerce Customer Service, który wraz z informacjami o zamówieniach sprzedaży zawiera informacje kontekstowe dotyczące odbiorcy. Ponadto agenci działu obsługi klienta mogą składać nowe zamówienia, inicjować zwroty i weryfikować informacje o stanie zamówienia.
@@ -115,6 +118,9 @@ Aby włączyć nową kartę aplikacji dla agentów klienta w systemie Dynamics 3
 1. Otwórz strumień pracy utworzony dla agentów, a następnie w obszarze **Ustawienia zaawansowane** wybierz opcję **Sesje domyślne**.
 1. W obszarze **Karty aplikacji** wybierz kartę **Dodaj istniejącą kartę aplikacji**, a następnie dodaj nową kartę aplikacji utworzoną wcześniej. Dzięki temu będzie wyświetlana karta aplikacji, która ładuje centralę Commerce headquarters w module iFrame, gdy agent otrzyma przychodzący czat z witryny sieci web handlu elektronicznego.
 
+> [!NOTE]
+> Nie można zmodyfikować domyślnego szablonu sesji czatu w obrębie strumienia pracy. Z tego względu możesz zdecydować się na utworzenie nowego szablonu lub zduplikowanie istniejącego szablonu w celu jego zaktualizowania. Aby uzyskać więcej informacji, zobacz [Kojarzenie szablonów ze strumieniem pracy](/dynamics365/app-profile-manager/associate-templates).
+
 ## <a name="add-context-variables-in-dynamics-365-omnichannel-for-customer-service"></a>Dodawanie zmiennych kontekstowych w usłudze Dynamics 365 Obsługa wielokanałowa dla Customer Service
 
 Aby dodać zmienne kontekstowe w usłudze Dynamics 365 Obsługa wielokanałowa dla Customer Service, wykonaj te kroki.
@@ -128,3 +134,11 @@ Aby dodać zmienne kontekstowe w usłudze Dynamics 365 Obsługa wielokanałowa d
 
 > [!NOTE]
 > Aby odczytać adresy e-mail i nazwy zalogowanych użytkowników z kanału handlu elektronicznego, oprócz zmiennej kontekstowej **AccountNumber** można dodać jako zmienne kontekstowe **E-mail** i **Nazwa** jako typ **Tekst**.
+
+## <a name="additional-resources"></a>Dodatkowe zasoby
+
+[Omówienie funkcji czatu rozwiązania Commerce](commerce-chat-overview.md)
+
+[Czat rozwiązania Commerce z modułem Power Virtual Agents](chat-module-pva.md)
+
+[Parametry czatu proaktywnego w module czatu rozwiązania Commerce](chat-proactive-chat-parameters.md)

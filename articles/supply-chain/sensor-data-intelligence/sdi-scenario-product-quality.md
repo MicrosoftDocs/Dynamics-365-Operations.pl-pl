@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: 8c4808ea3a0389c2a8699f0e11ea154705a6916d
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: c0f1c57251234921779f67faf61d47cdde119e64
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9428425"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690056"
 ---
 # <a name="the-product-quality-scenario"></a>Scenariusz jakości produktu
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 W scenariuszu *jakości produktu* ustawiono czujnik do mierzenia jakości partii produktów na hali sklepowej. Jeśli miara przekracza zdefiniowany próg dla produktu, na pulpicie nawigacyjnym kierownika jest wyświetlane powiadomienie. Na przykład czujnik miedzy wilgotność produktu żywnościowego wychodzącego z taśmy produkcyjnej. Jeśli miara jest poza dozwoloną wartością minimalną lub maksymalną dla wilgotności produktu, generowane jest powiadomienie.
 

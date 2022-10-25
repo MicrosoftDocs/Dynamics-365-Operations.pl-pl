@@ -10,18 +10,33 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a0fa081b0110682af1fcda50b0c912dc5d03fa73
-ms.sourcegitcommit: 29af4c9d9968bbfa4c19fee9de34fed309f6d38b
+ms.openlocfilehash: 645590bbf00f49bb0f3511e7fa02c8f6add661fc
+ms.sourcegitcommit: b3579ac62e1ea15664a114abcc2409cad76d4f19
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "9388456"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "9682622"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Nowości lub zmiany w aplikacji mobilnej Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 W tym artykule wymieniono nowe funkcje, poprawki, ulepszenia i znane problemy dla każdej wydanej wersji aplikacji mobilnej Warehouse Management w Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20340"></a>Wersja 2.0.34.0
+
+Ta wersja wprowadza następujące nowe funkcje, poprawki i ulepszenia:
+- Poprawiona stabilność.
+- Zwiększona wydajność.
+- Poprawiono układ ekranu, aby udostępnić więcej miejsca na karcie szczegółów.
+- Dodano funkcję wyszukiwania do strony **Lista pracy**. Pracownicy mogą teraz zeskanować lub wpisać tekst, aby wyszukać go we wszystkich polach i tytułach na stronie.
+- Lista dostępnych połączeń jest teraz sortowana alfabetycznie.
+- Rozwiązano problem, w którym były pokazywane zduplikowane karty dla pozycji, które mają wiele stanów zapasów w tej samej lokalizacji.
+- Rozwiązano problem, w którym strona **dużej listy wyborów** nie przewijała się, aby wyświetlić wstępnie wybraną pozycję.
+- Poprawiono kolory paska wyszukiwania na stronie **dużej listy wyboru**.
+- Rozwiązano problem, w którym domyślny przycisk zdefiniowany w kodzie XML nie był używany jako przycisk przesyłania.
+- Rozwiązano problem, w którym przyciski w przepływach wielokrotnego skanowania i szybkiej walidacji nie były aktualizowane w przypadku skanowania nowych identyfikatorów.
+- Dodano obsługę większej liczby języków.
 
 ## <a name="version-20320"></a>Wersja 2.0.32.0
 

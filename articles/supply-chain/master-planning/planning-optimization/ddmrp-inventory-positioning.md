@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: bec36b5b51b937782afdb78d7009a58dcd0942f0
-ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
+ms.openlocfilehash: 847108575cbf7207282db00d731363c8cfad883a
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "9186739"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689546"
 ---
 # <a name="inventory-positioning"></a>Lokalizacja zapasów
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Strategiczne pozycjonowanie zapasów polega na identyfikacji punktów rozłącznych w łańcuchu dostaw, w których można gromadzić zapasy. Takie podejście jest stosowane głównie po to, by skrócić czas realizacji zamówień i zniwelować wstrząsy w łańcuchu dostaw. Pozwala to na złagodzenie "efektu byka", ponieważ zmienność popytu nie jest przekazywana w dół łańcucha dostaw. (*Efekt bicza* oznacza, że małe wahania popytu na poziomie detalicznym mogą powodować stopniowo większe wahania popytu na poziomie hurtowni, dystrybutorów, producentów i dostawców surowców).
 

@@ -4,23 +4,25 @@ description: W tym artykule opisano sposób konfigurowania obejść dla pozycji 
 author: Mirzaab
 ms.date: 09/01/2022
 ms.topic: article
-ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
+ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour, WHSMobileAppFlowStepDetourSelectFields, WHSMobileAppFlowStepSelectPromotedFields
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: d8d3d434077fdb145291e2298055f692b78db3d6
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: 2e387dd4e6499912f2d53dddc17ccc053f1ca699
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9428071"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689318"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>Konfiguracja obejść dla kroków w elementach menu urządzeń mobilnych
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!--KFM: Preview until 10.0.31 GA -->
 
 > [!IMPORTANT]
 > Funkcje opisane w tym artykule dotyczą tylko nowej aplikacji mobilnej Warehouse Management. Nie wpływają one na starą aplikację magazynu, która jest obecnie przestarzała.
@@ -38,6 +40,7 @@ Zanim będzie można skonfigurować obejścia dla kroków w pozycjach menu urzą
 1. Włącz następujące funkcje, które zapewniają funkcje opisane w tym artykule:
     - *Przełączanie aplikacji Warehouse Management*<br>(Od wersji 10.0.29 Supply Chain Management version ta funkcja jest domyślnie włączona)
     - *Wielopoziomowe przekierowanie dla aplikacji mobilnej Warehouse Management*
+    - *Automatycznie przesyłaj kroki przekierowania dla aplikacji mobilnej Warehouse Management*
 1. Jeśli funkcje *Objazdy aplikacji do zarządzania magazynem* i/lub *Wielopoziomowe przekierowanie dla aplikacji mobilnej Warehouse Management* nie były jeszcze włączone, zaktualizuj nazwy pól w aplikacji mobilnej Warehouse Management, przechodząc do **Zarządzanie magazynem \> Konfiguracja \> Urządzenie mobilne \> Nazwy pól aplikacji Warehouse** i wybierając **Utwórz konfigurację domyślną**. Aby uzyskać więcej informacji, zobacz temat [Konfigurowanie pól aplikacji mobilnej Warehouse Management](configure-app-field-names-priorities-warehouse.md).
 1. Powtórz poprzedni krok dla każdej osoby prawnej (firmy), w której korzystasz z aplikacji mobilnej Warehouse Management.
 
@@ -49,7 +52,7 @@ Aby skonfigurować obejście na podstawie wymuszenia określonego w menu, należ
 1. Znajdź kombinację wartości **Identyfikator kroku** i **Nazwa opcji menu**, które chcesz edytować, i wybierz wartość w kolumnie **Identyfikator kroku**.
 1. Na stronie, która się pojawi, na skróconej karcie **Dostępne obejścia (pozycje menu)**, można określić pozycję menu, która powinna działać jako obejścia. Możesz także wybrać, które wartości pól z zadania głównego powinny być automatycznie kopiowane do i z obejścia. Przykłady pokazujące, jak korzystać z tych ustawień, można znaleźć w scenariuszach w dalszej części tego artykułu.
 
-## <a name="sample-scenario-1-sales-picking-where-a-location-inquiry-acts-as-a-detour"></a>Przykładowy scenariusz 1: Kompletacja sprzedaży, w której zapytanie o lokalizację pełni rolę obejścia
+## <a name="sample-scenario-1-sales-picking-where-a-location-inquiry-acts-as-a-detour"></a><a name="scenario-1"></a>Przykładowy scenariusz 1: Kompletacja sprzedaży, w której zapytanie o lokalizację pełni rolę obejścia
 
 Ten scenariusz pokazuje, jak skonfigurować zapytanie o lokalizację jako obejście w przepływie zadań kompletacji sprzedaży kierowanej przez pracownika. To obejście umożliwi pracownikom sprawdzenie wszystkich numerów identyfikacyjnych w miejscu, z którego dokonują odbioru i wybranie numeru identyfikacyjnego, który chcą użyć do zakończenia odbioru. Ten rodzaj obejścia może być przydatny, jeśli kod kreskowy jest uszkodzony i dlatego nie może być odczytany przez urządzenie skanujące. Alternatywnie, może być przydatna, gdy pracownik musi dowiedzieć się, co jest aktualnie dostępne w systemie. Zauważ, że ten scenariusz działa tylko wtedy, gdy wybierasz z miejsc kontrolowanych przez numery identyfikacyjne.
 
@@ -59,7 +62,7 @@ Aby użyć określonych przykładowych rekordów i wartości do pracy z tym scen
 
 ### <a name="create-a-menu-specific-override-and-configure-the-detour-for-scenario-1"></a>Utwórz specyficzne dla menu nadpisanie i skonfiguruj obejście dla scenariusza 1
 
-W tej procedurze skonfigurowany zostanie obejścia dla pozycji menu **Dobór sprzedaży** w kroku numeru identyfikacyjnego.
+W tej procedurze zostanie skonfigurowane obejście dla elementu menu **Pobieranie sprzedaży** w kroku numeru identyfikacyjnego.
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Urządzenie przenośne \> Kroki urządzenia przenośnego**.
 1. Znajdź identyfikator kroku o nazwie *LicensePlateId* i zaznacz go.
@@ -70,15 +73,17 @@ W tej procedurze skonfigurowany zostanie obejścia dla pozycji menu **Dobór spr
 1. W oknie dialogowym **Dodaj obejście** należy wybrać **Zapytanie o lokalizację** jako obejście, który zostanie udostępnione w aplikacji mobilnej Warehouse Management.
 1. Kliknij przycisk **OK**.
 1. Na skróconej karcie **Dostępne obejścia (pozycje menu)**, wybierz obejście, który właśnie dodałeś, a następnie wybierz **Wybierz pola do wysłania** na pasku narzędzi.
-1. W oknie dialogowym **Wybierz pola do wysłania**, określ informacje, które mają być wysyłane do i z obejścia. W tym scenariuszu umożliwiasz pracownikom wykorzystanie lokalizacji, z której mają wybrać, jako danych wejściowych dla obejścia z zapytaniem o lokalizację. W związku z tym w sekcji **Wyślij z pobrania z Sales** wybierz pozycję **Dodaj** na pasku narzędzi, aby dodać wiersz do siatki. Następnie należy ustawić następujące wartości dla nowego wiersza:
+1. W oknie dialogowym **Wybierz pola do wysłania**, określ informacje, które mają być wysyłane do i z obejścia. W tym scenariuszu umożliwiasz pracownikom wykorzystanie lokalizacji, z której mają pobierać, jako danych wejściowych dla obejścia z zapytaniem o lokalizację. W związku z tym w sekcji **Wyślij z pobrania z Sales** wybierz pozycję **Dodaj** na pasku narzędzi, aby dodać wiersz do siatki. Następnie należy ustawić następujące wartości dla nowego wiersza:
 
     - **Kopiowanie z pobierania z Sales:** *Lokalizacja*
     - **Wklej zapytanie o lokalizację:** *Lokalizacja*
+    - **Automatyczne przesyłanie:** opcja *zaznaczona* (strona zostanie odświeżona przy użyciu wklejonej wartości *Lokalizacja*)
 
 1. Ponieważ obejście w tym scenariuszu jest skonfigurowane na kroku numeru identyfikacyjnego, przydatne będzie, jeśli pracownicy będą mogli przenieść numer identyfikacyjny z zapytania z powrotem do głównego przepływu. W związku z tym w sekcji **Sprowadzenie z zapytania o lokalizację** wybierz pozycję **Dodaj** na pasku narzędzi, aby dodać wiersz do siatki. Następnie należy ustawić następujące wartości dla nowego wiersza:
 
     - **Kopia z zapytania o lokalizację:** *numer identyfikacyjny*
     - **Wklej do pobierania z Sales:** *numer identyfikacyjny*
+    - **Automatyczne przesyłanie:** opcja *wyczyszczona* (automatyczna aktualizacja nie będzie przeprowadzana podczas zwracania z obejścia z wartością *Numer identyfikacyjny*)
 
 1. Kliknij przycisk **OK**.
 
@@ -86,7 +91,7 @@ Obejście jest teraz w pełni skonfigurowane. Przycisk uruchamiający obejście 
 
 ### <a name="complete-a-sales-pick-on-a-mobile-device-and-use-the-detour"></a>Dokonaj pobranie sprzedaży na urządzeniu mobilnym i skorzystaj z obejścia
 
-W ramach tej procedury wykonasz pobranie sprzedaży za pomocą aplikacji mobilnej Warehouse Management. Skorzystasz z obejścia, które właśnie skonfigurowałeś, aby znaleźć numer identyfikacyjny, którego użyjesz, aby zakończyć etap wybierania.
+W ramach tej procedury wykonasz pobieranie sprzedaży za pomocą aplikacji mobilnej Warehouse Management. Skorzystasz z właśnie skonfigurowanego obejścia, aby znaleźć numer identyfikacyjny, którego użyjesz, aby zakończyć krok pobierania.
 
 1. W Microsoft Dynamics 365 Supply Chain Management utwórz zamówienie sprzedaży, które będzie wymagało kroku kompletacji w celu pobrania z lokalizacji, która jest śledzona na podstawie tablic rejestracyjnych. Teraz wydaj zamówienie sprzedaży do magazynu. Zanotuj pokazany identyfikator pracy.
 1. Zaloguj się do aplikacji Warehouse Management jako użytkownik w magazynie 24. (W standardowych danych demonstracyjnych zaloguj się, używając *24* jako identyfikatora użytkownika i *1* jako hasła.)
@@ -112,7 +117,7 @@ Aby użyć określonych przykładowych rekordów i wartości do pracy z tym scen
 
 ### <a name="create-a-menu-specific-override-and-configure-the-detour-for-scenario-2"></a>Utwórz specyficzne dla menu nadpisanie i skonfiguruj obejście dla scenariusza 2
 
-W tej procedurze skonfigurowany zostanie obejścia dla pozycji menu **Dobór sprzedaży** w kroku numeru identyfikacyjnego.
+W tej procedurze zostanie skonfigurowane obejście dla elementu menu **Pobieranie sprzedaży** w kroku numeru identyfikacyjnego.
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Urządzenie przenośne \> Kroki urządzenia przenośnego**.
 1. Znajdź identyfikator kroku o nazwie *LocationInquiryList* i zaznacz go.
@@ -131,6 +136,7 @@ W tej procedurze skonfigurowany zostanie obejścia dla pozycji menu **Dobór spr
 
     - **Kopiuj z zapytania o lokalizację:** *Lokalizacja*
     - **Wklej do Ruchu:** *Loc/LP*
+    - **Automatyczne przesyłanie:** opcja *wyczyszczona* (automatyczna aktualizacja nie będzie przeprowadzana)
 
     W tym obejściu nie oczekujesz, że jakiekolwiek informacje zostaną skopiowane z powrotem, ponieważ główny przepływ był zapytaniem, w którym nie są wymagane żadne dodatkowe kroki.
 
@@ -140,7 +146,7 @@ Obejście jest teraz w pełni skonfigurowane. Przycisk uruchamiający obejście 
 
 ### <a name="do-a-location-inquiry-on-a-mobile-device-and-use-the-detour"></a>Wykonaj zapytanie o lokalizację na urządzeniu mobilnym i skorzystaj z obejścia
 
-W tej procedurze przeprowadzisz zapytanie o lokalizację za pomocą aplikacji mobilnej Warehouse Management. Następnie wykorzystasz obejście do zakończenia ruchu towarów.
+W tej procedurze wykonasz zapytanie o lokalizację za pomocą aplikacji mobilnej Warehouse Management. Następnie wykorzystasz obejście do ukończenia ruchu towarów.
 
 1. Zaloguj się do aplikacji Warehouse Management jako użytkownik w magazynie 24. (W standardowych danych demonstracyjnych zaloguj się, używając *24* jako identyfikatora użytkownika i *1* jako hasła.)
 1. Wybierz menu **Zapasy**, a następnie wybierz element menu **Zapytanie o lokalizację**.
@@ -153,3 +159,5 @@ W tej procedurze przeprowadzisz zapytanie o lokalizację za pomocą aplikacji mo
 
 > [!NOTE]
 > Funkcja *Wielopoziomowe przekierowanie dla aplikacji mobilnej Warehouse Management* umożliwia definiowanie wielopoziomowych tras objazdowych (objazdów w objazdach), co pozwoli pracownikom na przejście z istniejącego objazdu na następnie i z powrotem. Ta funkcja obsługuje dwa gotowe poziomy objazdów i w razie potrzeby można dostosować system do obsługi trzech lub większej liczby poziomów objazdów, tworząc rozszerzenia kodu w tabeli `WHSWorkUserSessionState`.
+>
+> Funkcja *Automatycznie przesyłaj kroki przekierowania dla aplikacji mobilnej Warehouse Management* może przyspieszyć i ułatwić pracownikom wykonywanie przepływów przekierowania w aplikacji mobilnej Warehouse Management. Umożliwia ona pomijanie niektórych kroków przepływu, pozwalając aplikacji na wypełnianie danych przekierowania na zapleczu, a następnie na automatyczne przechodzenie do następnego kroku przez automatyczne przesłanie strony, tak jak pokazano w temacie [*Przykładowy scenariusz 1. Kompletacja sprzedaży, w której zapytanie o lokalizację pełni rolę obejścia*](#scenario-1).

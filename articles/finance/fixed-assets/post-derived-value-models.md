@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1d4874642743ed8188e84052d94003051f2af7af
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: d0270ad1e66193832fb1139fca4439b36b5ffb84
+ms.sourcegitcommit: dca54dd3afc7c94795d89c63050b105df2c48e3f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722696"
+ms.lasthandoff: 10/15/2022
+ms.locfileid: "9682915"
 ---
 # <a name="post-with-derived-books"></a>Księgowanie za pomocą ksiąg pochodnych
 
@@ -34,7 +34,7 @@ W przypadku księgowania transakcji w księdze, która zawiera księgi pochodne,
 -   Możliwe jest także stosowanie innych wartości dla opcji typu transakcji. Na przykład jeżeli w księgach podstawowej i pochodnych są te same okresy dotyczące sprzedaży lub likwidacji, wszystkie typy transakcji na środkach trwałych są dostępne podczas konfigurowania księgi pochodnej.
 
 > [!WARNING]
-> Amortyzacja zaksięgowana w księdze pochodnej będzie na tę samą kwotą, która została zaksięgowana w księdze podstawowej. Jeżeli metody amortyzacji są różne w obu rodzajach ksiąg, nie należy generować transakcji amortyzacji za pomocą procesu ksiąg pochodnych. |
+> Amortyzacja zaksięgowana w księdze pochodnej będzie na tę samą kwotą, która została zaksięgowana w księdze podstawowej. Jeżeli metody amortyzacji są różne w obu rodzajach ksiąg, nie należy generować transakcji amortyzacji za pomocą procesu ksiąg pochodnych. 
 
 ## <a name="example"></a>Przykład 
 Na podstawie poniższych informacji prześledźmy sposób konfigurowania transakcji nabycia przy użyciu funkcji ksiąg pochodnych.

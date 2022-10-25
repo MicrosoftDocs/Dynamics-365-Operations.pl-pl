@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: c160a6477dd41fac0f15f57bb0f46def500f4589
-ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
+ms.openlocfilehash: 15ec53c1f13b3017fb6e829bd1c8e99fbb938ce3
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9643748"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690002"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analiza dopasowań optymalizacji planowania
 
@@ -62,7 +62,7 @@ W poniższej tabeli przedstawiono różne wyniki, które mogą być widoczne po 
 | --- | --- | --- | --- |
 | Akcje | Grupy zapotrzebowania z włączoną opcją obliczania akcji: *\#* | Ta funkcja jest teraz obsługiwana. | Obsługiwana |
 | Kalendarze podstawowe | Kalendarze używające kalendarza podstawowego: *\#* | Ta funkcja jest teraz obsługiwana. | Obsługiwana | 
-| Kody dyspozycji partii | Wzorce dyspozycji partii z towarami nie do dyspozycji: *\#* | Ta funkcja jest oczekiwana. Obecnie po włączeniu Optymalizacji planowania kody dyspozycji partii są ignorowane. | 2022 Zwolnij grupę czynności 2 <!-- KFM: Now available? [Use batch disposition codes to mark batches as available or unavailable](../../inventory/batch-disposition-codes.md) --> |
+| Kody dyspozycji partii | Wzorce dyspozycji partii z towarami nie do dyspozycji: *\#* | Ta funkcja jest teraz obsługiwana. Aby uzyskać dodatkowe informacje, zobacz [Używanie kodów dyspozycji partii do oznaczania partii jako dostępnych lub niedostępnych](../../inventory/batch-disposition-codes.md) | Obsługiwana |
 | Możliwe do zrealizowania (CTP) | Domyślne ustawienia zamówienia z kontrolą daty dostawy ustawioną na CTP: *\#* | W Supply Chain Management 10.0.28 i nowszych proces o nazwie *CTP dla Planning Optimization* udostępnia potwierdzone daty wysyłki i odbioru po uruchomieniu planu dynamicznego. W starszych wersjach Supply Chain Management ustawienie CTP jest ignorowane, gdy włączona jest optymalizacja planowania. | Obsługiwana |
 | Kopiuj plan statyczny do dynamicznego | Funkcja Kopiuj plan statyczny do dynamicznego jest włączona w parametrach planowania głównego. | Optymalizacja planowania nie kopiuje planu statycznego do planu dynamicznego, niezależnie od tego ustawienia. Zazwyczaj pojęcie to jest mniej istotne ze względu na szybkość i pełną regenerację, którą zapewnia Optymalizacja planowania. Jeśli użyto dwóch lub więcej planów, planowanie główne powinno być wyzwalane dla każdego planu. | N/D |
 | Akceptacja | Grupy zapotrzebowania z ustawionym horyzontem czasowym automatycznej akceptacji: *\#* | W wersji 10.0.7 i nowszych akceptacja jest obsługiwana jako osobne zadanie wsadowe w ramach planowania głównego ( pod warunkiem, że włączono funkcję *Automatyczna akceptacja Optymalizacji planowania* w module [Zarządzanie funkcjami](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)). Należy pamiętać, że Automatyczna akceptacja optymalizacji planowania jest oparta na dacie zamówienia (data rozpoczęcia), a nie na dacie zapotrzebowania (data zakończenia). To zachowanie gwarantuje, że akceptacja zamówień odbywa się w odpowiednim czasie, bez konieczności uwzględniania czasu realizacji w horyzoncie czasowym akceptacji. | Obsługiwana |
@@ -104,7 +104,7 @@ W poniższej tabeli przedstawiono różne wyniki, które mogą być widoczne po 
 | Marginesy bezpieczeństwa | Plany główne z marginesem bezpieczeństwa: *\#* | Ta funkcja jest teraz obsługiwana. Aby uzyskać dodatkowe informacje, zobacz temat [Marginesy bezpieczeństwa](safety-margins.md) |  Obsługiwana |
 | Realizacja zapasu bezpieczeństwa | Rekordy zapotrzebowania na towary z wartością „Uzupełnij stany minimalne” niższą niż wartość „Data dzisiejsza + czas zaopatrzenia”: *\#* | Optymalizacja planowania zawsze używa *Daty dzisiejszej + czasu zaopatrzenia*. Ta zmiana będzie wprowadzona w przyszłości w celu przygotowania uproszczonej konfiguracji planowania i zapewnienia wyniku akcji. Jeśli czas zaopatrzenia nie jest uwzględniony w zapasach bezpieczeństwa, zamówienia planowane utworzone dla bieżącego niskiego stanu zapasów będą zawsze opóźnione z powodu czasu realizacji. To zachowanie może spowodować powstanie istotnych zakłóceń i niechcianych zamówień planowanych. Najlepszym rozwiązaniem jest zmiana tego ustawienia, tak aby była używana *Data dzisiejsza + czas zaopatrzenia*. Zaktualizuj dane podstawowe, aby uniknąć ostrzeżeń. | ND |
 | Oferty sprzedaży | Plany główne z włączoną opcją ofert sprzedaży: *\#* | Ta funkcja jest oczekiwana. Obecnie po włączeniu Optymalizacji planowania oferty są ignorowane. Zostaną one zignorowane niezależnie od tego ustawienia. | 2022 wydanie grupy czynności 2 lub nowszej |
-| Okres trwałości | Plany główne z włączoną opcją okresu trwałości: *\#* | Ta funkcja jest teraz obsługiwana. | Obsługiwana |
+| Okres trwałości | Plany główne z włączoną opcją okresu trwałości: *\#* | Ta funkcja jest oczekiwana. | 2022 Zwolnij grupę czynności 2 |
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

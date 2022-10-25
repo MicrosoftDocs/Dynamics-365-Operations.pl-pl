@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 5a87fb4ac2d01ef3b188b63dfc98bcfac2daf033
-ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
+ms.openlocfilehash: 62e06f2348ca3524beaaef5d8879c199db56696f
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "9520758"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689291"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10029-october-2022"></a>Wersja zapoznawcza aplikacji Dynamics 365 Supply Chain Management 10.0.29 (październik 2022 r.)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10029-october-2022"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management (10.0.29 październik 2022 r.)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-W tym artykule wymieniono nowe oraz zmienione funkcje dostępne w programie Microsoft Dynamics 365 Supply Chain Management w wersji zapoznawczej 10.0.29. Ta wersja ma numer kompilacji 10.0.1326 i jest dostępna w następującym harmonogramie:
+W tym artykule wymieniono nowe oraz zmienione funkcje dostępne w programie Microsoft Dynamics 365 Supply Chain Management w wersji 10.0.29. Ta wersja ma numer kompilacji 10.0.1326 i jest dostępna w następującym harmonogramie:
 
 - **Wersja zapoznawcza wydania:** sierpień 2022 r.
 - **Ogólna dostępność wydania (samodzielna aktualizacja):** wrzesień 2022 r.

@@ -2,7 +2,7 @@
 title: Praca z dyrektywami lokalizacji
 description: W tym artykule opisano sposób pracy z dyrektywami lokalizacji. Dyrektywy lokalizacji to zdefiniowane przez użytkownika zasady pomagające w zidentyfikowaniu lokalizacji pobrania i odłożenia do celów przesunięcia magazynowego.
 author: Mirzaab
-ms.date: 11/13/2020
+ms.date: 09/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 7705ea132521353cd6af7245df90aafaf23af885
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4ef8ec0732cd3bd50bca8d334c43d0354e9e3316
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903703"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689674"
 ---
 # <a name="work-with-location-directives"></a>Praca z dyrektywami lokalizacji
 
@@ -47,6 +47,20 @@ Aby można było utworzyć dyrektywę lokalizacji, należy wykonać poniższe kr
 1. Utwórz lokalizacje, typy lokalizacji, profile lokalizacji i formaty lokalizacji. Aby uzyskać więcej informacji, przejrzyj [Konfigurowanie lokalizacji w magazynie z obsługą WMS](./tasks/configure-locations-wms-enabled-warehouse.md).
 1. Tworzenie oddziałów, stref i grupy stref. Aby uzyskać więcej informacji, przejrzyj [Konfiguracja magazynu](../../commerce/channels-setup-warehouse.md) i [Konfigurowanie lokalizacji w magazynie z obsługą WMS](./tasks/configure-locations-wms-enabled-warehouse.md).
 
+## <a name="turn-the-location-directive-scopes-feature-on-or-off"></a><a name="scopes-feature"></a>Włączanie lub wyłączanie funkcję zakresów dyrektywy lokalizacji
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: Preview until 10.0.31 GA -->
+
+Funkcja *zakresów dyrektywy lokalizacji* daje więcej możliwości podczas projektowania dyrektyw lokalizacji i pomaga redukować nadmiarowe konfiguracje. Powoduje dodanie opcji **Zakresy**, która zastępuje poprzednią opcję **Wiele jednostek SKU**. Opcję **Wiele jednostek SKU** można ustawić tylko na wartość *Tak* lub *Nie*, ale opcja **Zakresy** oferuje nie tylko te dwa ustawienia (za pośrednictwem wartości *Pojedyncza pozycja* lub *Wiele pozycji*), ale także dwa dalsze (za pośrednictwem wartości *Pojedyncza pozycja lub zamówienie* lub *Wszystkie*). Aby uzyskać więcej informacji dotyczących tych ustawień, zobacz [skróconą kartę Dyrektywy lokalizacji](#location-directives-tab).
+
+Włączona opcja **Zakres** zastępuje opcję **Wiele jednostek SKU** i jest w 100 procentach zgodna z istniejącymi konfiguracjami.
+
+Aby używać tej funkcji, musisz ją włączyć w swoim systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i ją włączyć lub wyłączyć. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
+
+- **Moduł:** *Zarządzanie magazynem*
+- **Nazwa funkcji:** *Zakresy dyrektywy lokalizacji*
+
 ## <a name="work-order-types-for-location-directives"></a>Typy zleceń roboczych dyrektyw dotyczących lokalizacji
 
 Wiele pól, które można ustawiać w dyrektywach lokalizacji, jest wspólne dla wszystkich typów zleceń produkcyjnych. Jednak inne pola są charakterystyczne dla poszczególnych typów zleceń produkcyjnych.
@@ -68,7 +82,7 @@ W poniższej tabeli wymieniono pola wspólne dla wszystkich typów zleceń produ
 | Dyrektywy lokalizacji | Oddział |
 | Dyrektywy lokalizacji | Magazyn |
 | Dyrektywy lokalizacji | Kod dyrektywy |
-| Dyrektywy lokalizacji | Wiele jednostek JSZ |
+| Dyrektywy lokalizacji | Zakres *lub* Wiele jednostek SKU |
 | Wiersze | Numer sekwencyjny |
 | Wiersze | Ilość od |
 | Wiersze | Do ilości |
@@ -117,7 +131,9 @@ Okienko akcji na **stronie dyrektywy lokalizacji** zawiera przyciski, które umo
 
 - **Przenieś w górę**— umożliwia przeniesienie wybranej dyrektywy lokalizacji w górę w kolejności. Można na przykład przenieść ją z sekwencji o numer 4 do numeru sekwencyjnego 3.
 - **Przenieś w dół**— umożliwia przeniesienie wybranej dyrektywy lokalizacji w dół w kolejności. Można na przykład przenieść ją z sekwencji o numer 4 do numeru sekwencyjnego 5.
+- **Kopiuj** — zostanie otwarte okno dialogowe, w którym można utworzyć dokładną kopię bieżącej dyrektywy lokalizacji.
 - **Edytuj zapytanie** — umożliwia otwarcie okna dialogowego, w którym można zdefiniować warunki, pod jakimi wybrana dyrektywa lokalizacji powinna zostać przetworzona. Może to być na przykład sposób zastosowania tylko do określonego magazynu.
+- **Testy akceptacji** — otwórz stronę, na której można skonfigurować testy automatyczne, aby określić, w jaki sposób dyrektywy lokalizacji będą działać w różnych warunkach początkowych. W ten sposób można szybko weryfikować dyrektywy podczas ich tworzenia i obsługi. Aby uzyskać więcej informacji, zobacz [Testowanie dyrektyw lokalizacji testów przy użyciu testów akceptacji](location-directive-acceptance-tests.md).
 
 ## <a name="location-directives-header"></a>Nagłówek dyrektyw lokalizacji
 
@@ -126,7 +142,7 @@ Nagłówek dyrektywy lokalizacji zawiera następujące pola dla numeru sekwencyj
 - **Numer sekwencyjny** — to pole wskazuje sekwencję, z jaką system próbuje zastosować każdą dyrektywę lokalizacji dla wybranego typu zlecenia produkcyjnego. Małe numery są stosowane jako pierwsze. Sekwencję można zmieniać za pomocą przycisków **Przenieś w górę** i **Przenieś w dół** w okienku akcji.
 - **Nazwa** – wprowadź opisową nazwę dyrektywy lokalizacji. Ta nazwa ułatwia identyfikowanie ogólnego celu dyrektywy. Na przykład wprowadź *pobieranie zamówienia sprzedaży w magazynie 24*.
 
-## <a name="location-directives-fasttab"></a>Karta skrócona dyrektyw lokalizacji
+## <a name="location-directives-fasttab"></a><a name="location-directives-tab"></a>Karta skrócona dyrektyw lokalizacji
 
 Pola w **dyrektywach lokalizacji** na skróconej karcie są charakterystyczne dla typu zlecenia produkcyjnego wybranego w polu **Typ zlecenia produkcyjnego** w okienku listy.
 
@@ -145,7 +161,29 @@ Pola w **dyrektywach lokalizacji** na skróconej karcie są charakterystyczne dl
     > [!TIP]
     > Jeśli kod dyrektywy jest ustawiony, kiedy praca musi zostać wygenerowana, system nie przeszuka dyrektywy lokalizacji według kodu sekwencji. W zamian zostanie wyszukany kod dyrektywy. W ten sposób można bardziej precyzyjnie określić dyrektywę lokalizacji, która jest używana do określonego kroku w szablonie roboczym, na przykład etapu przygotowania materiałów.
 
-- **Wiele SKU** – Ustaw tę opcję na *Tak*, aby używać wielu jednostek magazynowych (SKU) w lokalizacji. Na przykład dla lokalizacji drzwi ładowania musi być włączone wiele jednostek SKU. Jeśli zostanie włączona wiele jednostek SKU, lokalizacja umieszczania zostanie określona w pracy w oczekiwany sposób. Jednak lokalizacja umieszczania będzie mogła obsługiwać tylko wiele pozycji (Jeśli praca obejmuje różne jednostki SKU, które muszą zostać pobrane i umieszczone). Nie będzie mógł obsłużyć operacji załadowania z jedną jednostką SKU. Jeśli ta opcja zostanie ustawiona na *nie*, lokalizacja umieszczania będzie określona tylko wtedy, gdy dla danego odłożenia jest używany tylko jeden rodzaj jednostki SKU.
+- **Zakres** — ta opcja służy do określania scenariuszy, do których zostanie zastosowana dyrektywa lokalizacji. Ta opcja zastępuje opcję **Wiele jednostek SKU** i jest dostępna tylko włączeniu w systemie funkcji *Zakresy dyrektywy lokalizacji*. (Aby uzyskać więcej informacji, zobacz [Włączanie lub wyłączanie funkcji zakresów dyrektywy lokalizacji](#scopes-feature)).
+
+    | Ustawienie zakresu | Pojedyncze zamówienie z jedną pozycją | Wiele zamówień z tą samą pozycją | Pojedyncze zamówienie z wieloma pozycjami | Wiele zamówień z wieloma pozycjami |
+    |---|---|---|---|---|
+    | Pojedyncza pozycja | Tak | Tak | Nr | Nr |
+    | Wiele elementów | Nr | Nr | Tak | Tak |
+    | Pojedyncza pozycja lub zamówienie | Tak | Tak | Tak | Nr |
+    | Wszystko | Tak | Tak | Tak | Tak |
+
+    W poniższej tabeli opisano, kiedy są dostępne zakresy i czy umożliwiają one użycie funkcji **edytowania zapytania**.
+
+    | Zakres | Obsługiwany typ pracy | Obsługiwane typy zleceń pracy | Zezwalaj na edycję zapytania |
+    |---|---|---|---|
+    | Pojedyncza pozycja | Wszystko | Wszystko | Tak |
+    | Wiele elementów | Wszystko | Wszystko | Nr |
+    | Pojedyncza pozycja lub zamówienie | Odłożenia | Odłożenie produktów towarzyszących i produktów obocznych, odłożenie towarów gotowych, odłożenie Kanban, zamówienia zakupu, zlecenia kontroli jakości, uzupełnianie zapasów, zamówienia zwrotu, zamówienia sprzedaży, wydanie przeniesienia i przyjęcie przeniesienia | Tak |
+    | Wszystko | Odłożenia | Wszystko | Nr |
+
+    > [!NOTE]
+    > - Aby przeprowadzić odłożenia wielu pozycji i pojedynczych pozycji, trzeba upewnić się, że istnieją dyrektywy lokalizacji dotyczące obu scenariuszy. Na przykład można skonfigurować co najmniej jedną dyrektywę lokalizacji typu *Pojedyncza pozycja lub zamówienie* do obsługi scenariuszy, które wymagają precyzyjnego dostrojenia (na przykład w ramach edycji zapytania), a następnie co najmniej jedną dyrektywę lokalizacji typu *Wszystkie* do obsługi pozostałych scenariuszy.
+    > - Chociaż zakresów *Pojedyncza pozycja* i *Wiele pozycji* można używać na potrzeby odłożeń, takie podejście przeważnie prowadzi do nadmiarowych konfiguracji. Rozważ użycie w zamian zakresów *Pojedyncza pozycja lub zamówienie* i *Wszystkie*, ponieważ to podejście spowoduje powstanie czytelniejszej konfiguracji.
+
+- **Wiele jednostek SKU** — ta opcja służy do określania scenariusza, do którego zostanie zastosowana dyrektywa lokalizacji. To ustawienie jest zastępowane przez ustawienie **Zakres**, jeśli w systemie włączono funkcję *Zakresy dyrektywy lokalizacji*. (Aby uzyskać więcej informacji, zobacz [Włączanie lub wyłączanie funkcji zakresów dyrektywy lokalizacji](#scopes-feature)). Ustaw tę opcję na wartość *Tak*. aby włączyć wiele jednostek magazynowych (SKU) do użycia w lokalizacji. Na przykład dla lokalizacji drzwi ładowania musi być włączone wiele jednostek SKU. Jeśli zostanie włączona wiele jednostek SKU, lokalizacja umieszczania zostanie określona w pracy w oczekiwany sposób. Jednak lokalizacja umieszczania będzie mogła obsługiwać tylko wiele pozycji (Jeśli praca obejmuje różne jednostki SKU, które muszą zostać pobrane i umieszczone). Nie będzie mógł obsłużyć operacji załadowania z jedną jednostką SKU. Jeśli ta opcja zostanie ustawiona na *nie*, lokalizacja umieszczania będzie określona tylko wtedy, gdy dla danego odłożenia jest używany tylko jeden rodzaj jednostki SKU.
 
     > [!IMPORTANT]
     > Aby można było wykonywać zarówno ładowanie z wieloma pozycjami, jak i pojedyncze jednostki SKU, należy określić dwa wiersze o tej samej strukturze i konfiguracji, ale dla opcji **wielu jednostek SKU** należy ustawić wartość *tak* dla jednego wiersza, a *nie* dla drugiego. Dlatego dla operacji odłożenia potrzeba dwóch dyrektyw lokalizacji, które są identyczne, nawet jeśli w pracy o danym identyfikatorze nie trzeba stosować rozróżniania między zdefiniowaniem jednej a wielu jednostek SKU. Często, jeśli nie zostaną skonfigurowane obie te dyrektywy lokalizacji, nieoczekiwane lokalizacje procesów biznesowych będą pochodzić z dyrektywy dotyczącej lokalizacji zastosowania. Należy użyć podobnej konfiguracji dla dyrektyw lokalizacji, które mają **Typ pracy** określony jako *pobranie*, jeśli zachodzi potrzeba przetwarzania zamówień zawierających wiele jednostek SKU.
@@ -255,6 +293,5 @@ Po utworzeniu dyrektywy lokalizacji, każdy kod dyrektywy można skojarzyć z ko
 
 - Wideo: [Konfiguracja zarządzania magazynem — zaawansowana](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
 - Artykuł pomocy: [Kontrola pracy magazynu za pomocą szablonów pracy i dyrektyw lokalizacji](control-warehouse-location-directives.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

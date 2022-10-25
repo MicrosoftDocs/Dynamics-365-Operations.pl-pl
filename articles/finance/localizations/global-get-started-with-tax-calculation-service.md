@@ -2,7 +2,7 @@
 title: Rozpoczynanie pracy z obliczaniem podatku
 description: W tym artykule wyjaśniono, jak skonfigurować obliczanie podatku.
 author: EricWangChen
-ms.date: 03/25/2022
+ms.date: 10/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
 ms.custom: intro-internal
 ms.search.form: TaxIntegrationTaxServiceParameters
-ms.openlocfilehash: 2b9af7a8bef9d479c4f2ec59ef533403a74251b1
-ms.sourcegitcommit: adadbc6e355e2ad68a1f6af26a1be1f89dc8eec6
+ms.openlocfilehash: 42898823ffc366351c6f58f1fe9b924678ab4b49
+ms.sourcegitcommit: 40c80a617b903c2b26e44b41147e0021c5cb680d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2022
-ms.locfileid: "9573313"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690391"
 ---
 # <a name="get-started-with-tax-calculation"></a>Rozpoczynanie pracy z obliczaniem podatku
 
@@ -124,6 +124,10 @@ Kroki w tej sekcji nie są powiązane z określoną firmą. Tę procedurę nale�
 7. Przejdź do **Modelu danych podatkowych**, rozwiń drzewo plików, a następnie wybierz pozycję **Konfiguracja podatków**.
 8. Wybierz poprawną [wersję konfiguracji podatku](global-tax-calcuation-service-overview.md#versions) zależnie od wersji modułu Finance, a następnie wybierz pozycję **Importuj**.
 9. W obszarze roboczym **Funkcje globalizacji**, wybierz opcję **Funkcje**, wybierz kafelek **Obliczania podatku**, a następnie wybierz opcję **Dodaj**.
+
+    > [!NOTE]
+    > W wersji 10.0.26 i nowszych można zaimportować funkcję pokazu dla firmy pokazowej **DEMF**. Aby uzyskać więcej informacji, zobacz temat [Dane pokazowe dla funkcji importu](tax-calculation-import-export-feature.md).
+
 10. Umożliwia wybór jednego z następujących typów funkcji:
 
     - **Nowa funkcja** — umożliwia tworzenie konfiguracji funkcji o pustej zawartości.
@@ -154,8 +158,8 @@ Kroki w tej sekcji nie są powiązane z określoną firmą. Tę procedurę nale�
     - **Stosowanie numeru rejestracyjnego podatków dostawcy** — jeśli dla jednego dostawcy istnieje wiele numerów rejestracji podatkowej, dodatek Obliczanie podatku może automatycznie ustalić poprawny numer rejestracji podatkowej. W matrycy na tej karcie należy zdefiniować reguły używane do określania. W przeciwnym razie w Finance i Supply Chain Management będzie nadal stosować domyślny numer rejestracji podatkowej w dokumentach podlegających opodatkowaniu dla transakcji zakupu.
     - **Zastosowanie kodu listy** — dzięki bardziej elastycznym i konfigurowalnym regułom można automatycznie określić wartość pola **Kod listy**. W matrycy na tej karcie należy zdefiniować reguły używane do określania. W przeciwnym razie w Finance i Supply Chain Management będzie nadal stosować domyślny kod w dokumentach podlegających opodatkowaniu.
 
-14. Na karcie **Kody podatków** wybierz opcję **Dodaj**, a następnie wprowadź kod i opis podatku.
-15. Wybierz **Składnik podatku**. Składnik podatku to grupa metod, które zostały zdefiniowane w poprzedniej wersji wybranej konfiguracji podatku. Dostępne są następujące arkusze programu Excel:
+15. Na karcie **Kody podatków** wybierz opcję **Dodaj**, a następnie wprowadź kod i opis podatku.
+16. Wybierz **Składnik podatku**. Składnik podatku to grupa metod, które zostały zdefiniowane w poprzedniej wersji wybranej konfiguracji podatku. Dostępne są następujące arkusze programu Excel:
 
     - Kwota netto 
     - Według kwoty brutto
@@ -163,8 +167,8 @@ Kroki w tej sekcji nie są powiązane z określoną firmą. Tę procedurę nale�
     - Według marży
     - Podatek od podatku
 
-16. Wybierz opcję **Zapisz**. Na podstawie wybranego składnika podatku staje się dostępnych więcej pól.
-17. Aby określić charakter kodu podatku, należy użyć następujących opcji:
+17. Wybierz opcję **Zapisz**. Na podstawie wybranego składnika podatku staje się dostępnych więcej pól.
+18. Aby określić charakter kodu podatku, należy użyć następujących opcji:
 
     - Czy podlega zwolnieniu
     - Czy jest podatkiem obrotowym
@@ -179,8 +183,8 @@ Kroki w tej sekcji nie są powiązane z określoną firmą. Tę procedurę nale�
 
     Obsługa stawek podatku i limitów kwoty podatku dla tego kodu podatku.
 
-18. Powtarzaj kroki 14 do 17, aby dodać wszystkie wymagane kody przyczyny.
-19. Na karcie **Grupa podatków** zaznacz kolumnę **Grupa podatków**, dodaj ją do matrycy jako warunek wejściowy, a następnie dodaj wiersze w celu obsługi danych głównych grupy podatków.
+19. Powtarzaj kroki 15 do 18, aby dodać wszystkie wymagane kody przyczyny.
+20. Na karcie **Grupa podatków** zaznacz kolumnę **Grupa podatków**, dodaj ją do matrycy jako warunek wejściowy, a następnie dodaj wiersze w celu obsługi danych głównych grupy podatków.
 
     Oto przykład.
 
@@ -191,7 +195,7 @@ Kroki w tej sekcji nie są powiązane z określoną firmą. Tę procedurę nale�
     | BEL_Dom | BEL_VAT21; BEL_VAT6 |
     | BEL_EU       | BEL_Exempt          |
 
-20. Na karcie **Grupa podatków dla pozycji** zaznacz kolumnę **Grupa podatków dla pozycji**, dodaj ją do matrycy jako warunek wejściowy, a następnie dodaj wiersze w celu obsługi danych głównych grupy podatków dla pozycji.
+21. Na karcie **Grupa podatków dla pozycji** zaznacz kolumnę **Grupa podatków dla pozycji**, dodaj ją do matrycy jako warunek wejściowy, a następnie dodaj wiersze w celu obsługi danych głównych grupy podatków dla pozycji.
 
     Oto przykład.
 
@@ -200,7 +204,7 @@ Kroki w tej sekcji nie są powiązane z określoną firmą. Tę procedurę nale�
     | Pełny           | DEU_VAT19; BEL_VAT21; DEU_Exempt; BEL_Exempt |
     | Zredukowane        | DEU_VAT7; BEL_VAT6; DEU_Exempt; BEL_Exempt   |
 
-21. Na karcie **Zastosowanie grupy podatków** zaznacz kolumny wymagane do ustalenia poprawnej grupy podatków, a następnie wybierz opcję **Dodaj**. Wprowadź lub wybierz wartości dla każdej kolumny. Pole **Grupa podatków** będzie wynikiem tej matrycy. Jeśli ta karta nie jest skonfigurowana, zostanie użyta grupa podatków z wiersza transakcji.
+22. Na karcie **Zastosowanie grupy podatków** zaznacz kolumny wymagane do ustalenia poprawnej grupy podatków, a następnie wybierz opcję **Dodaj**. Wprowadź lub wybierz wartości dla każdej kolumny. Pole **Grupa podatków** będzie wynikiem tej matrycy. Jeśli ta karta nie jest skonfigurowana, zostanie użyta grupa podatków z wiersza transakcji.
 
     Oto przykład.
 
@@ -214,7 +218,7 @@ Kroki w tej sekcji nie są powiązane z określoną firmą. Tę procedurę nale�
     > [!NOTE]
     > Jeśli domyślna grupa podatków w wierszach dokumentów podlegających opodatkowaniu jest poprawna, pozostaw macierz pustą. Więcej informacji znajduje się w dalszej sekcji [Projektowanie w czasie rzeczywistym](#runtime) w tym artykule.
 
-22. Na karcie **Zastosowanie grupy podatków dla pozycji** zaznacz kolumny wymagane do ustalenia poprawnej grupy podatków dla pozycji, a następnie wybierz opcję **Dodaj**. Wprowadź lub wybierz wartości dla każdej kolumny. Pole **Grupa podatków dla pozycji** będzie wynikiem tej matrycy. Jeśli ta karta nie jest skonfigurowana, zostanie użyta grupa podatków dla pozycji z wiersza transakcji.
+23. Na karcie **Zastosowanie grupy podatków dla pozycji** zaznacz kolumny wymagane do ustalenia poprawnej grupy podatków dla pozycji, a następnie wybierz opcję **Dodaj**. Wprowadź lub wybierz wartości dla każdej kolumny. Pole **Grupa podatków dla pozycji** będzie wynikiem tej matrycy. Jeśli ta karta nie jest skonfigurowana, zostanie użyta grupa podatków dla pozycji z wiersza transakcji.
 
     Oto przykład.
 
@@ -228,10 +232,10 @@ Kroki w tej sekcji nie są powiązane z określoną firmą. Tę procedurę nale�
 
     Aby uzyskać więcej informacji na temat określania kodów podatków w obliczaniu podatku, zobacz temat [Logika określania grupy podatków i grupy podatków dla pozycji](global-sales-tax-group-determination.md).
 
-23. Skonfiguruj możliwości stosowania numerów rejestracji podatkowej odbiorcy, numerów rejestracji podatkowej dostawcy i kodów list stosownie do indywidualnych potrzeb.
-24. Wybierz przycisk **Zapisz** i zamknij stronę.
-25. Wybierz **Zmień status** \> **Zakończone**. Gdy stan zostanie zmieniony na **Ukończono**, nie będzie można już edytować wersji.
-26. Wybierz **Zmień status** \> **Opublikuj**. Ta wersja ustawień funkcji podatków będzie wypychana do repozytorium globalnego i będzie widoczna dla każdej firmy w finansach.
+24. Skonfiguruj możliwości stosowania numerów rejestracji podatkowej odbiorcy, numerów rejestracji podatkowej dostawcy i kodów list stosownie do indywidualnych potrzeb.
+25. Wybierz przycisk **Zapisz** i zamknij stronę.
+26. Wybierz **Zmień status** \> **Zakończone**. Gdy stan zostanie zmieniony na **Ukończono**, nie będzie można już edytować wersji.
+27. Wybierz **Zmień status** \> **Opublikuj**. Ta wersja ustawień funkcji podatków będzie wypychana do repozytorium globalnego i będzie widoczna dla każdej firmy w finansach.
 
 ## <a name="set-up-tax-calculation-in-dynamics-365"></a>Skonfiguruj obliczanie podatku w Dynamics 365
 

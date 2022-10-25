@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: dc8bd020a53214abab28ec51ffc6d6be74979932
-ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
+ms.openlocfilehash: f12d6e1d417a260477b1eb4e027b850d1862f51f
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9643984"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689812"
 ---
 # <a name="set-up-a-simulated-sensor-for-testing"></a>Umożliwia skonfigurowanie symulowanego czujnika do testowania
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Jeśli użytkownik chce przetestować Sensor Data Intelligence bez instalacji fizycznych czujników, możesz użyć usługi *symulatora online Raspberry Pi z Azure IoT* do emulowania sygnałów czujnika i wysyłania ich do swojego rozwiązania Internetu rzeczy (IoT) w Microsoft Azure. Aby uzyskać więcej informacji o symulatorze, zobacz temat [Łączenie symulatora online Raspberry Pi z Azure IoT Hub (Node.js)](/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started).
 

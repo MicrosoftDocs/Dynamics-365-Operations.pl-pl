@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: d894b83afe822e013c0c4375e5cfe5e7e8ac8d1d
-ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
+ms.openlocfilehash: 31b45fdb92cf8a590ff77104f0c8015fb4d329d5
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "9186750"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689496"
 ---
 # <a name="demand-driven-material-requirements-planning-ddmrp-overview"></a>Przegląd – Planowanie zapotrzebowania materiałowego sterowane popytem (Demand Driven Material Requirements Planning - DDMRP)
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Od lat firmy stosują planowanie zapotrzebowania materiałowego (MRP) jako system obliczania materiałów i komponentów potrzebnych do wytworzenia produktu. Jednak obecnie łańcuchy dostaw uległy zmianie. Części mają dłuższy czas realizacji, ponieważ są coraz częściej sprowadzane z zagranicy. W związku z tym wiele firm zgłasza, że doświadcza braków lub nadwyżek magazynowych, ponieważ nie wie, ile zapasów powinno się zmagazynować. Jest też więcej wahań na rynku (czasem niedokładnie prognozowanych), a klienci żądają produktów o krótkim czasie realizacji. Dlatego na całym świecie występują niedobory w łańcuchu dostaw. Ponadto narzędzia MRP często dają planistom tysiące czynności do wykonania. Dlatego trudno jest wiedzieć, na czym się skupić. Często rozwiązaniem wielu z tych problemów jest przejście na Planowanie zapotrzebowania materiałowego kierowanego popytem (DDMRP).
 

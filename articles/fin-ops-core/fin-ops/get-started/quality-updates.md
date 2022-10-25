@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 25306a8ccebb5cd01debc90cf497d4a942840ef4
-ms.sourcegitcommit: 43a0fb019bc67c00c39c2778343ba89924c3322c
+ms.openlocfilehash: 60f9d84b240016671ff726fc3cca2e02cfd811ca
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9671433"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689235"
 ---
 # <a name="proactive-quality-updates"></a>Aktywne aktualizacje jakości
 
@@ -56,7 +56,9 @@ Zestaw zmian procesów jest implementowany przed aktywacją wdrożenia aktywnej 
 
 - **Schemat** — narzędzie zapewnia, że kompilacje aktualizacji jakości obejmują tylko zmiany schematów, które można zastosować w trybie online usługi. To podejście pomoże zachować możliwość stosowania aktualizacji przy użyciu przestoju najbliższego zera.
 - **Zwiększona obserwacja zmian** — obecnie istnieje już dodatkowy krok procesu zatwierdzania zmian uwzględnianych w aktualizacji jakości. Ograniczenie w dodatkowym kroku zostanie zwiększone, aby zmniejszyć ryzyko cofnięć. Zmiany powodujące niezgodność nie są dozwolone w aktualizacjach jakości, a zwiększona obserwacja zmian pomaga zapewnić, że osiągamy ten cel.
-- **Widoczność** — powiadomimy za pośrednictwem poczty e-mail i usługi Lifecycle Services (LCS) o zbliżających się aktywnych aktualizacjach jakości. Ponadto zespoły pomocy technicznej i informacje dotyczące zdarzeń mają wgląd w możliwości aktywnego wdrażania aktualizacji jakości.
+- **Widoczność** — będziemy wysyłać powiadomienia za pośrednictwem centrum administracyjnego, usługi Lifecycle Services (LCS) i innych dostępnych kanałów o zbliżających się aktywnych aktualizacjach jakości. Ponadto zespoły pomocy technicznej i informacje dotyczące zdarzeń mają wgląd w możliwości aktywnego wdrażania aktualizacji jakości.
+ > [!NOTE]
+ > Zespół ds. komunikacji Microsoft bada postępującą degradację narzędzi poczty e-mail, która uniemożliwia dostarczanie powiadomień e-mail. Kontynuuj monitorowanie Centrum wiadomości Microsoft 365 pod kątem wiadomości powiązanych z dołączaniem i powiadomieniami.
 - **Zabezpieczenie awarii za pomocą dystrybucji testowej** – Funkcja obowiązuje w celu zmiany kodu w razie zastosowania w poprawce aktualizacji jakości lub do użycia istniejących dystrybucji testowych funkcji właściwych dla tej poprawki. Jeśli po proaktywnym wdrożeniu wymagane jest wycofanie lub wyłączenie zmiany, można to zrobić za pośrednictwem systemu lotów, aby uniknąć dalszych awarii.
 - **Wyznaczenie synchronizacji piaskownicy** — poniżej 20% odbiorców ma obecnie wiele piaskownic i jedna piaskownica jest wdrożona tam, gdzie wersja odpowiada wersji produkcyjnej, co pomaga w rozwiązywaniu problemów. Jeśli klient używa piaskownicy do testowania nowszej wersji niż w wersji produkcyjnej, ta piaskownica będzie otrzymywać aktualizacje jakości w nowszej wersji.
 
@@ -80,10 +82,10 @@ Aby uzyskać informacje dotyczące godzin bezczynności w poszczególnych region
 
 | Stacja | Regiony | Zakończony harmonogram| Nadchodzący harmonogram piaskownicy
 |---|---|---|---|
-| Stacja 1 | Kanada Środkowa, Kanada Wschodnia, Francja Środkowa, Indie Środkowe, Norwegia Wschodnia, Szwajcaria Zachodnia | Od 15 września do 18 września 2022, a od 19 września do 22 września 2022 | Od 7 października do 10 października 2022 |
-| Stacja 2 | Francja Południowa, Indie Południowe, Norwegia Zachodnia, Szwajcaria Północna, Północna Republika Południowej Afryki, Australia Wschodnia, Wschodnie Zjednoczone Królestwo, Północne Zjednoczone Emiraty Arabskie, Japonia Wschodnia, Australia Południowo-Wschodnia, Azja Południowo-Wschodnia | Od 25 września do 28 września 2022 | Od 7 października do 10 października 2022 |
-| Stacja 3 | Azja Wschodnia,Zachodnie Zjednoczone Królestwo, Japonia Zachodnia, Brazylia Południowa, Europa Zachodnia, Wschodnie Stany Zjednoczone, Północne Zjednoczone Emiraty Arabskie | Od 26 września do 29 września 2022 | Od 7 października do 10 października 2022 |
-| Stacja 4 | Europa Północna, Środkowe Stany Zjednoczone, Zachodnie Stany Zjednoczone | Od 28 września do 1 października 2022 | Od 7 października do 10 października 2022 |
+| Stacja 1 | Kanada Środkowa, Kanada Wschodnia, Francja Środkowa, Indie Środkowe, Norwegia Wschodnia, Szwajcaria Zachodnia | Od 15 września do 18 września 2022, od 19 września do 22 września 2022 i od 7 października do 10 października 2022 | Od 25 października do 28 października 2022 |
+| Stacja 2 | Francja Południowa, Indie Południowe, Norwegia Zachodnia, Szwajcaria Północna, Północna Republika Południowej Afryki, Australia Wschodnia, Wschodnie Zjednoczone Królestwo, Północne Zjednoczone Emiraty Arabskie, Japonia Wschodnia, Australia Południowo-Wschodnia, Azja Południowo-Wschodnia | Od 25 września do 28 września 2022 i od 7 października do 10 października 2022 | Od 25 października do 28 października 2022 |
+| Stacja 3 | Azja Wschodnia,Zachodnie Zjednoczone Królestwo, Japonia Zachodnia, Brazylia Południowa, Europa Zachodnia, Wschodnie Stany Zjednoczone, Północne Zjednoczone Emiraty Arabskie | Od 26 września do 29 września 2022 i od 7 października do 10 października 2022 | Od 25 października do 28 października 2022 |
+| Stacja 4 | Europa Północna, Środkowe Stany Zjednoczone, Zachodnie Stany Zjednoczone | Od 28 września do 1 października 2022 i od 7 października do 10 października 2022 | Od 25 października do 28 października 2022 |
 | Stacja 5 | DoD, Government Community Cloud, Chiny | Niezaplanowane | Niezaplanowane |
 
 ### <a name="proactive-quality-update-release-10029"></a><a name="schedule"></a> Aktywna aktualizacja jakości, wydanie: 10.0.29

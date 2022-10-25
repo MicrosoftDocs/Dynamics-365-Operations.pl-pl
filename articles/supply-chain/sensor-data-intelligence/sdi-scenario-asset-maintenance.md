@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: fcd16d09b4293046c457b602857ef8950e8259c6
-ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
+ms.openlocfilehash: 2d103406118be4385177b678de424df12af69c2e
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9644065"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689408"
 ---
 # <a name="the-asset-maintenance-scenario"></a>Scenariusz konserwacji składnika majątku
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Scenariusz *konserwacji składnika majątku* umożliwia tworzenie rekordów liczników przy użyciu danych czujnika. Rekordy liczników śledzą użycie zasobu maszyny i są używane jako dane wejściowe do generowania harmonogramu konserwacji składnika majątku.
 
@@ -115,6 +116,9 @@ Po przygotowaniu danych oraz skonfigurowaniu i uaktywnieniu scenariusza *konserw
 1. Wybierz **Zarządzanie składnikami majątku \> Składniki majątku \> Wszystkie składniki majątku**.
 1. Odszukaj i zaznacz składnik majątku, który chcesz zbadać. (Jeśli używasz danych demonstracyjnych utworzonych wcześniej w tym artykule, wybierz *AK-101*).
 1. W okienku akcji na karcie **Zasób**, w grupie **Prewencyjne**, wybierz **Liczniki**, by otworzyć stronę rekordów liczników dla składnika majątku *AK-101*.
+
+> [!NOTE]
+> Rekordy liczników są domyślnie konfigurowane tak, aby były wstawiane co trzy godziny, co oznacza, że dane są agregowane w tym interwale. Interwał można zmienić, edytując zapytanie w składniku usługi Azure Stream Analytics.
 
 ### <a name="generate-maintenance-work-orders"></a>Generuj zlecenia pracy konserwacji
 

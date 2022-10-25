@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: 073762581d84646ba12b570e57327b7cab8efd3b
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: 25ccbda1628544f14dc32d9bea3f2162ad47d79e
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9428422"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690029"
 ---
 # <a name="the-production-delays-scenario"></a>Scenariusz opóźnień produkcji
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Scenariusz *opóźnień produkcji* generuje powiadomienie, jeśli przepływność produkcji spadnie poniżej określonej wartości progowej. W tym scenariuszu sygnał *uszkodzona część* jest wysyłany do usługi IoT Hub Microsoft Azure dla każdej produkowanej pozycji. W Dynamics 365 Supply Chain Management opóźnienie jest obliczane na podstawie czasu, w jakim ma być uruchomione zlecenia produkcyjne, liczby towarów, które powinny zostać wyprodukowane, ilości czasu, przez jaki zadanie jest wykonywane oraz liczby odebranych sygnałów *uszkodzona część*. Powiadomienie o opóźnieniu jest generowane, jeśli liczba sygnałów *uszkodzona część* dla zadania spadnie poniżej wartości progowej.
 

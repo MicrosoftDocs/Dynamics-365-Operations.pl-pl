@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: b494e15488bed148119aed0e9d62ab1740f38add
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: a01dfd72428c75d1bb24f32c73c9c799a6c5017e
+ms.sourcegitcommit: b3579ac62e1ea15664a114abcc2409cad76d4f19
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9334874"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "9682514"
 ---
 # <a name="engineering-change-management-overview"></a>Omówienie zarządzania zmianami inżynieryjnymi
 
@@ -73,6 +73,9 @@ Następnie włącz klucze konfiguracji, wykonując następujące kroki. Nie są 
 1. Baza danych musi być zsynchronizowana, aby upewnić się, że klucze konfiguracji są prawidłowo aktualizowane w celu odzwierciedlenia wprowadzonych zmian. W zależności od typu środowiska, nad którym pracujesz, wykonaj jeden z następujących kroków:
     - **W przypadku środowisk warstwy 1 (programistycznych)**: otwórz projekt w firmie Microsoft Visual Studio, a następnie wybierz **Dynamics 365 \> Synchronizuj bazę danych \> Synchronizuj**.
     - **W przypadku środowisk warstwy 2 (i wyższych)**: baza danych synchronizuje się automatycznie po wsadowym trybie konserwacji, dzięki czemu można pominąć ten krok.
+
+> [!NOTE]
+> Aby można było korzystać z funkcji zarządzania zmianami projektowymi, sekwencję identyfikatorów BOM i sekwencję identyfikatorów formuł (jeśli używasz formuł) należy ustawić na *Automatyczne* na stronie **Sekwencje identyfikatorów**.
 
 ### <a name="turn-on-additional-engineering-change-management-features"></a>Włącz dodatkowe funkcje zarządzania zmianami inżynieryjnymi w systemie
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f53d5d4daea076cc63308a83292f8f8c1ee1d022
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8d5ded4b08d562fff9ec5fd9a3de591f944e3ee0
+ms.sourcegitcommit: dca54dd3afc7c94795d89c63050b105df2c48e3f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853504"
+ms.lasthandoff: 10/15/2022
+ms.locfileid: "9682906"
 ---
 # <a name="cost-control-workspace"></a>Obszar roboczy kontroli kosztów 
 
@@ -53,7 +53,7 @@ Na skróconej karcie **Filtrowanie danych** można zdefiniować dane podstawowe 
 |-------------------------------------------------------------------|-------------|
 | Księga rachunku kosztów                                            | **Księga rachunku kosztów**, na której bazuje raport. Wartość jest ustalana na podstawie pola **Jednostka kontroli kosztów**. |
 | Jednostka kontroli kosztów                                                 | Wybrana wartość decyduje o księgi rachunku kosztów i obiektach kosztów, na których będzie oparty ten raport. |
-| Hierarchia wymiarów statystycznych, Hierarchia wymiarów składników kosztów | Rekord konfiguracji obszaru roboczego **Kontrola kosztów** może przekazywać wartości niepieniężne lub pieniężne, ale nie w tym samym układzie. Wybierz wartość w polu **Hierarchia wymiarów składników kosztów**, aby przekazywać wartości pieniężne. Wybierz wartość w polu **Hierarchia wymiarów statystycznych**, aby przekazywać wartości niepieniężne. Wybrany rekord hierarchii wymiarów określa strukturę poziomów raportowania i agregacji.<blockquote>[!NOTE]<br>Aby wyświetlić wartości niepieniężne i pieniężne obok siebie, można wyeksportować dane do programu Microsoft Excel dla pakietu zawartości usługi Microsoft Power BI.</blockquote> |
+| Hierarchia wymiarów statystycznych, Hierarchia wymiarów składników kosztów | Rekord konfiguracji obszaru roboczego **Kontrola kosztów** może przekazywać wartości niepieniężne lub pieniężne, ale nie w tym samym układzie. Wybierz wartość w polu **Hierarchia wymiarów składników kosztów**, aby przekazywać wartości pieniężne. Wybierz wartość w polu **Hierarchia wymiarów statystycznych**, aby przekazywać wartości niepieniężne. Wybrany rekord hierarchii wymiarów określa strukturę poziomów raportowania i agregacji.<blockquote>**UWAGA:**<br>Aby wyświetlić wartości niepieniężne i pieniężne obok siebie, można wyeksportować dane do programu Microsoft Excel dla pakietu zawartości usługi Microsoft Power BI.</blockquote> |
 | Hierarchia wymiarów obiektu kosztów      | Wybierz hierarchię wymiaru obiektu kosztów pasującą do definiowanego celu sprawozdawczości. |
 | Pierwotna wersja budżetu                                           | Wybierz identyfikator wersji budżetu pełniącego rolę pierwotnego budżetu w kontekście tego raportu. |
 | Skorygowana wersja budżetu                                            | Wybierz identyfikator wersji budżetu pełniącego rolę skorygowanego budżetu w kontekście tego raportu. |
@@ -64,7 +64,7 @@ Aparat obliczania kosztów ogólnych wykonuje kilka kroków obliczeniowych na da
 
 | Pole                  | opis |
 |------------------------|-------------|
-| Kalendarzowy okres obrachunkowy | Wybierz okres kalendarza obrachunkowego, do którego ma zostać przypisany identyfikator obliczania kosztów ogólnych.<blockquote>[!NOTE]<br>Okresy obrachunkowe wymienione w tym polu pochodzą z kalendarza obrachunkowego skojarzonego z księgą rachunku kosztów.</blockquote> |
+| Kalendarzowy okres obrachunkowy | Wybierz okres kalendarza obrachunkowego, do którego ma zostać przypisany identyfikator obliczania kosztów ogólnych.<blockquote>**UWAGA:**<br>Okresy obrachunkowe wymienione w tym polu pochodzą z kalendarza obrachunkowego skojarzonego z księgą rachunku kosztów.</blockquote> |
 | Wersja rzeczywista         | Wybierz odpowiedni identyfikator obliczania kosztów ogólnych. |
 | Wersja budżetu         | Wybierz odpowiedni identyfikator obliczania kosztów ogólnych. |
 | Skorygowana wersja budżetu | Wybierz odpowiedni identyfikator obliczania kosztów ogólnych. |
@@ -77,10 +77,10 @@ Wartości w wybranych kolumnach zostaną pomnożone przez wybrane wartości na s
 
 | Pole                | opis |
 |----------------------|-------------|
-| Bieżący okres       | Jest wyświetlane saldo bieżącego okresu obrachunkowego.<blockquote>[!NOTE]<br>Domyślnie bieżący okres zależy od daty sesji. W obszarze roboczym **Kontrola kosztów** można wybrać konkretny okres obrachunkowy. Wtedy wybrana wartość reprezentuje bieżący okres.</blockquote> |
-| Poprzedni okres      | Jest wyświetlane saldo poprzedniego okresu obrachunkowego. Stosowany jest poniższy wzór:<br>Bieżący okres obrachunkowy – 1<blockquote>[!NOTE]<br>Domyślnie poprzedni okres jest ustalany na podstawie daty sesji. W obszarze roboczym **Kontrola kosztów** można wybrać konkretny okres obrachunkowy jako bieżący okres. Wtedy wartość w polu **Poprzedni okres** zostanie odpowiednio przeliczona.</blockquote> |
-| Od początku roku do chwili obecnej         | Jest wyświetlana wartość od początku roku. Stosowany jest poniższy wzór:<br>YearToDate (bieżący okres obrachunkowy)<blockquote>[!NOTE]<br>Domyślnie bieżący okres zależy od daty sesji. W obszarze roboczym **Kontrola kosztów** można wybrać konkretny okres obrachunkowy. Wtedy wybrana wartość reprezentuje bieżący okres, a wartość **Od początku roku do chwili obecnej** zostanie odpowiednio zaktualizowana.</blockquote> |
-| Średnia od początku roku do chwili obecnej | Jest wyświetlana średnia wartość od początku roku. Stosowany jest poniższy wzór:<br>(YearToDate [bieżący okres obrachunkowy]) / (Count [bieżący okres obrachunkowy])<p><strong>Przykład</strong></p><ul><li>**Element członkowski wymiaru statystycznego:** Pracownicy etatowi zatrudnieni w pełnym wymiarze czasu</li><li>**Bieżąca data:** 21-3-2017</li><li>**Okres:** Okres obrachunkowy 1, Okres obrachunkowy 2, Okres obrachunkowy 3</li><li>**Wartość:** 10, 10, 12</li></ul>W tym przypadku **Średnia od początku roku do chwili obecnej** = (10 + 10 + 12) ÷ 3 = 10,67<p>Wartość **Średnia od początku roku do chwili obecnej** można obliczyć dla elementów członkowskich wymiaru składnika kosztu i elementów członkowskich wymiaru statystycznego.</p><blockquote>[!NOTE]<br>Domyślnie bieżący okres zależy od daty sesji. W obszarze roboczym **Kontrola kosztów** można wybrać konkretny okres obrachunkowy. Wtedy wybrana wartość reprezentuje bieżący okres, a wartość **Od początku roku do chwili obecnej** i **Średnia od początku roku do chwili obecnej** zostaną odpowiednio zaktualizowane.</blockquote> |
+| Bieżący okres       | Jest wyświetlane saldo bieżącego okresu obrachunkowego.<blockquote>**UWAGA:**<br>Domyślnie bieżący okres zależy od daty sesji. W obszarze roboczym **Kontrola kosztów** można wybrać konkretny okres obrachunkowy. Wtedy wybrana wartość reprezentuje bieżący okres.</blockquote> |
+| Poprzedni okres      | Jest wyświetlane saldo poprzedniego okresu obrachunkowego. Stosowany jest poniższy wzór:<br>Bieżący okres obrachunkowy – 1<blockquote>**UWAGA:**<br>Domyślnie poprzedni okres jest ustalany na podstawie daty sesji. W obszarze roboczym **Kontrola kosztów** można wybrać konkretny okres obrachunkowy jako bieżący okres. Wtedy wartość w polu **Poprzedni okres** zostanie odpowiednio przeliczona.</blockquote> |
+| Od początku roku do chwili obecnej         | Jest wyświetlana wartość od początku roku. Stosowany jest poniższy wzór:<br>YearToDate (bieżący okres obrachunkowy)<blockquote>**UWAGA:**<br>Domyślnie bieżący okres zależy od daty sesji. W obszarze roboczym **Kontrola kosztów** można wybrać konkretny okres obrachunkowy. Wtedy wybrana wartość reprezentuje bieżący okres, a wartość **Od początku roku do chwili obecnej** zostanie odpowiednio zaktualizowana.</blockquote> |
+| Średnia od początku roku do chwili obecnej | Jest wyświetlana średnia wartość od początku roku. Stosowany jest poniższy wzór:<br>(YearToDate [bieżący okres obrachunkowy]) / (Count [bieżący okres obrachunkowy])<p><strong>Przykład</strong></p><ul><li>**Element członkowski wymiaru statystycznego:** Pracownicy etatowi zatrudnieni w pełnym wymiarze czasu</li><li>**Bieżąca data:** 21-3-2017</li><li>**Okres:** Okres obrachunkowy 1, Okres obrachunkowy 2, Okres obrachunkowy 3</li><li>**Wartość:** 10, 10, 12</li></ul>W tym przypadku **Średnia od początku roku do chwili obecnej** = (10 + 10 + 12) ÷ 3 = 10,67<p>Wartość **Średnia od początku roku do chwili obecnej** można obliczyć dla elementów członkowskich wymiaru składnika kosztu i elementów członkowskich wymiaru statystycznego.</p><blockquote>**UWAGA:**<br>Domyślnie bieżący okres zależy od daty sesji. W obszarze roboczym **Kontrola kosztów** można wybrać konkretny okres obrachunkowy. Wtedy wybrana wartość reprezentuje bieżący okres, a wartość **Od początku roku do chwili obecnej** i **Średnia od początku roku do chwili obecnej** zostaną odpowiednio zaktualizowane.</blockquote> |
 
 ### <a name="columns-to-display-for-costs"></a>Kolumny do wyświetlenia dla kosztów
 
@@ -88,11 +88,11 @@ Na skróconej karcie **Kolumny do wyświetlenia dla kosztów** księgowy kosztó
 
 | Pole                 | opis |
 |-----------------------|-------------|
-| Koszt stały            | Kolumna tego typu pokazuje koszty stałe w oparciu o wybrany identyfikator obliczania kosztów ogólnych.<blockquote>[!NOTE]<br>Kolumna tego typu będzie pokazywała saldo tylko w przypadku, gdy wybrano identyfikator obliczania kosztów ogólnych dla okresu obrachunkowego.</blockquote> |
-| Koszt zmienny         | Kolumna tego typu pokazuje koszty zmienne w oparciu o wybrany identyfikator obliczania kosztów ogólnych.<blockquote>[!NOTE]<br>Kolumna tego typu będzie pokazywała saldo tylko w przypadku, gdy wybrano identyfikator obliczania kosztów ogólnych dla okresu obrachunkowego.</blockquote> |
-| Koszt stały + zmienny | Kolumna tego typu pokazuje koszty stałe i zmienne w oparciu o wybrany identyfikator obliczania kosztów ogólnych.<blockquote>[!NOTE]<br>Kolumna tego typu będzie pokazywała saldo tylko w przypadku, gdy wybrano identyfikator obliczania kosztów ogólnych dla okresu obrachunkowego.</blockquote> |
-| Łączny koszt            | Kolumna tego typu pokazuje łączny koszt (nieklasyfikowany, stały i zmienny).<blockquote>[!NOTE]<br>Kolumna tego typu zawsze pokazuje saldo.</blockquote> |
-| Koszt niesklasyfikowany     | Kolumna tego typu pokazuje koszt niesklasyfikowany.<blockquote>[!NOTE]<br>Ta kolumna może służyć do sprawdzania, czy wszystkie koszty zostały prawidłowo sklasyfikowane przez aparat obliczania kosztów ogólnych, czy też należy skorygować reguły zachowania kosztów.</blockquote> |
+| Koszt stały            | Kolumna tego typu pokazuje koszty stałe w oparciu o wybrany identyfikator obliczania kosztów ogólnych.<blockquote>**UWAGA:**<br>Kolumna tego typu będzie pokazywała saldo tylko w przypadku, gdy wybrano identyfikator obliczania kosztów ogólnych dla okresu obrachunkowego.</blockquote> |
+| Koszt zmienny         | Kolumna tego typu pokazuje koszty zmienne w oparciu o wybrany identyfikator obliczania kosztów ogólnych.<blockquote>**UWAGA:**<br>Kolumna tego typu będzie pokazywała saldo tylko w przypadku, gdy wybrano identyfikator obliczania kosztów ogólnych dla okresu obrachunkowego.</blockquote> |
+| Koszt stały + zmienny | Kolumna tego typu pokazuje koszty stałe i zmienne w oparciu o wybrany identyfikator obliczania kosztów ogólnych.<blockquote>**UWAGA:**<br>Kolumna tego typu będzie pokazywała saldo tylko w przypadku, gdy wybrano identyfikator obliczania kosztów ogólnych dla okresu obrachunkowego.</blockquote> |
+| Łączny koszt            | Kolumna tego typu pokazuje łączny koszt (nieklasyfikowany, stały i zmienny).<blockquote>**UWAGA:**<br>Kolumna tego typu zawsze pokazuje saldo.</blockquote> |
+| Koszt niesklasyfikowany     | Kolumna tego typu pokazuje koszt niesklasyfikowany.<blockquote>**UWAGA:**<br>Ta kolumna może służyć do sprawdzania, czy wszystkie koszty zostały prawidłowo sklasyfikowane przez aparat obliczania kosztów ogólnych, czy też należy skorygować reguły zachowania kosztów.</blockquote> |
 
 ### <a name="columns-to-display-for-budgeted-costs"></a>Kolumny do wyświetlenia dla kosztów budżetowych
 
@@ -103,12 +103,12 @@ Na skróconej karcie **Kolumny do wyświetlenia dla kosztów budżetowych** ksi�
 
 | Pole                     | opis |
 |---------------------------|-------------|
-| Budżet                    | Zostaną wyświetlone salda budżetu dla wybranych kolumn.<blockquote>[!NOTE]<br>Salda będą oparte na wersjach budżetu zaznaczonych na skróconej karcie **Filtrowanie danych**.</blockquote> |
+| Budżet                    | Zostaną wyświetlone salda budżetu dla wybranych kolumn.<blockquote>**UWAGA:**<br>Salda będą oparte na wersjach budżetu zaznaczonych na skróconej karcie **Filtrowanie danych**.</blockquote> |
 | Odchylenie budżetu           | Obliczenie i wyświetlenie różnicy między wartościami zabudżetowanymi a faktycznymi. Stosowany jest poniższy wzór:<br>Saldo budżetu – rzeczywiste saldo |
 | Odchylenie budżetu w %      | Obliczenie i wyświetlenie różnicy procentowej między wartościami zabudżetowanymi a faktycznymi. Stosowany jest poniższy wzór:<br>(Saldo budżetu – rzeczywiste saldo) ÷ saldo budżetu |
-| Próg odchylenia w okresie | Ustaw wartość progową dla odchylenia kwoty pieniężnej w bieżącym okresie. Jeśli próg zostanie przekroczony, wiersz zostanie wyróżniony na czerwono w obszarze roboczym **Kontrola kosztów**.<blockquote>[!NOTE]<br>To pole dotyczy tylko składników kosztów reprezentujących rozchody.</blockquote> |
+| Próg odchylenia w okresie | Ustaw wartość progową dla odchylenia kwoty pieniężnej w bieżącym okresie. Jeśli próg zostanie przekroczony, wiersz zostanie wyróżniony na czerwono w obszarze roboczym **Kontrola kosztów**.<blockquote>**UWAGA:**<br>To pole dotyczy tylko składników kosztów reprezentujących rozchody.</blockquote> |
 | Próg odchylenia w roku   | Ustaw wartość progową dla odchylenia kwoty pieniężnej w roku. Jeśli próg zostanie przekroczony, wiersz zostanie wyróżniony na czerwono w obszarze roboczym **Kontrola kosztów**. |
-| Próg odchylenia (%)      | Ustaw wartość progową dla odchylenia w procentach. Jeśli próg zostanie przekroczony, wiersz zostanie wyróżniony na czerwono w obszarze roboczym **Kontrola kosztów**.<blockquote>[!NOTE]<br>Ten sam próg procentowy stosuje się do bieżącego okresu i roku.</blockquote> |
+| Próg odchylenia (%)      | Ustaw wartość progową dla odchylenia w procentach. Jeśli próg zostanie przekroczony, wiersz zostanie wyróżniony na czerwono w obszarze roboczym **Kontrola kosztów**.<blockquote>**UWAGA:**<br>Ten sam próg procentowy stosuje się do bieżącego okresu i roku.</blockquote> |
 
 ## <a name="cost-control-workspace"></a>Obszar roboczy kontroli kosztów
 
