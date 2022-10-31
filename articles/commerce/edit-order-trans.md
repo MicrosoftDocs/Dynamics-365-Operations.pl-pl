@@ -2,7 +2,7 @@
 title: Edycja i przeprowadzanie inspekcji transakcji zamówień online i asynchronicznych zamówień klienta
 description: W tym artykule opisano sposób edytowania i przeprowadzania inspekcji transakcji zamówień online i asynchronicznych zamówień odbiorcy w rozwiązaniu Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 11/04/2020
+ms.date: 10/21/2022
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: ''
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.industry: Retail
-ms.openlocfilehash: dac7ffe6d62aaea11f2f5af0476db446b091938b
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: dbeeff47446c1617da44f34ae56f333717f577a1
+ms.sourcegitcommit: 18b7a02c497709e8d9c7b943d82f1fcc3dafa4cd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287686"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "9712117"
 ---
 # <a name="edit-and-audit-online-order-and-asynchronous-customer-order-transactions"></a>Edycja i przeprowadzanie inspekcji transakcji zamówień online i asynchronicznych zamówień klienta
 
@@ -34,12 +34,13 @@ Między wersjami 10.0.5 i 10.0.6 rozwiązania Commerce dodano do niego obsługę
 
 ## <a name="edit-and-audit-order-transactions"></a>Edycja i przeprowadzanie inspekcji transakcji zamówień
 
-Aby edytować transakcje zamówień i przeprowadzać ich inspekcję w centrali Commerce, wykonaj kroki opisane poniżej.
+Aby edytować transakcje zamówień i przeprowadzać ich inspekcję w centrali Commerce headquarters, wykonaj kroki opisane poniżej.
 
 1. Zainstaluj [Microsoft Dynamics Office Add-in](https://appsource.microsoft.com/product/office/WA104379629?tab=Overview).
-1. Na skróconej karcie **Zamówienie** na karcie **Zamówienia odbiorcy** na stronie **Parametry sieci sprzedaży** określ kod wstrzymania dla opcji **Kod wstrzymania dla błędów synchronizacji zamówień**.
-1. Otwórz obszar roboczy **Finanse sklepu**. Kafelki **Błędy synchronizacji zamówień online** i **Błędy synchronizacji zamówień odbiorcy** oferują wstępnie przefiltrowany widok strony transakcji sprzedaży detalicznej. W każdym z tych widoków można sprawdzić rekordy transakcji, których weryfikacja się nie powiodła, dla odpowiedniego typu zamówień.
-1. Otwórz stronę **Błędy synchronizacji zamówień online** lub **Błędy synchronizacji zamówień odbiorcy**. Wybierz rekord, aby wyświetlić szczegóły błędu synchronizacji. Na skróconej karcie **Stan synchronizacji** są widoczne następujące szczegóły błędu:
+1. Na skróconej karcie **Zamówienie** na karcie **Zamówienia odbiorcy** na stronie **Parametry rozwiązania Commerce** określ kod wstrzymania dla opcji **Kod wstrzymania dla błędów synchronizacji zamówień**.
+2. Wstrzymanie innych zadań synchronizacji zamówień, które będą kolidować z czasem edycji i inspekcji.
+3. Otwórz obszar roboczy **Finanse sklepu**. Kafelki **Błędy synchronizacji zamówień online** i **Błędy synchronizacji zamówień odbiorcy** oferują wstępnie przefiltrowany widok strony transakcji sprzedaży detalicznej. W każdym z tych widoków można sprawdzić rekordy transakcji, których weryfikacja się nie powiodła, dla odpowiedniego typu zamówień.
+4. Otwórz stronę **Błędy synchronizacji zamówień online** lub **Błędy synchronizacji zamówień odbiorcy**. Wybierz rekord, aby wyświetlić szczegóły błędu synchronizacji. Na skróconej karcie **Stan synchronizacji** są widoczne następujące szczegóły błędu:
 
     - Stan zamówienia oczekującego
     - Szczegóły błędu zamówienia
@@ -67,7 +68,15 @@ Aby edytować transakcje zamówień i przeprowadzać ich inspekcję w centrali C
 
 1. W polu **Stan zamówienia oczekującego** w pliku programu Excel wprowadź wartość **Edycja**, a następnie opublikuj zmianę. Dzięki temu podczas przetwarzania w czasie wykonywania zadania **Synchronizacja zamówienia** uruchamianego w trybie wsadowym ten rekord nie zostanie pominięty.
 1. W pliku programu Excel możesz zmodyfikować odpowiednie pola, a następnie przekazać dane z powrotem do centrali Commerce, korzystając z funkcji publikowania aplikacji dodatkowej Dynamics Excel. Po opublikowaniu danych zmiany staną się widoczne w systemie. W trakcie publikacji nie jest przeprowadzana weryfikacja zmian wprowadzonych przez użytkownika.
-1. Pełen dziennik inspekcji zmian można wyświetlić, wybierając opcję **Wyświetl dziennik inspekcji** na nagłówku **Transakcja sprzedaży detalicznej** dla zmian na poziomie nagłówka i w odpowiednim obszarze i rekordzie na stosownej stronie transakcji. Na przykład wszystkie zmiany związane z wierszami sprzedaży będą wyświetlane na stronie **Transakcje sprzedaży**, a wszystkie zmiany związane z płatnościami będą wyświetlane na stronie **Transakcje płatności**. Dla zmian są obsługiwane następujące szczegóły inspekcji:
+    > [!NOTE]
+    > Jeśli nie można znaleźć pola, które należy edytować, wykonaj poniższe kroki, aby dodać brakujące pole w arkuszu.
+    >   1. Wybierz **Projekt** w łączniku danych.
+    >   1. Wybierz ikonę ołówka obok tabeli, do której chcesz dodać pole.
+    >   1. Wybierz pole w obszarze **Dostępne pola**, a następnie wybierz **Dodaj**.
+    >   1. Dodaj tyle pól, ile potrzeba, a następnie wybierz opcję **Aktualizuj**.
+    >   1. Po zakończeniu aktualizacji może być konieczne wybranie przycisku **Odśwież**, aby zaktualizować wartości.
+
+3. Pełen dziennik inspekcji zmian można wyświetlić, wybierając opcję **Wyświetl dziennik inspekcji** na nagłówku **Transakcja sprzedaży detalicznej** dla zmian na poziomie nagłówka i w odpowiednim obszarze i rekordzie na stosownej stronie transakcji. Na przykład wszystkie zmiany związane z wierszami sprzedaży będą wyświetlane na stronie **Transakcje sprzedaży**, a wszystkie zmiany związane z płatnościami będą wyświetlane na stronie **Transakcje płatności**. Dla zmian są obsługiwane następujące szczegóły inspekcji:
 
     - Data i godzina modyfikacji
     - Pole

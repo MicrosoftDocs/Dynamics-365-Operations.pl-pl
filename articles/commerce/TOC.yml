@@ -12,6 +12,8 @@
               items:
                 - name: Nowości i zmiany w rozwiązaniu Commerce — strona główna
                   href: get-started/whats-new-home-page.md
+                - name: Rozwiązanie Commerce w wersji 10.0.31 (luty 2023)
+                  href: get-started/whats-new-commerce-10-0-31.md
                 - name: Rozwiązanie Commerce 10.0.30 (listopad 2022)
                   href: get-started/whats-new-commerce-10-0-30.md
                 - name: Rozwiązanie Commerce 10.0.29 (październik 2022)
@@ -568,6 +570,8 @@
                       href: call-center-refund-payments.md
                     - name: 'Konfiguracja, autoryzacja i przechwytywanie karty kredytowej'
                       href: ../finance/accounts-receivable/credit-card-authorizations.md?context=/dynamics365/context/commerce
+                    - name: Limit użycia tokenu płatności
+                      href: dev-itpro/limit-token-usage.md
                     - name: Konfigurowanie nominałów gotówki dla punktu sprzedaży
                       href: cash-denominations.md
                     - name: Konfigurowanie przetwarzania karty kredytowej
@@ -1236,6 +1240,8 @@
                       href: cart-icon-module.md
                     - name: Moduł realizacji transakcji
                       href: add-checkout-module.md
+                    - name: Kody odwołania błędów modułu wyewidencjonowania
+                      href: checkout-module-error-codes.md
                     - name: Moduł płatności
                       href: payment-module.md
                     - name: Moduł adresu wysyłki

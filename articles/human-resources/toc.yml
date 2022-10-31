@@ -10,18 +10,14 @@
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
             - name: Nowości i zmiany w rozwiązaniu Human Resources
               items:
+                - name: Rozwiązanie Human Resources 10.0.31 (scalona infrastruktura)
+                  href: ./get-started/whats-new-changed-10-0-31.md
                 - name: Rozwiązanie Human Resources 10.0.30 (scalona infrastruktura)
                   href: ./get-started/whats-new-changed-10-0-30.md
                 - name: Rozwiązanie Human Resources 10.0.29 (scalona infrastruktura)
                   href: ./get-started/whats-new-changed-10-0-29.md
                 - name: Rozwiązanie Human Resources 10.0.28 (scalona infrastruktura)
                   href: ./get-started/whats-new-changed-10.0.28.md
-                - name: Rozwiązanie Human Resources 10.0.27 (scalona infrastruktura)
-                  href: ./get-started/hr-whats-new-changed-10-0-27.md
-                - name: Human Resources 10.0.26 (scalona infrastruktura)
-                  href: ./get-started/hr-whats-new-changed-10-0-26.md
-                - name: Human Resources 10.0.25 (scalona infrastruktura)
-                  href: ./get-started/hr-whats-new-changed-10-0-25.md
                 - name: Co nowego w rozwiązaniu Dynamics 365 Human Resources (autonomicznym)
                   items:
                     - name: Co nowego w rozwiązaniu Dynamics 365 Human Resources (autonomicznym) — archiwa 2021
@@ -718,6 +714,8 @@
               href: hr-develop-create-performance-review.md
         - name: Szkolenia
           items:
+            - name: Omówienie kursu
+              href: hr-course-overview.md
             - name: Ustawianie kursów szkoleniowych
               href: hr-learning-courses.md
             - name: Omówienie kwestionariuszy

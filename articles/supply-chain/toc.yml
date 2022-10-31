@@ -10,9 +10,9 @@
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?context=/dynamics365/context/supply-chain
             - name: Nowości lub zmiany w aplikacji Supply Chain Management
               items:
-                - name: Nowości i zmiany w aplikacji Supply Chain Management — strona główna
+                - name: Nowości i zmiany w rozwiązaniu Supply Chain Management — strona główna
                   href: get-started/whats-new-home-page.md
-                - name: Rozwiązanie Supply Chain Management w wersji 10.0.31 (luty 2022)
+                - name: Rozwiązanie Supply Chain Management w wersji 10.0.31 (luty 2023)
                   href: get-started/whats-new-scm-10-0-31.md
                 - name: Rozwiązanie Supply Chain Management 10.0.30 (listopad 2022)
                   href: get-started/whats-new-scm-10-0-30.md
@@ -3243,6 +3243,8 @@
               href: transportation/tasks/associate-fuel-index-carrier-accessorial-charge.md
             - name: Świadectwo pochodzenia USMCA
               href: transportation/usmca-certification-of-origin.md
+            - name: Faktury handlowe
+              href: transportation/commercial-invoice.md
             - name: Tworzenie listu przewozowego
               href: transportation/create-bill-of-lading.md
             - name: Planowanie marszrut transportowych frachtu
@@ -3433,8 +3435,14 @@
                       href: warehousing/pack-materials-packing-material-fees.md
                     - name: Kontenery pakowe do wysyłki
                       href: warehousing/packing-containers.md
+                    - name: Drukowanie etykiet kontenera
+                      href: warehousing/print-container-labels.md
                     - name: Praca pakowania dla pakowania kontenerów wychodzących i przetwarzania wysyłek
                       href: warehousing/packing-work.md
+                    - name: Pakowanie kontenerów za pomocą aplikacji mobilnej Warehouse Management
+                      href: warehousing/warehouse-app-packing-containers.md
+                    - name: Przykładowy scenariusz — Pakowanie kontenerów za pomocą aplikacji mobilnej Warehouse Management
+                      href: warehousing/warehouse-app-pack-containers-scenario.md
                     - name: Konfigurowanie zmiany alokacji pozycji na potrzeby pobierania w niedomiarze
                       href: warehousing/tasks/set-up-short-picking-item-reallocation.md
                     - name: Harmonogram prac sterowany przez system
@@ -3691,7 +3699,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
                     - name: Grupowanie systemowe na liście otwartych prac
                       href: warehousing/system-group-on-open-work-list.md
-                    - name: Układ rozsyłania dokumentów dla etykiet numerów identyfikacyjnych
+                    - name: Układy etykiet wyboru trasy dokumentów
                       href: warehousing/document-routing-layout-for-license-plates.md
                     - name: Kody kreskowe GS1 i kody QR
                       href: warehousing/gs1-barcodes.md
@@ -3701,6 +3709,12 @@
                   items:
                     - name: Uaktualnianie procesów zarządzania magazynem z systemu Microsoft Dynamics AX 2012 do aplikacji finansowych i operacyjnych
                       href: warehousing/upgrade-migration-warehouse-management-processes.md
+            - name: Telemetria magazynowa
+              items:
+                - name: Włączanie telemetrii magazynowej za pomocą funkcji Application Insights
+                  href: warehousing/application-insights-warehousing.md
+                - name: Monitorowanie użycia i wydajności urządzenia przenośnego
+                  href: warehousing/application-insights-wma.md
         - name: Rozwój modułu Supply Chain Management
           items:
             - name: Podręcznik programowania kontrolki wykresu Gantta

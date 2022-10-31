@@ -16,12 +16,10 @@
                   href: get-started/whats-new-home-page.md
                 - name: Aktualizacje platformy dla wersji 10.0.31 (luty 2023)
                   href: get-started/whats-new-platform-updates-10-0-31.md
-                - name: Aktualizacja platformy 10.0.30 (listopad 2022)
+                - name: Aktualizacje platformy dla wersji 10.0.30 (listopad 2022)
                   href: get-started/whats-new-platform-updates-10-0-30.md
-                - name: Aktualizacja platformy 10.0.29 (październik 2022)
+                - name: Aktualizacje platformy dla wersji 10.0.29 (październik 2022)
                   href: get-started/whats-new-platform-updates-10-0-29.md
-                - name: Aktualizacja platformy 10.0.28 (sierpień 2022)
-                  href: get-started/whats-new-platform-updates-10-0-28.md
             - name: Usunięte lub wycofane funkcje
               items:
                 - name: Usunięte lub wycofane funkcje — strona główna
@@ -1605,7 +1603,11 @@
             - name: Raport kodów licencji i kluczy konfiguracji
               href: sysadmin/license-codes-configuration-keys-report.md
             - name: Udostępnianie danych między firmami
-              href: sysadmin/cross-company-data-sharing.md
+              href: sysadmin/srs-overview.md
+            - name: Tabele obsługiwane dla udostępniania danych
+              href: sysadmin/drs-srs-tables.md
+            - name: Udostępnianie danych dla deweloperów
+              href: sysadmin/drs-srs-dev.md
             - name: Tryb konserwacji
               href: sysadmin/maintenance-mode.md
             - name: Wstępnie skonfigurowane konta systemowe
