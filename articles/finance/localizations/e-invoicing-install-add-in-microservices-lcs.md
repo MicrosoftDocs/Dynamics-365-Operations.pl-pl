@@ -15,12 +15,12 @@ ms.dyn365.ops.version: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.form: ''
-ms.openlocfilehash: a837b85d4893f2915b5fbb5ffaae8eb95f19bc0e
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 938b00192acc0ff5534239f2f280792471181fad
+ms.sourcegitcommit: 1ecfc1d8afb2201ab895ae6f93304ba2b120f14b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9272281"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "9710816"
 ---
 # <a name="install-the-add-in-for-microservices-in-lifecycle-services"></a>Zainstaluj dodatek dla mikrousług w Lifecycle Services
 
@@ -35,7 +35,7 @@ Aby zarejestrować środowisko, wykonaj następujące kroki.
 2. W projekcie, na pulpicie nawigacyjnym **Środowiska**, wybierz swoje wdrożone środowisko. Wybrane środowisko musi być uruchomione.
 3. Na karcie **Integracja Power Platform** w sekcji **Dodatki środowiska** wybierz pozycję **Zainstaluj nowy dodatek**.
 4. Wybierz **Fakturowanie elektroniczne**.
-5. W polu **Identyfikator aplikacji AAD** wprowadź nazwę **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Ta wartość jest stałą wartością. Upewnij się, że jest wprowadzany tylko unikatowy identyfikator globalnie (GUID). Nie używaj żadnych innych symboli, takich jak spacje, przecinki, kropki czy cudzysłowy.
+5. W polu **Identyfikator aplikacji AAD** wprowadź stałą wartość **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Ta wartość jest zawsze stałą wartością. Upewnij się, że jest wprowadzany tylko unikatowy identyfikator globalnie (GUID). Nie używaj żadnych innych symboli, takich jak spacje, przecinki, kropki czy cudzysłowy.
 6. W polu **Identyfikator dzierżawy usługi AAD** wprowadź identyfikator dzierżawy konta subskrypcji systemu Azure. Dzierżawca Azure Active Directory (Azure AD) określony przez użytkownika powinien być dzierżawcą używanym dla usługi Regulatory Configuration Service (RCS).
 7. Przejrzyj warunki, a następnie zaznacz pole wyboru.
 8. Wybierz **Zainstaluj**. Po kilku minutach stan powinien ulec zmianie z **Instalowane** na **Zainstalowane**. Aby zobaczyć tę zmianę, może być konieczne odświeżenie strony.

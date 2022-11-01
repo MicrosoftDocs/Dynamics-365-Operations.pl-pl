@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-03-04
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 4a0edeedfe42b43ef36c8ca091b01eef815f3632
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f831c5d5719bbbd72c7cff37b8b35826f48ce6e4
+ms.sourcegitcommit: ce58bb883cd1b54026cbb9928f86cb2fee89f43d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856201"
+ms.lasthandoff: 10/25/2022
+ms.locfileid: "9719299"
 ---
 # <a name="inventory-visibility-on-hand-change-schedules-and-available-to-promise"></a>Widoczność dostępnych zapasów — harmonogramy zmian i dostępność zapasów
 
@@ -205,6 +205,7 @@ Poniższych adresów URL interfejsu programowania aplikacji (API) można używa�
 | `/api/environment/{environmentId}/onhand/bulk` | `POST` | Tworzenie wielu zdarzeń zmiany. |
 | `/api/environment/{environmentId}/onhand/indexquery` | `POST` | Zapytanie przy użyciu metody `POST`. |
 | `/api/environment/{environmentId}/onhand` | `GET` | Zapytanie przy użyciu metody `GET`. |
+| `/api/environment/{environmentId}/onhand/exactquery` | `POST` | Dokładne zapytanie przy użyciu metody `POST`. |
 
 Więcej informacji zawiera temat [Publiczne interfejsy API widoczności zasobów reklamowych](inventory-visibility-api.md).
 
@@ -394,6 +395,8 @@ W żądaniu ustaw `QueryATP` na *prawda*, jeśli chcesz odpytywać zaplanowane b
 > [!NOTE]
 > Niezależnie od tego, czy parametr `returnNegative` jest ustawiony na *prawda* lub *fałsz* w treści żądania, wynik będzie zawierał wartości ujemne w przypadku zapytania dotyczącego zaplanowanych dostępnych zmian i wyników ATP. Te ujemne wartości zostaną uwzględnione, ponieważ jeśli zaplanowano tylko zamówienia popytowe lub ilości dostaw są mniejsze niż ilości popytu, ilości planowanych zmian w zapasach będą ujemne. Jeśli wartości ujemne nie zostały uwzględnione, wyniki byłyby mylące. Aby uzyskać więcej informacji dotyczących tej opcji i sposobu działania tej opcji w przypadku innych typów kwerend, zobacz [interfejsy API publiczne widoczności zapasów](inventory-visibility-api.md#query-with-post-method).
 
+### <a name="query-by-using-the-post-method"></a>Zapytanie przy użyciu metody POST
+
 ```txt
 Path:
     /api/environment/{environmentId}/onhand/indexquery
@@ -419,14 +422,14 @@ Body:
     }
 ```
 
-W poniższym przykładzie pokazano, jak utworzyć treść żądania, która może zostać przesłana do widoczności zapasów za pomocą metody `POST`.
+W poniższym przykładzie pokazano, jak utworzyć treść żądania zapytania indeksu, która może zostać przesłana do widoczności zapasów za pomocą metody `POST`.
 
 ```json
 {
     "filters": {
         "organizationId": ["usmf"],
         "productId": ["Bike"],
-        "siteId": ["1"],
+        "SiteId": ["1"],
         "LocationId": ["11"]
     },
     "groupByValues": ["ColorId", "SizeId"],
@@ -435,7 +438,7 @@ W poniższym przykładzie pokazano, jak utworzyć treść żądania, która moż
 }
 ```
 
-### <a name="get-method-example"></a>Przykład metody GET
+### <a name="query-by-using-the-get-method"></a>Zapytanie przy użyciu metody GET
 
 ```txt
 Path:
@@ -453,7 +456,7 @@ Query(Url Parameters):
     [Filters]
 ```
 
-W poniższym przykładzie pokazano, jak utworzyć adres URL żądania jako żądanie `GET`.
+W poniższym przykładzie pokazano, jak utworzyć adres URL żądania zapytania indeksu jako żądanie `GET`.
 
 ```txt
 https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand?organizationId=usmf&productId=Bike&SiteId=1&LocationId=11&groupBy=ColorId,SizeId&returnNegative=true&QueryATP=true
@@ -461,9 +464,53 @@ https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.c
 
 Wynik tego żądania `GET` jest dokładnie taki sam, jak wynik żądania `POST` w poprzednim przykładzie.
 
+### <a name="exact-query-by-using-the-post-method"></a>Dokładne zapytanie przy użyciu metody POST
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/exactquery
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        dimensionDataSource: string, # Optional
+        filters: {
+            organizationId: string[],
+            productId: string[],
+            dimensions: string[],
+            values: string[][],
+        },
+        groupByValues: string[],
+        returnNegative: boolean,
+    }
+```
+
+W poniższym przykładzie pokazano, jak utworzyć dokłaną treść żądania zapytania indeksu, która może zostać przesłana do widoczności zapasów za pomocą metody `POST`.
+
+```json
+{
+    "filters": {
+        "organizationId": ["usmf"],
+        "productId": ["Bike"],
+        "dimensions": ["SiteId", "LocationId"],
+        "values": [
+            ["1", "11"]
+        ]
+    },
+    "groupByValues": ["ColorId", "SizeId"],
+    "returnNegative": true,
+    "QueryATP":true
+}
+```
+
 ### <a name="query-result-example"></a>Przykład wyniku zapytania
 
-Obie poprzednie przykłady kwerend mogą powodować następującą odpowiedź. W tym przykładzie system jest skonfigurowany przy użyciu następujących ustawień:
+Którakolwiek z poprzednich przykładów zapytań może powodować następującą odpowiedź. W tym przykładzie system jest skonfigurowany przy użyciu następujących ustawień:
 
 - **Miara obliczona ATP:** *iv.onhand = pos.inbound – pos.outbound*
 - **Okres planowania:** *7*

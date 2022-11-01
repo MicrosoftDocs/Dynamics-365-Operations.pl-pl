@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 0f42ad593f59f716fb6cb535d73654d3549ba00e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c3024ca2e3b7eb24ac9a171def4a72cde7493a7a
+ms.sourcegitcommit: 9e6a9d644a34158390c6e209e80053ccbdb7d974
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860733"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9708625"
 ---
 # <a name="configure-job-card-for-devices"></a>Konfiguruj kartę zadań dla urządzeń
 
@@ -73,7 +73,7 @@ Skrócona karta **Ogólne** umożliwia skonfigurowanie każdej z różnych opcji
 - **Grupa zasobów** — umożliwia wybór grupy zasobów, która ma zostać zastosowana jako domyślne kryterium filtru dla listy zadań wyświetlanych dla każdego pracownika. Tylko zadania zaplanowane na zasobach pogrupowanych w wybranej grupy zasobów będą początkowo wyświetlane przez urządzenie. Jeśli opcja **Zezwalaj pracownikom na konfigurowanie filtrów osobistych** jest włączona, pracownicy będą mogli edytować tę wartość. w przeciwnym razie ten filtr będzie stosowany zawsze, gdy ta konfiguracja urządzenia jest aktywna.
 - **Zasoby** — umożliwia wybór zasobów, które mają zostać zastosowane jako domyślne kryterium filtru dla listy zadań wyświetlanych dla każdego pracownika. Tylko zadania zaplanowane na wybranym zasobie będą początkowo wyświetlane przez urządzenie. Jeśli opcja **Zezwalaj pracownikom na konfigurowanie filtrów osobistych** jest włączona, pracownicy będą mogli edytować tę wartość. w przeciwnym razie ten filtr będzie stosowany zawsze, gdy ta konfiguracja urządzenia jest aktywna.
 - **Generowanie numeru identyfikacyjnego** — ustawienie tej opcji na wartość **Tak** powoduje generowanie nowego numeru identyfikacyjnego za każdym razem, gdy pracownik używa urządzenia karty zadań do zgłaszania wyrobów gotowych. Numer identyfikacyjny jest generowany na podstawie sekwencji numerów ustawionej na stronie **Parametry zarządzania magazynem**. Po ustawieniu wartości **Nie** pracownicy muszą określić istniejący numer identyfikacyjny podczas zgłaszania wyrobów gotowych.
-- **Drukuj etykietę** — ustawienie tej opcji na wartość **Tak** powoduje Drukowanie etykiety numeru identyfikacyjnego, gdy pracownik korzysta z urządzenia karty zadań w celu zgłoszenia jako gotowej. Konfiguracja etykiety jest ustawiana w obszarze marszruta dokumentów, zgodnie z opisem w [Układ rozsyłania dokumentów dla etykiet numerów identyfikacyjnych](../warehousing/document-routing-layout-for-license-plates.md).
+- **Drukuj etykietę** — ustawienie tej opcji na wartość **Tak** powoduje Drukowanie etykiety numeru identyfikacyjnego, gdy pracownik korzysta z urządzenia karty zadań w celu zgłoszenia jako gotowej. Konfiguracja etykiety jest ustawiana w obszarze marszruta dokumentów, zgodnie z opisem w [Układy etykiet rozsyłania dokumentów](../warehousing/document-routing-layout-for-license-plates.md).
 
 <a name="assigned-users"></a>
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: ae574e25c5ef0c1736ec13e2ee3fcc11b323721f
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 7196306b34a72e4c53113dd644f666346f170ed7
+ms.sourcegitcommit: 9e6a9d644a34158390c6e209e80053ccbdb7d974
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336194"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9708733"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurowanie interfejsu wykonania hal produkcyjnych
 
@@ -164,7 +164,7 @@ Poniższe ustawienia są dostępne na skróconej karcie **Ogólne**.
 - **Zezwalaj na blokowanie ekranu dotykowego** – tę opcję należy wybrać *Tak*, aby umożliwić pracownikom zablokowanie ekranu dotykowego interfejsu wykonawczego hali produkcyjnej, aby mogli go oczyścić. Jeśli ta opcja jest ustawiona na *Tak*, do strony rejestracji zostanie dodany przycisk **Blokowanie ekranu ze względu na dezynfekcję**. Po wybraniu tego przycisku przez pracownika ekran dotykowy jest tymczasowo blokowany, aby zapobiec niezamierzonemu wprowadzaniu. Wyświetlany jest również czasomierz odliczania. Pracownik może następnie bezpiecznie oczyścić urządzenie i ekran. Po zakończeniu odliczania ekran dotykowy automatycznie odblokowuje ekran.
 - **Czas trwania blokady ekranu** – gdy opcja **Zezwalaj na blokowanie ekranu dotykowego** jest ustawiona na *Tak*, ta opcja służy do określenia liczby sekund, kiedy ekran dotykowy powinien być zablokowany do oczyszczania. Czas trwania musi być liczbą od 5 do 120 sekund.
 - **Generowanie numeru identyfikacyjnego** – ustawienie tej opcji na wartość *Tak*, aby generować nową tablicę rejestracyjną za każdym razem, gdy pracownik korzysta z interfejsu wykonawczego hali produkcyjnej, aby zgłosić gotowość. Numer identyfikacyjny jest generowany na podstawie sekwencji numerów ustawionej na stronie **Parametry zarządzania magazynem**. Po ustawieniu wartości opcji *Nie* pracownicy muszą określić istniejący numer identyfikacyjny podczas zgłaszania wyrobów gotowych.
-- **Drukuj etykietę** – ustawienie tej opcji na wartość *Tak* powoduje Drukowanie etykiety numeru identyfikacyjnego, gdy pracownik używa interfejsu wykonawczego hali produkcyjnej do zgłaszania zakończenia. Konfiguracja etykiety jest ustawiana w obszarze marszruta dokumentów, zgodnie z opisem w [Układ rozsyłania dokumentów dla etykiet numerów identyfikacyjnych](../warehousing/document-routing-layout-for-license-plates.md).
+- **Drukuj etykietę** – ustawienie tej opcji na wartość *Tak* powoduje Drukowanie etykiety numeru identyfikacyjnego, gdy pracownik używa interfejsu wykonawczego hali produkcyjnej do zgłaszania zakończenia. Konfiguracja etykiety jest ustawiana w obszarze marszruta dokumentów, zgodnie z opisem w [Układy etykiet rozsyłania dokumentów](../warehousing/document-routing-layout-for-license-plates.md).
 
 ### <a name="the-tab-selection-fasttab"></a>Wybór karty na skróconej karcie
 

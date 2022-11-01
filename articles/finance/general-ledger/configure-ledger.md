@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-09
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: d15980b05cfac68f2e2441c86b4506c13b38b4d5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 14d6ba013a93756f86e959756dd3073851881095
+ms.sourcegitcommit: c6c2486be2359bd30106f7f52bda788239147d8c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864347"
+ms.lasthandoff: 10/22/2022
+ms.locfileid: "9713897"
 ---
 # <a name="configure-ledgers"></a>Konfigurowanie ksiąg
 
@@ -42,7 +42,7 @@ Każdą osobę prawną w Dynamics 365 Finance można skonfigurować w taki spos�
 
 Należy zauważyć, że jeśli istnieje wiele struktur kont, można wybrać tylko struktury kont, które nie mają nakładających się kombinacji kont głównych i wymiarów finansowych. Na przykład jedna ze struktur kont jest skonfigurowana w taki sposób, aby dodać jednostkę biznesową dla kont głównych z zakresu od 1000 do 1999. W innej strukturze konta dodano wymiar finansowy działu dla kont głównych rozpoczynających się od 1. W takim przypadku tylko jedna struktura konta może być dodana w tej samej osobie prawnej.
 
-Aby skonfigurować struktury kont dla księgi, na stronie **Księga**, na skróconej karcie **Struktury kont** wybierz **Dodaj**, wybierz strukturę konta z listy, a następnie wybierz opcję **Wybierz**. Dodanie i zapisanie struktur kont może potrwać kilka minut. Należy zauważyć, że wybrane struktury kont muszą być aktywne. W przeciwnym razie szczegóły struktur kont nie będą obowiązywać w osobach prawnych, z którymi są połączone.
+Aby skonfigurować struktury kont dla księgi, na stronie **Księga**, na skróconej karcie **Struktury kont** wybierz **Dodaj**, wybierz strukturę konta z listy, a następnie wybierz opcję **Wybierz**. Dodanie i zapisanie struktur kont może potrwa kilka minut. Gdy zmieniona struktura konta zostanie zapisana w księdze, rozpocznie się proces synchronizowania wszystkich niezaksięgowanych transakcji. Należy poczekać, aż zmiana zostanie zakończona dla bieżącej księgi w osobie prawnej, gdzie zmiana jest dokonywana przez wykonaniem zmiany struktury konta dla księgi w innej osobie prawnej. Należy zauważyć, że wybrane struktury kont muszą być aktywne. W przeciwnym razie szczegóły struktur kont nie będą obowiązywać w osobach prawnych, z którymi są połączone.
 
 Aby usunąć strukturę konta, na stronie **Księga**, na skróconej karcie **Struktury konta** wybierz opcję **Usuń**. Należy zwrócić uwagę, że w przypadku usunięcia struktury konta z księgi nie zostaną usunięte wszystkie transakcje zaksięgowane przy użyciu konfiguracji tej struktury konta.
 

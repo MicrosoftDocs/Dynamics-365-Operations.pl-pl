@@ -2,7 +2,7 @@
 title: Przeszacowanie w walucie dla rozrachunków z odbiorcami i rozrachunków z dostawcami
 description: Ten artykuł zawiera informacje o procesie przeszacowania w walucie obcej, który jest wykonywany, aby zaktualizować wartość otwartych transakcji w modułach Rozrachunki z odbiorcami i Rozrachunki z dostawcami.
 author: angelad116
-ms.date: 06/20/2017
+ms.date: 10/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4ffa4e1a02c84eda5f6710cb9049eab06955fac0
-ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
+ms.openlocfilehash: 73f20323ff2eb36c89f4fb2848a056c2cb24ec30
+ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151829"
+ms.lasthandoff: 10/25/2022
+ms.locfileid: "9715729"
 ---
 # <a name="currency-revaluation-for-accounts-payable-and-accounts-receivable"></a>Przeszacowanie w walucie dla rozrachunków z odbiorcami i rozrachunków z dostawcami
 

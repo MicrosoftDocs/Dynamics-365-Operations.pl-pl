@@ -1,6 +1,6 @@
 ---
-title: Ponowne obliczanie kwot netto wiersza podczas importowania zamówień sprzedaży, ofert i zwrotów
-description: W tym artykule opisano, czy i w jaki sposób system ponownie oblicza kwoty netto, gdy są importowane zamówienia sprzedaży, oferty i zwroty. Wyjaśniono w nim również, jak można kontrolować zachowanie w różnych wersjach rozwiązania Microsoft Dynamics 365 Supply Chain Management.
+title: Ponowne obliczanie kwot netto wiersza podczas importowania zamówień sprzedaży i ofert
+description: W tym artykule opisano, czy i w jaki sposób system ponownie oblicza kwoty netto, gdy są importowane zamówienia sprzedaży i oferty. Wyjaśniono w nim również, jak można kontrolować zachowanie w różnych wersjach rozwiązania Microsoft Dynamics 365 Supply Chain Management.
 author: Henrikan
 ms.date: 08/05/2022
 ms.topic: article
@@ -11,25 +11,25 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2022-06-08
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 08b30044a93e46c9c83848b60d69c595bc774570
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: edda0c016130e2a273adf8f3d3e00e2d3ae9d5c6
+ms.sourcegitcommit: ce58bb883cd1b54026cbb9928f86cb2fee89f43d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335564"
+ms.lasthandoff: 10/25/2022
+ms.locfileid: "9719342"
 ---
-# <a name="recalculate-line-net-amounts-when-importing-sales-orders-quotations-and-returns"></a>Ponowne obliczanie kwot netto wiersza podczas importowania zamówień sprzedaży, ofert i zwrotów
+# <a name="recalculate-line-net-amounts-when-importing-sales-orders-and-quotations"></a>Ponowne obliczanie kwot netto wiersza podczas importowania zamówień sprzedaży i ofert
 
 [!include [banner](../includes/banner.md)]
 
-W tym artykule opisano, czy i w jaki sposób system ponownie oblicza kwoty netto, gdy są importowane zamówienia sprzedaży, oferty i zwroty. Wyjaśniono w nim również, jak można kontrolować zachowanie w różnych wersjach rozwiązania Microsoft Dynamics 365 Supply Chain Management.
+W tym artykule opisano, czy i w jaki sposób system ponownie oblicza kwoty netto, gdy są importowane zamówienia sprzedaży i oferty. Wyjaśniono w nim również, jak można kontrolować zachowanie w różnych wersjach rozwiązania Microsoft Dynamics 365 Supply Chain Management.
 
 ## <a name="how-updates-to-net-line-amounts-are-calculated-on-import"></a>Sposób obliczania aktualizacji kwot wiersza netto przy imporcie
 
-Wprowadzono usługę Supply Chain Management w wersji 10.0.23 [poprawka 604418](https://fix.lcs.dynamics.com/issue/results/?q=604418). Ta poprawka błędu zmieniła warunki, w których pole **Kwota netto** w wierszu może być aktualizowane lub ponownie obliczane podczas importowania aktualizacji istniejących zamówień sprzedaży, zwrotów i ofert. W wersji 10.0.29 można zastąpić tę poprawkę, włączając funkcję *Oblicz kwotę netto wiersza przy imporcie*. Ta funkcja działa podobnie, ale zapewnia ustawienie globalne, które umożliwia powrót do starego zachowania, jeśli trzeba. Nowe zachowanie powoduje, że system działa w sposób bardziej specyficzny, ale może dawać nieoczekiwane wyniki w określonych scenariuszach, w których są spełnione następujące warunki:
+Wprowadzono usługę Supply Chain Management w wersji 10.0.23 [poprawka 604418](https://fix.lcs.dynamics.com/issue/results/?q=604418). Ta poprawka błędu zmieniła warunki, w których pole **Kwota netto** w wierszu może być aktualizowane lub ponownie obliczane podczas importowania aktualizacji istniejących zamówień sprzedaży i ofert. W wersji 10.0.29 można zastąpić tę poprawkę, włączając funkcję *Oblicz kwotę netto wiersza przy imporcie*. Ta funkcja działa podobnie, ale zapewnia ustawienie globalne, które umożliwia powrót do starego zachowania, jeśli trzeba. Nowe zachowanie powoduje, że system działa w sposób bardziej specyficzny, ale może dawać nieoczekiwane wyniki w określonych scenariuszach, w których są spełnione następujące warunki:
 
 - Dane, które aktualizują istniejące rekordy, są importowane przez *Wiersze zamówienia sprzedaży V2*, *2Wiersze oferty sprzedaży V2* lub *Wiersze zamówienia zwrotu* przy użyciu protokołu Open Data Protocol (OData), w tym w sytuacjach, w których używasz podwójnego zapisu , importuj/eksportuj przez Excel i niektóre integracje innych firm.
-- [Zasady oceny umów handlowych](/dynamicsax-2012/appuser-itpro/trade-agreement-evaluation-policies-white-paper), które obowiązują, ustanawiają zasady zmian, które ograniczają aktualizacje pola **Kwota netto** w wierszach zamówienia sprzedaży, wierszach ofert sprzedaży i/lub wierszach zamówienia zwrotu.
+- [Zasady oceny umów handlowych](/dynamicsax-2012/appuser-itpro/trade-agreement-evaluation-policies-white-paper), które obowiązują, ustanawiają zasady zmian, które ograniczają aktualizacje pola **Kwota netto** w wierszach zamówienia sprzedaży, wierszach ofert sprzedaży i/lub wierszach zamówienia zwrotu. Pamiętaj, że dla wierszy zamówienia zwrotu pole **Kwota netto** jest zawsze obliczane i nie można go ustawić ręcznie.
 - Importowane dane obejmują zmiany w polu **Kwota netto** w wierszach lub zmiany (takie jak cena jednostkowa, ilość lub rabat), które powodują ponowne obliczanie wartości pola **Kwota netto** w wierszach dla co najmniej jednego istniejącego rekordu wiersza.
 
 W tych określonych scenariuszach zasada oceny umowy handlowej stanowi ograniczenie w aktualizacjach pola **Kwota netto** w wierszu. To ograniczenie jest nazywane zasadami *zmiany*. Z powodu tych zasad podczas korzystania z interfejsu użytkownika do edytowania lub ponownego obliczania pola system wyświetli monit o potwierdzenie, czy użytkownik chce dokonać zmiany. Jednak podczas importowania rekordu system musi dokonać wyboru dla użytkownika. Przed wersją 10.0.23 system zawsze pozostawił kwotę netto wiersza niezmienioną, chyba że przychodząca kwota netto dla wiersza wynosi 0 (zero). Jednak w nowszej wersji system zawsze aktualizuje lub ponownie obliczy kwotę netto, jeśli nie zostanie to jawnie określone. Chociaż nowe zachowanie jest bardziej logiczne, może to spowodować problemy, jeśli są już uruchomione procesy lub integracje, które zakładają starsze zachowanie. W tym artykule opisano sposób przywracania w razie potrzeby starego zachowania.

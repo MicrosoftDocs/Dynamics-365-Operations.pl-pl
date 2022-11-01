@@ -15,12 +15,12 @@ ms.dyn365.ops.version: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.form: ''
-ms.openlocfilehash: 11378991a24e1a5f5e213d64f0f414db2e5c2573
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 9d4a408f2169b220fefd9ab7e9f3b37217fb3cfe
+ms.sourcegitcommit: 1ecfc1d8afb2201ab895ae6f93304ba2b120f14b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9279909"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "9710843"
 ---
 # <a name="complete-publish-and-deploy-a-globalization-feature"></a>Zakończenie, publikacja i wdrożenie funkcji globalizacji
 
@@ -59,8 +59,8 @@ W usłudze RCS można użyć **polecenia Wdrożenie**, aby opublikować wersję 
 2. Na karcie **Wersje** po prawej stronie strony wybierz wersję funkcji fakturowania elektronicznego, którą chcesz wdrożyć w środowisku usług lub połączonej aplikacji. Wybrana wersja musi mieć stan **Ukończono** lub **Opublikowana**.
 3. Wybierz opcję **Rozmieszczaj**, a następnie wybierz jedną lub obie z następujących opcji w celu zdefiniowania celu wdrożenia:
 
-    - **Połączona aplikacja** — Konfiguracja dostarczana przez instalację aplikacji jest zapisana w wystąpieniu Microsoft Dynamics 365 Finance lub Dynamics 365 Supply Chain Management, które było wcześniej z nim skojarzone.
-    - **Środowisko usługi** — wersja funkcji fakturowania elektronicznego jest wdrażana w środowisku usług. Fakturowanie elektroniczne jest wtedy gotowy do odbierania i przetwarzania dokumentów elektronicznych wysyłanych przez aplikacje finansowe i Supply Chain Management.
+    - **Połączona aplikacja** — jest to opcjonalne, ale musi być użyte, jeśli chcesz, by konfiguracja dostarczana przez instalację aplikacji była zapisana w wystąpieniu Microsoft Dynamics 365 Finance lub Dynamics 365 Supply Chain Management, które było wcześniej z nim skojarzone. Pominięcie wdrażania tego typu wymaga ręcznej konfiguracji parametrów zdefiniowanych w ustawieniach aplikacji Finance lub Supply Chain Management.
+    - **Środowisko usługi** — wdraża funkcję fakturowania elektronicznego w środowisku usług. Fakturowanie elektroniczne jest wtedy gotowy do odbierania i przetwarzania dokumentów elektronicznych wysyłanych przez aplikacje finansowe i Supply Chain Management.
 
 > [!NOTE]
 > Zazwyczaj zmieniane są parametry funkcji raportowania elektronicznego, które muszą zostać wdrożone w środowisku serwisowym. Zmiany w połączonej aplikacji będą się zdarzać rzadko. Nowe wersje należy wdrażać w połączonej aplikacji tylko w przypadku zmiany odpowiednich parametrów aplikacji.

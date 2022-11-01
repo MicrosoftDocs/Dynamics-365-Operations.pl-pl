@@ -1,8 +1,8 @@
 ---
 title: Wymiary finansowe i księgowanie
-description: Podczas planowania i konfigurowania planu kont należy wziąć pod uwagę, jak różne składniki będą współpracowały podczas księgowania dokumentu lub arkusza. Te składniki obejmują struktury kont, zaawansowane reguły oraz wymiary bilansowania i stałe. W tym artykule przestawiono poszczególne składniki i opisano sposób ich współdziałania.
+description: W tym artykule objaśniono składniki, które tworzą plan kont i opisano sposób ich współdziałania.
 author: aprilolson
-ms.date: 08/04/2017
+ms.date: 10/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a165c4084a9f2075a54c99a7e4913a4e3c3dfe55
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 89696f08755a7ff2b01ec7e0cf8550a3b5914bc0
+ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8910121"
+ms.lasthandoff: 10/25/2022
+ms.locfileid: "9715478"
 ---
 # <a name="financial-dimensions-and-posting"></a>Wymiary finansowe i księgowanie 
 

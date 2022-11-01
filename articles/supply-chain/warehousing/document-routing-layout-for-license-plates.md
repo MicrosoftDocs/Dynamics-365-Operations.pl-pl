@@ -1,5 +1,5 @@
 ---
-title: Układ rozsyłania dokumentów dla etykiet numerów identyfikacyjnych
+title: Układy etykiet wyboru trasy dokumentów
 description: W tym artykule opisano sposób używania metod formatowania do drukowania wartości na etykietach.
 author: perlynne
 ms.date: 04/01/2020
@@ -13,23 +13,24 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 10e63353cda93d666d7f23f59508b73e5492c3cc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a4e0c16b71c257cae832870ca58679884047ea16
+ms.sourcegitcommit: 9e6a9d644a34158390c6e209e80053ccbdb7d974
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847883"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9708653"
 ---
-# <a name="document-routing-layout-for-license-plate-labels"></a>Układ rozsyłania dokumentów dla etykiet numerów identyfikacyjnych
+# <a name="document-routing-label-layout"></a>Układ etykiet wyboru trasy dokumentów
 
 [!include [banner](../includes/banner.md)]
 
+W tym artykule opisano sposób tworzenia układów dla etykiet dla etykiet numerów identyfikacyjnych, kontenerów i grup czynności. Zawiera również wskazówki dotyczące używania języka ZPL (Zebra Programming Language) używanego do tworzenia układów.
 
-Układ rozsyłania dokumentów określa układ etykiet numeru identyfikacyjnego oraz dane, które są na nich drukowane. Punkty wyzwalacza drukowania konfiguruje się podczas konfigurowania elementów menu urządzeń przenośnych i szablonów pracy.
+Układy etykiet wyboru tras dokumentu określają sposób, w jaki etykiety są umieszczone oraz dane, które są na nich drukowane. Punkty wyzwalacza drukowania konfiguruje się podczas konfigurowania elementów menu urządzeń przenośnych i szablonów pracy.
 
-W typowym scenariuszu pracownik etatowy magazynu drukuje etykiety numerów identyfikacyjnych bezpośrednio po zarejestrowaniu zawartości palet, które przybywają w obszarze przyjęcia. Etykiety fizyczne są używane do oznaczania palet. Mogą być one używane do sprawdzania poprawności jako część procesu odłożenia, który następuje, i w przyszłych operacjach pobrania wychodzącego.
+Informacje zawarte w tym artykule dotyczą wszystkich układów etykiet rozsyłania dokumentów, w tym układów [etykiet dla numerów identyfikacyjnych](tasks/license-plate-label-printing.md), [etykiet kontenerów](print-container-labels.md) i [etykiet grupy czynności](configure-wave-label-printing.md).
 
-Można drukować bardzo skomplikowane etykiety, pod warunkiem, że urządzenie drukujące może zinterpretować wysłany do niego tekst. Na przykład układ Zebra Programming Language (ZPL), który zawiera kod kreskowy, może być podobny do poniższego przykładu.
+Można drukować bardzo skomplikowane etykiety, pod warunkiem, że urządzenie drukujące może zinterpretować wysłany do niego tekst. Na przykład układ ZPL, który zawiera kod kreskowy, może być podobny do poniższego przykładu.
 
 ```dos
 ^XA~TA000~JSN^LT0^MNW^MTD^PON^PMN^LH0,0^JMA^PR2,2~SD15^JUS^LRN^CI0^XZ
@@ -45,11 +46,9 @@ Można drukować bardzo skomplikowane etykiety, pod warunkiem, że urządzenie d
 ^PQ1,,,Y^XZ
 ```
 
-W ramach procesu drukowania etykiet tekst `$LicensePlateId$` w tym przykładzie zostanie zastąpiony wartością danych.
+W ramach procesu drukowania etykiet tekst `$LicensePlateId$` w tym przykładzie zostanie zastąpiony wartością danych. Wiele narzędzi do generowania etykiet ułatwia formatowanie tekstu w układzie etykiety. Wiele z tych narzędzi obsługuje ten format `$FieldName$`. Ponadto Microsoft Dynamics 365 Supply Chain Management stosuje specjalną logikę formatowania jako część mapowania pól dla układu rozsyłania dokumentów.
 
 Aby wyświetlić wartości, które będą drukowane, należy przejść do **Zarządzanie magazynem \> Zapytania i raporty \> Etykiety numerów identyfikacyjnych**.
-
-Wiele narzędzi do generowania etykiet ułatwia formatowanie tekstu w układzie etykiety. Wiele z tych narzędzi obsługuje ten format `$FieldName$`. Ponadto Microsoft Dynamics 365 Supply Chain Management stosuje specjalną logikę formatowania jako część mapowania pól dla układu rozsyłania dokumentów.
 
 ## <a name="turn-on-this-feature-for-your-system"></a>Włączanie funkcji w systemie
 
@@ -137,7 +136,10 @@ $DisplayListOfItemsNumbers()[1]$
 
 ## <a name="more-information-about-how-to-print-labels"></a>Dodatkowe informacje dotyczące sposobu drukowania etykiet
 
-Aby uzyskać więcej informacji o konfigurowaniu i drukowaniu etykiet, należy zapoznać się z tematem [Włączanie drukowania etykiet numerów identyfikacyjnych](tasks/license-plate-label-printing.md).
+Aby uzyskać więcej informacji o konfigurowaniu i drukowaniu etykiet, należy zapoznać się z następującymi artykułami:
 
+- [Drukowanie etykiet numeru identyfikacyjnego](tasks/license-plate-label-printing.md)
+- [Drukowanie etykiet kontenera](print-container-labels.md)
+- [Drukowanie etykiety grupy czynności](configure-wave-label-printing.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

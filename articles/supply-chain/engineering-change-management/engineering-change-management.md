@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 71b5ec792013ae80be643b9581e388c291d608dd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6c578609a64c21a33f10b64a1d77f006b45bac41
+ms.sourcegitcommit: 229ea085cf35579a2631ea1e5fc2c602fa47e3f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849598"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "9714744"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Zarządzanie zmianami dotyczącymi produktów inżynieryjnych
 
@@ -141,6 +141,8 @@ Przeglądając powiadomienia dotyczące zlecenia produkcyjnego na stronie **Powi
 ### <a name="create-a-change-order-from-a-change-request"></a>Tworzenie zlecenia zmiany za pomocą żądania zmiany
 
 Inżynier dokonujący przeglądu żądania zmiany może utworzyć inżynieryjne zlecenie zmiany, bezpośrednio na stronie **Żądania zmiany inżynieryjnej**. W okienku akcji, na karcie **żądanie zmiany** w grupie **Zlecenie zmian inżynieryjnych**, wybierz opcję **Kopiuj łącze i produkty**.
+
+Pamiętaj, aby wybrać poprawną firmę dla nowego zlecenia zmiany projektowej. Jeśli zamówienie zmiany spowoduje zmianę samego produktu projektowego (nowa wersja, nowy produkt lub nowy wariant), trzeba przypisać zlecenie zmiany do firmy projektowej. Jeśli potrzebna jest tylko zmiana lokalna (dla **Wpływ** jest ustawiona wartość *Brak*), zamówienie zmiany można przypisać do firmy lokalnej i zmiany zostaną zastosowania do bieżącego produktu.
 
 ## <a name="engineering-change-orders"></a>Zlecenia zmian projektowych
 
