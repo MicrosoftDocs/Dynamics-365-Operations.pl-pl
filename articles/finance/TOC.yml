@@ -688,24 +688,18 @@
               href: accounts-receivable/automatic-settlement-prioritization.md
             - name: Uzgadnianie konta bankowego
               href: cash-bank-management/reconcile-bank-account.md
-            - name: Zaawansowane uzgodnienie konta bankowego
+            - name: Zaawansowane uzgadnianie konta bankowego
               items:
-                - name: Proces konfigurowania zaawansowanego uzgodnienia konta bankowego
+                - name: Proces konfigurowania zaawansowanego uzgadniania konta bankowego
                   href: cash-bank-management/configure-advanced-bank-reconciliation.md
-                - name: Konfigurowanie procesu importowania zaawansowanego uzgodnienia konta bankowego
-                  href: cash-bank-management/set-up-advanced-bank-reconciliation-import-process.md
                 - name: Konfigurowanie procesu importowania zaawansowanego uzgodnienia konta bankowego za pomocą raportowania elektronicznego
                   href: accounts-payable/import-bai2-er.md
                 - name: Konfigurowanie reguł uzgodnienia konta bankowego
                   href: cash-bank-management/set-up-bank-reconciliation-matching-rules.md
                 - name: Uzgadnianie wyciągów bankowych przy użyciu funkcji Zaawansowane uzgadnianie konta bankowego
                   href: cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation.md
-                - name: 'Zaawansowane uzgadnianie konta bankowego, import dla formatu MT940 — uaktualnianie złożonej jednostki danych'
-                  href: cash-bank-management/advanced-bank-reconciliation-mt940-data-entity-upgrade-steps.md
                 - name: Omówienie zaawansowanego uzgadniania konta bankowego
                   href: cash-bank-management/advanced-bank-reconciliation-overview.md
-                - name: Rozwiązywanie problemów z importowaniem pliku wyciągu bankowego
-                  href: cash-bank-management/import-bank-statement-file-failed-incorrect-results.md
                 - name: Aktualizowanie złożonej jednostki arkusza bankowego
                   href: cash-bank-management/upgrade-bank-journal-composite-entity.md
         - name: Rachunek kosztów

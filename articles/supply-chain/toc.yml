@@ -2239,6 +2239,16 @@
                   href: procurement/tasks/create-purchasing-policies.md
                 - name: Konfigurowanie zasad dla hierarchii kategorii zaopatrzenia
                   href: procurement/tasks/set-up-policies-procurement-category-hierarchies.md
+            - name: Ocena ryzyka dostaw
+              items:
+                - name: Ocena ryzyka dostaw — omówienie
+                  href: procurement/supply-risk-assessment-overview.md
+                - name: Konfiguracja oceny ryzyka dostaw
+                  href: procurement/supply-risk-assessment-configuration.md
+                - name: 'Obszar roboczy, podlegający akcjom, do odnajdowania i obsługi zagrożeń związanych z dostawcami'
+                  href: procurement/supply-risk-assessment-workspace.md
+                - name: Raporty usługi Power BI do analizy zagrożeń i klasyfikacji wydajności
+                  href: procurement/supply-risk-assessment-reports.md
             - name: Przyjęcia produktów i fakturowanie
               items:
                 - name: Przyjęcie produktów na podstawie zamówień zakupu

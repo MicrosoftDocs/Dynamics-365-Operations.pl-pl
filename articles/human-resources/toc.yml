@@ -4,6 +4,18 @@
       items:
         - name: Dynamics 365 Human Resources — strona główna
           href: index.md
+        - name: Scalanie infrastruktury rozwiązania Human Resources
+          items:
+            - name: Scalanie infrastruktury rozwiązania Human Resources — omówienie
+              href: hr-infrastructure-merge.md
+            - name: Migracja klienta do infrastruktury rozwiązania Human Resources
+              href: hr-cust-migration.md
+            - name: Często zadawane pytania dotyczące scalania infrastruktury rozwiązania Human Resources
+              href: hr-infrastructure-merge-faq.md
+            - name: Migracja klienta do rozwiązania Human Resources — często zadawane pytania
+              href: customer-migration.md
+            - name: Scalanie infrastruktury rozwiązania Human Resources — znane problemy
+              href: hr-migration-issues.md
         - name: Nowości i zmiany
           items:
             - name: Nowości i zmiany w aplikacjach finansowych i operacyjnych
@@ -242,10 +254,6 @@
                   href: hr-admin-go-live-prepare.md
                 - name: Rozpoczynanie eksploatacji — często zadawane pytania
                   href: hr-admin-go-live-faq.md
-                - name: Często zadawane pytania dotyczące scalania infrastruktury rozwiązania Human Resources
-                  href: hr-infrastructure-merge-faq.md
-                - name: Migracja odbiorcy do rozwiązania Human Resources — często zadawane pytania
-                  href: customer-migration.md
                 - name: Zasoby dokumentacji
                   items:
                     - name: System pomocy

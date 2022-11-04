@@ -330,16 +330,20 @@
                   items:
                     - name: Omówienie wdrożenia samoobsługowego
                       href: deployment/infrastructure-stack.md
-                    - name: Wdróż nowe środowisko demonstracyjne
+                    - name: Wdrażanie nowego środowiska
                       href: deployment/deployenvironment-newinfrastructure.md
                     - name: Wdrażanie — często zadawane pytania
                       href: deployment/deploymentFAQ.md
+                    - name: Migrowanie środowiska
+                      href: deployment/geo-to-geo-migrations.md
                     - name: Często występujące problemy podczas wdrożenia samoobsługowego
                       href: deployment/known-issues-new-deployment-experience.md
                     - name: Operacje konserwacji wdrożeń
                       href: deployment/maintenanceoperationsguide-newinfrastructure.md
-                    - name: Aktualizowanie środowiska
+                    - name: Aktualizacja środowiska
                       href: deployment/updateenvironment-newinfrastructure.md
+                    - name: Migrowanie środowiska
+                      href: deployment/geo-to-geo-migrations.md
                     - name: Rozwiązywanie problemów ze środowiskami wdrażanymi w ramach wdrożenia samoobsługowego
                       href: deployment/troubleshoot-newinfrastructure.md
                     - name: Planowana konserwacja w środowiskach samoobsługowych — często zadawane pytania
@@ -972,6 +976,8 @@
               href: lifecycle-services/lcs-user-guide.md
             - name: Przygotowywanie projektu
               href: lifecycle-services/project-onboarding.md
+            - name: Menedżer migracji projektu
+              href: lifecycle-services/project-migration-manager.md
             - name: Narzędzie do szacowania zapotrzebowania na subskrypcje
               href: lifecycle-services/subscription-estimator.md
             - name: Konfigurowanie zabezpieczeń
