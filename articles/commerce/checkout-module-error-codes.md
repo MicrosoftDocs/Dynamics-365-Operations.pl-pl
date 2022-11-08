@@ -2,19 +2,19 @@
 title: Kody odwołania błędów modułu wyewidencjonowania
 description: W tym artykule opisano kody odwołań do błędów modułu realizacji zamówienia, które są pokazywane w komunikatach o błędach widocznych dla użytkownika w programie Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 10/20/2022
+ms.date: 10/27/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2022-09-20
-ms.openlocfilehash: cd8269a71e56f23dbe3782ec3ffc69ec3ea6b151
-ms.sourcegitcommit: 6bd8822f7aa781d596b70956bead834117cf302c
+ms.openlocfilehash: 952cb932522b4e0bb91be985e4f8974cb6cd8bc0
+ms.sourcegitcommit: 435e69160dbd7f9c61b37ac4440285a5df144622
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "9709663"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "9728253"
 ---
 # <a name="checkout-module-error-reference-codes"></a>Kody odwołania błędów modułu wyewidencjonowania
 
@@ -31,9 +31,13 @@ W zależności od napotkanych błędów tabela w tym artykule zawiera następuj�
 - Informacje do uwzględnienia w konfiguracjach środowiska lub łącznika płatności
 - Informacje, do których można się odwoływać w sprawie obsługi, jeśli wymagana jest dodatkowa pomoc
 
+## <a name="prerequisites"></a>Wymagania wstępne
+
+Aby włączyć kody odwołań do błędów modułu wyewidencjonowania wymienione poniżej, w konstruktorze witryn dla witryny przejdź do **Ustawienia witryny \> Rozszerzenia**, a w sekcji **Karta i wyewidencjonowanie** wybierz **Włącz rozszerzone komunikaty wyświetlające błąd kanału w trybie online**. 
+
 ## <a name="checkout-module-error-reference-codes"></a>Kody odwołania błędów modułu wyewidencjonowania
 
-W poniższej tabeli podano więcej szczegółów dotyczących odwołań do kodów błędów, które są dostarczane przez klientów lub zdarzyły się w sklepie internetowym.
+W poniższej tabeli podano więcej szczegółów dotyczących odwołań do kodów błędów, które są dostarczane przez klientów lub zdarzyły się w sklepie internetowym. Przewiń w prawo, aby wyświetlić kolumnę **Opis błędu**.
 
 | Kod błędu | Skorelowany kod błędu systemu Dynamics | Opis błędu |
 | ---------- | ------------------------------ | ----------------- |

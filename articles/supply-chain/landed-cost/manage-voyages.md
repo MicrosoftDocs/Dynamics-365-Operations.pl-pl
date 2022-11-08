@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 43f28a7e30dbbe15bb02d26483289f25515fcfca
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4499eeb9cdd4efd9c4b630106c6e052378191f2a
+ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905871"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725489"
 ---
 # <a name="manage-voyages"></a>Zarządzanie podróżami
 
@@ -29,7 +29,8 @@ Podróż zazwyczaj przedstawia statek. Jednak w zależności od twoich praktyk i
 Strona **Wszystkie podróże** zawiera szczegóły podróży, informacje dotyczące dostawy i wyceny, a także informacje o towarach, zamówieniach zakupu i zamówieniach przeniesienia. Aby otworzyć stronę **Wszystkie podróży**, przejdź do strony **Koszt z wyładunkiem \> Podróże \> Wszystkie podróże**. Ta strona pokazuje listę wszystkich aktualnych rejsów. Możesz używać przycisków w Okienku akcji do tworzenia, usuwania i pracy z podróżami. Wybierz dowolną podróży na liście, aby wyświetlić jej szczegóły.
 
 > [!NOTE]
-> Kontenery transportowe i folia są powiązane z podróżą. Linie zakupu są połączone z kontenerem wysyłkowym. Jeśli kontenery transportowe i folio są wyłączone, można je również połączyć bezpośrednio z podróżą. Ponadto wprowadzone tutaj koszty są rozdzielane na wszystkie dołączone wiersze zakupu.
+> Kontenery transportowe i folia są powiązane z podróżą. Linie zakupu są połączone z kontenerem wysyłkowym. Ponadto wprowadzone tutaj koszty są rozdzielane na wszystkie dołączone wiersze zakupu.
+> Zamówienie zakupu projektu nie jest obsługiwane w koszcie z wyładunkiem.
 
 ## <a name="action-pane"></a>Okienko akcji
 

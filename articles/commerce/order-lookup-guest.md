@@ -14,12 +14,12 @@ ms.search.validFrom: 2021-08-15
 ms.dyn365.ops.version: Release 10.0.22
 ms.custom: ''
 ms.assetid: ''
-ms.openlocfilehash: 4f381f1ec0ea08f18db3cac474e8990906364504
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 757e83887e318dd6aa54106fb78305f1d94e0f90
+ms.sourcegitcommit: e25fe4228add88dd37f4f38ece86979e1c621f6a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9286899"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "9734275"
 ---
 # <a name="enable-order-lookup-for-guest-checkouts"></a>Włączanie wyszukiwania zamówień dla realizacji transakcji gościa
 
@@ -73,6 +73,11 @@ Aby użytkownicy gości zobaczyli szczegóły swojego zamówienia, strona szczeg
 W wiadomościach e-mail związanych z zamówieniem można podać link lub przycisk, który powoduje, że odbiorcy są przekierowywani do strony szczegółów zamówienia. Aby dodać ten link lub przycisk, utwórz hiperlink HTML, które wskazuje stronę szczegółów zamówienia w witrynie e-commerce, a następnie przekaż identyfikator potwierdzenia zamówienia i adres e-mail odbiorcy jako parametry adresu URL, tak jak pokazano w poniższym przykładzie.
 
 `<a href="https://[domain]/[orderdetailspage]?confirmationId=%orderconfirmationid%&propertyName=email&propertyValue=%customeremailaddress%" target="_blank">View my order status</a>`
+
+> [!NOTE]
+> Aby włączyć funkcję wyszukiwania zamówień, upewnij się, że klucz **Oferty** jest włączony w obszarze **Konfiguracja licencji** > **Klucze konfiguracji**.
+>
+>![Konfiguracja klucza licencji ofert musi być włączona](./media/Quotations_License_Key_Configuration.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

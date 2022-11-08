@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 60f9d84b240016671ff726fc3cca2e02cfd811ca
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: da5881a901d3ba4d01e6d4510a53ca079efd7e75
+ms.sourcegitcommit: c8b97eea28f07b6b179825f3b134c8c8704ff8fc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689235"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "9731618"
 ---
 # <a name="proactive-quality-updates"></a>Aktywne aktualizacje jakości
 
@@ -40,13 +40,13 @@ Wdrożono już wiele postępów umożliwiających prewencyjne dostarczanie aktua
 
 - **Aktualizowanie blisko zerowego przestoju** — aby wypychać częściej środowiska, konieczne jest zmniejszenie wpływu na dostępność środowiska w celu zachowania umów dotyczących poziomu usług (SLA) usługi Dynamics 365. Aktualizacja blisko zerowego przestoju pierwotnie została wprowadzona, aby pomóc ulepszyć miesięczne poprawianie systemu operacyjnego poprzez zastosowanie trybu failover klastra w celu uaktywnienia zaktualizowanego obrazu z minimalnym przerwaniem. Mechanizm stosowania aktualizacji jest ulepszony, dzięki czemu jeszcze mniej destruktywny i obejmuje zarówno poprawianie systemu operacyjnego, jak i wdrażanie aktualizacji jakości.
 
-    W przypadku interakcyjnych użytkowników aktywna sesja może zostać przerwana, a ponowienie próby zostanie ponowione w środowisku, które zostało teraz zaktualizowane. Dzięki wprowadzeniu [planowania partii opartego na priorytecie](../../dev-itpro/sysadmin/priority-based-batch-scheduling.md), które jest obecnie dostępne od razu po aktualizacji, planowanie i przetwarzanie wsadowe odzyska i wznowi działanie natychmiast po aktualizacji. Planowanie wsadowe oparte na priorytecie zostanie oparte na priorytetach, zanim odbiorcy zaczną uczestniczyć w prewencyjnej dystrybucji aktualizacji jakości w swoich środowiskach produkcyjnych.
+W przypadku interakcyjnych użytkowników aktywna sesja może zostać przerwana, a ponowienie próby zostanie ponowione w środowisku, które zostało teraz zaktualizowane. Dzięki wprowadzeniu [planowania partii opartego na priorytecie](../../dev-itpro/sysadmin/priority-based-batch-scheduling.md) planowanie i przetwarzanie wsadowe odzyska i wznowi działanie natychmiast po aktualizacji. Planowanie wsadowe oparte na priorytecie zostanie oparte na priorytetach, zanim odbiorcy zaczną uczestniczyć w prewencyjnej dystrybucji aktualizacji jakości w swoich środowiskach produkcyjnych.
 
 - **Godziny bezczynności** — są zdefiniowane godziny bezczynności dla każdego regionu Azure, a w trakcie tej godziny występują blisko zerowe aktualizacje przestojów.
 
 ## <a name="the-proactive-update-process"></a>Proces aktywnej aktualizacji
 
-Wdrażanie aktywnej aktualizacji jakości będzie zgodne z procesem wdrażania w bezpieczny sposób (SDP). Szczegółowe informacje kodu SDP będą się rozwijać, ale aktualizacje jakości zostaną początkowo wdrożone w środowiskach piaskownicy. Proces rozpocznie się od środowisk, które decydują się na wcześniejsze wdrożenie. Wraz ze wzrostem procentu pomyślnie wdrożonej piaskownicy rozpoczyna się wdrażanie w środowiskach produkcyjnych. Przypominamy, proces rozpocznie się od środowisk, które decydują się na wcześniejsze wdrożenie. W systemach nasłuchiwania system będzie monitorować telemetrię systemu i zdarzenia w aktywnych witrynach, a w przypadku wykrycia jakiegokolwiek zdarzenia spowoduje to zatrzymanie rozsyłania określonej wersji. Odbiorcy nadal będą mogli ściągać aktualizacje jakości przed prewencyjnym wdrożeniem, jeśli będą potrzebne.
+Wdrażanie aktywnej aktualizacji jakości będzie zgodne z procesem wdrażania w bezpieczny sposób (SDP). Szczegółowe informacje kodu SDP będą się rozwijać, ale aktualizacje jakości zostaną początkowo wdrożone w środowiskach piaskownicy. Wraz ze wzrostem procentu pomyślnie wdrożonej piaskownicy rozpoczyna się wdrażanie w środowiskach produkcyjnych. W systemach nasłuchiwania system będzie monitorować telemetrię systemu i zdarzenia w aktywnych witrynach, a w przypadku wykrycia jakiegokolwiek zdarzenia spowoduje to zatrzymanie rozsyłania określonej wersji. Odbiorcy nadal będą mogli ściągać aktualizacje jakości przed prewencyjnym wdrożeniem, jeśli będą potrzebne.
 
 Z aktualnych danych zarządzania wydaniami wynika, że w aktualizacjach jakości jest wprowadzonych mniej niż 3% cofnięć. Większy nacisk na eliminację zmian oraz rozszerzony protokół SDP spowoduje, że potencjalny wpływ cofnięć będzie znacznie niższy niż wzrost jakości osiągnięty dzięki większej możliwości szybkiego wdrażania poprawek dla odbiorców.
 
@@ -92,13 +92,13 @@ Aby uzyskać informacje dotyczące godzin bezczynności w poszczególnych region
 **Wersja aplikacji: 10.0.1326.70**
 **Odpowiedni najnowszy artykuł z bazy wiedzy: 748926**
 
-| Stacja | Regiony | Nadchodzący harmonogram piaskownicy
-|---|---|---|
-| Stacja 1 | Kanada Środkowa, Kanada Wschodnia, Francja Środkowa, Indie Środkowe, Norwegia Wschodnia, Szwajcaria Zachodnia | Od 14 października do 17 października 2022 |
-| Stacja 2 | Francja Południowa, Indie Południowe, Norwegia Zachodnia, Szwajcaria Północna, Północna Republika Południowej Afryki, Australia Wschodnia, Wschodnie Zjednoczone Królestwo, Północne Zjednoczone Emiraty Arabskie, Japonia Wschodnia, Australia Południowo-Wschodnia, Azja Południowo-Wschodnia | Od 15 października do 18 października 2022 |
-| Stacja 3 | Azja Wschodnia,Zachodnie Zjednoczone Królestwo, Japonia Zachodnia, Brazylia Południowa, Europa Zachodnia, Wschodnie Stany Zjednoczone, Północne Zjednoczone Emiraty Arabskie | Od 16 października do 19 października 2022 |
-| Stacja 4 | Europa Północna, Środkowe Stany Zjednoczone, Zachodnie Stany Zjednoczone | Od 17 października do 20 października 2022 |
-| Stacja 5 | DoD, Government Community Cloud, Chiny | Niezaplanowane |
+| Stacja | Regiony | Zakończony harmonogram | Nadchodzący harmonogram piaskownicy|
+|---|---|---|---|
+| Stacja 1 | Kanada Środkowa, Kanada Wschodnia, Francja Środkowa, Indie Środkowe, Norwegia Wschodnia, Szwajcaria Zachodnia | Od 14 października do 17 października 2022 | Od 2 listopada do 5 listopada 2022 roku |
+| Stacja 2 | Francja Południowa, Indie Południowe, Norwegia Zachodnia, Szwajcaria Północna, Północna Republika Południowej Afryki, Australia Wschodnia, Wschodnie Zjednoczone Królestwo, Północne Zjednoczone Emiraty Arabskie, Japonia Wschodnia, Australia Południowo-Wschodnia, Azja Południowo-Wschodnia | Od 15 października do 18 października 2022 | Od 2 listopada do 5 listopada 2022 roku |
+| Stacja 3 | Azja Wschodnia,Zachodnie Zjednoczone Królestwo, Japonia Zachodnia, Brazylia Południowa, Europa Zachodnia, Wschodnie Stany Zjednoczone, Północne Zjednoczone Emiraty Arabskie | Od 16 października do 19 października 2022 | Od 2 listopada do 5 listopada 2022 roku |
+| Stacja 4 | Europa Północna, Środkowe Stany Zjednoczone, Zachodnie Stany Zjednoczone | Od 17 października do 20 października 2022 | Od 2 listopada do 5 listopada 2022 roku |
+| Stacja 5 | DoD, Government Community Cloud, Chiny | Niezaplanowane | Niezaplanowane |
 
 > [!IMPORTANT] 
 > Pięć dni wcześniej firma Microsoft zaktualizuje poprzedni harmonogram i wysyła powiadomienia pocztą e-mail do zestawu środowisk, które mają otrzymać te aktualizacje jakości. Poprzedni harmonogram ma zastosowanie tylko do środowisk, które zostały powiadomione o nadchodzącej aktualizacji. Aby uzyskać informacje dotyczące godzin bezczynności w poszczególnych regionach, zobacz [Czym są okna planowanej konserwacji według regionów?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).

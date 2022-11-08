@@ -2,7 +2,7 @@
 title: Omówienie szablonów i układów
 description: Ten artykuł obejmuje szablony i układy w Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 12/12/2019
+ms.date: 10/26/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.search.industry: ''
 ms.search.form: ''
-ms.openlocfilehash: e0bf7e942339775b2e9ee15060d555be07c1cdc5
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 0664dd1ae06d09557cf8b8ec58baf6d27c1198bd
+ms.sourcegitcommit: 023ae5557e1351a8329a59a41a551e8901db99a8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9277941"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "9733392"
 ---
 # <a name="templates-and-layouts-overview"></a>Omówienie szablonów i układów
 
@@ -66,7 +66,13 @@ Szablon w tym przykładzie definiuje prostą strukturę i zbiór opcji dotycząc
 
 Ważnym początkowym krokiem dla administratorów witryny i marki jest określenie właściwej równowagi między ograniczeniem a elastycznością układu potomnego i autorów stron. Gdy używane są szablony, waga jest w pełni konfigurowalna. Wpływa na to, czy elementy strony są centralnie aktualizowane (zablokowane w szablonie) czy pozostawione poszczególnym poziomom podrzędnym, które są niższe w hierarchii stron.
 
-Aby rozpocząć korzystanie z szablonów, należy zapoznać się z [Praca z szablonami](work-with-templates.md).
+### <a name="relationship-between-template-defaults-and-page-content"></a>Relacja między wartościami domyślnymi szablonu a zawartością strony
+
+Główną funkcją szablonu jest usprawnianie korzystania z funkcji tworzenia strony przez moduł. Nawet jeśli ustawienia domyślne modułu są ustawione lub nawet zablokowane, w szablonie nie będzie już połączenia danych ze stronami stron z ustawieniami domyślnymi szablonu, chyba że strona jest edytowana. Szablony sterują możliwością tworzenia struktury strony. Po utworzeniu strony wartości domyślne szablonów nie są już powiązane z lokalną zawartością na tej stronie. Innymi słowy, wartości domyślne modułu ustawione w szablonie sterują doświadczeniem podczas tworzenia stron podrzędnych. Po utworzeniu i edytowaniu stron nie kontrolują one zawartości tych stron.
+
+Jedyny wyjątek w poprzednio opisanym zachowaniu ma miejsce podczas dodawana [fragmentu](work-with-fragments.md) do szablonu. Fragmentów można używać do dynamicznego dodawania lub edytowania zawartości, którą można lokalizować, na wszystkich stronach podrzędnych szablonu lub układu w dowolnym czasie, nawet po utworzeniu wielu stron z danego szablonu. Najlepiej używać fragmentów w szablonach i układach, gdy zawartość, którą można lokalizować, powinna być dynamicznie dodawana, usuwana lub edytowana na wszystkich stronach podrzędnych. Na przykład fragmenty powinny być używane dla nagłówków, stopek, typowych metadanych/skryptów lub innej zawartości, która musi być edytowalna centralnie i taka sama na wszystkich stronach podrzędnych. Fragmenty zapewniają korzystanie z szablonów i układów w celu sterowania zawartością na wszystkich stronach podrzędnych.
+
+Aby rozpocząć korzystanie z szablonów, zobacz temat [Praca z szablonami](work-with-templates.md).
 
 ## <a name="layouts"></a>Układy
 
@@ -96,7 +102,7 @@ Układy w witrynie mogą być *predefiniowane* lub *niestandardowe*:
 
 Wstępnie ustawiony układ i niestandardowe układy są edytowane w różnych częściach zestawu narzędzi tworzenia treści. Ponieważ układy niestandardowe nie mają żadnych zależności na innych stronach, są one edytowane bezpośrednio w edytorze stron. W takim przypadku istnienie układu jest przeważnie przezroczyste dla użytkownika i jest widoczne tylko we właściwościach na poziomie strony oraz poprzez działania dla opcji układu. Ponieważ jednak zmiany w gotowych układach mogą mieć wpływ na wiele stron podrzędnych, należy je edytować w edytorze układów, w którym działania publikowania uwzględniają pełny wpływ na strony podrzędne.
 
-Poniższe ilustracje przedstawiają scenariusze dla gotowych i niestandardowych układów.
+Poniższa ilustracja przedstawia scenariusze dla gotowych i niestandardowych układów.
 
 ![Wstępnie ustawione i niestandardowe scenariusze układu.](../commerce/media/template-figure1.png)
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 99dbe17d4e83c2c75d52ca3fd22a1772d8045355
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 609403b251338b7e792f3ab624fb37a1833c919b
+ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8871986"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725529"
 ---
 # <a name="landed-cost-parameters-setup"></a>Ustawienia parametrów kosztów z wyładunkiem
 
@@ -125,14 +125,11 @@ Ustawienia na tej karcie ustalają wymiary domyślne dla poszczególnych wyznacz
 
 Na karcie **Sekwencje numerów** na stronie **Parametry kosztów z wyładunkiem** są wszystkie typy sekwencji numerów referencyjnych, których wymaga koszt z wyładunkiem, ale nie są udostępniane w różnych firmach. Dla każdego odniesienia na liście wybierz kod sekwencji numerów.
 
-> [!NOTE]
-> W konfiguracji obejmującej wiele firm należy utworzyć różne sekwencje numerów dla każdej firmy (podmiotu prawnego).
 
 ## <a name="shared-number-sequences-tab"></a>Karta Wspólne sekwencje numerów
 
 Na karcie **Wspólne sekwencje numerów** strona **Parametry kosztów z wyładunkiem** zawiera listę każdego typu sekwencji numerów referencyjnych, które są wspólne dla firm dla kosztów z wyładunkiem. Obecnie na liście jest tylko jedna sekwencja numerów. Ta sekwencja numerów jest używana dla identyfikatora podróży.
 
-Na stronie **Wszystkie podróże** użytkownicy mogą wyświetlać wszystkie podróże we wszystkich firmach. Aby jednak edytować i przetwarzać podróży, użytkownicy muszą być w firmie wybranego rekordu.
 
 ## <a name="feature-visibility-tab"></a>Karta Widoczność funkcji
 

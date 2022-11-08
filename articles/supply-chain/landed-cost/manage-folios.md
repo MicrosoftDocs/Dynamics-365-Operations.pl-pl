@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4cc556c47f7027f2f5d5b24c235b11ced63b3e4e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ab5729cd441246a6c04ac060d5a69f949bfe47c5
+ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905900"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725502"
 ---
 # <a name="manage-folios"></a>Zarządzanie foliami
 
@@ -48,9 +48,9 @@ W poniższej tabeli opisano przyciski, które są dostępne bezpośrednio na kar
 
 | Przycisk | opis |
 |---|---|
-| Księguj listę przychodu | Opublikuj listę potwierdzeń dla wszystkich linii zamówień w folio. Jeśli używane są przesyłki obejmujące wiele firm, dla każdej firmy otwierane jest nowe okno dialogowe księgowania listy przyjęć. |
-| Księguj dokument przyjęcia produktów | Zaksięguj pokwitowanie produktu dla wszystkich linii zamówienia w folio. W przypadku podróży obejmujących wiele firm otwierane jest nowe okno dialogowe księgowania przyjęcia produktów dla każdej firmy. |
-| Księguj fakturę | Opublikuj fakturę dla wszystkich linii zamówień w folio. W przypadku podróży obejmujących wiele firm otwierane jest nowe okno dialogowe księgowania faktur dla każdej firmy. |
+| Księguj listę przychodu | Opublikuj listę potwierdzeń dla wszystkich linii zamówień w folio.  |
+| Księguj dokument przyjęcia produktów | Zaksięguj pokwitowanie produktu dla wszystkich linii zamówienia w folio. |
+| Księguj fakturę | Opublikuj fakturę dla wszystkich linii zamówień w folio.  |
 | Wyślij zamówienie przeniesienia | Zaksięguj polecenie przeniesienia dla wszystkich wierszy zamówienia przeniesienia, które są związane z bieżącym folio w powiązanej przesyłce. |
 | Przyjmuj zamówienie przeniesienia | Zaksięguj paragon polecenia przeniesienia dla wszystkich wierszy zamówienia przeniesienia, które są związane z bieżącym folio w powiązanej przesyłce. |
 | Przyjmuj towar w drodze | Odbierz wszystkie linie zamówień, które są w trakcie folio. |
@@ -65,7 +65,7 @@ W poniższej tabeli opisano przyciski, które są dostępne bezpośrednio na kar
 
 | Przycisk | opis |
 |---|---|
-| Lista przychodu | Opublikuj listę potwierdzeń dla wszystkich linii zamówień w folio. Jeśli używane są podróże obejmujące wiele firm, dla każdej firmy otwierane jest nowe okno dialogowe księgowania listy przyjęć. |
+| Lista przychodu | Opublikuj listę potwierdzeń dla wszystkich linii zamówień w folio.  |
 | Dokument przyjęcia produktów | Umożliwia wyświetlenie rekordu dokumentu przyjęcia produktów, jeśli jest używany. |
 | Przyjęcie pozycji | Wyświetl dziennik przybycia towarów, jeśli jest używany. |
 | Zapytanie dotyczące kosztów | Otwórz stronę zapytania o koszty, aby wyświetlić wszystkie koszty podróży, w tym kontener wysyłkowy, folio i zamówienie zakupu. Przy użyciu akcji Wyświetl można skorygować dokładny widok strony. Na stronie zapytania o koszty można wyświetlić dowolne obszary plus kod towaru i typu kosztu. Usuwając te elementy, możesz dostosować stronę, grupując razem koszty. Ta funkcja może być przydatna, jeśli używasz rozmiarów i kolorów. Wymiary wyświetlane na stronie można zmieniać. Na stronie **Koszty** są dostępne tylko kody typów kosztów, dla których wpis **Dr** na karcie **Księgowanie** jest ustawione na *Pozycja*. |

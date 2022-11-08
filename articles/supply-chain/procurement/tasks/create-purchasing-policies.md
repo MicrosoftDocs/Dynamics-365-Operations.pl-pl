@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 011705723466d746fa5b23c5499d03a548f133f1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9a8d42eaf22730f572e2733dec4318e5e4603d74
+ms.sourcegitcommit: 088a7b5eb9a3b68710dfe012abf4c24776978750
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878853"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "9732712"
 ---
 # <a name="create-purchasing-policies"></a>Tworzenie zasad zakupów
 
@@ -30,29 +30,29 @@ W tym artykule pokazano sposób tworzenia zasad zakupów dopasowanych do proces�
 ## <a name="set-up-policy-parameters"></a>Ustawianie parametrów zasad
 1. W okienku nawigacji wybierz kolejno **Moduły > Zaopatrzenie i sourcing > Ustawienia > Zasady > Zasady zakupów**.
 2. W okienku akcji wybierz pozycję **Parametry**.
-- Reguły pierwszeństwa zasad dotyczą różnych poziomów w organizacji. Wyświetlane jednostki organizacyjne zależą od hierarchii organizacyjnej oraz od tego, na których poziomach w hierarchii przypisano cel Wewnętrzna kontrola zaopatrzenia. Na przykład w organizacji mogą istnieć firmy, centra kosztów, regiony i działy, ale tylko niektóre z nich mogą mieć w hierarchii cel Wewnętrzna kontrola zaopatrzenia. Domyślnie jest dostępna organizacja typu Firma.  
+    - Reguły pierwszeństwa zasad dotyczą różnych poziomów w organizacji. Wyświetlane jednostki organizacyjne zależą od hierarchii organizacyjnej oraz od tego, na których poziomach w hierarchii przypisano cel Wewnętrzna kontrola zaopatrzenia. Na przykład w organizacji mogą istnieć firmy, centra kosztów, regiony i działy, ale tylko niektóre z nich mogą mieć w hierarchii cel Wewnętrzna kontrola zaopatrzenia. Domyślnie jest dostępna organizacja typu Firma.  
 3. Wybierz kartę **Parametry typu reguły**.
 4. W drzewie przejdź do **Zasady zakupów > Reguła kontroli zapotrzebowania na zakup**.
-- Należy zdefiniować kolejność pierwszeństwa dla stosowania zasad na poziomie zasad. Jednak w przypadku niektórych typów zasad, można zastąpić kolejność pierwszeństwa dla poszczególnych typów reguł dotyczących zasad. Na przykład można zdefiniować pierwszeństwo zasad zakupów w następującej kolejności: centrum kosztów, dział, firma. Jednak dla reguły dotyczącej katalogów chcesz, aby pierwszeństwo było następujące: dział, centrum kosztów, firma. Istnieje możliwość zmiany pierwszeństwa dla reguły dotyczącej katalogu. Gdy pracownik tworzy zapotrzebowanie, wyświetlany katalog zależy od zasad, które są skojarzone najpierw z działem pracownika, następnie z centrum kosztów, a na końcu z firmą.  
-- Jeśli jest wyświetlany więcej niż jeden poziom organizacyjny, można strzałkami w górę/w dół ustawić pierwszeństwo dla reguły kontroli zapotrzebowania na zakup.  
+    - Należy zdefiniować kolejność pierwszeństwa dla stosowania zasad na poziomie zasad. Jednak w przypadku niektórych typów zasad, można zastąpić kolejność pierwszeństwa dla poszczególnych typów reguł dotyczących zasad. Na przykład można zdefiniować pierwszeństwo zasad zakupów w następującej kolejności: centrum kosztów, dział, firma. Jednak dla reguły dotyczącej katalogów chcesz, aby pierwszeństwo było następujące: dział, centrum kosztów, firma. Istnieje możliwość zmiany pierwszeństwa dla reguły dotyczącej katalogu. Gdy pracownik tworzy zapotrzebowanie, wyświetlany katalog zależy od zasad, które są skojarzone najpierw z działem pracownika, następnie z centrum kosztów, a na końcu z firmą.  
+    - Jeśli jest wyświetlany więcej niż jeden poziom organizacyjny, można strzałkami w górę/w dół ustawić pierwszeństwo dla reguły kontroli zapotrzebowania na zakup.  
 5. Zamknij stronę.
 
 ## <a name="create-a-new-policy"></a>Utwórz nowe zasady
 1. Wybierz pozycję **Nowy**.
 2. W polu **Nazwa** wpisz wartość.
 3. W polu **Opis** wpisz wartość.
-- Pojedyncza zasada zakupów może stosować się tylko dla jednej hierarchii organizacyjnej. Na przykład możesz mieć jedną hierarchię o nazwie „Geograficzne” i jedną o nazwie „Dział” i dla każdej ustawić inną zasadę zakupów.  
-- Wybierz organizację, do której ma być stosowana zasada.  
+    - Pojedyncza zasada zakupów może stosować się tylko dla jednej hierarchii organizacyjnej. Na przykład możesz mieć jedną hierarchię o nazwie „Geograficzne” i jedną o nazwie „Dział” i dla każdej ustawić inną zasadę zakupów.  
+    - Wybierz organizację, do której ma być stosowana zasada.  
 4. Wybierz strzałkę, aby dodać wybraną organizację.
-- Można powtórzyć ten proces, aby dodać więcej organizacji.  
+    - Można powtórzyć ten proces, aby dodać więcej organizacji.  
 
 ## <a name="add-a-policy-rule"></a>Dodawanie reguły
 1. Na liście **Typ reguły** zaznacz element **Reguła celu zapotrzebowania**.
-- Utworzysz regułę, która ustawia domyślny cel zapotrzebowania na typ Zużycie, ale za to pozwala wybrać typ Uzupełniania zapasów.  
+    - Utworzysz regułę, która ustawia domyślny cel zapotrzebowania na typ Zużycie, ale za to pozwala wybrać typ Uzupełniania zapasów.  
 2. Wybierz pozycję **Utwórz regułę**.
 3. W polu **Zezwalaj na zastępowanie ręczne** wybierz opcję **Tak**.
 4. Kliknij przycisk **Zamknij**.
-- Teraz można skonfigurować inne reguły dla zasady zakupów. Należy zauważyć, że typ reguły nie może określać nakładających się reguł, które są aktywne w tym samym czasie w jednej zasadzie zaopatrzenia.  
+    - Teraz można skonfigurować inne reguły dla zasady zakupów. Należy zauważyć, że typ reguły nie może określać nakładających się reguł, które są aktywne w tym samym czasie w jednej zasadzie zaopatrzenia.  
 
 
 

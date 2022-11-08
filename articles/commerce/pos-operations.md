@@ -2,7 +2,7 @@
 title: Operacje online i offline w punkcie sprzedaży (POS)
 description: Ten artykuł zawiera szczegółowe informacje dotyczące operacji punktu sprzedaży (POS) w Dynamics 365 Commerce. Określa, gdzie w aplikacji można wywołać operacje oraz czy są dostępne w trybie offline..
 author: josaw1
-ms.date: 05/27/2022
+ms.date: 10/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.custom: ''
 ms.assetid: ''
 ms.search.industry: Retail
-ms.openlocfilehash: 39f827d759f37daf056ff2df6284dda3db113c7f
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 42010bbc0cfb9714fc2be360c817bad07e184eb3
+ms.sourcegitcommit: 435e69160dbd7f9c61b37ac4440285a5df144622
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9272857"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "9728284"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Operacje online i offline w punkcie sprzedaży (POS)
 
@@ -100,8 +100,8 @@ Poniższe kolumny określają, gdzie można wywołać informacje:
 | 211  | Unieważnij płatność                                      | Unieważnij aktualnie wybrany wiersz płatności z transakcji.                                                                                                                                                 | Tak            | Tak                | Nie             | Tak               | Nie              |
 | 212  | Informacje o karcie flotowej                                   | Ta operacja nie jest obsługiwana.                                                                                                                                                                                | Nie dotyczy | Nie dotyczy     | Nie dotyczy | Nie dotyczy    | Nie dotyczy  |
 | 213  | Płatność notą kredytową                                   | Akceptuj notę uznaniową (załącznik) wystawioną przez sklep.                                                                                                                                                          | Tak            | Tak                | Nie             | Nie                | Nie              |
-| 214  | Płatność kartą upominkową                                     | Zaakceptuj kartę upominkową wydaną przez sklep.                                                                                                                                                                      | Tak            | Tak                | Nie             | Nie                | Nie              |
-| 215  | Spienięż kartę upominkową                                | Ta operacja nie jest obsługiwana.                                                                                                                                                                                | Tak            | Tak                | Nie             | Nie                | Nie              |
+| 214  | Płatność kartą upominkową                                     | Zaakceptuj kartę upominkową wydaną przez sklep.                                                                                                                                                                      | Tak            | Tak                | Nr             | Nr                | Nr              |
+| 215  | Spienięż kartę upominkową                                | Transakcja kredytowa z pełną kwotą pozostałego salda karty upominkowej, jeśli znajduje się w granicach skonfigurowanego limitu gotówki.                                                                                                                                                                              | Tak            | Tak                | Nr             | Nr                | Nr              |
 | 216  | Precyzyjna płatność kartą                                    | Ta operacja nie jest obsługiwana.                                                                                                                                                                                | Nie dotyczy | Nie dotyczy     | Nie dotyczy | Nie dotyczy    | Nie dotyczy  |
 | 217  | Precyzyjna płatność czekiem                                   | Ta operacja nie jest obsługiwana.                                                                                                                                                                                | Nie dotyczy | Nie dotyczy     | Nie dotyczy | Nie dotyczy    | Nie dotyczy  |
 | 218  | Precyzyjna płatność z konta odbiorcy                        | Ta operacja nie jest obsługiwana.                                                                                                                                                                                | Nie dotyczy | Nie dotyczy     | Nie dotyczy | Nie dotyczy    | Nie dotyczy  |

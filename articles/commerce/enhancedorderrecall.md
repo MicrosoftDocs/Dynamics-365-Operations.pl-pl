@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 3723b40209ee1f8fb0ef77cb1ad52d123ff2a02f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0624c251646110644a8a72658a6dd6f8d319c57f
+ms.sourcegitcommit: e25fe4228add88dd37f4f38ece86979e1c621f6a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869469"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "9734302"
 ---
 # <a name="recall-order-operation-in-pos"></a>Odwołanie operacji zamówienia w punkcie sprzedaży
 
@@ -65,5 +65,11 @@ W AppBar użytkownik może wybrać operację. Niektóre operacje mogą nie być 
 ## <a name="add-notifications-to-the-recall-order-operation"></a>Dodaj powiadomienia do operacji wycofania zamówienia
 
 W wersji 10.0.18 lub nowszej można skonfigurować powiadomienia programu POS oraz alerty kafelków na żywo dla operacji **Odwołaj zamówienie**, jeśli jest to konieczne. Aby uzyskać więcej informacji, zobacz [Wyświetlanie powiadomień o zamówieniach w punkcie sprzedaży](notifications-pos.md)s  
+
+> [!NOTE]
+> Aby włączyć funkcję wyszukiwania zamówień, upewnij się, że klucz **Oferty** jest włączony w obszarze **Konfiguracja licencji** > **Klucze konfiguracji**.
+>
+> ![Konfiguracja klucza licencji ofert musi być włączona](./media/Quotations_License_Key_Configuration.png)
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

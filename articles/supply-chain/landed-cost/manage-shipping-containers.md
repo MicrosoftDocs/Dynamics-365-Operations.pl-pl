@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 22f2512125679f160cb658923893d5f5aa739a2d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b409017407ce1c027184bdc2292197840c61e04a
+ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906161"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725451"
 ---
 # <a name="manage-shipping-containers"></a>Zarządzaj kontenerami wysyłkowymi
 
@@ -40,9 +40,9 @@ W poniższej tabeli opisano przyciski, które są dostępne bezpośrednio na kar
 
 | Przycisk | Opisy |
 |---|---|
-| Księguj listę przychodu | Umożliwia zaksięgowanie listy przychodu lub wyświetlenie list dokumentów przyjęcia produktów dla wszystkich wierszy zamówienia zakupu w kontenerze wysyłkowym. Jeśli używane są przesyłki obejmujące wiele firm, dla każdej firmy otwierane jest nowe okno dialogowe księgowania listy przyjęć. |
+| Księguj listę przychodu | Umożliwia zaksięgowanie listy przychodu lub wyświetlenie list dokumentów przyjęcia produktów dla wszystkich wierszy zamówienia zakupu w kontenerze wysyłkowym.  |
 | Księguj dokument przyjęcia produktów | Zaksięguj pokwitowanie produktu dla wszystkich wierszy kontenera wysyłkowego. |
-| Księguj fakturę | Opublikuj fakturę dla wszystkich wierszy zamówień w kontenerze wysyłkowym. W przypadku wysyłek obejmujących wiele firm otwierane jest nowe okno dialogowe księgowania faktur dla każdej firmy. |
+| Księguj fakturę | Opublikuj fakturę dla wszystkich wierszy zamówień w kontenerze wysyłkowym.  |
 | Wyślij zamówienie przeniesienia | Zaksięguj przesyłkę z poleceniem przeniesienia dla wszystkich wierszy zamówienia przeniesienia w kontenerze wysyłkowym. W oknie dialogowym są wyświetlane tylko te wiersze kontenera wysyłkowego, które są typu zamówienie przeniesienia. |
 | Przyjmuj zamówienie przeniesienia | Zaksięguj potwierdzenie przelewu dla wszystkich wierszy zamówienia w kontenerze wysyłkowym. Okno dialogowe odbioru to najprostszy sposób odbioru towarów w kontenerze wysyłkowym lub podczas podróży i jest jedną z trzech dostępnych opcji. Można też odbierać przy użyciu arkuszy przybycia lub przetwarzania urządzeń przenośnych. |
 | Utwórz arkusz przyjęcia | Arkusz przybycia do organizacji można wygenerować za pomocą zaawansowanych funkcji magazynu. Dostępne opcje to: _Zaimicjuj ilość_ (zalecane), a następnie _Utwórz z towarów w drodze_ lub _Utwórz na pomocą zamówień zakupu_. Ostatnie dwie opcje zależą od tego, czy jest używane przetwarzanie towarów w drodze. |
@@ -56,7 +56,7 @@ W poniższej tabeli opisano przyciski, które są dostępne bezpośrednio na kar
 
 | Przycisk | Opisy |
 |---|---|
-| Lista przychodu | Opublikuj listę przyjęć dla wszystkich wierszy zamówienia zakupu w kontenerze wysyłkowym. Jeśli używane są podróże obejmujące wiele firm, dla każdej firmy otwierane jest nowe okno dialogowe księgowania listy przyjęć. |
+| Lista przychodu | Opublikuj listę przyjęć dla wszystkich wierszy zamówienia zakupu w kontenerze wysyłkowym.  |
 | Dokument przyjęcia produktów | Umożliwia wyświetlenie rekordu dokumentu przyjęcia produktów, jeśli jest używany. Proces przyjęcia produktów będzie używany tylko w przypadku, gdy dla towarów nie są używane funkcje dotyczące towarów w drodze. |
 | Przyjęcie pozycji | Umożliwia wyświetlenie arkusza przybycia towaru dla kontenera wysyłkowego, jeśli jest używany ten arkusz. |
 | Etapy | Stopy są używane do identyfikowania oddzielnych części podróży. Czasy realizacji można skojarzyć z każdym etapem, aby ułatwić śledzenie wysyłki. Aby uzyskać więcej informacji, zobacz temat [Konfiguracja podróży wieloetapowej](multi-leg-journey-setup.md). |

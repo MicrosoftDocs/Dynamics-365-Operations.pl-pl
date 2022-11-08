@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8a6f883da07bd1d3a6b0379f1582dc8556e166ff
-ms.sourcegitcommit: 9310c943ac76896663e5604209034da9f8d6139c
+ms.openlocfilehash: 0e11d26ebe084762a8616c8aa0aa041a87306473
+ms.sourcegitcommit: e25fe4228add88dd37f4f38ece86979e1c621f6a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151087"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "9734366"
 ---
 # <a name="human-resources-customer-migration"></a>Migracja odbiorcy do rozwiązania Human Resources
 
@@ -40,7 +40,7 @@ Klienci, którzy korzystają z innych aplikacji finansowych i operacyjnych, będ
 Przejście dla każdej firmy będzie zależało od jej obecnej konfiguracji i gotowości do przejścia na infrastrukturę finansową i operacyjną. Zalecamy, aby klienci współpracowali ze swoimi partnerami z firmy Microsoft w celu określenia najlepszego sposobu postępowania.
 
 - Organizacje korzystające z modułu **Human Resources** w Dynamics 365 Finance będą mogły włączyć nowe możliwości Dynamics 365 Human Resources w ramach regularnego procesu aktualizacji One Version. Planujemy, że nowe funkcje będą ogólnie dostępne od stycznia 2022 r.
-- Organizacje korzystające z Dynamics 365 Human Resources będą miały dostęp do narzędzi, które mogą wykorzystać do zakończenia procesu łączenia infrastruktury. Microsoft będzie współpracował z klientami przy przejściu na nowy system, aby zapobiec przerwom w świadczeniu usług. Klienci będą mieli od 12 do 18 miesięcy na dokonanie przejścia, licząc od momentu udostępnienia narzędzi migracyjnych.
+- Organizacje korzystające z Dynamics 365 Human Resources będą miały dostęp do narzędzi, które mogą wykorzystać do zakończenia procesu łączenia infrastruktury. Microsoft będzie współpracował z klientami przy przejściu na nowy system, aby zapobiec przerwom w świadczeniu usług. Klienci będą mieli od 12 miesięcy na dokonanie przejścia, licząc od momentu udostępnienia narzędzi migracyjnych.
 - Organizacje, które używają zarówno Dynamics 365 Human Resources, jak i modułu **Human Resources**, mogą przenieść swoją samodzielną infrastrukturę Human Resources na infrastrukturę finansową i operacyjną. Inną możliwością jest użycie narzędzia scalania, aby połączyć środowiska w jedno. Nie ma wymogu ani terminu połączenia tych dwóch środowisk.
 
 Aby uzyskać aktualne informacje, regularnie sprawdzaj [Plany wydawnicze](/dynamics365/release-plans/).
@@ -166,4 +166,4 @@ Microsoft wciąż określa, jakie narzędzia i zasoby będą dostępne w FastTra
 
 ## <a name="licensing-impact"></a>Wpływ na licencje
 
-Aby uzyskać więcej informacji na temat wpływu na licencjonowanie, zobacz często zadawane pytania dotyczące [scalania infrastruktury Dynamics 365 Human Resources](hr-infrastructure-merge-faq.md#licensing-impact).
+Aby uzyskać więcej informacji na temat wpływu na licencjonowanie, zobacz [Scalanie infrastruktury Dynamics 365 Human Resources](hr-infrastructure-merge.md#licensing).
