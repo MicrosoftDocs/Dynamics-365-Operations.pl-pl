@@ -450,6 +450,8 @@
                       href: accounts-receivable/sb-billing-schedules.md
                     - name: Kopiowanie harmonogramu rozliczania
                       href: accounts-receivable/sb-copy-schedules-items.md
+                    - name: Dzielenie odbiorcy z harmonogramem rozliczania
+                      href: accounts-receivable/sb-customer-split.md
                     - name: Funkcje harmonogramu rozliczania
                       href: accounts-receivable/sb-schedule-billing-features.md
                     - name: Fakturowanie etapowe
@@ -1172,6 +1174,8 @@
                   href: general-ledger/close-general-ledger-at-period-end.md
                 - name: Obszar roboczy zamknięcia okresu obrachunkowego
                   href: general-ledger/financial-period-close-workspace.md
+                - name: Optymalizacja zamknięcia roku
+                  href: general-ledger/optimize-year-end-close.md
                 - name: Zamknięcie roku
                   href: general-ledger/year-end-close.md
                 - name: Zamykanie roku obrachunkowego

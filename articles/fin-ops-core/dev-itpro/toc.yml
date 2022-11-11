@@ -488,7 +488,7 @@
                       href: help/migrate-dynamicsax2012.md
                 - name: Deskryptory języka i ustawień regionalnych w różnych produktach i w systemie pomocy
                   href: help/language-locale.md
-                - name: 'Rozszerzanie, dostosowywanie i współpraca z pomocą'
+                - name: Rozszerzanie i współpraca z pomocą
                   href: help/contributor-guide.md
             - name: Regionalne usługi aplikacji finansowych i operacyjnych
               items:
@@ -1624,6 +1624,10 @@
               href: sysadmin/DataMaintenancePortal.md
             - name: Zarządzanie dostępem do drukarek sieciowych w różnych firmach
               href: sysadmin/sys-admin-tools-network-printer.md
+            - name: Monitorowanie i telemetria z użyciem usługi Application Insights
+              items:
+                - name: Omówienie
+                  href: sysadmin/monitoring-and-telemetry-appinsights.md
             - name: Zabezpieczenia
               items:
                 - name: Zabezpieczenia oparte na rolach

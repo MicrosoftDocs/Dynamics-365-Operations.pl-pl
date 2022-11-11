@@ -541,7 +541,11 @@
                     - name: Rekrutowanie kandydatów
                       href: hr-personnel-recruit.md
         - name: Zarządzanie zadaniami
-          href: hr-task-mgmt.md
+          items:
+            - name: Omówienie
+              href: hr-task-mgmt.md
+            - name: Uaktualnienie zarządzania zadaniami
+              href: hr-task-update.md
         - name: Urlopy i nieobecności
           items:
             - name: Omówienie
@@ -822,7 +826,7 @@
               href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-comply-ada.md
             - name: Zarządzanie zakwaterowaniem pracowników
               href: ../fin-ops-core/fin-ops/hr/localizations/tasks/manage-worker-accommodations.md
-    - name: Zarządzanie zasobami ludzkimi
+    - name: Rozwój rozwiązania Human Resources
       items:
         - name: Omówienie
           href: hr-developer-overview.md
@@ -832,6 +836,10 @@
           href: hr-developer-entities.md
         - name: Pola niestandardowe
           href: hr-developer-custom-fields.md
+        - name: Tworzenie i dostosowywanie
+          items:
+            - name: Wyliczenie wartości bazowej rodzaju
+              href: enum-exten.md
         - name: Ustawianie integracji danych
           items:
             - name: Wybieranie technologii integracji danych
