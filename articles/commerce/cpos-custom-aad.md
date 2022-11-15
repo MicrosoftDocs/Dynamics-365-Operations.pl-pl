@@ -2,22 +2,19 @@
 title: Konfigurowanie aplikacji CPOS do używania aplikacji niestandardowej Azure AD
 description: W tym artykule opisano, jak skonfigurować program Cloud POS (CPOS) do używania niestandardowej aplikacji Azure Active Directory (Azure AD).
 author: boycez
-ms.date: 08/02/2022
+ms.date: 11/04/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: global
 ms.author: boycez
-ms.search.validFrom: ''
-ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: baa0c3da25308345037b5dd1b4c5907d6213e7f7
-ms.sourcegitcommit: bd3b55e1af28e592c97b540de1e87cd8ba9c35a8
+ms.search.validFrom: 2017-06-20
+ms.openlocfilehash: 5e4ff797410e1e94869cc37684e7622ec0d97842
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2022
-ms.locfileid: "9222973"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746268"
 ---
 # <a name="configure-cpos-to-use-a-custom-azure-ad-app"></a>Konfigurowanie aplikacji CPOS do używania aplikacji niestandardowej Azure AD
 
@@ -52,6 +49,9 @@ Aby utworzyć i skonfigurować niestandardową aplikację Retail Server Azure AD
 
 ## <a name="set-up-a-custom-cpos-app-in-azure-ad"></a>Skonfiguruj niestandardową aplikację CPOS w Azure AD
 
+> [!IMPORTANT]
+> Jeśli aktualizujesz istniejącą niestandardową aplikację CPOS Azure AD, która została utworzona przed wersją Commerce 10.0.21, wykonaj czynności opisane w punkcie [Uaktualnienie istniejącej niestandardowej aplikacji CPOS Azure AD utworzonej przed wersją Commerce 10.0.21](#upgrade-an-existing-custom-cpos-azure-ad-app-created-before-commerce-version-10021).
+
 Aby utworzyć i skonfigurować niestandardową aplikację CPOS Azure AD, wykonaj następujące kroki.
 
 1. Zaloguj się do [centrum administracyjnego Azure Active Directory](https://aad.portal.azure.com), używając odpowiedniego konta użytkownika Azure AD. Konto użytkownika nie musi mieć uprawnień administratora.
@@ -68,12 +68,25 @@ Aby utworzyć i skonfigurować niestandardową aplikację CPOS Azure AD, wykonaj
 1. W sekcji **Manifest** dla parametrów **oauth2AllowIdTokenImplicitFlow** i **oauth2AllowImplicitFlow** ustaw wartość **prawda**, a następnie wybierz pozycję **Zapisz**.
 1. W sekcji **Konfiguracja tokenu** wykonaj następujące kroki, aby dodać dwa roszczenia:
 
-    - Wybierz **Dodaj opcjonalne roszczenie**. Ustaw w **polu Typ tokenu** wartość **Identyfikator**, a następnie wybierz roszczenie **identyfikatora sid**. Wybierz opcję **Dodaj**.
-    - Wybierz **Dodaj opcjonalne roszczenie**. Ustaw w **polu Typ tokenu** wartość **Dostęp**, a następnie wybierz roszczenie **identyfikatora sid**. Wybierz opcję **Dodaj**.
+    1. Wybierz **Dodaj opcjonalne roszczenie**. Ustaw w **polu Typ tokenu** wartość **Identyfikator**, a następnie wybierz roszczenie **identyfikatora sid**. Wybierz opcję **Dodaj**.
+    1. Wybierz **Dodaj opcjonalne roszczenie**. Ustaw w **polu Typ tokenu** wartość **Dostęp**, a następnie wybierz roszczenie **identyfikatora sid**. Wybierz opcję **Dodaj**.
 
 1. W **Uprawnienia do interfejsu API** wybierz opcję **Dodaj uprawnienie**.
 1. Na karcie **Interfejsy API używane przeze mnie** organizacja wyszukaj aplikację Retail Server utworzoną w sekcji [Konfigurowanie niestandardowej aplikacji usługi Retail Server Azure AD](#set-up-a-custom-retail-server-app-in-azure-ad). Wybierz opcję **Dodaj uprawnienia**.
 1. W sekcji **Przegląd** zanotuj wartość w polu **Identyfikator aplikacji (klienta)**.
+
+### <a name="upgrade-an-existing-custom-cpos-azure-ad-app-created-before-commerce-version-10021"></a>Uaktualnij istniejącą niestandardową aplikację CPOS Azure AD utworzoną przed wersją Commerce 10.0.21
+
+Uaktualnij istniejącą niestandardową aplikację CPOS Azure AD utworzoną przed wersją Commerce 10.0.21, wykonując następujące kroki. 
+
+1. Otwórz niestandardową aplikację CPOS Azure AD w Azure Portal.
+1. Wybierz kartę **Uwierzytelnianie**.
+1. Skopiuj i zapisz oryginalny adres URI **przekierowania z typu sieci Web** do późniejszego użycia, a następnie go usuń.
+1. Wybierz opcję **Dodaj platformę**, a następnie **wybierz aplikację jednostorową (SPA)**.
+1. Dodaj oryginalny adres URI przekierowywania sieci Web skopiowany powyżej do platformy SPA.
+1. W sekcji **Konfiguracja tokenu** wykonaj następujące kroki, aby dodać dwa roszczenia:
+    1. Wybierz **Dodaj opcjonalne roszczenie**. Ustaw w **polu Typ tokenu** wartość **Identyfikator**, a następnie wybierz roszczenie **identyfikatora sid**. Wybierz opcję **Dodaj**.
+    1. Wybierz **Dodaj opcjonalne roszczenie**. Ustaw w **polu Typ tokenu** wartość **Dostęp**, a następnie wybierz roszczenie **identyfikatora sid**. Wybierz opcję **Dodaj**.
 
 ## <a name="update-the-cpos-configuration-file"></a>Zaktualizuj plik konfiguracyjny CPOS
 
