@@ -2,24 +2,24 @@
 title: Tworzenie list zadań i dodawanie zadań
 description: W tym artykule opisano, jak tworzyć listy zadań i dodawać do nich zadania w Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 02/10/2020
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
 ms.search.industry: ''
 ms.search.form: ''
-ms.openlocfilehash: f754ee78547e785fa2386dee6c3d89371bc0de41
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: b81f27f79362516f8a25766c1f663a7691ebb42a
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9268927"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746167"
 ---
 # <a name="create-task-lists-and-add-tasks"></a>Tworzenie list zadań i dodawanie zadań
 
@@ -35,7 +35,7 @@ Zarówno kierownicy, jak i pracownicy mogą tworzyć listy zadań w biurze zaple
 
 ## <a name="create-a-task-list"></a>Utwórz nową listę zadań
 
-Aby utworzyć listę zadań, wykonaj następujące kroki.
+Przed rozpoczęciem procesu tworzenia listy zadań upewnij się, że zostały ukończone konfiguracje w artykule [Konfigurowanie zarządzania zadaniami](task-mgmt-configure.md). Aby utworzyć listę zadań, wykonaj następujące kroki.
 
 1. Przejdź do **Retail i Commerce \> Zarządzanie zadaniami \> Administracja zarządzania zadaniami**.
 1. Wybierz **Nowy**, a następnie wprowadź wartości w polach **Nazwa**, **Opis** i **Właściciel**.

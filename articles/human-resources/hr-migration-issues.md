@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 28c2c10a9293d00e26dfcc80ab08b89a122a6135
-ms.sourcegitcommit: 088a7b5eb9a3b68710dfe012abf4c24776978750
+ms.openlocfilehash: 5f5981801317ad9647f57a0f68f9b67b592256ab
+ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/01/2022
-ms.locfileid: "9733479"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9752698"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge-known-issues"></a>Znane problemy ze scalaniem infrastruktury Dynamics 365 Human Resources
 
@@ -44,10 +44,3 @@ Przed migracją są wymagane następujące typy środowiska:
 
 Istniejąca aplikacja Human Resources w aplikacji Teams jest obecnie przenoszona do rozwiązania Microsoft Power Platform. Aby uzyskać więcej informacji, zajrzyj do [Aplikacja Human Resources w Teams](hr-admin-teams-leave-app.md).
 
-## <a name="licensing"></a>Licencjonowanie
-
-W poniższych obszarach nie ma żadnych zmian w licencji Dynamics 365 Human Resources: 
-
-- **Minimalna liczba wymagań zakupu licencji**
-- **Licencje na środowisko produkcyjne i środowisko piaskownicy** — jeśli są dostępne autonomiczne licencje Human Resources, które zawierają jedno środowisko produkcyjne i jedno środowisko piaskownicy, w infrastrukturach finansowych i operacyjnych będzie dostępna taka sama liczba licencji.
-- **Dodatkowe licencje na piaskownicę** — jeśli zakupiono dodatkowe licencje na piaskownicę dla autonomicznej aplikacji Human Resources, ta sama liczba licencji będzie dostępna w środowiskach piaskownicy w infrastrukturach finansowych i operacyjnych. 
