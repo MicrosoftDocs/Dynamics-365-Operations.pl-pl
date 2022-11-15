@@ -1,6 +1,6 @@
 ---
 title: Zapotrzebowania na zakup
-description: W tym artykule opisano sposób, w jaki zapotrzebowania na zakup są obsługiwane w optymalizacji planowania.
+description: W tym artykule opisano zapotrzebowania na zakup.
 author: t-benebo
 ms.date: 01/04/2021
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: b4dcae11e83748da3ec0368e1ddf47fedf5de23c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d9d55186307b18f4c3be78ae0828b08d3c987aad
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867906"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740692"
 ---
 # <a name="purchase-requisitions"></a>Zapotrzebowania na zakup
 
@@ -59,7 +59,7 @@ Po ustawieniu horyzontu czasowego zatwierdzonych zapotrzebowań dla pojedynczego
 1. Powtórz kroki 2 i 3 dla każdego dodatkowego planu głównego, w której chcesz ustawić horyzont czasowy zatwierdzonych zapotrzebowań.
 
 > [!IMPORTANT]
-> **Dostępne wkrótce:** horyzonty czasowe zatwierdzonych zapotrzebowań nie są jeszcze obsługiwane podczas optymalizacji planowania. Dopóki nie będą one obsługiwane, wszystkie wartości podane w polu **Horyzonty czasowe zatwierdzonych zapotrzebowań (dni)** będą ignorowane.
+> Horyzonty czasowe zatwierdzonych zapotrzebowań nie są jeszcze obsługiwane podczas optymalizacji planowania. Dopóki nie będą one obsługiwane, wszystkie wartości podane w polu **Horyzonty czasowe zatwierdzonych zapotrzebowań (dni)** będą ignorowane.
 
 ## <a name="independent-supply-regardless-of-coverage-code"></a>Niezależne zaopatrzenie, niezależnie od kodu zapotrzebowania
 

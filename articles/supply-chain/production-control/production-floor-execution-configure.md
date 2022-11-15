@@ -2,7 +2,7 @@
 title: Konfigurowanie interfejsu wykonania hal produkcyjnych
 description: W tym artykule opisano sposób tworzenia jednej lub większej liczby konfiguracji dla interfejsu wykonywania pomieszczenia produkcyjnego. Po otwarciu interfejsu wykonania produkcji system automatycznie ładuje wybraną konfigurację i filtr zadania, które są właściwe dla przeglądarki i urządzenia. W konfiguracji ustawiane są zasady, które muszą być dostępne dla określonego użycia.
 author: johanhoffmann
-ms.date: 08/05/2022
+ms.date: 11/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 7196306b34a72e4c53113dd644f666346f170ed7
-ms.sourcegitcommit: 9e6a9d644a34158390c6e209e80053ccbdb7d974
+ms.openlocfilehash: 641b293617df608bc07b97c077dbcd05664f8e2a
+ms.sourcegitcommit: 4abf9b375fed6885ea11a425c524958fea29c3b9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "9708733"
+ms.lasthandoff: 11/07/2022
+ms.locfileid: "9748694"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurowanie interfejsu wykonania hal produkcyjnych
 
@@ -85,17 +85,19 @@ Ta funkcja zapewnia lepsze środowisko wyświetlania list numerów seryjnych, pa
 
 Aby używać tej funkcji, należy ją włączyć dla systemu. Od wersji 10.0.25 Supply Chain Management funkcja jest domyślnie włączona. Od wersji 10.0.29 Supply Chain Management funkcja jest obowiązkowa i nie można jej wyłączyć. Jeśli uruchomiona jest wersja starsza niż 10.0.29, administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując *Pokaż pełne numery seryjne, partii i tablic rejestracyjnych w interfejsie wykonawczym hali produkcyjnej* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-
 Od wersji 10.0.25 Supply Chain Management version ta funkcja jest domyślnie włączona. Administratorzy mogą włączyć lub wyłączyć tę funkcję, wyszukując *Pokaż pełne numery seryjne, partii i tablic rejestracyjnych w interfejsie wykonawczym hali produkcyjnej* w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="register-material-consumption"></a>Rejestruj zużycie materiałów
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: Preview until further notice -->
 
 Ta funkcja umożliwia pracownikom używanie interfejsu wykonywania produkcji do rejestrowania zużycia materiałów, numerów partii i numerów seryjnych. Niektórzy producenci, szczególnie ci w przemyśle przetwórczym, muszą wyraźnie rejestrować ilość zużywanego materiału dla każdej partii lub zlecenia produkcyjnego. Na przykład pracownicy mogą używać wagi do zważenia ilości zużytego materiału podczas pracy. Aby zapewnić pełną identyfikowalność materiałów, organizacje te muszą również rejestrować numery partii, które zostały zużyte do wytworzenia każdego produktu.
 
 Istnieją dwie wersje tej funkcji. Ta funkcja obsługuje tylko pozycje, dla których *nie* włączono obsługi procesów magazynowych (WMS). Inne obsługują pozycje, dla których *włączono* używanie usług WMS. Aby skorzystać z tej funkcji, włącz jedną lub obie z następujących funkcji w [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (w tej kolejności), w zależności od tego, czy masz elementy, które są włączone dla WMS:
 
 - *Rejestrowanie zużycia materiału w interfejsie wykonania hal produkcyjnych (inne niż WMS)*
-- *Rejestrowanie zużycia materiału w interfejsie wykonania hal produkcyjnych (z obsługą WMS)*
+- *(Wersja zapoznawcza) Rejestrowanie zużycia materiału w interfejsie wykonania hal produkcyjnych (z obsługą WMS)*
 
 > [!IMPORTANT]
 > Można korzystać z funkcji innych niż WMS. Jednak w przypadku korzystania z programu WMS należy włączyć obie funkcje.
@@ -138,6 +140,25 @@ Aby używać tej funkcji, włącz następujące funkcje w module [Zarządzanie f
 
 - *Dodatkowa konfiguracja w interfejsie wykonania hal produkcyjnych*
 
+### <a name="enable-the-my-jobs-tab"></a>Włącz kartę Moje zadania
+
+Na **karcie Moje zadania** pracownicy mogą łatwo przeglądać wszystkie zadania nieukończone i niezakończone, które są przypisane specjalnie do nich. Jest to przydatne w firmach, w których zadania są czasami lub zawsze przydzielane określonym pracownikom (zasobom ludzkim), a nie innym rodzajom zasobów (takich jak maszyny).
+
+Aby używać tej funkcji, włącz następujące funkcje w module [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *Moja karta zadań w interfejsie wykonania hal produkcyjnych*
+
+### <a name="enable-use-of-a-numpad-on-the-sign-in-page"></a>Włącz używanie klawiatury numerycznej na stronie logowania
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: Preview until 10.0.31 GA -->
+
+Ta funkcja pozwala administratorom dodać kontrolkę numpadu do strony logowania do interfejsu wykonawczego hali produkcyjnej. Pracownicy mogą się wtedy zalogować za pomocą klawiatury numerycznej, wpisując swój identyfikator lub numer osobisty.
+
+Aby używać tej funkcji, włącz następujące funkcje w module [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *Włącz używanie klawiatury numerycznej na stronie logowania*
+
 ## <a name="work-with-production-floor-execution-configurations"></a>Praca z konfiguracjami wykonania hali produkcyjnej
 
 Aby utworzyć i utrzymać konfiguracje wykonania hali produkcyjnej, przejdź do **Kontrola produkcji \> Konfiguracja \> Uruchomienie produkcji \> Konfigurowanie interfejsu wykonania hal produkcyjnych**. Na stronie **Konfigurowanie interfejsu wykonania hal produkcyjnych** wyświetlana jest lista istniejących konfiguracji. Na tej stronie można wykonać następujące akcje:
@@ -161,6 +182,7 @@ Poniższe ustawienia są dostępne na skróconej karcie **Ogólne**.
 - **Zablokuj pracownika** — Jeśli ta opcja ma wartość *Nie*, pracownicy są wylogowani natychmiast po dokonaniu rejestracji (np. nowego zadania). Interfejs powróci do strony logowania. Jeśli ta opcja jest ustawiona na wartość *Tak*, pracownicy pozostaną zalogowani do interfejsu wykonawczego hali produkcyjnej. Jednak pracownik może ręcznie wylogować się, aby inny pracownik mógł się zalogować, podczas gdy interfejs wykonywania na poziomie produkcyjnym nadal działa na tym samym koncie użytkownika systemu. Aby uzyskać więcej informacji o tych typach kont, zobacz, zobacz temat [Przypisani użytkownicy](config-job-card-device.md#assigned-users).
 - **Użyj faktycznego czasu rejestracji** – Ustaw to na *Tak*, aby ustawić czas każdej nowej rejestracji na dokładny czas, w którym pracownik przesłał rejestrację. Jeśli ta opcja jest ustawiona na *Nie*, w zamian zostanie użyta godzina logowania. Zazwyczaj ustawienie to jest ustawione na *Tak*, jeśli włączono opcję **Zablokuj pracownika** i/lub opcję **Jeden pracownik** ustawioną na *Tak*, gdzie pracownik często pozostaje zalogowany przez dłuższy okres czasu.
 - **Jeden pracownik** – Ustawienie tej opcji na wartość *Tak*, jeśli tylko jeden pracownik korzysta z każdego interfejsu wykonawczego na poziomie produkcyjnym, w którym ta konfiguracja jest aktywna. Po ustawieniu tej opcji na *Tak*, opcja **Blokowanie pracownika** jest automatycznie ustawiana na wartość *Tak*. Ponadto to ustawienie usuwa zapotrzebowanie (i zdolność) pracownika, który ma być zalogowany przy użyciu identyfikatora karty identyfikacyjnej (lub podobnego identyfikatora). Zamiast tego pracownik loguje się do Microsoft Dynamics 365 Supply Chain Management, używając konta użytkownika systemowego powiązanego z *pracownik zarejestrowany w czasie* (z tabeli *pracownicy*) i zostaje zalogowany do interfejsu wykonawczego hali produkcyjnej jako ten pracownik w tym samym czasie.
+- **Włącz klawiaturę numeryczną** – Ustaw tę opcję na *Tak*, aby dodać numerator do ekranu logowania, który umożliwia pracownikom wprowadzanie identyfikatora lub numeru osobistego za pomocą numeratora na ekranie dotykowym. Ustawienie tej opcji na *Nie* spowoduje ukrycie klawiatury numerycznej.
 - **Zezwalaj na blokowanie ekranu dotykowego** – tę opcję należy wybrać *Tak*, aby umożliwić pracownikom zablokowanie ekranu dotykowego interfejsu wykonawczego hali produkcyjnej, aby mogli go oczyścić. Jeśli ta opcja jest ustawiona na *Tak*, do strony rejestracji zostanie dodany przycisk **Blokowanie ekranu ze względu na dezynfekcję**. Po wybraniu tego przycisku przez pracownika ekran dotykowy jest tymczasowo blokowany, aby zapobiec niezamierzonemu wprowadzaniu. Wyświetlany jest również czasomierz odliczania. Pracownik może następnie bezpiecznie oczyścić urządzenie i ekran. Po zakończeniu odliczania ekran dotykowy automatycznie odblokowuje ekran.
 - **Czas trwania blokady ekranu** – gdy opcja **Zezwalaj na blokowanie ekranu dotykowego** jest ustawiona na *Tak*, ta opcja służy do określenia liczby sekund, kiedy ekran dotykowy powinien być zablokowany do oczyszczania. Czas trwania musi być liczbą od 5 do 120 sekund.
 - **Generowanie numeru identyfikacyjnego** – ustawienie tej opcji na wartość *Tak*, aby generować nową tablicę rejestracyjną za każdym razem, gdy pracownik korzysta z interfejsu wykonawczego hali produkcyjnej, aby zgłosić gotowość. Numer identyfikacyjny jest generowany na podstawie sekwencji numerów ustawionej na stronie **Parametry zarządzania magazynem**. Po ustawieniu wartości opcji *Nie* pracownicy muszą określić istniejący numer identyfikacyjny podczas zgłaszania wyrobów gotowych.

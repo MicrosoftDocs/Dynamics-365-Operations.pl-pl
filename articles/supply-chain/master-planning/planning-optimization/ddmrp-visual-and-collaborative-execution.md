@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 92e38c6ea19b60ae0a61e55f240ff52698e06933
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: ce32a4449da8e85f958f212f2c2dfd2841ca6887
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689784"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740831"
 ---
 # <a name="visual-and-collaborative-execution"></a>Wizualizacja i wykonanie pracy grupowej
 
@@ -34,7 +34,7 @@ W Microsoft Dynamics 365 Supply Chain Management można wizualnie śledzić, jak
 1. Wybierz uwolniony element, który jest ustawiony jako punkt rozłączenia. (Aby uzyskać więcej informacji, zobacz [Pozycjonowanie zapasów](ddmrp-inventory-positioning.md)).
 1. W okienku akcji otwórz kartę **Plan** i wybierz pozycję **Objęcie przedmiotu**.
 1. Na stronie **Zapotrzebowanie na towary** wybierz rekord zapotrzebowania na towar, który powoduje utworzenie punktu dekodowania. (W tym rekordzie pojawi się nazwa grupy pokrycia, która została utworzona w celu utworzenia punktów rozłączenia).
-1. Wybierz zakładkę **Dostępne**. Zakładka ta zawiera wykres, który pokazuje, jak zmieniały się ilości towaru w magazynie w czasie, a także wartość poziomu towaru w magazynie, który został zarejestrowany dla danego okresu przy każdym uruchomieniu optymalizacji planowania. Zakładka zawiera również tabelę, która pokazuje, do której z poniższych kategorii należy każdy zarejestrowany poziom na stanie:
+1. Wybierz zakładkę **Dostępne**. Zakładka ta zawiera wykres, który pokazuje, jak zmieniały się ilości towaru w magazynie w czasie, a także wartość poziomu towaru w magazynie, który został zarejestrowany dla danego okresu przy każdym uruchomieniu planowania głównego. Zakładka zawiera również tabelę, która pokazuje, do której z poniższych kategorii należy każdy zarejestrowany poziom na stanie:
 
     - **Krytycznie niska** — Mniej niż połowa minimum dla tego okresu.
     - **Niska** — Między połową minimum a minimum.

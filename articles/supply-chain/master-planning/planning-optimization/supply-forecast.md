@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-09-21
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: dc83d10851958ec67166cb7e40cfd84dceae6651
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: 2bac9355bb1ac00f697ec459f494a64553e0eacc
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9690088"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740149"
 ---
 # <a name="master-planning-with-supply-forecasts"></a>Planowanie główne z uwzględnieniem prognoz dostaw
 
@@ -168,13 +168,13 @@ W przypadku uruchomienia planu głównego, który jest ustawiony do używania me
 
 Edytujesz teraz planowane zamówienie zakupu, które zostało utworzone po ostatnim uruchomieniu planowania, i zmniejszasz ilość na *15 szt*. Następnie zatwierdzasz zamówienie zakupu. Następnym razem, gdy uruchomisz plan główny, zostanie utworzone planowane zamówienie zakupu dla dostawcy *US-101*, lokacji *1*, magazynu *11*, ilości *10 szt.* i daty *10.10.2022*. Tym razem ilość zostanie zmniejszona, aby odzwierciedlić ilość w istniejącym zatwierdzonym zamówieniu z poprzedniego przebiegu planowania.
 
-## <a name="differences-between-planning-optimization-and-the-built-in-planning-engine"></a>Różnice między optymalizacją planowania i wbudowanym aparatem planowania
+## <a name="differences-between-planning-optimization-and-the-deprecated-master-planning-engine"></a>Różnice między optymalizacją planowania i przestarzałym aparatem planowania głównego
 
-Prognozy dostaw działają nieco inaczej, w zależności od używanego głównego aparatu planowania (wbudowane planowanie główne lub optymalizacja planowania). W tej sekcji opisano różnice.
+Prognozy dostaw działają nieco inaczej, w zależności od silnika planowania, którego używasz ( Optymalizacja planowania lub przestarzały silnik planowania głównego). W tej sekcji opisano różnice.
 
 ### <a name="vendor-groups"></a>Grupy dostawców
 
-Podczas dodawania prognozowanego wiersza można określić dostawcę i grupę dostawców. W wbudowanym aparacie planowania tworzone zamówienia planowane są grupowane według kombinacji wartości dostawców i grup dostawców. W optymalizacji planowania zamówienia planowane są grupowane według dostawcy.
+Podczas dodawania prognozowanego wiersza można określić dostawcę i grupę dostawców. W przestarzałym aparacie planowania głownego tworzone zamówienia planowane są grupowane według kombinacji wartości dostawców i grup dostawców. W optymalizacji planowania zamówienia planowane są grupowane według dostawcy.
 
 W poniższej tabeli przedstawiono przykłady wierszy prognozy dostaw dla pozycji.
 
@@ -186,7 +186,7 @@ W poniższej tabeli przedstawiono przykłady wierszy prognozy dostaw dla pozycji
 
 Dostawca *VendorA* jest domyślnym dostawcą dla grupy dostawców *VendorGroupA*. Jest to również domyślny dostawca dla pozycji.
 
-Wbudowany aparat planowania utworzy następujące zamówienia:
+Przestarzały aparat planowania głównego utworzy następujące zamówienia:
 
 - Planowane zamówienie zakupu dla dostawcy *VendorA*, grupy dostawców *VendorGroupA* i ilości *11*
 - Planowane zamówienie zakupu dla dostawcy *VendorA* i ilości *7*
@@ -197,7 +197,7 @@ Optymalizacja planowania spowoduje utworzenie tylko jednego zamówienia:
 
 ### <a name="reduction-of-general-forecasts-by-more-specific-forecasts"></a>Zmniejszanie prognoz ogólnych o bardziej szczegółowe prognozy
 
-We wbudowanym aparacie planowania głównego wynik jest nieprzewidywalny, jeśli niektóre prognozy mają dostawcę, a inne nie.
+We przestarzałym aparacie planowania głównego wynik jest nieprzewidywalny, jeśli niektóre prognozy mają dostawcę, a inne nie.
 
 W przypadku optymalizacji planowania prognozy ogólne są zawsze zmniejszane o bardziej szczegółowe prognozy, jak pokazano w poniższym przykładzie.
 
@@ -218,15 +218,15 @@ Prognoza ogólna (na 15,00 sztuk) jest redukowana o bardziej szczegółowe progn
 
 ### <a name="respect-for-default-order-settings-when-planned-orders-are-generated"></a>Przestrzeganie domyślnych ustawień zamówienia podczas generowania zamówień planowanych
 
-Każda pozycja może mieć ustawienia domyślne zamówienia, takie jak minimalna ilość zamówienia zakupu. Wbudowany aparat planowania ignoruje te ustawienia, a w związku z tym przekłada prognozy na planowane zamówienia o takiej samej ilości. Optymalizacja planowania przestrzega tych ustawień, gdy na podstawie prognoz dostaw są generowane zamówienia planowane. 
+Każda pozycja może mieć ustawienia domyślne zamówienia, takie jak minimalna ilość zamówienia zakupu. Przestarzały aparat planowania głównego ignoruje te ustawienia, a w związku z tym przekłada prognozy na planowane zamówienia o takiej samej ilości. Optymalizacja planowania przestrzega tych ustawień, gdy na podstawie prognoz dostaw są generowane zamówienia planowane. 
 
 ### <a name="aggregation-of-planned-orders-as-a-result-of-reduction-by-approved-orders"></a>Agregacja zamówień planowanych w wyniku redukcji o zatwierdzone zamówienia
 
-Wbudowany aparat planowania głównego zakłada, że tylko jedno zamówienie zmniejszy istniejącą prognozę dostaw. Jeśli więc kilka zamówień pasuje do wiersza prognozy dostaw, zmniejsza je tylko pierwsze zamówienie. W optymalizacji planowania wszystkie zamówienia, które pasują do wiersza prognozy dostaw, zmniejszą go.
+Przestarzały aparat planowania głównego zakłada, że tylko jedno zamówienie zmniejszy istniejącą prognozę dostaw. Jeśli więc kilka zamówień pasuje do wiersza prognozy dostaw, zmniejsza je tylko pierwsze zamówienie. W optymalizacji planowania wszystkie zamówienia, które pasują do wiersza prognozy dostaw, zmniejszą go.
 
 ### <a name="reduction-of-forecasts-by-matching-vendors-only"></a>Zmniejszanie prognoz tylko o pasujących dostawców
 
-Gdy wbudowany aparat planowania głównego zmniejsza prognozę o istniejące zwolnione zamówienia zakupu, nie zapewnia, że dostawca na zamówieniu zakupu będzie taki sam jak dostawca z prognozy. Optymalizacja planowania zmniejsza prognozy tylko o zamówienia zakupu, które mają pasującą wartość w polu dostawcy.
+Gdy przestarzały aparat planowania głównego zmniejsza prognozę o istniejące zwolnione zamówienia zakupu, nie zapewnia, że dostawca na zamówieniu zakupu będzie taki sam jak dostawca z prognozy. Optymalizacja planowania zmniejsza prognozy tylko o zamówienia zakupu, które mają pasującą wartość w polu dostawcy.
 
 W przypadku zamówień przeniesienia i zleceń produkcyjnych pole dostawcy jest zawsze ignorowane, ponieważ nie jest istotne dla tych typów zamówień.
 
@@ -234,4 +234,4 @@ W przypadku zamówień przeniesienia i zleceń produkcyjnych pole dostawcy jest 
 
 Jeśli domyślnym typem zamówienia dla pozycji jest *Przeniesienie*, prognozy mogą być zmniejszane tylko o istniejące planowane zamówienia przeniesienia. Jednak w przypadku zleceń produkcyjnych i zamówień zakupu tylko zwolnione zamówienia redukują prognozę dostaw.
 
-Wbudowany aparat planowania zmniejsza ilość dla wszystkich stanów zamówienia przeniesienia, a optymalizacja planowania zmniejsza prognozy tylko o zamówienia przeniesienia, które są w stanie *Zwolnione*.
+Przestarzały aparat planowania zmniejsza ilość dla wszystkich stanów zamówienia przeniesienia, a optymalizacja planowania zmniejsza prognozy tylko o zamówienia przeniesienia, które są w stanie *Zwolnione*.
