@@ -2,7 +2,7 @@
 title: Moduł realizacji transakcji
 description: W tym artykule opisano sposób dodawania modułu realizacji transakcji do strony i ustawiania wymaganych właściwości.
 author: anupamar-ms
-ms.date: 05/18/2022
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.custom: ''
 ms.assetid: ''
-ms.openlocfilehash: b6f3aef08f723eff8b172db2ca5c355121e93bdc
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 295b99c7012e35a40af34d454ff7082d4100c74a
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9280482"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746233"
 ---
 # <a name="checkout-module"></a>Moduł realizacji transakcji
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 W tym artykule opisano sposób dodawania modułu realizacji transakcji do strony i ustawiania wymaganych właściwości.
 
@@ -104,6 +105,8 @@ Aby dodać moduł realizacji transakcji do nowej strony i ustawić wymagane wła
 1. Wybierz **Zakończ edycję**, aby zaewidencjonować fragment, a następnie wybierz opcję **Publikuj**, aby go opublikować.
 1. Utwórz szablon, w którym jest używany nowy fragment realizacji transakcji.
 1. Utwórz stronę kasy, która korzysta z nowego szablonu.
+
+> [UWAGA] W przypadku korzystania z autoryzacji pojedynczej płatności opisanej w sekcji [Rozszerzone płatności w realizacji zamówienia sklepu](./dev-itpro/enhanced-sca.md), w sekcji **Informacje o realizacji zamówienia** na stronie realizacji potwierdź, że kontener sekcji realizacji zamówienia jest umieszczony jako ostatni. Gwarantuje to, że wszystkie wymagane informacje zostaną zebrane przez stronę kasy przed ostateczną płatnością w kasie i działaniami związanymi z realizacją zamówienia. 
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

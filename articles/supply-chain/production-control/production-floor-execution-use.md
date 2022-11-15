@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 0d857ef31e0fed2a0d7550197209fac9251d8812
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 876ee36c75a31ca89a9351d0ee1484e66076b6aa
+ms.sourcegitcommit: 4abf9b375fed6885ea11a425c524958fea29c3b9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9069795"
+ms.lasthandoff: 11/07/2022
+ms.locfileid: "9748721"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Jak pracownicy korzystają z interfejsu wykonania hal produkcyjnych
 
@@ -146,9 +146,6 @@ Jeśli zamówienie partii jest tworzone na podstawie wersji formuły, w której 
 W takim przypadku pracownik może określić produkt towarzyszący w raporcie, zaznaczając w oknie dialogowym postępu raportu **Warianty produktów towarzyszących**. Pracownik może następnie wybrać spośród wszystkich zwolnionych produktów, które są zdefiniowane jako produkty towarzyszące.
 
 ### <a name="reporting-catch-weight-items"></a>Zgłaszanie pozycji wagi połowu
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until further notice -->
 
 Pracownicy mogą używać interfejsu wykonywania na hali produkcyjnej do raportowania postępu w zamówieniach partii, które są tworzone dla pozycji wagi połowu. Zamówienia wsadowe są tworzone na podstawie formuł, które można zdefiniować w taki sposób, aby pozycje wagi połowu były pozycjami formuły, produktami towarzyszącymi i produktami ubocznymi. Formułę można także zdefiniować tak, aby zawierała wiersze formuły dotyczące składników, które zostały określone dla wagi catch. Pozycje w ilości catch używają dwóch jednostek miary do śledzenia zapasów: ilości catch i ilości magazynowej. Na przykład w branży spożywczej mięso pudełek można zdefiniować jako towar w ilości catch, gdzie ilość catch jest używana do śledzenia liczby pudełek, a ilość magazynowa jest używana do śledzenia wagi pudełek.
 

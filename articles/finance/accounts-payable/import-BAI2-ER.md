@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: 46a50f4b00125656fc185ad569b94eeef00dc3c3
-ms.sourcegitcommit: 649f1db26da8f20602f11180fc565b7c59eaf545
+ms.openlocfilehash: d24e117b21e291dba1e41d9fa15187b84ff795cf
+ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9337576"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9752728"
 ---
 # <a name="set-up-advanced-bank-reconciliation-import-by-using-electronic-reporting"></a>Konfigurowanie zaawansowanego importowania uzgodnienia konta bankowego za pomocą raportowania elektronicznego
 
@@ -34,7 +34,7 @@ Funkcja Zaawansowane uzgadnianie konta bankowego umożliwia importowanie elektro
 2. Na kafelku dla dostawcy konfiguracji **Microsoft** wybierz **Repozytoria**.
 3. Wybierz opcję **Globalny**, a następnie wybierz opcję **Otwórz**.
 4. Jeśli konieczne jest nawiązanie połączenia z repozytorium, wybierz niebieskie łącze w oknie dialogowym.
-5. Na liście konfiguracji znajdź **Wzór wyciągu bankowego \> Model wyciągu bankowego BAI2**.
+5. Na liście konfiguracji znajdź **Zaawansowany model zestawienia uzgodnień bankowych \> Format ABR BAI2**..
 6. Wybieranie formatu **BAI2**.
 7. Na karcie **Wersje** FastTab wybierz najnowszą wersję, a następnie wybierz **Import**.
 

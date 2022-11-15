@@ -1,6 +1,6 @@
 ---
 title: Planowanie główne z uwzględnieniem prognoz popytu
-description: W tym artykule opisano sposób uwzględniania prognoz popytu podczas planowania głównego z optymalizacją planowania.
+description: W tym artykule opisano sposób uwzględniania prognoz popytu podczas planowania głównego.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 63221b5270416cad9cdfb586c697d7700f3b561b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 79a25d6fc5c809947b5b92a32cc00c9a3cc73202
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878998"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739791"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Planowanie główne z uwzględnieniem prognoz popytu
 
 [!include [banner](../../includes/banner.md)]
 
-Prognozę popytu można stosować razem z optymalizacją planowania w celu uwzględnienia oczekiwanego popytu w planowaniu głównym. Można ręcznie utworzyć prognozę popytu, zaimportować ją lub wygenerować za pomocą funkcji prognozowania popytu w rozwiązaniu Microsoft Dynamics 365 Supply Chain Management. Aby uzyskać więcej informacji o prognozowaniu popytu, zapoznaj się z [omówieniem prognozowania popytu ](../introduction-demand-forecasting.md).
+Prognozę popytu można stosować w celu uwzględnienia oczekiwanego popytu w planowaniu głównym. Można ręcznie utworzyć prognozę popytu, zaimportować ją lub wygenerować za pomocą funkcji prognozowania popytu w rozwiązaniu Microsoft Dynamics 365 Supply Chain Management. Aby uzyskać więcej informacji o prognozowaniu popytu, zapoznaj się z [omówieniem prognozowania popytu ](../introduction-demand-forecasting.md).
 
 > [!NOTE]
 > Osobne planowanie prognozy nie jest obsługiwane w przypadku optymalizacji planowania. Z tego względu **ustawienie bieżącego planu według prognozy** na **stronie parametrów planowania głównego** nie ma znaczenia w przypadku korzystania z optymalizacji planowania.
@@ -50,7 +50,7 @@ Aby skonfigurować plan główny w celu uwzględnienia prognozy popytu, należy 
     - **Okres prognozy** — w przypadku ustawienia **opcji planu według prognozy** na wartość *tak* należy określić liczbę dni (od dzisiejszej daty), jaka powinna zostać zastosowana w prognozie popytu.
 
     > [!IMPORTANT]
-    > Osobne **planowanie prognozy** nie jest obsługiwane w przypadku optymalizacji planowania.
+    > Osobne **planowanie prognozy** nie są obsługiwane w przypadku optymalizacji planowania.
 
 ## <a name="set-up-a-coverage-group-to-include-a-demand-forecast"></a>Konfigurowanie grupy zapotrzebowania w celu uwzględnienia prognozy popytu
 

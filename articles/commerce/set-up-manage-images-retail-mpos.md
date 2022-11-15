@@ -16,12 +16,12 @@ ms.custom: 52851
 ms.assetid: 5c21385e-64e0-4091-98fa-6a662eb33010
 ms.search.industry: Retail
 ms.search.form: RetailChannelProfile, RetailMediaGallery, RetailImages,
-ms.openlocfilehash: f282c163ef5a74283231492e499201c6d4619115
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: d334701b2865a4f19365a2773641e324326b02e3
+ms.sourcegitcommit: 78cbb125f20a33df38bda0546203b8f837cbcd93
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287519"
+ms.lasthandoff: 11/09/2022
+ms.locfileid: "9751949"
 ---
 # <a name="set-up-and-manage-images-for-modern-pos-mpos"></a>Konfigurowanie obrazów w aplikacji Modern POS (MPOS) i zarządzanie nimi
 
@@ -160,7 +160,7 @@ Dla wszystkich jednostek za wyjątkiem produktów można zastąpić adres URL ob
     [![Strona Galeria obrazów katalogu.](./media/preview-4.png)](./media/preview-4.png)
 
 > [!NOTE]
-> Obecnie, Galeria nie pokazuje podglądów obrazu dla adresów URL obrazów z szablonu multimediów. W przypadku Katalogu, Pracownika, Odbiorcy i Kategorii, jeśli użytkownik jawnie ustala URL na tej stronie, zalecamy wskazanie obrazu domyślnego, ponieważ oprogramowanie klienckie usługi Commerce Scale Unit pokazuje tylko po jednym obrazie na Katalog, Odbiorcę, Pracownika i Kategorię. Jeśli użytkownik nie określi domyślnego obrazu, system określa domyślny obraz i wysyła go do aparatu wywołaniu usługi Commerce (MPOS lub handel elektroniczny).
+> W swoim miejscu pracy będą renderowane tylko obrazy dostępne publicznie i anonimowo. Program POS obsługuje renderowanie obrazów hostowanych zewnętrznie. Wymaga on, aby obrazy zostały zwrócone jako strumień obrazu wewnętrznego do żądań GET bez nagłówków. W przypadku polityki dostępu anonimowego, szczególnie dla obrazów hostowanych przez SharePoint, które wymagają, aby nagłówki żądania zawierały zarówno nagłówki hosta, jak i nagłówki user-agent, zostanie zwrócona odpowiedź „Zakazane”. Z tego względu zarządzanie obrazami SharePoint, który jest hostem, jest obecnie obecnie nieuzyzywne. Na stronie galerii **Katalog obrazów** nie są wyświetlane podglądy obrazów dla adresów URL obrazów szablonów multimediów. Ponieważ klienci Commerce Scale Unit (CSU) wyświetlają tylko jeden obrazek na encję Katalogu, Klienta, Pracownika i Kategorii, jeśli wyraźnie podajesz adres URL poprzez tę stronę dla encji Katalogu, Pracownika, Klienta i Kategorii, zalecamy wskazanie, który obrazek jest domyślny. Jeśli nie określisz obrazu domyślnego, system określa obraz domyślny i wysyła go do wywołującego usługę Commerce (MPOS lub e-commerce).
 
 ### <a name="overwrite-the-image-url-for-catalog-product-images-from-the-preview-page"></a>Zastępowanie adresu URL obrazu dla obrazu produktu z katalogu na stronie podglądu.
 

@@ -1,6 +1,6 @@
 ---
 title: Horyzonty czasowe zapotrzebowania
-description: W tym artykule opisano sposób skonfigurowania horyzontów czasowych zapotrzebowania w przypadku korzystania z optymalizacji planowania. Horyzont czasowy zapotrzebowania wskazuje horyzont i limit planowania.
+description: W tym artykule opisano, jak skonfigurować ogrodzenia czasowe zasięgu. Horyzont czasowy zapotrzebowania wskazuje horyzont i limit planowania.
 author: t-benebo
 ms.date: 01/18/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2021-01-18
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ebd59e05d2ae227f24e7dae6fae3634aab026c5a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 987dea4c1b693fc1bb687f97d51288d5e51e7d4c
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847941"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740121"
 ---
 # <a name="coverage-time-fences"></a>Horyzonty czasowe zapotrzebowania
 
 [!include [banner](../../includes/banner.md)]
 
-W tym artykule opisano sposób skonfigurowania *horyzontów czasowych zapotrzebowania* w przypadku korzystania z optymalizacji planowania. Planiści mogą definiować horyzont planowania (horyzont czasowy zapotrzebowania w dniach) oraz wykluczyć podaż i popyt wykraczający poza ten horyzont. Dlatego też za pomocą horyzontów czasowych zapotrzebowania można zapobiec „hałasowi”, który jest spowodowany sugestiami podaży, których nie trzeba zaksięgować przez wiele miesięcy. Przykłady to prognozy na następny rok i zamówienia klientów, które są poza zwykłym czasem realizacji.
+W tym artykule opisano, jak skonfigurować *ogrodzenia czasowe zasięgu*. Planiści mogą definiować horyzont planowania (horyzont czasowy zapotrzebowania w dniach) oraz wykluczyć podaż i popyt wykraczający poza ten horyzont. Dlatego też za pomocą horyzontów czasowych zapotrzebowania można zapobiec „hałasowi”, który jest spowodowany sugestiami podaży, których nie trzeba zaksięgować przez wiele miesięcy. Przykłady to prognozy na następny rok i zamówienia klientów, które są poza zwykłym czasem realizacji.
 
 Horyzont czasowy zapotrzebowania to liczba dni po dacie dzisiejszej (lub dokładniej: dacie uruchomienia planowania), w których podaż i popyt są wykluczone. Aby uniknąć opóźnień, należy upewnić się, że ten horyzont czasowy zapotrzebowania jest dłuższy niż łączny czas realizacji. Domyślna wartość systemowa to 100 dni.
 
@@ -82,9 +82,9 @@ Podczas konfigurowania horyzontów czasowych zapotrzebowania należy uwzględni�
 - Transakcje zapotrzebowania nie będą generowane dla żadnej podaży i popytu, który przypada poza horyzontem czasowym zapotrzebowania.
 - Jeśli zatwierdzona podaż i popyt przypada poza horyzontem czasowym zapotrzebowania, nie zostaną one załadowane do aparatu. W związku z tym uzupełnianie zapasów nie będzie wyzwalane, a opóźnienia nie zostaną obliczone. Mimo tego ta podaż i popyt nie powinny być usuwane z systemu.
 - Odchylenia ilości zapasów bezpieczeństwa (od kluczy minimalnych) będą ignorowane, jeśli będą znajdować się poza horyzontem czasowym zapotrzebowania.
-- Popyt międzyfirmowy będzie ignorowany, jeśli obliczona żądana data wysyłki nie znajduje się w granicach horyzontu czasowego zapotrzebowania. Należy zauważyć, że dla wbudowanego planowania głównego popyt międzyfirmowy nie jest ograniczony przez horyzont czasowy zapotrzebowania.
-- Prognozy popytu będą ignorowane, jeśli data budżetu nie znajduje się w granicach horyzontu czasowego zapotrzebowania. Należy zauważyć, że dla wbudowanego planowania głównego prognozy popytu nie są ograniczone przez horyzont czasowy zapotrzebowania.
-- Optymalizacja planowania jest powiązana ze strefą czasową. Uwzględnia ona strefę czasową w lokacjach podaży i popytu oraz dla czasu uruchomienia planowania. Na przykład planowanie główne jest wyzwalane o 11:00 15 października z lokacji w Danii (strefa czasowa GMT+1) i jest używany horyzont czasowy zapotrzebowania o długości dziesięciu dni. W tym przypadku podaż i popyt z lokacji w Seattle (strefa czasowa GMT-8) są uwzględniane do godziny 2:00 w dniu 25 października (= dziesięć 24-godzinnych dni po wyzwoleniu planowania głównego minus różnica stref czasowych, czyli 9 godzin). Należy zwrócić uwagę, że wbudowany aparat planowania głównego uwzględnia tylko datę z horyzontu czasowego zapotrzebowania. Z tego względu można uzyskiwać różne wyniki.
+- Popyt międzyfirmowy będzie ignorowany, jeśli obliczona żądana data wysyłki nie znajduje się w granicach horyzontu czasowego zapotrzebowania. Zauważ, że w przypadku przestarzałego silnika planowania głównego, zapotrzebowanie międzyfirmowe nie jest ograniczone przez ogrodzenie czasu pokrycia.
+- Prognozy popytu będą ignorowane, jeśli data budżetu nie znajduje się w granicach horyzontu czasowego zapotrzebowania. Zauważ, że w przypadku przestarzałego silnika planowania głównego, prognozy popytu nie są ograniczone przez ogrodzenie czasu pokrycia.
+- Optymalizacja planowania jest powiązana ze strefą czasową. Uwzględnia ona strefę czasową w lokacjach podaży i popytu oraz dla czasu uruchomienia planowania. Na przykład planowanie główne jest wyzwalane o 11:00 15 października z lokacji w Danii (strefa czasowa GMT+1) i jest używany horyzont czasowy zapotrzebowania o długości dziesięciu dni. W tym przypadku podaż i popyt z lokacji w Seattle (strefa czasowa GMT-8) są uwzględniane do godziny 2:00 w dniu 25 października (= dziesięć 24-godzinnych dni po wyzwoleniu planowania głównego minus różnica stref czasowych, czyli 9 godzin). Należy zwrócić uwagę, że przestarzały aparat planowania głównego uwzględnia tylko datę z horyzontu czasowego zapotrzebowania. Z tego względu można uzyskiwać różne wyniki.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

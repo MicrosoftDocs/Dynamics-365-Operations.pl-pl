@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 4a3c8236183b81ad015b43d7dbf869c177eafd44
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 176f40ad8cd1aa1831bbe50c0ebd91ec0cc3bc89
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335414"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739906"
 ---
 # <a name="scheduling-with-resource-selection-based-on-capability"></a>Planowanie z wyborem zasobu na podstawie zdolności produkcyjnych
 
@@ -43,7 +43,7 @@ Aby przypisać zdolności produkcyjne do zasobu operacyjnego, użyj skróconej k
 - **Ważność** — umożliwia określenie pierwszej daty, od kiedy obowiązuje przypisanie zasobu lub zdolności produkcyjnej. Podczas planowania system nie użyje zasobu ani zdolności produkcyjnej, których zdolność produkcyjna utraciła ważność, nawet jeśli ten zasób w inny sposób zaspokaja wymagania.
 - **Wygaśnięcie** — umożliwia określenie ostatniej daty, kiedy obowiązuje przypisanie zasobu lub zdolności produkcyjnej. Podczas planowania system nie użyje zasobu ani zdolności produkcyjnej, których zdolność produkcyjna utraciła ważność, nawet jeśli ten zasób w inny sposób zaspokaja wymagania.
 - **Poziom** — umożliwia określenie poziomu wydajności, który zasób musi mieć dla zdolności produkcyjnych. Następnie, po określeniu **minimalnego poziomu wymaganej** wartości zasobu lub zapotrzebowania na zdolności produkcyjne, aparat planowania uwzględnia poziom wydajności podczas wyboru zasobu. System wybiera tylko te zasoby, które mają wymagane możliwości na poziomie równym lub przewyższającym poziom określony w wymaganiu źródłowym.
-- **Priorytet** — to pole nie jest jeszcze obsługiwane przez optymalizację planowania. Jeśli jednak jest używasz wbudowanego aparatu planowania, możesz użyć pola **Priorytet** w przypisaniu zasobu lub zdolności produkcyjnych do zdefiniowania priorytetu zasobu. Następnie jeśli zostanie wybrana wartość *Priorytet* w polu **Wybór zasobu głównego** na stronie **Parametry planowania**, system wybierze najpierw zasób, który ma najwyższy priorytet (czyli najniższą wartość liczbową w polu **Priorytet**) podczas planowania.
+- **Priorytet** — to pole nie jest jeszcze obsługiwane przez optymalizację planowania. Jednakże, jeśli używasz przestarzałego silnika planowania głównego, możesz użyć pola **Priorytet** w przypisaniu zasobu lub zdolności produkcyjnych do zdefiniowania priorytetu zasobu. Następnie jeśli zostanie wybrana wartość *Priorytet* w polu **Wybór zasobu głównego** na stronie **Parametry planowania**, system wybierze najpierw zasób, który ma najwyższy priorytet (czyli najniższą wartość liczbową w polu **Priorytet**) podczas planowania.
 
 ## <a name="example"></a>Przykład
 

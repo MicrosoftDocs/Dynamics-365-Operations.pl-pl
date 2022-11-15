@@ -10,14 +10,15 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: fa4d2d1506546cacf5f9a7ec936f17601c5727d2
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 78ba4236705f1a200d9fe796eb80d0241b0fa537
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335384"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740476"
 ---
 # <a name="delay-tolerance-negative-days"></a>Tolerancja opóźnienia (dni z ujemnym opóźnieniem)
+<!-- KFM: Split topic into PO and classic -->
 
 [!include [banner](../../includes/banner.md)]
 
@@ -47,7 +48,7 @@ System łączy obliczenia tolerancji opóźnienia z *najbliższą datą uzupełn
 Formuła gwarantuje, że planowanie główne nie będzie tworzyć nowych zamówień dostaw, jeśli w czasie realizacji produktu będzie istniała wystarczająca dostawa.
 
 > [!NOTE]
-> Obliczanie tolerancji opóźnienia w optymalizacji planowania wykorzystuje zawsze dynamiczne obliczanie dni ujemnych z wbudowanego planowania głównego. Ustawienie **Użyj dynamicznej liczby dni ujemnych** na stronie **Parametry planowania głównego** nie ma wpływu na to zachowanie.
+> Obliczanie tolerancji opóźnienia w Optymalizacji planowania zawsze wykorzystuje dynamiczne obliczanie dni ujemnych z przestarzałego silnika planowania głównego. Ustawienie **Użyj dynamicznej liczby dni ujemnych** na stronie **Parametry planowania głównego** nie ma wpływu na to zachowanie.
 
 Jeśli istniejąca podaż implikuje opóźnienie popytu, które jest mniejsze lub równe obliczonej tolerancji opóźnienia, optymalizacja planowania łączy istniejącą podaż z popytem. W niektórych przypadkach lepiej jest opóźnić popyt niż skończyć z nadpodażą.
 

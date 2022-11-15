@@ -11,18 +11,16 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 5c8169a8d2c3e45304142fb6b4d504e620c545a4
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 43da249637c44b3f56e8b5e210a0e44d9ac6cb9d
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335264"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740557"
 ---
 # <a name="production-planning"></a>Planowanie produkcji
 
 [!include [banner](../../includes/banner.md)]
-
-Optymalizacja planowania obsługuje kilka scenariuszy produkcji. Podczas migrowania z istniejącego, wbudowanego aparatu planowania głównego należy pamiętać o pewnych zmienionych zachowaniach.
 
 Poniższy film przedstawia krótkie wprowadzenie do niektórych pojęć omówionych w tym artykule: [Dynamics 365 Supply Chain Management: Ulepszenia optymalizacji planowania](https://youtu.be/u1pcmZuZBTw).
 
@@ -46,10 +44,6 @@ Planowane zlecenia produkcyjne zawierają identyfikator marszruty wymagany do pl
 
 - **Planowane zlecenie produkcyjne** — czas realizacji jest oparty na statycznym czasie realizacji ze zwolnionego produktu.
 - **Zaakceptowane zlecenie produkcyjne** — czas realizacji jest oparty na planowaniu przy użyciu informacji o marszrucie i powiązanych ograniczeniach zasobów.
-
-Aby uzyskać więcej informacji o oczekiwanej dostępności funkcji, zobacz temat [Analiza dopasowań optymalizacji planowania](planning-optimization-fit-analysis.md).
-
-Jeśli korzystasz z funkcji produkcji, które nie są jeszcze dostępne dla optymalizacji planowania, możesz nadal używać wbudowanego aparatu planowania głównego. Wyjątki nie są wymagane.
 
 ## <a name="delays"></a>Opóźnienia
 
@@ -76,15 +70,15 @@ Strony **Rozłożenie** można użyć do analizy popytu wymaganego dla określon
 
 ## <a name="filters"></a><a name="filters"></a>Filtry
 
-Aby mieć pewność, że optymalizacja planowania zawiera informacje wymagane do obliczenia poprawnego wyniku, musisz uwzględnić wszystkie produkty, które mają relacje z produktami w całej strukturze listy składowej (BOM) planowanego zamówienia. W przypadku scenariuszy planowania, które obejmują produkcję, zaleca się uniknięcie przefiltrowanych przebiegów planowania głównego.
+Aby masterplanowanie miało informacje, których potrzebuje do obliczenia prawidłowego wyniku, należy uwzględnić wszystkie produkty, które mają jakikolwiek związek z produktami w całej strukturze BOM planowanego zamówienia. W przypadku scenariuszy planowania, które obejmują produkcję, zaleca się uniknięcie przefiltrowanych przebiegów planowania głównego.
 
-Chociaż podrzędne elementy zależne są automatycznie wykrywane i uwzględniane w planowaniu głównym, gdy jest używany wbudowany aparat planowania głównego, optymalizacja planowania nie wykonuje obecnie tej akcji.
+Chociaż podrzędne elementy zależne są automatycznie wykrywane i uwzględniane w planowaniu głównym, gdy jest używany przestarzały aparat planowania głównego, optymalizacja planowania nie wykonuje obecnie tej akcji.
 
 Jeśli na przykład do wytwarzania produktu B jest używany jeden element bolt ze struktury listy składowej (BOM) produktu A, w filtrze muszą zostać uwzględnione wszystkie produkty w strukturze BOM produktów A i B. Ponieważ zapewnienie, że wszystkie produkty są częścią filtra może być skomplikowane, zalecamy unikanie filtrowanych przebiegów planowania głównego, gdy w grę wchodzą zlecenia produkcyjne. W przeciwnym razie planowanie główne przyniesie niepożądane rezultaty.
 
 ### <a name="reasons-to-avoid-filtered-master-planning-runs"></a>Powody, dla których należy unikać filtrowania planów generalnych
 
-Kiedy uruchamiasz filtrowane planowanie główne dla produktu, Optymalizacja planowania (w przeciwieństwie do wbudowanego silnika planowania głównego) nie wykrywa wszystkich podproduktów i surowców w strukturze BOM tego produktu, a zatem nie uwzględnia ich w przebiegu planowania głównego. Nawet jeśli Optymalizacja planowania identyfikuje pierwszy poziom w strukturze BOM produktu, nie ładuje żadnych ustawień produktu (takich jak domyślny typ zamówienia lub zakres pozycji) z bazy danych.
+Kiedy uruchamiasz filtrowane planowanie główne dla produktu, Optymalizacja planowania (w przeciwieństwie do przestarzanego silnika planowania głównego) nie wykrywa wszystkich podproduktów i surowców w strukturze BOM tego produktu, a zatem nie uwzględnia ich w przebiegu planowania głównego. Nawet jeśli Optymalizacja planowania identyfikuje pierwszy poziom w strukturze BOM produktu, nie ładuje żadnych ustawień produktu (takich jak domyślny typ zamówienia lub zakres pozycji) z bazy danych.
 
 W optymalizacji planowania dane dla badania są ładowane wcześniej i stosowane są filtry. Oznacza to, że jeśli podprodukt lub surowiec wchodzący w skład określonego produktu nie jest częścią filtra, informacje o nim nie zostaną przechwycone dla przebiegu. Dodatkowo, jeżeli podprodukt lub surowiec jest również zawarty w innym produkcie, wówczas przefiltrowany przebieg obejmujący tylko oryginalny produkt i jego składniki spowodowałby usunięcie istniejącego planowanego popytu, który został utworzony dla tego innego produktu.
 

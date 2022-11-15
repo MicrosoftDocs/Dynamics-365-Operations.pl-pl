@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: e17e45f1d4e9f7c62317eac6f3ea1be84017b562
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 1a952fe5734f01325842a8a130b9322eadc67951
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335294"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740600"
 ---
 # <a name="priority-based-planning"></a>Planowanie oparte na priorytecie
 
 [!include [banner](../../includes/banner.md)]
 
-W tym artykule opisano funkcję planowania opartej na priorytecie rozwiązania Microsoft Dynamics 365 Supply Chain Management. Ta funkcja dodaje obsługę planowania sterowanego popytem, który jest jednym z kroków [planowania zapotrzebowania materiałowego sterowanego popytem (DDMRP)](ddmrp-overview.md). Planowanie oparte na priorytecie umożliwia optymalizację planowania generowania zamówień planowanych, które są sterowane według priorytetów planowania, a nie dat zapotrzebowania.
+W tym artykule opisano funkcję planowania opartej na priorytecie rozwiązania Microsoft Dynamics 365 Supply Chain Management. Ta funkcja dodaje obsługę planowania sterowanego popytem, który jest jednym z kroków [planowania zapotrzebowania materiałowego sterowanego popytem (DDMRP)](ddmrp-overview.md). Planowanie oparte na priorytecie umożliwia systemowi generowanie zamówień planowanych, które są sterowane według priorytetów planowania, a nie dat zapotrzebowania.
 
 Planowanie oparte na priorytecie umożliwia ustalanie priorytetów zamówień uzupełnienia, co zapewnia określanie priorytetów popytu pilnego nad mniej ważnym popytem. Na przykład zamówienie uzupełnienia zapasów będzie mieć priorytet nad standardowym zamówieniem uzupełnienia uzupełniającego. System może automatycznie dzielić większe zamówienia na osobne mniejsze zamówienia, w których wiersze zamówienia są grupowane według priorytetu. Następnie może najpierw przetworzyć wszystkie zamówienia o wysokim priorytecie.
 
@@ -37,11 +37,11 @@ Aby używać tej funkcji, należy ją włączyć dla systemu. Administratorzy mo
 
 ## <a name="where-and-how-planning-priorities-are-assigned"></a>Miejsce i sposób przypisywania priorytetów planowania
 
-*Informacje o priorytecie* planowania podaży i popytu stanowią podstawę planowania opartego na priorytecie. Priorytet planowania określa ważność wiersza podaży lub popytu. Optymalizacja planowania korzysta z tej wartości, gdy pole **Kod zapotrzebowania** ma wartość *Priorytet*.
+*Informacje o priorytecie* planowania podaży i popytu stanowią podstawę planowania opartego na priorytecie. Priorytet planowania określa ważność wiersza podaży lub popytu. Planowanie główne korzysta z tej wartości, gdy pole **Kod zapotrzebowania** ma wartość *Priorytet*.
 
 Priorytet planowania to zwykle liczba z między 0 (zero) a 100, gdzie wartość 0 oznacza najwyższą ważność. Jest ona wyświetlana i ustawiana w polu **Priorytet planowania**. To pole można znaleźć na następujących stronach: **Wiersze prognozy popytu**, **Szczegóły zamówienia sprzedaży**, **Szczegóły zamówienia zakupu**, **Szczegóły zamówienia przeniesienia** i **Szczegóły zamówienia planowanego**.
 
-Jeśli pole **Kod zapotrzebowania** dla odpowiedniej pozycji lub grupy zapotrzebowania ma wartość *Priorytet*, planowanie optymalizacji bilansuje podaż z popytem zgodnie z podejściem sterowanym popytem, obliczając priorytet planowania, a dla każdego zwolnionego produktu, uwzględnia wartości ustawione w polach **Minimum**, **Punkt ponownego zamówienia** i **Maksimum** na stronie **Zapotrzebowanie na towar**.
+Jeśli pole **Kod zapotrzebowania** dla odpowiedniej pozycji lub grupy zapotrzebowania ma wartość *Priorytet*, planowanie główne bilansuje podaż z popytem zgodnie z podejściem sterowanym popytem, obliczając priorytet planowania, a dla każdego zwolnionego produktu, uwzględnia wartości ustawione w polach **Minimum**, **Punkt ponownego zamówienia** i **Maksimum** na stronie **Zapotrzebowanie na towar**.
 
 > [!NOTE]
 > Wartość *Priorytet* jest dostępna dla pola **Kod zapotrzebowania** tylko po włączeniu optymalizacji planowania.

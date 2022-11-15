@@ -1,6 +1,6 @@
 ---
 title: Marginesy bezpieczeństwa
-description: W tym artykule opisano, jak marginesy bezpieczeństwa mogą być używane z dodatkiem Optymalizacja planowania dla rozwiązania Microsoft Dynamics 365 Supply Chain Management.
+description: W tym artykule opisano sposób działania marginesów bezpieczeństwa podczas planowania głównego.
 author: t-benebo
 ms.date: 08/09/2022
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 247b48afab68651cff0ce84c8268a1df35a15c02
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 87b38276a2723374969a67c5413dde15537d04ec
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335204"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740449"
 ---
 # <a name="safety-margins"></a>Marginesy bezpieczeństwa
 
 [!include [banner](../../includes/banner.md)]
 
-W tym artykule opisano, jak marginesy bezpieczeństwa mogą być używane z dodatkiem Optymalizacja planowania dla rozwiązania Microsoft Dynamics 365 Supply Chain Management.
+W tym artykule opisano sposób działania marginesów bezpieczeństwa podczas planowania głównego.
 
 ## <a name="safety-margins-overview"></a>Przegląd marginesów bezpieczeństwa
 
@@ -165,12 +165,5 @@ Wszystkie trzy typy marginesów bezpieczeństwa są uwzględniane, gdy system ok
 Na przykład towar ma czas realizacji o jeden dzień dłuższy, ale zapas bezpieczeństwa wynoszący trzy dni. Zamówienie sprzedaży dla tego towaru jest ustawiane jako wymagane dzisiaj. W takim przypadku opóźnienie jest obliczane jako *czas realizacji* + *zapas czasu dla przyjęcia* = cztery dni. W związku z tym, jeśli dzisiaj jest 14 sierpnia, cztery dni opóźnienia oznaczają dostawy w dniu 18 sierpnia. Na poniższej ilustracji pokazano ten przykład.
 
 ![Przykład obliczania opóźnienia.](media/safety-margins-delays.png)
-
-## <a name="additional-resources"></a>Dodatkowe zasoby
-
-[Rozpoczęcie optymalizacji planowania](get-started.md)
-
-[Analiza dopasowań optymalizacji planowania](planning-optimization-fit-analysis.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

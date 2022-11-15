@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-09-21
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 807834bf5cd062ed24e5e3f3512d8389717a2d39
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2ef78c73a1c7033735f9586229ff7ba21daaa5ef
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885907"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740912"
 ---
 # <a name="date-and-time-parameters-used-by-planning-optimization"></a>Parametry daty i godziny używane przez optymalizację planowania
 
@@ -23,7 +23,7 @@ ms.locfileid: "8885907"
 
 Ten artykuł zawiera informacje dotyczące parametrów daty i godziny, które są używane podczas operacji optymalizacji planowania.
 
-Podczas gdy wbudowany aparat planowania głównego używa dat transakcji we wszystkich obliczeniach, optymalizacja planowania działa na wartościach dat i godzin, które są konwertowane na daty. Taka różnica w zachowaniu może prowadzić do sytuacji, w której na przykład transakcje prognoz utworzone o północy w dniu uruchomienia planowania głównego nie są uwzględniane, ponieważ optymalizacja planowania uważa, że zostały utworzone przed bieżącą datą.
+Podczas gdy przestarzały aparat planowania głównego używa dat transakcji we wszystkich obliczeniach, optymalizacja planowania działa na wartościach dat i godzin, które są konwertowane na daty. Taka różnica w zachowaniu może prowadzić do sytuacji, w której na przykład transakcje prognoz utworzone o północy w dniu uruchomienia planowania głównego nie są uwzględniane, ponieważ optymalizacja planowania uważa, że zostały utworzone przed bieżącą datą.
 
 ## <a name="parameters-for-issue-and-demand-transactions"></a>Parametry transakcji wydania i popytu
 

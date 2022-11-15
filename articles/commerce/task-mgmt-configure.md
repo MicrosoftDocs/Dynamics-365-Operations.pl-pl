@@ -2,23 +2,23 @@
 title: Konfigurowanie zarządzania zadaniami
 description: W tym artykule opisano sposób konfigurowania funkcji zarządzania zadaniami w Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 02/10/2020
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
 ms.search.industry: ''
-ms.openlocfilehash: ff97abab330174b41af76d22c202e8338d6d37fd
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: cc2d75f52b183559de344982c8e4208000af786e
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9282769"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746070"
 ---
 # <a name="configure-task-management"></a>Konfigurowanie zarządzania zadaniami
 
@@ -80,7 +80,11 @@ Na poniższej ilustracji przedstawiono operację **Zarządzania zadaniami** na s
 
 ![Operacja zarządzania zadaniami na stronie operacji punktu sprzedaży.](media/HQ-POS-Tasks-Notifications.png)
 
-Aby uzyskać więcej informacji o konfigurowaniu powiadomień punktu sprzedaży, zapoznaj się z tematem [Pokazywanie powiadomień o zamówieniach w aplikacji punktu sprzedaży (POS)](notifications-pos.md).
+Aby uzyskać więcej informacji o konfigurowaniu powiadomień punktu sprzedaży, zapoznaj się z artykułem [Pokazywanie powiadomień o zamówieniach w aplikacji punktu sprzedaży (POS)](notifications-pos.md).
+
+> [!NOTE]
+> Po zapisaniu zmian zostanie wyświetlony następujący komunikat ostrzegawczy: **Parametr operacji nie będzie włączony w projektancie siatki przycisków dla Identyfikatora operacji równemu lub mniejszemu niż 4000. Jeśli tworzysz operacje niestandardowe i chcesz przekazać parametr z projektanta siatki przycisków, należy użyć identyfikatora większego niż 4000.** Kliknij przycisk **Zamknij**, aby zamknąć okno dialogowe.
+
 
 ## <a name="configure-the-tasks-tile-on-a-pos-application-home-page"></a>Konfiguruj kafelek zadania na stronie głównej aplikacji punktu sprzedaży
 

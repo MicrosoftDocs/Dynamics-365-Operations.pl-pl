@@ -1,6 +1,6 @@
 ---
 title: Wyświetlanie dzienników historii i planowania planów
-description: W tym artykule opisano sposób wyświetlania historii zadań planowania wyzwalanych przez funkcję optymalizacji planowania.
+description: W tym artykule opisano sposób wyświetlania historii zadań planowania.
 author: t-benebo
 ms.date: 06/01/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: b2c9257fc67a06b57418b2f5b035b2b540131405
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ab469686a009364bf53cb963506fd2107075a283
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863948"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740939"
 ---
 # <a name="view-plan-history-and-planning-logs"></a>Wyświetlanie dzienników historii i planowania planów
 
 [!include [banner](../../includes/banner.md)]
 
-W tym artykule opisano sposób wyświetlania historii zadań planowania wyzwalanych przez funkcję optymalizacji planowania w Microsoft Dynamics 365 Supply Chain Management.
+W tym artykule opisano sposób wyświetlania historii zadań planowania w Microsoft Dynamics 365 Supply Chain Management.
 
 Aby wyświetlić historię planu, należy otworzyć plan, przechodząc do **Planowanie główne** \> **Ustawienia** \> **Plany** \> **Plany główne** i wybierając opcję **historia**. Historia zawiera listę wszystkich zadań wybranego planu. Lista zawiera zakończone i aktywne zadania.
 
@@ -47,14 +47,6 @@ Aby wyświetlić błędy automatycznego potwierdzania i inne ostrzeżenia lub b�
     - Jeśli używasz starszego formularza: w okienku akcji na karcie **Zadanie wsadowe** wybierz **Dziennik**.
 
 1. Wybierz **Szczegóły wiadomości**, by otworzyć okienko **Szczegóły wiadomości**, w którym możesz wyświetlić wszystkie ostrzeżenia i błędy zarejestrowane podczas przetwarzania.
-
-## <a name="related-resources"></a>Powiązane zasoby
-
-- [Omówienie optymalizacji planowania](planning-optimization-overview.md)
-- [Rozpoczęcie optymalizacji planowania](get-started.md)
-- [Analiza dopasowywania optymalizacją planowania](planning-optimization-fit-analysis.md)
-- [Stosowanie filtrów do planu](plan-filters.md)
-- [Anuluj planowanie pracy](cancel-planning-job.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

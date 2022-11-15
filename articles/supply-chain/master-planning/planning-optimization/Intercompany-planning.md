@@ -1,6 +1,6 @@
 ---
 title: Planowanie międzyfirmowe
-description: W tym artykule opisano planowanie międzyfirmowe i wyjaśniono sposób konfigurowania planowania międzyfirmowego przy użyciu optymalizacji planowania w rozwiązaniu Microsoft Dynamics 365 Supply Chain Management.
+description: W tym artykule opisano planowanie międzyfirmowe i wyjaśniono sposób konfigurowania planowania międzyfirmowego w rozwiązaniu Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 6ef551e1c2c4d90510f967855a5aa61646dc8eab
-ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
+ms.openlocfilehash: 3d1c82aa3810b37b06b9d9157e73588fc1727348
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2022
-ms.locfileid: "9538573"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740040"
 ---
 # <a name="intercompany-planning"></a>Planowanie międzyfirmowe
 
@@ -29,7 +29,7 @@ ms.locfileid: "9538573"
 
 W niektórych organizacjach operacje logistyczne zależą od innych osób prawnych (firm) w organizacji. Operacje te są obsługiwane przy użyciu międzyfirmowych procesów sprzedaży i zakupów, ponieważ każda osoba prawna ma osobny plan kont.
 
-W tym artykule opisano planowanie międzyfirmowe i wyjaśniono sposób konfigurowania planowania międzyfirmowego przy użyciu optymalizacji planowania w rozwiązaniu Microsoft Dynamics 365 Supply Chain Management.
+W tym artykule opisano planowanie międzyfirmowe i wyjaśniono sposób konfigurowania planowania międzyfirmowego w rozwiązaniu Microsoft Dynamics 365 Supply Chain Management.
 
 W tym artykule są używane następujące ważne terminy związane z obrotem międzyfirmowym:
 

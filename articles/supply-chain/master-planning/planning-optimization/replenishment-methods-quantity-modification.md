@@ -1,6 +1,6 @@
 ---
 title: Metody uzupełniania zapasów i modyfikacja ilości
-description: Ten artykuł zawiera informacje na temat metod uzupełniania zapasów w optymalizacji planowania. Wyjaśnia również, w jaki sposób wielokrotność zamówienia dla produktu wpływa na wynik.
+description: Ten artykuł zawiera informacje na temat metod uzupełniania zapasów. Wyjaśnia również, w jaki sposób wielokrotność zamówienia dla produktu wpływa na wynik.
 author: t-benebo
 ms.date: 6/1/2021
 ms.topic: article
@@ -11,26 +11,26 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d3e8ef3d38f1b9bacd89304aaf3f0350050232bd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d1e0fe6c1f49bc0f6887f1b29118c1fee7a6222f
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873703"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739765"
 ---
 # <a name="replenishment-methods-and-quantity-modification"></a>Metody uzupełniania zapasów i modyfikacja ilości
 
 [!include [banner](../../includes/banner.md)]
 
-Ten artykuł zawiera informacje na temat metod uzupełniania zapasów w optymalizacji planowania. Wyjaśnia również, w jaki sposób wielokrotność zamówienia dla produktu wpływa na wynik.
+Ten artykuł zawiera informacje na temat metod uzupełniania zapasów. Wyjaśnia również, w jaki sposób wielokrotność zamówienia dla produktu wpływa na wynik.
 
 Metody uzupełniania zapasów są również znane jako metody pokrycia i metody wielkości partii.
 
 ## <a name="coverage-codes"></a>Kody zapotrzebowania
 
-Planowanie optymalizacji można skonfigurować w taki sposób, aby korzystało z różnych metod uzupełniania zapasów. Metody uzupełniania zapasów są technikami, które system wykorzystuje do obliczania zapotrzebowania na dany produkt. Metody uzupełniania są zdefiniowane przez kody zakresu, które można ustawić na grupie zakresu lub na produkcie.
+Planowanie główne można skonfigurować w taki sposób, aby korzystało z różnych metod uzupełniania zapasów. Metody uzupełniania zapasów są technikami, które system wykorzystuje do obliczania zapotrzebowania na dany produkt. Metody uzupełniania są zdefiniowane przez kody zakresu, które można ustawić na grupie zakresu lub na produkcie.
 
-Następujące kody pokrycia mogą być użyte w optymalizacji planowania:
+Można stosować następujące kody pokrycia:
 
 - **Na okres** — metoda uzupełniania zapasów łączy całe zapotrzebowanie na dany okres w jedno zamówienie na dany produkt. Zamówienie zostanie zaplanowane na pierwszy dzień okresu, a jego ilość będzie spełniać zapotrzebowania netto w ustalonym okresie. Okres rozpoczyna się od pierwszego zapotrzebowania na produkt i obejmuje zdefiniowany okres w czasie. Następny okres rozpocznie się od kolejnych wymagań dotyczących produktu. Kod pokrycia *Okres* jest często stosowany w przypadku nieprzewidywalnych losowań zapasów, produktów uzależnionych od pory roku lub produktów o wysokich kosztach. Na poniższej ilustracji pokazano przykład.
 
@@ -64,13 +64,13 @@ Na stronie **Domyślne ustawienie zamówienia** dla wydanego produktu można okr
 
 ## <a name="examples-of-replenishment-that-use-the-minmax-coverage-code"></a>Przykłady uzupełniania zapasów z wykorzystaniem kodu min./maks.
 
-Jeśli nie podasz wartości w polu **Wielokrotność** dla produktu na stronie **Domyślne ustawienia zamówienia** i jeśli korzystasz z metody uzupełniania *Min./Max*. , wtedy optymalizacja planowania uzupełni zapas do określonego poziomu, gdy przewidywany poziom na rękę jest poniżej określonego progu.
+Jeśli nie podasz wartości w polu **Wielokrotność** dla produktu na stronie **Domyślne ustawienia zamówienia** i jeśli korzystasz z metody uzupełniania *Min./Max*. , wtedy planowanie główne uzupełni zapas do określonego poziomu, gdy przewidywany poziom na rękę jest poniżej określonego progu.
 
 W przypadku zdefiniowania ilości wielokrotności, wartość metody odnawiania *min./maks.* zmienia swoje zachowanie i bierze pod uwagę wartość **Wielokrotność**.
 
-Innymi słowy, optymalizacja planowania będzie nadal uzupełniać zapasy do zdefiniowanego maksymalnego poziomu, gdy przewidywany poziom na rękę jest mniejszy niż zdefiniowany poziom minimalny. Ilość uzupełnienia musi być jednak wielokrotnością wartości **Wielokrotność**.
+Innymi słowy, planowanie główne będzie nadal uzupełniać zapasy do zdefiniowanego maksymalnego poziomu, gdy przewidywany poziom na rękę jest mniejszy niż zdefiniowany poziom minimalny. Ilość uzupełnienia musi być jednak wielokrotnością wartości **Wielokrotność**.
 
-Jeśli ilość uzupełnienia (różnica pomiędzy poziomem maksymalnym a przewidywanym poziomem na stanie) nie jest wielokrotnością zdefiniowanej ilości wielokrotnej, optymalizacja planowania używa pierwszej możliwej wartości, która wraz z przewidywanym poziomem na stanie będzie poniżej poziomu maksymalnego. Jeśli suma jest mniejsza niż poziom minimalny, optymalizacja planowania wykorzystuje pierwszą wartość, która wraz z przewidywanym stanem magazynowym będzie powyżej poziomu maksymalnego.
+Jeśli ilość uzupełnienia (różnica pomiędzy poziomem maksymalnym a przewidywanym poziomem na stanie) nie jest wielokrotnością zdefiniowanej ilości wielokrotnej, planowanie główne używa pierwszej możliwej wartości, która wraz z przewidywanym poziomem na stanie będzie poniżej poziomu maksymalnego. Jeśli suma jest mniejsza niż poziom minimalny, planowanie główne wykorzystuje pierwszą wartość, która wraz z przewidywanym stanem magazynowym będzie powyżej poziomu maksymalnego.
 
 Poniższe podrozdziały zawierają kilka przykładów, które pokazują, jak wielokrotne zamawianie produktu wpływa na wynik metody uzupełniania zapasów *min./maks.* .
 

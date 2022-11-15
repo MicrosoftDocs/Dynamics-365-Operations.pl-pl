@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: f70d05f5663d8249b2435ad353421c278692a9ac
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 722b34e89a54715db39259549c11a78d69d2b4d3
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9218812"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739878"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Supply Chain Management
 
@@ -89,7 +89,7 @@ Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych fun
 | **Zamieniona przez inną funkcję?**   | Tak, optymalizacja planowania zastąpi istniejący wbudowany aparat planowania głównego aplikacji Supply Chain Management. |
 | **Powiązane obszary produktów**         | Supply Chain Management — planowanie główne |
 | **Opcja wdrażania**              | Tylko chmura. Optymalizacja planowania nie jest obsługiwana w przypadku wdrożeń lokalnych. |
-| **Stan**                         | Wycofane. Do 1 kwietniu 2022 r. scenariusze produkcji nie będą już obsługiwane za pomocą wbudowanego aparatu planowania głównego aplikacji Supply Chain Management. Od tego dnia firma Microsoft zaprzestanie wszelkich aktywnych prac nad scenariuszami produkcyjnymi dla wbudowanego silnika planowania, nie wyda żadnych nowych funkcji i wyda jedynie krytyczne poprawki błędów. Po tej dacie wszystkie firmy, które wymagają obsługi scenariuszy produkcyjnych, muszą używać Optymalizacji planowania do swoich obliczeń planowania głównego. Optymalizacja planowania ma w pełni obsługiwać scenariusze produkcji do października 2022 roku. Aby uzyskać więcej informacji, zobacz temat [Dokumentacja dotycząca optymalizacji planowania](../master-planning/planning-optimization/planning-optimization-overview.md).<br><br>Firmy z lokalnymi wdrożeniami rozwiązania Supply Chain Management mogą nadal używać wbudowanego głównego aparatu planowania w scenariuszach produkcyjnych po kwietniu 2022 roku. Nie będą jednak wprowadzane dodatkowe ulepszenia funkcji. |
+| **Stan**                         | Wycofane. Do 1 kwietniu 2022 r. scenariusze produkcji nie będą już obsługiwane za pomocą wbudowanego aparatu planowania głównego aplikacji Supply Chain Management. Od tego dnia firma Microsoft zaprzestanie wszelkich aktywnych prac nad scenariuszami produkcyjnymi dla wbudowanego silnika planowania, nie wyda żadnych nowych funkcji i wyda jedynie krytyczne poprawki błędów. Po tej dacie wszystkie firmy, które wymagają obsługi scenariuszy produkcyjnych, muszą używać Optymalizacji planowania do swoich obliczeń planowania głównego. Optymalizacja planowania ma w pełni obsługiwać scenariusze produkcji do października 2022 roku. Aby uzyskać więcej informacji, zobacz temat [Omówienie wycofanego planowania głównego](../master-planning/deprecated-master-planning-overview.md).<br><br>Firmy z lokalnymi wdrożeniami rozwiązania Supply Chain Management mogą nadal używać wbudowanego głównego aparatu planowania w scenariuszach produkcyjnych po kwietniu 2022 roku. Nie będą jednak wprowadzane dodatkowe ulepszenia funkcji. |
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10011-release"></a>Usunięte lub przestarzałe funkcje w wydaniu rozwiązania Supply Chain Management 10.0.11
 
@@ -101,7 +101,7 @@ Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych fun
 | **Zamieniona przez inną funkcję?**   | Tak, optymalizacja planowania zastąpi istniejący wbudowany aparat planowania głównego aplikacji Supply Chain Management. |
 | **Powiązane obszary produktów**         | Supply Chain Management — planowanie główne |
 | **Opcja wdrażania**              | Tylko chmura. Optymalizacja planowania nie jest obsługiwana w przypadku wdrożeń lokalnych. |
-| **Stan**                         | Wycofane. Do 1 kwietniu 2021 r. scenariusze dystrybucji nie będą już obsługiwane za pomocą wbudowanego aparatu planowania głównego aplikacji Dynamics 365 Supply Chain Management. W scenariuszach dystrybucji klienci muszą korzystać z optymalizacji planowania podczas obliczeń planowania głównego. Aby uzyskać więcej informacji, zobacz temat [Dokumentacja dotycząca optymalizacji planowania](../master-planning/planning-optimization/planning-optimization-overview.md). Klienci z wdrożeniami lokalnymi aplikacji Dynamics 365 Supply Chain Management będą mogli nadal korzystać z aparatu planowania głównego aplikacji Supply Chain Management w scenariuszach dystrybucji po kwietniu 2021 r. Nie będą jednak wprowadzane dodatkowe ulepszenia funkcji. |
+| **Stan**                         | Wycofane. Do 1 kwietniu 2021 r. scenariusze dystrybucji nie będą już obsługiwane za pomocą wbudowanego aparatu planowania głównego aplikacji Dynamics 365 Supply Chain Management. W scenariuszach dystrybucji klienci muszą korzystać z optymalizacji planowania podczas obliczeń planowania głównego. Aby uzyskać więcej informacji, zobacz temat [Omówienie wycofanego planowania głównego](../master-planning/deprecated-master-planning-overview.md). Klienci z wdrożeniami lokalnymi aplikacji Dynamics 365 Supply Chain Management będą mogli nadal korzystać z aparatu planowania głównego aplikacji Supply Chain Management w scenariuszach dystrybucji po kwietniu 2021 r. Nie będą jednak wprowadzane dodatkowe ulepszenia funkcji. |
 
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>Poprzednie oświadczenia o usuniętych lub wycofanych funkcjach
 
