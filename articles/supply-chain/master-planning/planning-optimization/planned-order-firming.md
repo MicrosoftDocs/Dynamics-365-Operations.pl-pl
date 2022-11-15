@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 7c8d5b7992c7955b9c5b1c7e773fdd467ccba6f9
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: c2e4294cb54e9ba41467f505e361d5ee45f1f27d
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335354"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740530"
 ---
 # <a name="firm-planned-orders"></a>Zaakceptuj zamówienia planowane
 
@@ -33,7 +33,7 @@ W tym artykule opisano szczegółowo poszczególne metody.
 
 ## <a name="enable-the-features-that-are-described-in-this-article"></a><a name="enable-features"></a>Włączanie funkcji opisanych w tym artykule
 
-Większość funkcji zamówienia planowanego jest dostępna we wszystkich standardowych instalacjach rozwiązania Microsoft Dynamics 365 Supply Chain Management, które korzystają z optymalizacji planowania. Jednak kilka funkcji opisanych w tym artykule musi zostać włączonych w module Zarządzanie funkcjami, aby można ich było używać.
+Większość funkcji zamówienia planowanego jest dostępna we wszystkich standardowych instalacjach rozwiązania Microsoft Dynamics 365 Supply Chain Management. Jednak kilka funkcji opisanych w tym artykule musi zostać włączonych w module Zarządzanie funkcjami, aby można ich było używać.
 
 ### <a name="turn-parallelized-firming-of-planned-orders-on-or-off"></a>Włącz lub wyłącz równoległe potwierdzanie planowanych zamówień
 
@@ -91,7 +91,7 @@ Aby ręcznie ustalić zamówienia planowane, należy znaleźć i wybrać zamówi
 
 ## <a name="auto-firm-planned-orders"></a>Automatyczne ustalanie zamówień planowanych
 
-Funkcja automatycznego ustalania umożliwia ustalanie zamówień planowanych w ramach procesu planowania głównego. Można określić horyzont czasowy dla grup zapotrzebowania, pojedynczych towarów oraz kombinacji towarów i planów głównych. Następnie, podczas planowania głównego, zamówienia planowane będą automatycznie ustalane, jeśli data zamówienia znajduje się w podanym horyzoncie czasowym dla ustalania. Zamówienia planowane generowane przez optymalizację planowania oraz wbudowaną operację planowania głównego różnie postępują z datą zamówienia (to jest datą rozpoczęcia).
+Funkcja automatycznego ustalania umożliwia ustalanie zamówień planowanych w ramach procesu planowania głównego. Można określić horyzont czasowy dla grup zapotrzebowania, pojedynczych towarów oraz kombinacji towarów i planów głównych. Następnie, podczas planowania głównego, zamówienia planowane będą automatycznie ustalane, jeśli data zamówienia znajduje się w podanym horyzoncie czasowym dla ustalania. Zamówienia planowane generowane przez optymalizację planowania i zdezaktualizowany silnik planowania głównego, różnie obsługują datę zamówienia (czyli datę rozpoczęcia).
 
 > [!NOTE]
 > Aby możliwe było automatyczne ustalanie planowanych zamówień zakupu, towary muszą być skojarzone z dostawcą.
@@ -99,13 +99,13 @@ Funkcja automatycznego ustalania umożliwia ustalanie zamówień planowanych w r
 > Zamówienia pochodne (czyli zamówienia podwykonawcze), które są ustalone, będą miały status *W trakcie przeglądu*, gdy włączone jest śledzenie zmian.
 
 > [!IMPORTANT]
-> Aby funkcja opisana w tej sekcji była dostępna dla funkcji Optymalizacja planowania, w systemie musi być włączona [funkcja *Automatyczne ustalanie dla optymalizacji planowania*](#enable-features), zgodnie z opisem na początku tego artykułu. Automatycznego ustalania można zawsze używać z wbudowanym aparatem planowania głównego.
+> Aby funkcja opisana w tej sekcji była dostępna dla funkcji Optymalizacja planowania, w systemie musi być włączona [funkcja *Automatyczne ustalanie dla optymalizacji planowania*](#enable-features), zgodnie z opisem na początku tego artykułu. Automatycznego ustalania można zawsze używać z przestarzałym aparatem planowania głównego.
 
-### <a name="auto-firming-with-planning-optimization-vs-the-built-in-planning-engine"></a>Automatyczne ustalanie z funkcją Optymalizacja planowania w porównaniu z wbudowanym aparatem planowania
+### <a name="auto-firming-with-planning-optimization-vs-the-deprecated-master-planning-engine"></a>Automatyczne ustalanie z funkcją Optymalizacja planowania w porównaniu z przestarzałym aparatem planowania
 
-Zarówno Optymalizacja planowania, jak i wbudowany aparat planowania, mogą być używane do automatycznego ustalania zamówień planowanych. Istnieją jednak pewne ważne różnice. Na przykład w optymalizacji planowania jest używana Data zamówienia (to znaczy Data rozpoczęcia) w celu ustalenia, które zamówienia planowane mają zostać ustalone, a wbudowany aparat planowania używa daty zapotrzebowania (czyli daty zakończenia). W poniższej tabeli podsumowano różnice.
+Zarówno Optymalizacja planowania, jak i przestarzały aparat planowania głównego, mogą być używane do automatycznego ustalania zamówień planowanych. Istnieją jednak pewne ważne różnice. Na przykład w optymalizacji planowania jest używana Data zamówienia (to znaczy Data rozpoczęcia) w celu ustalenia, które zamówienia planowane mają zostać ustalone, a przestarzały aparat planowania głównego używa daty zapotrzebowania (czyli daty zakończenia). W poniższej tabeli podsumowano różnice.
 
-| Funkcja | Optymalizacja planowania | Wbudowany aparat planowania |
+| Funkcja | Optymalizacja planowania | Przestarzały aparat planowania głównego |
 |---|---|---|
 | **Podstawa daty** | Automatyczne ustalanie jest oparte na dacie zamówienia (Data początkowa). | Automatyczne ustalanie jest oparte na dacie zapotrzebowania (Data końcowa). |
 | **Czas realizacji** | Ponieważ Data zamówienia (Data początkowa) wyzwala akceptację, nie trzeba brać pod uwagę czasu realizacji w ramach horyzontu czasowego ustalania. | W celu zagwarantowania punktualnego ustalania zamówień horyzont czasowy ustalania musi być dłuższy niż czas realizacji. |

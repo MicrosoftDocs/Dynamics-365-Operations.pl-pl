@@ -16,20 +16,20 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 15ec53c1f13b3017fb6e829bd1c8e99fbb938ce3
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: 4459a5d72fafe2596b7fc0cedf060b8f23bb43d2
+ms.sourcegitcommit: 2b654e60e2553a5835ab5790db4ccfa58828fae7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9690002"
+ms.lasthandoff: 11/08/2022
+ms.locfileid: "9750715"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analiza dopasowań optymalizacji planowania
 
 [!include [banner](../../includes/banner.md)]
 
-Wynik z analizy dopasowania optymalizacji planowania należy analizować w ramach procesu migracji. Należy pamiętać, że zakres optymalizacji planowania nie jest równy bieżącej wbudowanej funkcji planowania głównego. Zalecamy współpracę z partnerem i zapoznanie się z dokumentacją w celu przygotowania się do migracji. 
+Wynik z analizy dopasowania optymalizacji planowania należy analizować w ramach procesu migracji. Zauważ, że zakres Optymalizacji Planowania nie jest równy zdeprecjonowanej funkcjonalności głównego silnika planowania. Zalecamy współpracę z partnerem i zapoznanie się z dokumentacją w celu przygotowania się do migracji.
 
-Analiza dopasowania optymalizacji planowania pomaga określić miejsce, w którym wynik może się różnić między wbudowanym aparatem planowania głównego i optymalizacją planowania. Analiza jest przeprowadzana na podstawie bieżących ustawień i danych. 
+Analiza dopasowania optymalizacji planowania pomaga określić miejsce, w którym wynik może się różnić między przestarzałym aparatem planowania głównego i optymalizacją planowania. Analiza jest przeprowadzana na podstawie bieżących ustawień i danych. 
 
 Aby wyświetlić wyniki analizy dotyczącej optymalizacji planowania, przejdź do okna **Planowanie główne** \> **Konfiguracja** \> **Analiza dopasowań optymalizacji planowania**, a następnie wybierz opcję **Uruchom analizę**. Jeśli analiza wykryje niespójności, zostaną one wyświetlone na tej samej stronie. (Analiza może potrwać kilka minut.)
 
@@ -64,7 +64,6 @@ W poniższej tabeli przedstawiono różne wyniki, które mogą być widoczne po 
 | Kalendarze podstawowe | Kalendarze używające kalendarza podstawowego: *\#* | Ta funkcja jest teraz obsługiwana. | Obsługiwana | 
 | Kody dyspozycji partii | Wzorce dyspozycji partii z towarami nie do dyspozycji: *\#* | Ta funkcja jest teraz obsługiwana. Aby uzyskać dodatkowe informacje, zobacz [Używanie kodów dyspozycji partii do oznaczania partii jako dostępnych lub niedostępnych](../../inventory/batch-disposition-codes.md) | Obsługiwana |
 | Możliwe do zrealizowania (CTP) | Domyślne ustawienia zamówienia z kontrolą daty dostawy ustawioną na CTP: *\#* | W Supply Chain Management 10.0.28 i nowszych proces o nazwie *CTP dla Planning Optimization* udostępnia potwierdzone daty wysyłki i odbioru po uruchomieniu planu dynamicznego. W starszych wersjach Supply Chain Management ustawienie CTP jest ignorowane, gdy włączona jest optymalizacja planowania. | Obsługiwana |
-| Kopiuj plan statyczny do dynamicznego | Funkcja Kopiuj plan statyczny do dynamicznego jest włączona w parametrach planowania głównego. | Optymalizacja planowania nie kopiuje planu statycznego do planu dynamicznego, niezależnie od tego ustawienia. Zazwyczaj pojęcie to jest mniej istotne ze względu na szybkość i pełną regenerację, którą zapewnia Optymalizacja planowania. Jeśli użyto dwóch lub więcej planów, planowanie główne powinno być wyzwalane dla każdego planu. | N/D |
 | Akceptacja | Grupy zapotrzebowania z ustawionym horyzontem czasowym automatycznej akceptacji: *\#* | W wersji 10.0.7 i nowszych akceptacja jest obsługiwana jako osobne zadanie wsadowe w ramach planowania głównego ( pod warunkiem, że włączono funkcję *Automatyczna akceptacja Optymalizacji planowania* w module [Zarządzanie funkcjami](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)). Należy pamiętać, że Automatyczna akceptacja optymalizacji planowania jest oparta na dacie zamówienia (data rozpoczęcia), a nie na dacie zapotrzebowania (data zakończenia). To zachowanie gwarantuje, że akceptacja zamówień odbywa się w odpowiednim czasie, bez konieczności uwzględniania czasu realizacji w horyzoncie czasowym akceptacji. | Obsługiwana |
 | Akceptacja | Rekordy zapotrzebowania na towary z ustawioną automatyczną akceptacją: *\#* | W wersji 10.0.7 i nowszych automatyczna akceptacja jest obsługiwana jako osobne zadanie wsadowe w ramach planowania głównego ( pod warunkiem, że włączono funkcję *Automatyczna akceptacja Optymalizacji planowania* w module [Zarządzanie funkcjami](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)). Należy pamiętać, że Automatyczna akceptacja optymalizacji planowania jest oparta na dacie zamówienia (data rozpoczęcia), a nie na dacie zapotrzebowania (data zakończenia). To zachowanie gwarantuje, że akceptacja zamówień odbywa się w odpowiednim czasie, bez konieczności uwzględniania czasu realizacji w horyzoncie czasowym akceptacji. | Obsługiwana |
 | Akceptacja | Plany główne z ustawioną automatyczną akceptacją: *\#* | W wersji 10.0.7 i nowszych automatyczna akceptacja jest obsługiwana jako osobne zadanie wsadowe w ramach planowania głównego ( pod warunkiem, że włączono funkcję *Automatyczna akceptacja Optymalizacji planowania* w module [Zarządzanie funkcjami](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)). Należy pamiętać, że Automatyczna akceptacja optymalizacji planowania jest oparta na dacie zamówienia (data rozpoczęcia), a nie na dacie zapotrzebowania (data zakończenia). To zachowanie gwarantuje, że akceptacja zamówień odbywa się w odpowiednim czasie, bez konieczności uwzględniania czasu realizacji w horyzoncie czasowym akceptacji. | Obsługiwana |
@@ -93,34 +92,27 @@ W poniższej tabeli przedstawiono różne wyniki, które mogą być widoczne po 
 | Produkcyjne | Wersje formuły zawierające produkty towarzyszące/uboczne: *\#* | Ta funkcja jest oczekiwana. Obecnie produkty towarzyszące i uboczne skojarzone z wersją formuły są ignorowane, gdy jest włączona Optymalizacja planowania. | 2022 Zwolnij grupę czynności 2 |
 | Produkcyjne | Wersje formuły z uzyskiem: *\#* | Ta funkcja jest oczekiwana. Obecnie uzysk skojarzony z wersją formuły jest ignorowany, gdy jest włączona Optymalizacja planowania. | 2022 Zwolnij grupę czynności 2 |
 | Produkcyjne | Plany uwzględniające sekwencjonowanie: *\#* | Ta funkcja jest oczekiwana. Obecnie gdy jest włączona Optymalizacja planowania, harmonogram nie jest brany pod uwagę, niezależnie od tego ustawienia. | 2022 Zwolnij grupę czynności 2 |
-| Produkcyjne | Zwolnione, nierozpoczęte zlecenia produkcyjne, których rozpoczęcie jest planowane na dzisiaj: *\#* | Ta funkcja jest oczekiwana. Obecnie, jeśli zlecenie produkcyjne jest opóźnione, planowanie główne zakłada, że zostanie zakończone dzisiaj. Ma to zastosowanie w przypadku zwolnionych zleceń produkcyjnych, w przypadku których data dostawy przypada w przeszłości, ale nie została jeszcze zakończona. | Przyszłe grupy czynności |
+| Produkcyjne | Zwolnione, nierozpoczęte zlecenia produkcyjne, których rozpoczęcie jest planowane na dzisiaj: *\#* | Ta funkcja jest oczekiwana. Obecnie, jeśli zlecenie produkcyjne jest opóźnione, planowanie główne zakłada, że zostanie zakończone dzisiaj. Ma to zastosowanie w przypadku zwolnionych zleceń produkcyjnych, w przypadku których data dostawy przypada w przeszłości, ale nie została jeszcze zakończona. | 2022 Zwolnij grupę czynności 2 |
 | Produkcyjne | Zaplanowane zasoby z ograniczonymi zdolnościami produkcyjnymi: *\#* | Ta funkcja jest teraz obsługiwana.| Obsługiwana |
 | Produkcyjne | Marszruty używane podczas planowania: *\#* | Ta funkcja jest obsługiwana. | Obsługiwana |
-| Produkcyjne | Rezerwacja wiersza sprzedaży z użyciem rozłożenia: *\#* | Rezerwacja wiersza sprzedaży wykorzystująca rozłożenie nie jest obsługiwana, jeśli jest włączona Optymalizacja planowania. | Przyszłe grupy czynności |
-| Produkcyjne | Planowanie z rozłożeniem zleceń produkcyjnych: *\#* | Planowanie wykorzystujące rozłożenie zleceń produkcyjnych nie jest obsługiwane, jeśli jest włączona Optymalizacja planowania. Zlecenia produkcyjne można planować pojedynczo. | Przyszłe grupy czynności |
+| Produkcyjne | Rezerwacja wiersza sprzedaży z użyciem rozłożenia: *\#* | Rezerwacja wiersza sprzedaży wykorzystująca rozłożenie nie jest obsługiwana, jeśli jest włączona Optymalizacja planowania. | 2022 Zwolnij grupę czynności 2 |
+| Produkcyjne | Planowanie z rozłożeniem zleceń produkcyjnych: *\#* | Planowanie wykorzystujące rozłożenie zleceń produkcyjnych nie jest obsługiwane, jeśli jest włączona Optymalizacja planowania. Zlecenia produkcyjne można planować pojedynczo. | 2022 Zwolnij grupę czynności 2 |
 | Zapytania ofertowe | Plany główne z włączoną opcją zapytań ofertowych: *\#* | Ta funkcja jest oczekiwana. Obecnie zapytania ofertowe (ZO) nie są traktowane jako popyt, gdy jest włączona Optymalizacja planowania. Zostaną one zignorowane niezależnie od tego ustawienia. | 2022 Zwolnij grupę czynności 2 |
 | Zapotrzebowania | Plany główne z włączoną opcją zapotrzebowań: *\#* | Ta funkcja jest teraz obsługiwana. Aby dowiedzieć się więcej, zobacz temat [Zapotrzebowania na zakup](purchase-requisitions.md) | Obsługiwana |
 | Marginesy bezpieczeństwa | Grupy zapotrzebowania z marginesem bezpieczeństwa: *\#* | Ta funkcja jest teraz obsługiwana. Aby uzyskać dodatkowe informacje, zobacz temat [Marginesy bezpieczeństwa](safety-margins.md) | Obsługiwana |
 | Marginesy bezpieczeństwa | Plany główne z marginesem bezpieczeństwa: *\#* | Ta funkcja jest teraz obsługiwana. Aby uzyskać dodatkowe informacje, zobacz temat [Marginesy bezpieczeństwa](safety-margins.md) |  Obsługiwana |
-| Realizacja zapasu bezpieczeństwa | Rekordy zapotrzebowania na towary z wartością „Uzupełnij stany minimalne” niższą niż wartość „Data dzisiejsza + czas zaopatrzenia”: *\#* | Optymalizacja planowania zawsze używa *Daty dzisiejszej + czasu zaopatrzenia*. Ta zmiana będzie wprowadzona w przyszłości w celu przygotowania uproszczonej konfiguracji planowania i zapewnienia wyniku akcji. Jeśli czas zaopatrzenia nie jest uwzględniony w zapasach bezpieczeństwa, zamówienia planowane utworzone dla bieżącego niskiego stanu zapasów będą zawsze opóźnione z powodu czasu realizacji. To zachowanie może spowodować powstanie istotnych zakłóceń i niechcianych zamówień planowanych. Najlepszym rozwiązaniem jest zmiana tego ustawienia, tak aby była używana *Data dzisiejsza + czas zaopatrzenia*. Zaktualizuj dane podstawowe, aby uniknąć ostrzeżeń. | ND |
-| Oferty sprzedaży | Plany główne z włączoną opcją ofert sprzedaży: *\#* | Ta funkcja jest oczekiwana. Obecnie po włączeniu Optymalizacji planowania oferty są ignorowane. Zostaną one zignorowane niezależnie od tego ustawienia. | 2022 wydanie grupy czynności 2 lub nowszej |
-| Okres trwałości | Plany główne z włączoną opcją okresu trwałości: *\#* | Ta funkcja jest oczekiwana. | 2022 Zwolnij grupę czynności 2 |
+| Oferty sprzedaży | Plany główne z włączoną opcją ofert sprzedaży: *\#* | Ta funkcja jest oczekiwana. Obecnie po włączeniu Optymalizacji planowania oferty są ignorowane. Zostaną one zignorowane niezależnie od tego ustawienia. | 2022 Zwolnij grupę czynności 2 |
+| Okres trwałości | Plany główne z włączoną opcją okresu trwałości: *\#* | Ta funkcja jest teraz obsługiwana. | Obsługiwana |
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Omówienie optymalizacji planowania](planning-optimization-overview.md)
-
-[Rozpoczęcie optymalizacji planowania](get-started.md)
-
-[Różnice między klasycznym planowaniem głównym a optymalizacją planowania](planning-optimization-differences-with-built-in.md)
-
-[Parametry nieużywane przez optymalizację planowania](not-used-parameters.md)
-
-[Wyświetlanie historii planu i dzienników planowania](plan-history-logs.md)
-
-[Stosowanie filtrów do planu](plan-filters.md)
-
-[Anuluj planowanie pracy](cancel-planning-job.md)
+- [Architektura systemu planowania głównego](../master-planning-architecture.md)
+- [Rozpoczęcie pracy z planowaniem głównym](get-started.md)
+- [Różnice między klasycznym planowaniem głównym a optymalizacją planowania](planning-optimization-differences-with-built-in.md)
+- [Parametry nieużywane przez optymalizację planowania](not-used-parameters.md)
+- [Wyświetlanie historii planu i dzienników planowania](plan-history-logs.md)
+- [Uruchamianie planowania dla podzestawu pozycji](plan-filters.md)
+- [Anuluj planowanie pracy](cancel-planning-job.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

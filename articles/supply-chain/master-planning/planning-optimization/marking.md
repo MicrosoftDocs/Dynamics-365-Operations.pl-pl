@@ -1,6 +1,6 @@
 ---
-title: Oznaczanie zapasów przy użyciu modułu Optymalizacja planowania
-description: Ten artykuł zawiera informacje o dostępnych opcjach oznaczania zapasów w zaakceptowanych zamówieniach podczas korzystania z optymalizacji planowania.
+title: Oznaczanie zapasów
+description: Ten artykuł zawiera informacje o dostępnych opcjach oznaczania zapasów w zaakceptowanych zamówieniach.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 55c83cdbc144f194fe80e8281a35ec7ff43d551e
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: c86db6a670d7d0f7bfe74b7466b9bce766e4a08d
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219946"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740611"
 ---
-# <a name="inventory-marking-with-planning-optimization"></a>Oznaczanie zapasów przy użyciu modułu Optymalizacja planowania
+# <a name="inventory-marking"></a>Oznaczanie zapasów
 
 [!include [banner](../../includes/banner.md)]
 
-Ten artykuł zawiera informacje o dostępnych opcjach oznaczania zapasów w zaakceptowanych zamówieniach podczas korzystania z optymalizacji planowania.
+Ten artykuł zawiera informacje o dostępnych opcjach oznaczania zapasów w zaakceptowanych zamówieniach.
 
 *Oznaczanie* służy do łączenia podaży i popytu. Opcja ta jest podobna do *oznaczania transakcji*, które określa, jak popyt ma zostać pokryty według planowania głównego. Z punktu widzenia planowania główna różnica polega na tym, że oznaczanie jest trwalsze od oznaczania transakcji.
 

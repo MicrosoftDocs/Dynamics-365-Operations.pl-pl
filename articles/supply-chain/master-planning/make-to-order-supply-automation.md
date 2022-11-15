@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-07-27
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 9044acb472548a797ed387b08ca6892459785793
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: d376c2f4d8514a4e6122e2e94455d57a39d2babf
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220603"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740202"
 ---
 # <a name="make-to-order-supply-automation"></a>Automatyzacja dostaw produktów na zamówienie
 
@@ -32,12 +32,6 @@ Funkcja *automatyzacji dostaw na* zamówienie dodaje kilka ulepszeń rozwiązani
 - Popraw przepływ informacji międzyfirmowych. Zamówienia zakupu są aktualizowane tak, aby zawierały pola dotyczące sposobu dostawy, warunków dostawy i zewnętrznego numeru towaru. Ta zmiana zapewnia, że szczegółowe informacje o zapotrzebowaniu mogą płynąć do firmy dostarczającej.
 
 W tym artykule opisano sposób skonfigurowania i użycia poszczególnych ulepszeń.
-
-> [!NOTE]
-> Wszystkie rozszerzenia opisane w tym artykule dotyczą systemów, które korzystają z wbudowanego planowania głównego. Następujące dwa rozszerzenia są również obsługiwane przez dodatek Optymalizacja planowania dla rozwiązania Microsoft Dynamics 365 Supply Chain Management:
->
-> - Tolerancja opóźnienia w planach główne
-> - Kontrola nad sekwencją oznaczania zrównania, która jest używana podczas planowania głównego
 
 ## <a name="turn-on-the-make-to-order-supply-automation-feature"></a>Włączanie funkcji automatyzacji dostaw na zamówienie
 
@@ -73,7 +67,7 @@ Aby otworzyć stronę **Obciążenie zdolności produkcyjnych**, aby można był
 
 Te opcje są również dostępne w polu **Zaktualizuj oznaczenie** na karcie **Standardowa aktualizacja** na stronie **Główne parametry planowania**, gdzie definiujesz domyślny wybór dla **Akceptacja** okna dialogowego.
 
-Aby uzyskać więcej informacji, zobacz [Oznaczanie zapasów za pomocą optymalizacji planowania](planning-optimization/marking.md).
+Aby uzyskać więcej informacji, zobacz [Oznaczanie zapasów](planning-optimization/marking.md).
 
 ## <a name="set-delay-tolerance-negative-days-at-the-master-plan-level"></a>Ustaw tolerancję opóźnienia (dni z ujemnym poziomem liczby dni) na poziomie planu głównego
 

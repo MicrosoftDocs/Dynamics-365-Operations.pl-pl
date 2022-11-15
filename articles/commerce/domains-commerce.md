@@ -2,19 +2,19 @@
 title: Domeny w rozwiązaniu Dynamics 365 Commerce
 description: W tym artykule opisano sposób obsługiwania domen w rozwiązaniach Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 09/09/2022
+ms.date: 11/08/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: BrShoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 132aec92d2b3d2765dd6bd261fb4182f8aae679a
-ms.sourcegitcommit: dbb997f252377b8884674edd95e66caf8d817816
+ms.openlocfilehash: f1a2de7984aad7d291b8a4dc68f5690d57ebe6cc
+ms.sourcegitcommit: 2b654e60e2553a5835ab5790db4ccfa58828fae7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "9465201"
+ms.lasthandoff: 11/08/2022
+ms.locfileid: "9750688"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domeny w rozwiązaniu Dynamics 365 Commerce
 
@@ -95,6 +95,12 @@ Na przykład środowisko „xyz” zostało skonfigurowane i utworzono i skojarz
 
 Jeśli ciąg kwerendy domeny nie jest podany w środowisku z podanymi wieloma domenami, w systemie Commerce zostanie użyta pierwsza z nich. Jeśli na przykład podczas konfigurowania witryny została podana ścieżka „fabrikam”, adres URL `https://xyz.dynamics365commerce.ms` może zostać użyty do uzyskania dostępu do opublikowanej zawartości witryny `www.fabrikam.com`.
 
+Możesz również dodać domeny niestandardowe. Aby to zrobić, na stronie zarządzaniem commerce w środowisku projektu, w obszarze nagłówka **Handel elektroniczny** wybierz opcję **+ Dodaj domenę niestandardową**. Suwak pokazuje istniejące domeny niestandardowe i udostępnia opcję dodania nowej domeny niestandardowej.
+
+## <a name="update-which-commerce-scale-unit-is-used"></a>Aktualizuj używaną Commerce Scale Unit
+
+Jednostka Commerce Scale Unit (CSU) używana przez Commerce jest zazwyczaj wybierana podczas pierwszego tworzenia środowiska. Commerce pozwala na zmianę instancji CSU, z której korzysta Twoje środowisko, co pozwala na lepsze utrzymanie architektury dzięki funkcjonalności samoobsługowej i zmniejsza potrzebę kontaktu z pomocą techniczną. Aby zaktualizować wystąpienie serwera CSU, przejdź na stronę zarządzania commerce w swoim środowisku dla projektu, a następnie wybierz pozycję **Aktualizuj jednostkę skali**. Użyj suwaka **Nowa jednostka Commerce Scale Unit**, aby wybrać nowe wystąpienie csu z listy jednostek CSU dostępnych w twoim środowisku.
+
 ## <a name="traffic-forwarding-in-production"></a>Przekazywanie ruchu w produkcji
 
 Istnieje możliwość symulowania wielu domen za pomocą parametrów kwerendy domeny w samym punkcie końcowym commerce.dynamics.com. Jeśli jednak konieczne jest przechodzenie do trybu produkcji, należy przesłać dalej ruch dla domeny niestandardowej do punktu końcowego `<e-commerce tenant name>.dynamics365commerce.ms`.
@@ -103,9 +109,9 @@ Punkt końcowy `<e-commerce tenant name>.dynamics365commerce.ms` nie obsługuje 
 
 Aby skonfigurować domeny niestandardowe przy użyciu usługi front door service lub sieci CDN, dostępne są dwie opcje:
 
-- Skonfiguruj usługę front door service, taką jak np. Azure Front Door, aby obsługiwać ruch przód-tył i łączyć się ze środowiskiem Commerce. Pozwala to na większą kontrolę nad zarządzaniem domenami i certyfikatami oraz bardziej szczegółowe zasady zabezpieczeń.
+- Skonfiguruj usługę Front Door, taką jak Azure Front Door, aby obsłużyć ruch front-end i połączyć się ze środowiskiem Commerce, co zapewnia większą kontrolę nad zarządzaniem domenami i certyfikatami oraz bardziej granularne polityki bezpieczeństwa.
 
-- Należy skorzystać z dostarczonej przez Commerce instancji Azure Front Door. Wymaga to koordynacji działania z zespołem Dynamics 365 Commerce w zakresie weryfikacji domeny i uzyskiwania certyfikatów SSL dla domeny produkcji.
+- Użyj dostarczanej przez Commerce instancji Azure Front Door, co wymaga to koordynacji działania z zespołem Dynamics 365 Commerce w zakresie weryfikacji domeny i uzyskiwania certyfikatów SSL dla domeny produkcji.
 
 > [!NOTE]
 > Jeśli używasz zewnętrznej usługi CDN lub usługi Front Door, upewnij się, że żądanie jest wysyłane na platformę Commerce z nazwą hosta podaną przez Commerce, ale z nagłówkiem X-Forwarded-Host (XFH) \<custom-domain\>. Na przykład, jeśli punktem końcowym usługi Commerce jest `xyz.dynamics365commerce.ms`, a domeną niestandardową jest `www.fabrikam.com`, nagłówkiem hosta przekazywanego żądania powinno być `xyz.dynamics365commerce.ms`, a nagłówkiem XFH `www.fabrikam.com`.
@@ -115,7 +121,7 @@ Aby uzyskać informacje o tym, jak skonfigurować usługę CDN bezpośrednio, na
 Aby można było skorzystać z oferowanej przez Commerce instancji Azure Front Door należy utworzyć żądanie usługi pomocy dotyczącej konfiguracji sieci CDN od zespołu wdrażania Commerce. 
 
 - Należy podać nazwę firmy, domenę produkcyjną, identyfikator środowiska oraz nazwę dzierżawcy produkcji platformy handlu elektronicznego. 
-- Należy potwierdzić, czy jest to domena istniejąca (używana w aktualnie aktywnej witrynie) lub nowa. 
+- Będziesz musiał potwierdzić, czy to zgłoszenie serwisowe dotyczy istniejącej domeny (używanej dla aktualnie aktywnej witryny) czy nowej domeny. 
 - W przypadku nowej domeny można zrealizować weryfikację domeny i certyfikat SSL w jednym kroku. 
 - W przypadku domeny obsługującej istniejącą witrynę sieciową, do przeprowadzenia weryfikacji domeny i certyfikatu SSL wykorzystywany jest proces wieloetapowy. Proces ten obejmuje podpisanie co najmniej 7-dniowej umowy dotyczącej poziomu usług (SLA) dla domeny, ponieważ praca obejmuje wiele kolejnych etapów.
 

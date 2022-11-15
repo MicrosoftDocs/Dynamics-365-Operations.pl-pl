@@ -1,6 +1,6 @@
 ---
-title: Rozpoczęcie optymalizacji planowania
-description: W tym artykule wyjaśniono, jak zacząć używanie funkcji optymalizacji planowania.
+title: Rozpoczęcie pracy z planowaniem głównym
+description: W tym artykule wyjaśniono, jak zacząć używanie funkcji planowania głównego w Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.date: 05/20/2021
 ms.topic: article
@@ -16,27 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 629a84135434ad79f8397649ee9a4a62e49751d9
-ms.sourcegitcommit: 14a27b776befbc6793390f97e8fb0279c0ea18c1
+ms.openlocfilehash: 958de3f9ae6ead6cb6914bd3b7a4560e768013ab
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/15/2022
-ms.locfileid: "9295938"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740337"
 ---
-# <a name="get-started-with-planning-optimization"></a>Rozpoczęcie optymalizacji planowania
+# <a name="get-started-with-master-planning"></a>Rozpoczęcie pracy z planowaniem głównym
 
 [!include [banner](../../includes/banner.md)]
 
-Zgodnie ze [wcześniejszą informacją](../../get-started/removed-deprecated-features-scm-updates.md#use-of-built-in-supply-chain-management-master-planning-engine-for-distribution-scenarios), optymalizacja planowania zastąpi istniejący wbudowany aparat planowania głównego.
-
-Jeśli obecnie jest używany wbudowany aparat planowania głównego, należy teraz rozpocząć planowanie migracji do optymalizacji planowania. Ważne jest, aby rozpocząć od razu, ponieważ operacje mogą w inny sposób wpłynąć na operacje w przypadku wymuszenia wycofania (chociaż wymuszanie nie jest obecnie zaplanowane). Stanowczo zachęcamy do ukończenia migracji, gdy tylko optymalizacja planowania będzie zawierała wymagane funkcje, dzięki czemu można zacząć korzystać z wielu ulepszeń wydajności i innych nowych możliwości nowej usługi.
-
-Funkcja optymalizacji planowania nie obsługuje obecnie wszystkich funkcji dostępnych w aparacie planowania wbudowanym w rozwiązanie Supply Chain Management. Dlatego ważne jest, aby ocenić, czy aktualnie dostępna w optymalizacji planowania funkcja ma spełniać wymagania użytkownika. Funkcja optymalizacji planowania nie jest obecnie włączona domyślnie w usługach Dynamics Lifecycle Services (LCS), więc użytkownik ma możliwość wykonania oceny przed jej włączeniem.
-
-> [!NOTE]
-> Należy zażądać wyjątku od migracji do optymalizacji planowania, jeśli proces planowania głównego nie obejmuje produkcji (wygenerowane planowane zlecenia produkcyjne utworzone w ramach planowania głównego), a wbudowany aparat planowania głównego jest wymagany od wersji 10.0.15. Począwszy od wersji 10.0.16, w środowiskach, w których uruchomiono wbudowane planowanie główne bez generowania planowanych zleceń produkcyjnych, jest wyświetlany błąd. Optymalizacja planowania powinna być używana we wszystkich nowych wdrożeniach, które nie generują planowanych zleceń produkcyjnych podczas planowania głównego. Właściciele istniejących środowisk, w których uruchomiono wbudowany aparat planowania głównego bez generowania planowanych zleceń produkcyjnych, otrzymają wiadomości ze szczegółami dotyczącymi procesu wyjątku. Zalecamy współpracę z partnerem w celu oceny i planowania migracji do optymalizacji planowania.
-
-Przed włączeniem optymalizacji planowania zdecydowanie zaleca się dokonanie oceny wyników analizy pasującej do optymalizacji planowania. Aby uzyskać więcej informacji, zobacz [Analiza dopasowywania optymalizacją planowania](planning-optimization-fit-analysis.md).
+Planowanie główne w Supply Chain Management jest dostarczane przez usługę zewnętrzną o nazwie Dodatek Optymalizacja planowania dla Dynamics 365 Supply Chain Management. W tym temacie wyjaśniono, jak uzyskać i skonfigurować tę usługę.
 
 ## <a name="availability"></a>Dostępność
 
@@ -108,31 +99,15 @@ Stan połączenia wskazuje bieżący stan połączenia między Supply Chain Mana
 Ustawienie opcji **Zastosuj optymalizację** planowania określa, który Aparat planowania będzie używany w planowaniu głównym:
 
 - **Tak** — Optymalizacja planowania jest używana do planowania głównego.
-- **Nie** – wbudowany silnik planowania Supply Chain Management jest używany do planowania głównego.
+- **Nie** – przestarzały silnik planowania głównego jest używany do planowania głównego.
 
-To ustawienie dotyczy wszystkich firm (osób prawnych). W niektórych firmach nie można używać optymalizacji planowania oraz wbudowanego planowania głównego w innych firmach.
+To ustawienie dotyczy wszystkich firm (osób prawnych). Nie jest możliwe użycie Optymalizacji planowania w niektórych podmiotach prawnych i przestarzałego silnika planowania głównego w innych podmiotach prawnych.
 
 > [!NOTE]
-> Jeśli istniejące zadania wsadowe planowania utworzone dla wbudowanego silnika planowania Supply Chain Management dostaw są wyzwalane, a opcja **Użyj optymalizacji planowania** jest ustawiona na wartość **tak**, zadania te nie powiodą się.
+> Jeśli istniejące zadania wsadowe planowania utworzone dla przestarzałego silnika planowania głównego dostaw są wyzwalane, a opcja **Użyj optymalizacji planowania** jest ustawiona na wartość **tak**, zadania te nie powiodą się.
 
 ### <a name="integration-with-the-setup"></a>Integracja z ustawieniami
 
 Jeśli Optymalizacja planowania jest włączona, planowanie główne jest wykonywane przy użyciu dodatku Optymalizacja planowania. W takim przypadku wpływa to na wyniki i funkcje planowania głównego.
 
-## <a name="additional-resources"></a>Dodatkowe zasoby
-
-[Warunki i postanowienia dla wersji zapoznawczej](https://go.microsoft.com/fwlink/?linkid=2015274)
-
-[Omówienie optymalizacji planowania](planning-optimization-overview.md)
-
-[Analiza dopasowywania optymalizacją planowania](planning-optimization-fit-analysis.md)
-
-[Wyświetlanie dzienników historii i planowania planów](plan-history-logs.md)
-
-[Stosowanie filtrów do planu](plan-filters.md)
-
-[Anuluj planowanie pracy](cancel-planning-job.md)
-
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

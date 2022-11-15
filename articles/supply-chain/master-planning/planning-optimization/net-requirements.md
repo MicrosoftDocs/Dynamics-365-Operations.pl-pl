@@ -1,6 +1,6 @@
 ---
-title: Zapotrzebowanie netto i informacje o oznaczaniu transakcji za pomocą optymalizacji planowania
-description: Ten artykuł zawiera informacje dotyczące obliczonego zapotrzebowania netto i informacji o oznaczaniu transakcji w ramach optymalizacji planowania.
+title: Wymagania netto i informacje oznaczania transakcji
+description: Ten artykuł zawiera informacje dotyczące obliczonego zapotrzebowania netto i informacji o oznaczaniu transakcji w ramach.
 author: t-benebo
 ms.date: 7/28/2021
 ms.topic: article
@@ -11,20 +11,20 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 259e5793a8dfac67793034d98ccb627fe1947bab
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a31ff5490b08d92f0d966388b65de02bca25b050
+ms.sourcegitcommit: 613be2f35e600ae1a1fa7ea2ae30e78984ca398a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888536"
+ms.lasthandoff: 11/07/2022
+ms.locfileid: "9748446"
 ---
-# <a name="net-requirements-and-pegging-information-with-planning-optimization"></a>Zapotrzebowanie netto i informacje o oznaczaniu transakcji za pomocą optymalizacji planowania
+# <a name="net-requirements-and-pegging-information"></a>Wymagania netto i informacje oznaczania transakcji
 
 [!include [banner](../../includes/banner.md)]
 
-Podczas uruchamiania planowania głównego w optymalizacji planowania ważne jest, aby zrozumieć, jaka jest wydajność, w jaki sposób istniejąca podaż pokrywa popyt i dlaczego została wygenerowana specyficzna podaż. Strona **Zapotrzebowanie netto** pozwala lepiej zrozumieć obliczone zapotrzebowanie, które generuje planowanie główne.
+Podczas uruchamiania planowania głównego ważne jest, aby zrozumieć, jaka jest wydajność, w jaki sposób istniejąca podaż pokrywa popyt i dlaczego została wygenerowana specyficzna podaż. Strona **Zapotrzebowanie netto** pozwala lepiej zrozumieć obliczone zapotrzebowanie, które generuje planowanie główne.
 
-Na stronie **Zapotrzebowanie netto** pokazano zapotrzebowanie netto, które obliczono dla optymalizacji planowania produktu. Zawiera również ustawienia zapotrzebowania, które zostały zastosowane podczas planowania głównego, podział sum zapotrzebowania według typów transakcji i informacje o oznaczaniu transakcji.
+Na stronie **Zapotrzebowanie netto** pokazano zapotrzebowanie netto, które obliczono dla planowania głównego. Zawiera również ustawienia zapotrzebowania, które zostały zastosowane podczas planowania głównego, podział sum zapotrzebowania według typów transakcji i informacje o oznaczaniu transakcji.
 
 ## <a name="open-the-net-requirements-page"></a>Otwieranie strony Zapotrzebowanie netto
 
@@ -133,8 +133,6 @@ Następnie zostanie otwarta strona **Zapotrzebowanie netto** dla produktu *1000*
     ![Informacje o oznaczaniu transakcji dla zamówienia sprzedaży](media/pegging-planned-purchase-order.png "Informacje o oznaczaniu transakcji dla zamówienia sprzedaży")
 
 > [!NOTE]
-> Optymalizacja planowania nie obsługuje jeszcze niektórych funkcji, więc typy zapotrzebowania *Zapasy bezpieczeństwa* i *Wygasła partia* nie są jeszcze uwzględnione na stronie **Zapotrzebowanie netto**. Aby uzyskać więcej informacji, zobacz [Analiza dopasowywania optymalizacją planowania](planning-optimization-fit-analysis.md).
->
-> Jeśli używasz wbudowanego aparatu planowania głównego, obsługiwane są produkty kontrolowane w ramach partii. W przypadku produktów kontrolowanych w ramach partii na stronie **Zapotrzebowanie netto** wyświetlane są wygasłe dostępne zapasy, ale transakcje nie są oznaczane przy użyciu zapotrzebowań popytu. Wiersze wygasłych dostępnych zapasów tego typu są pokazywane jako wiersze zapotrzebowania *Wygasła partia* na stronie **Zapotrzebowanie netto**.
+> Typ *zapotrzebowania na zapas bezpieczeństwa* nie jest uwzględniony na stronie **Zapotrzebowanie netto**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: Planowanie z użyciem ujemnych ilości dostępnych zapasów
-description: W tym artykule wyjaśniono sposób obsługi ujemnych wartości dostępnych zapasów podczas korzystania z optymalizacji planowania.
+description: W tym artykule wyjaśniono, jak jest obsługiwany ujemny wpływ na stanie.
 author: t-benebo
 ms.date: 07/22/2021
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 04006bb12142be69c84bc8085dd82fc99280e90b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b4fc8b37fd800e3b4652513f150f9806bf1d5d67
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856143"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9741130"
 ---
 # <a name="planning-with-negative-on-hand-quantities"></a>Planowanie z użyciem ujemnych ilości dostępnych zapasów
 
@@ -29,7 +29,7 @@ ms.locfileid: "8856143"
 
 Jeśli w systemie jest wyświetlana ujemna zagregowana ilość zapasów, aparat planowania traktuje ilość jako 0 (zero), aby uniknąć nadmiernej podaży. Oto, jak działa ta funkcja:
 
-1. Funkcja optymalizacji planowania agreguje ilości dostępnych zapasów na najniższym poziomie wymiarów zapotrzebowania. (Jeśli na przykład *lokalizacja* nie jest wymiarem zapotrzebowania, funkcja optymalizacji planowania umożliwia agregowanie dostępnych ilości na poziomie *magazynu*.)
+1. Funkcja planowania głównego agreguje ilości dostępnych zapasów na najniższym poziomie wymiarów zapotrzebowania. (Jeśli na przykład *lokalizacja* nie jest wymiarem zapotrzebowania, funkcja planowania głównego umożliwia agregowanie dostępnych ilości na poziomie *magazynu*.)
 1. Jeśli zagregowana ilość dostępna na najniższym poziomie wymiarów zapotrzebowania jest ujemna, system zakłada, że ilość dostępnych zapasów wynosi w rzeczywistości 0 (zero).
 
 > [!IMPORTANT]
@@ -88,14 +88,6 @@ System jest skonfigurowany w następujący sposób:
 - Zamówienie sprzedaży istnieje dla ilości *10* szt. produktu *FG*.
 - Ilość zamówienia sprzedaży jest fizycznie zarezerwowana na istniejące dostępne zapasy.
 
-Następnie można dostosować ilość produktu *FG* tak, aby dostępne zapasy miały 5. Ponieważ stan zapasów produktów w magazynie wynosi 5, ilość zamówienia sprzedaży jest teraz zarezerwowana dla ilości, która nie jest dostępna w magazynie (podobnie byłoby, gdyby stan zapasów w magazynie wynosił 0, wtedy zamówienie sprzedaży byłoby zarezerwowane dla ujemnego stanu zapasów). Jeśli uruchomisz teraz planowanie główne, zostanie utworzone planowane zamówienie na ilość 5 dla *FG* w celu dostarczenia zamówienia sprzedaży, ponieważ Optymalizacja Planowania zawsze wykorzysta istniejące dostawy lub utworzy nowe planowane zamówienie w celu dostarczenia fizycznej rezerwacji.
-
-## <a name="related-resources"></a>Powiązane zasoby
-
-- [Omówienie optymalizacji planowania](planning-optimization-overview.md)
-- [Rozpoczęcie optymalizacji planowania](get-started.md)
-- [Analiza dopasowywania optymalizacją planowania](planning-optimization-fit-analysis.md)
-- [Wyświetlanie dzienników historii i planowania planów](plan-history-logs.md)
-- [Anuluj planowanie pracy](cancel-planning-job.md)
+Następnie można dostosować ilość produktu *FG* tak, aby dostępne zapasy miały 5. Ponieważ stan zapasów produktów w magazynie wynosi 5, ilość zamówienia sprzedaży jest teraz zarezerwowana dla ilości, która nie jest dostępna w magazynie (podobnie byłoby, gdyby stan zapasów w magazynie wynosił 0, wtedy zamówienie sprzedaży byłoby zarezerwowane dla ujemnego stanu zapasów). Jeśli uruchomisz teraz planowanie główne, zostanie utworzone planowane zamówienie na ilość 5 dla *FG* w celu dostarczenia zamówienia sprzedaży, ponieważ planowanie główne zawsze wykorzysta istniejące dostawy lub utworzy nowe planowane zamówienie w celu dostarczenia fizycznej rezerwacji.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

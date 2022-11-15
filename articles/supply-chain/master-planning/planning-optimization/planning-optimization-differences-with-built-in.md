@@ -1,5 +1,5 @@
 ---
-title: Różnice między wbudowanym planowaniem głównym a optymalizacją planowania
+title: Różnice między optymalizacją planowania i przestarzałym aparatem planowania głównego
 description: W tym artykule wymieniono funkcje, których optymalizacja planowania jeszcze nie obsługuje, a które nie są wymienione na stronie Analiza dopasowań optymalizacji planowania.
 author: t-benebo
 ms.date: 07/30/2021
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a23256f3e092b32e1f1d09b708a8d0ca5f403785
-ms.sourcegitcommit: 5d33a3398e7e1d3494bfc3cad342fffa7cfa5b76
+ms.openlocfilehash: 6e1671a508b85a94ac9687af15e898d885ea94c1
+ms.sourcegitcommit: 55e440e30490b2d36d86b22aa1263d5da97633aa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "9680016"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9745369"
 ---
-# <a name="differences-between-built-in-master-planning-and-planning-optimization"></a>Różnice między wbudowanym planowaniem głównym a optymalizacją planowania
+# <a name="differences-between-planning-optimization-and-the-deprecated-master-planning-engine"></a>Różnice między optymalizacją planowania i przestarzałym aparatem planowania głównego
 
 [!include [banner](../../includes/banner.md)]
 
-Wyniki optymalizacji planowania mogą różnić się od wyników wbudowanego aparatu planowania głównego. Różnice mogą być spowodowane przez oczekujące funkcje. W tym artykule wymieniono funkcje, których optymalizacja planowania jeszcze nie obsługuje, a które nie są wymienione na stronie **[Analiza dopasowań optymalizacji planowania](planning-optimization-fit-analysis.md)**].
+Wyniki optymalizacji planowania mogą różnić się od wyników przestarzałego aparatu planowania głównego. Różnice mogą być spowodowane przez oczekujące funkcje. W tym artykule wymieniono funkcje, których optymalizacja planowania jeszcze nie obsługuje, a które nie są wymienione na stronie **[Analiza dopasowań optymalizacji planowania](planning-optimization-fit-analysis.md)**].
 
 | Funkcja | Bieżące zachowanie w optymalizacji planowania |
 |---|---|
@@ -36,10 +36,12 @@ Wyniki optymalizacji planowania mogą różnić się od wyników wbudowanego apa
 | Realizacja zapasu bezpieczeństwa | Optymalizacja planowania zawsze używa opcji *Dzisiejsza data + czas zamówienia* w polu **Zrealizuj minimum** na stronie **Pokrycie pozycji**. Pomaga to zapobiegać niechcianym zamówieniom planowanym i innym problemom, ponieważ jeśli czas zaopatrzenia nie jest uwzględniony w przypadku zapasów bezpieczeństwa, zamówienia planowane tworzone dla niskich zapasów byłyby zawsze opóźnione ze względu na czas realizacji. |
 | Ustalanie zapasów bezpieczeństwa i wymagania dotyczące sieci | Typ *zapotrzebowania na zapas bezpieczeństwa* nie jest uwzględniony i nie jest wyświetlany na stronie **Zapotrzebowanie netto**. Zapas bezpieczeństwa nie reprezentuje popytu i nie ma skojarzonej z nim daty zapotrzebowania. Określa natomiast ograniczenia dotyczące ilości zapasów, jaka musi być obecna przez cały czas. Jednak wartość pola **Minimum** jest nadal uwzględniana podczas obliczania zamówień planowanych podczas planowania głównego. Aby sprawdzić, czy ta wartość została względna, należy sprawdzić kolumnę **Skumulowana ilość** na stronie **Wymagania netto**. Ponieważ oznaczanie transakcji odbywa się w różny sposób, mogą być proponowane różne akcje. |
 | Kalendarze transportu | Wartość w kolumnie **Kalendarz transportu** na stronie **Tryby dostawy** jest ignorowana. |
-| Kod zapotrzebowania minimum/maksimum bez wartości| W przypadku wbudowanego mechanizmu planowania, gdy używany jest kod minimalnego/maksymalnego pokrycia, w którym nie ustawiono wartości minimalnych ani maksymalnych, aparat planowania traktuje kod pokrycia jako wymaganie i tworzy jedno zamówienie dla każdego wymagania. Dzięki optymalizacji planowania system utworzy jedno zamówienie na dzień, aby pokryć pełną kwotę za ten dzień.  |
-| Wymagania netto i ręcznie tworzone planowane zamówienia | Dzięki wbudowanemu mechanizmowi planowania, ręcznie utworzone zamówienia na dostawy dla danego artykułu automatycznie pojawiają się wśród zapotrzebowań netto dla tego artykułu. Na przykład podczas tworzenia zamówienia zakupu na podstawie zamówienia sprzedaży, zamówienie zakupu pojawia się na stronie **Wymagania netto**, nie wymagając żadnych wcześniejszych działań. Dzieje się tak, ponieważ wbudowany silnik planowania rejestruje transakcje inwentaryzacyjne w tabeli `inventLogTTS` i pokazuje zmiany na stronie **Potrzeby netto** dla planów dynamicznych. Jednak w przypadku Optymalizacji planowania ręcznie utworzone zamówienia nie pojawią się wśród wymagań netto pozycji, dopóki nie zostanie uruchomiona Optymalizacja planowania (z użyciem planu, który zawiera daną pozycję) lub dopóki nie wybierzesz **Uaktualnij \> Planowanie główne** na panelu akcji na stronie **Wymagania netto**, co spowoduje uruchomienie planowania głównego dla danej pozycji. Aby uzyskać więcej informacji na temat pracy ze stroną **Wymagania netto**, zobacz [Wymagania netto i informacje o kołkowaniu z Optymalizacją planowania](net-requirements.md). |
-| Przydział zasobów | Podczas pracy z nieskończoną zdolnością produkcyjną wbudowany aparat planowania głównego przypisuje wszystkie planowane zamówienia do tego samego zasobu w danej grupie zasobów. Optymalizacja planowania usprawnia ten proces, wybierając zasoby losowo, aby różne zlecenia produkcyjne wykorzystywały różne zasoby. Aby do wszystkich planowanych zamówień użyć tego samego zasobu, należy określić ten zasób w marszrucie. |
-| Rozszerzone typy danych (EDT) | Optymalizacja planowania nie obsługuje zmian zgodnie z dokładnością EDT. Jeśli na przykład precyzja ilości produktu zostanie zwiększona z dwóch (domyślnie) miejsc dziesiętnych do czterech, optymalizacja planowania będzie nadal używać tylko dwóch miejsc dziesiętnych. |
+| Kod zapotrzebowania minimum/maksimum bez wartości| W przypadku przestarzałego planowania głównego, gdy używany jest kod minimalnego/maksymalnego pokrycia, w którym nie ustawiono wartości minimalnych ani maksymalnych, aparat planowania traktuje kod pokrycia jako wymaganie i tworzy jedno zamówienie dla każdego wymagania. Dzięki optymalizacji planowania system utworzy jedno zamówienie na dzień, aby pokryć pełną kwotę za ten dzień.  |
+| Wymagania netto i ręcznie tworzone planowane zamówienia | W przestarzałym silniku planowania głównego ręcznie utworzone zamówienia na dostawy dla pozycji automatycznie pojawiają się wśród wymagań netto dla tej pozycji. Na przykład podczas tworzenia zamówienia zakupu na podstawie zamówienia sprzedaży, zamówienie zakupu pojawia się na stronie **Wymagania netto**, nie wymagając żadnych wcześniejszych działań. Dzieje się tak, ponieważ przestarzały silnik planowania głownego rejestruje transakcje inwentaryzacyjne w tabeli `inventLogTTS` i pokazuje zmiany na stronie **Potrzeby netto** dla planów dynamicznych. Jednak w przypadku Optymalizacji planowania ręcznie utworzone zamówienia nie pojawią się wśród wymagań netto pozycji, dopóki nie zostanie uruchomiona Optymalizacja planowania (z użyciem planu, który zawiera daną pozycję) lub dopóki nie wybierzesz **Uaktualnij \> Planowanie główne** na panelu akcji na stronie **Wymagania netto**, co spowoduje uruchomienie planowania głównego dla danej pozycji. Aby uzyskać więcej informacji na temat pracy ze stroną **Wymagania netto**, zobacz [Wymagania netto i informacje o kołkowaniu](net-requirements.md). |
+| Przydział zasobów | Podczas pracy z nieskończoną zdolnością produkcyjną przestarzały aparat planowania głównego przypisuje wszystkie planowane zamówienia do tego samego zasobu w danej grupie zasobów. Optymalizacja planowania usprawnia ten proces, wybierając zasoby losowo, aby różne zlecenia produkcyjne wykorzystywały różne zasoby. Aby do wszystkich planowanych zamówień użyć tego samego zasobu, należy określić ten zasób w marszrucie. |
+| Rozszerzone typy danych (EDT) | Optymalizacja planowania nie obsługuje zmian zgodnie z dokładnością EDT. Oznacza to, że ten proces nie jest oficjalnie obsługiwany i nie jest gwarantowany do pracy. |
+| Realizacja zapasu bezpieczeństwa | Optymalizacja planowania zawsze używa **Uzupełnij stany minimalne** o wartości  *Daty dzisiejszej + czasu zaopatrzenia*. Przygotowuje to system do korzystania w przyszłości z uproszczonej konfiguracji planowania i zapewnia wynik, który można wykorzystać w działaniu. Jeśli czas zaopatrzenia nie jest uwzględniony w zapasach bezpieczeństwa, zamówienia planowane utworzone dla niskiego stanu zapasów będą zawsze opóźnione z powodu czasu realizacji. To zachowanie może spowodować powstanie istotnych zakłóceń i niechcianych zamówień planowanych. Najlepszym rozwiązaniem jest zmiana tego ustawienia, tak aby była używana *Data dzisiejsza + czas zaopatrzenia*. Zaktualizuj dane podstawowe, aby uniknąć ostrzeżeń. |
+| Kopiuj plan statyczny do dynamicznego | Optymalizacja planowania nie kopiuje planów statycznych do planów dynamicznych, niezależnie od ustawienia na stronie **Parametry planowania głównego**. Ogólnie rzecz biorąc, ta operacja jest mniej istotna ze względu na szybkość i pełną regenerację, którą zapewnia Optymalizacja planowania. Jeśli użyto dwóch lub więcej planów, planowanie główne powinno być wyzwalane dla każdego planu. |
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

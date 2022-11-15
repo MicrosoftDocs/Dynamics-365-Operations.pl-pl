@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-09-19
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 3d116b5f7f456630415378e6cc069907e339068b
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: 5f02ec58c88cfd0d663a97de4e3e4dff1cdd5e90
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689701"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740094"
 ---
 # <a name="finite-capacity-planning-and-scheduling"></a>Ograniczone planowanie wydajności i planowanie
 
@@ -28,9 +28,8 @@ Ograniczone planowanie zdolności produkcyjnych to podejście, które pomaga zro
 
 Planowanie i harmonogramowanie ograniczonych zdolności produkcyjnych tworzy bardziej realistyczny harmonogram procesów produkcyjnych, niż stwarza podejście nieskończonego załadunku. Jeśli nie ma wystarczającej pojemności zasobów, data dostawy zostanie wypchnięta, a zadanie zostanie zaplanowane, gdy będzie wystarczająca pojemność.
 
-## <a name="planning-optimization-support-for-finite-capacity-planning"></a>Wsparcie optymalizacji planowania przy planowaniu ograniczonej wydajności
-
-Planowanie i harmonogramowanie ograniczonych zdolności produkcyjnych działa prawie w ten sam sposób, niezależnie od tego, czy korzystasz z optymalizacji planowania, czy z wbudowanego mechanizmu planowania. Jednak Optymalizacja planowania nie używa parametru granicznego **Czas wąskiego gardła**. W przypadku korzystania z Optymalizacji planowania zasoby wąskich gardeł są zawsze planowane przy użyciu tego samego horyzontu czasowego, co zasoby nie będące wąskim gardłem (wskazane przez horyzont czasowy ograniczonej pojemności).
+> [!NOTE]
+> Planowanie i harmonogramowanie skończonej pojemności działa w prawie taki sam sposób, niezależnie od tego, czy używasz Optymalizacji planowania, czy przestarzałego silnika planowania głównego. Jednak Optymalizacja planowania nie używa parametru granicznego **Czas wąskiego gardła**. W przypadku korzystania z Optymalizacji planowania zasoby wąskich gardeł są zawsze planowane przy użyciu tego samego horyzontu czasowego, co zasoby nie będące wąskim gardłem (wskazane przez horyzont czasowy ograniczonej pojemności).
 
 ## <a name="set-up-finite-capacity-functionality"></a>Konfigurowanie funkcji ograniczonych zdolności produkcyjnych
 
