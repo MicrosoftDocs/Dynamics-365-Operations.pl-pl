@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e90780ca2a33725130b261fcaf4cb08d30f3270
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3e0f4184237537464998b2bc1a6ab02561d9d291
+ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8904536"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9752811"
 ---
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Przeszacowanie w walucie obcej dla księgi głównej
 
@@ -64,7 +64,9 @@ Proces przeszacowania można uruchomić dla jednej lub wielu firm. Wyszukiwanie 
 
 Przeszacowanie może być uruchomione dla jednej lub kilku walut obcych. Wyszukiwanie obejmie wszystkie waluty, w których księgowano transakcje w przedziale dat odpowiednim dla typu konta głównego (bilansowe lub wynikowe) firm wybranych do przeszacowania. Waluta rozliczeniowa znajdzie się na liście, ale jej zaznaczenie spowoduje, że nie nastąpi żadne przeszacowanie. 
 
-Jeśli chcesz przejrzeć spodziewane wyniki przeszacowania księgi głównej, w opcji **Wyświetl podgląd przed zaksięgowaniem** zaznacz wartość **Tak**. Podgląd w księdze głównej różni się od symulacji przeszacowania w walucie obcej w modułach rozrachunków z dostawcami i odbiorcami. Symulacja w tych modułach jest raportem, podczas gdy księga główna oferuje funkcję podglądu umożliwiającą zaksięgowanie, bez konieczności ponownego uruchamiania procesu przeszacowania. Wyniki w podglądzie mogą być eksportowane do programu Microsoft Excel, aby zachować historię obliczania kwot. Jeżeli chcesz wyświetlić podgląd wyników przeszacowania, nie można użyć przetwarzania wsadowego. Z poziomu okna podglądu użytkownik może zaksięgować wyniki wszystkich firm za pomocą przycisku **Księguj**. W przypadku problemów z wynikami pewnej firmy użytkownik ma także możliwość zaksięgowania przeszacowania tylko dla podzbioru firm, używając przycisku **Wybierz firmy do księgowania**. 
+Jeśli chcesz przejrzeć spodziewane wyniki przeszacowania księgi głównej, w opcji **Wyświetl podgląd przed zaksięgowaniem** zaznacz wartość **Tak**. Podgląd w księdze głównej różni się od symulacji przeszacowania w walucie obcej w modułach rozrachunków z dostawcami i odbiorcami. Symulacja w tych modułach jest raportem, podczas gdy księga główna oferuje funkcję podglądu umożliwiającą zaksięgowanie, bez konieczności ponownego uruchamiania procesu przeszacowania. Wyniki w podglądzie mogą być eksportowane do programu Microsoft Excel, aby zachować historię obliczania kwot. Jeżeli chcesz wyświetlić podgląd wyników przeszacowania, nie można użyć przetwarzania wsadowego. Z poziomu okna podglądu użytkownik może zaksięgować wyniki wszystkich firm za pomocą przycisku **Księguj**. W przypadku problemów z wynikami pewnej firmy użytkownik ma także możliwość zaksięgowania przeszacowania tylko dla podzbioru firm, używając przycisku **Wybierz firmy do księgowania**.
+
+Jeśli chcesz wykluczyć korekty, które zostały zaksięgowane za pomocą **Dziennika korekt walutowych raportowania** z procesu przeszacowania, ustaw **Wyklucz korekty walutowe raportowania** na **Tak**. Domyślnie w przesyłce są uwzględniane korekty w walucie raportowania. 
 
 Po zakończeniu procesu przeszacowania w walucie obcej zostanie utworzony rekord, co pozwala śledzić historię wszystkich sesji.  Oddzielne rekordy są tworzone dla każdej firmy i warstwy księgowania.
 
