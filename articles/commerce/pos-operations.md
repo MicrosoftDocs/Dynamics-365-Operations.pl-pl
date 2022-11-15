@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.custom: ''
 ms.assetid: ''
 ms.search.industry: Retail
-ms.openlocfilehash: 42010bbc0cfb9714fc2be360c817bad07e184eb3
-ms.sourcegitcommit: 435e69160dbd7f9c61b37ac4440285a5df144622
+ms.openlocfilehash: eb21dc5ca474a87fcabe2dda2a06dda7aa42ebc2
+ms.sourcegitcommit: 719600437fc0895efac374f954a895e4c951da6e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "9728284"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9736889"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Operacje online i offline w punkcie sprzedaży (POS)
 
@@ -42,8 +42,9 @@ Poniższe kolumny określają, gdzie można wywołać informacje:
 
 > [!NOTE]
 > Operacje wymienione poniżej mają zastosowanie do najnowszej wersji usługi Commerce. Niektóre operacje mogły ulec zmianie lub są niedostępne w poprzednich wersjach.
+> Aby uzyskać dodatkowe informacje dotyczące funkcji i konfiguracji offline, zapoznaj się z artykułem [Wdrażanie i rozwiązywanie problemów w handlu offline](dev-itpro/implementation-considerations-offline.md).
 
-| Identyfikator   | Operacja                                         | Opis                                                                                                                                                                                                    | Operacje użytkownika    | Ekran transakcyjny | Ekran powitalny | Dostępne w trybie offline? | Specyficzne dla ustawień regionalnych |
+| ID   | Operacja                                         | Opis                                                                                                                                                                                                    | Operacje użytkownika    | Ekran transakcyjny | Ekran powitalny | Dostępne w trybie offline? | Specyficzne dla ustawień regionalnych |
 | ---- | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------ | -------------- | ----------------- | --------------- |
 | 100  | Sprzedaż produktu                                      | Dodaj określony produkt do transakcji.                                                                                                                                                                    | Tak            | Tak                | Tak            | Tak               | Nie              |
 | 101  | Sprawdzanie ceny                                       | Szukaj ceny określonego produktu.                                                                                                                                        | Tak            | Tak                | Tak            | Tak               | Nie              |

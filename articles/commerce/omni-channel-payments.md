@@ -2,7 +2,7 @@
 title: Omówienie płatności wielokanałowych
 description: W tym artykule są omówione płatności wielokanałowe w programie Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 09/17/2020
+ms.date: 11/04/2020
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -17,16 +17,17 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: d850e532a764d22bc926f5649f4ad2907b49d1a0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a5cc0725b383ca6657bd19b9dd25b0c60b364467
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8881716"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746134"
 ---
 # <a name="omni-channel-payments-overview"></a>Omówienie płatności wielokanałowych
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 W tym artykule są omówione płatności wielokanałowe w programie Dynamics 365 Commerce. Zawiera pełną listę obsługiwanych scenariuszy, informacje o funkcjonalności, konfiguracji i rozwiązywaniu problemów oraz opisy typowych problemów.
 
@@ -104,7 +105,7 @@ W poniższych sekcjach opisano kroki poszczególnych scenariuszy i przedstawiono
 Przed rozpoczęciem upewnij się, że są spełnione następujące wymagania wstępne:
 
 - Istnieje referencyjna witryna handlowa, w której jest skonfigurowany łącznik Adyen.
-- Wartością opcji **Płatności wielokanałowe** na stronie **Wspólne parametry sieci sprzedaży komercyjnej** jest **True**. W nowszych wersjach ten settng jest przenoszony do obszaru roboczego **Zarządzanie funkcjami**, gdzie można wybrać funkcję **Płatności wielokanałowej** i kliknąć przycisk **Włącz teraz**. 
+- Wartością opcji **Płatności wielokanałowe** na stronie **Wspólne parametry sieci sprzedaży komercyjnej** jest **True**. W nowszych wersjach to ustawienie jest przenoszone do obszaru roboczego **Zarządzanie funkcjami**, gdzie można wybrać funkcję **Płatności wielokanałowej** i kliknąć przycisk **Włącz teraz**. 
 - Łącznik płatności Adyen został skonfigurowany dla rejestru punktu sprzedaży Houston.
 - Retail Modern POS dla Windows lub Android z wbudowaną stacją sprzętową   -lub-
 - Nowoczesny POS na iOS lub Cloud POS z podłączoną wspólną stacją sprzętową. 
@@ -169,9 +170,9 @@ Wykonaj scenariusz, postępując w następujący sposób:
 6. Na pasku wyszukiwania wpisz **Seattle**, a następnie wybierz sklep **Seattle** jako miejsce odbioru. 
 7. Kliknij przycisk **OK**, aby zaakceptować bieżącą datę jako datę odbioru.
 9. Wybierz opcję **Płatność kartą**, aby zainicjować płatność.
-10. Dokonaj płatności kartą na kwotę należną za depozyt. 
+10. Dokonaj płatności kartą na kwotę należną za depozyt.
 11. Dokonaj płatności depozytu na terminalu płatności. 
-12. Po zapłaceniu depozytu wybierz opcję, aby użyć tej samej karty do realizacji i poczekaj, aż zamówienie zostanie zrealizowane. 
+12. Po zapłaceniu depozytu wybierz opcję, aby użyć tej samej karty do realizacji i poczekaj, aż zamówienie zostanie zrealizowane. Jeśli 100% depozytu zostanie wpłacone (z kroku 10 powyżej), środki zostaną natychmiast przechwycone na karcie i token autoryzacyjny nie będzie dostępny przy fakturowaniu, ponieważ środki zostały już przechwycone i śledzone jako zapłacone.
 13. Uruchom punkt sprzedaży sklepu Seattle.
 14. W punkcie sprzedaży, na stronie powitalnej, wybierz operację **Zamówienia do odbioru**, aby wyświetlić zamówienia do odbioru w sklepie. 
 15. Wybierz jeden lub więcej wierszy z zamówienia utworzonego w referencyjnej witrynie handlowej, a następnie wybierz opcję **Odbiór.**
@@ -198,7 +199,7 @@ Wykonaj scenariusz, postępując w następujący sposób:
 8. Wybierz opcję **Płatność kartą**, aby zainicjować płatność.
 9. Dokonaj płatności kartą na kwotę należną za depozyt. 
 10. Dokonaj płatności depozytu na terminalu płatności. 
-11. Po zapłaceniu depozytu wybierz opcję, aby użyć tej samej karty do realizacji i poczekaj, aż zamówienie zostanie zrealizowane.
+11. Po zapłaceniu depozytu wybierz opcję, aby użyć tej samej karty do realizacji i poczekaj, aż zamówienie zostanie zrealizowane. Jeśli 100% depozytu zostanie wpłacone (z kroku 9 powyżej), środki zostaną natychmiast przechwycone na karcie i token autoryzacyjny nie będzie dostępny przy fakturowaniu, ponieważ środki zostały już przechwycone i śledzone jako zapłacone.
 
 Po pobraniu, spakowaniu i zafakturowaniu zamówienia w zapleczu szczegóły płatności podane w punkcie sprzedaży zostaną użyte do przechwycenia środków za towary wysyłane do odbiorcy. 
 

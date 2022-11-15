@@ -1,6 +1,6 @@
 ---
 title: Obliczanie dat dostawy zamówień sprzedaży przy użyciu CTP
-description: Funkcja Capable-to-promise (CTP) umożliwia podanie klientom realistycznych terminów, w których można obiecać konkretne towary. W tym artykule opisano sposób skonfigurowania i używania protokołu CTP dla każdego aparatu planowania (optymalizacji planowania i wbudowanego aparatu).
+description: Funkcja Capable-to-promise (CTP) umożliwia podanie klientom realistycznych terminów, w których można obiecać konkretne towary. W tym artykule opisano sposób skonfigurowania i używania protokołu CTP dla każdego aparatu planowania (optymalizacji planowania i przestarzałego aparatu planowania głównego).
 author: t-benebo
 ms.date: 07/20/2022
 ms.topic: article
@@ -11,28 +11,29 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-07-20
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 3b8e3dc9f0e7aaf019aa4d7284458206e7daadb2
-ms.sourcegitcommit: 86c0562ce1ecdf7937125c0f5a6771f178b459e7
+ms.openlocfilehash: 4a3b8ba89d9fb224026cf32cad89d7f28321ee79
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "9714868"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9741211"
 ---
 # <a name="calculate-sales-order-delivery-dates-using-ctp"></a>Obliczanie dat dostawy zamówień sprzedaży przy użyciu CTP
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
+<!-- KFN: Split into two topics, one for PO and one for classic. -->
 
 Funkcja Capable-to-promise (CTP) umożliwia podanie klientom realistycznych terminów, w których można obiecać konkretne towary. Dla każdego wiersza sprzedaży można podać datę z uwzględnieniem istniejących dostępnych zapasów, zdolności produkcyjnych oraz czasów transportu.
 
 CTP rozszerza funkcjonalność [available-to-promise](../../sales-marketing/delivery-dates-available-promise-calculations.md) (ATP) przez uwzględnienie informacji o pojemności. Podczas gdy w atp jest uwzględniana tylko dostępność materiałów i zakłada się nieskończone zasoby zdolności produkcyjnych, w usługach CTP jest uwzględniana dostępność zarówno materiałów, jak i zdolności produkcyjnych. Dzięki temu można uzyskać bardziej realny obraz tego, czy popyt może być zatrzymany w danym czasie.
 
-CTP działa nieco inaczej, w zależności od używanego głównego aparatu planowania (Optymalizacja planowania lub wbudowany aparat). W tym artykule opisano, jak skonfigurować go dla każdego silnika. CTP dla optymalizacji planowania obecnie obsługuje tylko podzestaw scenariuszy CTP, które są obsługiwane przez wbudowany aparat.
+CTP działa nieco inaczej, w zależności od używanego głównego aparatu planowania (Optymalizacja planowania lub przestarzały aparat planowania głównego). W tym artykule opisano, jak skonfigurować go dla każdego silnika. CTP dla optymalizacji planowania obecnie obsługuje tylko podzestaw scenariuszy CTP, które są obsługiwane przez przestarzały aparat planowania głównego.
 
 ## <a name="turn-on-ctp-for-planning-optimization"></a>Włącz CTP w celu optymalizacji planowania
 
-CTP dla wbudowanego głównego mechanizmu planowania jest zawsze dostępny. Jeśli jednak chcesz używać CTP do optymalizacji planowania, musisz je wyłączyć dla systemu. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
+CTP dla przestarzałego głównego mechanizmu planowania jest zawsze dostępny. Jeśli jednak chcesz używać CTP do optymalizacji planowania, musisz je wyłączyć dla systemu. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
 
 - **Moduł:** *Planowanie główne*
 - **Nazwa funkcji:** *(Wersja zapoznawcza) CTP dla optymalizacji planowania*
@@ -47,9 +48,9 @@ Obliczenie CTP, w którym są rozważane zarówno materiały, jak i zasoby, moż
 
 ## <a name="how-ctp-differs-depending-on-the-master-planning-engine-that-you-use"></a>Różnice CTP w zależności od wybranego aparatu planowania głównego
 
-W poniższej tabeli podsumowano różnice między CTP dla optymalizacji planowania a CTP dla wbudowanego aparatu planowania głównego.
+W poniższej tabeli podsumowano różnice między CTP dla optymalizacji planowania a CTP dla przestarzałego aparatu planowania głównego.
 
-| Element | Optymalizacja planowania | Wbudowany aparat planowania głównego |
+| Element | Optymalizacja planowania | Przestarzały aparat planowania głównego |
 |---|---|---|
 | **Ustawienie kontroli daty dostawy** dla zamówień, wierszy zamówień i produktów | *CTP dla optymalizacji planowania* | *CTP* |
 | Godzina obliczania | Obliczanie jest wyzwalane przez uruchomienie planu dynamicznego jako zaplanowanego zadania. | Obliczenie jest natychmiast wyzwalane po każdym wprowadzeniu lub zaktualizowaniu wiersza zamówienia sprzedaży. |
@@ -70,8 +71,8 @@ Domyślna metoda kontroli daty dostawy zostanie zastosowana do wszystkich nowych
     - *Czas realizacji sprzedaży* — Czas realizacji sprzedaży to okres od utworzenia zamówienia sprzedaży do wysyłki towarów. Obliczenie daty dostawy opiera się na domyślne liczbie dni i nie uwzględnia dostępności zapasu, znanego popytu ani planowanej podaży.
     - *ATP* — ATP to dostępna ilość towaru, która może zostać zarezerwowana dla odbiorcy na konkretny dzień. Obliczanie ATP obejmuje niezatwierdzone zapasy, czasy realizacji, planowane przychody i rozchody.
     - *ATP + Zapas czasu dla rozchodu* — data wysyłki jest równa dacie ATP plus zapas czasu dla rozchodu w odniesieniu do towaru. Jest to czas potrzebny na przygotowanie towaru do wysyłki.
-    - *CTP* — użyj obliczenia CTP dostarczanego przez wbudowany aparat planowania głównego. Jeśli używasz optymalizacji planowania, *metoda kontroli daty dostawy CTP* jest niedozwolone i jeśli jest zaznaczona, spowoduje błąd podczas wykonywania obliczeń.
-    - *CTP dla optymalizacji planowania* — użyj obliczenia CTP dostarczanego przez optymalizację planowania. Ta opcja nie ma wpływu, jeśli używasz wbudowanego głównego aparatu planowania.
+    - *CTP* — użyj obliczenia CTP dostarczanego przez przestarzały aparat planowania głównego. Jeśli używasz optymalizacji planowania, *metoda kontroli daty dostawy CTP* jest niedozwolone i jeśli jest zaznaczona, spowoduje błąd podczas wykonywania obliczeń.
+    - *CTP dla optymalizacji planowania* — użyj obliczenia CTP dostarczanego przez optymalizację planowania. Ta opcja nie ma wpływu, jeśli używasz przestarzałego głównego aparatu planowania.
 
 ### <a name="set-delivery-date-control-overrides-for-individual-products"></a>Ustawienie zastąpień kontroli daty dostawy dla poszczególnych produktów
 
@@ -85,7 +86,7 @@ Można przypisać zastąpienia określonych produktów, dla których ma być sto
 
 ## <a name="schedule-ctp-for-planning-optimization-calculations"></a><a name="batch-job"></a>Planowanie CTP dla obliczeń optymalizacji planowania
 
-Jeśli do optymalizacji planowania jest używać protokołu CTP, należy uruchomić plan dynamiczny, aby wyzwolić system do obliczeń CTP, a następnie ustawić potwierdzone daty wysyłki i przyjęcia dla wszystkich odpowiednich zamówień. Plan musi obejmować wszystkie pozycje, dla których są wymagane potwierdzone daty wysyłki i przyjęcia. (Gdy do korzystania z CTP jest wbudowany aparat planowania, obliczenia CTP są natychmiast wykonywane lokalnie. Z tego powodu nie trzeba uruchamiać planu dynamicznego, aby zobaczyć wyniki CTP)
+Jeśli do optymalizacji planowania jest używać protokołu CTP, należy uruchomić plan dynamiczny, aby wyzwolić system do obliczeń CTP, a następnie ustawić potwierdzone daty wysyłki i przyjęcia dla wszystkich odpowiednich zamówień. Plan musi obejmować wszystkie pozycje, dla których są wymagane potwierdzone daty wysyłki i przyjęcia. (Gdy do korzystania z CTP jest przestarzały aparat planowania głównego, obliczenia CTP są natychmiast wykonywane lokalnie. Z tego powodu nie trzeba uruchamiać planu dynamicznego, aby zobaczyć wyniki CTP)
 
 Aby zapewnić, że daty będą dostępne w odpowiednim czasie dla wszystkich użytkowników, zaleca się cykliczne konfigurowanie zadań wsadowych. Na przykład zadanie wsadowe, w przypadku których plan dynamiczny jest uruchamiany co 30 minut, spowoduje ustawienie potwierdzonych dat wysyłki i odbioru co 30 minut. Dlatego użytkownicy, którzy wprowadzają i importują zamówienia, muszą czekać maksymalnie 30 minut na otrzymanie potwierdzonych dat wysyłki i odbioru.
 
@@ -98,17 +99,17 @@ Aby skonfigurować zadanie wsadowe do uruchamiania planu dynamicznego zgodnie z 
 1. Wybierz przycisk **OK**, aby zapisać harmonogram.
 1. Naciśnij przycisk **OK**, aby utworzyć zadanie wsadowe i zamknąć okno dialogowe.
 
-## <a name="use-ctp-for-built-in-master-planning"></a>Użyj CTP do wbudowanego planowania głównego
+## <a name="use-ctp-for-the-deprecated-master-planning-engine"></a>Użyj CTP dla przestarzałego silnika planowania głównego
 
-### <a name="create-a-new-order-by-using-ctp-for-built-in-master-planning"></a>Tworzenie nowego zamówienia przy użyciu protokołu CTP dla wbudowanego planowania głównego
+### <a name="create-a-new-order-by-using-ctp-for-the-deprecated-master-planning-engine"></a>Tworzenie nowego zlecenia przy użyciu CTP dla przestarzałego silnika planowania głównego
 
 Po każdym dodaniu nowego zamówienia sprzedaży lub wiersza zamówienia system przypisuje do niego domyślną metodę kontroli daty dostawy. Nagłówek zamówienia zawsze zaczyna się od globalnej metody domyślnej. Jeśli zamówiony towar zostanie przypisany do zastąpienia, zastąpienia będą używać w nowym wierszu zamówienia. W przeciwnym razie nowy wiersz zamówienia użyje także globalnej metody domyślnej. Dlatego należy ustawić metody domyślne tak, aby były zgodne z najczęściej używaną metodą kontroli daty dostawy. Po utworzeniu zamówienia można zastąpić domyślną metodę na poziomie nagłówka i/lub wiersza zamówienia. Aby uzyskać więcej informacji, zobacz temat [Ustaw domyślne metody kontroli daty dostawy](#default-methods) i [Zmień istniejące zamówienia sprzedaży, aby używać CTP](#change-orders).
 
-### <a name="view-confirmed-delivery-dates-when-you-use-ctp-for-built-in-master-planning"></a>Wyświetlanie potwierdzonych dat dostawy przy używaniu CTP dla wbudowanego planowania głównego
+### <a name="view-confirmed-delivery-dates-when-you-use-ctp-for-the-deprecated-master-planning-engine"></a>Wyświetlanie potwierdzonych dat dostawy w przypadku korzystania z CTP dla przestarzałego silnika planowania głównego
 
-Jeśli używasz wbudowanego aparatu planowania głównego, obliczenia CTP są stosowane do zamówień lub wierszy zamówień, w których w polu **kontroli daty dostawy** jest ustawiona wartość *CTP*.
+Jeśli używasz przestarzałego aparatu planowania głównego, obliczenia CTP są stosowane do zamówień lub wierszy zamówień, w których w polu **kontroli daty dostawy** jest ustawiona wartość *CTP*.
 
-W przypadku wierszy sprzedaży, które używają CTP do wbudowanego planowania głównego, system automatycznie ustawia pola **Potwierdzona data wysyłki** i **Potwierdzona data przyjęcia** za każdym razem, gdy zapisywany jest wiersz sprzedaży. Jeśli później dokonasz odpowiedniej zmiany w wierszu sprzedaży (na przykład przez zmianę ilości lub działu), daty zostaną natychmiast ponownie przeliczone.
+W przypadku wierszy sprzedaży, które używają CTP do przestarzałego aparatu planowania głównego, system automatycznie ustawia pola **Potwierdzona data wysyłki** i **Potwierdzona data przyjęcia** za każdym razem, gdy zapisywany jest wiersz sprzedaży. Jeśli później dokonasz odpowiedniej zmiany w wierszu sprzedaży (na przykład przez zmianę ilości lub działu), daty zostaną natychmiast ponownie przeliczone.
 
 - Aby wyświetlić potwierdzone daty dostawy dla wiersza zamówienia sprzedaży, otwórz zamówienie sprzedaży i wybierz wiersz sprzedaży. Następnie w **Szczegóły wiersza** skróconej karcie **Dostawa** sprawdź wartości **Potwierdzona data wysyłki** **Potwierdzona data odbioru**.
 - Aby wyświetlić potwierdzone daty dostawy dla całego zamówienia, otwórz zamówienie sprzedaży i wybierz widok **Nagłówek**. Następnie w Szczegóły wiersza skróconej karcie **Dostawa** sprawdź wartości **Potwierdzona data wysyłki** i **Potwierdzona data odbioru**.
@@ -155,8 +156,8 @@ Aby zmienić zamówienie, tak aby na poziomie nagłówka zamówienia były używ
 1. Wybierz opcję **Nagłówek**, aby wyświetlić nagłówek zamówienia na stronie **nowego zamówienia sprzedaży**.
 1. Na skróconej **karcie Dostawa** ustaw w polu **Kontrola daty dostawy** jedną z następujących wartości, w zależności od wybranego aparatu planowania:
 
-    - *CTP* — użyj obliczenia CTP dostarczanego przez wbudowany aparat planowania głównego. Jeśli używasz optymalizacji planowania, nie jest dozwolona metoda kontroli daty dostawy *CTP*. W przypadku wybrania tej wartości podczas wykonywania obliczeń wystąpi błąd.
-    - *CTP dla optymalizacji planowania* — użyj obliczenia CTP dostarczanego przez optymalizację planowania. Ta opcja nie ma wpływu, jeśli używasz wbudowanego głównego aparatu planowania.
+    - *CTP* — użyj obliczenia CTP dostarczanego przez przestarzały aparat planowania głównego. Jeśli używasz optymalizacji planowania, nie jest dozwolona metoda kontroli daty dostawy *CTP*. W przypadku wybrania tej wartości podczas wykonywania obliczeń wystąpi błąd.
+    - *CTP dla optymalizacji planowania* — użyj obliczenia CTP dostarczanego przez optymalizację planowania. Ta opcja nie ma wpływu, jeśli używasz przestarzałego głównego aparatu planowania.
 
 <!-- KFM: Additional dialogs are shown here. Review these with the PM and expand this procedure at next revision. -->
 1. Wybierz **OK**, aby zastosować zmiany.
@@ -165,15 +166,15 @@ Aby zmienić zamówienie, tak aby na poziomie nagłówka zamówienia były używ
 
 Jeśli wiersz zamówienia utworzono przy użyciu innej metody kontroli daty dostawy, w dowolnym momencie można zmienić na CTP. Zmiany wprowadzone na poziomie wiersza nie mają wpływu na żadne inne wiersze. W zależności od zmian wprowadzonych w obliczeniach poszczególnych zaktualizowanych wierszach zmiany mogą jednak spowodować przesuwanie się do przodu lub wstecz ogólnych dat dostawy zamówień. <!-- KFM: Confirm this intro at next revision -->
 
-Aby zmienić zamówienie tak, aby używało CTP do wbudowanego planowania głównego na poziomie wiersza, wykonaj następujące kroki.
+Aby zmienić zamówienie tak, aby używało CTP do przestarzałego aparatu planowania głównego na poziomie wiersza, wykonaj następujące kroki.
 
 1. Przejdź do pozycji **Rozrachunki z odbiorcami \> Zamówienia \> Wszystkie zamówienia sprzedaży**.
 1. Otwórz zamówienie sprzedaży, które chcesz skonfigurować, lub utwórz nowe.
 1. Na stronie **Szczegóły zamówienia** sprzedaży, na skróconej karcie **Wiersz zamówienia sprzedaży** zaznacz wiersz zamówienia sprzedaży, który chcesz skonfigurować.
 1. Na **Szczegóły wiersza** skrócona karta na karcie **Delivery** ustaw w polu **Kontrola daty dostawy** jedną z następujących wartości, w zależności od używanego mechanizmu planowania:
 
-    - *CTP* — użyj obliczenia CTP dostarczanego przez wbudowany aparat planowania głównego. Jeśli używasz optymalizacji planowania, nie jest dozwolona metoda kontroli daty dostawy *CTP*. W przypadku wybrania tej wartości podczas wykonywania obliczeń wystąpi błąd.
-    - *CTP dla optymalizacji planowania* — użyj obliczenia CTP dostarczanego przez optymalizację planowania. Ta opcja nie ma wpływu, jeśli używasz wbudowanego głównego aparatu planowania.
+    - *CTP* — użyj obliczenia CTP dostarczanego przez przestarzały aparat planowania głównego. Jeśli używasz optymalizacji planowania, nie jest dozwolona metoda kontroli daty dostawy *CTP*. W przypadku wybrania tej wartości podczas wykonywania obliczeń wystąpi błąd.
+    - *CTP dla optymalizacji planowania* — użyj obliczenia CTP dostarczanego przez optymalizację planowania. Ta opcja nie ma wpływu, jeśli używasz przestarzałego głównego aparatu planowania.
 
     Zostanie **wyświetlone okno dialogowe Dostępne** daty wysyłki i przyjęcia, w których są wyświetlane dostępne daty wysyłki i przyjęcia. To okno dialogowe działa w taki sam sposób, jak wiersze zamówienia w nagłówku zamówienia, jak to opisano w poprzedniej sekcji.
 
