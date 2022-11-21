@@ -1652,6 +1652,8 @@
                   href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
                 - name: Przypisywanie użytkowników do ról zabezpieczeń
                   href: sysadmin/tasks/assign-users-security-roles.md
+                - name: Grupy zabezpieczeń usługi Active Directory
+                  href: sysadmin/active-directory-security-group.md
                 - name: Importowanie lub eksportowanie konfiguracji niestandardowych zabezpieczeń za pomocą narzędzia Zarządzanie danymi
                   href: sysadmin/import-export-customized-security.md
                 - name: Diagnostyka zabezpieczeń dla nagrań zadań

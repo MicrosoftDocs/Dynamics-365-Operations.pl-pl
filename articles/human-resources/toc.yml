@@ -302,11 +302,13 @@
                       href: hr-admin-troubleshooting-integration.md
             - name: Ustawianie rozwiązania Human Resources
               items:
-                - name: Konfigurowanie parametrów rozwiązania Human Resources
+                - name: Konfigurowanie parametrów zasobów ludzkich
                   href: hr-setup-parameters.md
-                - name: Konfigurowanie udostępnionych parametrów rozwiązania Human Resources
+                - name: Konfigurowanie udostępnionych parametrów zasobów ludzkich
                   href: hr-setup-shared-parameters.md
-                - name: Ustawianie przepływów pracy rozwiązania Human Resources
+                - name: Ograniczanie dostępu do pracowników według osoby prawnej
+                  href: hr-advanced-security.md
+                - name: Ustawianie przepływów pracy zasobów ludzkich
                   href: hr-workflow-manage-employee-information.md
                 - name: Opis pól Data i Godzina
                   href: hr-setup-date-time-fields.md
@@ -848,9 +850,11 @@
               href: hr-admin-integration-common-data-service.md
             - name: Konfigurowanie tabel wirtualnych usługi Dataverse
               href: hr-admin-integration-common-data-service-virtual-entities.md
+            - name: Zabezpieczenia integracji tabel wirtualnych
+              href: hr-security-config.md
             - name: Konfigurowanie integracji z rozwiązaniem Finance
               href: hr-admin-integration-finance.md
-            - name: Tworzenie łączy z rozwiązania Human Resources do innego środowiska
+            - name: Tworzenie linków z rozwiązania Human Resources do innego środowiska
               href: configure-links.md
             - name: Konfigurowanie integracji z rozwiązaniem Dayforce
               href: hr-admin-integration-dayforce.md

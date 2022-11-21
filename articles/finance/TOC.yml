@@ -1188,6 +1188,8 @@
                   href: general-ledger/ledger-settlements.md
                 - name: Relacja między rozliczeniem księgi a zamknięciem roku
                   href: general-ledger/awareness-between-ledger-settlement-year-end-close.md
+                - name: Automatyzowanie rozliczeń księgi
+                  href: general-ledger/auto-settle.md
                 - name: Przeszacowanie w walucie obcej dla księgi głównej
                   href: general-ledger/foreign-currency-revaluation-general-ledger.md
                 - name: Salda kont księgi głównej

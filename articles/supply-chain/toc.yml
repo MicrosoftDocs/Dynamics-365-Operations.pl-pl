@@ -3395,6 +3395,8 @@
           items:
             - name: Omówienie zarządzania magazynem
               href: warehousing/warehouse-management-overview.md
+            - name: Rozpoczynanie konfigurowania modułu zarządzania magazynem
+              href: warehousing/get-started-with-setting-up-module.md
             - name: Przychodzące operacje magazynowe
               items:
                 - name: Obsługa magazynów dla ładunków przychodzących dla zamówień zakupu

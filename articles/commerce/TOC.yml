@@ -590,6 +590,8 @@
                           href: dev-itpro/adyen-connector-faq.md
                         - name: Konfigurowanie usługi Google Pay z Adyen
                           href: dev-itpro/google-pay-adyen.md
+                        - name: Konfigurowanie usługi Apple Pay z Adyen
+                          href: dev-itpro/apple-pay-adyen.md
                         - name: Rozwiązywanie problemów z rozwiązaniem Dynamics 365 Payment Connector dla Adyen
                           href: dev-itpro/adyen-connector-troubleshoot.md
                     - name: Zapisywanie instrumentów płatniczych online za pomocą łącznika Adyen
@@ -602,6 +604,8 @@
                       href: dev-itpro/seamless-offline-improvements.md
                     - name: Konfigurowanie scenariuszy płatności za faktury
                       href: payinvoice.md
+                    - name: Zaliczki w aplikacji Dynamics 365 Commerce
+                      href: dev-itpro/prepayments-commerce.md
                     - name: Zapobieganie zduplikowanym płatnościom
                       href: duplicate-payment-protection.md
                     - name: Omówienie płatności wielokanałowych

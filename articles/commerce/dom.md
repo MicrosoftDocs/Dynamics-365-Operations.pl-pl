@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 26817321753c8e39d61957b4ea2004f20daf1b2f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a18441c44869e0e95cf79e35045dd7eacca7e43d
+ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878520"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "9764188"
 ---
 # <a name="distributed-order-management-dom"></a>Zarządzanie zamówieniami rozdzielonymi (DOM)
 
@@ -68,9 +68,9 @@ Poniższa ilustracja przedstawia cykl życia zamówienia sprzedaży w zarządzan
         > [!NOTE]
         > Zmienna uproszczona została udostępniona, aby sprzedawcy detaliczni mogli wypróbować funkcję DOM bez konieczności wdrażania specjalnej licencji. Organizacje nie powinny używać zmiennej uproszczonej w środowiskach produkcyjnych.
         >
-        > Zmienna produkcji wpływa na poprawę wydajności (np. liczbę obsługiwanych w ramach sesji zamówień i wierszy zamówienia) i zbieżności wyników (partia zamówień może nie dawać najlepszych wyników w przypadku niektórych scenariuszy). Niektóre reguły, takie jak **Reguła zamówień częściowych** i **Reguła maksymalnej liczby lokalizacji**, wymagają zmiennej produkcji.
+        > Zmienna produkcji wpływa na poprawę wydajności (np. liczbę obsługiwanych w ramach sesji zamówień i wierszy zamówienia) i zbieżności wyników (partia zamówień może nie dawać najlepszych wyników w przypadku niektórych scenariuszy). Reguła **Zamówienia częściowe** wymaga zmiennej produkcji.
 
-6. Przejdź z powrotem do opcji **Retail i Commerce \> Zarządzanie zamówieniami rozdzielonymi \> Ustawienia \> Parametry DOM**.
+6. Przejdź z powrotem do pozycji **Sprzedaż detaliczna i handel \> Zarządzanie zamówieniami rozdzielonymi \> Ustawienia \> Parametry DOM**.
 7. Na karcie **Sekwencje identyfikatorów** przypisz wymagane sekwencje numerów do różnych jednostek DOM.
 
     > [!NOTE]
