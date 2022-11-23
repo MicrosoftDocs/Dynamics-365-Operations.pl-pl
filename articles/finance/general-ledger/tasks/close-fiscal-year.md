@@ -2,7 +2,7 @@
 title: Zamykanie roku obrachunkowego
 description: Ta procedura prowadzi przez proces zamknięcia roku, który przenosi salda do nowego roku obrachunkowego.
 author: aprilolson
-ms.date: 07/11/2019
+ms.date: 11/11/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8eb36cb856d191d64561060e7de4a1f9fd947882
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 4d52e6789a96defaf1d0132fe97fc183a05af207
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717482"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779820"
 ---
 # <a name="close-the-fiscal-year"></a>Zamykanie roku obrachunkowego
 
@@ -40,7 +40,7 @@ Jeśli ustawisz wartość **Tak**, tworzone są dwie transakcje. Jeden załączn
 
 5. Zaznacz wartość **Tak** lub **Nie** dla opcji **Ustaw stan roku obrachunkowego na trwale zamknięty**.
 
-Jeśli ustawisz wartość **Tak**, stan roku obrachunkowego zostanie ustawiony na Trwale zamknięty. Ponieważ trwale zamkniętego roku nie można otworzyć ponownie, byłoby najlepszym rozwiązaniem, aby ustawić tę opcję na wartość **Nie**.  
+Jeśli ustawisz wartość **Tak**, stan roku obrachunkowego zostanie ustawiony na **Trwale zamknięty**. Ponieważ trwale zamkniętego roku nie można otworzyć ponownie, byłoby najlepszym rozwiązaniem, aby ustawić tę opcję na wartość **Nie**.  
 
 6. Zaznacz wartość **Tak** lub **Nie** dla opcji mówiącej o tym, czy **numer załącznika musi być wypełniony podczas zamknięcia na koniec roku**.
 

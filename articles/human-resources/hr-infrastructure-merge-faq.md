@@ -2,7 +2,7 @@
 title: Infrastruktura Dynamics 365 Human Resources – często zadawane pytania
 description: Ten artykuł zawiera odpowiedzi na często zadawane pytania dotyczące scalania infrastruktury dla aplikacji Microsoft Dynamics 365 Human Resources i w aplikacjach finansowych i operacyjnych.
 author: twheeloc
-ms.date: 09/13/2021
+ms.date: 11/15/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 32698d887b4d228ded588984b09068e3e2fef9a4
-ms.sourcegitcommit: 27ce4fc706100b626b81c3a1023238acd872e76c
+ms.openlocfilehash: 7325231718d7387450391b16b2866f9a2c05bdc4
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "9702075"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779643"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge-faq"></a>Infrastruktura Dynamics 365 Human Resources – często zadawane pytania
 

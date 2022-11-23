@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c83ac47bc5e7f7ed223c772591cf8a7c1e63a40
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: b3cc07a1f0ba444250eddcf892681e2ca63e9c1a
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715505"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780582"
 ---
 # <a name="correct-a-free-text-invoice"></a>Korekta faktury niezależnej
 
@@ -28,7 +28,11 @@ ms.locfileid: "9715505"
 
 W tym artykule wyjaśniono, jak poprawić zaksięgowaną fakturę niezależną i wystawić ją ponownie jako skorygowaną fakturę.
 
-Aby skorygować fakturę niezależną, która została zaksięgowana, otwórz ją. Na stronie **Faktura** wybierz opcję **Anuluj**, a następnie wybierz opcję **Poprawianie faktury**. Wybierz kod przyczyny, dodaj komentarz i wybierz datę dla nowej, poprawionej faktury. Możesz zmodyfikować skorygowaną fakturę i zaksięgować ją. 
+Aby poprawić fakturę niezależną, która została już zaksięgowana: 
+1. Otwórz zaksięgowaną fakturę niezależną. 
+2. Na stronie **Faktura** wybierz opcję **Anuluj**, a następnie wybierz opcję **Poprawianie faktury**. 
+3. Wybierz kod przyczyny, dodaj komentarz i wybierz datę dla nowej, poprawionej faktury.
+4. Możesz zmodyfikować skorygowaną fakturę i zaksięgować ją. 
 
 Podczas księgowania skorygowanej faktury tworzona jest faktura anulująca dla kwoty po stronie kredytowej, która jest równa kwocie pierwotnej faktury. W efekcie saldo połączone oryginalnej faktury i faktury anulującej wynosi 0 (zero). Faktura anulująca jest księgowana względem oryginalne faktury. 
 

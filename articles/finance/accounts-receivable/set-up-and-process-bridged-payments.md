@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f0609e333fb16ba189b6a971f88fbb5bf900fec
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bb563008f156e1bfa6e4e9a705e9170342719ce7
+ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887985"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9775176"
 ---
 # <a name="set-up-and-process-bridged-payments"></a>Konfiguruj i przetwarzaj płatności pomostowe
 
 [!include [banner](../includes/banner.md)]
 
-Płatność pomostowa to płatność księgowana w księdze głównej w dwóch krokach. Zwykle takie podejście jest stosowane, gdy jako metoda płatności jest ustawiona Metoda płatności **Bank** i transakcje należy księgować na koncie bankowym tylko wtedy, gdy wyczyszczy bank. Można go jednak użyć także dla konta księgowego. W takim przypadku podczas przetwarzania księgowania pomostowego kwota zostanie przesunana z jednego konta głównego na inne konto główne.
+Płatność pomostowa to płatność księgowana w księdze głównej w dwóch krokach. Zwykle takie podejście jest stosowane, gdy jako metoda płatności jest ustawiona Metoda płatności **Bank** i transakcje należy księgować na koncie bankowym tylko wtedy, gdy wyczyszczy bank. Można go jednak użyć także dla konta księgowego. W takim przypadku kwota zostanie przeniesiona z jednego konta głównego na inne podczas przetwarzania księgowania pomostowego.
 
 Płatności pomostowe można tworzyć z rozrachunków z dostawcami lub rozrachunków z odbiorcami. W tym artykule opisano sposób konfigurowania księgowania pomostowego dla rozrachunków z odbiorcami, ale kroki dotyczące transakcji rozrachunków z dostawcami są podobne.
 

@@ -2,25 +2,25 @@
 title: Przeszacowanie w walucie obcej dla księgi głównej
 description: 'W tym artykule omówiono następujące aspekty procesu przeszacowania w walucie obcej dla księgi głównej: konfiguracja, uruchamianie procesu, wykonywanie obliczeń dla procesu oraz wycofywanie transakcji przeszacowania, jeśli okaże się to konieczne.'
 author: kweekley
-ms.date: 06/20/2017
+ms.date: 11/15/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CurrencyLedgerGainLossAccount
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 62153
 ms.assetid: 842e8561-560f-4cc6-8668-70cca60b1ba3
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e0f4184237537464998b2bc1a6ab02561d9d291
-ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
+ms.openlocfilehash: 96ae50e339c63687a4c8114d3c965123fd5e37ab
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2022
-ms.locfileid: "9752811"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779996"
 ---
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Przeszacowanie w walucie obcej dla księgi głównej
 
@@ -38,27 +38,27 @@ Podczas wykonywania procesu przeszacowania następuje przeszacowanie salda każd
 ## <a name="prepare-to-run-foreign-currency-revaluation"></a>Przygotowanie do wykonania przeszacowania w walucie obcej
 Przed uruchomieniem procesu przeszacowania potrzebne jest wykonanie następującej konfiguracji.
 
--   Na stronie **Konto główne**:
--   Jeśli konto główne ma zostać przeszacowane w księdze głównej, zaznacz opcję **Przeszacowanie w walucie obcej**. Jeśli konto główne nie powinno zostać przeszacowane (np. w modułach rozrachunków z odbiorcami i dostawcami, jeśli przeszacowanie odbywa się w księgach podrzędnych), wyczyść tę opcję.
--   Jeśli konto główne jest oznaczone do przeszacowania, wypełnij pole **Typ kursu wymiany**. Ten typ kursu wymiany będzie stosowany do przeszacowania konta głównego. Osobne pole **Typ kursu wymiany dla raportowania finansowego** jest dostępny dla sprawozdawczości finansowej. Te dwa pola nie są synchronizowane, co pozwala na używanie różnych typów kursów wymiany na potrzeby przeszacowania i sprawozdawczości finansowej.
+Na stronie **Konto główne**:
+ - Jeśli konto główne ma zostać przeszacowane w księdze głównej, zaznacz opcję **Przeszacowanie w walucie obcej**. Jeśli konto główne nie powinno zostać przeszacowane (np. w modułach rozrachunków z odbiorcami i dostawcami, jeśli przeszacowanie odbywa się w księgach podrzędnych), wyczyść tę opcję.
+ - Jeśli konto główne jest oznaczone do przeszacowania, wypełnij pole **Typ kursu wymiany**. Ten typ kursu wymiany będzie stosowany do przeszacowania konta głównego. Osobne pole **Typ kursu wymiany dla raportowania finansowego** jest dostępny dla sprawozdawczości finansowej. Te dwa pola nie są synchronizowane, co pozwala na używanie różnych typów kursów wymiany na potrzeby przeszacowania i sprawozdawczości finansowej.
 
--   Na stronie **Księga**:
--   Wypełnij pole **Typu kursu wymiany**. Jeśli typ kursu wymiany nie jest określony na koncie głównym, ten typ kursu wymiany będzie używany podczas przeszacowywania w walucie obcej.
--   Określ konta zrealizowanych oraz niezrealizowanych dodatnich i ujemnych różnic kursowych dla przeszacowania waluty. Konta zrealizowanych dodatnich i ujemnych różnic kursowych są używane do rozliczania transakcji w modułach AR i AP, a konta niezrealizowanych dodatnich i ujemnych różnic kursowych są używane do przeszacowywania otwartych transakcji na kontach głównych księgi głównej.
+Na stronie **Księga**:
+ - Wypełnij pole **Typu kursu wymiany**. Jeśli typ kursu wymiany nie jest określony na koncie głównym, ten typ kursu wymiany będzie używany podczas przeszacowywania w walucie obcej.
+ - Określ konta zrealizowanych oraz niezrealizowanych dodatnich i ujemnych różnic kursowych dla przeszacowania waluty. Konta zrealizowanych dodatnich i ujemnych różnic kursowych są używane do rozliczania transakcji w modułach AR i AP, a konta niezrealizowanych dodatnich i ujemnych różnic kursowych są używane do przeszacowywania otwartych transakcji na kontach głównych księgi głównej.
 
--   Na stronie **Konta przeszacowania waluty**:
--   Wybierz różne konta przeszacowania waluty dla każdej waluty i firmy. Jeśli nie zdefiniowano żadnych kont, używane są konta ze strony **Księga**.
+Na stronie **Konta przeszacowania waluty**:
+ - Wybierz różne konta przeszacowania waluty dla każdej waluty i firmy. Jeśli nie zdefiniowano żadnych kont, używane są konta ze strony **Księga**.
 
 ## <a name="process-foreign-currency-revaluation"></a>Przetwarzanie przeszacowania w walucie obcej
 Po zakończeniu konfigurowania użyj strony **Przeszacowanie w walucie obcej**, aby przeszacować salda kont głównych Można uruchomić proces w czasie rzeczywistym lub zaplanować uruchomienie przy użyciu zadania wsadowego. 
 
 Na stronie **Przeszacowanie w walucie obcej** jest wyświetlana historia każdego procesu przeszacowania, w tym czas jego wykonania, zdefiniowane kryteria, łącze do załącznika utworzonego dla przeszacowania oraz informacja, czy poprzednie przeszacowanie zostało wycofane. Aby uruchomić proces przeszacowania, kliknij przycisk **Przeszacowanie w walucie obcej**. 
 
-Wartości **Od dnia** i **Do dnia** określają przedział dat do obliczania salda w walucie obcej, które zostanie przeszacowane. Podczas przeszacowywania konta wynikowego jest przeszacowywana suma wszystkich transakcji, jakie nastąpiły w przedziale dat. Podczas przeszacowywania kont bilansowych data w polu Od dnia jest ignorowana. Zamiast tego saldo do przeszacowania obejmuje okres od początku roku obrachunkowego do obecnego dnia. 
+Wartości **Od dnia** i **Do dnia** określają przedział dat do obliczania salda w walucie obcej, które zostanie przeszacowane. Podczas przeszacowywania konta wynikowego jest przeszacowywana suma wszystkich transakcji, jakie nastąpiły w przedziale dat. Podczas przeszacowywania kont bilansowych data w polu **Od dnia** jest ignorowana. Zamiast tego saldo do przeszacowania obejmuje okres od początku roku obrachunkowego **Do dnia**. 
 
 Pole **Data kursu** może służyć do zdefiniowania daty, z której ma domyślnie pochodzić kurs wymiany. Na przykład można przeszacować salda w przedziale dat od 1 do 31 stycznia, ale użyć kursu wymiany zdefiniowanego na 1 lutego. 
 
-Wskaż, które konta główne mają zostać przeszacowane: Wszystkie, Bilans lub Wynikowe. Przeszacowane zostaną tylko konta główne oznaczone do przeszacowania (na stronie Konto główne). Jeśli chcesz dodatkowo ograniczyć zakres kont głównych, na karcie **Rekordy do uwzględnienia** zdefiniuj zakres kont głównych lub poszczególne konta główne. 
+Wskaż, które konta główne mają zostać przeszacowane: Wszystkie, Bilans lub Wynikowe. Przeszacowane zostaną tylko konta główne oznaczone do przeszacowania (na stronie **Konto główne**). Jeśli chcesz dodatkowo ograniczyć zakres kont głównych, na karcie **Rekordy do uwzględnienia** zdefiniuj zakres kont głównych lub poszczególne konta główne. 
 
 Proces przeszacowania można uruchomić dla jednej lub wielu firm. Wyszukiwanie spowoduje wyświetlenie tylko tych firm, do których masz dostęp. . Następnie zaznacz firmy, dla których ma zostać uruchomiony proces przeszacowania. 
 
@@ -68,7 +68,7 @@ Jeśli chcesz przejrzeć spodziewane wyniki przeszacowania księgi głównej, w 
 
 Jeśli chcesz wykluczyć korekty, które zostały zaksięgowane za pomocą **Dziennika korekt walutowych raportowania** z procesu przeszacowania, ustaw **Wyklucz korekty walutowe raportowania** na **Tak**. Domyślnie w przesyłce są uwzględniane korekty w walucie raportowania. 
 
-Po zakończeniu procesu przeszacowania w walucie obcej zostanie utworzony rekord, co pozwala śledzić historię wszystkich sesji.  Oddzielne rekordy są tworzone dla każdej firmy i warstwy księgowania.
+Po zakończeniu procesu przeszacowania w walucie obcej zostanie utworzony rekord, co pozwala śledzić historię wszystkich sesji. Oddzielne rekordy są tworzone dla każdej firmy i warstwy księgowania.
 
 ## <a name="calculate-unrealized-gainloss"></a>Obliczanie niezrealizowanych dodatnich/ujemnych różnic kursowych
 Transakcje niezrealizowanych dodatnich/ujemnych różnic kursowych są tworzone inaczej w procesach przeszacowania dla księgi głównej i dla modułów rozrachunków z dostawcami i odbiorcami. W modułach rozrachunków z dostawcami i odbiorcami poprzednie przeszacowanie jest całkowicie stornowane (przy założeniu, że transakcja nie jest jeszcze rozliczona), po czym jest tworzona nowa transakcja przeszacowania dla niezrealizowanych dodatnich/ujemnych różnic kursowych na podstawie nowego kursu wymiany. Jest to spowodowane tym, że w modułach rozrachunków z dostawcami i odbiorcami jest przeszacowywana każda indywidualna transakcja. W księdze głównej poprzednie przeszacowanie nie jest wycofywane. Zamiast tego jest tworzona transakcja na różnicę między saldem konta głównego, włącznie z wszelkimi poprzednimi kwotami przeszacowania, a nową wartością opartą na kursie wymiany z dnia Data kursu. 
@@ -82,8 +82,8 @@ Transakcje niezrealizowanych dodatnich/ujemnych różnic kursowych są tworzone 
 Konto główne zostało przeszacowane 31 stycznia.  Niezrealizowana dodatnia/ujemna różnica kursowa jest obliczana w następujący sposób.
 
 | Bieżące saldo w walucie transakcji | Bieżące saldo w walucie rozliczeniowej | Kursy wymiany w dniu przeszacowania | Nowa kwota w walucie rozliczeniowej | Niezrealizowana dodatnia/ujemna różnica kursowa    |
-|---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
-| 500 EUR                                     | 1000 USD                                   | 166.6667                         | 833,33 USD (500 x 1,666667)        | Różnica ujemna 166,67 (833,33 – 1000) |
+|--------------------|---------------------------|----------------------------------|------------------------------------|-----------------------------|
+| 500 EUR            | 1000 USD                  | 166.6667                         | 833,33 USD (500 x 1,666667)        | Różnica ujemna 166,67 (833,33 – 1000) |
 
 Zostanie utworzony następujący zapis księgowy.
 
@@ -95,8 +95,8 @@ Zostanie utworzony następujący zapis księgowy.
 W lutym nie zaksięgowano żadnych nowych transakcji.  Konto główne zostało przeszacowane 28 lutego.
 
 | Bieżące saldo w walucie transakcji | Bieżące saldo w walucie rozliczeniowej | Kursy wymiany w dniu przeszacowania | Nowa kwota w walucie rozliczeniowej | Niezrealizowana dodatnia/ujemna różnica kursowa    |
-|---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
-| 500 EUR                                     | 833,33 USD (1000 - 166,67)                 | 250.0000                         | 1250 USD (500 x 2,5)               | Dodatnia różnica kursowa 416,67 (1250 – 833,33) |
+|---------------------------------------|-----------------------------------|-------------------------------|--------------------|-----------------------------|
+| 500 EUR                 | 833,33 USD (1000 - 166,67)       | 250.0000              | 1250 USD (500 x 2,5)               | Dodatnia różnica kursowa 416,67 (1250 – 833,33) |
 
 Zostanie utworzony następujący zapis księgowy.
 

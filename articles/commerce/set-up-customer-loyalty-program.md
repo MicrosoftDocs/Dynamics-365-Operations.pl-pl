@@ -2,26 +2,22 @@
 title: Omówienie programu lojalnościowego
 description: W tym artykule opisano funkcje programów lojalnościowych zawarte w aplikacji Dynamics 365 Commerce oraz odnośne procedury konfiguracyjne, które ułatwią sprzedawcy detalicznemu rozpoczęcie tworzenia programów lojalnościowych.
 author: josaw1
-ms.date: 07/21/2020
+ms.date: 11/16/2022
 ms.topic: overview
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-ms.search.region: global
+ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.custom: 16201,  ""intro-internal
+ms.custom: 16201, "intro-internal"
 ms.assetid: f79559d2-bc2d-4f0b-a938-e7a61524ed80
-ms.search.industry: Retail
 ms.search.form: RetailLoyaltyPrograms, RetailPriceDiscGroup
-ms.openlocfilehash: e1b2a5ec6d1a2b925ccae07b5217fbb24a2e6a10
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 17742bb5c0091804fc6f43bb2aabb7af73229890
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9277996"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9784972"
 ---
 # <a name="loyalty-overview"></a>Omówienie programu lojalnościowego
 
@@ -36,6 +32,11 @@ Program lojalnościowy można skonfigurować w taki sposób, żeby zawierał nas
 - Określanienie reguł dochodów w celu identyfikacji działań, jakie odbiorca musi wykonać, aby zdobyć nagrody. Można także zdefiniować reguły realizacji, określające, kiedy i jak odbiorca może odebrać nagrody.
 - Wystawianie kart lojalnościowych z dowolnego kanału, który bierze udział w programach lojalnościowych, i łączenie kart lojalnościowych z jednym lub kilkoma programami lojalnościowymi, w których odbiorcy mogą brać udział. Można też połączyć rekord odbiorcy z kartą lojalnościową, aby umożliwić odbiorcy gromadzenie puli punktów lojalnościowych z wielu kart oraz ich wykorzystywanie.
 - Ręczne dopasowanie kart lojalnościowych lub przeniesienie salda nagród w programie lojalnościowym z jednej karty do drugiej w celu dostosowania lub nagrodzenia odbiorcy.
+
+Poniższy film zawiera omówienie i prezentację możliwości programów lojalnościowych w sklepie Dynamics 365 Commerce.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5c2wW]
 
 ## <a name="setting-up-loyalty-programs"></a>Konfigurowanie programów lojalnościowych
 

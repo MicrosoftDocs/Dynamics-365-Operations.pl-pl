@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 04c26eec8be61d60908bef67c75958287e7e1a01
-ms.sourcegitcommit: 85141b21ac90f3db1b378c21f9c7f3d8f74e182f
+ms.openlocfilehash: a0d1221e07f6dc4a5a99aa205c4a7f6fb367f000
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "9129521"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780570"
 ---
 # <a name="create-a-customer-invoice"></a>Tworzenie faktury dla odbiorcy
 
@@ -31,11 +31,10 @@ ms.locfileid: "9129521"
 **Faktura niezależna** nie jest związana z zamówieniem sprzedaży. Zawiera ona wiersze zamówienia uwzględniające konta księgowe, niezależne opisy oraz wprowadzaną przez użytkownika kwotę sprzedaży. Nie można wprowadzić numeru towaru tego rodzaju na fakturze. Konieczne jest wprowadzenie odpowiedniej informacji o podatku. Konto główne dla sprzedaży jest wskazane w każdym wierszu faktury, który użytkownik może dystrybuować do wielu kont księgowych za pomocą przycisku **Dystrybuuj kwoty** na stronie **Faktura niezależnej**. Ponadto saldo odbiorcy jest księgowane na koncie rozrachunkowym z profilu księgowania, który jest używany dla faktury niezależnej.
 
 Aby uzyskać więcej informacji, zobacz:
-
-[Tworzenie faktur niezależnych](../accounts-receivable/create-free-text-invoice-new.md)
-[Tworzenie szablonu faktury niezależnej](../accounts-receivable/create-free-text-invoice-template-new.md)
-[Przypisanie szablonu faktury niezależnej do odbiorcy](tasks/assign-free-text-invoice-template-customer.md)
-[Generowanie i księgowanie cyklicznych faktur niezależnych](tasks/post-recurring-free-text-invoices.md)
+ - [Tworzenie faktur niezależnych](../accounts-receivable/create-free-text-invoice-new.md)
+ - [Tworzenie szablonu faktury niezależnej](../accounts-receivable/create-free-text-invoice-template-new.md)
+ - [Przypisanie szablonu faktury niezależnej do odbiorcy](tasks/assign-free-text-invoice-template-customer.md)
+ - [Generowanie i księgowanie cyklicznych faktur niezależnych](tasks/post-recurring-free-text-invoices.md)
 
 
 **Faktura pro forma** to faktura przygotowana jako oszacowanie rzeczywistej kwoty faktury przed zaksięgowaniem faktury. **Fakturę pro forma** można wydrukować albo dla faktury dla klienta do zamówienia sprzedaży albo dla faktury niezależnej. 
@@ -89,7 +88,13 @@ Podział faktur dla odbiorcy dla zamówienia sprzedaży według witryny lub adre
  - Wybierz opcję **Podział na podstawie informacji o dostarczeniu faktury**, aby podczas księgowania utworzyć jedną fakturę na adres dostawy wiersza zamówienia sprzedaży. 
 
 ## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price-and-no-cost"></a>Księgowanie na koncie przychodów dla wierszy zamówienia sprzedaży, które nie mają ceny ani kosztu
-Będziesz mieć możliwość zaktualizowania konta **Przychody** w **Księdze głównej** dla wierszy zamówienia sprzedaży, które nie mają ceny ani kosztu. Aby skonfigurować lub wyświetlić te informacje, przejdź do parametru **Zaksięguj do przychodów dla wierszy faktury za zamówienie sprzedaży o cenie i koszcie zerowym** na karcie **Księga i podatek** na stronie **Parametry modułu rozrachunków z odbiorcami**. (**Rozrachunki z dostawcami > Ustawienia > Parametry modułu rozrachunków z odbiorcami**). Wybierz przycisk **Tak**, aby zaktualizować **konto przychodów** dla wierszy faktury zamówienia sprzedaży, które nie mają ceny ani kosztu. Jeśli ta opcja jest zaznaczona, załącznik będzie zawierał 0,00 wpisów dla typów księgowania **Saldo klienta** i **Przychód**. Konto przychodów jest definiowane na stronie **Parametr księgowania zapasów**, na karcie Definicja konta **zamówienia sprzedaży**. Jeśli ta opcja nie jest zaznaczona, wiersze bez informacji o cenach lub kosztach nie będą księgować na koncie **Przychód**. W zamian załącznik będzie zawierał wpis o wartości 0,00 dla typu księgowania **Saldo klienta**.
+Będziesz mieć możliwość zaktualizowania konta **Przychody** w **Księdze głównej** dla wierszy zamówienia sprzedaży, które nie mają ceny ani kosztu. 
+
+Aby skonfigurować lub wyświetlić te informacje:
+1. Przejdź do parametru **Zaksięguj do przychodów dla wierszy faktury za zamówienie sprzedaży o cenie i koszcie zerowym** na karcie **Księga i podatek** na stronie **Parametry modułu rozrachunków z odbiorcami**. (**Rozrachunki z dostawcami > Ustawienia > Parametry modułu rozrachunków z odbiorcami**). 
+2. Wybierz przycisk **Tak**, aby zaktualizować **konto przychodów** dla wierszy faktury zamówienia sprzedaży, które nie mają ceny ani kosztu. 
+ - Jeśli ta opcja jest zaznaczona, załącznik będzie zawierał 0,00 wpisów dla typów księgowania **Saldo klienta** i **Przychód**. Konto przychodów jest definiowane na stronie **Parametr** księgowania zapasów, na karcie Definicja konta **zamówienia sprzedaży**. 
+ - Jeśli ta opcja nie jest zaznaczona, wiersze bez informacji o cenie lub kosztach nie będą księgować na koncie **Przychody**. W zamian załącznik będzie zawierał wpis o wartości 0,00 dla typu księgowania **Saldo klienta**.
 
 ## <a name="line-creation-sequence-number-information"></a>Informacje o numerze sekwencji tworzenia linii
 Podczas księgowania linii faktur klientów będziesz miał możliwość utworzenia kolejnych numerów sekwencji tworzenia linii. Numery sekwencji tworzenia linii są przydzielane podczas procesu księgowania. Dopuszczając niesekwencyjne numerowanie, możesz poprawić wydajność księgowania faktur od klientów. Numery sekwencji tworzenia wierszy mogą być używane przez integracje innych firm, które oczekują sekwencyjnego porządkowania. Skonsultuj z działem IT wszelkie rozszerzenia, które mogą być zintegrowane z numerami sekwencji tworzenia linii.

@@ -2,26 +2,19 @@
 title: Operacja zapasów przychodzących w punkcie sprzedaży
 description: W tym artykule opisano możliwości przychodzących operacji magazynowych w punkcie sprzedaży (POS).
 author: hhainesms
-ms.date: 09/17/2020
+ms.date: 11/16/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: global
 ms.author: hhaines
-ms.search.validFrom: ''
-ms.dyn365.ops.version: 10.0.9
-ms.custom: ''
-ms.assetid: ''
-ms.search.industry: Retail
-ms.search.form: ''
-ms.openlocfilehash: 3099f03ba2da8a367953ad0d25ee884e41ff9deb
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.search.validFrom: 2017-06-20
+ms.openlocfilehash: 7999c8409c71c7ccf9c1d44bd86ddca6f5e8f6ff
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9288360"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9785027"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Operacja zapasów przychodzących w punkcie sprzedaży
 
@@ -31,6 +24,11 @@ W systemie Microsoft Dynamics 365 Commerce w wersji 10.0.10 lub późniejszych o
 
 > [!NOTE]
 > W wersji 10.0.10 Commerce lub nowszej każda nowa funkcja w punkcie sprzedaży, która jest związana z odbieraniem zapasów sklepu z zamówieniami zakupu i zamówieniami przeniesienia, zostanie dodana do operacji w punkcie sprzedaży dla **operacji przychodzących**. Jeśli obecnie jest używana operacja pobrania i przyjęcia w punkcie sprzedaży, zaleca się opracowanie strategii przenoszenia z tej operacji do nowych operacji przychodzących i wychodzących. Mimo że operacja pobrania i przyjęcia nie zostanie usunięta z produktu, nie będzie już można w niej zainwestować, z perspektywy funkcjonalnej lub wydajności po wersji 10.0.9.
+
+Poniższy film zawiera omówienie procesów biznesowych i możliwości inwentaryzacji sklepu w Dynamics 365 Commerce.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bMSx]
 
 ## <a name="prerequisite-configure-an-asynchronous-document-framework"></a>Wymaganie wstępne: Skonfiguruj strukturę dokumentów asynchronicznych
 
