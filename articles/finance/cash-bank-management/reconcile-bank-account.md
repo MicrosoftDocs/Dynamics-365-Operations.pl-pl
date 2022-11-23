@@ -2,24 +2,24 @@
 title: Uzgadnianie konta bankowego
 description: W tym artykule opisano sposób uzgadniania konta bankowego.
 author: angelad116
-ms.date: 07/01/2019
+ms.date: 11/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d36ff753d368bbbe6944aa5ae5010541ee92156d
-ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
+ms.openlocfilehash: 576dcd320600f4741a43bfeee53198637bffce15
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151260"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779535"
 ---
 # <a name="reconcile-a-bank-account"></a>Uzgadnianie konta bankowego
 
@@ -29,27 +29,27 @@ Po otrzymaniu wyciągu bankowego należy okresowo uzgadniać transakcje bankowe 
 
 Nie można uzgodnić wyciągu z konta bankowego z kontem bankowym, jeśli którykolwiek z czeków lub płatności dokumentu wpłaty wymienionych w wyciągu ma stan **Anulowanie oczekujące**. Gdy osoba sprawdzająca zaksięguje lub odrzuci cofnięcie czeku lub anulowanie płatności dokumentu wpłaty, to stan nie będzie już miał wartości **Anulowanie oczekujące** i będzie można uzgodnić konto bankowe.
 
-1.  Kliknij kolejno opcje **Zarządzanie gotówką i bankami** \> **Konta bankowe** \> **Konta bankowe**. Wybierz konto bankowe do uzgodnienia z wyciągu bankowego i wybierz **Uzgadnianie** > **Uzgadniania konta**.
+1. Kliknij kolejno opcje **Zarządzanie gotówką i bankami** \> **Konta bankowe** \> **Konta bankowe**. Wybierz konto bankowe do uzgodnienia z wyciągu bankowego i wybierz **Uzgadnianie** > **Uzgadniania konta**.
 
-2.  Wprowadź informacje w polach **Data wyciągu bankowego** i **Wyciąg bankowy**. W polu **Saldo końcowe** można wprowadzić saldo konta bankowego wskazane na wyciągu z konta bankowego.
+2. Wprowadź informacje w polach **Data wyciągu bankowego** i **Wyciąg bankowy**. W polu **Saldo końcowe** można wprowadzić saldo konta bankowego wskazane na wyciągu z konta bankowego.
 
-3.  Wybierz opcję **Transakcje**, aby otworzyć stronę **Uzgadnianie konta**.
+3. Wybierz opcję **Transakcje**, aby otworzyć stronę **Uzgadnianie konta**.
 
-4.  W wypadku każdej transakcji zawartej w wyciągu bankowym zaznacz pole wyboru **Zaakceptowane**, jeśli kwota w Dynamics 365 Finance odpowiada kwocie na wyciągu bankowym. Można również wprowadzić lub zmodyfikować wartość w polu **Typ transakcji bankowej**. Ta wartość pola jest istotna ze względu na statystykę transakcji bankowych i niektóre raporty.
+4. W wypadku każdej transakcji zawartej w wyciągu bankowym zaznacz pole wyboru **Zaakceptowane**, jeśli kwota w Dynamics 365 Finance odpowiada kwocie na wyciągu bankowym. Można również wprowadzić lub zmodyfikować wartość w polu **Typ transakcji bankowej**. Ta wartość pola jest istotna ze względu na statystykę transakcji bankowych i niektóre raporty.
     
 
-    > [!NOTE]
-    > <P>Nie zaznaczaj pola wyboru <STRONG>Zaakceptowane</STRONG> w wypadku transakcji nieuwzględnionych w wyciągu bankowym. Transakcje te nadal będą wyświetlane na tej stronie aż do momentu, gdy zostaną uzgodnione z przyszłym wyciągiem bankowym.</P>
-    > <P>Pole wyboru <STRONG>Zaakceptowane</STRONG> jest niedostępne, jeśli transakcja ma stan <STRONG>Anulowanie oczekujące</STRONG>. Transakcje mogą przybierać ten stan, jeśli w programie Finance skonfigurowano opcję, zgodnie z którą operacje stornowania lub anulowania muszą przed zaksięgowaniem zostać skierowane do weryfikacji. Gdy osoba sprawdzająca zaksięguje lub odrzuci cofnięcie, to stan nie będzie już miał wartości <STRONG>Anulowanie oczekujące</STRONG> i będzie można uzgodnić konto bankowe z wyciągiem bankowym.</P>
+>[!NOTE]
+>Nie zaznaczaj pola wyboru **Zaakceptowane** w wypadku transakcji nieuwzględnionych w wyciągu bankowym. Transakcje te nadal będą wyświetlane na tej stronie aż do momentu, gdy zostaną uzgodnione z przyszłym wyciągiem bankowym.
+>Pole wyboru **Zaakceptowane** jest niedostępne, jeśli transakcja ma stan **Anulowanie oczekujące**. Transakcje mogą przybierać ten stan, jeśli w programie Finance skonfigurowano opcję, zgodnie z którą operacje stornowania lub anulowania muszą przed zaksięgowaniem zostać skierowane do weryfikacji. Gdy osoba sprawdzająca zaksięguje lub odrzuci cofnięcie, to stan nie będzie już miał wartości **Anulowanie oczekujące** i będzie można uzgodnić konto bankowe z wyciągiem bankowym.
 
-    
-    Aby zaznaczyć pole wyboru **Zaakceptowane** dla interwału sprawdzania, czy wszystko jest wyświetlane na wyciągu bankowym, wybierz opcję **Zaznacz zakres sprawdzania**, a następnie wskaż interwał.
+
+Aby zaznaczyć pole wyboru **Zaakceptowane** dla interwału sprawdzania, czy wszystko jest wyświetlane na wyciągu bankowym, wybierz opcję **Zaznacz zakres sprawdzania**, a następnie wskaż interwał.
 
 5.  Jeśli kwota dla transakcji na koncie bankowym nie odpowiada kwocie dla transakcji na wyciągu bankowym, wprowadź kwotę korekty w polu **Kwota korekty**.
     
 
-    > [!NOTE]
-    > <P>Jeśli okres obrachunkowy korygowanej transakcji jest zamknięty, pole <STRONG>Kwota korekty</STRONG> nie może być użyte. Trzeba wtedy utworzyć wiersz z datą transakcji przypadającą w otwartym okresie obrachunkowym, w którym można wprowadzać poprawki. W takim przypadku należy dodać wymiary finansowe, które były używane w oryginalnej transakcji, a także przesunięcie konta głównego.</P>
+> [!NOTE]
+> Jeśli okres obrachunkowy korygowanej transakcji jest zamknięty, pole **Kwota korekty** nie może być użyte. Trzeba wtedy utworzyć wiersz z datą transakcji przypadającą w otwartym okresie obrachunkowym, w którym można wprowadzać poprawki. W takim przypadku należy dodać wymiary finansowe, które były używane w oryginalnej transakcji, a także przesunięcie konta głównego.
 
 
 

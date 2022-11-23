@@ -2,7 +2,7 @@
 title: Obsługa dodatku Inventory Visibility dla pozycji WMS
 description: Ten artykuł opisuje obsługę widoczności zapasów dla pozycji, które są włączone do procesów magazynowych (pozycje WMS).
 author: yufeihuang
-ms.date: 03/10/2022
+ms.date: 11/04/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-03-10
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 54ce637d2d7b590988f7590eae5248276bcc4b96
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: bed402ecf20c19e81b2687efd90dba600460971a
+ms.sourcegitcommit: 49f8973f0e121eac563876d50bfff00c55344360
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9066619"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "9762762"
 ---
 # <a name="inventory-visibility-support-for-wms-items"></a>Obsługa dodatku Inventory Visibility dla pozycji WMS
 
@@ -45,17 +45,17 @@ Kiedy używasz funkcji Zaawansowane WMS dla Widoczności zapasów, wszystkie wyn
 
 ## <a name="when-to-use-the-feature"></a>Kiedy używać funkcji
 
-Zalecamy, abyś używał funkcji Zaawansowane WMS dla Widoczności zapasów w scenariuszach, w których spełnione są wszystkie poniższe warunki:
+Zalecamy, abyś używał funkcji WMS dla Widoczności zapasów w scenariuszach, w których spełnione są wszystkie poniższe warunki:
 
 - Synchronizujesz dane dotyczące zarządzania łańcuchem dostaw z Widoczności zapasów.
 - Używasz WMS w Supply Chain Management.
-- Użytkownicy dokonują rezerwacji pozycji WMS na poziomach innych niż poziom magazynu (np. dlatego, że korzystasz z pracy magazynu).
+- Użytkownicy dokonują rezerwacji dla towarów WMS na poziomach poniżej poziomu magazynu (na przykład na poziomie numeru identyfikacyjnego, ponieważ przetwarzasz pracę magazynową).
 
 W innych scenariuszach wyniki zapytań o stan posiadania będą takie same, niezależnie od tego, czy włączona jest funkcja Zaawansowana widoczność WMS dla zapasów. Ponadto wydajność będzie lepsza, jeśli nie włączysz tej funkcji w tych scenariuszach, ponieważ jest mniej obliczeń i mniejszy narzut.
 
-## <a name="enable-the-advanced-wms-feature-for-inventory-visibility"></a>Włącz funkcję zaawansowanego WMS dla Widoczności zapasów
+## <a name="enable-the-wms-feature-for-inventory-visibility"></a>Włącz funkcję WMS dla Widoczności zapasów
 
-Aby włączyć Zaawansowaną funkcję WMS dla Widoczności zapasów, wykonaj poniższe kroki.
+Aby włączyć funkcję WMS dla Widoczności zapasów, wykonaj poniższe kroki.
 
 1. Zaloguj się do Supply Chain Management jako administrator.
 1. Otwórz i przejdź do obszaru roboczego [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) i włącz następujące funkcje w podanej kolejności:
@@ -65,7 +65,7 @@ Aby włączyć Zaawansowaną funkcję WMS dla Widoczności zapasów, wykonaj pon
 
 1. Wybierz kolejno opcje **Zarządzanie zapasami \> Ustawienia \> Parametry integracji dodatku Widoczność magazynu**.
 1. Na karcie **Włącz elementy WMS** ustaw dla opcji **Włącz elementy WMS** wartość *Tak*.
-1. Zaloguj się w rozwiązaniu Power Apps.
+1. Zaloguj się do swojego środowiska Power Apps i otwórz aplikację **Widoczność magazynu**.
 1. Otwórz stronę **Konfiguracja**, a następnie na karcie **Zarządzanie funkcjami** włącz funkcję *Zaawansowane WHS*.
 1. W Supply Chain Management przejdź do **Zarządzania zapasami \> Zadania okresowe \> Integracja widoczności zapasów**.
 1. Na panelu akcji wybierz **Dezaktywuj**, aby tymczasowo wyłączyć widoczność zapasów.
@@ -82,21 +82,24 @@ Wyniki kwerend dla przedmiotów WMS są zasadniczo takie same jak wyniki dla prz
 - `ReservOrdered`
 - `ReservPhysical`
 
-Wszystkie inne miary fizyczne są obliczane tak samo, jak wtedy, gdy funkcja Zaawansowane WMS dla Widoczności zapasów jest wyłączona.
+Wszystkie inne miary fizyczne są obliczane tak samo, jak wtedy, gdy funkcja WMS dla Widoczności zapasów jest wyłączona.
 
 Szczegółowe informacje o tym, jak działają obliczenia stanu posiadania dla pozycji WMS, można znaleźć w białej księdze [Rezerwacje w module do zarządzania magazynem](https://www.microsoft.com/download/details.aspx?id=43284).
 
-Jednostki danych eksportowane do Dataverse nie mogą jeszcze aktualizować ilości dla pozycji WMS. Ilości wyświetlane w jednostkach danych są poprawne zarówno dla pozycji nieobjętych systemem WMS, jak i dla ilości, na które nie ma wpływu logika WMS (czyli miar z wyjątkiem `AvailPhysical`, `AvailOrdered`, `ReservPhysical` i `ReservOrdered` w źródle danych `fno`).
+## <a name="on-hand-list-view-and-data-entity-for-wms-items"></a>Widok listy dostępnych zapasów i jednostka danych dla pozycji WMS
 
-Zabronione są zmiany ilości pozycji WMS, które są przechowywane w źródle danych Supply Chain Management. Podobnie jak w przypadku innych funkcji Widoczności zasobów, ograniczenie to jest wymuszone, aby zapobiec konfliktom.
+Strona **Wstępne załadowanie podsumowania widoczności magazynu** zawiera widok jednostki *Wyniki wstępnego ładowania zapytania indeksu dostępnych zapasów*. W przeciwieństwie do jednostki *Podsumowanie zapasów*, jednostka *Wyniki wstępnego ładowania zapytania indeksu dostępnych zapasów* zawiera listę dostępnych zapasów produktów wraz z wybranymi wymiarami. Widoczność magazynu synchronizuje wstępnie załadowane dane zbiorcze co 15 minut.
 
-## <a name="soft-reservations-on-wms-items-in-inventory-visibility"></a>Miękkie rezerwacje na elementy WMS w Widoczności zapasów
+Jeśli używasz widoczności zapasów z elementami WMS i chcesz wyświetlić listę dostępnych elementów WMS, zalecamy włączenie funkcji *Wstępne ładowanie podsumowania widoczności zapasów* (zobacz także temat [Wstępnie załaduj ujednolicone zapytanie dostępnych zapasów](inventory-visibility-power-platform.md#preload-streamlined-onhand-query)). Odpowiednia jednostka danych Dataverse przechowuje wynik wstępnego ładowania kwerendy, aktualizowany co 15 minut. Nazwa jednostki danych: `Onhand Index Query Preload Result`.
 
-Ogólnie rzecz biorąc, [miękkie rezerwacje](inventory-visibility-reservations.md) na pozycjach WMS są obsługiwane. W obliczeniach miękkiej rezerwacji możesz uwzględnić środki fizyczne związane z WMS. 
+> [!IMPORTANT]
+> Encja Dataverse jest tylko do odczytu. Dane w jednostkach Widoczność zapasów można wyświetlać i eksportować, ale **nie można ich modyfikować**.
 
-Ze względu na znane ograniczenie, obliczanie *dostępności dla rezerwacji* nie jest obecnie obsługiwane dla elementów WMS. Dlatego, jeśli powyżej bieżącego wymiaru, w którym ma miejsce rezerwacja miękka, znajduje się rezerwacja, wyliczenie *dostępności na rezerwację* jest nieprawidłowe. Miękkie rezerwacje nie będą miały wpływu, gdy opcja **ifCheckAvailForReserv** zostanie wyłączona w [API miękkich rezerwacji](inventory-visibility-api.md#create-one-reservation-event).
+Zabronione są zmiany ilości pozycji WMS, które są przechowywane w źródle danych Supply Chain Management (`fno`). Takie działanie pasuje do innych funkcji widoczności zapasów. To ograniczenie jest wymuszane, aby zapobiec konfliktom.
 
-Ograniczenie to dotyczy także funkcji i dostosowań, które są oparte na miękkich rezerwacjach (takich jak alokacja).
+## <a name="wms-item-compatibility-for-other-functions-in-inventory-visibility"></a>Zgodność towarów z programem WMS dla innych funkcji w widoczności zapasów
+
+[Obsługiwane są rezerwacje miękkie](inventory-visibility-reservations.md) i [alokacja zapasów](inventory-visibility-allocation.md) pozycji w WMS. W obliczeniach miękkiej rezerwacji i alokacji możesz uwzględnić środki fizyczne związane z WMS.
 
 ## <a name="calculate-available-to-promise-quantities"></a>Obliczanie ilości dostępnych do obiecania
 
